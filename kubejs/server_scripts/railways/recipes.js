@@ -4,7 +4,7 @@ const registerRailWaysRecipes = (event) => {
 
 	// Удаление рецептов мода railways 
 	event.remove({ mod: 'railways' });
-	
+
 	registerRailwaysLocometalRecipes(event)
 
 	// Семафор
@@ -48,40 +48,80 @@ const registerRailWaysRecipes = (event) => {
 		.EUt(28)
 
 	//#region Couplers and Buffers
-    event.recipes.gtceu.assembler(`tfg:railways/screwlink_coupler`)
-        .itemInputs(`minecraft:tripwire_hook`, `#forge:plates/steel`, '#forge:screws/steel')
-        .circuit(1)
-        .itemOutputs(`railways:screwlink_coupler`)
-        .duration(200)
-        .EUt(28)
+	event.recipes.gtceu.assembler(`tfg:railways/screwlink_coupler`)
+		.itemInputs(`minecraft:tripwire_hook`, `#forge:plates/steel`, '#forge:screws/steel')
+		.circuit(1)
+		.itemOutputs(`railways:screwlink_coupler`)
+		.duration(200)
+		.EUt(28)
 
-    event.recipes.gtceu.assembler(`tfg:railways/copycat_headstock_screwlink_coupler`)
-        .itemInputs(`railways:screwlink_coupler`, `create:copycat_panel`)
-        .circuit(1)
-        .itemOutputs(`railways:copycat_headstock_screwlink_coupler`)
-        .duration(200)
-        .EUt(28)
+	event.recipes.gtceu.assembler(`tfg:railways/copycat_headstock_screwlink_coupler`)
+		.itemInputs(`railways:screwlink_coupler`, `create:copycat_panel`)
+		.circuit(1)
+		.itemOutputs(`railways:copycat_headstock_screwlink_coupler`)
+		.duration(200)
+		.EUt(28)
 
-	 event.recipes.gtceu.assembler(`tfg:railways/buffer`)
-        .itemInputs(`6x #forge:rods/long/steel`, `2x railways:small_buffer`)
-        .circuit(1)
-        .itemOutputs(`railways:buffer`)
-        .duration(200)
-        .EUt(28)
+	event.recipes.gtceu.assembler(`tfg:railways/buffer`)
+		.itemInputs(`6x #forge:rods/long/steel`, `2x railways:small_buffer`)
+		.circuit(1)
+		.itemOutputs(`railways:buffer`)
+		.duration(200)
+		.EUt(28)
 
-    event.recipes.gtceu.assembler(`tfg:railways/small_buffer`)
-        .itemInputs(`railways:screwlink_coupler`, `#forge:ingots/steel`)
-        .circuit(1)
-        .itemOutputs(`railways:small_buffer`)
-        .duration(200)
-        .EUt(28)
+	event.recipes.gtceu.assembler(`tfg:railways/small_buffer`)
+		.itemInputs(`railways:screwlink_coupler`, `#forge:ingots/steel`)
+		.circuit(1)
+		.itemOutputs(`railways:small_buffer`)
+		.duration(200)
+		.EUt(28)
 
-    event.recipes.gtceu.assembler(`tfg:railways/big_buffer`)
-        .itemInputs(`railways:small_buffer`, `#forge:ingots/steel`)
-        .circuit(1)
-        .itemOutputs(`railways:big_buffer`)
-        .duration(200)
-        .EUt(28)
+	event.recipes.gtceu.assembler(`tfg:railways/big_buffer`)
+		.itemInputs(`railways:small_buffer`, `#forge:ingots/steel`)
+		.circuit(1)
+		.itemOutputs(`railways:big_buffer`)
+		.duration(200)
+		.EUt(28)
+
+	//#endregion
+
+	//#region conductor
+	event.recipes.gtceu.assembler(`tfg:railways/conductor_cap`)
+		.itemInputs('#gtceu:circuits/lv', '#gtceu:electric_motors', '2x #forge:string', '#tfc:high_quality_cloth')
+		.circuit(15)
+		.itemOutputs('railways:white_conductor_cap')
+		.duration(80)
+		.inputFluids(Fluid.of('gtceu:glue', 200))
+		.EUt(16)
+
+	event.recipes.tfc.barrel_sealed(1000)
+		.inputs('#tfg:colored_caps', Fluid.of(`tfc:lye`, 288))
+		.outputItem(`railways:white_conductor_cap`)
+		.id(`railways:barrel/cap_decolor`)
+
+	event.recipes.gtceu.chemical_bath(`tfg:cap_decolor_bath`)
+		.itemInputs('#tfg:colored_caps')
+		.inputFluids(Fluid.of('gtceu:chlorine', 20))
+		.itemOutputs('railways:white_conductor_cap')
+		.duration(80)
+		.EUt(4)
+		.category(GTRecipeCategories.CHEM_DYES)
+
+	global.MINECRAFT_DYE_NAMES.forEach(dye => {
+		event.recipes.gtceu.chemical_bath(`railways/${dye}_conductor_cap`)
+			.itemInputs('railways:white_conductor_cap')
+			.inputFluids(Fluid.of(`tfc:${dye}_dye`, 288))
+			.itemOutputs(`railways:${dye}_conductor_cap`)
+			.duration(200)
+			.EUt(4)
+			.category(GTRecipeCategories.CHEM_DYES)
+		if (dye != "white") {
+			event.recipes.tfc.barrel_sealed(1000)
+				.inputs(`railways:white_conductor_cap`, Fluid.of(`tfc:${dye}_dye`, 288))
+				.outputItem(`railways:${dye}_conductor_cap`)
+				.id(`railways:barrel/dyeing/${dye}_conductor_cap`)
+		}
+	})
 
 	//#endregion
 

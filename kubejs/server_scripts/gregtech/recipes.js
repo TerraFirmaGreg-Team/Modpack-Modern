@@ -1132,7 +1132,31 @@ const registerGTCEURecipes = (event) => {
 		.EUt(2)
 
 	//#endregion
-
+	
+	//#region GT Facades
+	event.shapeless(Item.of('gtceu:facade_cover', 8, '{Facade: {Count:1b,id:"minecraft:stone"}}'), ['3x #forge:plates/iron', "#tfg:whitelisted/facades"])
+    .modifyResult((craftingGrid, result) =>
+    {
+       let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
+	   
+		console.log(blockID)
+		let facadeNBT = "{Facade: {Count:1b,id:" + "'" + blockID + "'" + "}}"
+        result.nbt = facadeNBT
+        return result;
+    }).id('gtceu:facade_cover');
+	
+	event.shapeless(Item.of('gtceu:facade_cover', 32, '{Facade: {Count:1b,id:"minecraft:stone"}}'), ['3x #forge:plates/titanium', "#tfg:whitelisted/facades"])
+    .modifyResult((craftingGrid, result) =>
+    {
+       let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
+	   
+		console.log(blockID)
+		let facadeNBT = "{Facade: {Count:1b,id:" + "'" + blockID + "'" + "}}"
+        result.nbt = facadeNBT
+        return result;
+    }).id('gtceu:facade_cover32');
+	//#endregion
+	
 	event.recipes.gtceu.laser_engraver('tfg:diamond_gear')
 		.itemInputs('4x #forge:plates/diamond')
 		.itemOutputs('#forge:gears/diamond')

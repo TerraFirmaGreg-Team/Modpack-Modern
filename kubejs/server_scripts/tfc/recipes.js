@@ -34,44 +34,6 @@ const registerTFCRecipes = (event) => {
 
 	//#endregion
 
-	//#region Рецепты зерен
-
-	global.TFC_QUERN_GRAIN_RECIPE_COMPONENTS.forEach(element => {
-
-		event.recipes.gtceu.macerator(`tfg:${element.name}`)
-			.itemInputs(element.input)
-			.itemOutputs(element.output)
-			.chancedOutput('tfc:straw', 7000, 500)
-			.duration(200)
-			.EUt(2)
-
-		event.recipes.tfc.quern(element.output, element.input)
-			.id(`tfg:quern/${element.name}`)
-	})
-
-	//#endregion
-
-	//#region Рецепты муки
-
-	global.TFC_QUERN_FLOUR_RECIPE_COMPONENTS.forEach(element => {
-		event.recipes.gtceu.macerator(`tfg:${element.name}`)
-			.itemInputs(element.input)
-			.itemOutputs(element.output)
-			.duration(200)
-			.EUt(2)
-	})
-
-	//#endregion
-
-	//#region Рецепты обжарки мяса
-
-	global.TFC_FURNACE_MEAT_RECIPE_COMPONENTS.forEach(element => {
-		event.smelting(element.output, element.input)
-			.id(`tfg:smelting/${element.name}`)
-	})
-
-	//#endregion
-
 	//#region Рецепты обжарки форм
 
 	global.TFC_FURNACE_MOLD_RECIPE_COMPONENTS.forEach(element => {
@@ -123,15 +85,6 @@ const registerTFCRecipes = (event) => {
 
 		generateGreenHouseRecipe(event, itemId, 8000, `8x ${itemId}`, recipeId, false);
 	});
-
-	//#endregion
-
-	//#region Рецепты хлеба
-
-	global.TFC_FURNACE_BREAD_RECIPE_COMPONENTS.forEach(element => {
-		event.smelting(element.output, element.input)
-			.id(`tfg:smelting/${element.name}`)
-	})
 
 	//#endregion
 

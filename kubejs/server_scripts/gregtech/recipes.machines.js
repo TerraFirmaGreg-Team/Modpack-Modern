@@ -718,6 +718,30 @@ function registerGTCEuMachineRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ZPM])
 		.stationResearch(b => b.researchStack(Item.of('gtceu:me_pattern_buffer')).EUt(GTValues.VA[GTValues.LuV]).CWUt(32))
 
+	event.remove({ id: 'gtceu:assembly_line/ultimate_battery' })
+	event.recipes.gtceu.assembly_line('ultimate_battery')
+		.itemInputs('16x #forge:double_plates/darmstadtium',
+			'4x #gtceu:circuits/uhv',
+			'16x gtceu:energy_cluster',
+			'4x gtceu:uv_field_generator',
+			'64x gtceu:uhpic_wafer',
+			'64x gtceu:uhpic_wafer',
+			'64x gtceu:advanced_smd_diode',
+			'64x gtceu:advanced_smd_capacitor',
+			'64x gtceu:advanced_smd_resistor',
+			'64x gtceu:advanced_smd_transistor',
+			'64x gtceu:advanced_smd_inductor',
+			'32x gtceu:enriched_naquadah_trinium_europium_duranide_double_wire',
+			'64x #forge:bolts/neutronium')
+		.inputFluids(
+			Fluid.of('gtceu:soldering_alloy', 5760),
+			Fluid.of('gtceu:polybenzimidazole', 2304),
+			Fluid.of('gtceu:naquadria', 2592))
+		.itemOutputs('gtceu:max_battery')
+		.duration(100 * 20)
+		.EUt(300000)
+		.stationResearch(b => b.researchStack(Item.of('gtceu:energy_cluster')).EUt(GTValues.VA[GTValues.UHV]).CWUt(144))
+
 	// #endregion
 
 	// Контроллер теплицы

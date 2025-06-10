@@ -1,6 +1,23 @@
 # Changelog
 ## [Unreleased]
 ### New features
+- Added back the vanilla stonecutter @Pyritie
+- Added our own recipes for crafting GregTech facades - 3 cast iron plates for 8 facades, or 3 titanium plates for 32 facades (#1145) @BlueBoat29
+- Added create conductor recipes (#1144) @JeanRdSz
+- Added lunch boxes! They keep your food cool and you can even eat right out of them! @Thomasx0
+### Changes
+### Bug fixes
+- Fixed trowel being consumed on use (#1143) @Redeix
+- Fixed glass dust dupe with unfinished lamps (#1134) @Pyritie
+- Fixed ultimate battery recipe stack size issue (#1149) @Pyritie
+- Fixed assembler recipe conflicts with certain wrought iron create items (#1142) @TomPlop & @Pyritie
+- Quest fixes (#1119, #1142) @TomPlop
+- Fixed recipe conflicts with scaffolding and paintings, and wine glasses and jars (#1141) @JeanRdSz
+- Fixed piglin disguise loot table giving the wrong item (#1151) @Redeix
+- Fixed create encased large cogwheel drops (#1148) @Taskeren [Credit](https://github.com/ElytraServers/Greate-Encased-Cogwheel-Drop-Fix)
+
+## [0.9.10] - 05.06.2025
+### New features
 - Added Trowel tool to randomly place blocks from hotbar (#1106) @Redeix
 - Started work on Brazilian Portuguese translations @gifpxto
 - Added Aqueous Accumulator machine, basically a rock breaker but for fluids (#1030) @Pyritie

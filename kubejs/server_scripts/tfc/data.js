@@ -186,11 +186,6 @@ const registerTFCKnappingTypes = (event) => {
 
 //#region registerTFCItemSize
 const registerTFCItemSize = (event) => {
-    event.itemSize('sophisticatedbackpacks:backpack', 'very_large', 'very_heavy', 'backpack_size')
-    event.itemSize('sophisticatedbackpacks:iron_backpack', 'very_large', 'very_heavy', 'iron_backpack_size')
-    event.itemSize('sophisticatedbackpacks:gold_backpack', 'very_large', 'very_heavy', 'gold_backpack_size')
-    event.itemSize('sophisticatedbackpacks:diamond_backpack', 'very_large', 'very_heavy', 'diamond_backpack_size')
-    event.itemSize('sophisticatedbackpacks:netherite_backpack', 'very_large', 'very_heavy', 'netherite_backpack_size')
 
     global.MINECRAFT_DYE_NAMES.forEach (color => {
         event.itemSize(`tfg:decorative_vase/${color}`, 'normal', 'medium', `decorative_vase/${color}`)

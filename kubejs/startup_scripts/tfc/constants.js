@@ -1019,6 +1019,12 @@ global.TFC_MILKS = [
     {id: 'firmalife:coconut_milk'},
 ];
 
+global.TFC_CURDS_AND_CHEESES = [
+    { id: 'milk', input_fluid: 'tfc:curdled_milk', curd: 'firmalife:food/milk_curd', cheese1: 'gouda', cheese2: 'cheddar' },
+    { id: 'yak', input_fluid: 'tfc:curdled_yak_milk', curd: 'firmalife:food/yak_curd', cheese1: 'shosha', cheese2: 'rajya_metok' },
+    { id: 'goat', input_fluid: 'tfc:curdled_goat_milk', curd: 'firmalife:food/goat_curd', cheese1: 'feta', cheese2: 'chevre' },
+];
+
 global.TFC_ALCOHOL = [
     {id: 'tfc:beer'},
     {id: 'tfc:cider'},

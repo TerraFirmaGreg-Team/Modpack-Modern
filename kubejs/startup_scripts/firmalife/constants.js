@@ -94,10 +94,6 @@ global.FIRMALIFE_GREENHOUSE_BERRY_RECIPE_COMPONENTS = [
     { input: 'firmalife:plant/nightshade_bush', fluid_amount: 6000, output: '3x firmalife:food/nightshade_berry', name: 'nightshade' },
 ];
 
-global.FIRMALIFE_QUERN_FLOUR_RECIPE_COMPONENTS = [
-    { input: 'firmalife:food/nixtamal', output: '2x firmalife:food/masa_flour', name: 'masa_flour' },
-];
-
 global.FIRMALIFE_MIXER_FLATBREAD_DOUGH_RECIPE_COMPONENTS = [
     { input: 'tfc:food/barley_flour', output: '4x firmalife:food/barley_dough', name: 'firmalife_barley_dough' },
     { input: 'tfc:food/maize_flour', output: '4x firmalife:food/maize_dough', name: 'firmalife_maize_dough' },
@@ -116,4 +112,22 @@ global.FIRMALIFE_FURNACE_FLATBREAD_RECIPE_COMPONENTS = [
     { input: 'tfc:food/rice_dough', output: 'firmalife:food/rice_flatbread', name: 'rice_flatbread' },
     { input: 'tfc:food/wheat_dough', output: 'firmalife:food/wheat_flatbread', name: 'wheat_flatbread' },
     { input: 'firmalife:food/masa', output: 'firmalife:food/corn_tortilla', name: 'corn_tortilla' },
+];
+
+global.FIRMALIFE_COOKING_RECIPE_COMPONENTS = [
+    { input: 'firmalife:food/white_chocolate_blend', output: 'firmalife:food/white_chocolate', name: 'white_chocolate' },
+    { input: 'firmalife:food/dark_chocolate_blend', output: 'firmalife:food/dark_chocolate', name: 'dark_chocolate' },
+    { input: 'firmalife:food/milk_chocolate_blend', output: 'firmalife:food/milk_chocolate', name: 'milk_chocolate' },
+    { input: 'firmalife:food/raw_pizza', output: 'firmalife:food/cooked_pizza', name: 'cooked_pizza' },
+    { input: 'firmalife:food/corn_tortilla', output: 'firmalife:food/taco_shell', name: 'taco_shell' },
+    { input: 'firmalife:food/cookie_dough', output: 'firmalife:food/sugar_cookie', name: 'sugar_cookie' },
+    { input: 'firmalife:food/chocolate_chip_cookie_dough', output: 'firmalife:food/chocolate_chip_cookie', name: 'chocolate_chip_cookie' },
+    { input: 'firmalife:food/hardtack_dough', output: 'firmalife:food/hardtack', name: 'hardtack' },
+    { input: 'firmalife:food/filled_pie', output: 'firmalife:food/cooked_pie', name: 'cooked_pie' },
+    { input: 'firmalife:food/cocoa_beans', output: 'firmalife:food/roasted_cocoa_beans', name: 'roasted_cocoa_beans' },
+    { input: 'firmalife:food/raw_pumpkin_pie', output: 'firmalife:food/pumpkin_pie', name: 'pumpkin_pie' },
+    { input: 'tfc:food/soybean', output: 'firmalife:food/dehydrated_soybeans', name: 'dehydrated_soybeans' },
+    { input: 'firmalife:food/raw_lasagna', output: 'firmalife:food/cooked_lasagna', name: 'cooked_lasagna' },
+    { input: 'firmalife:food/bacon', output: 'firmalife:food/cooked_bacon', name: 'cooked_bacon' },
+    { input: '#firmalife:foods/slices', output: 'firmalife:food/toast', name: 'toast' }
 ];

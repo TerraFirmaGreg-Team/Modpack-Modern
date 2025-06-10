@@ -689,6 +689,7 @@ function removeMinecraftRecipes(event) {
 
 	event.remove({ id: 'minecraft:quartz' })
 	event.remove({ id: 'minecraft:quartz_from_blasting' })
+	event.remove({ id: 'minecraft:smooth_quartz' })
 
 	//#endregion
 
