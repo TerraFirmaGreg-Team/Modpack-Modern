@@ -6,6 +6,7 @@
 - Added create conductor recipes (#1144) @JeanRdSz
 - Added lunch boxes! They keep your food cool and you can even eat right out of them! @Thomasx0
 ### Changes
+- Added cinnabar to piglin bartering and changed the deep cave enderman loot table to raw gold instead of coal @Pyritie
 ### Bug fixes
 - Fixed trowel being consumed on use (#1143) @Redeix
 - Fixed glass dust dupe with unfinished lamps (#1134) @Pyritie
@@ -14,7 +15,7 @@
 - Quest fixes (#1119, #1142) @TomPlop
 - Fixed recipe conflicts with scaffolding and paintings, and wine glasses and jars (#1141) @JeanRdSz
 - Fixed piglin disguise loot table giving the wrong item (#1151) @Redeix
-- Fixed create encased large cogwheel drops (#1148) @Taskeren [Credit](https://github.com/ElytraServers/Greate-Encased-Cogwheel-Drop-Fix)
+- Fixed create encased large cogwheel drops (#1148) @Taskeren
 
 ## [0.9.10] - 05.06.2025
 ### New features
