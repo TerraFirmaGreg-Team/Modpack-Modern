@@ -7,6 +7,8 @@
 - Added lunch boxes! They keep your food cool and you can even eat right out of them! @Thomasx0
 ### Changes
 - Added cinnabar to piglin bartering and changed the deep cave enderman loot table to raw gold instead of coal @Pyritie
+- Nerfed extraction of latex from logs to encourage tree taps instead @Pyritie
+- Adjusted temperature tolerance of latex trees, check the field guide for specifics @Pyritie
 ### Bug fixes
 - Fixed trowel being consumed on use (#1143) @Redeix
 - Fixed glass dust dupe with unfinished lamps (#1134) @Pyritie

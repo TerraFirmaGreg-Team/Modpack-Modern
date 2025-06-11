@@ -47,7 +47,7 @@
 			"title": "Hevea",
 			"item": "afc:wood/log/hevea,afc:wood/wood/hevea,afc:wood/leaves/hevea,afc:wood/sapling/hevea",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): 17.1°C$(br)$(thing)Maximum Temperature$(): 26.2°C$(br)$(thing)Minimum Rainfall$(): 390$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): 22°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 3mb"
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): 17.1°C$(br)$(thing)Maximum Temperature$(): 26.2°C$(br)$(thing)Minimum Rainfall$(): 390$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): 8°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 2mb"
 		},
 		{
 			"type": "patchouli:image",
@@ -61,7 +61,7 @@
 			"title": "Rubber Fig",
 			"item": "afc:wood/log/rubber_fig,afc:wood/wood/rubber_fig,afc:wood/leaves/rubber_fig,afc:wood/sapling/rubber_fig",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): 9.8°C$(br)$(thing)Maximum Temperature$(): 20.7°C$(br)$(thing)Minimum Rainfall$(): 290$(br)$(thing)Maximum Rainfall$(): 400$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): 12°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 2mb"
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): 9.8°C$(br)$(thing)Maximum Temperature$(): 20.7°C$(br)$(thing)Minimum Rainfall$(): 290$(br)$(thing)Maximum Rainfall$(): 400$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): 4°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 1mb"
 		},
 		{
 			"type": "patchouli:image",
@@ -75,7 +75,7 @@
 			"title": "Kapok",
 			"item": "tfc:wood/log/kapok,tfc:wood/wood/kapok,tfc:wood/leaves/kapok,tfc:wood/sapling/kapok",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): 17.1°C$(br)$(thing)Maximum Temperature$(): 38°C$(br)$(thing)Minimum Rainfall$(): 320$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): 1°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 1mb"
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): 17.1°C$(br)$(thing)Maximum Temperature$(): 38°C$(br)$(thing)Minimum Rainfall$(): 320$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): 12°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 3mb"
 		},
 		{
 			"type": "patchouli:image",
