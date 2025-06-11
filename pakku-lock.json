@@ -467,7 +467,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "afc-1.0.17-1.20.1.jar",
+                    "file_name": "afc-1.0.18-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -476,18 +476,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6549/467/afc-1.0.17-1.20.1.jar",
-                    "id": "6549467",
+                    "url": "https://edge.forgecdn.net/files/6635/351/afc-1.0.18-1.20.1.jar",
+                    "id": "6635351",
                     "parent_id": "877545",
                     "hashes": {
-                        "sha1": "abd0379e85da6bce0e47341a5f51909cc57e1744",
-                        "md5": "701563a64374eb0825c54e063fdd407d"
+                        "sha1": "c2cfffcce7ff7c1c978326a674389fcbdfb61fd4",
+                        "md5": "cb8183be65ca88c20b111e9ae9083dd7"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 5105665,
-                    "date_published": "2025-05-20T04:37:38.210Z"
+                    "size": 5117468,
+                    "date_published": "2025-06-10T03:09:58.637Z"
                 }
             ]
         },
