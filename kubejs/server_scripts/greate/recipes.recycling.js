@@ -103,19 +103,20 @@ function registerGreateRecyclingRecipes(event) {
 	event.recipes.gtceu.macerator('greate:steel_millstone')
 		.itemInputs('greate:steel_millstone')
 		.itemOutputs(
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 3),
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.WroughtIron, 1),
+			ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Steel, 10),
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Stone, 2),
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Diamond, 2),
 			ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.TreatedWood, 2))
-		.duration(GTMaterials.Steel.getMass() * 4)
+		.duration(GTMaterials.Stone.getMass() * 4)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.arc_furnace('greate:steel_millstone')
 		.itemInputs('greate:steel_millstone')
 		.itemOutputs(
-			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 3),
-			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.WroughtIron, 1))
-		.duration(GTMaterials.Steel.getMass() * 4)
+			ChemicalHelper.get(TagPrefix.nugget, GTMaterials.Steel, 10),
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Diamond, 2))
+		.duration(GTMaterials.Stone.getMass() * 4)
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
 

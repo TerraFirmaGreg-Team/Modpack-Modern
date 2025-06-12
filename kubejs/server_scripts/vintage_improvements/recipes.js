@@ -575,21 +575,21 @@ function registerVintageImprovementsRecipes(event) {
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ tag: 'tfg:latex_logs' }],
-		results: [{ fluid: 'tfg:latex', amount: 250 }],
+		results: [{ fluid: 'tfg:latex', amount: 100 }],
 		processingTime: 600
 	}).id('tfg:vi/vacuumizing/latex_from_rubber_logs')
 
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ tag: 'tfg:rubber_saplings' }],
-		results: [{ fluid: 'tfg:latex', amount: 100 }],
+		results: [{ fluid: 'tfg:latex', amount: 25 }],
 		processingTime: 300
 	}).id('tfg:vi/vacuumizing/latex_from_rubber_sapling')
 
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ tag: 'tfg:rubber_leaves' }],
-		results: [{ fluid: 'tfg:latex', amount: 50 }],
+		results: [{ fluid: 'tfg:latex', amount: 10 }],
 		processingTime: 150
 	}).id('tfg:vi/vacuumizing/latex_from_rubber_leaves')
 
