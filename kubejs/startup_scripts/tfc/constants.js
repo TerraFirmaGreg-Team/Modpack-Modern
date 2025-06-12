@@ -852,7 +852,7 @@ global.TFC_BATCH_TO_BOTTLE_ASSEMBLING_RECIPE_COMPONENTS = [
     { input: 'tfc:volcanic_glass_batch', output: 'tfc:volcanic_glass_bottle', name: 'volcanic_glass_bottle' },
 ];
 
-global.TFC_FURNACE_MEAT_RECIPE_COMPONENTS = [
+global.TFC_MEAT_RECIPE_COMPONENTS = [
     { input: 'tfc:food/horse_meat', output: 'tfc:food/cooked_horse_meat', name: 'cooked_horse_meat' }, 
     { input: 'tfc:food/bear', output: 'tfc:food/cooked_bear', name: 'cooked_bear' }, 
     { input: 'tfc:food/mutton', output: 'tfc:food/cooked_mutton', name: 'cooked_mutton' }, 
