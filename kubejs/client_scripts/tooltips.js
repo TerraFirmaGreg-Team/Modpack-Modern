@@ -27,9 +27,8 @@ const registerTooltips = (event) =>
 	event.addAdvanced(['create:blaze_burner'], (item, advanced, text) => {
 		text.add(1, text.of('§cSuperheat§r with Coke, Anthracite, or Flawless and Exquisite coal gems.'))
 	})
-	event.addAdvanced(['gtceu:greenhouse'], (item, advanced, text) => {
+	event.addAdvanced(['tfg:electric_greenhouse'], (item, advanced, text) => {
 		text.add(1, text.of('This machine has a §2Perfect Overclock§r!')),
-		text.add(2, text.of('Currently, due to a bug, sometimes outputs rotten food.'))
 		text.add(3, text.of(`The interior is customizable! Check the multiblock preview in JEI.`))
 	})
 	event.addAdvanced(['gtceu:nether_dome'], (item, advanced, text) => {
