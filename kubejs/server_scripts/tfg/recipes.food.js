@@ -252,37 +252,70 @@ function registerTFGFoodRecipes(event) {
 
 	})
 
-	registerFoodRecipe("food_processor", `white_chocolate_blend`, {
-		circuit: 1,
-		duration: 300,
-		EUt: 16,
-		itemInputHints: ['2x firmalife:food/cocoa_butter', '#tfc:sweetener'],
-		itemOutputHint: '2x firmalife:food/white_chocolate_blend',
-		fluidInputs: [Fluid.of('#tfc:milks', 1000)],
-		itemInputs: [ Sized(NotRotten("firmalife:food/cocoa_butter"), 2), "#tfc:sweetener"],
-		itemOutputProvider: TFC.isp.of('2x firmalife:food/white_chocolate_blend').resetFood(),
-	})
+	global.TFC_MILKS.forEach(milk => {
+		const milkID = milk.id.split(':')[1];
 
-	registerFoodRecipe("food_processor", `dark_chocolate_blend`, {
-		circuit: 1,
-		duration: 300,
-		EUt: 16,
-		itemInputHints: ['2x firmalife:food/cocoa_powder', '#tfc:sweetener'],
-		itemOutputHint: '2x firmalife:food/dark_chocolate_blend',
-		fluidInputs: [Fluid.of('#tfc:milks', 1000)],
-		itemInputs: [ Sized(NotRotten("firmalife:food/cocoa_powder"), 2), "#tfc:sweetener"],
-		itemOutputProvider: TFC.isp.of('2x firmalife:food/dark_chocolate_blend').resetFood(),
-	})
+		registerFoodRecipe("food_processor", `white_chocolate_blend_from_${milkID}`, {
+			circuit: 1,
+			duration: 300,
+			EUt: 16,
+			itemInputHints: ['2x firmalife:food/cocoa_butter', '#tfc:sweetener'],
+			itemOutputHint: '2x firmalife:food/white_chocolate_blend',
+			fluidInputs: [Fluid.of(milk.id, 1000)],
+			itemInputs: [ Sized(NotRotten("firmalife:food/cocoa_butter"), 2), "#tfc:sweetener"],
+			itemOutputProvider: TFC.isp.of('2x firmalife:food/white_chocolate_blend').resetFood(),
+		})
 
-	registerFoodRecipe("food_processor", `milk_chocolate_blend`, {
-		circuit: 2,
-		duration: 300,
-		EUt: 16,
-		itemInputHints: ['firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter', '#tfc:sweetener'],
-		itemOutputHint: '2x firmalife:food/milk_chocolate_blend',
-		fluidInputs: [Fluid.of('#tfc:milks', 1000)],
-		itemInputs: [ NotRotten("firmalife:food/cocoa_powder"), NotRotten('firmalife:food/cocoa_butter'), "#tfc:sweetener"],
-		itemOutputProvider: TFC.isp.of('2x firmalife:food/milk_chocolate_blend').resetFood(),
+		registerFoodRecipe("food_processor", `dark_chocolate_blend_from_${milkID}`, {
+			circuit: 1,
+			duration: 300,
+			EUt: 16,
+			itemInputHints: ['2x firmalife:food/cocoa_powder', '#tfc:sweetener'],
+			itemOutputHint: '2x firmalife:food/dark_chocolate_blend',
+			fluidInputs: [Fluid.of(milk.id, 1000)],
+			itemInputs: [ Sized(NotRotten("firmalife:food/cocoa_powder"), 2), "#tfc:sweetener"],
+			itemOutputProvider: TFC.isp.of('2x firmalife:food/dark_chocolate_blend').resetFood(),
+		})
+
+		registerFoodRecipe("food_processor", `milk_chocolate_blend_from_${milkID}`, {
+			circuit: 2,
+			duration: 300,
+			EUt: 16,
+			itemInputHints: ['firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter', '#tfc:sweetener'],
+			itemOutputHint: '2x firmalife:food/milk_chocolate_blend',
+			fluidInputs: [Fluid.of(milk.id, 1000)],
+			itemInputs: [ NotRotten("firmalife:food/cocoa_powder"), NotRotten('firmalife:food/cocoa_butter'), "#tfc:sweetener"],
+			itemOutputProvider: TFC.isp.of('2x firmalife:food/milk_chocolate_blend').resetFood(),
+		})
+
+		registerFoodRecipe("food_processor", `egg_noodles_from_${milkID}`, {
+			circuit: 6,
+			duration: 50,
+			EUt: 8,
+			itemInputHints: ["#tfc:foods/flour", 'tfc:powder/salt', '#forge:eggs'],
+			itemOutputHint: 'firmalife:food/raw_egg_noodles',
+			itemInputs: [NotRotten("#tfc:foods/flour"), NotRotten('#forge:eggs'), 'tfc:powder/salt'],
+			fluidInputs: [Fluid.of(milk.id, 1000)],
+			itemOutputProvider: TFC.isp.of("firmalife:food/raw_egg_noodles").copyOldestFood(),
+		})
+
+		registerFoodRecipe("food_processor", `rice_noodles_from_${milkID}`, {
+			duration: 50,
+			EUt: 8,
+			itemInputHints: ["tfc:food/rice_flour", 'tfc:food/maize_flour', 'tfc:powder/salt'],
+			fluidInputs: [Fluid.of(milk.id, 1000)],
+			itemOutputHint: '2x firmalife:food/raw_rice_noodles',
+			itemInputs: [NotRotten("tfc:food/rice_flour"), NotRotten('tfc:food/maize_flour'), 'tfc:powder/salt'],
+			itemOutputProvider: TFC.isp.of('2x firmalife:food/raw_rice_noodles').copyOldestFood()
+		})
+	
+		// No ISP needed here
+		event.recipes.gtceu.fermenter(`tfg:fermenter/cream_from_${milkID}`)
+			.inputFluids(Fluid.of(milk.id, 1000))
+			.outputFluids(Fluid.of('firmalife:cream'))
+			.circuit(6)
+			.duration(1200)
+			.EUt(24)
 	})
 
 	//#endregion
@@ -330,10 +363,10 @@ function registerTFGFoodRecipes(event) {
 	registerFoodRecipe("food_processor", "soybean_paste", {
 		duration: 60,
 		EUt: 8,
-		itemInputHints: ['tfc:food/soybean'],
-		itemOutputHint: '2x tfc:soybean_paste',
-		itemInputs: [NotRotten('tfc:food/soybean')],
-		itemOutputProvider: TFC.isp.of('2x tfc:soybean_paste'),
+		itemInputHints: ['firmalife:food/dehydrated_soybean'],
+		itemOutputHint: 'firmalife:food/soybean_paste',
+		itemInputs: [NotRotten('firmalife:food/dehydrated_soybean')],
+		itemOutputProvider: TFC.isp.of('firmalife:food/soybean_paste').copyOldestFood(),
 	})
 		
 	// Vinegar
@@ -345,6 +378,7 @@ function registerTFGFoodRecipes(event) {
 			duration: 600,
 			EUt: 32,
 			itemInputHints: ['#tfc:foods/fruits'],
+			itemInputs: [NotRotten('#tfc:foods/fruits')],
 			fluidInputs: [Fluid.of(alcohol.id, 250)],
 			fluidOutputs: [Fluid.of('tfc:vinegar', 250)],
 		})
@@ -394,7 +428,7 @@ function registerTFGFoodRecipes(event) {
 	registerFoodRecipe("food_processor", "strawberry_ice_cream", {
 		duration: 300,
 		EUt: 16,
-		itemInputHints: ['firmalife:food/vanilla_ice_cream', 'firmalife:food/vanilla_ice_cream', '2x tfc:food/strawberry'],
+		itemInputHints: ['firmalife:food/vanilla_ice_cream', '2x tfc:food/strawberry'],
 		itemOutputHint: 'firmalife:food/strawberry_ice_cream',
 		itemInputs: [NotRotten('firmalife:food/vanilla_ice_cream'), Sized(NotRotten("tfc:food/strawberry"), 2)],
 		itemOutputProvider: TFC.isp.of("firmalife:food/strawberry_ice_cream").resetFood()
@@ -479,15 +513,6 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of("gtceu:cocoa_dust")
 	})
 
-	registerFoodRecipe("food_processor", "soybean_paste", {
-		duration: 50,
-		EUt: 8,
-		itemInputHints: ["firmalife:food/dehydrated_soybeans"],
-		itemOutputHint: "firmalife:food/soybean_paste",
-		itemInputs: [NotRotten('firmalife:food/dehydrated_soybeans')],
-		itemOutputProvider: TFC.isp.of("firmalife:food/soybean_paste")
-	})
-
 	registerFoodRecipe("food_processor", "red_grapes", {
 		duration: 50,
 		EUt: 8,
@@ -504,26 +529,6 @@ function registerTFGFoodRecipes(event) {
 		itemOutputHint: "firmalife:food/smashed_white_grapes",
 		itemInputs: [NotRotten('firmalife:food/white_grapes')],
 		itemOutputProvider: TFC.isp.of('firmalife:food/smashed_white_grapes').copyOldestFood()
-	})
-
-	registerFoodRecipe("food_processor", "egg_noodles", {
-		duration: 50,
-		EUt: 8,
-		itemInputHints: ["firmalife:foods/egg_noodle_flour", 'tfc:powder/salt', '#forge:eggs'],
-		itemOutputHint: 'firmalife:food/raw_egg_noodles',
-		itemInputs: [NotRotten("firmalife:foods/egg_noodle_flour"), NotRotten('#forge:eggs'), 'tfc:powder/salt'],
-		fluidInputs: [Fluid.of('#tfc:milks', 1000)],
-		itemOutputProvider: TFC.isp.of("firmalife:food/raw_egg_noodles").copyOldestFood(),
-	})
-
-	registerFoodRecipe("food_processor", "rice_noodles", {
-		duration: 50,
-		EUt: 8,
-		itemInputHints: ["tfc:food/rice_flour", 'tfc:food/maize_flour', 'tfc:powder/salt'],
-		fluidInputs: [Fluid.of('#tfc:milks', 1000)],
-		itemOutputHint: '2x firmalife:food/raw_rice_noodles',
-		itemInputs: [NotRotten("tfc:food/rice_flour"), NotRotten('tfc:food/maize_flour'), 'tfc:powder/salt'],
-		itemOutputProvider: TFC.isp.of('2x firmalife:food/raw_rice_noodles').copyOldestFood()
 	})
 
 	registerFoodRecipe("food_processor", "cured_maize", {
@@ -550,20 +555,20 @@ function registerTFGFoodRecipes(event) {
 		duration: 200,
 		EUt: 8,
 		itemInputHints: ["#firmalife:foods/raw_eggs"],
-		itemOutputHint: "firmalife:food/boiled_egg",
+		itemOutputHint: "tfc:food/boiled_egg",
 		fluidInputs: [Fluid.of('minecraft:water', 200)],
 		itemInputs: [NotRotten('#firmalife:foods/raw_eggs')],
-		itemOutputProvider: TFC.isp.of('firmalife:food/boiled_egg').copyOldestFood()
+		itemOutputProvider: TFC.isp.of('tfc:food/boiled_egg').copyOldestFood()
 	})
 
 	registerFoodRecipe("food_oven", "cooked_rice", {
 		duration: 200,
 		EUt: 8,
 		itemInputHints: ["tfc:food/rice_grain"],
-		itemOutputHint: "firmalife:food/cooked_rice",
+		itemOutputHint: "tfc:food/cooked_rice",
 		fluidInputs: [Fluid.of('minecraft:water', 200)],
 		itemInputs: [NotRotten('tfc:food/rice_grain')],
-		itemOutputProvider: TFC.isp.of('firmalife:food/cooked_rice').copyOldestFood()
+		itemOutputProvider: TFC.isp.of('tfc:food/cooked_rice').copyOldestFood()
 	})
 
 	// These don't need the ISP handling, they're just here to keep all the food recipes together
@@ -587,13 +592,6 @@ function registerTFGFoodRecipes(event) {
 		.outputFluids(Fluid.of('firmalife:soybean_oil', 250))
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(600)
-	
-	event.recipes.gtceu.fermenter(`tfg:fermenter/cream_from_${name}`)
-		.inputFluids(Fluid.of('#tfc:milks', 1000))
-		.outputFluids(Fluid.of('firmalife:cream'))
-		.circuit(6)
-		.duration(1200)
-		.EUt(24)
 
 	event.recipes.gtceu.fermenter('tfg:fermenter/curdled_milk')
 		.inputFluids(Fluid.of('minecraft:milk', 2000))
@@ -630,4 +628,14 @@ function registerTFGFoodRecipes(event) {
 		.id('tfg:quern/cocoa_dust');
 
 	//#endregion
+
+	event.replaceInput({id: 'gtceu:shaped/lv_food_processor'}, 'gtceu:lv_electric_piston', 'gtceu:steel_whisk')
+	event.replaceInput({id: 'gtceu:shaped/mv_food_processor'}, 'gtceu:mv_electric_piston', 'gtceu:aluminium_whisk')
+	event.replaceInput({id: 'gtceu:shaped/hv_food_processor'}, 'gtceu:hv_electric_piston', 'gtceu:stainless_steel_whisk')
+	event.replaceInput({id: 'gtceu:shaped/ev_food_processor'}, 'gtceu:ev_electric_piston', 'gtceu:titanium_whisk')
+
+	event.replaceInput({id: 'gtceu:shaped/lv_food_oven'}, 'gtceu:lv_electric_piston', '#tfg:metal_bars')
+	event.replaceInput({id: 'gtceu:shaped/mv_food_oven'}, 'gtceu:mv_electric_piston', '#tfg:metal_bars')
+	event.replaceInput({id: 'gtceu:shaped/hv_food_oven'}, 'gtceu:hv_electric_piston', '#tfg:metal_bars')
+	event.replaceInput({id: 'gtceu:shaped/ev_food_oven'}, 'gtceu:ev_electric_piston', '#tfg:metal_bars')
 }
