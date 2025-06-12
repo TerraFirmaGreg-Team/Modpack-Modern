@@ -388,12 +388,12 @@ jobs:
           fi
           echo "✔️ All artifacts found"
 
-      - name: 🚫 Сlose label "Done"
-        uses: Xikaro/close-issues-based-on-label@master
-        env:
-          LABEL: "Status: Done"
-          COMMENT: In ${{ needs.info.outputs.project_version }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: 🚫 Сlose label "Done"
+      #   uses: Xikaro/close-issues-based-on-label@master
+      #   env:
+      #     LABEL: "Status: Done"
+      #     COMMENT: In ${{ needs.info.outputs.project_version }}
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 📄 Format diff
         id: format_diff
