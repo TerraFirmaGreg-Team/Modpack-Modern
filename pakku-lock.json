@@ -7953,7 +7953,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "tfclunchbox-1.20.1-1.0.0.10.jar",
+                    "file_name": "tfclunchbox-1.20.1-1.0.0.12.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7962,18 +7962,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6633/524/tfclunchbox-1.20.1-1.0.0.10.jar",
-                    "id": "6633524",
+                    "url": "https://edge.forgecdn.net/files/6643/499/tfclunchbox-1.20.1-1.0.0.12.jar",
+                    "id": "6643499",
                     "parent_id": "1283445",
                     "hashes": {
-                        "sha1": "0b3dd4ed090848d136fc15586f5fb8212f1f19b0",
-                        "md5": "c8835a37c829f86448b87601ac58cf9b"
+                        "sha1": "cc2de84c55a6857c49eb5b60a9d128a696b8915c",
+                        "md5": "ce2f05409aedb7d6b7312e20a4baed23"
                     },
-                    "required_dependencies": [
-                        "302973"
-                    ],
-                    "size": 93079,
-                    "date_published": "2025-06-09T15:46:48.850Z"
+                    "required_dependencies": [],
+                    "size": 95743,
+                    "date_published": "2025-06-12T12:57:40.230Z"
                 }
             ]
         },
@@ -8382,7 +8380,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.6.7.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.6.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8391,19 +8389,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6613/427/TerraFirmaGreg-Core-Modern-0.6.7.jar",
-                    "id": "6613427",
+                    "url": "https://edge.forgecdn.net/files/6641/343/TerraFirmaGreg-Core-Modern-0.6.8.jar",
+                    "id": "6641343",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "76662e65565207a7682cafd39ef068e4c0a98516",
-                        "md5": "7c41c1ca1a8a9edf0e9fb72bdf5ebf44"
+                        "sha1": "989c76bb022dd8fdc0363c6ff9bdaa1665ff6571",
+                        "md5": "ada07963205a8b7089d6b9664c833286"
                     },
                     "required_dependencies": [
-                        "302973",
-                        "890405"
+                        "890405",
+                        "302973"
                     ],
-                    "size": 297697,
-                    "date_published": "2025-06-04T11:47:57.083Z"
+                    "size": 297767,
+                    "date_published": "2025-06-11T20:08:19.890Z"
                 }
             ]
         },
