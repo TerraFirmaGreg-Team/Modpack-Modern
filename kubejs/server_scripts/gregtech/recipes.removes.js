@@ -645,6 +645,13 @@ function removeGTCEURecipes(event) {
 
 	event.remove({ id: 'gtceu:wiremill/string_from_polycaprolactam' })
 
+	event.remove({ id: 'gtceu:chemical_bath/black_steel_cool_down' })
+	event.remove({ id: 'gtceu:chemical_bath/black_steel_cool_down_distilled_water' })
+	event.remove({ id: 'gtceu:chemical_bath/red_steel_cool_down' })
+	event.remove({ id: 'gtceu:chemical_bath/red_steel_cool_down_distilled_water' })
+	event.remove({ id: 'gtceu:chemical_bath/blue_steel_cool_down' })
+	event.remove({ id: 'gtceu:chemical_bath/blue_steel_cool_down_distilled_water' })
+
 	event.remove({ id: 'gtceu:compressor/compress_certus_quartz_to_raw_ore_block' })
 
 	// Remove vanilla Eye of Ender

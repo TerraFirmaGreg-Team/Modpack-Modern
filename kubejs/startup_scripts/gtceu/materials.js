@@ -39,7 +39,8 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_FRAME,
 		GENERATE_PLATE,
 		GENERATE_DENSE,
-		GENERATE_RING
+		GENERATE_RING,
+		GENERATE_FOIL
 	} = $MATERIAL_FLAGS
 
 	var metalTooling = [
@@ -196,7 +197,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
 	GTMaterials.BlackSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
 	GTMaterials.BlueSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
-	GTMaterials.RedSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
+	GTMaterials.RedSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW, GENERATE_FOIL);
 	GTMaterials.WroughtIron.addFlags(GENERATE_ROTOR, GENERATE_SPRING, GENERATE_SMALL_GEAR);
 	
 	GTMaterials.Copper.addFlags(GENERATE_BOLT_SCREW);
@@ -257,6 +258,12 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Galena.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.WEAK_POISON, 1, false));
 	GTMaterials.Chromite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.IRRITANT, 1, false));
 
+	// Make these the lowest tier of EBF instead
+	GTMaterials.BlackSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
+	GTMaterials.RedSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
+	GTMaterials.BlueSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
+
+	// Change byproducts so you can't get certus from normal quartzite
 	GTMaterials.Quartzite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.NetherQuartz, GTMaterials.Barite, GTMaterials.NetherQuartz);
 	GTMaterials.CertusQuartz.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.CertusQuartz, GTMaterials.Quartzite, GTMaterials.CertusQuartz);
 

@@ -722,7 +722,7 @@ function registerGTCEuMachineRecipes(event) {
 	event.recipes.gtceu.assembly_line('ultimate_battery')
 		.itemInputs('16x #forge:double_plates/darmstadtium',
 			'4x #gtceu:circuits/uhv',
-			'16x #gtceu:batteries/uv',
+			'16x gtceu:energy_cluster',
 			'4x gtceu:uv_field_generator',
 			'64x gtceu:uhpic_wafer',
 			'64x gtceu:uhpic_wafer',

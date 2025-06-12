@@ -314,7 +314,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "AdvancedPeripherals-1.20.1-0.7.43r.jar",
+                    "file_name": "AdvancedPeripherals-1.20.1-0.7.44r.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -323,18 +323,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6577/898/AdvancedPeripherals-1.20.1-0.7.43r.jar",
-                    "id": "6577898",
+                    "url": "https://edge.forgecdn.net/files/6623/216/AdvancedPeripherals-1.20.1-0.7.44r.jar",
+                    "id": "6623216",
                     "parent_id": "431725",
                     "hashes": {
-                        "sha1": "a6f544738d3c0bb38712dededf12d0e80bd357c7",
-                        "md5": "3b54478098221219b35146ceac7c6133"
+                        "sha1": "7dd9807debcc9eb475bc67a5156bca19a7b46578",
+                        "md5": "8731f8e8503a6e7a5f9f87d59b96d13e"
                     },
                     "required_dependencies": [
                         "282001"
                     ],
-                    "size": 885577,
-                    "date_published": "2025-05-26T17:39:08.747Z"
+                    "size": 885693,
+                    "date_published": "2025-06-06T22:01:06.353Z"
                 }
             ]
         },
@@ -474,7 +474,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "appliedenergistics2-forge-15.4.4.jar",
+                    "file_name": "appliedenergistics2-forge-15.4.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -482,18 +482,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6605/410/appliedenergistics2-forge-15.4.4.jar",
-                    "id": "6605410",
+                    "url": "https://edge.forgecdn.net/files/6629/570/appliedenergistics2-forge-15.4.5.jar",
+                    "id": "6629570",
                     "parent_id": "223794",
                     "hashes": {
-                        "sha1": "8660d742d2f8d8b7bdadae76e84144587811e9d2",
-                        "md5": "74cc19c79dd5dbfa3e511597c7fc0592"
+                        "sha1": "7ee55608d1625ec1fb22d60bd73aa31fe80cc896",
+                        "md5": "92d85cc2573550525f9b9a647f9f8459"
                     },
                     "required_dependencies": [
                         "1173950"
                     ],
-                    "size": 8413070,
-                    "date_published": "2025-06-01T14:46:39.523Z"
+                    "size": 8413069,
+                    "date_published": "2025-06-08T13:24:02.623Z"
                 }
             ]
         },
@@ -552,7 +552,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "afc-1.0.17-1.20.1.jar",
+                    "file_name": "afc-1.0.18-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -561,18 +561,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6549/467/afc-1.0.17-1.20.1.jar",
-                    "id": "6549467",
+                    "url": "https://edge.forgecdn.net/files/6635/351/afc-1.0.18-1.20.1.jar",
+                    "id": "6635351",
                     "parent_id": "877545",
                     "hashes": {
-                        "sha1": "abd0379e85da6bce0e47341a5f51909cc57e1744",
-                        "md5": "701563a64374eb0825c54e063fdd407d"
+                        "sha1": "c2cfffcce7ff7c1c978326a674389fcbdfb61fd4",
+                        "md5": "cb8183be65ca88c20b111e9ae9083dd7"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 5105665,
-                    "date_published": "2025-05-20T04:37:38.210Z"
+                    "size": 5117468,
+                    "date_published": "2025-06-10T03:09:58.637Z"
                 }
             ]
         },
@@ -804,6 +804,45 @@
                     "required_dependencies": [],
                     "size": 440152,
                     "date_published": "2025-04-28T23:30:09.857Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "oKnJXlzNyfYcMTcv",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "baguettelib"
+            },
+            "name": {
+                "curseforge": "BaguetteLib"
+            },
+            "id": {
+                "curseforge": "1264423"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "baguettelib-1.20.1-Forge-1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.1",
+                        "1.20.4"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6523/425/baguettelib-1.20.1-Forge-1.0.0.jar",
+                    "id": "6523425",
+                    "parent_id": "1264423",
+                    "hashes": {
+                        "sha1": "bb17d8ed796efce38eb8fcc72ec477f3373e6c9f",
+                        "md5": "f27a8d6a333579d93a9881100d559b56"
+                    },
+                    "required_dependencies": [],
+                    "size": 26550,
+                    "date_published": "2025-05-12T19:47:40.637Z"
                 }
             ]
         },
@@ -1944,7 +1983,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "corpse-forge-1.20.1-1.0.20.jar",
+                    "file_name": "corpse-forge-1.20.1-1.0.21.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1952,21 +1991,24 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6121/243/corpse-forge-1.20.1-1.0.20.jar",
-                    "id": "6121243",
+                    "url": "https://edge.forgecdn.net/files/6624/394/corpse-forge-1.20.1-1.0.21.jar",
+                    "id": "6624394",
                     "parent_id": "316582",
                     "hashes": {
-                        "sha1": "fc5cd03dd52f24467c879b44296ddc70b85398f4",
-                        "md5": "143d3e76139de3b9186849f494a41af6"
+                        "sha1": "fb68fba706e0a41f1e46492e0d54fde4945b8a05",
+                        "md5": "346a9e592558c1fde772b39c10be4cdf"
                     },
                     "required_dependencies": [],
-                    "size": 244994,
-                    "date_published": "2025-01-24T21:52:45.963Z"
+                    "size": 245618,
+                    "date_published": "2025-06-07T07:02:24.647Z"
                 }
             ]
         },
         {
             "pakku_id": "v5lo2gHNUaKnn445",
+            "pakku_links": [
+                "oKnJXlzNyfYcMTcv"
+            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "corpse-x-curios-api-compat"
@@ -1980,28 +2022,31 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "corpsecurioscompat-1.18.x-1.20.x-Forge-2.2.2.jar",
+                    "file_name": "corpsecurioscompat-1.20.x-Forge-3.0.2.jar",
                     "mc_versions": [
                         "1.20.2",
                         "1.20.3",
                         "1.20.1",
-                        "1.20",
                         "1.20.4"
                     ],
                     "loaders": [
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6327/919/corpsecurioscompat-1.18.x-1.20.x-Forge-2.2.2.jar",
-                    "id": "6327919",
+                    "url": "https://edge.forgecdn.net/files/6616/671/corpsecurioscompat-1.20.x-Forge-3.0.2.jar",
+                    "id": "6616671",
                     "parent_id": "1138130",
                     "hashes": {
-                        "sha1": "1e00db91b74287eb63f389c6c8cb5a70df41f8e0",
-                        "md5": "82d54c35a60a963f292dc3f3fd3b3af2"
+                        "sha1": "946d6cc5055eac39900ff252cd2eb72caf95e4ac",
+                        "md5": "f760be75a5b1c4c22c9327e72cd08a2c"
                     },
-                    "required_dependencies": [],
-                    "size": 9117,
-                    "date_published": "2025-03-21T09:35:57.857Z"
+                    "required_dependencies": [
+                        "309927",
+                        "1264423",
+                        "316582"
+                    ],
+                    "size": 12495,
+                    "date_published": "2025-06-05T08:45:11.493Z"
                 }
             ]
         },
@@ -4636,7 +4681,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "guideme-20.1.7.jar",
+                    "file_name": "guideme-20.1.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4644,16 +4689,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6489/464/guideme-20.1.7.jar",
-                    "id": "6489464",
+                    "url": "https://edge.forgecdn.net/files/6634/593/guideme-20.1.8.jar",
+                    "id": "6634593",
                     "parent_id": "1173950",
                     "hashes": {
-                        "sha1": "fc039093c479b3632b1ab60ea503e79b76b686f9",
-                        "md5": "01ca90ca84ab2f886e4c5a2101934d00"
+                        "sha1": "cc5e96b09949c5f1ad5d6aa5c45695f760715e95",
+                        "md5": "38d8791dc9114d9cf6bcd5f2af1402e7"
                     },
                     "required_dependencies": [],
-                    "size": 9401162,
-                    "date_published": "2025-05-03T00:27:09.520Z"
+                    "size": 9401167,
+                    "date_published": "2025-06-09T21:54:55.087Z"
                 }
             ]
         },
@@ -8046,6 +8091,48 @@
                     ],
                     "size": 1750888,
                     "date_published": "2024-02-21T21:42:51.753Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "B9nXYwWrLGp1WG43",
+            "pakku_links": [
+                "fMkiGcRPRv1DdRC1"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tfc-lunch-box"
+            },
+            "name": {
+                "curseforge": "TFC Lunch Box"
+            },
+            "id": {
+                "curseforge": "1283445"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "tfclunchbox-1.20.1-1.0.0.10.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6633/524/tfclunchbox-1.20.1-1.0.0.10.jar",
+                    "id": "6633524",
+                    "parent_id": "1283445",
+                    "hashes": {
+                        "sha1": "0b3dd4ed090848d136fc15586f5fb8212f1f19b0",
+                        "md5": "c8835a37c829f86448b87601ac58cf9b"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 93079,
+                    "date_published": "2025-06-09T15:46:48.850Z"
                 }
             ]
         },
