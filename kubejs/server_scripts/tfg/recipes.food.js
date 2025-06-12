@@ -80,14 +80,12 @@ function registerTFGFoodRecipes(event) {
 			itemInputs: [NotRotten(item.input)],
 			itemOutputProvider: TFC.isp.of(item.output).copyFood().addTrait("firmalife:oven_baked")
 		})
-
 	})
 
 	//#endregion
 	//#region ================= Cutting grains =================
 
 	global.TFC_QUERN_GRAIN_RECIPE_COMPONENTS.forEach(item => {
-
 		registerFoodRecipe("food_processor", item.name, {
 			duration: 100,
 			EUt: 2,
@@ -96,14 +94,12 @@ function registerTFGFoodRecipes(event) {
 			itemInputs: [NotRotten(item.input)],
 			itemOutputProvider: TFC.isp.of(item.output).copyOldestFood()
 		})
-
 	})
 
 	//#endregion
 	//#region ================= Grains to flour =================
 
 	global.TFC_QUERN_FLOUR_RECIPE_COMPONENTS.forEach(item => {
-
 		registerFoodRecipe("food_processor", item.name, {
 			duration: 100,
 			EUt: 2,
@@ -133,7 +129,7 @@ function registerTFGFoodRecipes(event) {
 	//#region ================= Dough =================
 
 	global.TFC_MIXER_FLATBREAD_DOUGH_RECIPE_COMPONENTS.forEach(item => {
-		
+
 		registerFoodRecipe("food_processor", item.name, {
 			duration: 300,
 			EUt: 2,
@@ -157,7 +153,6 @@ function registerTFGFoodRecipes(event) {
 			itemInputs: [NotRotten(item.input)],
 			itemOutputProvider: TFC.isp.of(item.output).copyFood()
 		})
-
 	})
 
 	//#endregion
@@ -186,7 +181,6 @@ function registerTFGFoodRecipes(event) {
 			itemInputs: [NotRotten(item.input)],
 			itemOutputProvider: TFC.isp.of(item.output).copyFood().addTrait("firmalife:oven_baked")
 		})
-
 	})
 
 	//#endregion
@@ -202,7 +196,6 @@ function registerTFGFoodRecipes(event) {
 			itemInputs: [NotRotten(item.input)],
 			itemOutputProvider: TFC.isp.of(item.output).firmaLifeCopyDynamicFood()
 		})
-
 	})
 
 	//#endregion
