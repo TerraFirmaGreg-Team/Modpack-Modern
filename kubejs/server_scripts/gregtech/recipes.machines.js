@@ -745,7 +745,7 @@ function registerGTCEuMachineRecipes(event) {
 	// #endregion
 
 	// Контроллер теплицы
-	event.shaped('gtceu:greenhouse', [
+	event.shaped('tfg:electric_greenhouse', [
 		'ABA',
 		'CDC',
 		'BCB'
