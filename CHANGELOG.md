@@ -1,5 +1,11 @@
 # Changelog
+
 ## [Unreleased]
+### New features
+### Bug fixes
+### Changes
+
+## [0.9.11] - 13.06.2025
 ### New features
 - Added back the vanilla stonecutter @Pyritie
 - Added our own recipes for crafting GregTech facades - 3 cast iron plates for 8 facades, or 3 titanium plates for 32 facades (#1145) @BlueBoat29
