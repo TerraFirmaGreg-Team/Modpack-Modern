@@ -7953,7 +7953,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "tfclunchbox-1.20.1-1.0.0.12.jar",
+                    "file_name": "tfclunchbox-1.20.1-1.0.0.14.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7962,16 +7962,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6643/499/tfclunchbox-1.20.1-1.0.0.12.jar",
-                    "id": "6643499",
+                    "url": "https://edge.forgecdn.net/files/6646/846/tfclunchbox-1.20.1-1.0.0.14.jar",
+                    "id": "6646846",
                     "parent_id": "1283445",
                     "hashes": {
-                        "sha1": "cc2de84c55a6857c49eb5b60a9d128a696b8915c",
-                        "md5": "ce2f05409aedb7d6b7312e20a4baed23"
+                        "sha1": "de4051c4345290b9d99f2d26090ad466f112b3ec",
+                        "md5": "ada6f65d0fc9785a34b9deb76c53e882"
                     },
                     "required_dependencies": [],
-                    "size": 95743,
-                    "date_published": "2025-06-12T12:57:40.230Z"
+                    "size": 95828,
+                    "date_published": "2025-06-13T12:54:20.803Z"
                 }
             ]
         },
