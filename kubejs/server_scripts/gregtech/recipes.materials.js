@@ -221,7 +221,7 @@ function registerGTCEUMetalRecipes(event) {
 				.outputFluids(Fluid.of(material.getFluid(), 288))
 				.duration(material.getMass())
 				.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
+				.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
 		}
 
 		if (material.hasProperty(PropertyKey.DUST)) {
@@ -666,7 +666,7 @@ function registerGTCEUMetalRecipes(event) {
 
 		event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_unfinished_lamp`)
 			.itemInputs(unfinishedLampStack)
-			.itemOutputs([materialIngotStack, glassDustStack])
+			.itemOutputs(materialIngotStack)
 			.duration(material.getMass() * 8)
 			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 			.EUt(GTValues.VA[GTValues.ULV])
@@ -843,7 +843,6 @@ function registerGTCEUMetalRecipes(event) {
 			.itemOutputs(barsStack)
 			.duration(100)
 			.EUt(GTValues.VA[GTValues.LV])
-			.circuit(1)
 	}
 
 	forEachMaterial(material => {

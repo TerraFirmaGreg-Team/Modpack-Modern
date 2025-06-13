@@ -124,7 +124,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.outputFluids(Fluid.of('firmalife:curdled_goat_milk', 1000))
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.LV])
-
+	
 	//Scaffolding Frame
 	event.shaped('tfg:scaffolding_frame',
 		[
@@ -136,13 +136,7 @@ function registerTFGMiscellaneousRecipes(event) {
 			A: '#forge:rods/wood',
 			B: '#forge:cloth'
 		}).id('tfg:shaped/scaffolding_frame');
-
-	event.recipes.gtceu.assembler('tfg:assembler/scaffolding_frame')
-		.itemInputs('4x #forge:rods/wood', '#forge:cloth')
-		.itemOutputs('tfg:scaffolding_frame')
-		.duration(10)
-		.EUt(GTValues.VA[GTValues.ULV]);
-
+	
 	//Airship Hull
 	event.shaped('tfg:airship_hull', [
 		'A B',
@@ -258,6 +252,13 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('4x firmalife:ice_shavings')
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.fluid_solidifier('tfg:ice')
+		.inputFluids(Fluid.of('minecraft:water', 144))
+		.notConsumable('gtceu:block_casting_mold')
+		.itemOutputs('minecraft:ice')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.shapeless('4x firmalife:ice_shavings', ['#forge:dusts/ice', '#forge:tools/hammers'])
 
