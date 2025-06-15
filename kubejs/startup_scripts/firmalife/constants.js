@@ -84,6 +84,13 @@ global.FIRMALIFE_ORE_MATERIALS = [
     'chromite'
 ];
 
+global.FIRMALIFE_JAMS = [
+    "fig",
+    "pineapple",
+    "red_grapes",
+    "white_grapes"
+]
+
 global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = [
     { input: 'firmalife:plant/cocoa_sapling', fluid_amount: 8000, output: '3x firmalife:food/cocoa_beans', name: 'cocoa_beans' },
     { input: 'firmalife:plant/fig_sapling', fluid_amount: 8000, output: '3x firmalife:food/fig', name: 'fig' },
@@ -92,26 +99,6 @@ global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = [
 global.FIRMALIFE_GREENHOUSE_BERRY_RECIPE_COMPONENTS = [
     { input: 'firmalife:plant/pineapple_bush', fluid_amount: 6000, output: '3x firmalife:food/pineapple', name: 'pineapple' },
     { input: 'firmalife:plant/nightshade_bush', fluid_amount: 6000, output: '3x firmalife:food/nightshade_berry', name: 'nightshade' },
-];
-
-global.FIRMALIFE_MIXER_FLATBREAD_DOUGH_RECIPE_COMPONENTS = [
-    { input: 'tfc:food/barley_flour', output: '4x firmalife:food/barley_dough', name: 'firmalife_barley_dough' },
-    { input: 'tfc:food/maize_flour', output: '4x firmalife:food/maize_dough', name: 'firmalife_maize_dough' },
-    { input: 'tfc:food/oat_flour', output: '4x firmalife:food/oat_dough', name: 'firmalife_oat_dough' },
-    { input: 'tfc:food/rye_flour', output: '4x firmalife:food/rye_dough', name: 'firmalife_rye_dough' },
-    { input: 'tfc:food/rice_flour', output: '4x firmalife:food/rice_dough', name: 'firmalife_rice_dough' },
-    { input: 'tfc:food/wheat_flour', output: '4x firmalife:food/wheat_dough', name: 'firmalife_wheat_dough' },
-    { input: 'firmalife:food/masa_flour', output: '2x firmalife:food/masa', name: 'firmalife_masa' },
-];
-
-global.FIRMALIFE_FURNACE_FLATBREAD_RECIPE_COMPONENTS = [
-    { input: 'tfc:food/barley_dough', output: 'firmalife:food/barley_flatbread', name: 'barley_flatbread' },
-    { input: 'tfc:food/maize_dough', output: 'firmalife:food/maize_flatbread', name: 'maize_flatbread' },
-    { input: 'tfc:food/oat_dough', output: 'firmalife:food/oat_flatbread', name: 'oat_flatbread' },
-    { input: 'tfc:food/rye_dough', output: 'firmalife:food/rye_flatbread', name: 'rye_flatbread' },
-    { input: 'tfc:food/rice_dough', output: 'firmalife:food/rice_flatbread', name: 'rice_flatbread' },
-    { input: 'tfc:food/wheat_dough', output: 'firmalife:food/wheat_flatbread', name: 'wheat_flatbread' },
-    { input: 'firmalife:food/masa', output: 'firmalife:food/corn_tortilla', name: 'corn_tortilla' },
 ];
 
 global.FIRMALIFE_COOKING_RECIPE_COMPONENTS = [
