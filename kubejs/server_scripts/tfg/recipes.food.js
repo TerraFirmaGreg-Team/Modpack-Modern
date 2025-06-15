@@ -336,8 +336,8 @@ function registerTFGFoodRecipes(event) {
 
 	//#endregion
 
-	//#region ================= Misc =================
-
+	//#region ================= Food preservation =================
+	
 	registerFoodRecipe("food_processor", "food_salting", {
 		duration: 10,
 		EUt: 16,
@@ -346,6 +346,57 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: [TFC.ingredient.lacksTrait(NotRotten("#tfc:foods/can_be_salted"), "tfc:salted"), "tfc:powder/salt"],
 		itemOutputProvider: TFC.isp.copyInput().addTrait("tfc:salted")
 	})
+
+	
+	registerFoodRecipe("food_processor", "brine_meat", {
+		duration: 200,
+		EUt: 16,
+		circuit: 5,
+		itemInputHints: ["#tfc:foods/raw_meats"],
+		itemOutputHints: ["#tfc:foods/raw_meats"],
+		itemInputs: [TFC.ingredient.lacksTrait(NotRotten("#tfc:foods/raw_meats"), "tfc:brined")],
+		fluidInputs: Fluid.of("tfc:brine", 100),
+		itemOutputProvider: TFC.isp.copyInput().addTrait("tfc:brined")
+	})
+
+	registerFoodRecipe("food_processor", "brine_general", {
+		duration: 200,
+		EUt: 16,
+		circuit: 5,
+		itemInputHints: ["#firmalife:foods/pizza_ingredients"],
+		itemOutputHints: ["#firmalife:foods/pizza_ingredients"],
+		itemInputs: [TFC.ingredient.lacksTrait(NotRotten("#firmalife:foods/pizza_ingredients"), "tfc:brined")],
+		fluidInputs: Fluid.of("tfc:brine", 100),
+		itemOutputProvider: TFC.isp.copyInput().addTrait("tfc:brined")
+	})
+
+
+	registerFoodRecipe("food_processor", "pickle_meat", {
+		duration: 200,
+		EUt: 16,
+		circuit: 5,
+		itemInputHints: ["#tfc:foods/raw_meats"],
+		itemOutputHints: ["#tfc:foods/raw_meats"],
+		itemInputs: [TFC.ingredient.lacksTrait(TFC.ingredient.hasTrait(NotRotten("#tfc:foods/raw_meats"), "tfc:brined"), "tfc:pickled")],
+		fluidInputs: Fluid.of("tfc:vinegar", 100),
+		itemOutputProvider: TFC.isp.copyInput().addTrait("tfc:pickled")
+	})
+
+	registerFoodRecipe("food_processor", "pickle_general", {
+		duration: 200,
+		EUt: 16,
+		circuit: 5,
+		itemInputHints: ["#firmalife:foods/pizza_ingredients"],
+		itemOutputHints: ["#firmalife:foods/pizza_ingredients"],
+		itemInputs: [TFC.ingredient.lacksTrait(TFC.ingredient.hasTrait(NotRotten("#firmalife:foods/pizza_ingredients"), "tfc:brined"), "tfc:pickled")],
+		fluidInputs: Fluid.of("tfc:vinegar", 100),
+		itemOutputProvider: TFC.isp.copyInput().addTrait("tfc:pickled")
+	})
+
+
+	//#endregion
+	//#region ================= Misc =================
+
 
 	registerFoodRecipe("food_processor", 'firmalife_masa', {
 		duration: 300,
@@ -398,9 +449,9 @@ function registerTFGFoodRecipes(event) {
 	registerFoodRecipe("food_processor", "soybean_paste", {
 		duration: 60,
 		EUt: 8,
-		itemInputHints: ['firmalife:food/dehydrated_soybean'],
+		itemInputHints: ['firmalife:food/dehydrated_soybeans'],
 		itemOutputHints: ['firmalife:food/soybean_paste'],
-		itemInputs: [NotRotten('firmalife:food/dehydrated_soybean')],
+		itemInputs: [NotRotten('firmalife:food/dehydrated_soybeans')],
 		itemOutputProvider: TFC.isp.of('firmalife:food/soybean_paste').copyOldestFood(),
 	})
 		
@@ -418,6 +469,44 @@ function registerTFGFoodRecipes(event) {
 			fluidOutputs: [Fluid.of('tfc:vinegar', 250)],
 		})
 
+	})
+
+	registerFoodRecipe("food_processor", "pizza_no_extra", {
+		duration: 600,
+		EUt: 16,
+		itemInputHints: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese"],
+		itemOutputHints: ["firmalife:food/raw_pizza"],
+		itemInputs: [NotRotten("firmalife:food/pizza_dough"), NotRotten("firmalife:food/tomato_sauce"), NotRotten("firmalife:food/shredded_cheese")],
+		itemOutputProvider: TFC.isp.of("firmalife:food/raw_pizza").meal(
+			(food) => food.hunger(4).saturation(1).grain(1).dairy(0.25).decayModifier(4.5),
+			(portion) => portion.nutrientModifier(0.8).waterModifier(0.8).saturationModifier(0.8)
+		)
+	})
+
+	registerFoodRecipe("food_processor", "pizza_1_extra", {
+		duration: 600,
+		EUt: 16,
+		circuit: 1,
+		itemInputHints: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese", "#firmalife:foods/pizza_ingredients"],
+		itemOutputHints: ["firmalife:food/raw_pizza"],
+		itemInputs: [NotRotten("firmalife:food/pizza_dough"), NotRotten("firmalife:food/tomato_sauce"), NotRotten("firmalife:food/shredded_cheese"), NotRotten("#firmalife:foods/pizza_ingredients")],
+		itemOutputProvider: TFC.isp.of("firmalife:food/raw_pizza").meal(
+			(food) => food.hunger(4).saturation(1).grain(1).dairy(0.25).decayModifier(4.5),
+			(portion) => portion.nutrientModifier(0.8).waterModifier(0.8).saturationModifier(0.8)
+		)
+	})
+
+	registerFoodRecipe("food_processor", "pizza_2_extra", {
+		duration: 600,
+		EUt: 16,
+		circuit: 2,
+		itemInputHints: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese", "2x #firmalife:foods/pizza_ingredients"],
+		itemOutputHints: ["firmalife:food/raw_pizza"],
+		itemInputs: [NotRotten("firmalife:food/pizza_dough"), NotRotten("firmalife:food/tomato_sauce"), NotRotten("firmalife:food/shredded_cheese"), NotRotten("2x #firmalife:foods/pizza_ingredients")],
+		itemOutputProvider: TFC.isp.of("firmalife:food/raw_pizza").meal(
+			(food) => food.hunger(4).saturation(1).grain(1).dairy(0.25).decayModifier(4.5),
+			(portion) => portion.nutrientModifier(0.8).waterModifier(0.8).saturationModifier(0.8)
+		)
 	})
 
 	registerFoodRecipe("food_processor", "pizza_dough_olive_oil", {
@@ -473,7 +562,7 @@ function registerTFGFoodRecipes(event) {
 		duration: 300,
 		EUt: 16,
 		itemInputHints: ["tfc:powder/salt"],
-		itemOutputHints: ["firmalife:food/buffer"],
+		itemOutputHints: ["firmalife:food/butter"],
 		fluidInputs: [Fluid.of('firmalife:cream', 1000)],
 		itemInputs: ["tfc:powder/salt"],
 		itemOutputProvider: TFC.isp.of('firmalife:food/butter').resetFood()
