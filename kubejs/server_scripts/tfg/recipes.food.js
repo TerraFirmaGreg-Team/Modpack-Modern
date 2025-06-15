@@ -326,6 +326,7 @@ function registerTFGFoodRecipes(event) {
 
 	global.TFC_JAMS.forEach(name => {
 		processorRecipe(`${name}_jam`, 200, 8, {
+			circuit: 15,
 			itemInputs: [`4x tfc:food/${name}`, "#tfg:sugar", "#tfc:empty_jar_with_lid"],
 			itemOutputs: [`4x tfc:jar/${name}`],
 			fluidInputs: Fluid.of("minecraft:water", 100),
@@ -333,9 +334,9 @@ function registerTFGFoodRecipes(event) {
 		})
 
 		processorRecipe(`${name}_jam_no_seal`, 200, 8, {
-			circuit: 1,
+			circuit: 16,
 			itemInputs: [`4x tfc:food/${name}`, "#tfg:sugar", "#tfc:empty_jar"],
-			itemOutputs: [`4x tfc:jar/${name}`],
+			itemOutputs: [`4x tfc:jar/${name}_unsealed`],
 			fluidInputs: Fluid.of("minecraft:water", 100),
 			itemOutputProvider: TFC.isp.of(`4x tfc:jar/${name}_unsealed`).copyFood()
 		})
