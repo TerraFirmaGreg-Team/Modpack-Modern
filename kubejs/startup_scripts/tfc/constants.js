@@ -933,6 +933,31 @@ global.TFC_GRAINS = [
     "wheat",
 ]
 
+global.TFC_JAMS = [
+    "blackberry",
+    "blueberry",
+    "bunchberry",
+    "cloudberry",
+    "cranberry",
+    "elderberry",
+    "gooseberry",
+    "raspberry",
+    "snowberry",
+    "strawberry",
+    "wintergreen_berry",
+    "banana",
+    "cherry",
+    "green_apple",
+    "lemon",
+    "olive",
+    "orange",
+    "peach",
+    "plum",
+    "red_apple",
+    "pumpkin_chunks",
+    "melon_slice",
+]
+
 global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = [
     { input: 'tfc:plant/cherry_sapling', fluid_amount: 8000, output: '32x tfc:food/cherry', name: 'cherry' },
     { input: 'tfc:plant/green_apple_sapling', fluid_amount: 8000, output: '32x tfc:food/green_apple', name: 'green_apple' },

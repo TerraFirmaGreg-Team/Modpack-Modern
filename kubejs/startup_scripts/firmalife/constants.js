@@ -84,6 +84,13 @@ global.FIRMALIFE_ORE_MATERIALS = [
     'chromite'
 ];
 
+global.FIRMALIFE_JAMS = [
+    "fig",
+    "pineapple",
+    "red_grapes",
+    "white_grapes"
+]
+
 global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = [
     { input: 'firmalife:plant/cocoa_sapling', fluid_amount: 8000, output: '3x firmalife:food/cocoa_beans', name: 'cocoa_beans' },
     { input: 'firmalife:plant/fig_sapling', fluid_amount: 8000, output: '3x firmalife:food/fig', name: 'fig' },
