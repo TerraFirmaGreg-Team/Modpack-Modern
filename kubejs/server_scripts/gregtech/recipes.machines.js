@@ -744,18 +744,6 @@ function registerGTCEuMachineRecipes(event) {
 
 	// #endregion
 
-	// Контроллер теплицы
-	event.shaped('tfg:electric_greenhouse', [
-		'ABA',
-		'CDC',
-		'BCB'
-	], {
-		A: '#gtceu:circuits/mv',
-		B: 'gtceu:copper_single_cable',
-		C: 'tfc:compost',
-		D: 'gtceu:solid_machine_casing'
-	}).id('tfg:shaped/greenhouse')
-
 	// Drums
 	const DRUMS_AND_CRATES = [
 		'bismuth_bronze',
