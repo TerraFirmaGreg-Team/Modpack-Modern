@@ -684,6 +684,7 @@
 			tasks: [{
 				id: "5A6EF9EBF232601C"
 				item: "gtceu:copper_double_ingot"
+				match_nbt: false
 				type: "item"
 				weak_nbt_match: true
 			}]
