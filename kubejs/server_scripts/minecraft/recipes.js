@@ -1011,6 +1011,7 @@ const registerMinecraftRecipes = (event) => {
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
 
+
 	// Stonecutter
 
 	event.shaped('minecraft:stonecutter',
@@ -1028,4 +1029,21 @@ const registerMinecraftRecipes = (event) => {
 		}).id('tfg:shaped/stonecutter');
 
 	event.stonecutting('minecraft:smooth_quartz', 'minecraft:quartz_block')
+
+	//Glowing Ink Sacs
+		
+	event.recipes.gtceu.chemical_bath('minecraft:glow_inc_sac4')
+		.itemInputs("gtceu:thorium_dust", "4x #forge:dyes/black")
+		.inputFluids(Fluid.of('gtceu:glowstone', 512))
+		.itemOutputs('16x minecraft:glow_ink_sac')
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.HV])
+		
+	event.recipes.gtceu.chemical_bath('minecraft:glow_inc_sac1')
+		.itemInputs("#forge:dyes/black")
+		.inputFluids(Fluid.of('gtceu:glowstone', 144))
+		.itemOutputs('minecraft:glow_ink_sac')
+		.duration(40)
+		.EUt(GTValues.VA[GTValues.MV])
+
 }
