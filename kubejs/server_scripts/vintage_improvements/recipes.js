@@ -293,6 +293,10 @@ function registerVintageImprovementsRecipes(event) {
 
 	forEachMaterial(material => {
 
+		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
+		if (ingotItem == null || ingotItem.hasTag('c:hidden_from_recipe_viewers'))
+			return;
+
 		// #region Coiling
 
 		if (material.hasFlag(MaterialFlags.GENERATE_ROD) && material.hasFlag(MaterialFlags.GENERATE_SPRING_SMALL)) {

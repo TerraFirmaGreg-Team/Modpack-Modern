@@ -4,6 +4,7 @@
 ### New features
 ### Bug fixes
 - Fixed double ingots not having a temperature (#1165) @Pyritie
+- Removed a few recipes that had unobtainable create-related materials @Pyritie
 ### Changes
 - Changed pineapple yarn recipe from assembler to wiremill & coiling machine, like the other strings (#1162) @Pyritie
 
