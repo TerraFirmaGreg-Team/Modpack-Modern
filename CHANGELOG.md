@@ -5,8 +5,10 @@
 ### Bug fixes
 - Fixed double ingots not having a temperature (#1165) @Pyritie
 - Removed a few recipes that had unobtainable create-related materials @Pyritie
+- Fixed the color of placed zinc ingots and plated blocks to match the material @Pyritie
 ### Changes
 - Changed pineapple yarn recipe from assembler to wiremill & coiling machine, like the other strings (#1162) @Pyritie
+- Lowered durability of wooden tongs @Pyritie
 
 ## [0.9.11] - 13.06.2025
 ### New features
