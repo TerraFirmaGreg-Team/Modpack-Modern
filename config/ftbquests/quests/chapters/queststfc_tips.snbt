@@ -1602,12 +1602,26 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.passive_preservation.desc}"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:ceramic/vessel"
+				tag: { }
+			}
 			id: "13F7066858E923FF"
 			subtitle: "{quests.tfg_tips.passive_preservation.subtitle}"
 			tasks: [{
-				id: "54AAB9886964A160"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "5BAF5F5343C3E42A"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
 			}]
 			title: "{quests.tfg_tips.passive_preservation.title}"
 			x: 6.5d
@@ -2236,10 +2250,7 @@
 			y: 9.5d
 		}
 		{
-			dependencies: [
-				"2D959136A5FC5F46"
-				"56CA2EB7812529C5"
-			]
+			dependencies: ["2D959136A5FC5F46"]
 			description: ["{quests.tfg_tips.lamps.desc}"]
 			id: "037CDA933FBE2CBE"
 			subtitle: "{quests.tfg_tips.lamps.subtitle}"
@@ -2277,8 +2288,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.lamps.title}"
-			x: -5.0d
-			y: 11.0d
+			x: -5.5d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -2286,6 +2297,16 @@
 				"56CA2EB7812529C5"
 			]
 			description: ["{quests.tfg_tips.lava_lamp.desc}"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/lamp/blue_steel"
+			}
 			id: "4EBABACAB444244D"
 			optional: true
 			shape: "heart"
@@ -2312,8 +2333,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.lava_lamp.title}"
-			x: -5.0d
-			y: 12.5d
+			x: -5.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["037CDA933FBE2CBE"]
@@ -2333,8 +2354,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.creosote.title}"
-			x: -6.0d
-			y: 12.0d
+			x: -6.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["037CDA933FBE2CBE"]
@@ -2354,8 +2375,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.olive_oil.title}"
-			x: -4.0d
-			y: 12.0d
+			x: -4.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["2D959136A5FC5F46"]
@@ -3462,8 +3483,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.tallow.title}"
-			x: -6.5d
-			y: 11.0d
+			x: -7.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -5375,6 +5396,26 @@
 			title: "{quests.tfg_tips.lunchbox.title}"
 			x: 7.5d
 			y: -18.0d
+		}
+		{
+			dependencies: ["037CDA933FBE2CBE"]
+			description: ["{quests.tfg_tips.glowstone_lamp.desc}"]
+			id: "61F58B402F1AE40B"
+			subtitle: "{quests.tfg_tips.glowstone_lamp.subtitle}"
+			tasks: [{
+				id: "71D52011F8BE66F0"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "only_one(item(gtceu:glowstone_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:glowstone\"}}))"
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.glowstone_lamp.title}"
+			x: -6.5d
+			y: 10.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]
