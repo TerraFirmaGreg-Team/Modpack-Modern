@@ -160,10 +160,10 @@ function registerTFGFoodRecipes(event) {
 				])
 			})
 
-			
+			//Note: Jam needs to be first in the recipe code or else it will consider it as the usable_in_jam_sandwhich ingredients.
 			processorRecipe(`${grain}_${type[0]}_jam_sandwich`, 100, 16, {
 				circuit: 4,
-				itemInputs: [`2x ${type[1]}`, "2x #tfc:foods/usable_in_jam_sandwich", '#tfc:foods/preserves'],
+				itemInputs: [`2x ${type[1]}`, '#tfc:foods/preserves', '2x #tfc:foods/usable_in_jam_sandwich'],
 				itemOutputs: [`2x tfc:food/${grain}_bread_jam_sandwich`, 'tfc:empty_jar'],
 				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_bread_jam_sandwich`).meal(
 					(food => food.hunger(4).water(0.5).saturation(1).decayModifier(4.5)), [
@@ -277,47 +277,30 @@ function registerTFGFoodRecipes(event) {
 	//#endregion
 
 	//#region ================= Food preservation =================
-	
-	processorRecipe("food_salting", 10, 16, {
-		itemInputs: [
-			["#tfc:foods/can_be_salted", TFC.ingredient.lacksTrait("#tfc:foods/can_be_salted", "tfc:salted")], 
-			"tfc:powder/salt"],
-		itemOutputs: ["#tfc:foods/can_be_salted"],
-		itemOutputProvider: TFC.isp.copyInput().addTrait("tfc:salted")
+
+	const smoking_meats = Ingredient.of('#tfc:foods/raw_meats').itemIds;
+	const brining_veg = Ingredient.of('#firmalife:foods/pizza_ingredients').itemIds;
+
+	const brining_ingredients = smoking_meats.concat(brining_veg);
+
+	brining_ingredients.forEach(item => {
+		processorRecipe(`${item}/brining`, 200, 16, {
+			circuit: 5,
+			itemInputs: [item],
+			itemOutputs: [item],
+			fluidInputs: [Fluid.of("tfc:brine", 100)],
+			itemOutputProvider: TFC.isp.of(item).copyOldestFood().addTrait('tfc:brined')
+		})
 	})
 
-	
-	processorRecipe("brine_meat", 200, 16, {
-		circuit: 5,
-		itemInputs: [["#tfc:foods/raw_meats", TFC.ingredient.lacksTrait("#tfc:foods/raw_meats", "tfc:brined")]],
-		itemOutputs: ["#tfc:foods/raw_meats"],
-		fluidInputs: [Fluid.of("tfc:brine", 100)],
-		itemOutputProvider: TFC.isp.copyInput().addTrait("tfc:brined")
-	})
-
-	processorRecipe("brine_general", 200, 16, {
-		circuit: 5,
-		itemInputs: [["#firmalife:foods/pizza_ingredients", TFC.ingredient.lacksTrait("#firmalife:foods/pizza_ingredients", "tfc:brined")]],
-		itemOutputs: ["#firmalife:foods/pizza_ingredients"],
-		fluidInputs: [Fluid.of("tfc:brine", 100)],
-		itemOutputProvider: TFC.isp.copyInput().addTrait("tfc:brined")
-	})
-
-
-	processorRecipe("pickle_meat", 200, 16, {
-		circuit: 5,
-		itemInputs: [ ["#tfc:foods/raw_meats", TFC.ingredient.lacksTrait(TFC.ingredient.hasTrait("#tfc:foods/raw_meats", "tfc:brined"), "tfc:pickled")] ],
-		itemOutputs: ["#tfc:foods/raw_meats"],
-		fluidInputs: [Fluid.of("tfc:vinegar", 100)],
-		itemOutputProvider: TFC.isp.copyInput().addTrait("tfc:pickled")
-	})
-
-	processorRecipe("pickle_general", 200, 16, {
-		circuit: 5,
-		itemInputs: [ ["#firmalife:foods/pizza_ingredients", TFC.ingredient.lacksTrait(TFC.ingredient.hasTrait("#firmalife:foods/pizza_ingredients", "tfc:brined"), "tfc:pickled")] ],
-		itemOutputs: ["#firmalife:foods/pizza_ingredients"],
-		fluidInputs: [Fluid.of("tfc:vinegar", 100)],
-		itemOutputProvider: TFC.isp.copyInput().addTrait("tfc:pickled")
+	smoking_meats.forEach(item => {
+		processorRecipe(`${item}/smoking`, 200, 16, {
+			circuit: 6,
+			itemInputs: [[item, TFC.ingredient.lacksTrait(item, "firmalife:smoked")]],
+			itemOutputs: [item],
+			fluidInputs: [Fluid.of('gtceu:wood_gas', 50)],
+			itemOutputProvider: TFC.isp.of(item).copyOldestFood().addTrait("firmalife:smoked")
+		})
 	})
 
 	//#endregion
@@ -327,17 +310,17 @@ function registerTFGFoodRecipes(event) {
 	global.TFC_JAMS.forEach(name => {
 		processorRecipe(`${name}_jam`, 200, 8, {
 			circuit: 15,
-			itemInputs: [`4x tfc:food/${name}`, "#tfg:sugar", "#tfc:empty_jar_with_lid"],
+			itemInputs: [`4x tfc:food/${name}`, "#tfg:sugars", "#tfc:empty_jar_with_lid"],
 			itemOutputs: [`4x tfc:jar/${name}`],
-			fluidInputs: Fluid.of("minecraft:water", 100),
+			fluidInputs: [Fluid.of("minecraft:water", 100)],
 			itemOutputProvider: TFC.isp.of(`4x tfc:jar/${name}`).copyFood()
 		})
 
 		processorRecipe(`${name}_jam_no_seal`, 200, 8, {
 			circuit: 16,
-			itemInputs: [`4x tfc:food/${name}`, "#tfg:sugar", "#tfc:empty_jar"],
+			itemInputs: [`4x tfc:food/${name}`, "#tfg:sugars", "tfc:empty_jar"],
 			itemOutputs: [`4x tfc:jar/${name}_unsealed`],
-			fluidInputs: Fluid.of("minecraft:water", 100),
+			fluidInputs: [Fluid.of("minecraft:water", 100)],
 			itemOutputProvider: TFC.isp.of(`4x tfc:jar/${name}_unsealed`).copyFood()
 		})
 	})
