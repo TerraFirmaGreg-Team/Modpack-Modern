@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### New features
 ### Bug fixes
+- Fixed double ingots not having a temperature (#1165) @Pyritie
 ### Changes
 
 ## [0.9.11] - 13.06.2025
