@@ -44,7 +44,7 @@ The heart of the modpack is a tight integration between the two namesake mods:
 
 On top of these, other major mods help provide even more depth:
 - **[Create]** and **[Greate]** – Start automating your problems away early with Create's kinetic machines, integrated seamlessly through Greate
-- **[Ad Astra]** – Grow your factory even further beyond, with new logistic and survival problems to solve
+- **[Ad Astra]** (WIP) – Grow your factory even further beyond, with new logistic and survival problems to solve
 - **[Applied Energistics 2]** – Cutting-edge storage and automation systems appropriate for an advanced era
 
 Many new mechanics, tools, and dimensions are also built completely from the ground up just for TerraFirmaGreg!
