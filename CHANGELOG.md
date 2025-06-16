@@ -5,6 +5,7 @@
 ### Bug fixes
 - Fixed double ingots not having a temperature (#1165) @Pyritie
 ### Changes
+- Changed pineapple yarn recipe from assembler to wiremill & coiling machine, like the other strings (#1162) @Pyritie
 
 ## [0.9.11] - 13.06.2025
 ### New features
