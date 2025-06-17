@@ -381,14 +381,14 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:fayalite_gem",
+					"name": "gtceu:ruby_gem",
 					"weight": 50,
 					"functions": [
 						{
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 5,
+								"max": 10,
 								"min": 1
 							},
 							"function": "minecraft:set_count"
@@ -397,14 +397,14 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:diopside_gem",
+					"name": "minecraft:quartz",
 					"weight": 50,
 					"functions": [
 						{
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 5,
+								"max": 10,
 								"min": 1
 							},
 							"function": "minecraft:set_count"
@@ -413,14 +413,14 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:enstatite_gem",
+					"name": "gtceu:quartzite_gem",
 					"weight": 50,
 					"functions": [
 						{
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 5,
+								"max": 10,
 								"min": 1
 							},
 							"function": "minecraft:set_count"

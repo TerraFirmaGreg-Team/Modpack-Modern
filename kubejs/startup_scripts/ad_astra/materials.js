@@ -2,35 +2,6 @@
 
 const registerAdAstraMaterials = (event) => {
 
-	// #region moon ores
-
-	event.create('diopside')
-		.gem(2)
-		.components('1x magnesium', '1x calcium', '2x silicon', '6x oxygen')
-		.color(0xb7cca1)
-		.secondaryColor(0x26631b)
-		.iconSet(GTMaterialIconSet.getByName('tfc_amethyst'))
-		.ore()
-		.addOreByproducts('magnesium', 'magnetite', 'olivine')
-
-	event.create('enstatite')
-		.gem(2)
-		.components('2x magnesium', '2x silicon', '6x oxygen')
-		.color(0x595813)
-		.secondaryColor(0x47380a)
-		.iconSet(GTMaterialIconSet.getByName('tfc_opal'))
-		.ore()
-		.addOreByproducts('olivine', 'olivine', 'magnetite')
-
-	event.create('fayalite')
-		.gem(2)
-		.components('2x iron', '1x silicon', '4x oxygen')
-		.color(0x421209)
-		.secondaryColor(0x3b4710)
-		.iconSet(GTMaterialIconSet.getByName('tfc_topaz'))
-		.ore()
-		.addOreByproducts('olivine', 'magnetite', 'magnetite')
-
 	event.create('armalcolite')
 		.gem(2)
 		.components('1x magnesium', '1x rutile', '1x ilmenite')
@@ -39,8 +10,6 @@ const registerAdAstraMaterials = (event) => {
 		.iconSet(GTMaterialIconSet.getByName('tfc_emerald'))
 		.ore()
 		.addOreByproducts('rutile', 'rutile', 'ilmenite')
-
-	// #endregion
 
 	// #region ad astra ores
 
