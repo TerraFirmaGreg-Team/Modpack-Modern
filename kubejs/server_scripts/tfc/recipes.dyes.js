@@ -138,6 +138,27 @@ function registerTFCDyeRecipes(event) {
 				.fluidOutput(Fluid.of(`tfc:${dyeName}_dye`, 144 * i))
 				.id(`tfc:pot/${i}x_${dyeName}_dye`)
 		}
+
+		event.recipes.firmalife.vat()
+			.inputs(`#forge:dyes/${dyeName}`, Fluid.of('tfc:vinegar', 250))
+			.outputFluid(Fluid.of(`tfc:${dyeName}_dye`, 144))
+			.length(100)
+			.temperature(200)
+			.id(`firmalife:vat/${dyeName}_dye`)
+
+		event.recipes.gtceu.chemical_reactor(`chemical_dye_${dyeName}_acetic`)
+			.itemInputs(`#forge:dyes/${dyeName}`)
+			.inputFluids(Fluid.of('gtceu:acetic_acid', 250))
+			.outputFluids(Fluid.of(`tfc:${dyeName}_dye`, 144 * 3))
+			.duration(15 * 20)
+			.EUt(24)
+
+		event.recipes.gtceu.chemical_reactor(`chemical_dye_${dyeName}_vinegar`)
+			.itemInputs(`#forge:dyes/${dyeName}`)
+			.inputFluids(Fluid.of('tfc:vinegar', 250))
+			.outputFluids(Fluid.of(`tfc:${dyeName}_dye`, 144))
+			.duration(30 * 20)
+			.EUt(24)
 	})
 
 	//#endregion
