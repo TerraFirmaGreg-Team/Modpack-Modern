@@ -473,11 +473,11 @@ const registerFirmaLifeRecipes = (event) => {
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 
 		event.recipes.firmalife.vat()
-			.inputs(`#forge:dyes/${dye}`, Fluid.of('tfc:salt_water', 250))
-			.outputFluid(Fluid.of(`tfc:${dye}_dye`, 144))
-			.length(2000)
-			.temperature(600)
-			.id(`firmalife:vat/${dye}_dye`)
+			.inputs(`#forge:dyes/${dyeName}`, Fluid.of('tfc:vinegar', 250))
+			.outputFluid(Fluid.of(`tfc:${dyeName}_dye`, 144))
+			.length(100)
+			.temperature(200)
+			.id(`firmalife:vat/${dyeName}_dye`)
 	})
 
 	//#endregion
