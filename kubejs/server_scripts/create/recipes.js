@@ -1418,12 +1418,13 @@ const registerCreateRecipes = (event) => {
 	// #region Water Wheels
 
 	event.shaped('create:water_wheel', [
-		'AAA',
-		'ABA',
-		'AAA'
+		'ACA',
+		'CBC',
+		'ACA'
 	], {
 		A: 'gtceu:treated_wood_planks',
-		B: '#tfg:shafts'
+		B: '#tfg:shafts',
+		C: '#forge:plates/wrought_iron'
 	}).id('create:shaped/water_wheel')
 
 	event.shaped('create:large_water_wheel', [
