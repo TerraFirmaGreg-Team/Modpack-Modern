@@ -1,5 +1,43 @@
 function registerTFGSpaceBlocks(event) {
 
+	// Dimension markers
+
+	event.create('tfg:marker/moon')
+		.stoneSoundType()
+		.item(item => {
+			item.modelJson({ parent: 'tfg:block/marker/moon' })
+		})
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:marker/mars')
+		.stoneSoundType()
+		.item(item => {
+			item.modelJson({ parent: 'tfg:block/marker/mars' })
+		})
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:marker/venus')
+		.stoneSoundType()
+		.item(item => {
+			item.modelJson({ parent: 'tfg:block/marker/venus' })
+		})
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:marker/mercury')
+		.stoneSoundType()
+		.item(item => {
+			item.modelJson({ parent: 'tfg:block/marker/mercury' })
+		})
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
 	// Hardened stones
 
 	event.create('tfg:rock/hardened_moon_stone')

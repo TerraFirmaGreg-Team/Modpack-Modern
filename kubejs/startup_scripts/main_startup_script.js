@@ -84,7 +84,7 @@ GTCEuStartupEvents.materialModification(event => {
 
 
 GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
-    registerAdAstraDimensionMarkers(event)
+    registerTFGDimensionMarkers(event)
 })
 
 
