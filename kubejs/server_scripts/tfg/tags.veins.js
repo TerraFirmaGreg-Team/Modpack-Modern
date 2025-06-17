@@ -64,7 +64,10 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_beryllium')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_desh')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_garnierite')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_graphite')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_lubricant')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_magnetite')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_manganese')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_mica')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_molybdenum')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_monazite')
@@ -76,6 +79,7 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_scheelite')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_sheldonite')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_silver')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_sphalerite')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_topaz')
 
 	// #endregion
