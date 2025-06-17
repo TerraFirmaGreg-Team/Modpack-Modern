@@ -29,7 +29,7 @@ function registerTFGFoodRecipes(event) {
 	 * @param {string} EUt 
 	 * @param {FoodRecipeData} data 
 	 */
-	function registerFoodRecipe(type, id, duration, EUt, data) {
+	function registerFoodRecipe(type, id, duration, EUt, text, data) {
 		if (data.itemInputs === undefined) data.itemInputs = []
 		if (data.itemOutputs === undefined) data.itemOutputs = []
 		if (data.fluidInputs === undefined) data.fluidInputs = []
@@ -64,15 +64,25 @@ function registerTFGFoodRecipes(event) {
 		if (data.itemInputs.length > 0) r.itemInputs(data.itemInputs)
 		if (data.fluidInputs.length > 0) r.inputFluids(data.fluidInputs);
 		if (data.fluidOutputs.length > 0) r.outputFluids(data.fluidOutputs);
+		if (text != "") r.addDataString("action", text);
 	}
+
+		/**
+	 * @param {string} id 
+	 * @param {number} duration 
+	 * @param {EUt} EUt 
+	 * @param {FoodRecipeData} data 
+	 */
+	const processorRecipe = (id, duration, EUt, data) => registerFoodRecipe("food_processor", id, duration, EUt, "", data)
 
 	/**
 	 * @param {string} id 
 	 * @param {number} duration 
 	 * @param {EUt} EUt 
 	 * @param {FoodRecipeData} data 
+	 * @param {string} text
 	 */
-	const processorRecipe = (id, duration, EUt, data) => registerFoodRecipe("food_processor", id, duration, EUt, data)
+	const processorRecipeText = (id, duration, EUt, text, data) => registerFoodRecipe("food_processor", id, duration, EUt, text, data)
 
 	/**
 	 * @param {string} id 
@@ -82,7 +92,7 @@ function registerTFGFoodRecipes(event) {
 	 * @param {boolean?} isFirmaDynamic 
 	 */
 	function cookingRecipe(id, input, out, fluid, isFirmaDynamic) {
-		registerFoodRecipe("food_oven", id, 300, 32, {
+		registerFoodRecipe("food_oven", id, 300, 32, "", {
 			itemInputs: [input],
 			itemOutputs: [out],
 			fluidInputs: (fluid === undefined) ? [] : [fluid],
@@ -294,7 +304,7 @@ function registerTFGFoodRecipes(event) {
 	const brining_ingredients = smoking_meats.concat(brining_veg);
 
 	brining_ingredients.forEach(item => {
-		processorRecipe(`${item.replace(/:/g, "/")}/brining`, 200, 16, {
+		processorRecipeText(`${item.replace(/:/g, "/")}/brining`, 200, 16, "tfg.food_recipe.brining", {
 			circuit: 5,
 			itemInputs: [item],
 			itemOutputs: [item],
@@ -304,7 +314,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	smoking_meats.forEach(item => {
-		processorRecipe(`${item.replace(/:/g, "/")}/smoking`, 200, 16, {
+		processorRecipeText(`${item.replace(/:/g, "/")}/smoking`, 200, 16, "tfg.food_recipe.smoking", {
 			circuit: 6,
 			itemInputs: [item],
 			itemOutputs: [item],
@@ -314,7 +324,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	drying_fruits.forEach(item => {
-		processorRecipe(`${item.replace(/:/g, "/")}/drying`, 200, 16, {
+		processorRecipeText(`${item.replace(/:/g, "/")}/drying`, 200, 16, "tfg.food_recipe.drying", {
 			circuit: 6,
 			itemInputs: [item],
 			itemOutputs: [item],
@@ -324,7 +334,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	drying_recipes.forEach(item => {
-		processorRecipe(`${item.input.replace(/:/g, "/")}/drying`, 200, 16, {
+		processorRecipeText(`${item.input.replace(/:/g, "/")}/drying`, 200, 16, "tfg.food_recipe.drying", {
 			circuit: 6,
 			itemInputs: [item.input],
 			itemOutputs: [item.output],
