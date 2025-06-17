@@ -22,7 +22,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{BotariumData: {StoredFluids: [{Amount: 1000, Fluid: \"gtceu:oxygen\"}]}}"
+							"tag": "{BotariumData: {StoredFluids: [{Amount: 1000, Fluid: \"tfg:heliox-3\"}]}}"
 						}
 					]
 				},
