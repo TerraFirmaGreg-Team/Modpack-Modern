@@ -47,13 +47,13 @@ function registerTFCLunchBoxRecipes(event) {
 	event.recipes.gtceu.canner('tfclunchbox:fill_capsule_with_ice')
 		.itemInputs('tfclunchbox:universal_capsule')
 		.inputFluids(Fluid.of('gtceu:ice', 45 * 144))
-		.itemOutputs(Item.of('tfclunchbox:universal_capsule', '{Durability:1000}').withName(Text.translate('item.tfclunchbox.universal_capsule.filled')))
+		.itemOutputs(Item.of('tfclunchbox:universal_capsule', '{Durability:500}').withName(Text.translate('item.tfclunchbox.universal_capsule.filled')))
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.canner('tfclunchbox:fill_capsule_with_ice_solid')
 		.itemInputs('tfclunchbox:universal_capsule', '5x minecraft:packed_ice')
-		.itemOutputs(Item.of('tfclunchbox:universal_capsule', '{Durability:1000}').withName(Text.translate('item.tfclunchbox.universal_capsule.filled')))
+		.itemOutputs(Item.of('tfclunchbox:universal_capsule', '{Durability:500}').withName(Text.translate('item.tfclunchbox.universal_capsule.filled')))
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 }

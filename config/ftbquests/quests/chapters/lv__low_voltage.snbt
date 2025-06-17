@@ -1401,7 +1401,7 @@
 			subtitle: "{quests.low_voltage.lv_greenhouse.subtitle}"
 			tasks: [{
 				id: "3EB01235ED295080"
-				item: "tfg:electric_greenhouse"
+				item: "gtceu:greenhouse"
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_greenhouse.title}"

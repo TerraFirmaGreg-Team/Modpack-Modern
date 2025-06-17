@@ -69,7 +69,6 @@ const registerTFCHeats = (event) => {
             makeItemHeatByTagPrefix(TagPrefix.rodLong, material, tfcProperty, 1.429)
 
             makeItemHeatByTagPrefix(TagPrefix.ingot, material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix(TFGTagPrefix.ingotDouble, material, tfcProperty, 2.875)
             
             makeItemHeatByTagPrefix(TagPrefix.rawOre, material, tfcProperty, 1.429)
             makeItemHeatByTagPrefix(TFGTagPrefix.richRawOre, material, tfcProperty, 1.429)
