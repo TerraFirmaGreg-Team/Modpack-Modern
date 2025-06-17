@@ -4,7 +4,7 @@
  */
 function registerTFGFoodRecipes(event) {
 
-	const $ISPRecipeLogic = Java.loadClass("su.terrafirmagreg.core.common.data.machines.ISPOutputRecipeLogic")
+	const $ISPRecipeLogic = Java.loadClass("su.terrafirmagreg.core.common.data.tfgt.machine.trait.ISPOutputRecipeLogic")
 	const $SizedIngredient = Java.loadClass("com.gregtechceu.gtceu.api.recipe.ingredient.SizedIngredient")
 	const Sized = (ing, amount) => $SizedIngredient.create(ing, amount)
 
