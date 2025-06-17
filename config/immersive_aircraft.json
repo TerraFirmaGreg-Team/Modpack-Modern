@@ -31,7 +31,7 @@
   "regenerateHealthEveryNTicks": 0,
   "requireShiftForRepair": false,
   "bombBayEntity": {
-    "minecraft:egg": "minecraft:chicken"
+    "minecraft:egg": "tfc:chicken"
   },
   "rotaryCannonDamage": 5.0,
   "heavyCrossBowVelocity": 3.0,
