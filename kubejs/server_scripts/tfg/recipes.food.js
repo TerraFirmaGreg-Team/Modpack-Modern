@@ -647,4 +647,8 @@ function registerTFGFoodRecipes(event) {
 	event.replaceInput({id: 'gtceu:shaped/mv_food_oven'}, 'gtceu:mv_electric_piston', '#tfg:metal_bars')
 	event.replaceInput({id: 'gtceu:shaped/hv_food_oven'}, 'gtceu:hv_electric_piston', '#tfg:metal_bars')
 	event.replaceInput({id: 'gtceu:shaped/ev_food_oven'}, 'gtceu:ev_electric_piston', '#tfg:metal_bars')
+	
+	event.replaceInput({id: 'gtceu:shaped/mv_food_refrigerator'}, 'gtceu:mv_machine_hull', 'gtceu:mv_hermetic_casing')
+	event.replaceInput({id: 'gtceu:shaped/hv_food_refrigerator'}, 'gtceu:hv_machine_hull', 'gtceu:hv_hermetic_casing')
+	event.replaceInput({id: 'gtceu:shaped/ev_food_refrigerator'}, 'gtceu:ev_machine_hull', 'gtceu:ev_hermetic_casing')
 }

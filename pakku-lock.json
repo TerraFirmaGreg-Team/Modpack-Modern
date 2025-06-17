@@ -7939,42 +7939,6 @@
             ]
         },
         {
-            "pakku_id": "wwI6IXC4zcB3Dra6",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "tfc-electrical-appliances"
-            },
-            "name": {
-                "curseforge": "TFC Electrical Appliances"
-            },
-            "id": {
-                "curseforge": "1017637"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "tfcea-0.0.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/5338/560/tfcea-0.0.2.jar",
-                    "id": "5338560",
-                    "parent_id": "1017637",
-                    "hashes": {
-                        "sha1": "13638888685ddf65e138bdeb6e4c684b0a956cbb",
-                        "md5": "62644682b902533ee9b54dac7e7e2ca9"
-                    },
-                    "required_dependencies": [],
-                    "size": 60960,
-                    "date_published": "2024-05-12T17:09:43.310Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "zerUE7n4nmHdsmgn",
             "pakku_links": [
                 "F6H99cZ4H6jZRpEK",

@@ -3,28 +3,19 @@
 function registerTFGConvertingRecipes(event) {
 
 	event.shapeless("afc:tree_tap", "treetap:tap")
+	event.shapeless("tfcea:refrigerator", "tfg:mv_food_refrigerator")
 
 	event.shapeless('greate:steel_cogwheel', 'create:cogwheel')
-
 	event.shapeless('greate:large_steel_cogwheel', 'create:large_cogwheel')
-
 	event.shapeless('greate:steel_shaft', 'create:shaft')
-
 	event.shapeless('greate:steel_crushing_wheel', 'create:crushing_wheel')
-
 	event.shapeless('greate:steel_encased_fan', 'create:encased_fan')
-
 	event.shapeless('greate:steel_gearbox', 'create:gearbox')
-
 	event.shapeless('greate:steel_mechanical_mixer', 'create:mechanical_mixer')
-
 	event.shapeless('greate:steel_mechanical_saw', 'create:mechanical_saw')
-
 	event.shapeless('greate:steel_mechanical_pump', 'create:mechanical_pump')
-
-	event.shapeless('greate:rubber_belt_connector', 'create:belt_connector')
-
 	event.shapeless('greate:steel_vertical_gearbox', 'create:vertical_gearbox')
+	event.shapeless('greate:rubber_belt_connector', 'create:belt_connector')
 
 	event.shapeless('create:zinc_ingot', 'gtceu:zinc_ingot')
 	event.shapeless('create:brass_ingot', 'gtceu:brass_ingot')

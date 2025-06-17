@@ -1233,7 +1233,7 @@
 			subtitle: "{quests.tfg_tips.refrigerator.subtitle}"
 			tasks: [{
 				id: "2D43E8E907B39B46"
-				item: "tfcea:refrigerator"
+				item: "tfg:mv_food_refrigerator"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.refrigerator.title}"

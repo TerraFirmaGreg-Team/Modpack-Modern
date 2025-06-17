@@ -24,6 +24,9 @@ const registerTooltips = (event) =>
 	event.addAdvanced(["treetap:tap"], (item, advanced, text) => {
 		text.add(1, [text.of("§4Obsolete§f: Replaced by the AFC TreeTap, you can craft it from this one by placing this in a crafting table!")])
 	})
+	event.addAdvanced(["tfcea:refrigerator"], (item, advanced, text) => {
+		text.add(1, [text.of("§4Obsolete§f: Replaced by the GregTech Refrigerator, you can craft it from this one by placing this in a crafting table!")])
+	})
 	event.addAdvanced(['create:blaze_burner'], (item, advanced, text) => {
 		text.add(1, text.of('§cSuperheat§r §7with Coke, Anthracite, or Flawless and Exquisite coal gems.'))
 	})

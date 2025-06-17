@@ -90,9 +90,13 @@ const registerTFGBlocks = (event) => {
 	// #endregion
 
 
-	// #region Deprecated tree tap
+	// #region Deprecated
 
 	event.create('treetap:tap')
+		.requiresTool(false)
+		.textureAll('tfg:item/deprecated')
+
+	event.create('tfcea:refrigerator')
 		.requiresTool(false)
 		.textureAll('tfg:item/deprecated')
 

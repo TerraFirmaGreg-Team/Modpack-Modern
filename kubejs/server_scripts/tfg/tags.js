@@ -153,6 +153,7 @@ const registerTFGItemTags = (event) => {
 	// #region 0.7.19 -> 0.9 conversion
 
 	event.add('c:hidden_from_recipe_viewers', 'treetap:tap')
+	event.add('c:hidden_from_recipe_viewers', 'tfcea:refrigerator')
 
 	event.add('c:hidden_from_recipe_viewers', 'gtceu:zinc_ingot')
 	event.add('c:hidden_from_recipe_viewers', 'gtceu:brass_ingot')
