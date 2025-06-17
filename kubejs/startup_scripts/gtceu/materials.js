@@ -280,7 +280,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.IronMagnetic.setMaterialARGB(0x503d32)
 	GTMaterials.IronMagnetic.setMaterialSecondaryARGB(0x131212)
 	GTMaterials.Zinc.setMaterialARGB(0xd6ffdc)
-	GTMaterials.Zinc.setMaterialSecondaryARGB(0xA3BE9E)
+	GTMaterials.Zinc.setMaterialSecondaryARGB(0x213b3f)
 	GTMaterials.Graphite.setMaterialARGB(0x889BA8)
 	GTMaterials.Graphite.setMaterialSecondaryARGB(0x30383E)
 	GTMaterials.Amethyst.setMaterialARGB(0xCC9EF0)

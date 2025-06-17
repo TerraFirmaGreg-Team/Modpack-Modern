@@ -48,16 +48,6 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.ore_proc.crushed_ores.desc}"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "gtceu:crushed_copper_ore"
-			}
 			id: "28419A1010EEE93A"
 			subtitle: "{quests.ore_proc.crushed_ores.subtitle}"
 			tasks: [
@@ -233,7 +223,6 @@
 			description: ["{quests.ore_proc.mercury.desc}"]
 			id: "68AC3E2C9093FCFE"
 			optional: true
-			shape: "heart"
 			subtitle: "{quests.ore_proc.mercury.subtitle}"
 			tasks: [
 				{
@@ -284,7 +273,6 @@
 			description: ["{quests.ore_proc.sodium_ores.desc}"]
 			id: "0502E478E27D4B73"
 			optional: true
-			shape: "heart"
 			subtitle: "{quests.ore_proc.sodium_ores.subtitle}"
 			tasks: [
 				{
@@ -315,29 +303,26 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.ore_proc.purified_ores.desc}"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "create:crushed_raw_copper"
-			}
 			id: "544EA7FF98FDCFB7"
 			subtitle: "{quests.ore_proc.purified_ores.subtitle}"
-			tasks: [{
-				id: "4C6F60AC9C803D7B"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item_tag(forge:purified_ores))"
+			tasks: [
+				{
+					id: "4C6F60AC9C803D7B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item_tag(forge:purified_ores))"
+						}
 					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "3C194AEB554DA4CA"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.ore_proc.purified_ores.title}"
 			x: 0.5d
 			y: -0.5d
@@ -352,6 +337,12 @@
 				{
 					id: "199F216EDD90F24E"
 					item: "gtceu:indium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0373F4E380F2A0BC"
+					item: "gtceu:indium_concentrate_bucket"
 					optional_task: true
 					type: "item"
 				}
@@ -377,15 +368,8 @@
 					type: "item"
 				}
 				{
-					id: "475C90F0EA16C2F9"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "only_one(item(gtceu:indium_concentrate_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:indium_concentrate\"}}))"
-						}
-					}
-					type: "item"
+					id: "52FCA464BD827E37"
+					type: "checkmark"
 				}
 			]
 			title: "{quests.ore_proc.indium.title}"
@@ -643,30 +627,25 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.ore_proc.dust_processed.desc}"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "gtceu:copper_dust"
-			}
 			id: "22C1D541452D4AD4"
-			size: 1.5d
 			subtitle: "{quests.ore_proc.dust_processed.subtitle}"
-			tasks: [{
-				id: "3EA3BABECE52085B"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item_tag(forge:dusts))"
+			tasks: [
+				{
+					id: "3EA3BABECE52085B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item_tag(forge:dusts))"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "1A1B2762EFD6C6B0"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.ore_proc.dust_processed.title}"
 			x: 0.5d
 			y: 3.5d

@@ -188,6 +188,9 @@ global.CREATE_DISABLED_ITEMS = [
     // Blocks
     'create:andesite_alloy_block',  
     'create:experience_block',
+    'create:rose_quartz_block', 
+    'create:rose_quartz_tiles', 
+    'create:small_rose_quartz_tiles',
 
     // Other
     'create:honey_bucket', 
@@ -202,6 +205,7 @@ global.CREATE_DISABLED_ITEMS = [
     'create:blaze_cake_base', 
     'create:sturdy_sheet', 
     'create:polished_rose_quartz', 
+    'create:rose_quartz', 
     'create:cinder_flour', 
     'create:dough', 
     'create:bar_of_chocolate', 

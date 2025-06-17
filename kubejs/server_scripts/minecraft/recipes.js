@@ -1040,5 +1040,4 @@ const registerMinecraftRecipes = (event) => {
 		}).id('tfg:shaped/stonecutter');
 
 	event.stonecutting('minecraft:smooth_quartz', 'minecraft:quartz_block')
-	event.stonecutting('create:cut_deepslate', 'minecraft:polished_deepslate')
 }
