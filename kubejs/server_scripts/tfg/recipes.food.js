@@ -280,26 +280,56 @@ function registerTFGFoodRecipes(event) {
 
 	const smoking_meats = Ingredient.of('#tfc:foods/raw_meats').itemIds;
 	const brining_veg = Ingredient.of('#firmalife:foods/pizza_ingredients').itemIds;
+	const drying_fruits = Ingredient.of('#tfc:foods/fruits').itemIds;
+	const drying_recipes = [
+		{input: 'firmalife:food/soy_mixture', output: 'firmalife:food/tofu'},
+		{input: 'tfc:food/soybean', output: 'firmalife:food/dehydrated_soybeans'},
+		{input: 'firmalife:plant/vanilla', output: 'firmalife:spice/vanilla'},
+		{input: 'firmalife:cinnamon_bark', output: 'firmalife:spice/cinnamon'},
+		{input: 'firmalife:food/white_chocolate_blend', output: 'firmalife:food/white_chocolate'},
+		{input: 'firmalife:food/milk_chocolate_blend', output: 'firmalife:food/milk_chocolate'},
+		{input: 'firmalife:food/dark_chocolate_blend', output: 'firmalife:food/dark_chocolate'}
+	];
 
 	const brining_ingredients = smoking_meats.concat(brining_veg);
 
 	brining_ingredients.forEach(item => {
-		processorRecipe(`${item}/brining`, 200, 16, {
+		processorRecipe(`${item.replace(/:/g, "/")}/brining`, 200, 16, {
 			circuit: 5,
 			itemInputs: [item],
 			itemOutputs: [item],
 			fluidInputs: [Fluid.of("tfc:brine", 100)],
-			itemOutputProvider: TFC.isp.of(item).copyOldestFood().addTrait('tfc:brined')
+			itemOutputProvider: TFC.isp.copyInput().addTrait('tfc:brined')
 		})
 	})
 
 	smoking_meats.forEach(item => {
-		processorRecipe(`${item}/smoking`, 200, 16, {
+		processorRecipe(`${item.replace(/:/g, "/")}/smoking`, 200, 16, {
 			circuit: 6,
-			itemInputs: [[item, TFC.ingredient.lacksTrait(item, "firmalife:smoked")]],
+			itemInputs: [item],
 			itemOutputs: [item],
 			fluidInputs: [Fluid.of('gtceu:wood_gas', 50)],
-			itemOutputProvider: TFC.isp.of(item).copyOldestFood().addTrait("firmalife:smoked")
+			itemOutputProvider: TFC.isp.copyInput().addTrait("firmalife:smoked")
+		})
+	})
+
+	drying_fruits.forEach(item => {
+		processorRecipe(`${item.replace(/:/g, "/")}/drying`, 200, 16, {
+			circuit: 6,
+			itemInputs: [item],
+			itemOutputs: [item],
+			fluidInputs: [Fluid.of('gtceu:nitrogen', 100)],
+			itemOutputProvider: TFC.isp.copyInput().addTrait("firmalife:dried")
+		})
+	})
+
+	drying_recipes.forEach(item => {
+		processorRecipe(`${item.input.replace(/:/g, "/")}/drying`, 200, 16, {
+			circuit: 6,
+			itemInputs: [item.input],
+			itemOutputs: [item.output],
+			fluidInputs: [Fluid.of('gtceu:nitrogen', 100)],
+			itemOutputProvider: TFC.isp.of(item.output).copyOldestFood()
 		})
 	})
 
