@@ -46,9 +46,17 @@ const registerCreateItemTags = (event) => {
 	event.add('create:blaze_burner_fuel/special', "gtceu:flawless_coal_gem")
 	event.add('create:blaze_burner_fuel/special', "gtceu:exquisite_coal_gem")
 	event.add('create:blaze_burner_fuel/special', "gtceu:coke_gem")
-	event.add('create:blaze_burner_fuel/special', "beneath:cursecoal")
 
+	// Lets the basin be put on top of a charcoal forge
 	event.add('tfc:forge_invisible_whitelist', 'create:basin')
+
+	// Allows automation with the 3x3 Hellforge
+	event.add('tfc:forge_invisible_whitelist', 'tfcchannelcasting:channel')
+	event.add('tfc:forge_invisible_whitelist', 'tfcchannelcasting:mold_table')
+	event.add('tfc:forge_invisible_whitelist', 'greate:steel_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:aluminum_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:stainless_steel_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:titanium_mechanical_pump')
 
 	event.add('create:non_movable', 'gtceu:wood_crate')
 	event.add('create:non_movable', 'gtceu:bronze_crate')
@@ -88,6 +96,14 @@ const registerCreateBlockTags = (event) => {
 
 	// Lets the basin be put on top of a charcoal forge
 	event.add('tfc:forge_invisible_whitelist', 'create:basin')
+
+	// Allows automation with the 3x3 Hellforge
+	event.add('tfc:forge_invisible_whitelist', 'tfcchannelcasting:channel')
+	event.add('tfc:forge_invisible_whitelist', 'tfcchannelcasting:mold_table')
+	event.add('tfc:forge_invisible_whitelist', 'greate:steel_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:aluminum_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:stainless_steel_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:titanium_mechanical_pump')
 }
 
 
