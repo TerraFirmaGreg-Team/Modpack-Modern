@@ -293,6 +293,10 @@ function registerVintageImprovementsRecipes(event) {
 
 	forEachMaterial(material => {
 
+		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
+		if (ingotItem == null || ingotItem.hasTag('c:hidden_from_recipe_viewers'))
+			return;
+
 		// #region Coiling
 
 		if (material.hasFlag(MaterialFlags.GENERATE_ROD) && material.hasFlag(MaterialFlags.GENERATE_SPRING_SMALL)) {
@@ -626,6 +630,13 @@ function registerVintageImprovementsRecipes(event) {
 		results: [{ item: 'tfg:phantom_thread', count: 16 }],
 		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 	}).id(`tfg:vi/coiling/phantom_thread`)
+
+	event.custom({
+		type: 'vintageimprovements:coiling',
+		ingredients: [{ item: 'firmalife:pineapple_fiber' }],
+		results: [{ item: 'firmalife:pineapple_yarn', count: 8 }],
+		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/coiling/pineapple_yarn`)
 
 	event.custom({
 		type: 'vintageimprovements:coiling',

@@ -27,6 +27,7 @@ function removeGreateRecipes(event) {
 	event.remove({ id: 'greate:shaped/titanium_mechanical_saw' })
 
 	event.remove({ id: 'greate:splashing/dough' })
+	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound' })
 
 	event.remove({ mod: 'greate', type: 'create:deploying' });
 	event.remove({ mod: 'greate', type: 'create:sequenced_assembly' });
