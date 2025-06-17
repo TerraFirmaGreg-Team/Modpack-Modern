@@ -495,6 +495,7 @@
   "tfg.food_recipe.brining": "Brining",
   "tfg.food_recipe.smoking": "Smoking",
   "tfg.food_recipe.drying": "Drying",
+  "tfg.recipe.macerator_warning": "Only outputs first slot until HV",
   "tfg.grapplemod.repair": "Repair recipe, keeps your upgrades. §lNEVER combine two grapples or you'll lose ALL your upgrades!§r",
   "tfg.grapplemod.upgrades.maxlen": "Increases §lMax Length§r by 20, up to 200.",
   "tfg.grapplemod.downgrades.maxlen": "Decreases §lMax Length§r by 20, down to 20. (Jute Rope is Returned).",
