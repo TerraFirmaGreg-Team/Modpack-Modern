@@ -31,11 +31,11 @@
 			"tfg:earth/geode/pyrite",
 			"tfg:earth/geode/quartzite"
 		],
-		[],
 		[
 			"tfc:vein/gabbro_dike",
 			"tfc:vein/diorite_dike"
 		],
+		[],
 		[],
 		"#tfg:moon_veins",
 		[],
@@ -81,25 +81,25 @@
 				"type": "ad_astra:star_crawler",
 				"maxCount": 3,
 				"minCount": 1,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "ad_astra:corrupted_lunarian",
 				"maxCount": 3,
 				"minCount": 1,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "minecraft:skeleton",
 				"maxCount": 3,
 				"minCount": 1,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
+				"weight": 10
 			},
 			{
 				"type": "species:limpet",

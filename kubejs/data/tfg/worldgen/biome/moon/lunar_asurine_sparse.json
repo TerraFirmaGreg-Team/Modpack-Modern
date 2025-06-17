@@ -31,16 +31,17 @@
 			"tfg:earth/geode/pyrite",
 			"tfg:earth/geode/quartzite"
 		],
-		[],
 		[
 			"tfc:vein/gabbro_dike",
 			"tfc:vein/diorite_dike"
 		],
 		[],
+		[],
 		"#tfg:moon_veins",
 		"#tfg:moon_large_rock_features",
 		"#tfg:moon_small_rock_features",
 		[
+			"tfg:moon/surface/birt_dwelling",
 			"tfg:moon/surface/dead_coral_fans",
 			"tfg:moon/surface/warped_sprouts_patch",
 			"tfg:moon/surface/warped_roots_patch",
@@ -62,6 +63,12 @@
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 80
+			},
+			{
+				"type": "species:birt",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
 			}
 		],
 		"misc": [],

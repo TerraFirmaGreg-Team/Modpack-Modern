@@ -1,7 +1,6 @@
 const registerSpeciesBlockTags = (event) => {
 
 	const DISABLED_BLOCKS = [
-		'species:birt_dwelling',
 		'species:red_suspicious_sand',
 		'species:bone_bark',
 		'species:bone_vertebra',
