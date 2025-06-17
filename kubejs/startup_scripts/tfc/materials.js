@@ -99,6 +99,7 @@ const registerTFCMaterials = (event) => {
     GTMaterials.Galena.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_copper'))
     GTMaterials.Grossular.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_sapphire'))
     GTMaterials.Neodymium.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_magnetite'))
+    GTMaterials.NeodymiumMagnetic.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_magnetite'))
     GTMaterials.Palladium.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_pyrite'))
     GTMaterials.Platinum.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_gold'))
     GTMaterials.Thorium.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_hematite'))
