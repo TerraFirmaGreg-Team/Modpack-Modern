@@ -3,7 +3,7 @@
 function registerTFGConvertingRecipes(event) {
 
 	event.shapeless("afc:tree_tap", "treetap:tap")
-	event.shapeless("tfcea:refrigerator", "tfg:mv_food_refrigerator")
+	event.shapeless("tfg:mv_food_refrigerator", "tfcea:refrigerator")
 
 	event.shapeless('greate:steel_cogwheel', 'create:cogwheel')
 	event.shapeless('greate:large_steel_cogwheel', 'create:large_cogwheel')
