@@ -145,7 +145,7 @@ function registerTFCDyeRecipes(event) {
 			.outputFluid(Fluid.of(`tfc:${dyeName}_dye`, 144))
 			.length(100)
 			.temperature(200)
-			.id(`firmalife:vat/${dyeName}_dye`)
+			.id(`firmalife:vat/${dyeName}_dye_vinegar`)
 
 		event.recipes.gtceu.chemical_reactor(`chemical_dye_${dyeName}_acetic`)
 			.itemInputs(`#forge:dyes/${dyeName}`)
