@@ -226,6 +226,7 @@ ServerEvents.recipes(event => {
 	registerRnrRecipes(event)
 	registerSophisticatedBackpacksRecipes(event)
 	registerSimplylightRecipes(event)
+	registerSpeciesRecipes(event)
 	registerTFCRecipes(event)
 	registerTFCBetterBFRecipes(event)
 	registerTFCLunchBoxRecipes(event)

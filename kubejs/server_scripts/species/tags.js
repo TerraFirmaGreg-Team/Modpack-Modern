@@ -26,7 +26,6 @@ const registerSpeciesItemTags = (event) => {
 
 	const DISABLED_ITEMS = [
 		'species:deepfish_bucket',
-		'species:birt_egg',
 		'species:bone_spike',
 		'species:ancient_pinecone',
 		'species:petrified_egg',
@@ -44,4 +43,5 @@ const registerSpeciesItemTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
 
+	event.add('forge:eggs', 'species:birt_egg')
 }

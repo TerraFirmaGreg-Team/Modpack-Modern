@@ -132,6 +132,7 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/hardened/dacite')
 
 	event.add('minecraft:rabbits_spawnable_on', '#ad_astra:moon_stone_replaceables')
+	event.add('species:limpet_spawnable_on', '#ad_astra:moon_stone_replaceables')
 
 	event.add('tfc:can_landslide', 'ad_astra:moon_sand')
 	event.add('tfc:can_landslide', 'ad_astra:mars_sand')
