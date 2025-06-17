@@ -49,11 +49,19 @@
 		]
 	],
 	"has_precipitation": false,
+	"creature_spawn_probability": 0.00003,
 	"spawn_costs": {},
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
-		"creature": [],
+		"creature": [
+			{
+				"type": "species:birt",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
 		"misc": [],
 		"monster": [
 			{
@@ -64,8 +72,8 @@
 			},
 			{
 				"type": "species:limpet",
-				"maxCount": 4,
-				"minCount": 2,
+				"maxCount": 2,
+				"minCount": 1,
 				"weight": 100
 			},
 			{

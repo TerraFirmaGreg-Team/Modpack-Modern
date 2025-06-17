@@ -61,7 +61,7 @@
 				"type": "minecraft:rabbit",
 				"maxCount": 4,
 				"minCount": 2,
-				"weight": 80
+				"weight": 100
 			},
 			{
 				"type": "species:birt",
@@ -92,9 +92,9 @@
 			},
 			{
 				"type": "species:limpet",
-				"maxCount": 2,
+				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 20
 			},
 			{
 				"type": "minecraft:enderman",

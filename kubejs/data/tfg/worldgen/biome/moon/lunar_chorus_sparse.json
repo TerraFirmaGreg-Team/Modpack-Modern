@@ -92,9 +92,9 @@
 			},
 			{
 				"type": "species:limpet",
-				"maxCount": 2,
+				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 20
 			},
 			{
 				"type": "endermanoverhaul:windswept_hills_enderman",

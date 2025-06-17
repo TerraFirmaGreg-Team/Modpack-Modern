@@ -62,7 +62,7 @@
 		]
 	],
 	"has_precipitation": false,
-	"creature_spawn_probability": 0.00005,
+	"creature_spawn_probability": 0.00008,
 	"spawn_costs": {},
 	"spawners": {
 		"ambient": [],
@@ -72,7 +72,7 @@
 				"type": "minecraft:rabbit",
 				"maxCount": 4,
 				"minCount": 2,
-				"weight": 80
+				"weight": 100
 			}
 		],
 		"misc": [],
@@ -81,25 +81,25 @@
 				"type": "ad_astra:star_crawler",
 				"maxCount": 3,
 				"minCount": 1,
-				"weight": 50
+				"weight": 100
 			},
 			{
 				"type": "ad_astra:corrupted_lunarian",
 				"maxCount": 3,
 				"minCount": 1,
-				"weight": 50
+				"weight": 100
 			},
 			{
 				"type": "minecraft:skeleton",
 				"maxCount": 3,
 				"minCount": 1,
-				"weight": 50
+				"weight": 100
 			},
 			{
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 20
 			},
 			{
 				"type": "species:limpet",
@@ -111,7 +111,7 @@
 				"type": "endermanoverhaul:windswept_hills_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
+				"weight": 40
 			}
 		],
 		"underground_water_creature": [],

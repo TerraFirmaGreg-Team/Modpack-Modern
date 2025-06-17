@@ -50,7 +50,7 @@
 		]
 	],
 	"has_precipitation": false,
-	"creature_spawn_probability": 0.00005,
+	"creature_spawn_probability": 0.00008,
 	"spawn_costs": {},
 	"spawners": {
 		"ambient": [],
@@ -60,13 +60,13 @@
 				"type": "minecraft:rabbit",
 				"maxCount": 4,
 				"minCount": 2,
-				"weight": 80
+				"weight": 100
 			},
 			{
 				"type": "species:birt",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 100
+				"weight": 20
 			}
 		],
 		"misc": [],
