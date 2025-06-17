@@ -139,6 +139,7 @@ function registerTFCDyeRecipes(event) {
 				.id(`tfc:pot/${i}x_${dyeName}_dye`)
 		}
 
+		event.remove({ id: `firmalife:vat/${dyeName}_dye` })
 		event.recipes.firmalife.vat()
 			.inputs(`#forge:dyes/${dyeName}`, Fluid.of('tfc:vinegar', 250))
 			.outputFluid(Fluid.of(`tfc:${dyeName}_dye`, 144))
