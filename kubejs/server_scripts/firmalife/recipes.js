@@ -470,7 +470,7 @@ const registerFirmaLifeRecipes = (event) => {
 
 	//#region Replace existing dyes
 
-	global.MINECRAFT_DYE_NAMES.forEach(dye => {
+	global.MINECRAFT_DYE_NAMES.forEach(dyeName => {
 
 		event.recipes.firmalife.vat()
 			.inputs(`#forge:dyes/${dyeName}`, Fluid.of('tfc:vinegar', 250))
