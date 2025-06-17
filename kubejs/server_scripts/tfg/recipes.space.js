@@ -158,7 +158,7 @@ function registerTFGSpaceRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:biomass', 20))
 		.chancedOutput('ae2:ender_dust', 100, 100)
 		.outputFluids(Fluid.of('gtceu:nitrogen', 100))
-		.duration(10 * 20)
+		.duration(5 * 20)
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
 
