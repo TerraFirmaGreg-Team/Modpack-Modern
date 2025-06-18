@@ -38,7 +38,6 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:usable_on_tool_rack', 'tfg:trowel')
 
 	// #region Paper from wood
-
 	event.add('tfg:hardwood_strips', 'tfg:hardwood_strip')
 	event.add('tfg:hardwood_strips', 'tfg:soaked_hardwood_strip')
 	//Adding any of these dusts to the forge dusts/wood tag will make it so you can craft softwood pulp using hardwood pulp. which is not ok.
@@ -68,7 +67,6 @@ const registerTFGItemTags = (event) => {
 	//#endregion
 
 	// #region Medicines
-
 	event.add('tfg:antipoison_ingredients', 'tfc:plant/blood_lily')
 	event.add('tfg:antipoison_ingredients', 'tfc:plant/pistia')
 	event.add('tfg:antipoison_ingredients', 'tfc:powder/bismuthinite')
@@ -131,27 +129,42 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:luck_ingredients', 'tfc:plant/heather')
 	// #endregion
 
-	//region Airplane Upgrades
+	// Airplane Upgrades
 	global.AIRCRAFT_UPGRADES.forEach(value => {
 		event.add('immersive_aircraft:upgrades', `tfg:${value}`);
 	})
 
-	// #endregion
-
 	// Universal Circuits
-
 	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => { event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`); })
-
-	// #endregion
 
 	// Use either cast or wrought iron
 	event.add('forge:double_iron_ingots', '#forge:double_ingots/iron')
 	event.add('forge:double_iron_ingots', '#forge:double_ingots/wrought_iron')
 
-	// #endregion
+	// Food
+	const RAW_MEATS = [
+		'tfg:food/raw_birt',
+		'tfg:food/raw_crawlermari',
+		'tfg:food/raw_limpet'
+	]
+	RAW_MEATS.forEach(meat => {
+		event.add('tfc:foods', meat)
+		event.add('tfc:foods/meats', meat)
+		event.add('tfc:foods/raw_meats', meat)
+	})
+
+	const COOKED_MEATS = [
+		'tfg:food/cooked_birt',
+		'tfg:food/cooked_crawlermari',
+		'tfg:food/cooked_limpet'
+	]
+	COOKED_MEATS.forEach(meat => {
+		event.add('tfc:foods', meat)
+		event.add('tfc:foods/meats', meat)
+		event.add('tfc:foods/cooked_meats', meat)
+	})
 
 	// #region 0.7.19 -> 0.9 conversion
-
 	event.add('c:hidden_from_recipe_viewers', 'treetap:tap')
 	event.add('c:hidden_from_recipe_viewers', 'tfcea:refrigerator')
 
@@ -248,7 +261,6 @@ const registerTFGItemTags = (event) => {
 	event.add('c:hidden_from_recipe_viewers', 'gtceu:rich_raw_silver')
 	event.add('c:hidden_from_recipe_viewers', 'gtceu:raw_silver')
 	event.add('c:hidden_from_recipe_viewers', 'gtceu:poor_raw_silver')
-
 	//#endregion
 }
 

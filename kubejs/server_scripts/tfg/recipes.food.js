@@ -648,6 +648,19 @@ function registerTFGFoodRecipes(event) {
 
 	//#endregion
 
+	//#region Heating recipes for new foods
+
+	event.recipes.tfc.heating('tfg:food/raw_birt', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_birt').copyFood())
+
+	event.recipes.tfc.heating('tfg:food/raw_crawlermari', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_crawlermari').copyFood())
+
+	event.recipes.tfc.heating('tfg:food/raw_limpet', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_limpet').copyFood())
+
+	//#endregion
+
 	event.replaceInput({id: 'gtceu:shaped/lv_food_processor'}, 'gtceu:lv_electric_piston', 'gtceu:steel_whisk')
 	event.replaceInput({id: 'gtceu:shaped/mv_food_processor'}, 'gtceu:mv_electric_piston', 'gtceu:aluminium_whisk')
 	event.replaceInput({id: 'gtceu:shaped/hv_food_processor'}, 'gtceu:hv_electric_piston', 'gtceu:stainless_steel_whisk')

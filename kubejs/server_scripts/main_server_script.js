@@ -139,14 +139,16 @@ TFCEvents.data(event => {
 	registerTFCDataForAdAstra(event);
 	registerTFCDataForArborFirmaCraft(event)
 	registerTFCDataForChalk(event);
+	registerTFCDataForFirmalife(event)
 	registerTFCDataForGTCEU(event)
 	registerTFCDataForImmersiveAircraft(event);
+	registerTFCDataForMinecraft(event)
 	registerTFCDataForSophisticatedBackpacks(event)
 	registerTFCDataForTFC(event)
 	registerTFCDataForTFCBetterBF(event)
 	registerTFCDataForTFCLunchbox(event)
+	registerTFCDataForTFG(event)
 	registerTFCDataForWaterFlasks(event)
-	registerTFCDataForFirmalife(event)
 })
 
 /**
@@ -154,9 +156,11 @@ TFCEvents.data(event => {
  * Срабатывает до инициализации рецептов, но после датапаков и тегов.
  */
 LootJS.modifiers((event) => {
+	registerAdAstraLoots(event)
 	registerGTCEULoots(event)
 	registerLootrLoots(event)
-	registerPrimitiveCreatesLoots(event)
+	registerPrimitiveCreaturesLoots(event)
+	registerSpeciesLoots(event)
 	registerTFCLoots(event)
 	registerTFGLoots(event)
 });

@@ -1,6 +1,6 @@
 // priority: 0
 
-function registerPrimitiveCreatesLoots(event) {
+function registerPrimitiveCreaturesLoots(event) {
 
 	event.addEntityLootModifier('kaolinclayze:tfc')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)

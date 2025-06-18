@@ -886,6 +886,11 @@ global.TFC_MEAT_RECIPE_COMPONENTS = [
     { input: 'tfc:food/duck', output: 'tfc:food/cooked_duck', name: 'cooked_duck' }, 
     { input: 'tfc:food/chevon', output: 'tfc:food/cooked_chevon', name: 'cooked_chevon' },
     { input: '#forge:eggs', output: 'tfc:food/cooked_egg', name: 'cooked_egg' },
+
+    { input: 'minecraft:chorus_fruit', output: 'minecraft:popped_chorus_fruit', name: 'popped_chorus_fruit' },
+    { input: 'tfg:food/raw_birt', output: 'tfg:food/cooked_birt', name: 'cooked_birt' },
+    { input: 'tfg:food/raw_crawlermari', output: 'tfg:food/cooked_crawlermari', name: 'cooked_crawlermari' },
+    { input: 'tfg:food/raw_limpet', output: 'tfg:food/cooked_limpet', name: 'cooked_limpet' }
 ];
 
 global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = [
