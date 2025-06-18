@@ -1,5 +1,6 @@
 {
 	"parent": "minecraft:block/cube",
+	"render_type": "cutout",
 	"ambientocclusion": true,
 	"textures": {
 		"front_inside": "species:block/birt_nest_front_inside",
