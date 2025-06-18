@@ -29,4 +29,23 @@ const registerTFGFluids = (event) => {
 		.bucketColor(0x3a9178)
 		.luminosity(2)
 		.noBlock()
+
+	//#region Venus
+    event.create('tfg:sulfur_fumes')
+        .stillTexture('tfg:block/planets/venus/sulfur_fumes_still') 
+        .flowingTexture('tfg:block/planets/venus/sulfur_fumes_flow')
+        .bucketColor(0xc4d984)
+		.gaseous()
+		.viscosity(0)
+		.density(0)
+		.renderType('translucent')
+
+    event.create('tfg:super_heated_slurry', 'tfc:spring')
+        .stillTexture('tfg:block/planets/venus/super_heated_slurry_still') 
+        .flowingTexture('tfg:block/planets/venus/super_heated_slurry_flow')
+        .bucketColor(0xc4d984)
+		.viscosity(0)
+		.density(0)
+		.renderType('translucent')
+	//#endregion
 }
