@@ -49,7 +49,12 @@
 	],
 	"has_precipitation": false,
 	"creature_spawn_probability": 0.00003,
-	"spawn_costs": {},
+	"spawn_costs": {
+		"species:limpet": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		}
+	},
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
