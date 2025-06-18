@@ -106,33 +106,33 @@ const registerAdAstraRecipes = (event) => {
 		D: '#forge:small_fluid_pipes/polyethylene'
 	}).id('tfg:space_helmet')
 	
-	event.recipes.gtceu.assembler('ad_astra:netherite_space_helmet')
-		.itemInputs(
-			'ad_astra:space_helmet',
-			'3x #forge:plates/titanium_tungsten_carbide',
-			'3x #forge:plates/polyphenylene_sulfide',
-			'5x gtceu:laminated_glass'
-		)
-		.itemOutputs('ad_astra:netherite_space_helmet')
-		.duration(400)
-		.EUt(GTValues.VA[GTValues.IV])
+	//event.recipes.gtceu.assembler('ad_astra:netherite_space_helmet')
+	//	.itemInputs(
+	//		'ad_astra:space_helmet',
+	//		'3x #forge:plates/titanium_tungsten_carbide',
+	//		'3x #forge:plates/polyphenylene_sulfide',
+	//		'5x gtceu:laminated_glass'
+	//	)
+	//	.itemOutputs('ad_astra:netherite_space_helmet')
+	//	.duration(400)
+	//	.EUt(GTValues.VA[GTValues.IV])
 
 	event.shaped('ad_astra:space_suit', [
-		'B B',
+		'BCB',
 		'ADA',
 		'BCB'
 	], {
-		A: 'ad_astra:large_gas_tank',
+		A: 'ad_astra:gas_tank',
 		B: 'gtceu:carbon_fiber_plate',
 		C: 'tfg:polycaprolactam_fabric',
 		D: 'ad_astra:oxygen_gear'
 	}).id('tfg:space_suit')
 
-	event.recipes.gtceu.assembler('ad_astra:netherite_space_suit')
-		.itemInputs('ad_astra:space_suit', '4x #forge:plates/titanium_tungsten_carbide', '4x #forge:plates/polyphenylene_sulfide')
-		.itemOutputs('ad_astra:netherite_space_suit')
-		.duration(400)
-		.EUt(GTValues.VA[GTValues.IV])
+	//event.recipes.gtceu.assembler('ad_astra:netherite_space_suit')
+	//	.itemInputs('ad_astra:space_suit', '4x #forge:plates/titanium_tungsten_carbide', '4x #forge:plates/polyphenylene_sulfide')
+	//	.itemOutputs('ad_astra:netherite_space_suit')
+	//	.duration(400)
+	//	.EUt(GTValues.VA[GTValues.IV])
 
 	event.shaped('ad_astra:space_pants', [
 		'BAB',
@@ -144,26 +144,26 @@ const registerAdAstraRecipes = (event) => {
 		C: 'tfg:polycaprolactam_fabric'
 	}).id('tfg:space_pants')
 	
-	event.recipes.gtceu.assembler('ad_astra:netherite_space_pants')
-		.itemInputs('ad_astra:space_pants', '4x #forge:plates/titanium_tungsten_carbide', '4x #forge:plates/polyphenylene_sulfide')
-		.itemOutputs('ad_astra:netherite_space_pants')
-		.duration(400)
-		.EUt(GTValues.VA[GTValues.IV])
+	//event.recipes.gtceu.assembler('ad_astra:netherite_space_pants')
+	//	.itemInputs('ad_astra:space_pants', '4x #forge:plates/titanium_tungsten_carbide', '4x #forge:plates/polyphenylene_sulfide')
+	//	.itemOutputs('ad_astra:netherite_space_pants')
+	//	.duration(400)
+	//	.EUt(GTValues.VA[GTValues.IV])
 
 	event.shaped('ad_astra:space_boots', [
-		'   ',
-		'C C',
-		'B B'
+		'CBC',
+		'A A'
 	], {
+		A: '#forge:plates/polyphenylene_sulfide',
 		B: 'gtceu:carbon_fiber_plate',
 		C: 'tfg:polycaprolactam_fabric'
 	}).id('tfg:space_boots')
 
-	event.recipes.gtceu.assembler('ad_astra:netherite_space_boots')
-		.itemInputs('ad_astra:space_boots', '2x #forge:plates/titanium_tungsten_carbide', '2x #forge:plates/polyphenylene_sulfide')
-		.itemOutputs('ad_astra:netherite_space_boots')
-		.duration(400)
-		.EUt(GTValues.VA[GTValues.IV])
+	//event.recipes.gtceu.assembler('ad_astra:netherite_space_boots')
+	//	.itemInputs('ad_astra:space_boots', '2x #forge:plates/titanium_tungsten_carbide', '2x #forge:plates/polyphenylene_sulfide')
+	//	.itemOutputs('ad_astra:netherite_space_boots')
+	//	.duration(400)
+	//	.EUt(GTValues.VA[GTValues.IV])
 
 
 	event.shaped('ad_astra:oxygen_gear', [
