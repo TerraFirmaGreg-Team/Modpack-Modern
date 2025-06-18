@@ -1,0 +1,19 @@
+{
+	"feature": "tfg:venus/surface/stromatolite_cluster_patch",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 2
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE"
+		},
+        {
+            "type": "minecraft:biome"
+        }
+	]
+}
