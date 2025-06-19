@@ -6,6 +6,7 @@
 - Fixed double ingots not having a temperature (#1165) @Pyritie
 - Removed a few recipes that had unobtainable create-related materials @Pyritie
 - Fixed the color of placed zinc ingots and plated blocks to match the material @Pyritie
+- Fixed some other steel/colored steel items being extractable in LV @Pyritie
 ### Changes
 - Changed pineapple yarn recipe from assembler to wiremill & coiling machine, like the other strings (#1162) @Pyritie
 - Lowered durability of wooden tongs @Pyritie
