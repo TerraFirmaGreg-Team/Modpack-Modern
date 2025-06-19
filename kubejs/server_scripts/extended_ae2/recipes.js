@@ -456,7 +456,7 @@ const registerExtendedAE2Recipes = (event) => {
             '2x megacells:accumulation_processor',)
         .itemOutputs('expatternprovider:ex_pattern_access_part')
         .duration(100)
-        .EUt(1920)
+        .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.assembler('expatternprovider:pattern_terminal_upgrade')
         .itemInputs(
@@ -465,7 +465,7 @@ const registerExtendedAE2Recipes = (event) => {
         .itemOutputs('expatternprovider:pattern_terminal_upgrade')
         .duration(100)
         .circuit(2)
-        .EUt(1920)        
+        .EUt(GTValues.VA[GTValues.EV])      
 
     // Wireless Crafting Terminal
     event.recipes.gtceu.assembler('expatternprovider:wireless_ex_pat')

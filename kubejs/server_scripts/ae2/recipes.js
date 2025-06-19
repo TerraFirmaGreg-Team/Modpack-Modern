@@ -508,7 +508,7 @@ const registerAE2Recipes = (event) => {
 		'#forge:screws/steel')
     .itemOutputs('ae2:terminal')
     .duration(100)
-    .EUt(GTValues.VA[GTValues.HV])
+    .EUt(GTValues.VA[GTValues.LV])
 
 	// ME Crafting Terminal
 	event.shaped('ae2:crafting_terminal', [
@@ -534,7 +534,7 @@ const registerAE2Recipes = (event) => {
 		'#tfc:workbenches',)
     .itemOutputs('ae2:crafting_terminal')
     .duration(100)
-    .EUt(GTValues.VA[GTValues.HV])
+    .EUt(GTValues.VA[GTValues.LV])
 
 	// pattern access terminal
 	event.shaped('ae2:pattern_access_terminal', [
@@ -560,7 +560,7 @@ const registerAE2Recipes = (event) => {
 		'#ae2:pattern_provider')
     .itemOutputs('ae2:pattern_access_terminal')
     .duration(100)
-    .EUt(GTValues.VA[GTValues.HV])
+    .EUt(GTValues.VA[GTValues.LV])
 
 	// ME Pattern Terminal
 	event.shaped('ae2:pattern_encoding_terminal', [
@@ -586,7 +586,7 @@ const registerAE2Recipes = (event) => {
 		'ae2:blank_pattern')
     .itemOutputs('ae2:pattern_encoding_terminal')
     .duration(100)
-    .EUt(GTValues.VA[GTValues.HV])
+    .EUt(GTValues.VA[GTValues.LV])
 
 	// Matter Cannon
 	event.shaped('ae2:matter_cannon', [

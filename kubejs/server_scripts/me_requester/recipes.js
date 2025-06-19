@@ -57,5 +57,5 @@ const registerMERequesterRecipes = (event) => {
 		    'merequester:requester')
         .itemOutputs('merequester:requester_terminal')
         .duration(100)
-        .EUt(GTValues.VA[GTValues.IV])
+        .EUt(GTValues.VA[GTValues.LV])
 }
