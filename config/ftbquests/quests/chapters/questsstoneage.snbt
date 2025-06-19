@@ -684,7 +684,6 @@
 			tasks: [{
 				id: "5A6EF9EBF232601C"
 				item: "gtceu:copper_double_ingot"
-				match_nbt: false
 				type: "item"
 				weak_nbt_match: true
 			}]
@@ -1473,7 +1472,11 @@
 		}
 		{
 			dependencies: ["0FB8FD84B13F10C6"]
-			description: ["{quests.stone_age.nutrition.desc}"]
+			description: [
+				"{quests.stone_age.nutrition.desc}"
+				""
+				"Tip: You can stack the same food with different expiration dates by crafting it in your inventory."
+			]
 			icon: "minecraft:apple"
 			id: "749B3C8698D34E91"
 			size: 1.5d
