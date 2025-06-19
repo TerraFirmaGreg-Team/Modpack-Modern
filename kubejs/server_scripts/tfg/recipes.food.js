@@ -260,6 +260,7 @@ function registerTFGFoodRecipes(event) {
 			itemOutputProvider: TFC.isp.of('2x firmalife:food/milk_chocolate_blend').resetFood(),
 		})
 
+		// TODO: this has nutrition dynamically set in the pot recipe, can we do that here?
 		processorRecipe(`egg_noodles_from_${milkID}`, 50, 8, {
 			circuit: 6,
 			itemInputs: ["#tfc:foods/flour", 'tfc:powder/salt', '#forge:eggs'],
@@ -661,6 +662,7 @@ function registerTFGFoodRecipes(event) {
 
 	//#endregion
 
+	// Tweaks to the machine crafts that are more annoying to do in java
 	event.replaceInput({id: 'gtceu:shaped/lv_food_processor'}, 'gtceu:lv_electric_piston', 'gtceu:steel_whisk')
 	event.replaceInput({id: 'gtceu:shaped/mv_food_processor'}, 'gtceu:mv_electric_piston', 'gtceu:aluminium_whisk')
 	event.replaceInput({id: 'gtceu:shaped/hv_food_processor'}, 'gtceu:hv_electric_piston', 'gtceu:stainless_steel_whisk')
