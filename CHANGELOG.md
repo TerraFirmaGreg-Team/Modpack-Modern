@@ -4,14 +4,19 @@
 ### New features
 ### Bug fixes
 - Fixed double ingots not having a temperature (#1165) @Pyritie
-- Removed a few recipes that had unobtainable create-related materials @Pyritie
+- Removed a few recipes that had unobtainable greate-related materials @Pyritie
 - Fixed the color of placed zinc ingots and plated blocks to match the material @Pyritie
 - Fixed some other steel/colored steel items being extractable in LV @Pyritie
+- Fixed polished/cut migmatite recipe conflict (#1153) @JeanRdSz
+- You can now use casting channels, mold tables, and mechanical pumps on top of a Hellforge (#1183) @Indiiix
 ### Changes
 - Changed pineapple yarn recipe from assembler to wiremill & coiling machine, like the other strings (#1162) @Pyritie
 - Lowered durability of wooden tongs @Pyritie
 - Streamlined the Metallurgy Age quest chapter a bit @Pyritie
 - Mushroom blocks now drop way less mushroom @Pyritie
+- Removed gems tag from flint @Pyritie
+- Updated texture for aqueous accumulator (#1168) @Redeix
+- Kaolin Klayzes now also drop blood lilies @Pyritie
 
 ## [0.9.11] - 13.06.2025
 ### New features
