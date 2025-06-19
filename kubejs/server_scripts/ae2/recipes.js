@@ -1489,6 +1489,8 @@ const registerAE2Recipes = (event) => {
 
 	//#endregion
 
+	//#region Processors
+
 	// Logic Processor
 
 	event.recipes.gtceu.circuit_assembler('ae2:logic_processor_moon')
@@ -1511,7 +1513,7 @@ const registerAE2Recipes = (event) => {
 			'#gtceu:circuits/lv',
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
-		.itemOutputs('4x ae2:logic_processor')
+		.itemOutputs('3x ae2:logic_processor')
 		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
@@ -1538,7 +1540,7 @@ const registerAE2Recipes = (event) => {
 			'#gtceu:circuits/lv',
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
-		.itemOutputs('4x ae2:calculation_processor')
+		.itemOutputs('3x ae2:calculation_processor')
 		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
@@ -1565,7 +1567,7 @@ const registerAE2Recipes = (event) => {
 			'#gtceu:circuits/lv',
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
-		.itemOutputs('4x ae2:engineering_processor')
+		.itemOutputs('3x ae2:engineering_processor')
 		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
