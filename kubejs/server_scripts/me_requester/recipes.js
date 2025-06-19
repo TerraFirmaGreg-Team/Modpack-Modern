@@ -8,7 +8,7 @@ const registerMERequesterRecipes = (event) => {
     event.recipes.gtceu.assembler('tfg:merequester/merequester')             
         .itemInputs(
             'expatternprovider:ex_pattern_provider',
-            'expatternprovider:oversize_interface',
+            '#expatternprovider:extended_interface',
             'megacells:mega_crafting_unit',
             '4x #gtceu:circuits/luv',
             '4x #forge:double_plates/titanium_tungsten_carbide',
@@ -16,13 +16,13 @@ const registerMERequesterRecipes = (event) => {
         .inputFluids(Fluid.of('tfg:fluix', 144*20))
         .itemOutputs('merequester:requester')
         .duration(760)
-        .EUt(GTValues.VA[GTValues.LuV])
+        .EUt(GTValues.VA[GTValues.IV])
         .cleanroom(CleanroomType.CLEANROOM)
 
     event.recipes.gtceu.assembler('tfg:merequester/merequester_moon')             
         .itemInputs(
             'expatternprovider:ex_pattern_provider',
-            'expatternprovider:oversize_interface',
+            '#expatternprovider:extended_interface',
             'megacells:mega_crafting_unit',
             '4x #gtceu:circuits/luv',
             '4x #forge:double_plates/titanium_tungsten_carbide',
@@ -30,7 +30,7 @@ const registerMERequesterRecipes = (event) => {
         .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*20))
         .itemOutputs('merequester:requester')
         .duration(760)
-        .EUt(GTValues.VA[GTValues.IV])
+        .EUt(GTValues.VA[GTValues.EV])
         .dimension('ad_astra:moon')
 
     // ME Requester Terminal
