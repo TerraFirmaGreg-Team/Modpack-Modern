@@ -13,6 +13,20 @@ const registerMERequesterRecipes = (event) => {
             '4x #gtceu:circuits/luv',
             '4x #forge:double_plates/titanium_tungsten_carbide',
             '4x gtceu:exquisite_amethyst_gem')
+        .inputFluids(Fluid.of('tfg:fluix', 144*20))
+        .itemOutputs('merequester:requester')
+        .duration(760)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.assembler('tfg:merequester/merequester_moon')             
+        .itemInputs(
+            'expatternprovider:ex_pattern_provider',
+            'expatternprovider:oversize_interface',
+            'megacells:mega_crafting_unit',
+            '4x #gtceu:circuits/luv',
+            '4x #forge:double_plates/titanium_tungsten_carbide',
+            '4x gtceu:exquisite_amethyst_gem')
         .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*20))
         .itemOutputs('merequester:requester')
         .duration(760)
