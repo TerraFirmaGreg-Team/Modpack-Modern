@@ -642,7 +642,8 @@ const registerAE2Recipes = (event) => {
 		.itemInputs(
 			'2x #forge:rods/quartzite',
 			'3x ae2:quartz_fiber',
-			'#forge:fine_wires/borosilicate_glass')
+			'#forge:fine_wires/borosilicate_glass',
+			'#forge:small_dusts/fluix')
 		.itemOutputs('4x ae2:fluix_glass_cable')
 		.circuit(1)
 		.duration(20)
@@ -681,7 +682,8 @@ const registerAE2Recipes = (event) => {
 		.itemInputs(
 			'2x #forge:rods/quartzite',
 			'3x ae2:quartz_fiber',
-			'#forge:fine_wires/borosilicate_glass')
+			'#forge:fine_wires/borosilicate_glass',
+			'#forge:small_dusts/fluix')
 		.inputFluids(Fluid.of('gtceu:rubber', 144*4))
 		.itemOutputs('4x ae2:fluix_smart_cable')
 		.circuit(2)
@@ -692,7 +694,8 @@ const registerAE2Recipes = (event) => {
 		.itemInputs(
 			'2x #forge:rods/quartzite',
 			'3x ae2:quartz_fiber',
-			'#forge:fine_wires/borosilicate_glass')
+			'#forge:fine_wires/borosilicate_glass',
+			'#forge:small_dusts/fluix')
 		.inputFluids(Fluid.of('gtceu:silicone_rubber', 144*2))
 		.itemOutputs('4x ae2:fluix_smart_cable')
 		.circuit(2)
@@ -703,7 +706,8 @@ const registerAE2Recipes = (event) => {
 		.itemInputs(
 			'2x #forge:rods/quartzite',
 			'3x ae2:quartz_fiber',
-			'#forge:fine_wires/borosilicate_glass')
+			'#forge:fine_wires/borosilicate_glass',
+			'#forge:small_dusts/fluix')
 		.inputFluids(Fluid.of('gtceu:styrene_butadiene_rubber', 144))
 		.itemOutputs('4x ae2:fluix_smart_cable')
 		.circuit(2)
