@@ -35,19 +35,6 @@ const registerMegaCellsRecipes = (event) => {
         .dimension('ad_astra:moon')
 
 	// Accumulation Processor
-	event.recipes.gtceu.circuit_assembler('ae2:accumulation_processor')
-		.itemInputs(
-			'ae2:printed_silicon',
-			'megacells:printed_accumulation_processor',
-			'#gtceu:circuits/iv',
-			'2x #gtceu:resistors',
-			'2x #forge:fine_wires/tin',
-			'1x minecraft:redstone')
-		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*5))
-		.itemOutputs('2x megacells:accumulation_processor')
-		.duration(20*5)
-		.EUt(GTValues.VA[GTValues.EV])
-		.dimension('ad_astra:moon')
 
 	event.recipes.gtceu.circuit_assembler('ae2:accumulation_processor_moon')
 		.itemInputs(
@@ -55,13 +42,24 @@ const registerMegaCellsRecipes = (event) => {
 			'megacells:printed_accumulation_processor',
 			'#gtceu:circuits/iv',
 			'2x #gtceu:resistors',
-			'2x #forge:fine_wires/tin',
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:fluix', 144*5))
 		.itemOutputs('megacells:accumulation_processor')
 		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.IV])
 		.cleanroom(CleanroomType.CLEANROOM)
+
+	event.recipes.gtceu.circuit_assembler('ae2:accumulation_processor')
+		.itemInputs(
+			'ae2:printed_silicon',
+			'megacells:printed_accumulation_processor',
+			'#gtceu:circuits/iv',
+			'1x minecraft:redstone')
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*5))
+		.itemOutputs('2x megacells:accumulation_processor')
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.EV])
+		.dimension('ad_astra:moon')
 
     // Inscriber Silicon Press
     event.recipes.gtceu.laser_engraver('ae2:accumulation_processor_press')

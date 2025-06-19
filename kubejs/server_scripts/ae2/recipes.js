@@ -1490,19 +1490,6 @@ const registerAE2Recipes = (event) => {
 	//#endregion
 
 	// Logic Processor
-	event.recipes.gtceu.circuit_assembler('ae2:logic_processor')
-		.itemInputs(
-			'ae2:printed_silicon',
-			'ae2:printed_logic_processor',
-			'#gtceu:circuits/lv',
-			'2x #gtceu:resistors',
-			'2x #forge:fine_wires/tin',
-			'1x minecraft:redstone')
-		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
-		.itemOutputs('4x ae2:logic_processor')
-		.duration(20*5)
-		.EUt(GTValues.VA[GTValues.HV])
-		.dimension('ad_astra:moon')
 
 	event.recipes.gtceu.circuit_assembler('ae2:logic_processor_moon')
 		.itemInputs(
@@ -1510,28 +1497,26 @@ const registerAE2Recipes = (event) => {
 			'ae2:printed_logic_processor',
 			'#gtceu:circuits/lv',
 			'2x #gtceu:resistors',
-			'2x #forge:fine_wires/tin',
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('2x ae2:logic_processor')
 		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.HV])
-		.cleanroom(CleanroomType.CLEANROOM)
+		.cleanroom(CleanroomType.CLEANROOM)	
 
-	// Calculation Processor
-	event.recipes.gtceu.circuit_assembler('ae2:calculation_processor')
+	event.recipes.gtceu.circuit_assembler('ae2:logic_processor')
 		.itemInputs(
 			'ae2:printed_silicon',
-			'ae2:printed_calculation_processor',
+			'ae2:printed_logic_processor',
 			'#gtceu:circuits/lv',
-			'2x #gtceu:resistors',
-			'2x #forge:fine_wires/tin',
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
-		.itemOutputs('4x ae2:calculation_processor')
+		.itemOutputs('4x ae2:logic_processor')
 		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
+
+	// Calculation Processor
 
 	event.recipes.gtceu.circuit_assembler('ae2:calculation_processor_moon')
 		.itemInputs(
@@ -1539,7 +1524,6 @@ const registerAE2Recipes = (event) => {
 			'ae2:printed_calculation_processor',
 			'#gtceu:circuits/lv',
 			'2x #gtceu:resistors',
-			'2x #forge:fine_wires/tin',
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('2x ae2:calculation_processor')
@@ -1547,20 +1531,19 @@ const registerAE2Recipes = (event) => {
 		.EUt(GTValues.VA[GTValues.HV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
-	// Engineering Processor
-	event.recipes.gtceu.circuit_assembler('ae2:engineering_processor')
+	event.recipes.gtceu.circuit_assembler('ae2:calculation_processor')
 		.itemInputs(
 			'ae2:printed_silicon',
-			'ae2:printed_engineering_processor',
+			'ae2:printed_calculation_processor',
 			'#gtceu:circuits/lv',
-			'2x #gtceu:resistors',
-			'2x #forge:fine_wires/tin',
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
-		.itemOutputs('4x ae2:engineering_processor')
+		.itemOutputs('4x ae2:calculation_processor')
 		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
+
+	// Engineering Processor
 
 	event.recipes.gtceu.circuit_assembler('ae2:engineering_processor_moon')
 		.itemInputs(
@@ -1568,13 +1551,24 @@ const registerAE2Recipes = (event) => {
 			'ae2:printed_engineering_processor',
 			'#gtceu:circuits/lv',
 			'2x #gtceu:resistors',
-			'2x #forge:fine_wires/tin',
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('2x ae2:engineering_processor')
 		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.HV])
 		.cleanroom(CleanroomType.CLEANROOM)
+
+	event.recipes.gtceu.circuit_assembler('ae2:engineering_processor')
+		.itemInputs(
+			'ae2:printed_silicon',
+			'ae2:printed_engineering_processor',
+			'#gtceu:circuits/lv',
+			'1x minecraft:redstone')
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
+		.itemOutputs('4x ae2:engineering_processor')
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.HV])
+		.dimension('ad_astra:moon')
 
 	// Printed Calculation Processor
 	event.recipes.gtceu.forming_press('ae2:printed_calculation_processor')
@@ -2167,8 +2161,8 @@ const registerAE2Recipes = (event) => {
 	// Fluix crystal
 	event.recipes.gtceu.mixer('ae2:fluix_crystal')
 		.itemInputs(
-			'#tfg:reactant_fluix',
-			'#forge:dusts/redstone',
+			'#tfg:reactant_fluix_ruby',
+			'#tfg:reactant_fluix_quartz',
 			'4x ae2:charged_certus_quartz_crystal')
 		.inputFluids(Fluid.of('minecraft:water', 144))
 		.itemOutputs('5x ae2:fluix_crystal')
@@ -2177,8 +2171,8 @@ const registerAE2Recipes = (event) => {
 
 	event.recipes.gtceu.mixer('ae2:fluix_crystal_ruby')
 		.itemInputs(
-			'#tfg:reactant_fluix',
-			'#forge:exquisite_gems/ruby',
+			'#tfg:reactant_fluix_ruby_exquisite',
+			'#tfg:reactant_fluix_quartz',
 			'4x ae2:charged_certus_quartz_crystal')
 		.inputFluids(Fluid.of('minecraft:water', 144))
 		.itemOutputs('20x ae2:fluix_crystal')
@@ -2187,8 +2181,8 @@ const registerAE2Recipes = (event) => {
 
 	event.recipes.gtceu.mixer('ae2:fluix_crystal_quartz')
 		.itemInputs(
-			'#tfg:reactant_fluix_exquisite',
-			'#forge:dusts/redstone',
+			'#tfg:reactant_fluix_ruby',
+			'#tfg:reactant_fluix_quartz_exquisite',
 			'4x ae2:charged_certus_quartz_crystal')
 		.inputFluids(Fluid.of('minecraft:water', 144))
 		.itemOutputs('20x ae2:fluix_crystal')
@@ -2197,8 +2191,8 @@ const registerAE2Recipes = (event) => {
 
 	event.recipes.gtceu.mixer('ae2:fluix_crystal_quartz_ruby')
 		.itemInputs(
-			'#tfg:reactant_fluix_exquisite',
-			'#forge:exquisite_gems/ruby',
+			'#tfg:reactant_fluix_ruby_exquisite',
+			'#tfg:reactant_fluix_quartz_exquisite',
 			'4x ae2:charged_certus_quartz_crystal')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 144))
 		.itemOutputs('40x ae2:fluix_crystal')
@@ -2223,11 +2217,66 @@ const registerAE2Recipes = (event) => {
 
 	// Cryogenized Fluix
 
-	event.recipes.gtceu.chemical_reactor('gtceu:cryo_fluix')
+	event.recipes.gtceu.vacuum_freezer('gtceu:cryo_fluix')
 		.inputFluids(Fluid.of('gtceu:helium_3', 1000))
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.outputFluids(Fluid.of('tfg:cryogenized_fluix', 576))
 		.duration(30*20)
-		.EUt(GTValues.VA[GTValues.HV])
+		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
+
+	// Certus deco blocks
+
+	event.stonecutting('ae2:cut_quartz_block', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:smooth_quartz_block', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:quartz_bricks', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:quartz_pillar', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:chiseled_quartz_block', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:quartz_stairs', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:cut_quartz_stairs', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:smooth_quartz_stairs', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:quartz_brick_stairs', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:chiseled_quartz_stairs', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:quartz_pillar_stairs', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:quartz_wall', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:cut_quartz_wall', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:smooth_quartz_wall', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:quartz_brick_wall', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:chiseled_quartz_wall', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:quartz_pillar_wall', '#tfg:certus_quartz_blocks')
+	event.stonecutting('2x ae2:quartz_slab', '#tfg:certus_quartz_blocks')
+	event.stonecutting('2x ae2:cut_quartz_slab', '#tfg:certus_quartz_blocks')
+	event.stonecutting('2x ae2:smooth_quartz_slab', '#tfg:certus_quartz_blocks')
+	event.stonecutting('2x ae2:quartz_brick_slab', '#tfg:certus_quartz_blocks')
+	event.stonecutting('2x ae2:chiseled_quartz_slab', '#tfg:certus_quartz_blocks')
+	event.stonecutting('2x ae2:quartz_pillar_slab', '#tfg:certus_quartz_blocks')
+
+	event.recipes.gtceu.macerator('tfg:macerate_certus_deco')
+		.itemInputs('#tfg:certus_quartz_blocks')
+		.itemOutputs('#forge:dusts/certus_quartz')
+		.duration(150)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+	event.recipes.gtceu.macerator('tfg:macerate_sky_stone')
+		.itemInputs('#tfg:sky_stone_blocks')
+		.itemOutputs('ae2:sky_dust')
+		.duration(150)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+	// other deco
+
+	event.shaped('ae2:not_so_mysterious_cube', [
+		' A ',
+		'BCD',
+		' E '
+	], {
+		A: 'ae2:calculation_processor_press',
+		B: 'ae2:engineering_processor_press',
+		C: 'ae2:fluix_block',
+		D: 'ae2:logic_processor_press',
+		E: 'ae2:silicon_press'
+	}).id('tfg:shaped/not_so_mysterious_cube')
+
 }
