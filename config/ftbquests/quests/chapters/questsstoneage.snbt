@@ -684,6 +684,7 @@
 			tasks: [{
 				id: "5A6EF9EBF232601C"
 				item: "gtceu:copper_double_ingot"
+				match_nbt: false
 				type: "item"
 				weak_nbt_match: true
 			}]
@@ -2248,7 +2249,7 @@
 				id: "55CF144A279A1F0D"
 				item: {
 					Count: 1
-					id: "ftbfiltersystem:smart_filter"
+					id: "ftbfiltersystem:smart_filter"	
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc_textile:animal_furs)"
 					}
