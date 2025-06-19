@@ -102,5 +102,14 @@ const registerTooltips = (event) =>
 	// Vessels
 	event.addAdvanced(['#tfc:fired_vessels'], (item, advanced, text) => {
 		text.add(1, text.of('§cMax: 3024mB'))
+
+	})
+
+	// MEGA Deprecated 0.10
+	event.addAdvanced(['#megacells:mega_interface'], (item, advanced, text) => {
+		text.add(1, text.of('§cDeprecated cannot be craft anymore'))
+	})
+	event.addAdvanced(['#megacells:mega_pattern_provider'], (item, advanced, text) => {
+		text.add(1, text.of('§cDeprecated cannot be craft anymore'))
 	})
 }

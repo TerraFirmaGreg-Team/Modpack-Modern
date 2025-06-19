@@ -23,6 +23,12 @@ const registerAE2ItemTags = (event) => {
     event.add('tfg:sky_stone_blocks', 'ae2:sky_stone_small_brick')
     
     event.add('tfg:stone_dusts', 'ae2:sky_dust')
+
+    event.add('tfg:reactant_fluix', 'minecraft:quartz')
+    event.add('tfg:reactant_fluix', 'gtceu:armalcolite_gem')
+
+    event.add('tfg:reactant_fluix_exquisite', 'gtceu:exquisite_nether_quartz_gem')
+    event.add('tfg:reactant_fluix_exquisite', 'gtceu:exquisite_armalcolite_gem')
 }
 
 const registerAE2BlockTags = (event) => {

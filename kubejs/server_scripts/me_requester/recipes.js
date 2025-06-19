@@ -6,10 +6,18 @@ const registerMERequesterRecipes = (event) => {
 
     // ME Requester
     event.recipes.gtceu.assembler('tfg:merequester/merequester')             
-        .itemInputs('#ae2:interface', '2x ae2:crafting_accelerator', '4x #gtceu:circuits/ev', '4x #forge:plates/copper', '#forge:rods/amethyst')
+        .itemInputs(
+            'expatternprovider:ex_pattern_provider',
+            'expatternprovider:oversize_interface',
+            'megacells:mega_crafting_unit',
+            '4x #gtceu:circuits/luv',
+            '4x #forge:double_plates/titanium_tungsten_carbide',
+            '4x gtceu:exquisite_amethyst_gem')
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*20))
         .itemOutputs('merequester:requester')
         .duration(760)
-        .EUt(506)
+        .EUt(GTValues.VA[GTValues.IV])
+        .dimension('ad_astra:moon')
 
     // ME Requester Terminal
     event.shaped('merequester:requester_terminal', [
@@ -25,4 +33,15 @@ const registerMERequesterRecipes = (event) => {
         F: '#forge:plates/steel',
         G: 'ae2:engineering_processor'
     }).id('merequester:requester_terminal')
+
+    event.recipes.gtceu.assembler('assembler:ae2_requester_terminal_terminal')
+        .itemInputs(
+            'ae2:terminal',
+            '2x #forge:rods/steel',
+            'ae2:engineering_processor',
+		    '2x #forge:plates/steel',
+		    'merequester:requester')
+        .itemOutputs('merequester:requester_terminal')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.IV])
 }
