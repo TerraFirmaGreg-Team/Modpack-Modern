@@ -24,7 +24,7 @@ const registerMERequesterRecipes = (event) => {
             'expatternprovider:ex_pattern_provider',
             '#expatternprovider:extended_interface',
             'megacells:mega_crafting_unit',
-            '4x #gtceu:circuits/luv',
+            '4x #gtceu:circuits/iv',
             '4x #forge:double_plates/titanium_tungsten_carbide',
             '4x gtceu:exquisite_amethyst_gem')
         .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*20))
