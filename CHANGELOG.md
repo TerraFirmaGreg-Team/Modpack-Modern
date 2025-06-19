@@ -11,15 +11,14 @@
 - New electric refrigerator with different tiers. You can craft the old one into this new one, but please take your food out of it before upgrading otherwise it will be lost! @ofoxsmith
 - Quest updates for all of the above. @TomPlop
 ### Minor changes
-- Balance changes for water wheels. @Pyritie
-- Added a second recipe for water flask sides so it doesn't matter if you craft it top-aligned or bottom-aligned. @Pyritie
-- More recipes to craft dyes. @Pyritie
-- New texture for the Aqeuous Accumulator. @Redeix
-- Adjusted the textures of the generated raw ore items. @Pyritie
-- Added recipes for AE2's decoration blocks. @Pyritie
+- Balance changes for water wheels @Pyritie
+- Added a second recipe for water flask sides so it doesn't matter if you craft it top-aligned or bottom-aligned @Pyritie
+- More recipes to craft dyes @Pyritie
+- Adjusted the textures of the generated raw ore items @Pyritie
+- Added recipes for AE2's decoration blocks @Pyritie
 ### Bug fixes
-- Fixed a mud hut structure that had deprecated zinc ingots. @Pyritie
-- The electric greenhouse now also allows loose rocks and plants inside, since TFC spawns them on any grass block. @Pyritie
+- Fixed a mud hut structure that had deprecated zinc ingots @Pyritie
+- The electric greenhouse now also allows loose rocks and plants inside, since TFC spawns them on any grass block @Pyritie
 
 ## [Unreleased]
 ### New features
