@@ -653,7 +653,7 @@ const registerAE2Recipes = (event) => {
 	event.recipes.gtceu.assembler('fluix_covered_cable_rubber')
 		.itemInputs(
 			'ae2:fluix_glass_cable')
-		.inputFluids(Fluid.of('gtceu:rubber'))
+		.inputFluids(Fluid.of('gtceu:rubber', 144))
 		.itemOutputs('ae2:fluix_covered_cable')
 		.circuit(2)
 		.duration(10)
@@ -1191,8 +1191,8 @@ const registerAE2Recipes = (event) => {
 		.itemInputs(
 			'2x #gtceu:circuits/iv',
 			'ae2:quartz_glass',
-			'4x ae2:annihilation_core',
-			'4x ae2:formation_core',
+			'8x ae2:annihilation_core',
+			'8x ae2:formation_core',
 			'2x gtceu:iv_robot_arm',
 			'6x #forge:plates/tungsten_steel')
 		.inputFluids(Fluid.of('tfg:fluix', 144*8))

@@ -603,8 +603,8 @@ const registerExtendedAE2Recipes = (event) => {
 
     event.recipes.gtceu.assembly_line('expatternprovider:assembler_matrix_frame_moon')
     .itemInputs(
-        '16x gtceu:plascrete',
-        '16x gtceu:iv_machine_casing',
+        '8x gtceu:plascrete',
+        '8x gtceu:iv_machine_casing',
         '1x #gtceu:circuits/iv',
         '4x ae2:logic_processor',
         '4x megacells:accumulation_processor',
@@ -613,7 +613,7 @@ const registerExtendedAE2Recipes = (event) => {
     .inputFluids(
         Fluid.of('gtceu:concrete', 144*8),
         Fluid.of('tfg:cryogenized_fluix', 144*16),)
-    .itemOutputs('16x expatternprovider:assembler_matrix_frame')
+    .itemOutputs('8x expatternprovider:assembler_matrix_frame')
     .duration(2000)
     .EUt(GTValues.VA[GTValues.IV])
     .dimension('ad_astra:moon')
