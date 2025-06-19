@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.10.0] - TODO DATE
+### Major changes
+- Build a rocket and blast off to the moon, a new dimension! You can get started in mid-HV.
+- AE2 inscriber presses are now found on the moon instead of being craftable, and making various AE2 components is also significantly cheaper there. @TomPlop & @Pyritie
+- Significant ore changes: certus quartz, raw aluminium, ilmenite, and some other mid-lategame materials have been moved from the overworld to the moon. Check your field guide for more information. @TomPlop
+- A new system for interstellar item transport, made just for TerraFirmaGreg - a new logistical problem to solve and automate. @ofoxsmith
+- New bedrock ore veins on the moon! Much better sources of infinite materials than stone dusts. @TomPlop
+- New machines to properly automate food, along with proper compatibility between machines and TFC's food system, so you can't turn rotten grains into fresh bread any more. The electric greenhouse now also always outputs fresh food. @ofoxsmith
+- New electric refrigerator with different tiers. You can craft the old one into this new one, but please take your food out of it before upgrading otherwise it will be lost! @ofoxsmith
+- Quest updates for all of the above. @TomPlop
+### Minor changes
+- Balance changes for water wheels. @Pyritie
+- Added a second recipe for water flask sides so it doesn't matter if you craft it top-aligned or bottom-aligned. @Pyritie
+- More recipes to craft dyes. @Pyritie
+- New texture for the Aqeuous Accumulator. @Redeix
+- Adjusted the textures of the generated raw ore items. @Pyritie
+- Added recipes for AE2's decoration blocks. @Pyritie
+### Bug fixes
+- Fixed a mud hut structure that had deprecated zinc ingots. @Pyritie
+- The electric greenhouse now also allows loose rocks and plants inside, since TFC spawns them on any grass block. @Pyritie
+
 ## [Unreleased]
 ### New features
 ### Bug fixes
