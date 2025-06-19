@@ -85,50 +85,6 @@ function registerTFGSpaceRecipes(event) {
 		.addDataString("fluidB", "minecraft:lava")
 		.outputFluids(Fluid.of("minecraft:lava", 1000))
 
-	// Dusts
-
-	event.recipes.gtceu.centrifuge('moon_stone_dust_separation')
-		.EUt(GTValues.VA[GTValues.MV])
-		.duration(480)
-		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('moon_stone'), 1))
-		.chancedOutput('ae2:sky_dust', 4700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Magnetite, 1), 3700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.CertusQuartz, 1), 2700, 700)
-		.outputFluids(Fluid.of('gtceu:helium_3', 50))
-
-	event.recipes.gtceu.centrifuge('moon_deepslate_dust_separation')
-		.EUt(GTValues.VA[GTValues.MV])
-		.duration(480)
-		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('moon_deepslate'), 1))
-		.chancedOutput('ae2:sky_dust', 4700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Olivine, 1), 3700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, TFGHelpers.getMaterial('desh'), 1), 2700, 700)
-		.outputFluids(Fluid.of('gtceu:helium_3', 50))
-
-	event.recipes.gtceu.centrifuge('glacio_stone_dust_separation')
-		.EUt(GTValues.VA[GTValues.MV])
-		.duration(480)
-		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('glacio_stone'), 1))
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.SiliconDioxide, 1), 4700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Magnesium, 1), 2700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.MetalMixture, 1), 1700, 700)
-		.outputFluids(Fluid.of('gtceu:helium_3', 50))
-
-	event.recipes.gtceu.centrifuge('sky_dust_separation')
-		.EUt(GTValues.VA[GTValues.LV])
-		.duration(100)
-		.itemInputs('ae2:sky_dust')
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.CertusQuartz, 1), 4700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Iron, 1), 3700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.MetalMixture, 1), 2700, 700)
-
-	event.recipes.gtceu.centrifuge('asurine_dust_separation')
-		.EUt(GTValues.VA[GTValues.LV])
-		.duration(100)
-		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('asurine'), 1))
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dust, GTMaterials.CertusQuartz, 1), 4700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Zinc, 1), 3700, 700)
-
 	// Plants
 
 	// Chorus

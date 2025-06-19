@@ -16,4 +16,5 @@ const registerTFGRecipes = (event) => {
 	registerTFGConvertingRecipes(event)
 	registerTFGFoodRecipes(event)
 	registerTFGSpaceRecipes(event)
+	registerTFGStoneDustRecipes(event)
 }
