@@ -511,7 +511,7 @@ function registerTFGFoodRecipes(event) {
 
 	processorRecipeText('calorie_paste', 100, 512, "tfg.food_recipe.freeze_drying", {
 		circuit: 8,
-		itemInputs: ['firmalife:food/soybean_paste', 'tfg:foil_pack', '2x gtceu:small_meat_dust'],
+		itemInputs: ['firmalife:food/soybean_paste', 'tfg:foil_pack', '2x gtceu:small_meat_dust', 'tfg:dry_ice'],
 		itemOutputs: ['tfg:food/calorie_paste'],
 		fluidInputs: [Fluid.of('gtceu:fermented_biomass', 40)],
 		itemOutputProvider: TFC.isp.of('tfg:food/calorie_paste').copyOldestFood().addTrait('tfg:freeze_dried'),
