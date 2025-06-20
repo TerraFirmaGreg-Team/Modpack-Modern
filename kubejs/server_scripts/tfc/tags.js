@@ -479,13 +479,14 @@ const registerTFCFluidTags = (event) => {
 	event.add('tfc:usable_in_red_steel_bucket', 'gtceu:ice')
 
 	event.add('tfc:usable_in_barrel', 'gtceu:glue')
-	event.add('tfc:usable_in_pot', 'gtceu:glue')
 	event.add('tfc:usable_in_wooden_bucket', 'gtceu:glue')
+	event.add('tfc:usable_in_blue_steel_bucket', 'tfc:spring_water')
 	event.add('tfc:usable_in_red_steel_bucket', 'gtceu:glue')
 
 	event.add('tfc:ingredients', 'tfc:spring_water')
 	event.add('tfc:usable_in_barrel', 'tfc:spring_water')
 	event.add('tfc:usable_in_wooden_bucket', 'tfc:spring_water')
+	event.add('tfc:usable_in_blue_steel_bucket', 'tfc:spring_water')
 	event.add('tfc:usable_in_red_steel_bucket', 'tfc:spring_water')
 
 	// Добавляем тег для скрытия в EMI
