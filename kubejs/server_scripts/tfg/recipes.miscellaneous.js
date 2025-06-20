@@ -437,7 +437,6 @@ function registerTFGMiscellaneousRecipes(event) {
 		.notConsumable('gtceu:block_casting_mold')
         .itemOutputs('2x tfg:dry_ice')
         .duration(100)
-        .circuit(4)
         .EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.vacuum_freezer('tfg:vacuum_freezer/dry_ice')
@@ -445,7 +444,6 @@ function registerTFGMiscellaneousRecipes(event) {
 		.notConsumable('gtceu:block_casting_mold')
         .itemOutputs('10x tfg:dry_ice')
         .duration(100)
-        .circuit(4)
         .EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:chemical_reactor/decompress_dry_ice')
