@@ -215,4 +215,25 @@ function registerGTCEURecyclingRecipes(event) {
 		.duration(1792)
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
+
+	// Clean Foil pack
+	event.recipes.gtceu.macerator('gtceu:macerator/recycling/clean_foil_pack')
+		.itemInputs('tfg:clean_foil_pack')
+		.itemOutputs(
+			ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Aluminium, 1),
+			ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Polyethylene, 1)
+		)
+		.duration(GTMaterials.Aluminium.getMass() * 1)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.arc_furnace('gtceu:arc_furnace/recycling/clean_foil_pack')
+		.itemInputs('tfg:clean_foil_pack')
+		.itemOutputs(
+			ChemicalHelper.get(TagPrefix.nugget, GTMaterials.Aluminium, 2),
+			ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Ash, 1)
+		)
+		.duration(GTMaterials.Aluminium.getMass() * 1)
+		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+		.EUt(GTValues.VA[GTValues.LV])
 }

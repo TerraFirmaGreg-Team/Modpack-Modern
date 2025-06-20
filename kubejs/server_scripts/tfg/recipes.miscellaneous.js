@@ -424,4 +424,69 @@ function registerTFGMiscellaneousRecipes(event) {
         .duration(40)
         .circuit(4)
         .EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.forming_press('tfg:forming_press/foil_pack')
+        .itemInputs(ChemicalHelper.get(TagPrefix.foil, GTMaterials.Aluminium, 1), ChemicalHelper.get(TagPrefix.foil, GTMaterials.Polyethylene, 1))
+        .itemOutputs('1x tfg:foil_pack')
+        .duration(100)
+        .circuit(4)
+        .EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.compressor('tfg:compressor/dry_ice')
+        .inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
+        .itemOutputs('10x tfg:dry_ice')
+        .duration(100)
+        .circuit(4)
+        .EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:chemical_reactor/decompress_dry_ice')
+        .outputFluids(Fluid.of('gtceu:carbon_dioxide', 100))
+        .itemInputs('1x tfg:dry_ice')
+        .duration(20)
+        .circuit(4)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.ore_washer('tfg:ore_washer/clean_foil_pack')
+        .itemInputs('1x tfg:used_foil_pack')
+		.inputFluids(Fluid.of('minecraft:water', 100))
+        .itemOutputs('1x tfg:clean_foil_pack')
+        .duration(200)
+        .circuit(1)
+        .EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.ore_washer('tfg:ore_washer/distilled/clean_foil_pack')
+        .itemInputs('1x tfg:used_foil_pack')
+		.inputFluids(Fluid.of('gtceu:distilled_water', 10))
+        .itemOutputs('1x tfg:clean_foil_pack')
+        .duration(200)
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+	event.custom({
+		type: "ae2:transform",
+		circumstance: {
+			type: "fluid",
+			tag: "tfc:water"
+		},
+		ingredients: [
+			{item: 'tfg:used_foil_pack'}],
+		result: {item: 'tfg:clean_foil_pack'}
+	}).id('tfg:ae_transform/clean_foil_pack')
+
+	event.recipes.greate.splashing(['tfg:clean_foil_pack'], 'tfg:used_foil_pack')
+		.id('tfg:splashing/clean_foil_pack')
+
+	event.shapeless('1x tfg:used_foil_pack', [
+		'tfg:food/calorie_paste'
+	]).id('tfg:shapeless/emptying/calorie_paste')
+
+	event.shapeless('1x tfg:used_foil_pack', [
+		'tfg:food/meal_bag'
+	]).id('tfg:shapeless/emptying/meal_bag')
+
+	global.FOOD_FRUIT.forEach(fruit => {
+		event.shapeless('1x tfg:used_foil_pack', [
+			`tfg:food/freeze_dried/${fruit.name}`
+		]).id(`tfg:shapeless/emptying/freeze_dried/${fruit.name}`)
+	})
 }
