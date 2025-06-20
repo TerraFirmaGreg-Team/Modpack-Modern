@@ -432,8 +432,17 @@ function registerTFGMiscellaneousRecipes(event) {
         .circuit(4)
         .EUt(GTValues.VA[GTValues.MV])
 
-	event.recipes.gtceu.compressor('tfg:compressor/dry_ice')
+	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/dry_ice')
         .inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
+		.notConsumable('gtceu:block_casting_mold')
+        .itemOutputs('2x tfg:dry_ice')
+        .duration(100)
+        .circuit(4)
+        .EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.vacuum_freezer('tfg:vacuum_freezer/dry_ice')
+        .inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
+		.notConsumable('gtceu:block_casting_mold')
         .itemOutputs('10x tfg:dry_ice')
         .duration(100)
         .circuit(4)
