@@ -1076,6 +1076,16 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	//#endregion 
+	
+	//#region glowstone
+	event.recipes.gtceu.alloy_blast_smelter('abs:liquid_glowstone')
+        	.itemInputs('#forge:dusts/gold', '#forge:dusts/redstone', '#forge:dusts/sulfur')
+		.outputFluids(Fluid.of('gtceu:glowstone', 288))
+		.duration(20*60/1.3)
+		.EUt(GTValues.VA[GTValues.LV])
+		.blastFurnaceTemp(1064)
+	//#endregion
+	
 
     //#region Large boilers fuel rebalance
 
