@@ -79,7 +79,7 @@ function registerGTCEUMetalRecipes(event) {
 					.outputFluids(Fluid.of(material.getFluid(), 144))
 					.duration(material.getMass() * 6)
 					.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-					.EUt(GTValues.VA[GTValues.ULV])
+					.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
 			}
 
 		} else if (material.hasProperty(PropertyKey.GEM)) {
@@ -598,7 +598,7 @@ function registerGTCEUMetalRecipes(event) {
 			.outputFluids(Fluid.of(material.getFluid(), 14 * 144))
 			.duration(material.getMass() * 32)
 			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
 
 		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_anvil`)
 			.itemInputs(ChemicalHelper.get(TagPrefix.ingot, material, 14))
@@ -674,7 +674,7 @@ function registerGTCEUMetalRecipes(event) {
 			.outputFluids(Fluid.of(material.getFluid(), 144))
 			.duration(material.getMass() * 8)
 			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
 
 		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_unfinished_lamp`)
 			.itemInputs(materialIngotStack)
@@ -719,7 +719,7 @@ function registerGTCEUMetalRecipes(event) {
 			.outputFluids(Fluid.of(material.getFluid(), 144))
 			.duration(material.getMass() * 7)
 			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
 
 		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_trapdoor`)
 			.itemInputs(materialIngotStack)
@@ -767,7 +767,7 @@ function registerGTCEUMetalRecipes(event) {
 			.outputFluids(Fluid.of(material.getFluid(), 9))
 			.duration(material.getMass() * 3)
 			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
 
 		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_chain`)
 			.itemInputs(materialIngotStack)
