@@ -719,6 +719,33 @@ const registerAE2Recipes = (event) => {
 
 	// Covered dense cable
 
+global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        event.recipes.gtceu.packer(`${dye}_covered_pack`)
+            .itemInputs(`4x ae2:${dye}_covered_cable`)
+            .itemOutputs(`ae2:${dye}_covered_dense_cable`)
+            .duration(20)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.packer(`${dye}_covered_unpack`)
+            .itemInputs(`ae2:${dye}_covered_dense_cable`)
+            .itemOutputs(`4x ae2:${dye}_covered_cable`)
+            .duration(20)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.packer(`${dye}_smart_pack`)
+            .itemInputs(`4x ae2:${dye}_smart_cable`)
+            .itemOutputs(`ae2:${dye}_smart_dense_cable`)
+            .duration(20)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.packer(`${dye}_smart_unpack`)
+            .itemInputs(`ae2:${dye}_smart_dense_cable`)
+            .itemOutputs(`4x ae2:${dye}_smart_cable`)
+            .duration(20)
+            .EUt(GTValues.VA[GTValues.LV])
+
+		})
+
 	event.recipes.gtceu.packer('pack_fluix_covered_dense_cable')
 		.itemInputs('4x ae2:fluix_covered_cable')
 		.itemOutputs('ae2:fluix_covered_dense_cable')
