@@ -1084,6 +1084,7 @@ const registerGTCEURecipes = (event) => {
 		.duration(20*60/1.3)
 		.EUt(GTValues.VA[GTValues.LV])
 		.blastFurnaceTemp(1064)
+		.circuit(9)
 	//#endregion
 	
 
