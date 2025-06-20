@@ -9,6 +9,7 @@
 - New bedrock ore veins on the moon! Much better sources of infinite materials than stone dusts. @TomPlop
 - New machines to properly automate food, along with proper compatibility between machines and TFC's food system, so you can't turn rotten grains into fresh bread any more. The electric greenhouse now also always outputs fresh food. @ofoxsmith
 - New electric refrigerator with different tiers. You can craft the old one into this new one, but please take your food out of it before upgrading otherwise it will be lost! @ofoxsmith
+- Added many new advanced food items including freeze-dried fruit, calorie paste, and meal bags. @Redeix
 - Quest updates for all of the above. @TomPlop
 ### Minor changes
 - Balance changes for water wheels @Pyritie
