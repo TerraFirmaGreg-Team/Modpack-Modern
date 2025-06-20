@@ -429,7 +429,6 @@ function registerTFGMiscellaneousRecipes(event) {
         .itemInputs(ChemicalHelper.get(TagPrefix.foil, GTMaterials.Aluminium, 1), ChemicalHelper.get(TagPrefix.foil, GTMaterials.Polyethylene, 1))
         .itemOutputs('1x tfg:foil_pack')
         .duration(100)
-        .circuit(4)
         .EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/dry_ice')
