@@ -18,14 +18,6 @@ function registerTFCLunchBoxRecipes(event) {
     event.remove({ id: 'tfclunchbox:universal_capsule' })
     event.remove({ id: 'tfclunchbox:fill_capsule_with_ice' })
 
-    // Новые рецепты для капсул через GregTech машины
-    // New capsule recipes using GregTech machines
-    event.recipes.gtceu.assembler('tfclunchbox:universal_capsule')
-        .itemInputs('1x #forge:foils/red_steel', '1x #forge:rings/sterling_silver')
-        .itemOutputs('tfclunchbox:universal_capsule')
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.LV])
-
     // Рецепты заполнения fluid cells жидким льдом
     // Recipes for filling fluid cells with liquid ice
     fluidCells.forEach(cell => {
@@ -36,21 +28,4 @@ function registerTFCLunchBoxRecipes(event) {
             .duration(Math.max(16, Math.floor(cell.capacity / 64)))
             .EUt(GTValues.VA[GTValues.LV]);
     });
-
-    // Рецепт заполнения универсальной капсулы жидким льдом
-    // Recipe for filling the universal capsule with liquid ice
-    event.recipes.gtceu.canner('tfclunchbox:fill_universal_capsule_with_ice')
-        .itemInputs('tfclunchbox:universal_capsule')
-        .inputFluids(Fluid.of('gtceu:ice', 45 * 144))
-        .itemOutputs(Item.of('tfclunchbox:universal_capsule', '{Durability:1000}').withName(Text.translate('item.tfclunchbox.universal_capsule.filled')))
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    // Рецепт заполнения капсулы твердым льдом
-    // Recipe for filling the capsule with solid ice
-    event.recipes.gtceu.canner('tfclunchbox:fill_capsule_with_ice_solid')
-        .itemInputs('tfclunchbox:universal_capsule', '10x minecraft:packed_ice')
-        .itemOutputs(Item.of('tfclunchbox:universal_capsule', '{Durability:1000}').withName(Text.translate('item.tfclunchbox.universal_capsule.filled')))
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.LV])
 }
