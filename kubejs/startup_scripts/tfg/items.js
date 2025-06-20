@@ -147,12 +147,24 @@ const registerTFGItems = (event) => {
         .tooltip(`§9Instant Health II`)
     //#endregion
 
-    //#region Wax
+    //#region Misc
     event.create('tfg:paraffin_wax')
         .translationKey('item.tfg.paraffin_wax')
 
     event.create('tfg:conifer_rosin')
         .translationKey('item.tfg.conifer_rosin')
+
+    event.create('tfg:foil_pack')
+        .translationKey('item.tfg.foil_pack')
+        .texture('tfg:item/foil_pack')
+
+    event.create('tfg:clean_foil_pack')
+        .translationKey('item.tfg.clean_foil_pack') 
+        .texture('tfg:item/clean_foil_pack')  
+
+    event.create('tfg:dry_ice')
+        .translationKey('item.tfg.dry_ice') 
+        .texture('tfg:item/dry_ice')  
     //#endregion
 
     //#region Cloth & String

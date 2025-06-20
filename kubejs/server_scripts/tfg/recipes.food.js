@@ -116,6 +116,7 @@ function registerTFGFoodRecipes(event) {
 
 		// Raw crop to grain
 		processorRecipe(`${grain}_grain`, 100, 8, {
+			circuit: 30,
 			itemInputs: [`tfc:food/${grain}`],
 			itemOutputs: [`tfc:food/${grain}_grain`],
 			itemOutputProvider: TFC.isp.of(`tfc:food/${grain}_grain`).copyOldestFood()
@@ -123,6 +124,7 @@ function registerTFGFoodRecipes(event) {
 
 		//  Grain to flour
 		processorRecipe(`${grain}_flour`, 100, 8, {
+			circuit: 31,
 			itemInputs: [`tfc:food/${grain}_grain`],
 			itemOutputs: [`2x tfc:food/${grain}_flour`],
 			itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_flour`).copyOldestFood()
@@ -171,10 +173,35 @@ function registerTFGFoodRecipes(event) {
 			})
 
 			//Note: Jam needs to be first in the recipe code or else it will consider it as the usable_in_jam_sandwhich ingredients.
-			processorRecipe(`${grain}_${type[0]}_jam_sandwich`, 100, 16, {
+			//1 Jam
+			processorRecipe(`${grain}_${type[0]}_jam_sandwich_1`, 100, 16, {
 				circuit: 4,
-				itemInputs: [`2x ${type[1]}`, '#tfc:foods/preserves', '2x #tfc:foods/usable_in_jam_sandwich'],
+				itemInputs: [`2x ${type[1]}`, '#tfc:foods/preserves', '2x #tfc:foods/usable_in_jam_sandwich_2'],
 				itemOutputs: [`2x tfc:food/${grain}_bread_jam_sandwich`, 'tfc:empty_jar'],
+				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_bread_jam_sandwich`).meal(
+					(food => food.hunger(4).water(0.5).saturation(1).decayModifier(4.5)), [
+					(portion) => portion.ingredient(Ingredient.of('#tfc:sandwich_bread')).nutrientModifier(0.5).saturationModifier(0.5).waterModifier(0.5),
+					(portion) => portion.nutrientModifier(0.8).saturationModifier(0.8).waterModifier(0.8),
+				]),
+			})
+
+			//2 Jam
+			processorRecipe(`${grain}_${type[0]}_jam_sandwich_2`, 100, 16, {
+				circuit: 4,
+				itemInputs: [`2x ${type[1]}`, '2x #tfc:foods/preserves', '1x #tfc:foods/usable_in_jam_sandwich_2'],
+				itemOutputs: [`2x tfc:food/${grain}_bread_jam_sandwich`, '2x tfc:empty_jar'],
+				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_bread_jam_sandwich`).meal(
+					(food => food.hunger(4).water(0.5).saturation(1).decayModifier(4.5)), [
+					(portion) => portion.ingredient(Ingredient.of('#tfc:sandwich_bread')).nutrientModifier(0.5).saturationModifier(0.5).waterModifier(0.5),
+					(portion) => portion.nutrientModifier(0.8).saturationModifier(0.8).waterModifier(0.8),
+				]),
+			})
+
+			//3 Jam
+			processorRecipe(`${grain}_${type[0]}_jam_sandwich_3`, 100, 16, {
+				circuit: 4,
+				itemInputs: [`2x ${type[1]}`, '3x #tfc:foods/preserves'],
+				itemOutputs: [`2x tfc:food/${grain}_bread_jam_sandwich`, '3x tfc:empty_jar'],
 				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_bread_jam_sandwich`).meal(
 					(food => food.hunger(4).water(0.5).saturation(1).decayModifier(4.5)), [
 					(portion) => portion.ingredient(Ingredient.of('#tfc:sandwich_bread')).nutrientModifier(0.5).saturationModifier(0.5).waterModifier(0.5),
@@ -344,6 +371,73 @@ function registerTFGFoodRecipes(event) {
 		})
 	})
 
+	global.FOOD_FRUIT.forEach(fruit => {
+		processorRecipeText(`${fruit.name}/drying`, 100, 120, "tfg.food_recipe.freeze_drying", {
+			circuit: 7,
+			itemInputs: [fruit.id, 'tfg:foil_pack', 'tfg:dry_ice'],
+			itemOutputs: [`tfg:food/freeze_dried/${fruit.name}`],
+			itemOutputProvider: TFC.isp.of(`tfg:food/freeze_dried/${fruit.name}`).copyOldestFood().removeTrait('firmalife:dried').addTrait('tfg:freeze_dried')
+		})
+	})
+
+	//#endregion
+
+	//#region Meal Bags
+	//1 Input
+	processorRecipeText('meal_bag/1', 100, 120, "tfg.food_recipe.freeze_drying", {
+		circuit: 10,
+		itemInputs: ['1x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
+		itemOutputs: ['2x tfg:food/meal_bag'],
+		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
+			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
+			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0.8),
+		]).addTrait('tfg:freeze_dried')
+	})
+
+	//2 Input
+	processorRecipeText('meal_bag/2', 100, 120, "tfg.food_recipe.freeze_drying", {
+		circuit: 11,
+		itemInputs: ['2x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
+		itemOutputs: ['2x tfg:food/meal_bag'],
+		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
+			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
+			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0.8),
+		]).addTrait('tfg:freeze_dried')
+	})
+
+	//3 Input
+	processorRecipeText('meal_bag/3', 100, 120, "tfg.food_recipe.freeze_drying", {
+		circuit: 12,
+		itemInputs: ['3x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
+		itemOutputs: ['2x tfg:food/meal_bag'],
+		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
+			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
+			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0.8),
+		]).addTrait('tfg:freeze_dried')
+	})
+
+	//4 Input
+	processorRecipeText('meal_bag/4', 100, 120, "tfg.food_recipe.freeze_drying", {
+		circuit: 13,
+		itemInputs: ['4x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
+		itemOutputs: ['2x tfg:food/meal_bag'],
+		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
+			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
+			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0.8),
+		]).addTrait('tfg:freeze_dried')
+	})
+
+	//5 Input
+	processorRecipeText('meal_bag/5', 100, 120, "tfg.food_recipe.freeze_drying", {
+		circuit: 14,
+		itemInputs: ['5x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
+		itemOutputs: ['2x tfg:food/meal_bag'],
+		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
+			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
+			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0.8),
+		]).addTrait('tfg:freeze_dried')
+	})
+
 	//#endregion
 
 	//#region ================= Misc =================
@@ -413,6 +507,14 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: ['firmalife:food/dehydrated_soybeans'],
 		itemOutputs: ['firmalife:food/soybean_paste'],
 		itemOutputProvider: TFC.isp.of('firmalife:food/soybean_paste').copyOldestFood(),
+	})
+
+	processorRecipeText('calorie_paste', 100, 512, "tfg.food_recipe.freeze_drying", {
+		circuit: 8,
+		itemInputs: ['firmalife:food/soybean_paste', 'tfg:foil_pack'],
+		itemOutputs: ['tfg:food/calorie_paste'],
+		fluidInputs: [Fluid.of('gtceu:fermented_biomass', 40)],
+		itemOutputProvider: TFC.isp.of('tfg:food/calorie_paste').copyOldestFood().addTrait('tfg:freeze_dried'),
 	})
 		
 	// Vinegar

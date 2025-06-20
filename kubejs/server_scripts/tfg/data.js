@@ -102,4 +102,24 @@ const registerTFGFoodData = (event) => {
 		food.protein(2.4)
 		food.decayModifier(2.25)
 	})
+
+	global.FOOD_FRUIT.forEach(fruit => {
+		event.foodItem(`tfg:food/freeze_dried/${fruit.name}`, food => {
+			food.hunger(4)
+			food.saturation(fruit.saturation)
+			food.water(0)
+			food.fruit(fruit.fruit)
+			food.decayModifier(fruit.decay)
+		})
+	})
+
+	event.foodItem('tfg:food/calorie_paste', food => {
+		food.hunger(6)
+		food.saturation(4)
+		food.decayModifier(4.5)
+	})
+
+	event.foodItem('tfg:food/meal_bag', food => {
+		food.type('dynamic')
+	})
 }

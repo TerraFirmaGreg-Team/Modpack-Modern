@@ -141,7 +141,7 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:double_iron_ingots', '#forge:double_ingots/iron')
 	event.add('forge:double_iron_ingots', '#forge:double_ingots/wrought_iron')
 
-	// Food
+	//#region Food
 	const RAW_MEATS = [
 		'tfg:food/raw_birt',
 		'tfg:food/raw_crawlermari',
@@ -163,6 +163,26 @@ const registerTFGItemTags = (event) => {
 		event.add('tfc:foods/meats', meat)
 		event.add('tfc:foods/cooked_meats', meat)
 	})
+
+	//jam sandwhich stuff
+	const usable_in_jam_sandwich = Ingredient.of('#tfc:foods/usable_in_jam_sandwich').itemIds.toArray().map(String);
+	const preserves = Ingredient.of('#tfc:foods/preserves').itemIds.toArray().map(String);
+
+	const usable_in_jam_sandwich_2 = usable_in_jam_sandwich.filter(item => !preserves.includes(item));
+
+	usable_in_jam_sandwich_2.forEach(item => {
+		event.add('tfc:foods/usable_in_jam_sandwich_2', item);
+	});
+
+	//meal bags 
+	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/meats');
+	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/grains');
+	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/vegetables');
+	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/fruits');
+	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/dairy');
+	event.add('tfg:foods/usable_in_meal_bag', 'tfc:food/cooked_egg');
+	event.add('tfg:foods/usable_in_meal_bag', 'tfc:food/boiled_egg');
+	//#endregion
 
 	// #region 0.7.19 -> 0.9 conversion
 	event.add('c:hidden_from_recipe_viewers', 'treetap:tap')

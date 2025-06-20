@@ -87,6 +87,9 @@ GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
     registerTFGDimensionMarkers(event)
 })
 
+TFCEvents.registerFoodTrait(event => {
+    registerTFGFoodTraits(event)
+})
 
 Platform.mods.kaolinclayze.name = "Primitive Creatures";
 Platform.mods.tfg.name = "TerraFirmaGreg";
