@@ -96,7 +96,7 @@ const registerCreateAdditionsRecipes = (event) => {
 //#region Liquid blaze burners
 	
 	event.recipes.tfc.anvil('createaddition:straw', '#forge:small_fluid_pipes/tin_alloy', ['shrink_second_last', 'upset_not_last', 'punch_last'])
-        	.tier(3)
+        	.tier(5)
         	.id(`tfc:anvil/straw`)
 
     	event.recipes.gtceu.lathe('assembler:createaddition_straw')
