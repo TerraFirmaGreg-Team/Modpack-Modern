@@ -28,7 +28,7 @@ const registerAdAstraRecipes = (event) => {
 		.EUt(480)
 
 
-	event.recipes.gtceu.pyrolyse_oven('tfg:pyrolose_vitrified_asbestos_dust')
+	event.recipes.gtceu.pyrolyse_oven('tfg:pyrolyse_vitrified_asbestos_dust')
 		.inputFluids(Fluid.of('gtceu:nitrogen', 100))
 		.itemInputs('gtceu:asbestos_dust')
 		.itemOutputs('gtceu:vitrified_asbestos_dust')
@@ -95,14 +95,24 @@ const registerAdAstraRecipes = (event) => {
 
 	//#region space suits
 
+	event.recipes.gtceu.forming_press('space_suit_fabric')
+		.itemInputs(
+			'#forge:foils/aluminium',
+			'gtceu:carbon_fiber_mesh',
+			'#forge:foils/silicone_rubber',
+			'tfg:polycaprolactam_fabric'
+		)
+		.itemOutputs('2x tfg:space_suit_fabric')
+		.duration(20*10)
+		.EUt(GTValues.VA[GTValues.HV])
+
 	event.shaped('ad_astra:space_helmet', [
 		'AAA',
 		'ADA',
-		'BCB'
+		'BBB'
 	], {
 		A: 'gtceu:tempered_glass',
-		B: 'gtceu:carbon_fiber_plate',
-		C: 'tfg:polycaprolactam_fabric',
+		B: 'tfg:space_suit_fabric',
 		D: '#forge:small_fluid_pipes/polyethylene'
 	}).id('tfg:space_helmet')
 	
@@ -118,13 +128,11 @@ const registerAdAstraRecipes = (event) => {
 	//	.EUt(GTValues.VA[GTValues.IV])
 
 	event.shaped('ad_astra:space_suit', [
-		'BCB',
-		'ADA',
-		'BCB'
+		'B B',
+		'BDB',
+		'BBB'
 	], {
-		A: 'ad_astra:gas_tank',
-		B: 'gtceu:carbon_fiber_plate',
-		C: 'tfg:polycaprolactam_fabric',
+		B: 'tfg:space_suit_fabric',
 		D: 'ad_astra:oxygen_gear'
 	}).id('tfg:space_suit')
 
@@ -136,12 +144,11 @@ const registerAdAstraRecipes = (event) => {
 
 	event.shaped('ad_astra:space_pants', [
 		'BAB',
-		'C C',
+		'B B',
 		'B B'
 	], {
 		A: 'gtceu:hv_electric_motor',
-		B: 'gtceu:carbon_fiber_plate',
-		C: 'tfg:polycaprolactam_fabric'
+		B: 'tfg:space_suit_fabric',
 	}).id('tfg:space_pants')
 	
 	//event.recipes.gtceu.assembler('ad_astra:netherite_space_pants')
@@ -151,12 +158,11 @@ const registerAdAstraRecipes = (event) => {
 	//	.EUt(GTValues.VA[GTValues.IV])
 
 	event.shaped('ad_astra:space_boots', [
-		'CBC',
+		'B B',
 		'A A'
 	], {
 		A: '#forge:plates/polyphenylene_sulfide',
-		B: 'gtceu:carbon_fiber_plate',
-		C: 'tfg:polycaprolactam_fabric'
+		B: 'tfg:space_suit_fabric'
 	}).id('tfg:space_boots')
 
 	//event.recipes.gtceu.assembler('ad_astra:netherite_space_boots')
@@ -167,14 +173,15 @@ const registerAdAstraRecipes = (event) => {
 
 
 	event.shaped('ad_astra:oxygen_gear', [
-		' A ',
-		'BCB',
+		'BAB',
+		'ECE',
 		'BDB'
 	], {
-		A: '#forge:small_fluid_pipes/stainless_steel',
+		A: '#gtceu:circuits/hv',
 		B: '#forge:tiny_fluid_pipes/stainless_steel',
 		C: 'gtceu:hv_electric_pump',
-		D: 'gtceu:fluid_detector_cover'
+		D: 'gtceu:fluid_detector_cover',
+		E: 'ad_astra:gas_tank'
 	}).id('tfg:oxygen_gear')
 
 	//#endregion
@@ -261,7 +268,7 @@ const registerAdAstraRecipes = (event) => {
 	], {
 		A: 'gtceu:lv_sensor',
 		B: '#forge:tools/screwdrivers',
-		C: '#forge:plates/iron',
+		C: '#forge:plates/polyethylene',
 		D: '#gtceu:circuits/lv'
 	}).id('tfg:radio')
 
