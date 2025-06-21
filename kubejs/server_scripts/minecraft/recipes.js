@@ -1000,6 +1000,7 @@ const registerMinecraftRecipes = (event) => {
 	event.recipes.gtceu.compressor('tfg:red_mushroom')
 		.itemInputs('4x minecraft:red_mushroom')
 		.itemOutputs('minecraft:red_mushroom_block')
+		.circuit(2)
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -1007,6 +1008,7 @@ const registerMinecraftRecipes = (event) => {
 		.itemInputs('4x minecraft:brown_mushroom')
 		.itemOutputs('minecraft:brown_mushroom_block')
 		.duration(20)
+		.circuit(2)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_bath('tfg:red_mushroom_to_shroomlight')
@@ -1057,5 +1059,4 @@ const registerMinecraftRecipes = (event) => {
 		.itemOutputs('minecraft:glow_ink_sac')
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.MV])
-
 }
