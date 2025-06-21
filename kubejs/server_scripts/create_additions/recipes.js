@@ -94,14 +94,14 @@ const registerCreateAdditionsRecipes = (event) => {
 	}).id('tfg:createadditions/shaped/alternator')
 
     	event.recipes.gtceu.lathe('assembler:createaddition_straw')
-        	.itemInputs('#forge:rods/zinc')
+        	.itemInputs('forge:small_fluid_pipes/tin_alloy')
         	.itemOutputs('createaddition:straw')
         	.duration(20*6)
         	.EUt(16)
 
     	event.custom({
         	type: 'vintageimprovements:turning',
-        	ingredients: [{ tag: 'forge:rods/zinc' }],
+        	ingredients: [{ tag: 'forge:small_fluid_pipes/tin_alloy' }],
         	results: [{ item: 'createaddition:straw' }],
         	processingTime: 20*6
    	 }).id(`tfg:vi/lathe/straw`)
