@@ -92,4 +92,85 @@ const registerCreateAdditionsRecipes = (event) => {
 		E: 'gtceu:tin_single_cable',
 		F: '#tfg:shafts'
 	}).id('tfg:createadditions/shaped/alternator')
+
+	event.custom({
+		type: 'createaddition:liquid_burning',
+		input: {
+			fluidTag: 'minecraft:lava',
+			amount: 100
+		},
+		burnTime: 7*9*9
+	}).id('tfg:createadditions/liquid_burning/lava')
+
+	event.custom({
+		type: 'createaddition:liquid_burning',
+		input: {
+			fluidTag: 'forge:creosote',
+			amount: 160
+		},
+		burnTime: 10*9*9
+	}).id('tfg:createadditions/liquid_burning/creosote')
+
+	event.custom({
+		type: 'createaddition:liquid_burning',
+		input: {
+			fluidTag: 'forge:biomass',
+			amount: 40
+		},
+		burnTime: 10*9*9
+	}).id('tfg:createadditions/liquid_burning/biomass')
+
+	event.custom({
+		type: 'createaddition:liquid_burning',
+		input: {
+			fluidTag: 'forge:oil',
+			amount: 200
+		},
+		burnTime: 10*9*9
+	}).id('tfg:createadditions/liquid_burning/oil')
+
+	event.custom({
+		type: 'createaddition:liquid_burning',
+		input: {
+			fluidTag: 'forge:oil_heavy',
+			amount: 32
+		},
+		burnTime: 10*9*9
+	}).id('tfg:createadditions/liquid_burning/oil_heavy')
+
+	event.custom({
+		type: 'createaddition:liquid_burning',
+		input: {
+			fluidTag: 'forge:sulfuric_heavy_fuel',
+			amount: 32
+		},
+		burnTime: 10*9*9
+	}).id('tfg:createadditions/liquid_burning/sulfuric_heavy_fuel')
+
+	event.custom({
+		type: 'createaddition:liquid_burning',
+		input: {
+			fluidTag: 'forge:heavy_fuel',
+			amount: 16
+		},
+		burnTime: 30*9*9
+	}).id('tfg:createadditions/liquid_burning/heavy_fuel')
+
+	event.custom({
+		type: 'createaddition:liquid_burning',
+		input: {
+			fluidTag: 'forge:fish_oil',
+			amount: 160
+		},
+		burnTime: 10*9*9
+	}).id('tfg:createadditions/liquid_burning/fish_oil')
+
+	event.custom({
+		type: 'createaddition:liquid_burning',
+		input: {
+			fluidTag: 'tfc:olive_oil',
+			amount: 50
+		},
+		burnTime: 150*9*9
+	}).id('tfg:createadditions/liquid_burning/olive_oil')
 }
