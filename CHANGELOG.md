@@ -12,7 +12,7 @@
 - Added many new advanced food items including freeze-dried fruit, calorie paste, and meal bags. @Redeix
 - Quest updates for all of the above. @TomPlop
 ### Minor changes
-- Balance changes for water wheels @Pyritie
+- Balance changes for water wheels and glowstone blocks @Pyritie
 - Added a second recipe for water flask sides so it doesn't matter if you craft it top-aligned or bottom-aligned @Pyritie
 - More recipes to craft dyes @Pyritie
 - Adjusted the textures of the generated raw ore items @Pyritie

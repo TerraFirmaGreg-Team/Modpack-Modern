@@ -22,7 +22,8 @@ function registerTFGRockRecipes(event) {
 		{ loose: 'tfg:brick/mercury_stone', block: '4x ad_astra:mercury_stone_bricks' },
 		{ loose: 'tfg:loose/glacio_stone', block: 'ad_astra:glacio_cobblestone' },
 		{ loose: 'tfg:brick/glacio_stone', block: '4x ad_astra:glacio_stone_bricks' },
-		{ loose: 'tfg:brick/permafrost', block: '4x ad_astra:permafrost_bricks' }
+		{ loose: 'tfg:brick/permafrost', block: '4x ad_astra:permafrost_bricks' },
+		{ loose: 'minecraft:popped_chorus_fruit', block: '4x minecraft:purpur_block' }
 	]
 
 	GLUEING_TOGETHER.forEach(x => {
@@ -501,6 +502,13 @@ function registerTFGRockRecipes(event) {
 			wall: 'ae2:fluix_wall',
 			dust: 'ae2:fluix_dust',
 			stonecutting: true
+		},
+		{
+			raw: 'minecraft:purpur_block',
+			stair: 'minecraft:purpur_stairs',
+			slab: 'minecraft:purpur_slab',
+			dust: null,
+			stonecutting: true
 		}
 		// #endregion
 	]
@@ -513,12 +521,14 @@ function registerTFGRockRecipes(event) {
 				event.stonecutting(x.stair, x.raw).id(`${x.raw}_to_${x.stair}`.replace(/:/g, '_'))
 			}
 
-			event.recipes.gtceu.macerator(`macerate_${x.stair}`.replace(/:/g, '_'))
-				.itemInputs(x.stair)
-				.itemOutputs(x.dust)
-				.duration(150)
-				.EUt(2)
-				.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			if (x.dust != null) {
+				event.recipes.gtceu.macerator(`macerate_${x.stair}`.replace(/:/g, '_'))
+					.itemInputs(x.stair)
+					.itemOutputs(x.dust)
+					.duration(150)
+					.EUt(2)
+					.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			}
 
 			if ("loose" in x) {
 				event.shapeless(`3x ${x.loose}`, [x.stair])
@@ -531,12 +541,14 @@ function registerTFGRockRecipes(event) {
 				event.stonecutting(`2x ${x.slab}`, x.raw).id(`${x.raw}_to_${x.slab}`.replace(/:/g, '_'))
 			}
 
-			event.recipes.gtceu.macerator(`macerate_${x.slab}`.replace(/:/g, '_'))
-				.itemInputs(`2x ${x.slab}`)
-				.itemOutputs(x.dust)
-				.duration(150)
-				.EUt(2)
-				.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			if (x.dust != null) {
+				event.recipes.gtceu.macerator(`macerate_${x.slab}`.replace(/:/g, '_'))
+					.itemInputs(`2x ${x.slab}`)
+					.itemOutputs(x.dust)
+					.duration(150)
+					.EUt(2)
+					.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			}
 
 			if ("loose" in x) {
 				event.shapeless(`2x ${x.loose}`, [x.slab])
@@ -549,12 +561,14 @@ function registerTFGRockRecipes(event) {
 				event.stonecutting(x.wall, x.raw).id(`${x.raw}_to_${x.wall}`.replace(/:/g, '_'))
 			}
 
-			event.recipes.gtceu.macerator(`macerate_${x.wall}`.replace(/:/g, '_'))
-				.itemInputs(x.wall)
-				.itemOutputs(x.dust)
-				.duration(150)
-				.EUt(2)
-				.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			if (x.dust != null) {
+				event.recipes.gtceu.macerator(`macerate_${x.wall}`.replace(/:/g, '_'))
+					.itemInputs(x.wall)
+					.itemOutputs(x.dust)
+					.duration(150)
+					.EUt(2)
+					.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			}
 		}
 
 		if ("loose" in x) {
@@ -570,7 +584,8 @@ function registerTFGRockRecipes(event) {
 		{ raw: 'ad_astra:venus_stone_bricks', pillar: 'ad_astra:venus_pillar' },
 		{ raw: 'ad_astra:mercury_stone_bricks', pillar: 'ad_astra:mercury_pillar' },
 		{ raw: 'ad_astra:glacio_stone_bricks', pillar: 'ad_astra:glacio_pillar' },
-		{ raw: 'ad_astra:permafrost_bricks', pillar: 'ad_astra:permafrost_pillar' }
+		{ raw: 'ad_astra:permafrost_bricks', pillar: 'ad_astra:permafrost_pillar' },
+		{ raw: 'minecraft:purpur_block', pillar: 'minecraft:purpur_pillar' }
 	]
 
 	PILLARS.forEach(x => {

@@ -15,7 +15,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:infested_deepslate',
 
     // Каменные блоки
-    'minecraft:stone', 
     'minecraft:stone_stairs', 
     'minecraft:stone_slab', 
     'minecraft:stone_pressure_plate', 
@@ -613,10 +612,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:honey_bottle', 
     'minecraft:honeycomb_block', 
     'minecraft:honey_block',
-    'minecraft:purpur_pillar', 
-    'minecraft:purpur_block', 
-    'minecraft:purpur_stairs', 
-    'minecraft:purpur_slab', 
     'minecraft:shears', 
     'minecraft:lantern', 
     'minecraft:soul_lantern',
