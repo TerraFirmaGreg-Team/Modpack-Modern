@@ -37,6 +37,7 @@ ItemEvents.modification(event => {
  */
 StartupEvents.registry('fluid', event => {
     registerTFGFluids(event)
+    registerAE2Fluids(event)
 })
 
 /**
