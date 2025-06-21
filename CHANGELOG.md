@@ -19,6 +19,7 @@
 - Added recipes for AE2's decoration blocks @Pyritie
 - Added warning text to macerators, millstones, and crushing wheels about the no-byproducts-until-HV thing @Pyritie
 - Electric greenhouse now accepts any glass instead of exclusively AE2 quartz glass @Pyritie
+- Added earlier recipes for 1:1 clay bricks @Pyritie
 ### Bug fixes
 - Fixed a mud hut structure that had deprecated zinc ingots @Pyritie
 - The electric greenhouse now also allows loose rocks and plants inside, since TFC spawns them on any grass block @Pyritie
