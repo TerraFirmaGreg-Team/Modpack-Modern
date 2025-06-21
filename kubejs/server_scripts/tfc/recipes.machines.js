@@ -130,6 +130,20 @@ function registerTFCMachineRecipes(event) {
 			.EUt(2)
 	}
 
+	event.recipes.gtceu.extruder('tfg:unfired_clay_brick')
+		.itemInputs('minecraft:clay_ball')
+		.notConsumable('gtceu:ingot_extruder_mold')
+		.itemOutputs('tfc:ceramic/unfired_brick')
+		.duration(20)
+		.EUt(2)
+
+	event.recipes.gtceu.extruder('tfg:unfired_fire_clay_brick')
+		.itemInputs('tfc:fire_clay')
+		.notConsumable('gtceu:ingot_extruder_mold')
+		.itemOutputs('tfc:ceramic/unfired_fire_brick')
+		.duration(20)
+		.EUt(2)
+
 	//#endregion
 
 	//#region Стеклянные смеси в бутылки в ассемблере
