@@ -92,6 +92,12 @@ const registerCreateAdditionsRecipes = (event) => {
 		E: 'gtceu:tin_single_cable',
 		F: '#tfg:shafts'
 	}).id('tfg:createadditions/shaped/alternator')
+	
+//#region Liquid blaze burners
+	
+	event.recipes.tfc.anvil('createaddition:straw', '#forge:small_fluid_pipes/tin_alloy', ['shrink_second_last', 'upset_not_last', 'punch_last'])
+        	.tier(3)
+        	.id(`tfc:anvil/straw`)
 
     	event.recipes.gtceu.lathe('assembler:createaddition_straw')
         	.itemInputs('forge:small_fluid_pipes/tin_alloy')
@@ -186,4 +192,5 @@ const registerCreateAdditionsRecipes = (event) => {
 		},
 		burnTime: 150*9*9
 	}).id('tfg:createadditions/liquid_burning/olive_oil')
+//#endregion
 }
