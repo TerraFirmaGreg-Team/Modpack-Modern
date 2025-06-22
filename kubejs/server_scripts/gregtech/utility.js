@@ -23,7 +23,7 @@ const generateCutterRecipe = (event, input, output, duration, EUt, id) => {
 		.EUt(EUt)
 }
 
-const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, overworldExclusive) => {
+const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimension) => {
 
 	// Без удобрения
 	let r = event.recipes.gtceu.greenhouse(id)
@@ -36,8 +36,8 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, overwo
 		.duration(36000) // 30 mins
 		.EUt(GTValues.VA[GTValues.LV])
 
-	if (overworldExclusive)
-		r.dimension('minecraft:overworld')
+	if (dimension != null)
+		r.dimension(dimension)
 
 	// С удобрением
 	r = event.recipes.gtceu.greenhouse(`${id}_fertilized`)
@@ -51,8 +51,8 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, overwo
 		.duration(12000) // 10 mins
 		.EUt(GTValues.VA[GTValues.LV])
 
-	if (overworldExclusive)
-		r.dimension('minecraft:overworld')
+	if (dimension != null)
+		r.dimension(dimension)
 }
 
 const getFillingNBT = (material, amount) => {

@@ -42,7 +42,6 @@ const registerCreateRecipes = (event) => {
 	})
 
 	event.remove({ type: 'minecraft:stonecutting', input: 'create:andesite_alloy' })
-	event.remove({ type: 'minecraft:stonecutting', input: 'create:rose_quartz' })
 
 	// Train Station
 	event.shapeless('2x create:track_station', [
@@ -1419,12 +1418,13 @@ const registerCreateRecipes = (event) => {
 	// #region Water Wheels
 
 	event.shaped('create:water_wheel', [
-		'AAA',
-		'ABA',
-		'AAA'
+		'ACA',
+		'CBC',
+		'ACA'
 	], {
 		A: 'gtceu:treated_wood_planks',
-		B: '#tfg:shafts'
+		B: '#tfg:shafts',
+		C: '#forge:plates/wrought_iron'
 	}).id('create:shaped/water_wheel')
 
 	event.shaped('create:large_water_wheel', [
@@ -1977,4 +1977,18 @@ const registerCreateRecipes = (event) => {
 
 	event.shapeless('2x create:train_trapdoor', ['tfc:metal/trapdoor/steel', '#minecraft:wooden_trapdoors'])
 		.id('tfg:shapeless/create_train_trapdoor')
+
+	// Fantasy stone blocks
+
+	event.recipes.gtceu.macerator('tfg:asurine')
+		.itemInputs('create:asurine')
+		.itemOutputs('#forge:dusts/asurine')
+		.duration(50)
+		.EUt(2)
+
+	event.recipes.gtceu.macerator('tfg:cut_asurine')
+		.itemInputs('create:cut_asurine')
+		.itemOutputs('#forge:dusts/asurine')
+		.duration(50)
+		.EUt(2)
 }

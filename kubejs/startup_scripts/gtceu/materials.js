@@ -1,3 +1,5 @@
+﻿// priority: 0
+
 const registerGTCEuMaterials = (event) => {
 
 }
@@ -261,6 +263,10 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RedSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
 	GTMaterials.BlueSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
 
+	// Change byproducts so you can't get certus from normal quartzite
+	GTMaterials.Quartzite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.NetherQuartz, GTMaterials.Barite, GTMaterials.NetherQuartz);
+	GTMaterials.CertusQuartz.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.CertusQuartz, GTMaterials.Quartzite, GTMaterials.CertusQuartz);
+
 	// Color Adjustments
 	GTMaterials.BismuthBronze.setMaterialARGB(0x5A966E)
 	GTMaterials.BismuthBronze.setMaterialSecondaryARGB(0x203E2A)
@@ -280,7 +286,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.IronMagnetic.setMaterialARGB(0x503d32)
 	GTMaterials.IronMagnetic.setMaterialSecondaryARGB(0x131212)
 	GTMaterials.Zinc.setMaterialARGB(0xd6ffdc)
-	GTMaterials.Zinc.setMaterialSecondaryARGB(0xA3BE9E)
+	GTMaterials.Zinc.setMaterialSecondaryARGB(0x213b3f)
 	GTMaterials.Graphite.setMaterialARGB(0x889BA8)
 	GTMaterials.Graphite.setMaterialSecondaryARGB(0x30383E)
 	GTMaterials.Amethyst.setMaterialARGB(0xCC9EF0)
@@ -288,7 +294,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Cobalt.setMaterialARGB(0xC9E4FB)
 	GTMaterials.Cobalt.setMaterialSecondaryARGB(0x1D2688)
 	GTMaterials.CertusQuartz.setMaterialARGB(0xB8D8FC)
-	GTMaterials.CertusQuartz.setMaterialSecondaryARGB(0x466580)
+	GTMaterials.CertusQuartz.setMaterialSecondaryARGB(0xADCCEF)
 	GTMaterials.Vanadium.setMaterialARGB(0xD8D4E7)
 	GTMaterials.Vanadium.setMaterialSecondaryARGB(0x7E988F)
 	GTMaterials.Brass.setMaterialSecondaryARGB(0x791905)

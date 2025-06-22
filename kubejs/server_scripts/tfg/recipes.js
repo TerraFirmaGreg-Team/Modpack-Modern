@@ -14,4 +14,7 @@ const registerTFGRecipes = (event) => {
 	registerTFGSupportRecipes(event)
 	registerTFGFishingNetsRecipes(event)
 	registerTFGConvertingRecipes(event)
+	registerTFGFoodRecipes(event)
+	registerTFGSpaceRecipes(event)
+	registerTFGStoneDustRecipes(event)
 }

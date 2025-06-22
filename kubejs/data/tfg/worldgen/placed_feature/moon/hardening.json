@@ -1,0 +1,123 @@
+{
+	"feature": {
+		"type": "minecraft:replace_single_block",
+		"config": {
+			"targets": [
+				{
+					"target": {
+						"predicate_type": "minecraft:block_match",
+						"block": "ad_astra:moon_stone"
+					},
+					"state": {
+						"Name": "tfg:rock/hardened_moon_stone"
+					}
+				},
+				{
+					"target": {
+						"predicate_type": "minecraft:block_match",
+						"block": "ad_astra:moon_deepslate"
+					},
+					"state": {
+						"Name": "tfg:rock/hardened_moon_deepslate"
+					}
+				},
+				{
+					"target": {
+						"predicate_type": "minecraft:block_match",
+						"block": "ad_astra:glacio_stone"
+					},
+					"state": {
+						"Name": "tfg:rock/hardened_glacio_stone"
+					}
+				},
+				{
+					"target": {
+						"predicate_type": "minecraft:block_match",
+						"block": "tfc:rock/raw/dacite"
+					},
+					"state": {
+						"Name": "tfc:rock/hardened/dacite"
+					}
+				},
+				{
+					"target": {
+						"predicate_type": "minecraft:block_match",
+						"block": "tfc:rock/raw/rhyolite"
+					},
+					"state": {
+						"Name": "tfc:rock/hardened/rhyolite"
+					}
+				},
+				{
+					"target": {
+						"predicate_type": "minecraft:block_match",
+						"block": "tfc:rock/raw/diorite"
+					},
+					"state": {
+						"Name": "tfc:rock/hardened/diorite"
+					}
+				},
+				{
+					"target": {
+						"predicate_type": "minecraft:block_match",
+						"block": "tfc:rock/raw/andesite"
+					},
+					"state": {
+						"Name": "tfc:rock/hardened/andesite"
+					}
+				},
+				{
+					"target": {
+						"predicate_type": "minecraft:block_match",
+						"block": "tfc:rock/raw/gabbro"
+					},
+					"state": {
+						"Name": "tfc:rock/hardened/gabbro"
+					}
+				},
+				{
+					"target": {
+						"predicate_type": "minecraft:block_match",
+						"block": "tfc:rock/raw/basalt"
+					},
+					"state": {
+						"Name": "tfc:rock/hardened/basalt"
+					}
+				},
+				{
+					"target": {
+						"predicate_type": "minecraft:tag_match",
+						"tag": "tfc:can_landslide"
+					},
+					"state": {
+						"Name": "tfg:rock/hardened_moon_stone"
+					}
+				}
+			]
+		}
+	},
+	"placement": [
+		{
+			"type": "minecraft:carving_mask",
+			"step": "air"
+		},
+		{
+			"type": "minecraft:environment_scan",
+			"direction_of_search": "up",
+			"max_steps": 1,
+			"target_condition": {
+				"type": "minecraft:any_of",
+				"predicates": [
+					{
+						"type": "minecraft:matching_block_tag",
+						"tag": "ad_astra:moon_stone_replaceables"
+					},
+					{
+						"type": "minecraft:matching_block_tag",
+						"tag": "tfc:can_landslide"
+					}
+				]
+			}
+		}
+	]
+}

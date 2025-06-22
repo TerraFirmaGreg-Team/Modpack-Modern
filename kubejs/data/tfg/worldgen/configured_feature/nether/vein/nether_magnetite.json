@@ -22,7 +22,7 @@
         "with": [
           {
             "block": "gtceu:deepslate_magnetite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:deepslate_vanadium_magnetite_ore",
@@ -34,11 +34,7 @@
           },
           {
             "block": "gtceu:deepslate_chromite_ore",
-            "weight": 60
-          },
-          {
-            "block": "gtceu:raw_chromite_block",
-            "weight": 2
+            "weight": 5
           },
           {
             "block": "gtceu:deepslate_gold_ore",
@@ -62,7 +58,7 @@
         "with": [
           {
             "block": "gtceu:pyroxenite_magnetite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:pyroxenite_vanadium_magnetite_ore",
@@ -74,11 +70,7 @@
           },
           {
             "block": "gtceu:pyroxenite_chromite_ore",
-            "weight": 60
-          },
-          {
-            "block": "gtceu:raw_chromite_block",
-            "weight": 2
+            "weight": 5
           },
           {
             "block": "gtceu:pyroxenite_gold_ore",
@@ -102,7 +94,7 @@
         "with": [
           {
             "block": "gtceu:basalt_magnetite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:basalt_vanadium_magnetite_ore",
@@ -114,11 +106,7 @@
           },
           {
             "block": "gtceu:basalt_chromite_ore",
-            "weight": 60
-          },
-          {
-            "block": "gtceu:raw_chromite_block",
-            "weight": 2
+            "weight": 5
           },
           {
             "block": "gtceu:basalt_gold_ore",
@@ -141,7 +129,7 @@
         "with": [
           {
             "block": "gtceu:dripstone_magnetite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:dripstone_vanadium_magnetite_ore",
@@ -153,11 +141,7 @@
           },
           {
             "block": "gtceu:dripstone_chromite_ore",
-            "weight": 60
-          },
-          {
-            "block": "gtceu:raw_chromite_block",
-            "weight": 2
+            "weight": 5
           },
           {
             "block": "gtceu:dripstone_gold_ore",
@@ -182,7 +166,7 @@
       "blocks": [
         {
           "block": "tfc:ore/small_magnetite",
-          "weight": 5
+          "weight": 10
         },
         {
           "block": "gtceu:vanadium_magnetite_indicator",
@@ -190,7 +174,7 @@
         },
         {
           "block": "firmalife:ore/small_chromite",
-          "weight": 60
+          "weight": 5
         },
         {
           "block": "tfc:ore/small_native_gold",

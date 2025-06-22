@@ -16,7 +16,7 @@
         "with": [
           {
             "block": "gtceu:gabbro_garnierite_ore",
-            "weight": 30
+            "weight": 25
           },
           {
             "block": "gtceu:raw_garnierite_block",
@@ -24,7 +24,7 @@
           },
           {
             "block": "gtceu:gabbro_nickel_ore",
-            "weight": 10
+            "weight": 20
           },
           {
             "block": "gtceu:gabbro_cobaltite_ore",
@@ -55,7 +55,7 @@
         "with": [
           {
             "block": "gtceu:diorite_garnierite_ore",
-            "weight": 30
+            "weight": 25
           },
           {
             "block": "gtceu:raw_garnierite_block",
@@ -63,7 +63,7 @@
           },
           {
             "block": "gtceu:diorite_nickel_ore",
-            "weight": 10
+            "weight": 20
           },
           {
             "block": "gtceu:diorite_cobaltite_ore",
@@ -95,7 +95,7 @@
         "with": [
           {
             "block": "gtceu:pyroxenite_garnierite_ore",
-            "weight": 30
+            "weight": 25
           },
           {
             "block": "gtceu:raw_garnierite_block",
@@ -103,7 +103,7 @@
           },
           {
             "block": "gtceu:pyroxenite_nickel_ore",
-            "weight": 10
+            "weight": 20
           },
           {
             "block": "gtceu:pyroxenite_cobaltite_ore",
@@ -136,11 +136,11 @@
       "blocks": [
         {
           "block": "tfc:ore/small_garnierite",
-          "weight": 30
+          "weight": 25
         },
         {
           "block": "tfc:ore/small_garnierite",
-          "weight": 10
+          "weight": 20
         },
         {
           "block": "gtceu:cobaltite_indicator",

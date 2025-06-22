@@ -1,0 +1,41 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "firmalife:cheddar_wheel"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "firmalife:chevre_wheel"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "firmalife:rajya_metok_wheel"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "firmalife:gouda_wheel"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "firmalife:feta_wheel"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "firmalife:shosha_wheel"
+				}
+			],
+			"rolls": 1.0
+		}
+	],
+	"random_sequence": "ad_astra:blocks/cheese_block"
+}

@@ -1130,8 +1130,13 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["6AA07588374B59AB"]
+			dependencies: [
+				"6AA07588374B59AB"
+				"45449ECE4F8128E7"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.steam_age.trains.desc}"]
+			hide_dependency_lines: false
 			id: "02854A3E8A5D5043"
 			optional: true
 			shape: "heart"

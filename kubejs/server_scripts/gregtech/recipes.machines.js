@@ -744,18 +744,6 @@ function registerGTCEuMachineRecipes(event) {
 
 	// #endregion
 
-	// Контроллер теплицы
-	event.shaped('gtceu:greenhouse', [
-		'ABA',
-		'CDC',
-		'BCB'
-	], {
-		A: '#gtceu:circuits/mv',
-		B: 'gtceu:copper_single_cable',
-		C: 'tfc:compost',
-		D: 'gtceu:solid_machine_casing'
-	}).id('tfg:shaped/greenhouse')
-
 	// Drums
 	const DRUMS_AND_CRATES = [
 		'bismuth_bronze',
@@ -901,6 +889,47 @@ function registerGTCEuMachineRecipes(event) {
 	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_hatch' }, 'gtceu:steel_dust', '6x gtceu:steel_dust')
 	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_hatch' }, 'gtceu:steel_block', '6x gtceu:steel_ingot')
 
-	event.replaceOutput({ id: 'gtceu:macerator/macerate_hv_cutter' }, 'gtceu:red_steel_dust', '4x gtceu:diamond_dust')
-	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_hv_cutter' }, '#forge:ingots/red_steel', '4x gtceu:chipped_diamond_gem')
+	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_hatch'}, 'gtceu:steel_dust', '6x gtceu:steel_dust')
+	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_hatch'}, 'gtceu:steel_block', '6x gtceu:steel_ingot')
+
+	// #region Bedrock Miner
+
+	event.recipes.gtceu.assembler('gtceu:mv_bedrock_miner')
+		.itemInputs('1x gtceu:hv_machine_hull',
+					'4x #forge:frames/steel',
+					'4x #gtceu:circuits/iv',
+					'4x gtceu:hv_electric_motor',
+					'4x gtceu:hv_robot_arm',
+					'4x gtceu:hv_conveyor_module',
+					'4x #forge:gears/blue_steel')
+		.itemOutputs('gtceu:mv_bedrock_ore_miner')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.HV])
+		.circuit(2)
+
+	event.recipes.gtceu.assembler('gtceu:hv_bedrock_miner')
+		.itemInputs('1x gtceu:ev_machine_hull',
+					'4x #forge:frames/titanium',
+					'4x #gtceu:circuits/luv',
+					'4x gtceu:luv_electric_motor',
+					'4x gtceu:luv_robot_arm',
+					'4x gtceu:luv_conveyor_module',
+					'4x #forge:gears/ruridit')
+		.itemOutputs('gtceu:hv_bedrock_ore_miner')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.IV])
+		.circuit(2)
+
+	event.recipes.gtceu.assembler('gtceu:ev_bedrock_miner')
+		.itemInputs('1x gtceu:iv_machine_hull',
+					'4x #forge:frames/tungsten_steel',
+					'4x #gtceu:circuits/zpm',
+					'4x gtceu:zpm_electric_motor',
+					'4x gtceu:zpm_robot_arm',
+					'4x gtceu:zpm_conveyor_module',
+					'4x #forge:gears/osmiridium')
+		.itemOutputs('gtceu:ev_bedrock_ore_miner')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.ZPM])
+		.circuit(2)
 }

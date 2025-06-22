@@ -14,17 +14,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_garnet)Amethyst, Opal, & Garnet$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_anthracite)Anthracite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_apatite)Apatite & Pyrochlore$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_monazite)Bastnasite & Monazite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_bauxite)Bauxite & Ilmenite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_olivine)Bentonite & Olivine$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_cassiterite)Cassiterite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_magnetite)Chromite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sheldonite)Cooperite & Bornite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Copper & Chalcopyrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)Emerald & Beryllium$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet_tin)Garnet & Cassiterite Sands$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnierite)Garnierite & Cobaltite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_goethite)Goethite$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_garnet)Amethyst, Opal, & Garnet$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_anthracite)Anthracite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_apatite)Apatite & Pyrochlore$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_monazite)Bastnasite & Monazite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_olivine)Bentonite & Olivine$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_cassiterite)Cassiterite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_magnetite)Chromite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sheldonite)Cooperite & Bornite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Copper & Chalcopyrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)Emerald & Beryllium$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet_tin)Garnet & Cassiterite Sands$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnierite)Garnierite & Cobaltite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_goethite)Goethite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gold)Gold & Hematite$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_gold)Gold & Hematite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_hematite)Hematite & Limonite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_mica)Kyanite, Mica, & Bauxite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Lapis, Lazurite, & Sodalite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Manganese & Tantalum$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)Mineral Sands$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Naquadah & Plutonium$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Nether Quartz$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Redstone, Cinnabar, & Ruby$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Saltpeter & Electrotine$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Sapphire & Almandine$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_scheelite)Scheelite & Tungstate$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Silver, Galena, & Lead$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_hematite)Hematite & Limonite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_mica)Kyanite, Mica, & Bauxite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Lapis, Lazurite, & Sodalite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Manganese & Tantalum$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)Mineral Sands$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Naquadah & Plutonium$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Nether Quartz$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Redstone, Cinnabar, & Ruby$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Saltpeter & Electrotine$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Sapphire & Almandine$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_scheelite)Scheelite & Tungstate$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Silver, Galena, & Lead$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Soapstone, Talc, & Trona$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Soapstone, Talc, & Trona$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sphalerite)Sphalerite & Pyrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Sulfur & Pyrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sylvite)Sylvite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_tetrahedrite)Tetrahedrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_topaz)Topaz & Chalcocite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_pitchblende)Uraninite & Pitchblende$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_molybdenum)Wulfenite & Molybdenite$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_sphalerite)Sphalerite & Pyrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Sulfur & Pyrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sylvite)Sylvite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_tetrahedrite)Tetrahedrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_topaz)Topaz & Chalcocite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_pitchblende)Uraninite & Pitchblende$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_molybdenum)Wulfenite & Molybdenite$()$()",
       "type": "patchouli:text"
     },
     {
@@ -215,7 +215,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 185$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Size$(): 45$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
+      "text": "$(thing)Rarity$(): 245$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Size$(): 45$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
       "title": "Bastnasite & Monazite",
       "type": "patchouli:text",
       "anchor": "nether_monazite"
@@ -278,73 +278,6 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Percentage$(): 25%$(br)$(thing)Source of$(): Neodymium$(br)$(thing)Formula$(): Nd",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 185$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Size$(): 45$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
-      "title": "Bauxite & Ilmenite",
-      "type": "patchouli:text",
-      "anchor": "nether_bauxite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Bauxite",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/bauxite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 45%$(br)$(thing)Source of$(): Aluminium$(br)$(thing)Formula$(): Al₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Ilmenite",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/ilmenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 30%$(br)$(thing)Source of$(): Iron, Titanium$(br)$(thing)Formula$(): FeTiO₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Aluminium",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/aluminium"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 25%$(br)$(thing)Source of$(): Aluminium$(br)$(thing)Formula$(): Al",
       "type": "patchouli:multiblock"
     },
     {
@@ -500,26 +433,6 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Chromite",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/chromite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 60%$(br)$(thing)Source of$(): Chromium$(br)$(thing)Formula$(): FeCr₂O₄$(br)$(thing)Hazard$(): $(c)$(t:Requires Rubber Gloves)Irritant (Skin Contact)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "Vanadium Magnetite",
       "multiblock": {
         "mapping": {
@@ -535,7 +448,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Source of$(): Iron, Vanadium$(br)$(thing)Formula$(): (Fe₃O₄)V",
+      "text": "$(thing)Percentage$(): 30%$(br)$(thing)Source of$(): Iron, Vanadium$(br)$(thing)Formula$(): (Fe₃O₄)V",
       "type": "patchouli:multiblock"
     },
     {
@@ -555,7 +468,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Melts into$(): Gold$(br)$(thing)Formula$(): Au",
+      "text": "$(thing)Percentage$(): 30%$(br)$(thing)Melts into$(): Gold$(br)$(thing)Formula$(): Au",
       "type": "patchouli:multiblock"
     },
     {
@@ -575,7 +488,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 5%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): Fe₃O₄",
+      "text": "$(thing)Percentage$(): 20%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): Fe₃O₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Chromite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chromite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 10%$(br)$(thing)Source of$(): Chromium$(br)$(thing)Formula$(): FeCr₂O₄$(br)$(thing)Hazard$(): $(c)$(t:Requires Rubber Gloves)Irritant (Skin Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -595,7 +528,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 5%$(br)$(thing)Source of$(): Aluminium$(br)$(thing)Formula$(): Al₂O₃",
+      "text": "$(thing)Percentage$(): 10%$(br)$(thing)Source of$(): Aluminium$(br)$(thing)Formula$(): Al₂O₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -622,12 +555,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 35%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₅FeS₄",
+      "text": "$(thing)Percentage$(): 41%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₅FeS₄",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Sheldonite",
+      "name": "Cooperite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/cooperite"
@@ -642,7 +575,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 25%$(br)$(thing)Source of$(): Platinum, Nickel, Palladium$(br)$(thing)Formula$(): Pt₃NiSPd",
+      "text": "$(thing)Percentage$(): 29%$(br)$(thing)Source of$(): Platinum, Nickel, Palladium$(br)$(thing)Formula$(): Pt₃NiSPd",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Nickel",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nickel"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 23%$(br)$(thing)Melts into$(): Nickel$(br)$(thing)Formula$(): Ni",
       "type": "patchouli:multiblock"
     },
     {
@@ -662,27 +615,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 25%$(br)$(thing)Smelts into$(): Platinum$(br)$(thing)Formula$(): Pt",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Palladium",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/palladium"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Source of$(): Palladium$(br)$(thing)Formula$(): Pd",
+      "text": "$(thing)Percentage$(): 5%$(br)$(thing)Smelts into$(): Platinum$(br)$(thing)Formula$(): Pt",
       "type": "patchouli:multiblock"
     },
     {
@@ -806,7 +739,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 50%$(br)$(thing)Used for$(): MV components, Item tag filters$(br)$(thing)Formula$(): Be₃Al₂Si₆O₁₈",
+      "text": "$(thing)Percentage$(): 47%$(br)$(thing)Used for$(): MV components, Item tag filters$(br)$(thing)Formula$(): Be₃Al₂Si₆O₁₈",
       "type": "patchouli:multiblock"
     },
     {
@@ -826,7 +759,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 35%$(br)$(thing)Source of$(): Beryllium$(br)$(thing)Formula$(): Be$(br)$(thing)Hazard$(): $(c)$(t:Requires Rubber Gloves)Berylliosis (Skin Contact)$(/t)$()",
+      "text": "$(thing)Percentage$(): 33%$(br)$(thing)Source of$(): Beryllium$(br)$(thing)Formula$(): Be$(br)$(thing)Hazard$(): $(c)$(t:Requires Rubber Gloves)Berylliosis (Skin Contact)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Rock Salt",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/rock_salt"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 18%$(br)$(thing)Source of$(): Potassium, Chlorine$(br)$(thing)Formula$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -846,8 +799,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Source of$(): Thorium$(br)$(thing)Formula$(): Th",
+      "text": "$(thing)Percentage$(): 0%$(br)$(thing)Source of$(): Thorium$(br)$(thing)Formula$(): Th",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -965,7 +923,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 30%$(br)$(thing)Melts into$(): Nickel$(br)$(thing)Formula$(): NiO",
+      "text": "$(thing)Percentage$(): 23%$(br)$(thing)Melts into$(): Nickel$(br)$(thing)Formula$(): NiO",
       "type": "patchouli:multiblock"
     },
     {
@@ -985,47 +943,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 25%$(br)$(thing)Melts into$(): Nickel$(br)$(thing)Formula$(): Ni₉S₈",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Cobaltite",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/cobaltite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 20%$(br)$(thing)Source of$(): Cobalt, Arsenic$(br)$(thing)Formula$(): CoAsS$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Arsenicosis (Inhalation)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Cobalt",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/cobalt"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Smelts into$(): Cobalt$(br)$(thing)Formula$(): Co",
+      "text": "$(thing)Percentage$(): 23%$(br)$(thing)Melts into$(): Nickel$(br)$(thing)Formula$(): Ni₉S₈",
       "type": "patchouli:multiblock"
     },
     {
@@ -1045,7 +963,47 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 10%$(br)$(thing)Melts into$(): Nickel$(br)$(thing)Formula$(): Ni",
+      "text": "$(thing)Percentage$(): 19%$(br)$(thing)Melts into$(): Nickel$(br)$(thing)Formula$(): Ni",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Cobaltite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cobaltite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 19%$(br)$(thing)Source of$(): Cobalt, Arsenic$(br)$(thing)Formula$(): CoAsS$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Arsenicosis (Inhalation)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Cobalt",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cobalt"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 14%$(br)$(thing)Smelts into$(): Cobalt$(br)$(thing)Formula$(): Co",
       "type": "patchouli:multiblock"
     },
     {
@@ -1430,7 +1388,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 35%$(br)$(thing)Source of$(): Aluminium$(br)$(thing)Formula$(): Al₂SiO₅",
+      "text": "$(thing)Percentage$(): 46%$(br)$(thing)Source of$(): Aluminium$(br)$(thing)Formula$(): Al₂SiO₅",
       "type": "patchouli:multiblock"
     },
     {
@@ -1450,27 +1408,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 25%$(br)$(thing)Source of$(): Potassium, Aluminium, Fluorine$(br)$(thing)Formula$(): KAl₃Si₃F₂O₁₀",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Bauxite",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/bauxite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 25%$(br)$(thing)Source of$(): Aluminium$(br)$(thing)Formula$(): Al₂O₃",
+      "text": "$(thing)Percentage$(): 33%$(br)$(thing)Source of$(): Potassium, Aluminium, Fluorine$(br)$(thing)Formula$(): KAl₃Si₃F₂O₁₀",
       "type": "patchouli:multiblock"
     },
     {
@@ -1490,13 +1428,8 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Source of$(): Caesium, Aluminium$(br)$(thing)Formula$(): Cs₂Al₂Si₄(H₂O)₂O₁₂",
+      "text": "$(thing)Percentage$(): 20%$(br)$(thing)Source of$(): Caesium, Aluminium$(br)$(thing)Formula$(): Cs₂Al₂Si₄(H₂O)₂O₁₂",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -1592,7 +1525,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 195$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Size$(): 45$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
+      "text": "$(thing)Rarity$(): 225$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Size$(): 45$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
       "title": "Manganese & Tantalum",
       "type": "patchouli:text",
       "anchor": "nether_manganese"
@@ -2781,7 +2714,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 40%$(br)$(thing)Source of$(): Lead, Molybdenum$(br)$(thing)Formula$(): PbMoO₄",
+      "text": "$(thing)Percentage$(): 42%$(br)$(thing)Source of$(): Lead, Molybdenum$(br)$(thing)Formula$(): PbMoO₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -2801,15 +2734,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 30%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): MoS₂",
+      "text": "$(thing)Percentage$(): 31%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): MoS₂",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Molybdenum",
+      "name": "Nickel",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/molybdenum"
+          "0": "#forge:ores/nickel"
         },
         "pattern": [
           [
@@ -2821,7 +2754,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): Mo",
+      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Melts into$(): Nickel$(br)$(thing)Formula$(): Ni",
       "type": "patchouli:multiblock"
     },
     {
@@ -2841,7 +2774,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): CaMoO₄",
+      "text": "$(thing)Percentage$(): 10%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): CaMoO₄",
       "type": "patchouli:multiblock"
     },
     {

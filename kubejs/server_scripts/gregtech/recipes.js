@@ -166,24 +166,28 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_seeds')
 		.itemInputs('8x #tfc:seeds')
 		.itemOutputs('gtceu:plant_ball')
+		.circuit(1)
 		.duration(300)
 		.EUt(2)
 
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_food')
 		.itemInputs('8x #tfc:foods')
 		.itemOutputs('gtceu:plant_ball')
+		.circuit(1)
 		.duration(300)
 		.EUt(2)
 
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_plants')
 		.itemInputs('8x #tfc:plants')
 		.itemOutputs('gtceu:plant_ball')
+		.circuit(1)
 		.duration(300)
 		.EUt(2)
 
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_corals')
 		.itemInputs('8x #tfc:corals')
 		.itemOutputs('gtceu:plant_ball')
+		.circuit(1)
 		.duration(300)
 		.EUt(2)
 

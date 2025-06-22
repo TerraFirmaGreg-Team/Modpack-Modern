@@ -19,7 +19,7 @@ StartupEvents.registry('block', event => {
  * Событие изменения блоков.
  */
 BlockEvents.modification(event => {
-    // modifyFirmaCivBlocks(event)
+    registerAdAstraBlockModifications(event)
 })
 
 /**
@@ -63,7 +63,9 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
+    registerAdAstraMaterials(event)
     registerAE2Materials(event)
+    registerCreateMaterials(event)
     registerTFCMaterials(event)
     registerGTCEuMaterials(event)
     registerTFGMaterials(event)
@@ -81,13 +83,13 @@ GTCEuStartupEvents.materialModification(event => {
 })
 
 
-//GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
-//    event.create('ad_astra:earth_orbit')
-//        .iconSupplier(() => Item.of('ad_astra:earth_globe').getItem())
-//        .tier(0)
-//        .overrideName('Earth Orbit')
-//})
+GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
+    registerTFGDimensionMarkers(event)
+})
 
+TFCEvents.registerFoodTrait(event => {
+    registerTFGFoodTraits(event)
+})
 
 Platform.mods.kaolinclayze.name = "Primitive Creatures";
 Platform.mods.tfg.name = "TerraFirmaGreg";

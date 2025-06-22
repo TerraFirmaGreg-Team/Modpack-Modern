@@ -1,4 +1,4 @@
-﻿// priority: 0
+// priority: 0
 
 const registerGTCEuTagPrefixes = (event) => {
 
@@ -97,4 +97,6 @@ const registerGTCEuTagPrefixes = (event) => {
 
 	TagPrefix.rawOreBlock.defaultTagPath("raw_ore_blocks/%s")
 	TagPrefix.rawOreBlock.unformattedTagPath("raw_ore_blocks")
+
+	TagPrefix.rawOre.setIgnored(GTMaterials.Iron);
 }

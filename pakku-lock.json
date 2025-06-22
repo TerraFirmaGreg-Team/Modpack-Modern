@@ -175,6 +175,91 @@
             ]
         },
         {
+            "pakku_id": "rjOX4EXWlGvG84kO",
+            "pakku_links": [
+                "R14GIz0WdkeNLuXD",
+                "18IuoLEIRdaY1Jqy",
+                "QXBpbwRXpmbaHixl"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "ad-astra",
+                "modrinth": "ad-astra"
+            },
+            "name": {
+                "curseforge": "Ad Astra",
+                "modrinth": "Ad Astra"
+            },
+            "id": {
+                "curseforge": "635042",
+                "modrinth": "3ufwT9JF"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ad_astra-forge-1.20.1-1.15.19.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5914/893/ad_astra-forge-1.20.1-1.15.19.jar",
+                    "id": "5914893",
+                    "parent_id": "635042",
+                    "hashes": {
+                        "sha1": "ff0103224186be21463a784767459554debc1f33",
+                        "md5": "f98218cc0062408314152ba4403756cd"
+                    },
+                    "required_dependencies": [
+                        "704113",
+                        "570073",
+                        "714059"
+                    ],
+                    "size": 7508247,
+                    "date_published": "2024-11-17T19:31:18.513Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "zpZC9ZXFxQQlQXOb",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ad-astra-auto-lander"
+            },
+            "name": {
+                "curseforge": "Ad Astra: Auto Lander"
+            },
+            "id": {
+                "curseforge": "1183249"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "adastra_autolanding-0.2-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6108/119/adastra_autolanding-0.2-1.20.1.jar",
+                    "id": "6108119",
+                    "parent_id": "1183249",
+                    "hashes": {
+                        "sha1": "3338914bcedd51b02b0137fb4f9394d55550657b",
+                        "md5": "d6713f2d3931dca528ee8aed0eff3c78"
+                    },
+                    "required_dependencies": [],
+                    "size": 6759,
+                    "date_published": "2025-01-20T22:07:39.787Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "txamn8WWF6EJ8Jcg",
             "type": "MOD",
             "slug": {
@@ -1072,6 +1157,43 @@
                     "required_dependencies": [],
                     "size": 343962,
                     "date_published": "2024-06-13T15:17:32.300Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "R14GIz0WdkeNLuXD",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "botarium"
+            },
+            "name": {
+                "curseforge": "Botarium"
+            },
+            "id": {
+                "curseforge": "704113"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "botarium-forge-1.20.1-2.3.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5486/70/botarium-forge-1.20.1-2.3.4.jar",
+                    "id": "5486070",
+                    "parent_id": "704113",
+                    "hashes": {
+                        "sha1": "a6928cb03b7c5f81900d3d3c8e8c8f6a89a51a5b",
+                        "md5": "c204f9d834da78a3972fc98da96730aa"
+                    },
+                    "required_dependencies": [],
+                    "size": 157633,
+                    "date_published": "2024-06-29T17:38:58.730Z"
                 }
             ]
         },
@@ -7433,6 +7555,43 @@
             ]
         },
         {
+            "pakku_id": "wVeYwIK7TxS0lDa0",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "species"
+            },
+            "name": {
+                "curseforge": "Species"
+            },
+            "id": {
+                "curseforge": "857737"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Species-1.20.1-2.3-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6131/829/Species-1.20.1-2.3-forge.jar",
+                    "id": "6131829",
+                    "parent_id": "857737",
+                    "hashes": {
+                        "sha1": "1bc4305fb83b28015461d63452a4a01cf5337dc3",
+                        "md5": "a3aef474219746f567b71fd4af0a74dd"
+                    },
+                    "required_dependencies": [],
+                    "size": 19593288,
+                    "date_published": "2025-01-27T22:01:14.603Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "1MkKLXF1oSSK23jo",
             "type": "MOD",
             "slug": {
@@ -7736,42 +7895,6 @@
                     ],
                     "size": 201539,
                     "date_published": "2024-01-20T04:50:44.980Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "wwI6IXC4zcB3Dra6",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "tfc-electrical-appliances"
-            },
-            "name": {
-                "curseforge": "TFC Electrical Appliances"
-            },
-            "id": {
-                "curseforge": "1017637"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "tfcea-0.0.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/5338/560/tfcea-0.0.2.jar",
-                    "id": "5338560",
-                    "parent_id": "1017637",
-                    "hashes": {
-                        "sha1": "13638888685ddf65e138bdeb6e4c684b0a956cbb",
-                        "md5": "62644682b902533ee9b54dac7e7e2ca9"
-                    },
-                    "required_dependencies": [],
-                    "size": 60960,
-                    "date_published": "2024-05-12T17:09:43.310Z"
                 }
             ]
         },

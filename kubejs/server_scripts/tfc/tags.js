@@ -82,6 +82,10 @@ const registerTFCItemTags = (event) => {
 	// Make eggs not useless
 	event.add('tfc:foods/usable_in_salad', 'tfc:food/cooked_egg')
 	event.add('tfc:foods/usable_in_salad', 'tfc:food/boiled_egg')
+	event.add('tfc:foods/usable_in_jam_sandwich', 'tfc:food/cooked_egg')
+	event.add('tfc:foods/usable_in_jam_sandwich', 'tfc:food/boiled_egg')
+	event.add('tfc:foods/usable_in_sandwich', 'tfc:food/cooked_egg')
+	event.add('tfc:foods/usable_in_sandwich', 'tfc:food/boiled_egg')
 
 	// Чтобы жарились бревна из TFC в пиролиз. печке
 	// Почему нельзя просто добавить тег в тег? (допустим minecraft:logs), потому что из-за этого ломаются все рецепты minecraft:logs, магия...

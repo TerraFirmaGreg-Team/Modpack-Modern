@@ -604,6 +604,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/pickaxe_iron' })
 	event.remove({ id: 'gtceu:shaped/gear_diamond' })
 	event.remove({ id: 'gtceu:shaped/buzzsaw_blade_diamond' })
+	event.remove({ id: 'gtceu:shaped/purpur_stair_saw' })
 
 	event.remove({ id: 'gtceu:shapeless/glass_full_dust_flint' })
 
@@ -626,6 +627,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:assembler/spyglass' })
 	event.remove({ id: 'gtceu:assembler/map' })
 	event.remove({ id: 'gtceu:assembler/spyglass' })
+	event.remove({ id: 'gtceu:assembler/assemble_purpur_into_stair' })
 
 	event.remove({ id: 'gtceu:chemical_reactor/ghast_tear_separation' })
 	
@@ -651,4 +653,13 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:chemical_bath/red_steel_cool_down_distilled_water' })
 	event.remove({ id: 'gtceu:chemical_bath/blue_steel_cool_down' })
 	event.remove({ id: 'gtceu:chemical_bath/blue_steel_cool_down_distilled_water' })
+
+	event.remove({ id: 'gtceu:compressor/compress_certus_quartz_to_raw_ore_block' })
+	event.remove({ id: 'gtceu:compressor/glowstone' })
+
+	event.remove({ id: 'gtceu:forming_press/form_purpur_slab_into_pillar' })
+
+	// Remove vanilla Eye of Ender
+
+	event.remove({ id: 'minecraft:ender_eye' })
 }

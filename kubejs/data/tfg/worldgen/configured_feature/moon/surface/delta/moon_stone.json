@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:delta_feature",
+	"config": {
+		"contents": {
+			"Name": "ad_astra:moon_cobblestone_slab"
+		},
+		"rim": {
+			"Name": "tfg:rock/hardened_moon_stone"
+		},
+		"rim_size": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 3,
+				"min_inclusive": 1
+			}
+		},
+		"size": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 7,
+				"min_inclusive": 3
+			}
+		}
+	}
+}

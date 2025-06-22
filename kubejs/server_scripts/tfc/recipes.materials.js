@@ -1114,15 +1114,6 @@ function registerTFCMaterialsRecipes(event) {
 		let tongPartStack = Item.of(`tfchotornot:tong_part/${material.getName()}`)
 
 		if (!tongsStack.isEmpty() && !tongPartStack.isEmpty()) {
-			event.shaped(tongsStack, [
-				'AA',
-				'BC'
-			], {
-				A: tongPartStack,
-				B: '#forge:bolts',
-				C: '#forge:tools/hammers'
-			}).id(`tfchotornot:crafting/tongs/${material.getName()}`)
-
 			// Ручка щипцов
 			event.recipes.tfc.heating(tongPartStack, tfcProperty.getMeltTemp())
 				.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
