@@ -41,6 +41,7 @@
 - Removed gems tag from flint @Pyritie
 - Updated texture for aqueous accumulator (#1168) @Redeix
 - Kaolin Klayzes now also drop blood lilies @Pyritie
+- You can put liquid glue in wooden barrels and buckets now @Pyritie
 
 ## [0.9.11] - 13.06.2025
 ### New features
