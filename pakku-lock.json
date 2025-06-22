@@ -963,6 +963,45 @@
             ]
         },
         {
+            "pakku_id": "LVF7UEBiNQpjRDSW",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "better-foliage-renewed"
+            },
+            "name": {
+                "curseforge": "Better Foliage Renewed"
+            },
+            "id": {
+                "curseforge": "470013"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "betterfoliage-5.0.2.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4923/669/betterfoliage-5.0.2.jar",
+                    "id": "4923669",
+                    "parent_id": "470013",
+                    "hashes": {
+                        "sha1": "4163772d08837daf22034e5333ddefc8532cdb69",
+                        "md5": "22f5753234b465c44688f9555acb4713"
+                    },
+                    "required_dependencies": [],
+                    "size": 396130,
+                    "date_published": "2023-12-03T18:03:18.697Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "hn4E1S13hPaLVPSH",
             "type": "MOD",
             "slug": {
@@ -4642,7 +4681,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "guideme-20.1.9.jar",
+                    "file_name": "guideme-20.1.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4650,16 +4689,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6654/696/guideme-20.1.9.jar",
-                    "id": "6654696",
+                    "url": "https://edge.forgecdn.net/files/6634/593/guideme-20.1.8.jar",
+                    "id": "6634593",
                     "parent_id": "1173950",
                     "hashes": {
-                        "sha1": "5619e9e6c4e2f14c3e7f093698e2103c75f4dcf2",
-                        "md5": "e3692a66b10b1df1b3d40cdc99773a6e"
+                        "sha1": "cc5e96b09949c5f1ad5d6aa5c45695f760715e95",
+                        "md5": "38d8791dc9114d9cf6bcd5f2af1402e7"
                     },
                     "required_dependencies": [],
-                    "size": 9403366,
-                    "date_published": "2025-06-15T15:50:42.330Z"
+                    "size": 9401167,
+                    "date_published": "2025-06-09T21:54:55.087Z"
                 }
             ]
         },
@@ -6797,6 +6836,7 @@
             "id": {
                 "curseforge": "585406"
             },
+            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -8037,7 +8077,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "tfclunchbox-1.20.1-1.0.0.20.jar",
+                    "file_name": "tfclunchbox-1.20.1-1.0.0.14.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8046,16 +8086,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6675/072/tfclunchbox-1.20.1-1.0.0.20.jar",
-                    "id": "6675072",
+                    "url": "https://edge.forgecdn.net/files/6646/846/tfclunchbox-1.20.1-1.0.0.14.jar",
+                    "id": "6646846",
                     "parent_id": "1283445",
                     "hashes": {
-                        "sha1": "334167b4cc5ec81a917d168b6ec8a876f315298e",
-                        "md5": "3dc59cd3d685fe4f5d097ca4e66746f4"
+                        "sha1": "de4051c4345290b9d99f2d26090ad466f112b3ec",
+                        "md5": "ada6f65d0fc9785a34b9deb76c53e882"
                     },
                     "required_dependencies": [],
-                    "size": 111379,
-                    "date_published": "2025-06-20T14:40:33.51Z"
+                    "size": 95828,
+                    "date_published": "2025-06-13T12:54:20.803Z"
                 }
             ]
         },
@@ -8708,6 +8748,44 @@
                     "required_dependencies": [],
                     "size": 1630001,
                     "date_published": "2025-05-08T17:38:34.730Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "mxWVAqlbiiejXL6S",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "visual-workbench"
+            },
+            "name": {
+                "curseforge": "Visual Workbench"
+            },
+            "id": {
+                "curseforge": "500273"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "VisualWorkbench-v8.0.0-1.20.1-Forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4612/695/VisualWorkbench-v8.0.0-1.20.1-Forge.jar",
+                    "id": "4612695",
+                    "parent_id": "500273",
+                    "hashes": {
+                        "sha1": "7ebf579edcf2440eadf1ed6c8c895e1bc2d77bf1",
+                        "md5": "d741bc2d4d3a385116d094b874474a6b"
+                    },
+                    "required_dependencies": [
+                        "495476"
+                    ],
+                    "size": 82055,
+                    "date_published": "2023-06-27T21:00:10.803Z"
                 }
             ]
         },
