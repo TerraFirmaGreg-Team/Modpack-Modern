@@ -4,7 +4,6 @@
  * Событие регистрации предмет-тэгов.
  */
 ServerEvents.tags('item', event => {
-  
 	registerAdAstraItemTags(event)
 	registerAdvancedPeripheralsItemTags(event)
 	registerAE2ItemTags(event)
@@ -45,7 +44,6 @@ ServerEvents.tags('item', event => {
 	registerTFCItemTags(event)
 	registerTFCTextileItemTags(event)
 	registerTFGItemTags(event)
-  registerTFCLunchboxItemTags(event)
 	registerVintageImprovementsItemTags(event)
 })
 
