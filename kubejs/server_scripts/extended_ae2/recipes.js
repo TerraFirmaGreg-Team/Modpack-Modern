@@ -10,190 +10,274 @@ const registerExtendedAE2Recipes = (event) => {
     ], mod: 'expatternprovider' });
     
 
-    //#region Ext interface
+    //#region Ext Interface
 
     // IV
-    event.recipes.gtceu.assembly_line('expatternprovider:ex_interface_iv')
+    
+    event.recipes.gtceu.assembler('expatternprovider:ex_interface_iv')
         .itemInputs(
-            '2x #megacells:mega_interface',
-            '4x megacells:accumulation_processor',
-            '4x gtceu:iv_conveyor_module',
-            'gtceu:fusion_glass',
-            '2x #forge:dense_plates/tungsten_steel',
-            '#gtceu:circuits/iv',
-            '2x #gtceu:circuits/ev',)
-        .inputFluids(Fluid.of('gtceu:polybenzimidazole', 1152))
+            'gtceu:iv_conveyor_module',
+            '8x gtceu:laminated_glass',
+            '4x gtceu:tungsten_steel_plate',
+            '4x ae2:annihilation_core',
+            '4x ae2:formation_core',
+            'megacells:accumulation_processor',
+            '2x #ae2:interface')
+        .inputFluids(Fluid.of('tfg:fluix', 144*8))
         .itemOutputs('expatternprovider:ex_interface')
         .duration(300)
-        .EUt(7680)
+        .EUt(GTValues.VA[GTValues.IV])
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // LuV
-    event.recipes.gtceu.assembly_line('expatternprovider:ex_interface_luv')
+    // LuV Moon Only
+        
+    event.recipes.gtceu.assembler('expatternprovider:ex_interface_luv_moon')
         .itemInputs(
-            '4x #megacells:mega_interface',
-            '4x megacells:accumulation_processor',
-            '4x gtceu:luv_conveyor_module',
-            '2x gtceu:fusion_glass',
-            '2x #forge:dense_plates/rhodium_plated_palladium',
-            '#gtceu:circuits/luv',
-            '2x #gtceu:circuits/iv',)
-        .inputFluids(Fluid.of('gtceu:polybenzimidazole', 1152))
+            'gtceu:luv_conveyor_module',
+            '8x gtceu:laminated_glass',
+            '4x #forge:plates/rhodium_plated_palladium',
+            '4x ae2:annihilation_core',
+            '4x ae2:formation_core',
+            'megacells:accumulation_processor',
+            '2x #ae2:interface')
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*8))
         .itemOutputs('2x expatternprovider:ex_interface')
         .duration(300)
-        .EUt(30720)
-        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .dimension('ad_astra:moon')
 
     // ZPM
-    event.recipes.gtceu.assembly_line('expatternprovider:ex_interface_zpm')
-        .itemInputs(
-            '8x #megacells:mega_interface',
-            '4x megacells:accumulation_processor',
-            '4x gtceu:zpm_conveyor_module',
-            '4x gtceu:fusion_glass',
-            '2x #forge:dense_plates/naquadah_alloy',
-            '#gtceu:circuits/zpm',
-            '2x #gtceu:circuits/luv',)
-        .inputFluids(Fluid.of('gtceu:polybenzimidazole', 1152))
-        .itemOutputs('4x expatternprovider:ex_interface')
-        .duration(300)
-        .EUt(119680)
-        .cleanroom(CleanroomType.CLEANROOM)
 
-    // UV
-    event.recipes.gtceu.assembly_line('expatternprovider:ex_interface_ev')
+    event.recipes.gtceu.assembler('expatternprovider:ex_interface_zpm')
         .itemInputs(
-            '16x #megacells:mega_interface',
-            '4x megacells:accumulation_processor',
-            '4x gtceu:uv_conveyor_module',
-            '8x gtceu:fusion_glass',
-            '4x #forge:dense_plates/darmstadtium',
-            '#gtceu:circuits/uv',
-            '2x #gtceu:circuits/zpm',)
-        .inputFluids(Fluid.of('gtceu:polybenzimidazole', 1152))
+            'gtceu:zpm_conveyor_module',
+            '8x gtceu:laminated_glass',
+            '4x #forge:plates/naquadah_alloy',
+            '32x ae2:annihilation_core',
+            '32x ae2:formation_core',
+            'megacells:accumulation_processor',
+            '16x #ae2:interface')
+        .inputFluids(Fluid.of('tfg:fluix', 144*16))
         .itemOutputs('8x expatternprovider:ex_interface')
         .duration(300)
-        .EUt(491520)
+        .EUt(GTValues.VA[GTValues.ZPM])
         .cleanroom(CleanroomType.CLEANROOM)
+
+    // Extended Interface Upgrade
+
+    // IV
+    
+    event.recipes.gtceu.assembler('expatternprovider:interface_upgrade_iv')
+        .itemInputs(
+            'gtceu:iv_conveyor_module',
+            '8x gtceu:laminated_glass',
+            '4x gtceu:tungsten_steel_plate',
+            '4x ae2:annihilation_core',
+            '4x ae2:formation_core',
+            'megacells:accumulation_processor',
+            '#ae2:interface')
+        .inputFluids(Fluid.of('tfg:fluix', 144*8))
+        .itemOutputs('expatternprovider:interface_upgrade')
+        .duration(300)
+        .circuit(4)
+        .EUt(GTValues.VA[GTValues.IV])
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    // LuV Moon Only
+        
+    event.recipes.gtceu.assembler('expatternprovider:interface_upgrade_luv_moon')
+        .itemInputs(
+            'gtceu:luv_conveyor_module',
+            '8x gtceu:laminated_glass',
+            '4x #forge:plates/rhodium_plated_palladium',
+            '4x ae2:annihilation_core',
+            '4x ae2:formation_core',
+            'megacells:accumulation_processor')
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*8))
+        .itemOutputs('2x expatternprovider:interface_upgrade')
+        .duration(300)
+        .circuit(4)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .dimension('ad_astra:moon')
+
+    // ZPM
+
+    event.recipes.gtceu.assembler('expatternprovider:interface_upgrade_zpm')
+        .itemInputs(
+            'gtceu:zpm_conveyor_module',
+            '8x gtceu:laminated_glass',
+            '4x #forge:plates/naquadah_alloy',
+            '32x ae2:annihilation_core',
+            '32x ae2:formation_core',
+            'megacells:accumulation_processor',
+            '8x #ae2:interface')
+        .inputFluids(Fluid.of('tfg:fluix', 144*16))
+        .itemOutputs('8x expatternprovider:interface_upgrade')
+        .duration(300)
+        .circuit(4)
+        .EUt(GTValues.VA[GTValues.ZPM])
+        .cleanroom(CleanroomType.CLEANROOM)
+
     //#endregion
 
     //#region Oversized Interface
 
-    //Luv
+    // IV
 
     event.recipes.gtceu.assembly_line('expatternprovider:oversize_interface_luv')
     .itemInputs(
-        '2x #expatternprovider:extended_interface',
-        '8x megacells:accumulation_processor',
-        '4x gtceu:luv_robot_arm',
-        '8x gtceu:fusion_glass',
-        '4x #forge:dense_plates/rhodium_plated_palladium',
-        '#gtceu:circuits/luv',
-        '2x #gtceu:circuits/iv',)
-    .inputFluids(Fluid.of('gtceu:polybenzimidazole', 1152))
+        '4x #expatternprovider:extended_interface',
+        '4x megacells:accumulation_processor',
+        'gtceu:iv_robot_arm',
+        'gtceu:iv_fluid_regulator',
+        '4x #forge:dense_plates/tungsten_steel',
+        '#gtceu:circuits/iv',)
+    .inputFluids(Fluid.of('tfg:fluix', 144*9))
     .itemOutputs("expatternprovider:oversize_interface")
     .duration(300)
-    .EUt(GTValues.VA[GTValues.LuV])
-    .stationResearch(b => b.researchStack(Item.of("expatternprovider:ex_interface")).EUt(GTValues.VA[GTValues.LuV]).CWUt(8))
+    .EUt(GTValues.VA[GTValues.IV])
     .cleanroom(CleanroomType.CLEANROOM)
 
-    //ZPM
+    // LuV
 
     event.recipes.gtceu.assembly_line('expatternprovider:oversize_interface_zpm')
     .itemInputs(
-        '8x #expatternprovider:extended_interface',
-        '8x megacells:accumulation_processor',
-        '4x gtceu:zpm_robot_arm',
-        '8x gtceu:fusion_glass',
-        '4x #forge:dense_plates/naquadah_alloy',
-        '#gtceu:circuits/zpm',
-        '2x #gtceu:circuits/luv',)
-    .inputFluids(Fluid.of('gtceu:polybenzimidazole', 1152))
+        '4x #expatternprovider:extended_interface',
+        '4x megacells:accumulation_processor',
+        'gtceu:luv_robot_arm',
+        'gtceu:luv_fluid_regulator',
+        '4x #forge:dense_plates/rhodium_plated_palladium',
+        '#gtceu:circuits/luv')
+    .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*4))
     .itemOutputs("4x expatternprovider:oversize_interface")
     .duration(300)
-    .EUt(GTValues.VA[GTValues.ZPM])
-    .stationResearch(b => b.researchStack(Item.of("expatternprovider:ex_interface")).EUt(GTValues.VA[GTValues.LuV]).CWUt(8))
-    .cleanroom(CleanroomType.CLEANROOM)
+    .EUt(GTValues.VA[GTValues.LuV])
+    .dimension('ad_astra:moon')
 
-    //UV
+    // ZPM
 
     event.recipes.gtceu.assembly_line('expatternprovider:oversize_interface_uv')
     .itemInputs(
-        '16x #expatternprovider:extended_interface',
-        '8x megacells:accumulation_processor',
-        '4x gtceu:uv_robot_arm',
-        '8x gtceu:fusion_glass',
-        '4x #forge:dense_plates/darmstadtium',
-        '#gtceu:circuits/uv',
-        '2x #gtceu:circuits/zpm',)
-    .inputFluids(Fluid.of('gtceu:polybenzimidazole', 1152))
+        '8x #expatternprovider:extended_interface',
+        '4x megacells:accumulation_processor',
+        'gtceu:zpm_robot_arm',
+        'gtceu:zpm_fluid_regulator',
+        '4x #forge:dense_plates/naquadah_alloy',
+        '#gtceu:circuits/zpm')
+    .inputFluids(Fluid.of('tfg:fluix', 144*18))
     .itemOutputs("8x expatternprovider:oversize_interface")
     .duration(300)
-    .EUt(GTValues.VA[GTValues.UV])
-    .stationResearch(b => b.researchStack(Item.of("expatternprovider:ex_interface")).EUt(GTValues.VA[GTValues.LuV]).CWUt(8))
+    .EUt(GTValues.VA[GTValues.ZPM])
     .cleanroom(CleanroomType.CLEANROOM)
 
     //#endregion
 
-    //#region ex pattern provider 
+    //#region Ext Pattern Provider
+
     // IV
-    event.recipes.gtceu.assembly_line('expatternprovider:ex_pattern_provider_iv')
+    
+    event.recipes.gtceu.assembler('expatternprovider:ex_pattern_provider_iv')
         .itemInputs(
-            '2x #megacells:mega_pattern_provider',
-            '4x megacells:accumulation_processor',
-            '4x gtceu:iv_conveyor_module',
-            '2x #forge:dense_plates/tungsten_steel',
-            '#gtceu:circuits/iv',
-            '2x #gtceu:circuits/ev',)
-        .inputFluids(Fluid.of('gtceu:polybenzimidazole', 1152))
+            'gtceu:iv_robot_arm',
+            '8x gtceu:laminated_glass',
+            '4x gtceu:tungsten_steel_plate',
+            '4x ae2:annihilation_core',
+            '4x ae2:formation_core',
+            'megacells:accumulation_processor',
+            '2x #ae2:pattern_provider')
+        .inputFluids(Fluid.of('tfg:fluix', 144*8))
         .itemOutputs('expatternprovider:ex_pattern_provider')
         .duration(300)
-        .EUt(7680)
+        .EUt(GTValues.VA[GTValues.IV])
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // LuV
-    event.recipes.gtceu.assembly_line('expatternprovider:ex_pattern_provider_luv')
+    // LuV Moon Only
+        
+    event.recipes.gtceu.assembler('expatternprovider:ex_pattern_provider_moon')
         .itemInputs(
-            '4x #megacells:mega_pattern_provider',
-            '4x megacells:accumulation_processor',
-            '4x gtceu:luv_conveyor_module',
-            '2x #forge:dense_plates/rhodium_plated_palladium',
-            '#gtceu:circuits/luv',
-            '2x #gtceu:circuits/iv',)
-        .inputFluids(Fluid.of('gtceu:polybenzimidazole', 1152))
+            'gtceu:luv_robot_arm',
+            '8x gtceu:laminated_glass',
+            '4x #forge:plates/rhodium_plated_palladium',
+            '4x ae2:annihilation_core',
+            '4x ae2:formation_core',
+            'megacells:accumulation_processor',
+            '2x #ae2:pattern_provider')
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*8))
         .itemOutputs('2x expatternprovider:ex_pattern_provider')
         .duration(300)
-        .EUt(30720)
-        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .dimension('ad_astra:moon')
 
     // ZPM
-    event.recipes.gtceu.assembly_line('expatternprovider:ex_pattern_provider_zpm')
+
+    event.recipes.gtceu.assembler('expatternprovider:ex_pattern_provider_zpm')
         .itemInputs(
-        '8x #megacells:mega_pattern_provider',
-        '4x megacells:accumulation_processor',
-        '4x gtceu:zpm_conveyor_module',
-        '2x #forge:dense_plates/naquadah_alloy',
-        '#gtceu:circuits/zpm',
-        '2x #gtceu:circuits/luv',)
-        .inputFluids(Fluid.of('gtceu:polybenzimidazole', 1152))
-        .itemOutputs('4x expatternprovider:ex_pattern_provider')
-        .duration(300)
-        .EUt(119680)
-        .cleanroom(CleanroomType.CLEANROOM)
-        
-    //UV
-    event.recipes.gtceu.assembly_line('expatternprovider:ex_pattern_provider_uv')
-        .itemInputs(
-            '16x #megacells:mega_pattern_provider',
-            '4x megacells:accumulation_processor',
-            '4x gtceu:uv_conveyor_module',
-            '2x #forge:dense_plates/darmstadtium',
-            '#gtceu:circuits/uv',
-            '2x #gtceu:circuits/zpm',)
-        .inputFluids(Fluid.of('gtceu:polybenzimidazole', 1152))
+            'gtceu:zpm_robot_arm',
+            '8x gtceu:laminated_glass',
+            '4x #forge:plates/naquadah_alloy',
+            '32x ae2:annihilation_core',
+            '32x ae2:formation_core',
+            'megacells:accumulation_processor',
+            '16x #ae2:pattern_provider')
+        .inputFluids(Fluid.of('tfg:fluix', 144*16))
         .itemOutputs('8x expatternprovider:ex_pattern_provider')
         .duration(300)
-        .EUt(491520)
+        .EUt(GTValues.VA[GTValues.ZPM])
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    // Pattern Provider Upgrade
+
+    // IV
+    
+    event.recipes.gtceu.assembler('expatternprovider:pattern_provider_upgrade_iv')
+        .itemInputs(
+            'gtceu:iv_robot_arm',
+            '8x gtceu:laminated_glass',
+            '4x gtceu:tungsten_steel_plate',
+            '4x ae2:annihilation_core',
+            '4x ae2:formation_core',
+            'megacells:accumulation_processor',
+            '#ae2:pattern_provider')
+        .inputFluids(Fluid.of('tfg:fluix', 144*8))
+        .itemOutputs('expatternprovider:pattern_provider_upgrade')
+        .duration(300)
+        .circuit(4)
+        .EUt(GTValues.VA[GTValues.IV])
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    // LuV Moon Only
+        
+    event.recipes.gtceu.assembler('expatternprovider:pattern_provider_upgrade_luv_moon')
+        .itemInputs(
+            'gtceu:luv_robot_arm',
+            '8x gtceu:laminated_glass',
+            '4x #forge:plates/rhodium_plated_palladium',
+            '4x ae2:annihilation_core',
+            '4x ae2:formation_core',
+            'megacells:accumulation_processor')
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*8))
+        .itemOutputs('2x expatternprovider:pattern_provider_upgrade')
+        .duration(300)
+        .circuit(4)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .dimension('ad_astra:moon')
+
+    // ZPM
+
+    event.recipes.gtceu.assembler('expatternprovider:pattern_provider_upgrade_zpm')
+        .itemInputs(
+            'gtceu:zpm_robot_arm',
+            '8x gtceu:laminated_glass',
+            '4x #forge:plates/naquadah_alloy',
+            '32x ae2:annihilation_core',
+            '32x ae2:formation_core',
+            'megacells:accumulation_processor',
+            '8x #ae2:pattern_provider')
+        .inputFluids(Fluid.of('tfg:fluix', 144*16))
+        .itemOutputs('8x expatternprovider:pattern_provider_upgrade')
+        .duration(300)
+        .circuit(4)
+        .EUt(GTValues.VA[GTValues.ZPM])
         .cleanroom(CleanroomType.CLEANROOM)
 
     //#endregion
@@ -372,94 +456,76 @@ const registerExtendedAE2Recipes = (event) => {
             '2x megacells:accumulation_processor',)
         .itemOutputs('expatternprovider:ex_pattern_access_part')
         .duration(100)
-        .EUt(1920)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.assembler('expatternprovider:pattern_terminal_upgrade')
+        .itemInputs(
+            '4x ae2:logic_processor',
+            '2x megacells:accumulation_processor')
+        .itemOutputs('expatternprovider:pattern_terminal_upgrade')
+        .duration(100)
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.EV])      
 
     // Wireless Crafting Terminal
     event.recipes.gtceu.assembler('expatternprovider:wireless_ex_pat')
         .itemInputs(
             '2x gtceu:hv_lithium_battery',
-            '2x gtceu:luv_sensor',
-            'gtceu:luv_emitter',
-            '2x #forge:rods/osmiridium',
+            '2x gtceu:iv_sensor',
+            'gtceu:iv_emitter',
+            '2x #forge:rods/iridium',
             'ae2:wireless_terminal',
             'expatternprovider:ex_pattern_access_part')
         .itemOutputs('expatternprovider:wireless_ex_pat')
         .duration(30)
-        .EUt(250)
+        .EUt(GTValues.VA[GTValues.IV])
     
     //#region ex molecular assembler
-    event.recipes.gtceu.assembly_line('expatternprovider:ex_molecular_assembler_iv')
-    .itemInputs(
-        '8x ae2:molecular_assembler',
-        '4x #gtceu:circuits/iv',
-        '2x #gtceu:circuits/ev',
-        '8x megacells:accumulation_processor',
-        '8x ae2:logic_processor',
-        '2x gtceu:iv_conveyor_module',
-        '2x gtceu:iv_robot_arm',
-        '4x #forge:rods/long/tungsten_steel',)
-    .inputFluids(
-        Fluid.of('gtceu:soldering_alloy', 576),
-        Fluid.of('gtceu:polybenzimidazole', 1152),)
-    .itemOutputs('expatternprovider:ex_molecular_assembler')
-    .duration(200)
-    .EUt(7680)
-    .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.assembly_line('expatternprovider:ex_molecular_assembler_luv')
-    .itemInputs(
-        '16x ae2:molecular_assembler',
-        '4x #gtceu:circuits/luv',
-        '2x #gtceu:circuits/iv',
-        '8x megacells:accumulation_processor',
-        '8x ae2:logic_processor',
-        '2x gtceu:luv_conveyor_module',
-        '2x gtceu:luv_robot_arm',
-        '4x #forge:rods/long/rhodium_plated_palladium',)
-    .inputFluids(
-        Fluid.of('gtceu:soldering_alloy', 576),
-        Fluid.of('gtceu:polybenzimidazole', 1152),)
-    .itemOutputs('2x expatternprovider:ex_molecular_assembler')
-    .duration(200)
-    .EUt(30720)
-    .cleanroom(CleanroomType.CLEANROOM)
+    // IV
+	event.recipes.gtceu.assembler('expatternprovider:ex_molecular_assembler_iv')
+		.itemInputs(
+			'2x #gtceu:circuits/iv',
+			'8x gtceu:cleanroom_glass',
+			'4x ae2:annihilation_core',
+			'4x ae2:formation_core',
+			'2x gtceu:iv_robot_arm',
+			'ae2:molecular_assembler')
+		.inputFluids(Fluid.of('tfg:fluix', 144*4))
+		.itemOutputs('expatternprovider:ex_molecular_assembler')
+		.duration(200)
+        .EUt(GTValues.VA[GTValues.IV])
+		.cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.assembly_line('expatternprovider:ex_molecular_assembler_zpm')
-    .itemInputs(
-        '32x ae2:molecular_assembler',
-        '4x #gtceu:circuits/zpm',
-        '2x #gtceu:circuits/luv',
-        '8x megacells:accumulation_processor',
-        '8x ae2:logic_processor',
-        '2x gtceu:zpm_conveyor_module',
-        '2x gtceu:zpm_robot_arm',
-        '4x #forge:rods/long/naquadah_alloy')
-    .inputFluids(
-        Fluid.of('gtceu:soldering_alloy', 576),
-        Fluid.of('gtceu:polybenzimidazole', 1152),)
-    .itemOutputs('4x expatternprovider:ex_molecular_assembler')
-    .duration(200)
-    .EUt(122880)
-    .cleanroom(CleanroomType.CLEANROOM)
+	// LuV Moon
+	event.recipes.gtceu.assembler('expatternprovider:ex_molecular_assembler_luv')
+		.itemInputs(
+			'2x #gtceu:circuits/luv',
+			'8x gtceu:cleanroom_glass',
+			'4x ae2:annihilation_core',
+			'4x ae2:formation_core',
+			'2x gtceu:luv_robot_arm',
+			'2x ae2:molecular_assembler')
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*4))
+		.itemOutputs('4x expatternprovider:ex_molecular_assembler')
+		.duration(200)
+        .EUt(GTValues.VA[GTValues.LuV])
+		.dimension('ad_astra:moon')
 
-    event.recipes.gtceu.assembly_line('expatternprovider:ex_molecular_assembler_uv')
-    .itemInputs(
-        '32x ae2:molecular_assembler',
-        '32x ae2:molecular_assembler',
-        '4x #gtceu:circuits/uv',
-        '2x #gtceu:circuits/zpm',
-        '8x megacells:accumulation_processor',
-        '8x ae2:logic_processor',
-        '2x gtceu:uv_conveyor_module',
-        '2x gtceu:uv_robot_arm',
-        '4x #forge:rods/long/darmstadtium')
-    .inputFluids(
-        Fluid.of('gtceu:soldering_alloy', 576),
-        Fluid.of('gtceu:polybenzimidazole', 1152),)
-    .itemOutputs('8x expatternprovider:ex_molecular_assembler')
-    .duration(200)
-    .EUt(491520)
-    .cleanroom(CleanroomType.CLEANROOM)
+	// ZPM
+	event.recipes.gtceu.assembler('expatternprovider:ex_molecular_assembler_zpm')
+		.itemInputs(
+			'2x #gtceu:circuits/zpm',
+			'8x gtceu:cleanroom_glass',
+			'4x ae2:annihilation_core',
+			'4x ae2:formation_core',
+			'2x gtceu:zpm_robot_arm',
+			'4x ae2:molecular_assembler')
+		.inputFluids(Fluid.of('tfg:fluix', 144*16))
+		.itemOutputs('8x expatternprovider:ex_molecular_assembler')
+		.duration(200)
+        .EUt(GTValues.VA[GTValues.ZPM])
+		.cleanroom(CleanroomType.CLEANROOM)
 
     //#endregion
 
@@ -488,6 +554,18 @@ const registerExtendedAE2Recipes = (event) => {
         .duration(200)
         .EUt(1920)
 
+    event.recipes.gtceu.assembler('expatternprovider:drive_upgrade')
+        .itemInputs(
+            'gtceu:ev_machine_casing',
+            '2x megacells:accumulation_processor',
+            '4x ae2:logic_processor',
+            '4x ae2:engineering_processor',
+            '2x ae2:capacity_card',)
+        .itemOutputs('expatternprovider:drive_upgrade')
+        .duration(200)
+        .circuit(2)
+        .EUt(1920)
+
     event.recipes.gtceu.assembler('expatternprovider:ingredient_buffer')
         .itemInputs(
             'gtceu:hv_machine_casing',
@@ -502,242 +580,171 @@ const registerExtendedAE2Recipes = (event) => {
 
     //#endregion
 
-    //#region Assembler Matrix
+    //#region Matrix
 
     //Frame
 
-    event.recipes.gtceu.assembly_line('expatternprovider:assembler_matrix_frame_luv')
+    event.recipes.gtceu.assembly_line('expatternprovider:assembler_matrix_frame')
     .itemInputs(
         '4x gtceu:plascrete',
         '4x gtceu:luv_machine_casing',
-        '1x #gtceu:circuits/luv',
-        '1x megacells:accumulation_processor',
+        '1x #gtceu:circuits/iv',
         '4x ae2:logic_processor',
-        '4x #forge:rods/long/rhodium_plated_palladium',
+        '4x megacells:accumulation_processor',
+        '16x #forge:rods/niobium_nitride',
         '1x expatternprovider:ex_molecular_assembler',)
     .inputFluids(
-        Fluid.of("gtceu:concrete", 1152),
-        Fluid.of('gtceu:polybenzimidazole', 1430),)
+        Fluid.of("gtceu:concrete", 144*8),
+        Fluid.of('tfg:fluix', 144*16),)
     .itemOutputs('expatternprovider:assembler_matrix_frame')
-    .duration(400)
-    .EUt(30768)
-    .stationResearch(b => b.researchStack(Item.of("expatternprovider:ex_molecular_assembler")).EUt(GTValues.VA[GTValues.LuV]).CWUt(4))
+    .duration(2000)
+    .EUt(GTValues.VA[GTValues.LuV])
     .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.assembly_line('expatternprovider:assembler_matrix_frame_zpm')
+    event.recipes.gtceu.assembly_line('expatternprovider:assembler_matrix_frame_moon')
     .itemInputs(
         '8x gtceu:plascrete',
-        '4x gtceu:zpm_machine_casing',
-        '1x #gtceu:circuits/zpm',
-        '1x megacells:accumulation_processor',
+        '8x gtceu:iv_machine_casing',
+        '1x #gtceu:circuits/iv',
         '4x ae2:logic_processor',
-        '4x #forge:rods/long/naquadah_alloy',
-        '1x expatternprovider:ex_molecular_assembler',)
+        '4x megacells:accumulation_processor',
+        '16x #forge:rods/niobium_nitride',
+        '4x expatternprovider:ex_molecular_assembler',)
     .inputFluids(
-        Fluid.of("gtceu:concrete", 1152),
-        Fluid.of('gtceu:polybenzimidazole', 1430),)
-    .itemOutputs('4x expatternprovider:assembler_matrix_frame')
-    .duration(400)
-    .EUt(123072)
-    .stationResearch(b => b.researchStack(Item.of("expatternprovider:ex_molecular_assembler")).EUt(GTValues.VA[GTValues.LuV]).CWUt(4))
-    .cleanroom(CleanroomType.CLEANROOM)
-
-    event.recipes.gtceu.assembly_line('expatternprovider:assembler_matrix_frame_uv')
-    .itemInputs(
-        '16x gtceu:plascrete',
-        '1x gtceu:uv_machine_casing',
-        '1x #gtceu:circuits/uv',
-        '1x megacells:accumulation_processor',
-        '4x ae2:logic_processor',
-        '4x #forge:rods/long/darmstadtium',
-        '1x expatternprovider:ex_molecular_assembler',)
-    .inputFluids(
-        Fluid.of("gtceu:concrete", 1152),
-        Fluid.of('gtceu:polybenzimidazole', 1430),)
+        Fluid.of('gtceu:concrete', 144*8),
+        Fluid.of('tfg:cryogenized_fluix', 144*16),)
     .itemOutputs('8x expatternprovider:assembler_matrix_frame')
-    .duration(400)
-    .EUt(492288)
-    .stationResearch(b => b.researchStack(Item.of("expatternprovider:ex_molecular_assembler")).EUt(GTValues.VA[GTValues.LuV]).CWUt(4))
-    .cleanroom(CleanroomType.CLEANROOM)
+    .duration(2000)
+    .EUt(GTValues.VA[GTValues.IV])
+    .dimension('ad_astra:moon')
 
     //Matrix Wall
 
     event.recipes.gtceu.assembler('expatternprovider:assembler_matrix_wall_luv')
     .itemInputs(
-        '4x gtceu:iridium_frame',
-        '4x gtceu:plascrete',
-        "1x gtceu:incoloy_ma_956_plate",)
+        '#forge:frames/polytetrafluoroethylene',
+        'gtceu:plascrete',
+        '6x gtceu:polytetrafluoroethylene_plate',)
     .inputFluids(
-        Fluid.of("gtceu:styrene_butadiene_rubber", 1152)
-    )
+        Fluid.of('gtceu:concrete', 144*4))
     .itemOutputs('expatternprovider:assembler_matrix_wall')
     .duration(800)
-    .EUt(30768)
+    .EUt(GTValues.VA[GTValues.IV])
 
     //Matrix Glass
 
     event.recipes.gtceu.assembler("expatternprovider:assembler_matrix_glass")
     .itemInputs(
-        '4x gtceu:iridium_frame',
-        "4x gtceu:cleanroom_glass",
-        "1x gtceu:incoloy_ma_956_plate",)
+        '#forge:frames/polytetrafluoroethylene',
+        'gtceu:cleanroom_glass',
+        '6x gtceu:polytetrafluoroethylene_plate',)
     .inputFluids(
-        Fluid.of("gtceu:styrene_butadiene_rubber", 1152)
-    )
+        Fluid.of('gtceu:concrete', 144*4))
     .itemOutputs("expatternprovider:assembler_matrix_glass")
     .duration(800)
-    .EUt(30768)
+    .EUt(GTValues.VA[GTValues.IV])
 
     //Matrix Pattern
 
-    event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_pattern_luv")
+    event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_pattern")
     .itemInputs(
         '#expatternprovider:extended_pattern_provider',
-        '4x megacells:accumulation_processor',
+        '8x megacells:accumulation_processor',
         '4x gtceu:luv_robot_arm',
         '2x #forge:dense_plates/rhodium_plated_palladium',
-        '#gtceu:circuits/luv',
-        '2x #gtceu:circuits/iv',)
-    .inputFluids(
-        Fluid.of("gtceu:europium", 16),
-        Fluid.of('gtceu:polybenzimidazole', 1430),)
-    .itemOutputs('1x expatternprovider:assembler_matrix_pattern')
-    .duration(800)
-    .EUt(GTValues.VA[GTValues.LuV])
-    .cleanroom(CleanroomType.CLEANROOM)
-
-    event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_pattern_zpm")
-    .itemInputs(
-        '4x #expatternprovider:extended_pattern_provider',
-        '4x megacells:accumulation_processor',
-        '4x gtceu:zpm_robot_arm',
-        '2x #forge:dense_plates/naquadah_alloy',
         '#gtceu:circuits/zpm',
         '2x #gtceu:circuits/luv',)
     .inputFluids(
-        Fluid.of("gtceu:europium", 16),
+        Fluid.of('tfg:fluix', 144*16),
         Fluid.of('gtceu:polybenzimidazole', 1430),)
-    .itemOutputs('4x expatternprovider:assembler_matrix_pattern')
-    .duration(800)
-    .EUt(GTValues.VA[GTValues.ZPM])
+    .itemOutputs('expatternprovider:assembler_matrix_pattern')
+    .duration(20*30)
+    .EUt(GTValues.VA[GTValues.LuV])
     .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_pattern_uv")
+    event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_pattern_moon")
     .itemInputs(
-        '8x #expatternprovider:extended_pattern_provider',
-        '4x megacells:accumulation_processor',
-        '4x gtceu:uv_robot_arm',
-        '2x #forge:dense_plates/darmstadtium',
-        '#gtceu:circuits/uv',
-        '2x #gtceu:circuits/zpm',)
+        '2x #expatternprovider:extended_pattern_provider',
+        '8x megacells:accumulation_processor',
+        '4x gtceu:iv_robot_arm',
+        '2x #forge:dense_plates/tungsten_steel',
+        '#gtceu:circuits/luv',
+        '2x #gtceu:circuits/iv',)
     .inputFluids(
-        Fluid.of("gtceu:europium", 16),
+        Fluid.of('tfg:cryogenized_fluix', 144*8),
         Fluid.of('gtceu:polybenzimidazole', 1430),)
-    .itemOutputs('8x expatternprovider:assembler_matrix_pattern')
-    .duration(800)
-    .EUt(GTValues.VA[GTValues.UV])
-    .cleanroom(CleanroomType.CLEANROOM)
+    .itemOutputs('2x expatternprovider:assembler_matrix_pattern')
+    .duration(20*30)
+    .EUt(GTValues.VA[GTValues.IV])
+    .dimension('ad_astra:moon')
 
     //Matrix Crafter
 
-    event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_crafter_luv")
+    event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_crafter")
     .itemInputs(
         "#expatternprovider:oversize_interface",
-        '4x megacells:accumulation_processor',
-        'gtceu:iv_field_generator',
+        '8x megacells:accumulation_processor',
+        '4x gtceu:luv_field_generator',
         '2x #forge:dense_plates/rhodium_plated_palladium',
-        '#gtceu:circuits/luv',
-        '2x #gtceu:circuits/iv',)
-    .inputFluids(
-        Fluid.of("gtceu:europium", 16),
-        Fluid.of('gtceu:polybenzimidazole', 1430),)
-    .itemOutputs('1x expatternprovider:assembler_matrix_crafter')
-    .duration(800)
-    .EUt(GTValues.VA[GTValues.LuV])
-    .cleanroom(CleanroomType.CLEANROOM)
-    
-    event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_crafter_zpm")
-    .itemInputs(
-        "4x #expatternprovider:oversize_interface",
-        '4x megacells:accumulation_processor',
-        'gtceu:luv_field_generator',
-        '2x #forge:dense_plates/naquadah_alloy',
         '#gtceu:circuits/zpm',
         '2x #gtceu:circuits/luv',)
     .inputFluids(
-        Fluid.of("gtceu:europium", 16),
+        Fluid.of('tfg:fluix', 144*16),
         Fluid.of('gtceu:polybenzimidazole', 1430),)
-    .itemOutputs('4x expatternprovider:assembler_matrix_crafter')
-    .duration(800)
-    .EUt(GTValues.VA[GTValues.ZPM])
+    .itemOutputs('expatternprovider:assembler_matrix_crafter')
+    .duration(20*30)
+    .EUt(GTValues.VA[GTValues.LuV])
     .cleanroom(CleanroomType.CLEANROOM)
-
-    event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_crafter_uv")
+    
+    event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_crafter_moon")
     .itemInputs(
-        "8x #expatternprovider:oversize_interface",
-        '4x megacells:accumulation_processor',
-        'gtceu:iv_field_generator',
-        '2x #forge:dense_plates/darmstadtium',
-        '#gtceu:circuits/uv',
-        '2x #gtceu:circuits/zpm',)
+        "2x #expatternprovider:oversize_interface",
+        '8x megacells:accumulation_processor',
+        '4x gtceu:iv_field_generator',
+        '2x #forge:dense_plates/tungsten_steel',
+        '#gtceu:circuits/luv',
+        '2x #gtceu:circuits/iv',)
     .inputFluids(
-        Fluid.of("gtceu:europium", 16),
+        Fluid.of('tfg:cryogenized_fluix', 144*8),
         Fluid.of('gtceu:polybenzimidazole', 1430),)
-    .itemOutputs('8x expatternprovider:assembler_matrix_crafter')
-    .duration(800)
-    .EUt(GTValues.VA[GTValues.UV])
-    .cleanroom(CleanroomType.CLEANROOM)
+    .itemOutputs('2x expatternprovider:assembler_matrix_crafter')
+    .duration(20*30)
+    .EUt(GTValues.VA[GTValues.IV])
+    .dimension('ad_astra:moon')
 
     //Matrix Speed
 
     event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_speed_luv")
     .itemInputs(
         "megacells:mega_crafting_accelerator",
-        '4x megacells:accumulation_processor',
-        "64x ae2:speed_card",
+        '8x megacells:accumulation_processor',
+        '4x gtceu:luv_conveyor_module',
         '2x #forge:dense_plates/rhodium_plated_palladium',
-        '#gtceu:circuits/luv',
-        '2x #gtceu:circuits/iv',)
+        '#gtceu:circuits/zpm',
+        '2x #gtceu:circuits/luv',)
     .inputFluids(
-        Fluid.of("gtceu:europium", 16),
+        Fluid.of('tfg:fluix', 144*16),
         Fluid.of('gtceu:polybenzimidazole', 1430),)
-    .itemOutputs("expatternprovider:assembler_matrix_speed")
-    .duration(800)
+    .itemOutputs('expatternprovider:assembler_matrix_speed')
+    .duration(20*30)
     .EUt(GTValues.VA[GTValues.LuV])
     .cleanroom(CleanroomType.CLEANROOM)
 
     event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_speed_zpm")
     .itemInputs(
-        "4x megacells:mega_crafting_accelerator",
-        '4x megacells:accumulation_processor',
-        "64x ae2:speed_card",
-        '2x #forge:dense_plates/naquadah_alloy',
-        '#gtceu:circuits/zpm',
-        '2x #gtceu:circuits/luv',)
+        "2x megacells:mega_crafting_accelerator",
+        '8x megacells:accumulation_processor',
+        '4x gtceu:iv_conveyor_module',
+        '2x #forge:dense_plates/tungsten_steel',
+        '#gtceu:circuits/luv',
+        '2x #gtceu:circuits/iv',)
     .inputFluids(
-        Fluid.of("gtceu:europium", 16),
+        Fluid.of('tfg:cryogenized_fluix', 144*8),
         Fluid.of('gtceu:polybenzimidazole', 1430),)
-    .itemOutputs("4x expatternprovider:assembler_matrix_speed")
-    .duration(800)
-    .EUt(GTValues.VA[GTValues.ZPM])
-    .cleanroom(CleanroomType.CLEANROOM)
-    
-    event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_speed_uv")
-    .itemInputs(
-        "8x megacells:mega_crafting_accelerator",
-        '4x megacells:accumulation_processor',
-        "64x ae2:speed_card",
-        '2x #forge:dense_plates/darmstadtium',
-        '#gtceu:circuits/uv',
-        '2x #gtceu:circuits/zpm',)
-    .inputFluids(
-        Fluid.of("gtceu:europium", 16),
-        Fluid.of('gtceu:polybenzimidazole', 1430),)
-    .itemOutputs("8x expatternprovider:assembler_matrix_speed")
-    .duration(800)
-    .EUt(GTValues.VA[GTValues.UV])
-    .cleanroom(CleanroomType.CLEANROOM)
-
+    .itemOutputs('2x expatternprovider:assembler_matrix_speed')
+    .duration(20*30)
+    .EUt(GTValues.VA[GTValues.IV])
+    .dimension('ad_astra:moon')
 
     //#endregion
 
