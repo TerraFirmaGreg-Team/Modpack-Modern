@@ -25,7 +25,8 @@ const registerAdAstraMaterials = (event) => {
 		.flags(
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
 			GTMaterialFlags.GENERATE_PLATE, 
-			GTMaterialFlags.GENERATE_ROD
+			GTMaterialFlags.GENERATE_ROD,
+			GTMaterialFlags.GENERATE_DENSE
 		)
 
 	// TODO: remove the components until we know what to put in them

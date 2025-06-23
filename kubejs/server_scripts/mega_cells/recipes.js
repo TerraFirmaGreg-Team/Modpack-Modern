@@ -63,12 +63,22 @@ const registerMegaCellsRecipes = (event) => {
 
     // Inscriber Silicon Press
     event.recipes.gtceu.laser_engraver('ae2:accumulation_processor_press')
-        .itemInputs('ae2:singularity')
+        .itemInputs('tfg:unfinished_inscriber_accumulation_press')
         .notConsumable('#forge:lenses/black')
         .itemOutputs('megacells:accumulation_processor_press')
         .duration(4000)
-        .EUt(1920)
+        .EUt(GTValues.VA[GTValues.IV])
         .cleanroom(CleanroomType.CLEANROOM)
+
+	event.recipes.gtceu.implosion_compressor('tfg:unfinished_inscriber_accumulation_press')
+		.itemInputs(
+			'#forge:dense_plates/rocket_alloy_t1',
+			'#forge:dense_plates/desh',
+			'gtceu:quantum_star',
+            '64x gtceu:industrial_tnt')
+		.itemOutputs('tfg:unfinished_inscriber_accumulation_press')
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.IV])
 
     //Mega Item Cell Housing
     event.shaped('megacells:mega_item_cell_housing', [

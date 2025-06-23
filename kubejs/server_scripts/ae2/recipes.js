@@ -1207,7 +1207,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'4x ae2:formation_core',
 			'2x gtceu:ev_robot_arm',
 			'6x #forge:plates/titanium')
-		.inputFluids(Fluid.of('tfg:fluix', 144))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('4x ae2:molecular_assembler')
 		.duration(200)
         .EUt(GTValues.VA[GTValues.EV])

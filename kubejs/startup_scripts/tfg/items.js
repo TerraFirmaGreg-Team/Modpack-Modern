@@ -40,6 +40,12 @@ const registerTFGItems = (event) => {
     });
     //#endregion
 
+    // Unfinished Inscriber
+
+    event.create('tfg:unfinished_inscriber_accumulation_press')
+        .translationKey('item.tfg.unfinished_inscriber_accumulation_press')
+        .texture('tfg:item/unfinished_inscriber_accumulation_press')
+
     // #region Molds
     global.TFG_EXTRUDER_MOLDS.forEach(id => event.create(id))
 
