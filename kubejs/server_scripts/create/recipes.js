@@ -58,7 +58,9 @@ const registerCreateRecipes = (event) => {
 			{ type: 'minecraft:stonecutting' }
 		], mod: 'create'
 	})
-
+	// Make Bound Cardboard craftable with all string
+	event.replaceInput({id: 'create:crafting/materials/bound_cardboard_block' }, 'minecraft:string', '#forge:string')
+	
 	// Remove Table Cloth recipes
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		event.remove([{ id: `create:crafting/logistics/${dye}_table_cloth` }, { id: `create:crafting/logistics/${dye}_table_cloth_from_other_table_cloth` }])
@@ -1504,6 +1506,18 @@ const registerCreateRecipes = (event) => {
 	
 	//#region Create 6 Logistics
 
+	event.shaped('2x create:chain_conveyor', [
+		'DAE',
+		'CBC',
+		' A '
+	], {
+		A: '#tfg:large_cogwheels',
+		B: 'create:andesite_casing',
+		C: 'gtceu:treated_wood_plate',
+		D: '#forge:tools/wrenches',
+		E: '#forge:tools/hammers'
+	}).id('create:shaped/chain_conveyor')
+
 	event.shaped('2x create:cardboard', [
 		'ABA',
 		'BAB',
@@ -1897,6 +1911,7 @@ const registerCreateRecipes = (event) => {
 		E: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/clutch')
 
+	event.stonecutting('2x create:andesite_table_cloth', '#forge:ingots/tin_alloy')
 	event.stonecutting('2x create:andesite_scaffolding', '#forge:ingots/tin_alloy')
 	event.stonecutting('2x create:andesite_ladder', '#forge:ingots/tin_alloy')
 	event.stonecutting('2x create:andesite_bars', '#forge:ingots/tin_alloy')
