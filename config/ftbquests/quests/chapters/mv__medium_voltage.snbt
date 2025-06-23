@@ -3,7 +3,7 @@
 	default_quest_shape: "square"
 	filename: "mv__medium_voltage"
 	group: "44D0F3E5067B5AB8"
-	icon: "gtceu:mv_electric_motor"
+	icon: "tfg:mv_universal_circuit"
 	id: "43E779CEEB25D55B"
 	order_index: 1
 	quest_links: [{

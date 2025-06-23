@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ore_processing"
-	group: "33020D1D0ECDF301"
+	group: "19428C6E7A36D463"
 	icon: {
 		Count: 1
 		ForgeCaps: {
@@ -14,7 +14,7 @@
 		id: "gtceu:crushed_iron_ore"
 	}
 	id: "24C1683140DBB5F2"
-	order_index: 0
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{

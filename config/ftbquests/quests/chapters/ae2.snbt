@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
 	filename: "ae2"
-	group: "33020D1D0ECDF301"
+	group: "19428C6E7A36D463"
 	icon: "ae2:controller"
 	id: "09BE9F51822EC180"
-	order_index: 2
+	order_index: 5
 	quest_links: [{
 		id: "6F0C443B72699EFA"
 		linked_quest: "05ABC370D7153350"
