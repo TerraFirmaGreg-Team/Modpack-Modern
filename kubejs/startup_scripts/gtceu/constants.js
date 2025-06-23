@@ -42,6 +42,7 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:primitive_blast_furnace',
     'gtceu:iron_pickaxe',
     'gtceu:iron_pickaxe_head',
+    'gtceu:brittle_charcoal',
     
     'gtceu:wood_screwdriver_tip',
     'gtceu:wood_wrench_tip',
@@ -52,6 +53,11 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:stone_chainsaw_head', 
     'gtceu:stone_buzz_saw_blade', 
     'gtceu:stone_wrench_tip',
+
+    'gtceu:netherite_nugget',
+    'gtceu:tiny_netherite_dust',
+    'gtceu:small_netherite_dust',
+    'gtceu:netherite_dust',
 
     'gtceu:treated_wood_hanging_sign',
     'gtceu:treated_wood_boat',
@@ -85,6 +91,8 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:luv_solar_panel',
     'gtceu:zpm_solar_panel',
     'gtceu:uv_solar_panel',
+
+    'gtceu:compressed_clay',
 
     // Sculk
     'gtceu:tiny_echo_shard_dust',
@@ -188,6 +196,13 @@ global.ORE_BEARING_STONES = [
 
     'deepslate',
     'pyroxenite',
-    'dripstone'
+    'dripstone',
+
+    'moon_stone',
+    'moon_deepslate',
+    'mars_stone',
+    'venus_stone',
+    'mercury_stone',
+    'glacio_stone'
 ];
 

@@ -31,11 +31,11 @@
             "weight": 1
           },
           {
-            "block": "gtceu:gneiss_molybdenum_ore",
-            "weight": 15
+            "block": "gtceu:gneiss_powellite_ore",
+            "weight": 10
           },
           {
-            "block": "gtceu:gneiss_powellite_ore",
+            "block": "gtceu:gneiss_nickel_ore",
             "weight": 15
           }
         ]
@@ -62,11 +62,11 @@
             "weight": 1
           },
           {
-            "block": "gtceu:schist_molybdenum_ore",
-            "weight": 15
+            "block": "gtceu:schist_powellite_ore",
+            "weight": 10
           },
           {
-            "block": "gtceu:schist_powellite_ore",
+            "block": "gtceu:schist_nickel_ore",
             "weight": 15
           }
         ]
@@ -93,11 +93,11 @@
             "weight": 1
           },
           {
-            "block": "gtceu:granite_molybdenum_ore",
-            "weight": 15
+            "block": "gtceu:granite_powellite_ore",
+            "weight": 10
           },
           {
-            "block": "gtceu:granite_powellite_ore",
+            "block": "gtceu:granite_nickel_ore",
             "weight": 15
           }
         ]
@@ -124,11 +124,11 @@
             "weight": 1
           },
           {
-            "block": "gtceu:diorite_molybdenum_ore",
-            "weight": 15
+            "block": "gtceu:diorite_powellite_ore",
+            "weight": 10
           },
           {
-            "block": "gtceu:diorite_powellite_ore",
+            "block": "gtceu:diorite_nickel_ore",
             "weight": 15
           }
         ]
@@ -155,11 +155,11 @@
             "weight": 1
           },
           {
-            "block": "gtceu:gabbro_molybdenum_ore",
-            "weight": 15
+            "block": "gtceu:gabbro_powellite_ore",
+            "weight": 10
           },
           {
-            "block": "gtceu:gabbro_powellite_ore",
+            "block": "gtceu:gabbro_nickel_ore",
             "weight": 15
           }
         ]
@@ -187,11 +187,11 @@
             "weight": 1
           },
           {
-            "block": "gtceu:pyroxenite_molybdenum_ore",
-            "weight": 15
+            "block": "gtceu:pyroxenite_powellite_ore",
+            "weight": 10
           },
           {
-            "block": "gtceu:pyroxenite_powellite_ore",
+            "block": "gtceu:pyroxenite_nickel_ore",
             "weight": 15
           }
         ]
@@ -212,11 +212,11 @@
           "weight": 30
         },
         {
-          "block": "gtceu:molybdenum_indicator",
-          "weight": 15
+          "block": "gtceu:powellite_indicator",
+          "weight": 10
         },
         {
-          "block": "gtceu:powellite_indicator",
+          "block": "tfc:ore/small_garnierite",
           "weight": 15
         }
       ]

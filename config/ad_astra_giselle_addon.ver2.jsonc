@@ -1,0 +1,147 @@
+{
+    "items": {
+        // Type: Integer
+        "oxygen_chargers_distribution_interval": 20,
+        // Type: Long
+        "oxygen_can_fluid_capacity": 5000,
+        // Type: Long
+        "oxygen_can_fluid_transfer": 125,
+        // Type: Long
+        "netherite_oxygen_can_fluid_capacity": 10000,
+        // Type: Long
+        "netherite_oxygen_can_fluid_transfer": 250
+    },
+    "machines": {
+        // Type: Long
+        "fuel_loader_fluid_capacity": 8000,
+        // Type: Long
+        "fuel_loader_fluid_transfer": 250,
+        /*
+         * Blocks from Fuel Loader to each direction
+         * Type: Integer
+         */
+        "fuel_loader_working_range": 2,
+        // Type: Long
+        "automation_nasa_workbench_energy_capacity": 9600,
+        // Type: Long
+        "automation_nasa_workbench_energy_usage": 24,
+        // Type: Integer
+        "automation_nasa_workbench_cook_time": 200,
+        // Type: Long
+        "gravity_normalizer_energy_capacity": 9600,
+        /*
+         * Blocks = x * y * z
+         * Type: Double
+         */
+        "gravity_normalizer_energy_per_blocks": 0.5,
+        // Type: Integer
+        "gravity_normalizer_max_length": 31,
+        // Type: Integer
+        "gravity_normalizer_proof_duration": 10,
+        /*
+         * Blocks from Rocket Sensor to each direction
+         * Type: Integer
+         */
+        "rocket_sensor_working_range": 2
+    },
+    "enchantments": {
+        // Show tooltip on this mod's enchanted book
+        "tooltip_enabled": true,
+        /*
+         * Tooltip will don't show when 'Enchantment Descriptions' or 'Enchantment Lore' or 'CoFH Core' installed.
+         * but, if this set 'true' show tooltip with ignore that mods.
+         */
+        "tooltip_ignore": false,
+        /*
+         * Energy usage for proof [in every 10 ticks]
+         * Type: Integer
+         */
+        "space_fire_proof_energy_using": 10,
+        /*
+         * Durability usage for proof
+         * Type: Integer
+         */
+        "space_fire_proof_durability_using": 1,
+        /*
+         * Proof duration on using durability [ticks, be multiple of 10]
+         * Type: Integer
+         */
+        "space_fire_proof_durability_duration": 60,
+        /*
+         * Energy usage for proof [in every 10 ticks]
+         * Type: Integer
+         */
+        "acid_rain_proof_energy_using": 10,
+        /*
+         * Durability usage for proof
+         * Type: Integer
+         */
+        "acid_rain_proof_durability_using": 1,
+        /*
+         * Proof duration on using durability [ticks, be multiple of 10]
+         * Type: Integer
+         */
+        "acid_rain_proof_durability_duration": 60,
+        /*
+         * Energy usage for proof [in every 10 ticks]
+         * Type: Integer
+         */
+        "gravity_normalizing_energy_using": 10,
+        /*
+         * Durability usage for proof
+         * Type: Integer
+         */
+        "gravity_normalizing_durability_using": 1,
+        /*
+         * Proof duration on using durability [ticks, be multiple of 10]
+         * Type: Integer
+         */
+        "gravity_normalizing_durability_duration": 60
+    },
+    "compats": {
+        "mekanism": {
+            /*
+             * Energy usage per mb when produce Mekanism oxygen to player in water, rain
+             * Type: Integer
+             */
+            "modules_space_breathing_energy_using_produce": 200,
+            /*
+             * Energy usage for proof in every ticks [in every 10 ticks]
+             * Type: Integer
+             */
+            "modules_space_fire_proof_energy_using": 100,
+            /*
+             * Energy usage for proof in every ticks [in every 10 ticks]
+             * Type: Integer
+             */
+            "modules_acid_rain_proof_energy_using": 100,
+            /*
+             * Energy usage for proof in every ticks [in every 10 ticks]
+             * Type: Integer
+             */
+            "modules_gravity_normalizing_energy_using": 100
+        },
+        "pneumaticcraft": {
+            /*
+             * Air usage for provide oxygen [in every 30 ticks]
+             * Type: Integer
+             */
+            "upgades_space_breathing_air_using": 150,
+            /*
+             * Air usage for proof [in every 10 ticks]
+             * Type: Integer
+             */
+            "upgades_space_fire_proof_air_using": 50,
+            /*
+             * Air usage for proof [in every 10 ticks]
+             * Type: Integer
+             */
+            "upgades_acid_rain_proof_air_using": 50,
+            /*
+             * Air usage for proof [in every 10 ticks]
+             * Type: Integer
+             */
+            "upgades_gravity_normalizing_air_using": 50
+        }
+    }
+}

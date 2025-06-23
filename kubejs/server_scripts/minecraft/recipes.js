@@ -307,13 +307,13 @@ const registerMinecraftRecipes = (event) => {
 		.duration(50)
 		.EUt(30)
 
-	event.recipes.gtceu.large_chemical_reactor('golden_apple_1')
-		.itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
-		.itemOutputs('minecraft:golden_apple')
-		.duration(50)
-		.EUt(30)
+    event.recipes.gtceu.large_chemical_reactor('golden_apple_1')             
+        .itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
+        .itemOutputs('minecraft:golden_apple')
+        .duration(50)
+        .EUt(30)
 
-	//#endregion
+    //#endregion
 
 	//#region Выход: Компаратор
 
@@ -597,18 +597,19 @@ const registerMinecraftRecipes = (event) => {
 	event.recipes.gtceu.assembler('hopper_wrought_iron')
 		.itemInputs('#forge:chests', '5x #forge:plates/wrought_iron')
 		.itemOutputs('minecraft:hopper')
+		.circuit(8)
 		.duration(700)
 		.EUt(2)
 
 	//#endregion
 
-	//#region Выход: Поршень
+	//#region Выход: Поршень (Piston)
 
 	event.recipes.gtceu.assembler('piston')
-		.itemInputs('#forge:plates/wrought_iron', '3x tfc:wood/planks/acacia', '4x #tfc:rock/raw')
-		.itemOutputs('4x minecraft:piston')
+		.itemInputs(ChemicalHelper.get(TagPrefix.rod, GTMaterials.WroughtIron, 1),ChemicalHelper.get(TagPrefix.gearSmall, GTMaterials.Brass, 1) , '3x #tfc:lumber', '4x #forge:cobblestone')
+		.itemOutputs('2x minecraft:piston')
 		.duration(100)
-		.EUt(16)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	//#endregion
 
@@ -849,15 +850,16 @@ const registerMinecraftRecipes = (event) => {
 
 	//#region Netherite leggings (for the lavaproof diving set)
 
-	event.shaped('minecraft:netherite_leggings', [
-		'ABA',
-		'CDC'
-	], {
-		A: '#forge:screws/blue_steel',
-		B: 'tfc:metal/greaves/blue_steel',
-		C: '#forge:plates/blue_steel',
-		D: 'beneath:cursed_hide'
-	}).id('tfg:minecraft/shaped/netherite_leggings')
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('minecraft:netherite_leggings').copyForgingBonus(), [
+			'ABA',
+			'CDC'
+		], {
+			A: '#forge:screws/blue_steel',
+			B: 'tfc:metal/greaves/blue_steel',
+			C: '#forge:plates/blue_steel',
+			D: 'beneath:cursed_hide'
+		}, 0, 1).id('tfg:minecraft/shaped/netherite_leggings')
 
 	//#endregion
 
@@ -917,11 +919,6 @@ const registerMinecraftRecipes = (event) => {
 	// #endregion
 
 	//#region Кожа из кожаных предметов
-	event.recipes.gtceu.macerator('tfg:leather_from_boots')
-		.itemInputs('minecraft:leather_boots')
-		.itemOutputs('minecraft:leather')
-		.EUt(7).duration(80)
-
 	event.recipes.gtceu.macerator('tfg:leather_from_saddle')
 		.itemInputs('minecraft:saddle')
 		.itemOutputs('minecraft:leather')
@@ -929,21 +926,6 @@ const registerMinecraftRecipes = (event) => {
 
 	event.recipes.gtceu.macerator('tfg:leather_from_horse_armor')
 		.itemInputs('minecraft:leather_horse_armor')
-		.itemOutputs('minecraft:leather')
-		.EUt(7).duration(80)
-
-	event.recipes.gtceu.macerator('tfg:leather_from_helmet')
-		.itemInputs('minecraft:leather_helmet')
-		.itemOutputs('minecraft:leather')
-		.EUt(7).duration(80)
-
-	event.recipes.gtceu.macerator('tfg:leather_from_leggings')
-		.itemInputs('minecraft:leather_leggings')
-		.itemOutputs('minecraft:leather')
-		.EUt(7).duration(80)
-
-	event.recipes.gtceu.macerator('tfg:leather_from_chestplate')
-		.itemInputs('minecraft:leather_chestplate')
 		.itemOutputs('minecraft:leather')
 		.EUt(7).duration(80)
 	//#endregion
@@ -991,6 +973,90 @@ const registerMinecraftRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 	//#endregion
 
+	// Slime
 	event.smelting('tfc:glue', 'minecraft:slime_ball')
 		.id('tfg:smelting/slime_to_glue')
+
+	// Clay
+	event.shaped('minecraft:clay', [
+		'AA',
+		'AA'
+	], {
+		A: 'minecraft:clay_ball'
+	})
+	.id('tfg:shaped/clay_balls_to_block')
+
+	event.shapeless('4x minecraft:clay_ball', ['minecraft:clay'])
+		.id('tfg:shapeless/clay_block_to_balls')
+
+	// Mushrooms
+
+	event.shapeless('4x minecraft:red_mushroom', ['minecraft:red_mushroom_block', '#forge:tools/knives'])
+		.id('tfg:shapeless/cut_red_mushroom_block')
+
+	event.shapeless('4x minecraft:brown_mushroom', ['minecraft:brown_mushroom_block', '#forge:tools/knives'])
+		.id('tfg:shapeless/cut_brown_mushroom_block')
+
+	event.recipes.gtceu.compressor('tfg:red_mushroom')
+		.itemInputs('4x minecraft:red_mushroom')
+		.itemOutputs('minecraft:red_mushroom_block')
+		.circuit(2)
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.compressor('tfg:brown_mushroom')
+		.itemInputs('4x minecraft:brown_mushroom')
+		.itemOutputs('minecraft:brown_mushroom_block')
+		.duration(20)
+		.circuit(2)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.chemical_bath('tfg:red_mushroom_to_shroomlight')
+		.itemInputs('minecraft:red_mushroom_block')
+		.inputFluids(Fluid.of('gtceu:glowstone', 144))
+		.itemOutputs('minecraft:shroomlight')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.chemical_bath('tfg:brown_mushroom_to_shroomlight')
+		.itemInputs('minecraft:brown_mushroom_block')
+		.inputFluids(Fluid.of('gtceu:glowstone', 144))
+		.itemOutputs('minecraft:shroomlight')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+
+	// Stonecutter
+
+	event.shaped('minecraft:stonecutter',
+		[
+			' E ',
+			'CAC',
+			'BDB'
+		],
+		{
+			A: '#forge:plates/wrought_iron',
+			B: '#tfc:lumber',
+			C: '#forge:plates/brass',
+			D: '#forge:small_gears',
+			E: '#forge:buzz_saw_heads'
+		}).id('tfg:shaped/stonecutter');
+
+	event.stonecutting('minecraft:smooth_quartz', 'minecraft:quartz_block')
+
+	//Glowing Ink Sacs
+		
+	event.recipes.gtceu.chemical_bath('minecraft:glow_inc_sac4')
+		.itemInputs("gtceu:thorium_dust", "4x #forge:dyes/black")
+		.inputFluids(Fluid.of('gtceu:glowstone', 512))
+		.itemOutputs('16x minecraft:glow_ink_sac')
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.HV])
+		
+	event.recipes.gtceu.chemical_bath('minecraft:glow_inc_sac1')
+		.itemInputs("#forge:dyes/black")
+		.inputFluids(Fluid.of('gtceu:glowstone', 144))
+		.itemOutputs('minecraft:glow_ink_sac')
+		.duration(40)
+		.EUt(GTValues.VA[GTValues.MV])
 }

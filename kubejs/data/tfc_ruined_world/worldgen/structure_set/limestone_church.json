@@ -1,0 +1,30 @@
+{
+	"structures": [
+		{
+			"structure": "tfc_ruined_world:limestone_church",
+			"weight": 1
+		},
+		{
+			"structure": "tfc_ruined_world:small_limestone_church",
+			"weight": 1
+		},
+		{
+			"structure": "tfc_ruined_world:medium_gneiss_church",
+			"weight": 1
+		},
+		{
+			"structure": "tfc_ruined_world:small_gneiss_church",
+			"weight": 1
+		},
+		{
+			"structure": "tfc_ruined_world:small_limestone_church_2",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"salt": 1442136151,
+		"spacing": 70,
+		"separation": 50,
+		"type": "minecraft:random_spread"
+	}
+}

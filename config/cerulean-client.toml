@@ -1,0 +1,8 @@
+
+#.
+#Client-only settings - If you're looking for general settings, look inside your world's serverconfig folder!
+[client]
+	#.
+	#Example Boolean
+	example = true
+

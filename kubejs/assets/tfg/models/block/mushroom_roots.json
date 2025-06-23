@@ -2,6 +2,7 @@
 	"parent": "minecraft:block/cross",
 	"render_type": "cutout_mipped",
 	"textures": {
-		"cross": "tfg:block/mushroom_roots"
+		"cross": "tfg:block/mushroom_roots",
+		"particle": "tfg:block/mushroom_roots"
 	}
 }

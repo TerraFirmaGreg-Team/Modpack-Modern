@@ -141,7 +141,7 @@
 	/**
 	 * Whether recipes should have a button to set as default.
 	 */
-	recipe-default-button: false;
+	recipe-default-button: true;
 
 	/**
 	 * Whether recipes should have a button to show the recipe tree.

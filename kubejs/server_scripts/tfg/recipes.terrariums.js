@@ -146,19 +146,6 @@ function registerTFGTerrariumRecipes(event) {
 	}).id('tfg:shaped/end_crystal')
 	
 	// chorus fruit
-	
-	event.recipes.gtceu.large_chemical_reactor('tfg:chorus_fruit_uranium')
-		.itemInputs('#tfc:foods/fruits', 'gtceu:uranium_235_dust')
-		.itemOutputs('minecraft:chorus_fruit', 'gtceu:uranium_dust')
-		.duration(500)
-		.EUt(480)
-		.circuit(1)
-		
-	event.recipes.gtceu.large_chemical_reactor('tfg:chorus_fruit_plutonium')
-		.itemInputs('#tfc:foods/fruits', 'gtceu:plutonium_241_dust')
-		.itemOutputs('minecraft:chorus_fruit', 'gtceu:plutonium_dust')
-		.duration(200)
-		.EUt(480)
 		
 	event.recipes.gtceu.large_chemical_reactor('tfg:kovarex')
 		.itemInputs('40x gtceu:uranium_235_dust', '5x gtceu:uranium_dust')

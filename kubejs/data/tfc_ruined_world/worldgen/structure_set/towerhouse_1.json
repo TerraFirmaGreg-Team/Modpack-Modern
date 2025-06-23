@@ -1,0 +1,26 @@
+{
+	"structures": [
+		{
+			"structure": "tfc_ruined_world:towerhouse_1",
+			"weight": 2
+		},
+		{
+			"structure": "tfc_ruined_world:towerhouse_2",
+			"weight": 2
+		},
+		{
+			"structure": "tfc_ruined_world:castle_1",
+			"weight": 1
+		},
+		{
+			"structure": "tfc_ruined_world:castle_2",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"salt": 1442136153,
+		"spacing": 120,
+		"separation": 100,
+		"type": "minecraft:random_spread"
+	}
+}

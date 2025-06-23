@@ -2,6 +2,16 @@
 
 const registerWaterFlasksRecipes = (event) => {
 
+	// alternative for leather side
+
+	event.recipes.tfc.knapping('waterflasks:leather_side', 'tfc:leather', [
+		'     ',
+		'   X ',
+		' XXXX',
+		'XXXXX',
+		' XXX '
+	]).id('waterflasks/leather_knapping/leather_side_2')
+
 	// Декрафт Unfinished Water Flask
 	event.recipes.tfc.heating('waterflasks:unfinished_iron_flask', 1535)
 		.resultFluid(Fluid.of('gtceu:iron', 144))
@@ -24,6 +34,12 @@ const registerWaterFlasksRecipes = (event) => {
 		.useDurability(true)
 		.id(`waterflasks:heating/red_steel_flask`)
 
+	event.remove({id: 'waterflasks:heating/red_steel_unfinished_red_steel_flask'})
+    event.recipes.tfc.heating('waterflasks:unfinished_red_steel_flask', 1535)
+        .resultFluid(Fluid.of('gtceu:red_steel', 144))
+		.useDurability(true)
+		.id('waterflasks:tfc/heating/unfinished_red_steel_flask')
+
 	//#region Кожанная фласка
 
 	event.recipes.gtceu.assembler('tfg:water_flasks/leather_flask')
@@ -44,24 +60,73 @@ const registerWaterFlasksRecipes = (event) => {
 
 	//#region Железная фласка
 
-	event.replaceInput({ mod: 'waterflasks' }, 'tfc:burlap_cloth', '#forge:cloth')
+	// For some reason, replaceInput isn't working on these
+	event.remove({ id: 'waterflasks:crafting/iron_flask' })
+	event.shaped('waterflasks:iron_flask', [
+		' AB',
+		'CDC',
+		'EFE'
+	], {
+		A: '#forge:string',
+		B: '#forge:tools/knives',
+		C: '#forge:cloth',
+		D: 'waterflasks:bladder',
+		E: 'waterflasks:leather_side',
+		F: 'waterflasks:unfinished_iron_flask'
+	}).id('tfg:shaped/iron_flask')
+
+	event.remove({ id: 'waterflasks:crafting/repair_broken_iron' })
+	event.shaped('waterflasks:iron_flask', [
+		'AB',
+		'CD'
+	], {
+		A: 'waterflasks:broken_iron_flask',
+		B: 'waterflasks:bladder',
+		C: '#forge:cloth',
+		D: '#forge:tools/knives'
+	}).id('tfg:shaped/repair_broken_iron')
+
+	event.remove({ id: 'waterflasks:crafting/repair_iron' })
+	event.shaped('waterflasks:iron_flask', [
+		'AB',
+		'CD'
+	], {
+		A: 'waterflasks:iron_flask',
+		B: 'waterflasks:bladder',
+		C: '#forge:cloth',
+		D: '#forge:tools/knives'
+	}).id('tfg:shaped/repair_iron')
+
+	event.remove({ id: 'waterflasks:crafting/red_steel_flask' })
+	event.shaped('waterflasks:red_steel_flask', [
+		' AB',
+		'CDC',
+		'EFE'
+	], {
+		A: '#forge:string',
+		B: '#forge:tools/knives',
+		C: 'tfg:phantom_silk',
+		D: 'waterflasks:bladder',
+		E: 'waterflasks:leather_side',
+		F: 'waterflasks:unfinished_red_steel_flask'
+	}).id('tfg:shaped/red_steel_flask')
 
 	event.recipes.gtceu.assembler('tfg:water_flasks/iron_flask')
-		.itemInputs('2x #forge:cloth', '#forge:string', '#forge:leather', '#forge:plates/wrought_iron')
+		.itemInputs('2x #forge:cloth', '#forge:string', '#forge:plates/wrought_iron', '3x #forge:foils/rubber')
 		.circuit(5)
 		.itemOutputs('waterflasks:iron_flask')
 		.duration(250)
 		.EUt(16)
 
 	event.recipes.gtceu.assembler('tfg:water_flasks/iron_flask_repair')
-		.itemInputs('waterflasks:broken_iron_flask', '#forge:cloth', '#forge:string', '#forge:leather')
+		.itemInputs('waterflasks:broken_iron_flask', '#forge:cloth', '#forge:foils/rubber')
 		.circuit(6)
 		.itemOutputs('waterflasks:iron_flask')
 		.duration(250)
 		.EUt(16)
 
 	event.recipes.gtceu.assembler('tfg:water_flasks/red_steel_flask')
-		.itemInputs('2x tfc:silk_cloth', '#forge:string', '#forge:leather', '#forge:plates/red_steel')
+		.itemInputs('2x tfg:phantom_silk', '#forge:string', '#forge:plates/red_steel', '3x #forge:foils/rubber')
 		.circuit(5)
 		.itemOutputs('waterflasks:red_steel_flask')
 		.duration(250)

@@ -1,0 +1,38 @@
+{
+	"feature": "tfg:moon/surface/pile_black_sand",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 5
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING"
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_blocks",
+				"offset": [ 0, -1, 0 ],
+				"blocks": [
+					"tfc:rock/raw/basalt",
+					"tfc:rock/hardened/basalt",
+					"tfc:rock/gravel/basalt",
+					"ad_astra:moon_deepslate",
+					"tfg:rock/hardened_moon_deepslate",
+					"tfc:sand/black"
+				]
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING"
+		}
+	]
+}

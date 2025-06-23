@@ -112,4 +112,6 @@ const registerFirmaCivRecipes = (event) => {
 		B: '#forge:wax'
 	}).id('tfg:firmaciv/rope_coil_from_cloth')
 	// #endregion
+
+	event.replaceInput({id: 'firmaciv:crafting/small_triangular_sail'}, 'tfc:wool_cloth', '#forge:cloth')
 }

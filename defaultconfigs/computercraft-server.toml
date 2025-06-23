@@ -1,0 +1,205 @@
+#The disk space limit for computers and turtles, in bytes.
+computer_space_limit = 1000000
+#The disk space limit for floppy disks, in bytes.
+floppy_space_limit = 125000
+#The file upload size limit, in bytes. Must be in range of 1 KiB and 16 MiB.
+#Keep in mind that uploads are processed in a single tick - large files or
+#poor network performance can stall the networking thread. And mind the disk space!
+#Range: 1024 ~ 16777216
+upload_max_size = 524288
+#Set how many files a computer can have open at the same time. Set to 0 for unlimited.
+#Range: > 0
+maximum_open_files = 128
+#A comma separated list of default system settings to set on new computers.
+#Example: "shell.autocomplete=false,lua.autocomplete=false,edit.autocomplete=false"
+#will disable all autocompletion.
+default_computer_settings = ""
+#Log exceptions thrown by peripherals and other Lua objects. This makes it easier
+#for mod authors to debug problems, but may result in log spam should people use
+#buggy methods.
+log_computer_errors = true
+#Require players to be in creative mode and be opped in order to interact with
+#command computers. This is the default behaviour for vanilla's Command blocks.
+command_require_creative = true
+#A list of generic methods or method sources to disable. Generic methods are
+#methods added to a block/block entity when there is no explicit peripheral
+#provider. This includes inventory methods (i.e. inventory.getItemDetail,
+#inventory.pushItems), and (if on Forge), the fluid_storage and energy_storage
+#methods.
+#Methods in this list can either be a whole group of methods (computercraft:inventory)
+#or a single method (computercraft:inventory#pushItems).
+#
+disabled_generic_methods = []
+
+#Controls execution behaviour of computers. This is largely intended for
+#fine-tuning servers, and generally shouldn't need to be touched.
+[execution]
+	#Set the number of threads computers can run on. A higher number means more
+	#computers can run at once, but may induce lag. Please note that some mods may
+	#not work with a thread count higher than 1. Use with caution.
+	#Range: > 1
+	computer_threads = 1
+	#The maximum time that can be spent executing tasks in a single tick, in
+	#milliseconds.
+	#Note, we will quite possibly go over this limit, as there's no way to tell how
+	#long a will take - this aims to be the upper bound of the average time.
+	#Range: > 1
+	max_main_global_time = 10
+	#The ideal maximum time a computer can execute for in a tick, in milliseconds.
+	#Note, we will quite possibly go over this limit, as there's no way to tell how
+	#long a will take - this aims to be the upper bound of the average time.
+	#Range: > 1
+	max_main_computer_time = 5
+
+#Controls the HTTP API
+[http]
+	#Enable the "http" API on Computers. Disabling this also disables the "pastebin" and
+	#"wget" programs, that many users rely on. It's recommended to leave this on and use
+	#the "rules" config option to impose more fine-grained control.
+	enabled = true
+	#Enable use of http websockets. This requires the "http_enable" option to also be true.
+	websocket_enabled = true
+	#The number of http requests a computer can make at one time. Additional requests
+	#will be queued, and sent when the running requests have finished. Set to 0 for
+	#unlimited.
+	#Range: > 0
+	max_requests = 16
+	#The number of websockets a computer can have open at one time.
+	#Range: > 1
+	max_websockets = 4
+
+	#Limits bandwidth used by computers.
+	[http.bandwidth]
+		#The number of bytes which can be downloaded in a second. This is shared across all computers. (bytes/s).
+		#Range: > 1
+		global_download = 33554432
+		#The number of bytes which can be uploaded in a second. This is shared across all computers. (bytes/s).
+		#Range: > 1
+		global_upload = 33554432
+
+	#Tunnels HTTP and websocket requests through a proxy server. Only affects HTTP
+	#rules with "use_proxy" set to true (off by default).
+	#If authentication is required for the proxy, create a "computercraft-proxy.pw"
+	#file in the same directory as "computercraft-server.toml", containing the
+	#username and password separated by a colon, e.g. "myuser:mypassword". For
+	#SOCKS4 proxies only the username is required.
+	[http.proxy]
+		#The type of proxy to use.
+		#Allowed Values: HTTP, HTTPS, SOCKS4, SOCKS5
+		type = "HTTP"
+		#The hostname or IP address of the proxy server.
+		host = ""
+		#The port of the proxy server.
+		#Range: 1 ~ 65536
+		port = 8080
+
+	#A list of rules which control behaviour of the "http" API for specific domains or
+	#IPs. Each rule matches against a hostname and an optional port, and then sets several
+	#properties for the request.  Rules are evaluated in order, meaning earlier rules override
+	#later ones.
+	#
+	#Valid properties:
+	# - "host" (required): The domain or IP address this rule matches. This may be a domain name
+	#   ("pastebin.com"), wildcard ("*.pastebin.com") or CIDR notation ("127.0.0.0/8").
+	# - "port" (optional): Only match requests for a specific port, such as 80 or 443.
+	#
+	# - "action" (optional): Whether to allow or deny this request.
+	# - "max_download" (optional): The maximum size (in bytes) that a computer can download in this
+	#   request.
+	# - "max_upload" (optional): The maximum size (in bytes) that a computer can upload in a this request.
+	# - "max_websocket_message" (optional): The maximum size (in bytes) that a computer can send or
+	#   receive in one websocket packet.
+	# - "use_proxy" (optional): Enable use of the HTTP/SOCKS proxy if it is configured.
+	[[http.rules]]
+		#The magic "$private" host matches all private address ranges, such as localhost and 192.168.0.0/16.
+		#This rule prevents computers accessing internal services, and is strongly recommended.
+		host = "$private"
+		#Deny all requests to private IP addresses.
+		action = "deny"
+
+	[[http.rules]]
+		#The wildcard "*" rule matches all remaining hosts.
+		host = "*"
+		#Allow all non-denied hosts.
+		action = "allow"
+		#The maximum size (in bytes) that a computer can download in a single request.
+		#Note that responses may receive more data than allowed, but this data will not
+		#be returned to the client.
+		max_download = 16777216
+		#The maximum size (in bytes) that a computer can upload in a single request. This
+		#includes headers and POST text.
+		max_upload = 4194304
+		#The maximum size (in bytes) that a computer can send or receive in one websocket packet.
+		max_websocket_message = 131072
+		#Enable use of the HTTP/SOCKS proxy if it is configured.
+		use_proxy = false
+
+#Various options relating to peripherals.
+[peripheral]
+	#Enable Command Block peripheral support
+	command_block_enabled = false
+	#The range of Wireless Modems at low altitude in clear weather, in meters.
+	#Range: 0 ~ 100000
+	modem_range = 64
+	#The range of Wireless Modems at maximum altitude in clear weather, in meters.
+	#Range: 0 ~ 100000
+	modem_high_altitude_range = 384
+	#The range of Wireless Modems at low altitude in stormy weather, in meters.
+	#Range: 0 ~ 100000
+	modem_range_during_storm = 64
+	#The range of Wireless Modems at maximum altitude in stormy weather, in meters.
+	#Range: 0 ~ 100000
+	modem_high_altitude_range_during_storm = 384
+	#Maximum amount of notes a speaker can play at once.
+	#Range: > 1
+	max_notes_per_tick = 8
+	#The limit to how much monitor data can be sent *per tick*. Note:
+	# - Bandwidth is measured before compression, so the data sent to the client is
+	#   smaller.
+	# - This ignores the number of players a packet is sent to. Updating a monitor for
+	#   one player consumes the same bandwidth limit as sending to 20.
+	# - A full sized monitor sends ~25kb of data. So the default (1MB) allows for ~40
+	#   monitors to be updated in a single tick.
+	#Set to 0 to disable.
+	#Range: > 0
+	monitor_bandwidth = 1000000
+
+#Various options relating to turtles.
+[turtle]
+	#Set whether Turtles require fuel to move.
+	need_fuel = true
+	#The fuel limit for Turtles.
+	#Range: > 0
+	normal_fuel_limit = 20000
+	#The fuel limit for Advanced Turtles.
+	#Range: > 0
+	advanced_fuel_limit = 100000
+	#If set to true, Turtles will push entities out of the way instead of stopping if
+	#there is space to do so.
+	can_push = true
+
+#Configure the size of various computer's terminals.
+#Larger terminals require more bandwidth, so use with care.
+[term_sizes]
+
+	#Terminal size of computers.
+	[term_sizes.computer]
+		#Range: 1 ~ 255
+		width = 51
+		#Range: 1 ~ 255
+		height = 19
+
+	#Terminal size of pocket computers.
+	[term_sizes.pocket_computer]
+		#Range: 1 ~ 255
+		width = 26
+		#Range: 1 ~ 255
+		height = 20
+
+	#Maximum size of monitors (in blocks).
+	[term_sizes.monitor]
+		#Range: 1 ~ 32
+		width = 8
+		#Range: 1 ~ 32
+		height = 6
+

@@ -7,6 +7,11 @@ function removeGreateRecipes(event) {
 		event.remove({ output: item })
 	})
 
+	global.GREATE_DISABLED_FLUIDS.forEach(fluid => {
+		event.remove({ input: fluid })
+		event.remove({ output: fluid })
+	})
+
 	event.remove({ mod: 'greate', input: 'create:andesite_alloy' });
 	
 	event.remove({ id: 'greate:shapeless/large_andesite_alloy_cogwheel_from_little' })
@@ -18,7 +23,7 @@ function removeGreateRecipes(event) {
 	event.remove({ id: 'greate:shaped/andesite_alloy_shaft' })
 
 	// Until we got a fix from Greate for recipes in a cleanroom
-	event.remove({ id: 'greate:shaped/stainless_steel_mechanical_saw' })	
+	event.remove({ id: 'greate:shaped/stainless_steel_mechanical_saw' })
 	event.remove({ id: 'greate:shaped/titanium_mechanical_saw' })
 
 	event.remove({ id: 'greate:splashing/dough' })

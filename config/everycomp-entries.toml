@@ -29,6 +29,22 @@
 			white_cedar = true
 			willow = true
 
+		[types.wood_type.domum_ornamentum]
+			cactus = true
+			cactus_extra = true
+
+		[types.wood_type.afc]
+			baobab = true
+			eucalyptus = true
+			mahogany = true
+			hevea = true
+			tualang = true
+			teak = true
+			cypress = true
+			fig = true
+			ironwood = true
+			ipe = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.gtceu]

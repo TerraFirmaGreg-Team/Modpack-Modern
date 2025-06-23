@@ -59,7 +59,7 @@ const registerFramedBlocksRecipes = (event) => {
 	event.shapeless(
 		Item.of('framedblocks:framed_pressure_plate', 1),
 		[
-			'#minecraft:pressure_plates',
+			'#minecraft:wooden_pressure_plates',
 			'framedblocks:framed_cube',
 		]
 	).id('framedblocks:framed_pressure_plate')
@@ -70,41 +70,41 @@ const registerFramedBlocksRecipes = (event) => {
 			{
 				"count": 1,
 				"ingredient": {
-					tag: "minecraft:pressure_plates"
+					tag: "minecraft:wooden_pressure_plates"
 				}
 			}
 		],
-		material: 1536,
+		material: 6144,
 		result: {
 			item: "framedblocks:framed_pressure_plate"
 		}
 	}).id('framedblocks:framing_saw/framed_pressure_plate')
 	//#endregion
 
-	//#region Framed Obsidian Pressure Plate
-	event.shaped('framedblocks:framed_obsidian_pressure_plate', [
-		'AA',
-		'BB'
-	], {
-		A: '#forge:plates/obsidian',
-		B: 'framedblocks:framed_cube'
-	}).id('framedblocks:framed_obsidian_pressure_plate')
+	//#region Framed Pressure Plate
+	event.shapeless(
+		Item.of('framedblocks:framed_stone_pressure_plate', 1),
+		[
+			'#minecraft:stone_pressure_plates',
+			'framedblocks:framed_cube',
+		]
+	).id('framedblocks:framed_stone_pressure_plate')
 
 	event.custom({
 		type: "framedblocks:frame",
 		additives: [
 			{
-				count: 1,
-				ingredient: {
-					tag: "forge:plates/obsidian"
+				"count": 1,
+				"ingredient": {
+					tag: "minecraft:stone_pressure_plates"
 				}
 			}
 		],
-		material: 1536,
+		material: 6144,
 		result: {
-			item: "framedblocks:framed_obsidian_pressure_plate"
+			item: "framedblocks:framed_stone_pressure_plate"
 		}
-	}).id('framedblocks:framing_saw/framed_obsidian_pressure_plate')
+	}).id('framedblocks:framing_saw/framed_stone_pressure_plate')
 	//#endregion
 
 	//#region Framed Gold Pressure Plate
@@ -126,7 +126,7 @@ const registerFramedBlocksRecipes = (event) => {
 				}
 			}
 		],
-		material: 1536,
+		material: 6144,
 		result: {
 			item: "framedblocks:framed_gold_pressure_plate"
 		}
@@ -138,7 +138,7 @@ const registerFramedBlocksRecipes = (event) => {
 		'AA',
 		'BB'
 	], {
-		A: '#forge:plates/wrought_iron',
+		A: '#forge:plates/iron',
 		B: 'framedblocks:framed_cube'
 	}).id('framedblocks:framed_iron_pressure_plate')
 
@@ -152,7 +152,7 @@ const registerFramedBlocksRecipes = (event) => {
 				}
 			}
 		],
-		material: 1536,
+		material: 6144,
 		result: {
 			item: "framedblocks:framed_iron_pressure_plate"
 		}

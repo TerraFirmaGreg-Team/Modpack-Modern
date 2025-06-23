@@ -1,6 +1,6 @@
 {
     "name": "TerraFirmaGreg-Modern",
-    "version": "0.9.2",
+    "version": "0.9.11",
     "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
     "author": "Exception, Xikaro",
     "overrides": [
@@ -30,9 +30,6 @@
             "side": "CLIENT"
         },
         "better-chat": {
-            "side": "CLIENT"
-        },
-        "better-foliage-renewed": {
             "side": "CLIENT"
         },
         "betterf3": {
@@ -194,6 +191,27 @@
         "rainboows": {
             "side": "CLIENT"
         },
+        "fix-gpu-memory-leak": {
+            "side": "CLIENT"
+        },
+        "tfc-support-indicator": {
+            "side": "CLIENT"
+        },
+        "immediatelyfast": {
+            "side": "CLIENT"
+        },
+        "unilib": {
+            "side": "CLIENT"
+        },
+        "fast-ip-ping": {
+            "side": "CLIENT"
+        },
+        "badoptimizations": {
+            "side": "CLIENT"
+        },
+        "entityculling": {
+            "side": "CLIENT"
+        },
         "resourceful-config": {
             "side": "BOTH"
         },
@@ -209,17 +227,32 @@
         "geckolib": {
             "side": "BOTH"
         },
-        "detected-setblock-be-gone": {
-            "side": "CLIENT"
-        },
         "tfcgenviewer": {
             "side": "BOTH"
         },
         "tfc-hot-or-not": {
             "side": "BOTH"
         },
+        "xaeros-minimap": {
+            "side": "BOTH"
+        },
         "particular-reforged": {
             "side": "BOTH"
+        },
+        "pick-up-notifier": {
+            "side": "BOTH"
+        },
+        "inventory-tweaks-refoxed": {
+            "side": "BOTH"
+        },
+        "fastboot": {
+            "side": "BOTH"
+        },
+        "detected-setblock-be-gone": {
+            "side": "BOTH"
+        },
+        "probejs": {
+            "export": false
         }
     }
 }

@@ -1,0 +1,96 @@
+{
+	"name": "tfg:moon/moonbase_connectors",
+	"fallback": "tfg:moon/moonbase_ends",
+	"elements": [
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:moon/moonbase/connector/moonbase_connector1",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:moon/moonbase/connector/moonbase_connector2",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:moon/moonbase/connector/moonbase_connector3",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:moon/moonbase/connector/moonbase_connector4",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:moon/moonbase/connector/moonbase_connector5",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:moon/moonbase/connector/moonbase_connector6",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:moon/moonbase/end/moonbase_end1",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:moon/moonbase/end/moonbase_end2",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:moon/moonbase/end/moonbase_end3",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:moon/moonbase/end/moonbase_end4",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

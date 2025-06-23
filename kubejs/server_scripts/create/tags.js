@@ -47,7 +47,16 @@ const registerCreateItemTags = (event) => {
 	event.add('create:blaze_burner_fuel/special', "gtceu:exquisite_coal_gem")
 	event.add('create:blaze_burner_fuel/special', "gtceu:coke_gem")
 
+	// Lets the basin be put on top of a charcoal forge
 	event.add('tfc:forge_invisible_whitelist', 'create:basin')
+
+	// Allows automation with the 3x3 Hellforge
+	event.add('tfc:forge_invisible_whitelist', 'tfcchannelcasting:channel')
+	event.add('tfc:forge_invisible_whitelist', 'tfcchannelcasting:mold_table')
+	event.add('tfc:forge_invisible_whitelist', 'greate:steel_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:aluminum_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:stainless_steel_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:titanium_mechanical_pump')
 
 	event.add('create:non_movable', 'gtceu:wood_crate')
 	event.add('create:non_movable', 'gtceu:bronze_crate')
@@ -79,6 +88,22 @@ const registerCreateBlockTags = (event) => {
 
 	// Disable bulk blasting
 	event.removeAll('create:fan_processing_catalysts/blasting')
+
+	// Waters for bulk washing
+	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/river_water')
+	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/salt_water')
+	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/spring_water')
+
+	// Lets the basin be put on top of a charcoal forge
+	event.add('tfc:forge_invisible_whitelist', 'create:basin')
+
+	// Allows automation with the 3x3 Hellforge
+	event.add('tfc:forge_invisible_whitelist', 'tfcchannelcasting:channel')
+	event.add('tfc:forge_invisible_whitelist', 'tfcchannelcasting:mold_table')
+	event.add('tfc:forge_invisible_whitelist', 'greate:steel_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:aluminum_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:stainless_steel_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:titanium_mechanical_pump')
 }
 
 
@@ -94,4 +119,9 @@ const registerCreateFluidTags = (event) => {
 
 	// Disable bulk blasting
 	event.removeAll('create:fan_processing_catalysts/blasting')
+	
+	// Waters for bulk washing
+	event.add('create:fan_processing_catalysts/splashing', 'tfc:river_water')
+	event.add('create:fan_processing_catalysts/splashing', 'tfc:salt_water')
+	event.add('create:fan_processing_catalysts/splashing', 'tfc:spring_water')
 }

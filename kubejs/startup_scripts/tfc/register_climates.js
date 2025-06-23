@@ -1,5 +1,7 @@
 const $ICalendar = Java.loadClass('net.dries007.tfc.util.calendar.ICalendar')
 
+const $LerpFloatLayer = Java.loadClass('net.dries007.tfc.world.chunkdata.LerpFloatLayer')
+
 const TICKS_IN_HOUR = $ICalendar.TICKS_IN_HOUR;
 const TICKS_IN_DAY = $ICalendar.TICKS_IN_DAY;
 const SIX_TIMES_TICKS_IN_HOUR = TICKS_IN_HOUR * 6;
@@ -110,7 +112,7 @@ TFCEvents.registerClimateModel(event => {
 		model.setWindVector((block, calendarTicks) => event.newVec2(0, 0))
 	})
 
-	/*event.registerClimateModel('tfg:orbit_climate', model => {
+	event.registerClimateModel('tfg:orbit_climate', model => {
 
 		// There's basically no heat diffusion in space so we can pretend this is your spacesuit temp
 		model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => 15)
@@ -133,6 +135,22 @@ TFCEvents.registerClimateModel(event => {
 		model.setAirFog((level, pos, calendarTicks) => 0)
 		model.setWaterFog((level, pos, calendarTicks) => 0.25)
 		model.setWindVector((block, calendarTicks) => event.newVec2(0, 0))
+
+		//model.setCreateChunkData((level, chunkAccess, chunkData) => {
+
+		//	const rainfallLayer = new $LerpFloatLayer(0, 0, 0, 0);
+		//	const tempLayer = new $LerpFloatLayer(-5, -5, -5, -5);
+
+		//	chunkData.generatePartial(rainfallLayer, tempLayer, "none", 0, 0);
+
+		//	let heightArray = [];
+		//	let aquiferArray = [];
+		//	for (var i = 0; i < 16 * 16; i++) {
+		//		heightArray[i] = 64;
+		//		aquiferArray[i] = 0;
+		//	}
+		//	chunkData.generateFull(heightArray, aquiferArray);
+		//})
 	})
 
 	event.registerClimateModel('tfg:mars_climate', model => {
@@ -159,5 +177,5 @@ TFCEvents.registerClimateModel(event => {
 		model.setAirFog((level, pos, calendarTicks) => 0)
 		model.setWaterFog((level, pos, calendarTicks) => 0.25)
 		model.setWindVector((block, calendarTicks) => event.newVec2(0.25, 0.25))
-	})*/
+	})
 })

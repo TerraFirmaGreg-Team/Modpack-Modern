@@ -26,19 +26,18 @@ function registerTFCWoodRecipes(event) {
 
 		// ? -> Деревянная нажимная пластина
 		event.shaped(`tfc:wood/planks/${wood}_pressure_plate`, [
-			'ABA',
+			' B ',
 			'CDC',
-			'AEA'
+			' E '
 		], {
-			A: '#forge:screws/wood',
 			B: '#tfc:hammers',
 			C: `tfc:wood/planks/${wood}_slab`,
-			D: '#forge:springs',
+			D: '#forge:small_springs',
 			E: '#forge:tools/screwdrivers'
 		}).id(`tfc:crafting/wood/${wood}_pressure_plate`)
 
 		event.recipes.gtceu.assembler(`${wood}_pressure_plate`)
-			.itemInputs('#forge:springs', `2x tfc:wood/planks/${wood}_slab`)
+			.itemInputs('#forge:small_springs', `2x tfc:wood/planks/${wood}_slab`)
 			.circuit(0)
 			.itemOutputs(`2x tfc:wood/planks/${wood}_pressure_plate`)
 			.duration(50)

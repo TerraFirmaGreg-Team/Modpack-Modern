@@ -1,0 +1,45 @@
+
+#World settings
+[server]
+	#Check for and notify of mismatching tags. Only works when the same option in the common config is true.
+	check_tags = true
+	#Automatically rebuild and reload the generated tags datapack when a tagging mismatch is detected. Only works when the same option in the server/world config is true.
+	auto_rebuild_tags = true
+	#Whether fake players (such as block placers) can utilize Additional Placement's placement logic.
+	fake_player_placement = true
+
+	#Options for registered block types for additional placement generation.
+	[server.types]
+
+		[server.types.additionalplacements]
+
+			#Slabs
+			[server.types.additionalplacements.slab]
+				#Blocklist to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_logic = ["+*"]
+
+			#Stairs
+			[server.types.additionalplacements.stairs]
+				#Blocklist to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_logic = ["+*"]
+
+			#Carpets
+			[server.types.additionalplacements.carpet]
+				#Blocklist to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_logic = ["+*"]
+
+			#Regular pressure plates
+			[server.types.additionalplacements.pressure_plate]
+				#Blocklist to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_logic = ["+*"]
+
+			#Weighted pressure plates
+			[server.types.additionalplacements.weighted_pressure_plate]
+				#Blocklist to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_logic = ["+*"]
+

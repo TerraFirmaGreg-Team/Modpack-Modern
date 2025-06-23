@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:red_mushroom"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				},
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.25
+				}
+			]
+		}
+	]
+}

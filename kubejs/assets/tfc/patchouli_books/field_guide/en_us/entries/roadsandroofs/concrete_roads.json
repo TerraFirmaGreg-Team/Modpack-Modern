@@ -1,0 +1,63 @@
+{
+  "name": "Concrete Roads",
+  "category": "tfc:roadsandroofs",
+  "icon": "rnr:concrete_road_panel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Concrete roads are the fastest variety of road that can be constructed, offering a 30% movement speed bonus when properly constructed. However, road builders must be diligent when constructing concrete roads to prevent them from cracking or being trodden on while wet, as this will remove the speed bonus."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Concrete Road",
+      "images": [ "rnr:textures/gui/book/concrete_road.png" ],
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "liquid_concrete",
+      "item": "gtceu:concrete_bucket",
+      "title": "Concrete Crafting",
+      "text": "The first step in making a concrete road is mixing the liquid concrete. Use a $(thing)Mixer$() to combine water with any two stone dusts, one of either calcite or marble dust, and gypsum dust, or any three stone dusts with clay dust to make $(thing)Liquid Concrete$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "wet_concrete",
+      "item": "rnr:bucket/concrete",
+      "title": "Concrete Crafting",
+      "text": "Then add the liquid concrete in a $(thing)Mixer$() set to $(thing)Programmed Circuit #7$() with more water to dilute it into $(thing)Wet Concrete Mix$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Once $(thing)Wet Concrete$() has been mixed, it can be picked up in a bucket and placed on a $(thing)Base Course Block$() where it will spread to adjacent blocks. The concrete will harden after one day, and until it hardens care must be taken that no creatures walk through the wet concrete as this will create an uneven surface that provides no speed bonus. Footprints can be smoothed out with a $(thing)Mattock$()."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Pouring a Concrete Road",
+      "images": [ "rnr:textures/gui/book/wet_concrete.png" ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Shrinkage cracking is also a concern as concrete sets. If concrete is poured in areas more than four blocks wide, blocks that are farther than two blocks from the nearest $(thing)Edge$(), $(thing)Control Joint$(), or $(thing)Textured Finish$() will crack when set. This can be prevented by pouring concrete in smaller areas, using a $(thing)Mattock$() to add $(thing)Control Joints$(), or by applying a $(thing)Textured Finish$()."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Control Joints",
+      "images": [ "rnr:textures/gui/book/control_joints.png" ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Textured Finishes$() are created by pressing $(thing)Bricks$(), $(thing)Flagstones$(), or $(thing)Smooth Stone Blocks$() into drying concrete to create an architectural finish. These blocks also act as $(thing)Control Joints$() for preventing cracking. Once concrete has finished drying, a $(thing)Chisel$() can be used to form slabs and stairs."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Faux Sett Road",
+      "images": [ "rnr:textures/gui/book/faux_sett.png" ],
+      "border": true
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 20
+}

@@ -1,0 +1,6 @@
+
+[molds]
+	#Tank capacity of a Pickaxe Head mold (in mB).
+	#Range: 0 ~ 2147483645
+	moldHeartCapacity = 100
+

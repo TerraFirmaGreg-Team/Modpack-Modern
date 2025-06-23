@@ -1,0 +1,34 @@
+{
+	"type": "minecraft:block_pile",
+	"config": {
+		"state_provider": {
+			"type": "minecraft:weighted_state_provider",
+			"entries": [
+				{
+					"weight": 35,
+					"data": {
+						"Name": "tfg:rock/hardened_glacio_stone"
+					}
+				},
+				{
+					"weight": 25,
+					"data": {
+						"Name": "ad_astra:glacio_cobblestone"
+					}
+				},
+				{
+					"weight": 20,
+					"data": {
+						"Name": "ad_astra:glacio_stone_slab"
+					}
+				},
+				{
+					"weight": 20,
+					"data": {
+						"Name": "ad_astra:glacio_cobblestone_slab"
+					}
+				}
+			]
+		}
+	}
+}

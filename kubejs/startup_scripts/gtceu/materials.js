@@ -1,3 +1,5 @@
+﻿// priority: 0
+
 const registerGTCEuMaterials = (event) => {
 
 }
@@ -37,7 +39,8 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_FRAME,
 		GENERATE_PLATE,
 		GENERATE_DENSE,
-		GENERATE_RING
+		GENERATE_RING,
+		GENERATE_FOIL
 	} = $MATERIAL_FLAGS
 
 	var metalTooling = [
@@ -192,9 +195,9 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.BismuthBronze.addFlags(GENERATE_SMALL_GEAR);
 	
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
-	GTMaterials.BlackSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW, GENERATE_SMALL_GEAR);
+	GTMaterials.BlackSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
 	GTMaterials.BlueSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
-	GTMaterials.RedSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
+	GTMaterials.RedSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW, GENERATE_FOIL);
 	GTMaterials.WroughtIron.addFlags(GENERATE_ROTOR, GENERATE_SPRING, GENERATE_SMALL_GEAR);
 	
 	GTMaterials.Copper.addFlags(GENERATE_BOLT_SCREW);
@@ -229,6 +232,8 @@ const registerGTCEuMaterialModification = (event) => {
 	// Cast iron tools don't make sense but gregtech shits itself if they're missing,
 	// so I'm just giving them terrible terrible stats
 	GTMaterials.Iron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 1.0, 20, 2, [GTToolType.PICKAXE]).build());
+	// Hide netherite too
+	GTMaterials.Netherite.getProperty(PropertyKey.TOOL).removeTypes(metalTooling);
 
 	for (var material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
 		var toolProperty = material.getProperty(PropertyKey.TOOL);
@@ -252,6 +257,15 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Cobaltite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
 	GTMaterials.Galena.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.WEAK_POISON, 1, false));
 	GTMaterials.Chromite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.IRRITANT, 1, false));
+
+	// Make these the lowest tier of EBF instead
+	GTMaterials.BlackSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
+	GTMaterials.RedSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
+	GTMaterials.BlueSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
+
+	// Change byproducts so you can't get certus from normal quartzite
+	GTMaterials.Quartzite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.NetherQuartz, GTMaterials.Barite, GTMaterials.NetherQuartz);
+	GTMaterials.CertusQuartz.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.CertusQuartz, GTMaterials.Quartzite, GTMaterials.CertusQuartz);
 
 	// Color Adjustments
 	GTMaterials.BismuthBronze.setMaterialARGB(0x5A966E)
@@ -280,7 +294,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Cobalt.setMaterialARGB(0xC9E4FB)
 	GTMaterials.Cobalt.setMaterialSecondaryARGB(0x1D2688)
 	GTMaterials.CertusQuartz.setMaterialARGB(0xB8D8FC)
-	GTMaterials.CertusQuartz.setMaterialSecondaryARGB(0x466580)
+	GTMaterials.CertusQuartz.setMaterialSecondaryARGB(0xADCCEF)
 	GTMaterials.Vanadium.setMaterialARGB(0xD8D4E7)
 	GTMaterials.Vanadium.setMaterialSecondaryARGB(0x7E988F)
 	GTMaterials.Brass.setMaterialSecondaryARGB(0x791905)

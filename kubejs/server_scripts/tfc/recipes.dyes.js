@@ -30,6 +30,18 @@ function registerTFCDyeRecipes(event) {
 
 	//#endregion
 
+	//#region Terracotta
+
+	event.replaceInput({id: 'tfc:barrel/dye/bleach_terracotta'}, '#tfc:colored_terracotta', 'minecraft:terracotta')
+
+	event.replaceInput({id: 'gtceu:chemical_bath/decolor_terracotta'}, '#minecraft:terracotta', '#tfc:colored_terracotta')
+
+	global.MINECRAFT_DYE_NAMES.forEach(dye => {
+		event.replaceInput({id: `gtceu:chemical_bath/dye_terracotta_to_${dye}`}, 'minecraft:terracotta', '#minecraft:terracotta')
+	})
+
+	//#endregion
+
 	//#region Обычный сосуд
 
 	event.recipes.gtceu.chemical_bath(`unfired_vessel_decolor`)
@@ -122,10 +134,24 @@ function registerTFCDyeRecipes(event) {
 				inputArray.push(`#forge:dyes/${dyeName}`);
 			}
 
-			event.recipes.tfc.pot(inputArray, Fluid.of('tfc:salt_water', 250 * i), 600, 2000)
+			event.recipes.tfc.pot(inputArray, Fluid.of('tfc:vinegar', 250 * i), 200, 200)
 				.fluidOutput(Fluid.of(`tfc:${dyeName}_dye`, 144 * i))
 				.id(`tfc:pot/${i}x_${dyeName}_dye`)
 		}
+
+		event.recipes.gtceu.chemical_reactor(`chemical_dye_${dyeName}_acetic`)
+			.itemInputs(`#forge:dyes/${dyeName}`)
+			.inputFluids(Fluid.of('gtceu:acetic_acid', 250), Fluid.of('minecraft:water', 1000))
+			.outputFluids(Fluid.of(`tfc:${dyeName}_dye`, 144 * 3))
+			.duration(15 * 20)
+			.EUt(24)
+
+		event.recipes.gtceu.chemical_reactor(`chemical_dye_${dyeName}_vinegar`)
+			.itemInputs(`#forge:dyes/${dyeName}`)
+			.inputFluids(Fluid.of('tfc:vinegar', 250))
+			.outputFluids(Fluid.of(`tfc:${dyeName}_dye`, 144))
+			.duration(30 * 20)
+			.EUt(24)
 	})
 
 	//#endregion

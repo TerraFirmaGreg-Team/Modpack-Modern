@@ -1,7 +1,9 @@
 name: "Crash Report"
 description: "Report a bug that crashes the game or prevents startup."
 title: "[💥]: "
-labels: [ "1. Type: Crash", "2. Status: Unverified" ]
+labels: [ "Status: Backlog" ]
+projects: ["TerraFirmaGreg-Team/10"]
+type: "Crash"
 
 body:
   - type: checkboxes

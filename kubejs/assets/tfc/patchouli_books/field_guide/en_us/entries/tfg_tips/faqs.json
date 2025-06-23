@@ -33,7 +33,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "chunks",
-			"text": "$(italic)How do I force-load a chunk?$()$(br2)Open your map with $(item)$(k:gui.xaero_open_map)$(), then right-click the chunk > $(thing)Claim Selected$(). Right-click a claimed chunk again > $(thing)Forceload Selected$().$(br2)To increase the number of forceloaded chunks, press $(item)$(k:gui.xaero_pac_key_open_menu)$(), then go to the player settings and increase the number of bonus chunk forceloads."
+			"text": "$(italic)How do I force-load a chunk?$()$(br2)Open your map with $(item)$(k:key.ftbchunks.claim_manager)$(), then shift-left-click the chunk. Shift-right-click to unclaim.$(br2)To increase the number of forceloaded chunks, use $(item)/ftbchunks admin extra_force_load_chunks @p set X$(), where X is the new limit."
 		},
 		{
 			"type": "patchouli:text",

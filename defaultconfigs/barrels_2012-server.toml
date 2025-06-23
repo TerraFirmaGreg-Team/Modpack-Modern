@@ -1,0 +1,13 @@
+
+[general]
+	#Enables worn powderkegs exploding when you catch on fire.
+	enablePowderkegExplosions = true
+	#Enables lamps burning fuel when worn. Disabling this makes them last forever.
+	enableLampBurningFuel = true
+	#The light value emitted by the worn lamp.
+	#Range: 0 ~ 15
+	lampBrightness = 15
+	#The ticks between times the lamp tries to update its light position while worn. 20 ticks are in a second.
+	#Range: > 1
+	lampUpdateInterval = 15
+

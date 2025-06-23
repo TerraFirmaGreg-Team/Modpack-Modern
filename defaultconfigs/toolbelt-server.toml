@@ -1,0 +1,9 @@
+
+[general]
+	#List of items to force-allow placing in the belt. Takes precedence over blacklist.
+	whitelist = []
+	#List of items to disallow from placing in the belt. (whitelist takes precedence)
+	blacklist = []
+	#When set to false, stackable items will no longer be allowed by default.
+	allowAllNonStackableItems = true
+

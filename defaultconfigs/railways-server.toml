@@ -1,0 +1,75 @@
+
+#.
+#Miscellaneous settings
+[misc]
+	#.
+	#Coupler will require points to be on the same or adjacent track edge, this will prevent the coupler from working if there is any form of junction in between the two points.
+	strictCoupler = false
+	#.
+	#Allow controlling Brass Switches remotely when approaching them on a train
+	flipDistantSwitches = true
+	#.
+	#Max distance between targeted track and placed switch stand
+	#Range: 16 ~ 128
+	switchPlacementRange = 64
+	#.
+	#Allow creepers and ghast fireballs to damage tracks
+	creeperTrackDamage = false
+	#.
+	#Multiplier used for calculating exhaustion from speed when a handcar is used.
+	#Range: 0.0 ~ 1.0
+	handcarHungerMultiplier = 0.009999999776482582
+
+#.
+#Semaphore settings
+[semaphores]
+	#.
+	#.
+	#Simplified semaphore placement (no upside-down placement)
+	simplifiedPlacement = true
+	#.
+	#Whether semaphore color order is reversed when the semaphores are oriented upside-down
+	flipYellowOrder = false
+
+#.
+#Conductor settings
+[conductors]
+	#.
+	#.
+	#Conductor whistle is limited to the owner of a train
+	mustOwnBoundTrain = false
+	#.
+	#Maximum length of conductor vents
+	#Range: > 1
+	maxConductorVentLength = 64
+	#.
+	#How often a conductor whistle updates the train of the bound conductor
+	#Range: 1 ~ 600
+	whistleRebindRate = 10
+
+#.
+#Journeymap compat settings
+[journeymap]
+	#.
+	#.
+	#[in Ticks]
+	#Outside-of-render-distance train sync time
+	#Range: 10 ~ 600
+	farTrainSyncTicks = 200
+	#.
+	#[in Ticks]
+	#In-render-distance train sync time
+	#Range: 1 ~ 600
+	nearTrainSyncTicks = 5
+
+#.
+#Realism Settings
+[realism]
+	#.
+	#.
+	#Make trains require fuel to run (either from fuel tanks or solid fuels in chests/barrels)
+	realisticTrains = false
+	#.
+	#Make fuel tanks only accept proper liquid fuels (so water etc can't go into them)
+	realisticFuelTanks = true
+

@@ -422,4 +422,16 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         F: '#forge:tools/wrenches',
         G: 'gtceu:aluminium_drum',
     }).id('tfg:sophisticated_backpacks/shaped/tank_upgrade')
+
+    // Stonecutter upgrade
+    event.shaped('sophisticatedbackpacks:stonecutter_upgrade', [
+        'ABA',
+        'CDC',
+        'ACA'
+    ], {
+        A: '#forge:rods/steel',
+        B: 'minecraft:stonecutter',
+        C: '#forge:plates/steel',
+        D: 'sophisticatedbackpacks:upgrade_base',
+    }).id('tfg:sophisticated_backpacks/shaped/stonecutter_upgrade')
 }

@@ -239,11 +239,11 @@ function registerTFCMetalsRecipes(event) {
 
 	// Ванильная дверь декрафт
 	event.recipes.tfc.heating('minecraft:iron_door', 1535)
-		.resultFluid(Fluid.of('gtceu:iron', 144))
+		.resultFluid(Fluid.of('gtceu:iron', 288))
 		.id(`tfc:heating/iron_door`)
 
 	// Ванильная дверь на наковальне
-	event.recipes.tfc.anvil('minecraft:iron_door', '#forge:plates/wrought_iron', ['hit_last', 'draw_not_last', 'punch_not_last'])
+	event.recipes.tfc.anvil('minecraft:iron_door', '#forge:double_plates/wrought_iron', ['hit_last', 'draw_not_last', 'punch_not_last'])
 		.tier(3)
 		.id(`tfc:anvil/iron_door`)
 
@@ -279,6 +279,9 @@ function registerTFCMetalsRecipes(event) {
 	event.recipes.tfc.anvil('gtceu:small_steel_gear', '#forge:ingots/steel', ['hit_last', 'shrink_second_last', 'draw_third_last'])
 		.tier(4)
 		.id('tfc:anvil/small_steel_gear')
+	event.recipes.tfc.anvil('gtceu:small_iron_gear', '#forge:ingots/iron', ['hit_last', 'shrink_second_last', 'draw_third_last'])
+		.tier(2)
+		.id('tfc:anvil/small_iron_gear')
 	event.recipes.tfc.anvil('gtceu:small_brass_gear', '#forge:ingots/brass', ['hit_last', 'shrink_second_last', 'draw_third_last'])
 		.tier(2)
 		.id('tfc:anvil/small_brass_gear')
@@ -291,6 +294,9 @@ function registerTFCMetalsRecipes(event) {
 	event.recipes.tfc.anvil('gtceu:small_black_bronze_gear', '#forge:ingots/black_bronze', ['hit_last', 'shrink_second_last', 'draw_third_last'])
 		.tier(2)
 		.id('tfc:anvil/small_black_bronze_gear')
+	event.recipes.tfc.anvil('gtceu:small_red_alloy_gear', '#forge:ingots/red_alloy', ['hit_last', 'shrink_second_last', 'draw_third_last'])
+		.tier(2)
+		.id('tfc:anvil/small_red_alloy_gear')
 
 	// Cast iron -> Raw Iron Bloom
 	event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('gtceu:iron', 144), 15000)

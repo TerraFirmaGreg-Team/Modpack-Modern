@@ -1,0 +1,19 @@
+{
+	"feature": "tfg:moon/asurine/asurine_spikes",
+	"placement": [
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 2
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING"
+		}
+	]
+}

@@ -24,7 +24,7 @@ function registerVintageImprovementsRecipes(event) {
 		'DAG',
 		'FCF'
 	], {
-		A: 'gtceu:ulv_machine_hull',
+		A: 'gtceu:ulv_machine_casing',
 		B: 'greate:steel_mechanical_pump',
 		C: 'create:mechanical_piston',
 		D: '#forge:springs/wrought_iron',
@@ -84,7 +84,7 @@ function registerVintageImprovementsRecipes(event) {
 	], {
 		A: '#forge:frames/bronze',
 		B: '#tfg:hardwood',
-		C: '#forge:double_ingots/iron',
+		C: '#forge:double_iron_ingots',
 		D: 'greate:andesite_alloy_cogwheel',
 		E: '#minecraft:planks',
 		F: '#forge:tools/hammers'
@@ -97,7 +97,7 @@ function registerVintageImprovementsRecipes(event) {
 	], {
 		A: '#forge:frames/black_bronze',
 		B: '#tfg:hardwood',
-		C: '#forge:double_ingots/iron',
+		C: '#forge:double_iron_ingots',
 		D: 'greate:andesite_alloy_cogwheel',
 		E: '#minecraft:planks',
 		F: '#forge:tools/hammers'
@@ -110,7 +110,7 @@ function registerVintageImprovementsRecipes(event) {
 	], {
 		A: '#forge:frames/bismuth_bronze',
 		B: '#tfg:hardwood',
-		C: '#forge:double_ingots/iron',
+		C: '#forge:double_iron_ingots',
 		D: 'greate:andesite_alloy_cogwheel',
 		E: '#minecraft:planks',
 		F: '#forge:tools/hammers'
@@ -197,7 +197,8 @@ function registerVintageImprovementsRecipes(event) {
 		{ material: GTMaterials.Gold, blows: STARTING_BLOWS },
 		{ material: GTMaterials.Bismuth, blows: STARTING_BLOWS },
 		{ material: GTMaterials.RoseGold, blows: STARTING_BLOWS },
-		{ material: GTMaterials.SterlingSilver, blows: STARTING_BLOWS }
+		{ material: GTMaterials.SterlingSilver, blows: STARTING_BLOWS },
+		{ material: GTMaterials.Tin, blows: STARTING_BLOWS }
 	]
 
 	let HAMMERING_ITEMS = [
@@ -298,7 +299,7 @@ function registerVintageImprovementsRecipes(event) {
 			event.custom({
 				type: 'vintageimprovements:coiling',
 				ingredients: [ChemicalHelper.get(TagPrefix.rod, material, 1)],
-				results: [ChemicalHelper.get(TagPrefix.springSmall, material, 1)],
+				results: [ChemicalHelper.get(TagPrefix.springSmall, material, 2)],
 				processingTime: (material.getMass() / 2) * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/coiling/${material.getName()}_small_spring`)
 		}
@@ -413,7 +414,7 @@ function registerVintageImprovementsRecipes(event) {
 				results: [ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1)],
 				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/pressurizing/${material.getName()}_double_ingot`)
-			
+
 			const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
 
 			event.custom({
@@ -511,9 +512,9 @@ function registerVintageImprovementsRecipes(event) {
 
 			event.custom({
 				type: 'vintageimprovements:curving',
-				ingredients: [ input ],
+				ingredients: [input],
 				itemAsHead: r.inputs.item[1].content.ingredient.item,
-				results: [ output ],
+				results: [output],
 				processingTime: r.duration * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/curving/${recipe.getId().split(':')[1]}`)
 		}
@@ -574,30 +575,93 @@ function registerVintageImprovementsRecipes(event) {
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ tag: 'tfg:latex_logs' }],
-		results: [{ fluid: 'tfg:latex', amount: 250 }],
+		results: [{ fluid: 'tfg:latex', amount: 100 }],
 		processingTime: 600
 	}).id('tfg:vi/vacuumizing/latex_from_rubber_logs')
+
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ tag: 'tfg:rubber_saplings' }],
-		results: [{ fluid: 'tfg:latex', amount: 100 }],
+		results: [{ fluid: 'tfg:latex', amount: 25 }],
 		processingTime: 300
 	}).id('tfg:vi/vacuumizing/latex_from_rubber_sapling')
+
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ tag: 'tfg:rubber_leaves' }],
-		results: [{ fluid: 'tfg:latex', amount: 50 }],
+		results: [{ fluid: 'tfg:latex', amount: 10 }],
 		processingTime: 150
 	}).id('tfg:vi/vacuumizing/latex_from_rubber_leaves')
+
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ tag: 'tfg:rubber_plants' }, { item: 'tfc:powder/soda_ash' }, { fluid: 'tfc:salt_water', amount: 50 }],
+		results: [{ fluid: 'tfg:latex', amount: 50 }],
+		heatRequirement: "heated",
+		processingTime: 40
+	}).id('tfg:vi/vacuumizing/latex_from_rubber_plants')
 
 	// Vulc. latex to raw rubber pulp
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ fluid: 'tfg:vulcanized_latex', amount: 250 }],
-		results: [{ item: 'gtceu:raw_rubber_dust'}],
+		results: [{ item: 'gtceu:raw_rubber_dust' }],
 		processingTime: 120
 	}).id('tfg:vi/vacuumizing/vulcanized_latex_to_raw_rubber')
 	
+	event.custom({
+		type: 'vintageimprovements:pressurizing',
+		ingredients: [{ item: 'minecraft:glowstone_dust', count: 4 }],
+		results: [{ item: 'minecraft:glowstone' }],
+		heatRequirement: "heated",
+		processingTime: 300
+	}).id('tfg:vi/pressurizing/glowstone')
+
+	// #endregion
+
+	// #region Coiling
+
+	event.custom({
+		type: 'vintageimprovements:coiling',
+		ingredients: [{ item: 'tfc:wool' }],
+		results: [{ item: 'tfc:wool_yarn', count: 8 }],
+		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/coiling/wool_yarn`)
+
+	event.custom({
+		type: 'vintageimprovements:coiling',
+		ingredients: [{ item: 'minecraft:phantom_membrane' }],
+		results: [{ item: 'tfg:phantom_thread', count: 16 }],
+		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/coiling/phantom_thread`)
+
+	event.custom({
+		type: 'vintageimprovements:coiling',
+		ingredients: [ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Polycaprolactam, 1)],
+		results: [{ item: 'tfg:polycaprolactam_string', count: 32 }],
+		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/coiling/nylon_string`)
+
+	// #endregion
+
+	// #region Curving
+
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ item: 'minecraft:clay_ball' }],
+		itemAsHead: 'gtceu:ingot_extruder_mold',
+		results: [{ item: 'tfc:ceramic/unfired_brick' }],
+		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/curving/clay_brick`)
+
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ item: 'tfc:fire_clay' }],
+		itemAsHead: 'gtceu:ingot_extruder_mold',
+		results: [{ item: 'tfc:ceramic/unfired_fire_brick' }],
+		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/curving/fire_brick`)
+
 	// #endregion
 }
 

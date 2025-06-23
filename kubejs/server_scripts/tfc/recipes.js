@@ -34,44 +34,6 @@ const registerTFCRecipes = (event) => {
 
 	//#endregion
 
-	//#region Рецепты зерен
-
-	global.TFC_QUERN_GRAIN_RECIPE_COMPONENTS.forEach(element => {
-
-		event.recipes.gtceu.macerator(`tfg:${element.name}`)
-			.itemInputs(element.input)
-			.itemOutputs(element.output)
-			.chancedOutput('tfc:straw', 7000, 500)
-			.duration(200)
-			.EUt(2)
-
-		event.recipes.tfc.quern(element.output, element.input)
-			.id(`tfg:quern/${element.name}`)
-	})
-
-	//#endregion
-
-	//#region Рецепты муки
-
-	global.TFC_QUERN_FLOUR_RECIPE_COMPONENTS.forEach(element => {
-		event.recipes.gtceu.macerator(`tfg:${element.name}`)
-			.itemInputs(element.input)
-			.itemOutputs(element.output)
-			.duration(200)
-			.EUt(2)
-	})
-
-	//#endregion
-
-	//#region Рецепты обжарки мяса
-
-	global.TFC_FURNACE_MEAT_RECIPE_COMPONENTS.forEach(element => {
-		event.smelting(element.output, element.input)
-			.id(`tfg:smelting/${element.name}`)
-	})
-
-	//#endregion
-
 	//#region Рецепты обжарки форм
 
 	global.TFC_FURNACE_MOLD_RECIPE_COMPONENTS.forEach(element => {
@@ -94,26 +56,26 @@ const registerTFCRecipes = (event) => {
 
 	// Дерево
 	global.TFC_WOOD_TYPES.forEach(wood => {
-		generateGreenHouseRecipe(event, `8x tfc:wood/sapling/${wood}`, 16000, `64x tfc:wood/log/${wood}`, `tfg:greenhouse/${wood}`)
+		generateGreenHouseRecipe(event, `8x tfc:wood/sapling/${wood}`, 16000, `64x tfc:wood/log/${wood}`, `tfg:greenhouse/${wood}`, 'minecraft:overworld')
 	})
 
 	global.AFC_SAPLINGS.forEach(x => {
-		generateGreenHouseRecipe(event, `8x afc:wood/sapling/${x.sapling}`, 16000, `64x ${x.log}`, `tfg:greenhouse/${x.sapling}`)
+		generateGreenHouseRecipe(event, `8x afc:wood/sapling/${x.sapling}`, 16000, `64x ${x.log}`, `tfg:greenhouse/${x.sapling}`, 'minecraft:overworld')
 	})
 
 	// Семена фруктов
 	global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
+		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, 'minecraft:overworld')
 	})
 
 	// Семена овощей
 	global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
+		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, null)
 	})
 
 	// Семена ягод
 	global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
+		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, null)
 	})
 
 	// Растения
@@ -121,17 +83,8 @@ const registerTFCRecipes = (event) => {
 		const itemId = element.id;
 		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
 
-		generateGreenHouseRecipe(event, itemId, 8000, `8x ${itemId}`, recipeId);
+		generateGreenHouseRecipe(event, itemId, 8000, `8x ${itemId}`, recipeId, null);
 	});
-
-	//#endregion
-
-	//#region Рецепты хлеба
-
-	global.TFC_FURNACE_BREAD_RECIPE_COMPONENTS.forEach(element => {
-		event.smelting(element.output, element.input)
-			.id(`tfg:smelting/${element.name}`)
-	})
 
 	//#endregion
 
@@ -190,8 +143,8 @@ const registerTFCRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.alloy_smelter('tfg:oops_i_smelted_all_my_kaolin')
-		.itemInputs('5x minecraft:clay_ball', 'tfc:powder/kaolinite')
-		.itemOutputs('5x tfc:kaolin_clay')
+		.itemInputs('minecraft:clay_ball', 'tfc:powder/kaolinite')
+		.itemOutputs('tfc:kaolin_clay')
 		.duration(600)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -201,7 +154,7 @@ const registerTFCRecipes = (event) => {
 		.id('tfg:tfc/pot/salt')
 
 	// Salt Water
-	generateMixerRecipe(event, ['#forge:dusts/salt'], Fluid.of('minecraft:water', 1000), [], null, Fluid.of('tfc:salt_water', 1000), 40, 7, 64, 'tfg:tfc/salt_water')
+	generateMixerRecipe(event, ['#forge:dusts/salt'], Fluid.of('minecraft:water', 1000), [], 2, Fluid.of('tfc:salt_water', 1000), 40, 7, 64, 'tfg:tfc/salt_water')
 
 
 	// Seaweed and kelp
@@ -259,57 +212,79 @@ const registerTFCRecipes = (event) => {
 		'prepared',
 		'sheepskin'
 	];
-	
-	const sizes = [
-		'small',
-		'medium',
-		'large'
-	];
-	
-	stages.forEach((stage) => {
-		sizes.forEach((size, index) => {
-			// Find the next larger size.
-			const nextLarger = sizes[index + 1];
-			
-			// If a larger size exists, sew the hides together.
-			if (nextLarger) {
-				event.recipes.tfc.damage_inputs_shapeless_crafting(
-					event.shapeless(`1x tfc:${nextLarger}_${stage}_hide`, [
-						`2x tfc:${size}_${stage}_hide`,
-						'#tfc:sewing_needles',
-						'#forge:string',
-						'tfc:glue'
-					]).id(`tfg:tfc/${size}_to_${nextLarger}_${stage}_hide`)
-				)
 
-				event.recipes.gtceu.assembler(`tfg:gtceu/assembler/${size}_to_${nextLarger}_${stage}_hide`)
-					.inputFluids(Fluid.of('gtceu:glue', 25))
-					.itemOutputs(`1x tfc:${nextLarger}_${stage}_hide`)
-					.itemInputs(`2x tfc:${size}_${stage}_hide`)
-					.duration(60)
-					.circuit(7)
-					.EUt(GTValues.VA[GTValues.ULV])
-			}
+	stages.forEach(stage => {
+		//Combining
+		event.recipes.tfc.damage_inputs_shapeless_crafting(
+			event.shapeless(`1x tfc:medium_${stage}_hide`, [
+				`2x tfc:small_${stage}_hide`,
+				'#tfc:sewing_needles',
+				'#forge:string',
+				'tfc:glue'
+			]).id(`tfg:tfc/small_to_medium_${stage}_hide`)
+		)
+		event.recipes.tfc.damage_inputs_shapeless_crafting(
+			event.shapeless(`1x tfc:large_${stage}_hide`, [
+				`3x tfc:small_${stage}_hide`,
+				'#tfc:sewing_needles',
+				'#forge:string',
+				'tfc:glue'
+			]).id(`tfg:tfc/small_to_large_${stage}_hide`)
+		)
 
-			// Find the next smaller size.
-			const nextSmaller = sizes[index - 1];
-			
-			// If a smaller size exists, cut the hide.
-			if (nextSmaller) {
-				event.recipes.tfc.damage_inputs_shapeless_crafting(
-					event.shapeless(`2x tfc:${nextSmaller}_${stage}_hide`, [
-						`1x tfc:${size}_${stage}_hide`,
-						'#forge:shears'
-					]).id(`tfg:tfc/${size}_to_${nextSmaller}_${stage}_hide`)
-				)
+		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/small_to_medium_${stage}_hide`)
+			.inputFluids(Fluid.of('gtceu:glue', 25))
+			.itemOutputs(`1x tfc:medium_${stage}_hide`)
+			.itemInputs(`2x tfc:small_${stage}_hide`)
+			.duration(60)
+			.circuit(7)
+			.EUt(GTValues.VA[GTValues.ULV])
 
-				event.recipes.gtceu.assembler(`tfg:gtceu/assembler/${size}_to_${nextSmaller}_${stage}_hide`)
-					.itemOutputs(`2x tfc:${nextSmaller}_${stage}_hide`)
-					.itemInputs(`1x tfc:${size}_${stage}_hide`)
-					.duration(60)
-					.circuit(4)
-					.EUt(GTValues.VA[GTValues.ULV])
-			}
-		});
+		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/small_to_large_${stage}_hide`)
+			.inputFluids(Fluid.of('gtceu:glue', 25))
+			.itemOutputs(`1x tfc:large_${stage}_hide`)
+			.itemInputs(`3x tfc:small_${stage}_hide`)
+			.duration(60)
+			.circuit(9)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		//Cutting
+		event.recipes.tfc.damage_inputs_shapeless_crafting(
+			event.shapeless(`2x tfc:small_${stage}_hide`, [
+				`1x tfc:medium_${stage}_hide`,
+				'#forge:shears'
+			]).id(`tfg:tfc/medium_to_small_${stage}_hide`)
+		)
+
+		event.recipes.tfc.damage_inputs_shapeless_crafting(
+			event.shapeless(`3x tfc:small_${stage}_hide`, [
+				`1x tfc:large_${stage}_hide`,
+				'#forge:shears'
+			]).id(`tfg:tfc/large_to_small_${stage}_hide`)
+		)
+
+		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/medium_to_small_${stage}_hide`)
+			.itemOutputs(`2x tfc:small_${stage}_hide`)
+			.itemInputs(`1x tfc:medium_${stage}_hide`)
+			.duration(60)
+			.circuit(4)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/large_to_small_${stage}_hide`)
+			.itemOutputs(`3x tfc:small_${stage}_hide`)
+			.itemInputs(`1x tfc:large_${stage}_hide`)
+			.duration(60)
+			.circuit(6)
+			.EUt(GTValues.VA[GTValues.ULV])
 	});
+
+	// Jar lids
+
+	event.shapeless('8x tfc:jar_lid', [
+		'gtceu:tin_ingot',
+		'#forge:tools/hammers',
+		'#forge:tools/saws'
+	]).id('tfc:shapeless/jar_lid')
+
+	event.replaceInput({ mod: 'tfc' }, 'minecraft:sugar', '#tfg:sugars')
 }

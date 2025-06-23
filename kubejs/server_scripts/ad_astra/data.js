@@ -1,0 +1,13 @@
+// priority: 0
+
+function registerTFCDataForAdAstra(event) {
+
+	event.itemSize('ad_astra:tier_1_rocket', 'huge', 'very_heavy')
+	event.itemSize('ad_astra:tier_2_rocket', 'huge', 'very_heavy')
+	event.itemSize('ad_astra:tier_3_rocket', 'huge', 'very_heavy')
+	event.itemSize('ad_astra:tier_4_rocket', 'huge', 'very_heavy')
+
+	event.itemSize('ad_astra:tier_1_rover', 'very_large', 'very_heavy')
+
+	event.itemSize('ad_astra:launch_pad', 'very_large', 'very_heavy')
+}

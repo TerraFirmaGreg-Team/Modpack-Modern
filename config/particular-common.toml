@@ -86,7 +86,7 @@
 			#Base maximum age of cave dust particles
 			#Range: > 1
 			baseMaxAge = 200
-			#Color of cave dust particles (RGB hex)
+			#OwOColor of cave dust particles (RGB hex)
 			#Range: 0 ~ 16777215
 			color = 8421504
 			#Duration of fade effect for cave dust particles

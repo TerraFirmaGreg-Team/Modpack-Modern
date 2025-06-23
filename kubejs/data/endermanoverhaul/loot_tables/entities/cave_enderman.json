@@ -6,27 +6,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 3.0,
-								"min": 1.0
-							},
-							"function": "minecraft:set_count"
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2.0,
-								"min": 1.0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:looting_enchant"
-						}
-					],
 					"name": "ae2:ender_dust"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "endermanoverhaul:summoner_pearl"
 				}
 			],
 			"rolls": 1.0
@@ -45,25 +29,10 @@
 								"min": 2.0
 							},
 							"function": "minecraft:set_count"
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2.0,
-								"min": 1.0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:looting_enchant"
 						}
 					],
-					"name": "gtceu:raw_coal"
-				}
-			],
-			"rolls": 1.0
-		},
-		{
-			"bonus_rolls": 0.0,
-			"entries": [
+					"name": "tfc:ore/normal_native_gold"
+				},
 				{
 					"type": "minecraft:item",
 					"functions": [
@@ -75,25 +44,10 @@
 								"min": 2.0
 							},
 							"function": "minecraft:set_count"
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2.0,
-								"min": 1.0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:looting_enchant"
 						}
 					],
-					"name": "gtceu:raw_goethite"
-				}
-			],
-			"rolls": 1.0
-		},
-		{
-			"bonus_rolls": 0.0,
-			"entries": [
+					"name": "tfc:ore/normal_magnetite"
+				},
 				{
 					"type": "minecraft:item",
 					"functions": [
@@ -105,48 +59,9 @@
 								"min": 2.0
 							},
 							"function": "minecraft:set_count"
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2.0,
-								"min": 1.0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:looting_enchant"
 						}
 					],
 					"name": "tfc:ore/normal_native_copper"
-				}
-			],
-			"rolls": 1.0
-		},
-		{
-			"bonus_rolls": 0.0,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1.0,
-								"min": 0.0
-							},
-							"function": "minecraft:set_count"
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1.0,
-								"min": 0.0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:looting_enchant"
-						}
-					],
-					"name": "endermanoverhaul:summoner_pearl"
 				}
 			],
 			"rolls": 1.0

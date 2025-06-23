@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  RELEASE_TYPE: "alpha"
+  RELEASE_TYPE: "release"
   MINECRAFT_VERSION: "1.20.1"
   DEV_ENVIRONMENT: ${{ github.ref_name != 'main' }}
 
@@ -247,17 +247,17 @@ jobs:
           path: ./build/curseforge/${{ needs.info.outputs.project_full_name }}-curseforge.zip
           if-no-files-found: error
 
-      - name: 📁 Rename artifact modrinth
-        run: |
-          cd ./build/modrinth/
-          mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
+      # - name: 📁 Rename artifact modrinth
+      #   run: |
+      #     cd ./build/modrinth/
+      #     mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
 
-      - name: 🚀 Upload artifact modrinth
-        uses: actions/upload-artifact@v4.6.2
-        with:
-          name: ${{ needs.info.outputs.project_full_name }}-modrinth
-          path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
-          if-no-files-found: warn
+      # - name: 🚀 Upload artifact modrinth
+      #   uses: actions/upload-artifact@v4.6.2
+      #   with:
+      #     name: ${{ needs.info.outputs.project_full_name }}-modrinth
+      #     path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
+      #     if-no-files-found: warn
 
   build-server:
     name: 📦 Build Server
@@ -338,9 +338,10 @@ jobs:
         run: |
           ls
           mkdir -p .pakku/multimc-overrides/flame
+          mkdir -p .pakku/multimc-overrides/mods
           mv -vf ./build/.cache/curseforge/manifest.json .pakku/multimc-overrides/flame/manifest.json
           mv -vf ./build/.cache/curseforge/overrides .pakku/multimc-overrides/.minecraft
-          mv -vf ./mods/* .pakku/multimc-overrides/.minecraft/mods/
+          mv -vf ./mods .pakku/multimc-overrides/.minecraft/mods
           cd .pakku/multimc-overrides/
           
           zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
@@ -376,9 +377,9 @@ jobs:
           if [ ! -f ${{ needs.info.outputs.project_full_name }}-curseforge.zip ]; then
             echo '::error::No value found for artifact `curseforge.zip`.' && exit 1
           fi
-          if [ ! -f ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack ]; then
-            echo '::error::No value found for artifact `modrinth.mrpack`.' && exit 1
-          fi
+          # if [ ! -f ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack ]; then
+          #   echo '::error::No value found for artifact `modrinth.mrpack`.' && exit 1
+          # fi
           if [ ! -f ${{ needs.info.outputs.project_full_name }}-serverpack.zip ]; then
             echo '::error::No value found for artifact `serverpack.zip`.' && exit 1
           fi
@@ -387,12 +388,12 @@ jobs:
           fi
           echo "✔️ All artifacts found"
 
-      - name: 🚫 Сlose fixed in dev
-        uses: Xikaro/close-issues-based-on-label@master
-        env:
-          LABEL: "2. Status: In Dev"
-          COMMENT: In ${{ needs.info.outputs.project_version }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: 🚫 Сlose label "Done"
+      #   uses: Xikaro/close-issues-based-on-label@master
+      #   env:
+      #     LABEL: "Status: Done"
+      #     COMMENT: In ${{ needs.info.outputs.project_version }}
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 📄 Format diff
         id: format_diff
@@ -406,7 +407,7 @@ jobs:
 
       - name: 🚀 Create release
         id: release
-        uses: softprops/action-gh-release@v2.2.2
+        uses: softprops/action-gh-release@v2.3.2
         with:
           name: ${{ needs.info.outputs.project_version }}
           tag_name: ${{ needs.info.outputs.project_version }}

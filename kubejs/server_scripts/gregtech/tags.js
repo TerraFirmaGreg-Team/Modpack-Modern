@@ -43,7 +43,12 @@ const registerGTCEUItemTags = (event) => {
 	event.add('tfg:stone_dusts', 'gtceu:deepslate_dust')
 	event.add('tfg:stone_dusts', 'gtceu:blackstone_dust')
 	event.add('tfg:stone_dusts', 'tfg:dripstone_dust')
-
+	event.add('tfg:stone_dusts', 'tfg:moon_stone_dust')
+	event.add('tfg:stone_dusts', 'tfg:moon_deepslate_dust')
+	event.add('tfg:stone_dusts', 'tfg:mars_stone_dust')
+	event.add('tfg:stone_dusts', 'tfg:venus_stone_dust')
+	event.add('tfg:stone_dusts', 'tfg:mercury_stone_dust')
+	event.add('tfg:stone_dusts', 'tfg:glacio_stone_dust')
 	event.add('tfg:stone_dusts', 'gtceu:stone_dust')
 	//#endregion
 
@@ -120,4 +125,7 @@ const registerGTCEUFluidTags = (event) => {
 
 	event.add('c:hidden_from_recipe_viewers', /gtceu.*potion.*/)
 
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:molten_black_steel')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:molten_red_steel')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:molten_blue_steel')
 }

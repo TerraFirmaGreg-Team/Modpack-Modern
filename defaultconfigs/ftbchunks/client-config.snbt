@@ -1,0 +1,258 @@
+# Default config file that will be copied to local\ftbchunks\client-config.snbt if it doesn't exist!
+# Just copy any values you wish to override in here!
+
+{
+	advanced: {
+		# Enables debug info
+		# Default: false
+		debug_info: false
+		
+		# Advanced option. Change how often the minimap will refresh icons
+		# Default: 500
+		# Range: 0 ~ 10000
+		minimap_icon_update_timer: 500
+		
+		# Advanced option. How often map render update will be queued
+		# Default: 60
+		# Range: 1 ~ 600
+		rerender_queue_ticks: 60
+		
+		# Advanced option. Max tasks that can queue up
+		# Default: 100
+		# Range: 1 ~ 10000
+		task_queue_max: 100
+		
+		# Advanced option. How often queued tasks will run
+		# Default: 4
+		# Range: 1 ~ 300
+		task_queue_ticks: 4
+		memory: {
+			# When the large map is closed, auto-release least recently accessed regions down to this number (0 disables releasing)
+			# Default: 32
+			# Range: 0 ~ 2147483647
+			autorelease_on_map_close: 32
+			
+			# Constrain maximum map zoom-out based on number of explored regions and available memory
+			# Default: true
+			max_zoom_constraint: true
+			
+			# Periodically release region data for non-recently-used regions to save memory (units of seconds, 0 disables releasing
+			# Default: 300
+			# Range: 0 ~ 2147483647
+			region_release_time: 300
+		}
+	}
+	appearance: {
+		# Biome blend
+		# Default: "blend_5x5"
+		# Valid values: "none", "blend_3x3", "blend_5x5", "blend_7x7", "blend_9x9", "blend_11x11", "blend_13x13", "blend_15x15"
+		biome_blend: "blend_5x5"
+		
+		# Chunk grid overlay in large map
+		# Default: false
+		chunk_grid: false
+		
+		# Show claimed chunks on the map
+		# Default: true
+		claimed_chunks_on_map: true
+		
+		# Advanced option. Foliage darkness
+		# Default: 50
+		# Range: 0 ~ 255
+		foliage_darkness: 50
+		
+		# Advanced option. Grass darkness
+		# Default: 50
+		# Range: 0 ~ 255
+		grass_darkness: 50
+		
+		# Different ways to render map
+		# Default: "none"
+		# Valid values: "none", "night", "topography", "blocks", "light_sources"
+		map_mode: "none"
+		
+		# Noise added to map to make it look less plastic
+		# Default: 0.05
+		# Range: 0.0 ~ 0.5
+		noise: 0.05d
+		
+		# Only show entities that are on the surface
+		# Default: true
+		only_surface_entities: true
+		
+		# Show your own claimed chunks on the map
+		# Default: true
+		own_claimed_chunks_on_map: true
+		
+		# Reduces color palette to 256 colors
+		# Default: false
+		reduced_color_palette: false
+		
+		# Color intensity
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		saturation: 1.0d
+		
+		# Shadow intensity
+		# Default: 0.1
+		# Range: 0.0 ~ 0.3
+		shadows: 0.1d
+		
+		# How many blocks should height checks skip in water. 0 means flat water, ignoring terrain
+		# Default: 8
+		# Range: 0 ~ 128
+		water_height_factor: 8
+		
+		# Advanced option. Water visibility
+		# Default: 220
+		# Range: 0 ~ 255
+		water_visibility: 220
+	}
+	minimap: {
+		# Blurs minimap
+		# Default: "auto"
+		# Valid values: "auto", "on", "off"
+		blur_mode: "auto"
+		
+		# Adds NWSE compass inside minimap
+		# Default: true
+		compass: true
+		
+		# Enable minimap
+		# Default: false
+		enabled: false
+		
+		# Show entities on minimap
+		# Default: true
+		entities: true
+		
+		# Show entity heads on minimap
+		# Default: true
+		entity_heads: true
+		
+		# Minimap font scaling (values not a multiple of 0.5 may look bad)
+		# Default: 0.5
+		# Range: 0.1 ~ 5.0
+		font_scale: 0.5d
+		
+		# Info hidden under minimap
+		# Default: ["ftbchunks:debug"]
+		info_hidden: ["ftbchunks:debug"]
+		
+		# Info displayed under minimap
+		# Default: ["ftbchunks:player_pos", "ftbchunks:biome", "ftbchunks:zone", "ftbchunks:fps", "ftbchunks:game_time", "ftbchunks:real_time", "ftbchunks:debug"]
+		info_order: [
+			"ftbchunks:player_pos"
+			"ftbchunks:biome"
+			"ftbchunks:zone"
+			"ftbchunks:fps"
+			"ftbchunks:game_time"
+			"ftbchunks:real_time"
+			"ftbchunks:debug"
+		]
+		info_settings: { }
+		
+		# Entities in minimap will be larger
+		# Default: false
+		large_entities: false
+		
+		# Minimap will not rotate
+		# Default: true
+		locked_north: true
+		
+		# Show player heads on minimap
+		# Default: true
+		player_heads: true
+		
+		# Enables minimap to show up in corner
+		# Default: "top_right"
+		# Valid values: "bottom_left", "left", "top_left", "top_right", "right", "bottom_right"
+		position: "top_right"
+		
+		# Applied a conditional check to the offset. When set to anything other that None, the offset will apply only to the selected minimap position.
+		# When set to none and the maps offset is greater than 0, the offset will apply to all directions
+		# Default: "none"
+		# Valid values: "bottom_left", "left", "top_left", "top_right", "right", "bottom_right", "none"
+		position_offset_condition: "none"
+		
+		# Changes the maps X offset from it's origin point. When on the Left, the map will be pushed out from the left, then from the right when on the right.
+		# Default: 0
+		# Range: -∞ ~ +∞
+		position_offset_x: 0
+		
+		# Changes the maps X offset from it's origin point. When on the Left, the map will be pushed out from the left, then from the right when on the right.
+		# Default: 0
+		# Range: -∞ ~ +∞
+		position_offset_y: 0
+		
+		# Size minimap proportional to screen width (and scale)
+		# Default: true
+		proportional: true
+		
+		# Scale of minimap
+		# Default: 1.0
+		# Range: 0.25 ~ 4.0
+		scale: 1.0d
+		
+		# Always show player on minimap, even when rotation not locked
+		# Default: true
+		show_player_when_unlocked: true
+		
+		# Draw a square minimap instead of a circular one
+		# Default: false
+		square: false
+		
+		# Minimap visibility
+		# Default: 255
+		# Range: 0 ~ 255
+		visibility: 255
+		
+		# Show waypoints on minimap
+		# Default: true
+		waypoints: true
+		
+		# Zoom distance of the minimap
+		# Default: 1.0
+		# Range: 1.0 ~ 4.0
+		zoom: 1.0d
+	}
+	waypoints: {
+		# Automatically remove death waypoints if closer than this many blocks away (distance of 0 disables removal)
+		# Default: 0
+		# Range: 0 ~ 2147483647
+		death_waypoint_autoremove_distance: 0
+		
+		# Enables creation of death waypoints
+		# Default: true
+		death_waypoints: false
+		
+		# Show waypoints in world
+		# Default: true
+		in_world_waypoints: false
+		
+		# Minimum distance before waypoint dots start to fade
+		# Default: 1.0
+		# Range: 1.0 ~ 200.0
+		waypoint_dot_fade_distance: 1.0d
+		
+		# Minimum distance before waypoint beacons start to fade
+		# Default: 12.0
+		# Range: 1.0 ~ 200.0
+		waypoint_fade_distance: 12.0d
+		
+		# How close player crosshair needs to be to in-world waypoints to show waypoint labels
+		# Default: 1.0
+		# Range: 1.0 ~ 10.0
+		waypoint_focus_distance: 1.0d
+		
+		# How much do in-world waypoints enlarge when the player crosshair is close
+		# Default: 2.0
+		# Range: 1.0 ~ 10.0
+		waypoint_focus_scale: 2.0d
+		
+		# Maximum distance at which waypoints are drawn
+		# Default: 5000.0
+		# Range: 1.0 ~ 2.147483647E9
+		waypoint_max_distance: 5000.0d
+	}
+}

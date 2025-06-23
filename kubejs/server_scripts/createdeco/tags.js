@@ -1,4 +1,6 @@
-const registerCreatedecoItemTags = (event) => {
+const metalBars = ['andesite', 'brass', 'iron', 'copper', 'industrial_iron', 'zinc'];
+
+const registerCreateDecoItemTags = (event) => {
 
 	//#region Hidden Items  
 	global.CREATEDECO_DISABLED_ITEMS.forEach(item => {
@@ -10,8 +12,6 @@ const registerCreatedecoItemTags = (event) => {
 	event.remove('createdeco:internal/blocks/iron_blocks', '#forge:storage_blocks/iron')
 
 	//#region Apply Tags
-	const metalBars = ['andesite', 'brass', 'iron', 'copper', 'industrial_iron', 'zinc'];
-
 	metalBars.forEach(metalBars => {
 		event.add('tfg:metal_bars', `createdeco:${metalBars}_bars`)
 		event.add('tfg:metal_bars', `createdeco:${metalBars}_bars_overlay`)
@@ -46,3 +46,11 @@ const registerCreatedecoItemTags = (event) => {
 	event.add("createdeco:internal/blocks/andesite_blocks", "#forge:storage_blocks/tin_alloy")
 	//#endregion
 };
+
+const registerCreateDecoBlockTags = (event) => {
+	metalBars.forEach(metalBars => {
+		// The bars are missing mineable tags for some reason
+		event.add('minecraft:mineable/pickaxe', `createdeco:${metalBars}_bars`)
+		event.add('minecraft:mineable/pickaxe', `createdeco:${metalBars}_bars_overlay`)
+	});
+}

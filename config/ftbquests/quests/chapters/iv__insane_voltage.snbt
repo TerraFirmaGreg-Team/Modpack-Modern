@@ -1034,7 +1034,25 @@
 			x: 1.5d
 			y: 3.75d
 		}
+		{
+			description: [
+				"This Chapter will be updated later on with &lSpace Progression&r. Be wary &oprogression&r and &orecipes&r will &lchange&r as the structure of the quests."
+				""
+				"The modpack can be finish right now and is mostly vanilla Gregtech."
+			]
+			icon: "createdeco:decal_warning"
+			id: "6C19392E36A88F33"
+			size: 2.5d
+			tasks: [{
+				id: "16F17ECCB810D2CB"
+				title: "Okay I understand it's not up to date"
+				type: "checkmark"
+			}]
+			title: "Quests are OLD and not updated for TFG"
+			x: 4.0d
+			y: 7.0d
+		}
 	]
-	subtitle: ["Automate everything and learn how to assemble"]
-	title: "&1IV&r - Insane Voltage"
+	subtitle: ["The quests are outdated. They will be update in a later update."]
+	title: "&1IV&r - Insane Voltage &6(WIP)&r"
 }

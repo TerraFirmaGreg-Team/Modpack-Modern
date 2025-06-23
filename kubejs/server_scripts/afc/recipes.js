@@ -86,34 +86,37 @@ const registerAFCRecipes = (event) => {
 		.id('tfg:heating/tree_tap')
 
 	//Custom rubber and hevea tappings
-	//Hevea is the most efficient but requires the warmest temperatures
-	//Rubber fig requires average temperatures and its mildly efficient
-	event.recipes.afc.tree_tapping(TFC.blockIngredient("afc:wood/log/hevea"))
-		.resultFluid(Fluid.of("tfg:latex", 3))
-		.minTemp(22)
-		.id("tfg:tree_tapping/latex/hevea")
-	event.recipes.afc.tree_tapping(TFC.blockIngredient("afc:wood/log/ancient_hevea"))
-		.resultFluid(Fluid.of("tfg:latex", 3))
-		.minTemp(22)
-		.id("tfg:tree_tapping/latex/ancient_hevea")
-
 	event.recipes.afc.tree_tapping(TFC.blockIngredient("afc:wood/log/rubber_fig"))
-		.resultFluid(Fluid.of("tfg:latex", 2))
-		.minTemp(12)
+		.resultFluid(Fluid.of("tfg:latex", 1))
+		.minTemp(4)
+		.requiresNaturalLog(true)
 		.id("tfg:tree_tapping/latex/rubber_fig")
 	event.recipes.afc.tree_tapping(TFC.blockIngredient("afc:wood/log/ancient_rubber_fig"))
-		.resultFluid(Fluid.of("tfg:latex", 2))
-		.minTemp(12)
+		.resultFluid(Fluid.of("tfg:latex", 1))
+		.minTemp(4)
+		.requiresNaturalLog(true)
 		.id("tfg:tree_tapping/latex/ancient_rubber_fig")
 
-	//Kapok Grandfathered, least efficient but works as long as the temperature is not freezing
+	event.recipes.afc.tree_tapping(TFC.blockIngredient("afc:wood/log/hevea"))
+		.resultFluid(Fluid.of("tfg:latex", 2))
+		.minTemp(8)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/latex/hevea")
+	event.recipes.afc.tree_tapping(TFC.blockIngredient("afc:wood/log/ancient_hevea"))
+		.resultFluid(Fluid.of("tfg:latex", 2))
+		.minTemp(8)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/latex/ancient_hevea")
+
 	event.recipes.afc.tree_tapping(TFC.blockIngredient("tfc:wood/log/kapok"))
-		.resultFluid(Fluid.of("tfg:latex", 1))
-		.minTemp(1)
+		.resultFluid(Fluid.of("tfg:latex", 3))
+		.minTemp(12)
+		.requiresNaturalLog(true)
 		.id("tfg:tree_tapping/kapok_latex")
 	event.recipes.afc.tree_tapping(TFC.blockIngredient("tfc:wood/log/ancient_kapok"))
-		.resultFluid(Fluid.of("tfg:latex", 1))
-		.minTemp(1)
+		.resultFluid(Fluid.of("tfg:latex", 3))
+		.minTemp(12)
+		.requiresNaturalLog(true)
 		.id("tfg:tree_tapping/ancient_kapok_latex")
 
 
@@ -121,77 +124,63 @@ const registerAFCRecipes = (event) => {
 	event.recipes.afc.tree_tapping(TFC.blockIngredient("tfc:wood/log/aspen"))
 		.resultFluid(Fluid.of('tfg:conifer_pitch', 2))
 		.minTemp(-10)
+		.requiresNaturalLog(true)
 		.id("tfg:tree_tapping/aspen_resin")
 	event.recipes.afc.tree_tapping(TFC.blockIngredient("tfc:wood/log/ancient_aspen"))
 		.resultFluid(Fluid.of('tfg:conifer_pitch', 2))
 		.minTemp(-10)
+		.requiresNaturalLog(true)
 		.id("tfg:tree_tapping/ancient_aspen_resin")
 
 	event.recipes.afc.tree_tapping(TFC.blockIngredient("tfc:wood/log/spruce"))
 		.resultFluid(Fluid.of('tfg:conifer_pitch', 4))
 		.minTemp(-15)
+		.requiresNaturalLog(true)
 		.id("tfg:tree_tapping/spruce_resin")
 	event.recipes.afc.tree_tapping(TFC.blockIngredient("tfc:wood/log/ancient_spruce"))
 		.resultFluid(Fluid.of('tfg:conifer_pitch', 4))
 		.minTemp(-15)
+		.requiresNaturalLog(true)
 		.id("tfg:tree_tapping/ancient_spruce_resin")
 
 	event.recipes.afc.tree_tapping(TFC.blockIngredient("tfc:wood/log/white_cedar"))
 		.resultFluid(Fluid.of('tfg:conifer_pitch', 3))
 		.minTemp(-8)
+		.requiresNaturalLog(true)
 		.id("tfg:tree_tapping/white_cedar_resin")
 	event.recipes.afc.tree_tapping(TFC.blockIngredient("tfc:wood/log/ancient_white_cedar"))
 		.resultFluid(Fluid.of('tfg:conifer_pitch', 3))
 		.minTemp(-8)
+		.requiresNaturalLog(true)
 		.id("tfg:tree_tapping/ancient_white_cedar_resin")
 
 	event.recipes.afc.tree_tapping(TFC.blockIngredient("tfc:wood/log/douglas_fir"))
 		.resultFluid(Fluid.of('tfg:conifer_pitch', 2))
 		.minTemp(-8)
+		.requiresNaturalLog(true)
 		.id("tfg:tree_tapping/douglas_fir_resin")
 	event.recipes.afc.tree_tapping(TFC.blockIngredient("tfc:wood/log/ancient_douglas_fir"))
 		.resultFluid(Fluid.of('tfg:conifer_pitch', 2))
 		.minTemp(-8)
+		.requiresNaturalLog(true)
 		.id("tfg:tree_tapping/ancient_douglas_fir_resin")
 
-	//#region Выход: Сырая резиновая пыль
-	// Removed in favor of making these output latex
-	// // Из бревна капока
-	// event.recipes.gtceu.extractor('raw_rubber_from_log')
-	// 	.itemInputs('#tfg:latex_logs')
-	// 	.itemOutputs('gtceu:raw_rubber_dust')
-	// 	.duration(300)
-	// 	.EUt(2)
-
-	// // Из саженца капока
-	// event.recipes.gtceu.extractor('raw_rubber_from_sapling')
-	// 	.itemInputs('1x #tfg:rubber_saplings')
-	// 	.itemOutputs('gtceu:raw_rubber_dust')
-	// 	.duration(300)
-	// 	.EUt(2)
-
-	// // Из листвы капока
-	// event.recipes.gtceu.extractor('raw_rubber_from_leaves')
-	// 	.itemInputs('16x #tfg:rubber_leaves')
-	// 	.itemOutputs('gtceu:raw_rubber_dust')
-	// 	.duration(300)
-	// 	.EUt(2)
 
 	event.recipes.gtceu.extractor('latex_from_log')
-		.itemInputs('4x #tfg:latex_logs')
-		.outputFluids(Fluid.of('tfg:latex', 1000))
+		.itemInputs('#tfg:latex_logs')
+		.outputFluids(Fluid.of('tfg:latex', 250))
 		.duration(600)
 		.EUt(20)
 
 	event.recipes.gtceu.extractor('latex_from_sapling')
-		.itemInputs('10x #tfg:rubber_saplings')
-		.outputFluids(Fluid.of('tfg:latex', 1000))
+		.itemInputs('#tfg:rubber_saplings')
+		.outputFluids(Fluid.of('tfg:latex', 100))
 		.duration(750)
 		.EUt(20)
 
 	event.recipes.gtceu.extractor('latex_from_leaves')
-		.itemInputs('20x #tfg:rubber_leaves')
-		.outputFluids(Fluid.of('tfg:latex', 1000))
+		.itemInputs('#tfg:rubber_leaves')
+		.outputFluids(Fluid.of('tfg:latex', 50))
 		.duration(750)
 		.EUt(20)
 
@@ -251,4 +240,34 @@ const registerAFCRecipes = (event) => {
 		.itemOutputs('afc:birch_sugar')
 		.duration(500)
 		.EUt(GTValues.VA[GTValues.ULV])
+
+	// Stripped logs
+
+	global.AFC_WOOD_TYPES.forEach(wood => {
+		event.recipes.gtceu.lathe(`tfg:stripping_${wood}_log`)
+			.itemInputs(`afc:wood/log/${wood}`)
+			.itemOutputs(`afc:wood/stripped_log/${wood}`)
+			.duration(50)
+			.EUt(2)
+
+		event.recipes.gtceu.lathe(`tfg:stripping_${wood}_wood`)
+			.itemInputs(`afc:wood/wood/${wood}`)
+			.itemOutputs(`afc:wood/stripped_wood/${wood}`)
+			.duration(50)
+			.EUt(2)
+
+		event.custom({
+			type: 'vintageimprovements:turning',
+			ingredients: [{ item: `afc:wood/log/${wood}` }],
+			results: [{ item: `afc:wood/stripped_log/${wood}` }],
+			processingTime: 50
+		}).id(`tfg:vi/lathe/stripping_${wood}_log`)
+
+		event.custom({
+			type: 'vintageimprovements:turning',
+			ingredients: [{ item: `afc:wood/wood/${wood}` }],
+			results: [{ item: `afc:wood/stripped_wood/${wood}` }],
+			processingTime: 50
+		}).id(`tfg:vi/lathe/stripping_${wood}_wood`)
+	})
 }

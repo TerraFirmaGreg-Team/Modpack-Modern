@@ -1,0 +1,19 @@
+#Sets behavior for keeping Curios items on death.
+#ON - Curios items are kept on death
+#DEFAULT - Curios items follow the keepInventory gamerule
+#OFF - Curios items are dropped on death
+#Allowed Values: ON, DEFAULT, OFF
+keepCurios = "DEFAULT"
+
+[menu]
+	#Enables the old legacy Curios menu for better backwards compatibility.
+	enableLegacyMenu = false
+
+	[menu.experimental]
+		#The minimum number of columns for the Curios menu.
+		#Range: 1 ~ 8
+		minimumColumns = 1
+		#The maximum number of slots per page of the Curios menu.
+		#Range: 1 ~ 48
+		maxSlotsPerPage = 48
+

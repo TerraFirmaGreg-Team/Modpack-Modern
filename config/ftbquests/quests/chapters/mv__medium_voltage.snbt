@@ -82,14 +82,20 @@
 			subtitle: "{quests.medium_voltage.mv_brewery.subtitle}"
 			tasks: [
 				{
-					id: "095C98D86D021B2E"
-					item: "gtceu:lv_brewery"
-					type: "item"
-				}
-				{
 					id: "1CB0F32E8293B5D7"
 					item: "gtceu:lubricant_bucket"
 					optional_task: true
+					type: "item"
+				}
+				{
+					id: "29393DEB346EC4D2"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:lv_brewery)item(gtceu:mv_brewery))"
+						}
+					}
 					type: "item"
 				}
 			]
@@ -315,7 +321,11 @@
 		}
 		{
 			dependencies: ["22E462070F8B027A"]
-			description: ["{quests.medium_voltage.electrolyzer.desc}"]
+			description: [
+				"{quests.medium_voltage.electrolyzer.desc.1}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.electrolyzer.desc.2}"
+			]
 			icon: "gtceu:mv_electrolyzer"
 			id: "0EFEE489906256AA"
 			shape: "octagon"
@@ -323,7 +333,7 @@
 			subtitle: "{quests.medium_voltage.electrolyzer.subtitle}"
 			tasks: [{
 				id: "1A599E57A9493E9F"
-				item: "gtceu:mv_chemical_reactor"
+				item: "gtceu:mv_electrolyzer"
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.electrolyzer.title}"
@@ -674,10 +684,7 @@
 			y: 14.0d
 		}
 		{
-			dependencies: [
-				"38DE506FF5B32031"
-				"3DFFA8F91452C62A"
-			]
+			dependencies: ["38DE506FF5B32031"]
 			description: ["{quests.medium_voltage.mv_second_hv.desc}"]
 			icon: "gtceu:micro_processor_assembly"
 			id: "5063FDFFBE3E4855"
@@ -988,7 +995,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["6A304E453D74C57C"]
 			description: ["{quests.medium_voltage.mv_oilsands.desc}"]
 			id: "575B07D390D9D079"
 			optional: true
@@ -1006,10 +1012,12 @@
 		}
 		{
 			dependencies: [
+				"575B07D390D9D079"
 				"53DC6E32C41C94C3"
-				"6EB68C28BEE24DEF"
 				"05ADBAE5B6F38956"
+				"6EB68C28BEE24DEF"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.medium_voltage.mv_distillery.desc.1}"
 				"{@pagebreak}"
@@ -1264,12 +1272,12 @@
 		{
 			dependencies: ["45769156F4253C86"]
 			dependency_requirement: "one_completed"
-			description: ["{quests.medium_voltage.mv_.desc}"]
+			description: ["{quests.medium_voltage.mv_jetpack.desc}"]
 			id: "6FA956DAA72D6139"
 			optional: true
 			shape: "heart"
 			size: 1.0d
-			subtitle: "{quests.medium_voltage.mv_.subtitle}"
+			subtitle: "{quests.medium_voltage.mv_jetpack.subtitle}"
 			tasks: [{
 				id: "022324F9630960C6"
 				item: {
@@ -1481,11 +1489,11 @@
 		}
 		{
 			dependencies: ["22E462070F8B027A"]
-			description: ["{quests.medium_voltage.mv_.desc}"]
+			description: ["{quests.medium_voltage.mv_chemical_reactor.desc}"]
 			id: "79E8DC4D9B5F6B97"
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "{quests.medium_voltage.mv_.subtitle}"
+			subtitle: "{quests.medium_voltage.mv_chemical_reactor.subtitle}"
 			tasks: [{
 				id: "04A6D4858DA3CE94"
 				item: "gtceu:mv_chemical_reactor"
@@ -1511,6 +1519,54 @@
 			title: "{quests.medium_voltage.mv_silicon.title}"
 			x: 9.0d
 			y: 6.0d
+		}
+		{
+			dependencies: [
+				"26394C1290D70AB6"
+				"5063FDFFBE3E4855"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.medium_voltage.lsb.desc}"]
+			icon: "gtceu:steel_large_boiler"
+			id: "730D7C10DEED3117"
+			shape: "square"
+			size: 1.0d
+			subtitle: "{quests.medium_voltage.lsb.subtitle}"
+			tasks: [{
+				id: "67728209D0BE18B1"
+				item: "gtceu:steel_large_boiler"
+				type: "item"
+			}]
+			title: "{quests.medium_voltage.lsb.title}"
+			x: 1.28d
+			y: 16.5d
+		}
+		{
+			dependencies: ["315169840E06110F"]
+			description: ["{quests.medium_voltage.mv_cpu.desc}"]
+			icon: "gtceu:cpu_chip"
+			id: "2C875707A396B6D3"
+			subtitle: "{quests.medium_voltage.mv_cpu.subtitle}"
+			tasks: [
+				{
+					id: "0C0649DBFF188F15"
+					item: "gtceu:diamond_lens"
+					type: "item"
+				}
+				{
+					id: "54424809334833A8"
+					item: "gtceu:cpu_wafer"
+					type: "item"
+				}
+				{
+					id: "79DC85B4ACC166FB"
+					item: "gtceu:cpu_chip"
+					type: "item"
+				}
+			]
+			title: "{quests.medium_voltage.mv_cpu.title}"
+			x: 5.0d
+			y: 8.0d
 		}
 	]
 	subtitle: ["{quests.medium_voltage.subtitle}"]

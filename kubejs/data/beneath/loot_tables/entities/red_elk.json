@@ -11,11 +11,21 @@
 					"functions": [
 						{
 							"function": "minecraft:set_count",
+							"add": false,
 							"count": {
 								"min": 4,
 								"max": 10,
 								"type": "minecraft:uniform"
 							}
+						},
+						{
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3.0,
+								"min": 1.0
+							},
+							"enchantment": "minecraft:looting",
+							"function": "minecraft:looting_enchant"
 						}
 					]
 				}
@@ -34,7 +44,7 @@
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
-								"max": 3
+								"max": 6
 							}
 						}
 					]

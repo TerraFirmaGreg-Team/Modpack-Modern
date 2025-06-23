@@ -1,0 +1,6 @@
+#The radius (in blocks) that dropped items should check around them for other dropped items to combine with. ("0.5" is vanilla behavior)
+#Range: 0.5 ~ 500.0
+radius = 2.0
+#Set to true if you want dropped items to also check above and below them, set to false if not ("false" is vanilla behavior)
+checkY = true
+

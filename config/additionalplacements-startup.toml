@@ -1,19 +1,9 @@
 
 #Startup settings
 [startup]
-
-	#Options for controlling which blocks can generate variants of a their type (if one exists).
-	[startup.enabled]
-		#Default state for blocks not matching any list. True is enabled, false is disabled.
-		default = true
-		#Whitelist for mods whose blocks will be enabled.
-		mod_whitelist = []
-		#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-		mod_blacklist = []
-		#Whitelist for blocks that will be enabled. Takes priority over the the mod blacklist and whitelist.
-		block_whitelist = []
-		#Blacklist for blocks that will be disabled. Takes priority over the block whitelist, the mod blacklist, and the mod whitelist.
-		block_blacklist = []
+	#Blocklist for controlling which blocks can generate variants of a their type (if one exists).
+	#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+	enabled = ["+*"]
 
 	#Options for registered block types for additional placement generation.
 	[startup.types]
@@ -22,111 +12,41 @@
 
 			#Slabs
 			[startup.types.additionalplacements.slab]
-
-				#Options for controlling which blocks (that are valid for this type) will generate variants of this type
-				[startup.types.additionalplacements.slab.enabled]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist, the mod blacklist, and the mod whitelist.
-					block_blacklist = []
+				#Blocklist for controlling which blocks (that are valid for this type) will generate variants of this type
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				enabled = ["+*"]
 
 			#Stairs
 			[startup.types.additionalplacements.stairs]
-
-				#Options for controlling which blocks (that are valid for this type) will generate variants of this type
-				[startup.types.additionalplacements.stairs.enabled]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist, the mod blacklist, and the mod whitelist.
-					block_blacklist = []
-
-				#Options to control which blocks will allow for vertical stair connections.
+				#Blocklist for controlling which blocks (that are valid for this type) will generate variants of this type
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				enabled = ["+*"]
+				#Blocklist to control which blocks will allow for vertical stair connections.
 				#Keep in mind vertical is RELATIVE to the placement of the stair - "vertical" for a vertically placed stair will be one of the two horizontal directions.
-				[startup.types.additionalplacements.stairs.allow_vertical_connections]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist, the mod blacklist, and the mod whitelist.
-					block_blacklist = []
-
-				#Options to control which blocks will allow for mixed stair connections.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				allow_vertical_connections = ["+*"]
+				#Blocklist to control which blocks will allow for mixed stair connections.
 				#These are any valid combination of horizontal and vertical connection - as such, a stair that cannot connect vertically cannot connect complexly.
 				#This also controls connections between stairs who's facings don't necessarily match up - I.E. a stair facing UP_EAST and one facing EAST_UP.
 				#Keep in mind horizontal and vertical are RELATIVE to the placement of the stair - "vertical" and "horizontal" for a vertically placed stair are both horizontal directions.
-				[startup.types.additionalplacements.stairs.allow_mixed_connections]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist, the mod blacklist, and the mod whitelist.
-					block_blacklist = []
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				allow_mixed_connections = ["+*"]
 
 			#Carpets
 			[startup.types.additionalplacements.carpet]
-
-				#Options for controlling which blocks (that are valid for this type) will generate variants of this type
-				[startup.types.additionalplacements.carpet.enabled]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist, the mod blacklist, and the mod whitelist.
-					block_blacklist = []
+				#Blocklist for controlling which blocks (that are valid for this type) will generate variants of this type
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				enabled = ["+*"]
 
 			#Regular pressure plates
 			[startup.types.additionalplacements.pressure_plate]
-
-				#Options for controlling which blocks (that are valid for this type) will generate variants of this type
-				[startup.types.additionalplacements.pressure_plate.enabled]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist, the mod blacklist, and the mod whitelist.
-					block_blacklist = []
+				#Blocklist for controlling which blocks (that are valid for this type) will generate variants of this type
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				enabled = ["+*"]
 
 			#Weighted pressure plates
 			[startup.types.additionalplacements.weighted_pressure_plate]
-
-				#Options for controlling which blocks (that are valid for this type) will generate variants of this type
-				[startup.types.additionalplacements.weighted_pressure_plate.enabled]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist, the mod blacklist, and the mod whitelist.
-					block_blacklist = []
+				#Blocklist for controlling which blocks (that are valid for this type) will generate variants of this type
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				enabled = ["+*"]
 

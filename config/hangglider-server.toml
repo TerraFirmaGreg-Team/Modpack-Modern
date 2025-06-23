@@ -33,7 +33,7 @@
 	overall_wind_power = 0.75
 	#The amount of blocks to move forwards (per-tick) while gliding fast (pressing 'Shift').
 	#Range: 0.0 ~ 100.0
-	fast_forward_movement = 0.10
+	fast_forward_movement = 0.1
 	#The amount of blocks a player falls (per-tick) while gliding normally.
 	#Range: 0.0 ~ 100.0
 	normal_fall_movement = 0.35

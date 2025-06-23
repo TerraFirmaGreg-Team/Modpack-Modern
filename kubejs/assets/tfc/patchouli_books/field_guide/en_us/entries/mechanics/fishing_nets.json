@@ -1,0 +1,20 @@
+{
+	"name": "Fishing Nets",
+	"icon": "tfg:fishing_net/brass",
+	"category": "tfc:mechanics",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "Fishing Nets",
+			"item": { "tag": "forge:tools/fishing_nets" },
+			"text": "Tired of hunting down fish with spears? Or loosing a floppy catch while $(l:mechanics/fishing)fishing$()? Craft a $(thing)Fishing Net$() to scoop up your dinner.$(br)To use a fishing net; right click on a fish entity to capture the fish into your inventory. Different tier fishing nets all act the same, but have different durability."
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "Wood Fishing Net",
+			"recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
+			"text": "A basic $(item)Wood Fishing Net$()."
+		}
+	]
+}

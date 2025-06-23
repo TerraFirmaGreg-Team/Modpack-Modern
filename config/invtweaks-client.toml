@@ -129,6 +129,14 @@
 		containerClass = "gripe._90.megacells.menu.MEGAInterfaceMenu"
 		sortRange = ""
 
+	[[sorting.containerOverrides]]
+		containerClass = "net.dries007.tfc.client.screen.*"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "com.simibubi.create.content.equipment.toolbox.ToolboxMenu"
+		sortRange = ""
+
 #Tweaks
 [tweaks]
 	#Enable auto-refill

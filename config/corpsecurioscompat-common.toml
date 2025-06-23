@@ -1,0 +1,6 @@
+
+#General settings
+[general]
+	#Items that should not be transferred to curios slots (format: 'modid:item')
+	blacklisted_items = []
+

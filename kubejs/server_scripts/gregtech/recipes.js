@@ -98,7 +98,10 @@ const registerGTCEURecipes = (event) => {
 		.outputFluids(Fluid.of('gtceu:chlorine', 500), Fluid.of('gtceu:hydrogen', 500))
 		.duration(720)
 		.EUt(30)
-		.circuit(2)
+
+	// Add circuit to gregtech salt water mixer recipe
+	event.remove({ id: 'gtceu:mixer/salt_water' })
+	generateMixerRecipe(event, ['2x #forge:dusts/salt'], Fluid.of('minecraft:water', 1000), [], 1, Fluid.of('gtceu:salt_water', 1000), 40, 7, 64, 'tfg:gtceu/salt_water')
 
 	//#endregion
 
@@ -163,24 +166,28 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_seeds')
 		.itemInputs('8x #tfc:seeds')
 		.itemOutputs('gtceu:plant_ball')
+		.circuit(1)
 		.duration(300)
 		.EUt(2)
 
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_food')
 		.itemInputs('8x #tfc:foods')
 		.itemOutputs('gtceu:plant_ball')
+		.circuit(1)
 		.duration(300)
 		.EUt(2)
 
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_plants')
 		.itemInputs('8x #tfc:plants')
 		.itemOutputs('gtceu:plant_ball')
+		.circuit(1)
 		.duration(300)
 		.EUt(2)
 
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_corals')
 		.itemInputs('8x #tfc:corals')
 		.itemOutputs('gtceu:plant_ball')
+		.circuit(1)
 		.duration(300)
 		.EUt(2)
 
@@ -1013,6 +1020,25 @@ const registerGTCEURecipes = (event) => {
 	})
 
 	//#endregion
+
+	//#region Stick Packing
+	
+		event.recipes.gtceu.packer('tfg:stick_bunch')
+			.itemInputs('9x #forge:rods/wooden')
+			.circuit(5)
+			.itemOutputs('tfc:stick_bunch')
+			.duration(50)
+			.EUt(GTValues.VA[GTValues.ULV])
+			
+		event.recipes.gtceu.packer('tfg:stick_bundle')
+			.itemInputs('18x #forge:rods/wooden')
+			.circuit(8)
+			.itemOutputs('tfc:stick_bundle')
+			.duration(50)
+			.EUt(GTValues.VA[GTValues.ULV])	
+			
+	//#endregion
+
 	//#region Changing tiers of decomposition recipes
 
 	event.recipes.gtceu.electrolyzer('gtceu:decomposition_electrolyzing_clay')
@@ -1054,6 +1080,104 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	//#endregion 
+	
+	//#region glowstone
+	event.recipes.gtceu.alloy_blast_smelter('abs:liquid_glowstone')
+        	.itemInputs('#forge:dusts/gold', '#forge:dusts/redstone', '#forge:dusts/sulfur')
+		.outputFluids(Fluid.of('gtceu:glowstone', 288))
+		.duration(20*60/1.3)
+		.EUt(GTValues.VA[GTValues.LV])
+		.blastFurnaceTemp(1064)
+		.circuit(9)
+	//#endregion
+	
+
+    //#region Large boilers fuel rebalance
+
+    // Balance is based on adjusting to match singeblock boiler efficiency
+    // High Pressure Steam Solid Boiler produces 288,000 mB steam/coke
+    // High Pressure Steam Liquid Boiler produces 432 mB steam/creosote
+    // By Defualt: Large Bronze Boiler produces 50mB steam/creosote, 32000mB steam/coke
+    // This is a factor of 9x for solids, 8.64x for liquids
+    // Large boiler fuel burn time is multiplied by 9, resulting in less fuel used over time for the same amount of steam produced per tick
+
+    event.findRecipes({ id: /^gtceu:large_boiler\/.*/, type: "gtceu:large_boiler" }).forEach(large_boiler_recipe => {
+
+        let recipe_duration = large_boiler_recipe.json.getAsJsonPrimitive("duration").asInt
+
+        large_boiler_recipe.json.remove("duration")
+        large_boiler_recipe.json.add("duration", recipe_duration * 9)
+	})
+
+	//#endregion
+
+
+	//#region Credits
+
+	event.remove({ id: 'gtceu:forming_press/credit_cupronickel' })
+
+	event.recipes.gtceu.forming_press('gtceu:copper_credit')
+		.itemInputs('#forge:ingots/copper')
+		.notConsumable('gtceu:credit_casting_mold')
+		.itemOutputs('8x gtceu:copper_credit')
+		.duration(50)
+		.EUt(2)
+
+	event.recipes.tfc.anvil('8x gtceu:copper_credit', '#forge:ingots/copper', ['bend_last', 'punch_not_last', 'draw_not_last'])
+		.tier(1)
+		.id(`tfc:anvil/copper_credit`)
+
+	event.recipes.tfc.heating('gtceu:copper_credit', GTMaterials.Copper.getProperty(TFGPropertyKey.TFC_PROPERTY).getMeltTemp())
+		.resultFluid(Fluid.of(GTMaterials.Copper.getFluid(), 144 / 8))
+		.id(`tfc:heating/copper_credit`)
+
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ tag: 'forge:ingots/copper' }],
+		itemAsHead: 'gtceu:credit_casting_mold',
+		results: [{ item: 'gtceu:copper_credit', count: 8 }],
+		processingTime: 50
+	}).id(`tfg:vi/curving/copper_credit`)
+
+	event.recipes.gtceu.extractor('gtceu:copper_credit')
+		.itemInputs('gtceu:copper_credit')
+		.outputFluids(Fluid.of(GTMaterials.Copper.getFluid(), 144 / 8))
+		.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+		.duration(10)
+		.EUt(2)
+
+	//#endregion
+	
+	//#region GT Facades
+	event.shapeless(Item.of('gtceu:facade_cover', 8, '{Facade: {Count:1b,id:"minecraft:stone"}}'), ['3x #forge:plates/iron', "#tfg:whitelisted/facades"])
+    .modifyResult((craftingGrid, result) =>
+    {
+       let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
+	   
+		console.log(blockID)
+		let facadeNBT = "{Facade: {Count:1b,id:" + "'" + blockID + "'" + "}}"
+        result.nbt = facadeNBT
+        return result;
+    }).id('gtceu:facade_cover');
+	
+	event.shapeless(Item.of('gtceu:facade_cover', 32, '{Facade: {Count:1b,id:"minecraft:stone"}}'), ['3x #forge:plates/titanium', "#tfg:whitelisted/facades"])
+    .modifyResult((craftingGrid, result) =>
+    {
+       let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
+	   
+		console.log(blockID)
+		let facadeNBT = "{Facade: {Count:1b,id:" + "'" + blockID + "'" + "}}"
+        result.nbt = facadeNBT
+        return result;
+    }).id('gtceu:facade_cover32');
+	//#endregion
+	
+	event.recipes.gtceu.laser_engraver('tfg:diamond_gear')
+		.itemInputs('4x #forge:plates/diamond')
+		.itemOutputs('#forge:gears/diamond')
+		.notConsumable('gtceu:glass_lens')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	//#region Rose Quartz fabrication + decomposition
 	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound' });

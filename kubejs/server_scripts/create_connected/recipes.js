@@ -47,7 +47,7 @@ const registerCreateConnectedRecipes = (event) => {
 	}).id('create_connected:crafting/kinetics/item_silo')
 
 	event.recipes.gtceu.assembler('tfg:create_connected/item_silo')
-		.itemInputs('#forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screws/steel')
+		.itemInputs('#forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screws/wrought_iron')
 		.circuit(10)
 		.itemOutputs('create_connected:item_silo')
 		.duration(200)

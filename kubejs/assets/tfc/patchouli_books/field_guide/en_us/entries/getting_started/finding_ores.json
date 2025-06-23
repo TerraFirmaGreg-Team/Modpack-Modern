@@ -53,12 +53,17 @@
     },
     {
       "type": "patchouli:text",
-      "text": "First, open the $(thing)Small Vessel$() and put the ores inside. Count up the total amount of metal in the ores carefully! Then, you need to build a $(l:getting_started/pit_kiln)Pit Kiln$() with the filled small vessel inside. As the vessel heats, the ores inside it will melt, and you'll be left with a vessel of molten metal.$(br2)Take the vessel out and $(item)$(k:key.use)$() while holding it, to open the $(thing)Casting$() interface."
+      "text": "First, open the $(thing)Small Vessel$() and put the ores inside. Count up the total amount of metal in the ores carefully! The vessel can only hold up to 3024mB of molten metal, excess will be lost. Then, you need to build a $(l:getting_started/pit_kiln)Pit Kiln$() with the filled small vessel inside. As the vessel heats, the ores inside it will melt, and you'll be left with a vessel of molten metal."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfchotornot:crafting/tongs/wood",
+      "text": "Careful, the vessel will be hot! Craft $(thing)Wooden Tongs$() with two sticks and a knife and hold them in your off hand to handle the hot vessel safely."
     },
     {
       "type": "patchouli:image",
       "images": [ "tfc:textures/gui/book/gui/casting.png" ],
-      "text": "The Casting Interface.",
+      "text": "Hold the vessel and $(item)$(k:key.use)$() to open the $(thing)Casting$() interface.",
       "border": false
     },
     {

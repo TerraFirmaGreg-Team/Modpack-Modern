@@ -1,0 +1,18 @@
+{
+	"feature": "tfg:moon/asurine/asurine",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 15
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING"
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": 0,
+			"y_spread": -7
+		}
+	]
+}

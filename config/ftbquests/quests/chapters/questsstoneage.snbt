@@ -578,6 +578,7 @@
 				count: 5L
 				id: "4FCD61B48E983629"
 				item: "minecraft:clay_ball"
+				match_nbt: false
 				type: "item"
 			}]
 			title: "{quests.stone_age.clay.title}"
@@ -622,7 +623,7 @@
 				"{quests.stone_age.firepit.desc.2}"
 				"{image:tfg:textures/quests/firepit.png width:100 height:100 align:center}"
 			]
-			icon: "tfc:firepit"
+			icon: "tfc:pot"
 			id: "5301A38F7EA81140"
 			subtitle: "{quests.stone_age.firepit.subtitle}"
 			tasks: [
@@ -636,6 +637,7 @@
 						}
 					}
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					icon: "tfc:firepit"
@@ -660,17 +662,9 @@
 			subtitle: "{quests.metal_age.copper_anvil.subtitle}"
 			tasks: [{
 				id: "3F1120F05AD5FB2B"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/anvil/copper"
-				}
+				item: "tfc:metal/anvil/copper"
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.metal_age.copper_anvil.title}"
 			x: 26.0d
@@ -688,19 +682,10 @@
 			id: "45A09AD0043FF92B"
 			subtitle: "{quests.stone_age.weld_copper_ingots.subtitle}"
 			tasks: [{
-				count: 7L
 				id: "5A6EF9EBF232601C"
-				item: {
-					Count: 7
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "gtceu:copper_double_ingot"
-				}
+				item: "gtceu:copper_double_ingot"
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.stone_age.weld_copper_ingots.title}"
 			x: 21.0d
@@ -737,16 +722,7 @@
 				}
 				{
 					id: "655B1B05EE4BABF7"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:powder/flux"
-					}
+					item: "tfc:powder/flux"
 					type: "item"
 				}
 			]
@@ -766,17 +742,9 @@
 			subtitle: "{quests.stone_age.copper_for_anvil.subtitle}"
 			tasks: [{
 				id: "302196CB1816F316"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "minecraft:copper_ingot"
-				}
+				item: "minecraft:copper_ingot"
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.stone_age.copper_for_anvil.title}"
 			x: 17.0d
@@ -793,15 +761,9 @@
 						Count: 1
 						id: "gtceu:stone_hammer"
 						tag: {
-							DisallowContainerItem: 0b
-							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
-								HarvestLevel: 1
-								MaxDamage: 47
-								ToolSpeed: 5.2f
 							}
-							HideFlags: 2
 						}
 					}
 					id: "0425FDD03AEC4F0D"
@@ -1806,7 +1768,7 @@
 					Count: 1
 					ForgeCaps: {
 						"tfc:food": {
-							creationDate: -9223372036854775808L
+							creationDate: 99999999999999L
 							traits: [ ]
 						}
 					}
@@ -2114,6 +2076,7 @@
 				}
 				title: "Any #forge:crushed_ores"
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.stone_age.crush_ore.title}"
 			x: 18.0d
@@ -2146,6 +2109,7 @@
 					}
 					title: "Any #forge:impure_dusts"
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					disable_toast: true
@@ -2191,6 +2155,7 @@
 				}
 				title: "Any #forge:dusts"
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.stone_age.clean_dust.title}"
 			x: 17.0d

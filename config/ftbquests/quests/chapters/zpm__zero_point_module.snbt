@@ -191,8 +191,6 @@
 				"2587BFD0D9F3FF4A"
 			]
 			description: [
-				"&4&l[ NOT YET IMPLEMENTED ]&r"
-				""
 				"The &3Research Station&r is the upgrade to the Scanner. It's used for more advanced forms of research, and will finally allow you to perform research which requires &aData Orbs and Modules&r."
 				""
 				"When running the &3Research Station&r, energy and &9Computation&r is needed. The latter is provided through an &9HPCA&r, which is explained in the next quest. It is recieved with a &3Computation Data Reception Hatch&r. Note that only one Reception Hatch is allowed in a Research Station."
@@ -207,8 +205,9 @@
 			size: 0.75d
 			subtitle: "Your research adventures continue!"
 			tasks: [{
-				id: "61F7812F0FB70497"
-				type: "checkmark"
+				id: "148C1C60A855B61E"
+				item: "gtceu:research_station"
+				type: "item"
 			}]
 			title: "Research Station"
 			x: -4.875d
@@ -228,6 +227,7 @@
 			]
 			id: "79E4E53E9DF45549"
 			size: 0.75d
+			subtitle: "...ah, here we go!"
 			tasks: [{
 				id: "226973A23C89BDD2"
 				item: "gtceu:crystal_processor_mainframe"
@@ -264,8 +264,6 @@
 		{
 			dependencies: ["1D6CC3C7F6BE4055"]
 			description: [
-				"&4&l[ NOT YET IMPLEMENTED ]&r"
-				""
 				"This hatch allows you to store more &aData Storage Items&r than the basic one."
 				""
 				"Don't forget that this hatch requires a &9Data Orb&r for research."
@@ -275,8 +273,9 @@
 			size: 0.66d
 			subtitle: "Increased storage density!"
 			tasks: [{
-				id: "4090DF7C2B0FCF27"
-				type: "checkmark"
+				id: "0EC657B81458D697"
+				item: "gtceu:advanced_data_access_hatch"
+				type: "item"
 			}]
 			title: "Advanced Data Access Hatch"
 			x: -2.625d
@@ -325,15 +324,15 @@
 				"{@pagebreak}"
 				"&l&3Lore:&r&o GTCEu's Sterilized Growth Medium chain is loosely based off of Bartworks' from GTNH. The main difference is that GTNH required a Bacterial Vat multiblock, which was more complex than the ordered Assembly Line. GTCEu is considering adding a multiblock like it but with their own spin in the future."
 				"{@pagebreak}"
-				"&l&More Lore:&r&o In Gregicality Legacy, the Sterilized Growth Medium production chain was very different. It was one of the most difficult processes in the mod, with over 30 complicated steps! It was based off of producing different real-life vitamins and nutrients."
+				"&l&3More Lore:&r&o In Gregicality Legacy, the Sterilized Growth Medium production chain was very different. It was one of the most difficult processes in the mod, with over 30 complicated steps! It was based off of producing different real-life vitamins and nutrients."
 				"{@pagebreak}"
-				"&l&Even More Lore:&r&o In Shadows of Greg, this was made with just Distilled Water and Mince Meat. How far we've come..."
+				"&l&3Even More Lore:&r&o In Shadows of Greg, this was made with just Distilled Water and Mince Meat. How far we've come..."
 			]
 			id: "6AFDA523304711DB"
 			size: 0.75d
 			subtitle: "The final processing line, at last!"
 			tasks: [{
-				id: "4BDCAD1628C054CE"
+				id: "5FFC06116E025936"
 				item: "gtceu:sterilized_growth_medium_bucket"
 				type: "item"
 			}]
@@ -351,6 +350,7 @@
 				"{@pagebreak}"
 				"&l&3Lore:&r&o Imagine making 64 &1IV&f or 8 &dLuV&f Orbs for just one of these! See the Lore for the &dLuV&f orb for details."
 			]
+			icon: "gtceu:energy_module"
 			id: "690A51204DF5D469"
 			size: 0.75d
 			subtitle: "A power singularity!"
@@ -434,11 +434,9 @@
 		{
 			dependencies: ["468EEFD9D2F69014"]
 			description: [
-				"&4&l[ NOT YET IMPLEMENTED ]&r"
-				""
 				"The &3High Performance Computation Array&r, also known as the &3HPCA&r, is the multiblock used to create &9Computation&r, measured in CWU/t (Compute-Work Units per tick)."
 				""
-				"The HPCA is a modular multiblock with many unique components you've likely not seen before. There are &a9 slots available&r for different components, and there are some example layouts in the JEI previews, so reviewing these may help if you feel confused."
+				"The HPCA is a modular multiblock with many unique components you've likely not seen before. There are &a9 slots available&r for different components, and there are some example layouts in the EMI previews, so reviewing these may help if you feel confused."
 				"{@pagebreak}"
 				"There are two main types of components:"
 				""
@@ -472,8 +470,9 @@
 			size: 0.75d
 			subtitle: "That's no Quantum Computer..."
 			tasks: [{
-				id: "0415DB1D2067171F"
-				type: "checkmark"
+				id: "5F20D430C26D3BE4"
+				item: "gtceu:high_performance_computation_array"
+				type: "item"
 			}]
 			title: "HPCA"
 			x: -3.75d
@@ -539,6 +538,7 @@
 			]
 			id: "370FC1CDF5F9A9CC"
 			size: 0.75d
+			subtitle: "Did that circuit just BLINK at me?"
 			tasks: [{
 				id: "31DF7507733F3EE0"
 				item: "gtceu:wetware_processor_assembly"
@@ -557,6 +557,7 @@
 			]
 			id: "082AB255886E73C2"
 			size: 0.75d
+			subtitle: "Eek, it's alive!"
 			tasks: [{
 				id: "0B12A1F63822CF8A"
 				item: "gtceu:wetware_processor"
@@ -637,6 +638,7 @@
 			]
 			id: "359121584E056022"
 			size: 0.75d
+			subtitle: "Sentience in circuit form"
 			tasks: [{
 				id: "5F54BE8467A5C882"
 				item: "gtceu:wetware_processor_computer"
@@ -649,8 +651,6 @@
 		{
 			dependencies: ["79E4E53E9DF45549"]
 			description: [
-				"&4&l[ NOT YET IMPLEMENTED ]&r"
-				""
 				"&3Advanced HPCA Components&r are improved versions of their regular counterparts, and allow for increasing the computation you can produce from an HPCA."
 				""
 				"The &3HPCA Advanced Computation Component&r produces &a4x&r the computation for only &a2x&r the Cooling!"
@@ -659,8 +659,9 @@
 			size: 0.75d
 			subtitle: "Time for some computational advancement!"
 			tasks: [{
-				id: "2C8331B09F698CCA"
-				type: "checkmark"
+				id: "761AFCD5742F9A03"
+				item: "gtceu:hpca_advanced_computation_component"
+				type: "item"
 			}]
 			title: "Advanced HPCA Components"
 			x: -4.875d
@@ -673,7 +674,7 @@
 				"79E4E53E9DF45549"
 			]
 			description: [
-				"Build the structure displayed with Fusion Glass in &aJEI&r."
+				"Build the structure displayed with Fusion Glass in &aEMI&r."
 				""
 				"To save on Fusion Casings, fit Input + Output Hatches wherever you can (as displayed in the structure)."
 				""
@@ -718,7 +719,25 @@
 			x: -0.375d
 			y: 3.375d
 		}
+		{
+			description: [
+				"This Chapter will be updated later on with &lSpace Progression&r. Be wary &oprogression&r and &orecipes&r will &lchange&r as the structure of the quests."
+				""
+				"The modpack can be finish right now and is mostly vanilla Gregtech."
+			]
+			icon: "createdeco:decal_warning"
+			id: "33054F0F31572CF1"
+			size: 2.5d
+			tasks: [{
+				id: "3C3092E37F0FE3BB"
+				title: "Okay I understand it's not up to date"
+				type: "checkmark"
+			}]
+			title: "Quests are OLD and not updated for TFG"
+			x: -2.5d
+			y: -2.0d
+		}
 	]
-	subtitle: ["Harness the cosmos and wield the bacteriological"]
-	title: "&cZPM&r - Zero Point Module"
+	subtitle: ["The quests are outdated. They will be update in a later update."]
+	title: "&cZPM&r - Zero Point Module &6(WIP)&r"
 }

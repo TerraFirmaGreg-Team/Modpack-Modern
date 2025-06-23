@@ -1,0 +1,34 @@
+{
+  "minChunkViewDist": {
+    "desc:": "The minimum chunk view distance allowed to use. Default: 10, minimum 3, maximum 200",
+    "minChunkViewDist": 10
+  },
+  "maxChunkViewDist": {
+    "desc:": "The maximum chunk view distance allowed to use. Set to the max a player could benefit from. Default: 10, minimum 3, maximum 200",
+    "maxChunkViewDist": 10
+  },
+  "meanAvgTickTime": {
+    "desc:": "The average tick time to stabilize the distances around. Setting it higher than 50ms is not advised, as after 50ms the TPS will go below 20. Default: 45ms, min: 10, max:100",
+    "meanAvgTickTime": 45
+  },
+  "viewDistanceUpdateRate": {
+    "desc:": "The change frequency of distances in seconds. Default: 30, min:1, max:1000",
+    "viewDistanceUpdateRate": 60
+  },
+  "minSimulationDist": {
+    "desc:": "The minimum simulation distance allowed to use. Default: 4, minimum 1, maximum 200",
+    "minSimulationDist": 4
+  },
+  "maxSimulationDist": {
+    "desc:": "The maximum simulation distance allowed to use. Default: 10, minimum 1, maximum 200",
+    "maxSimulationDist": 10
+  },
+  "adjustSimulationDistance": {
+    "desc:": "Enables automatic simulation distance adjustment. Default: true",
+    "adjustSimulationDistance": true
+  },
+  "logMessages": {
+    "desc:": "Whether to output log messages for actions done. This can be helpful to balance the other settings nicely. Default = false",
+    "logMessages": false
+  }
+}

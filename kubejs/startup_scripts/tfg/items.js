@@ -2,6 +2,9 @@
 
 const registerTFGItems = (event) => {
 
+    registerTFGDeprecatedItems(event)
+    registerTFGFoodItems(event)
+
     // #region Electronics
 
     event.create('tfg:unfinished_electron_tube', 'create:sequenced_assembly')
@@ -49,6 +52,18 @@ const registerTFGItems = (event) => {
     // #region Stone bricks and dusts
     event.create('tfg:brick/deepslate')
         .translationKey('item.tfg.brick.deepslate')
+    event.create('tfg:brick/moon_stone')
+        .translationKey('item.tfg.brick.moon_stone')
+    event.create('tfg:brick/mars_stone')
+        .translationKey('item.tfg.brick.mars_stone')
+    event.create('tfg:brick/venus_stone')
+        .translationKey('item.tfg.brick.venus_stone')
+    event.create('tfg:brick/mercury_stone')
+        .translationKey('item.tfg.brick.mercury_stone')
+    event.create('tfg:brick/glacio_stone')
+        .translationKey('item.tfg.brick.glacio_stone')
+    event.create('tfg:brick/permafrost')
+        .translationKey('item.tfg.brick.permafrost')
     // #endregion
 
     // #region Primitive rubber gloves
@@ -132,12 +147,24 @@ const registerTFGItems = (event) => {
         .tooltip(`§9Instant Health II`)
     //#endregion
 
-    //#region Wax
+    //#region Misc
     event.create('tfg:paraffin_wax')
         .translationKey('item.tfg.paraffin_wax')
 
     event.create('tfg:conifer_rosin')
         .translationKey('item.tfg.conifer_rosin')
+
+    event.create('tfg:foil_pack')
+        .translationKey('item.tfg.foil_pack')
+        .texture('tfg:item/foil_pack')
+
+    event.create('tfg:clean_foil_pack')
+        .translationKey('item.tfg.clean_foil_pack') 
+        .texture('tfg:item/clean_foil_pack')  
+
+    event.create('tfg:dry_ice')
+        .translationKey('item.tfg.dry_ice') 
+        .texture('tfg:item/dry_ice')  
     //#endregion
 
     //#region Cloth & String
@@ -152,6 +179,9 @@ const registerTFGItems = (event) => {
 
     event.create('tfg:phantom_thread')
         .translationKey('item.tfg.phantom_thread')
+
+    event.create('tfg:space_suit_fabric')
+        .translationKey('item.tfg.space_suit_fabric')
     //#endregion
 
     //#region Tools
@@ -160,6 +190,9 @@ const registerTFGItems = (event) => {
 
     event.create('tfg:fletching')
         .translationKey('item.tfg.fletching')
+
+    event.create('tfg:armor_stand_arms')
+        .translationKey('item.tfg.armor_stand_arms')
 
     event.create('tfg:fishing_net/wood')
         .translationKey('item.tfg.fishing_net.wood')
@@ -266,100 +299,4 @@ const registerTFGItems = (event) => {
     event.create('tfg:titanium_hull_reinforcement')
         .translationKey('item.tfg.titanium_hull_reinforcement')
     //#endregion
-
-    // #region 0.7.19 -> 0.9 compat
-
-    event.create('gtceu:zinc_ingot').texture('tfg:item/deprecated')
-    event.create('gtceu:brass_ingot').texture('tfg:item/deprecated')
-    event.create('gtceu:vanadium_ingot').texture('tfg:item/deprecated')
-    event.create('gtceu:black_steel_ingot').texture('tfg:item/deprecated')
-    event.create('gtceu:red_steel_ingot').texture('tfg:item/deprecated')
-    event.create('gtceu:blue_steel_ingot').texture('tfg:item/deprecated')
-    event.create('gtceu:iron_double_ingot').texture('tfg:item/deprecated')
-
-    event.create('gtceu:black_steel_double_ingot').texture('tfg:item/deprecated')
-    event.create('gtceu:red_steel_double_ingot').texture('tfg:item/deprecated')
-    event.create('gtceu:blue_steel_double_ingot').texture('tfg:item/deprecated')
-
-    event.create('gtceu:zinc_nugget').texture('tfg:item/deprecated')
-    event.create('gtceu:brass_nugget').texture('tfg:item/deprecated')
-    event.create('gtceu:copper_nugget').texture('tfg:item/deprecated')
-    event.create('gtceu:vanadium_nugget').texture('tfg:item/deprecated')
-
-    event.create('gtceu:copper_plate').texture('tfg:item/deprecated')
-    event.create('gtceu:brass_plate').texture('tfg:item/deprecated')
-    event.create('gtceu:gold_plate').texture('tfg:item/deprecated')
-    event.create('gtceu:iron_plate').texture('tfg:item/deprecated')
-    event.create('gtceu:cobalt_plate').texture('tfg:item/deprecated')
-    event.create('gtceu:rose_gold_plate').texture('tfg:item/deprecated')
-    event.create('gtceu:aluminium_plate').texture('tfg:item/deprecated')
-    event.create('gtceu:invar_plate').texture('tfg:item/deprecated')
-    event.create('gtceu:lead_plate').texture('tfg:item/deprecated')
-    event.create('gtceu:nickel_plate').texture('tfg:item/deprecated')
-    event.create('gtceu:osmium_plate').texture('tfg:item/deprecated')
-    event.create('gtceu:palladium_plate').texture('tfg:item/deprecated')
-    event.create('gtceu:platinum_plate').texture('tfg:item/deprecated')
-    event.create('gtceu:rhodium_plate').texture('tfg:item/deprecated')
-    event.create('gtceu:silver_plate').texture('tfg:item/deprecated')
-    event.create('gtceu:vanadium_plate').texture('tfg:item/deprecated')
-    event.create('gtceu:zinc_plate').texture('tfg:item/deprecated')
-
-    event.create('gtceu:vanadium_block').texture('tfg:item/deprecated')
-    event.create('gtceu:zinc_block').texture('tfg:item/deprecated')
-    event.create('gtceu:brass_block').texture('tfg:item/deprecated')
-
-    event.create('gtceu:gold_purified_ore').texture('tfg:item/deprecated')
-    event.create('gtceu:copper_purified_ore').texture('tfg:item/deprecated')
-    event.create('gtceu:zinc_purified_ore').texture('tfg:item/deprecated')
-    event.create('gtceu:silver_purified_ore').texture('tfg:item/deprecated')
-    event.create('gtceu:tin_purified_ore').texture('tfg:item/deprecated')
-    event.create('gtceu:lead_purified_ore').texture('tfg:item/deprecated')
-
-    event.create('gtceu:rich_raw_copper').texture('tfg:item/deprecated')
-    event.create('gtceu:poor_raw_copper').texture('tfg:item/deprecated')
-
-    event.create('gtceu:rich_raw_gold').texture('tfg:item/deprecated')
-    event.create('gtceu:poor_raw_gold').texture('tfg:item/deprecated')
-
-    event.create('gtceu:rich_raw_tetrahedrite').texture('tfg:item/deprecated')
-    event.create('gtceu:raw_tetrahedrite').texture('tfg:item/deprecated')
-    event.create('gtceu:poor_raw_tetrahedrite').texture('tfg:item/deprecated')
-
-    event.create('gtceu:rich_raw_malachite').texture('tfg:item/deprecated')
-    event.create('gtceu:raw_malachite').texture('tfg:item/deprecated')
-    event.create('gtceu:poor_raw_malachite').texture('tfg:item/deprecated')
-
-    event.create('gtceu:rich_raw_hematite').texture('tfg:item/deprecated')
-    event.create('gtceu:raw_hematite').texture('tfg:item/deprecated')
-    event.create('gtceu:poor_raw_hematite').texture('tfg:item/deprecated')
-
-    event.create('gtceu:rich_raw_cassiterite').texture('tfg:item/deprecated')
-    event.create('gtceu:raw_cassiterite').texture('tfg:item/deprecated')
-    event.create('gtceu:poor_raw_cassiterite').texture('tfg:item/deprecated')
-
-    event.create('gtceu:rich_raw_bismuth').texture('tfg:item/deprecated')
-    event.create('gtceu:raw_bismuth').texture('tfg:item/deprecated')
-    event.create('gtceu:poor_raw_bismuth').texture('tfg:item/deprecated')
-
-    event.create('gtceu:rich_raw_magnetite').texture('tfg:item/deprecated')
-    event.create('gtceu:raw_magnetite').texture('tfg:item/deprecated')
-    event.create('gtceu:poor_raw_magnetite').texture('tfg:item/deprecated')
-
-    event.create('gtceu:rich_raw_yellow_limonite').texture('tfg:item/deprecated')
-    event.create('gtceu:raw_yellow_limonite').texture('tfg:item/deprecated')
-    event.create('gtceu:poor_raw_yellow_limonite').texture('tfg:item/deprecated')
-
-    event.create('gtceu:rich_raw_garnierite').texture('tfg:item/deprecated')
-    event.create('gtceu:raw_garnierite').texture('tfg:item/deprecated')
-    event.create('gtceu:poor_raw_garnierite').texture('tfg:item/deprecated')
-
-    event.create('gtceu:rich_raw_silver').texture('tfg:item/deprecated')
-    event.create('gtceu:raw_silver').texture('tfg:item/deprecated')
-    event.create('gtceu:poor_raw_silver').texture('tfg:item/deprecated')
-
-    event.create('gtceu:rich_raw_sphalerite').texture('tfg:item/deprecated')
-    event.create('gtceu:raw_sphalerite').texture('tfg:item/deprecated')
-    event.create('gtceu:poor_raw_sphalerite').texture('tfg:item/deprecated')
-
-    // #endregion
 }

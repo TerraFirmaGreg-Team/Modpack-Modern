@@ -1,3 +1,7 @@
+#
+# Familiarity value above which familiarity no longer will decay. Default is 0.3, or 30%. Setting it to 0 will cause familiarity to never decay.
+#Range: 0.0 ~ 1.0
+familiarityDecayLimit = 0.3
 
 [general]
 	#
@@ -34,6 +38,10 @@
 	#
 	# If true, lightning has a chance of stripping bark off of trees.
 	enableLightningStrippingLogs = true
+	#
+	# Every time the z coordinate reaches a multiple of this point, the wind over oceans will switch directions.
+	#Range: > 128
+	oceanWindScale = 5000
 
 [blocks]
 
@@ -242,7 +250,7 @@
 	[blocks.pumpkin]
 		#
 		# Enables the knifing of pumpkins to carve them.
-		enablePumpkinCarving = true
+		enablePumpkinCarving = false
 		#
 		# Number of ticks required for a jack 'o lantern to burn out (1000 = 1 in game hour = 50 seconds), default is 108 hours. Set to -1 to disable burnout.
 		#Range: > -1
@@ -250,13 +258,13 @@
 
 	[blocks.bloomery]
 		#
-		# Inventory capacity (in number of items per level of chimney) of the bloomery.
-		#Range: > 1
-		bloomeryCapacity = 8
-		#
 		# The maximum number of levels that can be built in a bloomery multiblock, for added capacity.
 		#Range: > 1
 		bloomeryMaxChimneyHeight = 3
+		#
+		# Inventory capacity (in number of items per level of chimney) of the bloomery.
+		#Range: > 1
+		bloomeryCapacity1 = 16
 
 	[blocks.blastFurnace]
 		#
@@ -343,6 +351,13 @@
 		# A modifier to the strength of powderkegs when exploding. A max powderkeg explosion is 64, and all explosions are capped to this size no matter the value of the modifier.
 		#Range: 0.0 ~ 64.0
 		powderKegStrengthModifier = 1.0
+		#
+		# If true, powder kegs will only break stone, ores, gravel, and dirt.
+		powderKegOnlyBreaksNaturalBlocks = false
+		#
+		# The time in ticks for a powderkeg to defuse. Default is 80 ticks, or 4 seconds.
+		#Range: > 1
+		powderKegFuseTime = 80
 
 	[blocks.hotWater]
 		#
@@ -495,6 +510,16 @@
 		#
 		# If true, powder bowls will interact with in-world automation such as hoppers on a side-specific basis.
 		powderBowlEnableAutomation = true
+
+	[blocks.mud]
+		#
+		# If TFC dirt blocks are able to be created into mud blocks using a water-filled fluid container.
+		enableDirtToMudCreation = true
+
+	[blocks.quern]
+		#
+		# If true, querns will interact with in-world automation such as hoppers on a side-specific basis.
+		quernEnableAutomation = true
 
 [items]
 
@@ -801,7 +826,7 @@
 		# If true, enables the default vanilla behavior of mobs spawning with enchanted weapons sometimes.
 		enableVanillaMobsSpawningWithEnchantments = false
 		#
-		# If true, enables the default behavior of mobs sapwning with vanilla armor and weapons
+		# If true, enables the default behavior of mobs spawning with vanilla armor and weapons
 		enableVanillaMobsSpawningWithVanillaEquipment = false
 		#
 		# If true, golems can be built
@@ -1258,6 +1283,31 @@
 			# Ticks until egg is ready to hatch
 			#Range: > 0
 			quailHatchDays = 8
+
+		[mechanics.animals.rabbit]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			rabbitFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			rabbitAdulthoodDays = 80
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			rabbitUses = 40
+			#
+			# Does the animal eat rotten food?
+			rabbitEatsRottenFood = true
+			#
+			# Length of pregnancy in days
+			#Range: > 0
+			rabbitGestationDays = 19
+			#
+			# Max number of children born
+			#Range: 0 ~ 100
+			rabbitChildCount = 6
 
 [weird]
 	farmlandMakesTheBestRaceTracks = false

@@ -31,14 +31,6 @@
             "weight": 1
           },
           {
-            "block": "gtceu:granite_bauxite_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_bauxite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:granite_pollucite_ore",
             "weight": 15
           },
@@ -67,14 +59,6 @@
           },
           {
             "block": "gtceu:raw_mica_block",
-            "weight": 1
-          },
-          {
-            "block": "gtceu:diorite_bauxite_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_bauxite_block",
             "weight": 1
           },
           {
@@ -109,14 +93,6 @@
             "weight": 1
           },
           {
-            "block": "gtceu:gabbro_bauxite_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_bauxite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:gabbro_pollucite_ore",
             "weight": 15
           },
@@ -148,14 +124,6 @@
             "weight": 1
           },
           {
-            "block": "gtceu:schist_bauxite_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_bauxite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:schist_pollucite_ore",
             "weight": 15
           },
@@ -184,14 +152,6 @@
           },
           {
             "block": "gtceu:raw_mica_block",
-            "weight": 1
-          },
-          {
-            "block": "gtceu:gneiss_bauxite_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_bauxite_block",
             "weight": 1
           },
           {
@@ -227,14 +187,6 @@
             "weight": 1
           },
           {
-            "block": "gtceu:pyroxenite_bauxite_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_bauxite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:pyroxenite_pollucite_ore",
             "weight": 15
           },
@@ -257,10 +209,6 @@
         },
         {
           "block": "gtceu:mica_indicator",
-          "weight": 25
-        },
-        {
-          "block": "gtceu:bauxite_indicator",
           "weight": 25
         },
         {

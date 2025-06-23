@@ -79,7 +79,7 @@ function registerGTCEUMetalRecipes(event) {
 					.outputFluids(Fluid.of(material.getFluid(), 144))
 					.duration(material.getMass() * 6)
 					.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-					.EUt(GTValues.VA[GTValues.ULV])
+					.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
 			}
 
 		} else if (material.hasProperty(PropertyKey.GEM)) {
@@ -221,7 +221,7 @@ function registerGTCEUMetalRecipes(event) {
 				.outputFluids(Fluid.of(material.getFluid(), 288))
 				.duration(material.getMass())
 				.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
+				.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
 		}
 
 		if (material.hasProperty(PropertyKey.DUST)) {
@@ -401,6 +401,10 @@ function registerGTCEUMetalRecipes(event) {
 		if (!material.hasProperty(PropertyKey.BLAST)) {
 			event.smelting(ingotItem, normalOreItem).id(`gtceu:smelting/smelt_raw_${material.getName()}_ore_to_ingot`)
 		}
+
+		// Remove ore block recipes
+		event.remove({ id: `gtceu:compressor/compress_${material.getName()}_to_raw_ore_block` })
+		event.remove({ id: `gtceu:forge_hammer/decompress_${material.getName()}_to_raw_ore` })
 	}
 
 	const processRichRawOre = (material) => {
@@ -596,7 +600,7 @@ function registerGTCEUMetalRecipes(event) {
 			.outputFluids(Fluid.of(material.getFluid(), 14 * 144))
 			.duration(material.getMass() * 32)
 			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
 
 		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_anvil`)
 			.itemInputs(ChemicalHelper.get(TagPrefix.ingot, material, 14))
@@ -662,7 +666,7 @@ function registerGTCEUMetalRecipes(event) {
 
 		event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_unfinished_lamp`)
 			.itemInputs(unfinishedLampStack)
-			.itemOutputs([materialIngotStack, glassDustStack])
+			.itemOutputs(materialIngotStack)
 			.duration(material.getMass() * 8)
 			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 			.EUt(GTValues.VA[GTValues.ULV])
@@ -672,7 +676,7 @@ function registerGTCEUMetalRecipes(event) {
 			.outputFluids(Fluid.of(material.getFluid(), 144))
 			.duration(material.getMass() * 8)
 			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
 
 		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_unfinished_lamp`)
 			.itemInputs(materialIngotStack)
@@ -717,7 +721,7 @@ function registerGTCEUMetalRecipes(event) {
 			.outputFluids(Fluid.of(material.getFluid(), 144))
 			.duration(material.getMass() * 7)
 			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
 
 		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_trapdoor`)
 			.itemInputs(materialIngotStack)
@@ -765,7 +769,7 @@ function registerGTCEUMetalRecipes(event) {
 			.outputFluids(Fluid.of(material.getFluid(), 9))
 			.duration(material.getMass() * 3)
 			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
 
 		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_chain`)
 			.itemInputs(materialIngotStack)
@@ -830,11 +834,15 @@ function registerGTCEUMetalRecipes(event) {
 
 	const processBars = (material) => {
 		const barsStack = ChemicalHelper.get(TFGTagPrefix.bars, material, 4)
+		const ingotStack =  ChemicalHelper.get(TagPrefix.ingot, material, 1)
 		if (barsStack == null)
 			return;
 
-		event.stonecutting(barsStack, ChemicalHelper.get(TagPrefix.ingot, material, 1))
-			.id(`${material.getName()}_ingot_to_bars`)
+		event.recipes.gtceu.cutter(`tfg:${material.getName()}_bars`)
+			.itemInputs(ingotStack)
+			.itemOutputs(barsStack)
+			.duration(100)
+			.EUt(GTValues.VA[GTValues.LV])
 	}
 
 	forEachMaterial(material => {

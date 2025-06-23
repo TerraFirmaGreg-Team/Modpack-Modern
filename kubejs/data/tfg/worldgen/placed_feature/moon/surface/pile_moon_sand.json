@@ -1,0 +1,47 @@
+{
+	"feature": "tfg:moon/surface/pile_moon_sand",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 5
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING"
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_blocks",
+				"offset": [ 0, -1, 0 ],
+				"blocks": [
+					"tfc:rock/raw/andesite",
+					"tfc:rock/hardened/andesite",
+					"tfc:rock/gravel/andesite",
+					"tfc:rock/raw/dacite",
+					"tfc:rock/hardened/dacite",
+					"tfc:rock/gravel/dacite",
+					"tfc:rock/raw/gabbro",
+					"tfc:rock/hardened/gabbro",
+					"tfc:rock/gravel/gabbro",
+					"ad_astra:moon_stone",
+					"tfg:rock/hardened_moon_stone",
+					"ad_astra:moon_sand",
+					"tfc:rock/raw/rhyolite",
+					"tfc:rock/hardened/rhyolite",
+					"tfc:rock/gravel/rhyolite"
+				]
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING"
+		}
+	]
+}

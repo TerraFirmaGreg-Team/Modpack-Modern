@@ -47,6 +47,7 @@ const registerCreatedecoRecipes = (event) => {
 	event.remove({ id: 'createdeco:industrial_iron_bars' })
 	event.remove({ id: 'createdeco:zinc_bars_overlay' })
 	event.remove({ id: 'createdeco:zinc_bars' })
+	event.remove({ id: 'gtceu:assembler/bricks' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/tin_alloy' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/brass' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/wrought_iron' })
@@ -130,6 +131,14 @@ const registerCreatedecoRecipes = (event) => {
 	const brickTypes = ['blue', 'verdant', 'pearl', 'dean', 'dusk', 'scarlet', 'umber']
 	const powderTypes = ['lapis_lazuli', 'malachite', 'soda_ash', 'limonite', 'charcoal', 'hematite', 'cassiterite']
 
+	event.recipes.gtceu.assembler(`assembler_bricks`)
+			.itemInputs('5x minecraft:brick')
+			.inputFluids(Fluid.of('gtceu:concrete', 144))
+			.itemOutputs(`4x minecraft:bricks`)
+			.duration(50)
+			.circuit(2)
+			.EUt(7)
+
 	brickTypes.forEach(type => {
 		event.remove({ output: `createdeco:${type}_bricks` });
 	});
@@ -165,7 +174,7 @@ const registerCreatedecoRecipes = (event) => {
 	});
 	//#endregion
 
-	// #region Bars
+	// #region Bars + Doors
 
 	const metalThings = [
 		{ metal: 'andesite', material: 'tin_alloy', tier: 3 },
@@ -181,27 +190,106 @@ const registerCreatedecoRecipes = (event) => {
 		event.remove({ id: `createdeco:${bar.metal}_door` })
 
 		if (bar.metal != 'iron') {
+			event.remove({ type: 'minecraft:stonecutting', output: `createdeco:${bar.metal}_bars` })
+
 			event.recipes.tfc.anvil(`4x createdeco:${bar.metal}_bars`, `#forge:ingots/${bar.material}`, ['shrink_last', 'punch_second_last', 'punch_third_last'])
 				.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_bars`)
 
-			event.recipes.tfc.anvil(`createdeco:${bar.metal}_door`, `#forge:ingots/${bar.material}`, ['draw_last', 'draw_second_last', 'punch_third_last'])
+			event.recipes.gtceu.assembler(`tfg:${bar.material}_create_deco_bars`)
+				.itemInputs(`2x #forge:rods/${bar.material}`)
+				.itemOutputs(`4x createdeco:${bar.metal}_bars`)
+				.duration(100)
+				.EUt(GTValues.VA[GTValues.LV])
+				.circuit(12)
+
+			event.recipes.tfc.anvil(`createdeco:${bar.metal}_door`, `#forge:double_plates/${bar.material}`, ['draw_last', 'draw_second_last', 'punch_third_last'])
 				.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_door`)
 
-			event.recipes.tfc.anvil(`createdeco:${bar.metal}_trapdoor`, `#forge:ingots/${bar.material}`, ['shrink_last', 'draw_second_last', 'draw_third_last'])
-				.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_trapdoor`)
-
-			event.stonecutting(`createdeco:${bar.metal}_trapdoor`, `#forge:ingots/${bar.material}`)
-				.id(`createdeco:stonecutting/${bar.metal}_trapdoor`)
-
-			event.stonecutting(`createdeco:${bar.metal}_door`, `#forge:ingots/${bar.material}`)
-				.id(`createdeco:stonecutting/${bar.metal}_door`)
+			event.recipes.gtceu.cutter(`tfg:${bar.material}_create_deco_door`)
+				.itemInputs(`#forge:double_plates/${bar.material}`)
+				.itemOutputs(`createdeco:${bar.metal}_door`)
+				.duration(100)
+				.EUt(GTValues.VA[GTValues.LV])
 		}
 
-		event.recipes.tfc.anvil(`4x createdeco:${bar.metal}_bars_overlay`, `#forge:ingots/${bar.material}`, ['draw_last', 'punch_second_last', 'punch_third_last'])
+		event.remove({ type: 'minecraft:stonecutting', output: `createdeco:${bar.metal}_bars_overlay` })
+
+		event.recipes.tfc.anvil(`2x createdeco:${bar.metal}_bars_overlay`, `#forge:ingots/${bar.material}`, ['draw_last', 'punch_second_last', 'punch_third_last'])
 			.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_bars_overlay`)
 
+		event.recipes.gtceu.assembler(`tfg:${bar.material}_create_deco_bars_overlay`)
+			.itemInputs(`1x #forge:rods/${bar.material}`, `1x #forge:plates/${bar.material}`)
+			.itemOutputs(`4x createdeco:${bar.metal}_bars_overlay`)
+			.duration(100)
+			.EUt(GTValues.VA[GTValues.LV])
+			.circuit(13)
 	})
 
+	// #endregion
+
+	// #region Trapdoors
+	
+	event.shapeless(`createdeco:copper_trapdoor`, `tfc:metal/trapdoor/copper`)
+	event.shapeless(`tfc:metal/trapdoor/copper`, `createdeco:copper_trapdoor`)
+
+	event.shapeless(`createdeco:industrial_iron_trapdoor`, `tfc:metal/trapdoor/steel`)
+	event.shapeless(`tfc:metal/trapdoor/steel`, `createdeco:industrial_iron_trapdoor`)
+
+	// TODO: move these two into the tag prefixes in tfg-core, then remove these recipes
+
+	event.recipes.tfc.anvil(`createdeco:brass_trapdoor`, `#forge:ingots/brass`, ['shrink_last', 'draw_second_last', 'draw_third_last'])
+		.tier(2).id(`createdeco:anvil/brass_trapdoor`)
+
+	event.recipes.gtceu.alloy_smelter(`tfg:cast_brass_trapdoor`)
+		.itemInputs('#forge:ingots/brass')
+		.notConsumable('tfg:trapdoor_casting_mold')
+		.itemOutputs('createdeco:brass_trapdoor')
+		.duration(GTMaterials.Brass.getMass())
+		.category(GTRecipeCategories.INGOT_MOLDING)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.fluid_solidifier(`tfg:solidify_brass_trapdoor`)
+		.inputFluids(Fluid.of(GTMaterials.Brass.getFluid(), 144))
+		.notConsumable('tfg:trapdoor_casting_mold')
+		.itemOutputs('createdeco:brass_trapdoor')
+		.duration(GTMaterials.Brass.getMass())
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.tfc.anvil(`createdeco:zinc_trapdoor`, `#forge:ingots/zinc`, ['shrink_last', 'draw_second_last', 'draw_third_last'])
+		.tier(1).id(`createdeco:anvil/zinc_trapdoor`)
+
+	event.recipes.gtceu.alloy_smelter(`tfg:cast_zinc_trapdoor`)
+		.itemInputs('#forge:ingots/zinc')
+		.notConsumable('tfg:trapdoor_casting_mold')
+		.itemOutputs('createdeco:zinc_trapdoor')
+		.duration(GTMaterials.Zinc.getMass())
+		.category(GTRecipeCategories.INGOT_MOLDING)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.fluid_solidifier(`tfg:solidify_zinc_trapdoor`)
+		.inputFluids(Fluid.of(GTMaterials.Zinc.getFluid(), 144))
+		.notConsumable('tfg:trapdoor_casting_mold')
+		.itemOutputs('createdeco:zinc_trapdoor')
+		.duration(GTMaterials.Zinc.getMass())
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.tfc.anvil(`createdeco:andesite_trapdoor`, `#forge:ingots/iron_alloy`, ['shrink_last', 'draw_second_last', 'draw_third_last'])
+		.tier(3).id(`createdeco:anvil/andesite_trapdoor`)
+
+	event.recipes.gtceu.alloy_smelter(`tfg:cast_tin_alloy_trapdoor`)
+		.itemInputs('#forge:ingots/tin_alloy')
+		.notConsumable('tfg:trapdoor_casting_mold')
+		.itemOutputs('createdeco:andesite_trapdoor')
+		.duration(GTMaterials.TinAlloy.getMass())
+		.category(GTRecipeCategories.INGOT_MOLDING)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.fluid_solidifier(`tfg:solidify_tin_alloy_trapdoor`)
+		.inputFluids(Fluid.of(GTMaterials.TinAlloy.getFluid(), 144))
+		.notConsumable('tfg:trapdoor_casting_mold')
+		.itemOutputs('createdeco:andesite_trapdoor')
+		.duration(GTMaterials.TinAlloy.getMass())
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	// #endregion
 

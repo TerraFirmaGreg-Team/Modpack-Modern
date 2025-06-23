@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:block/warped_roots",
+	"render_type": "cutout_mipped",
+	"ambientocclusion": "false",
+	"textures": {
+		"cross": "tfg:block/lunar_roots",
+		"particle": "tfg:block/lunar_roots"
+	}
+}

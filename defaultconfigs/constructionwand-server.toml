@@ -1,0 +1,90 @@
+
+#This is the Server config for ConstructionWand.
+#If you're not familiar with Forge's new split client/server config, let me explain:
+#Client config is stored in the /config folder and only contains client specific settings like graphics and keybinds.
+#Mod behavior is configured in the Server config, which is world-specific and thus located
+#in the /saves/myworld/serverconfig folder. If you want to change the serverconfig for all
+#new worlds, copy the config files in the /defaultconfigs folder.
+[stone_wand]
+	#Wand durability
+	#Range: > 1
+	durability = 131
+	#Wand block limit
+	#Range: > 1
+	limit = 9
+	#Max placement distance with angel core (0 to disable angel core)
+	#Range: > 0
+	angel = 0
+	#Wand destruction block limit (0 to disable destruction core)
+	#Range: > 0
+	destruction = 0
+	#Allow wand upgrading by putting the wand together with a wand core in a crafting grid.
+	upgradeable = false
+
+[iron_wand]
+	#Wand durability
+	#Range: > 1
+	durability = 250
+	#Wand block limit
+	#Range: > 1
+	limit = 27
+	#Max placement distance with angel core (0 to disable angel core)
+	#Range: > 0
+	angel = 2
+	#Wand destruction block limit (0 to disable destruction core)
+	#Range: > 0
+	destruction = 9
+	#Allow wand upgrading by putting the wand together with a wand core in a crafting grid.
+	upgradeable = true
+
+[diamond_wand]
+	#Wand durability
+	#Range: > 1
+	durability = 1561
+	#Wand block limit
+	#Range: > 1
+	limit = 128
+	#Max placement distance with angel core (0 to disable angel core)
+	#Range: > 0
+	angel = 8
+	#Wand destruction block limit (0 to disable destruction core)
+	#Range: > 0
+	destruction = 25
+	#Allow wand upgrading by putting the wand together with a wand core in a crafting grid.
+	upgradeable = true
+
+[infinity_wand]
+	#Wand block limit
+	#Range: > 1
+	limit = 1024
+	#Max placement distance with angel core (0 to disable angel core)
+	#Range: > 0
+	angel = 16
+	#Wand destruction block limit (0 to disable destruction core)
+	#Range: > 0
+	destruction = 81
+	#Allow wand upgrading by putting the wand together with a wand core in a crafting grid.
+	upgradeable = true
+
+[misc]
+	#Block limit for Infinity Wand used in creative mode
+	#Range: > 1
+	InfinityWandCreative = 2048
+	#Maximum placement range (0: unlimited). Affects all wands and is meant for lag prevention, not game balancing.
+	#Range: > 0
+	MaxRange = 100
+	#Number of operations that can be undone
+	#Range: > 0
+	UndoHistory = 3
+	#Place blocks below you while falling > 10 blocks with angel core (Can be used to save you from drops/the void)
+	AngelFalling = false
+	#Blocks to treat equally when in Similar mode. Enter block IDs seperated by ;
+	SimilarBlocks = ["minecraft:dirt;minecraft:grass_block;minecraft:coarse_dirt;minecraft:podzol;minecraft:mycelium;minecraft:farmland;minecraft:dirt_path;minecraft:rooted_dirt"]
+
+[tileentity]
+	#White/Blacklist for Tile Entities. Allow/Prevent blocks with TEs from being placed by wand.
+	#You can either add block ids like minecraft:chest or mod ids like minecraft
+	TEList = ["chiselsandbits"]
+	#If set to TRUE, treat TEList as a whitelist, otherwise blacklist
+	TEWhitelist = false
+

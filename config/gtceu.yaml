@@ -479,7 +479,7 @@ gameplay:
 
   # Whether environmental hazards like pollution or radiation are active
   # Default: true
-  environmentalHazards: true
+  environmentalHazards: false
 
   # How much environmental hazards decay per chunk, per tick.
   # Default: 0.001
@@ -535,7 +535,7 @@ compat:
     # The radius, in blocks, that picking up a surface rock will search for veins in.
     # -1 to disable.
     # Default: 24
-    surfaceRockProspectRange: -1
+    surfaceRockProspectRange: 1
 
     # The radius, in blocks, that clicking an ore block will search for veins in.
     # -1 to disable
@@ -593,7 +593,7 @@ compat:
 
   # Whether dimension markers should show the dimension tier value.
   # Default: false
-  showDimensionTier: true
+  showDimensionTier: false
 
 dev:
   # Debug general events? (will print recipe conficts etc. to server's debug.log)

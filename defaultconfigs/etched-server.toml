@@ -1,0 +1,9 @@
+
+[Boombox]
+	#Disables right clicking music discs into boomboxes and allows the menu to be used by shift right-clicking
+	"Use boombox menu" = false
+
+["Album Cover"]
+	#Disables right clicking music discs into album covers and allows the menu to be used by shift right-clicking
+	"Use album cover menu" = false
+

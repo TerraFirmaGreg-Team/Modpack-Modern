@@ -164,7 +164,6 @@ const registerDomumOrnamentumBlockTags = (event) => {
 		event.add('domum_ornamentum:timber_frames_center', `${material}`)
 		event.add('domum_ornamentum:timber_frames_frame', `${material}`)
 		event.add('domum_ornamentum:trapdoors_materials', `${material}`)
-		event.add('domum_ornamentum:framed_light_center', `${material}`)
 	});
 
 	// Gregtech storage blocks don't work here

@@ -419,7 +419,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"Mode\":2}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},
@@ -485,7 +485,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\": 4, \"GT.Behaviours\":{\"HarvestIce\":1}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},
@@ -496,7 +496,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\": 4, \"GT.Behaviours\":{\"DisableShields\":1, \"TreeFelling\":1}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				}
@@ -827,13 +827,13 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:shroomlight",
+					"name": "minecraft:phantom_membrane",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 3,
-								"max": 6,
+								"min": 1,
+								"max": 3,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -842,7 +842,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:glowstone",
+					"name": "minecraft:glowstone_dust",
 					"functions": [
 						{
 							"function": "minecraft:set_count",

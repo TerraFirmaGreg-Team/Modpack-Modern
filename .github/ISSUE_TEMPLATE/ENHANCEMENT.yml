@@ -1,7 +1,9 @@
 name: "Enhancement"
 description: "Provide supporting details for a feature in development"
 title: "[🪡]: "
-labels: [ "1. Type: Enhancement" ]
+labels: [ "Status: Backlog" ]
+projects: ["TerraFirmaGreg-Team/10"]
+type: "Enhancement"
 
 body:
   - type: checkboxes

@@ -1,0 +1,80 @@
+#Toggle the spawning of wave entities? This prevents the waves from depositing blocks on the shores. True = enabled.
+toggleWaveEntities = true
+#Toggle whether or not waves should be able to interact (push) with nearby entities? True = enabled.
+waveEntityInteraction = true
+#Toggle whether spawning should be equally distributed across distance from the player or have a higher chance to spawn near the player. True = equal distribution.
+waveEqualSpawnDistribution = true
+#Search distance for when creating coastal waves.
+#Range: > 0
+waveSearchDistance = 14
+#Additional block distance on top of render distance at which waves can spawn.
+#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+waveSpawnDistance = 0.0
+#Additional amount of waves to spawn.
+#Range: 0.0 ~ 1.7976931348623157E308
+waveSpawnAmount = 0.8
+#Time in ticks between each spawn sequence of waves. Set to 0 to disable waves.
+#Range: > 0
+waveSpawnFrequency = 30
+#Maximum spawn distance from shore.
+#Range: 0.0 ~ 1.7976931348623157E308
+waveSpawnDistanceFromShoreMax = 48.0
+#Minimum spawn distance from shore.
+#Range: 0.0 ~ 1.7976931348623157E308
+waveSpawnDistanceFromShoreMin = 4.0
+#Amount of sprites for waves. Zero indexed.
+#Range: > 1
+waveSpriteCount = 5
+#How great should the chance for waves to deposit blocks be? Lower value = higher chance.
+#Range: > 1
+waveBlockDepositChance = 100
+#How often the waves should make a sound. Higher value = rarer.
+#Range: > 0
+waveBreakingSoundChance = 40
+#How fast the bioluminescence should change (octaves).
+#Range: > 1
+waveBioluminescenceChange = 16
+#The amount of iterations to process the bioluminescence noise map. More = rarer bioluminescent events.
+#Range: 0.0 ~ 1.7976931348623157E308
+waveBioluminescenceFrequency = 0.5
+#The maximum angle within which waves can spawn irt. the player view direction. E.g. 360 degrees would allow waves to spawn all around the player.
+#Range: 0.0 ~ 360.0
+waveSpawningFOVLimit = 140.0
+#The amount of iterations to search for and refine for the nearest shore position.
+#Range: > 1
+waveFindNearestShoreIterations = 3
+#Volume modifier for the waves. 1.0 = 100% volume.
+#Range: 0.0 ~ 10.0
+waveVolume = 1.0
+#The multiplier value for how strong the interaction force of the waves are. Higher value = stronger force.
+#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+waveInteractionForceFactor = 1.0
+#How often the wave interaction should refresh/update. Higher values can yield better TPS at the cost of decreased interaction precision. Higher value => longer intervals between updates.
+#Range: > 1
+waveInteractionUpdateFrequency = 4
+
+[Debug]
+	#Enable debug?
+	debug = false
+	#Axis rotation index.
+	#Range: 0 ~ 5
+	axisIndex = 0
+	#Axis rotation.
+	#Range: -360.0 ~ 360.0
+	axisRotation = 0.0
+
+[Caching]
+	#Toggle whether or not caches should be utilized. For larger servers with lots of activity, the benefit of using caches give diminishing returns.
+	useCaches = true
+	#How often the caches should be purged. The time is in ticks, so 20 ticks = 1 second.
+	#Range: > 1
+	cacheUpdateFrequency = 12000
+	#Cache nearest found shore positions?
+	cacheNearestShorePos = true
+	#Cache all found shore positions?
+	cacheShorePos = false
+	#Cache if shore positions are surrounded by water?
+	cacheSurroundedByWater = false
+	#Cache amount of surrounding blocks that are water?
+	cacheSurroundingWaterAmount = false
+

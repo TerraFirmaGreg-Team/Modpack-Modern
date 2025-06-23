@@ -411,7 +411,7 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#endregion
 
-		//#region passthrough hatches
+	//#region passthrough hatches
 	event.recipes.shaped('gtceu:lv_item_passthrough_hatch', [
 		' A ',
 		'BCB',
@@ -665,17 +665,84 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#endregion
 
-	// Контроллер теплицы
-	event.shaped('gtceu:greenhouse', [
-		'ABA',
-		'CDC',
-		'BCB'
-	], {
-		A: '#gtceu:circuits/mv',
-		B: 'gtceu:copper_single_cable',
-		C: '#gtceu:circuits/mv',
-		D: 'gtceu:solid_machine_casing'
-	}).id('tfg:shaped/greenhouse')
+	// #region Assembly line stack size problems
+
+	event.remove({ id: 'gtceu:assembly_line/high_performance_computing_array' })
+	event.recipes.gtceu.assembly_line('high_performace_computing_array')
+		.itemInputs('gtceu:data_bank',
+			'4x #gtceu:circuits/zpm',
+			'8x gtceu:luv_field_generator',
+			'gtceu:data_orb',
+			'gtceu:computer_monitor_cover',
+			'32x #forge:double_wires/uranium_rhodium_dinaquadide',
+			'32x #forge:double_wires/uranium_rhodium_dinaquadide',
+			'16x gtceu:normal_optical_pipe')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 1152),
+			Fluid.of('gtceu:vanadium_gallium', 1152),
+			Fluid.of('gtceu:pcb_coolant', 4000))
+		.itemOutputs('gtceu:high_performance_computation_array')
+		.duration(60 * 20)
+		.EUt(100000)
+		["scannerResearch(java.util.function.UnaryOperator)"](b =>
+			b.researchStack(Item.of('gtceu:computer_monitor_cover')).EUt(GTValues.VA[GTValues.IV]).duration(120*20))
+
+	event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer' })
+	event.recipes.gtceu.assembly_line('me_pattern_buffer')
+		.itemInputs('gtceu:luv_dual_input_hatch',
+			'gtceu:luv_emitter',
+			'4x #gtceu:circuits/luv',
+			'3x ae2:pattern_provider',
+			'3x ae2:interface',
+			'4x ae2:speed_card',
+			'2x ae2:capacity_card',
+			'64x #forge:fine_wires/europium',
+			'32x #forge:fine_wires/europium')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 576), Fluid.of('gtceu:lubricant', 500))
+		.itemOutputs('gtceu:me_pattern_buffer')
+		.duration(30 * 20)
+		.EUt(GTValues.VA[GTValues.LuV])
+		["scannerResearch(java.util.function.UnaryOperator)"](b =>
+			b.researchStack(Item.of('gtceu:luv_dual_input_hatch')).EUt(GTValues.VA[GTValues.LuV]).duration(60*20))
+
+	event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer_proxy' })
+	event.recipes.gtceu.assembly_line('me_pattern_buffer_proxy')
+		.itemInputs('gtceu:luv_machine_hull',
+			'2x gtceu:luv_sensor',
+			'#gtceu:circuits/luv',
+			'ae2:quantum_link',
+			'2x ae2:quantum_ring',
+			'64x #forge:fine_wires/europium')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 576), Fluid.of('gtceu:lubricant', 500))
+		.itemOutputs('gtceu:me_pattern_buffer_proxy')
+		.duration(30 * 20)
+		.EUt(GTValues.VA[GTValues.ZPM])
+		.stationResearch(b => b.researchStack(Item.of('gtceu:me_pattern_buffer')).EUt(GTValues.VA[GTValues.LuV]).CWUt(32))
+
+	event.remove({ id: 'gtceu:assembly_line/ultimate_battery' })
+	event.recipes.gtceu.assembly_line('ultimate_battery')
+		.itemInputs('16x #forge:double_plates/darmstadtium',
+			'4x #gtceu:circuits/uhv',
+			'16x gtceu:energy_cluster',
+			'4x gtceu:uv_field_generator',
+			'64x gtceu:uhpic_wafer',
+			'64x gtceu:uhpic_wafer',
+			'64x gtceu:advanced_smd_diode',
+			'64x gtceu:advanced_smd_capacitor',
+			'64x gtceu:advanced_smd_resistor',
+			'64x gtceu:advanced_smd_transistor',
+			'64x gtceu:advanced_smd_inductor',
+			'32x gtceu:enriched_naquadah_trinium_europium_duranide_double_wire',
+			'64x #forge:bolts/neutronium')
+		.inputFluids(
+			Fluid.of('gtceu:soldering_alloy', 5760),
+			Fluid.of('gtceu:polybenzimidazole', 2304),
+			Fluid.of('gtceu:naquadria', 2592))
+		.itemOutputs('gtceu:max_battery')
+		.duration(100 * 20)
+		.EUt(300000)
+		.stationResearch(b => b.researchStack(Item.of('gtceu:energy_cluster')).EUt(GTValues.VA[GTValues.UHV]).CWUt(144))
+
+	// #endregion
 
 	// Drums
 	const DRUMS_AND_CRATES = [
@@ -685,7 +752,7 @@ function registerGTCEuMachineRecipes(event) {
 
 	DRUMS_AND_CRATES.forEach(material => {
 		event.shapeless(`gtceu:${material}_drum`, [`gtceu:${material}_drum`]).id(`tfg:shapeless/drum_nbt_${material}`)
-	
+
 		event.shaped(`gtceu:${material}_drum`, [
 			' A ',
 			'BCB',
@@ -749,4 +816,120 @@ function registerGTCEuMachineRecipes(event) {
 			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 	})
 
+	// Wooden crate
+	event.recipes.shaped('gtceu:wood_crate', [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: '#forge:screws/wrought_iron',
+		B: '#minecraft:planks',
+		C: '#forge:tools/saws'
+	}).id('tfg:shaped/wooden_crate_wrought_iron')
+
+	event.recipes.gtceu.assembler('gtceu:wood_crate')
+		.itemInputs('4x #minecraft:planks', '4x #forge:screws/wrought_iron')
+		.itemOutputs('gtceu:wood_crate')
+		.duration(100)
+		.EUt(16)
+		.circuit(5)
+
+	// Steam multi parts
+
+	event.shaped('gtceu:steel_machine_casing', [
+		' A ',
+		'ABA',
+		' A '
+	], {
+		A: '#forge:ingots/steel',
+		B: '#forge:tools/hammers'
+	}).id('gtceu:shaped/steel_hull')
+
+	event.shaped('gtceu:steam_input_hatch', [
+		'ACA',
+		' B ',
+		'ACA'
+	], {
+		A: '#forge:screws/wrought_iron',
+		B: 'gtceu:steel_machine_casing',
+		C: '#forge:small_fluid_pipes/steel'
+	}).id('gtceu:shaped/steam_hatch')
+
+	event.shaped('gtceu:steam_grinder', [
+		'ABA',
+		'ACA',
+		'ABA'
+	], {
+		A: 'gtceu:steam_machine_casing',
+		B: '#forge:gears/invar',
+		C: 'gtceu:hp_steam_macerator'
+	}).id('gtceu:shaped/steam_grinder')
+
+	event.shaped('gtceu:steam_oven', [
+		'ABA',
+		'ACA',
+		'ABA'
+	], {
+		A: 'gtceu:steam_machine_casing',
+		B: 'gtceu:heatproof_machine_casing',
+		C: 'gtceu:hp_steam_furnace'
+	}).id('gtceu:shaped/steam_oven')
+
+	event.replaceInput({ id: 'gtceu:shaped/hv_cutter' }, 'gtceu:red_steel_buzz_saw_blade', 'gtceu:diamond_buzz_saw_blade')
+
+
+	event.replaceOutput({ id: 'gtceu:macerator/macerate_steel_machine_casing' }, 'gtceu:steel_dust', '4x gtceu:steel_dust')
+	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steel_machine_casing' }, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
+
+	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_bus' }, 'gtceu:steel_dust', '4x gtceu:steel_dust')
+	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_bus' }, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
+	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_output_bus' }, 'gtceu:steel_dust', '4x gtceu:steel_dust')
+	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_output_bus' }, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
+
+	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_hatch' }, 'gtceu:steel_dust', '6x gtceu:steel_dust')
+	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_hatch' }, 'gtceu:steel_block', '6x gtceu:steel_ingot')
+
+	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_hatch'}, 'gtceu:steel_dust', '6x gtceu:steel_dust')
+	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_hatch'}, 'gtceu:steel_block', '6x gtceu:steel_ingot')
+
+	// #region Bedrock Miner
+
+	event.recipes.gtceu.assembler('gtceu:mv_bedrock_miner')
+		.itemInputs('1x gtceu:hv_machine_hull',
+					'4x #forge:frames/steel',
+					'4x #gtceu:circuits/iv',
+					'4x gtceu:hv_electric_motor',
+					'4x gtceu:hv_robot_arm',
+					'4x gtceu:hv_conveyor_module',
+					'4x #forge:gears/blue_steel')
+		.itemOutputs('gtceu:mv_bedrock_ore_miner')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.HV])
+		.circuit(2)
+
+	event.recipes.gtceu.assembler('gtceu:hv_bedrock_miner')
+		.itemInputs('1x gtceu:ev_machine_hull',
+					'4x #forge:frames/titanium',
+					'4x #gtceu:circuits/luv',
+					'4x gtceu:luv_electric_motor',
+					'4x gtceu:luv_robot_arm',
+					'4x gtceu:luv_conveyor_module',
+					'4x #forge:gears/ruridit')
+		.itemOutputs('gtceu:hv_bedrock_ore_miner')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.IV])
+		.circuit(2)
+
+	event.recipes.gtceu.assembler('gtceu:ev_bedrock_miner')
+		.itemInputs('1x gtceu:iv_machine_hull',
+					'4x #forge:frames/tungsten_steel',
+					'4x #gtceu:circuits/zpm',
+					'4x gtceu:zpm_electric_motor',
+					'4x gtceu:zpm_robot_arm',
+					'4x gtceu:zpm_conveyor_module',
+					'4x #forge:gears/osmiridium')
+		.itemOutputs('gtceu:ev_bedrock_ore_miner')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.ZPM])
+		.circuit(2)
 }

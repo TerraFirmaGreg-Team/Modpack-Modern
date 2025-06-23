@@ -2,7 +2,7 @@
 
 function registerGTCEuTFCMetalsRecipes(event)
 {
-		//#region LV hull
+	//#region LV hull
 
 	event.replaceInput('gtceu:shaped/lv_machine_hull', '#forge:plates/wrought_iron', '#forge:plates/red_steel')
 
@@ -58,6 +58,14 @@ function registerGTCEuTFCMetalsRecipes(event)
 	//#endregion
 
 	// red alloy, because crucible always makes 4+1=5
+
+	event.remove({ id: 'gtceu:alloy_blast_smelter/red_alloy' })
+	event.recipes.gtceu.alloy_blast_smelter('tfg:red_alloy_mixer')
+		.itemInputs('1x gtceu:copper_dust', '4x minecraft:redstone')
+		.outputFluids(Fluid.of('gtceu:red_alloy', 720))
+		.circuit(5)
+		.duration(75)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.remove({ id: 'gtceu:mixer/red_alloy' })
 	event.recipes.gtceu.mixer('tfg:red_alloy_mixer')

@@ -1,0 +1,200 @@
+# Default config file that will be copied to saves\New World\serverconfig\ftbchunks-world.snbt if it doesn't exist!
+# Just copy any values you wish to override in here!
+
+{
+	# Forced modes won't let players change their ally settings
+	# Default: "default"
+	# Valid values: "default", "forced_all", "forced_none"
+	ally_mode: "default"
+	
+	# Dimension ID's where chunks may not be claimed. Add "minecraft:the_end" to this list if you want to disable chunk claiming in The End, or "othermod:*" to disable chunk claiming in *all* dimensions added by "othermod"
+	# Default: []
+	claim_dimension_blacklist: [ ]
+	
+	# Dimension ID's where chunks may be claimed. If non-empty, chunks may be claimed *only* in these dimensions (and the dimension is not in "claim_dimension_blacklist"). Same syntax as for "claim_dimension_blacklist".
+	# Default: []
+	claim_dimension_whitelist: [ ]
+	
+	# Disables all land protection. Useful for private servers where everyone is trusted and claims are only used for force-loading
+	# Default: false
+	disable_protection: false
+	
+	# Override to disable/enable fake players like miners and auto-clickers globally.
+	# Default will check this setting for each team
+	# Default: "check"
+	# Valid values: "check", "deny", "allow"
+	fake_players: "check"
+	
+	# Minimap for clients connecting to this server will be disabled
+	# Default: false
+	force_disable_minimap: true
+	
+	# Control how force-loaded chunks work.
+	# NEVER: only allow chunk force-loading if the owning team has at least one online player.
+	# ALWAYS: always allow force-loading, even if no players are online.
+	# DEFAULT: allow force-loading IF the team has at least one player with the 'ftbchunks.chunk_load_offline' FTB Ranks permission.
+	# Default: "default"
+	# Valid values: "default", "always", "never"
+	force_load_mode: "default"
+	
+	# Hard limit for the number of chunks a team can claim, regardless of how many members. Default of 0 means no hard limit.
+	# Default: 0
+	# Range: 0 ~ 2147483647
+	hard_team_claim_limit: 0
+	
+	# Hard limit for the number of chunks a team can force-load, regardless of how many members. Default of 0 means no hard limit.
+	# Default: 0
+	# Range: 0 ~ 2147483647
+	hard_team_force_limit: 0
+	
+	# If true, "Location Visibility" team settings are ignored, and all players can see each other anywhere on the map.
+	# Default: false
+	location_mode_override: true
+	
+	# Interval in ticks to send updates to clients with long-range player tracking data.
+	# Lower values mean more frequent updates but more server load and network traffic; be careful with this, especially on busy servers.
+	# Setting this to 0 disables long-range tracking.
+	# Default: 20
+	# Range: 0 ~ 2147483647
+	long_range_tracker_interval: 20
+	
+	# Max claimed chunks.
+	# You can override this with FTB Ranks 'ftbchunks.max_claimed' permission
+	# Default: 500
+	# Range: -∞ ~ +∞
+	max_claimed_chunks: 500
+	
+	# Max force loaded chunks.
+	# You can override this with FTB Ranks 'ftbchunks.max_force_loaded' permission
+	# Default: 25
+	# Range: -∞ ~ +∞
+	max_force_loaded_chunks: 25
+	
+	# Maximum time (in real-world days) where if no player in a team logs in, the team automatically loses their claims.
+	# Prevents chunks being claimed indefinitely by teams who no longer play.
+	# Default of 0 means no automatic loss of claims.
+	# Default: 0.0
+	# Range: 0.0 ~ 3650.0
+	max_idle_days_before_unclaim: 0.0d
+	
+	# Maximum time (in real-world days) where if no player in a team logs in, any forceloaded chunks owned by the team are no longer forceloaded.
+	# Prevents chunks being forceloaded indefinitely by teams who no longer play.
+	# Default of 0 means no automatic loss of forceloading.
+	# Default: 0.0
+	# Range: 0.0 ~ 3650.0
+	max_idle_days_before_unforce: 30.0d
+	
+	# Maximum time in days to keep logs of prevented fakeplayer access to a team's claims.
+	# Default: 7
+	# Range: 1 ~ 2147483647
+	max_prevented_log_age: 7
+	
+	# Requires you to claim chunks in order to edit and interact with blocks
+	# Default: false
+	no_wilderness: false
+	
+	# Dimension ID's where the no_wilderness rule is enforced - building is only allowed in claimed chunks. If this is non-empty, it overrides the 'no_wilderness' setting.
+	# Default: []
+	no_wilderness_dimensions: [ ]
+	
+	# Method by which party claim & force-load limits are calculated.
+	# LARGEST: use the limits of the member with the largest limits
+	# SUM: add up all the members' limits
+	# OWNER: use the party owner's limits only
+	# AVERAGE: use the average of all members' limits.
+	# Default: "largest"
+	# Valid values: "largest", "owner", "sum", "average"
+	party_limit_mode: "sum"
+	
+	# If true, pistons are prevented from pushing/pulling blocks across claims owned by different teams (unless the target claim has public 'edit block' permissions defined). If 'disable_protection' is set to true, this setting is ignored.
+	# Default: true
+	piston_protection: true
+	
+	# When true, standard FTB Chunk explosion protection is applied in protected chunks when the source of the explosion cannot be determined
+	# (Ghast fireballs are a common case - vanilla supplies a null entity source)
+	# Default: true
+	protect_unknown_explosions: true
+	
+	# Should PvP combat be allowed in claimed chunks? Default is ALWAYS; NEVER prevents it in all claimed chunks; PER_TEAM allows teams to decide if PvP is allowed in their claims
+	# Default: "always"
+	# Valid values: "always", "never", "per_team"
+	pvp_mode: "per_team"
+	
+	# If true, the player must have the 'ftbchunks_mapping' Game stage to be able to use the map and minimap.
+	# Requires KubeJS and/or Gamestages to be installed.
+	# Default: false
+	require_game_stage: false
+	team_prop_defaults: {
+		# Default explosion protection for claimed chunks
+		# Default: false
+		def_allow_explosions: false
+		
+		# Default mode for block breaking and placing in claimed chunks (NeoForge only)
+		# Default: "allies"
+		# Valid values: "allies", "private", "public"
+		def_block_edit: "allies"
+		
+		# Default mode for block interaction, breaking and placing in claimed chunks (Fabric only)
+		# Default: "allies"
+		# Valid values: "allies", "private", "public"
+		def_block_edit_interact: "allies"
+		
+		# Default mode for block interaction (right-click) in claimed chunks (NeoForge only)
+		# Default: "allies"
+		# Valid values: "allies", "private", "public"
+		def_block_interact: "allies"
+		
+		# Default claim visibility for claimed chunks
+		# Default: "public"
+		# Valid values: "allies", "private", "public"
+		def_claim_visibility: "public"
+		
+		# Default mode for left-clicking non-living entities (armor stands, item frames...) in claimed chunks
+		# Default: "allies"
+		# Valid values: "allies", "private", "public"
+		def_entity_attack: "allies"
+		
+		# Default mode for entity interaction in claimed chunks
+		# Default: "allies"
+		# Valid values: "allies", "private", "public"
+		def_entity_interact: "allies"
+		
+		# Default allow fake player IDs which are the same as real permitted players
+		# Default: true
+		def_fake_player_ids: true
+		
+		# Default allow-fake-player setting for team properties
+		# Default: false
+		def_fake_players: false
+		
+		# Default mob griefing protection for claimed chunks
+		# Default: false
+		def_mob_griefing: false
+		
+		# Default named fake players who should be allowed by default
+		# Default: []
+		def_named_fake_players: [ ]
+		
+		# Default long-range player visibility on map
+		# Default: "allies"
+		# Valid values: "allies", "private", "public"
+		def_player_visibility: "allies"
+		
+		# Default PvP setting in claimed chunks
+		# Default: true
+		def_pvp: true
+	}
+	waypoint_sharing: {
+		# Allow players to share waypoints with their party.
+		# Default: true
+		waypoint_sharing_party: true
+		
+		# Allow players to share waypoints with other players.
+		# Default: true
+		waypoint_sharing_players: true
+		
+		# Allow players to share waypoints with the entire server.
+		# Default: true
+		waypoint_sharing_server: true
+	}
+}
