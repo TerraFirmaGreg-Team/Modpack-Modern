@@ -1,15 +1,15 @@
 {
 	"type": "minecraft:jigsaw",
-	"start_pool": "tfg:moon/moon_rabbit_houses",
+	"biomes": "#tfg:has_structure/moon_rabbit_houses",
+	"max_distance_from_center": 0,
+	"project_start_to_heightmap": "WORLD_SURFACE_WG",
+	"size": 1,
+	"spawn_overrides": {},
 	"start_height": {
 		"absolute": 0
 	},
-	"size": 1,
-	"biomes": "#tfg:has_structure/moon_rabbit_houses",
-	"max_distance_from_center": 32,
-	"project_start_to_heightmap": "WORLD_SURFACE_WG",
+	"start_pool": "tfg:moon/moon_rabbit_houses",
 	"step": "surface_structures",
 	"terrain_adaptation": "beard_thin",
-	"use_expansion_hack": false,
-	"spawn_overrides": {}
+	"use_expansion_hack": true
 }
