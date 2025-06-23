@@ -495,4 +495,38 @@ function registerTFGMiscellaneousRecipes(event) {
 			`tfg:food/freeze_dried/${fruit.name}`
 		]).id(`tfg:shapeless/emptying/freeze_dried/${fruit.name}`)
 	})
+
+	event.recipes.gtceu.chemical_reactor('tfg:chemical_reactor/chlorodifluoromethane')
+		.inputFluids(Fluid.of('gtceu:chloroform', 2000), Fluid.of('gtceu:hydrofluoric_acid', 4000))
+        .outputFluids(Fluid.of('tfg:chlorodifluoromethane', 6000))
+        .duration(480)
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:chemical_reactor/breakdown/chlorodifluoromethane')
+		.inputFluids(Fluid.of('tfg:chlorodifluoromethane', 300))
+        .outputFluids(Fluid.of('gtceu:tetrafluoroethylene', 100), Fluid.of('gtceu:hydrochloric_acid', 200))
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:chemical_reactor/acetylene')
+		.inputFluids(Fluid.of('gtceu:methane', 3000), Fluid.of('gtceu:oxygen', 3000))
+        .outputFluids(Fluid.of('tfg:acetylene', 100))
+        .circuit(4)
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:chemical_reactor/1_1_1_2_tetrafluoroethane')
+		.inputFluids(Fluid.of('tfg:acetylene', 1000), Fluid.of('gtceu:chlorine', 2000), Fluid.of('gtceu:hydrofluoric_acid', 8000))
+        .outputFluids(Fluid.of('tfg:1_1_1_2_tetrafluoroethane', 2000), Fluid.of('gtceu:hydrochloric_acid', 6000))
+        .circuit(4)
+        .duration(480)
+        .EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.cracker('tfg:cracker/isobutane')
+		.inputFluids(Fluid.of('gtceu:butane', 4000))
+        .outputFluids(Fluid.of('tfg:isobutane', 1000), Fluid.of('gtceu:lpg', 3000))
+        .circuit(4)
+        .duration(1400)
+        .EUt(GTValues.VA[GTValues.EV])
 }

@@ -764,6 +764,56 @@ function registerTFGFoodRecipes(event) {
 
 	//#endregion
 
+	// Food processing machine recipes
+	event.remove({id: 'gtceu:shaped/mv_food_refrigerator'})
+	event.remove({id: 'gtceu:shaped/hv_food_refrigerator'})
+	event.remove({id: 'gtceu:shaped/ev_food_refrigerator'})
+
+    event.recipes.gtceu.assembler('tfg:assembler/mv_food_refrigerator')
+        .itemInputs(
+			ChemicalHelper.get(TagPrefix.cableGtSingle, GTMaterials.Copper, 2), 
+			ChemicalHelper.get(TagPrefix.plate, GTMaterials.Polyethylene, 2),
+			ChemicalHelper.get(TagPrefix.rotor, GTMaterials.Bronze, 1),
+			'2x gtceu:mv_electric_pump',
+			'gtceu:mv_hermetic_casing',
+			'#gtceu:circuits/mv'
+		)
+		.inputFluids(Fluid.of('tfg:chlorodifluoromethane', 6000))
+        .itemOutputs('1x tfg:mv_food_refrigerator')
+        .duration(200)
+        .circuit(7)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.assembler('tfg:assembler/hv_food_refrigerator')
+        .itemInputs(
+			ChemicalHelper.get(TagPrefix.cableGtSingle, GTMaterials.Gold, 2), 
+			ChemicalHelper.get(TagPrefix.plate, GTMaterials.Polyethylene, 2),
+			ChemicalHelper.get(TagPrefix.rotor, GTMaterials.Steel, 1),
+			'2x gtceu:hv_electric_pump',
+			'gtceu:hv_hermetic_casing',
+			'#gtceu:circuits/hv'
+		)
+		.inputFluids(Fluid.of('tfg:1_1_1_2_tetrafluoroethane', 6000))
+        .itemOutputs('1x tfg:hv_food_refrigerator')
+        .duration(200)
+        .circuit(7)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.assembler('tfg:assembler/ev_food_refrigerator')
+        .itemInputs(
+			ChemicalHelper.get(TagPrefix.cableGtSingle, GTMaterials.Aluminium, 2), 
+			ChemicalHelper.get(TagPrefix.plate, GTMaterials.Polyethylene, 2),
+			ChemicalHelper.get(TagPrefix.rotor, GTMaterials.StainlessSteel, 1),
+			'2x gtceu:ev_electric_pump',
+			'gtceu:ev_hermetic_casing',
+			'#gtceu:circuits/ev'
+		)
+		.inputFluids(Fluid.of('tfg:isobutane', 6000))
+        .itemOutputs('1x tfg:ev_food_refrigerator')
+        .duration(200)
+        .circuit(7)
+        .EUt(GTValues.VA[GTValues.LV])
+
 	// Tweaks to the machine crafts that are more annoying to do in java
 	event.replaceInput({id: 'gtceu:shaped/lv_food_processor'}, 'gtceu:lv_electric_piston', 'gtceu:steel_whisk')
 	event.replaceInput({id: 'gtceu:shaped/mv_food_processor'}, 'gtceu:mv_electric_piston', 'gtceu:aluminium_whisk')
@@ -774,8 +824,4 @@ function registerTFGFoodRecipes(event) {
 	event.replaceInput({id: 'gtceu:shaped/mv_food_oven'}, 'gtceu:mv_electric_piston', '#tfg:metal_bars')
 	event.replaceInput({id: 'gtceu:shaped/hv_food_oven'}, 'gtceu:hv_electric_piston', '#tfg:metal_bars')
 	event.replaceInput({id: 'gtceu:shaped/ev_food_oven'}, 'gtceu:ev_electric_piston', '#tfg:metal_bars')
-	
-	event.replaceInput({id: 'gtceu:shaped/mv_food_refrigerator'}, 'gtceu:mv_machine_hull', 'gtceu:mv_hermetic_casing')
-	event.replaceInput({id: 'gtceu:shaped/hv_food_refrigerator'}, 'gtceu:hv_machine_hull', 'gtceu:hv_hermetic_casing')
-	event.replaceInput({id: 'gtceu:shaped/ev_food_refrigerator'}, 'gtceu:ev_machine_hull', 'gtceu:ev_hermetic_casing')
 }
