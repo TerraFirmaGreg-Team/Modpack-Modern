@@ -5,35 +5,25 @@
 - Build a rocket and blast off to the moon, a new dimension! You can get started in mid-HV.
 - AE2 inscriber presses are now found on the moon instead of being craftable, and making various AE2 components is also significantly cheaper there. @TomPlop & @Pyritie
 - Significant ore changes: certus quartz, raw aluminium, ilmenite, and some other mid-lategame materials have been moved from the overworld to the moon. Check your field guide for more information. @TomPlop
-- A new system for interstellar item transport, made just for TerraFirmaGreg - a new logistical problem to solve and automate. @ofoxsmith
+- A new system for interstellar item transport, made just for TerraFirmaGreg - new logistical problems to solve and automate. @ofoxsmith
 - New bedrock ore veins on the moon! Much better sources of infinite materials than stone dusts. @TomPlop
-- New machines to properly automate food, along with proper compatibility between machines and TFC's food system, so you can't turn rotten grains into fresh bread any more. The electric greenhouse now also always outputs fresh food. @ofoxsmith
+- New machines to properly automate food, along with proper compatibility between machines and TFC's food system, so you can't turn rotten grains into fresh bread any more. The electric greenhouse now also always outputs fresh food. @ofoxsmith & @Redeix
 - New electric refrigerator with different tiers. You can craft the old one into this new one, but please take your food out of it before upgrading otherwise it will be lost! @ofoxsmith
 - Added many new advanced food items including freeze-dried fruit, calorie paste, and meal bags. @Redeix
 - Quest updates for all of the above. @TomPlop
 ### Minor changes
 - Balance changes for water wheels and glowstone blocks @Pyritie
+- Added straws for the blaze burners so now you can pump liquid fuels into them (#1204) @34y34y34y34y34y34y34y34y34y
+- Electric greenhouse now accepts any glass instead of exclusively AE2 quartz glass @Pyritie
+- Added an ABS recipe to craft your glowstone, matching the mixer recipe (#1201) @34y34y34y34y34y34y34y34y34y
+- Lunchboxes now accept GregTech cells filled with ice (#1200) @Thomasx0
+- You can now use casting channels, mold tables, and mechanical pumps on top of a Hellforge (#1183) @Indiiix
 - Added a second recipe for water flask sides so it doesn't matter if you craft it top-aligned or bottom-aligned @Pyritie
 - More recipes to craft dyes @Pyritie
 - Adjusted the textures of the generated raw ore items @Pyritie
 - Added recipes for AE2's decoration blocks @Pyritie
 - Added warning text to macerators, millstones, and crushing wheels about the no-byproducts-until-HV thing @Pyritie
-- Electric greenhouse now accepts any glass instead of exclusively AE2 quartz glass @Pyritie
 - Added earlier recipes for 1:1 clay bricks @Pyritie
-### Bug fixes
-- Fixed a mud hut structure that had deprecated zinc ingots @Pyritie
-- The electric greenhouse now also allows loose rocks and plants inside, since TFC spawns them on any grass block @Pyritie
-
-## [Unreleased]
-### New features
-### Bug fixes
-- Fixed double ingots not having a temperature (#1165) @Pyritie
-- Removed a few recipes that had unobtainable greate-related materials @Pyritie
-- Fixed the color of placed zinc ingots and plated blocks to match the material @Pyritie
-- Fixed some other steel/colored steel items being extractable in LV @Pyritie
-- Fixed polished/cut migmatite recipe conflict (#1153) @JeanRdSz
-- You can now use casting channels, mold tables, and mechanical pumps on top of a Hellforge (#1183) @Indiiix
-### Changes
 - Changed pineapple yarn recipe from assembler to wiremill & coiling machine, like the other strings (#1162) @Pyritie
 - Lowered durability of wooden tongs @Pyritie
 - Streamlined the Metallurgy Age quest chapter a bit @Pyritie
@@ -41,6 +31,15 @@
 - Removed gems tag from flint @Pyritie
 - Updated texture for aqueous accumulator (#1168) @Redeix
 - Kaolin Klayzes now also drop blood lilies @Pyritie
+### Bug fixes
+- Fixed a mud hut structure that had deprecated zinc ingots @Pyritie
+- The electric greenhouse now also allows loose rocks and plants inside, since TFC spawns them on any grass block @Pyritie
+- Fixed double ingots not having a temperature (#1165) @Pyritie
+- Removed a few recipes that had unobtainable greate-related materials @Pyritie
+- Fixed the color of placed zinc ingots and plated blocks to match the material @Pyritie
+- Fixed some other steel/colored steel items being extractable in LV @Pyritie
+- Fixed polished/cut migmatite recipe conflict (#1153) @JeanRdSz
+- Fixed some bugs with the lunchbox (#1200) @Thomasx0
 
 ## [0.9.11] - 13.06.2025
 ### New features
