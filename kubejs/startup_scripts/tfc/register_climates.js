@@ -84,98 +84,75 @@ function calcAverage(playerZ, scale, min, max) {
 }
 
 
-// This will be fighting between TFC, which wants to melt everything when the average
-// temp is above 0, and Ad Astra, which wants to freeze everything that isn't in an
-// oxygenated bubble.
-// Is there a way to disable TFC's system here?
-// Alternatively, is there a way to tell if a block is oxygenated and then give it a different average temp?
-// That'd let you grow tfc crops on other planets
-
 TFCEvents.registerClimateModel(event => {
 
-	event.registerClimateModel('tfg:nether_climate', model => {
+	event.register('tfg:nether_climate', builder => {
 
-		model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
+		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
 			return lerp(100, 25, pos.y / 128);
 		})
 
-		model.setAverageTemperatureCalculation((level, pos) => {
+		builder.setAverageTemperatureCalculation((level, pos) => {
 			return lerp(100, 25, pos.y / 128);
 		})
 
-		model.setAverageRainfallCalculation((level, pos) => {
+		builder.setAverageRainfallCalculation((level, pos) => {
 			return lerp(-200, 200, pos.y / 128);
 		})
 
-		model.setAirFog((level, pos, calendarTicks) => 0)
-		model.setWaterFog((level, pos, calendarTicks) => 0.6)
-		model.setWindVector((block, calendarTicks) => event.newVec2(0, 0))
+		builder.setAirFog((level, pos, calendarTicks) => 0)
+		builder.setWaterFog((level, pos, calendarTicks) => 0.6)
+		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
 	})
 
-	event.registerClimateModel('tfg:orbit_climate', model => {
+	event.register('tfg:orbit_climate', builder => {
 
 		// There's basically no heat diffusion in space so we can pretend this is your spacesuit temp
-		model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => 15)
-		model.setAverageTemperatureCalculation((level, pos) => -270)
-		model.setAverageRainfallCalculation((level, pos) => 0)
-		model.setAirFog((level, pos, calendarTicks) => 0)
-		model.setWaterFog((level, pos, calendarTicks) => 0.25)
-		model.setWindVector((block, calendarTicks) => event.newVec2(0, 0))
+		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => 15)
+		builder.setAverageTemperatureCalculation((level, pos) => -270)
+		builder.setAverageRainfallCalculation((level, pos) => 0)
+		builder.setAirFog((level, pos, calendarTicks) => 0)
+		builder.setWaterFog((level, pos, calendarTicks) => 0.25)
+		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
 	})
 
-	event.registerClimateModel('tfg:moon_climate', model => {
+	event.register('tfg:moon_climate', builder => {
 
 		// A source says the moon's equator is 120c at day and -130c at night
-		model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
+		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
 			return calcCurrentTemp(-5, 60, pos.y, calendarTicks, 125, 0, 0)
 		})
 
-		model.setAverageTemperatureCalculation((level, pos) => -5)
-		model.setAverageRainfallCalculation((level, pos) => 0)
-		model.setAirFog((level, pos, calendarTicks) => 0)
-		model.setWaterFog((level, pos, calendarTicks) => 0.25)
-		model.setWindVector((block, calendarTicks) => event.newVec2(0, 0))
-
-		//model.setCreateChunkData((level, chunkAccess, chunkData) => {
-
-		//	const rainfallLayer = new $LerpFloatLayer(0, 0, 0, 0);
-		//	const tempLayer = new $LerpFloatLayer(-5, -5, -5, -5);
-
-		//	chunkData.generatePartial(rainfallLayer, tempLayer, "none", 0, 0);
-
-		//	let heightArray = [];
-		//	let aquiferArray = [];
-		//	for (var i = 0; i < 16 * 16; i++) {
-		//		heightArray[i] = 64;
-		//		aquiferArray[i] = 0;
-		//	}
-		//	chunkData.generateFull(heightArray, aquiferArray);
-		//})
+		builder.setAverageTemperatureCalculation((level, pos) => -5)
+		builder.setAverageRainfallCalculation((level, pos) => 0)
+		builder.setAirFog((level, pos, calendarTicks) => 0)
+		builder.setWaterFog((level, pos, calendarTicks) => 0.25)
+		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
 	})
 
-	event.registerClimateModel('tfg:mars_climate', model => {
+	event.register('tfg:mars_climate', builder => {
 
-		model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
+		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
 
 			let avgTemp = calcAverage(pos.z, 10000, -110, -15);
 			return calcCurrentTemp(avgTemp, 65, pos.y, calendarTicks, 45, -10, 0.5);
 		})
 
-		model.setAverageTemperatureCalculation((level, pos) => {
+		builder.setAverageTemperatureCalculation((level, pos) => {
 
 			// Earth is 10k to each pole, and mars is about half as big as earth, so 5k to each pole sounds good
 			return calcAverage(pos.z, 10000, -110, -15);
 		})
 
-		model.setAverageRainfallCalculation((level, pos) => {
+		builder.setAverageRainfallCalculation((level, pos) => {
 		
 			// irl mars' poles have a snowfall of 0.13mm but that's barely noticeable here.
 			// Use a negative rainfall to stop it snowing closer to the equator. TFC clamps negatives to zero so it's fine
 			return calcAverage(pos.z, 10000, 13, -25)
 		})
 
-		model.setAirFog((level, pos, calendarTicks) => 0)
-		model.setWaterFog((level, pos, calendarTicks) => 0.25)
-		model.setWindVector((block, calendarTicks) => event.newVec2(0.25, 0.25))
+		builder.setAirFog((level, pos, calendarTicks) => 0)
+		builder.setWaterFog((level, pos, calendarTicks) => 0.25)
+		builder.setWindVector((level, block, calendarTicks) => builder.vector(0.25, 0.25))
 	})
 })
