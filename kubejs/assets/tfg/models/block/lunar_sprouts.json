@@ -2,7 +2,8 @@
 	"render_type": "cutout_mipped",
 	"ambientocclusion": "false",
 	"textures": {
-		"cross": "tfg:block/lunar_sprouts"
+		"cross": "tfg:block/lunar_sprouts",
+		"particle": "tfg:block/lunar_sprouts"
 	},
 	"elements": [
 		{

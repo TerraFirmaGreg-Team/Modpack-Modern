@@ -12,13 +12,14 @@
 - Added many new advanced food items including freeze-dried fruit, calorie paste, and meal bags. @Redeix
 - Quest updates for all of the above. @TomPlop
 ### Minor changes
-- Balance changes for water wheels @Pyritie
+- Balance changes for water wheels and glowstone blocks @Pyritie
 - Added a second recipe for water flask sides so it doesn't matter if you craft it top-aligned or bottom-aligned @Pyritie
 - More recipes to craft dyes @Pyritie
 - Adjusted the textures of the generated raw ore items @Pyritie
 - Added recipes for AE2's decoration blocks @Pyritie
 - Added warning text to macerators, millstones, and crushing wheels about the no-byproducts-until-HV thing @Pyritie
 - Electric greenhouse now accepts any glass instead of exclusively AE2 quartz glass @Pyritie
+- Added earlier recipes for 1:1 clay bricks @Pyritie
 ### Bug fixes
 - Fixed a mud hut structure that had deprecated zinc ingots @Pyritie
 - The electric greenhouse now also allows loose rocks and plants inside, since TFC spawns them on any grass block @Pyritie

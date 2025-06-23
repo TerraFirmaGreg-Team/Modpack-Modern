@@ -608,6 +608,14 @@ function registerVintageImprovementsRecipes(event) {
 		results: [{ item: 'gtceu:raw_rubber_dust' }],
 		processingTime: 120
 	}).id('tfg:vi/vacuumizing/vulcanized_latex_to_raw_rubber')
+	
+	event.custom({
+		type: 'vintageimprovements:pressurizing',
+		ingredients: [{ item: 'minecraft:glowstone_dust', count: 4 }],
+		results: [{ item: 'minecraft:glowstone' }],
+		heatRequirement: "heated",
+		processingTime: 300
+	}).id('tfg:vi/pressurizing/glowstone')
 
 	// #endregion
 
@@ -633,6 +641,26 @@ function registerVintageImprovementsRecipes(event) {
 		results: [{ item: 'tfg:polycaprolactam_string', count: 32 }],
 		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 	}).id(`tfg:vi/coiling/nylon_string`)
+
+	// #endregion
+
+	// #region Curving
+
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ item: 'minecraft:clay_ball' }],
+		itemAsHead: 'gtceu:ingot_extruder_mold',
+		results: [{ item: 'tfc:ceramic/unfired_brick' }],
+		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/curving/clay_brick`)
+
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ item: 'tfc:fire_clay' }],
+		itemAsHead: 'gtceu:ingot_extruder_mold',
+		results: [{ item: 'tfc:ceramic/unfired_fire_brick' }],
+		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/curving/fire_brick`)
 
 	// #endregion
 }

@@ -179,6 +179,9 @@ const registerTFGItems = (event) => {
 
     event.create('tfg:phantom_thread')
         .translationKey('item.tfg.phantom_thread')
+
+    event.create('tfg:space_suit_fabric')
+        .translationKey('item.tfg.space_suit_fabric')
     //#endregion
 
     //#region Tools
