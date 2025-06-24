@@ -95,16 +95,8 @@ const registerFirmaLifeRecipes = (event) => {
 		.duration(50)
 		.EUt(2)
 
-	// Pineapple Fiber
-	event.recipes.gtceu.assembler(`tfg:firmalife/pineapple_fiber`)
-		.itemInputs('firmalife:food/pineapple')
-		.circuit(1)
-		.itemOutputs('firmalife:pineapple_fiber')
-		.duration(50)
-		.EUt(7)
-
 	// Pineapple Yarn
-	event.recipes.gtceu.assembler(`tfg:firmalife/pineapple_yarn`)
+	event.recipes.gtceu.wiremill(`tfg:firmalife/pineapple_yarn`)
 		.itemInputs('firmalife:pineapple_fiber')
 		.circuit(1)
 		.itemOutputs('8x firmalife:pineapple_yarn')

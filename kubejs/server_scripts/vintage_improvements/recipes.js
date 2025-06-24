@@ -637,6 +637,13 @@ function registerVintageImprovementsRecipes(event) {
 
 	event.custom({
 		type: 'vintageimprovements:coiling',
+		ingredients: [{ item: 'firmalife:pineapple_fiber' }],
+		results: [{ item: 'firmalife:pineapple_yarn', count: 8 }],
+		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/coiling/pineapple_yarn`)
+
+	event.custom({
+		type: 'vintageimprovements:coiling',
 		ingredients: [ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Polycaprolactam, 1)],
 		results: [{ item: 'tfg:polycaprolactam_string', count: 32 }],
 		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
