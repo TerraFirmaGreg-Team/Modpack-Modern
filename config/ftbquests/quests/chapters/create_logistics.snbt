@@ -2,14 +2,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "create_logistics"
-	group: "33020D1D0ECDF301"
+	group: ""
 	icon: {
 		Count: 1
 		id: "create:cardboard_package_12x12"
 		tag: { }
 	}
 	id: "1FC58A1BAA93B3FC"
-	order_index: 2
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
