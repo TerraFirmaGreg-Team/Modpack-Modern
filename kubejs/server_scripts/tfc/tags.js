@@ -82,6 +82,10 @@ const registerTFCItemTags = (event) => {
 	// Make eggs not useless
 	event.add('tfc:foods/usable_in_salad', 'tfc:food/cooked_egg')
 	event.add('tfc:foods/usable_in_salad', 'tfc:food/boiled_egg')
+	event.add('tfc:foods/usable_in_jam_sandwich', 'tfc:food/cooked_egg')
+	event.add('tfc:foods/usable_in_jam_sandwich', 'tfc:food/boiled_egg')
+	event.add('tfc:foods/usable_in_sandwich', 'tfc:food/cooked_egg')
+	event.add('tfc:foods/usable_in_sandwich', 'tfc:food/boiled_egg')
 
 	// Чтобы жарились бревна из TFC в пиролиз. печке
 	// Почему нельзя просто добавить тег в тег? (допустим minecraft:logs), потому что из-за этого ломаются все рецепты minecraft:logs, магия...
@@ -478,9 +482,15 @@ const registerTFCFluidTags = (event) => {
 	event.add('tfc:usable_in_wooden_bucket', 'gtceu:ice')
 	event.add('tfc:usable_in_red_steel_bucket', 'gtceu:ice')
 
+	event.add('tfc:usable_in_barrel', 'gtceu:glue')
+	event.add('tfc:usable_in_wooden_bucket', 'gtceu:glue')
+	event.add('tfc:usable_in_blue_steel_bucket', 'tfc:spring_water')
+	event.add('tfc:usable_in_red_steel_bucket', 'gtceu:glue')
+
 	event.add('tfc:ingredients', 'tfc:spring_water')
 	event.add('tfc:usable_in_barrel', 'tfc:spring_water')
 	event.add('tfc:usable_in_wooden_bucket', 'tfc:spring_water')
+	event.add('tfc:usable_in_blue_steel_bucket', 'tfc:spring_water')
 	event.add('tfc:usable_in_red_steel_bucket', 'tfc:spring_water')
 
 	// Добавляем тег для скрытия в EMI

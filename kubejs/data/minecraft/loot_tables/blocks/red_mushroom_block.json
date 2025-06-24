@@ -7,12 +7,16 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:red_mushroom_block"
+					"name": "minecraft:red_mushroom"
 				}
 			],
 			"conditions": [
 				{
 					"condition": "minecraft:survives_explosion"
+				},
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.25
 				}
 			]
 		}

@@ -1,0 +1,25 @@
+{
+    "damage": 3,
+    "items": [
+        "tfc:food/snowberry",
+        "tfc:food/bunchberry",
+        "tfc:food/gooseberry",
+        "tfc:food/cloudberry",
+        "tfc:food/strawberry",
+        "tfc:food/wintergreen_berry",
+        "tfc:food/blackberry",
+        "tfc:food/raspberry",
+        "tfc:food/blueberry",
+        "tfc:food/elderberry",
+        "tfc:food/cranberry",
+        "tfc:food/cherry",
+        "tfc:food/olive",
+        "firmalife:food/red_grapes",
+        "firmalife:food/white_grapes"
+    ],
+    "knockback": 0.1,
+    "reload_ticks": 8,
+    "sound_pitch": 1.25,
+    "split": 3,
+    "velocity_multiplier": 1.05
+  }

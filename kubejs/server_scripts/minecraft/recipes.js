@@ -307,13 +307,13 @@ const registerMinecraftRecipes = (event) => {
 		.duration(50)
 		.EUt(30)
 
-	event.recipes.gtceu.large_chemical_reactor('golden_apple_1')
-		.itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
-		.itemOutputs('minecraft:golden_apple')
-		.duration(50)
-		.EUt(30)
+    event.recipes.gtceu.large_chemical_reactor('golden_apple_1')             
+        .itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
+        .itemOutputs('minecraft:golden_apple')
+        .duration(50)
+        .EUt(30)
 
-	//#endregion
+    //#endregion
 
 	//#region Выход: Компаратор
 
@@ -997,6 +997,20 @@ const registerMinecraftRecipes = (event) => {
 	event.shapeless('4x minecraft:brown_mushroom', ['minecraft:brown_mushroom_block', '#forge:tools/knives'])
 		.id('tfg:shapeless/cut_brown_mushroom_block')
 
+	event.recipes.gtceu.compressor('tfg:red_mushroom')
+		.itemInputs('4x minecraft:red_mushroom')
+		.itemOutputs('minecraft:red_mushroom_block')
+		.circuit(2)
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.compressor('tfg:brown_mushroom')
+		.itemInputs('4x minecraft:brown_mushroom')
+		.itemOutputs('minecraft:brown_mushroom_block')
+		.duration(20)
+		.circuit(2)
+		.EUt(GTValues.VA[GTValues.ULV])
+
 	event.recipes.gtceu.chemical_bath('tfg:red_mushroom_to_shroomlight')
 		.itemInputs('minecraft:red_mushroom_block')
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
@@ -1010,6 +1024,7 @@ const registerMinecraftRecipes = (event) => {
 		.itemOutputs('minecraft:shroomlight')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
+
 
 	// Stonecutter
 
@@ -1028,4 +1043,20 @@ const registerMinecraftRecipes = (event) => {
 		}).id('tfg:shaped/stonecutter');
 
 	event.stonecutting('minecraft:smooth_quartz', 'minecraft:quartz_block')
+
+	//Glowing Ink Sacs
+		
+	event.recipes.gtceu.chemical_bath('minecraft:glow_inc_sac4')
+		.itemInputs("gtceu:thorium_dust", "4x #forge:dyes/black")
+		.inputFluids(Fluid.of('gtceu:glowstone', 512))
+		.itemOutputs('16x minecraft:glow_ink_sac')
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.HV])
+		
+	event.recipes.gtceu.chemical_bath('minecraft:glow_inc_sac1')
+		.itemInputs("#forge:dyes/black")
+		.inputFluids(Fluid.of('gtceu:glowstone', 144))
+		.itemOutputs('minecraft:glow_ink_sac')
+		.duration(40)
+		.EUt(GTValues.VA[GTValues.MV])
 }

@@ -1,0 +1,106 @@
+{
+	"parent": "minecraft:block/cube",
+	"render_type": "cutout",
+	"ambientocclusion": true,
+	"textures": {
+		"front_inside": "species:block/birt_nest_front_inside",
+		"side_inside": "species:block/birt_nest_side_inside",
+		"top_inside": "species:block/birt_nest_top_inside",
+		"bottom_inside": "species:block/birt_nest_bottom_inside",
+		"birt": "species:block/birt_nest_birt",
+		"front": "species:block/birt_nest_front",
+		"top": "create:block/palettes/stone_types/natural/asurine_1",
+		"particle": "create:block/palettes/stone_types/natural/asurine_1",
+		"side": "create:block/palettes/stone_types/natural/asurine_1"
+	},
+	"elements": [
+		{
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"north": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#front"
+				},
+				"east": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#side"
+				},
+				"south": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#side"
+				},
+				"west": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#side"
+				},
+				"up": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#top"
+				},
+				"down": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#top"
+				}
+			}
+		},
+		{
+			"from": [ 9, 2, 13 ],
+			"to": [ 14, 7, 13 ],
+			"faces": {
+				"north": {
+					"uv": [ 0, 0, 5, 5 ],
+					"texture": "#birt"
+				},
+				"east": {
+					"uv": [ 0, 0, 0, 5 ],
+					"texture": "#birt"
+				},
+				"south": {
+					"uv": [ 0, 0, 5, 5 ],
+					"texture": "#birt"
+				},
+				"west": {
+					"uv": [ 0, 0, 0, 5 ],
+					"texture": "#birt"
+				},
+				"up": {
+					"uv": [ 0, 0, 5, 0 ],
+					"texture": "#birt"
+				},
+				"down": {
+					"uv": [ 0, 0, 5, 0 ],
+					"texture": "#birt"
+				}
+			}
+		},
+		{
+			"from": [ 2, 14, 0 ],
+			"to": [ 14, 2, 15 ],
+			"faces": {
+				"east": {
+					"uv": [ 1, 14, 16, 2 ],
+					"texture": "#side_inside"
+				},
+				"south": {
+					"uv": [ 2, 2, 14, 14 ],
+					"texture": "#front_inside"
+				},
+				"west": {
+					"uv": [ 16, 14, 1, 2 ],
+					"texture": "#side_inside"
+				},
+				"up": {
+					"uv": [ 16, 2, 1, 14 ],
+					"rotation": 90,
+					"texture": "#bottom_inside"
+				},
+				"down": {
+					"uv": [ 1, 2, 16, 14 ],
+					"rotation": 90,
+					"texture": "#top_inside"
+				}
+			}
+		}
+	]
+}

@@ -42,6 +42,7 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:primitive_blast_furnace',
     'gtceu:iron_pickaxe',
     'gtceu:iron_pickaxe_head',
+    'gtceu:brittle_charcoal',
     
     'gtceu:wood_screwdriver_tip',
     'gtceu:wood_wrench_tip',
@@ -195,6 +196,13 @@ global.ORE_BEARING_STONES = [
 
     'deepslate',
     'pyroxenite',
-    'dripstone'
+    'dripstone',
+
+    'moon_stone',
+    'moon_deepslate',
+    'mars_stone',
+    'venus_stone',
+    'mercury_stone',
+    'glacio_stone'
 ];
 

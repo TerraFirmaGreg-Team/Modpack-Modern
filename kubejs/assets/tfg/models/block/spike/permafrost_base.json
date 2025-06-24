@@ -1,0 +1,7 @@
+{
+	"parent": "tfc:block/rock/spike_base",
+	"textures": {
+		"texture": "ad_astra:block/permafrost",
+		"particle": "ad_astra:block/permafrost"
+	}
+}

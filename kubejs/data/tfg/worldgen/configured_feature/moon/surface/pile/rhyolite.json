@@ -1,0 +1,34 @@
+{
+	"type": "minecraft:block_pile",
+	"config": {
+		"state_provider": {
+			"type": "minecraft:weighted_state_provider",
+			"entries": [
+				{
+					"weight": 35,
+					"data": {
+						"Name": "tfc:rock/hardened/rhyolite"
+					}
+				},
+				{
+					"weight": 25,
+					"data": {
+						"Name": "tfc:rock/cobble/rhyolite"
+					}
+				},
+				{
+					"weight": 20,
+					"data": {
+						"Name": "tfc:rock/raw/rhyolite_slab"
+					}
+				},
+				{
+					"weight": 20,
+					"data": {
+						"Name": "tfc:rock/cobble/rhyolite_slab"
+					}
+				}
+			]
+		}
+	}
+}

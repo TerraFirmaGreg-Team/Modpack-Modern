@@ -1,0 +1,8 @@
+{
+	"type": "beneath:nether_spikes",
+	"config": {
+		"raw": "tfg:rock/hardened_moon_deepslate",
+		"spike": "tfg:spike/moon_deepslate_spike",
+		"anchor_blocks": "ad_astra:moon_stone_replaceables"
+	}
+}

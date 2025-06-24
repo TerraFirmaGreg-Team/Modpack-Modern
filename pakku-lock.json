@@ -175,6 +175,91 @@
             ]
         },
         {
+            "pakku_id": "rjOX4EXWlGvG84kO",
+            "pakku_links": [
+                "R14GIz0WdkeNLuXD",
+                "18IuoLEIRdaY1Jqy",
+                "QXBpbwRXpmbaHixl"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "ad-astra",
+                "modrinth": "ad-astra"
+            },
+            "name": {
+                "curseforge": "Ad Astra",
+                "modrinth": "Ad Astra"
+            },
+            "id": {
+                "curseforge": "635042",
+                "modrinth": "3ufwT9JF"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ad_astra-forge-1.20.1-1.15.19.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5914/893/ad_astra-forge-1.20.1-1.15.19.jar",
+                    "id": "5914893",
+                    "parent_id": "635042",
+                    "hashes": {
+                        "sha1": "ff0103224186be21463a784767459554debc1f33",
+                        "md5": "f98218cc0062408314152ba4403756cd"
+                    },
+                    "required_dependencies": [
+                        "704113",
+                        "570073",
+                        "714059"
+                    ],
+                    "size": 7508247,
+                    "date_published": "2024-11-17T19:31:18.513Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "zpZC9ZXFxQQlQXOb",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ad-astra-auto-lander"
+            },
+            "name": {
+                "curseforge": "Ad Astra: Auto Lander"
+            },
+            "id": {
+                "curseforge": "1183249"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "adastra_autolanding-0.2-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6108/119/adastra_autolanding-0.2-1.20.1.jar",
+                    "id": "6108119",
+                    "parent_id": "1183249",
+                    "hashes": {
+                        "sha1": "3338914bcedd51b02b0137fb4f9394d55550657b",
+                        "md5": "d6713f2d3931dca528ee8aed0eff3c78"
+                    },
+                    "required_dependencies": [],
+                    "size": 6759,
+                    "date_published": "2025-01-20T22:07:39.787Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "txamn8WWF6EJ8Jcg",
             "type": "MOD",
             "slug": {
@@ -878,45 +963,6 @@
             ]
         },
         {
-            "pakku_id": "LVF7UEBiNQpjRDSW",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "better-foliage-renewed"
-            },
-            "name": {
-                "curseforge": "Better Foliage Renewed"
-            },
-            "id": {
-                "curseforge": "470013"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "betterfoliage-5.0.2.jar",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4923/669/betterfoliage-5.0.2.jar",
-                    "id": "4923669",
-                    "parent_id": "470013",
-                    "hashes": {
-                        "sha1": "4163772d08837daf22034e5333ddefc8532cdb69",
-                        "md5": "22f5753234b465c44688f9555acb4713"
-                    },
-                    "required_dependencies": [],
-                    "size": 396130,
-                    "date_published": "2023-12-03T18:03:18.697Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "hn4E1S13hPaLVPSH",
             "type": "MOD",
             "slug": {
@@ -1111,6 +1157,43 @@
                     "required_dependencies": [],
                     "size": 343962,
                     "date_published": "2024-06-13T15:17:32.300Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "R14GIz0WdkeNLuXD",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "botarium"
+            },
+            "name": {
+                "curseforge": "Botarium"
+            },
+            "id": {
+                "curseforge": "704113"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "botarium-forge-1.20.1-2.3.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5486/70/botarium-forge-1.20.1-2.3.4.jar",
+                    "id": "5486070",
+                    "parent_id": "704113",
+                    "hashes": {
+                        "sha1": "a6928cb03b7c5f81900d3d3c8e8c8f6a89a51a5b",
+                        "md5": "c204f9d834da78a3972fc98da96730aa"
+                    },
+                    "required_dependencies": [],
+                    "size": 157633,
+                    "date_published": "2024-06-29T17:38:58.730Z"
                 }
             ]
         },
@@ -2616,7 +2699,7 @@
         {
             "pakku_id": "SG15bUHPcW2KqNGd",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "detected-setblock-be-gone"
             },
@@ -4559,7 +4642,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "guideme-20.1.8.jar",
+                    "file_name": "guideme-20.1.9.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4567,16 +4650,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6634/593/guideme-20.1.8.jar",
-                    "id": "6634593",
+                    "url": "https://edge.forgecdn.net/files/6654/696/guideme-20.1.9.jar",
+                    "id": "6654696",
                     "parent_id": "1173950",
                     "hashes": {
-                        "sha1": "cc5e96b09949c5f1ad5d6aa5c45695f760715e95",
-                        "md5": "38d8791dc9114d9cf6bcd5f2af1402e7"
+                        "sha1": "5619e9e6c4e2f14c3e7f093698e2103c75f4dcf2",
+                        "md5": "e3692a66b10b1df1b3d40cdc99773a6e"
                     },
                     "required_dependencies": [],
-                    "size": 9401167,
-                    "date_published": "2025-06-09T21:54:55.087Z"
+                    "size": 9403366,
+                    "date_published": "2025-06-15T15:50:42.330Z"
                 }
             ]
         },
@@ -7472,6 +7555,43 @@
             ]
         },
         {
+            "pakku_id": "wVeYwIK7TxS0lDa0",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "species"
+            },
+            "name": {
+                "curseforge": "Species"
+            },
+            "id": {
+                "curseforge": "857737"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Species-1.20.1-2.3-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6131/829/Species-1.20.1-2.3-forge.jar",
+                    "id": "6131829",
+                    "parent_id": "857737",
+                    "hashes": {
+                        "sha1": "1bc4305fb83b28015461d63452a4a01cf5337dc3",
+                        "md5": "a3aef474219746f567b71fd4af0a74dd"
+                    },
+                    "required_dependencies": [],
+                    "size": 19593288,
+                    "date_published": "2025-01-27T22:01:14.603Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "1MkKLXF1oSSK23jo",
             "type": "MOD",
             "slug": {
@@ -7779,42 +7899,6 @@
             ]
         },
         {
-            "pakku_id": "wwI6IXC4zcB3Dra6",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "tfc-electrical-appliances"
-            },
-            "name": {
-                "curseforge": "TFC Electrical Appliances"
-            },
-            "id": {
-                "curseforge": "1017637"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "tfcea-0.0.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/5338/560/tfcea-0.0.2.jar",
-                    "id": "5338560",
-                    "parent_id": "1017637",
-                    "hashes": {
-                        "sha1": "13638888685ddf65e138bdeb6e4c684b0a956cbb",
-                        "md5": "62644682b902533ee9b54dac7e7e2ca9"
-                    },
-                    "required_dependencies": [],
-                    "size": 60960,
-                    "date_published": "2024-05-12T17:09:43.310Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "zerUE7n4nmHdsmgn",
             "pakku_links": [
                 "F6H99cZ4H6jZRpEK",
@@ -7953,7 +8037,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "tfclunchbox-1.20.1-1.0.0.10.jar",
+                    "file_name": "tfclunchbox-1.20.1-1.0.0.20.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7962,18 +8046,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6633/524/tfclunchbox-1.20.1-1.0.0.10.jar",
-                    "id": "6633524",
+                    "url": "https://edge.forgecdn.net/files/6675/072/tfclunchbox-1.20.1-1.0.0.20.jar",
+                    "id": "6675072",
                     "parent_id": "1283445",
                     "hashes": {
-                        "sha1": "0b3dd4ed090848d136fc15586f5fb8212f1f19b0",
-                        "md5": "c8835a37c829f86448b87601ac58cf9b"
+                        "sha1": "334167b4cc5ec81a917d168b6ec8a876f315298e",
+                        "md5": "3dc59cd3d685fe4f5d097ca4e66746f4"
                     },
-                    "required_dependencies": [
-                        "302973"
-                    ],
-                    "size": 93079,
-                    "date_published": "2025-06-09T15:46:48.850Z"
+                    "required_dependencies": [],
+                    "size": 111379,
+                    "date_published": "2025-06-20T14:40:33.51Z"
                 }
             ]
         },
@@ -8382,7 +8464,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.6.7.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.6.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8391,19 +8473,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6613/427/TerraFirmaGreg-Core-Modern-0.6.7.jar",
-                    "id": "6613427",
+                    "url": "https://edge.forgecdn.net/files/6641/343/TerraFirmaGreg-Core-Modern-0.6.8.jar",
+                    "id": "6641343",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "76662e65565207a7682cafd39ef068e4c0a98516",
-                        "md5": "7c41c1ca1a8a9edf0e9fb72bdf5ebf44"
+                        "sha1": "989c76bb022dd8fdc0363c6ff9bdaa1665ff6571",
+                        "md5": "ada07963205a8b7089d6b9664c833286"
                     },
                     "required_dependencies": [
-                        "302973",
-                        "890405"
+                        "890405",
+                        "302973"
                     ],
-                    "size": 297697,
-                    "date_published": "2025-06-04T11:47:57.083Z"
+                    "size": 297767,
+                    "date_published": "2025-06-11T20:08:19.890Z"
                 }
             ]
         },
@@ -8626,44 +8708,6 @@
                     "required_dependencies": [],
                     "size": 1630001,
                     "date_published": "2025-05-08T17:38:34.730Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "mxWVAqlbiiejXL6S",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "visual-workbench"
-            },
-            "name": {
-                "curseforge": "Visual Workbench"
-            },
-            "id": {
-                "curseforge": "500273"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "VisualWorkbench-v8.0.0-1.20.1-Forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4612/695/VisualWorkbench-v8.0.0-1.20.1-Forge.jar",
-                    "id": "4612695",
-                    "parent_id": "500273",
-                    "hashes": {
-                        "sha1": "7ebf579edcf2440eadf1ed6c8c895e1bc2d77bf1",
-                        "md5": "d741bc2d4d3a385116d094b874474a6b"
-                    },
-                    "required_dependencies": [
-                        "495476"
-                    ],
-                    "size": 82055,
-                    "date_published": "2023-06-27T21:00:10.803Z"
                 }
             ]
         },

@@ -2,22 +2,29 @@
 	"feature": "tfg:earth/rose_quartz/rose_quartz",
 	"placement": [
 		{
-			"type": "tfc:climate",
-			"config": {
-				"max_temperature": -10,
-				"fuzzy": true
-			}
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR"
 		},
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 10
+			"chance": 80
 		},
 		{
-			"type": "minecraft:biome"
+			"type": "tfc:biome"
 		},
 		{
-			"type": "minecraft:heightmap",
-			"heightmap": "OCEAN_FLOOR"
+			"type": "tfc:climate",
+			"min_temperature": -25,
+			"max_temperature": -10,
+			"fuzzy": true
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"xz_spread": 0,
+			"y_spread": -5,
+			"type": "minecraft:random_offset"
 		}
 	]
 }

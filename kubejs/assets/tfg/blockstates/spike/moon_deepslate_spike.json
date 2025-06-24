@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"part=base": {
+			"model": "tfg:block/spike/moon_deepslate_base"
+		},
+		"part=middle": {
+			"model": "tfg:block/spike/moon_deepslate_middle"
+		},
+		"part=tip": {
+			"model": "tfg:block/spike/moon_deepslate_tip"
+		}
+	}
+}

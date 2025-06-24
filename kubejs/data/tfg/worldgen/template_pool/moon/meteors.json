@@ -1,0 +1,60 @@
+{
+	"name": "tfg:moon/meteors",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 16,
+			"element": {
+				"location": "tfg:moon/meteors/meteor1",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 16,
+			"element": {
+				"location": "tfg:moon/meteors/meteor2",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 16,
+			"element": {
+				"location": "tfg:moon/meteors/meteor3",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 16,
+			"element": {
+				"location": "tfg:moon/meteors/meteor4",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 16,
+			"element": {
+				"location": "tfg:moon/meteors/meteor5",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 16,
+			"element": {
+				"location": "tfg:moon/meteors/meteor6",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

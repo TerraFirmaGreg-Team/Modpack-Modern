@@ -1,0 +1,46 @@
+{
+	"type": "minecraft:tree",
+	"config": {
+		"decorators": [],
+		"dirt_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "ad_astra:strophar_stem"
+			}
+		},
+		"foliage_placer": {
+			"type": "minecraft:acacia_foliage_placer",
+			"offset": 0,
+			"radius": 2
+		},
+		"foliage_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "ad_astra:strophar_cap"
+			}
+		},
+		"force_dirt": false,
+		"ignore_vines": true,
+		"minimum_size": {
+			"type": "minecraft:two_layers_feature_size",
+			"limit": 1,
+			"lower_size": 0,
+			"upper_size": 2
+		},
+		"trunk_placer": {
+			"type": "minecraft:forking_trunk_placer",
+			"base_height": 5,
+			"height_rand_a": 2,
+			"height_rand_b": 2
+		},
+		"trunk_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "ad_astra:strophar_stem",
+				"Properties": {
+					"axis": "y"
+				}
+			}
+		}
+	}
+}

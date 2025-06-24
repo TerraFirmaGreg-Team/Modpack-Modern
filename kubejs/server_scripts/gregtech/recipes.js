@@ -166,24 +166,28 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_seeds')
 		.itemInputs('8x #tfc:seeds')
 		.itemOutputs('gtceu:plant_ball')
+		.circuit(1)
 		.duration(300)
 		.EUt(2)
 
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_food')
 		.itemInputs('8x #tfc:foods')
 		.itemOutputs('gtceu:plant_ball')
+		.circuit(1)
 		.duration(300)
 		.EUt(2)
 
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_plants')
 		.itemInputs('8x #tfc:plants')
 		.itemOutputs('gtceu:plant_ball')
+		.circuit(1)
 		.duration(300)
 		.EUt(2)
 
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_corals')
 		.itemInputs('8x #tfc:corals')
 		.itemOutputs('gtceu:plant_ball')
+		.circuit(1)
 		.duration(300)
 		.EUt(2)
 
@@ -376,7 +380,7 @@ const registerGTCEURecipes = (event) => {
 		.EUt(2)
 
 	//#endregion
-
+	
 	//#region Стеклодувка
 
 	// Glass Tube
@@ -1076,6 +1080,17 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	//#endregion 
+	
+	//#region glowstone
+	event.recipes.gtceu.alloy_blast_smelter('abs:liquid_glowstone')
+        	.itemInputs('#forge:dusts/gold', '#forge:dusts/redstone', '#forge:dusts/sulfur')
+		.outputFluids(Fluid.of('gtceu:glowstone', 288))
+		.duration(20*60/1.3)
+		.EUt(GTValues.VA[GTValues.LV])
+		.blastFurnaceTemp(1064)
+		.circuit(9)
+	//#endregion
+	
 
     //#region Large boilers fuel rebalance
 
@@ -1163,6 +1178,32 @@ const registerGTCEURecipes = (event) => {
 		.notConsumable('gtceu:glass_lens')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.MV])
+
+	//#region Rose Quartz fabrication + decomposition
+	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound' });
+	event.remove({ id: 'gtceu:autoclave/autoclave_dust_rose_quartz_water'})
+	event.remove({ id: 'gtceu:autoclave/autoclave_dust_rose_quartz_distilled'})
+	generateMixerRecipe(event, ['gtceu:nether_quartz_dust', '8x minecraft:redstone'], [], '9x gtceu:rose_quartz_dust', 2, [], 180, 6, 64, 'rose_quartz_dust_mixing')
+	generateMixerRecipe(event, ['gtceu:tiny_nether_quartz_dust', '8x gtceu:tiny_redstone_dust'], [], 'gtceu:rose_quartz_dust', 2, [], 20, 6, 64, 'tiny_rose_quartz_dust_mixing')
+    event.recipes.gtceu.autoclave("autoclave_dust_rose_quartz_ice")
+        .itemInputs("gtceu:rose_quartz_dust")
+        .inputFluids(Fluid.of("gtceu:ice", 144))
+        .itemOutputs("gtceu:rose_quartz_gem")
+        .duration(2000)
+        .EUt(120)
+	event.recipes.gtceu.electrolyzer('electrolyze_rose_quartz_dust')
+		.itemInputs('9x gtceu:rose_quartz_dust')
+		.itemOutputs('1x gtceu:nether_quartz_dust', '8x minecraft:redstone')
+		.duration(540)
+		.EUt(24)
+		.circuit(1)
+	event.recipes.gtceu.electrolyzer('electrolyze_rose_quartz_dust_to_tiny')
+		.itemInputs('gtceu:rose_quartz_dust')
+		.itemOutputs('1x gtceu:tiny_nether_quartz_dust', '8x gtceu:tiny_redstone_dust')
+		.duration(60)
+		.EUt(24)
+		.circuit(2)
+    //#endregion
 
 	// TODO: Greate again...
 	event.shapeless('gtceu:programmed_circuit', ['minecraft:stick', '#forge:tools/wrenches'])

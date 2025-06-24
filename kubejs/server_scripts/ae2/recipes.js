@@ -263,6 +263,16 @@ const registerAE2Recipes = (event) => {
 		D: '#forge:plates/titanium',
 	}).id('tfg:crafting/wireless_booster')
 
+    event.shaped('ae2:wireless_booster', [
+        'ABC',
+        'DDD',
+    ], {
+        A: '#forge:dusts/fluix',
+        B: '#forge:gems/certus_quartz',
+        C: '#forge:plates/ender_pearl',
+        D: 'minecraft:shulker_shell',
+    }).id('tfg:crafting/wireless_booster_shulker')
+
 	// Memory Card
 	event.shaped('ae2:memory_card', [
 		'ABB',
@@ -348,30 +358,42 @@ const registerAE2Recipes = (event) => {
 		E: 'ae2:terminal'
 	}).id('tfg:crafting/me_chest')
 
-	// ME Drive
-	event.shaped('ae2:drive', [
-		'ABA',
-		'CDC',
-		'EBE'
-	], {
-		A: '#forge:plates/steel',
-		B: 'ae2:engineering_processor',
-		C: '#ae2:glass_cable',
-		D: '#gtceu:circuits/lv',
-		E: '#forge:plates/titanium'
-	}).id('tfg:crafting/drive')
+    // ME Drive
+    event.shaped('ae2:drive', [
+        'ABA',
+        'CDC',
+        'EBE'
+    ], {
+        A: '#forge:plates/steel',
+        B: 'ae2:engineering_processor',
+        C: '#ae2:glass_cable',
+        D: '#gtceu:circuits/mv',
+        E: '#forge:plates/titanium'
+    }).id('tfg:crafting/drive')
 
-	// Spatial Pylon
-	event.shaped('ae2:spatial_pylon', [
-		'ABA',
-		'CDC',
-		'ABA'
-	], {
-		A: '#forge:plates/glass',
-		B: '#ae2:glass_cable',
-		C: '#forge:dusts/fluix',
-		D: '#forge:gems/fluix',
-	}).id('tfg:crafting/spatial_pylon')
+    event.shaped('ae2:drive', [
+        'ABA',
+        'CDC',
+        'EBE'
+    ], {
+        A: '#forge:plates/steel',
+        B: 'ae2:engineering_processor',
+        C: '#ae2:glass_cable',
+        D: '#gtceu:circuits/mv',
+        E: 'minecraft:shulker_shell'
+    }).id('tfg:crafting/drive_shulker')
+
+    // Spatial Pylon
+    event.shaped('ae2:spatial_pylon', [
+        'ABA',
+        'CDC',
+        'ABA'
+    ], {
+        A: '#forge:plates/glass',
+        B: '#ae2:glass_cable',
+        C: '#forge:dusts/fluix',
+        D: '#forge:gems/fluix',
+    }).id('tfg:crafting/spatial_pylon')
 
 	// IO Port
 	event.shaped('ae2:io_port', [
@@ -386,28 +408,52 @@ const registerAE2Recipes = (event) => {
 		E: 'ae2:engineering_processor'
 	}).id('tfg:crafting/io_port')
 
-	// Spatial IO Port
-	event.shaped('ae2:spatial_io_port', [
-		'AAA',
-		'BCB',
-		'DED'
-	], {
-		A: '#forge:plates/glass',
-		B: '#ae2:glass_cable',
-		C: 'ae2:io_port',
-		D: '#forge:plates/titanium',
-		E: 'ae2:engineering_processor'
-	}).id('tfg:crafting/spatial_io_port')
+    event.shaped('ae2:io_port', [
+        'AAA',
+        'BCB',
+        'DED'
+    ], {
+        A: '#forge:plates/glass',
+        B: 'ae2:drive',
+        C: '#ae2:glass_cable',
+        D: 'minecraft:shulker_shell',
+        E: 'ae2:engineering_processor'
+    }).id('tfg:crafting/io_port_shulker')
 
-	// Monitors
-	event.shapeless('ae2:semi_dark_monitor', ['ae2:dark_monitor'])
-		.id('tfg:crafting/semi_dark_monitor_2')
+    // Spatial IO Port
+    event.shaped('ae2:spatial_io_port', [
+        'AAA',
+        'BCB',
+        'DED'
+    ], {
+        A: '#forge:plates/glass',
+        B: '#ae2:glass_cable',
+        C: 'ae2:io_port',
+        D: '#forge:plates/titanium',
+        E: 'ae2:engineering_processor'
+    }).id('tfg:crafting/spatial_io_port')
 
-	event.shapeless('ae2:dark_monitor', ['ae2:monitor'])
-		.id('tfg:crafting/dark_monitor')
+    event.shaped('ae2:spatial_io_port', [
+        'AAA',
+        'BCB',
+        'DED'
+    ], {
+        A: '#forge:plates/glass',
+        B: '#ae2:glass_cable',
+        C: 'ae2:io_port',
+        D: 'minecraft:shulker_shell',
+        E: 'ae2:engineering_processor'
+    }).id('tfg:crafting/spatial_io_port_shulker')
 
-	event.shapeless('ae2:monitor', ['ae2:semi_dark_monitor'])
-		.id('tfg:crafting/monitor')
+    // Monitors
+    event.shapeless('ae2:semi_dark_monitor', ['ae2:dark_monitor'])
+        .id('tfg:crafting/semi_dark_monitor_2')
+    
+    event.shapeless('ae2:dark_monitor', ['ae2:monitor'])
+        .id('tfg:crafting/dark_monitor')
+    
+    event.shapeless('ae2:monitor', ['ae2:semi_dark_monitor'])
+        .id('tfg:crafting/monitor')
 
 	// Cell Workbench
 	event.shaped('ae2:cell_workbench', [
@@ -854,29 +900,41 @@ const registerAE2Recipes = (event) => {
 		.duration(200)
 		.EUt(480)
 
-	// 4k storage components
-	event.recipes.gtceu.assembler('ae2:cell_component_4k')
-		.itemInputs(
-			'4x #gtceu:circuits/ev',
-			'4x #forge:plates/titanium',
-			'4x #forge:dusts/certus_quartz',
-			'ae2:logic_processor')
-		.inputFluids(Fluid.of('gtceu:steel', 144))
-		.itemOutputs('ae2:cell_component_4k')
-		.duration(200)
-		.EUt(1920)
-		.cleanroom(CleanroomType.CLEANROOM)
+    // 4k storage components
+    event.recipes.gtceu.assembler('ae2:cell_component_4k')
+        .itemInputs(
+            '4x #gtceu:circuits/ev',
+            '4x #forge:plates/titanium',
+            '4x #forge:dusts/certus_quartz',
+            'ae2:logic_processor')
+        .inputFluids(Fluid.of('gtceu:steel', 144))
+        .itemOutputs('ae2:cell_component_4k')
+        .duration(200)
+        .EUt(1920)
+        .cleanroom(CleanroomType.CLEANROOM)
 
-	event.recipes.gtceu.assembler('ae2:cell_component_4k_1k')
-		.itemInputs(
-			'ae2:logic_processor',
-			'2x #gtceu:circuits/ev',
-			'4x ae2:cell_component_1k')
-		.inputFluids(Fluid.of('gtceu:steel', 144))
-		.itemOutputs('ae2:cell_component_4k')
-		.duration(400)
-		.EUt(1920)
-		.cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.assembler('ae2:cell_component_4k_shulker')
+        .itemInputs(
+            '4x #gtceu:circuits/ev',
+            '4x minecraft:shulker_shell',
+            '4x #forge:dusts/certus_quartz',
+            'ae2:logic_processor')
+        .inputFluids(Fluid.of('gtceu:steel', 144))
+        .itemOutputs('ae2:cell_component_4k')
+        .duration(200)
+        .EUt(1920)
+        .cleanroom(CleanroomType.CLEANROOM)
+    
+    event.recipes.gtceu.assembler('ae2:cell_component_4k_1k')
+        .itemInputs(
+            'ae2:logic_processor',
+            '2x #gtceu:circuits/ev',
+            '4x ae2:cell_component_1k')
+        .inputFluids(Fluid.of('gtceu:steel', 144))
+        .itemOutputs('ae2:cell_component_4k')
+        .duration(400)
+        .EUt(1920)
+        .cleanroom(CleanroomType.CLEANROOM)
 
 	// 16k storage components
 	event.recipes.gtceu.assembler('ae2:cell_component_16k')
@@ -1154,18 +1212,30 @@ const registerAE2Recipes = (event) => {
 
 	// ME Контроллер
 	event.recipes.gtceu.assembler('ae2:controller')
-		.itemInputs(
-			'2x ae2:engineering_processor',
-			'2x #gtceu:circuits/hv',
-			'2x #forge:plates/titanium',
-			'ae2:fluix_block')
-		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
-		.itemOutputs('ae2:controller')
-		.duration(200)
-		.EUt(480)
-		.cleanroom(CleanroomType.CLEANROOM)
+        .itemInputs(
+            '2x ae2:engineering_processor',
+            '2x #gtceu:circuits/hv',
+            '2x #forge:plates/titanium',
+            'ae2:fluix_block')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:controller')
+        .duration(200)
+        .EUt(480)
+        .cleanroom(CleanroomType.CLEANROOM)
 
-	//#region ME Interfaces
+    event.recipes.gtceu.assembler('ae2:controller_shulker')
+        .itemInputs(
+            '2x ae2:engineering_processor',
+            '2x #gtceu:circuits/hv',
+            '2x minecraft:shulker_shell',
+            'ae2:fluix_block')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:controller')
+        .duration(200)
+        .EUt(480)
+        .cleanroom(CleanroomType.CLEANROOM)
+    
+    //#region ME Interfaces
 
 	// MV
 	event.recipes.gtceu.assembler('ae2:interface_mv')
@@ -1636,65 +1706,37 @@ const registerAE2Recipes = (event) => {
 			.category(GTRecipeCategories.CHEM_DYES)
 	};
 
-	// Inscriber Silicon Press
-	event.recipes.gtceu.laser_engraver('ae2:silicon_press_iron')
-		.itemInputs('#forge:plates/cast_iron')
-		.notConsumable('#forge:lenses/white')
-		.itemOutputs('ae2:silicon_press')
-		.duration(12000)
-		.EUt(116)
+    // Inscriber Silicon Press
+    event.recipes.gtceu.forming_press('ae2:silicon_press_stainless_steel')
+        .itemInputs('#forge:plates/stainless_steel')
+        .notConsumable('ae2:silicon_press')
+        .itemOutputs('ae2:silicon_press')
+        .duration(100)
+        .EUt(480)
 
-	event.recipes.gtceu.laser_engraver('ae2:silicon_press_wrought_iron')
-		.itemInputs('#forge:plates/wrought_iron')
-		.notConsumable('#forge:lenses/white')
-		.itemOutputs('ae2:silicon_press')
-		.duration(8000)
-		.EUt(116)
+    // Inscriber logic Press
+    event.recipes.gtceu.forming_press('ae2:logic_processor_press_stainless_steel')
+        .itemInputs('#forge:plates/stainless_steel')
+        .notConsumable('ae2:logic_processor_press')
+        .itemOutputs('ae2:logic_processor_press')
+        .duration(100)
+        .EUt(480)
 
-	// Inscriber logic Press
-	event.recipes.gtceu.laser_engraver('ae2:logic_processor_press_iron')
-		.itemInputs('#forge:plates/cast_iron')
-		.notConsumable('#forge:lenses/green')
-		.itemOutputs('ae2:logic_processor_press')
-		.duration(12000)
-		.EUt(116)
+    // Inscriber engineering Press
+    event.recipes.gtceu.forming_press('ae2:engineering_press_stainless_steel')
+        .itemInputs('#forge:plates/stainless_steel')
+        .notConsumable('ae2:engineering_processor_press')
+        .itemOutputs('ae2:engineering_processor_press')
+        .duration(100)
+        .EUt(480)
 
-	event.recipes.gtceu.laser_engraver('ae2:logic_processor_press_wrought_iron')
-		.itemInputs('#forge:plates/wrought_iron')
-		.notConsumable('#forge:lenses/green')
-		.itemOutputs('ae2:logic_processor_press')
-		.duration(8000)
-		.EUt(116)
-
-	// Inscriber engineering Press
-	event.recipes.gtceu.laser_engraver('ae2:engineering_press_iron')
-		.itemInputs('#forge:plates/cast_iron')
-		.notConsumable('#forge:lenses/light_blue')
-		.itemOutputs('ae2:engineering_processor_press')
-		.duration(12000)
-		.EUt(116)
-
-	event.recipes.gtceu.laser_engraver('ae2:engineering_press_wrought_iron')
-		.itemInputs('#forge:plates/wrought_iron')
-		.notConsumable('#forge:lenses/light_blue')
-		.itemOutputs('ae2:engineering_processor_press')
-		.duration(8000)
-		.EUt(116)
-
-	// Inscriber calculation Press
-	event.recipes.gtceu.laser_engraver('ae2:calculation_press_iron')
-		.itemInputs('#forge:plates/cast_iron')
-		.notConsumable('#forge:lenses/blue')
-		.itemOutputs('ae2:calculation_processor_press')
-		.duration(12000)
-		.EUt(116)
-
-	event.recipes.gtceu.laser_engraver('ae2:calculation_press_wrought_iron')
-		.itemInputs('#forge:plates/wrought_iron')
-		.notConsumable('#forge:lenses/blue')
-		.itemOutputs('ae2:calculation_processor_press')
-		.duration(8000)
-		.EUt(116)
+    // Inscriber calculation Press
+    event.recipes.gtceu.forming_press('ae2:calculation_press_stainless_steel')
+        .itemInputs('#forge:plates/stainless_steel')
+        .notConsumable('ae2:calculation_processor_press')
+        .itemOutputs('ae2:calculation_processor_press')
+        .duration(100)
+        .EUt(480)
 
 	// Quartz Fiber
 	event.recipes.gtceu.wiremill('ae2:quartz_fiber_certus')
@@ -2134,4 +2176,58 @@ const registerAE2Recipes = (event) => {
 		.duration(100)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
+
+	// Certus deco blocks
+
+	event.stonecutting('ae2:cut_quartz_block', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:smooth_quartz_block', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:quartz_bricks', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:quartz_pillar', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:chiseled_quartz_block', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:quartz_stairs', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:cut_quartz_stairs', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:smooth_quartz_stairs', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:quartz_brick_stairs', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:chiseled_quartz_stairs', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:quartz_pillar_stairs', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:quartz_wall', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:cut_quartz_wall', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:smooth_quartz_wall', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:quartz_brick_wall', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:chiseled_quartz_wall', '#tfg:certus_quartz_blocks')
+	event.stonecutting('ae2:quartz_pillar_wall', '#tfg:certus_quartz_blocks')
+	event.stonecutting('2x ae2:quartz_slab', '#tfg:certus_quartz_blocks')
+	event.stonecutting('2x ae2:cut_quartz_slab', '#tfg:certus_quartz_blocks')
+	event.stonecutting('2x ae2:smooth_quartz_slab', '#tfg:certus_quartz_blocks')
+	event.stonecutting('2x ae2:quartz_brick_slab', '#tfg:certus_quartz_blocks')
+	event.stonecutting('2x ae2:chiseled_quartz_slab', '#tfg:certus_quartz_blocks')
+	event.stonecutting('2x ae2:quartz_pillar_slab', '#tfg:certus_quartz_blocks')
+
+	event.recipes.gtceu.macerator('tfg:macerate_certus_deco')
+		.itemInputs('#tfg:certus_quartz_blocks')
+		.itemOutputs('#forge:dusts/certus_quartz')
+		.duration(150)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+	event.recipes.gtceu.macerator('tfg:macerate_sky_stone')
+		.itemInputs('#tfg:sky_stone_blocks')
+		.itemOutputs('ae2:sky_dust')
+		.duration(150)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+	// other deco
+
+	event.shaped('ae2:not_so_mysterious_cube', [
+		' A ',
+		'BCD',
+		' E '
+	], {
+		A: 'ae2:calculation_processor_press',
+		B: 'ae2:engineering_processor_press',
+		C: 'ae2:fluix_block',
+		D: 'ae2:logic_processor_press',
+		E: 'ae2:silicon_press'
+	}).id('tfg:shaped/not_so_mysterious_cube')
 }

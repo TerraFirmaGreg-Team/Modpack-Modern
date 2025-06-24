@@ -43,27 +43,6 @@ global.CREATE_DISABLED_ITEMS = [
     'create:layered_veridium', 
     'create:veridium_pillar',
 
-    // Scorchia
-    'create:scorchia', 
-    'create:cut_scorchia', 
-    'create:cut_scorchia_stairs', 
-    'create:cut_scorchia_slab', 
-    'create:cut_scorchia_wall', 
-    'create:polished_cut_scorchia', 
-    'create:polished_cut_scorchia_stairs', 
-    'create:polished_cut_scorchia_slab', 
-    'create:polished_cut_scorchia_wall', 
-    'create:cut_scorchia_bricks', 
-    'create:cut_scorchia_brick_stairs', 
-    'create:cut_scorchia_brick_slab', 
-    'create:cut_scorchia_brick_wall', 
-    'create:small_scorchia_bricks', 
-    'create:small_scorchia_brick_stairs', 
-    'create:small_scorchia_brick_slab',
-    'create:small_scorchia_brick_wall', 
-    'create:layered_scorchia', 
-    'create:scorchia_pillar',
-
     // Scoria
     'create:scoria', 
     'create:cut_scoria', 
@@ -127,27 +106,6 @@ global.CREATE_DISABLED_ITEMS = [
     'create:layered_crimsite', 
     'create:crimsite_pillar',
 
-    // Kingdom of Asura (Mushoku Tensei)
-    'create:asurine', 
-    'create:cut_asurine', 
-    'create:cut_asurine_stairs', 
-    'create:cut_asurine_slab', 
-    'create:cut_asurine_wall', 
-    'create:polished_cut_asurine',
-    'create:polished_cut_asurine_stairs', 
-    'create:polished_cut_asurine_slab', 
-    'create:polished_cut_asurine_wall', 
-    'create:cut_asurine_bricks', 
-    'create:cut_asurine_brick_stairs', 
-    'create:cut_asurine_brick_slab', 
-    'create:cut_asurine_brick_wall', 
-    'create:small_asurine_bricks', 
-    'create:small_asurine_brick_stairs', 
-    'create:small_asurine_brick_slab', 
-    'create:small_asurine_brick_wall', 
-    'create:layered_asurine', 
-    'create:asurine_pillar',
-
     // Tuff
     'create:cut_tuff', 
     'create:cut_tuff_stairs', 
@@ -191,6 +149,14 @@ global.CREATE_DISABLED_ITEMS = [
     'create:rose_quartz_block', 
     'create:rose_quartz_tiles', 
     'create:small_rose_quartz_tiles',
+
+    // Cardboard (create 6)
+    'create:cardboard_chestplate',
+    'create:cardboard_helmet',
+    'create:cardboard_leggings',
+    'create:cardboard_boots',
+    'create:cardboard_sword',
+    'create:pulp',
 
     // Other
     'create:honey_bucket', 

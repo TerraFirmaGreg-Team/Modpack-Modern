@@ -1,0 +1,44 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "ad_astra:venus_stone",
+							"conditions": [
+								{
+									"condition": "tfc:is_isolated"
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "tfg:loose/venus_stone",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": {
+										"min": 1,
+										"max": 4,
+										"type": "minecraft:uniform"
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			]
+		}
+	]
+}

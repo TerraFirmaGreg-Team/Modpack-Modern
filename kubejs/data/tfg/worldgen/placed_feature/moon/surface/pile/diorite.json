@@ -1,0 +1,35 @@
+{
+	"feature": "tfg:moon/surface/pile/diorite",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 2
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE_WG"
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_blocks",
+				"offset": [ 0, -1, 0 ],
+				"blocks": [
+					"tfc:rock/raw/diorite",
+					"tfc:rock/hardened/diorite",
+					"tfc:rock/gravel/diorite"
+				]
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE_WG"
+		}
+	]
+}

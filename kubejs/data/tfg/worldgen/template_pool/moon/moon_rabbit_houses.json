@@ -1,0 +1,42 @@
+{
+	"name": "tfg:moon/moon_rabbit_houses",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 25,
+			"element": {
+				"location": "tfg:moon/moon_rabbit_houses/moon_rabbit_house1",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 25,
+			"element": {
+				"location": "tfg:moon/moon_rabbit_houses/moon_rabbit_house2",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 25,
+			"element": {
+				"location": "tfg:moon/moon_rabbit_houses/moon_rabbit_house3",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 25,
+			"element": {
+				"location": "tfg:moon/moon_rabbit_houses/moon_rabbit_house4",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

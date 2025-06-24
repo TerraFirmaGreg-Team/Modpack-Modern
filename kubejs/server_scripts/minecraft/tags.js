@@ -29,11 +29,13 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfc:foods', 'minecraft:brown_mushroom')
     event.add('tfc:foods', 'minecraft:glow_berries')
     event.add('tfc:foods', 'minecraft:chorus_fruit')
+    event.add('tfc:foods', 'minecraft:popped_chorus_fruit')
 
     event.add('tfc:foods/vegetables', 'minecraft:red_mushroom')
     event.add('tfc:foods/vegetables', 'minecraft:brown_mushroom')
     event.add('tfc:foods/fruits', 'minecraft:glow_berries')
     event.add('tfc:foods/fruits', 'minecraft:chorus_fruit')
+    event.add('tfc:foods/fruits', 'minecraft:popped_chorus_fruit')
 
     event.add('beneath:usable_in_juicer', 'minecraft:glow_berries')
     event.add('beneath:usable_in_juicer', 'minecraft:chorus_fruit')
@@ -44,11 +46,13 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfc:foods/usable_in_soup', 'minecraft:brown_mushroom')
     event.add('tfc:foods/usable_in_soup', 'minecraft:glow_berries')
     event.add('tfc:foods/usable_in_soup', 'minecraft:chorus_fruit')
+    event.add('tfc:foods/usable_in_soup', 'minecraft:popped_chorus_fruit')
 
     event.add('tfc:foods/usable_in_salad', 'minecraft:red_mushroom')
     event.add('tfc:foods/usable_in_salad', 'minecraft:brown_mushroom')
     event.add('tfc:foods/usable_in_salad', 'minecraft:glow_berries')
     event.add('tfc:foods/usable_in_salad', 'minecraft:chorus_fruit')
+    event.add('tfc:foods/usable_in_salad', 'minecraft:popped_chorus_fruit')
     
     event.add('tfc:rock/raw', 'minecraft:deepslate')
     event.add('tfc:rock/raw', 'minecraft:blackstone')
@@ -59,6 +63,10 @@ const registerMinecraftItemTags = (event) => {
 
     event.add('tfc:compost_greens_high', 'minecraft:red_mushroom_block')
     event.add('tfc:compost_greens_high', 'minecraft:brown_mushroom_block')
+    event.add('tfc:compost_greens_high', 'minecraft:twisting_vines')
+    event.add('tfc:compost_greens_high', 'minecraft:pearlescent_froglight')
+    event.add('tfc:compost_greens_high', 'minecraft:verdant_froglight')
+    event.add('tfc:compost_greens_high', 'minecraft:ochre_froglight')
 
     event.add('tfc:colored_terracotta', 'minecraft:white_terracotta')
 }

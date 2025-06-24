@@ -321,7 +321,11 @@
 		}
 		{
 			dependencies: ["22E462070F8B027A"]
-			description: ["{quests.medium_voltage.electrolyzer.desc}"]
+			description: [
+				"{quests.medium_voltage.electrolyzer.desc.1}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.electrolyzer.desc.2}"
+			]
 			icon: "gtceu:mv_electrolyzer"
 			id: "0EFEE489906256AA"
 			shape: "octagon"

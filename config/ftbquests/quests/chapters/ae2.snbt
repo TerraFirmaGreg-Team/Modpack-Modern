@@ -5,25 +5,15 @@
 	group: "33020D1D0ECDF301"
 	icon: "ae2:controller"
 	id: "09BE9F51822EC180"
-	order_index: 2
-	quest_links: [
-		{
-			id: "3293CB774C1A4DF0"
-			linked_quest: "1D88369409736DC7"
-			shape: "gear"
-			size: 2.0d
-			x: -7.0d
-			y: 0.0d
-		}
-		{
-			id: "6F0C443B72699EFA"
-			linked_quest: "05ABC370D7153350"
-			shape: "gear"
-			size: 2.0d
-			x: -4.0d
-			y: -2.0d
-		}
-	]
+	order_index: 3
+	quest_links: [{
+		id: "6F0C443B72699EFA"
+		linked_quest: "05ABC370D7153350"
+		shape: "gear"
+		size: 2.0d
+		x: -4.0d
+		y: -2.0d
+	}]
 	quests: [
 		{
 			dependencies: ["15B4CB2A3B01C930"]
@@ -253,8 +243,8 @@
 		}
 		{
 			dependencies: [
-				"1D88369409736DC7"
 				"3E51DAA2E5CF0422"
+				"27E6D3B21555EEC0"
 			]
 			id: "20AAF0C5177EC3FE"
 			size: 1.0d
@@ -1914,8 +1904,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["1D88369409736DC7"]
+			dependencies: ["00A2566109144D7F"]
+			description: ["With your first step on the Moon comes access to your first &bCertus Quartz&r vein.\\nDon't worry � they're quite common and should be easy to locate, though having a decent &9Ore Scanner&r wouldn�t hurt.\\n\\nWhether you decide to set up a miner or manually dig out a full vein, make sure to gather a &dhefty amount&r � you�ll need it to progress through &bAE2&r."]
 			id: "3E51DAA2E5CF0422"
+			subtitle: "A first step for you, a big leap for AE2"
 			tasks: [{
 				id: "2328D90FAE814CEF"
 				item: {
@@ -1927,6 +1919,7 @@
 				}
 				type: "item"
 			}]
+			title: "Certus Quartz"
 			x: -7.0d
 			y: 2.0d
 		}
@@ -2371,6 +2364,19 @@
 			}]
 			x: 2.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["52AD30F04DD5A812"]
+			id: "27E6D3B21555EEC0"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "5490D2074B0AC944"
+				item: "gtceu:hv_polarizer"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
 		}
 	]
 	subtitle: ["{quests.ae2.subtitle}"]

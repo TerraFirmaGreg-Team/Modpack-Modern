@@ -639,7 +639,7 @@ function registerGreateRecipes(event) {
 	// #endregion
 
 	// #region Cables
-	// TODO: Remove this when we update greate
+	// TODO: Remove this when greate wire coating is configurable
 
 	event.forEachRecipe([{ type: 'gtceu:wire_coating' }], recipe => {
 		let r = JSON.parse(recipe.json)
