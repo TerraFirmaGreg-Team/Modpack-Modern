@@ -1,0 +1,8 @@
+{
+  "parent": "create:block/mechanical_pump/block",
+  "textures": {
+    "2": "greate:block/aluminium/pipes",
+    "4": "greate:block/aluminium/pump",
+    "particle": "greate:block/aluminium/pump"
+  }
+}

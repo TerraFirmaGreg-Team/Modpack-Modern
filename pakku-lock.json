@@ -2338,6 +2338,39 @@
             ]
         },
         {
+            "pakku_id": "PlkjJZdydA94ByHb",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "create-old-copper-stuffs"
+            },
+            "name": {
+                "curseforge": "Create: Old Copper Stuffs"
+            },
+            "id": {
+                "curseforge": "1210517"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Old Copper Stuffs v1.8.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6375/378/Old Copper Stuffs v1.8.zip",
+                    "id": "6375378",
+                    "parent_id": "1210517",
+                    "hashes": {
+                        "sha1": "9c547abd2c3858d634863c9e9349bc2f82e0f502",
+                        "md5": "bbc3136cb5f6e6f1c0ada7286af18a7d"
+                    },
+                    "required_dependencies": [],
+                    "size": 315827,
+                    "date_published": "2025-04-01T18:57:31.590Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "FGfjSFTKVV6OyiEW",
             "type": "MOD",
             "slug": {
