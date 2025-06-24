@@ -2,7 +2,7 @@
 
 const registerTFGFluids = (event) => {
 
-	// TODO: remove these with space
+	// TODO: remove these as the other planets come out
 
 	event.create('tfg:nether_slurry')
 		.thickTexture(0x6b281b)

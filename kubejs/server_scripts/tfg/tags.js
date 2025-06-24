@@ -311,7 +311,7 @@ const registerTFGBlockTags = (event) => {
 
 	// #endregion
 
-	// #region Space blocks (TODO: undo these when merging space into dev!)
+	// #region Space blocks
 
 	event.add('tfc:plants', 'tfg:lunar_roots')
 	event.add('tfc:plants', 'tfg:lunar_sprouts')
