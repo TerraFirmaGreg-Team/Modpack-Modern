@@ -1256,6 +1256,43 @@
             ]
         },
         {
+            "pakku_id": "SA19Vecc1QTF7Kih",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "cc-tweaked"
+            },
+            "name": {
+                "modrinth": "CC: Tweaked"
+            },
+            "id": {
+                "modrinth": "gu7yAYhd"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "cc-tweaked-1.20.1-forge-1.115.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/gu7yAYhd/versions/GYnSPc0b/cc-tweaked-1.20.1-forge-1.115.1.jar",
+                    "id": "GYnSPc0b",
+                    "parent_id": "gu7yAYhd",
+                    "hashes": {
+                        "sha512": "79397cdd37291158024621f5ed08cecf76b243e54318d5a252d44d068f2c0fc5491c52f05107a2a3300cc5a3a2d6cbdf2b02ebc4b0dacfafbc64f4a1e23dce76",
+                        "sha1": "1a2f9672b3aa5e4c485c8b3ac0b2579ecdfb6798"
+                    },
+                    "required_dependencies": [],
+                    "size": 3073327,
+                    "date_published": "2025-03-01T22:50:51.489958Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Y2789EQtsu4Lnvgv",
             "type": "MOD",
             "slug": {
@@ -6100,7 +6137,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "notenoughanimations-forge-1.9.3-mc1.20.1.jar",
+                    "file_name": "notenoughanimations-forge-1.10.0-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6108,12 +6145,12 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6356/205/notenoughanimations-forge-1.9.3-mc1.20.1.jar",
-                    "id": "6356205",
+                    "url": " https://edge.forgecdn.net/files/6688/512/notenoughanimations-forge-1.10.0-mc1.20.1.jar",
+                    "id": "6688512",
                     "parent_id": "433760",
                     "hashes": {
-                        "sha1": "68e3ab1b89d39a48362a4741a50c73e7ebb2fe7a",
-                        "md5": "57a955e091614c70105679d7ecad2ef7"
+                        "sha1": "4a2702f46248a9c629aa052e60676bc6b4623683",
+                        "md5": "f6e557ba7e253019d32c9fbfb85bbb45"
                     },
                     "required_dependencies": [],
                     "size": 453719,
