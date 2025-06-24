@@ -107,8 +107,7 @@ TFCEvents.registerClimateModel(event => {
 
 	event.register('tfg:orbit_climate', builder => {
 
-		// There's basically no heat diffusion in space so we can pretend this is your spacesuit temp
-		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => 15)
+		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => -270)
 		builder.setAverageTemperatureCalculation((level, pos) => -270)
 		builder.setAverageRainfallCalculation((level, pos) => 0)
 		builder.setAirFog((level, pos, calendarTicks) => 0)
