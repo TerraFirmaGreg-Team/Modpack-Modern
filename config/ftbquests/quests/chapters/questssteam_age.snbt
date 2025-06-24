@@ -1587,29 +1587,20 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["49896161B31DB7B4"]
-			description: [
-				"There is currently a bug with the Mechanical Mixer where some recipes want an actual Programmed Circuit item."
-				"For the time being, you can craft these with a Stick and a Wrench."
-				""
-				"This will be fixed whenever we're able to update Greate to the latest version, which requires Create 6, which requires other Create addons to be updated... hopefully that should be soon."
-			]
-			icon: {
-				Count: 1
-				id: "gtceu:programmed_circuit"
-				tag: {
-					Configuration: 0
-				}
-			}
-			id: "6068BC1F6917A69D"
-			size: 1.0d
+			dependencies: ["033E74BC588E7EAD"]
+			description: ["{quests.steam_age.packager.desc}"]
+			icon: "create:package_frogport"
+			id: "509E85016A2B199C"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{quests.steam_age.packager.subtitle}"
 			tasks: [{
-				id: "385A0D77B9B4AA74"
+				id: "4319E4113F8EBB13"
 				type: "checkmark"
 			}]
-			title: "Bug workaround"
-			x: -5.5d
-			y: 13.5d
+			title: "{quests.steam_age.packager.title}"
+			x: -22.0d
+			y: 17.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]
