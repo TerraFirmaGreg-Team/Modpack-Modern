@@ -37,7 +37,7 @@
 - Fixed double ingots not having a temperature (#1165) @Pyritie
 - Removed a few recipes that had unobtainable greate-related materials @Pyritie
 - Fixed the color of placed zinc ingots and plated blocks to match the material @Pyritie
-- Fixed some other steel/colored steel items being extractable in LV @Pyritie
+- Fixed some other steel/colored steel items being extractable in LV (#1212) @Pyritie
 - Fixed polished/cut migmatite recipe conflict (#1153) @JeanRdSz
 - Fixed some bugs with the lunchbox (#1200) @Thomasx0
 
