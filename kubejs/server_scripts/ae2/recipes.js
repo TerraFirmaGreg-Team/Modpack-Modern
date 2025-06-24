@@ -16,15 +16,6 @@ const registerAE2Recipes = (event) => {
 		], mod: 'ae2'
 	});
 
-	//#region Рецепты энтропии
-
-	global.TFC_STONE_TYPES.forEach(stone => {
-		registerEntropyRecipe(event, { block: { id: `tfc:rock/cobble/${stone}` } }, 'heat', { block: { id: `tfc:rock/raw/${stone}` } }, `tfg:entropy_raw_${stone}_to_cobble`)
-		registerEntropyRecipe(event, { block: { id: `tfc:rock/raw/${stone}` } }, 'cool', { block: { id: `tfc:rock/cobble/${stone}` } }, `tfg:entropy_cobble_${stone}_to_raw`)
-	})
-
-	//#endregion
-
 	// Cutting knives (for renaming things)
 	event.shaped('ae2:certus_quartz_cutting_knife', [
 		'  A',

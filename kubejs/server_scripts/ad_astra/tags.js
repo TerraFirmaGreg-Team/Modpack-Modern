@@ -25,11 +25,9 @@ const registerAdAstraFluidTags = (event) => {
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:gasoline')
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:high_octane_gasoline')
 
-	event.add('ad_astra:zip_gun_propellants', 'tfg:compressed_nitrox')
-	event.add('ad_astra:zip_gun_propellants', 'tfg:compressed_heliox')
-	event.add('ad_astra:zip_gun_propellants', 'tfg:compressed_heliox_3')
-	event.add('ad_astra:zip_gun_propellants', 'tfg:compressed_trimix')
-	event.add('ad_astra:zip_gun_propellants', 'tfg:compressed_trimix_3')
+	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
+		event.add('ad_astra:zip_gun_propellants', x)
+	})
 }
 
 const registerAdAstraItemTags = (event) => {

@@ -398,21 +398,23 @@ const registerAdAstraRecipes = (event) => {
 		}
 	}).id('ad_astra:oxygen_loading/air_from_air')
 
-	event.custom({
-		type: 'ad_astra:oxygen_loading',
-		cookingtime: 1,
-		energy: 30,
-		input: {
-			ingredient: {
-				tag: 'tfg:breathable_compressed_air'
+	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
+		event.custom({
+			type: 'ad_astra:oxygen_loading',
+			cookingtime: 1,
+			energy: 30,
+			input: {
+				ingredient: {
+					fluid: x
+				},
+				millibuckets: 1
 			},
-			millibuckets: 1
-		},
-		result: {
-			fluid: 'ad_astra:oxygen',
-			millibuckets: 200
-		}
-	}).id('ad_astra:oxygen_loading/air_from_compressed')
+			result: {
+				fluid: 'ad_astra:oxygen',
+				millibuckets: 200
+			}
+		}).id(`ad_astra:oxygen_loading/air_from_${x.split(':')[1]}`)
+	})
 
 	//#endregion
 

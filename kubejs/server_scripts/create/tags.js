@@ -88,6 +88,7 @@ const registerCreateBlockTags = (event) => {
 
 	// Disable bulk blasting
 	event.removeAll('create:fan_processing_catalysts/blasting')
+	event.removeAll('create:fan_processing_catalysts/haunting')
 
 	// Waters for bulk washing
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/river_water')
@@ -121,6 +122,7 @@ const registerCreateFluidTags = (event) => {
 
 	// Disable bulk blasting
 	event.removeAll('create:fan_processing_catalysts/blasting')
+	event.removeAll('create:fan_processing_catalysts/haunting')
 	
 	// Waters for bulk washing
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:river_water')
