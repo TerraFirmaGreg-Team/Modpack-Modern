@@ -619,14 +619,6 @@ function registerVintageImprovementsRecipes(event) {
 		results: [{ item: 'gtceu:raw_rubber_dust' }],
 		processingTime: 120
 	}).id('tfg:vi/vacuumizing/vulcanized_latex_to_raw_rubber')
-	
-	event.custom({
-		type: 'vintageimprovements:pressurizing',
-		ingredients: [{ item: 'minecraft:glowstone_dust', count: 4 }],
-		results: [{ item: 'minecraft:glowstone' }],
-		heatRequirement: "heated",
-		processingTime: 300
-	}).id('tfg:vi/pressurizing/glowstone')
 
 	// #endregion
 
