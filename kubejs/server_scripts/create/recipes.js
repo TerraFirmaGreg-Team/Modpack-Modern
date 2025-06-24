@@ -1705,7 +1705,7 @@ const registerCreateRecipes = (event) => {
 		C: 'gtceu:ulv_machine_hull',
 		D: 'create:bound_cardboard_block',
 		E: 'create:electron_tube',
-		F: 'tfc:metal/bars/wrought_iron'
+		F: '#tfg:metal_bars'
 	}).id('tfg:create/shaped/packager')
 
 	event.shaped('create:item_hatch', [
@@ -1720,29 +1720,31 @@ const registerCreateRecipes = (event) => {
 
 	event.recipes.gtceu.assembler('tfg:create/item_hatch')
 		.itemInputs('3x #forge:plates/wrought_iron', '#tfc:trapdoors')
-		.circuit(5)
+		.circuit(19)
 		.itemOutputs('create:item_hatch')
 		.duration(200)
 		.EUt(20)
 
 	event.shaped('create:package_frogport', [
 		'GAG',
-		'BCB',
+		'HCB',
 		'EDF'
 	], {
 		A: 'tfc:glue',
 		B: '#forge:small_gears/brass',
-		C: '#tfg:shafts',
+		C: '#tfg:metal_chains',
 		D: 'create:item_vault',
 		E: '#forge:tools/screwdrivers',
 		F: '#forge:tools/wrenches',
 		G: '#forge:plates/wrought_iron',
+		H: 'create:electron_tube'
 	}).id('tfg:create/shaped/package_frogport')
 
 	event.recipes.gtceu.assembler('tfg:create/package_frogport')
-		.itemInputs('#tfg:shafts', '2x #forge:plates/wrought_iron', '2x #forge:small_gears/brass', 'create:item_vault')
+		.itemInputs('#tfg:metal_chains', '2x #forge:plates/wrought_iron', '1x #forge:small_gears/brass', 'create:electron_tube', 'create:item_vault')
 		.inputFluids(Fluid.of('gtceu:glue', 50))
 		.itemOutputs('create:package_frogport')
+		.circuit(20)
 		.duration(200)
 		.EUt(20)
 

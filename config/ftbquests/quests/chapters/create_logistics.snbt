@@ -2,14 +2,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "create_logistics"
-	group: ""
+	group: "3C4612A920658A7E"
 	icon: {
 		Count: 1
 		id: "create:cardboard_package_12x12"
 		tag: { }
 	}
 	id: "1FC58A1BAA93B3FC"
-	order_index: 0
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -111,6 +111,8 @@
 				"{quests.create_logistics.nbt_handling.desc.1}"
 				"{@pagebreak}"
 				"{quests.create_logistics.nbt_handling.desc.2}"
+				"{@pagebreak}"
+				"{quests.create_logistics.nbt_handling.desc.3}"
 			]
 			icon: "gtceu:brass_huge_item_pipe"
 			id: "7E97A95EA986C476"
@@ -158,7 +160,7 @@
 		{
 			dependencies: ["09D5BD00E3308E76"]
 			description: ["{quests.create_logistics.rose_quartz.desc}"]
-			icon: "gtceu:rose_quartz_gem"
+			icon: "gtceu:overworld_marker"
 			id: "3137824EEA1E4D9B"
 			subtitle: "{quests.create_logistics.rose_quartz.subtitle}"
 			tasks: [{

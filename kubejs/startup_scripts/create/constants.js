@@ -146,9 +146,6 @@ global.CREATE_DISABLED_ITEMS = [
     // Blocks
     'create:andesite_alloy_block',  
     'create:experience_block',
-    'create:rose_quartz_block', 
-    'create:rose_quartz_tiles', 
-    'create:small_rose_quartz_tiles',
 
     // Cardboard (create 6)
     'create:cardboard_chestplate',
@@ -165,13 +162,11 @@ global.CREATE_DISABLED_ITEMS = [
     'create:crushed_raw_aluminum', 
     'create:crushed_raw_uranium', 
     'create:crushed_raw_nickel', 
-    'create:rose_quartz_lamp', 
     'create:creative_blaze_cake', 
     'create:blaze_cake', 
     'create:blaze_cake_base', 
     'create:sturdy_sheet', 
     'create:polished_rose_quartz', 
-    'create:rose_quartz', 
     'create:cinder_flour', 
     'create:dough', 
     'create:bar_of_chocolate', 
