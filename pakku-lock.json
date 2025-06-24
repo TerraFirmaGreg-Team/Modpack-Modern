@@ -5477,7 +5477,7 @@
             ]
         },
         {
-            "pakku_id": "3zWlnqzLSD66ds4H",
+            "pakku_id": "lQaXiiqpM9VoHX3V",
             "type": "MOD",
             "slug": {
                 "curseforge": "lootr"
@@ -5491,26 +5491,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "lootr-forge-1.20-0.7.35.90.jar",
+                    "file_name": "lootr-forge-1.20-0.7.35.91.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
                     ],
                     "loaders": [
-                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5976/109/lootr-forge-1.20-0.7.35.90.jar",
-                    "id": "5976109",
+                    "url": "https://edge.forgecdn.net/files/6330/326/lootr-forge-1.20-0.7.35.91.jar",
+                    "id": "6330326",
                     "parent_id": "361276",
                     "hashes": {
-                        "sha1": "919a1e75d8fac3081743c9dcbe6679a28c867ec9",
-                        "md5": "570d8e000bf17cc71eb0b26cfd4dc7a6"
+                        "sha1": "4175b32e3bc25b05c45cc84f70b585279a871d3c",
+                        "md5": "512ee49d21782875b33513fb074eb098"
                     },
                     "required_dependencies": [],
-                    "size": 457647,
-                    "date_published": "2024-12-09T01:59:08.480Z"
+                    "size": 458532,
+                    "date_published": "2025-03-22T03:44:13.050Z"
                 }
             ]
         },
@@ -6161,7 +6160,7 @@
         {
             "pakku_id": "ZxLI60MMZxdHImOD",
             "pakku_links": [
-                "DYmpunPv5T1P1qwR"
+                "ccvCeDUzAmNqbRBs"
             ],
             "type": "MOD",
             "slug": {
@@ -6202,7 +6201,7 @@
             ]
         },
         {
-            "pakku_id": "DYmpunPv5T1P1qwR",
+            "pakku_id": "ccvCeDUzAmNqbRBs",
             "type": "MOD",
             "slug": {
                 "curseforge": "octo-lib"
@@ -6216,27 +6215,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "OctoLib-FORGE-0.4.2+1.20.1.jar",
+                    "file_name": "OctoLib-FORGE-0.5.0.1+1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5644/693/OctoLib-FORGE-0.4.2+1.20.1.jar",
-                    "id": "5644693",
+                    "url": "https://edge.forgecdn.net/files/6274/623/OctoLib-FORGE-0.5.0.1+1.20.1.jar",
+                    "id": "6274623",
                     "parent_id": "916747",
                     "hashes": {
-                        "sha1": "d39a7e4d7ebd4e6f427f5c0958b7e2080ba02800",
-                        "md5": "1d54e1330f1f89a2544eeae005c3a4a6"
+                        "sha1": "9eab28baff36942e1c924489e34753df10f40208",
+                        "md5": "6b2fd012966b13a96ce4f68ae42eab8c"
                     },
-                    "required_dependencies": [
-                        "419699"
-                    ],
-                    "size": 401032,
-                    "date_published": "2024-08-19T18:20:15.213Z"
+                    "required_dependencies": [],
+                    "size": 424035,
+                    "date_published": "2025-03-07T11:54:51.647Z"
                 }
             ]
         },
@@ -6452,7 +6448,7 @@
             ]
         },
         {
-            "pakku_id": "1tUSPaevNWPBC3SG",
+            "pakku_id": "pWuY03R4IqCAxoQe",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -6467,25 +6463,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "particular-1.20.1-Forge-1.2.0.jar",
+                    "file_name": "particular-1.20.1-Forge-1.2.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6384/680/particular-1.20.1-Forge-1.2.0.jar",
-                    "id": "6384680",
+                    "url": "https://edge.forgecdn.net/files/6603/252/particular-1.20.1-Forge-1.2.4.jar",
+                    "id": "6603252",
                     "parent_id": "1219053",
                     "hashes": {
-                        "sha1": "fa2140c8231137222aad8c69e5276f65ee7b81f2",
-                        "md5": "e8130db1cc9236c1d98ba967120f3c7d"
+                        "sha1": "4dc0cfd572151816c939d2896ad8f13838cb7cf6",
+                        "md5": "ce29494f89ec662a19a954fa054ad49b"
                     },
                     "required_dependencies": [],
-                    "size": 413624,
-                    "date_published": "2025-04-04T17:06:23.443Z"
+                    "size": 421834,
+                    "date_published": "2025-05-31T23:14:51.347Z"
                 }
             ]
         },
@@ -7968,7 +7963,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "tfclunchbox-1.20.1-1.0.0.14.jar",
+                    "file_name": "tfclunchbox-1.20.1-1.0.0.22.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7977,18 +7972,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6675/72/tfclunchbox-1.20.1-1.0.0.20.jar",
-                    "id": "6675072",
+                    "url": "https://edge.forgecdn.net/files/6689/934/tfclunchbox-1.20.1-1.0.0.22.jar",
+                    "id": "6689934",
                     "parent_id": "1283445",
                     "hashes": {
-                        "sha1": "334167b4cc5ec81a917d168b6ec8a876f315298e",
-                        "md5": "3dc59cd3d685fe4f5d097ca4e66746f4"
+                        "sha1": "ad7ff4a0262d0b8ef3a10ca4dd6ee6923df51efa",
+                        "md5": "772963db97a0dbe87df81b2783185383"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 111379,
-                    "date_published": "2025-06-20T14:40:33.510Z"
+                    "size": 112101,
+                    "date_published": "2025-06-24T06:51:14.177Z"
                 }
             ]
         },
