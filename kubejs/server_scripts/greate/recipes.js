@@ -638,25 +638,4 @@ function registerGreateRecipes(event) {
 
 	// #endregion
 
-	// #region Cables
-	// TODO: Remove this when greate wire coating is configurable
-
-	event.forEachRecipe([{ type: 'gtceu:wire_coating' }], recipe => {
-		let r = JSON.parse(recipe.json)
-
-		let newRecipe = event.recipes.gtceu.assembler(recipe.getId())
-
-		let itemIns = [];
-		r.inputs.item.forEach(i => {
-			itemIns.push(`${i.content.count}x #${i.content.ingredient.tag}`);
-		})
-
-		newRecipe.itemInputs(itemIns);
-		newRecipe.inputFluids(Fluid.of(`${r.inputs.fluid[0].content.value[0].tag.replace(/forge/g, 'gtceu')}`, r.inputs.fluid[0].content.amount))
-		newRecipe.itemOutputs(r.outputs.item[0].content.ingredient.item);
-		newRecipe.EUt(r.tickInputs.eu[0].content)
-		newRecipe.duration(r.duration);
-	})
-
-	// #endregion
 }

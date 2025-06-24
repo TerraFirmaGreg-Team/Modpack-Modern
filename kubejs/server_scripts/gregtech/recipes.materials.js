@@ -312,19 +312,16 @@ function registerGTCEUMetalRecipes(event) {
 
 		// Macerator
 		let maceratorRecipe = event.recipes.gtceu.macerator(`macerate_poor_raw_${material.getName()}_ore_to_crushed_ore`)
+			.itemInputs(poorOreItem)
 			.category(GTRecipeCategories.ORE_CRUSHING)
 			.duration(400)
 			.EUt(2)
 
 		if (multiplier > 1) {
-			maceratorRecipe.itemInputs(poorOreItem)
 			maceratorRecipe.itemOutputs(crushedOreItem.copyWithCount(multiplier / 2))
 		}
 		else {
-			// TODO: Change this when Greate fixes its bug
-			//maceratorRecipe.chancedOutput(crushedOreItem, 5000, 750)
-			maceratorRecipe.itemInputs(poorOreItem.copyWithCount(2))
-			maceratorRecipe.itemOutputs(crushedOreItem.copyWithCount(1))
+			maceratorRecipe.chancedOutput(crushedOreItem, 5000, 750)
 		}
 		maceratorRecipe.chancedOutput(crushedOreItem.copyWithCount(1), 2500, 500)
 		maceratorRecipe.chancedOutput(crushedOreItem.copyWithCount(1), 1250, 250)
@@ -379,6 +376,8 @@ function registerGTCEUMetalRecipes(event) {
 			hammerRecipe.itemOutputs(ChemicalHelper.get(TagPrefix.gem, material, crushedOreItem.getCount()))
 		else
 			hammerRecipe.itemOutputs(crushedOreItem)
+
+		event.remove({ id: `greate:milling/integration/gtceu/macerator/macerate_raw_${material.getName()}_ore_to_crushed_ore` })
 
 		// Macerator
 		event.recipes.gtceu.macerator(`macerate_raw_${material.getName()}_ore_to_crushed_ore`)
