@@ -139,7 +139,7 @@ function registerGTCEUMetalRecipes(event) {
 
 			let matAmount = TagPrefix.block.getMaterialAmount(material) / GTValues.M;
 
-			if (!plateStack.isEmpty()) {
+			if (!plateStack.isEmpty() && !ingotStack.hasTag('c:hidden_from_recipe_viewers')) {
 
 				event.custom({
 					type: "createaddition:rolling",
@@ -149,7 +149,6 @@ function registerGTCEUMetalRecipes(event) {
 				}).id(`tfg:rolling/${material.getName()}_plate`)
 
 				if (!blockStack.isEmpty() && GTMaterials.Stone != material) {
-
 					// 9х Слиток -> Блок
 					event.recipes.createCompacting(blockStack, ingotStack.withCount(matAmount))
 						.heated()
@@ -158,7 +157,6 @@ function registerGTCEUMetalRecipes(event) {
 			}
 			else {
 				if (!blockStack.isEmpty()) {
-
 					// Блок из гемов -> 9 Пластин
 					event.recipes.createCutting(plateStack.withCount(matAmount).withChance(0.65), blockStack)
 						.id(`tfg:cutting/${material.getName()}_plate`)
@@ -192,7 +190,7 @@ function registerGTCEUMetalRecipes(event) {
 		const foilItem = ChemicalHelper.get(TagPrefix.foil, material, 4)
 		const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1)
 
-		if (plateItem != null && foilItem != null) {
+		if (plateItem != null && foilItem != null && !plateItem.hasTag('c:hidden_from_recipe_viewers')) {
 			event.custom({
 				type: "createaddition:rolling",
 				input: plateItem,
