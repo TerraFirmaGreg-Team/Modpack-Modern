@@ -17,6 +17,12 @@ const registerCreateDecoItemTags = (event) => {
 		event.add('tfg:metal_bars', `createdeco:${metalBars}_bars_overlay`)
 	});
 
+	event.add('createdeco:metal_trapdoors', 'createdeco:andesite_trapdoor')
+	event.add('createdeco:metal_trapdoors', 'createdeco:brass_trapdoor')
+	event.add('createdeco:metal_trapdoors', 'createdeco:copper_trapdoor')
+	event.add('createdeco:metal_trapdoors', 'createdeco:industrial_iron_trapdoor')
+	event.add('createdeco:metal_trapdoors', 'createdeco:zinc_trapdoor')
+
 	event.add("createdeco:internal/plates/iron_plates", "#forge:plates/wrought_iron")
 	event.add("createdeco:internal/plates/copper_plates", "#forge:plates/copper")
 	event.add("createdeco:internal/plates/brass_plates", "#forge:plates/brass")

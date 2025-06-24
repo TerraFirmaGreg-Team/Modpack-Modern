@@ -198,7 +198,7 @@ ServerEvents.recipes(event => {
 	registerChiselAndBitsRecipes(event)
 	registerComfortsRecipes(event);
 	registerComputerCraftRecipes(event)
-	registerCccBridgeRecipes(event)
+	//registerCccBridgeRecipes(event)
 	registerConstructionwandRecipes(event)
 	registerCreateRecipes(event)
 	registerCreateAdditionsRecipes(event)

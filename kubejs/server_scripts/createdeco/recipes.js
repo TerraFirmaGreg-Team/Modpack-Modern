@@ -47,6 +47,7 @@ const registerCreatedecoRecipes = (event) => {
 	event.remove({ id: 'createdeco:industrial_iron_bars' })
 	event.remove({ id: 'createdeco:zinc_bars_overlay' })
 	event.remove({ id: 'createdeco:zinc_bars' })
+	event.remove({ id: 'createdeco:industrial_iron_block' })
 	event.remove({ id: 'gtceu:assembler/bricks' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/tin_alloy' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/brass' })
@@ -174,6 +175,9 @@ const registerCreatedecoRecipes = (event) => {
 	});
 	//#endregion
 
+	event.stonecutting('4x createdeco:andesite_mesh_fence', '#forge:ingots/tin_alloy')
+	event.stonecutting('4x createdeco:iron_mesh_fence', '#forge:ingots/wrought_iron')
+
 	// #region Bars + Doors
 
 	const metalThings = [
@@ -223,6 +227,15 @@ const registerCreatedecoRecipes = (event) => {
 			.duration(100)
 			.EUt(GTValues.VA[GTValues.LV])
 			.circuit(13)
+
+		event.shaped(`4x createdeco:${bar.metal}_facade`, [
+			' A ',
+			'ABA',
+			' A '
+		], {
+			A: `#forge:rods/${bar.material}`,
+			B: `createdeco:${bar.metal}_mesh_fence`
+		}).id(`tfg:shaped/createdeco_${bar.metal}_facade`)
 	})
 
 	// #endregion
@@ -273,7 +286,7 @@ const registerCreatedecoRecipes = (event) => {
 		.duration(GTMaterials.Zinc.getMass())
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.tfc.anvil(`createdeco:andesite_trapdoor`, `#forge:ingots/iron_alloy`, ['shrink_last', 'draw_second_last', 'draw_third_last'])
+	event.recipes.tfc.anvil(`createdeco:andesite_trapdoor`, `#forge:ingots/tin_alloy`, ['shrink_last', 'draw_second_last', 'draw_third_last'])
 		.tier(3).id(`createdeco:anvil/andesite_trapdoor`)
 
 	event.recipes.gtceu.alloy_smelter(`tfg:cast_tin_alloy_trapdoor`)

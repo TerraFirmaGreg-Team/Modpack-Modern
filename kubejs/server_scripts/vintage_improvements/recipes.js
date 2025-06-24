@@ -294,7 +294,14 @@ function registerVintageImprovementsRecipes(event) {
 	forEachMaterial(material => {
 
 		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
-		if (ingotItem == null || ingotItem.hasTag('c:hidden_from_recipe_viewers'))
+		if (ingotItem != null && ingotItem.hasTag('c:hidden_from_recipe_viewers'))
+			return;
+
+		const gemItem = ChemicalHelper.get(TagPrefix.gem, material, 1);
+		if (gemItem != null && gemItem.hasTag('c:hidden_from_recipe_viewers'))
+			return;
+
+		if (ingotItem == null || gemItem == null)
 			return;
 
 		// #region Coiling

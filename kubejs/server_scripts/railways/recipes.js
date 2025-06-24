@@ -161,7 +161,7 @@ const registerRailWaysRecipes = (event) => {
 	}).id('tfg:railways/shaped/track_switch_brass')
 
 	event.recipes.gtceu.assembler('tfg:railways/track_switch_brass')
-		.itemInputs('minecraft:lever', '2x #forge:bolts/wrought_iron', '2x #tfg:small_cogwheels', 'create:brass_casing')
+		.itemInputs('minecraft:lever', '2x #forge:bolts/brass', '2x #tfg:small_cogwheels', 'create:brass_casing')
 		.circuit(3)
 		.itemOutputs('railways:track_switch_brass')
 		.duration(200)

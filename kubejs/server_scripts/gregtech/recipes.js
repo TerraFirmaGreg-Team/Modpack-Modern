@@ -1183,26 +1183,22 @@ const registerGTCEURecipes = (event) => {
 	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound' });
 	event.remove({ id: 'gtceu:autoclave/autoclave_dust_rose_quartz_water'})
 	event.remove({ id: 'gtceu:autoclave/autoclave_dust_rose_quartz_distilled'})
-	generateMixerRecipe(event, ['gtceu:nether_quartz_dust', '8x minecraft:redstone'], [], '9x gtceu:rose_quartz_dust', 2, [], 180, 6, 64, 'rose_quartz_dust_mixing')
-	generateMixerRecipe(event, ['gtceu:tiny_nether_quartz_dust', '8x gtceu:tiny_redstone_dust'], [], 'gtceu:rose_quartz_dust', 2, [], 20, 6, 64, 'tiny_rose_quartz_dust_mixing')
-    event.recipes.gtceu.autoclave("autoclave_dust_rose_quartz_ice")
+
+	generateMixerRecipe(event, ['gtceu:nether_quartz_dust', '8x minecraft:redstone'], [], '9x gtceu:rose_quartz_dust', 2, [], 180, 60, 64, 'rose_quartz_dust_mixing')
+	generateMixerRecipe(event, ['gtceu:tiny_nether_quartz_dust', '8x gtceu:tiny_redstone_dust'], [], 'gtceu:rose_quartz_dust', 2, [], 20, 60, 64, 'tiny_rose_quartz_dust_mixing')
+    
+	event.recipes.gtceu.autoclave("autoclave_dust_rose_quartz_ice")
         .itemInputs("gtceu:rose_quartz_dust")
         .inputFluids(Fluid.of("gtceu:ice", 144))
         .itemOutputs("gtceu:rose_quartz_gem")
         .duration(2000)
         .EUt(120)
+
 	event.recipes.gtceu.electrolyzer('electrolyze_rose_quartz_dust')
 		.itemInputs('9x gtceu:rose_quartz_dust')
 		.itemOutputs('1x gtceu:nether_quartz_dust', '8x minecraft:redstone')
-		.duration(540)
-		.EUt(24)
-		.circuit(1)
-	event.recipes.gtceu.electrolyzer('electrolyze_rose_quartz_dust_to_tiny')
-		.itemInputs('gtceu:rose_quartz_dust')
-		.itemOutputs('1x gtceu:tiny_nether_quartz_dust', '8x gtceu:tiny_redstone_dust')
-		.duration(60)
-		.EUt(24)
-		.circuit(2)
+		.duration(7 * 20)
+		.EUt(60)
     //#endregion
 
 	// TODO: Greate again...

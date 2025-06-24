@@ -28,6 +28,7 @@ function removeGreateRecipes(event) {
 
 	event.remove({ id: 'greate:splashing/dough' })
 	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound' })
+	event.remove({ id: 'greate:mixing/integration/create/mixing/tea' })
 
 	event.remove({ mod: 'greate', type: 'create:deploying' });
 	event.remove({ mod: 'greate', type: 'create:sequenced_assembly' });

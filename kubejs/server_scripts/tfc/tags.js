@@ -295,6 +295,10 @@ const registerTFCItemTags = (event) => {
 	event.add('minecraft:piglin_loved', 'tfc:ore/poor_native_gold')
 	event.add('minecraft:piglin_loved', 'tfc:ore/normal_native_gold')
 	event.add('minecraft:piglin_loved', 'tfc:ore/rich_native_gold')
+
+	// Bells
+	event.add('tfc:bells', 'tfc:bronze_bell')
+	event.add('tfc:bells', 'tfc:brass_bell')
 }
 
 const registerTFCBlockTags = (event) => {

@@ -64,4 +64,6 @@ const registerCreateConnectedRecipes = (event) => {
 		D: 'minecraft:redstone_torch',
 		E: '#forge:stone'
 	}).id('create_connected:crafting/kinetics/sequenced_pulse_generator')
+
+	event.replaceInput({ id: 'create_connected:crafting/kinetics/redstone_link_wildcard' }, 'create:transmitter', 'minecraft:redstone_torch')
 }

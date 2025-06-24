@@ -116,6 +116,8 @@ const registerCreateFluidTags = (event) => {
 	// Добавляем тег для скрытия в EMI
 	event.add('c:hidden_from_recipe_viewers', 'create:chocolate')
 	event.add('c:hidden_from_recipe_viewers', 'create:honey')
+	event.add('c:hidden_from_recipe_viewers', 'create:builders_tea')
+	event.add('c:hidden_from_recipe_viewers', 'create:uncraftable_potion')
 
 	// Disable bulk blasting
 	event.removeAll('create:fan_processing_catalysts/blasting')

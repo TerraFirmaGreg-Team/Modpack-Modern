@@ -268,7 +268,7 @@ const registerGTCEuMaterialModification = (event) => {
 	// Change byproducts so you can't get certus from normal quartzite
 	GTMaterials.Quartzite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.NetherQuartz, GTMaterials.Barite, GTMaterials.NetherQuartz);
 	GTMaterials.CertusQuartz.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.CertusQuartz, GTMaterials.Quartzite, GTMaterials.CertusQuartz);
-
+	
 	// Color Adjustments
 	GTMaterials.BismuthBronze.setMaterialARGB(0x5A966E)
 	GTMaterials.BismuthBronze.setMaterialSecondaryARGB(0x203E2A)
@@ -324,5 +324,6 @@ const registerGTCEuMaterialModification = (event) => {
 
 	let rose_quartz = GTCEuAPI.materialManager.getMaterial('greate:rose_quartz');
 	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
+	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
 	rose_quartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
 }

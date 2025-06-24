@@ -39,4 +39,5 @@ global.CREATE_ADDITIONS_DISABLED_ITEMS = [
     'createaddition:copper_spool', 
     'createaddition:festive_spool', 
     'createaddition:small_light_connector',
+    'createaddition:electrum_block'
 ];
