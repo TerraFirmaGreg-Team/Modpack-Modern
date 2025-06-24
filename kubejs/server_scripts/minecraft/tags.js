@@ -60,6 +60,7 @@ const registerMinecraftItemTags = (event) => {
 
     event.remove('forge:gems', 'minecraft:charcoal')
     event.remove('forge:gems', 'minecraft:coal')
+    event.remove('forge:gems', 'minecraft:flint')
 
     event.add('tfc:compost_greens_high', 'minecraft:red_mushroom_block')
     event.add('tfc:compost_greens_high', 'minecraft:brown_mushroom_block')
