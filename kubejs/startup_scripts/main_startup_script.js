@@ -6,13 +6,15 @@
 StartupEvents.registry('item', event => {
     registerGTCEuItems(event)
     registerTFGItems(event)
+    registerTFGPlants(event)
 })
 
 /**
  * Событие регистрации блоков.
  */
 StartupEvents.registry('block', event => {
-    registerTFGBlocks(event)    
+    registerTFGBlocks(event)
+    registerTFGCrops(event)
 })
 
 /**

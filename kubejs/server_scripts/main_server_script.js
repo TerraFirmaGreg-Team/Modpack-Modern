@@ -150,6 +150,7 @@ TFCEvents.data(event => {
 	registerTFCDataForTFCLunchbox(event)
 	registerTFCDataForTFG(event)
 	registerTFCDataForWaterFlasks(event)
+	registerTFCDATAForClimate_range(event)
 })
 
 /**
