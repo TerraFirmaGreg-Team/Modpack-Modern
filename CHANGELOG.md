@@ -31,6 +31,7 @@
 - Removed gems tag from flint @Pyritie
 - Updated texture for aqueous accumulator (#1168) @Redeix
 - Kaolin Klayzes now also drop blood lilies @Pyritie
+- Crushing wheels need a machine hull to craft now @Pyritie
 ### Bug fixes
 - Fixed a mud hut structure that had deprecated zinc ingots @Pyritie
 - The electric greenhouse now also allows loose rocks and plants inside, since TFC spawns them on any grass block @Pyritie
@@ -40,6 +41,8 @@
 - Fixed some other steel/colored steel items being extractable in LV (#1212) @Pyritie
 - Fixed polished/cut migmatite recipe conflict (#1153) @JeanRdSz
 - Fixed some bugs with the lunchbox (#1200) @Thomasx0
+- Greate millstones/crushing wheels now give the correct amount of byproducts
+- Greate bulk washing now correctly works on depots and belts
 
 ## [0.9.11] - 13.06.2025
 ### New features

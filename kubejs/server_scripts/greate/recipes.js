@@ -252,7 +252,7 @@ function registerGreateRecipes(event) {
 	], {
 		A: '#forge:plates/tin_alloy',
 		B: '#forge:storage_blocks/wrought_iron',
-		C: 'greate:steel_shaft',
+		C: 'gtceu:lv_machine_hull',
 	}).id('greate:mechanical_crafting/steel_crushing_wheel')
 
 	event.recipes.createMechanicalCrafting('2x greate:aluminium_crushing_wheel', [
@@ -264,7 +264,7 @@ function registerGreateRecipes(event) {
 	], {
 		A: '#forge:plates/vanadium_steel',
 		B: '#forge:storage_blocks/steel',
-		C: 'greate:aluminium_shaft',
+		C: 'gtceu:mv_machine_hull',
 	}).id('greate:mechanical_crafting/aluminium_crushing_wheel')
 
 	event.recipes.createMechanicalCrafting('2x greate:stainless_steel_crushing_wheel', [
@@ -276,7 +276,7 @@ function registerGreateRecipes(event) {
 	], {
 		A: '#forge:plates/blue_alloy',
 		B: '#forge:storage_blocks/aluminium',
-		C: 'greate:stainless_steel_shaft',
+		C: 'gtceu:hv_machine_hull',
 	}).id('greate:mechanical_crafting/stainless_steel_crushing_wheel')
 
 	event.recipes.createMechanicalCrafting('2x greate:titanium_crushing_wheel', [
@@ -288,7 +288,7 @@ function registerGreateRecipes(event) {
 	], {
 		A: '#forge:plates/ultimet',
 		B: '#forge:storage_blocks/stainless_steel',
-		C: 'greate:titanium_shaft',
+		C: 'gtceu:ev_machine_hull',
 	}).id('greate:mechanical_crafting/titanium_crushing_wheel')
 
 	// #endregion
