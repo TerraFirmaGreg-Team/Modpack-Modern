@@ -193,7 +193,7 @@ const registerAdAstraRecipes = (event) => {
 		'ACA',
 		'AAA'
 	], {
-		A: '#forge:foils/polyphenylene',
+		A: '#forge:foils/polyphenylene_sulfide',
 		B: '#forge:tiny_fluid_pipes/polyethylene',
 		C: 'gtceu:aluminium_fluid_cell'
 	}).id('tfg:gas_tank')
@@ -203,7 +203,7 @@ const registerAdAstraRecipes = (event) => {
 		'ACA',
 		'AAA'
 	], {
-		A: '#forge:sheets/polyphenylene',
+		A: '#forge:sheets/polyphenylene_sulfide',
 		B: '#forge:small_fluid_pipes/polyethylene',
 		C: 'gtceu:stainless_steel_fluid_cell'
 	}).id('tfg:large_gas_tank')
