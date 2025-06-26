@@ -110,7 +110,7 @@
 				"tfc:rock_knapping/javelin_head_igneous_extrusive",
 				"tfc:rock_knapping/javelin_head_igneous_intrusive"
 			],
-			"text": "Нарешті, $(thing)Дротик$() можна використовувати як примітивну зброю, здатну до метання в цілі або як $(l:mechanics/damage_types)колючу$() зброю."
+			"text": "Нарешті, $(thing)Спис$() можна використовувати як примітивну зброю, здатну до метання в цілі або як $(l:mechanics/damage_types)колючу$() зброю."
 		}
 	],
 	"read_by_default": true,

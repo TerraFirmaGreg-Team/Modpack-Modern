@@ -1,0 +1,18 @@
+{
+	"name": "Кельма",
+	"icon": "tfg:trowel",
+	"category": "tfc:mechanics",
+	"priority": true,
+	"pages": [
+		{
+			"type": "patchouli:crafting",
+			"title": "Кельма",
+			"recipe": "tfg:shaped/trowel",
+			"text": "$(item)Кельма$() дозволяє будівельнику розміщувати випадкові блоки з гарячої панелі при натисканні Пкм на поверхню.$(br2)Кельми також мають вбудовану сумісність із модом $(item)Roads and Roofs$() — тобто вони можуть випадково розміщувати заповнювачі, як-от цеглу чи бруківку."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Натхнено інструментом кельми з $(item)Quark$() — моду від Vazkii"
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"name": "Рибальські сітки",
+	"icon": "tfg:fishing_net/brass",
+	"category": "tfc:mechanics",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "Рибальські сітки",
+			"item": {
+				"tag": "forge:tools/fishing_nets"
+			},
+			"text": "Втомився ганятися за рибою з списом? Або втрачати слизький улов під час $(l:mechanics/fishing)Риболовлі$()? Створи $(thing)Рибальську сітку$(), щоб просто зачерпнути собі вечерю.$(br)Щоб скористатися сіткою — клацни Пкм по рибі, щоб упіймати її прямо в інвентар. Усі сітки різних рівнів працюють однаково, але мають різну міцність."
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "Дерев'яна Рибальська Сітка",
+			"recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
+			"text": "Базова $(item)дерев’яна рибальська сітка$()."
+		}
+	]
+}

@@ -22,7 +22,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Якщо метал гарячий, коли його додають у доменну піч, то для досягнення блискучої білизни знадобиться менше часу. Подумайте про нагрівання металу в $(l:tfc:mechanics/charcoal_forge)Вугільній кузні$() перед тим, як покласти його в уже гарячу піч, щоб заощадити час, особливо в невеликих доменних печах, які обробляють меншу кількість металу за один раз."
+			"text": "If the metal is hot when added into the blast furnace, it will take less time to reach brilliant white. Consider heating your metal in a $(l:tfc:mechanics/charcoal_forge)Charcoal Forge$() before putting it into an already-hot furnace to save time, especially with smaller blast furnaces that process less at a time."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -32,7 +32,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Ви можете відкачувати рідину безпосередньо з доменної печі за допомогою функції Create $(item)Mechanical Pump$(). Перекачуйте рідину на $(l:tfc:tfcchannelcasting/channel_casting)Форма для виливку$() і виймайте злитки за допомогою лійки або жолоба: Легка автоматизація!$(br2)Ви також можете автоматизувати роботу з сильфоном за допомогою $(item)Розгортальника$()! Тільки будьте обережні, оскільки використання сильфонів надмірно споживає більше палива і швидше ламає вашу $(thing)фурму$().$(br2)Ви можете обробляти отриманий $(item)Чавун$() і $(item)Високовуглецеву Сталь$() за допомогою $(thing)Ковальського Молота$()."
+			"text": "You can pump liquid directly out of the blast furnace using a Create $(item)Mechanical Pump$(). Pump into a $(l:tfc:tfcchannelcasting/channel_casting)Mold Table$() and extract the ingots with a hopper or chute: Easy automation!$(br2)You can automate the bellows with a $(item)Deployer$() too! Just be careful, as using the bellows excessively consumes more fuel and breaks your $(thing)tuyere$() faster.$(br2)You can process the resulting $(item)Pig Iron$() and $(item)High Carbon Steel$() in a $(thing)Forge Hammer$()."
 		},
 		{
 			"type": "patchouli:text",
