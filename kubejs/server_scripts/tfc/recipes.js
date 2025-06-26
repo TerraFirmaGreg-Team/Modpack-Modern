@@ -132,12 +132,12 @@ const registerTFCRecipes = (event) => {
 		.id('tfg:smelting/lime')
 
 	// Kaolinite Clay
-	event.smelting('tfc:powder/kaolinite', 'tfc:kaolin_clay')
+	event.smelting('tfc:powder/kaolinite', '2x tfc:kaolin_clay')
 		.id('tfg:smelting/kaolinite_clay')
 
-	// Fire Brick
-	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_brick')
-		.itemInputs('#forge:dusts/graphite', 'tfc:kaolin_clay')
+	// Fire Clay
+	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_clay')
+		.itemInputs('#forge:dusts/graphite', '4x tfc:kaolin_clay')
 		.itemOutputs('tfc:fire_clay')
 		.duration(600)
 		.EUt(GTValues.VA[GTValues.ULV])
