@@ -11,6 +11,8 @@ function registerTFGEntityTypes(event) {
 		.setDeathSound("minecraft:entity.rabbit.death")
 		.setAmbientSound("minecraft:entity.rabbit.ambient")
 		.setHurtSound(context => "minecraft:entity.rabbit.hurt")
+		.canJump(true)
+		.setBlockJumpFactor(entity => 0.42)
 		// these are the same as tfc rabbits
 		//.configs(config => {
 		//	config.gestationDays(19)
