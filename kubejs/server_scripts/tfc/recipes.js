@@ -138,7 +138,7 @@ const registerTFCRecipes = (event) => {
 	// Fire Clay
 	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_clay')
 		.itemInputs('#forge:dusts/graphite', '4x tfc:kaolin_clay')
-		.itemOutputs('tfc:fire_clay')
+		.itemOutputs('2x tfc:fire_clay')
 		.duration(600)
 		.EUt(GTValues.VA[GTValues.ULV])
 
