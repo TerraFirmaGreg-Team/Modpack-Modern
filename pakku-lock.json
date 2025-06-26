@@ -95,49 +95,6 @@
             ]
         },
         {
-            "pakku_id": "G1s0TjQfR5uVCf2Y",
-            "pakku_links": [
-                "hEH6ly65CC6Sw1pf",
-                "FnKweRrkUQZW32bO",
-                "0IQGejKaqyQTLzbL"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ae2-things-forge"
-            },
-            "name": {
-                "curseforge": "AE2 Things [Forge]"
-            },
-            "id": {
-                "curseforge": "609977"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "AE2-Things-1.2.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4616/683/AE2-Things-1.2.1.jar",
-                    "id": "4616683",
-                    "parent_id": "609977",
-                    "hashes": {
-                        "sha1": "9862284af52931df937980f199a401bfe6651587",
-                        "md5": "6a5134e817afc15a227b644f4a663a8a"
-                    },
-                    "required_dependencies": [
-                        "223794"
-                    ],
-                    "size": 70813,
-                    "date_published": "2023-06-29T22:04:08.630Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "5bFLocOstkf9AKyG",
             "type": "MOD",
             "slug": {
