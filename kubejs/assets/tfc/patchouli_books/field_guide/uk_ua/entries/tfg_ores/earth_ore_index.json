@@ -52,5 +52,6 @@
       "text": "$(li)Хроміт: $(l:tfg_ores/earth_vein_index#deep_magnetite)33%$(/l), $(l:tfg_ores/earth_vein_index#normal_magnetite)4%$(/l)$()$(li)Цеоліт: $(l:tfg_ores/earth_vein_index#surface_copper)16%$(/l)$()$(li)Червоний гранат: $(l:tfg_ores/earth_vein_index#deep_garnet_amethyst)5%$(/l), $(l:tfg_ores/earth_vein_index#deep_garnet_opal)5%$(/l)$()$(li)Шеєліт: $(l:tfg_ores/earth_vein_index#deep_scheelite)45%$(/l)$()$(li)Шелдонітн: $(l:tfg_ores/earth_vein_index#deep_sheldonite)38%$(/l)$()",
       "type": "patchouli:text"
     }
-  ]
+  ],
+  "sortnum": 0
 }

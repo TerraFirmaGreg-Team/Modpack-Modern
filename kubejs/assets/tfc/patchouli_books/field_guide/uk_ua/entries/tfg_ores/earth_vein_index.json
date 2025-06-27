@@ -3746,5 +3746,6 @@
       "text": "$(thing)Відсоток$(): 7%$(br)$(thing)Розплавляється в$(): Платини$(br)$(thing)Формула$(): Pt",
       "type": "patchouli:multiblock"
     }
-  ]
+  ],
+  "sortnum": 1
 }

@@ -52,5 +52,6 @@
       "text": "$(li)Цеолит: $(l:tfg_ores/earth_vein_index#surface_copper)16%$(/l)$()$(li)Ционит: $(l:tfg_ores/earth_vein_index#normal_mica)35%$(/l)$()$(li)Шеелит: $(l:tfg_ores/earth_vein_index#deep_scheelite)45%$(/l)$()$(li)Шелдонит: $(l:tfg_ores/earth_vein_index#deep_sheldonite)38%$(/l)$()$(li)Электротин: $(l:tfg_ores/earth_vein_index#normal_saltpeter)25%$(/l)$()",
       "type": "patchouli:text"
     }
-  ]
+  ],
+  "sortnum": 0
 }
