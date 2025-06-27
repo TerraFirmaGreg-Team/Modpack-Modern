@@ -527,6 +527,6 @@ function registerTFGMiscellaneousRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:butane', 4000))
         .outputFluids(Fluid.of('tfg:isobutane', 1000), Fluid.of('gtceu:lpg', 3000))
         .circuit(4)
-        .duration(1400)
-        .EUt(GTValues.VA[GTValues.EV])
+        .duration(2400)
+        .EUt(GTValues.VA[GTValues.HV])
 }
