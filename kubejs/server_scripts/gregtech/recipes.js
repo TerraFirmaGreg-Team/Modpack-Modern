@@ -132,6 +132,10 @@ const registerGTCEURecipes = (event) => {
 		.inputs('#minecraft:planks', TFC.fluidStackIngredient('#forge:creosote', 100))
 		.id('tfg:barrel/treated_wood_planks')
 
+	event.recipes.tfc.barrel_sealed(2000)
+		.outputItem('gtceu:treated_wood_dust')
+		.inputs('tfg:chipboard_composite', TFC.fluidStackIngredient('#forge:creosote', 50))
+		.id('tfg:barrel/treated_chipboard_composite')
 	//#endregion
 
 	//#region Выход: Капля резины
@@ -397,13 +401,6 @@ const registerGTCEURecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:nether_air', 1000))
 		.duration(700)
 		.EUt(2720)
-
-	// Creosote-Treated Wood Planks -> Treated Wood Pulp
-	event.recipes.gtceu.macerator('tfg:gtceu/macerate_treated_wood_planks')
-		.itemInputs('gtceu:treated_wood_planks')
-		.itemOutputs('gtceu:treated_wood_dust')
-		.duration(120)
-		.EUt(4)
 
 	// Empty Wooden Form
 	event.shaped('gtceu:empty_wooden_form', [
