@@ -30,10 +30,7 @@
 
 ---
 
-## Survival Modpack as It Should've Been
-*(Do we want to keep this tagline? it's a reference to TFC's, but it feels a little too pompous I think?)*
-
-**TerraFirmaGreg-Modern** is a survival and tech modpack for Minecraft 1.20.1 Forge.
+## **TerraFirmaGreg-Modern** is a deep survival and tech modpack for Minecraft 1.20.1, seamlessly fusing together TerraFirmaCraft and GregTech.
 Embark on a technological journey, starting by banging rocks together, taming an untouched wilderness into an industrial wonderland, and ending with control over the very stars.
 
 Are you looking for a longer modpack where every step feels rewarding, and you're constantly building upon previous technologies in a way that feels seamless and natural? Do you want a modpack where every mod is carefully integrated instead of just thrown in? Do you dislike magic mods, or want to try a tech modpack that feels less "minecrafty" with its automation? Or do you just want to try out GregTech without losing years of your life? Then TerraFirmaGreg may be the modpack for you!
