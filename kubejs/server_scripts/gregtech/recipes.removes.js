@@ -664,4 +664,9 @@ function removeGTCEURecipes(event) {
 	// Remove vanilla Eye of Ender
 
 	event.remove({ id: 'minecraft:ender_eye' })
+
+	// Remove old treated plank and wood plank recipe
+
+	event.remove({ id: 'gtceu:compressor/compress_plate_dust_wood' })
+	event.remove({ id: 'gtceu:compressor/compress_plate_dust_treated_wood'})
 }

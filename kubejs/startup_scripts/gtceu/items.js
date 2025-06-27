@@ -32,4 +32,6 @@ const registerGTCEuItems = (event) => {
     event.create('tfg:uhv_universal_circuit')
     .translationKey('item.uhv_universal_circuit')
 
+    event.create('tfg:chipboard_composite')
+    .translationKey('item.chipboard_composite')
 }
