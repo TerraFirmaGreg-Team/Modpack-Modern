@@ -53,7 +53,7 @@ const registerGTCEUItemTags = (event) => {
 	//#endregion
 
 	event.remove('minecraft:planks', 'gtceu:treated_wood_planks')
-	event.remove('minecraft:planks', 'gtceu:treated_wood_plank')
+	event.remove('minecraft:planks', 'gtceu:treated_wood_plate')
 
 	event.add('tfg:sugars', 'minecraft:sugar')
 	event.add('tfg:sugars', 'afc:birch_sugar')
