@@ -7,10 +7,10 @@
   </a>
   <br/>
   <a href="https://discord.gg/AEaCzCTUwQ">
-    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/discord_logo.png?raw=true" alt="Join our Discord" height="50"/>
+    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/button/discord_logo.png?raw=true" alt="Join our Discord" height="50"/>
   </a>
   <a href="https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-modern">
-    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/curseforge_logo.png?raw=true" alt="Available on CurseForge" height="50"/>
+    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/button/curseforge_logo.png?raw=true" alt="Available on CurseForge" height="50"/>
   </a>
   <br/>
   <p align="center">
@@ -26,7 +26,7 @@
 
 <br/>
 
-![Logo Large](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo_large.png?raw=true)
+![Logo Large](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/title/large.png?raw=true)
 
 ---
 

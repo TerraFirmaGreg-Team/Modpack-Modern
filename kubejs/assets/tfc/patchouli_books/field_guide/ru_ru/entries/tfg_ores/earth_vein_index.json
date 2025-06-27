@@ -3746,5 +3746,6 @@
       "text": "$(thing)Процент руды$(): 7%$(br)$(thing)Плавится в$(): Платина$(br)$(thing)Формула$(): Pt",
       "type": "patchouli:multiblock"
     }
-  ]
+  ],
+  "sortnum": 1
 }

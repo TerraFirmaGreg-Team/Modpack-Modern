@@ -37,5 +37,6 @@
       "text": "$(li)Спесартін: $(l:tfg_ores/moon_vein_index#moon_manganese)25%$(/l)$()$(li)Сфалерит: $(l:tfg_ores/moon_vein_index#moon_sphalerite)50%$(/l)$()$(li)Тальк: $(l:tfg_ores/moon_vein_index#moon_lubricant)20%$(/l), $(l:tfg_ores/moon_vein_index#moon_saltpeter)12%$(/l)$()$(li)Танталіт: $(l:tfg_ores/moon_vein_index#moon_pyrolusite)14%$(/l), $(l:tfg_ores/moon_vein_index#moon_manganese)12%$(/l)$()$(li)Топаз: $(l:tfg_ores/moon_vein_index#moon_topaz)25%$(/l)$()$(li)Торій: $(l:tfg_ores/moon_vein_index#moon_beryllium)0%$(/l)$()$(li)Трикальційфосфат: $(l:tfg_ores/moon_vein_index#moon_apatite)33%$(/l)$()$(li)Трона: $(l:tfg_ores/moon_vein_index#moon_lubricant)10%$(/l)$()$(li)Халькоцит: $(l:tfg_ores/moon_vein_index#moon_topaz)25%$(/l)$()$(li)Хроміт: $(l:tfg_ores/moon_vein_index#moon_magnetite)40%$(/l)$()$(li)Шеєліт: $(l:tfg_ores/moon_vein_index#moon_scheelite)40%$(/l)$()$(li)Шелдонітн: $(l:tfg_ores/moon_vein_index#moon_sheldonite)25%$(/l)$()",
       "type": "patchouli:text"
     }
-  ]
+  ],
+  "sortnum": 4
 }

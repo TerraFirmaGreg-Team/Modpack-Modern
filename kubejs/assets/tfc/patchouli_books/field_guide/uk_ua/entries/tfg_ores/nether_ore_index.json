@@ -52,5 +52,6 @@
       "text": "$(li)Шелдонітн: $(l:tfg_ores/nether_vein_index#nether_sheldonite)29%$(/l)$()",
       "type": "patchouli:text"
     }
-  ]
+  ],
+  "sortnum": 2
 }
