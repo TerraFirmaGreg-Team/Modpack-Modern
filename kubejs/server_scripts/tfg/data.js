@@ -5,6 +5,7 @@ function registerTFCDataForTFG(event) {
 	registerTFGItemSize(event);
 	registerTFGSupportData(event);
 	registerTFGFoodData(event);
+	registerTFGFauna(event);
 }
 
 
@@ -122,4 +123,9 @@ const registerTFGFoodData = (event) => {
 	event.foodItem('tfg:food/meal_bag', food => {
 		food.type('dynamic')
 	})
+}
+
+const registerTFGFauna = (event) => {
+
+	event.fauna(climate => { }, fauna => { fauna.chance(0) }, 'tfg:moon_rabbit')
 }

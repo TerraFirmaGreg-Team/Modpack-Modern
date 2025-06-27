@@ -95,49 +95,6 @@
             ]
         },
         {
-            "pakku_id": "G1s0TjQfR5uVCf2Y",
-            "pakku_links": [
-                "hEH6ly65CC6Sw1pf",
-                "FnKweRrkUQZW32bO",
-                "0IQGejKaqyQTLzbL"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ae2-things-forge"
-            },
-            "name": {
-                "curseforge": "AE2 Things [Forge]"
-            },
-            "id": {
-                "curseforge": "609977"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "AE2-Things-1.2.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4616/683/AE2-Things-1.2.1.jar",
-                    "id": "4616683",
-                    "parent_id": "609977",
-                    "hashes": {
-                        "sha1": "9862284af52931df937980f199a401bfe6651587",
-                        "md5": "6a5134e817afc15a227b644f4a663a8a"
-                    },
-                    "required_dependencies": [
-                        "223794"
-                    ],
-                    "size": 70813,
-                    "date_published": "2023-06-29T22:04:08.630Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "5bFLocOstkf9AKyG",
             "type": "MOD",
             "slug": {
@@ -2394,18 +2351,18 @@
                         "forge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/6685/435/Steam_Rails-1.6.11-alpha+forge-mc1.20.1.jar",
-                    "id": "6685435",
+                    "url": "https://edge.forgecdn.net/files/6688/860/Steam_Rails-1.6.11-alpha+forge-mc1.20.1.jar",
+                    "id": "6688860",
                     "parent_id": "688231",
                     "hashes": {
-                        "sha1": "9addc6a5d1d83136eba3b8cc4458f8ee7fdca4d0",
-                        "md5": "edcf8946c2867ccb25ef7c0798ffe845"
+                        "sha1": "22744c2e0c9b7f6b238de7b8cbd90fe1ed6be559",
+                        "md5": "10a30be6956c72fa4769d41580527e84"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 10102018,
-                    "date_published": "2025-06-23T01:55:07.230Z"
+                    "size": 10111314,
+                    "date_published": "2025-06-23T21:54:57.917Z"
                 }
             ]
         },
@@ -3112,6 +3069,50 @@
                     "required_dependencies": [],
                     "size": 472668,
                     "date_published": "2025-06-20T15:45:23.413Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "yUMf5nnDIziISWPH",
+            "pakku_links": [
+                "FOswt0O8bKv2R2Nv",
+                "9BKEvabQWNVcGwsX"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "entityjs"
+            },
+            "name": {
+                "curseforge": "EntityJS"
+            },
+            "id": {
+                "curseforge": "967617"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "entityjs-0.5.6-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6675/891/entityjs-0.5.6-1.20.1.jar",
+                    "id": "6675891",
+                    "parent_id": "967617",
+                    "hashes": {
+                        "sha1": "f46aa4f51f5a2f1c7dd2c568e865f3983d5a560a",
+                        "md5": "034a696032897fcc699d996da28d05f0"
+                    },
+                    "required_dependencies": [
+                        "388172",
+                        "238086"
+                    ],
+                    "size": 2270697,
+                    "date_published": "2025-06-20T18:48:43.203Z"
                 }
             ]
         },

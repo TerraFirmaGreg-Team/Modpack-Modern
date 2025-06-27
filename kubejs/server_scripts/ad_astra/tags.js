@@ -245,4 +245,11 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_moon_sand')
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_white_sand')
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_black_sand')
+
+	event.add('tfg:venus_delta_surface_features', 'tfg:venus/surface/geyser_source_patch')
+	event.add('tfg:venus_delta_surface_features', 'tfg:venus/surface/stromatolite_cluster_patch')
+	event.add('tfg:venus_delta_surface_features', 'tfg:venus/surface/stromatolite_tower')
+
+	event.add('tfg:venus_delta_terrain_features', 'tfg:venus/terrain/hot_spring_delta')
+	event.add('tfg:venus_delta_terrain_features', 'tfg:venus/terrain/stromatolite_disk')
 }
