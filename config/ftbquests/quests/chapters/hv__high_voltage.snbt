@@ -483,7 +483,7 @@
 			]
 			icon: "gtceu:hv_circuit_assembler"
 			id: "6B1595678ECB7AC8"
-			shape: "gear"
+			shape: "octagon"
 			size: 3.0d
 			tasks: [{
 				id: "337D8EF42A7BD3A2"
@@ -714,7 +714,7 @@
 			]
 			icon: "gtceu:large_chemical_reactor"
 			id: "528CE69DA4358B2E"
-			shape: "gear"
+			shape: "octagon"
 			size: 3.0d
 			tasks: [
 				{
