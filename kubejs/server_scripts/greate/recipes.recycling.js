@@ -105,8 +105,7 @@ function registerGreateRecyclingRecipes(event) {
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Steel, 10),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Stone, 2),
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Diamond, 2),
-			ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.TreatedWood, 2))
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Diamond, 2))
 		.duration(GTMaterials.Stone.getMass() * 4)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])

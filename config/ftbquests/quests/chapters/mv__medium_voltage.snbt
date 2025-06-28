@@ -1028,6 +1028,7 @@
 			icon: "gtceu:mv_distillery"
 			id: "6A304E453D74C57C"
 			min_required_dependencies: 1
+			progression_mode: "linear"
 			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_distillery.subtitle}"

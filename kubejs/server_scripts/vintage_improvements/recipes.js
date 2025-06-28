@@ -301,7 +301,7 @@ function registerVintageImprovementsRecipes(event) {
 		if (gemItem != null && gemItem.hasTag('c:hidden_from_recipe_viewers'))
 			return;
 
-		if (ingotItem == null || gemItem == null)
+		if (ingotItem == null && gemItem == null)
 			return;
 
 		// #region Coiling
@@ -367,6 +367,8 @@ function registerVintageImprovementsRecipes(event) {
 				gem = 'minecraft:amethyst_shard'
 			else if (material == GTMaterials.CertusQuartz)
 				gem = 'ae2:certus_quartz_crystal'
+			else if (material == TFGHelpers.getMaterial('rose_quartz'))
+				gem = 'create:rose_quartz'
 
 			event.custom({
 				type: 'vintageimprovements:vibrating',
@@ -497,6 +499,48 @@ function registerVintageImprovementsRecipes(event) {
 		results: [{ item: 'tfc:lens' }],
 		processingTime: 100
 	}).id(`tfg:vi/lathe/lens`)
+
+	event.custom({
+		type: 'vintageimprovements:turning',
+		ingredients: [{ tag: 'forge:exquisite_gems/rose_quartz' }],
+		results: [{ item: 'gtceu:rose_quartz_lens' }, { item: 'gtceu:rose_quartz_dust', count: 2 }],
+		processingTime: 100
+	}).id(`tfg:vi/lathe/rose_quartz_lens`)
+
+	event.custom({
+		type: 'vintageimprovements:turning',
+		ingredients: [{ tag: 'forge:exquisite_gems/diamond' }],
+		results: [{ item: 'gtceu:diamond_lens' }, { item: 'gtceu:diamond_dust', count: 2 }],
+		processingTime: 100
+	}).id(`tfg:vi/lathe/diamond_lens`)
+
+	event.custom({
+		type: 'vintageimprovements:turning',
+		ingredients: [{ tag: 'forge:exquisite_gems/emerald' }],
+		results: [{ item: 'gtceu:emerald_lens' }, { item: 'gtceu:emerald_dust', count: 2 }],
+		processingTime: 100
+	}).id(`tfg:vi/lathe/emerald_lens`)
+
+	event.custom({
+		type: 'vintageimprovements:turning',
+		ingredients: [{ tag: 'forge:exquisite_gems/ruby' }],
+		results: [{ item: 'gtceu:ruby_lens' }, { item: 'gtceu:ruby_dust', count: 2 }],
+		processingTime: 100
+	}).id(`tfg:vi/lathe/ruby_lens`)
+
+	event.custom({
+		type: 'vintageimprovements:turning',
+		ingredients: [{ tag: 'forge:exquisite_gems/sapphire' }],
+		results: [{ item: 'gtceu:sapphire_lens' }, { item: 'gtceu:sapphire_dust', count: 2 }],
+		processingTime: 100
+	}).id(`tfg:vi/lathe/sapphire_lens`)
+
+	event.custom({
+		type: 'vintageimprovements:turning',
+		ingredients: [{ tag: 'forge:exquisite_gems/amethyst' }],
+		results: [{ item: 'gtceu:amethyst_lens' }, { item: 'gtceu:amethyst_dust', count: 2 }],
+		processingTime: 100
+	}).id(`tfg:vi/lathe/amethyst_lens`)
 
 	// #endregion
 

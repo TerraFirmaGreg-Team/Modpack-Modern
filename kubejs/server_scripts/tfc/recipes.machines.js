@@ -195,14 +195,6 @@ function registerTFCMachineRecipes(event) {
 		.duration(100)
 		.EUt(2)
 
-	// Glass lens
-	event.recipes.gtceu.alloy_smelter(`tfg:tfc/glass_lens`)
-		.itemInputs('tfc:silica_glass_batch')
-		.notConsumable('#forge:lenses')
-		.itemOutputs('tfc:lens')
-		.duration(100)
-		.EUt(2)
-
 	// Empty Jar
 	event.recipes.gtceu.alloy_smelter('tfc:jar_alloying')
 		.itemInputs('#tfc:glass_batches_tier_2')

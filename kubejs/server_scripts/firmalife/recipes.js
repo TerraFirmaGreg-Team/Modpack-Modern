@@ -495,4 +495,16 @@ const registerFirmaLifeRecipes = (event) => {
 		.circuit(5)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(200)
+
+    event.recipes.firmalife.mixing_bowl()
+    	.itemIngredients(['#tfg:wood_dusts', 'tfc:glue'])
+    	.outputItem('tfg:chipboard_composite')
+
+    event.recipes.firmalife.mixing_bowl()
+    	.itemIngredients(['#tfg:wood_dusts', 'gtceu:sticky_resin'])
+    	.outputItem('tfg:chipboard_composite')
+
+    event.recipes.firmalife.mixing_bowl()
+    	.itemIngredients(['#tfg:wood_dusts', '#forge:wax'])
+    	.outputItem('tfg:chipboard_composite')
 }
