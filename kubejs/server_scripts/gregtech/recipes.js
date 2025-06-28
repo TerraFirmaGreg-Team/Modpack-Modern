@@ -1197,4 +1197,41 @@ const registerGTCEURecipes = (event) => {
 		.duration(7 * 20)
 		.EUt(60)
     //#endregion
+
+	//#region Multiblock Tanks
+
+	event.recipes.gtceu.assembler('tfg:assembler/wood_wall')
+		.itemInputs('4x #forge:treated_wood', ChemicalHelper.get(TagPrefix.plate, GTMaterials.Copper, 1))
+		.itemOutputs('gtceu:wood_wall')
+		.circuit(4)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.assembler('tfg:assembler/wooden_multiblock_tank')
+		.itemInputs('gtceu:wood_wall', ChemicalHelper.get(TagPrefix.ring, GTMaterials.Copper, 2))
+		.itemOutputs('gtceu:wooden_multiblock_tank')
+		.circuit(4)
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.assembler('tfg:assembler/wooden_tank_valve')
+		.itemInputs('gtceu:wood_wall', ChemicalHelper.get(TagPrefix.ring, GTMaterials.Copper, 1), ChemicalHelper.get(TagPrefix.rotor, GTMaterials.Copper, 1))
+		.itemOutputs('gtceu:wooden_tank_valve')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.assembler('tfg:assembler/steel_multiblock_tank')
+		.itemInputs('gtceu:solid_machine_casing', ChemicalHelper.get(TagPrefix.ring, GTMaterials.Steel, 2))
+		.itemOutputs('gtceu:steel_multiblock_tank')
+		.circuit(4)
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.assembler('tfg:assembler/steel_tank_valve')
+		.itemInputs('gtceu:solid_machine_casing', ChemicalHelper.get(TagPrefix.ring, GTMaterials.Steel, 1), ChemicalHelper.get(TagPrefix.rotor, GTMaterials.Steel, 1))
+		.itemOutputs('gtceu:steel_tank_valve')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	//#endregion
 }

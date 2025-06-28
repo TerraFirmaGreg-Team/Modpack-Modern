@@ -80,4 +80,12 @@ function registerTFGLoots(event) {
             );
         })
     });
+
+    //#region Blocks
+
+    event.addBlockLootModifier('minecraft:campfire')
+        .removeLoot(Ingredient.all)
+        .addLoot('minecraft:campfire')
+
+    //#endregion
 };

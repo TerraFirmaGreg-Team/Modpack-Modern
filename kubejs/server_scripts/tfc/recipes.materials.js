@@ -454,7 +454,7 @@ function registerTFCMaterialsRecipes(event) {
 					.id(`tfc:heating/metal/${material.getName()}_rod`)
 
 				// Слиток -> 2 Стержня
-				event.recipes.tfc.anvil(rodItem.withCount(2), ingotItem, ['bend_last', 'draw_second_last', 'draw_third_last'])
+				event.recipes.tfc.anvil(rodItem.withCount(2), ingotItem, ['draw_last'])
 					.tier(tfcProperty.getTier())
 					.id(`tfc:anvil/${material.getName()}_rod`)
 
