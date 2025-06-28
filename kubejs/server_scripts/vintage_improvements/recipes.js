@@ -367,6 +367,8 @@ function registerVintageImprovementsRecipes(event) {
 				gem = 'minecraft:amethyst_shard'
 			else if (material == GTMaterials.CertusQuartz)
 				gem = 'ae2:certus_quartz_crystal'
+			else if (material == TFGHelpers.getMaterial('rose_quartz'))
+				gem = 'create:rose_quartz'
 
 			event.custom({
 				type: 'vintageimprovements:vibrating',
