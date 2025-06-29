@@ -103,6 +103,7 @@ optionsof.txt
 optionsshaders.txt
 OpenComputersMod-*
 hei_bookmarks.ini
+icon.png
 
 # Server data
 .pakku/server-overrides/libraries
@@ -112,3 +113,4 @@ hei_bookmarks.ini
 .pakku/server-overrides/scripts
 .pakku/server-overrides/mods
 .pakku/server-overrides/user_jvm_args.txt
+
