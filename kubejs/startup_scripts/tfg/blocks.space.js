@@ -212,6 +212,19 @@ function registerTFGSpaceBlocks(event) {
 		.stoneSoundType()
 		.noItem()
 
+	// #region Plants
+
+	event.create('tfg:lunar_roots', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.lightLevel(0.4)
+		.tagItem('tfg:moon_plants')
+
+	event.create('tfg:lunar_sprouts', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:moon_plants')
+
+	// #endregion
+
 	//#region Venus Blocks
 	//Fluorapatite
 	const fluorapatite_colors = ['blue', 'green', 'brown', 'orange', 'white', 'yellow'];
