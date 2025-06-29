@@ -32,12 +32,16 @@ migrateCopycatsOnInitialize = false
 	copycat_beam = true
 	copycat_board = true
 	copycat_fence = true
-	#.
 	fluid_vessel = true
 	large_crank_wheel = false
 	crank_wheel = false
 	inventory_access_port = true
 	inventory_bridge = true
+	#.
+	kinetic_bridge = true
+	cross_connector = true
+	redstone_link_wildcard = true
+	kinetic_battery = true
 
 #.
 #Enable/disable categories of features. Disabling a category hides all related features. Values on server override clients
