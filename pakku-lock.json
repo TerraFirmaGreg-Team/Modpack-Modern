@@ -5809,6 +5809,42 @@
             ]
         },
         {
+            "pakku_id": "vM88oJ8vHOUgPzGf",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "modernmarkings"
+            },
+            "name": {
+                "curseforge": "ModernMarkings"
+            },
+            "id": {
+                "curseforge": "1267477"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ags_modernmarkings-0.4.2-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6659/716/ags_modernmarkings-0.4.2-1.20.1.jar",
+                    "id": "6659716",
+                    "parent_id": "1267477",
+                    "hashes": {
+                        "sha1": "7297e554cd075b7e4d7497248d60ca40b943bc98",
+                        "md5": "f4058de0aafaabae98e90e050f0348d3"
+                    },
+                    "required_dependencies": [],
+                    "size": 305666,
+                    "date_published": "2025-06-17T02:42:48.933Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "aHeU7fAIYgE8bqks",
             "type": "MOD",
             "side": "BOTH",
