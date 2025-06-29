@@ -449,7 +449,7 @@ const registerGTCEURecipes = (event) => {
 		.id('tfg:heating/coke_oven_bricks')
 
 	event.recipes.gtceu.alloy_smelter('gtceu:coke_oven_brick')
-		.itemInputs('#minecraft:sand', 'minecraft:clay_ball')
+		.itemInputs('3x #minecraft:sand', '2x minecraft:clay_ball')
 		.itemOutputs('gtceu:coke_oven_brick')
 		.duration(7.5 * 20)
 		.EUt(GTValues.VA[GTValues.ULV])
