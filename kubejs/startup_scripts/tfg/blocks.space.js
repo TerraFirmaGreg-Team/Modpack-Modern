@@ -7,7 +7,7 @@ function registerTFGSpaceBlocks(event) {
 		.item(item => {
 			item.modelJson({ parent: 'tfg:block/marker/moon' })
 		})
-		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('c:hidden_from_recipe_viewers')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -16,7 +16,7 @@ function registerTFGSpaceBlocks(event) {
 		.item(item => {
 			item.modelJson({ parent: 'tfg:block/marker/mars' })
 		})
-		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('c:hidden_from_recipe_viewers')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -25,7 +25,7 @@ function registerTFGSpaceBlocks(event) {
 		.item(item => {
 			item.modelJson({ parent: 'tfg:block/marker/venus' })
 		})
-		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('c:hidden_from_recipe_viewers')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -34,7 +34,7 @@ function registerTFGSpaceBlocks(event) {
 		.item(item => {
 			item.modelJson({ parent: 'tfg:block/marker/mercury' })
 		})
-		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('c:hidden_from_recipe_viewers')
 		.fullBlock(true)
 		.opaque(true)
 
