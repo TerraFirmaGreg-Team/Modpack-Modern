@@ -76,12 +76,13 @@ function registerTFGNetherBlocks(event) {
 		.tagItem('tfc:rock_knapping')
 		.tagItem('tfc:sedimentary_rock')
 
-	const $Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks')
-	const $Properties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties')
-	const $SproutsBlock = Java.loadClass('net.minecraft.world.level.block.NetherSproutsBlock')
+	event.create('tfg:mushroom_roots', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfc:plants')
 
-	event.createCustom('tfg:mushroom_roots', () => new $SproutsBlock($Properties.copy($Blocks.WARPED_ROOTS)))
-	event.createCustom('tfg:mushroom_sprouts', () => new $SproutsBlock($Properties.copy($Blocks.NETHER_SPROUTS)))
+	event.create('tfg:mushroom_sprouts', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfc:plants')
 
 	event.create('tfg:charred_log')
 		.fullBlock(true)
