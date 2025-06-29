@@ -182,9 +182,9 @@ const registerAdAstraBiomeTags = (event) => {
 		event.add('tfg:has_structure/meteors', biome)
 		event.add('tfg:has_structure/cheese_ores', biome)
 		event.add('tfg:has_structure/moonbase', biome)
-		event.add('tfg:has_structure/moon_rabbit_houses', biome)
-		event.add('minecraft:spawns_gold_rabbits', biome)
-		event.add('minecraft:spawns_white_rabbits', biome)
+
+		// TODO: disabled until we figure out what causes a big cube of blocks below them
+		//event.add('tfg:has_structure/moon_rabbit_houses', biome)
 	})
 }
 
