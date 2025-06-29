@@ -10,6 +10,8 @@
 	mod_version_check_packet = false
 	#Don't touch unless you are told to
 	debug_packet = false
+	#Enables the generation of dynamic assets. This is required for the mod to work properly. Turn off if you chose to add all the generated assets via datapack manually. This can speedup boot times for modpacks. Note that the generated assets will depend on loaded datapacks
+	generate_dynamic_assets = true
 
 	[general.tooltips]
 		#Enabled tooltips showing which mod an EC item is from
