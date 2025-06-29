@@ -184,6 +184,12 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:foods/usable_in_meal_bag', 'tfc:food/boiled_egg');
 	//#endregion
 
+	// #region Space blocks
+	event.add('tfg:moon_plants', 'tfg:lunar_roots')
+	event.add('tfg:moon_plants', 'tfg:lunar_sprouts')
+	event.add('tfg:moon_plants', 'tfg:lunar_chorus_flower')
+	// #endregion
+
 	// #region 0.7.19 -> 0.9 conversion
 	event.add('c:hidden_from_recipe_viewers', 'treetap:tap')
 	event.add('c:hidden_from_recipe_viewers', 'tfcea:refrigerator')
@@ -308,14 +314,6 @@ const registerTFGBlockTags = (event) => {
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_dripstone')
 	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_dripstone')
 	event.add('tfc:rock/hardened', 'tfg:rock/hardened_dripstone')
-
-	// #endregion
-
-	// #region Space blocks
-
-	event.add('tfc:plants', 'tfg:lunar_roots')
-	event.add('tfc:plants', 'tfg:lunar_sprouts')
-	event.add('tfc:plants', 'tfg:lunar_chorus_flower')
 
 	// #endregion
 }

@@ -7,7 +7,7 @@ function registerTFGSpaceBlocks(event) {
 		.item(item => {
 			item.modelJson({ parent: 'tfg:block/marker/moon' })
 		})
-		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('c:hidden_from_recipe_viewers')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -16,7 +16,7 @@ function registerTFGSpaceBlocks(event) {
 		.item(item => {
 			item.modelJson({ parent: 'tfg:block/marker/mars' })
 		})
-		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('c:hidden_from_recipe_viewers')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -25,7 +25,7 @@ function registerTFGSpaceBlocks(event) {
 		.item(item => {
 			item.modelJson({ parent: 'tfg:block/marker/venus' })
 		})
-		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('c:hidden_from_recipe_viewers')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -34,7 +34,7 @@ function registerTFGSpaceBlocks(event) {
 		.item(item => {
 			item.modelJson({ parent: 'tfg:block/marker/mercury' })
 		})
-		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('c:hidden_from_recipe_viewers')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -211,6 +211,21 @@ function registerTFGSpaceBlocks(event) {
 	event.create('tfg:spike/permafrost_spike', 'tfc:rock_spike')
 		.stoneSoundType()
 		.noItem()
+
+	// #region Plants
+
+	event.create('tfg:lunar_roots', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.lightLevel(0.4)
+		.tagItem('tfg:moon_plants')
+		//.extendedProperties(p => { p.offsetType('xz') })
+
+	event.create('tfg:lunar_sprouts', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:moon_plants')
+		//.extendedProperties(p => { p.offsetType('xz') })
+
+	// #endregion
 
 	//#region Venus Blocks
 	//Fluorapatite

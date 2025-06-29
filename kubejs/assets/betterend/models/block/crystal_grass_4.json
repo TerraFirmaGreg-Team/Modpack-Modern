@@ -1,0 +1,31 @@
+{
+	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "betterend:block/crystal_grass_5",
+		"texture": "betterend:block/crystal_grass_5"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "PlaneX3",
+			"from": [ 2.5, 0, 2.5 ],
+			"to": [ 2.501, 10, 18.5 ],
+			"rotation": { "origin": [ 2.5, 0, 2.5 ], "axis": "y", "angle": 45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 6, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 16, 6, 0, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneX3",
+			"from": [ 13.5, 0, 2.5 ],
+			"to": [ 13.501, 10, 18.5 ],
+			"rotation": { "origin": [ 13.5, 0, 2.5 ], "axis": "y", "angle": -45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 6, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 16, 6, 0, 16 ], "texture": "#texture" }
+			}
+		}
+	]
+}

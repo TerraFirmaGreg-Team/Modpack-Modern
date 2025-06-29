@@ -6,6 +6,7 @@ StartupEvents.registry('item', event => {
 })
 
 StartupEvents.registry('block', event => {
+	registerBetterEndBlocks(event)
 	registerTFGBlocks(event)
 })
 
