@@ -12,6 +12,7 @@ ServerEvents.tags('item', event => {
 	registerAlekishipsItemTags(event)
 	registerAsticorCartsItemTags(event)
 	registerBeneathItemTags(event)
+	registerBetterEndItemTags(event)
 	registerChalkItemTags(event);
 	registerChiselAndBitsItemTags(event)
 	registerComputerCraftItemTags(event)
@@ -193,6 +194,7 @@ ServerEvents.recipes(event => {
 	registerAE2NetworkAnalyzerRecipes(event)
 	registerAE2WTLibRecipes(event)
 	registerBeneathRecipes(event)
+	registerBetterEndRecipes(event)
 	registerBuildingGadgetsRecipes(event)
 	registerChalkRecipes(event);
 	registerChiselAndBitsRecipes(event)

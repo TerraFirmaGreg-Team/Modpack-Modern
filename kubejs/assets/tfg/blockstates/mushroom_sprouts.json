@@ -1,7 +1,10 @@
 {
 	"variants": {
-		"": {
-			"model": "tfg:block/mushroom_sprouts"
-		}
+		"": [
+			{ "model": "tfg:block/mushroom_sprouts" },
+			{ "model": "tfg:block/mushroom_sprouts", "y": 90 },
+			{ "model": "tfg:block/mushroom_sprouts", "y": 180 },
+			{ "model": "tfg:block/mushroom_sprouts", "y": 270 }
+		]
 	}
 }
