@@ -2184,7 +2184,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'#tfg:reactant_fluix_ruby',
 			'#tfg:reactant_fluix_quartz',
 			'4x ae2:charged_certus_quartz_crystal')
-		.inputFluids(Fluid.of('minecraft:water', 144))
+		.inputFluids(JsonIO.of({ amount: 150, value: { tag: "tfg:clean_water" }}))
 		.itemOutputs('5x ae2:fluix_crystal')
 		.duration(120)
 		.EUt(256)
@@ -2194,7 +2194,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'#tfg:reactant_fluix_ruby_exquisite',
 			'#tfg:reactant_fluix_quartz',
 			'4x ae2:charged_certus_quartz_crystal')
-		.inputFluids(Fluid.of('minecraft:water', 144))
+		.inputFluids(JsonIO.of({ amount: 150, value: { tag: "tfg:clean_water" }}))
 		.itemOutputs('20x ae2:fluix_crystal')
 		.duration(80)
 		.EUt(256)
@@ -2204,7 +2204,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'#tfg:reactant_fluix_ruby',
 			'#tfg:reactant_fluix_quartz_exquisite',
 			'4x ae2:charged_certus_quartz_crystal')
-		.inputFluids(Fluid.of('minecraft:water', 144))
+		.inputFluids(JsonIO.of({ amount: 150, value: { tag: "tfg:clean_water" }}))
 		.itemOutputs('20x ae2:fluix_crystal')
 		.duration(80)
 		.EUt(256)
@@ -2214,7 +2214,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'#tfg:reactant_fluix_ruby_exquisite',
 			'#tfg:reactant_fluix_quartz_exquisite',
 			'4x ae2:charged_certus_quartz_crystal')
-		.inputFluids(Fluid.of('gtceu:distilled_water', 144))
+		.inputFluids(Fluid.of('gtceu:distilled_water', 150))
 		.itemOutputs('40x ae2:fluix_crystal')
 		.duration(60)
 		.EUt(256)

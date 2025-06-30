@@ -22,7 +22,7 @@ const registerGTCEURecipes = (event) => {
 			'4x #forge:sand'
 		)
 		.circuit(1)
-		.inputFluids(Fluid.of('minecraft:water', 1000))
+		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfg:clean_water" }}))
 		.itemOutputs('4x gtceu:fertilizer')
 		.duration(300)
 		.EUt(30)
@@ -203,56 +203,56 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_seeds')
 		.itemInputs('#tfc:seeds')
-		.inputFluids(Fluid.of('minecraft:water', 20))
+		.inputFluids(JsonIO.of({ amount: 20, value: { tag: "tfc:any_water" }}))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(128)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_food')
 		.itemInputs('#tfc:foods')
-		.inputFluids(Fluid.of('minecraft:water', 20))
+		.inputFluids(JsonIO.of({ amount: 20, value: { tag: "tfc:any_water" }}))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(128)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_plants')
 		.itemInputs('#tfc:plants')
-		.inputFluids(Fluid.of('minecraft:water', 20))
+		.inputFluids(JsonIO.of({ amount: 20, value: { tag: "tfc:any_water" }}))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(128)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_corals')
 		.itemInputs('#tfc:corals')
-		.inputFluids(Fluid.of('minecraft:water', 20))
+		.inputFluids(JsonIO.of({ amount: 20, value: { tag: "tfc:any_water" }}))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(128)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_spider_eyes')
 		.itemInputs('minecraft:spider_eye')
-		.inputFluids(Fluid.of('minecraft:water', 20))
+		.inputFluids(JsonIO.of({ amount: 20, value: { tag: "tfc:any_water" }}))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(128)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_leaves')
 		.itemInputs('#minecraft:leaves')
-		.inputFluids(Fluid.of('minecraft:water', 20))
+		.inputFluids(JsonIO.of({ amount: 20, value: { tag: "tfc:any_water" }}))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(128)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_fallen_leaves')
 		.itemInputs('#tfc:fallen_leaves')
-		.inputFluids(Fluid.of('minecraft:water', 20))
+		.inputFluids(JsonIO.of({ amount: 20, value: { tag: "tfc:any_water" }}))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(128)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_minecraft_plants')
 		.itemInputs('#createaddition:plants')
-		.inputFluids(Fluid.of('minecraft:water', 20))
+		.inputFluids(JsonIO.of({ amount: 20, value: { tag: "tfc:any_water" }}))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(128)
 		.EUt(3)
@@ -280,15 +280,15 @@ const registerGTCEURecipes = (event) => {
 	//#endregion
 
 	//#region Выход: Цемент
-
+	
 	generateMixerRecipe(event, ['2x #tfg:stone_dusts', 'gtceu:marble_dust', 'gtceu:gypsum_dust'],
-		Fluid.of('minecraft:water', 1000), [], null, Fluid.of('gtceu:concrete', 1152), 40, 16, 64, 'concrete_from_marble')
+		JsonIO.of({ amount: 1000, value: { tag: "tfg:clean_water" }}), [], null, Fluid.of('gtceu:concrete', 1152), 40, 16, 64, 'concrete_from_marble')
 
 	generateMixerRecipe(event, ['3x #tfg:stone_dusts', 'gtceu:clay_dust'],
-		Fluid.of('minecraft:water', 500), [], null, Fluid.of('gtceu:concrete', 576), 20, 16, 64, 'concrete_from_clay')
+		JsonIO.of({ amount: 500, value: { tag: "tfg:clean_water" }}), [], null, Fluid.of('gtceu:concrete', 576), 20, 16, 64, 'concrete_from_clay')
 
 	generateMixerRecipe(event, ['3x #tfg:stone_dusts', 'gtceu:calcite_dust', 'gtceu:gypsum_dust'],
-		Fluid.of('minecraft:water', 1000), [], null, Fluid.of('gtceu:concrete', 1152), 40, 16, 64, 'concrete_from_calcite')
+		JsonIO.of({ amount: 1000, value: { tag: "tfg:clean_water" }}), [], null, Fluid.of('gtceu:concrete', 1152), 40, 16, 64, 'concrete_from_calcite')
 
 	//GT light/dark concrete recipe fix
 
@@ -353,7 +353,7 @@ const registerGTCEURecipes = (event) => {
 	generateMixerRecipe(
 		event,
 		['2x #tfg:stone_dusts'],
-		[Fluid.of('gtceu:lubricant', 20), Fluid.of('minecraft:water', 4000)],
+		[Fluid.of('gtceu:lubricant', 20), JsonIO.of({ amount: 4000, value: { tag: "tfg:clean_water" }})],
 		[],
 		null,
 		Fluid.of('gtceu:drilling_fluid', 5000),
@@ -949,7 +949,7 @@ const registerGTCEURecipes = (event) => {
 
 	event.replaceInput({ mod: 'gtceu' }, 'minecraft:sugar', '#tfg:sugars')
 	event.replaceInput({ mod: 'gtceu' }, 'minecraft:string', '#forge:string')
-
+	
 	event.recipes.gtceu.fluid_solidifier('tfg:solidify_glue')
 		.inputFluids(Fluid.of('gtceu:glue', 50))
 		.notConsumable('gtceu:ball_casting_mold')

@@ -338,6 +338,10 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:usable_in_red_steel_bucket', 'tfg:conifer_pitch')
 	event.add('tfc:usable_in_blue_steel_bucket', 'tfg:conifer_pitch')
 
+	event.add('tfg:clean_water', 'minecraft:water')
+	event.add('tfg:clean_water', 'tfc:river_water')
+	event.add('tfg:clean_water', 'tfc:spring_water')
+
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
 	})

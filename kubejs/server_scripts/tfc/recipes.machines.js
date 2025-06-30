@@ -311,7 +311,9 @@ function registerTFCMachineRecipes(event) {
 		.EUt(4)
 
 	// Jute Fiber
-	generateMixerRecipe(event, 'tfc:jute', Fluid.of('minecraft:water', 200), 'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
+	generateMixerRecipe(event, 'tfc:jute', 
+		JsonIO.of({ amount: 200, value: { tag: "tfg:clean_water" }}),
+		'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
 
 	// Ceramic Recycling
 	event.recipes.gtceu.macerator('tfg:sherd_to_brick_dust')

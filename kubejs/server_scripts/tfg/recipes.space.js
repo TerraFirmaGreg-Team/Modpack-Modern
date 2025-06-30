@@ -170,7 +170,7 @@ function registerTFGSpaceRecipes(event) {
 
 	event.recipes.gtceu.brewery('biomass_from_twisting_vines')
 		.itemInputs('minecraft:twisting_vines')
-		.inputFluids(Fluid.of('minecraft:water', 20))
+		.inputFluids(JsonIO.of({ amount: 20, value: { tag: "tfg:clean_water" }}))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(50)
 		.EUt(3)

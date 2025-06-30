@@ -254,7 +254,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.fluid_solidifier('tfg:ice')
-		.inputFluids(Fluid.of('minecraft:water', 144))
+		.inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfg:clean_water" }}))
 		.notConsumable('gtceu:block_casting_mold')
 		.itemOutputs('minecraft:ice')
 		.duration(200)
@@ -452,9 +452,9 @@ function registerTFGMiscellaneousRecipes(event) {
         .circuit(4)
         .EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.gtceu.ore_washer('tfg:ore_washer/clean_foil_pack')
+	event.recipes.gtceu.mixer('tfg:clean_foil_pack')
         .itemInputs('1x tfg:used_foil_pack')
-		.inputFluids(Fluid.of('minecraft:water', 100))
+		.inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfg:clean_water" }}))
         .itemOutputs('1x tfg:clean_foil_pack')
         .duration(200)
         .circuit(1)

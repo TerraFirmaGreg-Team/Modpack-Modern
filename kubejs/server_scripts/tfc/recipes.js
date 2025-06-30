@@ -154,7 +154,10 @@ const registerTFCRecipes = (event) => {
 		.id('tfg:tfc/pot/salt')
 
 	// Salt Water
-	generateMixerRecipe(event, ['#forge:dusts/salt'], Fluid.of('minecraft:water', 1000), [], 2, Fluid.of('tfc:salt_water', 1000), 40, 7, 64, 'tfg:tfc/salt_water')
+	generateMixerRecipe(event,
+		['#forge:dusts/salt'], 
+		JsonIO.of({ amount: 1000, value: { tag: "tfg:clean_water" }}),
+		[], 2, Fluid.of('tfc:salt_water', 1000), 40, 7, 64, 'tfg:tfc/salt_water')
 
 
 	// Seaweed and kelp
@@ -185,7 +188,9 @@ const registerTFCRecipes = (event) => {
 		.id('tfg:splashing/wash_torch')
 
 	//Lye in mixer
-	generateMixerRecipe(event, 'tfc:powder/wood_ash', Fluid.of('minecraft:water', 200), [], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_in_mixer')
+	generateMixerRecipe(event, 'tfc:powder/wood_ash', 
+		JsonIO.of({ amount: 200, value: { tag: "tfg:clean_water" }}),
+		[], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_in_mixer')
 
 	// Brass Mechanism
 	event.recipes.shapeless('gtceu:small_brass_gear', [ 'tfc:brass_mechanisms' ]).id('tfg:replace_brass_mechanisms')

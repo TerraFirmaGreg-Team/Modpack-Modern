@@ -490,7 +490,7 @@ const registerFirmaLifeRecipes = (event) => {
 
 	event.recipes.gtceu.mixer('sugar_water')
 		.itemInputs('#tfc:sweetener')
-		.inputFluids(Fluid.of('minecraft:water', 1000))
+		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfg:clean_water" }}))
 		.outputFluids(Fluid.of('firmalife:sugar_water', 500))
 		.circuit(5)
 		.EUt(GTValues.VA[GTValues.ULV])
