@@ -1039,17 +1039,6 @@ global.TFC_ALCOHOL = [
     {id: 'firmalife:mead'},
 ];
 
-global.TFC_ALCOHOL_NAME = [
-    'cider',
-    'beer',
-    'rum',
-    'sake',
-    'vodka',
-    'whiskey',
-    'corn_whiskey',
-    'rye_whiskey'
-];
-
 global.TFC_MAGMA_BLOCKS = [
     'tfc:rock/magma/granite',
     'tfc:rock/magma/diorite',

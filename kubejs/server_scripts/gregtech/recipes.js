@@ -30,24 +30,12 @@ const registerGTCEURecipes = (event) => {
 	//#endregion
 
 	//#region misc mixer
-
-    global.TFC_ALCOHOL_NAME.forEach(alcohol => {
-event.recipes.gtceu.mixer(`mixer:ulv_biodiesel_aged_${alcohol}`)
-        .inputFluids(Fluid.of(`tfcagedalcohol:aged_${alcohol}`, 100))
-        .inputFluids(Fluid.of('gtceu:seed_oil', 6000))
+	event.recipes.gtceu.mixer(`alcohol_biodiesel`)
+		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" }}))
+		.inputFluids(Fluid.of('gtceu:seed_oil', 6000))
         .outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
         .duration(20*30)
         .EUt(GTValues.VHA[GTValues.ULV])
-    })
-
-    global.TFC_ALCOHOL_NAME.forEach(alcohol => {
-event.recipes.gtceu.mixer(`mixer:ulv_biodiesel_${alcohol}`)
-        .inputFluids(Fluid.of(`tfc:${alcohol}`, 100))
-        .inputFluids(Fluid.of('gtceu:seed_oil', 6000))
-        .outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
-        .duration(20*30)
-        .EUt(GTValues.VHA[GTValues.ULV])
-    })
     //#endregion
 	
 	//#region Выход: Кварцевый песок

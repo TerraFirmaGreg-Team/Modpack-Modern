@@ -436,7 +436,6 @@ function registerVintageImprovementsRecipes(event) {
 				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/pressurizing/${material.getName()}_double_plate`)
 		}
-
 		// #endregion
 	})
 
@@ -652,6 +651,27 @@ event.custom({
 		heatRequirement: "heated",
 		processingTime: 300
 	}).id('tfg:vi/pressurizing/glowstone')
+
+	event.custom({
+    	type: 'vintageimprovements:pressurizing',
+    	ingredients: [{ item: 'tfg:sunflower' }],
+        results: [{ fluid: 'gtceu:seed_oil', amount: 450 }],
+    	processingTime: 25
+    }).id('tfg:vi/pressurizing/sunflower')
+
+    event.custom({
+   		type: 'vintageimprovements:pressurizing',
+    	ingredients: [{ item: 'tfg:rapeseed' }],
+    	results: [{ fluid: 'gtceu:seed_oil', amount: 600 }],
+    	processingTime: 1000
+    }).id('tfg:vi/pressurizing/rapeseed')
+
+    event.custom({
+    	type: 'vintageimprovements:pressurizing',
+    	ingredients: [{ tag: 'forge:seeds'}],
+    	results: [{ fluid: 'gtceu:seed_oil', amount: 16 }],
+    	processingTime: 100
+    }).id('tfg:vi/pressurizing/seed_oil')	
 
 	// #endregion
 

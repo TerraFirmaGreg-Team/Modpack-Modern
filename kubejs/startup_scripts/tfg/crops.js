@@ -55,7 +55,7 @@ const registerTFGCrops = (event) => {
 
 //#endregion
 
-//#region New Item Plants
+//#region New Items
 
 const registerTFGPlants = (event) => {
 
@@ -63,9 +63,13 @@ const registerTFGPlants = (event) => {
         .translationKey('item.tfg.sunflower')
         .texture('tfg:item/plant/sunflower_plant')
 
+    event.create('tfg:roasted_sunflower_seeds')
+        .translationKey('item.tfg.roasted_sunflower_seeds')
+        .texture('tfg:item/plant/roasted_sunflower_seeds')
+
     event.create('tfg:rapeseed')
         .translationKey('item.tfg.rapeseed')
-        .texture('tfg:item/plant/rapeseed_plant')
+        .texture('tfg:item/rapeseed_plant')
 
 }
 

@@ -2,6 +2,10 @@ const registerTFGItemTags = (event) => {
 
 	registerTFGTrimTags(event)
 	registerFacadeWhitelistTags(event)
+    //temporary crop stuff
+ 	event.add('tfc:seeds', 'tfg:rapeseed_seeds')
+	event.add('tfc:seeds', 'tfg:sunflower_seeds')
+	event.add('tfc:foods', 'tfg:roasted_sunflower_seeds')
 
 	//temporary hidden items
 	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source_small')
