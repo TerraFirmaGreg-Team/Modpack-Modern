@@ -396,4 +396,34 @@ const registerCreatedecoRecipes = (event) => {
 	})
 
 	// #endregion
+
+	// #region Ladders
+
+	event.shaped('6x createdeco:iron_ladder', [
+		'A A',
+		'AAA',
+		'A A'
+	], {
+		A: '#forge:rods/wrought_iron'
+	}).id('tfg:createdeco/shaped/iron_ladder')
+
+	event.stonecutting('2x createdeco:iron_ladder', '#forge:ingots/wrought_iron')
+
+	event.shaped('6x createdeco:zinc_ladder', [
+		'A A',
+		'AAA',
+		'A A'
+	], {
+		A: '#forge:rods/zinc'
+	}).id('tfg:createdeco/shaped/zinc_ladder')
+
+	event.shaped('6x createdeco:industrial_iron_ladder', [
+		'A A',
+		'AAA',
+		'A A'
+	], {
+		A: '#forge:rods/steel'
+	}).id('tfg:createdeco/shaped/industrial_iron_ladder')
+
+	// #endregion
 };
