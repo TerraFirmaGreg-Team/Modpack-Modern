@@ -2246,7 +2246,8 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.dimension('ad_astra:moon')
 
 	// Certus deco blocks
-
+	
+	event.stonecutting('ae2:quartz_block', '#tfg:certus_quartz_blocks')
 	event.stonecutting('ae2:cut_quartz_block', '#tfg:certus_quartz_blocks')
 	event.stonecutting('ae2:smooth_quartz_block', '#tfg:certus_quartz_blocks')
 	event.stonecutting('ae2:quartz_bricks', '#tfg:certus_quartz_blocks')
@@ -2273,7 +2274,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 
 	event.recipes.gtceu.macerator('tfg:macerate_certus_deco')
 		.itemInputs('#tfg:certus_quartz_blocks')
-		.itemOutputs('#forge:dusts/certus_quartz')
+		.itemOutputs('4x #forge:dusts/certus_quartz')
 		.duration(150)
 		.EUt(2)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
