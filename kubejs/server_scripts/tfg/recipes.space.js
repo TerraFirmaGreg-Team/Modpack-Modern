@@ -2,6 +2,32 @@
 
 function registerTFGSpaceRecipes(event) {
 
+	// Change where you can do other recipes
+
+	/*const allowedCombustibleDims = [
+		{
+			dimension: "minecraft:the_nether",
+			type: "dimension"
+		},
+		{
+			dimension: "minecraft:overworld",
+			type: "dimension"
+		}
+	]
+
+	event.findRecipes({ type: "gtceu:large_boiler" }).forEach(recipe => {
+		recipe.json.add("recipeConditions", allowedCombustibleDims)
+	})
+	event.findRecipes({ type: "gtceu:steam_boiler" }).forEach(recipe => {
+		recipe.json.add("recipeConditions", allowedCombustibleDims)
+	})
+	event.findRecipes({ type: "gtceu:combustion_generator" }).forEach(recipe => {
+		recipe.json.add("recipeConditions", allowedCombustibleDims)
+	})
+	event.findRecipes({ type: "gtceu:gas_turbine" }).forEach(recipe => {
+		recipe.json.add("recipeConditions", allowedCombustibleDims)
+	})*/
+
 	// Air collector
 
 	event.recipes.gtceu.gas_collector('nether')
