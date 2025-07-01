@@ -1230,4 +1230,7 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	//#endregion
+
+	event.smelting('minecraft:iron_ingot', '#forge:ingots/wrought_iron')
+		.id('tfg:revert_wrought_iron_ingot')
 }
