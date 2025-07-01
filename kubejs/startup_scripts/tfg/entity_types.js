@@ -14,12 +14,12 @@ function registerTFGEntityTypes(event) {
 		.canJump(true)
 		.setBlockJumpFactor(entity => 0.42)
 		// these are the same as tfc rabbits
-		//.configs(config => {
-		//	config.gestationDays(19)
-		//	config.daysToAdult(80)
-		//	config.childCount(6)
-		//	config.uses(40)
-		//	config.maxFamiliarity(0.35)
-		//	config.eatsRottenFood(true)
-		//})
+		.configs(config => {
+			config.gestationDays(19)
+			config.daysToAdult(80)
+			config.childCount(6)
+			config.uses(40)
+			config.maxFamiliarity(0.35)
+			config.eatsRottenFood(true)
+		})
 }

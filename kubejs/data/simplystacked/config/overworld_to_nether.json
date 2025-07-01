@@ -1,0 +1,8 @@
+{
+    "from": "minecraft:overworld",
+    "to": "minecraft:the_nether",
+    "from_y_min": -70,
+    "from_y_max": -59,
+    "to_y": 118,
+    "cloud_platform": true
+}

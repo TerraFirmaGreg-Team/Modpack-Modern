@@ -2,14 +2,14 @@
 	"custom_clouds": true,
 	"custom_sky": true,
 	"custom_weather": false,
-	"dimension": "ad_astra:moon_orbit",
+	"dimension": "ad_astra:earth_orbit",
 	"has_fog": false,
 	"has_thick_fog": false,
 	"render_in_rain": true,
 	"sky_renderables": [
 		{
 			"back_light_color": -39,
-			"back_light_scale": 27.0,
+			"back_light_scale": 30.0,
 			"blend": false,
 			"global_rotation": [
 				0.0,
@@ -22,11 +22,11 @@
 				0.0
 			],
 			"movement_type": "TIME_OF_DAY",
-			"scale": 9.0,
+			"scale": 10.0,
 			"texture": "ad_astra:textures/environment/sun.png"
 		},
 		{
-			"back_light_color": -5261108,
+			"back_light_color": -12813094,
 			"back_light_scale": 240.0,
 			"blend": false,
 			"global_rotation": [
@@ -41,11 +41,11 @@
 			],
 			"movement_type": "STATIC",
 			"scale": 80.0,
-			"texture": "ad_astra:textures/environment/moon.png"
+			"texture": "ad_astra:textures/environment/earth.png"
 		},
 		{
-			"back_light_color": -12813094,
-			"back_light_scale": 42.0,
+			"back_light_color": -5261108,
+			"back_light_scale": 24.0,
 			"blend": false,
 			"global_rotation": [
 				80.0,
@@ -58,8 +58,8 @@
 				0.0
 			],
 			"movement_type": "STATIC",
-			"scale": 14.0,
-			"texture": "ad_astra:textures/environment/earth.png"
+			"scale": 8.0,
+			"texture": "ad_astra:textures/environment/moon.png"
 		}
 	],
 	"star_brightness": 0.6,
@@ -106,6 +106,6 @@
 		}
 	],
 	"stars": 13000,
-	"sunrise_angle": 0,
+	"sunrise_angle": 90,
 	"sunrise_color": 0
 }

@@ -141,7 +141,7 @@ function registerTFCDyeRecipes(event) {
 
 		event.recipes.gtceu.chemical_reactor(`chemical_dye_${dyeName}_acetic`)
 			.itemInputs(`#forge:dyes/${dyeName}`)
-			.inputFluids(Fluid.of('gtceu:acetic_acid', 250), Fluid.of('minecraft:water', 1000))
+			.inputFluids(Fluid.of('gtceu:acetic_acid', 250), JsonIO.of({ amount: 1000, value: { tag: "tfg:clean_water" }}))
 			.outputFluids(Fluid.of(`tfc:${dyeName}_dye`, 144 * 3))
 			.duration(15 * 20)
 			.EUt(24)

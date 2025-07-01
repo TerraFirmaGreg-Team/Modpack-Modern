@@ -103,7 +103,7 @@ const registerAdAstraRecipes = (event) => {
 			'tfg:polycaprolactam_fabric'
 		)
 		.itemOutputs('2x tfg:space_suit_fabric')
-		.duration(20*10)
+		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.shaped('ad_astra:space_helmet', [
@@ -115,7 +115,7 @@ const registerAdAstraRecipes = (event) => {
 		B: 'tfg:space_suit_fabric',
 		D: '#forge:small_fluid_pipes/polyethylene'
 	}).id('tfg:space_helmet')
-	
+
 	//event.recipes.gtceu.assembler('ad_astra:netherite_space_helmet')
 	//	.itemInputs(
 	//		'ad_astra:space_helmet',
@@ -150,7 +150,7 @@ const registerAdAstraRecipes = (event) => {
 		A: 'gtceu:hv_electric_motor',
 		B: 'tfg:space_suit_fabric',
 	}).id('tfg:space_pants')
-	
+
 	//event.recipes.gtceu.assembler('ad_astra:netherite_space_pants')
 	//	.itemInputs('ad_astra:space_pants', '4x #forge:plates/titanium_tungsten_carbide', '4x #forge:plates/polyphenylene_sulfide')
 	//	.itemOutputs('ad_astra:netherite_space_pants')
@@ -444,19 +444,19 @@ const registerAdAstraRecipes = (event) => {
 			D: `minecraft:${color}_stained_glass_pane`,
 			P: '#forge:plates/steel'
 		})
-		.id(`tfg:shaped/ad_astra_${color}_industrial_lamp`);
+			.id(`tfg:shaped/ad_astra_${color}_industrial_lamp`);
 
 		event.shaped(`ad_astra:small_${color}_industrial_lamp`, [
 			' N ',
 			'DTD',
 			' P '
 		], {
-			N: '#forge:nuggets/steel',
+			N: '#forge:bolts/steel',
 			T: 'minecraft:glowstone',
 			D: `minecraft:${color}_stained_glass_pane`,
 			P: '#forge:rods/steel'
 		})
-		.id(`tfg:shaped/ad_astra_small_${color}_industrial_lamp`);
+			.id(`tfg:shaped/ad_astra_small_${color}_industrial_lamp`);
 	})
 
 	const DECO_BLOCKS = [
@@ -639,5 +639,20 @@ const registerAdAstraRecipes = (event) => {
 	event.stonecutting('ad_astra:encased_etrium_block', '#tfg:ad_astra_etrium_blocks')
 	event.stonecutting('ad_astra:etrium_plateblock', '#tfg:ad_astra_etrium_blocks')
 
+	//#endregion
+
+	//#region Space stations
+
+	event.custom({
+		type: "ad_astra:space_station_recipe",
+		dimension: "ad_astra:earth_orbit",
+		ingredients: [
+			{ count: 43, ingredient: { item: "gtceu:aluminium_frame" }},
+			{ count: 24, ingredient: { item: "gtceu:glass_plate" }},
+			{ count: 4, ingredient: { item: "minecraft:glowstone_dust" }},
+			{ count: 1, ingredient: { item: "ad_astra:launch_pad" }}
+		],
+		structure: "tfg:earth_orbit/space_station"
+	})
 	//#endregion
 }

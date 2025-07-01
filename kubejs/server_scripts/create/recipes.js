@@ -1297,7 +1297,7 @@ const registerCreateRecipes = (event) => {
 		'BBB'
 	], {
 		A: '#forge:plates/wrought_iron',
-		B: '#forge:nuggets/wrought_iron'
+		B: '#forge:bolts/wrought_iron'
 	}).id('tfg:create/shaped/metal_girder')
 
 	// Стеклянная дверь

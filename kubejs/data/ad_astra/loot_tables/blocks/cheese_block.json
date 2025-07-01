@@ -11,27 +11,17 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "firmalife:cheddar_wheel"
-				},
-				{
-					"type": "minecraft:item",
-					"name": "firmalife:chevre_wheel"
-				},
-				{
-					"type": "minecraft:item",
-					"name": "firmalife:rajya_metok_wheel"
-				},
-				{
-					"type": "minecraft:item",
-					"name": "firmalife:gouda_wheel"
-				},
-				{
-					"type": "minecraft:item",
-					"name": "firmalife:feta_wheel"
-				},
-				{
-					"type": "minecraft:item",
-					"name": "firmalife:shosha_wheel"
+					"name": "ad_astra:cheese",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 5,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				}
 			],
 			"rolls": 1.0
