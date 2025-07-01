@@ -31,7 +31,7 @@ const registerTFGCrops = (event) => {
             event.create('tfg:rapeseed', 'tfc:double_crop')
         .displayName('Rapeseed')
         .nutrient('phosphorous')
-        .stages(8)
+        .stages(12)
         .hardness(0.4)
         .texture('tfg:block/plant/rapeseed')
         .productItem('tfg:rapeseed')

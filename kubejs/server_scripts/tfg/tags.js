@@ -292,6 +292,29 @@ const registerTFGBlockTags = (event) => {
 
 	event.add('minecraft:mineable/shovel', 'tfg:ash_pile')
 
+	//temporary crop stuff
+	event.add('tfcastikorcarts:mineable_plow_hoe', 'tfg:rapeseed')
+	event.add('tfcastikorcarts:mineable_plow_knife', 'tfg:rapeseed')
+	event.add('tfc:mineable_with_knife', 'tfg:rapeseed')
+	event.add('tfcastikorcarts:mineable_plow_scythe', 'tfg:rapeseed')
+	event.add('cucumber:mineable/sickle', 'tfg:rapeseed')
+	event.add('minecraft:mineable/hoe', 'tfg:rapeseed')
+	event.add('computercraft:turtle_hoe_harvestable', 'tfg:rapeseed')
+	event.add('tfc:mineable_with_scythe', 'tfg:rapeseed')
+	event.add('tfo:mineable_with_sharp_tool', 'tfg:rapeseed')
+	event.add('tfc:crops', 'tfg:rapeseed')
+
+	event.add('tfcastikorcarts:mineable_plow_hoe', 'tfg:sunflower')
+	event.add('tfcastikorcarts:mineable_plow_knife', 'tfg:sunflower')
+	event.add('tfc:mineable_with_knife', 'tfg:sunflower')
+	event.add('tfcastikorcarts:mineable_plow_scythe', 'tfg:sunflower')
+	event.add('cucumber:mineable/sickle', 'tfg:sunflower')
+	event.add('minecraft:mineable/hoe', 'tfg:sunflower')
+	event.add('computercraft:turtle_hoe_harvestable', 'tfg:sunflower')
+	event.add('tfc:mineable_with_scythe', 'tfg:sunflower')
+	event.add('tfo:mineable_with_sharp_tool', 'tfg:sunflower')
+	event.add('tfc:crops', 'tfg:sunflower')
+
 	// #region Nether blocks
 
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')

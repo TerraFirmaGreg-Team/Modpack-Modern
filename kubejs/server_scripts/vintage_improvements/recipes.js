@@ -486,31 +486,6 @@ function registerVintageImprovementsRecipes(event) {
 		}).id(`tfg:vi/vibrating/deposits/${stone}_cassiterite`)
 	})
 
-event.custom({
-			type: 'vintageimprovements:vibrating',
-			ingredients: [{ item:'tfg:rapeseed' }],
-			results: [
-				{ item:'tfg:rapeseed_seeds', chance: 0.6},
-				{ item:'tfg:rapeseed_seeds', chance: 0.4 },
-				{ item:'tfg:rapeseed_seeds', chance: 0.25 }
-			],
-			processingTime: 1000
-		}).id('tfg:vi/vibrating/rapeseed')
-
-		event.custom({
-			type: 'vintageimprovements:vibrating',
-			ingredients: [{ item:'tfg:sunflower' }],
-			results: [
-				{ item:'tfg:sunflower_seeds', chance: 0.95},
-				{ item:'tfg:sunflower_seeds', chance: 0.85},
-				{ item:'tfg:sunflower_seeds', chance: 0.75},
-				{ item:'tfg:sunflower_seeds', chance: 0.60},
-				{ item:'tfg:sunflower_seeds', chance: 0.50},
-				{ item:'tfg:sunflower_seeds', chance: 0.35},
-			],
-			processingTime: 1000
-		}).id('tfg:vi/vibrating/sunflower')
-
 	// #endregion
 
 	// #region Lathe
@@ -655,7 +630,7 @@ event.custom({
 	event.custom({
     	type: 'vintageimprovements:pressurizing',
     	ingredients: [{ item: 'tfg:sunflower' }],
-        results: [{ fluid: 'gtceu:seed_oil', amount: 450 }],
+        results: [{ fluid: 'gtceu:seed_oil', amount: 350 }],
     	processingTime: 25
     }).id('tfg:vi/pressurizing/sunflower')
 

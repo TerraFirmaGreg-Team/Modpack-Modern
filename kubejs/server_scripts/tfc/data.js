@@ -91,24 +91,23 @@ const registerTFCFoodData = (event) => {
 
 const registerTFCDATAForClimate_range = (event) => {
 
-    event.climateRange(climate => {
-        climate.minHydration(30)
-        climate.maxHydration(70)
+	event.climateRange(climate => {
+        climate.minHydration(10)
+        climate.maxHydration(60)
         climate.minTemperature(5)
         climate.maxTemperature(40)
-        climate.hydrationWiggle(5)
-        climate.temperatureWiggle(5)
+        climate.hydrationWiggle(7.5)
+        climate.temperatureWiggle(5.5)
     }, 'tfg:sunflower')
 
     event.climateRange(climate => {
-        climate.minHydration(30)
-        climate.maxHydration(70)
+        climate.minHydration(10)
+        climate.maxHydration(60)
         climate.minTemperature(-5)
         climate.maxTemperature(25)
-        climate.hydrationWiggle(5)
-        climate.temperatureWiggle(2)
+        climate.hydrationWiggle(7.5)
+        climate.temperatureWiggle(1.5)
     }, 'tfg:rapeseed')
-
 }
 
 //#endregion
