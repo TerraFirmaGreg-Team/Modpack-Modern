@@ -451,7 +451,7 @@ const registerAdAstraRecipes = (event) => {
 			'DTD',
 			' P '
 		], {
-			N: '#forge:nuggets/steel',
+			N: '#forge:bolts/steel',
 			T: 'minecraft:glowstone',
 			D: `minecraft:${color}_stained_glass_pane`,
 			P: '#forge:rods/steel'

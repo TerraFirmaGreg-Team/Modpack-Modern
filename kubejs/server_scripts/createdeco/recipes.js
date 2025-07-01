@@ -79,7 +79,7 @@ const registerCreatedecoRecipes = (event) => {
 
 		let ingredients = {
 			T: `minecraft:glowstone`,
-			N: `#forge:nuggets/${replacementLampType}`,
+			N: `#forge:bolts/${replacementLampType}`,
 			P: `#forge:plates/${replacementLampType}`,
 			D: null,
 			X: null
@@ -97,15 +97,15 @@ const registerCreatedecoRecipes = (event) => {
 		}
 
 		if (lampType === 'iron') {
-			ingredients.N = '#forge:nuggets/wrought_iron';
+			ingredients.N = '#forge:bolts/wrought_iron';
 			ingredients.P = '#forge:plates/wrought_iron';
 		}
 		if (lampType === 'andesite') {
-			ingredients.N = '#forge:nuggets/tin_alloy';
+			ingredients.N = '#forge:bolts/tin_alloy';
 			ingredients.P = '#forge:plates/tin_alloy';
 		}
 		if (lampType === 'industrial_iron') {
-			ingredients.N = '#forge:nuggets/steel';
+			ingredients.N = '#forge:bolts/steel';
 			ingredients.P = '#forge:plates/steel';
 		}
 
