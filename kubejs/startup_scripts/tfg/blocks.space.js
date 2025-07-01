@@ -214,6 +214,13 @@ function registerTFGSpaceBlocks(event) {
 
 	// #region Plants
 
+	/*
+	* Default box for single_plant = (3.0F, 0.0F, 3.0F, 13.0F, 7.0F, 13.0F)
+	* Default box for double_plants--Per half = (2.0F, 0.0F, 2.0F, 14.0F, 16.0F, 14.0F)
+	* Default box for smoke_emitter--Emits Signal smoke = (2.0F, 0.0F, 2.0F, 14.0F, 16.0F, 14.0F)
+	* Default box for light_smoke_emitter--Emits Cozy smoke = (2.0F, 0.0F, 2.0F, 14.0F, 16.0F, 14.0F)
+	*/
+
 	event.create('tfg:lunar_roots', 'tfg:decorative_plant')
 		.soundType('nether_wart')
 		.lightLevel(0.4)
@@ -222,6 +229,38 @@ function registerTFGSpaceBlocks(event) {
 	event.create('tfg:lunar_sprouts', 'tfg:decorative_plant')
 		.soundType('nether_wart')
 		.tagItem('tfg:moon_plants')
+
+	event.create('tfg:corallium_arenicolus_0', 'tfg:double_decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:venus_plants')
+		.lightLevel(0.4)
+		.renderType('translucent')
+
+	event.create('tfg:corallium_arenicolus_1', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:venus_plants')
+		.box(3, 0, 3, 13, 14, 13)
+
+	event.create('tfg:corallium_arenicolus_2', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:venus_plants')
+		.renderType('translucent')
+		.box(0, 0, 0, 16, 4, 16)
+
+	event.create('tfg:corallium_arenicolus_3', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:venus_plants')
+		.box(3, 0, 3, 13, 14, 13)
+
+	event.create('tfg:corallium_arenicolus_4', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:venus_plants')
+		.box(3, 0, 3, 13, 14, 13)
+
+	event.create('tfg:corallium_arenicolus_5', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:venus_plants')
+		.box(3, 0, 3, 13, 14, 13)
 
 	// #endregion
 
