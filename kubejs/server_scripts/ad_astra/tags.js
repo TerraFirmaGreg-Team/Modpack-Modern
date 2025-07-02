@@ -25,6 +25,11 @@ const registerAdAstraFluidTags = (event) => {
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:gasoline')
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:high_octane_gasoline')
 
+	event.add('ad_astra:freezes_in_space', 'tfc:salt_water')
+	event.add('ad_astra:freezes_in_space', 'tfc:spring_water')
+	event.add('ad_astra:evaporates_in_space', 'tfc:salt_water')
+	event.add('ad_astra:evaporates_in_space', 'tfc:spring_water')
+
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('ad_astra:zip_gun_propellants', x)
 	})
