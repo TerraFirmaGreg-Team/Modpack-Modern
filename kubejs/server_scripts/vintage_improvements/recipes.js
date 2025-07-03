@@ -388,32 +388,6 @@ function registerVintageImprovementsRecipes(event) {
 		}
 
 		// #endregion
-
-		// #region Pressurizing
-
-		if (material.hasFlag(TFGMaterialFlags.GENERATE_DOUBLE_INGOTS)) {
-			const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
-
-			event.custom({
-				type: 'vintageimprovements:pressurizing',
-				ingredients: [ingotItem, ingotItem, { item: 'tfc:powder/flux' }],
-				heatRequirement: "heated",
-				results: [ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1)],
-				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/pressurizing/${material.getName()}_double_ingot`)
-
-			const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
-
-			event.custom({
-				type: 'vintageimprovements:pressurizing',
-				ingredients: [plateItem, plateItem, { item: 'tfc:powder/flux' }],
-				heatRequirement: "heated",
-				results: [ChemicalHelper.get(TagPrefix.plateDouble, material, 1)],
-				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/pressurizing/${material.getName()}_double_plate`)
-		}
-
-		// #endregion
 	})
 
 
