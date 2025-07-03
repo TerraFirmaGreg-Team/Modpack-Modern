@@ -2,7 +2,6 @@
 
 function registerGreateRecipes(event) {
 
-	removeGreateRecipes(event);
 	registerGreateRecyclingRecipes(event);
 
 	event.replaceInput({ input: 'create:cogwheel'}, 'create:cogwheel', '#tfg:small_cogwheels')

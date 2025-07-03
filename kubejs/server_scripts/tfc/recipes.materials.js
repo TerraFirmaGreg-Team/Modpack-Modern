@@ -60,6 +60,12 @@ function registerTFCMaterialsRecipes(event) {
 				event.recipes.tfc.welding(doubleIngotItem, ingotItem, ingotItem, tfcProperty.getTier() - 1)
 					.id(`tfc:welding/${material.getName()}_double_ingot`)
 
+				event.recipes.greate.compacting(doubleIngotItem, [ingotItem, ingotItem, 'tfc:powder/flux'])
+					.heated()
+					.recipeTier(tfcProperty.getTier() < 5 ? 0 : 1)
+					.circuitNumber(0)
+					.id(`greate:compacting/${material.getName()}_double_ingot`)
+
 				// Plates
 				let plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1)
 				if (!plateItem.isEmpty()) {
@@ -88,6 +94,11 @@ function registerTFCMaterialsRecipes(event) {
 							.tier(tfcProperty.getTier())
 							.id(`tfc:welding/${material.getName()}_double_sheet`)
 
+						event.recipes.greate.compacting(doublePlateItem, [plateItem, plateItem, 'tfc:powder/flux'])
+							.heated()
+							.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
+							.id(`greate:compacting/${material.getName()}_double_sheet`)
+
 						// Armor
 						if (material.hasFlag(TFGMaterialFlags.HAS_TFC_ARMOR)) {
 							//#region Шлем
@@ -112,6 +123,11 @@ function registerTFCMaterialsRecipes(event) {
 							event.recipes.tfc.welding(`tfc:metal/helmet/${material.getName()}`, `tfc:metal/unfinished_helmet/${material.getName()}`, plateItem)
 								.tier(tfcProperty.getTier())
 								.id(`tfc:welding/${material.getName()}_helmet`)
+
+							event.recipes.greate.compacting(`tfc:metal/helmet/${material.getName()}`, [`tfc:metal/unfinished_helmet/${material.getName()}`, plateItem])
+								.heated()
+								.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
+								.id(`greate:compacting/${material.getName()}_helmet`)
 
 							//#endregion
 
@@ -138,6 +154,11 @@ function registerTFCMaterialsRecipes(event) {
 								.tier(tfcProperty.getTier())
 								.id(`tfc:welding/${material.getName()}_chestplate`)
 
+							event.recipes.greate.compacting(`tfc:metal/chestplate/${material.getName()}`, [`tfc:metal/unfinished_chestplate/${material.getName()}`, doublePlateItem])
+								.heated()
+								.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
+								.id(`greate:compacting/${material.getName()}_chestplate`)
+
 							//#endregion
 
 							//#region Поножи
@@ -163,6 +184,11 @@ function registerTFCMaterialsRecipes(event) {
 								.tier(tfcProperty.getTier())
 								.id(`tfc:welding/${material.getName()}_greaves`)
 
+							event.recipes.greate.compacting(`tfc:metal/greaves/${material.getName()}`, [`tfc:metal/unfinished_greaves/${material.getName()}`, plateItem])
+								.heated()
+								.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
+								.id(`greate:compacting/${material.getName()}_greaves`)
+
 							//#endregion
 
 							//#region Ботинки
@@ -187,6 +213,11 @@ function registerTFCMaterialsRecipes(event) {
 							event.recipes.tfc.welding(`tfc:metal/boots/${material.getName()}`, `tfc:metal/unfinished_boots/${material.getName()}`, plateItem)
 								.tier(tfcProperty.getTier())
 								.id(`tfc:welding/${material.getName()}_boots`)
+
+							event.recipes.greate.compacting(`tfc:metal/boots/${material.getName()}`, [`tfc:metal/unfinished_boots/${material.getName()}`, plateItem])
+								.heated()
+								.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
+								.id(`greate:compacting/${material.getName()}_boots`)
 
 							//#endregion
 						}
@@ -472,6 +503,10 @@ function registerTFCMaterialsRecipes(event) {
 						.tier(tfcProperty.getTier())
 						.id(`tfc:anvil/${material.getName()}_long_rod`)
 
+					event.recipes.greate.compacting(longRodItem, [rodItem, rodItem])
+						.heated()
+						.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
+						.id(`greate:compacting/${material.getName()}_long_rod`)
 				}
 
 				// Bolt
@@ -942,6 +977,11 @@ function registerTFCMaterialsRecipes(event) {
 					// Сварка оголовий
 					event.recipes.tfc.welding(`tfc:metal/shears/${material.getName()}`, knifeHeadItem, knifeHeadItem, tfcProperty.getTier())
 						.id(`tfc:welding/${material.getName()}_shears`)
+
+					event.recipes.greate.compacting(`tfc:metal/shears/${material.getName()}`, [knifeHeadItem, knifeHeadItem])
+						.heated()
+						.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
+						.id(`greate:compacting/${material.getName()}_shears`)
 
 					// Декрафт инструмента в жидкость
 					event.recipes.tfc.heating(`tfc:metal/shears/${material.getName()}`, tfcProperty.getMeltTemp())

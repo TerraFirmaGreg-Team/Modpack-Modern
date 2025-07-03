@@ -145,6 +145,10 @@ function registerTFGRockRecipes(event) {
 			.itemOutputs(x.cracked)
 			.duration(12)
 			.EUt(8)
+
+		event.recipes.greate.pressing(x.cracked, x.raw)
+			.recipeTier(1)
+			.id(`greate:pressing/${x.raw}_to_${x.cracked}`.replace(/:/g, '_'))
 	})
 
 	// forge hammer
@@ -183,6 +187,10 @@ function registerTFGRockRecipes(event) {
 			.itemOutputs(x.hammered)
 			.duration(12)
 			.EUt(8)
+
+		event.recipes.greate.pressing(x.hammered, x.raw)
+			.recipeTier(1)
+			.id(`greate:pressing/${x.raw}_to_${x.hammered}`.replace(/:/g, '_'))
 	})
 
 	// slabs, stairs, walls
