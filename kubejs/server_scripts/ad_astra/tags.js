@@ -68,6 +68,13 @@ const registerAdAstraItemTags = (event) => {
 	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:encased_etrium_block')
 	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_plateblock')
 	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_panel')
+
+	event.add('tfc:foods', 'ad_astra:cheese')
+	event.add('tfc:foods/dairy', 'ad_astra:cheese')
+	event.add('tfc:foods/usable_in_sandwich', 'ad_astra:cheese')
+	event.add('tfc:foods/usable_in_jam_sandwich', 'ad_astra:cheese')
+	event.add('tfc:foods/usable_in_jam_sandwich_2', 'ad_astra:cheese')
+	event.add('firmalife:foods/cheeses', 'ad_astra:cheese')
 }
 
 const registerAdAstraBlockTags = (event) => {

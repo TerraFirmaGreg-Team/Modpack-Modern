@@ -60,12 +60,18 @@ const registerCreateItemTags = (event) => {
 
 	event.add('create:non_movable', 'gtceu:wood_crate')
 	event.add('create:non_movable', 'gtceu:bronze_crate')
+	event.add('create:non_movable', 'gtceu:black_bronze_crate')
+	event.add('create:non_movable', 'gtceu:bismuth_bronze_crate')
 	event.add('create:non_movable', 'gtceu:steel_crate')
 	event.add('create:non_movable', 'gtceu:aluminium_crate')
 	event.add('create:non_movable', 'gtceu:stainless_steel_crate')
 	event.add('create:non_movable', 'gtceu:titanium_crate')
 	event.add('create:non_movable', 'gtceu:tungsten_steel_crate')
 	event.add('create:non_movable', '#create:toolboxes')
+	event.add('create:non_movable', 'gtceu:lv_super_chest')
+	event.add('create:non_movable', 'gtceu:mv_super_chest')
+	event.add('create:non_movable', 'gtceu:hv_super_chest')
+	event.add('create:non_movable', 'gtceu:ev_super_chest')
 
 	event.remove('create:stone_types/deepslate', 'minecraft:deepslate')
 	event.remove('create:stone_types/dripstone', 'minecraft:dripstone_block')
