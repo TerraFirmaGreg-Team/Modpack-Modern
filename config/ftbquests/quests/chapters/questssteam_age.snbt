@@ -1620,7 +1620,11 @@
 		}
 		{
 			dependencies: ["09D913288896A67A"]
-			description: ["{quests.steam_age.steel_mech_press.desc}"]
+			description: [
+				"{quests.steam_age.steel_mech_press.desc.1}"
+				"{@pagebreak}"
+				"{quests.steam_age.steel_mech_press.desc.2}"
+			]
 			id: "0D39D83AA5F9D543"
 			optional: true
 			shape: "heart"
