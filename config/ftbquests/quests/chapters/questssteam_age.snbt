@@ -10,7 +10,7 @@
 		{
 			id: "39027CF4DC307D33"
 			linked_quest: "5E186CD5E83BFDF0"
-			x: -27.0d
+			x: -29.0d
 			y: 2.0d
 		}
 		{
@@ -31,7 +31,7 @@
 			linked_quest: "48A8E3210B2BAE1C"
 			shape: "octagon"
 			size: 2.0d
-			x: -27.0d
+			x: -29.0d
 			y: 0.0d
 		}
 	]
@@ -48,7 +48,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.basic_millstone.title}"
-			x: -18.0d
+			x: -19.5d
 			y: 0.0d
 		}
 		{
@@ -66,7 +66,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.horse_crank.title}"
-			x: -22.0d
+			x: -23.5d
 			y: -2.0d
 		}
 		{
@@ -81,7 +81,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.helve_hammer.title}"
-			x: -18.0d
+			x: -19.5d
 			y: -4.0d
 		}
 		{
@@ -109,7 +109,7 @@
 				}
 			]
 			title: "{quests.steam_age.basic_greate.title}"
-			x: -18.0d
+			x: -19.5d
 			y: -2.0d
 		}
 		{
@@ -1126,7 +1126,7 @@
 				}
 			]
 			title: "{quests.steam_age.create_tools.title}"
-			x: -20.0d
+			x: -21.5d
 			y: -4.0d
 		}
 		{
@@ -1243,7 +1243,7 @@
 				}
 			]
 			title: "{quests.steam_age.poor_paths.title}"
-			x: -23.5d
+			x: -25.0d
 			y: -3.5d
 		}
 		{
@@ -1294,7 +1294,7 @@
 				}
 			]
 			title: "{quests.steam_age.normal_paths.title}"
-			x: -24.0d
+			x: -25.5d
 			y: -2.0d
 		}
 		{
@@ -1347,7 +1347,7 @@
 				}
 			]
 			title: "{quests.steam_age.good_paths.title}"
-			x: -23.5d
+			x: -25.0d
 			y: -0.5d
 		}
 		{
@@ -1408,7 +1408,7 @@
 				type: "item"
 			}]
 			title: "{quests.metal_age.bronze_goodies.title}"
-			x: -20.0d
+			x: -21.5d
 			y: -2.0d
 		}
 		{
@@ -1601,6 +1601,38 @@
 			title: "{quests.steam_age.packager.title}"
 			x: -22.0d
 			y: 17.0d
+		}
+		{
+			dependencies: ["7B045998769930F0"]
+			description: ["{quests.steam_age.basic_mech_press.desc}"]
+			id: "14710C5B4981CECC"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.steam_age.basic_mech_press.subtitle}"
+			tasks: [{
+				id: "2F89D6D6745465DC"
+				item: "greate:andesite_alloy_mechanical_press"
+				type: "item"
+			}]
+			title: "{quests.steam_age.basic_mech_press.title}"
+			x: -17.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["09D913288896A67A"]
+			description: ["{quests.steam_age.steel_mech_press.desc}"]
+			id: "0D39D83AA5F9D543"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.steam_age.steel_mech_press.subtitle}"
+			tasks: [{
+				id: "32E30B6AC780CAF1"
+				item: "greate:steel_mechanical_press"
+				type: "item"
+			}]
+			title: "{quests.steam_age.steel_mech_press.title}"
+			x: -7.5d
+			y: 4.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]
