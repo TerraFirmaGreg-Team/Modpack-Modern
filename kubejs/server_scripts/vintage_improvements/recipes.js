@@ -82,39 +82,13 @@ function registerVintageImprovementsRecipes(event) {
 		'BBE',
 		'C D'
 	], {
-		A: '#forge:frames/bronze',
+		A: '#tfg:any_bronze_frame',
 		B: '#tfg:hardwood',
-		C: '#forge:double_iron_ingots',
+		C: '#tfg:any_iron_double_ingot',
 		D: 'greate:andesite_alloy_cogwheel',
 		E: '#minecraft:planks',
 		F: '#forge:tools/hammers'
-	}).id('tfg:vi/shaped/helve_hammer_bronze')
-
-	event.shaped('vintageimprovements:helve_hammer', [
-		'F A',
-		'BBE',
-		'C D'
-	], {
-		A: '#forge:frames/black_bronze',
-		B: '#tfg:hardwood',
-		C: '#forge:double_iron_ingots',
-		D: 'greate:andesite_alloy_cogwheel',
-		E: '#minecraft:planks',
-		F: '#forge:tools/hammers'
-	}).id('tfg:vi/shaped/helve_hammer_black_bronze')
-
-	event.shaped('vintageimprovements:helve_hammer', [
-		'F A',
-		'BBE',
-		'C D'
-	], {
-		A: '#forge:frames/bismuth_bronze',
-		B: '#tfg:hardwood',
-		C: '#forge:double_iron_ingots',
-		D: 'greate:andesite_alloy_cogwheel',
-		E: '#minecraft:planks',
-		F: '#forge:tools/hammers'
-	}).id('tfg:vi/shaped/helve_hammer_bismuth_bronze')
+	}).id('tfg:vi/shaped/helve_hammer')
 
 	event.recipes.create.mechanical_crafting('vintageimprovements:lathe', [
 		'DEEFE',
