@@ -215,10 +215,7 @@ function registerTFGSpaceBlocks(event) {
 	// #region Plants
 
 	/*
-	* Default box for single_plant = (3.0F, 0.0F, 3.0F, 13.0F, 7.0F, 13.0F)
-	* Default box for double_plants--Per half = (2.0F, 0.0F, 2.0F, 14.0F, 16.0F, 14.0F)
-	* Default box for smoke_emitter--Emits Signal smoke = (2.0F, 0.0F, 2.0F, 14.0F, 16.0F, 14.0F)
-	* Default box for light_smoke_emitter--Emits Cozy smoke = (2.0F, 0.0F, 2.0F, 14.0F, 16.0F, 14.0F)
+	Custom TFG Builder information https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-TFG-Custom-Kubejs-Scripts
 	*/
 
 	event.create('tfg:lunar_roots', 'tfg:decorative_plant')
@@ -260,6 +257,38 @@ function registerTFGSpaceBlocks(event) {
 	event.create('tfg:corallium_arenicolus_5', 'tfg:decorative_plant')
 		.soundType('nether_wart')
 		.tagItem('tfg:venus_plants')
+		.box(3, 0, 3, 13, 14, 13)
+
+	event.create('tfg:geyser_source', 'tfg:particle_emitter_decoration')
+		.soundType('dripstone_block')
+		.mapColor('color_white')
+		.resistance(6)
+		.hardness(1.5)
+		.particleOffset(0.3, 1, 0.3)
+		.particleVelocity(0, 0.1, 0)
+		.particle('minecraft:campfire_signal_smoke')
+		.particleCount(5)
+		.particleForced(true)
+
+	event.create('tfg:geyser_source_small', 'tfg:particle_emitter_decoration')
+		.soundType('dripstone_block')
+		.mapColor('color_white')
+		.resistance(6)
+		.hardness(1.5)
+		.particleOffset(0.3, 1, 0.3)
+		.particleVelocity(0, 0.05, 0)
+		.particle('minecraft:campfire_cosy_smoke')
+		.particleCount(2)
+		.particleForced(false)
+
+	event.create('tfg:stromatolite_cluster_small', 'tfg:decorative_plant')
+		.soundType('dripstone_block')
+		.mapColor('color_brown')
+		.box(3, 0, 3, 13, 6, 13)
+
+	event.create('tfg:stromatolite_cluster_medium', 'tfg:decorative_plant')
+		.soundType('dripstone_block')
+		.mapColor('color_brown')
 		.box(3, 0, 3, 13, 14, 13)
 
 	// #endregion
