@@ -14,197 +14,13 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_desh)Desh & Ilmenite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_pyrolusite)Pyrolusite and Cobalt$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_apatite)Апатит і Пірохлор$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_monazite)Бастнезит і Монацит$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)Боксит і Ільменіт$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)Вульфеніт і Молібденіт$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnierite)Гарнієрит і Кобальтит$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_graphite)Графіт і Діамант$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_mica)Кіаніт, Слюда та Боксити$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_manganese)Марганець і Тантал$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_quartz)Поклади Істинного Кварцу$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)Редстоун, Кіновар і Рубін$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sapphire)Сапфір і Альмадін$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_saltpeter)Селітра та Електротин$()$()",
+      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_apatite)Апатит і Пірохлор$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_monazite)Бастнезит і Монацит$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)Боксит і Ільменіт$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)Вульфеніт і Молібденіт$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnierite)Гарнієрит і Кобальтит$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_graphite)Графіт і Діамант$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_desh)Деш і Ільменіт$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_quartz)Істинний Кварц$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_mica)Кіаніт, Слюда та Боксити$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_manganese)Марганець і Тантал$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_pyrolusite)Піролюзит і Кобальт$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)Редстоун, Кіновар і Рубін$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sapphire)Сапфір і Альмадін$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_saltpeter)Селітра та Електротин$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_beryllium)Смарагд і Берилій$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_lubricant)Соапостон, Тальк і Трона$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_silver)Срібло, Гален і Свинець$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sphalerite)Сфалерит і Пірит$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_topaz)Топаз і Халькоцит$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_magnetite)Хроміт і Магнетит$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_scheelite)Шеєліт та Вольфрам$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sheldonite)Шелдоніт і Борніт$()$()",
+      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_beryllium)Смарагд і Берилій$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_silver)Срібло, Гален і Свинець$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_lubricant)Стеатит, Тальк і Трона$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sphalerite)Сфалерит і Пірит$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_topaz)Топаз і Халькоцит$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_magnetite)Хроміт і Магнетит$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_scheelite)Шеєліт та Вольфрам$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sheldonite)Шелдоніт і Борніт$()$()",
       "type": "patchouli:text"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 230$(br)$(thing)Щільність$(): 0.35$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 10 — 80$(br)$(thing)Розмір$(): 45$(br)$(thing)Індикатор Max Depth$(): 50$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Габро, Дацит",
-      "title": "Desh & Ilmenite",
-      "type": "patchouli:text",
-      "anchor": "moon_desh"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Деш",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/desh"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 40%$(br)$(thing)Джерело$(): Заліза, Титану, Азоту$(br)$(thing)Формула$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Ільменіт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/ilmenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Залізо, Титану$(br)$(thing)Формула$(): FeTiO₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Алюмінію",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/aluminium"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Армолколіт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/armalcolite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Джерело$(): Магнію, Рутилу, Титану$(br)$(thing)Формула$(): TODO",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 210$(br)$(thing)Щільність$(): 0.25$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 20 — 80$(br)$(thing)Розмір$(): 40$(br)$(thing)Індикатор Max Depth$(): 50$(br2)$(thing)Типи каменю$(): Андезит, Анортозит, Базальт, Габро, Норит",
-      "title": "Pyrolusite and Cobalt",
-      "type": "patchouli:text",
-      "anchor": "moon_pyrolusite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Піролюзит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/pyrolusite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 38%$(br)$(thing)Джерело$(): Магнезії$(br)$(thing)Формула$(): MnO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Кобальтит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/cobaltite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Джерело$(): Кобальту, Миш'яку$(br)$(thing)Формула$(): CoAsS$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібна захисна маска)Арсенікоз (інгаляція)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Кобальт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/cobalt"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Розплавляється в$(): Кобальту$(br)$(thing)Формула$(): Co",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Танталіт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/tantalite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 14%$(br)$(thing)Джерело$(): Магнезії, Танталу$(br)$(thing)Формула$(): MnTa₂O₆",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:empty",
@@ -730,6 +546,190 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)Рідкість$(): 230$(br)$(thing)Щільність$(): 0.35$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 10 — 80$(br)$(thing)Розмір$(): 45$(br)$(thing)Індикатор Max Depth$(): 50$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Габро, Дацит",
+      "title": "Деш і Ільменіт",
+      "type": "patchouli:text",
+      "anchor": "moon_desh"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Деш",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/desh"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 40%$(br)$(thing)Джерело$(): Заліза, Титану, Азоту$(br)$(thing)Формула$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Ільменіт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/ilmenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Залізо, Титану$(br)$(thing)Формула$(): FeTiO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Алюмінію",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/aluminium"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Армолколіт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/armalcolite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Джерело$(): Магнію, Рутилу, Титану$(br)$(thing)Формула$(): TODO",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Рідкість$(): 230$(br)$(thing)Щільність$(): 0.3$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 10 — 100$(br)$(thing)Розмір$(): 60$(br)$(thing)Індикатор Max Depth$(): 80$(br2)$(thing)Типи каменю$(): Андезит, Анортозит, Базальт, Габро, Дацит, Діорит, Норит, Ріоліт, Фоноліт",
+      "title": "Істинний Кварц",
+      "type": "patchouli:text",
+      "anchor": "moon_quartz"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Поклади Істинного Кварцу",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/certus_quartz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 45%$(br)$(thing)Використовується для$(): Applied Energistics 2$(br)$(thing)Формула$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кварц Нижнього Світу",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nether_quartz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 30%$(br)$(thing)Використовується для$(): Applied Energistics 2$(br)$(thing)Формула$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кварцит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/quartzite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Використовується для$(): LV компонентів$(br)$(thing)Формула$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Барит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/barite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Барію$(br)$(thing)Формула$(): BaSO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)Рідкість$(): 250$(br)$(thing)Щільність$(): 0.25$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 120$(br)$(thing)Розмір$(): 35$(br)$(thing)Індикатор Max Depth$(): 50$(br2)$(thing)Типи каменю$(): Анортозит, Габро, Діорит, Норит",
       "title": "Кіаніт, Слюда та Боксити",
       "type": "patchouli:text",
@@ -929,17 +929,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 230$(br)$(thing)Щільність$(): 0.3$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 10 — 100$(br)$(thing)Розмір$(): 60$(br)$(thing)Індикатор Max Depth$(): 80$(br2)$(thing)Типи каменю$(): Андезит, Анортозит, Базальт, Габро, Дацит, Діорит, Норит, Ріоліт, Фоноліт",
-      "title": "Поклади Істинного Кварцу",
+      "text": "$(thing)Рідкість$(): 210$(br)$(thing)Щільність$(): 0.25$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 20 — 80$(br)$(thing)Розмір$(): 40$(br)$(thing)Індикатор Max Depth$(): 50$(br2)$(thing)Типи каменю$(): Андезит, Анортозит, Базальт, Габро, Норит",
+      "title": "Піролюзит і Кобальт",
       "type": "patchouli:text",
-      "anchor": "moon_quartz"
+      "anchor": "moon_pyrolusite"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Поклади Істинного Кварцу",
+      "name": "Піролюзит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/certus_quartz"
+          "0": "#forge:ores/pyrolusite"
         },
         "pattern": [
           [
@@ -951,15 +951,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 45%$(br)$(thing)Використовується для$(): Applied Energistics 2$(br)$(thing)Формула$(): SiO₂",
+      "text": "$(thing)Відсоток$(): 38%$(br)$(thing)Джерело$(): Магнезії$(br)$(thing)Формула$(): MnO₂",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Кварц Нижнього Світу",
+      "name": "Кобальтит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/nether_quartz"
+          "0": "#forge:ores/cobaltite"
         },
         "pattern": [
           [
@@ -971,15 +971,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 30%$(br)$(thing)Використовується для$(): Applied Energistics 2$(br)$(thing)Формула$(): SiO₂",
+      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Джерело$(): Кобальту, Миш'яку$(br)$(thing)Формула$(): CoAsS$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібна захисна маска)Арсенікоз (інгаляція)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Кварцит",
+      "name": "Кобальт",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/quartzite"
+          "0": "#forge:ores/cobalt"
         },
         "pattern": [
           [
@@ -991,15 +991,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Використовується для$(): LV компонентів$(br)$(thing)Формула$(): SiO₂",
+      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Розплавляється в$(): Кобальту$(br)$(thing)Формула$(): Co",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Барит",
+      "name": "Танталіт",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/barite"
+          "0": "#forge:ores/tantalite"
         },
         "pattern": [
           [
@@ -1011,7 +1011,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Барію$(br)$(thing)Формула$(): BaSO₂",
+      "text": "$(thing)Відсоток$(): 14%$(br)$(thing)Джерело$(): Магнезії, Танталу$(br)$(thing)Формула$(): MnTa₂O₆",
       "type": "patchouli:multiblock"
     },
     {
@@ -1419,8 +1419,100 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)Рідкість$(): 210$(br)$(thing)Щільність$(): 0.4$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 20 — 75$(br)$(thing)Розмір$(): 30$(br)$(thing)Індикатор Max Depth$(): 50$(br2)$(thing)Типи каменю$(): Анортозит, Дацит, Діорит, Норит, Ріоліт",
+      "title": "Срібло, Гален і Свинець",
+      "type": "patchouli:text",
+      "anchor": "moon_silver"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородна Срібла",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 42%$(br)$(thing)Розплавляється в$(): Срібло$(br)$(thing)Формула$(): Ag",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Галена",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/galena"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 28%$(br)$(thing)Розплавляється в$(): Свинцю$(br)$(thing)Формула$(): PbS$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібна захисна маска)Слабка отруйність (інгаляція)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Свинець",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lead"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Розплавляється в$(): Свинець$(br)$(thing)Формула$(): Pb$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібна захисна маска)Слабка отруйність (інгаляція)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Оливін",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/olivine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 4%$(br)$(thing)Джерело$(): Магнію, Залізо$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)Рідкість$(): 190$(br)$(thing)Щільність$(): 0.25$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 66$(br)$(thing)Розмір$(): 36$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Анортозит, Базальт, Габро, Діорит, Норит",
-      "title": "Соапостон, Тальк і Трона",
+      "title": "Стеатит, Тальк і Трона",
       "type": "patchouli:text",
       "anchor": "moon_lubricant"
     },
@@ -1523,98 +1615,6 @@
       "enable_visualize": false,
       "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Джерело$(): Натрію$(br)$(thing)Формула$(): Na₃C₂H(H₂O)₂O₆",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 210$(br)$(thing)Щільність$(): 0.4$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 20 — 75$(br)$(thing)Розмір$(): 30$(br)$(thing)Індикатор Max Depth$(): 50$(br2)$(thing)Типи каменю$(): Анортозит, Дацит, Діорит, Норит, Ріоліт",
-      "title": "Срібло, Гален і Свинець",
-      "type": "patchouli:text",
-      "anchor": "moon_silver"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Самородна Срібла",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/silver"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 42%$(br)$(thing)Розплавляється в$(): Срібло$(br)$(thing)Формула$(): Ag",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Галена",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/galena"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 28%$(br)$(thing)Розплавляється в$(): Свинцю$(br)$(thing)Формула$(): PbS$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібна захисна маска)Слабка отруйність (інгаляція)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Свинець",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/lead"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Розплавляється в$(): Свинець$(br)$(thing)Формула$(): Pb$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібна захисна маска)Слабка отруйність (інгаляція)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Оливін",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/olivine"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 4%$(br)$(thing)Джерело$(): Магнію, Залізо$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
