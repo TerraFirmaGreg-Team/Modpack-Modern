@@ -72,6 +72,8 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfc:colored_terracotta', 'minecraft:white_terracotta')
 
     event.add('tfc:bells', 'minecraft:bell')
+
+    event.add('tfc:plants', 'minecraft:spore_blossom')
 }
 
 const registerMinecraftBlockTags = (event) => {

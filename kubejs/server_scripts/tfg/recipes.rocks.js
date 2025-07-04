@@ -629,7 +629,8 @@ function registerTFGRockRecipes(event) {
 		'minecraft:deepslate',
 		'minecraft:cobbled_deepslate',
 		'minecraft:blackstone',
-		'minecraft:dripstone_block'
+		'minecraft:dripstone_block',
+		'minecraft:basalt'
 	]
 	
 	ROCK_DUPING.forEach(x => {

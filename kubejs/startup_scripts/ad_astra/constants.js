@@ -18,7 +18,6 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:water_pump',
 	'ad_astra:cryo_freezer',
 	'ad_astra:wrench',
-	'ad_astra:cheese',
 	'ad_astra:cheese_block',
 	'ad_astra:photovoltaic_etrium_cell',
 	'ad_astra:photovoltaic_vesnium_cell',
@@ -103,4 +102,13 @@ global.AD_ASTRA_DISABLED_FLUIDS =
 	'ad_astra:oil',
 	'ad_astra:fuel',
 	'ad_astra:cryo_fuel'
+];
+
+global.BREATHABLE_COMPRESSED_AIRS =
+[
+	'tfg:compressed_nitrox',
+	'tfg:compressed_heliox',
+	'tfg:compressed_heliox_3',
+	'tfg:compressed_trimix',
+	'tfg:compressed_trimix_3'
 ];

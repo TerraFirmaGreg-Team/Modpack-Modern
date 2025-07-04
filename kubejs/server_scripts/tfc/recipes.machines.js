@@ -195,14 +195,6 @@ function registerTFCMachineRecipes(event) {
 		.duration(100)
 		.EUt(2)
 
-	// Glass lens
-	event.recipes.gtceu.alloy_smelter(`tfg:tfc/glass_lens`)
-		.itemInputs('tfc:silica_glass_batch')
-		.notConsumable('#forge:lenses')
-		.itemOutputs('tfc:lens')
-		.duration(100)
-		.EUt(2)
-
 	// Empty Jar
 	event.recipes.gtceu.alloy_smelter('tfc:jar_alloying')
 		.itemInputs('#tfc:glass_batches_tier_2')
@@ -319,7 +311,9 @@ function registerTFCMachineRecipes(event) {
 		.EUt(4)
 
 	// Jute Fiber
-	generateMixerRecipe(event, 'tfc:jute', Fluid.of('minecraft:water', 200), 'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
+	generateMixerRecipe(event, 'tfc:jute', 
+		JsonIO.of({ amount: 200, value: { tag: "tfg:clean_water" }}),
+		'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
 
 	// Ceramic Recycling
 	event.recipes.gtceu.macerator('tfg:sherd_to_brick_dust')

@@ -26,11 +26,17 @@ function removeGreateRecipes(event) {
 	event.remove({ id: 'greate:shaped/stainless_steel_mechanical_saw' })
 	event.remove({ id: 'greate:shaped/titanium_mechanical_saw' })
 
-	event.remove({ id: 'greate:splashing/dough' })
 	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound' })
-	event.remove({ id: 'greate:mixing/integration/create/mixing/tea' })
+	
+	event.remove({ id: /^greate:mixing\/integration\/create\/.*/ })
+	event.remove({ id: /^greate:sawing\/integration\/create\/.*/ })
+	event.remove({ id: /^greate:splashing\/integration\/create\/.*/ })
+	event.remove({ id: /^greate:crushing\/integration\/create\/.*/ })
+	event.remove({ id: /^greate:milling\/integration\/create\/.*/ })
+	event.remove({ id: /^greate:pressing\/integration\/create\/.*/ })
 
 	event.remove({ mod: 'greate', type: 'create:deploying' });
 	event.remove({ mod: 'greate', type: 'create:sequenced_assembly' });
 	event.remove({ mod: 'greate', type: 'gtceu:assembler' });
+	event.remove({ type: 'greate:pressing' });
 }

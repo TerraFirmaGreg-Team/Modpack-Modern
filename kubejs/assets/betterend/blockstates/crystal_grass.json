@@ -1,0 +1,22 @@
+{
+	"variants": {
+		"": [
+			{ "model": "betterend:block/crystal_grass_1" },
+			{ "model": "betterend:block/crystal_grass_2", "weight": 1 },
+			{ "model": "betterend:block/crystal_grass_3", "weight": 2 },
+			{ "model": "betterend:block/crystal_grass_4", "weight": 3 },
+			{ "model": "betterend:block/crystal_grass_1", "y": 90 },
+			{ "model": "betterend:block/crystal_grass_2", "y": 90, "weight": 1 },
+			{ "model": "betterend:block/crystal_grass_3", "y": 90, "weight": 2 },
+			{ "model": "betterend:block/crystal_grass_4", "y": 90, "weight": 3 },
+			{ "model": "betterend:block/crystal_grass_1", "y": 180 },
+			{ "model": "betterend:block/crystal_grass_2", "y": 180, "weight": 1 },
+			{ "model": "betterend:block/crystal_grass_3", "y": 180, "weight": 2 },
+			{ "model": "betterend:block/crystal_grass_4", "y": 180, "weight": 3 },
+			{ "model": "betterend:block/crystal_grass_1", "y": 270 },
+			{ "model": "betterend:block/crystal_grass_2", "y": 270, "weight": 1 },
+			{ "model": "betterend:block/crystal_grass_3", "y": 270, "weight": 2 },
+			{ "model": "betterend:block/crystal_grass_4", "y": 270, "weight": 3 }
+		]
+	}
+}

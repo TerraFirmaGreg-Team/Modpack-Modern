@@ -40,7 +40,10 @@
 		[],
 		"#tfg:moon_small_rock_features",
 		[
-			"tfg:moon/surface/warped_sprouts_patch",
+			"tfg:moon/surface/chorus_lily",
+			"tfg:moon/surface/chorus_grass_rare",
+			"tfg:moon/surface/chorus_grass_common",
+			"tfg:moon/surface/inflexia",
 			"tfg:moon/surface/chorus_plant_common"
 		],
 		[
@@ -72,17 +75,17 @@
 				"type": "minecraft:enderman",
 				"maxCount": 3,
 				"minCount": 1,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "endermanoverhaul:windswept_hills_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
+				"weight": 10
 			},
 			{
 				"type": "endermanoverhaul:end_enderman",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
 			},

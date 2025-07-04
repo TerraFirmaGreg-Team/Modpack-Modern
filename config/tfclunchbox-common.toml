@@ -1,0 +1,11 @@
+
+#Food Traits Configuration
+#NOTE: Changes to trait values require game restart to take effect
+[food_traits]
+	#Decay modifier for COOLED trait (lower = food lasts longer)
+	#Range: 0.01 ~ 1.0
+	cooled_decay_modifier = 0.3
+	#Decay modifier for PRESERVED trait (lower = food lasts longer)
+	#Range: 0.01 ~ 1.0
+	preserved_decay_modifier = 0.55
+

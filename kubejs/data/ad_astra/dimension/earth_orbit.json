@@ -1,0 +1,11 @@
+{
+	"type": "tfg:orbit",
+	"generator": {
+		"type": "minecraft:noise",
+		"biome_source": {
+			"type": "minecraft:fixed",
+			"biome": "ad_astra:orbit"
+		},
+		"settings": "ad_astra:orbit"
+	}
+}

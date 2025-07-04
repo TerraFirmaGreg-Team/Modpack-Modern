@@ -659,7 +659,14 @@ function removeGTCEURecipes(event) {
 
 	event.remove({ id: 'gtceu:forming_press/form_purpur_slab_into_pillar' })
 
+	event.remove({ id: 'gtceu:rock_breaker/red_granite' })
+
 	// Remove vanilla Eye of Ender
 
 	event.remove({ id: 'minecraft:ender_eye' })
+
+	// Remove old treated plank and wood plank recipe
+
+	event.remove({ id: 'gtceu:compressor/compress_plate_dust_wood' })
+	event.remove({ id: 'gtceu:compressor/compress_plate_dust_treated_wood'})
 }

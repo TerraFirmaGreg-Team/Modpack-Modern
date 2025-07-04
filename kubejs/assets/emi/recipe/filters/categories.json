@@ -67,6 +67,12 @@
             "category": "greate:packing"
         },
         {
+            "category": "greate:fan_haunting"
+        },
+        {
+            "category": "ae2:entropy"
+        },
+        {
             "id": "/emi:/crafting/repairing/[^*]+/"
         },
         {
@@ -92,9 +98,6 @@
         },
         {
             "category": "vintageimprovements:laser_cutting"
-        },
-        {
-            "category": "ad_astra:oxygen_loading"
         },
         {
             "category": "ftbquests:quest"

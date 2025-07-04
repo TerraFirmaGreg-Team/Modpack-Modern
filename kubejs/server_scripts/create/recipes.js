@@ -242,7 +242,7 @@ const registerCreateRecipes = (event) => {
 		'BCB',
 		'AEA'
 	], {
-		A: '#forge:screws/copper',
+		A: '#forge:bolts/copper',
 		B: '#forge:plates/copper',
 		C: '#forge:glass_panes',
 		D: '#forge:tools/screwdrivers',
@@ -250,7 +250,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/fluid_tank')
 
 	event.recipes.gtceu.assembler('create:fluid_tank')
-		.itemInputs('2x #forge:screws/copper', '2x #forge:plates/copper', '#forge:glass_panes')
+		.itemInputs('2x #forge:bolts/copper', '2x #forge:plates/copper', '#forge:glass_panes')
 		.itemOutputs('create:fluid_tank')
 		.circuit(4)
 		.duration(50)
@@ -454,7 +454,7 @@ const registerCreateRecipes = (event) => {
 		'CCC',
 		'A A'
 	], {
-		A: '#forge:screws/wrought_iron',
+		A: '#forge:bolts/wrought_iron',
 		C: '#minecraft:logs'
 	}).id('tfg:create/shaped/linear_chassis')
 
@@ -467,7 +467,7 @@ const registerCreateRecipes = (event) => {
 		' C ',
 		'ACA'
 	], {
-		A: '#forge:screws/wrought_iron',
+		A: '#forge:bolts/wrought_iron',
 		C: '#minecraft:logs'
 	}).id('tfg:create/shaped/radial_chassis')
 
@@ -595,7 +595,7 @@ const registerCreateRecipes = (event) => {
 		'BCB',
 		'ABA'
 	], {
-		A: '#forge:screws/wrought_iron',
+		A: '#forge:bolts/wrought_iron',
 		B: 'gtceu:treated_wood_rod',
 		C: 'gtceu:treated_wood_frame'
 	}).id('tfg:create/shaped/sail_frame')
@@ -1297,7 +1297,7 @@ const registerCreateRecipes = (event) => {
 		'BBB'
 	], {
 		A: '#forge:plates/wrought_iron',
-		B: '#forge:nuggets/wrought_iron'
+		B: '#forge:bolts/wrought_iron'
 	}).id('tfg:create/shaped/metal_girder')
 
 	// Стеклянная дверь
@@ -1507,8 +1507,8 @@ const registerCreateRecipes = (event) => {
 		'ACA'
 	], {
 		A: 'gtceu:treated_wood_planks',
-		B: '#tfg:shafts',
-		C: '#forge:plates/wrought_iron'
+		B: 'create:andesite_casing',
+		C: '#forge:rods/wrought_iron'
 	}).id('create:shaped/water_wheel')
 
 	event.shaped('create:large_water_wheel', [

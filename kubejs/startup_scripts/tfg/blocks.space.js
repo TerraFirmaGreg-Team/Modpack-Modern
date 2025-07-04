@@ -7,7 +7,7 @@ function registerTFGSpaceBlocks(event) {
 		.item(item => {
 			item.modelJson({ parent: 'tfg:block/marker/moon' })
 		})
-		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('c:hidden_from_recipe_viewers')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -16,7 +16,7 @@ function registerTFGSpaceBlocks(event) {
 		.item(item => {
 			item.modelJson({ parent: 'tfg:block/marker/mars' })
 		})
-		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('c:hidden_from_recipe_viewers')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -25,7 +25,7 @@ function registerTFGSpaceBlocks(event) {
 		.item(item => {
 			item.modelJson({ parent: 'tfg:block/marker/venus' })
 		})
-		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('c:hidden_from_recipe_viewers')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -34,7 +34,7 @@ function registerTFGSpaceBlocks(event) {
 		.item(item => {
 			item.modelJson({ parent: 'tfg:block/marker/mercury' })
 		})
-		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('c:hidden_from_recipe_viewers')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -211,6 +211,87 @@ function registerTFGSpaceBlocks(event) {
 	event.create('tfg:spike/permafrost_spike', 'tfc:rock_spike')
 		.stoneSoundType()
 		.noItem()
+
+	// #region Plants
+
+	/*
+	Custom TFG Builder information https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-TFG-Custom-Kubejs-Scripts
+	*/
+
+	event.create('tfg:lunar_roots', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.lightLevel(0.4)
+		.tagItem('tfg:moon_plants')
+
+	event.create('tfg:lunar_sprouts', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:moon_plants')
+
+	event.create('tfg:corallium_arenicolus_0', 'tfg:double_decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:venus_plants')
+		.lightLevel(0.4)
+		.renderType('translucent')
+
+	event.create('tfg:corallium_arenicolus_1', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:venus_plants')
+		.box(3, 0, 3, 13, 14, 13)
+
+	event.create('tfg:corallium_arenicolus_2', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:venus_plants')
+		.renderType('translucent')
+		.box(0, 0, 0, 16, 4, 16)
+
+	event.create('tfg:corallium_arenicolus_3', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:venus_plants')
+		.box(3, 0, 3, 13, 14, 13)
+
+	event.create('tfg:corallium_arenicolus_4', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:venus_plants')
+		.box(3, 0, 3, 13, 14, 13)
+
+	event.create('tfg:corallium_arenicolus_5', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:venus_plants')
+		.box(3, 0, 3, 13, 14, 13)
+
+	event.create('tfg:geyser_source', 'tfg:particle_emitter_decoration')
+		.soundType('dripstone_block')
+		.mapColor('color_white')
+		.resistance(6)
+		.hardness(1.5)
+		.particleOffset(0.3, 1, 0.3)
+		.particleVelocity(0, 0.1, 0)
+		.particle('minecraft:campfire_signal_smoke')
+		.particleCount(5)
+		.particleForced(true)
+
+	event.create('tfg:geyser_source_small', 'tfg:particle_emitter_decoration')
+		.soundType('dripstone_block')
+		.mapColor('color_white')
+		.resistance(6)
+		.hardness(1.5)
+		.particleOffset(0.3, 1, 0.3)
+		.particleVelocity(0, 0.05, 0)
+		.particle('minecraft:campfire_cosy_smoke')
+		.particleCount(2)
+		.particleForced(false)
+
+	event.create('tfg:stromatolite_cluster_small', 'tfg:decorative_plant')
+		.soundType('dripstone_block')
+		.mapColor('color_brown')
+		.box(3, 0, 3, 13, 6, 13)
+
+	event.create('tfg:stromatolite_cluster_medium', 'tfg:decorative_plant')
+		.soundType('dripstone_block')
+		.mapColor('color_brown')
+		.box(3, 0, 3, 13, 14, 13)
+
+	// #endregion
 
 	//#region Venus Blocks
 	//Fluorapatite

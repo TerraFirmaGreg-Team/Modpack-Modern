@@ -188,6 +188,12 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:foods/usable_in_meal_bag', 'tfc:food/boiled_egg');
 	//#endregion
 
+	// #region Space blocks
+	event.add('tfg:moon_plants', 'tfg:lunar_roots')
+	event.add('tfg:moon_plants', 'tfg:lunar_sprouts')
+	event.add('tfg:moon_plants', 'tfg:lunar_chorus_flower')
+	// #endregion
+
 	// #region 0.7.19 -> 0.9 conversion
 	event.add('c:hidden_from_recipe_viewers', 'treetap:tap')
 	event.add('c:hidden_from_recipe_viewers', 'tfcea:refrigerator')
@@ -337,14 +343,6 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfc:rock/hardened', 'tfg:rock/hardened_dripstone')
 
 	// #endregion
-
-	// #region Space blocks
-
-	event.add('tfc:plants', 'tfg:lunar_roots')
-	event.add('tfc:plants', 'tfg:lunar_sprouts')
-	event.add('tfc:plants', 'tfg:lunar_chorus_flower')
-
-	// #endregion
 }
 
 const registerTFGFluidTags = (event) => {
@@ -367,11 +365,13 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:usable_in_red_steel_bucket', 'tfg:conifer_pitch')
 	event.add('tfc:usable_in_blue_steel_bucket', 'tfg:conifer_pitch')
 
-	event.add('tfg:breathable_compressed_air', 'tfg:compressed_nitrox')
-	event.add('tfg:breathable_compressed_air', 'tfg:compressed_heliox')
-	event.add('tfg:breathable_compressed_air', 'tfg:compressed_heliox_3')
-	event.add('tfg:breathable_compressed_air', 'tfg:compressed_trimix')
-	event.add('tfg:breathable_compressed_air', 'tfg:compressed_trimix_3')
+	event.add('tfg:clean_water', 'minecraft:water')
+	event.add('tfg:clean_water', 'tfc:river_water')
+	event.add('tfg:clean_water', 'tfc:spring_water')
+
+	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
+		event.add('tfg:breathable_compressed_air', x)
+	})
 }
 
 
