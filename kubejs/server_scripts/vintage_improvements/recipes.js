@@ -628,25 +628,25 @@ function registerVintageImprovementsRecipes(event) {
 	}).id('tfg:vi/pressurizing/glowstone')
 
 	event.custom({
-    	type: 'vintageimprovements:pressurizing',
-    	ingredients: [{ item: 'tfg:sunflower' }],
+    	type: 'vintageimprovements:vacuumizing',
+    	ingredients: [{ item: 'tfg:sunflower_product' }],
         results: [{ fluid: 'gtceu:seed_oil', amount: 350 }],
-    	processingTime: 25
-    }).id('tfg:vi/pressurizing/sunflower')
+    	processingTime: 1000
+    }).id('tfg:vi/vacuumizing/sunflower')
 
     event.custom({
-   		type: 'vintageimprovements:pressurizing',
-    	ingredients: [{ item: 'tfg:rapeseed' }],
+   		type: 'vintageimprovements:vacuumizing',
+    	ingredients: [{ item: 'tfg:rapeseed_product' }],
     	results: [{ fluid: 'gtceu:seed_oil', amount: 600 }],
     	processingTime: 1000
-    }).id('tfg:vi/pressurizing/rapeseed')
+    }).id('tfg:vi/vacuumizing/rapeseed')
 
     event.custom({
-    	type: 'vintageimprovements:pressurizing',
+    	type: 'vintageimprovements:vacuumizing',
     	ingredients: [{ tag: 'forge:seeds'}],
     	results: [{ fluid: 'gtceu:seed_oil', amount: 16 }],
     	processingTime: 100
-    }).id('tfg:vi/pressurizing/seed_oil')	
+    }).id('tfg:vi/vacuumizing/seed_oil')	
 
 	// #endregion
 

@@ -29,14 +29,26 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
-	//#region misc mixer
+	//stuff for biodiesel meta that idk where to place cause I don't read russian
 	event.recipes.gtceu.mixer(`alcohol_biodiesel`)
 		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" }}))
 		.inputFluids(Fluid.of('gtceu:seed_oil', 6000))
         .outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
         .duration(20*30)
         .EUt(GTValues.VHA[GTValues.ULV])
-    //#endregion
+
+	event.recipes.gtceu.extractor(`rapeseed_oil`)
+		.itemInputs('tfg:rapeseed_product')
+        .outputFluids(Fluid.of('gtceu:seed_oil', 600))
+        .duration(20*30)
+        .EUt(GTValues.VHA[GTValues.ULV])
+
+	event.recipes.gtceu.extractor(`sunflower_oil`)
+		.itemInputs('tfg:sunflower_product')
+        .outputFluids(Fluid.of('gtceu:seed_oil', 350))
+        .duration(20*30)
+        .EUt(GTValues.VHA[GTValues.ULV])
+
 	
 	//#region Выход: Кварцевый песок
 
