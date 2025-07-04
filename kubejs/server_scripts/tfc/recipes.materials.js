@@ -124,7 +124,7 @@ function registerTFCMaterialsRecipes(event) {
 								.tier(tfcProperty.getTier())
 								.id(`tfc:welding/${material.getName()}_helmet`)
 
-							event.recipes.greate.compacting(`tfc:metal/helmet/${material.getName()}`, [`tfc:metal/unfinished_helmet/${material.getName()}`, plateItem])
+							event.recipes.greate.compacting(`tfc:metal/helmet/${material.getName()}`, [`tfc:metal/unfinished_helmet/${material.getName()}`, plateItem, 'tfc:powder/flux'])
 								.heated()
 								.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
 								.id(`greate:compacting/${material.getName()}_helmet`)
@@ -154,7 +154,7 @@ function registerTFCMaterialsRecipes(event) {
 								.tier(tfcProperty.getTier())
 								.id(`tfc:welding/${material.getName()}_chestplate`)
 
-							event.recipes.greate.compacting(`tfc:metal/chestplate/${material.getName()}`, [`tfc:metal/unfinished_chestplate/${material.getName()}`, doublePlateItem])
+							event.recipes.greate.compacting(`tfc:metal/chestplate/${material.getName()}`, [`tfc:metal/unfinished_chestplate/${material.getName()}`, doublePlateItem, 'tfc:powder/flux'])
 								.heated()
 								.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
 								.id(`greate:compacting/${material.getName()}_chestplate`)
@@ -184,7 +184,7 @@ function registerTFCMaterialsRecipes(event) {
 								.tier(tfcProperty.getTier())
 								.id(`tfc:welding/${material.getName()}_greaves`)
 
-							event.recipes.greate.compacting(`tfc:metal/greaves/${material.getName()}`, [`tfc:metal/unfinished_greaves/${material.getName()}`, plateItem])
+							event.recipes.greate.compacting(`tfc:metal/greaves/${material.getName()}`, [`tfc:metal/unfinished_greaves/${material.getName()}`, plateItem, 'tfc:powder/flux'])
 								.heated()
 								.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
 								.id(`greate:compacting/${material.getName()}_greaves`)
@@ -214,7 +214,7 @@ function registerTFCMaterialsRecipes(event) {
 								.tier(tfcProperty.getTier())
 								.id(`tfc:welding/${material.getName()}_boots`)
 
-							event.recipes.greate.compacting(`tfc:metal/boots/${material.getName()}`, [`tfc:metal/unfinished_boots/${material.getName()}`, plateItem])
+							event.recipes.greate.compacting(`tfc:metal/boots/${material.getName()}`, [`tfc:metal/unfinished_boots/${material.getName()}`, plateItem, 'tfc:powder/flux'])
 								.heated()
 								.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
 								.id(`greate:compacting/${material.getName()}_boots`)
@@ -503,7 +503,7 @@ function registerTFCMaterialsRecipes(event) {
 						.tier(tfcProperty.getTier())
 						.id(`tfc:anvil/${material.getName()}_long_rod`)
 
-					event.recipes.greate.compacting(longRodItem, [rodItem, rodItem])
+					event.recipes.greate.compacting(longRodItem, [rodItem, rodItem, 'tfc:powder/flux'])
 						.heated()
 						.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
 						.id(`greate:compacting/${material.getName()}_long_rod`)
@@ -978,7 +978,7 @@ function registerTFCMaterialsRecipes(event) {
 					event.recipes.tfc.welding(`tfc:metal/shears/${material.getName()}`, knifeHeadItem, knifeHeadItem, tfcProperty.getTier())
 						.id(`tfc:welding/${material.getName()}_shears`)
 
-					event.recipes.greate.compacting(`tfc:metal/shears/${material.getName()}`, [knifeHeadItem, knifeHeadItem])
+					event.recipes.greate.compacting(`tfc:metal/shears/${material.getName()}`, [knifeHeadItem, knifeHeadItem, 'tfc:powder/flux'])
 						.heated()
 						.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
 						.id(`greate:compacting/${material.getName()}_shears`)

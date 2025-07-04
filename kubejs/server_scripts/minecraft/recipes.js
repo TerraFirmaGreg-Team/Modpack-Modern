@@ -545,7 +545,7 @@ const registerMinecraftRecipes = (event) => {
 	event.recipes.tfc.welding('minecraft:bucket', 'tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 6)
 		.id('tfg:anvil/vanilla_bucket')
 
-	event.recipes.greate.compacting('minecraft:bucket', ['tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel'])
+	event.recipes.greate.compacting('minecraft:bucket', ['tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 'tfc:powder/flux'])
 		.heated()
 		.recipeTier(0)
 		.id('greate:compacting/vanilla_bucket')

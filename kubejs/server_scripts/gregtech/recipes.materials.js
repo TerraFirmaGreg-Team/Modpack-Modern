@@ -149,7 +149,7 @@ function registerGTCEUMetalRecipes(event) {
 				}).id(`tfg:rolling/${material.getName()}_plate`)
 
 				if (!blockStack.isEmpty() && GTMaterials.Stone != material) {
-					let ingotArray = [];
+					let ingotArray = ['tfc:powder/flux'];
 					for (var i = 0; i < matAmount; i++)
 						ingotArray.push(ingotStack)
 
@@ -187,7 +187,7 @@ function registerGTCEUMetalRecipes(event) {
 		event.remove({ id: `gtceu:shaped/plate_double_${material.getName()}` })
 
 		if (material.getProperty(TFGPropertyKey.TFC_PROPERTY) == null) {
-			event.recipes.greate.compacting(doublePlateItem, [plateItem, plateItem])
+			event.recipes.greate.compacting(doublePlateItem, [plateItem, plateItem, 'tfc:powder/flux'])
 				.heated()
 				.recipeTier(2)
 				.id(`greate:compacting/${material.getName()}_double_plate`)
@@ -226,7 +226,7 @@ function registerGTCEUMetalRecipes(event) {
 
 		// Rod welding recipes for all of the other non-tfc materials, since those were handled in tfc/recipes.materials.js
 		if (material.getProperty(TFGPropertyKey.TFC_PROPERTY) == null) {
-			event.recipes.greate.compacting(longRodItem, [shortRodItem, shortRodItem])
+			event.recipes.greate.compacting(longRodItem, [shortRodItem, shortRodItem, 'tfc:powder/flux'])
 				.heated()
 				.recipeTier(1)
 				.id(`greate:compacting/${material.getName()}_long_rod`)

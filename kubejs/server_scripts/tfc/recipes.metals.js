@@ -212,7 +212,7 @@ function registerTFCMetalsRecipes(event) {
 	event.recipes.tfc.welding('tfc:jacks', '#forge:rods/brass', '#forge:plates/brass', 2)
 		.id(`tfc:welding/jacks`)
 
-	event.recipes.greate.compacting('tfc:jacks', ['#forge:rods/brass', '#forge:plates/brass'])
+	event.recipes.greate.compacting('tfc:jacks', ['#forge:rods/brass', '#forge:plates/brass', 'tfc:powder/flux'])
 		.heated()
 		.recipeTier(0)
 		.id('greate:compacting/jacks')
