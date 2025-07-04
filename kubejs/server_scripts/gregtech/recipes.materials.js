@@ -503,7 +503,7 @@ function registerGTCEUMetalRecipes(event) {
 				type: 'vintageimprovements:centrifugation',
 				ingredients: [impureDustItem],
 				results: [dustItem, byproductItem],
-				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+				processingTime: material.getMass() * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/centrifuge/${material.getName()}_dust_from_impure`)
 
 			// Dropping in water
@@ -540,7 +540,7 @@ function registerGTCEUMetalRecipes(event) {
 				type: 'vintageimprovements:centrifugation',
 				ingredients: [pureDust],
 				results: [dustItem, byproductItem],
-				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+				processingTime: material.getMass() * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/centrifuge/${material.getName()}_dust_from_pure`)
 
 			// Dropping in water

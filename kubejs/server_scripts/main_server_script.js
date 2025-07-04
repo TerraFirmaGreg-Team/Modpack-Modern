@@ -12,6 +12,7 @@ ServerEvents.tags('item', event => {
 	registerAlekishipsItemTags(event)
 	registerAsticorCartsItemTags(event)
 	registerBeneathItemTags(event)
+	registerBetterEndItemTags(event)
 	registerChalkItemTags(event);
 	registerChiselAndBitsItemTags(event)
 	registerComputerCraftItemTags(event)
@@ -34,6 +35,7 @@ ServerEvents.tags('item', event => {
 	registerGTCEUItemTags(event)
 	registerMegaCellsItemTags(event)
 	registerMinecraftItemTags(event)
+	registerModernMarkingsItemTags(event)
 	registerMoreRedItemTags(event)
 	registerHotOrNotItemTags(event)
 	registerRailWaysItemTags(event)
@@ -194,6 +196,7 @@ ServerEvents.recipes(event => {
 	registerAE2NetworkAnalyzerRecipes(event)
 	registerAE2WTLibRecipes(event)
 	registerBeneathRecipes(event)
+	registerBetterEndRecipes(event)
 	registerBuildingGadgetsRecipes(event)
 	registerChalkRecipes(event);
 	registerChiselAndBitsRecipes(event)
@@ -227,6 +230,7 @@ ServerEvents.recipes(event => {
 	registerMegaCellsRecipes(event)
 	registerMERequesterRecipes(event)
 	registerMinecraftRecipes(event)
+	registerModernMarkingRecipes(event)
 	registerMoreRedRecipes(event)
 	registerRailWaysRecipes(event)
 	registerRnrRecipes(event)

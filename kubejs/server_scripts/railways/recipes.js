@@ -208,13 +208,13 @@ const registerRailWaysRecipes = (event) => {
 		'DA '
 	], {
 		A: '#forge:storage_blocks/charcoal',
-		B: '#forge:nuggets/black_steel',
+		B: '#forge:bolts/black_steel',
 		C: '#forge:plates/black_steel',
 		D: '#forge:tools/hammers'
 	}).id('tfg:railways/shaped/smokestack_caboosestyle')
 
 	event.recipes.gtceu.assembler('tfg:railways/smokestack_caboosestyle')
-		.itemInputs('#forge:storage_blocks/charcoal', '2x #forge:nuggets/black_steel', '#forge:plates/black_steel')
+		.itemInputs('#forge:storage_blocks/charcoal', '2x #forge:bolts/black_steel', '#forge:plates/black_steel')
 		.circuit(4)
 		.itemOutputs('railways:smokestack_caboosestyle')
 		.duration(200)
@@ -226,12 +226,12 @@ const registerRailWaysRecipes = (event) => {
 		'BAB'
 	], {
 		A: '#forge:storage_blocks/charcoal',
-		B: '#forge:nuggets/black_steel',
+		B: '#forge:bolts/black_steel',
 		C: '#forge:tools/hammers'
 	}).id('tfg:railways/shaped/smokestack_long')
 
 	event.recipes.gtceu.assembler('tfg:railways/smokestack_long')
-		.itemInputs('#forge:storage_blocks/charcoal', '2x #forge:nuggets/black_steel')
+		.itemInputs('#forge:storage_blocks/charcoal', '2x #forge:bolts/black_steel')
 		.circuit(5)
 		.itemOutputs('railways:smokestack_long')
 		.duration(200)
@@ -297,12 +297,12 @@ const registerRailWaysRecipes = (event) => {
 	], {
 		A: '#forge:storage_blocks/charcoal',
 		B: '#forge:plates/black_steel',
-		C: '#forge:nuggets/black_steel',
+		C: '#forge:bolts/black_steel',
 		D: '#forge:tools/hammers'
 	}).id('tfg:railways/shaped/smokestack_woodburner')
 
 	event.recipes.gtceu.assembler('tfg:railways/smokestack_woodburner')
-		.itemInputs('#forge:storage_blocks/charcoal', '3x #forge:plates/black_steel', '2x #forge:nuggets/black_steel')
+		.itemInputs('#forge:storage_blocks/charcoal', '3x #forge:plates/black_steel', '2x #forge:bolts/black_steel')
 		.circuit(9)
 		.itemOutputs('railways:smokestack_woodburner')
 		.duration(200)

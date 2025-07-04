@@ -16,7 +16,7 @@
      */
     "atmosphereLeave": 600,
     // A comma-separated list of planet IDs that should be hidden from the planets screen. e.g. minecraft:overworld,ad_astra:moon,ad_astra:mars,ad_astra:venus,ad_astra:mercury,ad_astra:glacio
-    "disabledPlanets": "ad_astra:earth_orbit,ad_astra:moon_orbit,ad_astra:mars_orbit,ad_astra:venus_orbit,ad_astra:mercury_orbit,ad_astra:glacio_orbit",
+    "disabledPlanets": "ad_astra:glacio",
     // Disables oxygen damage.
     "disableOxygen": false,
     // Disables temperature damage.

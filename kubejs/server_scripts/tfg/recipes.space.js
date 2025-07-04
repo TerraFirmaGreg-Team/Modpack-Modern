@@ -2,6 +2,32 @@
 
 function registerTFGSpaceRecipes(event) {
 
+	// Change where you can do other recipes
+
+	/*const allowedCombustibleDims = [
+		{
+			dimension: "minecraft:the_nether",
+			type: "dimension"
+		},
+		{
+			dimension: "minecraft:overworld",
+			type: "dimension"
+		}
+	]
+
+	event.findRecipes({ type: "gtceu:large_boiler" }).forEach(recipe => {
+		recipe.json.add("recipeConditions", allowedCombustibleDims)
+	})
+	event.findRecipes({ type: "gtceu:steam_boiler" }).forEach(recipe => {
+		recipe.json.add("recipeConditions", allowedCombustibleDims)
+	})
+	event.findRecipes({ type: "gtceu:combustion_generator" }).forEach(recipe => {
+		recipe.json.add("recipeConditions", allowedCombustibleDims)
+	})
+	event.findRecipes({ type: "gtceu:gas_turbine" }).forEach(recipe => {
+		recipe.json.add("recipeConditions", allowedCombustibleDims)
+	})*/
+
 	// Air collector
 
 	event.recipes.gtceu.gas_collector('nether')
@@ -91,8 +117,8 @@ function registerTFGSpaceRecipes(event) {
 	event.recipes.gtceu.greenhouse('tfg:chorus')
 		.itemInputs('8x tfg:lunar_chorus_flower')
 		.itemOutputs('32x minecraft:chorus_fruit')
-		.chancedOutput('8x tfg:lunar_chorus_flower', 7500, 0)
-		.chancedOutput('8x tfg:lunar_chorus_flower', 5000, 0)
+		.chancedOutput('8x tfg:lunar_chorus_flower', 7500, 1000)
+		.chancedOutput('8x tfg:lunar_chorus_flower', 5000, 1000)
 		.duration(36000) // 30 mins
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.MV])
@@ -102,8 +128,8 @@ function registerTFGSpaceRecipes(event) {
 		.itemInputs('8x tfg:lunar_chorus_flower')
 		.inputFluids(Fluid.of('gtceu:helium_3', 2000))
 		.itemOutputs('32x minecraft:chorus_fruit')
-		.chancedOutput('8x tfg:lunar_chorus_flower', 7500, 0)
-		.chancedOutput('8x tfg:lunar_chorus_flower', 5000, 0)
+		.chancedOutput('8x tfg:lunar_chorus_flower', 8500, 1000)
+		.chancedOutput('8x tfg:lunar_chorus_flower', 6000, 1000)
 		.duration(12000) // 30 mins
 		.circuit(2)
 		.EUt(GTValues.VA[GTValues.MV])
@@ -120,23 +146,23 @@ function registerTFGSpaceRecipes(event) {
 
 	// Lightblooms
 	event.recipes.gtceu.greenhouse('tfg:lightbloom')
-		.itemInputs('32x minecraft:twisting_vines')
-		.itemOutputs('64x minecraft:twisting_vines')
-		.chancedOutput('minecraft:pearlescent_froglight', 2500, 0)
-		.chancedOutput('minecraft:verdant_froglight', 2500, 0)
-		.chancedOutput('minecraft:ochre_froglight', 2500, 0)
+		.itemInputs('8x minecraft:twisting_vines')
+		.itemOutputs('16x minecraft:twisting_vines')
+		.chancedOutput('minecraft:pearlescent_froglight', 2500, 1000)
+		.chancedOutput('minecraft:verdant_froglight', 2500, 1000)
+		.chancedOutput('minecraft:ochre_froglight', 2500, 1000)
 		.duration(36000) // 30 mins
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.LV])
 		.dimension('ad_astra:moon')
 
 	event.recipes.gtceu.greenhouse('tfg:lightbloom_helium')
-		.itemInputs('32x minecraft:twisting_vines')
+		.itemInputs('8x minecraft:twisting_vines')
 		.inputFluids(Fluid.of('gtceu:helium_3', 2000))
-		.itemOutputs('64x minecraft:twisting_vines')
-		.chancedOutput('minecraft:pearlescent_froglight', 2500, 0)
-		.chancedOutput('minecraft:verdant_froglight', 2500, 0)
-		.chancedOutput('minecraft:ochre_froglight', 2500, 0)
+		.itemOutputs('16x minecraft:twisting_vines')
+		.chancedOutput('minecraft:pearlescent_froglight', 3500, 1000)
+		.chancedOutput('minecraft:verdant_froglight', 3500, 1000)
+		.chancedOutput('minecraft:ochre_froglight', 3500, 1000)
 		.duration(12000) // 30 mins
 		.circuit(2)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -144,7 +170,7 @@ function registerTFGSpaceRecipes(event) {
 
 	event.recipes.gtceu.brewery('biomass_from_twisting_vines')
 		.itemInputs('minecraft:twisting_vines')
-		.inputFluids(Fluid.of('minecraft:water', 20))
+		.inputFluids(JsonIO.of({ amount: 20, value: { tag: "tfg:clean_water" }}))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(50)
 		.EUt(3)

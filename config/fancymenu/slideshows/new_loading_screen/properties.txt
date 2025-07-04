@@ -1,0 +1,12 @@
+type = slideshow
+
+slideshow-meta {
+   name = new_loading_screen
+   width = 1920
+   height = 1080
+   x = 0
+   y = 0
+   duration = 5.0
+   fadespeed = 12.0
+   randomize = true
+}

@@ -109,6 +109,7 @@
 				"5D9D01EF219A31C5"
 				"316FF60D6FFE97CE"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.medium_voltage.mv_ethylene.desc}"]
 			icon: "gtceu:ethylene_bucket"
 			id: "6BB98D128822730E"
@@ -1028,6 +1029,7 @@
 			icon: "gtceu:mv_distillery"
 			id: "6A304E453D74C57C"
 			min_required_dependencies: 1
+			progression_mode: "linear"
 			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_distillery.subtitle}"

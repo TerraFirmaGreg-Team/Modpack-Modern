@@ -436,12 +436,12 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// Семена фруктов
 	global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, 'minecraft:overworld')
+		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, 'minecraft:overworld', 1)
 	})
 
 	// Семена ягод
 	global.FIRMALIFE_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, null)
+		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, null, 1)
 	})
 
 	//#endregion
@@ -490,9 +490,21 @@ const registerFirmaLifeRecipes = (event) => {
 
 	event.recipes.gtceu.mixer('sugar_water')
 		.itemInputs('#tfc:sweetener')
-		.inputFluids(Fluid.of('minecraft:water', 1000))
+		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfg:clean_water" }}))
 		.outputFluids(Fluid.of('firmalife:sugar_water', 500))
 		.circuit(5)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(200)
+
+    event.recipes.firmalife.mixing_bowl()
+    	.itemIngredients(['#tfg:wood_dusts', 'tfc:glue'])
+    	.outputItem('tfg:chipboard_composite')
+
+    event.recipes.firmalife.mixing_bowl()
+    	.itemIngredients(['#tfg:wood_dusts', 'gtceu:sticky_resin'])
+    	.outputItem('tfg:chipboard_composite')
+
+    event.recipes.firmalife.mixing_bowl()
+    	.itemIngredients(['#tfg:wood_dusts', '#forge:wax'])
+    	.outputItem('tfg:chipboard_composite')
 }

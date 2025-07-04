@@ -11,6 +11,7 @@
 - New electric refrigerator with different tiers. You can craft the old one into this new one, but please take your food out of it before upgrading otherwise it will be lost! @ofoxsmith
 - Added many new advanced food items including freeze-dried fruit, calorie paste, and meal bags. @Redeix
 - Quest updates for all of the above. @TomPlop
+- Main UI overhaul and curseforge branding updated @Redeix
 ### Minor changes
 - Balance changes for water wheels and glowstone blocks @Pyritie
 - Added straws for the blaze burners so now you can pump liquid fuels into them (#1204) @34y34y34y34y34y34y34y34y34y
@@ -31,6 +32,10 @@
 - Removed gems tag from flint @Pyritie
 - Updated texture for aqueous accumulator (#1168) @Redeix
 - Kaolin Klayzes now also drop blood lilies @Pyritie
+- Crushing wheels need a machine hull to craft now @Pyritie
+- Anvil rod recipes are easier now (#1225) @Redeix
+- Minecraft campfires now drop themselves (RIP lost bluesteel) (#1225) @Redeix
+- Wooden multiblock tank increased to 1000000mB, and steel multiblock tank increased to 8000000mB @Redeix
 ### Bug fixes
 - Fixed a mud hut structure that had deprecated zinc ingots @Pyritie
 - The electric greenhouse now also allows loose rocks and plants inside, since TFC spawns them on any grass block @Pyritie
@@ -40,6 +45,8 @@
 - Fixed some other steel/colored steel items being extractable in LV (#1212) @Pyritie
 - Fixed polished/cut migmatite recipe conflict (#1153) @JeanRdSz
 - Fixed some bugs with the lunchbox (#1200) @Thomasx0
+- Greate millstones/crushing wheels now give the correct amount of byproducts
+- Greate bulk washing now correctly works on depots and belts
 
 ## [0.9.11] - 13.06.2025
 ### New features

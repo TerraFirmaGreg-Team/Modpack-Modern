@@ -52,5 +52,6 @@
       "text": "$(li)Электротин: $(l:tfg_ores/nether_vein_index#nether_saltpeter)25%$(/l)$()",
       "type": "patchouli:text"
     }
-  ]
+  ],
+  "sortnum": 2
 }
