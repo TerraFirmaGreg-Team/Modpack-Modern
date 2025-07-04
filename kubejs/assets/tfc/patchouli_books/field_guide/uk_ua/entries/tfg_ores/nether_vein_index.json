@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_mica)Кіаніт, Слюда та Боксити$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Марганець і Тантал$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Мідь та Халькопірит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)Мінеральні піски$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Наквадак і Плутоній$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Редстоун, Кіновар і Рубін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Сапфір і Альмадін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Селітра та Електротин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sylvite)Сильвін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Сірка та Пірит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)Смарагд і Берилій$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Смарагд, Лазурит та Содаліт$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Соапостон, Тальк і Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Срібло, Гален і Свинець$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_mica)Кіаніт, Слюда та Боксити$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Лапіс, Лазурит та Содаліт$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Марганець і Тантал$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Мідь та Халькопірит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)Мінеральні піски$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Наквадак і Плутоній$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Редстоун, Кіновар і Рубін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Сапфір і Альмадін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Селітра та Електротин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sylvite)Сильвін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Сірка та Пірит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)Смарагд і Берилій$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Срібло, Гален і Свинець$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Стеатит, Тальк і Трона$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1209,6 +1209,98 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)Рідкість$(): 220$(br)$(thing)Щільність$(): 0.35$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 40$(br2)$(thing)Типи каменю$(): Мігматит, Піроксеніти, Травертин",
+      "title": "Лапіс, Лазурит та Содаліт",
+      "type": "patchouli:text",
+      "anchor": "nether_lapis"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Лазурит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lazurite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Джерело$(): Алюмінію, Кальцію, Натрію$(br)$(thing)Формула$(): Al₆Si₆Ca₈Na₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Содаліт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sodalite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Алюмінію, Натрію$(br)$(thing)Формула$(): Al₃Si₃Na₄Cl",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Лапіс",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lapis"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Лазуриту, Содаліту, Пириту, Кальциту",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кальцит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/calcite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Джерело$(): Кальцію$(br)$(thing)Формула$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)Рідкість$(): 225$(br)$(thing)Щільність$(): 0.4$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
       "title": "Марганець і Тантал",
       "type": "patchouli:text",
@@ -1974,17 +2066,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 220$(br)$(thing)Щільність$(): 0.35$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 40$(br2)$(thing)Типи каменю$(): Мігматит, Піроксеніти, Травертин",
-      "title": "Смарагд, Лазурит та Содаліт",
+      "text": "$(thing)Рідкість$(): 160$(br)$(thing)Щільність$(): 0.5$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Гнейс, Граніт, Піроксеніти",
+      "title": "Срібло, Гален і Свинець",
       "type": "patchouli:text",
-      "anchor": "nether_lapis"
+      "anchor": "nether_silver"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Лазурит",
+      "name": "Самородна Срібла",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/lazurite"
+          "0": "#forge:ores/silver"
         },
         "pattern": [
           [
@@ -1996,15 +2088,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Джерело$(): Алюмінію, Кальцію, Натрію$(br)$(thing)Формула$(): Al₆Si₆Ca₈Na₈",
+      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Розплавляється в$(): Срібло$(br)$(thing)Формула$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Содаліт",
+      "name": "Свинець",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/sodalite"
+          "0": "#forge:ores/lead"
         },
         "pattern": [
           [
@@ -2016,15 +2108,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Алюмінію, Натрію$(br)$(thing)Формула$(): Al₃Si₃Na₄Cl",
+      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Розплавляється в$(): Свинець$(br)$(thing)Формула$(): Pb$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібна захисна маска)Слабка отруйність (інгаляція)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Лапіс",
+      "name": "Галена",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/lapis"
+          "0": "#forge:ores/galena"
         },
         "pattern": [
           [
@@ -2036,38 +2128,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Лазуриту, Содаліту, Пириту, Кальциту",
+      "text": "$(thing)Відсоток$(): 30%$(br)$(thing)Розплавляється в$(): Свинцю$(br)$(thing)Формула$(): PbS$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібна захисна маска)Слабка отруйність (інгаляція)$(/t)$()",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Кальцит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/calcite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Джерело$(): Кальцію$(br)$(thing)Формула$(): CaCO₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
       "text": "$(thing)Рідкість$(): 250$(br)$(thing)Щільність$(): 0.35$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 41$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
-      "title": "Соапостон, Тальк і Трона",
+      "title": "Стеатит, Тальк і Трона",
       "type": "patchouli:text",
       "anchor": "nether_lubricant"
     },
@@ -2169,73 +2236,6 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Джерело$(): Натрію$(br)$(thing)Формула$(): Na₃C₂H(H₂O)₂O₆",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 160$(br)$(thing)Щільність$(): 0.5$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Гнейс, Граніт, Піроксеніти",
-      "title": "Срібло, Гален і Свинець",
-      "type": "patchouli:text",
-      "anchor": "nether_silver"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Самородна Срібла",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/silver"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Розплавляється в$(): Срібло$(br)$(thing)Формула$(): Ag",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Свинець",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/lead"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Розплавляється в$(): Свинець$(br)$(thing)Формула$(): Pb$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібна захисна маска)Слабка отруйність (інгаляція)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Галена",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/galena"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 30%$(br)$(thing)Розплавляється в$(): Свинцю$(br)$(thing)Формула$(): PbS$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібна захисна маска)Слабка отруйність (інгаляція)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
