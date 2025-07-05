@@ -311,6 +311,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["197A13A0790F000B"]
 			description: [
 				"Titanium requires a slightly more &binvolved&r process than the previous materials to process. To get started, you'll need &aRutile&r, which can be obtained by processing &aBauxite&r, &aIlmenite&r and &aAluminium&r."
 				""
