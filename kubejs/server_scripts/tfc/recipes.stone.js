@@ -31,6 +31,10 @@ function registerTFCStoneRecipes(event) {
 			.duration(10)
 			.EUt(16)
 
+		event.recipes.greate.pressing(`tfc:rock/cobble/${stone}`, `tfc:rock/raw/${stone}`)
+			.recipeTier(1)
+			.id(`greate:pressing/${stone}_raw_to_cobble`)
+
 		// ? -> Сырая нажимная пластина
 		event.shaped(`tfc:rock/pressure_plate/${stone}`, [
 			' B ',
@@ -174,6 +178,10 @@ function registerTFCStoneRecipes(event) {
 			.duration(10)
 			.EUt(16)
 
+		event.recipes.greate.pressing(`tfc:rock/gravel/${stone}`, `tfc:rock/cobble/${stone}`)
+			.recipeTier(1)
+			.id(`greate:pressing/${stone}_cobble_to_gravel`)
+
 		// Камни -> Булыжник
 		event.shaped(`tfc:rock/cobble/${stone}`, [
 			'ABA',
@@ -214,6 +222,10 @@ function registerTFCStoneRecipes(event) {
 			.itemOutputs(`tfc:rock/cracked_bricks/${stone}`)
 			.duration(25)
 			.EUt(8)
+
+		event.recipes.greate.pressing(`tfc:rock/cracked_bricks/${stone}`, `tfc:rock/bricks/${stone}`)
+			.recipeTier(1)
+			.id(`greate:pressing/cracked_bricks_${stone}`)
 
 		//#endregion
 

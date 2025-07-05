@@ -43,7 +43,7 @@
 			image: "ftblibrary:icons/star"
 			rotation: 0.0d
 			width: 1.0d
-			x: -5.5d
+			x: -6.0d
 			y: -13.5d
 		}
 		{
@@ -68,7 +68,7 @@
 		{
 			id: "2425C5C5109FD90C"
 			linked_quest: "48C1E980F7D64317"
-			x: -6.0d
+			x: -6.5d
 			y: -13.0d
 		}
 		{
@@ -90,7 +90,7 @@
 		{
 			id: "098E410F9E564854"
 			linked_quest: "5E4FC017E09ACF44"
-			x: -6.0d
+			x: -6.5d
 			y: -11.0d
 		}
 		{
@@ -1082,6 +1082,26 @@
 			}]
 			x: -3.5d
 			y: -0.5d
+		}
+		{
+			id: "52CC0FDEC6F52F72"
+			tasks: [{
+				id: "18ECFC0526668CCC"
+				item: "greate:andesite_alloy_mechanical_press"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -13.0d
+		}
+		{
+			id: "60FCEC93B383D3C2"
+			tasks: [{
+				id: "40BA8140472A905A"
+				item: "greate:steel_mechanical_press"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -11.0d
 		}
 	]
 	subtitle: ["{quests.ore_proc.subtitle}"]
