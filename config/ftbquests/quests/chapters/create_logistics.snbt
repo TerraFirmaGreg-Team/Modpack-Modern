@@ -213,35 +213,50 @@
 				"7C4807A247AF36A1"
 				"648BCF486E16CCB2"
 			]
+			description: ["{quests.create_logistics.stock_link.desc}"]
 			id: "76490E046A44BCC3"
 			size: 2.0d
+			subtitle: "{quests.create_logistics.stock_link.subtitle}"
 			tasks: [{
 				id: "724FAB95580DE519"
 				item: "create:stock_link"
 				type: "item"
 			}]
+			title: "{quests.create_logistics.stock_link.title}"
 			x: 5.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["76490E046A44BCC3"]
+			description: [
+				"{quests.create_logistics.stock_ticker.desc.1}"
+				"{@pagebreak}"
+				"{quests.create_logistics.stock_ticker.desc.2}"
+				"{@pagebreak}"
+				"{quests.create_logistics.stock_ticker.desc.3}"
+			]
 			id: "341E2F290344BEEE"
+			subtitle: "{quests.create_logistics.stock_ticker.subtitle}"
 			tasks: [{
 				id: "6D34CC70CB8465EF"
 				item: "create:stock_ticker"
 				type: "item"
 			}]
+			title: "{quests.create_logistics.stock_ticker.title}"
 			x: 8.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["76490E046A44BCC3"]
+			description: ["{quests.create_logistics.redstone_requester.desc}"]
 			id: "3F44CFF8A6018F3E"
+			subtitle: "{quests.create_logistics.redstone_requester.subtitle}"
 			tasks: [{
 				id: "3A3E75B8A2755E29"
 				item: "create:redstone_requester"
 				type: "item"
 			}]
+			title: "{quests.create_logistics.redstone_requester.title}"
 			x: 8.5d
 			y: 0.5d
 		}
@@ -251,26 +266,66 @@
 				"7567E885B7166603"
 				"76490E046A44BCC3"
 			]
+			description: [
+				"{quests.create_logistics.factory_gauge.desc.1}"
+				"{@pagebreak}"
+				"{quests.create_logistics.factory_gauge.desc.2}"
+				"{@pagebreak}"
+				"{quests.create_logistics.factory_gauge.desc.3}"
+				"{@pagebreak}"
+				"{quests.create_logistics.factory_gauge.desc.4}"
+			]
 			id: "2262F1FD4EAB777F"
 			shape: "gear"
 			size: 3.0d
-			tasks: [{
-				id: "05AEAFF6BC6C21BE"
-				item: "create:factory_gauge"
-				type: "item"
-			}]
+			subtitle: "{quests.create_logistics.factory_gauge.subtitle}"
+			tasks: [
+				{
+					id: "05AEAFF6BC6C21BE"
+					item: "create:factory_gauge"
+					type: "item"
+				}
+				{
+					id: "38DC47D44D9741FC"
+					item: "create_factory_logistics:factory_fluid_gauge"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.create_logistics.factory_gauge.title}"
 			x: 5.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["341E2F290344BEEE"]
+			description: [
+				"{quests.create_logistics.tablecloths.desc.1}"
+				"{@pagebreak}"
+				"{quests.create_logistics.tablecloths.desc.2}"
+			]
 			id: "546FC3BD93E54913"
+			subtitle: "{quests.create_logistics.tablecloths.subtitle}"
 			tasks: [{
 				id: "75930EC6F9139FD5"
 				item: "create:white_table_cloth"
 				type: "item"
 			}]
+			title: "{quests.create_logistics.tablecloths.title}"
 			x: 8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["09D5BD00E3308E76"]
+			description: ["{quests.create_logistics.bottler.desc}"]
+			id: "487D05818B3E9D19"
+			subtitle: "{quests.create_logistics.bottler.subtitle}"
+			tasks: [{
+				id: "3D6CCC6C3853CD9C"
+				item: "create_factory_logistics:jar_packager"
+				type: "item"
+			}]
+			title: "{quests.create_logistics.bottler.title}"
+			x: 2.5d
 			y: -1.0d
 		}
 	]

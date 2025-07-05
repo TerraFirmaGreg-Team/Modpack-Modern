@@ -2258,6 +2258,42 @@
             ]
         },
         {
+            "pakku_id": "AkHN0rdiPZGbRyXS",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-factory-logistics"
+            },
+            "name": {
+                "curseforge": "Create Factory Logistics"
+            },
+            "id": {
+                "curseforge": "1218807"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "create_factory_logistics-1.20.1-1.4.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6697/751/create_factory_logistics-1.20.1-1.4.4.jar",
+                    "id": "6697751",
+                    "parent_id": "1218807",
+                    "hashes": {
+                        "sha1": "e300be40f0911aa318a09549f7abfb5041a55190",
+                        "md5": "cac1d8da02f258b0b48307ad75caa207"
+                    },
+                    "required_dependencies": [],
+                    "size": 1082232,
+                    "date_published": "2025-06-26T12:50:53.563Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "TZkCVkZyDgRfflgE",
             "type": "MOD",
             "slug": {
@@ -2674,7 +2710,7 @@
         {
             "pakku_id": "SG15bUHPcW2KqNGd",
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "detected-setblock-be-gone"
             },

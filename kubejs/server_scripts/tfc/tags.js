@@ -299,6 +299,17 @@ const registerTFCItemTags = (event) => {
 	// Bells
 	event.add('tfc:bells', 'tfc:bronze_bell')
 	event.add('tfc:bells', 'tfc:brass_bell')
+
+	// Lets the basin be put on top of a charcoal forge
+	event.add('tfc:forge_invisible_whitelist', 'create:basin')
+
+	// Allows automation with the 3x3 Hellforge
+	event.add('tfc:forge_invisible_whitelist', 'tfcchannelcasting:channel')
+	event.add('tfc:forge_invisible_whitelist', 'tfcchannelcasting:mold_table')
+	event.add('tfc:forge_invisible_whitelist', 'greate:steel_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:aluminum_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:stainless_steel_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:titanium_mechanical_pump')
 }
 
 const registerTFCBlockTags = (event) => {
@@ -389,26 +400,27 @@ const registerTFCBlockTags = (event) => {
 	event.add('beneath:nether_bush_plantable_on', '#tfc:dirt')
 	event.add('minecraft:frogs_spawnable_on', '#tfc:dirt')
 
-
-	event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/gneiss')
-	event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/schist')
-	event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/diorite')
-	event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/granite')
-	event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/gabbro')
-	event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/basalt')
 	event.add('minecraft:base_stone_nether', 'tfc:rock/raw/gneiss')
 	event.add('minecraft:base_stone_nether', 'tfc:rock/raw/schist')
 	event.add('minecraft:base_stone_nether', 'tfc:rock/raw/diorite')
 	event.add('minecraft:base_stone_nether', 'tfc:rock/raw/granite')
 	event.add('minecraft:base_stone_nether', 'tfc:rock/raw/gabbro')
 	event.add('minecraft:base_stone_nether', 'tfc:rock/raw/basalt')
-	event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/gneiss')
-	event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/schist')
-	event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/diorite')
-	event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/granite')
-	event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/gabbro')
+	event.add('minecraft:nether_carver_replaceables', '#minecraft:base_stone_nether')
+	event.add('minecraft:frogs_spawnable_on', '#minecraft:base_stone_nether')
 
 	//#endregion
+
+	// Lets the basin be put on top of a charcoal forge
+	event.add('tfc:forge_invisible_whitelist', 'create:basin')
+
+	// Allows automation with the 3x3 Hellforge
+	event.add('tfc:forge_invisible_whitelist', 'tfcchannelcasting:channel')
+	event.add('tfc:forge_invisible_whitelist', 'tfcchannelcasting:mold_table')
+	event.add('tfc:forge_invisible_whitelist', 'greate:steel_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:aluminum_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:stainless_steel_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:titanium_mechanical_pump')
 
 	//Allows any block with the word "brick" in its id to be used as bloomery and forge insulation.
 	//Add blacklisted words to the const with | between.
