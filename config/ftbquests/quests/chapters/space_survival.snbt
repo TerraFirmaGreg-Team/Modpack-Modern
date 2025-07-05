@@ -210,6 +210,7 @@
 			]
 			description: ["{quests.space_survival.satellite.desc}"]
 			id: "5D085354D7E377C3"
+			optional: true
 			shape: "none"
 			subtitle: "{quests.space_survival.satellite.subtitle}"
 			tasks: [
