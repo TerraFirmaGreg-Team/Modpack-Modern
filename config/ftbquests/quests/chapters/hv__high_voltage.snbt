@@ -620,7 +620,7 @@
 			id: "42FB276AB16258D9"
 			size: 1.0d
 			tasks: [{
-				id: "344000CF4AAC68AF"
+				id: "4EF4F33BEB714485"
 				item: "gtceu:fluorine_bucket"
 				type: "item"
 			}]
@@ -1140,6 +1140,7 @@
 				"3E2F96A02FEF12AC"
 				"1E307CD76691C24F"
 				"4AD686D18247315E"
+				"72BD27FEEB34C7B0"
 			]
 			description: ["Woh, it's time to build your &6Rocket&r!\\n\\nAssemble all the parts with &d8 Dense Rocket Alloy&r. To finish the insulation, you'll need &b576mb&r of &bLiquid Silicon&r (&b4 ingots&r) and &f16 pieces of dust&r.\\n\\nYou have two choices:\\n&e•&r &eBorosilicate Glass Dust&r — crafted in a &6Mixer&r with &dBoron&r and &fGlass Dust&r\\n\\n&e•&r &5Vitrified Asbestos&r — obtained through a &6Pyrolysis Oven&r\\n\\nGo with the one you have available!"]
 			icon_scale: 2.0d
@@ -1278,7 +1279,10 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["3FBDC8552F7D8008"]
+			dependencies: [
+				"3FBDC8552F7D8008"
+				"72BD27FEEB34C7B0"
+			]
 			description: ["&6Before crossing the last Earth boundary,&r you should be sure to not die when you arrive on the moon.\\n\\nTo do that, you're gonna need a &bfull set of Space Suit&r loaded with &bOxygen&r — and if you're careful, even a &ebackup can&r.\\n\\n&cThe hardest part&r will definitely be the &dPolycaprolactam Fabric&r.\\n\\nYou will need an &cEBF&r and a &6HV&r &eChemical Reactor&r.\\n\\nFrom there, you'll be able to craft it using &aBenzene&r, &bHydrogen&r, &9Chlorine&r, &bOxygen&r and &3Ammonia&r.\\n\\nWe won't tell you every step, but you should be able to figure it out yourself through &aEMI&r now that you're a fierce Gregtech player.\\n\\nOnce everything is ready, to fill your space suit and can, simply &eRight-Click&r a drum or tank filled with &bOxygen&r."]
 			id: "038B204DAC9C863D"
 			subtitle: "Let's be honest, this may be the hardest"

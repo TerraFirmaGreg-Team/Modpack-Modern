@@ -213,6 +213,12 @@
 			x: 12.0d
 			y: 3.5d
 		}
+		{
+			id: "127B4DBA5C90C23D"
+			linked_quest: "48C1E980F7D64317"
+			x: -3.0d
+			y: -13.0d
+		}
 	]
 	quests: [
 		{
@@ -947,7 +953,7 @@
 				type: "item"
 			}]
 			title: "{quests.stone_age.crush_crushed_ore.title}"
-			x: 0.0d
+			x: -3.0d
 			y: -15.0d
 		}
 		{
