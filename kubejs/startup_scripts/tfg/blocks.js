@@ -4,6 +4,7 @@ const registerTFGBlocks = (event) => {
 	registerTFGNetherBlocks(event)
 	registerTFGSpaceBlocks(event)
 	registerTFGSupportBlocks(event)
+    registerTFGCrops(event)
 
 	event.create('tfg:artificial_end_portal_frame')
 		.stoneSoundType()

@@ -3,12 +3,10 @@
 StartupEvents.registry('item', event => {
     registerGTCEuItems(event)
     registerTFGItems(event)
-    registerTFGPlants(event)
 })
 
 StartupEvents.registry('block', event => {
     registerTFGBlocks(event)
-    registerTFGCrops(event)
 	registerBetterEndBlocks(event)
 })
 

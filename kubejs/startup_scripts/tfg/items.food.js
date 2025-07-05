@@ -46,14 +46,14 @@ function registerTFGFoodItems(event) {
 			.eaten(ctx => {
 				ctx.player.give('tfg:used_foil_pack')
 			}))
-        .texture('tfg:item/food/calorie_paste')
+		.texture('tfg:item/food/calorie_paste')
 
 	event.create('tfg:used_foil_pack')
 		.translationKey('item.tfg.food.used_foil_pack')
 		.food(food => food.hunger(0).saturation(0)
 			.effect('minecraft:nausea', 200, 0, 1)
 		)
-        .texture('tfg:item/used_foil_pack')
+		.texture('tfg:item/used_foil_pack')
 
 	event.create('tfg:food/meal_bag')
 		.translationKey('item.tfg.food.meal_bag')
@@ -61,5 +61,9 @@ function registerTFGFoodItems(event) {
 			.eaten(ctx => {
 				ctx.player.give('tfg:used_foil_pack')
 			}))
-        .texture('tfg:item/food/meal_bag')
+		.texture('tfg:item/food/meal_bag')
+
+	event.create('tfg:roasted_sunflower_seeds')
+		.translationKey('item.tfg.roasted_sunflower_seeds')
+		.texture('tfg:item/plant/roasted_sunflower_seeds')
 }

@@ -59,8 +59,4 @@ function registerTFCDataForMinecraft(event) {
 		food.water(2)
 		food.decayModifier(2)
 	})
-	event.foodItem('tfg:roasted_sunflower_seeds', food => {
-		food.hunger(0.5)
-		food.decayModifier(0.5)
-	})
 }

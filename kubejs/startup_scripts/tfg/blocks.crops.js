@@ -1,6 +1,4 @@
-//#region New Crops
-
-// Sunflower
+// Priority: 0
 
 const registerTFGCrops = (event) => {
 
@@ -54,17 +52,3 @@ const registerTFGCrops = (event) => {
         .seeds('tfg:rapeseed_seeds')
         .hardness(0.2)
 }
-
-//#endregion
-
-//#region New Items
-
-const registerTFGPlants = (event) => {
-
-    event.create('tfg:roasted_sunflower_seeds')
-        .translationKey('item.tfg.roasted_sunflower_seeds')
-        .texture('tfg:item/plant/roasted_sunflower_seeds')
-
-}
-
-//#endregion

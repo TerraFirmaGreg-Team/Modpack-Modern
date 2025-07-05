@@ -6,6 +6,7 @@ function registerTFCDataForTFG(event) {
 	registerTFGSupportData(event);
 	registerTFGFoodData(event);
 	registerTFGFauna(event);
+	registerTFGCropRanges(event);
 }
 
 
@@ -123,9 +124,36 @@ const registerTFGFoodData = (event) => {
 	event.foodItem('tfg:food/meal_bag', food => {
 		food.type('dynamic')
 	})
+
+	event.foodItem('tfg:roasted_sunflower_seeds', food => {
+		food.hunger(0.5)
+		food.decayModifier(0.5)
+		food.grain(0.1)
+	})
 }
 
 const registerTFGFauna = (event) => {
 
 	//event.fauna(climate => { }, fauna => { fauna.chance(0) }, 'tfg:moon_rabbit')
+}
+
+const registerTFGCropRanges = (event) => {
+
+	event.climateRange(climate => {
+        climate.minHydration(10)
+        climate.maxHydration(60)
+        climate.minTemperature(5)
+        climate.maxTemperature(40)
+        climate.hydrationWiggle(7.5)
+        climate.temperatureWiggle(5.5)
+    }, 'tfg:sunflower')
+
+    event.climateRange(climate => {
+        climate.minHydration(10)
+        climate.maxHydration(60)
+        climate.minTemperature(-5)
+        climate.maxTemperature(25)
+        climate.hydrationWiggle(7.5)
+        climate.temperatureWiggle(1.5)
+    }, 'tfg:rapeseed')
 }
