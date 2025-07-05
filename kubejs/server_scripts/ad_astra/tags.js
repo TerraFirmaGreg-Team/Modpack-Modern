@@ -29,6 +29,7 @@ const registerAdAstraFluidTags = (event) => {
 	event.add('ad_astra:freezes_in_space', 'tfc:spring_water')
 	event.add('ad_astra:evaporates_in_space', 'tfc:salt_water')
 	event.add('ad_astra:evaporates_in_space', 'tfc:spring_water')
+	event.add('ad_astra:evaporates_in_space', '#tfc:alcohols')
 
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('ad_astra:zip_gun_propellants', x)
