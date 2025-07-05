@@ -2,7 +2,6 @@
 
 function registerGreateRecipes(event) {
 
-	removeGreateRecipes(event);
 	registerGreateRecyclingRecipes(event);
 
 	event.replaceInput({ input: 'create:cogwheel'}, 'create:cogwheel', '#tfg:small_cogwheels')
@@ -638,4 +637,75 @@ function registerGreateRecipes(event) {
 
 	// #endregion
 
+	// #region Presses
+
+	event.shaped('greate:andesite_alloy_mechanical_press', [
+		'AEB',
+		'DF ',
+		' C '
+	], {
+		A: '#tfg:any_bronze_frame',
+		B: 'greate:andesite_alloy_cogwheel',
+		C: '#tfg:any_iron_plate',
+		D: '#forge:tools/hammers',
+		E: '#minecraft:planks',
+		F: 'greate:andesite_alloy_shaft'
+	}).id('greate:shaped/andesite_alloy_mechanical_press')
+
+	event.shaped('greate:steel_mechanical_press', [
+		' AD',
+		'EBF',
+		' C '
+	], {
+		A: 'create:andesite_casing',
+		B: 'greate:steel_shaft',
+		C: '#forge:double_plates/steel',
+		D: 'greate:steel_cogwheel',
+		E: '#forge:tools/hammers',
+		F: '#forge:tools/wrenches'
+	}).id('greate:shaped/steel_mechanical_press')
+
+	event.shaped('greate:aluminium_mechanical_press', [
+		'GAD',
+		'EBF',
+		' C '
+	], {
+		A: 'gtceu:mv_machine_hull',
+		B: 'greate:aluminium_shaft',
+		C: '#forge:double_plates/vanadium_steel',
+		D: 'greate:aluminium_cogwheel',
+		E: '#forge:tools/hammers',
+		F: '#forge:tools/wrenches',
+		G: '#gtceu:circuits/mv'
+	}).id('greate:shaped/aluminium_mechanical_press')
+
+	event.shaped('greate:stainless_steel_mechanical_press', [
+		'GAD',
+		'EBF',
+		' C '
+	], {
+		A: 'gtceu:hv_machine_hull',
+		B: 'greate:stainless_steel_shaft',
+		C: '#forge:double_plates/blue_alloy',
+		D: 'greate:stainless_steel_cogwheel',
+		E: '#forge:tools/hammers',
+		F: '#forge:tools/wrenches',
+		G: '#gtceu:circuits/hv'
+	}).id('greate:shaped/stainless_steel_mechanical_press')
+
+	event.shaped('greate:titanium_mechanical_press', [
+		'GAD',
+		'EBF',
+		' C '
+	], {
+		A: 'gtceu:ev_machine_hull',
+		B: 'greate:titanium_shaft',
+		C: '#forge:double_plates/ultimet',
+		D: 'greate:titanium_cogwheel',
+		E: '#forge:tools/hammers',
+		F: '#forge:tools/wrenches',
+		G: '#gtceu:circuits/ev'
+	}).id('greate:shaped/titanium_mechanical_press')
+
+	// #endregion
 }
