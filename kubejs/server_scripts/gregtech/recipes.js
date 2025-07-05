@@ -1237,4 +1237,8 @@ const registerGTCEURecipes = (event) => {
 
 	event.smelting('minecraft:iron_ingot', '#forge:ingots/wrought_iron')
 		.id('tfg:revert_wrought_iron_ingot')
+
+	event.replaceOutput({ id: 'gtceu:distillery/distill_biomass_to_water' }, 'gtceu:wood_dust', 'gtceu:carbon_dust')
+	event.replaceOutput({ id: 'gtceu:distillery/distill_biomass_to_ethanol' }, 'gtceu:wood_dust', 'gtceu:carbon_dust')
+	event.replaceOutput({ id: 'gtceu:distillation_tower/distill_biomass' }, 'gtceu:wood_dust', 'gtceu:carbon_dust')
 }
