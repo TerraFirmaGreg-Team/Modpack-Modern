@@ -34,6 +34,7 @@ function registerTFGFoodItems(event) {
 		event.create(`tfg:food/freeze_dried/${fruit.name}`)
 			.translationKey(`item.tfg.food.freeze_dried/${fruit.name}`)
 			.texture(`tfg:item/food/freeze_dried_${fruit.name}`)
+			.tag('tfg:space_food')
 			.food(food => food.hunger(4).saturation(1)
 				.eaten(ctx => {
 					ctx.player.give('tfg:used_foil_pack')
@@ -47,6 +48,7 @@ function registerTFGFoodItems(event) {
 				ctx.player.give('tfg:used_foil_pack')
 			}))
 		.texture('tfg:item/food/calorie_paste')
+		.tag('tfg:space_food')
 
 	event.create('tfg:used_foil_pack')
 		.translationKey('item.tfg.food.used_foil_pack')
@@ -62,6 +64,7 @@ function registerTFGFoodItems(event) {
 				ctx.player.give('tfg:used_foil_pack')
 			}))
 		.texture('tfg:item/food/meal_bag')
+		.tag('tfg:space_food')
 
 	event.create('tfg:roasted_sunflower_seeds')
 		.translationKey('item.tfg.roasted_sunflower_seeds')

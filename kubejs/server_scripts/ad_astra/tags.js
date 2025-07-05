@@ -21,6 +21,7 @@ const registerAdAstraFluidTags = (event) => {
 
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:rocket_fuel')
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:diesel')
+	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:bio_diesel')
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:cetane_boosted_diesel')
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:gasoline')
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:high_octane_gasoline')
@@ -184,6 +185,8 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:rock_slabs', 'ad_astra:venus_stone_slab')
 	event.add('tfg:rock_slabs', 'ad_astra:mercury_stone_slab')
 	event.add('tfg:rock_slabs', 'ad_astra:glacio_stone_slab')
+
+	event.add('ad_astra:destroyed_in_space', '#minecraft:saplings')
 }
 
 const registerAdAstraBiomeTags = (event) => {
