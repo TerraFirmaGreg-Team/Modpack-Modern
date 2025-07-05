@@ -8,8 +8,7 @@ const registerAE2Materials = (event) => {
         .flags(
             GTMaterialFlags.NO_SMELTING, 
             GTMaterialFlags.CRYSTALLIZABLE, 
-            GTMaterialFlags.DISABLE_DECOMPOSITION, 
-            GTMaterialFlags.FORCE_GENERATE_BLOCK
+            GTMaterialFlags.DISABLE_DECOMPOSITION
         )
         .components('1x nether_quartz', '1x certus_quartz', '1x ruby')
         .color(0x6D5BB6)
