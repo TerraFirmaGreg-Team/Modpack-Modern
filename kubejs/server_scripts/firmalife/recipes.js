@@ -180,7 +180,7 @@ const registerFirmaLifeRecipes = (event) => {
 
 	//#region Медная / Copper
 
-	event.recipes.gtceu.bender('tfg:firmalife/sprinkler')
+	event.recipes.gtceu.bender('tfg:firmalife/sprinkler_electric_only')
 		.itemInputs('#forge:plates/copper')
 		.itemOutputs('firmalife:sprinkler')
 		.circuit(4)

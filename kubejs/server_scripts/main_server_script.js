@@ -246,8 +246,4 @@ ServerEvents.recipes(event => {
 	registerTreeTapRecipes(event)
 	registerVintageImprovementsRecipes(event)
 	registerWaterFlasksRecipes(event)
-
-	// This has to be last so it can clean up any auto-integration recipes that Greate adds after
-	// adding a recipe to another GT machine
-	removeGreateRecipes(event)
 })
