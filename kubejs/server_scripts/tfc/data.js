@@ -87,3 +87,27 @@ const registerTFCFoodData = (event) => {
 	})
 }
 
+//#region Climate Range for Crops
+
+const registerTFCDATAForClimate_range = (event) => {
+
+	event.climateRange(climate => {
+        climate.minHydration(10)
+        climate.maxHydration(60)
+        climate.minTemperature(5)
+        climate.maxTemperature(40)
+        climate.hydrationWiggle(7.5)
+        climate.temperatureWiggle(5.5)
+    }, 'tfg:sunflower')
+
+    event.climateRange(climate => {
+        climate.minHydration(10)
+        climate.maxHydration(60)
+        climate.minTemperature(-5)
+        climate.maxTemperature(25)
+        climate.hydrationWiggle(7.5)
+        climate.temperatureWiggle(1.5)
+    }, 'tfg:rapeseed')
+}
+
+//#endregion

@@ -2,7 +2,10 @@ const registerTFGItemTags = (event) => {
 
 	registerTFGTrimTags(event)
 	registerFacadeWhitelistTags(event)
-
+    //crop stuff
+	event.add('tfc:seeds', 'tfg:sunflower_seeds')
+	event.add('tfc:seeds', 'tfg:rapeseed_seeds')
+	event.add('tfc:foods', 'tfg:roasted_sunflower_seeds')
 	//temporary hidden items
 	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source_small')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source')
@@ -300,7 +303,12 @@ const registerTFGItemTags = (event) => {
 const registerTFGBlockTags = (event) => {
 
 	event.add('minecraft:mineable/shovel', 'tfg:ash_pile')
+    //crop stuff
+	event.add('tfc:crops', 'tfg:rapeseed')
+	event.add('tfc:mineable_with_sharp_tool', 'tfg:rapeseed')
 
+	event.add('tfc:crops', 'tfg:sunflower')	
+	event.add('tfc:mineable_with_sharp_tool','tfg:sunflower')
 	// #region Nether blocks
 
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')
