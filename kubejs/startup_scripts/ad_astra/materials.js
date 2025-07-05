@@ -22,6 +22,7 @@ const registerAdAstraMaterials = (event) => {
 		.ore()
 		.addOreByproducts('olivine', 'rutile', 'rutile')
 		.ingot()
+		.blastTemp(2000, 'low', GTValues.VA[GTValues.MV])
 		.flags(
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
 			GTMaterialFlags.GENERATE_PLATE, 

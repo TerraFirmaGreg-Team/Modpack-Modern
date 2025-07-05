@@ -141,8 +141,15 @@ const registerTFGItemTags = (event) => {
 	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => { event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`); })
 
 	// Use either cast or wrought iron
-	event.add('forge:double_iron_ingots', '#forge:double_ingots/iron')
-	event.add('forge:double_iron_ingots', '#forge:double_ingots/wrought_iron')
+	event.add('tfg:any_iron_double_ingot', '#forge:double_ingots/iron')
+	event.add('tfg:any_iron_double_ingot', '#forge:double_ingots/wrought_iron')
+
+	event.add('tfg:any_iron_plate', '#forge:double_plates/iron')
+	event.add('tfg:any_iron_plate', '#forge:double_plates/wrought_iron')
+
+	event.add('tfg:any_bronze_frame', '#forge:frames/bronze')
+	event.add('tfg:any_bronze_frame', '#forge:frames/bismuth_bronze')
+	event.add('tfg:any_bronze_frame', '#forge:frames/black_bronze')
 
 	//#region Food
 	const RAW_MEATS = [

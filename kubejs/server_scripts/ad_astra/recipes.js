@@ -301,24 +301,6 @@ const registerAdAstraRecipes = (event) => {
 	//#endregion
 
 
-	//#region FE cables
-
-	//event.recipes.gtceu.assembler('tfg:ad_astra_steel_cable')
-	//	.itemInputs('#forge:single_wires/manganese_phosphide', '#forge:plates/polyethylene')
-	//	.inputFluids(Fluid.of('gtceu:redstone', 144))
-	//	.itemOutputs('ad_astra:steel_cable')
-	//	.duration(60)
-	//	.EUt(120)
-
-	//event.recipes.gtceu.assembler('tfg:ad_astra_desh_cable')
-	//	.itemInputs('#forge:single_wires/magnesium_diboride', '#forge:plates/polyvinyl_chloride')
-	//	.inputFluids(Fluid.of('gtceu:redstone', 288))
-	//	.itemOutputs('ad_astra:desh_cable')
-	//	.duration(60)
-	//	.EUt(480)
-
-	//#endregion
-
 	//#region Колесо
 
 	event.shaped('ad_astra:white_flag', [
@@ -351,6 +333,24 @@ const registerAdAstraRecipes = (event) => {
 	})
 
 	//#endregion
+
+	// #region Ingots
+
+	event.recipes.gtceu.chemical_bath('tfg:desh_cool_down_water')
+		.itemInputs('#forge:hot_ingots/desh')
+		.inputFluids(Fluid.of('minecraft:water', 100))
+		.itemOutputs('#forge:ingots/desh')
+		.duration(400)
+		.EUt(120)
+
+	event.recipes.gtceu.chemical_bath('tfg:desh_cool_down_distilled_water')
+		.itemInputs('#forge:hot_ingots/desh')
+		.inputFluids(Fluid.of('gtceu:distilled_water', 100))
+		.itemOutputs('#forge:ingots/desh')
+		.duration(250)
+		.EUt(120)
+
+	// #endregion
 
 	//#region Воздушный пистолет
 

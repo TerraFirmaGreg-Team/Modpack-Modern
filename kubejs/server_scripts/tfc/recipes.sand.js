@@ -32,29 +32,41 @@ function registerTFCSandRecipes(event) {
 		// Песчанник -> Песок
 		event.recipes.gtceu.forge_hammer(`raw_${sandColor}_sandstone_to_sand`)
 			.itemInputs(`tfc:raw_sandstone/${sandColor}`)
-			.itemOutputs(`tfc:sand/${sandColor}`)
-			.duration(400)
+			.itemOutputs(`4x tfc:sand/${sandColor}`)
+			.duration(200)
 			.EUt(2)
+
+		event.recipes.greate.pressing(`4x tfc:sand/${sandColor}`, `tfc:raw_sandstone/${sandColor}`)
+			.recipeTier(1)
+			.id(`greate:pressing/raw_${sandColor}_sandstone_to_sand`)
 
 		// Гладкий песчанник -> Песок
 		event.recipes.gtceu.forge_hammer(`smooth_${sandColor}_sandstone_to_sand`)
 			.itemInputs(`tfc:smooth_sandstone/${sandColor}`)
-			.itemOutputs(`tfc:sand/${sandColor}`)
-			.duration(400)
+			.itemOutputs(`4x tfc:sand/${sandColor}`)
+			.duration(200)
 			.EUt(2)
+
+		event.recipes.greate.pressing(`4x tfc:sand/${sandColor}`, `tfc:smooth_sandstone/${sandColor}`)
+			.recipeTier(1)
+			.id(`greate:pressing/smooth_${sandColor}_sandstone_to_sand`)
 
 		// Обрезанный песчанник -> Песок
 		event.recipes.gtceu.forge_hammer(`cut_${sandColor}_sandstone_to_sand`)
 			.itemInputs(`tfc:cut_sandstone/${sandColor}`)
-			.itemOutputs(`tfc:sand/${sandColor}`)
-			.duration(400)
+			.itemOutputs(`4x tfc:sand/${sandColor}`)
+			.duration(200)
 			.EUt(2)
+
+		event.recipes.greate.pressing(`4x tfc:sand/${sandColor}`, `tfc:cut_sandstone/${sandColor}`)
+			.recipeTier(1)
+			.id(`greate:pressing/cut_${sandColor}_sandstone_to_sand`)
 
 		// Песок -> Песчанник
 		event.recipes.gtceu.compressor(`sand_${sandColor}_to_sandstone`)
 			.itemInputs(`4x tfc:sand/${sandColor}`)
 			.itemOutputs(`tfc:raw_sandstone/${sandColor}`)
-			.duration(800)
+			.duration(400)
 			.EUt(2)
 
 		// Песчанник -> Гладкий песчанник
@@ -125,49 +137,76 @@ function registerTFCSandRecipes(event) {
 	event.recipes.gtceu.forge_hammer('brown_gravel_to_sand')
 		.itemInputs('#tfc:brown_gravel')
 		.itemOutputs('tfc:sand/brown')
-		.duration(400)
+		.duration(200)
 		.EUt(2)
+
+	event.recipes.greate.pressing('tfc:sand/brown', '#tfc:brown_gravel')
+		.recipeTier(1)
+		.id(`greate:pressing/brown_gravel_to_sand`)
 
 	// Белый гравий -> Песок
 	event.recipes.gtceu.forge_hammer('white_gravel_to_sand')
 		.itemInputs('#tfc:white_gravel')
 		.itemOutputs('tfc:sand/white')
-		.duration(400)
+		.duration(200)
 		.EUt(2)
+
+	event.recipes.greate.pressing('tfc:sand/white', '#tfc:white_gravel')
+		.recipeTier(1)
+		.id(`greate:pressing/white_gravel_to_sand`)
 
 	// Черный гравий -> Песок
 	event.recipes.gtceu.forge_hammer('black_gravel_to_sand')
 		.itemInputs('#tfc:black_gravel')
 		.itemOutputs('tfc:sand/black')
-		.duration(400)
+		.duration(200)
 		.EUt(2)
+
+	event.recipes.greate.pressing('tfc:sand/black', '#tfc:black_gravel')
+		.recipeTier(1)
+		.id(`greate:pressing/black_gravel_to_sand`)
 
 	// Красный гравий -> Песок
 	event.recipes.gtceu.forge_hammer('red_gravel_to_sand')
 		.itemInputs('#tfc:red_gravel')
 		.itemOutputs('tfc:sand/red')
-		.duration(400)
+		.duration(200)
 		.EUt(2)
+
+	event.recipes.greate.pressing('tfc:sand/red', '#tfc:red_gravel')
+		.recipeTier(1)
+		.id(`greate:pressing/red_gravel_to_sand`)
 
 	// Желтый гравий -> Песок
 	event.recipes.gtceu.forge_hammer('yellow_gravel_to_sand')
 		.itemInputs('#tfc:yellow_gravel')
 		.itemOutputs('tfc:sand/yellow')
-		.duration(400)
+		.duration(200)
 		.EUt(2)
+
+	event.recipes.greate.pressing('tfc:sand/yellow', '#tfc:yellow_gravel')
+		.recipeTier(1)
+		.id(`greate:pressing/yellow_gravel_to_sand`)
 
 	// Зеленый гравий -> Песок
 	event.recipes.gtceu.forge_hammer('green_gravel_to_sand')
 		.itemInputs('#tfc:green_gravel')
 		.itemOutputs('tfc:sand/green')
-		.duration(400)
+		.duration(200)
 		.EUt(2)
+
+	event.recipes.greate.pressing('tfc:sand/green', '#tfc:green_gravel')
+		.recipeTier(1)
+		.id(`greate:pressing/green_gravel_to_sand`)
 
 	// Розовый гравий -> Песок
 	event.recipes.gtceu.forge_hammer('pink_gravel_to_sand')
 		.itemInputs('#tfc:pink_gravel')
 		.itemOutputs('tfc:sand/pink')
-		.duration(400)
+		.duration(200)
 		.EUt(2)
 
+	event.recipes.greate.pressing('tfc:sand/pink', '#tfc:pink_gravel')
+		.recipeTier(1)
+		.id(`greate:pressing/pink_gravel_to_sand`)
 }

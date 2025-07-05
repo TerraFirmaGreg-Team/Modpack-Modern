@@ -203,7 +203,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 	// moon
 	const MOON_ENTITIES = [
 		'tfc:rat',
-		'minecraft:rabbit',
+		'tfg:moon_rabbit',
 		'minecraft:enderman',
 		'minecraft:shulker',
 		'minecraft:shulker_bullet',

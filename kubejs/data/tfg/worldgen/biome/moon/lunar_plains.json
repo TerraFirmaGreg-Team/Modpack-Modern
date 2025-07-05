@@ -54,7 +54,7 @@
 		]
 	],
 	"has_precipitation": false,
-	"creature_spawn_probability": 0.00008,
+	"creature_spawn_probability": 0.0001,
 	"spawn_costs": {
 		"species:limpet": {
 			"energy_budget": 0.15,
@@ -66,16 +66,16 @@
 		"axolotls": [],
 		"creature": [
 			{
-				"type": "minecraft:rabbit",
+				"type": "tfg:moon_rabbit",
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100
 			},
 			{
 				"type": "species:birt",
-				"maxCount": 3,
-				"minCount": 2,
-				"weight": 20
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 10
 			}
 		],
 		"misc": [],

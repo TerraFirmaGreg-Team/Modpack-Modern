@@ -484,7 +484,7 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 10,
+								"max": 3,
 								"min": 1
 							},
 							"function": "minecraft:set_count"
@@ -500,8 +500,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 5,
-								"min": 2
+								"max": 3,
+								"min": 1
 							},
 							"function": "minecraft:set_count"
 						}
@@ -509,7 +509,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "ad_astra:desh_cable",
+					"name": "ad_astra:raw_desh",
 					"weight": 30,
 					"functions": [
 						{
