@@ -119,6 +119,10 @@ const registerTFGFoodData = (event) => {
 		food.hunger(6)
 		food.saturation(4)
 		food.decayModifier(4.5)
+		food.grain(0.5)
+		food.fruit(0.5)
+		food.vegetables(1)
+		food.protein(1)
 	})
 
 	event.foodItem('tfg:food/meal_bag', food => {
