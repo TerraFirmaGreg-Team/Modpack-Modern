@@ -149,9 +149,10 @@ function registerGTCEUMetalRecipes(event) {
 				}).id(`tfg:rolling/${material.getName()}_plate`)
 
 				if (!blockStack.isEmpty() && GTMaterials.Stone != material) {
-					let ingotArray = ['tfc:powder/flux'];
+					let ingotArray = [];
 					for (var i = 0; i < matAmount; i++)
 						ingotArray.push(ingotStack)
+					ingotArray.push('tfc:powder/flux')
 
 					// 9х Слиток -> Блок
 					event.recipes.greate.compacting(blockStack, ingotArray)
@@ -265,7 +266,7 @@ function registerGTCEUMetalRecipes(event) {
 			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 			.EUt(GTValues.VA[GTValues.LV])
 
-		event.recipes.gtceu.bender(`tfg:bend_${material.getName()}_double_ingot`)
+		event.recipes.gtceu.bender(`tfg:bend_${material.getName()}_double_ingot_electric_only`)
 			.itemInputs(twoIngotStack)
 			.itemOutputs(doubleIngotStack)
 			.duration(material.getMass() * 6)
