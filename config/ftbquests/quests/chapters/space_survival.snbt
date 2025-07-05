@@ -31,14 +31,14 @@
 			rotation: 0.0d
 			width: 0.5d
 			x: 2.5d
-			y: -10.5d
+			y: -9.5d
 		}
 		{
 			height: 0.5d
 			image: "ftblibrary:icons/star"
 			rotation: 0.0d
 			width: 0.5d
-			x: 4.5d
+			x: 4.0d
 			y: -8.5d
 		}
 		{
@@ -54,7 +54,7 @@
 			image: "ftblibrary:icons/star"
 			rotation: 0.0d
 			width: 0.5d
-			x: -0.5d
+			x: 0.5d
 			y: -7.0d
 		}
 		{
@@ -62,7 +62,7 @@
 			image: "ftblibrary:icons/star"
 			rotation: 0.0d
 			width: 0.5d
-			x: 0.0d
+			x: 1.0d
 			y: -9.0d
 		}
 		{
@@ -70,8 +70,8 @@
 			image: "ftblibrary:icons/star"
 			rotation: 0.0d
 			width: 0.5d
-			x: 4.5d
-			y: -6.5d
+			x: 3.5d
+			y: -7.0d
 		}
 		{
 			height: 0.5d
@@ -104,6 +104,14 @@
 			width: 0.5d
 			x: -8.0d
 			y: -8.5d
+		}
+		{
+			height: 0.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 0.5d
+			x: -8.5d
+			y: -8.0d
 		}
 	]
 	order_index: 0
