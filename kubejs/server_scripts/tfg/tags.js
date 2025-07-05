@@ -185,6 +185,8 @@ const registerTFGItemTags = (event) => {
 	});
 
 	//meal bags 
+	event.add('tfg:foil_packs', 'tfg:foil_pack');
+	event.add('tfg:foil_packs', 'tfg:clean_foil_pack')
 	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/meats');
 	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/grains');
 	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/vegetables');
