@@ -184,3 +184,17 @@ const registerGTCEUBedrockOreVeins = (event) => {
 			.dimensions('ad_astra:moon')
 	})
 }
+
+function registerGTCEUBedrockFluidVeins(event) {
+
+	event.add('tfg:moon_helium_3', vein => {
+		vein.dimensions('ad_astra:moon')
+		vein.fluid(() => Fluid.of('gtceu:helium_3').fluid)
+		vein.weight(1000)
+		vein.minimumYield(200)
+		vein.maximumYield(400)
+		vein.depletionAmount(1)
+		vein.depletionChance(1)
+		vein.depletedYield(200)
+	})
+}

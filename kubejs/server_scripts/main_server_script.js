@@ -181,6 +181,10 @@ GTCEuServerEvents.bedrockOreVeins(event => {
 	registerGTCEUBedrockOreVeins(event)
 })
 
+GTCEuServerEvents.fluidVeins(event => {
+	registerGTCEUBedrockFluidVeins(event)
+})
+
 /**
  * Событие регистрации рецептов.
  * Срабатывает после инициализации датапаков и тегов.

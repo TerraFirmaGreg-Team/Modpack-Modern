@@ -199,7 +199,6 @@ const registerTFGItemTags = (event) => {
 	// #region Space blocks
 	event.add('tfg:moon_plants', 'tfg:lunar_roots')
 	event.add('tfg:moon_plants', 'tfg:lunar_sprouts')
-	event.add('tfg:moon_plants', 'tfg:lunar_chorus_flower')
 	// #endregion
 
 	// #region 0.7.19 -> 0.9 conversion
