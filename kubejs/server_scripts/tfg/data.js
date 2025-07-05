@@ -127,5 +127,5 @@ const registerTFGFoodData = (event) => {
 
 const registerTFGFauna = (event) => {
 
-	event.fauna(climate => { }, fauna => { fauna.chance(0) }, 'tfg:moon_rabbit')
+	//event.fauna(climate => { }, fauna => { fauna.chance(0) }, 'tfg:moon_rabbit')
 }

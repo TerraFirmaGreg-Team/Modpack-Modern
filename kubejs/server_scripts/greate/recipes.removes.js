@@ -33,10 +33,10 @@ function removeGreateRecipes(event) {
 	event.remove({ id: /^greate:splashing\/integration\/create\/.*/ })
 	event.remove({ id: /^greate:crushing\/integration\/create\/.*/ })
 	event.remove({ id: /^greate:milling\/integration\/create\/.*/ })
-	event.remove({ id: /^greate:pressing\/integration\/create\/.*/ })
+	event.remove({ id: /^greate:compacting\/integration\/.*/ })
+	event.remove({ id: /^greate:pressing\/integration\/.*/ })
 
 	event.remove({ mod: 'greate', type: 'create:deploying' });
 	event.remove({ mod: 'greate', type: 'create:sequenced_assembly' });
 	event.remove({ mod: 'greate', type: 'gtceu:assembler' });
-	event.remove({ type: 'greate:pressing' });
 }

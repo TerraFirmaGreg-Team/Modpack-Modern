@@ -149,17 +149,24 @@ function registerGTCEUMetalRecipes(event) {
 				}).id(`tfg:rolling/${material.getName()}_plate`)
 
 				if (!blockStack.isEmpty() && GTMaterials.Stone != material) {
+					let ingotArray = ['tfc:powder/flux'];
+					for (var i = 0; i < matAmount; i++)
+						ingotArray.push(ingotStack)
+
 					// 9х Слиток -> Блок
-					event.recipes.createCompacting(blockStack, ingotStack.withCount(matAmount))
+					event.recipes.greate.compacting(blockStack, ingotArray)
+						.recipeTier(1)
+						.circuitNumber(9)
 						.heated()
-						.id(`tfg:compacting/${material.getName()}_block`)
+						.id(`greate:compacting/${material.getName()}_block`)
 				}
 			}
 			else {
 				if (!blockStack.isEmpty()) {
 					// Блок из гемов -> 9 Пластин
-					event.recipes.createCutting(plateStack.withCount(matAmount).withChance(0.65), blockStack)
-						.id(`tfg:cutting/${material.getName()}_plate`)
+					event.recipes.greate.cutting(plateStack.withCount(matAmount), blockStack)
+						.recipeTier(1)
+						.id(`greate:cutting/${material.getName()}_plate`)
 				}
 			}
 		}
@@ -173,10 +180,18 @@ function registerGTCEUMetalRecipes(event) {
 	}
 
 	const processPlateDouble = (material) => {
-		const item = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
-		if (item.isEmpty()) return
+		const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
+		if (doublePlateItem.isEmpty()) return
+		const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1)
 
 		event.remove({ id: `gtceu:shaped/plate_double_${material.getName()}` })
+
+		if (material.getProperty(TFGPropertyKey.TFC_PROPERTY) == null) {
+			event.recipes.greate.compacting(doublePlateItem, [plateItem, plateItem, 'tfc:powder/flux'])
+				.heated()
+				.recipeTier(2)
+				.id(`greate:compacting/${material.getName()}_double_plate`)
+		}
 	}
 
 	const processBlock = (material) => {
@@ -202,10 +217,20 @@ function registerGTCEUMetalRecipes(event) {
 	}
 
 	const processRodLong = (material) => {
-		const item = ChemicalHelper.get(TagPrefix.rodLong, material, 1)
-		if (item.isEmpty()) return
+		const longRodItem = ChemicalHelper.get(TagPrefix.rodLong, material, 1)
+		if (longRodItem.isEmpty()) return
+		const shortRodItem = ChemicalHelper.get(TagPrefix.rod, material, 1)
+		if (shortRodItem.isEmpty()) return;
 
 		event.remove({ id: `gtceu:shaped/stick_long_stick_${material.getName()}` })
+
+		// Rod welding recipes for all of the other non-tfc materials, since those were handled in tfc/recipes.materials.js
+		if (material.getProperty(TFGPropertyKey.TFC_PROPERTY) == null) {
+			event.recipes.greate.compacting(longRodItem, [shortRodItem, shortRodItem, 'tfc:powder/flux'])
+				.heated()
+				.recipeTier(1)
+				.id(`greate:compacting/${material.getName()}_long_rod`)
+		}
 	}
 
 	const processIngotDouble = (material) => {
@@ -305,10 +330,21 @@ function registerGTCEUMetalRecipes(event) {
 			.duration(10)
 			.EUt(16)
 
-		if (material.hasProperty(PropertyKey.GEM) && !TagPrefix.gem.isIgnored(material))
-			hammerRecipe.chancedOutput(ChemicalHelper.get(TagPrefix.gem, material, crushedOreItem.getCount()), 7500, 950)
-		else
+		if (material.hasProperty(PropertyKey.GEM) && !TagPrefix.gem.isIgnored(material)) {
+			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, crushedOreItem.getCount());
+			hammerRecipe.chancedOutput(gemItem, 7500, 950)
+
+			event.recipes.greate.pressing(TieredOutputItem.of(gemItem).withChance(0.75).withExtraTierChance(0.095), poorOreItem)
+				.recipeTier(1)
+				.id(`greate:pressing/poor_raw_${material.getName()}_to_gem`)
+		}
+		else {
 			hammerRecipe.chancedOutput(crushedOreItem, 7500, 950)
+
+			event.recipes.greate.pressing(TieredOutputItem.of(crushedOreItem).withChance(0.75).withExtraTierChance(0.095), poorOreItem)
+				.recipeTier(1)
+				.id(`greate:pressing/poor_raw_${material.getName()}_to_crushed_ore`)
+		}
 
 		// Macerator
 		let maceratorRecipe = event.recipes.gtceu.macerator(`macerate_poor_raw_${material.getName()}_ore_to_crushed_ore`)
@@ -372,10 +408,21 @@ function registerGTCEUMetalRecipes(event) {
 			.duration(10)
 			.EUt(16)
 
-		if (material.hasProperty(PropertyKey.GEM) && !TagPrefix.gem.isIgnored(material))
-			hammerRecipe.itemOutputs(ChemicalHelper.get(TagPrefix.gem, material, crushedOreItem.getCount()))
-		else
+		if (material.hasProperty(PropertyKey.GEM) && !TagPrefix.gem.isIgnored(material)) {
+			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, crushedOreItem.getCount())
+			hammerRecipe.itemOutputs(gemItem)
+
+			event.recipes.greate.pressing(gemItem, normalOreItem)
+				.recipeTier(1)
+				.id(`greate:pressing/raw_${material.getName()}_to_gem`)
+		}
+		else {
 			hammerRecipe.itemOutputs(crushedOreItem)
+
+			event.recipes.greate.pressing(crushedOreItem, normalOreItem)
+				.recipeTier(1)
+				.id(`greate:pressing/raw_${material.getName()}_to_crushed_ore`)
+		}
 
 		event.remove({ id: `greate:milling/integration/gtceu/macerator/macerate_raw_${material.getName()}_ore_to_crushed_ore` })
 
@@ -430,10 +477,21 @@ function registerGTCEUMetalRecipes(event) {
 			.duration(10)
 			.EUt(16)
 
-		if (material.hasProperty(PropertyKey.GEM) && !TagPrefix.gem.isIgnored(material))
-			hammerRecipe.itemOutputs(ChemicalHelper.get(TagPrefix.gem, material, crushedOreItem.getCount()))
-		else
+		if (material.hasProperty(PropertyKey.GEM) && !TagPrefix.gem.isIgnored(material)) {
+			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, crushedOreItem.getCount())
+			hammerRecipe.itemOutputs(gemItem)
+
+			event.recipes.greate.pressing(gemItem, richOreItem)
+				.recipeTier(1)
+				.id(`greate:pressing/rich_raw_${material.getName()}_to_gem`)
+		}
+		else {
 			hammerRecipe.itemOutputs(crushedOreItem)
+
+			event.recipes.greate.pressing(crushedOreItem, richOreItem)
+				.recipeTier(1)
+				.id(`greate:pressing/rich_raw_${material.getName()}_to_crushed_ore`)
+		}
 
 		// Macerator
 		event.recipes.gtceu.macerator(`macerate_rich_raw_${material.getName()}_ore_to_crushed_ore`)
@@ -571,6 +629,10 @@ function registerGTCEUMetalRecipes(event) {
 			[ 'A', 'B' ],
 			{ A: chipped, B: '#forge:tools/mortars'})
 			.id(`shapeless/mortar_chipped_${material.getName()}`)
+
+		event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, 9), ChemicalHelper.get(TagPrefix.block, material, 1))
+			.recipeTier(0)
+			.id(`greate:pressing/unpacking_${material.getName()}_block`)
 	}
 
 	const processAnvil = (material) => {

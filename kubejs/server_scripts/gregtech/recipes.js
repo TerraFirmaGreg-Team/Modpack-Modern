@@ -59,6 +59,10 @@ const registerGTCEURecipes = (event) => {
 		.duration(30)
 		.EUt(2)
 
+	event.recipes.greate.pressing('2x tfc:powder/flux', '#tfc:fluxstone')
+		.recipeTier(0)
+		.id('greate:pressing/flux')
+
 	//#region Выход: Диоксид силикона
 
 	event.recipes.gtceu.electrolyzer('sand_electrolysis')

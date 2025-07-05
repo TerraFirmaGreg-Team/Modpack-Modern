@@ -82,39 +82,13 @@ function registerVintageImprovementsRecipes(event) {
 		'BBE',
 		'C D'
 	], {
-		A: '#forge:frames/bronze',
+		A: '#tfg:any_bronze_frame',
 		B: '#tfg:hardwood',
-		C: '#forge:double_iron_ingots',
+		C: '#tfg:any_iron_double_ingot',
 		D: 'greate:andesite_alloy_cogwheel',
 		E: '#minecraft:planks',
 		F: '#forge:tools/hammers'
-	}).id('tfg:vi/shaped/helve_hammer_bronze')
-
-	event.shaped('vintageimprovements:helve_hammer', [
-		'F A',
-		'BBE',
-		'C D'
-	], {
-		A: '#forge:frames/black_bronze',
-		B: '#tfg:hardwood',
-		C: '#forge:double_iron_ingots',
-		D: 'greate:andesite_alloy_cogwheel',
-		E: '#minecraft:planks',
-		F: '#forge:tools/hammers'
-	}).id('tfg:vi/shaped/helve_hammer_black_bronze')
-
-	event.shaped('vintageimprovements:helve_hammer', [
-		'F A',
-		'BBE',
-		'C D'
-	], {
-		A: '#forge:frames/bismuth_bronze',
-		B: '#tfg:hardwood',
-		C: '#forge:double_iron_ingots',
-		D: 'greate:andesite_alloy_cogwheel',
-		E: '#minecraft:planks',
-		F: '#forge:tools/hammers'
-	}).id('tfg:vi/shaped/helve_hammer_bismuth_bronze')
+	}).id('tfg:vi/shaped/helve_hammer')
 
 	event.recipes.create.mechanical_crafting('vintageimprovements:lathe', [
 		'DEEFE',
@@ -411,32 +385,6 @@ function registerVintageImprovementsRecipes(event) {
 				results: [ChemicalHelper.get(TagPrefix.screw, material, 1)],
 				processingTime: Math.max(1, material.getMass() / 8) * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/lathe/${material.getName()}_bolt_to_screw`)
-		}
-
-		// #endregion
-
-		// #region Pressurizing
-
-		if (material.hasFlag(TFGMaterialFlags.GENERATE_DOUBLE_INGOTS)) {
-			const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
-
-			event.custom({
-				type: 'vintageimprovements:pressurizing',
-				ingredients: [ingotItem, ingotItem, { item: 'tfc:powder/flux' }],
-				heatRequirement: "heated",
-				results: [ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1)],
-				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/pressurizing/${material.getName()}_double_ingot`)
-
-			const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
-
-			event.custom({
-				type: 'vintageimprovements:pressurizing',
-				ingredients: [plateItem, plateItem, { item: 'tfc:powder/flux' }],
-				heatRequirement: "heated",
-				results: [ChemicalHelper.get(TagPrefix.plateDouble, material, 1)],
-				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/pressurizing/${material.getName()}_double_plate`)
 		}
 
 		// #endregion
