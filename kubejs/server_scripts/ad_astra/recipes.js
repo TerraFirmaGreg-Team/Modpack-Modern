@@ -652,7 +652,20 @@ const registerAdAstraRecipes = (event) => {
 			{ count: 4, ingredient: { item: "minecraft:glowstone_dust" }},
 			{ count: 1, ingredient: { item: "ad_astra:launch_pad" }}
 		],
-		structure: "tfg:earth_orbit/space_station"
+		structure: "tfg:space_station/earth_orbit"
 	})
+
+	event.custom({
+		type: "ad_astra:space_station_recipe",
+		dimension: "ad_astra:moon_orbit",
+		ingredients: [
+			{ count: 43, ingredient: { item: "gtceu:aluminium_frame" }},
+			{ count: 24, ingredient: { item: "gtceu:glass_plate" }},
+			{ count: 4, ingredient: { item: "minecraft:glowstone_dust" }},
+			{ count: 1, ingredient: { item: "ad_astra:launch_pad" }}
+		],
+		structure: "tfg:space_station/moon_orbit"
+	})
+
 	//#endregion
 }

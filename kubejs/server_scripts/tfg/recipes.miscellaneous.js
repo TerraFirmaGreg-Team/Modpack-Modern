@@ -124,7 +124,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.outputFluids(Fluid.of('firmalife:curdled_goat_milk', 1000))
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.LV])
-	
+
 	//Scaffolding Frame
 	event.shaped('tfg:scaffolding_frame',
 		[
@@ -136,7 +136,7 @@ function registerTFGMiscellaneousRecipes(event) {
 			A: '#forge:rods/wood',
 			B: '#forge:cloth'
 		}).id('tfg:shaped/scaffolding_frame');
-	
+
 	//Airship Hull
 	event.shaped('tfg:airship_hull', [
 		'A B',
@@ -254,7 +254,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.fluid_solidifier('tfg:ice')
-		.inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfg:clean_water" }}))
+		.inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfg:clean_water" } }))
 		.notConsumable('gtceu:block_casting_mold')
 		.itemOutputs('minecraft:ice')
 		.duration(200)
@@ -391,20 +391,20 @@ function registerTFGMiscellaneousRecipes(event) {
 	]).id(`tfg:shapeless/armor_stand`)
 
 	event.recipes.tfc.sewing(
-        '1x tfg:piglin_disguise',
-        [
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 
-            0, 1, 1, 0, 0, 0, 1, 1, 0,
-            0, 1, 1, 1, 0, 1, 1, 1, 0,
-            0, 0, 1, 1, 0, 1, 1, 0, 0,
-            0, 0, 1, 1, 0, 1, 1, 0, 0
-        ], [
-            1, 1, 1, 1, 1, 1, 1, 1,
-            1, 0, 1, 0, 0, 1, 0, 1,
-            1, -1, 0, 0, 0, 0, -1, 1,
-            1, -1, 0, 0, 0, 0, -1, 1
-        ]
-    ).id('tfg:sewing/piglin_disguise')
+		'1x tfg:piglin_disguise',
+		[
+			0, 0, 0, 0, 0, 0, 0, 0, 0,
+			0, 1, 1, 0, 0, 0, 1, 1, 0,
+			0, 1, 1, 1, 0, 1, 1, 1, 0,
+			0, 0, 1, 1, 0, 1, 1, 0, 0,
+			0, 0, 1, 1, 0, 1, 1, 0, 0
+		], [
+		1, 1, 1, 1, 1, 1, 1, 1,
+		1, 0, 1, 0, 0, 1, 0, 1,
+		1, -1, 0, 0, 0, 0, -1, 1,
+		1, -1, 0, 0, 0, 0, -1, 1
+	]
+	).id('tfg:sewing/piglin_disguise')
 
 	//trowel
 	event.shaped('tfg:trowel', [
@@ -418,55 +418,56 @@ function registerTFGMiscellaneousRecipes(event) {
 		D: '#forge:tools/screwdrivers'
 	}).id('tfg:shaped/trowel')
 
-    event.recipes.gtceu.assembler('tfg:assembler/trowel')
-        .itemInputs(ChemicalHelper.get(TagPrefix.plate, GTMaterials.Invar, 2), '1x #forge:screws', '1x #tfc:lumber')
-        .itemOutputs('1x tfg:trowel')
-        .duration(40)
-        .circuit(4)
-        .EUt(GTValues.VA[GTValues.ULV])
+	event.recipes.gtceu.assembler('tfg:assembler/trowel')
+		.itemInputs(ChemicalHelper.get(TagPrefix.plate, GTMaterials.Invar, 2), '1x #forge:screws', '1x #tfc:lumber')
+		.itemOutputs('1x tfg:trowel')
+		.duration(40)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.ULV])
 
+	// Food related
 	event.recipes.gtceu.forming_press('tfg:forming_press/foil_pack')
-        .itemInputs(ChemicalHelper.get(TagPrefix.foil, GTMaterials.Aluminium, 1), ChemicalHelper.get(TagPrefix.foil, GTMaterials.Polyethylene, 1))
-        .itemOutputs('1x tfg:foil_pack')
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.MV])
+		.itemInputs(ChemicalHelper.get(TagPrefix.foil, GTMaterials.Aluminium, 1), ChemicalHelper.get(TagPrefix.foil, GTMaterials.Polyethylene, 1))
+		.itemOutputs('1x tfg:foil_pack')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/dry_ice')
-        .inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
+		.inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
 		.notConsumable('gtceu:block_casting_mold')
-        .itemOutputs('2x tfg:dry_ice')
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.MV])
+		.itemOutputs('2x tfg:dry_ice')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.vacuum_freezer('tfg:vacuum_freezer/dry_ice')
-        .inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
+		.inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
 		.notConsumable('gtceu:block_casting_mold')
-        .itemOutputs('10x tfg:dry_ice')
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.MV])
+		.itemOutputs('10x tfg:dry_ice')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:chemical_reactor/decompress_dry_ice')
-        .outputFluids(Fluid.of('gtceu:carbon_dioxide', 100))
-        .itemInputs('1x tfg:dry_ice')
-        .duration(20)
-        .circuit(4)
-        .EUt(GTValues.VA[GTValues.ULV])
+		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 100))
+		.itemInputs('1x tfg:dry_ice')
+		.duration(20)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.mixer('tfg:clean_foil_pack')
-        .itemInputs('1x tfg:used_foil_pack')
-		.inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfg:clean_water" }}))
-        .itemOutputs('1x tfg:clean_foil_pack')
-        .duration(200)
-        .circuit(1)
-        .EUt(GTValues.VA[GTValues.LV])
+		.itemInputs('1x tfg:used_foil_pack')
+		.inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfg:clean_water" } }))
+		.itemOutputs('1x tfg:clean_foil_pack')
+		.duration(200)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.ore_washer('tfg:ore_washer/distilled/clean_foil_pack')
-        .itemInputs('1x tfg:used_foil_pack')
+		.itemInputs('1x tfg:used_foil_pack')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 10))
-        .itemOutputs('1x tfg:clean_foil_pack')
-        .duration(200)
-        .circuit(2)
-        .EUt(GTValues.VA[GTValues.ULV])
+		.itemOutputs('1x tfg:clean_foil_pack')
+		.duration(200)
+		.circuit(2)
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.custom({
 		type: "ae2:transform",
@@ -475,8 +476,8 @@ function registerTFGMiscellaneousRecipes(event) {
 			tag: "tfc:water"
 		},
 		ingredients: [
-			{item: 'tfg:used_foil_pack'}],
-		result: {item: 'tfg:clean_foil_pack'}
+			{ item: 'tfg:used_foil_pack' }],
+		result: { item: 'tfg:clean_foil_pack' }
 	}).id('tfg:ae_transform/clean_foil_pack')
 
 	event.recipes.greate.splashing(['tfg:clean_foil_pack'], 'tfg:used_foil_pack')
@@ -496,37 +497,70 @@ function registerTFGMiscellaneousRecipes(event) {
 		]).id(`tfg:shapeless/emptying/freeze_dried/${fruit.name}`)
 	})
 
+	// Refrigerants
+
 	event.recipes.gtceu.chemical_reactor('tfg:chemical_reactor/chlorodifluoromethane')
 		.inputFluids(Fluid.of('gtceu:chloroform', 2000), Fluid.of('gtceu:hydrofluoric_acid', 4000))
-        .outputFluids(Fluid.of('tfg:chlorodifluoromethane', 6000))
-        .duration(480)
-        .circuit(2)
-        .EUt(GTValues.VA[GTValues.MV])
+		.outputFluids(Fluid.of('tfg:chlorodifluoromethane', 6000))
+		.duration(480)
+		.circuit(2)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:chemical_reactor/breakdown/chlorodifluoromethane')
 		.inputFluids(Fluid.of('tfg:chlorodifluoromethane', 300))
-        .outputFluids(Fluid.of('gtceu:tetrafluoroethylene', 100), Fluid.of('gtceu:hydrochloric_acid', 200))
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.HV])
+		.outputFluids(Fluid.of('gtceu:tetrafluoroethylene', 100), Fluid.of('gtceu:hydrochloric_acid', 200))
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:chemical_reactor/acetylene')
 		.inputFluids(Fluid.of('gtceu:methane', 3000), Fluid.of('gtceu:oxygen', 3000))
-        .outputFluids(Fluid.of('tfg:acetylene', 100))
-        .circuit(4)
-        .duration(120)
-        .EUt(GTValues.VA[GTValues.MV])
+		.outputFluids(Fluid.of('tfg:acetylene', 100))
+		.circuit(4)
+		.duration(120)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:chemical_reactor/1_1_1_2_tetrafluoroethane')
 		.inputFluids(Fluid.of('tfg:acetylene', 1000), Fluid.of('gtceu:chlorine', 2000), Fluid.of('gtceu:hydrofluoric_acid', 8000))
-        .outputFluids(Fluid.of('tfg:1_1_1_2_tetrafluoroethane', 2000), Fluid.of('gtceu:hydrochloric_acid', 6000))
-        .circuit(4)
-        .duration(480)
-        .EUt(GTValues.VA[GTValues.HV])
+		.outputFluids(Fluid.of('tfg:1_1_1_2_tetrafluoroethane', 2000), Fluid.of('gtceu:hydrochloric_acid', 6000))
+		.circuit(4)
+		.duration(480)
+		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.cracker('tfg:cracker/isobutane')
 		.inputFluids(Fluid.of('gtceu:butane', 4000))
-        .outputFluids(Fluid.of('tfg:isobutane', 1000), Fluid.of('gtceu:lpg', 3000))
-        .circuit(4)
-        .duration(2400)
-        .EUt(GTValues.VA[GTValues.HV])
+		.outputFluids(Fluid.of('tfg:isobutane', 1000), Fluid.of('gtceu:lpg', 3000))
+		.circuit(4)
+		.duration(2400)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	// Biodiesel
+
+	event.recipes.gtceu.chemical_reactor(`alcohol_biodiesel`)
+		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
+		.inputFluids(Fluid.of('gtceu:seed_oil', 6000))
+		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
+		.duration(20 * 30)
+		.EUt(GTValues.VHA[GTValues.ULV])
+
+	event.recipes.gtceu.extractor(`rapeseed_oil`)
+		.itemInputs('tfg:rapeseed_product')
+		.outputFluids(Fluid.of('gtceu:seed_oil', 600))
+		.duration(20 * 30)
+		.EUt(GTValues.VHA[GTValues.ULV])
+
+	event.recipes.gtceu.extractor(`sunflower_oil`)
+		.itemInputs('tfg:sunflower_product')
+		.outputFluids(Fluid.of('gtceu:seed_oil', 350))
+		.duration(20 * 30)
+		.EUt(GTValues.VHA[GTValues.ULV])
+
+	event.recipes.tfc.barrel_sealed(1000)
+		.inputs('tfg:rapeseed_product', Fluid.of('minecraft:water', 100))
+		.outputFluid(Fluid.of('gtceu:seed_oil', 600))
+		.id('tfg:barrel/rapeseed_to_oil')
+
+	event.recipes.tfc.barrel_sealed(1000)
+		.inputs('tfg:sunflower_product', Fluid.of('minecraft:water', 100))
+		.outputFluid(Fluid.of('gtceu:seed_oil', 350))
+		.id('tfg:barrel/sunflower_to_oil')
 }

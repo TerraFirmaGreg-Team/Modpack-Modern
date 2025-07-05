@@ -1,0 +1,528 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "space_survival"
+	group: "21D975CEBDE06BA9"
+	icon: {
+		Count: 1
+		id: "ad_astra:tier_1_rocket"
+		tag: {
+			BotariumData: {
+				StoredFluids: [{
+					Amount: 0L
+					Fluid: "minecraft:empty"
+				}]
+			}
+		}
+	}
+	id: "671B872DCEFCA5DD"
+	images: [
+		{
+			height: 2.5d
+			image: "ad_astra:textures/gui/sprites/space_station.png"
+			rotation: 0.0d
+			width: 2.5d
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			height: 0.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 0.5d
+			x: 2.5d
+			y: -9.5d
+		}
+		{
+			height: 0.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 0.5d
+			x: 4.0d
+			y: -8.5d
+		}
+		{
+			height: 0.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 0.5d
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			height: 0.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 0.5d
+			x: 0.5d
+			y: -7.0d
+		}
+		{
+			height: 0.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 0.5d
+			x: 1.0d
+			y: -9.0d
+		}
+		{
+			height: 0.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 0.5d
+			x: 3.5d
+			y: -7.0d
+		}
+		{
+			height: 0.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 0.5d
+			x: -6.5d
+			y: -9.5d
+		}
+		{
+			height: 0.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 0.5d
+			x: -7.5d
+			y: -6.5d
+		}
+		{
+			height: 0.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 0.5d
+			x: -5.5d
+			y: -7.5d
+		}
+		{
+			height: 0.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 0.5d
+			x: -8.0d
+			y: -8.5d
+		}
+		{
+			height: 0.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 0.5d
+			x: -8.5d
+			y: -8.0d
+		}
+	]
+	order_index: 0
+	quest_links: [
+		{
+			id: "62E455D8BAA50151"
+			linked_quest: "00A2566109144D7F"
+			shape: "octagon"
+			size: 3.0d
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			id: "4E3C525554D93662"
+			linked_quest: "3E51DAA2E5CF0422"
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			id: "168AECC70E7A9302"
+			linked_quest: "038B204DAC9C863D"
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			id: "652DC031E6BEF58B"
+			linked_quest: "3FBDC8552F7D8008"
+			shape: "none"
+			size: 2.0d
+			x: -7.0d
+			y: -8.0d
+		}
+		{
+			id: "57EEF4CC674B1C3B"
+			linked_quest: "6752CC523D38A214"
+			x: -5.5d
+			y: -5.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["5826EC76931359B8"]
+			description: ["{quests.space_survival.bedrock_mining.desc}"]
+			icon: "gtceu:mv_bedrock_ore_miner"
+			id: "3C92063DE5B9D5E9"
+			subtitle: "{quests.space_survival.bedrock_mining.subtitle}"
+			tasks: [{
+				id: "7768441FAA017BB1"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:mv_bedrock_ore_miner)item(gtceu:hv_bedrock_ore_miner)item(gtceu:ev_bedrock_ore_miner))"
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.space_survival.bedrock_mining.title}"
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["16B735F9C391D260"]
+			description: ["{quests.space_survival.preparations.desc}"]
+			disable_toast: true
+			icon: "ad_astra:earth_globe"
+			id: "72BD27FEEB34C7B0"
+			shape: "octagon"
+			size: 3.0d
+			subtitle: "{quests.space_survival.preparations.subtitle}"
+			title: "{quests.space_survival.preparations.title}"
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"038B204DAC9C863D"
+				"2274463277151EF2"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.space_survival.compressed_gases.desc}"]
+			id: "493D733A5438DD7E"
+			subtitle: "{quests.space_survival.compressed_gases.subtitle}"
+			tasks: [{
+				id: "7168697817CE63A8"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:compressed_nitrox_bucket)item(tfg:compressed_heliox_bucket)item(tfg:compressed_heliox_3_bucket)item(tfg:compressed_trimix_bucket)item(tfg:compressed_trimix_3_bucket))"
+					}
+				}
+				title: "{quests.space_survival.compressed_gases.task}"
+				type: "item"
+			}]
+			title: "{quests.space_survival.compressed_gases.title}"
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"72BD27FEEB34C7B0"
+				"3F68A259FA38D342"
+			]
+			description: ["{quests.space_survival.satellite.desc}"]
+			id: "5D085354D7E377C3"
+			optional: true
+			shape: "none"
+			subtitle: "{quests.space_survival.satellite.subtitle}"
+			tasks: [
+				{
+					count: 43L
+					id: "077E720C4C236E1B"
+					item: "gtceu:aluminium_frame"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "619C445EC10863B4"
+					item: { Count: 24, id: "gtceu:glass_plate" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0CD543F130E75DF1"
+					item: { Count: 4, id: "minecraft:glowstone_dust" }
+					type: "item"
+				}
+				{
+					id: "3C4B4C52BCB70800"
+					item: "ad_astra:launch_pad"
+					type: "item"
+				}
+			]
+			title: "{quests.space_survival.satellite.title}"
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["00A2566109144D7F"]
+			description: ["{quests.space_survival.chorus.desc}"]
+			icon: "minecraft:chorus_flower"
+			id: "33374462FF07BC75"
+			subtitle: "{quests.space_survival.chorus.subtitle}"
+			tasks: [
+				{
+					id: "3B06766C1A6B30C0"
+					item: "minecraft:chorus_flower"
+					type: "item"
+				}
+				{
+					id: "328B134E6C8F1E76"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:food": {
+								creationDate: 14190000L
+								traits: [ ]
+							}
+						}
+						id: "minecraft:chorus_fruit"
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.space_survival.chorus.title}"
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"33374462FF07BC75"
+				"3FBDC8552F7D8008"
+			]
+			dependency_requirement: "one_completed"
+			description: ["&6For each travel you will need Rocket Fuel&r, it seems complicated and it is quite a long process but you can make Rocket Fuel from &bChlorine&r, &bMethane&r, &bNitrogen&r, &bOxygen&r and &bWater&r. Nothing too bad, also if you already have your &5Large Chemical Reactor&r you could unlock some bypass.\\n\\n&7We advise you to use EMI Recipe Tree to have an easier time understanding each step. Simply click on the small icon with 4 squares on the right of the crafting recipe.&r"]
+			id: "60D903E9FA91DB42"
+			subtitle: "Easier than you think"
+			tasks: [{
+				id: "6A00144D5C0E9FA8"
+				item: "gtceu:rocket_fuel_bucket"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["00A2566109144D7F"]
+			description: ["{quests.space_survival.solar_panels.desc}"]
+			icon: "ad_astra:solar_panel"
+			id: "5826EC76931359B8"
+			subtitle: "{quests.space_survival.solar_panels.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "7FE80224BA96A53D"
+					item: "ad_astra:solar_panel"
+					type: "item"
+				}
+				{
+					id: "14E951390A15C1CD"
+					item: "gtceu:mv_1a_energy_converter"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.space_survival.solar_panels.title}"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"5826EC76931359B8"
+				"2274463277151EF2"
+			]
+			description: [
+				"{quests.space_survival.air_distributor.desc.1}"
+				"{@pagebreak}"
+				"{quests.space_survival.air_distributor.desc.2}"
+			]
+			id: "3F785579F13B0F46"
+			subtitle: "{quests.space_survival.air_distributor.subtitle}"
+			tasks: [{
+				id: "051E9A1C97179DAE"
+				item: "ad_astra:oxygen_distributor"
+				type: "item"
+			}]
+			title: "{quests.space_survival.air_distributor.title}"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5826EC76931359B8"]
+			description: [
+				"{quests.space_survival.stone_dust_centrifuging.desc.1}"
+				"{@pagebreak}"
+				"{quests.space_survival.stone_dust_centrifuging.desc.2}"
+			]
+			icon: "gtceu:helium_3_bucket"
+			id: "2274463277151EF2"
+			subtitle: "{quests.space_survival.stone_dust_centrifuging.subtitle}"
+			tasks: [
+				{
+					id: "72B3F8FE3EA395BE"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfg:moon_stone_dust)item(tfg:glacio_stone_dust)item(tfg:moon_deepslate_dust))"
+						}
+					}
+					title: "{quests.space_survival.stone_dust_centrifuging.task}"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "3B3532D745548B3D"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:lv_centrifuge)item(gtceu:mv_centrifuge)item(gtceu:hv_centrifuge)item(gtceu:ev_centrifuge)item(gtceu:iv_centrifuge)item(gtceu:luv_centrifuge)item(gtceu:zpm_centrifuge)item(gtceu:uv_centrifuge))"
+						}
+					}
+					title: "{quests.ore_proc.centrifuge_sifter.task}"
+					type: "item"
+				}
+			]
+			title: "{quests.space_survival.stone_dust_centrifuging.title}"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["00A2566109144D7F"]
+			description: ["{quests.space_survival.rover.desc}"]
+			id: "46C92B938921A0AC"
+			subtitle: "{quests.space_survival.rover.subtitle}"
+			tasks: [{
+				id: "5BCE0D4D2189138B"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rover"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{quests.space_survival.rover.title}"
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["493D733A5438DD7E"]
+			description: ["{quests.space_survival.zip_gun.desc}"]
+			id: "3F68A259FA38D342"
+			subtitle: "{quests.space_survival.zip_gun.subtitle}"
+			tasks: [{
+				id: "56DD17ED9D60A1BD"
+				item: {
+					Count: 1
+					id: "ad_astra:zip_gun"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{quests.space_survival.zip_gun.title}"
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3F785579F13B0F46"]
+			description: ["{quests.space_survival.oxygen_info.desc}"]
+			icon: "ad_astra:gravity_normalizer"
+			id: "75CC6B5DFC2454D4"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.space_survival.oxygen_info.subtitle}"
+			tasks: [
+				{
+					id: "08A02C7DA788283C"
+					item: "ad_astra:oxygen_sensor"
+					type: "item"
+				}
+				{
+					id: "2571D7A114D3F5EC"
+					item: "ad_astra:vent"
+					type: "item"
+				}
+				{
+					id: "6CC21FB252C9D8BA"
+					item: "ad_astra:gravity_normalizer"
+					type: "item"
+				}
+			]
+			title: "{quests.space_survival.oxygen_info.title}"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["00A2566109144D7F"]
+			description: ["{quests.space_survival.flag.desc}"]
+			id: "64673F96FE0C97F1"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.space_survival.flag.subtitle}"
+			tasks: [{
+				id: "380334FEBF07DB9D"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(ad_astra:flags)"
+					}
+				}
+				title: "{quests.space_survival.flag.task}"
+				type: "item"
+			}]
+			title: "{quests.space_survival.flag.title}"
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"5826EC76931359B8"
+				"3C92063DE5B9D5E9"
+			]
+			description: ["{quests.space_survival.railgun.desc}"]
+			icon: "tfg:interplanetary_item_launcher"
+			id: "1A9A5F55F1F0AC58"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{quests.space_survival.railgun.subtitle}"
+			tasks: [
+				{
+					id: "14EEFF310A3179A8"
+					item: "tfg:interplanetary_item_launcher"
+					type: "item"
+				}
+				{
+					id: "5F95946B3B0E38B9"
+					item: "tfg:interplanetary_item_reciever"
+					type: "item"
+				}
+			]
+			title: "{quests.space_survival.railgun.title}"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["72BD27FEEB34C7B0"]
+			description: ["{quests.space_survival.food.desc}"]
+			id: "777E0647ED625541"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.space_survival.food.subtitle}"
+			tasks: [{
+				id: "30D0226A73EEFE01"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:space_food)"
+					}
+				}
+				title: "{quests.space_survival.food.task}"
+				type: "item"
+			}]
+			title: "{quests.space_survival.food.title}"
+			x: -2.5d
+			y: -6.5d
+		}
+	]
+	subtitle: ["{quests.space_survival.subtitle}"]
+	title: "{quests.space_survival}"
+}

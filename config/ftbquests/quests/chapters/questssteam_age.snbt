@@ -37,7 +37,10 @@
 	]
 	quests: [
 		{
-			dependencies: ["7B045998769930F0"]
+			dependencies: [
+				"7B045998769930F0"
+				"55FDF06AC0C01D0B"
+			]
 			description: ["{quests.steam_age.basic_millstone.desc}"]
 			id: "48C1E980F7D64317"
 			size: 1.5d
@@ -172,7 +175,10 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["09D913288896A67A"]
+			dependencies: [
+				"09D913288896A67A"
+				"05A39719B66B8F76"
+			]
 			description: ["{quests.steam_age.steel_encased_fan.desc}"]
 			id: "616E28977F3216D9"
 			subtitle: "{quests.steam_age.steel_encased_fan.subtitle}"
@@ -365,7 +371,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["09D913288896A67A"]
+			dependencies: [
+				"09D913288896A67A"
+				"05A39719B66B8F76"
+			]
 			description: ["{quests.steam_age.steel_millstone.desc}"]
 			hide_dependent_lines: true
 			id: "5E4FC017E09ACF44"
@@ -380,7 +389,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["5917B0D4708BF534"]
+			dependencies: [
+				"5917B0D4708BF534"
+				"6100B3C732E379AA"
+			]
 			description: ["{quests.steam_age.crushing_wheel.desc}"]
 			id: "4F3D0D746D26B59F"
 			optional: true
@@ -680,7 +692,10 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["46FA9DD4755A5548"]
+			dependencies: [
+				"46FA9DD4755A5548"
+				"6100B3C732E379AA"
+			]
 			description: ["{quests.steam_age.forge_hammer.desc}"]
 			id: "59F7F7A8C76DE31C"
 			shape: "square"
@@ -815,6 +830,7 @@
 			dependencies: [
 				"033E74BC588E7EAD"
 				"5917B0D4708BF534"
+				"6100B3C732E379AA"
 			]
 			description: ["{quests.steam_age.centrifuge.desc}"]
 			id: "19A1D52A7F550478"
@@ -830,7 +846,10 @@
 			y: 17.0d
 		}
 		{
-			dependencies: ["2C35D4E01AEC02AA"]
+			dependencies: [
+				"2C35D4E01AEC02AA"
+				"6100B3C732E379AA"
+			]
 			description: ["{quests.steam_age.vibrating_table.desc}"]
 			id: "1E8CC993E0251828"
 			optional: true
@@ -895,7 +914,10 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["46FA9DD4755A5548"]
+			dependencies: [
+				"46FA9DD4755A5548"
+				"6100B3C732E379AA"
+			]
 			description: ["{quests.steam_age.steam_furnace.desc}"]
 			id: "799288FB7A4DCA11"
 			subtitle: "{quests.steam_age.steam_furnace.subtitle}"
@@ -1460,7 +1482,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["46FA9DD4755A5548"]
+			dependencies: [
+				"46FA9DD4755A5548"
+				"6100B3C732E379AA"
+			]
 			description: ["{quests.steam_age.steam_macerator.desc}"]
 			id: "6CF7DCC996BACBFA"
 			optional: true
@@ -1603,7 +1628,10 @@
 			y: 17.0d
 		}
 		{
-			dependencies: ["7B045998769930F0"]
+			dependencies: [
+				"7B045998769930F0"
+				"55FDF06AC0C01D0B"
+			]
 			description: ["{quests.steam_age.basic_mech_press.desc}"]
 			id: "14710C5B4981CECC"
 			optional: true
@@ -1619,7 +1647,10 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["09D913288896A67A"]
+			dependencies: [
+				"09D913288896A67A"
+				"05A39719B66B8F76"
+			]
 			description: [
 				"{quests.steam_age.steel_mech_press.desc.1}"
 				"{@pagebreak}"

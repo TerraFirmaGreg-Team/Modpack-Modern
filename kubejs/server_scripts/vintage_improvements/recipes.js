@@ -612,6 +612,28 @@ function registerVintageImprovementsRecipes(event) {
 		processingTime: 120
 	}).id('tfg:vi/vacuumizing/vulcanized_latex_to_raw_rubber')
 
+	// Seed oils
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'tfg:sunflower_product' }],
+		results: [{ fluid: 'gtceu:seed_oil', amount: 350 }],
+		processingTime: 1000
+	}).id('tfg:vi/vacuumizing/sunflower')
+
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'tfg:rapeseed_product' }],
+		results: [{ fluid: 'gtceu:seed_oil', amount: 600 }],
+		processingTime: 1000
+	}).id('tfg:vi/vacuumizing/rapeseed')
+
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ tag: 'forge:seeds' }],
+		results: [{ fluid: 'gtceu:seed_oil', amount: 16 }],
+		processingTime: 100
+	}).id('tfg:vi/vacuumizing/seed_oil')
+
 	// #endregion
 
 	// #region Coiling

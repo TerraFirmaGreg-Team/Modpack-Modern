@@ -517,6 +517,7 @@ function registerGTCEUMetalRecipes(event) {
 
 	const processCrushedOre = (material) => {
 		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
+		const impureDustItem = ChemicalHelper.get(TagPrefix.dustImpure, material, 1)
 		const pureOreItem = ChemicalHelper.get(TagPrefix.crushedPurified, material, 1)
 
 		if (crushedOreItem != null && pureOreItem != null) {
@@ -540,6 +541,34 @@ function registerGTCEUMetalRecipes(event) {
 				],
 				result: pureOreItem.toJson()
 			}).id(`tfg:ae_transform/${material.getName()}_purified_ore`)
+		}
+
+		if (crushedOreItem != null && impureDustItem != null) {
+			event.recipes.greate.pressing(impureDustItem, crushedOreItem)
+				.recipeTier(1)
+				.id(`greate:pressing/crushed_${material.getName()}_to_impure_dust`)
+		}
+	}
+
+	const processPurifiedOre = (material) => {
+		const pureOreItem = ChemicalHelper.get(TagPrefix.crushedPurified, material, 1)
+		const pureDustItem = ChemicalHelper.get(TagPrefix.dustPure, material, 1)
+
+		if (pureOreItem != null && pureDustItem != null) {
+			event.recipes.greate.pressing(pureDustItem, pureOreItem)
+				.recipeTier(1)
+				.id(`greate:pressing/pure_crushed_${material.getName()}_to_pure_dust`)
+		}
+	}
+
+	const processRefinedOre = (material) => {
+		const refinedOreItem = ChemicalHelper.get(TagPrefix.crushedRefined, material, 1)
+		const dustItem = ChemicalHelper.get(TagPrefix.dust, material, 1)
+
+		if (refinedOreItem != null && dustItem != null) {
+			event.recipes.greate.pressing(dustItem, refinedOreItem)
+				.recipeTier(1)
+				.id(`greate:pressing/refined_${material.getName()}_to_dust`)
 		}
 	}
 
@@ -959,6 +988,8 @@ function registerGTCEUMetalRecipes(event) {
 			processRichRawOre(material)
 
 			processCrushedOre(material)
+			processPurifiedOre(material)
+			processRefinedOre(material)
 			processImpureDust(material)
 			processPureDust(material)
 

@@ -112,50 +112,52 @@ const registerFirmaLifeRecipes = (event) => {
 		.EUt(7)
 
 	//#region Wine Working
-	
+
 	event.recipes.gtceu.alloy_smelter('firmalife:empty_olivine_wine_bottle')
 		.itemInputs('tfc:olivine_glass_batch')
 		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('firmalife:empty_olivine_wine_bottle')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
-		
+
 	event.recipes.gtceu.alloy_smelter('firmalife:empty_volcanic_wine_bottle')
 		.itemInputs('tfc:volcanic_glass_batch')
 		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('firmalife:empty_volcanic_wine_bottle')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
-		
+
 	event.recipes.gtceu.alloy_smelter('firmalife:empty_hematitic_wine_bottle')
 		.itemInputs('tfc:hematitic_glass_batch')
 		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('firmalife:empty_hematitic_wine_bottle')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
-		
+
 	event.recipes.gtceu.alloy_smelter('firmalife:wine_glass')
 		.itemInputs('tfc:silica_glass_batch')
 		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('2x firmalife:wine_glass')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
-	
+
 	event.recipes.gtceu.assembler('firmalife:cork')
 		.itemInputs('firmalife:treated_lumber')
-		.inputFluids(Fluid.of('tfc:limewater',1000))
+		.inputFluids(Fluid.of('tfc:limewater', 1000))
 		.itemOutputs('8x firmalife:cork')
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.ULV])
-		
+
 	event.recipes.gtceu.assembler('firmalife:bottle_label')
-		.itemInputs('#forge:wax','minecraft:paper')
+		.itemInputs('#forge:wax', 'minecraft:paper')
 		.itemOutputs('16x firmalife:bottle_label')
 		.duration(30)
 		.EUt(GTValues.VA[GTValues.ULV])
-	
+
+	event.replaceInput({ id: 'firmalife:crafting/bottle_label' }, 'firmalife:beeswax', '#forge:wax')
+
 	//#endregion
-	
+
 	// TODO: Не работает потому что грегтех
 	// Доставание меда из сот
 	/*
@@ -174,7 +176,7 @@ const registerFirmaLifeRecipes = (event) => {
 		'firmalife:treated_wood_greenhouse_wall',
 		'#forge:tiny_fluid_pipes/copper'
 	])
-	.id('firmalife:crafting/greenhouse/treated_wood_greenhouse_port')
+		.id('firmalife:crafting/greenhouse/treated_wood_greenhouse_port')
 
 	//#endregion Treated Wood
 
@@ -259,7 +261,7 @@ const registerFirmaLifeRecipes = (event) => {
 		'firmalife:copper_greenhouse_wall',
 		'#forge:tiny_fluid_pipes/copper'
 	])
-	.id('firmalife:crafting/greenhouse/copper_greenhouse_port')
+		.id('firmalife:crafting/greenhouse/copper_greenhouse_port')
 
 	//#endregion
 
@@ -337,7 +339,7 @@ const registerFirmaLifeRecipes = (event) => {
 		'firmalife:iron_greenhouse_wall',
 		'#forge:tiny_fluid_pipes/copper'
 	])
-	.id('firmalife:crafting/greenhouse/iron_greenhouse_port')
+		.id('firmalife:crafting/greenhouse/iron_greenhouse_port')
 
 	//#endregion
 
@@ -411,7 +413,7 @@ const registerFirmaLifeRecipes = (event) => {
 		'firmalife:stainless_steel_greenhouse_wall',
 		'#forge:tiny_fluid_pipes/copper'
 	])
-	.id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_port')
+		.id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_port')
 
 	//#endregion
 
@@ -490,21 +492,21 @@ const registerFirmaLifeRecipes = (event) => {
 
 	event.recipes.gtceu.mixer('sugar_water')
 		.itemInputs('#tfc:sweetener')
-		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfg:clean_water" }}))
+		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfg:clean_water" } }))
 		.outputFluids(Fluid.of('firmalife:sugar_water', 500))
 		.circuit(5)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(200)
 
-    event.recipes.firmalife.mixing_bowl()
-    	.itemIngredients(['#tfg:wood_dusts', 'tfc:glue'])
-    	.outputItem('tfg:chipboard_composite')
+	event.recipes.firmalife.mixing_bowl()
+		.itemIngredients(['#tfg:wood_dusts', 'tfc:glue'])
+		.outputItem('tfg:chipboard_composite')
 
-    event.recipes.firmalife.mixing_bowl()
-    	.itemIngredients(['#tfg:wood_dusts', 'gtceu:sticky_resin'])
-    	.outputItem('tfg:chipboard_composite')
+	event.recipes.firmalife.mixing_bowl()
+		.itemIngredients(['#tfg:wood_dusts', 'gtceu:sticky_resin'])
+		.outputItem('tfg:chipboard_composite')
 
-    event.recipes.firmalife.mixing_bowl()
-    	.itemIngredients(['#tfg:wood_dusts', '#forge:wax'])
-    	.outputItem('tfg:chipboard_composite')
+	event.recipes.firmalife.mixing_bowl()
+		.itemIngredients(['#tfg:wood_dusts', '#forge:wax'])
+		.outputItem('tfg:chipboard_composite')
 }

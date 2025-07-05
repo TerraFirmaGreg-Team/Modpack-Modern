@@ -1718,6 +1718,12 @@ const registerCreateRecipes = (event) => {
 		F: '#tfg:metal_bars'
 	}).id('tfg:create/shaped/packager')
 
+	event.recipes.gtceu.assembler('tfg:create/packager')
+		.itemInputs('gtceu:ulv_machine_hull', '4x #forge:rods/wrought_iron', '#forge:springs/wrought_iron', '4x create:cardboard', '#forge:string', '#gtceu:circuits/ulv')
+		.itemOutputs('create:packager')
+		.duration(200)
+		.EUt(20)
+
 	event.shaped('create:item_hatch', [
 		'A',
 		'B',
@@ -1789,7 +1795,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/white_table_cloth')
 
 	event.recipes.gtceu.laser_engraver('create:transmitter')
-		.itemInputs('#forge:double_plates/red_alloy')
+		.itemInputs('2x #forge:plates/red_alloy')
 		.notConsumable('#forge:lenses/pink')
 		.itemOutputs('create:transmitter')
 		.duration(1200)
@@ -1809,10 +1815,16 @@ const registerCreateRecipes = (event) => {
 		G: '#forge:tools/screwdrivers'
 	}).id('tfg:create/shaped/stock_link')
 
-	event.recipes.gtceu.assembler('tfg:create/stock_link')
+	event.recipes.gtceu.assembler('create:stock_link')
 		.itemInputs('create:andesite_casing', 'gtceu:item_detector_cover', '#gtceu:circuits/lv', 'create:transmitter')
-		.circuit(1)
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
+		.itemOutputs('create:stock_link')
+		.duration(150)
+		.EUt(16)
+
+	event.recipes.gtceu.assembler('create:stock_link_tin')
+		.itemInputs('create:andesite_casing', 'gtceu:item_detector_cover', '#gtceu:circuits/lv', 'create:transmitter')
+		.inputFluids(Fluid.of('gtceu:tin', 144))
 		.itemOutputs('create:stock_link')
 		.duration(150)
 		.EUt(16)
@@ -1852,6 +1864,12 @@ const registerCreateRecipes = (event) => {
 		F: '#forge:plates/rose_quartz',
 		G: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/factory_gauge')
+
+	event.recipes.gtceu.assembler('create:factory_gauge')
+		.itemInputs('create:precision_mechanism', '2x #forge:screws/aluminium', '#gtceu:diodes', 'create:stock_link', '#gtceu:circuits/lv', '2x #forge:plates/rose_quartz')
+		.itemOutputs('2x create:factory_gauge')
+		.duration(150)
+		.EUt(16)
 	
 	//#endregion
 
