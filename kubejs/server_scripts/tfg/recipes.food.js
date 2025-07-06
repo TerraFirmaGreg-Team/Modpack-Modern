@@ -558,16 +558,14 @@ function registerTFGFoodRecipes(event) {
 	processorRecipe("pizza_dough_olive_oil", 300, 16, {
 		itemInputs: ['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt'],
 		itemOutputs: ['4x firmalife:food/pizza_dough'],
-		fluidInputs: [Fluid.of('tfc:olive_oil', 1000)],
 		itemOutputProvider: TFC.isp.of("4x firmalife:food/pizza_dough").copyOldestFood()
 	})
 
 	processorRecipe("pizza_dough_soybean_oil", 300, 16, {
 		itemInputs: ['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt'],
 		itemOutputs: ['4x firmalife:food/pizza_dough'],
-		fluidInputs: [Fluid.of('firmalife:soybean_oil', 1000)],
 		itemOutputProvider: TFC.isp.of("4x firmalife:food/pizza_dough").copyOldestFood()
-	})
+	}).inputFluids(JsonIO.of({ amount: 100, value: { tag: "firmalife:oils" }}))
 
 	processorRecipe("vanilla_ice_cream", 300, 16, {
 		itemInputs: ['firmalife:ice_shavings', '#tfc:sweetener', 'firmalife:spice/vanilla'],
@@ -591,7 +589,7 @@ function registerTFGFoodRecipes(event) {
 
 	processorRecipe("cookie_dough_ice_cream", 300, 16, {
 		itemInputs: [`firmalife:food/vanilla_ice_cream`, `firmalife:food/chocolate_chip_cookie_dough`],
-		itemOutputs: [`firmalife:food/cookie_dough_ice_cream`],
+		itemOutputs: [`2x firmalife:food/cookie_dough_ice_cream`],
 		itemOutputProvider: TFC.isp.of("firmalife:food/cookie_dough_ice_cream").resetFood()
 	})
 
@@ -629,7 +627,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	processorRecipe("chocolate_chip_cookie_dough", 300, 16, {
-		itemInputs: ['4x firmalife:food/cookie_dough', '#firmalife:chocolate_blends'],
+		itemInputs: ['4x firmalife:food/cookie_dough', '#firmalife:foods/chocolate'],
 		itemOutputs: ['4x firmalife:food/chocolate_chip_cookie_dough'],
 		itemOutputProvider: TFC.isp.of('4x firmalife:food/chocolate_chip_cookie_dough').copyOldestFood()
 	})

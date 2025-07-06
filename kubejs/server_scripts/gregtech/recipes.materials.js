@@ -152,7 +152,6 @@ function registerGTCEUMetalRecipes(event) {
 					let ingotArray = [];
 					for (var i = 0; i < matAmount; i++)
 						ingotArray.push(ingotStack)
-					ingotArray.push('tfc:powder/flux')
 
 					// 9х Слиток -> Блок
 					event.recipes.greate.compacting(blockStack, ingotArray)

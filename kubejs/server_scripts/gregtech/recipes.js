@@ -629,7 +629,7 @@ const registerGTCEURecipes = (event) => {
 	// #endregion
 
 	// #region Add all glass colors to macerator/hammer
-	event.remove({ id: "gtceu:macerator/macerate_glass" });
+	removeMaceratorRecipe(event, 'macerate_glass');
 	event.recipes.gtceu.macerator("gtceu:macerator/macerate_glass")
 		.itemInputs(
 			"#forge:glass"
@@ -638,7 +638,7 @@ const registerGTCEURecipes = (event) => {
 		.duration(20)
 		.EUt(2);
 
-	event.remove({ id: "gtceu:macerator/macerate_glass_pane" });
+	removeMaceratorRecipe(event, 'macerate_glass_pane');
 	event.recipes.gtceu.macerator("gtceu:macerator/macerate_glass_pane")
 		.itemInputs(
 			"#forge:glass_panes"
@@ -790,7 +790,7 @@ const registerGTCEURecipes = (event) => {
 
 		// Macerator
 		global.TFC_HARDWOOD_TYPES.forEach(wood => {
-			event.remove(`gtceu:macerator/macerate_wood/hanging_sign/${metal.getName()}/${wood}`)
+			removeMaceratorRecipe(event, `macerate_wood/hanging_sign/${metal.getName()}/${wood}`)
 			event.recipes.gtceu.macerator(`gtceu:macerator/macerate_wood/hanging_sign/${metal.getName()}/${wood}`)
 				.itemInputs(`tfc:wood/hanging_sign/${metal.getName()}/${wood}`)
 				.itemOutputs('gtceu:hardwood_dust')
@@ -801,7 +801,7 @@ const registerGTCEURecipes = (event) => {
 		})
 
 		global.TFC_SOFTWOOD_TYPES.forEach(wood => {
-			event.remove(`gtceu:macerator/macerate_wood/hanging_sign/${metal.getName()}/${wood}`)
+			removeMaceratorRecipe(event, `macerate_wood/hanging_sign/${metal.getName()}/${wood}`)
 			event.recipes.gtceu.macerator(`gtceu:macerator/macerate_wood/hanging_sign/${metal.getName()}/${wood}`)
 				.itemInputs(`tfc:wood/hanging_sign/${metal.getName()}/${wood}`)
 				.itemOutputs('gtceu:wood_dust')
