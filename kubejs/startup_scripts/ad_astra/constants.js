@@ -19,8 +19,6 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:cryo_freezer',
 	'ad_astra:wrench',
 	'ad_astra:cheese_block',
-	'ad_astra:photovoltaic_etrium_cell',
-	'ad_astra:photovoltaic_vesnium_cell',
 	'ad_astra:engine_frame',
 	'ad_astra:fan',
 	'ad_astra:steel_tank',

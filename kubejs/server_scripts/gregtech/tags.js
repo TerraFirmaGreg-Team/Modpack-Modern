@@ -73,7 +73,8 @@ const registerGTCEUItemTags = (event) => {
     event.remove('forge:gems', 'gtceu:coke_gem')
 
 	// Rose Quartz Lens
-	event.add('forge:lenses/pink', 'gtceu:rose_quartz_lens')}
+	event.add('forge:lenses/pink', 'gtceu:rose_quartz_lens')
+}
 
 const registerGTCEUBlockTags = (event) => {
 
