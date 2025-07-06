@@ -9,7 +9,8 @@ const registerCreateDecoItemTags = (event) => {
 	});
 	//#endregion
 
-	event.remove('createdeco:internal/blocks/iron_blocks', '#forge:storage_blocks/iron')
+	event.remove('createdeco:internal/blocks/iron_blocks', 'minecraft:iron_block')
+	event.remove('createdeco:internal/blocks/industrial_iron_blocks', 'create:industrial_iron_block')
 
 	//#region Apply Tags
 	metalBars.forEach(metalBars => {
