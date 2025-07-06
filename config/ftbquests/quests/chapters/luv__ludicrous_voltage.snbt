@@ -903,6 +903,7 @@
 				""
 				"&9-&r Big Item Pipe networks. Small networks are better, to reduce the number of iterations over inventories."
 			]
+			disable_toast: true
 			icon: "minecraft:mud"
 			id: "63F9531F391040B2"
 			shape: "circle"
