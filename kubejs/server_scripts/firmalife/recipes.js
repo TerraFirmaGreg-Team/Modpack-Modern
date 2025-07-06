@@ -37,6 +37,8 @@ const registerFirmaLifeRecipes = (event) => {
 	event.remove({ id: 'firmalife:heating/metal/stainless_steel_block_slab' })
 	event.remove({ id: 'firmalife:heating/metal/stainless_steel_block_stairs' })
 
+	event.remove({ id: /^firmalife:crafting\/.*_dough/ })
+
 	//#endregion
 
 	// Декрафт Jag Lid
@@ -501,12 +503,25 @@ const registerFirmaLifeRecipes = (event) => {
 	event.recipes.firmalife.mixing_bowl()
 		.itemIngredients(['#tfg:wood_dusts', 'tfc:glue'])
 		.outputItem('tfg:chipboard_composite')
+		.id('tfg:mixing_bowl/chipboard_composite_glue')
 
 	event.recipes.firmalife.mixing_bowl()
 		.itemIngredients(['#tfg:wood_dusts', 'gtceu:sticky_resin'])
 		.outputItem('tfg:chipboard_composite')
+		.id('tfg:mixing_bowl/chipboard_composite_resin')
 
 	event.recipes.firmalife.mixing_bowl()
 		.itemIngredients(['#tfg:wood_dusts', '#forge:wax'])
 		.outputItem('tfg:chipboard_composite')
+		.id('tfg:mixing_bowl/chipboard_composite_wax')
+
+	// Dough
+
+	global.TFC_GRAINS.forEach(grain => {
+		event.recipes.firmalife.mixing_bowl()
+			.ingredients([`tfc:food/${grain}_flour`, `#tfc:sweetener`], Fluid.of('firmalife:yeast_starter', 200))
+			.outputItem(`4x firmalife:food/${grain}_dough`)
+			.copyOldestFood()
+			.id(`tfg:mixing_bowl/
+	})
 }
