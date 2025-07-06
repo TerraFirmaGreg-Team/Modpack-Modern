@@ -222,10 +222,12 @@ function registerTFGSpaceBlocks(event) {
 		.soundType('nether_wart')
 		.lightLevel(0.4)
 		.tagItem('tfg:moon_plants')
+		.tagBlock('minecraft:replaceable')
 
 	event.create('tfg:lunar_sprouts', 'tfg:decorative_plant')
 		.soundType('nether_wart')
 		.tagItem('tfg:moon_plants')
+		.tagBlock('minecraft:replaceable')
 
 	event.create('tfg:corallium_arenicolus_0', 'tfg:double_decorative_plant')
 		.soundType('nether_wart')

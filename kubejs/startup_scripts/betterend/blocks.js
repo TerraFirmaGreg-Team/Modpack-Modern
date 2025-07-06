@@ -18,27 +18,35 @@ function registerBetterEndBlocks(event) {
 
 	event.create('betterend:inflexia', 'tfg:decorative_plant')
 		.tagItem('tfg:moon_plants')
+		.tagBlock('minecraft:replaceable')
 
 	event.create('betterend:chorus_grass', 'tfg:decorative_plant')
 		.tagItem('tfg:moon_plants')
+		.tagBlock('minecraft:replaceable')
 
 	event.create('betterend:salteago', 'tfg:decorative_plant')
 		.tagItem('tfg:moon_plants')
+		.tagBlock('minecraft:replaceable')
 
 	event.create('betterend:vaiolush_fern', 'tfg:decorative_plant')
 		.tagItem('tfg:moon_plants')
+		.tagBlock('minecraft:replaceable')
 
 	// Mars
 
 	event.create('betterend:crystal_grass', 'tfg:decorative_plant')
 		.tagItem('tfg:mars_plants')
+		.tagBlock('minecraft:replaceable')
 
 	event.create('betterend:blooming_cooksonia', 'tfg:decorative_plant')
 		.tagItem('tfg:mars_plants')
+		.tagBlock('minecraft:replaceable')
 
 	event.create('betterend:fracturn', 'tfg:decorative_plant')
 		.tagItem('tfg:mars_plants')
+		.tagBlock('minecraft:replaceable')
 
 	event.create('betterend:jungle_grass', 'tfg:decorative_plant')
 		.tagItem('tfg:mars_plants')
+		.tagBlock('minecraft:replaceable')
 }
