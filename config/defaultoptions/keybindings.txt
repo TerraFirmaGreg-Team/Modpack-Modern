@@ -78,6 +78,7 @@ key_key.astikorcarts.desc:key.keyboard.r:NONE
 key_key.curios.open.desc:key.keyboard.unknown:NONE
 key_create.keyinfo.toolmenu:key.keyboard.left.alt:NONE
 key_create.keyinfo.toolbelt:key.keyboard.left.alt:NONE
+key_key.toolbelt.open:key.keyboard.unknown:NONE
 key_key.toolbelt.slot:key.keyboard.unknown:NONE
 key_gui.xaero_switch_waypoint_set:key.keyboard.unknown:NONE
 key_gui.xaero_instant_waypoint:key.keyboard.unknown:NONE
@@ -100,7 +101,7 @@ key_gui.xaero_alternative_list_players:key.keyboard.unknown:NONE
 key_gui.xaero_toggle_tracked_players:key.keyboard.unknown:NONE
 key_gui.xaero_toggle_pac_chunk_claims:key.keyboard.unknown:NONE
 key_gui.xaero_minimap_settings:key.keyboard.unknown:NONE
-key_iris.keybind.reload:key.keyboard.r:ALT
+key_iris.keybind.reload:key.keyboard.unknown:NONE
 key_iris.keybind.toggleShaders:key.keyboard.unknown:NONE
 key_iris.keybind.shaderPackSelection:key.keyboard.unknown:NONE
 key_key.prometheus.open_homes:key.keyboard.unknown:NONE
@@ -117,4 +118,6 @@ key_key.craftpresence.config_keycode.name:key.keyboard.unknown:NONE
 key_gui.xaero_pac_key_open_menu:key.keyboard.apostrophe:NONE
 key_gtceu.key.armor_mode_switch:key.keyboard.o
 key_key.ftbchunks.map:key.keyboard.unknown:NONE
-key_key.ftbchunks.claim_manager:key.keyboard.m:CONTROL
+key_key.ftbchunks.claim_manager:key.keyboard.unknown:NONE
+key_key.ad_astra.toggle_suit_flight:key.keyboard.h:NONE
+key_key.ad_astra.open_radio:key.keyboard.r:NONE
