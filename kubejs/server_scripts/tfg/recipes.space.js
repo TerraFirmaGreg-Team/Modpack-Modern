@@ -117,7 +117,7 @@ function registerTFGSpaceRecipes(event) {
 	// Chorus
 	event.recipes.gtceu.greenhouse('tfg:chorus')
 		.itemInputs('8x tfg:lunar_chorus_flower')
-		.itemOutputs('32x minecraft:chorus_fruit')
+		.itemOutputs('64x minecraft:chorus_fruit')
 		.chancedOutput('8x tfg:lunar_chorus_flower', 7500, 1000)
 		.chancedOutput('8x tfg:lunar_chorus_flower', 5000, 1000)
 		.duration(36000) // 30 mins
@@ -128,7 +128,7 @@ function registerTFGSpaceRecipes(event) {
 	event.recipes.gtceu.greenhouse('tfg:chorus_helium')
 		.itemInputs('8x tfg:lunar_chorus_flower')
 		.inputFluids(Fluid.of('gtceu:helium_3', 2000))
-		.itemOutputs('32x minecraft:chorus_fruit')
+		.itemOutputs('64x minecraft:chorus_fruit')
 		.chancedOutput('8x tfg:lunar_chorus_flower', 8500, 1000)
 		.chancedOutput('8x tfg:lunar_chorus_flower', 6000, 1000)
 		.duration(12000) // 10 mins
