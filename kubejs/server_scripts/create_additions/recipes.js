@@ -179,18 +179,36 @@ const registerCreateAdditionsRecipes = (event) => {
 		type: 'createaddition:liquid_burning',
 		input: {
 			fluidTag: 'forge:fish_oil',
-			amount: 160
+			amount: 50
 		},
-		burnTime: 10 * 9 * 9
+		burnTime: 100 * 9 * 9
 	}).id('tfg:createadditions/liquid_burning/fish_oil')
 
 	event.custom({
 		type: 'createaddition:liquid_burning',
 		input: {
-			fluidTag: 'tfc:olive_oil',
+			fluid: 'tfc:olive_oil',
 			amount: 50
 		},
 		burnTime: 150 * 9 * 9
 	}).id('tfg:createadditions/liquid_burning/olive_oil')
+
+	event.custom({
+		type: 'createaddition:liquid_burning',
+		input: {
+			fluid: 'firmalife:soybean_oil',
+			amount: 50
+		},
+		burnTime: 150 * 9 * 9
+	}).id('tfg:createadditions/liquid_burning/soybean_oil')
+
+	event.custom({
+		type: 'createaddition:liquid_burning',
+		input: {
+			fluidTag: 'forge:seed_oil',
+			amount: 50
+		},
+		burnTime: 150 * 9 * 9
+	}).id('tfg:createadditions/liquid_burning/seed_oil')
 	//#endregion
 }

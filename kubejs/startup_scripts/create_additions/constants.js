@@ -23,7 +23,6 @@ global.CREATE_ADDITIONS_DISABLED_ITEMS = [
     'createaddition:electrum_sheet', 
     'createaddition:zinc_sheet', 
     'createaddition:cake_base_baked', 
-    'createaddition:straw',
     'createaddition:copper_wire',
     'createaddition:seed_oil_bucket',
     'createaddition:bioethanol_bucket',

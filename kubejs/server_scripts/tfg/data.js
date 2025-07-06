@@ -153,8 +153,8 @@ const registerTFGFauna = (event) => {
 const registerTFGCropRanges = (event) => {
 
 	event.climateRange(climate => {
-        climate.minHydration(10)
-        climate.maxHydration(60)
+        climate.minHydration(20)
+        climate.maxHydration(80)
         climate.minTemperature(5)
         climate.maxTemperature(40)
         climate.hydrationWiggle(7.5)

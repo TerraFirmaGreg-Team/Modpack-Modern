@@ -240,7 +240,6 @@
 		{
 			dependencies: ["033E74BC588E7EAD"]
 			description: ["{quests.steam_age.steam_engine.desc}"]
-			hide_dependent_lines: true
 			id: "183D47F04CAEBFA7"
 			size: 1.5d
 			subtitle: "{quests.steam_age.steam_engine.subtitle}"
@@ -502,6 +501,7 @@
 		{
 			dependencies: ["033E74BC588E7EAD"]
 			description: ["{quests.steam_age.deployers.desc}"]
+			icon: "create:deployer"
 			id: "6AA07588374B59AB"
 			subtitle: "{quests.steam_age.deployers.subtitle}"
 			tasks: [
@@ -513,12 +513,6 @@
 				{
 					id: "38F9301A818347F7"
 					item: "create:depot"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "66D11CA9FCD6933A"
-					item: "greate:rubber_belt_connector"
 					optional_task: true
 					type: "item"
 				}
@@ -979,7 +973,7 @@
 			]
 			title: "{quests.steam_age.steam_oven.title}"
 			x: -16.5d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["46FA9DD4755A5548"]
@@ -1152,11 +1146,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"6AA07588374B59AB"
-				"45449ECE4F8128E7"
-			]
-			dependency_requirement: "one_completed"
+			dependencies: ["6AA07588374B59AB"]
 			description: ["{quests.steam_age.trains.desc}"]
 			hide_dependency_lines: false
 			id: "02854A3E8A5D5043"
@@ -1668,6 +1658,39 @@
 			title: "{quests.steam_age.steel_mech_press.title}"
 			x: -7.5d
 			y: 4.0d
+		}
+		{
+			dependencies: [
+				"183D47F04CAEBFA7"
+				"753A53733C6DFA04"
+			]
+			description: ["{quests.steam_age.straw.desc}"]
+			id: "7314F69F0DE6E78E"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.steam_age.straw.subtitle}"
+			tasks: [{
+				id: "25F19B16E99D6DD0"
+				item: "createaddition:straw"
+				type: "item"
+			}]
+			title: "{quests.steam_age.straw.title}"
+			x: -15.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["183D47F04CAEBFA7"]
+			description: ["{quests.steam_age.fuel_sources.desc}"]
+			icon: "createdeco:decal_fire"
+			id: "753A53733C6DFA04"
+			subtitle: "{quests.steam_age.fuel_sources.subtitle}"
+			tasks: [{
+				id: "38A3F9A1D2F11EE3"
+				type: "checkmark"
+			}]
+			title: "{quests.steam_age.fuel_sources.title}"
+			x: -16.5d
+			y: 16.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]
