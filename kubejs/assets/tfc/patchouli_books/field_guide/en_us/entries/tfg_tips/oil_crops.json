@@ -28,7 +28,7 @@
 				}
 			},
 			"name": "Wild Sunflower",
-			"text": "$(thing)Sunflowers$() grow between 5 and 40C, and 100 to 400mm of rainfall. Their seeds can also be roasted and eaten!",
+			"text": "$(thing)Sunflowers$() grow between 5 and 40C, and 100 to 450mm of rainfall. Their seeds can also be roasted and eaten!",
 			"enable_visualize": false
 		},
 		{
@@ -51,7 +51,7 @@
 				}
 			},
 			"name": "Wild Rapeseed",
-			"text": "$(thing)Rapeseed$(), also known as $(thing)Canola$(), grows between -5 and 25C, and 50 to 250mm of rainfall.",
+			"text": "$(thing)Rapeseed$(), also known as $(thing)Canola$(), grows between -7 and 25C, and 50 to 350mm of rainfall.",
 			"enable_visualize": false
 		}
 	]

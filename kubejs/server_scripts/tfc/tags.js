@@ -558,6 +558,10 @@ const registerTFCPlacedFeatures = (event) => {
 	event.add('tfc:in_biome/veins', 'tfg:earth/geode/pyrite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/geode/quartzite')
 
+	// Crops
+	event.add('tfc:feature/crops', 'tfg:earth/sunflower_patch')
+	event.add('tfc:feature/crops', 'tfg:earth/rapeseed_patch')
+
 	// Other decoration
 	event.add('tfc:in_biome/underground_decoration', 'tfg:glow_lichen')
 	event.add('tfc:in_biome/underground_decoration', 'tfg:earth/sulfur_patch')
