@@ -418,7 +418,7 @@ const registerAdAstraRecipes = (event) => {
 		},
 		result: {
 			fluid: 'ad_astra:oxygen',
-			millibuckets: 1
+			millibuckets: 100
 		}
 	}).id('ad_astra:oxygen_loading/air_from_air')
 
@@ -435,7 +435,7 @@ const registerAdAstraRecipes = (event) => {
 			},
 			result: {
 				fluid: 'ad_astra:oxygen',
-				millibuckets: 600
+				millibuckets: 1000
 			}
 		}).id(`ad_astra:oxygen_loading/air_from_${x.split(':')[1]}`)
 	})
