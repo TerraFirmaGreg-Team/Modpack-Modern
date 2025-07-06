@@ -888,7 +888,8 @@ global.TFC_MEAT_RECIPE_COMPONENTS = [
     { input: 'minecraft:chorus_fruit', output: 'minecraft:popped_chorus_fruit', name: 'popped_chorus_fruit' },
     { input: 'tfg:food/raw_birt', output: 'tfg:food/cooked_birt', name: 'cooked_birt' },
     { input: 'tfg:food/raw_crawlermari', output: 'tfg:food/cooked_crawlermari', name: 'cooked_crawlermari' },
-    { input: 'tfg:food/raw_limpet', output: 'tfg:food/cooked_limpet', name: 'cooked_limpet' }
+    { input: 'tfg:food/raw_limpet', output: 'tfg:food/cooked_limpet', name: 'cooked_limpet' },
+    { input: 'tfg:sunflower_product', output: 'tfg:roasted_sunflower_seeds', name: 'roasted_sunflower_seeds' }
 ];
 
 global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = [
@@ -997,6 +998,8 @@ global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS = [
     { input: '8x tfc:seeds/melon', fluid_amount: 4000, output: '24x tfc:melon', name: 'melon' },
     { input: '8x tfc:seeds/red_bell_pepper', fluid_amount: 4000, output: '24x tfc:food/red_bell_pepper', name: 'red_bell_pepper' },
     { input: '8x tfc:seeds/yellow_bell_pepper', fluid_amount: 4000, output: '24x tfc:food/yellow_bell_pepper', name: 'yellow_bell_pepper' },
+    { input: '8x tfg:sunflower_seeds', fluid_amount: 4000, output: '24x tfg:sunflower_product', name: 'sunflower' },
+    { input: '8x tfg:rapeseed_seeds', fluid_amount: 4000, output: '24x tfg:rapeseed_product', name: 'rapeseed' },
 ];
 
 global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS = [

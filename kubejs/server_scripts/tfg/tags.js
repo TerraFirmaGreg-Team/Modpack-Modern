@@ -6,6 +6,10 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:seeds', 'tfg:sunflower_seeds')
 	event.add('tfc:seeds', 'tfg:rapeseed_seeds')
 	event.add('tfc:foods', 'tfg:roasted_sunflower_seeds')
+	event.add('tfc:compost_greens_high', 'tfg:rapeseed_product')
+	event.add('tfc:compost_greens_high', 'tfg:sunflower_product')
+	event.add('tfg:water_breathing_ingredients', 'tfg:rapeseed_product')
+	event.add('tfg:night_vision_ingredients', 'tfg:sunflower_product')
 	//temporary hidden items
 	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source_small')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source')
