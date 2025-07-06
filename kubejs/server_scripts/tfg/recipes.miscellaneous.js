@@ -533,14 +533,63 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(2400)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	// Biodiesel
+	// Biofuels
 
-	event.recipes.gtceu.chemical_reactor(`alcohol_biodiesel`)
+	event.recipes.gtceu.chemical_reactor(`seed_oil_alcohol_biodiesel`)
 		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
 		.inputFluids(Fluid.of('gtceu:seed_oil', 6000))
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
 		.duration(20 * 30)
 		.EUt(GTValues.VHA[GTValues.ULV])
+
+	event.recipes.gtceu.chemical_reactor(`olive_oil_alcohol_biodiesel`)
+		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
+		.inputFluids(Fluid.of('tfc:olive_oil', 4000))
+		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
+		.duration(20 * 30)
+		.EUt(GTValues.VHA[GTValues.ULV])
+
+	event.recipes.gtceu.chemical_reactor(`soybean_oil_alcohol_biodiesel`)
+		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
+		.inputFluids(Fluid.of('firmalife:soybean_oil', 4000))
+		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
+		.duration(20 * 30)
+		.EUt(GTValues.VHA[GTValues.ULV])
+
+	event.recipes.gtceu.chemical_reactor(`fish_oil_alcohol_biodiesel`)
+		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
+		.inputFluids(Fluid.of('gtceu:fish_oil', 6000))
+		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
+		.duration(20 * 30)
+		.EUt(GTValues.VHA[GTValues.ULV])
+
+	event.recipes.gtceu.chemical_reactor(`olive_oil_ethanol_biodiesel`)
+		.inputFluids(Fluid.of('tfc:olive_oil', 4000), Fluid.of('gtceu:ethanol', 1000))
+		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
+		.outputFluids(Fluid.of('gtceu:glycerol'), Fluid.of('gtceu:bio_diesel', 6000))
+		.duration(20 * 30)
+		.EUt(GTValues.VHA[GTValues.LV])
+
+	event.recipes.gtceu.chemical_reactor(`olive_oil_methanol_biodiesel`)
+		.inputFluids(Fluid.of('tfc:olive_oil', 4000), Fluid.of('gtceu:methanol', 1000))
+		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
+		.outputFluids(Fluid.of('gtceu:glycerol'), Fluid.of('gtceu:bio_diesel', 6000))
+		.duration(20 * 30)
+		.EUt(GTValues.VHA[GTValues.LV])
+
+	event.recipes.gtceu.chemical_reactor(`soybean_oil_ethanol_biodiesel`)
+		.inputFluids(Fluid.of('firmalife:soybean_oil', 4000), Fluid.of('gtceu:ethanol', 1000))
+		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
+		.outputFluids(Fluid.of('gtceu:glycerol'), Fluid.of('gtceu:bio_diesel', 6000))
+		.duration(20 * 30)
+		.EUt(GTValues.VHA[GTValues.LV])
+
+	event.recipes.gtceu.chemical_reactor(`soybean_oil_methanol_biodiesel`)
+		.inputFluids(Fluid.of('firmalife:soybean_oil', 4000), Fluid.of('gtceu:methanol', 1000))
+		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
+		.outputFluids(Fluid.of('gtceu:glycerol'), Fluid.of('gtceu:bio_diesel', 6000))
+		.duration(20 * 30)
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.extractor(`rapeseed_oil`)
 		.itemInputs('tfg:rapeseed_product')
