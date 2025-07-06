@@ -556,11 +556,11 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.recipes.tfc.barrel_sealed(1000)
 		.inputs('tfg:rapeseed_product', Fluid.of('minecraft:water', 100))
-		.outputFluid(Fluid.of('gtceu:seed_oil', 600))
+		.outputFluid(Fluid.of('gtceu:seed_oil', 250))
 		.id('tfg:barrel/rapeseed_to_oil')
 
 	event.recipes.tfc.barrel_sealed(1000)
 		.inputs('tfg:sunflower_product', Fluid.of('minecraft:water', 100))
-		.outputFluid(Fluid.of('gtceu:seed_oil', 350))
+		.outputFluid(Fluid.of('gtceu:seed_oil', 120))
 		.id('tfg:barrel/sunflower_to_oil')
 }

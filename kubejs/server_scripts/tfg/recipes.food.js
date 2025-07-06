@@ -752,6 +752,9 @@ function registerTFGFoodRecipes(event) {
 	event.recipes.tfc.heating('tfg:food/raw_limpet', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_limpet').copyFood())
 
+	event.recipes.tfc.heating('tfg:sunflower_product', 200)
+	 	.resultItem(TFC.isp.of('tfg:roasted_sunflower_seeds').copyFood())
+
 	//#endregion
 
 	// Food processing machine recipes

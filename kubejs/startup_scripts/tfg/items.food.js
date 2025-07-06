@@ -68,5 +68,8 @@ function registerTFGFoodItems(event) {
 
 	event.create('tfg:roasted_sunflower_seeds')
 		.translationKey('item.tfg.roasted_sunflower_seeds')
-		.texture('tfg:item/plant/roasted_sunflower_seeds')
+		.texture('tfg:item/roasted_sunflower_seeds')
+		.food(food => food.hunger(4).saturation(2))
+		.tag('tfc:foods/grains')
+		.tag('tfc:foods/usable_in_salad')
 }

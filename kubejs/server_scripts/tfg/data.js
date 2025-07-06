@@ -7,6 +7,7 @@ function registerTFCDataForTFG(event) {
 	registerTFGFoodData(event);
 	registerTFGFauna(event);
 	registerTFGCropRanges(event);
+	registerTFGFLPlanters(event);
 }
 
 
@@ -17,6 +18,9 @@ const registerTFGHeatData = (event) => {
 		event.itemHeat(`tfg:decorative_vase/unfired/${color}`, 1.0, null, null)
 	})
 	event.itemHeat('tfg:decorative_vase/unfired', 1.0, null, null)
+
+	event.itemHeat('tfg:sunflower_product', 1.0, null, null)
+	event.itemHeat('tfg:roasted_sunflower_seeds', 1.0, null, null)
 }
 
 
@@ -130,9 +134,14 @@ const registerTFGFoodData = (event) => {
 	})
 
 	event.foodItem('tfg:roasted_sunflower_seeds', food => {
-		food.hunger(0.5)
+		food.hunger(4)
 		food.decayModifier(0.5)
 		food.grain(0.1)
+		food.saturation(0.5)
+	})
+
+	event.foodItem('tfg:sunflower_product', food => {
+		food.decayModifier(0.5)
 	})
 }
 
@@ -160,4 +169,43 @@ const registerTFGCropRanges = (event) => {
         climate.hydrationWiggle(7.5)
         climate.temperatureWiggle(1.5)
     }, 'tfg:rapeseed')
+}
+
+const registerTFGFLPlanters = (event) => {
+
+	event.firmalifePlantable(
+		'tfg:sunflower_seeds',
+		'large',
+		10,
+		3,
+		0.15,
+		'tfg:sunflower_seeds',
+		'tfg:sunflower_product',
+		'nitrogen',
+		[
+			'tfg:block/crop/sunflower_greenhouse_0',
+			'tfg:block/crop/sunflower_greenhouse_1',
+			'tfg:block/crop/sunflower_greenhouse_2',
+			'tfg:block/crop/sunflower_greenhouse_3'
+		],
+		null
+	)
+
+	event.firmalifePlantable(
+		'tfg:rapeseed_seeds',
+		'large',
+		10,
+		3,
+		0.15,
+		'tfg:rapeseed_seeds',
+		'tfg:rapeseed_product',
+		'phosphorous',
+		[
+			'tfg:block/crop/rapeseed_greenhouse_0',
+			'tfg:block/crop/rapeseed_greenhouse_1',
+			'tfg:block/crop/rapeseed_greenhouse_2',
+			'tfg:block/crop/rapeseed_greenhouse_3'
+		],
+		null
+	)
 }

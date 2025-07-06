@@ -1,0 +1,1 @@
+{"variants":{"part=top,mature=true":{"model":"tfg:block/crop/rapeseed_age_5_top"},"part=top,mature=false":{"model":"tfg:block/crop/rapeseed_dead_top"},"part=bottom,mature=true":{"model":"tfg:block/crop/rapeseed_age_5_bottom"},"part=bottom,mature=false":{"model":"tfg:block/crop/rapeseed_dead_bottom"}}}
