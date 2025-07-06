@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "space_survival"
-	group: "21D975CEBDE06BA9"
+	group: "19428C6E7A36D463"
 	icon: {
 		Count: 1
 		id: "ad_astra:tier_1_rocket"
@@ -18,6 +18,7 @@
 	id: "671B872DCEFCA5DD"
 	images: [
 		{
+			alpha: 150
 			height: 2.5d
 			image: "ad_astra:textures/gui/sprites/space_station.png"
 			rotation: 0.0d
@@ -114,7 +115,7 @@
 			y: -8.0d
 		}
 	]
-	order_index: 0
+	order_index: 4
 	quest_links: [
 		{
 			id: "62E455D8BAA50151"
