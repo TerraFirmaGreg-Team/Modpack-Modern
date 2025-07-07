@@ -2,7 +2,14 @@ const registerTFGItemTags = (event) => {
 
 	registerTFGTrimTags(event)
 	registerFacadeWhitelistTags(event)
-
+    //crop stuff
+	event.add('tfc:seeds', 'tfg:sunflower_seeds')
+	event.add('tfc:seeds', 'tfg:rapeseed_seeds')
+	event.add('tfc:foods', 'tfg:roasted_sunflower_seeds')
+	event.add('tfc:compost_greens_high', 'tfg:rapeseed_product')
+	event.add('tfc:compost_greens_high', 'tfg:sunflower_product')
+	event.add('tfg:water_breathing_ingredients', 'tfg:rapeseed_product')
+	event.add('tfg:night_vision_ingredients', 'tfg:sunflower_product')
 	//temporary hidden items
 	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source_small')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source')
@@ -138,8 +145,15 @@ const registerTFGItemTags = (event) => {
 	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => { event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`); })
 
 	// Use either cast or wrought iron
-	event.add('forge:double_iron_ingots', '#forge:double_ingots/iron')
-	event.add('forge:double_iron_ingots', '#forge:double_ingots/wrought_iron')
+	event.add('tfg:any_iron_double_ingot', '#forge:double_ingots/iron')
+	event.add('tfg:any_iron_double_ingot', '#forge:double_ingots/wrought_iron')
+
+	event.add('tfg:any_iron_plate', '#forge:double_plates/iron')
+	event.add('tfg:any_iron_plate', '#forge:double_plates/wrought_iron')
+
+	event.add('tfg:any_bronze_frame', '#forge:frames/bronze')
+	event.add('tfg:any_bronze_frame', '#forge:frames/bismuth_bronze')
+	event.add('tfg:any_bronze_frame', '#forge:frames/black_bronze')
 
 	//#region Food
 	const RAW_MEATS = [
@@ -175,6 +189,8 @@ const registerTFGItemTags = (event) => {
 	});
 
 	//meal bags 
+	event.add('tfg:foil_packs', 'tfg:foil_pack');
+	event.add('tfg:foil_packs', 'tfg:clean_foil_pack')
 	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/meats');
 	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/grains');
 	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/vegetables');
@@ -183,6 +199,11 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:foods/usable_in_meal_bag', 'tfc:food/cooked_egg');
 	event.add('tfg:foods/usable_in_meal_bag', 'tfc:food/boiled_egg');
 	//#endregion
+
+	// #region Space blocks
+	event.add('tfg:moon_plants', 'tfg:lunar_roots')
+	event.add('tfg:moon_plants', 'tfg:lunar_sprouts')
+	// #endregion
 
 	// #region 0.7.19 -> 0.9 conversion
 	event.add('c:hidden_from_recipe_viewers', 'treetap:tap')
@@ -287,7 +308,12 @@ const registerTFGItemTags = (event) => {
 const registerTFGBlockTags = (event) => {
 
 	event.add('minecraft:mineable/shovel', 'tfg:ash_pile')
+    //crop stuff
+	event.add('tfc:crops', 'tfg:rapeseed')
+	event.add('tfc:mineable_with_sharp_tool', 'tfg:rapeseed')
 
+	event.add('tfc:crops', 'tfg:sunflower')	
+	event.add('tfc:mineable_with_sharp_tool','tfg:sunflower')
 	// #region Nether blocks
 
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')
@@ -308,14 +334,6 @@ const registerTFGBlockTags = (event) => {
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_dripstone')
 	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_dripstone')
 	event.add('tfc:rock/hardened', 'tfg:rock/hardened_dripstone')
-
-	// #endregion
-
-	// #region Space blocks (TODO: undo these when merging space into dev!)
-
-	event.add('tfc:plants', 'tfg:lunar_roots')
-	event.add('tfc:plants', 'tfg:lunar_sprouts')
-	event.add('tfc:plants', 'tfg:lunar_chorus_flower')
 
 	// #endregion
 }
@@ -340,11 +358,13 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:usable_in_red_steel_bucket', 'tfg:conifer_pitch')
 	event.add('tfc:usable_in_blue_steel_bucket', 'tfg:conifer_pitch')
 
-	event.add('tfg:breathable_compressed_air', 'tfg:compressed_nitrox')
-	event.add('tfg:breathable_compressed_air', 'tfg:compressed_heliox')
-	event.add('tfg:breathable_compressed_air', 'tfg:compressed_heliox_3')
-	event.add('tfg:breathable_compressed_air', 'tfg:compressed_trimix')
-	event.add('tfg:breathable_compressed_air', 'tfg:compressed_trimix_3')
+	event.add('tfg:clean_water', 'minecraft:water')
+	event.add('tfg:clean_water', 'tfc:river_water')
+	event.add('tfg:clean_water', 'tfc:spring_water')
+
+	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
+		event.add('tfg:breathable_compressed_air', x)
+	})
 }
 
 

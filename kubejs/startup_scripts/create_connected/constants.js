@@ -12,5 +12,11 @@ global.CREATE_CONNECTED_DISABLED_ITEMS = [
 	'create_connected:control_chip',
 	'create_connected:incomplete_control_chip',
 	'create_connected:crank_wheel',
-	'create_connected:large_crank_wheel'
+	'create_connected:large_crank_wheel',
+	'create_connected:cross_connector',
+	'create_connected:andesite_encased_cross_connector',
+	'create_connected:brass_encased_cross_connector',
+	'create_connected:kinetic_bridge',
+	'create_connected:kinetic_battery',
+	'create_connected:charged_kinetic_battery',
 ]

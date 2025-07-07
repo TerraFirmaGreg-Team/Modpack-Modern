@@ -7,6 +7,9 @@ const registerCreateConnectedRecipes = (event) => {
 		event.remove({ output: item })
 	})
 
+	event.stonecutting('create_connected:copycat_box', '#forge:ingots/zinc')
+	event.stonecutting('2x create_connected:copycat_catwalk', '#forge:ingots/zinc')
+
 	// Remove Fluid Vessel Crafting
 	event.remove({ id: 'create_connected:crafting/kinetics/fluid_vessel' })
 
@@ -64,4 +67,6 @@ const registerCreateConnectedRecipes = (event) => {
 		D: 'minecraft:redstone_torch',
 		E: '#forge:stone'
 	}).id('create_connected:crafting/kinetics/sequenced_pulse_generator')
+
+	event.replaceInput({ id: 'create_connected:crafting/kinetics/redstone_link_wildcard' }, 'create:transmitter', 'minecraft:redstone_torch')
 }

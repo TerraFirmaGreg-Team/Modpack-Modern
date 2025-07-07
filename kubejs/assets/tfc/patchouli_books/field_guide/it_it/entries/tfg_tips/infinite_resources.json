@@ -24,27 +24,7 @@
 			"item": {
 				"tag": "tfg:stone_dusts"
 			},
-			"text": "The other source of infinite resources is through $(thing)Stone Dusts$(). You can obtain infinite raw rock through a $(item)Rock Crusher$(), and then macerate it into different dusts.$(br2)These stone dusts can then be centrifuged into different resources (though most require $(thing)MV$()). Most of them give Silicon Dioxide and Oxygen, so only other resources will be listed.  "
-		},
-		{
-			"type": "patchouli:text",
-			"title": "Sedimentary",
-			"text": "$(thing)Shale$(): Sodium, Metal Mixture$(br)$(thing)Claystone$(): Aluminium, Hematite$(br)$(thing)Limestone$(): Calcium, Metal Mixture$(br)$(thing)Conglomerate$(): Tricalcium Phosphate, Hematite$(br)$(thing)Dolomite$(): Magnesium, Calcium, Metal Mixture$(br)$(thing)Chert$(): Metal Mixture$(br)$(thing)Chalk$(): Calcium, Carbon, Metal Mixture"
-		},
-		{
-			"type": "patchouli:text",
-			"title": "Metamorphic",
-			"text": "$(thing)Quartzite$(): Nothing$(br)$(thing)Slate$(): Metal Mixture$(br)$(thing)Phyllite$(): Calcium Chloride$(br)$(thing)Schist$(): Mica (Fluorine), Talc (Magnesium), Graphite, Metal Mixture$(br)$(thing)Gneiss$(): Biotite (Fluorine)$(br)$(thing)Marble$(): Magnesium, Calcite"
-		},
-		{
-			"type": "patchouli:text",
-			"title": "Igneous Intrusive",
-			"text": "$(thing)Granite$(): Calcite, Flint$(br)$(thing)Gabbro$(): Titanium, Iron, Metal Mixture$(br)$(thing)Diorite$(): Clay, Aluminium, Sulfur, Sodium, Lithium"
-		},
-		{
-			"type": "patchouli:text",
-			"title": "Igneous Extrusive",
-			"text": "$(thing)Rhyolite$(): Metal Mixture$(br)$(thing)Basalt$(): Olivine, Calcite, Flint, Dark Ashes$(br)$(thing)Andesite$(): Asbestos, Saltpeter$(br)$(thing)Dacite$(): Sodium, Calcium, Aluminium, Metal Mixture"
+			"text": "The other source of infinite resources is through $(thing)Stone Dusts$(). You can obtain infinite raw rock through a $(item)Rock Crusher$(), and then macerate it into different dusts.$(br2)These stone dusts can then be centrifuged into different resources (though most require $(thing)MV$()). Most of them give Silicon Dioxide and Oxygen."
 		},
 		{
 			"type": "patchouli:spotlight",

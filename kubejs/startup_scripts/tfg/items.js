@@ -27,6 +27,7 @@ const registerTFGItems = (event) => {
     
     event.create('tfg:terra_firma_greg')
         .translationKey('item.tfg.terra_firma_greg')
+        .tag('c:hidden_from_recipe_viewers')
     
     //#region chalk creation
     event.create('tfg:unfired_chalk')

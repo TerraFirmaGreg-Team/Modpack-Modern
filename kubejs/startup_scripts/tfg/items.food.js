@@ -16,7 +16,8 @@ function registerTFGFoodItems(event) {
 
 	event.create('tfg:food/raw_limpet')
 		.translationKey('item.tfg.food.raw_limpet')
-		.food(food => food.hunger(2).saturation(1))
+		.food(food => food.hunger(2).saturation(1)
+			.effect('minecraft:hunger', 100, 0, 1))
 
 	event.create('tfg:food/cooked_limpet')
 		.translationKey('item.tfg.food.cooked_limpet')
@@ -34,6 +35,7 @@ function registerTFGFoodItems(event) {
 		event.create(`tfg:food/freeze_dried/${fruit.name}`)
 			.translationKey(`item.tfg.food.freeze_dried/${fruit.name}`)
 			.texture(`tfg:item/food/freeze_dried_${fruit.name}`)
+			.tag('tfg:space_food')
 			.food(food => food.hunger(4).saturation(1)
 				.eaten(ctx => {
 					ctx.player.give('tfg:used_foil_pack')
@@ -46,14 +48,15 @@ function registerTFGFoodItems(event) {
 			.eaten(ctx => {
 				ctx.player.give('tfg:used_foil_pack')
 			}))
-        .texture('tfg:item/food/calorie_paste')
+		.texture('tfg:item/food/calorie_paste')
+		.tag('tfg:space_food')
 
 	event.create('tfg:used_foil_pack')
 		.translationKey('item.tfg.food.used_foil_pack')
 		.food(food => food.hunger(0).saturation(0)
 			.effect('minecraft:nausea', 200, 0, 1)
 		)
-        .texture('tfg:item/used_foil_pack')
+		.texture('tfg:item/used_foil_pack')
 
 	event.create('tfg:food/meal_bag')
 		.translationKey('item.tfg.food.meal_bag')
@@ -61,5 +64,28 @@ function registerTFGFoodItems(event) {
 			.eaten(ctx => {
 				ctx.player.give('tfg:used_foil_pack')
 			}))
-        .texture('tfg:item/food/meal_bag')
+		.texture('tfg:item/food/meal_bag')
+		.tag('tfg:space_food')
+
+	event.create('tfg:roasted_sunflower_seeds')
+		.translationKey('item.tfg.roasted_sunflower_seeds')
+		.texture('tfg:item/roasted_sunflower_seeds')
+		.food(food => food.hunger(4).saturation(2))
+		.tag('tfc:foods/grains')
+		.tag('tfc:foods/usable_in_salad')
+
+	event.create('tfg:food/cooked_moon_rabbit')
+		.translationKey('item.tfg.food.cooked_moon_rabbit')
+		.texture('tfg:item/food/cooked_moon_rabbit')
+		.food(food => food.hunger(4).saturation(8))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/cooked_meats')
+
+	event.create('tfg:food/raw_moon_rabbit')
+		.translationKey('item.tfg.food.raw_moon_rabbit')
+		.texture('tfg:item/food/raw_moon_rabbit')
+		.food(food => food.hunger(2).saturation(2)
+			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
 }

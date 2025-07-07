@@ -16,15 +16,6 @@ const registerAE2Recipes = (event) => {
 		], mod: 'ae2'
 	});
 
-	//#region Рецепты энтропии
-
-	global.TFC_STONE_TYPES.forEach(stone => {
-		registerEntropyRecipe(event, { block: { id: `tfc:rock/cobble/${stone}` } }, 'heat', { block: { id: `tfc:rock/raw/${stone}` } }, `tfg:entropy_raw_${stone}_to_cobble`)
-		registerEntropyRecipe(event, { block: { id: `tfc:rock/raw/${stone}` } }, 'cool', { block: { id: `tfc:rock/cobble/${stone}` } }, `tfg:entropy_cobble_${stone}_to_raw`)
-	})
-
-	//#endregion
-
 	// Cutting knives (for renaming things)
 	event.shaped('ae2:certus_quartz_cutting_knife', [
 		'  A',
@@ -2193,7 +2184,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'#tfg:reactant_fluix_ruby',
 			'#tfg:reactant_fluix_quartz',
 			'4x ae2:charged_certus_quartz_crystal')
-		.inputFluids(Fluid.of('minecraft:water', 144))
+		.inputFluids(JsonIO.of({ amount: 150, value: { tag: "tfg:clean_water" }}))
 		.itemOutputs('5x ae2:fluix_crystal')
 		.duration(120)
 		.EUt(256)
@@ -2203,7 +2194,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'#tfg:reactant_fluix_ruby_exquisite',
 			'#tfg:reactant_fluix_quartz',
 			'4x ae2:charged_certus_quartz_crystal')
-		.inputFluids(Fluid.of('minecraft:water', 144))
+		.inputFluids(JsonIO.of({ amount: 150, value: { tag: "tfg:clean_water" }}))
 		.itemOutputs('20x ae2:fluix_crystal')
 		.duration(80)
 		.EUt(256)
@@ -2213,7 +2204,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'#tfg:reactant_fluix_ruby',
 			'#tfg:reactant_fluix_quartz_exquisite',
 			'4x ae2:charged_certus_quartz_crystal')
-		.inputFluids(Fluid.of('minecraft:water', 144))
+		.inputFluids(JsonIO.of({ amount: 150, value: { tag: "tfg:clean_water" }}))
 		.itemOutputs('20x ae2:fluix_crystal')
 		.duration(80)
 		.EUt(256)
@@ -2223,7 +2214,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'#tfg:reactant_fluix_ruby_exquisite',
 			'#tfg:reactant_fluix_quartz_exquisite',
 			'4x ae2:charged_certus_quartz_crystal')
-		.inputFluids(Fluid.of('gtceu:distilled_water', 144))
+		.inputFluids(Fluid.of('gtceu:distilled_water', 150))
 		.itemOutputs('40x ae2:fluix_crystal')
 		.duration(60)
 		.EUt(256)
@@ -2255,7 +2246,8 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.dimension('ad_astra:moon')
 
 	// Certus deco blocks
-
+	
+	event.stonecutting('ae2:quartz_block', '#tfg:certus_quartz_blocks')
 	event.stonecutting('ae2:cut_quartz_block', '#tfg:certus_quartz_blocks')
 	event.stonecutting('ae2:smooth_quartz_block', '#tfg:certus_quartz_blocks')
 	event.stonecutting('ae2:quartz_bricks', '#tfg:certus_quartz_blocks')
@@ -2282,7 +2274,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 
 	event.recipes.gtceu.macerator('tfg:macerate_certus_deco')
 		.itemInputs('#tfg:certus_quartz_blocks')
-		.itemOutputs('#forge:dusts/certus_quartz')
+		.itemOutputs('4x #forge:dusts/certus_quartz')
 		.duration(150)
 		.EUt(2)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)

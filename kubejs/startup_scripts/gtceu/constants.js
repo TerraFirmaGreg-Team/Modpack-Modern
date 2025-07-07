@@ -92,6 +92,20 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:zpm_solar_panel',
     'gtceu:uv_solar_panel',
 
+    'gtceu:lv_air_scrubber',
+    'gtceu:mv_air_scrubber',
+    'gtceu:hv_air_scrubber',
+    'gtceu:ev_air_scrubber',
+
+    'gtceu:lv_world_accelerator',
+    'gtceu:mv_world_accelerator',
+    'gtceu:hv_world_accelerator',
+    'gtceu:ev_world_accelerator',
+    'gtceu:iv_world_accelerator',
+    'gtceu:luv_world_accelerator',
+    'gtceu:zpm_world_accelerator',
+    'gtceu:uv_world_accelerator',
+
     'gtceu:compressed_clay',
 
     // Sculk
@@ -162,7 +176,11 @@ global.TFG_EXTRUDER_MOLDS = [
     'tfg:javelin_head_extruder_mold',
     'tfg:chisel_head_extruder_mold',
     'tfg:mace_head_extruder_mold',
-    'tfg:mattock_head_extruder_mold'
+    'tfg:mattock_head_extruder_mold',
+    'tfg:fish_hook_extruder_mold',
+    'tfg:whisk_extruder_mold',
+    'tfg:screwdriver_tip_extruder_mold',
+    'tfg:wrench_tip_extruder_mold'
 ];
 
 global.TFG_CASTING_MOLDS = [

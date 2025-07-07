@@ -7,10 +7,11 @@ const registerAE2ItemTags = (event) => {
         event.add('c:hidden_from_recipe_viewers', item)
     })
 
-    // We use the quartz block as a raw ore block
     event.remove('forge:storage_blocks', 'ae2:quartz_block')
     event.remove('forge:storage_blocks/certus_quartz', 'ae2:quartz_block')
-
+    
+    event.add('tfg:certus_quartz_blocks', 'gtceu:certus_quartz_block')
+    event.add('tfg:certus_quartz_blocks', 'ae2:quartz_block')
     event.add('tfg:certus_quartz_blocks', 'ae2:cut_quartz_block')
 	event.add('tfg:certus_quartz_blocks', 'ae2:smooth_quartz_block')
 	event.add('tfg:certus_quartz_blocks', 'ae2:quartz_bricks')

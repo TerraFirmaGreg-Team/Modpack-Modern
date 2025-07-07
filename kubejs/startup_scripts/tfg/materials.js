@@ -82,6 +82,8 @@ const registerTFGMaterials = (event) => {
 		.components('5x nitrogen', '3x oxygen', '2x helium_3')
 		.color(0xa3ed95)
 
+	// Refrigerants
+
 	event.create('tfg:chlorodifluoromethane')
 		.gas()
 		.components('1x carbon', '1x hydrogen', '1x chlorine', '2x fluorine')

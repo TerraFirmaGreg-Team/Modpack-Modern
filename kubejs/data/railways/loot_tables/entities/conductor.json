@@ -1,0 +1,10 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"entries": []
+		}
+	],
+	"random_sequence": "railways:entities/conductor"
+}

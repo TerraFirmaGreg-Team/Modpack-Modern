@@ -14,6 +14,14 @@
 		{
 			"type": "minecraft:heightmap",
 			"heightmap": "MOTION_BLOCKING"
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_block_tag",
+				"offset": [ 0, -1, 0 ],
+				"tag": "ad_astra:moon_stone_replaceables"
+			}
 		}
 	]
 }

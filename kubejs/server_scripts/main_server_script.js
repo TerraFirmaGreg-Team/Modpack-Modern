@@ -12,6 +12,7 @@ ServerEvents.tags('item', event => {
 	registerAlekishipsItemTags(event)
 	registerAsticorCartsItemTags(event)
 	registerBeneathItemTags(event)
+	registerBetterEndItemTags(event)
 	registerChalkItemTags(event);
 	registerChiselAndBitsItemTags(event)
 	registerComputerCraftItemTags(event)
@@ -20,6 +21,7 @@ ServerEvents.tags('item', event => {
 	registerCreateAdditionsItemTags(event)
 	registerCreateConnectedItemTags(event)
 	registerCreateDecoItemTags(event)
+	registerCreateFactoryLogisticsItemTags(event)
 	registerDiggerHelmetItemTags(event)
 	registerEndermanOverhaulItemTags(event)
 	registerEveryCompatItemTags(event)
@@ -34,6 +36,7 @@ ServerEvents.tags('item', event => {
 	registerGTCEUItemTags(event)
 	registerMegaCellsItemTags(event)
 	registerMinecraftItemTags(event)
+	registerModernMarkingsItemTags(event)
 	registerMoreRedItemTags(event)
 	registerHotOrNotItemTags(event)
 	registerRailWaysItemTags(event)
@@ -178,6 +181,10 @@ GTCEuServerEvents.bedrockOreVeins(event => {
 	registerGTCEUBedrockOreVeins(event)
 })
 
+GTCEuServerEvents.fluidVeins(event => {
+	registerGTCEUBedrockFluidVeins(event)
+})
+
 /**
  * Событие регистрации рецептов.
  * Срабатывает после инициализации датапаков и тегов.
@@ -193,17 +200,19 @@ ServerEvents.recipes(event => {
 	registerAE2NetworkAnalyzerRecipes(event)
 	registerAE2WTLibRecipes(event)
 	registerBeneathRecipes(event)
+	registerBetterEndRecipes(event)
 	registerBuildingGadgetsRecipes(event)
 	registerChalkRecipes(event);
 	registerChiselAndBitsRecipes(event)
 	registerComfortsRecipes(event);
 	registerComputerCraftRecipes(event)
-	registerCccBridgeRecipes(event)
+	//registerCccBridgeRecipes(event)
 	registerConstructionwandRecipes(event)
 	registerCreateRecipes(event)
 	registerCreateAdditionsRecipes(event)
 	registerCreateConnectedRecipes(event)
 	registerCreatedecoRecipes(event)
+	registerCreateFactoryLogisticsRecipes(event)
 	registerCreateHorsePowerBlockRecipes(event)
 	registerDiggerHelmetRecipes(event)
 	registerDomumOrnamentumRecipes(event)
@@ -226,6 +235,7 @@ ServerEvents.recipes(event => {
 	registerMegaCellsRecipes(event)
 	registerMERequesterRecipes(event)
 	registerMinecraftRecipes(event)
+	registerModernMarkingRecipes(event)
 	registerMoreRedRecipes(event)
 	registerRailWaysRecipes(event)
 	registerRnrRecipes(event)

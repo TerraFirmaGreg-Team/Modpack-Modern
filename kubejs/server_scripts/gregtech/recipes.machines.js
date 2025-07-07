@@ -932,4 +932,52 @@ function registerGTCEuMachineRecipes(event) {
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.ZPM])
 		.circuit(2)
+
+	event.recipes.gtceu.mixer('gtceu:chipboard_composite_wax')
+		.itemInputs('2x #tfg:wood_dusts',
+					'1x #forge:wax')
+		.itemOutputs('2x tfg:chipboard_composite')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.mixer('gtceu:chipboard_composite_resin')
+		.itemInputs('4x #tfg:wood_dusts',
+					'1x gtceu:sticky_resin')
+		.itemOutputs('4x tfg:chipboard_composite')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.mixer('gtceu:chipboard_composite_glue')
+		.itemInputs('2x #tfg:wood_dusts',
+					'1x tfc:glue')
+		.itemOutputs('2x tfg:chipboard_composite')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
+
+	event.recipes.gtceu.mixer('gtceu:chipboard_composite_fluid_glue')
+		.itemInputs('1x #tfg:wood_dusts')
+		.inputFluids(Fluid.of('gtceu:glue', 25))
+		.itemOutputs('1x tfg:chipboard_composite')
+		.duration(10)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.chemical_bath('gtceu:treated_chipboard_composite')
+		.itemInputs('1x tfg:chipboard_composite')
+		.inputFluids(Fluid.of('gtceu:creosote', 50))
+		.itemOutputs('gtceu:treated_wood_dust')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.compressor('gtceu:wood_mdf')
+		.itemInputs('1x tfg:chipboard_composite')
+		.itemOutputs('gtceu:wood_plate')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.compressor('gtceu:treated_wood_mdf')
+		.itemInputs('1x gtceu:treated_wood_dust')
+		.itemOutputs('gtceu:treated_wood_plate')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
 }

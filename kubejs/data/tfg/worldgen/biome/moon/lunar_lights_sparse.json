@@ -44,6 +44,9 @@
 			"tfg:moon/surface/birt_dwelling",
 			"tfg:moon/surface/warped_sprouts_patch",
 			"tfg:moon/surface/warped_roots_patch",
+			"tfg:moon/surface/vaiolush_fern",
+			"tfg:moon/surface/salteago",
+			"tfg:moon/surface/inflexia",
 			"tfg:moon/surface/warped_vine_rare"
 		],
 		[
@@ -51,7 +54,7 @@
 		]
 	],
 	"has_precipitation": false,
-	"creature_spawn_probability": 0.00005,
+	"creature_spawn_probability": 0.00006,
 	"spawn_costs": {
 		"species:limpet": {
 			"energy_budget": 0.15,
@@ -63,7 +66,7 @@
 		"axolotls": [],
 		"creature": [
 			{
-				"type": "minecraft:rabbit",
+				"type": "tfg:moon_rabbit",
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100

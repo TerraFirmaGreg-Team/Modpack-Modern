@@ -23,7 +23,6 @@ global.CREATE_ADDITIONS_DISABLED_ITEMS = [
     'createaddition:electrum_sheet', 
     'createaddition:zinc_sheet', 
     'createaddition:cake_base_baked', 
-    'createaddition:straw',
     'createaddition:copper_wire',
     'createaddition:seed_oil_bucket',
     'createaddition:bioethanol_bucket',
@@ -39,4 +38,5 @@ global.CREATE_ADDITIONS_DISABLED_ITEMS = [
     'createaddition:copper_spool', 
     'createaddition:festive_spool', 
     'createaddition:small_light_connector',
+    'createaddition:electrum_block'
 ];

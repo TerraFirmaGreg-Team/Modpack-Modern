@@ -41,7 +41,7 @@ const registerMinecraftRecipes = (event) => {
 
 			event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_block_${element.name}`)
 				.itemInputs(element.block)
-				.inputFluids(Fluid.of('minecraft:water', 150))
+				.inputFluids(JsonIO.of({ amount: 150, value: { tag: "tfc:any_water" }}))
 				.circuit(1)
 				.itemOutputs(element2.block)
 				.duration(1000)
@@ -49,7 +49,7 @@ const registerMinecraftRecipes = (event) => {
 
 			event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_cutted_${element.name}`)
 				.itemInputs(element.cutted)
-				.inputFluids(Fluid.of('minecraft:water', 150))
+				.inputFluids(JsonIO.of({ amount: 150, value: { tag: "tfc:any_water" }}))
 				.circuit(1)
 				.itemOutputs(element2.cutted)
 				.duration(1000)
@@ -57,7 +57,7 @@ const registerMinecraftRecipes = (event) => {
 
 			event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_stairs_${element.name}`)
 				.itemInputs(element.stairs)
-				.inputFluids(Fluid.of('minecraft:water', 150))
+				.inputFluids(JsonIO.of({ amount: 150, value: { tag: "tfc:any_water" }}))
 				.circuit(1)
 				.itemOutputs(element2.stairs)
 				.duration(1000)
@@ -65,7 +65,7 @@ const registerMinecraftRecipes = (event) => {
 
 			event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_slabs_${element.name}`)
 				.itemInputs(element.slabs)
-				.inputFluids(Fluid.of('minecraft:water', 150))
+				.inputFluids(JsonIO.of({ amount: 150, value: { tag: "tfc:any_water" }}))
 				.circuit(1)
 				.itemOutputs(element2.slabs)
 				.duration(1000)
@@ -152,7 +152,7 @@ const registerMinecraftRecipes = (event) => {
 
 	event.recipes.gtceu.chemical_bath('paper_from_papyrus')
 		.itemInputs('tfc:papyrus')
-		.inputFluids(Fluid.of('minecraft:water', 100))
+		.inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfg:clean_water" }}))
 		.itemOutputs('minecraft:paper')
 		.duration(100)
 		.EUt(7)
@@ -163,7 +163,7 @@ const registerMinecraftRecipes = (event) => {
 
 	event.recipes.gtceu.centrifuge('sugar_from_sugarcane')
 		.itemInputs('tfc:food/sugarcane')
-		.inputFluids(Fluid.of('minecraft:water', 600))
+		.inputFluids(JsonIO.of({ amount: 600, value: { tag: "tfg:clean_water" }}))
 		.itemOutputs('minecraft:sugar', 'gtceu:plant_ball')
 		.duration(800)
 		.EUt(6)
@@ -229,7 +229,7 @@ const registerMinecraftRecipes = (event) => {
 
 	event.recipes.gtceu.chemical_reactor('minecraft:gtceu/chemical_reactor/sponge')
 		.itemInputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.SodiumBisulfate, 1))
-		.inputFluids(Fluid.of('gtceu:polyethylene', 144), Fluid.of('minecraft:water', 250))
+		.inputFluids(Fluid.of('gtceu:polyethylene', 144), JsonIO.of({ amount: 250, value: { tag: "tfg:clean_water" }}))
 		.itemOutputs('2x minecraft:sponge')
 		.outputFluids(Fluid.of('gtceu:sodium_persulfate', 35))
 		.duration(80)
@@ -544,6 +544,11 @@ const registerMinecraftRecipes = (event) => {
 
 	event.recipes.tfc.welding('minecraft:bucket', 'tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 6)
 		.id('tfg:anvil/vanilla_bucket')
+
+	event.recipes.greate.compacting('minecraft:bucket', ['tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 'tfc:powder/flux'])
+		.heated()
+		.recipeTier(0)
+		.id('greate:compacting/vanilla_bucket')
 
 	event.recipes.gtceu.assembler('tfg:vanilla/bucket')
 		.itemInputs('#forge:plates/red_steel', '#forge:plates/blue_steel')
@@ -1043,6 +1048,7 @@ const registerMinecraftRecipes = (event) => {
 		}).id('tfg:shaped/stonecutter');
 
 	event.stonecutting('minecraft:smooth_quartz', 'minecraft:quartz_block')
+	event.stonecutting('create:cut_deepslate', 'minecraft:polished_deepslate')
 
 	//Glowing Ink Sacs
 		

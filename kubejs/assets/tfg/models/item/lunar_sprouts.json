@@ -1,3 +1,6 @@
 {
-  "parent": "tfg:block/lunar_sprouts"
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "tfg:block/lunar_sprouts"
+	}
 }

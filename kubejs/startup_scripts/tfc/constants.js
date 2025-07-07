@@ -577,6 +577,33 @@ global.TFC_DISABLED_ITEMS = [
     'tfc:bucket/metal/red_steel'
 ];
 
+// Items that need to be hidden, but you want to keep their tags.
+global.TFC_HIDDEN_ITEMS = [
+    'tfc:wild_crop/papyrus', 
+    'tfc:wild_crop/pumpkin', 
+    'tfc:wild_crop/melon', 
+    'tfc:wild_crop/red_bell_pepper', 
+    'tfc:wild_crop/yellow_bell_pepper', 
+    'tfc:wild_crop/barley', 
+    'tfc:wild_crop/oat', 
+    'tfc:wild_crop/rye', 
+    'tfc:wild_crop/maize', 
+    'tfc:wild_crop/wheat', 
+    'tfc:wild_crop/rice', 
+    'tfc:wild_crop/beet', 
+    'tfc:wild_crop/cabbage', 
+    'tfc:wild_crop/carrot', 
+    'tfc:wild_crop/garlic', 
+    'tfc:wild_crop/green_bean', 
+    'tfc:wild_crop/potato', 
+    'tfc:wild_crop/onion', 
+    'tfc:wild_crop/soybean', 
+    'tfc:wild_crop/squash', 
+    'tfc:wild_crop/sugarcane', 
+    'tfc:wild_crop/tomato', 
+    'tfc:wild_crop/jute'
+];
+
 /**
  * Хранит список всех имен типов камней в TFC.
  */
@@ -888,7 +915,9 @@ global.TFC_MEAT_RECIPE_COMPONENTS = [
     { input: 'minecraft:chorus_fruit', output: 'minecraft:popped_chorus_fruit', name: 'popped_chorus_fruit' },
     { input: 'tfg:food/raw_birt', output: 'tfg:food/cooked_birt', name: 'cooked_birt' },
     { input: 'tfg:food/raw_crawlermari', output: 'tfg:food/cooked_crawlermari', name: 'cooked_crawlermari' },
-    { input: 'tfg:food/raw_limpet', output: 'tfg:food/cooked_limpet', name: 'cooked_limpet' }
+    { input: 'tfg:food/raw_limpet', output: 'tfg:food/cooked_limpet', name: 'cooked_limpet' },
+    { input: 'tfg:sunflower_product', output: 'tfg:roasted_sunflower_seeds', name: 'roasted_sunflower_seeds' },
+    { input: 'tfg:food/raw_moon_rabbit', output: 'tfg:food/cooked_moon_rabbit', name: 'cooked_moon_rabbit' }
 ];
 
 global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = [
@@ -997,6 +1026,8 @@ global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS = [
     { input: '8x tfc:seeds/melon', fluid_amount: 4000, output: '24x tfc:melon', name: 'melon' },
     { input: '8x tfc:seeds/red_bell_pepper', fluid_amount: 4000, output: '24x tfc:food/red_bell_pepper', name: 'red_bell_pepper' },
     { input: '8x tfc:seeds/yellow_bell_pepper', fluid_amount: 4000, output: '24x tfc:food/yellow_bell_pepper', name: 'yellow_bell_pepper' },
+    { input: '8x tfg:sunflower_seeds', fluid_amount: 4000, output: '24x tfg:sunflower_product', name: 'sunflower' },
+    { input: '8x tfg:rapeseed_seeds', fluid_amount: 4000, output: '24x tfg:rapeseed_product', name: 'rapeseed' },
 ];
 
 global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS = [

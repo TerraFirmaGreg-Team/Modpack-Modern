@@ -103,7 +103,7 @@ const registerAdAstraRecipes = (event) => {
 			'tfg:polycaprolactam_fabric'
 		)
 		.itemOutputs('2x tfg:space_suit_fabric')
-		.duration(20*10)
+		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.shaped('ad_astra:space_helmet', [
@@ -115,7 +115,7 @@ const registerAdAstraRecipes = (event) => {
 		B: 'tfg:space_suit_fabric',
 		D: '#forge:small_fluid_pipes/polyethylene'
 	}).id('tfg:space_helmet')
-	
+
 	//event.recipes.gtceu.assembler('ad_astra:netherite_space_helmet')
 	//	.itemInputs(
 	//		'ad_astra:space_helmet',
@@ -150,7 +150,7 @@ const registerAdAstraRecipes = (event) => {
 		A: 'gtceu:hv_electric_motor',
 		B: 'tfg:space_suit_fabric',
 	}).id('tfg:space_pants')
-	
+
 	//event.recipes.gtceu.assembler('ad_astra:netherite_space_pants')
 	//	.itemInputs('ad_astra:space_pants', '4x #forge:plates/titanium_tungsten_carbide', '4x #forge:plates/polyphenylene_sulfide')
 	//	.itemOutputs('ad_astra:netherite_space_pants')
@@ -193,7 +193,7 @@ const registerAdAstraRecipes = (event) => {
 		'ACA',
 		'AAA'
 	], {
-		A: '#forge:foils/polyphenylene',
+		A: '#forge:foils/polyphenylene_sulfide',
 		B: '#forge:tiny_fluid_pipes/polyethylene',
 		C: 'gtceu:aluminium_fluid_cell'
 	}).id('tfg:gas_tank')
@@ -203,7 +203,7 @@ const registerAdAstraRecipes = (event) => {
 		'ACA',
 		'AAA'
 	], {
-		A: '#forge:sheets/polyphenylene',
+		A: '#forge:sheets/polyphenylene_sulfide',
 		B: '#forge:small_fluid_pipes/polyethylene',
 		C: 'gtceu:stainless_steel_fluid_cell'
 	}).id('tfg:large_gas_tank')
@@ -245,13 +245,37 @@ const registerAdAstraRecipes = (event) => {
 		E: '#gtceu:circuits/mv'
 	}).id('tfg:oxygen_sensor')
 
-	event.shaped('ad_astra:solar_panel', [
+	event.recipes.gtceu.laser_engraver('ad_astra:photovoltaic_etrium_cell_silicon')
+		.itemInputs('gtceu:silicon_wafer', '#forge:glass_panes', 'gtceu:carbon_fiber_plate')
+		.itemOutputs('ad_astra:photovoltaic_etrium_cell')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(100)
+
+	event.recipes.gtceu.laser_engraver('ad_astra:photovoltaic_etrium_cell_phosphorous')
+		.itemInputs('gtceu:phosphorus_wafer', '#forge:glass_panes', 'gtceu:carbon_fiber_plate')
+		.itemOutputs('2x ad_astra:photovoltaic_etrium_cell')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(100)
+
+	event.recipes.gtceu.laser_engraver('ad_astra:photovoltaic_etrium_cell_naquadah')
+		.itemInputs('gtceu:naquadah_wafer', '#forge:glass_panes', 'gtceu:carbon_fiber_plate')
+		.itemOutputs('4x ad_astra:photovoltaic_etrium_cell')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(100)
+
+	event.recipes.gtceu.laser_engraver('ad_astra:photovoltaic_etrium_cell_neutronium')
+		.itemInputs('gtceu:neutronium_wafer', '#forge:glass_panes', 'gtceu:carbon_fiber_plate')
+		.itemOutputs('8x ad_astra:photovoltaic_etrium_cell')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(100)
+
+	event.shaped('2x ad_astra:solar_panel', [
 		'AAA',
-		'BCE',
-		' F '
+		' C ',
+		'BFE'
 	], {
-		A: 'gtceu:solar_panel',
-		B: '#gtceu:batteries/lv',
+		A: 'ad_astra:photovoltaic_etrium_cell',
+		B: '#gtceu:batteries/mv',
 		C: '#forge:rods/long/aluminium',
 		E: '#gtceu:circuits/mv',
 		F: 'gtceu:mv_machine_hull'
@@ -301,24 +325,6 @@ const registerAdAstraRecipes = (event) => {
 	//#endregion
 
 
-	//#region FE cables
-
-	//event.recipes.gtceu.assembler('tfg:ad_astra_steel_cable')
-	//	.itemInputs('#forge:single_wires/manganese_phosphide', '#forge:plates/polyethylene')
-	//	.inputFluids(Fluid.of('gtceu:redstone', 144))
-	//	.itemOutputs('ad_astra:steel_cable')
-	//	.duration(60)
-	//	.EUt(120)
-
-	//event.recipes.gtceu.assembler('tfg:ad_astra_desh_cable')
-	//	.itemInputs('#forge:single_wires/magnesium_diboride', '#forge:plates/polyvinyl_chloride')
-	//	.inputFluids(Fluid.of('gtceu:redstone', 288))
-	//	.itemOutputs('ad_astra:desh_cable')
-	//	.duration(60)
-	//	.EUt(480)
-
-	//#endregion
-
 	//#region Колесо
 
 	event.shaped('ad_astra:white_flag', [
@@ -351,6 +357,24 @@ const registerAdAstraRecipes = (event) => {
 	})
 
 	//#endregion
+
+	// #region Ingots
+
+	event.recipes.gtceu.chemical_bath('tfg:desh_cool_down_water')
+		.itemInputs('#forge:hot_ingots/desh')
+		.inputFluids(Fluid.of('minecraft:water', 100))
+		.itemOutputs('#forge:ingots/desh')
+		.duration(400)
+		.EUt(120)
+
+	event.recipes.gtceu.chemical_bath('tfg:desh_cool_down_distilled_water')
+		.itemInputs('#forge:hot_ingots/desh')
+		.inputFluids(Fluid.of('gtceu:distilled_water', 100))
+		.itemOutputs('#forge:ingots/desh')
+		.duration(250)
+		.EUt(120)
+
+	// #endregion
 
 	//#region Воздушный пистолет
 
@@ -390,7 +414,7 @@ const registerAdAstraRecipes = (event) => {
 			ingredient: {
 				fluid: 'gtceu:air'
 			},
-			millibuckets: 100
+			millibuckets: 1
 		},
 		result: {
 			fluid: 'ad_astra:oxygen',
@@ -398,21 +422,23 @@ const registerAdAstraRecipes = (event) => {
 		}
 	}).id('ad_astra:oxygen_loading/air_from_air')
 
-	event.custom({
-		type: 'ad_astra:oxygen_loading',
-		cookingtime: 1,
-		energy: 30,
-		input: {
-			ingredient: {
-				tag: 'tfg:breathable_compressed_air'
+	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
+		event.custom({
+			type: 'ad_astra:oxygen_loading',
+			cookingtime: 1,
+			energy: 30,
+			input: {
+				ingredient: {
+					fluid: x
+				},
+				millibuckets: 1
 			},
-			millibuckets: 1
-		},
-		result: {
-			fluid: 'ad_astra:oxygen',
-			millibuckets: 200
-		}
-	}).id('ad_astra:oxygen_loading/air_from_compressed')
+			result: {
+				fluid: 'ad_astra:oxygen',
+				millibuckets: 1000
+			}
+		}).id(`ad_astra:oxygen_loading/air_from_${x.split(':')[1]}`)
+	})
 
 	//#endregion
 
@@ -442,19 +468,19 @@ const registerAdAstraRecipes = (event) => {
 			D: `minecraft:${color}_stained_glass_pane`,
 			P: '#forge:plates/steel'
 		})
-		.id(`tfg:shaped/ad_astra_${color}_industrial_lamp`);
+			.id(`tfg:shaped/ad_astra_${color}_industrial_lamp`);
 
 		event.shaped(`ad_astra:small_${color}_industrial_lamp`, [
 			' N ',
 			'DTD',
 			' P '
 		], {
-			N: '#forge:nuggets/steel',
+			N: '#forge:bolts/steel',
 			T: 'minecraft:glowstone',
 			D: `minecraft:${color}_stained_glass_pane`,
 			P: '#forge:rods/steel'
 		})
-		.id(`tfg:shaped/ad_astra_small_${color}_industrial_lamp`);
+			.id(`tfg:shaped/ad_astra_small_${color}_industrial_lamp`);
 	})
 
 	const DECO_BLOCKS = [
@@ -636,6 +662,34 @@ const registerAdAstraRecipes = (event) => {
 	event.stonecutting('ad_astra:etrium_factory_block', '#tfg:ad_astra_etrium_blocks')
 	event.stonecutting('ad_astra:encased_etrium_block', '#tfg:ad_astra_etrium_blocks')
 	event.stonecutting('ad_astra:etrium_plateblock', '#tfg:ad_astra_etrium_blocks')
+
+	//#endregion
+
+	//#region Space stations
+
+	event.custom({
+		type: "ad_astra:space_station_recipe",
+		dimension: "ad_astra:earth_orbit",
+		ingredients: [
+			{ count: 43, ingredient: { item: "gtceu:aluminium_frame" }},
+			{ count: 24, ingredient: { item: "gtceu:glass_plate" }},
+			{ count: 4, ingredient: { item: "minecraft:glowstone_dust" }},
+			{ count: 1, ingredient: { item: "ad_astra:launch_pad" }}
+		],
+		structure: "tfg:space_station/earth_orbit"
+	})
+
+	event.custom({
+		type: "ad_astra:space_station_recipe",
+		dimension: "ad_astra:moon_orbit",
+		ingredients: [
+			{ count: 43, ingredient: { item: "gtceu:aluminium_frame" }},
+			{ count: 24, ingredient: { item: "gtceu:glass_plate" }},
+			{ count: 4, ingredient: { item: "minecraft:glowstone_dust" }},
+			{ count: 1, ingredient: { item: "ad_astra:launch_pad" }}
+		],
+		structure: "tfg:space_station/moon_orbit"
+	})
 
 	//#endregion
 }

@@ -9,13 +9,20 @@ const registerCreateDecoItemTags = (event) => {
 	});
 	//#endregion
 
-	event.remove('createdeco:internal/blocks/iron_blocks', '#forge:storage_blocks/iron')
+	event.remove('createdeco:internal/blocks/iron_blocks', 'minecraft:iron_block')
+	event.remove('createdeco:internal/blocks/industrial_iron_blocks', 'create:industrial_iron_block')
 
 	//#region Apply Tags
 	metalBars.forEach(metalBars => {
 		event.add('tfg:metal_bars', `createdeco:${metalBars}_bars`)
 		event.add('tfg:metal_bars', `createdeco:${metalBars}_bars_overlay`)
 	});
+
+	event.add('createdeco:metal_trapdoors', 'createdeco:andesite_trapdoor')
+	event.add('createdeco:metal_trapdoors', 'createdeco:brass_trapdoor')
+	event.add('createdeco:metal_trapdoors', 'createdeco:copper_trapdoor')
+	event.add('createdeco:metal_trapdoors', 'createdeco:industrial_iron_trapdoor')
+	event.add('createdeco:metal_trapdoors', 'createdeco:zinc_trapdoor')
 
 	event.add("createdeco:internal/plates/iron_plates", "#forge:plates/wrought_iron")
 	event.add("createdeco:internal/plates/copper_plates", "#forge:plates/copper")

@@ -55,14 +55,15 @@
 			"tfg:moon/surface/loose/rhyolite",
 			"tfg:moon/surface/pile_moon_sand",
 			"tfg:moon/surface/pile_white_sand",
-			"tfg:moon/surface/pile_black_sand"
+			"tfg:moon/surface/pile_black_sand",
+			"tfg:moon/surface/inflexia"
 		],
 		[
 			"tfg:moon/hardening"
 		]
 	],
 	"has_precipitation": false,
-	"creature_spawn_probability": 0.00008,
+	"creature_spawn_probability": 0.0001,
 	"spawn_costs": {
 		"species:limpet": {
 			"energy_budget": 0.15,
@@ -74,7 +75,7 @@
 		"axolotls": [],
 		"creature": [
 			{
-				"type": "minecraft:rabbit",
+				"type": "tfg:moon_rabbit",
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100

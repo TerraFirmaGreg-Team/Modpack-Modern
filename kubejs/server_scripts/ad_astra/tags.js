@@ -21,15 +21,20 @@ const registerAdAstraFluidTags = (event) => {
 
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:rocket_fuel')
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:diesel')
+	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:bio_diesel')
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:cetane_boosted_diesel')
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:gasoline')
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:high_octane_gasoline')
 
-	event.add('ad_astra:zip_gun_propellants', 'tfg:compressed_nitrox')
-	event.add('ad_astra:zip_gun_propellants', 'tfg:compressed_heliox')
-	event.add('ad_astra:zip_gun_propellants', 'tfg:compressed_heliox_3')
-	event.add('ad_astra:zip_gun_propellants', 'tfg:compressed_trimix')
-	event.add('ad_astra:zip_gun_propellants', 'tfg:compressed_trimix_3')
+	event.add('ad_astra:freezes_in_space', 'tfc:salt_water')
+	event.add('ad_astra:freezes_in_space', 'tfc:spring_water')
+	event.add('ad_astra:evaporates_in_space', 'tfc:salt_water')
+	event.add('ad_astra:evaporates_in_space', 'tfc:spring_water')
+	event.add('ad_astra:evaporates_in_space', '#tfc:alcohols')
+
+	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
+		event.add('ad_astra:zip_gun_propellants', x)
+	})
 }
 
 const registerAdAstraItemTags = (event) => {
@@ -65,6 +70,13 @@ const registerAdAstraItemTags = (event) => {
 	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:encased_etrium_block')
 	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_plateblock')
 	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_panel')
+
+	event.add('tfc:foods', 'ad_astra:cheese')
+	event.add('tfc:foods/dairy', 'ad_astra:cheese')
+	event.add('tfc:foods/usable_in_sandwich', 'ad_astra:cheese')
+	event.add('tfc:foods/usable_in_jam_sandwich', 'ad_astra:cheese')
+	event.add('tfc:foods/usable_in_jam_sandwich_2', 'ad_astra:cheese')
+	event.add('firmalife:foods/cheeses', 'ad_astra:cheese')
 }
 
 const registerAdAstraBlockTags = (event) => {
@@ -173,6 +185,8 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:rock_slabs', 'ad_astra:venus_stone_slab')
 	event.add('tfg:rock_slabs', 'ad_astra:mercury_stone_slab')
 	event.add('tfg:rock_slabs', 'ad_astra:glacio_stone_slab')
+
+	event.add('ad_astra:destroyed_in_space', '#minecraft:saplings')
 }
 
 const registerAdAstraBiomeTags = (event) => {
@@ -185,8 +199,6 @@ const registerAdAstraBiomeTags = (event) => {
 		event.add('tfg:has_structure/cheese_ores', biome)
 		event.add('tfg:has_structure/moonbase', biome)
 		event.add('tfg:has_structure/moon_rabbit_houses', biome)
-		event.add('minecraft:spawns_gold_rabbits', biome)
-		event.add('minecraft:spawns_white_rabbits', biome)
 	})
 }
 
@@ -195,7 +207,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 	// moon
 	const MOON_ENTITIES = [
 		'tfc:rat',
-		'minecraft:rabbit',
+		'tfg:moon_rabbit',
 		'minecraft:enderman',
 		'minecraft:shulker',
 		'minecraft:shulker_bullet',
@@ -247,4 +259,11 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_moon_sand')
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_white_sand')
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_black_sand')
+
+	event.add('tfg:venus_delta_surface_features', 'tfg:venus/surface/geyser_source_patch')
+	event.add('tfg:venus_delta_surface_features', 'tfg:venus/surface/stromatolite_cluster_patch')
+	event.add('tfg:venus_delta_surface_features', 'tfg:venus/surface/stromatolite_tower')
+
+	event.add('tfg:venus_delta_terrain_features', 'tfg:venus/terrain/hot_spring_delta')
+	event.add('tfg:venus_delta_terrain_features', 'tfg:venus/terrain/stromatolite_disk')
 }
