@@ -12,4 +12,10 @@ function registerCreateHypertubeRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:silicone_rubber', 288))
 		.EUt(512)
 		.duration(80)
+	event.recipes.gtceu.assembler('create_hypertube:entrance_sbr')
+		.itemInputs('4x #forge:plates/stainless_steel','create:smart_chute' ,'greate:stainless_steel_cogwheel', 'ae2:charged_certus_quartz_crystal')
+		.itemOutputs('create_hypertube:hypertube_entrance')
+		.inputFluids(Fluid.of('gtceu:styrene_butadiene_rubber', 144))
+		.EUt(512)
+		.duration(80)
 }
