@@ -22,6 +22,7 @@ ItemEvents.modification(event => {
 	registerBeneathItemModifications(event)
 	registerConstructionWandsItemModifications(event)
 	registerCreateItemModifications(event)
+	registerGTCEuItemModifications(event)
 	registerMinecraftItemModifications(event)
 })
 
