@@ -63,9 +63,9 @@
 			y: 2.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["427814F6E9386772"]
 			description: ["{quests.tfg.field_guide.desc}"]
+			disable_toast: true
 			icon: {
 				Count: 1
 				id: "patchouli:guide_book"
@@ -93,14 +93,49 @@
 				}
 			]
 			subtitle: "{quests.tfg.field_guide.subtitle}"
-			tasks: [{
-				id: "28491210C53D9AB2"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
-			}]
 			title: "{quests.tfg.field_guide.title}"
 			x: 0.0d
 			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3D7B0F3134C30364"]
+			description: ["{quests.tfg.books_again.desc}"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "tfc:field_guide"
+				}
+			}
+			id: "590CE4F4FA385701"
+			rewards: [
+				{
+					id: "58D1E7EFD006D7F7"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "tfc:field_guide"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1470E8AFDC8D994E"
+					item: "ftbquests:book"
+					type: "item"
+				}
+			]
+			shape: "heart"
+			tasks: [{
+				id: "48D307BC0A3879D4"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg.books_again.title}"
+			x: 0.0d
+			y: 4.5d
 		}
 	]
 	subtitle: ["{quests.tfg.subtitle}"]
