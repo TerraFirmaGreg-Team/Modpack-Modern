@@ -916,7 +916,8 @@ global.TFC_MEAT_RECIPE_COMPONENTS = [
     { input: 'tfg:food/raw_birt', output: 'tfg:food/cooked_birt', name: 'cooked_birt' },
     { input: 'tfg:food/raw_crawlermari', output: 'tfg:food/cooked_crawlermari', name: 'cooked_crawlermari' },
     { input: 'tfg:food/raw_limpet', output: 'tfg:food/cooked_limpet', name: 'cooked_limpet' },
-    { input: 'tfg:sunflower_product', output: 'tfg:roasted_sunflower_seeds', name: 'roasted_sunflower_seeds' }
+    { input: 'tfg:sunflower_product', output: 'tfg:roasted_sunflower_seeds', name: 'roasted_sunflower_seeds' },
+    { input: 'tfg:food/raw_moon_rabbit', output: 'tfg:food/cooked_moon_rabbit', name: 'cooked_moon_rabbit' }
 ];
 
 global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = [

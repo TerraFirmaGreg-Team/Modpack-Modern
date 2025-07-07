@@ -16,7 +16,8 @@ function registerTFGFoodItems(event) {
 
 	event.create('tfg:food/raw_limpet')
 		.translationKey('item.tfg.food.raw_limpet')
-		.food(food => food.hunger(2).saturation(1))
+		.food(food => food.hunger(2).saturation(1)
+			.effect('minecraft:hunger', 100, 0, 1))
 
 	event.create('tfg:food/cooked_limpet')
 		.translationKey('item.tfg.food.cooked_limpet')
@@ -72,4 +73,19 @@ function registerTFGFoodItems(event) {
 		.food(food => food.hunger(4).saturation(2))
 		.tag('tfc:foods/grains')
 		.tag('tfc:foods/usable_in_salad')
+
+	event.create('tfg:food/cooked_moon_rabbit')
+		.translationKey('item.tfg.food.cooked_moon_rabbit')
+		.texture('tfg:item/food/cooked_moon_rabbit')
+		.food(food => food.hunger(4).saturation(8))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/cooked_meats')
+
+	event.create('tfg:food/raw_moon_rabbit')
+		.translationKey('item.tfg.food.raw_moon_rabbit')
+		.texture('tfg:item/food/raw_moon_rabbit')
+		.food(food => food.hunger(2).saturation(2)
+			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
 }
