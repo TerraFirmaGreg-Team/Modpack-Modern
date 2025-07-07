@@ -951,15 +951,18 @@ function registerGTCEUMetalRecipes(event) {
 			makeToolRecipe(GTToolType.MINING_HAMMER, TFGTagPrefix.toolHeadMiningHammer, 'tfg:mining_hammer_head_extruder_mold', 10, material)
 			makeToolRecipe(GTToolType.SCYTHE, TFGTagPrefix.toolHeadScythe, 'tfg:scythe_head_extruder_mold', 11, material)
 			makeToolRecipe(GTToolType.HARD_HAMMER, TFGTagPrefix.toolHeadHammer, 'tfg:hammer_head_extruder_mold', 12, material)
-			makeToolRecipe(GTToolType.BUTCHERY_KNIFE, TFGTagPrefix.toolHeadButcheryKnife, 'tfg:butchery_knife_head_extruder_mold', 13, material)
+			makeToolRecipe(GTToolType.SCREWDRIVER, TagPrefix.toolHeadScrewdriver, 'tfg:screwdriver_tip_extruder_mold', 14, material)
+			
 
 			processToolMortar(GTToolType.MORTAR, material)
 
-			processToolHead(TFGTagPrefix.toolHeadPropick, 'tfg:propick_head_extruder_mold', 14, material)
-			processToolHead(TFGTagPrefix.toolHeadJavelin, 'tfg:javelin_head_extruder_mold', 15, material)
-			processToolHead(TFGTagPrefix.toolHeadChisel, 'tfg:chisel_head_extruder_mold', 16, material)
-			processToolHead(TFGTagPrefix.toolHeadMace, 'tfg:mace_head_extruder_mold', 17, material)
-			processToolHead(TFGTagPrefix.toolHeadMattock, 'tfg:mattock_head_extruder_mold', 18, material)
+			processToolHead(TagPrefix.toolHeadWrench, 'tfg:wrench_tip_extruder_mold', 15, material)
+			processToolHead(TFGTagPrefix.toolHeadPropick, 'tfg:propick_head_extruder_mold', 16, material)
+			processToolHead(TFGTagPrefix.toolHeadJavelin, 'tfg:javelin_head_extruder_mold', 17, material)
+			processToolHead(TFGTagPrefix.toolHeadChisel, 'tfg:chisel_head_extruder_mold', 18, material)
+			processToolHead(TFGTagPrefix.toolHeadMace, 'tfg:mace_head_extruder_mold', 19, material)
+			processToolHead(TFGTagPrefix.toolHeadMattock, 'tfg:mattock_head_extruder_mold', 20, material)
+			processToolHead(TFGTagPrefix.toolHeadHook, 'tfg:fish_hook_extruder_mold', 21, material)
 		}
 
 		if (ingotProperty != null) {
