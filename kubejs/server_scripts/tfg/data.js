@@ -123,10 +123,9 @@ const registerTFGFoodData = (event) => {
 		food.hunger(6)
 		food.saturation(4)
 		food.decayModifier(4.5)
-		food.grain(0.5)
-		food.fruit(0.5)
-		food.vegetables(1)
-		food.protein(1)
+		food.grain(0.1)
+		food.vegetables(0.2)
+		food.protein(0.2)
 	})
 
 	event.foodItem('tfg:food/meal_bag', food => {
@@ -142,6 +141,19 @@ const registerTFGFoodData = (event) => {
 
 	event.foodItem('tfg:sunflower_product', food => {
 		food.decayModifier(0.5)
+	})
+
+	event.foodItem('tfg:food/raw_moon_rabbit', food => {
+		food.hunger(4)
+		food.protein(2.0)
+		food.decayModifier(3)
+	})
+
+	event.foodItem('tfg:food/cooked_moon_rabbit', food => {
+		food.hunger(6)
+		food.saturation(2.5)
+		food.protein(5)
+		food.decayModifier(2.25)
 	})
 }
 

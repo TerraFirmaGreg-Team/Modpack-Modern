@@ -368,7 +368,7 @@ function registerTFGFoodRecipes(event) {
 	global.FOOD_FRUIT.forEach(fruit => {
 		processorRecipeText(`${fruit.name}/drying`, 100, 120, "tfg.food_recipe.freeze_drying", {
 			circuit: 7,
-			itemInputs: [fruit.id, '#tfg:foil_packs', 'tfg:dry_ice'],
+			itemInputs: [fruit.id, 'tfg:foil_pack', 'tfg:dry_ice'],
 			itemOutputs: [`tfg:food/freeze_dried/${fruit.name}`],
 			itemOutputProvider: TFC.isp.of(`tfg:food/freeze_dried/${fruit.name}`).copyOldestFood().removeTrait('firmalife:dried').addTrait('tfg:freeze_dried')
 		})
@@ -380,7 +380,7 @@ function registerTFGFoodRecipes(event) {
 	//1 Input
 	processorRecipeText('meal_bag/1', 100, 120, "tfg.food_recipe.freeze_drying", {
 		circuit: 10,
-		itemInputs: ['1x #tfg:foods/usable_in_meal_bag', '2x #tfg:foil_packs', 'tfg:dry_ice'],
+		itemInputs: ['1x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
 		itemOutputs: ['2x tfg:food/meal_bag'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
 			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
@@ -391,7 +391,7 @@ function registerTFGFoodRecipes(event) {
 	//2 Input
 	processorRecipeText('meal_bag/2', 100, 120, "tfg.food_recipe.freeze_drying", {
 		circuit: 11,
-		itemInputs: ['2x #tfg:foods/usable_in_meal_bag', '2x #tfg:foil_packs', 'tfg:dry_ice'],
+		itemInputs: ['2x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
 		itemOutputs: ['2x tfg:food/meal_bag'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
 			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
@@ -402,7 +402,7 @@ function registerTFGFoodRecipes(event) {
 	//3 Input
 	processorRecipeText('meal_bag/3', 100, 120, "tfg.food_recipe.freeze_drying", {
 		circuit: 12,
-		itemInputs: ['3x #tfg:foods/usable_in_meal_bag', '2x #tfg:foil_packs', 'tfg:dry_ice'],
+		itemInputs: ['3x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
 		itemOutputs: ['2x tfg:food/meal_bag'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
 			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
@@ -413,7 +413,7 @@ function registerTFGFoodRecipes(event) {
 	//4 Input
 	processorRecipeText('meal_bag/4', 100, 120, "tfg.food_recipe.freeze_drying", {
 		circuit: 13,
-		itemInputs: ['4x #tfg:foods/usable_in_meal_bag', '2x #tfg:foil_packs', 'tfg:dry_ice'],
+		itemInputs: ['4x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
 		itemOutputs: ['2x tfg:food/meal_bag'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
 			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
@@ -424,7 +424,7 @@ function registerTFGFoodRecipes(event) {
 	//5 Input
 	processorRecipeText('meal_bag/5', 100, 120, "tfg.food_recipe.freeze_drying", {
 		circuit: 14,
-		itemInputs: ['5x #tfg:foods/usable_in_meal_bag', '2x #tfg:foil_packs', 'tfg:dry_ice'],
+		itemInputs: ['5x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
 		itemOutputs: ['2x tfg:food/meal_bag'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
 			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
@@ -507,7 +507,7 @@ function registerTFGFoodRecipes(event) {
 
 	processorRecipeText('calorie_paste', 100, 512, "tfg.food_recipe.freeze_drying", {
 		circuit: 8,
-		itemInputs: ['firmalife:food/soybean_paste', '#tfg:foil_packs', '2x gtceu:small_meat_dust', 'tfg:dry_ice'],
+		itemInputs: ['firmalife:food/soybean_paste', 'tfg:foil_pack', '2x gtceu:small_meat_dust', 'tfg:dry_ice'],
 		itemOutputs: ['tfg:food/calorie_paste'],
 		fluidInputs: [Fluid.of('gtceu:fermented_biomass', 40)],
 		itemOutputProvider: TFC.isp.of('tfg:food/calorie_paste').copyOldestFood().addTrait('tfg:freeze_dried'),
@@ -752,6 +752,9 @@ function registerTFGFoodRecipes(event) {
 
 	event.recipes.tfc.heating('tfg:sunflower_product', 200)
 	 	.resultItem(TFC.isp.of('tfg:roasted_sunflower_seeds').copyFood())
+
+	event.recipes.tfc.heating('tfg:food/raw_moon_rabbit', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_moon_rabbit').copyFood())
 
 	//#endregion
 

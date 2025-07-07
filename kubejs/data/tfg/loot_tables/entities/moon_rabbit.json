@@ -7,7 +7,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "tfc:food/rabbit",
+					"name": "tfg:food/raw_moon_rabbit",
 					"conditions": [
 						{
 							"condition": "tfc:not_predated"
