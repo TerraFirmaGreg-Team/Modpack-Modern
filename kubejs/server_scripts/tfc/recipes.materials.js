@@ -581,8 +581,6 @@ function registerTFCMaterialsRecipes(event) {
 						.id(`tfc:anvil/${material.getName()}_spring`)
 				}
 
-				event.remove({ id: `gtceu:shaped/spring_${material.getName()}` })
-
 				// Small spring
 				let smallSpringItem = ChemicalHelper.get(TagPrefix.springSmall, material, 1)
 				if (!smallSpringItem.isEmpty() && !rodItem.isEmpty()) {
@@ -596,7 +594,6 @@ function registerTFCMaterialsRecipes(event) {
 						.id(`tfc:anvil/${material.getName()}_small_spring`)
 				}
 
-				event.remove({ id: `gtceu:shaped/spring_small_${material.getName()}` })
 			}
 
 			// Tools (From Ingot)

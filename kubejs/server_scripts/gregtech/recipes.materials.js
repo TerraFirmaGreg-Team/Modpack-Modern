@@ -971,6 +971,37 @@ function registerGTCEUMetalRecipes(event) {
 		event.remove({ id: `gtceu:shaped/buzzsaw_blade_${material.getName()}` })
 	}
 
+	const removePowerToolRecycling = (material) => {
+		removeMaceratorRecipe(`macerate_lv_${material.getName()}_wrench`)
+		event.remove({ id: `gtceu:arc_furnace/arc_lv_${material.getName()}_wrench` })
+		removeMaceratorRecipe(`macerate_hv_${material.getName()}_wrench`)
+		event.remove({ id: `gtceu:arc_furnace/arc_hv_${material.getName()}_wrench` })
+		removeMaceratorRecipe(`macerate_iv_${material.getName()}_wrench`)
+		event.remove({ id: `gtceu:arc_furnace/arc_iv_${material.getName()}_wrench` })
+		removeMaceratorRecipe(`macerate_lv_${material.getName()}_chainsaw`)
+		event.remove({ id: `gtceu:arc_furnace/arc_lv_${material.getName()}_chainsaw` })
+		removeMaceratorRecipe(`macerate_lv_${material.getName()}_buzzsaw`)
+		event.remove({ id: `gtceu:arc_furnace/arc_lv_${material.getName()}_buzzsaw` })
+		removeMaceratorRecipe(`macerate_lv_${material.getName()}_drill`)
+		event.remove({ id: `gtceu:arc_furnace/arc_lv_${material.getName()}_drill` })
+		removeMaceratorRecipe(`macerate_mv_${material.getName()}_drill`)
+		event.remove({ id: `gtceu:arc_furnace/arc_mv_${material.getName()}_drill` })
+		removeMaceratorRecipe(`macerate_hv_${material.getName()}_drill`)
+		event.remove({ id: `gtceu:arc_furnace/arc_hv_${material.getName()}_drill` })
+		removeMaceratorRecipe(`macerate_ev_${material.getName()}_drill`)
+		event.remove({ id: `gtceu:arc_furnace/arc_ev_${material.getName()}_drill` })
+		removeMaceratorRecipe(`macerate_iv_${material.getName()}_drill`)
+		event.remove({ id: `gtceu:arc_furnace/arc_iv_${material.getName()}_drill` })
+		removeMaceratorRecipe(`macerate_lv_${material.getName()}_screwdriver`)
+		event.remove({ id: `gtceu:arc_furnace/arc_lv_${material.getName()}_screwdriver` })
+		removeMaceratorRecipe(`macerate_lv_${material.getName()}_wirecutter`)
+		event.remove({ id: `gtceu:arc_furnace/arc_lv_${material.getName()}_wirecutter` })
+		removeMaceratorRecipe(`macerate_hv_${material.getName()}_wirecutter`)
+		event.remove({ id: `gtceu:arc_furnace/arc_hv_${material.getName()}_wirecutter` })
+		removeMaceratorRecipe(`macerate_iv_${material.getName()}_wirecutter`)
+		event.remove({ id: `gtceu:arc_furnace/arc_iv_${material.getName()}_wirecutter` })
+	}
+
 	forEachMaterial(material => {
 		const toolProperty = material.getProperty(PropertyKey.TOOL)
 		const ingotProperty = material.getProperty(PropertyKey.INGOT)
@@ -1002,6 +1033,8 @@ function registerGTCEUMetalRecipes(event) {
 			processToolHead(TFGTagPrefix.toolHeadMace, 'tfg:mace_head_extruder_mold', circuit++, material)
 			processToolHead(TFGTagPrefix.toolHeadMattock, 'tfg:mattock_head_extruder_mold', circuit++, material)
 			processToolHead(TFGTagPrefix.toolHeadHook, 'tfg:fish_hook_extruder_mold', circuit++, material)
+
+			removePowerToolRecycling(material)
 		}
 
 		if (ingotProperty != null) {
@@ -1020,6 +1053,9 @@ function registerGTCEUMetalRecipes(event) {
 			processBell(material)
 			processBars(material)
 			processBuzzsawBlade(material)
+
+			event.remove({ id: `gtceu:shaped/spring_${material.getName()}` })
+			event.remove({ id: `gtceu:shaped/spring_small_${material.getName()}` })
 		}
 
 		if (oreProperty != null) {
