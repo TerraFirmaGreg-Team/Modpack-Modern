@@ -270,6 +270,10 @@ const registerTFCItemTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
 
+	global.TFC_HIDDEN_ITEMS.forEach(item => {
+		event.add('c:hidden_from_recipe_viewers', item)
+	})
+
 	// Удаление тегов у руд
 	event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
 
