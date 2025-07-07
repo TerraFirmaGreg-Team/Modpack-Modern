@@ -2829,7 +2829,7 @@
             ]
         },
         {
-            "pakku_id": "ws9PkrwZV82vo1QC",
+            "pakku_id": "U8mK2RxRhX8a6XEE",
             "type": "MOD",
             "slug": {
                 "curseforge": "domum-ornamentum"
@@ -2843,25 +2843,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "domum_ornamentum-1.20.1-1.0.285-snapshot-universal.jar",
+                    "file_name": "domum_ornamentum-1.20.1-1.0.290-snapshot-universal.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6335/390/domum_ornamentum-1.20.1-1.0.285-snapshot-universal.jar",
-                    "id": "6335390",
+                    "url": "https://edge.forgecdn.net/files/6721/676/domum_ornamentum-1.20.1-1.0.290-snapshot-universal.jar",
+                    "id": "6721676",
                     "parent_id": "527361",
                     "hashes": {
-                        "sha1": "c7ac72b2e4fb5309e3cd0988b610c2f3016b9cb9",
-                        "md5": "65cda7180bfc67f9a2bf9ee6965bf3e7"
+                        "sha1": "040a8e565583ce3bf8829e32204e7a3681f1ab10",
+                        "md5": "1f1d44d1e4ae3a8e1314ca1dad965529"
                     },
                     "required_dependencies": [],
-                    "size": 1096466,
-                    "date_published": "2025-03-23T13:32:07.977Z"
+                    "size": 1140819,
+                    "date_published": "2025-07-02T15:56:45.437Z"
                 }
             ]
         },
