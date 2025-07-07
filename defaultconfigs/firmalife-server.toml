@@ -30,7 +30,7 @@
 	#Range: > 1
 	ovenCureTemperature = 600
 	#If true, ovens will hurt the player if they touch it without a peel in hand.
-	ovenRequirePeel = true
+	ovenRequirePeel = false
 	#The chance for fuel burning in an oven to drop an ash block into an ashtray.
 	#Range: 0.0 ~ 1.0
 	ovenAshChance = 0.5
@@ -63,7 +63,7 @@
 	#Range: 1 ~ 128
 	cellarRadius = 15
 	#If true, the tumbler and the pumping station work magically with a redstone signal and no power required.
-	mechanicalPowerCheatMode = false
+	mechanicalPowerCheatMode = true
 
 [foodTraits]
 	#The modifier for the 'Dried' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.

@@ -419,6 +419,27 @@ const registerFirmaLifeRecipes = (event) => {
 
 	//#endregion
 
+	event.shaped('2x firmalife:sweeper', [
+		'ABD',
+		'CB '
+	], {
+		A: '#forge:saw_heads/steel',
+		B: '#forge:rods/steel',
+		C: 'vintageimprovements:redstone_module',
+		D: '#forge:tools/wrenches'
+	}).id('firmalife:crafting/sweeper')
+
+	event.shaped('2x firmalife:picker', [
+		'ABD',
+		'CC ',
+		'CC '
+	], {
+		A: '#forge:plates/steel',
+		B: 'vintageimprovements:redstone_module',
+		C: '#forge:rods/steel',
+		D: '#forge:tools/wrenches'
+	}).id('firmalife:crafting/picker')
+
 	//#endregion
 
 	//#region Укрепленное стекло
