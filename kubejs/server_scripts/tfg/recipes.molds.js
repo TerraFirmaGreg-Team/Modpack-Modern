@@ -262,6 +262,16 @@ function registerTFGMoldRecipes(event) {
 		h: '#forge:tools/hammers'
 	})
 
+	event.shaped('tfg:wire_cutter_head_extruder_mold', [
+		'  ',
+		'hS ',
+		'f  '
+	], {
+		S: 'gtceu:empty_mold',
+		f: '#forge:tools/files',
+		h: '#forge:tools/hammers'
+	})
+
 	let steelIngots = ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 4);
 	let steelDusts = ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 4);
 
