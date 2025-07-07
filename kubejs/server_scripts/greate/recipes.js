@@ -575,13 +575,20 @@ function registerGreateRecipes(event) {
 		D: '#forge:rods/long/steel'
 	}).id('gtceu:shaped/steel_whisk')
 
-	event.recipes.gtceu.assembler('greate:steel_whisk')
+	event.recipes.gtceu.assembler('gtceu:steel_whisk')
 		.itemInputs('#forge:rings/steel', '4x #forge:rods/long/steel')
-		.itemOutputs('greate:steel_whisk')
+		.itemOutputs('gtceu:steel_whisk')
 		.circuit(2)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	event.recipes.gtceu.extruder('gtceu:steel_whisk')
+		.itemInputs('4x #forge:ingots/steel')
+		.notConsumable('tfg:whisk_extruder_mold')
+		.itemOutputs('gtceu:steel_whisk')
+		.duration(GTMaterials.Steel.getMass() * 3)
+		.EUt(GTValues.VA[GTValues.MV])
+	
 	event.shaped('gtceu:aluminium_whisk', [
 		'ABC',
 		'D D',
@@ -593,13 +600,20 @@ function registerGreateRecipes(event) {
 		D: '#forge:rods/long/aluminium'
 	}).id('gtceu:shaped/aluminium_whisk')
 
-	event.recipes.gtceu.assembler('greate:aluminium_whisk')
+	event.recipes.gtceu.assembler('gtceu:aluminium_whisk')
 		.itemInputs('#forge:rings/aluminium', '4x #forge:rods/long/aluminium')
-		.itemOutputs('greate:aluminium_whisk')
+		.itemOutputs('gtceu:aluminium_whisk')
 		.circuit(2)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	event.recipes.gtceu.extruder('gtceu:aluminium_whisk')
+		.itemInputs('4x #forge:ingots/aluminium')
+		.notConsumable('tfg:whisk_extruder_mold')
+		.itemOutputs('gtceu:aluminium_whisk')
+		.duration(GTMaterials.Aluminium.getMass() * 3)
+		.EUt(GTValues.VA[GTValues.MV])
+	
 	event.shaped('gtceu:stainless_steel_whisk', [
 		'ABC',
 		'D D',
@@ -611,13 +625,20 @@ function registerGreateRecipes(event) {
 		D: '#forge:rods/long/stainless_steel'
 	}).id('gtceu:shaped/stainless_steel_whisk')
 
-	event.recipes.gtceu.assembler('greate:stainless_steel_whisk')
+	event.recipes.gtceu.assembler('gtceu:stainless_steel_whisk')
 		.itemInputs('#forge:rings/stainless_steel', '4x #forge:rods/long/stainless_steel')
-		.itemOutputs('greate:stainless_steel_whisk')
+		.itemOutputs('gtceu:stainless_steel_whisk')
 		.circuit(2)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	event.recipes.gtceu.extruder('gtceu:stainless_steel_whisk')
+		.itemInputs('4x #forge:ingots/stainless_steel')
+		.notConsumable('tfg:whisk_extruder_mold')
+		.itemOutputs('gtceu:stainless_steel_whisk')
+		.duration(GTMaterials.StainlessSteel.getMass() * 3)
+		.EUt(GTValues.VA[GTValues.MV])
+	
 	event.shaped('gtceu:titanium_whisk', [
 		'ABC',
 		'D D',
@@ -629,11 +650,18 @@ function registerGreateRecipes(event) {
 		D: '#forge:rods/long/titanium'
 	}).id('gtceu:shaped/titanium_whisk')
 
-	event.recipes.gtceu.assembler('greate:titanium_whisk')
+	event.recipes.gtceu.assembler('gtceu:titanium_whisk')
 		.itemInputs('#forge:rings/titanium', '4x #forge:rods/long/titanium')
-		.itemOutputs('greate:titanium_whisk')
+		.itemOutputs('gtceu:titanium_whisk')
 		.circuit(2)
 		.duration(50)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.extruder('gtceu:titanium_whisk')
+		.itemInputs('4x #forge:ingots/titanium')
+		.notConsumable('tfg:whisk_extruder_mold')
+		.itemOutputs('gtceu:titanium_whisk')
+		.duration(GTMaterials.Titanium.getMass() * 3)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	// #endregion
