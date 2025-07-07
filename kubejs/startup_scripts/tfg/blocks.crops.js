@@ -30,6 +30,7 @@ const registerTFGCrops = (event) => {
         .seeds('tfg:sunflower_seeds')
         .hardness(0.2)
         .tagBoth('tfc:wild_crops')
+        .tagItem('c:hidden_from_recipe_viewers')
 
     event.create('tfg:rapeseed', 'tfc:double_crop')
         .translationKey('block.tfg.rapeseed')
@@ -57,4 +58,5 @@ const registerTFGCrops = (event) => {
         .seeds('tfg:rapeseed_seeds')
         .hardness(0.2)
         .tagBoth('tfc:wild_crops')
+        .tagItem('c:hidden_from_recipe_viewers')
 }
