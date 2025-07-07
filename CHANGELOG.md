@@ -9,7 +9,7 @@
 - New machines to properly automate food, along with proper compatibility between machines and TFC's food system, so you can't turn rotten grains into fresh bread any more. The electric greenhouse now also always outputs fresh food. @ofoxsmith & @Redeix
 - New electric refrigerator with different tiers. You can craft the old one into this new one, but please take your food out of it before upgrading otherwise it will be lost! @ofoxsmith
 - Added many new advanced food items including freeze-dried fruit, calorie paste, and meal bags. @Redeix
-- Quest updates for all of the above @TomPlop @Redeix
+- Quest updates for all of the above @TomPlop @Redeix @Pyritie
 - Main UI overhaul and curseforge branding updated @Redeix
 - Added sunflowers and rapeseed to make Bio Diesel viable (#1248) @34y34y34y34y34y34y34y34y34y @Redeix
 - Create 6 update! @AirRice @aidie8
@@ -42,6 +42,9 @@
 - Added a recipe to craft Glow Ink Sacs @BlueBoat29
 - New bedrock ore veins on the moon! Much better sources of infinite materials than stone dusts. @TomPlop
 - Overhaul of the ore processing quest chapter @Pyritie
+- Nanosuit and Quarktech armor have actual armor values now @Pyritie
+- Firmalife greenhouses can now be totally automated with the new Sweeper and Picker! Just add redstone @eerussianguy
+- Vats can now be opened and closed via redstone @eerussianguy
 ### Bug fixes
 - Fixed a mud hut structure that had deprecated zinc ingots @Pyritie
 - The electric greenhouse now also allows loose rocks and plants inside, since TFC spawns them on any grass block @Pyritie
@@ -51,8 +54,8 @@
 - Fixed some other steel/colored steel items being extractable in LV (#1212) @Pyritie
 - Fixed polished/cut migmatite recipe conflict (#1153) @JeanRdSz
 - Fixed some bugs with the lunchbox (#1200) @Thomasx0
-- Greate millstones/crushing wheels now give the correct amount of byproducts
-- Greate bulk washing now correctly works on depots and belts
+- Greate millstones/crushing wheels now give the correct amount of byproducts @Electrolyte220
+- Greate bulk washing now correctly works on depots and belts @Electrolyte220
 ### Translations
 - Ukranian @MetenBouldry
 - Brazilian Portuguese @gifpxto & @lemonpillow5
