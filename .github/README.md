@@ -65,6 +65,7 @@ Want to help translate? Please read [this](../kubejs/README%20IF%20TRANSLATING.m
 ### External Credits
 - WithersChat from the Monifactory team for the universal circuit textures
 - GregTech Community Pack Modern for most of their quest text
+- Better End for some assets
 
 <!-- Links: -->
 [TerraFirmaCraft]: https://www.curseforge.com/minecraft/mc-mods/terrafirmacraft
