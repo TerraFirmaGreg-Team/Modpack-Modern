@@ -577,6 +577,33 @@ global.TFC_DISABLED_ITEMS = [
     'tfc:bucket/metal/red_steel'
 ];
 
+// Items that need to be hidden, but you want to keep their tags.
+global.TFC_HIDDEN_ITEMS = [
+    'tfc:wild_crop/papyrus', 
+    'tfc:wild_crop/pumpkin', 
+    'tfc:wild_crop/melon', 
+    'tfc:wild_crop/red_bell_pepper', 
+    'tfc:wild_crop/yellow_bell_pepper', 
+    'tfc:wild_crop/barley', 
+    'tfc:wild_crop/oat', 
+    'tfc:wild_crop/rye', 
+    'tfc:wild_crop/maize', 
+    'tfc:wild_crop/wheat', 
+    'tfc:wild_crop/rice', 
+    'tfc:wild_crop/beet', 
+    'tfc:wild_crop/cabbage', 
+    'tfc:wild_crop/carrot', 
+    'tfc:wild_crop/garlic', 
+    'tfc:wild_crop/green_bean', 
+    'tfc:wild_crop/potato', 
+    'tfc:wild_crop/onion', 
+    'tfc:wild_crop/soybean', 
+    'tfc:wild_crop/squash', 
+    'tfc:wild_crop/sugarcane', 
+    'tfc:wild_crop/tomato', 
+    'tfc:wild_crop/jute'
+];
+
 /**
  * Хранит список всех имен типов камней в TFC.
  */
