@@ -108,6 +108,18 @@ global.GTCEU_DISABLED_ITEMS = [
 
     'gtceu:compressed_clay',
 
+    'gtceu:damascus_steel_nugget',
+    'gtceu:damascus_steel_ingot',
+    'gtceu:damascus_steel_block',
+    'gtceu:damascus_steel_plate',
+    'gtceu:damascus_steel_bolt',
+    'gtceu:damascus_steel_screw',
+    'gtceu:damascus_steel_rod',
+    'gtceu:long_damascus_steel_rod',
+    'gtceu:damascus_steel_dust',
+    'gtceu:small_damascus_steel_dust',
+    'gtceu:tiny_damascus_steel_dust',
+
     // Sculk
     'gtceu:tiny_echo_shard_dust',
     'gtceu:small_echo_shard_dust',
