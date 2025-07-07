@@ -176,7 +176,11 @@ global.TFG_EXTRUDER_MOLDS = [
     'tfg:javelin_head_extruder_mold',
     'tfg:chisel_head_extruder_mold',
     'tfg:mace_head_extruder_mold',
-    'tfg:mattock_head_extruder_mold'
+    'tfg:mattock_head_extruder_mold',
+    'tfg:fish_hook_extruder_mold',
+    'tfg:whisk_extruder_mold',
+    'tfg:screwdriver_tip_extruder_mold',
+    'tfg:wrench_tip_extruder_mold'
 ];
 
 global.TFG_CASTING_MOLDS = [
