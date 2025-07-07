@@ -3126,7 +3126,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "entityculling-forge-1.8.0-mc1.20.1.jar",
+                    "file_name": "entityculling-forge-1.8.1-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3134,16 +3134,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6675/248/entityculling-forge-1.8.0-mc1.20.1.jar",
-                    "id": "6675248",
+                    "url": "https://edge.forgecdn.net/files/6734/976/entityculling-forge-1.8.1-mc1.20.1.jar",
+                    "id": "6734976",
                     "parent_id": "448233",
                     "hashes": {
-                        "sha1": "5ed709ff70c392fc3015101ac1694016c0654eea",
-                        "md5": "0df6cfc2e9e291d19f2fae11b447d29e"
+                        "sha1": "17141fc841d712091a3f2bcc1ed0c2ab2be03819",
+                        "md5": "300be80745ee385c79264379fa4c9e6c"
                     },
                     "required_dependencies": [],
-                    "size": 472668,
-                    "date_published": "2025-06-20T15:45:23.413Z"
+                    "size": 477566,
+                    "date_published": "2025-07-05T23:08:24.603Z"
                 }
             ]
         },
@@ -3199,7 +3199,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "everycomp-1.20-2.8.10-forge.jar",
+                    "file_name": "everycomp-1.20-2.8.11-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3207,18 +3207,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6699/438/everycomp-1.20-2.8.10-forge.jar",
-                    "id": "6699438",
+                    "url": "https://edge.forgecdn.net/files/6734/328/everycomp-1.20-2.8.11-forge.jar",
+                    "id": "6734328",
                     "parent_id": "628539",
                     "hashes": {
-                        "sha1": "82515a727878c6fb69e27c2f4fe6609adce0d21f",
-                        "md5": "657618c8e94777ab230fa198171e2299"
+                        "sha1": "f4cd311366b751c260afef8bbf60a1629e040632",
+                        "md5": "715e5709c95d01c4d5c47ef4d1c4fa9b"
                     },
                     "required_dependencies": [
                         "499980"
                     ],
-                    "size": 2725198,
-                    "date_published": "2025-06-26T21:41:19.990Z"
+                    "size": 2751317,
+                    "date_published": "2025-07-05T19:27:09.543Z"
                 }
             ]
         },
@@ -4157,7 +4157,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "firstperson-forge-2.4.9-mc1.20.1.jar",
+                    "file_name": "firstperson-forge-2.5.0-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4165,18 +4165,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6356/575/firstperson-forge-2.4.9-mc1.20.1.jar",
-                    "id": "6356575",
+                    "url": "https://edge.forgecdn.net/files/6733/387/firstperson-forge-2.5.0-mc1.20.1.jar",
+                    "id": "6733387",
                     "parent_id": "333287",
                     "hashes": {
-                        "sha1": "b7e05fb6072e8b39512ce0485186cfc9751bf2ee",
-                        "md5": "10ef2db76496d99760bc02a0b8edf4fc"
+                        "sha1": "58280ce1c376420ee138d99c5a7c8c5f5de315c3",
+                        "md5": "bd5b3e7464a42660131d5934f7c24aac"
                     },
                     "required_dependencies": [
                         "433760"
                     ],
-                    "size": 127349,
-                    "date_published": "2025-03-27T18:13:26.607Z"
+                    "size": 519546,
+                    "date_published": "2025-07-05T14:28:10.673Z"
                 }
             ]
         },
@@ -8449,7 +8449,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaCraft-Forge-1.20.1-3.2.15.jar",
+                    "file_name": "TerraFirmaCraft-Forge-1.20.1-3.2.16.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8458,18 +8458,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6656/48/TerraFirmaCraft-Forge-1.20.1-3.2.15.jar",
-                    "id": "6656048",
+                    "url": "https://edge.forgecdn.net/files/6739/107/TerraFirmaCraft-Forge-1.20.1-3.2.16.jar",
+                    "id": "6739107",
                     "parent_id": "302973",
                     "hashes": {
-                        "sha1": "259142aff0520d8ef4096a07ca7a097426fffc2c",
-                        "md5": "b43c87813350666fd6b8c4a8413ada2f"
+                        "sha1": "c87cab744f1e6e17cbe7fa596f3566ac5d904270",
+                        "md5": "ac46fb177d94e9729c0fa4e7c116dedd"
                     },
                     "required_dependencies": [
                         "306770"
                     ],
-                    "size": 49673516,
-                    "date_published": "2025-06-15T23:51:55.120Z"
+                    "size": 47450381,
+                    "date_published": "2025-07-06T22:20:34.050Z"
                 }
             ]
         },
