@@ -676,7 +676,7 @@ const registerAdAstraRecipes = (event) => {
 			{ count: 4, ingredient: { item: "minecraft:glowstone_dust" }},
 			{ count: 1, ingredient: { item: "ad_astra:launch_pad" }}
 		],
-		structure: "tfg:space_station/earth_orbit"
+		structure: "tfg:orbit/space_station"
 	})
 
 	event.custom({
@@ -688,7 +688,7 @@ const registerAdAstraRecipes = (event) => {
 			{ count: 4, ingredient: { item: "minecraft:glowstone_dust" }},
 			{ count: 1, ingredient: { item: "ad_astra:launch_pad" }}
 		],
-		structure: "tfg:space_station/moon_orbit"
+		structure: "tfg:orbit/space_station"
 	})
 
 	//#endregion

@@ -14,7 +14,6 @@ ServerEvents.tags('item', event => {
 	registerBeneathItemTags(event)
 	registerBetterEndItemTags(event)
 	registerChalkItemTags(event);
-	registerChiselAndBitsItemTags(event)
 	registerComputerCraftItemTags(event)
 	registerConstructionWandItemTags(event)
 	registerCreateItemTags(event)
@@ -60,7 +59,6 @@ ServerEvents.tags('block', event => {
 	registerAFCBlockTags(event)
 	registerAsticorCartsBlockTags(event)
 	registerBeneathBlockTags(event)
-	registerChiselAndBitsBlockTags(event)
 	registerComputerCraftBlockTags(event)
 	registerCreateBlockTags(event)
 	registerCreateAdditionsBlockTags(event)
@@ -203,7 +201,6 @@ ServerEvents.recipes(event => {
 	registerBetterEndRecipes(event)
 	registerBuildingGadgetsRecipes(event)
 	registerChalkRecipes(event);
-	registerChiselAndBitsRecipes(event)
 	registerComfortsRecipes(event);
 	registerComputerCraftRecipes(event)
 	//registerCccBridgeRecipes(event)
@@ -214,6 +211,7 @@ ServerEvents.recipes(event => {
 	registerCreatedecoRecipes(event)
 	registerCreateFactoryLogisticsRecipes(event)
 	registerCreateHorsePowerBlockRecipes(event)
+	registerCreateHypertubeRecipes(event)
 	registerDiggerHelmetRecipes(event)
 	registerDomumOrnamentumRecipes(event)
 	registerEndermanOverhaulRecipes(event)

@@ -802,7 +802,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "BadOptimizations-2.2.3-1.20.1.jar",
+                    "file_name": "BadOptimizations-2.3.0-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -811,16 +811,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6673/591/BadOptimizations-2.2.3-1.20.1.jar",
-                    "id": "6673591",
+                    "url": "https://edge.forgecdn.net/files/6742/958/BadOptimizations-2.3.0-1.20.1.jar",
+                    "id": "6742958",
                     "parent_id": "949555",
                     "hashes": {
-                        "sha1": "357d2055c510440cdf11cc3102bbcb503a54cac6",
-                        "md5": "99239dd6e45c3911b4e97713b0d2da07"
+                        "sha1": "b86ce6a5ed4f71a13f6d2976ffe6471cef29beb7",
+                        "md5": "6ccd8c56680f6bc7928273eae5d66da6"
                     },
                     "required_dependencies": [],
-                    "size": 440404,
-                    "date_published": "2025-06-20T03:05:38.207Z"
+                    "size": 452304,
+                    "date_published": "2025-07-08T01:49:43.307Z"
                 }
             ]
         },
@@ -2370,6 +2370,48 @@
             ]
         },
         {
+            "pakku_id": "pCeI0LXh7ieTrU8V",
+            "pakku_links": [
+                "0r9Ghrm3IbrHUVzA"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "hypertubes"
+            },
+            "name": {
+                "curseforge": "Create: Hypertubes"
+            },
+            "id": {
+                "curseforge": "1281336"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "create_hypertube-0.2.2-FORGE.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6721/285/create_hypertube-0.2.2-FORGE.jar",
+                    "id": "6721285",
+                    "parent_id": "1281336",
+                    "hashes": {
+                        "sha1": "d162b8a797883b100d1e04f19ce8c0c12e0c1f11",
+                        "md5": "e1776892a5897e2cb5361dfcc76049e6"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 299727,
+                    "date_published": "2025-07-02T14:17:53.393Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "PlkjJZdydA94ByHb",
             "type": "RESOURCE_PACK",
             "slug": {
@@ -2710,7 +2752,7 @@
         {
             "pakku_id": "SG15bUHPcW2KqNGd",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "detected-setblock-be-gone"
             },
@@ -2829,7 +2871,7 @@
             ]
         },
         {
-            "pakku_id": "ws9PkrwZV82vo1QC",
+            "pakku_id": "U8mK2RxRhX8a6XEE",
             "type": "MOD",
             "slug": {
                 "curseforge": "domum-ornamentum"
@@ -2843,25 +2885,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "domum_ornamentum-1.20.1-1.0.285-snapshot-universal.jar",
+                    "file_name": "domum_ornamentum-1.20.1-1.0.290-snapshot-universal.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6335/390/domum_ornamentum-1.20.1-1.0.285-snapshot-universal.jar",
-                    "id": "6335390",
+                    "url": "https://edge.forgecdn.net/files/6721/676/domum_ornamentum-1.20.1-1.0.290-snapshot-universal.jar",
+                    "id": "6721676",
                     "parent_id": "527361",
                     "hashes": {
-                        "sha1": "c7ac72b2e4fb5309e3cd0988b610c2f3016b9cb9",
-                        "md5": "65cda7180bfc67f9a2bf9ee6965bf3e7"
+                        "sha1": "040a8e565583ce3bf8829e32204e7a3681f1ab10",
+                        "md5": "1f1d44d1e4ae3a8e1314ca1dad965529"
                     },
                     "required_dependencies": [],
-                    "size": 1096466,
-                    "date_published": "2025-03-23T13:32:07.977Z"
+                    "size": 1140819,
+                    "date_published": "2025-07-02T15:56:45.437Z"
                 }
             ]
         },
@@ -3199,7 +3240,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "everycomp-1.20-2.8.11-forge.jar",
+                    "file_name": "everycomp-1.20-2.8.12-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3207,18 +3248,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6734/328/everycomp-1.20-2.8.11-forge.jar",
-                    "id": "6734328",
+                    "url": "https://edge.forgecdn.net/files/6740/51/everycomp-1.20-2.8.12-forge.jar",
+                    "id": "6740051",
                     "parent_id": "628539",
                     "hashes": {
-                        "sha1": "f4cd311366b751c260afef8bbf60a1629e040632",
-                        "md5": "715e5709c95d01c4d5c47ef4d1c4fa9b"
+                        "sha1": "018be48ad689e61fc14ad0bf54692a5b33f8f8ec",
+                        "md5": "b527208c0b890e7b3ac048b753420e39"
                     },
                     "required_dependencies": [
                         "499980"
                     ],
-                    "size": 2751317,
-                    "date_published": "2025-07-05T19:27:09.543Z"
+                    "size": 2750134,
+                    "date_published": "2025-07-07T07:20:06.753Z"
                 }
             ]
         },
@@ -4113,7 +4154,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Firmalife-1.20.1-2.1.19.jar",
+                    "file_name": "Firmalife-1.20.1-2.1.21.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4122,18 +4163,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6539/645/Firmalife-1.20.1-2.1.19.jar",
-                    "id": "6539645",
+                    "url": "https://edge.forgecdn.net/files/6742/946/Firmalife-1.20.1-2.1.21.jar",
+                    "id": "6742946",
                     "parent_id": "453394",
                     "hashes": {
-                        "sha1": "10a33eb2e568207ade545676ea744cb6b429d8cf",
-                        "md5": "f84e578a7cc607a70c33ed1972e55767"
+                        "sha1": "eb8493c32134d58bb63d85fb7664fe10556628f0",
+                        "md5": "e2acee0939ae270dfabe0ca45f3cacb6"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 4601850,
-                    "date_published": "2025-05-17T16:15:39.383Z"
+                    "size": 4628505,
+                    "date_published": "2025-07-08T01:40:49.807Z"
                 }
             ]
         },
@@ -4784,7 +4825,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "immersive_aircraft-1.2.2+1.20.1-forge.jar",
+                    "file_name": "immersive_aircraft-1.3.3+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4792,16 +4833,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6316/345/immersive_aircraft-1.2.2+1.20.1-forge.jar",
-                    "id": "6316345",
+                    "url": "https://edge.forgecdn.net/files/6742/170/immersive_aircraft-1.3.3+1.20.1-forge.jar",
+                    "id": "6742170",
                     "parent_id": "666014",
                     "hashes": {
-                        "sha1": "5f1c9fb4a9825557a951bd5f97465fe44fc01df7",
-                        "md5": "18fa516980439d1b7f4fd1d3a68334f8"
+                        "sha1": "0749b5c005eafdcf5c8a19760c5c64b3cb021633",
+                        "md5": "4460fa3fa7959a5960c5379578773291"
                     },
                     "required_dependencies": [],
-                    "size": 2180392,
-                    "date_published": "2025-03-17T18:06:57.950Z"
+                    "size": 2391382,
+                    "date_published": "2025-07-07T20:39:55.963Z"
                 }
             ]
         },
@@ -5852,7 +5893,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "moonlight-1.20-2.14.11-forge.jar",
+                    "file_name": "moonlight-1.20-2.14.13-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5861,16 +5902,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6693/288/moonlight-1.20-2.14.11-forge.jar",
-                    "id": "6693288",
+                    "url": "https://edge.forgecdn.net/files/6740/431/moonlight-1.20-2.14.13-forge.jar",
+                    "id": "6740431",
                     "parent_id": "499980",
                     "hashes": {
-                        "sha1": "b95207f0440e6947a7e97a0d6ddb39d04e489d7f",
-                        "md5": "ff5ad502d3b76d59eab710c2808eef1b"
+                        "sha1": "845e93a836bbb0ed087d363d32b64cad131bcfc4",
+                        "md5": "ebc46c08854f1b07cc30b9442dd5daaa"
                     },
                     "required_dependencies": [],
-                    "size": 1270442,
-                    "date_published": "2025-06-25T05:13:07.137Z"
+                    "size": 1272670,
+                    "date_published": "2025-07-07T10:31:53.687Z"
                 }
             ]
         },
@@ -6198,7 +6239,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "notenoughanimations-forge-1.10.0-mc1.20.1.jar",
+                    "file_name": "notenoughanimations-forge-1.10.1-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6206,16 +6247,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": " https://edge.forgecdn.net/files/6688/512/notenoughanimations-forge-1.10.0-mc1.20.1.jar",
-                    "id": "6688512",
+                    "url": "https://edge.forgecdn.net/files/6738/627/notenoughanimations-forge-1.10.1-mc1.20.1.jar",
+                    "id": "6738627",
                     "parent_id": "433760",
                     "hashes": {
-                        "sha1": "4a2702f46248a9c629aa052e60676bc6b4623683",
-                        "md5": "f6e557ba7e253019d32c9fbfb85bbb45"
+                        "sha1": "ed3c4929d6bb08deebe7397b878cfbcb08172d71",
+                        "md5": "5cc3073b456e16eb9f67d61d865a8c3c"
                     },
                     "required_dependencies": [],
-                    "size": 453719,
-                    "date_published": "2025-03-27T17:09:31.037Z"
+                    "size": 847497,
+                    "date_published": "2025-07-06T19:38:28.650Z"
                 }
             ]
         },
@@ -6785,6 +6826,7 @@
             "id": {
                 "curseforge": "585406"
             },
+            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -7595,7 +7637,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Species-1.20.1-2.3-forge.jar",
+                    "file_name": "species-3.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7603,16 +7645,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6131/829/Species-1.20.1-2.3-forge.jar",
-                    "id": "6131829",
+                    "url": "https://edge.forgecdn.net/files/6736/993/species-3.3.jar",
+                    "id": "6736993",
                     "parent_id": "857737",
                     "hashes": {
-                        "sha1": "1bc4305fb83b28015461d63452a4a01cf5337dc3",
-                        "md5": "a3aef474219746f567b71fd4af0a74dd"
+                        "sha1": "7bcbdea144a75934da7d57879dc6c85c3aba18e8",
+                        "md5": "e9c5e75b517ac95595366ec0ef0fec15"
                     },
                     "required_dependencies": [],
-                    "size": 19593288,
-                    "date_published": "2025-01-27T22:01:14.603Z"
+                    "size": 42086433,
+                    "date_published": "2025-07-06T12:53:48.593Z"
                 }
             ]
         },

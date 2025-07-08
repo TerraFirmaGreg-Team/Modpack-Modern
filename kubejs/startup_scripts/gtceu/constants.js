@@ -108,6 +108,18 @@ global.GTCEU_DISABLED_ITEMS = [
 
     'gtceu:compressed_clay',
 
+    'gtceu:damascus_steel_nugget',
+    'gtceu:damascus_steel_ingot',
+    'gtceu:damascus_steel_block',
+    'gtceu:damascus_steel_plate',
+    'gtceu:damascus_steel_bolt',
+    'gtceu:damascus_steel_screw',
+    'gtceu:damascus_steel_rod',
+    'gtceu:long_damascus_steel_rod',
+    'gtceu:damascus_steel_dust',
+    'gtceu:small_damascus_steel_dust',
+    'gtceu:tiny_damascus_steel_dust',
+
     // Sculk
     'gtceu:tiny_echo_shard_dust',
     'gtceu:small_echo_shard_dust',
@@ -176,7 +188,12 @@ global.TFG_EXTRUDER_MOLDS = [
     'tfg:javelin_head_extruder_mold',
     'tfg:chisel_head_extruder_mold',
     'tfg:mace_head_extruder_mold',
-    'tfg:mattock_head_extruder_mold'
+    'tfg:mattock_head_extruder_mold',
+    'tfg:fish_hook_extruder_mold',
+    'tfg:whisk_extruder_mold',
+    'tfg:screwdriver_tip_extruder_mold',
+    'tfg:wrench_tip_extruder_mold',
+    'tfg:wire_cutter_head_extruder_mold'
 ];
 
 global.TFG_CASTING_MOLDS = [

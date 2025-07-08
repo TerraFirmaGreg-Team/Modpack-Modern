@@ -111,13 +111,31 @@
 				"type": "species:limpet",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "endermanoverhaul:windswept_hills_enderman",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 40
+			},
+			{
+				"type": "endermanoverhaul:end_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 2
+			},
+			{
+				"type": "endermanoverhaul:end_islands_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 2
+			},
+			{
+				"type": "endermanoverhaul:soulsand_valley_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 2
 			}
 		],
 		"underground_water_creature": [],
