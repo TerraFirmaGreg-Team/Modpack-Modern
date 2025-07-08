@@ -958,15 +958,26 @@ function registerGTCEUMetalRecipes(event) {
 
 	const processBuzzsawBlade = (material) => {
 		const buzzsawBladeItem = ChemicalHelper.get(TagPrefix.toolHeadBuzzSaw, material, 1)
-		const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 2)
+		const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
 		if (buzzsawBladeItem == null || doublePlateItem == null)
 			return;
+
+		var isLowTier = material == GTMaterials.CobaltBrass || material.hasProperty(TFGPropertyKey.TFC_PROPERTY)
 
 		event.recipes.gtceu.lathe(`buzzsaw_gear_${material.getName()}`)
 			.itemInputs(doublePlateItem)
 			.itemOutputs(buzzsawBladeItem)
 			.duration(material.getMass() * 6)
-			.EUt(GTValues.VA[GTValues.MV])
+			.EUt(GTValues.VA[isLowTier ? GTValues.LV : GTValues.MV])
+
+		if (isLowTier) {
+			event.custom({
+				type: 'vintageimprovements:turning',
+				ingredients: [doublePlateItem],
+				results: [buzzsawBladeItem],
+				processingTime: material.getMass() * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+			}).id(`tfg:vi/lathe/${material.getName()}_buzzsaw`)
+		}
 
 		event.remove({ id: `gtceu:shaped/buzzsaw_blade_${material.getName()}` })
 	}
