@@ -2752,7 +2752,7 @@
         {
             "pakku_id": "SG15bUHPcW2KqNGd",
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "detected-setblock-be-gone"
             },
@@ -6826,7 +6826,6 @@
             "id": {
                 "curseforge": "585406"
             },
-            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -6851,6 +6850,51 @@
                     ],
                     "size": 2365466,
                     "date_published": "2024-04-01T14:08:56.003Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "m3MG6TupqoQCfLd9",
+            "pakku_links": [
+                "2wSbyvuI5uFxrZW6",
+                "0IQGejKaqyQTLzbL",
+                "dR8ZIMOQFxDrUtOO"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "programmed-circuit-card"
+            },
+            "name": {
+                "curseforge": "Programmed Circuit Card"
+            },
+            "id": {
+                "curseforge": "1150540"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "pccard-1.20.1-1.0.15.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6499/333/pccard-1.20.1-1.0.15.jar",
+                    "id": "6499333",
+                    "parent_id": "1150540",
+                    "hashes": {
+                        "sha1": "035cc316077b270a5ada7d5a481367af3c80fd48",
+                        "md5": "b91b2ed72b9ce97e0a3355bd5f877167"
+                    },
+                    "required_dependencies": [
+                        "890405",
+                        "223794",
+                        "1173950"
+                    ],
+                    "size": 407699,
+                    "date_published": "2025-05-05T16:47:18.970Z"
                 }
             ]
         },
