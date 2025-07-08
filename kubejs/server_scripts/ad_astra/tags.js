@@ -199,6 +199,7 @@ const registerAdAstraBiomeTags = (event) => {
 		event.add('tfg:has_structure/cheese_ores', biome)
 		event.add('tfg:has_structure/moonbase', biome)
 		event.add('tfg:has_structure/moon_rabbit_houses', biome)
+		event.add('species:limpet_spawns', biome)
 	})
 }
 

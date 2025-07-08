@@ -2370,6 +2370,48 @@
             ]
         },
         {
+            "pakku_id": "pCeI0LXh7ieTrU8V",
+            "pakku_links": [
+                "0r9Ghrm3IbrHUVzA"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "hypertubes"
+            },
+            "name": {
+                "curseforge": "Create: Hypertubes"
+            },
+            "id": {
+                "curseforge": "1281336"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "create_hypertube-0.2.2-FORGE.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6721/285/create_hypertube-0.2.2-FORGE.jar",
+                    "id": "6721285",
+                    "parent_id": "1281336",
+                    "hashes": {
+                        "sha1": "d162b8a797883b100d1e04f19ce8c0c12e0c1f11",
+                        "md5": "e1776892a5897e2cb5361dfcc76049e6"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 299727,
+                    "date_published": "2025-07-02T14:17:53.393Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "PlkjJZdydA94ByHb",
             "type": "RESOURCE_PACK",
             "slug": {
@@ -7594,7 +7636,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Species-1.20.1-2.3-forge.jar",
+                    "file_name": "species-3.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7602,16 +7644,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6131/829/Species-1.20.1-2.3-forge.jar",
-                    "id": "6131829",
+                    "url": "https://edge.forgecdn.net/files/6736/993/species-3.3.jar",
+                    "id": "6736993",
                     "parent_id": "857737",
                     "hashes": {
-                        "sha1": "1bc4305fb83b28015461d63452a4a01cf5337dc3",
-                        "md5": "a3aef474219746f567b71fd4af0a74dd"
+                        "sha1": "7bcbdea144a75934da7d57879dc6c85c3aba18e8",
+                        "md5": "e9c5e75b517ac95595366ec0ef0fec15"
                     },
                     "required_dependencies": [],
-                    "size": 19593288,
-                    "date_published": "2025-01-27T22:01:14.603Z"
+                    "size": 42086433,
+                    "date_published": "2025-07-06T12:53:48.593Z"
                 }
             ]
         },
