@@ -20,7 +20,6 @@ const registerTFGBlocks = (event) => {
 	global.TFG_MACHINE_CASINGS.forEach(type => {
 		event.create(`tfg:block/casings/${type}`, 'cardinal')
 			.model(`tfg:block/casings/${type}`)
-			//.textureAll(`tfg:block/casings/${type}`)
 			.soundType('copper')
 			.hardness(5)
 			.resistance(6)
