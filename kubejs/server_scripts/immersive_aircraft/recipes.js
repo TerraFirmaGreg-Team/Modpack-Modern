@@ -692,7 +692,9 @@ function registerImmersiveAircraftRecipes(event) {
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 3),
 		])
 	);
-//#region Aircrafts
+	//#endregion
+
+	//#region Aircrafts
 
 	event.shaped('immersive_aircraft:quadrocopter',[
 		'ABA',
@@ -826,6 +828,24 @@ function registerImmersiveAircraftRecipes(event) {
 		G: '#create:seats',
 		H: 'tfc:metal/ingot/red_steel'
 	}).id('tfg:man_of_many_planes/mechanical_crafter/scarlet_biplane')
+
+	event.recipes.create.mechanical_crafting('immersive_aircraft:bamboo_hopper',[
+		'  A   A  ',
+		'BBCBBBCBB',
+		'  DEFED  ',
+		'  DGGGD  ',
+		'  D   D  ',
+		' BBBGBBB ',
+		'  B   B  '
+	],{
+		A: 'immersive_aircraft:enhanced_propeller',
+		B: 'immersive_aircraft:hull',
+		C: 'immersive_aircraft:steel_boiler',
+		D: 'gtceu:long_aluminium_rod',
+		E: '#create:seats',
+		F: 'immersive_aircraft:biplane',
+		G: 'gtceu:double_aluminium_plate'
+	}).id('tfg:immersive_aircraft/mechanical_crafter/bamboo_hopper')
 
 //#endregion
 }

@@ -1396,7 +1396,21 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.scarlet_biplane.title}"
-			x: 17.5d
+			x: 17.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6E4754288899732B"]
+			description: ["{quests.tfg_tips.aluminium_hopper.desc}"]
+			id: "06D07F7991FAB2CB"
+			subtitle: "{quests.tfg_tips.aluminium_hopper.subtitle}"
+			tasks: [{
+				id: "62A13F1E58F54CDD"
+				item: "immersive_aircraft:bamboo_hopper"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.aluminium_hopper.title}"
+			x: 18.0d
 			y: -2.0d
 		}
 	]
