@@ -76,6 +76,7 @@
 			id: "3D7B0F3134C30364"
 			rewards: [
 				{
+					auto: "no_toast"
 					id: "013F1894A0BED173"
 					item: {
 						Count: 1
@@ -87,6 +88,7 @@
 					type: "item"
 				}
 				{
+					auto: "no_toast"
 					id: "71AF6F847DC58F4D"
 					item: "ftbquests:book"
 					type: "item"
