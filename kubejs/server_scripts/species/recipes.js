@@ -36,7 +36,6 @@ function registerSpeciesRecipes(event) {
 		.itemInputs('1x #forge:plates/magnalium', 'ae2:charged_certus_quartz_crystal')
 		.inputFluids(Fluid.of('gtceu:glowstone', 144*4))
 		.itemOutputs('2x species:hopelight')
-		.circuit(1)
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -44,7 +43,6 @@ function registerSpeciesRecipes(event) {
 		.itemInputs('#forge:rings/magnalium', 'ae2:charged_certus_quartz_crystal')
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
 		.itemOutputs('2x species:speclight')
-		.circuit(2)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.HV])
 

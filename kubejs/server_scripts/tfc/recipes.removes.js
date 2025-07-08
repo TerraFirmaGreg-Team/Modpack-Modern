@@ -145,6 +145,7 @@ function removeTFCRecipes(event) {
 
 	event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_minecart' })
 	event.remove({ id: 'tfc:crafting/vanilla/redstone/minecart' })
+	event.remove({ id: 'tfc:crafting/cake' })
 
 	event.remove({ id: /^tfc:crafting\/dough\/.*/ })
 
