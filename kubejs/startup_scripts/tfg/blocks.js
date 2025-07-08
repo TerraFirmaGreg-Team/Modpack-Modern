@@ -15,6 +15,21 @@ const registerTFGBlocks = (event) => {
 			item.modelJson({ parent: 'minecraft:block/end_portal_frame' })
 		})
 
+	// #region Machine Casings
+
+	global.TFG_MACHINE_CASINGS.forEach(type => {
+		event.create(`tfg:block/casings/${type}`, 'cardinal')
+			.model(`tfg:block/casings/${type}`)
+			//.textureAll(`tfg:block/casings/${type}`)
+			.soundType('copper')
+			.hardness(5)
+			.resistance(6)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.mapColor('color_light_gray')
+	})
+
+	//#endregion
+
 	// #region Decorative vases
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
 		event.create(`tfg:decorative_vase/generated/${color}`, 'cardinal')
