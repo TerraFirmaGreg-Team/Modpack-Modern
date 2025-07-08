@@ -42,8 +42,8 @@
 				type: "item"
 			}]
 			title: "Super Batteries"
-			x: -2.0d
-			y: -5.0d
+			x: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["52AD30F04DD5A812"]
@@ -67,10 +67,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"4024C831C77101CA"
-				"16E3465CF94E2BDD"
-			]
+			dependencies: ["52AD30F04DD5A812"]
 			description: [
 				"The &3HV Chemical Bath&r is used to &ddye Lenses&r using &aChemical Dye&r. This will let you engrave more types of Wafers!"
 				""
@@ -78,7 +75,8 @@
 			]
 			icon: "gtceu:hv_chemical_bath"
 			id: "124B32A0583A636A"
-			size: 1.0d
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "Please don't bathe with electronics..."
 			tasks: [{
 				id: "13B0B5168E4B06E3"
@@ -86,8 +84,8 @@
 				type: "item"
 			}]
 			title: "High Voltage Bathing"
-			x: 3.0d
-			y: 2.0d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["52AD30F04DD5A812"]
@@ -123,7 +121,7 @@
 			]
 			title: "Advanced Maintenance"
 			x: -2.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["52AD30F04DD5A812"]
@@ -233,8 +231,8 @@
 				}
 			]
 			title: "I see the world in colour"
-			x: 4.0d
-			y: 3.5d
+			x: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6975F16F5B50F17F"]
@@ -248,8 +246,8 @@
 				type: "item"
 			}]
 			title: "Best ULV Circuits!"
-			x: 4.0d
-			y: 4.5d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -380,7 +378,7 @@
 			}]
 			title: "HV Superconductors"
 			x: -6.5d
-			y: -9.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["7E755297E9685374"]
@@ -402,7 +400,7 @@
 				type: "item"
 			}]
 			title: "Nichrome Coils"
-			x: -6.5d
+			x: -5.5d
 			y: -10.0d
 		}
 		{
@@ -456,7 +454,7 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["6958029B5514D4EC"]
+			dependencies: ["124B32A0583A636A"]
 			description: [
 				"&a4A&r of &bMV&r energy transmission may be appealing, but you probably don't need these at this point. The option is always there if you need it."
 				""
@@ -472,8 +470,8 @@
 				type: "item"
 			}]
 			title: "MV Superconductors"
-			x: -6.5d
-			y: -7.5d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["41D32C5178760F47"]
@@ -496,17 +494,24 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["124B32A0583A636A"]
-			description: ["You now have everything you need to craft the &5Eye of Ender&r.\\nSimply extract &6Liquid Blaze&r from the &6Blaze Powder&r you previously crafted, and mix it with your &5Ender Pearl&r in a &6Chemical Bath&r.\\n\\nYou won’t need many for now — just one for your &6Rocket&r and another for your &6HV Circuit Assembler&r.\\nBut be warned: from &5EV&r and beyond, the demand will rise quickly."]
-			icon: "minecraft:ender_eye"
+			dependencies: [
+				"4024C831C77101CA"
+				"05ABC370D7153350"
+			]
+			description: [
+				"TODO REPLACE ME WITH ID"
+				"You won’t need many for now — just one for your &6Rocket&r and another for your &6HV Circuit Assembler&r.\\nBut be warned: from &5EV&r and beyond, the demand will rise quickly."
+			]
+			icon: "tfg:vitrified_pearl"
 			id: "41D32C5178760F47"
 			size: 1.0d
+			subtitle: "{quests.high_voltage.vitrified_pearl.subtitle}"
 			tasks: [{
-				id: "30A89DD2A22EE314"
-				item: "minecraft:ender_eye"
+				id: "4FBEF1C30CC89B7F"
+				item: "tfg:vitrified_pearl"
 				type: "item"
 			}]
-			title: "The Eye of the Gregtech"
+			title: "{quests.high_voltage.vitrified_pearl.title}"
 			x: 6.0d
 			y: 2.0d
 		}
@@ -774,24 +779,8 @@
 				}
 			]
 			title: "TNT"
-			x: 3.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["390E59F05132FCB8"]
-			description: ["In order to get &6Blaze Powder&r, you must instead combine &7Carbon Dust&r and &eSulfur Dust&r in a &3HV Chemical Reactor&r."]
-			icon: "minecraft:blaze_powder"
-			id: "16E3465CF94E2BDD"
-			size: 1.0d
-			tasks: [{
-				count: 12L
-				id: "00CC416ACB6CA99F"
-				item: "minecraft:blaze_powder"
-				type: "item"
-			}]
-			title: "Blaze Powder"
-			x: 1.5d
-			y: 2.0d
+			x: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -816,8 +805,8 @@
 				}
 			]
 			title: "Ender Pearls"
-			x: 2.0d
-			y: 3.5d
+			x: 4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3568BC9742092FC5"]
@@ -867,8 +856,8 @@
 				type: "item"
 			}]
 			title: "Implosion Compressor"
-			x: 2.0d
-			y: 6.0d
+			x: 3.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1007,7 +996,7 @@
 				type: "item"
 			}]
 			title: "Universal Macerator"
-			x: 3.0d
+			x: -2.25d
 			y: 0.0d
 		}
 		{
@@ -1049,7 +1038,7 @@
 				item: "gtceu:hv_mixer"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: -2.0d
 		}
 		{
@@ -1190,9 +1179,9 @@
 				"56D337E264A4154F"
 				"41D32C5178760F47"
 			]
-			description: ["The &6Rocket Nose Cone&r is the hardest part of your Rocket.\\nYou will need a hefty amount of &aPolyethylene&r — so we hope you already have it passively produced — and a &6HV&r Emitter.\\nYou should be able to get your hands on &dChromium&r by electrolyzing &cRuby Dust&r.\\n\\nThe &aEye of Ender&r is trickier and requires you to follow the quest unlocked by the &6HV Chemical Reactor&r.\\nGet ready to make &cTNT&r, build an &5Implosion Compressor&r, and recreate the famous Enderman drop — since you won’t find Ender Pearls natively in &2TFG&r."]
+			description: ["The &6Rocket Nose Cone&r is the hardest part of your Rocket.\\nYou will need a hefty amount of &aPolyethylene&r — so we hope you already have it passively produced — and a &6HV&r Emitter.\\nYou should be able to get your hands on &dChromium&r by electrolyzing &cRuby Dust&r.\\n\\nThe &aVitrified Ender Pearl&r is trickier and requires you to follow the quest unlocked by the &6HV Chemical Reactor&r.\\nGet ready to make &cTNT&r, build an &5Implosion Compressor&r, and recreate the famous Enderman drop — since you won’t find Ender Pearls natively in &2TFG&r."]
 			id: "1E307CD76691C24F"
-			subtitle: "You really had to put an Eye of Ender..."
+			subtitle: "The nose knows..."
 			tasks: [{
 				id: "05AEC4A2F295098C"
 				item: "ad_astra:rocket_nose_cone"
@@ -1397,26 +1386,8 @@
 				item: "gtceu:mv_bedrock_ore_miner"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -13.0d
-		}
-		{
-			description: [
-				"The HV Chapter will be updated with Moon Update. In the meantime be wary &lnot everything works&r with TFG."
-				""
-				"From there on Space Progression will begin and it will alter your progression through TFG. Be wary for major changes."
-			]
-			icon: "createdeco:decal_warning"
-			id: "66A1F17BB3453F0B"
-			size: 3.0d
-			tasks: [{
-				id: "111DD6881AB718E1"
-				title: "Okay I understand it's not up to date"
-				type: "checkmark"
-			}]
-			title: "Quests are OLD and not updated for TFG"
-			x: 1.5d
-			y: -4.75d
+			x: 2.5d
+			y: -10.5d
 		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]

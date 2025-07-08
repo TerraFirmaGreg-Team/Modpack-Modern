@@ -807,7 +807,7 @@ const registerMinecraftRecipes = (event) => {
 		.EUt(420)
 
 	event.recipes.gtceu.assembler('tfg:minecraft/elytra2')
-		.itemInputs('16x tfg:polycaprolactam_fabric', '16x #forge:foils/aluminium', '8x #forge:plates/ender_eye', '4x #forge:rings/aluminium', '2x #forge:rods/long/vanadium_steel', '2x #forge:small_springs/aluminium', '1x #forge:small_gears/aluminium')
+		.itemInputs('16x tfg:polycaprolactam_fabric', '16x #forge:foils/aluminium', '8x #forge:plates/ender_pearl', '4x #forge:rings/aluminium', '2x #forge:rods/long/vanadium_steel', '2x #forge:small_springs/aluminium', '1x #forge:small_gears/aluminium')
 		.circuit(4)
 		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0}"))
 		.duration(1600)

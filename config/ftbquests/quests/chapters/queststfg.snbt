@@ -50,7 +50,16 @@
 		{
 			dependencies: ["427814F6E9386772"]
 			description: ["{quests.tfg.capture_territory.desc}"]
-			icon: "createaddition:chocolate_cake"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 14796000L
+						traits: [ ]
+					}
+				}
+				id: "createaddition:chocolate_cake"
+			}
 			id: "0B42D4AE2AC67F93"
 			subtitle: "{quests.tfg.capture_territory.subtitle}"
 			tasks: [{
