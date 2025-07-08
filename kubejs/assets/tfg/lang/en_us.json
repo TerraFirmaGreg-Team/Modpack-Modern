@@ -2620,7 +2620,7 @@
   "quests.tfg_tips.greenhouse.desc": "The &dGreenhouse&r is a complex multiblock structure with multiple tiers, used to grow crops all year round at the expense of yield. Check out its entry in the &2Field Guide&r for more information!",
   "quests.tfg_tips.greenhouse_automation.title": "Greenhouse Automation",
   "quests.tfg_tips.greenhouse_automation.subtitle": "By your powers combined...",
-  "quests.tfg_tips.greenhouse_automation.desc": "With the combination of Firmalife's &2Picker&r and &2Sweeper&r, Create's Deployers, and GregTech's Item Collectors, it's possible to completely automate your greenhouse!\n\nPickers will pull mature crops from Hydroponic Planters and Quad Planters when they receive a redstone pulse, while Sweepers will harvest mature crops from the other types in a 3x3 area around it while connected to a redstone signal.\n\nThese machines will produce loose items, so an Item Collector will suck those up in a large area around it.\n\nFrom there, pipe the seeds back into Deployers to plant them back in the Planters!",
+  "quests.tfg_tips.greenhouse_automation.desc": "With the combination of Firmalife's &2Picker&r and &2Sweeper&r, Create's Deployers, and GregTech's Item Collectors, it's possible to completely automate your greenhouse!\n\nPickers will pull mature crops from Hydroponic Planters and Quad Planters when they receive a redstone pulse, while Sweepers will harvest mature crops from the other types in a 3x3 area around it while connected to a redstone signal.\n\nThese machines will produce loose items, but an Item Collector will suck those up in a large area around it.\n\nFrom there, pipe the seeds back into Deployers to plant them in the Planters!",
   "quests.tfg_tips.beekeeping.title": "Beekeeping",
   "quests.tfg_tips.beekeeping.subtitle": "They're so small now...",
   "quests.tfg_tips.beekeeping.desc": "&bBeekeeping&r has a plethora of uses. Not only do bees fertilize nearby crops (assuming you have the correct trait), you will be able to obtain useful resources such as &aWax&r and &aHoney.&r Breed bees to achieve better stats.\nThe &2Field Guide&r offers an extensive explanation of all &bbeekeeping&r mechanics.",
@@ -2800,5 +2800,5 @@
   "quests.tfg_tips.tools_tips.markings.task": "Any #ags_modernmarkings:markings",
   "quests.tfg_tips.tools_tips.cryodesiccation.title": "Cryodesiccation",
   "quests.tfg_tips.tools_tips.cryodesiccation.subtitle": "The factory has no time for \"flavor\".",
-  "quests.tfg_tips.tools_tips.cryodesiccation.desc": "&l&bCryodesiccation&r&r is the process of dehydrating food at very low temperatures. Food with the trait \"Cryodesiccated\" last considerably longer than other food preservation methods."
+  "quests.tfg_tips.tools_tips.cryodesiccation.desc": "&l&bCryodesiccation&r&r is the process of dehydrating food at very low temperatures. Food with the trait \"Cryodesiccated\" lasts considerably longer than other food preservation methods."
 }
