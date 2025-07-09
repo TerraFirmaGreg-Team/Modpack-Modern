@@ -15,6 +15,22 @@ const registerTFGBlocks = (event) => {
 			item.modelJson({ parent: 'minecraft:block/end_portal_frame' })
 		})
 
+	event.create('tfg:dry_ice', 'tfg:particle_emitter')
+		.textureAll('tfg:block/dry_ice')
+		.soundType('bone_block')
+		.hardness(1)
+		.resistance(1)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfcambiental:cold_stuff')
+		.defaultTranslucent()
+		.mapColor('color_white')
+		.speedFactor(1.2)
+        .particleOffset(1, 1, 1)
+		.particleVelocity(0.05, 0, 0.05)
+		.particle('minecraft:campfire_cosy_smoke')
+		.particleCount(2)
+		.particleForced(false)
+
 	// #region Machine Casings
 
 	global.TFG_MACHINE_CASINGS.forEach(type => {

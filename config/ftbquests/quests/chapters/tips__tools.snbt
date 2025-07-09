@@ -2457,7 +2457,13 @@
 			subtitle: "{quests.tfg_tips.tools_tips.soybean_oil.subtitle}"
 			tasks: [{
 				id: "627EFBAAD0A86E02"
-				item: "ftbfiltersystem:smart_filter"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item(firmalife:bucket/soybean_oil)"
+					}
+				}
 				title: "{quests.tfg_tips.tools_tips.soybean_oil.task}"
 				type: "item"
 			}]

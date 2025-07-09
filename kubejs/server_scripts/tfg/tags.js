@@ -145,9 +145,9 @@ const registerTFGItemTags = (event) => {
 	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => { event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`); })
 
 	// Crafting components
+	event.add('tfg:aluminium_oxide', '#forge:dusts/bauxite')
 	event.add('tfg:aluminium_oxide', '#forge:dusts/sapphire')
 	event.add('tfg:aluminium_oxide', '#forge:dusts/green_sapphire')
-	event.add('tfg:aluminium_oxide', '#forge:dusts/bauxite')
 
 	// Use either cast or wrought iron
 	event.add('tfg:any_iron_double_ingot', '#forge:double_ingots/iron')

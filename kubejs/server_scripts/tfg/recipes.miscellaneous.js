@@ -260,7 +260,20 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.shapeless('4x firmalife:ice_shavings', ['#forge:dusts/ice', '#forge:tools/hammers'])
 
+	event.recipes.gtceu.mixer('tfg:ice_slush_from_dry_ice')
+		.itemInputs('1x tfg:dry_ice')
+		.inputFluids( JsonIO.of({ amount: 8000, value: { tag: "tfc:water" }}))
+		.outputFluids(Fluid.of('gtceu:ice', 8000))
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.ULV])
+
 	// Cooling water
+	event.recipes.tfc.barrel_sealed(250)
+		.inputItem('1x tfg:dry_ice')
+		.inputFluid(Fluid.of('minecraft:water', 5000))
+		.outputFluid(Fluid.of('gtceu:ice', 5000))
+		.id('tfg:barrel/cooling_water_0')
+
 	event.recipes.tfc.barrel_sealed(1000)
 		.inputItem('1x #forge:dusts/ice')
 		.inputFluid(Fluid.of('minecraft:water', 144))
@@ -615,9 +628,17 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.recipes.gtceu.chemical_reactor('kaolinite')
 		.itemInputs('5x #tfg:aluminium_oxide', '2x #forge:dusts/silicon')
-		.inputFluids(Fluid.of('gtceu:distilled_water', 18000), Fluid.of('gtceu:chlorine', 8000))
+		.inputFluids(Fluid.of('gtceu:distilled_water', 6000), Fluid.of('gtceu:chlorine', 8000))
 		.itemOutputs('17x tfc:powder/kaolinite')
-		.outputFluids(Fluid.of('gtceu:hydrochloric_acid', 16000))
+		.outputFluids(Fluid.of('gtceu:hydrochloric_acid', 8000))
+		.duration(20 * 10)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.chemical_reactor('kaolinite_ruby')
+		.itemInputs('6x #forge:dusts/ruby', '2x #forge:dusts/silicon')
+		.inputFluids(Fluid.of('gtceu:distilled_water', 6000), Fluid.of('gtceu:chlorine', 8000))
+		.itemOutputs('17x tfc:powder/kaolinite', '1x #forge:dusts/chromium')
+		.outputFluids(Fluid.of('gtceu:hydrochloric_acid', 8000))
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
 
