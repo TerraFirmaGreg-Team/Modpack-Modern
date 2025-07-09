@@ -6,13 +6,7 @@
 	icon: "tfg:mv_universal_circuit"
 	id: "43E779CEEB25D55B"
 	order_index: 1
-	quest_links: [{
-		id: "4C40CD101E2A9591"
-		linked_quest: "02854A3E8A5D5043"
-		shape: "heart"
-		x: -10.5d
-		y: -6.5d
-	}]
+	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["22E462070F8B027A"]
@@ -109,6 +103,7 @@
 				"5D9D01EF219A31C5"
 				"316FF60D6FFE97CE"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.medium_voltage.mv_ethylene.desc}"]
 			icon: "gtceu:ethylene_bucket"
 			id: "6BB98D128822730E"
@@ -185,7 +180,7 @@
 			id: "3E2E161F8CE35138"
 			optional: true
 			size: 1.0d
-			subtitle: "{quests.medium_voltage.mv_.subtitle}"
+			subtitle: "{quests.medium_voltage.mv_fuel_cracking.subtitle}"
 			tasks: [{
 				id: "5687D81E6BFDC7E0"
 				item: "gtceu:severely_steam_cracked_naphtha_bucket"
@@ -212,8 +207,8 @@
 			]
 			icon: "gtceu:mv_steam_turbine"
 			id: "583D0CC4FAA4FC98"
-			shape: "square"
-			size: 1.0d
+			shape: "octagon"
+			size: 2.0d
 			subtitle: "{quests.medium_voltage.mv_energy.subtitle}"
 			tasks: [{
 				id: "1F170291094582D6"
@@ -228,8 +223,8 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_energy.title}"
-			x: 6.0d
-			y: -0.5d
+			x: 7.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2AD44111B9B39C90"]
@@ -320,7 +315,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["22E462070F8B027A"]
+			dependencies: [
+				"22E462070F8B027A"
+				"05A072877CA01773"
+			]
 			description: [
 				"{quests.medium_voltage.electrolyzer.desc.1}"
 				"{@pagebreak}"
@@ -840,7 +838,7 @@
 		{
 			dependencies: [
 				"3D98819A799D2E64"
-				"0EFEE489906256AA"
+				"79E8DC4D9B5F6B97"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -930,8 +928,8 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_batteries.title}"
-			x: 9.0d
-			y: -0.5d
+			x: 9.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["22E462070F8B027A"]
@@ -1028,6 +1026,7 @@
 			icon: "gtceu:mv_distillery"
 			id: "6A304E453D74C57C"
 			min_required_dependencies: 1
+			progression_mode: "linear"
 			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_distillery.subtitle}"
@@ -1149,7 +1148,7 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_diesel.title}"
-			x: -5.5d
+			x: -6.0d
 			y: 3.5d
 		}
 		{
@@ -1158,7 +1157,7 @@
 			icon: "gtceu:tungsten_steel_quadruple_fluid_pipe"
 			id: "66041DE10C882382"
 			optional: true
-			shape: "square"
+			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_mutli_channel.subtitle}"
 			tasks: [{
@@ -1266,7 +1265,7 @@
 				}
 			]
 			title: "{quests.medium_voltage.mv_long_pipe.title}"
-			x: -9.5d
+			x: -10.0d
 			y: -6.5d
 		}
 		{
@@ -1288,8 +1287,8 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_jetpack.title}"
-			x: -5.5d
-			y: 5.0d
+			x: -6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["75F38905DEA60F15"]
@@ -1406,11 +1405,12 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:mv_battery_buffer_4x)item(gtceu:mv_battery_buffer_8x)item(gtceu:mv_battery_buffer_16x))"
 					}
 				}
+				title: "{quests.medium_voltage.mv_battery.task}"
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_battery.title}"
-			x: 7.0d
-			y: -0.5d
+			x: 8.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1529,8 +1529,8 @@
 			description: ["{quests.medium_voltage.lsb.desc}"]
 			icon: "gtceu:steel_large_boiler"
 			id: "730D7C10DEED3117"
-			shape: "square"
-			size: 1.0d
+			shape: "heart"
+			size: 1.5d
 			subtitle: "{quests.medium_voltage.lsb.subtitle}"
 			tasks: [{
 				id: "67728209D0BE18B1"
@@ -1567,6 +1567,21 @@
 			title: "{quests.medium_voltage.mv_cpu.title}"
 			x: 5.0d
 			y: 8.0d
+		}
+		{
+			dependencies: ["5D9D01EF219A31C5"]
+			description: ["{quests.medium_voltage.mv_bio_diesel.desc}"]
+			id: "1BAC64A6713DDABF"
+			optional: true
+			subtitle: "{quests.medium_voltage.mv_bio_diesel.subtitle}"
+			tasks: [{
+				id: "219755A6871A2596"
+				item: "gtceu:bio_diesel_bucket"
+				type: "item"
+			}]
+			title: "{quests.medium_voltage.mv_bio_diesel.title}"
+			x: -8.0d
+			y: -2.0d
 		}
 	]
 	subtitle: ["{quests.medium_voltage.subtitle}"]
