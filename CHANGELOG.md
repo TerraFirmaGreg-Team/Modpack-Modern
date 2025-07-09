@@ -45,6 +45,9 @@
 - Nanosuit and Quarktech armor have actual armor values now @Pyritie
 - Firmalife greenhouses can now be totally automated with the new Sweeper and Picker! Just add redstone @eerussianguy
 - Vats can now be opened and closed via redstone @eerussianguy
+- New item replacement for ender eyes @Pyritie @Redeix
+- Added more tools and components to the anvil and extruder molds (#898) @BlueBoat29 @Pyritie
+- Added recipes for crafting all the cakes @Pyritie
 ### Bug fixes
 - Fixed a mud hut structure that had deprecated zinc ingots @Pyritie
 - The electric greenhouse now also allows loose rocks and plants inside, since TFC spawns them on any grass block @Pyritie
@@ -56,6 +59,8 @@
 - Fixed some bugs with the lunchbox (#1200) @Thomasx0
 - Greate millstones/crushing wheels now give the correct amount of byproducts @Electrolyte220
 - Greate bulk washing now correctly works on depots and belts @Electrolyte220
+- Fixed dough consuming whole drums of yeast starter (#1203) @Pyritie
+- Fixed missing recipes for some iron create deco things (#1240) @Pyritie
 ### Translations
 - Ukranian @MetenBouldry
 - Brazilian Portuguese @gifpxto & @lemonpillow5
