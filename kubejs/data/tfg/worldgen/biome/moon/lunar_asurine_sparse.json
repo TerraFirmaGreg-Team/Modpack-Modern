@@ -45,6 +45,10 @@
 			"tfg:moon/surface/dead_coral_fans",
 			"tfg:moon/surface/warped_sprouts_patch",
 			"tfg:moon/surface/warped_roots_patch",
+			"tfg:moon/surface/chorus_grass_rare",
+			"tfg:moon/surface/vaiolush_fern",
+			"tfg:moon/surface/salteago",
+			"tfg:moon/surface/inflexia",
 			"tfg:moon/asurine/asurine_spikes"
 		],
 		[
@@ -52,7 +56,7 @@
 		]
 	],
 	"has_precipitation": false,
-	"creature_spawn_probability": 0.00005,
+	"creature_spawn_probability": 0.00006,
 	"spawn_costs": {
 		"species:limpet": {
 			"energy_budget": 0.15,
@@ -64,10 +68,10 @@
 		"axolotls": [],
 		"creature": [
 			{
-				"type": "minecraft:rabbit",
+				"type": "tfg:moon_rabbit",
 				"maxCount": 4,
 				"minCount": 2,
-				"weight": 50
+				"weight": 100
 			},
 			{
 				"type": "species:birt",

@@ -52,5 +52,6 @@
       "text": "$(li)Yellow Limonite: $(l:tfg_ores/nether_vein_index#nether_goethite)15%$(/l), $(l:tfg_ores/nether_vein_index#nether_hematite)15%$(/l), $(l:tfg_ores/nether_vein_index#nether_gold)5%$(/l)$()",
       "type": "patchouli:text"
     }
-  ]
+  ],
+  "sortnum": 2
 }

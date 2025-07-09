@@ -31,6 +31,7 @@ const registerTFGMaterials = (event) => {
 		.color(0xfbdf82)
 		.secondaryColor(0xff9d2e)
 
+	// Cooking
 
 	event.create('lactose')
 		.dust()
@@ -46,7 +47,7 @@ const registerTFGMaterials = (event) => {
 		.components('6x aluminium', '2x stainless_steel', '1x red_steel')
 		.color(0x333e47)
 		.iconSet('metallic')
-		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_DENSE)
+		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE)
 		.blastTemp(1760, 'low', 120, 1200)
 
 	event.create('vitrified_asbestos')
@@ -82,6 +83,8 @@ const registerTFGMaterials = (event) => {
 		.components('5x nitrogen', '3x oxygen', '2x helium_3')
 		.color(0xa3ed95)
 
+	// Refrigerants
+
 	event.create('tfg:chlorodifluoromethane')
 		.gas()
 		.components('1x carbon', '1x hydrogen', '1x chlorine', '2x fluorine')
@@ -101,4 +104,19 @@ const registerTFGMaterials = (event) => {
 		.gas()
 		.components('2x carbon', '2x hydrogen', '4x fluorine')
 		.color(0x46702e)
+
+	// Crafting components
+
+	event.create('tfg:kaolinite')
+		.dust()
+		.components('2x aluminium', '2x silicon', '9x oxygen', '4x hydrogen')
+		.color(0xEEB9AD)
+		.secondaryColor(0xF6A797)
+
+	event.create('tfg:vitrified_pearl')
+		.dust()
+		.flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+		.components('2x aluminium', '2x silicon', '9x oxygen', '4x hydrogen', '1x ender_pearl')
+		.color(0xFFFFFF)
+		.secondaryColor(0x67FFE6)
 }

@@ -42,6 +42,8 @@
 		[
 			"tfg:moon/surface/warped_sprouts_patch",
 			"tfg:moon/surface/warped_roots_patch",
+			"tfg:moon/surface/vaiolush_fern",
+			"tfg:moon/surface/salteago",
 			"tfg:moon/surface/warped_vine_common"
 		],
 		[
@@ -79,7 +81,7 @@
 				"type": "ad_astra:corrupted_lunarian",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 30
+				"weight": 50
 			},
 			{
 				"type": "minecraft:skeleton",

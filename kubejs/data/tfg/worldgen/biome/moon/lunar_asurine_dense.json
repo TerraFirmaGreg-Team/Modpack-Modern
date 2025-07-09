@@ -42,6 +42,8 @@
 		"#tfg:moon_small_rock_features",
 		[
 			"tfg:moon/surface/warped_sprouts_patch",
+			"tfg:moon/surface/salteago",
+			"tfg:moon/surface/inflexia",
 			"tfg:moon/asurine/asurine",
 			"tfg:moon/asurine/asurine_spikes"
 		],
@@ -90,7 +92,7 @@
 			},
 			{
 				"type": "species:limpet",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
 			},

@@ -55,14 +55,15 @@
 			"tfg:moon/surface/loose/rhyolite",
 			"tfg:moon/surface/pile_moon_sand",
 			"tfg:moon/surface/pile_white_sand",
-			"tfg:moon/surface/pile_black_sand"
+			"tfg:moon/surface/pile_black_sand",
+			"tfg:moon/surface/inflexia"
 		],
 		[
 			"tfg:moon/hardening"
 		]
 	],
 	"has_precipitation": false,
-	"creature_spawn_probability": 0.00008,
+	"creature_spawn_probability": 0.0001,
 	"spawn_costs": {
 		"species:limpet": {
 			"energy_budget": 0.15,
@@ -74,7 +75,7 @@
 		"axolotls": [],
 		"creature": [
 			{
-				"type": "minecraft:rabbit",
+				"type": "tfg:moon_rabbit",
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100
@@ -110,13 +111,31 @@
 				"type": "species:limpet",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "endermanoverhaul:windswept_hills_enderman",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 40
+			},
+			{
+				"type": "endermanoverhaul:end_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 2
+			},
+			{
+				"type": "endermanoverhaul:end_islands_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 2
+			},
+			{
+				"type": "endermanoverhaul:soulsand_valley_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 2
 			}
 		],
 		"underground_water_creature": [],

@@ -42,8 +42,8 @@
 				type: "item"
 			}]
 			title: "Super Batteries"
-			x: -2.0d
-			y: -5.0d
+			x: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["52AD30F04DD5A812"]
@@ -67,10 +67,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"4024C831C77101CA"
-				"16E3465CF94E2BDD"
-			]
+			dependencies: ["52AD30F04DD5A812"]
 			description: [
 				"The &3HV Chemical Bath&r is used to &ddye Lenses&r using &aChemical Dye&r. This will let you engrave more types of Wafers!"
 				""
@@ -78,7 +75,8 @@
 			]
 			icon: "gtceu:hv_chemical_bath"
 			id: "124B32A0583A636A"
-			size: 1.0d
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "Please don't bathe with electronics..."
 			tasks: [{
 				id: "13B0B5168E4B06E3"
@@ -86,8 +84,8 @@
 				type: "item"
 			}]
 			title: "High Voltage Bathing"
-			x: 3.0d
-			y: 2.0d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["52AD30F04DD5A812"]
@@ -123,7 +121,7 @@
 			]
 			title: "Advanced Maintenance"
 			x: -2.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["52AD30F04DD5A812"]
@@ -233,8 +231,8 @@
 				}
 			]
 			title: "I see the world in colour"
-			x: 4.0d
-			y: 3.5d
+			x: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6975F16F5B50F17F"]
@@ -248,8 +246,8 @@
 				type: "item"
 			}]
 			title: "Best ULV Circuits!"
-			x: 4.0d
-			y: 4.5d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -311,6 +309,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["197A13A0790F000B"]
 			description: [
 				"Titanium requires a slightly more &binvolved&r process than the previous materials to process. To get started, you'll need &aRutile&r, which can be obtained by processing &aBauxite&r, &aIlmenite&r and &aAluminium&r."
 				""
@@ -379,7 +378,7 @@
 			}]
 			title: "HV Superconductors"
 			x: -6.5d
-			y: -9.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["7E755297E9685374"]
@@ -401,7 +400,7 @@
 				type: "item"
 			}]
 			title: "Nichrome Coils"
-			x: -6.5d
+			x: -5.5d
 			y: -10.0d
 		}
 		{
@@ -455,7 +454,7 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["6958029B5514D4EC"]
+			dependencies: ["124B32A0583A636A"]
 			description: [
 				"&a4A&r of &bMV&r energy transmission may be appealing, but you probably don't need these at this point. The option is always there if you need it."
 				""
@@ -471,8 +470,8 @@
 				type: "item"
 			}]
 			title: "MV Superconductors"
-			x: -6.5d
-			y: -7.5d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["41D32C5178760F47"]
@@ -483,7 +482,7 @@
 			]
 			icon: "gtceu:hv_circuit_assembler"
 			id: "6B1595678ECB7AC8"
-			shape: "gear"
+			shape: "octagon"
 			size: 3.0d
 			tasks: [{
 				id: "337D8EF42A7BD3A2"
@@ -495,17 +494,24 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["124B32A0583A636A"]
-			description: ["You now have everything you need to craft the &5Eye of Ender&r.\\nSimply extract &6Liquid Blaze&r from the &6Blaze Powder&r you previously crafted, and mix it with your &5Ender Pearl&r in a &6Chemical Bath&r.\\n\\nYou won’t need many for now — just one for your &6Rocket&r and another for your &6HV Circuit Assembler&r.\\nBut be warned: from &5EV&r and beyond, the demand will rise quickly."]
-			icon: "minecraft:ender_eye"
+			dependencies: [
+				"4024C831C77101CA"
+				"05ABC370D7153350"
+			]
+			description: [
+				"TODO REPLACE ME WITH ID"
+				"You won’t need many for now — just one for your &6Rocket&r and another for your &6HV Circuit Assembler&r.\\nBut be warned: from &5EV&r and beyond, the demand will rise quickly."
+			]
+			icon: "tfg:vitrified_pearl"
 			id: "41D32C5178760F47"
 			size: 1.0d
+			subtitle: "{quests.high_voltage.vitrified_pearl.subtitle}"
 			tasks: [{
-				id: "30A89DD2A22EE314"
-				item: "minecraft:ender_eye"
+				id: "4FBEF1C30CC89B7F"
+				item: "tfg:vitrified_pearl"
 				type: "item"
 			}]
-			title: "The Eye of the Gregtech"
+			title: "{quests.high_voltage.vitrified_pearl.title}"
 			x: 6.0d
 			y: 2.0d
 		}
@@ -619,7 +625,7 @@
 			id: "42FB276AB16258D9"
 			size: 1.0d
 			tasks: [{
-				id: "344000CF4AAC68AF"
+				id: "4EF4F33BEB714485"
 				item: "gtceu:fluorine_bucket"
 				type: "item"
 			}]
@@ -714,7 +720,7 @@
 			]
 			icon: "gtceu:large_chemical_reactor"
 			id: "528CE69DA4358B2E"
-			shape: "gear"
+			shape: "octagon"
 			size: 3.0d
 			tasks: [
 				{
@@ -773,24 +779,8 @@
 				}
 			]
 			title: "TNT"
-			x: 3.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["390E59F05132FCB8"]
-			description: ["In order to get &6Blaze Powder&r, you must instead combine &7Carbon Dust&r and &eSulfur Dust&r in a &3HV Chemical Reactor&r."]
-			icon: "minecraft:blaze_powder"
-			id: "16E3465CF94E2BDD"
-			size: 1.0d
-			tasks: [{
-				count: 12L
-				id: "00CC416ACB6CA99F"
-				item: "minecraft:blaze_powder"
-				type: "item"
-			}]
-			title: "Blaze Powder"
-			x: 1.5d
-			y: 2.0d
+			x: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -815,8 +805,8 @@
 				}
 			]
 			title: "Ender Pearls"
-			x: 2.0d
-			y: 3.5d
+			x: 4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3568BC9742092FC5"]
@@ -866,8 +856,8 @@
 				type: "item"
 			}]
 			title: "Implosion Compressor"
-			x: 2.0d
-			y: 6.0d
+			x: 3.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1006,7 +996,7 @@
 				type: "item"
 			}]
 			title: "Universal Macerator"
-			x: 3.0d
+			x: -2.25d
 			y: 0.0d
 		}
 		{
@@ -1048,7 +1038,7 @@
 				item: "gtceu:hv_mixer"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: -2.0d
 		}
 		{
@@ -1139,6 +1129,7 @@
 				"3E2F96A02FEF12AC"
 				"1E307CD76691C24F"
 				"4AD686D18247315E"
+				"72BD27FEEB34C7B0"
 			]
 			description: ["Woh, it's time to build your &6Rocket&r!\\n\\nAssemble all the parts with &d8 Dense Rocket Alloy&r. To finish the insulation, you'll need &b576mb&r of &bLiquid Silicon&r (&b4 ingots&r) and &f16 pieces of dust&r.\\n\\nYou have two choices:\\n&e•&r &eBorosilicate Glass Dust&r — crafted in a &6Mixer&r with &dBoron&r and &fGlass Dust&r\\n\\n&e•&r &5Vitrified Asbestos&r — obtained through a &6Pyrolysis Oven&r\\n\\nGo with the one you have available!"]
 			icon_scale: 2.0d
@@ -1188,9 +1179,9 @@
 				"56D337E264A4154F"
 				"41D32C5178760F47"
 			]
-			description: ["The &6Rocket Nose Cone&r is the hardest part of your Rocket.\\nYou will need a hefty amount of &aPolyethylene&r — so we hope you already have it passively produced — and a &6HV&r Emitter.\\nYou should be able to get your hands on &dChromium&r by electrolyzing &cRuby Dust&r.\\n\\nThe &aEye of Ender&r is trickier and requires you to follow the quest unlocked by the &6HV Chemical Reactor&r.\\nGet ready to make &cTNT&r, build an &5Implosion Compressor&r, and recreate the famous Enderman drop — since you won’t find Ender Pearls natively in &2TFG&r."]
+			description: ["The &6Rocket Nose Cone&r is the hardest part of your Rocket.\\nYou will need a hefty amount of &aPolyethylene&r — so we hope you already have it passively produced — and a &6HV&r Emitter.\\nYou should be able to get your hands on &dChromium&r by electrolyzing &cRuby Dust&r.\\n\\nThe &aVitrified Ender Pearl&r is trickier and requires you to follow the quest unlocked by the &6HV Chemical Reactor&r.\\nGet ready to make &cTNT&r, build an &5Implosion Compressor&r, and recreate the famous Enderman drop — since you won’t find Ender Pearls natively in &2TFG&r."]
 			id: "1E307CD76691C24F"
-			subtitle: "You really had to put an Eye of Ender..."
+			subtitle: "The nose knows..."
 			tasks: [{
 				id: "05AEC4A2F295098C"
 				item: "ad_astra:rocket_nose_cone"
@@ -1263,6 +1254,20 @@
 			]
 			description: ["&2Congrats&r, you’ve successfully landed on the &7Moon&r!\\nHere, you’ll find &bCertus Quartz&r veins, allowing you to begin unlocking &dAE2&r.\\n\\nBut that’s not all—some veins here have much higher density than those on Earth.\\n\\nFor instance, you can easily find &6Ilmenite&r, &7Bauxite&r, &7Aluminium&r, and &5Chromite&r veins on the Moon.\\nEstablishing a small base here will be crucial to keep progressing.\\n\\nYour biggest challenge will be transporting resources, as there are no easy cross-dimensional tools like the &5Ender Chest&r or &dAE2 Quantum Link&r just yet."]
 			id: "00A2566109144D7F"
+			rewards: [{
+				id: "13A577B2BB08460E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: 2718000L
+							traits: [ ]
+						}
+					}
+					id: "ad_astra:cheese"
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 4.0d
 			subtitle: "Hope you have everything to come back"
@@ -1277,7 +1282,10 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["3FBDC8552F7D8008"]
+			dependencies: [
+				"3FBDC8552F7D8008"
+				"72BD27FEEB34C7B0"
+			]
 			description: ["&6Before crossing the last Earth boundary,&r you should be sure to not die when you arrive on the moon.\\n\\nTo do that, you're gonna need a &bfull set of Space Suit&r loaded with &bOxygen&r — and if you're careful, even a &ebackup can&r.\\n\\n&cThe hardest part&r will definitely be the &dPolycaprolactam Fabric&r.\\n\\nYou will need an &cEBF&r and a &6HV&r &eChemical Reactor&r.\\n\\nFrom there, you'll be able to craft it using &aBenzene&r, &bHydrogen&r, &9Chlorine&r, &bOxygen&r and &3Ammonia&r.\\n\\nWe won't tell you every step, but you should be able to figure it out yourself through &aEMI&r now that you're a fierce Gregtech player.\\n\\nOnce everything is ready, to fill your space suit and can, simply &eRight-Click&r a drum or tank filled with &bOxygen&r."]
 			id: "038B204DAC9C863D"
 			subtitle: "Let's be honest, this may be the hardest"
@@ -1378,26 +1386,8 @@
 				item: "gtceu:mv_bedrock_ore_miner"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -13.0d
-		}
-		{
-			description: [
-				"The HV Chapter will be updated with Moon Update. In the meantime be wary &lnot everything works&r with TFG."
-				""
-				"From there on Space Progression will begin and it will alter your progression through TFG. Be wary for major changes."
-			]
-			icon: "createdeco:decal_warning"
-			id: "66A1F17BB3453F0B"
-			size: 3.0d
-			tasks: [{
-				id: "111DD6881AB718E1"
-				title: "Okay I understand it's not up to date"
-				type: "checkmark"
-			}]
-			title: "Quests are OLD and not updated for TFG"
-			x: 1.5d
-			y: -4.75d
+			x: 2.5d
+			y: -10.5d
 		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]

@@ -1,5 +1,4 @@
 const $ICalendar = Java.loadClass('net.dries007.tfc.util.calendar.ICalendar')
-
 const $LerpFloatLayer = Java.loadClass('net.dries007.tfc.world.chunkdata.LerpFloatLayer')
 
 const TICKS_IN_HOUR = $ICalendar.TICKS_IN_HOUR;
@@ -7,6 +6,8 @@ const TICKS_IN_DAY = $ICalendar.TICKS_IN_DAY;
 const SIX_TIMES_TICKS_IN_HOUR = TICKS_IN_HOUR * 6;
 
 const TWO_PI = JavaMath.PI * 2;
+
+const OXYGENATED_TEMP = 15;
 
 function clamp(val, min, max) {
 	return Math.min(Math.max(val, min), max);
@@ -45,13 +46,14 @@ function calcCurrentTemp(averageTemp, seaLevel, playerY, calendarTicks, tempRang
 		let elevationTemp = clamp((playerY - seaLevel) * 0.16225, 0, 17.822);
 		return averageTemp - elevationTemp + tempDiff;
 	}
-	else if (playerY > 0) {
+	else if (playerY > 20) {
 
 		return averageTemp + (tempDiff * (playerY / seaLevel));
 	}
 	else {
 
-		let depthPercent = 1 - (playerY / -64);
+		// TODO: check this
+		let depthPercent = 1 - (playerY / 20);
 
 		let bedrockTemp = lerp(averageTemp, coreTemp, coreTempMult);
 		
@@ -107,8 +109,12 @@ TFCEvents.registerClimateModel(event => {
 
 	event.register('tfg:orbit_climate', builder => {
 
-		// There's basically no heat diffusion in space so we can pretend this is your spacesuit temp
-		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => 15)
+		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
+			if (OxygenAPI.hasOxygen(level, pos.above())) {
+				return OXYGENATED_TEMP;
+			}
+			return -270;
+		})
 		builder.setAverageTemperatureCalculation((level, pos) => -270)
 		builder.setAverageRainfallCalculation((level, pos) => 0)
 		builder.setAirFog((level, pos, calendarTicks) => 0)
@@ -117,9 +123,11 @@ TFCEvents.registerClimateModel(event => {
 	})
 
 	event.register('tfg:moon_climate', builder => {
-
 		// A source says the moon's equator is 120c at day and -130c at night
 		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
+			if (OxygenAPI.hasOxygen(level, pos.above())) {
+				return OXYGENATED_TEMP;
+			}
 			return calcCurrentTemp(-5, 60, pos.y, calendarTicks, 125, 0, 0)
 		})
 
@@ -133,8 +141,13 @@ TFCEvents.registerClimateModel(event => {
 	event.register('tfg:mars_climate', builder => {
 
 		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
+			if (OxygenAPI.hasOxygen(level, pos.above())) {
+				return OXYGENATED_TEMP;
+			}
 
+			// average of -110 at night, -15 at day
 			let avgTemp = calcAverage(pos.z, 10000, -110, -15);
+			// +- 45 based on latitude, down to -10 at bedrock
 			return calcCurrentTemp(avgTemp, 65, pos.y, calendarTicks, 45, -10, 0.5);
 		})
 

@@ -307,6 +307,7 @@
 			dependencies: [
 				"0B25A282F677744B"
 				"7A55CC71442CC854"
+				"00004BE1D77EA003"
 			]
 			description: [
 				"We admit it... this is a completely &doptional&r Multiblock. Many playtesters kept using their &6HV&r singleblock miners and didn't find any problems in throughput."
@@ -970,10 +971,7 @@
 			y: 9.0d
 		}
 		{
-			dependencies: [
-				"16E3465CF94E2BDD"
-				"4024C831C77101CA"
-			]
+			dependencies: ["4024C831C77101CA"]
 			description: [
 				"The &aAdvanced Energy Detector&r is an RS-latch for Energy Control."
 				""
@@ -1037,6 +1035,7 @@
 			dependencies: [
 				"41D32C5178760F47"
 				"42FB276AB16258D9"
+				"00004BE1D77EA003"
 			]
 			description: [
 				"&aUranium&r has very few uses in &2GTCEu&r right now, as we're &4yet to&r implement our &3Nuclear Reactor&r (it's planned!)."

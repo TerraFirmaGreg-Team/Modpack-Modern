@@ -32,7 +32,7 @@ function registerTFCDirtRecipes(event) {
 		// Dirt -> Mud
 		event.recipes.gtceu.mixer(`${mud}_grass_to_mud`)
 			.itemInputs(`tfc:dirt/${mud}`)
-			.inputFluids(Fluid.of('minecraft:water', 100))
+			.inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfc:any_water" }}))
 			.circuit(2)
 			.itemOutputs(`tfc:mud/${mud}`)
 			.duration(200)

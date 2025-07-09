@@ -2,12 +2,6 @@
 
 function registerTFGDimensionMarkers(event) {
 
-    // TODO
-	event.create('ad_astra:earth_orbit')
-        .iconSupplier(() => Item.of('ad_astra:earth_globe').getItem())
-        .tier(1)
-        .overrideName('Earth Orbit')
-
     event.create('ad_astra:moon')
         .iconSupplier(() => Item.of('tfg:marker/moon').getItem())
         .tier(1)

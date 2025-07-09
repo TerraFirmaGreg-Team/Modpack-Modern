@@ -212,6 +212,11 @@ function registerTFCMetalsRecipes(event) {
 	event.recipes.tfc.welding('tfc:jacks', '#forge:rods/brass', '#forge:plates/brass', 2)
 		.id(`tfc:welding/jacks`)
 
+	event.recipes.greate.compacting('tfc:jacks', ['#forge:rods/brass', '#forge:plates/brass', 'tfc:powder/flux'])
+		.heated()
+		.recipeTier(0)
+		.id('greate:compacting/jacks')
+
 	// Декрафт Jacks
 	event.recipes.tfc.heating('tfc:jacks', 930)
 		.resultFluid(Fluid.of('gtceu:brass', 144))
@@ -321,7 +326,7 @@ function registerTFCMetalsRecipes(event) {
 		
 		event.recipes.gtceu.ore_washer(`tfc:ore_washer/water/deposit/${ore}/${stone}`)
 			.itemInputs(`1x tfc:deposit/${ore}/${stone}`)
-			.inputFluids(Fluid.of('minecraft:water', 100))
+			.inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfg:clean_water" }}))
 			.circuit(4)
 			.itemOutputs(`1x tfc:ore/normal_${ore}`)
 			.duration(400)

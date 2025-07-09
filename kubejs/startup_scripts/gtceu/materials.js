@@ -60,6 +60,9 @@ const registerGTCEuMaterialModification = (event) => {
 		GTToolType.BUZZSAW,
 		GTToolType.SCYTHE,
 		GTToolType.WIRE_CUTTER,
+		GTToolType.WIRE_CUTTER_LV,
+		GTToolType.WIRE_CUTTER_HV,
+		GTToolType.WIRE_CUTTER_IV,
 		GTToolType.DRILL_LV,
 		GTToolType.DRILL_MV,
 		GTToolType.DRILL_HV,
@@ -140,7 +143,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RoseGold.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Silver.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Tin.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Zinc.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Zinc.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_BOLT_SCREW);
 	GTMaterials.SterlingSilver.addFlags(GENERATE_DOUBLE_INGOTS);
 	//
 	//        /* Имеют инструменты, броню TFC, двойные слитки */
@@ -268,7 +271,7 @@ const registerGTCEuMaterialModification = (event) => {
 	// Change byproducts so you can't get certus from normal quartzite
 	GTMaterials.Quartzite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.NetherQuartz, GTMaterials.Barite, GTMaterials.NetherQuartz);
 	GTMaterials.CertusQuartz.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.CertusQuartz, GTMaterials.Quartzite, GTMaterials.CertusQuartz);
-
+	
 	// Color Adjustments
 	GTMaterials.BismuthBronze.setMaterialARGB(0x5A966E)
 	GTMaterials.BismuthBronze.setMaterialSecondaryARGB(0x203E2A)
@@ -324,5 +327,9 @@ const registerGTCEuMaterialModification = (event) => {
 
 	let rose_quartz = GTCEuAPI.materialManager.getMaterial('greate:rose_quartz');
 	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
+	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
 	rose_quartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
+
+	GTCEuAPI.materialManager.getMaterial('tfg:kaolinite').setFormula("Al2Si2O5(OH)4", true)
+	GTCEuAPI.materialManager.getMaterial('tfg:vitrified_pearl').setFormula("(Al2Si2O5(OH)4)(BeK4N5)", true)
 }

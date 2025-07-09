@@ -11,4 +11,5 @@ function registerTFCLunchboxItemTags(event) {
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
 
+	event.add('tfclunchbox:ice', 'tfg:dry_ice')
 }

@@ -52,5 +52,6 @@
       "text": "$(li)Vanadium Magnetite: $(l:tfg_ores/earth_vein_index#normal_magnetite)22%$(/l), $(l:tfg_ores/earth_vein_index#deep_magnetite)25%$(/l)$()$(li)Wulfenite: $(l:tfg_ores/earth_vein_index#deep_molybdenum)47%$(/l)$()$(li)Yellow Garnet: $(l:tfg_ores/earth_vein_index#deep_garnet_amethyst)15%$(/l), $(l:tfg_ores/earth_vein_index#deep_garnet_opal)15%$(/l)$()$(li)Yellow Limonite: $(l:tfg_ores/earth_vein_index#normal_limonite)50%$(/l), $(l:tfg_ores/earth_vein_index#normal_hematite)30%$(/l), $(l:tfg_ores/earth_vein_index#normal_gold)20%$(/l), $(l:tfg_ores/earth_vein_index#deep_hematite)15%$(/l), $(l:tfg_ores/earth_vein_index#deep_limonite)15%$(/l), $(l:tfg_ores/earth_vein_index#deep_gold)5%$(/l)$()$(li)Zeolite: $(l:tfg_ores/earth_vein_index#surface_copper)16%$(/l)$()",
       "type": "patchouli:text"
     }
-  ]
+  ],
+  "sortnum": 0
 }

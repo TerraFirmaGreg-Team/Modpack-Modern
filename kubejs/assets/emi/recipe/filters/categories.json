@@ -46,25 +46,19 @@
             "category": "create:automatic_shaped"
         },
         {
-            "category": "greate:automatic_shaped"
-        },
-        {
             "category": "create:automatic_shapeless"
-        },
-        {
-            "category": "greate:automatic_shapeless"
         },
         {
             "category": "greate:automatic_brewing"
         },
         {
-            "category": "greate:pressing"
+            "category": "greate:fan_haunting"
         },
         {
-            "category": "greate:automatic_packing"
+            "category": "ae2:entropy"
         },
         {
-            "category": "greate:packing"
+            "category": "gtceu:air_scrubber"
         },
         {
             "id": "/emi:/crafting/repairing/[^*]+/"
@@ -94,10 +88,13 @@
             "category": "vintageimprovements:laser_cutting"
         },
         {
-            "category": "ad_astra:oxygen_loading"
+            "category": "ftbquests:quest"
         },
         {
-            "category": "ftbquests:quest"
+            "category": "species:cruncher_pellet"
+        },
+        {
+            "category": "species:goober_goo"
         }
     ]
 }

@@ -43,14 +43,18 @@
 		[
 			"tfg:moon/surface/birt_dwelling",
 			"tfg:moon/surface/dead_coral_fans",
-			"tfg:moon/surface/warped_sprouts_patch"
+			"tfg:moon/surface/warped_sprouts_patch",
+			"tfg:moon/surface/chorus_grass_rare",
+			"tfg:moon/surface/vaiolush_fern",
+			"tfg:moon/surface/salteago",
+			"tfg:moon/surface/inflexia"
 		],
 		[
 			"tfg:moon/hardening"
 		]
 	],
 	"has_precipitation": false,
-	"creature_spawn_probability": 0.00008,
+	"creature_spawn_probability": 0.0001,
 	"spawn_costs": {
 		"species:limpet": {
 			"energy_budget": 0.15,
@@ -62,16 +66,16 @@
 		"axolotls": [],
 		"creature": [
 			{
-				"type": "minecraft:rabbit",
+				"type": "tfg:moon_rabbit",
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100
 			},
 			{
 				"type": "species:birt",
-				"maxCount": 3,
-				"minCount": 2,
-				"weight": 20
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 10
 			}
 		],
 		"misc": [],
@@ -80,13 +84,13 @@
 				"type": "ad_astra:star_crawler",
 				"maxCount": 3,
 				"minCount": 1,
-				"weight": 50
+				"weight": 100
 			},
 			{
 				"type": "ad_astra:corrupted_lunarian",
 				"maxCount": 3,
 				"minCount": 1,
-				"weight": 50
+				"weight": 100
 			},
 			{
 				"type": "minecraft:skeleton",
@@ -104,13 +108,31 @@
 				"type": "species:limpet",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "endermanoverhaul:windswept_hills_enderman",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 20
+			},
+			{
+				"type": "endermanoverhaul:end_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 2
+			},
+			{
+				"type": "endermanoverhaul:end_islands_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 2
+			},
+			{
+				"type": "endermanoverhaul:soulsand_valley_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 2
 			}
 		],
 		"underground_water_creature": [],

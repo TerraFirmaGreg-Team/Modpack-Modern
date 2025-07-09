@@ -1,0 +1,9 @@
+{
+	"id": "species:certus_quartz",
+	"item": "gtceu:poor_raw_certus_quartz",
+	"block": "gtceu:moon_stone_certus_quartz_ore",
+	"maxCount": 8,
+	"spawnWeight": 40,
+	"maxSpawnHeight": 130,
+	"minSpawnHeight": 4
+}

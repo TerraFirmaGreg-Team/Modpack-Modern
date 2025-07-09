@@ -22,6 +22,7 @@ const registerAdAstraMaterials = (event) => {
 		.ore()
 		.addOreByproducts('olivine', 'rutile', 'rutile')
 		.ingot()
+		.blastTemp(2000, 'low', GTValues.VA[GTValues.MV])
 		.flags(
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
 			GTMaterialFlags.GENERATE_PLATE, 
@@ -29,11 +30,9 @@ const registerAdAstraMaterials = (event) => {
 			GTMaterialFlags.GENERATE_DENSE
 		)
 
-	// TODO: remove the components until we know what to put in them
-
 	// mars?
 	event.create('ostrum')
-		.components('2x scheelite', '1x hematite', '1x rutile', '4x oxygen')
+		//.components('2x scheelite', '1x hematite', '1x rutile', '4x oxygen')
 		.color(0xbd7980)
 		.secondaryColor(0xA66C8D)
 		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
@@ -46,7 +45,7 @@ const registerAdAstraMaterials = (event) => {
 
 	// venus?
 	event.create('calorite')
-		.components('2x mercury', '1x tungsten', '1x rhodium', '2x sulfur')
+		//.components('2x mercury', '1x tungsten', '1x rhodium', '2x sulfur')
 		.color(0xC94D4E)
 		.secondaryColor(0x9A296A)
 		.iconSet(GTMaterialIconSet.getByName('tfc_copper'))
@@ -59,7 +58,7 @@ const registerAdAstraMaterials = (event) => {
 
 	// ???
 	event.create('etrium')
-		.components('1x niobium', '1x molybdenum', '1x ruthenium', '3x carbon', '1x monochloramine')
+		//.components('1x niobium', '1x molybdenum', '1x ruthenium', '3x carbon', '1x monochloramine')
 		.color(0x7BFCD7)
 		.secondaryColor(0x3582D2)
 		.iconSet(GTMaterialIconSet.getByName('tfc_silver'))

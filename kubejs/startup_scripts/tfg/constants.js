@@ -68,6 +68,17 @@ global.MARS_BIOMES = [
 	'tfg:mars/martian_mountains'
 ]
 
+global.TFG_MACHINE_CASINGS = [
+	'machine_casing_clean_stainless_steel_desh',
+	'machine_casing_desh_ptfe',
+	'machine_casing_iron_desh',
+	'machine_casing_ptfe_desh',
+	'machine_casing_stainless_steel_desh',
+	'machine_casing_blue_solar_panel',
+	'machine_casing_green_solar_panel',
+	'machine_casing_red_solar_panel'
+];
+
 global.UNIVERSAL_CIRCUIT_TIERS = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv"];
 
 global.FOOD_FRUIT = [

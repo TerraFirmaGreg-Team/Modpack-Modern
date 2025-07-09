@@ -9,29 +9,10 @@
 	quest_links: [ ]
 	quests: [
 		{
+			can_repeat: false
 			description: ["{quests.tfg.welcome.desc}"]
 			icon: "tfg:terra_firma_greg"
 			id: "427814F6E9386772"
-			rewards: [
-				{
-					auto: "no_toast"
-					id: "49E401323B66BD59"
-					item: {
-						Count: 1
-						id: "patchouli:guide_book"
-						tag: {
-							"patchouli:book": "tfc:field_guide"
-						}
-					}
-					type: "item"
-				}
-				{
-					auto: "no_toast"
-					id: "3681660250209F02"
-					item: "ftbquests:book"
-					type: "item"
-				}
-			]
 			shape: "gear"
 			size: 4.0d
 			subtitle: "{quests.tfg.welcome.subtitle}"
@@ -69,7 +50,16 @@
 		{
 			dependencies: ["427814F6E9386772"]
 			description: ["{quests.tfg.capture_territory.desc}"]
-			icon: "createaddition:chocolate_cake"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 14796000L
+						traits: [ ]
+					}
+				}
+				id: "createaddition:chocolate_cake"
+			}
 			id: "0B42D4AE2AC67F93"
 			subtitle: "{quests.tfg.capture_territory.subtitle}"
 			tasks: [{
@@ -84,6 +74,7 @@
 		{
 			dependencies: ["427814F6E9386772"]
 			description: ["{quests.tfg.field_guide.desc}"]
+			disable_toast: true
 			icon: {
 				Count: 1
 				id: "patchouli:guide_book"
@@ -92,31 +83,70 @@
 				}
 			}
 			id: "3D7B0F3134C30364"
+			rewards: [
+				{
+					auto: "no_toast"
+					id: "013F1894A0BED173"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "tfc:field_guide"
+						}
+					}
+					type: "item"
+				}
+				{
+					auto: "no_toast"
+					id: "71AF6F847DC58F4D"
+					item: "ftbquests:book"
+					type: "item"
+				}
+			]
 			subtitle: "{quests.tfg.field_guide.subtitle}"
-			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: "gtceu:overworld_marker"
-				id: "4433F67AD2E0F1D4"
-				title: "{quests.stone_age.temperature.task}"
-				type: "dimension"
-			}]
 			title: "{quests.tfg.field_guide.title}"
 			x: 0.0d
 			y: 3.5d
 		}
 		{
-			dependencies: ["427814F6E9386772"]
-			description: ["{quests.tfg.quest_shapes.desc}"]
-			id: "4232E14D66AF2675"
-			subtitle: "{quests.tfg.quest_shapes.subtitle}"
+			can_repeat: true
+			dependencies: ["3D7B0F3134C30364"]
+			description: ["{quests.tfg.books_again.desc}"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "tfc:field_guide"
+				}
+			}
+			id: "590CE4F4FA385701"
+			rewards: [
+				{
+					id: "58D1E7EFD006D7F7"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "tfc:field_guide"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1470E8AFDC8D994E"
+					item: "ftbquests:book"
+					type: "item"
+				}
+			]
+			shape: "heart"
 			tasks: [{
-				id: "464F635C92FA02DC"
-				title: "{quests.tfg.icons.title}"
+				id: "48D307BC0A3879D4"
 				type: "checkmark"
 			}]
-			title: "{quests.tfg.quest_shapes.title}"
-			x: 2.5d
-			y: 2.5d
+			title: "{quests.tfg.books_again.title}"
+			x: 0.0d
+			y: 4.5d
 		}
 	]
 	subtitle: ["{quests.tfg.subtitle}"]

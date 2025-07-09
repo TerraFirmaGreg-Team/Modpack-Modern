@@ -363,6 +363,7 @@
 			dependencies: [
 				"78277DBC07D3C45C"
 				"48DEABA155605D23"
+				"50754A86249AC252"
 			]
 			description: [
 				"Refining &9Naquadah&r into further products will be your next automation challenge. The primary outputs of this line are &aEnriched Naquadah&r, &aNaquadria&r, and &aTrinium&r. "
@@ -902,6 +903,7 @@
 				""
 				"&9-&r Big Item Pipe networks. Small networks are better, to reduce the number of iterations over inventories."
 			]
+			disable_toast: true
 			icon: "minecraft:mud"
 			id: "63F9531F391040B2"
 			shape: "circle"

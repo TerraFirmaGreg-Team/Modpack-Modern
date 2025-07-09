@@ -27,6 +27,7 @@ const registerTFGItems = (event) => {
     
     event.create('tfg:terra_firma_greg')
         .translationKey('item.tfg.terra_firma_greg')
+        .tag('c:hidden_from_recipe_viewers')
     
     //#region chalk creation
     event.create('tfg:unfired_chalk')
@@ -46,8 +47,8 @@ const registerTFGItems = (event) => {
     // Unfinished Inscriber
 
     event.create('tfg:unfinished_inscriber_accumulation_press')
-        .translationKey('item.tfg.unfinished_inscriber_accumulation_press')
-        .texture('tfg:item/unfinished_inscriber_accumulation_press')
+
+    event.create('tfg:vitrified_pearl')
 
     // #region Molds
     global.TFG_EXTRUDER_MOLDS.forEach(id => event.create(id))
@@ -166,11 +167,7 @@ const registerTFGItems = (event) => {
 
     event.create('tfg:clean_foil_pack')
         .translationKey('item.tfg.clean_foil_pack') 
-        .texture('tfg:item/clean_foil_pack')  
-
-    event.create('tfg:dry_ice')
-        .translationKey('item.tfg.dry_ice') 
-        .texture('tfg:item/dry_ice')  
+        .texture('tfg:item/clean_foil_pack') 
     //#endregion
 
     //#region Cloth & String

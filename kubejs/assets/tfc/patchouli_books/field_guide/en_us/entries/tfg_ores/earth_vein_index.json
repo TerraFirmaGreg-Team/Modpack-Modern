@@ -3746,5 +3746,6 @@
       "text": "$(thing)Percentage$(): 17%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): CaMoO₄",
       "type": "patchouli:multiblock"
     }
-  ]
+  ],
+  "sortnum": 1
 }

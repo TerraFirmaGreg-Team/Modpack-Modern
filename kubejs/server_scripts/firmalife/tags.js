@@ -44,6 +44,12 @@ const registerFirmaLifeFluidTags = (event) => {
     
     // Добавляем тег для скрытия в EMI
     event.add('c:hidden_from_recipe_viewers', 'firmalife:metal/chromium')
+    event.add('c:hidden_from_recipe_viewers', 'firmalife:chocolate')
 
     event.add('firmalife:mixable', 'tfc:spring_water')
+    event.add('firmalife:mixable', 'tfcchannelcasting:white_chocolate')
+    event.add('firmalife:mixable', 'tfcchannelcasting:milk_chocolate')
+    event.add('firmalife:mixable', 'tfcchannelcasting:dark_chocolate')
+    event.add('firmalife:mixable', 'afc:maple_syrup')
+    event.add('firmalife:mixable', 'afc:birch_syrup')
 }

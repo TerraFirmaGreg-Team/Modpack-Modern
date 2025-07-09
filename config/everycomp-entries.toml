@@ -45,10 +45,18 @@
 			ironwood = true
 			ipe = true
 
+		[types.wood_type.ad_astra]
+			aeronos = true
+			strophar = true
+			glacian = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.gtceu]
 			rubber = false
+
+		[types.leaves_type.ad_astra]
+			glacian = true
 
 #Disables specific entries
 [entries]

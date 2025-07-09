@@ -4,6 +4,7 @@ const registerTFGBlocks = (event) => {
 	registerTFGNetherBlocks(event)
 	registerTFGSpaceBlocks(event)
 	registerTFGSupportBlocks(event)
+    registerTFGCrops(event)
 
 	event.create('tfg:artificial_end_portal_frame')
 		.stoneSoundType()
@@ -13,6 +14,36 @@ const registerTFGBlocks = (event) => {
 		.item(item => {
 			item.modelJson({ parent: 'minecraft:block/end_portal_frame' })
 		})
+
+	event.create('tfg:dry_ice', 'tfg:particle_emitter')
+		.textureAll('tfg:block/dry_ice')
+		.soundType('bone_block')
+		.hardness(1)
+		.resistance(1)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfcambiental:cold_stuff')
+		.defaultTranslucent()
+		.mapColor('color_white')
+		.speedFactor(1.2)
+        .particleOffset(1, 1, 1)
+		.particleVelocity(0.05, 0, 0.05)
+		.particle('minecraft:campfire_cosy_smoke')
+		.particleCount(2)
+		.particleForced(false)
+
+	// #region Machine Casings
+
+	global.TFG_MACHINE_CASINGS.forEach(type => {
+		event.create(`tfg:block/casings/${type}`)
+			.model(`tfg:block/casings/${type}`)
+			.soundType('copper')
+			.hardness(5)
+			.resistance(6)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.mapColor('color_light_gray')
+	})
+
+	//#endregion
 
 	// #region Decorative vases
 	global.MINECRAFT_DYE_NAMES.forEach(color => {

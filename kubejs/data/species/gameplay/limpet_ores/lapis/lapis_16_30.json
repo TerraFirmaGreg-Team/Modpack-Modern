@@ -1,0 +1,9 @@
+{
+	"id": "species:lapis",
+	"item": "gtceu:poor_raw_sapphire",
+	"block": "gtceu:moon_stone_sapphire_ore",
+	"maxCount": 12,
+	"spawnWeight": 20,
+	"maxSpawnHeight": 30,
+	"minSpawnHeight": 16
+}

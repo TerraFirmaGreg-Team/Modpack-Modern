@@ -1,0 +1,9 @@
+{
+	"id": "species:coal",
+	"item": "gtceu:poor_raw_graphite",
+	"block": "gtceu:moon_stone_graphite_ore",
+	"maxCount": 8,
+	"spawnWeight": 20,
+	"maxSpawnHeight": 130,
+	"minSpawnHeight": 30
+}

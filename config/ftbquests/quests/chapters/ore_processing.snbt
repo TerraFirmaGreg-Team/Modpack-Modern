@@ -7,123 +7,107 @@
 	id: "24C1683140DBB5F2"
 	images: [
 		{
-			height: 1.0d
+			height: 2.0d
 			image: "ftblibrary:icons/star"
 			rotation: 0.0d
-			width: 1.0d
-			x: -2.5d
-			y: -11.5d
+			width: 2.0d
+			x: -3.5d
+			y: -11.0d
 		}
 		{
-			height: 1.0d
+			height: 2.0d
 			image: "ftblibrary:icons/star"
 			rotation: 0.0d
-			width: 1.0d
-			x: 0.0d
-			y: -7.0d
+			width: 2.0d
+			x: -0.5d
+			y: -6.5d
 		}
 		{
-			height: 1.0d
+			height: 2.0d
 			image: "ftblibrary:icons/star"
 			rotation: 0.0d
-			width: 1.0d
-			x: 12.5d
-			y: -5.0d
+			width: 2.0d
+			x: 12.0d
+			y: -4.5d
 		}
 		{
-			height: 1.0d
+			height: 2.0d
 			image: "ftblibrary:icons/star"
 			rotation: 0.0d
-			width: 1.0d
-			x: -5.5d
-			y: -3.0d
+			width: 2.0d
+			x: -6.0d
+			y: -2.5d
 		}
 		{
-			height: 1.0d
+			height: 2.0d
 			image: "ftblibrary:icons/star"
 			rotation: 0.0d
-			width: 1.0d
-			x: -5.5d
-			y: -13.5d
+			width: 2.0d
+			x: -6.5d
+			y: -13.0d
 		}
 		{
-			height: 1.0d
+			height: 2.0d
 			image: "ftblibrary:icons/star"
 			rotation: 0.0d
-			width: 1.0d
-			x: 3.5d
-			y: -3.0d
+			width: 2.0d
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			height: 2.0d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.5d
+			y: -8.5d
+		}
+		{
+			height: 2.0d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.0d
+			y: -0.5d
 		}
 	]
 	order_index: 0
 	quest_links: [
 		{
-			id: "4A012EEE1E349DAF"
-			linked_quest: "48A8E3210B2BAE1C"
-			shape: "none"
-			size: 2.0d
-			x: -8.5d
-			y: -15.0d
-		}
-		{
 			id: "2425C5C5109FD90C"
 			linked_quest: "48C1E980F7D64317"
-			x: -6.0d
+			x: -6.5d
 			y: -13.0d
-		}
-		{
-			id: "77F1FAA38B676763"
-			linked_quest: "6F1BC99BE641B671"
-			shape: "none"
-			size: 2.0d
-			x: -8.5d
-			y: -13.0d
-		}
-		{
-			id: "7AA7D2592C74D29C"
-			linked_quest: "32046292AA5B0E30"
-			shape: "none"
-			size: 2.0d
-			x: -8.5d
-			y: -11.0d
 		}
 		{
 			id: "098E410F9E564854"
 			linked_quest: "5E4FC017E09ACF44"
-			x: -6.0d
+			x: -6.5d
 			y: -11.0d
 		}
 		{
 			id: "047EB0CB2FDCC07B"
 			linked_quest: "6CF7DCC996BACBFA"
-			x: -6.0d
+			x: -6.5d
 			y: -9.5d
 		}
 		{
 			id: "7EFCFBCD5D01A9C2"
 			linked_quest: "59F7F7A8C76DE31C"
-			x: -6.5d
-			y: -8.5d
+			x: -5.5d
+			y: -9.5d
 		}
 		{
 			id: "5304E40808C81257"
 			linked_quest: "4F3D0D746D26B59F"
-			x: -5.5d
+			x: -6.5d
 			y: -8.5d
 		}
 		{
 			id: "0ADE673FEEDFDA1D"
 			linked_quest: "616E28977F3216D9"
-			x: -3.0d
+			x: -3.5d
 			y: -11.0d
-		}
-		{
-			id: "504C8612A78B1E25"
-			linked_quest: "52DAF93E2F3D688A"
-			shape: "none"
-			size: 2.0d
-			x: -8.5d
-			y: -9.0d
 		}
 		{
 			id: "64DB265509E5C39B"
@@ -161,6 +145,80 @@
 			x: 3.0d
 			y: -2.5d
 		}
+		{
+			id: "55D33C26C288D18B"
+			linked_quest: "59DFC4DA7D29C315"
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			id: "579B261E3FDD2C96"
+			linked_quest: "799288FB7A4DCA11"
+			x: -5.5d
+			y: -8.5d
+		}
+		{
+			id: "25F34E3A8D33CF09"
+			linked_quest: "0D39D83AA5F9D543"
+			x: -5.5d
+			y: -11.0d
+		}
+		{
+			id: "0EB72D703E72A46D"
+			linked_quest: "0D39D83AA5F9D543"
+			x: 0.0d
+			y: -11.0d
+		}
+		{
+			id: "7554B55718546232"
+			linked_quest: "0D39D83AA5F9D543"
+			x: -2.5d
+			y: -11.0d
+		}
+		{
+			id: "768E3275B9E3EE1A"
+			linked_quest: "14710C5B4981CECC"
+			x: -5.5d
+			y: -13.0d
+		}
+		{
+			id: "138C7D4A61E2A77D"
+			linked_quest: "6B10099F3F0931B9"
+			shape: "none"
+			size: 1.5d
+			x: 9.0d
+			y: -15.0d
+		}
+		{
+			id: "668281162F13AA91"
+			linked_quest: "16E7CAC7BC8BFD8E"
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			id: "2EB4A92AFFCAA0BE"
+			linked_quest: "727075AAF9F91FAE"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			id: "561FFC1C2CED7596"
+			linked_quest: "06B4AAC7DD796182"
+			x: 12.0d
+			y: -0.5d
+		}
+		{
+			id: "21670DA706D747EC"
+			linked_quest: "378F0AFCF95354B2"
+			x: 12.0d
+			y: 3.5d
+		}
+		{
+			id: "127B4DBA5C90C23D"
+			linked_quest: "48C1E980F7D64317"
+			x: -3.0d
+			y: -13.0d
+		}
 	]
 	quests: [
 		{
@@ -189,85 +247,77 @@
 			y: -17.0d
 		}
 		{
+			dependencies: ["197A13A0790F000B"]
 			description: ["{quests.ore_proc.macerator_byproduct.desc}"]
 			icon: "gtceu:hv_macerator"
 			id: "68A48B07F9489620"
 			subtitle: "{quests.ore_proc.macerator_byproduct.subtitle}"
-			tasks: [
-				{
-					id: "34740ED2B48819BB"
-					item: "gtceu:hv_macerator"
-					optional_task: true
-					type: "item"
+			tasks: [{
+				disable_toast: true
+				id: "34740ED2B48819BB"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:hv_macerator)item(greate:stainless_steel_crushing_wheel))"
+					}
 				}
-				{
-					id: "0A045AAA4BBEF63F"
-					item: "greate:stainless_steel_crushing_wheel"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "0E86067C993E18BF"
-					type: "checkmark"
-				}
-			]
+				title: "{quests.ore_proc.macerator_byproduct.task}"
+				type: "item"
+			}]
 			title: "{quests.ore_proc.macerator_byproduct.title}"
 			x: -6.0d
 			y: -2.5d
 		}
 		{
+			dependencies: ["0F0525A70047EEB2"]
 			description: ["{quests.ore_proc.mercury_ores.desc}"]
 			icon: "gtceu:mercury_bucket"
 			id: "7C67BAEE68852188"
 			subtitle: "{quests.ore_proc.mercury_ores.subtitle}"
 			tasks: [
 				{
+					disable_toast: true
 					id: "1BB9800D737EBEE4"
 					item: "gtceu:lv_chemical_bath"
-					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "0D235407594C22F2"
 					item: "gtceu:mercury_bucket"
 					optional_task: true
 					type: "item"
 				}
-				{
-					id: "09E366F7C581F34F"
-					type: "checkmark"
-				}
 			]
 			title: "{quests.ore_proc.mercury_ores.title}"
 			x: -2.0d
-			y: -7.0d
+			y: -6.5d
 		}
 		{
+			dependencies: ["0F0525A70047EEB2"]
 			description: ["{quests.ore_proc.sodium_persuflate.desc}"]
 			icon: "gtceu:sodium_persulfate_bucket"
 			id: "3513778F204293CD"
 			subtitle: "{quests.ore_proc.sodium_persuflate.subtitle}"
 			tasks: [
 				{
+					disable_toast: true
 					id: "6E0289DE2614FDB2"
 					item: "gtceu:lv_chemical_bath"
-					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "5615AC3A2E3F915E"
 					item: "gtceu:sodium_persulfate_bucket"
 					optional_task: true
 					type: "item"
 				}
-				{
-					id: "33B1AD17A68606A6"
-					type: "checkmark"
-				}
 			]
 			title: "{quests.ore_proc.sodium_persuflate.title}"
 			x: -3.0d
-			y: -7.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["7C67BAEE68852188"]
@@ -278,11 +328,13 @@
 			subtitle: "{quests.ore_proc.mercury.subtitle}"
 			tasks: [
 				{
+					disable_toast: true
 					id: "3FC4A7F71B918F68"
 					item: "gtceu:crushed_platinum_ore"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "417A27E90C01166E"
 					item: {
 						Count: 1
@@ -297,11 +349,13 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "3D85D53762AA09F5"
 					item: "gtceu:crushed_cooperite_ore"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "074FD2C736818A95"
 					item: {
 						Count: 1
@@ -318,7 +372,7 @@
 			]
 			title: "{quests.ore_proc.mercury.title}"
 			x: -2.0d
-			y: -6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3513778F204293CD"]
@@ -329,16 +383,19 @@
 			subtitle: "{quests.ore_proc.sodium_ores.subtitle}"
 			tasks: [
 				{
+					disable_toast: true
 					id: "605F3A1BFD554922"
 					item: "gtceu:crushed_aluminium_ore"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "5ADFEF5AF8FDD5AF"
 					item: "gtceu:crushed_bauxite_ore"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "28A082F6FF520B21"
 					item: "gtceu:crushed_cobalt_ore"
 					type: "item"
@@ -346,21 +403,23 @@
 			]
 			title: "{quests.ore_proc.sodium_ores.title}"
 			x: -3.0d
-			y: -6.0d
+			y: -5.5d
 		}
 		{
+			dependencies: ["139DA665659785B2"]
 			description: ["{quests.ore_proc.indium.desc}"]
 			icon: "gtceu:indium_dust"
 			id: "642FD77427A3B2FA"
 			subtitle: "{quests.ore_proc.indium.subtitle}"
 			tasks: [
 				{
+					disable_toast: true
 					id: "199F216EDD90F24E"
 					item: "gtceu:indium_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "246799A19B9A47B6"
 					item: {
 						Count: 1
@@ -376,12 +435,14 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "54041D4FF39893F5"
 					item: "gtceu:purified_galena_ore"
 					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "475C90F0EA16C2F9"
 					item: {
 						Count: 1
@@ -390,6 +451,7 @@
 							"ftbfiltersystem:filter": "only_one(item(gtceu:indium_concentrate_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:indium_concentrate\"}}))"
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -398,18 +460,20 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["00004BE1D77EA003"]
 			description: ["{quests.ore_proc.platline.desc}"]
 			icon: "gtceu:platinum_group_sludge_dust"
 			id: "7B2EE67E37809269"
 			subtitle: "{quests.ore_proc.platline.subtitle}"
 			tasks: [
 				{
+					disable_toast: true
 					id: "2CEBE8BC5E3AF11A"
 					item: "gtceu:platinum_group_sludge_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "1F185450C1FF7379"
 					item: {
 						Count: 1
@@ -425,6 +489,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "6140EA15476B4A16"
 					item: {
 						Count: 1
@@ -440,6 +505,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "6F239C59DC002095"
 					item: {
 						Count: 1
@@ -455,6 +521,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "29D38459E25A0D3E"
 					item: {
 						Count: 1
@@ -470,12 +537,14 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "22DF4DB3FF6976EA"
 					item: "gtceu:purified_cooperite_ore"
 					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "1A8C5E755FE82C59"
 					item: {
 						Count: 1
@@ -490,105 +559,114 @@
 					optional_task: true
 					type: "item"
 				}
-				{
-					id: "1637CE96CB926DF2"
-					type: "checkmark"
-				}
 			]
 			title: "{quests.ore_proc.platline.title}"
-			x: -2.5d
+			x: -3.0d
 			y: -0.5d
 		}
 		{
+			dependencies: ["0F0525A70047EEB2"]
 			description: ["{quests.ore_proc.thermal_centrifuge.desc}"]
 			icon: "gtceu:lv_thermal_centrifuge"
 			id: "6BAC3BE1D4FE0F6B"
 			subtitle: "{quests.ore_proc.thermal_centrifuge.subtitle}"
-			tasks: [
-				{
-					id: "5626010B0878F067"
-					item: "gtceu:lv_thermal_centrifuge"
-					optional_task: true
-					type: "item"
+			tasks: [{
+				disable_toast: true
+				id: "5626010B0878F067"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_thermal_centrifuge)item(gtceu:mv_thermal_centrifuge)item(gtceu:hv_thermal_centrifuge)item(gtceu:ev_thermal_centrifuge)item(gtceu:iv_thermal_centrifuge)item(gtceu:luv_thermal_centrifuge)item(gtceu:zpm_thermal_centrifuge)item(gtceu:uv_thermal_centrifuge))"
+					}
 				}
-				{
-					id: "5C4C3401C72CC768"
-					type: "checkmark"
-				}
-			]
+				title: "{quests.ore_proc.thermal_centrifuge.task}"
+				type: "item"
+			}]
 			title: "{quests.ore_proc.thermal_centrifuge.title}"
 			x: -0.5d
 			y: -6.5d
 		}
 		{
+			dependencies: ["0F0525A70047EEB2"]
 			description: ["{quests.ore_proc.sifter.desc}"]
 			icon: "gtceu:lv_sifter"
 			id: "31A6A236B6710B95"
 			subtitle: "{quests.ore_proc.sifter.subtitle}"
-			tasks: [
-				{
-					id: "018A18B6F52ED096"
-					item: "gtceu:lv_sifter"
-					optional_task: true
-					type: "item"
+			tasks: [{
+				disable_toast: true
+				id: "018A18B6F52ED096"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_sifter)item(gtceu:mv_sifter)item(gtceu:hv_sifter)item(gtceu:ev_sifter)item(gtceu:iv_sifter)item(gtceu:luv_sifter)item(gtceu:zpm_sifter)item(gtceu:uv_sifter))"
+					}
 				}
-				{
-					id: "1BA3E3F150F2296C"
-					type: "checkmark"
-				}
-			]
+				title: "{quests.ore_proc.sifter.task}"
+				type: "item"
+			}]
 			title: "{quests.ore_proc.sifter.title}"
 			x: 0.5d
 			y: -6.5d
 		}
 		{
+			dependencies: ["0F0525A70047EEB2"]
 			description: ["{quests.ore_proc.centrifuge_sifter.desc}"]
 			icon: "gtceu:lv_centrifuge"
 			id: "2F1AFDB17C5FC291"
 			subtitle: "{quests.ore_proc.centrifuge_sifter.subtitle}"
-			tasks: [
-				{
-					id: "7B3C64B98597B573"
-					item: "gtceu:lv_centrifuge"
-					optional_task: true
-					type: "item"
+			tasks: [{
+				disable_toast: true
+				id: "7B3C64B98597B573"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_centrifuge)item(gtceu:mv_centrifuge)item(gtceu:hv_centrifuge)item(gtceu:ev_centrifuge)item(gtceu:iv_centrifuge)item(gtceu:luv_centrifuge)item(gtceu:zpm_centrifuge)item(gtceu:uv_centrifuge))"
+					}
 				}
-				{
-					id: "54EA71173CCA6298"
-					type: "checkmark"
-				}
-			]
+				title: "{quests.ore_proc.centrifuge_sifter.task}"
+				type: "item"
+			}]
 			title: "{quests.ore_proc.centrifuge_sifter.title}"
 			x: 6.0d
 			y: -6.5d
 		}
 		{
+			dependencies: ["0F0525A70047EEB2"]
 			description: ["{quests.ore_proc.electro_separator.desc}"]
 			icon: "gtceu:lv_electromagnetic_separator"
 			id: "5DC7D0B4E591417D"
+			optional: true
 			subtitle: "{quests.ore_proc.electro_separator.subtitle}"
 			tasks: [
 				{
+					disable_toast: true
 					id: "2F017A29A979276C"
-					item: "gtceu:hv_electromagnetic_separator"
-					optional_task: true
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:lv_electromagnetic_separator)item(gtceu:mv_electromagnetic_separator)item(gtceu:hv_electromagnetic_separator)item(gtceu:ev_electromagnetic_separator)item(gtceu:iv_electromagnetic_separator)item(gtceu:luv_electromagnetic_separator)item(gtceu:zpm_electromagnetic_separator)item(gtceu:uv_electromagnetic_separator))"
+						}
+					}
+					title: "{quests.ore_proc.electro_separator.task}"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "6B3DD2CB3874478A"
 					item: "gtceu:pure_bastnasite_dust"
 					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "753028DDF077DCFD"
 					item: "gtceu:pure_naquadah_dust"
 					optional_task: true
 					type: "item"
-				}
-				{
-					id: "4347664AB3BF5736"
-					type: "checkmark"
 				}
 			]
 			title: "{quests.ore_proc.electro_separator.title}"
@@ -596,54 +674,54 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["0F0525A70047EEB2"]
 			description: ["{quests.ore_proc.electrolyzer.desc}"]
 			icon: "gtceu:lv_electrolyzer"
 			id: "1BE7400D97562227"
 			subtitle: "{quests.ore_proc.electrolyzer.subtitle}"
-			tasks: [
-				{
-					id: "266A62102285A81F"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:lv_electrolyzer)item(gtceu:mv_electrolyzer)item(gtceu:hv_electrolyzer)item(gtceu:ev_electrolyzer)item(gtceu:iv_electrolyzer)item(gtceu:luv_electrolyzer)item(gtceu:zpm_electrolyzer)item(gtceu:uv_electrolyzer))"
-						}
+			tasks: [{
+				disable_toast: true
+				id: "266A62102285A81F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_electrolyzer)item(gtceu:mv_electrolyzer)item(gtceu:hv_electrolyzer)item(gtceu:ev_electrolyzer)item(gtceu:iv_electrolyzer)item(gtceu:luv_electrolyzer)item(gtceu:zpm_electrolyzer)item(gtceu:uv_electrolyzer))"
 					}
-					optional_task: true
-					type: "item"
 				}
-				{
-					id: "63355BE55659968E"
-					type: "checkmark"
-				}
-			]
+				title: "{quests.ore_proc.electrolyzer.task}"
+				type: "item"
+			}]
 			title: "{quests.ore_proc.electrolyzer.title}"
 			x: 11.5d
 			y: -6.5d
 		}
 		{
+			dependencies: ["0F0525A70047EEB2"]
 			description: ["{quests.ore_proc.packer.desc}"]
 			icon: "gtceu:lv_packer"
 			id: "0D75C3A7D69E12C2"
+			optional: true
 			subtitle: "{quests.ore_proc.packer.subtitle}"
-			tasks: [
-				{
-					id: "5B4F1397CD746E02"
-					item: "gtceu:lv_packer"
-					optional_task: true
-					type: "item"
+			tasks: [{
+				disable_toast: true
+				id: "5B4F1397CD746E02"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_packer)item(gtceu:mv_packer)item(gtceu:hv_packer)item(gtceu:ev_packer)item(gtceu:iv_packer)item(gtceu:luv_packer)item(gtceu:zpm_packer)item(gtceu:uv_packer))"
+					}
 				}
-				{
-					id: "1652532FFCF3E37A"
-					type: "checkmark"
-				}
-			]
+				title: "{quests.ore_proc.packer.task}"
+				type: "item"
+			}]
 			title: "{quests.ore_proc.packer.title}"
 			x: 12.5d
 			y: -6.5d
 		}
 		{
+			dependencies: ["139DA665659785B2"]
 			description: ["{quests.ore_proc.gtcy.desc}"]
 			icon: "gtceu:alloy_blast_smelter"
 			id: "335FE15E81D3AB06"
@@ -703,6 +781,7 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["197A13A0790F000B"]
 			description: ["{quests.ore_proc.ae2.desc}"]
 			icon: "expatternprovider:tag_storage_bus"
 			id: "4ED1E28BDDE50E6C"
@@ -732,6 +811,7 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["0F0525A70047EEB2"]
 			description: ["{quests.ore_proc.robot_arm.desc}"]
 			icon: "gtceu:item_tag_filter"
 			id: "5AB0C996B1325FDC"
@@ -767,6 +847,7 @@
 			y: -6.5d
 		}
 		{
+			description: ["{quests.ore_proc.crushed_ore.desc}"]
 			disable_toast: true
 			icon: {
 				Count: 1
@@ -781,10 +862,12 @@
 			id: "4C76859CD8C12690"
 			shape: "none"
 			size: 2.0d
+			title: "{quests.ore_proc.crushed_ore.title}"
 			x: -3.0d
 			y: -17.0d
 		}
 		{
+			description: ["{quests.ore_proc.purified_ore.desc}"]
 			disable_toast: true
 			icon: {
 				Count: 1
@@ -799,10 +882,12 @@
 			id: "02F8510F70A601A2"
 			shape: "none"
 			size: 2.0d
+			title: "{quests.ore_proc.purified_ore.title}"
 			x: 0.0d
 			y: -17.0d
 		}
 		{
+			description: ["{quests.ore_proc.impure_dust.desc}"]
 			disable_toast: true
 			icon: {
 				Count: 1
@@ -817,6 +902,7 @@
 			id: "28620465270505D0"
 			shape: "none"
 			size: 2.0d
+			title: "{quests.ore_proc.impure_dust.title}"
 			x: 6.0d
 			y: -17.0d
 		}
@@ -842,10 +928,12 @@
 			y: -17.0d
 		}
 		{
+			dependencies: ["186CFAA5A444ECB3"]
 			description: ["{quests.stone_age.crush_crushed_ore.desc}"]
 			id: "5E4B1B9C1829F855"
 			subtitle: "{quests.stone_age.crush_crushed_ore.subtitle}"
 			tasks: [{
+				disable_toast: true
 				id: "079F2F7C23194D34"
 				item: {
 					Count: 1
@@ -865,10 +953,11 @@
 				type: "item"
 			}]
 			title: "{quests.stone_age.crush_crushed_ore.title}"
-			x: 0.0d
+			x: -3.0d
 			y: -15.0d
 		}
 		{
+			dependencies: ["186CFAA5A444ECB3"]
 			description: ["{quests.stone_age.clean_dust.desc}"]
 			id: "6B10099F3F0931B9"
 			shape: "none"
@@ -885,6 +974,7 @@
 			y: -15.0d
 		}
 		{
+			description: ["{quests.ore_proc.refined_ore.desc}"]
 			disable_toast: true
 			icon: {
 				Count: 1
@@ -899,10 +989,12 @@
 			id: "7B4061405939BF78"
 			shape: "none"
 			size: 2.0d
+			title: "{quests.ore_proc.refined_ore.title}"
 			x: 3.0d
 			y: -17.0d
 		}
 		{
+			description: ["{quests.ore_proc.purified_dust.desc}"]
 			disable_toast: true
 			icon: {
 				Count: 1
@@ -917,35 +1009,59 @@
 			id: "73B4762495158576"
 			shape: "none"
 			size: 2.0d
+			title: "{quests.ore_proc.purified_dust.title}"
 			x: 9.0d
 			y: -17.0d
 		}
 		{
+			description: ["{quests.ore_proc.lv_tier.desc}"]
+			disable_toast: true
+			icon: "tfg:lv_universal_circuit"
 			id: "0F0525A70047EEB2"
 			shape: "none"
 			size: 2.0d
 			tasks: [{
+				disable_toast: true
 				id: "60E79E2DF0407ADA"
-				item: "tfg:lv_universal_circuit"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/lv)"
+					}
+				}
+				title: "Any #gtceu:circuits/lv"
 				type: "item"
 			}]
+			title: "{quests.ore_proc.lv_tier.title}"
 			x: -8.5d
 			y: -6.5d
 		}
 		{
+			dependencies: ["0F0525A70047EEB2"]
 			description: ["{quests.ore_proc.ore_washer.desc}"]
+			icon: "gtceu:lv_ore_washer"
 			id: "7F8293CE8C6F5992"
 			subtitle: "{quests.ore_proc.ore_washer.subtitle}"
 			tasks: [{
+				disable_toast: true
 				id: "44B66D2EA30193E1"
-				item: "gtceu:lv_ore_washer"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_ore_washer)item(gtceu:mv_ore_washer)item(gtceu:hv_ore_washer)item(gtceu:ev_ore_washer)item(gtceu:iv_ore_washer)item(gtceu:luv_ore_washer)item(gtceu:zpm_ore_washer)item(gtceu:uv_ore_washer))"
+					}
+				}
+				title: "{quests.ore_proc.ore_washer.task}"
 				type: "item"
 			}]
 			title: "{quests.ore_proc.ore_washer.title}"
 			x: -4.0d
-			y: -7.0d
+			y: -6.5d
 		}
 		{
+			description: ["{quests.ore_proc.raw_ore.desc}"]
 			disable_toast: true
 			icon: {
 				Count: 1
@@ -960,16 +1076,27 @@
 			id: "05292CA5C7BA7F0E"
 			shape: "none"
 			size: 2.0d
+			title: "{quests.ore_proc.raw_ore.title}"
 			x: -6.0d
 			y: -17.0d
 		}
 		{
+			dependencies: ["0F0525A70047EEB2"]
 			description: ["{quests.ore_proc.macerator_separator.desc}"]
+			icon: "gtceu:lv_macerator"
 			id: "50C49B1DED197472"
 			subtitle: "{quests.ore_proc.macerator_separator.subtitle}"
 			tasks: [{
+				disable_toast: true
 				id: "3F57BA92AF356F4A"
-				item: "gtceu:lv_macerator"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_macerator)item(gtceu:mv_macerator)item(gtceu:hv_macerator)item(gtceu:ev_macerator)item(gtceu:iv_macerator)item(gtceu:luv_macerator)item(gtceu:zpm_macerator)item(gtceu:uv_macerator))"
+					}
+				}
+				title: "{quests.ore_proc.macerator_separator.task}"
 				type: "item"
 			}]
 			title: "{quests.ore_proc.macerator_separator.title}"
@@ -977,87 +1104,140 @@
 			y: -6.5d
 		}
 		{
+			description: ["{quests.ore_proc.mv_tier.desc}"]
+			disable_toast: true
+			icon: "tfg:mv_universal_circuit"
 			id: "05A072877CA01773"
 			shape: "none"
 			size: 2.0d
 			tasks: [{
+				disable_toast: true
 				id: "6F5BF1630331B01F"
-				item: "tfg:mv_universal_circuit"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/mv)"
+					}
+				}
+				title: "Any #gtceu:circuits/mv"
 				type: "item"
 			}]
+			title: "{quests.ore_proc.mv_tier.title}"
 			x: -8.5d
 			y: -4.5d
 		}
 		{
+			description: ["{quests.ore_proc.hv_tier.desc}"]
+			disable_toast: true
+			icon: "tfg:hv_universal_circuit"
 			id: "197A13A0790F000B"
 			shape: "none"
 			size: 2.0d
 			tasks: [{
+				disable_toast: true
 				id: "6A9A6A6F03B81570"
-				item: "tfg:hv_universal_circuit"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/hv)"
+					}
+				}
+				title: "Any #gtceu:circuits/hv"
 				type: "item"
 			}]
+			title: "{quests.ore_proc.hv_tier.title}"
 			x: -8.5d
 			y: -2.5d
 		}
 		{
+			description: ["{quests.ore_proc.iv_tier.desc}"]
+			disable_toast: true
+			icon: "tfg:iv_universal_circuit"
 			id: "139DA665659785B2"
 			shape: "none"
 			size: 2.0d
 			tasks: [{
+				disable_toast: true
 				id: "45E009C49BDC38C7"
-				item: "tfg:iv_universal_circuit"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/iv)"
+					}
+				}
+				title: "Any #gtceu:circuits/iv"
 				type: "item"
 			}]
+			title: "{quests.ore_proc.iv_tier.title}"
 			x: -8.5d
 			y: 1.5d
 		}
 		{
+			description: ["{quests.ore_proc.ev_tier.desc}"]
+			disable_toast: true
+			icon: "tfg:ev_universal_circuit"
 			id: "00004BE1D77EA003"
 			shape: "none"
 			size: 2.0d
 			tasks: [{
+				disable_toast: true
 				id: "678B5C2C0F83BF80"
-				item: "tfg:ev_universal_circuit"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/ev)"
+					}
+				}
+				title: "Any #gtceu:circuits/ev"
 				type: "item"
 			}]
+			title: "{quests.ore_proc.ev_tier.title}"
 			x: -8.5d
 			y: -0.5d
 		}
 		{
+			description: ["{quests.ore_proc.luv_tier.desc}"]
+			disable_toast: true
+			icon: "tfg:luv_universal_circuit"
 			id: "50754A86249AC252"
 			shape: "none"
 			size: 2.0d
 			tasks: [{
+				disable_toast: true
 				id: "3FCBD714438141AD"
-				item: "tfg:luv_universal_circuit"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/luv)"
+					}
+				}
+				title: "Any #gtceu:circuits/luv"
 				type: "item"
 			}]
+			title: "{quests.ore_proc.luv_tier.title}"
 			x: -8.5d
 			y: 3.5d
 		}
 		{
-			id: "5999B06EB64CDC5D"
-			tasks: [{
-				id: "6BE08F74EB8AF6DD"
-				item: "gtceu:purified_naquadah_ore"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 3.5d
-		}
-		{
+			dependencies: ["186CFAA5A444ECB3"]
 			description: ["{quests.stone_age.crush_ore.desc}"]
 			disable_toast: true
 			id: "03F56DA158E0E0DC"
 			subtitle: "{quests.stone_age.crush_ore.subtitle}"
 			tasks: [
 				{
+					disable_toast: true
 					id: "4E118068B0A83607"
 					item: "tfc:quern"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "3CED3CD0D664F953"
 					item: {
 						Count: 1
@@ -1074,14 +1254,133 @@
 			y: -15.0d
 		}
 		{
-			id: "57B535E63AED6DAF"
+			description: ["{quests.ore_proc.copper_tier.desc}"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/anvil/copper"
+			}
+			id: "186CFAA5A444ECB3"
+			shape: "none"
+			size: 2.0d
+			title: "{quests.ore_proc.copper_tier.title}"
+			x: -8.5d
+			y: -15.0d
+		}
+		{
+			description: ["{quests.ore_proc.bronze_tier.desc}"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/anvil/bronze"
+			}
+			id: "55FDF06AC0C01D0B"
+			shape: "none"
+			size: 2.0d
 			tasks: [{
-				id: "69D8E2C0D6273D6C"
-				item: "gtceu:purified_uraninite_ore"
+				disable_toast: true
+				id: "5AF9AB48418B20D1"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:bronze_anvils)"
+					}
+				}
+				match_nbt: false
+				title: "Any #tfc:bronze_anvils"
 				type: "item"
+				weak_nbt_match: true
 			}]
-			x: -3.5d
-			y: -0.5d
+			title: "{quests.ore_proc.bronze_tier.title}"
+			x: -8.5d
+			y: -13.0d
+		}
+		{
+			description: ["{quests.ore_proc.steel_tier.desc}"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/anvil/steel"
+			}
+			id: "05A39719B66B8F76"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				disable_toast: true
+				id: "4251CFAC53CD0017"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/steel"
+				}
+				match_nbt: false
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "{quests.ore_proc.steel_tier.title}"
+			x: -8.5d
+			y: -11.0d
+		}
+		{
+			description: ["{quests.ore_proc.steam_tier.desc}"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/anvil/black_steel"
+			}
+			id: "6100B3C732E379AA"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				disable_toast: true
+				id: "3CA212C1B9E8039F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/black_steel"
+				}
+				match_nbt: false
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "{quests.ore_proc.steam_tier.title}"
+			x: -8.5d
+			y: -9.0d
 		}
 	]
 	subtitle: ["{quests.ore_proc.subtitle}"]

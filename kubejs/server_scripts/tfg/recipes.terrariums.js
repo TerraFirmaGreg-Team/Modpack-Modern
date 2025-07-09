@@ -180,7 +180,7 @@ function registerTFGTerrariumRecipes(event) {
 		'B',
 		'C' 
 	], {
-		A: 'minecraft:ender_eye',
+		A: 'tfg:vitrified_pearl',
 		B: 'minecraft:cyan_carpet',
 		C: 'minecraft:end_stone'
 	}).id('tfg:shaped/artificial_end_portal_frame')
