@@ -135,6 +135,13 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:small_skulk_dust',
     'gtceu:skulk_dust',
 
+    // Ender eye
+    'gtceu:ender_eye_plate',
+    'gtceu:ender_eye_block',
+    'gtceu:ender_eye_dust',
+    'gtceu:small_ender_eye_dust',
+    'gtceu:tiny_ender_eye_dust',
+
     // Marble
     'gtceu:marble',
     'gtceu:marble_cobblestone',

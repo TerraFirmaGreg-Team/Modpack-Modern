@@ -65,7 +65,7 @@
 				type: "dimension"
 			}]
 			title: "{quests.tfg_tips.arborfirmacraft.title}"
-			x: -6.0d
+			x: -5.5d
 			y: 0.0d
 		}
 		{
@@ -123,7 +123,7 @@
 			}]
 			title: "{quests.tfg_tips.terrafirmacraft.title}"
 			x: 0.0d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["1469936B5DE3AC28"]
@@ -136,7 +136,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.treetap.title}"
-			x: -9.5d
+			x: -8.0d
 			y: 0.0d
 		}
 		{
@@ -148,7 +148,7 @@
 			description: ["{quests.tfg_tips.create_rubber_ingot.desc}"]
 			id: "6903C72A254A7B08"
 			shape: "gear"
-			size: 4.0d
+			size: 3.0d
 			subtitle: "{quests.tfg_tips.create_rubber_ingot.subtitle}"
 			tasks: [{
 				id: "12CE161368CA3973"
@@ -156,7 +156,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_rubber_ingot.title}"
-			x: -16.0d
+			x: -13.0d
 			y: 0.0d
 		}
 		{
@@ -175,7 +175,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_sticky_resin.title}"
-			x: -12.5d
+			x: -10.5d
 			y: -1.5d
 		}
 		{
@@ -196,7 +196,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.find_latex_tree.title}"
-			x: -12.5d
+			x: -10.5d
 			y: 0.0d
 		}
 		{
@@ -214,7 +214,7 @@
 				type: "observation"
 			}]
 			title: "{quests.tfg_tips.find_syrup_tree.title}"
-			x: -10.5d
+			x: -9.0d
 			y: 1.5d
 		}
 		{
@@ -236,7 +236,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_tree_sugar.title}"
-			x: -10.5d
+			x: -9.0d
 			y: 3.0d
 		}
 		{
@@ -637,6 +637,7 @@
 			subtitle: "{quests.tfg_tips.passive_preservation.subtitle}"
 			tasks: [{
 				dimension: "minecraft:overworld"
+				disable_toast: true
 				icon: "gtceu:overworld_marker"
 				id: "5BAF5F5343C3E42A"
 				title: "{quests.stone_age.temperature.task}"
@@ -1188,8 +1189,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.greenhouse.title}"
-			x: 2.0d
-			y: -4.5d
+			x: 0.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -1230,7 +1231,7 @@
 			]
 			title: "{quests.tfg_tips.charcoal_pile.title}"
 			x: -2.0d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -1261,12 +1262,13 @@
 			]
 			title: "{quests.tfg_tips.thatch_bed.title}"
 			x: 0.0d
-			y: 8.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
 				"11AB8966EC8C10ED"
 				"0FACA5FBFCB26266"
+				"2D973C6DBC873824"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.bed.desc}"]
@@ -1288,7 +1290,7 @@
 			}]
 			title: "{quests.tfg_tips.bed.title}"
 			x: 0.0d
-			y: 15.0d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -1313,7 +1315,7 @@
 			}]
 			title: "{quests.tfg_tips.loom.title}"
 			x: 0.0d
-			y: 9.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1766C916084261AA"]
@@ -1327,7 +1329,7 @@
 			}]
 			title: "{quests.tfg_tips.wool_cloth.title}"
 			x: -1.0d
-			y: 12.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["1766C916084261AA"]
@@ -1340,8 +1342,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.pineapple_leather.title}"
-			x: 0.0d
-			y: 12.0d
+			x: -1.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1766C916084261AA"]
@@ -1354,8 +1356,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.burlap_cloth.title}"
-			x: -2.0d
-			y: 12.0d
+			x: 1.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["1766C916084261AA"]
@@ -1368,8 +1370,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.silk_cloth.title}"
-			x: 1.0d
-			y: 12.0d
+			x: 0.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["1766C916084261AA"]
@@ -1382,8 +1384,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.unrefined_paper.title}"
-			x: 2.0d
-			y: 12.0d
+			x: 1.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -1414,7 +1416,7 @@
 			]
 			title: "{quests.tfg_tips.panning.title}"
 			x: -2.0d
-			y: 5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["082310DF9BEA92CE"]
@@ -1438,7 +1440,7 @@
 			}]
 			title: "{quests.tfg_tips.sluice.title}"
 			x: -3.5d
-			y: 5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["79FA776C414AE8E5"]
@@ -1479,8 +1481,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.sleeping_bags.title}"
-			x: -2.0d
-			y: 17.0d
+			x: -3.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["5C01BDDA66249D7B"]
@@ -1508,8 +1510,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.hammocks.title}"
-			x: 2.0d
-			y: 17.0d
+			x: 3.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -1530,7 +1532,7 @@
 			}]
 			title: "{quests.tfg_tips.status_effects.title}"
 			x: 2.0d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["28333A7852497C4D"]
@@ -1551,7 +1553,7 @@
 			}]
 			title: "{quests.tfg_tips.aged_alcohol.title}"
 			x: 3.0d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["28333A7852497C4D"]
@@ -1572,7 +1574,7 @@
 			}]
 			title: "{quests.tfg_tips.pills.title}"
 			x: 3.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["28333A7852497C4D"]
@@ -1593,7 +1595,7 @@
 			}]
 			title: "{quests.tfg_tips.tablets.title}"
 			x: 4.0d
-			y: 5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["28333A7852497C4D"]
@@ -1614,7 +1616,7 @@
 			}]
 			title: "{quests.tfg_tips.salvo.title}"
 			x: 4.0d
-			y: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["128483FFDC8277A0"]
@@ -1631,7 +1633,7 @@
 				type: "observation"
 			}]
 			title: "{quests.tfg_tips.find_rosin_tree.title}"
-			x: -10.5d
+			x: -9.0d
 			y: -1.5d
 		}
 		{
@@ -1645,7 +1647,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_conifer_rosin.title}"
-			x: -10.5d
+			x: -9.0d
 			y: -3.0d
 		}
 		{
@@ -1984,24 +1986,7 @@
 							"ftbfiltersystem:filter": "or(item(tfclunchbox:lunchbox)item(tfclunchbox:cooling_lunchbox))"
 						}
 					}
-					title: "{quests.tfg_tips.lunchbox.task}"
-					type: "item"
-				}
-				{
-					id: "5439AF9F5493A3D1"
-					item: {
-						Count: 1
-						id: "tfclunchbox:universal_capsule"
-						tag: {
-							Damage: 0
-							Durability: 10
-							display: {
-								Name: "{\"translate\":\"item.tfclunchbox.universal_capsule.filled\"}"
-							}
-						}
-					}
-					match_nbt: false
-					optional_task: true
+					title: "{quests.tfg_tips.lunchbox.task.1}"
 					type: "item"
 				}
 				{
@@ -2014,8 +1999,27 @@
 						}
 					}
 					optional_task: true
-					title: "Any #tfclunchbox:ice"
+					title: "{quests.tfg_tips.lunchbox.task.2}"
 					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "56EF08B517ECA2B2"
+					item: {
+						Count: 1
+						id: "gtceu:fluid_cell"
+						tag: {
+							Fluid: {
+								Amount: 1000
+								FluidName: "gtceu:ice"
+							}
+						}
+					}
+					match_nbt: false
+					optional_task: true
+					title: "{quests.tfg_tips.lunchbox.task.3}"
+					type: "item"
+					weak_nbt_match: true
 				}
 			]
 			title: "{quests.tfg_tips.lunchbox.title}"
@@ -2045,6 +2049,44 @@
 			title: "{quests.tfg_tips.tools_tips.cryodesiccation.title}"
 			x: 3.0d
 			y: -20.0d
+		}
+		{
+			dependencies: ["1766C916084261AA"]
+			description: ["{quests.tfg_tips.phantom_silk.desc}"]
+			id: "2D973C6DBC873824"
+			subtitle: "{quests.tfg_tips.phantom_silk.subtitle}"
+			tasks: [{
+				id: "06ACBFC9D58340C0"
+				item: "tfg:phantom_silk"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.phantom_silk.title}"
+			x: 1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["07FBA022050DA24A"]
+			description: ["{quests.tfg_tips.greenhouse_automation.desc}"]
+			id: "30DD0DDF86C96926"
+			optional: true
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{quests.tfg_tips.greenhouse_automation.subtitle}"
+			tasks: [
+				{
+					id: "7C98C30FA74909A5"
+					item: "firmalife:picker"
+					type: "item"
+				}
+				{
+					id: "169EDE2968D7773A"
+					item: "firmalife:sweeper"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.greenhouse_automation.title}"
+			x: 0.0d
+			y: -10.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]

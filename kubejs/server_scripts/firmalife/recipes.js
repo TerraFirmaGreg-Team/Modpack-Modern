@@ -39,6 +39,8 @@ const registerFirmaLifeRecipes = (event) => {
 
 	event.remove({ id: /^firmalife:crafting\/.*_dough/ })
 
+	event.remove({ id: 'firmalife:pot/chocolate' })
+
 	//#endregion
 
 	// Декрафт Jag Lid
@@ -419,7 +421,7 @@ const registerFirmaLifeRecipes = (event) => {
 
 	//#endregion
 
-	event.shaped('2x firmalife:sweeper', [
+	event.shaped('firmalife:sweeper', [
 		'ABD',
 		'CB '
 	], {
@@ -429,15 +431,16 @@ const registerFirmaLifeRecipes = (event) => {
 		D: '#forge:tools/wrenches'
 	}).id('firmalife:crafting/sweeper')
 
-	event.shaped('2x firmalife:picker', [
+	event.shaped('firmalife:picker', [
 		'ABD',
 		'CC ',
-		'CC '
+		'EE '
 	], {
 		A: '#forge:plates/steel',
 		B: 'vintageimprovements:redstone_module',
 		C: '#forge:rods/steel',
-		D: '#forge:tools/wrenches'
+		D: '#forge:tools/wrenches',
+		E: '#forge:hoe_heads/steel'
 	}).id('firmalife:crafting/picker')
 
 	//#endregion
@@ -593,7 +596,77 @@ const registerFirmaLifeRecipes = (event) => {
 	})
 
 	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients([TFC.ingredient.notRotten('firmalife:food/vanilla_ice_cream'), TFC.ingredient.notRotten('firmalife:food/chocolate_chip_cookie_dough')])
+		.itemIngredients([
+			TFC.ingredient.notRotten('firmalife:food/vanilla_ice_cream'),
+			TFC.ingredient.notRotten('firmalife:food/chocolate_chip_cookie_dough')])
 		.outputItem('2x firmalife:food/cookie_dough_ice_cream')
 		.id('firmalife:mixing_bowl/cookie_dough_ice_cream')
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients([
+			TFC.ingredient.notRotten('#forge:eggs'),
+			'#tfg:sugars',
+			'#tfg:sugars',
+			TFC.ingredient.notRotten('#tfc:foods/flour'),
+			TFC.ingredient.notRotten('#tfc:foods/flour')],
+			TFC.fluidStackIngredient('#tfc:milks', 1000))
+		.outputItem('createaddition:cake_base')
+		.id('tfg:mixing_bowl/cake_base')
+
+	event.recipes.firmalife.oven('createaddition:cake_base', 400, 60 * 20, 'createaddition:cake_base_baked')
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients([
+			TFC.ingredient.notRotten('createaddition:cake_base_baked'),
+			TFC.ingredient.notRotten('tfc:food/strawberry'),
+			TFC.ingredient.notRotten('tfc:food/strawberry'),
+			TFC.ingredient.notRotten('tfc:food/strawberry'),
+			'firmalife:spice/vanilla'],
+			Fluid.of('tfcchannelcasting:white_chocolate', 400))
+		.outputItem('tfc:cake')
+		.id('tfg:mixing_bowl/cake')
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients([
+			TFC.ingredient.notRotten('createaddition:cake_base_baked'),
+			TFC.ingredient.notRotten('tfc:food/cherry'),
+			TFC.ingredient.notRotten('tfc:food/cherry'),
+			TFC.ingredient.notRotten('tfc:food/cherry'),
+			'firmalife:food/cocoa_powder'],
+			Fluid.of('tfcchannelcasting:milk_chocolate', 400))
+		.outputItem('createaddition:chocolate_cake')
+		.id('tfg:mixing_bowl/milk_chocolate_cake')
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients([
+			TFC.ingredient.notRotten('createaddition:cake_base_baked'),
+			TFC.ingredient.notRotten('tfc:food/cherry'),
+			TFC.ingredient.notRotten('tfc:food/cherry'),
+			TFC.ingredient.notRotten('tfc:food/cherry'),
+			'firmalife:food/cocoa_powder'],
+			Fluid.of('tfcchannelcasting:dark_chocolate', 400))
+		.outputItem('createaddition:chocolate_cake')
+		.id('tfg:mixing_bowl/dark_chocolate_cake')
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients([
+			TFC.ingredient.notRotten('createaddition:cake_base_baked'),
+			'firmalife:raw_honey',
+			'firmalife:raw_honey',
+			'firmalife:raw_honey',
+			'firmalife:raw_honey'],
+			Fluid.of('afc:maple_syrup', 1000))
+		.outputItem('createaddition:honey_cake')
+		.id('tfg:mixing_bowl/maple_honey_cake')
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients([
+			TFC.ingredient.notRotten('createaddition:cake_base_baked'),
+			'firmalife:raw_honey',
+			'firmalife:raw_honey',
+			'firmalife:raw_honey',
+			'firmalife:raw_honey'],
+			Fluid.of('afc:birch_syrup', 1000))
+		.outputItem('createaddition:honey_cake')
+		.id('tfg:mixing_bowl/birch_honey_cake')
 }

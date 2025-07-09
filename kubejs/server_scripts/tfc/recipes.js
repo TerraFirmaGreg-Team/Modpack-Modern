@@ -131,9 +131,12 @@ const registerTFCRecipes = (event) => {
 	event.smelting('tfc:powder/lime', 'tfc:powder/flux')
 		.id('tfg:smelting/lime')
 
-	// Kaolinite Clay
-	event.smelting('tfc:powder/kaolinite', '2x tfc:kaolin_clay')
-		.id('tfg:smelting/kaolinite_clay')
+	// Kaolinite Clay - regular smelting recipes can't have multiple inputs
+	event.recipes.gtceu.alloy_smelter('tfg:kaolinite')
+		.itemInputs('5x tfc:kaolin_clay')
+		.itemOutputs('tfc:powder/kaolinite')
+		.duration(100)
+		.EUt(16)
 
 	// Fire Clay
 	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_clay')

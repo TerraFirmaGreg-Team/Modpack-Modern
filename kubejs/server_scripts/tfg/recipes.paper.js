@@ -97,12 +97,12 @@ function registerTFGPapermakingRecipes(event) {
 		.id('tfg:quern/soaked_hardwood_strip')
 
 	//Cook hardwood dust in lye
-	generateVatRecipe('tfg:vat/thermochemically_treat_hardwood_dust', 'gtceu:hardwood_dust', 'tfc:lye', 250, 'gtceu:thermochemically_treated_hardwood_dust')
-	generateVatRecipe('tfg:vat/thermochemically_treat_small_hardwood_dust', 'gtceu:small_hardwood_dust', 'tfc:lye', 250, 'gtceu:small_thermochemically_treated_hardwood_dust')
-	generateVatRecipe('tfg:vat/thermochemically_treat_tiny_hardwood_dust', 'gtceu:tiny_hardwood_dust', 'tfc:lye', 250, 'gtceu:tiny_thermochemically_treated_hardwood_dust')
-	generatePotRecipe('thermochemically_treat_hardwood_dust', 3, 'gtceu:hardwood_dust', 'tfc:lye', 250, 'gtceu:thermochemically_treated_hardwood_dust', 600, 300)
-	generatePotRecipe('thermochemically_treat_small_hardwood_dust', 5, 'gtceu:small_hardwood_dust', 'tfc:lye', 250, 'gtceu:small_thermochemically_treated_hardwood_dust', 600, 300)
-	generatePotRecipe('thermochemically_treat_tiny_hardwood_dust', 5, 'gtceu:tiny_hardwood_dust', 'tfc:lye', 250, 'gtceu:tiny_thermochemically_treated_hardwood_dust', 600, 300)
+	generateVatRecipe('tfg:vat/thermochemically_treat_hardwood_dust', 'gtceu:hardwood_dust', 'tfc:lye', 300, 'gtceu:thermochemically_treated_hardwood_dust')
+	generateVatRecipe('tfg:vat/thermochemically_treat_small_hardwood_dust', 'gtceu:small_hardwood_dust', 'tfc:lye', 75, 'gtceu:small_thermochemically_treated_hardwood_dust')
+	generateVatRecipe('tfg:vat/thermochemically_treat_tiny_hardwood_dust', 'gtceu:tiny_hardwood_dust', 'tfc:lye', 33, 'gtceu:tiny_thermochemically_treated_hardwood_dust')
+	generatePotRecipe('thermochemically_treat_hardwood_dust', 3, 'gtceu:hardwood_dust', 'tfc:lye', 300, 'gtceu:thermochemically_treated_hardwood_dust', 600, 300)
+	generatePotRecipe('thermochemically_treat_small_hardwood_dust', 5, 'gtceu:small_hardwood_dust', 'tfc:lye', 75, 'gtceu:small_thermochemically_treated_hardwood_dust', 600, 300)
+	generatePotRecipe('thermochemically_treat_tiny_hardwood_dust', 5, 'gtceu:tiny_hardwood_dust', 'tfc:lye', 33, 'gtceu:tiny_thermochemically_treated_hardwood_dust', 600, 300)
 	generateMixerRecipe(event, 'gtceu:hardwood_dust', Fluid.of('tfc:lye', 150), 'gtceu:thermochemically_treated_hardwood_dust', null, [], 150, 4, 64, 'tfg:mixer/mix_hardwood_dust_with_lye')
 	generateMixerRecipe(event, 'gtceu:small_hardwood_dust', Fluid.of('tfc:lye', 37), 'gtceu:small_thermochemically_treated_hardwood_dust', null, [], 100, 3, 64, 'tfg:mixer/mix_small_hardwood_dust_with_lye')
 	generateMixerRecipe(event, 'gtceu:tiny_hardwood_dust', Fluid.of('tfc:lye', 16), 'gtceu:tiny_thermochemically_treated_hardwood_dust', null, [], 50, 2, 64, 'tfg:mixer/mix_tiny_hardwood_dust_with_lye')

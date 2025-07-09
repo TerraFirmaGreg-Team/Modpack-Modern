@@ -971,10 +971,7 @@
 			y: 9.0d
 		}
 		{
-			dependencies: [
-				"16E3465CF94E2BDD"
-				"4024C831C77101CA"
-			]
+			dependencies: ["4024C831C77101CA"]
 			description: [
 				"The &aAdvanced Energy Detector&r is an RS-latch for Energy Control."
 				""

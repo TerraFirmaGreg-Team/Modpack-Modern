@@ -143,7 +143,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RoseGold.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Silver.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Tin.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Zinc.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Zinc.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_BOLT_SCREW);
 	GTMaterials.SterlingSilver.addFlags(GENERATE_DOUBLE_INGOTS);
 	//
 	//        /* Имеют инструменты, броню TFC, двойные слитки */
@@ -329,4 +329,7 @@ const registerGTCEuMaterialModification = (event) => {
 	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
 	rose_quartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
+
+	GTCEuAPI.materialManager.getMaterial('tfg:kaolinite').setFormula("Al2Si2O5(OH)4", true)
+	GTCEuAPI.materialManager.getMaterial('tfg:vitrified_pearl').setFormula("(Al2Si2O5(OH)4)(BeK4N5)", true)
 }

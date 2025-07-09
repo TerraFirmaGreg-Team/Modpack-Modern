@@ -136,6 +136,7 @@ function registerTFGFoodRecipes(event) {
 		processorRecipe(`${grain}_flatbread_dough`, 300, 8, {
 			itemInputs: [`tfc:food/${grain}_flour`],
 			itemOutputs: [`2x tfc:food/${grain}_dough`],
+			circuit: 1,
 			itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_dough`).copyFood()
 		}).inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfg:clean_water" }}))
 
@@ -143,6 +144,7 @@ function registerTFGFoodRecipes(event) {
 		processorRecipe(`${grain}_dough`, 300, 16, {
 			itemInputs: [`tfc:food/${grain}_flour`, `#tfc:sweetener`],
 			itemOutputs: [`4x firmalife:food/${grain}_dough`],
+			circuit: 1,
 			fluidInputs: [Fluid.of('firmalife:yeast_starter', 200)],
 			itemOutputProvider: TFC.isp.of(`4x firmalife:food/${grain}_dough`).copyFood()
 		})
@@ -470,6 +472,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	processorRecipe('firmalife_masa', 300, 2, {
+		circuit: 3,
 		itemInputs: ["firmalife:food/masa_flour"],
 		itemOutputs: ["2x firmalife:food/masa"],
 		itemOutputProvider: TFC.isp.of("2x firmalife:food/masa").copyFood()
@@ -680,6 +683,53 @@ function registerTFGFoodRecipes(event) {
 		itemOutputs: ["firmalife:food/soy_mixture"],
 		itemOutputProvider: TFC.isp.of('firmalife:food/soy_mixture').copyOldestFood()
 	}).inputFluids(JsonIO.of({ amount: 50, value: { tag: "tfg:clean_water" }}))
+
+	// Cakes
+
+	processorRecipe("cake_base", 300, 8, {
+		circuit: 4,
+		itemInputs: ["#forge:eggs", "2x #tfg:sugars", "2x #tfc:foods/flour"],
+		itemOutputs: ["createaddition:cake_base"],
+		itemOutputProvider: TFC.isp.of("createaddition:cake_base").copyOldestFood()
+	}).inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:milks" }}))
+
+	cookingRecipe("baked_cake_base", "createaddition:cake_base", "createaddition:cake_base_baked")
+
+	processorRecipe("vanilla_cake", 300, 8, {
+		itemInputs: ['createaddition:cake_base_baked', '3x tfc:food/strawberry', 'firmalife:spice/vanilla'],
+		fluidInputs: [Fluid.of("tfcchannelcasting:white_chocolate", 400)],
+		itemOutputs: ["tfc:cake"]
+	})
+
+	processorRecipe("milk_chocolate_cake", 300, 8, {
+		itemInputs: ['createaddition:cake_base_baked', '3x tfc:food/cherry', 'firmalife:food/cocoa_powder'],
+		fluidInputs: [Fluid.of("tfcchannelcasting:milk_chocolate", 400)],
+		itemOutputs: ["createaddition:chocolate_cake"]
+	})
+
+	processorRecipe("dark_chocolate_cake", 300, 8, {
+		itemInputs: ['createaddition:cake_base_baked', '3x tfc:food/cherry', 'firmalife:food/cocoa_powder'],
+		fluidInputs: [Fluid.of("tfcchannelcasting:dark_chocolate", 400)],
+		itemOutputs: ["createaddition:chocolate_cake"]
+	})
+
+	processorRecipe("maple_honey_cake", 300, 8, {
+		itemInputs: ['createaddition:cake_base_baked', '4x firmalife:raw_honey'],
+		fluidInputs: [Fluid.of("afc:maple_syrup", 1000)],
+		itemOutputs: ["createaddition:honey_cake"]
+	})
+
+	processorRecipe("birch_honey_cake", 300, 8, {
+		itemInputs: ['createaddition:cake_base_baked', '4x firmalife:raw_honey'],
+		fluidInputs: [Fluid.of("afc:birch_syrup", 1000)],
+		itemOutputs: ["createaddition:honey_cake"]
+	})
+
+	processorRecipe("birtday_cake", 300, GTValues.VA[GTValues.HV], {
+		itemInputs: ['createaddition:cake_base', '4x species:birt_egg', '4x tfc:food/blueberry', '2x minecraft:chorus_fruit', 'gtceu:blue_alloy_single_wire'],
+		fluidInputs: [Fluid.of('gtceu:helium_3', 50)],
+		itemOutputs: ["species:birtday_cake"]
+	})
 
 	// These don't need the ISP handling, they're just here to keep all the food recipes together
 

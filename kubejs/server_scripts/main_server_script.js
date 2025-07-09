@@ -141,6 +141,7 @@ TFCEvents.data(event => {
 	registerTFCDataForAdAstra(event);
 	registerTFCDataForArborFirmaCraft(event)
 	registerTFCDataForChalk(event);
+	registerTFCDataForCreateAddition(event);
 	registerTFCDataForFirmalife(event)
 	registerTFCDataForGTCEU(event)
 	registerTFCDataForImmersiveAircraft(event);
@@ -235,6 +236,7 @@ ServerEvents.recipes(event => {
 	registerMinecraftRecipes(event)
 	registerModernMarkingRecipes(event)
 	registerMoreRedRecipes(event)
+	registerProgrammedCircuitCardRecipes(event)
 	registerRailWaysRecipes(event)
 	registerRnrRecipes(event)
 	registerSophisticatedBackpacksRecipes(event)
