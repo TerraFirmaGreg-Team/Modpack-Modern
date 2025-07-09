@@ -4,7 +4,7 @@ function registerTFGSpaceRecipes(event) {
 
 	// Change where you can do other recipes
 
-	/*const allowedCombustibleDims = [
+	const allowedCombustibleDims = [
 		{
 			dimension: "minecraft:the_nether",
 			type: "dimension"
@@ -26,7 +26,7 @@ function registerTFGSpaceRecipes(event) {
 	})
 	event.findRecipes({ type: "gtceu:gas_turbine" }).forEach(recipe => {
 		recipe.json.add("recipeConditions", allowedCombustibleDims)
-	})*/
+	})
 
 	// Air collector
 
