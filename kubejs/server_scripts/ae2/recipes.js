@@ -2171,7 +2171,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 
 	// Chemical Reactor
 	event.recipes.gtceu.chemical_reactor('ae2:fluix_pearl')
-		.itemInputs('4x #forge:gems/fluix', '#forge:gems/ender_eye')
+		.itemInputs('4x #forge:gems/fluix', 'tfg:vitrified_pearl')
 		.inputFluids(Fluid.of('tfg:fluix', 576))
 		.itemOutputs('ae2:fluix_pearl')
 		.duration(200)

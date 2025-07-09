@@ -613,8 +613,6 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	// Not-ender pearl stuff
 
-	event.replaceInput({ mod: 'gtceu' }, 'minecraft:ender_eye', 'tfg:vitrified_pearl')
-
 	event.recipes.gtceu.chemical_reactor('kaolinite')
 		.itemInputs('5x #tfg:aluminium_oxide', '2x #forge:dusts/silicon')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 18000), Fluid.of('gtceu:chlorine', 8000))
@@ -664,4 +662,66 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('#forge:dusts/vitrified_pearl')
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.ULV])
+
+	// Have to redo all these because .replaceInput doesn't work for some reason!!
+
+	event.shaped('gtceu:mv_field_generator', [
+		'ABA',
+		'CDC',
+		'ABA'
+	], {
+		A: '#forge:quadruple_wires/magnesium_diboride',
+		B: '#forge:plates/aluminium',
+		C: '#gtceu:circuits/mv',
+		D: 'tfg:vitrified_pearl'
+	}).id('gtceu:shaped/field_generator_mv')
+
+	event.recipes.gtceu.assembler('field_generator_mv')
+		.itemInputs('tfg:vitrified_pearl', '2x #forge:plates/aluminium', '2x #gtceu:circuits/mv', '4x #forge:quadruple_wires/magnesium_diboride')
+		.itemOutputs('gtceu:mv_field_generator')
+		.duration(100)
+		.EUt(30)
+
+	event.shaped('gtceu:hv_emitter', [
+		'ABC',
+		'BDB',
+		'CBA'
+	], {
+		A: '#forge:single_cables/gold',
+		B: '#forge:rods/chromium',
+		C: '#gtceu:circuits/hv',
+		D: 'tfg:vitrified_pearl'
+	}).id('gtceu:shaped/emitter_hv')
+
+	event.recipes.gtceu.assembler('emitter_hv')
+		.itemInputs('tfg:vitrified_pearl', '4x #forge:rods/chromium', '2x #gtceu:circuits/hv', '2x #forge:single_cables/gold')
+		.itemOutputs('gtceu:hv_emitter')
+		.circuit(1)
+		.duration(100)
+		.EUt(30)
+
+	event.shaped('gtceu:hv_sensor', [
+		'A B',
+		'AC ',
+		'DAA'
+	], {
+		A: '#forge:plates/stainless_steel',
+		B: 'tfg:vitrified_pearl',
+		C: '#forge:rods/chromium',
+		D: '#gtceu:circuits/hv',
+	}).id('gtceu:shaped/sensor_hv')
+
+	event.recipes.gtceu.assembler('sensor_hv')
+		.itemInputs('tfg:vitrified_pearl', '#forge:rods/chromium', '#gtceu:circuits/hv', '4x #forge:plates/stainless_steel')
+		.itemOutputs('gtceu:hv_sensor')
+		.duration(100)
+		.EUt(30)
+
+	// Temporary
+	event.recipes.gtceu.chemical_bath('quantum_eye')
+		.itemInputs('tfg:vitrified_pearl')
+		.inputFluids(Fluid.of('gtceu:radon', 250))
+		.itemOutputs('gtceu:quantum_eye')
+		.duration(24 * 20)
+		.EUt(480)
 }

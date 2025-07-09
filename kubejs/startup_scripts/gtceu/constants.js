@@ -140,6 +140,11 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:lv_damascus_steel_screwdriver',
     'gtceu:damascus_steel_bucket',
 
+    // Huh
+    'gtceu:wax_dust',
+    'gtceu:small_wax_dust',
+    'gtceu:tiny_wax_dust',
+
     // Sculk
     'gtceu:tiny_echo_shard_dust',
     'gtceu:small_echo_shard_dust',
@@ -151,9 +156,9 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:echo_shard_plate',
     'gtceu:echo_shard_rod',
     'gtceu:echo_shard_block',
-    'gtceu:tiny_skulk_dust',
-    'gtceu:small_skulk_dust',
-    'gtceu:skulk_dust',
+    'gtceu:tiny_sculk_dust',
+    'gtceu:small_sculk_dust',
+    'gtceu:sculk_dust',
 
     // Ender eye
     'gtceu:ender_eye_plate',
