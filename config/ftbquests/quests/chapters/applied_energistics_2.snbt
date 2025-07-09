@@ -9,8 +9,11 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["00A2566109144D7F"]
 			description: ["With your first step on the Moon comes access to your first &bCertus Quartz&r vein.\\nDon't worry they're quite common and should be easy to locate, though having a decent &9Ore Scanner&r wouldn't hurt.\\n\\nWhether you decide to set up a miner or manually dig out a full vein, make sure to gather a &dhefty amount&r you'll need it to progress through &bAE2&r."]
 			id: "396E85A39FF414CF"
+			shape: "gear"
+			size: 2.0d
 			subtitle: "A first step for you, a big leap for AE2"
 			tasks: [{
 				id: "2BD92F72533B9DA8"
@@ -465,6 +468,8 @@
 			dependencies: ["2F27252748DA8DCA"]
 			description: ["The &eAccumulation Processor&r will require a &7large amount of Silicon&r for each craft.\\n\\nWe hope you already have a &6dedicated EBF&r producing Silicon, or at least a &bstrong infrastructure&r to manufacture it quickly.\\n\\nPrepare accordingly, as you’ll need plenty of it!"]
 			id: "5B4AD301357488D6"
+			shape: "octagon"
+			size: 1.5d
 			tasks: [{
 				id: "34AA69BF8B4AD731"
 				item: "megacells:accumulation_processor"
@@ -653,7 +658,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["10E9CA0C1E6611A8"]
+			dependencies: ["344D269116B1ADE1"]
 			description: ["As you can notice, the &e16k Storage Component&r has a &amuch cheaper recipe&r on the &dMoon&r.\\n\\nHowever, keep in mind that every Moon recipe will always require &bone lower tier Storage Component&r from the normal recipes.\\n\\nOnce again, it’s another reason to consider setting up your &dMoon Base&r!"]
 			id: "5187909B66DF2D43"
 			tasks: [{
@@ -1118,6 +1123,30 @@
 			]
 			x: -1.0d
 			y: -7.5d
+		}
+		{
+			dependencies: ["378E2294EFD85C65"]
+			description: [
+				"You can rename easily any AE2 part with this knife. It can be quite useful especially for Pattern Provider as the name will appear in your Pattern Terminal."
+				""
+				"As an example &oAssembler HV #2&r as a name for the Pattern Provider would let you know easily that this Assembler HV is setup on Circuit 2."
+			]
+			id: "13B0A0B4601F3959"
+			subtitle: "Organization is key"
+			tasks: [{
+				id: "508DE2D583EBD2AD"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(ae2:nether_quartz_cutting_knife)item(ae2:certus_quartz_cutting_knife))"
+					}
+				}
+				title: "Either of them"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -10.0d
 		}
 	]
 	title: "{quests.ae2}"
