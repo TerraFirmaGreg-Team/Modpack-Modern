@@ -5,7 +5,7 @@
 - Build a rocket and blast off to the moon, a new dimension! You can get started in mid-HV.
 - AE2 inscriber presses are now found on the moon instead of being craftable, and making various AE2 components is also significantly cheaper there. @TomPlop & @Pyritie
 - Significant ore changes: certus quartz, raw aluminium, ilmenite, and some other mid-lategame materials have been moved from the overworld to the moon. Check your field guide for more information. @TomPlop
-- A new system for interstellar item transport, made just for TerraFirmaGreg - new logistical problems to solve and automate. @ofoxsmith
+- A new system for interstellar item transport, made just for TerraFirmaGreg - new logistical problems to solve and automate. (Coming soon) @ofoxsmith
 - New machines to properly automate food, along with proper compatibility between machines and TFC's food system, so you can't turn rotten grains into fresh bread any more. The electric greenhouse now also always outputs fresh food. @ofoxsmith & @Redeix
 - New electric refrigerator with different tiers. You can craft the old one into this new one, but please take your food out of it before upgrading otherwise it will be lost! @ofoxsmith
 - Added many new advanced food items including freeze-dried fruit, calorie paste, and meal bags. @Redeix
