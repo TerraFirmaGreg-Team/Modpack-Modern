@@ -167,11 +167,7 @@ const registerTFGItems = (event) => {
 
     event.create('tfg:clean_foil_pack')
         .translationKey('item.tfg.clean_foil_pack') 
-        .texture('tfg:item/clean_foil_pack')  
-
-    event.create('tfg:dry_ice')
-        .translationKey('item.tfg.dry_ice') 
-        .texture('tfg:item/dry_ice')  
+        .texture('tfg:item/clean_foil_pack') 
     //#endregion
 
     //#region Cloth & String

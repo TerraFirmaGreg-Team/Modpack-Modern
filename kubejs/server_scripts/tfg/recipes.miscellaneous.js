@@ -260,7 +260,20 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.shapeless('4x firmalife:ice_shavings', ['#forge:dusts/ice', '#forge:tools/hammers'])
 
+	event.recipes.gtceu.mixer('tfg:ice_slush_from_dry_ice')
+		.itemInputs('1x tfg:dry_ice')
+		.inputFluids( JsonIO.of({ amount: 8000, value: { tag: "tfc:water" }}))
+		.outputFluids(Fluid.of('gtceu:ice', 8000))
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.ULV])
+
 	// Cooling water
+	event.recipes.tfc.barrel_sealed(250)
+		.inputItem('1x tfg:dry_ice')
+		.inputFluid(Fluid.of('minecraft:water', 5000))
+		.outputFluid(Fluid.of('gtceu:ice', 5000))
+		.id('tfg:barrel/cooling_water_0')
+
 	event.recipes.tfc.barrel_sealed(1000)
 		.inputItem('1x #forge:dusts/ice')
 		.inputFluid(Fluid.of('minecraft:water', 144))
