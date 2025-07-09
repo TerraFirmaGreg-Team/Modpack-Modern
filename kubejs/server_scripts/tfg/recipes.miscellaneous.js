@@ -630,9 +630,17 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.recipes.gtceu.chemical_reactor('kaolinite')
 		.itemInputs('5x #tfg:aluminium_oxide', '2x #forge:dusts/silicon')
-		.inputFluids(Fluid.of('gtceu:distilled_water', 18000), Fluid.of('gtceu:chlorine', 8000))
+		.inputFluids(Fluid.of('gtceu:distilled_water', 6000), Fluid.of('gtceu:chlorine', 8000))
 		.itemOutputs('17x tfc:powder/kaolinite')
-		.outputFluids(Fluid.of('gtceu:hydrochloric_acid', 16000))
+		.outputFluids(Fluid.of('gtceu:hydrochloric_acid', 8000))
+		.duration(20 * 10)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.chemical_reactor('kaolinite_ruby')
+		.itemInputs('6x #forge:dusts/ruby', '2x #forge:dusts/silicon')
+		.inputFluids(Fluid.of('gtceu:distilled_water', 6000), Fluid.of('gtceu:chlorine', 8000))
+		.itemOutputs('17x tfc:powder/kaolinite', '1x #forge:dusts/chromium')
+		.outputFluids(Fluid.of('gtceu:hydrochloric_acid', 8000))
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
 
