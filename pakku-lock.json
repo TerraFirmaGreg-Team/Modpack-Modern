@@ -2752,7 +2752,7 @@
         {
             "pakku_id": "SG15bUHPcW2KqNGd",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "detected-setblock-be-gone"
             },
@@ -4785,7 +4785,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ImmediatelyFast-Forge-1.5.0+1.20.4.jar",
+                    "file_name": "ImmediatelyFast-Forge-1.5.1+1.20.4.jar",
                     "mc_versions": [
                         "1.20.2",
                         "1.20.3",
@@ -4797,16 +4797,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6312/293/ImmediatelyFast-Forge-1.5.0+1.20.4.jar",
-                    "id": "6312293",
+                    "url": "https://edge.forgecdn.net/files/6745/706/ImmediatelyFast-Forge-1.5.1+1.20.4.jar",
+                    "id": "6745706",
                     "parent_id": "686911",
                     "hashes": {
-                        "sha1": "653fb9d1ce673b9987b18dfc0a9db4b9cb48d1de",
-                        "md5": "c46791160a43bc35040f8f947e959024"
+                        "sha1": "f1687e57a835e44a9ecf2f343cba5817936f8ae0",
+                        "md5": "dabf9d0ff78c26184ea49c270b91ae90"
                     },
                     "required_dependencies": [],
-                    "size": 428350,
-                    "date_published": "2025-03-16T17:12:38.090Z"
+                    "size": 425068,
+                    "date_published": "2025-07-08T20:02:54.510Z"
                 }
             ]
         },
@@ -7567,7 +7567,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedbackpacks-1.20.1-3.23.19.1263.jar",
+                    "file_name": "sophisticatedbackpacks-1.20.1-3.23.20.1266.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7576,18 +7576,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6679/415/sophisticatedbackpacks-1.20.1-3.23.19.1263.jar",
-                    "id": "6679415",
+                    "url": "https://edge.forgecdn.net/files/6748/40/sophisticatedbackpacks-1.20.1-3.23.20.1266.jar",
+                    "id": "6748040",
                     "parent_id": "422301",
                     "hashes": {
-                        "sha1": "e90afd2a0d7fb37eba56c66d1c84b6296e2da7e7",
-                        "md5": "043925dccea828f03413b0942f564e5f"
+                        "sha1": "2e3b5baa2d65ee22587bb8b40f48b8cedfa5071a",
+                        "md5": "68baa3e94dcc0ec54d39c0e6adbf97b7"
                     },
                     "required_dependencies": [
                         "618298"
                     ],
-                    "size": 928607,
-                    "date_published": "2025-06-21T16:22:11.787Z"
+                    "size": 928918,
+                    "date_published": "2025-07-09T11:28:18.370Z"
                 }
             ]
         },
@@ -7681,7 +7681,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "species-3.3.jar",
+                    "file_name": "species-3.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7689,16 +7689,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6736/993/species-3.3.jar",
-                    "id": "6736993",
+                    "url": "https://edge.forgecdn.net/files/6744/903/species-3.4.jar",
+                    "id": "6744903",
                     "parent_id": "857737",
                     "hashes": {
-                        "sha1": "7bcbdea144a75934da7d57879dc6c85c3aba18e8",
-                        "md5": "e9c5e75b517ac95595366ec0ef0fec15"
+                        "sha1": "9a382083142bf27992fbe0836d297f89265dd24a",
+                        "md5": "eff659ebb9c4a822f480a4c27d13a8af"
                     },
                     "required_dependencies": [],
-                    "size": 42086433,
-                    "date_published": "2025-07-06T12:53:48.593Z"
+                    "size": 42101496,
+                    "date_published": "2025-07-08T16:03:05.663Z"
                 }
             ]
         },

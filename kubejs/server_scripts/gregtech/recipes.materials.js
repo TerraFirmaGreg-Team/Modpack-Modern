@@ -60,7 +60,8 @@ function registerGTCEUMetalRecipes(event) {
 
 		if (material.hasProperty(PropertyKey.INGOT)) {
 			const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-			if (ingotItem.isEmpty()) return
+			if (ingotItem.isEmpty() || ingotItem.hasTag('c:hidden_from_recipe_viewers')) 
+				return
 
 			const materialAmount = Math.floor(headTagPrefix.materialAmount() / GTValues.M) == 1 ? 1 : 2;
 
@@ -109,7 +110,8 @@ function registerGTCEUMetalRecipes(event) {
 		} else if (material.hasProperty(PropertyKey.GEM)) {
 
 			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, 1)
-			if (gemItem.isEmpty()) return
+			if (gemItem.isEmpty())
+				return
 
 			event.recipes.gtceu.laser_engraver(`tfg:engrave_${material.getName()}_gem_to_${new String(headTagPrefix.name).toLowerCase()}_head`)
 				.itemInputs(gemItem.copyWithCount(Math.floor(headTagPrefix.materialAmount() / GTValues.M)))
@@ -131,12 +133,14 @@ function registerGTCEUMetalRecipes(event) {
 
 	const processToolMortar = (toolType, material) => {
 		const toolItem = ToolHelper.get(toolType, material)
-		if (toolItem.isEmpty()) return
+		if (toolItem.isEmpty())
+			return
 
 		const usableTagPrefix = material.hasProperty(PropertyKey.GEM) ? TagPrefix.gem : TagPrefix.ingot;
 		const usableItem = ChemicalHelper.get(usableTagPrefix, material, 1)
 
-		if (usableItem.isEmpty()) return
+		if (usableItem.isEmpty())
+			return
 
 		event.recipes.tfc.damage_inputs_shaped_crafting(
 			event.shaped(toolItem, [
@@ -156,13 +160,14 @@ function registerGTCEUMetalRecipes(event) {
 		if (material.hasFlag(MaterialFlags.GENERATE_PLATE)
 			&& material != GTMaterials.Wood
 			&& material != GTMaterials.TreatedWood
-			&& !material.hasProperty(PropertyKey.POLYMER)) {
+			&& !material.hasProperty(PropertyKey.POLYMER))
+		{
 			const plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
 			const blockStack = ChemicalHelper.get(TagPrefix.block, material, 1)
 
 			let matAmount = TagPrefix.block.getMaterialAmount(material) / GTValues.M;
 
-			if (!plateStack.isEmpty() && !ingotStack.hasTag('c:hidden_from_recipe_viewers')) {
+			if (!plateStack.isEmpty() && !plateStack.hasTag('c:hidden_from_recipe_viewers')) {
 
 				event.custom({
 					type: "createaddition:rolling",
@@ -185,7 +190,7 @@ function registerGTCEUMetalRecipes(event) {
 				}
 			}
 			else {
-				if (!blockStack.isEmpty()) {
+				if (!blockStack.isEmpty() && !blockStack.hasTag('c:hidden_from_recipe_viewers')) {
 					// Блок из гемов -> 9 Пластин
 					event.recipes.greate.cutting(plateStack.withCount(matAmount), blockStack)
 						.recipeTier(1)
@@ -197,14 +202,16 @@ function registerGTCEUMetalRecipes(event) {
 
 	const processPlate = (material) => {
 		const item = ChemicalHelper.get(TagPrefix.plate, material, 1)
-		if (item.isEmpty()) return
+		if (item.isEmpty()) 
+			return
 
 		event.remove({ id: `gtceu:shaped/plate_${material.getName()}` })
 	}
 
 	const processPlateDouble = (material) => {
 		const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
-		if (doublePlateItem.isEmpty()) return
+		if (doublePlateItem.isEmpty() || doublePlateItem.hasTag('c:hidden_from_recipe_viewers'))
+			return
 		const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1)
 
 		event.remove({ id: `gtceu:shaped/plate_double_${material.getName()}` })
@@ -219,7 +226,8 @@ function registerGTCEUMetalRecipes(event) {
 
 	const processBlock = (material) => {
 		const item = ChemicalHelper.get(TagPrefix.block, material, 1)
-		if (item.isEmpty()) return
+		if (item.isEmpty())
+			return
 
 		event.remove({ id: `gtceu:compressor/compress_${material.getName()}_to_block` })
 	}
@@ -241,9 +249,11 @@ function registerGTCEUMetalRecipes(event) {
 
 	const processRodLong = (material) => {
 		const longRodItem = ChemicalHelper.get(TagPrefix.rodLong, material, 1)
-		if (longRodItem.isEmpty()) return
+		if (longRodItem.isEmpty() || longRodItem.hasTag('c:hidden_from_recipe_viewers')) 
+			return
 		const shortRodItem = ChemicalHelper.get(TagPrefix.rod, material, 1)
-		if (shortRodItem.isEmpty()) return;
+		if (shortRodItem.isEmpty() || shortRodItem.hasTag('c:hidden_from_recipe_viewers'))
+			return;
 
 		event.remove({ id: `gtceu:shaped/stick_long_stick_${material.getName()}` })
 
@@ -257,7 +267,8 @@ function registerGTCEUMetalRecipes(event) {
 	}
 
 	const processIngotDouble = (material) => {
-		if (!material.hasFlag(TFGMaterialFlags.GENERATE_DOUBLE_INGOTS)) return;
+		if (!material.hasFlag(TFGMaterialFlags.GENERATE_DOUBLE_INGOTS))
+			return;
 
 		const doubleIngotStack = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1);
 
@@ -670,6 +681,9 @@ function registerGTCEUMetalRecipes(event) {
 
 	const processGems = (material) => {
 		let gem = ChemicalHelper.get(TagPrefix.gem, material, 1);
+		if (gem.hasTag('c:hidden_from_recipe_viewers'))
+			return
+
 		let chipped = ChemicalHelper.get(TagPrefix.gemChipped, material, 1)
 		let smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
 

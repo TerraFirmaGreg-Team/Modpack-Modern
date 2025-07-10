@@ -263,7 +263,7 @@ function registerTFGMoldRecipes(event) {
 	})
 
 	event.shaped('tfg:wire_cutter_head_extruder_mold', [
-		'  ',
+		'   ',
 		'hS ',
 		'f  '
 	], {
