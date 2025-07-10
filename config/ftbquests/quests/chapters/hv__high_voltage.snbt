@@ -20,9 +20,9 @@
 			y: -6.5d
 		}
 		{
-			id: "197A1DD7E5E6EBE0"
-			linked_quest: "3E51DAA2E5CF0422"
-			shape: "octagon"
+			id: "2C1C8C16600781D5"
+			linked_quest: "396E85A39FF414CF"
+			shape: "gear"
 			size: 2.0d
 			x: 13.0d
 			y: -6.0d
@@ -1388,6 +1388,20 @@
 			}]
 			x: 2.5d
 			y: -10.5d
+		}
+		{
+			dependencies: ["05ABC370D7153350"]
+			description: ["Now that you unlocked the &6HV&r Mixer, it becomes possible to make &aCetane Boosted Diesel&r, granting a &e180%&r increase in potency.\\n\\nThe only tricky part is obtaining &bTetranitromethane&r. We recommend producing it by mixing &9Nitric Acid&r and &dEthenone&r. Ethenone itself isn’t hard to make if you combine &9Sulfuric Acid&r - which you should have plenty of by now - and &cAcetic Acid&r, easily produced from &3Oxygen&r and &5Ethylene&r.\\n\\n&cDon’t forget&r to set your machine on Circuit 2, or else you’ll end up producing &6Polyethylene&r instead!"]
+			id: "7401B47E24593AB2"
+			shape: "heart"
+			subtitle: "Much more powerful than Bio Diesel"
+			tasks: [{
+				id: "54C63404B5CE7E5F"
+				item: "gtceu:cetane_boosted_diesel_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
 		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]
