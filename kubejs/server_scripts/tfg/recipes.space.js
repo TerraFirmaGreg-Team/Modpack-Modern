@@ -2,7 +2,7 @@
 
 function registerTFGSpaceRecipes(event) {
 
-	// Change where you can do other recipes
+	// TODO: Change these to work on any dim as long as they're in an oxygenated area?
 
 	const allowedCombustibleDims = [
 		{
@@ -55,42 +55,10 @@ function registerTFGSpaceRecipes(event) {
 		.EUt(GTValues.VHA[GTValues.ULV])
 		.addDataString("fluidA", "minecraft:water")
 		.outputFluids(Fluid.of("minecraft:water", 1000))
-
-	event.recipes.gtceu.aqueous_accumulator('water_nether')
-		.circuit(aaCircuit++)
-		.dimension('minecraft:the_nether')
-		.duration(20)
-		.EUt(GTValues.VHA[GTValues.ULV])
-		.addDataString("fluidA", "minecraft:water")
-		.outputFluids(Fluid.of("minecraft:water", 1000))
-
-	event.recipes.gtceu.aqueous_accumulator('water_moon')
-		.circuit(aaCircuit++)
-		.dimension('ad_astra:moon')
-		.duration(20*5)
-		.EUt(GTValues.VHA[GTValues.MV])
-		.addDataString("fluidA", "minecraft:water")
-		.outputFluids(Fluid.of("minecraft:water", 1000))
 		
 	event.recipes.gtceu.aqueous_accumulator('sea_water_overworld')
 		.circuit(aaCircuit++)
 		.dimension('minecraft:overworld')
-		.duration(20)
-		.EUt(GTValues.VA[GTValues.ULV])
-		.addDataString("fluidA", "tfc:salt_water")
-		.outputFluids(Fluid.of("tfc:salt_water", 1000))
-
-	event.recipes.gtceu.aqueous_accumulator('sea_water_nether')
-		.circuit(aaCircuit++)
-		.dimension('minecraft:the_nether')
-		.duration(20)
-		.EUt(GTValues.VA[GTValues.ULV])
-		.addDataString("fluidA", "tfc:salt_water")
-		.outputFluids(Fluid.of("tfc:salt_water", 1000))
-
-	event.recipes.gtceu.aqueous_accumulator('sea_water_moon')
-		.circuit(aaCircuit++)
-		.dimension('ad_astra:moon')
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.addDataString("fluidA", "tfc:salt_water")
@@ -104,13 +72,69 @@ function registerTFGSpaceRecipes(event) {
 		.addDataString("fluidA", "minecraft:lava")
 		.outputFluids(Fluid.of("minecraft:lava", 1000))
 
+	event.recipes.gtceu.aqueous_accumulator('water_nether')
+		.circuit(aaCircuit++)
+		.dimension('minecraft:the_nether')
+		.duration(20*2)
+		.EUt(GTValues.VHA[GTValues.LV])
+		.addDataString("fluidA", "minecraft:water")
+		.outputFluids(Fluid.of("minecraft:water", 1000))
+
+	event.recipes.gtceu.aqueous_accumulator('sea_water_nether')
+		.circuit(aaCircuit++)
+		.dimension('minecraft:the_nether')
+		.duration(20*2)
+		.EUt(GTValues.VA[GTValues.LV])
+		.addDataString("fluidA", "tfc:salt_water")
+		.outputFluids(Fluid.of("tfc:salt_water", 1000))
+
 	event.recipes.gtceu.aqueous_accumulator('lava_nether')
 		.circuit(aaCircuit++)
 		.dimension('minecraft:the_nether')
-		.duration(20*15)
-		.EUt(GTValues.VHA[GTValues.HV])
+		.duration(20)
+		.EUt(GTValues.VHA[GTValues.LV])
 		.addDataString("fluidA", "minecraft:lava")
 		.outputFluids(Fluid.of("minecraft:lava", 1000))
+
+	event.recipes.gtceu.aqueous_accumulator('water_moon')
+		.circuit(aaCircuit++)
+		.dimension('ad_astra:moon')
+		.duration(20*5)
+		.EUt(GTValues.VHA[GTValues.MV])
+		.addDataString("fluidA", "minecraft:water")
+		.outputFluids(Fluid.of("minecraft:water", 1000))
+
+	event.recipes.gtceu.aqueous_accumulator('sea_water_moon')
+		.circuit(aaCircuit++)
+		.dimension('ad_astra:moon')
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.MV])
+		.addDataString("fluidA", "tfc:salt_water")
+		.outputFluids(Fluid.of("tfc:salt_water", 1000))
+
+	event.recipes.gtceu.aqueous_accumulator('water_orbit')
+		.circuit(aaCircuit++)
+		.dimension('ad_astra:earth_orbit')
+		.dimension('ad_astra:moon_orbit')
+		.dimension('ad_astra:mars_orbit')
+		.dimension('ad_astra:venus_orbit')
+		.dimension('ad_astra:mercury_orbit')
+		.duration(20*5)
+		.EUt(GTValues.VHA[GTValues.MV])
+		.addDataString("fluidA", "minecraft:water")
+		.outputFluids(Fluid.of("minecraft:water", 1000))
+
+	event.recipes.gtceu.aqueous_accumulator('sea_water_orbit')
+		.circuit(aaCircuit++)
+		.dimension('ad_astra:earth_orbit')
+		.dimension('ad_astra:moon_orbit')
+		.dimension('ad_astra:mars_orbit')
+		.dimension('ad_astra:venus_orbit')
+		.dimension('ad_astra:mercury_orbit')
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.MV])
+		.addDataString("fluidA", "tfc:salt_water")
+		.outputFluids(Fluid.of("tfc:salt_water", 1000))
 
 	// Plants
 
