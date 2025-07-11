@@ -1242,6 +1242,29 @@ const registerGTCEURecipes = (event) => {
 	event.replaceOutput({ id: 'gtceu:distillery/distill_biomass_to_ethanol' }, 'gtceu:wood_dust', 'gtceu:carbon_dust')
 	event.replaceOutput({ id: 'gtceu:distillation_tower/distill_biomass' }, 'gtceu:wood_dust', 'gtceu:carbon_dust')
 
+	//#region Circuit Fixes
+
+	//Adds circuit #1 to the tetrafluoroethylene_from_chloroform recipe
+		event.findRecipes({ id: "gtceu:chemical_reactor/tetrafluoroethylene_from_chloroform" }).forEach(recipe => {
+			const inputs = recipe.json.get("inputs");
+			const itemArray = inputs.has("item") ? Java.from(inputs.get("item")) : [];
+
+			itemArray.push({
+				content: {
+					type: "gtceu:circuit",
+					configuration: 1
+				},
+				chance: 0,
+				maxChance: 10000,
+				tierChanceBoost: 0
+			});
+
+			inputs.add("item", itemArray);
+			recipe.json.add("inputs", inputs);
+		});
+
+	//#endregion
+
 	//#region Chemical Reaction for Solar Panel
 
 	event.recipes.gtceu.chemical_reactor('tfg:chlorine_pentafluoride')
@@ -1261,4 +1284,6 @@ const registerGTCEURecipes = (event) => {
 		.outputFluids(Fluid.of('tfg:solar_coolant', 1000), Fluid.of('gtceu:hydrofluoric_acid', 3000), Fluid.of('gtceu:hypochlorous_acid', 3000))
 		.duration(20*10)
 		.EUt(GTValues.VA[GTValues.EV])
+
+	//#endregion
 }
