@@ -796,13 +796,22 @@
 				"{@pagebreak}"
 				"{quests.high_voltage.hv_macerator.desc.2}"
 			]
+			icon: "gtceu:hv_macerator"
 			id: "6B7762F672BAE76F"
 			shape: "octagon"
 			size: 1.5d
 			subtitle: "{quests.high_voltage.hv_macerator.subtitle}"
 			tasks: [{
-				id: "76DAF1C1B90EFE87"
-				item: "gtceu:hv_macerator"
+				disable_toast: true
+				id: "5A05B6E65B887B0F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:hv_macerator)item(greate:stainless_steel_crushing_wheel))"
+					}
+				}
+				title: "{quests.ore_proc.macerator_byproduct.task}"
 				type: "item"
 			}]
 			title: "{quests.high_voltage.hv_macerator.title}"
