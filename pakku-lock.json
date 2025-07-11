@@ -6793,24 +6793,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "primitive_creatures_netherforge-1.20.1.jar",
+                    "file_name": "Primitive creatures v2 forge-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6293/489/primitive_creatures_netherforge-1.20.1.jar",
-                    "id": "6293489",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6680/370/Primitive creatures v2 forge-1.20.1.jar",
+                    "id": "6680370",
                     "parent_id": "1218288",
                     "hashes": {
-                        "sha1": "2af2dc7e02672eba68d1631fc9a331bebe59b89d",
-                        "md5": "0855701ad11cb7c8430dfcaed6d27a5d"
+                        "sha1": "80ed425171aa47b030bd26630c4d353684f85af8",
+                        "md5": "b5b73d7b0120be63e14e72e848329417"
                     },
-                    "required_dependencies": [],
-                    "size": 54387,
-                    "date_published": "2025-03-11T19:35:31.220Z"
+                    "required_dependencies": [
+                        "388172"
+                    ],
+                    "size": 414435,
+                    "date_published": "2025-06-21T20:31:50.780Z"
                 }
             ]
         },
