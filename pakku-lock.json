@@ -7567,7 +7567,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedbackpacks-1.20.1-3.23.20.1266.jar",
+                    "file_name": "sophisticatedbackpacks-1.20.1-3.23.23.1278.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7576,18 +7576,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6748/40/sophisticatedbackpacks-1.20.1-3.23.20.1266.jar",
-                    "id": "6748040",
+                    "url": "https://edge.forgecdn.net/files/6757/290/sophisticatedbackpacks-1.20.1-3.23.23.1278.jar",
+                    "id": "6757290",
                     "parent_id": "422301",
                     "hashes": {
-                        "sha1": "2e3b5baa2d65ee22587bb8b40f48b8cedfa5071a",
-                        "md5": "68baa3e94dcc0ec54d39c0e6adbf97b7"
+                        "sha1": "4f84cae3627de4fbca570d53b067ef643f069ee6",
+                        "md5": "b12548340c258140072041dd1d8497a3"
                     },
                     "required_dependencies": [
                         "618298"
                     ],
-                    "size": 928918,
-                    "date_published": "2025-07-09T11:28:18.370Z"
+                    "size": 930246,
+                    "date_published": "2025-07-11T19:17:07.607Z"
                 }
             ]
         },
@@ -7606,7 +7606,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedcore-1.20.1-1.2.71.1022.jar",
+                    "file_name": "sophisticatedcore-1.20.1-1.2.74.1030.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7615,16 +7615,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6680/838/sophisticatedcore-1.20.1-1.2.71.1022.jar",
-                    "id": "6680838",
+                    "url": "https://edge.forgecdn.net/files/6757/266/sophisticatedcore-1.20.1-1.2.74.1030.jar",
+                    "id": "6757266",
                     "parent_id": "618298",
                     "hashes": {
-                        "sha1": "83d229f538ca4c372fd0be19dc37db4428fae123",
-                        "md5": "abcd785dae54fd5c84df5382ed5d3c76"
+                        "sha1": "872595be0e49ded6a874d153ead423091b20399a",
+                        "md5": "26f2a7f3c1e932370ceec2e7ff2c5eb5"
                     },
                     "required_dependencies": [],
-                    "size": 1332561,
-                    "date_published": "2025-06-21T23:44:59.830Z"
+                    "size": 1333600,
+                    "date_published": "2025-07-11T19:00:51.783Z"
                 }
             ]
         },
@@ -8578,7 +8578,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.0.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8587,19 +8587,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6690/893/TerraFirmaGreg-Core-Modern-0.7.0.jar",
-                    "id": "6690893",
+                    "url": "https://edge.forgecdn.net/files/6755/308/TerraFirmaGreg-Core-Modern-0.7.1.jar",
+                    "id": "6755308",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "c71eddd33a88d2a8e4d1a96f7a9dcbe3385c9b28",
-                        "md5": "7a87f9c38a8f3c762e6826059b85ec75"
+                        "sha1": "c70e998afb132159a28977842154eaf3dee54eba",
+                        "md5": "910a39d0a57211c3456cd27397b6ffad"
                     },
                     "required_dependencies": [
                         "302973",
                         "890405"
                     ],
-                    "size": 370019,
-                    "date_published": "2025-06-24T14:02:58.173Z"
+                    "size": 435899,
+                    "date_published": "2025-07-11T08:54:42.750Z"
                 }
             ]
         },
