@@ -1241,4 +1241,24 @@ const registerGTCEURecipes = (event) => {
 	event.replaceOutput({ id: 'gtceu:distillery/distill_biomass_to_water' }, 'gtceu:wood_dust', 'gtceu:carbon_dust')
 	event.replaceOutput({ id: 'gtceu:distillery/distill_biomass_to_ethanol' }, 'gtceu:wood_dust', 'gtceu:carbon_dust')
 	event.replaceOutput({ id: 'gtceu:distillation_tower/distill_biomass' }, 'gtceu:wood_dust', 'gtceu:carbon_dust')
+
+	//#region Chemical Reaction for Solar Panel
+
+	event.recipes.gtceu.chemical_reactor('tfg:chlorine_pentafluoride')
+		.inputFluids(Fluid.of('gtceu:fluorine', 5000), Fluid.of('gtceu:chlorine', 1000))
+		.outputFluids(Fluid.of('tfg:chlorine_pentafluoride', 1000))
+		.duration(20*10)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:chloryl_fluoride')
+		.inputFluids(Fluid.of('tfg:chlorine_pentafluoride', 1000), Fluid.of('minecraft:water', 2000))
+		.outputFluids(Fluid.of('tfg:chloryl_fluoride', 1000), Fluid.of('gtceu:hydrofluoric_acid', 4000))
+		.duration(20*10)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.large_chemical_reactor('tfg:solar_coolant')
+		.inputFluids(Fluid.of('tfg:chloryl_fluoride', 3000), Fluid.of('gtceu:helium_3', 8000), Fluid.of('minecraft:water', 8000))
+		.outputFluids(Fluid.of('tfg:solar_coolant', 1000), Fluid.of('gtceu:hydrofluoric_acid', 3000), Fluid.of('gtceu:hypochlorous_acid', 3000))
+		.duration(20*10)
+		.EUt(GTValues.VA[GTValues.EV])
 }
