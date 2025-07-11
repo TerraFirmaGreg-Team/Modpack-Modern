@@ -77,6 +77,10 @@ const registerAdAstraItemTags = (event) => {
 	event.add('tfc:foods/usable_in_jam_sandwich', 'ad_astra:cheese')
 	event.add('tfc:foods/usable_in_jam_sandwich_2', 'ad_astra:cheese')
 	event.add('firmalife:foods/cheeses', 'ad_astra:cheese')
+
+	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_helmet')
+	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_leggings')
+	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_boots')
 }
 
 const registerAdAstraBlockTags = (event) => {
