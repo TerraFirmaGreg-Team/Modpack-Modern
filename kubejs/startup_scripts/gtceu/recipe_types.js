@@ -24,4 +24,12 @@ const registerGTCEuRecipeTypes = (event) => {
 		.setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.FIRE)
+
+	event.create('large_solar_panel')
+        	.category('generator')
+        	.setEUIO('out')
+        	.setMaxIOSize(2, 0, 2, 1)
+		.setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        	.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        	.setSound(GTSoundEntries.COOLING)
 }
