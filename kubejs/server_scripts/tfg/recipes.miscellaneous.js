@@ -643,9 +643,9 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.pyrolyse_oven('vitrified_ender_dust')
-		.itemInputs('#forge:dusts/ender_pearl', '2x tfc:powder/kaolinite', '4x #forge:insulation_t1')
+		.itemInputs('#forge:ender_pearls', '2x tfc:powder/kaolinite', '4x #forge:insulation_t1')
 		.inputFluids(Fluid.of('gtceu:nitrogen', 100))
-		.itemOutputs('#forge:dusts/vitrified_pearl')
+		.itemOutputs('tfg:vitrified_pearl')
 		.chancedOutput('gtceu:ash_dust', 2500, 0)
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])

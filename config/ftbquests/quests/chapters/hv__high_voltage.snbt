@@ -16,16 +16,8 @@
 		{
 			id: "308E11BE764398A1"
 			linked_quest: "7C1FD81C5DCFB74E"
-			x: -6.5d
+			x: -7.5d
 			y: -6.5d
-		}
-		{
-			id: "197A1DD7E5E6EBE0"
-			linked_quest: "3E51DAA2E5CF0422"
-			shape: "octagon"
-			size: 2.0d
-			x: 13.0d
-			y: -6.0d
 		}
 	]
 	quests: [
@@ -84,7 +76,7 @@
 				type: "item"
 			}]
 			title: "High Voltage Bathing"
-			x: 2.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
@@ -231,7 +223,7 @@
 				}
 			]
 			title: "I see the world in colour"
-			x: 2.0d
+			x: -2.0d
 			y: 1.5d
 		}
 		{
@@ -246,8 +238,8 @@
 				type: "item"
 			}]
 			title: "Best ULV Circuits!"
-			x: 2.0d
-			y: 2.5d
+			x: -3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -306,7 +298,7 @@
 			}]
 			title: "High Voltage Chemistry"
 			x: 0.0d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["197A13A0790F000B"]
@@ -332,8 +324,8 @@
 				type: "item"
 			}]
 			title: "Almost Titanium"
-			x: -6.0d
-			y: 2.0d
+			x: -7.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -356,8 +348,8 @@
 				type: "item"
 			}]
 			title: "Almost Titanium²"
-			x: -4.0d
-			y: 2.0d
+			x: -5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6B08799BCFD01D3D"]
@@ -377,7 +369,7 @@
 				type: "item"
 			}]
 			title: "HV Superconductors"
-			x: -6.5d
+			x: -7.5d
 			y: -10.0d
 		}
 		{
@@ -400,7 +392,7 @@
 				type: "item"
 			}]
 			title: "Nichrome Coils"
-			x: -5.5d
+			x: -6.5d
 			y: -10.0d
 		}
 		{
@@ -427,7 +419,7 @@
 				type: "item"
 			}]
 			title: "Titanium"
-			x: -4.0d
+			x: -5.0d
 			y: -2.0d
 		}
 		{
@@ -450,7 +442,7 @@
 				type: "item"
 			}]
 			title: "Ice Cold"
-			x: -4.0d
+			x: -5.0d
 			y: -7.5d
 		}
 		{
@@ -470,7 +462,7 @@
 				type: "item"
 			}]
 			title: "MV Superconductors"
-			x: 3.5d
+			x: -3.5d
 			y: 0.0d
 		}
 		{
@@ -496,18 +488,15 @@
 		{
 			dependencies: [
 				"4024C831C77101CA"
-				"05ABC370D7153350"
+				"5DAB63FD267D99DC"
 			]
-			description: [
-				"TODO REPLACE ME WITH ID"
-				"You won’t need many for now — just one for your &6Rocket&r and another for your &6HV Circuit Assembler&r.\\nBut be warned: from &5EV&r and beyond, the demand will rise quickly."
-			]
+			description: ["{quests.high_voltage.vitrified_pearl.desc}"]
 			icon: "tfg:vitrified_pearl"
 			id: "41D32C5178760F47"
 			size: 1.0d
 			subtitle: "{quests.high_voltage.vitrified_pearl.subtitle}"
 			tasks: [{
-				id: "4FBEF1C30CC89B7F"
+				id: "75D733DEC0449E01"
 				item: "tfg:vitrified_pearl"
 				type: "item"
 			}]
@@ -612,8 +601,8 @@
 				type: "item"
 			}]
 			title: "HV Prospector"
-			x: 6.0d
-			y: 4.0d
+			x: 7.0d
+			y: 1.0d
 		}
 		{
 			description: [
@@ -631,7 +620,7 @@
 			}]
 			title: "Fluorine"
 			x: 1.0d
-			y: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -670,7 +659,7 @@
 			]
 			title: "Polytetrafluoroethylene"
 			x: 0.0d
-			y: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5BACED5AE350EAB1"]
@@ -689,7 +678,7 @@
 			}]
 			title: "Benzene Nitro"
 			x: -1.0d
-			y: 8.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["7CC79617A4965F25"]
@@ -742,7 +731,7 @@
 			]
 			title: "Large Chemical Reactor"
 			x: 0.0d
-			y: 6.0d
+			y: 7.0d
 		}
 		{
 			description: [
@@ -779,13 +768,14 @@
 				}
 			]
 			title: "TNT"
-			x: 4.5d
+			x: 3.5d
 			y: 3.0d
 		}
 		{
 			dependencies: [
 				"1137D2BA7E03D685"
 				"2B7B214EDE0B45A2"
+				"05ABC370D7153350"
 			]
 			description: ["You won’t find any Endermen dropping Ender Pearls in TFG.\\nEven the ones lurking in the Beneath won’t help you there.\\n\\nInstead, your only option for now is to craft them yourself:\\nCombine &2Beryllium Dust&r and &2Potassium Dust&r in a &6HV&r Mixer to create the elusive &5Ender Dust&r.\\n\\nOnce that’s done, throw it into an &8Implosion Compressor&r and recreate the iconic Ender Pearl — Gregtech style."]
 			icon: "minecraft:ender_pearl"
@@ -793,19 +783,20 @@
 			size: 1.0d
 			tasks: [
 				{
+					disable_toast: true
 					id: "3DC62CA60F006A06"
 					item: "ae2:ender_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "20403A639228B809"
 					item: "minecraft:ender_pearl"
+					optional_task: true
 					type: "item"
 				}
 			]
 			title: "Ender Pearls"
-			x: 4.5d
+			x: 3.5d
 			y: 2.0d
 		}
 		{
@@ -856,7 +847,7 @@
 				type: "item"
 			}]
 			title: "Implosion Compressor"
-			x: 3.5d
+			x: 2.5d
 			y: 2.0d
 		}
 		{
@@ -895,7 +886,7 @@
 			}]
 			title: "Nitric Acid"
 			x: 0.0d
-			y: 8.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["5BACED5AE350EAB1"]
@@ -915,7 +906,7 @@
 			}]
 			title: "Cetane-boosted Diesel"
 			x: 1.0d
-			y: 8.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["16B735F9C391D260"]
@@ -996,7 +987,7 @@
 				type: "item"
 			}]
 			title: "Universal Macerator"
-			x: -2.25d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -1023,7 +1014,7 @@
 			}]
 			title: "Ammonia"
 			x: -3.0d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["52AD30F04DD5A812"]
@@ -1064,7 +1055,7 @@
 				type: "item"
 			}]
 			title: "Blue Alloy"
-			x: -1.5d
+			x: -1.0d
 			y: -8.5d
 		}
 		{
@@ -1099,7 +1090,7 @@
 			id: "52AD30F04DD5A812"
 			shape: "gear"
 			size: 3.0d
-			subtitle: "Soon to be an minestronaut"
+			subtitle: "Soon to be a minestronaut"
 			tasks: [{
 				id: "1AD314A1377F41CD"
 				item: "gtceu:hv_machine_hull"
@@ -1121,7 +1112,7 @@
 				type: "item"
 			}]
 			title: "Nichrome Ingots"
-			x: -4.0d
+			x: -5.0d
 			y: -10.0d
 		}
 		{
@@ -1202,7 +1193,7 @@
 				item: "gtceu:ev_machine_hull"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -9.0d
 			y: -2.0d
 		}
 		{
@@ -1370,7 +1361,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 10.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["14D277A164202FF8"]
@@ -1388,6 +1379,35 @@
 			}]
 			x: 2.5d
 			y: -10.5d
+		}
+		{
+			dependencies: ["05ABC370D7153350"]
+			description: ["Now that you unlocked the &6HV&r Mixer, it becomes possible to make &aCetane Boosted Diesel&r, granting a &e180%&r increase in potency.\\n\\nThe only tricky part is obtaining &bTetranitromethane&r. We recommend producing it by mixing &9Nitric Acid&r and &dEthenone&r. Ethenone itself isn’t hard to make if you combine &9Sulfuric Acid&r - which you should have plenty of by now - and &cAcetic Acid&r, easily produced from &3Oxygen&r and &5Ethylene&r.\\n\\n&cDon’t forget&r to set your machine on Circuit 2, or else you’ll end up producing &6Polyethylene&r instead!"]
+			id: "7401B47E24593AB2"
+			shape: "heart"
+			subtitle: "Much more powerful than Bio Diesel"
+			tasks: [{
+				id: "54C63404B5CE7E5F"
+				item: "gtceu:cetane_boosted_diesel_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			description: ["{quests.high_voltage.kaolinite_powder.desc}"]
+			disable_toast: true
+			hide_dependency_lines: true
+			id: "5DAB63FD267D99DC"
+			subtitle: "{quests.high_voltage.kaolinite_powder.subtitle}"
+			tasks: [{
+				id: "41CB56BDD7656BDB"
+				item: "tfc:powder/kaolinite"
+				type: "item"
+			}]
+			title: "{quests.high_voltage.kaolinite_powder.title}"
+			x: 6.0d
+			y: 3.5d
 		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]
