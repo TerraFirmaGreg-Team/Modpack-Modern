@@ -21,7 +21,7 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: -9.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			height: 1.0d
@@ -29,7 +29,7 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: -9.5d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			height: 1.0d
@@ -57,11 +57,11 @@
 		}
 		{
 			height: 1.0d
-			image: "tfg:block/casings/machine_casing_red_solar_panel"
+			image: "ad_astra:textures/painting/moon.png"
 			rotation: 0.0d
 			width: 1.0d
 			x: -9.5d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			height: 1.0d
@@ -412,6 +412,7 @@
 			id: "0116158FBDA9DF86"
 			subtitle: "{quests.gregtech_energy.first_generator.subtitle}"
 			tasks: [{
+				disable_toast: true
 				id: "0BCC01540FE7555C"
 				item: {
 					Count: 1
@@ -487,7 +488,7 @@
 			}]
 			title: "{quests.gregtech_energy.lgt.title}"
 			x: -7.0d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0116158FBDA9DF86"]
@@ -505,7 +506,7 @@
 			}]
 			title: "{quests.gregtech_energy.lpt.title}"
 			x: -7.0d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2E57B2B963717893"]
@@ -649,7 +650,7 @@
 			]
 			title: "{quests.gregtech_energy.lgt_fuel.title}"
 			x: -8.5d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["634EAFA86B3D57A1"]
@@ -682,7 +683,7 @@
 			]
 			title: "{quests.gregtech_energy.lpt_fuel.title}"
 			x: -8.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["20DA81038C507C90"]
@@ -780,6 +781,7 @@
 			subtitle: "{quests.gregtech_energy.lv_generator.subtitle}"
 			tasks: [
 				{
+					disable_toast: true
 					id: "4DF2BE3846DB01B9"
 					item: {
 						Count: 1
@@ -814,6 +816,7 @@
 			id: "54562DEA1717A819"
 			subtitle: "{quests.gregtech_energy.mv_generator.subtitle}"
 			tasks: [{
+				disable_toast: true
 				id: "7692A224CC36CE67"
 				item: {
 					Count: 1
@@ -835,12 +838,13 @@
 			id: "109C57B63EE95E35"
 			subtitle: "{quests.gregtech_energy.solar_panel.subtitle}"
 			tasks: [{
+				disable_toast: true
 				id: "1437FC0B22F94EB1"
 				item: "ad_astra:solar_panel"
 				type: "item"
 			}]
 			x: -7.0d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["109C57B63EE95E35"]
@@ -876,13 +880,13 @@
 				{
 					count: 54L
 					id: "768FC413EB4653B7"
-					item: { Count: 32, id: "tfg:block/casings/machine_casing_iron_desh" }
+					item: { Count: 32, id: "tfg:casings/machine_casing_iron_desh" }
 					type: "item"
 				}
 				{
 					count: 24L
 					id: "5C5534BE222DD522"
-					item: { Count: 24, id: "tfg:block/casings/machine_casing_red_solar_panel" }
+					item: { Count: 24, id: "tfg:casings/machine_casing_red_solar_panel" }
 					type: "item"
 				}
 				{
@@ -900,7 +904,7 @@
 			]
 			title: "{quests.gregtech_energy.large_solar.title}"
 			x: -8.5d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0116158FBDA9DF86"]
