@@ -105,6 +105,12 @@ const registerTooltips = (event) =>
 
 	})
 
+		// Solar Panel
+
+	event.addAdvanced(['ad_astra:solar_panel'], (item, advanced, text) => {
+		text.add(1, text.of('Produces §664 Eu/t§r on the §6moon§r during the §6day§r'))
+	})
+
 	// MEGA Deprecated 0.10
 	event.addAdvanced(['#megacells:mega_interface'], (item, advanced, text) => {
 		text.add(1, text.of('§cDeprecated cannot be craft anymore'))

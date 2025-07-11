@@ -47,7 +47,7 @@ const registerTFGMaterials = (event) => {
 		.components('6x aluminium', '2x stainless_steel', '1x red_steel')
 		.color(0x333e47)
 		.iconSet('metallic')
-		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE)
+		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR)
 		.blastTemp(1760, 'low', 120, 1200)
 
 	event.create('vitrified_asbestos')
@@ -119,4 +119,21 @@ const registerTFGMaterials = (event) => {
 		.components('2x aluminium', '2x silicon', '9x oxygen', '4x hydrogen', '1x ender_pearl')
 		.color(0xFFFFFF)
 		.secondaryColor(0x67FFE6)
+
+	//#region Solar Panel Chemicals
+
+	event.create('tfg:chloryl_fluoride')
+		.gas()
+		.components('1x fluorine', '1x chlorine', '2x oxygen')
+		.color(0x8AFAF4)
+
+	event.create('tfg:chlorine_pentafluoride')
+		.gas()
+		.components('5x fluorine', '1x chlorine')
+		.color(0x51F7C0)
+
+	event.create('tfg:solar_coolant')
+		.gas()
+		.components('8x helium_3', '11x oxygen', '11x hydrogen')
+		.color(0xEDFFB3)
 }
