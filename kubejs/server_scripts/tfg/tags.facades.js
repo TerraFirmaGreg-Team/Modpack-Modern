@@ -26,6 +26,14 @@ function registerFacadeWhitelistTags(event) {
 		'#simplylight:any_lamp_off',
 		'#minecraft:planks',
 		'#minecraft:logs',
+
+		'#tfg:ad_astra_iron_blocks',
+		'#tfg:ad_astra_steel_blocks',
+		'#tfg:ad_astra_desh_blocks',
+		'#tfg:ad_astra_ostrum_blocks',
+		'#tfg:ad_astra_calorite_blocks',
+		'#tfg:ad_astra_etrium_blocks',
+	    
 		//rnr shingles
 		'rnr:ceramic_roof',
 		'rnr:terracotta_roof',

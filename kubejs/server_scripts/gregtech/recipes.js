@@ -1241,4 +1241,27 @@ const registerGTCEURecipes = (event) => {
 	event.replaceOutput({ id: 'gtceu:distillery/distill_biomass_to_water' }, 'gtceu:wood_dust', 'gtceu:carbon_dust')
 	event.replaceOutput({ id: 'gtceu:distillery/distill_biomass_to_ethanol' }, 'gtceu:wood_dust', 'gtceu:carbon_dust')
 	event.replaceOutput({ id: 'gtceu:distillation_tower/distill_biomass' }, 'gtceu:wood_dust', 'gtceu:carbon_dust')
+
+	//#region Circuit Fixes
+
+	//Adds circuit #1 to the tetrafluoroethylene_from_chloroform recipe
+		event.findRecipes({ id: "gtceu:chemical_reactor/tetrafluoroethylene_from_chloroform" }).forEach(recipe => {
+			const inputs = recipe.json.get("inputs");
+			const itemArray = inputs.has("item") ? Java.from(inputs.get("item")) : [];
+
+			itemArray.push({
+				content: {
+					type: "gtceu:circuit",
+					configuration: 1
+				},
+				chance: 0,
+				maxChance: 10000,
+				tierChanceBoost: 0
+			});
+
+			inputs.add("item", itemArray);
+			recipe.json.add("inputs", inputs);
+		});
+
+	//#endregion
 }

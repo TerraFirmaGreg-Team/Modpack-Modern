@@ -231,8 +231,8 @@ const registerGTCEuMaterialModification = (event) => {
 	]).build());
 
 	GTMaterials.Copper.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.0, 1.5, 132, 2, metalTooling).build());
-	GTMaterials.BismuthBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.7, 2.0, 188, 2, metalTooling).build());
-	GTMaterials.BlackBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.1, 2.0, 194, 2, metalTooling).build());
+	GTMaterials.BismuthBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.7, 2.0, 188, 2, metalTooling.concat(GTToolType.MORTAR)).build());
+	GTMaterials.BlackBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.1, 2.0, 194, 2, metalTooling.concat(GTToolType.MORTAR)).build());
 	GTMaterials.BlackSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6.5, 4.5, 1228, 3, metalTooling).build());
 	// Cast iron tools don't make sense but gregtech shits itself if they're missing,
 	// so I'm just giving them terrible terrible stats
