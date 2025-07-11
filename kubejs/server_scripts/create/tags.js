@@ -117,4 +117,7 @@ const registerCreateFluidTags = (event) => {
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:river_water')
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:salt_water')
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:spring_water')
+
+	//Hose Pulley Infinites
+	event.remove('create:bottomless/allow', 'minecraft:lava')
 }
