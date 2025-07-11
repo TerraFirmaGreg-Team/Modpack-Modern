@@ -218,4 +218,41 @@ const registerGTCEuMachines = (event) => {
 		)
 	//#endregion
 
+	//#region Large Solar Pannel - From Sky of Grind for the code thanks a lot
+
+	event.create('large_solar_panel', 'multiblock')
+        	.rotationState(RotationState.NON_Y_AXIS)
+        	.generator(true)
+        	.recipeType('large_solar_panel')
+        	.noRecipeModifier()
+        	.appearanceBlock(() => Block.getBlock('tfg:block/casings/machine_casing_iron_desh'))
+        	.pattern(definition => FactoryBlockPattern.start()
+            		.aisle('P     P', 'P     P', 'P     P', 'PPPPPPP', 'PKKKKKP')
+            		.aisle('       ', '       ', '       ', 'P     P', 'KIIIIIK')
+            		.aisle('  PLP  ', '  PLP  ', '  RRR  ', 'P RRR P', 'KIIIIIK')
+            		.aisle('  LPL  ', '  L#L  ', '  RGR  ', 'P RGR P', 'KIIGIIK')
+            		.aisle('  PXP  ', '  PLP  ', '  RRR  ', 'P RRR P', 'KIIIIIK')
+            		.aisle('       ', '       ', '       ', 'P     P', 'KIIIIIK')
+            		.aisle('P     P', 'P     P', 'P     P', 'PPPPPPP', 'PKKKKKP')
+            		.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+            		.where('R', Predicates.blocks('gtceu:cleanroom_glass'))
+            		.where('I', Predicates.blocks('tfg:block/casings/machine_casing_red_solar_panel'))
+			.where('G', Predicates.blocks('ad_astra:glowing_iron_pillar'))
+			.where('P', Predicates.blocks('tfg:block/casings/machine_casing_iron_desh'))
+			.where('K', Predicates.blocks('ad_astra:iron_plateblock'))
+			.where('L', Predicates.blocks('tfg:block/casings/machine_casing_iron_desh')
+               			.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
+                		.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+                		.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(2).setPreviewCount(1))
+                		.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMaxGlobalLimited(2).setPreviewCount(1))
+                		.or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+                		.or(Predicates.abilities(PartAbility.OUTPUT_ENERGY).setExactLimit(1)))
+			.where('#', Predicates.air())
+			.where(' ', Predicates.any())
+            	.build()
+        )
+		.workableCasingRenderer(
+			'tfg:block/casings/machine_casing_iron_desh',
+			'gtceu:block/multiblock/hpca', true)
+
 }
