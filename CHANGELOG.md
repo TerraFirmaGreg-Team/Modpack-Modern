@@ -48,6 +48,7 @@
 - New item replacement for ender eyes @Pyritie @Redeix
 - Added more tools and components to the anvil and extruder molds (#898) @BlueBoat29 @Pyritie
 - Added recipes for crafting all the cakes @Pyritie
+- Removed infinite lava from hose-pulleys. Check out new biodiesel line for early power! (#1271) @Redeix 
 ### Bug fixes
 - Fixed a mud hut structure that had deprecated zinc ingots @Pyritie
 - The electric greenhouse now also allows loose rocks and plants inside, since TFC spawns them on any grass block @Pyritie
