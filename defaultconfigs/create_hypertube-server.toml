@@ -1,0 +1,8 @@
+
+#Change these settings to customize the server-side behavior of the mod.
+["Travel Settings"]
+	#Allow fish to go through the tubes. (experimental)
+	allowFishTravel = true
+	#Allow villagers to go through the tubes.
+	allowVillagerTravel = true
+
