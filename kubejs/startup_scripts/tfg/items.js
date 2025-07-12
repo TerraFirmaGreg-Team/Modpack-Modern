@@ -312,12 +312,13 @@ const registerTFGItems = (event) => {
 	event.create('tfg:certus_mechanism')
 		.translationKey('item.tfg.certus_mechanism')
 
-		
 	event.create('tfg:small_bullet_casing')
 		.translationKey('tfg:small_bullet_casing')
 	event.create('tfg:shell_bullet_casing')
 		.translationKey('tfg:shell_bullet_casing')
 	event.create('tfg:large_bullet_casing')
 		.translationKey('tfg:large_bullet_casing')
+	event.create('tfg:nitrocellulose')
+		.translationKey('tfg:nitrocellulose')
 	//endregion
 }
