@@ -55,33 +55,69 @@ function registerTACZAmmoRecipes(event){
 		
 	}).id('tfg_tacz:45_70_bullets');
 	
+	//Clockwork era
+	event.recipes.gtceu.assembler('tfg_tacz:rb_small')
+		.itemInputs('4x #forge:nuggets/lead','2x #forge:foils/copper', '4x tfg:small_bullet_casing', 
+					'#forge:dusts/gunpowder')
+		.itemOutputs(Item.of('tacz:ammo', 4, 
+					'{AmmoId:"create_armorer:rbapb"}'))
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(20)
+	event.recipes.gtceu.assembler('tfg_tacz:slap_large')
+		.itemInputs('4x #forge:nuggets/lead','4x #forge:foils/copper', '4x tfg:large_bullet_casing', 
+					'#forge:dusts/gunpowder')
+		.itemOutputs(Item.of('tacz:ammo', 4, 
+					'{AmmoId:"create_armorer:slap"}'))
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(20)
+	event.recipes.gtceu.assembler('tfg_tacz:12g_shell_peth')
+		.itemInputs('12x #forge:nuggets/lead', '4x tfg:shell_bullet_casing', '#forge:dusts/gunpowder')
+		.inputFluids(Fluid.of('gtceu:polyethylene', 288))
+		.itemOutputs(Item.of('tacz:ammo', 4, 
+					'{AmmoId:"tacz:12g"}'))
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(20)
+	event.recipes.gtceu.assembler('tfg_tacz:12g_shell_pvc')
+		.itemInputs('12x #forge:nuggets/lead', '4x tfg:shell_bullet_casing', '#forge:dusts/gunpowder')
+		.inputFluids(Fluid.of('gtceu:polyvinyl_chloride', 144))
+		.itemOutputs(Item.of('tacz:ammo', 4, 
+					'{AmmoId:"tacz:12g"}'))
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(30)
+	
+	//Certus era
 	event.recipes.gtceu.assembler('tfg_tacz:fluix_grenade')
 		.itemInputs('#forge:ingots/magnalium', '4x gtceu:gelled_toluene', 'tfg:nitrocellulose')
 		.inputFluids(Fluid.of('tfg:fluix', 720))
 		.itemOutputs(Item.of('tacz:ammo', 
-			'{AmmoId:"applied_armorer:fluix_infused_grenade"}'))
+					'{AmmoId:"applied_armorer:fluix_infused_grenade"}'))
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20)
 
-	event.recipes.gtceu.assembler('tfg_tacz:cluster_quartz_shell_ptfe')
+	event.recipes.gtceu.assembler('tfg_tacz:etched_quartz_small')
 		.itemInputs('2x ae2:certus_quartz_crystal', '4x tfg:small_bullet_casing', 'tfg:nitrocellulose')
 		.itemOutputs(Item.of('tacz:ammo', 4, 
-		'{AmmoId:"applied_armorer:etched_quartz_bullet"}'))
+					'{AmmoId:"applied_armorer:etched_quartz_bullet"}'))
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20)
-		
+	event.recipes.gtceu.assembler('tfg_tacz:hard_quartz_large')
+		.itemInputs('4x ae2:charged_certus_quartz_crystal', '4x tfg:large_bullet_casing', 'tfg:nitrocellulose')
+		.itemOutputs(Item.of('tacz:ammo', 4, 
+					'{AmmoId:"applied_armorer:hard_core_quartz_bullet"}'))
+		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20)
 	event.recipes.gtceu.assembler('tfg_tacz:cluster_quartz_shell_ptfe')
 		.itemInputs('16x gtceu:chipped_certus_quartz_gem', '4x tfg:shell_bullet_casing', 'tfg:nitrocellulose')
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
 		.itemOutputs(Item.of('tacz:ammo', 4, 
-			'{AmmoId:"applied_armorer:cluster_quartz_bullet"}'))
+					'{AmmoId:"applied_armorer:cluster_quartz_bullet"}'))
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20)
 	event.recipes.gtceu.assembler('tfg_tacz:cluster_quartz_shell_pbi')
 		.itemInputs('16x gtceu:chipped_certus_quartz_gem', '4x tfg:shell_bullet_casing', 'tfg:nitrocellulose')
 		.inputFluids(Fluid.of('gtceu:polybenzimidazole', 72))
 		.itemOutputs(Item.of('tacz:ammo', 4, 
-			'{AmmoId:"applied_armorer:cluster_quartz_bullet"}'))
+					'{AmmoId:"applied_armorer:cluster_quartz_bullet"}'))
 		.EUt(GTValues.VA[GTValues.EV])
-		.duration(20)
+		.duration(30)
 }

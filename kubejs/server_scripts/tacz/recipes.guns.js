@@ -48,6 +48,55 @@ function registerTACZGunRecipes(event){
 	}).id('tacz:trapdoor_rifle');
 	
 	//Region clockwork era
+	event.recipes.gtceu.assembler('tfg_tacz:ca_torque_revo')
+		.itemInputs('gtceu:steel_small_fluid_pipe', '4x #forge:ingots/aluminium', '2x #forge:plates/brass',
+					'6x #forge:rings/brass', '2x gtceu:treated_wood_planks', '8x #forge:screws/black_steel', 
+					'tfg:advanced_clockwork_mechanism')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
+			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"create_armorer:pistol_revolver_torque",HasBulletInBarrel:1b}'))
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(80)
+	event.recipes.gtceu.assembler('tfg_tacz:ca_crane')
+		.itemInputs('gtceu:steel_small_fluid_pipe', '7x #forge:ingots/aluminium', '2x #forge:ingots/black_steel', 
+					'4x #forge:plates/brass','2x gtceu:copper_tiny_fluid_pipe', '2x gtceu:treated_wood_planks', 
+					'2x #forge:small_gears/steel', '14x #forge:screws/black_steel', 'tfg:advanced_clockwork_mechanism')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 540))
+		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
+			'{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"create_armorer:rifle_assult_crane",HasBulletInBarrel:1b}'))
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(100)
+	event.recipes.gtceu.assembler('tfg_tacz:ca_pump_bearing')
+		.itemInputs('2x gtceu:steel_small_fluid_pipe', '4x #forge:ingots/aluminium', '4x #forge:plates/brass',
+					'8x gtceu:treated_wood_planks', '#forge:small_gears/steel', '#forge:gears/steel', 
+					'16x #forge:screws/black_steel', 'tfg:advanced_clockwork_mechanism')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 432))
+		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
+			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"create_armorer:shotgun_pump_bearing",HasBulletInBarrel:0b}'))
+		.EUt(GTValues.VA[GTValues.MV])
+		.circuit(3)
+		.duration(100)
+	event.recipes.gtceu.assembler('tfg_tacz:ca_clockwork_sniper')
+		.itemInputs('gtceu:steel_normal_fluid_pipe', '7x #forge:ingots/aluminium', '7x #forge:ingots/black_steel', 
+					'4x #forge:plates/brass','6x gtceu:copper_tiny_fluid_pipe', '2x gtceu:treated_wood_planks',  
+					'14x #forge:screws/black_steel', 'tfg:advanced_clockwork_mechanism')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 792))
+		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
+			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"create_armorer:sniper_semi_clockwork",HasBulletInBarrel:1b}'))
+		.EUt(GTValues.VA[GTValues.MV])
+		.circuit(4)
+		.duration(120)
+	event.recipes.gtceu.assembler('tfg_tacz:ca_flywheel_mg')
+		.itemInputs('gtceu:steel_normal_fluid_pipe', '10x #forge:ingots/aluminium', '6x #forge:ingots/black_steel', 
+					'6x #forge:plates/brass', 'create:steam_engine', '3x gtceu:steel_tiny_fluid_pipe', 
+					'2x gtceu:treated_wood_planks','20x #forge:screws/black_steel', '2x tfg:advanced_clockwork_mechanism')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 936))
+		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
+			'{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"create_armorer:mg_platemag_flywheel",HasBulletInBarrel:1b}'))
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(160)
+	
 	
 	//Region certus era
 	event.recipes.gtceu.assembler('tfg_tacz:aa_pride')
@@ -56,7 +105,7 @@ function registerTACZGunRecipes(event){
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1152))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"applied_armorer:niklas_pistol_semi_pride",HasBulletInBarrel:0b}'))
-		.circuit(1)
+		.circuit(2)
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(80)
 		
@@ -66,13 +115,13 @@ function registerTACZGunRecipes(event){
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1152))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 		'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"applied_armorer:niklas_pistol_semi_right",HasBulletInBarrel:0b}'))
-		.circuit(2)
+		.circuit(1)
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(80)
 		
 	event.recipes.gtceu.assembler('tfg_tacz:aa_win_win')
-		.itemInputs('2x gtceu:titanium_small_fluid_pipe', '8x #forge:ingots/titanium', '4x #forge:plates/stainless_steel',
-					'2x #forge:rods/long/titanium', '16x #forge:screws/tungsten', '2x tfg:certus_mechanism')
+		.itemInputs('2x gtceu:titanium_small_fluid_pipe', '10x #forge:ingots/titanium', '6x #forge:plates/stainless_steel',
+					'2x #forge:rods/long/titanium', '16x #forge:screws/tungsten', 'tfg:certus_mechanism')
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 2304))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"applied_armorer:niklas_pistol_double_win_win",HasBulletInBarrel:1b}'))
@@ -87,7 +136,7 @@ function registerTACZGunRecipes(event){
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 2880))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"applied_armorer:moritz_rifle_ar77",HasBulletInBarrel:1b}'))
-		.circuit(4)
+		.circuit(5)
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(180)
 		
@@ -98,7 +147,7 @@ function registerTACZGunRecipes(event){
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1728))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"applied_armorer:moritz_shotgun_sg914",HasBulletInBarrel:0b}'))
-		.circuit(5)
+		.circuit(6)
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(180)
 		
@@ -109,7 +158,7 @@ function registerTACZGunRecipes(event){
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1728))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"applied_armorer:moritz_sniper_semi_k30",HasBulletInBarrel:0b}'))
-		.circuit(6)
+		.circuit(4)
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(220)
 		

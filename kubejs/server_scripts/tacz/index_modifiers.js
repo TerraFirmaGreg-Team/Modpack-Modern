@@ -27,4 +27,6 @@ const gunIndexLogic = (event) => {
 		
 		return event.removeGun();
 	}
+	
+	
 }
