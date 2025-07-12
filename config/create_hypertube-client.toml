@@ -1,0 +1,6 @@
+
+#Change these settings to customize the client-side behavior of the mod.
+[Gameplay]
+	#Allow first-person view inside the tube. Default is false for better experience.
+	allowFPVInsideTheTube = false
+

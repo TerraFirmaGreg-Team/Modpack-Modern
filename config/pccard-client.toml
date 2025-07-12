@@ -1,0 +1,6 @@
+#*****************************************
+#* Programmed Circuit Card Client Config *
+#*****************************************
+#Place a Programmed Circuit at the Pattern Encoding Terminal.
+jei_integration = true
+

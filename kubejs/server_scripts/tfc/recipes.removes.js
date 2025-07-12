@@ -149,4 +149,6 @@ function removeTFCRecipes(event) {
 
 	event.remove({ id: /^tfc:crafting\/dough\/.*/ })
 
+	event.remove({ id: 'tfc:crafting/gunpowder_graphite' })
+	event.remove({ id: 'tfc:crafting/gunpowder' })
 }

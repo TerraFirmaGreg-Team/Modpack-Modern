@@ -1,0 +1,6 @@
+
+[gunpack]
+	#When enabled, the mod will not try to overwrite the default pack under .minecraft/tacz
+	#Since 1.0.4, the overwriting will only run when you start client or a dedicated server
+	DefaultPackDebug = false
+

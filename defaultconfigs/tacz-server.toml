@@ -1,0 +1,43 @@
+
+[interact_key]
+	#These whitelist blocks can be interacted with when the interact key is pressed
+	InteractKeyWhitelistBlocks = []
+	#These whitelist entities can be interacted with when the interact key is pressed
+	InteractKeyWhitelistEntities = []
+	#These blacklist blocks can be interacted with when the interact key is pressed
+	InteractKeyBlacklistBlocks = []
+	#These blacklist entities can be interacted with when the interact key is pressed
+	InteractKeyBlacklistEntities = []
+
+[base_multiplier]
+	#All base damage number is multiplied by this factor
+	#Range: 0.0 ~ 1.7976931348623157E308
+	DamageBaseMultiplier = 1.0
+	#All armor ignore damage number is multiplied by this factor
+	#Range: 0.0 ~ 1.7976931348623157E308
+	ArmorIgnoreBaseMultiplier = 1.0
+	#All head shot damage number is multiplied by this factor
+	#Range: 0.0 ~ 1.7976931348623157E308
+	HeadShotBaseMultiplier = 1.0
+	#The movement speed will decrease per kg of weight. 0.015 means 1.5% speed decrease per kg. Set a negative value to disable this feature
+	#Range: -1.0 ~ 1.7976931348623157E308
+	WeightSpeedMultiplier = 0.015
+
+[misc]
+	#The entity's head hitbox during the headshot
+	#Format: touhou_little_maid:maid [-0.5, 1.0, -0.5, 0.5, 1.5, 0.5]
+	HeadShotAABB = []
+	#The maximum stack size of ammo that the ammo box can hold
+	#Range: > 1
+	AmmoBoxStackSize = 3
+	#Deprecated. Use vanilla server resource pack
+	ClientGunPackDownloadUrls = []
+	#Whether or not players are allowed to use the crawl feature
+	EnableCrawl = true
+	#Enable the recipe limit of default gunsmith table or not
+	EnableDefaultGunSmithTableFilter = true
+	#[Debug Option] Do server-side network check while shooting or not
+	ServerShootNetworkCheck = true
+	#[Debug Option] Do server-side shoot cooldown check or not. WARNING: Close this will disable the shoot cooldown check in server-side at all, which may lead to potential for cheating. Only consider to close this when you can't shoot at all sometimes.
+	ServerShootCooldownCheck = true
+
