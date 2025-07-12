@@ -3189,6 +3189,179 @@
             ]
         },
         {
+            "pakku_id": "EWFk0paSVhbZ1rUq",
+            "pakku_links": [
+                "l1OzmkZzTf132MDd",
+                "WHZkDnM7nhtLy6D7",
+                "fMkiGcRPRv1DdRC1",
+                "0eaY2qNvkpQzolFy"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "knights-of-terrafirma"
+            },
+            "name": {
+                "curseforge": "Epic Knights of TerraFirma"
+            },
+            "id": {
+                "curseforge": "1092010"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "knightsofterrafirma-3.0.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5934/713/knightsofterrafirma-3.0.2.jar",
+                    "id": "5934713",
+                    "parent_id": "1092010",
+                    "hashes": {
+                        "sha1": "609454ec1ff52df9f326bf2a48b08ae9a0c1b540",
+                        "md5": "3f3ef903c203882c94f28915a7fc89a0"
+                    },
+                    "required_dependencies": [
+                        "509041",
+                        "1033634",
+                        "302973",
+                        "419699"
+                    ],
+                    "size": 5390339,
+                    "date_published": "2024-11-24T21:12:32.933Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "WHZkDnM7nhtLy6D7",
+            "pakku_links": [
+                "l1OzmkZzTf132MDd",
+                "mMaB7STXrFZQ0HCq"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "epic-knights-antique-legacy"
+            },
+            "name": {
+                "curseforge": "Epic Knights: Antique Legacy"
+            },
+            "id": {
+                "curseforge": "1033634"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "[1.20.x-forge]-Epic-Knights-Antique-Legacy-1.8.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.2-Snapshot",
+                        "1.20.1",
+                        "1.20",
+                        "1.20-Snapshot"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5496/564/[1.20.x-forge]-Epic-Knights-Antique-Legacy-1.8.jar",
+                    "id": "5496564",
+                    "parent_id": "1033634",
+                    "hashes": {
+                        "sha1": "077ed91caf52c2f61cd16e43e33597cf0e119d7c",
+                        "md5": "a238f808ef6fe97be5cee9c9d3ef4f34"
+                    },
+                    "required_dependencies": [
+                        "509041",
+                        "1125802"
+                    ],
+                    "size": 5443776,
+                    "date_published": "2024-07-02T21:30:04.963Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "mMaB7STXrFZQ0HCq",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "epic-knights-ores-and-alloys"
+            },
+            "name": {
+                "curseforge": "Epic Knights: Ores and Alloys"
+            },
+            "id": {
+                "curseforge": "1125802"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "[1.20.1-forge]-Epic-Knights-Ores-and-Alloys-1.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5857/444/[1.20.1-forge]-Epic-Knights-Ores-and-Alloys-1.1.jar",
+                    "id": "5857444",
+                    "parent_id": "1125802",
+                    "hashes": {
+                        "sha1": "f518c42c64f472e464adc067da389c0797af141b",
+                        "md5": "30fbb6d9a70b05ea4e48cc1a04813a63"
+                    },
+                    "required_dependencies": [],
+                    "size": 248975,
+                    "date_published": "2024-10-29T17:29:48.540Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "l1OzmkZzTf132MDd",
+            "pakku_links": [
+                "chnSa7MrxlvxvEWU",
+                "0eaY2qNvkpQzolFy"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "epic-knights-armor-and-weapons"
+            },
+            "name": {
+                "curseforge": "Epic Knights: Shields, Armor and Weapons [Fabric/Forge/NeoForge]"
+            },
+            "id": {
+                "curseforge": "509041"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "[1.20.1-forge]-Epic-Knights-9.23.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6373/737/[1.20.1-forge]-Epic-Knights-9.23.jar",
+                    "id": "6373737",
+                    "parent_id": "509041",
+                    "hashes": {
+                        "sha1": "2605c36d39fdb4d7fa654cce175573603840ac66",
+                        "md5": "0d0be8819f47fb497cdd1c9871d3ac34"
+                    },
+                    "required_dependencies": [
+                        "348521",
+                        "419699"
+                    ],
+                    "size": 2669952,
+                    "date_published": "2025-04-01T09:11:08.850Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "S9mFVhld9RtTDbh2",
             "type": "MOD",
             "slug": {
@@ -6826,6 +6999,7 @@
             "id": {
                 "curseforge": "585406"
             },
+            "export": false,
             "files": [
                 {
                     "type": "curseforge",
