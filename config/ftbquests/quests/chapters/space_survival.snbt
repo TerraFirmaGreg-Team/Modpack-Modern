@@ -516,6 +516,66 @@
 			x: -2.5d
 			y: -6.5d
 		}
+		{
+			dependencies: ["5826EC76931359B8"]
+			description: [
+				"{quests.gregtech_energy.large_solar.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.large_solar.desc.2}"
+			]
+			icon: "gtceu:large_solar_panel"
+			id: "0BBD6807505AA96E"
+			subtitle: "{quests.gregtech_energy.large_solar.subtitle}"
+			tasks: [
+				{
+					id: "08F8A202DEFBD791"
+					item: "gtceu:large_solar_panel"
+					type: "item"
+				}
+				{
+					id: "33009033269EAD48"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "3F0202755438BE30"
+					item: "gtceu:auto_maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "76E075BC64697885"
+					item: "gtceu:ev_energy_output_hatch"
+					type: "item"
+				}
+				{
+					count: 54L
+					id: "2D09546682F6DD20"
+					item: { Count: 32, id: "tfg:casings/machine_casing_iron_desh" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "7F1A78AB02673FC8"
+					item: { Count: 24, id: "tfg:casings/machine_casing_red_solar_panel" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "13DB8D7072DE7BEA"
+					item: { Count: 20, id: "ad_astra:iron_plateblock" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1D6554EA7A76178F"
+					item: { Count: 16, id: "gtceu:cleanroom_glass" }
+					type: "item"
+				}
+			]
+			title: "{quests.gregtech_energy.large_solar.title}"
+			x: -2.5d
+			y: 1.0d
+		}
 	]
 	subtitle: ["{quests.space_survival.subtitle}"]
 	title: "{quests.space_survival}"
