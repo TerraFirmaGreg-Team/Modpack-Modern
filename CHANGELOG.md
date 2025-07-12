@@ -1,6 +1,7 @@
 # Changelog
 
 ## [Unreleased]
+- [!WARNING] If you're upgrading your world from 0.9 to 0.10, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.9-to-0.10). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
 ### Major changes
 - Build a rocket and blast off to the moon, a new dimension! You can get started in mid-HV.
 - AE2 inscriber presses are now found on the moon instead of being craftable, and making various AE2 components is also significantly cheaper there. @TomPlop & @Pyritie
@@ -13,6 +14,7 @@
 - Main UI overhaul and curseforge branding updated @Redeix
 - Added sunflowers and rapeseed to make Bio Diesel viable (#1248) @34y34y34y34y34y34y34y34y34y @Redeix
 - Create 6 update! @AirRice @aidie8
+- Added guns! @BlueBoat29
 ### Minor changes
 - Balance changes for water wheels and glowstone blocks @Pyritie
 - Added straws for the blaze burners so now you can pump liquid fuels into them (#1204) @34y34y34y34y34y34y34y34y34y
