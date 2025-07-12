@@ -40,5 +40,11 @@ function registerTACZAmmoRecipes(event){
 		
 	}).id('tfg_tacz:45_70_bullets');
 	
-	
+	event.recipes.gtceu.assembler('tfg_tacz:fluix_grenade')
+		.itemInputs('#forge:ingots/magnalium', '4x gtceu:gelled_toluene')
+		.inputFluids(Fluid.of('tfg:fluix', 720))
+		.itemOutputs(Item.of('tacz:ammo', 
+			'{AmmoId:"applied_armorer:fluix_infused_grenade"}'))
+		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20)
 }
