@@ -1194,7 +1194,7 @@ const registerGTCEURecipes = (event) => {
 	generateMixerRecipe(event, ['gtceu:tiny_nether_quartz_dust', '8x gtceu:tiny_redstone_dust'], [], 'gtceu:rose_quartz_dust', 2, [], 20, 60, 64, 'tiny_rose_quartz_dust_mixing')
 
 	event.recipes.gtceu.autoclave("autoclave_dust_rose_quartz_ice")
-		.itemInputs("gtceu:rose_quartz_dust")
+		.itemInputs('#forge:gems/rose_quartz')
 		.inputFluids(Fluid.of("gtceu:ice", 144))
 		.itemOutputs("gtceu:rose_quartz_gem")
 		.duration(2000)
