@@ -1209,8 +1209,19 @@
 				title: "Either of them"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -10.0d
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["378E2294EFD85C65"]
+			id: "51B34B3E51B6ECDD"
+			tasks: [{
+				id: "295980339E1FE027"
+				item: "pccard:card_programmed_circuit"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -10.5d
 		}
 	]
 	title: "{quests.ae2}"
