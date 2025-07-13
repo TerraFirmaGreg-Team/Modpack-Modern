@@ -230,6 +230,7 @@ ServerEvents.recipes(event => {
 	registerHandGliderRecipes(event)
 	registerHotOrNotRecipes(event)
 	registerImmersiveAircraftRecipes(event)
+	registerKnightsOfTerraFirmaRecipies(event)
 	registerMeasurementsRecipes(event)
 	registerMegaCellsRecipes(event)
 	registerMERequesterRecipes(event)
