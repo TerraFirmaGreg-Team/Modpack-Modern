@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"mature=false": {
+			"model": "tfg:block/crop/sunflower_dead_young"
+		},
+		"mature=true,part=top": {
+			"model": "tfg:block/crop/sunflower_dead_top"
+		},
+		"mature=true,part=bottom": {
+			"model": "tfg:block/crop/sunflower_dead_bottom"
+		}
+	}
+}

@@ -43,11 +43,17 @@ const registerGTCEUItemTags = (event) => {
 	event.add('tfg:stone_dusts', 'gtceu:deepslate_dust')
 	event.add('tfg:stone_dusts', 'gtceu:blackstone_dust')
 	event.add('tfg:stone_dusts', 'tfg:dripstone_dust')
-
+	event.add('tfg:stone_dusts', 'tfg:moon_stone_dust')
+	event.add('tfg:stone_dusts', 'tfg:moon_deepslate_dust')
+	event.add('tfg:stone_dusts', 'tfg:mars_stone_dust')
+	event.add('tfg:stone_dusts', 'tfg:venus_stone_dust')
+	event.add('tfg:stone_dusts', 'tfg:mercury_stone_dust')
+	event.add('tfg:stone_dusts', 'tfg:glacio_stone_dust')
 	event.add('tfg:stone_dusts', 'gtceu:stone_dust')
 	//#endregion
 
 	event.remove('minecraft:planks', 'gtceu:treated_wood_planks')
+	event.remove('minecraft:planks', 'gtceu:treated_wood_plate')
 
 	event.add('tfg:sugars', 'minecraft:sugar')
 	event.add('tfg:sugars', 'afc:birch_sugar')
@@ -65,6 +71,9 @@ const registerGTCEUItemTags = (event) => {
     event.add('minecraft:piglin_loved', 'gtceu:rich_raw_pyrite')
 
     event.remove('forge:gems', 'gtceu:coke_gem')
+
+	// Rose Quartz Lens
+	event.add('forge:lenses/pink', 'gtceu:rose_quartz_lens')
 }
 
 const registerGTCEUBlockTags = (event) => {
@@ -121,4 +130,5 @@ const registerGTCEUFluidTags = (event) => {
 	event.add('c:hidden_from_recipe_viewers', 'gtceu:molten_black_steel')
 	event.add('c:hidden_from_recipe_viewers', 'gtceu:molten_red_steel')
 	event.add('c:hidden_from_recipe_viewers', 'gtceu:molten_blue_steel')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:damascus_steel')
 }

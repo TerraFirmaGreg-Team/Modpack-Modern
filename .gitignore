@@ -7,6 +7,11 @@
 **/*.code-workspace
 **/*.zip
 
+# Dev
+.vs/
+.vscode/
+.idea/
+
 # Pakku
 build/
 !.pakku/**/*
@@ -45,37 +50,36 @@ config/stellarcore_stitcher_cache_vanilla.dat
 # .minecraft
 !bansoukou/**.zip
 
-.vs/
-.vscode/
-.idea/
-.bobby/
-.mixin.out/
-classOut/
-backups/
-profileImage/
-crash-reports/
-logs/
-saves/
-ldlib/
-local/
-vintagefix/
-modernfix/
-XaeroWaypoints*/
-XaeroWorldMap*/
-#defaultconfigs/
-xaero/
-visualores/
-mods-carryover/
-EnderStorage/
-fancymenu_data/
-fancymenu_setups/
-downloads/
-CustomSkinLoader/
-EverlastingSkins/
-cache/
-screenshots/
-shaderpacks/
-chiselsandbits/
+
+/.bobby/
+/.mixin.out/
+/classOut
+/backups
+/profileImage
+/crash-reports
+/logs
+/saves
+/ldlib
+/local
+/vintagefix
+/modernfix
+/XaeroWaypoints*
+/XaeroWorldMap*
+/xaero
+/visualores
+/mods-carryover
+/EnderStorage
+/fancymenu_data
+/fancymenu_setups
+/downloads
+/CustomSkinLoader
+/EverlastingSkins
+/cache
+/screenshots
+/shaderpacks
+/chiselsandbits
+/gtceu/prospection_cache
+/data
 
 # Client data
 bansoukou
@@ -99,7 +103,7 @@ optionsof.txt
 optionsshaders.txt
 OpenComputersMod-*
 hei_bookmarks.ini
-gtceu/prospection_cache/
+icon.png
 
 # Server data
 .pakku/server-overrides/libraries
@@ -109,3 +113,5 @@ gtceu/prospection_cache/
 .pakku/server-overrides/scripts
 .pakku/server-overrides/mods
 .pakku/server-overrides/user_jvm_args.txt
+
+/tacz/tacz_default_gun

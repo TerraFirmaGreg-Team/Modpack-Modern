@@ -577,6 +577,33 @@ global.TFC_DISABLED_ITEMS = [
     'tfc:bucket/metal/red_steel'
 ];
 
+// Items that need to be hidden, but you want to keep their tags.
+global.TFC_HIDDEN_ITEMS = [
+    'tfc:wild_crop/papyrus', 
+    'tfc:wild_crop/pumpkin', 
+    'tfc:wild_crop/melon', 
+    'tfc:wild_crop/red_bell_pepper', 
+    'tfc:wild_crop/yellow_bell_pepper', 
+    'tfc:wild_crop/barley', 
+    'tfc:wild_crop/oat', 
+    'tfc:wild_crop/rye', 
+    'tfc:wild_crop/maize', 
+    'tfc:wild_crop/wheat', 
+    'tfc:wild_crop/rice', 
+    'tfc:wild_crop/beet', 
+    'tfc:wild_crop/cabbage', 
+    'tfc:wild_crop/carrot', 
+    'tfc:wild_crop/garlic', 
+    'tfc:wild_crop/green_bean', 
+    'tfc:wild_crop/potato', 
+    'tfc:wild_crop/onion', 
+    'tfc:wild_crop/soybean', 
+    'tfc:wild_crop/squash', 
+    'tfc:wild_crop/sugarcane', 
+    'tfc:wild_crop/tomato', 
+    'tfc:wild_crop/jute'
+];
+
 /**
  * Хранит список всех имен типов камней в TFC.
  */
@@ -826,7 +853,6 @@ global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = [
     { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_knife_blade_mold', name: 'knife_blade_mold' },
     { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_scythe_blade_mold', name: 'scythe_blade_mold' },
     { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_bell_mold', name: 'bell_mold' },
-    { input: '5x minecraft:clay_ball', output: '3x tfc:ceramic/unfired_brick', name: 'brick' },
     { input: '5x minecraft:clay_ball', output: '2x tfc:ceramic/unfired_flower_pot', name: 'flower_pot' },
     { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_pan', name: 'pan' },
     { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_blowpipe', name: 'ceramic_blowpipe' },
@@ -839,7 +865,6 @@ global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = [
     { input: '5x minecraft:clay_ball', output: 'tfcchannelcasting:unfired_heart_mold', name: 'heart_mold' },
     { input: '5x minecraft:clay_ball', output: '2x rnr:unfired_roof_tile', name: 'roof_tile' },
     { input: '5x tfc:fire_clay', output: 'tfc:ceramic/unfired_fire_ingot_mold', name: 'fire_ingot_mold' },
-    { input: '5x tfc:fire_clay', output: '3x tfc:ceramic/unfired_fire_brick', name: 'fire_brick' },
     { input: '5x tfc:fire_clay', output: 'tfc:ceramic/unfired_crucible', name: 'crucible' },
     { input: '5x tfc:fire_clay', output: 'tfcchannelcasting:unfired_channel', name: 'channel' },
     { input: '5x tfc:fire_clay', output: 'tfcchannelcasting:unfired_mold_table', name: 'mold_table' },
@@ -852,7 +877,7 @@ global.TFC_BATCH_TO_BOTTLE_ASSEMBLING_RECIPE_COMPONENTS = [
     { input: 'tfc:volcanic_glass_batch', output: 'tfc:volcanic_glass_bottle', name: 'volcanic_glass_bottle' },
 ];
 
-global.TFC_FURNACE_MEAT_RECIPE_COMPONENTS = [
+global.TFC_MEAT_RECIPE_COMPONENTS = [
     { input: 'tfc:food/horse_meat', output: 'tfc:food/cooked_horse_meat', name: 'cooked_horse_meat' }, 
     { input: 'tfc:food/bear', output: 'tfc:food/cooked_bear', name: 'cooked_bear' }, 
     { input: 'tfc:food/mutton', output: 'tfc:food/cooked_mutton', name: 'cooked_mutton' }, 
@@ -885,7 +910,14 @@ global.TFC_FURNACE_MEAT_RECIPE_COMPONENTS = [
     { input: 'tfc:food/hyena', output: 'tfc:food/cooked_hyena', name: 'cooked_hyena' }, 
     { input: 'tfc:food/duck', output: 'tfc:food/cooked_duck', name: 'cooked_duck' }, 
     { input: 'tfc:food/chevon', output: 'tfc:food/cooked_chevon', name: 'cooked_chevon' },
-    { input: 'minecraft:egg', output: 'tfc:food/cooked_egg', name: 'cooked_egg' },
+    { input: '#forge:eggs', output: 'tfc:food/cooked_egg', name: 'cooked_egg' },
+
+    { input: 'minecraft:chorus_fruit', output: 'minecraft:popped_chorus_fruit', name: 'popped_chorus_fruit' },
+    { input: 'tfg:food/raw_birt', output: 'tfg:food/cooked_birt', name: 'cooked_birt' },
+    { input: 'tfg:food/raw_crawlermari', output: 'tfg:food/cooked_crawlermari', name: 'cooked_crawlermari' },
+    { input: 'tfg:food/raw_limpet', output: 'tfg:food/cooked_limpet', name: 'cooked_limpet' },
+    { input: 'tfg:sunflower_product', output: 'tfg:roasted_sunflower_seeds', name: 'roasted_sunflower_seeds' },
+    { input: 'tfg:food/raw_moon_rabbit', output: 'tfg:food/cooked_moon_rabbit', name: 'cooked_moon_rabbit' }
 ];
 
 global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = [
@@ -924,41 +956,39 @@ global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = [
     { input: 'firmalife:ore/small_chromite', output: 'gtceu:small_chromite_dust', name: 'chromite' }
 ];
 
-global.TFC_QUERN_GRAIN_RECIPE_COMPONENTS = [
-    { input: 'tfc:food/barley', output: 'tfc:food/barley_grain', name: 'barley_grain' },
-    { input: 'tfc:food/maize', output: 'tfc:food/maize_grain', name: 'maize_grain' },
-    { input: 'tfc:food/oat', output: 'tfc:food/oat_grain', name: 'oat_grain' },
-    { input: 'tfc:food/rye', output: 'tfc:food/rye_grain', name: 'rye_grain' },
-    { input: 'tfc:food/rice', output: 'tfc:food/rice_grain', name: 'rice_grain' },
-    { input: 'tfc:food/wheat', output: 'tfc:food/wheat_grain', name: 'wheat_grain' },
-];
+global.TFC_GRAINS = [
+    "barley",
+    "maize",
+    "oat",
+    "rye",
+    "rice",
+    "wheat",
+]
 
-global.TFC_QUERN_FLOUR_RECIPE_COMPONENTS = [
-    { input: 'tfc:food/barley_grain', output: '2x tfc:food/barley_flour', name: 'barley_flour' },
-    { input: 'tfc:food/maize_grain', output: '2x tfc:food/maize_flour', name: 'maize_flour' },
-    { input: 'tfc:food/oat_grain', output: '2x tfc:food/oat_flour', name: 'oat_flour' },
-    { input: 'tfc:food/rye_grain', output: '2x tfc:food/rye_flour', name: 'rye_flour' },
-    { input: 'tfc:food/rice_grain', output: '2x tfc:food/rice_flour', name: 'rice_flour' },
-    { input: 'tfc:food/wheat_grain', output: '2x tfc:food/wheat_flour', name: 'wheat_flour' },
-];
-
-global.TFC_MIXER_FLATBREAD_DOUGH_RECIPE_COMPONENTS = [
-    { input: 'tfc:food/barley_flour', output: '2x tfc:food/barley_dough', name: 'tfc_barley_dough' },
-    { input: 'tfc:food/maize_flour', output: '2x tfc:food/maize_dough', name: 'tfc_maize_dough' },
-    { input: 'tfc:food/oat_flour', output: '2x tfc:food/oat_dough', name: 'tfc_oat_dough' },
-    { input: 'tfc:food/rye_flour', output: '2x tfc:food/rye_dough', name: 'tfc_rye_dough' },
-    { input: 'tfc:food/rice_flour', output: '2x tfc:food/rice_dough', name: 'tfc_rice_dough' },
-    { input: 'tfc:food/wheat_flour', output: '2x tfc:food/wheat_dough', name: 'tfc_wheat_dough' },
-];
-
-global.TFC_FURNACE_BREAD_RECIPE_COMPONENTS = [
-    { input: 'firmalife:food/barley_dough', output: 'tfc:food/barley_bread', name: 'barley_bread' },
-    { input: 'firmalife:food/maize_dough', output: 'tfc:food/maize_bread', name: 'maize_bread' },
-    { input: 'firmalife:food/oat_dough', output: 'tfc:food/oat_bread', name: 'oat_bread' },
-    { input: 'firmalife:food/rye_dough', output: 'tfc:food/rye_bread', name: 'rye_bread' },
-    { input: 'firmalife:food/rice_dough', output: 'tfc:food/rice_bread', name: 'rice_bread' },
-    { input: 'firmalife:food/wheat_dough', output: 'tfc:food/wheat_bread', name: 'wheat_bread' },
-];
+global.TFC_JAMS = [
+    "blackberry",
+    "blueberry",
+    "bunchberry",
+    "cloudberry",
+    "cranberry",
+    "elderberry",
+    "gooseberry",
+    "raspberry",
+    "snowberry",
+    "strawberry",
+    "wintergreen_berry",
+    "banana",
+    "cherry",
+    "green_apple",
+    "lemon",
+    "olive",
+    "orange",
+    "peach",
+    "plum",
+    "red_apple",
+    "pumpkin_chunks",
+    "melon_slice",
+]
 
 global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = [
     { input: 'tfc:plant/cherry_sapling', fluid_amount: 8000, output: '32x tfc:food/cherry', name: 'cherry' },
@@ -996,6 +1026,8 @@ global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS = [
     { input: '8x tfc:seeds/melon', fluid_amount: 4000, output: '24x tfc:melon', name: 'melon' },
     { input: '8x tfc:seeds/red_bell_pepper', fluid_amount: 4000, output: '24x tfc:food/red_bell_pepper', name: 'red_bell_pepper' },
     { input: '8x tfc:seeds/yellow_bell_pepper', fluid_amount: 4000, output: '24x tfc:food/yellow_bell_pepper', name: 'yellow_bell_pepper' },
+    { input: '8x tfg:sunflower_seeds', fluid_amount: 4000, output: '24x tfg:sunflower_product', name: 'sunflower' },
+    { input: '8x tfg:rapeseed_seeds', fluid_amount: 4000, output: '24x tfg:rapeseed_product', name: 'rapeseed' },
 ];
 
 global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS = [
@@ -1016,7 +1048,14 @@ global.TFC_MILKS = [
     {id: 'minecraft:milk'},
     {id: 'firmalife:yak_milk'},
     {id: 'firmalife:goat_milk'},
-    {id: 'firmalife:coconut_milk'},
+    // Uncomment this if firmalife ever makes this obtainable
+    //{id: 'firmalife:coconut_milk'},
+];
+
+global.TFC_CURDS_AND_CHEESES = [
+    { id: 'milk', input_fluid: 'tfc:curdled_milk', curd: 'firmalife:food/milk_curd', cheese1: 'gouda', cheese2: 'cheddar' },
+    { id: 'yak', input_fluid: 'firmalife:curdled_yak_milk', curd: 'firmalife:food/yak_curd', cheese1: 'shosha', cheese2: 'rajya_metok' },
+    { id: 'goat', input_fluid: 'firmalife:curdled_goat_milk', curd: 'firmalife:food/goat_curd', cheese1: 'feta', cheese2: 'chevre' },
 ];
 
 global.TFC_ALCOHOL = [

@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"": [
+			{ "model": "tfg:block/lunar_sprouts" },
+			{ "model": "tfg:block/lunar_sprouts", "y": 90 },
+			{ "model": "tfg:block/lunar_sprouts", "y": 180 },
+			{ "model": "tfg:block/lunar_sprouts", "y": 270 }
+		]
+	}
+}

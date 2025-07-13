@@ -37,6 +37,10 @@ const registerFirmaLifeRecipes = (event) => {
 	event.remove({ id: 'firmalife:heating/metal/stainless_steel_block_slab' })
 	event.remove({ id: 'firmalife:heating/metal/stainless_steel_block_stairs' })
 
+	event.remove({ id: /^firmalife:crafting\/.*_dough/ })
+
+	event.remove({ id: 'firmalife:pot/chocolate' })
+
 	//#endregion
 
 	// Декрафт Jag Lid
@@ -95,16 +99,8 @@ const registerFirmaLifeRecipes = (event) => {
 		.duration(50)
 		.EUt(2)
 
-	// Pineapple Fiber
-	event.recipes.gtceu.assembler(`tfg:firmalife/pineapple_fiber`)
-		.itemInputs('firmalife:food/pineapple')
-		.circuit(1)
-		.itemOutputs('firmalife:pineapple_fiber')
-		.duration(50)
-		.EUt(7)
-
 	// Pineapple Yarn
-	event.recipes.gtceu.assembler(`tfg:firmalife/pineapple_yarn`)
+	event.recipes.gtceu.wiremill(`tfg:firmalife/pineapple_yarn`)
 		.itemInputs('firmalife:pineapple_fiber')
 		.circuit(1)
 		.itemOutputs('8x firmalife:pineapple_yarn')
@@ -120,50 +116,52 @@ const registerFirmaLifeRecipes = (event) => {
 		.EUt(7)
 
 	//#region Wine Working
-	
+
 	event.recipes.gtceu.alloy_smelter('firmalife:empty_olivine_wine_bottle')
 		.itemInputs('tfc:olivine_glass_batch')
 		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('firmalife:empty_olivine_wine_bottle')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
-		
+
 	event.recipes.gtceu.alloy_smelter('firmalife:empty_volcanic_wine_bottle')
 		.itemInputs('tfc:volcanic_glass_batch')
 		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('firmalife:empty_volcanic_wine_bottle')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
-		
+
 	event.recipes.gtceu.alloy_smelter('firmalife:empty_hematitic_wine_bottle')
 		.itemInputs('tfc:hematitic_glass_batch')
 		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('firmalife:empty_hematitic_wine_bottle')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
-		
+
 	event.recipes.gtceu.alloy_smelter('firmalife:wine_glass')
 		.itemInputs('tfc:silica_glass_batch')
 		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('2x firmalife:wine_glass')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
-	
+
 	event.recipes.gtceu.assembler('firmalife:cork')
 		.itemInputs('firmalife:treated_lumber')
-		.inputFluids(Fluid.of('tfc:limewater',1000))
+		.inputFluids(Fluid.of('tfc:limewater', 1000))
 		.itemOutputs('8x firmalife:cork')
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.ULV])
-		
+
 	event.recipes.gtceu.assembler('firmalife:bottle_label')
-		.itemInputs('#forge:wax','minecraft:paper')
+		.itemInputs('#forge:wax', 'minecraft:paper')
 		.itemOutputs('16x firmalife:bottle_label')
 		.duration(30)
 		.EUt(GTValues.VA[GTValues.ULV])
-	
+
+	event.replaceInput({ id: 'firmalife:crafting/bottle_label' }, 'firmalife:beeswax', '#forge:wax')
+
 	//#endregion
-	
+
 	// TODO: Не работает потому что грегтех
 	// Доставание меда из сот
 	/*
@@ -182,13 +180,13 @@ const registerFirmaLifeRecipes = (event) => {
 		'firmalife:treated_wood_greenhouse_wall',
 		'#forge:tiny_fluid_pipes/copper'
 	])
-	.id('firmalife:crafting/greenhouse/treated_wood_greenhouse_port')
+		.id('firmalife:crafting/greenhouse/treated_wood_greenhouse_port')
 
 	//#endregion Treated Wood
 
 	//#region Медная / Copper
 
-	event.recipes.gtceu.bender('tfg:firmalife/sprinkler')
+	event.recipes.gtceu.bender('tfg:firmalife/sprinkler_electric_only')
 		.itemInputs('#forge:plates/copper')
 		.itemOutputs('firmalife:sprinkler')
 		.circuit(4)
@@ -267,7 +265,7 @@ const registerFirmaLifeRecipes = (event) => {
 		'firmalife:copper_greenhouse_wall',
 		'#forge:tiny_fluid_pipes/copper'
 	])
-	.id('firmalife:crafting/greenhouse/copper_greenhouse_port')
+		.id('firmalife:crafting/greenhouse/copper_greenhouse_port')
 
 	//#endregion
 
@@ -345,7 +343,7 @@ const registerFirmaLifeRecipes = (event) => {
 		'firmalife:iron_greenhouse_wall',
 		'#forge:tiny_fluid_pipes/copper'
 	])
-	.id('firmalife:crafting/greenhouse/iron_greenhouse_port')
+		.id('firmalife:crafting/greenhouse/iron_greenhouse_port')
 
 	//#endregion
 
@@ -419,9 +417,31 @@ const registerFirmaLifeRecipes = (event) => {
 		'firmalife:stainless_steel_greenhouse_wall',
 		'#forge:tiny_fluid_pipes/copper'
 	])
-	.id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_port')
+		.id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_port')
 
 	//#endregion
+
+	event.shaped('firmalife:sweeper', [
+		'ABD',
+		'CB '
+	], {
+		A: '#forge:saw_heads/steel',
+		B: '#forge:rods/steel',
+		C: 'vintageimprovements:redstone_module',
+		D: '#forge:tools/wrenches'
+	}).id('firmalife:crafting/sweeper')
+
+	event.shaped('firmalife:picker', [
+		'ABD',
+		'CC ',
+		'EE '
+	], {
+		A: '#forge:plates/steel',
+		B: 'vintageimprovements:redstone_module',
+		C: '#forge:rods/steel',
+		D: '#forge:tools/wrenches',
+		E: '#forge:hoe_heads/steel'
+	}).id('firmalife:crafting/picker')
 
 	//#endregion
 
@@ -444,285 +464,15 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// Семена фруктов
 	global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, true)
+		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, 'minecraft:overworld', 1)
 	})
 
 	// Семена ягод
 	global.FIRMALIFE_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, false)
+		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, null, 1)
 	})
 
 	//#endregion
-
-	//#region Рецепты муки
-
-	global.FIRMALIFE_QUERN_FLOUR_RECIPE_COMPONENTS.forEach(element => {
-		event.recipes.gtceu.macerator(`tfg:${element.name}`)
-			.itemInputs(element.input)
-			.itemOutputs(element.output)
-			.duration(200)
-			.EUt(2)
-	})
-
-	//#endregion
-
-	//#region Рецепты теста
-
-	global.FIRMALIFE_MIXER_FLATBREAD_DOUGH_RECIPE_COMPONENTS.forEach(element => {
-		event.recipes.gtceu.mixer(element.name)
-			.itemInputs(element.input, '#tfc:sweetener')
-			.inputFluids(Fluid.of('firmalife:yeast_starter', 100))
-			.itemOutputs(element.output)
-			.duration(300)
-			.EUt(16)
-			.circuit(2)
-	})
-
-	//#endregion
-
-	//#region Рецепты плоского хлеба
-
-	global.FIRMALIFE_FURNACE_FLATBREAD_RECIPE_COMPONENTS.forEach(element => {
-		event.smelting(element.output, element.input)
-			.id(`tfg:smelting/${element.name}`)
-	})
-
-	//#endregion
-
-	//#region Смешивание в миске
-
-	// Тесто для пиццы
-	event.recipes.gtceu.mixer('firmalife:food/pizza_dough_olive_oil')
-		.itemInputs('firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt')
-		.inputFluids(Fluid.of('tfc:olive_oil', 1000))
-		.itemOutputs('4x firmalife:food/pizza_dough')
-		.duration(300)
-		.EUt(16)
-
-	event.recipes.gtceu.mixer('firmalife:food/pizza_dough_soybean_oil')
-		.itemInputs('firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt')
-		.inputFluids(Fluid.of('firmalife:soybean_oil', 1000))
-		.itemOutputs('4x firmalife:food/pizza_dough')
-		.duration(300)
-		.EUt(16)
-
-	// Vanilla Ice Cream
-	event.recipes.gtceu.mixer('firmalife:food/vanilla_ice_cream')
-		.itemInputs('firmalife:ice_shavings', '#tfc:sweetener', 'firmalife:spice/vanilla')
-		.inputFluids(Fluid.of('firmalife:cream', 1000))
-		.itemOutputs('2x firmalife:food/vanilla_ice_cream')
-		.duration(300)
-		.EUt(16)
-
-	// Pumpkin Pie Dough
-	event.recipes.gtceu.mixer('firmalife:food/pumpkin_pie_dough')
-		.itemInputs('#tfc:sweetener', '#forge:eggs', '2x tfc:food/pumpkin_chunks', '#tfc:foods/flour')
-		.inputFluids(Fluid.of('minecraft:water', 1000))
-		.itemOutputs('firmalife:food/pumpkin_pie_dough')
-		.duration(300)
-		.EUt(16)
-		.circuit(2)
-
-	// Butter
-	event.recipes.gtceu.mixer('firmalife:food/butter')
-		.itemInputs('tfc:powder/salt')
-		.inputFluids(Fluid.of('firmalife:cream', 1000))
-		.itemOutputs('firmalife:food/butter')
-		.duration(300)
-		.EUt(16)
-
-	// Pie Dough
-	event.recipes.gtceu.mixer('firmalife:food/pie_dough')
-		.itemInputs('#tfc:sweetener', 'firmalife:food/butter', '#tfc:foods/flour')
-		.inputFluids(Fluid.of('minecraft:water', 1000))
-		.itemOutputs('firmalife:food/pie_dough')
-		.duration(300)
-		.EUt(16)
-		.circuit(2)
-
-	// Cookie Dough
-	event.recipes.gtceu.mixer('firmalife:food/cookie_dough')
-		.itemInputs('#tfc:sweetener', 'firmalife:food/butter', '#tfc:foods/flour', '#forge:eggs', 'firmalife:spice/vanilla')
-		.itemOutputs('4x firmalife:food/cookie_dough')
-		.duration(300)
-		.EUt(16)
-
-	// Hardtack Dough
-	event.recipes.gtceu.mixer('firmalife:food/hardtack_dough')
-		.itemInputs('tfc:powder/salt', '#tfc:foods/flour')
-		.inputFluids(Fluid.of('minecraft:water', 1000))
-		.itemOutputs('4x firmalife:food/hardtack_dough')
-		.duration(300)
-		.EUt(16)
-		.circuit(2)
-
-	// Yeast starter
-	event.recipes.gtceu.mixer('firmalife:yeast_starter')
-		.inputFluids(Fluid.of('firmalife:yeast_starter', 100))
-		.itemInputs('#tfc:foods/flour')
-		.outputFluids(Fluid.of('firmalife:yeast_starter', 600))
-		.duration(1200)
-		.EUt(8)
-		.circuit(1)
-
-	// Cocoa Powder
-	event.recipes.gtceu.macerator('firmalife:food/cocoa_powder')
-		.itemInputs('gtceu:cocoa_dust')
-		.itemOutputs('4x firmalife:food/cocoa_powder')
-		.duration(100)
-		.EUt(2)
-
-	event.recipes.tfc.quern('4x firmalife:food/cocoa_powder', 'gtceu:cocoa_dust')
-		.id(`tfg:quern/cocoa_powder`)
-
-	event.recipes.tfc.quern('gtceu:cocoa_dust', 'firmalife:food/roasted_cocoa_beans')
-		.id('tfg:quern/cocoa_dust');
-
-	// Chocolate Ice Cream
-	event.recipes.gtceu.mixer('firmalife:food/chocolate_ice_cream')
-		.itemInputs('firmalife:food/vanilla_ice_cream')
-		.inputFluids(Fluid.of('firmalife:chocolate', 1000))
-		.itemOutputs('firmalife:food/chocolate_ice_cream')
-		.duration(300)
-		.EUt(16)
-
-	// White Chocolate Blend
-	event.recipes.gtceu.mixer('firmalife:food/white_chocolate_blend/milk')
-		.itemInputs('2x firmalife:food/cocoa_butter', '#tfc:sweetener')
-		.inputFluids(Fluid.of('minecraft:milk', 1000))
-		.itemOutputs('2x firmalife:food/white_chocolate_blend')
-		.duration(300)
-		.EUt(16)
-
-	event.recipes.gtceu.mixer('firmalife:food/white_chocolate_blend/yak_milk')
-		.itemInputs('2x firmalife:food/cocoa_butter', '#tfc:sweetener')
-		.inputFluids(Fluid.of('firmalife:yak_milk', 1000))
-		.itemOutputs('2x firmalife:food/white_chocolate_blend')
-		.duration(300)
-		.EUt(16)
-
-	event.recipes.gtceu.mixer('firmalife:food/white_chocolate_blend/goat_milk')
-		.itemInputs('2x firmalife:food/cocoa_butter', '#tfc:sweetener')
-		.inputFluids(Fluid.of('firmalife:goat_milk', 1000))
-		.itemOutputs('2x firmalife:food/white_chocolate_blend')
-		.duration(300)
-		.EUt(16)
-
-	event.recipes.gtceu.mixer('firmalife:food/white_chocolate_blend/coconut_milk')
-		.itemInputs('2x firmalife:food/cocoa_butter', '#tfc:sweetener')
-		.inputFluids(Fluid.of('firmalife:coconut_milk', 1000))
-		.itemOutputs('2x firmalife:food/white_chocolate_blend')
-		.duration(300)
-		.EUt(16)
-
-	event.smelting('firmalife:food/white_chocolate', 'firmalife:food/white_chocolate_blend')
-
-	// Dark Chocolate Blend
-	event.recipes.gtceu.mixer('firmalife:food/dark_chocolate_blend/milk')
-		.itemInputs('2x firmalife:food/cocoa_powder', '#tfc:sweetener')
-		.inputFluids(Fluid.of('minecraft:milk', 1000))
-		.itemOutputs('2x firmalife:food/dark_chocolate_blend')
-		.duration(300)
-		.EUt(16)
-
-	event.recipes.gtceu.mixer('firmalife:food/dark_chocolate_blend/yak_milk')
-		.itemInputs('2x firmalife:food/cocoa_powder', '#tfc:sweetener')
-		.inputFluids(Fluid.of('firmalife:yak_milk', 1000))
-		.itemOutputs('2x firmalife:food/dark_chocolate_blend')
-		.duration(300)
-		.EUt(16)
-
-	event.recipes.gtceu.mixer('firmalife:food/dark_chocolate_blend/goat_milk')
-		.itemInputs('2x firmalife:food/cocoa_powder', '#tfc:sweetener')
-		.inputFluids(Fluid.of('firmalife:goat_milk', 1000))
-		.itemOutputs('2x firmalife:food/dark_chocolate_blend')
-		.duration(300)
-		.EUt(16)
-
-
-	event.recipes.gtceu.mixer('firmalife:food/dark_chocolate_blend/coconut_milk')
-		.itemInputs('2x firmalife:food/cocoa_powder', '#tfc:sweetener')
-		.inputFluids(Fluid.of('firmalife:coconut_milk', 1000))
-		.itemOutputs('2x firmalife:food/dark_chocolate_blend')
-		.duration(300)
-		.EUt(16)
-
-	event.smelting('firmalife:food/dark_chocolate', 'firmalife:food/dark_chocolate_blend')
-
-	// Milk Chocolate Blend
-	event.recipes.gtceu.mixer('firmalife:food/milk_chocolate_blend/milk')
-		.itemInputs('firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter', '#tfc:sweetener')
-		.inputFluids(Fluid.of('minecraft:milk', 1000))
-		.itemOutputs('2x firmalife:food/milk_chocolate_blend')
-		.duration(300)
-		.EUt(16)
-
-	event.recipes.gtceu.mixer('firmalife:food/milk_chocolate_blend/yak_milk')
-		.itemInputs('firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter', '#tfc:sweetener')
-		.inputFluids(Fluid.of('firmalife:yak_milk', 1000))
-		.itemOutputs('2x firmalife:food/milk_chocolate_blend')
-		.duration(300)
-		.EUt(16)
-
-	event.recipes.gtceu.mixer('firmalife:food/milk_chocolate_blend/goat_milk')
-		.itemInputs('firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter', '#tfc:sweetener')
-		.inputFluids(Fluid.of('firmalife:goat_milk', 1000))
-		.itemOutputs('2x firmalife:food/milk_chocolate_blend')
-		.duration(300)
-		.EUt(16)
-
-	event.recipes.gtceu.mixer('firmalife:food/milk_chocolate_blend/coconut_milk')
-		.itemInputs('firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter', '#tfc:sweetener')
-		.inputFluids(Fluid.of('firmalife:coconut_milk', 1000))
-		.itemOutputs('2x firmalife:food/milk_chocolate_blend')
-		.duration(300)
-		.EUt(16)
-
-	event.smelting('firmalife:food/milk_chocolate', 'firmalife:food/milk_chocolate_blend')
-
-	// Strawberry Ice Cream
-	event.recipes.gtceu.mixer('firmalife:food/strawberry_ice_cream')
-		.itemInputs('firmalife:food/vanilla_ice_cream', '2x tfc:food/strawberry')
-		.itemOutputs('firmalife:food/strawberry_ice_cream')
-		.duration(300)
-		.EUt(16)
-
-	// Hardtack Dough
-	event.recipes.gtceu.mixer('firmalife:food/chocolate_chip_cookie_dough')
-		.itemInputs('4x firmalife:food/cookie_dough', '#firmalife:chocolate_blends')
-		.itemOutputs('4x firmalife:food/chocolate_chip_cookie_dough')
-		.duration(300)
-		.EUt(16)
-
-	//#endregion
-
-	//#region Обжарка некоторой еды
-
-	// Cooked Pizza
-	event.smelting('firmalife:food/cooked_pizza', 'firmalife:food/raw_pizza')
-
-	// Taco Shell
-	event.smelting('firmalife:food/taco_shell', 'firmalife:food/corn_tortilla')
-
-	// Sugar Cookie
-	event.smelting('firmalife:food/sugar_cookie', 'firmalife:food/cookie_dough')
-
-	// Chocolate Chip Cookie
-	event.smelting('firmalife:food/chocolate_chip_cookie', 'firmalife:food/chocolate_chip_cookie_dough')
-
-	// Hardtack
-	event.smelting('firmalife:food/hardtack', 'firmalife:food/hardtack_dough')
-
-	// Cooked Pie
-	event.smelting('firmalife:food/cooked_pie', 'firmalife:food/filled_pie')
-
-	// Roasted Cocoa Beans
-	event.smelting('firmalife:food/roasted_cocoa_beans', 'firmalife:food/cocoa_beans')
-
-	// Pumpkin Pie
-	event.smelting('minecraft:pumpkin_pie', 'firmalife:food/raw_pumpkin_pie')
-
-	//#endregion 
 
 	//#region Sticky Resin by Vat
 
@@ -740,14 +490,14 @@ const registerFirmaLifeRecipes = (event) => {
 
 	//#region Replace existing dyes
 
-	global.MINECRAFT_DYE_NAMES.forEach(dye => {
+	global.MINECRAFT_DYE_NAMES.forEach(dyeName => {
 
 		event.recipes.firmalife.vat()
-			.inputs(`#forge:dyes/${dye}`, Fluid.of('tfc:salt_water', 250))
-			.outputFluid(Fluid.of(`tfc:${dye}_dye`, 144))
-			.length(2000)
-			.temperature(600)
-			.id(`firmalife:vat/${dye}_dye`)
+			.inputs(`#forge:dyes/${dyeName}`, Fluid.of('tfc:vinegar', 250))
+			.outputFluid(Fluid.of(`tfc:${dyeName}_dye`, 144))
+			.length(100)
+			.temperature(200)
+			.id(`firmalife:vat/${dyeName}_dye`)
 	})
 
 	//#endregion
@@ -756,28 +506,6 @@ const registerFirmaLifeRecipes = (event) => {
 
 	generatePlatedBlockRecipe(event, GTMaterials.Chromium);
 	generatePlatedBlockRecipe(event, GTMaterials.StainlessSteel);
-
-	// #endregion
-
-	// #region Smashed food
-
-	event.recipes.gtceu.forge_hammer('firmalife:soybean_paste')
-		.itemInputs('firmalife:food/dehydrated_soybeans')
-		.itemOutputs('firmalife:food/soybean_paste')
-		.duration(20)
-		.EUt(7)
-
-	event.recipes.gtceu.forge_hammer('firmalife:red_grapes')
-		.itemInputs('firmalife:food/red_grapes')
-		.itemOutputs('firmalife:food/smashed_red_grapes')
-		.duration(20)
-		.EUt(7)
-
-	event.recipes.gtceu.forge_hammer('firmalife:white_grapes')
-		.itemInputs('firmalife:food/white_grapes')
-		.itemOutputs('firmalife:food/smashed_white_grapes')
-		.duration(20)
-		.EUt(7)
 
 	// #endregion
 
@@ -790,18 +518,155 @@ const registerFirmaLifeRecipes = (event) => {
 
 	event.recipes.gtceu.mixer('sugar_water')
 		.itemInputs('#tfc:sweetener')
-		.inputFluids(Fluid.of('minecraft:water', 1000))
+		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfg:clean_water" } }))
 		.outputFluids(Fluid.of('firmalife:sugar_water', 500))
 		.circuit(5)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(200)
 
-	event.smelting('firmalife:food/dehydrated_soybeans', 'tfc:food/soybean')
+	event.recipes.firmalife.mixing_bowl()
+		.itemIngredients(['#tfg:wood_dusts', 'tfc:glue'])
+		.outputItem('tfg:chipboard_composite')
+		.id('tfg:mixing_bowl/chipboard_composite_glue')
 
-	event.recipes.gtceu.fermenter('soybean_oil')
-		.itemInputs('firmalife:food/soybean_paste')
-		.inputFluids(Fluid.of('minecraft:water', 100))
-		.outputFluids(Fluid.of('firmalife:soybean_oil', 250))
-		.EUt(GTValues.VA[GTValues.ULV])
-		.duration(600)
+	event.recipes.firmalife.mixing_bowl()
+		.itemIngredients(['#tfg:wood_dusts', 'gtceu:sticky_resin'])
+		.outputItem('tfg:chipboard_composite')
+		.id('tfg:mixing_bowl/chipboard_composite_resin')
+
+	event.recipes.firmalife.mixing_bowl()
+		.itemIngredients(['#tfg:wood_dusts', '#forge:wax'])
+		.outputItem('tfg:chipboard_composite')
+		.id('tfg:mixing_bowl/chipboard_composite_wax')
+
+	// Dough
+
+	global.TFC_GRAINS.forEach(grain => {
+		event.recipes.firmalife.mixing_bowl()
+			.ingredients([
+				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+				`#tfc:sweetener`],
+				Fluid.of('firmalife:yeast_starter', 200))
+			.outputItem(`4x firmalife:food/${grain}_dough`)
+			.id(`tfg:mixing_bowl/${grain}_dough`)
+
+		event.recipes.firmalife.mixing_bowl()
+			.ingredients([
+				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+				'#tfc:sweetener',
+				'#tfc:sweetener'], 
+				Fluid.of('firmalife:yeast_starter', 400))
+			.outputItem(`8x firmalife:food/${grain}_dough`)
+			.id(`tfg:mixing_bowl/${grain}_dough_2`)
+
+		event.recipes.firmalife.mixing_bowl()
+			.ingredients([
+				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`)], 
+				Fluid.of('minecraft:water', 100))
+			.outputItem(`2x tfc:food/${grain}_dough`)
+			.id(`tfg:mixing_bowl/${grain}_flatbread_dough`)
+
+		event.recipes.firmalife.mixing_bowl()
+			.ingredients([
+				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`)],
+				Fluid.of('minecraft:water', 200))
+			.outputItem(`4x tfc:food/${grain}_dough`)
+			.id(`tfg:mixing_bowl/${grain}_flatbread_dough_2`)
+
+		event.recipes.firmalife.mixing_bowl()
+			.ingredients([
+				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`)],
+				Fluid.of('minecraft:water', 300))
+			.outputItem(`6x tfc:food/${grain}_dough`)
+			.id(`tfg:mixing_bowl/${grain}_flatbread_dough_3`)
+
+		event.recipes.firmalife.mixing_bowl()
+			.ingredients([
+				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`)],
+				Fluid.of('minecraft:water', 400))
+			.outputItem(`6x tfc:food/${grain}_dough`)
+			.id(`tfg:mixing_bowl/${grain}_flatbread_dough_4`)
+	})
+
+	event.recipes.firmalife.mixing_bowl()
+		.itemIngredients([
+			TFC.ingredient.notRotten('firmalife:food/vanilla_ice_cream'),
+			TFC.ingredient.notRotten('firmalife:food/chocolate_chip_cookie_dough')])
+		.outputItem('2x firmalife:food/cookie_dough_ice_cream')
+		.id('firmalife:mixing_bowl/cookie_dough_ice_cream')
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients([
+			TFC.ingredient.notRotten('#forge:eggs'),
+			'#tfg:sugars',
+			'#tfg:sugars',
+			TFC.ingredient.notRotten('#tfc:foods/flour'),
+			TFC.ingredient.notRotten('#tfc:foods/flour')],
+			TFC.fluidStackIngredient('#tfc:milks', 1000))
+		.outputItem('createaddition:cake_base')
+		.id('tfg:mixing_bowl/cake_base')
+
+	event.recipes.firmalife.oven('createaddition:cake_base', 400, 60 * 20, 'createaddition:cake_base_baked')
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients([
+			TFC.ingredient.notRotten('createaddition:cake_base_baked'),
+			TFC.ingredient.notRotten('tfc:food/strawberry'),
+			TFC.ingredient.notRotten('tfc:food/strawberry'),
+			TFC.ingredient.notRotten('tfc:food/strawberry'),
+			'firmalife:spice/vanilla'],
+			Fluid.of('tfcchannelcasting:white_chocolate', 400))
+		.outputItem('tfc:cake')
+		.id('tfg:mixing_bowl/cake')
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients([
+			TFC.ingredient.notRotten('createaddition:cake_base_baked'),
+			TFC.ingredient.notRotten('tfc:food/cherry'),
+			TFC.ingredient.notRotten('tfc:food/cherry'),
+			TFC.ingredient.notRotten('tfc:food/cherry'),
+			'firmalife:food/cocoa_powder'],
+			Fluid.of('tfcchannelcasting:milk_chocolate', 400))
+		.outputItem('createaddition:chocolate_cake')
+		.id('tfg:mixing_bowl/milk_chocolate_cake')
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients([
+			TFC.ingredient.notRotten('createaddition:cake_base_baked'),
+			TFC.ingredient.notRotten('tfc:food/cherry'),
+			TFC.ingredient.notRotten('tfc:food/cherry'),
+			TFC.ingredient.notRotten('tfc:food/cherry'),
+			'firmalife:food/cocoa_powder'],
+			Fluid.of('tfcchannelcasting:dark_chocolate', 400))
+		.outputItem('createaddition:chocolate_cake')
+		.id('tfg:mixing_bowl/dark_chocolate_cake')
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients([
+			TFC.ingredient.notRotten('createaddition:cake_base_baked'),
+			'firmalife:raw_honey',
+			'firmalife:raw_honey',
+			'firmalife:raw_honey',
+			'firmalife:raw_honey'],
+			Fluid.of('afc:maple_syrup', 1000))
+		.outputItem('createaddition:honey_cake')
+		.id('tfg:mixing_bowl/maple_honey_cake')
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients([
+			TFC.ingredient.notRotten('createaddition:cake_base_baked'),
+			'firmalife:raw_honey',
+			'firmalife:raw_honey',
+			'firmalife:raw_honey',
+			'firmalife:raw_honey'],
+			Fluid.of('afc:birch_syrup', 1000))
+		.outputItem('createaddition:honey_cake')
+		.id('tfg:mixing_bowl/birch_honey_cake')
 }

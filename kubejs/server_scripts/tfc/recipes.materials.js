@@ -60,6 +60,12 @@ function registerTFCMaterialsRecipes(event) {
 				event.recipes.tfc.welding(doubleIngotItem, ingotItem, ingotItem, tfcProperty.getTier() - 1)
 					.id(`tfc:welding/${material.getName()}_double_ingot`)
 
+				event.recipes.greate.compacting(doubleIngotItem, [ingotItem, ingotItem, 'tfc:powder/flux'])
+					.heated()
+					.recipeTier(tfcProperty.getTier() < 5 ? 0 : 1)
+					.circuitNumber(0)
+					.id(`greate:compacting/${material.getName()}_double_ingot`)
+
 				// Plates
 				let plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1)
 				if (!plateItem.isEmpty()) {
@@ -88,6 +94,11 @@ function registerTFCMaterialsRecipes(event) {
 							.tier(tfcProperty.getTier())
 							.id(`tfc:welding/${material.getName()}_double_sheet`)
 
+						event.recipes.greate.compacting(doublePlateItem, [plateItem, plateItem, 'tfc:powder/flux'])
+							.heated()
+							.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
+							.id(`greate:compacting/${material.getName()}_double_sheet`)
+
 						// Armor
 						if (material.hasFlag(TFGMaterialFlags.HAS_TFC_ARMOR)) {
 							//#region Шлем
@@ -112,6 +123,11 @@ function registerTFCMaterialsRecipes(event) {
 							event.recipes.tfc.welding(`tfc:metal/helmet/${material.getName()}`, `tfc:metal/unfinished_helmet/${material.getName()}`, plateItem)
 								.tier(tfcProperty.getTier())
 								.id(`tfc:welding/${material.getName()}_helmet`)
+
+							event.recipes.greate.compacting(`tfc:metal/helmet/${material.getName()}`, [`tfc:metal/unfinished_helmet/${material.getName()}`, plateItem, 'tfc:powder/flux'])
+								.heated()
+								.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
+								.id(`greate:compacting/${material.getName()}_helmet`)
 
 							//#endregion
 
@@ -138,6 +154,11 @@ function registerTFCMaterialsRecipes(event) {
 								.tier(tfcProperty.getTier())
 								.id(`tfc:welding/${material.getName()}_chestplate`)
 
+							event.recipes.greate.compacting(`tfc:metal/chestplate/${material.getName()}`, [`tfc:metal/unfinished_chestplate/${material.getName()}`, doublePlateItem, 'tfc:powder/flux'])
+								.heated()
+								.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
+								.id(`greate:compacting/${material.getName()}_chestplate`)
+
 							//#endregion
 
 							//#region Поножи
@@ -163,6 +184,11 @@ function registerTFCMaterialsRecipes(event) {
 								.tier(tfcProperty.getTier())
 								.id(`tfc:welding/${material.getName()}_greaves`)
 
+							event.recipes.greate.compacting(`tfc:metal/greaves/${material.getName()}`, [`tfc:metal/unfinished_greaves/${material.getName()}`, plateItem, 'tfc:powder/flux'])
+								.heated()
+								.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
+								.id(`greate:compacting/${material.getName()}_greaves`)
+
 							//#endregion
 
 							//#region Ботинки
@@ -187,6 +213,11 @@ function registerTFCMaterialsRecipes(event) {
 							event.recipes.tfc.welding(`tfc:metal/boots/${material.getName()}`, `tfc:metal/unfinished_boots/${material.getName()}`, plateItem)
 								.tier(tfcProperty.getTier())
 								.id(`tfc:welding/${material.getName()}_boots`)
+
+							event.recipes.greate.compacting(`tfc:metal/boots/${material.getName()}`, [`tfc:metal/unfinished_boots/${material.getName()}`, plateItem, 'tfc:powder/flux'])
+								.heated()
+								.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
+								.id(`greate:compacting/${material.getName()}_boots`)
 
 							//#endregion
 						}
@@ -234,6 +265,17 @@ function registerTFCMaterialsRecipes(event) {
 							//#endregion
 						}
 
+						// Buzzsaw blade
+						let buzzsawBladeItem = ChemicalHelper.get(TagPrefix.toolHeadBuzzSaw, material, 1)
+						if (!buzzsawBladeItem.isEmpty()) {
+							event.recipes.tfc.heating(buzzsawBladeItem, tfcProperty.getMeltTemp())
+								.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+								.id(`tfc:heating/metal/${material.getName()}_buzzsaw_blade`)
+
+							event.recipes.tfc.anvil(buzzsawBladeItem, doublePlateItem, ['bend_last', 'hit_second_last', 'draw_third_last'])
+								.tier(tfcProperty.getTier())
+								.id(`tfc:anvil/${material.getName()}_buzzsaw_blade`)
+						}
 					}
 
 					// Tools (From Plate)
@@ -454,7 +496,7 @@ function registerTFCMaterialsRecipes(event) {
 					.id(`tfc:heating/metal/${material.getName()}_rod`)
 
 				// Слиток -> 2 Стержня
-				event.recipes.tfc.anvil(rodItem.withCount(2), ingotItem, ['bend_last', 'draw_second_last', 'draw_third_last'])
+				event.recipes.tfc.anvil(rodItem.withCount(2), ingotItem, ['draw_last'])
 					.tier(tfcProperty.getTier())
 					.id(`tfc:anvil/${material.getName()}_rod`)
 
@@ -472,6 +514,10 @@ function registerTFCMaterialsRecipes(event) {
 						.tier(tfcProperty.getTier())
 						.id(`tfc:anvil/${material.getName()}_long_rod`)
 
+					event.recipes.greate.compacting(longRodItem, [rodItem, rodItem, 'tfc:powder/flux'])
+						.heated()
+						.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
+						.id(`greate:compacting/${material.getName()}_long_rod`)
 				}
 
 				// Bolt
@@ -506,6 +552,7 @@ function registerTFCMaterialsRecipes(event) {
 
 				}
 
+				// Ring
 				let ringItem = ChemicalHelper.get(TagPrefix.ring, material, 1)
 				if (!ringItem.isEmpty()) {
 
@@ -519,6 +566,32 @@ function registerTFCMaterialsRecipes(event) {
 						.tier(tfcProperty.getTier())
 						.id(`tfc:anvil/${material.getName()}_ring`)
 
+				}
+
+				// Spring
+				let springItem = ChemicalHelper.get(TagPrefix.spring, material, 1)
+				if (!springItem.isEmpty() && !longRodItem.isEmpty()) {
+
+					event.recipes.tfc.heating(springItem, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+						.id(`tfc:heating/metal/${material.getName()}_spring`)
+
+					event.recipes.tfc.anvil(springItem, longRodItem, ['hit_last', 'bend_second_last', 'bend_third_last'])
+						.tier(tfcProperty.getTier())
+						.id(`tfc:anvil/${material.getName()}_spring`)
+				}
+
+				// Small spring
+				let smallSpringItem = ChemicalHelper.get(TagPrefix.springSmall, material, 1)
+				if (!smallSpringItem.isEmpty() && !rodItem.isEmpty()) {
+
+					event.recipes.tfc.heating(smallSpringItem, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 72))
+						.id(`tfc:heating/metal/${material.getName()}_small_spring`)
+
+					event.recipes.tfc.anvil(smallSpringItem, rodItem, ['hit_last', 'bend_second_last', 'bend_third_last'])
+						.tier(tfcProperty.getTier())
+						.id(`tfc:anvil/${material.getName()}_small_spring`)
 				}
 
 			}
@@ -583,7 +656,52 @@ function registerTFCMaterialsRecipes(event) {
 					.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
 					.id(`rnr:heating/metal/${material.getName()}_mattock_head`)
 				//#endregion
+				
+				// #region screwdriver
+				event.recipes.tfc.heating(`gtceu:${material.getName()}_screwdriver`, tfcProperty.getMeltTemp())
+					.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+					.useDurability(true)
+					.id(`gtceu:heating/metal/${material.getName()}_screwdriver`)
 
+				event.recipes.tfc.heating(`gtceu:${material.getName()}_screwdriver_tip`, tfcProperty.getMeltTemp())
+					.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+					.id(`gtceu:heating/metal/${material.getName()}_screwdriver_tip`)
+					
+				event.recipes.tfc.anvil(`gtceu:${material.getName()}_screwdriver_tip`, ingotItem, ['draw_last', 'hit_second_last', 'hit_third_last'])
+					.tier(tfcProperty.getTier())
+					.id(`gtceu:anvil/${material.getName()}_screwdriver_tip`)
+				//#endregion
+				
+				//#region wrench
+				event.recipes.tfc.heating(`gtceu:${material.getName()}_wrench`, tfcProperty.getMeltTemp())
+					.resultFluid(Fluid.of(outputMaterial.getFluid(), 288 + 144 + 18))
+					.useDurability(true)
+					.id(`gtceu:heating/metal/${material.getName()}_wrench`)
+
+				event.recipes.tfc.heating(`gtceu:${material.getName()}_wrench_tip`, tfcProperty.getMeltTemp())
+					.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+					.id(`gtceu:heating/metal/${material.getName()}_wrench_tip`)
+
+				event.recipes.tfc.anvil(`gtceu:${material.getName()}_wrench_tip`, doubleIngotItem, ['draw_last', 'hit_second_last', 'hit_third_last'])
+					.tier(tfcProperty.getTier())
+					.id(`gtceu:anvil/${material.getName()}_wrench_tip`)
+				//#endregion
+				
+				//#region wire cutters
+				event.recipes.tfc.heating(`gtceu:${material.getName()}_wire_cutter`, tfcProperty.getMeltTemp())
+					.resultFluid(Fluid.of(outputMaterial.getFluid(), 288 + 144 + 18))
+					.useDurability(true)
+					.id(`gtceu:heating/metal/${material.getName()}_wire_cutter`)
+
+				event.recipes.tfc.heating(`gtceu:${material.getName()}_wire_cutter_head`, tfcProperty.getMeltTemp())
+					.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+					.id(`gtceu:heating/metal/${material.getName()}_wire_cutter_head`)
+
+				event.recipes.tfc.anvil(`gtceu:${material.getName()}_wire_cutter_head`, doubleIngotItem, ['draw_last', 'hit_second_last', 'hit_third_last'])
+					.tier(tfcProperty.getTier())
+					.id(`gtceu:anvil/${material.getName()}_wire_cutter_head`)
+				//#endregion
+				
 				//#region Топор
 
 				// Крафт инструмента
@@ -943,6 +1061,11 @@ function registerTFCMaterialsRecipes(event) {
 					event.recipes.tfc.welding(`tfc:metal/shears/${material.getName()}`, knifeHeadItem, knifeHeadItem, tfcProperty.getTier())
 						.id(`tfc:welding/${material.getName()}_shears`)
 
+					event.recipes.greate.compacting(`tfc:metal/shears/${material.getName()}`, [knifeHeadItem, knifeHeadItem, 'tfc:powder/flux'])
+						.heated()
+						.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
+						.id(`greate:compacting/${material.getName()}_shears`)
+
 					// Декрафт инструмента в жидкость
 					event.recipes.tfc.heating(`tfc:metal/shears/${material.getName()}`, tfcProperty.getMeltTemp())
 						.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
@@ -1113,7 +1236,16 @@ function registerTFCMaterialsRecipes(event) {
 		let tongsStack = Item.of(`tfchotornot:tongs/${material.getName()}`)
 		let tongPartStack = Item.of(`tfchotornot:tong_part/${material.getName()}`)
 
-		if (!tongsStack.isEmpty() && !tongPartStack.isEmpty()) {
+		if (!tongsStack.isEmpty() && !tongPartStack.isEmpty() && material != GTMaterials.Iron) {
+			event.shaped(tongsStack, [
+				'AA',
+				'BC'
+			], {
+				A: tongPartStack,
+				B: '#forge:bolts',
+				C: '#forge:tools/hammers'
+			}).id(`tfchotornot:crafting/tongs/${material.getName()}`)
+
 			// Ручка щипцов
 			event.recipes.tfc.heating(tongPartStack, tfcProperty.getMeltTemp())
 				.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))

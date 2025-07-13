@@ -15,7 +15,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:infested_deepslate',
 
     // Каменные блоки
-    'minecraft:stone', 
     'minecraft:stone_stairs', 
     'minecraft:stone_slab', 
     'minecraft:stone_pressure_plate', 
@@ -564,9 +563,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:carrot_on_a_stick',
     'minecraft:carrot',
     'minecraft:pumpkin',
-    'minecraft:pearlescent_froglight', 
-    'minecraft:verdant_froglight', 
-    'minecraft:ochre_froglight',
     'minecraft:suspicious_stew',
     'minecraft:mycelium', 
     'minecraft:farmland', 
@@ -587,7 +583,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:beetroot_soup', 
     'minecraft:cocoa_beans', 
     'minecraft:experience_bottle', 
-    'minecraft:shulker_shell', 
     'minecraft:rabbit_stew',
     'minecraft:recovery_compass', 
     'minecraft:chorus_plant', 
@@ -617,11 +612,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:honey_bottle', 
     'minecraft:honeycomb_block', 
     'minecraft:honey_block',
-    'minecraft:popped_chorus_fruit', 
-    'minecraft:purpur_pillar', 
-    'minecraft:purpur_block', 
-    'minecraft:purpur_stairs', 
-    'minecraft:purpur_slab', 
     'minecraft:shears', 
     'minecraft:lantern', 
     'minecraft:soul_lantern',
@@ -670,6 +660,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:honeycomb',
     'minecraft:grindstone',
     'minecraft:fermented_spider_eye',
+    'minecraft:ender_eye',
 
     // Кримзон незер дерево
     // TODO: Разблокировать после добавления ада
@@ -744,7 +735,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crimson_roots', 
     //'minecraft:nether_brick', 
     'minecraft:nether_wart', 
-    'minecraft:twisting_vines', 
     'minecraft:warped_fungus',
     'minecraft:respawn_anchor',
     'minecraft:ghast_tear',

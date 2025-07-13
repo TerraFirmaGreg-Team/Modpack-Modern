@@ -12,7 +12,7 @@
 		}
 	}
 	id: "28EBC0FF82EFD94B"
-	order_index: 2
+	order_index: 5
 	quest_links: [
 		{
 			id: "77A0335E38D755CA"
@@ -331,6 +331,26 @@
 			linked_quest: "52DAF93E2F3D688A"
 			x: 8.5d
 			y: 1.0d
+		}
+		{
+			id: "3644488B52C563F6"
+			linked_quest: "173A04F328414A36"
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			id: "1824692F2A7A8B43"
+			linked_quest: "7E755297E9685374"
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			id: "35C2CDE00DEC7D92"
+			linked_quest: "3FBDC8552F7D8008"
+			shape: "none"
+			size: 1.5d
+			x: 13.5d
+			y: -3.0d
 		}
 	]
 	quests: [
@@ -702,6 +722,19 @@
 			title: "{quests.development.explanation.title}"
 			x: -1.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["3FBDC8552F7D8008"]
+			id: "2FF9BECA093B4D74"
+			subtitle: "This one will come with Mars Update"
+			tasks: [{
+				id: "6572F2DD0C89A68B"
+				title: "Coming with Mars"
+				type: "checkmark"
+			}]
+			title: "Rocket Tier 2"
+			x: 13.5d
+			y: -1.0d
 		}
 	]
 	subtitle: ["{quests.development.subtitle}"]

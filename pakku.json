@@ -1,12 +1,13 @@
 {
     "name": "TerraFirmaGreg-Modern",
-    "version": "0.9.11",
+    "version": "0.10.0",
     "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
     "author": "Exception, Xikaro",
     "overrides": [
         "config",
         "defaultconfigs",
         "kubejs",
+		"tacz",
         "!kubejs/probe/**"
     ],
     "server_overrides": [
@@ -30,9 +31,6 @@
             "side": "CLIENT"
         },
         "better-chat": {
-            "side": "CLIENT"
-        },
-        "better-foliage-renewed": {
             "side": "CLIENT"
         },
         "betterf3": {

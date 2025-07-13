@@ -1,0 +1,35 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "minecraft:simple_block",
+				"config": {
+					"to_place": {
+						"type": "minecraft:simple_state_provider",
+						"state": {
+							"Name": "betterend:inflexia"
+						}
+					}
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:heightmap",
+					"heightmap": "WORLD_SURFACE"
+				},
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:matching_block_tag",
+						"offset": [ 0, -1, 0 ],
+						"tag": "ad_astra:moon_stone_replaceables"
+					}
+				}
+			]
+		},
+		"tries": 16,
+		"xz_spread": 16,
+		"y_spread": 3
+	}
+}

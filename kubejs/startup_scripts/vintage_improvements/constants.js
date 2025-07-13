@@ -85,7 +85,8 @@ global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 	'vintageimprovements:netherite_rod',
 	'vintageimprovements:nethersteel_rod',
 	'vintageimprovements:andesite_rod',
-	'vintageimprovements:shadow_steel_rod'
+	'vintageimprovements:shadow_steel_rod',
+	'vintageimprovements:desh_rod'
 ]
 
 global.VINTAGE_IMPROVEMENTS_DISABLED_BLOCKS = [
@@ -97,6 +98,7 @@ global.VINTAGE_IMPROVEMENTS_DISABLED_BLOCKS = [
 
 global.VINTAGE_IMPROVEMENTS_DISABLED_FLUIDS = [
 
-	'vintageimprovements:sulfuric_acid'
-
+	'vintageimprovements:sulfuric_acid',
+	'vintageimprovements:sulfur_dioxide',
+	'vintageimprovements:sulfur_trioxide'
 ]

@@ -2,6 +2,8 @@
 [guides]
 	#Never load translated guide pages for your current language.
 	ignoreTranslatedGuides = false
+	#Never show errors in guides when recipes can't be found (i.e. because they were hidden by a datapack).
+	hideMissingRecipeErrors = true
 
 [gui]
 	#Adapt GUI scaling for the Guide screen to fix Minecraft font issues at GUI scale 1 and 3.

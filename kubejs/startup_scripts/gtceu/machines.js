@@ -1,76 +1,14 @@
 // priority: 0
 
-//#region Greenhouse
-
 const registerGTCEuMachines = (event) => {
 
 	GTMachineUtils.registerCrate(GTMaterials.BismuthBronze, 54, "Bismuth Bronze Crate");
 	GTMachineUtils.registerCrate(GTMaterials.BlackBronze, 54, "Black Bronze Crate");
 	GTMachineUtils.registerDrum(GTMaterials.BismuthBronze, 32000, "Bismuth Bronze Drum");
 	GTMachineUtils.registerDrum(GTMaterials.BlackBronze, 32000, "Black Bronze Drum");
-	
+
 	const $SteamMulti = Java.loadClass('com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine');
 	const $Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
-
-	event.create('greenhouse', 'multiblock')
-		.rotationState(RotationState.NON_Y_AXIS)
-		.recipeType('greenhouse')
-		.recipeModifiers([GTRecipeModifiers.OC_PERFECT])
-		.appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
-		.pattern(definition => FactoryBlockPattern.start()
-			.aisle("CCCCCCC", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "   F   ")
-			.aisle("CDDDDDC", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", " XXFXX ")
-			.aisle("CDDDDDC", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", " XXFXX ")
-			.aisle("CDDDDDC", "F#####F", "F#####F", "F#####F", "F#####F", "F#####F", "F#####F", "F#####F", "FFFFFFF")
-			.aisle("CDDDDDC", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", " XXFXX ")
-			.aisle("CDDDDDC", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", " XXFXX ")
-			.aisle("CCCYCCC", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "   F   ")
-			.where('X', Predicates.blocks('ae2:quartz_glass'))
-			.where('F', Predicates.frames('steel'))
-			.where('D', Predicates.blocks('tfc:grass/silt')
-				.or(Predicates.blocks('tfc:dirt/loam'))
-				.or(Predicates.blocks('tfc:dirt/sandy_loam'))
-				.or(Predicates.blocks('tfc:dirt/silty_loam'))
-				.or(Predicates.blocks('tfc:grass/silt'))
-				.or(Predicates.blocks('tfc:grass/loam'))
-				.or(Predicates.blocks('tfc:grass/sandy_loam'))
-				.or(Predicates.blocks('tfc:grass/silty_loam')))
-			.where('C', Predicates.blocks('gtceu:steel_machine_casing').or(Predicates.autoAbilities(definition.getRecipeTypes())))
-			.where('#', Predicates.air()
-				.or(Predicates.blockTag($Tags.block("minecraft:logs")))
-				.or(Predicates.blockTag($Tags.block("minecraft:leaves"))))
-			.where(' ', Predicates.any())
-			.where('Y', Predicates.controller(Predicates.blocks(definition.get())))
-			.build()
-		)
-		.shapeInfo(controller => MultiblockShapeInfo.builder()
-			.aisle("CCCCCCC", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "   F   ")
-			.aisle("CDDDDDC", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", " XXFXX ")
-			.aisle("CDDDDDC", "X#####X", "X#####X", "X#####X", "X##L##X", "X#LLL#X", "X##L##X", "X#####X", " XXFXX ")
-			.aisle("CDDDDDC", "F##W##F", "F##W##F", "F##W##F", "F#LWL#F", "F#LWL#F", "F#LLL#F", "F#####F", "FFFFFFF")
-			.aisle("CDDDDDC", "X#####X", "X#####X", "X#####X", "X##L##X", "X#LLL#X", "X##L##X", "X#####X", " XXFXX ")
-			.aisle("CDDDDDC", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", " XXFXX ")
-			.aisle("CitYfeC", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "   F   ")
-			.where('Y', controller, Direction.SOUTH)
-			.where('C', GTBlocks.STEEL_HULL.get())
-			.where('D', Block.getBlock('tfc:grass/silt'))
-			.where('F', Block.getBlock('gtceu:steel_frame'))
-			.where('X', Block.getBlock('ae2:quartz_glass'))
-			.where('W', Block.getBlock('tfc:wood/log/oak'))
-			.where('L', Block.getBlock('tfc:wood/leaves/oak'))
-			.where(' ', Block.getBlock('minecraft:air'))
-			.where('i', GTMachines.ITEM_IMPORT_BUS[GTValues.ULV], Direction.SOUTH)
-			.where('t', GTMachines.ITEM_EXPORT_BUS[GTValues.ULV], Direction.SOUTH)
-			.where('f', GTMachines.FLUID_IMPORT_HATCH[GTValues.ULV], Direction.SOUTH)
-			.where('e', GTMachines.ENERGY_INPUT_HATCH[GTValues.LV], Direction.SOUTH)
-			.build()
-		)
-		.workableCasingRenderer(
-			'gtceu:block/casings/solid/machine_casing_solid_steel',
-			'gtceu:block/multiblock/implosion_compressor', false
-		)
-
-	//#endregion
 
 	//#region Nether Dome
 
@@ -279,5 +217,42 @@ const registerGTCEuMachines = (event) => {
 			"tfg:block/steam_bloomery", false
 		)
 	//#endregion
+
+	//#region Large Solar Pannel - From Sky of Grind for the code thanks a lot
+
+	event.create('large_solar_panel', 'multiblock')
+		.rotationState(RotationState.NON_Y_AXIS)
+		.generator(true)
+		.recipeType('large_solar_panel')
+		.noRecipeModifier()
+		.appearanceBlock(() => Block.getBlock('tfg:casings/machine_casing_iron_desh'))
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle('P     P', 'P     P', 'P     P', 'PPPPPPP', 'PKKKKKP')
+			.aisle('       ', '       ', '       ', 'P     P', 'KIIIIIK')
+			.aisle('  PLP  ', '  PLP  ', '  RRR  ', 'P RRR P', 'KIIIIIK')
+			.aisle('  LPL  ', '  L#L  ', '  RGR  ', 'P RGR P', 'KIIGIIK')
+			.aisle('  PXP  ', '  PLP  ', '  RRR  ', 'P RRR P', 'KIIIIIK')
+			.aisle('       ', '       ', '       ', 'P     P', 'KIIIIIK')
+			.aisle('P     P', 'P     P', 'P     P', 'PPPPPPP', 'PKKKKKP')
+			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('R', Predicates.blocks('gtceu:cleanroom_glass'))
+			.where('I', Predicates.blocks('tfg:casings/machine_casing_red_solar_panel'))
+			.where('G', Predicates.blocks('ad_astra:glowing_iron_pillar'))
+			.where('P', Predicates.blocks('tfg:casings/machine_casing_iron_desh'))
+			.where('K', Predicates.blocks('ad_astra:iron_plateblock'))
+			.where('L', Predicates.blocks('tfg:casings/machine_casing_iron_desh')
+				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(2).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMaxGlobalLimited(2).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+				.or(Predicates.abilities(PartAbility.OUTPUT_ENERGY).setExactLimit(1)))
+			.where('#', Predicates.air())
+			.where(' ', Predicates.any())
+			.build()
+		)
+		.workableCasingRenderer(
+			'tfg:block/casings/machine_casing_iron_desh',
+			'gtceu:block/multiblock/hpca', true)
 
 }

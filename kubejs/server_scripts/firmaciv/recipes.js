@@ -61,7 +61,7 @@ const registerFirmaCivRecipes = (event) => {
 	//#region Barometer
 	event.recipes.gtceu.assembler('tfg:firmaciv/barometer')
 		.itemInputs('#forge:plates/brass', '2x #forge:small_gears/brass', '#forge:glass_panes')
-		.inputFluids(Fluid.of('minecraft:water', 1000))
+		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfg:clean_water" }}))
 		.circuit(12)
 		.itemOutputs('firmaciv:barometer')
 		.duration(75)

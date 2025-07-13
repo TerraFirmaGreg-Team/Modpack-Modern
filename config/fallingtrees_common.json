@@ -67,7 +67,7 @@
       }
     },
     "chorusTree": {
-      "enabled": false,
+      "enabled": true,
       "onlyFallWithRequiredTool": false,
       "allowedToolFilter": {
         "whitelistedTags": [],

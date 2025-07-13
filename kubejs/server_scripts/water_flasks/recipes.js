@@ -2,6 +2,16 @@
 
 const registerWaterFlasksRecipes = (event) => {
 
+	// alternative for leather side
+
+	event.recipes.tfc.knapping('waterflasks:leather_side', 'tfc:leather', [
+		'     ',
+		'   X ',
+		' XXXX',
+		'XXXXX',
+		' XXX '
+	]).id('waterflasks/leather_knapping/leather_side_2')
+
 	// Декрафт Unfinished Water Flask
 	event.recipes.tfc.heating('waterflasks:unfinished_iron_flask', 1535)
 		.resultFluid(Fluid.of('gtceu:iron', 144))

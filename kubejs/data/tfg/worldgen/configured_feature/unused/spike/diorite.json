@@ -1,0 +1,8 @@
+{
+	"type": "beneath:nether_spikes",
+	"config": {
+		"raw": "tfc:rock/hardened/diorite",
+		"spike": "tfc:rock/spike/diorite",
+		"anchor_blocks": "ad_astra:moon_stone_replaceables"
+	}
+}

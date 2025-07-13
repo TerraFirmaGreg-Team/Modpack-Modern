@@ -82,6 +82,10 @@ const registerTFCItemTags = (event) => {
 	// Make eggs not useless
 	event.add('tfc:foods/usable_in_salad', 'tfc:food/cooked_egg')
 	event.add('tfc:foods/usable_in_salad', 'tfc:food/boiled_egg')
+	event.add('tfc:foods/usable_in_jam_sandwich', 'tfc:food/cooked_egg')
+	event.add('tfc:foods/usable_in_jam_sandwich', 'tfc:food/boiled_egg')
+	event.add('tfc:foods/usable_in_sandwich', 'tfc:food/cooked_egg')
+	event.add('tfc:foods/usable_in_sandwich', 'tfc:food/boiled_egg')
 
 	// Чтобы жарились бревна из TFC в пиролиз. печке
 	// Почему нельзя просто добавить тег в тег? (допустим minecraft:logs), потому что из-за этого ломаются все рецепты minecraft:logs, магия...
@@ -266,6 +270,10 @@ const registerTFCItemTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
 
+	global.TFC_HIDDEN_ITEMS.forEach(item => {
+		event.add('c:hidden_from_recipe_viewers', item)
+	})
+
 	// Удаление тегов у руд
 	event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
 
@@ -291,6 +299,21 @@ const registerTFCItemTags = (event) => {
 	event.add('minecraft:piglin_loved', 'tfc:ore/poor_native_gold')
 	event.add('minecraft:piglin_loved', 'tfc:ore/normal_native_gold')
 	event.add('minecraft:piglin_loved', 'tfc:ore/rich_native_gold')
+
+	// Bells
+	event.add('tfc:bells', 'tfc:bronze_bell')
+	event.add('tfc:bells', 'tfc:brass_bell')
+
+	// Lets the basin be put on top of a charcoal forge
+	event.add('tfc:forge_invisible_whitelist', 'create:basin')
+
+	// Allows automation with the 3x3 Hellforge
+	event.add('tfc:forge_invisible_whitelist', 'tfcchannelcasting:channel')
+	event.add('tfc:forge_invisible_whitelist', 'tfcchannelcasting:mold_table')
+	event.add('tfc:forge_invisible_whitelist', 'greate:steel_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:aluminum_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:stainless_steel_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:titanium_mechanical_pump')
 }
 
 const registerTFCBlockTags = (event) => {
@@ -381,26 +404,27 @@ const registerTFCBlockTags = (event) => {
 	event.add('beneath:nether_bush_plantable_on', '#tfc:dirt')
 	event.add('minecraft:frogs_spawnable_on', '#tfc:dirt')
 
-
-	event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/gneiss')
-	event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/schist')
-	event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/diorite')
-	event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/granite')
-	event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/gabbro')
-	event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/basalt')
 	event.add('minecraft:base_stone_nether', 'tfc:rock/raw/gneiss')
 	event.add('minecraft:base_stone_nether', 'tfc:rock/raw/schist')
 	event.add('minecraft:base_stone_nether', 'tfc:rock/raw/diorite')
 	event.add('minecraft:base_stone_nether', 'tfc:rock/raw/granite')
 	event.add('minecraft:base_stone_nether', 'tfc:rock/raw/gabbro')
 	event.add('minecraft:base_stone_nether', 'tfc:rock/raw/basalt')
-	event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/gneiss')
-	event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/schist')
-	event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/diorite')
-	event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/granite')
-	event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/gabbro')
+	event.add('minecraft:nether_carver_replaceables', '#minecraft:base_stone_nether')
+	event.add('minecraft:frogs_spawnable_on', '#minecraft:base_stone_nether')
 
 	//#endregion
+
+	// Lets the basin be put on top of a charcoal forge
+	event.add('tfc:forge_invisible_whitelist', 'create:basin')
+
+	// Allows automation with the 3x3 Hellforge
+	event.add('tfc:forge_invisible_whitelist', 'tfcchannelcasting:channel')
+	event.add('tfc:forge_invisible_whitelist', 'tfcchannelcasting:mold_table')
+	event.add('tfc:forge_invisible_whitelist', 'greate:steel_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:aluminum_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:stainless_steel_mechanical_pump')
+	event.add('tfc:forge_invisible_whitelist', 'greate:titanium_mechanical_pump')
 
 	//Allows any block with the word "brick" in its id to be used as bloomery and forge insulation.
 	//Add blacklisted words to the const with | between.
@@ -478,9 +502,15 @@ const registerTFCFluidTags = (event) => {
 	event.add('tfc:usable_in_wooden_bucket', 'gtceu:ice')
 	event.add('tfc:usable_in_red_steel_bucket', 'gtceu:ice')
 
+	event.add('tfc:usable_in_barrel', 'gtceu:glue')
+	event.add('tfc:usable_in_wooden_bucket', 'gtceu:glue')
+	event.add('tfc:usable_in_blue_steel_bucket', 'tfc:spring_water')
+	event.add('tfc:usable_in_red_steel_bucket', 'gtceu:glue')
+
 	event.add('tfc:ingredients', 'tfc:spring_water')
 	event.add('tfc:usable_in_barrel', 'tfc:spring_water')
 	event.add('tfc:usable_in_wooden_bucket', 'tfc:spring_water')
+	event.add('tfc:usable_in_blue_steel_bucket', 'tfc:spring_water')
 	event.add('tfc:usable_in_red_steel_bucket', 'tfc:spring_water')
 
 	// Добавляем тег для скрытия в EMI
@@ -531,6 +561,10 @@ const registerTFCPlacedFeatures = (event) => {
 	event.add('tfc:in_biome/veins', 'tfg:earth/geode/opal')
 	event.add('tfc:in_biome/veins', 'tfg:earth/geode/pyrite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/geode/quartzite')
+
+	// Crops
+	event.add('tfc:feature/crops', 'tfg:earth/sunflower_patch')
+	event.add('tfc:feature/crops', 'tfg:earth/rapeseed_patch')
 
 	// Other decoration
 	event.add('tfc:in_biome/underground_decoration', 'tfg:glow_lichen')

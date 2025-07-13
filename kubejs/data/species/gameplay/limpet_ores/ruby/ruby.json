@@ -1,0 +1,9 @@
+{
+	"id": "species:ruby",
+	"item": "gtceu:poor_raw_ruby",
+	"block": "gtceu:moon_stone_ruby_ore",
+	"maxCount": 8,
+	"spawnWeight": 30,
+	"maxSpawnHeight": 130,
+	"minSpawnHeight": 4
+}

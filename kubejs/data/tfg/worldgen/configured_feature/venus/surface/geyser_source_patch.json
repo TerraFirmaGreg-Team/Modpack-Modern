@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 15,
+                "data": {
+                  "Name": "tfg:geyser_source"
+                }
+              },
+              {
+                "weight": 50,
+                "data": {
+                  "Name": "tfg:geyser_source_small"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:heightmap",
+          "heightmap": "WORLD_SURFACE"
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "blocks": "tfg:rock/raw/geyserite"
+          }
+        }
+      ]
+    },
+    "tries": 32,
+    "xz_spread": 16,
+    "y_spread": 3
+  }
+}

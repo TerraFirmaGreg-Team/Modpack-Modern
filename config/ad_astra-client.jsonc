@@ -1,0 +1,23 @@
+{
+    "showOxygenDistributorArea": false,
+    "showGravityNormalizerArea": false,
+    "jetSuitEnabled": true,
+    // Type: Integer
+    "oxygenBarX": 5,
+    // Type: Integer
+    "oxygenBarY": 195,
+    // Type: Float
+    "oxygenBarScale": 0.6,
+    // Type: Integer
+    "energyBarX": 12,
+    // Type: Integer
+    "energyBarY": 265,
+    // Type: Float
+    "energyBarScale": 0.6,
+    "spaceMuffler": true,
+    "radio": {
+        // Range: 0 - 100
+        "volume": 10,
+        "favorites": []
+    }
+}

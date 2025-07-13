@@ -161,7 +161,7 @@ const registerRailWaysRecipes = (event) => {
 	}).id('tfg:railways/shaped/track_switch_brass')
 
 	event.recipes.gtceu.assembler('tfg:railways/track_switch_brass')
-		.itemInputs('minecraft:lever', '2x #forge:bolts/wrought_iron', '2x #tfg:small_cogwheels', 'create:brass_casing')
+		.itemInputs('minecraft:lever', '2x #forge:bolts/brass', '2x #tfg:small_cogwheels', 'create:brass_casing')
 		.circuit(3)
 		.itemOutputs('railways:track_switch_brass')
 		.duration(200)
@@ -208,13 +208,13 @@ const registerRailWaysRecipes = (event) => {
 		'DA '
 	], {
 		A: '#forge:storage_blocks/charcoal',
-		B: '#forge:nuggets/black_steel',
+		B: '#forge:bolts/black_steel',
 		C: '#forge:plates/black_steel',
 		D: '#forge:tools/hammers'
 	}).id('tfg:railways/shaped/smokestack_caboosestyle')
 
 	event.recipes.gtceu.assembler('tfg:railways/smokestack_caboosestyle')
-		.itemInputs('#forge:storage_blocks/charcoal', '2x #forge:nuggets/black_steel', '#forge:plates/black_steel')
+		.itemInputs('#forge:storage_blocks/charcoal', '2x #forge:bolts/black_steel', '#forge:plates/black_steel')
 		.circuit(4)
 		.itemOutputs('railways:smokestack_caboosestyle')
 		.duration(200)
@@ -226,12 +226,12 @@ const registerRailWaysRecipes = (event) => {
 		'BAB'
 	], {
 		A: '#forge:storage_blocks/charcoal',
-		B: '#forge:nuggets/black_steel',
+		B: '#forge:bolts/black_steel',
 		C: '#forge:tools/hammers'
 	}).id('tfg:railways/shaped/smokestack_long')
 
 	event.recipes.gtceu.assembler('tfg:railways/smokestack_long')
-		.itemInputs('#forge:storage_blocks/charcoal', '2x #forge:nuggets/black_steel')
+		.itemInputs('#forge:storage_blocks/charcoal', '2x #forge:bolts/black_steel')
 		.circuit(5)
 		.itemOutputs('railways:smokestack_long')
 		.duration(200)
@@ -297,12 +297,12 @@ const registerRailWaysRecipes = (event) => {
 	], {
 		A: '#forge:storage_blocks/charcoal',
 		B: '#forge:plates/black_steel',
-		C: '#forge:nuggets/black_steel',
+		C: '#forge:bolts/black_steel',
 		D: '#forge:tools/hammers'
 	}).id('tfg:railways/shaped/smokestack_woodburner')
 
 	event.recipes.gtceu.assembler('tfg:railways/smokestack_woodburner')
-		.itemInputs('#forge:storage_blocks/charcoal', '3x #forge:plates/black_steel', '2x #forge:nuggets/black_steel')
+		.itemInputs('#forge:storage_blocks/charcoal', '3x #forge:plates/black_steel', '2x #forge:bolts/black_steel')
 		.circuit(9)
 		.itemOutputs('railways:smokestack_woodburner')
 		.duration(200)
@@ -324,9 +324,9 @@ const registerRailWaysRecipes = (event) => {
 		'8x railways:track_monorail',
 	], 'create:metal_girder', [
 		event.recipes.createDeploying('railways:track_incomplete_monorail', ['railways:track_incomplete_monorail', '#forge:plates/wrought_iron']),
-		event.recipes.createDeploying('railways:track_incomplete_monorail', ['railways:track_incomplete_monorail', '#forge:tools/hammers']),
+		event.recipes.greate.pressing('railways:track_incomplete_monorail', 'railways:track_incomplete_monorail'),
 		event.recipes.createDeploying('railways:track_incomplete_monorail', ['railways:track_incomplete_monorail', '#forge:plates/wrought_iron']),
-		event.recipes.createDeploying('railways:track_incomplete_monorail', ['railways:track_incomplete_monorail', '#forge:tools/hammers']),
+		event.recipes.greate.pressing('railways:track_incomplete_monorail', 'railways:track_incomplete_monorail'),
 	]).transitionalItem('railways:track_incomplete_monorail').loops(1).id('tfg:railways/sequenced_assembly/track_monorail')
 
 	event.recipes.gtceu.assembler('railways/monorail')
@@ -341,7 +341,7 @@ const registerRailWaysRecipes = (event) => {
 	], '#tfg:rock_slabs', [
 		event.recipes.createDeploying('railways:track_incomplete_create_andesite_narrow', ['railways:track_incomplete_create_andesite_narrow', 'gtceu:steel_rod']),
 		event.recipes.createDeploying('railways:track_incomplete_create_andesite_narrow', ['railways:track_incomplete_create_andesite_narrow', '#tfc:mortar']),
-		event.recipes.createDeploying('railways:track_incomplete_create_andesite_narrow', ['railways:track_incomplete_create_andesite_narrow', '#forge:tools/hammers']),
+		event.recipes.greate.pressing('railways:track_incomplete_create_andesite_narrow', 'railways:track_incomplete_create_andesite_narrow'),
 	]).transitionalItem('railways:track_incomplete_create_andesite_narrow').loops(2).id('tfg:railways/sequenced_assembly/track_create_andesite_narrow_from_steel')
 
 	event.recipes.gtceu.assembler('railways/track_create_andesite_narrow_from_steel')
@@ -359,7 +359,7 @@ const registerRailWaysRecipes = (event) => {
 		event.recipes.createDeploying('create:incomplete_track', ['create:incomplete_track', '#tfg:rock_slabs']),
 		event.recipes.createDeploying('create:incomplete_track', ['create:incomplete_track', 'gtceu:steel_rod']),
 		event.recipes.createDeploying('create:incomplete_track', ['create:incomplete_track', '#tfc:mortar']),
-		event.recipes.createDeploying('create:incomplete_track', ['create:incomplete_track', '#forge:tools/hammers']),
+		event.recipes.greate.pressing('create:incomplete_track', 'create:incomplete_track'),
 	]).transitionalItem('create:incomplete_track').loops(2).id('tfg:railways/sequenced_assembly/track_create_andesite')
 
 	event.recipes.gtceu.assembler('railways/track')
@@ -377,7 +377,7 @@ const registerRailWaysRecipes = (event) => {
 		event.recipes.createDeploying('railways:track_incomplete_create_andesite_wide', ['railways:track_incomplete_create_andesite_wide', '#forge:stone']),
 		event.recipes.createDeploying('railways:track_incomplete_create_andesite_wide', ['railways:track_incomplete_create_andesite_wide', 'gtceu:steel_rod']),
 		event.recipes.createDeploying('railways:track_incomplete_create_andesite_wide', ['railways:track_incomplete_create_andesite_wide', '#tfc:mortar']),
-		event.recipes.createDeploying('railways:track_incomplete_create_andesite_wide', ['railways:track_incomplete_create_andesite_wide', '#forge:tools/hammers']),
+		event.recipes.greate.pressing('railways:track_incomplete_create_andesite_wide', 'railways:track_incomplete_create_andesite_wide'),
 	]).transitionalItem('railways:track_incomplete_create_andesite_wide').loops(2).id('tfg:railways/sequenced_assembly/track_create_andesite_wide')
 
 	event.recipes.gtceu.assembler('railways/track_create_andesite_wide')
@@ -396,7 +396,7 @@ const registerRailWaysRecipes = (event) => {
 		], `tfc:wood/planks/${woodType}_slab`, [
 			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}_narrow`, [`railways:track_incomplete_tfc_${woodType}_narrow`, 'gtceu:steel_rod']),
 			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}_narrow`, [`railways:track_incomplete_tfc_${woodType}_narrow`, '#forge:screws']),
-			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}_narrow`, [`railways:track_incomplete_tfc_${woodType}_narrow`, '#forge:tools/hammers']),
+			event.recipes.greate.pressing(`railways:track_incomplete_tfc_${woodType}_narrow`, `railways:track_incomplete_tfc_${woodType}_narrow`),
 		]).transitionalItem(`railways:track_incomplete_tfc_${woodType}_narrow`).loops(2).id(`tfg:railways/sequenced_assembly/track_create_${woodType}_narrow`)
 
 		event.recipes.gtceu.assembler(`railways/track_create_${woodType}_narrow`)
@@ -413,7 +413,7 @@ const registerRailWaysRecipes = (event) => {
 			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}`, [`railways:track_incomplete_tfc_${woodType}`, `tfc:wood/lumber/${woodType}`]),
 			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}`, [`railways:track_incomplete_tfc_${woodType}`, 'gtceu:steel_rod']),
 			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}`, [`railways:track_incomplete_tfc_${woodType}`, '#forge:screws']),
-			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}`, [`railways:track_incomplete_tfc_${woodType}`, '#forge:tools/hammers']),
+			event.recipes.greate.pressing(`railways:track_incomplete_tfc_${woodType}`, `railways:track_incomplete_tfc_${woodType}`),
 		]).transitionalItem(`railways:track_incomplete_tfc_${woodType}`).loops(2).id(`tfg:railways/sequenced_assembly/track_create_${woodType}`)
 
 		event.recipes.gtceu.assembler(`railways/track_${woodType}`)
@@ -430,7 +430,7 @@ const registerRailWaysRecipes = (event) => {
 			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}_wide`, [`railways:track_incomplete_tfc_${woodType}_wide`, `tfc:wood/planks/${woodType}_slab`]),
 			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}_wide`, [`railways:track_incomplete_tfc_${woodType}_wide`, `gtceu:steel_rod`]),
 			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}_wide`, [`railways:track_incomplete_tfc_${woodType}_wide`, '#forge:screws']),
-			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}_wide`, [`railways:track_incomplete_tfc_${woodType}_wide`, '#forge:tools/hammers'])
+			event.recipes.greate.pressing(`railways:track_incomplete_tfc_${woodType}_wide`, `railways:track_incomplete_tfc_${woodType}_wide`)
 		]).transitionalItem(`railways:track_incomplete_tfc_${woodType}_wide`).loops(2).id(`tfg:railways/sequenced_assembly/track_create_${woodType}_wide`)
 
 		event.recipes.gtceu.assembler(`railways/track_${woodType}_wide`)

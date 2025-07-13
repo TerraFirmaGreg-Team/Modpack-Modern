@@ -23,36 +23,36 @@ const generateCutterRecipe = (event, input, output, duration, EUt, id) => {
 		.EUt(EUt)
 }
 
-const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, overworldExclusive) => {
+const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimension, fertiliser_count) => {
 
 	// Без удобрения
 	let r = event.recipes.gtceu.greenhouse(id)
 		.itemInputs(input)
 		.circuit(1)
-		.inputFluids(Fluid.of('minecraft:water', fluid_amount))
+		.inputFluids(JsonIO.of({ amount: fluid_amount, value: { tag: "tfg:clean_water" }}))
 		.itemOutputs(output)
-		.chancedOutput(input, 7500, 0)
-		.chancedOutput(input, 5000, 0)
+		.chancedOutput(input, 7500, 1000)
+		.chancedOutput(input, 5000, 1000)
 		.duration(36000) // 30 mins
 		.EUt(GTValues.VA[GTValues.LV])
 
-	if (overworldExclusive)
-		r.dimension('minecraft:overworld')
+	if (dimension != null)
+		r.dimension(dimension)
 
 	// С удобрением
 	r = event.recipes.gtceu.greenhouse(`${id}_fertilized`)
 		.itemInputs(input)
-		.itemInputs('8x gtceu:fertilizer')
+		.itemInputs(Item.of('gtceu:fertilizer', fertiliser_count))
 		.circuit(2)
-		.inputFluids(Fluid.of('minecraft:water', fluid_amount))
+		.inputFluids(JsonIO.of({ amount: fluid_amount, value: { tag: "tfg:clean_water" }}))
 		.itemOutputs(output)
-		.chancedOutput(input, 8500, 0)
-		.chancedOutput(input, 6000, 0)
+		.chancedOutput(input, 8500, 1000)
+		.chancedOutput(input, 6000, 1000)
 		.duration(12000) // 10 mins
 		.EUt(GTValues.VA[GTValues.LV])
 
-	if (overworldExclusive)
-		r.dimension('minecraft:overworld')
+	if (dimension != null)
+		r.dimension(dimension)
 }
 
 const getFillingNBT = (material, amount) => {

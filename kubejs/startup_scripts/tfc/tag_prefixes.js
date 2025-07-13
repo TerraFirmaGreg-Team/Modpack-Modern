@@ -2,7 +2,8 @@
 
 const registerTFCTagPrefixes = (event) => {
 
-
+    // These ores break worldgen if removed somehow?
+    // TagPrefix.ORES.remove(TagPrefix.ore)
     TagPrefix.ORES.remove(TagPrefix.oreDeepslate)
     TagPrefix.ORES.remove(TagPrefix.oreTuff)
     TagPrefix.ORES.remove(TagPrefix.oreSand)
@@ -51,7 +52,7 @@ const registerTFCTagPrefixes = (event) => {
 		.unificationEnabled(true)
 		.materialIconType(GTMaterialIconType.ore)
 		.generationCondition(ItemGenerationCondition.hasOreProperty)
-
+        .materialSupplier(() => GTCEuAPI.materialManager.getMaterial('dripstone'))
 	// Redefine deepslate so it has the correct sound effects (yes I fixed this in GTM as well)
 	event.create('deepslate', 'ore')
 		.stateSupplier(() => Block.getBlock('minecraft:deepslate').defaultBlockState())
@@ -60,4 +61,46 @@ const registerTFCTagPrefixes = (event) => {
 		.materialIconType(GTMaterialIconType.ore)
 		.generationCondition(ItemGenerationCondition.hasOreProperty)
 		.materialSupplier(() => GTMaterials.Deepslate)
+
+ 	event.create('moon_stone', 'ore')
+		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_moon_stone').defaultBlockState())
+		.baseModelLocation('ad_astra:block/moon_stone')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(ItemGenerationCondition.hasOreProperty)
+
+	event.create('moon_deepslate', 'ore')
+		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_moon_deepslate').defaultBlockState())
+		.baseModelLocation('ad_astra:block/moon_deepslate')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(ItemGenerationCondition.hasOreProperty)
+
+	event.create('mars_stone', 'ore')
+		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_mars_stone').defaultBlockState())
+		.baseModelLocation('ad_astra:block/mars_stone')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(ItemGenerationCondition.hasOreProperty)
+
+	event.create('venus_stone', 'ore')
+		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_venus_stone').defaultBlockState())
+		.baseModelLocation('ad_astra:block/venus_stone')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(ItemGenerationCondition.hasOreProperty)
+
+	event.create('mercury_stone', 'ore')
+		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_mercury_stone').defaultBlockState())
+		.baseModelLocation('ad_astra:block/mercury_stone')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(ItemGenerationCondition.hasOreProperty)
+
+	event.create('glacio_stone', 'ore')
+		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_glacio_stone').defaultBlockState())
+		.baseModelLocation('ad_astra:block/glacio_stone')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(ItemGenerationCondition.hasOreProperty)
 }

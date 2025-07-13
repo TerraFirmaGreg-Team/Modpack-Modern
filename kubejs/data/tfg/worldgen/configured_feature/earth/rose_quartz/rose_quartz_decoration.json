@@ -1,0 +1,9 @@
+{
+	"type": "tfc:multiple",
+	"config": {
+		"features": [
+			"tfg:earth/rose_quartz/rose_quartz_bud_air",
+			"tfg:earth/rose_quartz/rose_quartz_bud_water"
+		]
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"structures": [
+		{
+			"structure": "tfg:moon/moon_rabbit_houses",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"salt": 1234542,
+		"spacing": 8,
+		"separation": 5,
+		"type": "minecraft:random_spread",
+		"exclusion_zone": {
+			"other_set": "tfg:moon/meteors",
+			"chunk_count": 3
+		}
+	}
+}

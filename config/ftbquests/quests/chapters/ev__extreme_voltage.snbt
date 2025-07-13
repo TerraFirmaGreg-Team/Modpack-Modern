@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "ev__extreme_voltage"
 	group: "21D975CEBDE06BA9"
-	icon: "gtceu:ev_electric_motor"
+	icon: "tfg:ev_universal_circuit"
 	id: "7FB9F636D95820A3"
 	order_index: 0
 	quest_links: [
@@ -307,6 +307,7 @@
 			dependencies: [
 				"0B25A282F677744B"
 				"7A55CC71442CC854"
+				"00004BE1D77EA003"
 			]
 			description: [
 				"We admit it... this is a completely &doptional&r Multiblock. Many playtesters kept using their &6HV&r singleblock miners and didn't find any problems in throughput."
@@ -520,6 +521,7 @@
 				"478B0D55369C0F7F"
 				"6B08799BCFD01D3D"
 				"30A6EDDF25A5E5F8"
+				"173A04F328414A36"
 			]
 			description: [
 				"&aRuthenium-tungsten-molybdenum (RTM) Alloy Coils&r raise the Heat Capacity to a scorching &d4,500K&r."
@@ -541,10 +543,7 @@
 			y: 2.25d
 		}
 		{
-			dependencies: [
-				"2D01E80DE837F6A6"
-				"7FA0ACB7F161F378"
-			]
+			dependencies: ["7FA0ACB7F161F378"]
 			description: [
 				"The &3Diode&r (the block, not the component) accepts energy inputs from 5 sides, but only outputs through a single side."
 				""
@@ -972,10 +971,7 @@
 			y: 9.0d
 		}
 		{
-			dependencies: [
-				"16E3465CF94E2BDD"
-				"4024C831C77101CA"
-			]
+			dependencies: ["4024C831C77101CA"]
 			description: [
 				"The &aAdvanced Energy Detector&r is an RS-latch for Energy Control."
 				""
@@ -1039,6 +1035,7 @@
 			dependencies: [
 				"41D32C5178760F47"
 				"42FB276AB16258D9"
+				"00004BE1D77EA003"
 			]
 			description: [
 				"&aUranium&r has very few uses in &2GTCEu&r right now, as we're &4yet to&r implement our &3Nuclear Reactor&r (it's planned!)."
@@ -1618,6 +1615,17 @@
 			title: "Quests are OLD and not updated for TFG"
 			x: 0.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["478B0D55369C0F7F"]
+			id: "173A04F328414A36"
+			tasks: [{
+				id: "66828E992294F8BD"
+				item: "gtceu:rtm_alloy_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
 		}
 	]
 	subtitle: ["The quests are outdated. They will be update in a later update."]

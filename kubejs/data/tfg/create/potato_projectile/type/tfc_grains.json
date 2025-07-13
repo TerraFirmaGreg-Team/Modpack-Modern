@@ -1,0 +1,15 @@
+{
+    "damage": 2,
+    "items": [
+        "tfc:food/barley_grain",
+        "tfc:food/maize_grain",
+        "tfc:food/oat_grain",
+        "tfc:food/rye_grain",
+        "tfc:food/rice_grain",
+        "tfc:food/wheat_grain"
+    ],
+    "knockback": 0.05,
+    "reload_ticks": 6,
+    "sound_pitch": 1.45,
+    "split": 5
+  }

@@ -1,0 +1,83 @@
+{
+	"type": "minecraft:geode",
+	"config": {
+		"blocks": {
+			"filling_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "gtceu:moon_stone_certus_quartz_ore"
+				}
+			},
+			"inner_layer_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "gtceu:moon_stone_certus_quartz_ore"
+				}
+			},
+			"alternate_inner_layer_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "gtceu:moon_stone_quartzite_ore"
+				}
+			},
+			"middle_layer_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "create:asurine"
+				}
+			},
+			"outer_layer_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "create:cut_asurine"
+				}
+			},
+			"inner_placements": [
+				{
+					"Name": "gtceu:moon_stone_certus_quartz_ore"
+				}
+			],
+			"cannot_replace": "#minecraft:features_cannot_replace",
+			"invalid_blocks": "#minecraft:geode_invalid_blocks"
+		},
+		"crack": {
+			"base_crack_size": 2,
+			"crack_point_offset": 2,
+			"generate_crack_chance": 0.1
+		},
+		"distribution_points": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 4,
+				"min_inclusive": 3
+			}
+		},
+		"invalid_blocks_threshold": 4,
+		"layers": {
+			"filling": 0.3,
+			"inner_layer": 1.8,
+			"middle_layer": 3.1,
+			"outer_layer": 4.0
+		},
+		"max_gen_offset": 36,
+		"min_gen_offset": -36,
+		"noise_multiplier": 0.05,
+		"outer_wall_distance": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 6,
+				"min_inclusive": 4
+			}
+		},
+		"placements_require_layer0_alternate": false,
+		"point_offset": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 2,
+				"min_inclusive": 1
+			}
+		},
+		"use_alternate_layer0_chance": 0.4,
+		"use_potential_placements_chance": 0.30
+	}
+}

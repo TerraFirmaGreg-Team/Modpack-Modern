@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "tfg:block/corallium_arenicolus_0_bottom"
+    },
+    "half=upper": {
+      "model": "tfg:block/corallium_arenicolus_0_top"
+    }
+  }
+}

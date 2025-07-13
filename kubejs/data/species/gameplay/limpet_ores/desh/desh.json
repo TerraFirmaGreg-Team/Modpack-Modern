@@ -1,0 +1,9 @@
+{
+	"id": "species:desh",
+	"item": "gtceu:poor_raw_desh",
+	"block": "gtceu:moon_stone_desh_ore",
+	"maxCount": 8,
+	"spawnWeight": 40,
+	"maxSpawnHeight": 200,
+	"minSpawnHeight": 4
+}

@@ -1,0 +1,18 @@
+{
+    "damage": 4,
+    "items": [
+        "tfc:food/beet",
+        "tfc:food/carrot",
+        "tfc:food/green_bean",
+        "tfc:food/soybean",
+        "tfc:food/squash"
+    ],
+    "knockback": 0.25,
+    "render_mode": {
+        "type": "create:toward_motion",
+        "spin": 1.0,
+        "sprite_angle_offset": 140
+    },
+    "sound_pitch": 1.5,
+    "velocity_multiplier": 1.45
+}

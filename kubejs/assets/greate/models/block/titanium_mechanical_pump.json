@@ -1,0 +1,8 @@
+{
+  "parent": "create:block/mechanical_pump/block",
+  "textures": {
+    "2": "greate:block/titanium/pipes",
+    "4": "greate:block/titanium/pump",
+    "particle": "greate:block/titanium/pump"
+  }
+}

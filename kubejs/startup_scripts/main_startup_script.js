@@ -1,93 +1,76 @@
 // priority: 0
 
-/**
- * Событие регистрации предметов.
- */
 StartupEvents.registry('item', event => {
     registerGTCEuItems(event)
     registerTFGItems(event)
 })
 
-/**
- * Событие регистрации блоков.
- */
 StartupEvents.registry('block', event => {
-    registerTFGBlocks(event)    
+    registerTFGBlocks(event)
+	registerBetterEndBlocks(event)
 })
 
-/**
- * Событие изменения блоков.
- */
+StartupEvents.registry('entity_type', event => {
+	registerTFGEntityTypes(event)
+})
+
 BlockEvents.modification(event => {
-    // modifyFirmaCivBlocks(event)
+	registerAdAstraBlockModifications(event)
 })
 
-/**
- * Событие изменения предметов.
- */
 ItemEvents.modification(event => {
-    registerBeneathItemModifications(event)
-    registerConstructionWandsItemModifications(event)
-    registerCreateItemModifications(event)
-    registerMinecraftItemModifications(event)
+	registerBeneathItemModifications(event)
+	registerConstructionWandsItemModifications(event)
+	registerCreateItemModifications(event)
+	registerGTCEuItemModifications(event)
+	registerMinecraftItemModifications(event)
 })
 
-/**
- * Событие регистрации жидкостей.
- */
 StartupEvents.registry('fluid', event => {
-    registerTFGFluids(event)
+	registerTFGFluids(event)
+	registerAE2Fluids(event)
 })
 
-/**
- * Событие регистрации типов рецептов.
- */
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-    registerGTCEuRecipeTypes(event)
+	registerGTCEuRecipeTypes(event)
 })
 
-/**
- * Событие регистрации механизмов.
- */
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-    registerGTCEuMachines(event)
+	registerGTCEuMachines(event)
 })
 
-/**
- * Событие регистрации тэг префиксов.
-*/
 GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
-    registerAE2TagPrefixes(event)
-    registerTFCTagPrefixes(event)
-    registerGTCEuTagPrefixes(event)
+	registerAE2TagPrefixes(event)
+	registerTFCTagPrefixes(event)
+	registerGTCEuTagPrefixes(event)
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    registerAE2Materials(event)
-    registerTFCMaterials(event)
-    registerGTCEuMaterials(event)
-    registerTFGMaterials(event)
+	registerAdAstraMaterials(event)
+	registerAE2Materials(event)
+	registerCreateMaterials(event)
+	registerTFCMaterials(event)
+	registerGTCEuMaterials(event)
+	registerGreateMaterials(event)
+	registerTFGMaterials(event)
 })
 
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
-    registerTFCIconSets(event)
+	registerTFCIconSets(event)
 })
 
-/**
- * Событие модификации материалов.
-*/
 GTCEuStartupEvents.materialModification(event => {
-    registerGTCEuMaterialModification(event)
+	registerGTCEuMaterialModification(event)
+	registerGreateMaterialModification(event)
 })
 
+GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
+	registerTFGDimensionMarkers(event)
+})
 
-//GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
-//    event.create('ad_astra:earth_orbit')
-//        .iconSupplier(() => Item.of('ad_astra:earth_globe').getItem())
-//        .tier(0)
-//        .overrideName('Earth Orbit')
-//})
-
+TFCEvents.registerFoodTrait(event => {
+	registerTFGFoodTraits(event)
+})
 
 Platform.mods.kaolinclayze.name = "Primitive Creatures";
 Platform.mods.tfg.name = "TerraFirmaGreg";

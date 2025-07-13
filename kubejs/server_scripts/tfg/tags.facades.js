@@ -26,6 +26,14 @@ function registerFacadeWhitelistTags(event) {
 		'#simplylight:any_lamp_off',
 		'#minecraft:planks',
 		'#minecraft:logs',
+
+		'#tfg:ad_astra_iron_blocks',
+		'#tfg:ad_astra_steel_blocks',
+		'#tfg:ad_astra_desh_blocks',
+		'#tfg:ad_astra_ostrum_blocks',
+		'#tfg:ad_astra_calorite_blocks',
+		'#tfg:ad_astra_etrium_blocks',
+	    
 		//rnr shingles
 		'rnr:ceramic_roof',
 		'rnr:terracotta_roof',
@@ -113,8 +121,10 @@ function registerFacadeWhitelistTags(event) {
 		'create:dark_oak_window',
 		'create:mangrove_window',
 		'create:ornate_iron_window',
-		'create_connected:cherry_window',
-		'create_connected:bamboo_window',
+		'create:industrial_iron_window',
+		'create:weathered_iron_window',
+		'create:cherry_window',
+		'create:bamboo_window',
 		'createdeco:andesite_window',
 		'createdeco:copper_window',
 		'createdeco:iron_window',
@@ -134,108 +144,50 @@ function registerFacadeWhitelistTags(event) {
 		'createdeco:zinc_sheet_metal'
 	];
 	
-	const mc_colors =
-	[
-	'white',
-	'orange',
-	'magenta',
-	'light_blue',
-	'yellow',
-	'lime',
-	'pink',
-	'gray',
-	'light_gray',
-	'cyan',
-	'purple',
-	'blue',
-	'brown',
-	'green',
-	'red',
-	'black'
-	]
-	
-	const wood_types_tfc = 
-	[
-	'acacia',
-	'ash',
-	'aspen',
-	'birch',
-	'blackwood',
-	'chestnut',
-	'douglas_fir',
-	'hickory',
-	'kapok',
-	'mangrove',
-	'maple',
-	'oak',
-	'palm',
-	'pine',
-	'rosewood',
-	'sequoia',
-	'spruce',
-	'sycamore',
-	'white_cedar',
-	'willow'
-	]
-	
-	const wood_types_afc =
-	[
-	'baobao',
-	'eucalyptus',
-	'mahogany',
-	'heavea',
-	'tualang',
-	'teak',
-	'cypress',
-	'fig',
-	'ironwood',
-	'ipe'
-	]
-	
 	const createdeco_bricks_fm = 
 	[
-	'pearl_bricks',
-	'verdant_bricks',
-	'red_bricks',
-	'dean_bricks',
-	'umber_bricks',
-	'dusk_bricks',
-	'blue_bricks',
-	'scarlet_bricks'
+		'pearl_bricks',
+		'verdant_bricks',
+		'red_bricks',
+		'dean_bricks',
+		'umber_bricks',
+		'dusk_bricks',
+		'blue_bricks',
+		'scarlet_bricks'
 	]
 	
 	const gtceu_stonelike_fm = 
 	[
-	'light_concrete', 
-	'dark_concrete',
-	'red_granite',
-	'marble'
+		'light_concrete', 
+		'dark_concrete',
+		'red_granite',
+		'marble'
 	]
 	
 	const create_copper_fm = 
 	[
-	'copper',
-	'exposed_copper',
-	'weathered_copper',
-	'oxidized_copper'
+		'copper',
+		'exposed_copper',
+		'weathered_copper',
+		'oxidized_copper'
 	]
 	
 	const create_rock_types_fm = 
 	[
-	'granite',
-	'diorite',
-	'andesite',
-	'calcite',
-	'dripstone',
-	'deepslate',
-	'limestone'
-	//'ochrum',
-	//'scoria',
-	//'scorchia',
-	//'veridium'
-	//'tuff',
-	//'asurine',
-	//'crimsite',
+		'granite',
+		'diorite',
+		'andesite',
+		'calcite',
+		'dripstone',
+		'deepslate',
+		'limestone'
+		//'ochrum',
+		//'scoria',
+		//'scorchia',
+		//'veridium'
+		//'tuff',
+		//'asurine',
+		//'crimsite',
 	]
 	
 	//misc blocks
@@ -267,7 +219,7 @@ function registerFacadeWhitelistTags(event) {
 	});
 	
 	//gtceu misc colored blocks
-	mc_colors.forEach(facade_material => {
+	global.MINECRAFT_DYE_NAMES.forEach(facade_material => {
 		event.add('tfg:whitelisted/facades', 'gtceu:' + facade_material + '_metal_sheet')
 		event.add('tfg:whitelisted/facades', 'gtceu:' + facade_material + '_large_metal_sheet')
 		event.add('tfg:whitelisted/facades', 'gtceu:' + facade_material + '_studs')
@@ -296,7 +248,7 @@ function registerFacadeWhitelistTags(event) {
 	});
 	
 	//rnr shingles
-	wood_types_tfc.concat(wood_types_afc).forEach(facade_material => {
+	global.TFC_WOOD_TYPES.concat(global.AFC_WOOD_TYPES).forEach(facade_material => {
 		event.add('tfg:whitelisted/facades', 'rnr:wood/shingles/' + facade_material)
 	});
 	
@@ -315,10 +267,10 @@ function registerFacadeWhitelistTags(event) {
 	});
 	
 	//everycomp windows
-	wood_types_tfc.forEach(facade_material => {
+	global.TFC_WOOD_TYPES.forEach(facade_material => {
 		event.add('tfg:whitelisted/facades', 'everycomp:c/tfc/' + facade_material + '_window')
 	});
-	wood_types_afc.forEach(facade_material => {
+	global.AFC_WOOD_TYPES.forEach(facade_material => {
 		event.add('tfg:whitelisted/facades', 'everycomp:c/afc/' + facade_material + '_window')
 	});
 }
