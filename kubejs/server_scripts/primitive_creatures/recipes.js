@@ -21,7 +21,7 @@ function registerPrimitiveCreaturesRecipes(event) {
 		'tfg:flint_club_head',
 		'tfg:flint',
 		[
-			'  X  ',
+			' XXX ',
 			' XXX ',
 			'  X  ',
 			' XXX ',
