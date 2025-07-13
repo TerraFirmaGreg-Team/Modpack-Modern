@@ -275,7 +275,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 21%$(br)$(thing)Source of$(): Magnesium, Rutile, Titanium$(br)$(thing)Formula$(): TODO",
+      "text": "$(thing)Percentage$(): 21%$(br)$(thing)Source of$(): Magnesium, Rutile, Titanium$(br)$(thing)Formula$(): (Mg,Fe)Ti₂O₅",
       "type": "patchouli:multiblock"
     },
     {
@@ -653,7 +653,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Source of$(): Magnesium, Rutile, Titanium$(br)$(thing)Formula$(): TODO",
+      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Source of$(): Magnesium, Rutile, Titanium$(br)$(thing)Formula$(): (Mg,Fe)Ti₂O₅",
       "type": "patchouli:multiblock"
     },
     {

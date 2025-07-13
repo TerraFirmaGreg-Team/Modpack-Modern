@@ -111,7 +111,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Source of$(): Magnesium, Rutile, Titanium$(br)$(thing)Формула$(): TODO",
+      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Source of$(): Magnesium, Rutile, Titanium$(br)$(thing)Формула$(): (Mg,Fe)Ti₂O₅",
       "type": "patchouli:multiblock"
     },
     {
@@ -459,7 +459,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 21%$(br)$(thing)Source of$(): Magnesium, Rutile, Titanium$(br)$(thing)Формула$(): TODO",
+      "text": "$(thing)Процент руды$(): 21%$(br)$(thing)Source of$(): Magnesium, Rutile, Titanium$(br)$(thing)Формула$(): (Mg,Fe)Ti₂O₅",
       "type": "patchouli:multiblock"
     },
     {

@@ -275,7 +275,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 21%$(br)$(thing)Джерело$(): Магнію, Рутилу, Титану$(br)$(thing)Формула$(): TODO",
+      "text": "$(thing)Відсоток$(): 21%$(br)$(thing)Джерело$(): Магнію, Рутилу, Титану$(br)$(thing)Формула$(): (Mg,Fe)Ti₂O₅",
       "type": "patchouli:multiblock"
     },
     {
@@ -628,7 +628,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Джерело$(): Магнію, Рутилу, Титану$(br)$(thing)Формула$(): TODO",
+      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Джерело$(): Магнію, Рутилу, Титану$(br)$(thing)Формула$(): (Mg,Fe)Ti₂O₅",
       "type": "patchouli:multiblock"
     },
     {

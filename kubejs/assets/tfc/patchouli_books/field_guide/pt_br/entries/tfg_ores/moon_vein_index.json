@@ -275,7 +275,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 21%$(br)$(thing)Fonte de$(): Magnésio, Rutilo, Titânio$(br)$(thing)Fórmula$(): TODO",
+      "text": "$(thing)Porcentagem$(): 21%$(br)$(thing)Fonte de$(): Magnésio, Rutilo, Titânio$(br)$(thing)Fórmula$(): (Mg,Fe)Ti₂O₅",
       "type": "patchouli:multiblock"
     },
     {
@@ -653,7 +653,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Fonte de$(): Magnésio, Rutilo, Titânio$(br)$(thing)Fórmula$(): TODO",
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Fonte de$(): Magnésio, Rutilo, Titânio$(br)$(thing)Fórmula$(): (Mg,Fe)Ti₂O₅",
       "type": "patchouli:multiblock"
     },
     {
