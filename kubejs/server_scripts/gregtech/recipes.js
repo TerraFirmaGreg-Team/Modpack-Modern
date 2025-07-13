@@ -1040,6 +1040,15 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
+	// Fix Snow in Compressor
+
+	event.remove({ id: 'gtceu:compressor/snowballs_to_snow' })
+	event.recipes.gtceu.compressor('gtceu:compressor/snowballs_to_snow_fixed')
+		.itemInputs('8x minecraft:snowball')
+		.itemOutputs('minecraft:snow_block')
+		.duration(20*10)
+		.EUt(2)
+
 	//#region Changing tiers of decomposition recipes
 
 	event.recipes.gtceu.electrolyzer('gtceu:decomposition_electrolyzing_clay')
