@@ -985,14 +985,14 @@ function registerGTCEuMachineRecipes(event) {
 
 	event.recipes.gtceu.assembler('red_solar_casing')
 		.itemInputs('gtceu:steel_machine_casing', 'ad_astra:photovoltaic_vesnium_cell')
-		.itemOutputs('tfg:block/casings/machine_casing_red_solar_panel')
+		.itemOutputs('tfg:casings/machine_casing_red_solar_panel')
 		.circuit(6)
 		.duration(2.5*20)
 		.EUt(16)
 
 	event.recipes.gtceu.assembler('iron_desh_casing')
 		.itemInputs('6x gtceu:steel_plate', 'gtceu:desh_frame')
-		.itemOutputs('2x tfg:block/casings/machine_casing_iron_desh')
+		.itemOutputs('2x tfg:casings/machine_casing_iron_desh')
 		.circuit(6)
 		.duration(2.5*20)
 		.EUt(16)
