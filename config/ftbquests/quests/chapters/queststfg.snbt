@@ -44,8 +44,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg.create_team.title}"
-			x: -3.5d
-			y: 0.0d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["427814F6E9386772"]
@@ -54,7 +54,7 @@
 				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: 14796000L
+						creationDate: 99995114000L
 						traits: [ ]
 					}
 				}
@@ -77,10 +77,13 @@
 			disable_toast: true
 			icon: {
 				Count: 1
-				id: "patchouli:guide_book"
-				tag: {
-					"patchouli:book": "tfc:field_guide"
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 99995114000L
+						traits: [ ]
+					}
 				}
+				id: "createaddition:honey_cake"
 			}
 			id: "3D7B0F3134C30364"
 			rewards: [
