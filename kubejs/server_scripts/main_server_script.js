@@ -33,6 +33,7 @@ ServerEvents.tags('item', event => {
 	registerGrapplemodItemTags(event)
 	registerGreateItemTags(event)
 	registerGTCEUItemTags(event)
+	registerKnightsOfTerraFirmaItemTags(event)
 	registerMegaCellsItemTags(event)
 	registerMinecraftItemTags(event)
 	registerModernMarkingsItemTags(event)
