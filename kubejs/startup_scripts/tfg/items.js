@@ -157,18 +157,10 @@ const registerTFGItems = (event) => {
 
 	//#region Misc
 	event.create('tfg:paraffin_wax')
-		.translationKey('item.tfg.paraffin_wax')
-
 	event.create('tfg:conifer_rosin')
-		.translationKey('item.tfg.conifer_rosin')
-
 	event.create('tfg:foil_pack')
-		.translationKey('item.tfg.foil_pack')
-		.texture('tfg:item/foil_pack')
-
 	event.create('tfg:clean_foil_pack')
-		.translationKey('item.tfg.clean_foil_pack') 
-		.texture('tfg:item/clean_foil_pack') 
+	event.create('tfg:flint_club_head')
 	//#endregion
 
 	//#region Cloth & String

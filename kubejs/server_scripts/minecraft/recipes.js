@@ -1065,4 +1065,6 @@ const registerMinecraftRecipes = (event) => {
 		.itemOutputs('minecraft:glow_ink_sac')
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.MV])
+
+	event.shapeless('8x minecraft:bone_meal', ['#forge:tools/mortars', 'minecraft:skeleton_skull'])
 }
