@@ -5028,6 +5028,47 @@
             ]
         },
         {
+            "pakku_id": "7dWkYpxCdvBgyHUv",
+            "pakku_links": [
+                "WUlpBsMd1Ztf1Rv1"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "iris-flywheel-compat"
+            },
+            "name": {
+                "curseforge": "Iris & Oculus Flywheel Compat"
+            },
+            "id": {
+                "curseforge": "659897"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "oculus-flywheel-compat-Forge-2.0.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6694/861/oculus-flywheel-compat-Forge-2.0.3.jar",
+                    "id": "6694861",
+                    "parent_id": "659897",
+                    "hashes": {
+                        "sha1": "a11227479ddcddcb0eed3f9c3717c53fd5a47222",
+                        "md5": "dd9bfddf81ea63bd5b4267ab7d363f26"
+                    },
+                    "required_dependencies": [
+                        "581495"
+                    ],
+                    "size": 117226,
+                    "date_published": "2025-06-25T15:25:29.200Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "I25wHE92iKmdYAz9",
             "type": "MOD",
             "side": "CLIENT",
