@@ -642,7 +642,7 @@ function registerTFGFoodRecipes(event) {
 	}).inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfg:clean_water" }}))
 
 	processorRecipe("yeast_starter", 1200, 8, {
-		circuit: 1,
+		circuit: 2,
 		fluidInputs: [Fluid.of('firmalife:yeast_starter', 100)],
 		fluidOutputs: [Fluid.of('firmalife:yeast_starter', 600)],
 		itemInputs: ['#tfc:foods/flour'],

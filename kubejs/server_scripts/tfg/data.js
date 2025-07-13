@@ -42,6 +42,9 @@ const registerTFGItemSize = (event) => {
 	event.itemSize('tfg:fishing_net/tin_alloy', 'large', 'medium', 'tin_alloy_fishing_net')
 	event.itemSize('tfg:fishing_net/magnalium', 'large', 'medium', 'magnalium_fishing_net')
 
+	event.itemSize('tfg:rapeseed_product', 'small', 'light', 'rapeseed_product')
+	event.itemSize('tfg:sunflower_product', 'small', 'light', 'sunflower_product')
+
 }
 
 
