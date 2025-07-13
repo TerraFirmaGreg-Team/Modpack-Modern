@@ -373,7 +373,7 @@ const registerKnightsOfTerraFirmaRecipies = (event) => {
 
 	
 	const translateMaterials = [
-		"ingot",
+		//"ingot",
 		//"double_ingot",
 		// NOTE: all of the above already handled by another script
 		"sheet",
