@@ -27,12 +27,12 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimens
 
 	// Без удобрения
 	let r = event.recipes.gtceu.greenhouse(id)
-		.itemInputs(input)
+		.notConsumable(input)
 		.circuit(1)
 		.inputFluids(JsonIO.of({ amount: fluid_amount, value: { tag: "tfg:clean_water" }}))
 		.itemOutputs(output)
-		.chancedOutput(input, 7500, 1000)
-		.chancedOutput(input, 5000, 1000)
+		.chancedOutput(input, 750, 0)
+		.chancedOutput(input, 500, 0)
 		.duration(36000) // 30 mins
 		.EUt(GTValues.VA[GTValues.LV])
 
@@ -41,13 +41,13 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimens
 
 	// С удобрением
 	r = event.recipes.gtceu.greenhouse(`${id}_fertilized`)
-		.itemInputs(input)
+		.notConsumable(input)
 		.itemInputs(Item.of('gtceu:fertilizer', fertiliser_count))
 		.circuit(2)
 		.inputFluids(JsonIO.of({ amount: fluid_amount, value: { tag: "tfg:clean_water" }}))
 		.itemOutputs(output)
-		.chancedOutput(input, 8500, 1000)
-		.chancedOutput(input, 6000, 1000)
+		.chancedOutput(input, 4000, 0)
+		.chancedOutput(input, 3000, 0)
 		.duration(12000) // 10 mins
 		.EUt(GTValues.VA[GTValues.LV])
 
