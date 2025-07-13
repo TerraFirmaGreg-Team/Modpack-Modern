@@ -8521,6 +8521,90 @@
             ]
         },
         {
+            "pakku_id": "wHVaxSX4iL72uvnQ",
+            "pakku_links": [
+                "SqFAAFJATMkBXiCt"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tacz-ammo-query"
+            },
+            "name": {
+                "curseforge": "TaCZ Ammo Query"
+            },
+            "id": {
+                "curseforge": "1223006"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "taczammoquery-1.20.1-1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6318/890/taczammoquery-1.20.1-1.0.0.jar",
+                    "id": "6318890",
+                    "parent_id": "1223006",
+                    "hashes": {
+                        "sha1": "e3d20ecf37d57b2ce0541cd0b082355853566296",
+                        "md5": "9f7a2f6d8a086d7040fe76a397e6bca1"
+                    },
+                    "required_dependencies": [
+                        "1028108"
+                    ],
+                    "size": 14460,
+                    "date_published": "2025-03-18T13:39:32.830Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "KJAlHXYt6N7xCHpj",
+            "pakku_links": [
+                "SqFAAFJATMkBXiCt",
+                "9BKEvabQWNVcGwsX"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tacz-js"
+            },
+            "name": {
+                "curseforge": "TaCZ JS"
+            },
+            "id": {
+                "curseforge": "1130998"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "taczjs-forge-1.3.6-mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6639/214/taczjs-forge-1.3.6-mc1.20.1.jar",
+                    "id": "6639214",
+                    "parent_id": "1130998",
+                    "hashes": {
+                        "sha1": "9a75526b23e2c851df20749ba1a5f3e11f90c603",
+                        "md5": "203a8995aa6a69c6b6ec38136d8bd4b5"
+                    },
+                    "required_dependencies": [
+                        "1028108",
+                        "238086"
+                    ],
+                    "size": 90443,
+                    "date_published": "2025-06-11T07:06:10.097Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "fMkiGcRPRv1DdRC1",
             "type": "MOD",
             "slug": {
@@ -9008,6 +9092,42 @@
                     "required_dependencies": [],
                     "size": 1105891,
                     "date_published": "2025-03-23T19:12:56.087Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "SqFAAFJATMkBXiCt",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "timeless-and-classics-zero"
+            },
+            "name": {
+                "curseforge": "[TaCZ] Timeless and Classics Zero"
+            },
+            "id": {
+                "curseforge": "1028108"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "tacz-1.20.1-1.1.6-hotfix.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6654/541/tacz-1.20.1-1.1.6-hotfix.jar",
+                    "id": "6654541",
+                    "parent_id": "1028108",
+                    "hashes": {
+                        "sha1": "e951d81b5f452bcad47c20d5b491fd26f8de8ce2",
+                        "md5": "51636447584a75f8d2db2fb930d110b1"
+                    },
+                    "required_dependencies": [],
+                    "size": 47826468,
+                    "date_published": "2025-06-15T15:09:58.720Z"
                 }
             ]
         },
