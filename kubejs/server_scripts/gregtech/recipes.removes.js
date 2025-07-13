@@ -666,6 +666,15 @@ function removeGTCEURecipes(event) {
 
 	event.remove({ id: 'gtceu:rock_breaker/red_granite' })
 
+	// Snow Stuffs
+
+	event.remove({ id: 'gtceu:fluid_solidifier/snow_block' })
+	event.remove({ id: 'gtceu:fluid_solidifier/snow_block_distilled' })
+
+	removeCutterRecipe(event, 'snow_layer')
+	removeCutterRecipe(event, 'snow_layer_distilled_water')
+	removeCutterRecipe(event, 'snow_layer_water')
+
 	// Remove vanilla Eye of Ender
 
 	event.remove({ id: 'minecraft:ender_eye' })

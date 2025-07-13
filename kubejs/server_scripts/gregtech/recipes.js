@@ -1040,6 +1040,15 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
+	// Fix Snow in Compressor
+
+	event.remove({ id: 'gtceu:compressor/snowballs_to_snow' })
+	event.recipes.gtceu.compressor('gtceu:compressor/snowballs_to_snow_fixed')
+		.itemInputs('8x minecraft:snowball')
+		.itemOutputs('minecraft:snow_block')
+		.duration(20*10)
+		.EUt(2)
+
 	//#region Changing tiers of decomposition recipes
 
 	event.recipes.gtceu.electrolyzer('gtceu:decomposition_electrolyzing_clay')
@@ -1185,9 +1194,9 @@ const registerGTCEURecipes = (event) => {
 	generateMixerRecipe(event, ['gtceu:tiny_nether_quartz_dust', '8x gtceu:tiny_redstone_dust'], [], 'gtceu:rose_quartz_dust', 2, [], 20, 60, 64, 'tiny_rose_quartz_dust_mixing')
 
 	event.recipes.gtceu.autoclave("autoclave_dust_rose_quartz_ice")
-		.itemInputs("gtceu:rose_quartz_dust")
+		.itemInputs('#forge:dusts/rose_quartz')
 		.inputFluids(Fluid.of("gtceu:ice", 144))
-		.itemOutputs("gtceu:rose_quartz_gem")
+		.itemOutputs("#forge:gems/rose_quartz")
 		.duration(2000)
 		.EUt(120)
 
