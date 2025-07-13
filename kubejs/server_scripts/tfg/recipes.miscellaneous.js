@@ -252,7 +252,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.fluid_solidifier('tfg:ice')
-		.inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfg:clean_water" } }))
+		.inputFluids(JsonIO.of({ amount: 144, value: { tag: "tfg:clean_water" } }))
 		.notConsumable('gtceu:block_casting_mold')
 		.itemOutputs('minecraft:ice')
 		.duration(200)

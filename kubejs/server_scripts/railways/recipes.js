@@ -316,7 +316,7 @@ const registerRailWaysRecipes = (event) => {
 	], {
 		A: '#forge:plates/wrought_iron',
 		B: '#forge:rods/wrought_iron',
-		C: 'create:propeller',
+		C: '#forge:rotors/iron',
 	}).id('tfg:railways/shaped/smokestack_diesel')
 
 	// Монорельс
