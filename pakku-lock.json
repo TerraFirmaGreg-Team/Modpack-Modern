@@ -491,7 +491,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "appliedenergistics2-forge-15.4.5.jar",
+                    "file_name": "appliedenergistics2-forge-15.4.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -499,18 +499,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6629/570/appliedenergistics2-forge-15.4.5.jar",
-                    "id": "6629570",
+                    "url": "https://edge.forgecdn.net/files/6763/576/appliedenergistics2-forge-15.4.6.jar",
+                    "id": "6763576",
                     "parent_id": "223794",
                     "hashes": {
-                        "sha1": "7ee55608d1625ec1fb22d60bd73aa31fe80cc896",
-                        "md5": "92d85cc2573550525f9b9a647f9f8459"
+                        "sha1": "773c809c67ef75979476a1c7062a754b497d9260",
+                        "md5": "8d8e302b67a35b2bc52971e5e4ae5b67"
                     },
                     "required_dependencies": [
                         "1173950"
                     ],
-                    "size": 8413069,
-                    "date_published": "2025-06-08T13:24:02.623Z"
+                    "size": 8423678,
+                    "date_published": "2025-07-13T11:29:51.753Z"
                 }
             ]
         },
@@ -2272,7 +2272,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "create_factory_logistics-1.20.1-1.4.4.jar",
+                    "file_name": "create_factory_logistics-1.20.1-1.4.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2280,16 +2280,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6697/751/create_factory_logistics-1.20.1-1.4.4.jar",
-                    "id": "6697751",
+                    "url": "https://edge.forgecdn.net/files/6763/9/create_factory_logistics-1.20.1-1.4.5.jar",
+                    "id": "6763009",
                     "parent_id": "1218807",
                     "hashes": {
-                        "sha1": "e300be40f0911aa318a09549f7abfb5041a55190",
-                        "md5": "cac1d8da02f258b0b48307ad75caa207"
+                        "sha1": "5c2c2a416000273b8503a7ec666bc9325cb5707b",
+                        "md5": "cd134d174ec0a84bc231cda56f8510a8"
                     },
                     "required_dependencies": [],
-                    "size": 1082232,
-                    "date_published": "2025-06-26T12:50:53.563Z"
+                    "size": 1082428,
+                    "date_published": "2025-07-13T08:41:15.490Z"
                 }
             ]
         },
@@ -7567,7 +7567,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedbackpacks-1.20.1-3.23.23.1278.jar",
+                    "file_name": "sophisticatedbackpacks-1.20.1-3.23.23.1281.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7576,18 +7576,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6757/290/sophisticatedbackpacks-1.20.1-3.23.23.1278.jar",
-                    "id": "6757290",
+                    "url": "https://edge.forgecdn.net/files/6761/714/sophisticatedbackpacks-1.20.1-3.23.23.1281.jar",
+                    "id": "6761714",
                     "parent_id": "422301",
                     "hashes": {
-                        "sha1": "4f84cae3627de4fbca570d53b067ef643f069ee6",
-                        "md5": "b12548340c258140072041dd1d8497a3"
+                        "sha1": "0a52120105615eb78d9cb9372424fe94529000c6",
+                        "md5": "ccbd17703138852dd01634dd18bd6053"
                     },
                     "required_dependencies": [
                         "618298"
                     ],
-                    "size": 930246,
-                    "date_published": "2025-07-11T19:17:07.607Z"
+                    "size": 930346,
+                    "date_published": "2025-07-12T22:22:29.537Z"
                 }
             ]
         },
@@ -7606,7 +7606,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedcore-1.20.1-1.2.74.1030.jar",
+                    "file_name": "sophisticatedcore-1.20.1-1.2.75.1033.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7615,16 +7615,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6757/266/sophisticatedcore-1.20.1-1.2.74.1030.jar",
-                    "id": "6757266",
+                    "url": "https://edge.forgecdn.net/files/6759/791/sophisticatedcore-1.20.1-1.2.75.1033.jar",
+                    "id": "6759791",
                     "parent_id": "618298",
                     "hashes": {
-                        "sha1": "872595be0e49ded6a874d153ead423091b20399a",
-                        "md5": "26f2a7f3c1e932370ceec2e7ff2c5eb5"
+                        "sha1": "ff32a30d40ba71d0af46e58987b1c97c81dfa12a",
+                        "md5": "e1fd83e7bfb1cd687d20ad8cd0b89be1"
                     },
                     "required_dependencies": [],
-                    "size": 1333600,
-                    "date_published": "2025-07-11T19:00:51.783Z"
+                    "size": 1333615,
+                    "date_published": "2025-07-12T12:41:45.433Z"
                 }
             ]
         },
@@ -8662,7 +8662,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.1.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8671,19 +8671,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6755/308/TerraFirmaGreg-Core-Modern-0.7.1.jar",
-                    "id": "6755308",
+                    "url": "https://edge.forgecdn.net/files/6763/731/TerraFirmaGreg-Core-Modern-0.7.2.jar",
+                    "id": "6763731",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "c70e998afb132159a28977842154eaf3dee54eba",
-                        "md5": "910a39d0a57211c3456cd27397b6ffad"
+                        "sha1": "a8e280cf82fc0f189f23a3fd64da696d9922b6b5",
+                        "md5": "0aa8b4d8f19866f341090664dab8496c"
                     },
                     "required_dependencies": [
-                        "302973",
-                        "890405"
+                        "890405",
+                        "302973"
                     ],
-                    "size": 435899,
-                    "date_published": "2025-07-11T08:54:42.750Z"
+                    "size": 436018,
+                    "date_published": "2025-07-13T12:04:21.110Z"
                 }
             ]
         },
