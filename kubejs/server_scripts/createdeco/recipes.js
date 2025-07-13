@@ -48,6 +48,7 @@ const registerCreatedecoRecipes = (event) => {
 	event.remove({ id: 'createdeco:zinc_bars_overlay' })
 	event.remove({ id: 'createdeco:zinc_bars' })
 	event.remove({ id: 'createdeco:industrial_iron_block' })
+	event.remove({ id: 'createdeco:netherite_ingot' })
 	event.remove({ id: 'gtceu:assembler/bricks' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/tin_alloy' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/brass' })
