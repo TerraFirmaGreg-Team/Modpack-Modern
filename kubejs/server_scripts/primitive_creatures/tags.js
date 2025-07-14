@@ -3,11 +3,11 @@
 function registerPrimitiveCreaturesItemTags(event) {
 	const DISABLED_ITEMS = [
 		// idol fragment (combine to make a terrible idol)
-		'kaolinclayze:tt_5',
+		'primitive_creatures:tt_5',
 		// the terrible idol (spawns illager herobrine)
-		'kaolinclayze:kopo',
+		'primitive_creatures:kopo',
 		// the friendly idol (spawns an allay)
-		'kaolinclayze:jjj',
+		'primitive_creatures:jjj',
 	]
 
 	DISABLED_ITEMS.forEach(item => {
