@@ -81,6 +81,10 @@ const registerGTCEuMaterialModification = (event) => {
 	/* TFC Проперти для материалов */
 
 	// TFC_PROPERTY = (forging temp, welding temp, melt temp, material, tier, percent of material)
+	// OR			= (forging temp, welding temp, melt temp, tier)
+	// 
+	// If registering a new material that you want to melt into a liquid in a vessel etc,
+	// make sure you add it to registerGTCEUMetals()!
 
 	GTMaterials.Copper.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(648, 864, 1080, 1));
 	GTMaterials.BismuthBronze.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(591, 788, 985, 2));
@@ -177,6 +181,7 @@ const registerGTCEuMaterialModification = (event) => {
 	//        /* Имеют двойные слитки */
 	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR);
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Lead.addFlags(GENERATE_DOUBLE_INGOTS);
 	//
 	//        /* Другое */
 
