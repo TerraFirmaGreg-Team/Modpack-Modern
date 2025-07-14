@@ -10,6 +10,8 @@
 - Fixed Steel engine crafting by using the GT Rotor (#1290) @TomPlop
 - Change Electrical Greenhouse to not consome the input but lower the seed output @TomPlop
 - Fixed the Autoclave recipe to make Rose Quartz at MV @TomPlop
+- Fixed bug with Extruder Mold crafting (#1298) @BlueBoat29
+- Fixed texture issues found on some of the Extruder Mold textures @BlueBoat29
 - Added default GUI Scale (#1313) @Redeix
 
 ## [0.10.0] - 13.07.2025
