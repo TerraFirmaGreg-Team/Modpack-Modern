@@ -1,5 +1,21 @@
 // priority: 0
 
+//#region Mixer Recipes
+/**
+ * Function for generating gtceu mixer recipes.
+ * Adding a circuit is optional.
+ *
+ * @param {*} event 
+ * @param {string} input -Item
+ * @param {string} fluid_input -Fluid
+ * @param {string} output -Item
+ * @param {number} circuit -0-32
+ * @param {string} fluid_output -Fluid
+ * @param {number} duration -Ticks
+ * @param {number} EUt -GTValues.VA[]
+ * @param {number} rpm -Depreciated
+ * @param {string} id -Recipe ID
+ */
 const generateMixerRecipe = (event, input, fluid_input, output, circuit, fluid_output, duration, EUt, rpm, id) => {
 	const recipe = event.recipes.gtceu.mixer(id)
 		.itemInputs(input)
@@ -9,11 +25,26 @@ const generateMixerRecipe = (event, input, fluid_input, output, circuit, fluid_o
 		.duration(duration)
 		.EUt(EUt)
 
+	/**
+	 * Applies if circuit param is not empty
+	 */
 	if (circuit != null) {
 		recipe.circuit(circuit)
 	}
 }
+//#endregion
 
+//#region Cutter Recipes
+/**
+ * Function for generating gtceu cutter recipes.
+ *
+ * @param {*} event 
+ * @param {string} input -Item
+ * @param {string} output -Item
+ * @param {number} duration -Ticks
+ * @param {number} EUt -GTValues.VA[]
+ * @param {string} id -Recipe ID
+ */
 const generateCutterRecipe = (event, input, output, duration, EUt, id) => {
 
 	event.recipes.gtceu.cutter(`tfg:${id}`)
@@ -22,10 +53,23 @@ const generateCutterRecipe = (event, input, output, duration, EUt, id) => {
 		.duration(duration)
 		.EUt(EUt)
 }
+//#endregion
 
+//#region Green House
+/**
+ * Function for generating greenhouse recipes.
+ *
+ * @param {*} event 
+ * @param {string} input -Item
+ * @param {number} fluid_amount -mB
+ * @param {string} output -Item
+ * @param {string} id -Recipe ID
+ * @param {string} dimension -Dimension ID
+ * @param {number} fertiliser_count
+ */
 const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimension, fertiliser_count) => {
 
-	// Без удобрения
+	// Без удобрения (Without fertilizer)
 	let r = event.recipes.gtceu.greenhouse(id)
 		.notConsumable(input)
 		.circuit(1)
@@ -39,7 +83,7 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimens
 	if (dimension != null)
 		r.dimension(dimension)
 
-	// С удобрением
+	// С удобрением (With fertilizer)
 	r = event.recipes.gtceu.greenhouse(`${id}_fertilized`)
 		.notConsumable(input)
 		.itemInputs(Item.of('gtceu:fertilizer', fertiliser_count))
@@ -54,7 +98,16 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimens
 	if (dimension != null)
 		r.dimension(dimension)
 }
+//#endregion
 
+//#region Filling NBT
+/**
+ * Function to get fluid filling NBT.
+ *
+ * @param {string} material -Fluid
+ * @param {number} amount -mB
+ * @returns {{ tank: { FluidName: string; Amount: number; }; }} 
+ */
 const getFillingNBT = (material, amount) => {
 	return {
 		tank: {
@@ -63,7 +116,15 @@ const getFillingNBT = (material, amount) => {
 		}
 	}
 }
+//#endregion
 
+//#region Plated Blocks
+/**
+ * Function for generating plated block recipes.
+ *
+ * @param {*} event 
+ * @param {GTMaterials} material 
+ */
 function generatePlatedBlockRecipe(event, material) {
 	// firmaciv plated blocks don't have this property
 	let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
@@ -169,9 +230,50 @@ function generatePlatedBlockRecipe(event, material) {
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
 }
+//#endregion
 
+//#region forEachMaterial
+/**
+ * Function for iterating through registered materials
+ * {@link https://github.com/GregTechCEu/GregTech-Modern/blob/1.20.1/src/main/java/com/gregtechceu/gtceu/api/data/chemical/material/Material.java}
+ *
+ * @param {GTCEuAPI.materialManager.getRegisteredMaterials} iterator -Material
+ */
 function forEachMaterial(iterator) {
 	for (var material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
 		iterator(material)
 	}
 }
+//#endregion
+
+//#region Add Circuit
+/**
+ * Function for adding circuit numbers for existing recipes
+ * 
+ * Constants {@link global.ADD_CIRCUIT}
+ *
+ * @param {*} event 
+ * @param {string} recipeId -Recipe ID
+ * @param {number} circuitNumber -0-32
+ */
+function addCircuitToRecipe(event, recipeId, circuitNumber) {
+
+	event.findRecipes({ id: recipeId }).forEach(recipe => {
+			const inputs = recipe.json.get("inputs");
+			const itemArray = inputs.has("item") ? Java.from(inputs.get("item")) : [];
+
+			itemArray.push({
+				content: {
+					type: "gtceu:circuit",
+					configuration: circuitNumber
+				},
+				chance: 0,
+				maxChance: 10000,
+				tierChanceBoost: 0
+			});
+
+			inputs.add("item", itemArray);
+			recipe.json.add("inputs", inputs);
+		});
+}
+//#endregion
