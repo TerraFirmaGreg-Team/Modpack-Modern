@@ -243,13 +243,13 @@
 		#.
 		#Fine tune the kinetic stats of individual components
 		[kinetics.stressValues.v2]
-			large_water_wheel = 8.0
-			windmill_bearing = 128.0
+			large_water_wheel = 16.0
+			windmill_bearing = 32.0
 			hand_crank = 0.25
 			creative_motor = 2097152.0
-			water_wheel = 1.0
-			copper_valve_handle = 0.25
-			steam_engine = 256.0
+			water_wheel = 4.0
+			copper_valve_handle = 2.0
+			steam_engine = 16.0
 
 			#.
 			#.
