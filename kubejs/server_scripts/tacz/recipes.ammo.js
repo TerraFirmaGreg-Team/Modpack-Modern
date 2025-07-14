@@ -54,6 +54,13 @@ function registerTACZAmmoRecipes(event){
 		F: '#forge:tools/saws'
 		
 	}).id('tfg_tacz:45_70_bullets');
+
+	event.recipes.gtceu.assembler('tfg_tacz:45_70_bullets_lv')
+		.itemInputs('4x #forge:nuggets/lead','#forge:ingots/brass', '#forge:dusts/gunpowder')
+		.itemOutputs(Item.of('tacz:ammo', 4,
+					'{AmmoId:"tacz:45_70"}'))
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20)
 	
 	//Clockwork era
 	event.recipes.gtceu.assembler('tfg_tacz:rb_small')
