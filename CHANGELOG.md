@@ -5,6 +5,11 @@
 - Fixed yeast food processor conflict (#1310) @Redeix
 - Fixed seed oil voiding in barrels (#1310) @Redeix
 - Fixed inconsistent item sizes for sunflower_product and rapeseed_product (#1310) @Redeix
+- Fixed Radiator Fan uncraftable recipe #1302 @TomPlop
+- Fixed Fluid Solidifier Recipe Conflict for Snow #1295 @TomPlop
+- Fixed Steel engine crafting by using the GT Rotor #1290 @TomPlop
+- Change Electrical Greenhouse to not consome the input but lower the seed output @TomPlop
+- Fixed the Autoclave recipe to make Rose Quartz at MV @TomPlop
 
 ## [0.10.0] - 13.07.2025
 - [!WARNING] If you're upgrading your world from 0.9 to 0.10, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.9-to-0.10). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
