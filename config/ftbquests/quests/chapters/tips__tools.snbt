@@ -568,26 +568,15 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"This is a guide on how to automatically route &lall&r your Hot Ingots to your Chemical Bath, while keeping everything automated in tip-top shape."
-				""
-				"The cheap way would be to use filters, and manually add Hot Ingots one by one... which is so boring! Let's try the fun option."
-				""
-				"Install an &aItem Tag Filter&r Cover on the side of your &3Chemical Bath&r, open it and set it to whitelist \"&e&lhot_ingots&r\"."
-				""
-				"From here, you can route with &9any logistics system&r of your choice."
+				"{quests.high_voltage.250_iq.desc.1}"
 				"{@pagebreak}"
-				"Connect the output of your &3EBF(s)&r to the input of your &3Chemical Bath&r and the output dump (Chest or Crate)."
-				"You can also have a &dRestrictive Pipe&r in front of the output dump to ensure the Chemical Bath will be prioritized."
-				""
-				"&l&9Note:&r If you wish to know more tags for more automation setups, they will display if you press Shift when hovering over an item. For instance, an item tagged with &e&o#forge:plates/copper&r would be filtered as &e&lplates/copper&r."
-				""
-				"&9Other Note:&r The Item Tag Filter partially supports &dregex&r. Hover over the info icon for more information."
+				"{quests.high_voltage.250_iq.desc.2}"
 			]
 			icon: "gtceu:item_tag_filter"
 			id: "7C1FD81C5DCFB74E"
 			shape: "square"
 			size: 1.0d
-			subtitle: "Stop burning your darn hands!"
+			subtitle: "{quests.high_voltage.250_iq.subtitle}"
 			tasks: [
 				{
 					id: "34DEDF3B7F0DB3BC"
@@ -600,7 +589,7 @@
 					type: "item"
 				}
 			]
-			title: "250IQ"
+			title: "{quests.high_voltage.250_iq.title}"
 			x: 10.0d
 			y: 9.0d
 		}

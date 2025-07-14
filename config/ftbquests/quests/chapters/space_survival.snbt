@@ -145,6 +145,12 @@
 			x: -5.5d
 			y: -5.5d
 		}
+		{
+			id: "52ABE7722ABB3281"
+			linked_quest: "0585527D1854628B"
+			x: -2.5d
+			y: 1.0d
+		}
 	]
 	quests: [
 		{
@@ -275,23 +281,6 @@
 			title: "{quests.space_survival.chorus.title}"
 			x: -7.0d
 			y: -3.0d
-		}
-		{
-			dependencies: [
-				"33374462FF07BC75"
-				"3FBDC8552F7D8008"
-			]
-			dependency_requirement: "one_completed"
-			description: ["&6For each travel you will need Rocket Fuel&r, it seems complicated and it is quite a long process but you can make Rocket Fuel from &bChlorine&r, &bMethane&r, &bNitrogen&r, &bOxygen&r and &bWater&r. Nothing too bad, also if you already have your &5Large Chemical Reactor&r you could unlock some bypass.\\n\\n&7We advise you to use EMI Recipe Tree to have an easier time understanding each step. Simply click on the small icon with 4 squares on the right of the crafting recipe.&r"]
-			id: "60D903E9FA91DB42"
-			subtitle: "Easier than you think"
-			tasks: [{
-				id: "6A00144D5C0E9FA8"
-				item: "gtceu:rocket_fuel_bucket"
-				type: "item"
-			}]
-			x: -7.0d
-			y: -5.5d
 		}
 		{
 			dependencies: ["00A2566109144D7F"]
@@ -517,64 +506,21 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["5826EC76931359B8"]
-			description: [
-				"{quests.gregtech_energy.large_solar.desc.1}"
-				"{@pagebreak}"
-				"{quests.gregtech_energy.large_solar.desc.2}"
+			dependencies: [
+				"3FBDC8552F7D8008"
+				"33374462FF07BC75"
 			]
-			icon: "gtceu:large_solar_panel"
-			id: "0BBD6807505AA96E"
-			subtitle: "{quests.gregtech_energy.large_solar.subtitle}"
-			tasks: [
-				{
-					id: "08F8A202DEFBD791"
-					item: "gtceu:large_solar_panel"
-					type: "item"
-				}
-				{
-					id: "33009033269EAD48"
-					item: "gtceu:lv_input_bus"
-					type: "item"
-				}
-				{
-					id: "3F0202755438BE30"
-					item: "gtceu:auto_maintenance_hatch"
-					type: "item"
-				}
-				{
-					id: "76E075BC64697885"
-					item: "gtceu:ev_energy_output_hatch"
-					type: "item"
-				}
-				{
-					count: 54L
-					id: "2D09546682F6DD20"
-					item: { Count: 32, id: "tfg:casings/machine_casing_iron_desh" }
-					type: "item"
-				}
-				{
-					count: 24L
-					id: "7F1A78AB02673FC8"
-					item: { Count: 24, id: "tfg:casings/machine_casing_red_solar_panel" }
-					type: "item"
-				}
-				{
-					count: 20L
-					id: "13DB8D7072DE7BEA"
-					item: { Count: 20, id: "ad_astra:iron_plateblock" }
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "1D6554EA7A76178F"
-					item: { Count: 16, id: "gtceu:cleanroom_glass" }
-					type: "item"
-				}
-			]
-			title: "{quests.gregtech_energy.large_solar.title}"
-			x: -2.5d
-			y: 1.0d
+			dependency_requirement: "one_completed"
+			description: ["&6For each travel you will need Rocket Fuel&r, it seems complicated and it is quite a long process but you can make Rocket Fuel from &bChlorine&r, &bMethane&r, &bNitrogen&r, &bOxygen&r and &bWater&r. Nothing too bad, also if you already have your &5Large Chemical Reactor&r you could unlock some bypass.\\n\\n&7We advise you to use EMI Recipe Tree to have an easier time understanding each step. Simply click on the small icon with 4 squares on the right of the crafting recipe.&r"]
+			id: "0B80972F50E08B8D"
+			subtitle: "Easier than you think"
+			tasks: [{
+				id: "5FBF567FFC837BFA"
+				item: "gtceu:rocket_fuel_bucket"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.5d
 		}
 	]
 	subtitle: ["{quests.space_survival.subtitle}"]
