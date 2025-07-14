@@ -126,6 +126,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Redstone.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(240, 320, 460, 1));
 	GTMaterials.RedAlloy.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(570, 650, 740, 2));
 	GTMaterials.TinAlloy.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1000, 1100, 1250, 3));
+	GTMaterials.Lead.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(170, 250, 330, 2));
 
 
 	GTMaterials.Gold.addFlags(GENERATE_BELL);
