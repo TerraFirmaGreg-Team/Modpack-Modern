@@ -15,6 +15,7 @@
 - Added default GUI Scale (#1313) @Redeix
 - Added Kelp and Seaweed drying to electric oven (#1315) @BlueBoat29
 - Added Lead Nugget anvil recipe and 45-70 bullet assembler recipe @BlueBoat29
+- Fixed AFC wood stomping barrel recipes @BlueBoat29
 
 
 ## [0.10.0] - 13.07.2025
