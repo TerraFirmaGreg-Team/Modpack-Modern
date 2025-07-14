@@ -22,6 +22,8 @@ function registerTACZAmmoRecipes(event){
 		.EUt(GTValues.VA[GTValues.MV])
 		
 	//Additives
+	event.recipes.tfc.anvil('6x #forge:nuggets/lead', '#forge:ingots/lead', ['punch_last', 'hit_second_last', 'punch_third_last'])
+		.tier(2).id('tfg:anvil/lead_nugget')
 	event.recipes.gtceu.chemical_reactor('tfg_tacz:nitrocellulose_from_wood')
 		.itemInputs('gtceu:thermochemically_treated_hardwood_dust')
 		.inputFluids(Fluid.of('gtceu:nitric_acid', 200), Fluid.of('gtceu:sulfuric_acid', 400), Fluid.of('minecraft:water', 600))
