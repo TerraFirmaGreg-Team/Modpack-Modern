@@ -64,6 +64,20 @@ const registerAFCRecipes = (event) => {
 		event.remove({ id: `afc:crafting/wood/${wood}_button` })
 
 		generateCutterRecipe(event, `afc:wood/planks/${wood}_pressure_plate`, `6x afc:wood/planks/${wood}_button`, 50, 2, `${wood}_button`)
+
+		//Stomping Barrel
+		event.remove({ id: `afc:crafting/wood/${wood}_stomping_barrel`})
+		
+		event.shaped(`afc:wood/stomping_barrel/${wood}`, [
+			'ABA',
+			'AAA',
+			'BBB'
+		], {
+			A: `afc:wood/lumber/${wood}`,
+			B: 'tfc:glue'
+			
+		}).id(`afc:crafting/wood/${wood}_stomping_barrel`)
+		
 	})
 
 	// #endregion
