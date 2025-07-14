@@ -1253,25 +1253,10 @@ const registerGTCEURecipes = (event) => {
 
 	//#region Circuit Fixes
 
-	//Adds circuit #1 to the tetrafluoroethylene_from_chloroform recipe
-		event.findRecipes({ id: "gtceu:chemical_reactor/tetrafluoroethylene_from_chloroform" }).forEach(recipe => {
-			const inputs = recipe.json.get("inputs");
-			const itemArray = inputs.has("item") ? Java.from(inputs.get("item")) : [];
-
-			itemArray.push({
-				content: {
-					type: "gtceu:circuit",
-					configuration: 1
-				},
-				chance: 0,
-				maxChance: 10000,
-				tierChanceBoost: 0
-			});
-
-			inputs.add("item", itemArray);
-			recipe.json.add("inputs", inputs);
-		});
-
+	global.ADD_CIRCUIT.forEach(item => {
+		addCircuitToRecipe(event, item.recipeId, item.circuitNumber)
+	})
+	
 	//#endregion
 
 	//#region Chemical Reaction for Solar Panel
