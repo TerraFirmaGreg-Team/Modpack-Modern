@@ -85,7 +85,7 @@ config/stellarcore_stitcher_cache_vanilla.dat
 bansoukou
 .curseclient
 .sl_password
-options.txt
+./options.txt
 patchouli_data.json
 usernamecache.json
 usercache.json
@@ -114,3 +114,4 @@ icon.png
 .pakku/server-overrides/mods
 .pakku/server-overrides/user_jvm_args.txt
 
+/tacz/tacz_default_gun

@@ -1,7 +1,9 @@
 // priority: 0
 
+//#region Disabled Items
+/** @global */
 global.GTCEU_DISABLED_ITEMS = [
-    // Пыль пшеницы
+    // Пыль пшеницы (Wheat Dusts)
     'gtceu:wheat_dust',
     'gtceu:small_wheat_dust',
     'gtceu:tiny_wheat_dust',
@@ -22,14 +24,14 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:lp_steam_solar_boiler',
     'gtceu:charcoal_pile_igniter',
 
-    // Примитивная помпа
+    // Примитивная помпа (Primitive Pump)
     'gtceu:infinite_water_cover',
     'gtceu:ender_fluid_link_cover',
     'gtceu:pump_deck', 
     'gtceu:pump_hatch', 
     'gtceu:primitive_pump',
 
-    // Другое
+    // Другое (Other)
     'gtceu:flint_mortar',
     'gtceu:flint_knife',
     'gtceu:firebrick',
@@ -175,7 +177,11 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:cracked_marble_bricks',
     'gtceu:mossy_marble_bricks'
 ];
+//#endregion
 
+
+//#region Hidden Items
+/** @global */
 global.GTCEU_HIDED_ITEMS = [
     'gtceu:netherrack_dust', 
     'gtceu:small_netherrack_dust', 
@@ -183,7 +189,10 @@ global.GTCEU_HIDED_ITEMS = [
     
     'gtceu:sus_record'
 ];
+//#endregion
 
+//#region Armor
+/** @global */
 global.GTCEU_ARMORS = [
 	'gtceu:hazmat_chestpiece',
 	'gtceu:hazmat_leggings',
@@ -201,7 +210,10 @@ global.GTCEU_ARMORS = [
 	'gtceu:quarktech_helmet',
 	'gtceu:advanced_quarktech_chestplate'
 ];
+//#endregion
 
+//#region Extruder Molds
+/** @global */
 global.TFG_EXTRUDER_MOLDS = [
     'tfg:mining_hammer_head_extruder_mold',
     'tfg:sword_head_extruder_mold',
@@ -225,16 +237,25 @@ global.TFG_EXTRUDER_MOLDS = [
     'tfg:whisk_extruder_mold',
     'tfg:screwdriver_tip_extruder_mold',
     'tfg:wrench_tip_extruder_mold',
-    'tfg:wire_cutter_head_extruder_mold'
+    'tfg:wire_cutter_head_extruder_mold',
+	'tfg:small_casing_extruder_mold',
+	'tfg:shell_casing_extruder_mold',
+	'tfg:large_casing_extruder_mold'
 ];
+//#endregion
 
+//#region Casting Molds
+/** @global */
 global.TFG_CASTING_MOLDS = [
     'tfg:lamp_casting_mold',
     'tfg:trapdoor_casting_mold',
     'tfg:chain_casting_mold',
     'tfg:bell_casting_mold'
 ];
+//#endregion
 
+//#region Ore Bearing Stone
+/** @global */
 global.ORE_BEARING_STONES = [
     'gabbro', 
     'shale', 
@@ -268,4 +289,13 @@ global.ORE_BEARING_STONES = [
     'mercury_stone',
     'glacio_stone'
 ];
+//#endregion
+
+//#region Add Circuits
+/** @global */
+global.ADD_CIRCUIT = [
+    {recipeId: 'gtceu:chemical_reactor/tetrafluoroethylene_from_chloroform', circuitNumber: 1},
+    {recipeId: 'gtceu:chemical_reactor/hydrofluoric_acid_from_elements', circuitNumber: 2},
+];
+//#endregion
 

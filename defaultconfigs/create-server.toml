@@ -243,13 +243,13 @@
 		#.
 		#Fine tune the kinetic stats of individual components
 		[kinetics.stressValues.v2]
-			large_water_wheel = 8.0
-			windmill_bearing = 128.0
+			large_water_wheel = 16.0
+			windmill_bearing = 32.0
 			hand_crank = 0.25
 			creative_motor = 2097152.0
-			water_wheel = 1.0
-			copper_valve_handle = 0.25
-			steam_engine = 256.0
+			water_wheel = 4.0
+			copper_valve_handle = 2.0
+			steam_engine = 16.0
 
 			#.
 			#.
@@ -264,7 +264,7 @@
 				clockwork_bearing = 0.5
 				cuckoo_clock = 0.125
 				speedometer = 0.0
-				copper_backtank = 0.5
+				copper_backtank = 0.25
 				mechanical_saw = 65535.0
 				flywheel = 0.0
 				encased_chain_drive = 0.0
@@ -275,10 +275,10 @@
 				crushing_wheel = 65535.0
 				mechanical_mixer = 65535.0
 				gantry_shaft = 0.0
-				rope_pulley = 0.5
+				rope_pulley = 0.25
 				rotation_speed_controller = 0.0
-				mechanical_arm = 0.5
-				netherite_backtank = 0.5
+				mechanical_arm = 0.25
+				netherite_backtank = 0.25
 				andesite_encased_shaft = 65535.0
 				mechanical_press = 65535.0
 				large_cogwheel = 65535.0
@@ -290,7 +290,7 @@
 				shaft = 65535.0
 				brass_encased_shaft = 65535.0
 				gearshift = 0.0
-				turntable = 0.5
+				turntable = 0.25
 				sticky_mechanical_piston = 0.5
 				sequenced_gearshift = 0.0
 				weighted_ejector = 0.25
@@ -299,8 +299,8 @@
 				belt = 65535.0
 				brass_encased_cogwheel = 65535.0
 				gearbox = 0.0
-				hose_pulley = 0.5
-				elevator_pulley = 0.5
+				hose_pulley = 0.25
+				elevator_pulley = 0.25
 				mechanical_crafter = 0.125
 				chain_conveyor = 0.0
 

@@ -343,6 +343,7 @@ const registerTFGBlockTags = (event) => {
 	// #endregion
 }
 
+//#region Fluids
 const registerTFGFluidTags = (event) => {
 
 	event.add('tfc:usable_in_pot', 'tfg:latex')
@@ -367,10 +368,13 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfg:clean_water', 'tfc:river_water')
 	event.add('tfg:clean_water', 'tfc:spring_water')
 
+	event.add('tfc:usable_in_barrel', 'gtceu:seed_oil')
+
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
 	})
 }
+//#endregion
 
 
 const registerTFGBiomeTags = (event) => {

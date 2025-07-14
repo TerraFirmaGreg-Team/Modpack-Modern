@@ -1066,5 +1066,23 @@ const registerMinecraftRecipes = (event) => {
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	// Gunpowder
+
+	event.shapeless('4x minecraft:gunpowder',
+		['#forge:tools/mortars', '2x #forge:dusts/saltpeter', '#forge:dusts/sulfur', '3x #forge:dusts/charcoal'])
+		.id('tfg:shapeless/gunpowder_charcoal')
+
+	event.shapeless('4x minecraft:gunpowder',
+		['#forge:tools/mortars', '2x #forge:dusts/saltpeter', '#forge:dusts/sulfur', '3x #forge:dusts/coal'])
+		.id('tfg:shapeless/gunpowder_coal')
+
+	event.shapeless('4x minecraft:gunpowder',
+		['#forge:tools/mortars', '2x #forge:dusts/saltpeter', '#forge:dusts/sulfur', '3x #forge:dusts/carbon'])
+		.id('tfg:shapeless/gunpowder_carbon')
+
+	event.shapeless('2x minecraft:gunpowder',
+		['#forge:tools/mortars', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/sulfur', 'tfc:powder/charcoal', 'tfc:powder/charcoal', 'tfc:powder/charcoal'])
+		.id('tfg:shapeless/gunpowder_tfc_style')
+
 	event.shapeless('8x minecraft:bone_meal', ['#forge:tools/mortars', 'minecraft:skeleton_skull'])
 }

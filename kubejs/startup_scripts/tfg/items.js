@@ -295,4 +295,22 @@ const registerTFGItems = (event) => {
 	event.create('tfg:titanium_hull_reinforcement')
 		.translationKey('item.tfg.titanium_hull_reinforcement')
 	//#endregion
+	
+	//Tacz Helper Region
+	event.create('tfg:flintlock_mechanism')
+		.translationKey('item.tfg.flintlock_mechanism')
+	event.create('tfg:advanced_clockwork_mechanism')
+		.translationKey('item.tfg.advanced_clockwork_mechanism')
+	event.create('tfg:certus_mechanism')
+		.translationKey('item.tfg.certus_mechanism')
+
+	event.create('tfg:small_bullet_casing')
+		.translationKey('tfg:small_bullet_casing')
+	event.create('tfg:shell_bullet_casing')
+		.translationKey('tfg:shell_bullet_casing')
+	event.create('tfg:large_bullet_casing')
+		.translationKey('tfg:large_bullet_casing')
+	event.create('tfg:nitrocellulose')
+		.translationKey('tfg:nitrocellulose')
+	//endregion
 }

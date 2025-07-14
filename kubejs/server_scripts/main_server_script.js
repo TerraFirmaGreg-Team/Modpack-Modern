@@ -43,11 +43,12 @@ ServerEvents.tags('item', event => {
 	registerRnrItemTags(event)
 	registerSophisticatedBackpacksItemTags(event)
 	registerSpeciesItemTags(event)
+	registerTACZItemTags(event)
 	registerTFCAmbientalItemTags(event)
 	registerTFCItemTags(event)
 	registerTFCTextileItemTags(event)
 	registerTFGItemTags(event)
-  registerTFCLunchboxItemTags(event)
+    registerTFCLunchboxItemTags(event)
 	registerVintageImprovementsItemTags(event)
 })
 
@@ -244,6 +245,7 @@ ServerEvents.recipes(event => {
 	registerSophisticatedBackpacksRecipes(event)
 	registerSimplylightRecipes(event)
 	registerSpeciesRecipes(event)
+	registerTACZRecipes(event)
 	registerTFCRecipes(event)
 	registerTFCBetterBFRecipes(event)
 	registerTFCLunchBoxRecipes(event)
@@ -254,4 +256,16 @@ ServerEvents.recipes(event => {
 	registerTreeTapRecipes(event)
 	registerVintageImprovementsRecipes(event)
 	registerWaterFlasksRecipes(event)
+})
+
+TaCZServerEvents.gunIndexLoad((event) => {
+	gunIndexLogic(event)
+})
+
+TaCZServerEvents.ammoIndexLoad((event) => {
+	ammoIndexLogic(event)
+})
+
+TaCZServerEvents.attachmentIndexLoad((event) => {
+	attachmentIndexLogic(event)
 })

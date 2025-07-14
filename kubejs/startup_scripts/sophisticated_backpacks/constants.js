@@ -21,6 +21,8 @@ global.SOPHISTICATED_BACKPACKS_DISABLED_ITEMS = [
     'sophisticatedbackpacks:anvil_upgrade',
     'sophisticatedbackpacks:copper_backpack',
     'sophisticatedbackpacks:infinity_upgrade',
-    'sophisticatedbackpacks:survival_infinity_upgrade'
+    'sophisticatedbackpacks:survival_infinity_upgrade',
+    'sophisticatedbackpacks:alchemy_upgrade',
+    'sophisticatedbackpacks:advanced_alchemy_upgrade'
 ];
 

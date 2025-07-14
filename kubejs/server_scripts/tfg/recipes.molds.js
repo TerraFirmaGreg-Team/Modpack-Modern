@@ -263,9 +263,9 @@ function registerTFGMoldRecipes(event) {
 	})
 
 	event.shaped('tfg:wire_cutter_head_extruder_mold', [
-		'   ',
 		'hS ',
-		'f  '
+		'   ',
+		' f '
 	], {
 		S: 'gtceu:empty_mold',
 		f: '#forge:tools/files',

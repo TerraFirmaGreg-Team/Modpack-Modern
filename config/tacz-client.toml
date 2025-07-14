@@ -1,0 +1,59 @@
+
+[key]
+	#True if you want to hold the right mouse button to aim
+	HoldToAim = true
+	#True if you want to hold the crawl button to crawl
+	HoldToCrawl = true
+	#Try to reload automatically when the gun is empty
+	AutoReload = false
+
+[render]
+	#Whether or not apply fadeout effect on the laser beam. Close this may improve laser performance under some shaders.
+	EnableLaserFadeOut = true
+	#How far to display the lod model, 0 means always display
+	#Range: > 0
+	GunLodRenderDistance = 0
+	#The existence time of bullet hole particles, in tick
+	#Range: > 0
+	BulletHoleParticleLife = 400
+	#The threshold for fading out when rendering bullet hole particles
+	#Range: 0.0 ~ 1.0
+	BulletHoleParticleFadeThreshold = 0.98
+	#The crosshair when holding a gun
+	#Allowed Values: EMPTY, DOT_1, CIRCLE_1, CIRCLE_2, CIRCLE_3, CROSS_1, CROSS_2, CROSS_3, CROSS_4, CROSS_5, CROSS_6, LINE_1, LINE_2, LINE_3, SQUARE_1, SQUARE_2, SQUARE_3, SQUARE_4, SQUARE_5, SQUARE_6, TRIDENT_1, TRIDENT_2
+	CrosshairType = "DOT_1"
+	#The starting position of the hit marker
+	#Range: -1024.0 ~ 1024.0
+	HitMarketStartPosition = 4.0
+	#Whether or not to display the head shot's hitbox
+	HeadShotDebugHitbox = false
+	#Whether or not to display the gun's HUD
+	GunHUDEnable = true
+	#Whether or not to display the kill amount
+	KillAmountEnable = true
+	#The duration of the kill amount, in second
+	#Range: 0.0 ~ 1.7976931348623157E308
+	KillAmountDurationSecond = 3.0
+	#The farthest render distance of the target, including minecarts type
+	#Range: > 0
+	TargetRenderDistance = 128
+	#Whether or not to render first person bullet trail
+	FirstPersonBulletTracerEnable = true
+	#Disable the interact hud text in center of the screen
+	DisableInteractHudText = false
+	#Max time the damage counter will reset
+	#Range: > 10
+	DamageCounterResetTime = 2000
+	#Disable the fov effect from the movement speed attribute while holding a gun
+	DisableMovementAttributeFov = true
+	#Enable the display of the TACZ ID in the tooltip when Advanced Tooltip is enabled
+	EnableTaczIdInTooltip = true
+
+[Zoom]
+	#Screen distance coefficient for zoom, using MDV standard, default is MDV133
+	#Range: 0.0 ~ 3.0
+	ScreenDistanceCoefficient = 1.33
+	#Zoom sensitivity is multiplied by this factor
+	#Range: 0.0 ~ 2.0
+	ZoomSensitivityBaseMultiplier = 1.0
+

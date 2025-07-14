@@ -42,6 +42,9 @@ const registerTFGItemSize = (event) => {
 	event.itemSize('tfg:fishing_net/tin_alloy', 'large', 'medium', 'tin_alloy_fishing_net')
 	event.itemSize('tfg:fishing_net/magnalium', 'large', 'medium', 'magnalium_fishing_net')
 
+	event.itemSize('tfg:rapeseed_product', 'small', 'light', 'rapeseed_product')
+	event.itemSize('tfg:sunflower_product', 'small', 'light', 'sunflower_product')
+
 }
 
 
@@ -154,6 +157,12 @@ const registerTFGFoodData = (event) => {
 		food.saturation(2.5)
 		food.protein(5)
 		food.decayModifier(2.25)
+	})
+
+	event.foodItem('tfg:food/ice_soup', food => {
+		food.hunger(1)
+		food.water(20)
+		food.decayModifier(0)
 	})
 }
 

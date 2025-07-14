@@ -25,6 +25,7 @@ const registerAdAstraRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:polyethylene', 144 * 16))
 		.itemOutputs('ad_astra:rocket_nose_cone')
 		.duration(1200)
+		.circuit(2)
 		.EUt(480)
 
 
@@ -40,6 +41,7 @@ const registerAdAstraRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:red_steel', 144))
 		.itemOutputs('9x #forge:dusts/rocket_alloy_t1')
 		.duration(580)
+		.circuit(2)
 		.EUt(480)
 
 	event.recipes.gtceu.chemical_bath('tfg:rocket_alloy_cool_down_water')
@@ -60,6 +62,7 @@ const registerAdAstraRecipes = (event) => {
 		.itemInputs('#forge:plates/rocket_alloy_t1', '#forge:double_plates/stainless_steel')
 		.itemOutputs('ad_astra:rocket_fin')
 		.duration(150)
+		.circuit(2)
 		.EUt(GTValues.VA[GTValues.HV])
 
 
@@ -73,6 +76,7 @@ const registerAdAstraRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:blue_steel', 144 * 8))
 		.itemOutputs('ad_astra:steel_engine')
 		.duration(600)
+		.circuit(2)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.assembler('ad_astra:assembler_tier_1_rocket')
@@ -86,6 +90,7 @@ const registerAdAstraRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:silicon', 144 * 16))
 		.itemOutputs('ad_astra:tier_1_rocket')
 		.duration(1200)
+		.circuit(2)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	//#endregion

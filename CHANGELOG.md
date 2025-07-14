@@ -1,14 +1,32 @@
 # Changelog
 
 ## [Unreleased]
+### Bug fixes
+- Fixed yeast food processor conflict (#1310) @Redeix
+- Fixed seed oil voiding in barrels (#1310) @Redeix
+- Fixed inconsistent item sizes for sunflower_product and rapeseed_product (#1310) @Redeix
+- Fixed Radiator Fan uncraftable recipe (#1302) @TomPlop
+- Fixed Fluid Solidifier Recipe Conflict for Snow (#1295) @TomPlop
+- Fixed Steel engine crafting by using the GT Rotor (#1290) @TomPlop
+- Change Electrical Greenhouse to not consome the input but lower the seed output @TomPlop
+- Fixed the Autoclave recipe to make Rose Quartz at MV @TomPlop
+- Fixed bug with Extruder Mold crafting (#1298) @BlueBoat29
+- Fixed texture issues found on some of the Extruder Mold textures @BlueBoat29
+- Added default GUI Scale (#1313) @Redeix
+- Added Kelp and Seaweed drying to electric oven (#1315) @BlueBoat29
+- Added Lead Nugget anvil recipe and 45-70 bullet assembler recipe @BlueBoat29
+- Fixed AFC wood stomping barrel recipes @BlueBoat29
+
+
+## [0.10.0] - 13.07.2025
 - [!WARNING] If you're upgrading your world from 0.9 to 0.10, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.9-to-0.10). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
 ### Major changes
 - Build a rocket and blast off to the moon, a new dimension! You can get started in mid-HV.
 - AE2 inscriber presses are now found on the moon instead of being craftable, and making various AE2 components is also significantly cheaper there. @TomPlop & @Pyritie
 - Significant ore changes: certus quartz, raw aluminium, ilmenite, and some other mid-lategame materials have been moved from the overworld to the moon. Check your field guide for more information. @TomPlop
-- A new system for interstellar item transport, made just for TerraFirmaGreg - new logistical problems to solve and automate. (Coming soon) @ofoxsmith
-- New machines to properly automate food, along with proper compatibility between machines and TFC's food system, so you can't turn rotten grains into fresh bread any more. The electric greenhouse now also always outputs fresh food. @ofoxsmith & @Redeix
-- New electric refrigerator with different tiers. You can craft the old one into this new one, but please take your food out of it before upgrading otherwise it will be lost! @ofoxsmith
+- A new system for interstellar item transport, made just for TerraFirmaGreg - new logistical problems to solve and automate. (Coming soon) @gustovafing
+- New machines to properly automate food, along with proper compatibility between machines and TFC's food system, so you can't turn rotten grains into fresh bread any more. The electric greenhouse now also always outputs fresh food. @gustovafing & @Redeix
+- New electric refrigerator with different tiers. You can craft the old one into this new one, but please take your food out of it before upgrading otherwise it will be lost! @gustovafing
 - Added many new advanced food items including freeze-dried fruit, calorie paste, and meal bags. @Redeix
 - Quest updates for all of the above @TomPlop @Redeix @Pyritie
 - Main UI overhaul and curseforge branding updated @Redeix
@@ -102,7 +120,7 @@
 - Added wine-related recipes to GregTech machines (#1111) @JeanRdS
 - Added optional quest for bacon because its JEI recipe isn't clear (#1122) @SpicyNoodle5
 - Anthracite now also superheats blaze burners @Pyritie
-- Changed LV chem reactor quest to work with any container of rubber instead of just a rubber bucket (#1116) @ofoxsmith
+- Changed LV chem reactor quest to work with any container of rubber instead of just a rubber bucket (#1116) @gustovafing
 - Added perfect overclock to the electric greenhouse so it scales better with the pyro oven @Pyritie
 - Electric greenhouse now accepts logs and leaf blocks inside it, so you can build a little tree if you want @Pyritie
 - Increased durability of the blue steel diving suit to match blue steel armor @Pyritie
