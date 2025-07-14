@@ -796,6 +796,11 @@ function registerTFGFoodRecipes(event) {
 	event.recipes.tfc.quern('gtceu:cocoa_dust', 'firmalife:food/roasted_cocoa_beans')
 		.id('tfg:quern/cocoa_dust');
 
+	event.recipes.tfc.pot(['firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings'],
+		Fluid.of('minecraft:water', 1000), 20, 10)
+		.itemOutput('tfg:food/ice_soup')
+		.id('tfg:pot/ice_soup')
+
 	//#endregion
 
 	//#region Heating recipes for new foods
