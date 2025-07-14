@@ -515,7 +515,16 @@ function registerTFGFoodRecipes(event) {
 		fluidInputs: [Fluid.of('gtceu:fermented_biomass', 40)],
 		itemOutputProvider: TFC.isp.of('tfg:food/calorie_paste').copyOldestFood().addTrait('tfg:freeze_dried'),
 	})
+
+	//Kelp
+	cookingRecipe("dried_kelp_a", "tfc:plant/winged_kelp", "tfc:food/dried_kelp")
+	cookingRecipe("dried_kelp_b", "tfc:plant/leafy_kelp", "tfc:food/dried_kelp")
+	cookingRecipe("dried_kelp_c", "tfc:plant/giant_kelp_flower", "tfc:food/dried_kelp")
 		
+	//Seaweed
+	cookingRecipe("dried_seaweed_a", "tfc:food/fresh_seaweed", "tfc:food/dried_seaweed")
+	cookingRecipe("dried_seaweed_b", "tfc:groundcover/seaweed", "tfc:food/dried_seaweed")
+	
 	// Vinegar
 	processorRecipe('vinegar_alcohol', 600, 32, {
 		circuit: 5,
