@@ -1083,4 +1083,6 @@ const registerMinecraftRecipes = (event) => {
 	event.shapeless('2x minecraft:gunpowder',
 		['#forge:tools/mortars', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/sulfur', 'tfc:powder/charcoal', 'tfc:powder/charcoal', 'tfc:powder/charcoal'])
 		.id('tfg:shapeless/gunpowder_tfc_style')
+
+	event.shapeless('8x minecraft:bone_meal', ['#forge:tools/mortars', 'minecraft:skeleton_skull'])
 }

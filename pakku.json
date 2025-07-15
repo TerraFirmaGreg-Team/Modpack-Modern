@@ -156,7 +156,7 @@
         "first-person-model": {
             "side": "CLIENT"
         },
-        "ftb-backups-2": {
+        "flickerfix": {
             "side": "CLIENT"
         },
         "no-report-button": {
@@ -213,6 +213,12 @@
         "entityculling": {
             "side": "CLIENT"
         },
+        "pick-up-notifier": {
+            "side": "CLIENT"
+        },
+        "smooth-boot-reloaded": {
+            "side": "CLIENT"
+        },
         "resourceful-config": {
             "side": "BOTH"
         },
@@ -238,9 +244,6 @@
             "side": "BOTH"
         },
         "particular-reforged": {
-            "side": "BOTH"
-        },
-        "pick-up-notifier": {
             "side": "BOTH"
         },
         "inventory-tweaks-refoxed": {
