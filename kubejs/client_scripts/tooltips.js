@@ -84,6 +84,11 @@ const registerTooltips = (event) =>
 			text.add(1, text.of('§79 x 5 x 9'))
 		})
 	})
+	global.AD_ASTRA_WOOD.forEach(wood => {
+		event.addAdvanced([`tfg:${wood.name}_support`], (item, advanced, text) => {
+			text.add(1, text.of('§79 x 5 x 9'))
+		})
+	})
 	event.addAdvanced(['tfg:light_concrete_support', 'tfg:dark_concrete_support', 'tfg:rebar_support'], (item, advanced, text) => {
 		text.add(1, text.of('§717 x 9 x 17'))
 	})

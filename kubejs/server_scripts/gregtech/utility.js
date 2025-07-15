@@ -60,14 +60,16 @@ const generateCutterRecipe = (event, input, output, duration, EUt, id) => {
  * Function for generating greenhouse recipes.
  *
  * @param {*} event 
- * @param {string} input -Item
- * @param {number} fluid_amount -mB
- * @param {string} output -Item
+ * @param {string} input -Item (Not consumed)
+ * @param {number} fluid_amount -mB (uses #tfg:clean_water)
+ * @param {string} output -Item (Chanced output uses input item)
  * @param {string} id -Recipe ID
  * @param {string} dimension -Dimension ID
  * @param {number} fertiliser_count
+ * @param {string} output_seconday -Item (Optional, if there should be a third output)
+ * @param {string} tier - GTValues.VA[] (Optional, defaults to LV)
  */
-const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimension, fertiliser_count) => {
+const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimension, fertiliser_count, output_secondary, tier) => {
 
 	// Без удобрения (Without fertilizer)
 	let r = event.recipes.gtceu.greenhouse(id)
@@ -78,10 +80,18 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimens
 		.chancedOutput(input, 750, 0)
 		.chancedOutput(input, 500, 0)
 		.duration(36000) // 30 mins
-		.EUt(GTValues.VA[GTValues.LV])
 
-	if (dimension != null)
+	if (dimension != null){
 		r.dimension(dimension)
+	}
+	if (output_secondary != null){
+		r.chancedOutput(output_secondary, 750, 0)
+	}
+	if (tier != null){
+		r.EUt(tier)
+	} else {
+		r.EUt(GTValues.VA[GTValues.LV])
+	}
 
 	// С удобрением (With fertilizer)
 	r = event.recipes.gtceu.greenhouse(`${id}_fertilized`)
@@ -93,10 +103,18 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimens
 		.chancedOutput(input, 4000, 0)
 		.chancedOutput(input, 3000, 0)
 		.duration(12000) // 10 mins
-		.EUt(GTValues.VA[GTValues.LV])
 
-	if (dimension != null)
+	if (dimension != null){
 		r.dimension(dimension)
+	}
+	if (output_secondary != null){
+		r.chancedOutput(output_secondary, 4000, 0)
+	}
+	if (tier != null){
+		r.EUt(tier)
+	} else {
+		r.EUt(GTValues.VA[GTValues.LV])
+	}
 }
 //#endregion
 
@@ -278,5 +296,178 @@ function addCircuitToRecipe(event, recipeId, circuitNumber) {
 			inputs.add("item", itemArray);
 			recipe.json.add("inputs", inputs);
 		});
+}
+//#endregion
+
+//#region Wood Builder
+
+/**
+ * Generates most basic wooden recipes. 
+ * 
+ * All parameters are optional. Name is used for the ID.
+ *
+ * @param {*} event 
+ * @param {string} name -Name of the wood.
+ * @param {string} lumber -ID for the lumber.
+ * @param {string} logs -Tag or ID for all the logs.
+ * @param {string} log -ID for the regular log.
+ * @param {string} stripped_log -ID for the stripped log.
+ * @param {string} plank -ID for planks.
+ * @param {string} stair -ID for stairs.
+ * @param {string} slab -ID for slabs.
+ * @param {string} door -ID for the door.
+ * @param {string} trapdoor -ID for the trapdoor.
+ * @param {string} fence -ID for the fence.
+ * @param {string} fence_gate -ID for the fence gate.
+ * @param {string} support -ID for the support.
+ * @param {string} pressure_plate -ID for the pressure plate.
+ * @param {string} button -ID for the button.
+ */
+function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair, slab, door, trapdoor, fence, fence_gate, support, pressure_plate, button) {
+
+	if (log && stripped_log && name) {
+		event.recipes.gtceu.lathe(`tfg:cutter/${name}_stripped_log_from_log`)
+			.itemInputs(log)
+			.itemOutputs(stripped_log)
+			.duration(50)
+			.EUt(GTValues.VA[GTValues.ULV])
+	}
+
+	if (logs && lumber && name) {
+		event.shapeless(`8x ${lumber}`, 
+			[logs, '#forge:tools/saws']
+		).id(`tfg:shapeless/${name}_lumber_from_log`)
+
+		generateCutterRecipe(event, logs, `16x ${lumber}`, 50, 7, `cutter_${name}_lumber_from_log`)
+	}
+
+	if (plank && lumber && name) {
+		event.shapeless(`4x ${lumber}`, 
+			[plank, '#forge:tools/saws']
+		).id(`tfg:shapeless/${name}_lumber_from_plank`)
+
+		generateCutterRecipe(event, plank, `4x ${lumber}`, 50, 7, `cutter_${name}_lumber_from_plank`)
+
+		event.shaped(plank, [
+			'AA',
+			'AA'
+		], {
+			A: lumber,
+		}).id(`tfg:shaped/${name}_plank_from_lumber`)
+	}
+
+	if (slab && lumber && name) {
+		event.shapeless(`2x ${lumber}`, 
+			[slab, '#forge:tools/saws']
+		).id(`tfg:shapeless/${name}_lumber_from_slab`)
+		
+		generateCutterRecipe(event, slab, `2x ${lumber}`, 50, 7, `cutter_${name}_lumber_from_slab`)
+	}
+
+	if (slab && plank && name) {
+		event.shaped(`6x ${slab}`, [
+			'AAA'
+		], {
+			A: plank,
+		}).id(`tfg:shaped/${name}_slab_from_plank`)
+	}
+
+	if (stair && lumber && name) {
+		event.shapeless(`3x ${lumber}`, 
+			[stair, '#forge:tools/saws']
+		).id(`tfg:shapeless/${name}_lumber_from_stair`)
+
+		generateCutterRecipe(event, stair, `3x ${lumber}`, 50, 7, `cutter_${name}_lumber_from_stair`)
+	}
+
+	if (stair && plank && name) {
+		event.shaped(`8x ${stair}`, [
+			'A  ',
+			'AA ',
+			'AAA'
+		], {
+			A: plank,
+		}).id(`tfg:shaped/${name}_stair_from_plank`)
+	}
+	
+	if (door && lumber && name) {
+		event.shaped(`2x ${door}`, [
+			'AA',
+			'AA',
+			'AA'
+		], {
+			A: lumber,
+		}).id(`tfg:shaped/${name}_door_from_lumber`)
+	}
+	
+	if (trapdoor && lumber && name) {
+		event.shaped(`3x ${trapdoor}`, [
+			'AAA',
+			'AAA'
+		], {
+			A: lumber,
+		}).id(`tfg:shaped/${name}_trapdoor_from_lumber_and_plank`)
+	}
+	
+	if (fence && lumber && plank && name) {
+		event.shaped(`8x ${fence}`, [
+			'ABA',
+			'ABA'
+		], {
+			A: lumber,
+			B: plank,
+		}).id(`tfg:shaped/${name}_fence_from_lumber_and_plank`)
+	}
+	
+	if (fence_gate && lumber && plank && name) {
+		event.shaped(`2x ${fence_gate}`, [
+			'ABA',
+			'ABA'
+		], {
+			A: plank,
+			B: lumber,
+		}).id(`tfg:shaped/${name}_fence_gate_from_lumber_and_plank`)
+	}
+	
+	if (support && logs && name) {
+		event.shapeless(`8x ${support}`, 
+			[`2x ${logs}`, '#forge:tools/saws']
+		).id(`tfg:shapeless/${name}_support_from_logs`)
+
+		event.recipes.gtceu.assembler(`tfg:assembler/${name}_support_from_logs`)
+			.itemInputs(`2x ${logs}`)
+			.itemOutputs(`8x ${support}`)
+			.duration(50)
+			.circuit(4)
+			.EUt(GTValues.VA[GTValues.ULV])
+	}
+	
+	if (pressure_plate && slab && name) {
+		event.shaped(pressure_plate, [
+			' B ',
+			'ACA',
+			' D '
+		], {
+			A: slab,
+			B: '#forge:tools/hammers',
+			C: '#forge:springs',
+			D: '#forge:tools/screwdrivers',
+		}).id(`tfg:shaped/${name}_pressure_plate`)
+
+		event.recipes.gtceu.assembler(`tfg:assembler/${name}_pressure_plate`)
+			.itemInputs(`2x ${slab}`, '#forge:springs')
+			.itemOutputs(`2x ${pressure_plate}`)
+			.duration(50)
+			.circuit(0)
+			.EUt(GTValues.VA[GTValues.ULV])
+	}
+
+	if (button && pressure_plate && name) {
+		event.recipes.gtceu.cutter(`tfg:cutter/${name}_button_from_pressure_plate`)
+			.itemInputs(pressure_plate)
+			.itemOutputs(`6x ${button}`)
+			.duration(50)
+			.EUt(GTValues.VA[GTValues.ULV])
+	}
 }
 //#endregion

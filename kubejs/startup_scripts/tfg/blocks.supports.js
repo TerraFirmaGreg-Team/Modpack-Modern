@@ -138,4 +138,24 @@ function registerTFGSupportBlocks(event) {
 			.requiresTool(true)
 	})
 
+	global.AD_ASTRA_WOOD.forEach(wood => {
+		event.create(`tfg:${wood.name}_support`, 'tfc:support')
+			.textureAll(`tfg:block/support/${wood.name}_support`)
+			.horizontal(horizontal => {
+				horizontal.textureAll(`tfg:block/support/${wood.name}_support`)
+				horizontal.soundType('wood')
+				horizontal.hardness(2)
+				horizontal.resistance(2)
+				horizontal.mapColor('color_orange')
+				horizontal.tagBlock('minecraft:mineable/axe')
+				horizontal.requiresTool(false)
+			})
+			.soundType('wood')
+			.hardness(2)
+			.resistance(2)
+			.mapColor('color_orange')
+			.tagBlock('minecraft:mineable/axe')
+			.requiresTool(false)
+	})
+
 }
