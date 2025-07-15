@@ -295,4 +295,11 @@ const registerTFCRecipes = (event) => {
 	]).id('tfc:shapeless/jar_lid')
 
 	event.replaceInput({ mod: 'tfc' }, 'minecraft:sugar', '#tfg:sugars')
+
+	// Sea Water
+	event.recipes.tfc.barrel_instant()
+		.inputItem(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Salt, 1))
+		.inputFluid(Fluid.of('minecraft:water', 1000))
+		.outputFluid(Fluid.of('tfc:salt_water', 1000))
+		.id('tfg:barrel/water_to_salt_water')
 }

@@ -81,6 +81,28 @@ const registerAdAstraItemTags = (event) => {
 	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_helmet')
 	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_leggings')
 	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_boots')
+	
+	event.remove('minecraft:wool', 'ad_astra:glacian_fur')
+	
+	global.AD_ASTRA_WOOD.forEach(wood => {
+
+		if (wood.log) {
+			event.add('minecraft:logs', wood.log)
+			event.add('minecraft:logs_that_burn', wood.log)
+		}
+
+		if (wood.stripped_log) {
+			event.add('minecraft:logs', wood.stripped_log)
+			event.add('minecraft:logs_that_burn', wood.stripped_log)
+		}
+
+		if (wood.isHardwood == true) {
+			event.add('tfg:hardwood', wood.logs)
+		} else {
+			event.add('tfg:softwood', wood.logs)
+		}
+	})
+
 }
 
 const registerAdAstraBlockTags = (event) => {

@@ -448,8 +448,8 @@
 					type: "dimension"
 				}
 				{
-					entity: "kaolinclayze:tfc"
-					icon: "kaolinclayze:tfc_spawn_egg"
+					entity: "primitive_creatures:tfc"
+					icon: "primitive_creatures:tfc_spawn_egg"
 					id: "710B94F88C7078C9"
 					optional_task: true
 					type: "kill"
@@ -743,8 +743,8 @@
 					type: "dimension"
 				}
 				{
-					entity: "kaolinclayze:golem_2"
-					icon: "kaolinclayze:golem_2_spawn_egg"
+					entity: "primitive_creatures:golem_2"
+					icon: "primitive_creatures:golem_2_spawn_egg"
 					id: "0981F64F296CDDC5"
 					optional_task: true
 					type: "kill"

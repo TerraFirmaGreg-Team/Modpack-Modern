@@ -697,4 +697,40 @@ const registerAdAstraRecipes = (event) => {
 	})
 
 	//#endregion
+
+	//#region Wood
+		event.remove({ type: 'greate:cutting', input: '#ad_astra:aeronos_caps' })
+		event.remove({ type: 'greate:cutting', input: 'ad_astra:aeronos_planks' })
+		event.remove({ type: 'greate:cutting', input: '#ad_astra:strophar_caps' })
+		event.remove({ type: 'greate:cutting', input: 'ad_astra:glacian_log' })
+		event.remove({ type: 'greate:cutting', input: 'ad_astra:stripped_glacian_log' })
+		event.remove({ type: 'greate:cutting', input: 'ad_astra:strophar_planks' })
+		event.remove({ type: 'greate:cutting', input: 'ad_astra:glacian_planks' })
+
+		global.AD_ASTRA_WOOD.forEach(wood => {
+			woodBuilder(event, wood.name, wood.lumber, wood.logs, wood.log, wood.stripped_log, wood.plank, wood.stair, wood.slab, wood.door, wood.trapdoor, wood.fence, wood.fence_gate, wood.support, wood.pressure_plate, wood.button)
+		})
+		
+		event.shaped('16x ad_astra:aeronos_ladder', [
+			'A A',
+			'ABA',
+			'A A'
+		], {
+			A: 'tfg:wood/lumber/aeronos',
+			B: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Wood, 1),
+		}).id('tfg:shaped/aeronos_ladder')
+		
+		event.shaped('16x ad_astra:strophar_ladder', [
+			'A A',
+			'ABA',
+			'A A'
+		], {
+			A: 'tfg:wood/lumber/strophar',
+			B: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Wood, 1),
+		}).id('tfg:shaped/strophar_ladder')
+
+		generateGreenHouseRecipe(event, '8x ad_astra:glacian_fur', 16000, '64x ad_astra:glacian_log', 'tfg:green_house/glacian_tree', 'ad_astra:moon', 8, '8x ad_astra:glacian_leaves', GTValues.VA[GTValues.MV])
+		generateGreenHouseRecipe(event, '8x ad_astra:strophar_mushroom', 16000, '64x ad_astra:strophar_stem', 'tfg:green_house/strophar_mushroom', 'ad_astra:moon', 8, '16x ad_astra:strophar_cap', GTValues.VA[GTValues.MV])
+		generateGreenHouseRecipe(event, '8x ad_astra:aeronos_mushroom', 16000, '64x ad_astra:aeronos_stem', 'tfg:green_house/aeronos_mushroom', 'ad_astra:moon', 8, '16x ad_astra:aeronos_cap', GTValues.VA[GTValues.MV])
+	//#endregion
 }

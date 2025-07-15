@@ -814,10 +814,10 @@ const registerMinecraftRecipes = (event) => {
 		.EUt(420)
 
 	event.recipes.gtceu.assembler('tfg:minecraft/elytra_repairing')
-		.itemInputs('6x tfg:polycaprolactam_fabric', Item.of('minecraft:elytra', '{Damage:2045}').strongNBT())
+		.itemInputs('6x tfg:polycaprolactam_fabric', 'minecraft:elytra')
 		.circuit(4)
 		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0}"))
-		.duration(1600)
+		.duration(800)
 		.EUt(120)
 
 	event.recipes.gtceu.arc_furnace('tfg:minecraft/arc_furnace/recycling/elytra')
@@ -1083,4 +1083,6 @@ const registerMinecraftRecipes = (event) => {
 	event.shapeless('2x minecraft:gunpowder',
 		['#forge:tools/mortars', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/sulfur', 'tfc:powder/charcoal', 'tfc:powder/charcoal', 'tfc:powder/charcoal'])
 		.id('tfg:shapeless/gunpowder_tfc_style')
+
+	event.shapeless('8x minecraft:bone_meal', ['#forge:tools/mortars', 'minecraft:skeleton_skull'])
 }

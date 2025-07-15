@@ -17,4 +17,8 @@ function registerTFCDataForAdAstra(event) {
 		food.dairy(5)
 		food.decayModifier(10)
 	})
+
+	global.AD_ASTRA_WOOD.forEach(wood => {
+		event.fuel(wood.logs, 800, 1500, null)
+	})
 }

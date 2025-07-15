@@ -42,6 +42,11 @@ const registerTFGItemSize = (event) => {
 	event.itemSize('tfg:fishing_net/tin_alloy', 'large', 'medium', 'tin_alloy_fishing_net')
 	event.itemSize('tfg:fishing_net/magnalium', 'large', 'medium', 'magnalium_fishing_net')
 
+	event.itemSize('tfg:trowel', 'large', 'medium', 'trowel')
+
+	event.itemSize('tfg:harvest_basket', 'large', 'medium', 'harvest_basket')
+	event.itemSize('tfg:aluminium_harvest_basket', 'large', 'medium', 'aluminium_harvest_basket')
+
 	event.itemSize('tfg:rapeseed_product', 'small', 'light', 'rapeseed_product')
 	event.itemSize('tfg:sunflower_product', 'small', 'light', 'sunflower_product')
 
@@ -63,6 +68,10 @@ const registerTFGSupportData = (event) => {
 	stone_types.forEach(stone => {
 
 		event.support(`tfg:${stone}_support_horizontal`, 2, 2, 4, `${stone}_support`)
+	})
+
+	global.AD_ASTRA_WOOD.forEach(wood => {
+		event.support(`tfg:${wood.name}_support_horizontal`, 2, 2, 4, `${wood.name}_support`)
 	})
 }
 
