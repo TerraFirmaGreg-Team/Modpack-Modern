@@ -805,4 +805,84 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(200)
 		.circuit(4)
 		.EUt(GTValues.VA[GTValues.LV])
+	
+	//Rock-wool stuff
+	event.recipes.gtceu.mixer('aes_mix')
+		.itemInputs('5x gtceu:silicon_dioxide_dust', '4x gtceu:quicklime_dust', 'gtceu:magnesia_dust')
+		.itemOutputs('10x tfg:aes_mix_dust')
+		.duration(160)
+		.EUt(GTValues.VA[GTValues.EV])
+	
+	event.recipes.gtceu.electric_blast_furnace('molten_aes')
+		.itemInputs('2x tfg:aes_mix_dust')
+		.outputFluids(Fluid.of('tfg:molten_aes', 1000))
+		.chancedOutput('gtceu:ash_dust', 3000, 0)
+		.circuit(1)
+		.duration(400)
+		.blastFurnaceTemp(3000)
+		.EUt(GTValues.VA[GTValues.EV])
+		
+	event.recipes.gtceu.electric_blast_furnace('molten_aes_he')
+		.itemInputs('2x tfg:aes_mix_dust')
+		.inputFluids(Fluid.of('gtceu:helium', 200))
+		.outputFluids(Fluid.of('tfg:molten_aes', 1000))
+		.circuit(2)
+		.duration(140)
+		.blastFurnaceTemp(3000)
+		.EUt(GTValues.VA[GTValues.EV])
+		
+	event.recipes.gtceu.centrifuge('aes_wool')
+		.inputFluids(Fluid.of('tfg:molten_aes', 200))
+		.itemOutputs('tfg:aes_wool')
+		.duration(30)
+		.EUt(GTValues.VA[GTValues.EV])
+		
+	event.recipes.gtceu.forming_press('aes_compressed_wool')
+		.itemInputs('4x tfg:aes_wool')
+		.notConsumable('gtceu:ingot_casting_mold')
+		.itemOutputs('tfg:aes_compressed_wool')
+		.duration(40)
+		.EUt(GTValues.VA[GTValues.EV])
+		
+	event.recipes.gtceu.chemical_bath('aes_insulation_sheet')
+		.itemInputs('tfg:aes_compressed_wool')
+		.inputFluids(Fluid.of('gtceu:epoxy', 72))
+		.circuit(1)
+		.itemOutputs('tfg:aes_insulation_sheet')
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.EV])
+	
+	event.recipes.gtceu.chemical_bath('aes_insulation_roll')
+		.itemInputs('9x tfg:aes_compressed_wool')
+		.inputFluids(Fluid.of('gtceu:epoxy', 648))
+		.itemOutputs('tfg:aes_insulation_roll')
+		.circuit(9)
+		.duration(160)
+		.EUt(GTValues.VA[GTValues.EV])
+		
+	event.recipes.gtceu.assembler('aes_insulation_roll')
+		.itemInputs('9x tfg:aes_insulation_sheet')
+		.itemOutputs('tfg:aes_insulation_roll')
+		.circuit(0)
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.LV])
+	
+	event.shaped('tfg:aes_insulation_roll', [
+		'AAA',
+		'AAA',
+		'AAA'
+	], {
+		A: 'tfg:aes_insulation_sheet',
+	}).id('tfg:shaped/aes_insulation_roll')
+	
+	event.recipes.gtceu.assembler('aes_insulation_sheet')
+		.itemInputs('9x tfg:aes_insulation_sheet')
+		.itemOutputs('tfg:aes_insulation_roll')
+		.circuit(0)
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.LV])
+	
+	event.shapeless('9x tfg:aes_insulation_sheet', [
+		'tfg:aes_insulation_roll'
+	]).id('tfg:shapeless/aes_insulation_sheet')
 }
