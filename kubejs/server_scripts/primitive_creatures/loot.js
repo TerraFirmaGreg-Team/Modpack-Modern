@@ -14,95 +14,169 @@ function registerPrimitiveCreaturesLoots(event) {
 		.addWeightedLoot([2,4], ['gtceu:rich_raw_graphite'])
 
 
-	// inhabitant
+	const CLOTHING_DROP_RATE = 0.05
+
+	// inhabitant - light tan clothes, holds a stone axe
 	event.addEntityLootModifier('primitive_creatures:iloger_1')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([0,2], ['primitive_creatures:grh']) // battered wool
 		.addAlternativesLoot(
 			LootEntry.of('tfc:wool_yarn').when(c => c.randomChance(0.8)),
-			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.2)),
-			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.2)))
+			LootEntry.of('gtceu:stone_axe').when(c => c.randomChance(0.3)),
+			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.1)),
+			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.1)))
+	event.addEntityLootModifier('primitive_creatures:iloger_1')
+		.randomChance(CLOTHING_DROP_RATE)
+		.addWeightedLoot([
+			Item.of('tfc_textile:raw_hat'),
+			Item.of('tfc_textile:raw_shirt'),
+			Item.of('tfc_textile:raw_pants'),
+			Item.of('tfc_textile:raw_socks')])
 
-	// wanderer
+	// herbalist - brown clothes with a mask that looks like a Creaking
 	event.addEntityLootModifier('primitive_creatures:iloger_2')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([0,2], ['primitive_creatures:grh']) // battered wool
+		.addWeightedLoot([1,2], ['gtceu:tricalcium_phosphate_dust'])
 		.addAlternativesLoot(
-			LootEntry.of('tfc:stone/javelin/igneous_extrusive').when(c => c.randomChance(0.4)),
-			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.2)),
-			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.2)))
+			LootEntry.of('tfc:plant/field_horsetail').when(c => c.randomChance(0.3)),
+			LootEntry.of('tfc:plant/foxglove').when(c => c.randomChance(0.5)),
+			LootEntry.of('firmalife:beeswax').when(c => c.randomChance(0.8)),
+			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.1)),
+			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.1)))
+	event.addEntityLootModifier('primitive_creatures:iloger_2')
+		.randomChance(CLOTHING_DROP_RATE)
+		.addWeightedLoot([
+			Item.of('tfc_textile:grizzly_bear_hat'),
+			Item.of('tfc_textile:grizzly_bear_shirt'),
+			Item.of('tfc_textile:grizzly_bear_pants'),
+			Item.of('tfc_textile:grizzly_bear_boots')])
 
-	// bonebreaker
+	// bonebreaker - skull helmet, bone armor? hits harder, has knockback
 	event.addEntityLootModifier('primitive_creatures:iloger_3')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([0,2], ['minecraft:flint'])
 		.addWeightedLoot([1,3], ['minecraft:bone'])
 		.addAlternativesLoot(
-			LootEntry.of('primitive_creatures:yhgi').when(c => c.randomChance(0.2)), // flint club
-			LootEntry.of('minecraft:skeleton_skull').when(c => c.randomChance(0.1)))
+			LootEntry.of('gtceu:stone_hammer').when(c => c.randomChance(0.2)),
+			LootEntry.of('minecraft:skeleton_skull').when(c => c.randomChance(0.1)),
+			LootEntry.of('primitive_creatures:grh').when(c => c.randomChance(0.5))) // battered wool
+	event.addEntityLootModifier('primitive_creatures:iloger_3')
+		.randomChance(CLOTHING_DROP_RATE)
+		.addWeightedLoot([
+			Item.of('tfc_textile:direwolf_hat'),
+			Item.of('tfc_textile:direwolf_shirt'),
+			Item.of('tfc_textile:direwolf_pants'),
+			Item.of('tfc_textile:direwolf_boots')])
 
-	// stalker
+	// forager - leaf on head, leafy clothes (like the swamp vanilla villager type)
 	event.addEntityLootModifier('primitive_creatures:iloger_4')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([1,3], ['firmalife:fruit_leaf'])
-		.addWeightedLoot([1,4], [
-			Item.of('minecraft:gold_nugget'),
-			Item.of('gtceu:silver_nugget'),
-			Item.of('#forge:nuggets/copper')])
+		.addWeightedLoot([1,3], LootEntry.of('minecraft:tipped_arrow')).addPotion("poison")
+		.addWeightedLoot([
+			// the illusion of randomness
+			Item.of('firmalife:food/nightshade_berry', 5),
+			Item.of('tfc:food/bunchberry', 3),
+			Item.of('tfc:food/cranberry', 4),
+			Item.of('tfc:food/gooseberry', 5),
+			Item.of('tfc:food/blackberry', 6),
+			Item.of('tfc:food/blueberry', 3),
+			Item.of('tfc:food/cloudberry', 4),
+			Item.of('tfc:food/elderberry', 5),
+			Item.of('tfc:food/raspberry', 6),
+			Item.of('tfc:food/snowberry', 3),
+			Item.of('tfc:food/strawberry', 4),
+			Item.of('tfc:food/wintergreen_berry', 5)])
 		.addAlternativesLoot(
+			LootEntry.of('minecraft:tipped_arrow').addPotion("poison").when(c => c.randomChance(0.7)),
 			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.1)),
 			LootEntry.of('primitive_creatures:totem_2').when(c => c.randomChance(0.1)))
 
-	// hunter
+	// hunter - wears brown and white fur, briefly disappears when hit
 	event.addEntityLootModifier('primitive_creatures:iloger_5')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addWeightedLoot([1,3], LootEntry.of('minecraft:tipped_arrow')).addPotion("weakness")
 		.addAlternativesLoot(
+			// placeholder for a blowpipe
 			LootEntry.of('minecraft:bamboo').when(c => c.randomChance(0.6)),
-			LootEntry.of('tfg:fletching').when(c => c.randomChance(0.5)),
-			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.2)),
-			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.2)))
+			LootEntry.of('primitive_creatures:grh').when(c => c.randomChance(0.5)), // battered wool
+			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.1)),
+			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.1)))
+	event.addEntityLootModifier('primitive_creatures:iloger_5')
+		.randomChance(CLOTHING_DROP_RATE)
+		.addWeightedLoot([
+			Item.of('tfc_textile:sabertooth_hat'),
+			Item.of('tfc_textile:sabertooth_shirt'),
+			Item.of('tfc_textile:sabertooth_pants'),
+			Item.of('tfc_textile:sabertooth_boots')])
 
-	// shaman
+	// shaman - yellow clothes, throws fireballs
 	event.addEntityLootModifier('primitive_creatures:iloger_6')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([1,2], ['primitive_creatures:f_1']) // primitive explosives
 		.addWeightedLoot([1,3], ['minecraft:gunpowder'])
 		.addAlternativesLoot(
+			LootEntry.of('primitive_creatures:grh').when(c => c.randomChance(0.5)), // battered wool
 			LootEntry.of('primitive_creatures:totem_2').when(c => c.randomChance(0.1)),
 			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.1)))
+	event.addEntityLootModifier('primitive_creatures:iloger_6')
+		.randomChance(CLOTHING_DROP_RATE)
+		.addWeightedLoot([
+			Item.of('tfc_textile:cougar_hat'),
+			Item.of('tfc_textile:cougar_shirt'),
+			Item.of('tfc_textile:cougar_pants'),
+			Item.of('tfc_textile:cougar_boots')])
 
-	// Herbalist
+	// beast tamer - wears tiger fur, holds vanilla sugarcane? fucking summons ravagers
 	event.addEntityLootModifier('primitive_creatures:wiloger')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([0,1], ['gtceu:tricalcium_phosphate_dust'])
+		.addWeightedLoot([0,2], ['primitive_creatures:grh']) // battered wool
 		.addAlternativesLoot(
-			LootEntry.of('tfc:plant/field_horsetail').when(c => c.randomChance(0.3)),
-			LootEntry.of('tfc:plant/foxglove').when(c => c.randomChance(0.3)),
-			LootEntry.of('firmalife:beeswax').when(c => c.randomChance(0.5)),
-			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.2)),
-			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.2)))
+			LootEntry.of('minecraft:lead').when(c => c.randomChance(0.4)),
+			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.1)),
+			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.1)))
+	event.addEntityLootModifier('primitive_creatures:wiloger')
+		.randomChance(CLOTHING_DROP_RATE)
+		.addWeightedLoot([
+			Item.of('tfc_textile:tiger_hat'),
+			Item.of('tfc_textile:tiger_shirt'),
+			Item.of('tfc_textile:tiger_pants'),
+			Item.of('tfc_textile:tiger_boots')])
 
-	// huntsman
+	// huntsman - lion fur, holds flint club - stuns you in place when hit
 	event.addEntityLootModifier('primitive_creatures:piloger_9')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([2,4], ['minecraft:arrow'])
 		.addAlternativesLoot(
-			LootEntry.of('tfc:small_raw_hide').when(c => c.randomChance(0.2)),
-			LootEntry.of('primitive_creatures:grh').when(c => c.randomChance(0.5)), // battered wool
-			LootEntry.of('primitive_creatures:totem_2').when(c => c.randomChance(0.2)))
+			LootEntry.of('primitive_creatures:yhgi').when(c => c.randomChance(0.2)), // flint club
+			LootEntry.of('tfc:small_raw_hide').when(c => c.randomChance(0.4)),
+			LootEntry.of('primitive_creatures:grh').when(c => c.randomChance(0.5))) // battered wool
+	event.addEntityLootModifier('primitive_creatures:piloger_9')
+		.randomChance(CLOTHING_DROP_RATE)
+		.addWeightedLoot([
+			Item.of('tfc_textile:lion_hat'),
+			Item.of('tfc_textile:lion_shirt'),
+			Item.of('tfc_textile:lion_pants'),
+			Item.of('tfc_textile:lion_boots')])
 
 	// mercenary
 	event.addEntityLootModifier('primitive_creatures:viloger_10')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([0,2], ['primitive_creatures:grh']) // battered wool
+		.addWeightedLoot([1,2], ['minecraft:emerald'])
 		.addAlternativesLoot(
-			LootEntry.of('minecraft:emerald').when(c => c.randomChance(0.6)),
+			LootEntry.of('primitive_creatures:grh').when(c => c.randomChance(0.8)),  // battered wool
 			LootEntry.of('gtceu:stone_knife').when(c => c.randomChance(0.3)),
-			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.2)),
-			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.2)))
+			LootEntry.of('primitive_creatures:totem_2').when(c => c.randomChance(0.1)),
+			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.1)))
+	event.addEntityLootModifier('primitive_creatures:viloger_10')
+		.randomChance(CLOTHING_DROP_RATE)
+		.addWeightedLoot([
+			Item.of('tfc_textile:raw_hat'),
+			Item.of('tfc_textile:raw_shirt'),
+			Item.of('tfc_textile:raw_pants'),
+			Item.of('tfc_textile:raw_socks')])
 
-	// not-a-ravager
+	// mistah beeeaaaasssstt
 	event.addEntityLootModifier('primitive_creatures:beast')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([4,8], ['minecraft:bone'])
+		// raw meat?
 }
