@@ -10075,9 +10075,8 @@
             ]
         },
         {
-            "pakku_id": "pITFJNUBx59dBitK",
+            "pakku_id": "uNdLsiWKN59kFgTs",
             "pakku_links": [
-                "V83DMpywbmyrQqvg",
                 "pB7ARGecP03UXpd6"
             ],
             "type": "MOD",
@@ -10094,7 +10093,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Primitive creatures v2 forge-1.20.1.jar",
+                    "file_name": "primitive_creatures-2.0.1-forge-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10102,18 +10101,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6680/370/Primitive creatures v2 forge-1.20.1.jar",
-                    "id": "6680370",
+                    "url": "https://edge.forgecdn.net/files/6765/489/primitive_creatures-2.0.1-forge-1.20.1.jar",
+                    "id": "6765489",
                     "parent_id": "1218288",
                     "hashes": {
-                        "sha1": "80ed425171aa47b030bd26630c4d353684f85af8",
-                        "md5": "b5b73d7b0120be63e14e72e848329417"
+                        "sha1": "3cbf513208873286085c9d067eb5a0ef32e74df0",
+                        "md5": "8471f856d14e74663c51baf4ec71c71f"
                     },
                     "required_dependencies": [
                         "388172"
                     ],
-                    "size": 414435,
-                    "date_published": "2025-06-21T20:31:50.780Z"
+                    "size": 426778,
+                    "date_published": "2025-07-13T19:44:01.033Z"
                 }
             ]
         },
