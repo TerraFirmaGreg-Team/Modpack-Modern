@@ -21,6 +21,7 @@
 - Fixed rotten cheese in moon quest reward @Pyritie
 - Fixed create + greate configs (#1300) @HiddenOwlllll1 @Pyritie
 - Fixed blue steel diving suit looking like netherite (#1293) @Pyritie
+- Fix Quests #1318 #1291 and finish other quests related stuffs @TomPlop
 
 ## [0.10.0] - 13.07.2025
 - [!WARNING] If you're upgrading your world from 0.9 to 0.10, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.9-to-0.10). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
