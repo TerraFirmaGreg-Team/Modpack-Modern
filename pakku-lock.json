@@ -1640,12 +1640,12 @@
             ]
         },
         {
-            "pakku_id": "brUUIjlzdX34dgFd",
+            "pakku_id": "bDQUB8zljVVWf9mE",
             "type": "MOD",
-            "side": "SERVER",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "bookshelf",
-                "modrinth": "bookshelf"
+                "modrinth": "bookshelf-lib"
             },
             "name": {
                 "curseforge": "Bookshelf",
@@ -1653,7 +1653,7 @@
             },
             "id": {
                 "curseforge": "228525",
-                "modrinth": "VUkUwfUG"
+                "modrinth": "uy4Cnpcm"
             },
             "files": [
                 {
@@ -1677,6 +1677,27 @@
                     "required_dependencies": [],
                     "size": 343962,
                     "date_published": "2024-06-13T15:17:32.300Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "Bookshelf-Forge-1.20.1-20.2.13.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/uy4Cnpcm/versions/tNwsir0K/Bookshelf-Forge-1.20.1-20.2.13.jar",
+                    "id": "tNwsir0K",
+                    "parent_id": "uy4Cnpcm",
+                    "hashes": {
+                        "sha512": "1143753a001bccb3fc84c699cc93343f1941da9b7a63d3a3b8078808262b42962f8b10a2c16ed97a49c058865a6dbaa7e85a1e8842b95039d222f06ab4ee9509",
+                        "sha1": "c53d9eb5ce9e8ef0f2ea9b11e478d84ce958c3e5"
+                    },
+                    "required_dependencies": [],
+                    "size": 343962,
+                    "date_published": "2024-06-13T15:17:37.621721Z"
                 }
             ]
         },
@@ -9441,7 +9462,8 @@
         {
             "pakku_id": "RLcs6U7CczzgSsTk",
             "pakku_links": [
-                "DkF3EttaqiTXi5Pl"
+                "DkF3EttaqiTXi5Pl",
+                "ksu3eX0J950WDovw"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -9517,7 +9539,10 @@
             ]
         },
         {
-            "pakku_id": "DkF3EttaqiTXi5Pl",
+            "pakku_id": "ksu3eX0J950WDovw",
+            "pakku_links": [
+                "x1EwQZ6H2kVKR3U3"
+            ],
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -9562,7 +9587,7 @@
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "pandalib-forge-mc1.20-0.5.2-SNAPSHOT.jar",
+                    "file_name": "pandalib-forge-0.4.2-1.20.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1",
@@ -9574,18 +9599,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/mEEGbEIu/versions/W9C2CFxo/pandalib-forge-mc1.20-0.5.2-SNAPSHOT.jar",
-                    "id": "W9C2CFxo",
+                    "url": "https://cdn.modrinth.com/data/mEEGbEIu/versions/Hs1ReP4A/pandalib-forge-0.4.2-1.20.jar",
+                    "id": "Hs1ReP4A",
                     "parent_id": "mEEGbEIu",
                     "hashes": {
-                        "sha512": "94d8744dc8fac0b68508eb398ba3c16ef83750b6bb21a917e112df43058a4a9cc4aefc798d2e2f9e0ca81755812a0b2e422c1631a60f651cee514c03e9a4fe60",
-                        "sha1": "1e8d8e9688a04df5177a46036d6f34c83194686c"
+                        "sha512": "ec773e88c14bde2cf57a5406b423dad61b0f177e41a97275d77582c7835a33bec6ef1a76b67d5356df552512484011401066869288012be36611104a09b5a80a",
+                        "sha1": "cc0332d3bbf7824b673abc59e231f1f5aafc6420"
                     },
                     "required_dependencies": [
                         "lhGA9TYQ"
                     ],
-                    "size": 864398,
-                    "date_published": "2025-02-27T21:20:03.973189Z"
+                    "size": 10873383,
+                    "date_published": "2024-08-22T15:11:48.784167Z"
                 }
             ]
         },
