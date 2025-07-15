@@ -1054,17 +1054,8 @@
 			description: ["&2Congrats&r, you’ve successfully landed on the &7Moon&r!\\nHere, you’ll find &bCertus Quartz&r veins, allowing you to begin unlocking &dAE2&r.\\n\\nBut that’s not all—some veins here have much higher density than those on Earth.\\n\\nFor instance, you can easily find &6Ilmenite&r, &7Bauxite&r, &7Aluminium&r, and &5Chromite&r veins on the Moon.\\nEstablishing a small base here will be crucial to keep progressing.\\n\\nYour biggest challenge will be transporting resources, as there are no easy cross-dimensional tools like the &5Ender Chest&r or &dAE2 Quantum Link&r just yet."]
 			id: "00A2566109144D7F"
 			rewards: [{
-				id: "13A577B2BB08460E"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:food": {
-							creationDate: 2718000L
-							traits: [ ]
-						}
-					}
-					id: "ad_astra:cheese"
-				}
+				id: "4E4076733CA38807"
+				item: "ad_astra:cheese_block"
 				type: "item"
 			}]
 			shape: "gear"
