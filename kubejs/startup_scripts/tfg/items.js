@@ -332,4 +332,15 @@ const registerTFGItems = (event) => {
 	event.create('tfg:nitrocellulose')
 		.translationKey('tfg:nitrocellulose')
 	//endregion
+	
+	//RockWool
+	event.create('tfg:aes_wool')
+		.translationKey('tfg:aes_wool')
+	event.create('tfg:aes_compressed_wool')
+		.translationKey('tfg:aes_compressed_wool')
+	event.create('tfg:aes_insulation_sheet')
+		.translationKey('tfg:aes_insulation_sheet')
+	event.create('tfg:aes_insulation_roll')
+		.translationKey('tfg:aes_insulation_roll')
+	//endregion
 }
