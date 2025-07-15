@@ -352,6 +352,12 @@
 			x: 13.5d
 			y: -3.0d
 		}
+		{
+			id: "5A5FBC9F634D16FA"
+			linked_quest: "6042514C8FC54334"
+			x: 11.0d
+			y: -3.0d
+		}
 	]
 	quests: [
 		{
@@ -683,19 +689,6 @@
 			title: "{quests.development.uhv.title}"
 			x: -1.0d
 			y: 8.0d
-		}
-		{
-			dependencies: ["5B2696206205CB2E"]
-			id: "70432F650591353C"
-			shape: "square"
-			size: 1.0d
-			tasks: [{
-				id: "77875BBDC0A937A9"
-				item: "gtceu:cupronickel_ingot"
-				type: "item"
-			}]
-			x: 11.0d
-			y: -3.0d
 		}
 		{
 			description: [
