@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 ### Major changes
-- Added harvest baskets to pig fruit from fruit trees and berry bushes (#1338) @Redeix
+- Added harvest baskets to pick fruit from fruit trees and berry bushes (#1338) @Redeix
 ### Minor changes
 - Added ice soup @Pyritie
 - Gave plants tag to bushes so they can be used for other things (#1338) @Redeix
