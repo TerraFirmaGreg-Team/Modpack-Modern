@@ -569,13 +569,7 @@ function registerTFGFoodRecipes(event) {
 		)
 	})
 
-	processorRecipe("pizza_dough_olive_oil", 300, 16, {
-		itemInputs: ['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt'],
-		itemOutputs: ['4x firmalife:food/pizza_dough'],
-		itemOutputProvider: TFC.isp.of("4x firmalife:food/pizza_dough").copyOldestFood()
-	})
-
-	processorRecipe("pizza_dough_soybean_oil", 300, 16, {
+	processorRecipe("pizza_dough", 300, 16, {
 		itemInputs: ['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt'],
 		itemOutputs: ['4x firmalife:food/pizza_dough'],
 		itemOutputProvider: TFC.isp.of("4x firmalife:food/pizza_dough").copyOldestFood()
