@@ -857,7 +857,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:epoxy', 648))
 		.itemOutputs('tfg:aes_insulation_roll')
 		.circuit(9)
-		.duration(160)
+		.duration(400)
 		.EUt(GTValues.VA[GTValues.EV])
 		
 	event.recipes.gtceu.assembler('aes_insulation_roll')
