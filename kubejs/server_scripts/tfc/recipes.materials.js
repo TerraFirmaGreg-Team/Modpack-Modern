@@ -300,14 +300,9 @@ function registerTFCMaterialsRecipes(event) {
 							.id(`tfc:heating/metal/${material.getName()}_fishing_rod`)
 
 						//#endregion
-
-
 					}
 
-					// Plated Blocks - applies for everything with a double ingot (except tin/red alloy)
-					if (material != GTMaterials.TinAlloy && material != GTMaterials.RedAlloy) {
-						generatePlatedBlockRecipe(event, material);
-					}
+					generatePlatedBlockRecipe(event, material);
 				}
 
 				// Tools (From Double Ingots)
@@ -594,6 +589,13 @@ function registerTFCMaterialsRecipes(event) {
 						.id(`tfc:anvil/${material.getName()}_small_spring`)
 				}
 
+				// Nugget
+				let nuggetItem = ChemicalHelper.get(TagPrefix.nugget, material, 6)
+				if (!nuggetItem.isEmpty()) {
+					event.recipes.tfc.anvil(nuggetItem, ingotItem, ['punch_last', 'hit_second_last', 'punch_third_last'])
+						.tier(tfcProperty.getTier())
+						.id(`tfg:anvil/${material.getName()}_nugget`)
+				}
 			}
 
 			// Tools (From Ingot)
