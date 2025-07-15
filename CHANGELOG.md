@@ -1,8 +1,12 @@
 # Changelog
 
 ## [Unreleased]
+### Major changes
+- Added harvest baskets to pick fruit from fruit trees and berry bushes (#1338) @Redeix
 ### Minor changes
 - Added ice soup @Pyritie
+- Gave plants tag to bushes so they can be used for other things (#1338) @Redeix
+- Allowed elytra's to be repaired regardless of damage (#1338) @Redeix
 ### Bug fixes
 - Fixed yeast food processor conflict (#1310) @Redeix
 - Fixed seed oil voiding in barrels (#1310) @Redeix
@@ -22,6 +26,8 @@
 - Fixed create + greate configs (#1300) @HiddenOwlllll1 @Pyritie
 - Fixed blue steel diving suit looking like netherite (#1293) @Pyritie
 - Fixed anthracite not working with blaze burners @Pyritie
+- Fixed baked potato recipe missing from oven (#1338) @Redeix
+- Fixed sea water barrel recipes (#1338) @Redeix
 
 ## [0.10.0] - 13.07.2025
 - [!WARNING] If you're upgrading your world from 0.9 to 0.10, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.9-to-0.10). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
