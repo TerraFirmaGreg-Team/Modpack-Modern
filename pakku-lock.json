@@ -7189,7 +7189,7 @@
             ]
         },
         {
-            "pakku_id": "Ugh46raGeEkF9tvr",
+            "pakku_id": "UK9X3qEbItx0f3n1",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -7229,7 +7229,7 @@
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "invtweaks-1.20.1-1.2.0.jar",
+                    "file_name": "invtweaks-1.20.1-1.1.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7238,16 +7238,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/uqnMI1kq/versions/eyPkQyNd/invtweaks-1.20.1-1.2.0.jar",
-                    "id": "eyPkQyNd",
+                    "url": "https://cdn.modrinth.com/data/uqnMI1kq/versions/noMmNlEf/invtweaks-1.20.1-1.1.0.jar",
+                    "id": "noMmNlEf",
                     "parent_id": "uqnMI1kq",
                     "hashes": {
-                        "sha512": "da66e64b3bca754076fec4a0d1e70d4a17c57ba3586ff38842d8ecff0ba4353f3a626ef24117f2fb3c41b5b87bec9dab9cbd6646d144b486e30eac94581f90bf",
-                        "sha1": "d0a419f3b026b4949ed178119befbcf734deb6eb"
+                        "sha512": "3303d72462d4f863625914100cbbc050e3c88a23203b1010d194524518145ad859a9a30e714326a1866ad129860bc4e28a658a77069e595aa40f1507051f4dd5",
+                        "sha1": "1550d40fd570ae88839382ea888dba9b5c3bd29c"
                     },
                     "required_dependencies": [],
-                    "size": 74689,
-                    "date_published": "2024-11-26T18:52:57.351918Z"
+                    "size": 74491,
+                    "date_published": "2024-05-04T18:03:08.340558Z"
                 }
             ]
         },
@@ -9460,10 +9460,10 @@
             ]
         },
         {
-            "pakku_id": "RLcs6U7CczzgSsTk",
+            "pakku_id": "BfLbV2S73g77WVvq",
             "pakku_links": [
-                "DkF3EttaqiTXi5Pl",
-                "ksu3eX0J950WDovw"
+                "ksu3eX0J950WDovw",
+                "x1EwQZ6H2kVKR3U3"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -9510,7 +9510,7 @@
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "fallingtrees-forge-mc1.20-0.13.2-SNAPSHOT.jar",
+                    "file_name": "fallingtrees-forge-0.12.7-1.20.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1",
@@ -9522,19 +9522,19 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/i2kUe4lq/versions/om4AFhqW/fallingtrees-forge-mc1.20-0.13.2-SNAPSHOT.jar",
-                    "id": "om4AFhqW",
+                    "url": "https://cdn.modrinth.com/data/i2kUe4lq/versions/BTha8GrF/fallingtrees-forge-0.12.7-1.20.jar",
+                    "id": "BTha8GrF",
                     "parent_id": "i2kUe4lq",
                     "hashes": {
-                        "sha512": "fe473f1cf369ca7d75dfea0bacafc55692b2b56fe4b352a501536cb757be5da572d8423baec5cb32906a73ee40c667b599209b0e540237ce2a584df657296b37",
-                        "sha1": "e787f81ddc9e8afea8d859d57776e212ab2b6ff4"
+                        "sha512": "cecdcdfe3c705624fd12723f5f4f635a891b987c5855517258a546b538b4ceee4becbc21721c949a35458408f4046c96cb878c7804b5390a99af2b7d3d516e3f",
+                        "sha1": "493724d09ba37fa140c6b360eb267cb5c563a35b"
                     },
                     "required_dependencies": [
-                        "lhGA9TYQ",
-                        "mEEGbEIu"
+                        "mEEGbEIu",
+                        "lhGA9TYQ"
                     ],
-                    "size": 4025908,
-                    "date_published": "2025-02-24T19:38:27.460116Z"
+                    "size": 4007169,
+                    "date_published": "2024-08-22T15:47:03.291493Z"
                 }
             ]
         },
