@@ -459,6 +459,8 @@ function registerTFGFoodRecipes(event) {
 
 	cookingRecipe("corn_tortilla", "firmalife:food/masa", "firmalife:food/corn_tortilla")
 
+	cookingRecipe("baked_potato", "tfc:food/potato", "tfc:food/baked_potato")
+
 	cookingRecipe("boiled_egg", "#firmalife:foods/raw_eggs", "tfc:food/boiled_egg")
 		.inputFluids(JsonIO.of({ amount: 200, value: { tag: "tfg:clean_water" }}))
 

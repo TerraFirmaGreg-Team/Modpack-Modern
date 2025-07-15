@@ -1,7 +1,10 @@
 // priority: 0
 
 function registerSpeciesRecipes(event) {
-	event.remove({ mod: 'species' })
+	global.SPECIES_DISABLED_ITEMS.forEach(item => {
+		event.remove({ input: item })
+		event.remove({ output: item })
+	})
 
 	event.shapeless('species:music_disc_dial', ['etched:blank_music_disc', 'species:birt_egg'])
 

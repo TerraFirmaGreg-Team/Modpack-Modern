@@ -29,7 +29,7 @@ const registerTFGItemTags = (event) => {
 	//Knapping
 	event.add('tfc:any_knapping', 'minecraft:flint')
 
-	//Tools & Armor
+	//#region Tools & Armor
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/wood')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/brass')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/rose_gold')
@@ -43,6 +43,10 @@ const registerTFGItemTags = (event) => {
 
 	event.add('forge:tools/trowels', 'tfg:trowel')
 	event.add('tfc:usable_on_tool_rack', 'tfg:trowel')
+
+	event.add('tfg:harvester', 'tfg:harvest_basket')
+	event.add('tfg:harvester', 'tfg:aluminium_harvest_basket')
+	//#endregion
 
 	// #region Paper from wood
 	event.add('tfg:hardwood_strips', 'tfg:hardwood_strip')
@@ -310,6 +314,7 @@ const registerTFGItemTags = (event) => {
 	//#endregion
 }
 
+//#region Blocks
 const registerTFGBlockTags = (event) => {
 
 	event.add('minecraft:mineable/shovel', 'tfg:ash_pile')
@@ -340,8 +345,13 @@ const registerTFGBlockTags = (event) => {
 	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_dripstone')
 	event.add('tfc:rock/hardened', 'tfg:rock/hardened_dripstone')
 
+	event.add('tfg:harvester_harvestable', '#tfc:fruit_tree_leaves')
+	event.add('tfg:harvester_harvestable', '#tfc:berry_bushes')
+	event.add('tfg:harvester_harvestable', '#tfc:any_spreading_bush')
+
 	// #endregion
 }
+//#endregion
 
 //#region Fluids
 const registerTFGFluidTags = (event) => {
