@@ -19,9 +19,21 @@ function registerPrimitiveCreaturesLoots(event) {
 	// inhabitant - light tan clothes, holds a stone axe
 	event.addEntityLootModifier('primitive_creatures:iloger_1')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([0,2], ['primitive_creatures:grh']) // battered wool
+		.addWeightedLoot([
+			// the illusion of randomness
+			Item.of('tfc:food/bunchberry', 3),
+			Item.of('tfc:food/cranberry', 4),
+			Item.of('tfc:food/gooseberry', 5),
+			Item.of('tfc:food/blackberry', 6),
+			Item.of('tfc:food/blueberry', 3),
+			Item.of('tfc:food/cloudberry', 4),
+			Item.of('tfc:food/elderberry', 5),
+			Item.of('tfc:food/raspberry', 6),
+			Item.of('tfc:food/snowberry', 3),
+			Item.of('tfc:food/strawberry', 4),
+			Item.of('tfc:food/wintergreen_berry', 5)])
 		.addAlternativesLoot(
-			LootEntry.of('tfc:wool_yarn').when(c => c.randomChance(0.8)),
+			LootEntry.of('primitive_creatures:grh').when(c => c.randomChance(0.8)),
 			LootEntry.of('gtceu:stone_axe').when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.1)),
 			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.1)))
@@ -68,30 +80,17 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('tfc_textile:direwolf_pants'),
 			Item.of('tfc_textile:direwolf_boots')])
 
-	// forager - leaf on head, leafy clothes (like the swamp vanilla villager type)
+	// forager - leaf on head, leafy clothes (like the swamp vanilla villager type), ranged with poison
 	event.addEntityLootModifier('primitive_creatures:iloger_4')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([1,3], LootEntry.of('minecraft:tipped_arrow')).addPotion("poison")
-		.addWeightedLoot([
-			// the illusion of randomness
-			Item.of('firmalife:food/nightshade_berry', 5),
-			Item.of('tfc:food/bunchberry', 3),
-			Item.of('tfc:food/cranberry', 4),
-			Item.of('tfc:food/gooseberry', 5),
-			Item.of('tfc:food/blackberry', 6),
-			Item.of('tfc:food/blueberry', 3),
-			Item.of('tfc:food/cloudberry', 4),
-			Item.of('tfc:food/elderberry', 5),
-			Item.of('tfc:food/raspberry', 6),
-			Item.of('tfc:food/snowberry', 3),
-			Item.of('tfc:food/strawberry', 4),
-			Item.of('tfc:food/wintergreen_berry', 5)])
 		.addAlternativesLoot(
-			LootEntry.of('minecraft:tipped_arrow').addPotion("poison").when(c => c.randomChance(0.7)),
+			LootEntry.of('firmalife:food/nightshade_berry').when(c => c.randomChance(0.7)),
+			LootEntry.of('minecraft:spider_eye').when(c => c.randomChance(0.7)),
 			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.1)),
 			LootEntry.of('primitive_creatures:totem_2').when(c => c.randomChance(0.1)))
 
-	// hunter - wears brown and white fur, briefly disappears when hit
+	// hunter - wears brown and white fur, briefly disappears when hit, ranged with weakness
 	event.addEntityLootModifier('primitive_creatures:iloger_5')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([1,3], LootEntry.of('minecraft:tipped_arrow')).addPotion("weakness")
