@@ -21,6 +21,7 @@
 - Fixed rotten cheese in moon quest reward @Pyritie
 - Fixed create + greate configs (#1300) @HiddenOwlllll1 @Pyritie
 - Fixed blue steel diving suit looking like netherite (#1293) @Pyritie
+- Fixed anthracite not working with blaze burners @Pyritie
 - Fix Quests #1318 #1291 and finish other quests related stuffs @TomPlop
 
 ## [0.10.0] - 13.07.2025
