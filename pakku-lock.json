@@ -4046,7 +4046,9 @@
             "pakku_id": "B3OeIZiBndi7C4Wp",
             "pakku_links": [
                 "edRQnIZPGMFeSrB6",
-                "64uacGcEw697jVGs"
+                "64uacGcEw697jVGs",
+                "V83DMpywbmyrQqvg",
+                "pB7ARGecP03UXpd6"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -4418,7 +4420,9 @@
             "pakku_links": [
                 "edRQnIZPGMFeSrB6",
                 "zQAe1eid9EE5PMwK",
-                "WlWexjDJnb3iikHc"
+                "WlWexjDJnb3iikHc",
+                "V83DMpywbmyrQqvg",
+                "pB7ARGecP03UXpd6"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -4680,7 +4684,10 @@
             ]
         },
         {
-            "pakku_id": "Z252EzJk6vkBmusY",
+            "pakku_id": "RkPlX1Bfhnne4042",
+            "pakku_links": [
+                "aHeU7fAIYgE8bqks"
+            ],
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -4721,7 +4728,7 @@
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "everycomp-1.20-2.8.13-forge.jar",
+                    "file_name": "everycomp-1.20-2.8.12-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4729,18 +4736,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/eiktJyw1/versions/OApRuFlY/everycomp-1.20-2.8.13-forge.jar",
-                    "id": "OApRuFlY",
+                    "url": "https://cdn.modrinth.com/data/eiktJyw1/versions/lFpsGBy6/everycomp-1.20-2.8.12-forge.jar",
+                    "id": "lFpsGBy6",
                     "parent_id": "eiktJyw1",
                     "hashes": {
-                        "sha512": "5b962ea433301fe6b293f492f46037331477cfbaba6663e9b3b127975fa38b2bd4ac4eecd646038caeb837985e297e9e05fcd3102052180730224d8bf839538f",
-                        "sha1": "10fd16961204edb982c9b807393720ba47c7f5a6"
+                        "sha512": "10621329db21714d8301ea6a7f8ee309fbecdce74a8594a6555d4859e3069fcd8a922bfb7ea29df484cd62a9d56c26c367f9311f02f0b38c0700fab81d377b6c",
+                        "sha1": "018be48ad689e61fc14ad0bf54692a5b33f8f8ec"
                     },
                     "required_dependencies": [
                         "twkfQtEc"
                     ],
-                    "size": 2770655,
-                    "date_published": "2025-07-15T06:10:49.582994Z"
+                    "size": 2750134,
+                    "date_published": "2025-07-07T07:20:17.667934Z"
                 }
             ]
         },
@@ -6236,7 +6243,7 @@
             ]
         },
         {
-            "pakku_id": "edRQnIZPGMFeSrB6",
+            "pakku_id": "pB7ARGecP03UXpd6",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -6276,7 +6283,7 @@
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "geckolib-forge-1.20.1-4.7.2.jar",
+                    "file_name": "geckolib-forge-1.20.1-4.7.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6284,16 +6291,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/8BmcQJ2H/versions/AiVKLYep/geckolib-forge-1.20.1-4.7.2.jar",
-                    "id": "AiVKLYep",
+                    "url": "https://cdn.modrinth.com/data/8BmcQJ2H/versions/LwI6czff/geckolib-forge-1.20.1-4.7.jar",
+                    "id": "LwI6czff",
                     "parent_id": "8BmcQJ2H",
                     "hashes": {
-                        "sha512": "40aefbb89e4a65c1955bd05c13cb656c0902e545741770d9395037f6a87684e91676935e0d5b7be0419abd1599272fa3aa245dc3976208b82f568d994813e314",
-                        "sha1": "4635f16786b5a23b8d059e6c2c675d1c8dec01d6"
+                        "sha512": "4efd2d70533d73fc70012b0969bac9fb6035a4ebcc8b6ccb692321456bcc044da93a12b44392fca3c607889c134acd41db9e0fed376151a46d5391c56881a149",
+                        "sha1": "451226923e02ac708b8fe59d75a2f9a28cc7e467"
                     },
                     "required_dependencies": [],
-                    "size": 1012625,
-                    "date_published": "2025-06-16T20:13:08.072727Z"
+                    "size": 1004043,
+                    "date_published": "2024-12-27T16:27:02.907556Z"
                 }
             ]
         },
@@ -10045,6 +10052,10 @@
         },
         {
             "pakku_id": "pITFJNUBx59dBitK",
+            "pakku_links": [
+                "V83DMpywbmyrQqvg",
+                "pB7ARGecP03UXpd6"
+            ],
             "type": "MOD",
             "side": "BOTH",
             "slug": {
