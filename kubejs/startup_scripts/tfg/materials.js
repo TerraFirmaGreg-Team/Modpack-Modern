@@ -136,4 +136,21 @@ const registerTFGMaterials = (event) => {
 		.gas()
 		.components('8x helium_3', '11x oxygen', '11x hydrogen')
 		.color(0xEDFFB3)
+	//end region
+
+	//Region Rockwool
+	event.create('tfg:aes_mix')
+		.dust()
+		.flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+		.components('5x silicon_dioxide', '4x quicklime', '1x magnesia')
+		.hazard(HazardProperty.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.CHEMICAL_BURNS)
+		.color(0xE0E9E4)
+		//.secondaryColor(0x54483d)
+	event.create('tfg:molten_aes')
+		.liquid(2900)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.components('5x silicon_dioxide', '4x quicklime', '1x magnesia')
+		.color(0xe65609)
+		.secondaryColor(0xe65609)
+	//end region
 }
