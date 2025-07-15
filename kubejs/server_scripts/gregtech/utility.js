@@ -136,6 +136,9 @@ function generatePlatedBlockRecipe(event, material) {
 	let platedSlab = ChemicalHelper.get(TFGTagPrefix.slabPlated, material, 1);
 	let platedStair = ChemicalHelper.get(TFGTagPrefix.stairPlated, material, 1);
 
+	if (platedBlock == null)
+		return
+
 	let tfcMetalName = material.getName();
 	if (tfcMetalName == "iron")
 		tfcMetalName = "cast_iron";

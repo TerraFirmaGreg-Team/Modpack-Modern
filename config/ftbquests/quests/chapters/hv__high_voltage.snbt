@@ -1071,17 +1071,8 @@
 			description: ["{quests.high_voltage.welcome_moon.desc}"]
 			id: "00A2566109144D7F"
 			rewards: [{
-				id: "13A577B2BB08460E"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:food": {
-							creationDate: 2718000L
-							traits: [ ]
-						}
-					}
-					id: "ad_astra:cheese"
-				}
+				id: "4E4076733CA38807"
+				item: "ad_astra:cheese_block"
 				type: "item"
 			}]
 			shape: "gear"

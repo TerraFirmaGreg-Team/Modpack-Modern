@@ -158,6 +158,12 @@ const registerTFGFoodData = (event) => {
 		food.protein(5)
 		food.decayModifier(2.25)
 	})
+
+	event.foodItem('tfg:food/ice_soup', food => {
+		food.hunger(1)
+		food.water(20)
+		food.decayModifier(0)
+	})
 }
 
 const registerTFGFauna = (event) => {
