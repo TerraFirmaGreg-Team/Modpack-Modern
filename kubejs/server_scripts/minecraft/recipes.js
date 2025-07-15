@@ -814,10 +814,10 @@ const registerMinecraftRecipes = (event) => {
 		.EUt(420)
 
 	event.recipes.gtceu.assembler('tfg:minecraft/elytra_repairing')
-		.itemInputs('6x tfg:polycaprolactam_fabric', Item.of('minecraft:elytra', '{Damage:2045}').strongNBT())
+		.itemInputs('6x tfg:polycaprolactam_fabric', 'minecraft:elytra')
 		.circuit(4)
 		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0}"))
-		.duration(1600)
+		.duration(800)
 		.EUt(120)
 
 	event.recipes.gtceu.arc_furnace('tfg:minecraft/arc_furnace/recycling/elytra')
