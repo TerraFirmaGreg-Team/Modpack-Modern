@@ -4005,17 +4005,20 @@
             ]
         },
         {
-            "pakku_id": "SG15bUHPcW2KqNGd",
+            "pakku_id": "qTkHGASztASuivVS",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
-                "curseforge": "detected-setblock-be-gone"
+                "curseforge": "detected-setblock-be-gone",
+                "modrinth": "dsbg"
             },
             "name": {
-                "curseforge": "Detected setBlock Be Gone"
+                "curseforge": "Detected setBlock Be Gone",
+                "modrinth": "Detected setBlock Be Gone"
             },
             "id": {
-                "curseforge": "942945"
+                "curseforge": "942945",
+                "modrinth": "zv7fYVyQ"
             },
             "redistributable": false,
             "files": [
@@ -4039,6 +4042,27 @@
                     "required_dependencies": [],
                     "size": 273328,
                     "date_published": "2023-11-27T22:50:51.187Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "dsbg-1.0-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/zv7fYVyQ/versions/JJU0kqnK/dsbg-1.0-1.20.1.jar",
+                    "id": "JJU0kqnK",
+                    "parent_id": "zv7fYVyQ",
+                    "hashes": {
+                        "sha512": "9590a9652e85220d7195ac18df17d99d1b292aa5e5126656eeeeaead65018d50e8d35f7f2eccd403ad6651ca328d7fccb57f55fac0d14e4324e27b0d864c216c",
+                        "sha1": "349a91654be8df6af5a19b02c7bb47758c09bac4"
+                    },
+                    "required_dependencies": [],
+                    "size": 273328,
+                    "date_published": "2024-01-25T00:03:33.444363Z"
                 }
             ]
         },
