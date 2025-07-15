@@ -190,6 +190,17 @@ const registerTFGItems = (event) => {
 	event.create('tfg:armor_stand_arms')
 		.translationKey('item.tfg.armor_stand_arms')
 
+	event.create('tfg:harvest_basket')
+		.translationKey('item.tfg.harvest_basket')
+		.parentModel('tfg:item/harvest_basket')
+		.maxDamage(128)
+
+	event.create('tfg:aluminium_harvest_basket')
+		.translationKey('item.tfg.aluminium_harvest_basket')
+		.parentModel('tfg:item/aluminium_harvest_basket')
+		.unstackable()
+
+	//Fishing Nets
 	event.create('tfg:fishing_net/wood')
 		.translationKey('item.tfg.fishing_net.wood')
 		.parentModel('tfg:item/fishing_nets/wood_fishing_net')

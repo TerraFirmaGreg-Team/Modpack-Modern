@@ -2493,6 +2493,27 @@
 			x: 0.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["150B7C5CD152E1BA"]
+			description: ["{quests.tfg_tips.tools_tips.harvest_basket.desc}"]
+			id: "5B0A9757F1EF1B9E"
+			subtitle: "{quests.tfg_tips.tools_tips.harvest_basket.subtitle}"
+			tasks: [{
+				id: "15C2F940F5A576D5"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(tfg:harvester)"
+					}
+				}
+				title: "{quests.tfg_tips.tools_tips.harvest_basket.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.tools_tips.harvest_basket.title}"
+			x: -6.0d
+			y: 10.0d
+		}
 	]
 	subtitle: ["{quests.tfg_tips.tools_tips.subtitle}"]
 	title: "Tips - Tools"
