@@ -69,6 +69,10 @@ const registerTFGSupportData = (event) => {
 
 		event.support(`tfg:${stone}_support_horizontal`, 2, 2, 4, `${stone}_support`)
 	})
+
+	global.AD_ASTRA_WOOD.forEach(wood => {
+		event.support(`tfg:${wood.name}_support_horizontal`, 2, 2, 4, `${wood.name}_support`)
+	})
 }
 
 
