@@ -8313,20 +8313,23 @@
             ]
         },
         {
-            "pakku_id": "ZsCm3zPdnqqiRP9E",
+            "pakku_id": "R7Em6znehT4B2pHu",
             "pakku_links": [
-                "Odyk7EVsuYynAJeZ",
                 "QDZyqZ3QAXN6Vk9L"
             ],
             "type": "MOD",
+            "side": "SERVER",
             "slug": {
-                "curseforge": "let-me-despawn"
+                "curseforge": "let-me-despawn",
+                "modrinth": "lmd"
             },
             "name": {
-                "curseforge": "Let Me Despawn"
+                "curseforge": "Let Me Despawn",
+                "modrinth": "Let Me Despawn"
             },
             "id": {
-                "curseforge": "663477"
+                "curseforge": "663477",
+                "modrinth": "vE2FN5qn"
             },
             "files": [
                 {
@@ -8356,6 +8359,32 @@
                     ],
                     "size": 14789,
                     "date_published": "2025-03-16T11:34:03.527Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "letmedespawn-1.20.x-forge-1.5.0.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/vE2FN5qn/versions/1VmupN41/letmedespawn-1.20.x-forge-1.5.0.jar",
+                    "id": "1VmupN41",
+                    "parent_id": "vE2FN5qn",
+                    "hashes": {
+                        "sha512": "22e5e7a3e4eb1e238ff420108f6fb138e2fc47335a8fbe4cef093cef32d7aaf710de00ba0450bfee570aa2857989b0e9d7abb8600720386e185ffac5670505c1",
+                        "sha1": "878dd35df02e1e17b7eb16113147f964eda8847f"
+                    },
+                    "required_dependencies": [
+                        "Gi02250Z"
+                    ],
+                    "size": 14789,
+                    "date_published": "2025-03-16T11:37:47.063456Z"
                 }
             ]
         },
@@ -8623,22 +8652,24 @@
             ]
         },
         {
-            "pakku_id": "EK0TleuSfevVsHQK",
+            "pakku_id": "KnRbPzfGJGcr62lo",
             "pakku_links": [
-                "0IQGejKaqyQTLzbL",
-                "chnSa7MrxlvxvEWU",
                 "3QJUyVc5jxbc7OFC",
                 "mYY02F5XR0fB6HXF"
             ],
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "mega-cells"
+                "curseforge": "mega-cells",
+                "modrinth": "mega"
             },
             "name": {
-                "curseforge": "MEGA Cells"
+                "curseforge": "MEGA Cells",
+                "modrinth": "MEGA Cells"
             },
             "id": {
-                "curseforge": "622112"
+                "curseforge": "622112",
+                "modrinth": "jjuIRIVr"
             },
             "files": [
                 {
@@ -8665,6 +8696,31 @@
                     ],
                     "size": 387196,
                     "date_published": "2025-02-09T14:26:09.890Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "megacells-forge-2.4.6-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/jjuIRIVr/versions/SH2D1n3s/megacells-forge-2.4.6-1.20.1.jar",
+                    "id": "SH2D1n3s",
+                    "parent_id": "jjuIRIVr",
+                    "hashes": {
+                        "sha512": "a4fe5ee459310785e3bfb2ec7ceab5fb817e2faa26397599cbb6a114147a0199254df2e35d110aa31b07379ac36a246fa4d5dac07020384316eb47ba6b322e25",
+                        "sha1": "ed6fd5eb0c782529be03f199d66d9a7c9eb2a518"
+                    },
+                    "required_dependencies": [
+                        "XxWD5pD3",
+                        "9s6osm5g"
+                    ],
+                    "size": 387196,
+                    "date_published": "2025-02-09T14:26:13.288593Z"
                 }
             ]
         },
