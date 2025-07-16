@@ -53,6 +53,10 @@ const registerAdAstraItemTags = (event) => {
 	// Insulation Tier 1
 	event.add('forge:insulation_t1', 'gtceu:borosilicate_glass_dust')
 	event.add('forge:insulation_t1', 'gtceu:vitrified_asbestos_dust')
+	
+	//Insulation Tier 2
+	event.add('forge:insulation_t2', 'tfg:aes_insulation_sheet')
+	event.add('forge:insulation_t2', 'tfg:aes_insulation_roll')
 
 	// Deco blocks
 	const DECO_BLOCKS = [ 'iron', 'steel', 'desh', 'calorite', 'ostrum' ];

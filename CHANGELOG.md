@@ -7,6 +7,8 @@
 - Gave plants tag to bushes so they can be used for other things (#1338) @Redeix
 - Allowed elytra's to be repaired regardless of damage (#1338) @Redeix
 - Increased maximum range of rope/elevator pulleys to 400 blocks (#1347) @Pyritie
+- Added Tier 2 Insulation: Alkaline Earth Silicate @BlueBoat29
+- Added tfc data to tacz guns and attachments (#1353) @Redeix
 ### Bug fixes
 - Fixed yeast food processor conflict (#1310) @Redeix
 - Fixed seed oil voiding in barrels (#1310) @Redeix
@@ -31,6 +33,11 @@
 - Fixed Quests #1318 #1291 and finish other quests related stuffs @TomPlop
 - Integrated Ad Astra wood types with tfc (#1346) @Redeix
 - Fixed duplicate pizza dough recipe @Pyritie
+- Unified Pressure Plate Recipes among mods @BlueBoat29
+- Fixed treated composite barrel recipe lang (#1353) @Redeix
+- Fixed food processor jam recipe duping jars (#1353) @Redeix
+- Fixed Ad Astra space suit quest mentioning oxygen instead of breathable gas (#1353) @Redeix
+- Fixed flintlock not being craftable before LV (#1353) @Redeix
 
 ## [0.10.0] - 13.07.2025
 - [!WARNING] If you're upgrading your world from 0.9 to 0.10, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.9-to-0.10). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!

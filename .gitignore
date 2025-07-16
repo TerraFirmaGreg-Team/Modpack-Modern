@@ -15,6 +15,7 @@
 # Pakku
 build/
 !.pakku/**/*
+!pakku.jar
 
 # Configs
 config/jei/world/

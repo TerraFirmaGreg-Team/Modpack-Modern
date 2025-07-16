@@ -606,13 +606,14 @@ const registerAdAstraRecipes = (event) => {
 		], {
 			B: '#tfc:hammers',
 			C: `ad_astra:${x.type}_plating_slab`,
-			D: '#forge:springs',
+			D: '#forge:small_springs',
 			E: '#forge:tools/screwdrivers'
 		}).id(`tfg:shaped/ad_astra_${x.type}_pressure_plate`)
 
 		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_pressure_plate`)
-			.itemInputs('#forge:springs', `ad_astra:${x.type}_plating_slab`)
+			.itemInputs('#forge:small_springs', `2x ad_astra:${x.type}_plating_slab`)
 			.itemOutputs(`ad_astra:${x.type}_plating_pressure_plate`)
+			.circuit(0)
 			.duration(50)
 			.EUt(2)
 

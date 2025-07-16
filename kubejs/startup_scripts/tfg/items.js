@@ -333,6 +333,17 @@ const registerTFGItems = (event) => {
 		.translationKey('tfg:nitrocellulose')
 	//endregion
 	
+	//RockWool
+	event.create('tfg:aes_wool')
+		.translationKey('tfg:aes_wool')
+	event.create('tfg:aes_compressed_wool')
+		.translationKey('tfg:aes_compressed_wool')
+	event.create('tfg:aes_insulation_sheet')
+		.translationKey('tfg:aes_insulation_sheet')
+	event.create('tfg:aes_insulation_roll')
+		.translationKey('tfg:aes_insulation_roll')
+	//endregion
+	
 	//Tier 2 Rocket Parts
 	event.create('tfg:rocket_fin_t2')
 		.translationKey('tfg:rocket_fin_t2')
@@ -340,3 +351,6 @@ const registerTFGItems = (event) => {
 		.translationKey('tfg:rocket_cone_t2')
 	//endregion
 }
+
+	
+

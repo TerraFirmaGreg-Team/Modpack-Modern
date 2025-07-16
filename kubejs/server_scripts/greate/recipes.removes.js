@@ -13,6 +13,7 @@ function removeGreateRecipes(event) {
 	})
 
 	event.remove({ mod: 'greate', input: 'create:andesite_alloy' });
+	event.remove({ mod: 'greate', output: 'minecraft:bamboo_pressure_plate'})
 	
 	event.remove({ id: 'greate:shapeless/large_andesite_alloy_cogwheel_from_little' })
 	event.remove({ id: 'greate:shapeless/large_steel_cogwheel_from_little' })
