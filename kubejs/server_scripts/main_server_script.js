@@ -149,6 +149,7 @@ TFCEvents.data(event => {
 	registerTFCDataForImmersiveAircraft(event);
 	registerTFCDataForMinecraft(event)
 	registerTFCDataForSophisticatedBackpacks(event)
+	registerTFCDataForTACZ(event)
 	registerTFCDataForTFC(event)
 	registerTFCDataForTFCBetterBF(event)
 	registerTFCDataForTFCLunchbox(event)
