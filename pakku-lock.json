@@ -7598,21 +7598,23 @@
             ]
         },
         {
-            "pakku_id": "7dWkYpxCdvBgyHUv",
+            "pakku_id": "8w2abFuWz4D6JMqT",
             "pakku_links": [
-                "WUlpBsMd1Ztf1Rv1",
                 "y0UC3kpLVhVgLz9b"
             ],
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
-                "curseforge": "iris-flywheel-compat"
+                "curseforge": "iris-flywheel-compat",
+                "modrinth": "iris-flw-compat"
             },
             "name": {
-                "curseforge": "Iris & Oculus Flywheel Compat"
+                "curseforge": "Iris & Oculus Flywheel Compat",
+                "modrinth": "Iris & Oculus Flywheel Compat"
             },
             "id": {
-                "curseforge": "659897"
+                "curseforge": "659897",
+                "modrinth": "ndHYMY2K"
             },
             "files": [
                 {
@@ -7637,6 +7639,29 @@
                     ],
                     "size": 117226,
                     "date_published": "2025-06-25T15:25:29.200Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "oculus-flywheel-compat-Forge-2.0.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/ndHYMY2K/versions/dE1A45cG/oculus-flywheel-compat-Forge-2.0.3.jar",
+                    "id": "dE1A45cG",
+                    "parent_id": "ndHYMY2K",
+                    "hashes": {
+                        "sha512": "efa8b7fbc5b37b4ec3542d1594d69970adc48fc18e6d84c956265e2a0f63428c566f0864199404863d20edcc41ac4042a40225388de959ff93f35820c6f5b878",
+                        "sha1": "a11227479ddcddcb0eed3f9c3717c53fd5a47222"
+                    },
+                    "required_dependencies": [
+                        "GchcoXML"
+                    ],
+                    "size": 117226,
+                    "date_published": "2025-06-25T15:25:31.659533Z"
                 }
             ]
         },
@@ -7708,20 +7733,23 @@
             ]
         },
         {
-            "pakku_id": "d2JtcMNOYhuPhetG",
+            "pakku_id": "f6XxFE6O8qGnlY7T",
             "pakku_links": [
-                "4Lh5rlmEmqZFUmGt",
                 "3VXkRfGFKQ4l6TlN"
             ],
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "jade-addons"
+                "curseforge": "jade-addons",
+                "modrinth": "jade-addons-forge"
             },
             "name": {
-                "curseforge": "Jade Addons (Neo/Forge)"
+                "curseforge": "Jade Addons (Neo/Forge)",
+                "modrinth": "Jade Addons (Neo/Forge)"
             },
             "id": {
-                "curseforge": "583345"
+                "curseforge": "583345",
+                "modrinth": "xuDOzCLy"
             },
             "files": [
                 {
@@ -7748,6 +7776,31 @@
                     ],
                     "size": 91771,
                     "date_published": "2025-03-07T12:14:18.823Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "JadeAddons-1.20.1-Forge-5.5.0.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/xuDOzCLy/versions/AvIT9ADi/JadeAddons-1.20.1-Forge-5.5.0.jar",
+                    "id": "AvIT9ADi",
+                    "parent_id": "xuDOzCLy",
+                    "hashes": {
+                        "sha512": "a11d4604453f7aa7cbeafcd2b399c7e39e66a5b38cccdbc7ad7dbce3f79f0a632568d28665ffb22a29676c78ad2089d9bf13793518fc453270a0bbbbbcfd91fd",
+                        "sha1": "5e74e87f61cf05c18457f09dfa1cb70332b6b777"
+                    },
+                    "required_dependencies": [
+                        "nvQzSEkH"
+                    ],
+                    "size": 91771,
+                    "date_published": "2025-03-07T12:14:24.262047Z"
                 }
             ]
         },
