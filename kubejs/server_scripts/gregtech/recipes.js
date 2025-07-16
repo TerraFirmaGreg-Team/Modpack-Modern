@@ -1282,4 +1282,22 @@ const registerGTCEURecipes = (event) => {
 	//#endregion
 
 	event.replaceInput({ id: 'gtceu:shaped/powderbarrel' }, 'gtceu:wood_plate', '#tfc:lumber')
+
+	event.shaped('gtceu:treated_wood_pressure_plate', [
+			' B ',
+			'CDC',
+			' E '
+		], {
+			B: '#tfc:hammers',
+			C:  'gtceu:treated_wood_slab',
+			D: '#forge:small_springs',
+			E: '#forge:tools/screwdrivers'
+		}).id('gtceu:shaped/treated_pressure_plate')
+
+	event.recipes.gtceu.assembler('gtceu:treated_pressure_plate')
+		.itemInputs('#forge:small_springs', '2x gtceu:treated_wood_slab')
+		.itemOutputs('gtceu:treated_wood_pressure_plate')
+		.circuit(0)
+		.duration(50)
+		.EUt(2)
 }
