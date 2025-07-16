@@ -1085,4 +1085,31 @@ const registerMinecraftRecipes = (event) => {
 		.id('tfg:shapeless/gunpowder_tfc_style')
 
 	event.shapeless('8x minecraft:bone_meal', ['#forge:tools/mortars', 'minecraft:skeleton_skull'])
+
+	//Pressure Plates
+	const PRESSURE_PLATES = [
+		{type: 'bamboo', material: 'minecraft:bamboo_slab'},
+		{type: 'polished_blackstone', material: 'minecraft:polished_blackstone_slab'},
+		{type: 'light_weighted', material: '#forge:plates/gold'},
+		{type: 'heavy_weighted', material: '#forge:plates/iron'}
+	]
+	PRESSURE_PLATES.forEach(x => {
+		event.shaped(`minecraft:${x.type}_pressure_plate`, [
+			' B ',
+			'CDC',
+			' E '
+		], {
+			B: '#tfc:hammers',
+			C:  x.material,
+			D: '#forge:small_springs',
+			E: '#forge:tools/screwdrivers'
+		}).id(`minecraft:shaped/${x.type}_pressure_plate`)
+
+		event.recipes.gtceu.assembler(`minecraft:${x.type}_pressure_plate`)
+			.itemInputs('#forge:small_springs', `2x ${x.material}`)
+			.itemOutputs(`minecraft:${x.type}_pressure_plate`)
+			.circuit(0)
+			.duration(50)
+			.EUt(2)
+	})
 }

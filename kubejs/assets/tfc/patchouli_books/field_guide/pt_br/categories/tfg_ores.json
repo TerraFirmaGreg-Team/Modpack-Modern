@@ -1,0 +1,6 @@
+{
+    "name": "Minérios no TFG",
+    "description": "O TFG tem seu próprio sistema de geração de minérios que é similar ao do TFC, mas com veios gigantescos e raros porém com múltiplos minerais por veio. Esta categoria lista todos os tipos de veios e onde encontrá-los.$(br2)Os veios são nomeados de acordo com seu minério mais dominante, mas a maioria dos veios contém de 3 a 5 minerais.$(br2)Veja também: $(l:the_world/geology)Geologia$(), $(l:getting_started/finding_ores)Indicadores$()",
+    "icon": "tfc:ore/pyrite",
+	"sortnum": 60
+}
