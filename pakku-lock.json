@@ -816,20 +816,23 @@
             ]
         },
         {
-            "pakku_id": "DTQY7CRkNhQRsIHc",
+            "pakku_id": "2bYBgl1QjxhmPNgX",
             "pakku_links": [
-                "fMkiGcRPRv1DdRC1",
                 "64uacGcEw697jVGs"
             ],
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "arborfirmacraft"
+                "curseforge": "arborfirmacraft",
+                "modrinth": "arborfirmacraft-(afc)"
             },
             "name": {
-                "curseforge": "ArborFirmaCraft"
+                "curseforge": "ArborFirmaCraft",
+                "modrinth": "ArborFirmaCraft (AFC)"
             },
             "id": {
-                "curseforge": "877545"
+                "curseforge": "877545",
+                "modrinth": "9q4wtMjp"
             },
             "files": [
                 {
@@ -855,6 +858,30 @@
                     ],
                     "size": 5117468,
                     "date_published": "2025-06-10T03:09:58.637Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "afc-1.0.18-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/9q4wtMjp/versions/2LnBYYOD/afc-1.0.18-1.20.1.jar",
+                    "id": "2LnBYYOD",
+                    "parent_id": "9q4wtMjp",
+                    "hashes": {
+                        "sha512": "1ba3efbc9a697abac6e1fd087190fc15b2ddf6f039f0772ba44afc9629ff5f99377ee134fb8c12586e8594d525b0e805d15c6e3520d401175436f9c1914ea432",
+                        "sha1": "c2cfffcce7ff7c1c978326a674389fcbdfb61fd4"
+                    },
+                    "required_dependencies": [
+                        "JaCEZUhg"
+                    ],
+                    "size": 5117468,
+                    "date_published": "2025-06-10T03:08:41.089924Z"
                 }
             ]
         },
@@ -1932,6 +1959,9 @@
         },
         {
             "pakku_id": "A31UAepqnKniFZnm",
+            "pakku_links": [
+                "fR2my61zK1ySP67C"
+            ],
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -4802,7 +4832,8 @@
         {
             "pakku_id": "RkPlX1Bfhnne4042",
             "pakku_links": [
-                "aHeU7fAIYgE8bqks"
+                "aHeU7fAIYgE8bqks",
+                "fR2my61zK1ySP67C"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -8710,20 +8741,20 @@
             ]
         },
         {
-            "pakku_id": "aHeU7fAIYgE8bqks",
+            "pakku_id": "fR2my61zK1ySP67C",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
                 "curseforge": "selene",
-                "modrinth": "selene"
+                "modrinth": "moonlight"
             },
             "name": {
                 "curseforge": "Moonlight Lib",
-                "modrinth": "Selene"
+                "modrinth": "Moonlight Lib"
             },
             "id": {
                 "curseforge": "499980",
-                "modrinth": "hRandqZM"
+                "modrinth": "twkfQtEc"
             },
             "files": [
                 {
@@ -8747,6 +8778,28 @@
                     "required_dependencies": [],
                     "size": 1272670,
                     "date_published": "2025-07-07T10:31:53.687Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "moonlight-1.20-2.14.13-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/97agqQ6E/moonlight-1.20-2.14.13-forge.jar",
+                    "id": "97agqQ6E",
+                    "parent_id": "twkfQtEc",
+                    "hashes": {
+                        "sha512": "a2fe908138ec199aa48d86328fb4f95cab9113d1c7dd296b6d39af86246ccb8cd0c3196d78c6cc89f1a31720ab350575ae82a8952e3532fedd347aeb471421d6",
+                        "sha1": "845e93a836bbb0ed087d363d32b64cad131bcfc4"
+                    },
+                    "required_dependencies": [],
+                    "size": 1272670,
+                    "date_published": "2025-07-07T10:32:06.345999Z"
                 }
             ]
         },
