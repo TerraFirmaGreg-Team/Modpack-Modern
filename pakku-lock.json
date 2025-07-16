@@ -329,6 +329,7 @@
         {
             "pakku_id": "zpZC9ZXFxQQlQXOb",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "ad-astra-auto-lander"
             },
@@ -4728,31 +4729,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "everycomp-1.20-2.8.12-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6740/51/everycomp-1.20-2.8.12-forge.jar",
-                    "id": "6740051",
-                    "parent_id": "628539",
-                    "hashes": {
-                        "sha1": "018be48ad689e61fc14ad0bf54692a5b33f8f8ec",
-                        "md5": "b527208c0b890e7b3ac048b753420e39"
-                    },
-                    "required_dependencies": [
-                        "499980"
-                    ],
-                    "size": 2750134,
-                    "date_published": "2025-07-07T07:20:06.753Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "everycomp-1.20-2.8.12-forge.jar",
+                    "file_name": "everycomp-1.20-2.8.13-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4760,18 +4738,41 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/eiktJyw1/versions/lFpsGBy6/everycomp-1.20-2.8.12-forge.jar",
-                    "id": "lFpsGBy6",
+                    "url": "https://cdn.modrinth.com/data/eiktJyw1/versions/OApRuFlY/everycomp-1.20-2.8.13-forge.jar",
+                    "id": "OApRuFlY",
                     "parent_id": "eiktJyw1",
                     "hashes": {
-                        "sha512": "10621329db21714d8301ea6a7f8ee309fbecdce74a8594a6555d4859e3069fcd8a922bfb7ea29df484cd62a9d56c26c367f9311f02f0b38c0700fab81d377b6c",
-                        "sha1": "018be48ad689e61fc14ad0bf54692a5b33f8f8ec"
+                        "sha512": "5b962ea433301fe6b293f492f46037331477cfbaba6663e9b3b127975fa38b2bd4ac4eecd646038caeb837985e297e9e05fcd3102052180730224d8bf839538f",
+                        "sha1": "10fd16961204edb982c9b807393720ba47c7f5a6"
                     },
                     "required_dependencies": [
                         "twkfQtEc"
                     ],
-                    "size": 2750134,
-                    "date_published": "2025-07-07T07:20:17.667934Z"
+                    "size": 2770655,
+                    "date_published": "2025-07-15T06:10:49.582994Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "everycomp-1.20-2.8.13-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6770/680/everycomp-1.20-2.8.13-forge.jar",
+                    "id": "6770680",
+                    "parent_id": "628539",
+                    "hashes": {
+                        "sha1": "10fd16961204edb982c9b807393720ba47c7f5a6",
+                        "md5": "f751269938565e1372f0d874bb06d228"
+                    },
+                    "required_dependencies": [
+                        "499980"
+                    ],
+                    "size": 2770655,
+                    "date_published": "2025-07-15T06:10:37.127Z"
                 }
             ]
         },
@@ -6217,30 +6218,6 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "fzzy_config-0.7.0+1.20.1+forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6582/106/fzzy_config-0.7.0+1.20.1+forge.jar",
-                    "id": "6582106",
-                    "parent_id": "1005914",
-                    "hashes": {
-                        "sha1": "7d8a48fbf677cd96fdd25f4dfb35557b6e37ab37",
-                        "md5": "818704bec61b268d32d30058ec8672ea"
-                    },
-                    "required_dependencies": [
-                        "351264"
-                    ],
-                    "size": 2216572,
-                    "date_published": "2025-05-26T23:50:01.740Z"
-                },
-                {
                     "type": "modrinth",
                     "file_name": "fzzy_config-0.7.1+1.20.1+forge.jar",
                     "mc_versions": [
@@ -6263,6 +6240,30 @@
                     ],
                     "size": 2220131,
                     "date_published": "2025-07-14T20:01:15.583Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "fzzy_config-0.7.1+1.20.1+forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6769/263/fzzy_config-0.7.1+1.20.1+forge.jar",
+                    "id": "6769263",
+                    "parent_id": "1005914",
+                    "hashes": {
+                        "sha1": "55e77e8ac5bf34ee595c5321eadcaa7dd6b1fe33",
+                        "md5": "81f0820157d0817180b492f538e77b3c"
+                    },
+                    "required_dependencies": [
+                        "351264"
+                    ],
+                    "size": 2220131,
+                    "date_published": "2025-07-14T20:01:07.723Z"
                 }
             ]
         },
@@ -9426,36 +9427,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "packetfixer-3.1.2-1.18-1.20.4-merged.jar",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.1",
-                        "1.20",
-                        "1.20.4"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "neoforge",
-                        "forge",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6720/969/packetfixer-3.1.2-1.18-1.20.4-merged.jar",
-                    "id": "6720969",
-                    "parent_id": "689467",
-                    "hashes": {
-                        "sha1": "b859210aa26e292035d43b1787aaf66fc00299aa",
-                        "md5": "c09f7d0f7ff0b2cc45c8a212da417c47"
-                    },
-                    "required_dependencies": [],
-                    "size": 162633,
-                    "date_published": "2025-07-02T13:01:55.370Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "packetfixer-3.1.2-1.18-1.20.4-merged.jar",
+                    "file_name": "packetfixer-3.1.3-1.18-1.20.4-merged.jar",
                     "mc_versions": [
                         "1.18",
                         "1.18.1",
@@ -9478,16 +9451,44 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/c7m1mi73/versions/cKSms0aU/packetfixer-3.1.2-1.18-1.20.4-merged.jar",
-                    "id": "cKSms0aU",
+                    "url": "https://cdn.modrinth.com/data/c7m1mi73/versions/zx8mdvkG/packetfixer-3.1.3-1.18-1.20.4-merged.jar",
+                    "id": "zx8mdvkG",
                     "parent_id": "c7m1mi73",
                     "hashes": {
-                        "sha512": "aa785ba10eec390ddfcdd160f351f488debbf6142f0fc903429fc2b9710ad3a84b2bddb0f2e628749f4f998a9b894c793a6001cc1e9066ea4ac054b462977cbf",
-                        "sha1": "b859210aa26e292035d43b1787aaf66fc00299aa"
+                        "sha512": "e217d2aebc84f5fb8c051810246008af3ae8c6fbc72578aa5476a622e5a9053e765d31d155bd1bfba3e54bbb4055ae73cb2f8b2bf8f24cd4254d073f398438c8",
+                        "sha1": "1338ae98ccbae20f4419d7f6f2f3510ee207f25c"
                     },
                     "required_dependencies": [],
-                    "size": 162633,
-                    "date_published": "2025-07-02T13:01:38.913224Z"
+                    "size": 163257,
+                    "date_published": "2025-07-15T16:25:32.082506Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "packetfixer-3.1.3-1.18-1.20.4-merged.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.4"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "neoforge",
+                        "forge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6772/308/packetfixer-3.1.3-1.18-1.20.4-merged.jar",
+                    "id": "6772308",
+                    "parent_id": "689467",
+                    "hashes": {
+                        "sha1": "1338ae98ccbae20f4419d7f6f2f3510ee207f25c",
+                        "md5": "c0c347170f64fde6bcfae2004591950c"
+                    },
+                    "required_dependencies": [],
+                    "size": 163257,
+                    "date_published": "2025-07-15T16:24:16.450Z"
                 }
             ]
         },
@@ -10075,9 +10076,8 @@
             ]
         },
         {
-            "pakku_id": "pITFJNUBx59dBitK",
+            "pakku_id": "uNdLsiWKN59kFgTs",
             "pakku_links": [
-                "V83DMpywbmyrQqvg",
                 "pB7ARGecP03UXpd6"
             ],
             "type": "MOD",
@@ -10094,7 +10094,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Primitive creatures v2 forge-1.20.1.jar",
+                    "file_name": "primitive_creatures-2.0.1-forge-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10102,18 +10102,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6680/370/Primitive creatures v2 forge-1.20.1.jar",
-                    "id": "6680370",
+                    "url": "https://edge.forgecdn.net/files/6765/489/primitive_creatures-2.0.1-forge-1.20.1.jar",
+                    "id": "6765489",
                     "parent_id": "1218288",
                     "hashes": {
-                        "sha1": "80ed425171aa47b030bd26630c4d353684f85af8",
-                        "md5": "b5b73d7b0120be63e14e72e848329417"
+                        "sha1": "3cbf513208873286085c9d067eb5a0ef32e74df0",
+                        "md5": "8471f856d14e74663c51baf4ec71c71f"
                     },
                     "required_dependencies": [
                         "388172"
                     ],
-                    "size": 414435,
-                    "date_published": "2025-06-21T20:31:50.780Z"
+                    "size": 426778,
+                    "date_published": "2025-07-13T19:44:01.033Z"
                 }
             ]
         },
