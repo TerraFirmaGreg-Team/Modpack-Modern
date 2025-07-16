@@ -68,6 +68,10 @@ GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
 	registerTFGDimensionMarkers(event)
 })
 
+GTCEuStartupEvents.registry("gtceu:element", event => {
+    registerTFGElement(event)
+})
+
 TFCEvents.registerFoodTrait(event => {
 	registerTFGFoodTraits(event)
 })
