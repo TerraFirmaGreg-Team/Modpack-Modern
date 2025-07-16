@@ -3656,7 +3656,7 @@
         {
             "pakku_id": "rLyHGqTvGY2zL0KW",
             "type": "MOD",
-            "side": "SERVER",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "create-horse-power",
                 "modrinth": "create-horse-power"
@@ -3785,20 +3785,23 @@
             ]
         },
         {
-            "pakku_id": "pCeI0LXh7ieTrU8V",
+            "pakku_id": "NnX7LmflX7AOHEeC",
             "pakku_links": [
-                "0r9Ghrm3IbrHUVzA",
                 "Nw8xTCQngHA15ilh"
             ],
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "hypertubes"
+                "curseforge": "hypertubes",
+                "modrinth": "hypertube"
             },
             "name": {
-                "curseforge": "Create: Hypertubes"
+                "curseforge": "Create: Hypertubes",
+                "modrinth": "Create: Hypertubes"
             },
             "id": {
-                "curseforge": "1281336"
+                "curseforge": "1281336",
+                "modrinth": "ATDdrG1y"
             },
             "files": [
                 {
@@ -3824,6 +3827,35 @@
                     ],
                     "size": 299727,
                     "date_published": "2025-07-02T14:17:53.393Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "create_hypertube-0.2.2-FORGE.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4",
+                        "1.20.5",
+                        "1.20.6"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/ATDdrG1y/versions/T03ljNLM/create_hypertube-0.2.2-FORGE.jar",
+                    "id": "T03ljNLM",
+                    "parent_id": "ATDdrG1y",
+                    "hashes": {
+                        "sha512": "ac6f3166b72a88cf26a215ca02e9a4d156b0e35432c318311d02671b5be5df84f8a114136c2880853e61059cd3dc0755f6d778fbaa6e7ee24735242ac7dada1e",
+                        "sha1": "d162b8a797883b100d1e04f19ce8c0c12e0c1f11"
+                    },
+                    "required_dependencies": [
+                        "LNytGWDc"
+                    ],
+                    "size": 299727,
+                    "date_published": "2025-07-02T14:23:52.046185Z"
                 }
             ]
         },
@@ -5936,16 +5968,20 @@
             ]
         },
         {
-            "pakku_id": "ko9yxHxa0VLNPBl3",
+            "pakku_id": "SkqidsUYUnL5aScG",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "ferritecore"
+                "curseforge": "ferritecore",
+                "modrinth": "ferrite-core"
             },
             "name": {
-                "curseforge": "FerriteCore ((Neo)Forge)"
+                "curseforge": "FerriteCore ((Neo)Forge)",
+                "modrinth": "FerriteCore"
             },
             "id": {
-                "curseforge": "429235"
+                "curseforge": "429235",
+                "modrinth": "uXXizFIs"
             },
             "files": [
                 {
@@ -5970,6 +6006,29 @@
                     "required_dependencies": [],
                     "size": 123034,
                     "date_published": "2023-10-22T13:35:16.597Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "ferritecore-6.0.1-forge.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/uXXizFIs/versions/DG5Fn9Sz/ferritecore-6.0.1-forge.jar",
+                    "id": "DG5Fn9Sz",
+                    "parent_id": "uXXizFIs",
+                    "hashes": {
+                        "sha512": "a1960a7c03dc32d4ccaccaf28afdd9b078758bbd62d15a91d4039a83fa9397a098e89b69591f6bd5190254d9ee97e502504154b9aec764adb8c65f000b75ba2c",
+                        "sha1": "417fb6ce8f52abf40bd9d0390371790f9576f8ba"
+                    },
+                    "required_dependencies": [],
+                    "size": 123034,
+                    "date_published": "2023-10-22T13:40:26.306516Z"
                 }
             ]
         },
