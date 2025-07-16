@@ -2190,20 +2190,20 @@
             ]
         },
         {
-            "pakku_id": "wA5vGyxrH9IEtbiT",
+            "pakku_id": "jZhf9WEWkObAHuVp",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
                 "curseforge": "chalk",
-                "modrinth": "chalk"
+                "modrinth": "chalk-mod"
             },
             "name": {
                 "curseforge": "Chalk",
-                "modrinth": "Chalk (Fabric)"
+                "modrinth": "Chalk"
             },
             "id": {
                 "curseforge": "533748",
-                "modrinth": "OrtjXTCH"
+                "modrinth": "YWGP4Y1d"
             },
             "files": [
                 {
@@ -2226,6 +2226,27 @@
                     "required_dependencies": [],
                     "size": 320854,
                     "date_published": "2025-06-17T15:51:12.797Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "chalk-1.20.1-1.6.6.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/YWGP4Y1d/versions/tRKPNWEg/chalk-1.20.1-1.6.6.jar",
+                    "id": "tRKPNWEg",
+                    "parent_id": "YWGP4Y1d",
+                    "hashes": {
+                        "sha512": "c2c485321015847087c4724c768f5be7dffd24b1cb10be1e8e44f4dfcd42490dd6be82770c83ecba3344f93b4d66651c7bbc811f95ee300d889d11edf51b22f6",
+                        "sha1": "4476abc4a3f707c2e82d91038972644d92752df5"
+                    },
+                    "required_dependencies": [],
+                    "size": 320854,
+                    "date_published": "2025-06-17T15:50:40.420367Z"
                 }
             ]
         },
@@ -2356,16 +2377,20 @@
             ]
         },
         {
-            "pakku_id": "f0QdBRi99S2vr8t6",
+            "pakku_id": "souzHQQB9HhNTn5r",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "chunky-pregenerator-forge"
+                "curseforge": "chunky-pregenerator-forge",
+                "modrinth": "chunky"
             },
             "name": {
-                "curseforge": "Chunky (Forge/NeoForge)"
+                "curseforge": "Chunky (Forge/NeoForge)",
+                "modrinth": "Chunky"
             },
             "id": {
-                "curseforge": "485681"
+                "curseforge": "485681",
+                "modrinth": "fALzjamp"
             },
             "files": [
                 {
@@ -2394,6 +2419,31 @@
                     "required_dependencies": [],
                     "size": 341451,
                     "date_published": "2024-05-06T07:10:57.567Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "Chunky-1.3.146.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/fALzjamp/versions/4FTDk9wv/Chunky-1.3.146.jar",
+                    "id": "4FTDk9wv",
+                    "parent_id": "fALzjamp",
+                    "hashes": {
+                        "sha512": "13ef9d5bfea1895118eec45aa3071e2d79408241f29990624f67e157d4c525391753b0a1539ff3359dad79a6e5ab5e0b84fffbe528bdefcaaefd579ec794d9c9",
+                        "sha1": "0b782d12b4ac3b03a94c28f32e9b2d5587d1dd50"
+                    },
+                    "required_dependencies": [],
+                    "size": 341451,
+                    "date_published": "2024-05-06T07:28:42.102951Z"
                 }
             ]
         },
@@ -3543,16 +3593,20 @@
             ]
         },
         {
-            "pakku_id": "AkHN0rdiPZGbRyXS",
+            "pakku_id": "H0vX4ZdFaJZ5H3ju",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "create-factory-logistics"
+                "curseforge": "create-factory-logistics",
+                "modrinth": "create_factory_logistics"
             },
             "name": {
-                "curseforge": "Create Factory Logistics"
+                "curseforge": "Create Factory Logistics",
+                "modrinth": "Create Factory Logistics"
             },
             "id": {
-                "curseforge": "1218807"
+                "curseforge": "1218807",
+                "modrinth": "QMGO17gm"
             },
             "files": [
                 {
@@ -3575,6 +3629,27 @@
                     "required_dependencies": [],
                     "size": 1082428,
                     "date_published": "2025-07-13T08:41:15.490Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "create_factory_logistics-1.20.1-1.4.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/QMGO17gm/versions/sh99tkPX/create_factory_logistics-1.20.1-1.4.5.jar",
+                    "id": "sh99tkPX",
+                    "parent_id": "QMGO17gm",
+                    "hashes": {
+                        "sha512": "6e3c43e506ac2166eea0d070641dd4f9180543e1fb5765138296dcbdb5f59f4aea01ead8c8a1c049d70ab8cb7d093535ddc196cee1a48c01ee3572f639e772af",
+                        "sha1": "5c2c2a416000273b8503a7ec666bc9325cb5707b"
+                    },
+                    "required_dependencies": [],
+                    "size": 1082428,
+                    "date_published": "2025-07-13T08:41:15.583247Z"
                 }
             ]
         },
