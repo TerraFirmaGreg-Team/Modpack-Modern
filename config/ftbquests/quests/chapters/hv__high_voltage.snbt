@@ -1094,7 +1094,11 @@
 				"3FBDC8552F7D8008"
 				"72BD27FEEB34C7B0"
 			]
-			description: ["{quests.high_voltage.space_suit.desc}"]
+			description: [
+				"{quests.high_voltage.space_suit.desc.1}"
+				"{@pagebreak}"
+				"{quests.high_voltage.space_suit.desc.2}"
+			]
 			id: "038B204DAC9C863D"
 			subtitle: "{quests.high_voltage.space_suit.subtitle}"
 			tasks: [

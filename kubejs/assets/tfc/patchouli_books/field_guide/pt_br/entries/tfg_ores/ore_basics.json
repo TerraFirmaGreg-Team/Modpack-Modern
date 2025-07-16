@@ -1,0 +1,43 @@
+{
+    "name": "Mineração no TFG",
+    "icon": "minecraft:diamond_pickaxe",
+    "category": "tfc:tfg_ores",
+    "priority": true,
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Você precisará de uma $(thing)picareta$() ou uma $(thing)marreta de mineração$() para minerar minérios.$(br2)Um $(thing)martelo$() comum também pode quebrar blocos de pedra rapidamente, mas não dropará minérios. No entanto, ele ainda pode ser útil para $(l:getting_started/primitive_anvils#raw_rock)extrair$() blocos de pedra."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "gtceu:shaped/pickaxe_copper",
+            "recipe2": "gtceu:shaped/mining_hammer_copper"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Picareta",
+            "text": "Quebrar um bloco de minério com uma picareta renderá $(thing)minérios brutos$() (pobres, normais ou ricos), além de um pouco de pó de pedra. Cada um deles não vale muitos mB e você precisará de vários para fazer um único lingote. No entanto, alguns outros minerais só podem ser usados nesse estado, como $(thing)carvão$().",
+            "item": { "tag": "minecraft:pickaxes" }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Marreta de Mineração",
+            "text": "Basicamente, são picaretas com alcance 3x3 e também rendem $(thing)minérios brutos$(). Também são boas para limpar pedras depois de martelar os minérios!$(br2)Segurar $(thing)agachar$() quebrará apenas um bloco por vez.",
+            "item": { "tag": "forge:tools/mining_hammers" }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Processamento básico de minério",
+            "anchor": "processing",
+            "item": "gtceu:crushed_copper_ore",
+            "text": "O processamento de minérios resultará em quantidades muito maiores de metal utilizável. O primeiro passo é usar uma $(l:mechanics/quern)Pedra Mó$() para triturar o minério bruto. Essa etapa pode ser automatizada no futuro com máquinas aprimoradas, como a $(thing)Moenda$(), a $(thing)Roda de Esmagamento$(), o $(thing)Macerador$() e o $(thing)Martelo de Forja$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Purificando pó",
+            "recipe": "gtceu:shapeless/crushed_ore_to_dust_copper",
+            "text": "Para fazer seus minérios triturados derreterem em ainda mais mB, primeiro coloque-os em uma grade de criação junto com um $(thing)Martelo$(). Isso produzirá $(thing)Pó Impuro$(). Para purificar o pó, jogue-o na água ou $(item)$(k:key.use)$() um $(thing)Caldeirão$() cheio de água."
+        }
+    ]
+}
