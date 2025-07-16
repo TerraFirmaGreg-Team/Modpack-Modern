@@ -9,6 +9,9 @@
     "projects": [
         {
             "pakku_id": "v1XVLzfV3EJPc5ke",
+            "pakku_links": [
+                "mYY02F5XR0fB6HXF"
+            ],
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -82,7 +85,8 @@
                 "FnKweRrkUQZW32bO",
                 "0IQGejKaqyQTLzbL",
                 "EbImyRnmgUybUFzA",
-                "OX3oijTxjmeoXyM3"
+                "OX3oijTxjmeoXyM3",
+                "mYY02F5XR0fB6HXF"
             ],
             "type": "MOD",
             "slug": {
@@ -425,16 +429,23 @@
             ]
         },
         {
-            "pakku_id": "TRLGFfgmWd0ze7GV",
+            "pakku_id": "F5HxgTY5cUnKQx1S",
+            "pakku_links": [
+                "SA19Vecc1QTF7Kih"
+            ],
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "advanced-peripherals"
+                "curseforge": "advanced-peripherals",
+                "modrinth": "advancedperipherals"
             },
             "name": {
-                "curseforge": "Advanced Peripherals"
+                "curseforge": "Advanced Peripherals",
+                "modrinth": "Advanced Peripherals"
             },
             "id": {
-                "curseforge": "431725"
+                "curseforge": "431725",
+                "modrinth": "SOw6jD6x"
             },
             "files": [
                 {
@@ -460,6 +471,30 @@
                     ],
                     "size": 885693,
                     "date_published": "2025-06-06T22:01:06.353Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "AdvancedPeripherals-1.20.1-0.7.44r.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/SOw6jD6x/versions/toqbt6Np/AdvancedPeripherals-1.20.1-0.7.44r.jar",
+                    "id": "toqbt6Np",
+                    "parent_id": "SOw6jD6x",
+                    "hashes": {
+                        "sha512": "79c5ef416fbda79fbf8cda44fc3ae5515e6096c975d5c17c99407ea4e69a4b9523f853d7bb5f3677c697c8b0838ccc790d86afb722af6f0adc01e539d1eb71dc",
+                        "sha1": "35c59c04958f068724ae2b7e6b799556b3fdeb84"
+                    },
+                    "required_dependencies": [
+                        "gu7yAYhd"
+                    ],
+                    "size": 885692,
+                    "date_published": "2025-06-06T22:00:33.668272Z"
                 }
             ]
         },
@@ -500,16 +535,20 @@
             ]
         },
         {
-            "pakku_id": "Odyk7EVsuYynAJeZ",
+            "pakku_id": "QDZyqZ3QAXN6Vk9L",
             "type": "MOD",
+            "side": "SERVER",
             "slug": {
-                "curseforge": "almanac-lib"
+                "curseforge": "almanac-lib",
+                "modrinth": "almanac"
             },
             "name": {
-                "curseforge": "Almanac Lib"
+                "curseforge": "Almanac Lib",
+                "modrinth": "Almanac"
             },
             "id": {
-                "curseforge": "1115285"
+                "curseforge": "1115285",
+                "modrinth": "Gi02250Z"
             },
             "files": [
                 {
@@ -535,6 +574,30 @@
                     "required_dependencies": [],
                     "size": 15906,
                     "date_published": "2024-10-11T18:08:14.653Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "almanac-1.20.x-forge-1.0.2.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/Gi02250Z/versions/DnzrwvfD/almanac-1.20.x-forge-1.0.2.jar",
+                    "id": "DnzrwvfD",
+                    "parent_id": "Gi02250Z",
+                    "hashes": {
+                        "sha512": "58c4dea50fcb17593e2c97a23ce101c62b5b32e2fd71d4bbf323f2778d4474c991caba7234ecf4d06f1e246ccb9ad7f67f2fa73f023cd80ef55333e2ed952f43",
+                        "sha1": "f0b711df59cd589b088e536ca4134c5e6e73fd58"
+                    },
+                    "required_dependencies": [],
+                    "size": 15906,
+                    "date_published": "2024-10-11T18:13:58.947870Z"
                 }
             ]
         },
@@ -609,20 +672,23 @@
             ]
         },
         {
-            "pakku_id": "0IQGejKaqyQTLzbL",
+            "pakku_id": "mYY02F5XR0fB6HXF",
             "pakku_links": [
-                "dR8ZIMOQFxDrUtOO",
                 "E7ASIvLUKD1YJURv"
             ],
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "applied-energistics-2"
+                "curseforge": "applied-energistics-2",
+                "modrinth": "ae2"
             },
             "name": {
-                "curseforge": "Applied Energistics 2"
+                "curseforge": "Applied Energistics 2",
+                "modrinth": "Applied Energistics 2"
             },
             "id": {
-                "curseforge": "223794"
+                "curseforge": "223794",
+                "modrinth": "XxWD5pD3"
             },
             "files": [
                 {
@@ -647,6 +713,29 @@
                     ],
                     "size": 8423678,
                     "date_published": "2025-07-13T11:29:51.753Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "appliedenergistics2-forge-15.4.6.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/XxWD5pD3/versions/lqOU9Ohx/appliedenergistics2-forge-15.4.6.jar",
+                    "id": "lqOU9Ohx",
+                    "parent_id": "XxWD5pD3",
+                    "hashes": {
+                        "sha512": "5d1a172f28e1fe2deada9a69af4e07242535d72ce3d9eefaebebd863732c7d9a9f671c712cd599570ee613daa461a85bc895932666dc4f6acbed0421b650f881",
+                        "sha1": "773c809c67ef75979476a1c7062a754b497d9260"
+                    },
+                    "required_dependencies": [
+                        "Ck4E7v7R"
+                    ],
+                    "size": 8423678,
+                    "date_published": "2025-07-13T11:29:51.019917Z"
                 }
             ]
         },
@@ -655,7 +744,8 @@
             "pakku_links": [
                 "x1EwQZ6H2kVKR3U3",
                 "3QJUyVc5jxbc7OFC",
-                "0DMPJ1AWW6qfYubI"
+                "0DMPJ1AWW6qfYubI",
+                "mYY02F5XR0fB6HXF"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -1377,7 +1467,8 @@
         {
             "pakku_id": "vtaYhgPcR8nFk17t",
             "pakku_links": [
-                "oC0unMVGatUQIsDP"
+                "oC0unMVGatUQIsDP",
+                "mYY02F5XR0fB6HXF"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -4847,7 +4938,8 @@
                 "0IQGejKaqyQTLzbL",
                 "EbImyRnmgUybUFzA",
                 "OX3oijTxjmeoXyM3",
-                "E7ASIvLUKD1YJURv"
+                "E7ASIvLUKD1YJURv",
+                "mYY02F5XR0fB6HXF"
             ],
             "type": "MOD",
             "slug": {
@@ -7949,7 +8041,8 @@
         {
             "pakku_id": "ZsCm3zPdnqqiRP9E",
             "pakku_links": [
-                "Odyk7EVsuYynAJeZ"
+                "Odyk7EVsuYynAJeZ",
+                "QDZyqZ3QAXN6Vk9L"
             ],
             "type": "MOD",
             "slug": {
@@ -8187,6 +8280,9 @@
         },
         {
             "pakku_id": "lLYosSs7SJzBZgZP",
+            "pakku_links": [
+                "mYY02F5XR0fB6HXF"
+            ],
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -8257,7 +8353,8 @@
             "pakku_links": [
                 "0IQGejKaqyQTLzbL",
                 "chnSa7MrxlvxvEWU",
-                "3QJUyVc5jxbc7OFC"
+                "3QJUyVc5jxbc7OFC",
+                "mYY02F5XR0fB6HXF"
             ],
             "type": "MOD",
             "slug": {
@@ -10163,7 +10260,8 @@
         {
             "pakku_id": "sbXThweS7VFdgVMJ",
             "pakku_links": [
-                "rbYKnXWzT4megBI6"
+                "rbYKnXWzT4megBI6",
+                "mYY02F5XR0fB6HXF"
             ],
             "type": "MOD",
             "side": "BOTH",
