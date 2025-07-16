@@ -949,21 +949,25 @@
             ]
         },
         {
-            "pakku_id": "Y7Mq6cGsnK4c6ksf",
+            "pakku_id": "Wg44U8f1K4nbIsj1",
             "pakku_links": [
+                "64uacGcEw697jVGs",
                 "6dYejgNtpJaOppvV",
-                "fMkiGcRPRv1DdRC1",
-                "64uacGcEw697jVGs"
+                "4L03mAuxL9hXBkDI"
             ],
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "astikor-carts-tfc"
+                "curseforge": "astikor-carts-tfc",
+                "modrinth": "tfc-astikor-carts"
             },
             "name": {
-                "curseforge": "Astikor Carts TFC"
+                "curseforge": "Astikor Carts TFC",
+                "modrinth": "TFC Astikor Carts"
             },
             "id": {
-                "curseforge": "844019"
+                "curseforge": "844019",
+                "modrinth": "Q7dNt3PU"
             },
             "files": [
                 {
@@ -990,20 +994,49 @@
                     ],
                     "size": 532048,
                     "date_published": "2024-10-09T14:37:43.363Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "TFCAstikorCarts-1.20.1-1.1.8.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/Q7dNt3PU/versions/UVsPFqtl/TFCAstikorCarts-1.20.1-1.1.8.3.jar",
+                    "id": "UVsPFqtl",
+                    "parent_id": "Q7dNt3PU",
+                    "hashes": {
+                        "sha512": "6f2cfc309ba735f1bb423be39a19b1e726b96238d2ac81e93ea55dc10d9c08652d48c16eacb17c9a8cb466904b0c478702b4a35004665a908d986a3cfdf173be",
+                        "sha1": "1a64a638d83e7b33d1f4c589ac0bc3005ffec34f"
+                    },
+                    "required_dependencies": [
+                        "mnLFouB0",
+                        "JaCEZUhg"
+                    ],
+                    "size": 532048,
+                    "date_published": "2024-10-09T14:39:04.045371Z"
                 }
             ]
         },
         {
-            "pakku_id": "6dYejgNtpJaOppvV",
+            "pakku_id": "4L03mAuxL9hXBkDI",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "astikor-carts-redux"
+                "curseforge": "astikor-carts-redux",
+                "modrinth": "astikorcarts-redux"
             },
             "name": {
-                "curseforge": "AstikorCarts Redux"
+                "curseforge": "AstikorCarts Redux",
+                "modrinth": "AstikorCarts Redux"
             },
             "id": {
-                "curseforge": "916493"
+                "curseforge": "916493",
+                "modrinth": "mnLFouB0"
             },
             "files": [
                 {
@@ -1027,6 +1060,29 @@
                     "required_dependencies": [],
                     "size": 231706,
                     "date_published": "2024-07-28T15:17:23.797Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "astikorcarts-1.20.1-1.1.8.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/mnLFouB0/versions/p3r1QBKd/astikorcarts-1.20.1-1.1.8.jar",
+                    "id": "p3r1QBKd",
+                    "parent_id": "mnLFouB0",
+                    "hashes": {
+                        "sha512": "b75bd70ba76b0f82ab4dd546594ff7121849b3c6a574afbfcdb1acc9596559230019628a6197c420e9b96233482780f896574d868f046ef1c61a61c8928d9888",
+                        "sha1": "49a8ac1c23282fe86420f0b4527e522421f2f692"
+                    },
+                    "required_dependencies": [],
+                    "size": 231706,
+                    "date_published": "2024-07-28T15:20:11.552091Z"
                 }
             ]
         },
