@@ -66,7 +66,7 @@ function registerTACZMiscRecipes(event) {
 		A: '#forge:tools/screwdrivers',
 		B: '#forge:gems/flint',
 		C: '#forge:tools/files',
-		D: '#forge:springs/steel',
+		D: '#forge:springs',
 		E: '#forge:bolts/steel',
 		F: '#forge:plates/steel',
 		G: '#forge:tools/wire_cutters',
