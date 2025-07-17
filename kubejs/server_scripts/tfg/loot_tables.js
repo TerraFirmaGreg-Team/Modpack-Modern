@@ -88,4 +88,67 @@ function registerTFGLoots(event) {
         .addLoot('minecraft:campfire')
 
     //#endregion
+	
+	//Cross-mod glass compat
+	const STRONG_GLASSES = [
+		['create:dark_oak_window', true],
+		['create:mangrove_window', true],
+		['create:ornate_iron_window', true],
+		['create:industrial_iron_window', true],
+		['create:weathered_iron_window', true],
+		['create:cherry_window', true],
+		['create:bamboo_window', true],
+		['createdeco:andesite_window', true],
+		['createdeco:copper_window', true],
+		['createdeco:iron_window', true], 
+		['createdeco:industrial_iron_window', true],
+		['createdeco:brass_window', true],
+		['createdeco:zinc_window', true],
+		['everycomp:c/domum_ornamentum/cactus_window_pane', false],
+		['everycomp:c/domum_ornamentum/cactus_extra_window_pane', false]
+	]
+	const GLASSES = [
+		'create:framed_glass',
+		'create:vertical_framed_glass',
+		'create:horizontal_framed_glass',
+		'create:tiled_glass'
+	]
+	
+	STRONG_GLASSES.forEach(glass => {
+		event.addBlockLootModifier(glass[0])
+			.addLoot(glass[0])
+		if(glass[1]){
+			event.addBlockLootModifier(glass[0] + "_pane")
+			.addLoot(glass[0] + "_pane")
+		}
+		
+	});
+	
+	GLASSES.forEach(glass => {
+		event.addBlockLootModifier(glass)
+			.matchMainHand(Item.of('tfc:gem_saw'))
+			.addLoot(glass)
+		event.addBlockLootModifier(glass + "_pane")
+			.matchMainHand(Item.of('tfc:gem_saw'))
+			.addLoot(glass + "_pane")
+		
+	})
+	
+	global.TFC_WOOD_TYPES.forEach(wood => {
+		const id = 'everycomp:c/tfc/' + wood + "_window_pane"
+		event.addBlockLootModifier(id)
+			.addLoot(id)
+	})
+	global.AFC_WOOD_TYPES.forEach(wood => {
+		const id = 'everycomp:c/afc/' + wood + "_window_pane"
+		event.addBlockLootModifier(id)
+			.addLoot(id)
+	})
+	
+	global.AD_ASTRA_WOOD.forEach(wood => {
+		const id = 'everycomp:c/ad_astra/' + wood.name + "_window_pane"
+		event.addBlockLootModifier(id)
+			.addLoot(id)
+	})
+	
 };
