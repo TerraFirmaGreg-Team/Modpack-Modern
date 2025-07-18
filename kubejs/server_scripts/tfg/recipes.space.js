@@ -91,8 +91,8 @@ function registerTFGSpaceRecipes(event) {
 	event.recipes.gtceu.aqueous_accumulator('lava_nether')
 		.circuit(aaCircuit++)
 		.dimension('minecraft:the_nether')
-		.duration(20)
-		.EUt(GTValues.VHA[GTValues.LV])
+		.duration(20*5)
+		.EUt(GTValues.VHA[GTValues.HV])
 		.addDataString("fluidA", "minecraft:lava")
 		.outputFluids(Fluid.of("minecraft:lava", 1000))
 
