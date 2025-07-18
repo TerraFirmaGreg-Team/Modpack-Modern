@@ -489,6 +489,13 @@ const registerGTCEURecipes = (event) => {
 		.duration(400)
 		.EUt(5)
 
+	event.recipes.gtceu.mixer('glue_from_bone_meal')
+		.itemInputs('minecraft:bone_meal')
+		.inputFluids(Fluid.of('tfc:limewater', 500))
+		.outputFluids(Fluid.of('gtceu:glue', 50))
+		.duration(100)
+		.EUt(5)
+
 	// Исправление рецепта пыли серебра стерлинга
 	generateMixerRecipe(event, ['#forge:dusts/copper', '4x #forge:dusts/silver'], [], '5x gtceu:sterling_silver_dust', 1, [], 500, 7, 64, 'sterling_silver')
 
