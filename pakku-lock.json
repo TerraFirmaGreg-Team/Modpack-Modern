@@ -10605,7 +10605,7 @@
                 "3Hn4sTVbBvKyQJJS"
             ],
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "pick-up-notifier",
                 "modrinth": "pick-up-notifier"
@@ -10893,6 +10893,7 @@
             "id": {
                 "curseforge": "585406"
             },
+            "export": false,
             "files": [
                 {
                     "type": "curseforge",
