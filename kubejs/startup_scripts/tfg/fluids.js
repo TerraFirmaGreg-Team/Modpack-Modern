@@ -30,6 +30,16 @@ const registerTFGFluids = (event) => {
 		.luminosity(2)
 		.noBlock()
 
+	//#region Mars
+	event.create('tfg:semiheavy_ammoniacal_water')
+		.thinTexture(0x704f786c)
+		.color(0x4f786c)
+		.viscosity(0)
+		.density(0)
+		.temperature(213)
+		.renderType('translucent')
+	//#endregion
+
 	//#region Venus
     event.create('tfg:sulfur_fumes')
         .stillTexture('tfg:block/planets/venus/sulfur_fumes_still') 

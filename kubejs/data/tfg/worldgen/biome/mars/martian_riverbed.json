@@ -1,9 +1,8 @@
 {
 	"carvers": {
 		"air": [
-			"minecraft:cave",
-			"minecraft:cave_extra_underground",
-			"minecraft:canyon"
+			"tfg:mars_cave",
+			"tfg:mars_canyon"
 		]
 	},
 	"downfall": 0.0,
@@ -27,17 +26,31 @@
 	},
 	"features": [
 		[],
+		"#tfg:mars_craters",
+		[
+			"tfg:earth/geode/amethyst",
+			"tfg:earth/geode/barite",
+			"tfg:earth/geode/calcite",
+			"tfg:earth/geode/gypsum",
+			"tfg:earth/geode/opal",
+			"tfg:earth/geode/pyrite",
+			"tfg:earth/geode/quartzite"
+		],
+		[
+			"tfc:vein/gabbro_dike",
+			"tfc:vein/diorite_dike"
+		],
 		[],
 		[],
+		"#tfg:mars_veins",
+		[],
+		"#tfg:mars_small_rock_features",
 		[
 
 		],
 		[
-			
-		],
-		[],
-		"#tfg:mars_veins",
-		[]
+			"tfg:mars/hardening"
+		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
@@ -52,12 +65,7 @@
 		"creature": [],
 		"misc": [],
 		"monster": [
-			{
-				"type": "ad_astra:martian_raptor",
-				"maxCount": 3,
-				"minCount": 1,
-				"weight": 100
-			}
+		
 		],
 		"underground_water_creature": [],
 		"water_ambient": [],

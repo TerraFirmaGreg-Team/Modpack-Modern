@@ -1494,7 +1494,7 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.assembler('tfg:create/precision_mechanism')
 		.itemInputs('#forge:plates/gold', '2x #forge:small_springs/gold', '2x #forge:small_gears/brass', '2x #forge:bolts/wrought_iron')
 		.itemOutputs('create:precision_mechanism')
-		.duration(2000)
+		.duration(20 * 20)
 		.EUt(20)
 
 	//#endregion

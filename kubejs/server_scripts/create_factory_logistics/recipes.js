@@ -16,7 +16,7 @@ function registerCreateFactoryLogisticsRecipes(event) {
 	event.recipes.gtceu.assembler('create_factory_logistics:fluid_mechanism')
 		.itemInputs('#forge:plates/copper', '2x #forge:small_springs/copper', '2x #forge:small_gears/brass', '2x #forge:bolts/wrought_iron')
 		.itemOutputs('create_factory_logistics:fluid_mechanism')
-		.duration(2000)
+		.duration(20 * 20)
 		.EUt(20)
 
 
