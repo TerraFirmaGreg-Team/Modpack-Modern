@@ -124,6 +124,20 @@ function registerTFGSpaceBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 
+	event.create('tfg:rock/hardened_red_granite')
+		.stoneSoundType()
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'gtceu:item/red_granite' })
+		})
+		.tagBlock('tfc:can_carve')
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/hardened')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.mapColor('terracotta_red')
+		.fullBlock(true)
+		.opaque(true)
+
 	// Loose stones
 
 	event.create('tfg:loose/moon_stone', 'tfc:loose_rock')
@@ -182,6 +196,14 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:rock_knapping')
 		.tagItem('tfc:metamorphic_rock')
 
+	event.create('tfg:loose/red_granite', 'tfc:loose_rock')
+		.stoneSoundType()
+		.itemTexture('tfg:item/loose/red_granite')
+		.tagBlock('tfc:loose_rocks')
+		.tagItem('tfc:any_knapping')
+		.tagItem('tfc:rock_knapping')
+		.tagItem('tfc:igneous_intrusive_rock')
+
 	// Spikes
 
 	event.create('tfg:spike/moon_stone_spike', 'tfc:rock_spike')
@@ -209,6 +231,10 @@ function registerTFGSpaceBlocks(event) {
 		.noItem()
 
 	event.create('tfg:spike/permafrost_spike', 'tfc:rock_spike')
+		.stoneSoundType()
+		.noItem()
+
+	event.create('tfg:spike/red_granite_spike', 'tfc:rock_spike')
 		.stoneSoundType()
 		.noItem()
 

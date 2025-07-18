@@ -25,7 +25,8 @@ global.EXTRATERRESTRIAL_RAW_ROCKS = [
 	'ad_astra:mars_stone',
 	'ad_astra:venus_stone',
 	'ad_astra:mercury_stone',
-	'ad_astra:glacio_stone'
+	'ad_astra:glacio_stone',
+	'gtceu:red_granite'
 ]
 
 global.EXTRATERRESTRIAL_HARDENED_ROCKS = [
@@ -35,6 +36,7 @@ global.EXTRATERRESTRIAL_HARDENED_ROCKS = [
 	'tfg:rock/hardened_venus_stone',
 	'tfg:rock/hardened_mercury_stone',
 	'tfg:rock/hardened_glacio_stone',
+	'tfg:rock/hardened_red_granite'
 ]
 
 global.MOON_STONE_TYPES = [

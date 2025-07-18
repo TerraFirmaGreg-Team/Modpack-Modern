@@ -1,0 +1,7 @@
+{
+	"parent": "tfc:block/rock/spike_middle",
+	"textures": {
+		"texture": "gtceu:block/stones/red_granite/stone",
+		"particle": "gtceu:block/stones/red_granite/stone"
+	}
+}
