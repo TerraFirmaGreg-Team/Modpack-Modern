@@ -91,8 +91,8 @@ function registerTFGSpaceRecipes(event) {
 	event.recipes.gtceu.aqueous_accumulator('lava_nether')
 		.circuit(aaCircuit++)
 		.dimension('minecraft:the_nether')
-		.duration(20)
-		.EUt(GTValues.VHA[GTValues.LV])
+		.duration(20*5)
+		.EUt(GTValues.VHA[GTValues.HV])
 		.addDataString("fluidA", "minecraft:lava")
 		.outputFluids(Fluid.of("minecraft:lava", 1000))
 
@@ -211,35 +211,35 @@ function registerTFGSpaceRecipes(event) {
 
 	// Space suit gases
 
-	event.recipes.gtceu.compressor('compressed_nitrox')
+	event.recipes.gtceu.gas_pressurizer('compressed_nitrox')
 		.inputFluids(Fluid.of('gtceu:nitrogen', 8000), Fluid.of('gtceu:oxygen', 2000))
 		.outputFluids(Fluid.of('tfg:compressed_nitrox', 1000))
 		.circuit(1)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	event.recipes.gtceu.compressor('compressed_heliox')
+	event.recipes.gtceu.gas_pressurizer('compressed_heliox')
 		.inputFluids(Fluid.of('gtceu:helium', 8000), Fluid.of('gtceu:oxygen', 2000))
 		.outputFluids(Fluid.of('tfg:compressed_heliox', 1000))
 		.circuit(1)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	event.recipes.gtceu.compressor('compressed_heliox_3')
+	event.recipes.gtceu.gas_pressurizer('compressed_heliox_3')
 		.inputFluids(Fluid.of('gtceu:helium_3', 8000), Fluid.of('gtceu:oxygen', 2000))
 		.outputFluids(Fluid.of('tfg:compressed_heliox_3', 1000))
 		.circuit(1)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	event.recipes.gtceu.compressor('compressed_trimix')
+	event.recipes.gtceu.gas_pressurizer('compressed_trimix')
 		.inputFluids(Fluid.of('gtceu:nitrogen', 5000), Fluid.of('gtceu:oxygen', 3000), Fluid.of('gtceu:helium', 2000))
 		.outputFluids(Fluid.of('tfg:compressed_trimix', 1000))
 		.circuit(2)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	event.recipes.gtceu.compressor('compressed_trimix_3')
+	event.recipes.gtceu.gas_pressurizer('compressed_trimix_3')
 		.inputFluids(Fluid.of('gtceu:nitrogen', 5000), Fluid.of('gtceu:oxygen', 3000), Fluid.of('gtceu:helium_3', 2000))
 		.outputFluids(Fluid.of('tfg:compressed_trimix_3', 1000))
 		.circuit(2)
