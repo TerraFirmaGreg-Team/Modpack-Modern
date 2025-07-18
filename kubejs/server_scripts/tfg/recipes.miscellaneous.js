@@ -443,7 +443,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.MV])
 
-	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/dry_ice')
+	event.recipes.gtceu.gas_pressurizer('tfg:fluid_solidifier/dry_ice')
 		.inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
 		.notConsumable('gtceu:block_casting_mold')
 		.itemOutputs('2x tfg:dry_ice')
