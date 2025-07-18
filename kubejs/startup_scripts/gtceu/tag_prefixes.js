@@ -52,13 +52,6 @@ const registerGTCEuTagPrefixes = (event) => {
 	TagPrefix.pipeNonupleFluid.defaultTagPath("nonuple_fluid_pipes/%s")
 	TagPrefix.pipeNonupleFluid.unformattedTagPath("nonuple_fluid_pipes")
 
-	// FirmaLife Shit
-	TagPrefix.pipeTinyFluid.customTagPath("", (prefix, mat) => createBlockTag("firmalife:always_valid_greenhouse_wall"))
-	TagPrefix.pipeSmallFluid.customTagPath("", (prefix, mat) => createBlockTag("firmalife:always_valid_greenhouse_wall"))
-	TagPrefix.pipeNormalFluid.customTagPath("", (prefix, mat) => createBlockTag("firmalife:always_valid_greenhouse_wall"))
-	TagPrefix.pipeLargeFluid.customTagPath("", (prefix, mat) => createBlockTag("firmalife:always_valid_greenhouse_wall"))
-	// FirmaLife Shit
-
 	TagPrefix.pipeSmallItem.defaultTagPath("small_item_pipes/%s")
 	TagPrefix.pipeSmallItem.unformattedTagPath("small_item_pipes")
 	TagPrefix.pipeNormalItem.defaultTagPath("normal_item_pipes/%s")
