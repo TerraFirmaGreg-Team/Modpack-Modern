@@ -21,7 +21,7 @@ jobs:
       project_version: ${{ steps.check.outputs.project_version }}
       project_name: ${{ steps.check.outputs.project_name }}
       project_full_name: ${{ steps.check.outputs.project_name }}-${{ steps.check.outputs.project_version }}
-      changelog: ${{ steps.check.outputs.changelog }}
+      changelog: ${{ steps.changelog.outputs.description }}
       mc_version: ${{ steps.check.outputs.minecraft_version }}
       release_type: ${{ steps.check.outputs.release_type }}
       diff: ${{ steps.read_diff.outputs.diff }}
@@ -169,11 +169,9 @@ jobs:
           if ${{ env.DEV_ENVIRONMENT == 'true' && steps.changelog.outcome == 'failure' }}; then
             echo "project_version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
             echo "release_type=Unreleased" >> $GITHUB_OUTPUT
-            echo "changelog='${{ steps.changelog_dev.outputs.description }}'" >> $GITHUB_OUTPUT
           else
             echo "project_version=${{ steps.changelog.outputs.version }}" >> $GITHUB_OUTPUT
             echo "release_type=${{ steps.pakku_info.outputs.release_type }}" >> $GITHUB_OUTPUT
-            echo "changelog='${{ steps.changelog.outputs.description }}'" >> $GITHUB_OUTPUT
           fi
 
       - name: 📄 Format diff
@@ -200,7 +198,7 @@ jobs:
             📃 **Make Release**: `${{ steps.check.outputs.make_release }}`
             
 
-            ${{ steps.check.outputs.changelog }}
+            ${{ steps.changelog_dev.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
   
 
