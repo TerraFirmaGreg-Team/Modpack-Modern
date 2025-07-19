@@ -1,0 +1,21 @@
+{
+  "replace":true,
+  "values":[
+    "tfc:beer",
+    "tfc:cider",
+    "tfc:rum",
+    "tfc:sake",
+    "tfc:vodka",
+    "tfc:whiskey",
+    "tfc:corn_whiskey",
+    "tfc:rye_whiskey",
+    "tfcagedalcohol:aged_beer",
+    "tfcagedalcohol:aged_cider",
+    "tfcagedalcohol:aged_rum",
+    "tfcagedalcohol:aged_sake",
+    "tfcagedalcohol:aged_vodka",
+    "tfcagedalcohol:aged_whiskey",
+    "tfcagedalcohol:aged_corn_whiskey",
+    "tfcagedalcohol:aged_rye_whiskey"
+  ]
+}

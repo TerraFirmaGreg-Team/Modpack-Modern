@@ -1,0 +1,13 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "tfcagedalcohol:aged_cider",
+  "thirst": 15,
+  "intoxication": 2000,
+  "effects": [
+    {
+      "type": "minecraft:speed",
+      "duration": 6400,
+      "amplifier": 0
+    }
+  ]
+}
