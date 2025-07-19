@@ -164,8 +164,7 @@ jobs:
           echo "make_release=${{ steps.check_tag.outputs.exists == false && env.DEV_ENVIRONMENT == false }}" >> $GITHUB_OUTPUT
           echo "exists=${{ steps.check_tag.outputs.exists }}" >> $GITHUB_OUTPUT
           echo "project_name=${{ steps.pakku_info.outputs.name }}" >> $GITHUB_OUTPUT
-          MINECRAFT_VERSION=$(echo "$${{ steps.pakku_lock_info.outputs.mc_versions }}" | jq -r '.[0]' | tr -d '[]"')
-          echo "minecraft_version=(echo "$${{ steps.pakku_lock_info.outputs.mc_versions }}" | jq -r '.[0]' | tr -d '[]"')" >> $GITHUB_OUTPUT
+          echo "minecraft_version=$(echo "$${{ steps.pakku_lock_info.outputs.mc_versions }}" | jq -r '.[0]' | tr -d '[]"')" >> $GITHUB_OUTPUT
 
           if ${{ env.DEV_ENVIRONMENT == 'true' }}; then
             echo "project_version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
