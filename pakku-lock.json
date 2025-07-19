@@ -4167,7 +4167,7 @@
             ]
         },
         {
-            "pakku_id": "NnX7LmflX7AOHEeC",
+            "pakku_id": "WR8Eaw7xnPnm4UOD",
             "pakku_links": [
                 "Nw8xTCQngHA15ilh"
             ],
@@ -4186,6 +4186,30 @@
                 "modrinth": "ATDdrG1y"
             },
             "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "create_hypertube-0.2.3-FORGE.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6785/769/create_hypertube-0.2.3-FORGE.jar",
+                    "id": "6785769",
+                    "parent_id": "1281336",
+                    "hashes": {
+                        "sha1": "15fecf45a7da064af350847c259903af18b6007b",
+                        "md5": "054b2859b02a495ecea2ab5fc6ff6fc1"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 310156,
+                    "date_published": "2025-07-19T00:55:36.140Z"
+                },
                 {
                     "type": "modrinth",
                     "file_name": "create_hypertube-0.2.3-FORGE.jar",
@@ -4214,30 +4238,6 @@
                     ],
                     "size": 310156,
                     "date_published": "2025-07-19T00:59:05.441048Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "create_hypertube-0.2.2-FORGE.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6721/285/create_hypertube-0.2.2-FORGE.jar",
-                    "id": "6721285",
-                    "parent_id": "1281336",
-                    "hashes": {
-                        "sha1": "d162b8a797883b100d1e04f19ce8c0c12e0c1f11",
-                        "md5": "e1776892a5897e2cb5361dfcc76049e6"
-                    },
-                    "required_dependencies": [
-                        "328085"
-                    ],
-                    "size": 299727,
-                    "date_published": "2025-07-02T14:17:53.393Z"
                 }
             ]
         },
