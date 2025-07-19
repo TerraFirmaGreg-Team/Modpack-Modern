@@ -69,14 +69,6 @@ const registerFirmaLifeBlockTags = (event) => {
 
     event.add('firmalife:oven_insulation', 'firmalife:stovetop_pot');
     event.add('firmalife:oven_insulation', 'firmalife:vat');
-
-    //Allows any block with the word "brick" in its id to be used as oven insulation.
-    //Add blacklisted words to the const with | between.
-    const brick_blacklist = ('drying|additionalplacements');
-    event.add('firmalife:oven_insulation', `/^(?=.*brick)(?!.*(${brick_blacklist})).*/`);
-
-    event.add('firmalife:oven_insulation', 'firmalife:stovetop_pot');
-    event.add('firmalife:oven_insulation', 'firmalife:vat');
 }
 
 const registerFirmaLifeFluidTags = (event) => {
