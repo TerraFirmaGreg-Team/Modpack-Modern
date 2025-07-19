@@ -483,10 +483,17 @@ const registerGTCEURecipes = (event) => {
 	}).id('gtceu:shaped/electric_blast_furnace')
 
 	// Клей из ТФК клея
-	event.recipes.gtceu.extractor('glue_from_tfc_glue')
+	event.recipes.gtceu.extractor('tfg:glue_from_tfc_glue')
 		.itemInputs('tfc:glue')
 		.outputFluids(Fluid.of('gtceu:glue', 50))
 		.duration(400)
+		.EUt(5)
+
+	event.recipes.gtceu.mixer('tfg:glue_from_bone_meal')
+		.itemInputs('minecraft:bone_meal')
+		.inputFluids(Fluid.of('tfc:limewater', 500))
+		.outputFluids(Fluid.of('gtceu:glue', 50))
+		.duration(100)
 		.EUt(5)
 
 	// Исправление рецепта пыли серебра стерлинга
