@@ -1,0 +1,30 @@
+
+#Adaptive Performance Tweaks: Spawn
+["Alexs Mobs Spawn Config"]
+	Enabled = true
+	Id = "alexsmobs"
+	#Range: 1 ~ 64
+	MaxPassiveMobsPerPlayer = 4
+	#Range: 1 ~ 512
+	MaxPassiveMobsPerWorld = 16
+	#Range: 1 ~ 1024
+	MaxPassiveMobsPerServer = 320
+	#List of passive Mobs to optimize in the format ["minecraft:bat", "minecraft:cat", ..]
+	PassiveMobsList = ["alexsmobs:blobfish", "alexsmobs:endergrade", "alexsmobs:fly", "alexsmobs:gazelle", "alexsmobs:hummingbird", "alexsmobs:mungus", "alexsmobs:seal", "alexsmobs:spectre", "alexsmobs:stradpole", "alexsmobs:sunbird"]
+	#Range: 1 ~ 64
+	MaxNeutralMobsPerPlayer = 4
+	#Range: 1 ~ 512
+	MaxNeutralMobsPerWorld = 16
+	#Range: 1 ~ 1024
+	MaxNeutralMobsPerServer = 320
+	#List of neutral Mobs to optimize in the format ["minecraft:bee", "minecraft:wolf", ..]
+	NeutralMobsList = ["alexsmobs:cachalot_whale", "alexsmobs:capuchin_monkey", "alexsmobs:cockroach", "alexsmobs:crow", "alexsmobs:elephant", "alexsmobs:emu", "alexsmobs:gorilla", "alexsmobs:kangaroo", "alexsmobs:lobster", "alexsmobs:mantis_shrimp", "alexsmobs:moose", "alexsmobs:orca", "alexsmobs:platypus", "alexsmobs:raccoon", "alexsmobs:roadrunner", "alexsmobs:shoebill", "alexsmobs:snow_leopard", "alexsmobs:tasmanian_devil", "alexsmobs:warped_toad"]
+	#Range: 1 ~ 64
+	MaxHostileMobsPerPlayer = 4
+	#Range: 1 ~ 512
+	MaxHostileMobsPerWorld = 16
+	#Range: 1 ~ 1024
+	MaxHostileMobsPerServer = 320
+	#List of hostile Mobs to optimize in the format ["minecraft:blaze", "minecraft:cave_spider", ..]
+	HostileMobsList = ["alexsmobs:alligator_snapping_turtle", "alexsmobs:bone_serpent", "alexsmobs:centipede_head", "alexsmobs:crimson_mosquito", "alexsmobs:crocodile", "alexsmobs:dropbear", "alexsmobs:enderiophage", "alexsmobs:grizzly_bear", "alexsmobs:guster", "alexsmobs:hammerhead_shark", "alexsmobs:komodo_dragon", "alexsmobs:leafcutter_ant", "alexsmobs:mimicube", "alexsmobs:rattlesnake", "alexsmobs:soul_vulture", "alexsmobs:straddler", "alexsmobs:warped_mosco"]
+

@@ -17,12 +17,23 @@ vesselHeatMultiplier = 0.5
 #Limit the max boiler level achievable with a Fluid Vessel
 #Range: 0 ~ 18
 vesselMaxLevel = 18
+#.
+#RPM of a Kinetic Battery when discharging
+#Range: 0 ~ 256
+batteryDischargeRPM = 64
+#.
+#Max capacity of a Kinetic Battery in su-hours
+#Range: 0.0 ~ 8192.0
+batteryCapacity = 512.0
+#.
+#Allow Redstone Links to have wildcards in both slots [restart required]
+allowDualWildcardLink = false
 
 [stressValues]
 
 	#.
 	#Fine tune the kinetic stats of individual components
-	[stressValues.v2]
+	[stressValues.v1]
 		#.
 		#Stress impact of a powered brake [in Stress Units]
 		#Range: -Infinity ~ Infinity
@@ -32,23 +43,25 @@ vesselMaxLevel = 18
 		#.
 		#[in Stress Units]
 		#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
-		[stressValues.v2.impact]
-			inverted_gearshift = 0.0
-			six_way_gearbox = 0.0
+		[stressValues.v1.impact]
+			brass_gearbox = 0.0
 			centrifugal_clutch = 0.0
-			overstress_clutch = 0.0
 			brake = 0.0
 			encased_chain_cogwheel = 0.0
-			inverted_clutch = 0.0
-			parallel_gearbox = 0.0
-			freewheel_clutch = 0.0
-			brass_gearbox = 0.0
+			kinetic_battery = 64.0
+			six_way_gearbox = 0.0
 			shear_pin = 0.0
+			parallel_gearbox = 0.0
+			inverted_gearshift = 0.0
+			freewheel_clutch = 0.0
+			overstress_clutch = 0.0
+			inverted_clutch = 0.0
 
 		#.
 		#[in Stress Units]
 		#Configure how much stress a source can accommodate for.
-		[stressValues.v2.capacity]
-			crank_wheel = 2.0
-			large_crank_wheel = 2.0
+		[stressValues.v1.capacity]
+			crank_wheel = 8.0
+			kinetic_battery = 32.0
+			large_crank_wheel = 8.0
 

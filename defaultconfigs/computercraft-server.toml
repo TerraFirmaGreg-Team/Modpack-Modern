@@ -184,22 +184,28 @@ disabled_generic_methods = []
 
 	#Terminal size of computers.
 	[term_sizes.computer]
+		#Width of computer terminal
 		#Range: 1 ~ 255
 		width = 51
+		#Height of computer terminal
 		#Range: 1 ~ 255
 		height = 19
 
 	#Terminal size of pocket computers.
 	[term_sizes.pocket_computer]
+		#Width of pocket computer terminal
 		#Range: 1 ~ 255
 		width = 26
+		#Height of pocket computer terminal
 		#Range: 1 ~ 255
 		height = 20
 
 	#Maximum size of monitors (in blocks).
 	[term_sizes.monitor]
+		#Maximum width of monitors
 		#Range: 1 ~ 32
 		width = 8
+		#Maximum height of monitors
 		#Range: 1 ~ 32
 		height = 6
 

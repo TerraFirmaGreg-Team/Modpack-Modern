@@ -16,11 +16,11 @@
 	noOffhandTorchWithBlock = true
 	#This prevents torches from being placed from your offhand if you have food in your main hand.
 	noOffhandTorchWithFood = true
-	#This prevents torches from being placed from your off hand if you have an empty main hand.
+	#This prevents torches from being placed from your offhand if you have an empty main hand.
 	noOffhandTorchWithEmptyHand = false
 	#This restricts torches to be placed from the offhand only when you're holding a tool in your main hand.
 	offhandTorchWithToolOnly = false
-	#This prevents fireworks from being launched from your off hand if you are wearing an Elytra, unless you're flying.
+	#This prevents fireworks from being launched from your offhand if you are wearing an Elytra, unless you're flying.
 	noOffhandFireworksWithElytra = true
 	#This option will disable step assist added by other mods.
 	disableStepAssist = false
@@ -36,6 +36,12 @@
 	noRecipeBookShifting = false
 	#This option will disable paving when holding a block in your offhand.
 	disablePavingWithBlockInOffhand = true
+	#This prevents the last durability from being used up.
+	doNotUseLastMending = false
+	#This prevents items from being used from your offhand if you have food in your main hand.
+	noOffhandUseWithFood = false
+	#Prevents accidental mining of certain fragile blocks like budding amethysts.
+	preventAccidentalMining = false
 
 [customization]
 	#Items that count as torches for the offhand-torch tweak options.
@@ -48,4 +54,6 @@
 	shieldItems = ["basicshields:wooden_shield", "basicshields:golden_shield", "basicshields:diamond_shield", "basicshields:netherite_shield"]
 	#Items that count as fireworks for the offhand-firework tweak options.
 	fireworkItems = ["minecraft:firework_rocket"]
+	#Blocks that should be protected in the prevent accidental mining tweak.
+	fragileBlocks = ["minecraft:large_amethyst_bud", "minecraft:medium_amethyst_bud", "minecraft:small_amethyst_bud", "minecraft:budding_amethyst"]
 

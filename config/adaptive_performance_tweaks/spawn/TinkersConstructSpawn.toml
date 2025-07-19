@@ -1,0 +1,14 @@
+
+#Adaptive Performance Tweaks: Spawn
+["Tinkers Construct Spawn Config"]
+	Enabled = true
+	Id = "tconstruct"
+	#Range: 1 ~ 64
+	MaxHostileMobsPerPlayer = 6
+	#Range: 1 ~ 512
+	MaxHostileMobsPerWorld = 24
+	#Range: 1 ~ 1024
+	MaxHostileMobsPerServer = 320
+	#List of hostile Mobs to optimize in the format ["minecraft:blaze", "minecraft:cave_spider", ..]
+	HostileMobsList = ["tconstruct:earth_slime", "tconstruct:sky_slime", "tconstruct:ender_slime"]
+
