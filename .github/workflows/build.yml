@@ -165,7 +165,7 @@ jobs:
           echo "exists=${{ steps.check_tag.outputs.exists }}" >> $GITHUB_OUTPUT
           echo "project_name=${{ steps.pakku_info.outputs.name }}" >> $GITHUB_OUTPUT
           MC_VERSIONS_JSON='${{ steps.pakku_lock_info.outputs.mc_versions }}'
-          MINECRAFT_VERSION=$(echo "$${{ steps.pakku_lock_info.outputs.mc_versions }}" | jq -r '.[0]' | tr -d '[]"')
+          MINECRAFT_VERSION=$(echo "$MC_VERSIONS_JSON" | jq -r '.[0]' | tr -d '[]"')
           echo "minecraft_version=$MINECRAFT_VERSION" >> $GITHUB_OUTPUT
 
           if ${{ env.DEV_ENVIRONMENT == 'true' }}; then
