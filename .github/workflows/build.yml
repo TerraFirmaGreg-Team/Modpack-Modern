@@ -199,8 +199,8 @@ jobs:
             📃 **Make Release**: `${{ steps.check.outputs.make_release }}`
             
 
-            ${{ steps.check.outputs.changelog }}
-            ${{ steps.format_diff.outputs.text }}
+            "${{ steps.check.outputs.changelog }}"
+            "${{ steps.format_diff.outputs.text }}"
   
 
   build-modpack:
