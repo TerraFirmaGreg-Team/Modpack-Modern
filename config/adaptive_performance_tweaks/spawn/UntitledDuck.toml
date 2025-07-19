@@ -1,0 +1,22 @@
+
+#Adaptive Performance Tweaks: Spawn
+["Untitled Duck Spawn Config"]
+	Enabled = true
+	Id = "untitledduckmod"
+	#Range: 1 ~ 64
+	MaxPassiveMobsPerPlayer = 16
+	#Range: 1 ~ 512
+	MaxPassiveMobsPerWorld = 32
+	#Range: 1 ~ 1024
+	MaxPassiveMobsPerServer = 320
+	#List of passive Mobs to optimize in the format ["minecraft:bat", "minecraft:cat", ..]
+	PassiveMobsList = ["untitledduckmod:duck"]
+	#Range: 1 ~ 64
+	MaxNeutralMobsPerPlayer = 8
+	#Range: 1 ~ 512
+	MaxNeutralMobsPerWorld = 32
+	#Range: 1 ~ 1024
+	MaxNeutralMobsPerServer = 320
+	#List of neutral Mobs to optimize in the format ["minecraft:bee", "minecraft:wolf", ..]
+	NeutralMobsList = ["untitledduckmod:goose"]
+

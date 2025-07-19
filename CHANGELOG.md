@@ -1,6 +1,8 @@
 # Changelog
-
 ## [Unreleased]
+### Changes
+
+## [0.10.1] - 19-07-2025
 ### Changes
 - Added harvest baskets to pick fruit from fruit trees and berry bushes (#1338) @Redeix
 - Added ice soup @Pyritie
@@ -10,6 +12,9 @@
 - Added Tier 2 Insulation: Alkaline Earth Silicate @BlueBoat29
 - Added tfc data to tacz guns and attachments (#1353) @Redeix
 - Allowed "window" blocks and panes to be broken and picked up @BlueBoat29
+- Updated title and loading screens to be more memory efficient and hopefully look better on other resolutions. (#1381) @Redeix
+- Changed Firmalife greenhouses to no longer allow any doors/trapdoors/pipes (#1363) @BlueBoat29
+- Thorium is now Pink (#1378) @Nebby1999
 ### Bug fixes
 - Fixed yeast food processor conflict (#1310) @Redeix
 - Fixed seed oil voiding in barrels (#1310) @Redeix
@@ -41,6 +46,8 @@
 - Fixed flintlock not being craftable before LV (#1353) @Redeix
 - Fixed the field guide not working for chinese players (#1356) @Pyritie
 - Fixed glass blocks dropping with gem saw (#1367) @BlueBoat29
+- Fixed Hv Quest TNT #1373 @TomPlop
+- Fixed Smooth Stone #1380 @TomPlop
 
 ## [0.10.0] - 13.07.2025
 - [!WARNING] If you're upgrading your world from 0.9 to 0.10, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.9-to-0.10). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!

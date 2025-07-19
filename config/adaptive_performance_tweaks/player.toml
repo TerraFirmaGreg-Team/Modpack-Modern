@@ -1,0 +1,31 @@
+
+#Adaptive Performance Tweaks: Player
+["Player Login"]
+	#Enable/Disable optimization which are happening during player login.
+	optimizePlayerLogin = true
+	#Timeout in seconds for the player validation.
+	#Range: 16 ~ 300
+	playerLoginValidationTimeout = 90
+
+["Player Protection"]
+	#Protect player during login within the validation timeout.
+	protectPlayerDuringLogin = true
+	#Enable/Disable player protection logging with login time.
+	protectPlayerDuringLoginLogging = true
+
+["Child Player Protection"]
+	#Protect child player and give them a more enjoyable play experience.
+	enableChildPlayerProtection = true
+	#List of child player username for the child player protection.
+	childPlayerProtectionList = [""]
+	#Sets the child player to invisible.
+	childPlayerInvisible = true
+	#Sets the child player to invulnerable.
+	childPlayerInvulnerable = false
+	#Reduces the hurt damage to a child player by the amount of % (0 = disabled).
+	#Range: 0 ~ 100
+	childPlayerHurtDamageReduction = 50
+	#Increase the attack damage of a child player by the amount of % (0 = disabled).
+	#Range: 0 ~ 1000
+	childPlayerAttackDamageIncrease = 50
+

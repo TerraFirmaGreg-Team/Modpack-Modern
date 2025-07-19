@@ -46,7 +46,10 @@
 		[],
 		"#tfg:mars_small_rock_features",
 		[
-
+			"tfg:mars/surface/aeronos_patch",
+			"tfg:mars/surface/strophar_patch",
+			"tfg:mars/surface/aeronos_huge",
+			"tfg:mars/surface/strophar_huge"
 		],
 		[
 			"tfg:mars/hardening"

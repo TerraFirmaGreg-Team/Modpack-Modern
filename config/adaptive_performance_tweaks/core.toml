@@ -1,0 +1,21 @@
+
+#Adaptive Performance Tweaks: Core
+[General]
+	#The time after a high to low load change is considered as valid. High loads are always considered immediately.
+	#Range: 1 ~ 90
+	timeBetweenUpdates = 10
+	#Enable/Disable logging of the overall server load.
+	logServerLoad = true
+	#Enable/Disable logging of the individual level load.
+	logServerLevelLoad = true
+
+["Game Difficulty Factors"]
+	#Range: 0.1 ~ 10.0
+	gameDifficultyFactorEasy = 0.9
+	#Range: 0.1 ~ 10.0
+	gameDifficultyFactorNormal = 1.0
+	#Range: 0.1 ~ 10.0
+	gameDifficultyFactorPeaceful = 1.0
+	#Range: 0.1 ~ 10.0
+	gameDifficultyFactorHard = 2.0
+

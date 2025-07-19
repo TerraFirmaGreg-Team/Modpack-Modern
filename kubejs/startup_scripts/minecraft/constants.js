@@ -136,19 +136,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:sand', 
     'minecraft:suspicious_sand',
 
-    // Красный песок
-    'minecraft:red_sandstone', 
-    'minecraft:red_sandstone_stairs', 
-    'minecraft:red_sandstone_slab', 
-    'minecraft:red_sandstone_wall', 
-    'minecraft:smooth_red_sandstone', 
-    'minecraft:smooth_red_sandstone_stairs', 
-    'minecraft:smooth_red_sandstone_slab',
-    'minecraft:cut_red_sandstone', 
-    'minecraft:cut_red_sandstone_slab', 
-    'minecraft:chiseled_red_sandstone', 
-    'minecraft:red_sand',
-
     // Кораллы
     'minecraft:horn_coral',
     'minecraft:horn_coral_fan', 
@@ -774,21 +761,6 @@ global.VANILLA_WOOD_TYPES = [
     "mangrove",
     "crimson", // TODO: Разблокировать когда появится АД
     "warped" // TODO: Разблокировать когда появится АД
-];
-
-global.VANILLA_STONE_TYPES = [
-    "sand",
-    "red_sand",
-    "gravel",
-    "ore",
-    "deepslate",
-    "basalt",
-    "endstone",
-    "netherrack",
-    "andesite",
-    "diorite",
-    "granite",
-    "tuff"
 ];
 
 global.MINECRAFT_DYE_NAMES = [
