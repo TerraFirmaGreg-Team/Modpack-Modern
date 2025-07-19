@@ -1,0 +1,15 @@
+
+#Adaptive Performance Tweaks: Spawn
+["Born in Chaos Spawn Config"]
+	Enabled = true
+	Id = "born_in_chaos_v1"
+	#e.g. mobs which will always attack yon ...
+	#Range: 1 ~ 64
+	HostileMobsPerPlayer = 16
+	#Range: 1 ~ 512
+	HostileMobsPerWorld = 32
+	#Range: 1 ~ 1024
+	HostileMobsPerServer = 320
+	#List of hostile Mobs to optimize in the format ["minecraft:blaze", "minecraft:cave_spider", ..]
+	HostileMobsList = ["born_in_chaos_v1:baby_s_2", "born_in_chaos_v1:baby_skeleton", "born_in_chaos_v1:bone_imp", "born_in_chaos_v1:bone_imp_2", "born_in_chaos_v1:bonescaller", "born_in_chaos_v1:dark_vortex", "born_in_chaos_v1:decaying_zombie", "born_in_chaos_v1:decrepit_skeleton", "born_in_chaos_v1:diamond_thermite", "born_in_chaos_v1:dread_hound", "born_in_chaos_v1:fallen_chaos_knight", "born_in_chaos_v1:firelight", "born_in_chaos_v1:mr_pumpkin", "born_in_chaos_v1:nightmare_stalker", "born_in_chaos_v1:phantom_creeper", "born_in_chaos_v1:pumpkin_spirit", "born_in_chaos_v1:restless_spirit", "born_in_chaos_v1:scarletpersecutor", "born_in_chaos_v1:seared_spirit", "born_in_chaos_v1:shy_spirit", "born_in_chaos_v1:skeleton_bomb", "born_in_chaos_v1:skeleton_thrasher", "born_in_chaos_v1:spirit_guide_assistant", "born_in_chaos_v1:spiritual_guide", "born_in_chaos_v1:supreme_bonecaller", "born_in_chaos_v1:wither_strider", "born_in_chaos_v1:zombie_clown", "born_in_chaos_v1:zombiesina_barrel", "born_in_chaos_v1:zombieswith_door"]
+

@@ -1,0 +1,30 @@
+
+#Adaptive Performance Tweaks: Spawn
+["Panthalassa Spawn Config"]
+	Enabled = true
+	Id = "panthalassa"
+	#Range: 1 ~ 64
+	MaxPassiveMobsPerPlayer = 4
+	#Range: 1 ~ 512
+	MaxPassiveMobsPerWorld = 16
+	#Range: 1 ~ 1024
+	MaxPassiveMobsPerServer = 320
+	#List of passive Mobs to optimize in the format ["minecraft:bat", "minecraft:cat", ..]
+	PassiveMobsList = ["panthalassa:acrolepis", "panthalassa:anomalocaris", "panthalassa:ceratodus", "panthalassa:coelacanth"]
+	#Range: 1 ~ 64
+	MaxNeutralMobsPerPlayer = 4
+	#Range: 1 ~ 512
+	MaxNeutralMobsPerWorld = 16
+	#Range: 1 ~ 1024
+	MaxNeutralMobsPerServer = 320
+	#List of neutral Mobs to optimize in the format ["minecraft:bee", "minecraft:wolf", ..]
+	NeutralMobsList = ["panthalassa:archelon", "panthalassa:basilosaurus", "panthalassa:leedsichthys"]
+	#Range: 1 ~ 64
+	MaxHostileMobsPerPlayer = 8
+	#Range: 1 ~ 512
+	MaxHostileMobsPerWorld = 32
+	#Range: 1 ~ 1024
+	MaxHostileMobsPerServer = 320
+	#List of hostile Mobs to optimize in the format ["minecraft:blaze", "minecraft:cave_spider", ..]
+	HostileMobsList = ["panthalassa:anglerfish", "panthalassa:dunkleosteus", "panthalassa:giant_orthocone", "panthalassa:helicoprion", "panthalassa:kronosaurus", "panthalassa:megalodon", "panthalassa:mosasaurus", "panthalassa:thalassomedon"]
+

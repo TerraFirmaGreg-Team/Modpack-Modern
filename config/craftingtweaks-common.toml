@@ -15,4 +15,6 @@
 	mode = "DEFAULT"
 	#Add mod ids here of mods that you wish to disable Crafting Tweaks support for.
 	disabledAddons = []
+	#Use an alternative client-side balancing algorithm. It might be faster, or it might be slower, depending on the input. Try it if regular client-side balancing is causing lagspikes.
+	hyperOptimizedClientsideBalancing = false
 
