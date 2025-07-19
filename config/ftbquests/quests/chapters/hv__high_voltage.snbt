@@ -19,6 +19,20 @@
 			x: -7.5d
 			y: -6.5d
 		}
+		{
+			id: "33D3C2A9337335D2"
+			linked_quest: "493D733A5438DD7E"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			id: "2CDC2C148418F176"
+			linked_quest: "396E85A39FF414CF"
+			shape: "gear"
+			size: 2.0d
+			x: 13.0d
+			y: -6.0d
+		}
 	]
 	quests: [
 		{
@@ -266,11 +280,7 @@
 		}
 		{
 			dependencies: ["197A13A0790F000B"]
-			description: [
-				"{quests.high_voltage.rutile_loop.desc.1}"
-				"{@pagebreak}"
-				"{quests.high_voltage.rutile_loop.desc.2}"
-			]
+			description: ["{quests.high_voltage.rutile_loop.desc}"]
 			icon: "gtceu:rutile_dust"
 			id: "59DFC4DA7D29C315"
 			shape: "square"
@@ -326,7 +336,7 @@
 		{
 			dependencies: ["7E755297E9685374"]
 			description: [
-				"{quests.high_voltage.nichrome_coils.desc.1"
+				"{quests.high_voltage.nichrome_coils.desc.1}"
 				"{@pagebreak}"
 				"{quests.high_voltage.nichrome_coils.desc.2}"
 			]
@@ -408,7 +418,7 @@
 				item: "gtceu:hv_circuit_assembler"
 				type: "item"
 			}]
-			title: "{quests.high_voltage.circuit_assembler.title"
+			title: "{quests.high_voltage.circuit_assembler.title}"
 			x: 10.0d
 			y: 2.0d
 		}
@@ -452,7 +462,7 @@
 			description: [
 				"{quests.high_voltage.cleanroom.desc.1}"
 				"{@pagebreak}"
-				"{quests.high_voltage.cleanroom.desc.2"
+				"{quests.high_voltage.cleanroom.desc.2}"
 			]
 			icon: "gtceu:cleanroom"
 			id: "3568BC9742092FC5"
@@ -610,24 +620,31 @@
 				"{quests.high_voltage.tnt.desc.1}"
 				"{@pagebreak}"
 				"{quests.high_voltage.tnt.desc.2}"
+				"{@pagebreak}"
+				"{quests.high_voltage.tnt.desc.3}"
 			]
 			icon: "minecraft:tnt"
 			id: "2B7B214EDE0B45A2"
 			size: 1.0d
 			tasks: [
 				{
-					id: "1CB85F57BA45252D"
-					item: "gtceu:gelled_toluene"
-					type: "item"
-				}
-				{
 					id: "04BF6A36E965C348"
 					item: "minecraft:tnt"
 					type: "item"
 				}
 				{
-					id: "6DC25EED8E91BEC2"
-					item: "gtceu:toluene_bucket"
+					id: "162CDC2567F6D6A8"
+					item: "gtceu:industrial_tnt"
+					type: "item"
+				}
+				{
+					id: "4CFB597542DD0194"
+					item: "gtceu:dynamite"
+					type: "item"
+				}
+				{
+					id: "0BF4703D1DBAA5B7"
+					item: "gtceu:powderbarrel"
 					type: "item"
 				}
 			]
@@ -954,9 +971,13 @@
 				"05ABC370D7153350"
 				"16B735F9C391D260"
 			]
-			description: ["To make the &6Rocket Alloy&r, you will need to put &7Aluminium&r, &7Stainless Steel&r and &cLiquid Red Steel&r into your new &6HV&r Mixer.\\n\\nThe recipe takes some time, so expect to have your mixer fully dedicated to this step.\\n\\nAfter that, your dust will need to be smelted in your EBF at &bMV&r. If you already have &6Nichrome Coils&r and your EBF is running at &6HV&r, you will be able to &aPerfect Overclock&r the recipe (&7check the Gregtech Energy chapter if you don't understand&r).\\n\\nYou can also cool the ingots down with a &9Chemical Bath&r or, if you already have one, a &9Vacuum Freezer&r for a shorter processing time.\\n\\n&7144mb equals 1 ingot&r, so make sure not to extract too much &cRed Steel&r.\\n\\nYou will need &685 Rocket Alloy&r ingots total, which means:\\n- &760 Aluminium&r\\n- &720 Stainless Steel&r\\n- &710 Red Steel&r\\n\\n&aNothing too bad!&r"]
+			description: [
+				"{quests.high_voltage.space_alloy.desc.1}"
+				"{@pagebreak}"
+				"{quests.high_voltage.space_alloy.desc.2}"
+			]
 			id: "56D337E264A4154F"
-			subtitle: "It's a new material"
+			subtitle: "{quests.high_voltage.space_alloy.subtitle}"
 			tasks: [
 				{
 					id: "0FCF38A07889B205"
@@ -969,7 +990,7 @@
 					type: "item"
 				}
 			]
-			title: "Space Alloy"
+			title: "{quests.high_voltage.space_alloy.title}"
 			x: 5.0d
 			y: -2.0d
 		}
@@ -978,9 +999,9 @@
 				"56D337E264A4154F"
 				"41D32C5178760F47"
 			]
-			description: ["The &6Rocket Nose Cone&r is the hardest part of your Rocket.\\nYou will need a hefty amount of &aPolyethylene&r — so we hope you already have it passively produced — and a &6HV&r Emitter.\\nYou should be able to get your hands on &dChromium&r by electrolyzing &cRuby Dust&r.\\n\\nThe &aVitrified Ender Pearl&r is trickier and requires you to follow the quest unlocked by the &6HV Chemical Reactor&r.\\nGet ready to make &cTNT&r, build an &5Implosion Compressor&r, and recreate the famous Enderman drop — since you won’t find Ender Pearls natively in &2TFG&r."]
+			description: ["{quests.high_voltage.rocket_nose_cone.desc}"]
 			id: "1E307CD76691C24F"
-			subtitle: "The nose knows..."
+			subtitle: "{quests.high_voltage.rocket_nose_cone.subtitle}"
 			tasks: [{
 				id: "05AEC4A2F295098C"
 				item: "ad_astra:rocket_nose_cone"
@@ -991,24 +1012,25 @@
 		}
 		{
 			dependencies: ["7FA0ACB7F161F378"]
-			description: ["Well, that was quite the experience! Between the &9Rutile Processing&r line, the &5Vacuum Chamber&r, and the &5Cleanroom&r, you’ve uncovered a lot of new mechanics. \\nThat’s great — because this is only the beginning.\\n\\nDid you walk on the &fMoon&r yet? If not, we strongly encourage you to go. You’ll encounter &dessential mechanics&r for later stages of the modpack and unlock &bAE2&r, all while gaining access to &aricher ore veins&r.\\n\\nIf you’ve already made your lunar journey, then we hope your infrastructure is solid — because it’s time to enter &5EV&r. This complex chapter will introduce &7even more advanced systems&r and take your factory to the next level."]
+			description: ["{quests.high_voltage.ev_machine_hull.desc}"]
 			id: "4214D5C501C35876"
 			shape: "gear"
 			size: 4.0d
-			subtitle: "That's half of Gregtech tiers"
+			subtitle: "{quests.high_voltage.ev_machine_hull.subtitle}"
 			tasks: [{
 				id: "766F3215D322BAAE"
 				item: "gtceu:ev_machine_hull"
 				type: "item"
 			}]
+			title: "{quests.high_voltage.ev_machine_hull.title}"
 			x: -9.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["56D337E264A4154F"]
-			description: ["We made the &6Rocket Fins&r use an &bAlloy Smelter&r simply to remind you that you now have access to the &bMulti-Smelter&r — a wonderful small EBF that can be used as a &eFurnace&r or an &bAlloy Smelter&r.\\n\\nThe quest to craft it is in the &bMV&r Chapter. We really advise you to think about it if you haven't yet."]
+			description: ["{quests.high_voltage.rocket_fins.desc}"]
 			id: "3E2F96A02FEF12AC"
-			subtitle: "So you reach the right destination"
+			subtitle: "{quests.high_voltage.rocket_fins.subtitle}"
 			tasks: [{
 				count: 4L
 				id: "433BFEE192C565E8"
@@ -1021,9 +1043,9 @@
 		}
 		{
 			dependencies: ["56D337E264A4154F"]
-			description: ["The &6Steel Engine&r is required so your rocket can &atravel to the Moon&r.\\n\\nThe recipe isn't too bad — we assume you're ready to tackle each part.\\n\\nTo get &91152mb of Liquid Blue Steel&r, you will need &78 ingots&r."]
+			description: ["{quests.high_voltage.steel_engine.desc}"]
 			id: "4AD686D18247315E"
-			subtitle: "Blue Steel is back baby"
+			subtitle: "{quests.high_voltage.steel_engine.subtitle}"
 			tasks: [{
 				id: "57D58E699F70DD55"
 				item: "ad_astra:steel_engine"
@@ -1034,14 +1056,16 @@
 		}
 		{
 			dependencies: ["3FBDC8552F7D8008"]
-			description: ["&6For each travel you will need Rocket Fuel&r, it seems complicated and it is quite a long process but you can make Rocket Fuel from &bChlorine&r, &bMethane&r, &bNitrogen&r, &bOxygen&r and &bWater&r. Nothing too bad, also if you already have your &5Large Chemical Reactor&r you could unlock some bypass.\\n\\n&7We advise you to use EMI Recipe Tree to have an easier time understanding each step. Simply click on the small icon with 4 squares on the right of the crafting recipe.&r"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.high_voltage.rocket_fuel.desc}"]
 			id: "6EF2D4D1C1CC9D3E"
-			subtitle: "Easier than you think"
+			subtitle: "{quests.high_voltage.rocket_fuel.subtitle}"
 			tasks: [{
 				id: "0E3E97E93E9F3A3A"
 				item: "gtceu:rocket_fuel_bucket"
 				type: "item"
 			}]
+			title: "{quests.high_voltage.rocket_fuel.title}"
 			x: 10.0d
 			y: -2.0d
 		}
@@ -1051,25 +1075,16 @@
 				"6752CC523D38A214"
 				"038B204DAC9C863D"
 			]
-			description: ["&2Congrats&r, you’ve successfully landed on the &7Moon&r!\\nHere, you’ll find &bCertus Quartz&r veins, allowing you to begin unlocking &dAE2&r.\\n\\nBut that’s not all—some veins here have much higher density than those on Earth.\\n\\nFor instance, you can easily find &6Ilmenite&r, &7Bauxite&r, &7Aluminium&r, and &5Chromite&r veins on the Moon.\\nEstablishing a small base here will be crucial to keep progressing.\\n\\nYour biggest challenge will be transporting resources, as there are no easy cross-dimensional tools like the &5Ender Chest&r or &dAE2 Quantum Link&r just yet."]
+			description: ["{quests.high_voltage.welcome_moon.desc}"]
 			id: "00A2566109144D7F"
 			rewards: [{
-				id: "13A577B2BB08460E"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:food": {
-							creationDate: 2718000L
-							traits: [ ]
-						}
-					}
-					id: "ad_astra:cheese"
-				}
+				id: "4E4076733CA38807"
+				item: "ad_astra:cheese_block"
 				type: "item"
 			}]
 			shape: "gear"
 			size: 4.0d
-			subtitle: "Hope you have everything to come back"
+			subtitle: "{quests.high_voltage.welcome_moon.subtitle}"
 			tasks: [{
 				dimension: "ad_astra:moon"
 				icon: "ad_astra:moon_globe"
@@ -1077,6 +1092,7 @@
 				title: "I'm on the Moon"
 				type: "dimension"
 			}]
+			title: "{quests.high_voltage.welcome_moon.title}"
 			x: 13.0d
 			y: -2.0d
 		}
@@ -1085,9 +1101,13 @@
 				"3FBDC8552F7D8008"
 				"72BD27FEEB34C7B0"
 			]
-			description: ["&6Before crossing the last Earth boundary,&r you should be sure to not die when you arrive on the moon.\\n\\nTo do that, you're gonna need a &bfull set of Space Suit&r loaded with &bOxygen&r — and if you're careful, even a &ebackup can&r.\\n\\n&cThe hardest part&r will definitely be the &dPolycaprolactam Fabric&r.\\n\\nYou will need an &cEBF&r and a &6HV&r &eChemical Reactor&r.\\n\\nFrom there, you'll be able to craft it using &aBenzene&r, &bHydrogen&r, &9Chlorine&r, &bOxygen&r and &3Ammonia&r.\\n\\nWe won't tell you every step, but you should be able to figure it out yourself through &aEMI&r now that you're a fierce Gregtech player.\\n\\nOnce everything is ready, to fill your space suit and can, simply &eRight-Click&r a drum or tank filled with &bOxygen&r."]
+			description: [
+				"{quests.high_voltage.space_suit.desc.1}"
+				"{@pagebreak}"
+				"{quests.high_voltage.space_suit.desc.2}"
+			]
 			id: "038B204DAC9C863D"
-			subtitle: "Let's be honest, this may be the hardest"
+			subtitle: "{quests.high_voltage.space_suit.subtitle}"
 			tasks: [
 				{
 					id: "2BB34BBE18F6816F"
@@ -1133,16 +1153,28 @@
 					}
 					type: "item"
 				}
+				{
+					id: "1E898EFDBF66CD54"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(ad_astra:gas_tank)item(ad_astra:large_gas_tank))"
+						}
+					}
+					title: "{quests.high_voltage.space_suit.task}"
+					type: "item"
+				}
 			]
-			title: "Space Suit"
+			title: "{quests.high_voltage.space_suit.title}"
 			x: 10.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["3FBDC8552F7D8008"]
-			description: ["&6The Launch Pad is indispensable to launch your Rocket.&r That's the only block on which you will be able to put your Rocket.\\n\\n&cReally important&r but you will need &cTWO Launch Pads&r as it will stay on your launching site and you will need another one to travel back."]
+			description: ["{quests.high_voltage.launch_pad.desc}"]
 			id: "6752CC523D38A214"
-			subtitle: "Without it impossible to launch"
+			subtitle: "{quests.high_voltage.launch_pad.subtitle}"
 			tasks: [{
 				count: 2L
 				id: "4451763FB0D75C2D"
@@ -1158,29 +1190,27 @@
 				"04F6E968CEEC3D49"
 			]
 			dependency_requirement: "one_completed"
-			description: [
-				"You are beginning to refine your fuels much better, you should be sure you had a look at the Energy Chapter."
-				""
-				"{ \"text\": \"Click here\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CDB9778C7A30044\" } }"
-			]
+			description: ["{ \"text\": \"{quests.high_voltage.linked_quest_energy.desc}\", \"bold\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CDB9778C7A30044\" } }"]
 			id: "595C5A01358B9550"
+			subtitle: "{quests.high_voltage.linked_quest_energy.subtitle}"
 			tasks: [{
 				id: "4E59108C7FC5421C"
-				title: "Have a look at the Energy Chapter"
+				title: "{quests.high_voltage.linked_quest_energy.task}"
 				type: "checkmark"
 			}]
+			title: "{quests.high_voltage.linked_quest_energy.title}"
 			x: 0.0d
 			y: 11.0d
 		}
 		{
 			dependencies: ["14D277A164202FF8"]
 			description: [
-				"This may be the first time you encounter the &cBedrock Ore Miner&r, as it's rarely used in GregTech. \\nIt functions similarly to the &bFluid Drilling Rig&r, except the veins it targets will &nnever deplete&r.\\n\\nIt doesn't consume much energy — running fine at &bMV&r or &6HV&r — and requires &ano input materials&r.\\n\\nSo, what's the catch? \\nFinding the veins."
+				"{quests.high_voltage.bedrock_miner.desc.1}"
 				"{@pagebreak}"
-				"You’ll need a &6HV&r Ore Prospector set to &oBedrock Ore Mode&r (&7Shift + Right Click&r), and a fair bit of patience. Once you find your target, you’ll also have to figure out how to bring the resources back to your outpost.\\n\\nOn the &fMoon&r, you can find 5 unique bedrock ore veins:\\n\\n&7- Copper and Tin&r: Contains &6Chalcopyrite&r, &eZeolite&r, &fCassiterite&r, and &cRealgar (Arsenic)&r\\n&7- Tin Vein&r: Contains mainly &fCassiterite&r and &fTin&r\\n&7- Asbestos&r\\n&7- Magnetite (Iron) and Gold&r: Very rare — don't actively search for it\\n&7- A mysterious, &dextremely rare&r one... \\nIf you find it, you’ll be thrilled. If not, just live in peace. Don’t worry."
+				"{quests.high_voltage.bedrock_miner.desc.2}"
 			]
 			id: "2878C147D273F774"
-			subtitle: "Unlimited ores?"
+			subtitle: "{quests.high_voltage.bedrock_miner.subtitle}"
 			tasks: [{
 				id: "55981710612D21D7"
 				item: "gtceu:mv_bedrock_ore_miner"
@@ -1188,20 +1218,6 @@
 			}]
 			x: 2.5d
 			y: -10.5d
-		}
-		{
-			dependencies: ["05ABC370D7153350"]
-			description: ["Now that you unlocked the &6HV&r Mixer, it becomes possible to make &aCetane Boosted Diesel&r, granting a &e180%&r increase in potency.\\n\\nThe only tricky part is obtaining &bTetranitromethane&r. We recommend producing it by mixing &9Nitric Acid&r and &dEthenone&r. Ethenone itself isn’t hard to make if you combine &9Sulfuric Acid&r - which you should have plenty of by now - and &cAcetic Acid&r, easily produced from &3Oxygen&r and &5Ethylene&r.\\n\\n&cDon’t forget&r to set your machine on Circuit 2, or else you’ll end up producing &6Polyethylene&r instead!"]
-			id: "7401B47E24593AB2"
-			shape: "heart"
-			subtitle: "Much more powerful than Bio Diesel"
-			tasks: [{
-				id: "54C63404B5CE7E5F"
-				item: "gtceu:cetane_boosted_diesel_bucket"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -3.5d
 		}
 		{
 			description: ["{quests.high_voltage.kaolinite_powder.desc}"]

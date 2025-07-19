@@ -1,6 +1,7 @@
 {
     "name": "TerraFirmaGreg-Modern",
-    "version": "0.10.0",
+    "version": "DEV",
+    "release_type": "alpha",
     "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
     "author": "Exception, Xikaro",
     "overrides": [
@@ -156,7 +157,7 @@
         "first-person-model": {
             "side": "CLIENT"
         },
-        "ftb-backups-2": {
+        "flickerfix": {
             "side": "CLIENT"
         },
         "no-report-button": {
@@ -213,6 +214,12 @@
         "entityculling": {
             "side": "CLIENT"
         },
+        "pick-up-notifier": {
+            "side": "CLIENT"
+        },
+        "smooth-boot-reloaded": {
+            "side": "CLIENT"
+        },
         "resourceful-config": {
             "side": "BOTH"
         },
@@ -240,9 +247,6 @@
         "particular-reforged": {
             "side": "BOTH"
         },
-        "pick-up-notifier": {
-            "side": "BOTH"
-        },
         "inventory-tweaks-refoxed": {
             "side": "BOTH"
         },
@@ -251,6 +255,9 @@
         },
         "detected-setblock-be-gone": {
             "side": "BOTH"
+        },
+        "ad-astra-auto-lander": {
+            "side": "CLIENT"
         },
         "probejs": {
             "export": false

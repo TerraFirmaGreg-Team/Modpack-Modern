@@ -13,12 +13,20 @@ const registerTFGItems = (event) => {
 	event.create('tfg:vitrified_pearl')
 	// #endregion
 
-	// #region Orbit dimension markers
+	// #region Space
+
+	// Orbit dimension markers
 	event.create('tfg:marker/earth_orbit').tag('c:hidden_from_recipe_viewers')
 	event.create('tfg:marker/moon_orbit').tag('c:hidden_from_recipe_viewers')
 	event.create('tfg:marker/mars_orbit').tag('c:hidden_from_recipe_viewers')
 	event.create('tfg:marker/venus_orbit').tag('c:hidden_from_recipe_viewers')
 	event.create('tfg:marker/mercury_orbit').tag('c:hidden_from_recipe_viewers')
+
+	global.AD_ASTRA_WOOD.forEach(wood => {
+		event.create(`tfg:wood/lumber/${wood.name}`)
+			.translationKey(`item.tfg.${wood.name}_lumber`)
+			.tag('tfc:lumber')
+	})
 	// #endregion
 
 	// #region Paper making
@@ -157,18 +165,10 @@ const registerTFGItems = (event) => {
 
 	//#region Misc
 	event.create('tfg:paraffin_wax')
-		.translationKey('item.tfg.paraffin_wax')
-
 	event.create('tfg:conifer_rosin')
-		.translationKey('item.tfg.conifer_rosin')
-
 	event.create('tfg:foil_pack')
-		.translationKey('item.tfg.foil_pack')
-		.texture('tfg:item/foil_pack')
-
 	event.create('tfg:clean_foil_pack')
-		.translationKey('item.tfg.clean_foil_pack') 
-		.texture('tfg:item/clean_foil_pack') 
+	event.create('tfg:flint_club_head')
 	//#endregion
 
 	//#region Cloth & String
@@ -198,6 +198,17 @@ const registerTFGItems = (event) => {
 	event.create('tfg:armor_stand_arms')
 		.translationKey('item.tfg.armor_stand_arms')
 
+	event.create('tfg:harvest_basket')
+		.translationKey('item.tfg.harvest_basket')
+		.parentModel('tfg:item/harvest_basket')
+		.maxDamage(128)
+
+	event.create('tfg:aluminium_harvest_basket')
+		.translationKey('item.tfg.aluminium_harvest_basket')
+		.parentModel('tfg:item/aluminium_harvest_basket')
+		.unstackable()
+
+	//Fishing Nets
 	event.create('tfg:fishing_net/wood')
 		.translationKey('item.tfg.fishing_net.wood')
 		.parentModel('tfg:item/fishing_nets/wood_fishing_net')
@@ -320,5 +331,16 @@ const registerTFGItems = (event) => {
 		.translationKey('tfg:large_bullet_casing')
 	event.create('tfg:nitrocellulose')
 		.translationKey('tfg:nitrocellulose')
+	//endregion
+	
+	//RockWool
+	event.create('tfg:aes_wool')
+		.translationKey('tfg:aes_wool')
+	event.create('tfg:aes_compressed_wool')
+		.translationKey('tfg:aes_compressed_wool')
+	event.create('tfg:aes_insulation_sheet')
+		.translationKey('tfg:aes_insulation_sheet')
+	event.create('tfg:aes_insulation_roll')
+		.translationKey('tfg:aes_insulation_roll')
 	//endregion
 }

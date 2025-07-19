@@ -1,0 +1,67 @@
+
+#Adaptive Performance Tweaks: Gamerules
+[General]
+	#The time after a high to low load change is considered as valid. High loads are always considered immediately.
+	#Range: 1 ~ 90
+	timeBetweenUpdates = 30
+
+["Entity Cramming"]
+	#Enable/Disable dynamic entity cramming adjustments.
+	entityCrammingEnabled = false
+	#Defines the min. numbers of mob singularity on a single block.
+	#Range: 0 ~ 64
+	minEntityCramming = 5
+	#Defines the max. numbers of mob singularity on a single block.
+	#Range: 1 ~ 64
+	maxEntityCramming = 24
+	#Defines the min. numbers of mob singularity on a single block, in the case MineColonies is installed.
+	#Range: 16 ~ 64
+	minEntityCrammingMineColonies = 16
+
+["Random Tick Speed"]
+	#Enable/Disable dynamic random tick speed adjustments.
+	randomTickSpeedEnabled = true
+	#Defines the max. speed of crops grow, leaf decay, redstone, ... per chunk
+	#Range: 1 ~ 256
+	randomTickSpeed = 3
+
+["Block Explodes"]
+	#Enable/Disable block explodes adjustments.
+	blockExplodesEnabled = true
+
+["Elytra Movement Check"]
+	#Enable/Disable dynamic elytra movement check adjustments.
+	elytraMovementCheckEnabled = true
+
+[Raids]
+	#Enable/Disable dynamic raids adjustments.
+	raidsEnabled = false
+
+[Insomnia]
+	#Enable/Disable insomnia (phantoms) adjustments.
+	insomniaEnabled = false
+
+["Mob Explodes"]
+	#Enable/Disable mob explodes adjustments.
+	mobExplodesEnabled = true
+
+["Patrol Spawning"]
+	#Enable/Disable patrol spawning adjustments.
+	patrolSpawningEnabled = false
+
+["Trader Spawning"]
+	#Enable/Disable trader spawning adjustments.
+	traderSpawningEnabled = false
+
+["TNT Explodes"]
+	#Enable/Disable tnt explodes adjustments.
+	tntExplodesEnabled = true
+
+["Vines Spread"]
+	#Enable/Disable vines spread adjustments.
+	vinesSpreadEnabled = true
+
+["Warden Spawning"]
+	#Enable/Disable warden spawning adjustments.
+	wardenSpawningEnabled = false
+

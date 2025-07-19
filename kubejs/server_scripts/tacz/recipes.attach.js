@@ -88,13 +88,13 @@ function registerTACZAttachRecipes(event){
 
 	//Muzzles
 	event.recipes.gtceu.assembler('tfg_tacz:ca_large_tank')
-		.itemInputs('2x gtceu:blue_steel_tiny_fluid_pipe', '2x gtceu:steel_fluid_cell', '8x #forge:rings/silicone_rubber', 
+		.itemInputs('2x gtceu:red_steel_tiny_fluid_pipe', '2x gtceu:steel_fluid_cell', '8x #forge:rings/silicone_rubber', 
 					'4x #forge:rings/stainless_steel', '#forge:plates/stainless_steel', '8x #forge:screws/stainless_steel')
 		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_bigger_cylinder"}'))
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(20)
 	event.recipes.gtceu.assembler('tfg_tacz:ca_lava_tube')
-		.itemInputs('4x gtceu:red_steel_tiny_fluid_pipe', 'gtceu:steel_fluid_cell', '4x gtceu:tempered_glass',
+		.itemInputs('4x gtceu:blue_steel_tiny_fluid_pipe', 'gtceu:steel_fluid_cell', '4x gtceu:tempered_glass',
 					'4x #forge:rings/stainless_steel', '#forge:plates/rose_gold', '8x #forge:screws/stainless_steel')
 		.inputFluids(Fluid.of('minecraft:lava', 2000))
 		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_lava_perfusion_bottle"}'))

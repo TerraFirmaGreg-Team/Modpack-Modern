@@ -134,7 +134,7 @@ function registerVintageImprovementsRecipes(event) {
 		.itemInputs('#forge:plates/red_alloy', '#forge:small_gears/brass', '#forge:bolts/red_alloy')
 		.inputFluids(Fluid.of('gtceu:redstone', 144))
 		.itemOutputs('vintageimprovements:redstone_module')
-		.duration(400)
+		.duration(20 * 20)
 		.EUt(20)
 
 	event.shaped('vintageimprovements:recipe_card', [

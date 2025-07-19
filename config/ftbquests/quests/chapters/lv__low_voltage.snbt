@@ -513,6 +513,11 @@
 				"{quests.low_voltage.lv_ebf.desc.2}"
 			]
 			id: "1E9BE8D3F8A602DC"
+			rewards: [{
+				id: "5A3DDA916C125D0F"
+				item: "gtceu:terminal"
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "{quests.low_voltage.lv_ebf.subtitle}"
@@ -604,10 +609,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"5B2696206205CB2E"
-				"70432F650591353C"
-			]
+			dependencies: ["6042514C8FC54334"]
 			description: ["{quests.low_voltage.cupronickel_coil.desc}"]
 			icon: {
 				Count: 1
@@ -626,7 +628,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.cupronickel_coil.title}"
-			x: -7.5d
+			x: -8.5d
 			y: 6.5d
 		}
 		{
@@ -913,7 +915,10 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["15928F50AE80A5CF"]
+			dependencies: [
+				"15928F50AE80A5CF"
+				"5263F866638D875C"
+			]
 			dependency_requirement: "one_completed"
 			description: [
 				"{quests.low_voltage.lv_oxygen.desc.1}"
@@ -1537,6 +1542,21 @@
 			title: "{quests.low_voltage.lv_biodiesel.title}"
 			x: 5.5d
 			y: 9.0d
+		}
+		{
+			dependencies: ["5B2696206205CB2E"]
+			description: ["{quests.low_voltage.cupronickel_ingot.desc}"]
+			id: "6042514C8FC54334"
+			subtitle: "{quests.low_voltage.cupronickel_ingot.subtitle}"
+			tasks: [{
+				count: 128L
+				id: "701DEB748320107C"
+				item: "gtceu:cupronickel_ingot"
+				type: "item"
+			}]
+			title: "{quests.low_voltage.cupronickel_ingot.title}"
+			x: -7.5d
+			y: 6.5d
 		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]

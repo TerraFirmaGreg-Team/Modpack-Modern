@@ -11,8 +11,6 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  RELEASE_TYPE: "alpha"
-  MINECRAFT_VERSION: "1.20.1"
   DEV_ENVIRONMENT: ${{ github.ref_name != 'main' }}
 
 jobs:    
@@ -24,6 +22,8 @@ jobs:
       project_name: ${{ steps.check.outputs.project_name }}
       project_full_name: ${{ steps.check.outputs.project_name }}-${{ steps.check.outputs.project_version }}
       changelog: ${{ steps.changelog.outputs.description }}
+      mc_version: ${{ steps.check.outputs.minecraft_version }}
+      release_type: ${{ steps.check.outputs.release_type }}
       diff: ${{ steps.read_diff.outputs.diff }}
       exists: ${{ steps.check.outputs.exists }}
       make_release: ${{ steps.check.outputs.make_release }}
@@ -141,40 +141,39 @@ jobs:
         with:
           tag: ${{ steps.pakku_info.outputs.version }}
 
-      - name: 📝 Determine Version
-        id: determine_version
-        shell: bash
-        run: |
-          if ${{ env.DEV_ENVIRONMENT == 'true' }}; then
-            echo "version=unreleased" >> $GITHUB_OUTPUT
-          else
-            echo "version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
-          fi
+      - name: 📄 Changelog Dev Parser
+        id: changelog_dev
+        if: ${{ env.DEV_ENVIRONMENT == 'true' }}
+        uses: coditory/changelog-parser@v1.0.2
+        with:
+          path: CHANGELOG.md
+          version: "unreleased"
+        continue-on-error: true
         
       - name: 📄 Changelog Parser
         id: changelog
         uses: coditory/changelog-parser@v1.0.2
         with:
           path: CHANGELOG.md
-          version: ${{ steps.determine_version.outputs.version }}
         continue-on-error: true
 
       - name: 🔍 Check
         id: check
         shell: bash
         run: |
-          echo "make_release=${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'false' }}" >> $GITHUB_OUTPUT
+          echo "make_release=${{ steps.check_tag.outputs.exists == false && env.DEV_ENVIRONMENT == false }}" >> $GITHUB_OUTPUT
           echo "exists=${{ steps.check_tag.outputs.exists }}" >> $GITHUB_OUTPUT
-
           echo "project_name=${{ steps.pakku_info.outputs.name }}" >> $GITHUB_OUTPUT
-          echo "project_version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
-          echo "release_type=${{ env.RELEASE_TYPE }}" >> $GITHUB_OUTPUT
+          MC_VERSIONS_JSON='${{ steps.pakku_lock_info.outputs.mc_versions }}'
+          MINECRAFT_VERSION=$(echo "$MC_VERSIONS_JSON" | jq -r '.[0]' | tr -d '[]"')
+          echo "minecraft_version=$MINECRAFT_VERSION" >> $GITHUB_OUTPUT
 
-          echo "minecraft_version=${{ steps.pakku_lock_info.outputs.mc_versions }}" >> $GITHUB_OUTPUT
-
-          if ${{ env.DEV_ENVIRONMENT == 'true' && steps.changelog.outcome == 'failure' }}; then
-              echo "project_version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
-              echo "release_type=Unreleased" >> $GITHUB_OUTPUT
+          if ${{ env.DEV_ENVIRONMENT == 'true' }}; then
+            echo "project_version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
+            echo "release_type=Unreleased" >> $GITHUB_OUTPUT
+          else
+            echo "project_version=${{ steps.changelog.outputs.version }}" >> $GITHUB_OUTPUT
+            echo "release_type=${{ steps.pakku_info.outputs.release_type }}" >> $GITHUB_OUTPUT
           fi
 
       - name: 📄 Format diff
@@ -201,7 +200,7 @@ jobs:
             📃 **Make Release**: `${{ steps.check.outputs.make_release }}`
             
 
-            ${{ steps.changelog.outputs.description }}
+            ${{ steps.changelog_dev.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
   
 
@@ -219,7 +218,7 @@ jobs:
           set +e
 
           VERSION=${{ needs.info.outputs.project_version }}
-          sed -i -e "s/\"version\": \"[0-9.]*\"/\"version\": \"${VERSION}\"/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       - name: 📝 Cache pakku
@@ -273,7 +272,7 @@ jobs:
           set +e
 
           VERSION=${{ needs.info.outputs.project_version }}
-          sed -i -e "s/\"version\": \"[0-9.]*\"/\"version\": \"${VERSION}\"/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       - name: 📝 Cache pakku
@@ -419,7 +418,7 @@ jobs:
             ${{ needs.info.outputs.project_full_name }}-curseforge.zip
             ${{ needs.info.outputs.project_full_name }}-serverpack.zip
             ${{ needs.info.outputs.project_full_name }}-multimc.zip
-          prerelease: ${{ env.RELEASE_TYPE != 'release' }}
+          prerelease: ${{ needs.info.outputs.release_type != 'release' }}
           generate_release_notes: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -470,8 +469,8 @@ jobs:
             ${{ needs.info.outputs.changelog }}
             ${{ needs.info.outputs.diff }}
           changelog-format: markdown
-          game-version: ${{ env.MINECRAFT_VERSION }}
-          release-type: ${{ env.RELEASE_TYPE }}
+          game-version: ${{ needs.info.outputs.mc_version }}
+          release-type: ${{ needs.info.outputs.release_type }}
 
   release-modrinth:
       name: 🚀 Release to Modrinth
@@ -516,10 +515,10 @@ jobs:
             modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
             changelog: ${{ needs.info.outputs.changelog }}
             changelog-format: markdown
-            game-version: ${{ env.MINECRAFT_VERSION }}
+            game-version: ${{ needs.info.outputs.mc_version }}
             display-name: ${{ needs.info.outputs.project_full_name }}
             server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
-            release-type: ${{ env.RELEASE_TYPE }}
+            release-type: ${{ needs.info.outputs.release_type }}
 
   discord-message:
     name: 📱 Discord Message
@@ -542,8 +541,8 @@ jobs:
           content_links_no_embed: .+
           content: |
             **Release**: `${{ needs.info.outputs.project_version }}`
-            **Release Type**: `${{ env.RELEASE_TYPE }}`
-            **Game Version**: `${{ env.MINECRAFT_VERSION }}`
+            **Release Type**: `${{ needs.info.outputs.release_type }}`
+            **Game Version**: `${{ needs.info.outputs.mc_version }}`
 
             [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-modern/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
             ```markdown

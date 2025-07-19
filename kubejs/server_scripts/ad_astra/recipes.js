@@ -25,6 +25,7 @@ const registerAdAstraRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:polyethylene', 144 * 16))
 		.itemOutputs('ad_astra:rocket_nose_cone')
 		.duration(1200)
+		.circuit(2)
 		.EUt(480)
 
 
@@ -40,6 +41,7 @@ const registerAdAstraRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:red_steel', 144))
 		.itemOutputs('9x #forge:dusts/rocket_alloy_t1')
 		.duration(580)
+		.circuit(2)
 		.EUt(480)
 
 	event.recipes.gtceu.chemical_bath('tfg:rocket_alloy_cool_down_water')
@@ -60,6 +62,7 @@ const registerAdAstraRecipes = (event) => {
 		.itemInputs('#forge:plates/rocket_alloy_t1', '#forge:double_plates/stainless_steel')
 		.itemOutputs('ad_astra:rocket_fin')
 		.duration(150)
+		.circuit(2)
 		.EUt(GTValues.VA[GTValues.HV])
 
 
@@ -73,6 +76,7 @@ const registerAdAstraRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:blue_steel', 144 * 8))
 		.itemOutputs('ad_astra:steel_engine')
 		.duration(600)
+		.circuit(2)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.assembler('ad_astra:assembler_tier_1_rocket')
@@ -86,6 +90,7 @@ const registerAdAstraRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:silicon', 144 * 16))
 		.itemOutputs('ad_astra:tier_1_rocket')
 		.duration(1200)
+		.circuit(2)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	//#endregion
@@ -568,13 +573,14 @@ const registerAdAstraRecipes = (event) => {
 		], {
 			B: '#tfc:hammers',
 			C: `ad_astra:${x.type}_plating_slab`,
-			D: '#forge:springs',
+			D: '#forge:small_springs',
 			E: '#forge:tools/screwdrivers'
 		}).id(`tfg:shaped/ad_astra_${x.type}_pressure_plate`)
 
 		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_pressure_plate`)
-			.itemInputs('#forge:springs', `ad_astra:${x.type}_plating_slab`)
+			.itemInputs('#forge:small_springs', `2x ad_astra:${x.type}_plating_slab`)
 			.itemOutputs(`ad_astra:${x.type}_plating_pressure_plate`)
+			.circuit(0)
 			.duration(50)
 			.EUt(2)
 
@@ -691,5 +697,41 @@ const registerAdAstraRecipes = (event) => {
 		structure: "tfg:orbit/space_station"
 	})
 
+	//#endregion
+
+	//#region Wood
+		event.remove({ type: 'greate:cutting', input: '#ad_astra:aeronos_caps' })
+		event.remove({ type: 'greate:cutting', input: 'ad_astra:aeronos_planks' })
+		event.remove({ type: 'greate:cutting', input: '#ad_astra:strophar_caps' })
+		event.remove({ type: 'greate:cutting', input: 'ad_astra:glacian_log' })
+		event.remove({ type: 'greate:cutting', input: 'ad_astra:stripped_glacian_log' })
+		event.remove({ type: 'greate:cutting', input: 'ad_astra:strophar_planks' })
+		event.remove({ type: 'greate:cutting', input: 'ad_astra:glacian_planks' })
+
+		global.AD_ASTRA_WOOD.forEach(wood => {
+			woodBuilder(event, wood.name, wood.lumber, wood.logs, wood.log, wood.stripped_log, wood.plank, wood.stair, wood.slab, wood.door, wood.trapdoor, wood.fence, wood.fence_gate, wood.support, wood.pressure_plate, wood.button)
+		})
+		
+		event.shaped('16x ad_astra:aeronos_ladder', [
+			'A A',
+			'ABA',
+			'A A'
+		], {
+			A: 'tfg:wood/lumber/aeronos',
+			B: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Wood, 1),
+		}).id('tfg:shaped/aeronos_ladder')
+		
+		event.shaped('16x ad_astra:strophar_ladder', [
+			'A A',
+			'ABA',
+			'A A'
+		], {
+			A: 'tfg:wood/lumber/strophar',
+			B: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Wood, 1),
+		}).id('tfg:shaped/strophar_ladder')
+
+		generateGreenHouseRecipe(event, '8x ad_astra:glacian_fur', 16000, '64x ad_astra:glacian_log', 'tfg:green_house/glacian_tree', 'ad_astra:moon', 8, '8x ad_astra:glacian_leaves', GTValues.VA[GTValues.MV])
+		generateGreenHouseRecipe(event, '8x ad_astra:strophar_mushroom', 16000, '64x ad_astra:strophar_stem', 'tfg:green_house/strophar_mushroom', 'ad_astra:moon', 8, '16x ad_astra:strophar_cap', GTValues.VA[GTValues.MV])
+		generateGreenHouseRecipe(event, '8x ad_astra:aeronos_mushroom', 16000, '64x ad_astra:aeronos_stem', 'tfg:green_house/aeronos_mushroom', 'ad_astra:moon', 8, '16x ad_astra:aeronos_cap', GTValues.VA[GTValues.MV])
 	//#endregion
 }

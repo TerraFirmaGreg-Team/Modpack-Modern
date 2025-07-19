@@ -64,6 +64,9 @@ const registerTFCItemTags = (event) => {
 	event.add('tfg:ferments_to_rennet', 'firmalife:food/fig')
 	event.add('tfg:ferments_to_rennet', 'tfc:plant/ivy')
 
+	//Plants
+	event.add('tfc:plants', '#tfc:wild_fruits')
+
 	// Для складывания
 	event.add('tfc:pileable_ingots', '#forge:ingots')
 	event.add('tfc:pileable_sheets', '#forge:plates')
@@ -482,6 +485,7 @@ const registerTFCFluidTags = (event) => {
 
 	event.add('tfc:usable_in_ingot_mold', 'gtceu:red_alloy')
 	event.add('tfc:usable_in_ingot_mold', 'gtceu:tin_alloy')
+	event.add('tfc:usable_in_ingot_mold', 'gtceu:lead')
 
 	event.add('tfc:usable_in_bell_mold', 'gtceu:bronze')
 	event.add('tfc:usable_in_bell_mold', 'gtceu:gold')

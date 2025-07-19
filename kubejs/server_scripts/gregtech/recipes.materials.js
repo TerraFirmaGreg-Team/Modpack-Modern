@@ -750,7 +750,7 @@ function registerGTCEUMetalRecipes(event) {
 
 		const materialDustStack = ChemicalHelper.get(TagPrefix.dust, material, 1)
 		const materialIngotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-		const glassDustStack = ChemicalHelper.get(TagPrefix.dust, GTMaterials.Glass, 4)
+		const glassDustStack = ChemicalHelper.get(TagPrefix.dust, GTMaterials.Glass, 1)
 		const unfinishedLampStack = ChemicalHelper.get(TFGTagPrefix.lampUnfinished, material, 1)
 
 		event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_lamp`)

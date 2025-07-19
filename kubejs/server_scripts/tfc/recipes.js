@@ -92,6 +92,12 @@ const registerTFCRecipes = (event) => {
 
 	event.shapeless('2x minecraft:stick', ['#minecraft:saplings', '#forge:tools/knives']).id('tfg:strip_saplings')
 
+	event.recipes.gtceu.cutter('tfg:saplings_to_sticks')
+		.itemInputs('#minecraft:saplings')
+		.itemOutputs('2x minecraft:stick')
+		.duration(20)
+		.EUt(7)
+
 	// Доменная печь
 	event.shaped('tfc:blast_furnace', [
 		'AAA',
@@ -295,4 +301,11 @@ const registerTFCRecipes = (event) => {
 	]).id('tfc:shapeless/jar_lid')
 
 	event.replaceInput({ mod: 'tfc' }, 'minecraft:sugar', '#tfg:sugars')
+
+	// Sea Water
+	event.recipes.tfc.barrel_instant()
+		.inputItem(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Salt, 1))
+		.inputFluid(Fluid.of('minecraft:water', 1000))
+		.outputFluid(Fluid.of('tfc:salt_water', 1000))
+		.id('tfg:barrel/water_to_salt_water')
 }

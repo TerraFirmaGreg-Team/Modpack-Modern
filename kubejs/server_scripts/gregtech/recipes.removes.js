@@ -661,10 +661,21 @@ function removeGTCEURecipes(event) {
 
 	event.remove({ id: 'gtceu:compressor/compress_certus_quartz_to_raw_ore_block' })
 	event.remove({ id: 'gtceu:compressor/glowstone' })
+	event.remove({ id: 'gtceu:compressor/plant_ball_from_red_mushroom' })
+	event.remove({ id: 'gtceu:compressor/plant_ball_from_brown_mushroom' })
 
 	event.remove({ id: 'gtceu:forming_press/form_purpur_slab_into_pillar' })
 
 	event.remove({ id: 'gtceu:rock_breaker/red_granite' })
+
+	// Snow Stuffs
+
+	event.remove({ id: 'gtceu:fluid_solidifier/snow_block' })
+	event.remove({ id: 'gtceu:fluid_solidifier/snow_block_distilled' })
+
+	removeCutterRecipe(event, 'snow_layer')
+	removeCutterRecipe(event, 'snow_layer_distilled_water')
+	removeCutterRecipe(event, 'snow_layer_water')
 
 	// Remove vanilla Eye of Ender
 
@@ -674,6 +685,19 @@ function removeGTCEURecipes(event) {
 
 	event.remove({ id: 'gtceu:compressor/compress_plate_dust_wood' })
 	event.remove({ id: 'gtceu:compressor/compress_plate_dust_treated_wood'})
+
+	// Remove Default Pressure Plate Recipes
+	const MC_PRESSURE_PLATES = [
+		'bamboo',
+		'polished_blackstone',
+		'light_weighted',
+		'heavy_weighted',
+		'treated'
+	]
+	MC_PRESSURE_PLATES.forEach(material => {	
+		event.remove({ id: `gtceu:shaped/${material}_pressure_plate` })
+		event.remove({ id: `gtceu:assembler/${material}_pressure_plate` })	
+	})
 }
 
 function removeMaceratorRecipe(event, id) {

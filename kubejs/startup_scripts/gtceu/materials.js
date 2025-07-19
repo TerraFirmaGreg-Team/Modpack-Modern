@@ -81,6 +81,10 @@ const registerGTCEuMaterialModification = (event) => {
 	/* TFC Проперти для материалов */
 
 	// TFC_PROPERTY = (forging temp, welding temp, melt temp, material, tier, percent of material)
+	// OR			= (forging temp, welding temp, melt temp, tier)
+	// 
+	// If registering a new material that you want to melt into a liquid in a vessel etc,
+	// make sure you add it to registerGTCEUMetals()!
 
 	GTMaterials.Copper.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(648, 864, 1080, 1));
 	GTMaterials.BismuthBronze.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(591, 788, 985, 2));
@@ -126,6 +130,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Redstone.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(240, 320, 460, 1));
 	GTMaterials.RedAlloy.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(570, 650, 740, 2));
 	GTMaterials.TinAlloy.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1000, 1100, 1250, 3));
+	GTMaterials.Lead.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(170, 250, 330, 2));
 
 
 	GTMaterials.Gold.addFlags(GENERATE_BELL);
@@ -176,6 +181,7 @@ const registerGTCEuMaterialModification = (event) => {
 	//        /* Имеют двойные слитки */
 	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR);
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Lead.addFlags(GENERATE_DOUBLE_INGOTS);
 	//
 	//        /* Другое */
 
@@ -315,6 +321,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Platinum.setMaterialSecondaryARGB(0x59563a)
 	GTMaterials.Nickel.setMaterialARGB(0xfff4ba)
 	GTMaterials.Nickel.setMaterialSecondaryARGB(0x8d8d71)
+	GTMaterials.Thorium.setMaterialARGB(0xf8a8c0)
+	GTMaterials.Thorium.setMaterialSecondaryARGB(0xcd8dbc)
 
 	
 	global.MINECRAFT_DYE_NAMES.forEach(colorName =>

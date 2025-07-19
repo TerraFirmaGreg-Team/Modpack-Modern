@@ -38,6 +38,7 @@ ServerEvents.tags('item', event => {
 	registerModernMarkingsItemTags(event)
 	registerMoreRedItemTags(event)
 	registerHotOrNotItemTags(event)
+	registerPrimitiveCreaturesItemTags(event)
 	registerRailWaysItemTags(event)
 	registerRnrItemTags(event)
 	registerSophisticatedBackpacksItemTags(event)
@@ -148,6 +149,7 @@ TFCEvents.data(event => {
 	registerTFCDataForImmersiveAircraft(event);
 	registerTFCDataForMinecraft(event)
 	registerTFCDataForSophisticatedBackpacks(event)
+	registerTFCDataForTACZ(event)
 	registerTFCDataForTFC(event)
 	registerTFCDataForTFCBetterBF(event)
 	registerTFCDataForTFCLunchbox(event)
@@ -237,6 +239,7 @@ ServerEvents.recipes(event => {
 	registerMinecraftRecipes(event)
 	registerModernMarkingRecipes(event)
 	registerMoreRedRecipes(event)
+	registerPrimitiveCreaturesRecipes(event)
 	registerProgrammedCircuitCardRecipes(event)
 	registerRailWaysRecipes(event)
 	registerRnrRecipes(event)

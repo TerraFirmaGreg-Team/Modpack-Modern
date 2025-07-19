@@ -1,0 +1,14 @@
+
+#Adaptive Performance Tweaks: Spawn
+["Aquaculture 2 Spawn Config"]
+	Enabled = true
+	Id = "aquaculture"
+	#Range: 1 ~ 64
+	MaxFishPerPlayer = 4
+	#Range: 1 ~ 512
+	MaxFishPerWorld = 16
+	#Range: 1 ~ 1024
+	MaxFishPerServer = 320
+	#List of passive Mobs to optimize in the format ["minecraft:bat", "minecraft:cat", ..]
+	FishList = ["aquaculture:acacia_fish_mount", "aquaculture:arapaima", "aquaculture:arrau_turtle", "aquaculture:atlantic_cod", "aquaculture:atlantic_halibut", "aquaculture:atlantic_herring", "aquaculture:bayad", "aquaculture:birch_fish_mount", "aquaculture:blackfish", "aquaculture:bluegill", "aquaculture:bobber", "aquaculture:boulti", "aquaculture:box_turtle", "aquaculture:brown_shrooma", "aquaculture:brown_trout", "aquaculture:capitaine", "aquaculture:carp", "aquaculture:catfish", "aquaculture:dark_oak_fish_mount", "aquaculture:gar", "aquaculture:jellyfish", "aquaculture:jungle_fish_mount", "aquaculture:minnow", "aquaculture:muskellunge", "aquaculture:oak_fish_mount", "aquaculture:pacific_halibut", "aquaculture:perch", "aquaculture:pink_salmon", "aquaculture:piranha", "aquaculture:pollock", "aquaculture:rainbow_trout", "aquaculture:red_grouper", "aquaculture:red_shrooma", "aquaculture:smallmouth_bass", "aquaculture:spruce_fish_mount", "aquaculture:starshell_turtle", "aquaculture:synodontis", "aquaculture:tambaqui", "aquaculture:tuna", "aquaculture:water_arrow"]
+

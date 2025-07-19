@@ -29,8 +29,8 @@ function registerTACZMiscRecipes(event) {
 	
 	//Molds
 	event.shaped('tfg:small_casing_extruder_mold',[
-		'   ',
-		'AB ',
+		'  A',
+		' B ',
 		'   '
 	],{
 		A: '#forge:tools/wire_cutters',
@@ -66,7 +66,7 @@ function registerTACZMiscRecipes(event) {
 		A: '#forge:tools/screwdrivers',
 		B: '#forge:gems/flint',
 		C: '#forge:tools/files',
-		D: '#forge:springs/steel',
+		D: '#forge:springs',
 		E: '#forge:bolts/steel',
 		F: '#forge:plates/steel',
 		G: '#forge:tools/wire_cutters',
