@@ -140,15 +140,14 @@ jobs:
         with:
           tag: ${{ steps.pakku_info.outputs.version }}
 
-      - name: 📝 Determine Version
-        id: determine_version
-        shell: bash
-        run: |
-          if ${{ env.DEV_ENVIRONMENT == 'true' }}; then
-            echo "version=unreleased" >> $GITHUB_OUTPUT
-          else
-            echo "version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
-          fi
+      - name: 📄 Changelog Dev Parser
+        id: changelog_dev
+        if: ${{ env.DEV_ENVIRONMENT == 'true' }}
+        uses: coditory/changelog-parser@v1.0.2
+        with:
+          path: CHANGELOG.md
+          version: "unreleased"
+        continue-on-error: true
         
       - name: 📄 Changelog Parser
         id: changelog
@@ -163,16 +162,17 @@ jobs:
         run: |
           echo "make_release=${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'false' }}" >> $GITHUB_OUTPUT
           echo "exists=${{ steps.check_tag.outputs.exists }}" >> $GITHUB_OUTPUT
-
           echo "project_name=${{ steps.pakku_info.outputs.name }}" >> $GITHUB_OUTPUT
-          echo "project_version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
-          echo "release_type=${{ steps.pakku_info.outputs.release_type }}" >> $GITHUB_OUTPUT
-
           echo "minecraft_version=${{ steps.pakku_lock_info.outputs.mc_versions }}" >> $GITHUB_OUTPUT
 
           if ${{ env.DEV_ENVIRONMENT == 'true' && steps.changelog.outcome == 'failure' }}; then
               echo "project_version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
               echo "release_type=Unreleased" >> $GITHUB_OUTPUT
+              echo "changelog=${{ steps.changelog_dev.outputs.description }}" >> $GITHUB_OUTPUT
+          else
+              echo "project_version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
+              echo "release_type=${{ steps.pakku_info.outputs.release_type }}" >> $GITHUB_OUTPUT
+              echo "changelog=${{ steps.changelog.outputs.description }}" >> $GITHUB_OUTPUT
           fi
 
       - name: 📄 Format diff
@@ -199,7 +199,7 @@ jobs:
             📃 **Make Release**: `${{ steps.check.outputs.make_release }}`
             
 
-            ${{ steps.changelog.outputs.description }}
+            ${{ steps.check.outputs.changelog }}
             ${{ steps.format_diff.outputs.text }}
   
 
