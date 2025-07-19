@@ -620,24 +620,31 @@
 				"{quests.high_voltage.tnt.desc.1}"
 				"{@pagebreak}"
 				"{quests.high_voltage.tnt.desc.2}"
+				"{@pagebreak}"
+				"{quests.high_voltage.tnt.desc.3}"
 			]
 			icon: "minecraft:tnt"
 			id: "2B7B214EDE0B45A2"
 			size: 1.0d
 			tasks: [
 				{
-					id: "1CB85F57BA45252D"
-					item: "gtceu:gelled_toluene"
-					type: "item"
-				}
-				{
 					id: "04BF6A36E965C348"
 					item: "minecraft:tnt"
 					type: "item"
 				}
 				{
-					id: "6DC25EED8E91BEC2"
-					item: "gtceu:toluene_bucket"
+					id: "162CDC2567F6D6A8"
+					item: "gtceu:industrial_tnt"
+					type: "item"
+				}
+				{
+					id: "4CFB597542DD0194"
+					item: "gtceu:dynamite"
+					type: "item"
+				}
+				{
+					id: "0BF4703D1DBAA5B7"
+					item: "gtceu:powderbarrel"
 					type: "item"
 				}
 			]
@@ -1094,7 +1101,11 @@
 				"3FBDC8552F7D8008"
 				"72BD27FEEB34C7B0"
 			]
-			description: ["{quests.high_voltage.space_suit.desc}"]
+			description: [
+				"{quests.high_voltage.space_suit.desc.1}"
+				"{@pagebreak}"
+				"{quests.high_voltage.space_suit.desc.2}"
+			]
 			id: "038B204DAC9C863D"
 			subtitle: "{quests.high_voltage.space_suit.subtitle}"
 			tasks: [

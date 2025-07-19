@@ -283,6 +283,18 @@ function registerTFCStoneRecipes(event) {
 
 		//#endregion
 
+		//#region Укрепленный камень
+
+		event.recipes.gtceu.assembler(`smooth_${stone}`)
+			.itemInputs(`8x tfc:rock/raw/${stone}`)
+			.circuit(2)
+			.inputFluids(Fluid.of('gtceu:concrete', 72))
+			.itemOutputs(`8x tfc:rock/smooth/${stone}`)
+			.duration(250)
+			.EUt(8)
+
+		//#endregion
+
 		//#region Акведук
 
 		event.recipes.gtceu.assembler(`aqueduct_${stone}`)
