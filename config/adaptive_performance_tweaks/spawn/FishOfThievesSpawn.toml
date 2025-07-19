@@ -1,0 +1,14 @@
+
+#Adaptive Performance Tweaks: Spawn
+["Fish of Thieves Spawn Config"]
+	Enabled = true
+	Id = "fishofthieves"
+	#Range: 1 ~ 64
+	MaxFishPerPlayer = 16
+	#Range: 1 ~ 512
+	MaxFishPerWorld = 64
+	#Range: 1 ~ 1024
+	MaxFishPerServer = 320
+	#List of passive Mobs to optimize in the format ["minecraft:bat", "minecraft:cat", ..]
+	FishList = ["fishofthieves:ancientscales", "fishofthieves:battlegills", "fishofthieves:devilfish", "fishofthieves:islehoppers", "fishofthieves:plentifins", "fishofthieves:pondies", "fishofthieves:splashtail", "fishofthieves:stormfish", "fishofthieves:wildsplash", "fishofthieves:wreckers"]
+

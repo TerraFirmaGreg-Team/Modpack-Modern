@@ -13,12 +13,20 @@ const registerTFGItems = (event) => {
 	event.create('tfg:vitrified_pearl')
 	// #endregion
 
-	// #region Orbit dimension markers
+	// #region Space
+
+	// Orbit dimension markers
 	event.create('tfg:marker/earth_orbit').tag('c:hidden_from_recipe_viewers')
 	event.create('tfg:marker/moon_orbit').tag('c:hidden_from_recipe_viewers')
 	event.create('tfg:marker/mars_orbit').tag('c:hidden_from_recipe_viewers')
 	event.create('tfg:marker/venus_orbit').tag('c:hidden_from_recipe_viewers')
 	event.create('tfg:marker/mercury_orbit').tag('c:hidden_from_recipe_viewers')
+
+	global.AD_ASTRA_WOOD.forEach(wood => {
+		event.create(`tfg:wood/lumber/${wood.name}`)
+			.translationKey(`item.tfg.${wood.name}_lumber`)
+			.tag('tfc:lumber')
+	})
 	// #endregion
 
 	// #region Paper making
@@ -323,5 +331,16 @@ const registerTFGItems = (event) => {
 		.translationKey('tfg:large_bullet_casing')
 	event.create('tfg:nitrocellulose')
 		.translationKey('tfg:nitrocellulose')
+	//endregion
+	
+	//RockWool
+	event.create('tfg:aes_wool')
+		.translationKey('tfg:aes_wool')
+	event.create('tfg:aes_compressed_wool')
+		.translationKey('tfg:aes_compressed_wool')
+	event.create('tfg:aes_insulation_sheet')
+		.translationKey('tfg:aes_insulation_sheet')
+	event.create('tfg:aes_insulation_roll')
+		.translationKey('tfg:aes_insulation_roll')
 	//endregion
 }

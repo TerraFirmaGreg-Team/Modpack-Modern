@@ -255,6 +255,9 @@
         "detected-setblock-be-gone": {
             "side": "BOTH"
         },
+        "ad-astra-auto-lander": {
+            "side": "CLIENT"
+        },
         "probejs": {
             "export": false
         }

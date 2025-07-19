@@ -70,15 +70,7 @@
 		}
 		{
 			dependencies: ["173F6FA60A5B280B"]
-			description: [
-				"{quests.tfg_tips.beneath.desc}"
-				"DELETE:"
-				"# Beneath Must Haves"
-				"* How to go there"
-				"* Kaolin Claze"
-				"* Creation of Hellforge"
-				"* Juicer"
-			]
+			description: ["{quests.tfg_tips.beneath.desc}"]
 			disable_toast: true
 			icon: "minecraft:netherrack"
 			id: "4AA0EBFBA5D8788C"

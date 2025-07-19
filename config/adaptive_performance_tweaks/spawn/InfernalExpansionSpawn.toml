@@ -1,0 +1,30 @@
+
+#Adaptive Performance Tweaks: Spawn
+["Infernal Expansion Spawn Config"]
+	Enabled = true
+	Id = "infernalexp"
+	#Range: 1 ~ 64
+	MaxPassiveMobsPerPlayer = 4
+	#Range: 1 ~ 512
+	MaxPassiveMobsPerWorld = 16
+	#Range: 1 ~ 1024
+	MaxPassiveMobsPerServer = 320
+	#List of passive Mobs to optimize in the format ["minecraft:bat", "minecraft:cat", ..]
+	PassiveMobsList = ["infernalexp:basalt", "infernalexp:blackstone_dwarf", "infernalexp:glowsilk_moth", "infernalexp:shroomloin", "infernalexp:warpbeetle"]
+	#Range: 1 ~ 64
+	MaxNeutralMobsPerPlayer = 4
+	#Range: 1 ~ 512
+	MaxNeutralMobsPerWorld = 16
+	#Range: 1 ~ 1024
+	MaxNeutralMobsPerServer = 320
+	#List of neutral Mobs to optimize in the format ["minecraft:bee", "minecraft:wolf", ..]
+	NeutralMobsList = []
+	#Range: 1 ~ 64
+	MaxHostileMobsPerPlayer = 4
+	#Range: 1 ~ 512
+	MaxHostileMobsPerWorld = 16
+	#Range: 1 ~ 1024
+	MaxHostileMobsPerServer = 320
+	#List of hostile Mobs to optimize in the format ["minecraft:blaze", "minecraft:cave_spider", ..]
+	HostileMobsList = ["infernalexp:blindsight", "infernalexp:embody", "infernalexp:embody", "infernalexp:glowsquito", "infernalexp:voline"]
+

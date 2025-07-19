@@ -7,7 +7,7 @@ const registerEndermanOverhaulItemTags = (event) => {
 		'endermanoverhaul:corrupted_shield',
 
 		'endermanoverhaul:badlands_hood',
-		'endermanoverhaul:savannah_hood',
+		'endermanoverhaul:savanna_hood',
 		'endermanoverhaul:snowy_hood',
 
 		'endermanoverhaul:bubble_pearl',

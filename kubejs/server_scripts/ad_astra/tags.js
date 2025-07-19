@@ -53,6 +53,10 @@ const registerAdAstraItemTags = (event) => {
 	// Insulation Tier 1
 	event.add('forge:insulation_t1', 'gtceu:borosilicate_glass_dust')
 	event.add('forge:insulation_t1', 'gtceu:vitrified_asbestos_dust')
+	
+	//Insulation Tier 2
+	event.add('forge:insulation_t2', 'tfg:aes_insulation_sheet')
+	event.add('forge:insulation_t2', 'tfg:aes_insulation_roll')
 
 	// Deco blocks
 	const DECO_BLOCKS = [ 'iron', 'steel', 'desh', 'calorite', 'ostrum' ];
@@ -81,6 +85,28 @@ const registerAdAstraItemTags = (event) => {
 	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_helmet')
 	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_leggings')
 	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_boots')
+	
+	event.remove('minecraft:wool', 'ad_astra:glacian_fur')
+	
+	global.AD_ASTRA_WOOD.forEach(wood => {
+
+		if (wood.log) {
+			event.add('minecraft:logs', wood.log)
+			event.add('minecraft:logs_that_burn', wood.log)
+		}
+
+		if (wood.stripped_log) {
+			event.add('minecraft:logs', wood.stripped_log)
+			event.add('minecraft:logs_that_burn', wood.stripped_log)
+		}
+
+		if (wood.isHardwood == true) {
+			event.add('tfg:hardwood', wood.logs)
+		} else {
+			event.add('tfg:softwood', wood.logs)
+		}
+	})
+
 }
 
 const registerAdAstraBlockTags = (event) => {
@@ -147,18 +173,61 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/raw/dacite')
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/hardened/dacite')
 
+	// Mars
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/dacite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/dacite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/basalt')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/basalt')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/gabbro')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/gabbro')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/diorite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/diorite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/rhyolite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/rhyolite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/andesite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/andesite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/chert')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/chert')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/conglomerate')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/conglomerate')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/claystone')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/claystone')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/limestone')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/limestone')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/dolomite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/dolomite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/shale')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/shale')
+	event.add('ad_astra:mars_stone_replaceables', 'ad_astra:mars_stone')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_mars_stone')
+	event.add('ad_astra:mars_stone_replaceables', 'ad_astra:venus_stone')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_venus_stone')
+	event.add('ad_astra:mars_stone_replaceables', 'gtceu:red_granite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_red_granite')
+	event.add('ad_astra:mars_stone_replaceables', 'minecraft:dripstone_block')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_dripstone')
+	event.add('ad_astra:mars_stone_replaceables', 'minecraft:red_sand')
+	event.add('ad_astra:mars_stone_replaceables', 'ad_astra:mars_sand')
+	event.add('ad_astra:mars_stone_replaceables', 'ad_astra:venus_sand')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/black')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/red')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/pink')
+
+
 	event.add('minecraft:rabbits_spawnable_on', '#ad_astra:moon_stone_replaceables')
 	event.add('species:limpet_spawnable_on', '#ad_astra:moon_stone_replaceables')
 
 	event.add('tfc:can_landslide', 'ad_astra:moon_sand')
 	event.add('tfc:can_landslide', 'ad_astra:mars_sand')
 	event.add('tfc:can_landslide', 'ad_astra:venus_sand')
+	event.add('tfc:can_landslide', 'minecraft:red_sand')
 
 	event.add('tfc:can_landslide', 'ad_astra:moon_cobblestone')
 	event.add('tfc:can_landslide', 'ad_astra:mars_cobblestone')
 	event.add('tfc:can_landslide', 'ad_astra:venus_cobblestone')
 	event.add('tfc:can_landslide', 'ad_astra:mercury_cobblestone')
 	event.add('tfc:can_landslide', 'ad_astra:glacio_cobblestone')
+	event.add('tfc:can_landslide', 'gtceu:red_granite_cobblestone')
 
 	event.add('forge:cobblestone', 'ad_astra:moon_cobblestone')
 	event.add('forge:cobblestone', 'ad_astra:mars_cobblestone')

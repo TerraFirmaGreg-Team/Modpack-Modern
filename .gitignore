@@ -15,6 +15,7 @@
 # Pakku
 build/
 !.pakku/**/*
+!pakku.jar
 
 # Configs
 config/jei/world/
@@ -46,6 +47,8 @@ config/voicechat/username-cache.json
 
 config/stellarcore_stitcher_cache_jei.dat
 config/stellarcore_stitcher_cache_vanilla.dat
+
+!config/defaultoptions/options.txt
 
 # .minecraft
 !bansoukou/**.zip
@@ -85,7 +88,7 @@ config/stellarcore_stitcher_cache_vanilla.dat
 bansoukou
 .curseclient
 .sl_password
-./options.txt
+options.txt
 patchouli_data.json
 usernamecache.json
 usercache.json

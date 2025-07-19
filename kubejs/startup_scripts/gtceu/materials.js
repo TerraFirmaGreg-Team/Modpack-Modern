@@ -321,6 +321,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Platinum.setMaterialSecondaryARGB(0x59563a)
 	GTMaterials.Nickel.setMaterialARGB(0xfff4ba)
 	GTMaterials.Nickel.setMaterialSecondaryARGB(0x8d8d71)
+	GTMaterials.Thorium.setMaterialARGB(0xf8a8c0)
+	GTMaterials.Thorium.setMaterialSecondaryARGB(0xcd8dbc)
 
 	
 	global.MINECRAFT_DYE_NAMES.forEach(colorName =>

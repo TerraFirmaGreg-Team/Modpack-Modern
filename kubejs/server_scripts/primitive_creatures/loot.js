@@ -16,7 +16,7 @@ function registerPrimitiveCreaturesLoots(event) {
 
 	const CLOTHING_DROP_RATE = 0.05
 
-	// inhabitant - light tan clothes, holds a stone axe
+	// forager - light tan clothes, holds a stone axe
 	event.addEntityLootModifier('primitive_creatures:iloger_1')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([
@@ -80,7 +80,7 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('tfc_textile:direwolf_pants'),
 			Item.of('tfc_textile:direwolf_boots')])
 
-	// forager - leaf on head, leafy clothes (like the swamp vanilla villager type), ranged with poison
+	// ambusher - leaf on head, leafy clothes (like the swamp vanilla villager type), ranged with poison
 	event.addEntityLootModifier('primitive_creatures:iloger_4')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([1,3], LootEntry.of('minecraft:tipped_arrow')).addPotion("poison")
@@ -89,6 +89,13 @@ function registerPrimitiveCreaturesLoots(event) {
 			LootEntry.of('minecraft:spider_eye').when(c => c.randomChance(0.7)),
 			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.1)),
 			LootEntry.of('primitive_creatures:totem_2').when(c => c.randomChance(0.1)))
+	event.addEntityLootModifier('primitive_creatures:iloger_4')
+		.randomChance(CLOTHING_DROP_RATE)
+		.addWeightedLoot([
+			Item.of('tfc_textile:crocodile_hat'),
+			Item.of('tfc_textile:crocodile_shirt'),
+			Item.of('tfc_textile:crocodile_pants'),
+			Item.of('tfc_textile:crocodile_boots')])
 
 	// hunter - wears brown and white fur, briefly disappears when hit, ranged with weakness
 	event.addEntityLootModifier('primitive_creatures:iloger_5')

@@ -483,10 +483,17 @@ const registerGTCEURecipes = (event) => {
 	}).id('gtceu:shaped/electric_blast_furnace')
 
 	// Клей из ТФК клея
-	event.recipes.gtceu.extractor('glue_from_tfc_glue')
+	event.recipes.gtceu.extractor('tfg:glue_from_tfc_glue')
 		.itemInputs('tfc:glue')
 		.outputFluids(Fluid.of('gtceu:glue', 50))
 		.duration(400)
+		.EUt(5)
+
+	event.recipes.gtceu.mixer('tfg:glue_from_bone_meal')
+		.itemInputs('minecraft:bone_meal')
+		.inputFluids(Fluid.of('tfc:limewater', 500))
+		.outputFluids(Fluid.of('gtceu:glue', 50))
+		.duration(100)
 		.EUt(5)
 
 	// Исправление рецепта пыли серебра стерлинга
@@ -1282,4 +1289,22 @@ const registerGTCEURecipes = (event) => {
 	//#endregion
 
 	event.replaceInput({ id: 'gtceu:shaped/powderbarrel' }, 'gtceu:wood_plate', '#tfc:lumber')
+
+	event.shaped('gtceu:treated_wood_pressure_plate', [
+			' B ',
+			'CDC',
+			' E '
+		], {
+			B: '#tfc:hammers',
+			C:  'gtceu:treated_wood_slab',
+			D: '#forge:small_springs',
+			E: '#forge:tools/screwdrivers'
+		}).id('gtceu:shaped/treated_pressure_plate')
+
+	event.recipes.gtceu.assembler('gtceu:treated_pressure_plate')
+		.itemInputs('#forge:small_springs', '2x gtceu:treated_wood_slab')
+		.itemOutputs('gtceu:treated_wood_pressure_plate')
+		.circuit(0)
+		.duration(50)
+		.EUt(2)
 }

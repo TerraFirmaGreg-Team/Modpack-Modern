@@ -441,14 +441,14 @@ function registerTFGFoodRecipes(event) {
 	global.TFC_JAMS.forEach(name => {
 		processorRecipe(`${name}_jam`, 200, 8, {
 			circuit: 15,
-			itemInputs: [`4x tfc:food/${name}`, "#tfg:sugars", "#tfc:empty_jar_with_lid"],
+			itemInputs: [`4x tfc:food/${name}`, "#tfg:sugars", "4x #tfc:empty_jar_with_lid"],
 			itemOutputs: [`4x tfc:jar/${name}`],
 			itemOutputProvider: TFC.isp.of(`4x tfc:jar/${name}`).copyFood()
 		}).inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfg:clean_water" }}))
 
 		processorRecipe(`${name}_jam_no_seal`, 200, 8, {
 			circuit: 16,
-			itemInputs: [`4x tfc:food/${name}`, "#tfg:sugars", "tfc:empty_jar"],
+			itemInputs: [`4x tfc:food/${name}`, "#tfg:sugars", "4x tfc:empty_jar"],
 			itemOutputs: [`4x tfc:jar/${name}_unsealed`],
 			itemOutputProvider: TFC.isp.of(`4x tfc:jar/${name}_unsealed`).copyFood()
 		}).inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfg:clean_water" }}))
@@ -569,13 +569,7 @@ function registerTFGFoodRecipes(event) {
 		)
 	})
 
-	processorRecipe("pizza_dough_olive_oil", 300, 16, {
-		itemInputs: ['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt'],
-		itemOutputs: ['4x firmalife:food/pizza_dough'],
-		itemOutputProvider: TFC.isp.of("4x firmalife:food/pizza_dough").copyOldestFood()
-	})
-
-	processorRecipe("pizza_dough_soybean_oil", 300, 16, {
+	processorRecipe("pizza_dough", 300, 16, {
 		itemInputs: ['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt'],
 		itemOutputs: ['4x firmalife:food/pizza_dough'],
 		itemOutputProvider: TFC.isp.of("4x firmalife:food/pizza_dough").copyOldestFood()

@@ -746,12 +746,12 @@
 				"type": "minecraft:condition",
 				"if_true": {
 					"type": "minecraft:vertical_gradient",
-					"random_name": "tfg:between_middle_and_bottom_rock_layers",
+					"random_name": "tfg:moon_bottom_rock_layer",
 					"false_at_and_above": {
-						"absolute": 4
+						"absolute": 35
 					},
 					"true_at_and_below": {
-						"absolute": -4
+						"absolute": 30
 					}
 				},
 				"then_run": {
@@ -791,14 +791,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfc:rock/hardened/basalt"
+															"Name": "tfc:rock/hardened/rhyolite"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "tfc:rock/raw/basalt"
+														"Name": "tfc:rock/raw/rhyolite"
 													}
 												}
 											]
@@ -827,14 +827,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfc:rock/hardened/gabbro"
+															"Name": "tfc:rock/hardened/dacite"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "tfc:rock/raw/gabbro"
+														"Name": "tfc:rock/raw/dacite"
 													}
 												}
 											]
@@ -863,14 +863,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfg:rock/hardened_moon_deepslate"
+															"Name": "tfc:rock/hardened/basalt"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "ad_astra:moon_deepslate"
+														"Name": "tfc:rock/raw/basalt"
 													}
 												}
 											]
@@ -913,14 +913,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfc:rock/hardened/andesite"
+															"Name": "tfc:rock/hardened/gabbro"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "tfc:rock/raw/andesite"
+														"Name": "tfc:rock/raw/gabbro"
 													}
 												}
 											]
@@ -949,14 +949,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfg:rock/hardened_moon_stone"
+															"Name": "tfg:rock/hardened_moon_deepslate"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "ad_astra:moon_stone"
+														"Name": "ad_astra:moon_deepslate"
 													}
 												}
 											]
@@ -985,14 +985,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfc:rock/hardened/diorite"
+															"Name": "tfc:rock/hardened/andesite"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "tfc:rock/raw/diorite"
+														"Name": "tfc:rock/raw/andesite"
 													}
 												}
 											]
@@ -1035,14 +1035,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfg:rock/hardened_glacio_stone"
+															"Name": "tfg:rock/hardened_moon_stone"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "ad_astra:glacio_stone"
+														"Name": "ad_astra:moon_stone"
 													}
 												}
 											]
@@ -1071,14 +1071,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfc:rock/hardened/rhyolite"
+															"Name": "tfc:rock/hardened/diorite"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "tfc:rock/raw/rhyolite"
+														"Name": "tfc:rock/raw/diorite"
 													}
 												}
 											]
@@ -1107,14 +1107,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfc:rock/hardened/dacite"
+															"Name": "tfg:rock/hardened_glacio_stone"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "tfc:rock/raw/dacite"
+														"Name": "ad_astra:glacio_stone"
 													}
 												}
 											]
@@ -1130,12 +1130,12 @@
 				"type": "minecraft:condition",
 				"if_true": {
 					"type": "minecraft:vertical_gradient",
-					"random_name": "tfg:between_top_and_middle_rock_layers",
+					"random_name": "tfg:moon_middle_rock_layer",
 					"false_at_and_above": {
-						"absolute": 40
+						"absolute": 65
 					},
 					"true_at_and_below": {
-						"absolute": 35
+						"absolute": 60
 					}
 				},
 				"then_run": {
@@ -1175,14 +1175,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfc:rock/hardened/basalt"
+															"Name": "tfc:rock/hardened/dacite"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "tfc:rock/raw/basalt"
+														"Name": "tfc:rock/raw/dacite"
 													}
 												}
 											]
@@ -1211,14 +1211,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfc:rock/hardened/gabbro"
+															"Name": "tfc:rock/hardened/basalt"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "tfc:rock/raw/gabbro"
+														"Name": "tfc:rock/raw/basalt"
 													}
 												}
 											]
@@ -1247,14 +1247,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfg:rock/hardened_moon_deepslate"
+															"Name": "tfc:rock/hardened/gabbro"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "ad_astra:moon_deepslate"
+														"Name": "tfc:rock/raw/gabbro"
 													}
 												}
 											]
@@ -1297,14 +1297,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfc:rock/hardened/andesite"
+															"Name": "tfg:rock/hardened_moon_deepslate"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "tfc:rock/raw/andesite"
+														"Name": "ad_astra:moon_deepslate"
 													}
 												}
 											]
@@ -1333,14 +1333,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfg:rock/hardened_moon_stone"
+															"Name": "tfc:rock/hardened/andesite"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "ad_astra:moon_stone"
+														"Name": "tfc:rock/raw/andesite"
 													}
 												}
 											]
@@ -1369,14 +1369,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfc:rock/hardened/diorite"
+															"Name": "tfg:rock/hardened_moon_stone"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "tfc:rock/raw/diorite"
+														"Name": "ad_astra:moon_stone"
 													}
 												}
 											]
@@ -1419,14 +1419,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfg:rock/hardened_glacio_stone"
+															"Name": "tfc:rock/hardened/diorite"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "ad_astra:glacio_stone"
+														"Name": "tfc:rock/raw/diorite"
 													}
 												}
 											]
@@ -1455,14 +1455,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfc:rock/hardened/rhyolite"
+															"Name": "tfg:rock/hardened_glacio_stone"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "tfc:rock/raw/rhyolite"
+														"Name": "ad_astra:glacio_stone"
 													}
 												}
 											]
@@ -1491,14 +1491,14 @@
 													"then_run": {
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfc:rock/hardened/dacite"
+															"Name": "tfc:rock/hardened/rhyolite"
 														}
 													}
 												},
 												{
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "tfc:rock/raw/dacite"
+														"Name": "tfc:rock/raw/rhyolite"
 													}
 												}
 											]
