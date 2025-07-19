@@ -169,11 +169,11 @@ jobs:
           if ${{ env.DEV_ENVIRONMENT == 'true' && steps.changelog.outcome == 'failure' }}; then
             echo "project_version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
             echo "release_type=Unreleased" >> $GITHUB_OUTPUT
-            echo "changelog=${{ steps.changelog_dev.outputs.description }}" >> $GITHUB_OUTPUT
+            echo "changelog='${{ steps.changelog_dev.outputs.description }}'" >> $GITHUB_OUTPUT
           else
             echo "project_version=${{ steps.changelog.outputs.version }}" >> $GITHUB_OUTPUT
             echo "release_type=${{ steps.pakku_info.outputs.release_type }}" >> $GITHUB_OUTPUT
-            echo "changelog=${{ steps.changelog.outputs.description }}" >> $GITHUB_OUTPUT
+            echo "changelog='${{ steps.changelog.outputs.description }}'" >> $GITHUB_OUTPUT
           fi
 
       - name: 📄 Format diff
