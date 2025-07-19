@@ -37,27 +37,36 @@
                 {
                   "derivative": 0.0,
                   "location": -1.1,
-                  "value": 0.044
+                  "value": 0.2222
                 },
                 {
-                  "derivative": 0.0,
-                  "location": -1.02,
-                  "value": -0.2222
+                    "derivative": 0.0,
+                    "location": -1.02,
+                    "value": 0.02
                 },
                 {
-                  "derivative": 0.0,
-                  "location": -0.51,
-                  "value": -0.2222
+                    "derivative": 0.0,
+                    "location": -0.47,
+                    "value": {
+                        "coordinate": "tfg:mars/sand_dunes",
+                        "points": [
+                            {
+                                "derivative": 0,
+                                "location": -1.0,
+                                "value": -0.15
+                            },
+                            {
+                                "derivative": 0,
+                                "location": 1.0,
+                                "value": 0.2222
+                            }
+                        ]
+                    }
                 },
                 {
-                  "derivative": 0.0,
-                  "location": -0.44,
-                  "value": -0.12
-                },
-                {
-                  "derivative": 0.0,
-                  "location": -0.18,
-                  "value": -0.12
+                    "derivative": 0.0,
+                    "location": -0.18,
+                    "value": 0.015
                 },
                 {
                   "derivative": 0.0,

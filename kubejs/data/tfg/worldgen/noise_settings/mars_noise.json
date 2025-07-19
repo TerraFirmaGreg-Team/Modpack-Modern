@@ -27,133 +27,45 @@
 		"depth": 0,
 		"erosion": "tfg:mars/erosion",
 		"final_density": {
-			"type": "minecraft:min",
-			"argument1": {
-				"type": "minecraft:squeeze",
-				"argument": {
-					"type": "minecraft:mul",
-					"argument1": 0.64,
-					"argument2": {
-						"type": "minecraft:interpolated",
+			"type": "minecraft:squeeze",
+			"argument": {
+				"type": "minecraft:mul",
+				"argument1": 0.64,
+				"argument2": {
+					"type": "minecraft:interpolated",
+					"argument": {
+						"type": "minecraft:blend_density",
 						"argument": {
-							"type": "minecraft:blend_density",
-							"argument": {
-								"type": "minecraft:add",
-								"argument1": 0.1171875,
+							"type": "minecraft:add",
+							"argument1": 0.1171875,
+							"argument2": {
+								"type": "minecraft:mul",
+								"argument1": {
+									"type": "minecraft:y_clamped_gradient",
+									"from_y": -64,
+									"to_y": -40,
+									"from_value": 0,
+									"to_value": 1
+								},
 								"argument2": {
-									"type": "minecraft:mul",
-									"argument1": {
-										"type": "minecraft:y_clamped_gradient",
-										"from_value": 0.0,
-										"from_y": -32,
-										"to_value": 1.0,
-										"to_y": -20
-									},
+									"type": "minecraft:add",
+									"argument1": -0.1171875,
 									"argument2": {
 										"type": "minecraft:add",
-										"argument1": -0.1171875,
+										"argument1": -0.078125,
 										"argument2": {
-											"type": "minecraft:add",
-											"argument1": -0.078125,
+											"type": "minecraft:mul",
+											"argument1": {
+												"type": "minecraft:y_clamped_gradient",
+												"from_y": 240,
+												"to_y": 256,
+												"from_value": 1,
+												"to_value": 0
+											},
 											"argument2": {
-												"type": "minecraft:mul",
-												"argument1": {
-													"type": "minecraft:y_clamped_gradient",
-													"from_value": 1.0,
-													"from_y": 240,
-													"to_value": 0.0,
-													"to_y": 256
-												},
-												"argument2": {
-													"type": "minecraft:add",
-													"argument1": 0.078125,
-													"argument2": {
-														"type": "minecraft:range_choice",
-														"input": "tfg:mars/sloped_cheese",
-														"max_exclusive": 1.5625,
-														"min_inclusive": -1000000.0,
-														"when_in_range": {
-															"type": "minecraft:min",
-															"argument1": "tfg:mars/sloped_cheese",
-															"argument2": {
-																"type": "minecraft:mul",
-																"argument1": 5.0,
-																"argument2": "tfg:mars/caves/entrances"
-															}
-														},
-														"when_out_of_range": {
-															"type": "minecraft:max",
-															"argument1": {
-																"type": "minecraft:min",
-																"argument1": {
-																	"type": "minecraft:min",
-																	"argument1": {
-																		"type": "minecraft:add",
-																		"argument1": {
-																			"type": "minecraft:mul",
-																			"argument1": 4.0,
-																			"argument2": {
-																				"type": "minecraft:square",
-																				"argument": {
-																					"type": "minecraft:noise",
-																					"noise": "minecraft:cave_layer",
-																					"xz_scale": 1.0,
-																					"y_scale": 8.0
-																				}
-																			}
-																		},
-																		"argument2": {
-																			"type": "minecraft:add",
-																			"argument1": {
-																				"type": "minecraft:clamp",
-																				"input": {
-																					"type": "minecraft:add",
-																					"argument1": 0.27,
-																					"argument2": {
-																						"type": "minecraft:noise",
-																						"noise": "minecraft:cave_cheese",
-																						"xz_scale": 1.0,
-																						"y_scale": 0.6666666666666666
-																					}
-																				},
-																				"max": 1.0,
-																				"min": -1.0
-																			},
-																			"argument2": {
-																				"type": "minecraft:clamp",
-																				"input": {
-																					"type": "minecraft:add",
-																					"argument1": 1.5,
-																					"argument2": {
-																						"type": "minecraft:mul",
-																						"argument1": -0.64,
-																						"argument2": "tfg:mars/sloped_cheese"
-																					}
-																				},
-																				"max": 0.5,
-																				"min": 0.0
-																			}
-																		}
-																	},
-																	"argument2": "tfg:mars/caves/entrances"
-																},
-																"argument2": {
-																	"type": "minecraft:add",
-																	"argument1": "tfg:mars/caves/spaghetti_2d",
-																	"argument2": "tfg:mars/caves/spaghetti_roughness_function"
-																}
-															},
-															"argument2": {
-																"type": "minecraft:range_choice",
-																"input": "tfg:mars/caves/pillars",
-																"max_exclusive": 0.03,
-																"min_inclusive": -1000000.0,
-																"when_in_range": -1000000.0,
-																"when_out_of_range": "tfg:mars/caves/pillars"
-															}
-														}
-													}
-												}
+												"type": "minecraft:add",
+												"argument1": 0.078125,
+												"argument2": "tfg:mars/sloped_cheese"
 											}
 										}
 									}
@@ -162,8 +74,7 @@
 						}
 					}
 				}
-			},
-			"argument2": "tfg:mars/caves/noodle"
+			}
 		},
 		"fluid_level_floodedness": {
 			"type": "minecraft:noise",
@@ -442,56 +353,6 @@
 				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
-						"tfg:mars/martian_dunes"
-					]
-				},
-				"then_run": {
-					"type": "minecraft:condition",
-					"if_true": {
-						"type": "minecraft:stone_depth",
-						"offset": 0,
-						"surface_type": "floor",
-						"add_surface_depth": false,
-						"secondary_depth_range": 0
-					},
-					"then_run": {
-						"type": "minecraft:block",
-						"result_state": {
-							"Name": "minecraft:blue_concrete"
-						}
-					}
-				}
-			},
-			{
-				"type": "minecraft:condition",
-				"if_true": {
-					"type": "minecraft:biome",
-					"biome_is": [
-						"tfg:mars/martian_deep_desert"
-					]
-				},
-				"then_run": {
-					"type": "minecraft:condition",
-					"if_true": {
-						"type": "minecraft:stone_depth",
-						"offset": 0,
-						"surface_type": "floor",
-						"add_surface_depth": false,
-						"secondary_depth_range": 0
-					},
-					"then_run": {
-						"type": "minecraft:block",
-						"result_state": {
-							"Name": "minecraft:purple_concrete"
-						}
-					}
-				}
-			},
-			{
-				"type": "minecraft:condition",
-				"if_true": {
-					"type": "minecraft:biome",
-					"biome_is": [
 						"tfg:mars/martian_oasis"
 					]
 				},
@@ -513,6 +374,152 @@
 				}
 			},
 
+
+			{
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:mars/martian_dunes",
+						"tfg:mars/martian_deep_desert"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:sequence",
+					"sequence": [
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"offset": 2,
+								"surface_type": "floor",
+								"add_surface_depth": false,
+								"secondary_depth_range": 0
+							},
+							"then_run": {
+								"type": "minecraft:sequence",
+								"sequence": [
+									{
+										"type": "minecraft:sequence",
+										"sequence": [
+											{
+												"type": "minecraft:condition",
+												"if_true": {
+													"type": "minecraft:noise_threshold",
+													"noise": "tfg:mars_dunes_color",
+													"min_threshold": -2.0,
+													"max_threshold": -0.15
+												},
+												"then_run": {
+													"type": "minecraft:block",
+													"result_state": {
+														"Name": "ad_astra:venus_sand"
+													}
+												}
+											},
+											{
+												"type": "minecraft:condition",
+												"if_true": {
+													"type": "minecraft:noise_threshold",
+													"noise": "tfg:mars_dunes_color",
+													"min_threshold": -0.15,
+													"max_threshold": 0.15
+												},
+												"then_run": {
+													"type": "minecraft:block",
+													"result_state": {
+														"Name": "ad_astra:mars_sand"
+													}
+												}
+											},
+											{
+												"type": "minecraft:condition",
+												"if_true": {
+													"type": "minecraft:noise_threshold",
+													"noise": "tfg:mars_dunes_color",
+													"min_threshold": 0.15,
+													"max_threshold": 2.0
+												},
+												"then_run": {
+													"type": "minecraft:block",
+													"result_state": {
+														"Name": "minecraft:red_sand"
+													}
+												}
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"offset": 6,
+								"surface_type": "floor",
+								"add_surface_depth": false,
+								"secondary_depth_range": 0
+							},
+							"then_run": {
+								"type": "minecraft:sequence",
+								"sequence": [
+									{
+										"type": "minecraft:sequence",
+										"sequence": [
+											{
+												"type": "minecraft:condition",
+												"if_true": {
+													"type": "minecraft:noise_threshold",
+													"noise": "tfg:mars_dunes_color",
+													"min_threshold": -2.0,
+													"max_threshold": -0.15
+												},
+												"then_run": {
+													"type": "minecraft:block",
+													"result_state": {
+														"Name": "ad_astra:venus_sandstone"
+													}
+												}
+											},
+											{
+												"type": "minecraft:condition",
+												"if_true": {
+													"type": "minecraft:noise_threshold",
+													"noise": "tfg:mars_dunes_color",
+													"min_threshold": -0.15,
+													"max_threshold": 0.15
+												},
+												"then_run": {
+													"type": "minecraft:block",
+													"result_state": {
+														"Name": "tfc:raw_sandstone/red"
+													}
+												}
+											},
+											{
+												"type": "minecraft:condition",
+												"if_true": {
+													"type": "minecraft:noise_threshold",
+													"noise": "tfg:mars_dunes_color",
+													"min_threshold": 0.15,
+													"max_threshold": 2.0
+												},
+												"then_run": {
+													"type": "minecraft:block",
+													"result_state": {
+														"Name": "minecraft:red_sandstone"
+													}
+												}
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				}
+			},
 
 
 			{
@@ -536,7 +543,7 @@
 								"type": "minecraft:noise_threshold",
 								"noise": "tfg:stone_layer_mars_1",
 								"min_threshold": -1.0,
-								"max_threshold": -0.25
+								"max_threshold": -0.15
 							},
 							"then_run": {
 								"type": "minecraft:sequence",
@@ -547,7 +554,7 @@
 											"type": "minecraft:noise_threshold",
 											"noise": "tfg:stone_layer_mars_2",
 											"min_threshold": -1.0,
-											"max_threshold": -0.25
+											"max_threshold": -0.15
 										},
 										"then_run": {
 											"type": "minecraft:sequence",
@@ -618,7 +625,7 @@
 										"if_true": {
 											"type": "minecraft:noise_threshold",
 											"noise": "tfg:stone_layer_mars_2",
-											"min_threshold": 0.25,
+											"min_threshold": 0.15,
 											"max_threshold": 1.0
 										},
 										"then_run": {
@@ -669,7 +676,7 @@
 											"type": "minecraft:noise_threshold",
 											"noise": "tfg:stone_layer_mars_2",
 											"min_threshold": -1.0,
-											"max_threshold": -0.25
+											"max_threshold": -0.15
 										},
 										"then_run": {
 											"type": "minecraft:sequence",
@@ -740,7 +747,7 @@
 										"if_true": {
 											"type": "minecraft:noise_threshold",
 											"noise": "tfg:stone_layer_mars_2",
-											"min_threshold": 0.25,
+											"min_threshold": 0.15,
 											"max_threshold": 1.0
 										},
 										"then_run": {
@@ -779,7 +786,7 @@
 							"if_true": {
 								"type": "minecraft:noise_threshold",
 								"noise": "tfg:stone_layer_mars_1",
-								"min_threshold": 0.25,
+								"min_threshold": 0.15,
 								"max_threshold": 1.0
 							},
 							"then_run": {
@@ -791,7 +798,7 @@
 											"type": "minecraft:noise_threshold",
 											"noise": "tfg:stone_layer_mars_2",
 											"min_threshold": -1.0,
-											"max_threshold": -0.25
+											"max_threshold": -0.15
 										},
 										"then_run": {
 											"type": "minecraft:sequence",
@@ -862,7 +869,7 @@
 										"if_true": {
 											"type": "minecraft:noise_threshold",
 											"noise": "tfg:stone_layer_mars_2",
-											"min_threshold": 0.25,
+											"min_threshold": 0.15,
 											"max_threshold": 1.0
 										},
 										"then_run": {
@@ -920,7 +927,7 @@
 								"type": "minecraft:noise_threshold",
 								"noise": "tfg:stone_layer_mars_1",
 								"min_threshold": -1.0,
-								"max_threshold": -0.25
+								"max_threshold": -0.15
 							},
 							"then_run": {
 								"type": "minecraft:sequence",
@@ -931,7 +938,7 @@
 											"type": "minecraft:noise_threshold",
 											"noise": "tfg:stone_layer_mars_2",
 											"min_threshold": -1.0,
-											"max_threshold": -0.25
+											"max_threshold": -0.15
 										},
 										"then_run": {
 											"type": "minecraft:sequence",
@@ -1002,7 +1009,7 @@
 										"if_true": {
 											"type": "minecraft:noise_threshold",
 											"noise": "tfg:stone_layer_mars_2",
-											"min_threshold": 0.25,
+											"min_threshold": 0.15,
 											"max_threshold": 1.0
 										},
 										"then_run": {
@@ -1053,7 +1060,7 @@
 											"type": "minecraft:noise_threshold",
 											"noise": "tfg:stone_layer_mars_2",
 											"min_threshold": -1.0,
-											"max_threshold": -0.25
+											"max_threshold": -0.15
 										},
 										"then_run": {
 											"type": "minecraft:sequence",
@@ -1124,7 +1131,7 @@
 										"if_true": {
 											"type": "minecraft:noise_threshold",
 											"noise": "tfg:stone_layer_mars_2",
-											"min_threshold": 0.25,
+											"min_threshold": 0.15,
 											"max_threshold": 1.0
 										},
 										"then_run": {
@@ -1163,7 +1170,7 @@
 							"if_true": {
 								"type": "minecraft:noise_threshold",
 								"noise": "tfg:stone_layer_mars_1",
-								"min_threshold": 0.25,
+								"min_threshold": 0.15,
 								"max_threshold": 1.0
 							},
 							"then_run": {
@@ -1175,7 +1182,7 @@
 											"type": "minecraft:noise_threshold",
 											"noise": "tfg:stone_layer_mars_2",
 											"min_threshold": -1.0,
-											"max_threshold": -0.25
+											"max_threshold": -0.15
 										},
 										"then_run": {
 											"type": "minecraft:sequence",
@@ -1246,7 +1253,7 @@
 										"if_true": {
 											"type": "minecraft:noise_threshold",
 											"noise": "tfg:stone_layer_mars_2",
-											"min_threshold": 0.25,
+											"min_threshold": 0.15,
 											"max_threshold": 1.0
 										},
 										"then_run": {
@@ -1479,7 +1486,7 @@
 							"type": "minecraft:noise_threshold",
 							"noise": "tfg:stone_layer_mars_1",
 							"min_threshold": -1.0,
-							"max_threshold": -0.25
+							"max_threshold": -0.15
 						},
 						"then_run": {
 							"type": "minecraft:sequence",
@@ -1490,7 +1497,7 @@
 										"type": "minecraft:noise_threshold",
 										"noise": "tfg:stone_layer_mars_2",
 										"min_threshold": -1.0,
-										"max_threshold": -0.25
+										"max_threshold": -0.15
 									},
 									"then_run": {
 										"type": "minecraft:sequence",
@@ -1561,7 +1568,7 @@
 									"if_true": {
 										"type": "minecraft:noise_threshold",
 										"noise": "tfg:stone_layer_mars_2",
-										"min_threshold": 0.25,
+										"min_threshold": 0.15,
 										"max_threshold": 1.0
 									},
 									"then_run": {
@@ -1612,7 +1619,7 @@
 										"type": "minecraft:noise_threshold",
 										"noise": "tfg:stone_layer_mars_2",
 										"min_threshold": -1.0,
-										"max_threshold": -0.25
+										"max_threshold": -0.15
 									},
 									"then_run": {
 										"type": "minecraft:sequence",
@@ -1683,7 +1690,7 @@
 									"if_true": {
 										"type": "minecraft:noise_threshold",
 										"noise": "tfg:stone_layer_mars_2",
-										"min_threshold": 0.25,
+										"min_threshold": 0.15,
 										"max_threshold": 1.0
 									},
 									"then_run": {
@@ -1722,7 +1729,7 @@
 						"if_true": {
 							"type": "minecraft:noise_threshold",
 							"noise": "tfg:stone_layer_mars_1",
-							"min_threshold": 0.25,
+							"min_threshold": 0.15,
 							"max_threshold": 1.0
 						},
 						"then_run": {
@@ -1734,7 +1741,7 @@
 										"type": "minecraft:noise_threshold",
 										"noise": "tfg:stone_layer_mars_2",
 										"min_threshold": -1.0,
-										"max_threshold": -0.25
+										"max_threshold": -0.15
 									},
 									"then_run": {
 										"type": "minecraft:sequence",
@@ -1805,7 +1812,7 @@
 									"if_true": {
 										"type": "minecraft:noise_threshold",
 										"noise": "tfg:stone_layer_mars_2",
-										"min_threshold": 0.25,
+										"min_threshold": 0.15,
 										"max_threshold": 1.0
 									},
 									"then_run": {
