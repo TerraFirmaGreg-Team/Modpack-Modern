@@ -166,7 +166,7 @@ jobs:
           echo 'project_name=${{ steps.pakku_info.outputs.name }}' >> $GITHUB_OUTPUT
           echo "minecraft_version=$(echo ${{ steps.pakku_lock_info.outputs.mc_versions }} | jq -r '.[]')" >> $GITHUB_OUTPUT
 
-          f [[ "${{ env.DEV_ENVIRONMENT }}" == "true" && "${{ steps.changelog.outcome }}" == "failure" ]]; then
+          if [[ "${{ env.DEV_ENVIRONMENT }}" == "true" && "${{ steps.changelog.outcome }}" == "failure" ]]; then
             echo 'project_version=build_#${{ github.run_number }}' >> $GITHUB_OUTPUT
             echo 'release_type=Unreleased' >> $GITHUB_OUTPUT
             echo "changelog=$(echo ${{ steps.changelog_dev.outputs.description }} | sed 's/$/\\n/g')" >> $GITHUB_OUTPUT
