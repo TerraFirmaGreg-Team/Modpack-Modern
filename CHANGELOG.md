@@ -2,7 +2,7 @@
 ## [Unreleased]
 ### Changes
 
-## [0.10.1] - 19.07.2025
+## [0.10.1] - 19-07-2025
 ### Changes
 - Added harvest baskets to pick fruit from fruit trees and berry bushes (#1338) @Redeix
 - Added ice soup @Pyritie
