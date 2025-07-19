@@ -246,17 +246,17 @@ jobs:
           path: ./build/curseforge/${{ needs.info.outputs.project_full_name }}-curseforge.zip
           if-no-files-found: error
 
-      # - name: 📁 Rename artifact modrinth
-      #   run: |
-      #     cd ./build/modrinth/
-      #     mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
+      - name: 📁 Rename artifact modrinth
+        run: |
+          cd ./build/modrinth/
+          mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
 
-      # - name: 🚀 Upload artifact modrinth
-      #   uses: actions/upload-artifact@v4.6.2
-      #   with:
-      #     name: ${{ needs.info.outputs.project_full_name }}-modrinth
-      #     path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
-      #     if-no-files-found: warn
+      - name: 🚀 Upload artifact modrinth
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: ${{ needs.info.outputs.project_full_name }}-modrinth
+          path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
+          if-no-files-found: warn
 
   build-server:
     name: 📦 Build Server
