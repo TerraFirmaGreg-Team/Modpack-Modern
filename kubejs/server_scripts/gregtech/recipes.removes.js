@@ -661,6 +661,8 @@ function removeGTCEURecipes(event) {
 
 	event.remove({ id: 'gtceu:compressor/compress_certus_quartz_to_raw_ore_block' })
 	event.remove({ id: 'gtceu:compressor/glowstone' })
+	event.remove({ id: 'gtceu:compressor/plant_ball_from_red_mushroom' })
+	event.remove({ id: 'gtceu:compressor/plant_ball_from_brown_mushroom' })
 
 	event.remove({ id: 'gtceu:forming_press/form_purpur_slab_into_pillar' })
 
