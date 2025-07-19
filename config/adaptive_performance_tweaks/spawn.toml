@@ -1,0 +1,37 @@
+
+#Adaptive Performance Tweaks: Spawn
+[General]
+	#General allow list for spawn entities (e.g. minecraft:squid) which should be ignored for optimization.
+	allowList = [""]
+	#General deny list for spawn entities (e.g. minecraft:bat) to no longer spawn in all worlds.
+	denyList = [""]
+	#General list of ignored dimensions.
+	spawnIgnoreDimensionList = ["minecraft:the_end"]
+	#Enable/Disable more aggressive and strict spawn limitations.
+	spawnAggressiveMode = false
+
+["Chunk Optimization"]
+	#Allows to spawn at least one mob (regardless of the type) per selected chunk to avoid side effects.A value of 9 means every 9 chunk request will be allowed. Use 0 to disable this optimization.
+	#Range: 0 ~ 256
+	friendlyChunkSpawnRate = 9
+
+["View Area"]
+	#Enable/Disable player based view area optimization.
+	viewAreaEnabled = true
+
+["Global Spawn Limitations"]
+	#Enable/Disable general spawn limitations.
+	spawnLimitationEnabled = true
+	#Blocks every x spawn to avoid an over population with the limited spawn area. Use 0 to disable this optimization.
+	#Range: 0 ~ 100
+	spawnLimitationLimiter = 16
+	#Defines the max. number of entities of a specific type, which could spawn within the player view area. Use 0 to disable this optimization.
+	#Range: 0 ~ 256
+	spawnLimitationMaxMobsPerPlayer = 32
+	#Defines the max. number of entities of a specific type, which could spawn within a single world. Use 0 to disable this optimization.
+	#Range: 0 ~ 1024
+	spawnLimitationMaxMobsPerWorld = 128
+	#Defines the max. number of entities of a specific type, which could spawn within the server. Use 0 to disable this optimization.
+	#Range: 0 ~ 1024
+	spawnLimitationMaxMobsPerServer = 512
+

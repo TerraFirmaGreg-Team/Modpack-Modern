@@ -46,12 +46,16 @@ function registerTFGCollapseRecipes(event) {
 	event.recipes.tfc.collapse('ad_astra:mercury_cobblestone', 'tfg:rock/hardened_mercury_stone')
 	event.recipes.tfc.landslide('ad_astra:mercury_cobblestone', 'ad_astra:mercury_cobblestone')
 	event.recipes.tfc.collapse('ad_astra:mercury_cobblestone', '#forge:ores_in_ground/mercury_stone')
-	event.recipes.tfc.landslide('ad_astra:mercury_sand', 'ad_astra:mercury_sand')
 
 	event.recipes.tfc.collapse('ad_astra:glacio_cobblestone', 'ad_astra:glacio_stone')
 	event.recipes.tfc.collapse('ad_astra:glacio_cobblestone', 'tfg:rock/hardened_glacio_stone')
 	event.recipes.tfc.landslide('ad_astra:glacio_cobblestone', 'ad_astra:glacio_cobblestone')
 	event.recipes.tfc.collapse('ad_astra:glacio_cobblestone', '#forge:ores_in_ground/glacio_stone')
-	event.recipes.tfc.landslide('ad_astra:glacio_sand', 'ad_astra:glacio_sand')
+
+	event.recipes.tfc.landslide('minecraft:red_sand', 'minecraft:red_sand')
+	event.recipes.tfc.landslide('gtceu:red_granite_cobblestone', 'gtceu:red_granite_cobblestone')
+	event.recipes.tfc.collapse('gtceu:red_granite_cobblestone', 'gtceu:red_granite')
+	event.recipes.tfc.collapse('gtceu:red_granite_cobblestone', 'tfg:rock/hardened_red_granite')
+	event.recipes.tfc.collapse('gtceu:red_granite_cobblestone', '#forge:ores_in_ground/red_granite')
 	// #endregion
 }

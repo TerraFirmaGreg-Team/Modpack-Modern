@@ -4187,6 +4187,35 @@
             },
             "files": [
                 {
+                    "type": "modrinth",
+                    "file_name": "create_hypertube-0.2.3-FORGE.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4",
+                        "1.20.5",
+                        "1.20.6"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/ATDdrG1y/versions/29xx8WYd/create_hypertube-0.2.3-FORGE.jar",
+                    "id": "29xx8WYd",
+                    "parent_id": "ATDdrG1y",
+                    "hashes": {
+                        "sha512": "a68a604423b609e699b0bd1b0588e04b0e0b946af40ca654e203cb89f4fddcac2c980f233240fe1507bb172f35e5ebac0c2f9bdbe3a0312abbc47c9ecdfabf18",
+                        "sha1": "15fecf45a7da064af350847c259903af18b6007b"
+                    },
+                    "required_dependencies": [
+                        "LNytGWDc"
+                    ],
+                    "size": 310156,
+                    "date_published": "2025-07-19T00:59:05.441048Z"
+                },
+                {
                     "type": "curseforge",
                     "file_name": "create_hypertube-0.2.2-FORGE.jar",
                     "mc_versions": [
@@ -4209,35 +4238,6 @@
                     ],
                     "size": 299727,
                     "date_published": "2025-07-02T14:17:53.393Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "create_hypertube-0.2.2-FORGE.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.4",
-                        "1.20.5",
-                        "1.20.6"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/ATDdrG1y/versions/T03ljNLM/create_hypertube-0.2.2-FORGE.jar",
-                    "id": "T03ljNLM",
-                    "parent_id": "ATDdrG1y",
-                    "hashes": {
-                        "sha512": "ac6f3166b72a88cf26a215ca02e9a4d156b0e35432c318311d02671b5be5df84f8a114136c2880853e61059cd3dc0755f6d778fbaa6e7ee24735242ac7dada1e",
-                        "sha1": "d162b8a797883b100d1e04f19ce8c0c12e0c1f11"
-                    },
-                    "required_dependencies": [
-                        "LNytGWDc"
-                    ],
-                    "size": 299727,
-                    "date_published": "2025-07-02T14:23:52.046185Z"
                 }
             ]
         },
@@ -13491,6 +13491,31 @@
             },
             "files": [
                 {
+                    "type": "modrinth",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/lyq8kJKh/TerraFirmaGreg-Core-Modern-0.7.3.jar",
+                    "id": "lyq8kJKh",
+                    "parent_id": "lNttW2Xl",
+                    "hashes": {
+                        "sha512": "233d224499533db9ae76e74fc52c357184e6189de7fdec7ebfe36db8a5c44493210aa6878d0cf37b0dce08dbdad247de6d8c4f82400c4344bbf8a863fdb7631a",
+                        "sha1": "a3c5f0ff25afdc7826ca3931493d705b0a5f2665"
+                    },
+                    "required_dependencies": [
+                        "JaCEZUhg",
+                        "7tG215v7"
+                    ],
+                    "size": 451137,
+                    "date_published": "2025-07-19T17:18:04.503966Z"
+                },
+                {
                     "type": "curseforge",
                     "file_name": "TerraFirmaGreg-Core-Modern-0.7.2.jar",
                     "mc_versions": [
@@ -13514,31 +13539,6 @@
                     ],
                     "size": 436018,
                     "date_published": "2025-07-13T12:04:21.110Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/UKToPvme/TerraFirmaGreg-Core-Modern-0.7.2.jar",
-                    "id": "UKToPvme",
-                    "parent_id": "lNttW2Xl",
-                    "hashes": {
-                        "sha512": "123ed9c2f67defc669f44a1a3e6675d39fd74eadc9692b66aa00aab108dfdff675a05c7238d3e8c01ee1e1a33a9df2a1807fffe8f507ed917ffa582702876553",
-                        "sha1": "a8e280cf82fc0f189f23a3fd64da696d9922b6b5"
-                    },
-                    "required_dependencies": [
-                        "7tG215v7",
-                        "JaCEZUhg"
-                    ],
-                    "size": 436018,
-                    "date_published": "2025-07-13T12:04:40.780357Z"
                 }
             ]
         },

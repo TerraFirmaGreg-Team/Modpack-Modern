@@ -206,6 +206,12 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_red_granite')
 	event.add('ad_astra:mars_stone_replaceables', 'minecraft:dripstone_block')
 	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_dripstone')
+	event.add('ad_astra:mars_stone_replaceables', 'minecraft:red_sand')
+	event.add('ad_astra:mars_stone_replaceables', 'ad_astra:mars_sand')
+	event.add('ad_astra:mars_stone_replaceables', 'ad_astra:venus_sand')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/black')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/red')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/pink')
 
 
 	event.add('minecraft:rabbits_spawnable_on', '#ad_astra:moon_stone_replaceables')
@@ -214,12 +220,14 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfc:can_landslide', 'ad_astra:moon_sand')
 	event.add('tfc:can_landslide', 'ad_astra:mars_sand')
 	event.add('tfc:can_landslide', 'ad_astra:venus_sand')
+	event.add('tfc:can_landslide', 'minecraft:red_sand')
 
 	event.add('tfc:can_landslide', 'ad_astra:moon_cobblestone')
 	event.add('tfc:can_landslide', 'ad_astra:mars_cobblestone')
 	event.add('tfc:can_landslide', 'ad_astra:venus_cobblestone')
 	event.add('tfc:can_landslide', 'ad_astra:mercury_cobblestone')
 	event.add('tfc:can_landslide', 'ad_astra:glacio_cobblestone')
+	event.add('tfc:can_landslide', 'gtceu:red_granite_cobblestone')
 
 	event.add('forge:cobblestone', 'ad_astra:moon_cobblestone')
 	event.add('forge:cobblestone', 'ad_astra:mars_cobblestone')
