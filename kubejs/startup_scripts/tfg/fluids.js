@@ -34,8 +34,6 @@ const registerTFGFluids = (event) => {
 	event.create('tfg:semiheavy_ammoniacal_water')
 		.thinTexture(0x704f786c)
 		.color(0x4f786c)
-		.viscosity(0)
-		.density(0)
 		.temperature(213)
 		.renderType('translucent')
 	//#endregion
@@ -54,8 +52,6 @@ const registerTFGFluids = (event) => {
         .stillTexture('tfg:block/planets/venus/super_heated_slurry_still') 
         .flowingTexture('tfg:block/planets/venus/super_heated_slurry_flow')
         .bucketColor(0xc4d984)
-		.viscosity(0)
-		.density(0)
 		.renderType('translucent')
 	//#endregion
 }
