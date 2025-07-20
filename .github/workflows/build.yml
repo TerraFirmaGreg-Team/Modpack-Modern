@@ -188,7 +188,7 @@ jobs:
 
       - name: 🔍 Create Pull Request if tag not found
         id: create_pr
-        if: ${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'true'}} 
+        if: ${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'true' && github.repository == 'TerraFirmaGreg-Team/Modpack-Modern' }}
         uses: devops-infra/action-pull-request@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
