@@ -204,7 +204,7 @@ jobs:
             ${{ steps.changelog_dev.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
           base: main
-          branch: dev
+          head: dev
           team-reviewers: project-lead
         
       - name: 📝 Generate Github Summary
