@@ -14,7 +14,7 @@
 		"min_y": -32,
 		"height": 384,
 		"size_horizontal": 1,
-		"size_vertical": 2
+		"size_vertical": 1
 	},
 	"noise_router": {
 		"barrier": {
@@ -27,45 +27,48 @@
 		"depth": 0,
 		"erosion": "tfg:mars/erosion",
 		"final_density": {
-			"type": "minecraft:squeeze",
-			"argument": {
-				"type": "minecraft:mul",
-				"argument1": 0.64,
-				"argument2": {
-					"type": "minecraft:interpolated",
-					"argument": {
-						"type": "minecraft:blend_density",
+			"type": "minecraft:min",
+			"argument1": {
+				"type": "minecraft:squeeze",
+				"argument": {
+					"type": "minecraft:mul",
+					"argument1": 0.64,
+					"argument2": {
+						"type": "minecraft:interpolated",
 						"argument": {
-							"type": "minecraft:add",
-							"argument1": 0.1171875,
-							"argument2": {
-								"type": "minecraft:mul",
-								"argument1": {
-									"type": "minecraft:y_clamped_gradient",
-									"from_y": -64,
-									"to_y": -40,
-									"from_value": 0,
-									"to_value": 1
-								},
+							"type": "minecraft:blend_density",
+							"argument": {
+								"type": "minecraft:add",
+								"argument1": 0.1171875,
 								"argument2": {
-									"type": "minecraft:add",
-									"argument1": -0.1171875,
+									"type": "minecraft:mul",
+									"argument1": {
+										"type": "minecraft:y_clamped_gradient",
+										"from_y": -32,
+										"to_y": -20,
+										"from_value": 0,
+										"to_value": 1
+									},
 									"argument2": {
 										"type": "minecraft:add",
-										"argument1": -0.078125,
+										"argument1": -0.1171875,
 										"argument2": {
-											"type": "minecraft:mul",
-											"argument1": {
-												"type": "minecraft:y_clamped_gradient",
-												"from_y": 240,
-												"to_y": 256,
-												"from_value": 1,
-												"to_value": 0
-											},
+											"type": "minecraft:add",
+											"argument1": -0.078125,
 											"argument2": {
-												"type": "minecraft:add",
-												"argument1": 0.078125,
-												"argument2": "tfg:mars/sloped_cheese"
+												"type": "minecraft:mul",
+												"argument1": {
+													"type": "minecraft:y_clamped_gradient",
+													"from_y": 240,
+													"to_y": 256,
+													"from_value": 1,
+													"to_value": 0
+												},
+												"argument2": {
+													"type": "minecraft:add",
+													"argument1": 0.078125,
+													"argument2": "tfg:mars/sloped_cheese"
+												}
 											}
 										}
 									}
@@ -74,7 +77,9 @@
 						}
 					}
 				}
-			}
+			},
+			"argument2": "minecraft:overworld/caves/noodle"
+
 		},
 		"fluid_level_floodedness": {
 			"type": "minecraft:noise",
@@ -408,7 +413,7 @@
 													"type": "minecraft:noise_threshold",
 													"noise": "tfg:mars_dunes_color",
 													"min_threshold": -2.0,
-													"max_threshold": -0.15
+													"max_threshold": -0.25
 												},
 												"then_run": {
 													"type": "minecraft:block",
@@ -422,8 +427,8 @@
 												"if_true": {
 													"type": "minecraft:noise_threshold",
 													"noise": "tfg:mars_dunes_color",
-													"min_threshold": -0.15,
-													"max_threshold": 0.15
+													"min_threshold": -0.25,
+													"max_threshold": 0.05
 												},
 												"then_run": {
 													"type": "minecraft:block",
@@ -437,7 +442,7 @@
 												"if_true": {
 													"type": "minecraft:noise_threshold",
 													"noise": "tfg:mars_dunes_color",
-													"min_threshold": 0.15,
+													"min_threshold": 0.05,
 													"max_threshold": 2.0
 												},
 												"then_run": {
@@ -473,7 +478,7 @@
 													"type": "minecraft:noise_threshold",
 													"noise": "tfg:mars_dunes_color",
 													"min_threshold": -2.0,
-													"max_threshold": -0.15
+													"max_threshold": -0.25
 												},
 												"then_run": {
 													"type": "minecraft:block",
@@ -487,8 +492,8 @@
 												"if_true": {
 													"type": "minecraft:noise_threshold",
 													"noise": "tfg:mars_dunes_color",
-													"min_threshold": -0.15,
-													"max_threshold": 0.15
+													"min_threshold": -0.25,
+													"max_threshold": 0.05
 												},
 												"then_run": {
 													"type": "minecraft:block",
@@ -502,7 +507,7 @@
 												"if_true": {
 													"type": "minecraft:noise_threshold",
 													"noise": "tfg:mars_dunes_color",
-													"min_threshold": 0.15,
+													"min_threshold": 0.05,
 													"max_threshold": 2.0
 												},
 												"then_run": {
