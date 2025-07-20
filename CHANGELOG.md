@@ -2,7 +2,7 @@
 ## [Unreleased]
 ### Changes
 
-## [0.10.1] - 19.07.2025
+## [0.10.1] - 19-07-2025
 ### Changes
 - Added harvest baskets to pick fruit from fruit trees and berry bushes (#1338) @Redeix
 - Added ice soup @Pyritie
@@ -14,6 +14,7 @@
 - Allowed "window" blocks and panes to be broken and picked up @BlueBoat29
 - Updated title and loading screens to be more memory efficient and hopefully look better on other resolutions. (#1381) @Redeix
 - Changed Firmalife greenhouses to no longer allow any doors/trapdoors/pipes (#1363) @BlueBoat29
+- Thorium is now Pink (#1378) @Nebby1999
 ### Bug fixes
 - Fixed yeast food processor conflict (#1310) @Redeix
 - Fixed seed oil voiding in barrels (#1310) @Redeix
