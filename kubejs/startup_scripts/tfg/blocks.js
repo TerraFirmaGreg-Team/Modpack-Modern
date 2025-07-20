@@ -121,6 +121,44 @@ const registerTFGBlocks = (event) => {
 
 	// #endregion
 
+	// #region Layer blocks
+
+	event.create('tfg:ash_pile', 'tfg:layer_block')
+		.existingItem('tfc:powder/wood_ash')
+		.mapColor('color_light_gray')
+
+	event.create('tfg:pile/black_sand', 'tfg:layer_block')
+		.existingItem('tfc:sand/black')
+
+	event.create('tfg:pile/brown_sand', 'tfg:layer_block')
+		.existingItem('tfc:sand/brown')
+		
+	event.create('tfg:pile/green_sand', 'tfg:layer_block')
+		.existingItem('tfc:sand/green')
+
+	event.create('tfg:pile/pink_sand', 'tfg:layer_block')
+		.existingItem('tfc:sand/pink')
+
+	event.create('tfg:pile/red_sand', 'tfg:layer_block')
+		.existingItem('tfc:sand/red')
+
+	event.create('tfg:pile/white_sand', 'tfg:layer_block')
+		.existingItem('tfc:sand/white')
+
+	event.create('tfg:pile/yellow_sand', 'tfg:layer_block')
+		.existingItem('tfc:sand/yellow')
+
+	event.create('tfg:pile/mars_sand', 'tfg:layer_block')
+		.existingItem('ad_astra:mars_sand')
+
+	event.create('tfg:pile/moon_sand', 'tfg:layer_block')
+		.existingItem('ad_astra:moon_sand')
+
+	event.create('tfg:pile/venus_sand', 'tfg:layer_block')
+		.existingItem('ad_astra:venus_sand')
+	
+
+	// #endregion
 
 	// #region Deprecated
 
