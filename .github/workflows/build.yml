@@ -178,7 +178,7 @@ jobs:
 
       - name: 📄 Format diff
         id: format_diff
-        if: ${{ steps.read_diff.outputs.diff != '' }}
+        if: ${{ steps.read_diff.outputs.diff != '## Projects' }}
         uses: roamingowl/template-output-with-eta@v1.12.0
         with:
           template: |
