@@ -1,4 +1,6 @@
 # Changelog
+## [Unreleased]
+
 ## [0.10.2] - 20-07-2025
 ### Changes
 - Aged Corn Whiskey and Aged Rye Whiskey now have status effects (#1390) @EveProgrammingsockson 
@@ -6,6 +8,7 @@
 - Fixed TFG-Core version mismatch @Xikaro
 - Fixed hardwood logs macerating into softwood pulp (#1391) @Forsuin
 - Fixed iron flask dupe (#1397) @Pyritie
+- Fixed amethyst/nether quartz dupe (#1395) @Pyritie
 
 ## [0.10.1] - 19-07-2025
 ### Changes
