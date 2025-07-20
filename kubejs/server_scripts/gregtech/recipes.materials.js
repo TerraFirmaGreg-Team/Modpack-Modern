@@ -696,7 +696,11 @@ function registerGTCEUMetalRecipes(event) {
 			{ A: chipped, B: '#forge:tools/mortars' })
 			.id(`shapeless/mortar_chipped_${material.getName()}`)
 
-		event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, 9), ChemicalHelper.get(TagPrefix.block, material, 1))
+		let amount = 9;
+		if (material == GTMaterials.NetherQuartz || material == GTMaterials.Amethyst)
+			amount = 4;
+
+		event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, amount), ChemicalHelper.get(TagPrefix.block, material, 1))
 			.recipeTier(0)
 			.id(`greate:pressing/unpacking_${material.getName()}_block`)
 	}

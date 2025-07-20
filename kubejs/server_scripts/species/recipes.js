@@ -6,10 +6,10 @@ function registerSpeciesRecipes(event) {
 		event.remove({ output: item })
 	})
 
+	event.remove({ mod: 'species' })
+
 	event.shapeless('species:music_disc_dial', ['etched:blank_music_disc', 'species:birt_egg'])
-
 	event.shapeless('species:music_disc_lapidarian', ['etched:blank_music_disc', 'tfc:rock/raw/basalt_slab'])
-
 	event.shapeless('species:music_disk_spawner', ['etched:blank_music_disc', 'computercraft:disk'])
 
 	event.shaped('species:cranktrap', [
