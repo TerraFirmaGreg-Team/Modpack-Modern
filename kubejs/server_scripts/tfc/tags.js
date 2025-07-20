@@ -517,6 +517,15 @@ const registerTFCFluidTags = (event) => {
 	event.add('tfc:usable_in_blue_steel_bucket', 'tfc:spring_water')
 	event.add('tfc:usable_in_red_steel_bucket', 'tfc:spring_water')
 
+	event.add('tfc:alcohols', "tfcagedalcohol:aged_beer")
+	event.add('tfc:alcohols', "tfcagedalcohol:aged_cider")
+	event.add('tfc:alcohols', "tfcagedalcohol:aged_rum")
+	event.add('tfc:alcohols', "tfcagedalcohol:aged_sake")
+	event.add('tfc:alcohols', "tfcagedalcohol:aged_vodka")
+	event.add('tfc:alcohols', "tfcagedalcohol:aged_whiskey")
+	event.add('tfc:alcohols', "tfcagedalcohol:aged_corn_whiskey")
+	event.add('tfc:alcohols', "tfcagedalcohol:aged_rye_whiskey")
+
 	// Добавляем тег для скрытия в EMI
 	event.add('c:hidden_from_recipe_viewers', 'tfc:metal/bismuth')
 	event.add('c:hidden_from_recipe_viewers', 'tfc:metal/bismuth_bronze')
