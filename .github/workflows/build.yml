@@ -188,7 +188,7 @@ jobs:
 
       - name: 🔍 Create Pull Request if tag not found
         id: create_pr
-        if: ${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'true'}} 
+        if: ${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'true' && false}} 
         uses: peter-evans/create-pull-request@v7.0.8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
