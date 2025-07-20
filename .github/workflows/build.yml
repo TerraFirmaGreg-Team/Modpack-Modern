@@ -188,24 +188,25 @@ jobs:
 
       - name: 🔍 Create Pull Request if tag not found
         id: create_pr
-        if: ${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'true' && false}} 
-        uses: peter-evans/create-pull-request@v7.0.8
+        if: ${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'true'}} 
+        uses: devops-infra/action-pull-request@v0.6.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          source_branch: dev
+          target_branch: main
           title: 'Release: ${{ steps.check.outputs.project_version }}'
           body: |
             **This is an automated Pull Request from the dev branch.**
 
             📃 **Name**: ${{ steps.check.outputs.project_name }}
-            📃 **Release**:  `${{ steps.check.outputs.project_version }}`
-            📃 **Release Type**: `${{ steps.check.outputs.release_type }}`
+            📃 **Release**:  `${{ steps.changelog.outputs.version }}`
+            📃 **Release Type**: `${{ steps.pakku_info.outputs.release_type }}`
             📃 **Game Version**: `${{ steps.check.outputs.minecraft_version }}`
 
             ${{ steps.changelog_dev.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
-          base: main
-          head: dev
-          team-reviewers: project-lead
+          reviewer: project-lead
+          ignore_users: "dependabot"
         
       - name: 📝 Generate Github Summary
         uses: WcAServices/markdown-template-action@v1.1.1
