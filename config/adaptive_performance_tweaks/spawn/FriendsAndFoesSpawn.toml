@@ -1,0 +1,14 @@
+
+#Adaptive Performance Tweaks: Spawn
+["Friends and Foes Spawn Config"]
+	Enabled = true
+	Id = "friendsandfoes"
+	#Range: 1 ~ 64
+	MaxPassiveMobsPerPlayer = 8
+	#Range: 1 ~ 512
+	MaxPassiveMobsPerWorld = 64
+	#Range: 1 ~ 1024
+	MaxPassiveMobsPerServer = 320
+	#List of passive Mobs to optimize in the format ["minecraft:bat", "minecraft:cat", ..]
+	PassiveMobsList = ["friendsandfoes:glare"]
+

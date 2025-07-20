@@ -1,9 +1,6 @@
 {
 	"carvers": {
-		"air": [
-			"tfg:mars_cave",
-			"tfg:mars_canyon"
-		]
+		"air": []
 	},
 	"downfall": 0.0,
 	"effects": {
@@ -36,10 +33,7 @@
 			"tfg:earth/geode/pyrite",
 			"tfg:earth/geode/quartzite"
 		],
-		[
-			"tfc:vein/gabbro_dike",
-			"tfc:vein/diorite_dike"
-		],
+		[],
 		[],
 		[],
 		"#tfg:mars_veins",

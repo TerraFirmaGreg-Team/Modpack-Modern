@@ -41,7 +41,8 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_PLATE,
 		GENERATE_DENSE,
 		GENERATE_RING,
-		GENERATE_FOIL
+		GENERATE_FOIL,
+		GENERATE_FINE_WIRE,
 	} = $MATERIAL_FLAGS
 
 	var metalTooling = [
@@ -184,7 +185,18 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Lead.addFlags(GENERATE_DOUBLE_INGOTS);
 	//
-	//        /* Другое */
+	//		  /* Superconductors */
+	GTMaterials.ManganesePhosphide.addFlags(GENERATE_FINE_WIRE);
+	GTMaterials.MagnesiumDiboride.addFlags(GENERATE_FINE_WIRE);
+	GTMaterials.MercuryBariumCalciumCuprate.addFlags(GENERATE_FINE_WIRE);
+	GTMaterials.UraniumTriplatinum.addFlags(GENERATE_FINE_WIRE);
+	GTMaterials.SamariumIronArsenicOxide.addFlags(GENERATE_FINE_WIRE);
+	//GTMaterials.IndiumTinBariumTitaniumCuprate.addFlags();
+	//GTMaterials.UraniumRhodiumDinaquadide.addFlags();
+	//GTMaterials.EnrichedNaquadahTriniumEuropiumDuranide.addFlags();
+	GTMaterials.RutheniumTriniumAmericiumNeutronate.addFlags(GENERATE_FINE_WIRE);
+	//
+	//        /* Другое (Other) */
 
 	// TODO: Exception needs to check the wizardry
 	GTMaterials.Bismuth.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
@@ -322,6 +334,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Platinum.setMaterialSecondaryARGB(0x59563a)
 	GTMaterials.Nickel.setMaterialARGB(0xfff4ba)
 	GTMaterials.Nickel.setMaterialSecondaryARGB(0x8d8d71)
+	GTMaterials.Thorium.setMaterialARGB(0xf8a8c0)
+	GTMaterials.Thorium.setMaterialSecondaryARGB(0xcd8dbc)
 
 	
 	global.MINECRAFT_DYE_NAMES.forEach(colorName =>

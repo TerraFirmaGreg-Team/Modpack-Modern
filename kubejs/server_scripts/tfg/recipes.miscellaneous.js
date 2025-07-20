@@ -885,4 +885,47 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.shapeless('9x tfg:aes_insulation_sheet', [
 		'tfg:aes_insulation_roll'
 	]).id('tfg:shapeless/aes_insulation_sheet')
+	
+	global.GTCEU_SUPERCONDUCTORS.forEach((type, index) => {
+		const multiplier = index + 1
+
+		event.recipes.gtceu.assembler(`tfg:assembler/superconductor_coil_small_from_${type.name}`)
+			.itemInputs(
+				ChemicalHelper.get(TagPrefix.plate, GTMaterials.HSLASteel, 4),
+				ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 2),
+				ChemicalHelper.get(TagPrefix.rod, GTMaterials.SteelMagnetic, 1),
+				ChemicalHelper.get(TagPrefix.wireFine, GTMaterials[type.materialId], 4),
+			)
+			.inputFluids(Fluid.of('gtceu:silicone_rubber', 144))
+			.itemOutputs(Item.of('tfg:superconductor_coil_small', 4 * multiplier))
+			.circuit(4)
+			.duration(400)
+			.EUt(GTValues.VA[GTValues.MV])
+
+		event.recipes.gtceu.assembler(`tfg:assembler/superconductor_coil_large_from_${type.name}`)
+			.itemInputs(
+				ChemicalHelper.get(TagPrefix.plate, GTMaterials.HSLASteel, 4),
+				ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 2),
+				ChemicalHelper.get(TagPrefix.rod, GTMaterials.SteelMagnetic, 1),
+				ChemicalHelper.get(TagPrefix.wireGtSingle, GTMaterials[type.materialId], 4),
+			)
+			.inputFluids(Fluid.of('gtceu:silicone_rubber', 144))
+			.itemOutputs(Item.of('tfg:superconductor_coil_large', 4 * multiplier))
+			.circuit(7)
+			.duration(600)
+			.EUt(GTValues.VA[GTValues.MV])
+	})
+
+	event.recipes.gtceu.assembler('tfg:assembler/electromagnetic_accelerator')
+		.itemInputs(
+			'2x #forge:plates/desh',
+			'gtceu:mv_voltage_coil',
+			'5x tfg:dry_ice',
+			'gtceu:nonconducting_casing'
+		)
+		.inputFluids(Fluid.of('gtceu:blue_alloy', 288))
+		.itemOutputs('6x tfg:electromagnetic_accelerator')
+		.circuit(4)
+		.duration(800)
+		.EUt(GTValues.VA[GTValues.MV])
 }

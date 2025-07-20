@@ -3,13 +3,24 @@ type = fancymenu_layout
 layout-meta {
   identifier = drippy_loading_overlay
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1752822404814
+  last_edited_time = 1752899622608
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:eaa53af5-5510-4a75-9b0a-68ade58a1b7e-1752822391236] = [groups:][instances:]
+  [loading_requirement_container_meta:5a04ea61-16dc-4ce3-b5f1-db096b50a05a-1752899545176] = [groups:][instances:]
+}
+
+customization {
+  action = setscale
+  scale = 3.0
+}
+
+customization {
+  action = autoscale
+  basewidth = 1920
+  baseheight = 1080
 }
 
 menu_background {
@@ -58,10 +69,10 @@ element {
   auto_sizing_base_screen_height = 1419
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -200
-  y = -53
-  width = 400
-  height = 66
+  x = -147
+  y = -33
+  width = 294
+  height = 48
   stretch_x = false
   stretch_y = false
   stay_on_screen = false
@@ -180,9 +191,9 @@ vanilla_button {
   auto_sizing_base_screen_height = 1419
   sticky_anchor = false
   anchor_point = vanilla
-  x = 180
-  y = 388
-  width = 472
+  x = 138
+  y = 298
+  width = 364
   height = 10
   stretch_x = false
   stretch_y = false
@@ -237,10 +248,10 @@ vanilla_button {
   auto_sizing_base_screen_height = 0
   sticky_anchor = false
   anchor_point = vanilla
-  x = 180
-  y = 177
-  width = 472
-  height = 118
+  x = 138
+  y = 137
+  width = 364
+  height = 90
   stretch_x = false
   stretch_y = false
   stay_on_screen = true

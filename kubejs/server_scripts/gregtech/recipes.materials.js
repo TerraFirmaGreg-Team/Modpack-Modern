@@ -696,7 +696,11 @@ function registerGTCEUMetalRecipes(event) {
 			{ A: chipped, B: '#forge:tools/mortars' })
 			.id(`shapeless/mortar_chipped_${material.getName()}`)
 
-		event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, 9), ChemicalHelper.get(TagPrefix.block, material, 1))
+		let amount = 9;
+		if (material == GTMaterials.NetherQuartz || material == GTMaterials.Amethyst)
+			amount = 4;
+
+		event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, amount), ChemicalHelper.get(TagPrefix.block, material, 1))
 			.recipeTier(0)
 			.id(`greate:pressing/unpacking_${material.getName()}_block`)
 	}
@@ -750,7 +754,7 @@ function registerGTCEUMetalRecipes(event) {
 
 		const materialDustStack = ChemicalHelper.get(TagPrefix.dust, material, 1)
 		const materialIngotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-		const glassDustStack = ChemicalHelper.get(TagPrefix.dust, GTMaterials.Glass, 4)
+		const glassDustStack = ChemicalHelper.get(TagPrefix.dust, GTMaterials.Glass, 1)
 		const unfinishedLampStack = ChemicalHelper.get(TFGTagPrefix.lampUnfinished, material, 1)
 
 		event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_lamp`)
@@ -1046,6 +1050,7 @@ function registerGTCEUMetalRecipes(event) {
 			makeToolRecipe(GTToolType.MINING_HAMMER, TFGTagPrefix.toolHeadMiningHammer, 'tfg:mining_hammer_head_extruder_mold', circuit++, material)
 			makeToolRecipe(GTToolType.SCYTHE, TFGTagPrefix.toolHeadScythe, 'tfg:scythe_head_extruder_mold', circuit++, material)
 			makeToolRecipe(GTToolType.HARD_HAMMER, TFGTagPrefix.toolHeadHammer, 'tfg:hammer_head_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.BUTCHERY_KNIFE, TFGTagPrefix.toolHeadButcheryKnife, 'tfg:butchery_knife_head_extruder_mold', circuit++, material)
 			makeToolRecipe(GTToolType.SCREWDRIVER, TagPrefix.toolHeadScrewdriver, 'tfg:screwdriver_tip_extruder_mold', circuit++, material)
 			makeToolRecipe(GTToolType.WRENCH, TagPrefix.toolHeadWrench, 'tfg:wrench_tip_extruder_mold', circuit++, material)
 			makeToolRecipe(GTToolType.WIRE_CUTTER, TagPrefix.toolHeadWireCutter, 'tfg:wire_cutter_extruder_mold', circuit++, material)
