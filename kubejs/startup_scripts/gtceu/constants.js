@@ -299,3 +299,18 @@ global.ADD_CIRCUIT = [
 ];
 //#endregion
 
+//#region Superconductors
+/** @global */
+global.GTCEU_SUPERCONDUCTORS = [
+    {name: 'manganese_phosphide', materialId: 'ManganesePhosphide'}, 
+    {name: 'magnesium_diboride', materialId: 'MagnesiumDiboride'},
+    {name: 'mercury_barium_calcium_cuprate', materialId: 'MercuryBariumCalciumCuprate'},
+    {name: 'uranium_triplatinum', materialId: 'UraniumTriplatinum'},
+    {name: 'samarium_iron_arsenic_oxide', materialId: 'SamariumIronArsenicOxide'},
+    {name: 'indium_tin_barium_titanium_cuprate', materialId: 'IndiumTinBariumTitaniumCuprate'},
+    {name: 'uranium_rhodium_dinaquadide', materialId: 'UraniumRhodiumDinaquadide'},
+    {name: 'enriched_naquadah_trinium_europium_duranide', materialId: 'EnrichedNaquadahTriniumEuropiumDuranide'},
+    {name: 'ruthenium_trinium_americium_neutronate', materialId: 'RutheniumTriniumAmericiumNeutronate'}
+]
+//#endregion
+
