@@ -3,7 +3,7 @@ backend = "DEFAULT"
 #Enable or disable instance update limiting with distance.
 limitUpdates = true
 #The number of worker threads to use. Set to -1 to let Flywheel decide. Set to 0 to disable parallelism. Requires a game restart to take effect.
-#Range: -1 ~ 24
+#Range: -1 ~ 32
 workerThreads = -1
 
 #Config options for Flywheel's built-in backends.
