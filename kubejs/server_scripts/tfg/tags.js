@@ -349,6 +349,13 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfg:harvester_harvestable', '#tfc:berry_bushes')
 	event.add('tfg:harvester_harvestable', '#tfc:any_spreading_bush')
 
+	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_large')
+	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_small')
+	event.add('minecraft:mineable/pickaxe', 'tfg:electromagnetic_accelerator')
+	event.add('forge:mineable/wrench', 'tfg:superconductor_coil_large')
+	event.add('forge:mineable/wrench', 'tfg:superconductor_coil_small')
+	event.add('forge:mineable/wrench', 'tfg:electromagnetic_accelerator')
+
 	// #endregion
 }
 //#endregion
