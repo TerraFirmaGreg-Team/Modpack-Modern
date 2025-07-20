@@ -142,7 +142,7 @@ jobs:
         with:
           path: CHANGELOG.md
           version: "unreleased"
-        continue-on-error: false
+        continue-on-error: true
         
       - name: 📄 Changelog Parser
         id: changelog
