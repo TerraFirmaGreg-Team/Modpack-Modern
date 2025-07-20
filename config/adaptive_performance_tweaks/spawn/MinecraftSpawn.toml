@@ -1,0 +1,60 @@
+
+#Adaptive Performance Tweaks: Spawn
+["Minecraft Spawn Config"]
+	Enabled = true
+	Id = "minecraft"
+	#e.g. mobs which will not attack you
+	#Range: 1 ~ 64
+	MaxPassiveMobsPerPlayer = 8
+	#Range: 1 ~ 512
+	MaxPassiveMobsPerWorld = 32
+	#Range: 1 ~ 1024
+	MaxPassiveMobsPerServer = 320
+	#List of passive Mobs to optimize in the format ["minecraft:bat", "minecraft:cat", ..]
+	PassiveMobsList = ["minecraft:allay", "minecraft:axolotl", "minecraft:bat", "minecraft:cat", "minecraft:chicken", "minecraft:cow", "minecraft:donkey", "minecraft:fox", "minecraft:frog", "minecraft:horse", "minecraft:mooshroom", "minecraft:mule", "minecraft:ocelot", "minecraft:parrot", "minecraft:pig", "minecraft:rabbit", "minecraft:sheep", "minecraft:skeleton_horse", "minecraft:snow_golem", "minecraft:turtle"]
+	#e.g. mobs which will attack under certain conditions ...
+	#Range: 1 ~ 64
+	MaxNeutralMobsPerPlayer = 8
+	#Range: 1 ~ 512
+	MaxNeutralMobsPerWorld = 32
+	#Range: 1 ~ 1024
+	MaxNeutralMobsPerServer = 320
+	#List of neutral Mobs to optimize in the format ["minecraft:bee", "minecraft:wolf", ..]
+	NeutralMobsList = ["minecraft:bee", "minecraft:cave_spider", "minecraft:enderman", "minecraft:goat", "minecraft:iron_golem", "minecraft:llama", "minecraft:panda", "minecraft:polar_bear", "minecraft:spider", "minecraft:trader_llama", "minecraft:wandering_trader", "minecraft:wolf", "minecraft:zombie_horse"]
+	#e.g. mobs which will always attack yon ...
+	#Range: 1 ~ 64
+	MaxHostileMobsPerPlayer = 8
+	#Range: 1 ~ 512
+	MaxHostileMobsPerWorld = 32
+	#Range: 1 ~ 1024
+	MaxHostileMobsPerServer = 320
+	#List of hostile Mobs to optimize in the format ["minecraft:blaze", "minecraft:cave_spider", ..]
+	HostileMobsList = ["minecraft:chicken_jockey", "minecraft:creeper", "minecraft:ender_dragon", "minecraft:endermite", "minecraft:evoker", "minecraft:giant", "minecraft:husk", "minecraft:illusioner", "minecraft:pillager", "minecraft:ravager", "minecraft:ravager_jockey", "minecraft:shulker", "minecraft:silverfish", "minecraft:skeleton", "minecraft:skeleton_horseman", "minecraft:slime", "minecraft:stray", "minecraft:vex", "minecraft:vindicator", "minecraft:warden", "minecraft:witch", "minecraft:wither", "minecraft:zoglin", "minecraft:zombie", "minecraft:zombie_villager"]
+	#e.g. mostly fish
+	#Range: 1 ~ 64
+	MaxWaterPassiveMobsPerPlayer = 8
+	#Range: 1 ~ 512
+	MaxWaterPassiveMobsPerWorld = 32
+	#Range: 1 ~ 1024
+	MaxWaterPassiveMobsPerServer = 320
+	#List of passive water Mobs to optimize
+	WaterPassiveMobsList = ["minecraft:axolotl", "minecraft:cod", "minecraft:pufferfish", "minecraft:salmon", "minecraft:tropical_fish"]
+	#e.g. squid, dolphin, ...
+	#Range: 1 ~ 64
+	MaxWaterNeutralMobsPerPlayer = 6
+	#Range: 1 ~ 512
+	MaxWaterNeutralMobsPerWorld = 24
+	#Range: 1 ~ 1024
+	MaxWaterNeutralMobsPerServer = 320
+	#List of neutral water Mobs to optimize
+	WaterNeutralMobsList = ["minecraft:dolphin", "minecraft:squid"]
+	#e.g. drowned, guardian...
+	#Range: 1 ~ 64
+	MaxWaterHostileMobsPerPlayer = 16
+	#Range: 1 ~ 512
+	MaxWaterHostileMobsPerWorld = 64
+	#Range: 1 ~ 1024
+	MaxWaterHostileMobsPerServer = 320
+	#List of hostile water Mobs to optimize
+	WaterHostileMobsList = ["minecraft:drowned", "minecraft:elder_guardian", "minecraft:guardian"]
+

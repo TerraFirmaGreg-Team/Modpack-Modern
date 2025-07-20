@@ -102,6 +102,42 @@ fanSpeedMultiplier = 0.75
 					steel_millstone = 1.0
 					steel_mechanical_saw = 1.0
 					steel_mechanical_pump = 1.0
+					tungsten_steel_gearbox = 0.0
+					tungsten_steel_crushing_wheel = 3.0
+					brass_encased_tungsten_steel_shaft = 0.0
+					silicone_rubber_belt_stainless_steel = 0.0
+					andesite_encased_large_tungsten_steel_cogwheel = 0.0
+					andesite_encased_tungsten_steel_cogwheel = 0.0
+					stainless_steel_mechanical_saw = 4.0
+					stainless_steel_cogwheel = 0.0
+					andesite_encased_stainless_steel_shaft = 0.0
+					tungsten_steel_encased_fan = 3.0
+					andesite_encased_large_stainless_steel_cogwheel = 0.0
+					large_tungsten_steel_cogwheel = 0.0
+					stainless_steel_shaft = 0.0
+					tungsten_steel_cogwheel = 0.0
+					stainless_steel_mechanical_press = 4.0
+					large_stainless_steel_cogwheel = 0.0
+					brass_encased_large_tungsten_steel_cogwheel = 0.0
+					stainless_steel_mechanical_pump = 2.0
+					brass_encased_large_stainless_steel_cogwheel = 0.0
+					stainless_steel_encased_fan = 2.0
+					stainless_steel_millstone = 2.0
+					stainless_steel_gearbox = 0.0
+					tungsten_steel_millstone = 3.0
+					brass_encased_stainless_steel_shaft = 0.0
+					tungsten_steel_mechanical_press = 6.0
+					polyethylene_belt_tungsten_steel = 0.0
+					tungsten_steel_shaft = 0.0
+					stainless_steel_mechanical_mixer = 2.0
+					andesite_encased_stainless_steel_cogwheel = 0.0
+					andesite_encased_tungsten_steel_shaft = 0.0
+					tungsten_steel_mechanical_saw = 6.0
+					brass_encased_tungsten_steel_cogwheel = 0.0
+					brass_encased_stainless_steel_cogwheel = 0.0
+					stainless_steel_crushing_wheel = 2.0
+					tungsten_steel_mechanical_mixer = 3.0
+					tungsten_steel_mechanical_pump = 3.0
 
 				[kinetics.stressValues.v2.impact.aluminium]
 					silicone_rubber_belt_aluminium = 0.0
@@ -386,3 +422,4 @@ fanSpeedMultiplier = 0.75
 			#.
 			#Range: 0.0 ~ 3.4028234663852886E38
 			neutroniumPressure = 524288.0
+
