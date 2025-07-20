@@ -1,0 +1,13 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "tfcagedalcohol:aged_vodka",
+  "thirst": 15,
+  "intoxication": 2000,
+  "effects": [
+    {
+      "type": "minecraft:resistance",
+      "duration": 3200,
+      "amplifier": 1
+    }
+  ]
+}
