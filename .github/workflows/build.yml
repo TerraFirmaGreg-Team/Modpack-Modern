@@ -188,13 +188,14 @@ jobs:
 
       - name: 🔍 Create Pull Request if tag not found
         id: create_pr
-        if: ${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'true' && 1 != 1 }} 
+        if: ${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'true'}} 
         uses: peter-evans/create-pull-request@v7.0.8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           title: 'Release: ${{ steps.check.outputs.project_version }}'
           body: |
-            'This is an automated Pull Request from the dev branch.'
+            **This is an automated Pull Request from the dev branch.**
+
             📃 **Name**: ${{ steps.check.outputs.project_name }}
             📃 **Release**:  `${{ steps.check.outputs.project_version }}`
             📃 **Release Type**: `${{ steps.check.outputs.release_type }}`
@@ -202,8 +203,8 @@ jobs:
 
             ${{ steps.changelog_dev.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
-          head: dev
           base: main
+          branch: dev
           team-reviewers: project-lead
         
       - name: 📝 Generate Github Summary
