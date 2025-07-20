@@ -40,7 +40,8 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_PLATE,
 		GENERATE_DENSE,
 		GENERATE_RING,
-		GENERATE_FOIL
+		GENERATE_FOIL,
+		GENERATE_FINE_WIRE,
 	} = $MATERIAL_FLAGS
 
 	var metalTooling = [
@@ -183,7 +184,18 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Lead.addFlags(GENERATE_DOUBLE_INGOTS);
 	//
-	//        /* Другое */
+	//		  /* Superconductors */
+	GTMaterials.ManganesePhosphide.addFlags(GENERATE_FINE_WIRE);
+	GTMaterials.MagnesiumDiboride.addFlags(GENERATE_FINE_WIRE);
+	GTMaterials.MercuryBariumCalciumCuprate.addFlags(GENERATE_FINE_WIRE);
+	GTMaterials.UraniumTriplatinum.addFlags(GENERATE_FINE_WIRE);
+	GTMaterials.SamariumIronArsenicOxide.addFlags(GENERATE_FINE_WIRE);
+	//GTMaterials.IndiumTinBariumTitaniumCuprate.addFlags();
+	//GTMaterials.UraniumRhodiumDinaquadide.addFlags();
+	//GTMaterials.EnrichedNaquadahTriniumEuropiumDuranide.addFlags();
+	GTMaterials.RutheniumTriniumAmericiumNeutronate.addFlags(GENERATE_FINE_WIRE);
+	//
+	//        /* Другое (Other) */
 
 	// TODO: Exception needs to check the wizardry
 	GTMaterials.Bismuth.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
