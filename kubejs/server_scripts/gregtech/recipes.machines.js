@@ -1,4 +1,5 @@
 ﻿// priority: 0
+"use strict";
 
 function registerGTCEuMachineRecipes(event) {
 	//#region Выход: Filter Casing

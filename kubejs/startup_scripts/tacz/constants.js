@@ -1,3 +1,6 @@
+"use strict";
+
+
 global.TACZ_GUNS_INDEX = [
 	//TACZ
 	//Pistol

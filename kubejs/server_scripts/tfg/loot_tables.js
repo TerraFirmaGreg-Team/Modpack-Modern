@@ -1,3 +1,6 @@
+"use strict";
+
+
 function registerTFGLoots(event) {
 
     //#region Vase Loot

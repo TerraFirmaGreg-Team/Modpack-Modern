@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function registerDiggerHelmetRecipes(event) {
 	event.remove({ mod: 'diggerhelmet' })

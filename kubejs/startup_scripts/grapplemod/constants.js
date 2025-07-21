@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 global.GRAPPLEMOD_DISABLED_ITEMS = [
 	"grapplemod:launcheritem",

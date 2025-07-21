@@ -1,3 +1,4 @@
+"use strict";
 
 const ammoIndexLogic = (event) => {
 	const id = event.getId().toString();
