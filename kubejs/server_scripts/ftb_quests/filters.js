@@ -1,3 +1,5 @@
+"use strict";
+
 //#region Preservation Filter
 FTBFilterSystemEvents.customFilter("HasPreservation", evt =>
 {

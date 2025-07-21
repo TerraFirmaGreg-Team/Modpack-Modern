@@ -1,3 +1,6 @@
+"use strict";
+
+
 const $ICalendar = Java.loadClass('net.dries007.tfc.util.calendar.ICalendar')
 const $LerpFloatLayer = Java.loadClass('net.dries007.tfc.world.chunkdata.LerpFloatLayer')
 

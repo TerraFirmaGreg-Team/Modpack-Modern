@@ -1,3 +1,4 @@
+"use strict";
 
 /*
  * NBT Structure of a Grappling Hook:

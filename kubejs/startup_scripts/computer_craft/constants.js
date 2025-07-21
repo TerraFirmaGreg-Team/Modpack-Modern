@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 global.COMPUTER_CRAFT_DISCS = [
     '{Color:15790320}',

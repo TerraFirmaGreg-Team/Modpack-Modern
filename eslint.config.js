@@ -13,10 +13,11 @@ export default defineConfig([
     }, 
 
     extends: ["js/recommended"], 
-    languageOptions: { globals: globals.node, ecmaVersion: "ES2015" },
+    languageOptions: { globals: globals.node, ecmaVersion: 2015 },
     rules: {
       "no-undef": "off",
       "no-unused-vars": "off",
+      "no-unexpected-multiline": "off",
       "@stylistic/comma-style": [1, "last"],
       "@stylistic/brace-style": [1, "1tbs"],
       "@stylistic/function-call-spacing": [1, "never"],

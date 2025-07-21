@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 global.ALEKIROOFS_DISABLED_ITEMS = [
     'alekiroofs:oak_roofing',

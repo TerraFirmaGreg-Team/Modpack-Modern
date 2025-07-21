@@ -1,5 +1,5 @@
 // priority: 0
- 
+"use strict";
 const registerHandGliderRecipes = (event) => {
  
     event.remove({id: 'hangglider:glider_framework'})

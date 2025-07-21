@@ -1,3 +1,5 @@
+"use strict";
+
 const registerDomumOrnamentumRecipes = (event) => {
 
 	event.remove({ mod: 'domum_ornamentum', type: 'minecraft:crafting_shaped' })

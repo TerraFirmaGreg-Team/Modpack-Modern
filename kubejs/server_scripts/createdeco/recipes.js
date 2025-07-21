@@ -1,3 +1,5 @@
+"use strict";
+
 const registerCreatedecoRecipes = (event) => {
 
 	//#region Item Replacements

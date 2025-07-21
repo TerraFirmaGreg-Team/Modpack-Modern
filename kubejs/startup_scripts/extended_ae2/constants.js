@@ -1,3 +1,5 @@
+"use strict";
+
 global.EXTENDED_AE2_DISABLED_ITEMS = [
 
     'expatternprovider:infinity_cell',

@@ -1,4 +1,5 @@
 // Priority: 0
+"use strict";
 
 const registerTFGCrops = (event) => {
 

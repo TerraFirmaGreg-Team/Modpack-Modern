@@ -1,5 +1,8 @@
 # Changelog
 ## [Unreleased]
+### Changes
+### Bug fixes
+- Fixed butchery knife crafting recipe (#1405) @Pyritie
 
 ## [0.10.2] - 20-07-2025
 ### Changes

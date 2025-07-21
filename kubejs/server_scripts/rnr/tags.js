@@ -1,3 +1,5 @@
+"use strict";
+
 const registerRnrItemTags = (event) => {
 
 	global.RNR_DISABLED_ITEMS.forEach(item => {

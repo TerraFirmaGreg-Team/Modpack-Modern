@@ -1,3 +1,5 @@
+"use strict";
+
 const registerCreateConnectedItemTags = (event) => {
 
 	global.CREATE_CONNECTED_DISABLED_ITEMS.forEach(item => {

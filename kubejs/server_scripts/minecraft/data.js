@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function registerTFCDataForMinecraft(event) {
 	event.foodItem('minecraft:golden_apple', food => {

@@ -1,4 +1,5 @@
 ﻿// priority: 0
+"use strict";
 
 function registerTFCMaterialsRecipes(event) {
 

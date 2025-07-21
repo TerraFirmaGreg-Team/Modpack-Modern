@@ -1,4 +1,5 @@
 ﻿// priority: 0
+"use strict";
 
 function registerGTCEUMetalRecipes(event) {
 
@@ -1050,6 +1051,7 @@ function registerGTCEUMetalRecipes(event) {
 			makeToolRecipe(GTToolType.MINING_HAMMER, TFGTagPrefix.toolHeadMiningHammer, 'tfg:mining_hammer_head_extruder_mold', circuit++, material)
 			makeToolRecipe(GTToolType.SCYTHE, TFGTagPrefix.toolHeadScythe, 'tfg:scythe_head_extruder_mold', circuit++, material)
 			makeToolRecipe(GTToolType.HARD_HAMMER, TFGTagPrefix.toolHeadHammer, 'tfg:hammer_head_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.BUTCHERY_KNIFE, TFGTagPrefix.toolHeadButcheryKnife, 'tfg:butchery_knife_head_extruder_mold', circuit++, material)
 			makeToolRecipe(GTToolType.SCREWDRIVER, TagPrefix.toolHeadScrewdriver, 'tfg:screwdriver_tip_extruder_mold', circuit++, material)
 			makeToolRecipe(GTToolType.WRENCH, TagPrefix.toolHeadWrench, 'tfg:wrench_tip_extruder_mold', circuit++, material)
 			makeToolRecipe(GTToolType.WIRE_CUTTER, TagPrefix.toolHeadWireCutter, 'tfg:wire_cutter_extruder_mold', circuit++, material)

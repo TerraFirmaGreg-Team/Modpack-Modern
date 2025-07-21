@@ -1,3 +1,5 @@
+"use strict";
+
 const registerBeneathBlockTags = (event) => {
 
 	global.BENEATH_DISABLED_ITEMS.forEach(item => {
