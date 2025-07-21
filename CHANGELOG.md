@@ -7,7 +7,8 @@
 ### Bug fixes
 - Fixed butchery knife crafting recipe (#1405) @Pyritie
 - Fixed new extruder molds missing a tag to work with the curving press (#1412) @Forsuin
-- Fixed contraptions not understanding TFC chests @Pyritie
+- Fixed contraptions no longer understanding TFC chests @Pyritie
+- Fixed ice never melting in the overworld (#1408) @Pyritie
 
 ## [0.10.2] - 20-07-2025
 ### Changes
