@@ -368,6 +368,88 @@
             ]
         },
         {
+            "pakku_id": "FUkrlSRxJw3vXHSa",
+            "pakku_links": [
+                "tnanmdYAjMuu9igL",
+                "KXDQAyIcviU2Sjy6",
+                "6GwMQIiEZI9QEBDy",
+                "Grz0T2HLTDSCXa81",
+                "7KKvgCCVN5ojt885"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "adaptive-performance-tweaks",
+                "modrinth": "adaptive-performance-tweaks"
+            },
+            "name": {
+                "curseforge": "Adaptive Performance Tweaks (Bundle)",
+                "modrinth": "Adaptive Performance Tweaks (Bundle)"
+            },
+            "id": {
+                "curseforge": "450269",
+                "modrinth": "kLawTYXp"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "adaptive_performance_tweaks_1.20.1-11.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5815/115/adaptive_performance_tweaks_1.20.1-11.3.0.jar",
+                    "id": "5815115",
+                    "parent_id": "450269",
+                    "hashes": {
+                        "sha1": "94ab2b5d35927a7f49f084d5f6e49536595265f2",
+                        "md5": "aa1fdeef9d4904cdbd829f383ce6d5b1"
+                    },
+                    "required_dependencies": [
+                        "563963",
+                        "561439",
+                        "561137",
+                        "573708",
+                        "561087"
+                    ],
+                    "size": 51871,
+                    "date_published": "2024-10-15T20:03:16.933Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "adaptive_performance_tweaks_1.20.1-11.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/kLawTYXp/versions/ePPNLu7Z/adaptive_performance_tweaks_1.20.1-11.3.0.jar",
+                    "id": "ePPNLu7Z",
+                    "parent_id": "kLawTYXp",
+                    "hashes": {
+                        "sha512": "6e785769d0cebda631f94cc7ab3306f8d233850ddf2d62ebe8d6997c2b53267f29576b5090b7126ab585b1f3b60ed544f6a54d039209bb2f53fdb0be9733beb1",
+                        "sha1": "f868ec75ef3266af8cfa3ae6fb0048cef35bc23f"
+                    },
+                    "required_dependencies": [
+                        "Rd89yO7d",
+                        "jr5nzfKv",
+                        "217PsbJI",
+                        "L5xaBiBb",
+                        "z3TjJLQ0"
+                    ],
+                    "size": 51871,
+                    "date_published": "2024-10-15T20:02:30.798649Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "7KKvgCCVN5ojt885",
             "type": "MOD",
             "side": "SERVER",
@@ -427,6 +509,146 @@
                     "required_dependencies": [],
                     "size": 109763,
                     "date_published": "2024-10-15T20:02:38.559474Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "6GwMQIiEZI9QEBDy",
+            "pakku_links": [
+                "7KKvgCCVN5ojt885"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "adaptive-performance-tweaks-gamerules",
+                "modrinth": "adaptive-performance-tweaks-gamerules"
+            },
+            "name": {
+                "curseforge": "Adaptive Performance Tweaks: Gamerules",
+                "modrinth": "Adaptive Performance Tweaks: Gamerules"
+            },
+            "id": {
+                "curseforge": "561137",
+                "modrinth": "Rd89yO7d"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "adaptive_performance_tweaks_gamerules_1.20.1-11.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5815/118/adaptive_performance_tweaks_gamerules_1.20.1-11.3.0.jar",
+                    "id": "5815118",
+                    "parent_id": "561137",
+                    "hashes": {
+                        "sha1": "7e6ec6c31e27009d693679596c1f23271d9ae905",
+                        "md5": "94ca50f3d0044dfbb3319e8a61da2894"
+                    },
+                    "required_dependencies": [
+                        "561087"
+                    ],
+                    "size": 64938,
+                    "date_published": "2024-10-15T20:03:23.600Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "adaptive_performance_tweaks_gamerules_1.20.1-11.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/Rd89yO7d/versions/dmvc4VjR/adaptive_performance_tweaks_gamerules_1.20.1-11.3.0.jar",
+                    "id": "dmvc4VjR",
+                    "parent_id": "Rd89yO7d",
+                    "hashes": {
+                        "sha512": "f5091cb68956b1e1cd3946a4cc4f547a3cb8860b6d64a475871d7ef80a45f91f2878e2553fffd3113839b96955535b780ca229b4ceadfd6a2cb8e828ac22be23",
+                        "sha1": "984a6212f00ab531548bc0f8428e02296b96529a"
+                    },
+                    "required_dependencies": [
+                        "L5xaBiBb"
+                    ],
+                    "size": 64938,
+                    "date_published": "2024-10-15T20:02:44.784722Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "KXDQAyIcviU2Sjy6",
+            "pakku_links": [
+                "7KKvgCCVN5ojt885"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "adaptive-performance-tweaks-items",
+                "modrinth": "adaptive-performance-tweaks-items"
+            },
+            "name": {
+                "curseforge": "Adaptive Performance Tweaks: Items",
+                "modrinth": "Adaptive Performance Tweaks: Items"
+            },
+            "id": {
+                "curseforge": "561439",
+                "modrinth": "z3TjJLQ0"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "adaptive_performance_tweaks_items_1.20.1-11.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5815/119/adaptive_performance_tweaks_items_1.20.1-11.3.0.jar",
+                    "id": "5815119",
+                    "parent_id": "561439",
+                    "hashes": {
+                        "sha1": "e26058040dd1fbdb1991c0cdfa7ff93ac5d955ee",
+                        "md5": "55bf4c7b0ab73b629ea6b9a980c0b1cc"
+                    },
+                    "required_dependencies": [
+                        "561087"
+                    ],
+                    "size": 71935,
+                    "date_published": "2024-10-15T20:03:26.003Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "adaptive_performance_tweaks_items_1.20.1-11.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/z3TjJLQ0/versions/Owg1cVwE/adaptive_performance_tweaks_items_1.20.1-11.3.0.jar",
+                    "id": "Owg1cVwE",
+                    "parent_id": "z3TjJLQ0",
+                    "hashes": {
+                        "sha512": "e989fa7de9e1647d3f9ca2ff02ea3ca0e222a75940d1559ccd699af39df9b57f8d5903f54304492ba93549f1aed1efd6e44bfd0226bcd9aa7655c23d2ec14a46",
+                        "sha1": "1753a360b3011c9ab098677f4321727420d92a1d"
+                    },
+                    "required_dependencies": [
+                        "L5xaBiBb"
+                    ],
+                    "size": 71935,
+                    "date_published": "2024-10-15T20:02:50.684809Z"
                 }
             ]
         },
@@ -497,6 +719,76 @@
                     ],
                     "size": 66272,
                     "date_published": "2024-10-15T20:02:56.584235Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Grz0T2HLTDSCXa81",
+            "pakku_links": [
+                "7KKvgCCVN5ojt885"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "adaptive-performance-tweaks-spawn",
+                "modrinth": "adaptive-performance-tweaks-spawn"
+            },
+            "name": {
+                "curseforge": "Adaptive Performance Tweaks: Spawn",
+                "modrinth": "Adaptive Performance Tweaks: Spawn"
+            },
+            "id": {
+                "curseforge": "573708",
+                "modrinth": "217PsbJI"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "adaptive_performance_tweaks_spawn_1.20.1-11.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5815/121/adaptive_performance_tweaks_spawn_1.20.1-11.3.0.jar",
+                    "id": "5815121",
+                    "parent_id": "573708",
+                    "hashes": {
+                        "sha1": "a933f6adb6e7b614eeff180acb20a64b5777ef41",
+                        "md5": "aeab7fbc8d6309ff43b197e3c407c104"
+                    },
+                    "required_dependencies": [
+                        "561087"
+                    ],
+                    "size": 143593,
+                    "date_published": "2024-10-15T20:03:31.823Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "adaptive_performance_tweaks_spawn_1.20.1-11.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/217PsbJI/versions/suOxhIlo/adaptive_performance_tweaks_spawn_1.20.1-11.3.0.jar",
+                    "id": "suOxhIlo",
+                    "parent_id": "217PsbJI",
+                    "hashes": {
+                        "sha512": "dd9a2e508db6ac0f22636fd974ccf2f2e1e7de4e2740704364bb3a086ae8d933b97b6fb0306f49f89cdd5bdcbfa78202e10ef935c307a869ed8d2561da3a04fb",
+                        "sha1": "d3f2cc11a1d37042d4c94c199f08d2e0edfa18ed"
+                    },
+                    "required_dependencies": [
+                        "L5xaBiBb"
+                    ],
+                    "size": 143593,
+                    "date_published": "2024-10-15T20:03:03.303293Z"
                 }
             ]
         },
