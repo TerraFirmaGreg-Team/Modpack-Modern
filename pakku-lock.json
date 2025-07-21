@@ -7139,7 +7139,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "greate-0.0.45.jar",
+                    "file_name": "greate-0.0.46.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7148,19 +7148,19 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/2DOzdz5j/greate-0.0.45.jar",
-                    "id": "2DOzdz5j",
+                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/HCKRLApi/greate-0.0.46.jar",
+                    "id": "HCKRLApi",
                     "parent_id": "8wDcQuht",
                     "hashes": {
-                        "sha512": "cb1c218604364c9659a9e76ef1ed2b12e14beb17f8515dd7de55ccd91f2d5ac0f88c7d49a74f92e05b09ecf9f86a040cedb821f9a94093d36f3d437990f49367",
-                        "sha1": "65ae0462ffc07fc66ad13db7ca682c8b0cf34dfb"
+                        "sha512": "8915f188e321caa46d77539cc10a237213855591a2d61bc71c892fb46e5a99358e1f6387c1aef175cb94d729200179fc719fc817f90114cbc406e17f805ae45f",
+                        "sha1": "ac1b4893abeaeb7d695c2a554718f3f5f204968d"
                     },
                     "required_dependencies": [
-                        "7tG215v7",
-                        "LNytGWDc"
+                        "LNytGWDc",
+                        "7tG215v7"
                     ],
-                    "size": 1531791,
-                    "date_published": "2025-07-05T02:56:36.684356Z"
+                    "size": 1506889,
+                    "date_published": "2025-07-14T17:11:48.813473Z"
                 },
                 {
                     "type": "curseforge",
@@ -7207,6 +7207,27 @@
             },
             "files": [
                 {
+                    "type": "modrinth",
+                    "file_name": "gtceu-1.20.1-7.0.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/7tG215v7/versions/a5uJZGHy/gtceu-1.20.1-7.0.2.jar",
+                    "id": "a5uJZGHy",
+                    "parent_id": "7tG215v7",
+                    "hashes": {
+                        "sha512": "a288c35f5afc4b8e77c7d207680260939587234c02fc63e2746d290e277e66673143d186ddea7d0a3423e4985fef73857c3985dd6410e4cc55fc1af96713905b",
+                        "sha1": "602e4690cf99ddd49146a26f0629ac53bd6813db"
+                    },
+                    "required_dependencies": [],
+                    "size": 17590375,
+                    "date_published": "2025-07-20T19:38:09.055323Z"
+                },
+                {
                     "type": "curseforge",
                     "file_name": "gtceu-1.20.1-1.6.4.jar",
                     "mc_versions": [
@@ -7226,27 +7247,6 @@
                     "required_dependencies": [],
                     "size": 11787892,
                     "date_published": "2025-03-02T06:22:56.823Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "gtceu-1.20.1-1.6.4.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/7tG215v7/versions/agSy623h/gtceu-1.20.1-1.6.4.jar",
-                    "id": "agSy623h",
-                    "parent_id": "7tG215v7",
-                    "hashes": {
-                        "sha512": "3915ddb104b7cd6b6a9c3213749c8d4c0a3c1eb07745fdbe97d881ab6661853ce0d9411aad0fde5c933648bafb03417455184abcc641e6af7f4c5fab92daa418",
-                        "sha1": "8f9705cb309bc862f1abf684717bc6c87165604a"
-                    },
-                    "required_dependencies": [],
-                    "size": 11787892,
-                    "date_published": "2025-03-02T06:23:05.388636Z"
                 }
             ]
         },
