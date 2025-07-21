@@ -1,6 +1,7 @@
 # Changelog
 ## [Unreleased]
 ### Changes
+- Reduced duration of biodiesel recipes @Pyritie
 ### Bug fixes
 - Fixed butchery knife crafting recipe (#1405) @Pyritie
 
