@@ -4,8 +4,8 @@
         "checkJs": true,
         "noEmit": true,
 
-        "target": "es2020",
-        "lib": ["ES2020"],
+        "target": "es2015",
+        "lib": ["ES2015"],
         "rootDirs": [
             "probe/generated",
             "probe/user",

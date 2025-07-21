@@ -11,8 +11,9 @@ export default defineConfig([
       "js": js, 
       "@stylistic": stylistic
     }, 
+
     extends: ["js/recommended"], 
-    languageOptions: { globals: globals.node },
+    languageOptions: { globals: globals.node, ecmaVersion: "ES2015" },
     rules: {
       "no-undef": "off",
       "no-unused-vars": "off",
