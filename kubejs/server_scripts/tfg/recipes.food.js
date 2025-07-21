@@ -27,8 +27,9 @@ function registerTFGFoodRecipes(event) {
 	/**
 	 * @param {"food_oven"|"food_processor"} type 
 	 * @param {string} id 
-	 * @param {string} duration 
-	 * @param {string} EUt 
+	 * @param {number} duration 
+	 * @param {number} EUt 
+	 * @param {string} text
 	 * @param {FoodRecipeData} data 
 	 */
 	function registerFoodRecipe(type, id, duration, EUt, text, data) {
@@ -36,7 +37,7 @@ function registerTFGFoodRecipes(event) {
 		if (data.itemOutputs === undefined) data.itemOutputs = []
 		if (data.fluidInputs === undefined) data.fluidInputs = []
 		if (data.fluidOutputs === undefined) data.fluidOutputs = []
-		let gregInputs = [], inputs= []
+		let gregInputs = [], inputs = []
 		let outputFirstIndex = (data.itemOutputProvider === undefined) ? 0 : 1
 		data.itemInputs.forEach(item => {
 			if (typeof item === "string") {
@@ -74,7 +75,7 @@ function registerTFGFoodRecipes(event) {
 		/**
 	 * @param {string} id 
 	 * @param {number} duration 
-	 * @param {EUt} EUt 
+	 * @param {number} EUt 
 	 * @param {FoodRecipeData} data 
 	 */
 	const processorRecipe = (id, duration, EUt, data) => registerFoodRecipe("food_processor", id, duration, EUt, "", data)
@@ -82,7 +83,7 @@ function registerTFGFoodRecipes(event) {
 	/**
 	 * @param {string} id 
 	 * @param {number} duration 
-	 * @param {EUt} EUt 
+	 * @param {number} EUt 
 	 * @param {FoodRecipeData} data 
 	 * @param {string} text
 	 */
@@ -133,6 +134,12 @@ function registerTFGFoodRecipes(event) {
 			itemOutputs: [`2x tfc:food/${grain}_flour`],
 			itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_flour`).copyOldestFood()
 		})
+
+		event.recipes.tfc.advanced_shapeless_crafting(
+			TFC.isp.of(`tfc:food/${grain}_flour`).copyFood(), [
+				TFC.ingredient.notRotten(`tfc:food/${grain}_grain`),
+				'#forge:tools/mortars'
+			]).id(`tfg:mortar/${grain}_flour`)
 
 		// Flatbread dough
 		processorRecipe(`${grain}_flatbread_dough`, 300, 8, {
@@ -475,6 +482,19 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('firmalife:food/pasta_with_tomato_sauce').copyFood()
 	})
 
+	processorRecipe(`masa_flour`, 100, 8, {
+		circuit: 31,
+		itemInputs: [`firmalife:food/nixtamal`],
+		itemOutputs: [`4x firmalife:food/masa_flour`],
+		itemOutputProvider: TFC.isp.of(`4x firmalife:food/masa_flour`).copyOldestFood()
+	})
+
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.isp.of(`4x firmalife:food/masa_flour`).copyFood(), [
+			TFC.ingredient.notRotten(`firmalife:food/nixtamal`),
+			'#forge:tools/mortars'
+		]).id(`tfg:mortar/masa_flour`)
+
 	processorRecipe('firmalife_masa', 300, 2, {
 		circuit: 3,
 		itemInputs: ["firmalife:food/masa_flour"],
@@ -681,6 +701,7 @@ function registerTFGFoodRecipes(event) {
 
 	processorRecipe("cured_maize", 300, 8, {
 		itemInputs: ["tfc:food/maize_grain"],
+		inputFluids: [Fluid.of('tfc:limewater', 100)],
 		itemOutputs: ["firmalife:food/cured_maize"],
 		itemOutputProvider: TFC.isp.of('firmalife:food/cured_maize').copyOldestFood()
 	})
