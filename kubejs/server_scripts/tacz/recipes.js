@@ -1,4 +1,4 @@
-
+"use strict";
 
 const registerTACZRecipes = (event) => {
 	event.remove({ mod: 'tacz' })

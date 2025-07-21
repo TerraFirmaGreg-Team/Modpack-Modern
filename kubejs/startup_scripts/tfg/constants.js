@@ -1,3 +1,6 @@
+"use strict";
+
+
 global.AIRCRAFT_UPGRADES = [
 	"lv_aircraft_engine",
 	"hv_aircraft_engine",

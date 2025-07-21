@@ -1,3 +1,5 @@
+"use strict";
+
 const registerTooltips = (event) =>
 {
 	event.addAdvanced(['gtceu:lv_macerator', 'gtceu:mv_macerator', 'gtceu:hp_steam_macerator'], (item, advanced, text) => {

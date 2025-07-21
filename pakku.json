@@ -208,9 +208,6 @@
         "fast-ip-ping": {
             "side": "CLIENT"
         },
-        "badoptimizations": {
-            "side": "CLIENT"
-        },
         "entityculling": {
             "side": "CLIENT"
         },

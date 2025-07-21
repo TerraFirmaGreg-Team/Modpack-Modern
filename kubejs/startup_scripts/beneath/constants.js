@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 global.BENEATH_DISABLED_ITEMS = [
 	"beneath:cobblerack",

@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 global.CREATEDECO_DISABLED_ITEMS = [
     'createdeco:andesite_sheet',

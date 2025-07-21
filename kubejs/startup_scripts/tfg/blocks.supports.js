@@ -1,3 +1,5 @@
+"use strict";
+
 function registerTFGSupportBlocks(event) {
 
 	event.create('tfg:light_concrete_support', 'tfc:support')

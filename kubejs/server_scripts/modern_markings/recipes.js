@@ -1,3 +1,5 @@
+"use strict";
+
 const registerModernMarkingRecipes = (event) => {
 	event.remove({mod: 'ags_modernmarkings'})
 

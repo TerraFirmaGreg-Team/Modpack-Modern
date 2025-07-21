@@ -11,6 +11,9 @@
 .vs/
 .vscode/
 .idea/
+package.json
+package-lock.json
+node_modules/
 
 # Pakku
 build/

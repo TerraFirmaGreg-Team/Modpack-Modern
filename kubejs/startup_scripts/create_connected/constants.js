@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 global.CREATE_CONNECTED_DISABLED_ITEMS = [
 	'create_connected:encased_chain_cogwheel',

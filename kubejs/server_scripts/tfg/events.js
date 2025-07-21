@@ -1,3 +1,5 @@
+"use strict";
+
 //#region Medicine
 
     //Pills & Tablets

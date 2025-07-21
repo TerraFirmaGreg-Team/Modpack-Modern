@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const $FoodData = Java.loadClass("net.dries007.tfc.common.capabilities.food.FoodData")
 

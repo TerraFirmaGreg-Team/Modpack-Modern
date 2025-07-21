@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 global.CREATE_ADDITIONS_DISABLED_ITEMS = [
     'createaddition:electrum_ingot', 

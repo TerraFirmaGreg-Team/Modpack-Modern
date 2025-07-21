@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function registerSpeciesRecipes(event) {
 	global.SPECIES_DISABLED_ITEMS.forEach(item => {
