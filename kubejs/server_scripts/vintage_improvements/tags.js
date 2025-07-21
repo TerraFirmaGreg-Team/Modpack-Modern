@@ -32,6 +32,7 @@ function registerVintageImprovementsItemTags(event) {
 	event.add('vintageimprovements:curving_heads', 'tfg:chisel_head_extruder_mold')
 	event.add('vintageimprovements:curving_heads', 'tfg:mace_head_extruder_mold')
 	event.add('vintageimprovements:curving_heads', 'tfg:mattock_head_extruder_mold')
+	event.add('vintageimprovements:curving_heads', 'tfg:screwdriver_tip_extruder_mold')
 	event.add('vintageimprovements:curving_heads', 'gtceu:cell_extruder_mold')
 	event.add('vintageimprovements:curving_heads', 'gtceu:ingot_extruder_mold')
 	event.add('vintageimprovements:curving_heads', 'gtceu:bottle_extruder_mold')
