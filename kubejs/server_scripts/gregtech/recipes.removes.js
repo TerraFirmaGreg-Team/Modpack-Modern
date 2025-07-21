@@ -670,6 +670,24 @@ function removeGTCEURecipes(event) {
 
 	event.remove({ id: 'gtceu:rock_breaker/red_granite' })
 
+	// who the hell is grinding metal ingots with their bare hands?
+	event.remove({ id: 'gtceu:shaped/mortar_grind_antimony' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_copper' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_gold' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_iron' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_lead' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_nickel' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_silver' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_tin' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_zinc' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_annealed_copper' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_brass' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_bronze' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_electrum' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_invar' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_steel' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_wrought_iron' })
+
 	// Snow Stuffs
 
 	event.remove({ id: 'gtceu:fluid_solidifier/snow_block' })
