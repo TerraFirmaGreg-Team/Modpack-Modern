@@ -1,5 +1,5 @@
 // priority: 10
-
+"use strict";
 const STONE_TYPES_TO_COBBLE = {
 	gabbro: 'tfc:rock/cobble/gabbro',
 	shale: 'tfc:rock/cobble/shale',

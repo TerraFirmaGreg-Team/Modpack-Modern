@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 global.AE2_DISABLED_ITEMS = [
     // Инструменты

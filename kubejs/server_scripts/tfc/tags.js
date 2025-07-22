@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerTFCItemTags = (event) => {
 	// Теги для соответствия инструментов TFC и GT
