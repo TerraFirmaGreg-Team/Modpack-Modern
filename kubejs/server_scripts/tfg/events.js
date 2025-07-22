@@ -258,8 +258,9 @@ function getTFGPersistentDataRoot(player)
  * @param {boolean} damageTool -Sets wether the tool should be damaged on use.
  * @param {string} soundId -Sound ID to be used as the flair sound effect. Can be null.
  * @param {string} particleId -SimpleParticleType ID to be used as the flair particle. Can be null.
+ * @param {boolean} copyBlockstate - Sets wether the blockstate should be copied from the input block to the output block.
  */
-function transformBlockWithTool(event, inputBlock, outputBlock, toolId, damageTool, soundId, particleId) {
+function transformBlockWithTool(event, inputBlock, outputBlock, toolId, damageTool, soundId, particleId, copyBlockstate) {
     const { server, item, player, block } = event;
 
     if (!inputBlock || !outputBlock) {return};
@@ -279,7 +280,7 @@ function transformBlockWithTool(event, inputBlock, outputBlock, toolId, damageTo
     if (!player.crouching) {return};
 
     let state = block.getBlockState().toString();
-    if (state.includes('[')) {
+    if (state.includes('[') && copyBlockstate == true) {
         state = state.substring(state.indexOf('['));
     } else {
         state = '';
@@ -319,8 +320,9 @@ function transformBlockWithTool(event, inputBlock, outputBlock, toolId, damageTo
  * @param {number} consumeAmount -Number of items to consume, can't be greater than stacksize.
  * @param {string} soundId -Sound ID to be used as the flair sound effect. Can be null.
  * @param {string} particleId -SimpleParticleType ID to be used as the flair particle. Can be null.
+ * @param {boolean} copyBlockstate - Sets wether the blockstate should be copied from the input block to the output block.
  */
-function transformBlockWithItem(event, inputBlock, outputBlock, itemId, consumeItem, consumeAmount, soundId, particleId) {
+function transformBlockWithItem(event, inputBlock, outputBlock, itemId, consumeItem, consumeAmount, soundId, particleId, copyBlockstate) {
         const { server, item, player, block } = event;
 
         if (!inputBlock || !outputBlock) {return};
@@ -339,7 +341,7 @@ function transformBlockWithItem(event, inputBlock, outputBlock, itemId, consumeI
         if (!player.crouching) {return};
 
         var state = block.getBlockState().toString()
-        if (state.includes('[')){
+        if (state.includes('[') && copyBlockstate == true){
             state = state.substring(block.getBlockState().toString().indexOf('['));
         } else {
             state = ''
@@ -368,47 +370,47 @@ BlockEvents.rightClicked(event => {
     //Brick index events
     for (const b of global.BRICK_INDEX) {
         //brick -> cracked
-        transformBlockWithTool(event, b.brick, b.cracked_brick, '#forge:tools/hammers',true, 'minecraft:block.copper.hit', 'minecraft:crit');
-        transformBlockWithTool(event, b.brick_stairs, b.cracked_stairs, '#forge:tools/hammers',true, 'minecraft:block.copper.hit', 'minecraft:crit');
-        transformBlockWithTool(event, b.brick_slab, b.cracked_slab, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit');
-        transformBlockWithTool(event, b.brick_wall, b.cracked_wall, '#forge:tools/hammers',true, 'minecraft:block.copper.hit', 'minecraft:crit');
+        transformBlockWithTool(event, b.brick, b.cracked_brick, '#forge:tools/hammers',true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+        transformBlockWithTool(event, b.brick_stairs, b.cracked_stairs, '#forge:tools/hammers',true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+        transformBlockWithTool(event, b.brick_slab, b.cracked_slab, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+        transformBlockWithTool(event, b.brick_wall, b.cracked_wall, '#forge:tools/hammers',true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
         //brick -> mossy
-        transformBlockWithItem(event, b.brick, b.mossy_brick, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.brick, b.mossy_brick, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.brick_stairs, b.mossy_stairs, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.brick_stairs, b.mossy_stairs, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.brick_slab, b.mossy_slab, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.brick_slab, b.mossy_slab, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.brick_wall, b.mossy_wall, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.brick_wall, b.mossy_wall, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime');
+        transformBlockWithItem(event, b.brick, b.mossy_brick, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.brick, b.mossy_brick, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.brick_stairs, b.mossy_stairs, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.brick_stairs, b.mossy_stairs, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.brick_slab, b.mossy_slab, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.brick_slab, b.mossy_slab, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.brick_wall, b.mossy_wall, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.brick_wall, b.mossy_wall, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
         //cracked -> mossy
-        transformBlockWithItem(event, b.cracked_brick, b.mossy_brick, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.cracked_brick, b.mossy_brick, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.cracked_stairs, b.mossy_stairs, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.cracked_stairs, b.mossy_stairs, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.cracked_slab, b.mossy_slab, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.cracked_slab, b.mossy_slab, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.cracked_wall, b.mossy_wall, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.cracked_wall, b.mossy_wall, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime');
+        transformBlockWithItem(event, b.cracked_brick, b.mossy_brick, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.cracked_brick, b.mossy_brick, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.cracked_stairs, b.mossy_stairs, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.cracked_stairs, b.mossy_stairs, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.cracked_slab, b.mossy_slab, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.cracked_slab, b.mossy_slab, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.cracked_wall, b.mossy_wall, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.cracked_wall, b.mossy_wall, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
         //mossy -> cracked
-        transformBlockWithTool(event, b.mossy_brick, b.cracked_brick, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit');
-        transformBlockWithTool(event, b.mossy_stairs, b.cracked_stairs, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit');
-        transformBlockWithTool(event, b.mossy_slab, b.cracked_slab, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit');
-        transformBlockWithTool(event, b.mossy_wall, b.cracked_wall, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit');
+        transformBlockWithTool(event, b.mossy_brick, b.cracked_brick, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+        transformBlockWithTool(event, b.mossy_stairs, b.cracked_stairs, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+        transformBlockWithTool(event, b.mossy_slab, b.cracked_slab, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+        transformBlockWithTool(event, b.mossy_wall, b.cracked_wall, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
         //mossy -> brick
-        transformBlockWithTool(event, b.mossy_brick, b.brick, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.mossy_brick, b.brick, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime');
-        transformBlockWithTool(event, b.mossy_stairs, b.brick_stairs, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.mossy_stairs, b.brick_stairs, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime');
-        transformBlockWithTool(event, b.mossy_slab, b.brick_slab, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.mossy_slab, b.brick_slab, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime');
-        transformBlockWithTool(event, b.mossy_wall, b.brick_wall, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime');
-        transformBlockWithItem(event, b.mossy_wall, b.mossy_wall, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime');
+        transformBlockWithTool(event, b.mossy_brick, b.brick, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.mossy_brick, b.brick, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+        transformBlockWithTool(event, b.mossy_stairs, b.brick_stairs, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.mossy_stairs, b.brick_stairs, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+        transformBlockWithTool(event, b.mossy_slab, b.brick_slab, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.mossy_slab, b.brick_slab, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+        transformBlockWithTool(event, b.mossy_wall, b.brick_wall, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.mossy_wall, b.mossy_wall, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
         //cracked -> brick
-        transformBlockWithItem(event, b.cracked_brick, b.brick, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect');
-        transformBlockWithItem(event, b.cracked_stairs, b.brick_stairs, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect');
-        transformBlockWithItem(event, b.cracked_slab, b.brick_slab, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect');
-        transformBlockWithItem(event, b.cracked_wall, b.brick_wall, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect');
+        transformBlockWithItem(event, b.cracked_brick, b.brick, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
+        transformBlockWithItem(event, b.cracked_stairs, b.brick_stairs, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
+        transformBlockWithItem(event, b.cracked_slab, b.brick_slab, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
+        transformBlockWithItem(event, b.cracked_wall, b.brick_wall, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
     }
 });
 //#endregion
