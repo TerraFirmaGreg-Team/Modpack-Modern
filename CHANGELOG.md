@@ -12,7 +12,7 @@
 - Fixed contraptions no longer understanding TFC chests @Pyritie
 - Fixed ice never melting in the overworld (#1408) @Pyritie
 - Fixed small gears not having heat data @Zippity
-- Fixed small forgeable small gears not being meltable @Zippity
+- Fixed forgeable small gears not being meltable @Zippity
 
 ## [0.10.2] - 20-07-2025
 ### Changes
