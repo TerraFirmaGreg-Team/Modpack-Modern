@@ -261,6 +261,7 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:rock_slabs', 'ad_astra:glacio_stone_slab')
 
 	event.add('ad_astra:destroyed_in_space', '#minecraft:saplings')
+	event.remove('ad_astra:destroyed_in_space', 'ad_astra:glacian_leaves')
 }
 
 const registerAdAstraBiomeTags = (event) => {
