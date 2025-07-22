@@ -12,8 +12,11 @@
 .vscode/
 .idea/
 package.json
+package.g.props
 package-lock.json
 node_modules/
+Modpack-Modern.sln
+Modpack-Modern.esproj
 
 # Pakku
 build/
