@@ -1240,14 +1240,15 @@ function registerTFCMaterialsRecipes(event) {
 		let tongPartStack = Item.of(`tfchotornot:tong_part/${material.getName()}`)
 
 		if (!tongsStack.isEmpty() && !tongPartStack.isEmpty() && material != GTMaterials.Iron) {
-			event.shaped(tongsStack, [
-				'AA',
-				'BC'
-			], {
-				A: tongPartStack,
-				B: '#forge:bolts',
-				C: '#forge:tools/hammers'
-			}).id(`tfchotornot:crafting/tongs/${material.getName()}`)
+			event.recipes.tfc.advanced_shaped_crafting(
+				TFC.isp.of(tongsStack).copyForgingBonus(), [
+					'AA',
+					'BC'
+				], {
+					A: tongPartStack,
+					B: '#forge:bolts',
+					C: '#forge:tools/hammers'
+				}, 0, 0).id(`tfchotornot:crafting/tongs/${material.getName()}`)
 
 			// Ручка щипцов
 			event.recipes.tfc.heating(tongPartStack, tfcProperty.getMeltTemp())
