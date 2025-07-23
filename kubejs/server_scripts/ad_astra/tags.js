@@ -279,6 +279,9 @@ const registerAdAstraBiomeTags = (event) => {
 		event.add('tfg:has_structure/moon_rabbit_houses', biome)
 		event.add('species:limpet_spawns', biome)
 	})
+
+	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_dunes')
+	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_deep_desert')
 }
 
 const registerAdAstraEntityTypeTags = (event) => {
