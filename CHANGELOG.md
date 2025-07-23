@@ -13,6 +13,7 @@
 - Fixed ice never melting in the overworld (#1408) @Pyritie
 - Removed most empty tag recipes (#1420) @BlueBoat29
 - Fixed Styrene Butadiene Belt recipe (#1421) @BlueBoat29
+- Fixed deer dropping camelidae meat with a butchery knife @Pyritie
 
 ## [0.10.2] - 20-07-2025
 ### Changes
