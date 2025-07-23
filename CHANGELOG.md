@@ -1,8 +1,11 @@
 # Changelog
 ## [Unreleased]
 ### Changes
+- Prepped everything for the Tier 2 Rocket @BlueBoat29
 ### Bug fixes
 - Fixed butchery knife crafting recipe (#1405) @Pyritie
+- Removed most empty tag recipes (#1420) @BlueBoat29
+- Fixed Styrene Butadiene Belt recipe (#1421) @BlueBoat29
 
 ## [0.10.2] - 20-07-2025
 ### Changes
