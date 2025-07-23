@@ -169,11 +169,7 @@ function registerTFCLoots(event) {
 
 	event.addEntityLootModifier('tfc:deer')
 		.randomChanceWithEnchantment('minecraft:looting', [0, 0.3, 0.6, 1])
-		.addWeightedLoot([2, 4], ['tfc:food/camelidae'])
-
-	event.addEntityLootModifier('tfc:deer')
-		.randomChanceWithEnchantment('minecraft:looting', [0, 0.3, 0.6, 1])
-		.addWeightedLoot([2, 5], ['tfc:food/venison'])
+		.addWeightedLoot([2, 4], ['tfc:food/venison'])
 
 	event.addEntityLootModifier('tfc:donkey')
 		.randomChanceWithEnchantment('minecraft:looting', [0, 0.3, 0.6, 1])
