@@ -279,30 +279,27 @@ function registerTFCMetalsRecipes(event) {
 		.id('tfc:anvil/blue_steel_ingot')
 
 	// Small Gears
-	event.recipes.tfc.anvil('gtceu:small_wrought_iron_gear', '#forge:ingots/wrought_iron', ['hit_last', 'shrink_second_last', 'draw_third_last'])
-		.tier(3)
-		.id('tfc:anvil/small_wrought_iron_gear')
-	event.recipes.tfc.anvil('gtceu:small_steel_gear', '#forge:ingots/steel', ['hit_last', 'shrink_second_last', 'draw_third_last'])
-		.tier(4)
-		.id('tfc:anvil/small_steel_gear')
-	event.recipes.tfc.anvil('gtceu:small_iron_gear', '#forge:ingots/iron', ['hit_last', 'shrink_second_last', 'draw_third_last'])
-		.tier(2)
-		.id('tfc:anvil/small_iron_gear')
-	event.recipes.tfc.anvil('gtceu:small_brass_gear', '#forge:ingots/brass', ['hit_last', 'shrink_second_last', 'draw_third_last'])
-		.tier(2)
-		.id('tfc:anvil/small_brass_gear')
-	event.recipes.tfc.anvil('gtceu:small_bronze_gear', '#forge:ingots/bronze', ['hit_last', 'shrink_second_last', 'draw_third_last'])
-		.tier(2)
-		.id('tfc:anvil/small_bronze_gear')
-	event.recipes.tfc.anvil('gtceu:small_bismuth_bronze_gear', '#forge:ingots/bismuth_bronze', ['hit_last', 'shrink_second_last', 'draw_third_last'])
-		.tier(2)
-		.id('tfc:anvil/small_bismuth_bronze_gear')
-	event.recipes.tfc.anvil('gtceu:small_black_bronze_gear', '#forge:ingots/black_bronze', ['hit_last', 'shrink_second_last', 'draw_third_last'])
-		.tier(2)
-		.id('tfc:anvil/small_black_bronze_gear')
-	event.recipes.tfc.anvil('gtceu:small_red_alloy_gear', '#forge:ingots/red_alloy', ['hit_last', 'shrink_second_last', 'draw_third_last'])
-		.tier(2)
-		.id('tfc:anvil/small_red_alloy_gear')
+	let basicGearMetals = new Map([
+		['wrought_iron', 3],
+		['steel', 4],
+		['iron', 2],
+		['brass', 2],
+		['bronze', 2],
+		['bismuth_bronze', 2],
+		['black_bronze', 2],
+		['red_alloy', 2]])
+	.forEach((metalTier, metal) => {
+		let gearMaterial = GTCEuAPI.materialManager.getMaterial(metal)
+		let tfcProperty = gearMaterial.getProperty(TFGPropertyKey.TFC_PROPERTY)
+		
+		event.recipes.tfc.anvil(`gtceu:small_${metal}_gear`, `#forge:ingots/${metal}`, ['hit_last', 'shrink_second_last', 'draw_third_last'])
+		.tier(metalTier)
+		.id(`tfc:anvil/small_${metal}_gear`)
+
+		event.recipes.tfc.heating(`gtceu:small_${metal}_gear`, tfcProperty.getMeltTemp())
+		.resultFluid(Fluid.of(`gtceu:${metal}`, 144))
+		.id(`tfc:heating/small_${metal}_gear`)
+	})
 
 	// Cast iron -> Raw Iron Bloom
 	event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('gtceu:iron', 144), 15000)

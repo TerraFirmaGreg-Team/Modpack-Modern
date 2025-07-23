@@ -6,11 +6,14 @@
 - Added mortar and pestel recipes for grain to flour @Pyritie
 - Added in-world shift + right-click interactions for bricks. Greens can be used to turn bricks into mossy bricks, and a knife reverts it. Hammers make cracked bricks and mortar repairs them. (#1416) @Redeix
 - Steam can now be pumped into Blaze Burners via the Straw (#1379) @Nyonyix
+- Rearranged some anvil finish sequences to fit TFG convention @Zippity
 ### Bug fixes
 - Fixed butchery knife crafting recipe (#1405) @Pyritie
 - Fixed new extruder molds missing a tag to work with the curving press (#1412) @Forsuin
 - Fixed contraptions no longer understanding TFC chests @Pyritie
 - Fixed ice never melting in the overworld (#1408) @Pyritie
+- Fixed small gears not having heat data @Zippity
+- Fixed forgeable small gears not being meltable @Zippity
 
 ## [0.10.2] - 20-07-2025
 ### Changes

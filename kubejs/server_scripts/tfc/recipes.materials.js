@@ -289,7 +289,7 @@ function registerTFCMaterialsRecipes(event) {
 							.id(`tfc:heating/metal/${material.getName()}_fish_hook`)
 
 						// Крюк удочки
-						event.recipes.tfc.anvil(`tfc:metal/fish_hook/${material.getName()}`, plateItem, ['draw_not_last', 'bend_any', 'hit_any'])
+						event.recipes.tfc.anvil(`tfc:metal/fish_hook/${material.getName()}`, plateItem, ['bend_any', 'hit_any', 'draw_not_last'])
 							.tier(tfcProperty.getTier())
 							.bonus(true)
 							.id(`tfc:anvil/${material.getName()}_fish_hook`)

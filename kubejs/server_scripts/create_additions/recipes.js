@@ -96,7 +96,7 @@ const registerCreateAdditionsRecipes = (event) => {
 
 	//#region Liquid blaze burners
 
-	event.recipes.tfc.anvil('createaddition:straw', '#forge:plates/tin_alloy', ['shrink_second_last', 'upset_not_last', 'punch_last'])
+	event.recipes.tfc.anvil('createaddition:straw', '#forge:plates/tin_alloy', ['punch_last', 'shrink_second_last', 'upset_not_last'])
 		.tier(3)
 		.id(`tfc:anvil/straw`)
 
