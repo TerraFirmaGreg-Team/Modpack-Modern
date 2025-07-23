@@ -19,6 +19,7 @@
 - Fixed Styrene Butadiene Belt recipe (#1421) @BlueBoat29
 - Fixed deer dropping camelidae meat with a butchery knife @Pyritie
 - Fixed gas pressurizer machine not having a GUI (#1425) @Pyritie
+- Fixed recipe conflict with hoppers and ULV machine casings (#1423) @Pyritie
 
 ## [0.10.2] - 20-07-2025
 ### Changes
