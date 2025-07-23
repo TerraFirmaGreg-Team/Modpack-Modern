@@ -1,3 +1,5 @@
+"use strict";
+
 const registerEndermanOverhaulItemTags = (event) => {
 
 	const DISABLED_ITEMS = [

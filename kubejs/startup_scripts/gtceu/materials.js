@@ -1,4 +1,5 @@
 ﻿// priority: 0
+"use strict";
 
 const registerGTCEuMaterials = (event) => {
 
@@ -12,6 +13,7 @@ const registerGTCEuMaterialModification = (event) => {
 	const $ITEM_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.ItemPipeProperties')
 	const $FLUID_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties')
 	const $HAZARD_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.HazardProperty')
+
 
 	const $MATERIAL_FLAGS = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
 
@@ -349,7 +351,8 @@ const registerGTCEuMaterialModification = (event) => {
 	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
 	rose_quartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
-
+	
 	GTCEuAPI.materialManager.getMaterial('tfg:kaolinite').setFormula("Al2Si2O5(OH)4", true)
 	GTCEuAPI.materialManager.getMaterial('tfg:vitrified_pearl').setFormula("(Al2Si2O5(OH)4)(BeK4N5)", true)
+
 }

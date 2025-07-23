@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerAE2TagPrefixes = (event) => {
 	const $AE_ITEMS = Java.loadClass('appeng.core.definitions.AEItems');

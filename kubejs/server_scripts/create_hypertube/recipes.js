@@ -1,3 +1,5 @@
+"use strict";
+
 function registerCreateHypertubeRecipes(event) {
 	event.remove({ mod: 'create_hypertube' })
 

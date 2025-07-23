@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * 
  * @param {TagEvent.Item} evt 

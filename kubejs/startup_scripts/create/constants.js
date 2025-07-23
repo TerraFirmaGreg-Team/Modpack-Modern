@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 /**
  * Список хранит предметы, 
@@ -191,7 +192,6 @@ global.CREATE_DISABLED_ITEMS = [
     'create:refined_radiance_casing', 
     'create:shadow_steel_casing', 
     'create:wooden_bracket', 
-    'create:sand_paper',
     'create:red_sand_paper',
     'create:empty_blaze_burner',
     'create:minecart_contraption',

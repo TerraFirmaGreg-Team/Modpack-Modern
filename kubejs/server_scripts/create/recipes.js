@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerCreateRecipes = (event) => {
 
@@ -2380,4 +2381,7 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('#forge:dusts/asurine')
 		.duration(50)
 		.EUt(2)
+
+	event.shapeless('create:sand_paper', ['minecraft:paper', 'tfc:glue', '#forge:sand'])
+		.id('tfg:shapeless/sand_paper')
 }

@@ -1,3 +1,5 @@
+"use strict";
+
 const registerDomumOrnamentumBlockTags = (event) => {
 
 	//#region Hidden Items  

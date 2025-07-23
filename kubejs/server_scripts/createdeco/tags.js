@@ -1,3 +1,5 @@
+"use strict";
+
 const metalBars = ['andesite', 'brass', 'iron', 'copper', 'industrial_iron', 'zinc'];
 
 const registerCreateDecoItemTags = (event) => {
