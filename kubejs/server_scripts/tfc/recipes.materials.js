@@ -1269,8 +1269,7 @@ function registerTFCMaterialsRecipes(event) {
 			let materialName = material.getName();
 			if (materialName == "yellow_limonite") {
 				materialName = "limonite";
-			}
-			else if (materialName == "bismuth") {
+			} else if (materialName == "bismuth") {
 				materialName = "bismuthinite";
 			}
 

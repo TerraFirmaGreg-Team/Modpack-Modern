@@ -168,18 +168,13 @@ const registerGTCEULoots = (event) => {
 
 			// I LOVE LOOTJS I LOVE LOOTJS I LOVE LOOTJS
 			let rawOreBlock = `:${ChemicalHelper.get(TagPrefix.rawOreBlock, material, 1).getItem()}`;
-			if (material == GTMaterials.Copper || material == GTMaterials.Gold || material == GTMaterials.Iron)
-			{
+			if (material == GTMaterials.Copper || material == GTMaterials.Gold || material == GTMaterials.Iron) {
 				rawOreBlock = "minecraft" + rawOreBlock;
-			}
-			else if (material == TFGHelpers.getMaterial('desh')
+			} else if (material == TFGHelpers.getMaterial('desh')
 				|| material == TFGHelpers.getMaterial('ostrum')
-				|| material == TFGHelpers.getMaterial('calorite'))
-			{
+				|| material == TFGHelpers.getMaterial('calorite')) {
 				rawOreBlock = "ad_astra" + rawOreBlock;
-			}
-			else
-			{
+			} else {
 				rawOreBlock = "gtceu" + rawOreBlock;
 			}
 

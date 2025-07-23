@@ -338,8 +338,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Thorium.setMaterialSecondaryARGB(0xcd8dbc)
 
 	
-	global.MINECRAFT_DYE_NAMES.forEach(colorName =>
-	{
+	global.MINECRAFT_DYE_NAMES.forEach(colorName => {
 		var material = GTCEuAPI.materialManager.getMaterial(`gtceu:${colorName}_dye`);
 		var property = material.getProperty(PropertyKey.FLUID);
 		property.getStorage().store($FluidStorageKeys.LIQUID, () => Fluid.of(`tfc:${colorName}_dye`).fluid, null);

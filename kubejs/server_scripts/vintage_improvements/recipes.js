@@ -502,13 +502,21 @@ function registerVintageImprovementsRecipes(event) {
 
 			// LV recipes only
 			let EUt = (r.tickInputs && r.tickInputs.eu) ? r.tickInputs.eu[0].content : null;
-			if (!(EUt <= 32)) { return }
+			if (!(EUt <= 32)) {
+ return 
+}
 			// Skip this one
-			if (r.outputs.item[0].content.ingredient.item == "gtceu:nan_certificate") { return }
+			if (r.outputs.item[0].content.ingredient.item == "gtceu:nan_certificate") {
+ return 
+}
 			// Skip glass too
-			if (r.inputs.item[0].content.ingredient.item == "gtceu:glass_dust") { return }
+			if (r.inputs.item[0].content.ingredient.item == "gtceu:glass_dust") {
+ return 
+}
 			// And this
-			if (r.inputs.item[0].content.ingredient.item == "gtceu:damascus_steel_ingot") { return }
+			if (r.inputs.item[0].content.ingredient.item == "gtceu:damascus_steel_ingot") {
+ return 
+}
 
 			let input = r.inputs.item[0].content.ingredient;
 			input.count = r.inputs.item[0].content.count;

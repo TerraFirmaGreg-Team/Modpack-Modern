@@ -28,8 +28,7 @@ function registerGTCEUMetalRecipes(event) {
 				D: `#forge:bolts/${material.getName()}`
 			}, 0, 0)
 				.id(`gtceu:shaped/${toolType.name}_${material.getName()}`)
-		}
-		else if (toolType == GTToolType.WIRE_CUTTER) {
+		} else if (toolType == GTToolType.WIRE_CUTTER) {
 			event.recipes.tfc.advanced_shaped_crafting(
 				TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(), [
 				' AD',
@@ -41,8 +40,7 @@ function registerGTCEUMetalRecipes(event) {
 				D: '#forge:tools/screwdrivers'
 			}, 0, 1)
 				.id(`gtceu:shaped/${toolType.name}_${material.getName()}`)
-		}
-		else {
+		} else {
 			event.recipes.tfc.advanced_shapeless_crafting(
 				TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(),
 				[toolHeadItem, '#forge:rods/wooden'], toolHeadItem)
@@ -161,8 +159,7 @@ function registerGTCEUMetalRecipes(event) {
 		if (material.hasFlag(MaterialFlags.GENERATE_PLATE)
 			&& material != GTMaterials.Wood
 			&& material != GTMaterials.TreatedWood
-			&& !material.hasProperty(PropertyKey.POLYMER))
-		{
+			&& !material.hasProperty(PropertyKey.POLYMER)) {
 			const plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
 			const blockStack = ChemicalHelper.get(TagPrefix.block, material, 1)
 
@@ -189,8 +186,7 @@ function registerGTCEUMetalRecipes(event) {
 						.heated()
 						.id(`greate:compacting/${material.getName()}_block`)
 				}
-			}
-			else {
+			} else {
 				if (!blockStack.isEmpty() && !blockStack.hasTag('c:hidden_from_recipe_viewers')) {
 					// Блок из гемов -> 9 Пластин
 					event.recipes.greate.cutting(plateStack.withCount(matAmount), blockStack)
@@ -372,8 +368,7 @@ function registerGTCEUMetalRecipes(event) {
 			event.recipes.greate.pressing(TieredOutputItem.of(gemItem).withChance(0.75).withExtraTierChance(0.095), poorOreItem)
 				.recipeTier(1)
 				.id(`greate:pressing/poor_raw_${material.getName()}_to_gem`)
-		}
-		else {
+		} else {
 			hammerRecipe.chancedOutput(crushedOreItem, 7500, 950)
 
 			event.recipes.greate.pressing(TieredOutputItem.of(crushedOreItem).withChance(0.75).withExtraTierChance(0.095), poorOreItem)
@@ -390,8 +385,7 @@ function registerGTCEUMetalRecipes(event) {
 
 		if (multiplier > 1) {
 			maceratorRecipe.itemOutputs(crushedOreItem.copyWithCount(multiplier / 2))
-		}
-		else {
+		} else {
 			maceratorRecipe.chancedOutput(crushedOreItem, 5000, 750)
 		}
 		maceratorRecipe.chancedOutput(crushedOreItem.copyWithCount(1), 2500, 500)
@@ -403,8 +397,7 @@ function registerGTCEUMetalRecipes(event) {
 				crushedOreItem.copyWithCount(multiplier / 2),
 				poorOreItem
 			).id(`tfg:quern/${material.getName()}_crushed_ore_from_poor_raw_ore`)
-		}
-		else {
+		} else {
 			event.recipes.tfc.quern(
 				ChemicalHelper.get(TagPrefix.dustSmall, material, 2),
 				poorOreItem
@@ -450,8 +443,7 @@ function registerGTCEUMetalRecipes(event) {
 			event.recipes.greate.pressing(gemItem, normalOreItem)
 				.recipeTier(1)
 				.id(`greate:pressing/raw_${material.getName()}_to_gem`)
-		}
-		else {
+		} else {
 			hammerRecipe.itemOutputs(crushedOreItem)
 
 			event.recipes.greate.pressing(crushedOreItem, normalOreItem)
@@ -519,8 +511,7 @@ function registerGTCEUMetalRecipes(event) {
 			event.recipes.greate.pressing(gemItem, richOreItem)
 				.recipeTier(1)
 				.id(`greate:pressing/rich_raw_${material.getName()}_to_gem`)
-		}
-		else {
+		} else {
 			hammerRecipe.itemOutputs(crushedOreItem)
 
 			event.recipes.greate.pressing(crushedOreItem, richOreItem)

@@ -198,8 +198,7 @@ function registerFacadeWhitelistTags(event) {
 	
 	//gtceu stonelike stuff
 	gtceu_stonelike_fm.forEach(facade_material => {
-		if(facade_material != 'marble') 
-		{
+		if (facade_material != 'marble') {
 			event.add('tfg:whitelisted/facades', 'gtceu:' + facade_material + '_cobblestone')
 			event.add('tfg:whitelisted/facades', 'gtceu:mossy_' + facade_material + '_cobblestone')
 			event.add('tfg:whitelisted/facades', 'gtceu:' + facade_material + '_bricks')
@@ -235,8 +234,7 @@ function registerFacadeWhitelistTags(event) {
 	//create rocks
 	create_rock_types_fm.forEach(facade_material => {
 		
-		if(facade_material == 'limestone')
-		{
+		if (facade_material == 'limestone') {
 			event.add('tfg:whitelisted/facades', 'create:' + facade_material)
 		}
 		
@@ -255,8 +253,7 @@ function registerFacadeWhitelistTags(event) {
 	
 	//createdeco bricks
 	createdeco_bricks_fm.forEach(facade_material => {
-		if (facade_material != 'red_bricks') 
-		{
+		if (facade_material != 'red_bricks') {
 			event.add('tfg:whitelisted/facades', 'createdeco:' + facade_material)
 		}
 		event.add('tfg:whitelisted/facades', 'createdeco:short_' + facade_material)
