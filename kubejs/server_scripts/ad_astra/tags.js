@@ -56,9 +56,13 @@ const registerAdAstraItemTags = (event) => {
 	event.add('forge:insulation_t1', 'gtceu:vitrified_asbestos_dust')
 	
 	//Insulation Tier 2
-	event.add('forge:insulation_t2', 'tfg:aes_insulation_sheet')
-	event.add('forge:insulation_t2', 'tfg:aes_insulation_roll')
+	event.add('forge:insulation_t2/sheet', 'tfg:aes_insulation_sheet')
+	event.add('forge:insulation_t2/roll', 'tfg:aes_insulation_roll')
 
+	//Rocket Engines
+	event.add('ad_astra:rocket_engine', 'ad_astra:steel_engine')
+	event.add('ad_astra:rocket_engine', 'ad_astra:desh_engine')
+	
 	// Deco blocks
 	const DECO_BLOCKS = [ 'iron', 'steel', 'desh', 'calorite', 'ostrum' ];
 	DECO_BLOCKS.forEach(block => {

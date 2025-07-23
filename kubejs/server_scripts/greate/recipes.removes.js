@@ -23,6 +23,7 @@ function removeGreateRecipes(event) {
 	event.remove({ id: 'greate:shapeless/large_titanium_cogwheel_from_little' })
 
 	event.remove({ id: 'greate:shaped/andesite_alloy_shaft' })
+	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_marble'})
 
 	// Until we got a fix from Greate for recipes in a cleanroom
 	event.remove({ id: 'greate:shaped/stainless_steel_mechanical_saw' })
