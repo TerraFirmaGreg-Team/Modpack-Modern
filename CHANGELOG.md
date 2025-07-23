@@ -5,7 +5,6 @@
 - Changed some options of a performance mod, let us know if you find any weird issues! (#1410) @victordlp8
 - Added mortar and pestel recipes for grain to flour @Pyritie
 - Steam can now be pumped into Blaze Burners via the Straw (#1379) @Nyonyix
-- Prepped everything for the Tier 2 Rocket @BlueBoat29
 ### Bug fixes
 - Fixed butchery knife crafting recipe (#1405) @Pyritie
 - Fixed new extruder molds missing a tag to work with the curving press (#1412) @Forsuin
