@@ -126,6 +126,34 @@ const registerAdAstraRecipes = (event) => {
 		.duration(1440)
 		.circuit(3)
 		.EUt(GTValues.VA[GTValues.EV])
+	
+	event.recipes.gtceu.assembler('tfg:rocket_desh_engine')
+		.itemInputs(
+			'4x #forge:double_plates/titanium',
+			'4x #gtceu:circuits/ev',
+			'gtceu:ev_electric_pump',
+			'3x gtceu:advanced_power_thruster',
+			'4x #forge:rods/magnetic_neodymium',
+			'#forge:rotors/titanium')
+		.inputFluids(Fluid.of('gtceu:desh', 144 * 12))
+		.itemOutputs('ad_astra:desh_engine')
+		.duration(800)
+		.circuit(3)
+		.EUt(GTValues.VA[GTValues.EV])
+	
+	event.recipes.gtceu.assembler('ad_astra:tier_2_rocket')
+		.itemInputs(
+			'12x #forge:dense_plates/rocket_alloy_t2',
+			'4x tfg:rocket_fin_t2',
+			'1x ad_astra:desh_engine',
+			'1x tfg:rocket_cone_t2',
+			'12x #forge:insulation_t2/roll'
+		)
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 2 * 16))
+		.itemOutputs('ad_astra:tier_2_rocket')
+		.duration(1440)
+		.circuit(3)
+		.EUt(GTValues.VA[GTValues.EV])
 
 
 	//#endregion

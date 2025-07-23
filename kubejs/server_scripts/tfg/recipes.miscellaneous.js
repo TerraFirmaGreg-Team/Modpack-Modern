@@ -738,6 +738,42 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(100)
 		.EUt(30)
 
+	//Cryo Pearl replacements
+    event.shaped('gtceu:ev_emitter', [
+		'ABC',
+		'BDB',
+		'CBA'
+	], {
+		A: '#forge:single_cables/aluminium',
+		B: '#forge:rods/platinum',
+		C: '#gtceu:circuits/ev',
+		D: 'tfg:cryo_fluix_pearl'
+	}).id('gtceu:shaped/emitter_ev')
+
+	event.recipes.gtceu.assembler('emitter_ev')
+		.itemInputs('tfg:cryo_fluix_pearl', '4x #forge:rods/platinum', '2x #gtceu:circuits/ev', '2x #forge:single_cables/aluminium')
+		.itemOutputs('gtceu:ev_emitter')
+		.circuit(1)
+		.duration(100)
+		.EUt(30)
+
+	event.shaped('gtceu:ev_sensor', [
+		'A B',
+		'AC ',
+		'DAA'
+	], {
+		A: '#forge:plates/titanium',
+		B: 'tfg:cryo_fluix_pearl',
+		C: '#forge:rods/platinum',
+		D: '#gtceu:circuits/ev',
+	}).id('gtceu:shaped/sensor_ev')
+
+	event.recipes.gtceu.assembler('sensor_ev')
+		.itemInputs('tfg:cryo_fluix_pearl', '#forge:rods/platinum', '#gtceu:circuits/ev', '4x #forge:plates/titanium')
+		.itemOutputs('gtceu:ev_sensor')
+		.duration(100)
+		.EUt(30)
+	
 	// Temporary
 	event.recipes.gtceu.chemical_bath('quantum_eye')
 		.itemInputs('tfg:vitrified_pearl')
