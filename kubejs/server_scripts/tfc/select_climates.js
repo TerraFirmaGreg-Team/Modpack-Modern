@@ -1,3 +1,5 @@
+"use strict";
+
 TFCEvents.selectClimateModel(event => {
 
 	let location = event.level.dimensionKey.location();

@@ -1,5 +1,6 @@
 
 //priority: 0
+"use strict";
 
 //#region Assign materials
 //////////////////////////////

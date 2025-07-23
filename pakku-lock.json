@@ -1512,71 +1512,6 @@
             ]
         },
         {
-            "pakku_id": "6yDlL4nD3srqTbha",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "curseforge": "async-locator",
-                "modrinth": "async-locator"
-            },
-            "name": {
-                "curseforge": "Async Locator",
-                "modrinth": "Async Locator"
-            },
-            "id": {
-                "curseforge": "625069",
-                "modrinth": "rkN8aqci"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "async-locator-forge-1.20-1.3.0.jar",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4603/343/async-locator-forge-1.20-1.3.0.jar",
-                    "id": "4603343",
-                    "parent_id": "625069",
-                    "hashes": {
-                        "sha1": "fa8e3d65644e5bf1ea62f1ba3c94b0982dfb7357",
-                        "md5": "8b5e3d0c39d567a44f269439f880b444"
-                    },
-                    "required_dependencies": [],
-                    "size": 264951,
-                    "date_published": "2023-06-22T18:24:14.363Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "async-locator-forge-1.20-1.3.0.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1",
-                        "1.20.2"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/rkN8aqci/versions/Eip0qUwF/async-locator-forge-1.20-1.3.0.jar",
-                    "id": "Eip0qUwF",
-                    "parent_id": "rkN8aqci",
-                    "hashes": {
-                        "sha512": "84cfbd80bf0a5a53ffa42f1c154e8f5991f27e5924df011849693e00310a2654962f9d9e1aaa237931d8fcc2fe13bd2908f1cd92261b1fed8d5fa2b685d83194",
-                        "sha1": "fa8e3d65644e5bf1ea62f1ba3c94b0982dfb7357"
-                    },
-                    "required_dependencies": [],
-                    "size": 264951,
-                    "date_published": "2023-06-22T18:23:11.502437Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "xehyEqR6wAypCeED",
             "type": "MOD",
             "side": "BOTH",
@@ -1635,69 +1570,6 @@
                     "required_dependencies": [],
                     "size": 19471,
                     "date_published": "2023-11-29T11:27:52.410590Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "nSmCtev3e7QZ1r7x",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "badoptimizations",
-                "modrinth": "badoptimizations"
-            },
-            "name": {
-                "curseforge": "BadOptimizations",
-                "modrinth": "BadOptimizations"
-            },
-            "id": {
-                "curseforge": "949555",
-                "modrinth": "g96Z4WVZ"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "BadOptimizations-2.3.0-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6742/958/BadOptimizations-2.3.0-1.20.1.jar",
-                    "id": "6742958",
-                    "parent_id": "949555",
-                    "hashes": {
-                        "sha1": "b86ce6a5ed4f71a13f6d2976ffe6471cef29beb7",
-                        "md5": "6ccd8c56680f6bc7928273eae5d66da6"
-                    },
-                    "required_dependencies": [],
-                    "size": 452304,
-                    "date_published": "2025-07-08T01:49:43.307Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "BadOptimizations-2.3.0-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/g96Z4WVZ/versions/RPOjbIwJ/BadOptimizations-2.3.0-1.20.1.jar",
-                    "id": "RPOjbIwJ",
-                    "parent_id": "g96Z4WVZ",
-                    "hashes": {
-                        "sha512": "288638bd5e4d9163205006ddc06eb6d962abcf9c49b602eeef3389e56184deee7844037a7cd41f770d6088a063756380afe1a6c456668356dd56b238834c3c49",
-                        "sha1": "b86ce6a5ed4f71a13f6d2976ffe6471cef29beb7"
-                    },
-                    "required_dependencies": [],
-                    "size": 452304,
-                    "date_published": "2025-07-08T01:49:43.608348Z"
                 }
             ]
         },
@@ -6156,45 +6028,6 @@
                     "required_dependencies": [],
                     "size": 24477,
                     "date_published": "2024-10-23T13:40:38.723694Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "hKY5xqyAJhbHUXg1",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "fastfurnace"
-            },
-            "name": {
-                "curseforge": "FastFurnace"
-            },
-            "id": {
-                "curseforge": "299540"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "FastFurnace-1.20.1-8.0.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5181/98/FastFurnace-1.20.1-8.0.2.jar",
-                    "id": "5181098",
-                    "parent_id": "299540",
-                    "hashes": {
-                        "sha1": "b144b8599acd3fac3f8f9d31fa217a4a5b942f61",
-                        "md5": "48b8d2df29ea216a625928e29a6434da"
-                    },
-                    "required_dependencies": [
-                        "283644"
-                    ],
-                    "size": 6170,
-                    "date_published": "2024-03-14T05:38:15.720Z"
                 }
             ]
         },

@@ -395,7 +395,12 @@
 		}
 	]
 	order_index: 2
-	quest_links: [ ]
+	quest_links: [{
+		id: "704C995D4B6CE874"
+		linked_quest: "46C92B938921A0AC"
+		x: 4.5d
+		y: 0.5d
+	}]
 	quests: [
 		{
 			dependencies: ["2746958D3D4A0885"]

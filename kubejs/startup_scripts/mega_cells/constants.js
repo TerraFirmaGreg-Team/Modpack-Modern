@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 global.MEGA_CELLS_DISABLED_ITEMS = [
     'megacells:sky_steel_block',

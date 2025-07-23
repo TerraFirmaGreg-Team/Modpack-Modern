@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 global.SPECIES_DISABLED_BLOCKS = [
 	'species:red_suspicious_sand',

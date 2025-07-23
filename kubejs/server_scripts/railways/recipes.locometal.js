@@ -1,3 +1,5 @@
+"use strict";
+
 const locometalDyeGroups = {
 	slashed_locometal: '#railways:palettes/dye_groups/slashed',
 	riveted_locometal: '#railways:palettes/dye_groups/riveted',

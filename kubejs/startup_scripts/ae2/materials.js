@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerAE2Materials = (event) => {
     event.create('tfg:fluix')

@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function registerSpeciesRecipes(event) {
 	global.SPECIES_DISABLED_ITEMS.forEach(item => {
@@ -52,7 +53,7 @@ function registerSpeciesRecipes(event) {
 	event.shaped('2x species:coil', [
 		'ABA'
 	], {
-		A: '#forge:screws/wrought_iron',
+		A: '#forge:bolts/wrought_iron',
 		B: 'firmaciv:rope_coil'
 	}).id('tfg:shaped/coil')
 

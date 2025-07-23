@@ -1,3 +1,5 @@
+"use strict";
+
 const registerBuildingGadgetsRecipes = (event) => {
 
     event.remove({ mod: 'buildinggadgets2' })

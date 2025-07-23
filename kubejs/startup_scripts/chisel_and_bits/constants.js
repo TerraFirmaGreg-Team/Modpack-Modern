@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 global.CHISEL_AND_BITS_DISABLED_ITEMS = [
     'chiselsandbits:block_bit',

@@ -1,3 +1,5 @@
+"use strict";
+
 //#region Medicine
 
     //Pills & Tablets
@@ -240,4 +242,175 @@ function getTFGPersistentDataRoot(player)
                 }
         })
     })
+//#endregion
+
+//#region Block Interactions
+
+/**
+ * Function for replacing a block with another block by crouch-right-clicking with a tool.
+ * 
+ * If input and output is null recipe will just return.
+ *
+ * @param {*} event 
+ * @param {string} inputBlock -Block ID to be replaced. Accepts a Tag, but not recommended.
+ * @param {string} outputBlock -Block ID of the replacement.
+ * @param {string} toolId -Item ID of the tool.
+ * @param {boolean} damageTool -Sets wether the tool should be damaged on use.
+ * @param {string} soundId -Sound ID to be used as the flair sound effect. Can be null.
+ * @param {string} particleId -SimpleParticleType ID to be used as the flair particle. Can be null.
+ * @param {boolean} copyBlockstate - Sets wether the blockstate should be copied from the input block to the output block.
+ */
+function transformBlockWithTool(event, inputBlock, outputBlock, toolId, damageTool, soundId, particleId, copyBlockstate) {
+    const { server, item, player, block } = event;
+
+    if (!inputBlock || !outputBlock) {return};
+
+    if (inputBlock.startsWith('#')) {
+        if (!block.hasTag(inputBlock.substring(1))) return;
+    } else {
+        if (block.id.toString() !== inputBlock) return;
+    }
+
+    if (toolId.startsWith('#')) {
+        if (item.isEmpty() || !player.mainHandItem.hasTag(toolId.substring(1))) {return};
+    } else {
+        if (item.isEmpty() || player.mainHandItem.id !== toolId) {return};
+    }
+
+    if (!player.crouching) {return};
+
+    let state = block.getBlockState().toString();
+    if (state.includes('[') && copyBlockstate == true) {
+        state = state.substring(state.indexOf('['));
+    } else {
+        state = '';
+    }
+
+    if (soundId) {
+        server.runCommandSilent(`playsound ${soundId} player ${player.username} ${player.x} ${player.y} ${player.z} 1 2 1`)
+    }
+    if (particleId) {
+        server.runCommandSilent(`particle ${particleId} ${block.x} ${block.y + 0.8} ${block.z} 0.1 0.1 0.1 0.6 10`)
+    }
+    player.swing();
+
+    if (!player.isCreative() && damageTool) {
+        item.damageValue++;
+        if (item.damageValue >= item.maxDamage) {
+            server.runCommandSilent(`playsound minecraft:item.shield.break player ${player.username} ${player.x} ${player.y} ${player.z} 1 1 1`);
+            item.count--;
+        }
+    }
+
+    const dim = block.level.name.getString();
+    server.runCommandSilent(`execute in ${dim} run fill ${block.x} ${block.y} ${block.z} ${block.x} ${block.y} ${block.z} air`);
+    server.runCommandSilent(`execute in ${dim} run setblock ${block.x} ${block.y} ${block.z} ${outputBlock}${state}`);
+};
+
+/**
+ * Function for replacing a block with another block by crouch-right-clicking with an item.
+ * 
+ * If input and output is null recipe will just return.
+ *
+ * @param {*} event 
+ * @param {string} inputBlock -Block ID to be replaced. Accepts a Tag, but not recommended.
+ * @param {string} outputBlock -Block ID of the replacement.
+ * @param {string} itemId -Item ID of the consumed item. Accepts Tags.
+ * @param {boolean} consumeItem -Sets wether the item should be comsumed or not.
+ * @param {number} consumeAmount -Number of items to consume, can't be greater than stacksize.
+ * @param {string} soundId -Sound ID to be used as the flair sound effect. Can be null.
+ * @param {string} particleId -SimpleParticleType ID to be used as the flair particle. Can be null.
+ * @param {boolean} copyBlockstate - Sets wether the blockstate should be copied from the input block to the output block.
+ */
+function transformBlockWithItem(event, inputBlock, outputBlock, itemId, consumeItem, consumeAmount, soundId, particleId, copyBlockstate) {
+        const { server, item, player, block } = event;
+
+        if (!inputBlock || !outputBlock) {return};
+
+        if (inputBlock.startsWith('#')) {
+            if (!block.hasTag(inputBlock.substring(1))) return;
+        } else {
+            if (block.id.toString() !== inputBlock) return;
+        }
+
+        if (itemId.startsWith('#')) {
+            if (item.isEmpty() || !player.mainHandItem.hasTag(itemId.substring(1))) {return};
+        } else {
+            if (item.isEmpty() || player.mainHandItem.id != itemId) {return};
+        }
+        if (!player.crouching) {return};
+
+        var state = block.getBlockState().toString()
+        if (state.includes('[') && copyBlockstate == true){
+            state = state.substring(block.getBlockState().toString().indexOf('['));
+        } else {
+            state = ''
+        }
+
+        if (!player.isCreative() && consumeItem === true) {
+            if (item.count < consumeAmount) {
+                player.tell(`Item count is too low. Held amount = ${item.count}, required amount = ${consumeAmount}`)
+                return;
+            }
+            item.count -= consumeAmount;
+        }
+        if (soundId) {
+            server.runCommandSilent(`playsound ${soundId} player ${player.username} ${player.x} ${player.y} ${player.z} 1 2 1`)
+        }
+        if (particleId) {
+            server.runCommandSilent(`particle ${particleId} ${block.x} ${block.y + 0.8} ${block.z} 0.1 0.1 0.1 0.6 10`)
+        }
+        player.swing()
+        event.server.runCommandSilent(`execute in ${event.block.level.name.getString()} run fill ${block.x} ${block.y} ${block.z} ${block.x} ${block.y} ${block.z} air`)
+        event.server.runCommandSilent(`execute in ${event.block.level.name.getString()} run setblock ${block.x} ${block.y} ${block.z} ${outputBlock}${state}`)
+};
+
+// Declare Events
+BlockEvents.rightClicked(event => {
+    //Brick index events
+    for (const b of global.BRICK_INDEX) {
+        //brick -> cracked
+        transformBlockWithTool(event, b.brick, b.cracked_brick, '#forge:tools/hammers',true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+        transformBlockWithTool(event, b.brick_stairs, b.cracked_stairs, '#forge:tools/hammers',true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+        transformBlockWithTool(event, b.brick_slab, b.cracked_slab, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+        transformBlockWithTool(event, b.brick_wall, b.cracked_wall, '#forge:tools/hammers',true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+        //brick -> mossy
+        transformBlockWithItem(event, b.brick, b.mossy_brick, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.brick, b.mossy_brick, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.brick_stairs, b.mossy_stairs, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.brick_stairs, b.mossy_stairs, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.brick_slab, b.mossy_slab, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.brick_slab, b.mossy_slab, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.brick_wall, b.mossy_wall, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.brick_wall, b.mossy_wall, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        //cracked -> mossy
+        transformBlockWithItem(event, b.cracked_brick, b.mossy_brick, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.cracked_brick, b.mossy_brick, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.cracked_stairs, b.mossy_stairs, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.cracked_stairs, b.mossy_stairs, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.cracked_slab, b.mossy_slab, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.cracked_slab, b.mossy_slab, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.cracked_wall, b.mossy_wall, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.cracked_wall, b.mossy_wall, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        //mossy -> cracked
+        transformBlockWithTool(event, b.mossy_brick, b.cracked_brick, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+        transformBlockWithTool(event, b.mossy_stairs, b.cracked_stairs, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+        transformBlockWithTool(event, b.mossy_slab, b.cracked_slab, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+        transformBlockWithTool(event, b.mossy_wall, b.cracked_wall, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+        //mossy -> brick
+        transformBlockWithTool(event, b.mossy_brick, b.brick, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.mossy_brick, b.brick, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+        transformBlockWithTool(event, b.mossy_stairs, b.brick_stairs, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.mossy_stairs, b.brick_stairs, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+        transformBlockWithTool(event, b.mossy_slab, b.brick_slab, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.mossy_slab, b.brick_slab, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+        transformBlockWithTool(event, b.mossy_wall, b.brick_wall, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.mossy_wall, b.mossy_wall, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+        //cracked -> brick
+        transformBlockWithItem(event, b.cracked_brick, b.brick, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
+        transformBlockWithItem(event, b.cracked_stairs, b.brick_stairs, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
+        transformBlockWithItem(event, b.cracked_slab, b.brick_slab, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
+        transformBlockWithItem(event, b.cracked_wall, b.brick_wall, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
+    }
+});
 //#endregion

@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 global.AD_ASTRA_DISABLED_ITEMS = 
 [
