@@ -365,13 +365,17 @@ function registerGTCEUMetalRecipes(event) {
 			.duration(10)
 			.EUt(16)
 
-		if (material.hasProperty(PropertyKey.GEM) && !TagPrefix.gem.isIgnored(material)) {
+		if (material.hasProperty(PropertyKey.GEM)) {
 			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, crushedOreItem.getCount());
 			hammerRecipe.chancedOutput(gemItem, 7500, 950)
 
 			event.recipes.greate.pressing(TieredOutputItem.of(gemItem).withChance(0.75).withExtraTierChance(0.095), poorOreItem)
 				.recipeTier(1)
 				.id(`greate:pressing/poor_raw_${material.getName()}_to_gem`)
+
+			let polishingCount = Math.max(crushedOreItem.getCount() / 2, 1);
+			event.recipes.create.sandpaper_polishing(gemItem.copyWithCount(polishingCount), poorOreItem)
+				.id(`tfg:polishing/poor_raw_${material.getName()}_to_gem`)
 		}
 		else {
 			hammerRecipe.chancedOutput(crushedOreItem, 7500, 950)
@@ -443,13 +447,16 @@ function registerGTCEUMetalRecipes(event) {
 			.duration(10)
 			.EUt(16)
 
-		if (material.hasProperty(PropertyKey.GEM) && !TagPrefix.gem.isIgnored(material)) {
+		if (material.hasProperty(PropertyKey.GEM)) {
 			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, crushedOreItem.getCount())
 			hammerRecipe.itemOutputs(gemItem)
 
 			event.recipes.greate.pressing(gemItem, normalOreItem)
 				.recipeTier(1)
 				.id(`greate:pressing/raw_${material.getName()}_to_gem`)
+
+			event.recipes.create.sandpaper_polishing(gemItem, normalOreItem)
+				.id(`tfg:polishing/raw_${material.getName()}_to_gem`)
 		}
 		else {
 			hammerRecipe.itemOutputs(crushedOreItem)
@@ -512,13 +519,16 @@ function registerGTCEUMetalRecipes(event) {
 			.duration(10)
 			.EUt(16)
 
-		if (material.hasProperty(PropertyKey.GEM) && !TagPrefix.gem.isIgnored(material)) {
+		if (material.hasProperty(PropertyKey.GEM)) {
 			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, crushedOreItem.getCount())
 			hammerRecipe.itemOutputs(gemItem)
 
 			event.recipes.greate.pressing(gemItem, richOreItem)
 				.recipeTier(1)
 				.id(`greate:pressing/rich_raw_${material.getName()}_to_gem`)
+				
+			event.recipes.create.sandpaper_polishing(gemItem, richOreItem)
+				.id(`tfg:polishing/rich_raw_${material.getName()}_to_gem`)
 		}
 		else {
 			hammerRecipe.itemOutputs(crushedOreItem)
