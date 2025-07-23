@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+
+## [0.10.3] - 23-07-2025
 ### Changes
 - Reduced duration of biodiesel recipes @Pyritie
 - Changed some options of a performance mod, let us know if you find any weird issues! (#1410) @victordlp8
