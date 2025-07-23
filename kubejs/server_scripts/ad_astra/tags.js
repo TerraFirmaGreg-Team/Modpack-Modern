@@ -295,6 +295,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'minecraft:shulker',
 		'minecraft:shulker_bullet',
 		'minecraft:skeleton',
+		'minecraft:stray',
 		'species:limpet',
 		'species:birt',
 		'endermanoverhaul:windswept_hills_enderman',
