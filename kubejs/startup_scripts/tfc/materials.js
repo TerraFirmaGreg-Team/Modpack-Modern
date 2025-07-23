@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerTFCMaterials = (event) => {
     const registerStoneMaterial = (rockType, color) => 

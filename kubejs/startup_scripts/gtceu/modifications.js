@@ -1,3 +1,5 @@
+"use strict";
+
 function registerGTCEuItemModifications(event) {
 
 	event.modify('gtceu:nanomuscle_helmet', item => {

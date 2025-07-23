@@ -1,5 +1,5 @@
 // priority: 0
-
+"use strict";
 
 global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER = 2;
 

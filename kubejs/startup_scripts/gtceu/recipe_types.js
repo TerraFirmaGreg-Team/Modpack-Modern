@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerGTCEuRecipeTypes = (event) => {
 	event.create('nether_dome')

@@ -1,3 +1,5 @@
+"use strict";
+
 function registerTFGNetherBlocks(event) {
 
 	event.create('tfg:rock/hardened_deepslate')

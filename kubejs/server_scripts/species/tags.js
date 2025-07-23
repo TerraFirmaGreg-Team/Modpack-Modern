@@ -1,3 +1,5 @@
+"use strict";
+
 const registerSpeciesBlockTags = (event) => {
 	global.SPECIES_DISABLED_BLOCKS.forEach(block => {
 		event.removeAllTagsFrom(block)

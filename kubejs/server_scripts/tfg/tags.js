@@ -1,3 +1,5 @@
+"use strict";
+
 const registerTFGItemTags = (event) => {
 
 	registerTFGTrimTags(event)
@@ -147,6 +149,36 @@ const registerTFGItemTags = (event) => {
 
 	// Universal Circuits
 	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => { event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`); })
+
+	// Brick Index
+	const BRICK_KEYS = [
+		"brick", 
+		"brick_stairs", 
+		"brick_slab", 
+		"brick_wall",
+		"cracked_brick", 
+		"cracked_stairs", 
+		"cracked_slab", 
+		"cracked_wall",
+		"mossy_brick", 
+		"mossy_stairs", 
+		"mossy_slab", 
+		"mossy_wall",
+		"smooth_brick", 
+		"smooth_stairs", 
+		"smooth_slab", 
+		"smooth_wall",
+		"chiseled_brick"
+	];
+
+	global.BRICK_INDEX.forEach(brickObj => {
+		BRICK_KEYS.forEach(key => {
+			const id = brickObj[key];
+			if (typeof id === 'string' && id) {
+				event.add('tfg:brick_index', id);
+			}
+		});
+	});
 
 	// Crafting components
 	event.add('tfg:aluminium_oxide', '#forge:dusts/bauxite')

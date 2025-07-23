@@ -1,3 +1,5 @@
+"use strict";
+
 const registerRnrRecipes = (event) => {
 	event.remove({input: 'rnr:concrete_powder'})
 	event.remove({id: 'rnr:crafting/concrete_powder'})

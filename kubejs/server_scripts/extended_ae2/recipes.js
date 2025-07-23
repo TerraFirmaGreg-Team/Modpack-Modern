@@ -1,3 +1,5 @@
+"use strict";
+
 const registerExtendedAE2Recipes = (event) => {
 
     event.remove({not:[

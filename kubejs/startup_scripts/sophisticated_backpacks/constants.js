@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 global.SOPHISTICATED_BACKPACKS_DISABLED_ITEMS = [
     'sophisticatedbackpacks:inception_upgrade',

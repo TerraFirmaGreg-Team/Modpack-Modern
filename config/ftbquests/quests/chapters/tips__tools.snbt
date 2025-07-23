@@ -2503,6 +2503,61 @@
 			x: -6.0d
 			y: 10.0d
 		}
+		{
+			description: ["{quests.tfg_tips.harpoon.desc}"]
+			id: "78374FC41EFCFD9B"
+			subtitle: "{quests.tfg_tips.harpoon.subtitle}"
+			tasks: [{
+				id: "0DDF6CE85945464A"
+				item: {
+					Count: 1
+					id: "species:harpoon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.harpoon.title}"
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["78374FC41EFCFD9B"]
+			description: ["{quests.tfg_tips.coil.desc}"]
+			id: "3876C12655AE6E3C"
+			subtitle: "{quests.tfg_tips.coil.subtitle}"
+			tasks: [{
+				id: "0B27949208A80BD9"
+				item: "species:coil"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.coil.title}"
+			x: -9.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["72B3EA6588E18CCC"]
+			description: ["{quests.tfg_tips.self_defense.desc}"]
+			icon: "species:cranktrap"
+			id: "104EFD3257F7BA61"
+			subtitle: "{quests.tfg_tips.self_defense.subtitle}"
+			tasks: [
+				{
+					id: "227B319F72D2E23C"
+					item: "species:cranktrap"
+					type: "item"
+				}
+				{
+					id: "7551326CEF2F9575"
+					item: "createaddition:barbed_wire"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.self_defense.title}"
+			x: -2.5d
+			y: 0.5d
+		}
 	]
 	subtitle: ["{quests.tfg_tips.tools_tips.subtitle}"]
 	title: "Tips - Tools"

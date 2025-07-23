@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerCreateAdditionsRecipes = (event) => {
 
@@ -210,5 +211,14 @@ const registerCreateAdditionsRecipes = (event) => {
 		},
 		burnTime: 150 * 9 * 9
 	}).id('tfg:createadditions/liquid_burning/seed_oil')
+
+	event.custom({
+		type: 'createaddition:liquid_burning',
+		input: {
+			fluid: 'gtceu:steam',
+			amount: 256
+		},
+		burnTime: 4 * 9 * 9
+	}).id('tfg:createadditions/liquid_burning/steam')
 	//#endregion
 }
