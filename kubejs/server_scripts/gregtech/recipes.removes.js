@@ -698,6 +698,8 @@ function removeGTCEURecipes(event) {
 		event.remove({ id: `gtceu:shaped/${material}_pressure_plate` })
 		event.remove({ id: `gtceu:assembler/${material}_pressure_plate` })	
 	})
+	
+	event.remove({ output: 'gtceu:damascus_steel_crowbar'})
 }
 
 function removeMaceratorRecipe(event, id) {

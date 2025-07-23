@@ -152,4 +152,8 @@ function removeTFCRecipes(event) {
 
 	event.remove({ id: 'tfc:crafting/gunpowder_graphite' })
 	event.remove({ id: 'tfc:crafting/gunpowder' })
+	
+	event.remove({ output: 'tfc:rustic_windmill_blade'})
+	event.remove({ output: 'tfc:lattice_windmill_blade'})
+	event.remove({ id: 'tfchotornot:heating/insulating_items'})
 }
