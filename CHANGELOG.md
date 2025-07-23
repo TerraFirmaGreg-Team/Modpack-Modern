@@ -4,6 +4,7 @@
 - Reduced duration of biodiesel recipes @Pyritie
 - Changed some options of a performance mod, let us know if you find any weird issues! (#1410) @victordlp8
 - Added mortar and pestel recipes for grain to flour @Pyritie
+- Added in-world shift + right-click interactions for bricks. Greens can be used to turn bricks into mossy bricks, and a knife reverts it. Hammers make cracked bricks and mortar repairs them. (#1416) @Redeix
 - Steam can now be pumped into Blaze Burners via the Straw (#1379) @Nyonyix
 ### Bug fixes
 - Fixed butchery knife crafting recipe (#1405) @Pyritie
