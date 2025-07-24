@@ -53,6 +53,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 	registerGTCEuMaterials(event)
 	registerGreateMaterials(event)
 	registerTFGMaterials(event)
+	registerTFGNuclearMaterials(event)
 })
 
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
@@ -70,6 +71,10 @@ GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
 
 TFCEvents.registerFoodTrait(event => {
 	registerTFGFoodTraits(event)
+})
+
+GTCEuStartupEvents.registry("gtceu:element", event => {
+	registerTFGElement(event)
 })
 
 Platform.mods.primitive_creatures.name = "Primitive Creatures";

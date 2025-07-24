@@ -2,6 +2,8 @@
 
 const registerTFGFluids = (event) => {
 
+	registerTFGNuclearFluids(event)
+
 	// TODO: remove these as the other planets come out
 
 	event.create('tfg:nether_slurry')

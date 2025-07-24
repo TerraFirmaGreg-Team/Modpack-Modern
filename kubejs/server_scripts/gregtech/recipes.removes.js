@@ -668,6 +668,9 @@ function removeGTCEURecipes(event) {
 
 	event.remove({ id: 'gtceu:rock_breaker/red_granite' })
 
+	// Replace by the Heat Exchanger recipe for Mars
+	event.remove({ id: 'gtceu:fluid_heater/formamide' })
+
 	// Snow Stuffs
 
 	event.remove({ id: 'gtceu:fluid_solidifier/snow_block' })

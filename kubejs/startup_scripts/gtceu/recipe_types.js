@@ -32,4 +32,28 @@ const registerGTCEuRecipeTypes = (event) => {
 		.setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         	.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         	.setSound(GTSoundEntries.COOLING)
+
+	event.create('nuclear_fuel_factory')
+        	.category('nuclear_fuel_factory')
+        	.setEUIO('in')
+        	.setMaxIOSize(2, 1, 1, 0)
+			.setSlotOverlay(false, false, GuiTextures.ATOMIC_OVERLAY_1)
+        	.setProgressBar(GuiTextures.ATOMIC_OVERLAY_1, FillDirection.DOWN_TO_UP)
+        	.setSound(GTSoundEntries.MINER)
+
+	event.create('heat_exchanger')
+        	.category('heat_exchanger')
+        	.setEUIO('in')
+        	.setMaxIOSize(0, 0, 4, 4)
+			.setSlotOverlay(false, false, GuiTextures.ATOMIC_OVERLAY_1)
+        	.setProgressBar(GuiTextures.ATOMIC_OVERLAY_1, FillDirection.DOWN_TO_UP)
+        	.setSound(GTSoundEntries.MINER)
+
+	event.create('fission_reactor')
+        	.category('fission_reactor')
+        	.setEUIO('in')
+        	.setMaxIOSize(1, 0, 1, 2)
+			.setSlotOverlay(false, false, GuiTextures.ATOMIC_OVERLAY_1)
+        	.setProgressBar(GuiTextures.ATOMIC_OVERLAY_1, FillDirection.DOWN_TO_UP)
+        	.setSound(GTSoundEntries.MINER)
 }

@@ -44,6 +44,13 @@ function registerTFGSpaceRecipes(event) {
 		.duration(20*60*30)
 		.EUt(16)
 
+	event.recipes.gtceu.gas_collector('mars')
+		.circuit(3)
+		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 10000))
+		.dimension('ad_astra:mars')
+		.duration(20*10)
+		.EUt(16)
+
 	// Aqueous accumulator
 
 	let aaCircuit = 1;

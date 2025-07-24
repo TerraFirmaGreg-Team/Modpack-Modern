@@ -4,6 +4,7 @@ const registerTFGItems = (event) => {
 
 	registerTFGDeprecatedItems(event)
 	registerTFGFoodItems(event)
+	registerTFGNuclearItems(event)
 
 	// #region Electronics
 	event.create('tfg:unfinished_electron_tube', 'create:sequenced_assembly')

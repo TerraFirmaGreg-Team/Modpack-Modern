@@ -933,6 +933,8 @@ function registerGTCEuMachineRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ZPM])
 		.circuit(2)
 
+	//#endregion
+
 	event.recipes.gtceu.mixer('gtceu:chipboard_composite_wax')
 		.itemInputs('2x #tfg:wood_dusts',
 					'1x #forge:wax')
