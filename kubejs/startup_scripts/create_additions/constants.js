@@ -4,7 +4,6 @@
 global.CREATE_ADDITIONS_DISABLED_ITEMS = [
     'createaddition:electrum_ingot', 
     'createaddition:electrum_nugget', 
-    'createaddition:diamond_grit_sandpaper', 
     'createaddition:electrum_amulet', 
     'createaddition:biomass_pellet', 
     'createaddition:diamond_grit', 

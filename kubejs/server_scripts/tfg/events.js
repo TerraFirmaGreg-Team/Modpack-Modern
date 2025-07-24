@@ -248,10 +248,10 @@ function getTFGPersistentDataRoot(player)
 
 /**
  * Function for replacing a block with another block by crouch-right-clicking with a tool.
- * 
+ *
  * If input and output is null recipe will just return.
  *
- * @param {*} event 
+ * @param {*} event
  * @param {string} inputBlock -Block ID to be replaced. Accepts a Tag, but not recommended.
  * @param {string} outputBlock -Block ID of the replacement.
  * @param {string} toolId -Item ID of the tool.
@@ -309,10 +309,10 @@ function transformBlockWithTool(event, inputBlock, outputBlock, toolId, damageTo
 
 /**
  * Function for replacing a block with another block by crouch-right-clicking with an item.
- * 
+ *
  * If input and output is null recipe will just return.
  *
- * @param {*} event 
+ * @param {*} event
  * @param {string} inputBlock -Block ID to be replaced. Accepts a Tag, but not recommended.
  * @param {string} outputBlock -Block ID of the replacement.
  * @param {string} itemId -Item ID of the consumed item. Accepts Tags.
@@ -411,6 +411,10 @@ BlockEvents.rightClicked(event => {
         transformBlockWithItem(event, b.cracked_stairs, b.brick_stairs, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
         transformBlockWithItem(event, b.cracked_slab, b.brick_slab, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
         transformBlockWithItem(event, b.cracked_wall, b.brick_wall, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
+        // -> smooth
+        transformBlockWithTool(event, b.brick, b.smooth_brick, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
+        transformBlockWithTool(event, b.mossy_brick, b.smooth_brick, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
+        transformBlockWithTool(event, b.cracked_brick, b.smooth_brick, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
     }
 });
 //#endregion
