@@ -4425,7 +4425,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "defaultoptions-forge-1.20.1-18.0.2.jar",
+                    "file_name": "defaultoptions-forge-1.20.1-18.0.3.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -4434,22 +4434,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/WEg59z5b/versions/qCfqBSp6/defaultoptions-forge-1.20.1-18.0.2.jar",
-                    "id": "qCfqBSp6",
+                    "url": "https://cdn.modrinth.com/data/WEg59z5b/versions/vNF6Yrv4/defaultoptions-forge-1.20.1-18.0.3.jar",
+                    "id": "vNF6Yrv4",
                     "parent_id": "WEg59z5b",
                     "hashes": {
-                        "sha512": "fa1dce631b50ef18b8c2ec5ac942dbb1c3b775a85a6bed045d1e26aea4d5aa8c13877ddc4aed059aa829684932e986fd4450b2215273225b6b278af6d5a80fe2",
-                        "sha1": "30fb48d3884b33175644235bfe6f6d29c4248d19"
+                        "sha512": "d3c13262743fb06d481a4755da9daa78350cf1e3ffe88b7f8ff86ad6c5c7bd729483e5890e4f6e2969dacf08649765277598251d4d5dff20f68a5690f352c750",
+                        "sha1": "bbc80fc1a7f0e17b64fca56fcf7d55562db9783d"
                     },
                     "required_dependencies": [
                         "MBAkmtvl"
                     ],
-                    "size": 93386,
-                    "date_published": "2025-07-22T15:03:48.450032Z"
+                    "size": 94649,
+                    "date_published": "2025-07-23T21:48:31.220228Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "defaultoptions-forge-1.20.1-18.0.2.jar",
+                    "file_name": "defaultoptions-forge-1.20.1-18.0.3.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -4458,18 +4458,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6799/217/defaultoptions-forge-1.20.1-18.0.2.jar",
-                    "id": "6799217",
+                    "url": "https://edge.forgecdn.net/files/6804/680/defaultoptions-forge-1.20.1-18.0.3.jar",
+                    "id": "6804680",
                     "parent_id": "232131",
                     "hashes": {
-                        "sha1": "2dcb222998a3194d14aab49112824b3f514d42bd",
-                        "md5": "bf35ff9db893d713d9b7d8c8291333e5"
+                        "sha1": "a7bffd6bd5cff19793cede8c1b8bb0450eb25059",
+                        "md5": "10d4a6afe004f72a965d0263583576db"
                     },
                     "required_dependencies": [
                         "531761"
                     ],
-                    "size": 93387,
-                    "date_published": "2025-07-22T15:03:48.190Z"
+                    "size": 94649,
+                    "date_published": "2025-07-23T21:49:30.653Z"
                 }
             ]
         },
