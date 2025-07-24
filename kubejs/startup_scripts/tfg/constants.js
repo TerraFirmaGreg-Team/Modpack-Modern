@@ -68,8 +68,18 @@ global.MOON_BIOMES = [
 ]
 
 global.MARS_BIOMES = [
-	'tfg:mars/martian_plains',
+	'tfg:mars/martian_oasis',
+	'tfg:mars/martian_deep_desert',
+	'tfg:mars/martian_dunes',
+	'tfg:mars/martian_dune_edge',
+	'tfg:mars/martian_river',
 	'tfg:mars/martian_riverbed',
+	'tfg:mars/amber_plains',
+	'tfg:mars/amber_hills',
+	'tfg:mars/rusticus_plains',
+	'tfg:mars/rusticus_hills',
+	'tfg:mars/sangnum_plains',
+	'tfg:mars/sangnum_hills',
 	'tfg:mars/martian_mountains'
 ]
 
