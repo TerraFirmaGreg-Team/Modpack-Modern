@@ -129,7 +129,7 @@ global.FOOD_FRUIT = [
 ];
 
 /** @global */
-global.BRICK_INDEX = global.TFC_STONE_TYPES.map(tfc_stone => ({
+global.BRICK_INDEX = (global.TFC_STONE_TYPES ?? []).map(tfc_stone => ({
 	brick_type: tfc_stone,
 	brick: `tfc:rock/bricks/${tfc_stone}`, brick_stairs: `tfc:rock/bricks/${tfc_stone}_stairs`, brick_slab: `tfc:rock/bricks/${tfc_stone}_slab`, brick_wall: `tfc:rock/bricks/${tfc_stone}_wall`, 
 	cracked_brick: `tfc:rock/cracked_bricks/${tfc_stone}`, cracked_stairs: `tfc:rock/cracked_bricks/${tfc_stone}_stairs`, cracked_slab: `tfc:rock/cracked_bricks/${tfc_stone}_slab`, cracked_wall: `tfc:rock/cracked_bricks/${tfc_stone}_wall`, 
@@ -137,8 +137,8 @@ global.BRICK_INDEX = global.TFC_STONE_TYPES.map(tfc_stone => ({
 	smooth_brick: `tfc:rock/smooth/${tfc_stone}`, smooth_stairs: `tfc:rock/smooth/${tfc_stone}_stairs`, smooth_slab: `tfc:rock/smooth/${tfc_stone}_slab`, smooth_wall: `tfc:rock/smooth/${tfc_stone}_wall`, 
 	chiseled_brick: `tfc:rock/chiseled/${tfc_stone}`
 }));
-global.CREATE_DECO_BRICK_TYPES.slice(0, -1).forEach(create_brick => {
-	global.BRICK_INDEX.push({
+(global.CREATE_DECO_BRICK_TYPES ?? []).slice(0, -1).forEach(create_brick => {
+  global.BRICK_INDEX.push({
 		brick_type: create_brick,
 		brick: `createdeco:${create_brick}_bricks`, brick_stairs: `createdeco:${create_brick}_brick_stairs`, brick_slab: `createdeco:${create_brick}_brick_slab`, brick_wall: `createdeco:${create_brick}_brick_wall`,	
 		cracked_brick: `createdeco:cracked_${create_brick}_bricks`, cracked_stairs: `createdeco:cracked_${create_brick}_brick_stairs`, cracked_slab: `createdeco:cracked_${create_brick}_brick_slab`, cracked_wall: `createdeco:cracked_${create_brick}_brick_wall`, 

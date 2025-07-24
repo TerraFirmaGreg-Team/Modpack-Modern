@@ -415,6 +415,11 @@ BlockEvents.rightClicked(event => {
         transformBlockWithTool(event, b.brick, b.smooth_brick, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
         transformBlockWithTool(event, b.mossy_brick, b.smooth_brick, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
         transformBlockWithTool(event, b.cracked_brick, b.smooth_brick, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
+        // smooth ->
+        transformBlockWithTool(event, b.smooth_brick, b.cracked_brick, '#forge:tools/hammers',true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+        transformBlockWithItem(event, b.smooth_brick, b.mossy_brick, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.smooth_brick, b.mossy_brick, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+        transformBlockWithTool(event, b.smooth_brick, b.brick, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:crit', true);
     }
 });
 //#endregion
