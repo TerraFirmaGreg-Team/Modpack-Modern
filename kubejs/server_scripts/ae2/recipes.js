@@ -523,7 +523,7 @@ const registerAE2Recipes = (event) => {
         '2x #forge:rods/steel',
         'ae2:engineering_processor',
 		'2x #forge:plates/steel',
-		'#tfc:workbenches',)
+		'#tfc:workbenches')
     .itemOutputs('ae2:crafting_terminal')
     .duration(100)
     .EUt(GTValues.VA[GTValues.LV])
@@ -1018,7 +1018,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'4x #gtceu:circuits/ev',
 			'4x #forge:plates/titanium',
 			'32x #forge:dusts/certus_quartz',
-			'ae2:calculation_processor',)
+			'ae2:calculation_processor')
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('ae2:spatial_cell_component_2')
 		.duration(200)
@@ -1030,7 +1030,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'4x #gtceu:circuits/iv',
 			'4x #forge:plates/tungsten_steel',
 			'32x #forge:dusts/certus_quartz',
-			'ae2:calculation_processor',)
+			'ae2:calculation_processor')
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('ae2:spatial_cell_component_16')
 		.duration(200)
@@ -1089,7 +1089,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemInputs(
 			'2x ae2:formation_core',
 			'2x ae2:annihilation_core',
-			'ae2:storage_monitor',)
+			'ae2:storage_monitor')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
 		.itemOutputs('ae2:conversion_monitor')
 		.duration(200)
@@ -2149,7 +2149,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'16x gtceu:iv_emitter',
 			'8x ae2:engineering_processor',
 			'14x gtceu:iv_sensor',
-			'ae2:logic_processor',)
+			'ae2:logic_processor')
 		.inputFluids(Fluid.of('gtceu:titanium', 1440))
 		.itemOutputs('ae2:quantum_ring')
 		.duration(900)

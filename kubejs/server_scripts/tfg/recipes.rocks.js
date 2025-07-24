@@ -171,7 +171,7 @@ function registerTFGRockRecipes(event) {
 		{ raw: 'ad_astra:mars_cobblestone', hammered: 'ad_astra:mars_sand' },
 		{ raw: 'ad_astra:venus_stone', hammered: 'ad_astra:venus_cobblestone' },
 		{ raw: 'tfg:rock/hardened_venus_stone', hammered: 'ad_astra:venus_cobblestone' },
-		{ raw: 'ad_astra:venus_cobblestone', hammered: 'ad_astra:venus_sand' },,
+		{ raw: 'ad_astra:venus_cobblestone', hammered: 'ad_astra:venus_sand' },
 		{ raw: 'ad_astra:mercury_stone', hammered: 'ad_astra:mercury_cobblestone' },
 		{ raw: 'tfg:rock/hardened_mercury_stone', hammered: 'ad_astra:mercury_cobblestone' },
 		{ raw: 'ad_astra:mercury_cobblestone', hammered: 'tfc:sand/red' },

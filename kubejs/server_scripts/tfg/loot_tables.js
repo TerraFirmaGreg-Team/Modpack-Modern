@@ -34,7 +34,7 @@ function registerTFGLoots(event) {
 
                 LootEntry.of('gtceu:rich_raw_rock_salt').when((c) => c.randomChance(0.1)),
                 LootEntry.of('gtceu:rich_raw_salt').when((c) => c.randomChance(0.1)),
-                LootEntry.of('gtceu:rich_raw_saltpeter').when((c) => c.randomChance(0.1)),
+                LootEntry.of('gtceu:rich_raw_saltpeter').when((c) => c.randomChance(0.1))
             );
         })
         //seeds
@@ -48,8 +48,7 @@ function registerTFGLoots(event) {
                 LootEntry.of('tfc:seeds/sugarcane').when((c) => c.randomChance(0.1)),
                 LootEntry.of('firmalife:plant/pineapple_bush').when((c) => c.randomChance(0.1)),
                 LootEntry.of('tfc:plant/peach_sapling').when((c) => c.randomChance(0.1)),
-                LootEntry.of('tfc:plant/red_apple_sapling').when((c) => c.randomChance(0.1)),
-            );
+                LootEntry.of('tfc:plant/red_apple_sapling').when((c) => c.randomChance(0.1)));
         })
         //loot
         .pool((pool) => {
@@ -79,8 +78,7 @@ function registerTFGLoots(event) {
                 LootEntry.of('gtceu:bismuth_bronze_pickaxe_head').when((c) => c.randomChance(0.1)),
                 LootEntry.of('gtceu:bismuth_bronze_axe_head').when((c) => c.randomChance(0.1)),
                 LootEntry.of('gtceu:bismuth_bronze_shovel_head').when((c) => c.randomChance(0.1)),
-                LootEntry.of('gtceu:bismuth_bronze_knife_head').when((c) => c.randomChance(0.1)),
-            );
+                LootEntry.of('gtceu:bismuth_bronze_knife_head').when((c) => c.randomChance(0.1)));
         })
     });
 
@@ -120,7 +118,7 @@ function registerTFGLoots(event) {
 	STRONG_GLASSES.forEach(glass => {
 		event.addBlockLootModifier(glass[0])
 			.addLoot(glass[0])
-		if(glass[1]){
+		if (glass[1]) {
 			event.addBlockLootModifier(glass[0] + "_pane")
 			.addLoot(glass[0] + "_pane")
 		}

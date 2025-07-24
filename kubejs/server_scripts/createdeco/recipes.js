@@ -72,7 +72,7 @@ const registerCreatedecoRecipes = (event) => {
 
 	function lampRecipe(output, lampType, lampColor) {
 
-		const replacementLampType = lampType;
+		let replacementLampType = lampType;
 		if (lampType == 'industrial_iron') {
 			replacementLampType = 'steel';
 		}
