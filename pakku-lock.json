@@ -7139,7 +7139,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "greate-0.0.46.jar",
+                    "file_name": "greate-0.0.48.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7148,19 +7148,19 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/HCKRLApi/greate-0.0.46.jar",
-                    "id": "HCKRLApi",
+                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/cWoAmFlf/greate-0.0.48.jar",
+                    "id": "cWoAmFlf",
                     "parent_id": "8wDcQuht",
                     "hashes": {
-                        "sha512": "8915f188e321caa46d77539cc10a237213855591a2d61bc71c892fb46e5a99358e1f6387c1aef175cb94d729200179fc719fc817f90114cbc406e17f805ae45f",
-                        "sha1": "ac1b4893abeaeb7d695c2a554718f3f5f204968d"
+                        "sha512": "c38a2bd9546f6b1a0fc1d500aea9ff1884d080bb42f803a19abba26438c22bed83051871a311cab1f56eee09df59426243df2bb0f495d8c61cab268edc3df2bc",
+                        "sha1": "4a76bcbed081397312c837b24f818da497410d30"
                     },
                     "required_dependencies": [
-                        "LNytGWDc",
-                        "7tG215v7"
+                        "7tG215v7",
+                        "LNytGWDc"
                     ],
-                    "size": 1506889,
-                    "date_published": "2025-07-14T17:11:48.813473Z"
+                    "size": 1504296,
+                    "date_published": "2025-07-23T00:01:40.637121Z"
                 },
                 {
                     "type": "curseforge",
