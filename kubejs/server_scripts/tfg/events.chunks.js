@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 TFCEvents.createChunkDataProvider('mars', event => {
 
@@ -23,7 +24,7 @@ TFCEvents.createChunkDataProvider('mars', event => {
     var aquifer = [];
     i = 0;
     while (i < 16) {
-        aquifer.push(0);
+        aquifer.push(32);
         i++;
     }
 

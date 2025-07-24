@@ -1,6 +1,7 @@
 {
     "name": "TerraFirmaGreg-Modern",
-    "version": "0.10.0",
+    "version": "DEV",
+    "release_type": "alpha",
     "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
     "author": "Exception, Xikaro",
     "overrides": [
@@ -205,9 +206,6 @@
             "side": "CLIENT"
         },
         "fast-ip-ping": {
-            "side": "CLIENT"
-        },
-        "badoptimizations": {
             "side": "CLIENT"
         },
         "entityculling": {

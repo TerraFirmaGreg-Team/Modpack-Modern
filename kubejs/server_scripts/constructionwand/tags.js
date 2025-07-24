@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function registerConstructionWandItemTags(event) {
     event.add('tfc:usable_on_tool_rack', 'constructionwand:stone_wand')

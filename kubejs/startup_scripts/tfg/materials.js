@@ -1,6 +1,9 @@
 // priority: 0
+"use strict";
 
 const registerTFGMaterials = (event) => {
+
+	
 	event.create('hardwood')
 		.dust()
 		.flags(GTMaterialFlags.FLAMMABLE)
@@ -48,8 +51,16 @@ const registerTFGMaterials = (event) => {
 		.color(0x333e47)
 		.iconSet('metallic')
 		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR)
-		.blastTemp(1760, 'low', 120, 1200)
+		.blastTemp(1760, 'low', 256, 1200)
 
+	event.create('rocket_alloy_t2')
+		.ingot()
+		.components('76x titanium', '15x vanadium', '3x aluminium', '3x chromium', '3x tin')
+		.color(0x3c253d)
+		.iconSet('metallic')
+		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR)
+		.blastTemp(4500, 'mid', 1024, 1200)
+	
 	event.create('vitrified_asbestos')
 		.dust()
 		.fluid()
@@ -136,6 +147,7 @@ const registerTFGMaterials = (event) => {
 		.gas()
 		.components('8x helium_3', '11x oxygen', '11x hydrogen')
 		.color(0xEDFFB3)
+
 	//end region
 
 	//Region Rockwool
@@ -153,4 +165,5 @@ const registerTFGMaterials = (event) => {
 		.color(0xe65609)
 		.secondaryColor(0xe65609)
 	//end region
+
 }

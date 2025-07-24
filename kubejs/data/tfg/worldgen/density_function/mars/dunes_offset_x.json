@@ -1,0 +1,26 @@
+{
+	"type": "minecraft:cache_2d",
+	"argument": {
+		"type": "minecraft:spline",
+		"spline": {
+			"coordinate": {
+				"type": "minecraft:noise",
+				"noise": "tfg:mars_dunes_offset",
+				"xz_scale": 1,
+				"y_scale": 0
+			},
+			"points": [
+				{
+					"location": -1,
+					"derivative": 5.196152422706632,
+					"value": 0
+				},
+				{
+					"location": 1,
+					"derivative": 5.196152422706632,
+					"value": 0
+				}
+			]
+		}
+	}
+}

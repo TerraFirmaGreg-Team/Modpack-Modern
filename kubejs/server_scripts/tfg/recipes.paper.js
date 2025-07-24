@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function registerTFGPapermakingRecipes(event) {
 	
@@ -46,8 +47,16 @@ function registerTFGPapermakingRecipes(event) {
 		.duration(160)
 		.EUt(7)
 
-	//Replace macerate logs into macerate softwood logs
-	event.replaceInput({ id: 'gtceu:macerator/macerate_logs' }, '#minecraft:logs', '#tfg:softwood')
+	removeMaceratorRecipe(event, 'macerate_logs')
+
+	// Create macerator recipes for softwood
+	event.recipes.gtceu.macerator('macerate_softwood')
+		.itemInputs('#tfg:softwood')
+		.itemOutputs('6x gtceu:wood_dust')
+		.chancedOutput('gtceu:wood_dust', 8000, 680)
+		.duration(70)
+		.EUt(2)
+
 	//Create identical macerator recipe for hardwood
 	event.recipes.gtceu.macerator('macerate_hardwood')
 		.itemInputs('#tfg:hardwood')

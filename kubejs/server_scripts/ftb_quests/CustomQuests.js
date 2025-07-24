@@ -1,3 +1,5 @@
+"use strict";
+
 // Handles the quest for drinking water. The drinking water quest checks if the player has this stage.
 ItemEvents.firstRightClicked(evt =>
 {

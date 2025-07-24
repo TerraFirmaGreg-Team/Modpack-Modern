@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerTFGItems = (event) => {
 
@@ -12,6 +13,8 @@ const registerTFGItems = (event) => {
 	event.create('tfg:unfinished_basic_electronic_circuit', 'create:sequenced_assembly')
 	event.create('tfg:unfinished_inscriber_accumulation_press')
 	event.create('tfg:vitrified_pearl')
+	event.create('tfg:cryo_fluix_pearl')
+		.translationKey('tfg:cryo_fluix_pearl')
 	// #endregion
 
 	// #region Space
@@ -344,4 +347,14 @@ const registerTFGItems = (event) => {
 	event.create('tfg:aes_insulation_roll')
 		.translationKey('tfg:aes_insulation_roll')
 	//endregion
+	
+	//Tier 2 Rocket Parts
+	event.create('tfg:rocket_fin_t2')
+		.translationKey('tfg:rocket_fin_t2')
+	event.create('tfg:rocket_cone_t2')
+		.translationKey('tfg:rocket_cone_t2')
+	//endregion
 }
+
+	
+

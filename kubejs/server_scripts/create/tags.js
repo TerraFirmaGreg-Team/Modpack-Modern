@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerCreateItemTags = (event) => {
 
@@ -95,6 +96,8 @@ const registerCreateBlockTags = (event) => {
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/river_water')
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/salt_water')
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/spring_water')
+
+	event.add('create:chest_mounted_storage', '#forge:chests/wooden')
 }
 
 

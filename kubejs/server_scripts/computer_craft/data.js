@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerComputerCraftData = (event) => {
     const TURTLE_TOOL_TYPES = [ GTToolType.SWORD, GTToolType.PICKAXE, GTToolType.AXE, GTToolType.SHOVEL, GTToolType.HOE ]

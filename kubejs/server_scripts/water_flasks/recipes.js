@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerWaterFlasksRecipes = (event) => {
 
@@ -76,26 +77,28 @@ const registerWaterFlasksRecipes = (event) => {
 	}).id('tfg:shaped/iron_flask')
 
 	event.remove({ id: 'waterflasks:crafting/repair_broken_iron' })
-	event.shaped('waterflasks:iron_flask', [
-		'AB',
-		'CD'
-	], {
-		A: 'waterflasks:broken_iron_flask',
-		B: 'waterflasks:bladder',
-		C: '#forge:cloth',
-		D: '#forge:tools/knives'
-	}).id('tfg:shaped/repair_broken_iron')
+	event.recipes.tfc.no_remainder_shaped_crafting(
+		event.shaped('waterflasks:iron_flask', [
+			'AB',
+			'CD'
+		], {
+			A: 'waterflasks:broken_iron_flask',
+			B: 'waterflasks:bladder',
+			C: '#forge:cloth',
+			D: '#forge:tools/knives'
+		})).id('tfg:shaped/repair_broken_iron')
 
 	event.remove({ id: 'waterflasks:crafting/repair_iron' })
-	event.shaped('waterflasks:iron_flask', [
-		'AB',
-		'CD'
-	], {
-		A: 'waterflasks:iron_flask',
-		B: 'waterflasks:bladder',
-		C: '#forge:cloth',
-		D: '#forge:tools/knives'
-	}).id('tfg:shaped/repair_iron')
+	event.recipes.tfc.no_remainder_shaped_crafting(
+		event.shaped('waterflasks:iron_flask', [
+			'AB',
+			'CD'
+		], {
+			A: 'waterflasks:iron_flask',
+			B: 'waterflasks:bladder',
+			C: '#forge:cloth',
+			D: '#forge:tools/knives'
+		})).id('tfg:shaped/repair_iron')
 
 	event.remove({ id: 'waterflasks:crafting/red_steel_flask' })
 	event.shaped('waterflasks:red_steel_flask', [

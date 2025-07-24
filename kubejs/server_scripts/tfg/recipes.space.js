@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function registerTFGSpaceRecipes(event) {
 
@@ -252,4 +253,13 @@ function registerTFGSpaceRecipes(event) {
 		.circuit(2)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.HV])
+		
+	//Cryo Fluix Pearl
+	event.recipes.gtceu.autoclave('tfg:cryo_fluix_pearl')
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 576))
+		.itemInputs('tfg:vitrified_pearl')
+		.itemOutputs('tfg:cryo_fluix_pearl')
+		.duration(300)
+		.EUt(GTValues.VA[GTValues.EV])
+		.cleanroom(CleanroomType.CLEANROOM)
 }

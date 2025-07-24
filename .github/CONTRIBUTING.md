@@ -257,6 +257,11 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
 
 - #### Localization: 
   - If you're looking for Localizing the modpack to a Language, please feel free to head to the [Tools-Modern]
+- #### Linting & Typescript support
+  - Install NodeJS and use an editor with Typescript and ESLint support (e.g. Visual Studio Code).
+  - Run `npm init`, and create a project with default options. (required for language support to work properly)
+  - Run `npm install --save-dev eslint@latest @eslint/js@latest @stylistic/eslint-plugin`
+  - To enable type annotations & diagnostics, run [ProbeJS] and set `noCheck: false` in tsconfig.json.
 
 ---
 

@@ -1,3 +1,5 @@
+"use strict";
+
 const registerMeasurementsRecipes = (event) => {
 
     event.remove({ mod: 'measurements' })

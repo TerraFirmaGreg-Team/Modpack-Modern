@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerAdAstraMaterials = (event) => {
 
@@ -22,6 +23,7 @@ const registerAdAstraMaterials = (event) => {
 		.ore()
 		.addOreByproducts('olivine', 'rutile', 'rutile')
 		.ingot()
+		.liquid()
 		.blastTemp(2000, 'low', GTValues.VA[GTValues.MV])
 		.flags(
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
@@ -29,7 +31,8 @@ const registerAdAstraMaterials = (event) => {
 			GTMaterialFlags.GENERATE_ROD,
 			GTMaterialFlags.GENERATE_DENSE,
 			GTMaterialFlags.GENERATE_GEAR,
-			GTMaterialFlags.GENERATE_FRAME
+			GTMaterialFlags.GENERATE_FRAME,
+			GTMaterialFlags.DISABLE_ALLOY_BLAST
 		)
 
 	// mars?

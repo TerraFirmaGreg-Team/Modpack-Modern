@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function registerGreateRecipes(event) {
 	
@@ -513,7 +514,7 @@ function registerGreateRecipes(event) {
 
 	event.recipes.gtceu.assembler('polyethylene_belt_connector')
 		.itemInputs('#forge:plates/styrene_butadiene_rubber')
-		.itemOutputs('greate:rubber_polyethylene_belt_connectorbelt_connector')
+		.itemOutputs('greate:polyethylene_belt_connector')
 		.circuit(11)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.LV])

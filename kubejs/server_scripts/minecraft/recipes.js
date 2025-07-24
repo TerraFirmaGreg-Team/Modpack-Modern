@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 /**
  * 
@@ -602,7 +603,7 @@ const registerMinecraftRecipes = (event) => {
 	event.recipes.gtceu.assembler('hopper_wrought_iron')
 		.itemInputs('#forge:chests', '5x #forge:plates/wrought_iron')
 		.itemOutputs('minecraft:hopper')
-		.circuit(8)
+		.circuit(32)
 		.duration(700)
 		.EUt(2)
 
@@ -647,20 +648,50 @@ const registerMinecraftRecipes = (event) => {
 
 	//#region Выход: Наблюдатель
 
+	event.shaped('minecraft:observer', [
+		'AAA',
+		'BBC',
+		'AAA'
+	], {
+		A: '#forge:cobblestone',
+		B: 'minecraft:redstone',
+		C: '#forge:gems/certus_quartz'
+	}).id('tfg:shaped/observer_certus_q')
+
+	event.shaped('minecraft:observer', [
+		'AAA',
+		'BBC',
+		'AAA'
+	], {
+		A: '#forge:cobblestone',
+		B: 'minecraft:redstone',
+		C: '#forge:gems/nether_quartz'
+	}).id('tfg:shaped/observer_nether_q')
+
+	event.shaped('minecraft:observer', [
+		'AAA',
+		'BBC',
+		'AAA'
+	], {
+		A: '#forge:cobblestone',
+		B: 'minecraft:redstone',
+		C: '#forge:gems/quartzite'
+	}).id('tfg:shaped/observer_quartzite')
+
 	event.recipes.gtceu.assembler('observer_certus_quartz')
-		.itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#forge:plates/certus_quartz')
+		.itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#forge:gems/certus_quartz')
 		.itemOutputs('minecraft:observer')
 		.duration(100)
 		.EUt(30)
 
 	event.recipes.gtceu.assembler('observer_nether_quartz')
-		.itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#forge:plates/nether_quartz')
+		.itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#forge:gems/nether_quartz')
 		.itemOutputs('minecraft:observer')
 		.duration(100)
 		.EUt(30)
 
 	event.recipes.gtceu.assembler('observer_quartzite')
-		.itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#forge:plates/quartzite')
+		.itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#forge:gems/quartzite')
 		.itemOutputs('minecraft:observer')
 		.duration(100)
 		.EUt(30)

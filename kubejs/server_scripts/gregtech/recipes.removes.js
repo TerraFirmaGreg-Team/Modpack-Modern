@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function removeGTCEURecipes(event) {
 
@@ -647,6 +648,7 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_treated_wood_chest_boat')
 
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__ender_eye' })
 
 	event.remove({ id: 'gtceu:smelting/sticky_resin_from_slime' })
 
@@ -668,9 +670,27 @@ function removeGTCEURecipes(event) {
 
 	event.remove({ id: 'gtceu:rock_breaker/red_granite' })
 
+	// who the hell is grinding metal ingots with their bare hands?
+	event.remove({ id: 'gtceu:shaped/mortar_grind_antimony' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_copper' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_gold' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_iron' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_lead' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_nickel' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_silver' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_tin' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_zinc' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_annealed_copper' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_brass' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_bronze' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_electrum' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_invar' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_steel' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_wrought_iron' })
+
 	// Replace by the Heat Exchanger recipe for Mars
 	event.remove({ id: 'gtceu:fluid_heater/formamide' })
-
+	
 	// Snow Stuffs
 
 	event.remove({ id: 'gtceu:fluid_solidifier/snow_block' })
@@ -701,6 +721,8 @@ function removeGTCEURecipes(event) {
 		event.remove({ id: `gtceu:shaped/${material}_pressure_plate` })
 		event.remove({ id: `gtceu:assembler/${material}_pressure_plate` })	
 	})
+	
+	event.remove({ output: 'gtceu:damascus_steel_crowbar'})
 }
 
 function removeMaceratorRecipe(event, id) {

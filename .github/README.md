@@ -64,9 +64,10 @@ Want to help translate? Please read [this](../kubejs/README%20IF%20TRANSLATING.m
 
 <h2 align="center">External Credits and Special Thanks</h2>
 
-- WithersChat from the Monifactory team for the universal circuit textures.
-- GregTech Community Pack Modern for most of their quest text.
-- Better End for some assets.
+- WithersChat from the [Monifactory](https://www.curseforge.com/minecraft/modpacks/monifactory) team for the universal circuit textures.
+- [GregTech Community Pack Modern](https://www.curseforge.com/minecraft/modpacks/gregtech-community-pack-modern) for most of their quest text.
+- [Better End](https://www.curseforge.com/minecraft/mc-mods/betterend) for some assets.
+- Uni for Mars' dunes terrain generation.
 
 <!-- Links: -->
 [TerraFirmaCraft]: https://www.curseforge.com/minecraft/mc-mods/terrafirmacraft
