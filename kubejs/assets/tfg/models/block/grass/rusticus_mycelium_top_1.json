@@ -1,0 +1,7 @@
+{
+  "parent": "tfc:block/grass_top",
+    "textures": {
+        "overlay": "tfg:block/grass/rusticus_top_1",
+        "particle": "tfg:block/grass/rusticus_top_1"
+    }
+}
