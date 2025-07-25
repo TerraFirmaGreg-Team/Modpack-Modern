@@ -12,13 +12,12 @@ concurrency:
 
 env:
   DEV_ENVIRONMENT: ${{ github.ref_name != 'main' }}
-  IS_REPO_OWNER: ${{ github.repository_owner == 'TerraFirmaGreg-Team' }}
 
 jobs:    
   info:
     name: 🖥️ Project Info
     runs-on: ubuntu-latest
-    if: ${{ env.IS_REPO_OWNER }}
+    if: ${{  github.repository_owner == 'TerraFirmaGreg-Team' }}
     outputs:
       project_version: ${{ steps.check.outputs.project_version }}
       project_name: ${{ steps.check.outputs.project_name }}
