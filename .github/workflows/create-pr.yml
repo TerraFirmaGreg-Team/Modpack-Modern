@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - dev
-    # paths-ignore:
-    #   - '**'
-    #   - '!CHANGELOG.md'
+    paths-ignore:
+      - '**'
+      - '!CHANGELOG.md'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}

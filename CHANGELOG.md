@@ -1,8 +1,6 @@
 # Changelog
 
 ## [Unreleased]
-
-## [0.10.4] - 29-07-2025
 ### Changes
 - Added block interactions for mossy cobble (#1434) @Redeix
 - Clipboards are now craftable earlier (#1432) @Pyritie
@@ -10,7 +8,6 @@
 - Pushed a patch to fix registry errors on Linux machines. If you are still receiving these errors please report it [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/issues/1431) (#1434) @Redeix
 - Fixed a broken link in the papermaking field guide entry (#1426) @Pyritie
 - Fixed small springs melting into twice as much as they should (#1435) @Pyritie
-- test
 
 ## [0.10.3] - 23-07-2025
 ### Changes
