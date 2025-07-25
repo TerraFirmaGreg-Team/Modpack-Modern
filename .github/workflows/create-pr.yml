@@ -1,4 +1,4 @@
-name: Project Build
+name: Create Release PR
 run-name: "👾 Create Release PR"
 on:
   push:
