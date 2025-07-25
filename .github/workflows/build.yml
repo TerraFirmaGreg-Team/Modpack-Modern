@@ -260,11 +260,11 @@ jobs:
           target_branch: main
           reviewer: Xikaro
           ignore_users: "dependabot"
-          title: 'Release: ${{ needs.info.outputs.project_version }}'
+          title: 'Release: ${{ steps.changelog.outputs.version }}'
           body: |
             **This is an automated Pull Request from the dev branch.**
             📃 **Name**: ${{ needs.info.outputs.project_name }}
-            📃 **Release**:  `${{ needs.info.outputs.project_version }}`
+            📃 **Release**:  `${{ steps.changelog.outputs.version }}`
             📃 **Release Type**: `${{ needs.info.outputs.release_type }}`
 
             ${{ needs.info.outputs.changelog }}
