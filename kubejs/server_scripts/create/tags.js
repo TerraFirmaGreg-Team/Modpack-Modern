@@ -98,6 +98,7 @@ const registerCreateBlockTags = (event) => {
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/spring_water')
 
 	event.add('create:chest_mounted_storage', '#forge:chests/wooden')
+	event.add('create:chest_mounted_storage', 'framedblocks:framed_chest')
 }
 
 
@@ -123,5 +124,6 @@ const registerCreateFluidTags = (event) => {
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:spring_water')
 
 	//Hose Pulley Infinites
+	event.add('create:bottomless/allow', 'tfg:semiheavy_ammoniacal_water')
 	event.remove('create:bottomless/allow', 'minecraft:lava')
 }
