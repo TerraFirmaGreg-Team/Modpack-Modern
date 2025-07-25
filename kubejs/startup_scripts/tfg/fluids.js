@@ -32,11 +32,6 @@ const registerTFGFluids = (event) => {
 		.noBlock()
 
 	//#region Mars
-	event.create('tfg:heavy_water')
-		.thinTexture(0x4da193)
-		.color(0x4da193)
-		.temperature(213)
-		.renderType('translucent')
 	//#endregion
 
 	//#region Venus
