@@ -6,6 +6,7 @@ on:
       - dev
     paths-ignore:
       - '**'
+      - '.github/workflows/create-pr.yml'
       - '!CHANGELOG.md'
 
 concurrency:
@@ -73,12 +74,6 @@ jobs:
               core.setFailed(`❌ PR check failed: ${error}`);
               core.setOutput('exists', true);
             }
-
-      - name: 🔍 Debug outputs
-        run: |
-          echo "Tag exists: ${{ steps.check_tag.outputs.exists }}"
-          echo "PR exists: ${{ steps.check_existing_pr.outputs.exists }}"
-          echo "Changelog version: ${{ steps.changelog.outputs.version }}"
 
       - name: 🔍 Create Pull Request if tag not found
         if: ${{ steps.check_existing_pr.outputs.exists == 'false' }}
