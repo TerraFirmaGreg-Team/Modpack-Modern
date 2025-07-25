@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## [0.10.4] - 23-07-2025
+## [0.10.4] - 29-07-2025
 ### Changes
 - Added block interactions for mossy cobble (#1434) @Redeix
 - Clipboards are now craftable earlier (#1432) @Pyritie
