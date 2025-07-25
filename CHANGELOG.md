@@ -10,7 +10,6 @@
 - Added a temporary workaround for the blue steel diving suit not protecting from lava (#1361) @Pyritie
 - Fixed a broken link in the papermaking field guide entry (#1426) @Pyritie
 - Fixed small springs melting into twice as much as they should (#1435) @Pyritie
-- Fixed black bronze drums not having a temperature limit (#1429) @Pyritie
 - Fixed framed item frames having the same crafting ratio as regular ones (#1427) @Pyritie
 - Fixed a recipe conflict with kaolinite powder and fire clay in an alloy smelter @Pyritie
 - Fixed some mixing bowl recipes with too many outputs @Pyritie
