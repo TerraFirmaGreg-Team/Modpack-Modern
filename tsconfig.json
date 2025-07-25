@@ -18,6 +18,7 @@
         "allowUnreachableCode": false,
 
         // Type checking options, only disable if probeJS installed
+        "noCheck": true,
 
         "strict": true,
         "noImplicitAny": true,

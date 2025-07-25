@@ -47,13 +47,13 @@ const generateMixerRecipe = (event, input, fluid_input, output, circuit, fluid_o
  * @param {string} id -Recipe ID
  */
 const generateCutterRecipe = (event, input, output, duration, EUt, id) => {
-
 	event.recipes.gtceu.cutter(`tfg:${id}`)
 		.itemInputs(input)
 		.itemOutputs(output)
 		.duration(duration)
 		.EUt(EUt)
 }
+
 //#endregion
 
 //#region Green House
@@ -67,12 +67,13 @@ const generateCutterRecipe = (event, input, output, duration, EUt, id) => {
  * @param {string} id -Recipe ID
  * @param {string} dimension -Dimension ID
  * @param {number} fertiliser_count
- * @param {string} output_seconday -Item (Optional, if there should be a third output)
- * @param {string} tier - GTValues.VA[] (Optional, defaults to LV)
+ * @param {string|null} output_seconday -Item (Optional, if there should be a third output)
+ * @param {number} EUt
  */
-const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimension, fertiliser_count, output_secondary, tier) => {
-
-	// Без удобрения (Without fertilizer)
+function generateGreenHouseRecipe(event, input, fluid_amount, output, id, dimension, fertiliser_count, output_secondary, EUt) {
+	if (EUt === undefined || output_secondary === undefined || fertiliser_count === undefined || dimension === undefined) {
+		throw new TypeError(`Call to generateGreenHouseRecipe for id ${id} is missing args`);
+	}
 	let r = event.recipes.gtceu.greenhouse(id)
 		.notConsumable(input)
 		.circuit(1)
@@ -82,17 +83,11 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimens
 		.chancedOutput(input, 500, 0)
 		.duration(36000) // 30 mins
 
-	if (dimension !== null){
-		r.dimension(dimension)
-	}
-	if (output_secondary !== null){
-		r.chancedOutput(output_secondary, 750, 0)
-	}
-	if (tier !== null){
-		r.EUt(tier)
-	} else {
-		r.EUt(GTValues.VA[GTValues.LV])
-	}
+
+	if (dimension !== null)r.dimension(dimension)
+	if (output_secondary !== null) r.chancedOutput(output_secondary, 750, 0)
+	
+		r.EUt(EUt)
 
 	// С удобрением (With fertilizer)
 	r = event.recipes.gtceu.greenhouse(`${id}_fertilized`)
@@ -105,17 +100,9 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimens
 		.chancedOutput(input, 3000, 0)
 		.duration(12000) // 10 mins
 
-	if (dimension !== null){
-		r.dimension(dimension)
-	}
-	if (output_secondary !== null){
-		r.chancedOutput(output_secondary, 4000, 0)
-	}
-	if (tier !== null){
-		r.EUt(tier)
-	} else {
-		r.EUt(GTValues.VA[GTValues.LV])
-	}
+	if (dimension !== null) r.dimension(dimension)
+	if (output_secondary !== null) r.chancedOutput(output_secondary, 4000, 0)
+	r.EUt(EUt)
 }
 //#endregion
 
@@ -142,7 +129,7 @@ const getFillingNBT = (material, amount) => {
  * Function for generating plated block recipes.
  *
  * @param {*} event 
- * @param {GTMaterials} material 
+ * @param {GTMaterial} material 
  */
 function generatePlatedBlockRecipe(event, material) {
 	// firmaciv plated blocks don't have this property

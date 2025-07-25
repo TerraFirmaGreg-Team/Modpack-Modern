@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS_} event 
+ */
 const registerAdAstraRecipes = (event) => {
 
 	event.remove({ mod: 'ad_astra' })
