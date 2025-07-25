@@ -86,6 +86,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_branch: dev
           target_branch: main
+          reviewer: Xikaro
+          ignore_users: "dependabot"
           title: 'Release: ${{ steps.changelog.outputs.version }}'
           body: |
             **This is an automated Pull Request from the dev branch.**
