@@ -5617,7 +5617,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftb-library-forge-2001.2.9.jar",
+                    "file_name": "ftb-library-forge-2001.2.10.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5625,18 +5625,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6164/53/ftb-library-forge-2001.2.9.jar",
-                    "id": "6164053",
+                    "url": "https://edge.forgecdn.net/files/6807/424/ftb-library-forge-2001.2.10.jar",
+                    "id": "6807424",
                     "parent_id": "404465",
                     "hashes": {
-                        "sha1": "42639a90f91c79d6b323ede5e229a79c050f4dc7",
-                        "md5": "cdf8b270d3ee2c403a26206b10e0a749"
+                        "sha1": "9472bb30d0e38cb774b9cc7852bdd8dbf845622b",
+                        "md5": "ae5292127a5a0d85d793bbce8f1e24dd"
                     },
                     "required_dependencies": [
                         "419699"
                     ],
-                    "size": 791841,
-                    "date_published": "2025-02-06T12:34:16.087Z"
+                    "size": 791875,
+                    "date_published": "2025-07-24T16:54:08.133Z"
                 }
             ]
         },
@@ -11831,29 +11831,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "sound-physics-remastered-forge-1.20.1-1.4.13.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/6399/601/sound-physics-remastered-forge-1.20.1-1.4.13.jar",
-                    "id": "6399601",
-                    "parent_id": "535489",
-                    "hashes": {
-                        "sha1": "0851097c159a0498620e8cd307ab7d26c6fcc57b",
-                        "md5": "60f4782d630d473a4bc6547369c286db"
-                    },
-                    "required_dependencies": [],
-                    "size": 204480,
-                    "date_published": "2025-04-08T16:04:46.963Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "sound-physics-remastered-forge-1.20.1-1.4.13.jar",
+                    "file_name": "sound-physics-remastered-forge-1.20.1-1.4.15.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11861,16 +11840,37 @@
                         "forge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/qyVF9oeo/versions/fqgMU03D/sound-physics-remastered-forge-1.20.1-1.4.13.jar",
-                    "id": "fqgMU03D",
+                    "url": "https://cdn.modrinth.com/data/qyVF9oeo/versions/o4QlRA76/sound-physics-remastered-forge-1.20.1-1.4.15.jar",
+                    "id": "o4QlRA76",
                     "parent_id": "qyVF9oeo",
                     "hashes": {
-                        "sha512": "3840428a7b9e065e380b5fc59a134e7c9aa3b46c0c491724534274eb709a1927be5ab6473a8a38f60bdb16e128174a1bae432e81e86a622b7d2b75e4aa961998",
-                        "sha1": "d662aa77d89d48ce254421d064476d0f15c3f11f"
+                        "sha512": "bf13d3ab4df46d446067b8bf648a84c57a5c0aa134118967a85397fc732df4689e6fa15db1728995ae06c39e0bdbd54bbdff7ee044b67a1f3f513a289e47fe60",
+                        "sha1": "990bd9caa7c4394e66d379263139495a27147a67"
                     },
                     "required_dependencies": [],
-                    "size": 204480,
-                    "date_published": "2025-04-08T16:04:58.342578Z"
+                    "size": 204487,
+                    "date_published": "2025-07-25T07:23:13.030771Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "sound-physics-remastered-forge-1.20.1-1.4.15.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "alpha",
+                    "url": "https://edge.forgecdn.net/files/6809/408/sound-physics-remastered-forge-1.20.1-1.4.15.jar",
+                    "id": "6809408",
+                    "parent_id": "535489",
+                    "hashes": {
+                        "sha1": "a1678721a328eb2e68c259b208e8043cca606dd5",
+                        "md5": "bf2e072b924a55422849f6c126bd2455"
+                    },
+                    "required_dependencies": [],
+                    "size": 204486,
+                    "date_published": "2025-07-25T07:22:50.880Z"
                 }
             ]
         },
@@ -13374,7 +13374,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.4.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13383,23 +13383,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/WS91llWg/TerraFirmaGreg-Core-Modern-0.7.4.jar",
-                    "id": "WS91llWg",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/k3OZlwbT/TerraFirmaGreg-Core-Modern-0.7.5.jar",
+                    "id": "k3OZlwbT",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "9bc36f5bfcd91d8feedd3b8c4a4f16a73a66e6bd29d5aa69019ba542b6d52a982ddc002266514c65ba4760d3c191a579e269bc6a07c84381f47ba710b93aeca4",
-                        "sha1": "80831501fc25852f9b8bc682efb84cf1d6477b25"
+                        "sha512": "5092b312fd99c514096151737a01f846aab134c7ea3fd63398d18596fadb0452b1291f55d943249bf3f9e5e3d870dc78f7f21a73b812e5674cf55463a1acee67",
+                        "sha1": "e601fec291fdcb93110d880b73a647201ab260b5"
                     },
                     "required_dependencies": [
                         "JaCEZUhg",
                         "7tG215v7"
                     ],
-                    "size": 453335,
-                    "date_published": "2025-07-23T19:10:58.887028Z"
+                    "size": 459039,
+                    "date_published": "2025-07-25T20:21:55.177760Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.4.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13408,19 +13408,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6804/121/TerraFirmaGreg-Core-Modern-0.7.4.jar",
-                    "id": "6804121",
+                    "url": "https://edge.forgecdn.net/files/6811/416/TerraFirmaGreg-Core-Modern-0.7.5.jar",
+                    "id": "6811416",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "80831501fc25852f9b8bc682efb84cf1d6477b25",
-                        "md5": "f86aea5b855207ba7a50616e74c86579"
+                        "sha1": "e601fec291fdcb93110d880b73a647201ab260b5",
+                        "md5": "21d09a094c8f86f31f702113c6c3bf61"
                     },
                     "required_dependencies": [
                         "890405",
                         "302973"
                     ],
-                    "size": 453335,
-                    "date_published": "2025-07-23T19:10:57.027Z"
+                    "size": 459039,
+                    "date_published": "2025-07-25T20:21:53.920Z"
                 }
             ]
         },
