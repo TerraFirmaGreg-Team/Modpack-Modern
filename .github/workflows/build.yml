@@ -31,7 +31,7 @@ jobs:
       make_pr: ${{ steps.check.outputs.make_pr }}
     
     steps:
-      - name: Checkout
+      - name: 📦 Checkout
         uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 0
@@ -215,6 +215,9 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ needs.info.outputs.make_pr == 'true' }}
     steps:
+
+      - name: 📦 Checkout
+        uses: actions/checkout@v4.2.2
       
       - name: 🔍 Check existing PRs
         id: check_existing_pr
@@ -234,18 +237,18 @@ jobs:
 
                 if (prs.length > 0) {
                   console.log(`ℹ️ Found existing PR from dev to main: ${prs[0].html_url}`);
-                  core.setOutput('exists', 'true');
-                } else {
                   core.setOutput('exists', 'false');
+                } else {
+                  core.setOutput('exists', 'true');
                 }
               } catch (error) {
                 core.setFailed(`❌ Failed to check existing PRs: ${error}`);
-                core.setOutput('exists', 'error');
+                core.setOutput('exists', 'false');
               }
 
 
       - name: 📄 Create Pull Request if tag not found
-        if: ${{ !steps.check_existing_pr.outputs.result }}
+        if: ${{ steps.check_existing_pr.outputs.result }}
         uses: devops-infra/action-pull-request@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
