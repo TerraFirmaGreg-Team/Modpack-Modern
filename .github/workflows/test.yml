@@ -1,0 +1,26 @@
+name: Project Modpack News
+run-name: "📰 Project Modpack News #${{ github.run_number }}"
+on:
+  workflow_dispatch:
+    inputs:
+      project_version:
+        required: true
+        type: string
+
+jobs:   
+  discord-message:
+    name: 📱 Discord Message
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: 📨 Send Discord message
+        uses: hugoalh/send-discord-webhook-ghaction@v7.0.5
+        with:
+          key: ${{ secrets.DISCORD_RELEASES }}
+          username: "TerraFirmaGreg"
+          avatar_url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo.png"
+          allowed_mentions_parse_roles: true
+          allowed_mentions_roles: 1377790507790368868
+          content_links_no_embed: .+
+          content: |
+            "test"
