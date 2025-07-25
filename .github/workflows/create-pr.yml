@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - dev
-    paths-ignore:
-      - '**'
-      - '!CHANGELOG.md'
+    # paths-ignore:
+    #   - '**'
+    #   - '!CHANGELOG.md'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
@@ -20,6 +20,8 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
 
       - name: 📊 Get Pakku Info
         id: pakku_info
@@ -53,24 +55,32 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          result-encoding: string
           script: |
+            try {
               const { data: prs } = await github.rest.pulls.list({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  state: 'open',
-                  head: `${context.repo.owner}:dev`,
-                  base: 'main'
-                });
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'open',
+                head: `${context.repo.owner}:dev`,
+                base: 'main'
+              });
 
-                if (prs.length > 0) {
-                  console.log(`ℹ️ Found existing PR from dev to main: ${prs[0].html_url}`);
-                  core.setOutput('exists', 'true');
-                } else {
-                  core.setOutput('exists', 'false');
-                }
+              core.setOutput('exists', prs.length > 0);
+              console.log(`ℹ️ PR exists: ${prs.length > 0}`);
+            } catch (error) {
+              core.setFailed(`❌ PR check failed: ${error}`);
+              core.setOutput('exists', true);
+            }
+
+      - name: 🔍 Debug outputs
+        run: |
+          echo "Tag exists: ${{ steps.check_tag.outputs.exists }}"
+          echo "PR exists: ${{ steps.check_existing_pr.outputs.exists }}"
+          echo "Changelog version: ${{ steps.changelog.outputs.version }}"
 
       - name: 🔍 Create Pull Request if tag not found
-        if: ${{ !steps.check_existing_pr.outputs.exists }}
+        if: ${{ steps.check_existing_pr.outputs.exists == 'false' }}
         uses: devops-infra/action-pull-request@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
