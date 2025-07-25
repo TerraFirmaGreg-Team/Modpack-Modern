@@ -1215,13 +1215,14 @@ const registerCreateRecipes = (event) => {
 
 	// Дневник
 	event.shaped('create:clipboard', [
-		'A',
-		'B',
-		'C'
+		' AD',
+		' B ',
+		' C '
 	], {
-		A: '#forge:bolts/wrought_iron',
-		B: '#forge:plates/wood',
-		C: 'minecraft:paper'
+		A: '#forge:small_springs',
+		B: '#tfc:lumber',
+		C: 'minecraft:paper',
+		D: '#forge:bolts'
 	}).id('tfg:create/shaped/clipboard')
 
 	// Лестница из железа
