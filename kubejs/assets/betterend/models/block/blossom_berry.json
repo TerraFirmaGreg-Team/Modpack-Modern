@@ -1,0 +1,56 @@
+{
+	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "betterend:block/blossom_berry_flower",
+		"stem": "betterend:block/blossom_berry_stem",
+		"flower": "betterend:block/blossom_berry_flower",
+		"texture": "betterend:block/blossom_berry_fruit"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "PlaneX1",
+			"from": [ 2.25, 0, 2.25 ],
+			"to": [ 2.251, 16, 18.25 ],
+			"rotation": { "origin": [ 2.25, 0, 2.25 ], "axis": "y", "angle": 45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#stem" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#stem" }
+			}
+		},
+		{
+			"__comment": "PlaneX1",
+			"from": [ 13.75, 0, 2.25 ],
+			"to": [ 13.751, 16, 18.25 ],
+			"rotation": { "origin": [ 13.75, 0, 2.25 ], "axis": "y", "angle": -45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#stem" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#stem" }
+			}
+		},
+		{
+			"__comment": "PlaneY3",
+			"from": [ 0, 12, 0 ],
+			"to": [ 16, 12.001, 16 ],
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#flower" },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#flower" }
+			}
+		},
+		{
+			"__comment": "Box4",
+			"from": [ 5, 11, 5 ],
+			"to": [ 11, 17, 11 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 6, 6 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 0, 6, 6 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 0, 6, 6 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 0, 6, 6 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 0, 6, 6 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 0, 6, 6 ], "texture": "#texture" }
+			}
+		}
+	]
+}

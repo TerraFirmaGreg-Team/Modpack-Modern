@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"down": "block/end_stone",
+		"east": "betterend:block/rutiscus_side_1",
+		"north": "betterend:block/rutiscus_side_1",
+		"particle": "betterend:block/rutiscus_side_1",
+		"south": "betterend:block/rutiscus_side_1",
+		"up": "betterend:block/rutiscus_top_1",
+		"west": "betterend:block/rutiscus_side_1"
+	}
+}

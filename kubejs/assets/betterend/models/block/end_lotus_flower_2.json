@@ -1,0 +1,8 @@
+{
+	"parent": "betterend:block/end_lotus_flower",
+	"textures": {
+		"particle": "betterend:block/end_lotus_center_2",
+		"texture": "betterend:block/end_lotus_center_2",
+		"petal": "betterend:block/end_lotus_petal_2"
+	}
+}
