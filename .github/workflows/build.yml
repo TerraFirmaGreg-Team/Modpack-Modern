@@ -213,7 +213,7 @@ jobs:
     name: 🤝 Create Release PR
     needs: [info]
     runs-on: ubuntu-latest
-    if: ${{ needs.info.outputs.make_pr == 'true' && needs.info.outputs.release_type != 'Unreleased' }}
+    if: ${{ needs.info.outputs.make_pr == 'true' }}
     steps:
       
       - name: 🔍 Check existing PRs
