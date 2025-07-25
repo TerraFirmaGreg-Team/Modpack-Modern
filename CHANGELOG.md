@@ -1,6 +1,6 @@
 # Changelog
 ## [Unreleased]
-## Changes
+### Changes
 - Added block interactions for mossy cobble (#1434) @Redeix
 - Clipboards are now craftable earlier (#1432) @Pyritie
 ### Bug fixes
