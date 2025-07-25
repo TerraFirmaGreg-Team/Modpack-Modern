@@ -551,68 +551,68 @@ function registerTFGMiscellaneousRecipes(event) {
 		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
 		.inputFluids(Fluid.of('gtceu:seed_oil', 6000))
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
-		.duration(20 * 30)
+		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_reactor(`olive_oil_alcohol_biodiesel`)
 		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
 		.inputFluids(Fluid.of('tfc:olive_oil', 4000))
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
-		.duration(20 * 30)
+		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_reactor(`soybean_oil_alcohol_biodiesel`)
 		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
 		.inputFluids(Fluid.of('firmalife:soybean_oil', 4000))
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
-		.duration(20 * 30)
+		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_reactor(`fish_oil_alcohol_biodiesel`)
 		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
 		.inputFluids(Fluid.of('gtceu:fish_oil', 6000))
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
-		.duration(20 * 30)
+		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_reactor(`olive_oil_ethanol_biodiesel`)
 		.inputFluids(Fluid.of('tfc:olive_oil', 4000), Fluid.of('gtceu:ethanol', 1000))
 		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
 		.outputFluids(Fluid.of('gtceu:glycerol'), Fluid.of('gtceu:bio_diesel', 6000))
-		.duration(20 * 30)
+		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.chemical_reactor(`olive_oil_methanol_biodiesel`)
 		.inputFluids(Fluid.of('tfc:olive_oil', 4000), Fluid.of('gtceu:methanol', 1000))
 		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
 		.outputFluids(Fluid.of('gtceu:glycerol'), Fluid.of('gtceu:bio_diesel', 6000))
-		.duration(20 * 30)
+		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.chemical_reactor(`soybean_oil_ethanol_biodiesel`)
 		.inputFluids(Fluid.of('firmalife:soybean_oil', 4000), Fluid.of('gtceu:ethanol', 1000))
 		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
 		.outputFluids(Fluid.of('gtceu:glycerol'), Fluid.of('gtceu:bio_diesel', 6000))
-		.duration(20 * 30)
+		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.chemical_reactor(`soybean_oil_methanol_biodiesel`)
 		.inputFluids(Fluid.of('firmalife:soybean_oil', 4000), Fluid.of('gtceu:methanol', 1000))
 		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
 		.outputFluids(Fluid.of('gtceu:glycerol'), Fluid.of('gtceu:bio_diesel', 6000))
-		.duration(20 * 30)
+		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.extractor(`rapeseed_oil`)
 		.itemInputs('tfg:rapeseed_product')
 		.outputFluids(Fluid.of('gtceu:seed_oil', 600))
-		.duration(20 * 30)
+		.duration(20 * 5)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.extractor(`sunflower_oil`)
 		.itemInputs('tfg:sunflower_product')
 		.outputFluids(Fluid.of('gtceu:seed_oil', 350))
-		.duration(20 * 30)
+		.duration(20 * 5)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.tfc.barrel_sealed(1000)
@@ -739,6 +739,42 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(100)
 		.EUt(30)
 
+	//Cryo Pearl replacements
+    event.shaped('gtceu:ev_emitter', [
+		'ABC',
+		'BDB',
+		'CBA'
+	], {
+		A: '#forge:single_cables/aluminium',
+		B: '#forge:rods/platinum',
+		C: '#gtceu:circuits/ev',
+		D: 'tfg:cryo_fluix_pearl'
+	}).id('gtceu:shaped/emitter_ev')
+
+	event.recipes.gtceu.assembler('emitter_ev')
+		.itemInputs('tfg:cryo_fluix_pearl', '4x #forge:rods/platinum', '2x #gtceu:circuits/ev', '2x #forge:single_cables/aluminium')
+		.itemOutputs('gtceu:ev_emitter')
+		.circuit(1)
+		.duration(100)
+		.EUt(30)
+
+	event.shaped('gtceu:ev_sensor', [
+		'A B',
+		'AC ',
+		'DAA'
+	], {
+		A: '#forge:plates/titanium',
+		B: 'tfg:cryo_fluix_pearl',
+		C: '#forge:rods/platinum',
+		D: '#gtceu:circuits/ev',
+	}).id('gtceu:shaped/sensor_ev')
+
+	event.recipes.gtceu.assembler('sensor_ev')
+		.itemInputs('tfg:cryo_fluix_pearl', '#forge:rods/platinum', '#gtceu:circuits/ev', '4x #forge:plates/titanium')
+		.itemOutputs('gtceu:ev_sensor')
+		.duration(100)
+		.EUt(30)
+	
 	// Temporary
 	event.recipes.gtceu.chemical_bath('quantum_eye')
 		.itemInputs('tfg:vitrified_pearl')

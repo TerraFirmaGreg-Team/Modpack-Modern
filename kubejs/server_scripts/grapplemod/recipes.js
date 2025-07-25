@@ -264,7 +264,14 @@ function registerGrapplingHookRecipes(event) {
 
     event.remove({mod: 'grapplemod'})
 
-    event.recipes.kubejs.shapeless('grapplemod:grapplinghook', ['gtceu:wrought_iron_pickaxe_head', 'firmaciv:rope_coil', 'firmaciv:rope_coil', 'firmaciv:rope_coil', 'firmaciv:rope_coil'])
+    event.recipes.kubejs.shaped('grapplemod:grapplinghook', [
+        'A',
+        'B',
+        'B'
+    ], {
+        A: 'gtceu:wrought_iron_pickaxe_head',
+        B: 'firmaciv:rope_coil'
+    })
     .modifyResult((craftingGrid, result) => {
         let grappleCustomization = new $GrappleCustomization();
         grappleCustomization.setDefaults();

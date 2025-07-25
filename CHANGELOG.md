@@ -1,8 +1,27 @@
 # Changelog
 ## [Unreleased]
+
+## [0.10.3] - 23-07-2025
 ### Changes
+- Reduced duration of biodiesel recipes @Pyritie
+- Changed some options of a performance mod, let us know if you find any weird issues! (#1410) @victordlp8
+- Added mortar and pestel recipes for grain to flour @Pyritie
+- Added in-world shift + right-click interactions for bricks. Greens can be used to turn bricks into mossy bricks, and a knife reverts it. Hammers make cracked bricks and mortar repairs them. (#1416) @Redeix
+- Steam can now be pumped into Blaze Burners via the Straw (#1379) @Nyonyix
+- Replaced moon skeletons with Strays @Pyritie
+- Replaced Beneath cave endermen with a different, passive one (same loot table though) @Pyritie
+- Added sandpaper recipes for early game gems @Pyritie
+- Unified observer recipes @Pyritie
 ### Bug fixes
 - Fixed butchery knife crafting recipe (#1405) @Pyritie
+- Fixed new extruder molds missing a tag to work with the curving press (#1412) @Forsuin
+- Fixed contraptions no longer understanding TFC chests @Pyritie
+- Fixed ice never melting in the overworld (#1408) @Pyritie
+- Removed most empty tag recipes (#1420) @BlueBoat29
+- Fixed Styrene Butadiene Belt recipe (#1421) @BlueBoat29
+- Fixed deer dropping camelidae meat with a butchery knife @Pyritie
+- Fixed gas pressurizer machine not having a GUI (#1425) @Pyritie
+- Fixed recipe conflict with hoppers and ULV machine casings (#1423) @Pyritie
 
 ## [0.10.2] - 20-07-2025
 ### Changes

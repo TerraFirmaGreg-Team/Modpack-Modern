@@ -1,14 +1,14 @@
 {
-	"sea_level": 32,
+	"sea_level": 80,
 	"disable_mob_generation": false,
-	"aquifers_enabled": false,
+	"aquifers_enabled": true,
 	"ore_veins_enabled": false,
 	"legacy_random_source": false,
 	"default_block": {
 		"Name": "ad_astra:mars_stone"
 	},
 	"default_fluid": {
-		"Name": "minecraft:air"
+		"Name": "tfg:semiheavy_ammoniacal_water"
 	},
 	"noise": {
 		"min_y": -32,
@@ -18,10 +18,31 @@
 	},
 	"noise_router": {
 		"barrier": {
-			"type": "minecraft:noise",
-			"noise": "minecraft:aquifer_barrier",
-			"xz_scale": 1,
-			"y_scale": 0.5
+			"type": "minecraft:mul",
+			"argument1": {
+				"type": "minecraft:noise",
+				"noise": "minecraft:aquifer_barrier",
+				"xz_scale": 1,
+				"y_scale": 0.5
+			},
+			"argument2": {
+				"type": "minecraft:spline",
+				"spline": {
+					"coordinate": "tfg:mars/continents",
+					"points": [
+						{
+							"derivative": 0.0,
+							"location": -0.19,
+							"value": -1
+						},
+						{
+							"derivative": 0.0,
+							"location": -0.18,
+							"value": 1
+						}
+					]
+				}
+			}
 		},
 		"continents": "tfg:mars/continents",
 		"depth": 0,
@@ -44,7 +65,7 @@
 									"type": "minecraft:mul",
 									"argument1": {
 										"type": "minecraft:y_clamped_gradient",
-										"from_y": -32,
+										"from_y": -28,
 										"to_y": -20,
 										"from_value": 0,
 										"to_value": 1
@@ -82,10 +103,52 @@
 
 		},
 		"fluid_level_floodedness": {
-			"type": "minecraft:noise",
-			"noise": "minecraft:aquifer_fluid_level_floodedness",
-			"xz_scale": 1,
-			"y_scale": 0.67
+			"type": "minecraft:add",
+			"argument1": {
+				"type": "minecraft:spline",
+				"spline": {
+					"coordinate": "tfg:mars/continents",
+					"points": [
+						{
+							"derivative": 0.0,
+							"location": -0.15,
+							"value": -1
+						},
+						{
+							"derivative": 0.0,
+							"location": -0.14,
+							"value": 0
+						}
+					]
+				}
+			},
+			"argument2": {
+				"type": "minecraft:mul",
+				"argument1": {
+					"type": "minecraft:noise",
+					"noise": "minecraft:aquifer_fluid_level_floodedness",
+					"xz_scale": 1,
+					"y_scale": 0.67
+				},
+				"argument2": {
+					"type": "minecraft:spline",
+					"spline": {
+						"coordinate": "tfg:mars/continents",
+						"points": [
+							{
+								"derivative": 0.0,
+								"location": -0.15,
+								"value": 0
+							},
+							{
+								"derivative": 0.0,
+								"location": -0.14,
+								"value": 1
+							}
+						]
+					}
+				}
+			}
 		},
 		"fluid_level_spread": {
 			"type": "minecraft:noise",
@@ -95,61 +158,82 @@
 		},
 		"initial_density_without_jaggedness": {
 			"type": "minecraft:add",
-			"argument1": 0.1171875,
-			"argument2": {
-				"type": "minecraft:mul",
-				"argument1": {
-					"type": "minecraft:y_clamped_gradient",
-					"from_value": 0.0,
-					"from_y": -32,
-					"to_value": 1.0,
-					"to_y": -20
-				},
+			"argument1": {
+				"type": "minecraft:add",
+				"argument1": 0.1171875,
 				"argument2": {
-					"type": "minecraft:add",
-					"argument1": -0.1171875,
+					"type": "minecraft:mul",
+					"argument1": {
+						"type": "minecraft:y_clamped_gradient",
+						"from_value": 0.0,
+						"from_y": -64,
+						"to_value": 1.0,
+						"to_y": -40
+					},
 					"argument2": {
 						"type": "minecraft:add",
-						"argument1": -0.078125,
+						"argument1": -0.1171875,
 						"argument2": {
-							"type": "minecraft:mul",
-							"argument1": {
-								"type": "minecraft:y_clamped_gradient",
-								"from_value": 1.0,
-								"from_y": 240,
-								"to_value": 0.0,
-								"to_y": 256
-							},
+							"type": "minecraft:add",
+							"argument1": -0.078125,
 							"argument2": {
-								"type": "minecraft:add",
-								"argument1": 0.078125,
+								"type": "minecraft:mul",
+								"argument1": {
+									"type": "minecraft:y_clamped_gradient",
+									"from_value": 1.0,
+									"from_y": 240,
+									"to_value": 0.0,
+									"to_y": 256
+								},
 								"argument2": {
-									"type": "minecraft:clamp",
-									"input": {
-										"type": "minecraft:add",
-										"argument1": -0.703125,
-										"argument2": {
-											"type": "minecraft:mul",
-											"argument1": 4.0,
+									"type": "minecraft:add",
+									"argument1": 0.078125,
+									"argument2": {
+										"type": "minecraft:clamp",
+										"input": {
+											"type": "minecraft:add",
+											"argument1": -0.703125,
 											"argument2": {
-												"type": "minecraft:quarter_negative",
-												"argument": {
-													"type": "minecraft:mul",
-													"argument1": "tfg:mars/depth",
-													"argument2": {
-														"type": "minecraft:cache_2d",
-														"argument": "tfg:mars/factor"
+												"type": "minecraft:mul",
+												"argument1": 4.0,
+												"argument2": {
+													"type": "minecraft:quarter_negative",
+													"argument": {
+														"type": "minecraft:mul",
+														"argument1": "tfg:mars/depth",
+														"argument2": {
+															"type": "minecraft:cache_2d",
+															"argument": "tfg:mars/factor"
+														}
 													}
 												}
 											}
-										}
-									},
-									"max": 64.0,
-									"min": -32.0
+										},
+										"max": 64.0,
+										"min": -64.0
+									}
 								}
 							}
 						}
 					}
+				}
+			},
+			"argument2": {
+				"type": "minecraft:spline",
+				"spline": {
+					"coordinate": "tfg:mars/continents",
+					"points": [
+						{
+							"derivative": 0.0,
+							"location": -0.18,
+							"value": 1
+						},
+						{
+							"derivative": 0.0,
+							"location": -0.17,
+							"value": 0
+						}
+					]
 				}
 			}
 		},
@@ -201,108 +285,6 @@
 			},
 
 
-
-
-			{
-				"type": "minecraft:condition",
-				"if_true": {
-					"type": "minecraft:biome",
-					"biome_is": [
-						"tfg:mars/martian_mountains"
-					]
-				},
-				"then_run": {
-					"type": "minecraft:condition",
-					"if_true": {
-						"type": "minecraft:stone_depth",
-						"offset": 0,
-						"surface_type": "floor",
-						"add_surface_depth": false,
-						"secondary_depth_range": 0
-					},
-					"then_run": {
-						"type": "minecraft:block",
-						"result_state": {
-							"Name": "minecraft:red_concrete"
-						}
-					}
-				}
-			},
-			{
-				"type": "minecraft:condition",
-				"if_true": {
-					"type": "minecraft:biome",
-					"biome_is": [
-						"tfg:mars/martian_hills"
-					]
-				},
-				"then_run": {
-					"type": "minecraft:condition",
-					"if_true": {
-						"type": "minecraft:stone_depth",
-						"offset": 0,
-						"surface_type": "floor",
-						"add_surface_depth": false,
-						"secondary_depth_range": 0
-					},
-					"then_run": {
-						"type": "minecraft:block",
-						"result_state": {
-							"Name": "minecraft:orange_concrete"
-						}
-					}
-				}
-			},
-			{
-				"type": "minecraft:condition",
-				"if_true": {
-					"type": "minecraft:biome",
-					"biome_is": [
-						"tfg:mars/martian_forests"
-					]
-				},
-				"then_run": {
-					"type": "minecraft:condition",
-					"if_true": {
-						"type": "minecraft:stone_depth",
-						"offset": 0,
-						"surface_type": "floor",
-						"add_surface_depth": false,
-						"secondary_depth_range": 0
-					},
-					"then_run": {
-						"type": "minecraft:block",
-						"result_state": {
-							"Name": "minecraft:yellow_concrete"
-						}
-					}
-				}
-			},
-			{
-				"type": "minecraft:condition",
-				"if_true": {
-					"type": "minecraft:biome",
-					"biome_is": [
-						"tfg:mars/martian_plains"
-					]
-				},
-				"then_run": {
-					"type": "minecraft:condition",
-					"if_true": {
-						"type": "minecraft:stone_depth",
-						"offset": 0,
-						"surface_type": "floor",
-						"add_surface_depth": false,
-						"secondary_depth_range": 0
-					},
-					"then_run": {
-						"type": "minecraft:block",
-						"result_state": {
-							"Name": "minecraft:lime_concrete"
-						}
-					}
-				}
-			},
 			{
 				"type": "minecraft:condition",
 				"if_true": {
@@ -323,11 +305,12 @@
 					"then_run": {
 						"type": "minecraft:block",
 						"result_state": {
-							"Name": "minecraft:light_blue_glazed_terracotta"
+							"Name": "minecraft:blue_glazed_terracotta"
 						}
 					}
 				}
 			},
+
 			{
 				"type": "minecraft:condition",
 				"if_true": {
@@ -353,34 +336,10 @@
 					}
 				}
 			},
-			{
-				"type": "minecraft:condition",
-				"if_true": {
-					"type": "minecraft:biome",
-					"biome_is": [
-						"tfg:mars/martian_oasis"
-					]
-				},
-				"then_run": {
-					"type": "minecraft:condition",
-					"if_true": {
-						"type": "minecraft:stone_depth",
-						"offset": 0,
-						"surface_type": "floor",
-						"add_surface_depth": false,
-						"secondary_depth_range": 0
-					},
-					"then_run": {
-						"type": "minecraft:block",
-						"result_state": {
-							"Name": "minecraft:magenta_concrete"
-						}
-					}
-				}
-			},
 
 
 			{
+				"_": "SAND + SAND STONE HARDENING",
 				"type": "minecraft:condition",
 				"if_true": {
 					"type": "minecraft:biome",
@@ -390,144 +349,214 @@
 					]
 				},
 				"then_run": {
-					"type": "minecraft:sequence",
-					"sequence": [
-						{
-							"type": "minecraft:condition",
-							"if_true": {
-								"type": "minecraft:stone_depth",
-								"offset": 2,
-								"surface_type": "floor",
-								"add_surface_depth": false,
-								"secondary_depth_range": 0
-							},
-							"then_run": {
-								"type": "minecraft:sequence",
-								"sequence": [
-									{
-										"type": "minecraft:sequence",
-										"sequence": [
-											{
-												"type": "minecraft:condition",
-												"if_true": {
-													"type": "minecraft:noise_threshold",
-													"noise": "tfg:mars_dunes_color",
-													"min_threshold": -2.0,
-													"max_threshold": -0.4
-												},
-												"then_run": {
-													"type": "minecraft:block",
-													"result_state": {
-														"Name": "ad_astra:venus_sand"
-													}
-												}
-											},
-											{
-												"type": "minecraft:condition",
-												"if_true": {
-													"type": "minecraft:noise_threshold",
-													"noise": "tfg:mars_dunes_color",
-													"min_threshold": -0.4,
-													"max_threshold": 0.05
-												},
-												"then_run": {
-													"type": "minecraft:block",
-													"result_state": {
-														"Name": "ad_astra:mars_sand"
-													}
-												}
-											},
-											{
-												"type": "minecraft:condition",
-												"if_true": {
-													"type": "minecraft:noise_threshold",
-													"noise": "tfg:mars_dunes_color",
-													"min_threshold": 0.05,
-													"max_threshold": 2.0
-												},
-												"then_run": {
-													"type": "minecraft:block",
-													"result_state": {
-														"Name": "minecraft:red_sand"
-													}
-												}
-											}
-										]
-									}
-								]
-							}
+					"type": "minecraft:condition",
+					"if_true": {
+						"type": "minecraft:y_above",
+						"anchor": {
+							"absolute": 50
 						},
-						{
-							"type": "minecraft:condition",
-							"if_true": {
-								"type": "minecraft:stone_depth",
-								"offset": 6,
-								"surface_type": "floor",
-								"add_surface_depth": false,
-								"secondary_depth_range": 0
-							},
-							"then_run": {
-								"type": "minecraft:sequence",
-								"sequence": [
-									{
-										"type": "minecraft:sequence",
-										"sequence": [
-											{
-												"type": "minecraft:condition",
-												"if_true": {
-													"type": "minecraft:noise_threshold",
-													"noise": "tfg:mars_dunes_color",
-													"min_threshold": -2.0,
-													"max_threshold": -0.4
-												},
-												"then_run": {
-													"type": "minecraft:block",
-													"result_state": {
-														"Name": "ad_astra:venus_sandstone"
-													}
-												}
+						"surface_depth_multiplier": 0,
+						"add_stone_depth": false
+					},
+					"then_run": {
+						"type": "minecraft:sequence",
+						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "ceiling",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:noise_threshold",
+												"noise": "tfg:mars_dunes_color",
+												"min_threshold": -2.0,
+												"max_threshold": -0.4
 											},
-											{
-												"type": "minecraft:condition",
-												"if_true": {
-													"type": "minecraft:noise_threshold",
-													"noise": "tfg:mars_dunes_color",
-													"min_threshold": -0.4,
-													"max_threshold": 0.05
-												},
-												"then_run": {
-													"type": "minecraft:block",
-													"result_state": {
-														"Name": "ad_astra:mars_stone"
-													}
-												}
-											},
-											{
-												"type": "minecraft:condition",
-												"if_true": {
-													"type": "minecraft:noise_threshold",
-													"noise": "tfg:mars_dunes_color",
-													"min_threshold": 0.05,
-													"max_threshold": 2.0
-												},
-												"then_run": {
-													"type": "minecraft:block",
-													"result_state": {
-														"Name": "minecraft:red_sandstone"
-													}
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": {
+													"Name": "ad_astra:venus_sandstone"
 												}
 											}
-										]
-									}
-								]
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:noise_threshold",
+												"noise": "tfg:mars_dunes_color",
+												"min_threshold": -0.4,
+												"max_threshold": 0.05
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": {
+													"Name": "ad_astra:mars_stone"
+												}
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:noise_threshold",
+												"noise": "tfg:mars_dunes_color",
+												"min_threshold": 0.05,
+												"max_threshold": 2.0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": {
+													"Name": "minecraft:red_sandstone"
+												}
+											}
+										}
+									]
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 2,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:sequence",
+											"sequence": [
+												{
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:noise_threshold",
+														"noise": "tfg:mars_dunes_color",
+														"min_threshold": -2.0,
+														"max_threshold": -0.4
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "ad_astra:venus_sand"
+														}
+													}
+												},
+												{
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:noise_threshold",
+														"noise": "tfg:mars_dunes_color",
+														"min_threshold": -0.4,
+														"max_threshold": 0.05
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "ad_astra:mars_sand"
+														}
+													}
+												},
+												{
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:noise_threshold",
+														"noise": "tfg:mars_dunes_color",
+														"min_threshold": 0.05,
+														"max_threshold": 2.0
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "minecraft:red_sand"
+														}
+													}
+												}
+											]
+										}
+									]
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 6,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:sequence",
+											"sequence": [
+												{
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:noise_threshold",
+														"noise": "tfg:mars_dunes_color",
+														"min_threshold": -2.0,
+														"max_threshold": -0.4
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "ad_astra:venus_sandstone"
+														}
+													}
+												},
+												{
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:noise_threshold",
+														"noise": "tfg:mars_dunes_color",
+														"min_threshold": -0.4,
+														"max_threshold": 0.05
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "ad_astra:mars_stone"
+														}
+													}
+												},
+												{
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:noise_threshold",
+														"noise": "tfg:mars_dunes_color",
+														"min_threshold": 0.05,
+														"max_threshold": 2.0
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "minecraft:red_sandstone"
+														}
+													}
+												}
+											]
+										}
+									]
+								}
 							}
-						}
-					]
+						]
+					}
 				}
 			},
-
-
 			{
+				"_": "BOTTOM ROCK LAYER + HARDENING",
 				"type": "minecraft:condition",
 				"if_true": {
 					"type": "minecraft:vertical_gradient",
@@ -912,6 +941,7 @@
 				}
 			},
 			{
+				"_": "MIDDLE ROCK LAYER + HARDENING",
 				"type": "minecraft:condition",
 				"if_true": {
 					"type": "minecraft:vertical_gradient",
@@ -1296,6 +1326,7 @@
 				}
 			},
 			{
+				"_": "TOP ROCK LAYER FOR MOUNTAINS + HARDENING",
 				"type": "minecraft:condition",
 				"if_true": {
 					"type": "minecraft:biome",
@@ -1483,6 +1514,470 @@
 				}
 			},
 			{
+				"_": "STONE HARDENING ON THE TOP LAYER",
+				"type": "minecraft:sequence",
+				"sequence": [
+					{
+						"type": "minecraft:condition",
+						"if_true": {
+							"type": "minecraft:noise_threshold",
+							"noise": "tfg:stone_layer_mars_1",
+							"min_threshold": -1.0,
+							"max_threshold": -0.15
+						},
+						"then_run": {
+							"type": "minecraft:sequence",
+							"sequence": [
+								{
+									"type": "minecraft:condition",
+									"if_true": {
+										"type": "minecraft:noise_threshold",
+										"noise": "tfg:stone_layer_mars_2",
+										"min_threshold": -1.0,
+										"max_threshold": -0.15
+									},
+									"then_run": {
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:stone_depth",
+											"offset": 0,
+											"surface_type": "ceiling",
+											"add_surface_depth": false,
+											"secondary_depth_range": 0
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfc:rock/hardened/chalk"
+											}
+										}
+									}
+								},
+								{
+									"type": "minecraft:condition",
+									"if_true": {
+										"type": "minecraft:noise_threshold",
+										"noise": "tfg:stone_layer_mars_2",
+										"min_threshold": -0.2,
+										"max_threshold": 0.2
+									},
+									"then_run": {
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:stone_depth",
+											"offset": 0,
+											"surface_type": "ceiling",
+											"add_surface_depth": false,
+											"secondary_depth_range": 0
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfc:rock/hardened/shale"
+											}
+										}
+									}
+								},
+								{
+									"type": "minecraft:condition",
+									"if_true": {
+										"type": "minecraft:noise_threshold",
+										"noise": "tfg:stone_layer_mars_2",
+										"min_threshold": 0.15,
+										"max_threshold": 1.0
+									},
+									"then_run": {
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:stone_depth",
+											"offset": 0,
+											"surface_type": "ceiling",
+											"add_surface_depth": false,
+											"secondary_depth_range": 0
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfc:rock/hardened/dolomite"
+											}
+										}
+									}
+								}
+							]
+						}
+					},
+					{
+						"type": "minecraft:condition",
+						"if_true": {
+							"type": "minecraft:noise_threshold",
+							"noise": "tfg:stone_layer_mars_1",
+							"min_threshold": -0.2,
+							"max_threshold": 0.2
+						},
+						"then_run": {
+							"type": "minecraft:sequence",
+							"sequence": [
+								{
+									"type": "minecraft:condition",
+									"if_true": {
+										"type": "minecraft:noise_threshold",
+										"noise": "tfg:stone_layer_mars_2",
+										"min_threshold": -1.0,
+										"max_threshold": -0.15
+									},
+									"then_run": {
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:stone_depth",
+											"offset": 0,
+											"surface_type": "ceiling",
+											"add_surface_depth": false,
+											"secondary_depth_range": 0
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfc:rock/hardened/limestone"
+											}
+										}
+									}
+								},
+								{
+									"type": "minecraft:condition",
+									"if_true": {
+										"type": "minecraft:noise_threshold",
+										"noise": "tfg:stone_layer_mars_2",
+										"min_threshold": -0.2,
+										"max_threshold": 0.2
+									},
+									"then_run": {
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:stone_depth",
+											"offset": 0,
+											"surface_type": "ceiling",
+											"add_surface_depth": false,
+											"secondary_depth_range": 0
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfg:rock/hardened_mars_stone"
+											}
+										}
+									}
+								},
+								{
+									"type": "minecraft:condition",
+									"if_true": {
+										"type": "minecraft:noise_threshold",
+										"noise": "tfg:stone_layer_mars_2",
+										"min_threshold": 0.15,
+										"max_threshold": 1.0
+									},
+									"then_run": {
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:stone_depth",
+											"offset": 0,
+											"surface_type": "ceiling",
+											"add_surface_depth": false,
+											"secondary_depth_range": 0
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfc:rock/hardened/claystone"
+											}
+										}
+									}
+								}
+							]
+						}
+					},
+					{
+						"type": "minecraft:condition",
+						"if_true": {
+							"type": "minecraft:noise_threshold",
+							"noise": "tfg:stone_layer_mars_1",
+							"min_threshold": 0.15,
+							"max_threshold": 1.0
+						},
+						"then_run": {
+							"type": "minecraft:sequence",
+							"sequence": [
+								{
+									"type": "minecraft:condition",
+									"if_true": {
+										"type": "minecraft:noise_threshold",
+										"noise": "tfg:stone_layer_mars_2",
+										"min_threshold": -1.0,
+										"max_threshold": -0.15
+									},
+									"then_run": {
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:stone_depth",
+											"offset": 0,
+											"surface_type": "ceiling",
+											"add_surface_depth": false,
+											"secondary_depth_range": 0
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfc:rock/hardened/conglomerate"
+											}
+										}
+									}
+								},
+								{
+									"type": "minecraft:condition",
+									"if_true": {
+										"type": "minecraft:noise_threshold",
+										"noise": "tfg:stone_layer_mars_2",
+										"min_threshold": -0.2,
+										"max_threshold": 0.2
+									},
+									"then_run": {
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:stone_depth",
+											"offset": 0,
+											"surface_type": "ceiling",
+											"add_surface_depth": false,
+											"secondary_depth_range": 0
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfc:rock/hardened/chert"
+											}
+										}
+									}
+								},
+								{
+									"type": "minecraft:condition",
+									"if_true": {
+										"type": "minecraft:noise_threshold",
+										"noise": "tfg:stone_layer_mars_2",
+										"min_threshold": 0.15,
+										"max_threshold": 1.0
+									},
+									"then_run": {
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:stone_depth",
+											"offset": 0,
+											"surface_type": "ceiling",
+											"add_surface_depth": false,
+											"secondary_depth_range": 0
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfg:rock/hardened_dripstone"
+											}
+										}
+									}
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"_": "AMBER MYCELIUM + DIRT",
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:mars/amber_hills",
+						"tfg:mars/amber_plains"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:condition",
+					"if_true": {
+						"type": "minecraft:above_preliminary_surface"
+					},
+					"then_run": {
+						"type": "minecraft:condition",
+						"if_true": {
+							"type": "minecraft:water",
+							"offset": 0,
+							"surface_depth_multiplier": 0,
+							"add_stone_depth": false
+						},
+						"then_run": {
+							"type": "minecraft:sequence",
+							"sequence": [
+								{
+									"type": "minecraft:condition",
+									"if_true": {
+										"type": "minecraft:stone_depth",
+										"offset": 0,
+										"surface_type": "floor",
+										"add_surface_depth": false,
+										"secondary_depth_range": 0
+									},
+									"then_run": {
+										"type": "minecraft:block",
+										"result_state": {
+											"Name": "tfg:grass/amber_mycelium"
+										}
+									}
+								},
+								{
+									"type": "minecraft:condition",
+									"if_true": {
+										"type": "minecraft:stone_depth",
+										"offset": 2,
+										"surface_type": "floor",
+										"add_surface_depth": false,
+										"secondary_depth_range": 0
+									},
+									"then_run": {
+										"type": "minecraft:block",
+										"result_state": {
+											"Name": "tfg:grass/mars_dirt"
+										}
+									}
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"_": "RUSTICUS MYCELIUM + DIRT",
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:mars/rusticus_hills",
+						"tfg:mars/rusticus_plains"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:condition",
+					"if_true": {
+						"type": "minecraft:above_preliminary_surface"
+					},
+					"then_run": {
+						"type": "minecraft:condition",
+						"if_true": {
+							"type": "minecraft:water",
+							"offset": 0,
+							"surface_depth_multiplier": 0,
+							"add_stone_depth": false
+						},
+						"then_run": {
+							"type": "minecraft:sequence",
+							"sequence": [
+								{
+									"type": "minecraft:condition",
+									"if_true": {
+										"type": "minecraft:stone_depth",
+										"offset": 0,
+										"surface_type": "floor",
+										"add_surface_depth": false,
+										"secondary_depth_range": 0
+									},
+									"then_run": {
+										"type": "minecraft:block",
+										"result_state": {
+											"Name": "tfg:grass/rusticus_mycelium"
+										}
+									}
+								},
+								{
+									"type": "minecraft:condition",
+									"if_true": {
+										"type": "minecraft:stone_depth",
+										"offset": 2,
+										"surface_type": "floor",
+										"add_surface_depth": false,
+										"secondary_depth_range": 0
+									},
+									"then_run": {
+										"type": "minecraft:block",
+										"result_state": {
+											"Name": "tfg:grass/mars_dirt"
+										}
+									}
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"_": "SANGNUM MYCELIUM + DIRT",
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:mars/sangnum_hills",
+						"tfg:mars/sangnum_plains",
+						"tfg:mars/martian_oasis"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:condition",
+					"if_true": {
+						"type": "minecraft:above_preliminary_surface"
+					},
+					"then_run": {
+						"type": "minecraft:condition",
+						"if_true": {
+							"type": "minecraft:water",
+							"offset": 0,
+							"surface_depth_multiplier": 0,
+							"add_stone_depth": false
+						},
+						"then_run": {
+							"type": "minecraft:sequence",
+							"sequence": [
+								{
+									"type": "minecraft:condition",
+									"if_true": {
+										"type": "minecraft:stone_depth",
+										"offset": 0,
+										"surface_type": "floor",
+										"add_surface_depth": false,
+										"secondary_depth_range": 0
+									},
+									"then_run": {
+										"type": "minecraft:block",
+										"result_state": {
+											"Name": "tfg:grass/sangnum_mycelium"
+										}
+									}
+								},
+								{
+									"type": "minecraft:condition",
+									"if_true": {
+										"type": "minecraft:stone_depth",
+										"offset": 2,
+										"surface_type": "floor",
+										"add_surface_depth": false,
+										"secondary_depth_range": 0
+									},
+									"then_run": {
+										"type": "minecraft:block",
+										"result_state": {
+											"Name": "tfg:grass/mars_dirt"
+										}
+									}
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"_": "TOP ROCK LAYER, NO HARDENING",
 				"type": "minecraft:sequence",
 				"sequence": [
 					{
@@ -1510,16 +2005,27 @@
 											{
 												"type": "minecraft:condition",
 												"if_true": {
-													"type": "minecraft:stone_depth",
-													"offset": 0,
-													"surface_type": "ceiling",
-													"add_surface_depth": false,
-													"secondary_depth_range": 0
+													"type": "minecraft:y_above",
+													"anchor": {
+														"absolute": 60
+													},
+													"surface_depth_multiplier": 0,
+													"add_stone_depth": false
 												},
 												"then_run": {
-													"type": "minecraft:block",
-													"result_state": {
-														"Name": "tfc:rock/hardened/chalk"
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:stone_depth",
+														"offset": 5,
+														"surface_type": "floor",
+														"add_surface_depth": false,
+														"secondary_depth_range": 0
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "tfc:rock/gravel/chalk"
+														}
 													}
 												}
 											},
@@ -1546,16 +2052,27 @@
 											{
 												"type": "minecraft:condition",
 												"if_true": {
-													"type": "minecraft:stone_depth",
-													"offset": 0,
-													"surface_type": "ceiling",
-													"add_surface_depth": false,
-													"secondary_depth_range": 0
+													"type": "minecraft:y_above",
+													"anchor": {
+														"absolute": 60
+													},
+													"surface_depth_multiplier": 0,
+													"add_stone_depth": false
 												},
 												"then_run": {
-													"type": "minecraft:block",
-													"result_state": {
-														"Name": "tfc:rock/hardened/shale"
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:stone_depth",
+														"offset": 5,
+														"surface_type": "floor",
+														"add_surface_depth": false,
+														"secondary_depth_range": 0
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "tfc:rock/gravel/shale"
+														}
 													}
 												}
 											},
@@ -1582,16 +2099,27 @@
 											{
 												"type": "minecraft:condition",
 												"if_true": {
-													"type": "minecraft:stone_depth",
-													"offset": 0,
-													"surface_type": "ceiling",
-													"add_surface_depth": false,
-													"secondary_depth_range": 0
+													"type": "minecraft:y_above",
+													"anchor": {
+														"absolute": 60
+													},
+													"surface_depth_multiplier": 0,
+													"add_stone_depth": false
 												},
 												"then_run": {
-													"type": "minecraft:block",
-													"result_state": {
-														"Name": "tfc:rock/hardened/dolomite"
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:stone_depth",
+														"offset": 5,
+														"surface_type": "floor",
+														"add_surface_depth": false,
+														"secondary_depth_range": 0
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "tfc:rock/gravel/dolomite"
+														}
 													}
 												}
 											},
@@ -1632,16 +2160,27 @@
 											{
 												"type": "minecraft:condition",
 												"if_true": {
-													"type": "minecraft:stone_depth",
-													"offset": 0,
-													"surface_type": "ceiling",
-													"add_surface_depth": false,
-													"secondary_depth_range": 0
+													"type": "minecraft:y_above",
+													"anchor": {
+														"absolute": 60
+													},
+													"surface_depth_multiplier": 0,
+													"add_stone_depth": false
 												},
 												"then_run": {
-													"type": "minecraft:block",
-													"result_state": {
-														"Name": "tfc:rock/hardened/limestone"
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:stone_depth",
+														"offset": 5,
+														"surface_type": "floor",
+														"add_surface_depth": false,
+														"secondary_depth_range": 0
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "tfc:rock/gravel/limestone"
+														}
 													}
 												}
 											},
@@ -1668,16 +2207,27 @@
 											{
 												"type": "minecraft:condition",
 												"if_true": {
-													"type": "minecraft:stone_depth",
-													"offset": 0,
-													"surface_type": "ceiling",
-													"add_surface_depth": false,
-													"secondary_depth_range": 0
+													"type": "minecraft:y_above",
+													"anchor": {
+														"absolute": 60
+													},
+													"surface_depth_multiplier": 0,
+													"add_stone_depth": false
 												},
 												"then_run": {
-													"type": "minecraft:block",
-													"result_state": {
-														"Name": "tfg:rock/hardened_mars_stone"
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:stone_depth",
+														"offset": 5,
+														"surface_type": "floor",
+														"add_surface_depth": false,
+														"secondary_depth_range": 0
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "ad_astra:mars_cobblestone"
+														}
 													}
 												}
 											},
@@ -1704,16 +2254,27 @@
 											{
 												"type": "minecraft:condition",
 												"if_true": {
-													"type": "minecraft:stone_depth",
-													"offset": 0,
-													"surface_type": "ceiling",
-													"add_surface_depth": false,
-													"secondary_depth_range": 0
+													"type": "minecraft:y_above",
+													"anchor": {
+														"absolute": 60
+													},
+													"surface_depth_multiplier": 0,
+													"add_stone_depth": false
 												},
 												"then_run": {
-													"type": "minecraft:block",
-													"result_state": {
-														"Name": "tfc:rock/hardened/claystone"
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:stone_depth",
+														"offset": 5,
+														"surface_type": "floor",
+														"add_surface_depth": false,
+														"secondary_depth_range": 0
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "tfc:rock/gravel/claystone"
+														}
 													}
 												}
 											},
@@ -1754,16 +2315,27 @@
 											{
 												"type": "minecraft:condition",
 												"if_true": {
-													"type": "minecraft:stone_depth",
-													"offset": 0,
-													"surface_type": "ceiling",
-													"add_surface_depth": false,
-													"secondary_depth_range": 0
+													"type": "minecraft:y_above",
+													"anchor": {
+														"absolute": 60
+													},
+													"surface_depth_multiplier": 0,
+													"add_stone_depth": false
 												},
 												"then_run": {
-													"type": "minecraft:block",
-													"result_state": {
-														"Name": "tfc:rock/hardened/conglomerate"
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:stone_depth",
+														"offset": 5,
+														"surface_type": "floor",
+														"add_surface_depth": false,
+														"secondary_depth_range": 0
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "tfc:rock/gravel/conglomerate"
+														}
 													}
 												}
 											},
@@ -1790,16 +2362,27 @@
 											{
 												"type": "minecraft:condition",
 												"if_true": {
-													"type": "minecraft:stone_depth",
-													"offset": 0,
-													"surface_type": "ceiling",
-													"add_surface_depth": false,
-													"secondary_depth_range": 0
+													"type": "minecraft:y_above",
+													"anchor": {
+														"absolute": 60
+													},
+													"surface_depth_multiplier": 0,
+													"add_stone_depth": false
 												},
 												"then_run": {
-													"type": "minecraft:block",
-													"result_state": {
-														"Name": "tfc:rock/hardened/chert"
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:stone_depth",
+														"offset": 5,
+														"surface_type": "floor",
+														"add_surface_depth": false,
+														"secondary_depth_range": 0
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "tfc:rock/gravel/chert"
+														}
 													}
 												}
 											},
@@ -1826,16 +2409,27 @@
 											{
 												"type": "minecraft:condition",
 												"if_true": {
-													"type": "minecraft:stone_depth",
-													"offset": 0,
-													"surface_type": "ceiling",
-													"add_surface_depth": false,
-													"secondary_depth_range": 0
+													"type": "minecraft:y_above",
+													"anchor": {
+														"absolute": 60
+													},
+													"surface_depth_multiplier": 0,
+													"add_stone_depth": false
 												},
 												"then_run": {
-													"type": "minecraft:block",
-													"result_state": {
-														"Name": "tfg:rock/hardened_dripstone"
+													"type": "minecraft:condition",
+													"if_true": {
+														"type": "minecraft:stone_depth",
+														"offset": 5,
+														"surface_type": "floor",
+														"add_surface_depth": false,
+														"secondary_depth_range": 0
+													},
+													"then_run": {
+														"type": "minecraft:block",
+														"result_state": {
+															"Name": "tfc:sand/brown"
+														}
 													}
 												}
 											},

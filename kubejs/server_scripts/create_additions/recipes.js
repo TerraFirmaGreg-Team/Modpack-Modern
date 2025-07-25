@@ -211,5 +211,17 @@ const registerCreateAdditionsRecipes = (event) => {
 		},
 		burnTime: 150 * 9 * 9
 	}).id('tfg:createadditions/liquid_burning/seed_oil')
+
+	event.custom({
+		type: 'createaddition:liquid_burning',
+		input: {
+			fluid: 'gtceu:steam',
+			amount: 256
+		},
+		burnTime: 4 * 9 * 9
+	}).id('tfg:createadditions/liquid_burning/steam')
 	//#endregion
+	
+	event.shapeless('createaddition:diamond_grit_sandpaper', ['minecraft:paper', 'tfc:glue', '#forge:dusts/diamond'])
+		.id('tfg:shapeless/diamond_grit_sand_paper')
 }

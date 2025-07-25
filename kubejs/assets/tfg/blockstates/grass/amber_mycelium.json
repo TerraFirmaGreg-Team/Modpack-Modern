@@ -1,0 +1,256 @@
+{
+	"multipart": [
+		{
+			"apply": {
+				"model": "tfg:block/grass/amber_mycelium_top",
+				"x": 90
+			}
+		},
+		{
+			"when": {
+				"snowy": false
+			},
+			"apply": [
+				{
+					"model": "tfg:block/grass/amber_mycelium_top",
+					"x": 270,
+					"y": 90
+				},
+				{
+					"model": "tfg:block/grass/amber_mycelium_top",
+					"x": 270
+				},
+				{
+					"model": "tfg:block/grass/amber_mycelium_top",
+					"x": 270,
+					"y": 180
+				},
+				{
+					"model": "tfg:block/grass/amber_mycelium_top",
+					"x": 270,
+					"y": 270
+				}
+			]
+		},
+		{
+			"when": {
+				"snowy": true
+			},
+			"apply": [
+				{
+					"model": "tfc:block/grass/sandy_loam/snowy_top",
+					"x": 270,
+					"y": 90
+				},
+				{
+					"model": "tfc:block/grass/sandy_loam/snowy_top",
+					"x": 270
+				},
+				{
+					"model": "tfc:block/grass/sandy_loam/snowy_top",
+					"x": 270,
+					"y": 180
+				},
+				{
+					"model": "tfc:block/grass/sandy_loam/snowy_top",
+					"x": 270,
+					"y": 270
+				}
+			]
+		},
+		{
+			"when": {
+				"north": true,
+				"snowy": false
+			},
+			"apply": {
+				"model": "tfg:block/grass/amber_mycelium_top"
+			}
+		},
+		{
+			"when": {
+				"east": true,
+				"snowy": false
+			},
+			"apply": {
+				"model": "tfg:block/grass/amber_mycelium_top",
+				"y": 90
+			}
+		},
+		{
+			"when": {
+				"south": true,
+				"snowy": false
+			},
+			"apply": {
+				"model": "tfg:block/grass/amber_mycelium_top",
+				"y": 180
+			}
+		},
+		{
+			"when": {
+				"west": true,
+				"snowy": false
+			},
+			"apply": {
+				"model": "tfg:block/grass/amber_mycelium_top",
+				"y": 270
+			}
+		},
+		{
+			"when": {
+				"north": true,
+				"snowy": true
+			},
+			"apply": {
+				"model": "tfc:block/grass/sandy_loam/snowy_top"
+			}
+		},
+		{
+			"when": {
+				"east": true,
+				"snowy": true
+			},
+			"apply": {
+				"model": "tfc:block/grass/sandy_loam/snowy_top",
+				"y": 90
+			}
+		},
+		{
+			"when": {
+				"south": true,
+				"snowy": true
+			},
+			"apply": {
+				"model": "tfc:block/grass/sandy_loam/snowy_top",
+				"y": 180
+			}
+		},
+		{
+			"when": {
+				"west": true,
+				"snowy": true
+			},
+			"apply": {
+				"model": "tfc:block/grass/sandy_loam/snowy_top",
+				"y": 270
+			}
+		},
+		{
+			"when": {
+				"north": false,
+				"snowy": false
+			},
+			"apply": [
+				{
+					"model": "tfg:block/grass/amber_mycelium_side_1"
+				},
+				{
+					"model": "tfg:block/grass/amber_mycelium_side_2"
+				},
+				{
+					"model": "tfg:block/grass/amber_mycelium_side_3"
+				}
+			]
+		},
+		{
+			"when": {
+				"east": false,
+				"snowy": false
+			},
+			"apply": [
+				{
+					"model": "tfg:block/grass/amber_mycelium_side_1",
+					"y": 90
+				},
+				{
+					"model": "tfg:block/grass/amber_mycelium_side_2",
+					"y": 90
+				},
+				{
+					"model": "tfg:block/grass/amber_mycelium_side_3",
+					"y": 90
+				}
+			]
+		},
+		{
+			"when": {
+				"south": false,
+				"snowy": false
+			},
+			"apply": [
+				{
+					"model": "tfg:block/grass/amber_mycelium_side_1",
+					"y": 180
+				},
+				{
+					"model": "tfg:block/grass/amber_mycelium_side_2",
+					"y": 180
+				},
+				{
+					"model": "tfg:block/grass/amber_mycelium_side_3",
+					"y": 180
+				}
+			]
+		},
+		{
+			"when": {
+				"west": false,
+				"snowy": false
+			},
+			"apply": [
+				{
+					"model": "tfg:block/grass/amber_mycelium_side_1",
+					"y": 270
+				},
+				{
+					"model": "tfg:block/grass/amber_mycelium_side_2",
+					"y": 270
+				},
+				{
+					"model": "tfg:block/grass/amber_mycelium_side_3",
+					"y": 270
+				}
+			]
+		},
+		{
+			"when": {
+				"north": false,
+				"snowy": true
+			},
+			"apply": {
+				"model": "tfg:block/grass/mars_dirt_snowy_side"
+			}
+		},
+		{
+			"when": {
+				"east": false,
+				"snowy": true
+			},
+			"apply": {
+				"model": "tfg:block/grass/mars_dirt_snowy_side",
+				"y": 90
+			}
+		},
+		{
+			"when": {
+				"south": false,
+				"snowy": true
+			},
+			"apply": {
+				"model": "tfg:block/grass/mars_dirt_snowy_side",
+				"y": 180
+			}
+		},
+		{
+			"when": {
+				"west": false,
+				"snowy": true
+			},
+			"apply": {
+				"model": "tfg:block/grass/mars_dirt_snowy_side",
+				"y": 270
+			}
+		}
+	]
+}
