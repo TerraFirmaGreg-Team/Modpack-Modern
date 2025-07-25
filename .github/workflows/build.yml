@@ -190,7 +190,6 @@ jobs:
             ${{ steps.read_diff.outputs.diff }}
             ```
 
-        
       - name: 📝 Generate Github Summary
         uses: WcAServices/markdown-template-action@v1.1.0
         with:
@@ -209,6 +208,66 @@ jobs:
             ${{ steps.changelog_dev.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
   
+  create-pr:
+    name: 🤝 Create Release PR
+    needs: [info]
+    if: ${{ needs.info.outputs.make_pr == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+
+      - name: 📄 Changelog Parser
+        id: changelog
+        uses: coditory/changelog-parser@v1.0.2
+        with:
+          path: CHANGELOG.md
+        continue-on-error: true
+
+      - name: 🔍 Check existing PRs
+        id: check_existing_pr
+        uses: actions/github-script@v7.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          result-encoding: string
+          script: |
+            try {
+              const { data: prs } = await github.rest.pulls.list({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'open',
+                head: `${context.repo.owner}:dev`,
+                base: 'main'
+              });
+
+              core.setOutput('exists', prs.length > 0);
+              console.log(`ℹ️ PR exists: ${prs.length > 0}`);
+            } catch (error) {
+              core.setFailed(`❌ PR check failed: ${error}`);
+              core.setOutput('exists', true);
+            }
+
+      - name: 🔍 Create Pull Request if tag not found
+        if: ${{ steps.check_existing_pr.outputs.exists == 'false' }}
+        uses: devops-infra/action-pull-request@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          source_branch: dev
+          target_branch: main
+          reviewer: Xikaro
+          ignore_users: "dependabot"
+          title: 'Release: ${{ needs.info.outputs.project_version }}'
+          body: |
+            **This is an automated Pull Request from the dev branch.**
+            📃 **Name**: ${{ needs.info.outputs.project_name }}
+            📃 **Release**:  `${{ needs.info.outputs.project_version }}`
+            📃 **Release Type**: `${{ needs.info.outputs.release_type }}`
+
+            ${{ needs.info.outputs.changelog }}
 
   build-modpack:
     name: 📦 Build Modpack
