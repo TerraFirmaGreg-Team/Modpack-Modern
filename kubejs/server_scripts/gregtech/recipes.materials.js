@@ -365,9 +365,16 @@ function registerGTCEUMetalRecipes(event) {
 			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, crushedOreItem.getCount());
 			hammerRecipe.chancedOutput(gemItem, 7500, 950)
 
+			event.recipes.greate.pressing(Item.of(gemItem).withChance(0.75), poorOreItem)
+				.recipeTier(1)
+				.id(`greate:pressing/poor_raw_${material.getName()}_to_gem`)
+
 		} else {
 			hammerRecipe.chancedOutput(crushedOreItem, 7500, 950)
 
+			event.recipes.greate.pressing(Item.of(crushedOreItem).withChance(0.75), poorOreItem)
+				.recipeTier(1)
+				.id(`greate:pressing/poor_raw_${material.getName()}_to_crushed_ore`)
 		}
 
 		// Macerator
@@ -545,7 +552,7 @@ function registerGTCEUMetalRecipes(event) {
 			let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(0, material);
 			const byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)
 
-			event.recipes.greate.splashing([pureOreItem, 'gtceu:stone_dust'], crushedOreItem)
+			event.recipes.greate.splashing([pureOreItem, Item.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'], crushedOreItem)
 				.id(`tfg:splashing/${material.getName()}_purified_ore`)
 
 			// Dropping in water
