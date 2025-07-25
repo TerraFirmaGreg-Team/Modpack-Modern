@@ -244,6 +244,12 @@ const registerTFGItemTags = (event) => {
 	// #region Space blocks
 	event.add('tfg:moon_plants', 'tfg:lunar_roots')
 	event.add('tfg:moon_plants', 'tfg:lunar_sprouts')
+
+	event.add('minecraft:dirt', 'tfg:grass/mars_dirt')
+	event.add('tfc:dirt', 'tfg:grass/mars_dirt')
+	event.add('tfc:grass', 'tfg:grass/amber_mycelium')
+	event.add('tfc:grass', 'tfg:grass/rusticus_mycelium')
+	event.add('tfc:grass', 'tfg:grass/sangnum_mycelium')
 	// #endregion
 
 	// #region 0.7.19 -> 0.9 conversion
@@ -356,8 +362,8 @@ const registerTFGBlockTags = (event) => {
 
 	event.add('tfc:crops', 'tfg:sunflower')	
 	event.add('tfc:mineable_with_sharp_tool','tfg:sunflower')
-	// #region Nether blocks
 
+	// #region Nether blocks
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')
 	event.add('minecraft:moss_replaceable', 'tfg:rock/hardened_deepslate')
 	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_deepslate')
@@ -376,6 +382,22 @@ const registerTFGBlockTags = (event) => {
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_dripstone')
 	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_dripstone')
 	event.add('tfc:rock/hardened', 'tfg:rock/hardened_dripstone')
+	// #endregion
+
+	// #region Mars blocks
+	event.add('minecraft:dirt', 'tfg:grass/mars_dirt')
+	event.add('tfc:dirt', 'tfg:grass/mars_dirt')
+	event.add('tfc:grass', 'tfg:grass/amber_mycelium')
+	event.add('tfc:grass', 'tfg:grass/rusticus_mycelium')
+	event.add('tfc:grass', 'tfg:grass/sangnum_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/amber_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/rusticus_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/sangnum_mycelium')
+	event.add('tfc:can_landslide', 'tfg:grass/mars_dirt')
+	event.add('tfc:can_landslide', 'tfg:grass/amber_mycelium')
+	event.add('tfc:can_landslide', 'tfg:grass/rusticus_mycelium')
+	event.add('tfc:can_landslide', 'tfg:grass/sangnum_mycelium')
+	// #endregion
 
 	event.add('tfg:harvester_harvestable', '#tfc:fruit_tree_leaves')
 	event.add('tfg:harvester_harvestable', '#tfc:berry_bushes')
@@ -388,7 +410,6 @@ const registerTFGBlockTags = (event) => {
 	event.add('forge:mineable/wrench', 'tfg:superconductor_coil_small')
 	event.add('forge:mineable/wrench', 'tfg:electromagnetic_accelerator')
 
-	// #endregion
 }
 //#endregion
 

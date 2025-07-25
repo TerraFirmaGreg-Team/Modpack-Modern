@@ -1,5 +1,22 @@
 # Changelog
+
 ## [Unreleased]
+### Changes
+### Bug fixes
+
+## [0.10.4] - 25-07-2025
+### Changes
+- Added block interactions for mossy cobble (#1434) @Redeix
+- Clipboards are now craftable earlier (#1432) @Pyritie
+### Bug fixes
+- Fixed key bindings being reverted every time you started the game (#1430)
+- Pushed a patch to fix registry errors on Linux machines. If you are still receiving these errors please report it [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/issues/1431) (#1434) @Redeix
+- Added a temporary workaround for the blue steel diving suit not protecting from lava (#1361) @Pyritie
+- Fixed a broken link in the papermaking field guide entry (#1426) @Pyritie
+- Fixed small springs melting into twice as much as they should (#1435) @Pyritie
+- Fixed framed item frames having the same crafting ratio as regular ones (#1427) @Pyritie
+- Fixed a recipe conflict with kaolinite powder and fire clay in an alloy smelter @Pyritie
+- Fixed some mixing bowl recipes with too many outputs @Pyritie
 
 ## [0.10.3] - 23-07-2025
 ### Changes

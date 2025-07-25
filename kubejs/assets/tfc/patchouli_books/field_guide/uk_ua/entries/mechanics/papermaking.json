@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)Папір$() виготовляється з оброблених стебел $(l:mechanics/crops#papyrus)Папірусу$(), з $(l:mechanics/papermaking#parchment)Шкур тварин$(), або $(l:mechanics/papermaking/paperfromwood)в результаті тривалого процесу з використанням певних видів деревини$(). Папір корисний для письмових матеріалів, таких як $(thing)Книги$() і $(thing)Карти$()."
+            "text": "$(thing)Папір$() виготовляється з оброблених стебел $(l:mechanics/crops#papyrus)Папірусу$(), з $(l:mechanics/papermaking#parchment)Шкур тварин$(), або $(l:mechanics/papermaking#paperfromwood)в результаті тривалого процесу з використанням певних видів деревини$(). Папір корисний для письмових матеріалів, таких як $(thing)Книги$() і $(thing)Карти$()."
         },
         {
             "type": "patchouli:crafting",

@@ -217,7 +217,9 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/black')
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/red')
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/pink')
-
+	
+	event.add('tfc:can_carve', '#ad_astra:moon_stone_replaceables')
+	event.add('tfc:can_carve', '#ad_astra:mars_stone_replaceables')
 
 	event.add('minecraft:rabbits_spawnable_on', '#ad_astra:moon_stone_replaceables')
 	event.add('species:limpet_spawnable_on', '#ad_astra:moon_stone_replaceables')
@@ -265,7 +267,6 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:rock_slabs', 'ad_astra:glacio_stone_slab')
 
 	event.add('ad_astra:destroyed_in_space', '#minecraft:saplings')
-	event.remove('ad_astra:destroyed_in_space', 'ad_astra:glacian_leaves')
 }
 
 const registerAdAstraBiomeTags = (event) => {

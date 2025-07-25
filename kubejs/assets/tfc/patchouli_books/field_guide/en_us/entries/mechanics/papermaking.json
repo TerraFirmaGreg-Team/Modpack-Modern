@@ -5,7 +5,7 @@
     "pages": [
       {
         "type": "patchouli:text",
-        "text": "$(thing)Paper$() is either made from the processed stalk of the $(l:mechanics/crops#papyrus)Papyrus$() crop, from $(l:mechanics/papermaking#parchment)Animal Hides$(), or $(l:mechanics/papermaking/paperfromwood)from a lengthy process using specific types of Wood$(). Paper is useful for written materials like $(thing)Books$() and $(thing)Maps$()."
+        "text": "$(thing)Paper$() is either made from the processed stalk of the $(l:mechanics/crops#papyrus)Papyrus$() crop, from $(l:mechanics/papermaking#parchment)Animal Hides$(), or $(l:mechanics/papermaking#paperfromwood)from a lengthy process using specific types of Wood$(). Paper is useful for written materials like $(thing)Books$() and $(thing)Maps$()."
       },
       {
         "type": "patchouli:crafting",
