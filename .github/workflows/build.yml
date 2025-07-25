@@ -237,18 +237,18 @@ jobs:
 
                 if (prs.length > 0) {
                   console.log(`ℹ️ Found existing PR from dev to main: ${prs[0].html_url}`);
-                  core.setOutput('exists', 'false');
-                } else {
                   core.setOutput('exists', 'true');
+                } else {
+                  core.setOutput('exists', 'false');
                 }
               } catch (error) {
                 core.setFailed(`❌ Failed to check existing PRs: ${error}`);
-                core.setOutput('exists', 'false');
+                core.setOutput('exists', 'error');
               }
 
 
       - name: 📄 Create Pull Request if tag not found
-        if: ${{ steps.check_existing_pr.outputs.result }}
+        if: ${{ steps.check_existing_pr.outputs.exists == 'false' }}
         uses: devops-infra/action-pull-request@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
