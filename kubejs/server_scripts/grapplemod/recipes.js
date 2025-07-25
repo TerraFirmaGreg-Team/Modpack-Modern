@@ -209,7 +209,7 @@ function registerGrapplingHookRecipes(event) {
             customization.loadNBT(orig.nbt.getCompound("custom"));
             
             result = grappleCustomizationCallback(customization, orig, result);
-            if (result == null) {
+            if (result === null) {
                 result = fallbackItem;
                 return result;
             }
@@ -245,7 +245,7 @@ function registerGrapplingHookRecipes(event) {
             customization.loadNBT(orig.nbt.getCompound("custom"));
 
             result = grappleCustomizationCallback(customization, orig, result);
-            if (result == null) {
+            if (result === null) {
                 result = fallbackItem;
                 return result;
             }
@@ -353,13 +353,8 @@ function registerGrapplingHookRecipes(event) {
                 return null;
             }
 
-            if (customization.motormaxspeed != motorMaxSpeed) {
-                return null;
-            }
-
-            if (customization.motoracceleration != motorAcceleration) {
-                return null;
-            }
+            if (customization.motormaxspeed !== motorMaxSpeed) return null;
+            if (customization.motoracceleration !== motorAcceleration) return null;
 
             customization.motor = false;
             customization.motormaxspeed = 0;
@@ -443,7 +438,7 @@ function registerGrapplingHookRecipes(event) {
             if (!customization.repel)
                 return null;
             
-            if (customization.repelforce != repelForce) {
+            if (customization.repelforce !== repelForce) {
                 return null;
             }
 
@@ -471,13 +466,9 @@ function registerGrapplingHookRecipes(event) {
         //Remove Magnet
         shapelessUpgradeRecipe([`gtceu:${magnetUpgradeTier.ingotName}`, '#forge:tools/hammers'], (customization, orig, result) => {
             let attractionRadius = magnetUpgradeTier.attractionRadius;
-            if (!customization.attract) {
-                return null;
-            }
-
-            if (customization.attractradius != attractionRadius) {
-                return null;
-            }
+            
+            if (!customization.attract) return null;
+            if (customization.attractradius !== attractionRadius) return null;
 
             customization.attract = false;
             customization.attractradius = attractionRadius;
@@ -490,16 +481,13 @@ function registerGrapplingHookRecipes(event) {
 
     //Set gravity to 0.5
     shapelessUpgradeRecipe(['gtceu:helium_bucket'], (customization, orig, result) => {
-        if (customization.hookgravity != 1) {
-            return null;
-        }
-
+        if (customization.hookgravity !== 1) return null;
         customization.hookgravity = 0.5;
         return result;
     }, `tfg.grapplemod.upgrades.gravity.0.5`).id('tfg:grapplemod/upgrades/gravity/0.5');
     //Set gravity to 1, from 0.5
     shapelessUpgradeRecipe(['minecraft:bucket', '#forge:tools/hammers'], (customization, orig, result) => {
-        if (customization.hookgravity != 0.5) {
+        if (customization.hookgravity !== 0.5) {
             return null;
         }
         customization.hookgravity = 1;
@@ -510,7 +498,7 @@ function registerGrapplingHookRecipes(event) {
 
     //Set gravity to 0
     shapelessUpgradeRecipe(['gtceu:gravitation_engine_unit'], (customization, orig, result) => {
-        if (customization.hookgravity != 1) {
+        if (customization.hookgravity !== 1) {
             return null;
         }
 
@@ -519,7 +507,7 @@ function registerGrapplingHookRecipes(event) {
     }, 'tfg.grapplemod.upgrades.gravity.0').id('tfg:grapplemod/upgrades/gravity/0');
     //Set gravity to 1, from 0
     shapelessUpgradeRecipe(['gtceu:tungsten_block', '#forge:tools/hammers'], (customization, orig, result) => {
-        if (customization.hookgravity != 0) {
+        if (customization.hookgravity !== 0) {
             return null;
         }
 
@@ -534,7 +522,7 @@ function registerGrapplingHookRecipes(event) {
     throwUpgrades.forEach(throwUpgradeType => {
         //Add Throwspeed
         shapelessUpgradeRecipe([`gtceu:${throwUpgradeType.electricTier}_electric_piston`], (customization, orig, result) => {
-            if (customization.throwspeed != 2) {
+            if (customization.throwspeed !== 2) {
                 return null;
             }
 
@@ -546,7 +534,7 @@ function registerGrapplingHookRecipes(event) {
         shapelessUpgradeRecipe([`gtceu:${throwUpgradeType.electricTier}_electric_piston`, '#forge:tools/hammers'], (customization, orig, result) => {
             let throwSpeed = throwUpgradeType.throwSpeed;
             
-            if (customization.throwspeed != throwSpeed) {
+            if (customization.throwspeed !== throwSpeed) {
                 return null;
             }
 

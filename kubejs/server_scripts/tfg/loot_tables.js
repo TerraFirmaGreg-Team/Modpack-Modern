@@ -119,8 +119,8 @@ function registerTFGLoots(event) {
 		event.addBlockLootModifier(glass[0])
 			.addLoot(glass[0])
 		if (glass[1]) {
-			event.addBlockLootModifier(glass[0] + "_pane")
-			.addLoot(glass[0] + "_pane")
+			event.addBlockLootModifier(`${glass[0]  }_pane`)
+			.addLoot(`${glass[0]  }_pane`)
 		}
 		
 	});
@@ -129,25 +129,25 @@ function registerTFGLoots(event) {
 		event.addBlockLootModifier(glass)
 			.matchMainHand(Item.of('tfc:gem_saw'))
 			.addLoot(glass)
-		event.addBlockLootModifier(glass + "_pane")
+		event.addBlockLootModifier(`${glass  }_pane`)
 			.matchMainHand(Item.of('tfc:gem_saw'))
-			.addLoot(glass + "_pane")
+			.addLoot(`${glass  }_pane`)
 		
 	})
 	
 	global.TFC_WOOD_TYPES.forEach(wood => {
-		const id = 'everycomp:c/tfc/' + wood + "_window_pane"
+		const id = `everycomp:c/tfc/${  wood  }_window_pane`
 		event.addBlockLootModifier(id)
 			.addLoot(id)
 	})
 	global.AFC_WOOD_TYPES.forEach(wood => {
-		const id = 'everycomp:c/afc/' + wood + "_window_pane"
+		const id = `everycomp:c/afc/${  wood  }_window_pane`
 		event.addBlockLootModifier(id)
 			.addLoot(id)
 	})
 	
 	global.AD_ASTRA_WOOD.forEach(wood => {
-		const id = 'everycomp:c/ad_astra/' + wood.name + "_window_pane"
+		const id = `everycomp:c/ad_astra/${  wood.name  }_window_pane`
 		event.addBlockLootModifier(id)
 			.addLoot(id)
 	})

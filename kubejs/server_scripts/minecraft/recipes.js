@@ -105,7 +105,7 @@ const registerMinecraftRecipes = (event) => {
 
 		// Обрезанный блок
 		event.recipes.tfc.damage_inputs_shapeless_crafting(
-			event.shapeless('4x ' + element.cutted, [element.block, '#tfc:chisels'])
+			event.shapeless(`4x ${  element.cutted}`, [element.block, '#tfc:chisels'])
 		).id(`tfg:shapeless/cutted_${element.name}`)
 	}
 

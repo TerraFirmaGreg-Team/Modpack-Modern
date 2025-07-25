@@ -73,10 +73,10 @@ const registerCreatedecoRecipes = (event) => {
 	function lampRecipe(output, lampType, lampColor) {
 
 		let replacementLampType = lampType;
-		if (lampType == 'industrial_iron') {
+		if (lampType === 'industrial_iron') {
 			replacementLampType = 'steel';
 		}
-		if (lampType == 'andesite') {
+		if (lampType === 'andesite') {
 			replacementLampType = 'wrought_iron';
 		}
 
@@ -233,7 +233,7 @@ const registerCreatedecoRecipes = (event) => {
 		event.remove({ id: `createdeco:${bar.metal}_trapdoor` })
 		event.remove({ id: `createdeco:${bar.metal}_door` })
 
-		if (bar.metal != 'iron') {
+		if (bar.metal !== 'iron') {
 			event.remove({ type: 'minecraft:stonecutting', output: `createdeco:${bar.metal}_bars` })
 
 			event.recipes.tfc.anvil(`4x createdeco:${bar.metal}_bars`, `#forge:ingots/${bar.material}`, ['shrink_last', 'punch_second_last', 'punch_third_last'])

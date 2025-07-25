@@ -25,7 +25,7 @@ const registerCreateItemTags = (event) => {
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		event.add('tfg:colored_valve_handles', `create:${dye}_valve_handle`)
 
-		if (dye != 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
+		if (dye !== 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
 	})
 
 	event.add('minecraft:trimmable_armor', 'create:copper_diving_helmet')
@@ -85,7 +85,7 @@ const registerCreateBlockTags = (event) => {
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		event.add('tfg:colored_valve_handles', `create:${dye}_valve_handle`)
 
-		if (dye != 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
+		if (dye !== 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
 	})
 
 	// Disable bulk blasting

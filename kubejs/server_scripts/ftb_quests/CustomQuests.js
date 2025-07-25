@@ -10,7 +10,7 @@ ItemEvents.firstRightClicked(evt => {
     const STAGE = "tfg.stages.quests.drank_fresh_water_with_hand";
     const {player, level} = evt;
 
-    if (evt.target.block == null)
+    if (evt.target.block === null)
         return;
     
     //We reach for the "food" compound tag, that contains the tfc thirst.
@@ -31,7 +31,7 @@ ItemEvents.firstRightClicked(evt => {
 
     //As long as our new thirst is greater than our previous, it means we hydrated ourselves. OFC we need to make sure the block clicked was potable.
     let blockID = evt.target.block.id;
-    let isFreshWater = blockID == "minecraft:water" || blockID == "tfc:fluid/river_water";
+    let isFreshWater = blockID === "minecraft:water" || blockID === "tfc:fluid/river_water";
     if (isFreshWater && thirstValue > previousThirstValue && !player.stages.has(STAGE)) {
         player.stages.add(STAGE);
     }

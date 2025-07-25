@@ -1010,11 +1010,11 @@ const registerGTCEURecipes = (event) => {
 	forEachMaterial(material => {
 
 		const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
-		if (tfcProperty == null)
+		if (tfcProperty === null)
 			return;
 
-		const outputMaterial = tfcProperty.getOutputMaterial() == null ? material : tfcProperty.getOutputMaterial()
-		if (outputMaterial == GTMaterials.Iron) {
+		const outputMaterial = tfcProperty.getOutputMaterial() === null ? material : tfcProperty.getOutputMaterial()
+		if (outputMaterial === GTMaterials.Iron) {
 			event.recipes.gtceu.steam_bloomery(`steam_raw_iron_bloom_coal_${material.getName()}`)
 				.itemInputs(ChemicalHelper.get(TagPrefix.dust, material, 1), '#tfc:steam_bloomery_basic_fuels')
 				.itemOutputs('tfc:raw_iron_bloom')
@@ -1136,7 +1136,7 @@ const registerGTCEURecipes = (event) => {
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 
-			let facadeNBT = "{Facade: {Count:1b,id:" + "'" + blockID + "'" + "}}"
+			let facadeNBT = `{Facade: {Count:1b,id:` + `'${  blockID  }'` + `}}`
 			result.nbt = facadeNBT
 			return result;
 		}).id('gtceu:facade_cover');
@@ -1145,7 +1145,7 @@ const registerGTCEURecipes = (event) => {
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 
-			let facadeNBT = "{Facade: {Count:1b,id:" + "'" + blockID + "'" + "}}"
+			let facadeNBT = `{Facade: {Count:1b,id:` + `'${  blockID  }'` + `}}`
 			result.nbt = facadeNBT
 			return result;
 		}).id('gtceu:facade_cover32');
