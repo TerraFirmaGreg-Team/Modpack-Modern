@@ -10437,7 +10437,7 @@
                 "3Hn4sTVbBvKyQJJS"
             ],
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "pick-up-notifier",
                 "modrinth": "pick-up-notifier"
@@ -12357,21 +12357,23 @@
             ]
         },
         {
-            "pakku_id": "zerUE7n4nmHdsmgn",
+            "pakku_id": "oKmbT8tEk75s2Dfq",
             "pakku_links": [
-                "F6H99cZ4H6jZRpEK",
-                "fMkiGcRPRv1DdRC1",
                 "64uacGcEw697jVGs"
             ],
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "tfc-grooming-station"
+                "curseforge": "tfc-grooming-station",
+                "modrinth": "tfc-grooming-station"
             },
             "name": {
-                "curseforge": "TFC Grooming Station"
+                "curseforge": "TFC Grooming Station",
+                "modrinth": "TFC Grooming Station"
             },
             "id": {
-                "curseforge": "1003785"
+                "curseforge": "1003785",
+                "modrinth": "2yZ8ZSeO"
             },
             "files": [
                 {
@@ -12396,6 +12398,27 @@
                     ],
                     "size": 134178,
                     "date_published": "2025-01-23T23:02:18.440Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "tfcgroomer-1.20.1-0.1.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/2yZ8ZSeO/versions/XkumbkLd/tfcgroomer-1.20.1-0.1.3.jar",
+                    "id": "XkumbkLd",
+                    "parent_id": "2yZ8ZSeO",
+                    "hashes": {
+                        "sha512": "0748272427ca889f733f51e14bebfefcb0d8dc02734ed4be34a75ab55085a835b6e80864a0e857ab2f4c8ed48a7523272d41a008697dc4d7c347806c0376845e",
+                        "sha1": "292c57951e1fe01e2159287e0392e4afda1d8153"
+                    },
+                    "required_dependencies": [],
+                    "size": 133849,
+                    "date_published": "2025-07-20T10:58:34.516207Z"
                 }
             ]
         },
