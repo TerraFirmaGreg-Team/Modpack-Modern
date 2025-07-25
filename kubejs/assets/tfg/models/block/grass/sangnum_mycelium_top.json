@@ -1,0 +1,7 @@
+{
+  "parent": "tfc:block/grass_top",
+    "textures": {
+        "overlay": "tfg:block/grass/sangnum_top",
+        "particle": "tfg:block/grass/sangnum_top"
+    }
+}

@@ -32,11 +32,6 @@ const registerTFGFluids = (event) => {
 		.noBlock()
 
 	//#region Mars
-	event.create('tfg:semiheavy_ammoniacal_water')
-		.thinTexture(0x704f786c)
-		.color(0x4f786c)
-		.temperature(213)
-		.renderType('translucent')
 	//#endregion
 
 	//#region Venus
