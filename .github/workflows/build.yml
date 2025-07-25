@@ -208,61 +208,6 @@ jobs:
 
             ${{ steps.changelog_dev.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
-
-  # create-pr:
-  #   name: 🤝 Create Release PR
-  #   needs: [info]
-  #   runs-on: ubuntu-latest
-  #   if: ${{ needs.info.outputs.make_pr == 'true' }}
-  #   steps:
-
-  #     - name: 📦 Checkout
-  #       uses: actions/checkout@v4.2.2
-      
-  #     - name: 🔍 Check existing PRs
-  #       id: check_existing_pr
-  #       uses: actions/github-script@v7.0.1
-  #       env:
-  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  #       with:
-  #         script: |
-  #             try {
-  #               const { data: prs } = await github.rest.pulls.list({
-  #                 owner: context.repo.owner,
-  #                 repo: context.repo.repo,
-  #                 state: 'open',
-  #                 head: `${context.repo.owner}:dev`,
-  #                 base: 'main'
-  #               });
-
-  #               if (prs.length > 0) {
-  #                 console.log(`ℹ️ Found existing PR from dev to main: ${prs[0].html_url}`);
-  #                 core.setOutput('exists', 'true');
-  #               } else {
-  #                 core.setOutput('exists', 'false');
-  #               }
-  #             } catch (error) {
-  #               core.setFailed(`❌ Failed to check existing PRs: ${error}`);
-  #               core.setOutput('exists', 'error');
-  #             }
-
-
-  #     - name: 📄 Create Pull Request if tag not found
-  #       if: ${{ steps.check_existing_pr.outputs.exists == 'false' }}
-  #       uses: devops-infra/action-pull-request@v0.6.0
-  #       with:
-  #         github_token: ${{ secrets.GITHUB_TOKEN }}
-  #         source_branch: dev
-  #         target_branch: main
-  #         reviewer: Xikaro
-  #         ignore_users: "dependabot"
-  #         title: 'Release: ${{ needs.info.outputs.project_version }}'
-  #         body: |
-  #           **This is an automated Pull Request from the dev branch.**
-  #           📃 **Name**: ${{ needs.info.outputs.project_name }}
-  #           📃 **Release**:  `${{ needs.info.outputs.project_version }}`
-  #           📃 **Release Type**: `${{ needs.info.outputs.release_type }}`
-  #           📃 **Game Version**: `${{ needs.info.outputs.mc_version }}`
   
 
   build-modpack:
