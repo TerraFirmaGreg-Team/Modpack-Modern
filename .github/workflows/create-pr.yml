@@ -6,7 +6,7 @@ on:
       - dev
     paths-ignore:
       - '**'
-      - '.github/workflows/create-pr.yml'
+      - '!.github/workflows/create-pr.yml'
       - '!CHANGELOG.md'
 
 concurrency:
