@@ -15,6 +15,7 @@ concurrency:
 jobs:    
   create-pr:
     name: 🤝 Create Release PR
+    if: ${{  github.repository_owner == 'TerraFirmaGreg-Team' }}
     runs-on: ubuntu-latest
     steps:
 
