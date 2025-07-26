@@ -7,6 +7,7 @@
 - Adjusted recipe times of the VI machines @Pyritie
 ### Bug fixes
 - Fixed not being able to craft fine wire in a coiling machine for materials that didn't also have normal wire @Pyritie
+- Fixed cobalt brass buzzsaws not being obtainable until MV @Pyritie
 
 ## [0.10.4] - 25-07-2025
 ### Changes
