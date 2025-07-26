@@ -692,7 +692,7 @@ function registerTFGRockRecipes(event) {
 		.EUt(7)
 		.dimension('ad_astra:mars')
 
-	event.recipes.gtceu.rock_breaker('tfg:red_granite')
+	event.recipes.gtceu.rock_breaker('tfg:red_granite_cobblestone')
 		.notConsumable('gtceu:red_granite_cobblestone')
 		.itemOutputs('gtceu:red_granite_cobblestone')
 		.duration(16)
