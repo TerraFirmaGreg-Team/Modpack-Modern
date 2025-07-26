@@ -229,13 +229,6 @@ function registerGTCEUMetalRecipes(event) {
 				.circuit(2)
 				.duration(20 * 5.8)
 				.EUt(24)
-
-			event.recipes.gtceu.bender('bend_cobalt_brass_ingot_to_double_plate')
-				.itemInputs('2x #forge:ingots/cobalt_brass')
-				.itemOutputs(doublePlateItem)
-				.circuit(2)
-				.duration(20 * 5.8)
-				.EUt(24)
 		}
 		else if (material.getProperty(TFGPropertyKey.TFC_PROPERTY) == null) {
 			event.recipes.greate.compacting(doublePlateItem, [plateItem, plateItem, 'tfc:powder/flux'])
