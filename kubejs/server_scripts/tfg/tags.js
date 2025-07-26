@@ -442,6 +442,9 @@ const registerTFGFluidTags = (event) => {
 
 	event.add('tfc:usable_in_barrel', 'gtceu:seed_oil')
 
+	event.add('waves:has_waves', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:any_water', 'tfg:semiheavy_ammoniacal_water')
+
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
 	})

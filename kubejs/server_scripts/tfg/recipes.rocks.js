@@ -686,7 +686,21 @@ function registerTFGRockRecipes(event) {
 		.itemOutputs('ad_astra:venus_stone')
 		.duration(16)
 		.EUt(7)
-		.dimension('ad_astra:venus')
+		.dimension('ad_astra:mars')
+
+	event.recipes.gtceu.rock_breaker('tfg:red_granite')
+		.notConsumable('gtceu:red_granite')
+		.itemOutputs('gtceu:red_granite')
+		.duration(16)
+		.EUt(7)
+		.dimension('ad_astra:mars')
+
+	event.recipes.gtceu.rock_breaker('tfg:red_granite')
+		.notConsumable('gtceu:red_granite_cobblestone')
+		.itemOutputs('gtceu:red_granite_cobblestone')
+		.duration(16)
+		.EUt(7)
+		.dimension('ad_astra:mars')
 
 	event.recipes.gtceu.rock_breaker('tfg:mercury_stone')
 		.notConsumable('ad_astra:mercury_stone')

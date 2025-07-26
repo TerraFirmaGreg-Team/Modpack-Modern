@@ -565,4 +565,54 @@ const registerFramedBlocksRecipes = (event) => {
 			count: 1
 		}
 	}).id('framedblocks:framing_saw/framed_glowing_cube')
+
+	// Item Frame
+
+	event.shaped('4x framedblocks:framed_item_frame', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'framedblocks:framed_cube',
+		B: '#forge:leather'
+	}).id('framedblocks:framed_item_frame')
+
+	event.custom({
+		type: "framedblocks:frame",
+		additives: [
+			{
+				"count": 1,
+				"ingredient": { tag: "forge:leather" }
+			}
+		],
+		material: 6144*8,
+		result: {
+			item: "framedblocks:framed_item_frame",
+			count: 4
+		}
+	}).id('framedblocks:framing_saw/framed_item_frame')
+
+	// Glow Item Frame
+
+	event.shapeless('framedblocks:framed_glowing_item_frame', ['framedblocks:framed_item_frame', 'minecraft:glowstone_dust'])
+		.id('framedblocks:framed_glowing_item_frame')
+
+	event.custom({
+		type: "framedblocks:frame",
+		additives: [
+			{
+				"count": 1,
+				"ingredient": { tag: "forge:leather" }
+			},
+			{
+				"count": 4,
+				"ingredient": { item: "minecraft:glowstone_dust" }
+			}
+		],
+		material: 6144*8,
+		result: {
+			item: "framedblocks:framed_glowing_item_frame",
+			count: 4
+		}
+	}).id('framedblocks:framing_saw/framed_glowing_item_frame')
 }

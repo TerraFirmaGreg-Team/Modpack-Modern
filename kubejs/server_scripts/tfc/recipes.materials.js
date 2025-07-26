@@ -582,7 +582,7 @@ function registerTFCMaterialsRecipes(event) {
 				if (!smallSpringItem.isEmpty() && !rodItem.isEmpty()) {
 
 					event.recipes.tfc.heating(smallSpringItem, tfcProperty.getMeltTemp())
-						.resultFluid(Fluid.of(outputMaterial.getFluid(), 72))
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 36))
 						.id(`tfc:heating/metal/${material.getName()}_small_spring`)
 
 					event.recipes.tfc.anvil(smallSpringItem, rodItem, ['hit_last', 'bend_second_last', 'bend_third_last'])
@@ -593,9 +593,14 @@ function registerTFCMaterialsRecipes(event) {
 				// Nugget
 				let nuggetItem = ChemicalHelper.get(TagPrefix.nugget, material, 6)
 				if (!nuggetItem.isEmpty()) {
+
+					event.recipes.tfc.heating(`#forge:nuggets/${material.getName()}`, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 144/9))
+						.id(`tfc:heating/metal/${material.getName()}_nugget`)
+
 					event.recipes.tfc.anvil(nuggetItem, ingotItem, ['punch_last', 'hit_second_last', 'punch_third_last'])
 						.tier(tfcProperty.getTier())
-						.id(`tfg:anvil/${material.getName()}_nugget`)
+						.id(`tfc:anvil/${material.getName()}_nugget`)
 				}
 			}
 
