@@ -63,12 +63,15 @@ const registerMinecraftItemTags = (event) => {
     event.remove('forge:gems', 'minecraft:coal')
     event.remove('forge:gems', 'minecraft:flint')
 
-    event.add('tfc:compost_greens_high', 'minecraft:red_mushroom_block')
-    event.add('tfc:compost_greens_high', 'minecraft:brown_mushroom_block')
-    event.add('tfc:compost_greens_high', 'minecraft:twisting_vines')
+    event.add('tfc:compost_greens', 'minecraft:red_mushroom_block')
+    event.add('tfc:compost_greens', 'minecraft:brown_mushroom_block')
+    event.add('tfc:compost_greens', 'minecraft:moss_block')
+    event.add('tfc:compost_greens_low', 'minecraft:moss_carpet')
+    event.add('tfc:compost_greens_low', 'minecraft:twisting_vines')
     event.add('tfc:compost_greens_high', 'minecraft:pearlescent_froglight')
     event.add('tfc:compost_greens_high', 'minecraft:verdant_froglight')
     event.add('tfc:compost_greens_high', 'minecraft:ochre_froglight')
+    event.add('tfc:moss', 'minecraft:moss_carpet')
 
     event.add('tfc:colored_terracotta', 'minecraft:white_terracotta')
 
