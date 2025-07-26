@@ -114,7 +114,7 @@ const registerTooltips = (event) =>
 
 	// Solar Panel
 	event.addAdvanced(['ad_astra:solar_panel'], (item, advanced, text) => {
-		text.add(1, text.of('Produces §664 Eu/t§r on the §6moon§r during the §6day§r'))
+		text.add(1, text.of('Produces §6256 FE/t§r (64 EU/t) on the §6moon§r during the §6day§r'))
 	})
 
 	// MEGA Deprecated 0.10
