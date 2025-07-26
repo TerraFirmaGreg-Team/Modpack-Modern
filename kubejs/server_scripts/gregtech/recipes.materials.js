@@ -454,7 +454,7 @@ function registerGTCEUMetalRecipes(event) {
 		}
 
 		// Smelting
-		if (!material.hasProperty(PropertyKey.BLAST)) {
+		if (!material.hasProperty(PropertyKey.BLAST) && !ingotItem.isEmpty()) {
 			event.smelting(ingotItem, poorOreItem).id(`gtceu:smelting/smelt_poor_raw_${material.getName()}_ore_to_ingot`)
 		}
 	}
@@ -524,7 +524,7 @@ function registerGTCEUMetalRecipes(event) {
 			.id(`tfg:quern/${material.getName()}_crushed_ore_from_normal_raw_ore`)
 
 		// Smelting
-		if (!material.hasProperty(PropertyKey.BLAST)) {
+		if (!material.hasProperty(PropertyKey.BLAST) && !ingotItem.isEmpty()) {
 			event.smelting(ingotItem, normalOreItem).id(`gtceu:smelting/smelt_raw_${material.getName()}_ore_to_ingot`)
 		}
 
@@ -596,7 +596,7 @@ function registerGTCEUMetalRecipes(event) {
 			.id(`tfg:quern/${material.getName()}_crushed_ore_from_rich_raw_ore`)
 
 		// Smelting
-		if (!material.hasProperty(PropertyKey.BLAST)) {
+		if (!material.hasProperty(PropertyKey.BLAST) && !ingotItem.isEmpty()) {
 			event.smelting(ingotItem, richOreItem).id(`gtceu:smelting/smelt_rich_raw_${material.getName()}_ore_to_ingot`)
 		}
 	}
@@ -1119,14 +1119,10 @@ function registerGTCEUMetalRecipes(event) {
 		event.remove({ id: `gtceu:arc_furnace/arc_iv_${material.getName()}_wirecutter` })
 	}
 
-	/**
-	 * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
-	*/
 	forEachMaterial(material => {
 		const toolProperty = material.getProperty(PropertyKey.TOOL)
 		const ingotProperty = material.getProperty(PropertyKey.INGOT)
 		const oreProperty = material.getProperty(PropertyKey.ORE)
-
 		if (toolProperty !== null) {
 			let circuit = 1;
 			makeToolRecipe(GTToolType.SWORD, TFGTagPrefix.toolHeadSword, 'tfg:sword_head_extruder_mold', circuit++, material)

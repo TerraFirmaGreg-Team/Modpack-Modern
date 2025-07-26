@@ -312,7 +312,7 @@ function registerGrapplingHookRecipes(event) {
             }
             return result;
         } catch (exception) {
-            console.log(exception);
+            console.error(exception);
         }
     }).id('tfg:grapplemod/shapeless/repair');
 

@@ -19,7 +19,7 @@
 
         ItemEvents.rightClicked(event => {
             const {item,server,player,player:{x,y,z}} = event
-            if (item.id != `tfg:${pill_event}_pill`) return
+            if (item.id !== `tfg:${pill_event}_pill`) return
             item.count--
             player.addItemCooldown(item, 100)
             server.runCommandSilent(`effect give ${player.username} minecraft:${pill_event} 480 0 true`)
@@ -28,7 +28,7 @@
 
         ItemEvents.rightClicked(event => {
             const {item,server,player,player:{x,y,z}} = event
-            if (item.id != `tfg:${pill_event}_tablet`) return
+            if (item.id !== `tfg:${pill_event}_tablet`) return
             item.count--
             player.addItemCooldown(item, 100)
             server.runCommandSilent(`effect give ${player.username} minecraft:${pill_event} 1800 0 true`)
@@ -38,7 +38,7 @@
 
     ItemEvents.rightClicked(event => {
         const {item,server,player,player:{x,y,z}} = event
-        if (item.id != `tfg:antipoison_pill`) return
+        if (item.id !== `tfg:antipoison_pill`) return
         item.count--
         player.addItemCooldown(item, 50)
         event.player.removeEffect('minecraft:poison')
@@ -47,7 +47,7 @@
 
     ItemEvents.rightClicked(event => {
         const {item,server,player,player:{x,y,z}} = event
-        if (item.id != `tfg:antipoison_tablet`) return
+        if (item.id !== `tfg:antipoison_tablet`) return
         item.count--
         player.addItemCooldown(item, 50)
         event.player.removeEffect('minecraft:poison')
@@ -76,7 +76,7 @@
 
         ItemEvents.rightClicked(event => {
             const {item,server,player,player:{x,y,z}} = event
-            if (item.id != `tfg:${salvo_event}_salvo`) return
+            if (item.id !== `tfg:${salvo_event}_salvo`) return
             item.count--
             player.addItemCooldown(item, 100)
             server.runCommandSilent(`effect give ${player.username} minecraft:${salvo_event} 480 0 true`)
@@ -86,7 +86,7 @@
 
 ItemEvents.rightClicked(event => {
     const {item,server,player,player:{x,y,z}} = event
-    if (item.id != `tfg:absorption_salvo`) return
+    if (item.id !== `tfg:absorption_salvo`) return
     item.count--
     player.addItemCooldown(item, 200)
     server.runCommandSilent(`effect give ${player.username} minecraft:absorption 480 4 true`)
@@ -95,7 +95,7 @@ ItemEvents.rightClicked(event => {
 
 ItemEvents.rightClicked(event => {
     const {item,server,player,player:{x,y,z}} = event
-    if (item.id != `tfg:instant_health_salvo`) return
+    if (item.id !== `tfg:instant_health_salvo`) return
     item.count--
     player.addItemCooldown(item, 100)
     server.runCommandSilent(`effect give ${player.username} minecraft:instant_health 1 1 true`)
@@ -108,18 +108,17 @@ ItemEvents.rightClicked(event => {
 global.MINECRAFT_DYE_NAMES.forEach(color => {
     BlockEvents.rightClicked(event => {
         const {block,server,player} = event
-        if (block.id != `tfg:decorative_vase/${color}`) {return}{
+        if (block.id !== `tfg:decorative_vase/${color}`) return
         server.runCommandSilent(`playsound tfc:block.quern.drag block ${player.username} ${block.x} ${block.y} ${block.z} 0.3 2.0 0.1`)
-    }
+    
 })
 });
 
 
 BlockEvents.rightClicked(event => {
     const {block,server,player} = event
-    if (block.id != 'tfg:decorative_vase') {return}{
+    if (block.id !== 'tfg:decorative_vase') return
     server.runCommandSilent(`playsound tfc:block.quern.drag block ${player.username} ${block.x} ${block.y} ${block.z} 0.3 2.0 0.1`)
-}
 });
 //#endregion
 
@@ -269,7 +268,7 @@ function getTFGPersistentDataRoot(player) {
  */
 
 /** @type {BrickVariant[]} */
-global.BRICK_INDEX = (global.TFC_STONE_TYPES ?? []).map(tfc_stone => ({
+global.BRICK_INDEX = (global.TFC_STONE_TYPES ? global.TFC_STONE_TYPES : []).map(tfc_stone => ({
 	brick_type: tfc_stone,
 	brick: `tfc:rock/bricks/${tfc_stone}`, brick_stairs: `tfc:rock/bricks/${tfc_stone}_stairs`, brick_slab: `tfc:rock/bricks/${tfc_stone}_slab`, brick_wall: `tfc:rock/bricks/${tfc_stone}_wall`, 
 	cracked_brick: `tfc:rock/cracked_bricks/${tfc_stone}`, cracked_stairs: `tfc:rock/cracked_bricks/${tfc_stone}_stairs`, cracked_slab: `tfc:rock/cracked_bricks/${tfc_stone}_slab`, cracked_wall: `tfc:rock/cracked_bricks/${tfc_stone}_wall`, 
@@ -277,7 +276,7 @@ global.BRICK_INDEX = (global.TFC_STONE_TYPES ?? []).map(tfc_stone => ({
 	smooth_brick: `tfc:rock/smooth/${tfc_stone}`, smooth_stairs: `tfc:rock/smooth/${tfc_stone}_stairs`, smooth_slab: `tfc:rock/smooth/${tfc_stone}_slab`, smooth_wall: `tfc:rock/smooth/${tfc_stone}_wall`, 
 	chiseled_brick: `tfc:rock/chiseled/${tfc_stone}`
 }));
-(global.CREATE_DECO_BRICK_TYPES ?? []).slice(0, -1).forEach(create_brick => {
+(global.CREATE_DECO_BRICK_TYPES ? global.CREATE_DECO_BRICK_TYPES : []).slice(0, -1).forEach(create_brick => {
   global.BRICK_INDEX.push({
 		brick_type: create_brick,
 		brick: `createdeco:${create_brick}_bricks`, brick_stairs: `createdeco:${create_brick}_brick_stairs`, brick_slab: `createdeco:${create_brick}_brick_slab`, brick_wall: `createdeco:${create_brick}_brick_wall`,	
@@ -347,7 +346,7 @@ global.BRICK_INDEX = global.BRICK_INDEX.concat([
 function transformBlockWithTool(event, inputBlock, outputBlock, toolId, damageTool, soundId, particleId, copyBlockstate) {
     const { server, item, player, block } = event;
 
-    if (!inputBlock || !outputBlock) {return};
+    if (!inputBlock || !outputBlock) return;
 
     if (inputBlock.startsWith('#')) {
         if (!block.hasTag(inputBlock.substring(1))) return;
@@ -356,15 +355,15 @@ function transformBlockWithTool(event, inputBlock, outputBlock, toolId, damageTo
     }
 
     if (toolId.startsWith('#')) {
-        if (item.isEmpty() || !player.mainHandItem.hasTag(toolId.substring(1))) {return};
+        if (item.isEmpty() || !player.mainHandItem.hasTag(toolId.substring(1))) return;
     } else {
-        if (item.isEmpty() || player.mainHandItem.id !== toolId) {return};
+        if (item.isEmpty() || player.mainHandItem.id !== toolId) return;
     }
 
-    if (!player.crouching) {return};
+    if (!player.crouching) return;
 
     let state = block.getBlockState().toString();
-    if (state.includes('[') && copyBlockstate == true) {
+    if (state.includes('[') && copyBlockstate === true) {
         state = state.substring(state.indexOf('['));
     } else {
         state = '';
@@ -409,7 +408,7 @@ function transformBlockWithTool(event, inputBlock, outputBlock, toolId, damageTo
 function transformBlockWithItem(event, inputBlock, outputBlock, itemId, consumeItem, consumeAmount, soundId, particleId, copyBlockstate) {
         const { server, item, player, block } = event;
 
-        if (!inputBlock || !outputBlock) {return};
+        if (!inputBlock || !outputBlock) return;
 
         if (inputBlock.startsWith('#')) {
             if (!block.hasTag(inputBlock.substring(1))) return;
@@ -418,14 +417,14 @@ function transformBlockWithItem(event, inputBlock, outputBlock, itemId, consumeI
         }
 
         if (itemId.startsWith('#')) {
-            if (item.isEmpty() || !player.mainHandItem.hasTag(itemId.substring(1))) {return};
+            if (item.isEmpty() || !player.mainHandItem.hasTag(itemId.substring(1))) return;
         } else {
-            if (item.isEmpty() || player.mainHandItem.id != itemId) {return};
+            if (item.isEmpty() || player.mainHandItem.id !== itemId) return;
         }
-        if (!player.crouching) {return};
+        if (!player.crouching) return;
 
-        var state = block.getBlockState().toString()
-        if (state.includes('[') && copyBlockstate == true){
+        let state = block.getBlockState().toString()
+        if (state.includes('[') && copyBlockstate === true){
             state = state.substring(block.getBlockState().toString().indexOf('['));
         } else {
             state = ''

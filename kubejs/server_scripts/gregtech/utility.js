@@ -246,7 +246,7 @@ function generatePlatedBlockRecipe(event, material) {
  * Function for iterating through registered materials
  * {@link https://github.com/GregTechCEu/GregTech-Modern/blob/1.20.1/src/main/java/com/gregtechceu/gtceu/api/data/chemical/material/Material.java}
  *
- * @param {GTCEuAPI.materialManager.getRegisteredMaterials} iterator -Material
+ * @param {(material: com.gregtechceu.gtceu.api.data.chemical.material.Material_) => void} iterator 
  */
 function forEachMaterial(iterator) {
 	for (let material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
