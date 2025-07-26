@@ -683,7 +683,7 @@ function registerTFGRockRecipes(event) {
 		.itemOutputs('ad_astra:venus_stone')
 		.duration(16)
 		.EUt(7)
-		.dimension('ad_astra:venus')
+		.dimension('ad_astra:mars')
 
 	event.recipes.gtceu.rock_breaker('tfg:mercury_stone')
 		.notConsumable('ad_astra:mercury_stone')

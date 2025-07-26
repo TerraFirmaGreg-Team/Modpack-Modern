@@ -3,8 +3,6 @@
 
 const registerTFGFluids = (event) => {
 
-	registerTFGNuclearFluids(event)
-
 	// TODO: remove these as the other planets come out
 
 	event.create('tfg:nether_slurry')
@@ -39,6 +37,14 @@ const registerTFGFluids = (event) => {
 		.color(0x4f786c)
 		.temperature(213)
 		.renderType('translucent')
+
+		// Placeholder
+	event.create('tfg:surface_mars_water')
+		.thinTexture(0x704f786c)
+		.color(0x3872d4)
+		.temperature(213)
+		.renderType('translucent')
+
 	//#endregion
 
 	//#region Venus

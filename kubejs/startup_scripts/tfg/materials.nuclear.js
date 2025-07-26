@@ -20,7 +20,7 @@ const registerTFGNuclearMaterials = (event) => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR)
 */
 
-    // Fluid
+    //#region Fluid
 
     event.create('dense_steam')
         .gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(3730))
@@ -97,7 +97,37 @@ const registerTFGNuclearMaterials = (event) => {
         .iconSet(GTMaterialIconSet.FINE)
         .color(0xb2c3e7)
 
-    // Dust
+    // FLiBe Line
+
+    event.create('raw_rich_brine')
+        .liquid(new GTFluidBuilder().customStill().temperature(293))
+
+    event.create('hot_iodine_brine')
+        .liquid(new GTFluidBuilder().customStill().temperature(293))
+        .formula('HIMgCl(?)')
+
+    event.create('brominated_iodine_vapor')
+        .gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(412))
+        .formula('HI(?)')
+
+    event.create('basic_bromine_exhaust')
+        .gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(406))
+
+    event.create('dirty_flibe')
+        .liquid(new GTFluidBuilder().customStill().temperature(293))
+        .formula('FLiBe(?)')
+
+    event.create('flibe')
+        .liquid(new GTFluidBuilder().customStill().temperature(293))
+        .formula('FLiBe')
+
+    event.create('hot_flibe')
+        .liquid(new GTFluidBuilder().customStill().temperature(3293))
+        .formula('FLiBe')
+
+    //#endregion
+
+    //#region Dust
 
     event.create('tfg:mars_stone_dust')
         .dust()
@@ -131,7 +161,38 @@ const registerTFGNuclearMaterials = (event) => {
         .secondaryColor('0xffffff')
         .iconSet(GTMaterialIconSet.RADIOACTIVE)
 
-    // Ingots
+    // FLiBe Dusts
+
+    event.create('lithium_carbonate')
+        .dust()
+        .components('2x lithium', '1x carbon', '3x oxygen')
+        .formula('Li2CO3')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .color(0xffffff)
+        .secondaryColor(0xb7b9bd)
+        .iconSet(GTMaterialIconSet.GLASS)
+
+    event.create('lithium_fluoride')
+        .gem()
+        .components('1x lithium', '1x fluorine')
+        .formula('LiF')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_UNIFICATION)
+        .color(0xffffff)
+        .secondaryColor(0xb7b9bd)
+        .iconSet(GTMaterialIconSet.FLINT)
+
+    event.create('tetrafluoroberyllate')
+        .gem()
+        .components('1x beryllium', '4x fluorine')
+        .formula('BeF4')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_UNIFICATION)
+        .color(0xdcdee1)
+        .secondaryColor(0xb7b9bd)
+        .iconSet(GTMaterialIconSet.OPAL)
+
+    //#endregion
+
+    //#region Ingots
 
     event.create('thorium_230')
         .ingot()
@@ -149,13 +210,17 @@ const registerTFGNuclearMaterials = (event) => {
         .secondaryColor('0xFFFFFF')
         .radioactiveHazard(1000)
 
+    //#endregion
+
+    //#region Fuel Pellet
+
     event.create('uranium_pellet')
         .ingot()
         .element(GTElements.U)
         .iconSet(GTMaterialIconSet.METALLIC)
         .color(0x216614)
         .radioactiveHazard(1000000)
-        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES)
+        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.NO_SMELTING)
 
     event.create('thorium_pellet')
         .ingot()
@@ -163,7 +228,7 @@ const registerTFGNuclearMaterials = (event) => {
         .iconSet(GTMaterialIconSet.METALLIC)
         .color(0x631e5a)
         .radioactiveHazard(100000)
-        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.NO_WORKING)
+        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.NO_SMELTING)
 
     event.create('plutonium_pellet')
         .ingot()
@@ -171,5 +236,16 @@ const registerTFGNuclearMaterials = (event) => {
         .iconSet(GTMaterialIconSet.METALLIC)
         .color(0xc91414)
         .radioactiveHazard(10000000)
-        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW)
+        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.NO_SMELTING)
+
+    event.create('tbu-232_pellet')
+        .ingot()
+        .iconSet(GTMaterialIconSet.RADIOACTIVE)
+        .color(0xaa55ba)
+        .secondaryColor(0xECECEC)
+        .radioactiveHazard(10000000)
+        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.NO_SMELTING)
+
+    //#endregion
+
     }
