@@ -356,13 +356,9 @@ const registerTFGItems = (event) => {
 
 	//#region Universal compost items
 	event.create('tfg:universal_compost_browns')
-		.translationKey('item.tfg.universal_compost_browns')
 		.tag('tfc:compost_browns_low')
-		.texture('tfg:item/universal_compost_browns')
 
 	event.create('tfg:universal_compost_greens')
-		.translationKey('item.tfg.universal_compost_greens')
 		.tag('tfc:compost_greens_low')
-		.texture('tfg:item/universal_compost_greens')
 	//#endregion
 }
