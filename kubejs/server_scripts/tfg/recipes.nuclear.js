@@ -18,7 +18,8 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(GTValues.V[GTValues.HV])
 
 	event.recipes.gtceu.nuclear_fuel_factory('gtceu:plutonium_pellet')
-		.itemInputs('#forge:nuggets/plutonium_241', '1x #forge:ingots/plutonium')
+		.itemInputs('1x #forge:ingots/plutonium')
+		.inputFluids(Fluid.of('gtceu:radon', 10))
 		.itemOutputs('#forge:ingots/plutonium_pellet')
 		.duration(20*30)
 		.EUt(GTValues.V[GTValues.EV])
@@ -84,7 +85,7 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:martian_sludge', 1000))
 		.inputFluids(Fluid.of('gtceu:formamide', 1000))
 		.inputFluids(Fluid.of('gtceu:radioactive_waste', 1000))
-		.outputFluids(Fluid.of('gtceu:radon', 10))
+		.outputFluids(Fluid.of('gtceu:radon', 100))
 		.itemOutputs('#forge:dusts/nuclear_residue')
 		.duration(20*48)
 		.EUt(GTValues.VA[GTValues.EV])
@@ -147,35 +148,45 @@ function registerTFGNuclearRecipes(event) {
 
 	event.recipes.gtceu.fission_reactor('thorium_uranium_waste')
 		.itemInputs('#forge:bolts/thorium_pellet')
-		.inputFluids(Fluid.of('minecraft:water', 1000))
-		.outputFluids(Fluid.of('gtceu:dense_steam', 100))
-		.outputFluids(Fluid.of('gtceu:uranium_waste', 1000))
+		.inputFluids(Fluid.of('minecraft:water', 500))
+		.outputFluids(Fluid.of('gtceu:dense_steam', 500))
+		.outputFluids(Fluid.of('gtceu:uranium_waste', 20))
 		.duration(20*10)
 		.EUt(32)
 
 	event.recipes.gtceu.fission_reactor('thorium_nuclear_waste')
 		.itemInputs('#forge:bolts/thorium_pellet')
-		.inputFluids(Fluid.of('gtceu:distilled_water', 100))
-		.outputFluids(Fluid.of('gtceu:dense_steam', 100))
+		.inputFluids(Fluid.of('gtceu:distilled_water', 500))
+		.outputFluids(Fluid.of('gtceu:dense_steam', 500))
 		.outputFluids(Fluid.of('gtceu:nuclear_waste', 10))
 		.duration(20*10)
 		.EUt(32)
 
 	event.recipes.gtceu.fission_reactor('uranium_radioactive')
 		.itemInputs('#forge:bolts/uranium_pellet')
-		.inputFluids(Fluid.of('gtceu:heavy_water', 1000))
-		.outputFluids(Fluid.of('gtceu:radioactive_steam', 100))
-		.outputFluids(Fluid.of('gtceu:radioactive_waste', 1000))
+		.inputFluids(Fluid.of('gtceu:heavy_water', 500))
+		.outputFluids(Fluid.of('gtceu:radioactive_steam', 500))
+		.outputFluids(Fluid.of('gtceu:radioactive_waste', 50))
 		.duration(20*10)
 		.EUt(32)
 
 	event.recipes.gtceu.fission_reactor('plutonium_irradiated')
 		.itemInputs('#forge:bolts/plutonium_pellet')
-		.inputFluids(Fluid.of('gtceu:heavy_water', 100))
-		.outputFluids(Fluid.of('gtceu:irradiated_steam', 100))
-		.outputFluids(Fluid.of('gtceu:tritiated_water', 1000))
+		.inputFluids(Fluid.of('gtceu:heavy_water', 500))
+		.outputFluids(Fluid.of('gtceu:irradiated_steam', 500))
+		.outputFluids(Fluid.of('gtceu:tritiated_water', 50))
 		.duration(20*10)
 		.EUt(32)
+
+	//#endregion
+
+	//#region Power Generation
+
+	event.recipes.gtceu.gas_turbine('dense_steam')
+		.inputFluids(Fluid.of('gtceu:dense_steam', 1))
+		.EUt(-32)
+		.duration(20*2)
+
 
 	
 
