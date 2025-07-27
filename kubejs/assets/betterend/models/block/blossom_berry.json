@@ -12,7 +12,6 @@
 			"from": [ 2.25, 0, 2.25 ],
 			"to": [ 2.251, 16, 18.25 ],
 			"rotation": { "origin": [ 2.25, 0, 2.25 ], "axis": "y", "angle": 45 },
-			"shade": false,
 			"faces": {
 				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#stem" },
 				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#stem" }
@@ -23,7 +22,6 @@
 			"from": [ 13.75, 0, 2.25 ],
 			"to": [ 13.751, 16, 18.25 ],
 			"rotation": { "origin": [ 13.75, 0, 2.25 ], "axis": "y", "angle": -45 },
-			"shade": false,
 			"faces": {
 				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#stem" },
 				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#stem" }
@@ -33,7 +31,6 @@
 			"__comment": "PlaneY3",
 			"from": [ 0, 12, 0 ],
 			"to": [ 16, 12.001, 16 ],
-			"shade": false,
 			"faces": {
 				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#flower" },
 				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#flower" }

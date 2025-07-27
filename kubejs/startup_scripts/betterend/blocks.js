@@ -28,23 +28,31 @@ function registerBetterEndBlocks(event) {
 
 	// 1 block tall
 	createPlant(event, 'aeridium', 'mars')
+		.box(2, 0, 2, 14, 14, 14)
 	createPlant(event, 'amber_grass', 'mars')
-	createPlant(event, 'aurant_polypore', 'mars')
+		.box(3, 0, 3, 13, 8, 13)
 	createPlant(event, 'bolux_mushroom', 'mars')
 	createPlant(event, 'bushy_grass', 'mars')
+		.box(3, 0, 3, 13, 12, 13)
 	createPlant(event, 'cave_grass', 'mars')
-	createPlant(event, 'chorus_mushroom', 'mars') // currently a crop, can be changed
+		.box(3, 0, 3, 13, 12, 13)
 	createPlant(event, 'clawfern', 'mars')
+		.box(2, 0, 2, 14, 14, 14)
 	createPlant(event, 'creeping_moss', 'mars')
+		.box(2, 0, 2, 14, 20, 14)
 	createPlant(event, 'flamaea', 'mars')
+		.box(2, 0, 2, 14, 3, 14)
 	createPlant(event, 'flammalix', 'mars')
 	createPlant(event, 'globulagus', 'mars')
+			.box(3, 0, 3, 13, 13, 13)
 	createPlant(event, 'lamellarium', 'mars')
 	createPlant(event, 'lutebus', 'mars')
+		.box(3, 0, 3, 13, 8, 13)
 	createPlant(event, 'orango', 'mars')
-	createPlant(event, 'purple_polypore', 'mars')
+		.box(3, 0, 3, 13, 12, 13)
 	createPlant(event, 'ruscus', 'mars')
 	createPlant(event, 'small_amaranita_mushroom', 'mars')
+		.box(3, 0, 3, 13, 8, 13)
 
 	// 1 block tall waterlogged
 	// charnia (and its colors)
@@ -54,6 +62,7 @@ function registerBetterEndBlocks(event) {
 	// amber_root
 	// blossom_berry
 	// shadow_berry
+	// chorus mushroom
 
 	// Mosses / Can go on sides of blocks
 	// bulb_moss
@@ -61,6 +70,9 @@ function registerBetterEndBlocks(event) {
 	// filalux_wings
 	// jungle_fern
 	// twisted_moss
+	
+	//createPlant(event, 'aurant_polypore', 'mars')
+	//createPlant(event, 'purple_polypore', 'mars')
 
 	// Vines
 	// bulb_vine
@@ -88,18 +100,22 @@ function registerBetterEndBlocks(event) {
 	event.create('betterend:crystal_grass', 'tfg:decorative_plant')
 		//.tagItem('tfg:mars_plants')
 		.tagBlock('minecraft:replaceable')
+		.box(3, 0, 3, 13, 12, 13)
 
 	event.create('betterend:blooming_cooksonia', 'tfg:decorative_plant')
 		//.tagItem('tfg:mars_plants')
 		.tagBlock('minecraft:replaceable')
+		.box(3, 0, 3, 13, 12, 13)
 
 	event.create('betterend:fracturn', 'tfg:decorative_plant')
 		//.tagItem('tfg:mars_plants')
 		.tagBlock('minecraft:replaceable')
+		.box(3, 0, 3, 13, 12, 13)
 
 	event.create('betterend:jungle_grass', 'tfg:decorative_plant')
 		//.tagItem('tfg:mars_plants')
 		.tagBlock('minecraft:replaceable')
+		.box(3, 0, 3, 13, 12, 13)
 }
 
 /**
@@ -108,7 +124,7 @@ function registerBetterEndBlocks(event) {
  * @param {string} planet
  */
 function createPlant(event, id, planet) {
-	event.create(`betterend:${id}`, 'tfg:decorative_plant')
+	return event.create(`betterend:${id}`, 'tfg:decorative_plant')
 		.tagItem(`tfg:${planet}_plants`)
 		.tagBlock('minecraft:replaceable')
 }

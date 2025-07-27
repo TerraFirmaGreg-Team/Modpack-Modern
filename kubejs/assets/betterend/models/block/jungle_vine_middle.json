@@ -1,5 +1,5 @@
 {
-	"parent": "betterend:block/cross_no_distortion",
+	"parent": "minecraft:block/cross",
 	"textures": {
 		"texture": "betterend:block/jungle_vine"
 	}

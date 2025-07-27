@@ -1,5 +1,5 @@
 {
-	"parent": "betterend:block/cross_no_distortion_inverted",
+	"parent": "betterend:block/cross_inverted",
 	"textures": {
 		"texture": "betterend:block/dense_vine"
 	}
