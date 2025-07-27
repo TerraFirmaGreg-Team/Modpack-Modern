@@ -217,7 +217,20 @@ function registerGTCEUMetalRecipes(event) {
 
 		event.remove({ id: `gtceu:shaped/plate_double_${material.getName()}` })
 
-		if (material.getProperty(TFGPropertyKey.TFC_PROPERTY) == null) {
+		if (material == GTMaterials.CobaltBrass) {
+			event.recipes.greate.compacting(doublePlateItem, [plateItem, plateItem, 'tfc:powder/flux'])
+				.heated()
+				.recipeTier(1)
+				.id(`greate:compacting/cobalt_brass_double_plate`)
+
+			event.recipes.gtceu.bender('bend_cobalt_brass_plate_to_double_plate')
+				.itemInputs('2x #forge:plates/cobalt_brass')
+				.itemOutputs(doublePlateItem)
+				.circuit(2)
+				.duration(20 * 5.8)
+				.EUt(24)
+		}
+		else if (material.getProperty(TFGPropertyKey.TFC_PROPERTY) == null) {
 			event.recipes.greate.compacting(doublePlateItem, [plateItem, plateItem, 'tfc:powder/flux'])
 				.heated()
 				.recipeTier(2)

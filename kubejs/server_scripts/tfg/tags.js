@@ -244,6 +244,12 @@ const registerTFGItemTags = (event) => {
 	// #region Space blocks
 	event.add('tfg:moon_plants', 'tfg:lunar_roots')
 	event.add('tfg:moon_plants', 'tfg:lunar_sprouts')
+
+	event.add('minecraft:dirt', 'tfg:grass/mars_dirt')
+	event.add('tfc:dirt', 'tfg:grass/mars_dirt')
+	event.add('tfc:grass', 'tfg:grass/amber_mycelium')
+	event.add('tfc:grass', 'tfg:grass/rusticus_mycelium')
+	event.add('tfc:grass', 'tfg:grass/sangnum_mycelium')
 	// #endregion
 
 	 // Mars stone dust
@@ -362,8 +368,8 @@ const registerTFGBlockTags = (event) => {
 
 	event.add('tfc:crops', 'tfg:sunflower')	
 	event.add('tfc:mineable_with_sharp_tool','tfg:sunflower')
-	// #region Nether blocks
 
+	// #region Nether blocks
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')
 	event.add('minecraft:moss_replaceable', 'tfg:rock/hardened_deepslate')
 	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_deepslate')
@@ -382,6 +388,22 @@ const registerTFGBlockTags = (event) => {
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_dripstone')
 	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_dripstone')
 	event.add('tfc:rock/hardened', 'tfg:rock/hardened_dripstone')
+	// #endregion
+
+	// #region Mars blocks
+	event.add('minecraft:dirt', 'tfg:grass/mars_dirt')
+	event.add('tfc:dirt', 'tfg:grass/mars_dirt')
+	event.add('tfc:grass', 'tfg:grass/amber_mycelium')
+	event.add('tfc:grass', 'tfg:grass/rusticus_mycelium')
+	event.add('tfc:grass', 'tfg:grass/sangnum_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/amber_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/rusticus_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/sangnum_mycelium')
+	event.add('tfc:can_landslide', 'tfg:grass/mars_dirt')
+	event.add('tfc:can_landslide', 'tfg:grass/amber_mycelium')
+	event.add('tfc:can_landslide', 'tfg:grass/rusticus_mycelium')
+	event.add('tfc:can_landslide', 'tfg:grass/sangnum_mycelium')
+	// #endregion
 
 	event.add('tfg:harvester_harvestable', '#tfc:fruit_tree_leaves')
 	event.add('tfg:harvester_harvestable', '#tfc:berry_bushes')
@@ -394,7 +416,6 @@ const registerTFGBlockTags = (event) => {
 	event.add('forge:mineable/wrench', 'tfg:superconductor_coil_small')
 	event.add('forge:mineable/wrench', 'tfg:electromagnetic_accelerator')
 
-	// #endregion
 }
 //#endregion
 
@@ -424,6 +445,9 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfg:clean_water', 'tfc:spring_water')
 
 	event.add('tfc:usable_in_barrel', 'gtceu:seed_oil')
+
+	event.add('waves:has_waves', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:any_water', 'tfg:semiheavy_ammoniacal_water')
 
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)

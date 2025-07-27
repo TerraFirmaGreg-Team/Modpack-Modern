@@ -1,0 +1,74 @@
+{
+	"carvers": {
+		"air": [
+			"tfg:mars_cave",
+			"tfg:mars_canyon"
+		]
+	},
+	"downfall": 0.0,
+	"effects": {
+		"fog_color": 15117444,
+		"mood_sound": {
+			"block_search_extent": 8,
+			"offset": 2.0,
+			"sound": "minecraft:ambient.cave",
+			"tick_delay": 6000
+		},
+		"particle": {
+			"options": {
+				"type": "minecraft:crimson_spore"
+			},
+			"probability": 0.014
+		},
+		"sky_color": 15117444,
+		"water_color": 4159204,
+		"water_fog_color": 329011
+	},
+	"features": [
+		[],
+		"#tfg:mars_craters",
+		[
+			"tfg:earth/geode/amethyst",
+			"tfg:earth/geode/barite",
+			"tfg:earth/geode/calcite",
+			"tfg:earth/geode/gypsum",
+			"tfg:earth/geode/opal",
+			"tfg:earth/geode/pyrite",
+			"tfg:earth/geode/quartzite"
+		],
+		[
+			"tfc:vein/gabbro_dike",
+			"tfc:vein/diorite_dike"
+		],
+		[],
+		[],
+		"#tfg:mars_veins",
+		[],
+		"#tfg:mars_small_rock_features",
+		[
+		],
+		[
+			"tfg:mars/hardening"
+		]
+	],
+	"has_precipitation": false,
+	"spawn_costs": {
+		"ad_astra:martian_raptor": {
+			"charge": 0.2,
+			"energy_budget": 0.015
+		}
+	},
+	"spawners": {
+		"ambient": [],
+		"axolotls": [],
+		"creature": [],
+		"misc": [],
+		"monster": [
+		
+		],
+		"underground_water_creature": [],
+		"water_ambient": [],
+		"water_creature": []
+	},
+	"temperature": 0.8
+}

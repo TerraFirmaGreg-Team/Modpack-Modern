@@ -17,6 +17,7 @@ jobs:
   info:
     name: 🖥️ Project Info
     runs-on: ubuntu-latest
+    if: ${{  github.repository_owner == 'TerraFirmaGreg-Team' }}
     outputs:
       project_version: ${{ steps.check.outputs.project_version }}
       project_name: ${{ steps.check.outputs.project_name }}
@@ -27,9 +28,10 @@ jobs:
       diff: ${{ steps.read_diff.outputs.diff }}
       exists: ${{ steps.check.outputs.exists }}
       make_release: ${{ steps.check.outputs.make_release }}
+      make_pr: ${{ steps.check.outputs.make_pr }}
     
     steps:
-      - name: Checkout
+      - name: 📦 Checkout
         uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 0
@@ -161,8 +163,6 @@ jobs:
         id: check
         shell: bash
         run: |
-          echo "make_release=${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'false' }}" >> $GITHUB_OUTPUT
-          echo "exists=${{ steps.check_tag.outputs.exists }}" >> $GITHUB_OUTPUT
           echo "project_name=${{ steps.pakku_info.outputs.name }}" >> $GITHUB_OUTPUT
           MC_VERSIONS_JSON='${{ steps.pakku_lock_info.outputs.mc_versions }}'
           MINECRAFT_VERSION=$(echo "$MC_VERSIONS_JSON" | jq -r '.[0]' | tr -d '[]"')
@@ -170,11 +170,14 @@ jobs:
 
           if ${{ env.DEV_ENVIRONMENT == 'true' }}; then
             echo "project_version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
-            echo "release_type=Unreleased" >> $GITHUB_OUTPUT
           else
             echo "project_version=${{ steps.changelog.outputs.version }}" >> $GITHUB_OUTPUT
-            echo "release_type=${{ steps.pakku_info.outputs.release_type }}" >> $GITHUB_OUTPUT
           fi
+
+          echo "release_type=${{ steps.pakku_info.outputs.release_type }}" >> $GITHUB_OUTPUT
+          echo "exists=${{ steps.check_tag.outputs.exists }}" >> $GITHUB_OUTPUT
+          echo "make_release=${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'false' }}" >> $GITHUB_OUTPUT
+          echo "make_pr=${{ steps.check_tag.outputs.exists  == 'false'  && env.DEV_ENVIRONMENT == 'true' }}" >> $GITHUB_OUTPUT
 
       - name: 📄 Format diff
         id: format_diff
@@ -186,27 +189,6 @@ jobs:
             ${{ steps.read_diff.outputs.diff }}
             ```
 
-      - name: 🔍 Create Pull Request if tag not found
-        id: create_pr
-        if: ${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'true' && github.repository == 'TerraFirmaGreg-Team/Modpack-Modern' }}
-        uses: devops-infra/action-pull-request@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          source_branch: dev
-          target_branch: main
-          title: 'Release: ${{ steps.changelog.outputs.version }}'
-          body: |
-            **This is an automated Pull Request from the dev branch.**
-
-            📃 **Name**: ${{ steps.check.outputs.project_name }}
-            📃 **Release**:  `${{ steps.changelog.outputs.version }}`
-            📃 **Release Type**: `${{ steps.pakku_info.outputs.release_type }}`
-            📃 **Game Version**: `${{ steps.check.outputs.minecraft_version }}`
-
-            ${{ steps.changelog.outputs.description }}
-          reviewer: Xikaro
-          ignore_users: "dependabot"
-        
       - name: 📝 Generate Github Summary
         uses: WcAServices/markdown-template-action@v1.1.1
         with:
@@ -218,12 +200,73 @@ jobs:
 
             📃 **Dev Environment**: `${{ env.DEV_ENVIRONMENT }}`
             📃 **Tag Exists**: `${{ steps.check.outputs.exists }}`
+            📃 **Make Pull Request**: `${{ steps.check.outputs.make_pr }}`
             📃 **Make Release**: `${{ steps.check.outputs.make_release }}`
             
 
             ${{ steps.changelog_dev.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
   
+  create-pr:
+    name: 🤝 Create Release PR
+    needs: [info]
+    if: ${{ needs.info.outputs.make_pr == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+
+      - name: 📄 Changelog Parser
+        id: changelog
+        uses: coditory/changelog-parser@v1.0.2
+        with:
+          path: CHANGELOG.md
+        continue-on-error: true
+
+      - name: 🔍 Check existing PRs
+        id: check_existing_pr
+        uses: actions/github-script@v7.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          result-encoding: string
+          script: |
+            try {
+              const { data: prs } = await github.rest.pulls.list({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'open',
+                head: `${context.repo.owner}:dev`,
+                base: 'main'
+              });
+
+              core.setOutput('exists', prs.length > 0);
+              console.log(`ℹ️ PR exists: ${prs.length > 0}`);
+            } catch (error) {
+              core.setFailed(`❌ PR check failed: ${error}`);
+              core.setOutput('exists', true);
+            }
+
+      - name: 🔍 Create Pull Request if tag not found
+        if: ${{ steps.check_existing_pr.outputs.exists == 'false' }}
+        uses: devops-infra/action-pull-request@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          source_branch: dev
+          target_branch: main
+          reviewer: Xikaro
+          ignore_users: "dependabot"
+          title: 'Release: ${{ steps.changelog.outputs.version }}'
+          body: |
+            **This is an automated Pull Request from the dev branch.**
+            📃 **Name**: ${{ needs.info.outputs.project_name }}
+            📃 **Release**:  `${{ steps.changelog.outputs.version }}`
+            📃 **Release Type**: `${{ needs.info.outputs.release_type }}`
+
+            ${{ needs.info.outputs.changelog }}
 
   build-modpack:
     name: 📦 Build Modpack
