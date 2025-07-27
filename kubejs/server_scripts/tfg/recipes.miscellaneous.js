@@ -964,4 +964,50 @@ function registerTFGMiscellaneousRecipes(event) {
 		.circuit(4)
 		.duration(800)
 		.EUt(GTValues.VA[GTValues.MV])
+
+	// Universal compost
+	const COMPOST_COLORS = ['browns', 'greens'];
+	COMPOST_COLORS.forEach(color => {
+		// Lows via crafting with mortar
+		event.shapeless(Item.of(`tfg:universal_compost_${color}`, 1), [
+				Ingredient.of([`#tfc:compost_${color}_low`]).subtract([`tfg:universal_compost_${color}`]),
+				'#forge:tools/mortars'
+			])
+			.id(`tfg:shapeless/universal_compost_${color}_low`)
+		
+		// Mediums via crafting with mortar
+		event.shapeless(Item.of(`tfg:universal_compost_${color}`, 2), [
+				`#tfc:compost_${color}`,
+				'#forge:tools/mortars'
+			])
+			.id(`tfg:shapeless/universal_compost_${color}_medium`)
+			
+		// Highs via crafting with mortar
+		event.shapeless(Item.of(`tfg:universal_compost_${color}`, 4), [
+				`#tfc:compost_${color}_high`,
+				'#forge:tools/mortars'
+			])
+			.id(`tfg:shapeless/universal_compost_${color}_high`)
+
+		// Lows via forge hammer
+		event.recipes.gtceu.forge_hammer(`tfg:universal_compost_${color}_low`)
+			.itemInputs(Ingredient.of(`#tfc:compost_${color}_low`).subtract(`tfg:universal_compost_${color}`))
+			.itemOutputs(`tfg:universal_compost_${color}`)
+			.duration(20)
+			.EUt(8)
+		
+		// Mediums via forge hammer
+		event.recipes.gtceu.forge_hammer(`tfg:universal_compost_${color}_medium`)
+			.itemInputs(`#tfc:compost_${color}`)
+			.itemOutputs(Item.of(`tfg:universal_compost_${color}`, 2))
+			.duration(20)
+			.EUt(8)
+
+		// Highs via forge hammer
+		event.recipes.gtceu.forge_hammer(`tfg:universal_compost_${color}_high`)
+			.itemInputs(`#tfc:compost_${color}_high`)
+			.itemOutputs(Item.of(`tfg:universal_compost_${color}`, 4))
+			.duration(20)
+			.EUt(8)
+	})
 }
