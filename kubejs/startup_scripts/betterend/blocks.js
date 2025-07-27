@@ -97,24 +97,13 @@ function registerBetterEndBlocks(event) {
 
 	// ??
 
-	event.create('betterend:crystal_grass', 'tfg:decorative_plant')
-		//.tagItem('tfg:mars_plants')
-		.tagBlock('minecraft:replaceable')
+	createPlant('betterend:crystal_grass', 'unused')
 		.box(3, 0, 3, 13, 12, 13)
-
-	event.create('betterend:blooming_cooksonia', 'tfg:decorative_plant')
-		//.tagItem('tfg:mars_plants')
-		.tagBlock('minecraft:replaceable')
+	createPlant('betterend:blooming_cooksonia', 'unused')
 		.box(3, 0, 3, 13, 12, 13)
-
-	event.create('betterend:fracturn', 'tfg:decorative_plant')
-		//.tagItem('tfg:mars_plants')
-		.tagBlock('minecraft:replaceable')
+	createPlant('betterend:fracturn', 'unused')
 		.box(3, 0, 3, 13, 12, 13)
-
-	event.create('betterend:jungle_grass', 'tfg:decorative_plant')
-		//.tagItem('tfg:mars_plants')
-		.tagBlock('minecraft:replaceable')
+	createPlant('betterend:jungle_grass', 'unused')
 		.box(3, 0, 3, 13, 12, 13)
 }
 
