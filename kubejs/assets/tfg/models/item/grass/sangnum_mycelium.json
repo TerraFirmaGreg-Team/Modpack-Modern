@@ -1,0 +1,36 @@
+{
+	"parent": "minecraft:block/cube",
+	"textures": {
+		"0": "tfg:block/grass/mars_dirt",
+		"1": "tfg:block/grass/sangnum_side",
+		"2": "tfg:block/grass/sangnum_top",
+		"particle": "#2"
+	},
+	"elements": [
+		{
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"north": {
+					"texture": "#1"
+				},
+				"east": {
+					"texture": "#1"
+				},
+				"south": {
+					"texture": "#1"
+				},
+				"west": {
+					"texture": "#1"
+				},
+				"up": {
+					"texture": "#2"
+				},
+				"down": {
+					"texture": "#0"
+				}
+			}
+		}
+	],
+	"display": {}
+}

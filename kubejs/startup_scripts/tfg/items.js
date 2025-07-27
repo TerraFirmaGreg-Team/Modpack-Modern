@@ -353,7 +353,12 @@ const registerTFGItems = (event) => {
 	event.create('tfg:rocket_cone_t2')
 		.translationKey('tfg:rocket_cone_t2')
 	//endregion
+
+	//#region Universal compost items
+	event.create('tfg:universal_compost_browns')
+		.tag('tfc:compost_browns_low')
+
+	event.create('tfg:universal_compost_greens')
+		.tag('tfc:compost_greens_low')
+	//#endregion
 }
-
-	
-

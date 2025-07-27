@@ -309,13 +309,23 @@ function registerVintageImprovementsRecipes(event) {
 			}).id(`tfg:vi/coiling/${material.getName()}_single_wire`)
 		}
 
-		if (material.hasFlag(MaterialFlags.GENERATE_FINE_WIRE) && singleWire != null) {
-			event.custom({
-				type: 'vintageimprovements:coiling',
-				ingredients: [ChemicalHelper.get(TagPrefix.wireGtSingle, material, 1)],
-				results: [ChemicalHelper.get(TagPrefix.wireFine, material, 4)],
-				processingTime: material.getMass() * 3 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/coiling/${material.getName()}_fine_wire`)
+		if (material.hasFlag(MaterialFlags.GENERATE_FINE_WIRE)) {
+			if (singleWire != null) {
+				event.custom({
+					type: 'vintageimprovements:coiling',
+					ingredients: [ChemicalHelper.get(TagPrefix.wireGtSingle, material, 1)],
+					results: [ChemicalHelper.get(TagPrefix.wireFine, material, 4)],
+					processingTime: material.getMass() * 3 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+				}).id(`tfg:vi/coiling/${material.getName()}_fine_wire`)
+			}
+			else {
+				event.custom({
+					type: 'vintageimprovements:coiling',
+					ingredients: [ChemicalHelper.get(TagPrefix.ingot, material, 1)],
+					results: [ChemicalHelper.get(TagPrefix.wireFine, material, 8)],
+					processingTime: material.getMass() * 3 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+				}).id(`tfg:vi/coiling/${material.getName()}_fine_wire`)
+			}
 		}
 
 		// #endregion
