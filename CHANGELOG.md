@@ -2,7 +2,11 @@
 
 ## [Unreleased]
 ### Changes
+- Vanilla moss blocks/carpet are now compostable @Pyritie
+- Added missing mixer recipes for turning medium compost greens/browns into compost @Pyritie
+- Adjusted recipe times of the VI machines @Pyritie
 ### Bug fixes
+- Fixed not being able to craft fine wire in a coiling machine for materials that didn't also have normal wire @Pyritie
 
 ## [0.10.4] - 25-07-2025
 ### Changes
