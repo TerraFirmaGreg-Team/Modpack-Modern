@@ -9,7 +9,7 @@ const registerGTCEuMachines = (event) => {
 
 	event.create('nether_dome', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
-		.recipeType('tfg:nether_dome')
+		.recipeType('nether_dome')
 		.appearanceBlock(GTBlocks.CASING_PTFE_INERT)
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle(" CCCCC ", " QQFQQ ", " QQFQQ ", " QQFQQ ", " QQFQQ ", "   F   ")
@@ -86,7 +86,7 @@ const registerGTCEuMachines = (event) => {
 
 	event.create('end_dome', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
-		.recipeType('tfg:end_dome')
+		.recipeType('end_dome')
 		.appearanceBlock(GTBlocks.CASING_TITANIUM_STABLE)
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle(" CCCCC ", " QQFQQ ", " QQFQQ ", " QQFQQ ", " QQFQQ ", "   F   ", "       ")
@@ -177,7 +177,7 @@ const registerGTCEuMachines = (event) => {
 	event.create('steam_bloomery', 'multiblock')
 		.machine((holder) => new $SteamMulti(holder, 8))
 		.rotationState(RotationState.NON_Y_AXIS)
-		.recipeType('tfg:steam_bloomery')
+		.recipeType('steam_bloomery')
 		.recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)
 		.appearanceBlock(GTBlocks.CASING_BRONZE_BRICKS)
 		.pattern(definition => FactoryBlockPattern.start()
