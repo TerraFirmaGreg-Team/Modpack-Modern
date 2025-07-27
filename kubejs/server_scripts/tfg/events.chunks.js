@@ -1,6 +1,8 @@
 // priority: 0
 "use strict";
 
+const $HeightMap = Java.loadClass("net.minecraft.world.level.levelgen.Heightmap")
+
 TFCEvents.createChunkDataProvider('mars', event => {
 
     const rain = TFC.misc.lerpFloatLayer(0, 0, 0, 0);
@@ -14,15 +16,14 @@ TFCEvents.createChunkDataProvider('mars', event => {
         .affine(6, 12)
         .scaled(6, 18, 0, 1)
 
-    // Precompute the surface & aquifer heights as constants as this is nether and does not realistically change
-    var heights = [];
-    var i = 0;
-    while (i < 256) {
-        heights.push(127);
-        i++;
-    }
+    const rockNoise = TFC.misc.newOpenSimplex2D(event.worldSeed + 8008135)
+        .octaves(3)
+        .scaled(0x80000000, 0x7fffffff) // Integer.MIN_VALUE to Integer.MAX_VALUE
+        .spread(0.0000056) // spread it out so the vaiance is small
+
+    // Precompute the aquifer heights as constants as this is not used
     var aquifer = [];
-    i = 0;
+    let i = 0;
     while (i < 16) {
         aquifer.push(32);
         i++;
@@ -49,10 +50,16 @@ TFCEvents.createChunkDataProvider('mars', event => {
     });
 
     event.full((data, chunk) => {
+        let heights = [];
+        for (let z = 0; z < 16; z++) {
+            for (let x = 0; x < 16; x++) {
+                heights[x + 16 * z] = chunk.getHeight($HeightMap.Types.OCEAN_FLOOR_WG, x, z);
+            }
+        }
         data.generateFull(heights, aquifer);
     });
 
     event.rocks((x, y, z, surfaceY, cache, rockLayers) => {
-        return rockLayers.sampleAtLayer(0, 0);
+        return rockLayers.sampleAtLayer(rockNoise.noise(x, z), (surfaceY - y) / 35);
     });
 })

@@ -25,8 +25,10 @@
 		"water_fog_color": 329011
 	},
 	"features": [
+		[
+			"tfc:erosion"
+		],
 		[],
-		"#tfg:mars_craters",
 		[
 			"tfg:earth/geode/amethyst",
 			"tfg:earth/geode/barite",
@@ -37,20 +39,19 @@
 			"tfg:earth/geode/quartzite"
 		],
 		[
-			"tfc:vein/gabbro_dike",
-			"tfc:vein/diorite_dike"
+			"tfc:random_empty_hot_spring"
 		],
 		[],
 		[],
 		"#tfg:mars_veins",
 		[],
-		"#tfg:mars_small_rock_features",
+		[
+			"#tfc:feature/boulders"
+		],
 		[
 
 		],
-		[
-			"tfg:mars/hardening"
-		]
+		[]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

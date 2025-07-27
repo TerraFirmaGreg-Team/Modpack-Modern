@@ -13,37 +13,95 @@
       "continentalness": -0.5,
       "rock_layer_settings": {
         "rocks": {
-          "mars": {
-            "raw": "tfc:rock/raw/chert",
-            "hardened": "tfc:rock/hardened/chert",
-            "gravel": "tfc:rock/gravel/chert",
-            "cobble": "tfc:rock/cobble/chert",
-            "sand": "tfc:sand/red",
-            "sandstone": "tfc:raw_sandstone/red"
-          }
+            "mars": {
+                "raw": "ad_astra:mars_stone",
+                "hardened": "tfg:rock/hardened_mars_stone",
+                "gravel": "ad_astra:mars_cobblestone",
+                "cobble": "ad_astra:mars_cobblestone",
+                "sand": "ad_astra:mars_sand",
+                "sandstone": "ad_astra:mars_stone",
+                "spike": "tfg:spike/mars_stone_spike",
+                "loose": "tfg:loose/mars_stone"
+            },
+            "venus": {
+                "raw": "ad_astra:venus_stone",
+                "hardened": "tfg:rock/hardened_venus_stone",
+                "gravel": "ad_astra:venus_cobblestone",
+                "cobble": "ad_astra:venus_cobblestone",
+                "sand": "ad_astra:venus_sand",
+                "sandstone": "ad_astra:venus_sandstone",
+                "spike": "tfg:spike/venus_stone_spike",
+                "loose": "tfg:loose/venus_stone"
+            },
+            "red_granite": {
+                "raw": "gtceu:red_granite",
+                "hardened": "tfg:rock/hardened_red_granite",
+                "gravel": "gtceu:red_granite_cobblestone",
+                "cobble": "gtceu:red_granite_cobblestone",
+                "sand": "tfc:sand/red",
+                "sandstone": "tfc:raw_sandstone/red",
+                "spike": "tfg:spike/red_granite_spike",
+                "loose": "tfg:loose/red_granite"
+            },
+            "granite": "tfc:granite",
+            "diorite": "tfc:diorite",
+            "gabbro": "tfc:gabbro",
+            "shale": "tfc:shale",
+            "claystone": "tfc:claystone",
+            "limestone": "tfc:limestone",
+            "conglomerate": "tfc:conglomerate",
+            "dolomite": "tfc:dolomite",
+            "chert": "tfc:chert",
+            "chalk": "tfc:chalk",
+            "basalt": "tfc:basalt",
+            "dacite": "tfc:dacite"
         },
-        "layers": [
-          {
-            "id": "mars",
-            "layers": {
-              "mars": "bottom"
-            }
-          }
-        ],
         "bottom": [
-          "mars"
+            "red_granite",
+            "gabbro",
+            "diorite",
+            "granite"
+        ],
+        "layers": [
+            {
+                "id": "mix",
+                "layers": {
+                    "mars": "bottom",
+                    "dolomite": "bottom",
+                    "chert": "bottom",
+                    "conglomerate": "bottom",
+                    "red_granite": "bottom",
+                    "basalt": "bottom",
+                    "dacite": "bottom",
+                    "venus": "bottom",
+                    "shale": "bottom"
+                }
+            },
+            {
+                "id": "sedimentary",
+                "layers": {
+                    "mars": "mix",
+                    "chalk": "mix",
+                    "shale": "mix",
+                    "dolomite": "mix",
+                    "limestone": "mix",
+                    "claystone": "mix",
+                    "conglomerate": "mix",
+                    "chert": "mix"
+                }
+            }
         ],
         "ocean_floor": [
-          "mars"
+          "sedimentary"
         ],
         "volcanic": [
-          "mars"
+          "sedimentary"
         ],
         "land": [
-          "mars"
+          "sedimentary"
         ],
         "uplift": [
-          "mars"
+          "sedimentary"
         ]
       }
     },

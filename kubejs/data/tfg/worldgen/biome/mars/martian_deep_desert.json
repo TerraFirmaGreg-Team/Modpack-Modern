@@ -22,8 +22,10 @@
 		"water_fog_color": 329011
 	},
 	"features": [
+		[
+			"tfc:erosion"
+		],
 		[],
-		"#tfg:mars_craters",
 		[
 			"tfg:earth/geode/amethyst",
 			"tfg:earth/geode/barite",
@@ -42,9 +44,7 @@
 		[
 
 		],
-		[
-			"tfg:mars/hardening"
-		]
+		[]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
