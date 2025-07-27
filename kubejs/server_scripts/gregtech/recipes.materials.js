@@ -132,7 +132,7 @@ function registerGTCEUMetalRecipes(event) {
 			event.recipes.gtceu.laser_engraver(`tfg:engrave_${material.getName()}_gem_to_${new String(headTagPrefix.name).toLowerCase()}_head`)
 				.itemInputs(gemItem.copyWithCount(Math.floor(headTagPrefix.materialAmount() / GTValues.M)))
 				.notConsumable(ChemicalHelper.get(TagPrefix.lens, GTMaterials.Glass, 1))
-				.circuit(cirucitMeta)
+				.circuit(circuitMeta)
 				.itemOutputs(toolHeadItem)
 				.duration(material.getMass() * 6)
 				.EUt(GTValues.VA[GTValues.LV])
@@ -241,7 +241,7 @@ function registerGTCEUMetalRecipes(event) {
 
 		event.remove({ id: `gtceu:shaped/plate_double_${material.getName()}` })
 
-		if (material == GTMaterials.CobaltBrass) {
+		if (material === GTMaterials.CobaltBrass) {
 			event.recipes.greate.compacting(doublePlateItem, [plateItem, plateItem, 'tfc:powder/flux'])
 				.heated()
 				.recipeTier(1)
@@ -253,8 +253,7 @@ function registerGTCEUMetalRecipes(event) {
 				.circuit(2)
 				.duration(20 * 5.8)
 				.EUt(24)
-		}
-		else if (material.getProperty(TFGPropertyKey.TFC_PROPERTY) == null) {
+		} else if (material.getProperty(TFGPropertyKey.TFC_PROPERTY) === null) {
 			event.recipes.greate.compacting(doublePlateItem, [plateItem, plateItem, 'tfc:powder/flux'])
 				.heated()
 				.recipeTier(2)

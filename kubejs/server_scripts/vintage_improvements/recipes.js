@@ -317,8 +317,7 @@ function registerVintageImprovementsRecipes(event) {
 					results: [ChemicalHelper.get(TagPrefix.wireFine, material, 4)],
 					processingTime: material.getMass() * 3 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 				}).id(`tfg:vi/coiling/${material.getName()}_fine_wire`)
-			}
-			else {
+			} else {
 				event.custom({
 					type: 'vintageimprovements:coiling',
 					ingredients: [ChemicalHelper.get(TagPrefix.ingot, material, 1)],

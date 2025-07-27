@@ -32,6 +32,14 @@ StartupEvents.registry('fluid', event => {
 	registerAE2Fluids(event)
 })
 
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+	registerGTCEuRecipeTypes(event)
+})
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+	registerGTCEuMachines(event)
+})
+
 GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
 	registerAE2TagPrefixes(event)
 	registerTFCTagPrefixes(event)
