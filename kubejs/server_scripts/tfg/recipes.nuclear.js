@@ -187,7 +187,84 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(-32)
 		.duration(20*2)
 
+	//#endregion
 
+	//#region FLiBe Line
+
+	event.recipes.gtceu.evaporation_tower_tfg('raw_rich_brine')
+		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 20000))
+		.outputFluids(Fluid.of('gtceu:raw_rich_brine', 1000))
+		.duration(20*50)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.chemical_reactor('hydrogen_iodide_to_hot_iodine_brine')
+		.inputFluids(Fluid.of('gtceu:hydrogen_iodide', 1000))
+		.inputFluids(Fluid.of('gtceu:raw_rich_brine', 1000))
+		.outputFluids(Fluid.of('gtceu:sodium_potassium', 1000))
+		.outputFluids(Fluid.of('gtceu:hot_iodine_brine', 1000))
+		.duration(20*24)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.chemical_reactor('basic_bromine_exhaust_to_hot_iodine_brine')
+		.inputFluids(Fluid.of('gtceu:basic_bromine_exhaust', 1000))
+		.inputFluids(Fluid.of('gtceu:raw_rich_brine', 1000))
+		.outputFluids(Fluid.of('gtceu:sodium_potassium', 1000))
+		.outputFluids(Fluid.of('gtceu:hot_iodine_brine', 1000))
+		.outputFluids(Fluid.of('gtceu:steam', 1000))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.evaporation_tower_tfg('brominated_iodine_vapor')
+		.inputFluids(Fluid.of('gtceu:hot_iodine_brine', 10000))
+		.itemOutputs('#forge:dusts/magnesium_chloride')
+		.outputFluids(Fluid.of('gtceu:brominated_iodine_vapor', 1000))
+		.duration(20*50)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.chemical_reactor('lithium_carbonate')
+		.inputFluids(Fluid.of('gtceu:brominated_iodine_vapor', 1000))
+		.itemInputs('#forge:dusts/sodium_hydroxide')
+		.itemOutputs('#forge:dusts/lithium_carbonate')
+		.outputFluids(Fluid.of('gtceu:basic_bromine_exhaust', 1000))
+		.duration(20*54)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.chemical_reactor('lithium_fluoride')
+		.inputFluids(Fluid.of('gtceu:hydrofluoric_acid', 1000))
+		.itemInputs('#forge:dusts/lithium_carbonate')
+		.itemOutputs('#forge:gems/lithium_fluoride')
+		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
+		.outputFluids(Fluid.of('minecraft:water', 1000))
+		.duration(20*36)
+		.EUt(GTValues.VA[GTValues.IV])
+
+	event.recipes.gtceu.chemical_reactor('tetrafluoroberyllate')
+		.inputFluids(Fluid.of('gtceu:hydrofluoric_acid', 1000))
+		.itemInputs('#forge:purified_ores/beryllium')
+		.itemOutputs('#forge:gems/tetrafluoroberyllate')
+		.outputFluids(Fluid.of('minecraft:water', 1000))
+		.duration(20*36)
+		.EUt(GTValues.VA[GTValues.IV])
+
+	event.recipes.gtceu.alloy_blast_smelter('dirty_flibe')
+		.inputFluids(Fluid.of('gtceu:hydrofluoric_acid', 1000))
+		.inputFluids(Fluid.of('gtceu:helium', 1000))
+		.inputFluids(Fluid.of('minecraft:water', 1000))
+		.itemInputs('#forge:gems/lithium_fluoride')
+		.itemInputs('#forge:gems/tetrafluoroberyllate')
+		.outputFluids(Fluid.of('gtceu:dirty_flibe', 1000))
+		.blastFurnaceTemp(3600)
+		.duration(20*36)
+		.EUt(GTValues.VA[GTValues.IV])
+
+	event.recipes.gtceu.electrolyzer('flibe')
+		.inputFluids(Fluid.of('gtceu:dirty_flibe', 1000))
+		.outputFluids(Fluid.of('gtceu:flibe', 1000))
+		.itemOutputs('#forge:dusts/chromium')
+		.itemOutputs('gtceu:nickel_dust')
+		.itemOutputs('gtceu:iron_dust')
+		.duration(20*36)
+		.EUt(GTValues.VA[GTValues.IV])
 	
 
 }

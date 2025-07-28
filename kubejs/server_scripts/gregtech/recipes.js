@@ -1310,8 +1310,8 @@ const registerGTCEURecipes = (event) => {
 		.duration(50)
 		.EUt(2)
 
-	// Nano CPU use Nuclear Tritiated Water
+	// Nano CPU use Nuclear Tritiated Water COMMENTED UNTIL MARS IS OUT
 
-	event.replaceInput({ id: 'gtceu:chemical_reactor/nano_cpu_wafer' }, Fluid.of('gtceu:glowstone'), Fluid.of('gtceu:tritiated_water'))
-	event.replaceInput({ id: 'gtceu:large_chemical_reactor/nano_cpu_wafer' }, Fluid.of('gtceu:glowstone'), Fluid.of('gtceu:tritiated_water'))
+	//event.replaceInput({ id: 'gtceu:chemical_reactor/nano_cpu_wafer' }, Fluid.of('gtceu:glowstone'), Fluid.of('gtceu:tritiated_water'))
+	//event.replaceInput({ id: 'gtceu:large_chemical_reactor/nano_cpu_wafer' }, Fluid.of('gtceu:glowstone'), Fluid.of('gtceu:tritiated_water'))
 }

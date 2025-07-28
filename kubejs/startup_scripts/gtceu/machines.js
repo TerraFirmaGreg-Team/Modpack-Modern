@@ -254,7 +254,7 @@ const registerGTCEuMachines = (event) => {
 		)
 		.workableCasingRenderer(
 			'tfg:block/casings/machine_casing_iron_desh',
-			'gtceu:block/multiblock/hpca', true)
+			'gtceu:block/multiblock/hpca', false)
 
 	//#region Nuclear Multiblocks
 
@@ -292,7 +292,7 @@ const registerGTCEuMachines = (event) => {
 		)
 		.workableCasingRenderer(
 			'gtceu:block/casings/gcym/atomic_casing',
-			'gtceu:block/machines/fermenter', true)
+			'gtceu:block/machines/fermenter', false)
 
 	// Nuclear Heat Exchanger
 
@@ -326,7 +326,7 @@ const registerGTCEuMachines = (event) => {
 		)
 		.workableCasingRenderer(
 			"gtceu:block/casings/gcym/high_temperature_smelting_casing",
-			"gtceu:block/machines/fluid_heater", true)
+			"gtceu:block/machines/fluid_heater", false)
 
 	// Nuclear Fission Reactor
 
@@ -360,6 +360,37 @@ const registerGTCEuMachines = (event) => {
 		)
 		.workableCasingRenderer(
 			"gtceu:block/casings/gcym/atomic_casing",
-			"gtceu:block/machines/electromagnetic_separator", true)
+			"gtceu:block/machines/electromagnetic_separator", false)
+
+	//#endregion
+
+	//#region Evaporation Tower
+
+	event.create('evaporation_tower_tfg', 'multiblock')
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('evaporation_tower_tfg')
+		.noRecipeModifier()
+		.appearanceBlock(() => Block.getBlock('gtceu:stainless_evaporation_casing'))
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle('ZBZ','CCC','CCC','CCC',' A ')
+			.aisle('BAB','C#C','C#C','C#C','AAA')
+			.aisle('ZXZ','CCC','CCC','CCC',' A ')
+			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('A', Predicates.blocks('gtceu:stainless_evaporation_casing'))
+			.where('B', Predicates.blocks('gtceu:stainless_evaporation_casing')
+				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1)))
+			.where('C', Predicates.blocks('gtceu:stainless_evaporation_casing')
+				.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+			.where('Z', Predicates.blocks('gtceu:aluminium_frame'))
+			.where('#', Predicates.air())
+			.where(' ', Predicates.any())
+			.build()
+		)
+		.workableCasingRenderer(
+			'gtceu:block/casings/solid/machine_casing_stainless_evaporation',
+			'gtceu:block/multiblock/distillation_tower', false)
 
 }
