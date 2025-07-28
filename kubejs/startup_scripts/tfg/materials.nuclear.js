@@ -220,7 +220,7 @@ const registerTFGNuclearMaterials = (event) => {
         .iconSet(GTMaterialIconSet.METALLIC)
         .color(0x216614)
         .radioactiveHazard(1000000)
-        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.NO_SMELTING)
+        .flags(GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.NO_SMELTING)
 
     event.create('thorium_pellet')
         .ingot()
@@ -228,7 +228,7 @@ const registerTFGNuclearMaterials = (event) => {
         .iconSet(GTMaterialIconSet.METALLIC)
         .color(0x631e5a)
         .radioactiveHazard(100000)
-        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.NO_SMELTING)
+        .flags(GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.NO_SMELTING)
 
     event.create('plutonium_pellet')
         .ingot()
@@ -236,7 +236,7 @@ const registerTFGNuclearMaterials = (event) => {
         .iconSet(GTMaterialIconSet.METALLIC)
         .color(0xc91414)
         .radioactiveHazard(10000000)
-        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.NO_SMELTING)
+        .flags(GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.NO_SMELTING)
 
     event.create('tbu-232_pellet')
         .ingot()
@@ -244,7 +244,7 @@ const registerTFGNuclearMaterials = (event) => {
         .color(0xaa55ba)
         .secondaryColor(0xECECEC)
         .radioactiveHazard(10000000)
-        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.NO_SMELTING)
+        .flags(GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.NO_SMELTING)
 
     //#endregion
 
