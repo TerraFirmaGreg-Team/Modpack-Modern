@@ -408,6 +408,8 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfc:can_landslide', 'tfg:grass/amber_mycelium')
 	event.add('tfc:can_landslide', 'tfg:grass/rusticus_mycelium')
 	event.add('tfc:can_landslide', 'tfg:grass/sangnum_mycelium')
+	event.add('minecraft:mushroom_grow_block', '#tfc:dirt')
+	event.add('minecraft:mushroom_grow_block', '#tfc:grass')
 	// #endregion
 
 	event.add('tfg:harvester_harvestable', '#tfc:fruit_tree_leaves')
