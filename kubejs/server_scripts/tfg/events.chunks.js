@@ -30,10 +30,10 @@ TFCEvents.createChunkDataProvider('mars', event => {
     }
 
     event.partial((data, chunk) => {
-        var x = chunk.pos.minBlockX;
-        var z = chunk.pos.minBlockZ;
+        let x = chunk.pos.minBlockX;
+        let z = chunk.pos.minBlockZ;
 
-        var temp = TFC.misc.lerpFloatLayer(
+        let temp = TFC.misc.lerpFloatLayer(
             tempLayer.noise(x, z),
             tempLayer.noise(x, z + 15),
             tempLayer.noise(x + 15, z),

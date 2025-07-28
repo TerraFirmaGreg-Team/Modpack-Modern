@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function registerTFGMoldRecipes(event) {
 
 	event.shaped('tfg:mining_hammer_head_extruder_mold', [

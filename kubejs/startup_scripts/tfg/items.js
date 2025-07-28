@@ -50,8 +50,7 @@ const registerTFGItems = (event) => {
 	event.create('tfg:unfired_chalk')
 		.translationKey('item.tfg.unfired_chalk')
 
-	Color.DYE.forEach((dyeName, dye) =>
-	{
+	Color.DYE.forEach((dyeName, dye) => {
 		event.create(`tfg:wet_${dyeName}_chalk`)
 		.translationKey(`item.tfg.wet_${dyeName}_chalk`)
 		.textureJson({
@@ -353,7 +352,12 @@ const registerTFGItems = (event) => {
 	event.create('tfg:rocket_cone_t2')
 		.translationKey('tfg:rocket_cone_t2')
 	//endregion
+
+	//#region Universal compost items
+	event.create('tfg:universal_compost_browns')
+		.tag('tfc:compost_browns_low')
+
+	event.create('tfg:universal_compost_greens')
+		.tag('tfc:compost_greens_low')
+	//#endregion
 }
-
-	
-

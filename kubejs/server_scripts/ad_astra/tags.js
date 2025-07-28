@@ -105,7 +105,7 @@ const registerAdAstraItemTags = (event) => {
 			event.add('minecraft:logs_that_burn', wood.stripped_log)
 		}
 
-		if (wood.isHardwood == true) {
+		if (wood.isHardwood === true) {
 			event.add('tfg:hardwood', wood.logs)
 		} else {
 			event.add('tfg:softwood', wood.logs)
@@ -350,5 +350,13 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add('tfg:venus_delta_surface_features', 'tfg:venus/surface/stromatolite_tower')
 
 	event.add('tfg:venus_delta_terrain_features', 'tfg:venus/terrain/hot_spring_delta')
+	event.add('tfg:venus_delta_terrain_features', 'tfg:venus/terrain/lava_delta')
 	event.add('tfg:venus_delta_terrain_features', 'tfg:venus/terrain/stromatolite_disk')
+
+	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lakes')
+	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_basalt_gravel')
+	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_basalt_stone')
+	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_geyserite')
+	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_orange_sand')
+	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_yellow_sand')
 }

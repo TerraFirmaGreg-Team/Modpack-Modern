@@ -6,11 +6,11 @@ function registerTFCMaterialsRecipes(event) {
 	forEachMaterial(material => {
 		let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
 
-		if (tfcProperty == null) {
+		if (tfcProperty === null) {
 			return;
 		}
 
-		let outputMaterial = (tfcProperty.getOutputMaterial() == null) ? material : tfcProperty.getOutputMaterial()
+		let outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial()
 
 		// Ingots
 		let ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
@@ -21,7 +21,7 @@ function registerTFCMaterialsRecipes(event) {
 				.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
 				.id(`tfc:heating/metal/${material.getName()}_ingot`)
 
-			if (material != GTMaterials.WroughtIron) {
+			if (material !== GTMaterials.WroughtIron) {
 
 				// Отливка слитка в обычной форме
 				event.recipes.tfc.casting(ingotItem, 'tfc:ceramic/ingot_mold', Fluid.of(outputMaterial.getFluid(), 144), 0.1)
@@ -1244,7 +1244,7 @@ function registerTFCMaterialsRecipes(event) {
 		let tongsStack = Item.of(`tfchotornot:tongs/${material.getName()}`)
 		let tongPartStack = Item.of(`tfchotornot:tong_part/${material.getName()}`)
 
-		if (!tongsStack.isEmpty() && !tongPartStack.isEmpty() && material != GTMaterials.Iron) {
+		if (!tongsStack.isEmpty() && !tongPartStack.isEmpty() && material !== GTMaterials.Iron) {
 			event.recipes.tfc.advanced_shaped_crafting(
 				TFC.isp.of(tongsStack).copyForgingBonus(), [
 					'AA',
@@ -1273,10 +1273,9 @@ function registerTFCMaterialsRecipes(event) {
 
 			// Workaround for limonite/bismuth
 			let materialName = material.getName();
-			if (materialName == "yellow_limonite") {
+			if (materialName === "yellow_limonite") {
 				materialName = "limonite";
-			}
-			else if (materialName == "bismuth") {
+			} else if (materialName === "bismuth") {
 				materialName = "bismuthinite";
 			}
 

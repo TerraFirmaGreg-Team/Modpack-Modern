@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS_} event 
+ */
 const registerAdAstraRecipes = (event) => {
 
 	event.remove({ mod: 'ad_astra' })
@@ -413,7 +416,7 @@ const registerAdAstraRecipes = (event) => {
 		.category(GTRecipeCategories.CHEM_DYES)
 
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
-		if (color != "white") {
+		if (color !== "white") {
 			event.recipes.gtceu.chemical_bath(`tfg:ad_astra_${color}_flag`)
 				.itemInputs('ad_astra:white_flag')
 				.inputFluids(Fluid.of(`tfc:${color}_dye`, 36))

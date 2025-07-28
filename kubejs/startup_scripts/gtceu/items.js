@@ -35,4 +35,5 @@ const registerGTCEuItems = (event) => {
 
     event.create('tfg:chipboard_composite')
     .translationKey('item.chipboard_composite')
+
 }

@@ -56,7 +56,7 @@ function registerTFGFoodRecipes(event) {
 			}
 		})
 
-		$ISPRecipeLogic.RegisterRecipeData(type + "/" + id, inputs, (data.itemOutputProvider === undefined) ? null : data.itemOutputProvider.asCanonClass(), data.itemOutputs.slice(outputFirstIndex).map(i => Item.of(i)))
+		$ISPRecipeLogic.RegisterRecipeData(`${type  }/${  id}`, inputs, (data.itemOutputProvider === undefined) ? null : data.itemOutputProvider.asCanonClass(), data.itemOutputs.slice(outputFirstIndex).map(i => Item.of(i)))
 
 		let r = event.recipes.gtceu[type](id)
 		.duration(duration)
@@ -67,7 +67,7 @@ function registerTFGFoodRecipes(event) {
 		if (data.itemInputs.length > 0) r.itemInputs(data.itemInputs)
 		if (data.fluidInputs.length > 0) r.inputFluids(data.fluidInputs);
 		if (data.fluidOutputs.length > 0) r.outputFluids(data.fluidOutputs);
-		if (text != "") r.addDataString("action", text);
+		if (text !== "") r.addDataString("action", text);
 
 		return r;
 	}
@@ -101,7 +101,6 @@ function registerTFGFoodRecipes(event) {
 			itemInputs: [input],
 			itemOutputs: [out],
 			fluidInputs: (fluid === undefined) ? [] : [fluid],
-			itemInputs: [input],
 			itemOutputProvider: (isFirmaDynamic) ? TFC.isp.of(out).firmaLifeCopyDynamicFood() : TFC.isp.of(out).copyFood().addTrait("firmalife:oven_baked")
 		})
 	}

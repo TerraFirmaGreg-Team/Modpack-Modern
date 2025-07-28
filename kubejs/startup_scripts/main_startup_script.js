@@ -69,10 +69,6 @@ GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
 	registerTFGDimensionMarkers(event)
 })
 
-TFCEvents.registerFoodTrait(event => {
-	registerTFGFoodTraits(event)
-})
-
 Platform.mods.primitive_creatures.name = "Primitive Creatures";
 Platform.mods.tfg.name = "TerraFirmaGreg";
 Platform.mods.kubejs.name = "TerraFirmaGreg";
