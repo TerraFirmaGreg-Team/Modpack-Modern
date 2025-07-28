@@ -614,7 +614,7 @@ function registerTFCMaterialsRecipes(event) {
 					.id(`tfc:heating/small_${material.getName()}_gear`)
 				}
 
-				if (basicGearMetals.has(materialNameString)) {
+				if (material.hasFlag(MaterialFlags.GENERATE_SMALL_GEAR)) {
 					event.recipes.tfc.anvil(`gtceu:small_${material.getName()}_gear`, `#forge:ingots/${material.getName()}`, ['hit_last', 'shrink_second_last', 'draw_third_last'])
 					.tier(tfcProperty.getTier())
 					.id(`tfc:anvil/small_${material.getName()}_gear`)
