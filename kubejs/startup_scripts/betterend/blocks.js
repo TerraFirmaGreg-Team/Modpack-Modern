@@ -97,13 +97,13 @@ function registerBetterEndBlocks(event) {
 
 	// ??
 
-	createPlant(event, 'betterend:crystal_grass', 'unused')
+	createPlant(event, 'crystal_grass', 'unused')
 		.box(3, 0, 3, 13, 12, 13)
-	createPlant(event, 'betterend:blooming_cooksonia', 'unused')
+	createPlant(event, 'blooming_cooksonia', 'unused')
 		.box(3, 0, 3, 13, 12, 13)
-	createPlant(event, 'betterend:fracturn', 'unused')
+	createPlant(event, 'fracturn', 'unused')
 		.box(3, 0, 3, 13, 12, 13)
-	createPlant(event, 'betterend:jungle_grass', 'unused')
+	createPlant(event, 'jungle_grass', 'unused')
 		.box(3, 0, 3, 13, 12, 13)
 }
 
