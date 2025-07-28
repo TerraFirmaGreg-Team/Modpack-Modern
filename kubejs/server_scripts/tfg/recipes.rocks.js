@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function registerTFGRockRecipes(event) {
 
 	// #region Nether rock recipes
@@ -171,7 +174,7 @@ function registerTFGRockRecipes(event) {
 		{ raw: 'ad_astra:mars_cobblestone', hammered: 'ad_astra:mars_sand' },
 		{ raw: 'ad_astra:venus_stone', hammered: 'ad_astra:venus_cobblestone' },
 		{ raw: 'tfg:rock/hardened_venus_stone', hammered: 'ad_astra:venus_cobblestone' },
-		{ raw: 'ad_astra:venus_cobblestone', hammered: 'ad_astra:venus_sand' },,
+		{ raw: 'ad_astra:venus_cobblestone', hammered: 'ad_astra:venus_sand' },
 		{ raw: 'ad_astra:mercury_stone', hammered: 'ad_astra:mercury_cobblestone' },
 		{ raw: 'tfg:rock/hardened_mercury_stone', hammered: 'ad_astra:mercury_cobblestone' },
 		{ raw: 'ad_astra:mercury_cobblestone', hammered: 'tfc:sand/red' },
@@ -530,7 +533,7 @@ function registerTFGRockRecipes(event) {
 				event.stonecutting(x.stair, x.raw).id(`${x.raw}_to_${x.stair}`.replace(/:/g, '_'))
 			}
 
-			if (x.dust != null) {
+			if (x.dust !== null) {
 				event.recipes.gtceu.macerator(`macerate_${x.stair}`.replace(/:/g, '_'))
 					.itemInputs(x.stair)
 					.itemOutputs(x.dust)
@@ -550,7 +553,7 @@ function registerTFGRockRecipes(event) {
 				event.stonecutting(`2x ${x.slab}`, x.raw).id(`${x.raw}_to_${x.slab}`.replace(/:/g, '_'))
 			}
 
-			if (x.dust != null) {
+			if (x.dust !== null) {
 				event.recipes.gtceu.macerator(`macerate_${x.slab}`.replace(/:/g, '_'))
 					.itemInputs(`2x ${x.slab}`)
 					.itemOutputs(x.dust)
@@ -570,7 +573,7 @@ function registerTFGRockRecipes(event) {
 				event.stonecutting(x.wall, x.raw).id(`${x.raw}_to_${x.wall}`.replace(/:/g, '_'))
 			}
 
-			if (x.dust != null) {
+			if (x.dust !== null) {
 				event.recipes.gtceu.macerator(`macerate_${x.wall}`.replace(/:/g, '_'))
 					.itemInputs(x.wall)
 					.itemOutputs(x.dust)
@@ -657,6 +660,13 @@ function registerTFGRockRecipes(event) {
 		.EUt(7)
 		.dimension('ad_astra:moon')
 
+	event.recipes.gtceu.rock_breaker('tfg:moon_cobblestone')
+		.notConsumable('ad_astra:moon_cobblestone')
+		.itemOutputs('ad_astra:moon_cobblestone')
+		.duration(16)
+		.EUt(7)
+		.dimension('ad_astra:moon')
+
 	event.recipes.gtceu.rock_breaker('tfg:moon_deepslate')
 		.notConsumable('ad_astra:moon_deepslate')
 		.itemOutputs('ad_astra:moon_deepslate')
@@ -671,9 +681,23 @@ function registerTFGRockRecipes(event) {
 		.EUt(7)
 		.dimension('ad_astra:moon')
 
+	event.recipes.gtceu.rock_breaker('tfg:glacio_cobblestone')
+		.notConsumable('ad_astra:glacio_cobblestone')
+		.itemOutputs('ad_astra:glacio_cobblestone')
+		.duration(16)
+		.EUt(7)
+		.dimension('ad_astra:moon')
+
 	event.recipes.gtceu.rock_breaker('tfg:mars_stone')
 		.notConsumable('ad_astra:mars_stone')
 		.itemOutputs('ad_astra:mars_stone')
+		.duration(16)
+		.EUt(7)
+		.dimension('ad_astra:mars')
+
+	event.recipes.gtceu.rock_breaker('tfg:mars_cobblestone')
+		.notConsumable('ad_astra:mars_cobblestone')
+		.itemOutputs('ad_astra:mars_cobblestone')
 		.duration(16)
 		.EUt(7)
 		.dimension('ad_astra:mars')
@@ -683,11 +707,39 @@ function registerTFGRockRecipes(event) {
 		.itemOutputs('ad_astra:venus_stone')
 		.duration(16)
 		.EUt(7)
-		.dimension('ad_astra:venus')
+		.dimension('ad_astra:mars')
+
+	event.recipes.gtceu.rock_breaker('tfg:venus_cobblestone')
+		.notConsumable('ad_astra:venus_cobblestone')
+		.itemOutputs('ad_astra:venus_cobblestone')
+		.duration(16)
+		.EUt(7)
+		.dimension('ad_astra:mars')
+
+	event.recipes.gtceu.rock_breaker('tfg:red_granite')
+		.notConsumable('gtceu:red_granite')
+		.itemOutputs('gtceu:red_granite')
+		.duration(16)
+		.EUt(7)
+		.dimension('ad_astra:mars')
+
+	event.recipes.gtceu.rock_breaker('tfg:red_granite_cobblestone')
+		.notConsumable('gtceu:red_granite_cobblestone')
+		.itemOutputs('gtceu:red_granite_cobblestone')
+		.duration(16)
+		.EUt(7)
+		.dimension('ad_astra:mars')
 
 	event.recipes.gtceu.rock_breaker('tfg:mercury_stone')
 		.notConsumable('ad_astra:mercury_stone')
 		.itemOutputs('ad_astra:mercury_stone')
+		.duration(16)
+		.EUt(7)
+		.dimension('ad_astra:mercury')
+
+	event.recipes.gtceu.rock_breaker('tfg:mercury_cobblestone')
+		.notConsumable('ad_astra:mercury_cobblestone')
+		.itemOutputs('ad_astra:mercury_cobblestone')
 		.duration(16)
 		.EUt(7)
 		.dimension('ad_astra:mercury')

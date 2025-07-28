@@ -6,11 +6,11 @@ function registerTFCMaterialsRecipes(event) {
 	forEachMaterial(material => {
 		let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
 
-		if (tfcProperty == null) {
+		if (tfcProperty === null) {
 			return;
 		}
 
-		let outputMaterial = (tfcProperty.getOutputMaterial() == null) ? material : tfcProperty.getOutputMaterial()
+		let outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial()
 
 		// Ingots
 		let ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
@@ -21,7 +21,7 @@ function registerTFCMaterialsRecipes(event) {
 				.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
 				.id(`tfc:heating/metal/${material.getName()}_ingot`)
 
-			if (material != GTMaterials.WroughtIron) {
+			if (material !== GTMaterials.WroughtIron) {
 
 				// Отливка слитка в обычной форме
 				event.recipes.tfc.casting(ingotItem, 'tfc:ceramic/ingot_mold', Fluid.of(outputMaterial.getFluid(), 144), 0.1)
@@ -582,7 +582,7 @@ function registerTFCMaterialsRecipes(event) {
 				if (!smallSpringItem.isEmpty() && !rodItem.isEmpty()) {
 
 					event.recipes.tfc.heating(smallSpringItem, tfcProperty.getMeltTemp())
-						.resultFluid(Fluid.of(outputMaterial.getFluid(), 72))
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 36))
 						.id(`tfc:heating/metal/${material.getName()}_small_spring`)
 
 					event.recipes.tfc.anvil(smallSpringItem, rodItem, ['hit_last', 'bend_second_last', 'bend_third_last'])
@@ -593,9 +593,14 @@ function registerTFCMaterialsRecipes(event) {
 				// Nugget
 				let nuggetItem = ChemicalHelper.get(TagPrefix.nugget, material, 6)
 				if (!nuggetItem.isEmpty()) {
+
+					event.recipes.tfc.heating(`#forge:nuggets/${material.getName()}`, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 144/9))
+						.id(`tfc:heating/metal/${material.getName()}_nugget`)
+
 					event.recipes.tfc.anvil(nuggetItem, ingotItem, ['punch_last', 'hit_second_last', 'punch_third_last'])
 						.tier(tfcProperty.getTier())
-						.id(`tfg:anvil/${material.getName()}_nugget`)
+						.id(`tfc:anvil/${material.getName()}_nugget`)
 				}
 			}
 
@@ -1239,15 +1244,16 @@ function registerTFCMaterialsRecipes(event) {
 		let tongsStack = Item.of(`tfchotornot:tongs/${material.getName()}`)
 		let tongPartStack = Item.of(`tfchotornot:tong_part/${material.getName()}`)
 
-		if (!tongsStack.isEmpty() && !tongPartStack.isEmpty() && material != GTMaterials.Iron) {
-			event.shaped(tongsStack, [
-				'AA',
-				'BC'
-			], {
-				A: tongPartStack,
-				B: '#forge:bolts',
-				C: '#forge:tools/hammers'
-			}).id(`tfchotornot:crafting/tongs/${material.getName()}`)
+		if (!tongsStack.isEmpty() && !tongPartStack.isEmpty() && material !== GTMaterials.Iron) {
+			event.recipes.tfc.advanced_shaped_crafting(
+				TFC.isp.of(tongsStack).copyForgingBonus(), [
+					'AA',
+					'BC'
+				], {
+					A: tongPartStack,
+					B: '#forge:bolts',
+					C: '#forge:tools/hammers'
+				}, 0, 0).id(`tfchotornot:crafting/tongs/${material.getName()}`)
 
 			// Ручка щипцов
 			event.recipes.tfc.heating(tongPartStack, tfcProperty.getMeltTemp())
@@ -1267,10 +1273,9 @@ function registerTFCMaterialsRecipes(event) {
 
 			// Workaround for limonite/bismuth
 			let materialName = material.getName();
-			if (materialName == "yellow_limonite") {
+			if (materialName === "yellow_limonite") {
 				materialName = "limonite";
-			}
-			else if (materialName == "bismuth") {
+			} else if (materialName === "bismuth") {
 				materialName = "bismuthinite";
 			}
 

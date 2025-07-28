@@ -14,6 +14,7 @@ const registerGTCEuMaterialModification = (event) => {
 	const $FLUID_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties')
 	const $HAZARD_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.HazardProperty')
 
+
 	const $MATERIAL_FLAGS = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
 
 	const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys')
@@ -45,7 +46,7 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_FINE_WIRE,
 	} = $MATERIAL_FLAGS
 
-	var metalTooling = [
+	const metalTooling = [
 		GTToolType.AXE,
 		GTToolType.PICKAXE,
 		GTToolType.HARD_HAMMER,
@@ -259,9 +260,9 @@ const registerGTCEuMaterialModification = (event) => {
 	// Hide netherite too
 	GTMaterials.Netherite.getProperty(PropertyKey.TOOL).removeTypes(metalTooling);
 
-	for (var material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
-		var toolProperty = material.getProperty(PropertyKey.TOOL);
-		if (toolProperty == null)
+	for (let material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
+		let toolProperty = material.getProperty(PropertyKey.TOOL);
+		if (toolProperty === null)
 			continue;
 
 		toolProperty.setDurability(toolProperty.getDurability() * 6);
@@ -338,10 +339,9 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Thorium.setMaterialSecondaryARGB(0xcd8dbc)
 
 	
-	global.MINECRAFT_DYE_NAMES.forEach(colorName =>
-	{
-		var material = GTCEuAPI.materialManager.getMaterial(`gtceu:${colorName}_dye`);
-		var property = material.getProperty(PropertyKey.FLUID);
+	global.MINECRAFT_DYE_NAMES.forEach(colorName => {
+		let material = GTCEuAPI.materialManager.getMaterial(`gtceu:${colorName}_dye`);
+		let property = material.getProperty(PropertyKey.FLUID);
 		property.getStorage().store($FluidStorageKeys.LIQUID, () => Fluid.of(`tfc:${colorName}_dye`).fluid, null);
 	});
 
@@ -350,7 +350,8 @@ const registerGTCEuMaterialModification = (event) => {
 	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
 	rose_quartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
-
+	
 	GTCEuAPI.materialManager.getMaterial('tfg:kaolinite').setFormula("Al2Si2O5(OH)4", true)
 	GTCEuAPI.materialManager.getMaterial('tfg:vitrified_pearl').setFormula("(Al2Si2O5(OH)4)(BeK4N5)", true)
+
 }

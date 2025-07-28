@@ -7,7 +7,7 @@ const registerTFCItemTags = (event) => {
 	forEachMaterial(material => {
 		if (material.hasProperty(PropertyKey.TOOL)) {
 			for (let [key, value] of Object.entries(global.GTCEU_TOOLTYPES_WHICH_HAS_TFC_DUPS)) {
-				var tool = ToolHelper.get(value, material)
+				let tool = ToolHelper.get(value, material)
 				if (!tool.isEmpty()) {
 					event.add(key, tool.getId())
 				}

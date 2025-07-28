@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 const registerFirmaLifeRecipes = (event) => {
 
 	global.FIRMALIFE_DISABLED_ITEMS.forEach(item => {
@@ -465,12 +468,12 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// Семена фруктов
 	global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, 'minecraft:overworld', 1)
+		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, 'minecraft:overworld', 8, null, GTValues.VA[GTValues.LV])
 	})
 
 	// Семена ягод
 	global.FIRMALIFE_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, null, 1)
+		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, null, 8, null, GTValues.VA[GTValues.LV])
 	})
 
 	//#endregion
@@ -553,16 +556,6 @@ const registerFirmaLifeRecipes = (event) => {
 
 		event.recipes.firmalife.mixing_bowl()
 			.ingredients([
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-				'#tfc:sweetener',
-				'#tfc:sweetener'], 
-				Fluid.of('firmalife:yeast_starter', 400))
-			.outputItem(`8x firmalife:food/${grain}_dough`)
-			.id(`tfg:mixing_bowl/${grain}_dough_2`)
-
-		event.recipes.firmalife.mixing_bowl()
-			.ingredients([
 				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`)], 
 				Fluid.of('minecraft:water', 100))
 			.outputItem(`2x tfc:food/${grain}_dough`)
@@ -575,25 +568,6 @@ const registerFirmaLifeRecipes = (event) => {
 				Fluid.of('minecraft:water', 200))
 			.outputItem(`4x tfc:food/${grain}_dough`)
 			.id(`tfg:mixing_bowl/${grain}_flatbread_dough_2`)
-
-		event.recipes.firmalife.mixing_bowl()
-			.ingredients([
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`)],
-				Fluid.of('minecraft:water', 300))
-			.outputItem(`6x tfc:food/${grain}_dough`)
-			.id(`tfg:mixing_bowl/${grain}_flatbread_dough_3`)
-
-		event.recipes.firmalife.mixing_bowl()
-			.ingredients([
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`)],
-				Fluid.of('minecraft:water', 400))
-			.outputItem(`6x tfc:food/${grain}_dough`)
-			.id(`tfg:mixing_bowl/${grain}_flatbread_dough_4`)
 	})
 
 	event.recipes.firmalife.mixing_bowl()

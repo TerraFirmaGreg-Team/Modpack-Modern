@@ -1,11 +1,40 @@
 # Changelog
+
 ## [Unreleased]
+### Changes
+- Vanilla moss blocks/carpet are now compostable @Pyritie
+- Added missing mixer recipes for turning medium compost greens/browns into compost @Pyritie
+- Adjusted recipe times of the VI machines @Pyritie
+### Bug fixes
+- Fixed not being able to craft fine wire in a coiling machine for materials that didn't also have normal wire @Pyritie
+- Fixed cobalt brass buzzsaws not being obtainable until MV @Pyritie
+
+## [0.10.4] - 25-07-2025
+### Changes
+- Added block interactions for mossy cobble (#1434) @Redeix
+- Clipboards are now craftable earlier (#1432) @Pyritie
+### Bug fixes
+- Fixed key bindings being reverted every time you started the game (#1430)
+- Pushed a patch to fix registry errors on Linux machines. If you are still receiving these errors please report it [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/issues/1431) (#1434) @Redeix
+- Added a temporary workaround for the blue steel diving suit not protecting from lava (#1361) @Pyritie
+- Fixed a broken link in the papermaking field guide entry (#1426) @Pyritie
+- Fixed small springs melting into twice as much as they should (#1435) @Pyritie
+- Fixed framed item frames having the same crafting ratio as regular ones (#1427) @Pyritie
+- Fixed a recipe conflict with kaolinite powder and fire clay in an alloy smelter @Pyritie
+- Fixed some mixing bowl recipes with too many outputs @Pyritie
+
+## [0.10.3] - 23-07-2025
 ### Changes
 - Reduced duration of biodiesel recipes @Pyritie
 - Changed some options of a performance mod, let us know if you find any weird issues! (#1410) @victordlp8
 - Added mortar and pestel recipes for grain to flour @Pyritie
+- Added in-world shift + right-click interactions for bricks. Greens can be used to turn bricks into mossy bricks, and a knife reverts it. Hammers make cracked bricks and mortar repairs them. (#1416) @Redeix
 - Steam can now be pumped into Blaze Burners via the Straw (#1379) @Nyonyix
 - Rearranged some anvil finish sequences to fit TFG convention @Zippity
+- Replaced moon skeletons with Strays @Pyritie
+- Replaced Beneath cave endermen with a different, passive one (same loot table though) @Pyritie
+- Added sandpaper recipes for early game gems @Pyritie
+- Unified observer recipes @Pyritie
 ### Bug fixes
 - Fixed butchery knife crafting recipe (#1405) @Pyritie
 - Fixed new extruder molds missing a tag to work with the curving press (#1412) @Forsuin
@@ -13,6 +42,11 @@
 - Fixed ice never melting in the overworld (#1408) @Pyritie
 - Fixed small gears not having heat data @Zippity
 - Fixed forgeable small gears not being meltable @Zippity
+- Removed most empty tag recipes (#1420) @BlueBoat29
+- Fixed Styrene Butadiene Belt recipe (#1421) @BlueBoat29
+- Fixed deer dropping camelidae meat with a butchery knife @Pyritie
+- Fixed gas pressurizer machine not having a GUI (#1425) @Pyritie
+- Fixed recipe conflict with hoppers and ULV machine casings (#1423) @Pyritie
 
 ## [0.10.2] - 20-07-2025
 ### Changes

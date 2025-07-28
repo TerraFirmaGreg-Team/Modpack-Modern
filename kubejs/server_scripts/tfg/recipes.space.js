@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function registerTFGSpaceRecipes(event) {
 
 	// TODO: Change these to work on any dim as long as they're in an oxygenated area?
@@ -126,7 +129,7 @@ function registerTFGSpaceRecipes(event) {
 		.outputFluids(Fluid.of("minecraft:water", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('sea_water_orbit')
-		.circuit(aaCircuit++)
+		.circuit(aaCircuit)
 		.dimension('ad_astra:earth_orbit')
 		.dimension('ad_astra:moon_orbit')
 		.dimension('ad_astra:mars_orbit')
@@ -246,4 +249,13 @@ function registerTFGSpaceRecipes(event) {
 		.circuit(2)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.HV])
+		
+	//Cryo Fluix Pearl
+	event.recipes.gtceu.autoclave('tfg:cryo_fluix_pearl')
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 576))
+		.itemInputs('tfg:vitrified_pearl')
+		.itemOutputs('tfg:cryo_fluix_pearl')
+		.duration(300)
+		.EUt(GTValues.VA[GTValues.EV])
+		.cleanroom(CleanroomType.CLEANROOM)
 }

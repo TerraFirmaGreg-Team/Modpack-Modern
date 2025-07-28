@@ -56,9 +56,13 @@ const registerAdAstraItemTags = (event) => {
 	event.add('forge:insulation_t1', 'gtceu:vitrified_asbestos_dust')
 	
 	//Insulation Tier 2
-	event.add('forge:insulation_t2', 'tfg:aes_insulation_sheet')
-	event.add('forge:insulation_t2', 'tfg:aes_insulation_roll')
+	event.add('forge:insulation_t2/sheet', 'tfg:aes_insulation_sheet')
+	event.add('forge:insulation_t2/roll', 'tfg:aes_insulation_roll')
 
+	//Rocket Engines
+	event.add('ad_astra:rocket_engine', 'ad_astra:steel_engine')
+	event.add('ad_astra:rocket_engine', 'ad_astra:desh_engine')
+	
 	// Deco blocks
 	const DECO_BLOCKS = [ 'iron', 'steel', 'desh', 'calorite', 'ostrum' ];
 	DECO_BLOCKS.forEach(block => {
@@ -101,7 +105,7 @@ const registerAdAstraItemTags = (event) => {
 			event.add('minecraft:logs_that_burn', wood.stripped_log)
 		}
 
-		if (wood.isHardwood == true) {
+		if (wood.isHardwood === true) {
 			event.add('tfg:hardwood', wood.logs)
 		} else {
 			event.add('tfg:softwood', wood.logs)
@@ -213,7 +217,9 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/black')
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/red')
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/pink')
-
+	
+	event.add('tfc:can_carve', '#ad_astra:moon_stone_replaceables')
+	event.add('tfc:can_carve', '#ad_astra:mars_stone_replaceables')
 
 	event.add('minecraft:rabbits_spawnable_on', '#ad_astra:moon_stone_replaceables')
 	event.add('species:limpet_spawnable_on', '#ad_astra:moon_stone_replaceables')
@@ -275,6 +281,9 @@ const registerAdAstraBiomeTags = (event) => {
 		event.add('tfg:has_structure/moon_rabbit_houses', biome)
 		event.add('species:limpet_spawns', biome)
 	})
+
+	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_dunes')
+	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_deep_desert')
 }
 
 const registerAdAstraEntityTypeTags = (event) => {
@@ -287,6 +296,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'minecraft:shulker',
 		'minecraft:shulker_bullet',
 		'minecraft:skeleton',
+		'minecraft:stray',
 		'species:limpet',
 		'species:birt',
 		'endermanoverhaul:windswept_hills_enderman',

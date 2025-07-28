@@ -104,8 +104,7 @@ function registerAdvancedPeripheralsRecyclingRecipes(event) {
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Cupronickel, 24),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Aluminium, 14),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Copper, 11),
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.StainlessSteel, 8),
-	)
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.StainlessSteel, 8))
 		.duration(GTMaterials.Cupronickel.getMass() * 24)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -116,8 +115,7 @@ function registerAdvancedPeripheralsRecyclingRecipes(event) {
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Cupronickel, 24),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Aluminium, 14),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Copper, 11),
-			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.StainlessSteel, 8),
-	)
+			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.StainlessSteel, 8))
 		.duration(GTMaterials.Cupronickel.getMass() * 24)
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])

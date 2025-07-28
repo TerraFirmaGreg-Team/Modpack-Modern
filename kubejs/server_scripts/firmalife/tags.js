@@ -59,8 +59,8 @@ const registerFirmaLifeBlockTags = (event) => {
 	]
 
 	greenhouse_tiers.forEach(tier => {
-		event.add('firmalife:always_valid_greenhouse_wall', 'firmalife:' + tier + '_greenhouse_door')
-		event.add('firmalife:always_valid_greenhouse_wall', 'firmalife:' + tier + '_greenhouse_trapdoor')
+		event.add('firmalife:always_valid_greenhouse_wall', `firmalife:${  tier  }_greenhouse_door`)
+		event.add('firmalife:always_valid_greenhouse_wall', `firmalife:${  tier  }_greenhouse_trapdoor`)
 	})
 
     //Allows any block with the word "brick" in its id to be used as oven insulation.

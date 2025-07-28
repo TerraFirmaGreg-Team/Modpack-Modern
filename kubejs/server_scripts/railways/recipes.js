@@ -116,7 +116,7 @@ const registerRailWaysRecipes = (event) => {
 			.duration(200)
 			.EUt(4)
 			.category(GTRecipeCategories.CHEM_DYES)
-		if (dye != "white") {
+		if (dye !== "white") {
 			event.recipes.tfc.barrel_sealed(1000)
 				.inputs(`railways:white_conductor_cap`, Fluid.of(`tfc:${dye}_dye`, 288))
 				.outputItem(`railways:${dye}_conductor_cap`)

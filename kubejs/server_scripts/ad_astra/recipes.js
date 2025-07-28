@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS_} event 
+ */
 const registerAdAstraRecipes = (event) => {
 
 	event.remove({ mod: 'ad_astra' })
@@ -96,6 +99,68 @@ const registerAdAstraRecipes = (event) => {
 
 	//#endregion
 
+	//region tier 2 rocket DISABLED UNTIL EV
+	
+	event.remove({ mod: 'gtceu', input: 'gtceu:hot_rocket_alloy_t2_ingot' })
+	/*
+	event.recipes.gtceu.mixer('tfg:rocket_alloy_t2')
+		.itemInputs('19x #forge:dusts/titanium', '3x #forge:small_dusts/chromium', '3x #forge:small_dusts/tin', '3x #forge:small_dusts/aluminium')
+		.inputFluids(Fluid.of('gtceu:vanadium', 540))
+		.itemOutputs('25x #forge:dusts/rocket_alloy_t2')
+		.duration(580)
+		.circuit(5)
+		.EUt(GTValues.VA[GTValues.EV])
+	
+	event.recipes.gtceu.vacuum_freezer('tfg:vacuum_freezer/cool_rocket_alloy_t2_alloy')
+		.itemInputs('#forge:hot_ingots/rocket_alloy_t2')
+		.inputFluids(Fluid.of('gtceu:distilled_water', 500), Fluid.of('tfg:cryogenized_fluix', 288))
+		.itemOutputs('#forge:ingots/rocket_alloy_t2')
+		.duration(120)
+		.EUt(GTValues.VA[GTValues.HV])
+		
+	event.recipes.gtceu.assembler('tfg:rocket_fin_t2')
+		.itemInputs('#forge:plates/rocket_alloy_t2', '#forge:double_plates/titanium')
+		.itemOutputs('tfg:rocket_fin_t2')
+		.duration(180)
+		.circuit(3)
+		.EUt(GTValues.VA[GTValues.EV])
+		
+	event.recipes.gtceu.assembler('tfg:rocket_cone_t2')
+		.itemInputs('gtceu:ev_emitter', '#forge:dense_plates/rocket_alloy_t2', '#forge:double_plates/titanium', '#forge:double_plates/desh')
+		.itemOutputs('tfg:rocket_cone_t2')
+		.duration(1440)
+		.circuit(3)
+		.EUt(GTValues.VA[GTValues.EV])
+	
+	event.recipes.gtceu.assembler('tfg:rocket_desh_engine')
+		.itemInputs(
+			'4x #forge:double_plates/titanium',
+			'4x #gtceu:circuits/ev',
+			'gtceu:ev_electric_pump',
+			'3x gtceu:advanced_power_thruster',
+			'4x #forge:rods/magnetic_neodymium',
+			'#forge:rotors/titanium')
+		.inputFluids(Fluid.of('gtceu:desh', 144 * 12))
+		.itemOutputs('ad_astra:desh_engine')
+		.duration(800)
+		.circuit(3)
+		.EUt(GTValues.VA[GTValues.EV])
+	
+	event.recipes.gtceu.assembler('ad_astra:tier_2_rocket')
+		.itemInputs(
+			'12x #forge:dense_plates/rocket_alloy_t2',
+			'4x tfg:rocket_fin_t2',
+			'1x ad_astra:desh_engine',
+			'1x tfg:rocket_cone_t2',
+			'12x #forge:insulation_t2/roll'
+		)
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 2 * 16))
+		.itemOutputs('ad_astra:tier_2_rocket')
+		.duration(1440)
+		.circuit(3)
+		.EUt(GTValues.VA[GTValues.EV])
+
+*/
 	//#endregion
 
 
@@ -351,7 +416,7 @@ const registerAdAstraRecipes = (event) => {
 		.category(GTRecipeCategories.CHEM_DYES)
 
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
-		if (color != "white") {
+		if (color !== "white") {
 			event.recipes.gtceu.chemical_bath(`tfg:ad_astra_${color}_flag`)
 				.itemInputs('ad_astra:white_flag')
 				.inputFluids(Fluid.of(`tfc:${color}_dye`, 36))

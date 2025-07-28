@@ -1,12 +1,6 @@
 // priority: 0
-"use strict";
 
 const registerGTCEuMachines = (event) => {
-
-	GTMachineUtils.registerCrate(GTMaterials.BismuthBronze, 54, "Bismuth Bronze Crate");
-	GTMachineUtils.registerCrate(GTMaterials.BlackBronze, 54, "Black Bronze Crate");
-	GTMachineUtils.registerDrum(GTMaterials.BismuthBronze, 32000, "Bismuth Bronze Drum");
-	GTMachineUtils.registerDrum(GTMaterials.BlackBronze, 32000, "Black Bronze Drum");
 
 	const $SteamMulti = Java.loadClass('com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine');
 	const $Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
@@ -81,10 +75,9 @@ const registerGTCEuMachines = (event) => {
 			.where('e', GTMachines.ENERGY_INPUT_HATCH[GTValues.MV], Direction.NORTH)
 			.build()
 		)
-		.workableCasingRenderer(
+		.workableCasingModel(
 			"gtceu:block/casings/solid/machine_casing_inert_ptfe",
-			"gtceu:block/machines/gas_collector", false
-		)
+			"gtceu:block/machines/gas_collector")
 
 	//#endregion
 
@@ -171,10 +164,9 @@ const registerGTCEuMachines = (event) => {
 			.where('e', GTMachines.ENERGY_INPUT_HATCH[GTValues.HV], Direction.NORTH)
 			.build()
 		)
-		.workableCasingRenderer(
+		.workableCasingModel(
 			"gtceu:block/casings/solid/machine_casing_stable_titanium",
-			"gtceu:block/machines/gas_collector", false
-		)
+			"gtceu:block/machines/gas_collector")
 
 	//#endregion
 
@@ -213,15 +205,12 @@ const registerGTCEuMachines = (event) => {
 			.where('I', GTMachines.STEAM_IMPORT_BUS, Direction.SOUTH)
 			.build()
 		)
-		.workableCasingRenderer(
+		.workableCasingModel(
 			"gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
-			"tfg:block/steam_bloomery", false
-		)
+			"tfg:block/steam_bloomery")
 	//#endregion
 
-	//#region Large Solar Pannel - From Sky of Grind for the code thanks a lot
-
-	event.create('large_solar_panel', 'multiblock')
+		event.create('large_solar_panel', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.generator(true)
 		.recipeType('large_solar_panel')
@@ -252,8 +241,6 @@ const registerGTCEuMachines = (event) => {
 			.where(' ', Predicates.any())
 			.build()
 		)
-		.workableCasingRenderer(
-			'tfg:block/casings/machine_casing_iron_desh',
-			'gtceu:block/multiblock/hpca', true)
+		.workableCasingModel('tfg:block/casings/machine_casing_iron_desh', 'gtceu:block/multiblock/hpca')
 
 }

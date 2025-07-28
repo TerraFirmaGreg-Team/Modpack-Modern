@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function removeGTCEURecipes(event) {
 
 	event.replaceInput({ input: 'gtceu:wood_drum' }, 'gtceu:wood_drum', 'minecraft:glass')
@@ -718,6 +721,8 @@ function removeGTCEURecipes(event) {
 		event.remove({ id: `gtceu:shaped/${material}_pressure_plate` })
 		event.remove({ id: `gtceu:assembler/${material}_pressure_plate` })	
 	})
+	
+	event.remove({ output: 'gtceu:damascus_steel_crowbar'})
 }
 
 function removeMaceratorRecipe(event, id) {

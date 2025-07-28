@@ -1,9 +1,12 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function registerTFGPapermakingRecipes(event) {
 	
-	var generateVatRecipe = (id, inputItem, fluid, fluidAmount, output) => {
+	const generateVatRecipe = (id, inputItem, fluid, fluidAmount, output) => {
 		event.custom({
 			"type": "firmalife:vat",
 			"input_item": {
@@ -21,9 +24,9 @@ function registerTFGPapermakingRecipes(event) {
 		}).id(id)
 	}
 
-	var generatePotRecipe = (id, maxAmountOfInputItems, inputItem, inputFluid, inputFluidAmount, outputItem, ticks, temperature) => {
+	const generatePotRecipe = (id, maxAmountOfInputItems, inputItem, inputFluid, inputFluidAmount, outputItem, ticks, temperature) => {
 		for (let i = 0; i < maxAmountOfInputItems; i++) {
-			var iPlusOne = i + 1
+			let iPlusOne = i + 1
 			let inputsArray = new Array(iPlusOne)
 			for (let j = 0; j < iPlusOne; j++) {
 				inputsArray[j] = inputItem
@@ -95,7 +98,7 @@ function registerTFGPapermakingRecipes(event) {
 		.outputItem('tfg:soaked_hardwood_strip')
 		.id('tfg:barrel/soak_hardwood_strip')
 	event.recipes.gtceu.chemical_bath('tfg:chemical_bath/soak_hardwood_strips')
-		.inputFluids(  JsonIO.of({ amount: 100, value: { tag: "tfc:any_water" }}))
+		.inputFluids(  JsonIO.of({ amount: 100, value: { tag: "tfc:clean_water" }}))
 		.itemInputs('tfg:hardwood_strip')
 		.itemOutputs('tfg:soaked_hardwood_strip')
 		.duration(200)

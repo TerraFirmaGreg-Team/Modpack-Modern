@@ -739,6 +739,42 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(100)
 		.EUt(30)
 
+	//Cryo Pearl replacements
+    event.shaped('gtceu:ev_emitter', [
+		'ABC',
+		'BDB',
+		'CBA'
+	], {
+		A: '#forge:single_cables/aluminium',
+		B: '#forge:rods/platinum',
+		C: '#gtceu:circuits/ev',
+		D: 'tfg:cryo_fluix_pearl'
+	}).id('gtceu:shaped/emitter_ev')
+
+	event.recipes.gtceu.assembler('emitter_ev')
+		.itemInputs('tfg:cryo_fluix_pearl', '4x #forge:rods/platinum', '2x #gtceu:circuits/ev', '2x #forge:single_cables/aluminium')
+		.itemOutputs('gtceu:ev_emitter')
+		.circuit(1)
+		.duration(100)
+		.EUt(30)
+
+	event.shaped('gtceu:ev_sensor', [
+		'A B',
+		'AC ',
+		'DAA'
+	], {
+		A: '#forge:plates/titanium',
+		B: 'tfg:cryo_fluix_pearl',
+		C: '#forge:rods/platinum',
+		D: '#gtceu:circuits/ev',
+	}).id('gtceu:shaped/sensor_ev')
+
+	event.recipes.gtceu.assembler('sensor_ev')
+		.itemInputs('tfg:cryo_fluix_pearl', '#forge:rods/platinum', '#gtceu:circuits/ev', '4x #forge:plates/titanium')
+		.itemOutputs('gtceu:ev_sensor')
+		.duration(100)
+		.EUt(30)
+	
 	// Temporary
 	event.recipes.gtceu.chemical_bath('quantum_eye')
 		.itemInputs('tfg:vitrified_pearl')
@@ -895,7 +931,7 @@ function registerTFGMiscellaneousRecipes(event) {
 				ChemicalHelper.get(TagPrefix.plate, GTMaterials.HSLASteel, 4),
 				ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 2),
 				ChemicalHelper.get(TagPrefix.rod, GTMaterials.SteelMagnetic, 1),
-				ChemicalHelper.get(TagPrefix.wireFine, GTMaterials[type.materialId], 4),
+				ChemicalHelper.get(TagPrefix.wireFine, GTMaterials[type.materialId], 4)
 			)
 			.inputFluids(Fluid.of('gtceu:silicone_rubber', 144))
 			.itemOutputs(Item.of('tfg:superconductor_coil_small', 4 * multiplier))
@@ -908,8 +944,7 @@ function registerTFGMiscellaneousRecipes(event) {
 				ChemicalHelper.get(TagPrefix.plate, GTMaterials.HSLASteel, 4),
 				ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 2),
 				ChemicalHelper.get(TagPrefix.rod, GTMaterials.SteelMagnetic, 1),
-				ChemicalHelper.get(TagPrefix.wireGtSingle, GTMaterials[type.materialId], 4),
-			)
+				ChemicalHelper.get(TagPrefix.wireGtSingle, GTMaterials[type.materialId], 4))
 			.inputFluids(Fluid.of('gtceu:silicone_rubber', 144))
 			.itemOutputs(Item.of('tfg:superconductor_coil_large', 4 * multiplier))
 			.circuit(7)
@@ -929,4 +964,50 @@ function registerTFGMiscellaneousRecipes(event) {
 		.circuit(4)
 		.duration(800)
 		.EUt(GTValues.VA[GTValues.MV])
+
+	// Universal compost
+	const COMPOST_COLORS = ['browns', 'greens'];
+	COMPOST_COLORS.forEach(color => {
+		// Lows via crafting with mortar
+		event.shapeless(Item.of(`tfg:universal_compost_${color}`, 1), [
+				Ingredient.of([`#tfc:compost_${color}_low`]).subtract([`tfg:universal_compost_${color}`]),
+				'#forge:tools/mortars'
+			])
+			.id(`tfg:shapeless/universal_compost_${color}_low`)
+		
+		// Mediums via crafting with mortar
+		event.shapeless(Item.of(`tfg:universal_compost_${color}`, 2), [
+				`#tfc:compost_${color}`,
+				'#forge:tools/mortars'
+			])
+			.id(`tfg:shapeless/universal_compost_${color}_medium`)
+			
+		// Highs via crafting with mortar
+		event.shapeless(Item.of(`tfg:universal_compost_${color}`, 4), [
+				`#tfc:compost_${color}_high`,
+				'#forge:tools/mortars'
+			])
+			.id(`tfg:shapeless/universal_compost_${color}_high`)
+
+		// Lows via forge hammer
+		event.recipes.gtceu.forge_hammer(`tfg:universal_compost_${color}_low`)
+			.itemInputs(Ingredient.of(`#tfc:compost_${color}_low`).subtract(`tfg:universal_compost_${color}`))
+			.itemOutputs(`tfg:universal_compost_${color}`)
+			.duration(20)
+			.EUt(8)
+		
+		// Mediums via forge hammer
+		event.recipes.gtceu.forge_hammer(`tfg:universal_compost_${color}_medium`)
+			.itemInputs(`#tfc:compost_${color}`)
+			.itemOutputs(Item.of(`tfg:universal_compost_${color}`, 2))
+			.duration(20)
+			.EUt(8)
+
+		// Highs via forge hammer
+		event.recipes.gtceu.forge_hammer(`tfg:universal_compost_${color}_high`)
+			.itemInputs(`#tfc:compost_${color}_high`)
+			.itemOutputs(Item.of(`tfg:universal_compost_${color}`, 4))
+			.duration(20)
+			.EUt(8)
+	})
 }

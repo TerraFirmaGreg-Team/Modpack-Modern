@@ -1516,32 +1516,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["3E175E20C91F168B"]
-			dependency_requirement: "one_completed"
-			description: ["{quests.steam_age.organization.desc}"]
-			icon: "create:clipboard"
-			id: "03CCE899894A3364"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.steam_age.organization.subtitle}"
-			tasks: [
-				{
-					id: "2F56DA36512D2363"
-					item: "create:clipboard"
-					type: "item"
-				}
-				{
-					id: "6A41DD1F9FFD1781"
-					item: "create:crafting_blueprint"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "{quests.steam_age.organization.title}"
-			x: -16.5d
-			y: 10.5d
-		}
-		{
 			dependencies: ["32046292AA5B0E30"]
 			description: ["{quests.steam_age.rotation_speed_controller.desc}"]
 			id: "414835BADD34513F"

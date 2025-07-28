@@ -1215,13 +1215,14 @@ const registerCreateRecipes = (event) => {
 
 	// Дневник
 	event.shaped('create:clipboard', [
-		'A',
-		'B',
-		'C'
+		' AD',
+		' B ',
+		' C '
 	], {
-		A: '#forge:bolts/wrought_iron',
-		B: '#forge:plates/wood',
-		C: 'minecraft:paper'
+		A: '#forge:small_springs',
+		B: '#tfc:lumber',
+		C: 'minecraft:paper',
+		D: '#forge:bolts'
 	}).id('tfg:create/shaped/clipboard')
 
 	// Лестница из железа
@@ -1393,7 +1394,7 @@ const registerCreateRecipes = (event) => {
 	//#region Покраска тулбоксов
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
-		if (dye != 'brown') {
+		if (dye !== 'brown') {
 			event.remove({ id: `create:create.toolbox.color.block.create.${dye}_toolbox` })
 
 			event.recipes.tfc.barrel_sealed(1000)
@@ -1420,7 +1421,7 @@ const registerCreateRecipes = (event) => {
 		.id(`barrel/create/postbox_decolor`)
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
-		if (dye != 'white') {
+		if (dye !== 'white') {
 			event.recipes.tfc.barrel_sealed(1000)
 				.inputs('create:white_postbox', Fluid.of(`tfc:${dye}_dye`, 288))
 				.outputItem(`create:${dye}_postbox`)
@@ -1445,7 +1446,7 @@ const registerCreateRecipes = (event) => {
 		.id(`barrel/create/table_cloth_decolor`)
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
-		if (dye != 'white') {
+		if (dye !== 'white') {
 			event.recipes.tfc.barrel_sealed(1000)
 				.inputs('create:white_table_cloth', Fluid.of(`tfc:${dye}_dye`, 288))
 				.outputItem(`create:${dye}_table_cloth`)
@@ -1471,7 +1472,7 @@ const registerCreateRecipes = (event) => {
 		.id(`barrel/create/seat_decolor`)
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
-		if (dye != "white") {
+		if (dye !== "white") {
 
 			event.recipes.tfc.barrel_sealed(1000)
 				.inputs(`create:white_seat`, Fluid.of(`tfc:${dye}_dye`, 288))
@@ -2381,4 +2382,7 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('#forge:dusts/asurine')
 		.duration(50)
 		.EUt(2)
+
+	event.shapeless('create:sand_paper', ['minecraft:paper', 'tfc:glue', '#forge:sand'])
+		.id('tfg:shapeless/sand_paper')
 }

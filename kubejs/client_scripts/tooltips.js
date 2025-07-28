@@ -1,7 +1,6 @@
 "use strict";
 
-const registerTooltips = (event) =>
-{
+const registerTooltips = (event) => {
 	event.addAdvanced(['gtceu:lv_macerator', 'gtceu:mv_macerator', 'gtceu:hp_steam_macerator'], (item, advanced, text) => {
 		text.add(1, [text.of('§7Only outputs the first slot shown in EMI/JEI until HV.')])
 	})
@@ -75,7 +74,7 @@ const registerTooltips = (event) =>
 		text.add(3, text.of('§7Wear the full set to be §eFully Insulated§7 from ambient temperatures.'))
 	})
 
-	//supports
+	// Supports
 	global.TFC_WOOD_TYPES.forEach(wood => {
 		event.addAdvanced([`tfc:wood/support/${wood}`], (item, advanced, text) => {
 			text.add(1, text.of('§79 x 5 x 9'))
@@ -112,17 +111,16 @@ const registerTooltips = (event) =>
 
 	})
 
-		// Solar Panel
-
+	// Solar Panel
 	event.addAdvanced(['ad_astra:solar_panel'], (item, advanced, text) => {
-		text.add(1, text.of('Produces §664 Eu/t§r on the §6moon§r during the §6day§r'))
+		text.add(1, text.of('Produces §6256 FE/t§r (64 EU/t) on the §6moon§r during the §6day§r'))
 	})
 
 	// MEGA Deprecated 0.10
 	event.addAdvanced(['#megacells:mega_interface'], (item, advanced, text) => {
-		text.add(1, text.of('§cDeprecated cannot be craft anymore'))
+		text.add(1, text.of('§cDeprecated, cannot be crafted any more'))
 	})
 	event.addAdvanced(['#megacells:mega_pattern_provider'], (item, advanced, text) => {
-		text.add(1, text.of('§cDeprecated cannot be craft anymore'))
+		text.add(1, text.of('§cDeprecated, cannot be crafted any more'))
 	})
 }
