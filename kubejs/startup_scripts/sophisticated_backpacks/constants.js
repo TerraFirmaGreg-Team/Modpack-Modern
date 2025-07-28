@@ -17,8 +17,6 @@ global.SOPHISTICATED_BACKPACKS_DISABLED_ITEMS = [
     'sophisticatedbackpacks:xp_pump_upgrade',
     'sophisticatedbackpacks:advanced_compacting_upgrade',
     'sophisticatedbackpacks:compacting_upgrade',
-    'sophisticatedbackpacks:advanced_feeding_upgrade',
-    'sophisticatedbackpacks:feeding_upgrade',
     'sophisticatedbackpacks:anvil_upgrade',
     'sophisticatedbackpacks:copper_backpack',
     'sophisticatedbackpacks:infinity_upgrade',

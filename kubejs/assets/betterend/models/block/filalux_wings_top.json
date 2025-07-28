@@ -1,0 +1,77 @@
+{
+	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "betterend:block/filalux_wings_large",
+		"texture": "betterend:block/filalux_wings_large",
+		"top": "betterend:block/filalux_wings_top",
+		"side": "betterend:block/filalux_wings_top_side"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "PlaneY9",
+			"from": [ -8, 0.125, -8 ],
+			"to": [ 24, 0.126, 24 ],
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#top" },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#top" }
+			}
+		},
+		{
+			"__comment": "PlaneY10",
+			"from": [ 10, 0, 0 ],
+			"to": [ 26, 0.001, 16 ],
+			"rotation": { "origin": [ 10, 0, 0 ], "axis": "z", "angle": 22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "rotation": 270 },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "rotation": 270 }
+			}
+		},
+		{
+			"__comment": "PlaneY10",
+			"from": [ -10, -0.001, 0 ],
+			"to": [ 6, 0, 16 ],
+			"rotation": { "origin": [ 6, 0, 0 ], "axis": "z", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "rotation": 90 },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "rotation": 90 }
+			}
+		},
+		{
+			"__comment": "PlaneY12",
+			"from": [ 0, 0, 10 ],
+			"to": [ 16, 0.001, 26 ],
+			"rotation": { "origin": [ 0, 0, 10 ], "axis": "x", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 16, 16, 0 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneY12",
+			"from": [ 0, -0.001, -10 ],
+			"to": [ 16, 0, 6 ],
+			"rotation": { "origin": [ 0, 0, 6 ], "axis": "x", "angle": 22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 16, 16, 0 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Box14",
+			"from": [ -0.5, -16, -0.5 ],
+			"to": [ 16.5, 0, 16.5 ],
+			"shade": false,
+			"faces": {
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#side" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#side" },
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#side" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#side" }
+			}
+		}
+	]
+}

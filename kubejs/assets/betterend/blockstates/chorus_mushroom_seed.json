@@ -1,0 +1,20 @@
+{
+    "variants": {
+        "age=0": [
+			{ "model": "betterend:block/chorus_mushroom_0" },
+			{ "model": "betterend:block/chorus_mushroom_1" }
+		],
+        "age=1": [
+			{ "model": "betterend:block/chorus_mushroom_2" },
+			{ "model": "betterend:block/chorus_mushroom_3" }
+		],
+        "age=2": [
+			{ "model": "betterend:block/chorus_mushroom_4" },
+			{ "model": "betterend:block/chorus_mushroom_5" }
+		],
+        "age=3": [
+			{ "model": "betterend:block/chorus_mushroom_6" },
+			{ "model": "betterend:block/chorus_mushroom_7" }
+		]
+    }
+}

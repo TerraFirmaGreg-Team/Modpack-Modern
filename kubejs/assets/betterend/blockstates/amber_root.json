@@ -1,0 +1,20 @@
+{
+    "variants": {
+        "age=0": [
+			{ "model": "betterend:block/amber_root_0" },
+			{ "model": "betterend:block/amber_root_1" }
+		],
+        "age=1": [
+			{ "model": "betterend:block/amber_root_2" },
+			{ "model": "betterend:block/amber_root_3" }
+		],
+        "age=2": [
+			{ "model": "betterend:block/amber_root_4" },
+			{ "model": "betterend:block/amber_root_5" }
+		],
+        "age=3": [
+			{ "model": "betterend:block/amber_root_6" },
+			{ "model": "betterend:block/amber_root_7" }
+		]
+    }
+}

@@ -301,7 +301,7 @@ function registerTFCMetalsRecipes(event) {
 		
 		event.recipes.gtceu.ore_washer(`tfc:ore_washer/water/deposit/${ore}/${stone}`)
 			.itemInputs(`1x tfc:deposit/${ore}/${stone}`)
-			.inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfg:clean_water" }}))
+			.inputFluids("#tfg:clean_water 100")
 			.circuit(4)
 			.itemOutputs(`1x tfc:ore/normal_${ore}`)
 			.duration(400)

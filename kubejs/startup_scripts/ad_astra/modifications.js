@@ -12,4 +12,11 @@ function registerAdAstraBlockModifications(event) {
 			block.lightEmission = 15
 		})
 	})
+
+	event.modify('ad_astra:strophar_mushroom', block => {
+		block.lightEmission = 0
+	})
+	event.modify('ad_astra:aeronos_mushroom', block => {
+		block.lightEmission = 0
+	})
 }

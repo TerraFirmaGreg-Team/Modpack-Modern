@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"": [
+			{ "model": "gtceu:block/coal_bud_indicator" },
+			{ "model": "gtceu:block/coal_bud_indicator", "y": 90 },
+			{ "model": "gtceu:block/coal_bud_indicator", "y": 180 },
+			{ "model": "gtceu:block/coal_bud_indicator", "y": 270 }
+		]
+	}
+}

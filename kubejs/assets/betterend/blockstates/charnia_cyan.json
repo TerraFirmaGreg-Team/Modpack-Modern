@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"": [
+			{ "model": "betterend:block/charnia_cyan" },
+			{ "model": "betterend:block/charnia_cyan", "y": 90 },
+			{ "model": "betterend:block/charnia_cyan", "y": 180 },
+			{ "model": "betterend:block/charnia_cyan", "y": 270 }
+		]
+	}
+}
