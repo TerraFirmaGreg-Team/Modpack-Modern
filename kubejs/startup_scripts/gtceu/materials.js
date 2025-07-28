@@ -46,7 +46,7 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_FINE_WIRE,
 	} = $MATERIAL_FLAGS
 
-	var metalTooling = [
+	const metalTooling = [
 		GTToolType.AXE,
 		GTToolType.PICKAXE,
 		GTToolType.HARD_HAMMER,
@@ -260,9 +260,9 @@ const registerGTCEuMaterialModification = (event) => {
 	// Hide netherite too
 	GTMaterials.Netherite.getProperty(PropertyKey.TOOL).removeTypes(metalTooling);
 
-	for (var material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
-		var toolProperty = material.getProperty(PropertyKey.TOOL);
-		if (toolProperty == null)
+	for (let material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
+		let toolProperty = material.getProperty(PropertyKey.TOOL);
+		if (toolProperty === null)
 			continue;
 
 		toolProperty.setDurability(toolProperty.getDurability() * 6);
@@ -339,10 +339,9 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Thorium.setMaterialSecondaryARGB(0xcd8dbc)
 
 	
-	global.MINECRAFT_DYE_NAMES.forEach(colorName =>
-	{
-		var material = GTCEuAPI.materialManager.getMaterial(`gtceu:${colorName}_dye`);
-		var property = material.getProperty(PropertyKey.FLUID);
+	global.MINECRAFT_DYE_NAMES.forEach(colorName => {
+		let material = GTCEuAPI.materialManager.getMaterial(`gtceu:${colorName}_dye`);
+		let property = material.getProperty(PropertyKey.FLUID);
 		property.getStorage().store($FluidStorageKeys.LIQUID, () => Fluid.of(`tfc:${colorName}_dye`).fluid, null);
 	});
 

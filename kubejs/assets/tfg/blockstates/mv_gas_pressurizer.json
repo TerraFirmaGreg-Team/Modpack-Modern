@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "tfg:block/machines/mv_gas_pressurizer",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tfg:block/machines/mv_gas_pressurizer"
+    },
+    "facing=south": {
+      "model": "tfg:block/machines/mv_gas_pressurizer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tfg:block/machines/mv_gas_pressurizer",
+      "y": 270
+    }
+  }
+}

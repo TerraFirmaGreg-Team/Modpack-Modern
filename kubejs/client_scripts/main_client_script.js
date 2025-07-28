@@ -1,4 +1,3 @@
-ItemEvents.tooltip(evt =>
-{
+ItemEvents.tooltip(evt => {
     registerTooltips(evt);
 })

@@ -1,7 +1,6 @@
 "use strict";
 
-const registerTooltips = (event) =>
-{
+const registerTooltips = (event) => {
 	event.addAdvanced(['gtceu:lv_macerator', 'gtceu:mv_macerator', 'gtceu:hp_steam_macerator'], (item, advanced, text) => {
 		text.add(1, [text.of('§7Only outputs the first slot shown in EMI/JEI until HV.')])
 	})

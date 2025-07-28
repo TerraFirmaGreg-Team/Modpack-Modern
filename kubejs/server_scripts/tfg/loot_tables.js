@@ -34,7 +34,7 @@ function registerTFGLoots(event) {
 
                 LootEntry.of('gtceu:rich_raw_rock_salt').when((c) => c.randomChance(0.1)),
                 LootEntry.of('gtceu:rich_raw_salt').when((c) => c.randomChance(0.1)),
-                LootEntry.of('gtceu:rich_raw_saltpeter').when((c) => c.randomChance(0.1)),
+                LootEntry.of('gtceu:rich_raw_saltpeter').when((c) => c.randomChance(0.1))
             );
         })
         //seeds
@@ -48,8 +48,7 @@ function registerTFGLoots(event) {
                 LootEntry.of('tfc:seeds/sugarcane').when((c) => c.randomChance(0.1)),
                 LootEntry.of('firmalife:plant/pineapple_bush').when((c) => c.randomChance(0.1)),
                 LootEntry.of('tfc:plant/peach_sapling').when((c) => c.randomChance(0.1)),
-                LootEntry.of('tfc:plant/red_apple_sapling').when((c) => c.randomChance(0.1)),
-            );
+                LootEntry.of('tfc:plant/red_apple_sapling').when((c) => c.randomChance(0.1)));
         })
         //loot
         .pool((pool) => {
@@ -79,8 +78,7 @@ function registerTFGLoots(event) {
                 LootEntry.of('gtceu:bismuth_bronze_pickaxe_head').when((c) => c.randomChance(0.1)),
                 LootEntry.of('gtceu:bismuth_bronze_axe_head').when((c) => c.randomChance(0.1)),
                 LootEntry.of('gtceu:bismuth_bronze_shovel_head').when((c) => c.randomChance(0.1)),
-                LootEntry.of('gtceu:bismuth_bronze_knife_head').when((c) => c.randomChance(0.1)),
-            );
+                LootEntry.of('gtceu:bismuth_bronze_knife_head').when((c) => c.randomChance(0.1)));
         })
     });
 
@@ -120,9 +118,9 @@ function registerTFGLoots(event) {
 	STRONG_GLASSES.forEach(glass => {
 		event.addBlockLootModifier(glass[0])
 			.addLoot(glass[0])
-		if(glass[1]){
-			event.addBlockLootModifier(glass[0] + "_pane")
-			.addLoot(glass[0] + "_pane")
+		if (glass[1]) {
+			event.addBlockLootModifier(`${glass[0]  }_pane`)
+			.addLoot(`${glass[0]  }_pane`)
 		}
 		
 	});
@@ -131,25 +129,25 @@ function registerTFGLoots(event) {
 		event.addBlockLootModifier(glass)
 			.matchMainHand(Item.of('tfc:gem_saw'))
 			.addLoot(glass)
-		event.addBlockLootModifier(glass + "_pane")
+		event.addBlockLootModifier(`${glass  }_pane`)
 			.matchMainHand(Item.of('tfc:gem_saw'))
-			.addLoot(glass + "_pane")
+			.addLoot(`${glass  }_pane`)
 		
 	})
 	
 	global.TFC_WOOD_TYPES.forEach(wood => {
-		const id = 'everycomp:c/tfc/' + wood + "_window_pane"
+		const id = `everycomp:c/tfc/${  wood  }_window_pane`
 		event.addBlockLootModifier(id)
 			.addLoot(id)
 	})
 	global.AFC_WOOD_TYPES.forEach(wood => {
-		const id = 'everycomp:c/afc/' + wood + "_window_pane"
+		const id = `everycomp:c/afc/${  wood  }_window_pane`
 		event.addBlockLootModifier(id)
 			.addLoot(id)
 	})
 	
 	global.AD_ASTRA_WOOD.forEach(wood => {
-		const id = 'everycomp:c/ad_astra/' + wood.name + "_window_pane"
+		const id = `everycomp:c/ad_astra/${  wood.name  }_window_pane`
 		event.addBlockLootModifier(id)
 			.addLoot(id)
 	})

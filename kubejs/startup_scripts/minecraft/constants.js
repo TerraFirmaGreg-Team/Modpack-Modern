@@ -5,6 +5,7 @@
  * Список хранит предметы,
  * у которых должны быть удалены тэги и они должны быть скрыты в REI.
  */
+
 global.MINECRAFT_DISABLED_ITEMS = [
     // Зараженные блоки
     'minecraft:infested_stone',
