@@ -54,7 +54,7 @@ const registerTooltips = (event) => {
 		text.add(2, text.of('§7Insulation: +9'))
 		text.add(3, text.of('§7Wear the full set to be §eHeatproof§7 from ambient temperatures.'))
 	})
-	event.addAdvanced(['gtceu:nanomuscle_helmet', 'gtceu:nanomuscle_chestplate', 'gtceu:nanomuscle_leggings', 'gtceu:nanomuscle_boots', 'gtceu:avanced_nanomuscle_chestplate'], (item, advanced, text) => {
+	event.addAdvanced(['gtceu:nanomuscle_helmet', 'gtceu:nanomuscle_chestplate', 'gtceu:nanomuscle_leggings', 'gtceu:nanomuscle_boots', 'gtceu:advanced_nanomuscle_chestplate'], (item, advanced, text) => {
 		text.add(1, text.of('§7Warmth: 0')),
 		text.add(2, text.of('§7Insulation: +10'))
 		text.add(3, text.of('§7Wear the full set to be §eFully Insulated§7 from ambient temperatures.'))
