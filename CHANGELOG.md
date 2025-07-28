@@ -2,12 +2,23 @@
 
 ## [Unreleased]
 ### Changes
+- New major GregTech version! Read all about its new changes [here](https://github.com/GregTechCEu/GregTech-Modern/releases), and please report any issues you find! @gustovafing
+- Added initial implementation of interplanetary logistics @gustovafing
 - Vanilla moss blocks/carpet are now compostable @Pyritie
 - Added missing mixer recipes for turning medium compost greens/browns into compost @Pyritie
 - Adjusted recipe times of the VI machines @Pyritie
+- Added universal compost items, for more efficient storage of compostables @Vazde
+- Added recipe for backpack feeding upgrade (#1462) @Pyritie
+- Greate shaft recipes are now shapeless (#1453) @Pyritie
+- Added crafting table recipes for matches and the matchbox (#1449) @Pyritie
 ### Bug fixes
 - Fixed not being able to craft fine wire in a coiling machine for materials that didn't also have normal wire @Pyritie
-- Fixed cobalt brass buzzsaws not being obtainable until MV @Pyritie
+- Fixed cobalt brass and potin double plates not being obtainable until MV @Pyritie
+- Fixed missing recipe for cooking fox meat @Pyritie
+- Fixed ingot extruder mold recipe conflict @BlueBoat29
+- Possibly fixed the issue with airplanes and akistor carts not appearing when placing them (#1447) @Pyritie
+### Translations
+- Ukranian @Furryks
 
 ## [0.10.4] - 25-07-2025
 ### Changes

@@ -911,6 +911,7 @@ global.TFC_MEAT_RECIPE_COMPONENTS = [
     { input: 'tfc:food/hyena', output: 'tfc:food/cooked_hyena', name: 'cooked_hyena' }, 
     { input: 'tfc:food/duck', output: 'tfc:food/cooked_duck', name: 'cooked_duck' }, 
     { input: 'tfc:food/chevon', output: 'tfc:food/cooked_chevon', name: 'cooked_chevon' },
+    { input: 'tfc:food/fox', output: 'tfc:food/cooked_fox', name: 'cooked_fox' },
     { input: '#forge:eggs', output: 'tfc:food/cooked_egg', name: 'cooked_egg' },
 
     { input: 'minecraft:chorus_fruit', output: 'minecraft:popped_chorus_fruit', name: 'popped_chorus_fruit' },

@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"": [
+			{ "model": "gtceu:block/spessartine_bud_indicator" },
+			{ "model": "gtceu:block/spessartine_bud_indicator", "y": 90 },
+			{ "model": "gtceu:block/spessartine_bud_indicator", "y": 180 },
+			{ "model": "gtceu:block/spessartine_bud_indicator", "y": 270 }
+		]
+	}
+}
