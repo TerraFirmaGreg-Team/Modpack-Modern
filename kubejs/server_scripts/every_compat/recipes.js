@@ -3,8 +3,7 @@
 
 const registerEveryCompatRecipes = (event) => {
 
-	global.TFC_WOOD_TYPES.forEach(wood =>
-	{
+	global.TFC_WOOD_TYPES.forEach(wood => {
 		event.remove({ id: `everycomp:c/tfc/${wood}_window_pane` })
 		
 		event.shapeless(`2x everycomp:c/tfc/${wood}_window_pane`,
@@ -21,8 +20,7 @@ const registerEveryCompatRecipes = (event) => {
 			.EUt(7)
 	})
 
-	global.AFC_WOOD_TYPES.forEach(wood =>
-	{
+	global.AFC_WOOD_TYPES.forEach(wood => {
 		event.remove({ id: `everycomp:c/afc/${wood}_window_pane` })
 		
 		event.shapeless(`2x everycomp:c/afc/${wood}_window_pane`,

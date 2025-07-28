@@ -10,7 +10,7 @@ const registerTFGCrops = (event) => {
         .stages(4)
         .doubleStages(2)
         .hardness(0.4)
-        ['productItem(java.util.function.Consumer)'](product=> {
+        ['productItem(java.util.function.Consumer)'](product => {
             product.translationKey('item.tfg.sunflower_product')
             product.texture('tfg:item/sunflower_product')
         })

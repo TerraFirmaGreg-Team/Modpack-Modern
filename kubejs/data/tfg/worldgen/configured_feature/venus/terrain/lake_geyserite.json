@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:disk",
+  "config": {
+    "half_height": 2,
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 3,
+        "max_inclusive": 4
+      }
+    },
+    "state_provider": {
+      "fallback": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "tfg:rock/raw/geyserite"
+        }
+      },
+      "rules": []
+    },
+    "target": {
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "tfc:rock/gravel/basalt",
+        "tfc:rock/hardened/basalt",
+
+        "tfg:sand/fluorapatite/green",
+        "tfg:sandstone/raw/fluorapatite/green",
+        "tfg:sand/fluorapatite/white",
+        "tfg:sandstone/raw/fluorapatite/white",
+        "tfg:sand/fluorapatite/blue",
+        "tfg:sandstone/raw/fluorapatite/blue",
+        "tfc:deposit/native_silver/chert",
+        "tfc:deposit/native_gold/chert"
+      ]
+    }
+  }
+}

@@ -523,7 +523,7 @@ const registerAE2Recipes = (event) => {
         '2x #forge:rods/steel',
         'ae2:engineering_processor',
 		'2x #forge:plates/steel',
-		'#tfc:workbenches',)
+		'#tfc:workbenches')
     .itemOutputs('ae2:crafting_terminal')
     .duration(100)
     .EUt(GTValues.VA[GTValues.LV])
@@ -1018,7 +1018,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'4x #gtceu:circuits/ev',
 			'4x #forge:plates/titanium',
 			'32x #forge:dusts/certus_quartz',
-			'ae2:calculation_processor',)
+			'ae2:calculation_processor')
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('ae2:spatial_cell_component_2')
 		.duration(200)
@@ -1030,7 +1030,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'4x #gtceu:circuits/iv',
 			'4x #forge:plates/tungsten_steel',
 			'32x #forge:dusts/certus_quartz',
-			'ae2:calculation_processor',)
+			'ae2:calculation_processor')
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('ae2:spatial_cell_component_16')
 		.duration(200)
@@ -1089,7 +1089,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemInputs(
 			'2x ae2:formation_core',
 			'2x ae2:annihilation_core',
-			'ae2:storage_monitor',)
+			'ae2:storage_monitor')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
 		.itemOutputs('ae2:conversion_monitor')
 		.duration(200)
@@ -1705,8 +1705,8 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.EUt(480)
 
 	// Cable Colorization
-	for (var i = 0; i < 16; i++) {
-		event.recipes.gtceu.chemical_bath(global.AE2_GLASS_CABLES[i] + '_dye')
+	for (let i = 0; i < 16; i++) {
+		event.recipes.gtceu.chemical_bath(`${global.AE2_GLASS_CABLES[i]  }_dye`)
 			.itemInputs('ae2:fluix_glass_cable')
 			.inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
 			.itemOutputs(global.AE2_GLASS_CABLES[i])
@@ -1714,7 +1714,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			.EUt(7)
 			.category(GTRecipeCategories.CHEM_DYES)
 
-		event.recipes.gtceu.chemical_bath(global.AE2_COVERED_CABLES[i] + '_dye')
+		event.recipes.gtceu.chemical_bath(`${global.AE2_COVERED_CABLES[i]  }_dye`)
 			.itemInputs('ae2:fluix_covered_cable')
 			.inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
 			.itemOutputs(global.AE2_COVERED_CABLES[i])
@@ -1722,7 +1722,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			.EUt(7)
 			.category(GTRecipeCategories.CHEM_DYES)
 
-		event.recipes.gtceu.chemical_bath(global.AE2_COVERED_DENSE_CABLES[i] + '_dye')
+		event.recipes.gtceu.chemical_bath(`${global.AE2_COVERED_DENSE_CABLES[i]  }_dye`)
 			.itemInputs('ae2:fluix_covered_dense_cable')
 			.inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
 			.itemOutputs(global.AE2_COVERED_DENSE_CABLES[i])
@@ -1730,7 +1730,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			.EUt(7)
 			.category(GTRecipeCategories.CHEM_DYES)
 
-		event.recipes.gtceu.chemical_bath(global.AE2_SMART_CABLES[i] + '_dye')
+		event.recipes.gtceu.chemical_bath(`${global.AE2_SMART_CABLES[i]  }_dye`)
 			.itemInputs('ae2:fluix_smart_cable')
 			.inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
 			.itemOutputs(global.AE2_SMART_CABLES[i])
@@ -1738,7 +1738,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			.EUt(7)
 			.category(GTRecipeCategories.CHEM_DYES)
 
-		event.recipes.gtceu.chemical_bath(global.AE2_SMART_DENSE_CABLES[i] + '_dye')
+		event.recipes.gtceu.chemical_bath(`${global.AE2_SMART_DENSE_CABLES[i]  }_dye`)
 			.itemInputs('ae2:fluix_smart_dense_cable')
 			.inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
 			.itemOutputs(global.AE2_SMART_DENSE_CABLES[i])
@@ -1747,7 +1747,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			.category(GTRecipeCategories.CHEM_DYES)
 
 		// Paint Balls
-		event.recipes.gtceu.chemical_bath(global.AE2_PAINTBALLS[i] + '_dye')
+		event.recipes.gtceu.chemical_bath(`${global.AE2_PAINTBALLS[i]  }_dye`)
 			.itemInputs('ae2:matter_ball')
 			.inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 36))
 			.itemOutputs(global.AE2_PAINTBALLS[i])
@@ -1756,7 +1756,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			.category(GTRecipeCategories.CHEM_DYES)
 
 		// Lumen Paint Ball
-		event.recipes.gtceu.chemical_bath(global.AE2_LUMEN_PAINTBALLS[i] + '_gtceu_dye')
+		event.recipes.gtceu.chemical_bath(`${global.AE2_LUMEN_PAINTBALLS[i]  }_gtceu_dye`)
 			.itemInputs(global.AE2_PAINTBALLS[i])
 			.inputFluids(Fluid.of('gtceu:glowstone', 125))
 			.itemOutputs(global.AE2_LUMEN_PAINTBALLS[i])
@@ -2149,7 +2149,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'16x gtceu:iv_emitter',
 			'8x ae2:engineering_processor',
 			'14x gtceu:iv_sensor',
-			'ae2:logic_processor',)
+			'ae2:logic_processor')
 		.inputFluids(Fluid.of('gtceu:titanium', 1440))
 		.itemOutputs('ae2:quantum_ring')
 		.duration(900)

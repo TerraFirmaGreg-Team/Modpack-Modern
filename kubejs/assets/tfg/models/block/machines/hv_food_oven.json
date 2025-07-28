@@ -1,0 +1,67 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "gtceu:machine",
+  "machine": "tfg:hv_food_oven",
+  "variants": {
+    "recipe_logic_status=idle": {
+      "model": {
+        "parent": "gtceu:block/casings/voltage/hv",
+        "textures": {
+          "overlay_back": "tfg:block/machines/food_oven/overlay_back",
+          "overlay_back_emissive": "tfg:block/machines/food_oven/overlay_back_emissive",
+          "overlay_front": "tfg:block/machines/food_oven/overlay_front",
+          "overlay_front_emissive": "tfg:block/machines/food_oven/overlay_front_emissive",
+          "overlay_side": "tfg:block/machines/food_oven/overlay_side",
+          "overlay_side_emissive": "tfg:block/machines/food_oven/overlay_side_emissive",
+          "overlay_top": "tfg:block/machines/food_oven/overlay_top",
+          "overlay_top_emissive": "tfg:block/machines/food_oven/overlay_top_emissive"
+        }
+      }
+    },
+    "recipe_logic_status=suspend": {
+      "model": {
+        "parent": "gtceu:block/casings/voltage/hv",
+        "textures": {
+          "overlay_back": "tfg:block/machines/food_oven/overlay_back",
+          "overlay_back_emissive": "tfg:block/machines/food_oven/overlay_back_emissive",
+          "overlay_front": "tfg:block/machines/food_oven/overlay_front",
+          "overlay_front_emissive": "tfg:block/machines/food_oven/overlay_front_emissive",
+          "overlay_side": "tfg:block/machines/food_oven/overlay_side",
+          "overlay_side_emissive": "tfg:block/machines/food_oven/overlay_side_emissive",
+          "overlay_top": "tfg:block/machines/food_oven/overlay_top",
+          "overlay_top_emissive": "tfg:block/machines/food_oven/overlay_top_emissive"
+        }
+      }
+    },
+    "recipe_logic_status=waiting": {
+      "model": {
+        "parent": "gtceu:block/casings/voltage/hv",
+        "textures": {
+          "overlay_back": "tfg:block/machines/food_oven/overlay_back_active",
+          "overlay_back_emissive": "tfg:block/machines/food_oven/overlay_back_active_emissive",
+          "overlay_front": "tfg:block/machines/food_oven/overlay_front_active",
+          "overlay_front_emissive": "tfg:block/machines/food_oven/overlay_front_active_emissive",
+          "overlay_side": "tfg:block/machines/food_oven/overlay_side_active",
+          "overlay_side_emissive": "tfg:block/machines/food_oven/overlay_side_active_emissive",
+          "overlay_top": "tfg:block/machines/food_oven/overlay_top_active",
+          "overlay_top_emissive": "tfg:block/machines/food_oven/overlay_top_active_emissive"
+        }
+      }
+    },
+    "recipe_logic_status=working": {
+      "model": {
+        "parent": "gtceu:block/casings/voltage/hv",
+        "textures": {
+          "overlay_back": "tfg:block/machines/food_oven/overlay_back_active",
+          "overlay_back_emissive": "tfg:block/machines/food_oven/overlay_back_active_emissive",
+          "overlay_front": "tfg:block/machines/food_oven/overlay_front_active",
+          "overlay_front_emissive": "tfg:block/machines/food_oven/overlay_front_active_emissive",
+          "overlay_side": "tfg:block/machines/food_oven/overlay_side_active",
+          "overlay_side_emissive": "tfg:block/machines/food_oven/overlay_side_active_emissive",
+          "overlay_top": "tfg:block/machines/food_oven/overlay_top_active",
+          "overlay_top_emissive": "tfg:block/machines/food_oven/overlay_top_active_emissive"
+        }
+      }
+    }
+  }
+}
