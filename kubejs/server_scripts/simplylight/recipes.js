@@ -23,7 +23,7 @@ const registerSimplylightRecipes = (event) => {
     global.MINECRAFT_DYE_NAMES.forEach(color => {
 
         //exeption for white lamps because who needs consistency?
-        if (color != 'white') {
+        if (color !== 'white') {
 		event.recipes.gtceu.chemical_bath(`simplylight:chemical_bath/dyeing/illuminant_${color}_block_on`)
 			.itemInputs('#simplylight:any_lamp_on')
 			.inputFluids(Fluid.of(`tfc:${color}_dye`, 25))

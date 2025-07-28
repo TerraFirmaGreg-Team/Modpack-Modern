@@ -148,7 +148,9 @@ const registerTFGItemTags = (event) => {
 	})
 
 	// Universal Circuits
-	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => { event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`); })
+	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
+ event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`); 
+})
 
 	// Brick Index
 	const BRICK_KEYS = [

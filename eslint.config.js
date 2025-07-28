@@ -6,7 +6,7 @@ import stylistic from '@stylistic/eslint-plugin'
 
 export default defineConfig([
   { 
-    files: ["**/*.{js,mjs,cjs,ts,mts,cts}"], 
+    files: ["kubejs/startup_scripts/**/*.js", "kubejs/server_scripts/**/*.js", "kubejs/client_scripts/**/*.js"],
     plugins: { 
       "js": js, 
       "@stylistic": stylistic
@@ -18,6 +18,14 @@ export default defineConfig([
       "no-undef": "off",
       "no-unused-vars": "off",
       "no-unexpected-multiline": "off",
+      "no-var": "warn",
+      "prefer-template": "warn",
+      "no-unreachable-loop": "warn",
+      "no-useless-assignment": "warn",
+      "no-self-compare": "warn",
+      "no-template-curly-in-string": "error",
+      "no-unmodified-loop-condition": "warn",
+      "eqeqeq": "warn",
       "@stylistic/comma-style": [1, "last"],
       "@stylistic/brace-style": [1, "1tbs"],
       "@stylistic/function-call-spacing": [1, "never"],

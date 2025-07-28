@@ -65,7 +65,7 @@
 									"type": "minecraft:mul",
 									"argument1": {
 										"type": "minecraft:y_clamped_gradient",
-										"from_y": -28,
+										"from_y": -30,
 										"to_y": -20,
 										"from_value": 0,
 										"to_value": 1
@@ -99,7 +99,7 @@
 					}
 				}
 			},
-			"argument2": "minecraft:overworld/caves/noodle"
+			"argument2": "tfg:mars/caves/noodle"
 
 		},
 		"fluid_level_floodedness": {

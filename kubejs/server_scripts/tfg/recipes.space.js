@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function registerTFGSpaceRecipes(event) {
 
 	// TODO: Change these to work on any dim as long as they're in an oxygenated area?
@@ -126,7 +129,7 @@ function registerTFGSpaceRecipes(event) {
 		.outputFluids(Fluid.of("minecraft:water", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('sea_water_orbit')
-		.circuit(aaCircuit++)
+		.circuit(aaCircuit)
 		.dimension('ad_astra:earth_orbit')
 		.dimension('ad_astra:moon_orbit')
 		.dimension('ad_astra:mars_orbit')

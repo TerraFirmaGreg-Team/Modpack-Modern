@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function removeGreateRecipes(event) {
 
 	global.GREATE_DISABLED_ITEMS.forEach(item => {

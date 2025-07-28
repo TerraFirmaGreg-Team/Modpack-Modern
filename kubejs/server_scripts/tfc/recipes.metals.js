@@ -340,6 +340,7 @@ function registerTFCMetalsRecipes(event) {
 			.itemOutputs(`1x tfc:ore/normal_${ore}`)
 			.duration(200)
 			.EUt(GTValues.VA[GTValues.LV])
-	})})
+	})
+})
 	//#endregion
 }

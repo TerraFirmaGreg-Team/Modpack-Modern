@@ -105,7 +105,7 @@ const registerAdAstraItemTags = (event) => {
 			event.add('minecraft:logs_that_burn', wood.stripped_log)
 		}
 
-		if (wood.isHardwood == true) {
+		if (wood.isHardwood === true) {
 			event.add('tfg:hardwood', wood.logs)
 		} else {
 			event.add('tfg:softwood', wood.logs)
