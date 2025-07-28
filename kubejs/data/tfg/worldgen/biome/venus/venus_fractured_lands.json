@@ -24,5 +24,7 @@
 	"spawners": {},
 	"starts": [],
 	"carvers": {},
-	"features": []
+	"features": [
+		"#tfg:venus_fractured_lands_terrain_features"
+	]
   }

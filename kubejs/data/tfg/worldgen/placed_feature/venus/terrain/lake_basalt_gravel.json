@@ -1,0 +1,34 @@
+{
+  "feature": "tfg:venus/terrain/lake_basalt_gravel",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 256
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 67
+        },
+        "max_inclusive": {
+          "absolute": 70
+        }
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_fluids",
+        "fluids": "tfg:geyser_slurry"
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}
