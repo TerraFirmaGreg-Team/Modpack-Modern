@@ -4,7 +4,7 @@ const registerTFGItemTags = (event) => {
 
 	registerTFGTrimTags(event)
 	registerFacadeWhitelistTags(event)
-    //crop stuff
+	//crop stuff
 	event.add('tfc:seeds', 'tfg:sunflower_seeds')
 	event.add('tfc:seeds', 'tfg:rapeseed_seeds')
 	event.add('tfc:foods', 'tfg:roasted_sunflower_seeds')
@@ -27,7 +27,7 @@ const registerTFGItemTags = (event) => {
 	})
 	event.add('tfg:decorative_vases', 'tfg:decorative_vase')
 	event.add('tfg:decorative_vases/unfired', 'tfg:decorative_vase/unfired')
-	
+
 	//Knapping
 	event.add('tfc:any_knapping', 'minecraft:flint')
 
@@ -40,7 +40,7 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/tin_alloy')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/cupronickel')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/magnalium')
-	
+
 	event.add('minecraft:piglin_loved', 'tfg:piglin_disguise')
 
 	event.add('forge:tools/trowels', 'tfg:trowel')
@@ -149,26 +149,26 @@ const registerTFGItemTags = (event) => {
 
 	// Universal Circuits
 	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
- event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`); 
-})
+		event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`);
+	})
 
 	// Brick Index
 	const BRICK_KEYS = [
-		"brick", 
-		"brick_stairs", 
-		"brick_slab", 
+		"brick",
+		"brick_stairs",
+		"brick_slab",
 		"brick_wall",
-		"cracked_brick", 
-		"cracked_stairs", 
-		"cracked_slab", 
+		"cracked_brick",
+		"cracked_stairs",
+		"cracked_slab",
 		"cracked_wall",
-		"mossy_brick", 
-		"mossy_stairs", 
-		"mossy_slab", 
+		"mossy_brick",
+		"mossy_stairs",
+		"mossy_slab",
 		"mossy_wall",
-		"smooth_brick", 
-		"smooth_stairs", 
-		"smooth_slab", 
+		"smooth_brick",
+		"smooth_stairs",
+		"smooth_slab",
 		"smooth_wall",
 		"chiseled_brick"
 	];
@@ -358,12 +358,12 @@ const registerTFGItemTags = (event) => {
 const registerTFGBlockTags = (event) => {
 
 	event.add('minecraft:mineable/shovel', 'tfg:ash_pile')
-    //crop stuff
+	//crop stuff
 	event.add('tfc:crops', 'tfg:rapeseed')
 	event.add('tfc:mineable_with_sharp_tool', 'tfg:rapeseed')
 
-	event.add('tfc:crops', 'tfg:sunflower')	
-	event.add('tfc:mineable_with_sharp_tool','tfg:sunflower')
+	event.add('tfc:crops', 'tfg:sunflower')
+	event.add('tfc:mineable_with_sharp_tool', 'tfg:sunflower')
 
 	// #region Nether blocks
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')
@@ -441,9 +441,18 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfg:clean_water', 'tfc:spring_water')
 
 	event.add('tfc:usable_in_barrel', 'gtceu:seed_oil')
-
+	
+	event.add('forge:liquid', 'tfg:semiheavy_ammoniacal_water')
 	event.add('waves:has_waves', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:any_water', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:hydrating', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:drinkables', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:any_drinkables', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:ingredients', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:usable_in_pot', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:usable_in_wooden_bucket', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:usable_in_barrel', 'tfg:semiheavy_ammoniacal_water')
+	event.add('minecraft:water', 'tfg:semiheavy_ammoniacal_water')
 
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
@@ -509,7 +518,7 @@ const registerTFGBiomeTags = (event) => {
 
 // Other space decoration is in ad_astra/tags.js
 const registerTFGPlacedFeatures = (event) => {
-	
+
 	// #region Earth biomes
 
 	event.add('tfc:in_biome/surface_decoration/ocean', 'tfg:earth/rose_quartz/rose_quartz')
