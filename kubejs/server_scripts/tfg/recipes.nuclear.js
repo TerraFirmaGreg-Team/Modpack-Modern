@@ -191,8 +191,8 @@ function registerTFGNuclearRecipes(event) {
 
 	//#region FLiBe Line
 
-	event.recipes.gtceu.evaporation_tower_tfg('raw_rich_brine')
-		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 20000))
+	event.recipes.gtceu.evaporation_tower('raw_rich_brine')
+		.inputFluids(Fluid.of('tfc:spring_water', 20000))
 		.outputFluids(Fluid.of('gtceu:raw_rich_brine', 1000))
 		.duration(20*50)
 		.EUt(GTValues.VA[GTValues.EV])
@@ -214,7 +214,7 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	event.recipes.gtceu.evaporation_tower_tfg('brominated_iodine_vapor')
+	event.recipes.gtceu.evaporation_tower('brominated_iodine_vapor')
 		.inputFluids(Fluid.of('gtceu:hot_iodine_brine', 10000))
 		.itemOutputs('#forge:dusts/magnesium_chloride')
 		.outputFluids(Fluid.of('gtceu:brominated_iodine_vapor', 1000))
