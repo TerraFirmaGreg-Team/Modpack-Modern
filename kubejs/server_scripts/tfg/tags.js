@@ -254,6 +254,12 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:grass', 'tfg:grass/sangnum_mycelium')
 	// #endregion
 
+	 // Mars stone dust
+
+	event.add('forge:mars_stone_dusts', 'tfg:venus_stone_dust')
+	event.add('forge:mars_stone_dusts', 'gtceu:granite_red_dust')
+	event.add('forge:mars_stone_dusts', 'tfg:mars_stone_dust')
+
 	// #region 0.7.19 -> 0.9 conversion
 	event.add('c:hidden_from_recipe_viewers', 'treetap:tap')
 	event.add('c:hidden_from_recipe_viewers', 'tfcea:refrigerator')

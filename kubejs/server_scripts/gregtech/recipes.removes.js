@@ -692,6 +692,9 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/mortar_grind_steel' })
 	event.remove({ id: 'gtceu:shaped/mortar_grind_wrought_iron' })
 
+	// Replace by the Heat Exchanger recipe for Mars
+	event.remove({ id: 'gtceu:fluid_heater/formamide' })
+	
 	// Snow Stuffs
 
 	event.remove({ id: 'gtceu:fluid_solidifier/snow_block' })
