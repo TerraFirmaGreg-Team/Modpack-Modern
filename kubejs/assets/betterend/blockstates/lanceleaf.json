@@ -1,0 +1,27 @@
+{
+	"variants": {
+		"rotation=0,shape=top": { "model": "betterend:block/lanceleaf_leaf_top" },
+		"rotation=0,shape=pre_top": { "model": "betterend:block/lanceleaf_leaf_pre_top" },
+		"rotation=0,shape=middle": { "model": "betterend:block/lanceleaf_leaf_middle" },
+		"rotation=0,shape=pre_bottom": { "model": "betterend:block/lanceleaf_leaf_pre_bottom" },
+		"rotation=0,shape=bottom": { "model": "betterend:block/lanceleaf_leaf_bottom" },
+		
+		"rotation=1,shape=top": { "model": "betterend:block/lanceleaf_leaf_top", "y": 90 },
+		"rotation=1,shape=pre_top": { "model": "betterend:block/lanceleaf_leaf_pre_top", "y": 90 },
+		"rotation=1,shape=middle": { "model": "betterend:block/lanceleaf_leaf_middle", "y": 90 },
+		"rotation=1,shape=pre_bottom": { "model": "betterend:block/lanceleaf_leaf_pre_bottom", "y": 90 },
+		"rotation=1,shape=bottom": { "model": "betterend:block/lanceleaf_leaf_bottom", "y": 90 },
+		
+		"rotation=2,shape=top": { "model": "betterend:block/lanceleaf_leaf_top", "y": 180 },
+		"rotation=2,shape=pre_top": { "model": "betterend:block/lanceleaf_leaf_pre_top", "y": 180 },
+		"rotation=2,shape=middle": { "model": "betterend:block/lanceleaf_leaf_middle", "y": 180 },
+		"rotation=2,shape=pre_bottom": { "model": "betterend:block/lanceleaf_leaf_pre_bottom", "y": 180 },
+		"rotation=2,shape=bottom": { "model": "betterend:block/lanceleaf_leaf_bottom", "y": 180 },
+		
+		"rotation=3,shape=top": { "model": "betterend:block/lanceleaf_leaf_top", "y": 270 },
+		"rotation=3,shape=pre_top": { "model": "betterend:block/lanceleaf_leaf_pre_top", "y": 270 },
+		"rotation=3,shape=middle": { "model": "betterend:block/lanceleaf_leaf_middle", "y": 270 },
+		"rotation=3,shape=pre_bottom": { "model": "betterend:block/lanceleaf_leaf_pre_bottom", "y": 270 },
+		"rotation=3,shape=bottom": { "model": "betterend:block/lanceleaf_leaf_bottom", "y": 270 }
+	}
+}

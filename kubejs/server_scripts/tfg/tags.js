@@ -394,6 +394,9 @@ const registerTFGBlockTags = (event) => {
 
 	// #region Mars blocks
 	event.add('minecraft:dirt', 'tfg:grass/mars_dirt')
+	event.add('minecraft:dirt', 'tfg:grass/amber_mycelium')
+	event.add('minecraft:dirt', 'tfg:grass/rusticus_mycelium')
+	event.add('minecraft:dirt', 'tfg:grass/sangnum_mycelium')
 	event.add('tfc:dirt', 'tfg:grass/mars_dirt')
 	event.add('tfc:grass', 'tfg:grass/amber_mycelium')
 	event.add('tfc:grass', 'tfg:grass/rusticus_mycelium')
