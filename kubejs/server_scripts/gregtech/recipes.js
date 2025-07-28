@@ -1273,4 +1273,15 @@ const registerGTCEURecipes = (event) => {
 		.circuit(0)
 		.duration(50)
 		.EUt(2)
+
+	// Matches
+
+	event.shapeless('4x gtceu:matches', ['#forge:dusts/phosphorus', 'tfc:glue', '4x #forge:bolts/wood'])
+		.id('tfg:shapeless/phosphorus_matches')
+
+	event.shapeless('4x gtceu:matches', ['#forge:dusts/tricalcium_phosphate', 'tfc:glue', '4x #forge:bolts/wood'])
+		.id('tfg:shapeless/tricalcium_phosphate_matches')
+
+	event.shapeless(Item.of('gtceu:matchbox', '{usesLeft:8}'), ['minecraft:paper', '8x gtceu:matches'])
+		.id('tfg:shapeless/matchbox')
 }
