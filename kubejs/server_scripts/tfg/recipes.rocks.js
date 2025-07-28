@@ -186,7 +186,7 @@ function registerTFGRockRecipes(event) {
 	]
 
 	HAMMERING.forEach(x => {
-		event.recipes.gtceu.forge_hammer(`${x.raw}_to_${x.hammered}`.replace(/:/g, '_'))
+		event.recipes.gtceu.forge_hammer(`${x.raw}_to_${x.hammered}`.replace(/[: ]/g, '_'))
 			.itemInputs(x.raw)
 			.itemOutputs(x.hammered)
 			.duration(x.duration)
@@ -194,7 +194,7 @@ function registerTFGRockRecipes(event) {
 
 		event.recipes.greate.pressing(x.hammered, x.raw)
 			.recipeTier(x.eu <= 8 ? 0 : 1)
-			.id(`greate:pressing/${x.raw}_to_${x.hammered}`.replace(/:/g, '_'))
+			.id(`greate:pressing/${x.raw}_to_${x.hammered}`.replace(/[: ]/g, '_'))
 	})
 
 	// slabs, stairs, walls
