@@ -2,10 +2,10 @@
   "type": "minecraft:delta_feature",
   "config": {
     "contents": {
-      "Name": "tfg:geyser_slurry"
+      "Name": "minecraft:lava"
     },
 		"rim": {
-			"Name": "tfg:rock/raw/geyserite"
+			"Name": "tfc:rock/hardened/basalt"
 		},
 		"rim_size": {
 			"type": "minecraft:uniform",
