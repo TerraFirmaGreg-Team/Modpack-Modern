@@ -604,10 +604,40 @@ function registerTFCMaterialsRecipes(event) {
 				}
 			}
 
+			// Small Gears
+			let basicGearMetals = new Map([
+				['wrought_iron', 3],
+				['steel', 4],
+				['iron', 2],
+				['brass', 2],
+				['bronze', 2],
+				['bismuth_bronze', 2],
+				['black_bronze', 2],
+				['red_alloy', 2]])
+
+			let smallGearItem = ChemicalHelper.get(TagPrefix.gearSmall, material, 1)
+			if (!smallGearItem.isEmpty()) {
+				let materialNameString = String(material.getName())
+
+				if (tfcProperty.getMeltTemp() <= 1540) { //Avoids giving any metal that can't melt in forge a heating recipe
+					event.recipes.tfc.heating(`gtceu:small_${material.getName()}_gear`, tfcProperty.getMeltTemp())
+					.resultFluid(Fluid.of(`gtceu:${material.getName()}`, 144))
+					.id(`tfc:heating/small_${material.getName()}_gear`)
+				}
+
+				if (basicGearMetals.has(materialNameString)) {
+					let metalTier = basicGearMetals.get(materialNameString)
+					console.log(materialNameString, metalTier)
+					event.recipes.tfc.anvil(`gtceu:small_${material.getName()}_gear`, `#forge:ingots/${material.getName()}`, ['hit_last', 'shrink_second_last', 'draw_third_last'])
+					.tier(metalTier)
+					.id(`tfc:anvil/small_${material.getName()}_gear`)
+				}
+			}
+
 			// Tools (From Ingot)
 			if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
 
-				//#region Кирка
+				//#region pickaxe
 
 				// Крафт инструмента
 				event.remove({ id: `tfc:crafting/metal/pickaxe/${material.getName()}` })
@@ -654,7 +684,7 @@ function registerTFCMaterialsRecipes(event) {
 				}
 				//#endregion
 					
-				// #region Mattock
+				// #region mattock
 				event.recipes.tfc.heating(`rnr:metal/mattock/${material.getName()}`, tfcProperty.getMeltTemp())
 					.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
 					.useDurability(true)
@@ -710,7 +740,7 @@ function registerTFCMaterialsRecipes(event) {
 					.id(`gtceu:anvil/${material.getName()}_wire_cutter_head`)
 				//#endregion
 				
-				//#region Топор
+				//#region axe
 
 				// Крафт инструмента
 				event.remove({ id: `tfc:crafting/metal/axe/${material.getName()}` })
@@ -756,7 +786,7 @@ function registerTFCMaterialsRecipes(event) {
 
 				//#endregion
 
-				//#region Лопата
+				//#region shovel
 
 				// Крафт инструмента
 				event.remove({ id: `tfc:crafting/metal/shovel/${material.getName()}` })
@@ -804,7 +834,7 @@ function registerTFCMaterialsRecipes(event) {
 
 				//#endregion
 
-				//#region Мотыга
+				//#region hoe
 
 				// Крафт инструмента
 				event.remove({ id: `tfc:crafting/metal/hoe/${material.getName()}` })
@@ -850,7 +880,7 @@ function registerTFCMaterialsRecipes(event) {
 
 				//#endregion
 
-				//#region Молот
+				//#region crafting hammer
 
 				// Крафт инструмента
 				event.remove({ id: `tfc:crafting/metal/hammer/${material.getName()}` })
@@ -898,7 +928,7 @@ function registerTFCMaterialsRecipes(event) {
 
 				//#endregion
 
-				//#region Пила
+				//#region saw
 
 				// Крафт инструмента
 				event.remove({ id: `tfc:crafting/metal/saw/${material.getName()}` })
@@ -946,7 +976,7 @@ function registerTFCMaterialsRecipes(event) {
 
 				//#endregion
 
-				//#region Коса
+				//#region scythe
 
 				// Крафт инструмента
 				event.remove({ id: `tfc:crafting/metal/scythe/${material.getName()}` })
@@ -992,7 +1022,7 @@ function registerTFCMaterialsRecipes(event) {
 
 				//#endregion
 
-				//#region Напильник
+				//#region file
 
 				// Декрафт инструмента в жидкость
 				let fileItem = ToolHelper.get(GTToolType.FILE, material)
@@ -1021,7 +1051,7 @@ function registerTFCMaterialsRecipes(event) {
 
 				//#endregion
 
-				//#region Нож
+				//#region knife
 
 				// Крафт инструмента
 				event.remove({ id: `tfc:crafting/metal/knife/${material.getName()}` })
@@ -1063,7 +1093,7 @@ function registerTFCMaterialsRecipes(event) {
 						).id(`tfg:tfc/filling/${material.getName()}_knife_blade_mold`)
 					}
 
-					//#region Ножницы 
+					//#region shears 
 
 					// Сварка оголовий
 					event.recipes.tfc.welding(`tfc:metal/shears/${material.getName()}`, knifeHeadItem, knifeHeadItem, tfcProperty.getTier())
@@ -1086,7 +1116,7 @@ function registerTFCMaterialsRecipes(event) {
 
 				//#endregion
 
-				//#region Проспектор
+				//#region prospector pick
 
 				// Декрафт инструмента в жидкость
 				event.recipes.tfc.heating(`tfc:metal/propick/${material.getName()}`, tfcProperty.getMeltTemp())
@@ -1115,7 +1145,7 @@ function registerTFCMaterialsRecipes(event) {
 
 				//#endregion
 
-				//#region Стамеска
+				//#region chisel
 
 				// Декрафт инструмента в жидкость
 				event.recipes.tfc.heating(`tfc:metal/chisel/${material.getName()}`, tfcProperty.getMeltTemp())
@@ -1144,7 +1174,7 @@ function registerTFCMaterialsRecipes(event) {
 
 				//#endregion
 
-				//#region Копье
+				//#region javelin
 
 				// Декрафт инструмента в жидкость
 				event.recipes.tfc.heating(`tfc:metal/javelin/${material.getName()}`, tfcProperty.getMeltTemp())
@@ -1240,7 +1270,7 @@ function registerTFCMaterialsRecipes(event) {
 				.id(`tfc:heating/metal/${material.getName()}_anvil`)
 		}
 
-		//#region Щипцы
+		//#region tongs
 		let tongsStack = Item.of(`tfchotornot:tongs/${material.getName()}`)
 		let tongPartStack = Item.of(`tfchotornot:tong_part/${material.getName()}`)
 
@@ -1255,12 +1285,12 @@ function registerTFCMaterialsRecipes(event) {
 					C: '#forge:tools/hammers'
 				}, 0, 0).id(`tfchotornot:crafting/tongs/${material.getName()}`)
 
-			// Ручка щипцов
+			// tong parts
 			event.recipes.tfc.heating(tongPartStack, tfcProperty.getMeltTemp())
 				.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
 				.id(`tfchotornot:heating/tong_part/${material.getName()}`)
 
-			// Щипцы
+			// tong heating
 			event.recipes.tfc.heating(tongsStack, tfcProperty.getMeltTemp())
 				.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
 				.useDurability(true)
