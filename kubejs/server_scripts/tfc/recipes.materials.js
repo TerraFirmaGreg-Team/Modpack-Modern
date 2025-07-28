@@ -605,31 +605,18 @@ function registerTFCMaterialsRecipes(event) {
 			}
 
 			// Small Gears
-			let basicGearMetals = new Map([
-				['wrought_iron', 3],
-				['steel', 4],
-				['iron', 2],
-				['brass', 2],
-				['bronze', 2],
-				['bismuth_bronze', 2],
-				['black_bronze', 2],
-				['red_alloy', 2]])
-
 			let smallGearItem = ChemicalHelper.get(TagPrefix.gearSmall, material, 1)
 			if (!smallGearItem.isEmpty()) {
-				let materialNameString = String(material.getName())
 
-				if (tfcProperty.getMeltTemp() <= 1540) { //Avoids giving any metal that can't melt in forge a heating recipe
+				if (tfcProperty.getMeltTemp() <= 1540) {
 					event.recipes.tfc.heating(`gtceu:small_${material.getName()}_gear`, tfcProperty.getMeltTemp())
 					.resultFluid(Fluid.of(`gtceu:${material.getName()}`, 144))
 					.id(`tfc:heating/small_${material.getName()}_gear`)
 				}
 
 				if (basicGearMetals.has(materialNameString)) {
-					let metalTier = basicGearMetals.get(materialNameString)
-					console.log(materialNameString, metalTier)
 					event.recipes.tfc.anvil(`gtceu:small_${material.getName()}_gear`, `#forge:ingots/${material.getName()}`, ['hit_last', 'shrink_second_last', 'draw_third_last'])
-					.tier(metalTier)
+					.tier(tfcProperty.getTier())
 					.id(`tfc:anvil/small_${material.getName()}_gear`)
 				}
 			}
