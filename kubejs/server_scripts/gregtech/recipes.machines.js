@@ -991,15 +991,23 @@ function registerGTCEuMachineRecipes(event) {
 
 	event.recipes.gtceu.assembler('red_solar_casing')
 		.itemInputs('gtceu:steel_machine_casing', 'ad_astra:photovoltaic_vesnium_cell')
-		.itemOutputs('tfg:casings/machine_casing_red_solar_panel')
+		.itemOutputs('8x tfg:casings/machine_casing_red_solar_panel')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
 		.circuit(6)
 		.duration(2.5*20)
 		.EUt(16)
 
 	event.recipes.gtceu.assembler('iron_desh_casing')
-		.itemInputs('6x gtceu:steel_plate', 'gtceu:desh_frame')
+		.itemInputs(ChemicalHelper.get(TagPrefix.plate, GTMaterials.Steel, 6), 'gtceu:desh_frame')
 		.itemOutputs('2x tfg:casings/machine_casing_iron_desh')
 		.circuit(6)
+		.duration(2.5*20)
+		.EUt(16)
+
+	event.recipes.gtceu.assembler('steel_machine_casing')
+		.itemInputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 4))
+		.itemOutputs('gtceu:steel_machine_casing')
+		.circuit(4)
 		.duration(2.5*20)
 		.EUt(16)
 

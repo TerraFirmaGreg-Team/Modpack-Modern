@@ -77,32 +77,36 @@ function generateGreenHouseRecipe(event, input, fluid_amount, output, id, dimens
 	let r = event.recipes.gtceu.greenhouse(id)
 		.notConsumable(input)
 		.circuit(1)
-		.inputFluids(JsonIO.of({ amount: fluid_amount, value: { tag: "tfg:clean_water" }}))
+		.inputFluids(`#tfg:clean_water ${fluid_amount}`)
 		.itemOutputs(output)
 		.chancedOutput(input, 750, 0)
 		.chancedOutput(input, 500, 0)
 		.duration(36000) // 30 mins
+		.EUt(EUt)
 
 
-	if (dimension !== null)r.dimension(dimension)
-	if (output_secondary !== null) r.chancedOutput(output_secondary, 750, 0)
+	if (dimension !== null)
+		r.dimension(dimension)
+	if (output_secondary !== null) 
+		r.chancedOutput(output_secondary, 750, 0)
 	
-		r.EUt(EUt)
 
 	// С удобрением (With fertilizer)
 	r = event.recipes.gtceu.greenhouse(`${id}_fertilized`)
 		.notConsumable(input)
 		.itemInputs(Item.of('gtceu:fertilizer', fertiliser_count))
 		.circuit(2)
-		.inputFluids(JsonIO.of({ amount: fluid_amount, value: { tag: "tfg:clean_water" }}))
+		.inputFluids(`#tfg:clean_water ${fluid_amount}`)
 		.itemOutputs(output)
 		.chancedOutput(input, 4000, 0)
 		.chancedOutput(input, 3000, 0)
 		.duration(12000) // 10 mins
+		.EUt(EUt)
 
-	if (dimension !== null) r.dimension(dimension)
-	if (output_secondary !== null) r.chancedOutput(output_secondary, 4000, 0)
-	r.EUt(EUt)
+	if (dimension !== null)
+		r.dimension(dimension)
+	if (output_secondary !== null) 
+		r.chancedOutput(output_secondary, 4000, 0)
 }
 //#endregion
 

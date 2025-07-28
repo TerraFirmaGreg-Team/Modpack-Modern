@@ -92,6 +92,9 @@ const registerAdAstraItemTags = (event) => {
 	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_boots')
 	
 	event.remove('minecraft:wool', 'ad_astra:glacian_fur')
+
+	event.add('tfc:compost_greens', 'ad_astra:aeronos_cap')
+	event.add('tfc:compost_greens', 'ad_astra:strophar_cap')
 	
 	global.AD_ASTRA_WOOD.forEach(wood => {
 
@@ -266,7 +269,11 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:rock_slabs', 'ad_astra:mercury_stone_slab')
 	event.add('tfg:rock_slabs', 'ad_astra:glacio_stone_slab')
 
+	event.add('ad_astra:destroyed_in_space', '#tfc:wild_fruits')
 	event.add('ad_astra:destroyed_in_space', '#minecraft:saplings')
+
+	event.remove('ad_astra:strophar_caps', 'ad_astra:strophar_cap')
+	event.remove('ad_astra:aeronos_caps', 'ad_astra:aeronos_cap')
 }
 
 const registerAdAstraBiomeTags = (event) => {

@@ -78,6 +78,9 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfc:bells', 'minecraft:bell')
 
     event.add('tfc:plants', 'minecraft:spore_blossom')
+    
+	event.add('tfc:compost_greens', 'minecraft:nether_wart_block')
+	event.add('tfc:compost_greens', 'minecraft:warped_wart_block')
 }
 
 const registerMinecraftBlockTags = (event) => {

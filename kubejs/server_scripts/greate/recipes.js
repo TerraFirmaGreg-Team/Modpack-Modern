@@ -15,61 +15,26 @@ function registerGreateRecipes(event) {
 
 	// #region Shafts
 
-	event.shaped('9x greate:andesite_alloy_shaft', [
-		'A ',
-		' B'
-	], {
-		A: '#forge:tools/saws',
-		B: '#forge:plates/black_bronze'
-	}).id('greate:shaped/andesite_alloy_shaft_black_bronze')
+	event.shapeless('9x greate:andesite_alloy_shaft', ['#forge:plates/black_bronze', '#forge:tools/saws'])
+		.id('greate:shaped/andesite_alloy_shaft_black_bronze')
 
-	event.shaped('9x greate:andesite_alloy_shaft', [
-		'A ',
-		' B'
-	], {
-		A: '#forge:tools/saws',
-		B: '#forge:plates/bronze'
-	}).id('greate:shaped/andesite_alloy_shaft_bronze')
+	event.shaped('9x greate:andesite_alloy_shaft', ['#forge:plates/bronze', '#forge:tools/saws'])
+		.id('greate:shaped/andesite_alloy_shaft_bronze')
 
-	event.shaped('9x greate:andesite_alloy_shaft', [
-		'A ',
-		' B'
-	], {
-		A: '#forge:tools/saws',
-		B: '#forge:plates/bismuth_bronze'
-	}).id('greate:shaped/andesite_alloy_shaft_bismuth_bronze')
+	event.shaped('9x greate:andesite_alloy_shaft', ['#forge:plates/bismuth_bronze', '#forge:tools/saws'])
+		.id('greate:shaped/andesite_alloy_shaft_bismuth_bronze')
 
-	event.shaped('9x greate:steel_shaft', [
-		'A ',
-		' B'
-	], {
-		A: '#forge:tools/saws',
-		B: '#forge:plates/steel'
-	}).id('greate:shaped/steel_shaft')
+	event.shaped('9x greate:steel_shaft', ['#forge:plates/steel', '#forge:tools/saws'])
+		.id('greate:shaped/steel_shaft')
 
-	event.shaped('9x greate:aluminium_shaft', [
-		'A ',
-		' B'
-	], {
-		A: '#forge:tools/saws',
-		B: '#forge:plates/aluminium'
-	}).id('greate:shaped/aluminium_shaft')
+	event.shaped('9x greate:aluminium_shaft', ['#forge:plates/aluminium', '#forge:tools/saws'])
+		.id('greate:shaped/aluminium_shaft')
 
-	event.shaped('9x greate:stainless_steel_shaft', [
-		'A ',
-		' B'
-	], {
-		A: '#forge:tools/saws',
-		B: '#forge:plates/stainless_steel'
-	}).id('greate:shaped/stainless_steel_shaft')
+	event.shaped('9x greate:stainless_steel_shaft', ['#forge:plates/stainless_steel', '#forge:tools/saws'])
+		.id('greate:shaped/stainless_steel_shaft')
 
-	event.shaped('9x greate:titanium_shaft', [
-		'A ',
-		' B'
-	], {
-		A: '#forge:tools/saws',
-		B: '#forge:plates/titanium'
-	}).id('greate:shaped/titanium_shaft')
+	event.shaped('9x greate:titanium_shaft', ['#forge:plates/titanium', '#forge:tools/saws'])
+		.id('greate:shaped/titanium_shaft')
 
 	generateCutterRecipe(event, '#forge:plates/bronze', '9x greate:andesite_alloy_shaft', 100, GTValues.VA[GTValues.ULV], 'andesite_alloy_shaft_bronze')
 	generateCutterRecipe(event, '#forge:plates/black_bronze', '9x greate:andesite_alloy_shaft', 100, GTValues.VA[GTValues.ULV], 'andesite_alloy_shaft_black_bronze')
