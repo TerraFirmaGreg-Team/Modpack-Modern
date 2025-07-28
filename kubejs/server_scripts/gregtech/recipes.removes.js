@@ -726,6 +726,25 @@ function removeGTCEURecipes(event) {
 	})
 	
 	event.remove({ output: 'gtceu:damascus_steel_crowbar'})
+
+	//removes metal armor
+	const armor = [
+    'gtceu:bronze_helmet',
+    'gtceu:bronze_chestplate',
+    'gtceu:bronze_leggings',
+    'gtceu:bronze_boots',
+    'gtceu:steel_helmet',
+    'gtceu:steel_chestplate',
+    'gtceu:steel_leggings',
+    'gtceu:steel_boots',
+    'gtceu:titanium_helmet',
+    'gtceu:titanium_chestplate',
+    'gtceu:titanium_leggings',
+    'gtceu:titanium_boots'
+	];
+	armor.forEach(armor => {
+		event.remove({ output: armor})
+	});
 }
 
 function removeMaceratorRecipe(event, id) {
