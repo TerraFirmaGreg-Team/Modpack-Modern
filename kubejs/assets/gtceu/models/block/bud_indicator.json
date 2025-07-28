@@ -1,9 +1,9 @@
 {
 	"credit": "Made by Redeix",
 	"textures": {
-		"0": "tfg:block/bud_indicator_layer_0",
-		"1": "tfg:block/bud_indicator_layer_1",
-		"particle": "tfg:block/bud_indicator_layer_0"
+		"0": "gtceu:block/bud_indicator_layer_0",
+		"1": "gtceu:block/bud_indicator_layer_1",
+		"particle": "gtceu:block/bud_indicator_layer_0"
 	},
 	"elements": [
 		{
@@ -147,6 +147,11 @@
 			"translation": [ 0, 5, 0 ]
 		},
 		"gui": {
+			"rotation": [ 22.5, -30, 0 ],
+			"translation": [ 0, 8, 0 ],
+			"scale": [ 1.6, 1.6, 1.6 ]
+		},
+		"inventory": {
 			"rotation": [ 22.5, -30, 0 ],
 			"translation": [ 0, 8, 0 ],
 			"scale": [ 1.6, 1.6, 1.6 ]
