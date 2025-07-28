@@ -452,6 +452,9 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:usable_in_pot', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:usable_in_wooden_bucket', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:usable_in_barrel', 'tfg:semiheavy_ammoniacal_water')
+	event.add('firmalife:usable_in_mixing_bowl', 'tfg:semiheavy_ammoniacal_water')
+	event.add('firmalife:mixable', 'tfg:semiheavy_ammoniacal_water')
+	event.add('firmalife:usable_in_vat', 'tfg:semiheavy_ammoniacal_water')
 	event.add('minecraft:water', 'tfg:semiheavy_ammoniacal_water')
 
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
