@@ -1281,28 +1281,4 @@ const registerGTCEURecipes = (event) => {
 
 	event.shapeless(Item.of('gtceu:matchbox', '{usesLeft:8}'), ['minecraft:paper', '8x gtceu:matches'])
 		.id('tfg:shapeless/matchbox')
-
-
-	// Nano CPU use Nuclear Tritiated Water COMMENTED UNTIL MARS IS OUT
-
-	//event.replaceInput({ id: 'gtceu:chemical_reactor/nano_cpu_wafer' }, Fluid.of('gtceu:glowstone'), Fluid.of('gtceu:tritiated_water'))
-	//event.replaceInput({ id: 'gtceu:large_chemical_reactor/nano_cpu_wafer' }, Fluid.of('gtceu:glowstone'), Fluid.of('gtceu:tritiated_water'))
-
-	// Change the Large Centrifugal Unit to be craftable at EV
-
-	event.remove({ id: 'gtceu:shaped/large_centrifuge' })
-
-	event.shaped('gtceu:large_centrifuge', [
-		'EFE',
-		'ADA',
-		'BCB'
-	], {
-		A: '#gtceu:circuits/iv',
-		B: 'gtceu:ev_electric_motor',
-		C: 'gtceu:aluminium_single_cable',
-		D: 'gtceu:ev_centrifuge',
-		E: 'gtceu:molybdenum_disilicide_spring',
-		F: 'gtceu:stainless_steel_huge_fluid_pipe'
-	}).id('tfg:shaped/large_centrifuge')
-	
 }
