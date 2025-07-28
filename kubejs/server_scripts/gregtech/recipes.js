@@ -1281,5 +1281,4 @@ const registerGTCEURecipes = (event) => {
 
 	event.shapeless(Item.of('gtceu:matchbox', '{usesLeft:8}'), ['minecraft:paper', '8x gtceu:matches'])
 		.id('tfg:shapeless/matchbox')
-
 }
