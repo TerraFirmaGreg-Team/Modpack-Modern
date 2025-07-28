@@ -62,7 +62,8 @@ const generateCutterRecipe = (event, input, output, duration, EUt, id) => {
  *
  * @param {*} event 
  * @param {string} input -Item (Not consumed)
- * @param {number} fluid_amount -mB (uses #tfg:clean_water)
+ * @param {string} fluid -Fluid ID or tag
+ * @param {number} fluid_amount -Fluid amount, in mB
  * @param {string} output -Item (Chanced output uses input item)
  * @param {string} id -Recipe ID
  * @param {string} dimension -Dimension ID
@@ -70,20 +71,19 @@ const generateCutterRecipe = (event, input, output, duration, EUt, id) => {
  * @param {string|null} output_seconday -Item (Optional, if there should be a third output)
  * @param {number} EUt
  */
-function generateGreenHouseRecipe(event, input, fluid_amount, output, id, dimension, fertiliser_count, output_secondary, EUt) {
+function generateGreenHouseRecipe(event, input, fluid, fluid_amount, output, id, dimension, fertiliser_count, output_secondary, EUt) {
 	if (EUt === undefined || output_secondary === undefined || fertiliser_count === undefined || dimension === undefined) {
 		throw new TypeError(`Call to generateGreenHouseRecipe for id ${id} is missing args`);
 	}
 	let r = event.recipes.gtceu.greenhouse(id)
 		.notConsumable(input)
 		.circuit(1)
-		.inputFluids(`#tfg:clean_water ${fluid_amount}`)
+		.inputFluids(`${fluid} ${fluid_amount}`)
 		.itemOutputs(output)
 		.chancedOutput(input, 750, 0)
 		.chancedOutput(input, 500, 0)
 		.duration(36000) // 30 mins
 		.EUt(EUt)
-
 
 	if (dimension !== null)
 		r.dimension(dimension)
@@ -96,7 +96,7 @@ function generateGreenHouseRecipe(event, input, fluid_amount, output, id, dimens
 		.notConsumable(input)
 		.itemInputs(Item.of('gtceu:fertilizer', fertiliser_count))
 		.circuit(2)
-		.inputFluids(`#tfg:clean_water ${fluid_amount}`)
+		.inputFluids(`${fluid} ${fluid_amount}`)
 		.itemOutputs(output)
 		.chancedOutput(input, 4000, 0)
 		.chancedOutput(input, 3000, 0)
