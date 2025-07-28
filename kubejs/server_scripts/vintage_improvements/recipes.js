@@ -269,14 +269,14 @@ function registerVintageImprovementsRecipes(event) {
 	forEachMaterial(material => {
 
 		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
-		if (ingotItem != null && ingotItem.hasTag('c:hidden_from_recipe_viewers'))
+		if (ingotItem !== null && ingotItem.hasTag('c:hidden_from_recipe_viewers'))
 			return;
 
 		const gemItem = ChemicalHelper.get(TagPrefix.gem, material, 1);
-		if (gemItem != null && gemItem.hasTag('c:hidden_from_recipe_viewers'))
+		if (gemItem !== null && gemItem.hasTag('c:hidden_from_recipe_viewers'))
 			return;
 
-		if (ingotItem == null && gemItem == null)
+		if (ingotItem === null && gemItem === null)
 			return;
 
 		// #region Coiling
@@ -300,7 +300,7 @@ function registerVintageImprovementsRecipes(event) {
 		}
 
 		const singleWire = ChemicalHelper.get(TagPrefix.wireGtSingle, material, 2)
-		if (singleWire != null) {
+		if (singleWire !== null) {
 			event.custom({
 				type: 'vintageimprovements:coiling',
 				ingredients: [ChemicalHelper.get(TagPrefix.ingot, material, 1)],
@@ -310,15 +310,14 @@ function registerVintageImprovementsRecipes(event) {
 		}
 
 		if (material.hasFlag(MaterialFlags.GENERATE_FINE_WIRE)) {
-			if (singleWire != null) {
+			if (singleWire !== null) {
 				event.custom({
 					type: 'vintageimprovements:coiling',
 					ingredients: [ChemicalHelper.get(TagPrefix.wireGtSingle, material, 1)],
 					results: [ChemicalHelper.get(TagPrefix.wireFine, material, 4)],
 					processingTime: material.getMass() * 3 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 				}).id(`tfg:vi/coiling/${material.getName()}_fine_wire`)
-			}
-			else {
+			} else {
 				event.custom({
 					type: 'vintageimprovements:coiling',
 					ingredients: [ChemicalHelper.get(TagPrefix.ingot, material, 1)],
@@ -338,21 +337,21 @@ function registerVintageImprovementsRecipes(event) {
 
 			// aaaaargh I hate these custom type recipes
 			let gem = `gtceu:${material.getName()}_gem`;
-			if (material == GTMaterials.Coal)
+			if (material === GTMaterials.Coal)
 				gem = 'minecraft:coal'
-			else if (material == GTMaterials.Diamond)
+			else if (material === GTMaterials.Diamond)
 				gem = 'minecraft:diamond'
-			else if (material == GTMaterials.Emerald)
+			else if (material === GTMaterials.Emerald)
 				gem = 'minecraft:emerald'
-			else if (material == GTMaterials.Lapis)
+			else if (material === GTMaterials.Lapis)
 				gem = 'minecraft:lapis_lazuli'
-			else if (material == GTMaterials.NetherQuartz)
+			else if (material === GTMaterials.NetherQuartz)
 				gem = 'minecraft:quartz'
-			else if (material == GTMaterials.Amethyst)
+			else if (material === GTMaterials.Amethyst)
 				gem = 'minecraft:amethyst_shard'
-			else if (material == GTMaterials.CertusQuartz)
+			else if (material === GTMaterials.CertusQuartz)
 				gem = 'ae2:certus_quartz_crystal'
-			else if (material == TFGHelpers.getMaterial('rose_quartz'))
+			else if (material === TFGHelpers.getMaterial('rose_quartz'))
 				gem = 'create:rose_quartz'
 
 			event.custom({
@@ -379,7 +378,7 @@ function registerVintageImprovementsRecipes(event) {
 				? ChemicalHelper.get(TagPrefix.gem, material, 1)
 				: ChemicalHelper.get(TagPrefix.ingot, material, 1)
 
-			if (latheInput != null) {
+			if (latheInput !== null) {
 				event.custom({
 					type: 'vintageimprovements:turning',
 					ingredients: [latheInput],
@@ -512,13 +511,14 @@ function registerVintageImprovementsRecipes(event) {
 
 			// LV recipes only
 			let EUt = (r.tickInputs && r.tickInputs.eu) ? r.tickInputs.eu[0].content : null;
-			if (!(EUt <= 32)) { return }
+			
+			if (!(EUt <= 32)) return
 			// Skip this one
-			if (r.outputs.item[0].content.ingredient.item == "gtceu:nan_certificate") { return }
+			if (r.outputs.item[0].content.ingredient.item === "gtceu:nan_certificate") return
 			// Skip glass too
-			if (r.inputs.item[0].content.ingredient.item == "gtceu:glass_dust") { return }
+			if (r.inputs.item[0].content.ingredient.item === "gtceu:glass_dust") return
 			// And this
-			if (r.inputs.item[0].content.ingredient.item == "gtceu:damascus_steel_ingot") { return }
+			if (r.inputs.item[0].content.ingredient.item === "gtceu:damascus_steel_ingot") return
 
 			let input = r.inputs.item[0].content.ingredient;
 			input.count = r.inputs.item[0].content.count;

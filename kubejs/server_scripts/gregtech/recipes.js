@@ -1010,11 +1010,11 @@ const registerGTCEURecipes = (event) => {
 	forEachMaterial(material => {
 
 		const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
-		if (tfcProperty == null)
+		if (tfcProperty === null)
 			return;
 
-		const outputMaterial = tfcProperty.getOutputMaterial() == null ? material : tfcProperty.getOutputMaterial()
-		if (outputMaterial == GTMaterials.Iron) {
+		const outputMaterial = tfcProperty.getOutputMaterial() === null ? material : tfcProperty.getOutputMaterial()
+		if (outputMaterial === GTMaterials.Iron) {
 			event.recipes.gtceu.steam_bloomery(`steam_raw_iron_bloom_coal_${material.getName()}`)
 				.itemInputs(ChemicalHelper.get(TagPrefix.dust, material, 1), '#tfc:steam_bloomery_basic_fuels')
 				.itemOutputs('tfc:raw_iron_bloom')
@@ -1131,48 +1131,12 @@ const registerGTCEURecipes = (event) => {
 	//#endregion
 
 
-	//#region Credits
-
-	event.remove({ id: 'gtceu:forming_press/credit_cupronickel' })
-
-	event.recipes.gtceu.forming_press('gtceu:copper_credit')
-		.itemInputs('#forge:ingots/copper')
-		.notConsumable('gtceu:credit_casting_mold')
-		.itemOutputs('8x gtceu:copper_credit')
-		.duration(50)
-		.EUt(2)
-
-	event.recipes.tfc.anvil('8x gtceu:copper_credit', '#forge:ingots/copper', ['bend_last', 'punch_not_last', 'draw_not_last'])
-		.tier(1)
-		.id(`tfc:anvil/copper_credit`)
-
-	event.recipes.tfc.heating('gtceu:copper_credit', GTMaterials.Copper.getProperty(TFGPropertyKey.TFC_PROPERTY).getMeltTemp())
-		.resultFluid(Fluid.of(GTMaterials.Copper.getFluid(), 144 / 8))
-		.id(`tfc:heating/copper_credit`)
-
-	event.custom({
-		type: 'vintageimprovements:curving',
-		ingredients: [{ tag: 'forge:ingots/copper' }],
-		itemAsHead: 'gtceu:credit_casting_mold',
-		results: [{ item: 'gtceu:copper_credit', count: 8 }],
-		processingTime: 50
-	}).id(`tfg:vi/curving/copper_credit`)
-
-	event.recipes.gtceu.extractor('gtceu:copper_credit')
-		.itemInputs('gtceu:copper_credit')
-		.outputFluids(Fluid.of(GTMaterials.Copper.getFluid(), 144 / 8))
-		.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-		.duration(10)
-		.EUt(2)
-
-	//#endregion
-
 	//#region GT Facades
 	event.shapeless(Item.of('gtceu:facade_cover', 8, '{Facade: {Count:1b,id:"minecraft:stone"}}'), ['3x #forge:plates/iron', "#tfg:whitelisted/facades"])
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 
-			let facadeNBT = "{Facade: {Count:1b,id:" + "'" + blockID + "'" + "}}"
+			let facadeNBT = `{Facade: {Count:1b,id:` + `'${  blockID  }'` + `}}`
 			result.nbt = facadeNBT
 			return result;
 		}).id('gtceu:facade_cover');
@@ -1181,7 +1145,7 @@ const registerGTCEURecipes = (event) => {
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 
-			let facadeNBT = "{Facade: {Count:1b,id:" + "'" + blockID + "'" + "}}"
+			let facadeNBT = `{Facade: {Count:1b,id:` + `'${  blockID  }'` + `}}`
 			result.nbt = facadeNBT
 			return result;
 		}).id('gtceu:facade_cover32');

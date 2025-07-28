@@ -1394,7 +1394,7 @@ const registerCreateRecipes = (event) => {
 	//#region Покраска тулбоксов
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
-		if (dye != 'brown') {
+		if (dye !== 'brown') {
 			event.remove({ id: `create:create.toolbox.color.block.create.${dye}_toolbox` })
 
 			event.recipes.tfc.barrel_sealed(1000)
@@ -1421,7 +1421,7 @@ const registerCreateRecipes = (event) => {
 		.id(`barrel/create/postbox_decolor`)
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
-		if (dye != 'white') {
+		if (dye !== 'white') {
 			event.recipes.tfc.barrel_sealed(1000)
 				.inputs('create:white_postbox', Fluid.of(`tfc:${dye}_dye`, 288))
 				.outputItem(`create:${dye}_postbox`)
@@ -1446,7 +1446,7 @@ const registerCreateRecipes = (event) => {
 		.id(`barrel/create/table_cloth_decolor`)
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
-		if (dye != 'white') {
+		if (dye !== 'white') {
 			event.recipes.tfc.barrel_sealed(1000)
 				.inputs('create:white_table_cloth', Fluid.of(`tfc:${dye}_dye`, 288))
 				.outputItem(`create:${dye}_table_cloth`)
@@ -1472,7 +1472,7 @@ const registerCreateRecipes = (event) => {
 		.id(`barrel/create/seat_decolor`)
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
-		if (dye != "white") {
+		if (dye !== "white") {
 
 			event.recipes.tfc.barrel_sealed(1000)
 				.inputs(`create:white_seat`, Fluid.of(`tfc:${dye}_dye`, 288))

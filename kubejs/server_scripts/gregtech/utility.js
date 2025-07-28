@@ -29,7 +29,7 @@ const generateMixerRecipe = (event, input, fluid_input, output, circuit, fluid_o
 	/**
 	 * Applies if circuit param is not empty
 	 */
-	if (circuit != null) {
+	if (circuit !== null) {
 		recipe.circuit(circuit)
 	}
 }
@@ -47,13 +47,13 @@ const generateMixerRecipe = (event, input, fluid_input, output, circuit, fluid_o
  * @param {string} id -Recipe ID
  */
 const generateCutterRecipe = (event, input, output, duration, EUt, id) => {
-
 	event.recipes.gtceu.cutter(`tfg:${id}`)
 		.itemInputs(input)
 		.itemOutputs(output)
 		.duration(duration)
 		.EUt(EUt)
 }
+
 //#endregion
 
 //#region Green House
@@ -67,12 +67,13 @@ const generateCutterRecipe = (event, input, output, duration, EUt, id) => {
  * @param {string} id -Recipe ID
  * @param {string} dimension -Dimension ID
  * @param {number} fertiliser_count
- * @param {string} output_seconday -Item (Optional, if there should be a third output)
- * @param {string} tier - GTValues.VA[] (Optional, defaults to LV)
+ * @param {string|null} output_seconday -Item (Optional, if there should be a third output)
+ * @param {number} EUt
  */
-const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimension, fertiliser_count, output_secondary, tier) => {
-
-	// Без удобрения (Without fertilizer)
+function generateGreenHouseRecipe(event, input, fluid_amount, output, id, dimension, fertiliser_count, output_secondary, EUt) {
+	if (EUt === undefined || output_secondary === undefined || fertiliser_count === undefined || dimension === undefined) {
+		throw new TypeError(`Call to generateGreenHouseRecipe for id ${id} is missing args`);
+	}
 	let r = event.recipes.gtceu.greenhouse(id)
 		.notConsumable(input)
 		.circuit(1)
@@ -82,17 +83,11 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimens
 		.chancedOutput(input, 500, 0)
 		.duration(36000) // 30 mins
 
-	if (dimension != null){
-		r.dimension(dimension)
-	}
-	if (output_secondary != null){
-		r.chancedOutput(output_secondary, 750, 0)
-	}
-	if (tier != null){
-		r.EUt(tier)
-	} else {
-		r.EUt(GTValues.VA[GTValues.LV])
-	}
+
+	if (dimension !== null)r.dimension(dimension)
+	if (output_secondary !== null) r.chancedOutput(output_secondary, 750, 0)
+	
+		r.EUt(EUt)
 
 	// С удобрением (With fertilizer)
 	r = event.recipes.gtceu.greenhouse(`${id}_fertilized`)
@@ -105,17 +100,9 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id, dimens
 		.chancedOutput(input, 3000, 0)
 		.duration(12000) // 10 mins
 
-	if (dimension != null){
-		r.dimension(dimension)
-	}
-	if (output_secondary != null){
-		r.chancedOutput(output_secondary, 4000, 0)
-	}
-	if (tier != null){
-		r.EUt(tier)
-	} else {
-		r.EUt(GTValues.VA[GTValues.LV])
-	}
+	if (dimension !== null) r.dimension(dimension)
+	if (output_secondary !== null) r.chancedOutput(output_secondary, 4000, 0)
+	r.EUt(EUt)
 }
 //#endregion
 
@@ -142,12 +129,12 @@ const getFillingNBT = (material, amount) => {
  * Function for generating plated block recipes.
  *
  * @param {*} event 
- * @param {GTMaterials} material 
+ * @param {GTMaterial} material 
  */
 function generatePlatedBlockRecipe(event, material) {
 	// firmaciv plated blocks don't have this property
 	let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
-	let outputMaterial = (tfcProperty == null || tfcProperty.getOutputMaterial() == null) ? material : tfcProperty.getOutputMaterial()
+	let outputMaterial = (tfcProperty === null || tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial()
 
 	let plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
 
@@ -155,11 +142,11 @@ function generatePlatedBlockRecipe(event, material) {
 	let platedSlab = ChemicalHelper.get(TFGTagPrefix.slabPlated, material, 1);
 	let platedStair = ChemicalHelper.get(TFGTagPrefix.stairPlated, material, 1);
 
-	if (platedBlock == null)
+	if (platedBlock === null)
 		return
 
 	let tfcMetalName = material.getName();
-	if (tfcMetalName == "iron")
+	if (tfcMetalName === "iron")
 		tfcMetalName = "cast_iron";
 
 	event.recipes.create.item_application(platedBlock, ['#forge:stone_bricks', plateItem])
@@ -173,7 +160,7 @@ function generatePlatedBlockRecipe(event, material) {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	if (tfcProperty != null) {
+	if (tfcProperty !== null) {
 		event.recipes.tfc.heating(platedBlock, tfcProperty.getMeltTemp())
 			.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
 			.id(`tfc:heating/metal/${tfcMetalName}_block`)
@@ -203,7 +190,7 @@ function generatePlatedBlockRecipe(event, material) {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	if (tfcProperty != null) {
+	if (tfcProperty !== null) {
 		// Slabs are lossy because it's possible to plate a double slab block with one metal plate
 		event.recipes.tfc.heating(platedSlab, tfcProperty.getMeltTemp())
 			.resultFluid(Fluid.of(outputMaterial.getFluid(), 72))
@@ -234,7 +221,7 @@ function generatePlatedBlockRecipe(event, material) {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	if (tfcProperty != null) {
+	if (tfcProperty !== null) {
 		event.recipes.tfc.heating(platedStair, tfcProperty.getMeltTemp())
 			.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
 			.id(`tfc:heating/metal/${tfcMetalName}_block_stairs`)
@@ -259,10 +246,10 @@ function generatePlatedBlockRecipe(event, material) {
  * Function for iterating through registered materials
  * {@link https://github.com/GregTechCEu/GregTech-Modern/blob/1.20.1/src/main/java/com/gregtechceu/gtceu/api/data/chemical/material/Material.java}
  *
- * @param {GTCEuAPI.materialManager.getRegisteredMaterials} iterator -Material
+ * @param {(material: com.gregtechceu.gtceu.api.data.chemical.material.Material_) => void} iterator 
  */
 function forEachMaterial(iterator) {
-	for (var material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
+	for (let material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
 		iterator(material)
 	}
 }

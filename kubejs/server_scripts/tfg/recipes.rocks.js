@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function registerTFGRockRecipes(event) {
 
 	// #region Nether rock recipes
@@ -171,7 +174,7 @@ function registerTFGRockRecipes(event) {
 		{ raw: 'ad_astra:mars_cobblestone', hammered: 'ad_astra:mars_sand' },
 		{ raw: 'ad_astra:venus_stone', hammered: 'ad_astra:venus_cobblestone' },
 		{ raw: 'tfg:rock/hardened_venus_stone', hammered: 'ad_astra:venus_cobblestone' },
-		{ raw: 'ad_astra:venus_cobblestone', hammered: 'ad_astra:venus_sand' },,
+		{ raw: 'ad_astra:venus_cobblestone', hammered: 'ad_astra:venus_sand' },
 		{ raw: 'ad_astra:mercury_stone', hammered: 'ad_astra:mercury_cobblestone' },
 		{ raw: 'tfg:rock/hardened_mercury_stone', hammered: 'ad_astra:mercury_cobblestone' },
 		{ raw: 'ad_astra:mercury_cobblestone', hammered: 'tfc:sand/red' },
@@ -530,7 +533,7 @@ function registerTFGRockRecipes(event) {
 				event.stonecutting(x.stair, x.raw).id(`${x.raw}_to_${x.stair}`.replace(/:/g, '_'))
 			}
 
-			if (x.dust != null) {
+			if (x.dust !== null) {
 				event.recipes.gtceu.macerator(`macerate_${x.stair}`.replace(/:/g, '_'))
 					.itemInputs(x.stair)
 					.itemOutputs(x.dust)
@@ -550,7 +553,7 @@ function registerTFGRockRecipes(event) {
 				event.stonecutting(`2x ${x.slab}`, x.raw).id(`${x.raw}_to_${x.slab}`.replace(/:/g, '_'))
 			}
 
-			if (x.dust != null) {
+			if (x.dust !== null) {
 				event.recipes.gtceu.macerator(`macerate_${x.slab}`.replace(/:/g, '_'))
 					.itemInputs(`2x ${x.slab}`)
 					.itemOutputs(x.dust)
@@ -570,7 +573,7 @@ function registerTFGRockRecipes(event) {
 				event.stonecutting(x.wall, x.raw).id(`${x.raw}_to_${x.wall}`.replace(/:/g, '_'))
 			}
 
-			if (x.dust != null) {
+			if (x.dust !== null) {
 				event.recipes.gtceu.macerator(`macerate_${x.wall}`.replace(/:/g, '_'))
 					.itemInputs(x.wall)
 					.itemOutputs(x.dust)

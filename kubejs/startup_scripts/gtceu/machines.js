@@ -1,12 +1,6 @@
 // priority: 0
-"use strict";
 
 const registerGTCEuMachines = (event) => {
-
-	GTMachineUtils.registerCrate(GTMaterials.BismuthBronze, 54, "Bismuth Bronze Crate");
-	GTMachineUtils.registerCrate(GTMaterials.BlackBronze, 54, "Black Bronze Crate");
-	GTMachineUtils.registerDrum(GTMaterials.BismuthBronze, 32000, "Bismuth Bronze Drum");
-	GTMachineUtils.registerDrum(GTMaterials.BlackBronze, 32000, "Black Bronze Drum");
 
 	const $SteamMulti = Java.loadClass('com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine');
 	const $Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
@@ -81,10 +75,9 @@ const registerGTCEuMachines = (event) => {
 			.where('e', GTMachines.ENERGY_INPUT_HATCH[GTValues.MV], Direction.NORTH)
 			.build()
 		)
-		.workableCasingRenderer(
+		.workableCasingModel(
 			"gtceu:block/casings/solid/machine_casing_inert_ptfe",
-			"gtceu:block/machines/gas_collector", false
-		)
+			"gtceu:block/machines/gas_collector")
 
 	//#endregion
 
@@ -171,10 +164,9 @@ const registerGTCEuMachines = (event) => {
 			.where('e', GTMachines.ENERGY_INPUT_HATCH[GTValues.HV], Direction.NORTH)
 			.build()
 		)
-		.workableCasingRenderer(
+		.workableCasingModel(
 			"gtceu:block/casings/solid/machine_casing_stable_titanium",
-			"gtceu:block/machines/gas_collector", false
-		)
+			"gtceu:block/machines/gas_collector")
 
 	//#endregion
 
@@ -213,15 +205,12 @@ const registerGTCEuMachines = (event) => {
 			.where('I', GTMachines.STEAM_IMPORT_BUS, Direction.SOUTH)
 			.build()
 		)
-		.workableCasingRenderer(
+		.workableCasingModel(
 			"gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
-			"tfg:block/steam_bloomery", false
-		)
+			"tfg:block/steam_bloomery")
 	//#endregion
 
-	//#region Large Solar Pannel - From Sky of Grind for the code thanks a lot
-
-	event.create('large_solar_panel', 'multiblock')
+		event.create('large_solar_panel', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.generator(true)
 		.recipeType('large_solar_panel')
@@ -252,9 +241,7 @@ const registerGTCEuMachines = (event) => {
 			.where(' ', Predicates.any())
 			.build()
 		)
-		.workableCasingRenderer(
-			'tfg:block/casings/machine_casing_iron_desh',
-			'gtceu:block/multiblock/hpca', false)
+		.workableCasingModel('tfg:block/casings/machine_casing_iron_desh', 'gtceu:block/multiblock/hpca')
 
 	//#region Nuclear Multiblocks
 
@@ -290,9 +277,9 @@ const registerGTCEuMachines = (event) => {
 			.where(' ', Predicates.any())
 			.build()
 		)
-		.workableCasingRenderer(
+		.workableCasingModel(
 			'gtceu:block/casings/gcym/atomic_casing',
-			'gtceu:block/machines/fermenter', false)
+			'gtceu:block/machines/fermenter')
 
 	// Nuclear Heat Exchanger
 
@@ -324,9 +311,9 @@ const registerGTCEuMachines = (event) => {
 			.where(' ', Predicates.any())
 			.build()
 		)
-		.workableCasingRenderer(
+		.workableCasingModel(
 			"gtceu:block/casings/gcym/high_temperature_smelting_casing",
-			"gtceu:block/machines/fluid_heater", false)
+			"gtceu:block/machines/fluid_heater")
 
 	// Nuclear Fission Reactor
 
@@ -358,17 +345,17 @@ const registerGTCEuMachines = (event) => {
 			.where(' ', Predicates.any())
 			.build()
 		)
-		.workableCasingRenderer(
+		.workableCasingModel(
 			"gtceu:block/casings/gcym/atomic_casing",
-			"gtceu:block/machines/electromagnetic_separator", false)
+			"gtceu:block/machines/electromagnetic_separator")
 
 	//#endregion
 
 	//#region Evaporation Tower
 
-	event.create('evaporation_tower_tfg', 'multiblock')
+	event.create('evaporation_tower', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
-		.recipeType('evaporation_tower_tfg')
+		.recipeType('evaporation_tower')
 		.noRecipeModifier()
 		.appearanceBlock(() => Block.getBlock('gtceu:stainless_evaporation_casing'))
 		.pattern(definition => FactoryBlockPattern.start()
@@ -389,8 +376,8 @@ const registerGTCEuMachines = (event) => {
 			.where(' ', Predicates.any())
 			.build()
 		)
-		.workableCasingRenderer(
+		.workableCasingModel(
 			'gtceu:block/casings/solid/machine_casing_stainless_evaporation',
-			'gtceu:block/multiblock/distillation_tower', false)
+			'gtceu:block/multiblock/distillation_tower')
 
 }

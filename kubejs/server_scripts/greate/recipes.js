@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function registerGreateRecipes(event) {
 	
 	removeGreateRecipes(event)

@@ -17,7 +17,7 @@ function registerMinecraftDyeRecipes(event) {
 			`minecraft:${dye}_wool`
 		]).id(`minecraft:${dye}_carpet`)
 
-		if (dye != 'white') {
+		if (dye !== 'white') {
 			event.recipes.gtceu.chemical_bath(`tfg:${dye}_carpet`)
 				.itemInputs(`minecraft:white_carpet`)
 				.inputFluids(Fluid.of(`tfc:${dye}_dye`, 72))

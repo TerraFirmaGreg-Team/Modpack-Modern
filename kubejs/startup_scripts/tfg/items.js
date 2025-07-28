@@ -51,8 +51,7 @@ const registerTFGItems = (event) => {
 	event.create('tfg:unfired_chalk')
 		.translationKey('item.tfg.unfired_chalk')
 
-	Color.DYE.forEach((dyeName, dye) =>
-	{
+	Color.DYE.forEach((dyeName, dye) => {
 		event.create(`tfg:wet_${dyeName}_chalk`)
 		.translationKey(`item.tfg.wet_${dyeName}_chalk`)
 		.textureJson({

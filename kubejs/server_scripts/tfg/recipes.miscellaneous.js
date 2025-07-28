@@ -931,7 +931,7 @@ function registerTFGMiscellaneousRecipes(event) {
 				ChemicalHelper.get(TagPrefix.plate, GTMaterials.HSLASteel, 4),
 				ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 2),
 				ChemicalHelper.get(TagPrefix.rod, GTMaterials.SteelMagnetic, 1),
-				ChemicalHelper.get(TagPrefix.wireFine, GTMaterials[type.materialId], 4),
+				ChemicalHelper.get(TagPrefix.wireFine, GTMaterials[type.materialId], 4)
 			)
 			.inputFluids(Fluid.of('gtceu:silicone_rubber', 144))
 			.itemOutputs(Item.of('tfg:superconductor_coil_small', 4 * multiplier))
@@ -944,8 +944,7 @@ function registerTFGMiscellaneousRecipes(event) {
 				ChemicalHelper.get(TagPrefix.plate, GTMaterials.HSLASteel, 4),
 				ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 2),
 				ChemicalHelper.get(TagPrefix.rod, GTMaterials.SteelMagnetic, 1),
-				ChemicalHelper.get(TagPrefix.wireGtSingle, GTMaterials[type.materialId], 4),
-			)
+				ChemicalHelper.get(TagPrefix.wireGtSingle, GTMaterials[type.materialId], 4))
 			.inputFluids(Fluid.of('gtceu:silicone_rubber', 144))
 			.itemOutputs(Item.of('tfg:superconductor_coil_large', 4 * multiplier))
 			.circuit(7)
