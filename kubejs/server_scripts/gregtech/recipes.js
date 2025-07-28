@@ -1281,4 +1281,37 @@ const registerGTCEURecipes = (event) => {
 
 	event.shapeless(Item.of('gtceu:matchbox', '{usesLeft:8}'), ['minecraft:paper', '8x gtceu:matches'])
 		.id('tfg:shapeless/matchbox')
+
+	// Nano CPU use Nuclear Tritiated Water COMMENTED UNTIL MARS IS OUT
+/*
+	event.replaceInput({ id: 'gtceu:chemical_reactor/nano_cpu_wafer' }, Fluid.of('gtceu:glowstone'), Fluid.of('gtceu:tritiated_water'))
+	event.replaceInput({ id: 'gtceu:large_chemical_reactor/nano_cpu_wafer' }, Fluid.of('gtceu:glowstone'), Fluid.of('gtceu:tritiated_water'))
+
+	// Remove Plutonium from centrifuging Uranium dust
+
+	event.remove({ id: 'gtceu:centrifuge/uranium_238_separation' })
+
+	event.recipes.gtceu.centrifuge('tfg:uranium_238_separation')
+		.itemInputs('#forge:dusts/uranium')
+		.chancedOutput('#forge:tiny_dusts/uranium_235', 2300, 0)
+		.duration(20*40)
+		.EUt(GTValues.VA[GTValues.HV])
+*/
+	// Change the Large Centrifugal Unit to be craftable at EV
+
+	event.remove({ id: 'gtceu:shaped/large_centrifuge' })
+
+	event.shaped('gtceu:large_centrifuge', [
+		'EFE',
+		'ADA',
+		'BCB'
+	], {
+		A: '#gtceu:circuits/iv',
+		B: 'gtceu:ev_electric_motor',
+		C: 'gtceu:aluminium_single_cable',
+		D: 'gtceu:ev_centrifuge',
+		E: 'gtceu:molybdenum_disilicide_spring',
+		F: 'gtceu:stainless_steel_huge_fluid_pipe'
+	}).id('tfg:shaped/large_centrifuge')
+
 }

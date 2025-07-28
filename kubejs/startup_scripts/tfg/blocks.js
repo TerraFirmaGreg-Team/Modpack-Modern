@@ -42,8 +42,19 @@ const registerTFGBlocks = (event) => {
 			.hardness(5)
 			.resistance(6)
 			.tagBlock('minecraft:mineable/pickaxe')
+			.tagBlock('minecraft:mineable/wrench')
 			.mapColor('color_light_gray')
 	})
+
+		event.create(`tfg:casings/machine_casing_stainless_evaporation`)
+			.translationKey(`block.tfg.casings.machine_casing_stainless_evaporation`)
+			.model(`tfg:block/casings/machine_casing_stainless_evaporation`)
+			.soundType('copper')
+			.hardness(5)
+			.resistance(6)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.tagBlock('minecraft:mineable/wrench')
+			.mapColor('color_light_gray')
 
 	//#endregion
 
