@@ -53,9 +53,17 @@
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
-		"ad_astra:martian_raptor": {
-			"charge": 0.2,
-			"energy_budget": 0.015
+		"endermanoverhaul:crimson_forest_enderman": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"endermanoverhaul:warped_forest_enderman": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"endermanoverhaul:badlands_enderman": {
+			"energy_budget": 0.15,
+			"charge": 0.7
 		}
 	},
 	"spawners": {

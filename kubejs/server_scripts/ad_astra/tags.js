@@ -220,6 +220,10 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/black')
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/red')
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/pink')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:grass/mars_dirt')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:grass/rusticus_mycelium')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:grass/amber_mycelium')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:grass/sangnum_mycelium')
 	
 	event.add('tfc:can_carve', '#ad_astra:moon_stone_replaceables')
 	event.add('tfc:can_carve', '#ad_astra:mars_stone_replaceables')

@@ -48,10 +48,7 @@
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
-		"ad_astra:martian_raptor": {
-			"charge": 0.2,
-			"energy_budget": 0.015
-		}
+		
 	},
 	"spawners": {
 		"ambient": [],
