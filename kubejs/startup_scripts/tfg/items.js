@@ -1,6 +1,10 @@
 // priority: 0
 "use strict";
 
+/**
+ * 
+ * @param {Registry.Item} event 
+ */
 const registerTFGItems = (event) => {
 
 	registerTFGDeprecatedItems(event)
@@ -360,5 +364,10 @@ const registerTFGItems = (event) => {
 
 	event.create('tfg:universal_compost_greens')
 		.tag('tfc:compost_greens_low')
+	//#endregion
+
+	//#region Etched Diamond Etching Tip
+	event.create('tfg:etching_diamond_tip')
+		.translationKey("item.tfg.etching_diamond_tip")
 	//#endregion
 }
