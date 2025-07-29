@@ -437,19 +437,20 @@ const registerSophisticatedBackpacksRecipes = (event) => {
     }).id('tfg:sophisticated_backpacks/shaped/stonecutter_upgrade')
 
     // Feeding upgrade
-    event.shaped('sophisticatedbackpacks:feeding_upgrade', [
-        'ADA',
-        'BEF',
-        'CGC'
-    ], {
-        A: '#gtceu:circuits/lv',
-        B: 'firmalife:spoon',
-        C: 'gtceu:lv_robot_arm',
-        D: '#tfc:bowls',
-        E: 'sophisticatedbackpacks:upgrade_base',
-        F: '#forge:tools/knives',
-        G: '#forge:rods/steel'
-    }).id('tfg:sophisticated_backpacks/shaped/feeding_upgrade')
+    event.recipes.tfc.no_remainder_shaped_crafting(
+        event.shaped('sophisticatedbackpacks:feeding_upgrade', [
+            'ADA',
+            'BEF',
+            'CGC'
+        ], {
+            A: '#gtceu:circuits/lv',
+            B: 'firmalife:spoon',
+            C: 'gtceu:lv_robot_arm',
+            D: '#tfc:bowls',
+            E: 'sophisticatedbackpacks:upgrade_base',
+            F: '#forge:tools/knives',
+            G: '#forge:rods/steel'
+    })).id('tfg:sophisticated_backpacks/shaped/feeding_upgrade')
 
     event.shapeless('sophisticatedbackpacks:advanced_feeding_upgrade', [
         'sophisticatedbackpacks:feeding_upgrade',

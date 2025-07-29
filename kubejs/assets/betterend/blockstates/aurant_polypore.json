@@ -1,0 +1,24 @@
+{
+    "variants": {
+        "facing=north":  [
+			{ "model": "betterend:block/aurant_polypore_1", "y": 180 },
+			{ "model": "betterend:block/aurant_polypore_2", "y": 180 },
+			{ "model": "betterend:block/aurant_polypore_3", "y": 180 }
+		],
+        "facing=south":  [
+			{ "model": "betterend:block/aurant_polypore_1" },
+			{ "model": "betterend:block/aurant_polypore_2" },
+			{ "model": "betterend:block/aurant_polypore_3" }
+		],
+        "facing=east":  [
+			{ "model": "betterend:block/aurant_polypore_1", "y": 270 },
+			{ "model": "betterend:block/aurant_polypore_2", "y": 270 },
+			{ "model": "betterend:block/aurant_polypore_3", "y": 270 }
+		],
+        "facing=west":  [
+			{ "model": "betterend:block/aurant_polypore_1", "y": 90 },
+			{ "model": "betterend:block/aurant_polypore_2", "y": 90 },
+			{ "model": "betterend:block/aurant_polypore_3", "y": 90 }
+		]
+    }
+}

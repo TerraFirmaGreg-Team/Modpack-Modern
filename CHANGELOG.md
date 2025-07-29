@@ -41,6 +41,7 @@
 - Added mortar and pestel recipes for grain to flour @Pyritie
 - Added in-world shift + right-click interactions for bricks. Greens can be used to turn bricks into mossy bricks, and a knife reverts it. Hammers make cracked bricks and mortar repairs them. (#1416) @Redeix
 - Steam can now be pumped into Blaze Burners via the Straw (#1379) @Nyonyix
+- Rearranged some anvil finish sequences to fit TFG convention @Zippity
 - Replaced moon skeletons with Strays @Pyritie
 - Replaced Beneath cave endermen with a different, passive one (same loot table though) @Pyritie
 - Added sandpaper recipes for early game gems @Pyritie
@@ -50,6 +51,8 @@
 - Fixed new extruder molds missing a tag to work with the curving press (#1412) @Forsuin
 - Fixed contraptions no longer understanding TFC chests @Pyritie
 - Fixed ice never melting in the overworld (#1408) @Pyritie
+- Fixed small gears not having heat data @Zippity
+- Fixed forgeable small gears not being meltable @Zippity
 - Removed most empty tag recipes (#1420) @BlueBoat29
 - Fixed Styrene Butadiene Belt recipe (#1421) @BlueBoat29
 - Fixed deer dropping camelidae meat with a butchery knife @Pyritie

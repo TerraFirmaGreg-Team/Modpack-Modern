@@ -147,7 +147,8 @@ function registerTFGSpaceRecipes(event) {
 		.addDataString("fluidA", "tfc:salt_water")
 		.outputFluids(Fluid.of("tfc:salt_water", 1000))
 
-	// Plants
+	// Plants - Can't use the default builder here because fertiliser is much harder to get on the moon,
+	// and we're using helium-3 as the fertiliser
 
 	// Chorus
 	event.recipes.gtceu.greenhouse('tfg:chorus')

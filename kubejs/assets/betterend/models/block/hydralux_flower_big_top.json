@@ -1,0 +1,43 @@
+{
+	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "betterend:block/hydralux_flower_bud",
+		"texture": "betterend:block/hydralux_flower_bud"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Box3",
+			"from": [ 5, 0, 5 ],
+			"to": [ 11, 2, 11 ],
+			"faces": {
+				"up": { "uv": [ 1, 1, 7, 7 ], "texture": "#texture" },
+				"north": { "uv": [ 1, 8, 7, 10 ], "texture": "#texture" },
+				"south": { "uv": [ 1, 8, 7, 10 ], "texture": "#texture" },
+				"west": { "uv": [ 1, 8, 7, 10 ], "texture": "#texture" },
+				"east": { "uv": [ 1, 8, 7, 10 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneX9",
+			"from": [ 5.5, 2, 5.5 ],
+			"to": [ 5.501, 10, 13.5 ],
+			"rotation": { "origin": [ 5.5, 3, 5.5 ], "axis": "y", "angle": 45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 8, 8, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 8, 8, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneX9",
+			"from": [ 10.5, 2, 5.5 ],
+			"to": [ 10.501, 10, 13.5 ],
+			"rotation": { "origin": [ 10.5, 3, 5.5 ], "axis": "y", "angle": -45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 8, 8, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 8, 8, 16, 16 ], "texture": "#texture" }
+			}
+		}
+	]
+}

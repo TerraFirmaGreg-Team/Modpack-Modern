@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"": [
+			{ "model": "betterend:block/pond_anemone" },
+			{ "model": "betterend:block/pond_anemone", "y":  90 },
+			{ "model": "betterend:block/pond_anemone", "y": 180 },
+			{ "model": "betterend:block/pond_anemone", "y": 270 }
+		]
+	}
+}

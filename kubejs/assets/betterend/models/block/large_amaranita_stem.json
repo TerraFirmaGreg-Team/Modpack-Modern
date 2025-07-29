@@ -1,0 +1,31 @@
+{
+	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "betterend:block/amaranita_stem_middle",
+		"stem": "betterend:block/amaranita_stem_middle"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "PlaneX9",
+			"from": [ 2.25, 0, 2.25 ],
+			"to": [ 2.251, 16, 18.25 ],
+			"rotation": { "origin": [ 2.25, 0, 2.25 ], "axis": "y", "angle": 45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#stem" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#stem" }
+			}
+		},
+		{
+			"__comment": "PlaneX9",
+			"from": [ 13.625, 0, 2.375 ],
+			"to": [ 13.626, 16, 18.375 ],
+			"rotation": { "origin": [ 13.625, 0, 2.375 ], "axis": "y", "angle": -45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#stem" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#stem" }
+			}
+		}
+	]
+}

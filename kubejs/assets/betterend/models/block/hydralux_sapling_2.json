@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/cross",
+	"textures": {
+		"texture": "betterend:block/hydralux_sapling_2"
+	}
+}
