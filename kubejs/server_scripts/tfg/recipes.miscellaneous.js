@@ -1012,11 +1012,11 @@ function registerTFGMiscellaneousRecipes(event) {
 	})
 
 	// Etching Tip
-	event.shapeless('tfg:etching_diamond_tip',[
+	event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless('tfg:etching_diamond_tip',[
 		'#forge:tools/hammers',
 		'#tfc:chisels',
 		'minecraft:diamond'
-	]);
+	]));
 
 	event.replaceInput({ id: "minecraft:jukebox"}, 'minecraft:diamond', 'tfg:etching_diamond_tip');
 }
