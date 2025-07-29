@@ -354,5 +354,6 @@ const registerGTCEuMaterialModification = (event) => {
 	
 	GTCEuAPI.materialManager.getMaterial('tfg:kaolinite').setFormula("Al2Si2O5(OH)4", true)
 	GTCEuAPI.materialManager.getMaterial('tfg:vitrified_pearl').setFormula("(Al2Si2O5(OH)4)(BeK4N5)", true)
+	GTCEuAPI.materialManager.getMaterial('tfg:tmos').setFormula("Si(OCH3)4", true)
 
 }

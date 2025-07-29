@@ -58,10 +58,21 @@ const registerAdAstraItemTags = (event) => {
 	//Insulation Tier 2
 	event.add('forge:insulation_t2/sheet', 'tfg:aes_insulation_sheet')
 	event.add('forge:insulation_t2/roll', 'tfg:aes_insulation_roll')
+	
+	//Insulation Tier3
+	event.add('forge:insulation_t3/foam', 'tfg:aes_polyurethane')
+	event.add('forge:insulation_t3/sheet', 'tfg:mli_shielding')
+	event.add('forge:insulation_t3/cryo', 'tfg:silica_aerogel')
+	
+	event.add('forge:aerogels', 'tfg:silica_aerogel')
 
 	//Rocket Engines
 	event.add('ad_astra:rocket_engine', 'ad_astra:steel_engine')
 	event.add('ad_astra:rocket_engine', 'ad_astra:desh_engine')
+	event.add('ad_astra:rocket_engine', 'ad_astra:ostrum_engine')
+	
+	//Rocket Tank
+	event.add('ad_astra:rocket_tank', 'ad_astra:ostrum_tank')
 	
 	// Deco blocks
 	const DECO_BLOCKS = [ 'iron', 'steel', 'desh', 'calorite', 'ostrum' ];

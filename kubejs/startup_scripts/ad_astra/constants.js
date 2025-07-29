@@ -24,8 +24,6 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:fan',
 	'ad_astra:steel_tank',
 	'ad_astra:desh_tank',
-	'ad_astra:ostrum_tank',
-	'ad_astra:calorite_tank',
 	'ad_astra:ice_shard',
 	'ad_astra:oxygen_bucket',
 	'ad_astra:hydrogen_bucket',
@@ -44,6 +42,7 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:ti_69',
 	'ad_astra:steel_cable',
 	'ad_astra:desh_cable',
+	
 
 	// Don't tag prefix these, several systems rely on all ore blocks being gregtech's generated ones
 	'ad_astra:moon_ice_shard_ore',
@@ -69,7 +68,7 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:glacio_lapis_ore',
 
 	// Disabled until EV planet
-
+/*
 	'ad_astra:tier_2_rocket',
 	'ad_astra:desh_engine',
 	'tfg:rocket_fin_t2',
@@ -78,23 +77,28 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	// Disabled until IV planets
 
 	'ad_astra:tier_3_rocket',
+	'ad_astra:ostrum_engine',
+	'ad_astra:ostrum_tank',
+	'tfg:rocket_fin_t3',
+	'tfg:rocket_cone_t3',
 	'ad_astra:netherite_space_helmet',
 	'ad_astra:netherite_space_suit',
 	'ad_astra:netherite_space_pants',
 	'ad_astra:netherite_space_boots',
-	'ad_astra:ostrum_engine',
 	
+	*/
 
 
 	// Disabled until LuV planet
 	
 	'ad_astra:glacio_globe', // maybe
 	'ad_astra:tier_4_rocket',
+	'ad_astra:calorite_engine',
+	'ad_astra:calorite_tank'
 	'ad_astra:jet_suit_helmet',
 	'ad_astra:jet_suit',
 	'ad_astra:jet_suit_pants',
-	'ad_astra:jet_suit_boots',
-	'ad_astra:calorite_engine'
+	'ad_astra:jet_suit_boots'
 ];
 
 global.AD_ASTRA_DISABLED_FLUIDS =
