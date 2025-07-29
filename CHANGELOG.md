@@ -11,6 +11,8 @@
 - Added recipe for backpack feeding upgrade (#1462) @Pyritie
 - Greate shaft recipes are now shapeless (#1453) @Pyritie
 - Added crafting table recipes for matches and the matchbox (#1449) @Pyritie
+- Added faster recipes for crafting dough @Pyritie
+- Black bronze now has a fluid pipe instead of an item pipe, so the drum has proper containment info @Pyritie
 ### Bug fixes
 - Fixed not being able to craft fine wire in a coiling machine for materials that didn't also have normal wire @Pyritie
 - Fixed cobalt brass and potin double plates not being obtainable until MV @Pyritie
