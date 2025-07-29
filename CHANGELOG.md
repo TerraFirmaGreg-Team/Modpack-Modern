@@ -11,6 +11,7 @@
 - Added recipe for backpack feeding upgrade (#1462) @Pyritie
 - Greate shaft recipes are now shapeless (#1453) @Pyritie
 - Added crafting table recipes for matches and the matchbox (#1449) @Pyritie
+- Made "Etched" more accessible (#1473) @Nebby1999
 ### Bug fixes
 - Fixed not being able to craft fine wire in a coiling machine for materials that didn't also have normal wire @Pyritie
 - Fixed cobalt brass and potin double plates not being obtainable until MV @Pyritie
