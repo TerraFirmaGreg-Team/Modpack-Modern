@@ -201,7 +201,7 @@ function registerTFGNuclearRecipes(event) {
 
 	event.recipes.gtceu.gas_turbine('dense_steam')
 		.inputFluids(Fluid.of('gtceu:dense_steam', 1))
-		.EUt(-32)
+		.EUt(-(32*4))
 		.duration(20*2)
 
 	//#endregion
