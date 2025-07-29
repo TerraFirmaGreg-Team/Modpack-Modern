@@ -1,0 +1,48 @@
+{
+    "variants": {
+        "facing=north": [
+			{ "model": "betterend:block/jungle_fern_1", "y": 180 },
+			{ "model": "betterend:block/jungle_fern_2", "y": 180 },
+			{ "model": "betterend:block/jungle_fern_3", "y": 180 },
+			{ "model": "betterend:block/jungle_fern_4", "y": 180 },
+			{ "model": "betterend:block/jungle_fern_5", "y": 180 },
+			{ "model": "betterend:block/jungle_fern_6", "y": 180 },
+			{ "model": "betterend:block/jungle_fern_7", "y": 180 },
+			{ "model": "betterend:block/jungle_fern_8", "y": 180 },
+			{ "model": "betterend:block/jungle_fern_9", "y": 180 }
+		],
+        "facing=south": [
+			{ "model": "betterend:block/jungle_fern_1" },
+			{ "model": "betterend:block/jungle_fern_2" },
+			{ "model": "betterend:block/jungle_fern_3" },
+			{ "model": "betterend:block/jungle_fern_4" },
+			{ "model": "betterend:block/jungle_fern_5" },
+			{ "model": "betterend:block/jungle_fern_6" },
+			{ "model": "betterend:block/jungle_fern_7" },
+			{ "model": "betterend:block/jungle_fern_8" },
+			{ "model": "betterend:block/jungle_fern_9" }
+		],
+        "facing=east":  [
+			{ "model": "betterend:block/jungle_fern_1", "y": 270 },
+			{ "model": "betterend:block/jungle_fern_2", "y": 270 },
+			{ "model": "betterend:block/jungle_fern_3", "y": 270 },
+			{ "model": "betterend:block/jungle_fern_4", "y": 270 },
+			{ "model": "betterend:block/jungle_fern_5", "y": 270 },
+			{ "model": "betterend:block/jungle_fern_6", "y": 270 },
+			{ "model": "betterend:block/jungle_fern_7", "y": 270 },
+			{ "model": "betterend:block/jungle_fern_8", "y": 270 },
+			{ "model": "betterend:block/jungle_fern_9", "y": 270 }
+		],
+        "facing=west":  [
+			{ "model": "betterend:block/jungle_fern_1", "y": 90 },
+			{ "model": "betterend:block/jungle_fern_2", "y": 90 },
+			{ "model": "betterend:block/jungle_fern_3", "y": 90 },
+			{ "model": "betterend:block/jungle_fern_4", "y": 90 },
+			{ "model": "betterend:block/jungle_fern_5", "y": 90 },
+			{ "model": "betterend:block/jungle_fern_6", "y": 90 },
+			{ "model": "betterend:block/jungle_fern_7", "y": 90 },
+			{ "model": "betterend:block/jungle_fern_8", "y": 90 },
+			{ "model": "betterend:block/jungle_fern_9", "y": 90 }
+		]
+    }
+}

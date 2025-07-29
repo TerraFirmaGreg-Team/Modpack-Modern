@@ -11,12 +11,19 @@
 - Added recipe for backpack feeding upgrade (#1462) @Pyritie
 - Greate shaft recipes are now shapeless (#1453) @Pyritie
 - Added crafting table recipes for matches and the matchbox (#1449) @Pyritie
+- Made "Etched" more accessible (#1473) @Nebby1999
+- Added faster recipes for crafting dough @Pyritie
+- Black bronze now has a fluid pipe instead of an item pipe, so the drum has proper containment info @Pyritie
+- Added recipes to create basic TFC alcohol in the food processor @Pyritie
 ### Bug fixes
 - Fixed not being able to craft fine wire in a coiling machine for materials that didn't also have normal wire @Pyritie
 - Fixed cobalt brass and potin double plates not being obtainable until MV @Pyritie
 - Fixed missing recipe for cooking fox meat @Pyritie
 - Fixed ingot extruder mold recipe conflict @BlueBoat29
+- Fixed wire cutter head extruder recipes missing a mold @Pyritie
 - Possibly fixed the issue with airplanes and akistor carts not appearing when placing them (#1447) @Pyritie
+- Fixed not being able to make sea water with TFC salt in a barrel (#1476) @Pyritie
+- Fixed the electric greenhouse fruit tree recipes making more saplings instead of fruit (#1445) @Pyritie
 ### Translations
 - Ukranian @Furryks
 
@@ -41,6 +48,7 @@
 - Added mortar and pestel recipes for grain to flour @Pyritie
 - Added in-world shift + right-click interactions for bricks. Greens can be used to turn bricks into mossy bricks, and a knife reverts it. Hammers make cracked bricks and mortar repairs them. (#1416) @Redeix
 - Steam can now be pumped into Blaze Burners via the Straw (#1379) @Nyonyix
+- Rearranged some anvil finish sequences to fit TFG convention @Zippity
 - Replaced moon skeletons with Strays @Pyritie
 - Replaced Beneath cave endermen with a different, passive one (same loot table though) @Pyritie
 - Added sandpaper recipes for early game gems @Pyritie
@@ -50,6 +58,8 @@
 - Fixed new extruder molds missing a tag to work with the curving press (#1412) @Forsuin
 - Fixed contraptions no longer understanding TFC chests @Pyritie
 - Fixed ice never melting in the overworld (#1408) @Pyritie
+- Fixed small gears not having heat data @Zippity
+- Fixed forgeable small gears not being meltable @Zippity
 - Removed most empty tag recipes (#1420) @BlueBoat29
 - Fixed Styrene Butadiene Belt recipe (#1421) @BlueBoat29
 - Fixed deer dropping camelidae meat with a butchery knife @Pyritie

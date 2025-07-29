@@ -1,0 +1,133 @@
+{
+	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "betterend:block/lumecorn_roots",
+		"texture": "betterend:block/lumecorn_roots",
+		"leaf_2": "betterend:block/lumecorn_leaf_2",
+		"leaf_1": "betterend:block/lumecorn_leaf_1",
+		"big_petal": "betterend:block/lumecorn_big_petal"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "PlaneY4",
+			"from": [ 11, 16, 0 ],
+			"to": [ 27, 16.001, 16 ],
+			"rotation": { "origin": [ 11, 16, 0 ], "axis": "z", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 16, 0, 0, 16 ], "texture": "#leaf_2", "rotation": 90 },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#leaf_2", "rotation": 90 }
+			}
+		},
+		{
+			"__comment": "PlaneY4",
+			"from": [ 11, 16, 0 ],
+			"to": [ 19, 16.001, 16 ],
+			"rotation": { "origin": [ 11, 16, 0 ], "axis": "z", "angle": 22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 16, 8, 0, 16 ], "texture": "#leaf_1", "rotation": 90 },
+				"up": { "uv": [ 0, 8, 16, 16 ], "texture": "#leaf_1", "rotation": 90 }
+			}
+		},
+		{
+			"__comment": "PlaneY4",
+			"from": [ -11, 15.999, 0 ],
+			"to": [ 5, 16, 16 ],
+			"rotation": { "origin": [ 5, 16, 0 ], "axis": "z", "angle": 22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#leaf_2", "rotation": 270 },
+				"up": { "uv": [ 16, 0, 0, 16 ], "texture": "#leaf_2", "rotation": 270 }
+			}
+		},
+		{
+			"__comment": "PlaneY4",
+			"from": [ -3, 15.999, 0 ],
+			"to": [ 5, 16, 16 ],
+			"rotation": { "origin": [ 5, 16, 0 ], "axis": "z", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 8, 16, 16 ], "texture": "#leaf_1", "rotation": 270 },
+				"up": { "uv": [ 16, 8, 0, 16 ], "texture": "#leaf_1", "rotation": 270 }
+			}
+		},
+		{
+			"__comment": "PlaneY17",
+			"from": [ 0, 16, 11 ],
+			"to": [ 16, 16.001, 27 ],
+			"rotation": { "origin": [ 0, 16, 11 ], "axis": "x", "angle": 22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 16, 0, 0, 16 ], "texture": "#leaf_2" },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#leaf_2", "rotation": 180 }
+			}
+		},
+		{
+			"__comment": "PlaneY17",
+			"from": [ 0, 16, 11 ],
+			"to": [ 16, 16.001, 19 ],
+			"rotation": { "origin": [ 0, 16, 11 ], "axis": "x", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 16, 8, 0, 16 ], "texture": "#leaf_1" },
+				"up": { "uv": [ 0, 8, 16, 16 ], "texture": "#leaf_1", "rotation": 180 }
+			}
+		},
+		{
+			"__comment": "PlaneY17",
+			"from": [ 0, 15.999, -11 ],
+			"to": [ 16, 16, 5 ],
+			"rotation": { "origin": [ 0, 16, 5 ], "axis": "x", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#leaf_2", "rotation": 180 },
+				"up": { "uv": [ 16, 0, 0, 16 ], "texture": "#leaf_2" }
+			}
+		},
+		{
+			"__comment": "PlaneY17",
+			"from": [ 0, 15.999, -3 ],
+			"to": [ 16, 16, 5 ],
+			"rotation": { "origin": [ 0, 16, 5 ], "axis": "x", "angle": 22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 8, 16, 16 ], "texture": "#leaf_1", "rotation": 180 },
+				"up": { "uv": [ 16, 8, 0, 16 ], "texture": "#leaf_1" }
+			}
+		},
+		{
+			"__comment": "PlaneY14",
+			"from": [ 8, 16, -7.5 ],
+			"to": [ 30, 16.001, 14.5 ],
+			"rotation": { "origin": [ 8, 16, -7.5 ], "axis": "y", "angle": -45 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 0, 11, 11 ], "texture": "#big_petal" },
+				"up": { "uv": [ 0, 0, 11, 11 ], "texture": "#big_petal" }
+			}
+		},
+		{
+			"__comment": "PlaneX15",
+			"from": [ 0, 0, 0 ],
+			"to": [ 0.001, 16, 22.5 ],
+			"rotation": { "origin": [ 0, 0, 0 ], "axis": "y", "angle": 45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneX15",
+			"from": [ 16, 0, 0 ],
+			"to": [ 16.001, 16, 22.5 ],
+			"rotation": { "origin": [ 16, 0, 0 ], "axis": "y", "angle": -45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+			}
+		}
+	]
+}

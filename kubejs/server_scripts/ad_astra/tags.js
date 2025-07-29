@@ -220,6 +220,10 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/black')
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/red')
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:sand/pink')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:grass/mars_dirt')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:grass/rusticus_mycelium')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:grass/amber_mycelium')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:grass/sangnum_mycelium')
 	
 	event.add('tfc:can_carve', '#ad_astra:moon_stone_replaceables')
 	event.add('tfc:can_carve', '#ad_astra:mars_stone_replaceables')
@@ -295,8 +299,8 @@ const registerAdAstraBiomeTags = (event) => {
 
 const registerAdAstraEntityTypeTags = (event) => {
 
-	// moon
-	const MOON_ENTITIES = [
+	const COLD_ENTITIES = [
+		// moon
 		'tfc:rat',
 		'tfg:moon_rabbit',
 		'minecraft:enderman',
@@ -311,16 +315,26 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'endermanoverhaul:spirit',
 		'endermanoverhaul:end_enderman',
 		'endermanoverhaul:end_islands_enderman',
+
+		'minecraft:sniffer',
+		'species:wraptor',
+		'species:goober',
+		'species:cruncher',
+		'species:springling',
+		'species:quake',
+		'endermanoverhaul:crimson_forest_enderman',
+		'endermanoverhaul:warped_forest_enderman',
+		'endermanoverhaul:badlands_enderman'
 	]
 
-	MOON_ENTITIES.forEach(entity => {
+	COLD_ENTITIES.forEach(entity => {
 
 		event.add('ad_astra:can_survive_extreme_cold', entity)
 		event.add('ad_astra:lives_without_oxygen', entity)
 	})
 
 	event.add('tfc:deals_crushing_damage', 'minecraft:enderman')
-	event.add('tfc:deals_crushing_damage', 'minecraft:skeleton')
+	event.add('tfc:deals_crushing_damage', 'minecraft:stray')
 	event.add('tfc:deals_crushing_damage', 'endermanoverhaul:windswept_hills_enderman')
 	event.add('tfc:deals_crushing_damage', 'endermanoverhaul:soulsand_valley_enderman')
 	event.add('tfc:deals_piercing_damage', 'endermanoverhaul:end_enderman')

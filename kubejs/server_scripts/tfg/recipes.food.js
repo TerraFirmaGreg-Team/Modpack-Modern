@@ -719,6 +719,17 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('firmalife:food/soy_mixture').copyOldestFood()
 	})
 
+	// Alcohols
+
+	global.TFC_ALCOHOL.forEach(alcohol => {
+		processorRecipe(alcohol.id.replace(/:/g, "_"), 2400, 1, {
+			itemInputs: [alcohol.ingredient],
+			fluidInputs: ['#tfg:clean_water 500', 'firmalife:yeast_starter 10'],
+			fluidOutputs: [Fluid.of(alcohol.id, 500)],
+			circuit: 11
+		}).notConsumable('#tfc:barrels')
+	})
+
 	// Cakes
 
 	processorRecipe("cake_base", 300, 8, {

@@ -1,0 +1,25 @@
+{
+    "variants": {
+        "": [
+			{ "model": "betterend:block/umbrella_moss_small" },
+			{ "model": "betterend:block/umbrella_moss_small", "y":  90 },
+			{ "model": "betterend:block/umbrella_moss_small", "y": 180 },
+			{ "model": "betterend:block/umbrella_moss_small", "y": 270 },
+			
+			{ "model": "betterend:block/umbrella_moss_small_2" },
+			{ "model": "betterend:block/umbrella_moss_small_2", "y":  90 },
+			{ "model": "betterend:block/umbrella_moss_small_2", "y": 180 },
+			{ "model": "betterend:block/umbrella_moss_small_2", "y": 270 },
+			
+			{ "model": "betterend:block/umbrella_moss_small_3" },
+			{ "model": "betterend:block/umbrella_moss_small_3", "y":  90 },
+			{ "model": "betterend:block/umbrella_moss_small_3", "y": 180 },
+			{ "model": "betterend:block/umbrella_moss_small_3", "y": 270 },
+			
+			{ "model": "betterend:block/umbrella_moss_small_4" },
+			{ "model": "betterend:block/umbrella_moss_small_4", "y":  90 },
+			{ "model": "betterend:block/umbrella_moss_small_4", "y": 180 },
+			{ "model": "betterend:block/umbrella_moss_small_4", "y": 270 }
+		]
+    }
+}

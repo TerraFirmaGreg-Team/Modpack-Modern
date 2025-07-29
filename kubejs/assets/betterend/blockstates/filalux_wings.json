@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=north": { "model": "betterend:block/filalux_wings", "y": 180 },
+        "facing=south": { "model": "betterend:block/filalux_wings" },
+        "facing=east":  { "model": "betterend:block/filalux_wings", "y": 270 },
+        "facing=west":  { "model": "betterend:block/filalux_wings", "y": 90 },
+		"facing=up":    { "model": "betterend:block/filalux_wings_top" },
+        "facing=down":  { "model": "betterend:block/filalux_wings_bottom", "x": 180 }
+    }
+}

@@ -809,8 +809,12 @@ const registerAdAstraRecipes = (event) => {
 		}).id('tfg:shaped/strophar_ladder')
 
 
-		generateGreenHouseRecipe(event, '8x ad_astra:strophar_mushroom', 16000, '64x ad_astra:strophar_stem', 'tfg:green_house/strophar_mushroom', 'ad_astra:mars', 8, '16x ad_astra:strophar_cap', GTValues.VA[GTValues.MV])
-		generateGreenHouseRecipe(event, '8x ad_astra:aeronos_mushroom', 16000, '64x ad_astra:aeronos_stem', 'tfg:green_house/aeronos_mushroom', 'ad_astra:mars', 8, '16x ad_astra:aeronos_cap', GTValues.VA[GTValues.MV])
+		generateGreenHouseRecipe(event, '8x ad_astra:strophar_mushroom', 'tfg:semiheavy_ammoniacal_water', 16000,
+			'64x ad_astra:strophar_stem', 'tfg:green_house/strophar_mushroom', 'ad_astra:mars', 8, 
+			'16x ad_astra:strophar_cap', GTValues.VA[GTValues.MV])
+		generateGreenHouseRecipe(event, '8x ad_astra:aeronos_mushroom', 'tfg:semiheavy_ammoniacal_water', 16000, 
+			'64x ad_astra:aeronos_stem', 'tfg:green_house/aeronos_mushroom', 'ad_astra:mars', 8,
+			'16x ad_astra:aeronos_cap', GTValues.VA[GTValues.MV])
 		// TODO: needs a sapling
 		//generateGreenHouseRecipe(event, '8x ___', 16000, '64x ad_astra:glacian_log', 'tfg:green_house/glacian_tree', 'ad_astra:mars', 8, '8x species:alphacene_moss_block', GTValues.VA[GTValues.MV])
 	//#endregion

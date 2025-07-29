@@ -1,0 +1,28 @@
+{
+    "variants": {
+        "age=0": [
+			{ "model": "betterend:block/shadow_berry_01" },
+			{ "model": "betterend:block/shadow_berry_01", "y": 90 },
+			{ "model": "betterend:block/shadow_berry_01", "y": 180 },
+			{ "model": "betterend:block/shadow_berry_01", "y": 270 }
+		],
+        "age=1": [
+			{ "model": "betterend:block/shadow_berry_02" },
+			{ "model": "betterend:block/shadow_berry_02", "y": 90 },
+			{ "model": "betterend:block/shadow_berry_02", "y": 180 },
+			{ "model": "betterend:block/shadow_berry_02", "y": 270 }
+		],
+        "age=2": [
+			{ "model": "betterend:block/shadow_berry_03" },
+			{ "model": "betterend:block/shadow_berry_03", "y": 90 },
+			{ "model": "betterend:block/shadow_berry_03", "y": 180 },
+			{ "model": "betterend:block/shadow_berry_03", "y": 270 }
+		],
+        "age=3": [
+			{ "model": "betterend:block/shadow_berry_04" },
+			{ "model": "betterend:block/shadow_berry_04", "y": 90 },
+			{ "model": "betterend:block/shadow_berry_04", "y": 180 },
+			{ "model": "betterend:block/shadow_berry_04", "y": 270 }
+		]
+    }
+}
