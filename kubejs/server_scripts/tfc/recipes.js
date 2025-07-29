@@ -85,7 +85,7 @@ const registerTFCRecipes = (event) => {
 	})
 
 	// Растения
-	Ingredient.of('#tfc:plants').stacks.forEach(element => {
+	Ingredient.of('#tfc:plants').subtract('#tfc:wild_fruits').stacks.forEach(element => {
 		const itemId = element.id;
 		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
 
