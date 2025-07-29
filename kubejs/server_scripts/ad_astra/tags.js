@@ -370,34 +370,35 @@ const registerAdAstraPlacedFeatures = (event) => {
 
 	// Mars
 
-	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/amber_grass"),
-	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/flamaea"),
-	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/flammalix"),
-	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/lutebus"),
-	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/orango"),
+	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/amber_grass")
+	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/flamaea")
+	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/flammalix")
+	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/lutebus")
+	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/orango")
 
-	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/aeridium"),
-	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/flamaea"),
-	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/flammalix"),
-	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/lamellarium"),
-	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/lutebus"),
-	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/orango"),
-	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/ruscus"),
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/aeridium")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/flamaea")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/flammalix")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/lamellarium")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/lutebus")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/orango")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/ruscus")
 
-	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/cave_grass"),
-	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/clawfern"),
-	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/flamaea"),
-	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/globulagus"),
-	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/ruscus"),
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/cave_grass")
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/clawfern")
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/flamaea")
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/globulagus")
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/ruscus")
 
-	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/small_amaranita_mushroom"),
-	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/bolux_mushroom"),
+	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/small_amaranita_mushroom")
+	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/bolux_mushroom")
 	
 	// TODO
 	event.add("tfg:mars_trees", "tfg:mars/surface/strophar_huge")
-	event.add("tfg:mars_trees", "tfg:mars/surface/aeronos_huge"),
-	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/aeronos_patch"),
-	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/strophar_patch"),
+	event.add("tfg:mars_trees", "tfg:mars/surface/aeronos_huge")
+	event.add("tfg:mars_trees", "species:alphacene_mushroom")
+	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/aeronos_patch")
+	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/strophar_patch")
 	// Temp
 	event.add('tfg:mars_small_rock_features', 'tfg:mars/no_op')
 	event.add('tfg:mars_veins', 'tfg:mars/no_op')
