@@ -1061,15 +1061,15 @@ global.TFC_CURDS_AND_CHEESES = [
 ];
 
 global.TFC_ALCOHOL = [
-    {id: 'tfc:beer'},
-    {id: 'tfc:cider'},
-    {id: 'tfc:rum'},
-    {id: 'tfc:sake'},
-    {id: 'tfc:vodka'},
-    {id: 'tfc:whiskey'},
-    {id: 'tfc:corn_whiskey'},
-    {id: 'tfc:rye_whiskey'},
-    {id: 'firmalife:mead'},
+    {id: 'tfc:beer', ingredient: 'tfc:food/barley_flour'},
+    {id: 'tfc:cider', ingredient: '#tfc:foods/apples'},
+    {id: 'tfc:rum', ingredient: '#tfg:sugars'},
+    {id: 'tfc:sake', ingredient: 'tfc:food/rice_flour'},
+    {id: 'tfc:vodka', ingredient: 'tfc:food/potato'},
+    {id: 'tfc:whiskey', ingredient: 'tfc:food/wheat_flour'},
+    {id: 'tfc:corn_whiskey', ingredient: 'tfc:food/maize_flour'},
+    {id: 'tfc:rye_whiskey', ingredient: 'tfc:food/rye_flour'},
+    {id: 'firmalife:mead', ingredient: 'firmalife:raw_honey'},
 ];
 
 global.TFC_MAGMA_BLOCKS = [

@@ -13,9 +13,9 @@ const registerEtchedRecipes = (event) => {
         'AAA'
     ], {
         A: '#minecraft:planks',
-        B: '#forge:rings/steel',
-        C: '#forge:plates/steel',
-        D: '#forge:plates/diamond'
+        B: '#forge:rings/wrought_iron',
+        C: '#forge:plates/wrought_iron',
+        D: 'tfg:etching_diamond_tip'
     }).id('etched:etching_table')
 
     // Album Jukebox

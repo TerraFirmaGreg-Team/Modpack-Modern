@@ -85,7 +85,7 @@ const registerTFCRecipes = (event) => {
 	})
 
 	// Растения
-	Ingredient.of('#tfc:plants').stacks.forEach(element => {
+	Ingredient.of('#tfc:plants').subtract('#tfc:wild_fruits').stacks.forEach(element => {
 		const itemId = element.id;
 		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
 
@@ -313,4 +313,10 @@ const registerTFCRecipes = (event) => {
 		.inputFluid(Fluid.of('minecraft:water', 1000))
 		.outputFluid(Fluid.of('tfc:salt_water', 1000))
 		.id('tfg:barrel/water_to_salt_water')
+
+	event.recipes.tfc.barrel_instant()
+		.inputItem("tfc:powder/salt")
+		.inputFluid(Fluid.of('minecraft:water', 250))
+		.outputFluid(Fluid.of('tfc:salt_water', 250))
+		.id('tfg:barrel/water_to_salt_water_tfc')
 }

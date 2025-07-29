@@ -117,24 +117,6 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Каменный стержень
-
-	// Из сырого камня
-	event.recipes.gtceu.lathe('stone_rod_from_stone')
-		.itemInputs('#tfc:rock/raw')
-		.itemOutputs('gtceu:stone_rod', 'gtceu:small_stone_dust')
-		.duration(15)
-		.EUt(2)
-
-	// Из булыжника
-	event.recipes.gtceu.lathe('stone_rod_from_cobblestone')
-		.itemInputs('#forge:cobblestone')
-		.itemOutputs('gtceu:stone_rod', 'gtceu:small_stone_dust')
-		.duration(15)
-		.EUt(2)
-
-	//#endregion
-
 	//#region Выход: Пропитанные доски
 
 	event.remove({ id: 'gtceu:shaped/treated_wood_planks' })
@@ -1066,12 +1048,12 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.gtceu.centrifuge('gtceu:stone_dust_separation')
 		.itemInputs('gtceu:stone_dust')
-		.chancedOutput('#forge:dusts/quartzite', 2500, 0)
-		.chancedOutput('#forge:dusts/potassium_feldspar', 2500, 0)
-		.chancedOutput('#forge:dusts/marble', 2222, 0)
-		.chancedOutput('#forge:dusts/biotite', 1111, 0)
-		.chancedOutput('#forge:dusts/metal_mixture', 825, 80)
-		.chancedOutput('#forge:dusts/sodalite', 550, 55)
+		.chancedOutput('#forge:small_dusts/quartzite', 2500, 0)
+		.chancedOutput('#forge:small_dusts/potassium_feldspar', 2500, 0)
+		.chancedOutput('#forge:small_dusts/marble', 2222, 0)
+		.chancedOutput('#forge:small_dusts/biotite', 1111, 0)
+		.chancedOutput('#forge:small_dusts/metal_mixture', 825, 80)
+		.chancedOutput('#forge:small_dusts/sodalite', 550, 55)
 		.duration(12 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -1282,7 +1264,7 @@ const registerGTCEURecipes = (event) => {
 	event.shapeless(Item.of('gtceu:matchbox', '{usesLeft:8}'), ['minecraft:paper', '8x gtceu:matches'])
 		.id('tfg:shapeless/matchbox')
 
-	// Nano CPU use Nuclear Tritiated Water COMMENTED UNTIL MARS IS OUT
+	// TODO: Nano CPU use Nuclear Tritiated Water COMMENTED UNTIL MARS IS OUT
 /*
 	event.remove({ id: 'gtceu:chemical_reactor/nano_cpu_wafer' })
 	event.remove({ id: 'gtceu:large_chemical_reactor/nano_cpu_wafer' })
