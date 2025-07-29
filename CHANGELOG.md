@@ -20,6 +20,7 @@
 - Fixed ingot extruder mold recipe conflict @BlueBoat29
 - Fixed wire cutter head extruder recipes missing a mold @Pyritie
 - Possibly fixed the issue with airplanes and akistor carts not appearing when placing them (#1447) @Pyritie
+- Fixed not being able to make sea water with TFC salt in a barrel (#1476) @Pyritie
 ### Translations
 - Ukranian @Furryks
 
