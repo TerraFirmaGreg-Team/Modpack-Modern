@@ -18,6 +18,7 @@
 - Fixed cobalt brass and potin double plates not being obtainable until MV @Pyritie
 - Fixed missing recipe for cooking fox meat @Pyritie
 - Fixed ingot extruder mold recipe conflict @BlueBoat29
+- Fixed wire cutter head extruder recipes missing a mold @Pyritie
 - Possibly fixed the issue with airplanes and akistor carts not appearing when placing them (#1447) @Pyritie
 ### Translations
 - Ukranian @Furryks
