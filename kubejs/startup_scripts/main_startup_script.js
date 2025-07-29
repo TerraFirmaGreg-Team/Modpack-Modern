@@ -17,12 +17,14 @@ StartupEvents.registry('entity_type', event => {
 
 BlockEvents.modification(event => {
 	registerAdAstraBlockModifications(event)
+	registerSpeciesBlockModifications(event)
 })
 
 ItemEvents.modification(event => {
 	registerBeneathItemModifications(event)
 	registerConstructionWandsItemModifications(event)
 	registerCreateItemModifications(event)
+	registerFirmalifeItemModifications(event)
 	registerGTCEuItemModifications(event)
 	registerMinecraftItemModifications(event)
 })

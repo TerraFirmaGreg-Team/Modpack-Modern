@@ -152,4 +152,6 @@ const registerMinecraftBlockTags = (event) => {
     event.add('tfg:brick_walls', 'minecraft:blackstone_wall')
     
     //#region
+
+    event.removeAll('minecraft:sniffer_diggable_block')
 }
