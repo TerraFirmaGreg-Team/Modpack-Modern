@@ -5,6 +5,8 @@ const registerSpeciesBlockTags = (event) => {
 		event.removeAllTagsFrom(block)
 		event.add('c:hidden_from_recipe_viewers', block)
 	})
+
+	event.removeAll('species:wraptor_nesting_blocks')
 }
 
 const registerSpeciesItemTags = (event) => {
