@@ -8,7 +8,7 @@
 					"to_place": {
 						"type": "minecraft:simple_state_provider",
 						"state": {
-							"Name": "ad_astra:aeronos_mushroom"
+							"Name": "betterend:small_amaranita_mushroom"
 						}
 					}
 				}
@@ -33,7 +33,7 @@
 				}
 			]
 		},
-		"tries": 48,
+		"tries": 8,
 		"xz_spread": 10,
 		"y_spread": 3
 	}

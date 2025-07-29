@@ -26,7 +26,7 @@
 	},
 	"features": [
 		[],
-		"#tfg:mars_craters",
+		[],
 		[
 			"tfg:earth/geode/amethyst",
 			"tfg:earth/geode/barite",
@@ -45,12 +45,8 @@
 		"#tfg:mars_veins",
 		[],
 		"#tfg:mars_small_rock_features",
-		[
-
-		],
-		[
-			"tfg:mars/hardening"
-		]
+		"#tfg:mars_amber_vegetal_decoration",
+		[]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
