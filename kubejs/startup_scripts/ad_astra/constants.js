@@ -94,7 +94,7 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:glacio_globe', // maybe
 	'ad_astra:tier_4_rocket',
 	'ad_astra:calorite_engine',
-	'ad_astra:calorite_tank'
+	'ad_astra:calorite_tank',
 	'ad_astra:jet_suit_helmet',
 	'ad_astra:jet_suit',
 	'ad_astra:jet_suit_pants',
