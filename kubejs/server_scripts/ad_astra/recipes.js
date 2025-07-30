@@ -197,7 +197,7 @@ const registerAdAstraRecipes = (event) => {
 	
 	event.recipes.gtceu.assembler('tfg:elite_power_thruster')
 		.itemInputs('gtceu:ev_electric_motor', '2x #forge:rings/titanium', '#forge:rods/titanium',
-					'gtceu:stainless_steel_rotor', '2x gtceu:aluminium_single_cable')
+					'gtceu:ultimet_rotor', '2x gtceu:aluminium_single_cable')
 		.itemOutputs('tfg:elite_power_thruster')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -282,7 +282,7 @@ const registerAdAstraRecipes = (event) => {
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_helmet')
 		.itemInputs(
 			'ad_astra:space_helmet',
-			'3x #forge:plates/titanium_tungsten_carbide',
+			'3x #forge:plates/tungsten_steel',
 			'3x tfg:better_space_suit_fabric',
 			'5x gtceu:laminated_glass'
 		)
@@ -300,7 +300,7 @@ const registerAdAstraRecipes = (event) => {
 	}).id('tfg:space_suit')
 
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_suit')
-		.itemInputs('ad_astra:space_suit', '5x #forge:plates/titanium_tungsten_carbide','5x tfg:better_space_suit_fabric')
+		.itemInputs('ad_astra:space_suit', '5x #forge:plates/tungsten_steel','5x tfg:better_space_suit_fabric')
 		.itemOutputs('ad_astra:netherite_space_suit')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.IV])
@@ -315,7 +315,7 @@ const registerAdAstraRecipes = (event) => {
 	}).id('tfg:space_pants')
 
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_pants')
-		.itemInputs('ad_astra:space_pants', '4x #forge:plates/titanium_tungsten_carbide', '4x tfg:better_space_suit_fabric')
+		.itemInputs('ad_astra:space_pants', '4x #forge:plates/tungsten_steel', '4x tfg:better_space_suit_fabric')
 		.itemOutputs('ad_astra:netherite_space_pants')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.IV])
@@ -329,7 +329,7 @@ const registerAdAstraRecipes = (event) => {
 	}).id('tfg:space_boots')
 
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_boots')
-		.itemInputs('ad_astra:space_boots', '2x #forge:plates/titanium_tungsten_carbide', '2x tfg:better_space_suit_fabric')
+		.itemInputs('ad_astra:space_boots', '2x #forge:plates/tungsten_steel', '2x tfg:better_space_suit_fabric')
 		.itemOutputs('ad_astra:netherite_space_boots')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.IV])
