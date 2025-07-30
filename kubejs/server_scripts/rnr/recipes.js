@@ -53,8 +53,8 @@ const registerRnrRecipes = (event) => {
 	).id('rnr:smelting/unfired_roof_tile')
 
 	event.recipes.gtceu.mixer('rnr:mixer/wet_concrete_mix')
-		.inputFluids(Fluid.of('gtceu:concrete', 192), JsonIO.of({ amount: 808, value: { tag: "tfg:clean_water" }}))
-		.outputFluids(Fluid.of('rnr:concrete', 1000))
+		.inputFluids('gtceu:concrete 192', "#tfg:clean_water 808")
+		.outputFluids('rnr:concrete 1000')
         .circuit(7)
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])

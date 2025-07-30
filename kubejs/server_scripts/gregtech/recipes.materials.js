@@ -241,14 +241,15 @@ function registerGTCEUMetalRecipes(event) {
 
 		event.remove({ id: `gtceu:shaped/plate_double_${material.getName()}` })
 
-		if (material === GTMaterials.CobaltBrass) {
+		if (material === GTMaterials.CobaltBrass || material === GTMaterials.Potin) {
 			event.recipes.greate.compacting(doublePlateItem, [plateItem, plateItem, 'tfc:powder/flux'])
 				.heated()
 				.recipeTier(1)
-				.id(`greate:compacting/cobalt_brass_double_plate`)
+				.id(`greate:compacting/${material.getName()}_double_plate`)
 
-			event.recipes.gtceu.bender('bend_cobalt_brass_plate_to_double_plate')
-				.itemInputs('2x #forge:plates/cobalt_brass')
+			event.remove({ id: `gtceu:bender/bend_${material.getName()}_plate_to_double_plate` })
+			event.recipes.gtceu.bender(`bend_${material.getName()}_plate_to_double_plate_electric_only`)
+				.itemInputs(plateItem.withCount(2))
 				.itemOutputs(doublePlateItem)
 				.circuit(2)
 				.duration(20 * 5.8)
@@ -1152,7 +1153,7 @@ function registerGTCEUMetalRecipes(event) {
 			makeToolRecipe(GTToolType.BUTCHERY_KNIFE, TFGTagPrefix.toolHeadButcheryKnife, 'tfg:butchery_knife_head_extruder_mold', circuit++, material)
 			makeToolRecipe(GTToolType.SCREWDRIVER, TagPrefix.toolHeadScrewdriver, 'tfg:screwdriver_tip_extruder_mold', circuit++, material)
 			makeToolRecipe(GTToolType.WRENCH, TagPrefix.toolHeadWrench, 'tfg:wrench_tip_extruder_mold', circuit++, material)
-			makeToolRecipe(GTToolType.WIRE_CUTTER, TagPrefix.toolHeadWireCutter, 'tfg:wire_cutter_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.WIRE_CUTTER, TagPrefix.toolHeadWireCutter, 'tfg:wire_cutter_head_extruder_mold', circuit++, material)
 
 			processToolMortar(GTToolType.MORTAR, material)
 

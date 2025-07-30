@@ -1,0 +1,97 @@
+{
+	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "betterend:block/filalux_wings",
+		"texture": "betterend:block/filalux_wings"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "PlaneY2",
+			"from": [ 9, 0, 0 ],
+			"to": [ 17, 0.001, 16 ],
+			"rotation": { "origin": [ 9, 0, 0 ], "axis": "z", "angle": 45 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 8 ], "texture": "#texture", "rotation": 270 },
+				"up": { "uv": [ 0, 0, 16, 8 ], "texture": "#texture", "rotation": 270 }
+			}
+		},
+		{
+			"__comment": "PlaneY2",
+			"from": [ 13, 0, 0 ],
+			"to": [ 21, 0.001, 16 ],
+			"rotation": { "origin": [ 13, 0, 0 ], "axis": "z", "angle": 22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 8, 16, 16 ], "texture": "#texture", "rotation": 270 },
+				"up": { "uv": [ 0, 8, 16, 16 ], "texture": "#texture", "rotation": 270 }
+			}
+		},
+		{
+			"__comment": "PlaneY2",
+			"from": [ -1, -0.001, 0 ],
+			"to": [ 7, 0, 16 ],
+			"rotation": { "origin": [ 7, 0, 0 ], "axis": "z", "angle": -45 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 8 ], "texture": "#texture", "rotation": 90 },
+				"up": { "uv": [ 0, 0, 16, 8 ], "texture": "#texture", "rotation": 90 }
+			}
+		},
+		{
+			"__comment": "PlaneY2",
+			"from": [ -5, -0.001, 0 ],
+			"to": [ 3, 0, 16 ],
+			"rotation": { "origin": [ 3, 0, 0 ], "axis": "z", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 8, 16, 16 ], "texture": "#texture", "rotation": 90 },
+				"up": { "uv": [ 0, 8, 16, 16 ], "texture": "#texture", "rotation": 90 }
+			}
+		},
+		{
+			"__comment": "PlaneY5",
+			"from": [ 0, 0, 9 ],
+			"to": [ 16, 0.001, 17 ],
+			"rotation": { "origin": [ 0, 0, 9 ], "axis": "x", "angle": -45 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 8, 16, 0 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 0, 16, 8 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneY5",
+			"from": [ 0, 0, 13 ],
+			"to": [ 16, 0.001, 21 ],
+			"rotation": { "origin": [ 0, 0, 13 ], "axis": "x", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 16, 16, 8 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 8, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneY5",
+			"from": [ 0, -0.001, -1 ],
+			"to": [ 16, 0, 7 ],
+			"rotation": { "origin": [ 0, 0, 7 ], "axis": "x", "angle": 45 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 8 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 8, 16, 0 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneY5",
+			"from": [ 0, -0.001, -5 ],
+			"to": [ 16, 0, 3 ],
+			"rotation": { "origin": [ 0, 0, 3 ], "axis": "x", "angle": 22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 8, 16, 16 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 16, 16, 8 ], "texture": "#texture" }
+			}
+		}
+	]
+}

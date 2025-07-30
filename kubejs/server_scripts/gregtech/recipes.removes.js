@@ -626,6 +626,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:assembler/map' })
 	event.remove({ id: 'gtceu:assembler/spyglass' })
 	event.remove({ id: 'gtceu:assembler/assemble_purpur_into_stair' })
+	event.remove({ id: 'gtceu:assembler/stonecutter' })
 
 	event.remove({ id: 'gtceu:chemical_reactor/ghast_tear_separation' })
 	
@@ -691,6 +692,9 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/mortar_grind_steel' })
 	event.remove({ id: 'gtceu:shaped/mortar_grind_wrought_iron' })
 
+	// Replace by the Heat Exchanger recipe for Mars
+	event.remove({ id: 'gtceu:fluid_heater/formamide' })
+	
 	// Snow Stuffs
 
 	event.remove({ id: 'gtceu:fluid_solidifier/snow_block' })

@@ -1,0 +1,64 @@
+{
+	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "betterend:block/blue_vine_fur",
+		"texture": "betterend:block/blue_vine_fur"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "PlaneY1",
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 0.001 ],
+			"rotation": { "origin": [ 0, 16, 0 ], "axis": "x", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"north": { "uv": [ 0, 16, 16, 0 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "rotation": 180 }
+			}
+		},
+		{
+			"__comment": "PlaneY1",
+			"from": [ 0, -3, 0 ],
+			"to": [ 16, 13, 0.001 ],
+			"rotation": { "origin": [ 0, 13, 0 ], "axis": "x", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"north": { "uv": [ 16, 16, 0, 0 ], "texture": "#texture" },
+				"south": { "uv": [ 16, 0, 0, 16 ], "texture": "#texture", "rotation": 180 }
+			}
+		},
+		{
+			"__comment": "PlaneY1",
+			"from": [ 0, -8, 0 ],
+			"to": [ 16, 8, 0.001 ],
+			"rotation": { "origin": [ 0, 8, 0 ], "axis": "x", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"north": { "uv": [ 0, 16, 16, 0 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "rotation": 180 }
+			}
+		},
+		{
+			"__comment": "PlaneY1",
+			"from": [ -2, -12, 0 ],
+			"to": [ 14, 4, 0.001 ],
+			"rotation": { "origin": [ -2, 4, 0 ], "axis": "x", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"north": { "uv": [ 16, 16, 0, 0 ], "texture": "#texture" },
+				"south": { "uv": [ 16, 0, 0, 16 ], "texture": "#texture", "rotation": 180 }
+			}
+		},
+		{
+			"__comment": "PlaneY1",
+			"from": [ 3, -15, 0 ],
+			"to": [ 19, 1, 0.001 ],
+			"rotation": { "origin": [ 3, 1, 0 ], "axis": "x", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"north": { "uv": [ 0, 16, 16, 0 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "rotation": 180 }
+			}
+		}
+	]
+}

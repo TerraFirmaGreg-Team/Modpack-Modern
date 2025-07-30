@@ -15,7 +15,7 @@ B:advanced_customization_mode = 'false';
 ##[loading]
 
 B:preload_animations = 'true';
-S:preload_resources = '[source:location]tfg:textures/gui/tfg_title_stars.gif%!source_end!%[source:location]tfg:textures/gui/tfg_title_vignette.png%!source_end!%[cubic_panorama]beneath%!source_end!%[slideshow]new_loading_screen%!source_end!%';
+S:preload_resources = '[cubic_panorama]beneath%!source_end!%[slideshow]new_loading_screen%!source_end!%';
 S:custom_game_intro_skip_text = '';
 B:allow_game_intro_skip = 'true';
 S:game_intro_animation_name = '';
