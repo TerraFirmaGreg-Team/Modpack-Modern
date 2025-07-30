@@ -194,7 +194,14 @@ global.GTCEU_HIDED_ITEMS = [
     'gtceu:netherrack_dust', 
     'gtceu:small_netherrack_dust', 
     'gtceu:tiny_netherrack_dust',
-    
+     'gtceu:lv_damascus_steel_wirecutter',
+    'gtceu:hv_damascus_steel_wirecutter',
+    'gtceu:iv_damascus_steel_wirecutter',
+    'gtceu:lv_damascus_steel_wrench',
+    'gtceu:hv_damascus_steel_wrench',
+    'gtceu:iv_damascus_steel_wrench',
+    'gtceu:lv_damascus_steel_screwdriver',
+
     'gtceu:sus_record'
 ];
 //#endregion
