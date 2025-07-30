@@ -11,6 +11,7 @@ const registerAdAstraFluidTags = (event) => {
 	// Using this to represent 'breathable air' instead of oxygen
 	event.removeAllTagsFrom('ad_astra:oxygen')
 
+	
 	event.removeAll('ad_astra:fuel')
 	event.removeAll('ad_astra:efficient_fuel')
 
@@ -44,6 +45,8 @@ const registerAdAstraItemTags = (event) => {
 		event.removeAllTagsFrom(item)
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
+	
+	
 	
 	event.add('forge:cobblestone', 'ad_astra:moon_cobblestone')
 	event.add('forge:cobblestone', 'ad_astra:mars_cobblestone')

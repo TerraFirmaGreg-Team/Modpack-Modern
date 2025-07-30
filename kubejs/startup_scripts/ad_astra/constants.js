@@ -68,7 +68,7 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:glacio_lapis_ore',
 
 	// Disabled until EV planet
-/*
+
 	'ad_astra:tier_2_rocket',
 	'ad_astra:desh_engine',
 	'tfg:rocket_fin_t2',
@@ -81,12 +81,14 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:ostrum_tank',
 	'tfg:rocket_fin_t3',
 	'tfg:rocket_cone_t3',
+	'tfg:elite_power_thruster',
+	'tfg:better_space_suit_fabric',
 	'ad_astra:netherite_space_helmet',
 	'ad_astra:netherite_space_suit',
 	'ad_astra:netherite_space_pants',
 	'ad_astra:netherite_space_boots',
 	
-	*/
+
 
 
 	// Disabled until LuV planet
