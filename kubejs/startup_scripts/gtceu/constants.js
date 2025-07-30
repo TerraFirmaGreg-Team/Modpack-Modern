@@ -134,13 +134,6 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:iv_damascus_steel_drill',
     'gtceu:lv_damascus_steel_chainsaw',
     'gtceu:damascus_steel_buzzsaw',
-    'gtceu:lv_damascus_steel_wirecutter',
-    'gtceu:hv_damascus_steel_wirecutter',
-    'gtceu:iv_damascus_steel_wirecutter',
-    'gtceu:lv_damascus_steel_wrench',
-    'gtceu:hv_damascus_steel_wrench',
-    'gtceu:iv_damascus_steel_wrench',
-    'gtceu:lv_damascus_steel_screwdriver',
     'gtceu:damascus_steel_bucket',
 
     //armor
