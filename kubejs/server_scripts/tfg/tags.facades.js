@@ -21,6 +21,7 @@ function registerFacadeWhitelistTags(event) {
 		'#forge:storage_blocks',
 		'#forge:glass',
 		'#minecraft:terracotta',
+		'#forge:concretes',
 		'#create:casing',
 		'#dormum_ornamentum:brick_items',
 		'#simplylight:any_lamp_on',
