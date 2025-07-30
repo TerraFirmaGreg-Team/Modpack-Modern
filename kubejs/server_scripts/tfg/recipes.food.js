@@ -470,6 +470,24 @@ function registerTFGFoodRecipes(event) {
 		})
 	})
 
+	global.FIRMALIFE_JAMS.forEach(name => {
+		processorRecipe(`${name}_jam`, 200, 8, {
+			circuit: 15,
+			itemInputs: [`4x firmalife:food/${name}`, "#tfg:sugars", "4x #tfc:empty_jar_with_lid"],
+			fluidInputs: ['#tfg:clean_water 100'],
+			itemOutputs: [`4x firmalife:jar/${name}`],
+			itemOutputProvider: TFC.isp.of(`4x firmalife:jar/${name}`).copyFood()
+		})
+
+		processorRecipe(`${name}_jam_no_seal`, 200, 8, {
+			circuit: 16,
+			itemInputs: [`4x firmalife:food/${name}`, "#tfg:sugars", "4x tfc:empty_jar"],
+			fluidInputs: ['#tfg:clean_water 100'],
+			itemOutputs: [`4x firmalife:jar/${name}_unsealed`],
+			itemOutputProvider: TFC.isp.of(`4x firmalife:jar/${name}_unsealed`).copyFood()
+		})
+	})
+
 	cookingRecipe("pasta", "firmalife:food/raw_egg_noodles", "firmalife:food/cooked_pasta", "#tfg:clean_water 100")
 
 	cookingRecipe("corn_tortilla", "firmalife:food/masa", "firmalife:food/corn_tortilla")
