@@ -464,18 +464,16 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(60)
 		.EUt(GTValues.VA[GTValues.HV])
 	
-	event.recipes.gtceu.chemical_reactor('tfg:chemical_reactor/decompress_liq_co2')
-		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 100))
+	event.recipes.gtceu.fluid_heater('tfg:fluid_heater/decompress_liq_co2')
 		.itemInputs('1x tfg:dry_ice')
+		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 100))
 		.duration(20)
-		.circuit(4)
 		.EUt(GTValues.VA[GTValues.ULV])
 	
-	event.recipes.gtceu.chemical_reactor('tfg:chemical_reactor/decompress_dry_ice')
+	event.recipes.gtceu.fluid_heater('tfg:fluid_heater/decompress_dry_ice')
 		.inputFluids(Fluid.of('gtceu:liquid_carbon_dioxide', 100))
 		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 100))
 		.duration(20)
-		.circuit(4)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.mixer('tfg:clean_foil_pack')
