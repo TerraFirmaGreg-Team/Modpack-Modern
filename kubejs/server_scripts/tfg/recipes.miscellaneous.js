@@ -972,7 +972,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		'tfg:aes_insulation_roll'
 	]).id('tfg:shapeless/aes_insulation_sheet')
 	
-	event.recipes.gtceu.electric_blast_furnace('zmelt_aes_sheet')
+	event.recipes.gtceu.electric_blast_furnace('smelt_aes_sheet')
 		.itemInputs('tfg:aes_insulation_sheet')
 		.inputFluids(Fluid.of('gtceu:helium', 200))
 		.outputFluids(Fluid.of('tfg:molten_aes', 800))
@@ -981,7 +981,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(140)
 		.blastFurnaceTemp(3000)
 		.EUt(GTValues.VA[GTValues.EV])
-	event.recipes.gtceu.electric_blast_furnace('zmelt_aes_roll')
+	event.recipes.gtceu.electric_blast_furnace('smelt_aes_roll')
 		.itemInputs('tfg:aes_insulation_roll')
 		.inputFluids(Fluid.of('gtceu:helium', 1000))
 		.itemOutputs('2x gtceu:ash_dust')

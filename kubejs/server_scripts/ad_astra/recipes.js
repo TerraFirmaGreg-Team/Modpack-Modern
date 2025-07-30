@@ -99,7 +99,7 @@ const registerAdAstraRecipes = (event) => {
 	//region tier 2 rocket DISABLED UNTIL EV
 	
 	event.remove({ mod: 'gtceu', input: 'gtceu:hot_rocket_alloy_t2_ingot' })
-	
+/*
 	event.recipes.gtceu.mixer('tfg:rocket_alloy_t2')
 		.itemInputs('19x #forge:dusts/titanium', '3x #forge:small_dusts/chromium', '3x #forge:small_dusts/tin', '3x #forge:small_dusts/aluminium')
 		.inputFluids(Fluid.of('gtceu:vanadium', 540))
@@ -158,13 +158,13 @@ const registerAdAstraRecipes = (event) => {
 		.duration(1440)
 		.circuit(3)
 		.EUt(GTValues.VA[GTValues.EV])
-
+*/
 	//#endregion
 
-	//region Tier 3
+	//region Tier 3 DISABLED UNTIL IV
 	event.remove({ id: "gtceu:vacuum_freezer/cool_hot_rocket_alloy_t3_ingot" })
 	event.remove({ id: "gtceu:vacuum_freezer/rocket_alloy_t3" })
-		
+	/*
 	event.recipes.gtceu.vacuum_freezer('tfg:cool_rocket_alloy_t3')
 		.inputFluids(Fluid.of('gtceu:molten_rocket_alloy_t3', 144), Fluid.of('gtceu:ice', 4000))
 		.notConsumable('gtceu:ingot_casting_mold')
@@ -245,8 +245,8 @@ const registerAdAstraRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.IV])
 	
 	//#endregion
-
-	//#region space suits
+*/
+	//#region space suits NETHERITE STUFF DISABLED UNTIL IV
 
 	event.recipes.gtceu.forming_press('space_suit_fabric')
 		.itemInputs(
@@ -258,7 +258,7 @@ const registerAdAstraRecipes = (event) => {
 		.itemOutputs('2x tfg:space_suit_fabric')
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
-	
+	/*
 	event.recipes.gtceu.forming_press('better_space_suit_fabric')
 		.itemInputs(
 			'gtceu:carbon_fiber_mesh',
@@ -268,7 +268,7 @@ const registerAdAstraRecipes = (event) => {
 		.itemOutputs('2x tfg:better_space_suit_fabric')
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.IV])
-
+*/
 	event.shaped('ad_astra:space_helmet', [
 		'AAA',
 		'ADA',
@@ -278,7 +278,7 @@ const registerAdAstraRecipes = (event) => {
 		B: 'tfg:space_suit_fabric',
 		D: '#forge:small_fluid_pipes/polyethylene'
 	}).id('tfg:space_helmet')
-
+/*
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_helmet')
 		.itemInputs(
 			'ad_astra:space_helmet',
@@ -289,7 +289,7 @@ const registerAdAstraRecipes = (event) => {
 		.itemOutputs('ad_astra:netherite_space_helmet')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.IV])
-
+*/
 	event.shaped('ad_astra:space_suit', [
 		'B B',
 		'BDB',
@@ -298,13 +298,13 @@ const registerAdAstraRecipes = (event) => {
 		B: 'tfg:space_suit_fabric',
 		D: 'ad_astra:oxygen_gear'
 	}).id('tfg:space_suit')
-
+/*
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_suit')
 		.itemInputs('ad_astra:space_suit', '5x #forge:plates/tungsten_steel','5x tfg:better_space_suit_fabric')
 		.itemOutputs('ad_astra:netherite_space_suit')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.IV])
-
+*/
 	event.shaped('ad_astra:space_pants', [
 		'BAB',
 		'B B',
@@ -313,13 +313,13 @@ const registerAdAstraRecipes = (event) => {
 		A: 'gtceu:hv_electric_motor',
 		B: 'tfg:space_suit_fabric',
 	}).id('tfg:space_pants')
-
+/*
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_pants')
 		.itemInputs('ad_astra:space_pants', '4x #forge:plates/tungsten_steel', '4x tfg:better_space_suit_fabric')
 		.itemOutputs('ad_astra:netherite_space_pants')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.IV])
-
+*/
 	event.shaped('ad_astra:space_boots', [
 		'B B',
 		'A A'
@@ -327,13 +327,13 @@ const registerAdAstraRecipes = (event) => {
 		A: '#forge:plates/polyphenylene_sulfide',
 		B: 'tfg:space_suit_fabric'
 	}).id('tfg:space_boots')
-
+/*
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_boots')
 		.itemInputs('ad_astra:space_boots', '2x #forge:plates/tungsten_steel', '2x tfg:better_space_suit_fabric')
 		.itemOutputs('ad_astra:netherite_space_boots')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.IV])
-
+*/
 
 	event.shaped('ad_astra:oxygen_gear', [
 		'BAB',
