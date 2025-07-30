@@ -365,8 +365,6 @@ const registerTFGItems = (event) => {
 	
 	event.create('tfg:better_space_suit_fabric')
 	//endregion
-	
-	
 }
 
 	

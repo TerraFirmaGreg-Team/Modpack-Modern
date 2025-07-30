@@ -96,6 +96,7 @@ const registerAdAstraRecipes = (event) => {
 
 	//#endregion
 
+
 	//region tier 2 rocket DISABLED UNTIL EV
 	
 	event.remove({ mod: 'gtceu', input: 'gtceu:hot_rocket_alloy_t2_ingot' })
@@ -130,6 +131,7 @@ const registerAdAstraRecipes = (event) => {
 		.duration(1440)
 		.circuit(3)
 		.EUt(GTValues.VA[GTValues.EV])
+
 	
 	event.recipes.gtceu.assembler('tfg:rocket_desh_engine')
 		.itemInputs(

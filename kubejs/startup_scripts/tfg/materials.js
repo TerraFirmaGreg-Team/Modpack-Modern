@@ -53,6 +53,8 @@ const registerTFGMaterials = (event) => {
 		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR)
 		.blastTemp(1760, 'low', 256, 900)
 /*
+
+
 	event.create('rocket_alloy_t2')
 		.ingot()
 		.components('76x titanium', '15x vanadium', '3x aluminium', '3x chromium', '3x tin')
@@ -258,6 +260,5 @@ const registerTFGMaterials = (event) => {
 	event.create('tfg:soaked_silica_gel')
 		.liquid()
 		.color(0x9ED5D9)
-	
-		
+	//endregion
 }
