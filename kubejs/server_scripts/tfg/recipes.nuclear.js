@@ -7,7 +7,7 @@ function registerTFGNuclearRecipes(event) {
 	event.recipes.gtceu.nuclear_fuel_factory('gtceu:thorium_pellet')
 		.itemInputs('1x #forge:nuggets/thorium_230', '1x #forge:ingots/thorium_232')
 		.itemOutputs('#forge:ingots/thorium_pellet')
-		.duration(20*30)
+		.duration(20*10)
 		.EUt(GTValues.V[GTValues.HV])
 
 	event.recipes.gtceu.nuclear_fuel_factory('gtceu:uranium_pellet')
@@ -54,14 +54,6 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*9)
 		.EUt(GTValues.VA[GTValues.LV])
 
-/*	event.recipes.gtceu.electric_blast_furnace('ammonium_chloryde')
-		.itemInputs('#forge:dusts/ammonium_chloride')
-		.outputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000))
-		.outputFluids(Fluid.of('gtceu:ammonia', 1000))
-		.blastFurnaceTemp(4600)
-		.duration(20*36)
-		.EUt(GTValues.VA[GTValues.IV])*/
-
 	// Martian Sludge
 
 	event.recipes.gtceu.chemical_bath('dirty_hexafluorosilicic_acid')
@@ -87,7 +79,7 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:radioactive_waste', 1000))
 		.outputFluids(Fluid.of('gtceu:radon', 100))
 		.itemOutputs('#forge:dusts/nuclear_residue')
-		.duration(20*48)
+		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.vacuum_freezer('oxidized_nuclear_residue')
@@ -104,14 +96,14 @@ function registerTFGNuclearRecipes(event) {
 		.itemOutputs('#forge:dusts/refined_nuclear_residue')
 		.outputFluids(Fluid.of('gtceu:hydrofluoric_acid', 2000))
 		.outputFluids(Fluid.of('gtceu:oxygen', 1000))
-		.duration(20*48)
+		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.large_chemical_reactor('dioxygen_difluoride')
 		.inputFluids(Fluid.of('gtceu:oxygen', 2000))
 		.inputFluids(Fluid.of('gtceu:fluorine', 2000))
 		.outputFluids(Fluid.of('gtceu:dioxygen_difluoride', 1000))
-		.duration(20*48)
+		.duration(20*16)
 		.EUt(GTValues.VA[GTValues.IV])
 
 	event.recipes.gtceu.large_chemical_reactor('plutonium_dust')
@@ -119,7 +111,7 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:hydrogen', 2000))
 		.itemOutputs('#forge:dusts/plutonium')
 		.outputFluids(Fluid.of('gtceu:steam', 1000))
-		.duration(20*48)
+		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.IV])
 
 	//#endregion
@@ -157,14 +149,16 @@ function registerTFGNuclearRecipes(event) {
 
 	//#region Fission Reactor
 
+	// Recipe for Thorium Reactor
 	event.recipes.gtceu.fission_reactor('thorium_uranium_waste')
 		.itemInputs('#forge:bolts/thorium_pellet')
-		.inputFluids(Fluid.of('minecraft:water', 200))
-		.outputFluids(Fluid.of('gtceu:dense_steam', 200))
+		.inputFluids(Fluid.of('minecraft:water', 100))
+		.outputFluids(Fluid.of('gtceu:dense_steam', 100))
 		.outputFluids(Fluid.of('gtceu:uranium_waste', 20))
-		.duration(20*100)
+		.duration(20*50)
 		.EUt(32)
 
+	// Recipe for energy only reactor
 	event.recipes.gtceu.fission_reactor('thorium_nuclear_waste')
 		.itemInputs('#forge:bolts/thorium_pellet')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 200))
@@ -173,18 +167,20 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*100)
 		.EUt(32)
 
+	// Recipe for Uranium Reactor
 	event.recipes.gtceu.fission_reactor('uranium_radioactive')
 		.itemInputs('#forge:bolts/uranium_pellet')
-		.inputFluids(Fluid.of('gtceu:heavy_water', 500))
-		.outputFluids(Fluid.of('gtceu:radioactive_steam', 500))
+		.inputFluids(Fluid.of('gtceu:heavy_water', 750))
+		.outputFluids(Fluid.of('gtceu:radioactive_steam', 750))
 		.outputFluids(Fluid.of('gtceu:radioactive_waste', 50))
 		.duration(20*100)
 		.EUt(32)
 
+	// Recipe for Plutonium Reactor
 	event.recipes.gtceu.fission_reactor('plutonium_irradiated')
 		.itemInputs('#forge:bolts/plutonium_pellet')
-		.inputFluids(Fluid.of('gtceu:heavy_water', 1000))
-		.outputFluids(Fluid.of('gtceu:irradiated_steam', 1000))
+		.inputFluids(Fluid.of('gtceu:heavy_water', 2000))
+		.outputFluids(Fluid.of('gtceu:irradiated_steam', 2000))
 		.outputFluids(Fluid.of('gtceu:tritiated_water', 50))
 		.duration(20*100)
 		.EUt(32)
@@ -205,7 +201,7 @@ function registerTFGNuclearRecipes(event) {
 
 	event.recipes.gtceu.gas_turbine('dense_steam')
 		.inputFluids(Fluid.of('gtceu:dense_steam', 1))
-		.EUt(-32)
+		.EUt(-(32*4))
 		.duration(20*2)
 
 	//#endregion
@@ -226,7 +222,7 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*24)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	event.recipes.gtceu.chemical_reactor('basic_bromine_exhaust_to_hot_iodine_brine')
+	event.recipes.gtceu.large_chemical_reactor('basic_bromine_exhaust_to_hot_iodine_brine')
 		.inputFluids(Fluid.of('gtceu:basic_bromine_exhaust', 1000))
 		.inputFluids(Fluid.of('gtceu:raw_rich_brine', 1000))
 		.outputFluids(Fluid.of('gtceu:sodium_potassium', 1000))
