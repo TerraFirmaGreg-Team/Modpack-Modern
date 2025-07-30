@@ -17,6 +17,7 @@
 - Added recipes to create basic TFC alcohol in the food processor @Pyritie
 - Added melting recipes for all the TFC metal dusts @Pyritie
 - Added mortar and pestle recipes for soybean and olive paste (#1480) @Pyritie
+- Added concrete to the list of valid blocks for GT facades (#1487) @TheAshenWolf
 ### Bug fixes
 - Fixed not being able to craft fine wire in a coiling machine for materials that didn't also have normal wire @Pyritie
 - Fixed cobalt brass and potin double plates not being obtainable until MV @Pyritie

@@ -50,7 +50,7 @@ const registerTFGItemSize = (event) => {
 
 	event.itemSize('tfg:rapeseed_product', 'small', 'light', 'rapeseed_product')
 	event.itemSize('tfg:sunflower_product', 'small', 'light', 'sunflower_product')
-
+	event.itemSize('betterend:amber_roots', 'small', 'light', 'amber_roots')
 }
 
 
@@ -183,6 +183,7 @@ const registerTFGFauna = (event) => {
 
 const registerTFGCropRanges = (event) => {
 
+	// Earth
 	event.climateRange(climate => {
         climate.minHydration(20)
         climate.maxHydration(80)
@@ -200,6 +201,52 @@ const registerTFGCropRanges = (event) => {
         climate.hydrationWiggle(7.5)
         climate.temperatureWiggle(1.5)
     }, 'tfg:rapeseed')
+
+	// Moon
+	event.climateRange(climate => {
+        climate.minHydration(0)
+        climate.maxHydration(40)
+        climate.minTemperature(-150)
+        climate.maxTemperature(15)
+        climate.hydrationWiggle(7.5)
+        climate.temperatureWiggle(5.5)
+    }, 'betterend:amber_root')
+
+	event.climateRange(climate => {
+        climate.minHydration(0)
+        climate.maxHydration(100)
+        climate.minTemperature(-80)
+        climate.maxTemperature(30)
+        climate.hydrationWiggle(7.5)
+        climate.temperatureWiggle(5.5)
+    }, 'betterend:blossom_berry')
+
+	event.climateRange(climate => {
+        climate.minHydration(0)
+        climate.maxHydration(60)
+        climate.minTemperature(-100)
+        climate.maxTemperature(30)
+        climate.hydrationWiggle(7.5)
+        climate.temperatureWiggle(5.5)
+    }, 'betterend:cave_pumpkin_plant')
+
+	event.climateRange(climate => {
+        climate.minHydration(0)
+        climate.maxHydration(40)
+        climate.minTemperature(-150)
+        climate.maxTemperature(15)
+        climate.hydrationWiggle(7.5)
+        climate.temperatureWiggle(5.5)
+    }, 'betterend:chorus_mushroom')
+
+	event.climateRange(climate => {
+        climate.minHydration(0)
+        climate.maxHydration(100)
+        climate.minTemperature(-80)
+        climate.maxTemperature(30)
+        climate.hydrationWiggle(7.5)
+        climate.temperatureWiggle(5.5)
+    }, 'betterend:shadow_berry')
 }
 
 const registerTFGFLPlanters = (event) => {
