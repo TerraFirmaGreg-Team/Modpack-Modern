@@ -261,4 +261,58 @@ const registerTFGMaterials = (event) => {
 		.liquid()
 		.color(0x9ED5D9)
 	//endregion
+
+	//#region Bromine Line
+
+    event.create('raw_brine')
+        .fluid()
+        .color(0x947a11)
+        //.secondaryColor(0x81FFF9)
+
+    event.create('hot_brine')
+        .liquid(320)
+        .color(0x944611)
+
+    event.create('hot_chlorinated_brominated_brine')
+        .liquid(320)
+        .color(0xbf8d5a)
+		.formula('?Cl')
+
+    event.create('brominated_chlorine_vapor')
+        .gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(320))
+		.color(0xbf8d5a)
+		.formula('ClBr(H2O)')
+
+    event.create('acidic_bromine_solution')
+		.liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))
+		.color(0xe7b989)
+		.formula('ClBr')
+
+    event.create('concentrated_bromine_solution')
+		.liquid()
+		.color(0x905d29)
+		.formula('Br2Cl')
+
+    event.create('debrominated_brine')
+		.liquid()
+		.color(0xc3874a)
+
+    event.create('acidic_bromine_exhaust')
+        .gas(new GTFluidBuilder().state(GTFluidState.GAS).attribute(GTFluidAttributes.ACID).temperature(293))
+		.color(0xec9c4a)
+		.formula('(H2O)3Cl')
+
+    event.create('hot_alkaline_debrominated_brine')
+		.liquid()
+		.color(0xcc6a06)
+		.formula('?2Cl')
+
+    event.create('hot_debrominated_brine')
+		.liquid(320)
+		.color(0xb08e6b)
+
+    event.create('hydrogen_iodide')
+        .gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(293))
+		.color(0x82a6ce)
+		.formula('HI')
 }

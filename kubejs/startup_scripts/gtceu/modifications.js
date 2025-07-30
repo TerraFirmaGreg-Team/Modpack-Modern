@@ -18,7 +18,7 @@ function registerGTCEuItemModifications(event) {
 		item.armorProtection = 4
 		item.armorKnockbackResistance = 0.2
 	})
-	event.modify('gtceu:avanced_nanomuscle_chestplate', item => {
+	event.modify('gtceu:advanced_nanomuscle_chestplate', item => {
 		item.armorProtection = 10
 		item.armorKnockbackResistance = 0.2
 	})

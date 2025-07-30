@@ -8,6 +8,8 @@ const registerHotOrNotItemTags = (event) => {
         event.removeAllTagsFrom(item)
         event.add('c:hidden_from_recipe_viewers', item)
     })
+
+    event.add('tfchotornot:hot_whitelist', '#forge:hot_ingots')
 }
 
 const registerHotOrNotBlockTags = (event) => {

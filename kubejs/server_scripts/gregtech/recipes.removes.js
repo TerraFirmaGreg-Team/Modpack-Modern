@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function removeGTCEURecipes(event) {
 
 	event.replaceInput({ input: 'gtceu:wood_drum' }, 'gtceu:wood_drum', 'minecraft:glass')
@@ -623,6 +626,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:assembler/map' })
 	event.remove({ id: 'gtceu:assembler/spyglass' })
 	event.remove({ id: 'gtceu:assembler/assemble_purpur_into_stair' })
+	event.remove({ id: 'gtceu:assembler/stonecutter' })
 
 	event.remove({ id: 'gtceu:chemical_reactor/ghast_tear_separation' })
 	
@@ -688,6 +692,9 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/mortar_grind_steel' })
 	event.remove({ id: 'gtceu:shaped/mortar_grind_wrought_iron' })
 
+	// Replace by the Heat Exchanger recipe for Mars
+	event.remove({ id: 'gtceu:fluid_heater/formamide' })
+	
 	// Snow Stuffs
 
 	event.remove({ id: 'gtceu:fluid_solidifier/snow_block' })
@@ -720,6 +727,25 @@ function removeGTCEURecipes(event) {
 	})
 	
 	event.remove({ output: 'gtceu:damascus_steel_crowbar'})
+
+	//removes metal armor
+	const armor = [
+    'gtceu:bronze_helmet',
+    'gtceu:bronze_chestplate',
+    'gtceu:bronze_leggings',
+    'gtceu:bronze_boots',
+    'gtceu:steel_helmet',
+    'gtceu:steel_chestplate',
+    'gtceu:steel_leggings',
+    'gtceu:steel_boots',
+    'gtceu:titanium_helmet',
+    'gtceu:titanium_chestplate',
+    'gtceu:titanium_leggings',
+    'gtceu:titanium_boots'
+	];
+	armor.forEach(armor => {
+		event.remove({ output: armor})
+	});
 }
 
 function removeMaceratorRecipe(event, id) {

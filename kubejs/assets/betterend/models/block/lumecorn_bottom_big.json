@@ -1,0 +1,45 @@
+{
+	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "betterend:block/lumecorn_bark",
+		"texture": "betterend:block/lumecorn_bark",
+		"roots": "betterend:block/lumecorn_roots"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Box1",
+			"from": [ 5, 0, 5 ],
+			"to": [ 11, 16, 11 ],
+			"faces": {
+				"down": { "uv": [ 8, 6, 14, 12 ], "texture": "#texture", "cullface": "down" },
+				"up": { "uv": [ 8, 0, 14, 6 ], "texture": "#texture", "cullface": "up" },
+				"north": { "uv": [ 2, 0, 8, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 2, 0, 8, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 2, 0, 8, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 2, 0, 8, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 0, 0, 0 ],
+			"to": [ 0.001, 16, 22.5 ],
+			"rotation": { "origin": [ 0, 0, 0 ], "axis": "y", "angle": 45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#roots" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#roots" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 16, 0, 0 ],
+			"to": [ 16.001, 16, 22.5 ],
+			"rotation": { "origin": [ 16, 0, 0 ], "axis": "y", "angle": -45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#roots" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#roots" }
+			}
+		}
+	]
+}

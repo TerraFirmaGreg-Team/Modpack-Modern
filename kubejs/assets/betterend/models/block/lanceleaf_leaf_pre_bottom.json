@@ -1,0 +1,32 @@
+{
+	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "betterend:block/lanceleaf_leaf_bottom",
+		"texture": "betterend:block/lanceleaf_stem_top",
+		"leaf": "betterend:block/lanceleaf_leaf_bottom"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "PlaneX10",
+			"from": [ 2.375, 0, 2.25 ],
+			"to": [ 2.376, 16, 18.25 ],
+			"rotation": { "origin": [ 2.375, 0, 2.25 ], "axis": "y", "angle": 45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#leaf" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#leaf" }
+			}
+		},
+		{
+			"__comment": "PlaneX10",
+			"from": [ 13.75, 0, 2.25 ],
+			"to": [ 13.751, 16, 18.25 ],
+			"rotation": { "origin": [ 13.75, 0, 2.25 ], "axis": "y", "angle": -45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+			}
+		}
+	]
+}

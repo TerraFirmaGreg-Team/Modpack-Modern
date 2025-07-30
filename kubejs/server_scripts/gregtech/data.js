@@ -29,7 +29,7 @@ const registerGTCEUHeats = (event) => {
 	forEachMaterial(material => {
 		let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
 
-		if (tfcProperty != null) {
+		if (tfcProperty !== null) {
 			makeItemHeatByTagPrefix(TagPrefix.dustTiny, material, tfcProperty, 0.357)
 			makeItemHeatByTagPrefix(TagPrefix.dustSmall, material, tfcProperty, 0.714)
 			makeItemHeatByTagPrefix(TagPrefix.dust, material, tfcProperty, 1.429)
@@ -39,6 +39,7 @@ const registerGTCEUHeats = (event) => {
 			makeItemHeatByTagPrefix(TagPrefix.nugget, material, tfcProperty, 0.124)
 			makeItemHeatByTagPrefix(TagPrefix.block, material, tfcProperty, 20)
 			makeItemHeatByTagPrefix(TagPrefix.rodLong, material, tfcProperty, 1.429)
+			makeItemHeatByTagPrefix(TagPrefix.gearSmall, material, tfcProperty, 1.429)
 
 			makeItemHeatByTagPrefix(TagPrefix.ingot, material, tfcProperty, 1.429)
 			makeItemHeatByTagPrefix(TFGTagPrefix.ingotDouble, material, tfcProperty, 2.875)

@@ -1,10 +1,15 @@
 // priority: 0
 "use strict";
 
+/**
+ * 
+ * @param {Registry.Item} event 
+ */
 const registerTFGItems = (event) => {
 
 	registerTFGDeprecatedItems(event)
 	registerTFGFoodItems(event)
+	registerTFGNuclearItems(event)
 
 	// #region Electronics
 	event.create('tfg:unfinished_electron_tube', 'create:sequenced_assembly')
@@ -50,8 +55,7 @@ const registerTFGItems = (event) => {
 	event.create('tfg:unfired_chalk')
 		.translationKey('item.tfg.unfired_chalk')
 
-	Color.DYE.forEach((dyeName, dye) =>
-	{
+	Color.DYE.forEach((dyeName, dye) => {
 		event.create(`tfg:wet_${dyeName}_chalk`)
 		.translationKey(`item.tfg.wet_${dyeName}_chalk`)
 		.textureJson({
@@ -365,7 +369,17 @@ const registerTFGItems = (event) => {
 	
 	event.create('tfg:better_space_suit_fabric')
 	//endregion
+
+	//#region Universal compost items
+	event.create('tfg:universal_compost_browns')
+		.tag('tfc:compost_browns_low')
+
+	event.create('tfg:universal_compost_greens')
+		.tag('tfc:compost_greens_low')
+	//#endregion
+
+	//#region Etched Diamond Etching Tip
+	event.create('tfg:etching_diamond_tip')
+		.translationKey("item.tfg.etching_diamond_tip")
+	//#endregion
 }
-
-	
-

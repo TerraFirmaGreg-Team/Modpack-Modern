@@ -5,6 +5,7 @@
  * Список хранит предметы,
  * у которых должны быть удалены тэги и они должны быть скрыты в REI.
  */
+
 global.MINECRAFT_DISABLED_ITEMS = [
     // Зараженные блоки
     'minecraft:infested_stone',
@@ -706,10 +707,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:warped_nylium', 
     'minecraft:soul_sand', 
     'minecraft:soul_soil', 
-    'minecraft:crying_obsidian', 
-    'minecraft:nether_wart_block', 
-    'minecraft:warped_wart_block', 
-    'minecraft:crimson_fungus', 
+    'minecraft:crying_obsidian',
     'minecraft:piglin_head', 
     'minecraft:zombie_head', 
     'minecraft:skeleton_skull', 
@@ -723,7 +721,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crimson_roots', 
     //'minecraft:nether_brick', 
     'minecraft:nether_wart', 
-    'minecraft:warped_fungus',
     'minecraft:respawn_anchor',
     'minecraft:ghast_tear',
     'minecraft:nautilus_shell'

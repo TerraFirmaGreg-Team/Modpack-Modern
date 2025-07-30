@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"shape=top": { "model": "betterend:block/bulb_vine_top" },
+		"shape=middle": [
+			{ "model": "betterend:block/bulb_vine_middle_1" },
+			{ "model": "betterend:block/bulb_vine_middle_2" }
+		],
+		"shape=bottom": { "model": "betterend:block/bulb_vine_bottom" }
+	}
+}

@@ -46,7 +46,7 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_FINE_WIRE,
 	} = $MATERIAL_FLAGS
 
-	var metalTooling = [
+	const metalTooling = [
 		GTToolType.AXE,
 		GTToolType.PICKAXE,
 		GTToolType.HARD_HAMMER,
@@ -211,6 +211,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Copper.addFlags(GENERATE_FRAME);
 	GTMaterials.BlackBronze.addFlags(GENERATE_FRAME);
 	GTMaterials.BismuthBronze.addFlags(GENERATE_FRAME);
+	GTMaterials.RhodiumPlatedPalladium.addFlags(GENERATE_FRAME);
 
 	GTMaterials.Wood.addFlags(GENERATE_SMALL_GEAR);
 	GTMaterials.Brass.addFlags(GENERATE_SMALL_GEAR, GENERATE_RING);
@@ -262,9 +263,9 @@ const registerGTCEuMaterialModification = (event) => {
 	// Hide netherite too
 	GTMaterials.Netherite.getProperty(PropertyKey.TOOL).removeTypes(metalTooling);
 
-	for (var material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
-		var toolProperty = material.getProperty(PropertyKey.TOOL);
-		if (toolProperty == null)
+	for (let material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
+		let toolProperty = material.getProperty(PropertyKey.TOOL);
+		if (toolProperty === null)
 			continue;
 
 		toolProperty.setDurability(toolProperty.getDurability() * 6);
@@ -274,6 +275,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Bismuth.setProperty(PropertyKey.ITEM_PIPE, new $ITEM_PIPE_PROPERTY(16384, 0.125));
 	// Bis bronze fluid pipe - same stats as bronze
 	GTMaterials.BismuthBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
+	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.ITEM_PIPE);
+	GTMaterials.BlackBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
 	// Red steel fluid pipe - same flow rate as aluminium, bad heat tolerance (same as PE) but can do cryo
 	GTMaterials.RedSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(370, 75, true, false, true, false));
 	// Blue steel fluid pipe - same flow rate as aluminium, same temp tolerance as tungsten
@@ -293,7 +296,11 @@ const registerGTCEuMaterialModification = (event) => {
 	// Change byproducts so you can't get certus from normal quartzite
 	GTMaterials.Quartzite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.NetherQuartz, GTMaterials.Barite, GTMaterials.NetherQuartz);
 	GTMaterials.CertusQuartz.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.CertusQuartz, GTMaterials.Quartzite, GTMaterials.CertusQuartz);
-	
+
+	// Change Beryllium to add Chemical Bath recipe and Thorium byproduct
+	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Emerald, GTMaterials.Emerald, GTMaterials.Thorium, GTMaterials.Thorium);
+	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setWashedIn(GTMaterials.SodiumPersulfate);
+
 	// Color Adjustments
 	GTMaterials.BismuthBronze.setMaterialARGB(0x5A966E)
 	GTMaterials.BismuthBronze.setMaterialSecondaryARGB(0x203E2A)
@@ -341,10 +348,9 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Thorium.setMaterialSecondaryARGB(0xcd8dbc)
 
 	
-	global.MINECRAFT_DYE_NAMES.forEach(colorName =>
-	{
-		var material = GTCEuAPI.materialManager.getMaterial(`gtceu:${colorName}_dye`);
-		var property = material.getProperty(PropertyKey.FLUID);
+	global.MINECRAFT_DYE_NAMES.forEach(colorName => {
+		let material = GTCEuAPI.materialManager.getMaterial(`gtceu:${colorName}_dye`);
+		let property = material.getProperty(PropertyKey.FLUID);
 		property.getStorage().store($FluidStorageKeys.LIQUID, () => Fluid.of(`tfc:${colorName}_dye`).fluid, null);
 	});
 

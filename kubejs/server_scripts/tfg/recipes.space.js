@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function registerTFGSpaceRecipes(event) {
 
 	// TODO: Change these to work on any dim as long as they're in an oxygenated area?
@@ -43,6 +46,13 @@ function registerTFGSpaceRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:argon', 1))
 		.dimension('ad_astra:moon')
 		.duration(20*60*30)
+		.EUt(16)
+
+	event.recipes.gtceu.gas_collector('mars')
+		.circuit(3)
+		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 10000))
+		.dimension('ad_astra:mars')
+		.duration(20*10)
 		.EUt(16)
 
 	// Aqueous accumulator
@@ -126,7 +136,7 @@ function registerTFGSpaceRecipes(event) {
 		.outputFluids(Fluid.of("minecraft:water", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('sea_water_orbit')
-		.circuit(aaCircuit++)
+		.circuit(aaCircuit)
 		.dimension('ad_astra:earth_orbit')
 		.dimension('ad_astra:moon_orbit')
 		.dimension('ad_astra:mars_orbit')
@@ -137,7 +147,8 @@ function registerTFGSpaceRecipes(event) {
 		.addDataString("fluidA", "tfc:salt_water")
 		.outputFluids(Fluid.of("tfc:salt_water", 1000))
 
-	// Plants
+	// Plants - Can't use the default builder here because fertiliser is much harder to get on the moon,
+	// and we're using helium-3 as the fertiliser
 
 	// Chorus
 	event.recipes.gtceu.greenhouse('tfg:chorus')
@@ -205,7 +216,7 @@ function registerTFGSpaceRecipes(event) {
 
 	event.recipes.gtceu.brewery('biomass_from_twisting_vines')
 		.itemInputs('minecraft:twisting_vines')
-		.inputFluids(JsonIO.of({ amount: 20, value: { tag: "tfg:clean_water" }}))
+		.inputFluids("#tfg:clean_water 20")
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(50)
 		.EUt(3)

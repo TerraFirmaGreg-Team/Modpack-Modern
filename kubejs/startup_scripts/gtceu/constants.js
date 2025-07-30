@@ -143,6 +143,20 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:lv_damascus_steel_screwdriver',
     'gtceu:damascus_steel_bucket',
 
+    //armor
+    'gtceu:bronze_helmet',
+    'gtceu:bronze_chestplate',
+    'gtceu:bronze_leggings',
+    'gtceu:bronze_boots',
+    'gtceu:steel_helmet',
+    'gtceu:steel_chestplate',
+    'gtceu:steel_leggings',
+    'gtceu:steel_boots',
+    'gtceu:titanium_helmet',
+    'gtceu:titanium_chestplate',
+    'gtceu:titanium_leggings',
+    'gtceu:titanium_boots',
+
     // Huh
     'gtceu:wax_dust',
     'gtceu:small_wax_dust',
@@ -203,8 +217,7 @@ global.GTCEU_ARMORS = [
 	'gtceu:nanomuscle_leggings',
 	'gtceu:nanomuscle_boots',
 	'gtceu:nanomuscle_helmet',
-	// typo in gtceu
-	'gtceu:avanced_nanomuscle_chestplate',
+	'gtceu:advanced_nanomuscle_chestplate',
 	'gtceu:quarktech_chestplate',
 	'gtceu:quarktech_leggings',
 	'gtceu:quarktech_boots',

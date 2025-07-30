@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"": [
+			{ "model": "betterend:block/cave_bush_01", "weight": 4 },
+			{ "model": "betterend:block/cave_bush_02" },
+			{ "model": "betterend:block/cave_bush_03", "weight": 2 },
+			{ "model": "betterend:block/cave_bush_04", "weight": 2 }
+		]
+	}
+}

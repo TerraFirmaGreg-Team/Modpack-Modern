@@ -1,9 +1,12 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function registerTFGPapermakingRecipes(event) {
 	
-	var generateVatRecipe = (id, inputItem, fluid, fluidAmount, output) => {
+	const generateVatRecipe = (id, inputItem, fluid, fluidAmount, output) => {
 		event.custom({
 			"type": "firmalife:vat",
 			"input_item": {
@@ -21,9 +24,9 @@ function registerTFGPapermakingRecipes(event) {
 		}).id(id)
 	}
 
-	var generatePotRecipe = (id, maxAmountOfInputItems, inputItem, inputFluid, inputFluidAmount, outputItem, ticks, temperature) => {
+	const generatePotRecipe = (id, maxAmountOfInputItems, inputItem, inputFluid, inputFluidAmount, outputItem, ticks, temperature) => {
 		for (let i = 0; i < maxAmountOfInputItems; i++) {
-			var iPlusOne = i + 1
+			let iPlusOne = i + 1
 			let inputsArray = new Array(iPlusOne)
 			for (let j = 0; j < iPlusOne; j++) {
 				inputsArray[j] = inputItem
@@ -95,7 +98,7 @@ function registerTFGPapermakingRecipes(event) {
 		.outputItem('tfg:soaked_hardwood_strip')
 		.id('tfg:barrel/soak_hardwood_strip')
 	event.recipes.gtceu.chemical_bath('tfg:chemical_bath/soak_hardwood_strips')
-		.inputFluids(  JsonIO.of({ amount: 100, value: { tag: "tfc:clean_water" }}))
+		.inputFluids("#tfc:clean_water 100")
 		.itemInputs('tfg:hardwood_strip')
 		.itemOutputs('tfg:soaked_hardwood_strip')
 		.duration(200)
@@ -123,7 +126,7 @@ function registerTFGPapermakingRecipes(event) {
 	generateMixerRecipe(event, 'gtceu:tiny_hardwood_dust', Fluid.of('tfc:lye', 16), 'gtceu:tiny_thermochemically_treated_hardwood_dust', null, [], 50, 2, 64, 'tfg:mixer/mix_tiny_hardwood_dust_with_lye')
 
 	//Beat thermochemically treated hardwood dust into soaked unrefined paper
-	event.recipes.tfc.anvil('tfg:soaked_unrefined_paper', 'gtceu:thermochemically_treated_hardwood_dust', ['hit_last', 'hit_last', 'hit_last'])
+	event.recipes.tfc.anvil('tfg:soaked_unrefined_paper', 'gtceu:thermochemically_treated_hardwood_dust', ['hit_last', 'hit_second_last', 'hit_third_last'])
 		.id('tfg:anvil/soaked_unrefined_paper')
 	event.recipes.greate.pressing(Item.of('tfg:soaked_unrefined_paper'), 'gtceu:thermochemically_treated_hardwood_dust')
 		.recipeTier(0)
