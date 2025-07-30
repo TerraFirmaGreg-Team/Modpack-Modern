@@ -517,6 +517,18 @@ function registerTFGFoodRecipes(event) {
 			'#forge:tools/mortars'
 		]).id(`tfg:mortar/masa_flour`)
 
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.isp.of(`4x firmalife:food/soybean_paste`).copyFood(), [
+			TFC.ingredient.notRotten(`firmalife:food/dehydrated_soybeans`),
+			'#forge:tools/mortars'
+		]).id(`tfg:mortar/soybean_paste`)
+
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.isp.of(`2x tfc:olive_paste`).copyFood(), [
+			TFC.ingredient.notRotten(`tfc:food/olive`),
+			'#forge:tools/mortars'
+		]).id(`tfg:mortar/olive_paste`)
+
 	processorRecipe('firmalife_masa', 300, 2, {
 		circuit: 3,
 		itemInputs: ["firmalife:food/masa_flour"],
@@ -856,6 +868,9 @@ function registerTFGFoodRecipes(event) {
 		Fluid.of('minecraft:water', 1000), 20, 10)
 		.itemOutput('tfg:food/ice_soup')
 		.id('tfg:pot/ice_soup')
+
+	event.shapeless('4x tfc:powder/salt', ['#forge:dusts/salt', '#forge:tools/mortars'])
+		.id(`tfg:mortar/salt`)
 
 	//#endregion
 

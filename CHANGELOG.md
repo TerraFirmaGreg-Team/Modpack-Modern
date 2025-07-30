@@ -15,6 +15,8 @@
 - Added faster recipes for crafting dough @Pyritie
 - Black bronze now has a fluid pipe instead of an item pipe, so the drum has proper containment info @Pyritie
 - Added recipes to create basic TFC alcohol in the food processor @Pyritie
+- Added melting recipes for all the TFC metal dusts @Pyritie
+- Added mortar and pestle recipes for soybean and olive paste (#1480) @Pyritie
 ### Bug fixes
 - Fixed not being able to craft fine wire in a coiling machine for materials that didn't also have normal wire @Pyritie
 - Fixed cobalt brass and potin double plates not being obtainable until MV @Pyritie
@@ -24,6 +26,7 @@
 - Possibly fixed the issue with airplanes and akistor carts not appearing when placing them (#1447) @Pyritie
 - Fixed not being able to make sea water with TFC salt in a barrel (#1476) @Pyritie
 - Fixed the electric greenhouse fruit tree recipes making more saplings instead of fruit (#1445) @Pyritie
+- Fixed missing firmalife jam food processor recipes (#1478) @Pyritie
 ### Translations
 - Ukranian @Furryks
 
