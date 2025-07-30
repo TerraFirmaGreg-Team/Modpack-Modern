@@ -1266,8 +1266,16 @@ const registerGTCEURecipes = (event) => {
 
 	// TODO: Nano CPU use Nuclear Tritiated Water COMMENTED UNTIL MARS IS OUT
 /*
-	event.replaceInput({ id: 'gtceu:chemical_reactor/nano_cpu_wafer' }, Fluid.of('gtceu:glowstone'), Fluid.of('gtceu:tritiated_water'))
-	event.replaceInput({ id: 'gtceu:large_chemical_reactor/nano_cpu_wafer' }, Fluid.of('gtceu:glowstone'), Fluid.of('gtceu:tritiated_water'))
+	event.remove({ id: 'gtceu:chemical_reactor/nano_cpu_wafer' })
+	event.remove({ id: 'gtceu:large_chemical_reactor/nano_cpu_wafer' })
+	
+	event.recipes.gtceu.chemical_reactor('tfg:nano_cpu_wafer')
+		.inputFluids(Fluid.of('gtceu:tritiated_water', 576))
+		.itemInputs('gtceu:cpu_wafer', '16x gtceu:carbon_fibers')
+		.itemOutputs('gtceu:nano_cpu_wafer')
+		.duration(20*60)
+		.EUt(GTValues.VA[GTValues.EV])
+		.cleanroom(CleanroomType.CLEANROOM)
 
 	// Remove Plutonium from centrifuging Uranium dust
 
