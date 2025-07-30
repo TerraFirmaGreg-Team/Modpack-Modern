@@ -178,8 +178,9 @@ const registerAdAstraRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.HV])
 	event.recipes.gtceu.vacuum_freezer('tfg:cool_hot_rocket_alloy_t3')
 		.itemInputs('#forge:hot_ingots/rocket_alloy_t3')
-		.inputFluids(Fluid.of('gtceu:ice', 4000))
+		.inputFluids(Fluid.of('gtceu:liquid_helium', 500))
 		.itemOutputs('#forge:ingots/rocket_alloy_t3')
+		.outputFluids(Fluid.of('gtceu:helium', 250))
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.HV])
 		
