@@ -16,7 +16,6 @@ function registerTACZAttachRecipes(event){
 		F: '#forge:tools/files'
 		
 	}).id('tfg_tacz:trapdoor_scope');
-	
 	event.recipes.gtceu.assembler('tfg_tacz:ca_reflex')
 		.itemInputs('tfc:lens', '#forge:rings/brass', '#forge:plates/steel')
 		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:sight_reflex"}'))
@@ -44,6 +43,12 @@ function registerTACZAttachRecipes(event){
 		.circuit(4)
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(10);
+	event.recipes.gtceu.assembler('tfg_tacz:ca_simple')
+		.itemInputs('#forge:rings/brass', '2x #forge:screws/black_steel', '2x #forge:plates/steel')
+		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:sight_simple"}'))
+		.circuit(5)
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(10)
 
 
 	event.recipes.gtceu.assembler('tfg_tacz:aa_pricision')
@@ -141,4 +146,29 @@ function registerTACZAttachRecipes(event){
 		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:grip_gantry_shaft"}'))
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(10)
+	event.recipes.gtceu.assembler('tfg_tacz:grip_shaft')
+		.itemInputs('greate:aluminium_shaft', '#forge:ingots/steel', '#forge:leather')
+		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:grip_shaft"}'))
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(10)
+		
+	//Mags
+	event.recipes.gtceu.assembler('tfg_tacz:invar_mag')
+		.itemInputs('4x #forge:ingots/invar', '#forge:springs/kanthal')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:extended_mag_ca_1"}'))
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(60)
+	event.recipes.gtceu.assembler('tfg_tacz:copper_mag')
+		.itemInputs('6x #forge:ingots/stainless_steel', '6x #forge:plates/copper', '#forge:springs/nichrome')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 432))
+		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:extended_mag_ca_2"}'))
+		.EUt(GTValues.VA[GTValues.HV])
+		.duration(60)
+	event.recipes.gtceu.assembler('tfg_tacz:brass_mag')
+		.itemInputs('8x #forge:ingots/titanium', '8x #forge:plates/brass', '#forge:springs/niobium_titanium')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 576))
+		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:extended_mag_ca_3"}'))
+		.EUt(GTValues.VA[GTValues.EV])
+		.duration(60)
 }
