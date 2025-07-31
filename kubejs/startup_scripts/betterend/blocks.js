@@ -31,7 +31,6 @@ function registerBetterEndBlocks(event) {
 		.box(2, 0, 2, 14, 14, 14)
 	createPlant(event, 'amber_grass', 'mars')
 		.box(3, 0, 3, 13, 8, 13)
-	createPlant(event, 'bolux_mushroom', 'mars')
 	createPlant(event, 'bushy_grass', 'mars')
 		.box(3, 0, 3, 13, 12, 13)
 	createPlant(event, 'cave_grass', 'mars')

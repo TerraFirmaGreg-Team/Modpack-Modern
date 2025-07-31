@@ -169,7 +169,7 @@ const registerTFGCrops = (event) => {
 
     event.create('betterend:bolux_mushroom', 'tfc:crop')
         .soundType('nether_wart')
-        .nutrient('phosphorus')
+        .nutrient('phosphorous')
         .stages(3)
         .hardness(0.4)
         .deadBlock(dead => {

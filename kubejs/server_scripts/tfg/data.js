@@ -436,7 +436,7 @@ const registerTFGFLPlanters = (event) => {
 		0.15,
 		'betterend:bolux_mushroom_seeds',
 		'betterend:bolux_mushroom_product',
-		'phosphorus',
+		'phosphorous',
 		[
 			// TODO: all
 			'betterend:block/bolux_mushroom_greenhouse_0',
@@ -455,7 +455,7 @@ const registerTFGFLPlanters = (event) => {
 		0.15,
 		'betterend:chorus_mushroom_seeds',
 		'betterend:chorus_mushroom_product',
-		'phosphorus',
+		'phosphorous',
 		[
 			'betterend:block/chorus_mushroom_0',
 			'betterend:block/chorus_mushroom_1',
@@ -473,7 +473,7 @@ const registerTFGFLPlanters = (event) => {
 		0.15,
 		'betterend:cave_pumpkin_seeds',
 		'betterend:cave_pumpkin',
-		'phosphorus',
+		'phosphorous',
 		[
 			// TODO: all
 			'betterend:block/cave_pumpkin_greenhouse_0',
