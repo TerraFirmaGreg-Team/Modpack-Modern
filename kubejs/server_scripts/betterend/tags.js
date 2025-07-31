@@ -3,7 +3,39 @@
 
 function registerBetterEndItemTags(event) {
 	
-	event.add('tfg:moon_plants', 'betterend:chorus_lily')
-	event.add('tfg:moon_plants', 'betterend:inflexia')
-	event.add('tfg:moon_plants', 'betterend:chorus_grass')
+	event.add('forge:seeds', 'betterend:amber_root_seeds')
+	event.add('forge:seeds', 'betterend:blossom_berry_seeds')
+	event.add('forge:seeds', 'betterend:bolux_mushroom_seeds')
+	event.add('forge:seeds', 'betterend:cave_pumpkin_seeds')
+	event.add('forge:seeds', 'betterend:shadow_berry_seeds')
+
+	event.add('tfc:foods', 'betterend:amber_root_product')
+	event.add('tfc:foods/grains', 'betterend:amber_root_product')
+
+	event.add('tfc:foods', 'betterend:blossom_berry_product')
+	event.add('tfc:foods/fruit', 'betterend:blossom_berry_product')
+
+	event.add('tfc:foods', 'betterend:bolux_mushroom_product')
+	event.add('tfc:foods/vegetables', 'betterend:bolux_mushroom_product')
+	event.add('forge:mushrooms', 'betterend:bolux_mushroom_product')
+	event.add('tfc:foods', 'betterend:bolux_mushroom_cooked')
+	event.add('tfc:foods/vegetables', 'betterend:bolux_mushroom_cooked')
+	event.add('forge:mushrooms', 'betterend:bolux_mushroom_cooked')
+
+	event.add('tfc:foods', 'betterend:cave_pumpkin')
+	event.add('tfc:foods', 'betterend:cave_pumpkin_chunks')
+	event.add('tfc:foods/fruit', 'betterend:cave_pumpkin_chunks')
+	event.add('tfc:foods', 'betterend:cave_pumpkin_pie')
+
+	event.add('tfc:foods', 'betterend:chorus_mushroom_product')
+	event.add('tfc:foods/vegetables', 'betterend:chorus_mushroom_product')
+	event.add('forge:mushrooms', 'betterend:chorus_mushroom_product')
+	event.add('tfc:foods', 'betterend:chorus_mushroom_cooked')
+	event.add('tfc:foods/vegetables', 'betterend:chorus_mushroom_cooked')
+	event.add('forge:mushrooms', 'betterend:chorus_mushroom_cooked')
+
+	event.add('tfc:foods', 'betterend:shadow_berry_product')
+	event.add('tfc:foods/fruit', 'betterend:shadow_berry_product')
+	event.add('tfc:foods', 'betterend:shadow_berry_cooked')
+	event.add('tfc:foods/fruit', 'betterend:shadow_berry_cooked')
 }
