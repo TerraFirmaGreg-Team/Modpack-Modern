@@ -2,6 +2,7 @@
 "use strict";
 
 StartupEvents.registry('item', event => {
+	registerBetterEndItems(event)
     registerGTCEuItems(event)
     registerTFGItems(event)
 })
