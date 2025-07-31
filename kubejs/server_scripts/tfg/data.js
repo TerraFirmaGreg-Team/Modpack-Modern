@@ -351,7 +351,7 @@ const registerTFGFLPlanters = (event) => {
 	event.firmalifePlantable(
 		'tfg:sunflower_seeds',
 		'large',
-		10,
+		0,
 		3,
 		0.15,
 		'tfg:sunflower_seeds',
@@ -369,7 +369,7 @@ const registerTFGFLPlanters = (event) => {
 	event.firmalifePlantable(
 		'tfg:rapeseed_seeds',
 		'large',
-		10,
+		0,
 		3,
 		0.15,
 		'tfg:rapeseed_seeds',
@@ -380,6 +380,117 @@ const registerTFGFLPlanters = (event) => {
 			'tfg:block/crop/rapeseed_greenhouse_1',
 			'tfg:block/crop/rapeseed_greenhouse_2',
 			'tfg:block/crop/rapeseed_greenhouse_3'
+		],
+		null
+	)
+
+	event.firmalifePlantable(
+		'betterend:amber_root_seeds',
+		'large',
+		0,
+		3,
+		0.15,
+		'betterend:amber_root_seeds',
+		'betterend:amber_root_product',
+		'phosphorous',
+		[
+			'betterend:block/amber_root_0',
+			'betterend:block/amber_root_1',
+			'betterend:block/amber_root_2',
+			'betterend:block/amber_root_3'
+		],
+		null
+	)
+
+	event.firmalifePlantable(
+		'betterend:blossom_berry_seeds',
+		'large',
+		0,
+		3,
+		0.15,
+		'betterend:blossom_berry_seeds',
+		'betterend:blossom_berry_product',
+		'potassium',
+		[
+			'betterend:block/blossom_berry_seed_0',
+			'betterend:block/blossom_berry_seed_1',
+			'betterend:block/blossom_berry_seed_2',
+			'betterend:block/blossom_berry_seed_3' // TODO
+		],
+		null
+	)
+
+	event.firmalifePlantable(
+		'betterend:bolux_mushroom_seeds',
+		'quad',
+		1,
+		3,
+		0.15,
+		'betterend:bolux_mushroom_seeds',
+		'betterend:bolux_mushroom_product',
+		'phosphorus',
+		[
+			// TODO: all
+			'betterend:block/bolux_mushroom_greenhouse_0',
+			'betterend:block/bolux_mushroom_greenhouse_1',
+			'betterend:block/bolux_mushroom_greenhouse_2',
+			'betterend:block/bolux_mushroom_greenhouse_3'
+		],
+		null
+	)
+
+	event.firmalifePlantable(
+		'betterend:chorus_mushroom_seeds',
+		'quad',
+		1,
+		3,
+		0.15,
+		'betterend:chorus_mushroom_seeds',
+		'betterend:chorus_mushroom_product',
+		'phosphorus',
+		[
+			'betterend:block/chorus_mushroom_0',
+			'betterend:block/chorus_mushroom_1',
+			'betterend:block/chorus_mushroom_2',
+			'betterend:block/chorus_mushroom_3'
+		],
+		null
+	)
+
+	event.firmalifePlantable(
+		'betterend:cave_pumpkin_seeds',
+		'hanging',
+		2,
+		3,
+		0.15,
+		'betterend:cave_pumpkin_seeds',
+		'betterend:cave_pumpkin',
+		'phosphorus',
+		[
+			// TODO: all
+			'betterend:block/cave_pumpkin_greenhouse_0',
+			'betterend:block/cave_pumpkin_greenhouse_1',
+			'betterend:block/cave_pumpkin_greenhouse_2',
+			'betterend:block/cave_pumpkin_greenhouse_3'
+		],
+		'betterend:block/cave_pumpkin_greenhouse_fruit'
+	)
+
+	event.firmalifePlantable(
+		'betterend:shadow_berry_seeds',
+		'quad',
+		1,
+		3,
+		0.15,
+		'betterend:shadow_berry_seeds',
+		'betterend:shadow_berry_product',
+		'potassium',
+		[
+			// TODO: all
+			'betterend:block/shadow_berry_greenhouse_0',
+			'betterend:block/shadow_berry_greenhouse_1',
+			'betterend:block/shadow_berry_greenhouse_2',
+			'betterend:block/shadow_berry_greenhouse_3'
 		],
 		null
 	)
