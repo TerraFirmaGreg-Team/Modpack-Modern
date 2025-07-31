@@ -171,7 +171,7 @@
 				type: "item"
 			}]
 			title: "{quests.space_survival.bedrock_mining.title}"
-			x: 0.5d
+			x: -1.0d
 			y: 1.0d
 		}
 		{
@@ -460,27 +460,20 @@
 				"5826EC76931359B8"
 				"3C92063DE5B9D5E9"
 			]
-			description: ["{quests.space_survival.railgun.desc}"]
-			icon: "tfg:interplanetary_item_launcher"
+			description: ["&7In &bTerraFirmaGreg&r, transporting items across dimensions or over long distances requires you to build special &6multiblock structures&r.\\n\\nThis system is &apowerful and flexible&r, offering multiple settings that let you customize logistics to perfectly suit your needs.\\n\\nTo set it up, you'll need three components:\\n\\n&6• Interplanetary Railgun&r — this is the &bsender&r that launches items across space.\\n\\n&6• Interplanetary Receiver&r — this is the &breceiver&r that catches and stores incoming items.\\n\\n&6• Interplanetary Logistics Monitor&r — this acts as the &9central control&r, where you define the rules and behavior of the entire transport system.\\n\\nWith these machines, you can automate large-scale transfers efficiently — even between planets!"]
+			icon: "tfg:electromagnetic_accelerator"
 			id: "1A9A5F55F1F0AC58"
 			shape: "gear"
 			size: 2.0d
 			subtitle: "{quests.space_survival.railgun.subtitle}"
-			tasks: [
-				{
-					id: "14EEFF310A3179A8"
-					item: "tfg:interplanetary_item_launcher"
-					type: "item"
-				}
-				{
-					id: "5F95946B3B0E38B9"
-					item: "tfg:interplanetary_item_reciever"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "14EEFF310A3179A8"
+				item: "tfg:interplanetary_item_launcher"
+				type: "item"
+			}]
 			title: "{quests.space_survival.railgun.title}"
 			x: 2.0d
-			y: -0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["72BD27FEEB34C7B0"]
@@ -521,6 +514,135 @@
 			}]
 			x: -7.0d
 			y: -5.5d
+		}
+		{
+			dependencies: ["1A9A5F55F1F0AC58"]
+			id: "783BB3FC5702DA8C"
+			tasks: [{
+				id: "71326452986A7C0F"
+				item: "tfg:interplanetary_item_launcher"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1A9A5F55F1F0AC58"]
+			id: "498E559B9C37D2CA"
+			tasks: [{
+				id: "43304A46FD2DFB41"
+				item: "tfg:interplanetary_logistics_monitor"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1A9A5F55F1F0AC58"]
+			id: "71AD0B9C1FB7CE03"
+			tasks: [{
+				id: "4A43C3AAFA69E286"
+				item: "tfg:interplanetary_item_receiver"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"783BB3FC5702DA8C"
+				"498E559B9C37D2CA"
+			]
+			id: "4FF2809A81DD4122"
+			tasks: [{
+				id: "1F97F1BAE1DF7ADC"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:ulv_railgun_item_loader_in)item(tfg:lv_railgun_item_loader_in)item(tfg:mv_railgun_item_loader_in)item(tfg:hv_railgun_item_loader_in)item(tfg:ev_railgun_item_loader_in)item(tfg:iv_railgun_item_loader_in)item(tfg:luv_railgun_item_loader_in)item(tfg:zpm_railgun_item_loader_in)item(tfg:uv_railgun_item_loader_in)item(tfg:uhv_railgun_item_loader_in))"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["783BB3FC5702DA8C"]
+			description: ["&7Each &6Interplanetary Railgun&r requires a special type of &eammo&r — think of it as a package used to transport items.\\nEach launch consumes exactly &cone unit&r of ammo.\\n\\nTo load it, you’ll need a &6Railgun Ammo Loader&r integrated into your structure.\\nYou can insert ammo manually or automate the process.\\n\\n&9We strongly recommend&r setting up a passive production line to keep your loader filled continuously — this ensures a smooth and reliable logistics chain.\\n\\nThere are multiple recipes available to craft ammo:\\n\\n• Lower-tier recipes are simpler but produce fewer units.\\n• Higher-tier recipes yield &amuch more ammo&r, but require more advanced resources and machines.&r\\n\\nPlan your production based on your &3logistics scale&r — interplanetary trade waits for no one!"]
+			id: "3BEEB11C8621772D"
+			tasks: [
+				{
+					id: "5E7152C67A1E685D"
+					item: "tfg:railgun_ammo_loader"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "36471CA165196EC9"
+					item: { Count: 8, id: "tfg:railgun_ammo_shell" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["498E559B9C37D2CA"]
+			icon: "minecraft:redstone_torch"
+			id: "0538DCD4D4811574"
+			tasks: [{
+				id: "63FFA0CBDDD635B9"
+				title: "Redstone Pulse"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["498E559B9C37D2CA"]
+			icon: "gtceu:hv_robot_arm"
+			id: "7118634C06AE1141"
+			tasks: [{
+				id: "6C995E2B46963E1E"
+				title: "Exact Amount"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"498E559B9C37D2CA"
+				"71AD0B9C1FB7CE03"
+			]
+			id: "5FB814261B0993C5"
+			tasks: [{
+				id: "72D587D69470709E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:ulv_railgun_item_loader_out)item(tfg:lv_railgun_item_loader_out)item(tfg:mv_railgun_item_loader_out)item(tfg:hv_railgun_item_loader_out)item(tfg:ev_railgun_item_loader_out)item(tfg:iv_railgun_item_loader_out)item(tfg:luv_railgun_item_loader_out)item(tfg:zpm_railgun_item_loader_out)item(tfg:uv_railgun_item_loader_out)item(tfg:uhv_railgun_item_loader_out))"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["498E559B9C37D2CA"]
+			icon: "create:cuckoo_clock"
+			id: "183AC1085D558086"
+			tasks: [{
+				id: "119FD14202435E03"
+				title: "Delay"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 2.0d
 		}
 	]
 	subtitle: ["{quests.space_survival.subtitle}"]
