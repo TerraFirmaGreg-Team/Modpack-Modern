@@ -270,6 +270,7 @@ const registerTFGFoodData = (event) => {
 	event.drinkable('tfg:semiheavy_ammoniacal_water', data => {
 		data.thirst(10)
 		data.effect('minecraft:nausea', effect => {
+			effect.chance(0.5)
 			effect.duration(200)
 		})
 	})
