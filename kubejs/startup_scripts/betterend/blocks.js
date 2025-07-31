@@ -44,7 +44,7 @@ function registerBetterEndBlocks(event) {
 		.box(2, 0, 2, 14, 3, 14)
 	createPlant(event, 'flammalix', 'mars')
 	createPlant(event, 'globulagus', 'mars')
-			.box(3, 0, 3, 13, 13, 13)
+		.box(3, 0, 3, 13, 13, 13)
 	createPlant(event, 'lamellarium', 'mars')
 	createPlant(event, 'lutebus', 'mars')
 		.box(3, 0, 3, 13, 8, 13)

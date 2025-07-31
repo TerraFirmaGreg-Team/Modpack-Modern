@@ -470,6 +470,24 @@ function registerTFGFoodRecipes(event) {
 		})
 	})
 
+	global.FIRMALIFE_JAMS.forEach(name => {
+		processorRecipe(`${name}_jam`, 200, 8, {
+			circuit: 15,
+			itemInputs: [`4x firmalife:food/${name}`, "#tfg:sugars", "4x #tfc:empty_jar_with_lid"],
+			fluidInputs: ['#tfg:clean_water 100'],
+			itemOutputs: [`4x firmalife:jar/${name}`],
+			itemOutputProvider: TFC.isp.of(`4x firmalife:jar/${name}`).copyFood()
+		})
+
+		processorRecipe(`${name}_jam_no_seal`, 200, 8, {
+			circuit: 16,
+			itemInputs: [`4x firmalife:food/${name}`, "#tfg:sugars", "4x tfc:empty_jar"],
+			fluidInputs: ['#tfg:clean_water 100'],
+			itemOutputs: [`4x firmalife:jar/${name}_unsealed`],
+			itemOutputProvider: TFC.isp.of(`4x firmalife:jar/${name}_unsealed`).copyFood()
+		})
+	})
+
 	cookingRecipe("pasta", "firmalife:food/raw_egg_noodles", "firmalife:food/cooked_pasta", "#tfg:clean_water 100")
 
 	cookingRecipe("corn_tortilla", "firmalife:food/masa", "firmalife:food/corn_tortilla")
@@ -498,6 +516,18 @@ function registerTFGFoodRecipes(event) {
 			TFC.ingredient.notRotten(`firmalife:food/nixtamal`),
 			'#forge:tools/mortars'
 		]).id(`tfg:mortar/masa_flour`)
+
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.isp.of(`4x firmalife:food/soybean_paste`).copyFood(), [
+			TFC.ingredient.notRotten(`firmalife:food/dehydrated_soybeans`),
+			'#forge:tools/mortars'
+		]).id(`tfg:mortar/soybean_paste`)
+
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.isp.of(`2x tfc:olive_paste`).copyFood(), [
+			TFC.ingredient.notRotten(`tfc:food/olive`),
+			'#forge:tools/mortars'
+		]).id(`tfg:mortar/olive_paste`)
 
 	processorRecipe('firmalife_masa', 300, 2, {
 		circuit: 3,
@@ -838,6 +868,9 @@ function registerTFGFoodRecipes(event) {
 		Fluid.of('minecraft:water', 1000), 20, 10)
 		.itemOutput('tfg:food/ice_soup')
 		.id('tfg:pot/ice_soup')
+
+	event.shapeless('4x tfc:powder/salt', ['#forge:dusts/salt', '#forge:tools/mortars'])
+		.id(`tfg:mortar/salt`)
 
 	//#endregion
 

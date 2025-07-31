@@ -1,6 +1,6 @@
 {
-    "parent": "betterend:block/cross_inverted",
+    "parent": "minecraft:block/cross",
     "textures": {
-        "cross": "betterend:block/cave_pumpkin_stem_3"
+        "cross": "betterend:block/cave_pumpkin_stem_3_side"
     }
 }

@@ -1,0 +1,16 @@
+{
+	"feature": "tfg:mars/surface/lutebus",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 2
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE"
+		}
+	]
+}

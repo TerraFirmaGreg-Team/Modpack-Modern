@@ -26,7 +26,7 @@
 	},
 	"features": [
 		[],
-		"#tfg:mars_craters",
+		[],
 		[
 			"tfg:earth/geode/amethyst",
 			"tfg:earth/geode/barite",
@@ -47,9 +47,7 @@
 		"#tfg:mars_small_rock_features",
 		[
 		],
-		[
-			"tfg:mars/hardening"
-		]
+		[]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
