@@ -517,7 +517,9 @@
 		}
 		{
 			dependencies: ["1A9A5F55F1F0AC58"]
+			description: ["&6The Interplanetary Railgun&r acts as your &bsender multiblock&r.\\n\\nIt’s the structure responsible for launching items toward distant &3receivers&r — but it can’t receive anything itself.\\n\\nTo function correctly, it requires several components:\\n\\n&9• Energy Hatch&r — provides the power needed to launch items. Without energy, nothing moves.\\n&9• Railgun Ammo Loader&r — must be filled with ammo. One unit is consumed per launch.\\n&9• Input Busses&r — you can add as many as you can fit, to insert the items you want to send.\\n\\n&cImportant:&r This multiblock can only &osend&r items. Make sure you &6Interplanetary Railgun&r is always chunkloaded!"]
 			id: "783BB3FC5702DA8C"
+			subtitle: "What we call the sender"
 			tasks: [{
 				id: "71326452986A7C0F"
 				item: "tfg:interplanetary_item_launcher"
@@ -528,7 +530,9 @@
 		}
 		{
 			dependencies: ["1A9A5F55F1F0AC58"]
+			description: ["&6The Interplanetary Logistics Monitor&r is your logistics command center — the true bread and butter of interplanetary transport.\\n\\nIt’s a &asingle block&r, requires &ono energy&r, and will automatically detect every &6Railgun Sender&r and &3Receiver&r you’ve built.\\n\\nIt may look simple, but it hides powerful tools under the hood.\\nLet’s go over the basics:\\n\\n&9• When you open the Monitor&r, you'll see a list of all your Senders and Receivers.\\nYou have to &ename each one&r.\\n\\n&9• To create a logistic rule:&r\\n → Click the right arrow to select a Sender\\n → Press &a+&r to add a new rule\\n → Choose the destination Receiver from your list\\n\\nIf your &6Railgun&r has ammo and energy, and the &3Receiver&r has space — the shipment will launch instantly!\\n\\nNow that you've got the basics, let’s dive into the more advanced features in the next quests..."]
 			id: "498E559B9C37D2CA"
+			subtitle: "Super Computer"
 			tasks: [{
 				id: "43304A46FD2DFB41"
 				item: "tfg:interplanetary_logistics_monitor"
@@ -539,7 +543,9 @@
 		}
 		{
 			dependencies: ["1A9A5F55F1F0AC58"]
+			description: ["&6The Interplanetary Receiver&r, as its name suggests, is designed to &3receive items&r sent by the Railgun.\\n\\nIt’s a &asmall and simple multiblock&r that requires no energy or maintenance — just build it and you're ready to go!\\n\\nIts flexibility lies in the number of &9Output Busses&r you can attach.\\nThe more you add, the more items it can handle simultaneously.\\n\\n&2Setup is easy:&r\\n• Build the structure\\n• Add as many Output Busses as you need\\n• Done — it’s ready to receive!\\n\\nNo fuel, no maintenance — just pure logistics power.\\nMake sure it’s properly chunkloaded, and let the items rain in!"]
 			id: "71AD0B9C1FB7CE03"
+			subtitle: "The Receiver"
 			tasks: [{
 				id: "4A43C3AAFA69E286"
 				item: "tfg:interplanetary_item_receiver"
@@ -553,7 +559,9 @@
 				"783BB3FC5702DA8C"
 				"498E559B9C37D2CA"
 			]
+			description: ["When opening the &6Sender&r logistics screen, you'll notice the familiar &9Programmed Circuit&r from GregTech.\\nThis circuit number is the &acore identifier&r for setting up routing rules.\\n\\nThe number you assign will apply a specific rule to all Input Busses in your Railgun structure that are configured with that same circuit number.\\n\\nThis allows you to fine-tune what items are sent where and with which rules, based on the circuit used.\\n\\n&2How to configure it:&r\\n→ Open the GUI of any &9Railgun Input Bus&r\\n→ Select the number you want — just like in any other GregTech machine\\n\\nThis lets you create powerful logic like:\\n&8• Circuit 1&r → send to Moon base\\n&8• Circuit 2&r → send to Mars\\n&8• Circuit 3&r → send to Orbital Station\\n\\nWith proper circuit setup, you can automate interplanetary trade like a true industrial tycoon!"]
 			id: "4FF2809A81DD4122"
+			subtitle: "Sender only"
 			tasks: [{
 				id: "1F97F1BAE1DF7ADC"
 				item: {
@@ -565,12 +573,13 @@
 				}
 				type: "item"
 			}]
+			title: "Railgun Input Bus"
 			x: 6.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["783BB3FC5702DA8C"]
-			description: ["&7Each &6Interplanetary Railgun&r requires a special type of &eammo&r — think of it as a package used to transport items.\\nEach launch consumes exactly &cone unit&r of ammo.\\n\\nTo load it, you’ll need a &6Railgun Ammo Loader&r integrated into your structure.\\nYou can insert ammo manually or automate the process.\\n\\n&9We strongly recommend&r setting up a passive production line to keep your loader filled continuously — this ensures a smooth and reliable logistics chain.\\n\\nThere are multiple recipes available to craft ammo:\\n\\n• Lower-tier recipes are simpler but produce fewer units.\\n• Higher-tier recipes yield &amuch more ammo&r, but require more advanced resources and machines.&r\\n\\nPlan your production based on your &3logistics scale&r — interplanetary trade waits for no one!"]
+			description: ["&7Each &6Interplanetary Railgun&r requires a special type of &eammo&r — think of it as a package used to transport items.\\nEach launch consumes exactly &cone unit&r of ammo and can send &dthree different items&r.\\n\\nTo load it, you’ll need a &6Railgun Ammo Loader&r integrated into your structure.\\nYou can insert ammo manually or automate the process.\\n\\n&9We strongly recommend&r setting up a passive production line to keep your loader filled continuously — this ensures a smooth and reliable logistics chain.\\n\\nThere are multiple recipes available to craft ammo:\\n\\n• Lower-tier recipes are simpler but produce fewer units.\\n• Higher-tier recipes yield &amuch more ammo&r, but require more advanced resources and machines.&r\\n\\nPlan your production based on your &3logistics scale&r — interplanetary trade waits for no one!"]
 			id: "3BEEB11C8621772D"
 			tasks: [
 				{
@@ -590,8 +599,10 @@
 		}
 		{
 			dependencies: ["498E559B9C37D2CA"]
+			description: ["&6The Redstone Rule&r is simple — but incredibly powerful when used well.\\n\\nIn the &6Sender&r rules interface, enabling this rule means that a &credstone signal&r must be present on the &9Input Bus&r for it to send items.\\n\\nIn the &3Receiver&r rules interface, you can configure the rule so that an &9Output Bus&r will only accept items based on the redstone signal on that specific block.\\n\\nTime to use your redstone logic skills!\\nWhether it's with an &dAE2 Level Emitter&r, from &aCreate redstone utilities&r, or good old vanilla mechanisms — this rule lets you synchronize logistics with your factory state like a pro."]
 			icon: "minecraft:redstone_torch"
 			id: "0538DCD4D4811574"
+			subtitle: "Redstone rules in Minecraft"
 			tasks: [{
 				id: "63FFA0CBDDD635B9"
 				title: "Redstone Pulse"
@@ -602,6 +613,7 @@
 		}
 		{
 			dependencies: ["498E559B9C37D2CA"]
+			description: ["&6The Item Rule&r works similarly to a &9GregTech Robot&r set to &eSupply Exact&r.\\nIt can only be configured from the &6Sender&r rules interface.\\n\\nWith this rule active, the &9Railgun&r will only send the &aexact quantity&r when available in the &9Input Bus&r.\\n\\n&2How to set it up:&r\\n→ Drag items into the filter from your &dEMI&r interface\\n→ Use &aleft and right clicks&r to adjust the quantity\\n→ You can also bookmark items for quick access and configuration\\n\\nThis rule is perfect for precise automation — ideal for batch crafting or resource quotas."]
 			icon: "gtceu:hv_robot_arm"
 			id: "7118634C06AE1141"
 			tasks: [{
@@ -617,7 +629,9 @@
 				"498E559B9C37D2CA"
 				"71AD0B9C1FB7CE03"
 			]
+			description: ["&cIf you haven't read the quest about the &6Railgun Input Bus&r &cabove this one, make sure to check it out first — this quest builds on that knowledge.&r\\n\\nJust like how your &6Railgun Input Busses&r can be assigned a &9circuit number&r, you can do the same with the &3Output Busses&r on your &3Receiver&r.\\nThis feature serves two main purposes:&r\\n\\n&9• Direct item flow&r —\\nYou can control which Output Bus receives items.\\nTo do this, simply assign a circuit number to the Output Bus,\\nthen select that number in your Sender’s rule via the &6Logistics Monitor&r.\\n\\n&9• Conditional rules&r —\\nYou can also set rules to &cstop sending items&r if the circuit rule isn’t respected.\\nThis is done not from the Sender tab, but by opening the &3Receiver&r tab in the Monitor.\\nFor each circuit number, you can assign a rule that applies only to Output Busses using that number.\\n\\nTo learn more about the available rule types, make sure to check the &7three quests above this one&r.\\nThey go over each rule in detail and explain how to use them effectively."]
 			id: "5FB814261B0993C5"
+			subtitle: "Receiver only"
 			tasks: [{
 				id: "72D587D69470709E"
 				item: {
@@ -629,11 +643,13 @@
 				}
 				type: "item"
 			}]
+			title: "Railgun Output Bus"
 			x: 6.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["498E559B9C37D2CA"]
+			description: ["&6The Delay Rule&r is simple, but useful for managing item flow timing.\\n\\n&2On the Sender side:&r\\nItems will only be sent after the &9Input Bus&r hasn't received any new item for a set amount of time (in seconds).\\nThis helps avoid sending items too frequently when inputs are constantly changing.\\n\\n&2On the Receiver side:&r\\nThe rule defines a delay before an &9Output Bus&r can receive another batch of items.\\nThis can be useful to prevent overflow or to pace item insertion into slower systems.\\n\\nIdeal for syncing with machines that need breathing room between operations, or to prevent unnecessary waste of ammos."]
 			icon: "create:cuckoo_clock"
 			id: "183AC1085D558086"
 			tasks: [{
