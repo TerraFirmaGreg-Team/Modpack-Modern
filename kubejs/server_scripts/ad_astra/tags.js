@@ -406,7 +406,7 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/lamellarium")
 
 	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/small_amaranita_mushroom")
-	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/bolux_mushroom")
+	//event.add("tfg:mars_global_small_plants", "tfg:mars/surface/bolux_mushroom")
 	
 	// TODO
 	event.add("tfg:mars_trees", "tfg:mars/surface/strophar_huge")
