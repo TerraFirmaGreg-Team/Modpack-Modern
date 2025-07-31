@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "tfg:block/machines/railgun_ammo_loader",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tfg:block/machines/railgun_ammo_loader"
+    },
+    "facing=south": {
+      "model": "tfg:block/machines/railgun_ammo_loader",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tfg:block/machines/railgun_ammo_loader",
+      "y": 270
+    }
+  }
+}
