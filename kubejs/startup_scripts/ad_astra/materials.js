@@ -35,16 +35,20 @@ const registerAdAstraMaterials = (event) => {
 			GTMaterialFlags.DISABLE_ALLOY_BLAST
 		)
 
-	// mars?
+	// mars
 	event.create('ostrum')
-		//.components('2x scheelite', '1x hematite', '1x rutile', '4x oxygen')
+		//.components('3x scheelite', '2x hematite', '2x thorium', '4x oxygen')
 		.color(0xbd7980)
 		.secondaryColor(0xA66C8D)
 		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
 		.ingot()
+		.liquid()
+		.blastTemp(2900, 'mid', GTValues.VA[GTValues.HV])
 		.flags(
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
-			GTMaterialFlags.GENERATE_PLATE
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.DISABLE_ALLOY_BLAST
+
 		)
 
 	// venus?

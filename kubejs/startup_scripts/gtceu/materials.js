@@ -230,6 +230,8 @@ const registerGTCEuMaterialModification = (event) => {
 
 	GTMaterials.Cupronickel.addFlags(GENERATE_BOLT_SCREW, GENERATE_RING);
 
+	GTMaterials.Ultimet.addFlags(GENERATE_ROTOR)
+	
 	GTMaterials.Invar.addFlags(GENERATE_RING);
 	GTMaterials.Magnalium.addFlags(GENERATE_RING);
 	GTMaterials.TinAlloy.addFlags(GENERATE_RING);
@@ -360,5 +362,6 @@ const registerGTCEuMaterialModification = (event) => {
 	
 	GTCEuAPI.materialManager.getMaterial('tfg:kaolinite').setFormula("Al2Si2O5(OH)4", true)
 	GTCEuAPI.materialManager.getMaterial('tfg:vitrified_pearl').setFormula("(Al2Si2O5(OH)4)(BeK4N5)", true)
+	GTCEuAPI.materialManager.getMaterial('tfg:tmos').setFormula("Si(OCH3)4", true)
 
 }

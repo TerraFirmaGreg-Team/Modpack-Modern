@@ -24,8 +24,6 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:fan',
 	'ad_astra:steel_tank',
 	'ad_astra:desh_tank',
-	'ad_astra:ostrum_tank',
-	'ad_astra:calorite_tank',
 	'ad_astra:ice_shard',
 	'ad_astra:oxygen_bucket',
 	'ad_astra:hydrogen_bucket',
@@ -79,23 +77,30 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	// Disabled until IV planets
 
 	'ad_astra:tier_3_rocket',
+	'ad_astra:ostrum_engine',
+	'ad_astra:ostrum_tank',
+	'tfg:rocket_fin_t3',
+	'tfg:rocket_cone_t3',
+	'tfg:elite_power_thruster',
+	'tfg:better_space_suit_fabric',
 	'ad_astra:netherite_space_helmet',
 	'ad_astra:netherite_space_suit',
 	'ad_astra:netherite_space_pants',
 	'ad_astra:netherite_space_boots',
-	'ad_astra:ostrum_engine',
 	
+
 
 
 	// Disabled until LuV planet
 	
 	'ad_astra:glacio_globe', // maybe
 	'ad_astra:tier_4_rocket',
+	'ad_astra:calorite_engine',
+	'ad_astra:calorite_tank',
 	'ad_astra:jet_suit_helmet',
 	'ad_astra:jet_suit',
 	'ad_astra:jet_suit_pants',
-	'ad_astra:jet_suit_boots',
-	'ad_astra:calorite_engine'
+	'ad_astra:jet_suit_boots'
 ];
 
 global.AD_ASTRA_DISABLED_FLUIDS =
