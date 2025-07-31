@@ -220,4 +220,21 @@ const registerTFGMaterials = (event) => {
 		.color(0x82a6ce)
 		.formula('HI')
 
+	//#endregion
+
+	//# Mars Ore Line
+
+	event.create('lightweight_ostrium_vapor')
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(760))
+		.formula('(?)')
+
+	event.create('ostrium_vapor')
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(815))
+		.formula('(?)')
+
+	event.create('dense_ostrium_vapor')
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(930))
+		.formula('(?)')
+
+
 }

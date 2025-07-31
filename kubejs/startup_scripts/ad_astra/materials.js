@@ -41,7 +41,6 @@ const registerAdAstraMaterials = (event) => {
 		.color(0xbd7980)
 		.secondaryColor(0xA66C8D)
 		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
-		.ore()
 		.ingot()
 		.flags(
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 

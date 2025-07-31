@@ -63,4 +63,12 @@ const registerGTCEuRecipeTypes = (event) => {
         	.setProgressBar(GuiTextures.PROGRESS_BAR_DISTILLATION_TOWER, FillDirection.LEFT_TO_RIGHT)
         	.setSound(GTSoundEntries.BATH)
 
+		event.create('void_miner')
+        	.category('void_miner')
+        	.setEUIO('in')
+        	.setMaxIOSize(0, 21, 1, 0)
+			.setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        	.setProgressBar(GuiTextures.PROGRESS_BAR_CRACKING, FillDirection.LEFT_TO_RIGHT)
+        	.setSound(GTSoundEntries.BATH)
+
 }
