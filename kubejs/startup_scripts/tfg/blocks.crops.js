@@ -133,7 +133,7 @@ const registerTFGCrops = (event) => {
         .hardness(0.4)
         .deadBlock(dead => {
             dead.hardness(0.2)
-            dead.soundType('crop')
+            dead.soundType('nether_wart')
         })
 
     event.create('betterend:chorus_mushroom_wild', 'tfc:wild_crop')
@@ -174,7 +174,7 @@ const registerTFGCrops = (event) => {
         .hardness(0.4)
         .deadBlock(dead => {
             dead.hardness(0.2)
-            dead.soundType('crop')
+            dead.soundType('nether_wart')
         })
 
     event.create('betterend:bolux_mushroom_wild', 'tfc:wild_crop')

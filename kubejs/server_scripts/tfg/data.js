@@ -173,43 +173,90 @@ const registerTFGFoodData = (event) => {
 	})
 
 	event.foodItem('tfg:rapeseed_product', food => {
-		food.decayModifier(0.5)
+		food.decayModifier(0.3)
 	})
 
 	event.foodItem('betterend:amber_root_product', food => {
-
+		food.hunger(4)
+		food.decayModifier(1)
+		food.saturation(1)
+		food.grain(3)
 	})
 
 	event.foodItem('betterend:blossom_berry_product', food => {
-
+		food.hunger(5)
+		food.decayModifier(2)
+		food.saturation(1)
+		food.water(7.5)
+		food.fruit(1.5)
 	})
 
 	event.foodItem('betterend:cave_pumpkin', food => {
+		food.hunger(4)
+		food.saturation(0)
+		food.decayModifier(0.5)
+	})
 
+	event.foodItem('betterend:cave_pumpkin_chunks', food => {
+		food.hunger(4)
+		food.saturation(1)
+		food.decayModifier(1.5)
+		food.water(5)
+		food.fruit(0.75)
+	})
+
+	event.foodItem('betterend:cave_pumpkin_pie', food => {
+		food.hunger(4)
+		food.saturation(3)
+		food.decayModifier(2.5)
+		food.water(5)
+		food.fruit(2)
+		food.grain(1.5)
 	})
 
 	event.foodItem('betterend:chorus_mushroom_product', food => {
-
+		food.hunger(2)
+		food.saturation(1)
+		food.decayModifier(3)
+		food.water(3)
+		food.vegetables(1.5)
 	})
 
 	event.foodItem('betterend:chorus_mushroom_cooked', food => {
-
+		food.hunger(2)
+		food.saturation(2.5)
+		food.decayModifier(1.5)
+		food.vegetables(2)
 	})
 
 	event.foodItem('betterend:shadow_berry_product', food => {
-
+		food.hunger(5)
+		food.decayModifier(2)
+		food.saturation(1)
+		food.water(5)
+		food.fruit(1.5)
 	})
 
 	event.foodItem('betterend:shadow_berry_cooked', food => {
-
+		food.hunger(5)
+		food.decayModifier(1)
+		food.saturation(2)
+		food.fruit(2)
 	})
 
 	event.foodItem('betterend:bolux_mushroom_product', food => {
-
+		food.hunger(2)
+		food.saturation(1)
+		food.decayModifier(3)
+		food.water(3)
+		food.vegetables(1.5)
 	})
 
 	event.foodItem('betterend:bolux_mushroom_cooked', food => {
-
+		food.hunger(2)
+		food.saturation(2.5)
+		food.decayModifier(1.5)
+		food.vegetables(2)
 	})
 
 	// misc
