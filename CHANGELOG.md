@@ -7,7 +7,7 @@
 - Vanilla moss blocks/carpet are now compostable @Pyritie
 - Added missing mixer recipes for turning medium compost greens/browns into compost @Pyritie
 - Adjusted recipe times of the VI machines @Pyritie
-- Added universal compost items, for more efficient storage of compostables @Vazde
+- Added universal compost items, for more efficient storage of compostables @Vazde @Redeix
 - Added recipe for backpack feeding upgrade (#1462) @Pyritie
 - Greate shaft recipes are now shapeless (#1453) @Pyritie
 - Added crafting table recipes for matches and the matchbox (#1449) @Pyritie
