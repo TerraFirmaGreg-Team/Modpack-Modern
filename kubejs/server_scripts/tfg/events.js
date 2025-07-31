@@ -546,3 +546,33 @@ BlockEvents.broken('tfc:mineable_with_sharp_tool', event => {
 });
 
 //#endregion
+// TODO
+TFCEvents.startFire(event => {
+    let player = event.player
+    const item = player.mainHandItem
+    // player.tell(item)
+    if (item.id.toString() === 'gtceu:matchbox') {
+        player.tell('holding matchbox')
+        player.tell(item.nbt.getInt('usesLeft'))
+
+        if (!item.nbt.contains('usesLeft')) {
+            player.tell('matchbox unused')
+            item.nbt.merge({usesLeft:15})
+            return;
+
+        } else if (item.nbt.getInt('usesLeft') <= 1) {
+            player.tell('???')
+            event.server.runCommandSilent(`playsound item.flintandsteel.use player ${player.username} ${player.x} ${player.y} ${player.z} 1 1 1`);
+            item.count--
+            event.server.runCommandSilent(`give ${player.username} minecraft:paper`)
+
+        } else {
+            let oldUses = item.nbt.getInt('usesLeft')
+            item.nbt.merge({usesLeft : oldUses - 1})
+            return;
+        }
+    }
+    
+    
+
+})
