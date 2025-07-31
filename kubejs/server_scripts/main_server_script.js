@@ -271,3 +271,13 @@ TaCZServerEvents.ammoIndexLoad((event) => {
 TaCZServerEvents.attachmentIndexLoad((event) => {
 	attachmentIndexLogic(event)
 })
+
+TaCZServerEvents.gunDataLoad((event) => {
+	gunDataLogic(event)
+})
+
+TaCZServerEvents.attachmentDataLoad((event) => {
+	attachmentDataLogic(event)
+})
+
+
