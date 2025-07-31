@@ -311,6 +311,15 @@ const registerTFGCropRanges = (event) => {
 
 	event.climateRange(climate => {
 		climate.minHydration(0)
+		climate.maxHydration(40)
+		climate.minTemperature(-150)
+		climate.maxTemperature(15)
+		climate.hydrationWiggle(7.5)
+		climate.temperatureWiggle(5.5)
+	}, 'betterend:bolux_mushroom')
+
+	event.climateRange(climate => {
+		climate.minHydration(0)
 		climate.maxHydration(60)
 		climate.minTemperature(-100)
 		climate.maxTemperature(30)
