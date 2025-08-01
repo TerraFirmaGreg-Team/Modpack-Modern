@@ -1137,7 +1137,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	
 	//Tier 3 insulation
 	event.recipes.gtceu.forming_press('tfg:mli_shielding')
-		.itemInputs('4x #forge:dusts/ammonia_borane', '2x tfg:aes_polyurethane', '4x gtceu:carbon_fiber_plate')
+		.itemInputs('4x #forge:plates/ammonia_borane', '2x tfg:aes_polyurethane', '4x gtceu:carbon_fiber_plate')
 		.itemOutputs('tfg:mli_shielding')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.IV])

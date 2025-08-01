@@ -115,6 +115,7 @@ const registerTFGCrops = (event) => {
         .requiresTool(false)
 		.fullBlock(false)
 		.opaque(false)
+        .notSolid()
 
     event.create('betterend:cave_pumpkin_plant', 'tfc:spreading_crop')
         .soundType('crop')
