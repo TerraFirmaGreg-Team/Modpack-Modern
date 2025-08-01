@@ -134,6 +134,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RedAlloy.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(570, 650, 740, 2));
 	GTMaterials.TinAlloy.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1000, 1100, 1250, 3));
 	GTMaterials.Lead.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(170, 250, 330, 2));
+	GTMaterials.Invar.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(896, 1195, 1494, 3));
 
 
 	GTMaterials.Gold.addFlags(GENERATE_BELL);
@@ -185,6 +186,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR);
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Lead.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Invar.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL);
 	//
 	//		  /* Superconductors */
 	GTMaterials.ManganesePhosphide.addFlags(GENERATE_FINE_WIRE);
