@@ -186,7 +186,7 @@ const registerGTCEuMachines = (event) => {
 			.where('C', Predicates.blockTag($Tags.block("tfc:bloomery_insulation")))
 			.where('F', Predicates.blocks(GTBlocks.FIREBOX_BRONZE.get())
 				.or(Predicates.abilities(PartAbility.STEAM).setExactLimit(1)))
-			.where('E', Predicates.abilities(PartAbility.STEAM_IMPORT_ITEMS).setExactLimit(1)
+			.where('E', Predicates.abilities(PartAbility.STEAM_IMPORT_ITEMS).setMaxGlobalLimited(2)
 				.or(Predicates.abilities(PartAbility.STEAM_EXPORT_ITEMS).setExactLimit(1))
 				.or(Predicates.blockTag($Tags.block("tfc:bloomery_insulation"))))
 			.where('#', Predicates.air())
