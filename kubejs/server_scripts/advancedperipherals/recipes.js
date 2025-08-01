@@ -80,14 +80,6 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.duration(1200)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	//Chunk Controller
-	event.recipes.gtceu.assembler('advancedperipherals:assembler/chunk_controller')
-		.itemInputs('1x gtceu:hv_field_generator', '4x gtceu:hv_emitter', '4x gtceu:hv_sensor', '64x gtceu:ram_chip', '1x #forge:exquisite_gems/red_garnet', ChemicalHelper.get(TagPrefix.plate, GTMaterials.StainlessSteel, 4))
-		.circuit(4)
-		.itemOutputs('advancedperipherals:chunk_controller')
-		.duration(1200)
-		.EUt(GTValues.VA[GTValues.HV])
-
 	//End Automata Core
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/end_automata_core')
 		.itemInputs('1x computercraft:wired_modem', '1x #forge:lenses/nether_star', '4x gtceu:quantum_eye', ChemicalHelper.get(TagPrefix.gear, GTMaterials.HSSS, 4), '1x gtceu:luv_robot_arm')
@@ -111,14 +103,6 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.itemOutputs('advancedperipherals:weak_automata_core')
 		.duration(2400)
 		.EUt(GTValues.VA[GTValues.HV])
-
-	//Overpowered End Automata Core
-	event.recipes.gtceu.assembler('advancedperipherals:assembler/overpowered_end_automata_core')
-		.itemInputs('advancedperipherals:end_automata_core', ChemicalHelper.get(TagPrefix.gear, GTMaterials.Osmiridium, 4), '8x #gtceu:circuits/zpm')
-		.circuit(4)
-		.itemOutputs('advancedperipherals:overpowered_end_automata_core')
-		.duration(2400)
-		.EUt(GTValues.VA[GTValues.ZPM])
 
 	//Overpowered Husbandry Automata Core
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/overpowered_husbandry_automata_core')
