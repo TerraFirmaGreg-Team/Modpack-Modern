@@ -628,7 +628,7 @@
 		}
 		{
 			dependencies: ["498E559B9C37D2CA"]
-			description: ["{quests.space_survival.redstone_railgun.task}"]
+			description: ["{quests.space_survival.redstone_railgun.desc}"]
 			icon: "minecraft:redstone_torch"
 			id: "0538DCD4D4811574"
 			subtitle: "{quests.space_survival.redstone_railgun.subtitle}"
