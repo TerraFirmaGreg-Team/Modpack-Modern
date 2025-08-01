@@ -115,6 +115,7 @@ const registerGTCEUMetals = (event) => {
 	event.metal('gtceu:red_alloy', 740, 0.01529, '#forge:ingots/red_alloy', '#forge:double_ingots/red_alloy', '#forge:plates/red_alloy', 2, 'tfg:red_alloy')
 	event.metal('gtceu:tin_alloy', 1250, 0.00829, '#forge:ingots/tin_alloy', '#forge:double_ingots/tin_alloy', '#forge:plates/tin_alloy', 3, 'tfg:tin_alloy')
 	event.metal('gtceu:lead', 330, 0.01729, '#forge:ingots/lead', '#forge:double_ingots/lead', '#forge:plates/lead', 2, 'tfg:lead')
+	event.metal('gtceu:invar', 1494, 0.00741, '#forge:ingots/invar', '#forge:double_ingots/invar', '#forge:plates/invar', 3, 'tfg:invar')
 }
 
 
