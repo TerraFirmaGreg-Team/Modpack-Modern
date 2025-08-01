@@ -238,6 +238,24 @@ function registerTFCMaterialsRecipes(event) {
 								.tier(tfcProperty.getTier())
 								.id(`tfc:anvil/${material.getName()}_tuyere`)
 
+							// These aren't TFC recipes but they go here since they don't have a tag prefix
+							// and I'm too lazy to make them one
+							event.custom({
+								type: 'vintageimprovements:curving',
+								ingredients: [doublePlateItem],
+								// tuyeres are roughly bottle shaped, right?
+								// (there's no other mold that wouldn't conflict and this seems close enough)
+								itemAsHead: 'gtceu:bottle_extruder_mold',
+								results: [{ item: `tfc:metal/tuyere/${material.getName()}` }],
+								processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+							}).id(`tfg:vi/curving/${material.getName()}_tuyere`)
+
+							event.recipes.gtceu.extruder(`tfg:${material.getName()}_tuyere`)
+								.itemInputs(doublePlateItem)
+								.notConsumable('gtceu:bottle_extruder_mold')
+								.itemOutputs(`tfc:metal/tuyere/${material.getName()}`)
+								.duration(material.getMass() * 6)
+								.EUt(GTValues.VA[GTValues.LV])
 							//#endregion
 
 							//#region Щит
