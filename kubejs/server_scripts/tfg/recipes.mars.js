@@ -40,4 +40,17 @@ const $ChanceLogic = Java.loadClass('com.gregtechceu.gtceu.api.recipe.chance.log
     .duration(20*5)
     .EUt(GTValues.VA[GTValues.ZPM],4);
 
+    // Ostrum Harvester
+
+ event.recipes.gtceu.ostrum_harvester(`ostrum_harvesting`)
+    .perTick(true)
+    .inputFluids('gtceu:drilling_fluid 4')
+    .perTick(false)
+    .dimension('ad_astra:mars')
+    //.posY(70,80)
+    .itemOutputsRanged('gtceu:ostrum_dust',1,5)
+    //.itemOutputsRanged('gtceu:raw_sapphire',1,3)
+    .duration(20*5)
+    .EUt(GTValues.VA[GTValues.LV]);
+
  }

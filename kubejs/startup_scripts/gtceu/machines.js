@@ -4,6 +4,7 @@ const registerGTCEuMachines = (event) => {
 
 	const $SteamMulti = Java.loadClass('com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine');
 	const $Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
+	const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine")
 
 	//#region Nether Dome
 
@@ -425,7 +426,7 @@ const registerGTCEuMachines = (event) => {
 
 	//#endregion
 	
-	//#region Spice Harvester
+	//#region Mars Ore Line
 
 	event.create('void_miner', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
@@ -452,6 +453,43 @@ const registerGTCEuMachines = (event) => {
 		)
 		.workableCasingModel(
 			'gtceu:block/casings/solid/machine_casing_stainless_evaporation',
+			'gtceu:block/multiblock/distillation_tower')
+
+	// Ostrum Harvester
+
+	event.create('ostrum_harvester', 'multiblock')
+		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('ostrum_harvester')
+		//.recipeModifiers(GTRecipeModifiers.crackerOverclock)
+		.recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, (machine, recipe) => GTRecipeModifiers.crackerOverclock(machine, recipe)])
+		.appearanceBlock(() => Block.getBlock('gtceu:nonconducting_casing'))
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle('A   A', 'AAAAA', 'ACCCA', 'AACAA', ' AAA ')
+			.aisle('     ', 'B   B', 'B   B', 'BBFBB', ' BBB ')
+			.aisle('     ', 'A   A', 'D   D', 'A F A', ' BDB ')
+			.aisle('     ', 'A   A', 'D   D', 'A F A', ' BEB ')
+			.aisle('     ', 'A   A', 'D   D', 'A F A', ' BDB ')
+			.aisle('     ', 'B   B', 'B   B', 'BBFBB', ' BBB ')
+			.aisle('A   A', 'AAAAA', 'ACXCA', 'AACAA', ' AAA ')
+			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('A', Predicates.blocks('gtceu:secure_maceration_casing'))
+			.where('B', Predicates.blocks('gtceu:nonconducting_casing'))
+			.where('C', Predicates.blocks('gtceu:nonconducting_casing')
+				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(2))
+				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+			.where('D', Predicates.blocks('tfg:casings/machine_casing_vacuum_engine_intake'))
+			.where('E', Predicates.blocks('gtceu:nonconducting_casing')
+				.or(Predicates.abilities(PartAbility.MUFFLER).setExactLimit(1)))
+			.where('F', Predicates.heatingCoils())
+			.where('#', Predicates.air())
+			.where(' ', Predicates.any())
+			.build()
+		)
+		.workableCasingModel(
+			'gtceu:block/casings/gcym/nonconducting_casing',
 			'gtceu:block/multiblock/distillation_tower')
 
 }
