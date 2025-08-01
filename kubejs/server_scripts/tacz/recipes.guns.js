@@ -200,7 +200,7 @@ function registerTACZGunRecipes(event){
 					'4x gtceu:treated_wood_planks', '30x #forge:screws/tungsten', '3x tfg:advanced_clockwork_mechanism')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 3024))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
-		'{AttachmentSCOPE:{Count:1b,id:"tacz:attachment",tag:{AttachmentId:"create_armorer:sight_simple"}},GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"create_armorer:cannon_40mm_salamander",HasBulletInBarrel:1b}'))
+							 '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"create_armorer:cannon_40mm_salamander",HasBulletInBarrel:1b}'))
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(300)
 	

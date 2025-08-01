@@ -111,13 +111,14 @@ function registerTACZAmmoRecipes(event){
 		.duration(40)
 
 	event.recipes.gtceu.assembler('tfg_tacz:etched_quartz_small')
-		.itemInputs('2x ae2:certus_quartz_crystal', '4x tfg:small_bullet_casing', '2x tfg:nitrocellulose')
+		.itemInputs('2x #forge:flawless_gems/certus_quartz', '4x tfg:small_bullet_casing', '2x tfg:nitrocellulose')
 		.itemOutputs(Item.of('tacz:ammo', 4, 
 					'{AmmoId:"applied_armorer:etched_quartz_bullet"}'))
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20)
 	event.recipes.gtceu.assembler('tfg_tacz:hard_quartz_large')
-		.itemInputs('4x ae2:charged_certus_quartz_crystal', '4x tfg:large_bullet_casing', '2x tfg:nitrocellulose')
+		.itemInputs('4x #forge:exquisite_gems/certus_quartz', '8x #forge:bolts/tungsten', '4x tfg:large_bullet_casing', 
+					'2x tfg:nitrocellulose')
 		.itemOutputs(Item.of('tacz:ammo', 4, 
 					'{AmmoId:"applied_armorer:hard_core_quartz_bullet"}'))
 		.EUt(GTValues.VA[GTValues.EV])
