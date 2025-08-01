@@ -150,7 +150,6 @@ const gunDataLogic = (event) => {
 			4,
 			5
 		]
-		console.log(json);
 	}
 	
 	return event.setJson(JSON.stringify(json));
