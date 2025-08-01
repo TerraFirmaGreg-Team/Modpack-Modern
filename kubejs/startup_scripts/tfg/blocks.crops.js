@@ -60,6 +60,12 @@ const registerTFGCrops = (event) => {
         .nutrient('phosphorous')
         .stages(3)
         .hardness(0.4)
+        ['productItem(java.util.function.Consumer)'](product => {
+            product.food(food => {
+	            food.hunger(4)
+	            food.saturation(1)
+            })
+        })
         .deadBlock(dead => {
             dead.hardness(0.2)
             dead.soundType('crop')
@@ -80,6 +86,12 @@ const registerTFGCrops = (event) => {
         .nutrient('potassium')
         .stages(3)
         .hardness(0.4)
+        ['productItem(java.util.function.Consumer)'](product => {
+            product.food(food => {
+	            food.hunger(5)
+	            food.saturation(1)
+            })
+        })
         .deadBlock(dead => {
             dead.hardness(0.2)
             dead.soundType('crop')
@@ -99,10 +111,11 @@ const registerTFGCrops = (event) => {
         .soundType('cherry_wood')
         .tagBlock('minecraft:mineable/axe')
         .tagBlock('minecraft:mineable/hoe')
+        .mapColor('color_red')
         .requiresTool(false)
 		.fullBlock(false)
 		.opaque(false)
-		.renderType('cutout')
+        .notSolid()
 
     event.create('betterend:cave_pumpkin_plant', 'tfc:spreading_crop')
         .soundType('crop')
@@ -131,6 +144,12 @@ const registerTFGCrops = (event) => {
         .nutrient('phosphorous')
         .stages(3)
         .hardness(0.4)
+        ['productItem(java.util.function.Consumer)'](product => {
+            product.food(food => {
+	            food.hunger(2)
+	            food.saturation(1)
+            })
+        })
         .deadBlock(dead => {
             dead.hardness(0.2)
             dead.soundType('nether_wart')
@@ -152,6 +171,12 @@ const registerTFGCrops = (event) => {
         .nutrient('potassium')
         .stages(3)
         .hardness(0.4)
+        ['productItem(java.util.function.Consumer)'](product => {
+            product.food(food => {
+	            food.hunger(5)
+	            food.saturation(1)
+            })
+        })
         .deadBlock(dead => {
             dead.hardness(0.2)
             dead.soundType('crop')
@@ -169,9 +194,15 @@ const registerTFGCrops = (event) => {
 
     event.create('betterend:bolux_mushroom', 'tfc:crop')
         .soundType('nether_wart')
-        .nutrient('phosphorus')
+        .nutrient('phosphorous')
         .stages(3)
         .hardness(0.4)
+        ['productItem(java.util.function.Consumer)'](product => {
+            product.food(food => {
+	            food.hunger(2)
+	            food.saturation(1)
+            })
+        })
         .deadBlock(dead => {
             dead.hardness(0.2)
             dead.soundType('nether_wart')

@@ -943,6 +943,17 @@ function registerTFGFoodRecipes(event) {
         .circuit(7)
         .EUt(GTValues.VA[GTValues.LV])
 
+	event.shaped('tfg:electric_greenhouse', [
+		'ABA',
+		'CDC',
+		'BCB'
+	], {
+		A: '#gtceu:circuits/mv',
+		B: '#forge:single_cables/copper',
+		C: 'tfc:compost',
+		D: 'gtceu:steel_machine_casing'
+	}).id('tfg:shaped/electric_greenhouse')
+
 	// Tweaks to the machine crafts that are more annoying to do in java
 	event.replaceInput({id: 'gtceu:shaped/lv_food_processor'}, 'gtceu:lv_electric_piston', 'gtceu:steel_whisk')
 	event.replaceInput({id: 'gtceu:shaped/mv_food_processor'}, 'gtceu:mv_electric_piston', 'gtceu:aluminium_whisk')
