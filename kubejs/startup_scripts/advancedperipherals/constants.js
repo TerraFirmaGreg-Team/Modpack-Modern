@@ -9,7 +9,7 @@ global.ADVANCED_PERIPHERALS_DISABLED_ITEMS = [
     'advancedperipherals:computer_tool',
 
     // banned for trans-dimensional travel
-    'advancedperipherals:overpowered_end_automata_core'
+    'advancedperipherals:overpowered_end_automata_core',
     // banned for offline chunk loading (bad for server performance)
-
+    'advancedperipherals:chunk_controller'
 ];
