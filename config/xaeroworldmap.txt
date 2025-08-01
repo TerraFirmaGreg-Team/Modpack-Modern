@@ -32,13 +32,13 @@ onlyCurrentMapWaypoints:false
 minZoomForLocalWaypoints:0.0
 arrowColour:-2
 minimapRadar:true
-renderWaypoints:true
+renderWaypoints:false
 partialYTeleportation:true
 displayStainedGlass:true
 caveModeDepth:30
 caveModeStart:2147483647
 autoCaveMode:-1
-legibleCaveMaps:false
+legibleCaveMaps:true
 displayCaveModeStart:true
 caveModeToggleTimer:1000
 defaultCaveModeType:1

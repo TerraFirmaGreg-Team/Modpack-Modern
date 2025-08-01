@@ -990,6 +990,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.EV])
 	//endregion
 	
+	//#region Casings
 	global.GTCEU_SUPERCONDUCTORS.forEach((type, index) => {
 		const multiplier = index + 1
 
@@ -1000,7 +1001,7 @@ function registerTFGMiscellaneousRecipes(event) {
 				ChemicalHelper.get(TagPrefix.rod, GTMaterials.SteelMagnetic, 1),
 				ChemicalHelper.get(TagPrefix.wireFine, GTMaterials[type.materialId], 4)
 			)
-			.inputFluids(Fluid.of('gtceu:silicone_rubber', 144))
+			.inputFluids(Fluid.of('gtceu:epoxy', 144))
 			.itemOutputs(Item.of('tfg:superconductor_coil_small', 4 * multiplier))
 			.circuit(4)
 			.duration(400)
@@ -1012,7 +1013,7 @@ function registerTFGMiscellaneousRecipes(event) {
 				ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 2),
 				ChemicalHelper.get(TagPrefix.rod, GTMaterials.SteelMagnetic, 1),
 				ChemicalHelper.get(TagPrefix.wireGtSingle, GTMaterials[type.materialId], 4))
-			.inputFluids(Fluid.of('gtceu:silicone_rubber', 144))
+			.inputFluids(Fluid.of('gtceu:epoxy', 144))
 			.itemOutputs(Item.of('tfg:superconductor_coil_large', 4 * multiplier))
 			.circuit(7)
 			.duration(600)
@@ -1031,6 +1032,19 @@ function registerTFGMiscellaneousRecipes(event) {
 		.circuit(4)
 		.duration(800)
 		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.assembler('tfg:assembler/machine_casing_aluminium_plated_steel')
+		.itemInputs(
+			GTBlocks.STEEL_HULL.get(),
+			ChemicalHelper.get(TagPrefix.plate, GTMaterials.Aluminium, 2),
+			ChemicalHelper.get(TagPrefix.bolt, GTMaterials.Aluminium, 2),
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Silicon, 1)
+		)
+		.itemOutputs('3x tfg:machine_casing_aluminium_plated_steel')
+		.circuit(4)
+		.duration(600)
+		.EUt(GTValues.VA[GTValues.MV])
+	//#endregion
 		
 	//region ammonia borane
 	event.recipes.gtceu.chemical_reactor('tfg:sodium_hydride_synthesis')
@@ -1137,7 +1151,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	
 	//Tier 3 insulation
 	event.recipes.gtceu.forming_press('tfg:mli_shielding')
-		.itemInputs('4x #forge:dusts/ammonia_borane', '2x tfg:aes_polyurethane', '4x gtceu:carbon_fiber_plate')
+		.itemInputs('4x #forge:plates/ammonia_borane', '2x tfg:aes_polyurethane', '4x gtceu:carbon_fiber_plate')
 		.itemOutputs('tfg:mli_shielding')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.IV])

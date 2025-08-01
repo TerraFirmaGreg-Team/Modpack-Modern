@@ -5,7 +5,7 @@ const registerTFGBlocks = (event) => {
 	registerTFGNetherBlocks(event)
 	registerTFGSpaceBlocks(event)
 	registerTFGSupportBlocks(event)
-    registerTFGCrops(event)
+	registerTFGCrops(event)
 
 	event.create('tfg:artificial_end_portal_frame')
 		.stoneSoundType()
@@ -26,7 +26,7 @@ const registerTFGBlocks = (event) => {
 		.defaultTranslucent()
 		.mapColor('color_white')
 		.speedFactor(1.2)
-        .particleOffset(1, 1, 1)
+		.particleOffset(1, 1, 1)
 		.particleVelocity(0.05, 0, 0.05)
 		.particle('minecraft:campfire_cosy_smoke')
 		.particleCount(2)
@@ -46,15 +46,15 @@ const registerTFGBlocks = (event) => {
 			.mapColor('color_light_gray')
 	})
 
-		event.create(`tfg:casings/machine_casing_stainless_evaporation`)
-			.translationKey(`block.tfg.casings.machine_casing_stainless_evaporation`)
-			.model(`tfg:block/casings/machine_casing_stainless_evaporation`)
-			.soundType('copper')
-			.hardness(5)
-			.resistance(6)
-			.tagBlock('minecraft:mineable/pickaxe')
-			.tagBlock('minecraft:mineable/wrench')
-			.mapColor('color_light_gray')
+	event.create(`tfg:casings/machine_casing_stainless_evaporation`)
+		.translationKey(`block.tfg.casings.machine_casing_stainless_evaporation`)
+		.model(`tfg:block/casings/machine_casing_stainless_evaporation`)
+		.soundType('copper')
+		.hardness(5)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+		.mapColor('color_light_gray')
 
 	//#endregion
 
@@ -144,7 +144,7 @@ const registerTFGBlocks = (event) => {
 
 	event.create('tfg:pile/brown_sand', 'tfg:layer_block')
 		.existingItem('tfc:sand/brown')
-		
+
 	event.create('tfg:pile/green_sand', 'tfg:layer_block')
 		.existingItem('tfc:sand/green')
 
@@ -168,7 +168,7 @@ const registerTFGBlocks = (event) => {
 
 	event.create('tfg:pile/venus_sand', 'tfg:layer_block')
 		.existingItem('ad_astra:venus_sand')
-	
+
 
 	// #endregion
 
