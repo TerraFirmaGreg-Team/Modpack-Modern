@@ -19,4 +19,8 @@ const registerTFCAmbientalItemTags = (event) => {
     event.add('minecraft:trimmable_armor', 'tfcambiental:insulated_leather_tunic')
     event.add('minecraft:trimmable_armor', 'tfcambiental:insulated_leather_pants')
     event.add('minecraft:trimmable_armor', 'tfcambiental:insulated_leather_boots')
+
+    event.add('tfg:lightweight_cloth', 'tfc:silk_cloth')
+    event.add('tfg:lightweight_cloth', 'tfg:phantom_silk')
+    event.add('tfg:lightweight_cloth', 'tfg:polycaprolactam_fabric')
 }
