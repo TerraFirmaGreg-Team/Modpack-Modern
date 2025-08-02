@@ -12,7 +12,8 @@ const registerTFGCrops = (event) => {
         .stages(4)
         .doubleStages(2)
         .hardness(0.4)
-        ['productItem(java.util.function.Consumer)'](product => {
+        .growthModifier(0.8)
+        .productItem(product => {
             product.texture('tfg:item/sunflower_product')
         })
         .seedItem(seed => {
@@ -60,7 +61,7 @@ const registerTFGCrops = (event) => {
         .nutrient('phosphorous')
         .stages(3)
         .hardness(0.4)
-        ['productItem(java.util.function.Consumer)'](product => {
+        .productItem(product => {
             product.food(food => {
 	            food.hunger(4)
 	            food.saturation(1)
@@ -86,7 +87,7 @@ const registerTFGCrops = (event) => {
         .nutrient('potassium')
         .stages(3)
         .hardness(0.4)
-        ['productItem(java.util.function.Consumer)'](product => {
+        .productItem(product => {
             product.food(food => {
 	            food.hunger(5)
 	            food.saturation(1)
@@ -127,6 +128,11 @@ const registerTFGCrops = (event) => {
             dead.soundType('crop')
         })
         .fruitBlock('betterend:cave_pumpkin')
+        .textureAt(0, "betterend:block/cave_pumpkin_stem_0")
+        .textureAt(1, "betterend:block/cave_pumpkin_stem_1")
+        .textureAt(2, "betterend:block/cave_pumpkin_stem_2")
+        .textureAt(3, "betterend:block/cave_pumpkin_stem_3")
+        .texture("side", "betterend:block/cave_pumpkin_stem_3_side")
 
     event.create('betterend:cave_pumpkin_wild', 'tfc:wild_crop')
         .type('spreading')
@@ -144,7 +150,7 @@ const registerTFGCrops = (event) => {
         .nutrient('phosphorous')
         .stages(3)
         .hardness(0.4)
-        ['productItem(java.util.function.Consumer)'](product => {
+        .productItem(product => {
             product.food(food => {
 	            food.hunger(2)
 	            food.saturation(1)
@@ -171,7 +177,7 @@ const registerTFGCrops = (event) => {
         .nutrient('potassium')
         .stages(3)
         .hardness(0.4)
-        ['productItem(java.util.function.Consumer)'](product => {
+        .productItem(product => {
             product.food(food => {
 	            food.hunger(5)
 	            food.saturation(1)
@@ -197,7 +203,7 @@ const registerTFGCrops = (event) => {
         .nutrient('phosphorous')
         .stages(3)
         .hardness(0.4)
-        ['productItem(java.util.function.Consumer)'](product => {
+        .productItem(product => {
             product.food(food => {
 	            food.hunger(2)
 	            food.saturation(1)
