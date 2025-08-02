@@ -86,9 +86,9 @@ function registerTACZAmmoRecipes(event){
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(20)
 	event.recipes.gtceu.assembler('tfg_tacz:slap_large_nc')
-		.itemInputs('4x #forge:nuggets/lead','4x #forge:foils/copper', '4x tfg:large_bullet_casing', 
-					'#forge:dusts/gunpowder')
-		.itemOutputs(Item.of('tacz:ammo', 4, 
+		.itemInputs('8x #forge:nuggets/lead','8x #forge:foils/copper', '8x tfg:large_bullet_casing', 
+					'tfg:nitrocellulose')
+		.itemOutputs(Item.of('tacz:ammo', 8, 
 					'{AmmoId:"create_armorer:slap"}'))
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20)
