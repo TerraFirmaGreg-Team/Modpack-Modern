@@ -1120,6 +1120,12 @@ function registerTFCMaterialsRecipes(event) {
 							.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
 							.useDurability(true)
 							.id(`tfc:heating/metal/${material.getName()}_shears`)
+
+						event.recipes.gtceu.forge_hammer(`tfc:metal/shears/${material.getName()}`)
+							.itemInputs(knifeHeadItem.withCount(2))
+							.itemOutputs(`tfc:metal/shears/${material.getName()}`)
+							.duration(40)
+							.EUt(7)
 					}
 					//#endregion
 

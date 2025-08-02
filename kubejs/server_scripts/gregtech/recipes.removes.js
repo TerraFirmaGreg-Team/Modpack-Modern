@@ -603,6 +603,8 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/gear_diamond' })
 	event.remove({ id: 'gtceu:shaped/buzzsaw_blade_diamond' })
 	event.remove({ id: 'gtceu:shaped/purpur_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/bamboo_button' })
+	event.remove({ id: 'gtceu:shaped/treated_button' })
 
 	event.remove({ id: 'gtceu:shapeless/glass_full_dust_flint' })
 
@@ -730,18 +732,18 @@ function removeGTCEURecipes(event) {
 
 	//removes metal armor
 	const armor = [
-    'gtceu:bronze_helmet',
-    'gtceu:bronze_chestplate',
-    'gtceu:bronze_leggings',
-    'gtceu:bronze_boots',
-    'gtceu:steel_helmet',
-    'gtceu:steel_chestplate',
-    'gtceu:steel_leggings',
-    'gtceu:steel_boots',
-    'gtceu:titanium_helmet',
-    'gtceu:titanium_chestplate',
-    'gtceu:titanium_leggings',
-    'gtceu:titanium_boots'
+		'gtceu:bronze_helmet',
+		'gtceu:bronze_chestplate',
+		'gtceu:bronze_leggings',
+		'gtceu:bronze_boots',
+		'gtceu:steel_helmet',
+		'gtceu:steel_chestplate',
+		'gtceu:steel_leggings',
+		'gtceu:steel_boots',
+		'gtceu:titanium_helmet',
+		'gtceu:titanium_chestplate',
+		'gtceu:titanium_leggings',
+		'gtceu:titanium_boots'
 	];
 	armor.forEach(armor => {
 		event.remove({ output: armor})
