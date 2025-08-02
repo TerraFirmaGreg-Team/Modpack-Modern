@@ -25,6 +25,7 @@
 - Added extruder/curving press recipes for Tuyeres (#1499) @Pyritie
 - Added recipes for more train tracks @Pyritie
 - Added a recipe to get Wood Gas for your food processor in LV (#1491) @Pyritie
+- Regular thorium is also now weakly radioactive @Pyritie
 ### Bug fixes
 - Some bug fixes for the electric refrigerators @gustovafing
 - Fixed not being able to craft fine wire in a coiling machine for materials that didn't also have normal wire @Pyritie
@@ -36,6 +37,7 @@
 - Fixed not being able to make sea water with TFC salt in a barrel (#1476) @Pyritie
 - Fixed the electric greenhouse fruit tree recipes making more saplings instead of fruit (#1445) @Pyritie
 - Fixed missing firmalife jam food processor recipes (#1478) @Pyritie
+- Book and quill uses any black dye now (#1506) @Pyritie
 ### Translation updates
 - Ukranian @Furryks & @MetEnBouldry
 
