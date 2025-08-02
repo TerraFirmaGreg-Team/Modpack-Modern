@@ -1391,7 +1391,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["4CD3F04793CE47A2"]
 			description: ["{quests.steam_age.paper.desc}"]
 			disable_toast: true
 			id: "16CF5A9012EF4B27"
