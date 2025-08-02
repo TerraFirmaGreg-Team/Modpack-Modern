@@ -1095,6 +1095,30 @@ function registerGTCEUMetalRecipes(event) {
 			}).id(`tfg:vi/lathe/${material.getName()}_buzzsaw`)
 		}
 
+		removeMaceratorRecipe(event, `macerate_${material.getName()}_buzz_saw_blade`)
+		event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_buzz_saw_blade`)
+			.itemInputs(buzzsawBladeItem)
+			.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 2))
+			.duration(material.getMass() * 6 * 2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.remove({ id: `gtceu:arc_furnace/arc_${material.getName()}_buzz_saw_blade` })
+		event.recipes.gtceu.arc_furnace(`tfg:arc_furnace_${material.getName()}_buzz_saw_blade`)
+			.itemInputs(buzzsawBladeItem)
+			.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 2))
+			.duration(material.getMass() * 6 * 2)
+			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+			.EUt(GTValues.VA[GTValues.LV])
+			
+		event.remove({ id: `gtceu:extractor/extract_${material.getName()}_buzz_saw_blade` })
+		event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_buzz_saw_blade`)
+			.itemInputs(buzzsawBladeItem)
+			.outputFluids(Fluid.of(material.getFluid(), 2 * 144))
+			.duration(material.getMass() * 6 * 2)
+			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+			.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
+
 		event.remove({ id: `gtceu:shaped/buzzsaw_blade_${material.getName()}` })
 	}
 
@@ -1110,8 +1134,8 @@ function registerGTCEUMetalRecipes(event) {
 		event.remove({ id: `gtceu:arc_furnace/arc_iv_${material.getName()}_wrench` })
 		removeMaceratorRecipe(event, `macerate_lv_${material.getName()}_chainsaw`)
 		event.remove({ id: `gtceu:arc_furnace/arc_lv_${material.getName()}_chainsaw` })
-		removeMaceratorRecipe(event, `macerate_lv_${material.getName()}_buzzsaw`)
-		event.remove({ id: `gtceu:arc_furnace/arc_lv_${material.getName()}_buzzsaw` })
+		removeMaceratorRecipe(event, `macerate_${material.getName()}_buzzsaw`)
+		event.remove({ id: `gtceu:arc_furnace/arc_${material.getName()}_buzzsaw` })
 		removeMaceratorRecipe(event, `macerate_lv_${material.getName()}_drill`)
 		event.remove({ id: `gtceu:arc_furnace/arc_lv_${material.getName()}_drill` })
 		removeMaceratorRecipe(event, `macerate_mv_${material.getName()}_drill`)

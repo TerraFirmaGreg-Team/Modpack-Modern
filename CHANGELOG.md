@@ -18,7 +18,12 @@
 - Added melting recipes for all the TFC metal dusts @Pyritie
 - Added mortar and pestle recipes for soybean and olive paste (#1480) @Pyritie
 - Added concrete to the list of valid blocks for GT facades (#1487) @TheAshenWolf
+- Removed Advanced Peripherals' Overpowered End Automata for allowing cheap interdimensional travel
+- Removed Advanced Peripherals' Chunk Controller for allowing too much offline chunkloading, slowing down large servers
+- Added Invar as a TFC-compatible metal (#1496) @Pyritie
+- Added extruder/curving press recipes for Tuyeres (#1499) @Pyritie
 ### Bug fixes
+- Some bug fixes for the electric refrigerators @gustovafing
 - Fixed not being able to craft fine wire in a coiling machine for materials that didn't also have normal wire @Pyritie
 - Fixed cobalt brass and potin double plates not being obtainable until MV @Pyritie
 - Fixed missing recipe for cooking fox meat @Pyritie
