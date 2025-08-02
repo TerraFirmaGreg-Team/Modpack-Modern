@@ -869,14 +869,14 @@ const registerGTCEURecipes = (event) => {
 		.fluidOutput(Fluid.of('tfg:vulcanized_latex', 1000))
 		.id('tfg:pot/vulcanized_latex')
 
-	event.recipes.gtceu.chemical_reactor('tfg:/latex_to_vulcanized_latex')
-		.duration(200)
+	event.recipes.gtceu.chemical_reactor('tfg:latex_to_vulcanized_latex')
+		.duration(100)
 		.EUt(20)
 		.itemInputs('tfc:powder/sulfur')
 		.inputFluids(Fluid.of('tfg:latex', 1000))
 		.outputFluids(Fluid.of('tfg:vulcanized_latex', 1000))
 
-	event.recipes.gtceu.fluid_solidifier('tfg:/vulcanized_latex_to_raw_rubber_pulp')
+	event.recipes.gtceu.fluid_solidifier('tfg:vulcanized_latex_to_raw_rubber_pulp')
 		.duration(100)
 		.EUt(20)
 		.inputFluids(Fluid.of('tfg:vulcanized_latex', 1000))
