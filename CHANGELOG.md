@@ -22,6 +22,7 @@
 - Removed Advanced Peripherals' Chunk Controller for allowing too much offline chunkloading, slowing down large servers
 - Added Invar as a TFC-compatible metal (#1496) @Pyritie
 - Added extruder/curving press recipes for Tuyeres (#1499) @Pyritie
+- Added recipes for more train tracks @Pyritie
 ### Bug fixes
 - Some bug fixes for the electric refrigerators @gustovafing
 - Fixed not being able to craft fine wire in a coiling machine for materials that didn't also have normal wire @Pyritie
