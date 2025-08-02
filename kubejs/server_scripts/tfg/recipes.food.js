@@ -563,6 +563,7 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: ['tfc:food/olive'],
 		itemOutputs: ['2x tfc:olive_paste'],
 		itemOutputProvider: TFC.isp.of('2x tfc:olive_paste'),
+		circuit: 3
 	})
 
 	processorRecipe("soybean_paste", 60, 8, {
