@@ -38,6 +38,7 @@
 - Fixed the electric greenhouse fruit tree recipes making more saplings instead of fruit (#1445) @Pyritie
 - Fixed missing firmalife jam food processor recipes (#1478) @Pyritie
 - Book and quill uses any black dye now (#1506) @Pyritie
+- Button recipe unification (mostly) (#1461) @Pyritie
 ### Translation updates
 - Ukranian @Furryks & @MetEnBouldry
 
