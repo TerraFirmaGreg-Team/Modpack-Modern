@@ -134,11 +134,14 @@ function registerTFGFoodRecipes(event) {
 			itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_flour`).copyOldestFood()
 		})
 
-		event.recipes.tfc.advanced_shapeless_crafting(
+		event.recipes.tfc.advanced_shaped_crafting(
 			TFC.isp.of(`tfc:food/${grain}_flour`).copyFood(), [
-				TFC.ingredient.notRotten(`tfc:food/${grain}_grain`),
-				'#forge:tools/mortars'
-			]).id(`tfg:mortar/${grain}_flour`)
+				'A',
+				'B'
+			], {
+				A: TFC.ingredient.notRotten(`tfc:food/${grain}_grain`),
+				B: '#forge:tools/mortars'
+			}, 0, 0).id(`tfg:mortar/${grain}_flour`)
 
 		// Flatbread dough
 		processorRecipe(`${grain}_flatbread_dough`, 300, 8, {
@@ -511,23 +514,23 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of(`4x firmalife:food/masa_flour`).copyOldestFood()
 	})
 
-	event.recipes.tfc.advanced_shapeless_crafting(
-		TFC.isp.of(`4x firmalife:food/masa_flour`).copyFood(), [
-			TFC.ingredient.notRotten(`firmalife:food/nixtamal`),
-			'#forge:tools/mortars'
-		]).id(`tfg:mortar/masa_flour`)
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.isp.of(`4x firmalife:food/masa_flour`).copyFood(), ['A', 'B'], {
+			A: TFC.ingredient.notRotten(`firmalife:food/nixtamal`),
+			B: '#forge:tools/mortars'
+		}, 0, 0).id(`tfg:mortar/masa_flour`)
 
-	event.recipes.tfc.advanced_shapeless_crafting(
-		TFC.isp.of(`4x firmalife:food/soybean_paste`).copyFood(), [
-			TFC.ingredient.notRotten(`firmalife:food/dehydrated_soybeans`),
-			'#forge:tools/mortars'
-		]).id(`tfg:mortar/soybean_paste`)
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.isp.of(`4x firmalife:food/soybean_paste`).copyFood(), ['A', 'B'], {
+			A: TFC.ingredient.notRotten(`firmalife:food/dehydrated_soybeans`),
+			B: '#forge:tools/mortars'
+		}, 0, 0).id(`tfg:mortar/soybean_paste`)
 
-	event.recipes.tfc.advanced_shapeless_crafting(
-		TFC.isp.of(`2x tfc:olive_paste`).copyFood(), [
-			TFC.ingredient.notRotten(`tfc:food/olive`),
-			'#forge:tools/mortars'
-		]).id(`tfg:mortar/olive_paste`)
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.isp.of(`2x tfc:olive_paste`).copyFood(), ['A', 'B'], {
+			A: TFC.ingredient.notRotten(`tfc:food/olive`),
+			B: '#forge:tools/mortars'
+		}, 0, 0).id(`tfg:mortar/olive_paste`)
 
 	processorRecipe('firmalife_masa', 300, 2, {
 		circuit: 3,
@@ -869,7 +872,7 @@ function registerTFGFoodRecipes(event) {
 		.itemOutput('tfg:food/ice_soup')
 		.id('tfg:pot/ice_soup')
 
-	event.shapeless('4x tfc:powder/salt', ['#forge:dusts/salt', '#forge:tools/mortars'])
+	event.shaped('4x tfc:powder/salt', ['A', 'B'], {A: '#forge:dusts/salt', B: '#forge:tools/mortars'})
 		.id(`tfg:mortar/salt`)
 
 	//#endregion

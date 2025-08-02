@@ -1,21 +1,22 @@
 # Changelog
 
 ## [Unreleased]
-### Changes
+### Major changes
 - New major GregTech version! Read all about its new changes [here](https://github.com/GregTechCEu/GregTech-Modern/releases), and please report any issues you find! @gustovafing
 - Added initial implementation of interplanetary logistics @gustovafing
+### Other changes
+- Added universal compost items, for more efficient storage of compostables @Vazde @Redeix
 - Vanilla moss blocks/carpet are now compostable @Pyritie
 - Added missing mixer recipes for turning medium compost greens/browns into compost @Pyritie
 - Adjusted recipe times of the VI machines @Pyritie
-- Added universal compost items, for more efficient storage of compostables @Vazde @Redeix
 - Added recipe for backpack feeding upgrade (#1462) @Pyritie
 - Greate shaft recipes are now shapeless (#1453) @Pyritie
 - Added crafting table recipes for matches and the matchbox (#1449) @Pyritie
-- Made "Etched" more accessible (#1473) @Nebby1999
-- Added faster recipes for crafting dough @Pyritie
+- Made "Etched" accessible earlier (#1473) @Nebby1999
+- Added faster recipes for crafting dough until the food processor @Pyritie
 - Black bronze now has a fluid pipe instead of an item pipe, so the drum has proper containment info @Pyritie
 - Added recipes to create basic TFC alcohol in the food processor @Pyritie
-- Added melting recipes for all the TFC metal dusts @Pyritie
+- Added melting recipes for all the TFC metal powders @Pyritie
 - Added mortar and pestle recipes for soybean and olive paste (#1480) @Pyritie
 - Added concrete to the list of valid blocks for GT facades (#1487) @TheAshenWolf
 - Removed Advanced Peripherals' Overpowered End Automata for allowing cheap interdimensional travel
@@ -34,8 +35,8 @@
 - Fixed not being able to make sea water with TFC salt in a barrel (#1476) @Pyritie
 - Fixed the electric greenhouse fruit tree recipes making more saplings instead of fruit (#1445) @Pyritie
 - Fixed missing firmalife jam food processor recipes (#1478) @Pyritie
-### Translations
-- Ukranian @Furryks
+### Translation updates
+- Ukranian @Furryks & @MetEnBouldry
 
 ## [0.10.4] - 25-07-2025
 ### Changes
