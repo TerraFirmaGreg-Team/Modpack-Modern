@@ -49,8 +49,8 @@ function registerTFCAlabasterRecipes(event) {
 		.outputItem('tfc:alabaster/raw')
 		.id('tfg:barrel/raw_ore_alabaster')
 	event.recipes.tfc.barrel_sealed(1000)
-		.inputs('gtceu:rich_raw_gypsum', TFC.fluidStackIngredient('tfc:limewater', 50))
-		.outputItem('tfc:alabaster/raw')
+		.inputs('gtceu:rich_raw_gypsum', TFC.fluidStackIngredient('tfc:limewater', 100))
+		.outputItem('2x tfc:alabaster/raw')
 		.id('tfg:barrel/rich_raw_ore_alabaster')
 	
 	event.recipes.gtceu.chemical_bath('tfc:alabaster/raw/poor_raw_gypsum')
