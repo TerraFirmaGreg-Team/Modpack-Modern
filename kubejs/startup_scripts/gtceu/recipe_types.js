@@ -31,6 +31,22 @@ const registerGTCEuRecipeTypes = (event) => {
         	.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         	.setSound(GTSoundEntries.COOLING)
 
+	event.create('large_solar_panel_tier2')
+        	.category('generator')
+        	.setEUIO('out')
+        	.setMaxIOSize(2, 0, 2, 1)
+		.setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        	.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        	.setSound(GTSoundEntries.COOLING)
+
+	event.create('large_solar_panel_tier3')
+        	.category('generator')
+        	.setEUIO('out')
+        	.setMaxIOSize(2, 0, 2, 1)
+		.setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        	.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        	.setSound(GTSoundEntries.COOLING)
+
 	event.create('nuclear_fuel_factory')
         	.category('nuclear_fuel_factory')
         	.setEUIO('in')

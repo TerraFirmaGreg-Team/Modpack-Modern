@@ -171,7 +171,7 @@
 				type: "item"
 			}]
 			title: "{quests.space_survival.bedrock_mining.title}"
-			x: 0.5d
+			x: -1.0d
 			y: 1.0d
 		}
 		{
@@ -460,27 +460,24 @@
 				"5826EC76931359B8"
 				"3C92063DE5B9D5E9"
 			]
-			description: ["{quests.space_survival.railgun.desc}"]
-			icon: "tfg:interplanetary_item_launcher"
+			description: [
+				"{quests.space_survival.railgun.desc.1}"
+				"{@pagebreak}"
+				"{quests.space_survival.railgun.desc.2}"
+			]
+			icon: "tfg:electromagnetic_accelerator"
 			id: "1A9A5F55F1F0AC58"
 			shape: "gear"
 			size: 2.0d
 			subtitle: "{quests.space_survival.railgun.subtitle}"
-			tasks: [
-				{
-					id: "14EEFF310A3179A8"
-					item: "tfg:interplanetary_item_launcher"
-					type: "item"
-				}
-				{
-					id: "5F95946B3B0E38B9"
-					item: "tfg:interplanetary_item_reciever"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5009A382342496F7"
+				title: "{quests.space_survival.railgun.task}"
+				type: "checkmark"
+			}]
 			title: "{quests.space_survival.railgun.title}"
 			x: 2.0d
-			y: -0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["72BD27FEEB34C7B0"]
@@ -521,6 +518,188 @@
 			}]
 			x: -7.0d
 			y: -5.5d
+		}
+		{
+			dependencies: ["1A9A5F55F1F0AC58"]
+			description: [
+				"{quests.space_survival.raiinterplanetary_railgunlgun.desc.1}"
+				"{@pagebreak}"
+				"{quests.space_survival.raiinterplanetary_railgunlgun.desc.2}"
+			]
+			id: "783BB3FC5702DA8C"
+			subtitle: "{quests.space_survival.interplanetary_railgun.subtitle}"
+			tasks: [{
+				id: "71326452986A7C0F"
+				item: "tfg:interplanetary_item_launcher"
+				type: "item"
+			}]
+			title: "{quests.space_survival.interplanetary_railgun.title}"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1A9A5F55F1F0AC58"]
+			description: [
+				"{quests.space_survival.monitor_railgun.desc.1}"
+				"{@pagebreak}"
+				"{quests.space_survival.monitor_railgun.desc.2}"
+			]
+			id: "498E559B9C37D2CA"
+			subtitle: "{quests.space_survival.monitor_railgun.subtitle}"
+			tasks: [{
+				id: "43304A46FD2DFB41"
+				item: "tfg:interplanetary_logistics_monitor"
+				type: "item"
+			}]
+			title: "{quests.space_survival.monitor_railgun.title}"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1A9A5F55F1F0AC58"]
+			description: [
+				"{quests.space_survival.receiver_railgun.desc.1}"
+				"{@pagebreak}"
+				"{quests.space_survival.receiver_railgun.desc.2}"
+			]
+			id: "71AD0B9C1FB7CE03"
+			subtitle: "{quests.space_survival.receiver_railgun.subtitle}"
+			tasks: [{
+				id: "4A43C3AAFA69E286"
+				item: "tfg:interplanetary_item_receiver"
+				type: "item"
+			}]
+			title: "{quests.space_survival.receiver_railgun.title}"
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"783BB3FC5702DA8C"
+				"498E559B9C37D2CA"
+			]
+			description: [
+				"{quests.space_survival.input_bus_railgun.desc.1}"
+				"{@pagebreak}"
+				"{quests.space_survival.input_bus_railgun.desc.2}"
+			]
+			id: "4FF2809A81DD4122"
+			subtitle: "{quests.space_survival.input_bus_railgun.subtitle}"
+			tasks: [{
+				id: "1F97F1BAE1DF7ADC"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:ulv_railgun_item_loader_in)item(tfg:lv_railgun_item_loader_in)item(tfg:mv_railgun_item_loader_in)item(tfg:hv_railgun_item_loader_in)item(tfg:ev_railgun_item_loader_in)item(tfg:iv_railgun_item_loader_in)item(tfg:luv_railgun_item_loader_in)item(tfg:zpm_railgun_item_loader_in)item(tfg:uv_railgun_item_loader_in)item(tfg:uhv_railgun_item_loader_in))"
+					}
+				}
+				title: "{quests.space_survival.input_bus_railgun.task}"
+				type: "item"
+			}]
+			title: "{quests.space_survival.input_bus_railgun.title}"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["783BB3FC5702DA8C"]
+			description: [
+				"{quests.space_survival.ammo_railgun.desc.1}"
+				"{@pagebreak}"
+				"{quests.space_survival.ammo_railgun.desc.2}"
+			]
+			id: "3BEEB11C8621772D"
+			subtitle: "{quests.space_survival.ammo_railgun.subtitle}"
+			tasks: [
+				{
+					id: "5E7152C67A1E685D"
+					item: "tfg:railgun_ammo_loader"
+					type: "item"
+				}
+				{
+					id: "36471CA165196EC9"
+					item: "tfg:railgun_ammo_shell"
+					type: "item"
+				}
+			]
+			title: "{quests.space_survival.ammo_railgun.title}"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["498E559B9C37D2CA"]
+			description: ["{quests.space_survival.redstone_railgun.desc}"]
+			icon: "minecraft:redstone_torch"
+			id: "0538DCD4D4811574"
+			subtitle: "{quests.space_survival.redstone_railgun.subtitle}"
+			tasks: [{
+				id: "63FFA0CBDDD635B9"
+				title: "{quests.space_survival.redstone_railgun.task}"
+				type: "checkmark"
+			}]
+			title: "{quests.space_survival.redstone_railgun.title}"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["498E559B9C37D2CA"]
+			description: ["{quests.space_survival.robot_arm_railgun.desc}"]
+			icon: "gtceu:hv_robot_arm"
+			id: "7118634C06AE1141"
+			subtitle: "{quests.space_survival.robot_arm_railgun.subtitle}"
+			tasks: [{
+				id: "6C995E2B46963E1E"
+				title: "{quests.space_survival.robot_arm_railgun.task}"
+				type: "checkmark"
+			}]
+			title: "{quests.space_survival.robot_arm_railgun.title}"
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"498E559B9C37D2CA"
+				"71AD0B9C1FB7CE03"
+			]
+			description: [
+				"{quests.space_survival.output_bus_railgun.desc.1}"
+				"{@pagebreak}"
+				"{quests.space_survival.output_bus_railgun.desc.2}"
+				"{@pagebreak}"
+				"{quests.space_survival.output_bus_railgun.desc.3}"
+			]
+			id: "5FB814261B0993C5"
+			subtitle: "{quests.space_survival.output_bus_railgun.subtitle}"
+			tasks: [{
+				id: "72D587D69470709E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:ulv_railgun_item_loader_out)item(tfg:lv_railgun_item_loader_out)item(tfg:mv_railgun_item_loader_out)item(tfg:hv_railgun_item_loader_out)item(tfg:ev_railgun_item_loader_out)item(tfg:iv_railgun_item_loader_out)item(tfg:luv_railgun_item_loader_out)item(tfg:zpm_railgun_item_loader_out)item(tfg:uv_railgun_item_loader_out)item(tfg:uhv_railgun_item_loader_out))"
+					}
+				}
+				title: "{quests.space_survival.output_bus_railgun.task}"
+				type: "item"
+			}]
+			title: "{quests.space_survival.output_bus_railgun.title}"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["498E559B9C37D2CA"]
+			description: ["{quests.space_survival.delay_railgun.desc}"]
+			icon: "create:cuckoo_clock"
+			id: "183AC1085D558086"
+			subtitle: "{quests.space_survival.delay_railgun.subtitle}"
+			tasks: [{
+				id: "119FD14202435E03"
+				title: "{quests.space_survival.delay_railgun.task}"
+				type: "checkmark"
+			}]
+			title: "{quests.space_survival.delay_railgun.title}"
+			x: 6.5d
+			y: 2.0d
 		}
 	]
 	subtitle: ["{quests.space_survival.subtitle}"]

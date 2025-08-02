@@ -869,14 +869,14 @@ const registerGTCEURecipes = (event) => {
 		.fluidOutput(Fluid.of('tfg:vulcanized_latex', 1000))
 		.id('tfg:pot/vulcanized_latex')
 
-	event.recipes.gtceu.chemical_reactor('tfg:/latex_to_vulcanized_latex')
-		.duration(200)
+	event.recipes.gtceu.chemical_reactor('tfg:latex_to_vulcanized_latex')
+		.duration(100)
 		.EUt(20)
 		.itemInputs('tfc:powder/sulfur')
 		.inputFluids(Fluid.of('tfg:latex', 1000))
 		.outputFluids(Fluid.of('tfg:vulcanized_latex', 1000))
 
-	event.recipes.gtceu.fluid_solidifier('tfg:/vulcanized_latex_to_raw_rubber_pulp')
+	event.recipes.gtceu.fluid_solidifier('tfg:vulcanized_latex_to_raw_rubber_pulp')
 		.duration(100)
 		.EUt(20)
 		.inputFluids(Fluid.of('tfg:vulcanized_latex', 1000))
@@ -1303,5 +1303,28 @@ const registerGTCEURecipes = (event) => {
 		E: 'gtceu:molybdenum_disilicide_spring',
 		F: 'gtceu:stainless_steel_huge_fluid_pipe'
 	}).id('tfg:shaped/large_centrifuge')
+
+	event.recipes.gtceu.extractor('tfg:logs_to_wood_gas')
+		.itemInputs('#minecraft:logs_that_burn')
+		.outputFluids('gtceu:wood_gas 100')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	
+	// Buttons
+	event.replaceOutput({ id: 'gtceu:cutter/blackstone_button' }, 'minecraft:polished_blackstone_button', '6x minecraft:polished_blackstone_button')
+	event.replaceOutput({ id: 'gtceu:cutter/blackstone_button_water' }, 'minecraft:polished_blackstone_button', '6x minecraft:polished_blackstone_button')
+	event.replaceOutput({ id: 'gtceu:cutter/blackstone_button_distilled_water' }, 'minecraft:polished_blackstone_button', '6x minecraft:polished_blackstone_button')
+	removeCutterRecipe(event, 'blackstone_button')
+	removeCutterRecipe(event, 'blackstone_button_water')
+	removeCutterRecipe(event, 'blackstone_button_distilled_water')
+
+	event.replaceOutput({ id: 'gtceu:cutter/bamboo_button' }, 'minecraft:bamboo_button', '6x minecraft:bamboo_button')
+	event.replaceOutput({ id: 'gtceu:cutter/bamboo_button_water' }, 'minecraft:bamboo_button', '6x minecraft:bamboo_button')
+	event.replaceOutput({ id: 'gtceu:cutter/bamboo_button_distilled_water' }, 'minecraft:bamboo_button', '6x minecraft:bamboo_button')
+
+	event.replaceOutput({ id: 'gtceu:cutter/treated_button' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
+	event.replaceOutput({ id: 'gtceu:cutter/treated_button_water' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
+	event.replaceOutput({ id: 'gtceu:cutter/treated_button_distilled_water' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
 
 }
