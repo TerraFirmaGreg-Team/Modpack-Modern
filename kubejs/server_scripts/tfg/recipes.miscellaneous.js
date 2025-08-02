@@ -1157,51 +1157,124 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.IV])
 	//endregion
 
-	// Universal compost
-	const COMPOST_COLORS = ['browns', 'greens'];
-	COMPOST_COLORS.forEach(color => {
+	//#region Universal compost
+
+	//Greens
 		// Lows via crafting with mortar
-		event.shapeless(Item.of(`tfg:universal_compost_${color}`, 1), [
-				Ingredient.of([`#tfc:compost_${color}_low`]).subtract([`tfg:universal_compost_${color}`]),
-				'#forge:tools/mortars'
-			])
-			.id(`tfg:shapeless/universal_compost_${color}_low`)
+		event.shaped(Item.of('tfg:universal_compost_greens', 1), [
+			'AB'
+		], {
+			A: Ingredient.of(['#tfc:compost_greens_low']).subtract(['tfg:universal_compost_greens']),
+			B: '#forge:tools/mortars'
+		}).id('tfg:shaped/universal_compost_greens_from_low')
 		
 		// Mediums via crafting with mortar
-		event.shapeless(Item.of(`tfg:universal_compost_${color}`, 2), [
-				`#tfc:compost_${color}`,
-				'#forge:tools/mortars'
-			])
-			.id(`tfg:shapeless/universal_compost_${color}_medium`)
+		event.shaped(Item.of('tfg:universal_compost_greens', 2), [
+			'AB'
+		], {
+			A: '#tfc:compost_greens',
+			B: '#forge:tools/mortars'
+		}).id('tfg:shaped/universal_compost_greens_from_medium')
 			
 		// Highs via crafting with mortar
-		event.shapeless(Item.of(`tfg:universal_compost_${color}`, 4), [
-				`#tfc:compost_${color}_high`,
-				'#forge:tools/mortars'
-			])
-			.id(`tfg:shapeless/universal_compost_${color}_high`)
+		event.shaped(Item.of('tfg:universal_compost_greens', 4), [
+			'AB'
+		], {
+			A: '#tfc:compost_greens_high',
+			B: '#forge:tools/mortars'
+		}).id('tfg:shaped/universal_compost_greens_from_high')
+
+		// Filters
+		const greens_low = Ingredient.of('#tfc:compost_greens_low')
+		const browns_low = Ingredient.of('#tfc:compost_browns_low').itemIds
+		const greens_medium = Ingredient.of('#tfc:compost_greens')
+		const browns_medium = Ingredient.of('#tfc:compost_browns').itemIds
+		const greens_high = Ingredient.of('#tfc:compost_greens_high')
+		const browns_high = Ingredient.of('#tfc:compost_browns_high').itemIds
+
+		let low_filtered = greens_low
+		let medium_filtered = greens_medium
+		let high_filtered = greens_high
+
+		browns_low.forEach(item => {
+			low_filtered = low_filtered.subtract(item)
+			low_filtered = low_filtered.subtract('tfg:universal_compost_greens')
+		})
+		browns_medium.forEach(item => {
+			medium_filtered = medium_filtered.subtract(item)
+		})
+		browns_high.forEach(item => {
+			high_filtered = high_filtered.subtract(item)
+		})
 
 		// Lows via forge hammer
-		event.recipes.gtceu.forge_hammer(`tfg:universal_compost_${color}_low`)
-			.itemInputs(Ingredient.of(`#tfc:compost_${color}_low`).subtract(`tfg:universal_compost_${color}`))
-			.itemOutputs(`tfg:universal_compost_${color}`)
+		event.recipes.gtceu.forge_hammer('tfg:universal_compost_greens_low')
+			.itemInputs(low_filtered)
+			.itemOutputs('tfg:universal_compost_greens')
 			.duration(20)
 			.EUt(8)
 		
 		// Mediums via forge hammer
-		event.recipes.gtceu.forge_hammer(`tfg:universal_compost_${color}_medium`)
-			.itemInputs(`#tfc:compost_${color}`)
-			.itemOutputs(Item.of(`tfg:universal_compost_${color}`, 2))
+		event.recipes.gtceu.forge_hammer('tfg:universal_compost_greens_medium')
+			.itemInputs(medium_filtered)
+			.itemOutputs(Item.of('tfg:universal_compost_greens', 2))
 			.duration(20)
 			.EUt(8)
 
 		// Highs via forge hammer
-		event.recipes.gtceu.forge_hammer(`tfg:universal_compost_${color}_high`)
-			.itemInputs(`#tfc:compost_${color}_high`)
-			.itemOutputs(Item.of(`tfg:universal_compost_${color}`, 4))
+		event.recipes.gtceu.forge_hammer('tfg:universal_compost_greens_high')
+			.itemInputs(high_filtered)
+			.itemOutputs(Item.of('tfg:universal_compost_greens', 4))
 			.duration(20)
 			.EUt(8)
-	})
+	
+	//Browns
+		// Lows via crafting with mortar
+		event.shaped(Item.of('tfg:universal_compost_browns', 1), [
+			'BA'
+		], {
+			A: Ingredient.of(['#tfc:compost_browns_low']).subtract(['tfg:universal_compost_browns']),
+			B: '#forge:tools/mortars'
+		}).id('tfg:shaped/universal_compost_browns_from_low')
+		
+		// Mediums via crafting with mortar
+		event.shaped(Item.of('tfg:universal_compost_browns', 2), [
+			'BA'
+		], {
+			A: '#tfc:compost_browns',
+			B: '#forge:tools/mortars'
+		}).id('tfg:shaped/universal_compost_browns_from_medium')
+			
+		// Highs via crafting with mortar
+		event.shaped(Item.of('tfg:universal_compost_browns', 4), [
+			'BA'
+		], {
+			A: '#tfc:compost_browns_high',
+			B: '#forge:tools/mortars'
+		}).id('tfg:shaped/universal_compost_browns_from_high')
+
+		// Lows via forge hammer
+		event.recipes.gtceu.forge_hammer('tfg:universal_compost_browns_low')
+			.itemInputs('#tfc:compost_browns_low')
+			.itemOutputs('tfg:universal_compost_browns')
+			.duration(20)
+			.EUt(8)
+		
+		// Mediums via forge hammer
+		event.recipes.gtceu.forge_hammer('tfg:universal_compost_browns_medium')
+			.itemInputs('#tfc:compost_browns')
+			.itemOutputs(Item.of('tfg:universal_compost_browns', 2))
+			.duration(20)
+			.EUt(8)
+
+		// Highs via forge hammer
+		event.recipes.gtceu.forge_hammer('tfg:universal_compost_browns_high')
+			.itemInputs('#tfc:compost_browns_high')
+			.itemOutputs(Item.of('tfg:universal_compost_browns', 4))
+			.duration(20)
+			.EUt(8)
+
+	//#endregion
 
 	// Etching Tip
 	event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless('tfg:etching_diamond_tip',[
