@@ -2010,12 +2010,14 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.assembler('create:goggles')
 		.itemInputs('2x #forge:rings/brass', '#forge:leather', '2x tfc:lens')
 		.itemOutputs('create:goggles')
+		.circuit(10)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.assembler('create:goggles_rubber')
 		.itemInputs('2x #forge:rings/brass', '#forge:foils/rubber', '2x tfc:lens')
 		.itemOutputs('create:goggles')
+		.circuit(10)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
