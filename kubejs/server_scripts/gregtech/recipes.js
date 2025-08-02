@@ -1304,4 +1304,9 @@ const registerGTCEURecipes = (event) => {
 		F: 'gtceu:stainless_steel_huge_fluid_pipe'
 	}).id('tfg:shaped/large_centrifuge')
 
+	event.recipes.gtceu.extractor('tfg:logs_to_wood_gas')
+		.itemInputs('#minecraft:logs_that_burn')
+		.outputFluids('gtceu:wood_gas 100')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
 }
