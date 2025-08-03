@@ -1,9 +1,15 @@
 # Changelog
-
 ## [Unreleased]
+### Changes
+### Bug fixes
+
+## [0.10.5] - 03-08-2025
 ### Major changes
 - New major GregTech version! Read all about its new changes [here](https://github.com/GregTechCEu/GregTech-Modern/releases), and please report any issues you find! @gustovafing
 - Added initial implementation of interplanetary logistics @gustovafing
+### Known issues
+- Some items have multiple, incorrect recycling recipes
+- Steam machines use twice as much steam as they're supposed to
 ### Other changes
 - Added universal compost items, for more efficient storage of compostables @Vazde @Redeix
 - Vanilla moss blocks/carpet are now compostable @Pyritie
