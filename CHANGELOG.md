@@ -26,6 +26,7 @@
 - Added recipes for more train tracks @Pyritie
 - Added a recipe to get Wood Gas for your food processor in LV (#1491) @Pyritie
 - Regular thorium is also now weakly radioactive @Pyritie
+- Added grape trellises to the list of plants harvestable by baskets (#1510) @Redeix
 ### Bug fixes
 - Some bug fixes for the electric refrigerators @gustovafing
 - Fixed not being able to craft fine wire in a coiling machine for materials that didn't also have normal wire @Pyritie
