@@ -745,7 +745,6 @@
 				item: "gtceu:large_solar_panel"
 				type: "item"
 			}]
-			title: "{quests.gregtech_energy.large_solar.title}"
 			x: -6.0d
 			y: -1.0d
 		}
@@ -1016,6 +1015,42 @@
 			}]
 			x: -4.5d
 			y: -1.0d
+		}
+		{
+			dependencies: [
+				"0585527D1854628B"
+				"05E2F203DA46A5E8"
+			]
+			description: [
+				"{quests.gregtech_energy.large_solar_t2.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.large_solar_t2.desc.2}"
+			]
+			id: "3AEAB1930F4CC034"
+			subtitle: "{quests.gregtech_energy.large_solar_t2.subtitle}"
+			tasks: [{
+				id: "149BF93064D121D3"
+				item: "gtceu:large_solar_panel_tier2"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3AEAB1930F4CC034"
+				"1DB543EFEEB67238"
+			]
+			description: ["{quests.gregtech_energy.large_solar_t3.desc}"]
+			id: "7CA3A5EFE3D5B688"
+			subtitle: "{quests.gregtech_energy.large_solar_t3.subtitle}"
+			tasks: [{
+				id: "612817A7FA759E03"
+				item: "gtceu:large_solar_panel_tier3"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
 		}
 	]
 	subtitle: ["{quests.gregtech_energy.subtitle}"]
