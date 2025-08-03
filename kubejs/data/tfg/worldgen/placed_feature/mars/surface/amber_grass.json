@@ -1,0 +1,16 @@
+{
+	"feature": "tfg:mars/surface/amber_grass",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 8
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE"
+		}
+	]
+}

@@ -1,5 +1,5 @@
 {
-  "type": "ad_astra:mars",
+  "type": "tfg:mars",
   "generator": {
     "type": "kubejs_tfc:wrapped",
     "event_key": "mars",

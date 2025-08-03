@@ -253,7 +253,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.fluid_solidifier('tfg:ice')
-		.inputFluids(JsonIO.of({ amount: 144, value: { tag: "tfg:clean_water" } }))
+		.inputFluids("#tfg:clean_water 144")
 		.notConsumable('gtceu:block_casting_mold')
 		.itemOutputs('minecraft:ice')
 		.duration(200)
@@ -263,7 +263,7 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.recipes.gtceu.mixer('tfg:ice_slush_from_dry_ice')
 		.itemInputs('1x tfg:dry_ice')
-		.inputFluids( JsonIO.of({ amount: 8000, value: { tag: "tfc:water" }}))
+		.inputFluids("#tfc:water 8000")
 		.outputFluids(Fluid.of('gtceu:ice', 8000))
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -467,7 +467,7 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.recipes.gtceu.mixer('tfg:clean_foil_pack')
 		.itemInputs('1x tfg:used_foil_pack')
-		.inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfg:clean_water" } }))
+		.inputFluids("#tfg:clean_water 100")
 		.itemOutputs('1x tfg:clean_foil_pack')
 		.duration(200)
 		.circuit(1)
@@ -548,28 +548,28 @@ function registerTFGMiscellaneousRecipes(event) {
 	// Biofuels
 
 	event.recipes.gtceu.chemical_reactor(`seed_oil_alcohol_biodiesel`)
-		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
+		.inputFluids("#tfc:alcohols 1000")
 		.inputFluids(Fluid.of('gtceu:seed_oil', 6000))
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
 		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_reactor(`olive_oil_alcohol_biodiesel`)
-		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
+		.inputFluids("#tfc:alcohols 1000")
 		.inputFluids(Fluid.of('tfc:olive_oil', 4000))
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
 		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_reactor(`soybean_oil_alcohol_biodiesel`)
-		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
+		.inputFluids("#tfc:alcohols 1000")
 		.inputFluids(Fluid.of('firmalife:soybean_oil', 4000))
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
 		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_reactor(`fish_oil_alcohol_biodiesel`)
-		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
+		.inputFluids("#tfc:alcohols 1000")
 		.inputFluids(Fluid.of('gtceu:fish_oil', 6000))
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
 		.duration(20 * 10)
@@ -1010,4 +1010,13 @@ function registerTFGMiscellaneousRecipes(event) {
 			.duration(20)
 			.EUt(8)
 	})
+
+	// Etching Tip
+	event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless('tfg:etching_diamond_tip',[
+		'#forge:tools/hammers',
+		'#tfc:chisels',
+		'minecraft:diamond'
+	]));
+
+	event.replaceInput({ id: "minecraft:jukebox"}, 'minecraft:diamond', 'tfg:etching_diamond_tip');
 }

@@ -1,0 +1,14 @@
+{
+	"variants": {
+		"": [
+			{ "model": "betterend:block/cave_grass_01" },
+			{ "model": "betterend:block/cave_grass_02" },
+			{ "model": "betterend:block/cave_grass_03" },
+			{ "model": "betterend:block/cave_grass_04" },
+			{ "model": "betterend:block/cave_grass_05" },
+			{ "model": "betterend:block/cave_grass_06" },
+			{ "model": "betterend:block/cave_grass_07" },
+			{ "model": "betterend:block/cave_grass_08" }
+		]
+	}
+}

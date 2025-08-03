@@ -1,0 +1,18 @@
+{
+    "variants": {
+        "": [
+			{ "model": "betterend:block/bolux_mushroom_1" },
+			{ "model": "betterend:block/bolux_mushroom_2" },
+			{ "model": "betterend:block/bolux_mushroom_3" },
+			{ "model": "betterend:block/bolux_mushroom_1", "y": 90 },
+			{ "model": "betterend:block/bolux_mushroom_2", "y": 90 },
+			{ "model": "betterend:block/bolux_mushroom_3", "y": 90 },
+			{ "model": "betterend:block/bolux_mushroom_1", "y": 180 },
+			{ "model": "betterend:block/bolux_mushroom_2", "y": 180 },
+			{ "model": "betterend:block/bolux_mushroom_3", "y": 180 },
+			{ "model": "betterend:block/bolux_mushroom_1", "y": 270 },
+			{ "model": "betterend:block/bolux_mushroom_2", "y": 270 },
+			{ "model": "betterend:block/bolux_mushroom_3", "y": 270 }
+		]
+    }
+}

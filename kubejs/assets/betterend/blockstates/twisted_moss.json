@@ -1,0 +1,24 @@
+{
+    "variants": {
+        "facing=north":  [
+			{ "model": "betterend:block/twisted_moss_01", "y": 180 },
+			{ "model": "betterend:block/twisted_moss_02", "y": 180 },
+			{ "model": "betterend:block/twisted_moss_03", "y": 180 }
+		],
+        "facing=south":  [
+			{ "model": "betterend:block/twisted_moss_01" },
+			{ "model": "betterend:block/twisted_moss_02" },
+			{ "model": "betterend:block/twisted_moss_03" }
+		],
+        "facing=east":  [
+			{ "model": "betterend:block/twisted_moss_01", "y": 270 },
+			{ "model": "betterend:block/twisted_moss_02", "y": 270 },
+			{ "model": "betterend:block/twisted_moss_03", "y": 270 }
+		],
+        "facing=west":  [
+			{ "model": "betterend:block/twisted_moss_01", "y": 90 },
+			{ "model": "betterend:block/twisted_moss_02", "y": 90 },
+			{ "model": "betterend:block/twisted_moss_03", "y": 90 }
+		]
+    }
+}

@@ -48,5 +48,9 @@ global.BENEATH_DISABLED_ITEMS = [
 	"beneath:wood/boat/warped",
 	
 	"beneath:wood/leaves/crimson",
+	"beneath:wood/fallen_leaves/crimson",
+	"beneath:wood/sapling/crimson",
 	"beneath:wood/leaves/warped",
+	"beneath:wood/fallen_leaves/warped",
+	"beneath:wood/sapling/warped"
 ];

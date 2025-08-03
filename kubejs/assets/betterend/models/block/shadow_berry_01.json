@@ -1,0 +1,19 @@
+{
+	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "betterend:block/shadow_berry",
+		"texture": "betterend:block/shadow_berry",
+		"texture1": "betterend:block/shadow_berry_leaves"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "PlaneY4",
+			"from": [ 0, 0.5, 0 ],
+			"to": [ 16, 0.501, 16 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture1" },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture1" }
+			}
+		}
+	]
+}

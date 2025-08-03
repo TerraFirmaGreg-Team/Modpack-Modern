@@ -1,0 +1,23 @@
+{
+	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "betterend:block/hydralux_flower_bud_petal_side",
+		"texture": "betterend:block/hydralux_flower_bud_petal_side",
+		"petal_top": "betterend:block/hydralux_flower_bud_petal_top"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Box4",
+			"from": [ 3, 0, 3 ],
+			"to": [ 13, 8, 13 ],
+			"shade": false,
+			"faces": {
+				"up": { "uv": [ 3, 3, 13, 13 ], "texture": "#petal_top" },
+				"north": { "uv": [ 3, 0, 13, 8 ], "texture": "#texture" },
+				"south": { "uv": [ 3, 0, 13, 8 ], "texture": "#texture" },
+				"west": { "uv": [ 3, 0, 13, 8 ], "texture": "#texture" },
+				"east": { "uv": [ 3, 0, 13, 8 ], "texture": "#texture" }
+			}
+		}
+	]
+}

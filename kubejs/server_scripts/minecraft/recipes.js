@@ -42,7 +42,7 @@ const registerMinecraftRecipes = (event) => {
 
 			event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_block_${element.name}`)
 				.itemInputs(element.block)
-				.inputFluids(JsonIO.of({ amount: 150, value: { tag: "tfc:any_water" }}))
+				.inputFluids("#tfc:any_water 150")
 				.circuit(1)
 				.itemOutputs(element2.block)
 				.duration(1000)
@@ -50,7 +50,7 @@ const registerMinecraftRecipes = (event) => {
 
 			event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_cutted_${element.name}`)
 				.itemInputs(element.cutted)
-				.inputFluids(JsonIO.of({ amount: 150, value: { tag: "tfc:any_water" }}))
+				.inputFluids("#tfc:any_water 150")
 				.circuit(1)
 				.itemOutputs(element2.cutted)
 				.duration(1000)
@@ -58,7 +58,7 @@ const registerMinecraftRecipes = (event) => {
 
 			event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_stairs_${element.name}`)
 				.itemInputs(element.stairs)
-				.inputFluids(JsonIO.of({ amount: 150, value: { tag: "tfc:any_water" }}))
+				.inputFluids("#tfc:any_water 150")
 				.circuit(1)
 				.itemOutputs(element2.stairs)
 				.duration(1000)
@@ -66,7 +66,7 @@ const registerMinecraftRecipes = (event) => {
 
 			event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_slabs_${element.name}`)
 				.itemInputs(element.slabs)
-				.inputFluids(JsonIO.of({ amount: 150, value: { tag: "tfc:any_water" }}))
+				.inputFluids("#tfc:any_water 150")
 				.circuit(1)
 				.itemOutputs(element2.slabs)
 				.duration(1000)
@@ -153,7 +153,7 @@ const registerMinecraftRecipes = (event) => {
 
 	event.recipes.gtceu.chemical_bath('paper_from_papyrus')
 		.itemInputs('tfc:papyrus')
-		.inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfg:clean_water" }}))
+		.inputFluids("#tfg:clean_water 100")
 		.itemOutputs('minecraft:paper')
 		.duration(100)
 		.EUt(7)
@@ -164,7 +164,7 @@ const registerMinecraftRecipes = (event) => {
 
 	event.recipes.gtceu.centrifuge('sugar_from_sugarcane')
 		.itemInputs('tfc:food/sugarcane')
-		.inputFluids(JsonIO.of({ amount: 600, value: { tag: "tfg:clean_water" }}))
+		.inputFluids("#tfg:clean_water 600")
 		.itemOutputs('minecraft:sugar', 'gtceu:plant_ball')
 		.duration(800)
 		.EUt(6)
@@ -230,9 +230,9 @@ const registerMinecraftRecipes = (event) => {
 
 	event.recipes.gtceu.chemical_reactor('minecraft:gtceu/chemical_reactor/sponge')
 		.itemInputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.SodiumBisulfate, 1))
-		.inputFluids(Fluid.of('gtceu:polyethylene', 144), JsonIO.of({ amount: 250, value: { tag: "tfg:clean_water" }}))
+		.inputFluids('gtceu:polyethylene 144', "#tfg:clean_water 250")
 		.itemOutputs('2x minecraft:sponge')
-		.outputFluids(Fluid.of('gtceu:sodium_persulfate', 35))
+		.outputFluids('gtceu:sodium_persulfate 35')
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.LV])
 

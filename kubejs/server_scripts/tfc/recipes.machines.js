@@ -312,8 +312,7 @@ function registerTFCMachineRecipes(event) {
 		.EUt(4)
 
 	// Jute Fiber
-	generateMixerRecipe(event, 'tfc:jute', 
-		JsonIO.of({ amount: 200, value: { tag: "tfg:clean_water" }}),
+	generateMixerRecipe(event, 'tfc:jute', "#tfg:clean_water 200",
 		'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
 
 	// Ceramic Recycling

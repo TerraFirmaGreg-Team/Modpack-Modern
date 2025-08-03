@@ -123,6 +123,7 @@ const registerCreateFluidTags = (event) => {
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:river_water')
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:salt_water')
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:spring_water')
+	event.add('create:fan_processing_catalysts/splashing', 'tfg:semiheavy_ammoniacal_water')
 
 	//Hose Pulley Infinites
 	event.add('create:bottomless/allow', 'tfg:semiheavy_ammoniacal_water')

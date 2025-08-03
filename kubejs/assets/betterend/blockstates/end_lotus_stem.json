@@ -1,0 +1,46 @@
+{
+	"variants": {
+		"leaf=false,shape=top,facing=north": { "model": "betterend:block/end_lotus_stem_top" },
+		"leaf=false,shape=top,facing=south": { "model": "betterend:block/end_lotus_stem_top" },
+		"leaf=false,shape=top,facing=east": { "model": "betterend:block/end_lotus_stem_top" },
+		"leaf=false,shape=top,facing=west": { "model": "betterend:block/end_lotus_stem_top" },
+		"leaf=false,shape=top,facing=up": { "model": "betterend:block/end_lotus_stem_top" },
+		"leaf=false,shape=top,facing=down": { "model": "betterend:block/end_lotus_stem_top" },
+		
+		"leaf=false,shape=bottom,facing=north": { "model": "betterend:block/end_lotus_roots" },
+		"leaf=false,shape=bottom,facing=south": { "model": "betterend:block/end_lotus_roots" },
+		"leaf=false,shape=bottom,facing=east": { "model": "betterend:block/end_lotus_roots" },
+		"leaf=false,shape=bottom,facing=west": { "model": "betterend:block/end_lotus_roots" },
+		"leaf=false,shape=bottom,facing=up": { "model": "betterend:block/end_lotus_roots" },
+		"leaf=false,shape=bottom,facing=down": { "model": "betterend:block/end_lotus_roots" },
+		
+		"leaf=false,shape=middle,facing=north": { "model": "betterend:block/end_lotus_stem", "x": 90 },
+		"leaf=false,shape=middle,facing=south": { "model": "betterend:block/end_lotus_stem", "x": 90 },
+		"leaf=false,shape=middle,facing=east": { "model": "betterend:block/end_lotus_stem", "x": 90, "y": 90 },
+		"leaf=false,shape=middle,facing=west": { "model": "betterend:block/end_lotus_stem", "x": 90, "y": 90 },
+		"leaf=false,shape=middle,facing=up": { "model": "betterend:block/end_lotus_stem" },
+		"leaf=false,shape=middle,facing=down": { "model": "betterend:block/end_lotus_stem" },
+		
+		"leaf=true,shape=middle,facing=north": { "model": "betterend:block/end_lotus_stem_leaf", "y": 180 },
+		"leaf=true,shape=middle,facing=south": { "model": "betterend:block/end_lotus_stem_leaf" },
+		"leaf=true,shape=middle,facing=east": { "model": "betterend:block/end_lotus_stem_leaf", "y": 270 },
+		"leaf=true,shape=middle,facing=west": { "model": "betterend:block/end_lotus_stem_leaf", "y": 90 },
+		
+		"leaf=true,shape=middle,facing=up": { "model": "betterend:block/end_lotus_stem" },
+		"leaf=true,shape=middle,facing=down": { "model": "betterend:block/end_lotus_stem" },
+		
+		"leaf=true,shape=top,facing=north": { "model": "betterend:block/end_lotus_stem_top_leaf", "y": 180 },
+		"leaf=true,shape=top,facing=east": { "model": "betterend:block/end_lotus_stem_top_leaf", "y": 270 },
+		"leaf=true,shape=top,facing=south": { "model": "betterend:block/end_lotus_stem_top_leaf" },
+		"leaf=true,shape=top,facing=west": { "model": "betterend:block/end_lotus_stem_top_leaf", "y": 90 },
+		"leaf=true,shape=top,facing=up": { "model": "betterend:block/end_lotus_stem" },
+		"leaf=true,shape=top,facing=down": { "model": "betterend:block/end_lotus_stem" },
+		
+		"leaf=true,shape=bottom,facing=north": { "model": "betterend:block/end_lotus_stem" },
+		"leaf=true,shape=bottom,facing=east": { "model": "betterend:block/end_lotus_stem" },
+		"leaf=true,shape=bottom,facing=south": { "model": "betterend:block/end_lotus_stem" },
+		"leaf=true,shape=bottom,facing=west": { "model": "betterend:block/end_lotus_stem" },
+		"leaf=true,shape=bottom,facing=up": { "model": "betterend:block/end_lotus_stem" },
+		"leaf=true,shape=bottom,facing=down": { "model": "betterend:block/end_lotus_stem" }
+	}
+}
