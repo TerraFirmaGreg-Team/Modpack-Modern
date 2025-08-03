@@ -911,6 +911,7 @@ global.TFC_MEAT_RECIPE_COMPONENTS = [
     { input: 'tfc:food/hyena', output: 'tfc:food/cooked_hyena', name: 'cooked_hyena' }, 
     { input: 'tfc:food/duck', output: 'tfc:food/cooked_duck', name: 'cooked_duck' }, 
     { input: 'tfc:food/chevon', output: 'tfc:food/cooked_chevon', name: 'cooked_chevon' },
+    { input: 'tfc:food/fox', output: 'tfc:food/cooked_fox', name: 'cooked_fox' },
     { input: '#forge:eggs', output: 'tfc:food/cooked_egg', name: 'cooked_egg' },
 
     { input: 'minecraft:chorus_fruit', output: 'minecraft:popped_chorus_fruit', name: 'popped_chorus_fruit' },
@@ -1060,15 +1061,15 @@ global.TFC_CURDS_AND_CHEESES = [
 ];
 
 global.TFC_ALCOHOL = [
-    {id: 'tfc:beer'},
-    {id: 'tfc:cider'},
-    {id: 'tfc:rum'},
-    {id: 'tfc:sake'},
-    {id: 'tfc:vodka'},
-    {id: 'tfc:whiskey'},
-    {id: 'tfc:corn_whiskey'},
-    {id: 'tfc:rye_whiskey'},
-    {id: 'firmalife:mead'},
+    {id: 'tfc:beer', ingredient: 'tfc:food/barley_flour'},
+    {id: 'tfc:cider', ingredient: '#tfc:foods/apples'},
+    {id: 'tfc:rum', ingredient: '#tfg:sugars'},
+    {id: 'tfc:sake', ingredient: 'tfc:food/rice_flour'},
+    {id: 'tfc:vodka', ingredient: 'tfc:food/potato'},
+    {id: 'tfc:whiskey', ingredient: 'tfc:food/wheat_flour'},
+    {id: 'tfc:corn_whiskey', ingredient: 'tfc:food/maize_flour'},
+    {id: 'tfc:rye_whiskey', ingredient: 'tfc:food/rye_flour'},
+    {id: 'firmalife:mead', ingredient: 'firmalife:raw_honey'},
 ];
 
 global.TFC_MAGMA_BLOCKS = [
@@ -1083,13 +1084,13 @@ global.TFC_MAGMA_BLOCKS = [
 
 global.calcAmountOfMetal = (defaultAmount, percents) => {
     const value = defaultAmount / (100 / percents)
-    return (value % 2 == 0) ? value : Math.round(value) - 1
+    return (value % 2 === 0) ? value : Math.round(value) - 1
 }
 
 // This prevents the "exploit" where Cassiterite dust gives 2x as much from melting as smelting in a furnace
 global.calcAmountOfMetalProcessed = (defaultAmount, percents) => {
     const percentPerItem = percents / Math.ceil(percents / 100)
     const value = defaultAmount * (percentPerItem / 100)
-    return (value % 2 == 0) ? value : Math.round(value) - 1
+    return (value % 2 === 0) ? value : Math.round(value) - 1
 }
 

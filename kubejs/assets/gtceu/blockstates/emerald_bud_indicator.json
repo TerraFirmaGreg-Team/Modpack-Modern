@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"": [
+			{ "model": "gtceu:block/emerald_bud_indicator" },
+			{ "model": "gtceu:block/emerald_bud_indicator", "y": 90 },
+			{ "model": "gtceu:block/emerald_bud_indicator", "y": 180 },
+			{ "model": "gtceu:block/emerald_bud_indicator", "y": 270 }
+		]
+	}
+}

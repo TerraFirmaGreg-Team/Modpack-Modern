@@ -25,7 +25,7 @@ const registerCreateItemTags = (event) => {
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		event.add('tfg:colored_valve_handles', `create:${dye}_valve_handle`)
 
-		if (dye != 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
+		if (dye !== 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
 	})
 
 	event.add('minecraft:trimmable_armor', 'create:copper_diving_helmet')
@@ -85,7 +85,7 @@ const registerCreateBlockTags = (event) => {
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		event.add('tfg:colored_valve_handles', `create:${dye}_valve_handle`)
 
-		if (dye != 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
+		if (dye !== 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
 	})
 
 	// Disable bulk blasting
@@ -123,6 +123,7 @@ const registerCreateFluidTags = (event) => {
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:river_water')
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:salt_water')
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:spring_water')
+	event.add('create:fan_processing_catalysts/splashing', 'tfg:semiheavy_ammoniacal_water')
 
 	//Hose Pulley Infinites
 	event.add('create:bottomless/allow', 'tfg:semiheavy_ammoniacal_water')

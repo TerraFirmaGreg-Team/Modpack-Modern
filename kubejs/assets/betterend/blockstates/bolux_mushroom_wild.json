@@ -1,0 +1,21 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "betterend:block/bolux_mushroom_3"
+			},
+			{
+				"model": "betterend:block/bolux_mushroom_3",
+				"y": 90
+			},
+			{
+				"model": "betterend:block/bolux_mushroom_3",
+				"y": 180
+			},
+			{
+				"model": "betterend:block/bolux_mushroom_3",
+				"y": 270
+			}
+		]
+	}
+}

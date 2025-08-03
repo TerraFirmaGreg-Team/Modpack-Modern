@@ -134,14 +134,21 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:iv_damascus_steel_drill',
     'gtceu:lv_damascus_steel_chainsaw',
     'gtceu:damascus_steel_buzzsaw',
-    'gtceu:lv_damascus_steel_wirecutter',
-    'gtceu:hv_damascus_steel_wirecutter',
-    'gtceu:iv_damascus_steel_wirecutter',
-    'gtceu:lv_damascus_steel_wrench',
-    'gtceu:hv_damascus_steel_wrench',
-    'gtceu:iv_damascus_steel_wrench',
-    'gtceu:lv_damascus_steel_screwdriver',
     'gtceu:damascus_steel_bucket',
+
+    //armor
+    'gtceu:bronze_helmet',
+    'gtceu:bronze_chestplate',
+    'gtceu:bronze_leggings',
+    'gtceu:bronze_boots',
+    'gtceu:steel_helmet',
+    'gtceu:steel_chestplate',
+    'gtceu:steel_leggings',
+    'gtceu:steel_boots',
+    'gtceu:titanium_helmet',
+    'gtceu:titanium_chestplate',
+    'gtceu:titanium_leggings',
+    'gtceu:titanium_boots',
 
     // Huh
     'gtceu:wax_dust',
@@ -187,7 +194,14 @@ global.GTCEU_HIDED_ITEMS = [
     'gtceu:netherrack_dust', 
     'gtceu:small_netherrack_dust', 
     'gtceu:tiny_netherrack_dust',
-    
+     'gtceu:lv_damascus_steel_wirecutter',
+    'gtceu:hv_damascus_steel_wirecutter',
+    'gtceu:iv_damascus_steel_wirecutter',
+    'gtceu:lv_damascus_steel_wrench',
+    'gtceu:hv_damascus_steel_wrench',
+    'gtceu:iv_damascus_steel_wrench',
+    'gtceu:lv_damascus_steel_screwdriver',
+
     'gtceu:sus_record'
 ];
 //#endregion
@@ -203,8 +217,7 @@ global.GTCEU_ARMORS = [
 	'gtceu:nanomuscle_leggings',
 	'gtceu:nanomuscle_boots',
 	'gtceu:nanomuscle_helmet',
-	// typo in gtceu
-	'gtceu:avanced_nanomuscle_chestplate',
+	'gtceu:advanced_nanomuscle_chestplate',
 	'gtceu:quarktech_chestplate',
 	'gtceu:quarktech_leggings',
 	'gtceu:quarktech_boots',

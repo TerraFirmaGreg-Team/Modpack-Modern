@@ -1,10 +1,15 @@
 // priority: 0
 "use strict";
 
+/**
+ * 
+ * @param {Registry.Item} event 
+ */
 const registerTFGItems = (event) => {
 
 	registerTFGDeprecatedItems(event)
 	registerTFGFoodItems(event)
+	registerTFGNuclearItems(event)
 
 	// #region Electronics
 	event.create('tfg:unfinished_electron_tube', 'create:sequenced_assembly')
@@ -50,8 +55,7 @@ const registerTFGItems = (event) => {
 	event.create('tfg:unfired_chalk')
 		.translationKey('item.tfg.unfired_chalk')
 
-	Color.DYE.forEach((dyeName, dye) =>
-	{
+	Color.DYE.forEach((dyeName, dye) => {
 		event.create(`tfg:wet_${dyeName}_chalk`)
 		.translationKey(`item.tfg.wet_${dyeName}_chalk`)
 		.textureJson({
@@ -336,7 +340,7 @@ const registerTFGItems = (event) => {
 		.translationKey('tfg:nitrocellulose')
 	//endregion
 	
-	//RockWool
+	//Tier2 Insulation
 	event.create('tfg:aes_wool')
 		.translationKey('tfg:aes_wool')
 	event.create('tfg:aes_compressed_wool')
@@ -349,11 +353,39 @@ const registerTFGItems = (event) => {
 	
 	//Tier 2 Rocket Parts
 	event.create('tfg:rocket_fin_t2')
-		.translationKey('tfg:rocket_fin_t2')
 	event.create('tfg:rocket_cone_t2')
-		.translationKey('tfg:rocket_cone_t2')
 	//endregion
-}
-
 	
+	//Tier 3 Insulation
+	event.create('tfg:aes_polyurethane')
+	event.create('tfg:mli_shielding')
+	event.create('tfg:silica_aerogel')
+	//endregion
+	
+	//Tier 3 Rocket Parts
+	event.create('tfg:rocket_fin_t3')
+	event.create('tfg:rocket_cone_t3')
+	event.create('tfg:elite_power_thruster')
+	
+	event.create('tfg:better_space_suit_fabric')
+	//endregion
 
+	//#region Universal compost items
+	event.create('tfg:universal_compost_browns')
+		.tag('tfc:compost_browns_low')
+
+	event.create('tfg:universal_compost_greens')
+		.tag('tfc:compost_greens_low')
+	//#endregion
+
+	//#region Etched Diamond Etching Tip
+	event.create('tfg:etching_diamond_tip')
+		.translationKey("item.tfg.etching_diamond_tip")
+	//#endregion
+
+	//#region Solar Panel
+
+	event.create('tfg:photo_cell_t1')
+		.translationKey("item.tfg.basic.photovoltaic.cell")
+		.texture('tfg:item/photo_cell_t1')
+}

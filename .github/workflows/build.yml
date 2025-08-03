@@ -190,7 +190,7 @@ jobs:
             ```
 
       - name: 📝 Generate Github Summary
-        uses: WcAServices/markdown-template-action@v1.1.0
+        uses: WcAServices/markdown-template-action@v1.1.1
         with:
           template: |
             📃 **Name**: ${{ steps.check.outputs.project_name }}

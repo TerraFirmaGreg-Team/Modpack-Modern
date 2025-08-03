@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "shape=top": [
+			{ "model": "betterend:block/end_lily_top" },
+			{ "model": "betterend:block/end_lily_top_small" },
+			{ "model": "betterend:block/end_lily_top_small_2" }
+		],
+        "shape=middle": { "model": "betterend:block/end_lily_stem" },
+        "shape=bottom": { "model": "betterend:block/end_lily_roots" }
+    }
+}

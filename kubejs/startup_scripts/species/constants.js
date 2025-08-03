@@ -6,7 +6,6 @@ global.SPECIES_DISABLED_BLOCKS = [
 	'species:bone_bark',
 	'species:bone_vertebra',
 	'species:bone_spike',
-	'species:alphacene_moss_block',
 	'species:alphacene_moss_carpet',
 	'species:alphacene_grass_block',
 	'species:cruncher_pellet',

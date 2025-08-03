@@ -249,6 +249,7 @@ ServerEvents.recipes(event => {
 	registerSpeciesRecipes(event)
 	registerTACZRecipes(event)
 	registerTFCRecipes(event)
+	registerTFCAmbientalRecipes(event)
 	registerTFCBetterBFRecipes(event)
 	registerTFCLunchBoxRecipes(event)
 	registerTFCGroomingStationRecipes(event)
@@ -271,3 +272,13 @@ TaCZServerEvents.ammoIndexLoad((event) => {
 TaCZServerEvents.attachmentIndexLoad((event) => {
 	attachmentIndexLogic(event)
 })
+
+TaCZServerEvents.gunDataLoad((event) => {
+	gunDataLogic(event)
+})
+
+TaCZServerEvents.attachmentDataLoad((event) => {
+	attachmentDataLogic(event)
+})
+
+

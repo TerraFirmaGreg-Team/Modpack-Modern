@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "gtceu:machine",
+  "machine": "tfg:interplanetary_item_receiver",
+  "texture_overrides": {
+    "all": "tfg:block/casings/machine_casing_aluminium_plated_steel"
+  },
+  "variants": {
+    "is_formed=false": {
+      "model": {
+        "parent": "gtceu:block/machine/template/cube_all/sided",
+        "textures": {
+          "all": "tfg:block/casings/machine_casing_aluminium_plated_steel",
+          "overlay_front": "tfg:block/machines/interplanetary_item_receiver/overlay_front",
+          "overlay_front_emissive": "tfg:block/machines/interplanetary_item_receiver/overlay_front_emissive"
+        }
+      }
+    },
+    "is_formed=true": {
+      "model": {
+        "parent": "gtceu:block/machine/template/cube_all/sided",
+        "textures": {
+          "all": "tfg:block/casings/machine_casing_aluminium_plated_steel",
+          "overlay_front": "tfg:block/machines/interplanetary_item_receiver/overlay_front_active",
+          "overlay_front_emissive": "tfg:block/machines/interplanetary_item_receiver/overlay_front_active_emissive"
+        }
+      }
+    }
+  }
+}

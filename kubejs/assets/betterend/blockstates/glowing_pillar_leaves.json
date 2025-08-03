@@ -1,0 +1,26 @@
+{
+    "variants": {
+        "facing=north":  [
+			{ "model": "betterend:block/glowing_pillar_leaves_01", "y": 180 },
+			{ "model": "betterend:block/glowing_pillar_leaves_02", "y": 180 },
+			{ "model": "betterend:block/glowing_pillar_leaves_03", "y": 180 }
+		],
+        "facing=south":  [
+			{ "model": "betterend:block/glowing_pillar_leaves_01" },
+			{ "model": "betterend:block/glowing_pillar_leaves_02" },
+			{ "model": "betterend:block/glowing_pillar_leaves_03" }
+		],
+        "facing=east":  [
+			{ "model": "betterend:block/glowing_pillar_leaves_01", "y": 270 },
+			{ "model": "betterend:block/glowing_pillar_leaves_02", "y": 270 },
+			{ "model": "betterend:block/glowing_pillar_leaves_03", "y": 270 }
+		],
+        "facing=west":  [
+			{ "model": "betterend:block/glowing_pillar_leaves_01", "y": 90 },
+			{ "model": "betterend:block/glowing_pillar_leaves_02", "y": 90 },
+			{ "model": "betterend:block/glowing_pillar_leaves_03", "y": 90 }
+		],
+		"facing=up":    { "model": "betterend:block/glowing_pillar_leaves_up" },
+        "facing=down":  { "model": "betterend:block/glowing_pillar_leaves_up", "x": 180 }
+    }
+}
