@@ -10434,7 +10434,7 @@
                 "3Hn4sTVbBvKyQJJS"
             ],
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "pick-up-notifier",
                 "modrinth": "pick-up-notifier"
@@ -12098,7 +12098,7 @@
             ]
         },
         {
-            "pakku_id": "xmb1HbbWASwcnp4D",
+            "pakku_id": "TC156gA6Zt7xe4yH",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -12138,25 +12138,24 @@
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "tfcambiental-1.20.1-3.3.0.jar",
+                    "file_name": "tfcambiental-1.20.1-3.3.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "forge",
-                        "neoforge"
+                        "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/K7eNiRnX/versions/L5UbdkdE/tfcambiental-1.20.1-3.3.0.jar",
-                    "id": "L5UbdkdE",
+                    "url": "https://cdn.modrinth.com/data/K7eNiRnX/versions/to7EBq2d/tfcambiental-1.20.1-3.3.1.jar",
+                    "id": "to7EBq2d",
                     "parent_id": "K7eNiRnX",
                     "hashes": {
-                        "sha512": "775a6cbe712e13c26061f34670ae417b382e79adbd69ed63b104fb0e4721b23e230c5328b671b9cf8eab7ea0b1c9ccc602f650da8c81923c2be90470e3b37641",
-                        "sha1": "e1bc92959d8cbfb1d8f16dc124a14a0709d6aba6"
+                        "sha512": "ad600d3731080320a4d0a3134fbdbe8041f2671c395fef73d316e8d39d1bc2672f75f583817f6389aa11c456c0508e031ad5e3b9c876ca19b605c1e107a693cb",
+                        "sha1": "0837547febfc05c18e224fd8b3f9ed4eef8eb9de"
                     },
                     "required_dependencies": [],
-                    "size": 640033,
-                    "date_published": "2024-05-05T01:41:06.190734Z"
+                    "size": 640068,
+                    "date_published": "2025-07-20T08:59:11.860074Z"
                 }
             ]
         },
@@ -12745,7 +12744,8 @@
         {
             "pakku_id": "oV67DS8fDUlcK3I3",
             "pakku_links": [
-                "64uacGcEw697jVGs"
+                "64uacGcEw697jVGs",
+                "TC156gA6Zt7xe4yH"
             ],
             "type": "MOD",
             "side": "BOTH",
