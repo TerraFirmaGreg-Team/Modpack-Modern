@@ -15,9 +15,14 @@ function registerTFCMetalsRecipes(event) {
 		TFC.alloyPart('tfc:cast_iron', 0.45, 0.55)
 	]).id('tfg:alloy/tin_alloy')
 
+	event.recipes.tfc.alloy('tfg:invar', [
+		TFC.alloyPart('tfc:nickel', 0.60, 0.70),
+		TFC.alloyPart('tfc:cast_iron', 0.30, 0.40)
+	]).id('tfg:alloy/invar')
+
 	//#endregion
 
-	
+
 	//#region Фикс рецептов колоколов
 
 	//#region Из золота
@@ -152,17 +157,17 @@ function registerTFCMetalsRecipes(event) {
 		.EUt(4)
 
 	const TFC_INTERMEDIATE_METALS =
-	[
-		{ metal: 'pig_iron', meltTemp: 1535 },
-		{ metal: 'high_carbon_steel', meltTemp: 1540 },
-		{ metal: 'high_carbon_black_steel', meltTemp: 1540 },
-		{ metal: 'high_carbon_red_steel', meltTemp: 1540 },
-		{ metal: 'high_carbon_blue_steel', meltTemp: 1540 },
-		{ metal: 'weak_steel', meltTemp: 1540 },
-		{ metal: 'weak_blue_steel', meltTemp: 1540 },
-		{ metal: 'weak_red_steel', meltTemp: 1540 },
-		{ metal: 'unknown', meltTemp: 400 }
-	]
+		[
+			{ metal: 'pig_iron', meltTemp: 1535 },
+			{ metal: 'high_carbon_steel', meltTemp: 1540 },
+			{ metal: 'high_carbon_black_steel', meltTemp: 1540 },
+			{ metal: 'high_carbon_red_steel', meltTemp: 1540 },
+			{ metal: 'high_carbon_blue_steel', meltTemp: 1540 },
+			{ metal: 'weak_steel', meltTemp: 1540 },
+			{ metal: 'weak_blue_steel', meltTemp: 1540 },
+			{ metal: 'weak_red_steel', meltTemp: 1540 },
+			{ metal: 'unknown', meltTemp: 400 }
+		]
 
 	TFC_INTERMEDIATE_METALS.forEach(x => {
 
@@ -297,24 +302,52 @@ function registerTFCMetalsRecipes(event) {
 	];
 
 	global.TFC_STONE_TYPES.forEach(stone => {
-        deposit_ores.forEach(ore => {
-		
-		event.recipes.gtceu.ore_washer(`tfc:ore_washer/water/deposit/${ore}/${stone}`)
-			.itemInputs(`1x tfc:deposit/${ore}/${stone}`)
-			.inputFluids("#tfg:clean_water 100")
-			.circuit(4)
-			.itemOutputs(`1x tfc:ore/normal_${ore}`)
-			.duration(400)
-			.EUt(GTValues.VA[GTValues.LV])
+		deposit_ores.forEach(ore => {
 
-		event.recipes.gtceu.ore_washer(`tfc:ore_washer/distilled_water/deposit/${ore}/${stone}`)
-			.itemInputs(`1x tfc:deposit/${ore}/${stone}`)
-			.inputFluids(Fluid.of('gtceu:distilled_water', 50))
-			.circuit(4)
-			.itemOutputs(`1x tfc:ore/normal_${ore}`)
-			.duration(200)
-			.EUt(GTValues.VA[GTValues.LV])
+			event.recipes.gtceu.ore_washer(`tfc:ore_washer/water/deposit/${ore}/${stone}`)
+				.itemInputs(`1x tfc:deposit/${ore}/${stone}`)
+				.inputFluids("#tfg:clean_water 100")
+				.circuit(4)
+				.itemOutputs(`1x tfc:ore/normal_${ore}`)
+				.duration(400)
+				.EUt(GTValues.VA[GTValues.LV])
+
+			event.recipes.gtceu.ore_washer(`tfc:ore_washer/distilled_water/deposit/${ore}/${stone}`)
+				.itemInputs(`1x tfc:deposit/${ore}/${stone}`)
+				.inputFluids(Fluid.of('gtceu:distilled_water', 50))
+				.circuit(4)
+				.itemOutputs(`1x tfc:ore/normal_${ore}`)
+				.duration(200)
+				.EUt(GTValues.VA[GTValues.LV])
+		})
 	})
-})
 	//#endregion
+
+	// Melting powders
+
+	const METAL_POWDERS = [
+		{ powder: 'tfc:powder/native_copper', material: GTMaterials.Copper },
+		{ powder: 'tfc:powder/native_gold', material: GTMaterials.Gold },
+		{ powder: 'tfc:powder/hematite', material: GTMaterials.Hematite },
+		{ powder: 'tfc:powder/native_silver', material: GTMaterials.Silver },
+		{ powder: 'tfc:powder/cassiterite', material: GTMaterials.Cassiterite },
+		{ powder: 'tfc:powder/bismuthinite', material: GTMaterials.Bismuth },
+		{ powder: 'tfc:powder/garnierite', material: GTMaterials.Garnierite },
+		{ powder: 'tfc:powder/malachite', material: GTMaterials.Malachite },
+		{ powder: 'tfc:powder/magnetite', material: GTMaterials.Magnetite },
+		{ powder: 'tfc:powder/limonite', material: GTMaterials.YellowLimonite },
+		{ powder: 'tfc:powder/sphalerite', material: GTMaterials.Sphalerite },
+		{ powder: 'tfc:powder/tetrahedrite', material: GTMaterials.Tetrahedrite },
+		{ powder: 'tfc:powder/pyrite', material: GTMaterials.Pyrite }
+	]
+
+	METAL_POWDERS.forEach(x => {
+		const tfcProperty = x.material.getProperty(TFGPropertyKey.TFC_PROPERTY)
+
+		let outputMaterial = (tfcProperty.getOutputMaterial() === null) ? x.material : tfcProperty.getOutputMaterial()
+
+		event.recipes.tfc.heating(x.powder, tfcProperty.getMeltTemp())
+			.resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(36, tfcProperty.getPercentOfMaterial())))
+			.id(`tfg:heating/powder/${x.material.getName()}`)
+	})
 }

@@ -166,7 +166,7 @@ TFCEvents.registerClimateModel(event => {
 		})
 
 		builder.setAirFog((level, pos, calendarTicks) => 0)
-		builder.setWaterFog((level, pos, calendarTicks) => 0.25)
-		builder.setWindVector((level, block, calendarTicks) => builder.vector(0.25, 0.25))
+		builder.setWaterFog((level, pos, calendarTicks) => 0.1)
+		builder.setWindVector((level, block, calendarTicks) => builder.vector(0.25, 0.1))
 	})
 })

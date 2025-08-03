@@ -198,7 +198,7 @@ const registerTFGNuclearMaterials = (event) => {
         .ingot()
         .element(GTElements.get("thorium_230"))
         .iconSet(GTMaterialIconSet.RADIOACTIVE)
-		.color(0x323B2F)
+		.color(0x3b2f37)
 		.secondaryColor(0xECECEC)
         .radioactiveHazard(1000000)
 
@@ -206,7 +206,7 @@ const registerTFGNuclearMaterials = (event) => {
         .ingot()
         .element(GTElements.get("thorium_232"))
         .iconSet(GTMaterialIconSet.METALLIC)
-        .color(0x5F694C)
+        .color(0x694c66)
         .secondaryColor('0xFFFFFF')
         .radioactiveHazard(1000)
 

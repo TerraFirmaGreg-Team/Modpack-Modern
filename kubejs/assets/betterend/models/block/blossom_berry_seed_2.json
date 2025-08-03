@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:block/cross",
 	"textures": {
-		"texture": "betterend:block/blossom_berry_seed_2"
+		"cross": "betterend:block/blossom_berry_seed_2"
 	}
 }

@@ -340,7 +340,7 @@ const registerTFGItems = (event) => {
 		.translationKey('tfg:nitrocellulose')
 	//endregion
 	
-	//RockWool
+	//Tier2 Insulation
 	event.create('tfg:aes_wool')
 		.translationKey('tfg:aes_wool')
 	event.create('tfg:aes_compressed_wool')
@@ -353,9 +353,21 @@ const registerTFGItems = (event) => {
 	
 	//Tier 2 Rocket Parts
 	event.create('tfg:rocket_fin_t2')
-		.translationKey('tfg:rocket_fin_t2')
 	event.create('tfg:rocket_cone_t2')
-		.translationKey('tfg:rocket_cone_t2')
+	//endregion
+	
+	//Tier 3 Insulation
+	event.create('tfg:aes_polyurethane')
+	event.create('tfg:mli_shielding')
+	event.create('tfg:silica_aerogel')
+	//endregion
+	
+	//Tier 3 Rocket Parts
+	event.create('tfg:rocket_fin_t3')
+	event.create('tfg:rocket_cone_t3')
+	event.create('tfg:elite_power_thruster')
+	
+	event.create('tfg:better_space_suit_fabric')
 	//endregion
 
 	//#region Universal compost items
@@ -370,4 +382,10 @@ const registerTFGItems = (event) => {
 	event.create('tfg:etching_diamond_tip')
 		.translationKey("item.tfg.etching_diamond_tip")
 	//#endregion
+
+	//#region Solar Panel
+
+	event.create('tfg:photo_cell_t1')
+		.translationKey("item.tfg.basic.photovoltaic.cell")
+		.texture('tfg:item/photo_cell_t1')
 }

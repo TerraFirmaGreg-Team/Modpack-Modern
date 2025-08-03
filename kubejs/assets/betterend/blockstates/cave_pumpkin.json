@@ -1,6 +1,5 @@
 {
     "variants": {
-        "small=true": { "model": "betterend:block/cave_pumpkin_small" },
-        "small=false": { "model": "betterend:block/cave_pumpkin" }
+        "": { "model": "betterend:block/cave_pumpkin" }
     }
 }

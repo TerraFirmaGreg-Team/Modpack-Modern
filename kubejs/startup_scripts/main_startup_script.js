@@ -2,6 +2,7 @@
 "use strict";
 
 StartupEvents.registry('item', event => {
+	registerBetterEndItems(event)
     registerGTCEuItems(event)
     registerTFGItems(event)
 })
@@ -71,7 +72,6 @@ GTCEuStartupEvents.materialModification(event => {
 GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
 	registerTFGDimensionMarkers(event)
 })
-
 
 GTCEuStartupEvents.registry("gtceu:element", event => {
 	registerTFGElement(event)

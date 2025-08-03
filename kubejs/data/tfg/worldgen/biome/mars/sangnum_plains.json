@@ -43,10 +43,8 @@
 		[],
 		"#tfg:mars_veins",
 		[],
-		[
-			"#tfc:feature/boulders"
-		],
-		"#tfg:mars_rusticus_vegetal_decoration",
+		"#tfg:mars_small_rock_features",
+		"#tfg:mars_sangnum_vegetal_decoration",
 		[]
 	],
 	"has_precipitation": false,
