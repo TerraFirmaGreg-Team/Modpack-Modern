@@ -2289,7 +2289,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "cc-tweaked-1.20.1-forge-1.115.1.jar",
+                    "file_name": "cc-tweaked-1.20.1-forge-1.116.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2297,16 +2297,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/gu7yAYhd/versions/GYnSPc0b/cc-tweaked-1.20.1-forge-1.115.1.jar",
-                    "id": "GYnSPc0b",
+                    "url": "https://cdn.modrinth.com/data/gu7yAYhd/versions/OMIJHNkd/cc-tweaked-1.20.1-forge-1.116.1.jar",
+                    "id": "OMIJHNkd",
                     "parent_id": "gu7yAYhd",
                     "hashes": {
-                        "sha512": "79397cdd37291158024621f5ed08cecf76b243e54318d5a252d44d068f2c0fc5491c52f05107a2a3300cc5a3a2d6cbdf2b02ebc4b0dacfafbc64f4a1e23dce76",
-                        "sha1": "1a2f9672b3aa5e4c485c8b3ac0b2579ecdfb6798"
+                        "sha512": "c65b821055b63c70ddedd44a710c9ca76c6406edfc20a38d7e21f19b33bd92309207aa3732ac6e77801bb7d69bef50cd780ed373891658a2ace7938f3d0a2150",
+                        "sha1": "117f78ad17ef779220b4bc028b130824034ec045"
                     },
                     "required_dependencies": [],
-                    "size": 3073327,
-                    "date_published": "2025-03-01T22:50:51.489958Z"
+                    "size": 3079734,
+                    "date_published": "2025-07-12T18:09:11.168688Z"
                 }
             ]
         },
