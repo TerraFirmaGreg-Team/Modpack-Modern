@@ -416,25 +416,25 @@ const registerAdAstraRecipes = (event) => {
 
 	event.recipes.gtceu.laser_engraver('ad_astra:photovoltaic_etrium_cell_silicon')
 		.itemInputs('gtceu:silicon_wafer', '#forge:glass_panes', 'gtceu:carbon_fiber_plate')
-		.itemOutputs('ad_astra:photovoltaic_etrium_cell')
+		.itemOutputs('tfg:photo_cell_t1')
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(100)
 
 	event.recipes.gtceu.laser_engraver('ad_astra:photovoltaic_etrium_cell_phosphorous')
 		.itemInputs('gtceu:phosphorus_wafer', '#forge:glass_panes', 'gtceu:carbon_fiber_plate')
-		.itemOutputs('2x ad_astra:photovoltaic_etrium_cell')
+		.itemOutputs('2x tfg:photo_cell_t1')
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(100)
 
 	event.recipes.gtceu.laser_engraver('ad_astra:photovoltaic_etrium_cell_naquadah')
 		.itemInputs('gtceu:naquadah_wafer', '#forge:glass_panes', 'gtceu:carbon_fiber_plate')
-		.itemOutputs('4x ad_astra:photovoltaic_etrium_cell')
+		.itemOutputs('4x tfg:photo_cell_t1')
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(100)
 
 	event.recipes.gtceu.laser_engraver('ad_astra:photovoltaic_etrium_cell_neutronium')
 		.itemInputs('gtceu:neutronium_wafer', '#forge:glass_panes', 'gtceu:carbon_fiber_plate')
-		.itemOutputs('8x ad_astra:photovoltaic_etrium_cell')
+		.itemOutputs('8x tfg:photo_cell_t1')
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(100)
 

@@ -1035,15 +1035,14 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.recipes.gtceu.assembler('tfg:assembler/machine_casing_aluminium_plated_steel')
 		.itemInputs(
-			GTBlocks.STEEL_HULL.get(),
-			ChemicalHelper.get(TagPrefix.plate, GTMaterials.Aluminium, 2),
-			ChemicalHelper.get(TagPrefix.bolt, GTMaterials.Aluminium, 2),
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Silicon, 1)
+			ChemicalHelper.get(TagPrefix.plate, GTMaterials.Aluminium, 6),
+			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.Steel, 1),
 		)
-		.itemOutputs('3x tfg:machine_casing_aluminium_plated_steel')
-		.circuit(4)
-		.duration(600)
-		.EUt(GTValues.VA[GTValues.MV])
+		.inputFluids(Fluid.of('gtceu:silicon', 72))
+		.itemOutputs('2x tfg:machine_casing_aluminium_plated_steel')
+		.circuit(6)
+		.duration(20 * (2.5))
+		.EUt(GTValues.VH[GTValues.LV])
 	//#endregion
 		
 	//region ammonia borane

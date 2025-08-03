@@ -382,4 +382,10 @@ const registerTFGItems = (event) => {
 	event.create('tfg:etching_diamond_tip')
 		.translationKey("item.tfg.etching_diamond_tip")
 	//#endregion
+
+	//#region Solar Panel
+
+	event.create('tfg:photo_cell_t1')
+		.translationKey("item.tfg.basic.photovoltaic.cell")
+		.texture('tfg:item/photo_cell_t1')
 }
