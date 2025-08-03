@@ -253,7 +253,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.fluid_solidifier('tfg:ice')
-		.inputFluids(JsonIO.of({ amount: 144, value: { tag: "tfg:clean_water" } }))
+		.inputFluids("#tfg:clean_water 144")
 		.notConsumable('gtceu:block_casting_mold')
 		.itemOutputs('minecraft:ice')
 		.duration(200)
@@ -263,7 +263,7 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.recipes.gtceu.mixer('tfg:ice_slush_from_dry_ice')
 		.itemInputs('1x tfg:dry_ice')
-		.inputFluids( JsonIO.of({ amount: 8000, value: { tag: "tfc:water" }}))
+		.inputFluids("#tfc:water 8000")
 		.outputFluids(Fluid.of('gtceu:ice', 8000))
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -451,23 +451,34 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.MV])
 
-	event.recipes.gtceu.vacuum_freezer('tfg:vacuum_freezer/dry_ice')
+	event.recipes.gtceu.vacuum_freezer('tfg:vacuum_freezer/liq_co2')
 		.inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
+		.outputFluids(Fluid.of('gtceu:liquid_carbon_dioxide', 1000))
+		.duration(160)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.vacuum_freezer('tfg:vacuum_freezer/dry_ice')
+		.inputFluids(Fluid.of('gtceu:liquid_carbon_dioxide', 1000))
 		.notConsumable('gtceu:block_casting_mold')
 		.itemOutputs('10x tfg:dry_ice')
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.MV])
-
-	event.recipes.gtceu.chemical_reactor('tfg:chemical_reactor/decompress_dry_ice')
-		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 100))
+		.duration(60)
+		.EUt(GTValues.VA[GTValues.HV])
+	
+	event.recipes.gtceu.fluid_heater('tfg:fluid_heater/decompress_liq_co2')
 		.itemInputs('1x tfg:dry_ice')
+		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 100))
 		.duration(20)
-		.circuit(4)
+		.EUt(GTValues.VA[GTValues.ULV])
+	
+	event.recipes.gtceu.fluid_heater('tfg:fluid_heater/decompress_dry_ice')
+		.inputFluids(Fluid.of('gtceu:liquid_carbon_dioxide', 100))
+		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 100))
+		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.mixer('tfg:clean_foil_pack')
 		.itemInputs('1x tfg:used_foil_pack')
-		.inputFluids(JsonIO.of({ amount: 100, value: { tag: "tfg:clean_water" } }))
+		.inputFluids("#tfg:clean_water 100")
 		.itemOutputs('1x tfg:clean_foil_pack')
 		.duration(200)
 		.circuit(1)
@@ -548,28 +559,28 @@ function registerTFGMiscellaneousRecipes(event) {
 	// Biofuels
 
 	event.recipes.gtceu.chemical_reactor(`seed_oil_alcohol_biodiesel`)
-		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
+		.inputFluids("#tfc:alcohols 1000")
 		.inputFluids(Fluid.of('gtceu:seed_oil', 6000))
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
 		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_reactor(`olive_oil_alcohol_biodiesel`)
-		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
+		.inputFluids("#tfc:alcohols 1000")
 		.inputFluids(Fluid.of('tfc:olive_oil', 4000))
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
 		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_reactor(`soybean_oil_alcohol_biodiesel`)
-		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
+		.inputFluids("#tfc:alcohols 1000")
 		.inputFluids(Fluid.of('firmalife:soybean_oil', 4000))
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
 		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_reactor(`fish_oil_alcohol_biodiesel`)
-		.inputFluids(JsonIO.of({ amount: 1000, value: { tag: "tfc:alcohols" } }))
+		.inputFluids("#tfc:alcohols 1000")
 		.inputFluids(Fluid.of('gtceu:fish_oil', 6000))
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
 		.duration(20 * 10)
@@ -774,6 +785,42 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('gtceu:ev_sensor')
 		.duration(100)
 		.EUt(30)
+		
+	//quantum eye IV replacements
+    event.shaped('gtceu:iv_emitter', [
+		'ABC',
+		'BDB',
+		'CBA'
+	], {
+		A: '#forge:single_cables/tungsten',
+		B: '#forge:rods/iridium',
+		C: '#gtceu:circuits/iv',
+		D: 'gtceu:quantum_eye'
+	}).id('gtceu:shaped/emitter_iv')
+
+	event.recipes.gtceu.assembler('emitter_iv')
+		.itemInputs('gtceu:quantum_eye', '4x #forge:rods/iridium', '2x #gtceu:circuits/iv', '2x #forge:single_cables/tungsten')
+		.itemOutputs('gtceu:iv_emitter')
+		.circuit(1)
+		.duration(100)
+		.EUt(30)
+
+	event.shaped('gtceu:iv_sensor', [
+		'A B',
+		'AC ',
+		'DAA'
+	], {
+		A: '#forge:plates/tungsten_steel',
+		B: 'gtceu:quantum_eye',
+		C: '#forge:rods/iridium',
+		D: '#gtceu:circuits/iv',
+	}).id('gtceu:shaped/sensor_iv')
+
+	event.recipes.gtceu.assembler('sensor_iv')
+		.itemInputs('gtceu:quantum_eye', '#forge:rods/iridium', '#gtceu:circuits/iv', '4x #forge:plates/tungsten_steel')
+		.itemOutputs('gtceu:ev_sensor')
+		.duration(100)
+		.EUt(30)
 	
 	// Temporary
 	event.recipes.gtceu.chemical_bath('quantum_eye')
@@ -923,6 +970,27 @@ function registerTFGMiscellaneousRecipes(event) {
 		'tfg:aes_insulation_roll'
 	]).id('tfg:shapeless/aes_insulation_sheet')
 	
+	event.recipes.gtceu.electric_blast_furnace('smelt_aes_sheet')
+		.itemInputs('tfg:aes_insulation_sheet')
+		.inputFluids(Fluid.of('gtceu:helium', 200))
+		.outputFluids(Fluid.of('tfg:molten_aes', 800))
+		.chancedOutput('gtceu:ash_dust', 2500, 0)
+		.circuit(1)
+		.duration(140)
+		.blastFurnaceTemp(3000)
+		.EUt(GTValues.VA[GTValues.EV])
+	event.recipes.gtceu.electric_blast_furnace('smelt_aes_roll')
+		.itemInputs('tfg:aes_insulation_roll')
+		.inputFluids(Fluid.of('gtceu:helium', 1000))
+		.itemOutputs('2x gtceu:ash_dust')
+		.outputFluids(Fluid.of('tfg:molten_aes', 7200))
+		.circuit(9)
+		.duration(1000)
+		.blastFurnaceTemp(3000)
+		.EUt(GTValues.VA[GTValues.EV])
+	//endregion
+	
+	//#region Casings
 	global.GTCEU_SUPERCONDUCTORS.forEach((type, index) => {
 		const multiplier = index + 1
 
@@ -931,9 +999,9 @@ function registerTFGMiscellaneousRecipes(event) {
 				ChemicalHelper.get(TagPrefix.plate, GTMaterials.HSLASteel, 4),
 				ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 2),
 				ChemicalHelper.get(TagPrefix.rod, GTMaterials.SteelMagnetic, 1),
-				ChemicalHelper.get(TagPrefix.wireFine, GTMaterials[type.materialId], 4),
+				ChemicalHelper.get(TagPrefix.wireFine, GTMaterials[type.materialId], 4)
 			)
-			.inputFluids(Fluid.of('gtceu:silicone_rubber', 144))
+			.inputFluids(Fluid.of('gtceu:epoxy', 144))
 			.itemOutputs(Item.of('tfg:superconductor_coil_small', 4 * multiplier))
 			.circuit(4)
 			.duration(400)
@@ -944,9 +1012,8 @@ function registerTFGMiscellaneousRecipes(event) {
 				ChemicalHelper.get(TagPrefix.plate, GTMaterials.HSLASteel, 4),
 				ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 2),
 				ChemicalHelper.get(TagPrefix.rod, GTMaterials.SteelMagnetic, 1),
-				ChemicalHelper.get(TagPrefix.wireGtSingle, GTMaterials[type.materialId], 4),
-			)
-			.inputFluids(Fluid.of('gtceu:silicone_rubber', 144))
+				ChemicalHelper.get(TagPrefix.wireGtSingle, GTMaterials[type.materialId], 4))
+			.inputFluids(Fluid.of('gtceu:epoxy', 144))
 			.itemOutputs(Item.of('tfg:superconductor_coil_large', 4 * multiplier))
 			.circuit(7)
 			.duration(600)
@@ -965,4 +1032,255 @@ function registerTFGMiscellaneousRecipes(event) {
 		.circuit(4)
 		.duration(800)
 		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.assembler('tfg:assembler/machine_casing_aluminium_plated_steel')
+		.itemInputs(
+			ChemicalHelper.get(TagPrefix.plate, GTMaterials.Aluminium, 6),
+			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.Steel, 1),
+		)
+		.inputFluids(Fluid.of('gtceu:silicon', 72))
+		.itemOutputs('2x tfg:machine_casing_aluminium_plated_steel')
+		.circuit(6)
+		.duration(20 * (2.5))
+		.EUt(GTValues.VH[GTValues.LV])
+	//#endregion
+		
+	//region ammonia borane
+	event.recipes.gtceu.chemical_reactor('tfg:sodium_hydride_synthesis')
+		.itemInputs('#forge:dusts/sodium')
+		.inputFluids(Fluid.of('gtceu:hydrogen', 1000))
+		.itemOutputs('2x #forge:dusts/sodium_hydride')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.HV])
+	event.recipes.gtceu.chemical_reactor('tfg:boric_acid_synthesis')
+		.itemInputs('#forge:dusts/borax')
+		.inputFluids(Fluid.of('gtceu:hydrochloric_acid', 2000))
+		.itemOutputs('4x #forge:dusts/boric_acid', '2x #forge:dusts/salt')
+		.outputFluids(Fluid.of('minecraft:water', 5000))
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.HV])
+	event.recipes.gtceu.chemical_reactor('tfg:trimethyl_borate_synthesis')
+		.itemInputs('#forge:dusts/boric_acid')
+		.inputFluids(Fluid.of('gtceu:methanol', 3000), Fluid.of('gtceu:sulfuric_acid', 100))
+		.outputFluids(Fluid.of('tfg:trimethyl_borate', 1000), Fluid.of('minecraft:water', 3000))
+		.duration(300)
+		.EUt(GTValues.VA[GTValues.EV])
+	event.recipes.gtceu.chemical_reactor('tfg:sodium_borohydride_synthesis')
+		.itemInputs('4x #forge:dusts/sodium_hydride')
+		.inputFluids(Fluid.of('tfg:trimethyl_borate', 1000))
+		.itemOutputs('#forge:dusts/sodium_borohydride', '3x #forge:dusts/sodium_methoxide')
+		.duration(160)
+		.EUt(GTValues.VA[GTValues.EV])
+	event.recipes.gtceu.chemical_reactor('tfg:ammonia_borane_synthesis')
+		.itemInputs('#forge:dusts/sodium_borohydride', '#forge:dusts/ammonium_chloride')
+		.itemOutputs('#forge:dusts/ammonia_borane', '#forge:dusts/salt')
+		.outputFluids(Fluid.of('gtceu:hydrogen', 2000))
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.IV])
+	//endregion
+	
+	//region polyurethane
+	event.recipes.gtceu.chemical_reactor('tfg:aniline_synthesis')
+		.inputFluids(Fluid.of('gtceu:nitrobenzene', 1000), Fluid.of('gtceu:hydrogen', 6000))
+		.notConsumable('#forge:dusts/iron')
+		.outputFluids(Fluid.of('tfg:aniline', 1000), Fluid.of('minecraft:water', 2000))
+		.duration(140)
+		.EUt(GTValues.VA[GTValues.EV])
+	event.recipes.gtceu.chemical_reactor('tfg:dimethyl_carbonate_synthesis')
+		.inputFluids(Fluid.of('gtceu:carbon_monoxide', 1000), Fluid.of('gtceu:oxygen', 500), Fluid.of('gtceu:methanol', 2000))
+		.outputFluids(Fluid.of('tfg:dimethyl_carbonate', 1000), Fluid.of('minecraft:water', 1000))
+		.duration(120)
+		.EUt(GTValues.VA[GTValues.HV])
+	event.recipes.gtceu.chemical_reactor('tfg:methyl_phenylcarbamate_synthesis')
+		.inputFluids(Fluid.of('tfg:aniline', 1000), Fluid.of('tfg:dimethyl_carbonate', 1000))
+		.outputFluids(Fluid.of('tfg:methyl_phenylcarbamate', 1000), Fluid.of('gtceu:methanol', 1000))
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.EV])
+	event.recipes.gtceu.chemical_reactor('tfg:mpc_synthesis')
+		.inputFluids(Fluid.of('tfg:methyl_phenylcarbamate', 2000), Fluid.of('gtceu:formaldehyde', 1000))
+		.outputFluids(Fluid.of('tfg:methylene_diphenyl_dicarbamate', 1000), Fluid.of('minecraft:water', 1000))
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.EV])
+	event.recipes.gtceu.chemical_reactor('tfg:mpi_synthesis')
+		.inputFluids(Fluid.of('tfg:methylene_diphenyl_dicarbamate', 1000))
+		.itemOutputs('#forge:dusts/methylene_diphenyl_diisocyanate')
+		.outputFluids(Fluid.of('gtceu:methanol', 2000))
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.IV])
+	event.recipes.gtceu.mixer('tfg:aes_polyurethane_electric_only')
+		.itemInputs('tfg:aes_compressed_wool', '#forge:dusts/methylene_diphenyl_diisocyanate')
+		.inputFluids(Fluid.of('gtceu:diethylenetriamine', 250), Fluid.of('gtceu:acetone', 1000))
+		.itemOutputs('tfg:aes_polyurethane')
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.IV])
+	//endregion
+	
+	//Aerogel
+	event.recipes.gtceu.chemical_reactor('tfg:tmos_synthesis')
+		.inputFluids(Fluid.of('tfg:dimethyl_carbonate', 2000))
+		.itemInputs('#forge:dusts/silicon_dioxide')
+		.notConsumable('#forge:small_dusts/potassium_hydroxide')
+		.outputFluids(Fluid.of('tfg:tmos', 1000), Fluid.of('gtceu:carbon_dioxide', 2000))
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.IV])
+	event.recipes.gtceu.chemical_reactor('tfg:tmos_hydrolysis')
+		.inputFluids(Fluid.of('tfg:tmos', 1000), Fluid.of('gtceu:distilled_water', 2000))
+		.outputFluids(Fluid.of('gtceu:methanol', 4000))
+		.itemOutputs('#forge:dusts/silicon_dioxide')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.MV])
+	event.recipes.gtceu.large_chemical_reactor('tfg:silica_gel_synthesis')
+		.inputFluids(Fluid.of('tfg:tmos', 1000), Fluid.of('gtceu:ethanol', 2000), Fluid.of('gtceu:distilled_water', 500), 
+					 Fluid.of('gtceu:hydrochloric_acid', 100))
+		.outputFluids(Fluid.of('tfg:silica_gel', 1000))
+		.duration(300)
+		.EUt(GTValues.VA[GTValues.IV])
+	event.recipes.gtceu.chemical_reactor('tfg:silica_gel_soaking')
+		.inputFluids(Fluid.of('tfg:silica_gel', 1000), Fluid.of('gtceu:acetone', 2000))
+		.outputFluids(Fluid.of('tfg:soaked_silica_gel', 1000))
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.EV])
+	event.recipes.gtceu.large_chemical_reactor('tfg:silica_aerogel')
+		.inputFluids(Fluid.of('tfg:soaked_silica_gel', 1000), Fluid.of('gtceu:liquid_carbon_dioxide', 3000))
+		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 3000), Fluid.of('gtceu:acetone', 1000))
+		.itemOutputs('tfg:silica_aerogel')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.IV])
+	//endregion
+	
+	//Tier 3 insulation
+	event.recipes.gtceu.forming_press('tfg:mli_shielding')
+		.itemInputs('4x #forge:plates/ammonia_borane', '2x tfg:aes_polyurethane', '4x gtceu:carbon_fiber_plate')
+		.itemOutputs('tfg:mli_shielding')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.IV])
+	//endregion
+
+	//#region Universal compost
+
+	//Greens
+		// Lows via crafting with mortar
+		event.shaped(Item.of('tfg:universal_compost_greens', 1), [
+			'AB'
+		], {
+			A: Ingredient.of(['#tfc:compost_greens_low']).subtract(['tfg:universal_compost_greens']),
+			B: '#forge:tools/mortars'
+		}).id('tfg:shaped/universal_compost_greens_from_low')
+		
+		// Mediums via crafting with mortar
+		event.shaped(Item.of('tfg:universal_compost_greens', 2), [
+			'AB'
+		], {
+			A: '#tfc:compost_greens',
+			B: '#forge:tools/mortars'
+		}).id('tfg:shaped/universal_compost_greens_from_medium')
+			
+		// Highs via crafting with mortar
+		event.shaped(Item.of('tfg:universal_compost_greens', 4), [
+			'AB'
+		], {
+			A: '#tfc:compost_greens_high',
+			B: '#forge:tools/mortars'
+		}).id('tfg:shaped/universal_compost_greens_from_high')
+
+		// Filters
+		const greens_low = Ingredient.of('#tfc:compost_greens_low')
+		const browns_low = Ingredient.of('#tfc:compost_browns_low').itemIds
+		const greens_medium = Ingredient.of('#tfc:compost_greens')
+		const browns_medium = Ingredient.of('#tfc:compost_browns').itemIds
+		const greens_high = Ingredient.of('#tfc:compost_greens_high')
+		const browns_high = Ingredient.of('#tfc:compost_browns_high').itemIds
+
+		let low_filtered = greens_low
+		let medium_filtered = greens_medium
+		let high_filtered = greens_high
+
+		browns_low.forEach(item => {
+			low_filtered = low_filtered.subtract(item)
+			low_filtered = low_filtered.subtract('tfg:universal_compost_greens')
+		})
+		browns_medium.forEach(item => {
+			medium_filtered = medium_filtered.subtract(item)
+		})
+		browns_high.forEach(item => {
+			high_filtered = high_filtered.subtract(item)
+		})
+
+		// Lows via forge hammer
+		event.recipes.gtceu.forge_hammer('tfg:universal_compost_greens_low')
+			.itemInputs(low_filtered)
+			.itemOutputs('tfg:universal_compost_greens')
+			.duration(20)
+			.EUt(8)
+		
+		// Mediums via forge hammer
+		event.recipes.gtceu.forge_hammer('tfg:universal_compost_greens_medium')
+			.itemInputs(medium_filtered)
+			.itemOutputs(Item.of('tfg:universal_compost_greens', 2))
+			.duration(20)
+			.EUt(8)
+
+		// Highs via forge hammer
+		event.recipes.gtceu.forge_hammer('tfg:universal_compost_greens_high')
+			.itemInputs(high_filtered)
+			.itemOutputs(Item.of('tfg:universal_compost_greens', 4))
+			.duration(20)
+			.EUt(8)
+	
+	//Browns
+		// Lows via crafting with mortar
+		event.shaped(Item.of('tfg:universal_compost_browns', 1), [
+			'BA'
+		], {
+			A: Ingredient.of(['#tfc:compost_browns_low']).subtract(['tfg:universal_compost_browns']),
+			B: '#forge:tools/mortars'
+		}).id('tfg:shaped/universal_compost_browns_from_low')
+		
+		// Mediums via crafting with mortar
+		event.shaped(Item.of('tfg:universal_compost_browns', 2), [
+			'BA'
+		], {
+			A: '#tfc:compost_browns',
+			B: '#forge:tools/mortars'
+		}).id('tfg:shaped/universal_compost_browns_from_medium')
+			
+		// Highs via crafting with mortar
+		event.shaped(Item.of('tfg:universal_compost_browns', 4), [
+			'BA'
+		], {
+			A: '#tfc:compost_browns_high',
+			B: '#forge:tools/mortars'
+		}).id('tfg:shaped/universal_compost_browns_from_high')
+
+		// Lows via forge hammer
+		event.recipes.gtceu.forge_hammer('tfg:universal_compost_browns_low')
+			.itemInputs('#tfc:compost_browns_low')
+			.itemOutputs('tfg:universal_compost_browns')
+			.duration(20)
+			.EUt(8)
+		
+		// Mediums via forge hammer
+		event.recipes.gtceu.forge_hammer('tfg:universal_compost_browns_medium')
+			.itemInputs('#tfc:compost_browns')
+			.itemOutputs(Item.of('tfg:universal_compost_browns', 2))
+			.duration(20)
+			.EUt(8)
+
+		// Highs via forge hammer
+		event.recipes.gtceu.forge_hammer('tfg:universal_compost_browns_high')
+			.itemInputs('#tfc:compost_browns_high')
+			.itemOutputs(Item.of('tfg:universal_compost_browns', 4))
+			.duration(20)
+			.EUt(8)
+
+	//#endregion
+
+	// Etching Tip
+	event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless('tfg:etching_diamond_tip',[
+		'#forge:tools/hammers',
+		'#tfc:chisels',
+		'minecraft:diamond'
+	]));
+
+	event.replaceInput({ id: "minecraft:jukebox"}, 'minecraft:diamond', 'tfg:etching_diamond_tip');
 }

@@ -1,7 +1,6 @@
 "use strict";
 
-const registerTooltips = (event) =>
-{
+const registerTooltips = (event) => {
 	event.addAdvanced(['gtceu:lv_macerator', 'gtceu:mv_macerator', 'gtceu:hp_steam_macerator'], (item, advanced, text) => {
 		text.add(1, [text.of('§7Only outputs the first slot shown in EMI/JEI until HV.')])
 	})
@@ -55,7 +54,7 @@ const registerTooltips = (event) =>
 		text.add(2, text.of('§7Insulation: +9'))
 		text.add(3, text.of('§7Wear the full set to be §eHeatproof§7 from ambient temperatures.'))
 	})
-	event.addAdvanced(['gtceu:nanomuscle_helmet', 'gtceu:nanomuscle_chestplate', 'gtceu:nanomuscle_leggings', 'gtceu:nanomuscle_boots', 'gtceu:avanced_nanomuscle_chestplate'], (item, advanced, text) => {
+	event.addAdvanced(['gtceu:nanomuscle_helmet', 'gtceu:nanomuscle_chestplate', 'gtceu:nanomuscle_leggings', 'gtceu:nanomuscle_boots', 'gtceu:advanced_nanomuscle_chestplate'], (item, advanced, text) => {
 		text.add(1, text.of('§7Warmth: 0')),
 		text.add(2, text.of('§7Insulation: +10'))
 		text.add(3, text.of('§7Wear the full set to be §eFully Insulated§7 from ambient temperatures.'))
@@ -114,7 +113,19 @@ const registerTooltips = (event) =>
 
 	// Solar Panel
 	event.addAdvanced(['ad_astra:solar_panel'], (item, advanced, text) => {
-		text.add(1, text.of('Produces §664 Eu/t§r on the §6moon§r during the §6day§r'))
+		text.add(1, text.of('Produces §6256 FE/t§r (64 EU/t) on the §6moon§r during the §6day§r'))
+	})
+
+	event.addAdvanced(['gtceu:large_solar_panel'], (item, advanced, text) => {
+		text.add(1, text.of('Massive structure producing from §61024 to 4096 EU/t§r on the §6moon§r during the §6day§r'))
+	})
+
+	event.addAdvanced(['gtceu:large_solar_panel_tier2'], (item, advanced, text) => {
+		text.add(1, text.of('Massive structure producing from §64096 to 16384 EU/t§r on the §6moon§r during the §6day§r'))
+	})
+
+	event.addAdvanced(['gtceu:large_solar_panel_tier3'], (item, advanced, text) => {
+		text.add(1, text.of('Massive structure producing from §616384 to 65536 EU/t§r on the §6moon§r during the §6day§r'))
 	})
 
 	// MEGA Deprecated 0.10

@@ -32,11 +32,6 @@
 			description: ["{quests.tfg.create_team.desc}"]
 			icon: "minecraft:cake"
 			id: "6D43C29AC049341D"
-			rewards: [{
-				id: "703B1DE66D788924"
-				item: "gtceu:copper_credit"
-				type: "item"
-			}]
 			subtitle: "{quests.tfg.create_team.subtitle}"
 			tasks: [{
 				id: "124CFC2DE7647588"

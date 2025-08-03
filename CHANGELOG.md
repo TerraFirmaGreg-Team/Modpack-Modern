@@ -4,6 +4,53 @@
 ### Changes
 ### Bug fixes
 
+## [0.10.5] - 03-08-2025
+### Major changes
+- New major GregTech version! Read all about its new changes [here](https://github.com/GregTechCEu/GregTech-Modern/releases), and please report any issues you find! @gustovafing
+- Added initial implementation of interplanetary logistics @gustovafing
+### Known issues
+- Some items have multiple, incorrect recycling recipes
+- Steam machines use twice as much steam as they're supposed to
+### Other changes
+- Added universal compost items, for more efficient storage of compostables @Vazde @Redeix
+- Vanilla moss blocks/carpet are now compostable @Pyritie
+- Added missing mixer recipes for turning medium compost greens/browns into compost @Pyritie
+- Adjusted recipe times of the VI machines @Pyritie
+- Added recipe for backpack feeding upgrade (#1462) @Pyritie
+- Greate shaft recipes are now shapeless (#1453) @Pyritie
+- Added crafting table recipes for matches and the matchbox (#1449) @Pyritie
+- Made "Etched" accessible earlier (#1473) @Nebby1999
+- Added faster recipes for crafting dough until the food processor @Pyritie
+- Black bronze now has a fluid pipe instead of an item pipe, so the drum has proper containment info @Pyritie
+- Added recipes to create basic TFC alcohol in the food processor @Pyritie
+- Added melting recipes for all the TFC metal powders @Pyritie
+- Added mortar and pestle recipes for soybean and olive paste (#1480) @Pyritie
+- Added concrete to the list of valid blocks for GT facades (#1487) @TheAshenWolf
+- Removed Advanced Peripherals' Overpowered End Automata for allowing cheap interdimensional travel
+- Removed Advanced Peripherals' Chunk Controller for allowing too much offline chunkloading, slowing down large servers
+- Added Invar as a TFC-compatible metal (#1496) @Pyritie
+- Added extruder/curving press recipes for Tuyeres (#1499) @Pyritie
+- Added recipes for more train tracks @Pyritie
+- Added a recipe to get Wood Gas for your food processor in LV (#1491) @Pyritie
+- Regular thorium is also now weakly radioactive @Pyritie
+- Added grape trellises to the list of plants harvestable by baskets (#1510) @Redeix
+- Added full PBR material shader support for custom GT machines and casings (#1512) @Redeix
+### Bug fixes
+- Some bug fixes for the electric refrigerators @gustovafing
+- Fixed not being able to craft fine wire in a coiling machine for materials that didn't also have normal wire @Pyritie
+- Fixed cobalt brass and potin double plates not being obtainable until MV @Pyritie
+- Fixed missing recipe for cooking fox meat @Pyritie
+- Fixed ingot extruder mold recipe conflict @BlueBoat29
+- Fixed wire cutter head extruder recipes missing a mold @Pyritie
+- Possibly fixed the issue with airplanes and akistor carts not appearing when placing them (#1447) @Pyritie
+- Fixed not being able to make sea water with TFC salt in a barrel (#1476) @Pyritie
+- Fixed the electric greenhouse fruit tree recipes making more saplings instead of fruit (#1445) @Pyritie
+- Fixed missing firmalife jam food processor recipes (#1478) @Pyritie
+- Book and quill uses any black dye now (#1506) @Pyritie
+- Button recipe unification (mostly) (#1461) @Pyritie
+### Translation updates
+- Ukranian @Furryks & @MetEnBouldry
+
 ## [0.10.4] - 25-07-2025
 ### Changes
 - Added block interactions for mossy cobble (#1434) @Redeix
@@ -25,6 +72,7 @@
 - Added mortar and pestel recipes for grain to flour @Pyritie
 - Added in-world shift + right-click interactions for bricks. Greens can be used to turn bricks into mossy bricks, and a knife reverts it. Hammers make cracked bricks and mortar repairs them. (#1416) @Redeix
 - Steam can now be pumped into Blaze Burners via the Straw (#1379) @Nyonyix
+- Rearranged some anvil finish sequences to fit TFG convention @Zippity
 - Replaced moon skeletons with Strays @Pyritie
 - Replaced Beneath cave endermen with a different, passive one (same loot table though) @Pyritie
 - Added sandpaper recipes for early game gems @Pyritie
@@ -34,6 +82,8 @@
 - Fixed new extruder molds missing a tag to work with the curving press (#1412) @Forsuin
 - Fixed contraptions no longer understanding TFC chests @Pyritie
 - Fixed ice never melting in the overworld (#1408) @Pyritie
+- Fixed small gears not having heat data @Zippity
+- Fixed forgeable small gears not being meltable @Zippity
 - Removed most empty tag recipes (#1420) @BlueBoat29
 - Fixed Styrene Butadiene Belt recipe (#1421) @BlueBoat29
 - Fixed deer dropping camelidae meat with a butchery knife @Pyritie

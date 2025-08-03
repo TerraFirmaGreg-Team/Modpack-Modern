@@ -5,8 +5,7 @@
  * @param {Internal.TFCDataEventJS} evt 
  */
 
-const registerTFCDataForImmersiveAircraft = (evt) =>
-{
+const registerTFCDataForImmersiveAircraft = (evt) => {
     evt.itemSize('immersive_aircraft:quadrocopter', 'large', 'heavy');
     evt.itemSize('immersive_aircraft:airship', 'very_large', 'heavy');
     evt.itemSize('immersive_aircraft:gyrodyne', 'very_large', 'very_heavy');

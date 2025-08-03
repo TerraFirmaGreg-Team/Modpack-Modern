@@ -17,7 +17,7 @@ function registerBetterEndRecipes(event) {
 			.EUt(GTValues.VA[GTValues.MV])
 			.dimension('ad_astra:moon')
 
-		event.recipes.gtceu.greenhouse(recipeId + "_helium")
+		event.recipes.gtceu.greenhouse(`${recipeId}_helium`)
 			.notConsumable(element.id)
 			.inputFluids(Fluid.of('gtceu:helium_3', 500))
 			.itemOutputs(`8x ${element.id}`)
@@ -28,4 +28,30 @@ function registerBetterEndRecipes(event) {
 			.EUt(GTValues.VA[GTValues.MV])
 			.dimension('ad_astra:moon')
 	});
+
+	Ingredient.of('#tfg:mars_plants').stacks.forEach(element => {
+		const itemId = element.id;
+		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
+
+		generateGreenHouseRecipe(event, itemId, 'tfg:semiheavy_ammoniacal_water', 8000, `8x ${itemId}`,
+			recipeId, 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV]);
+	});
+
+	generateGreenHouseRecipe(event, '8x betterend:amber_root_seeds', 'tfg:semiheavy_ammoniacal_water', 8000, 
+		'24x betterend:amber_root_product', 'amber_root', 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV])
+
+	generateGreenHouseRecipe(event, '8x betterend:blossom_berry_seeds', 'tfg:semiheavy_ammoniacal_water', 8000, 
+		'24x betterend:blossom_berry_product', 'blossom_berry', 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV])
+
+	generateGreenHouseRecipe(event, '8x betterend:bolux_mushroom_seeds', 'tfg:semiheavy_ammoniacal_water', 8000, 
+		'24x betterend:bolux_mushroom_product', 'bolux_mushroom', 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV])
+
+	generateGreenHouseRecipe(event, '8x betterend:cave_pumpkin_plant_seeds', 'tfg:semiheavy_ammoniacal_water', 8000, 
+		'24x betterend:cave_pumpkin', 'cave_pumpkin', 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV])
+
+	generateGreenHouseRecipe(event, '8x betterend:chorus_mushroom_seeds', 'tfg:semiheavy_ammoniacal_water', 8000,
+		'24x betterend:chorus_mushroom_product', 'chorus_mushroom', 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV])
+
+	generateGreenHouseRecipe(event, '8x betterend:shadow_berry', 'tfg:semiheavy_ammoniacal_water', 8000, 
+		'24x betterend:shadow_berry_product', 'shadow_berry', 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV])
 }

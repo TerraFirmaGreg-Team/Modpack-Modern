@@ -46,7 +46,7 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_FINE_WIRE,
 	} = $MATERIAL_FLAGS
 
-	var metalTooling = [
+	const metalTooling = [
 		GTToolType.AXE,
 		GTToolType.PICKAXE,
 		GTToolType.HARD_HAMMER,
@@ -134,6 +134,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RedAlloy.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(570, 650, 740, 2));
 	GTMaterials.TinAlloy.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1000, 1100, 1250, 3));
 	GTMaterials.Lead.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(170, 250, 330, 2));
+	GTMaterials.Invar.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(896, 1195, 1494, 3));
 
 
 	GTMaterials.Gold.addFlags(GENERATE_BELL);
@@ -185,6 +186,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR);
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Lead.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Invar.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL);
 	//
 	//		  /* Superconductors */
 	GTMaterials.ManganesePhosphide.addFlags(GENERATE_FINE_WIRE);
@@ -211,6 +213,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Copper.addFlags(GENERATE_FRAME);
 	GTMaterials.BlackBronze.addFlags(GENERATE_FRAME);
 	GTMaterials.BismuthBronze.addFlags(GENERATE_FRAME);
+	GTMaterials.RhodiumPlatedPalladium.addFlags(GENERATE_FRAME);
 
 	GTMaterials.Wood.addFlags(GENERATE_SMALL_GEAR);
 	GTMaterials.Brass.addFlags(GENERATE_SMALL_GEAR, GENERATE_RING);
@@ -229,6 +232,8 @@ const registerGTCEuMaterialModification = (event) => {
 
 	GTMaterials.Cupronickel.addFlags(GENERATE_BOLT_SCREW, GENERATE_RING);
 
+	GTMaterials.Ultimet.addFlags(GENERATE_ROTOR)
+	
 	GTMaterials.Invar.addFlags(GENERATE_RING);
 	GTMaterials.Magnalium.addFlags(GENERATE_RING);
 	GTMaterials.TinAlloy.addFlags(GENERATE_RING);
@@ -260,9 +265,9 @@ const registerGTCEuMaterialModification = (event) => {
 	// Hide netherite too
 	GTMaterials.Netherite.getProperty(PropertyKey.TOOL).removeTypes(metalTooling);
 
-	for (var material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
-		var toolProperty = material.getProperty(PropertyKey.TOOL);
-		if (toolProperty == null)
+	for (let material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
+		let toolProperty = material.getProperty(PropertyKey.TOOL);
+		if (toolProperty === null)
 			continue;
 
 		toolProperty.setDurability(toolProperty.getDurability() * 6);
@@ -272,6 +277,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Bismuth.setProperty(PropertyKey.ITEM_PIPE, new $ITEM_PIPE_PROPERTY(16384, 0.125));
 	// Bis bronze fluid pipe - same stats as bronze
 	GTMaterials.BismuthBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
+	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.ITEM_PIPE);
+	GTMaterials.BlackBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
 	// Red steel fluid pipe - same flow rate as aluminium, bad heat tolerance (same as PE) but can do cryo
 	GTMaterials.RedSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(370, 75, true, false, true, false));
 	// Blue steel fluid pipe - same flow rate as aluminium, same temp tolerance as tungsten
@@ -282,6 +289,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Cobaltite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
 	GTMaterials.Galena.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.WEAK_POISON, 1, false));
 	GTMaterials.Chromite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.IRRITANT, 1, false));
+	GTMaterials.Thorium.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.ANY, GTMedicalConditions.CARCINOGEN, 1, true));
 
 	// Make these the lowest tier of EBF instead
 	GTMaterials.BlackSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
@@ -291,7 +299,11 @@ const registerGTCEuMaterialModification = (event) => {
 	// Change byproducts so you can't get certus from normal quartzite
 	GTMaterials.Quartzite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.NetherQuartz, GTMaterials.Barite, GTMaterials.NetherQuartz);
 	GTMaterials.CertusQuartz.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.CertusQuartz, GTMaterials.Quartzite, GTMaterials.CertusQuartz);
-	
+
+	// Change Beryllium to add Chemical Bath recipe and Thorium byproduct
+	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Emerald, GTMaterials.Emerald, GTMaterials.Thorium, GTMaterials.Thorium);
+	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setWashedIn(GTMaterials.SodiumPersulfate);
+
 	// Color Adjustments
 	GTMaterials.BismuthBronze.setMaterialARGB(0x5A966E)
 	GTMaterials.BismuthBronze.setMaterialSecondaryARGB(0x203E2A)
@@ -339,10 +351,9 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Thorium.setMaterialSecondaryARGB(0xcd8dbc)
 
 	
-	global.MINECRAFT_DYE_NAMES.forEach(colorName =>
-	{
-		var material = GTCEuAPI.materialManager.getMaterial(`gtceu:${colorName}_dye`);
-		var property = material.getProperty(PropertyKey.FLUID);
+	global.MINECRAFT_DYE_NAMES.forEach(colorName => {
+		let material = GTCEuAPI.materialManager.getMaterial(`gtceu:${colorName}_dye`);
+		let property = material.getProperty(PropertyKey.FLUID);
 		property.getStorage().store($FluidStorageKeys.LIQUID, () => Fluid.of(`tfc:${colorName}_dye`).fluid, null);
 	});
 
@@ -354,5 +365,6 @@ const registerGTCEuMaterialModification = (event) => {
 	
 	GTCEuAPI.materialManager.getMaterial('tfg:kaolinite').setFormula("Al2Si2O5(OH)4", true)
 	GTCEuAPI.materialManager.getMaterial('tfg:vitrified_pearl').setFormula("(Al2Si2O5(OH)4)(BeK4N5)", true)
+	GTCEuAPI.materialManager.getMaterial('tfg:tmos').setFormula("Si(OCH3)4", true)
 
 }

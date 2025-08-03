@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "tfg:block/machines/ports/ev_railgun_item_loader_in",
+      "x": 90
+    },
+    "facing=east": {
+      "model": "tfg:block/machines/ports/ev_railgun_item_loader_in",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tfg:block/machines/ports/ev_railgun_item_loader_in"
+    },
+    "facing=south": {
+      "model": "tfg:block/machines/ports/ev_railgun_item_loader_in",
+      "y": 180
+    },
+    "facing=up": {
+      "gtceu:z": 180,
+      "model": "tfg:block/machines/ports/ev_railgun_item_loader_in",
+      "x": 270
+    },
+    "facing=west": {
+      "model": "tfg:block/machines/ports/ev_railgun_item_loader_in",
+      "y": 270
+    }
+  }
+}

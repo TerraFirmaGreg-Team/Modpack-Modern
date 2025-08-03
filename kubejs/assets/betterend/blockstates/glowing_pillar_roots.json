@@ -1,0 +1,7 @@
+{
+	"variants": {
+		"shape=top": { "model": "betterend:block/glowing_pillar_roots_top" },
+		"shape=middle": { "model": "betterend:block/glowing_pillar_roots_both" },
+		"shape=bottom": { "model": "betterend:block/glowing_pillar_roots_bottom" }
+	}
+}

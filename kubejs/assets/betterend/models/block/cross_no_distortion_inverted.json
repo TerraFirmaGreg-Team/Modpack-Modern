@@ -1,0 +1,29 @@
+{
+	"textures": {
+		"particle": "#texture"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "PlaneX1",
+			"from": [ 2.375, 0, 2.25 ],
+			"to": [ 2.376, 16, 18.25 ],
+			"rotation": { "origin": [ 2.375, 0, 2.25 ], "axis": "y", "angle": 45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 16, 0, 0, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 16, 0, 0, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneX1",
+			"from": [ 13.75, 0, 2.25 ],
+			"to": [ 13.751, 16, 18.25 ],
+			"rotation": { "origin": [ 13.75, 0, 2.25 ], "axis": "y", "angle": -45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 16, 0, 0, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 16, 0, 0, 16 ], "texture": "#texture" }
+			}
+		}
+	]
+}

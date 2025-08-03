@@ -14,8 +14,7 @@ function registerImmersiveAircraftRecipes(event) {
 	 * @param {string} id 
 	 * @param {{input: string, duration: number, outputsMacerator: Internal.ItemStack[], outputsArcFurnace: Internal.ItemStack[]}} args 
 	 */
-	let generateRecyclingRecipe = (id, args) =>
-	{
+	let generateRecyclingRecipe = (id, args) => {
 		event.recipes.gtceu.macerator(id)
 			.itemInputs(args.input)
 			// macerator only has 6 output slots
@@ -39,17 +38,14 @@ function registerImmersiveAircraftRecipes(event) {
 	 * @param {{tagPrefixMacerator: TagPrefix, tagPrefixArcFurnace: TagPrefix, count: number}[]} materialToResults 
 	 * @returns {input: string, duration: number, outputsMacerator: Internal.ItemStack[], outputsArcFurnace: Internal.ItemStack[]}
 	 */
-	let createRecyclingRecipeArgs = (inputItem, outputMaterialsArray, materialToResults) =>
-	{
+	let createRecyclingRecipeArgs = (inputItem, outputMaterialsArray, materialToResults) => {
 
 		let outputsMacerator = []
 		let outputsArcFurnace = []
 		let duration = 0;
 
-		for(let i = 0; i < outputMaterialsArray.length; i++)
-		{
-			if(i > 9)
-			{
+		for (let i = 0; i < outputMaterialsArray.length; i++) {
+			if (i > 9) {
 				break;
 			}
 
@@ -85,8 +81,7 @@ function registerImmersiveAircraftRecipes(event) {
 	 * @param {number} count 
 	 * @returns {tagPrefixMacerator: TagPrefix, tagPrefixArcFurnace: TagPrefix, count: number}
 	 */
-	let createMaterialsToResults = (tagPrefixMacerator, tagPrefixArcFurnace, count) =>
-	{
+	let createMaterialsToResults = (tagPrefixMacerator, tagPrefixArcFurnace, count) => {
 		let result = 
 		{
 			tagPrefixMacerator: tagPrefixMacerator,

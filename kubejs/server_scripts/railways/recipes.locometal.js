@@ -21,7 +21,7 @@ const locometalBase = {
 }
 
 const registerRailwaysLocometalRecipes = (event) => {
-	for (var locometal in locometalBase) {
+	for (let locometal in locometalBase) {
 		event.recipes.create.cutting(`8x railways:${locometal}`, '#forge:storage_blocks/iron').processingTime(200);
 		event.recipes.create.cutting(`16x railways:${locometal}`, '#forge:storage_blocks/wrought_iron').processingTime(200);
 		event.recipes.create.cutting(`24x railways:${locometal}`, '#forge:storage_blocks/steel').processingTime(200);
@@ -90,7 +90,7 @@ const registerRailwaysLocometalRecipes = (event) => {
 		.category(GTRecipeCategories.CHEM_DYES)
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
-		for (var locometal in locometalBase) {
+		for (let locometal in locometalBase) {
 			event.recipes.gtceu.chemical_bath(`tfg:chemical_dying_locometal/${locometal}/${dye}`)
 				.itemInputs(Item.of(locometalDyeGroups[`${locometal}`], 1))
 				.inputFluids(Fluid.of(`tfc:${dye}_dye`, 18))

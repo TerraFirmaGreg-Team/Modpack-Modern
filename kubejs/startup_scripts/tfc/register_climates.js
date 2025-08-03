@@ -48,12 +48,10 @@ function calcCurrentTemp(averageTemp, seaLevel, playerY, calendarTicks, tempRang
 		// This is taken from TFC's OverworldClimateModel.java
 		let elevationTemp = clamp((playerY - seaLevel) * 0.16225, 0, 17.822);
 		return averageTemp - elevationTemp + tempDiff;
-	}
-	else if (playerY > 20) {
+	} else if (playerY > 20) {
 
 		return averageTemp + (tempDiff * (playerY / seaLevel));
-	}
-	else {
+	} else {
 
 		// TODO: check this
 		let depthPercent = 1 - (playerY / 20);
@@ -168,7 +166,7 @@ TFCEvents.registerClimateModel(event => {
 		})
 
 		builder.setAirFog((level, pos, calendarTicks) => 0)
-		builder.setWaterFog((level, pos, calendarTicks) => 0.25)
-		builder.setWindVector((level, block, calendarTicks) => builder.vector(0.25, 0.25))
+		builder.setWaterFog((level, pos, calendarTicks) => 0.1)
+		builder.setWindVector((level, block, calendarTicks) => builder.vector(0.25, 0.1))
 	})
 })

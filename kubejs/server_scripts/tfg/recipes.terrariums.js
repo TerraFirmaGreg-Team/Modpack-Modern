@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function registerTFGTerrariumRecipes(event) {
 	
 	event.remove({ id: 'gtceu:gas_collector/nether_air' })

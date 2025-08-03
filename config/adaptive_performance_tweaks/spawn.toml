@@ -2,7 +2,7 @@
 #Adaptive Performance Tweaks: Spawn
 [General]
 	#General allow list for spawn entities (e.g. minecraft:squid) which should be ignored for optimization.
-	allowList = [""]
+	allowList = ["immersive_aircraft:quadrocopter", "immersive_aircraft:airship", "immersive_aircraft:cargo_airship", "immersive_aircraft:warship", "immersive_aircraft:gyrodyne", "man_of_many_planes:economy_plane", "immersive_aircraft:biplane", "man_of_many_planes:scarlet_biplane", "immersive_aircraft:bamboo_hopper"]
 	#General deny list for spawn entities (e.g. minecraft:bat) to no longer spawn in all worlds.
 	denyList = [""]
 	#General list of ignored dimensions.

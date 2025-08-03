@@ -63,18 +63,26 @@ const registerMinecraftItemTags = (event) => {
     event.remove('forge:gems', 'minecraft:coal')
     event.remove('forge:gems', 'minecraft:flint')
 
-    event.add('tfc:compost_greens_high', 'minecraft:red_mushroom_block')
-    event.add('tfc:compost_greens_high', 'minecraft:brown_mushroom_block')
-    event.add('tfc:compost_greens_high', 'minecraft:twisting_vines')
+    event.add('tfc:compost_greens', 'minecraft:red_mushroom_block')
+    event.add('tfc:compost_greens', 'minecraft:brown_mushroom_block')
+    event.add('tfc:compost_greens', 'minecraft:moss_block')
+    event.add('tfc:compost_greens_low', 'minecraft:moss_carpet')
+    event.add('tfc:compost_greens_low', 'minecraft:twisting_vines')
     event.add('tfc:compost_greens_high', 'minecraft:pearlescent_froglight')
     event.add('tfc:compost_greens_high', 'minecraft:verdant_froglight')
     event.add('tfc:compost_greens_high', 'minecraft:ochre_froglight')
+    event.add('tfc:moss', 'minecraft:moss_carpet')
 
     event.add('tfc:colored_terracotta', 'minecraft:white_terracotta')
 
     event.add('tfc:bells', 'minecraft:bell')
 
     event.add('tfc:plants', 'minecraft:spore_blossom')
+    
+	event.add('tfc:compost_greens', 'minecraft:nether_wart_block')
+	event.add('tfc:compost_greens', 'minecraft:warped_wart_block')
+
+    event.add('forge:dyes/black', 'minecraft:ink_sac')
 }
 
 const registerMinecraftBlockTags = (event) => {
@@ -146,4 +154,6 @@ const registerMinecraftBlockTags = (event) => {
     event.add('tfg:brick_walls', 'minecraft:blackstone_wall')
     
     //#region
+
+    event.removeAll('minecraft:sniffer_diggable_block')
 }

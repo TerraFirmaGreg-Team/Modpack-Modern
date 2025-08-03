@@ -1,0 +1,75 @@
+{
+	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "betterend:block/umbrella_moss_bottom",
+		"texture": "betterend:block/umbrella_moss_bottom"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "PlaneX3",
+			"from": [ -2, 0, -2 ],
+			"to": [ -1.999, 16, 14 ],
+			"rotation": { "origin": [ -2, 0, -2 ], "axis": "y", "angle": 45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneX3",
+			"from": [ 9.5, 0, -2 ],
+			"to": [ 9.501, 16, 14 ],
+			"rotation": { "origin": [ 9.5, 0, -2 ], "axis": "y", "angle": -45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneX3",
+			"from": [ 6, 0, 3 ],
+			"to": [ 6.001, 16, 19 ],
+			"rotation": { "origin": [ 6, 0, 3 ], "axis": "y", "angle": 45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneX3",
+			"from": [ 17.5, 0, 3 ],
+			"to": [ 17.501, 16, 19 ],
+			"rotation": { "origin": [ 17.5, 0, 3 ], "axis": "y", "angle": -45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneX3",
+			"from": [ -1, 0, 6 ],
+			"to": [ -0.999, 16, 22 ],
+			"rotation": { "origin": [ -1, 0, 6 ], "axis": "y", "angle": 45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneX3",
+			"from": [ 10.5, 0, 6 ],
+			"to": [ 10.501, 16, 22 ],
+			"rotation": { "origin": [ 10.5, 0, 6 ], "axis": "y", "angle": -45 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+			}
+		}
+	]
+}

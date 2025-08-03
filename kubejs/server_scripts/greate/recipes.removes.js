@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function removeGreateRecipes(event) {
 
 	global.GREATE_DISABLED_ITEMS.forEach(item => {
@@ -15,6 +18,7 @@ function removeGreateRecipes(event) {
 
 	event.remove({ mod: 'greate', input: 'create:andesite_alloy' });
 	event.remove({ mod: 'greate', output: 'minecraft:bamboo_pressure_plate'})
+
 	
 	event.remove({ id: 'greate:shapeless/large_andesite_alloy_cogwheel_from_little' })
 	event.remove({ id: 'greate:shapeless/large_steel_cogwheel_from_little' })
@@ -42,4 +46,6 @@ function removeGreateRecipes(event) {
 	event.remove({ mod: 'greate', type: 'create:deploying' });
 	event.remove({ mod: 'greate', type: 'create:sequenced_assembly' });
 	event.remove({ mod: 'greate', type: 'gtceu:assembler' });
+
+	event.remove({ id: 'greate:cutting/integration/create/cutting/runtime_generated/compat/minecraft/bamboo_planks_to_bamboo_button' })
 }

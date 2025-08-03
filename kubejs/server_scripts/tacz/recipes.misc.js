@@ -29,12 +29,13 @@ function registerTACZMiscRecipes(event) {
 	
 	//Molds
 	event.shaped('tfg:small_casing_extruder_mold',[
-		'  A',
-		' B ',
-		'   '
+		' A ',
+		'B  ',
+		'  C'
 	],{
 		A: '#forge:tools/wire_cutters',
-		B: 'gtceu:empty_mold'
+		B: 'gtceu:empty_mold',
+		C: '#forge:tools/files'
 	}).id('tfg:small_casing_extruder_mold');
 	
 	event.shaped('tfg:large_casing_extruder_mold',[

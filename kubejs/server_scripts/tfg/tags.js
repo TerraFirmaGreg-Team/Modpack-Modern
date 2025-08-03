@@ -4,7 +4,7 @@ const registerTFGItemTags = (event) => {
 
 	registerTFGTrimTags(event)
 	registerFacadeWhitelistTags(event)
-    //crop stuff
+	//crop stuff
 	event.add('tfc:seeds', 'tfg:sunflower_seeds')
 	event.add('tfc:seeds', 'tfg:rapeseed_seeds')
 	event.add('tfc:foods', 'tfg:roasted_sunflower_seeds')
@@ -27,7 +27,7 @@ const registerTFGItemTags = (event) => {
 	})
 	event.add('tfg:decorative_vases', 'tfg:decorative_vase')
 	event.add('tfg:decorative_vases/unfired', 'tfg:decorative_vase/unfired')
-	
+
 	//Knapping
 	event.add('tfc:any_knapping', 'minecraft:flint')
 
@@ -40,7 +40,7 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/tin_alloy')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/cupronickel')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/magnalium')
-	
+
 	event.add('minecraft:piglin_loved', 'tfg:piglin_disguise')
 
 	event.add('forge:tools/trowels', 'tfg:trowel')
@@ -148,25 +148,27 @@ const registerTFGItemTags = (event) => {
 	})
 
 	// Universal Circuits
-	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => { event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`); })
+	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
+		event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`);
+	})
 
 	// Brick Index
 	const BRICK_KEYS = [
-		"brick", 
-		"brick_stairs", 
-		"brick_slab", 
+		"brick",
+		"brick_stairs",
+		"brick_slab",
 		"brick_wall",
-		"cracked_brick", 
-		"cracked_stairs", 
-		"cracked_slab", 
+		"cracked_brick",
+		"cracked_stairs",
+		"cracked_slab",
 		"cracked_wall",
-		"mossy_brick", 
-		"mossy_stairs", 
-		"mossy_slab", 
+		"mossy_brick",
+		"mossy_stairs",
+		"mossy_slab",
 		"mossy_wall",
-		"smooth_brick", 
-		"smooth_stairs", 
-		"smooth_slab", 
+		"smooth_brick",
+		"smooth_stairs",
+		"smooth_slab",
 		"smooth_wall",
 		"chiseled_brick"
 	];
@@ -241,6 +243,34 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:foods/usable_in_meal_bag', 'tfc:food/boiled_egg');
 	//#endregion
 
+	//#region Blacklisted from the railgun
+	event.add('tfg:cannot_launch_in_railgun', '#tfc:vessels')
+	event.add('tfg:cannot_launch_in_railgun', '#tfc:large_vessels')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:item_storage_cell_1k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:item_storage_cell_4k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:item_storage_cell_16k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:item_storage_cell_64k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:item_storage_cell_256k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:fluid_storage_cell_1k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:fluid_storage_cell_4k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:fluid_storage_cell_16k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:fluid_storage_cell_64k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:fluid_storage_cell_256k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:spatial_storage_cell_2')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:spatial_storage_cell_16')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:spatial_storage_cell_128')
+	event.add('tfg:cannot_launch_in_railgun', 'megacells:item_storage_cell_1m')
+	event.add('tfg:cannot_launch_in_railgun', 'megacells:item_storage_cell_4m')
+	event.add('tfg:cannot_launch_in_railgun', 'megacells:item_storage_cell_16m')
+	event.add('tfg:cannot_launch_in_railgun', 'megacells:item_storage_cell_64m')
+	event.add('tfg:cannot_launch_in_railgun', 'megacells:fluid_storage_cell_1m')
+	event.add('tfg:cannot_launch_in_railgun', 'megacells:fluid_storage_cell_4m')
+	event.add('tfg:cannot_launch_in_railgun', 'megacells:fluid_storage_cell_16m')
+	event.add('tfg:cannot_launch_in_railgun', 'megacells:fluid_storage_cell_64m')
+	event.add('tfg:cannot_launch_in_railgun', 'create:minecart_contraption')
+	event.add('tfg:cannot_launch_in_railgun', 'tfg:railgun_ammo_shell')
+	//#endregion
+
 	// #region Space blocks
 	event.add('tfg:moon_plants', 'tfg:lunar_roots')
 	event.add('tfg:moon_plants', 'tfg:lunar_sprouts')
@@ -251,6 +281,12 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:grass', 'tfg:grass/rusticus_mycelium')
 	event.add('tfc:grass', 'tfg:grass/sangnum_mycelium')
 	// #endregion
+
+	 // Mars stone dust
+
+	event.add('forge:mars_stone_dusts', 'tfg:venus_stone_dust')
+	event.add('forge:mars_stone_dusts', 'gtceu:granite_red_dust')
+	event.add('forge:mars_stone_dusts', 'tfg:mars_stone_dust')
 
 	// #region 0.7.19 -> 0.9 conversion
 	event.add('c:hidden_from_recipe_viewers', 'treetap:tap')
@@ -356,12 +392,12 @@ const registerTFGItemTags = (event) => {
 const registerTFGBlockTags = (event) => {
 
 	event.add('minecraft:mineable/shovel', 'tfg:ash_pile')
-    //crop stuff
+	//crop stuff
 	event.add('tfc:crops', 'tfg:rapeseed')
 	event.add('tfc:mineable_with_sharp_tool', 'tfg:rapeseed')
 
-	event.add('tfc:crops', 'tfg:sunflower')	
-	event.add('tfc:mineable_with_sharp_tool','tfg:sunflower')
+	event.add('tfc:crops', 'tfg:sunflower')
+	event.add('tfc:mineable_with_sharp_tool', 'tfg:sunflower')
 
 	// #region Nether blocks
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')
@@ -386,6 +422,9 @@ const registerTFGBlockTags = (event) => {
 
 	// #region Mars blocks
 	event.add('minecraft:dirt', 'tfg:grass/mars_dirt')
+	event.add('minecraft:dirt', 'tfg:grass/amber_mycelium')
+	event.add('minecraft:dirt', 'tfg:grass/rusticus_mycelium')
+	event.add('minecraft:dirt', 'tfg:grass/sangnum_mycelium')
 	event.add('tfc:dirt', 'tfg:grass/mars_dirt')
 	event.add('tfc:grass', 'tfg:grass/amber_mycelium')
 	event.add('tfc:grass', 'tfg:grass/rusticus_mycelium')
@@ -397,11 +436,18 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfc:can_landslide', 'tfg:grass/amber_mycelium')
 	event.add('tfc:can_landslide', 'tfg:grass/rusticus_mycelium')
 	event.add('tfc:can_landslide', 'tfg:grass/sangnum_mycelium')
+	event.add('minecraft:mushroom_grow_block', '#tfc:dirt')
+	event.add('minecraft:mushroom_grow_block', '#tfc:grass')
 	// #endregion
 
 	event.add('tfg:harvester_harvestable', '#tfc:fruit_tree_leaves')
 	event.add('tfg:harvester_harvestable', '#tfc:berry_bushes')
 	event.add('tfg:harvester_harvestable', '#tfc:any_spreading_bush')
+	event.add('tfg:harvester_harvestable', '#firmalife:grape_strings')
+	event.add('tfg:harvester_harvestable', '#firmalife:grape_trellis_posts_plant')
+	//added for QOL but doesnt harvest anything
+	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_red')
+	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_white')
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_large')
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_small')
@@ -439,6 +485,21 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfg:clean_water', 'tfc:spring_water')
 
 	event.add('tfc:usable_in_barrel', 'gtceu:seed_oil')
+	
+	event.add('forge:liquid', 'tfg:semiheavy_ammoniacal_water')
+	event.add('waves:has_waves', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:any_water', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:hydrating', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:drinkables', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:any_drinkables', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:ingredients', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:usable_in_pot', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:usable_in_wooden_bucket', 'tfg:semiheavy_ammoniacal_water')
+	event.add('tfc:usable_in_barrel', 'tfg:semiheavy_ammoniacal_water')
+	event.add('firmalife:usable_in_mixing_bowl', 'tfg:semiheavy_ammoniacal_water')
+	event.add('firmalife:mixable', 'tfg:semiheavy_ammoniacal_water')
+	event.add('firmalife:usable_in_vat', 'tfg:semiheavy_ammoniacal_water')
+	event.add('minecraft:water', 'tfg:semiheavy_ammoniacal_water')
 
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
@@ -504,7 +565,7 @@ const registerTFGBiomeTags = (event) => {
 
 // Other space decoration is in ad_astra/tags.js
 const registerTFGPlacedFeatures = (event) => {
-	
+
 	// #region Earth biomes
 
 	event.add('tfc:in_biome/surface_decoration/ocean', 'tfg:earth/rose_quartz/rose_quartz')

@@ -15,13 +15,13 @@ TFCEvents.createChunkDataProvider('mars', event => {
         .scaled(6, 18, 0, 1)
 
     // Precompute the surface & aquifer heights as constants as this is nether and does not realistically change
-    var heights = [];
-    var i = 0;
+    let heights = [];
+    let i = 0;
     while (i < 256) {
         heights.push(127);
         i++;
     }
-    var aquifer = [];
+    let aquifer = [];
     i = 0;
     while (i < 16) {
         aquifer.push(32);
@@ -29,10 +29,10 @@ TFCEvents.createChunkDataProvider('mars', event => {
     }
 
     event.partial((data, chunk) => {
-        var x = chunk.pos.minBlockX;
-        var z = chunk.pos.minBlockZ;
+        let x = chunk.pos.minBlockX;
+        let z = chunk.pos.minBlockZ;
 
-        var temp = TFC.misc.lerpFloatLayer(
+        let temp = TFC.misc.lerpFloatLayer(
             tempLayer.noise(x, z),
             tempLayer.noise(x, z + 15),
             tempLayer.noise(x + 15, z),

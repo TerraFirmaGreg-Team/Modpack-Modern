@@ -1,0 +1,28 @@
+{
+    "variants": {
+        "top=true,rotation=0": [
+			{ "model": "betterend:block/twisted_umbrella_moss_top" },
+			{ "model": "betterend:block/twisted_umbrella_moss_top_2" },
+			{ "model": "betterend:block/twisted_umbrella_moss_top_3" }
+		],
+        "top=false,rotation=0": { "model": "betterend:block/twisted_umbrella_moss_bottom" },
+		"top=true,rotation=1": [
+			{ "model": "betterend:block/twisted_umbrella_moss_top", "y": 90 },
+			{ "model": "betterend:block/twisted_umbrella_moss_top_2", "y": 90 },
+			{ "model": "betterend:block/twisted_umbrella_moss_top_3", "y": 90 }
+		],
+        "top=false,rotation=1": { "model": "betterend:block/twisted_umbrella_moss_bottom", "y": 90 },
+		"top=true,rotation=2": [
+			{ "model": "betterend:block/twisted_umbrella_moss_top", "y": 180 },
+			{ "model": "betterend:block/twisted_umbrella_moss_top_2", "y": 180 },
+			{ "model": "betterend:block/twisted_umbrella_moss_top_3", "y": 180 }
+		],
+        "top=false,rotation=2": { "model": "betterend:block/twisted_umbrella_moss_bottom", "y": 180 },
+		"top=true,rotation=3": [
+			{ "model": "betterend:block/twisted_umbrella_moss_top", "y": 270 },
+			{ "model": "betterend:block/twisted_umbrella_moss_top_2", "y": 270 },
+			{ "model": "betterend:block/twisted_umbrella_moss_top_3", "y": 270 }
+		],
+        "top=false,rotation=3": { "model": "betterend:block/twisted_umbrella_moss_bottom", "y": 270 }
+    }
+}

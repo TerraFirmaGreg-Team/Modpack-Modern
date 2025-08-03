@@ -24,7 +24,8 @@
     "minecraft:player": false,
     "minecraft:arrow": false,
     "create": false,
-    "minecraft:ender_dragon": false
+    "minecraft:ender_dragon": false,
+	"sandworm_mod": false
   },
   "version": 2,
   "name": "immersive_optimization"
