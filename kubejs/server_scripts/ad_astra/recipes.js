@@ -443,7 +443,7 @@ const registerAdAstraRecipes = (event) => {
 		' C ',
 		'BFE'
 	], {
-		A: 'ad_astra:photovoltaic_etrium_cell',
+		A: 'tfg:photo_cell_t1',
 		B: '#gtceu:batteries/mv',
 		C: '#forge:rods/long/aluminium',
 		E: '#gtceu:circuits/mv',
