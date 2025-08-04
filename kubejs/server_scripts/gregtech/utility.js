@@ -47,7 +47,7 @@ const generateMixerRecipe = (event, input, fluid_input, output, circuit, fluid_o
  * @param {string} id -Recipe ID
  */
 const generateCutterRecipe = (event, input, output, duration, EUt, id) => {
-	event.recipes.gtceu.cutter(`tfg:${id}`)
+	return event.recipes.gtceu.cutter(`tfg:${id}`)
 		.itemInputs(input)
 		.itemOutputs(output)
 		.duration(duration)
@@ -160,6 +160,7 @@ function generatePlatedBlockRecipe(event, material) {
 	event.recipes.gtceu.assembler(`tfg:${material.getName()}_plated_block`)
 		.itemInputs('#forge:stone_bricks', plateItem)
 		.itemOutputs(platedBlock)
+		.addMaterialInfo(true)
 		.circuit(10)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -169,18 +170,6 @@ function generatePlatedBlockRecipe(event, material) {
 			.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
 			.id(`tfc:heating/metal/${tfcMetalName}_block`)
 	}
-	event.recipes.gtceu.macerator(`tfg:${material.getName()}_plated_block`)
-		.itemInputs(platedBlock)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 1), 'gtceu:stone_dust')
-		.duration(material.getMass())
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-	event.recipes.gtceu.arc_furnace(`tfg:${material.getName()}_plated_block`)
-		.itemInputs(platedBlock)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 1), 'gtceu:ash_dust')
-		.duration(material.getMass())
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-		.EUt(GTValues.VA[GTValues.LV])
 
 
 	event.recipes.create.item_application(platedSlab, ['#tfg:brick_slabs', plateItem])
@@ -188,8 +177,9 @@ function generatePlatedBlockRecipe(event, material) {
 	event.recipes.createDeploying(platedSlab, ['#tfg:brick_slabs', plateItem])
 		.id(`tfg:deploying/${material.getName()}_plated_slab`)
 	event.recipes.gtceu.assembler(`tfg:${material.getName()}_plated_slab`)
-		.itemInputs('#tfg:brick_slabs', plateItem)
-		.itemOutputs(platedSlab)
+		.itemInputs('2x #tfg:brick_slabs', plateItem)
+		.itemOutputs(platedSlab.withCount(2))
+		.addMaterialInfo(true)
 		.circuit(10)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -200,18 +190,6 @@ function generatePlatedBlockRecipe(event, material) {
 			.resultFluid(Fluid.of(outputMaterial.getFluid(), 72))
 			.id(`tfc:heating/metal/${tfcMetalName}_block_slab`)
 	}
-	event.recipes.gtceu.macerator(`tfg:${material.getName()}_plated_slab`)
-		.itemInputs(platedSlab)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.dustSmall, material, 2), 'gtceu:small_stone_dust')
-		.duration(material.getMass())
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-	event.recipes.gtceu.arc_furnace(`tfg:${material.getName()}_plated_slab`)
-		.itemInputs(platedSlab)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.nugget, material, 4), 'gtceu:small_ash_dust')
-		.duration(material.getMass())
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-		.EUt(GTValues.VA[GTValues.LV])
 
 
 	event.recipes.create.item_application(platedStair, ['#tfg:brick_stairs', plateItem])
@@ -221,6 +199,7 @@ function generatePlatedBlockRecipe(event, material) {
 	event.recipes.gtceu.assembler(`tfg:${material.getName()}_plated_stair`)
 		.itemInputs('#tfg:brick_stairs', plateItem)
 		.itemOutputs(platedStair)
+		.addMaterialInfo(true)
 		.circuit(10)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -230,18 +209,6 @@ function generatePlatedBlockRecipe(event, material) {
 			.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
 			.id(`tfc:heating/metal/${tfcMetalName}_block_stairs`)
 	}
-	event.recipes.gtceu.macerator(`tfg:${material.getName()}_plated_stair`)
-		.itemInputs(platedStair)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 1), 'gtceu:stone_dust')
-		.duration(material.getMass())
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-	event.recipes.gtceu.arc_furnace(`tfg:${material.getName()}_plated_stair`)
-		.itemInputs(platedStair)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 1), 'gtceu:ash_dust')
-		.duration(material.getMass())
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-		.EUt(GTValues.VA[GTValues.LV])
 }
 //#endregion
 

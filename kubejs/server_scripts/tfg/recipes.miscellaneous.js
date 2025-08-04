@@ -174,7 +174,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	// Steam bloomery
-	event.shaped('gtceu:steam_bloomery', [
+	event.recipes.gtceu.shaped('gtceu:steam_bloomery', [
 		'CEC',
 		'DAD',
 		'CBC'
@@ -184,7 +184,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		C: '#forge:rods/black_steel',
 		D: '#forge:screws/wrought_iron',
 		E: '#forge:tools/wrenches'
-	})
+	}).addMaterialInfo(true)
 
 	// Arrow Parts
 	event.recipes.tfc.knapping(
@@ -341,6 +341,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.recipes.gtceu.wiremill('tfg:wiremill/polycaprolactam_string')
 		.itemInputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Polycaprolactam, 1))
 		.itemOutputs('32x tfg:polycaprolactam_string')
+		.addMaterialInfo(true)
 		.duration(100)
 		.circuit(0)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -355,6 +356,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.recipes.gtceu.assembler('tfg:assembler/polycaprolactam_fabric')
 		.itemInputs('16x tfg:polycaprolactam_string')
 		.itemOutputs('1x tfg:polycaprolactam_fabric')
+		.addMaterialInfo(true)
 		.duration(100)
 		.circuit(0)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -433,6 +435,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.recipes.gtceu.assembler('tfg:assembler/trowel')
 		.itemInputs(ChemicalHelper.get(TagPrefix.plate, GTMaterials.Invar, 2), '1x #forge:screws', '1x #tfc:lumber')
 		.itemOutputs('1x tfg:trowel')
+		.addMaterialInfo(true)
 		.duration(40)
 		.circuit(4)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -441,6 +444,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.recipes.gtceu.forming_press('tfg:forming_press/foil_pack')
 		.itemInputs(ChemicalHelper.get(TagPrefix.foil, GTMaterials.Aluminium, 1), ChemicalHelper.get(TagPrefix.foil, GTMaterials.Polyethylene, 1))
 		.itemOutputs('1x tfg:foil_pack')
+		.addMaterialInfo(true)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.MV])
 
@@ -658,6 +662,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemInputs('#forge:ender_pearls', '2x tfc:powder/kaolinite', '4x #forge:insulation_t1')
 		.inputFluids(Fluid.of('gtceu:nitrogen', 100))
 		.itemOutputs('tfg:vitrified_pearl')
+		.addMaterialInfo(true)
 		.chancedOutput('gtceu:ash_dust', 2500, 0)
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
@@ -712,6 +717,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.recipes.gtceu.assembler('field_generator_mv')
 		.itemInputs('tfg:vitrified_pearl', '2x #forge:plates/aluminium', '2x #gtceu:circuits/mv', '4x #forge:quadruple_wires/magnesium_diboride')
 		.itemOutputs('gtceu:mv_field_generator')
+		.addMaterialInfo(true)
 		.duration(100)
 		.EUt(30)
 
@@ -729,6 +735,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.recipes.gtceu.assembler('emitter_hv')
 		.itemInputs('tfg:vitrified_pearl', '4x #forge:rods/chromium', '2x #gtceu:circuits/hv', '2x #forge:single_cables/gold')
 		.itemOutputs('gtceu:hv_emitter')
+		.addMaterialInfo(true)
 		.circuit(1)
 		.duration(100)
 		.EUt(30)
@@ -747,6 +754,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.recipes.gtceu.assembler('sensor_hv')
 		.itemInputs('tfg:vitrified_pearl', '#forge:rods/chromium', '#gtceu:circuits/hv', '4x #forge:plates/stainless_steel')
 		.itemOutputs('gtceu:hv_sensor')
+		.addMaterialInfo(true)
 		.duration(100)
 		.EUt(30)
 
@@ -765,6 +773,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.recipes.gtceu.assembler('emitter_ev')
 		.itemInputs('tfg:cryo_fluix_pearl', '4x #forge:rods/platinum', '2x #gtceu:circuits/ev', '2x #forge:single_cables/aluminium')
 		.itemOutputs('gtceu:ev_emitter')
+		.addMaterialInfo(true)
 		.circuit(1)
 		.duration(100)
 		.EUt(30)
@@ -783,6 +792,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.recipes.gtceu.assembler('sensor_ev')
 		.itemInputs('tfg:cryo_fluix_pearl', '#forge:rods/platinum', '#gtceu:circuits/ev', '4x #forge:plates/titanium')
 		.itemOutputs('gtceu:ev_sensor')
+		.addMaterialInfo(true)
 		.duration(100)
 		.EUt(30)
 		
@@ -801,6 +811,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.recipes.gtceu.assembler('emitter_iv')
 		.itemInputs('gtceu:quantum_eye', '4x #forge:rods/iridium', '2x #gtceu:circuits/iv', '2x #forge:single_cables/tungsten')
 		.itemOutputs('gtceu:iv_emitter')
+		.addMaterialInfo(true)
 		.circuit(1)
 		.duration(100)
 		.EUt(30)
@@ -818,7 +829,8 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.recipes.gtceu.assembler('sensor_iv')
 		.itemInputs('gtceu:quantum_eye', '#forge:rods/iridium', '#gtceu:circuits/iv', '4x #forge:plates/tungsten_steel')
-		.itemOutputs('gtceu:ev_sensor')
+		.itemOutputs('gtceu:iv_sensor')
+		.addMaterialInfo(true)
 		.duration(100)
 		.EUt(30)
 	
@@ -886,6 +898,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		)
 		.inputFluids(Fluid.of('gtceu:cobalt_brass', 144))
 		.itemOutputs('tfg:aluminium_harvest_basket')
+		.addMaterialInfo(true, true)
 		.duration(200)
 		.circuit(4)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -1029,6 +1042,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		)
 		.inputFluids(Fluid.of('gtceu:blue_alloy', 288))
 		.itemOutputs('6x tfg:electromagnetic_accelerator')
+		.addMaterialInfo(true)
 		.circuit(4)
 		.duration(800)
 		.EUt(GTValues.VA[GTValues.MV])
@@ -1040,6 +1054,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		)
 		.inputFluids(Fluid.of('gtceu:silicon', 72))
 		.itemOutputs('2x tfg:machine_casing_aluminium_plated_steel')
+		.addMaterialInfo(true)
 		.circuit(6)
 		.duration(20 * (2.5))
 		.EUt(GTValues.VH[GTValues.LV])

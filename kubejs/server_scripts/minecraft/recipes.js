@@ -353,6 +353,7 @@ const registerMinecraftRecipes = (event) => {
 	event.recipes.gtceu.assembler('redstone_lamp')
 		.itemInputs('1x #forge:glass', '1x minecraft:glowstone', '1x #forge:rods/red_alloy')
 		.itemOutputs('minecraft:redstone_lamp')
+		.addMaterialInfo(true)
 		.duration(50)
 		.EUt(7)
 
@@ -702,8 +703,9 @@ const registerMinecraftRecipes = (event) => {
 
 	event.recipes.gtceu.assembler('dispenser')
 		.itemInputs('7x #forge:cobblestone', 'minecraft:redstone', 'minecraft:bow')
-		.circuit(1)
 		.itemOutputs('minecraft:dispenser')
+		.addMaterialInfo(true)
+		.circuit(1)
 		.duration(100)
 		.EUt(30)
 
@@ -724,8 +726,9 @@ const registerMinecraftRecipes = (event) => {
 
 	event.recipes.gtceu.assembler('dropper')
 		.itemInputs('7x #forge:cobblestone', '2x minecraft:redstone')
-		.circuit(2)
 		.itemOutputs('minecraft:dropper')
+		.addMaterialInfo(true)
+		.circuit(2)
 		.duration(100)
 		.EUt(30)
 
@@ -927,6 +930,7 @@ const registerMinecraftRecipes = (event) => {
 		.id('tfg:shapeless/lever')
 
 	generateCutterRecipe(event, '#forge:double_plates/wrought_iron', 'minecraft:iron_door', 400, GTValues.VA[GTValues.LV], 'iron_door')
+		.addMaterialInfo(true)
 
 	event.shaped('4x minecraft:ladder', [
 		'A A',

@@ -3,8 +3,6 @@
 
 const registerCccBridgeRecipes = (event) => {
 	
-    registerCccBridgeRecyclingRecipes(event);
-
     event.remove({not: [
 		{ id: 'cccbridge:to_target_block' }, 
 		{ id: 'cccbridge:to_source_block' }
@@ -15,6 +13,7 @@ const registerCccBridgeRecipes = (event) => {
 		.itemInputs('1x gtceu:hv_machine_casing','2x gtceu:hv_robot_arm','2x vintageimprovements:redstone_module', '1x greate:stainless_steel_cogwheel', '1x gtceu:computer_monitor_cover')
 		.circuit(4)
 		.itemOutputs('cccbridge:animatronic_block')
+		.addMaterialInfo(true)
 		.duration(800)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -23,6 +22,7 @@ const registerCccBridgeRecipes = (event) => {
 		.itemInputs('1x computercraft:wired_modem', '1x greate:aluminium_cogwheel', '1x gtceu:computer_monitor_cover')
 		.circuit(4)
 		.itemOutputs('cccbridge:scroller_block')
+		.addMaterialInfo(true)
 		.duration(600)
 		.EUt(GTValues.VA[GTValues.MV])
 
@@ -31,6 +31,7 @@ const registerCccBridgeRecipes = (event) => {
 		.itemInputs('1x computercraft:wired_modem', '1x gtceu:mv_machine_casing', '1x gtceu:computer_monitor_cover','10x vintageimprovements:redstone_module', '8x #gtceu:transistors')
 		.circuit(4)
 		.itemOutputs('cccbridge:redrouter_block')
+		.addMaterialInfo(true)
 		.duration(800)
 		.EUt(GTValues.VA[GTValues.MV])
 
@@ -39,6 +40,7 @@ const registerCccBridgeRecipes = (event) => {
 		.itemInputs('1x computercraft:wired_modem', '1x gtceu:mv_machine_casing', '1x gtceu:computer_monitor_cover', ChemicalHelper.get(TagPrefix.plate, GTMaterials.Redstone, 8))
 		.circuit(4)
 		.itemOutputs('cccbridge:source_block')
+		.addMaterialInfo(true)
 		.duration(800)
 		.EUt(GTValues.VA[GTValues.MV])
 }

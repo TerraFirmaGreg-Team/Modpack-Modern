@@ -7,7 +7,7 @@
 function registerGTCEuMachineRecipes(event) {
 	//#region Выход: Filter Casing
 
-	event.shaped('gtceu:filter_casing', [
+	event.recipes.gtceu.shaped('gtceu:filter_casing', [
 		'AAA',
 		'BBB',
 		'CDE'
@@ -17,13 +17,13 @@ function registerGTCEuMachineRecipes(event) {
 		C: 'gtceu:mv_electric_motor',
 		D: 'gtceu:steel_frame',
 		E: '#forge:rotors/steel'
-	}).id('gtceu:shaped/filter_casing')
+	}).addMaterialInfo().id('gtceu:shaped/filter_casing')
 
 	//#endregion
 
 	//#region Выход: Assembly Line Grating
 
-	event.shaped('2x gtceu:assembly_line_grating', [
+	event.recipes.gtceu.shaped('2x gtceu:assembly_line_grating', [
 		'ABA',
 		'ACA',
 		'ADA'
@@ -32,13 +32,13 @@ function registerGTCEuMachineRecipes(event) {
 		B: '#forge:rotors/steel',
 		C: 'gtceu:steel_frame',
 		D: 'gtceu:mv_electric_motor'
-	}).id('gtceu:shaped/casing_grate_casing')
+	}).addMaterialInfo().id('gtceu:shaped/casing_grate_casing')
 
 	//#endregion
 
 	//#region Gas Collectors
 
-	event.shaped('gtceu:lv_gas_collector', [
+	event.recipes.gtceu.shaped('gtceu:lv_gas_collector', [
 		'ABA',
 		'CEC',
 		'ADA'
@@ -48,9 +48,9 @@ function registerGTCEuMachineRecipes(event) {
 		C: 'gtceu:lv_electric_pump',
 		D: '#gtceu:circuits/lv',
 		E: 'gtceu:lv_machine_hull'
-	}).id('gtceu:shaped/lv_gas_collector')
+	}).addMaterialInfo().id('gtceu:shaped/lv_gas_collector')
 
-	event.shaped('gtceu:mv_gas_collector', [
+	event.recipes.gtceu.shaped('gtceu:mv_gas_collector', [
 		'ABA',
 		'CEC',
 		'ADA'
@@ -60,9 +60,9 @@ function registerGTCEuMachineRecipes(event) {
 		C: 'gtceu:mv_electric_pump',
 		D: '#gtceu:circuits/mv',
 		E: 'gtceu:mv_machine_hull'
-	}).id('gtceu:shaped/mv_gas_collector')
+	}).addMaterialInfo().id('gtceu:shaped/mv_gas_collector')
 
-	event.shaped('gtceu:hv_gas_collector', [
+	event.recipes.gtceu.shaped('gtceu:hv_gas_collector', [
 		'ABA',
 		'CEC',
 		'ADA'
@@ -72,9 +72,9 @@ function registerGTCEuMachineRecipes(event) {
 		C: 'gtceu:hv_electric_pump',
 		D: '#gtceu:circuits/hv',
 		E: 'gtceu:hv_machine_hull'
-	}).id('gtceu:shaped/hv_gas_collector')
+	}).addMaterialInfo().id('gtceu:shaped/hv_gas_collector')
 
-	event.shaped('gtceu:ev_gas_collector', [
+	event.recipes.gtceu.shaped('gtceu:ev_gas_collector', [
 		'ABA',
 		'CEC',
 		'ADA'
@@ -84,9 +84,9 @@ function registerGTCEuMachineRecipes(event) {
 		C: 'gtceu:ev_electric_pump',
 		D: '#gtceu:circuits/ev',
 		E: 'gtceu:ev_machine_hull'
-	}).id('gtceu:shaped/ev_gas_collector')
+	}).addMaterialInfo().id('gtceu:shaped/ev_gas_collector')
 
-	event.shaped('gtceu:iv_gas_collector', [
+	event.recipes.gtceu.shaped('gtceu:iv_gas_collector', [
 		'ABA',
 		'CEC',
 		'ADA'
@@ -96,9 +96,9 @@ function registerGTCEuMachineRecipes(event) {
 		C: 'gtceu:iv_electric_pump',
 		D: '#gtceu:circuits/iv',
 		E: 'gtceu:iv_machine_hull'
-	}).id('gtceu:shaped/iv_gas_collector')
+	}).addMaterialInfo().id('gtceu:shaped/iv_gas_collector')
 
-	event.shaped('gtceu:luv_gas_collector', [
+	event.recipes.gtceu.shaped('gtceu:luv_gas_collector', [
 		'ABA',
 		'CEC',
 		'ADA'
@@ -108,9 +108,9 @@ function registerGTCEuMachineRecipes(event) {
 		C: 'gtceu:luv_electric_pump',
 		D: '#gtceu:circuits/luv',
 		E: 'gtceu:luv_machine_hull'
-	}).id('gtceu:shaped/luv_gas_collector')
+	}).addMaterialInfo().id('gtceu:shaped/luv_gas_collector')
 
-	event.shaped('gtceu:zpm_gas_collector', [
+	event.recipes.gtceu.shaped('gtceu:zpm_gas_collector', [
 		'ABA',
 		'CEC',
 		'ADA'
@@ -120,9 +120,9 @@ function registerGTCEuMachineRecipes(event) {
 		C: 'gtceu:zpm_electric_pump',
 		D: '#gtceu:circuits/zpm',
 		E: 'gtceu:zpm_machine_hull'
-	}).id('gtceu:shaped/zpm_gas_collector')
+	}).addMaterialInfo().id('gtceu:shaped/zpm_gas_collector')
 
-	event.shaped('gtceu:uv_gas_collector', [
+	event.recipes.gtceu.shaped('gtceu:uv_gas_collector', [
 		'ABA',
 		'CEC',
 		'ADA'
@@ -132,13 +132,13 @@ function registerGTCEuMachineRecipes(event) {
 		C: 'gtceu:uv_electric_pump',
 		D: '#gtceu:circuits/uv',
 		E: 'gtceu:uv_machine_hull'
-	}).id('gtceu:shaped/uv_gas_collector')
+	}).addMaterialInfo().id('gtceu:shaped/uv_gas_collector')
 
 	//#endregion
 
 	//#region Forge Hammers
 
-	event.shaped('gtceu:lv_forge_hammer', [
+	event.recipes.gtceu.shaped('gtceu:lv_forge_hammer', [
 		'ABA',
 		'CDC',
 		'AEA'
@@ -148,9 +148,9 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#gtceu:circuits/lv',
 		D: 'gtceu:lv_machine_hull',
 		E: 'tfc:metal/anvil/steel',
-	}).id('gtceu:shaped/lv_forge_hammer')
+	}).addMaterialInfo().id('gtceu:shaped/lv_forge_hammer')
 
-	event.shaped('gtceu:mv_forge_hammer', [
+	event.recipes.gtceu.shaped('gtceu:mv_forge_hammer', [
 		'ABA',
 		'CDC',
 		'AEA'
@@ -160,9 +160,9 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#gtceu:circuits/mv',
 		D: 'gtceu:mv_machine_hull',
 		E: 'tfc:metal/anvil/steel',
-	}).id('gtceu:shaped/mv_forge_hammer')
+	}).addMaterialInfo().id('gtceu:shaped/mv_forge_hammer')
 
-	event.shaped('gtceu:hv_forge_hammer', [
+	event.recipes.gtceu.shaped('gtceu:hv_forge_hammer', [
 		'ABA',
 		'CDC',
 		'AEA'
@@ -172,9 +172,9 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#gtceu:circuits/hv',
 		D: 'gtceu:hv_machine_hull',
 		E: 'tfc:metal/anvil/steel',
-	}).id('gtceu:shaped/hv_forge_hammer')
+	}).addMaterialInfo().id('gtceu:shaped/hv_forge_hammer')
 
-	event.shaped('gtceu:ev_forge_hammer', [
+	event.recipes.gtceu.shaped('gtceu:ev_forge_hammer', [
 		'ABA',
 		'CDC',
 		'AEA'
@@ -184,9 +184,9 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#gtceu:circuits/ev',
 		D: 'gtceu:ev_machine_hull',
 		E: 'tfc:metal/anvil/black_steel',
-	}).id('gtceu:shaped/ev_forge_hammer')
+	}).addMaterialInfo().id('gtceu:shaped/ev_forge_hammer')
 
-	event.shaped('gtceu:iv_forge_hammer', [
+	event.recipes.gtceu.shaped('gtceu:iv_forge_hammer', [
 		'ABA',
 		'CDC',
 		'AEA'
@@ -196,9 +196,9 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#gtceu:circuits/iv',
 		D: 'gtceu:iv_machine_hull',
 		E: 'tfc:metal/anvil/black_steel',
-	}).id('gtceu:shaped/iv_forge_hammer')
+	}).addMaterialInfo().id('gtceu:shaped/iv_forge_hammer')
 
-	event.shaped('gtceu:luv_forge_hammer', [
+	event.recipes.gtceu.shaped('gtceu:luv_forge_hammer', [
 		'ABA',
 		'CDC',
 		'AEA'
@@ -208,9 +208,9 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#gtceu:circuits/luv',
 		D: 'gtceu:luv_machine_hull',
 		E: 'tfc:metal/anvil/black_steel',
-	}).id('gtceu:shaped/luv_forge_hammer')
+	}).addMaterialInfo().id('gtceu:shaped/luv_forge_hammer')
 
-	event.shaped('gtceu:zpm_forge_hammer', [
+	event.recipes.gtceu.shaped('gtceu:zpm_forge_hammer', [
 		'ABA',
 		'CDC',
 		'AEA'
@@ -220,9 +220,9 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#gtceu:circuits/zpm',
 		D: 'gtceu:zpm_machine_hull',
 		E: '#tfc:red_or_blue_anvil',
-	}).id('gtceu:shaped/zpm_forge_hammer')
+	}).addMaterialInfo().id('gtceu:shaped/zpm_forge_hammer')
 
-	event.shaped('gtceu:uv_forge_hammer', [
+	event.recipes.gtceu.shaped('gtceu:uv_forge_hammer', [
 		'ABA',
 		'CDC',
 		'AEA'
@@ -232,14 +232,14 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#gtceu:circuits/uv',
 		D: 'gtceu:uv_machine_hull',
 		E: '#tfc:red_or_blue_anvil',
-	}).id('gtceu:shaped/uv_forge_hammer')
+	}).addMaterialInfo().id('gtceu:shaped/uv_forge_hammer')
 
 	//#endregion
 
 	//#region CokeOven
 
 	// Coke Oven
-	event.shaped('gtceu:coke_oven', [
+	event.recipes.gtceu.shaped('gtceu:coke_oven', [
 		'ABA',
 		'BCB',
 		'ABA'
@@ -247,28 +247,38 @@ function registerGTCEuMachineRecipes(event) {
 		A: 'gtceu:coke_oven_bricks',
 		B: '#forge:plates/wrought_iron',
 		C: '#forge:tools/wrenches'
-	}).id('gtceu:shaped/coke_oven')
+	}).addMaterialInfo().id('gtceu:shaped/coke_oven')
 
 	// Coke Oven Hatch
 	event.recipes.tfc.no_remainder_shaped_crafting(
-		event.shaped('gtceu:coke_oven_hatch', [
+		event.recipes.gtceu.shaped('gtceu:coke_oven_hatch', [
 			'AB'
 		], {
 			A: 'gtceu:coke_oven_bricks',
 			B: '#tfc:barrels'
-		})
+		}).addMaterialInfo()
 	).id('gtceu:shaped/coke_oven_hatch')
 
 	//#endregion
 
 	// High Pressure Steam Miner
-	event.replaceInput({ id: 'gtceu:shaped/steam_miner_steel' },
-		'gtceu:lp_steam_miner', 'gtceu:steel_brick_casing')
+	event.recipes.gtceu.shaped('gtceu:hp_steam_miner', [
+		'ABA',
+		'CDC',
+		'EFE'
+	], {
+		A: '#forge:plates/wrought_iron',
+		B: '#gtceu:circuits/ulv',
+		C: '#forge:small_fluid_pipes/tin_alloy',
+		D: 'gtceu:steel_brick_casing',
+		E: '#forge:rods/steel',
+		F: '#forge:drill_heads'
+	}).addMaterialInfo().id('gtceu:shaped/steam_miner_steel')
 
 	//#region Выход: Стальные машины
 
 	// HP Steam Boilers
-	event.shaped('gtceu:hp_steam_solid_boiler', [
+	event.recipes.gtceu.shaped('gtceu:hp_steam_solid_boiler', [
 		'AEA',
 		'ADA',
 		'BCB'
@@ -278,9 +288,9 @@ function registerGTCEuMachineRecipes(event) {
 		C: 'gtceu:steel_brick_casing',
 		D: 'tfc:crucible',
 		E: '#forge:rods/black_steel'
-	}).id('gtceu:shaped/steam_boiler_coal_steel')
+	}).addMaterialInfo().id('gtceu:shaped/steam_boiler_coal_steel')
 
-	event.shaped('gtceu:hp_steam_liquid_boiler', [
+	event.recipes.gtceu.shaped('gtceu:hp_steam_liquid_boiler', [
 		'AEA',
 		'ADA',
 		'BCB'
@@ -290,9 +300,9 @@ function registerGTCEuMachineRecipes(event) {
 		C: 'gtceu:steel_brick_casing',
 		D: '#forge:glass',
 		E: '#forge:rods/black_steel'
-	}).id('gtceu:shaped/steam_boiler_lava_steel')
+	}).addMaterialInfo().id('gtceu:shaped/steam_boiler_lava_steel')
 
-	event.shaped('gtceu:hp_steam_solar_boiler', [
+	event.recipes.gtceu.shaped('gtceu:hp_steam_solar_boiler', [
 		'AAA',
 		'BCB',
 		'EDE'
@@ -302,10 +312,10 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#forge:rods/black_steel',
 		D: 'gtceu:steel_brick_casing',
 		E: 'gtceu:tin_alloy_small_fluid_pipe',
-	}).id('gtceu:shaped/steam_boiler_solar_steel')
+	}).addMaterialInfo().id('gtceu:shaped/steam_boiler_solar_steel')
 
 	// Экстрактор
-	event.shaped('gtceu:hp_steam_extractor', [
+	event.recipes.gtceu.shaped('gtceu:hp_steam_extractor', [
 		'BEB',
 		'CAC',
 		'DFD'
@@ -316,10 +326,10 @@ function registerGTCEuMachineRecipes(event) {
 		D: '#forge:plates/wrought_iron',
 		E: '#forge:glass_panes',
 		F: '#forge:rings/black_steel'
-	}).id('gtceu:shaped/steam_extractor_steel')
+	}).addMaterialInfo().id('gtceu:shaped/steam_extractor_steel')
 
 	// Дробитель
-	event.shaped('gtceu:hp_steam_macerator', [
+	event.recipes.gtceu.shaped('gtceu:hp_steam_macerator', [
 		'BFB',
 		'CAC',
 		'DED'
@@ -330,10 +340,10 @@ function registerGTCEuMachineRecipes(event) {
 		D: '#forge:rods/black_steel',
 		E: 'gtceu:tin_alloy_small_fluid_pipe',
 		F: '#forge:raw_materials/diamond'
-	}).id('gtceu:shaped/steam_macerator_steel')
+	}).addMaterialInfo().id('gtceu:shaped/steam_macerator_steel')
 
 	// Компрессор
-	event.shaped('gtceu:hp_steam_compressor', [
+	event.recipes.gtceu.shaped('gtceu:hp_steam_compressor', [
 		'BCB',
 		'EAE',
 		'DFD'
@@ -344,10 +354,10 @@ function registerGTCEuMachineRecipes(event) {
 		D: '#forge:plates/wrought_iron',
 		E: 'minecraft:piston',
 		F: '#forge:rods/black_steel'
-	}).id('gtceu:shaped/steam_compressor_steel')
+	}).addMaterialInfo().id('gtceu:shaped/steam_compressor_steel')
 
 	// Молот
-	event.shaped('gtceu:hp_steam_forge_hammer', [
+	event.recipes.gtceu.shaped('gtceu:hp_steam_forge_hammer', [
 		'DFD',
 		'BEB',
 		'CAC'
@@ -358,10 +368,10 @@ function registerGTCEuMachineRecipes(event) {
 		D: '#forge:plates/wrought_iron',
 		E: '#forge:ingots/black_steel',
 		F: 'minecraft:piston'
-	}).id('gtceu:shaped/steam_hammer_steel')
+	}).addMaterialInfo().id('gtceu:shaped/steam_hammer_steel')
 
 	// Печь
-	event.shaped('gtceu:hp_steam_furnace', [
+	event.recipes.gtceu.shaped('gtceu:hp_steam_furnace', [
 		'BCB',
 		'DAD',
 		'FFF'
@@ -371,10 +381,10 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#forge:plates/steel',
 		D: '#forge:plates/wrought_iron',
 		F: '#forge:rods/black_steel'
-	}).id('gtceu:shaped/steam_furnace_steel')
+	}).addMaterialInfo().id('gtceu:shaped/steam_furnace_steel')
 
 	// Сплавщик
-	event.shaped('gtceu:hp_steam_alloy_smelter', [
+	event.recipes.gtceu.shaped('gtceu:hp_steam_alloy_smelter', [
 		'FCF',
 		'DAD',
 		'CBC'
@@ -384,10 +394,10 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#forge:plates/steel',
 		D: '#forge:plates/wrought_iron',
 		F: '#forge:rods/black_steel'
-	}).id('gtceu:shaped/steam_alloy_smelter_steel')
+	}).addMaterialInfo().id('gtceu:shaped/steam_alloy_smelter_steel')
 
 	// Блоко-ломатель
-	event.shaped('gtceu:hp_steam_rock_crusher', [
+	event.recipes.gtceu.shaped('gtceu:hp_steam_rock_crusher', [
 		'ECE',
 		'BAB',
 		'DDD'
@@ -397,10 +407,10 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#forge:drill_heads',
 		D: '#forge:rods/wrought_iron',
 		E: '#forge:screws/wrought_iron'
-	}).id('gtceu:shaped/steam_rock_breaker_steel')
+	}).addMaterialInfo().id('gtceu:shaped/steam_rock_breaker_steel')
 
 	// Miner
-	event.shaped('gtceu:hp_steam_miner', [
+	event.recipes.gtceu.shaped('gtceu:hp_steam_miner', [
 		'EFE',
 		'BAB',
 		'DCD'
@@ -411,12 +421,12 @@ function registerGTCEuMachineRecipes(event) {
 		D: '#forge:rods/steel',
 		E: '#forge:plates/wrought_iron',
 		F: '#gtceu:circuits/ulv'
-	}).id('gtceu:shaped/steam_miner_steel')
+	}).addMaterialInfo().id('gtceu:shaped/steam_miner_steel')
 
 	//#endregion
 
 	//#region passthrough hatches
-	event.recipes.shaped('gtceu:lv_item_passthrough_hatch', [
+	event.recipes.gtceu.shaped('gtceu:lv_item_passthrough_hatch', [
 		' A ',
 		'BCB',
 		' D '
@@ -425,9 +435,9 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:small_wrought_iron_gear',
 		C: 'gtceu:lv_machine_hull',
 		D: '#tfg:default_chests'
-	}).id('gtceu:shaped/passthrough_hatch_item_lv')
+	}).addMaterialInfo().id('gtceu:shaped/passthrough_hatch_item_lv')
 
-	event.recipes.shaped('gtceu:mv_item_passthrough_hatch', [
+	event.recipes.gtceu.shaped('gtceu:mv_item_passthrough_hatch', [
 		' A ',
 		'BCB',
 		' D '
@@ -436,9 +446,9 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:small_bronze_gear',
 		C: 'gtceu:mv_machine_hull',
 		D: '#tfg:default_chests'
-	}).id('gtceu:shaped/passthrough_hatch_item_mv')
+	}).addMaterialInfo().id('gtceu:shaped/passthrough_hatch_item_mv')
 
-	event.recipes.shaped('gtceu:ev_item_passthrough_hatch', [
+	event.recipes.gtceu.shaped('gtceu:ev_item_passthrough_hatch', [
 		' A ',
 		'BCB',
 		' D '
@@ -447,9 +457,9 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:small_titanium_gear',
 		C: 'gtceu:ev_machine_hull',
 		D: '#tfg:default_chests'
-	}).id('gtceu:shaped/passthrough_hatch_item_ev')
+	}).addMaterialInfo().id('gtceu:shaped/passthrough_hatch_item_ev')
 
-	event.recipes.shaped('gtceu:iv_item_passthrough_hatch', [
+	event.recipes.gtceu.shaped('gtceu:iv_item_passthrough_hatch', [
 		' A ',
 		'BCB',
 		' D '
@@ -458,9 +468,9 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:small_tungsten_steel_gear',
 		C: 'gtceu:iv_machine_hull',
 		D: '#tfg:default_chests'
-	}).id('gtceu:shaped/passthrough_hatch_item_iv')
+	}).addMaterialInfo().id('gtceu:shaped/passthrough_hatch_item_iv')
 
-	event.recipes.shaped('gtceu:luv_item_passthrough_hatch', [
+	event.recipes.gtceu.shaped('gtceu:luv_item_passthrough_hatch', [
 		' A ',
 		'BCB',
 		' D '
@@ -469,9 +479,9 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:small_hsss_gear',
 		C: 'gtceu:luv_machine_hull',
 		D: '#tfg:default_chests'
-	}).id('gtceu:shaped/passthrough_hatch_item_luv')
+	}).addMaterialInfo().id('gtceu:shaped/passthrough_hatch_item_luv')
 
-	event.recipes.shaped('gtceu:zpm_item_passthrough_hatch', [
+	event.recipes.gtceu.shaped('gtceu:zpm_item_passthrough_hatch', [
 		' A ',
 		'BCB',
 		' D '
@@ -480,9 +490,9 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:small_osmiridium_gear',
 		C: 'gtceu:zpm_machine_hull',
 		D: '#tfg:default_chests'
-	}).id('gtceu:shaped/passthrough_hatch_item_zpm')
+	}).addMaterialInfo().id('gtceu:shaped/passthrough_hatch_item_zpm')
 
-	event.recipes.shaped('gtceu:uv_item_passthrough_hatch', [
+	event.recipes.gtceu.shaped('gtceu:uv_item_passthrough_hatch', [
 		' A ',
 		'BCB',
 		' D '
@@ -491,9 +501,9 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:small_naquadah_alloy_gear',
 		C: 'gtceu:uv_machine_hull',
 		D: '#tfg:default_chests'
-	}).id('gtceu:shaped/passthrough_hatch_item_uv')
+	}).addMaterialInfo().id('gtceu:shaped/passthrough_hatch_item_uv')
 
-	event.recipes.shaped('gtceu:lv_fluid_passthrough_hatch', [
+	event.recipes.gtceu.shaped('gtceu:lv_fluid_passthrough_hatch', [
 		' A ',
 		'BCB',
 		' D '
@@ -502,9 +512,9 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:bronze_small_fluid_pipe',
 		C: 'gtceu:lv_machine_hull',
 		D: '#forge:glass'
-	}).id('gtceu:shaped/passthrough_hatch_fluid_lv')
+	}).addMaterialInfo().id('gtceu:shaped/passthrough_hatch_fluid_lv')
 
-	event.recipes.shaped('gtceu:mv_fluid_passthrough_hatch', [
+	event.recipes.gtceu.shaped('gtceu:mv_fluid_passthrough_hatch', [
 		' A ',
 		'BCB',
 		' D '
@@ -513,11 +523,11 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:steel_small_fluid_pipe',
 		C: 'gtceu:mv_machine_hull',
 		D: '#forge:glass'
-	}).id('gtceu:shaped/passthrough_hatch_fluid_mv')
+	}).addMaterialInfo().id('gtceu:shaped/passthrough_hatch_fluid_mv')
 
 	event.remove('gtceu:shaped/passthrough_hatch_fluid')
 
-	event.recipes.shaped('gtceu:hv_fluid_passthrough_hatch', [
+	event.recipes.gtceu.shaped('gtceu:hv_fluid_passthrough_hatch', [
 		' A ',
 		'BCB',
 		' D '
@@ -526,9 +536,9 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:stainless_steel_small_fluid_pipe',
 		C: 'gtceu:hv_machine_hull',
 		D: 'gtceu:tempered_glass'
-	}).id('gtceu:shaped/passthrough_hatch_fluid_hv')
+	}).addMaterialInfo().id('gtceu:shaped/passthrough_hatch_fluid_hv')
 
-	event.recipes.shaped('gtceu:ev_fluid_passthrough_hatch', [
+	event.recipes.gtceu.shaped('gtceu:ev_fluid_passthrough_hatch', [
 		' A ',
 		'BCB',
 		' D '
@@ -537,9 +547,9 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:titanium_small_fluid_pipe',
 		C: 'gtceu:ev_machine_hull',
 		D: 'gtceu:tempered_glass'
-	}).id('gtceu:shaped/passthrough_hatch_fluid_ev')
+	}).addMaterialInfo().id('gtceu:shaped/passthrough_hatch_fluid_ev')
 
-	event.recipes.shaped('gtceu:iv_fluid_passthrough_hatch', [
+	event.recipes.gtceu.shaped('gtceu:iv_fluid_passthrough_hatch', [
 		' A ',
 		'BCB',
 		' D '
@@ -548,9 +558,9 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:tungsten_steel_small_fluid_pipe',
 		C: 'gtceu:iv_machine_hull',
 		D: 'gtceu:laminated_glass'
-	}).id('gtceu:shaped/passthrough_hatch_fluid_iv')
+	}).addMaterialInfo().id('gtceu:shaped/passthrough_hatch_fluid_iv')
 
-	event.recipes.shaped('gtceu:luv_fluid_passthrough_hatch', [
+	event.recipes.gtceu.shaped('gtceu:luv_fluid_passthrough_hatch', [
 		' A ',
 		'BCB',
 		' D '
@@ -559,9 +569,9 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:niobium_titanium_small_fluid_pipe',
 		C: 'gtceu:luv_machine_hull',
 		D: 'gtceu:laminated_glass'
-	}).id('gtceu:shaped/passthrough_hatch_fluid_luv')
+	}).addMaterialInfo().id('gtceu:shaped/passthrough_hatch_fluid_luv')
 
-	event.recipes.shaped('gtceu:zpm_fluid_passthrough_hatch', [
+	event.recipes.gtceu.shaped('gtceu:zpm_fluid_passthrough_hatch', [
 		' A ',
 		'BCB',
 		' D '
@@ -570,9 +580,9 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:polybenzimidazole_small_fluid_pipe',
 		C: 'gtceu:zpm_machine_hull',
 		D: 'gtceu:fusion_glass'
-	}).id('gtceu:shaped/passthrough_hatch_fluid_zpm')
+	}).addMaterialInfo().id('gtceu:shaped/passthrough_hatch_fluid_zpm')
 
-	event.recipes.shaped('gtceu:uv_fluid_passthrough_hatch', [
+	event.recipes.gtceu.shaped('gtceu:uv_fluid_passthrough_hatch', [
 		' A ',
 		'BCB',
 		' D '
@@ -581,13 +591,13 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:naquadah_small_fluid_pipe',
 		C: 'gtceu:uv_machine_hull',
 		D: 'gtceu:fusion_glass'
-	}).id('gtceu:shaped/passthrough_hatch_fluid_uv')
+	}).addMaterialInfo().id('gtceu:shaped/passthrough_hatch_fluid_uv')
 
 	//#endregion
 
 	//#region ULV Hatches
 
-	event.recipes.shaped('gtceu:ulv_input_bus', [
+	event.shaped('gtceu:ulv_input_bus', [
 		'CAC',
 		'CBC',
 		'CDC'
@@ -598,7 +608,7 @@ function registerGTCEuMachineRecipes(event) {
 		D: '#forge:tools/wrenches'
 	}).id('gtceu:shaped/ulv_input_bus')
 
-	event.recipes.shaped('gtceu:ulv_output_bus', [
+	event.shaped('gtceu:ulv_output_bus', [
 		'CDC',
 		'CBC',
 		'CAC'
@@ -609,7 +619,7 @@ function registerGTCEuMachineRecipes(event) {
 		D: '#forge:tools/wrenches'
 	}).id('gtceu:shaped/ulv_output_bus')
 
-	event.recipes.shaped('gtceu:ulv_input_hatch', [
+	event.shaped('gtceu:ulv_input_hatch', [
 		'CAC',
 		'CBC',
 		'CDC'
@@ -620,7 +630,7 @@ function registerGTCEuMachineRecipes(event) {
 		D: '#forge:tools/wrenches'
 	}).id('gtceu:shaped/ulv_input_hatch')
 
-	event.recipes.shaped('gtceu:ulv_output_hatch', [
+	event.shaped('gtceu:ulv_output_hatch', [
 		'CDC',
 		'CBC',
 		'CAC'
@@ -640,6 +650,7 @@ function registerGTCEuMachineRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
 		.itemOutputs('32x gtceu:long_distance_item_pipeline')
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true)
 		.circuit(2)
 		.duration(300)
 
@@ -648,6 +659,7 @@ function registerGTCEuMachineRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
 		.itemOutputs('32x gtceu:long_distance_fluid_pipeline')
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true)
 		.circuit(2)
 		.duration(300)
 
@@ -656,6 +668,7 @@ function registerGTCEuMachineRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
 		.itemOutputs('2x gtceu:long_distance_item_pipeline_endpoint')
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true)
 		.circuit(1)
 		.duration(400)
 
@@ -664,6 +677,7 @@ function registerGTCEuMachineRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
 		.itemOutputs('2x gtceu:long_distance_fluid_pipeline_endpoint')
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true)
 		.circuit(1)
 		.duration(400)
 
@@ -757,7 +771,7 @@ function registerGTCEuMachineRecipes(event) {
 	DRUMS_AND_CRATES.forEach(material => {
 		event.shapeless(`gtceu:${material}_drum`, [`gtceu:${material}_drum`]).id(`tfg:shapeless/drum_nbt_${material}`)
 
-		event.shaped(`gtceu:${material}_drum`, [
+		event.recipes.gtceu.shaped(`gtceu:${material}_drum`, [
 			' A ',
 			'BCB',
 			'BCB'
@@ -767,7 +781,7 @@ function registerGTCEuMachineRecipes(event) {
 			C: `#forge:rods/long/${material}`
 		}).id(`tfg:shaped/${material}_drum`)
 
-		event.shaped(`gtceu:${material}_crate`, [
+		event.recipes.gtceu.shaped(`gtceu:${material}_crate`, [
 			'CBC',
 			'BAB',
 			'CBC'
@@ -780,6 +794,7 @@ function registerGTCEuMachineRecipes(event) {
 		event.recipes.gtceu.assembler(`gtceu:${material}_drum`)
 			.itemInputs(`4x #forge:plates/${material}`, `2x #forge:rods/long/${material}`)
 			.itemOutputs(`gtceu:${material}_drum`)
+			.addMaterialInfo(true)
 			.duration(200)
 			.EUt(16)
 			.circuit(2)
@@ -787,41 +802,14 @@ function registerGTCEuMachineRecipes(event) {
 		event.recipes.gtceu.assembler(`gtceu:${material}_crate`)
 			.itemInputs(`4x #forge:plates/${material}`, `4x #forge:rods/long/${material}`)
 			.itemOutputs(`gtceu:${material}_crate`)
+			.addMaterialInfo(true)
 			.duration(200)
 			.EUt(16)
 			.circuit(1)
-
-		event.recipes.gtceu.macerator(`gtceu:${material}_drum`)
-			.itemInputs(`gtceu:${material}_drum`)
-			.itemOutputs(`6x #forge:dusts/${material}`)
-			.duration(456)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		event.recipes.gtceu.macerator(`gtceu:${material}_crate`)
-			.itemInputs(`gtceu:${material}_crate`)
-			.itemOutputs(`8x #forge:dusts/${material}`)
-			.duration(608)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		event.recipes.gtceu.arc_furnace(`gtceu:${material}_drum`)
-			.itemInputs(`gtceu:${material}_drum`)
-			.itemOutputs(`6x #forge:ingots/${material}`)
-			.duration(456)
-			.EUt(30)
-			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-
-		event.recipes.gtceu.arc_furnace(`gtceu:${material}_crate`)
-			.itemInputs(`gtceu:${material}_crate`)
-			.itemOutputs(`8x #forge:ingots/${material}`)
-			.duration(608)
-			.EUt(30)
-			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 	})
 
 	// Wooden crate
-	event.recipes.shaped('gtceu:wood_crate', [
+	event.shaped('gtceu:wood_crate', [
 		'ABA',
 		'BCB',
 		'ABA'
@@ -834,22 +822,23 @@ function registerGTCEuMachineRecipes(event) {
 	event.recipes.gtceu.assembler('gtceu:wood_crate')
 		.itemInputs('4x #minecraft:planks', '4x #forge:screws/wrought_iron')
 		.itemOutputs('gtceu:wood_crate')
+		.addMaterialInfo(true)
 		.duration(100)
 		.EUt(16)
 		.circuit(5)
 
 	// Steam multi parts
 
-	event.shaped('gtceu:steel_machine_casing', [
+	event.recipes.gtceu.shaped('gtceu:steel_machine_casing', [
 		' A ',
 		'ABA',
 		' A '
 	], {
 		A: '#forge:ingots/steel',
 		B: '#forge:tools/hammers'
-	}).id('gtceu:shaped/steel_hull')
+	}).addMaterialInfo().id('gtceu:shaped/steel_hull')
 
-	event.shaped('gtceu:steam_input_hatch', [
+	event.recipes.gtceu.shaped('gtceu:steam_input_hatch', [
 		'ACA',
 		' B ',
 		'ACA'
@@ -857,9 +846,9 @@ function registerGTCEuMachineRecipes(event) {
 		A: '#forge:screws/wrought_iron',
 		B: 'gtceu:steel_machine_casing',
 		C: '#forge:small_fluid_pipes/steel'
-	}).id('gtceu:shaped/steam_hatch')
+	}).addMaterialInfo().id('gtceu:shaped/steam_hatch')
 
-	event.shaped('gtceu:steam_grinder', [
+	event.recipes.gtceu.shaped('gtceu:steam_grinder', [
 		'ABA',
 		'ACA',
 		'ABA'
@@ -867,9 +856,9 @@ function registerGTCEuMachineRecipes(event) {
 		A: 'gtceu:steam_machine_casing',
 		B: '#forge:gears/invar',
 		C: 'gtceu:hp_steam_macerator'
-	}).id('gtceu:shaped/steam_grinder')
+	}).addMaterialInfo().id('gtceu:shaped/steam_grinder')
 
-	event.shaped('gtceu:steam_oven', [
+	event.recipes.gtceu.shaped('gtceu:steam_oven', [
 		'ABA',
 		'ACA',
 		'ABA'
@@ -877,24 +866,22 @@ function registerGTCEuMachineRecipes(event) {
 		A: 'gtceu:steam_machine_casing',
 		B: 'gtceu:heatproof_machine_casing',
 		C: 'gtceu:hp_steam_furnace'
-	}).id('gtceu:shaped/steam_oven')
+	}).addMaterialInfo().id('gtceu:shaped/steam_oven')
 
-	event.replaceInput({ id: 'gtceu:shaped/hv_cutter' }, 'gtceu:red_steel_buzz_saw_blade', 'gtceu:diamond_buzz_saw_blade')
+	event.recipes.gtceu.shaped('gtceu:hv_cutter', [
+		'ABC',
+		'DEF',
+		'BAG'
+	], {
+		A: '#forge:single_cables/gold',
+		B: '#gtceu:circuits/hv',
+		C: 'gtceu:tempered_glass',
+		D: 'gtceu:hv_conveyor_module',
+		E: 'gtceu:hv_machine_hull',
+		F: 'gtceu:diamond_buzz_saw_blade',
+		G: 'gtceu:hv_electric_motor'
+	}).addMaterialInfo().id('gtceu:shaped/hv_cutter')
 
-
-	event.replaceOutput({ id: 'gtceu:macerator/macerate_steel_machine_casing' }, 'gtceu:steel_dust', '4x gtceu:steel_dust')
-	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steel_machine_casing' }, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
-
-	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_bus' }, 'gtceu:steel_dust', '4x gtceu:steel_dust')
-	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_bus' }, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
-	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_output_bus' }, 'gtceu:steel_dust', '4x gtceu:steel_dust')
-	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_output_bus' }, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
-
-	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_hatch' }, 'gtceu:steel_dust', '6x gtceu:steel_dust')
-	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_hatch' }, 'gtceu:steel_block', '6x gtceu:steel_ingot')
-
-	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_hatch' }, 'gtceu:steel_dust', '6x gtceu:steel_dust')
-	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_hatch' }, 'gtceu:steel_block', '6x gtceu:steel_ingot')
 
 	// #region Bedrock Miner
 
@@ -907,6 +894,7 @@ function registerGTCEuMachineRecipes(event) {
 			'4x gtceu:hv_conveyor_module',
 			'4x #forge:gears/blue_steel')
 		.itemOutputs('gtceu:mv_bedrock_ore_miner')
+		.addMaterialInfo(true)
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.HV])
 		.circuit(2)
@@ -920,6 +908,7 @@ function registerGTCEuMachineRecipes(event) {
 			'4x gtceu:luv_conveyor_module',
 			'4x #forge:gears/ruridit')
 		.itemOutputs('gtceu:hv_bedrock_ore_miner')
+		.addMaterialInfo(true)
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.IV])
 		.circuit(2)
@@ -933,6 +922,7 @@ function registerGTCEuMachineRecipes(event) {
 			'4x gtceu:zpm_conveyor_module',
 			'4x #forge:gears/osmiridium')
 		.itemOutputs('gtceu:ev_bedrock_ore_miner')
+		.addMaterialInfo(true)
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.ZPM])
 		.circuit(2)
@@ -940,22 +930,19 @@ function registerGTCEuMachineRecipes(event) {
 	//#endregion
 
 	event.recipes.gtceu.mixer('gtceu:chipboard_composite_wax')
-		.itemInputs('2x #tfg:wood_dusts',
-			'1x #forge:wax')
+		.itemInputs('2x #tfg:wood_dusts', '1x #forge:wax')
 		.itemOutputs('2x tfg:chipboard_composite')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('gtceu:chipboard_composite_resin')
-		.itemInputs('4x #tfg:wood_dusts',
-			'1x gtceu:sticky_resin')
+		.itemInputs('4x #tfg:wood_dusts', '1x gtceu:sticky_resin')
 		.itemOutputs('4x tfg:chipboard_composite')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('gtceu:chipboard_composite_glue')
-		.itemInputs('2x #tfg:wood_dusts',
-			'1x tfc:glue')
+		.itemInputs('2x #tfg:wood_dusts', '1x tfc:glue')
 		.itemOutputs('2x tfg:chipboard_composite')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -993,6 +980,7 @@ function registerGTCEuMachineRecipes(event) {
 		.itemInputs('gtceu:steel_machine_casing', 'tfg:photo_cell_t1')
 		.itemOutputs('8x tfg:casings/machine_casing_blue_solar_panel')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.addMaterialInfo(true)
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(16)
@@ -1001,6 +989,7 @@ function registerGTCEuMachineRecipes(event) {
 		.itemInputs('8x tfg:casings/machine_casing_blue_solar_panel', 'ad_astra:photovoltaic_etrium_cell')
 		.itemOutputs('8x tfg:casings/machine_casing_green_solar_panel')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.addMaterialInfo(true)
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(16)
@@ -1009,6 +998,7 @@ function registerGTCEuMachineRecipes(event) {
 		.itemInputs('8x tfg:casings/machine_casing_green_solar_panel', 'ad_astra:photovoltaic_vesnium_cell')
 		.itemOutputs('8x tfg:casings/machine_casing_red_solar_panel')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.addMaterialInfo(true)
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(16)
@@ -1016,6 +1006,7 @@ function registerGTCEuMachineRecipes(event) {
 	event.recipes.gtceu.assembler('iron_desh_casing')
 		.itemInputs(ChemicalHelper.get(TagPrefix.plate, GTMaterials.Steel, 6), 'gtceu:desh_frame')
 		.itemOutputs('2x tfg:casings/machine_casing_iron_desh')
+		.addMaterialInfo(true)
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(16)
@@ -1023,6 +1014,7 @@ function registerGTCEuMachineRecipes(event) {
 	event.recipes.gtceu.assembler('steel_machine_casing')
 		.itemInputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 4))
 		.itemOutputs('gtceu:steel_machine_casing')
+		.addMaterialInfo(true)
 		.circuit(4)
 		.duration(2.5 * 20)
 		.EUt(16)
@@ -1031,41 +1023,41 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#region Large Solar Panel
 
-	event.shaped(
-		'gtceu:large_solar_panel',
-		['WSW', 'TZT', 'WUW'],
-		{
-			S: 'tfg:photo_cell_t1',
-			Z: 'ad_astra:solar_panel',
-			W: '#gtceu:circuits/ev',
-			U: '#forge:gears/rocket_alloy_t1',
-			T: '#forge:gears/desh'
-		}
-	).id('gtceu:shaped/large_solar_panel')
+	event.recipes.gtceu.shaped('gtceu:large_solar_panel', [
+		'WSW', 
+		'TZT',
+		'WUW'
+	], {
+		S: 'tfg:photo_cell_t1',
+		Z: 'ad_astra:solar_panel',
+		W: '#gtceu:circuits/ev',
+		U: '#forge:gears/rocket_alloy_t1',
+		T: '#forge:gears/desh'
+	}).addMaterialInfo().id('gtceu:shaped/large_solar_panel')
 
-	event.shaped(
-		'gtceu:large_solar_panel_tier2',
-		['WSW', 'TZT', 'WUW'],
-		{
-			S: 'ad_astra:photovoltaic_etrium_cell',
-			Z: 'gtceu:large_solar_panel',
-			W: '#gtceu:circuits/iv',
-			U: '#forge:gears/rocket_alloy_t1',
-			T: '#forge:gears/desh'
-		}
-	).id('gtceu:shaped/large_solar_panel_tier2')
+	event.recipes.gtceu.shaped('gtceu:large_solar_panel_tier2', [
+		'WSW', 
+		'TZT', 
+		'WUW'
+	], {
+		S: 'ad_astra:photovoltaic_etrium_cell',
+		Z: 'gtceu:large_solar_panel',
+		W: '#gtceu:circuits/iv',
+		U: '#forge:gears/rocket_alloy_t1',
+		T: '#forge:gears/desh'
+	}).addMaterialInfo().id('gtceu:shaped/large_solar_panel_tier2')
 
-	event.shaped(
-		'gtceu:large_solar_panel_tier3',
-		['WSW', 'TZT', 'WUW'],
-		{
-			S: 'ad_astra:photovoltaic_vesnium_cell',
-			Z: 'gtceu:large_solar_panel_tier2',
-			W: '#gtceu:circuits/luv',
-			U: '#forge:gears/rocket_alloy_t1',
-			T: '#forge:gears/desh'
-		}
-	).id('gtceu:shaped/large_solar_panel_tier3')
+	event.recipes.gtceu.shaped('gtceu:large_solar_panel_tier3', [
+		'WSW',
+		'TZT',
+		'WUW'
+	], {
+		S: 'ad_astra:photovoltaic_vesnium_cell',
+		Z: 'gtceu:large_solar_panel_tier2',
+		W: '#gtceu:circuits/luv',
+		U: '#forge:gears/rocket_alloy_t1',
+		T: '#forge:gears/desh'
+	}).addMaterialInfo().id('gtceu:shaped/large_solar_panel_tier3')
 
 	event.recipes.gtceu.chemical_reactor('advanced_photovoltaic_cell')
 		.itemInputs('8x tfg:photo_cell_t1',
@@ -1073,6 +1065,7 @@ function registerGTCEuMachineRecipes(event) {
 			'#forge:insulation_t2/sheet')
 		.inputFluids(Fluid.of('gtceu:helium_3', 1000))
 		.itemOutputs('8x ad_astra:photovoltaic_etrium_cell')
+		.addMaterialInfo(true)
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.EV])
 
@@ -1082,6 +1075,7 @@ function registerGTCEuMachineRecipes(event) {
 			'#forge:insulation_t3/sheet')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 1000))
 		.itemOutputs('8x ad_astra:photovoltaic_vesnium_cell')
+		.addMaterialInfo(true)
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.IV])
 

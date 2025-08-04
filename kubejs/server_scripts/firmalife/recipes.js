@@ -82,28 +82,17 @@ const registerFirmaLifeRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:tin', 9))
 		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('tfc:jar_lid')
+		.addMaterialInfo(true)
 		.duration(50)
 		.EUt(7)
-
-	event.recipes.gtceu.extractor('tfc:jar_lid_extraction')
-		.itemInputs('tfc:jar_lid')
-		.outputFluids(Fluid.of('gtceu:tin', 9))
-		.duration(50)
-		.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-		.EUt(2)
 
 	event.recipes.gtceu.fluid_solidifier(`firmalife:firmalife/stainless_steel_jar_lid`)
 		.inputFluids(Fluid.of('gtceu:stainless_steel', 9))
 		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('firmalife:stainless_steel_jar_lid')
+		.addMaterialInfo(true)
 		.duration(50)
 		.EUt(7)
-
-	event.recipes.gtceu.extractor('firmalife:stainless_steel_jar_extraction')
-		.itemInputs('firmalife:stainless_steel_jar_lid')
-		.outputFluids(Fluid.of('gtceu:stainless_steel', 9))
-		.duration(50)
-		.EUt(2)
 
 	// Pineapple Yarn
 	event.recipes.gtceu.wiremill(`tfg:firmalife/pineapple_yarn`)
