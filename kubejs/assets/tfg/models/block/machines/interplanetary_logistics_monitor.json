@@ -1,10 +1,5 @@
 {
   "parent": "minecraft:block/block",
-  "dynamic_renders": [
-    {
-      "type": "gtceu:quantum_chest_item"
-    }
-  ],
   "loader": "gtceu:machine",
   "machine": "tfg:interplanetary_logistics_monitor",
   "variants": {
