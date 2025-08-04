@@ -7040,7 +7040,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "gtceu-1.20.1-7.1.1.jar",
+                    "file_name": "gtceu-1.20.1-7.1.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7048,20 +7048,20 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/7tG215v7/versions/Q1wVngtK/gtceu-1.20.1-7.1.1.jar",
-                    "id": "Q1wVngtK",
+                    "url": "https://cdn.modrinth.com/data/7tG215v7/versions/mR699KHF/gtceu-1.20.1-7.1.2.jar",
+                    "id": "mR699KHF",
                     "parent_id": "7tG215v7",
                     "hashes": {
-                        "sha512": "9e069386eb9d34e64b4c2ccafceac3b68c8aa1fdc5e65b9f80b8da4ed11bb4fac9d98b82147eebf71657c37d914d0e290d4a504b2ea6fa4e83acd108924be3b3",
-                        "sha1": "664e051ceba5a5ee578aac6ef58a3e8cc9019123"
+                        "sha512": "b3517767634846b97955462fa3a9dbf55165a29afd14debd72274e3793a94c1662aa8c1be7693b9158cf4590fc11ef136b330fd6bd4b70682f3348e589e068e4",
+                        "sha1": "75400b25c24ba153bc9ebfd510588416465a8a37"
                     },
                     "required_dependencies": [],
-                    "size": 17815191,
-                    "date_published": "2025-08-04T00:50:47.728175Z"
+                    "size": 17815270,
+                    "date_published": "2025-08-04T13:43:30.581990Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "gtceu-1.20.1-7.1.1.jar",
+                    "file_name": "gtceu-1.20.1-7.1.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7069,16 +7069,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6845/119/gtceu-1.20.1-7.1.1.jar",
-                    "id": "6845119",
+                    "url": "https://edge.forgecdn.net/files/6846/932/gtceu-1.20.1-7.1.2.jar",
+                    "id": "6846932",
                     "parent_id": "890405",
                     "hashes": {
-                        "sha1": "664e051ceba5a5ee578aac6ef58a3e8cc9019123",
-                        "md5": "cfef33435b64429af9730fcf8a8c5495"
+                        "sha1": "75400b25c24ba153bc9ebfd510588416465a8a37",
+                        "md5": "93360259941de006c986645b2d468c22"
                     },
                     "required_dependencies": [],
-                    "size": 17815191,
-                    "date_published": "2025-08-04T00:50:23.417Z"
+                    "size": 17815270,
+                    "date_published": "2025-08-04T13:43:12.397Z"
                 }
             ]
         },
