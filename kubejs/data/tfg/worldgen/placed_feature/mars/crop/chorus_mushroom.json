@@ -1,9 +1,9 @@
 {
-	"feature": "tfg:mars/surface/ruscus",
+	"feature": "tfg:mars/crop/chorus_mushroom",
 	"placement": [
 		{
-			"type": "minecraft:count",
-			"count": 8
+			"type": "minecraft:rarity_filter",
+			"chance": 50
 		},
 		{
 			"type": "minecraft:in_square"

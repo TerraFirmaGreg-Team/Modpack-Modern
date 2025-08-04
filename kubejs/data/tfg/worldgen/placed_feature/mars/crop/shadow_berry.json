@@ -1,9 +1,9 @@
 {
-	"feature": "tfg:mars/surface/bolux_mushroom",
+	"feature": "tfg:mars/crop/shadow_berry",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 2
+			"chance": 50
 		},
 		{
 			"type": "minecraft:in_square"
