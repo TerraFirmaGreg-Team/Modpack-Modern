@@ -40,11 +40,14 @@
 		[],
 		"#tfg:mars_veins",
 		[],
-		"#tfg:mars_small_rock_features",
+		[
+			"tfc:raw_boulder_small_patch",
+			"tfc:cobble_boulder_small_patch"
+		],
 		[
 
 		],
-		[]
+		"#tfg:mars_top_layer_modification"
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

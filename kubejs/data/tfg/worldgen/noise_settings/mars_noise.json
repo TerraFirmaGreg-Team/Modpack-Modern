@@ -1,5 +1,5 @@
 {
-	"sea_level": 80,
+	"sea_level": 88,
 	"disable_mob_generation": false,
 	"aquifers_enabled": true,
 	"ore_veins_enabled": false,
@@ -32,12 +32,12 @@
 					"points": [
 						{
 							"derivative": 0.0,
-							"location": -0.17,
+							"location": -0.18,
 							"value": -1
 						},
 						{
 							"derivative": 0.0,
-							"location": -0.16,
+							"location": -0.17,
 							"value": 1
 						}
 					]
@@ -111,12 +111,12 @@
 					"points": [
 						{
 							"derivative": 0.0,
-							"location": -0.15,
+							"location": -0.18,
 							"value": -1
 						},
 						{
 							"derivative": 0.0,
-							"location": -0.14,
+							"location": -0.17,
 							"value": 0
 						}
 					]
@@ -137,12 +137,12 @@
 						"points": [
 							{
 								"derivative": 0.0,
-								"location": -0.15,
+								"location": -0.18,
 								"value": 0
 							},
 							{
 								"derivative": 0.0,
-								"location": -0.14,
+								"location": -0.17,
 								"value": 1
 							}
 						]
@@ -225,12 +225,12 @@
 					"points": [
 						{
 							"derivative": 0.0,
-							"location": -0.17,
+							"location": -0.19,
 							"value": 1
 						},
 						{
 							"derivative": 0.0,
-							"location": -0.16,
+							"location": -0.17,
 							"value": 0
 						}
 					]
@@ -283,73 +283,13 @@
 					}
 				}
 			},
-
-
-
-
-
-
 			{
 				"type": "minecraft:condition",
 				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
+						"tfg:mars/martian_river",
 						"tfg:mars/martian_riverbed"
-					]
-				},
-				"then_run": {
-					"type": "minecraft:condition",
-					"if_true": {
-						"type": "minecraft:stone_depth",
-						"offset": 0,
-						"surface_type": "floor",
-						"add_surface_depth": false,
-						"secondary_depth_range": 0
-					},
-					"then_run": {
-						"type": "minecraft:block",
-						"result_state": {
-							"Name": "minecraft:blue_glazed_terracotta"
-						}
-					}
-				}
-			},
-
-			{
-				"type": "minecraft:condition",
-				"if_true": {
-					"type": "minecraft:biome",
-					"biome_is": [
-						"tfg:mars/martian_dune_edge"
-					]
-				},
-				"then_run": {
-					"type": "minecraft:condition",
-					"if_true": {
-						"type": "minecraft:stone_depth",
-						"offset": 0,
-						"surface_type": "floor",
-						"add_surface_depth": false,
-						"secondary_depth_range": 0
-					},
-					"then_run": {
-						"type": "minecraft:block",
-						"result_state": {
-							"Name": "minecraft:light_blue_concrete"
-						}
-					}
-				}
-			},
-
-
-			{
-				"_": "SAND + SAND STONE HARDENING",
-				"type": "minecraft:condition",
-				"if_true": {
-					"type": "minecraft:biome",
-					"biome_is": [
-						"tfg:mars/martian_dunes",
-						"tfg:mars/martian_deep_desert"
 					]
 				},
 				"then_run": {
@@ -357,7 +297,7 @@
 					"if_true": {
 						"type": "minecraft:y_above",
 						"anchor": {
-							"absolute": 50
+							"absolute": 70
 						},
 						"surface_depth_multiplier": 0,
 						"add_stone_depth": false
@@ -369,67 +309,62 @@
 								"type": "minecraft:condition",
 								"if_true": {
 									"type": "minecraft:stone_depth",
-									"offset": 0,
-									"surface_type": "ceiling",
+									"offset": 2,
+									"surface_type": "floor",
 									"add_surface_depth": false,
 									"secondary_depth_range": 0
 								},
 								"then_run": {
-									"type": "minecraft:sequence",
-									"sequence": [
-										{
-											"type": "minecraft:condition",
-											"if_true": {
-												"type": "minecraft:not",
-												"invert": {
-													"type": "minecraft:vertical_gradient",
-													"random_name": "tfg:mars_top_layer_sand",
-													"false_at_and_above": {
-														"absolute": 82
-													},
-													"true_at_and_below": {
-														"absolute": 72
-													}
-												}
-											},
-											"then_run": {
-												"type": "minecraft:block",
-												"result_state": {
-													"Name": "ad_astra:mars_stone"
-												}
-											}
-										},
-										{
-											"type": "minecraft:condition",
-											"if_true": {
-												"type": "minecraft:not",
-												"invert": {
-													"type": "minecraft:vertical_gradient",
-													"random_name": "tfg:mars_middle_layer_sand",
-													"false_at_and_above": {
-														"absolute": 72
-													},
-													"true_at_and_below": {
-														"absolute": 62
-													}
-												}
-											},
-											"then_run": {
-												"type": "minecraft:block",
-												"result_state": {
-													"Name": "ad_astra:mars_stone"
-												}
-											}
-										},
-										{
-											"type": "minecraft:block",
-											"result_state": {
-												"Name": "minecraft:red_sandstone"
-											}
-										}
-									]
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "ad_astra:venus_sand"
+									}
 								}
 							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 6,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "ad_astra:venus_sandstone"
+									}
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"_": "SAND + SAND STONE HARDENING",
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:mars/martian_dune_edge",
+						"tfg:mars/martian_dunes",
+						"tfg:mars/martian_deep_desert"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:condition",
+					"if_true": {
+						"type": "minecraft:y_above",
+						"anchor": {
+							"absolute": 65
+						},
+						"surface_depth_multiplier": 0,
+						"add_stone_depth": false
+					},
+					"then_run": {
+						"type": "minecraft:sequence",
+						"sequence": [
 							{
 								"type": "minecraft:condition",
 								"if_true": {
@@ -450,32 +385,10 @@
 													"type": "minecraft:vertical_gradient",
 													"random_name": "tfg:mars_top_layer_sand",
 													"false_at_and_above": {
-														"absolute": 79
+														"absolute": 90
 													},
 													"true_at_and_below": {
-														"absolute": 69
-													}
-												}
-											},
-											"then_run": {
-												"type": "minecraft:block",
-												"result_state": {
-													"Name": "ad_astra:mars_sand"
-												}
-											}
-										},
-										{
-											"type": "minecraft:condition",
-											"if_true": {
-												"type": "minecraft:not",
-												"invert": {
-													"type": "minecraft:vertical_gradient",
-													"random_name": "tfg:mars_middle_layer_sand",
-													"false_at_and_above": {
-														"absolute": 69
-													},
-													"true_at_and_below": {
-														"absolute": 59
+														"absolute": 80
 													}
 												}
 											},
@@ -515,32 +428,10 @@
 													"type": "minecraft:vertical_gradient",
 													"random_name": "tfg:mars_top_layer_sand",
 													"false_at_and_above": {
-														"absolute": 82
+														"absolute": 87
 													},
 													"true_at_and_below": {
-														"absolute": 72
-													}
-												}
-											},
-											"then_run": {
-												"type": "minecraft:block",
-												"result_state": {
-													"Name": "ad_astra:mars_stone"
-												}
-											}
-										},
-										{
-											"type": "minecraft:condition",
-											"if_true": {
-												"type": "minecraft:not",
-												"invert": {
-													"type": "minecraft:vertical_gradient",
-													"random_name": "tfg:mars_middle_layer_sand",
-													"false_at_and_above": {
-														"absolute": 72
-													},
-													"true_at_and_below": {
-														"absolute": 62
+														"absolute": 77
 													}
 												}
 											},
@@ -723,6 +614,25 @@
 								{
 									"type": "minecraft:condition",
 									"if_true": {
+
+										"type": "minecraft:not",
+										"invert": {
+											"type": "minecraft:water",
+											"offset": 0,
+											"surface_depth_multiplier": 0,
+											"add_stone_depth": false
+										}
+									},
+									"then_run": {
+										"type": "minecraft:block",
+										"result_state": {
+											"Name": "ad_astra:venus_sand"
+										}
+									}
+								},
+								{
+									"type": "minecraft:condition",
+									"if_true": {
 										"type": "minecraft:stone_depth",
 										"offset": 0,
 										"surface_type": "floor",
@@ -783,6 +693,25 @@
 						"then_run": {
 							"type": "minecraft:sequence",
 							"sequence": [
+								{
+									"type": "minecraft:condition",
+									"if_true": {
+
+										"type": "minecraft:not",
+										"invert": {
+											"type": "minecraft:water",
+											"offset": 0,
+											"surface_depth_multiplier": 0,
+											"add_stone_depth": false
+										}
+									},
+									"then_run": {
+										"type": "minecraft:block",
+										"result_state": {
+											"Name": "ad_astra:venus_sand"
+										}
+									}
+								},
 								{
 									"type": "minecraft:condition",
 									"if_true": {
@@ -850,6 +779,25 @@
 								{
 									"type": "minecraft:condition",
 									"if_true": {
+
+										"type": "minecraft:not",
+										"invert": {
+											"type": "minecraft:water",
+											"offset": 0,
+											"surface_depth_multiplier": 0,
+											"add_stone_depth": false
+										}
+									},
+									"then_run": {
+										"type": "minecraft:block",
+										"result_state": {
+											"Name": "ad_astra:venus_sand"
+										}
+									}
+								},
+								{
+									"type": "minecraft:condition",
+									"if_true": {
 										"type": "minecraft:stone_depth",
 										"offset": 0,
 										"surface_type": "floor",
@@ -886,6 +834,7 @@
 			},
 			{
 				"type": "kubejs_tfc:rock",
+				"rock_block": "raw",
 				"fallback_state": {
 					"Name": "ad_astra:mars_stone"
 				}

@@ -46,10 +46,13 @@
 		"#tfg:mars_veins",
 		[],
 		[
-			"#tfc:feature/boulders"
+			"tfc:raw_boulder",
+			"tfc:cobble_boulder",
+			"tfc:raw_boulder_small_patch",
+			"tfc:cobble_boulder_small_patch"
 		],
 		"#tfg:mars_amber_vegetal_decoration",
-		[]
+		"#tfg:mars_top_layer_modification"
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

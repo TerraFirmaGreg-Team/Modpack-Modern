@@ -1,5 +1,5 @@
 {
-  "type": "tfg:mars",
+  "type": "ad_astra:mars",
   "generator": {
     "type": "kubejs_tfc:wrapped",
     "event_key": "mars",
@@ -38,8 +38,8 @@
                 "hardened": "tfg:rock/hardened_red_granite",
                 "gravel": "gtceu:red_granite_cobblestone",
                 "cobble": "gtceu:red_granite_cobblestone",
-                "sand": "tfc:sand/red",
-                "sandstone": "tfc:raw_sandstone/red",
+                "sand": "minecraft:red_sand",
+                "sandstone": "minecraft:red_sandstone",
                 "spike": "tfg:spike/red_granite_spike",
                 "loose": "tfg:loose/red_granite"
             },
@@ -56,40 +56,40 @@
             "basalt": "tfc:basalt",
             "dacite": "tfc:dacite"
         },
-        "bottom": [
-            "red_granite",
-            "gabbro",
-            "diorite",
-            "granite"
-        ],
         "layers": [
-            {
-                "id": "mix",
-                "layers": {
-                    "mars": "bottom",
-                    "dolomite": "bottom",
-                    "chert": "bottom",
-                    "conglomerate": "bottom",
-                    "red_granite": "bottom",
-                    "basalt": "bottom",
-                    "dacite": "bottom",
-                    "venus": "bottom",
-                    "shale": "bottom"
-                }
-            },
-            {
-                "id": "sedimentary",
-                "layers": {
-                    "mars": "mix",
-                    "chalk": "mix",
-                    "shale": "mix",
-                    "dolomite": "mix",
-                    "limestone": "mix",
-                    "claystone": "mix",
-                    "conglomerate": "mix",
-                    "chert": "mix"
-                }
+          {
+            "id": "mix",
+            "layers": {
+              "mars": "bottom",
+              "dolomite": "bottom",
+              "chert": "bottom",
+              "conglomerate": "bottom",
+              "red_granite": "bottom",
+              "basalt": "bottom",
+              "dacite": "bottom",
+              "venus": "bottom",
+              "shale": "bottom"
             }
+          },
+          {
+            "id": "sedimentary",
+            "layers": {
+              "mars": "mix",
+              "chalk": "mix",
+              "shale": "mix",
+              "dolomite": "mix",
+              "limestone": "mix",
+              "claystone": "mix",
+              "conglomerate": "mix",
+              "chert": "mix"
+            }
+          }
+        ],
+        "bottom": [
+          "red_granite",
+          "gabbro",
+          "diorite",
+          "granite"
         ],
         "ocean_floor": [
           "sedimentary"
@@ -4431,7 +4431,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.11,
@@ -4485,7 +4485,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.11,
@@ -4512,7 +4512,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 0.03,
@@ -4566,7 +4566,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.19,
@@ -4593,7 +4593,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 0.03,
@@ -4603,60 +4603,6 @@
               "erosion": [
                 -0.2225,
                 0.05
-              ],
-              "humidity": [
-                -1,
-                -0.35
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -1,
-                -0.9333
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/martian_dune_edge",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                -0.11
-              ],
-              "depth": 0,
-              "erosion": [
-                0.05,
-                0.45
-              ],
-              "humidity": [
-                -1,
-                -0.35
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -1,
-                -0.9333
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.11,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                0.05,
-                0.45
               ],
               "humidity": [
                 -1,
@@ -4682,6 +4628,60 @@
               ],
               "depth": 0,
               "erosion": [
+                0.05,
+                0.45
+              ],
+              "humidity": [
+                -1,
+                -0.35
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -1,
+                -0.9333
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/sangnum_plains",
+            "parameters": {
+              "continentalness": [
+                -0.11,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                0.05,
+                0.45
+              ],
+              "humidity": [
+                -1,
+                -0.35
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -1,
+                -0.9333
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/martian_dune_edge",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                -0.11
+              ],
+              "depth": 0,
+              "erosion": [
                 0.45,
                 0.55
               ],
@@ -4701,7 +4701,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.11,
@@ -13584,7 +13584,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.19,
@@ -13665,7 +13665,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.11,
@@ -13719,7 +13719,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.19,
@@ -13773,7 +13773,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 0.03,
@@ -13827,7 +13827,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.19,
@@ -13854,7 +13854,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.19,
@@ -13908,7 +13908,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.19,
@@ -13922,1410 +13922,6 @@
               "humidity": [
                 -1,
                 -0.35
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                -0.11
-              ],
-              "depth": 0,
-              "erosion": [
-                -1,
-                -0.375
-              ],
-              "humidity": [
-                -0.35,
-                -0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_hills",
-            "parameters": {
-              "continentalness": [
-                -0.11,
-                0.03
-              ],
-              "depth": 0,
-              "erosion": [
-                -1,
-                -0.7799
-              ],
-              "humidity": [
-                -0.35,
-                -0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/martian_mountains",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                -1,
-                -0.7799
-              ],
-              "humidity": [
-                -0.35,
-                -0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_plains",
-            "parameters": {
-              "continentalness": [
-                -0.11,
-                0.03
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.7799,
-                -0.375
-              ],
-              "humidity": [
-                -0.35,
-                -0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_hills",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.7799,
-                -0.375
-              ],
-              "humidity": [
-                -0.35,
-                -0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                0.03
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.375,
-                0.05
-              ],
-              "humidity": [
-                -0.35,
-                -0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_hills",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.375,
-                -0.2225
-              ],
-              "humidity": [
-                -0.35,
-                -0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_plains",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                0.3
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.2225,
-                0.05
-              ],
-              "humidity": [
-                -0.35,
-                -0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_hills",
-            "parameters": {
-              "continentalness": [
-                0.3,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.2225,
-                0.05
-              ],
-              "humidity": [
-                -0.35,
-                -0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                0.05,
-                0.45
-              ],
-              "humidity": [
-                -0.35,
-                -0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                0.03
-              ],
-              "depth": 0,
-              "erosion": [
-                0.45,
-                0.55
-              ],
-              "humidity": [
-                -0.35,
-                -0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/sangnum_hills",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                0.45,
-                0.55
-              ],
-              "humidity": [
-                -0.35,
-                -0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                0.55,
-                1
-              ],
-              "humidity": [
-                -0.35,
-                -0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                -0.11
-              ],
-              "depth": 0,
-              "erosion": [
-                -1,
-                -0.375
-              ],
-              "humidity": [
-                -0.1,
-                0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_hills",
-            "parameters": {
-              "continentalness": [
-                -0.11,
-                0.03
-              ],
-              "depth": 0,
-              "erosion": [
-                -1,
-                -0.7799
-              ],
-              "humidity": [
-                -0.1,
-                0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/martian_mountains",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                -1,
-                -0.7799
-              ],
-              "humidity": [
-                -0.1,
-                0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.11,
-                0.03
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.7799,
-                -0.375
-              ],
-              "humidity": [
-                -0.1,
-                0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_hills",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.7799,
-                -0.375
-              ],
-              "humidity": [
-                -0.1,
-                0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                0.03
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.375,
-                0.05
-              ],
-              "humidity": [
-                -0.1,
-                0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_hills",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.375,
-                -0.2225
-              ],
-              "humidity": [
-                -0.1,
-                0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                0.3
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.2225,
-                0.05
-              ],
-              "humidity": [
-                -0.1,
-                0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_hills",
-            "parameters": {
-              "continentalness": [
-                0.3,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.2225,
-                0.05
-              ],
-              "humidity": [
-                -0.1,
-                0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                0.05,
-                0.45
-              ],
-              "humidity": [
-                -0.1,
-                0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                0.03
-              ],
-              "depth": 0,
-              "erosion": [
-                0.45,
-                0.55
-              ],
-              "humidity": [
-                -0.1,
-                0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/sangnum_hills",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                0.45,
-                0.55
-              ],
-              "humidity": [
-                -0.1,
-                0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                0.55,
-                1
-              ],
-              "humidity": [
-                -0.1,
-                0.1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                -0.11
-              ],
-              "depth": 0,
-              "erosion": [
-                -1,
-                -0.375
-              ],
-              "humidity": [
-                0.1,
-                0.3
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_hills",
-            "parameters": {
-              "continentalness": [
-                -0.11,
-                0.03
-              ],
-              "depth": 0,
-              "erosion": [
-                -1,
-                -0.7799
-              ],
-              "humidity": [
-                0.1,
-                0.3
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/martian_mountains",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                -1,
-                -0.7799
-              ],
-              "humidity": [
-                0.1,
-                0.3
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.11,
-                0.03
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.7799,
-                -0.375
-              ],
-              "humidity": [
-                0.1,
-                0.3
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_hills",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.7799,
-                -0.375
-              ],
-              "humidity": [
-                0.1,
-                0.3
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                0.03
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.375,
-                0.05
-              ],
-              "humidity": [
-                0.1,
-                0.3
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_hills",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.375,
-                -0.2225
-              ],
-              "humidity": [
-                0.1,
-                0.3
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                0.3
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.2225,
-                0.05
-              ],
-              "humidity": [
-                0.1,
-                0.3
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_hills",
-            "parameters": {
-              "continentalness": [
-                0.3,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.2225,
-                0.05
-              ],
-              "humidity": [
-                0.1,
-                0.3
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                0.05,
-                0.45
-              ],
-              "humidity": [
-                0.1,
-                0.3
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                0.03
-              ],
-              "depth": 0,
-              "erosion": [
-                0.45,
-                0.55
-              ],
-              "humidity": [
-                0.1,
-                0.3
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/sangnum_hills",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                0.45,
-                0.55
-              ],
-              "humidity": [
-                0.1,
-                0.3
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                0.55,
-                1
-              ],
-              "humidity": [
-                0.1,
-                0.3
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                -0.11
-              ],
-              "depth": 0,
-              "erosion": [
-                -1,
-                -0.375
-              ],
-              "humidity": [
-                0.3,
-                1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_hills",
-            "parameters": {
-              "continentalness": [
-                -0.11,
-                0.03
-              ],
-              "depth": 0,
-              "erosion": [
-                -1,
-                -0.7799
-              ],
-              "humidity": [
-                0.3,
-                1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/martian_mountains",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                -1,
-                -0.7799
-              ],
-              "humidity": [
-                0.3,
-                1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.11,
-                0.03
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.7799,
-                -0.375
-              ],
-              "humidity": [
-                0.3,
-                1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/rusticus_hills",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.7799,
-                -0.375
-              ],
-              "humidity": [
-                0.3,
-                1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                0.03
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.375,
-                0.05
-              ],
-              "humidity": [
-                0.3,
-                1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.375,
-                -0.2225
-              ],
-              "humidity": [
-                0.3,
-                1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                0.3
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.2225,
-                0.05
-              ],
-              "humidity": [
-                0.3,
-                1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                0.3,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                -0.2225,
-                0.05
-              ],
-              "humidity": [
-                0.3,
-                1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                0.05,
-                0.45
-              ],
-              "humidity": [
-                0.3,
-                1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                0.03
-              ],
-              "depth": 0,
-              "erosion": [
-                0.45,
-                0.55
-              ],
-              "humidity": [
-                0.3,
-                1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/sangnum_hills",
-            "parameters": {
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                0.45,
-                0.55
-              ],
-              "humidity": [
-                0.3,
-                1
-              ],
-              "offset": 0,
-              "temperature": [
-                -0.15,
-                0.2
-              ],
-              "weirdness": [
-                -0.9333,
-                -0.7666
-              ]
-            }
-          },
-          {
-            "biome": "tfg:mars/amber_plains",
-            "parameters": {
-              "continentalness": [
-                -0.19,
-                1
-              ],
-              "depth": 0,
-              "erosion": [
-                0.55,
-                1
-              ],
-              "humidity": [
-                0.3,
-                1
               ],
               "offset": 0,
               "temperature": [
@@ -15351,6 +13947,1410 @@
                 -0.375
               ],
               "humidity": [
+                -0.35,
+                -0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_hills",
+            "parameters": {
+              "continentalness": [
+                -0.11,
+                0.03
+              ],
+              "depth": 0,
+              "erosion": [
+                -1,
+                -0.7799
+              ],
+              "humidity": [
+                -0.35,
+                -0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/martian_mountains",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                -1,
+                -0.7799
+              ],
+              "humidity": [
+                -0.35,
+                -0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_plains",
+            "parameters": {
+              "continentalness": [
+                -0.11,
+                0.03
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.7799,
+                -0.375
+              ],
+              "humidity": [
+                -0.35,
+                -0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_hills",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.7799,
+                -0.375
+              ],
+              "humidity": [
+                -0.35,
+                -0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                0.03
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.375,
+                0.05
+              ],
+              "humidity": [
+                -0.35,
+                -0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_hills",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.375,
+                -0.2225
+              ],
+              "humidity": [
+                -0.35,
+                -0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_plains",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                0.3
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.2225,
+                0.05
+              ],
+              "humidity": [
+                -0.35,
+                -0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_hills",
+            "parameters": {
+              "continentalness": [
+                0.3,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.2225,
+                0.05
+              ],
+              "humidity": [
+                -0.35,
+                -0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                0.05,
+                0.45
+              ],
+              "humidity": [
+                -0.35,
+                -0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                0.03
+              ],
+              "depth": 0,
+              "erosion": [
+                0.45,
+                0.55
+              ],
+              "humidity": [
+                -0.35,
+                -0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/sangnum_hills",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                0.45,
+                0.55
+              ],
+              "humidity": [
+                -0.35,
+                -0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                0.55,
+                1
+              ],
+              "humidity": [
+                -0.35,
+                -0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                -0.11
+              ],
+              "depth": 0,
+              "erosion": [
+                -1,
+                -0.375
+              ],
+              "humidity": [
+                -0.1,
+                0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_hills",
+            "parameters": {
+              "continentalness": [
+                -0.11,
+                0.03
+              ],
+              "depth": 0,
+              "erosion": [
+                -1,
+                -0.7799
+              ],
+              "humidity": [
+                -0.1,
+                0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/martian_mountains",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                -1,
+                -0.7799
+              ],
+              "humidity": [
+                -0.1,
+                0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.11,
+                0.03
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.7799,
+                -0.375
+              ],
+              "humidity": [
+                -0.1,
+                0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_hills",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.7799,
+                -0.375
+              ],
+              "humidity": [
+                -0.1,
+                0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                0.03
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.375,
+                0.05
+              ],
+              "humidity": [
+                -0.1,
+                0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_hills",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.375,
+                -0.2225
+              ],
+              "humidity": [
+                -0.1,
+                0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                0.3
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.2225,
+                0.05
+              ],
+              "humidity": [
+                -0.1,
+                0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_hills",
+            "parameters": {
+              "continentalness": [
+                0.3,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.2225,
+                0.05
+              ],
+              "humidity": [
+                -0.1,
+                0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                0.05,
+                0.45
+              ],
+              "humidity": [
+                -0.1,
+                0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                0.03
+              ],
+              "depth": 0,
+              "erosion": [
+                0.45,
+                0.55
+              ],
+              "humidity": [
+                -0.1,
+                0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/sangnum_hills",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                0.45,
+                0.55
+              ],
+              "humidity": [
+                -0.1,
+                0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                0.55,
+                1
+              ],
+              "humidity": [
+                -0.1,
+                0.1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                -0.11
+              ],
+              "depth": 0,
+              "erosion": [
+                -1,
+                -0.375
+              ],
+              "humidity": [
+                0.1,
+                0.3
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_hills",
+            "parameters": {
+              "continentalness": [
+                -0.11,
+                0.03
+              ],
+              "depth": 0,
+              "erosion": [
+                -1,
+                -0.7799
+              ],
+              "humidity": [
+                0.1,
+                0.3
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/martian_mountains",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                -1,
+                -0.7799
+              ],
+              "humidity": [
+                0.1,
+                0.3
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.11,
+                0.03
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.7799,
+                -0.375
+              ],
+              "humidity": [
+                0.1,
+                0.3
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_hills",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.7799,
+                -0.375
+              ],
+              "humidity": [
+                0.1,
+                0.3
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                0.03
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.375,
+                0.05
+              ],
+              "humidity": [
+                0.1,
+                0.3
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_hills",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.375,
+                -0.2225
+              ],
+              "humidity": [
+                0.1,
+                0.3
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                0.3
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.2225,
+                0.05
+              ],
+              "humidity": [
+                0.1,
+                0.3
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_hills",
+            "parameters": {
+              "continentalness": [
+                0.3,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.2225,
+                0.05
+              ],
+              "humidity": [
+                0.1,
+                0.3
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                0.05,
+                0.45
+              ],
+              "humidity": [
+                0.1,
+                0.3
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                0.03
+              ],
+              "depth": 0,
+              "erosion": [
+                0.45,
+                0.55
+              ],
+              "humidity": [
+                0.1,
+                0.3
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/sangnum_hills",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                0.45,
+                0.55
+              ],
+              "humidity": [
+                0.1,
+                0.3
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                0.55,
+                1
+              ],
+              "humidity": [
+                0.1,
+                0.3
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                -0.11
+              ],
+              "depth": 0,
+              "erosion": [
+                -1,
+                -0.375
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_hills",
+            "parameters": {
+              "continentalness": [
+                -0.11,
+                0.03
+              ],
+              "depth": 0,
+              "erosion": [
+                -1,
+                -0.7799
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/martian_mountains",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                -1,
+                -0.7799
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.11,
+                0.03
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.7799,
+                -0.375
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_hills",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.7799,
+                -0.375
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                0.03
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.375,
+                0.05
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.375,
+                -0.2225
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                0.3
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.2225,
+                0.05
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                0.3,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                -0.2225,
+                0.05
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                0.05,
+                0.45
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                0.03
+              ],
+              "depth": 0,
+              "erosion": [
+                0.45,
+                0.55
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/sangnum_hills",
+            "parameters": {
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                0.45,
+                0.55
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/amber_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                1
+              ],
+              "depth": 0,
+              "erosion": [
+                0.55,
+                1
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "offset": 0,
+              "temperature": [
+                -0.15,
+                0.2
+              ],
+              "weirdness": [
+                -0.9333,
+                -0.7666
+              ]
+            }
+          },
+          {
+            "biome": "tfg:mars/rusticus_plains",
+            "parameters": {
+              "continentalness": [
+                -0.19,
+                -0.11
+              ],
+              "depth": 0,
+              "erosion": [
+                -1,
+                -0.375
+              ],
+              "humidity": [
                 -1,
                 -0.35
               ],
@@ -21846,7 +21846,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.19,
@@ -21900,7 +21900,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.19,
@@ -21954,7 +21954,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 0.03,
@@ -22008,7 +22008,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.19,
@@ -22089,7 +22089,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.19,
@@ -29784,7 +29784,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.19,
@@ -29865,7 +29865,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.11,
@@ -29919,7 +29919,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.19,
@@ -29973,7 +29973,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 0.03,
@@ -30027,7 +30027,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.19,
@@ -30054,7 +30054,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.19,
@@ -30108,7 +30108,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.19,
@@ -39072,7 +39072,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.11,
@@ -39126,7 +39126,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.11,
@@ -39153,7 +39153,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 0.03,
@@ -39207,7 +39207,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.19,
@@ -39234,7 +39234,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 0.03,
@@ -39288,7 +39288,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.11,
@@ -39342,7 +39342,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.11,
@@ -47631,7 +47631,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.11,
@@ -47658,7 +47658,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 0.03,
@@ -47685,7 +47685,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.11,
@@ -47712,7 +47712,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 0.03,
@@ -47766,7 +47766,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.11,
@@ -47820,7 +47820,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 -0.11,
@@ -47847,7 +47847,7 @@
             }
           },
           {
-            "biome": "tfg:mars/amber_plains",
+            "biome": "tfg:mars/sangnum_plains",
             "parameters": {
               "continentalness": [
                 0.03,
