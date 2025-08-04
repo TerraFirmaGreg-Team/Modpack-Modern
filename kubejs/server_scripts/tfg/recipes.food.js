@@ -718,7 +718,7 @@ function registerTFGFoodRecipes(event) {
 		circuit: 10,
 		itemInputs: ['#tfc:foods/fruits'],
 		fluidInputs: ['#tfg:clean_water 100'],
-		fluidOutputs: [Fluid.of('firmalife:yeast_starter', 600)],
+		fluidOutputs: [Fluid.of('firmalife:yeast_starter', 100)],
 	})
 	
 	processorRecipe("cocoa_dust", 100, 4, {
