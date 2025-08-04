@@ -385,10 +385,10 @@
 													"type": "minecraft:vertical_gradient",
 													"random_name": "tfg:mars_top_layer_sand",
 													"false_at_and_above": {
-														"absolute": 90
+														"absolute": 87
 													},
 													"true_at_and_below": {
-														"absolute": 80
+														"absolute": 77
 													}
 												}
 											},
@@ -428,10 +428,10 @@
 													"type": "minecraft:vertical_gradient",
 													"random_name": "tfg:mars_top_layer_sand",
 													"false_at_and_above": {
-														"absolute": 87
+														"absolute": 84
 													},
 													"true_at_and_below": {
-														"absolute": 77
+														"absolute": 74
 													}
 												}
 											},
