@@ -5,6 +5,32 @@ const $HeightMap = Java.loadClass("net.minecraft.world.level.levelgen.Heightmap"
 
 const ROCK_LAYER_HEIGHT = 40;
 
+// Bare minimum
+TFCEvents.createChunkDataProvider('moon', event => {
+    var aquifer = [];
+    let i = 0;
+    while (i < 16) {
+        aquifer.push(32);
+        i++;
+    }
+    var heights = [];
+    for (let x = 0 ; x < 16 ; x++) {
+        for (let z = 0 ; z < 16 ; z++) {
+            heights[x + 16 * z] = 80;
+        }
+    }
+
+    event.partial((data, chunk) => {
+        data.generatePartial(0, 0, 0, 0, 0)
+    })
+    event.full((data, chunk) => {
+        data.generateFull(heights, aquifer)
+    })
+    event.rocks((x, y, z, surfaceY, cache, rockLayers) => {
+        return rockLayers.sampleAtLayer(0, 0)
+    })
+})
+
 TFCEvents.createChunkDataProvider('mars', event => {
 
     const rain = TFC.misc.lerpFloatLayer(0, 0, 0, 0);
