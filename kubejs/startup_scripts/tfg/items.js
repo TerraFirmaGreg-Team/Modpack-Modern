@@ -368,6 +368,7 @@ const registerTFGItems = (event) => {
 	event.create('tfg:elite_power_thruster')
 	
 	event.create('tfg:better_space_suit_fabric')
+	event.create('tfg:glacian_wool')
 	//endregion
 
 	//#region Universal compost items
