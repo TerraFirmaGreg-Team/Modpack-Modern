@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Changes
 - Added links from quests directly to field guide entries (#854) @Zippity
+- Added a second EBF recipe but from LV furnaces @Pyritie
 ### Bug fixes
 - Fixed chain conveyors not connecting (#1520) @BlueBoat29
 - Fixed a crash when opening a world with a railgun logistics monitor (#1526) @Redeix

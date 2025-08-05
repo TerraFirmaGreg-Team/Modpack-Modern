@@ -463,6 +463,17 @@ const registerGTCEURecipes = (event) => {
 		D: 'gtceu:tin_single_cable'
 	}).id('gtceu:shaped/electric_blast_furnace')
 
+	event.shaped('gtceu:electric_blast_furnace', [
+		'AAA',
+		'BCB',
+		'DBD'
+	], {
+		A: 'gtceu:lv_electric_furnace',
+		B: '#gtceu:circuits/lv',
+		C: 'gtceu:heatproof_machine_casing',
+		D: 'gtceu:tin_single_cable'
+	}).id('gtceu:shaped/electric_blast_furnace2')
+
 	// Клей из ТФК клея
 	event.recipes.gtceu.extractor('tfg:glue_from_tfc_glue')
 		.itemInputs('tfc:glue')
