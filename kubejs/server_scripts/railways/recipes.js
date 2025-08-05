@@ -134,14 +134,14 @@ const registerRailWaysRecipes = (event) => {
 	], {
 		A: 'minecraft:lever',
 		B: '#forge:bolts/wrought_iron',
-		C: '#tfg:small_cogwheels',
+		C: '#forge:cogwheels',
 		D: 'create:andesite_casing',
 		E: '#forge:tools/screwdrivers',
 		F: '#forge:tools/hammers',
 	}).id('tfg:railways/shaped/track_switch_andesite')
 
 	event.recipes.gtceu.assembler('tfg:railways/track_switch_andesite')
-		.itemInputs('minecraft:lever', '2x #forge:bolts/wrought_iron', '2x #tfg:small_cogwheels', 'create:andesite_casing')
+		.itemInputs('minecraft:lever', '2x #forge:bolts/wrought_iron', '2x #forge:cogwheels', 'create:andesite_casing')
 		.circuit(3)
 		.itemOutputs('railways:track_switch_andesite')
 		.duration(200)
@@ -155,14 +155,14 @@ const registerRailWaysRecipes = (event) => {
 	], {
 		A: 'minecraft:lever',
 		B: '#forge:bolts/brass',
-		C: '#tfg:small_cogwheels',
+		C: '#forge:cogwheels',
 		D: 'create:brass_casing',
 		E: '#forge:tools/screwdrivers',
 		F: '#forge:tools/hammers',
 	}).id('tfg:railways/shaped/track_switch_brass')
 
 	event.recipes.gtceu.assembler('tfg:railways/track_switch_brass')
-		.itemInputs('minecraft:lever', '2x #forge:bolts/brass', '2x #tfg:small_cogwheels', 'create:brass_casing')
+		.itemInputs('minecraft:lever', '2x #forge:bolts/brass', '2x #forge:cogwheels', 'create:brass_casing')
 		.circuit(3)
 		.itemOutputs('railways:track_switch_brass')
 		.duration(200)

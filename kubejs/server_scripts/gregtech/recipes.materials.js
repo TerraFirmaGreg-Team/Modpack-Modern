@@ -99,22 +99,22 @@ function registerGTCEUMetalRecipes(event) {
 				results: [toolHeadItem],
 				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/curving/${material.getName()}_ingot_to_${new String(headTagPrefix.name).toLowerCase()}_head`)
-
-			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
-				.itemInputs(toolHeadItem)
-				.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, materialAmount))
-				.duration(material.getMass() * 6 * materialAmount)
-				.category(GTRecipeCategories.MACERATOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.arc_furnace(`tfg:arc_furnace_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
-				.itemInputs(toolHeadItem)
-				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, materialAmount))
-				.duration(material.getMass() * 6 * materialAmount)
-				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-				.EUt(GTValues.VA[GTValues.LV])
-
+			
 			if (GTMaterials.Stone !== material) {
+				event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
+					.itemInputs(toolHeadItem)
+					.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, materialAmount))
+					.duration(material.getMass() * 6 * materialAmount)
+					.category(GTRecipeCategories.MACERATOR_RECYCLING)
+					.EUt(GTValues.VA[GTValues.ULV])
+				
+				event.recipes.gtceu.arc_furnace(`tfg:arc_furnace_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
+					.itemInputs(toolHeadItem)
+					.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, materialAmount))
+					.duration(material.getMass() * 6 * materialAmount)
+					.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+					.EUt(GTValues.VA[GTValues.LV])
+
 				event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
 					.itemInputs(toolHeadItem)
 					.outputFluids(Fluid.of(material.getFluid(), materialAmount * 144))
@@ -1157,6 +1157,13 @@ function registerGTCEUMetalRecipes(event) {
 	}
 
 	forEachMaterial(material => {
+		// greate moment
+		if (material === GTMaterials.get("andesite_alloy")
+			|| material === GTMaterials.get("refined_radiance")
+			|| material === GTMaterials.get("shadow_steel")
+			|| material === GTMaterials.get("chromatic_compound"))
+		{ return; }
+
 		const toolProperty = material.getProperty(PropertyKey.TOOL)
 		const ingotProperty = material.getProperty(PropertyKey.INGOT)
 		const oreProperty = material.getProperty(PropertyKey.ORE)
