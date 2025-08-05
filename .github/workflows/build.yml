@@ -182,7 +182,7 @@ jobs:
       - name: 📄 Format diff
         id: format_diff
         if: ${{ steps.read_diff.outputs.diff != '' }}
-        uses: roamingowl/template-output-with-eta@v1.12.0
+        uses: roamingowl/template-output-with-eta@v1.13.0
         with:
           template: |
             ```markdown
@@ -430,7 +430,7 @@ jobs:
       - name: 📄 Format diff
         id: format_diff
         if: ${{ needs.info.outputs.diff != '' }}
-        uses: roamingowl/template-output-with-eta@v1.12.0
+        uses: roamingowl/template-output-with-eta@v1.13.0
         with:
           template: |
             ```markdown
