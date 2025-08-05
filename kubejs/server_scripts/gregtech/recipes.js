@@ -451,6 +451,17 @@ const registerGTCEURecipes = (event) => {
 		D: 'gtceu:copper_single_cable'
 	}).id('gtceu:shaped/multi_furnace')
 
+	event.shaped('gtceu:multi_smelter', [
+		'AAA',
+		'BCB',
+		'DBD'
+	], {
+		A: 'gtceu:lv_electric_furnace',
+		B: '#gtceu:circuits/hv',
+		C: 'gtceu:heatproof_machine_casing',
+		D: 'gtceu:copper_single_cable'
+	}).id('gtceu:shaped/multi_furnace2')
+
 	// Electric Blast Furnace
 	event.shaped('gtceu:electric_blast_furnace', [
 		'AAA',
