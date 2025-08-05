@@ -2,7 +2,10 @@
 
 ## [Unreleased]
 ### Changes
+- Added links from quests directly to field guide entries (#854) @Zippity
 ### Bug fixes
+- Fixed chain conveyors not connecting (#1520) @BlueBoat29
+- Fixed a crash when opening a world with a railgun logistics monitor (#1526) @Redeix
 
 ## [0.10.5] - 03-08-2025
 ### Major changes

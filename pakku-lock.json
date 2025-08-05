@@ -6676,7 +6676,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "fzzy_config-0.7.1+1.20.1+forge.jar",
+                    "file_name": "fzzy_config-0.7.2+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6685,22 +6685,22 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/OOPrShvY/fzzy_config-0.7.1+1.20.1+forge.jar",
-                    "id": "OOPrShvY",
+                    "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/eNoSkpjw/fzzy_config-0.7.2+1.20.1+forge.jar",
+                    "id": "eNoSkpjw",
                     "parent_id": "hYykXjDp",
                     "hashes": {
-                        "sha512": "071a286f739e2860cc8b7079fb7247b20b38450137beef1b55ab0478c010dc19a690d96aa89274dfdff09bc027b0c2ce052fea8ffbba3c1fef5ff2c8aafed2e2",
-                        "sha1": "55e77e8ac5bf34ee595c5321eadcaa7dd6b1fe33"
+                        "sha512": "49ac78bfc8d627bb0bb081f00a23a3a3baaf9e6fce831849a0a3872bfac7635507025af8f4debecfdedd544ccd634286648c48b31970492a26ede9d02ca6307c",
+                        "sha1": "a06d2ae66dbed25fd7f1d878254bce3a40680800"
                     },
                     "required_dependencies": [
                         "ordsPcFz"
                     ],
-                    "size": 2220131,
-                    "date_published": "2025-07-14T20:01:15.583Z"
+                    "size": 2275298,
+                    "date_published": "2025-08-03T16:35:52.253865Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "fzzy_config-0.7.1+1.20.1+forge.jar",
+                    "file_name": "fzzy_config-0.7.2+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6709,18 +6709,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6769/263/fzzy_config-0.7.1+1.20.1+forge.jar",
-                    "id": "6769263",
+                    "url": "https://edge.forgecdn.net/files/6843/463/fzzy_config-0.7.2+1.20.1+forge.jar",
+                    "id": "6843463",
                     "parent_id": "1005914",
                     "hashes": {
-                        "sha1": "55e77e8ac5bf34ee595c5321eadcaa7dd6b1fe33",
-                        "md5": "81f0820157d0817180b492f538e77b3c"
+                        "sha1": "a06d2ae66dbed25fd7f1d878254bce3a40680800",
+                        "md5": "d82c28e78e80f5e2fbbffe4a6fbb7a76"
                     },
                     "required_dependencies": [
                         "351264"
                     ],
-                    "size": 2220131,
-                    "date_published": "2025-07-14T20:01:07.723Z"
+                    "size": 2275298,
+                    "date_published": "2025-08-03T16:35:38.450Z"
                 }
             ]
         },
@@ -7039,29 +7039,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "gtceu-1.20.1-7.0.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6792/524/gtceu-1.20.1-7.0.2.jar",
-                    "id": "6792524",
-                    "parent_id": "890405",
-                    "hashes": {
-                        "sha1": "602e4690cf99ddd49146a26f0629ac53bd6813db",
-                        "md5": "720754016342b1f3446befb3b53013d2"
-                    },
-                    "required_dependencies": [],
-                    "size": 17590375,
-                    "date_published": "2025-07-20T19:38:07.397Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "gtceu-1.20.1-7.0.2.jar",
+                    "file_name": "gtceu-1.20.1-7.1.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7069,16 +7048,37 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/7tG215v7/versions/a5uJZGHy/gtceu-1.20.1-7.0.2.jar",
-                    "id": "a5uJZGHy",
+                    "url": "https://cdn.modrinth.com/data/7tG215v7/versions/mR699KHF/gtceu-1.20.1-7.1.2.jar",
+                    "id": "mR699KHF",
                     "parent_id": "7tG215v7",
                     "hashes": {
-                        "sha512": "a288c35f5afc4b8e77c7d207680260939587234c02fc63e2746d290e277e66673143d186ddea7d0a3423e4985fef73857c3985dd6410e4cc55fc1af96713905b",
-                        "sha1": "602e4690cf99ddd49146a26f0629ac53bd6813db"
+                        "sha512": "b3517767634846b97955462fa3a9dbf55165a29afd14debd72274e3793a94c1662aa8c1be7693b9158cf4590fc11ef136b330fd6bd4b70682f3348e589e068e4",
+                        "sha1": "75400b25c24ba153bc9ebfd510588416465a8a37"
                     },
                     "required_dependencies": [],
-                    "size": 17590375,
-                    "date_published": "2025-07-20T19:38:09.055323Z"
+                    "size": 17815270,
+                    "date_published": "2025-08-04T13:43:30.581990Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "gtceu-1.20.1-7.1.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6846/932/gtceu-1.20.1-7.1.2.jar",
+                    "id": "6846932",
+                    "parent_id": "890405",
+                    "hashes": {
+                        "sha1": "75400b25c24ba153bc9ebfd510588416465a8a37",
+                        "md5": "93360259941de006c986645b2d468c22"
+                    },
+                    "required_dependencies": [],
+                    "size": 17815270,
+                    "date_published": "2025-08-04T13:43:12.397Z"
                 }
             ]
         },
@@ -9199,7 +9199,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "moonlight-1.20-2.15.4-forge.jar",
+                    "file_name": "moonlight-1.20-2.15.6-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9208,20 +9208,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/M6iMYHAg/moonlight-1.20-2.15.4-forge.jar",
-                    "id": "M6iMYHAg",
+                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/VqBFBOg7/moonlight-1.20-2.15.6-forge.jar",
+                    "id": "VqBFBOg7",
                     "parent_id": "twkfQtEc",
                     "hashes": {
-                        "sha512": "16cb6fc96520efbafaec43ca49eb6452ac246d6175f9583409e161a1ea4c693a9bf508eeb3ae03a6ce40d7d6b9e8d5fe692ffc341b1bcb02e838dc98b62c91f4",
-                        "sha1": "bc48b915753817cf9171eb09cfd29b074a1d9d5f"
+                        "sha512": "4fe8c5da1f0697a12cc453e817905d18ee039b7442ab90b0ed70ff3221ef37598ccb30eef8ada5148ee022f16ea64cbba185da58b752a6ecb4f24d2bb0300e05",
+                        "sha1": "0ea0d478011428a02b561b24ca9db40c31b39870"
                     },
                     "required_dependencies": [],
-                    "size": 1286553,
-                    "date_published": "2025-08-03T11:05:16.717215Z"
+                    "size": 1287123,
+                    "date_published": "2025-08-04T09:41:41.923471Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "moonlight-1.20-2.15.4-forge.jar",
+                    "file_name": "moonlight-1.20-2.15.6-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9230,16 +9230,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6842/474/moonlight-1.20-2.15.4-forge.jar",
-                    "id": "6842474",
+                    "url": "https://edge.forgecdn.net/files/6846/127/moonlight-1.20-2.15.6-forge.jar",
+                    "id": "6846127",
                     "parent_id": "499980",
                     "hashes": {
-                        "sha1": "bc48b915753817cf9171eb09cfd29b074a1d9d5f",
-                        "md5": "209a5d244286db065c09d225da619f66"
+                        "sha1": "0ea0d478011428a02b561b24ca9db40c31b39870",
+                        "md5": "2e91dd12ddb2fc40bacb6b499568296a"
                     },
                     "required_dependencies": [],
-                    "size": 1286553,
-                    "date_published": "2025-08-03T11:05:09.920Z"
+                    "size": 1287123,
+                    "date_published": "2025-08-04T09:41:35.207Z"
                 }
             ]
         },
