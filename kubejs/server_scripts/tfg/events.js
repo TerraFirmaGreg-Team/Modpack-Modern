@@ -546,7 +546,6 @@ BlockEvents.broken('tfc:mineable_with_sharp_tool', event => {
 });
 
 //#endregion
-<<<<<<< HEAD
 // TODO
 TFCEvents.startFire(event => {
     let player = event.player
@@ -577,5 +576,3 @@ TFCEvents.startFire(event => {
     
 
 })
-=======
->>>>>>> b4c6f137 (fix sharp tools not taking damage when cutting grass)
