@@ -157,9 +157,14 @@ const registerTFGMaterials = (event) => {
 		.color(0x51F7C0)
 
 	event.create('tfg:solar_coolant')
-		.gas()
+        .gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(163))
 		.components('8x helium_3', '11x oxygen', '11x hydrogen')
 		.color(0xEDFFB3)
+
+	event.create('tfg:solar_coolant_tier2')
+        .gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(73))
+		.formula('(He³8O11H11)(Ar)(?)')
+		.color(0xfeff5d)
 
 	//end region
 	event.create('liquid_carbon_dioxide')

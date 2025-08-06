@@ -1,9 +1,24 @@
 # Changelog
 
 ## [Unreleased]
+### Changes
+- Added links from quests directly to field guide entries (#854) @Zippity
+- Added a second EBF recipe but from LV furnaces @Pyritie
+- Added GT machine recipes for maple/birch saps (#1524) @BlueBoat29
+### Bug fixes
+- Fixed chain conveyors not connecting (#1520) @BlueBoat29
+- Fixed a crash when opening a world with a railgun logistics monitor (#1526) @Redeix
+- Fixed a crash when trying to spawn rabbits on the moon (#1528) @Pyritie
+- Fixed duplicate Create recipes @Pyritie
+- Prevented hammers, wrenches, and spades from being placed in chests to match other tools. (#1538) @dimethylene
+
+## [0.10.5] - 03-08-2025
 ### Major changes
 - New major GregTech version! Read all about its new changes [here](https://github.com/GregTechCEu/GregTech-Modern/releases), and please report any issues you find! @gustovafing
 - Added initial implementation of interplanetary logistics @gustovafing
+### Known issues
+- Some items have multiple, incorrect recycling recipes
+- Steam machines use twice as much steam as they're supposed to
 ### Other changes
 - Added universal compost items, for more efficient storage of compostables @Vazde @Redeix
 - Vanilla moss blocks/carpet are now compostable @Pyritie
@@ -27,6 +42,7 @@
 - Added a recipe to get Wood Gas for your food processor in LV (#1491) @Pyritie
 - Regular thorium is also now weakly radioactive @Pyritie
 - Added grape trellises to the list of plants harvestable by baskets (#1510) @Redeix
+- Added full PBR material shader support for custom GT machines and casings (#1512) @Redeix
 ### Bug fixes
 - Some bug fixes for the electric refrigerators @gustovafing
 - Fixed not being able to craft fine wire in a coiling machine for materials that didn't also have normal wire @Pyritie

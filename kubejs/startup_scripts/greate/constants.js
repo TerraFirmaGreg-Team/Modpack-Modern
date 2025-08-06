@@ -3,15 +3,16 @@
 
 global.GREATE_DISABLED_ITEMS = [
 	
-	'greate:steel_alloy',
-	'greate:aluminium_alloy',
-	'greate:stainless_steel_alloy',
-	'greate:titanium_alloy',
-	'greate:tungsten_steel_alloy',
-	'greate:rhodium_plated_palladium_alloy',
-	'greate:naquadah_alloy_alloy',
-	'greate:darmstadtium_alloy',
-	'greate:neutronium_alloy',
+	'create:andesite_alloy',
+	'gtceu:steel_alloy',
+	'gtceu:aluminium_alloy',
+	'gtceu:stainless_steel_alloy',
+	'gtceu:titanium_alloy',
+	'gtceu:tungsten_steel_alloy',
+	'gtceu:rhodium_plated_palladium_alloy',
+	'gtceu:naquadah_alloy_alloy',
+	'gtceu:darmstadtium_alloy',
+	'gtceu:neutronium_alloy',
 
 	'gtceu:tungsten_steel_whisk',
 	'gtceu:rhodium_plated_palladium_whisk',
@@ -160,4 +161,19 @@ global.GREATE_DISABLED_FLUIDS = [
 	'gtceu:chromatic_compound',
 	'gtceu:shadow_steel'
 
+]
+
+global.GREATE_DISABLED_TAGS = [
+	'#forge:andesite_alloy',
+	'#forge:dusts/andesite_alloy',
+	'#forge:alloys/andesite_alloy',
+	'#forge:alloys/steel',
+	'#forge:alloys/aluminium',
+	'#forge:alloys/stainless_steel',
+	'#forge:alloys/titanium',
+	'#forge:alloys/tungsten_steel',
+	'#forge:alloys/rhodium_plated_palladium',
+	'#forge:alloys/naquadah_alloy',
+	'#forge:alloys/darmstadtium',
+	'#forge:alloys/neutronium'
 ]
