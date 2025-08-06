@@ -67,7 +67,7 @@ const registerTFGItems = (event) => {
 
 
 	// #region Molds
-	global.TFG_EXTRUDER_MOLDS.forEach(id => event.create(id))
+	global.TFG_EXTRUDER_MOLDS.forEach(id => event.create(id[0]).displayName(id[1]))
 
 	global.TFG_CASTING_MOLDS.forEach(id => event.create(id))
 	// #endregion
