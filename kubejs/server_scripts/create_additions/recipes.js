@@ -91,7 +91,7 @@ const registerCreateAdditionsRecipes = (event) => {
 		C: 'gtceu:ulv_voltage_coil',
 		D: 'gtceu:ulv_machine_hull',
 		E: 'gtceu:tin_single_cable',
-		F: '#tfg:shafts'
+		F: '#forge:shafts'
 	}).id('tfg:createadditions/shaped/alternator')
 
 	//#region Liquid blaze burners

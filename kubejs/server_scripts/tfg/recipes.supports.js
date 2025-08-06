@@ -47,7 +47,7 @@ function registerTFGSupportRecipes(event) {
 		}).id('tfg:shaped/light_concrete_support'))
 
 	event.recipes.gtceu.assembler('tfg:gtceu/assembler/light_concrete_support')
-		.circuit(4)
+		.circuit(11)
 		.inputFluids(Fluid.of('gtceu:concrete', 36))
 		.itemOutputs('8x tfg:light_concrete_support')
 		.itemInputs('3x gtceu:light_concrete')
@@ -66,7 +66,7 @@ function registerTFGSupportRecipes(event) {
 		}).id('tfg:shaped/dark_concrete_support'))
 
 	event.recipes.gtceu.assembler('tfg:gtceu/assembler/dark_concrete_support')
-		.circuit(4)
+		.circuit(11)
 		.inputFluids(Fluid.of('gtceu:concrete', 36))
 		.itemOutputs('8x tfg:dark_concrete_support')
 		.itemInputs('3x gtceu:dark_concrete')
@@ -98,7 +98,7 @@ function registerTFGSupportRecipes(event) {
 			}).id(`tfg:shaped/mossy/${stone}_support`))
 
 		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/${stone}_support`)
-			.circuit(4)
+			.circuit(11)
 			.inputFluids(Fluid.of('gtceu:concrete', 36))
 			.itemOutputs(`8x tfg:${stone}_support`)
 			.itemInputs(`3x tfc:rock/loose/${stone}`)
@@ -106,7 +106,7 @@ function registerTFGSupportRecipes(event) {
 			.EUt(GTValues.VA[GTValues.ULV])
 
 		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/mossy/${stone}_support`)
-			.circuit(4)
+			.circuit(11)
 			.inputFluids(Fluid.of('gtceu:concrete', 36))
 			.itemOutputs(`8x tfg:${stone}_support`)
 			.itemInputs(`3x tfc:rock/mossy_loose/${stone}`)
@@ -126,7 +126,7 @@ function registerTFGSupportRecipes(event) {
 		}).id('tfg:shaped/travertine_support'))
 
 	event.recipes.gtceu.assembler('tfg:gtceu/assembler/travertine_support')
-		.circuit(4)
+		.circuit(11)
 		.inputFluids(Fluid.of('gtceu:concrete', 36))
 		.itemOutputs('8x tfg:travertine_support')
 		.itemInputs('3x tfg:loose/dripstone')
@@ -145,7 +145,7 @@ function registerTFGSupportRecipes(event) {
 		}).id('tfg:shaped/migmatite_support'))
 
 	event.recipes.gtceu.assembler('tfg:gtceu/assembler/migmatite_support')
-		.circuit(4)
+		.circuit(11)
 		.inputFluids(Fluid.of('gtceu:concrete', 36))
 		.itemOutputs('8x tfg:migmatite_support')
 		.itemInputs('3x tfg:loose/deepslate')
@@ -164,7 +164,7 @@ function registerTFGSupportRecipes(event) {
 		}).id('tfg:shaped/pyroxenite_support'))
 
 	event.recipes.gtceu.assembler('tfg:gtceu/assembler/pyroxenite_support')
-		.circuit(4)
+		.circuit(11)
 		.inputFluids(Fluid.of('gtceu:concrete', 36))
 		.itemOutputs('8x tfg:pyroxenite_support')
 		.itemInputs('3x beneath:blackstone_pebble')
@@ -182,7 +182,7 @@ function registerTFGSupportRecipes(event) {
 		}).id('tfg:shaped/rebar_support')
 
 	event.recipes.gtceu.assembler('tfg:gtceu/assembler/rebar_support')
-		.circuit(4)
+		.circuit(11)
 		.itemOutputs('8x tfg:rebar_support')
 		.itemInputs(ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 2), ChemicalHelper.get(TagPrefix.wireFine, GTMaterials.Steel, 1))
 		.duration(100)
@@ -199,7 +199,7 @@ function registerTFGSupportRecipes(event) {
 	.id('tfg:anvil/steel_support')
 
 	event.recipes.gtceu.assembler('tfg:gtceu/assembler/steel_support')
-		.circuit(4)
+		.circuit(11)
 		.itemOutputs('4x tfg:steel_support')
 		.itemInputs('2x #forge:double_ingots/steel')
 		.duration(100)

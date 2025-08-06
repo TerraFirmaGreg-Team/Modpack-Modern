@@ -22,10 +22,12 @@
 		},
 		"sky_color": 15117444,
 		"water_color": 4159204,
-		"water_fog_color": 329011
+		"water_fog_color": 1069623
 	},
 	"features": [
-		[],
+		[
+			"tfc:erosion"
+		],
 		[],
 		[
 			"tfg:earth/geode/amethyst",
@@ -37,16 +39,20 @@
 			"tfg:earth/geode/quartzite"
 		],
 		[
-			"tfc:vein/gabbro_dike",
-			"tfc:vein/diorite_dike"
+			"tfc:random_empty_hot_spring"
 		],
 		[],
 		[],
 		"#tfg:mars_veins",
 		[],
-		"#tfg:mars_small_rock_features",
+		[
+			"tfc:raw_boulder",
+			"tfc:cobble_boulder",
+			"tfc:raw_boulder_small_patch",
+			"tfc:cobble_boulder_small_patch"
+		],
 		"#tfg:mars_rusticus_vegetal_decoration",
-		[]
+		"#tfg:mars_top_layer_modification"
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

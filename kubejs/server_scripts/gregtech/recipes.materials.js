@@ -99,22 +99,22 @@ function registerGTCEUMetalRecipes(event) {
 				results: [toolHeadItem],
 				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/curving/${material.getName()}_ingot_to_${new String(headTagPrefix.name).toLowerCase()}_head`)
-
-			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
-				.itemInputs(toolHeadItem)
-				.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, materialAmount))
-				.duration(material.getMass() * 6 * materialAmount)
-				.category(GTRecipeCategories.MACERATOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.arc_furnace(`tfg:arc_furnace_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
-				.itemInputs(toolHeadItem)
-				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, materialAmount))
-				.duration(material.getMass() * 6 * materialAmount)
-				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-				.EUt(GTValues.VA[GTValues.LV])
-
+			
 			if (GTMaterials.Stone !== material) {
+				event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
+					.itemInputs(toolHeadItem)
+					.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, materialAmount))
+					.duration(material.getMass() * 6 * materialAmount)
+					.category(GTRecipeCategories.MACERATOR_RECYCLING)
+					.EUt(GTValues.VA[GTValues.ULV])
+				
+				event.recipes.gtceu.arc_furnace(`tfg:arc_furnace_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
+					.itemInputs(toolHeadItem)
+					.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, materialAmount))
+					.duration(material.getMass() * 6 * materialAmount)
+					.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+					.EUt(GTValues.VA[GTValues.LV])
+
 				event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
 					.itemInputs(toolHeadItem)
 					.outputFluids(Fluid.of(material.getFluid(), materialAmount * 144))
@@ -1095,6 +1095,30 @@ function registerGTCEUMetalRecipes(event) {
 			}).id(`tfg:vi/lathe/${material.getName()}_buzzsaw`)
 		}
 
+		removeMaceratorRecipe(event, `macerate_${material.getName()}_buzz_saw_blade`)
+		event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_buzz_saw_blade`)
+			.itemInputs(buzzsawBladeItem)
+			.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 2))
+			.duration(material.getMass() * 6 * 2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.remove({ id: `gtceu:arc_furnace/arc_${material.getName()}_buzz_saw_blade` })
+		event.recipes.gtceu.arc_furnace(`tfg:arc_furnace_${material.getName()}_buzz_saw_blade`)
+			.itemInputs(buzzsawBladeItem)
+			.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 2))
+			.duration(material.getMass() * 6 * 2)
+			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+			.EUt(GTValues.VA[GTValues.LV])
+			
+		event.remove({ id: `gtceu:extractor/extract_${material.getName()}_buzz_saw_blade` })
+		event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_buzz_saw_blade`)
+			.itemInputs(buzzsawBladeItem)
+			.outputFluids(Fluid.of(material.getFluid(), 2 * 144))
+			.duration(material.getMass() * 6 * 2)
+			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+			.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
+
 		event.remove({ id: `gtceu:shaped/buzzsaw_blade_${material.getName()}` })
 	}
 
@@ -1110,8 +1134,8 @@ function registerGTCEUMetalRecipes(event) {
 		event.remove({ id: `gtceu:arc_furnace/arc_iv_${material.getName()}_wrench` })
 		removeMaceratorRecipe(event, `macerate_lv_${material.getName()}_chainsaw`)
 		event.remove({ id: `gtceu:arc_furnace/arc_lv_${material.getName()}_chainsaw` })
-		removeMaceratorRecipe(event, `macerate_lv_${material.getName()}_buzzsaw`)
-		event.remove({ id: `gtceu:arc_furnace/arc_lv_${material.getName()}_buzzsaw` })
+		removeMaceratorRecipe(event, `macerate_${material.getName()}_buzzsaw`)
+		event.remove({ id: `gtceu:arc_furnace/arc_${material.getName()}_buzzsaw` })
 		removeMaceratorRecipe(event, `macerate_lv_${material.getName()}_drill`)
 		event.remove({ id: `gtceu:arc_furnace/arc_lv_${material.getName()}_drill` })
 		removeMaceratorRecipe(event, `macerate_mv_${material.getName()}_drill`)
@@ -1133,6 +1157,13 @@ function registerGTCEUMetalRecipes(event) {
 	}
 
 	forEachMaterial(material => {
+		// greate moment
+		if (material === GTMaterials.get("andesite_alloy")
+			|| material === GTMaterials.get("refined_radiance")
+			|| material === GTMaterials.get("shadow_steel")
+			|| material === GTMaterials.get("chromatic_compound"))
+		{ return; }
+
 		const toolProperty = material.getProperty(PropertyKey.TOOL)
 		const ingotProperty = material.getProperty(PropertyKey.INGOT)
 		const oreProperty = material.getProperty(PropertyKey.ORE)

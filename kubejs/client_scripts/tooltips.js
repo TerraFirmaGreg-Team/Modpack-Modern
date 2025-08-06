@@ -116,6 +116,18 @@ const registerTooltips = (event) => {
 		text.add(1, text.of('Produces §6256 FE/t§r (64 EU/t) on the §6moon§r during the §6day§r'))
 	})
 
+	event.addAdvanced(['gtceu:large_solar_panel'], (item, advanced, text) => {
+		text.add(1, text.of('Massive structure producing from §61024 to 4096 EU/t§r on the §6moon§r during the §6day§r'))
+	})
+
+	event.addAdvanced(['gtceu:large_solar_panel_tier2'], (item, advanced, text) => {
+		text.add(1, text.of('Massive structure producing from §64096 to 16384 EU/t§r on the §6moon§r during the §6day§r'))
+	})
+
+	event.addAdvanced(['gtceu:large_solar_panel_tier3'], (item, advanced, text) => {
+		text.add(1, text.of('Massive structure producing from §616384 to 65536 EU/t§r on the §6moon§r during the §6day§r'))
+	})
+
 	// MEGA Deprecated 0.10
 	event.addAdvanced(['#megacells:mega_interface'], (item, advanced, text) => {
 		text.add(1, text.of('§cDeprecated, cannot be crafted any more'))
