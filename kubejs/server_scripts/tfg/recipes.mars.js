@@ -20,7 +20,7 @@ const $ChanceLogic = Java.loadClass('com.gregtechceu.gtceu.api.recipe.chance.log
         .EUt(25)
 */
 
- event.recipes.gtceu.void_miner(`voidmap_earth`)
+/* event.recipes.gtceu.void_miner(`voidmap_earth`)
     .perTick(true)
     .inputFluids('gtceu:drilling_fluid 150')
     .perTick(false)
@@ -38,7 +38,7 @@ const $ChanceLogic = Java.loadClass('com.gregtechceu.gtceu.api.recipe.chance.log
     .chancedOutput('minecraft:raw_iron',5000,0)
     //.itemOutputsRanged('gtceu:raw_sapphire',1,3)
     .duration(20*5)
-    .EUt(GTValues.VA[GTValues.ZPM],4);
+    .EUt(GTValues.VA[GTValues.ZPM],4);*/
 
     // Ostrum Harvester
 
@@ -52,5 +52,46 @@ const $ChanceLogic = Java.loadClass('com.gregtechceu.gtceu.api.recipe.chance.log
     //.itemOutputsRanged('gtceu:raw_sapphire',1,3)
     .duration(20*5)
     .EUt(GTValues.VA[GTValues.LV]);
+
+    // Large Centrifuge Ostrum dust
+
+ event.recipes.gtceu.centrifuge(`ostrum_harvesting`)
+    .inputFluids('gtceu:bromine 100')
+    .itemInputs('#forge:dusts/ostrum')
+    .dimension('ad_astra:mars')
+    .chancedFluidOutputLogic($ChanceLogic.XOR)
+    .chancedFluidOutput('gtceu:lightweight_ostrum_vapor',6000,0)
+    .chancedFluidOutput('gtceu:ostrum_vapor',3000,0)
+    .chancedFluidOutput('gtceu:dense_ostrum_vapor',1000,0)
+    .duration(20*58)
+    .EUt(GTValues.VA[GTValues.EV], 4);
+
+event.recipes.gtceu.extraterrestrial_ore_fabricator('lightweight_ostrum')
+    .inputFluids('gtceu:lightweight_ostrum_vapor 1000')
+    .inputFluids(Fluid.of('gtceu:radon', 1000))
+    .itemOutputsRanged('#forge:crushed_ores/tantalite',1,10)
+    .itemOutputsRanged('#forge:crushed_ores/bauxite',1,10)
+    .itemOutputsRanged('#forge:crushed_ores/pyrope',1,10)
+    .itemOutputsRanged('#forge:crushed_ores/rose_quartz',1,10)
+    .itemOutputsRanged('#forge:crushed_ores/cassiterite',1,10)
+    .dimension('ad_astra:mars')
+    .duration(20*5)
+    .EUt(GTValues.VA[GTValues.IV]);
+
+event.recipes.gtceu.extraterrestrial_ore_fabricator('ostrum')
+    .inputFluids('gtceu:ostrum_vapor 1000')
+    .inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1000))
+    .itemOutputsRanged('#forge:crushed_ores/chromite',1,10)
+    .dimension('ad_astra:mars')
+    .duration(20*5)
+    .EUt(GTValues.VA[GTValues.IV]);
+
+event.recipes.gtceu.extraterrestrial_ore_fabricator('dense_ostrum')
+    .inputFluids('gtceu:dense_ostrum_vapor 1000')
+    .inputFluids(Fluid.of('gtceu:tritiated_water', 1000))
+    .itemOutputsRanged('#forge:crushed_ores/uraninite',1,10)
+    .dimension('ad_astra:mars')
+    .duration(20*5)
+    .EUt(GTValues.VA[GTValues.IV]);
 
  }

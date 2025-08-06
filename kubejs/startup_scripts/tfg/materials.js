@@ -325,16 +325,20 @@ const registerTFGMaterials = (event) => {
 
 	//# Mars Ore Line
 
-	event.create('lightweight_ostrium_vapor')
+	event.create('lightweight_ostrum_vapor')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(760))
 		.formula('(?)')
 
-	event.create('ostrium_vapor')
+	event.create('ostrum_vapor')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(815))
 		.formula('(?)')
 
-	event.create('dense_ostrium_vapor')
+	event.create('dense_ostrum_vapor')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(930))
+		.formula('(?)')
+
+	event.create('residual_radioactive_concoction')
+		.liquid(new GTFluidBuilder().customStill().temperature(450))
 		.formula('(?)')
 
 

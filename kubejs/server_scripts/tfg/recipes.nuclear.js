@@ -85,7 +85,7 @@ function registerTFGNuclearRecipes(event) {
 	event.recipes.gtceu.vacuum_freezer('oxidized_nuclear_residue')
 		.itemInputs('#forge:dusts/nuclear_residue')
 		.inputFluids(Fluid.of('gtceu:dioxygen_difluoride', 1000))
-		.outputFluids(Fluid.of('minecraft:water', 10))
+		.outputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1000))
 		.itemOutputs('#forge:dusts/oxidized_nuclear_residue')
 		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.IV])
