@@ -77,6 +77,8 @@ const registerTFCItemTags = (event) => {
 	event.add('tfc:pileable_sheets', '#forge:plates')
 	event.add('tfc:pileable_double_ingots', 'gtceu:tin_alloy_double_ingot')
 	event.add('tfc:pileable_double_ingots', 'gtceu:red_alloy_double_ingot')
+	event.add('tfc:pileable_double_ingots', 'gtceu:lead_double_ingot')
+	event.add('tfc:pileable_double_ingots', 'gtceu:invar_double_ingot')
 
 	// Рыба
 	event.add('minecraft:fishes', 'tfc:food/calamari')
@@ -491,6 +493,7 @@ const registerTFCFluidTags = (event) => {
 	event.add('tfc:usable_in_ingot_mold', 'gtceu:red_alloy')
 	event.add('tfc:usable_in_ingot_mold', 'gtceu:tin_alloy')
 	event.add('tfc:usable_in_ingot_mold', 'gtceu:lead')
+	event.add('tfc:usable_in_ingot_mold', 'gtceu:invar')
 
 	event.add('tfc:usable_in_bell_mold', 'gtceu:bronze')
 	event.add('tfc:usable_in_bell_mold', 'gtceu:gold')

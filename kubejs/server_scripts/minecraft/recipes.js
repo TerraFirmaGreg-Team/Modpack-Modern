@@ -1115,6 +1115,8 @@ const registerMinecraftRecipes = (event) => {
 
 	event.shapeless('8x minecraft:bone_meal', ['#forge:tools/mortars', 'minecraft:skeleton_skull'])
 
+	event.replaceInput({ id: 'minecraft:writable_book' }, 'minecraft:ink_sac', '#forge:dyes/black')
+
 	//Pressure Plates
 	const PRESSURE_PLATES = [
 		{type: 'bamboo', material: 'minecraft:bamboo_slab'},

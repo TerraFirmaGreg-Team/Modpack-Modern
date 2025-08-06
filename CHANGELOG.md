@@ -2,23 +2,49 @@
 
 ## [Unreleased]
 ### Changes
+- Added links from quests directly to field guide entries (#854) @Zippity
+- Added a second EBF recipe but from LV furnaces @Pyritie
+- Added GT machine recipes for maple/birch saps (#1524) @BlueBoat29
+### Bug fixes
+- Fixed chain conveyors not connecting (#1520) @BlueBoat29
+- Fixed a crash when opening a world with a railgun logistics monitor (#1526) @Redeix
+- Fixed a crash when trying to spawn rabbits on the moon (#1528) @Pyritie
+- Fixed duplicate Create recipes @Pyritie
+- Prevented hammers, wrenches, and spades from being placed in chests to match other tools. (#1538) @dimethylene
+
+## [0.10.5] - 03-08-2025
+### Major changes
 - New major GregTech version! Read all about its new changes [here](https://github.com/GregTechCEu/GregTech-Modern/releases), and please report any issues you find! @gustovafing
 - Added initial implementation of interplanetary logistics @gustovafing
+### Known issues
+- Some items have multiple, incorrect recycling recipes
+- Steam machines use twice as much steam as they're supposed to
+### Other changes
+- Added universal compost items, for more efficient storage of compostables @Vazde @Redeix
 - Vanilla moss blocks/carpet are now compostable @Pyritie
 - Added missing mixer recipes for turning medium compost greens/browns into compost @Pyritie
 - Adjusted recipe times of the VI machines @Pyritie
-- Added universal compost items, for more efficient storage of compostables @Vazde @Redeix
 - Added recipe for backpack feeding upgrade (#1462) @Pyritie
 - Greate shaft recipes are now shapeless (#1453) @Pyritie
 - Added crafting table recipes for matches and the matchbox (#1449) @Pyritie
-- Made "Etched" more accessible (#1473) @Nebby1999
-- Added faster recipes for crafting dough @Pyritie
+- Made "Etched" accessible earlier (#1473) @Nebby1999
+- Added faster recipes for crafting dough until the food processor @Pyritie
 - Black bronze now has a fluid pipe instead of an item pipe, so the drum has proper containment info @Pyritie
 - Added recipes to create basic TFC alcohol in the food processor @Pyritie
-- Added melting recipes for all the TFC metal dusts @Pyritie
+- Added melting recipes for all the TFC metal powders @Pyritie
 - Added mortar and pestle recipes for soybean and olive paste (#1480) @Pyritie
 - Added concrete to the list of valid blocks for GT facades (#1487) @TheAshenWolf
+- Removed Advanced Peripherals' Overpowered End Automata for allowing cheap interdimensional travel
+- Removed Advanced Peripherals' Chunk Controller for allowing too much offline chunkloading, slowing down large servers
+- Added Invar as a TFC-compatible metal (#1496) @Pyritie
+- Added extruder/curving press recipes for Tuyeres (#1499) @Pyritie
+- Added recipes for more train tracks @Pyritie
+- Added a recipe to get Wood Gas for your food processor in LV (#1491) @Pyritie
+- Regular thorium is also now weakly radioactive @Pyritie
+- Added grape trellises to the list of plants harvestable by baskets (#1510) @Redeix
+- Added full PBR material shader support for custom GT machines and casings (#1512) @Redeix
 ### Bug fixes
+- Some bug fixes for the electric refrigerators @gustovafing
 - Fixed not being able to craft fine wire in a coiling machine for materials that didn't also have normal wire @Pyritie
 - Fixed cobalt brass and potin double plates not being obtainable until MV @Pyritie
 - Fixed missing recipe for cooking fox meat @Pyritie
@@ -28,8 +54,10 @@
 - Fixed not being able to make sea water with TFC salt in a barrel (#1476) @Pyritie
 - Fixed the electric greenhouse fruit tree recipes making more saplings instead of fruit (#1445) @Pyritie
 - Fixed missing firmalife jam food processor recipes (#1478) @Pyritie
-### Translations
-- Ukranian @Furryks
+- Book and quill uses any black dye now (#1506) @Pyritie
+- Button recipe unification (mostly) (#1461) @Pyritie
+### Translation updates
+- Ukranian @Furryks & @MetEnBouldry
 
 ## [0.10.4] - 25-07-2025
 ### Changes

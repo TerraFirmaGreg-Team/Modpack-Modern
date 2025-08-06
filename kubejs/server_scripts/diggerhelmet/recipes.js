@@ -45,4 +45,12 @@ function registerDiggerHelmetRecipes(event) {
 		B: '#forge:screws/wrought_iron',
 		C: '#forge:foils/rubber'
 	}).id('tfg:shaped/auto_drink_modifier_rubber')
+
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('diggerhelmet:silk_lining', ['tfcambiental:silk_cowl', '#forge:string', 'tfc:bone_needle'])
+	).id('tfg:shapeless/diggerhelmet/silk_lining')
+
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('diggerhelmet:wool_lining', ['tfcambiental:wool_hat', '#forge:string', 'tfc:bone_needle'])
+	).id('tfg:shapeless/diggerhelmet/wool_lining')
 }

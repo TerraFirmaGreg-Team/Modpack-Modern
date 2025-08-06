@@ -48,6 +48,26 @@ function registerTACZGunRecipes(event){
 		
 	}).id('tacz:trapdoor_rifle');
 	
+	//DB shotguns
+	event.recipes.gtceu.assembler('tfg_tacz:db_short')
+		.itemInputs('2x gtceu:steel_small_fluid_pipe', '4x #forge:ingots/black_steel', '#forge:rods/black_steel',
+					'3x gtceu:treated_wood_planks', '10x #forge:screws/black_steel', 'tfg:advanced_clockwork_mechanism')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 432))
+		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
+					'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:db_short",HasBulletInBarrel:1b}'))
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(60)
+	event.recipes.gtceu.assembler('tfg_tacz:db_long')
+		.itemInputs('4x gtceu:steel_small_fluid_pipe', '4x #forge:ingots/black_steel', '#forge:rods/black_steel',
+					'6x gtceu:treated_wood_planks', '14x #forge:screws/black_steel', 'tfg:advanced_clockwork_mechanism')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 576))
+		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
+					'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:db_long",HasBulletInBarrel:1b}'))
+		.circuit(2)
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(100)
+	
 	//Region clockwork era
 	event.recipes.gtceu.assembler('tfg_tacz:ca_torque_revo')
 		.itemInputs('gtceu:steel_small_fluid_pipe', '4x #forge:ingots/aluminium', '2x #forge:plates/brass',
@@ -170,8 +190,18 @@ function registerTACZGunRecipes(event){
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 2304))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"applied_armorer:moritz_gernade_gl3",HasBulletInBarrel:1b}'))
-		.circuit(7)
+		.circuit(8)
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(240)
+	
+	event.recipes.gtceu.assembler('tfg_tacz:ca_cannon')
+		.itemInputs('2x gtceu:tungsten_large_fluid_pipe', '2x gtceu:tungsten_normal_fluid_pipe', '10x #forge:ingots/titanium',
+					'4x #forge:ingots/tungsten', '10x #forge:plates/brass', 'create:gantry_shaft',
+					'4x gtceu:treated_wood_planks', '30x #forge:screws/tungsten', '3x tfg:advanced_clockwork_mechanism')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 3024))
+		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
+							 '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"create_armorer:cannon_40mm_salamander",HasBulletInBarrel:1b}'))
+		.EUt(GTValues.VA[GTValues.EV])
+		.duration(300)
 	
 }

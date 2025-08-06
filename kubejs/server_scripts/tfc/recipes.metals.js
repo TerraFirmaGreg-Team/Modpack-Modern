@@ -15,6 +15,11 @@ function registerTFCMetalsRecipes(event) {
 		TFC.alloyPart('tfc:cast_iron', 0.45, 0.55)
 	]).id('tfg:alloy/tin_alloy')
 
+	event.recipes.tfc.alloy('tfg:invar', [
+		TFC.alloyPart('tfc:nickel', 0.60, 0.70),
+		TFC.alloyPart('tfc:cast_iron', 0.30, 0.40)
+	]).id('tfg:alloy/invar')
+
 	//#endregion
 
 

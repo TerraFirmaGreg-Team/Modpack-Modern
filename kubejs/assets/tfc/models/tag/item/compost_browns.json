@@ -1,0 +1,7 @@
+{
+	"parent": "emi:item/half_item",
+	"textures": {
+		"first": "tfc:item/powder/wood_ash",
+		"second": "tfc:item/jute"
+	}
+}

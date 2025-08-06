@@ -78,6 +78,10 @@ const registerTFCItemSize = (event) => {
 
 	event.itemSize('#tfc:foods/sealed_preserves', 'tiny', 'medium', 'sealed_preserves')
 	event.itemSize('#tfc:foods/preserves', 'tiny', 'medium', 'preserves')
+
+	event.itemSize('#forge:tools/wrenches', 'very_large', 'very_heavy', 'wrenches')
+	event.itemSize('#forge:tools/mining_hammers', 'very_large', 'very_heavy', 'mining_hammers')
+	event.itemSize('#forge:tools/spades', 'very_large', 'very_heavy', 'spades')
 }
 
 

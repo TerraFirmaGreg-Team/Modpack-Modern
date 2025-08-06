@@ -191,9 +191,6 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:any_iron_double_ingot', '#forge:double_ingots/iron')
 	event.add('tfg:any_iron_double_ingot', '#forge:double_ingots/wrought_iron')
 
-	event.add('tfg:any_iron_plate', '#forge:double_plates/iron')
-	event.add('tfg:any_iron_plate', '#forge:double_plates/wrought_iron')
-
 	event.add('tfg:any_bronze_frame', '#forge:frames/bronze')
 	event.add('tfg:any_bronze_frame', '#forge:frames/bismuth_bronze')
 	event.add('tfg:any_bronze_frame', '#forge:frames/black_bronze')
@@ -241,6 +238,34 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/dairy');
 	event.add('tfg:foods/usable_in_meal_bag', 'tfc:food/cooked_egg');
 	event.add('tfg:foods/usable_in_meal_bag', 'tfc:food/boiled_egg');
+	//#endregion
+
+	//#region Blacklisted from the railgun
+	event.add('tfg:cannot_launch_in_railgun', '#tfc:vessels')
+	event.add('tfg:cannot_launch_in_railgun', '#tfc:large_vessels')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:item_storage_cell_1k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:item_storage_cell_4k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:item_storage_cell_16k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:item_storage_cell_64k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:item_storage_cell_256k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:fluid_storage_cell_1k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:fluid_storage_cell_4k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:fluid_storage_cell_16k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:fluid_storage_cell_64k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:fluid_storage_cell_256k')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:spatial_storage_cell_2')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:spatial_storage_cell_16')
+	event.add('tfg:cannot_launch_in_railgun', 'ae2:spatial_storage_cell_128')
+	event.add('tfg:cannot_launch_in_railgun', 'megacells:item_storage_cell_1m')
+	event.add('tfg:cannot_launch_in_railgun', 'megacells:item_storage_cell_4m')
+	event.add('tfg:cannot_launch_in_railgun', 'megacells:item_storage_cell_16m')
+	event.add('tfg:cannot_launch_in_railgun', 'megacells:item_storage_cell_64m')
+	event.add('tfg:cannot_launch_in_railgun', 'megacells:fluid_storage_cell_1m')
+	event.add('tfg:cannot_launch_in_railgun', 'megacells:fluid_storage_cell_4m')
+	event.add('tfg:cannot_launch_in_railgun', 'megacells:fluid_storage_cell_16m')
+	event.add('tfg:cannot_launch_in_railgun', 'megacells:fluid_storage_cell_64m')
+	event.add('tfg:cannot_launch_in_railgun', 'create:minecart_contraption')
+	event.add('tfg:cannot_launch_in_railgun', 'tfg:railgun_ammo_shell')
 	//#endregion
 
 	// #region Space blocks
@@ -415,6 +440,11 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfg:harvester_harvestable', '#tfc:fruit_tree_leaves')
 	event.add('tfg:harvester_harvestable', '#tfc:berry_bushes')
 	event.add('tfg:harvester_harvestable', '#tfc:any_spreading_bush')
+	event.add('tfg:harvester_harvestable', '#firmalife:grape_strings')
+	event.add('tfg:harvester_harvestable', '#firmalife:grape_trellis_posts_plant')
+	//added for QOL but doesnt harvest anything
+	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_red')
+	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_white')
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_large')
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_small')

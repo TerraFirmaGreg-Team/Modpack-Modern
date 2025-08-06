@@ -81,6 +81,8 @@ const registerMinecraftItemTags = (event) => {
     
 	event.add('tfc:compost_greens', 'minecraft:nether_wart_block')
 	event.add('tfc:compost_greens', 'minecraft:warped_wart_block')
+
+    event.add('forge:dyes/black', 'minecraft:ink_sac')
 }
 
 const registerMinecraftBlockTags = (event) => {
