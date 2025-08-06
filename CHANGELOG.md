@@ -5,6 +5,8 @@
 - Added links from quests directly to field guide entries (#854) @Zippity
 - Added a second EBF recipe but from LV furnaces @Pyritie
 - Added GT machine recipes for maple/birch saps (#1524) @BlueBoat29
+- Changed the TFC ratios of bronze and brass to match GregTech's (3:1 instead of 9:1) @Pyritie
+- Added Potin, Cobalt, and Cobalt Brass as TFC metals @Pyritie
 ### Bug fixes
 - Fixed chain conveyors not connecting (#1520) @BlueBoat29
 - Fixed a crash when opening a world with a railgun logistics monitor (#1526) @Redeix

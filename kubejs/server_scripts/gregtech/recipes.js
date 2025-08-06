@@ -1355,5 +1355,4 @@ const registerGTCEURecipes = (event) => {
 	event.replaceOutput({ id: 'gtceu:cutter/treated_button' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
 	event.replaceOutput({ id: 'gtceu:cutter/treated_button_water' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
 	event.replaceOutput({ id: 'gtceu:cutter/treated_button_distilled_water' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
-
 }
