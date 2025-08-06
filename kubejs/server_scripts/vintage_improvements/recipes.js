@@ -267,6 +267,8 @@ function registerVintageImprovementsRecipes(event) {
 
 
 	forEachMaterial(material => {
+		if (material == GTMaterials.get("andesite_alloy"))
+			return;
 
 		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
 		if (ingotItem !== null && ingotItem.hasTag('c:hidden_from_recipe_viewers'))

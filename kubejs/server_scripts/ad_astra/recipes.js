@@ -284,7 +284,7 @@ const registerAdAstraRecipes = (event) => {
 		.itemInputs(
 			'gtceu:carbon_fiber_mesh',
 			'#forge:aerogels',
-			'tfc:wool'//replace with glacian wool
+			'tfg:glacian_wool'
 		)
 		.itemOutputs('2x tfg:better_space_suit_fabric')
 		.addMaterialInfo(true)

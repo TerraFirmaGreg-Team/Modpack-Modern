@@ -32,7 +32,7 @@ onlyCurrentMapWaypoints:false
 minZoomForLocalWaypoints:0.0
 arrowColour:-2
 minimapRadar:true
-renderWaypoints:false
+renderWaypoints:true
 partialYTeleportation:true
 displayStainedGlass:true
 caveModeDepth:30

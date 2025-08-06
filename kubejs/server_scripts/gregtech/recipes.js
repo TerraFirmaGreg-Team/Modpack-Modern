@@ -451,6 +451,17 @@ const registerGTCEURecipes = (event) => {
 		D: 'gtceu:copper_single_cable'
 	}).id('gtceu:shaped/multi_furnace')
 
+	event.shaped('gtceu:multi_smelter', [
+		'AAA',
+		'BCB',
+		'DBD'
+	], {
+		A: 'gtceu:lv_electric_furnace',
+		B: '#gtceu:circuits/hv',
+		C: 'gtceu:heatproof_machine_casing',
+		D: 'gtceu:copper_single_cable'
+	}).id('gtceu:shaped/multi_furnace2')
+
 	// Electric Blast Furnace
 	event.shaped('gtceu:electric_blast_furnace', [
 		'AAA',
@@ -462,6 +473,17 @@ const registerGTCEURecipes = (event) => {
 		C: 'gtceu:heatproof_machine_casing',
 		D: 'gtceu:tin_single_cable'
 	}).id('gtceu:shaped/electric_blast_furnace')
+
+	event.shaped('gtceu:electric_blast_furnace', [
+		'AAA',
+		'BCB',
+		'DBD'
+	], {
+		A: 'gtceu:lv_electric_furnace',
+		B: '#gtceu:circuits/lv',
+		C: 'gtceu:heatproof_machine_casing',
+		D: 'gtceu:tin_single_cable'
+	}).id('gtceu:shaped/electric_blast_furnace2')
 
 	// Клей из ТФК клея
 	event.recipes.gtceu.extractor('tfg:glue_from_tfc_glue')

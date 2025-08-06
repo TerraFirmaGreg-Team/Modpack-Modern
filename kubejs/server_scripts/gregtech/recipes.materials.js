@@ -968,6 +968,13 @@ function registerGTCEUMetalRecipes(event) {
 	}
 
 	forEachMaterial(material => {
+		// greate moment
+		if (material === GTMaterials.get("andesite_alloy")
+			|| material === GTMaterials.get("refined_radiance")
+			|| material === GTMaterials.get("shadow_steel")
+			|| material === GTMaterials.get("chromatic_compound"))
+		{ return; }
+
 		const toolProperty = material.getProperty(PropertyKey.TOOL)
 		const ingotProperty = material.getProperty(PropertyKey.INGOT)
 		const oreProperty = material.getProperty(PropertyKey.ORE)
