@@ -10,6 +10,7 @@
 - Fixed a crash when opening a world with a railgun logistics monitor (#1526) @Redeix
 - Fixed a crash when trying to spawn rabbits on the moon (#1528) @Pyritie
 - Fixed duplicate Create recipes @Pyritie
+- Prevented hammers, wrenches, and spades from being placed in chests to match other tools. (#1538) @dimethylene
 
 ## [0.10.5] - 03-08-2025
 ### Major changes
