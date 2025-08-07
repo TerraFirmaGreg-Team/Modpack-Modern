@@ -6,7 +6,7 @@
 
 ## [0.10.6] - 07-08-2025
 ### Changes
-- Added links from quests directly to field guide entries (#854) @Zippity
+- Added support for links from quests directly to field guide entries (#854) @Zippity
 - Added a second EBF recipe but from LV furnaces @Pyritie
 - Added GT machine recipes for maple/birch saps (#1524) @BlueBoat29
 - Changed the TFC ratios of bronze and brass to match GregTech's (3:1 instead of 9:1) @Pyritie
@@ -22,6 +22,7 @@
 - Removed cinnabar to redstone recipe, which generated free resources (#1548) @SpicyNoodle5
 ### Known issues
 - Some items have multiple, incorrect recycling recipes
+- AoE GregTech tools don't display the right graphics or play the right sounds when breaking blocks, but they do function properly 
 
 ## [0.10.5] - 03-08-2025
 ### Major changes
