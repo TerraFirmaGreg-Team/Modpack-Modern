@@ -25,14 +25,14 @@ function registerGTCEuTFCMetalsRecipes(event) {
 		.itemOutputs('tfc:metal/ingot/red_steel')
 		.inputFluids(Fluid.of('gtceu:oxygen', 72))
 		.duration(700)
-		.EUt(32)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.arc_furnace('tfg:blue_steel_dust_to_ingot')
 		.itemInputs('gtceu:blue_steel_dust')
 		.itemOutputs('tfc:metal/ingot/blue_steel')
 		.inputFluids(Fluid.of('gtceu:oxygen', 72))
 		.duration(700)
-		.EUt(32)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	//#endregion
 

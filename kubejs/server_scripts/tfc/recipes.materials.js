@@ -9,7 +9,7 @@ function registerTFCMaterialsRecipes(event) {
 		if (tfcProperty === null) {
 			return;
 		}
-
+		
 		let outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial()
 
 		// Ingots
@@ -238,6 +238,24 @@ function registerTFCMaterialsRecipes(event) {
 								.tier(tfcProperty.getTier())
 								.id(`tfc:anvil/${material.getName()}_tuyere`)
 
+							// These aren't TFC recipes but they go here since they don't have a tag prefix
+							// and I'm too lazy to make them one
+							event.custom({
+								type: 'vintageimprovements:curving',
+								ingredients: [doublePlateItem],
+								// tuyeres are roughly bottle shaped, right?
+								// (there's no other mold that wouldn't conflict and this seems close enough)
+								itemAsHead: 'gtceu:bottle_extruder_mold',
+								results: [{ item: `tfc:metal/tuyere/${material.getName()}` }],
+								processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+							}).id(`tfg:vi/curving/${material.getName()}_tuyere`)
+
+							event.recipes.gtceu.extruder(`tfg:${material.getName()}_tuyere`)
+								.itemInputs(doublePlateItem)
+								.notConsumable('gtceu:bottle_extruder_mold')
+								.itemOutputs(`tfc:metal/tuyere/${material.getName()}`)
+								.duration(material.getMass() * 6)
+								.EUt(GTValues.VA[GTValues.LV])
 							//#endregion
 
 							//#region Щит
@@ -307,7 +325,7 @@ function registerTFCMaterialsRecipes(event) {
 				}
 
 				// Tools (From Double Ingots)
-				if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
+				if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL) || material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
 					//#region Меч
 
 					// Крафт инструмента
@@ -357,32 +375,32 @@ function registerTFCMaterialsRecipes(event) {
 
 					//#region Дубина
 
-					// Декрафт инструмента в жидкость
-					event.recipes.tfc.heating(`tfc:metal/mace/${material.getName()}`, tfcProperty.getMeltTemp())
-						.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
-						.useDurability(true)
-						.id(`tfc:heating/metal/${material.getName()}_mace`)
+					if (!material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
+						// Декрафт инструмента в жидкость
+						event.recipes.tfc.heating(`tfc:metal/mace/${material.getName()}`, tfcProperty.getMeltTemp())
+							.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+							.useDurability(true)
+							.id(`tfc:heating/metal/${material.getName()}_mace`)
 
-					// Металл + Форма -> Оголовье
-					if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-						event.recipes.tfc.casting(`tfc:metal/mace_head/${material.getName()}`, 'tfc:ceramic/mace_head_mold', Fluid.of(outputMaterial.getFluid(), 288), 1)
-							.id(`tfc:casting/${material.getName()}_mace_head`)
+						// Металл + Форма -> Оголовье
+						if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+							event.recipes.tfc.casting(`tfc:metal/mace_head/${material.getName()}`, 'tfc:ceramic/mace_head_mold', Fluid.of(outputMaterial.getFluid(), 288), 1)
+								.id(`tfc:casting/${material.getName()}_mace_head`)
 
-						event.recipes.create.filling(
-							Item.of('tfc:ceramic/mace_head_mold', getFillingNBT(outputMaterial, 288)),
-							[
-								Fluid.of(outputMaterial.getFluid(), 288),
-								Item.of('tfc:ceramic/mace_head_mold').strongNBT()
-							]
-						).id(`tfg:tfc/filling/${material.getName()}_mace_head`)
+							event.recipes.create.filling(
+								Item.of('tfc:ceramic/mace_head_mold', getFillingNBT(outputMaterial, 288)),
+								[
+									Fluid.of(outputMaterial.getFluid(), 288),
+									Item.of('tfc:ceramic/mace_head_mold').strongNBT()
+								]
+							).id(`tfg:tfc/filling/${material.getName()}_mace_head`)
+						}
 
+						// Декрафт оголовья в жидкость
+						event.recipes.tfc.heating(`tfc:metal/mace_head/${material.getName()}`, tfcProperty.getMeltTemp())
+							.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+							.id(`tfc:heating/metal/${material.getName()}_mace_head`)
 					}
-
-					// Декрафт оголовья в жидкость
-					event.recipes.tfc.heating(`tfc:metal/mace_head/${material.getName()}`, tfcProperty.getMeltTemp())
-						.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
-						.id(`tfc:heating/metal/${material.getName()}_mace_head`)
-
 					//#endregion
 
 					//#region Мясницкий нож
@@ -622,7 +640,7 @@ function registerTFCMaterialsRecipes(event) {
 			}
 
 			// Tools (From Ingot)
-			if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
+			if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL) || material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
 
 				//#region pickaxe
 
@@ -672,14 +690,16 @@ function registerTFCMaterialsRecipes(event) {
 				//#endregion
 					
 				// #region mattock
-				event.recipes.tfc.heating(`rnr:metal/mattock/${material.getName()}`, tfcProperty.getMeltTemp())
-					.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-					.useDurability(true)
-					.id(`rnr:heating/metal/${material.getName()}_mattock`)
+				if (!material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
+					event.recipes.tfc.heating(`rnr:metal/mattock/${material.getName()}`, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+						.useDurability(true)
+						.id(`rnr:heating/metal/${material.getName()}_mattock`)
 
-				event.recipes.tfc.heating(`rnr:metal/mattock_head/${material.getName()}`, tfcProperty.getMeltTemp())
-					.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-					.id(`rnr:heating/metal/${material.getName()}_mattock_head`)
+					event.recipes.tfc.heating(`rnr:metal/mattock_head/${material.getName()}`, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+						.id(`rnr:heating/metal/${material.getName()}_mattock_head`)
+				}
 				//#endregion
 				
 				// #region screwdriver
@@ -1083,20 +1103,27 @@ function registerTFCMaterialsRecipes(event) {
 					//#region shears 
 
 					// Сварка оголовий
-					event.recipes.tfc.welding(`tfc:metal/shears/${material.getName()}`, knifeHeadItem, knifeHeadItem, tfcProperty.getTier())
-						.id(`tfc:welding/${material.getName()}_shears`)
+					if (!material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
+						event.recipes.tfc.welding(`tfc:metal/shears/${material.getName()}`, knifeHeadItem, knifeHeadItem, tfcProperty.getTier())
+							.id(`tfc:welding/${material.getName()}_shears`)
 
-					event.recipes.greate.compacting(`tfc:metal/shears/${material.getName()}`, [knifeHeadItem, knifeHeadItem, 'tfc:powder/flux'])
-						.heated()
-						.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
-						.id(`greate:compacting/${material.getName()}_shears`)
+						event.recipes.greate.compacting(`tfc:metal/shears/${material.getName()}`, [knifeHeadItem, knifeHeadItem, 'tfc:powder/flux'])
+							.heated()
+							.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
+							.id(`greate:compacting/${material.getName()}_shears`)
 
-					// Декрафт инструмента в жидкость
-					event.recipes.tfc.heating(`tfc:metal/shears/${material.getName()}`, tfcProperty.getMeltTemp())
-						.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
-						.useDurability(true)
-						.id(`tfc:heating/metal/${material.getName()}_shears`)
+						// Декрафт инструмента в жидкость
+						event.recipes.tfc.heating(`tfc:metal/shears/${material.getName()}`, tfcProperty.getMeltTemp())
+							.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+							.useDurability(true)
+							.id(`tfc:heating/metal/${material.getName()}_shears`)
 
+						event.recipes.gtceu.forge_hammer(`tfc:metal/shears/${material.getName()}`)
+							.itemInputs(knifeHeadItem.withCount(2))
+							.itemOutputs(`tfc:metal/shears/${material.getName()}`)
+							.duration(40)
+							.EUt(7)
+					}
 					//#endregion
 
 				}
@@ -1105,89 +1132,90 @@ function registerTFCMaterialsRecipes(event) {
 
 				//#region prospector pick
 
-				// Декрафт инструмента в жидкость
-				event.recipes.tfc.heating(`tfc:metal/propick/${material.getName()}`, tfcProperty.getMeltTemp())
-					.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-					.useDurability(true)
-					.id(`tfc:heating/metal/${material.getName()}_propick`)
+				if (!material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
+					// Декрафт инструмента в жидкость
+					event.recipes.tfc.heating(`tfc:metal/propick/${material.getName()}`, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+						.useDurability(true)
+						.id(`tfc:heating/metal/${material.getName()}_propick`)
 
-				// Декрафт оголовья в жидкость
-				event.recipes.tfc.heating(`tfc:metal/propick_head/${material.getName()}`, tfcProperty.getMeltTemp())
-					.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-					.id(`tfc:heating/metal/${material.getName()}_propick_head`)
+					// Декрафт оголовья в жидкость
+					event.recipes.tfc.heating(`tfc:metal/propick_head/${material.getName()}`, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+						.id(`tfc:heating/metal/${material.getName()}_propick_head`)
 
-				// Металл + Форма -> Оголовье
-				if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-					event.recipes.tfc.casting(`tfc:metal/propick_head/${material.getName()}`, 'tfc:ceramic/propick_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
-						.id(`tfc:casting/${material.getName()}_propick_head`)
+					// Металл + Форма -> Оголовье
+					if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+						event.recipes.tfc.casting(`tfc:metal/propick_head/${material.getName()}`, 'tfc:ceramic/propick_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
+							.id(`tfc:casting/${material.getName()}_propick_head`)
 
-					event.recipes.create.filling(
-						Item.of('tfc:ceramic/propick_head_mold', getFillingNBT(outputMaterial, 144)),
-						[
-							Fluid.of(outputMaterial.getFluid(), 144),
-							Item.of('tfc:ceramic/propick_head_mold').strongNBT()
-						]
-					).id(`tfg:tfc/filling/${material.getName()}_propick_head_mold`)
+						event.recipes.create.filling(
+							Item.of('tfc:ceramic/propick_head_mold', getFillingNBT(outputMaterial, 144)),
+							[
+								Fluid.of(outputMaterial.getFluid(), 144),
+								Item.of('tfc:ceramic/propick_head_mold').strongNBT()
+							]
+						).id(`tfg:tfc/filling/${material.getName()}_propick_head_mold`)
+					}
 				}
-
 				//#endregion
 
 				//#region chisel
+				if (!material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
+					// Декрафт инструмента в жидкость
+					event.recipes.tfc.heating(`tfc:metal/chisel/${material.getName()}`, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+						.useDurability(true)
+						.id(`tfc:heating/metal/${material.getName()}_chisel`)
 
-				// Декрафт инструмента в жидкость
-				event.recipes.tfc.heating(`tfc:metal/chisel/${material.getName()}`, tfcProperty.getMeltTemp())
-					.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-					.useDurability(true)
-					.id(`tfc:heating/metal/${material.getName()}_chisel`)
+					// Декрафт оголовья в жидкость
+					event.recipes.tfc.heating(`tfc:metal/chisel_head/${material.getName()}`, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+						.id(`tfc:heating/metal/${material.getName()}_chisel_head`)
 
-				// Декрафт оголовья в жидкость
-				event.recipes.tfc.heating(`tfc:metal/chisel_head/${material.getName()}`, tfcProperty.getMeltTemp())
-					.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-					.id(`tfc:heating/metal/${material.getName()}_chisel_head`)
+					// Металл + Форма -> Оголовье
+					if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+						event.recipes.tfc.casting(`tfc:metal/chisel_head/${material.getName()}`, 'tfc:ceramic/chisel_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
+							.id(`tfc:casting/${material.getName()}_chisel_head`)
 
-				// Металл + Форма -> Оголовье
-				if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-					event.recipes.tfc.casting(`tfc:metal/chisel_head/${material.getName()}`, 'tfc:ceramic/chisel_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
-						.id(`tfc:casting/${material.getName()}_chisel_head`)
-
-					event.recipes.create.filling(
-						Item.of('tfc:ceramic/chisel_head_mold', getFillingNBT(outputMaterial, 144)),
-						[
-							Fluid.of(outputMaterial.getFluid(), 144),
-							Item.of('tfc:ceramic/chisel_head_mold').strongNBT()
-						]
-					).id(`tfg:tfc/filling/${material.getName()}_chisel_head_mold`)
+						event.recipes.create.filling(
+							Item.of('tfc:ceramic/chisel_head_mold', getFillingNBT(outputMaterial, 144)),
+							[
+								Fluid.of(outputMaterial.getFluid(), 144),
+								Item.of('tfc:ceramic/chisel_head_mold').strongNBT()
+							]
+						).id(`tfg:tfc/filling/${material.getName()}_chisel_head_mold`)
+					}
 				}
-
 				//#endregion
 
 				//#region javelin
+				if (!material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
+					// Декрафт инструмента в жидкость
+					event.recipes.tfc.heating(`tfc:metal/javelin/${material.getName()}`, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+						.useDurability(true)
+						.id(`tfc:heating/metal/${material.getName()}_javelin`)
 
-				// Декрафт инструмента в жидкость
-				event.recipes.tfc.heating(`tfc:metal/javelin/${material.getName()}`, tfcProperty.getMeltTemp())
-					.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-					.useDurability(true)
-					.id(`tfc:heating/metal/${material.getName()}_javelin`)
+					// Декрафт оголовья в жидкость
+					event.recipes.tfc.heating(`tfc:metal/javelin_head/${material.getName()}`, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+						.id(`tfc:heating/metal/${material.getName()}_javelin_head`)
 
-				// Декрафт оголовья в жидкость
-				event.recipes.tfc.heating(`tfc:metal/javelin_head/${material.getName()}`, tfcProperty.getMeltTemp())
-					.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-					.id(`tfc:heating/metal/${material.getName()}_javelin_head`)
+					// Металл + Форма -> Оголовье
+					if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+						event.recipes.tfc.casting(`tfc:metal/javelin_head/${material.getName()}`, 'tfc:ceramic/javelin_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
+							.id(`tfc:casting/${material.getName()}_javelin_head`)
 
-				// Металл + Форма -> Оголовье
-				if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-					event.recipes.tfc.casting(`tfc:metal/javelin_head/${material.getName()}`, 'tfc:ceramic/javelin_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
-						.id(`tfc:casting/${material.getName()}_javelin_head`)
-
-					event.recipes.create.filling(
-						Item.of('tfc:ceramic/javelin_head_mold', getFillingNBT(outputMaterial, 144)),
-						[
-							Fluid.of(outputMaterial.getFluid(), 144),
-							Item.of('tfc:ceramic/javelin_head_mold').strongNBT()
-						]
-					).id(`tfg:tfc/filling/${material.getName()}_javelin_head_mold`)
+						event.recipes.create.filling(
+							Item.of('tfc:ceramic/javelin_head_mold', getFillingNBT(outputMaterial, 144)),
+							[
+								Fluid.of(outputMaterial.getFluid(), 144),
+								Item.of('tfc:ceramic/javelin_head_mold').strongNBT()
+							]
+						).id(`tfg:tfc/filling/${material.getName()}_javelin_head_mold`)
+					}
 				}
-
 				//#endregion
 			}
 		}

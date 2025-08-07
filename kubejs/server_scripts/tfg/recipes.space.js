@@ -95,6 +95,53 @@ function registerTFGSpaceRecipes(event) {
 		.addDataString("fluidA", "minecraft:lava")
 		.outputFluids(Fluid.of("minecraft:lava", 1000))
 
+	event.recipes.gtceu.aqueous_accumulator('water_moon')
+		.circuit(aaCircuit++)
+		.dimension('ad_astra:moon')
+		.duration(20*5)
+		.EUt(GTValues.VHA[GTValues.MV])
+		.addDataString("fluidA", "minecraft:water")
+		.outputFluids(Fluid.of("minecraft:water", 1000))
+
+	event.recipes.gtceu.aqueous_accumulator('sea_water_moon')
+		.circuit(aaCircuit++)
+		.dimension('ad_astra:moon')
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.MV])
+		.addDataString("fluidA", "tfc:salt_water")
+		.outputFluids(Fluid.of("tfc:salt_water", 1000))
+
+	event.recipes.gtceu.aqueous_accumulator('water_orbit')
+		.circuit(aaCircuit++)
+		.dimension('ad_astra:earth_orbit')
+		.dimension('ad_astra:moon_orbit')
+		.dimension('ad_astra:mars_orbit')
+		.dimension('ad_astra:venus_orbit')
+		.dimension('ad_astra:mercury_orbit')
+		.duration(20*5)
+		.EUt(GTValues.VHA[GTValues.MV])
+		.addDataString("fluidA", "minecraft:water")
+		.outputFluids(Fluid.of("minecraft:water", 1000))
+
+	event.recipes.gtceu.aqueous_accumulator('sea_water_orbit')
+		.circuit(aaCircuit)
+		.dimension('ad_astra:earth_orbit')
+		.dimension('ad_astra:moon_orbit')
+		.dimension('ad_astra:mars_orbit')
+		.dimension('ad_astra:venus_orbit')
+		.dimension('ad_astra:mercury_orbit')
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.MV])
+		.addDataString("fluidA", "tfc:salt_water")
+		.outputFluids(Fluid.of("tfc:salt_water", 1000))
+
+	event.recipes.gtceu.aqueous_accumulator('semiheavy_water_mars')
+		.dimension('ad_astra:mars')
+		.duration(20)
+		.EUt(GTValues.VHA[GTValues.ULV])
+		.addDataString("fluidA", "tfg:semiheavy_ammoniacal_water")
+		.outputFluids(Fluid.of("tfg:semiheavy_ammoniacal_water", 1000))
+
 	// Plants - Can't use the default builder here because fertiliser is much harder to get on the moon,
 	// and we're using helium-3 as the fertiliser
 
@@ -214,4 +261,84 @@ function registerTFGSpaceRecipes(event) {
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.EV])
 		.cleanroom(CleanroomType.CLEANROOM)
+
+	// Railgun stuff
+
+	event.recipes.gtceu.assembler('tfg:railgun_ammo_basic')
+		.itemInputs('#forge:double_plates/steel', '2x #forge:rods/magnetic_iron', '2x #forge:fine_wires/annealed_copper')
+		.inputFluids('gtceu:rocket_fuel 250')
+		.itemOutputs('tfg:railgun_ammo_shell')
+		.duration(20 * 10)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.assembler('tfg:railgun_ammo_advanced')
+		.itemInputs('#forge:double_plates/titanium', '2x #forge:rods/magnetic_steel', '2x #forge:fine_wires/gold')
+		.inputFluids('gtceu:rocket_fuel 250')
+		.itemOutputs('4x tfg:railgun_ammo_shell')
+		.duration(20 * 10)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.assembler('tfg:railgun_ammo_best')
+		.itemInputs('#forge:double_plates/tungsten', '2x #forge:rods/magnetic_neodymium', '2x #forge:fine_wires/aluminium')
+		.inputFluids('gtceu:rocket_fuel 250')
+		.itemOutputs('8x tfg:railgun_ammo_shell')
+		.duration(20 * 10)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.assembler('tfg:railgun_ammo_moon')
+		.itemInputs('#forge:double_plates/steel', '2x ae2:charged_certus_quartz_crystal', '2x ae2:quartz_fiber')
+		.inputFluids('gtceu:rocket_fuel 250')
+		.itemOutputs('4x tfg:railgun_ammo_shell')
+		.dimension('ad_astra:moon')
+		.duration(20 * 10)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.shaped('tfg:railgun_ammo_loader', [
+		'RMR',
+		'MBM',
+		'CCC'
+	], {
+		B: 'gtceu:mv_input_bus',
+		R: 'gtceu:mv_robot_arm',
+		M: 'gtceu:mv_electric_motor',
+		C: '#forge:single_cables/annealed_copper'
+	}).id('tfg:shaped/railgun_ammo_loader')
+
+	event.shaped('tfg:interplanetary_logistics_monitor', [
+		'CDC',
+		'SHE',
+		'WCW'
+	], {
+		C: '#gtceu:circuits/hv',
+		D: 'gtceu:computer_monitor_cover',
+		S: 'gtceu:hv_sensor',
+		H: 'gtceu:hv_machine_hull',
+		E: 'gtceu:hv_emitter',
+		W: '#forge:single_cables/silver'
+	}).id('tfg:shaped/interplanetary_logistics_monitor')
+
+	event.shaped('tfg:interplanetary_item_launcher', [
+		'NSN',
+		'CHC',
+		'NEN'
+	], {
+		C: '#gtceu:circuits/iv',
+		S: 'gtceu:hv_sensor',
+		E: 'gtceu:hv_emitter',
+		H: 'gtceu:ev_machine_hull',
+		N: '#forge:plates/hsla_steel'
+	}).id('tfg:shaped/interplanetary_item_launcher')
+
+	event.shaped('tfg:interplanetary_item_receiver', [
+		'CSC',
+		'WHW',
+		'CSC'
+	], {
+		C: '#gtceu:circuits/mv',
+		S: 'gtceu:mv_sensor',
+		W: '#forge:double_cables/copper',
+		H: 'gtceu:mv_machine_hull'
+	}).id('tfg:shaped/interplanetary_item_receiver')
+
+	// the railgun inputs and outputs are in tfg-core
 }

@@ -44,12 +44,18 @@ const registerTFGItemSize = (event) => {
 
 	event.itemSize('tfg:trowel', 'large', 'medium', 'trowel')
 
+	event.itemSize('tfg:railgun_ammo_shell', 'large', 'heavy', 'trowel')
+
 	event.itemSize('tfg:harvest_basket', 'large', 'medium', 'harvest_basket')
 	event.itemSize('tfg:aluminium_harvest_basket', 'large', 'medium', 'aluminium_harvest_basket')
 
 	event.itemSize('tfg:rapeseed_product', 'small', 'light', 'rapeseed_product')
 	event.itemSize('tfg:sunflower_product', 'small', 'light', 'sunflower_product')
-	event.itemSize('betterend:amber_roots', 'small', 'light', 'amber_roots')
+	event.itemSize('betterend:amber_root_product', 'small', 'light', 'amber_roots')
+	event.itemSize('betterend:blossom_berry_product', 'small', 'light', 'amber_roots')
+	event.itemSize('betterend:cave_pumpkin', 'small', 'light', 'amber_roots')
+	event.itemSize('betterend:chorus_mushroom_product', 'small', 'light', 'amber_roots')
+	event.itemSize('betterend:shadow_berry_product', 'small', 'light', 'amber_roots')
 }
 
 
@@ -436,7 +442,7 @@ const registerTFGFLPlanters = (event) => {
 		0.15,
 		'betterend:bolux_mushroom_seeds',
 		'betterend:bolux_mushroom_product',
-		'phosphorus',
+		'phosphorous',
 		[
 			// TODO: all
 			'betterend:block/bolux_mushroom_greenhouse_0',
@@ -455,7 +461,7 @@ const registerTFGFLPlanters = (event) => {
 		0.15,
 		'betterend:chorus_mushroom_seeds',
 		'betterend:chorus_mushroom_product',
-		'phosphorus',
+		'phosphorous',
 		[
 			'betterend:block/chorus_mushroom_0',
 			'betterend:block/chorus_mushroom_1',
@@ -473,7 +479,7 @@ const registerTFGFLPlanters = (event) => {
 		0.15,
 		'betterend:cave_pumpkin_seeds',
 		'betterend:cave_pumpkin',
-		'phosphorus',
+		'phosphorous',
 		[
 			// TODO: all
 			'betterend:block/cave_pumpkin_greenhouse_0',

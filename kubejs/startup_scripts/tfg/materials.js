@@ -43,6 +43,16 @@ const registerTFGMaterials = (event) => {
 		.secondaryColor('0xeddcad')
 		.components('12x carbon', '22x hydrogen', '11x oxygen')
 
+	// Used as a TFC aluminium substitute so you can't make actual aluminium ingots early
+	event.create('aluminium_silicate')
+		.dust()
+		.ingot()
+		.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(1520))
+		.components('2x aluminium', '1x silicon', '5x oxygen')
+		.iconSet('metallic')
+		.color(0xB6D3FF)
+		.secondaryColor(0x6F4AB3)
+
 	// Space Rocket Materials
 
 	event.create('rocket_alloy_t1')
@@ -157,9 +167,14 @@ const registerTFGMaterials = (event) => {
 		.color(0x51F7C0)
 
 	event.create('tfg:solar_coolant')
-		.gas()
+        .gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(163))
 		.components('8x helium_3', '11x oxygen', '11x hydrogen')
 		.color(0xEDFFB3)
+
+	event.create('tfg:solar_coolant_tier2')
+        .gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(73))
+		.formula('(He³8O11H11)(Ar)(?)')
+		.color(0xfeff5d)
 
 	//end region
 	event.create('liquid_carbon_dioxide')

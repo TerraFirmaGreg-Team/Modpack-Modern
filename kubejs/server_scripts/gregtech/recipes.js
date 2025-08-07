@@ -451,6 +451,17 @@ const registerGTCEURecipes = (event) => {
 		D: 'gtceu:copper_single_cable'
 	}).id('gtceu:shaped/multi_furnace')
 
+	event.shaped('gtceu:multi_smelter', [
+		'AAA',
+		'BCB',
+		'DBD'
+	], {
+		A: 'gtceu:lv_electric_furnace',
+		B: '#gtceu:circuits/hv',
+		C: 'gtceu:heatproof_machine_casing',
+		D: 'gtceu:copper_single_cable'
+	}).id('gtceu:shaped/multi_furnace2')
+
 	// Electric Blast Furnace
 	event.shaped('gtceu:electric_blast_furnace', [
 		'AAA',
@@ -462,6 +473,17 @@ const registerGTCEURecipes = (event) => {
 		C: 'gtceu:heatproof_machine_casing',
 		D: 'gtceu:tin_single_cable'
 	}).id('gtceu:shaped/electric_blast_furnace')
+
+	event.shaped('gtceu:electric_blast_furnace', [
+		'AAA',
+		'BCB',
+		'DBD'
+	], {
+		A: 'gtceu:lv_electric_furnace',
+		B: '#gtceu:circuits/lv',
+		C: 'gtceu:heatproof_machine_casing',
+		D: 'gtceu:tin_single_cable'
+	}).id('gtceu:shaped/electric_blast_furnace2')
 
 	// Клей из ТФК клея
 	event.recipes.gtceu.extractor('tfg:glue_from_tfc_glue')
@@ -869,14 +891,14 @@ const registerGTCEURecipes = (event) => {
 		.fluidOutput(Fluid.of('tfg:vulcanized_latex', 1000))
 		.id('tfg:pot/vulcanized_latex')
 
-	event.recipes.gtceu.chemical_reactor('tfg:/latex_to_vulcanized_latex')
-		.duration(200)
+	event.recipes.gtceu.chemical_reactor('tfg:latex_to_vulcanized_latex')
+		.duration(100)
 		.EUt(20)
 		.itemInputs('tfc:powder/sulfur')
 		.inputFluids(Fluid.of('tfg:latex', 1000))
 		.outputFluids(Fluid.of('tfg:vulcanized_latex', 1000))
 
-	event.recipes.gtceu.fluid_solidifier('tfg:/vulcanized_latex_to_raw_rubber_pulp')
+	event.recipes.gtceu.fluid_solidifier('tfg:vulcanized_latex_to_raw_rubber_pulp')
 		.duration(100)
 		.EUt(20)
 		.inputFluids(Fluid.of('tfg:vulcanized_latex', 1000))
@@ -1216,20 +1238,27 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.chemical_reactor('tfg:chlorine_pentafluoride')
 		.inputFluids(Fluid.of('gtceu:fluorine', 5000), Fluid.of('gtceu:chlorine', 1000))
 		.outputFluids(Fluid.of('tfg:chlorine_pentafluoride', 1000))
-		.duration(20*10)
+		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:chloryl_fluoride')
 		.inputFluids(Fluid.of('tfg:chlorine_pentafluoride', 1000), Fluid.of('minecraft:water', 2000))
 		.outputFluids(Fluid.of('tfg:chloryl_fluoride', 1000), Fluid.of('gtceu:hydrofluoric_acid', 4000))
-		.duration(20*10)
+		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.large_chemical_reactor('tfg:solar_coolant')
 		.inputFluids(Fluid.of('tfg:chloryl_fluoride', 3000), Fluid.of('gtceu:helium_3', 8000), Fluid.of('minecraft:water', 8000))
 		.outputFluids(Fluid.of('tfg:solar_coolant', 1000), Fluid.of('gtceu:hydrofluoric_acid', 3000), Fluid.of('gtceu:hypochlorous_acid', 3000))
-		.duration(20*10)
-		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20*5)
+		.EUt(GTValues.VH[GTValues.EV])
+
+	event.recipes.gtceu.large_chemical_reactor('tfg:solar_coolant_t2')
+		.inputFluids(Fluid.of('tfg:solar_coolant', 1000), Fluid.of('gtceu:argon', 1000))
+		.itemInputs(Item.of('#forge:aerogels'))
+		.outputFluids(Fluid.of('tfg:solar_coolant_tier2', 1000))
+		.duration(20*15)
+		.EUt(GTValues.VH[GTValues.IV])
 
 	//#endregion
 
@@ -1304,4 +1333,26 @@ const registerGTCEURecipes = (event) => {
 		F: 'gtceu:stainless_steel_huge_fluid_pipe'
 	}).id('tfg:shaped/large_centrifuge')
 
+	event.recipes.gtceu.extractor('tfg:logs_to_wood_gas')
+		.itemInputs('#minecraft:logs_that_burn')
+		.outputFluids('gtceu:wood_gas 100')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	
+	// Buttons
+	event.replaceOutput({ id: 'gtceu:cutter/blackstone_button' }, 'minecraft:polished_blackstone_button', '6x minecraft:polished_blackstone_button')
+	event.replaceOutput({ id: 'gtceu:cutter/blackstone_button_water' }, 'minecraft:polished_blackstone_button', '6x minecraft:polished_blackstone_button')
+	event.replaceOutput({ id: 'gtceu:cutter/blackstone_button_distilled_water' }, 'minecraft:polished_blackstone_button', '6x minecraft:polished_blackstone_button')
+	removeCutterRecipe(event, 'blackstone_button')
+	removeCutterRecipe(event, 'blackstone_button_water')
+	removeCutterRecipe(event, 'blackstone_button_distilled_water')
+
+	event.replaceOutput({ id: 'gtceu:cutter/bamboo_button' }, 'minecraft:bamboo_button', '6x minecraft:bamboo_button')
+	event.replaceOutput({ id: 'gtceu:cutter/bamboo_button_water' }, 'minecraft:bamboo_button', '6x minecraft:bamboo_button')
+	event.replaceOutput({ id: 'gtceu:cutter/bamboo_button_distilled_water' }, 'minecraft:bamboo_button', '6x minecraft:bamboo_button')
+
+	event.replaceOutput({ id: 'gtceu:cutter/treated_button' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
+	event.replaceOutput({ id: 'gtceu:cutter/treated_button_water' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
+	event.replaceOutput({ id: 'gtceu:cutter/treated_button_distilled_water' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
 }
