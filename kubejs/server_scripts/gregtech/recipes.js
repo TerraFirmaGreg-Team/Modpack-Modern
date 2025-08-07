@@ -1354,20 +1354,12 @@ const registerGTCEURecipes = (event) => {
 	}).id('tfg:shaped/large_centrifuge')
 
 	event.recipes.gtceu.chemical_reactor('tfg:wood_ash_to_wood_gas_air')
-		.itemInputs('tfc:powder/wood_ash')
+		.itemInputs('8x tfc:powder/wood_ash')
 		.inputFluids(Fluid.of('gtceu:air', 100))
 		.outputFluids('gtceu:wood_gas 100')
 		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.recipes.gtceu.chemical_reactor('tfg:wood_ash_to_wood_gas_oxygen')
-		.itemInputs('tfc:powder/wood_ash')
-		.inputFluids(Fluid.of('gtceu:oxygen', 100))
-		.outputFluids('gtceu:wood_gas 200')
-		.duration(20*5)
-		.EUt(GTValues.VA[GTValues.LV])
-
-	
 	// Buttons
 	event.replaceOutput({ id: 'gtceu:cutter/blackstone_button' }, 'minecraft:polished_blackstone_button', '6x minecraft:polished_blackstone_button')
 	event.replaceOutput({ id: 'gtceu:cutter/blackstone_button_water' }, 'minecraft:polished_blackstone_button', '6x minecraft:polished_blackstone_button')
