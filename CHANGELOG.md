@@ -4,6 +4,9 @@
 ### Changes
 ### Bug fixes
 
+## [0.10.7] - 07-08-2025
+- Fixed an issue with mod dependencies
+
 ## [0.10.6] - 07-08-2025
 ### Changes
 - Added support for links from quests directly to field guide entries (#854) @Zippity
