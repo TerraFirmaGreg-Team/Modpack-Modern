@@ -1,19 +1,23 @@
 # Changelog
 
 ## [Unreleased]
+### Known issues
+- Some items have multiple, incorrect recycling recipes
 ### Changes
 - Added links from quests directly to field guide entries (#854) @Zippity
 - Added a second EBF recipe but from LV furnaces @Pyritie
 - Added GT machine recipes for maple/birch saps (#1524) @BlueBoat29
 - Changed the TFC ratios of bronze and brass to match GregTech's (3:1 instead of 9:1) @Pyritie
 - Added Potin, Cobalt, and Cobalt Brass as TFC metals @Pyritie
+- Added particle effects to the railgun (#1547) @Redeix
+- Rebalanced all resin, latex, syrup for consistency (#1550) @TomPlop
 ### Bug fixes
 - Fixed chain conveyors not connecting (#1520) @BlueBoat29
 - Fixed a crash when opening a world with a railgun logistics monitor (#1526) @Redeix
 - Fixed a crash when trying to spawn rabbits on the moon (#1528) @Pyritie
-- Fixed duplicate Create recipes @Pyritie
-- Prevented hammers, wrenches, and spades from being placed in chests to match other tools. (#1538) @dimethylene
-- Removed cinnabar to redstone recipe, which generated free resources. (#1548) @SpicyNoodle5
+- Fixed duplicate Create/Greate recipes @Pyritie
+- Prevented hammers, wrenches, and spades from being placed in chests to match other tools (#1538) @dimethylene
+- Removed cinnabar to redstone recipe, which generated free resources (#1548) @SpicyNoodle5
 
 ## [0.10.5] - 03-08-2025
 ### Major changes
