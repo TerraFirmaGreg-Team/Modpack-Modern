@@ -11,7 +11,6 @@
 - Added GT machine recipes for maple/birch saps (#1524) @BlueBoat29
 - Changed the TFC ratios of bronze and brass to match GregTech's (3:1 instead of 9:1) @Pyritie
 - Added Potin, Cobalt, and Cobalt Brass as TFC metals @Pyritie
-- Added particle effects to the railgun (#1547) @Redeix
 - Rebalanced all resin, latex, syrup for consistency (#1550) @TomPlop
 ### Bug fixes
 - Fixed chain conveyors not connecting (#1520) @BlueBoat29
