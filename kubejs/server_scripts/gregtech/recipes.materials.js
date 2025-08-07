@@ -99,22 +99,22 @@ function registerGTCEUMetalRecipes(event) {
 				results: [toolHeadItem],
 				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/curving/${material.getName()}_ingot_to_${new String(headTagPrefix.name).toLowerCase()}_head`)
-
-			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
-				.itemInputs(toolHeadItem)
-				.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, materialAmount))
-				.duration(material.getMass() * 6 * materialAmount)
-				.category(GTRecipeCategories.MACERATOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.arc_furnace(`tfg:arc_furnace_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
-				.itemInputs(toolHeadItem)
-				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, materialAmount))
-				.duration(material.getMass() * 6 * materialAmount)
-				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-				.EUt(GTValues.VA[GTValues.LV])
-
+			
 			if (GTMaterials.Stone !== material) {
+				event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
+					.itemInputs(toolHeadItem)
+					.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, materialAmount))
+					.duration(material.getMass() * 6 * materialAmount)
+					.category(GTRecipeCategories.MACERATOR_RECYCLING)
+					.EUt(GTValues.VA[GTValues.ULV])
+				
+				event.recipes.gtceu.arc_furnace(`tfg:arc_furnace_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
+					.itemInputs(toolHeadItem)
+					.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, materialAmount))
+					.duration(material.getMass() * 6 * materialAmount)
+					.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+					.EUt(GTValues.VA[GTValues.LV])
+
 				event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
 					.itemInputs(toolHeadItem)
 					.outputFluids(Fluid.of(material.getFluid(), materialAmount * 144))
@@ -241,10 +241,10 @@ function registerGTCEUMetalRecipes(event) {
 
 		event.remove({ id: `gtceu:shaped/plate_double_${material.getName()}` })
 
-		if (material === GTMaterials.CobaltBrass || material === GTMaterials.Potin) {
+		if (material.getProperty(TFGPropertyKey.TFC_PROPERTY) === null) {
 			event.recipes.greate.compacting(doublePlateItem, [plateItem, plateItem, 'tfc:powder/flux'])
 				.heated()
-				.recipeTier(1)
+				.recipeTier(2)
 				.id(`greate:compacting/${material.getName()}_double_plate`)
 
 			event.remove({ id: `gtceu:bender/bend_${material.getName()}_plate_to_double_plate` })
@@ -254,11 +254,6 @@ function registerGTCEUMetalRecipes(event) {
 				.circuit(2)
 				.duration(20 * 5.8)
 				.EUt(24)
-		} else if (material.getProperty(TFGPropertyKey.TFC_PROPERTY) === null) {
-			event.recipes.greate.compacting(doublePlateItem, [plateItem, plateItem, 'tfc:powder/flux'])
-				.heated()
-				.recipeTier(2)
-				.id(`greate:compacting/${material.getName()}_double_plate`)
 		}
 	}
 
@@ -305,7 +300,7 @@ function registerGTCEUMetalRecipes(event) {
 		event.remove({ id: `gtceu:shaped/stick_long_stick_${material.getName()}` })
 
 		// Rod welding recipes for all of the other non-tfc materials, since those were handled in tfc/recipes.materials.js
-		if (material.getProperty(TFGPropertyKey.TFC_PROPERTY) === null) {
+		if (!material.hasProperty(TFGPropertyKey.TFC_PROPERTY)) {
 			event.recipes.greate.compacting(longRodItem, [shortRodItem, shortRodItem, 'tfc:powder/flux'])
 				.heated()
 				.recipeTier(1)
@@ -1078,7 +1073,7 @@ function registerGTCEUMetalRecipes(event) {
 		const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
 		if (buzzsawBladeItem === null || doublePlateItem === null) return;
 
-		let isLowTier = material === GTMaterials.CobaltBrass || material.hasProperty(TFGPropertyKey.TFC_PROPERTY)
+		let isLowTier = material.hasProperty(TFGPropertyKey.TFC_PROPERTY)
 
 		event.recipes.gtceu.lathe(`buzzsaw_gear_${material.getName()}`)
 			.itemInputs(doublePlateItem)
@@ -1157,9 +1152,17 @@ function registerGTCEUMetalRecipes(event) {
 	}
 
 	forEachMaterial(material => {
+		// greate moment
+		if (material === GTMaterials.get("andesite_alloy")
+			|| material === GTMaterials.get("refined_radiance")
+			|| material === GTMaterials.get("shadow_steel")
+			|| material === GTMaterials.get("chromatic_compound"))
+		{ return; }
+
 		const toolProperty = material.getProperty(PropertyKey.TOOL)
 		const ingotProperty = material.getProperty(PropertyKey.INGOT)
 		const oreProperty = material.getProperty(PropertyKey.ORE)
+
 		if (toolProperty !== null) {
 			let circuit = 1;
 			makeToolRecipe(GTToolType.SWORD, TFGTagPrefix.toolHeadSword, 'tfg:sword_head_extruder_mold', circuit++, material)

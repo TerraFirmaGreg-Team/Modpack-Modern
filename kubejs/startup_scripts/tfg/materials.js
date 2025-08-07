@@ -43,6 +43,16 @@ const registerTFGMaterials = (event) => {
 		.secondaryColor('0xeddcad')
 		.components('12x carbon', '22x hydrogen', '11x oxygen')
 
+	// Used as a TFC aluminium substitute so you can't make actual aluminium ingots early
+	event.create('aluminium_silicate')
+		.dust()
+		.ingot()
+		.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(1520))
+		.components('2x aluminium', '1x silicon', '5x oxygen')
+		.iconSet('metallic')
+		.color(0xB6D3FF)
+		.secondaryColor(0x6F4AB3)
+
 	// Space Rocket Materials
 
 	event.create('rocket_alloy_t1')

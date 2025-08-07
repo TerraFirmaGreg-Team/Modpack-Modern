@@ -2,8 +2,8 @@
 	"feature": "tfg:mars/semiheavy_ammoniacal_water",
 	"placement": [
 		{
-			"type": "minecraft:count",
-			"count": 1
+			"type": "minecraft:rarity_filter",
+			"chance": 30
 		},
 		{
 			"type": "minecraft:in_square"

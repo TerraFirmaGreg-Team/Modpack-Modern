@@ -43,6 +43,13 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.recipes.tfc.pot('tfc:powder/charcoal', Fluid.of('tfg:conifer_pitch', 1000), 1200, 300)
 		.itemOutput('tfg:conifer_rosin')
 		.id('tfg:pot/conifer_pitch_to_rosin')
+		
+	event.recipes.gtceu.fluid_solidifier('tfg:pitch_to_rosin')
+		.inputFluids(Fluid.of('tfg:conifer_pitch', 1000))
+		.itemInputs('tfc:powder/charcoal')
+		.itemOutputs('tfg:conifer_rosin')
+		.duration(20*12)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	// Decorative Vases
 	global.MINECRAFT_DYE_NAMES.forEach(color => {

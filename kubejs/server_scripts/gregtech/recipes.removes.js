@@ -676,6 +676,8 @@ function removeGTCEURecipes(event) {
 
 	event.remove({ id: 'gtceu:rock_breaker/red_granite' })
 
+	event.remove({ id: 'gtceu:lathe/stone_rod_from_cobblestone' })
+
 	// who the hell is grinding metal ingots with their bare hands?
 	event.remove({ id: 'gtceu:shaped/mortar_grind_antimony' })
 	event.remove({ id: 'gtceu:shaped/mortar_grind_copper' })
@@ -709,6 +711,10 @@ function removeGTCEURecipes(event) {
 	// Remove vanilla Eye of Ender
 
 	event.remove({ id: 'minecraft:ender_eye' })
+
+	// Remove GTceu Sticky Resin Centrifuge recipe
+
+	event.remove({ id: 'gtceu:centrifuge/sticky_resin_separation' })
 
 	// Remove old treated plank and wood plank recipe
 

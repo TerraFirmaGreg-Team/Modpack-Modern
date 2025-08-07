@@ -44,12 +44,18 @@ const registerTFGItemSize = (event) => {
 
 	event.itemSize('tfg:trowel', 'large', 'medium', 'trowel')
 
+	event.itemSize('tfg:railgun_ammo_shell', 'large', 'heavy', 'trowel')
+
 	event.itemSize('tfg:harvest_basket', 'large', 'medium', 'harvest_basket')
 	event.itemSize('tfg:aluminium_harvest_basket', 'large', 'medium', 'aluminium_harvest_basket')
 
 	event.itemSize('tfg:rapeseed_product', 'small', 'light', 'rapeseed_product')
 	event.itemSize('tfg:sunflower_product', 'small', 'light', 'sunflower_product')
-	event.itemSize('betterend:amber_roots', 'small', 'light', 'amber_roots')
+	event.itemSize('betterend:amber_root_product', 'small', 'light', 'amber_roots')
+	event.itemSize('betterend:blossom_berry_product', 'small', 'light', 'amber_roots')
+	event.itemSize('betterend:cave_pumpkin', 'small', 'light', 'amber_roots')
+	event.itemSize('betterend:chorus_mushroom_product', 'small', 'light', 'amber_roots')
+	event.itemSize('betterend:shadow_berry_product', 'small', 'light', 'amber_roots')
 }
 
 

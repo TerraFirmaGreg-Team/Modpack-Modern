@@ -191,9 +191,6 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:any_iron_double_ingot', '#forge:double_ingots/iron')
 	event.add('tfg:any_iron_double_ingot', '#forge:double_ingots/wrought_iron')
 
-	event.add('tfg:any_iron_plate', '#forge:double_plates/iron')
-	event.add('tfg:any_iron_plate', '#forge:double_plates/wrought_iron')
-
 	event.add('tfg:any_bronze_frame', '#forge:frames/bronze')
 	event.add('tfg:any_bronze_frame', '#forge:frames/bismuth_bronze')
 	event.add('tfg:any_bronze_frame', '#forge:frames/black_bronze')

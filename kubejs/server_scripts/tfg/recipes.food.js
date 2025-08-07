@@ -359,7 +359,7 @@ function registerTFGFoodRecipes(event) {
 			circuit: 6,
 			itemInputs: [item],
 			itemOutputs: [item],
-			fluidInputs: [Fluid.of('gtceu:wood_gas', 50)],
+			fluidInputs: [Fluid.of('gtceu:wood_gas', 5)],
 			itemOutputProvider: TFC.isp.copyInput().addTrait("firmalife:smoked")
 		})
 	})
@@ -718,7 +718,7 @@ function registerTFGFoodRecipes(event) {
 		circuit: 10,
 		itemInputs: ['#tfc:foods/fruits'],
 		fluidInputs: ['#tfg:clean_water 100'],
-		fluidOutputs: [Fluid.of('firmalife:yeast_starter', 600)],
+		fluidOutputs: [Fluid.of('firmalife:yeast_starter', 100)],
 	})
 	
 	processorRecipe("cocoa_dust", 100, 4, {
