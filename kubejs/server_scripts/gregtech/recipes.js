@@ -144,14 +144,14 @@ const registerGTCEURecipes = (event) => {
 		.id('tfg:pot/sticky_resin_from_conifer_pitch')
 
 	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/latex_to_sticky_resin')
-		.duration(24 * 20)
+		.duration(12 * 20)
 		.EUt(30)
 		.itemInputs('tfc:powder/wood_ash')
 		.itemOutputs('gtceu:sticky_resin')
 		.inputFluids(Fluid.of('tfg:latex', 1000))
 
 	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/pitch_to_sticky_resin')
-		.duration(24 * 20)
+		.duration(12 * 20)
 		.EUt(30)
 		.itemInputs('tfc:powder/wood_ash')
 		.itemOutputs('gtceu:sticky_resin')
@@ -485,11 +485,23 @@ const registerGTCEURecipes = (event) => {
 		D: 'gtceu:tin_single_cable'
 	}).id('gtceu:shaped/electric_blast_furnace2')
 
-	// Клей из ТФК клея
+	// Клей из ТФК клея / Glue from resin
 	event.recipes.gtceu.extractor('tfg:glue_from_tfc_glue')
 		.itemInputs('tfc:glue')
 		.outputFluids(Fluid.of('gtceu:glue', 50))
-		.duration(400)
+		.duration(20*10)
+		.EUt(5)
+
+	event.recipes.gtceu.extractor('tfg:glue_from_sticky_resin')
+		.itemInputs('gtceu:sticky_resin')
+		.outputFluids(Fluid.of('gtceu:glue', 100))
+		.duration(20*10)
+		.EUt(5)
+
+	event.recipes.gtceu.extractor('tfg:glue_from_conifer_resin')
+		.itemInputs('tfg:conifer_rosin')
+		.outputFluids(Fluid.of('gtceu:glue', 50))
+		.duration(20*10)
 		.EUt(5)
 
 	event.recipes.gtceu.mixer('tfg:glue_from_bone_meal')
@@ -975,9 +987,17 @@ const registerGTCEURecipes = (event) => {
 		.itemInputs('tfg:conifer_rosin')
 		.outputFluids(Fluid.of('gtceu:glue', 50))
 		.itemOutputs('2x #forge:dusts/carbon')
-		.chancedOutput('gtceu:plant_ball', 1000, 850)
-		.duration(400)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.chancedOutput('gtceu:plant_ball', 7500, 0)
+		.duration(20*20)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.centrifuge('tfg:centrifuge_sticky_resin')
+		.itemInputs('gtceu:sticky_resin')
+		.outputFluids(Fluid.of('gtceu:glue', 100))
+		.itemOutputs('3x #forge:dusts/carbon')
+		.chancedOutput('gtceu:plant_ball', 5000, 0)
+		.duration(20*20)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.chemical_reactor(`tfg:treat_latex_plants_into_latex`)
 		.itemInputs('16x #tfg:rubber_plants', 'gtceu:tiny_sodium_hydroxide_dust')
@@ -1333,13 +1353,13 @@ const registerGTCEURecipes = (event) => {
 		F: 'gtceu:stainless_steel_huge_fluid_pipe'
 	}).id('tfg:shaped/large_centrifuge')
 
-	event.recipes.gtceu.extractor('tfg:logs_to_wood_gas')
-		.itemInputs('#minecraft:logs_that_burn')
+	event.recipes.gtceu.chemical_reactor('tfg:wood_ash_to_wood_gas_air')
+		.itemInputs('8x tfc:powder/wood_ash')
+		.inputFluids(Fluid.of('gtceu:air', 100))
 		.outputFluids('gtceu:wood_gas 100')
-		.duration(100)
+		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	
 	// Buttons
 	event.replaceOutput({ id: 'gtceu:cutter/blackstone_button' }, 'minecraft:polished_blackstone_button', '6x minecraft:polished_blackstone_button')
 	event.replaceOutput({ id: 'gtceu:cutter/blackstone_button_water' }, 'minecraft:polished_blackstone_button', '6x minecraft:polished_blackstone_button')
