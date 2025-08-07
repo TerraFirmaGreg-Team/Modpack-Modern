@@ -1,8 +1,10 @@
 # Changelog
 
 ## [Unreleased]
-### Known issues
-- Some items have multiple, incorrect recycling recipes
+### Changes
+### Bug fixes
+
+## [0.10.6] - 07-08-2025
 ### Changes
 - Added links from quests directly to field guide entries (#854) @Zippity
 - Added a second EBF recipe but from LV furnaces @Pyritie
@@ -18,6 +20,8 @@
 - Fixed duplicate Create/Greate recipes @Pyritie
 - Prevented hammers, wrenches, and spades from being placed in chests to match other tools (#1538) @dimethylene
 - Removed cinnabar to redstone recipe, which generated free resources (#1548) @SpicyNoodle5
+### Known issues
+- Some items have multiple, incorrect recycling recipes
 
 ## [0.10.5] - 03-08-2025
 ### Major changes
