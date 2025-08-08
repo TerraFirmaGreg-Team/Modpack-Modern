@@ -20,8 +20,9 @@ const registerGTCEuMaterialModification = (event) => {
 	const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys')
 
 	const {
-		HAS_TFC_TOOL,
-		HAS_TFC_ARMOR,
+		HAS_TFC_TOOL, // used to generate new TFC items like javelins
+		HAS_GT_TOOL, // does not generate items, just TFC recipes for GT tools
+		HAS_TFC_ARMOR, 
 		HAS_TFC_UTILITY,
 		CAN_BE_UNMOLDED,
 		GENERATE_BELL,
@@ -133,8 +134,20 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Redstone.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(240, 320, 460, 1));
 	GTMaterials.RedAlloy.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(570, 650, 740, 2));
 	GTMaterials.TinAlloy.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1000, 1100, 1250, 3));
-	GTMaterials.Lead.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(170, 250, 330, 2));
-	GTMaterials.Invar.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(896, 1195, 1494, 3));
+	GTMaterials.Lead.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(330 * 0.6, 330 * 0.8, 330, 2));
+	GTMaterials.Galena.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(330 * 0.6, 330 * 0.8, 330, GTMaterials.Lead, 2, 85));
+	GTMaterials.Invar.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1494 * 0.6, 1494 * 0.8, 1494, 3));
+	GTMaterials.Potin.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(807 * 0.6, 807 * 0.8, 807, 2));
+	GTMaterials.Cobalt.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495 * 0.6, 1495 * 0.8, 1495, 3));
+	GTMaterials.Cobaltite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495 * 0.6, 1495 * 0.8, 1495, GTMaterials.Cobalt, 3, 85));
+	GTMaterials.CobaltOxide.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495 * 0.6, 1495 * 0.8, 1495, GTMaterials.Cobalt, 3));
+	GTMaterials.CobaltBrass.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1060 * 0.6, 1060 * 0.8, 1060, 3));
+	let AlSi = GTMaterials.get('aluminium_silicate')
+	AlSi.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, 1))
+	GTMaterials.Kyanite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 95))
+	GTMaterials.Mica.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 90))
+	GTMaterials.Spodumene.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 85))
+	GTMaterials.Pollucite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 85))
 
 
 	GTMaterials.Gold.addFlags(GENERATE_BELL);
@@ -183,10 +196,13 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Silver.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
 	//
 	//        /* Имеют двойные слитки */
-	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR);
+	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR, CAN_BE_UNMOLDED);
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Lead.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Invar.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL);
+	GTMaterials.Invar.addFlags(GENERATE_DOUBLE_INGOTS, HAS_GT_TOOL);
+	GTMaterials.Potin.addFlags(GENERATE_DOUBLE_INGOTS, CAN_BE_UNMOLDED);
+	GTMaterials.Cobalt.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.CobaltBrass.addFlags(GENERATE_DOUBLE_INGOTS, HAS_GT_TOOL);
 	//
 	//		  /* Superconductors */
 	GTMaterials.ManganesePhosphide.addFlags(GENERATE_FINE_WIRE);

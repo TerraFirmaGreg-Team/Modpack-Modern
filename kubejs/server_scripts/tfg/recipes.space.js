@@ -56,24 +56,30 @@ function registerTFGSpaceRecipes(event) {
 		.EUt(16)
 
 	// Aqueous accumulator
-
+	
 	let aaCircuit = 1;
 
-	event.recipes.gtceu.aqueous_accumulator('water_overworld')
+	event.recipes.gtceu.aqueous_accumulator('water')
 		.circuit(aaCircuit++)
-		.dimension('minecraft:overworld')
 		.duration(20)
 		.EUt(GTValues.VHA[GTValues.ULV])
 		.addDataString("fluidA", "minecraft:water")
 		.outputFluids(Fluid.of("minecraft:water", 1000))
 		
-	event.recipes.gtceu.aqueous_accumulator('sea_water_overworld')
+	event.recipes.gtceu.aqueous_accumulator('sea_water')
 		.circuit(aaCircuit++)
-		.dimension('minecraft:overworld')
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.addDataString("fluidA", "tfc:salt_water")
 		.outputFluids(Fluid.of("tfc:salt_water", 1000))
+		
+	event.recipes.gtceu.aqueous_accumulator('semiheavy_water_mars')
+		.circuit(aaCircuit++)
+		.dimension('ad_astra:mars')
+		.duration(20)
+		.EUt(GTValues.VHA[GTValues.ULV])
+		.addDataString("fluidA", "tfg:semiheavy_ammoniacal_water")
+		.outputFluids(Fluid.of("tfg:semiheavy_ammoniacal_water", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('lava_overworld')
 		.circuit(aaCircuit++)
@@ -83,76 +89,13 @@ function registerTFGSpaceRecipes(event) {
 		.addDataString("fluidA", "minecraft:lava")
 		.outputFluids(Fluid.of("minecraft:lava", 1000))
 
-	event.recipes.gtceu.aqueous_accumulator('water_nether')
-		.circuit(aaCircuit++)
-		.dimension('minecraft:the_nether')
-		.duration(20*2)
-		.EUt(GTValues.VHA[GTValues.LV])
-		.addDataString("fluidA", "minecraft:water")
-		.outputFluids(Fluid.of("minecraft:water", 1000))
-
-	event.recipes.gtceu.aqueous_accumulator('sea_water_nether')
-		.circuit(aaCircuit++)
-		.dimension('minecraft:the_nether')
-		.duration(20*2)
-		.EUt(GTValues.VA[GTValues.LV])
-		.addDataString("fluidA", "tfc:salt_water")
-		.outputFluids(Fluid.of("tfc:salt_water", 1000))
-
 	event.recipes.gtceu.aqueous_accumulator('lava_nether')
 		.circuit(aaCircuit++)
 		.dimension('minecraft:the_nether')
-		.duration(20*5)
+		.duration(20*7)
 		.EUt(GTValues.VHA[GTValues.HV])
 		.addDataString("fluidA", "minecraft:lava")
 		.outputFluids(Fluid.of("minecraft:lava", 1000))
-
-	event.recipes.gtceu.aqueous_accumulator('water_moon')
-		.circuit(aaCircuit++)
-		.dimension('ad_astra:moon')
-		.duration(20*5)
-		.EUt(GTValues.VHA[GTValues.MV])
-		.addDataString("fluidA", "minecraft:water")
-		.outputFluids(Fluid.of("minecraft:water", 1000))
-
-	event.recipes.gtceu.aqueous_accumulator('sea_water_moon')
-		.circuit(aaCircuit++)
-		.dimension('ad_astra:moon')
-		.duration(20*5)
-		.EUt(GTValues.VA[GTValues.MV])
-		.addDataString("fluidA", "tfc:salt_water")
-		.outputFluids(Fluid.of("tfc:salt_water", 1000))
-
-	event.recipes.gtceu.aqueous_accumulator('water_orbit')
-		.circuit(aaCircuit++)
-		.dimension('ad_astra:earth_orbit')
-		.dimension('ad_astra:moon_orbit')
-		.dimension('ad_astra:mars_orbit')
-		.dimension('ad_astra:venus_orbit')
-		.dimension('ad_astra:mercury_orbit')
-		.duration(20*5)
-		.EUt(GTValues.VHA[GTValues.MV])
-		.addDataString("fluidA", "minecraft:water")
-		.outputFluids(Fluid.of("minecraft:water", 1000))
-
-	event.recipes.gtceu.aqueous_accumulator('sea_water_orbit')
-		.circuit(aaCircuit)
-		.dimension('ad_astra:earth_orbit')
-		.dimension('ad_astra:moon_orbit')
-		.dimension('ad_astra:mars_orbit')
-		.dimension('ad_astra:venus_orbit')
-		.dimension('ad_astra:mercury_orbit')
-		.duration(20*5)
-		.EUt(GTValues.VA[GTValues.MV])
-		.addDataString("fluidA", "tfc:salt_water")
-		.outputFluids(Fluid.of("tfc:salt_water", 1000))
-
-	event.recipes.gtceu.aqueous_accumulator('semiheavy_water_mars')
-		.dimension('ad_astra:mars')
-		.duration(20)
-		.EUt(GTValues.VHA[GTValues.ULV])
-		.addDataString("fluidA", "tfg:semiheavy_ammoniacal_water")
-		.outputFluids(Fluid.of("tfg:semiheavy_ammoniacal_water", 1000))
 
 	// Plants - Can't use the default builder here because fertiliser is much harder to get on the moon,
 	// and we're using helium-3 as the fertiliser

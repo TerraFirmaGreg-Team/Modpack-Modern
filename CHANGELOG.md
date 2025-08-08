@@ -2,15 +2,36 @@
 
 ## [Unreleased]
 ### Changes
-- Added links from quests directly to field guide entries (#854) @Zippity
+- Added fanfare effects to the railgun launcher multiblock. (#1557) @Redeix
+### Bug fixes
+- Fixed a broken model for the aqueous accumulator. (#1557) @Redeix
+- Fixed broken recipes for the aqueous accumulator. @Pyritie
+- Fixed log spam on the moon @Pyritie
+- Fixed recipe collision with maize flour and cured maize @Pyritie
+- Fixed Large Solar Array generating twice as much energy as expected with the "active" configuration @TomPlop
+- Fixed Electric Greenhouse log recipes so they're back to only needing half an amp of LV @TomPlop
+
+## [0.10.7] - 07-08-2025
+- Fixed an issue with mod dependencies
+
+## [0.10.6] - 07-08-2025
+### Changes
+- Added support for links from quests directly to field guide entries (#854) @Zippity
 - Added a second EBF recipe but from LV furnaces @Pyritie
 - Added GT machine recipes for maple/birch saps (#1524) @BlueBoat29
+- Changed the TFC ratios of bronze and brass to match GregTech's (3:1 instead of 9:1) @Pyritie
+- Added Potin, Cobalt, and Cobalt Brass as TFC metals @Pyritie
+- Rebalanced all resin, latex, syrup for consistency (#1550) @TomPlop
 ### Bug fixes
 - Fixed chain conveyors not connecting (#1520) @BlueBoat29
 - Fixed a crash when opening a world with a railgun logistics monitor (#1526) @Redeix
 - Fixed a crash when trying to spawn rabbits on the moon (#1528) @Pyritie
-- Fixed duplicate Create recipes @Pyritie
-- Prevented hammers, wrenches, and spades from being placed in chests to match other tools. (#1538) @dimethylene
+- Fixed duplicate Create/Greate recipes @Pyritie
+- Prevented hammers, wrenches, and spades from being placed in chests to match other tools (#1538) @dimethylene
+- Removed cinnabar to redstone recipe, which generated free resources (#1548) @SpicyNoodle5
+### Known issues
+- Some items have multiple, incorrect recycling recipes
+- AoE GregTech tools don't display the right graphics or play the right sounds when breaking blocks, but they do function properly 
 
 ## [0.10.5] - 03-08-2025
 ### Major changes

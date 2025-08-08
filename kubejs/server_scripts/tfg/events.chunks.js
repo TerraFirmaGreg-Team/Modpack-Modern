@@ -7,6 +7,8 @@ const ROCK_LAYER_HEIGHT = 40;
 
 // Bare minimum
 TFCEvents.createChunkDataProvider('moon', event => {
+    const emptyLayer = TFC.misc.lerpFloatLayer(0, 0, 0, 0);
+
     var aquifer = [];
     let i = 0;
     while (i < 16) {
@@ -21,7 +23,7 @@ TFCEvents.createChunkDataProvider('moon', event => {
     }
 
     event.partial((data, chunk) => {
-        data.generatePartial(0, 0, 0, 0, 0)
+        data.generatePartial(emptyLayer, emptyLayer, 0, 0, 0)
     })
     event.full((data, chunk) => {
         data.generateFull(heights, aquifer)

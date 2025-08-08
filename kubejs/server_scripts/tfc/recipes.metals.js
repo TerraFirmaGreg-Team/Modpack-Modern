@@ -3,7 +3,21 @@
 
 function registerTFCMetalsRecipes(event) {
 
-	//#region Рецепты для новых сплавов
+	//#region Alloying
+
+	// Fix ratios of TFC alloys to match GT's
+
+	event.recipes.tfc.alloy('tfc:bronze', [
+		TFC.alloyPart('tfc:copper', 0.7, 0.8),
+		TFC.alloyPart('tfc:tin', 0.2, 0.3)
+	]).id('tfc:alloy/bronze')
+
+	event.recipes.tfc.alloy('tfc:brass', [
+		TFC.alloyPart('tfc:copper', 0.7, 0.8),
+		TFC.alloyPart('tfc:zinc', 0.2, 0.3)
+	]).id('tfc:alloy/brass')
+
+	// New alloys
 
 	event.recipes.tfc.alloy('tfg:red_alloy', [
 		TFC.alloyPart('tfg:redstone', 0.75, 0.85),
@@ -19,6 +33,18 @@ function registerTFCMetalsRecipes(event) {
 		TFC.alloyPart('tfc:nickel', 0.60, 0.70),
 		TFC.alloyPart('tfc:cast_iron', 0.30, 0.40)
 	]).id('tfg:alloy/invar')
+
+	event.recipes.tfc.alloy('tfg:potin', [
+		TFC.alloyPart('tfc:copper', 0.63, 0.69),
+		TFC.alloyPart('tfc:tin', 0.19, 0.25),
+		TFC.alloyPart('tfg:lead', 0.08, 0.14)
+	]).id('tfg:alloy/potin')
+
+	event.recipes.tfc.alloy('tfg:cobalt_brass', [
+		TFC.alloyPart('tfc:brass', 0.74, 0.81),
+		TFC.alloyPart('tfg:cobalt', 0.08, 0.14),
+		TFC.alloyPart('tfg:aluminium_silicate', 0.08, 0.14)
+	]).id('tfg:alloy/cobalt_brass')
 
 	//#endregion
 

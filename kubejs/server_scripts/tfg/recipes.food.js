@@ -359,7 +359,7 @@ function registerTFGFoodRecipes(event) {
 			circuit: 6,
 			itemInputs: [item],
 			itemOutputs: [item],
-			fluidInputs: [Fluid.of('gtceu:wood_gas', 50)],
+			fluidInputs: [Fluid.of('gtceu:wood_gas', 5)],
 			itemOutputProvider: TFC.isp.copyInput().addTrait("firmalife:smoked")
 		})
 	})
@@ -661,8 +661,8 @@ function registerTFGFoodRecipes(event) {
 
 	processorRecipe("butter", 300, 16, {
 		itemInputs: ["tfc:powder/salt"],
-		itemOutputs: ["firmalife:food/butter"],
 		fluidInputs: [Fluid.of('firmalife:cream', 1000)],
+		itemOutputs: ["firmalife:food/butter"],
 		itemOutputProvider: TFC.isp.of('firmalife:food/butter').resetFood()
 	})
 
@@ -740,6 +740,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	processorRecipe("cured_maize", 300, 8, {
+		circuit: 1,
 		itemInputs: ["tfc:food/maize_grain"],
 		inputFluids: [Fluid.of('tfc:limewater', 100)],
 		itemOutputs: ["firmalife:food/cured_maize"],
@@ -747,6 +748,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	processorRecipe("soy_mixture", 300, 8, {
+		circuit: 1,
 		itemInputs: ["tfc:food/soybean", 'tfc:powder/salt'],
 		fluidInputs: ['#tfg:clean_water 50'],
 		itemOutputs: ["firmalife:food/soy_mixture"],

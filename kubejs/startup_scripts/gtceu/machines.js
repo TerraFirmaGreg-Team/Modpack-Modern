@@ -214,6 +214,7 @@ const registerGTCEuMachines = (event) => {
 	//#region Large Solar Panels
 	//Tier 1
 		event.create('large_solar_panel', 'multiblock')
+		.regressWhenWaiting(false)
 		.rotationState(RotationState.NON_Y_AXIS)
 		.generator(true)
 		.recipeType('large_solar_panel')
@@ -258,6 +259,7 @@ const registerGTCEuMachines = (event) => {
 
 	//Tier 2
 		event.create('large_solar_panel_tier2', 'multiblock')
+		.regressWhenWaiting(false)
 		.rotationState(RotationState.NON_Y_AXIS)
 		.generator(true)
 		.recipeType('large_solar_panel_tier2')
@@ -335,6 +337,7 @@ const registerGTCEuMachines = (event) => {
 
 	//Tier 3
 		event.create('large_solar_panel_tier3', 'multiblock')
+		.regressWhenWaiting(false)
 		.rotationState(RotationState.NON_Y_AXIS)
 		.generator(true)
 		.recipeType('large_solar_panel_tier3')
