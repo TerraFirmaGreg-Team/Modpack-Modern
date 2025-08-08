@@ -740,7 +740,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	processorRecipe("cured_maize", 300, 8, {
-		circuit: 1
+		circuit: 1,
 		itemInputs: ["tfc:food/maize_grain"],
 		inputFluids: [Fluid.of('tfc:limewater', 100)],
 		itemOutputs: ["firmalife:food/cured_maize"],
@@ -748,7 +748,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	processorRecipe("soy_mixture", 300, 8, {
-		circuit: 1
+		circuit: 1,
 		itemInputs: ["tfc:food/soybean", 'tfc:powder/salt'],
 		fluidInputs: ['#tfg:clean_water 50'],
 		itemOutputs: ["firmalife:food/soy_mixture"],
