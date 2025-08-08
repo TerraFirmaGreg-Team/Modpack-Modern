@@ -109,6 +109,10 @@ const registerAdAstraItemTags = (event) => {
 
 	event.add('tfc:compost_greens', 'ad_astra:aeronos_cap')
 	event.add('tfc:compost_greens', 'ad_astra:strophar_cap')
+
+	// these are log tags
+	event.remove('ad_astra:aeronos_caps', 'ad_astra:aeronos_cap')
+	event.remove('ad_astra:strophar_caps', 'ad_astra:strophar_cap')
 	
 	global.AD_ASTRA_WOOD.forEach(wood => {
 
