@@ -50,9 +50,15 @@
 					"X": "tfg:rapeseed_wild[mature=true,part=bottom]"
 				}
 			},
-			"name": "Wild Rapeseed",
-			"text": "$(thing)Rapeseed$(), also known as $(thing)Canola$(), grows between -7 and 25C, and 50 to 350mm of rainfall.",
+			"name": "Wild Canola",
+			"text": "$(thing)Canola$(), also known as $(thing)Rapeseed$(), grows between -7 and 25C, and 50 to 350mm of rainfall.",
 			"enable_visualize": false
 		}
-	]
+	],
+	"extra_recipe_mappings": {
+		"tfg:sunflower_seeds": 1,
+		"tfg:sunflower_product": 1,
+		"tfg:rapeseed_seeds": 2,
+		"tfg:rapeseed_product": 2
+	}
 }

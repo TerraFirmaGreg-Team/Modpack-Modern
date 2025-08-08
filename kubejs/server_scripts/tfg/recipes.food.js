@@ -359,7 +359,7 @@ function registerTFGFoodRecipes(event) {
 			circuit: 6,
 			itemInputs: [item],
 			itemOutputs: [item],
-			fluidInputs: [Fluid.of('gtceu:wood_gas', 50)],
+			fluidInputs: [Fluid.of('gtceu:wood_gas', 5)],
 			itemOutputProvider: TFC.isp.copyInput().addTrait("firmalife:smoked")
 		})
 	})

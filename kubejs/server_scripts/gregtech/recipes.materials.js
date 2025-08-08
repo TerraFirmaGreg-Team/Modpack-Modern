@@ -241,10 +241,10 @@ function registerGTCEUMetalRecipes(event) {
 
 		event.remove({ id: `gtceu:shaped/plate_double_${material.getName()}` })
 
-		if (material === GTMaterials.CobaltBrass || material === GTMaterials.Potin) {
+		if (material.getProperty(TFGPropertyKey.TFC_PROPERTY) === null) {
 			event.recipes.greate.compacting(doublePlateItem, [plateItem, plateItem, 'tfc:powder/flux'])
 				.heated()
-				.recipeTier(1)
+				.recipeTier(2)
 				.id(`greate:compacting/${material.getName()}_double_plate`)
 
 			event.remove({ id: `gtceu:bender/bend_${material.getName()}_plate_to_double_plate` })
@@ -254,11 +254,6 @@ function registerGTCEUMetalRecipes(event) {
 				.circuit(2)
 				.duration(20 * 5.8)
 				.EUt(24)
-		} else if (material.getProperty(TFGPropertyKey.TFC_PROPERTY) === null) {
-			event.recipes.greate.compacting(doublePlateItem, [plateItem, plateItem, 'tfc:powder/flux'])
-				.heated()
-				.recipeTier(2)
-				.id(`greate:compacting/${material.getName()}_double_plate`)
 		}
 	}
 
@@ -305,7 +300,7 @@ function registerGTCEUMetalRecipes(event) {
 		event.remove({ id: `gtceu:shaped/stick_long_stick_${material.getName()}` })
 
 		// Rod welding recipes for all of the other non-tfc materials, since those were handled in tfc/recipes.materials.js
-		if (material.getProperty(TFGPropertyKey.TFC_PROPERTY) === null) {
+		if (!material.hasProperty(TFGPropertyKey.TFC_PROPERTY)) {
 			event.recipes.greate.compacting(longRodItem, [shortRodItem, shortRodItem, 'tfc:powder/flux'])
 				.heated()
 				.recipeTier(1)
@@ -1078,7 +1073,7 @@ function registerGTCEUMetalRecipes(event) {
 		const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
 		if (buzzsawBladeItem === null || doublePlateItem === null) return;
 
-		let isLowTier = material === GTMaterials.CobaltBrass || material.hasProperty(TFGPropertyKey.TFC_PROPERTY)
+		let isLowTier = material.hasProperty(TFGPropertyKey.TFC_PROPERTY)
 
 		event.recipes.gtceu.lathe(`buzzsaw_gear_${material.getName()}`)
 			.itemInputs(doublePlateItem)
@@ -1167,6 +1162,7 @@ function registerGTCEUMetalRecipes(event) {
 		const toolProperty = material.getProperty(PropertyKey.TOOL)
 		const ingotProperty = material.getProperty(PropertyKey.INGOT)
 		const oreProperty = material.getProperty(PropertyKey.ORE)
+
 		if (toolProperty !== null) {
 			let circuit = 1;
 			makeToolRecipe(GTToolType.SWORD, TFGTagPrefix.toolHeadSword, 'tfg:sword_head_extruder_mold', circuit++, material)

@@ -712,6 +712,10 @@ function removeGTCEURecipes(event) {
 
 	event.remove({ id: 'minecraft:ender_eye' })
 
+	// Remove GTceu Sticky Resin Centrifuge recipe
+
+	event.remove({ id: 'gtceu:centrifuge/sticky_resin_separation' })
+
 	// Remove old treated plank and wood plank recipe
 
 	event.remove({ id: 'gtceu:compressor/compress_plate_dust_wood' })
