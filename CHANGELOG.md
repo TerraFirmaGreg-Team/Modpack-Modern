@@ -6,6 +6,7 @@
 ### Bug fixes
 - Fixed a broken model for the aqueous accumulator. (#1557) @Redeix
 - Fixed broken recipes for the aqueous accumulator. @Pyritie
+- Fixed log spam on the moon @Pyritie
 
 ## [0.10.7] - 07-08-2025
 - Fixed an issue with mod dependencies
