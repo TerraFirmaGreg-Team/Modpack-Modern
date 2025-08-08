@@ -7,6 +7,7 @@
 - Fixed a broken model for the aqueous accumulator. (#1557) @Redeix
 - Fixed broken recipes for the aqueous accumulator. @Pyritie
 - Fixed log spam on the moon @Pyritie
+- Fixed recipe collision with maize flour and cured maize
 
 ## [0.10.7] - 07-08-2025
 - Fixed an issue with mod dependencies
