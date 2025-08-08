@@ -29,4 +29,10 @@ function registerTFCLunchBoxRecipes(event) {
             .duration(Math.max(16, Math.floor(cell.capacity / 64)))
             .EUt(GTValues.VA[GTValues.LV]);
     });
+
+    event.replaceInput(
+        { id: 'tfclunchbox:electric_lunchbox'},
+        'gtceu:basic_electronic_circuit',
+        '#gtceu:circuits/lv'
+    )
 }
