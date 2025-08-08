@@ -6,7 +6,68 @@
  */
 const registerChalkRecipes = (evt) => {
 	evt.remove({ output: "#chalk:chalks" })
-	evt.replaceInput({ id: "chalk:chalk_box" }, "minecraft:slime_ball", "tfc:glue")
+
+	evt.shaped('chalk:chalk_box', [
+		'ABA', 
+		' A '
+	], {
+        A: 'paper',
+        B: ['tfc:glue']
+    }).id('chalk:chalk_box')
+
+	// only 1/4 durability remaining
+	evt.recipes.tfc.knapping(
+        Item.of('chalk:white_chalk', '{Damage:48}'),
+        'tfc:rock',
+        [
+            '  X  ', 
+            '  X  ', 
+            '  X  ', 
+            '  X  ', 
+            '  X  '
+        ]
+    ).ingredient('tfc:rock/loose/chalk')
+	.id('tfg:knapping/chalk')
+ 
+    evt.recipes.tfc.knapping(
+        Item.of('chalk:light_gray_chalk', '{Damage:48}'),
+        'tfc:rock',
+        [
+            '  X  ', 
+            '  X  ', 
+            '  X  ', 
+            '  X  ', 
+            '  X  '
+        ]
+    ).ingredient('tfc:rock/loose/limestone')
+	.id('tfg:knapping/limestone_chalk')
+
+	evt.recipes.tfc.knapping(
+        Item.of('chalk:brown_chalk', '{Damage:48}'),
+        'tfc:rock',
+        [
+            '  X  ', 
+            '  X  ', 
+            '  X  ', 
+            '  X  ', 
+            '  X  '
+        ]
+    ).ingredient('tfg:loose/dripstone')
+	.id('tfg:knapping/travertine_chalk')
+
+	evt.recipes.tfc.knapping(
+        Item.of('chalk:orange_chalk', '{Damage:48}'),
+        'tfc:rock',
+        [
+            '  X  ', 
+            '  X  ', 
+            '  X  ', 
+            '  X  ', 
+            '  X  '
+        ]
+    ).ingredient('tfc:rock/loose/claystone')
+	.id('tfg:knapping/claystone_chalk')
+
 
 	//Mix dusts for chalk sticks with clay to make an unfired chalk stick. Greggy or Create lets you use tiny dusts if needed
 	evt.recipes.firmalife.mixing_bowl()
@@ -14,7 +75,14 @@ const registerChalkRecipes = (evt) => {
 		.outputItem("tfg:unfired_chalk")
 		.id(`chalk:mixing_bowl/unfired_chalk_stick_from_dust`)
 
+
 	global.MINECRAFT_DYE_NAMES.forEach(dyeName => {
+		evt.recipes.tfc.barrel_sealed(1000)
+            .inputItem('chalk:white_chalk')
+            .inputFluid(Fluid.of(`tfc:${dyeName}_dye`, 25))
+            .outputItem(`chalk:${dyeName}_chalk`)
+			.id(`chalk:barrel/dye/${dyeName}_chalk`)
+
 		//gt mixer works as is
 		evt.recipes.gtceu.chemical_bath(`chalk:gt_mixer/${dyeName}_chalk_from_dust`)
 			.itemInputs(["minecraft:clay_ball", `#chalk:dusts_for_chalks`])
@@ -35,7 +103,7 @@ const registerChalkRecipes = (evt) => {
 	
 
 		//Unfired chalk sticks need to be placed in a barrel full of dye to colorize. Then heated until cured.
-		evt.recipes.tfc.barrel_sealed(20 * 50)
+		evt.recipes.tfc.barrel_instant()
 			.inputs(`tfg:unfired_chalk`, TFC.fluidStackIngredient(`tfc:${dyeName}_dye`, 36))
 			.outputItem(`tfg:wet_${dyeName}_chalk`)
 			.id(`chalk:barrel/dye/wet_${dyeName}_chalk`);
