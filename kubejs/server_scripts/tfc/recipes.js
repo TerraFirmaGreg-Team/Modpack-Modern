@@ -58,30 +58,30 @@ const registerTFCRecipes = (event) => {
 	// Дерево
 	global.TFC_WOOD_TYPES.forEach(wood => {
 		generateGreenHouseRecipe(event, `8x tfc:wood/sapling/${wood}`, '#tfg:clean_water', 16000, `64x tfc:wood/log/${wood}`,
-			`tfg:greenhouse/${wood}`, 'minecraft:overworld', 16, null, GTValues.VA[GTValues.MV])
+			`tfg:greenhouse/${wood}`, 'minecraft:overworld', 16, null, GTValues.VH[GTValues.LV])
 	})
 
 	global.AFC_SAPLINGS.forEach(x => {
 		generateGreenHouseRecipe(event, `8x afc:wood/sapling/${x.sapling}`, '#tfg:clean_water', 16000, `64x ${x.log}`,
-			`tfg:greenhouse/${x.sapling}`, 'minecraft:overworld', 16, null, GTValues.VA[GTValues.MV])
+			`tfg:greenhouse/${x.sapling}`, 'minecraft:overworld', 16, null, GTValues.VH[GTValues.LV])
 	})
 
 	// Семена фруктов
 	global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
 		generateGreenHouseRecipe(event, element.input, '#tfg:clean_water', element.fluid_amount, element.output,
-			element.name, 'minecraft:overworld', 8, null, GTValues.VA[GTValues.LV])
+			element.name, 'minecraft:overworld', 8, null, GTValues.VH[GTValues.LV])
 	})
 
 	// Семена овощей
 	global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS.forEach(element => {
 		generateGreenHouseRecipe(event, element.input, '#tfg:clean_water', element.fluid_amount, element.output,
-			element.name, null, 8, null, GTValues.VA[GTValues.LV])
+			element.name, null, 8, null, GTValues.VH[GTValues.LV])
 	})
 
 	// Семена ягод
 	global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
 		generateGreenHouseRecipe(event, element.input, '#tfg:clean_water', element.fluid_amount, element.output,
-			element.name, null, 8, null, GTValues.VA[GTValues.LV])
+			element.name, null, 8, null, GTValues.VH[GTValues.LV])
 	})
 
 	// Растения
@@ -90,7 +90,7 @@ const registerTFCRecipes = (event) => {
 		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
 
 		generateGreenHouseRecipe(event, itemId, '#tfg:clean_water', 8000, `8x ${itemId}`,
-			recipeId, null, 8, null, GTValues.VA[GTValues.LV]);
+			recipeId, null, 8, null, GTValues.VH[GTValues.LV]);
 	});
 
 	//#endregion
