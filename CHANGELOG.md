@@ -7,7 +7,9 @@
 - Fixed a broken model for the aqueous accumulator. (#1557) @Redeix
 - Fixed broken recipes for the aqueous accumulator. @Pyritie
 - Fixed log spam on the moon @Pyritie
-- Fixed recipe collision with maize flour and cured maize
+- Fixed recipe collision with maize flour and cured maize @Pyritie
+- Fixed Large Solar Array generating twice as much energy as expected with the "active" configuration @TomPlop
+- Fixed Electric Greenhouse log recipes so they're back to only needing half an amp of LV @TomPlop
 
 ## [0.10.7] - 07-08-2025
 - Fixed an issue with mod dependencies
