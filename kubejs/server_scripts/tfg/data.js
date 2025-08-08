@@ -178,10 +178,6 @@ const registerTFGFoodData = (event) => {
 		food.decayModifier(0.5)
 	})
 
-	event.foodItem('tfg:rapeseed_product', food => {
-		food.decayModifier(0.3)
-	})
-
 	event.foodItem('betterend:amber_root_product', food => {
 		food.hunger(4)
 		food.decayModifier(1)
