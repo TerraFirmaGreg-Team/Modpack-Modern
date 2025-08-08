@@ -5,6 +5,7 @@
 - Added fanfare effects to the railgun launcher multiblock. (#1557) @Redeix
 ### Bug fixes
 - Fixed a broken model for the aqueous accumulator. (#1557) @Redeix
+- Fixed broken recipes for the aqueous accumulator. @Pyritie
 
 ## [0.10.7] - 07-08-2025
 - Fixed an issue with mod dependencies
