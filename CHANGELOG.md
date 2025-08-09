@@ -18,6 +18,7 @@
 - Fixed missing quern recipes for softwood/hardwood pulp (#1561) @Pyritie
 - Fixed duplicate red alloy mixing recipe (#1565) @Pyritie
 - Fixed many raw ores missing smelting recipes (#1566) @Pyritie
+- Fixed duplicate fluix block, preventing AE2 controllers from being crafted @Pyritie
 
 ## [0.10.7] - 07-08-2025
 - Fixed an issue with mod dependencies
