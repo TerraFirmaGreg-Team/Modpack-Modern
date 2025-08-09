@@ -149,6 +149,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem('tfc:igneous_intrusive_rock')
+		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:loose/moon_deepslate', 'tfc:loose_rock')
 		.soundType('deepslate')
@@ -157,6 +158,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem('tfc:igneous_intrusive_rock')
+		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:loose/mars_stone', 'tfc:loose_rock')
 		.stoneSoundType()
@@ -165,6 +167,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem('tfc:sedimentary_rock')
+		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:loose/venus_stone', 'tfc:loose_rock')
 		.stoneSoundType()
@@ -173,6 +176,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem('tfc:igneous_extrusive_rock')
+		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:loose/mercury_stone', 'tfc:loose_rock')
 		.stoneSoundType()
@@ -181,6 +185,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem('tfc:igneous_intrusive_rock')
+		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:loose/glacio_stone', 'tfc:loose_rock')
 		.stoneSoundType()
@@ -189,6 +194,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem('tfc:igneous_extrusive_rock')
+		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:loose/permafrost', 'tfc:loose_rock')
 		.stoneSoundType()
@@ -197,6 +203,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem('tfc:metamorphic_rock')
+		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:loose/red_granite', 'tfc:loose_rock')
 		.stoneSoundType()
@@ -205,6 +212,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem('tfc:igneous_intrusive_rock')
+		.tagItem("rnr:loose_rock_items")
 
 	// Spikes
 

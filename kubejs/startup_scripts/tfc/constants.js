@@ -946,7 +946,6 @@ global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = [
     { input: '#forge:dusts/malachite', output: '4x tfc:powder/malachite', name: 'malachite_powder' },
     { input: '#forge:dusts/yellow_limonite', output: '4x tfc:powder/limonite', name: 'limonite_powder' },
     { input: '#forge:dusts/hematite', output: '4x tfc:powder/hematite', name: 'hematite_powder' },
-    { input: '#forge:dusts/cinnabar', output: '4x minecraft:redstone', name: 'cinnabar_powder' },
     { input: '#forge:dusts/sulfur', output: '4x tfc:powder/sulfur', name: 'sulfur_powder' },
     { input: '#forge:dusts/saltpeter', output: '4x tfc:powder/saltpeter', name: 'saltpeter_powder' },
     { input: '#forge:dusts/salt', output: '4x tfc:powder/salt', name: 'salt_powder' },

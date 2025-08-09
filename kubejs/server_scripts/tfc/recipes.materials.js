@@ -10,9 +10,6 @@ function registerTFCMaterialsRecipes(event) {
 			return;
 		}
 		
-		// Add any other early game metals here with GT tools but no TFC ones
-		const onlyHasGTTools = material === GTMaterials.Invar;
-
 		let outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial()
 
 		// Ingots
@@ -227,7 +224,7 @@ function registerTFCMaterialsRecipes(event) {
 						}
 
 						// Tools (From Double Plate)
-						if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL) && !onlyHasGTTools) {
+						if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
 							//#region Фурма
 
 							// Декрафт инструмента в жидкость
@@ -301,7 +298,7 @@ function registerTFCMaterialsRecipes(event) {
 					}
 
 					// Tools (From Plate)
-					if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL) && !onlyHasGTTools) {
+					if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
 						//#region Удочка
 
 						// Декрафт оголовья в жидкость
@@ -328,7 +325,7 @@ function registerTFCMaterialsRecipes(event) {
 				}
 
 				// Tools (From Double Ingots)
-				if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
+				if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL) || material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
 					//#region Меч
 
 					// Крафт инструмента
@@ -378,7 +375,7 @@ function registerTFCMaterialsRecipes(event) {
 
 					//#region Дубина
 
-					if (!onlyHasGTTools) {
+					if (!material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
 						// Декрафт инструмента в жидкость
 						event.recipes.tfc.heating(`tfc:metal/mace/${material.getName()}`, tfcProperty.getMeltTemp())
 							.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
@@ -643,7 +640,7 @@ function registerTFCMaterialsRecipes(event) {
 			}
 
 			// Tools (From Ingot)
-			if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
+			if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL) || material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
 
 				//#region pickaxe
 
@@ -693,7 +690,7 @@ function registerTFCMaterialsRecipes(event) {
 				//#endregion
 					
 				// #region mattock
-				if (!onlyHasGTTools) {
+				if (!material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
 					event.recipes.tfc.heating(`rnr:metal/mattock/${material.getName()}`, tfcProperty.getMeltTemp())
 						.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
 						.useDurability(true)
@@ -1106,7 +1103,7 @@ function registerTFCMaterialsRecipes(event) {
 					//#region shears 
 
 					// Сварка оголовий
-					if (!onlyHasGTTools) {
+					if (!material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
 						event.recipes.tfc.welding(`tfc:metal/shears/${material.getName()}`, knifeHeadItem, knifeHeadItem, tfcProperty.getTier())
 							.id(`tfc:welding/${material.getName()}_shears`)
 
@@ -1135,7 +1132,7 @@ function registerTFCMaterialsRecipes(event) {
 
 				//#region prospector pick
 
-				if (!onlyHasGTTools) {
+				if (!material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
 					// Декрафт инструмента в жидкость
 					event.recipes.tfc.heating(`tfc:metal/propick/${material.getName()}`, tfcProperty.getMeltTemp())
 						.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
@@ -1164,7 +1161,7 @@ function registerTFCMaterialsRecipes(event) {
 				//#endregion
 
 				//#region chisel
-				if (!onlyHasGTTools) {
+				if (!material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
 					// Декрафт инструмента в жидкость
 					event.recipes.tfc.heating(`tfc:metal/chisel/${material.getName()}`, tfcProperty.getMeltTemp())
 						.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
@@ -1193,7 +1190,7 @@ function registerTFCMaterialsRecipes(event) {
 				//#endregion
 
 				//#region javelin
-				if (!onlyHasGTTools) {
+				if (!material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
 					// Декрафт инструмента в жидкость
 					event.recipes.tfc.heating(`tfc:metal/javelin/${material.getName()}`, tfcProperty.getMeltTemp())
 						.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
