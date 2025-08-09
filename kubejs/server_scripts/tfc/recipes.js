@@ -202,9 +202,27 @@ const registerTFCRecipes = (event) => {
 	event.recipes.create.splashing([Item.of('tfc:powder/wood_ash').withChance(0.25), Item.of('minecraft:stick').withChance(0.25)], 'tfc:torch')
 		.id('tfg:splashing/wash_torch')
 
-	//Lye in mixer
+	//Lye
 	generateMixerRecipe(event, 'tfc:powder/wood_ash', "#tfg:clean_water 200",
-		[], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_in_mixer')
+		[], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_from_wood_ash')
+	generateMixerRecipe(event, '#forge:dusts/sodium_hydroxide', "#tfg:clean_water 1000",
+		[], null, Fluid.of('tfc:lye', 1000), 100, 2, 64, 'lye_from_NaOH')
+
+	event.recipes.tfc.pot([], Fluid.of('tfc:lye', 1000), 100, 80)
+		.itemOutput('gtceu:sodium_hydroxide_dust')
+		.id('tfg:pot/sodium_hydroxide')
+
+	event.recipes.firmalife.vat()
+		.inputFluid(Fluid.of('tfc:lye', 1000))
+		.outputItem('gtceu:sodium_hydroxide_dust')
+		.length(100)
+		.temperature(80)
+
+	event.recipes.gtceu.distillery('lye_to_sodium_hydroxide')
+		.inputFluids('tfc:lye 1000')
+		.itemOutputs('gtceu:sodium_hydroxide_dust')
+		.duration(100)
+		.EUt(2)
 
 	// Brass Mechanism
 	event.recipes.shapeless('gtceu:small_brass_gear', [ 'tfc:brass_mechanisms' ]).id('tfg:replace_brass_mechanisms')

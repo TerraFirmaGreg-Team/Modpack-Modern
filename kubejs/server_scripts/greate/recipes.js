@@ -126,26 +126,36 @@ function registerGreateRecipes(event) {
 		.id('tfg:shapeless/andesite_alloy_cogwheel')
 	event.shapeless('greate:large_andesite_alloy_cogwheel', ['greate:andesite_alloy_shaft', '#forge:gears/wood'])
 		.id('tfg:shapeless/large_andesite_alloy_cogwheel');
+	event.shapeless('greate:large_andesite_alloy_cogwheel', ['greate:andesite_alloy_cogwheel', '#forge:small_gears/wood'])
+		.id('tfg:shapeless/large_andesite_alloy_cogwheel_upgrade');
 
 	event.shapeless('greate:steel_cogwheel', ['greate:steel_shaft', '#forge:small_gears/wrought_iron'])
 		.id('tfg:shapeless/steel_cogwheel')
 	event.shapeless('greate:large_steel_cogwheel', ['greate:steel_shaft', '#forge:small_gears/wrought_iron','#forge:small_gears/wrought_iron'])
 		.id('tfg:shapeless/large_steel_cogwheel');
+	event.shapeless('greate:large_steel_cogwheel', ['greate:steel_cogwheel', '#forge:small_gears/wrought_iron'])
+		.id('tfg:shapeless/large_steel_cogwheel_upgrade');
 
 	event.shapeless('greate:aluminium_cogwheel', ['greate:aluminium_shaft', '#forge:small_gears/steel'])
 		.id('tfg:shapeless/aluminium_cogwheel')
 	event.shapeless('greate:large_aluminium_cogwheel', ['greate:aluminium_shaft', '#forge:small_gears/steel', '#forge:small_gears/steel'])
 		.id('tfg:shapeless/large_aluminium_cogwheel');
+	event.shapeless('greate:large_aluminium_cogwheel', ['greate:aluminium_cogwheel', '#forge:small_gears/steel'])
+		.id('tfg:shapeless/large_aluminium_cogwheel_upgrade');
 
 	event.shapeless('greate:stainless_steel_cogwheel', ['greate:stainless_steel_shaft', '#forge:small_gears/aluminium'])
 		.id('tfg:shapeless/stainless_steel_cogwheel')
 	event.shapeless('greate:large_stainless_steel_cogwheel', ['greate:stainless_steel_shaft', '#forge:small_gears/aluminium', '#forge:small_gears/aluminium'])
 		.id('tfg:shapeless/large_stainless_steel_cogwheel');
+	event.shapeless('greate:large_stainless_steel_cogwheel', ['greate:stainless_steel_cogwheel', '#forge:small_gears/aluminium'])
+		.id('tfg:shapeless/large_stainless_steel_cogwheel_upgrade');
 
 	event.shapeless('greate:titanium_cogwheel', ['greate:titanium_shaft', '#forge:small_gears/stainless_steel'])
 		.id('tfg:shapeless/titanium_cogwheel')
-	event.shapeless('greate:large_titanium_cogwheel', ['greate:titanium_shaft',  '#forge:small_gears/stainless_steel', '#forge:small_gears/stainless_steel'])
+	event.shapeless('greate:large_titanium_cogwheel', ['greate:titanium_shaft', '#forge:small_gears/stainless_steel', '#forge:small_gears/stainless_steel'])
 		.id('tfg:shapeless/large_titanium_cogwheel');
+	event.shapeless('greate:large_titanium_cogwheel', ['greate:titanium_cogwheel', '#forge:small_gears/stainless_steel'])
+		.id('tfg:shapeless/large_titanium_cogwheel_upgrade');
 
 	// #endregion
 
