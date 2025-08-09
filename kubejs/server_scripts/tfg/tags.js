@@ -266,6 +266,12 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:cannot_launch_in_railgun', 'megacells:fluid_storage_cell_64m')
 	event.add('tfg:cannot_launch_in_railgun', 'create:minecart_contraption')
 	event.add('tfg:cannot_launch_in_railgun', 'tfg:railgun_ammo_shell')
+	event.add('tfg:cannot_launch_in_railgun', 'create:cardboard_package_12x10')
+	event.add('tfg:cannot_launch_in_railgun', 'create:cardboard_package_10x8')
+	event.add('tfg:cannot_launch_in_railgun', 'create:cardboard_package_10x12')
+	event.add('tfg:cannot_launch_in_railgun', 'create:cardboard_package_12x12')
+	event.add('tfg:cannot_launch_in_railgun', 'create_factory_logistics:composite_package')
+	event.add('tfg:cannot_launch_in_railgun', 'create_factory_logistics:copper_jar_package_8x8')
 	//#endregion
 
 	// #region Space blocks
