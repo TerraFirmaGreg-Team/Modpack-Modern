@@ -6,6 +6,7 @@
 - Added fanfare effects to the railgun launcher multiblock. (#1557) @Redeix
 - Added some chalk stick knapping recipes (#1562) @3ncanis
 - The Vitrified Ender Pearl recipe now only accepts normal ender pearls (#1567) @TomPlop
+- Buffed production of fish oil and biomass amounts, tweaked biodiesel recipe slightly @Pyritie
 ### Bug fixes
 - Fixed a broken model for the aqueous accumulator. (#1557) @Redeix
 - Fixed broken recipes for the aqueous accumulator. @Pyritie
