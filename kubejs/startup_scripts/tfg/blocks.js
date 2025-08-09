@@ -56,6 +56,16 @@ const registerTFGBlocks = (event) => {
 		.tagBlock('minecraft:mineable/wrench')
 		.mapColor('color_light_gray')
 
+    event.create('tfg:casings/machine_casing_vacuum_engine_intake', 'gtceu:active')
+        .simple('tfg:block/casings/machine_casing_vacuum_engine_intake')
+        .translationKey(`block.tfg.casings.machine_casing_vacuum_engine_intake`)
+        .soundType('metal')
+        .resistance(6).hardness(5)
+        .tagBlock('mineable/pickaxe')
+        .tagBlock('forge:mineable/wrench')
+        .requiresTool(true)
+		.mapColor('color_light_gray')
+
 	//#endregion
 
 	// #region Decorative vases
