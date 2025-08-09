@@ -202,9 +202,11 @@ const registerTFCRecipes = (event) => {
 	event.recipes.create.splashing([Item.of('tfc:powder/wood_ash').withChance(0.25), Item.of('minecraft:stick').withChance(0.25)], 'tfc:torch')
 		.id('tfg:splashing/wash_torch')
 
-	//Lye in mixer
+	//Lye
 	generateMixerRecipe(event, 'tfc:powder/wood_ash', "#tfg:clean_water 200",
-		[], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_in_mixer')
+		[], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_from_wood_ash')
+	generateMixerRecipe(event, '#forge:dusts/sodium_hydroxide', "#tfg:clean_water 1000",
+		[], null, Fluid.of('tfc:lye', 1000), 100, 2, 64, 'lye_from_NaOH')
 
 	// Brass Mechanism
 	event.recipes.shapeless('gtceu:small_brass_gear', [ 'tfc:brass_mechanisms' ]).id('tfg:replace_brass_mechanisms')
