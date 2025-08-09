@@ -19,6 +19,7 @@
 - Fixed duplicate red alloy mixing recipe (#1565) @Pyritie
 - Fixed many raw ores missing smelting recipes (#1566) @Pyritie
 - Fixed duplicate fluix block, preventing AE2 controllers from being crafted @Pyritie
+- Fixed blaze burner straw consuming fuel 10x as fast as it should've (#1537) @dimethylene
 
 ## [0.10.7] - 07-08-2025
 - Fixed an issue with mod dependencies
