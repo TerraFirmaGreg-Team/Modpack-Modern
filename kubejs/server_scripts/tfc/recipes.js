@@ -208,6 +208,22 @@ const registerTFCRecipes = (event) => {
 	generateMixerRecipe(event, '#forge:dusts/sodium_hydroxide', "#tfg:clean_water 1000",
 		[], null, Fluid.of('tfc:lye', 1000), 100, 2, 64, 'lye_from_NaOH')
 
+	event.recipes.tfc.pot([], Fluid.of('tfc:lye', 1000), 100, 80)
+		.itemOutput('gtceu:sodium_hydroxide_dust')
+		.id('tfg:pot/sodium_hydroxide')
+
+	event.recipes.firmalife.vat()
+		.inputFluid(Fluid.of('tfc:lye', 1000))
+		.outputItem('gtceu:sodium_hydroxide_dust')
+		.length(100)
+		.temperature(80)
+
+	event.recipes.gtceu.distillery('lye_to_sodium_hydroxide')
+		.inputFluids('tfc:lye 1000')
+		.itemOutputs('gtceu:sodium_hydroxide_dust')
+		.duration(100)
+		.EUt(2)
+
 	// Brass Mechanism
 	event.recipes.shapeless('gtceu:small_brass_gear', [ 'tfc:brass_mechanisms' ]).id('tfg:replace_brass_mechanisms')
 	event.replaceInput({ input: 'tfc:brass_mechanisms' }, 'tfc:brass_mechanisms', 'gtceu:small_brass_gear')
