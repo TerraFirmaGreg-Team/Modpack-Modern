@@ -277,6 +277,21 @@
 					item: "sophisticatedbackpacks:stack_upgrade_starter_tier"
 					type: "item"
 				}
+				{
+					id: "4791539E1F6BA061"
+					item: "sophisticatedbackpacks:stonecutter_upgrade"
+					type: "item"
+				}
+				{
+					id: "48BDD2BB39BFCED2"
+					item: "sophisticatedbackpacks:feeding_upgrade"
+					type: "item"
+				}
+				{
+					id: "61776E81CC7B8F0B"
+					item: "sophisticatedbackpacks:advanced_feeding_upgrade"
+					type: "item"
+				}
 			]
 			title: "{quests.tfg_tips.all_backpack_upgrades.title}"
 			x: 17.5d
