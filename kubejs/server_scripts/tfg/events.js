@@ -526,4 +526,53 @@ BlockEvents.rightClicked(event => {
         transformBlockWithItem(event, `tfc:rock/mossy_cobble/${stone}_wall`, `tfc:rock/cobble/${stone}_wall`, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
     });
 });
+
+// Makes scythes, hoes, and knives take damage when cutting grass
+BlockEvents.broken('tfc:mineable_with_sharp_tool', event => {
+    let player = event.player;
+    let toolUsed = player.mainHandItem;
+
+    if (!toolUsed.hasTag('tfc:sharp_tools')) {
+        return;
+    }
+
+    if (!player.isCreative()) {
+        toolUsed.damageValue++;
+        if (toolUsed.damageValue >= toolUsed.maxDamage) {
+            event.server.runCommandSilent(`playsound minecraft:item.shield.break player ${player.username} ${player.x} ${player.y} ${player.z} 1 1 1`);
+            toolUsed.count--;
+        }
+    }
+});
+
 //#endregion
+// TODO
+TFCEvents.startFire(event => {
+    let player = event.player
+    const item = player.mainHandItem
+    // player.tell(item)
+    if (item.id.toString() === 'gtceu:matchbox') {
+        player.tell('holding matchbox')
+        player.tell(item.nbt.getInt('usesLeft'))
+
+        if (!item.nbt.contains('usesLeft')) {
+            player.tell('matchbox unused')
+            item.nbt.merge({usesLeft:15})
+            return;
+
+        } else if (item.nbt.getInt('usesLeft') <= 1) {
+            player.tell('???')
+            event.server.runCommandSilent(`playsound item.flintandsteel.use player ${player.username} ${player.x} ${player.y} ${player.z} 1 1 1`);
+            item.count--
+            event.server.runCommandSilent(`give ${player.username} minecraft:paper`)
+
+        } else {
+            let oldUses = item.nbt.getInt('usesLeft')
+            item.nbt.merge({usesLeft : oldUses - 1})
+            return;
+        }
+    }
+    
+    
+
+})
