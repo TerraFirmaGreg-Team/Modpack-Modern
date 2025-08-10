@@ -5331,7 +5331,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ExtendedAE-1.20-1.4.3-forge.jar",
+                    "file_name": "ExtendedAE-1.20-1.4.4-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5340,20 +5340,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6677/843/ExtendedAE-1.20-1.4.3-forge.jar",
-                    "id": "6677843",
+                    "url": "https://edge.forgecdn.net/files/6870/350/ExtendedAE-1.20-1.4.4-forge.jar",
+                    "id": "6870350",
                     "parent_id": "892005",
                     "hashes": {
-                        "sha1": "80a50c9c2a4d220f012aa07dd832caac5351c47f",
-                        "md5": "6cb8c9dc8f5fae527900056fdcf2606c"
+                        "sha1": "3c10e9aa3f2a02021b61bd0ef9af51b9e27552d5",
+                        "md5": "78ef780bd578ac44b63dae4df89f3774"
                     },
                     "required_dependencies": [
                         "957920",
                         "223794",
                         "1173950"
                     ],
-                    "size": 1538278,
-                    "date_published": "2025-06-21T08:02:20.957Z"
+                    "size": 1538479,
+                    "date_published": "2025-08-10T08:11:07.093Z"
                 }
             ]
         },
@@ -13394,6 +13394,31 @@
             },
             "files": [
                 {
+                    "type": "modrinth",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.9.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/WbpWRLID/TerraFirmaGreg-Core-Modern-0.7.9.jar",
+                    "id": "WbpWRLID",
+                    "parent_id": "lNttW2Xl",
+                    "hashes": {
+                        "sha512": "8d4d59fff28f9f6f5bcc1243ebc1eec4a9086ddd4d3868c2c8f165a6cd1bc1b4688e8e529b1f922a440015c65c2c6347aeffbbf83865f092f9d1e821da2ef51a",
+                        "sha1": "50adacde287cf30e7bea18c63aee18af31edae02"
+                    },
+                    "required_dependencies": [
+                        "JaCEZUhg",
+                        "7tG215v7"
+                    ],
+                    "size": 514012,
+                    "date_published": "2025-08-10T11:22:59.841080Z"
+                },
+                {
                     "type": "curseforge",
                     "file_name": "TerraFirmaGreg-Core-Modern-0.7.8.jar",
                     "mc_versions": [
@@ -13417,31 +13442,6 @@
                     ],
                     "size": 487400,
                     "date_published": "2025-08-07T21:57:39.150Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.8.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/Igk9tmnF/TerraFirmaGreg-Core-Modern-0.7.8.jar",
-                    "id": "Igk9tmnF",
-                    "parent_id": "lNttW2Xl",
-                    "hashes": {
-                        "sha512": "7e9214dcc315f81336d49668a57c4b85584ee7b84fd1060450e745877a51986d4d384b714e7eb60d9d2d1b132ee737b2af81a00028bf104c80250e816c1e5982",
-                        "sha1": "fa6f8e788a463330286d2f49641790966c6fc9d7"
-                    },
-                    "required_dependencies": [
-                        "7tG215v7",
-                        "JaCEZUhg"
-                    ],
-                    "size": 487400,
-                    "date_published": "2025-08-07T21:57:41.124155Z"
                 }
             ]
         },
