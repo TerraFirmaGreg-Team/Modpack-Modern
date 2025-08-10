@@ -10,6 +10,7 @@
 - Added compatibility between ad astra's 3x3 doors and GregTech wrenches (#1554) @Pyritie
 - Added more icon sets for dusts and rods, so they look more visually distinct @Pyritie
 - Slightly buffed the amount of latex from tree tapping @Pyritie
+- Changed the structure of the Large Solar Arrays a little to include new reflector block. (#1575) @Redeix
 ### Bug fixes
 - Fixed a broken model for the aqueous accumulator. (#1557) @Redeix
 - Fixed broken recipes for the aqueous accumulator. @Pyritie
@@ -23,6 +24,9 @@
 - Fixed duplicate fluix block, preventing AE2 controllers from being crafted @Pyritie
 - Fixed blaze burner straw consuming fuel 10x as fast as it should've (#1537) @dimethylene
 - Fixed stonecutter and feeding backpack upgrades to show up in EMI (#1574) @SpicyNoodle5
+- Fixed missing loot tables for some custom casings. (#1575) @Redeix
+- Fixed very low block strengths for some custom casings. (#1575) @Redeix
+- Fixed missing lang for basic photovoltaic cell. (#1575) @Redeixx
 
 ## [0.10.7] - 07-08-2025
 - Fixed an issue with mod dependencies
