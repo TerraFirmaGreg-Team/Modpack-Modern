@@ -13373,7 +13373,7 @@
             ]
         },
         {
-            "pakku_id": "ea8ZhZbmMIa5PdKU",
+            "pakku_id": "JNiWNhtliSnMqAGr",
             "pakku_links": [
                 "WN9DdLqsRKVeZIc9",
                 "64uacGcEw697jVGs"
@@ -13393,6 +13393,31 @@
                 "modrinth": "lNttW2Xl"
             },
             "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.9.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6870/950/TerraFirmaGreg-Core-Modern-0.7.9.jar",
+                    "id": "6870950",
+                    "parent_id": "513402",
+                    "hashes": {
+                        "sha1": "50adacde287cf30e7bea18c63aee18af31edae02",
+                        "md5": "b40a77bfd1ab41904f9a716e2530debd"
+                    },
+                    "required_dependencies": [
+                        "890405",
+                        "302973"
+                    ],
+                    "size": 514012,
+                    "date_published": "2025-08-10T11:22:57.333Z"
+                },
                 {
                     "type": "modrinth",
                     "file_name": "TerraFirmaGreg-Core-Modern-0.7.9.jar",
@@ -13417,31 +13442,6 @@
                     ],
                     "size": 514012,
                     "date_published": "2025-08-10T11:22:59.841080Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.8.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6861/183/TerraFirmaGreg-Core-Modern-0.7.8.jar",
-                    "id": "6861183",
-                    "parent_id": "513402",
-                    "hashes": {
-                        "sha1": "fa6f8e788a463330286d2f49641790966c6fc9d7",
-                        "md5": "c67f63aa2692b04f7fa5ca4c38de06dc"
-                    },
-                    "required_dependencies": [
-                        "890405",
-                        "302973"
-                    ],
-                    "size": 487400,
-                    "date_published": "2025-08-07T21:57:39.150Z"
                 }
             ]
         },
