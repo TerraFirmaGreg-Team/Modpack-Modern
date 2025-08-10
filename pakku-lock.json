@@ -12632,14 +12632,18 @@
                 "64uacGcEw697jVGs"
             ],
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "tfc-punishment-for-death"
+                "curseforge": "tfc-punishment-for-death",
+                "modrinth": "tfc-punishment-for-death"
             },
             "name": {
-                "curseforge": "TFC Punishment for Death"
+                "curseforge": "TFC Punishment for Death",
+                "modrinth": "TFC Punishment for Death"
             },
             "id": {
-                "curseforge": "1258250"
+                "curseforge": "1258250",
+                "modrinth": "hupCZlMO"
             },
             "files": [
                 {
@@ -12665,6 +12669,30 @@
                     ],
                     "size": 34133,
                     "date_published": "2025-06-04T10:12:24.677Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "TFC_punishment_for_death-1.20.1-1.0.0.15.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/hupCZlMO/versions/lAz6Jz59/TFC_punishment_for_death-1.20.1-1.0.0.15.jar",
+                    "id": "lAz6Jz59",
+                    "parent_id": "hupCZlMO",
+                    "hashes": {
+                        "sha512": "285289bbe30b8dfd3c5f1093bfdb9bbea008053ef2b1ceefbd6562304e5335f9feb59fb4e359acaf0776dc9825e652daaf558a75254caad9cfed21d3f9fb1a39",
+                        "sha1": "0c7ff3607981f60970fdf85ee52c7e50ad9f5fcd"
+                    },
+                    "required_dependencies": [
+                        "JaCEZUhg"
+                    ],
+                    "size": 34133,
+                    "date_published": "2025-07-15T13:40:22.577013Z"
                 }
             ]
         },
