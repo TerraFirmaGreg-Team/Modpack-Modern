@@ -179,7 +179,7 @@ const registerRailWaysRecipes = (event) => {
 
 	event.recipes.gtceu.assembler('tfg:railways/conductor_whistle')
 		.itemInputs('#forge:plates/brass')
-		.circuit(4)
+		.circuit(30)
 		.itemOutputs('railways:conductor_whistle')
 		.duration(200)
 		.EUt(28)

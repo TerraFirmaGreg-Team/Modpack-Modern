@@ -3,6 +3,8 @@
 ## [Unreleased]
 ### Changes
 ### Bug fixes
+- Fixed kubejs errors on Linux machines. @Pyritie
+- Fixed recipe conflict with conductor whistle and clockwork sniper. @Redeix
 
 ## [0.10.8] - 10-08-2025
 ### Changes
