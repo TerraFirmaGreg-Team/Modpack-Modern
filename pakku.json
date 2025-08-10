@@ -214,9 +214,6 @@
         "pick-up-notifier": {
             "side": "CLIENT"
         },
-        "smooth-boot-reloaded": {
-            "side": "CLIENT"
-        },
         "resourceful-config": {
             "side": "BOTH"
         },
@@ -239,6 +236,9 @@
             "side": "BOTH"
         },
         "xaeros-minimap": {
+            "side": "BOTH"
+        },
+        "xaeros-world-map": {
             "side": "BOTH"
         },
         "particular-reforged": {
