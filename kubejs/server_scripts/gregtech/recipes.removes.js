@@ -698,6 +698,10 @@ function removeGTCEURecipes(event) {
 
 	// Replace by the Heat Exchanger recipe for Mars
 	event.remove({ id: 'gtceu:fluid_heater/formamide' })
+
+	// Remove lava bucket from boilers
+	event.remove({ id: 'gtceu:steam_boiler/minecraft_lava_bucket' })
+	event.remove({ id: 'gtceu:large_boiler/minecraft_lava_bucket' })
 	
 	// Snow Stuffs
 

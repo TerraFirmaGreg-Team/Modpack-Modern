@@ -213,6 +213,7 @@ const registerGTCEuMachines = (event) => {
 	//#region Large Solar Panels
 	//Tier 1
 		event.create('large_solar_panel', 'multiblock')
+		.regressWhenWaiting(false)
 		.rotationState(RotationState.NON_Y_AXIS)
 		.generator(true)
 		.recipeType('large_solar_panel')
@@ -247,9 +248,9 @@ const registerGTCEuMachines = (event) => {
 				.or(Predicates.autoAbilities(definition.getRecipeTypes()))
 				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
 			)
-			.where("G", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
+			.where("G", Predicates.blocks("ae2:quartz_glass"))
 			.where("I", Predicates.blocks("tfg:casings/machine_casing_iron_desh"))
-			.where("K", Predicates.blocks(ChemicalHelper.getBlock(TagPrefix.block, GTMaterials.Silver)))
+			.where("K", Predicates.blocks("tfg:reflector"))
 			.where(" ", Predicates.any())
 			.build()
 		)
@@ -257,6 +258,7 @@ const registerGTCEuMachines = (event) => {
 
 	//Tier 2
 		event.create('large_solar_panel_tier2', 'multiblock')
+		.regressWhenWaiting(false)
 		.rotationState(RotationState.NON_Y_AXIS)
 		.generator(true)
 		.recipeType('large_solar_panel_tier2')
@@ -319,9 +321,9 @@ const registerGTCEuMachines = (event) => {
 			.where("S", Predicates.blocks(ChemicalHelper.getBlock(TagPrefix.frameGt, GTMaterials.Aluminium)))
 			.where("C", Predicates.blocks("tfg:casings/machine_casing_green_solar_panel"))
 			.where("D", Predicates.blocks("ad_astra:iron_plateblock"))
-			.where("E", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
+			.where("E", Predicates.blocks("ae2:quartz_glass"))
 			.where("F", Predicates.blocks("tfg:casings/machine_casing_iron_desh"))
-			.where("G", Predicates.blocks(ChemicalHelper.getBlock(TagPrefix.block, GTMaterials.Silver)))
+			.where("G", Predicates.blocks("tfg:reflector"))
 			.where("H", Predicates.controller(Predicates.blocks(definition.get())))
 			.where("I", Predicates.blocks("tfg:casings/machine_casing_iron_desh")
 				.or(Predicates.autoAbilities(definition.getRecipeTypes()))
@@ -334,6 +336,7 @@ const registerGTCEuMachines = (event) => {
 
 	//Tier 3
 		event.create('large_solar_panel_tier3', 'multiblock')
+		.regressWhenWaiting(false)
 		.rotationState(RotationState.NON_Y_AXIS)
 		.generator(true)
 		.recipeType('large_solar_panel_tier3')
@@ -404,9 +407,9 @@ const registerGTCEuMachines = (event) => {
 			.where("S", Predicates.blocks(ChemicalHelper.getBlock(TagPrefix.frameGt, GTMaterials.StainlessSteel)))
 			.where("C", Predicates.blocks("tfg:casings/machine_casing_red_solar_panel"))
 			.where("D", Predicates.blocks("ad_astra:iron_plateblock"))
-			.where("E", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
+			.where("E", Predicates.blocks("ae2:quartz_glass"))
 			.where("F", Predicates.blocks("tfg:casings/machine_casing_iron_desh"))
-			.where("G", Predicates.blocks(ChemicalHelper.getBlock(TagPrefix.block, GTMaterials.Silver)))
+			.where("G", Predicates.blocks("tfg:reflector"))
 			.where("H", Predicates.controller(Predicates.blocks(definition.get())))
 			.where("I", Predicates.blocks("tfg:casings/machine_casing_iron_desh")
 				.or(Predicates.autoAbilities(definition.getRecipeTypes()))

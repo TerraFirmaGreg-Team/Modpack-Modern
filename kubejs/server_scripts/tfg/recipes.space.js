@@ -56,28 +56,30 @@ function registerTFGSpaceRecipes(event) {
 		.EUt(16)
 
 	// Aqueous accumulator
-
+	
+	let aaCircuit = 1;
 
 	event.recipes.gtceu.aqueous_accumulator('water')
+		.circuit(aaCircuit++)
 		.duration(20)
 		.EUt(GTValues.VHA[GTValues.ULV])
 		.addDataString("fluidA", "minecraft:water")
 		.outputFluids(Fluid.of("minecraft:water", 1000))
 		
 	event.recipes.gtceu.aqueous_accumulator('sea_water')
+		.circuit(aaCircuit++)
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.addDataString("fluidA", "tfc:salt_water")
 		.outputFluids(Fluid.of("tfc:salt_water", 1000))
 		
 	event.recipes.gtceu.aqueous_accumulator('semiheavy_water_mars')
+		.circuit(aaCircuit++)
 		.dimension('ad_astra:mars')
 		.duration(20)
 		.EUt(GTValues.VHA[GTValues.ULV])
 		.addDataString("fluidA", "tfg:semiheavy_ammoniacal_water")
 		.outputFluids(Fluid.of("tfg:semiheavy_ammoniacal_water", 1000))
-		
-	let aaCircuit = 1;
 
 	event.recipes.gtceu.aqueous_accumulator('lava_overworld')
 		.circuit(aaCircuit++)

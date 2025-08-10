@@ -178,10 +178,6 @@ const registerTFGFoodData = (event) => {
 		food.decayModifier(0.5)
 	})
 
-	event.foodItem('tfg:rapeseed_product', food => {
-		food.decayModifier(0.3)
-	})
-
 	event.foodItem('betterend:amber_root_product', food => {
 		food.hunger(4)
 		food.decayModifier(1)
@@ -472,12 +468,12 @@ const registerTFGFLPlanters = (event) => {
 	)
 
 	event.firmalifePlantable(
-		'betterend:cave_pumpkin_seeds',
+		'betterend:cave_pumpkin_plant_seeds',
 		'hanging',
 		2,
 		3,
 		0.15,
-		'betterend:cave_pumpkin_seeds',
+		'betterend:cave_pumpkin_plant_seeds',
 		'betterend:cave_pumpkin',
 		'phosphorous',
 		[

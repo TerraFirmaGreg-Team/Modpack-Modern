@@ -266,6 +266,12 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:cannot_launch_in_railgun', 'megacells:fluid_storage_cell_64m')
 	event.add('tfg:cannot_launch_in_railgun', 'create:minecart_contraption')
 	event.add('tfg:cannot_launch_in_railgun', 'tfg:railgun_ammo_shell')
+	event.add('tfg:cannot_launch_in_railgun', 'create:cardboard_package_12x10')
+	event.add('tfg:cannot_launch_in_railgun', 'create:cardboard_package_10x8')
+	event.add('tfg:cannot_launch_in_railgun', 'create:cardboard_package_10x12')
+	event.add('tfg:cannot_launch_in_railgun', 'create:cardboard_package_12x12')
+	event.add('tfg:cannot_launch_in_railgun', 'create_factory_logistics:composite_package')
+	event.add('tfg:cannot_launch_in_railgun', 'create_factory_logistics:copper_jar_package_8x8')
 	//#endregion
 
 	// #region Space blocks
@@ -277,6 +283,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:grass', 'tfg:grass/amber_mycelium')
 	event.add('tfc:grass', 'tfg:grass/rusticus_mycelium')
 	event.add('tfc:grass', 'tfg:grass/sangnum_mycelium')
+	event.add('tfc:farmland', 'tfg:grass/mars_farmland')
 	// #endregion
 
 	 // Mars stone dust
@@ -423,18 +430,25 @@ const registerTFGBlockTags = (event) => {
 	event.add('minecraft:dirt', 'tfg:grass/rusticus_mycelium')
 	event.add('minecraft:dirt', 'tfg:grass/sangnum_mycelium')
 	event.add('tfc:dirt', 'tfg:grass/mars_dirt')
+	event.add('tfc:farmland', 'tfg:grass/mars_farmland')
 	event.add('tfc:grass', 'tfg:grass/amber_mycelium')
 	event.add('tfc:grass', 'tfg:grass/rusticus_mycelium')
 	event.add('tfc:grass', 'tfg:grass/sangnum_mycelium')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/amber_mycelium')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/rusticus_mycelium')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/sangnum_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/mars_farmland')
 	event.add('tfc:can_landslide', 'tfg:grass/mars_dirt')
+	event.add('tfc:can_landslide', 'tfg:grass/mars_farmland')
 	event.add('tfc:can_landslide', 'tfg:grass/amber_mycelium')
 	event.add('tfc:can_landslide', 'tfg:grass/rusticus_mycelium')
 	event.add('tfc:can_landslide', 'tfg:grass/sangnum_mycelium')
 	event.add('minecraft:mushroom_grow_block', '#tfc:dirt')
 	event.add('minecraft:mushroom_grow_block', '#tfc:grass')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/mars_farmland')
+	event.add('tfc:bush_plantable_on', 'tfg:grass/mars_farmland')
+	event.add('tfc:grass_plantable_on', 'tfg:grass/mars_farmland')
+	event.add('tfc:creeping_plantable_on', 'tfg:grass/mars_farmland')
 	// #endregion
 
 	event.add('tfg:harvester_harvestable', '#tfc:fruit_tree_leaves')
@@ -449,9 +463,13 @@ const registerTFGBlockTags = (event) => {
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_large')
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_small')
 	event.add('minecraft:mineable/pickaxe', 'tfg:electromagnetic_accelerator')
+	event.add('minecraft:mineable/pickaxe', 'tfg:reflector')
+	event.add('minecraft:mineable/pickaxe', 'tfg:machine_casing_aluminium_plated_steel')
 	event.add('forge:mineable/wrench', 'tfg:superconductor_coil_large')
 	event.add('forge:mineable/wrench', 'tfg:superconductor_coil_small')
 	event.add('forge:mineable/wrench', 'tfg:electromagnetic_accelerator')
+	event.add('forge:mineable/wrench', 'tfg:reflector')
+	event.add('forge:mineable/wrench', 'tfg:machine_casing_aluminium_plated_steel')
 
 }
 //#endregion

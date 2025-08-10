@@ -4,6 +4,35 @@
 ### Changes
 ### Bug fixes
 
+## [0.10.8] - 10-08-2025
+### Changes
+- FTBQuests has been changed back to linear mode, hopefully to prevent future cases where the quests get stuck on something. Please send us feedback! (#1568) @TomPlop
+- Added fanfare effects to the railgun launcher multiblock. (#1557) @Redeix
+- Added new EMI tab to see ore vein info! Press 'R' on any ore item @gustovafing
+- Added some chalk stick knapping recipes (#1562) @3ncanis
+- The Vitrified Ender Pearl recipe now only accepts normal ender pearls (#1567) @TomPlop
+- Buffed production of fish oil and biomass amounts, tweaked biodiesel recipe slightly @Pyritie
+- Added compatibility between ad astra's 3x3 doors and GregTech wrenches (#1554) @Pyritie
+- Added more icon sets for dusts and rods, so they look more visually distinct @Pyritie
+- Slightly buffed the amount of latex from tree tapping @Pyritie
+- Changed the structure of the Large Solar Arrays a little to include new reflector block. (#1575) @Redeix
+### Bug fixes
+- Fixed a broken model for the aqueous accumulator. (#1557) @Redeix
+- Fixed broken recipes for the aqueous accumulator. @Pyritie
+- Fixed log spam on the moon @Pyritie
+- Fixed recipe collision with maize flour and cured maize @Pyritie
+- Fixed Large Solar Array generating twice as much energy as expected with the "active" configuration (#1563) @TomPlop
+- Fixed Electric Greenhouse log recipes so they're back to only needing half an amp of LV (#1564) @TomPlop
+- Fixed missing quern recipes for softwood/hardwood pulp (#1561) @Pyritie
+- Fixed duplicate red alloy mixing recipe (#1565) @Pyritie
+- Fixed many raw ores missing smelting recipes (#1566) @Pyritie
+- Fixed duplicate fluix block, preventing AE2 controllers from being crafted @Pyritie
+- Fixed blaze burner straw consuming fuel 10x as fast as it should've (#1537) @dimethylene
+- Fixed stonecutter and feeding backpack upgrades to show up in EMI (#1574) @SpicyNoodle5
+- Fixed missing loot tables for some custom casings. (#1575) @Redeix
+- Fixed very low block strengths for some custom casings. (#1575) @Redeix
+- Fixed missing lang for basic photovoltaic cell. (#1575) @Redeixx
+
 ## [0.10.7] - 07-08-2025
 - Fixed an issue with mod dependencies
 

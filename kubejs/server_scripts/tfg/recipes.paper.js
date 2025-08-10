@@ -60,6 +60,9 @@ function registerTFGPapermakingRecipes(event) {
 		.duration(70)
 		.EUt(2)
 
+	event.recipes.tfc.quern('4x gtceu:wood_dust', '#tfg:softwood')
+		.id('tfg:quern/softwood_dust')
+
 	//Create identical macerator recipe for hardwood
 	event.recipes.gtceu.macerator('macerate_hardwood')
 		.itemInputs('#tfg:hardwood')
@@ -67,6 +70,9 @@ function registerTFGPapermakingRecipes(event) {
 		.chancedOutput('gtceu:hardwood_dust', 8000, 680)
 		.duration(70)
 		.EUt(2)
+
+	event.recipes.tfc.quern('4x gtceu:hardwood_dust', '#tfg:hardwood')
+		.id('tfg:quern/hardwood_dust')
 
 	//Replace any recipe that outputs wood dust to use hardwood dust if it's ID string contains the name of one of the hardwood types.
 	//This absolutely fuckin sucks but it works
