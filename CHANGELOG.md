@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 ### Changes
+### Bug fixes
+
+## [0.10.8] - 10-08-2025
+### Changes
 - FTBQuests has been changed back to linear mode, hopefully to prevent future cases where the quests get stuck on something. Please send us feedback! (#1568) @TomPlop
 - Added fanfare effects to the railgun launcher multiblock. (#1557) @Redeix
 - Added new EMI tab to see ore vein info! Press 'R' on any ore item @gustovafing
