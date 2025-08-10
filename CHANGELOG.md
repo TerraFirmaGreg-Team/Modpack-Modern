@@ -4,6 +4,15 @@
 ### Changes
 ### Bug fixes
 
+## [0.10.9] - 10-08-2025
+### Changes
+- Heavily reduced how much power the electric refrigerators use @Pyritie
+- Prevented the ad astra rockets from exploding, due to being unreliable on high latency servers @Pyritie
+### Bug fixes
+- Fixed kubejs errors on Linux machines. @Pyritie
+- Fixed recipe conflict with conductor whistle and clockwork sniper. @Redeix
+- Fixed the patchouli page explaining tfc alloys to use the new alloy ratios @Pyritie
+
 ## [0.10.8] - 10-08-2025
 ### Changes
 - FTBQuests has been changed back to linear mode, hopefully to prevent future cases where the quests get stuck on something. Please send us feedback! (#1568) @TomPlop

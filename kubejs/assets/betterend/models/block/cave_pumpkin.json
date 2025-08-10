@@ -33,7 +33,7 @@
 		{
 			"__comment": "PlaneX3",
 			"from": [ 0, 10, 0 ],
-			"to": [ 0.001, 15, 16 ],
+			"to": [ 0, 15, 16 ],
 			"faces": {
 				"west": { "uv": [ 0, 1, 16, 6 ], "texture": "#side" },
 				"east": { "uv": [ 0, 1, 16, 6 ], "texture": "#side" }
@@ -42,7 +42,7 @@
 		{
 			"__comment": "PlaneX3",
 			"from": [ 16, 10, 0 ],
-			"to": [ 16.001, 15, 16 ],
+			"to": [ 16, 15, 16 ],
 			"faces": {
 				"west": { "uv": [ 0, 1, 16, 6 ], "texture": "#side" },
 				"east": { "uv": [ 0, 1, 16, 6 ], "texture": "#side" }
@@ -51,7 +51,7 @@
 		{
 			"__comment": "PlaneZ5",
 			"from": [ 0, 10, 16 ],
-			"to": [ 16, 15, 16.001 ],
+			"to": [ 16, 15, 16 ],
 			"faces": {
 				"north": { "uv": [ 0, 1, 16, 6 ], "texture": "#side" },
 				"south": { "uv": [ 0, 1, 16, 6 ], "texture": "#side" }
@@ -60,7 +60,7 @@
 		{
 			"__comment": "PlaneZ5",
 			"from": [ 0, 10, 0 ],
-			"to": [ 16, 15, 0.001 ],
+			"to": [ 16, 15, 0 ],
 			"faces": {
 				"north": { "uv": [ 0, 1, 16, 6 ], "texture": "#side" },
 				"south": { "uv": [ 0, 1, 16, 6 ], "texture": "#side" }

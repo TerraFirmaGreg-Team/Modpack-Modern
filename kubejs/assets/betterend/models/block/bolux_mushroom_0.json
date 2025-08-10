@@ -7,7 +7,7 @@
 	"elements": [ 	 
 		{
 			"__comment": "Box1",
-			"from": [ 6, 0, 8 ],
+			"from": [ 6, -1, 8 ],
 			"to": [ 8, 2, 10 ],
 			"faces": {
 				"north": { "uv": [ 0, 0, 2, 2 ], "texture": "#texture" },
