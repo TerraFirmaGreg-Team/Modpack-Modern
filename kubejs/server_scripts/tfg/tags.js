@@ -463,9 +463,13 @@ const registerTFGBlockTags = (event) => {
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_large')
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_small')
 	event.add('minecraft:mineable/pickaxe', 'tfg:electromagnetic_accelerator')
+	event.add('minecraft:mineable/pickaxe', 'tfg:reflector')
+	event.add('minecraft:mineable/pickaxe', 'tfg:machine_casing_aluminium_plated_steel')
 	event.add('forge:mineable/wrench', 'tfg:superconductor_coil_large')
 	event.add('forge:mineable/wrench', 'tfg:superconductor_coil_small')
 	event.add('forge:mineable/wrench', 'tfg:electromagnetic_accelerator')
+	event.add('forge:mineable/wrench', 'tfg:reflector')
+	event.add('forge:mineable/wrench', 'tfg:machine_casing_aluminium_plated_steel')
 
 }
 //#endregion
