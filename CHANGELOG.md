@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 ### Changes
+### Bug fixes
+
+## [0.10.9] - 10-08-2025
+### Changes
 - Heavily reduced how much power the electric refrigerators use @Pyritie
 - Prevented the ad astra rockets from exploding, due to being unreliable on high latency servers @Pyritie
 ### Bug fixes
