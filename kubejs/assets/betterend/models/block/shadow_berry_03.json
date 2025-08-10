@@ -8,8 +8,8 @@
 	"elements": [ 	 
 		{
 			"__comment": "Box1",
-			"from": [ 2, 0, 2 ],
-			"to": [ 8, 6, 8 ],
+			"from": [ 2, -1, 2 ],
+			"to": [ 8, 5, 8 ],
 			"faces": {
 				"down": { "uv": [ 9, 9, 15, 15 ], "texture": "#texture" },
 				"up": { "uv": [ 1, 1, 7, 7 ], "texture": "#texture" },
@@ -21,8 +21,8 @@
 		},
 		{
 			"__comment": "Box1",
-			"from": [ 11, 0, 6 ],
-			"to": [ 15, 4, 10 ],
+			"from": [ 11, -1, 6 ],
+			"to": [ 15, 3, 10 ],
 			"faces": {
 				"down": { "uv": [ 10, 10, 14, 14 ], "texture": "#texture" },
 				"up": { "uv": [ 8.5, 0.5, 12.5, 4.5 ], "texture": "#texture" },
@@ -34,8 +34,8 @@
 		},
 		{
 			"__comment": "Box1",
-			"from": [ 4, 0, 11 ],
-			"to": [ 7, 3, 14 ],
+			"from": [ 4, -1, 11 ],
+			"to": [ 7, 2, 14 ],
 			"faces": {
 				"down": { "uv": [ 12, 12, 15, 15 ], "texture": "#texture" },
 				"up": { "uv": [ 9, 1, 12, 4 ], "texture": "#texture" },
@@ -47,8 +47,8 @@
 		},
 		{
 			"__comment": "PlaneY4",
-			"from": [ 0, 0.5, 0 ],
-			"to": [ 16, 0.501, 16 ],
+			"from": [ 0, -0.5, 0 ],
+			"to": [ 16, -0.501, 16 ],
 			"faces": {
 				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture1" },
 				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture1" }

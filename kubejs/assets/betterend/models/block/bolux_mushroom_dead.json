@@ -1,10 +1,10 @@
 {
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"textures": {
-		"particle": "betterend:block/bolux_mushroom",
-		"texture": "betterend:block/bolux_mushroom"
+		"particle": "betterend:block/bolux_mushroom_dead",
+		"texture": "betterend:block/bolux_mushroom_dead"
 	},
-	"elements": [ 	 
+	"elements": [
 		{
 			"__comment": "Box1",
 			"from": [ 1, 3, 1 ],

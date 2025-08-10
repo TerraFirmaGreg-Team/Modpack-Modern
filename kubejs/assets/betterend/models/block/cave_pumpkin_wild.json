@@ -1,0 +1,7 @@
+{
+	"parent": "betterend:block/crop_wild",
+	"textures": {
+		"crop": "betterend:block/cave_pumpkin_stem_3",
+		"particle": "betterend:block/cave_pumpkin_stem_3"
+	}
+}
