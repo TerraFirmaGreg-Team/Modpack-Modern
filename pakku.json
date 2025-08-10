@@ -19,7 +19,8 @@
         "server_starter.conf",
         "server-icon.png",
         "start_server.bat",
-        "README.md"
+        "README.md",
+        "!kubejs/assets/**"
     ],
     "client_overrides": [
         "resourcepacks"
