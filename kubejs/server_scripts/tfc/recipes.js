@@ -206,7 +206,7 @@ const registerTFCRecipes = (event) => {
 	generateMixerRecipe(event, 'tfc:powder/wood_ash', "#tfg:clean_water 200",
 		[], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_from_wood_ash')
 	generateMixerRecipe(event, '#forge:dusts/sodium_hydroxide', "#tfg:clean_water 1000",
-		[], null, Fluid.of('tfc:lye', 1000), 100, 2, 64, 'lye_from_NaOH')
+		[], null, Fluid.of('tfc:lye', 1000), 100, 2, 64, 'lye_from_sodium_hydroxide')
 
 	event.recipes.tfc.pot([], Fluid.of('tfc:lye', 1000), 100, 80)
 		.itemOutput('gtceu:sodium_hydroxide_dust')
