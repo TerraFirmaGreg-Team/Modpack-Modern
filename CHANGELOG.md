@@ -22,6 +22,7 @@
 - Fixed many raw ores missing smelting recipes (#1566) @Pyritie
 - Fixed duplicate fluix block, preventing AE2 controllers from being crafted @Pyritie
 - Fixed blaze burner straw consuming fuel 10x as fast as it should've (#1537) @dimethylene
+- Fixed stonecutter and feeding backpack upgrades to show up in EMI (#1574) @SpicyNoodle5
 
 ## [0.10.7] - 07-08-2025
 - Fixed an issue with mod dependencies
