@@ -608,6 +608,7 @@
 				"{@pagebreak}"
 				"{quests.space_survival.ammo_railgun.desc.2}"
 			]
+			icon: "tfg:railgun_ammo_shell"
 			id: "3BEEB11C8621772D"
 			subtitle: "{quests.space_survival.ammo_railgun.subtitle}"
 			tasks: [
