@@ -331,43 +331,6 @@
             ]
         },
         {
-            "pakku_id": "zpZC9ZXFxQQlQXOb",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "ad-astra-auto-lander"
-            },
-            "name": {
-                "curseforge": "Ad Astra: Auto Lander"
-            },
-            "id": {
-                "curseforge": "1183249"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "adastra_autolanding-0.2-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6108/119/adastra_autolanding-0.2-1.20.1.jar",
-                    "id": "6108119",
-                    "parent_id": "1183249",
-                    "hashes": {
-                        "sha1": "3338914bcedd51b02b0137fb4f9394d55550657b",
-                        "md5": "d6713f2d3931dca528ee8aed0eff3c78"
-                    },
-                    "required_dependencies": [],
-                    "size": 6759,
-                    "date_published": "2025-01-20T22:07:39.787Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "FUkrlSRxJw3vXHSa",
             "pakku_links": [
                 "tnanmdYAjMuu9igL",
@@ -4691,7 +4654,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "domum_ornamentum-1.20.1-1.0.290-snapshot-universal.jar",
+                    "file_name": "domum_ornamentum-1.20.1-1.0.291-snapshot-universal.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4699,16 +4662,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6721/676/domum_ornamentum-1.20.1-1.0.290-snapshot-universal.jar",
-                    "id": "6721676",
+                    "url": "https://edge.forgecdn.net/files/6870/756/domum_ornamentum-1.20.1-1.0.291-snapshot-universal.jar",
+                    "id": "6870756",
                     "parent_id": "527361",
                     "hashes": {
-                        "sha1": "040a8e565583ce3bf8829e32204e7a3681f1ab10",
-                        "md5": "1f1d44d1e4ae3a8e1314ca1dad965529"
+                        "sha1": "3544e2197b7c376fbc7650fff8502a7a3397357e",
+                        "md5": "be5569eb31dda1579e968c9e8508bf0a"
                     },
                     "required_dependencies": [],
-                    "size": 1140819,
-                    "date_published": "2025-07-02T15:56:45.437Z"
+                    "size": 1140927,
+                    "date_published": "2025-08-10T10:38:15.523Z"
                 }
             ]
         },
@@ -13401,7 +13364,7 @@
             ]
         },
         {
-            "pakku_id": "JNiWNhtliSnMqAGr",
+            "pakku_id": "q8hf1a0p1LNYh8as",
             "pakku_links": [
                 "WN9DdLqsRKVeZIc9",
                 "64uacGcEw697jVGs"
@@ -13423,7 +13386,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.9.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.10.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13432,23 +13395,23 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6870/950/TerraFirmaGreg-Core-Modern-0.7.9.jar",
-                    "id": "6870950",
+                    "url": "https://edge.forgecdn.net/files/6872/582/TerraFirmaGreg-Core-Modern-0.7.10.jar",
+                    "id": "6872582",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "50adacde287cf30e7bea18c63aee18af31edae02",
-                        "md5": "b40a77bfd1ab41904f9a716e2530debd"
+                        "sha1": "9a5c98fcaef9d12fdc1a86035ebf4f9170d1cb2e",
+                        "md5": "ca805dc57f89624bf9e53e4f9babda0a"
                     },
                     "required_dependencies": [
                         "890405",
                         "302973"
                     ],
-                    "size": 514012,
-                    "date_published": "2025-08-10T11:22:57.333Z"
+                    "size": 515916,
+                    "date_published": "2025-08-10T20:34:53.927Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.9.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.10.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13457,19 +13420,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/WbpWRLID/TerraFirmaGreg-Core-Modern-0.7.9.jar",
-                    "id": "WbpWRLID",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/8m3psJno/TerraFirmaGreg-Core-Modern-0.7.10.jar",
+                    "id": "8m3psJno",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "8d4d59fff28f9f6f5bcc1243ebc1eec4a9086ddd4d3868c2c8f165a6cd1bc1b4688e8e529b1f922a440015c65c2c6347aeffbbf83865f092f9d1e821da2ef51a",
-                        "sha1": "50adacde287cf30e7bea18c63aee18af31edae02"
+                        "sha512": "bb8b2907e7dcf1e630aac76575cefc04cc594b6da0aeafa76bed5a5838677720bddf2b134d3480e06e850ff041f3963b1d22803c8ac873f315e32b698f01ef29",
+                        "sha1": "9a5c98fcaef9d12fdc1a86035ebf4f9170d1cb2e"
                     },
                     "required_dependencies": [
                         "JaCEZUhg",
                         "7tG215v7"
                     ],
-                    "size": 514012,
-                    "date_published": "2025-08-10T11:22:59.841080Z"
+                    "size": 515916,
+                    "date_published": "2025-08-10T20:34:55.642076Z"
                 }
             ]
         },
