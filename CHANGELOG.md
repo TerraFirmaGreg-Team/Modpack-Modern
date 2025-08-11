@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Changes
 - Complete rework of prospector's picks. (#1594) @Redeix
+- Rebalance Large Solar Array to make Mk2 circuit 2 viable, and buffed to LSA Mk3 circuit 2 (#1591) @TomPlop
 ### Bug fixes
 
 ## [0.10.9] - 10-08-2025
