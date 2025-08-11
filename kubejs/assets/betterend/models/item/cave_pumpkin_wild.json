@@ -1,7 +1,6 @@
 {
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"layer0": "betterend:block/cave_pumpkin_stem_3",
-		"layer1": "betterend:block/wild_crop"
+		"layer0": "betterend:block/cave_pumpkin_stem_3"
 	}
 }
