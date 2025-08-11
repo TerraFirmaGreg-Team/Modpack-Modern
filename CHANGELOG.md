@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 ### Changes
+- Complete rework of prospector's picks. (#1594) @Redeix
 ### Bug fixes
 
 ## [0.10.9] - 10-08-2025
