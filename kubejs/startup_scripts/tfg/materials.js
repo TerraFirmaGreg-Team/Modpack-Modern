@@ -173,7 +173,7 @@ const registerTFGMaterials = (event) => {
 
 	event.create('tfg:solar_coolant_tier2')
         .gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(73))
-		.formula('(He³8O11H11)(Ar)(?)')
+		.formula('(He³8O11H11)8(Ar)(?)')
 		.color(0xfeff5d)
 
 	//end region
