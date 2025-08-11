@@ -1,6 +1,3 @@
 {
-	"parent": "minecraft:item/generated",
-	"textures": {
-		"layer0": "betterend:block/bolux_mushroom_greenhouse_3"
-	}
+	"parent": "betterend:block/bolux_mushroom_wild"
 }
