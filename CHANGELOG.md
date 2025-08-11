@@ -3,7 +3,6 @@
 ## [Unreleased]
 ### Changes
 - Complete rework of prospector's picks. (#1594) @Redeix
-- Rebalance LSA to make Mk2 Circuit 2 viable and massive buff to LSA Mk3 Circuit 2 @TomPlop
 ### Bug fixes
 
 ## [0.10.9] - 10-08-2025
