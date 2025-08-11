@@ -90,9 +90,9 @@ const registerAFCRecipes = (event) => {
 		.bonus(false)
 		.id('afc:anvil/tree_tap')
 
-	event.recipes.gtceu.assembler('afc:tree_tap')
+	event.recipes.gtceu.extruder('afc:tree_tap')
 		.itemInputs('#forge:ingots/copper')
-		.circuit(3)
+		.notConsumable('gtceu:bottle_extruder_mold')
 		.itemOutputs('afc:tree_tap')
 		.duration(50)
 		.EUt(7)

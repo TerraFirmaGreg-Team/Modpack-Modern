@@ -192,10 +192,10 @@ const registerFirmaLifeRecipes = (event) => {
 
 	//#region Медная / Copper
 
-	event.recipes.gtceu.bender('tfg:firmalife/sprinkler_electric_only')
+	event.recipes.gtceu.extruder('tfg:firmalife/sprinkler_electric_only')
 		.itemInputs('#forge:plates/copper')
+		.notConsumable('tfg:small_casing_extruder_mold')
 		.itemOutputs('firmalife:sprinkler')
-		.circuit(4)
 		.duration(60)
 		.EUt(8)
 
