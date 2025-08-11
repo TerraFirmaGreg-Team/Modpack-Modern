@@ -468,12 +468,12 @@ const registerTFGFLPlanters = (event) => {
 	)
 
 	event.firmalifePlantable(
-		'betterend:cave_pumpkin_seeds',
+		'betterend:cave_pumpkin_plant_seeds',
 		'hanging',
 		2,
 		3,
 		0.15,
-		'betterend:cave_pumpkin_seeds',
+		'betterend:cave_pumpkin_plant_seeds',
 		'betterend:cave_pumpkin',
 		'phosphorous',
 		[

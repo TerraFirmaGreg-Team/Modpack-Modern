@@ -1043,13 +1043,47 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.recipes.gtceu.assembler('tfg:assembler/machine_casing_aluminium_plated_steel')
 		.itemInputs(
 			ChemicalHelper.get(TagPrefix.plate, GTMaterials.Aluminium, 6),
-			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.Steel, 1),
+			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.Steel, 1)
 		)
 		.inputFluids(Fluid.of('gtceu:silicon', 72))
 		.itemOutputs('2x tfg:machine_casing_aluminium_plated_steel')
 		.circuit(6)
 		.duration(20 * (2.5))
 		.EUt(GTValues.VH[GTValues.LV])
+
+	event.recipes.gtceu.assembler('tfg:reflector_from_lens')
+		.itemInputs(
+			'24x #forge:lenses',
+			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.BlackSteel, 1)
+		)
+		.inputFluids(Fluid.of('gtceu:silver', 1296))
+		.itemOutputs('1x tfg:reflector')
+		.circuit(6)
+		.duration(20 * (60))
+		.EUt(GTValues.VH[GTValues.HV])
+
+	event.recipes.gtceu.assembler('tfg:reflector_from_inr')
+		.itemInputs(
+			'1x gtceu:neutron_reflector',
+			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.BlackSteel, 1)
+		)
+		.itemOutputs('2x tfg:reflector')
+		.circuit(9)
+		.duration(20 * (20))
+		.EUt(GTValues.VH[GTValues.MV])
+
+	event.recipes.gtceu.assembler('tfg:reflector_from_certus')
+		.itemInputs(
+			ChemicalHelper.get(TagPrefix.plate, GTMaterials.CertusQuartz, 12),
+			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.BlackSteel, 1)
+		)
+		.inputFluids(Fluid.of('gtceu:silver', 488))
+		.itemOutputs('1x tfg:reflector')
+		.circuit(6)
+		.dimension('ad_astra:moon')
+		.duration(20 * (60))
+		.EUt(GTValues.VH[GTValues.MV])
+
 	//#endregion
 		
 	//region ammonia borane

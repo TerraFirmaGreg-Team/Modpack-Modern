@@ -331,43 +331,6 @@
             ]
         },
         {
-            "pakku_id": "zpZC9ZXFxQQlQXOb",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "ad-astra-auto-lander"
-            },
-            "name": {
-                "curseforge": "Ad Astra: Auto Lander"
-            },
-            "id": {
-                "curseforge": "1183249"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "adastra_autolanding-0.2-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6108/119/adastra_autolanding-0.2-1.20.1.jar",
-                    "id": "6108119",
-                    "parent_id": "1183249",
-                    "hashes": {
-                        "sha1": "3338914bcedd51b02b0137fb4f9394d55550657b",
-                        "md5": "d6713f2d3931dca528ee8aed0eff3c78"
-                    },
-                    "required_dependencies": [],
-                    "size": 6759,
-                    "date_published": "2025-01-20T22:07:39.787Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "FUkrlSRxJw3vXHSa",
             "pakku_links": [
                 "tnanmdYAjMuu9igL",
@@ -4691,7 +4654,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "domum_ornamentum-1.20.1-1.0.290-snapshot-universal.jar",
+                    "file_name": "domum_ornamentum-1.20.1-1.0.291-snapshot-universal.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4699,16 +4662,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6721/676/domum_ornamentum-1.20.1-1.0.290-snapshot-universal.jar",
-                    "id": "6721676",
+                    "url": "https://edge.forgecdn.net/files/6870/756/domum_ornamentum-1.20.1-1.0.291-snapshot-universal.jar",
+                    "id": "6870756",
                     "parent_id": "527361",
                     "hashes": {
-                        "sha1": "040a8e565583ce3bf8829e32204e7a3681f1ab10",
-                        "md5": "1f1d44d1e4ae3a8e1314ca1dad965529"
+                        "sha1": "3544e2197b7c376fbc7650fff8502a7a3397357e",
+                        "md5": "be5569eb31dda1579e968c9e8508bf0a"
                     },
                     "required_dependencies": [],
-                    "size": 1140819,
-                    "date_published": "2025-07-02T15:56:45.437Z"
+                    "size": 1140927,
+                    "date_published": "2025-08-10T10:38:15.523Z"
                 }
             ]
         },
@@ -5331,7 +5294,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ExtendedAE-1.20-1.4.3-forge.jar",
+                    "file_name": "ExtendedAE-1.20-1.4.4-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5340,20 +5303,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6677/843/ExtendedAE-1.20-1.4.3-forge.jar",
-                    "id": "6677843",
+                    "url": "https://edge.forgecdn.net/files/6870/350/ExtendedAE-1.20-1.4.4-forge.jar",
+                    "id": "6870350",
                     "parent_id": "892005",
                     "hashes": {
-                        "sha1": "80a50c9c2a4d220f012aa07dd832caac5351c47f",
-                        "md5": "6cb8c9dc8f5fae527900056fdcf2606c"
+                        "sha1": "3c10e9aa3f2a02021b61bd0ef9af51b9e27552d5",
+                        "md5": "78ef780bd578ac44b63dae4df89f3774"
                     },
                     "required_dependencies": [
                         "957920",
                         "223794",
                         "1173950"
                     ],
-                    "size": 1538278,
-                    "date_published": "2025-06-21T08:02:20.957Z"
+                    "size": 1538479,
+                    "date_published": "2025-08-10T08:11:07.093Z"
                 }
             ]
         },
@@ -11458,7 +11421,7 @@
         {
             "pakku_id": "CKhfz5UfCp2SSXt9",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "smooth-boot-reloaded",
                 "modrinth": "smooth-boot-reloaded"
@@ -12632,14 +12595,18 @@
                 "64uacGcEw697jVGs"
             ],
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "tfc-punishment-for-death"
+                "curseforge": "tfc-punishment-for-death",
+                "modrinth": "tfc-punishment-for-death"
             },
             "name": {
-                "curseforge": "TFC Punishment for Death"
+                "curseforge": "TFC Punishment for Death",
+                "modrinth": "TFC Punishment for Death"
             },
             "id": {
-                "curseforge": "1258250"
+                "curseforge": "1258250",
+                "modrinth": "hupCZlMO"
             },
             "files": [
                 {
@@ -12665,6 +12632,30 @@
                     ],
                     "size": 34133,
                     "date_published": "2025-06-04T10:12:24.677Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "TFC_punishment_for_death-1.20.1-1.0.0.15.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/hupCZlMO/versions/lAz6Jz59/TFC_punishment_for_death-1.20.1-1.0.0.15.jar",
+                    "id": "lAz6Jz59",
+                    "parent_id": "hupCZlMO",
+                    "hashes": {
+                        "sha512": "285289bbe30b8dfd3c5f1093bfdb9bbea008053ef2b1ceefbd6562304e5335f9feb59fb4e359acaf0776dc9825e652daaf558a75254caad9cfed21d3f9fb1a39",
+                        "sha1": "0c7ff3607981f60970fdf85ee52c7e50ad9f5fcd"
+                    },
+                    "required_dependencies": [
+                        "JaCEZUhg"
+                    ],
+                    "size": 34133,
+                    "date_published": "2025-07-15T13:40:22.577013Z"
                 }
             ]
         },
@@ -13373,7 +13364,7 @@
             ]
         },
         {
-            "pakku_id": "ea8ZhZbmMIa5PdKU",
+            "pakku_id": "q8hf1a0p1LNYh8as",
             "pakku_links": [
                 "WN9DdLqsRKVeZIc9",
                 "64uacGcEw697jVGs"
@@ -13395,7 +13386,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.8.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.10.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13404,23 +13395,23 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6861/183/TerraFirmaGreg-Core-Modern-0.7.8.jar",
-                    "id": "6861183",
+                    "url": "https://edge.forgecdn.net/files/6872/582/TerraFirmaGreg-Core-Modern-0.7.10.jar",
+                    "id": "6872582",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "fa6f8e788a463330286d2f49641790966c6fc9d7",
-                        "md5": "c67f63aa2692b04f7fa5ca4c38de06dc"
+                        "sha1": "9a5c98fcaef9d12fdc1a86035ebf4f9170d1cb2e",
+                        "md5": "ca805dc57f89624bf9e53e4f9babda0a"
                     },
                     "required_dependencies": [
                         "890405",
                         "302973"
                     ],
-                    "size": 487400,
-                    "date_published": "2025-08-07T21:57:39.150Z"
+                    "size": 515916,
+                    "date_published": "2025-08-10T20:34:53.927Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.8.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.10.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13429,19 +13420,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/Igk9tmnF/TerraFirmaGreg-Core-Modern-0.7.8.jar",
-                    "id": "Igk9tmnF",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/8m3psJno/TerraFirmaGreg-Core-Modern-0.7.10.jar",
+                    "id": "8m3psJno",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "7e9214dcc315f81336d49668a57c4b85584ee7b84fd1060450e745877a51986d4d384b714e7eb60d9d2d1b132ee737b2af81a00028bf104c80250e816c1e5982",
-                        "sha1": "fa6f8e788a463330286d2f49641790966c6fc9d7"
+                        "sha512": "bb8b2907e7dcf1e630aac76575cefc04cc594b6da0aeafa76bed5a5838677720bddf2b134d3480e06e850ff041f3963b1d22803c8ac873f315e32b698f01ef29",
+                        "sha1": "9a5c98fcaef9d12fdc1a86035ebf4f9170d1cb2e"
                     },
                     "required_dependencies": [
-                        "7tG215v7",
-                        "JaCEZUhg"
+                        "JaCEZUhg",
+                        "7tG215v7"
                     ],
-                    "size": 487400,
-                    "date_published": "2025-08-07T21:57:41.124155Z"
+                    "size": 515916,
+                    "date_published": "2025-08-10T20:34:55.642076Z"
                 }
             ]
         },
@@ -13814,7 +13805,7 @@
         {
             "pakku_id": "tdBDW3xpPBc3E2mt",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "xaeros-world-map",
                 "modrinth": "xaeros-world-map"

@@ -13,8 +13,8 @@ function registerTFCStoneRecipes(event) {
 		event.recipes.gtceu.cutter(`tfg:tfc/${stone}_loose_to_brick`)
 			.itemInputs(`tfc:rock/loose/${stone}`)
 			.itemOutputs(`tfc:brick/${stone}`)
-			.duration(40)
-			.EUt(8)
+			.duration(10)
+			.EUt(2)
 
 		//#region Сырой камень
 

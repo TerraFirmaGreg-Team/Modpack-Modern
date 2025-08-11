@@ -804,7 +804,7 @@
 			y: -3.0d
 		}
 		{
-			description: ["{quests.ore_proc.lv_tier.desc}"]
+			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:lv_universal_circuit"
 			id: "4C620105AAC49381"
@@ -821,7 +821,7 @@
 			y: -7.0d
 		}
 		{
-			description: ["{quests.ore_proc.lv_tier.desc}"]
+			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:mv_universal_circuit"
 			id: "0AF286AA540A82E6"
@@ -838,7 +838,7 @@
 			y: -5.0d
 		}
 		{
-			description: ["{quests.ore_proc.lv_tier.desc}"]
+			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:hv_universal_circuit"
 			id: "4D0ADC66D2CF09B1"
@@ -855,7 +855,7 @@
 			y: -3.0d
 		}
 		{
-			description: ["{quests.ore_proc.lv_tier.desc}"]
+			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:ev_universal_circuit"
 			id: "7AF726555D721DFC"
@@ -872,7 +872,7 @@
 			y: -1.0d
 		}
 		{
-			description: ["{quests.ore_proc.lv_tier.desc}"]
+			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:iv_universal_circuit"
 			id: "05E2F203DA46A5E8"
@@ -889,7 +889,7 @@
 			y: 1.0d
 		}
 		{
-			description: ["{quests.ore_proc.lv_tier.desc}"]
+			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:luv_universal_circuit"
 			id: "1DB543EFEEB67238"
@@ -906,7 +906,7 @@
 			y: 3.0d
 		}
 		{
-			description: ["{quests.ore_proc.lv_tier.desc}"]
+			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:zpm_universal_circuit"
 			id: "39019EF278D09DF7"
@@ -923,7 +923,7 @@
 			y: 5.0d
 		}
 		{
-			description: ["{quests.ore_proc.lv_tier.desc}"]
+			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:uv_universal_circuit"
 			id: "7ECA77DFEE2F6F20"
