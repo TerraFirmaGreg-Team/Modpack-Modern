@@ -207,13 +207,23 @@ const registerTFGFoodData = (event) => {
 		food.fruit(0.75)
 	})
 
+	event.foodItem('betterend:cave_pumpkin_pie_dough', food => {
+		food.hunger(2)
+		food.decayModifier(3)
+	})
+
+	event.foodItem('betterend:cave_pumpkin_pie_raw', food => {
+		food.hunger(2)
+		food.decayModifier(3)
+	})
+
 	event.foodItem('betterend:cave_pumpkin_pie', food => {
 		food.hunger(4)
-		food.saturation(3)
-		food.decayModifier(2.5)
+		food.saturation(4)
+		food.decayModifier(2)
 		food.water(5)
-		food.fruit(2)
-		food.grain(1.5)
+		food.fruit(4)
+		food.grain(2)
 	})
 
 	event.foodItem('betterend:chorus_mushroom_product', food => {

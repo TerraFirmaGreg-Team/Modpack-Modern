@@ -154,6 +154,8 @@ const registerTFGCrops = (event) => {
             product.food(food => {
 	            food.hunger(2)
 	            food.saturation(1)
+                food.effect('minecraft:hunger', 30 * 20, 0, 1)
+                food.effect('minecraft:weakness', 30 * 20, 0, 1)
             })
         })
         .deadBlock(dead => {
@@ -181,6 +183,7 @@ const registerTFGCrops = (event) => {
             product.food(food => {
 	            food.hunger(5)
 	            food.saturation(1)
+                food.effect('minecraft:poison', 5 * 20, 0, 1)
             })
         })
         .deadBlock(dead => {
@@ -207,6 +210,8 @@ const registerTFGCrops = (event) => {
             product.food(food => {
 	            food.hunger(2)
 	            food.saturation(1)
+                food.effect('tfc:thirst', 60 * 20, 0, 1)
+                food.effect('minecraft:nausea', 30 * 20, 0, 1)
             })
         })
         .deadBlock(dead => {

@@ -164,6 +164,13 @@ const registerFirmaLifeRecipes = (event) => {
 		.duration(30)
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	event.recipes.gtceu.alloy_smelter('pie_pan')
+		.itemInputs('#forge:ingots/wrought_iron')
+		.notConsumable('gtceu:cylinder_casting_mold')
+		.itemOutputs('6x firmalife:pie_pan')
+		.EUt(GTValues.VA[GTValues.ULV])
+		.duration(100)
+
 	event.replaceInput({ id: 'firmalife:crafting/bottle_label' }, 'firmalife:beeswax', '#forge:wax')
 
 	//#endregion
