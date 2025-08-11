@@ -48,6 +48,18 @@ const registerTFGItemTags = (event) => {
 
 	event.add('tfg:harvester', 'tfg:harvest_basket')
 	event.add('tfg:harvester', 'tfg:aluminium_harvest_basket')
+
+	event.removeAll('tfc:propicks')
+	event.add('tfg:tools/ore_prospectors/copper', 'tfc:metal/propick/copper')
+	event.add('tfg:tools/ore_prospectors/bronze', 'tfc:metal/propick/bronze')
+	event.add('tfg:tools/ore_prospectors/bronze', 'tfc:metal/propick/bismuth_bronze')
+	event.add('tfg:tools/ore_prospectors/bronze', 'tfc:metal/propick/black_bronze')
+	event.add('tfg:tools/ore_prospectors/wrought_iron', 'tfc:metal/propick/wrought_iron')
+	event.add('tfg:tools/ore_prospectors/steel', 'tfc:metal/propick/steel')
+	event.add('tfg:tools/ore_prospectors/black_steel', 'tfc:metal/propick/black_steel')
+	event.add('tfg:tools/ore_prospectors/blue_steel', 'tfc:metal/propick/blue_steel')
+	event.add('tfg:tools/ore_prospectors/red_steel', 'tfc:metal/propick/red_steel')
+
 	//#endregion
 
 	// #region Paper from wood
