@@ -1,0 +1,26 @@
+
+#Adaptive Performance Tweaks: Items
+[Items]
+	#Enable/Disable items optimization.
+	optimizeItems = true
+	#Defines the max. number of items / item stacks per type which are allowed to lay around in the world.
+	#Range: 16 ~ 128
+	maxNumberOfItemsPerType = 64
+	#Defines the max. number of items / item stacks which are allowed to lay around in a single world.
+	#Range: 16 ~ 1000
+	maxNumberOfItems = 128
+	#Defines the radius in blocks which items / item stacks will be clustered together.
+	#Range: 1 ~ 16
+	itemsClusterRange = 4
+	#Defines a list of items which will be optimized and all other items will be ignored by the optimization.
+	itemsAllowList = []
+	#Defines a list of items which will be ignored by the optimization and all other relevant items will be optimized.
+	itemsDenyList = ["item.minecraft.diamond", "item.minecraft.diamond_block"]
+
+["Experience Orbs"]
+	#Enable/Disable experience orbs optimization.
+	optimizeExperienceOrbs = true
+	#Defines the radius in which experience orbs will be clustered together.
+	#Range: 1 ~ 16
+	experienceOrbsClusterRange = 4
+

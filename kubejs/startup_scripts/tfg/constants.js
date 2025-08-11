@@ -1,3 +1,8 @@
+"use strict";
+
+/**
+ * @type {string[]} - Item Names
+ */
 global.AIRCRAFT_UPGRADES = [
 	"lv_aircraft_engine",
 	"hv_aircraft_engine",
@@ -19,15 +24,22 @@ global.AIRCRAFT_UPGRADES = [
 	"titanium_hull_reinforcement"
 ]
 
+/**
+ * @type {string[]} - Item IDs
+ */
 global.EXTRATERRESTRIAL_RAW_ROCKS = [
 	'ad_astra:moon_stone',
 	'ad_astra:moon_deepslate',
 	'ad_astra:mars_stone',
 	'ad_astra:venus_stone',
 	'ad_astra:mercury_stone',
-	'ad_astra:glacio_stone'
+	'ad_astra:glacio_stone',
+	'gtceu:red_granite'
 ]
 
+/**
+ * @type {string[]} - Item IDs
+ */
 global.EXTRATERRESTRIAL_HARDENED_ROCKS = [
 	'tfg:rock/hardened_moon_stone',
 	'tfg:rock/hardened_moon_deepslate',
@@ -35,8 +47,12 @@ global.EXTRATERRESTRIAL_HARDENED_ROCKS = [
 	'tfg:rock/hardened_venus_stone',
 	'tfg:rock/hardened_mercury_stone',
 	'tfg:rock/hardened_glacio_stone',
+	'tfg:rock/hardened_red_granite'
 ]
 
+/**
+ * @type {string[]} - Stone Names
+ */
 global.MOON_STONE_TYPES = [
 	"andesite",
 	"basalt",
@@ -49,6 +65,9 @@ global.MOON_STONE_TYPES = [
 	"rhyolite"
 ]
 
+/**
+ * @type {string[]} - Biome IDs
+ */
 global.MOON_BIOMES = [
 	'tfg:moon/lunar_plains',
 	'tfg:moon/lunar_sands',
@@ -62,14 +81,56 @@ global.MOON_BIOMES = [
 	'tfg:moon/lunar_lights_sparse'
 ]
 
+/**
+ * @type {string[]} - Biome IDs
+ */
 global.MARS_BIOMES = [
-	'tfg:mars/martian_plains',
+	'tfg:mars/martian_oasis',
+	'tfg:mars/martian_deep_desert',
+	'tfg:mars/martian_dunes',
+	'tfg:mars/martian_dune_edge',
+	'tfg:mars/martian_river',
 	'tfg:mars/martian_riverbed',
+	'tfg:mars/amber_plains',
+	'tfg:mars/amber_hills',
+	'tfg:mars/rusticus_plains',
+	'tfg:mars/rusticus_hills',
+	'tfg:mars/sangnum_plains',
+	'tfg:mars/sangnum_hills',
 	'tfg:mars/martian_mountains'
 ]
 
+/**
+ * @type {string[]} - Block Names
+ */
+global.TFG_MACHINE_CASINGS = [
+	'machine_casing_clean_stainless_steel_desh',
+	'machine_casing_desh_ptfe',
+	'machine_casing_iron_desh',
+	'machine_casing_ptfe_desh',
+	'machine_casing_stainless_steel_desh',
+	'machine_casing_blue_solar_panel',
+	'machine_casing_green_solar_panel',
+	'machine_casing_red_solar_panel',
+	'machine_casing_mars'
+];
+
+/**
+ * @type {string[]} - Circuit Tiers
+ */
 global.UNIVERSAL_CIRCUIT_TIERS = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv"];
 
+/**
+ * @typedef {Object} Fruit
+ * @property {string} name - Fruit Name
+ * @property {string} id - Fruit ID
+ * @property {number} saturation - Saturation Value
+ * @property {number} water - Water Value
+ * @property {number} fruit - Fruit Value
+ * @property {number} decay - Decay Modifier
+ */
+
+/** @type {Fruit[]} */
 global.FOOD_FRUIT = [
 	{name: 'red_grapes', id: 'firmalife:food/red_grapes', saturation: 0.4, water: 2, fruit: 0.5, decay: 2.25},
 	{name: 'white_grapes', id: 'firmalife:food/white_grapes', saturation: 0.4, water: 2, fruit: 0.5, decay: 2.25},

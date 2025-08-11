@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerCreateConnectedRecipes = (event) => {
 
@@ -18,22 +19,22 @@ const registerCreateConnectedRecipes = (event) => {
 		'create:andesite_casing',
 		'#forge:plates/wrought_iron',
 		'create:speedometer',
-		'#tfg:shafts',
+		'#forge:shafts',
 	]).id('create_connected:crafting/kinetics/centrifugal_clutch')
 
 	// Freewheel Clutch'
 	event.shapeless('create_connected:freewheel_clutch', [
 		'create:andesite_casing',
 		'#forge:plates/wrought_iron',
-		'#tfg:shafts',
-		'#tfg:small_cogwheels',
+		'#forge:shafts',
+		'#forge:cogwheels',
 	]).id('create_connected:crafting/kinetics/freewheel_clutch')
 
 	// Overstress Clutch
 	event.shapeless('create_connected:overstress_clutch', [
 		'create:andesite_casing',
 		'#forge:plates/wrought_iron',
-		'#tfg:shafts',
+		'#forge:shafts',
 		'create:electron_tube',
 	]).id('create_connected:crafting/kinetics/overstress_clutch')
 

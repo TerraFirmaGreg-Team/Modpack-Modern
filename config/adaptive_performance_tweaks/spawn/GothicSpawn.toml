@@ -1,0 +1,30 @@
+
+#Adaptive Performance Tweaks: Spawn
+["Gothic Spawn Config"]
+	Enabled = true
+	Id = "gothic"
+	#Range: 1 ~ 64
+	MaxPassiveMobsPerPlayer = 4
+	#Range: 1 ~ 512
+	MaxPassiveMobsPerWorld = 16
+	#Range: 1 ~ 1024
+	MaxPassiveMobsPerServer = 320
+	#List of passive Mobs to optimize in the format ["minecraft:bat", "minecraft:cat", ..]
+	PassiveMobsList = ["gothic:meatbug", "gothic:meatbug_tamed"]
+	#Range: 1 ~ 64
+	MaxNeutralMobsPerPlayer = 4
+	#Range: 1 ~ 512
+	MaxNeutralMobsPerWorld = 16
+	#Range: 1 ~ 1024
+	MaxNeutralMobsPerServer = 320
+	#List of neutral Mobs to optimize in the format ["minecraft:bee", "minecraft:wolf", ..]
+	NeutralMobsList = ["gothic:npc_farmer", "gothic:npc_oldcamp_hunter"]
+	#Range: 1 ~ 64
+	MaxHostileMobsPerPlayer = 4
+	#Range: 1 ~ 512
+	MaxHostileMobsPerWorld = 16
+	#Range: 1 ~ 1024
+	MaxHostileMobsPerServer = 320
+	#List of hostile Mobs to optimize in the format ["minecraft:blaze", "minecraft:cave_spider", ..]
+	HostileMobsList = ["gothic:bloodfly", "gothic:bloodfly_hornet", "gothic:dragon_snapper", "gothic:gothic_wolf", "gothic:ice_wolf", "gothic:lurker", "gothic:molerat", "gothic:razor", "gothic:scavenger", "gothic:shadowbeast", "gothic:snapper", "gothic:stone_guardian", "gothic:warg"]
+

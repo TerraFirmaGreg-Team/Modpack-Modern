@@ -1,10 +1,10 @@
 // priority: 0
+"use strict";
 
 function registerDiggerHelmetItemTags(event) {
 
 	const DISABLED_ITEMS = [
 		'diggerhelmet:eternal_candle',
-		'diggerhelmet:wool_lining'
 	]
 
 	DISABLED_ITEMS.forEach(item => {

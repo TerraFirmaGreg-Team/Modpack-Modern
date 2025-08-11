@@ -1,4 +1,5 @@
 ﻿// priority: 0
+"use strict";
 
 function registerTFCStoneRecipes(event) {
 
@@ -12,8 +13,8 @@ function registerTFCStoneRecipes(event) {
 		event.recipes.gtceu.cutter(`tfg:tfc/${stone}_loose_to_brick`)
 			.itemInputs(`tfc:rock/loose/${stone}`)
 			.itemOutputs(`tfc:brick/${stone}`)
-			.duration(40)
-			.EUt(8)
+			.duration(10)
+			.EUt(2)
 
 		//#region Сырой камень
 
@@ -252,7 +253,7 @@ function registerTFCStoneRecipes(event) {
 		event.recipes.gtceu.assembler(`${stone}_cobble_rocks_to_mossy_cobble`)
 			.itemInputs(`tfc:rock/cobble/${stone}`, '#tfc:compost_greens_low')
 			.circuit(0)
-			.inputFluids(JsonIO.of({ amount: 144, value: { tag: "tfg:clean_water" }}))
+			.inputFluids("#tfg:clean_water 144")
 			.itemOutputs(`tfc:rock/mossy_cobble/${stone}`)
 			.duration(50)
 			.EUt(2)
@@ -264,7 +265,7 @@ function registerTFCStoneRecipes(event) {
 		event.recipes.gtceu.assembler(`mossy_bricks_${stone}`)
 			.itemInputs(`tfc:rock/bricks/${stone}`, '#tfc:compost_greens_low')
 			.circuit(0)
-			.inputFluids(JsonIO.of({ amount: 144, value: { tag: "tfg:clean_water" }}))
+			.inputFluids("#tfg:clean_water 144")
 			.itemOutputs(`tfc:rock/mossy_bricks/${stone}`)
 			.duration(50)
 			.EUt(2)
@@ -278,6 +279,18 @@ function registerTFCStoneRecipes(event) {
 			.circuit(0)
 			.inputFluids(Fluid.of('gtceu:concrete', 72))
 			.itemOutputs(`2x tfc:rock/hardened/${stone}`)
+			.duration(250)
+			.EUt(8)
+
+		//#endregion
+
+		//#region Укрепленный камень
+
+		event.recipes.gtceu.assembler(`smooth_${stone}`)
+			.itemInputs(`8x tfc:rock/raw/${stone}`)
+			.circuit(2)
+			.inputFluids(Fluid.of('gtceu:concrete', 72))
+			.itemOutputs(`8x tfc:rock/smooth/${stone}`)
 			.duration(250)
 			.EUt(8)
 

@@ -1,0 +1,31 @@
+
+["Desert Behemoths: Sandworms! Config"]
+	#Value at which sandworm will spawn. Higher values mean the worm will take longer to spawn. Default 4000.
+	#Range: 1000 ~ 100000
+	"Max Wormsign" = 4000
+	#Seconds after leaving a worm's range until another one can spawn. Default 120.
+	#Range: 10 ~ 216000
+	"Respawn Duration" = 120
+	#Time til despawn in seconds when not targeting a survival player. Default 3 minutes.
+	#Range: 30 ~ 216000
+	"Despawn Duration" = 180
+	#Number of explosions the worm's head can handle before dropping a tooth and running away. Default 3
+	#Range: 1 ~ 100
+	Health = 3
+	#Value the damage dealt by the worm is scaled by. Default 1.0.
+	#Range: 0.01 ~ 100.0
+	"Damage Multiplier" = 1.0
+	#Multiplier for damage dealt by the head of the worm compared to a body segment. Default 2.0 (head deals double damage).
+	#Range: 0.01 ~ 100.0
+	"Head Multiplier" = 2.0
+	#By default, the sandworm can spawn in any biome golden rabbits spawn in. This option enables or disables that.
+	#To add additional biomes the sandworm can spawn in, create a datapack that edits the sandworm_mod:can_spawn_sandworms biome tag.
+	#Specifically, create can_spawn_sandworms.json in data->sandworm_mod->tags->worldgen->biome.
+	#Bellow is an example json file that allows sandworms to spawn in jungles:
+	#{
+	#  "values": [
+	#    "minecraft:jungle"
+	#  ]
+	#}
+	"Default Spawning" = false
+

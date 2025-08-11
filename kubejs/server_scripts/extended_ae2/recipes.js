@@ -1,3 +1,5 @@
+"use strict";
+
 const registerExtendedAE2Recipes = (event) => {
 
     event.remove({not:[
@@ -131,7 +133,7 @@ const registerExtendedAE2Recipes = (event) => {
         'gtceu:iv_robot_arm',
         'gtceu:iv_fluid_regulator',
         '4x #forge:dense_plates/tungsten_steel',
-        '#gtceu:circuits/iv',)
+        '#gtceu:circuits/iv')
     .inputFluids(Fluid.of('tfg:fluix', 144*9))
     .itemOutputs("expatternprovider:oversize_interface")
     .duration(300)
@@ -453,7 +455,7 @@ const registerExtendedAE2Recipes = (event) => {
         .itemInputs(
             'ae2:pattern_access_terminal',
             '4x ae2:logic_processor',
-            '2x megacells:accumulation_processor',)
+            '2x megacells:accumulation_processor')
         .itemOutputs('expatternprovider:ex_pattern_access_part')
         .duration(100)
         .EUt(GTValues.VA[GTValues.EV])
@@ -537,7 +539,7 @@ const registerExtendedAE2Recipes = (event) => {
             '2x megacells:accumulation_processor',
             '4x ae2:logic_processor',
             '4x ae2:engineering_processor',
-            '4x ae2:speed_card',)
+            '4x ae2:speed_card')
         .itemOutputs('expatternprovider:ex_io_port')
         .duration(200)
         .EUt(1000)
@@ -549,7 +551,7 @@ const registerExtendedAE2Recipes = (event) => {
             '2x megacells:accumulation_processor',
             '4x ae2:logic_processor',
             '4x ae2:engineering_processor',
-            '2x ae2:capacity_card',)
+            '2x ae2:capacity_card')
         .itemOutputs('expatternprovider:ex_drive')
         .duration(200)
         .EUt(1920)
@@ -560,7 +562,7 @@ const registerExtendedAE2Recipes = (event) => {
             '2x megacells:accumulation_processor',
             '4x ae2:logic_processor',
             '4x ae2:engineering_processor',
-            '2x ae2:capacity_card',)
+            '2x ae2:capacity_card')
         .itemOutputs('expatternprovider:drive_upgrade')
         .duration(200)
         .circuit(2)
@@ -573,7 +575,7 @@ const registerExtendedAE2Recipes = (event) => {
             'gtceu:stainless_steel_drum',
             '2x ae2:cell_component_1k',
             'gtceu:hv_robot_arm',
-            'gtceu:hv_electric_pump',)
+            'gtceu:hv_electric_pump')
         .itemOutputs('expatternprovider:ingredient_buffer')
         .duration(200)
         .EUt(1920)
@@ -592,10 +594,10 @@ const registerExtendedAE2Recipes = (event) => {
         '4x ae2:logic_processor',
         '4x megacells:accumulation_processor',
         '16x #forge:rods/niobium_nitride',
-        '1x expatternprovider:ex_molecular_assembler',)
+        '1x expatternprovider:ex_molecular_assembler')
     .inputFluids(
         Fluid.of("gtceu:concrete", 144*8),
-        Fluid.of('tfg:fluix', 144*16),)
+        Fluid.of('tfg:fluix', 144*16))
     .itemOutputs('expatternprovider:assembler_matrix_frame')
     .duration(2000)
     .EUt(GTValues.VA[GTValues.LuV])
@@ -609,10 +611,10 @@ const registerExtendedAE2Recipes = (event) => {
         '4x ae2:logic_processor',
         '4x megacells:accumulation_processor',
         '16x #forge:rods/niobium_nitride',
-        '4x expatternprovider:ex_molecular_assembler',)
+        '4x expatternprovider:ex_molecular_assembler')
     .inputFluids(
         Fluid.of('gtceu:concrete', 144*8),
-        Fluid.of('tfg:cryogenized_fluix', 144*16),)
+        Fluid.of('tfg:cryogenized_fluix', 144*16))
     .itemOutputs('8x expatternprovider:assembler_matrix_frame')
     .duration(2000)
     .EUt(GTValues.VA[GTValues.IV])
@@ -624,7 +626,7 @@ const registerExtendedAE2Recipes = (event) => {
     .itemInputs(
         '#forge:frames/polytetrafluoroethylene',
         'gtceu:plascrete',
-        '6x gtceu:polytetrafluoroethylene_plate',)
+        '6x gtceu:polytetrafluoroethylene_plate')
     .inputFluids(
         Fluid.of('gtceu:concrete', 144*4))
     .itemOutputs('expatternprovider:assembler_matrix_wall')
@@ -637,7 +639,7 @@ const registerExtendedAE2Recipes = (event) => {
     .itemInputs(
         '#forge:frames/polytetrafluoroethylene',
         'gtceu:cleanroom_glass',
-        '6x gtceu:polytetrafluoroethylene_plate',)
+        '6x gtceu:polytetrafluoroethylene_plate')
     .inputFluids(
         Fluid.of('gtceu:concrete', 144*4))
     .itemOutputs("expatternprovider:assembler_matrix_glass")
@@ -653,10 +655,10 @@ const registerExtendedAE2Recipes = (event) => {
         '4x gtceu:luv_robot_arm',
         '2x #forge:dense_plates/rhodium_plated_palladium',
         '#gtceu:circuits/zpm',
-        '2x #gtceu:circuits/luv',)
+        '2x #gtceu:circuits/luv')
     .inputFluids(
         Fluid.of('tfg:fluix', 144*16),
-        Fluid.of('gtceu:polybenzimidazole', 1430),)
+        Fluid.of('gtceu:polybenzimidazole', 1430))
     .itemOutputs('expatternprovider:assembler_matrix_pattern')
     .duration(20*30)
     .EUt(GTValues.VA[GTValues.LuV])
@@ -669,10 +671,10 @@ const registerExtendedAE2Recipes = (event) => {
         '4x gtceu:iv_robot_arm',
         '2x #forge:dense_plates/tungsten_steel',
         '#gtceu:circuits/luv',
-        '2x #gtceu:circuits/iv',)
+        '2x #gtceu:circuits/iv')
     .inputFluids(
         Fluid.of('tfg:cryogenized_fluix', 144*8),
-        Fluid.of('gtceu:polybenzimidazole', 1430),)
+        Fluid.of('gtceu:polybenzimidazole', 1430))
     .itemOutputs('2x expatternprovider:assembler_matrix_pattern')
     .duration(20*30)
     .EUt(GTValues.VA[GTValues.IV])
@@ -687,10 +689,10 @@ const registerExtendedAE2Recipes = (event) => {
         '4x gtceu:luv_field_generator',
         '2x #forge:dense_plates/rhodium_plated_palladium',
         '#gtceu:circuits/zpm',
-        '2x #gtceu:circuits/luv',)
+        '2x #gtceu:circuits/luv')
     .inputFluids(
         Fluid.of('tfg:fluix', 144*16),
-        Fluid.of('gtceu:polybenzimidazole', 1430),)
+        Fluid.of('gtceu:polybenzimidazole', 1430))
     .itemOutputs('expatternprovider:assembler_matrix_crafter')
     .duration(20*30)
     .EUt(GTValues.VA[GTValues.LuV])
@@ -703,10 +705,10 @@ const registerExtendedAE2Recipes = (event) => {
         '4x gtceu:iv_field_generator',
         '2x #forge:dense_plates/tungsten_steel',
         '#gtceu:circuits/luv',
-        '2x #gtceu:circuits/iv',)
+        '2x #gtceu:circuits/iv')
     .inputFluids(
         Fluid.of('tfg:cryogenized_fluix', 144*8),
-        Fluid.of('gtceu:polybenzimidazole', 1430),)
+        Fluid.of('gtceu:polybenzimidazole', 1430))
     .itemOutputs('2x expatternprovider:assembler_matrix_crafter')
     .duration(20*30)
     .EUt(GTValues.VA[GTValues.IV])
@@ -721,10 +723,10 @@ const registerExtendedAE2Recipes = (event) => {
         '4x gtceu:luv_conveyor_module',
         '2x #forge:dense_plates/rhodium_plated_palladium',
         '#gtceu:circuits/zpm',
-        '2x #gtceu:circuits/luv',)
+        '2x #gtceu:circuits/luv')
     .inputFluids(
         Fluid.of('tfg:fluix', 144*16),
-        Fluid.of('gtceu:polybenzimidazole', 1430),)
+        Fluid.of('gtceu:polybenzimidazole', 1430))
     .itemOutputs('expatternprovider:assembler_matrix_speed')
     .duration(20*30)
     .EUt(GTValues.VA[GTValues.LuV])
@@ -737,10 +739,10 @@ const registerExtendedAE2Recipes = (event) => {
         '4x gtceu:iv_conveyor_module',
         '2x #forge:dense_plates/tungsten_steel',
         '#gtceu:circuits/luv',
-        '2x #gtceu:circuits/iv',)
+        '2x #gtceu:circuits/iv')
     .inputFluids(
         Fluid.of('tfg:cryogenized_fluix', 144*8),
-        Fluid.of('gtceu:polybenzimidazole', 1430),)
+        Fluid.of('gtceu:polybenzimidazole', 1430))
     .itemOutputs('2x expatternprovider:assembler_matrix_speed')
     .duration(20*30)
     .EUt(GTValues.VA[GTValues.IV])

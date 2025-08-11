@@ -1,3 +1,5 @@
+"use strict";
+
 function registerTFGNetherBlocks(event) {
 
 	event.create('tfg:rock/hardened_deepslate')
@@ -65,6 +67,7 @@ function registerTFGNetherBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem('tfc:metamorphic_rock')
+		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:loose/dripstone', 'tfc:loose_rock')
 		.itemTexture('tfg:item/loose/dripstone')
@@ -75,6 +78,7 @@ function registerTFGNetherBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem('tfc:sedimentary_rock')
+		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:mushroom_roots', 'tfg:decorative_plant')
 		.soundType('nether_wart')

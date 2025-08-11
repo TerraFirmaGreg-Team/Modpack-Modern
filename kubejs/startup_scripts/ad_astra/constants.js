@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 global.AD_ASTRA_DISABLED_ITEMS = 
 [
@@ -23,8 +24,6 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:fan',
 	'ad_astra:steel_tank',
 	'ad_astra:desh_tank',
-	'ad_astra:ostrum_tank',
-	'ad_astra:calorite_tank',
 	'ad_astra:ice_shard',
 	'ad_astra:oxygen_bucket',
 	'ad_astra:hydrogen_bucket',
@@ -43,6 +42,7 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:ti_69',
 	'ad_astra:steel_cable',
 	'ad_astra:desh_cable',
+	'ad_astra:glacian_leaves',
 
 	// Don't tag prefix these, several systems rely on all ore blocks being gregtech's generated ones
 	'ad_astra:moon_ice_shard_ore',
@@ -71,27 +71,36 @@ global.AD_ASTRA_DISABLED_ITEMS =
 
 	'ad_astra:tier_2_rocket',
 	'ad_astra:desh_engine',
+	'tfg:rocket_fin_t2',
+	'tfg:rocket_cone_t2',
 
 	// Disabled until IV planets
 
 	'ad_astra:tier_3_rocket',
+	'ad_astra:ostrum_engine',
+	'ad_astra:ostrum_tank',
+	'tfg:rocket_fin_t3',
+	'tfg:rocket_cone_t3',
+	'tfg:elite_power_thruster',
+	'tfg:better_space_suit_fabric',
 	'ad_astra:netherite_space_helmet',
 	'ad_astra:netherite_space_suit',
 	'ad_astra:netherite_space_pants',
 	'ad_astra:netherite_space_boots',
-	'ad_astra:ostrum_engine',
 	
+
 
 
 	// Disabled until LuV planet
 	
 	'ad_astra:glacio_globe', // maybe
 	'ad_astra:tier_4_rocket',
+	'ad_astra:calorite_engine',
+	'ad_astra:calorite_tank',
 	'ad_astra:jet_suit_helmet',
 	'ad_astra:jet_suit',
 	'ad_astra:jet_suit_pants',
-	'ad_astra:jet_suit_boots',
-	'ad_astra:calorite_engine'
+	'ad_astra:jet_suit_boots'
 ];
 
 global.AD_ASTRA_DISABLED_FLUIDS =
@@ -110,3 +119,9 @@ global.BREATHABLE_COMPRESSED_AIRS =
 	'tfg:compressed_trimix',
 	'tfg:compressed_trimix_3'
 ];
+
+global.AD_ASTRA_WOOD = [
+	{name: 'aeronos', logs: '#ad_astra:aeronos_caps', log: 'ad_astra:aeronos_stem', stripped_log: null, lumber: 'tfg:wood/lumber/aeronos', plank: 'ad_astra:aeronos_planks', stair: 'ad_astra:aeronos_stairs', slab: 'ad_astra:aeronos_slab', fence: 'ad_astra:aeronos_fence', fence_gate: 'ad_astra:aeronos_fence_gate', door: 'ad_astra:aeronos_door', trapdoor: 'ad_astra:aeronos_trapdoor', button: null, pressure_plate: null, support: 'tfg:aeronos_support', isHardwood: false},
+	{name: 'strophar', logs: '#ad_astra:strophar_caps', log: 'ad_astra:strophar_stem', stripped_log: null, lumber: 'tfg:wood/lumber/strophar', plank: 'ad_astra:strophar_planks', stair: 'ad_astra:strophar_stairs', slab: 'ad_astra:strophar_slab', fence:'ad_astra:strophar_fence', fence_gate: 'ad_astra:strophar_fence_gate', door:'ad_astra:strophar_door', trapdoor: 'ad_astra:strophar_trapdoor', button: null, pressure_plate: null, support: 'tfg:strophar_support', isHardwood: false},
+	{name: 'glacian', logs: '#ad_astra:glacian_logs', log: 'ad_astra:glacian_log', stripped_log: 'ad_astra:stripped_glacian_log', lumber: 'tfg:wood/lumber/glacian', plank: 'ad_astra:glacian_planks', stair: 'ad_astra:glacian_stairs', slab: 'ad_astra:glacian_slab', fence: 'ad_astra:glacian_fence', fence_gate: 'ad_astra:glacian_fence_gate', door: 'ad_astra:glacian_door', trapdoor: 'ad_astra:glacian_trapdoor', button: 'ad_astra:glacian_button', pressure_plate: 'ad_astra:glacian_pressure_plate', support: 'tfg:glacian_support', isHardwood: true},
+]

@@ -395,7 +395,12 @@
 		}
 	]
 	order_index: 2
-	quest_links: [ ]
+	quest_links: [{
+		id: "704C995D4B6CE874"
+		linked_quest: "46C92B938921A0AC"
+		x: 4.5d
+		y: 0.5d
+	}]
 	quests: [
 		{
 			dependencies: ["2746958D3D4A0885"]
@@ -1396,7 +1401,21 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.scarlet_biplane.title}"
-			x: 17.5d
+			x: 17.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6E4754288899732B"]
+			description: ["{quests.tfg_tips.aluminium_hopper.desc}"]
+			id: "06D07F7991FAB2CB"
+			subtitle: "{quests.tfg_tips.aluminium_hopper.subtitle}"
+			tasks: [{
+				id: "62A13F1E58F54CDD"
+				item: "immersive_aircraft:bamboo_hopper"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.aluminium_hopper.title}"
+			x: 18.0d
 			y: -2.0d
 		}
 	]

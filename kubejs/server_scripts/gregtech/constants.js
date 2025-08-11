@@ -1,3 +1,4 @@
+"use strict";
 
 global.GTCEU_ANVIL_TOOL_TYPES = [
 

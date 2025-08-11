@@ -1,3 +1,4 @@
+"use strict";
 
 /*
  * NBT Structure of a Grappling Hook:
@@ -49,8 +50,7 @@ let $GrappleCustomization = Java.loadClass('com.yyon.grapplinghook.utils.Grapple
  * 
  * @param {Internal.RecipesEventJS} event 
  */
-function registerGrapplingHookRecipes(event)
-{
+function registerGrapplingHookRecipes(event) {
     const ADDITIVE_UPGRADES_MINMAX = 
     {
         maxLen: { nbt: "maxlen", maxValue: 200, minValue: 20},
@@ -198,12 +198,10 @@ function registerGrapplingHookRecipes(event)
      * @param {string} localizationToken A token to display as the item's name, only used in JEI to tell the end user what the upgrade does
      * @returns {Special.Recipes.ShapelessKubejs} The Recipe Builder
      */
-    function shapelessUpgradeRecipe(upgradeItems, grappleCustomizationCallback, localizationToken)
-    {
+    function shapelessUpgradeRecipe(upgradeItems, grappleCustomizationCallback, localizationToken) {
         let inputs = ['grapplemod:grapplinghook'].concat(upgradeItems);
         let recipeBuilder = event.recipes.kubejs.shapeless(Item.of('grapplemod:grapplinghook').withName(Text.translate(localizationToken)), inputs);
-        recipeBuilder.modifyResult((grid, result) =>
-        {
+        recipeBuilder.modifyResult((grid, result) => {
             let fallbackItem = Item.of('minecraft:air');
             let orig = grid.find(Ingredient.of("grapplemod:grapplinghook"));
             
@@ -211,8 +209,7 @@ function registerGrapplingHookRecipes(event)
             customization.loadNBT(orig.nbt.getCompound("custom"));
             
             result = grappleCustomizationCallback(customization, orig, result);
-            if(result == null)
-            {
+            if (result === null) {
                 result = fallbackItem;
                 return result;
             }
@@ -220,12 +217,9 @@ function registerGrapplingHookRecipes(event)
             result.nbt.put("custom", customization.writeNBT());
             result.nbt.put("Damage", orig.nbt.getInt("Damage"));
 
-            if(orig.hasCustomHoverName())
-            {
+            if (orig.hasCustomHoverName()) {
                 result.setHoverName(orig.hoverName);
-            }
-            else
-            {
+            } else {
                 result.resetHoverName();
             }
             return result;
@@ -241,11 +235,9 @@ function registerGrapplingHookRecipes(event)
      * @param {string} localizationToken A token to display as the item's name, only used in JEI to tell the end user what the upgrade does
      * @returns {Special.Recipes.ShapedKubejs} The Recipe Builder
      */
-    function shapedUpgradeRecipe(pattern, keyMap, grappleCustomizationCallback, localizationToken)
-    {
+    function shapedUpgradeRecipe(pattern, keyMap, grappleCustomizationCallback, localizationToken) {
         let recipeBuilder = event.recipes.kubejs.shaped(Item.of('grapplemod:grapplinghook').withName(Text.translate(localizationToken)), pattern, keyMap)
-        recipeBuilder.modifyResult((grid, result) =>
-        {
+        recipeBuilder.modifyResult((grid, result) => {
             let fallbackItem = Item.of('minecraft:air');
             let orig = grid.find(Ingredient.of("grapplemod:grapplinghook"));
 
@@ -253,20 +245,16 @@ function registerGrapplingHookRecipes(event)
             customization.loadNBT(orig.nbt.getCompound("custom"));
 
             result = grappleCustomizationCallback(customization, orig, result);
-            if(result == null)
-            {
+            if (result === null) {
                 result = fallbackItem;
                 return result;
             }
 
             result.nbt.put("custom", customization.writeNBT());
             result.nbt.put("Damage", orig.nbt.getInt("Damage"));
-            if(orig.hasCustomHoverName())
-            {
+            if (orig.hasCustomHoverName()) {
                 result.setHoverName(orig.hoverName);
-            }
-            else
-            {
+            } else {
                 result.resetHoverName();
             }
             return result;
@@ -276,9 +264,15 @@ function registerGrapplingHookRecipes(event)
 
     event.remove({mod: 'grapplemod'})
 
-    event.recipes.kubejs.shapeless('grapplemod:grapplinghook', ['gtceu:wrought_iron_pickaxe_head', 'firmaciv:rope_coil', 'firmaciv:rope_coil', 'firmaciv:rope_coil', 'firmaciv:rope_coil'])
-    .modifyResult((craftingGrid, result) =>
-    {
+    event.recipes.kubejs.shaped('grapplemod:grapplinghook', [
+        'A',
+        'B',
+        'B'
+    ], {
+        A: 'gtceu:wrought_iron_pickaxe_head',
+        B: 'firmaciv:rope_coil'
+    })
+    .modifyResult((craftingGrid, result) => {
         let grappleCustomization = new $GrappleCustomization();
         grappleCustomization.setDefaults();
 
@@ -292,16 +286,13 @@ function registerGrapplingHookRecipes(event)
 
     //Repair
     event.recipes.kubejs.shapeless(Item.of('grapplemod:grapplinghook').withName(Text.translate("tfg.grapplemod.repair")), ['grapplemod:grapplinghook', 'gtceu:wrought_iron_dust'])
-        .modifyResult((craftingGrid, result) =>
-    {
-        try
-        {
+        .modifyResult((craftingGrid, result) => {
+        try {
             let fallbackItem = Item.of("minecraft:air");
             let orig = craftingGrid.find(Ingredient.of('grapplemod:grapplinghook'));
             let damage = orig.nbt.getInt("Damage");
     
-            if(damage <= 0)
-            {
+            if (damage <= 0) {
                 return fallbackItem;
             }
             let maxDamage = result.maxDamage;
@@ -314,38 +305,30 @@ function registerGrapplingHookRecipes(event)
             result.nbt.put("custom", customization.writeNBT());
             
     
-            if(orig.hasCustomHoverName())
-            {
+            if (orig.hasCustomHoverName()) {
                 result.setHoverName(orig.hoverName);
-            }
-            else
-            {
+            } else {
                 result.resetHoverName();
             }
             return result;
-        }
-        catch (exception)
-        {
-            console.log(exception);
+        } catch (exception) {
+            console.error(exception);
         }
     }).id('tfg:grapplemod/shapeless/repair');
 
     //Upgrade: Max Length
-    shapelessUpgradeRecipe(['firmaciv:rope_coil'], (customization, orig, result) =>
-    {
+    shapelessUpgradeRecipe(['firmaciv:rope_coil'], (customization, orig, result) => {
         let maxLen = customization.maxlen;
-        if(maxLen >= ADDITIVE_UPGRADES_MINMAX.maxLen.maxValue)
+        if (maxLen >= ADDITIVE_UPGRADES_MINMAX.maxLen.maxValue)
             return null;
 
         maxLen = Math.min(ADDITIVE_UPGRADES_MINMAX.maxLen.maxValue, maxLen + 20);
         customization.maxlen = maxLen;
         return result;
     }, 'tfg.grapplemod.upgrades.maxlen').id('tfg:grapplemod/upgrades/maxlen');
-    shapelessUpgradeRecipe(['#forge:tools/knives'], (customization, orig, result) =>
-    {
+    shapelessUpgradeRecipe(['#forge:tools/knives'], (customization, orig, result) => {
         let maxLen = customization.maxlen;
-        if(maxLen <= ADDITIVE_UPGRADES_MINMAX.maxLen.minValue)
-        {
+        if (maxLen <= ADDITIVE_UPGRADES_MINMAX.maxLen.minValue) {
             return null;
         }
 
@@ -355,14 +338,11 @@ function registerGrapplingHookRecipes(event)
     }, 'tfg.grapplemod.downgrades.maxlen').replaceIngredient('grapplemod:grapplinghook', 'firmaciv:rope_coil').id("tfg:grapplemod/downgrades/maxlen_decrease")
 
     //Upgrade: Motor
-    motorUpgrades.forEach(motorUpgradeType =>
-    {
+    motorUpgrades.forEach(motorUpgradeType => {
         //Add motor
-        shapelessUpgradeRecipe([`gtceu:${motorUpgradeType.electricTier}_electric_motor`], (customization, orig, result) =>
-        {
+        shapelessUpgradeRecipe([`gtceu:${motorUpgradeType.electricTier}_electric_motor`], (customization, orig, result) => {
             //If this already has a motor, disallow the recipe
-            if(customization.motor)
-            {
+            if (customization.motor) {
                 return null;
             }
 
@@ -373,24 +353,15 @@ function registerGrapplingHookRecipes(event)
         }, `tfg.grapplemod.upgrades.motor.${motorUpgradeType.electricTier}`).id(`tfg:grapplemod/upgrades/motor/${motorUpgradeType.electricTier}`);
 
         //Remove Motor
-        shapelessUpgradeRecipe([`gtceu:${motorUpgradeType.electricTier}_electric_motor`, '#forge:tools/hammers'], (customization, orig, result) =>
-        {
+        shapelessUpgradeRecipe([`gtceu:${motorUpgradeType.electricTier}_electric_motor`, '#forge:tools/hammers'], (customization, orig, result) => {
             let motorMaxSpeed = motorUpgradeType.motorMaxSpeed;
             let motorAcceleration = motorUpgradeType.motorAcceleration;
-            if(!customization.motor)
-            {
+            if (!customization.motor) {
                 return null;
             }
 
-            if(customization.motormaxspeed != motorMaxSpeed)
-            {
-                return null;
-            }
-
-            if(customization.motoracceleration != motorAcceleration)
-            {
-                return null;
-            }
+            if (customization.motormaxspeed !== motorMaxSpeed) return null;
+            if (customization.motoracceleration !== motorAcceleration) return null;
 
             customization.motor = false;
             customization.motormaxspeed = 0;
@@ -403,15 +374,12 @@ function registerGrapplingHookRecipes(event)
     })
 
     //Enable Smart Motor
-    shapelessUpgradeRecipe(['gtceu:basic_electronic_circuit'], (customization, orig, result) =>
-    {
-        if(!customization.motor)
-        {
+    shapelessUpgradeRecipe(['gtceu:basic_electronic_circuit'], (customization, orig, result) => {
+        if (!customization.motor) {
             return null;
         }
 
-        if(customization.smartmotor || customization.smartdoublemotor)
-        {
+        if (customization.smartmotor || customization.smartdoublemotor) {
             return null;
         }
 
@@ -421,10 +389,8 @@ function registerGrapplingHookRecipes(event)
     }, 'tfg.grapplemod.upgrades.smart_motor').id('tfg:grapplemod/upgrades/smart_motor');
 
     //Disable Smart Motor
-    shapelessUpgradeRecipe(['gtceu:basic_electronic_circuit', '#forge:tools/hammers'], (customization, orig, result) =>
-    {
-        if(!customization.smartmotor || !customization.smartdoublemotor)
-        {
+    shapelessUpgradeRecipe(['gtceu:basic_electronic_circuit', '#forge:tools/hammers'], (customization, orig, result) => {
+        if (!customization.smartmotor || !customization.smartdoublemotor) {
             return null;
         }
 
@@ -437,10 +403,8 @@ function registerGrapplingHookRecipes(event)
         .id('tfg:grapplemod/downgrades/smart_motor');
 
     //Enable Sticky Rope
-    shapelessUpgradeRecipe(['gtceu:sticky_resin'], (customization, orig, result) =>
-    {
-        if(customization.sticky)
-        {
+    shapelessUpgradeRecipe(['gtceu:sticky_resin'], (customization, orig, result) => {
+        if (customization.sticky) {
             return null;
         }
 
@@ -450,10 +414,8 @@ function registerGrapplingHookRecipes(event)
     .id('tfg:grapplemod/upgrades/sticky')
 
     //Disable Sticky Rope
-    shapelessUpgradeRecipe(['gtceu:sticky_resin', '#forge:tools/hammers'], (customization, orig, result) =>
-    {
-        if(!customization.sticky)
-        {
+    shapelessUpgradeRecipe(['gtceu:sticky_resin', '#forge:tools/hammers'], (customization, orig, result) => {
+        if (!customization.sticky) {
             return null;
         }
 
@@ -465,13 +427,10 @@ function registerGrapplingHookRecipes(event)
         .id('tfg:grapplemod/downgrades/sticky')
 
     //Upgrade: Forcefield
-    forcefieldUpgrades.forEach(forcefieldUpgradeType =>
-    {
+    forcefieldUpgrades.forEach(forcefieldUpgradeType => {
         //Add Forcefield
-        shapelessUpgradeRecipe([`gtceu:${forcefieldUpgradeType.electricTier}_field_generator`], (customization, orig, result) =>
-        {
-            if(customization.repel)
-            {
+        shapelessUpgradeRecipe([`gtceu:${forcefieldUpgradeType.electricTier}_field_generator`], (customization, orig, result) => {
+            if (customization.repel) {
                 return null;
             }
 
@@ -481,14 +440,12 @@ function registerGrapplingHookRecipes(event)
         }, `tfg.grapplemod.upgrades.forcefield.${forcefieldUpgradeType.electricTier}`).id(`tfg:grapplemod/upgrades/forcefield/${forcefieldUpgradeType.electricTier}`);
 
         //Remove Forcefield
-        shapelessUpgradeRecipe([`gtceu:${forcefieldUpgradeType.electricTier}_field_generator`, '#forge:tools/hammers'], (customization, orig, result) =>
-        {
+        shapelessUpgradeRecipe([`gtceu:${forcefieldUpgradeType.electricTier}_field_generator`, '#forge:tools/hammers'], (customization, orig, result) => {
             let repelForce = forcefieldUpgradeType.repelForce;
-            if(!customization.repel)
+            if (!customization.repel)
                 return null;
             
-            if(customization.repelforce != repelForce)
-                {
+            if (customization.repelforce !== repelForce) {
                 return null;
             }
 
@@ -501,13 +458,10 @@ function registerGrapplingHookRecipes(event)
             .id(`tfg:grapplemod/downgrades/forcefield/${forcefieldUpgradeType.electricTier}`);
     })
     //Upgrade: Magnet
-    magnetUpgrades.forEach(magnetUpgradeTier =>
-    {
+    magnetUpgrades.forEach(magnetUpgradeTier => {
         //Add Magnet
-        shapelessUpgradeRecipe([`gtceu:${magnetUpgradeTier.ingotName}`], (customization, orig, result) =>
-        {
-            if(customization.attract)
-            {
+        shapelessUpgradeRecipe([`gtceu:${magnetUpgradeTier.ingotName}`], (customization, orig, result) => {
+            if (customization.attract) {
                 return null;
             }
 
@@ -517,18 +471,11 @@ function registerGrapplingHookRecipes(event)
         }, `tfg.grapplemod.upgrades.magnet.${magnetUpgradeTier.ingotName}`).id(`tfg:grapplemod/upgrades/magnet/${magnetUpgradeTier.ingotName}`);
 
         //Remove Magnet
-        shapelessUpgradeRecipe([`gtceu:${magnetUpgradeTier.ingotName}`, '#forge:tools/hammers'], (customization, orig, result) =>
-        {
+        shapelessUpgradeRecipe([`gtceu:${magnetUpgradeTier.ingotName}`, '#forge:tools/hammers'], (customization, orig, result) => {
             let attractionRadius = magnetUpgradeTier.attractionRadius;
-            if(!customization.attract)
-            {
-                return null;
-            }
-
-            if(customization.attractradius != attractionRadius)
-            {
-                return null;
-            }
+            
+            if (!customization.attract) return null;
+            if (customization.attractradius !== attractionRadius) return null;
 
             customization.attract = false;
             customization.attractradius = attractionRadius;
@@ -540,21 +487,14 @@ function registerGrapplingHookRecipes(event)
     })
 
     //Set gravity to 0.5
-    shapelessUpgradeRecipe(['gtceu:helium_bucket'], (customization, orig, result) =>
-    {
-        if(customization.hookgravity != 1)
-        {
-            return null;
-        }
-
+    shapelessUpgradeRecipe(['gtceu:helium_bucket'], (customization, orig, result) => {
+        if (customization.hookgravity !== 1) return null;
         customization.hookgravity = 0.5;
         return result;
     }, `tfg.grapplemod.upgrades.gravity.0.5`).id('tfg:grapplemod/upgrades/gravity/0.5');
     //Set gravity to 1, from 0.5
-    shapelessUpgradeRecipe(['minecraft:bucket', '#forge:tools/hammers'], (customization, orig, result) =>
-    {
-        if(customization.hookgravity != 0.5)
-        {
+    shapelessUpgradeRecipe(['minecraft:bucket', '#forge:tools/hammers'], (customization, orig, result) => {
+        if (customization.hookgravity !== 0.5) {
             return null;
         }
         customization.hookgravity = 1;
@@ -564,10 +504,8 @@ function registerGrapplingHookRecipes(event)
     .id('tfg:grapplemod/downgrades/gravity/0.5');
 
     //Set gravity to 0
-    shapelessUpgradeRecipe(['gtceu:gravitation_engine_unit'], (customization, orig, result) =>
-    {
-        if(customization.hookgravity != 1)
-        {
+    shapelessUpgradeRecipe(['gtceu:gravitation_engine_unit'], (customization, orig, result) => {
+        if (customization.hookgravity !== 1) {
             return null;
         }
 
@@ -575,10 +513,8 @@ function registerGrapplingHookRecipes(event)
         return result;
     }, 'tfg.grapplemod.upgrades.gravity.0').id('tfg:grapplemod/upgrades/gravity/0');
     //Set gravity to 1, from 0
-    shapelessUpgradeRecipe(['gtceu:tungsten_block', '#forge:tools/hammers'], (customization, orig, result) =>
-    {
-        if(customization.hookgravity != 0)
-        {
+    shapelessUpgradeRecipe(['gtceu:tungsten_block', '#forge:tools/hammers'], (customization, orig, result) => {
+        if (customization.hookgravity !== 0) {
             return null;
         }
 
@@ -590,13 +526,10 @@ function registerGrapplingHookRecipes(event)
     .id('tfg:grapplemod/downgrades/gravity/0')
 
     //Upgrade: Throw Speed
-    throwUpgrades.forEach(throwUpgradeType =>
-    {
+    throwUpgrades.forEach(throwUpgradeType => {
         //Add Throwspeed
-        shapelessUpgradeRecipe([`gtceu:${throwUpgradeType.electricTier}_electric_piston`], (customization, orig, result) =>
-        {
-            if(customization.throwspeed != 2)
-            {
+        shapelessUpgradeRecipe([`gtceu:${throwUpgradeType.electricTier}_electric_piston`], (customization, orig, result) => {
+            if (customization.throwspeed !== 2) {
                 return null;
             }
 
@@ -605,12 +538,10 @@ function registerGrapplingHookRecipes(event)
         }, `tfg.grapplemod.upgrades.throwspeed.${throwUpgradeType.electricTier}`).id(`tfg:grapplemod/upgrades/throwspeed/${throwUpgradeType.electricTier}`);
 
         //Remove Throwspeed
-        shapelessUpgradeRecipe([`gtceu:${throwUpgradeType.electricTier}_electric_piston`, '#forge:tools/hammers'], (customization, orig, result) =>
-        {
+        shapelessUpgradeRecipe([`gtceu:${throwUpgradeType.electricTier}_electric_piston`, '#forge:tools/hammers'], (customization, orig, result) => {
             let throwSpeed = throwUpgradeType.throwSpeed;
             
-            if(customization.throwspeed != throwSpeed)
-            {
+            if (customization.throwspeed !== throwSpeed) {
                 return null;
             }
 
@@ -623,10 +554,8 @@ function registerGrapplingHookRecipes(event)
 
         })
     //Add Double Hook
-    shapelessUpgradeRecipe(['gtceu:black_steel_pickaxe_head'], (customization, orig, result) =>
-    {
-        if(customization.doublehook)
-        {
+    shapelessUpgradeRecipe(['gtceu:black_steel_pickaxe_head'], (customization, orig, result) => {
+        if (customization.doublehook) {
             return null;
         }
 
@@ -637,10 +566,8 @@ function registerGrapplingHookRecipes(event)
     }, 'tfg.grapplemod.upgrades.doublehook').id('tfg:grapplemod/upgrades/doublehook')
 
     //Remove Double Hook
-    shapelessUpgradeRecipe(['gtceu:black_steel_pickaxe_head', '#forge:tools/hammers'], (customization, orig, result) =>
-    {
-        if(!customization.doublehook)
-        {
+    shapelessUpgradeRecipe(['gtceu:black_steel_pickaxe_head', '#forge:tools/hammers'], (customization, orig, result) => {
+        if (!customization.doublehook) {
             return null;
         }
 
@@ -660,10 +587,8 @@ function registerGrapplingHookRecipes(event)
     ],{
         A: '#forge:tools/wrenches',
         B: 'grapplemod:grapplinghook'
-    }, (customization, orig, result) =>
-    {
-        if(customization.verticalthrowangle >= ADDITIVE_UPGRADES_MINMAX.verticalThrowAngle.maxValue)
-        {
+    }, (customization, orig, result) => {
+        if (customization.verticalthrowangle >= ADDITIVE_UPGRADES_MINMAX.verticalThrowAngle.maxValue) {
             return null;
         }
 
@@ -678,10 +603,8 @@ function registerGrapplingHookRecipes(event)
     ],{
         A: 'grapplemod:grapplinghook',
         B: '#forge:tools/wrenches',
-    }, (customization, orig, result) =>
-    {
-        if(customization.verticalthrowangle <= ADDITIVE_UPGRADES_MINMAX.verticalThrowAngle.minValue)
-        {
+    }, (customization, orig, result) => {
+        if (customization.verticalthrowangle <= ADDITIVE_UPGRADES_MINMAX.verticalThrowAngle.minValue) {
             return null;
         }
 
@@ -696,15 +619,12 @@ function registerGrapplingHookRecipes(event)
     ],{
         A: 'grapplemod:grapplinghook',
         B: '#forge:tools/screwdrivers'
-    }, (customization, orig, result) =>
-    {
-        if(!customization.doublehook)
-        {
+    }, (customization, orig, result) => {
+        if (!customization.doublehook) {
             return null;
         }
 
-        if(customization.angle >= ADDITIVE_UPGRADES_MINMAX.angle.maxValue)
-        {
+        if (customization.angle >= ADDITIVE_UPGRADES_MINMAX.angle.maxValue) {
             return null;
         }
 
@@ -718,15 +638,12 @@ function registerGrapplingHookRecipes(event)
     ],{
         A: '#forge:tools/screwdrivers',
         B: 'grapplemod:grapplinghook',
-    }, (customization, orig, result) =>
-    {
-        if(!customization.doublehook)
-        {
+    }, (customization, orig, result) => {
+        if (!customization.doublehook) {
             return null;
         }
 
-        if(customization.angle <= ADDITIVE_UPGRADES_MINMAX.angle.minValue)
-        {
+        if (customization.angle <= ADDITIVE_UPGRADES_MINMAX.angle.minValue) {
             return null;
         }
 

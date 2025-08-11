@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 /**
  * 
@@ -13,8 +14,7 @@ function registerImmersiveAircraftRecipes(event) {
 	 * @param {string} id 
 	 * @param {{input: string, duration: number, outputsMacerator: Internal.ItemStack[], outputsArcFurnace: Internal.ItemStack[]}} args 
 	 */
-	let generateRecyclingRecipe = (id, args) =>
-	{
+	let generateRecyclingRecipe = (id, args) => {
 		event.recipes.gtceu.macerator(id)
 			.itemInputs(args.input)
 			// macerator only has 6 output slots
@@ -38,17 +38,14 @@ function registerImmersiveAircraftRecipes(event) {
 	 * @param {{tagPrefixMacerator: TagPrefix, tagPrefixArcFurnace: TagPrefix, count: number}[]} materialToResults 
 	 * @returns {input: string, duration: number, outputsMacerator: Internal.ItemStack[], outputsArcFurnace: Internal.ItemStack[]}
 	 */
-	let createRecyclingRecipeArgs = (inputItem, outputMaterialsArray, materialToResults) =>
-	{
+	let createRecyclingRecipeArgs = (inputItem, outputMaterialsArray, materialToResults) => {
 
 		let outputsMacerator = []
 		let outputsArcFurnace = []
 		let duration = 0;
 
-		for(let i = 0; i < outputMaterialsArray.length; i++)
-		{
-			if(i > 9)
-			{
+		for (let i = 0; i < outputMaterialsArray.length; i++) {
+			if (i > 9) {
 				break;
 			}
 
@@ -84,8 +81,7 @@ function registerImmersiveAircraftRecipes(event) {
 	 * @param {number} count 
 	 * @returns {tagPrefixMacerator: TagPrefix, tagPrefixArcFurnace: TagPrefix, count: number}
 	 */
-	let createMaterialsToResults = (tagPrefixMacerator, tagPrefixArcFurnace, count) =>
-	{
+	let createMaterialsToResults = (tagPrefixMacerator, tagPrefixArcFurnace, count) => {
 		let result = 
 		{
 			tagPrefixMacerator: tagPrefixMacerator,
@@ -692,7 +688,9 @@ function registerImmersiveAircraftRecipes(event) {
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 3),
 		])
 	);
-//#region Aircrafts
+	//#endregion
+
+	//#region Aircrafts
 
 	event.shaped('immersive_aircraft:quadrocopter',[
 		'ABA',
@@ -826,6 +824,24 @@ function registerImmersiveAircraftRecipes(event) {
 		G: '#create:seats',
 		H: 'tfc:metal/ingot/red_steel'
 	}).id('tfg:man_of_many_planes/mechanical_crafter/scarlet_biplane')
+
+	event.recipes.create.mechanical_crafting('immersive_aircraft:bamboo_hopper',[
+		'  A   A  ',
+		'BBCBBBCBB',
+		'  DEFED  ',
+		'  DGGGD  ',
+		'  D   D  ',
+		' BBBGBBB ',
+		'  B   B  '
+	],{
+		A: 'immersive_aircraft:enhanced_propeller',
+		B: 'immersive_aircraft:hull',
+		C: 'immersive_aircraft:steel_boiler',
+		D: 'gtceu:long_aluminium_rod',
+		E: '#create:seats',
+		F: 'immersive_aircraft:biplane',
+		G: 'gtceu:double_aluminium_plate'
+	}).id('tfg:immersive_aircraft/mechanical_crafter/bamboo_hopper')
 
 //#endregion
 }

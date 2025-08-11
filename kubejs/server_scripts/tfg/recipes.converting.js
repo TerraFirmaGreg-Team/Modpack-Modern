@@ -1,5 +1,9 @@
 // priority: 0
+"use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function registerTFGConvertingRecipes(event) {
 
 	event.shapeless("afc:tree_tap", "treetap:tap")

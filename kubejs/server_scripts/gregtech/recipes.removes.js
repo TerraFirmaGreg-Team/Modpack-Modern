@@ -1,5 +1,9 @@
 // priority: 0
+"use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function removeGTCEURecipes(event) {
 
 	event.replaceInput({ input: 'gtceu:wood_drum' }, 'gtceu:wood_drum', 'minecraft:glass')
@@ -599,6 +603,8 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/gear_diamond' })
 	event.remove({ id: 'gtceu:shaped/buzzsaw_blade_diamond' })
 	event.remove({ id: 'gtceu:shaped/purpur_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/bamboo_button' })
+	event.remove({ id: 'gtceu:shaped/treated_button' })
 
 	event.remove({ id: 'gtceu:shapeless/glass_full_dust_flint' })
 
@@ -622,6 +628,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:assembler/map' })
 	event.remove({ id: 'gtceu:assembler/spyglass' })
 	event.remove({ id: 'gtceu:assembler/assemble_purpur_into_stair' })
+	event.remove({ id: 'gtceu:assembler/stonecutter' })
 
 	event.remove({ id: 'gtceu:chemical_reactor/ghast_tear_separation' })
 	
@@ -647,6 +654,7 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_treated_wood_chest_boat')
 
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__ender_eye' })
 
 	event.remove({ id: 'gtceu:smelting/sticky_resin_from_slime' })
 
@@ -661,19 +669,95 @@ function removeGTCEURecipes(event) {
 
 	event.remove({ id: 'gtceu:compressor/compress_certus_quartz_to_raw_ore_block' })
 	event.remove({ id: 'gtceu:compressor/glowstone' })
+	event.remove({ id: 'gtceu:compressor/plant_ball_from_red_mushroom' })
+	event.remove({ id: 'gtceu:compressor/plant_ball_from_brown_mushroom' })
 
 	event.remove({ id: 'gtceu:forming_press/form_purpur_slab_into_pillar' })
 
 	event.remove({ id: 'gtceu:rock_breaker/red_granite' })
 
+	event.remove({ id: 'gtceu:lathe/stone_rod_from_cobblestone' })
+
+	// who the hell is grinding metal ingots with their bare hands?
+	event.remove({ id: 'gtceu:shaped/mortar_grind_antimony' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_copper' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_gold' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_iron' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_lead' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_nickel' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_silver' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_tin' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_zinc' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_annealed_copper' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_brass' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_bronze' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_electrum' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_invar' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_steel' })
+	event.remove({ id: 'gtceu:shaped/mortar_grind_wrought_iron' })
+
+	// Replace by the Heat Exchanger recipe for Mars
+	event.remove({ id: 'gtceu:fluid_heater/formamide' })
+
+	// Remove lava bucket from boilers
+	event.remove({ id: 'gtceu:steam_boiler/minecraft_lava_bucket' })
+	event.remove({ id: 'gtceu:large_boiler/minecraft_lava_bucket' })
+	
+	// Snow Stuffs
+
+	event.remove({ id: 'gtceu:fluid_solidifier/snow_block' })
+	event.remove({ id: 'gtceu:fluid_solidifier/snow_block_distilled' })
+
+	removeCutterRecipe(event, 'snow_layer')
+	removeCutterRecipe(event, 'snow_layer_distilled_water')
+	removeCutterRecipe(event, 'snow_layer_water')
+
 	// Remove vanilla Eye of Ender
 
 	event.remove({ id: 'minecraft:ender_eye' })
+
+	// Remove GTceu Sticky Resin Centrifuge recipe
+
+	event.remove({ id: 'gtceu:centrifuge/sticky_resin_separation' })
 
 	// Remove old treated plank and wood plank recipe
 
 	event.remove({ id: 'gtceu:compressor/compress_plate_dust_wood' })
 	event.remove({ id: 'gtceu:compressor/compress_plate_dust_treated_wood'})
+
+	// Remove Default Pressure Plate Recipes
+	const MC_PRESSURE_PLATES = [
+		'bamboo',
+		'polished_blackstone',
+		'light_weighted',
+		'heavy_weighted',
+		'treated'
+	]
+	MC_PRESSURE_PLATES.forEach(material => {	
+		event.remove({ id: `gtceu:shaped/${material}_pressure_plate` })
+		event.remove({ id: `gtceu:assembler/${material}_pressure_plate` })	
+	})
+	
+	event.remove({ output: 'gtceu:damascus_steel_crowbar'})
+
+	//removes metal armor
+	const armor = [
+		'gtceu:bronze_helmet',
+		'gtceu:bronze_chestplate',
+		'gtceu:bronze_leggings',
+		'gtceu:bronze_boots',
+		'gtceu:steel_helmet',
+		'gtceu:steel_chestplate',
+		'gtceu:steel_leggings',
+		'gtceu:steel_boots',
+		'gtceu:titanium_helmet',
+		'gtceu:titanium_chestplate',
+		'gtceu:titanium_leggings',
+		'gtceu:titanium_boots'
+	];
+	armor.forEach(armor => {
+		event.remove({ output: armor})
+	});
 }
 
 function removeMaceratorRecipe(event, id) {

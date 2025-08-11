@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * 
  * @param {TagEvent.Item} event 
@@ -41,14 +43,11 @@ const registerAFCItemTags = (event) => {
 		event.add('minecraft:saplings', `afc:wood/sapling/${x.sapling}`)
 	})
 
+	// Latex Tag
+
 	event.add("tfg:latex_logs", "#tfc:kapok_logs")
     event.add("tfg:latex_logs", "#afc:hevea_logs")
     event.add("tfg:latex_logs", "#afc:rubber_fig_logs")
-
-	event.add("tfg:rosin_logs", "#tfc:aspen_logs")
-	event.add("tfg:rosin_logs", "#tfc:spruce_logs")
-	event.add("tfg:rosin_logs", "#tfc:white_cedar_logs")
-	event.add("tfg:rosin_logs", "#tfc:douglas_fir_logs")
 
     event.add("tfg:rubber_saplings", "tfc:wood/sapling/kapok")
 	event.add("tfg:rubber_saplings", "afc:wood/sapling/red_silk_cotton")
@@ -60,13 +59,48 @@ const registerAFCItemTags = (event) => {
     event.add("tfg:rubber_leaves", "afc:wood/leaves/hevea")
     event.add("tfg:rubber_leaves", "afc:wood/leaves/rubber_fig")
 
+	// Rosin Tag
+
+	event.add("tfg:rosin_logs", "#tfc:aspen_logs")
+	event.add("tfg:rosin_logs", "#tfc:spruce_logs")
+	event.add("tfg:rosin_logs", "#tfc:white_cedar_logs")
+	event.add("tfg:rosin_logs", "#tfc:douglas_fir_logs")
+
+	event.add("tfg:rosin_saplings", 'tfc:wood/leaves/aspen')
+	event.add("tfg:rosin_saplings", 'afc:wood/leaves/coast_spruce')
+	event.add("tfg:rosin_saplings", 'tfc:wood/leaves/spruce')
+	event.add("tfg:rosin_saplings", 'afc:wood/leaves/black_spruce')
+	event.add("tfg:rosin_saplings", 'afc:wood/leaves/sitka_spruce')
+	event.add("tfg:rosin_saplings", 'tfc:wood/leaves/douglas_fir')
+	event.add("tfg:rosin_saplings", 'tfc:wood/leaves/white_cedar')
+
+	event.add("tfg:rosin_leaves", 'tfc:wood/sapling/aspen')
+	event.add("tfg:rosin_leaves", 'afc:wood/sapling/coast_spruce')
+	event.add("tfg:rosin_leaves", 'tfc:wood/sapling/spruce')
+	event.add("tfg:rosin_leaves", 'afc:wood/sapling/black_spruce')
+	event.add("tfg:rosin_leaves", 'afc:wood/sapling/sitka_spruce')
+	event.add("tfg:rosin_leaves", 'tfc:wood/sapling/douglas_fir')
+	event.add("tfg:rosin_leaves", 'tfc:wood/sapling/white_cedar')
+
+	// Maple Syrup Tag
+
+	event.add("tfg:maple_saplings", 'tfc:wood/sapling/maple')
+	event.add("tfg:maple_saplings", 'afc:wood/sapling/bigleaf_maple')
+	event.add("tfg:maple_saplings", 'afc:wood/sapling/weeping_maple')
+
+	event.add("tfg:maple_leaves", 'tfc:wood/leaves/maple')
+	event.add("tfg:maple_leaves", 'afc:wood/leaves/bigleaf_maple')
+	event.add("tfg:maple_leaves", 'tfc:wood/leaves/weeping_maple')
+
+	// Misc
+
 	event.add("tfg:rubber_plants", "tfc:plant/goldenrod")
 	event.add("tfg:rubber_plants", "tfc:plant/dandelion")
 }
 
 
 /**
- * 
+ * @
  * @param {TagEvent.Block} event 
  */
 const registerAFCBlockTags = (event) => {

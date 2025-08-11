@@ -1,0 +1,7 @@
+{
+    "parent": "betterend:block/crop_wild",
+    "textures": {
+        "crop": "betterend:block/blossom_berry_dead",
+        "particle": "betterend:block/blossom_berry_dead"
+    }
+}

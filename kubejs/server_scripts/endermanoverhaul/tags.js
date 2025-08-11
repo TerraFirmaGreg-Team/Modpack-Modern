@@ -1,3 +1,5 @@
+"use strict";
+
 const registerEndermanOverhaulItemTags = (event) => {
 
 	const DISABLED_ITEMS = [
@@ -7,11 +9,9 @@ const registerEndermanOverhaulItemTags = (event) => {
 		'endermanoverhaul:corrupted_shield',
 
 		'endermanoverhaul:badlands_hood',
-		'endermanoverhaul:savannah_hood',
+		'endermanoverhaul:savanna_hood',
 		'endermanoverhaul:snowy_hood',
 
-		'endermanoverhaul:soul_pearl',
-		'endermanoverhaul:ancient_pearl',
 		'endermanoverhaul:bubble_pearl',
 		'endermanoverhaul:icy_pearl',
 		'endermanoverhaul:crimson_pearl',

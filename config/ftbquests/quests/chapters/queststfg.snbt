@@ -32,11 +32,6 @@
 			description: ["{quests.tfg.create_team.desc}"]
 			icon: "minecraft:cake"
 			id: "6D43C29AC049341D"
-			rewards: [{
-				id: "703B1DE66D788924"
-				item: "gtceu:copper_credit"
-				type: "item"
-			}]
 			subtitle: "{quests.tfg.create_team.subtitle}"
 			tasks: [{
 				id: "124CFC2DE7647588"
@@ -44,13 +39,22 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg.create_team.title}"
-			x: -3.5d
-			y: 0.0d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["427814F6E9386772"]
 			description: ["{quests.tfg.capture_territory.desc}"]
-			icon: "createaddition:chocolate_cake"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 99995114000L
+						traits: [ ]
+					}
+				}
+				id: "createaddition:chocolate_cake"
+			}
 			id: "0B42D4AE2AC67F93"
 			subtitle: "{quests.tfg.capture_territory.subtitle}"
 			tasks: [{
@@ -63,19 +67,23 @@
 			y: 2.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["427814F6E9386772"]
 			description: ["{quests.tfg.field_guide.desc}"]
+			disable_toast: true
 			icon: {
 				Count: 1
-				id: "patchouli:guide_book"
-				tag: {
-					"patchouli:book": "tfc:field_guide"
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 99995114000L
+						traits: [ ]
+					}
 				}
+				id: "createaddition:honey_cake"
 			}
 			id: "3D7B0F3134C30364"
 			rewards: [
 				{
+					auto: "no_toast"
 					id: "013F1894A0BED173"
 					item: {
 						Count: 1
@@ -87,20 +95,56 @@
 					type: "item"
 				}
 				{
+					auto: "no_toast"
 					id: "71AF6F847DC58F4D"
 					item: "ftbquests:book"
 					type: "item"
 				}
 			]
 			subtitle: "{quests.tfg.field_guide.subtitle}"
-			tasks: [{
-				id: "28491210C53D9AB2"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
-			}]
 			title: "{quests.tfg.field_guide.title}"
 			x: 0.0d
 			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3D7B0F3134C30364"]
+			description: ["{quests.tfg.books_again.desc}"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "tfc:field_guide"
+				}
+			}
+			id: "590CE4F4FA385701"
+			rewards: [
+				{
+					id: "58D1E7EFD006D7F7"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "tfc:field_guide"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1470E8AFDC8D994E"
+					item: "ftbquests:book"
+					type: "item"
+				}
+			]
+			shape: "heart"
+			tasks: [{
+				id: "48D307BC0A3879D4"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg.books_again.title}"
+			x: 0.0d
+			y: 4.5d
 		}
 	]
 	subtitle: ["{quests.tfg.subtitle}"]

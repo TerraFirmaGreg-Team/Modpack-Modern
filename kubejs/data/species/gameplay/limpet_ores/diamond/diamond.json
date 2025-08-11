@@ -1,0 +1,9 @@
+{
+	"id": "species:diamond",
+	"item": "gtceu:poor_raw_diamond",
+	"block": "gtceu:moon_stone_diamond_ore",
+	"maxCount": 6,
+	"spawnWeight": 20,
+	"maxSpawnHeight": 130,
+	"minSpawnHeight": 4
+}

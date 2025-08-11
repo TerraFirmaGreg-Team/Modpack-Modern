@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:cache_2d",
+	"argument": {
+		"type": "minecraft:mul",
+		"argument1": -1,
+		"argument2": {
+			"type": "minecraft:abs",
+			"argument": {
+				"type": "minecraft:noise",
+				"noise": "tfg:mars_dunes_size",
+				"xz_scale": 1,
+				"y_scale": 0
+			}
+		}
+	}
+}

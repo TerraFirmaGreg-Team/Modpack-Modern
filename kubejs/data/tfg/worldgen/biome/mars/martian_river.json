@@ -1,0 +1,121 @@
+{
+	"carvers": {
+		"air": [
+			"tfg:mars_cave",
+			"tfg:mars_canyon"
+		]
+	},
+	"downfall": 0.0,
+	"effects": {
+		"fog_color": 15117444,
+		"mood_sound": {
+			"block_search_extent": 8,
+			"offset": 2.0,
+			"sound": "minecraft:ambient.cave",
+			"tick_delay": 6000
+		},
+		"particle": {
+			"options": {
+				"type": "minecraft:crimson_spore"
+			},
+			"probability": 0.014
+		},
+		"sky_color": 15117444,
+		"water_color": 4159204,
+		"water_fog_color": 1069623
+	},
+	"features": [
+		[
+			"tfc:erosion"
+		],
+		[],
+		[
+			"tfg:earth/geode/amethyst",
+			"tfg:earth/geode/barite",
+			"tfg:earth/geode/calcite",
+			"tfg:earth/geode/gypsum",
+			"tfg:earth/geode/opal",
+			"tfg:earth/geode/pyrite",
+			"tfg:earth/geode/quartzite"
+		],
+		[
+
+		],
+		[],
+		[],
+		"#tfg:mars_veins",
+		[],
+		[
+			"tfc:raw_boulder_small_patch",
+			"tfc:cobble_boulder_small_patch"
+		],
+		[
+
+		],
+		"#tfg:mars_top_layer_modification"
+	],
+	"has_precipitation": false,
+	"spawn_costs": {
+		"endermanoverhaul:crimson_forest_enderman": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"endermanoverhaul:warped_forest_enderman": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"endermanoverhaul:badlands_enderman": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		}
+	},
+	"spawners": {
+		"ambient": [],
+		"axolotls": [],
+		"creature": [
+			{
+				"type": "minecraft:sniffer",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 75
+			},
+			{
+				"type": "species:wraptor",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 75
+			},
+			{
+				"type": "species:goober",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
+		"misc": [],
+		"monster": [
+			{
+				"type": "endermanoverhaul:crimson_forest_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "endermanoverhaul:warped_forest_enderman",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "endermanoverhaul:badlands_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
+		"underground_water_creature": [],
+		"water_ambient": [],
+		"water_creature": []
+	},
+	"temperature": 0.8
+}

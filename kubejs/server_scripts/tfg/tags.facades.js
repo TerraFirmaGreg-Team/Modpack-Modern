@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function registerFacadeWhitelistTags(event) {
     
@@ -20,12 +21,21 @@ function registerFacadeWhitelistTags(event) {
 		'#forge:storage_blocks',
 		'#forge:glass',
 		'#minecraft:terracotta',
+		'#forge:concretes',
 		'#create:casing',
 		'#dormum_ornamentum:brick_items',
 		'#simplylight:any_lamp_on',
 		'#simplylight:any_lamp_off',
 		'#minecraft:planks',
 		'#minecraft:logs',
+
+		'#tfg:ad_astra_iron_blocks',
+		'#tfg:ad_astra_steel_blocks',
+		'#tfg:ad_astra_desh_blocks',
+		'#tfg:ad_astra_ostrum_blocks',
+		'#tfg:ad_astra_calorite_blocks',
+		'#tfg:ad_astra_etrium_blocks',
+	    
 		//rnr shingles
 		'rnr:ceramic_roof',
 		'rnr:terracotta_roof',
@@ -189,80 +199,77 @@ function registerFacadeWhitelistTags(event) {
 	
 	//gtceu stonelike stuff
 	gtceu_stonelike_fm.forEach(facade_material => {
-		if(facade_material != 'marble') 
-		{
-			event.add('tfg:whitelisted/facades', 'gtceu:' + facade_material + '_cobblestone')
-			event.add('tfg:whitelisted/facades', 'gtceu:mossy_' + facade_material + '_cobblestone')
-			event.add('tfg:whitelisted/facades', 'gtceu:' + facade_material + '_bricks')
-			event.add('tfg:whitelisted/facades', 'gtceu:cracked_' + facade_material + '_bricks')
-			event.add('tfg:whitelisted/facades', 'gtceu:mossy_' + facade_material + '_bricks')
+		if (facade_material !== 'marble') {
+			event.add('tfg:whitelisted/facades', `gtceu:${  facade_material  }_cobblestone`)
+			event.add('tfg:whitelisted/facades', `gtceu:mossy_${  facade_material  }_cobblestone`)
+			event.add('tfg:whitelisted/facades', `gtceu:${  facade_material  }_bricks`)
+			event.add('tfg:whitelisted/facades', `gtceu:cracked_${  facade_material  }_bricks`)
+			event.add('tfg:whitelisted/facades', `gtceu:mossy_${  facade_material  }_bricks`)
 		}
 		
-		event.add('tfg:whitelisted/facades', 'gtceu:polished_' + facade_material)
-		event.add('tfg:whitelisted/facades', 'gtceu:chiseled' + facade_material)
+		event.add('tfg:whitelisted/facades', `gtceu:polished_${  facade_material}`)
+		event.add('tfg:whitelisted/facades', `gtceu:chiseled${  facade_material}`)
 		
-		event.add('tfg:whitelisted/facades', 'gtceu:small_' + facade_material + '_bricks')
-		event.add('tfg:whitelisted/facades', 'gtceu:square_' + facade_material + '_bricks')
+		event.add('tfg:whitelisted/facades', `gtceu:small_${  facade_material  }_bricks`)
+		event.add('tfg:whitelisted/facades', `gtceu:square_${  facade_material  }_bricks`)
 		
-		event.add('tfg:whitelisted/facades', 'gtceu:' + facade_material + '_tile')
-		event.add('tfg:whitelisted/facades', 'gtceu:' + facade_material + '_small_tile')
-		event.add('tfg:whitelisted/facades', 'gtceu:' + facade_material + '_windmill_a')
-		event.add('tfg:whitelisted/facades', 'gtceu:' + facade_material + '_windmill_b')
+		event.add('tfg:whitelisted/facades', `gtceu:${  facade_material  }_tile`)
+		event.add('tfg:whitelisted/facades', `gtceu:${  facade_material  }_small_tile`)
+		event.add('tfg:whitelisted/facades', `gtceu:${  facade_material  }_windmill_a`)
+		event.add('tfg:whitelisted/facades', `gtceu:${  facade_material  }_windmill_b`)
 	});
 	
 	//gtceu misc colored blocks
 	global.MINECRAFT_DYE_NAMES.forEach(facade_material => {
-		event.add('tfg:whitelisted/facades', 'gtceu:' + facade_material + '_metal_sheet')
-		event.add('tfg:whitelisted/facades', 'gtceu:' + facade_material + '_large_metal_sheet')
-		event.add('tfg:whitelisted/facades', 'gtceu:' + facade_material + '_studs')
+		event.add('tfg:whitelisted/facades', `gtceu:${  facade_material  }_metal_sheet`)
+		event.add('tfg:whitelisted/facades', `gtceu:${  facade_material  }_large_metal_sheet`)
+		event.add('tfg:whitelisted/facades', `gtceu:${  facade_material  }_studs`)
 	});
 	
 	//create copper
 	create_copper_fm.forEach(facade_material => {
-		event.add('tfg:whitelisted/facades', 'create:' + facade_material + '_shingles')
-		event.add('tfg:whitelisted/facades', 'create:' + facade_material + '_tiles')
+		event.add('tfg:whitelisted/facades', `create:${  facade_material  }_shingles`)
+		event.add('tfg:whitelisted/facades', `create:${  facade_material  }_tiles`)
 	});
 	
 	//create rocks
 	create_rock_types_fm.forEach(facade_material => {
 		
-		if(facade_material == 'limestone')
-		{
-			event.add('tfg:whitelisted/facades', 'create:' + facade_material)
+		if (facade_material === 'limestone') {
+			event.add('tfg:whitelisted/facades', `create:${  facade_material}`)
 		}
 		
-		event.add('tfg:whitelisted/facades', 'create:cut_' + facade_material)
-		event.add('tfg:whitelisted/facades', 'create:polished_cut_' + facade_material)
-		event.add('tfg:whitelisted/facades', 'create:cut_' + facade_material + '_bricks')
-		event.add('tfg:whitelisted/facades', 'create:small_' + facade_material + '_bricks')
-		event.add('tfg:whitelisted/facades', 'create:layered_' + facade_material)
-		event.add('tfg:whitelisted/facades', 'create:' + facade_material + '_pillar')
+		event.add('tfg:whitelisted/facades', `create:cut_${  facade_material}`)
+		event.add('tfg:whitelisted/facades', `create:polished_cut_${  facade_material}`)
+		event.add('tfg:whitelisted/facades', `create:cut_${  facade_material  }_bricks`)
+		event.add('tfg:whitelisted/facades', `create:small_${  facade_material  }_bricks`)
+		event.add('tfg:whitelisted/facades', `create:layered_${  facade_material}`)
+		event.add('tfg:whitelisted/facades', `create:${  facade_material  }_pillar`)
 	});
 	
 	//rnr shingles
 	global.TFC_WOOD_TYPES.concat(global.AFC_WOOD_TYPES).forEach(facade_material => {
-		event.add('tfg:whitelisted/facades', 'rnr:wood/shingles/' + facade_material)
+		event.add('tfg:whitelisted/facades', `rnr:wood/shingles/${  facade_material}`)
 	});
 	
 	//createdeco bricks
 	createdeco_bricks_fm.forEach(facade_material => {
-		if (facade_material != 'red_bricks') 
-		{
-			event.add('tfg:whitelisted/facades', 'createdeco:' + facade_material)
+		if (facade_material !== 'red_bricks') {
+			event.add('tfg:whitelisted/facades', `createdeco:${  facade_material}`)
 		}
-		event.add('tfg:whitelisted/facades', 'createdeco:short_' + facade_material)
-		event.add('tfg:whitelisted/facades', 'createdeco:long_' + facade_material)
-		event.add('tfg:whitelisted/facades', 'createdeco:tiled_' + facade_material)
-		event.add('tfg:whitelisted/facades', 'createdeco:corner_' + facade_material)
-		event.add('tfg:whitelisted/facades', 'createdeco:cracked_' + facade_material)
-		event.add('tfg:whitelisted/facades', 'createdeco:mossy_' + facade_material)
+		event.add('tfg:whitelisted/facades', `createdeco:short_${  facade_material}`)
+		event.add('tfg:whitelisted/facades', `createdeco:long_${  facade_material}`)
+		event.add('tfg:whitelisted/facades', `createdeco:tiled_${  facade_material}`)
+		event.add('tfg:whitelisted/facades', `createdeco:corner_${  facade_material}`)
+		event.add('tfg:whitelisted/facades', `createdeco:cracked_${  facade_material}`)
+		event.add('tfg:whitelisted/facades', `createdeco:mossy_${  facade_material}`)
 	});
 	
 	//everycomp windows
 	global.TFC_WOOD_TYPES.forEach(facade_material => {
-		event.add('tfg:whitelisted/facades', 'everycomp:c/tfc/' + facade_material + '_window')
+		event.add('tfg:whitelisted/facades', `everycomp:c/tfc/${  facade_material  }_window`)
 	});
 	global.AFC_WOOD_TYPES.forEach(facade_material => {
-		event.add('tfg:whitelisted/facades', 'everycomp:c/afc/' + facade_material + '_window')
+		event.add('tfg:whitelisted/facades', `everycomp:c/afc/${  facade_material  }_window`)
 	});
 }

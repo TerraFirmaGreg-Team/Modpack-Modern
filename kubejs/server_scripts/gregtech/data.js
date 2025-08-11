@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerTFCDataForGTCEU = (event) => {
 	registerGTCEUHeats(event)
@@ -28,7 +29,7 @@ const registerGTCEUHeats = (event) => {
 	forEachMaterial(material => {
 		let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
 
-		if (tfcProperty != null) {
+		if (tfcProperty !== null) {
 			makeItemHeatByTagPrefix(TagPrefix.dustTiny, material, tfcProperty, 0.357)
 			makeItemHeatByTagPrefix(TagPrefix.dustSmall, material, tfcProperty, 0.714)
 			makeItemHeatByTagPrefix(TagPrefix.dust, material, tfcProperty, 1.429)
@@ -38,6 +39,7 @@ const registerGTCEUHeats = (event) => {
 			makeItemHeatByTagPrefix(TagPrefix.nugget, material, tfcProperty, 0.124)
 			makeItemHeatByTagPrefix(TagPrefix.block, material, tfcProperty, 20)
 			makeItemHeatByTagPrefix(TagPrefix.rodLong, material, tfcProperty, 1.429)
+			makeItemHeatByTagPrefix(TagPrefix.gearSmall, material, tfcProperty, 1.429)
 
 			makeItemHeatByTagPrefix(TagPrefix.ingot, material, tfcProperty, 1.429)
 			makeItemHeatByTagPrefix(TFGTagPrefix.ingotDouble, material, tfcProperty, 2.875)
@@ -112,6 +114,12 @@ const registerGTCEUMetals = (event) => {
 	event.metal('gtceu:redstone', 460, 0.01729, null, null, null, 1, 'tfg:redstone')
 	event.metal('gtceu:red_alloy', 740, 0.01529, '#forge:ingots/red_alloy', '#forge:double_ingots/red_alloy', '#forge:plates/red_alloy', 2, 'tfg:red_alloy')
 	event.metal('gtceu:tin_alloy', 1250, 0.00829, '#forge:ingots/tin_alloy', '#forge:double_ingots/tin_alloy', '#forge:plates/tin_alloy', 3, 'tfg:tin_alloy')
+	event.metal('gtceu:lead', 330, 0.01729, '#forge:ingots/lead', '#forge:double_ingots/lead', '#forge:plates/lead', 2, 'tfg:lead')
+	event.metal('gtceu:invar', 1494, 0.00741, '#forge:ingots/invar', '#forge:double_ingots/invar', '#forge:plates/invar', 3, 'tfg:invar')
+	event.metal('gtceu:potin', 807, 0.0124, '#forge:ingots/potin', '#forge:double_ingots/potin', '#forge:plates/potin', 2, 'tfg:potin')
+	event.metal('gtceu:cobalt', 1495, 0.00857, '#forge:ingots/cobalt', '#forge:double_ingots/cobalt', '#forge:plates/cobalt', 3, 'tfg:cobalt')
+	event.metal('gtceu:cobalt_brass', 1060, 0.00857, '#forge:ingots/cobalt_brass', '#forge:double_ingots/cobalt_brass', '#forge:plates/cobalt_brass', 3, 'tfg:cobalt_brass')
+	event.metal('gtceu:aluminium_silicate', 1540, 0.00857, '#forge:ingots/aluminium_silicate', null, null, 1, 'tfg:aluminium_silicate')
 }
 
 

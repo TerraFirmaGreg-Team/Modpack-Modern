@@ -1,0 +1,69 @@
+{
+	"carvers": {
+		"air": []
+	},
+	"downfall": 0.0,
+	"effects": {
+		"fog_color": 15117444,
+		"mood_sound": {
+			"block_search_extent": 8,
+			"offset": 2.0,
+			"sound": "minecraft:ambient.cave",
+			"tick_delay": 6000
+		},
+		"particle": {
+			"options": {
+				"type": "minecraft:crimson_spore"
+			},
+			"probability": 0.014
+		},
+		"sky_color": 15117444,
+		"water_color": 4159204,
+		"water_fog_color": 1069623
+	},
+	"features": [
+		[
+			"tfc:erosion"
+		],
+		[],
+		[
+			"tfg:earth/geode/amethyst",
+			"tfg:earth/geode/barite",
+			"tfg:earth/geode/calcite",
+			"tfg:earth/geode/gypsum",
+			"tfg:earth/geode/opal",
+			"tfg:earth/geode/pyrite",
+			"tfg:earth/geode/quartzite"
+		],
+		[],
+		[],
+		[],
+		"#tfg:mars_veins",
+		[],
+		[
+			"tfc:raw_boulder_small_patch",
+			"tfc:cobble_boulder_small_patch"
+		],
+		[
+
+		],
+		"#tfg:mars_top_layer_modification"
+	],
+	"has_precipitation": false,
+	"spawn_costs": {
+		
+	},
+	"spawners": {
+		"ambient": [],
+		"axolotls": [],
+		"creature": [],
+		"misc": [],
+		"monster": [
+		
+		],
+		"underground_water_creature": [],
+		"water_ambient": [],
+		"water_creature": []
+	},
+	"temperature": 0.8
+}

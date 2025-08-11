@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function registerTFCLunchBoxRecipes(event) {
 
@@ -24,7 +25,7 @@ function registerTFCLunchBoxRecipes(event) {
         event.recipes.gtceu.canner(`tfclunchbox:fill_${cell.name}_cell_with_liquid_ice`)
             .itemInputs(cell.id)
             .inputFluids(Fluid.of('gtceu:ice', cell.capacity))
-            .itemOutputs(Item.of(cell.id, '{Fluid:{Amount:' + cell.capacity + ',FluidName:"gtceu:ice"}}'))
+            .itemOutputs(Item.of(cell.id, `{Fluid:{Amount:${  cell.capacity  },FluidName:"gtceu:ice"}}`))
             .duration(Math.max(16, Math.floor(cell.capacity / 64)))
             .EUt(GTValues.VA[GTValues.LV]);
     });

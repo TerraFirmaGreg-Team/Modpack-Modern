@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "": [
+			{ "model": "betterend:block/flamaea_1" },
+			{ "model": "betterend:block/flamaea_2" },
+			{ "model": "betterend:block/flamaea_3" },
+			{ "model": "betterend:block/flamaea_4" },
+			{ "model": "betterend:block/flamaea_5" }
+		]
+    }
+}

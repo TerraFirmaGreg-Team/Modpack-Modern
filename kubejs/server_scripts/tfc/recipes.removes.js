@@ -1,4 +1,5 @@
 ﻿// priority: 0
+"use strict";
 
 function removeTFCRecipes(event) {
 
@@ -128,6 +129,7 @@ function removeTFCRecipes(event) {
 
 	event.remove({ id: `tfc:crafting/windmill_blade` })
 	event.remove({ id: `tfc:barrel/dye/bleach_windmill_blades` })
+	event.remove({ id: 'tfc:barrel/fresh_to_salt_water' })
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		event.remove({ id: `tfc:barrel/dye/${dye}_windmill_blade` })
@@ -142,10 +144,19 @@ function removeTFCRecipes(event) {
 	event.remove({ id: `tfc:crafting/steel_pump` })
 	event.remove({ id: `tfc:crafting/crankshaft` })
 	event.remove({ id: 'tfc:crafting/sandpaper' })
+	event.remove({ id: 'tfc:crafting/vanilla/redstone/observer' })
 
 	event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_minecart' })
 	event.remove({ id: 'tfc:crafting/vanilla/redstone/minecart' })
+	event.remove({ id: 'tfc:crafting/cake' })
+	event.remove({ id: 'tfc:crafting/pumpkin_chunks' })
 
 	event.remove({ id: /^tfc:crafting\/dough\/.*/ })
 
+	event.remove({ id: 'tfc:crafting/gunpowder_graphite' })
+	event.remove({ id: 'tfc:crafting/gunpowder' })
+	
+	event.remove({ output: 'tfc:rustic_windmill_blade'})
+	event.remove({ output: 'tfc:lattice_windmill_blade'})
+	event.remove({ id: 'tfchotornot:heating/insulating_items'})
 }

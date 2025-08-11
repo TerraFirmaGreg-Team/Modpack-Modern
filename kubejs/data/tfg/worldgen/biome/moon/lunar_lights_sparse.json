@@ -88,12 +88,12 @@
 			},
 			{
 				"type": "ad_astra:corrupted_lunarian",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
-				"weight": 10
+				"weight": 40
 			},
 			{
-				"type": "minecraft:skeleton",
+				"type": "minecraft:stray",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 10
@@ -114,13 +114,31 @@
 				"type": "endermanoverhaul:windswept_hills_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
+				"weight": 10
 			},
 			{
 				"type": "endermanoverhaul:soulsand_valley_enderman",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 20
+			},
+			{
+				"type": "endermanoverhaul:end_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 2
+			},
+			{
+				"type": "endermanoverhaul:end_islands_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 2
+			},
+			{
+				"type": "endermanoverhaul:soulsand_valley_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 2
 			}
 		],
 		"underground_water_creature": [],

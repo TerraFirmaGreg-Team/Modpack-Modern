@@ -1,11 +1,8 @@
-// priority: 0
-
 const registerGTCEuRecipeTypes = (event) => {
 	event.create('nether_dome')
 		.category('nether_dome')
 		.setEUIO('in')
 		.setMaxIOSize(2, 1, 1, 1)
-		.setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.FIRE)
 
@@ -13,7 +10,6 @@ const registerGTCEuRecipeTypes = (event) => {
 		.category('end_dome')
 		.setEUIO('in')
 		.setMaxIOSize(2, 1, 1, 1)
-		.setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.FIRE)
 
@@ -21,7 +17,59 @@ const registerGTCEuRecipeTypes = (event) => {
 		.category('steam_bloomery')
 		.setEUIO('in')
 		.setMaxIOSize(2, 1, 0, 0)
-		.setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.FIRE)
+
+	event.create('large_solar_panel')
+		.category('generator')
+		.setEUIO('out')
+		.setMaxIOSize(2, 0, 0, 0)
+		.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+		.setSound(GTSoundEntries.COOLING)
+
+	event.create('large_solar_panel_tier2')
+		.category('generator')
+		.setEUIO('out')
+		.setMaxIOSize(2, 0, 2, 1)
+		.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+		.setSound(GTSoundEntries.COOLING)
+
+	event.create('large_solar_panel_tier3')
+		.category('generator')
+		.setEUIO('out')
+		.setMaxIOSize(2, 0, 2, 1)
+		.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+		.setSound(GTSoundEntries.COOLING)
+
+	event.create('nuclear_fuel_factory')
+		.category('nuclear_fuel_factory')
+		.setEUIO('in')
+		.setMaxIOSize(2, 1, 1, 0)
+		.setSlotOverlay(false, false, GuiTextures.ATOMIC_OVERLAY_1)
+		.setProgressBar(GuiTextures.ATOMIC_OVERLAY_1, FillDirection.DOWN_TO_UP)
+		.setSound(GTSoundEntries.MINER)
+
+	event.create('heat_exchanger')
+		.category('heat_exchanger')
+		.setEUIO('in')
+		.setMaxIOSize(0, 0, 4, 4)
+		.setSlotOverlay(false, false, GuiTextures.ATOMIC_OVERLAY_1)
+		.setProgressBar(GuiTextures.ATOMIC_OVERLAY_1, FillDirection.DOWN_TO_UP)
+		.setSound(GTSoundEntries.MINER)
+
+	event.create('fission_reactor')
+		.category('fission_reactor')
+		.setEUIO('in')
+		.setMaxIOSize(1, 0, 1, 2)
+		.setSlotOverlay(false, false, GuiTextures.ATOMIC_OVERLAY_1)
+		.setProgressBar(GuiTextures.ATOMIC_OVERLAY_1, FillDirection.DOWN_TO_UP)
+		.setSound(GTSoundEntries.MINER)
+
+	event.create('evaporation_tower')
+		.category('evaporation_tower')
+		.setEUIO('in')
+		.setMaxIOSize(0, 1, 1, 6)
+		.setProgressBar(GuiTextures.PROGRESS_BAR_DISTILLATION_TOWER, FillDirection.LEFT_TO_RIGHT)
+		.setSound(GTSoundEntries.BATH)
+
 }

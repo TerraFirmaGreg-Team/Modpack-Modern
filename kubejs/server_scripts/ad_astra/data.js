@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function registerTFCDataForAdAstra(event) {
 
@@ -16,5 +17,9 @@ function registerTFCDataForAdAstra(event) {
 		food.saturation(12)
 		food.dairy(5)
 		food.decayModifier(10)
+	})
+
+	global.AD_ASTRA_WOOD.forEach(wood => {
+		event.fuel(wood.logs, 800, 1500, null)
 	})
 }

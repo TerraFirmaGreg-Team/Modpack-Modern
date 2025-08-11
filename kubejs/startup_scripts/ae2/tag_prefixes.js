@@ -1,11 +1,13 @@
 // priority: 0
+"use strict";
 
 const registerAE2TagPrefixes = (event) => {
+	const $AE_BLOCKS = Java.loadClass('appeng.core.definitions.AEBlocks');
 	const $AE_ITEMS = Java.loadClass('appeng.core.definitions.AEItems');
 
 	const Fluix = GTCEuAPI.materialManager.getMaterial('tfg:fluix')
 
-	// Blocks have to be handled in java because ae2 is weird
+	TagPrefix.block.setIgnored(Fluix, $AE_BLOCKS.FLUIX_BLOCK);
 
 	TagPrefix.dust.setIgnored(Fluix, $AE_ITEMS.FLUIX_DUST);
 	TagPrefix.gem.setIgnored(Fluix, $AE_ITEMS.FLUIX_CRYSTAL);

@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerAdAstraFluidTags = (event) => {
 
@@ -10,6 +11,7 @@ const registerAdAstraFluidTags = (event) => {
 	// Using this to represent 'breathable air' instead of oxygen
 	event.removeAllTagsFrom('ad_astra:oxygen')
 
+	
 	event.removeAll('ad_astra:fuel')
 	event.removeAll('ad_astra:efficient_fuel')
 
@@ -44,6 +46,8 @@ const registerAdAstraItemTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
 	
+	
+	
 	event.add('forge:cobblestone', 'ad_astra:moon_cobblestone')
 	event.add('forge:cobblestone', 'ad_astra:mars_cobblestone')
 	event.add('forge:cobblestone', 'ad_astra:venus_cobblestone')
@@ -53,7 +57,26 @@ const registerAdAstraItemTags = (event) => {
 	// Insulation Tier 1
 	event.add('forge:insulation_t1', 'gtceu:borosilicate_glass_dust')
 	event.add('forge:insulation_t1', 'gtceu:vitrified_asbestos_dust')
+	
+	//Insulation Tier 2
+	event.add('forge:insulation_t2/sheet', 'tfg:aes_insulation_sheet')
+	event.add('forge:insulation_t2/roll', 'tfg:aes_insulation_roll')
+	
+	//Insulation Tier3
+	event.add('forge:insulation_t3/foam', 'tfg:aes_polyurethane')
+	event.add('forge:insulation_t3/sheet', 'tfg:mli_shielding')
+	event.add('forge:insulation_t3/cryo', 'tfg:silica_aerogel')
+	
+	event.add('forge:aerogels', 'tfg:silica_aerogel')
 
+	//Rocket Engines
+	event.add('ad_astra:rocket_engine', 'ad_astra:steel_engine')
+	event.add('ad_astra:rocket_engine', 'ad_astra:desh_engine')
+	event.add('ad_astra:rocket_engine', 'ad_astra:ostrum_engine')
+	
+	//Rocket Tank
+	event.add('ad_astra:rocket_tank', 'ad_astra:ostrum_tank')
+	
 	// Deco blocks
 	const DECO_BLOCKS = [ 'iron', 'steel', 'desh', 'calorite', 'ostrum' ];
 	DECO_BLOCKS.forEach(block => {
@@ -77,6 +100,39 @@ const registerAdAstraItemTags = (event) => {
 	event.add('tfc:foods/usable_in_jam_sandwich', 'ad_astra:cheese')
 	event.add('tfc:foods/usable_in_jam_sandwich_2', 'ad_astra:cheese')
 	event.add('firmalife:foods/cheeses', 'ad_astra:cheese')
+
+	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_helmet')
+	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_leggings')
+	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_boots')
+	
+	event.remove('minecraft:wool', 'ad_astra:glacian_fur')
+
+	event.add('tfc:compost_greens', 'ad_astra:aeronos_cap')
+	event.add('tfc:compost_greens', 'ad_astra:strophar_cap')
+
+	// these are log tags
+	event.remove('ad_astra:aeronos_caps', 'ad_astra:aeronos_cap')
+	event.remove('ad_astra:strophar_caps', 'ad_astra:strophar_cap')
+	
+	global.AD_ASTRA_WOOD.forEach(wood => {
+
+		if (wood.log) {
+			event.add('minecraft:logs', wood.log)
+			event.add('minecraft:logs_that_burn', wood.log)
+		}
+
+		if (wood.stripped_log) {
+			event.add('minecraft:logs', wood.stripped_log)
+			event.add('minecraft:logs_that_burn', wood.stripped_log)
+		}
+
+		if (wood.isHardwood === true) {
+			event.add('tfg:hardwood', wood.logs)
+		} else {
+			event.add('tfg:softwood', wood.logs)
+		}
+	})
+
 }
 
 const registerAdAstraBlockTags = (event) => {
@@ -143,18 +199,68 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/raw/dacite')
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/hardened/dacite')
 
+	// Mars
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/dacite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/dacite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/basalt')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/basalt')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/gabbro')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/gabbro')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/diorite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/diorite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/rhyolite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/rhyolite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/andesite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/andesite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/chert')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/chert')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/conglomerate')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/conglomerate')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/claystone')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/claystone')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/limestone')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/limestone')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/dolomite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/dolomite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/shale')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/shale')
+	event.add('ad_astra:mars_stone_replaceables', 'ad_astra:mars_stone')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_mars_stone')
+	event.add('ad_astra:mars_stone_replaceables', 'ad_astra:venus_stone')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_venus_stone')
+	event.add('ad_astra:mars_stone_replaceables', 'gtceu:red_granite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_red_granite')
+	event.add('ad_astra:mars_stone_replaceables', 'minecraft:dripstone_block')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_dripstone')
+	event.add('tfg:mars_soil', 'minecraft:red_sand')
+	event.add('tfg:mars_soil', 'ad_astra:mars_sand')
+	event.add('tfg:mars_soil', 'ad_astra:venus_sand')
+	event.add('tfg:mars_soil', 'tfc:sand/black')
+	event.add('tfg:mars_soil', 'tfc:sand/red')
+	event.add('tfg:mars_soil', 'tfc:sand/pink')
+	event.add('tfg:mars_soil', 'tfg:grass/mars_dirt')
+	event.add('tfg:mars_soil', 'tfg:grass/rusticus_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/amber_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/sangnum_mycelium')
+	event.add('ad_astra:mars_stone_replaceables', '#tfg:mars_soil')
+	
+	event.add('tfc:can_carve', '#ad_astra:moon_stone_replaceables')
+	event.add('tfc:can_carve', '#ad_astra:mars_stone_replaceables')
+
 	event.add('minecraft:rabbits_spawnable_on', '#ad_astra:moon_stone_replaceables')
 	event.add('species:limpet_spawnable_on', '#ad_astra:moon_stone_replaceables')
 
 	event.add('tfc:can_landslide', 'ad_astra:moon_sand')
 	event.add('tfc:can_landslide', 'ad_astra:mars_sand')
 	event.add('tfc:can_landslide', 'ad_astra:venus_sand')
+	event.add('tfc:can_landslide', 'minecraft:red_sand')
 
 	event.add('tfc:can_landslide', 'ad_astra:moon_cobblestone')
 	event.add('tfc:can_landslide', 'ad_astra:mars_cobblestone')
 	event.add('tfc:can_landslide', 'ad_astra:venus_cobblestone')
 	event.add('tfc:can_landslide', 'ad_astra:mercury_cobblestone')
 	event.add('tfc:can_landslide', 'ad_astra:glacio_cobblestone')
+	event.add('tfc:can_landslide', 'gtceu:red_granite_cobblestone')
 
 	event.add('forge:cobblestone', 'ad_astra:moon_cobblestone')
 	event.add('forge:cobblestone', 'ad_astra:mars_cobblestone')
@@ -186,7 +292,11 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:rock_slabs', 'ad_astra:mercury_stone_slab')
 	event.add('tfg:rock_slabs', 'ad_astra:glacio_stone_slab')
 
+	event.add('ad_astra:destroyed_in_space', '#tfc:wild_fruits')
 	event.add('ad_astra:destroyed_in_space', '#minecraft:saplings')
+
+	event.remove('ad_astra:strophar_caps', 'ad_astra:strophar_cap')
+	event.remove('ad_astra:aeronos_caps', 'ad_astra:aeronos_cap')
 }
 
 const registerAdAstraBiomeTags = (event) => {
@@ -199,19 +309,24 @@ const registerAdAstraBiomeTags = (event) => {
 		event.add('tfg:has_structure/cheese_ores', biome)
 		event.add('tfg:has_structure/moonbase', biome)
 		event.add('tfg:has_structure/moon_rabbit_houses', biome)
+		event.add('species:limpet_spawns', biome)
 	})
+
+	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_dunes')
+	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_deep_desert')
 }
 
 const registerAdAstraEntityTypeTags = (event) => {
 
-	// moon
-	const MOON_ENTITIES = [
+	const COLD_ENTITIES = [
+		// moon
 		'tfc:rat',
 		'tfg:moon_rabbit',
 		'minecraft:enderman',
 		'minecraft:shulker',
 		'minecraft:shulker_bullet',
 		'minecraft:skeleton',
+		'minecraft:stray',
 		'species:limpet',
 		'species:birt',
 		'endermanoverhaul:windswept_hills_enderman',
@@ -219,16 +334,26 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'endermanoverhaul:spirit',
 		'endermanoverhaul:end_enderman',
 		'endermanoverhaul:end_islands_enderman',
+
+		'minecraft:sniffer',
+		'species:wraptor',
+		'species:goober',
+		'species:cruncher',
+		'species:springling',
+		'species:quake',
+		'endermanoverhaul:crimson_forest_enderman',
+		'endermanoverhaul:warped_forest_enderman',
+		'endermanoverhaul:badlands_enderman'
 	]
 
-	MOON_ENTITIES.forEach(entity => {
+	COLD_ENTITIES.forEach(entity => {
 
 		event.add('ad_astra:can_survive_extreme_cold', entity)
 		event.add('ad_astra:lives_without_oxygen', entity)
 	})
 
 	event.add('tfc:deals_crushing_damage', 'minecraft:enderman')
-	event.add('tfc:deals_crushing_damage', 'minecraft:skeleton')
+	event.add('tfc:deals_crushing_damage', 'minecraft:stray')
 	event.add('tfc:deals_crushing_damage', 'endermanoverhaul:windswept_hills_enderman')
 	event.add('tfc:deals_crushing_damage', 'endermanoverhaul:soulsand_valley_enderman')
 	event.add('tfc:deals_piercing_damage', 'endermanoverhaul:end_enderman')
@@ -243,6 +368,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 
 const registerAdAstraPlacedFeatures = (event) => {
 	
+	// Moon
 	event.add('tfg:moon_craters', 'tfg:moon/crater/extra_large')
 	event.add('tfg:moon_craters', 'tfg:moon/crater/large')
 	event.add('tfg:moon_craters', 'tfg:moon/crater/medium')
@@ -260,10 +386,86 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_white_sand')
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_black_sand')
 
+	//#region Mars
+
+	
+	// Vegetation
+	event.add("tfg:mars_amber_small_plants", "tfg:mars/crop/amber_root")
+	event.add("tfg:mars_amber_small_plants", "tfg:mars/crop/blossom_berry")
+	event.add("tfg:mars_amber_small_plants", "tfg:mars/crop/bolux_mushroom")
+	event.add("tfg:mars_amber_small_plants", "tfg:mars/crop/cave_pumpkin")
+	event.add("tfg:mars_amber_small_plants", "tfg:mars/crop/chorus_mushroom")
+	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/amber_grass")
+	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/flamaea")
+	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/flammalix")
+	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/lutebus")
+	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/orango")
+	
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/crop/amber_root")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/crop/blossom_berry")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/crop/bolux_mushroom")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/crop/chorus_mushroom")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/crop/shadow_berry")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/aeridium")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/flamaea")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/flammalix")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/lamellarium")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/lutebus")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/orango")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/ruscus")
+	
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/crop/blossom_berry")
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/crop/bolux_mushroom")
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/crop/cave_pumpkin")
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/crop/chorus_mushroom")
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/crop/shadow_berry")
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/cave_grass")
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/clawfern")
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/flamaea")
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/globulagus")
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/lamellarium")
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/ruscus")
+
+	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/small_amaranita_mushroom")
+	
+	// TODO
+	event.add("tfg:mars_trees", "tfg:mars/surface/strophar_huge")
+	event.add("tfg:mars_trees", "tfg:mars/surface/aeronos_huge")
+	event.add("tfg:mars_trees", "species:alphacene_mushroom")
+	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/aeronos_patch")
+	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/strophar_patch")
+	
+	event.add("tfg:mars_amber_vegetal_decoration", "#tfg:mars_trees")
+	event.add("tfg:mars_amber_vegetal_decoration", "#tfg:mars_amber_small_plants")
+	event.add("tfg:mars_amber_vegetal_decoration", "#tfg:mars_global_small_plants")
+
+	event.add("tfg:mars_rusticus_vegetal_decoration", "#tfg:mars_trees")
+	event.add("tfg:mars_rusticus_vegetal_decoration", "#tfg:mars_rusticus_small_plants")
+	event.add("tfg:mars_rusticus_vegetal_decoration", "#tfg:mars_global_small_plants")
+
+	event.add("tfg:mars_sangnum_vegetal_decoration", "#tfg:mars_trees")
+	event.add("tfg:mars_sangnum_vegetal_decoration", "#tfg:mars_sangnum_small_plants")
+	event.add("tfg:mars_sangnum_vegetal_decoration", "#tfg:mars_global_small_plants")
+
+	// Top layer
+	event.add("tfg:mars_top_layer_modification", "tfc:surface_loose_rocks")
+	
+	//#endregion
+
+	//#region Venus
 	event.add('tfg:venus_delta_surface_features', 'tfg:venus/surface/geyser_source_patch')
 	event.add('tfg:venus_delta_surface_features', 'tfg:venus/surface/stromatolite_cluster_patch')
 	event.add('tfg:venus_delta_surface_features', 'tfg:venus/surface/stromatolite_tower')
 
 	event.add('tfg:venus_delta_terrain_features', 'tfg:venus/terrain/hot_spring_delta')
+	event.add('tfg:venus_delta_terrain_features', 'tfg:venus/terrain/lava_delta')
 	event.add('tfg:venus_delta_terrain_features', 'tfg:venus/terrain/stromatolite_disk')
+
+	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lakes')
+	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_basalt_gravel')
+	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_basalt_stone')
+	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_geyserite')
+	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_orange_sand')
+	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_yellow_sand')
+	//#endregion
 }

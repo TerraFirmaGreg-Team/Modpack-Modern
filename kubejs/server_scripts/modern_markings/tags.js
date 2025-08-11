@@ -1,3 +1,5 @@
+"use strict";
+
 const registerModernMarkingsItemTags = (event) => {
 
 	global.MODERN_MARKINGS_DISABLED_ITEMS.forEach(item => {

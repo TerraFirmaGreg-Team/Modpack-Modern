@@ -1,10 +1,11 @@
+"use strict";
 
 const registerTFGBlocks = (event) => {
 
 	registerTFGNetherBlocks(event)
 	registerTFGSpaceBlocks(event)
 	registerTFGSupportBlocks(event)
-    registerTFGCrops(event)
+	registerTFGCrops(event)
 
 	event.create('tfg:artificial_end_portal_frame')
 		.stoneSoundType()
@@ -14,6 +15,48 @@ const registerTFGBlocks = (event) => {
 		.item(item => {
 			item.modelJson({ parent: 'minecraft:block/end_portal_frame' })
 		})
+
+	event.create('tfg:dry_ice', 'tfg:particle_emitter')
+		.textureAll('tfg:block/dry_ice')
+		.soundType('bone_block')
+		.hardness(1)
+		.resistance(1)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfcambiental:cold_stuff')
+		.defaultTranslucent()
+		.mapColor('color_white')
+		.speedFactor(1.2)
+		.particleOffset(1, 1, 1)
+		.particleVelocity(0.05, 0, 0.05)
+		.particle('minecraft:campfire_cosy_smoke')
+		.particleCount(2)
+		.particleForced(false)
+
+	// #region Machine Casings
+
+	global.TFG_MACHINE_CASINGS.forEach(type => {
+		event.create(`tfg:casings/${type}`)
+			.translationKey(`block.tfg.casings.${type}`)
+			.model(`tfg:block/casings/${type}`)
+			.soundType('copper')
+			.hardness(5)
+			.resistance(6)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.tagBlock('minecraft:mineable/wrench')
+			.mapColor('color_light_gray')
+	})
+
+	event.create(`tfg:casings/machine_casing_stainless_evaporation`)
+		.translationKey(`block.tfg.casings.machine_casing_stainless_evaporation`)
+		.model(`tfg:block/casings/machine_casing_stainless_evaporation`)
+		.soundType('copper')
+		.hardness(5)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+		.mapColor('color_light_gray')
+
+	//#endregion
 
 	// #region Decorative vases
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
@@ -90,6 +133,44 @@ const registerTFGBlocks = (event) => {
 
 	// #endregion
 
+	// #region Layer blocks
+
+	event.create('tfg:ash_pile', 'tfg:layer_block')
+		.existingItem('tfc:powder/wood_ash')
+		.mapColor('color_light_gray')
+
+	event.create('tfg:pile/black_sand', 'tfg:layer_block')
+		.existingItem('tfc:sand/black')
+
+	event.create('tfg:pile/brown_sand', 'tfg:layer_block')
+		.existingItem('tfc:sand/brown')
+
+	event.create('tfg:pile/green_sand', 'tfg:layer_block')
+		.existingItem('tfc:sand/green')
+
+	event.create('tfg:pile/pink_sand', 'tfg:layer_block')
+		.existingItem('tfc:sand/pink')
+
+	event.create('tfg:pile/red_sand', 'tfg:layer_block')
+		.existingItem('tfc:sand/red')
+
+	event.create('tfg:pile/white_sand', 'tfg:layer_block')
+		.existingItem('tfc:sand/white')
+
+	event.create('tfg:pile/yellow_sand', 'tfg:layer_block')
+		.existingItem('tfc:sand/yellow')
+
+	event.create('tfg:pile/mars_sand', 'tfg:layer_block')
+		.existingItem('ad_astra:mars_sand')
+
+	event.create('tfg:pile/moon_sand', 'tfg:layer_block')
+		.existingItem('ad_astra:moon_sand')
+
+	event.create('tfg:pile/venus_sand', 'tfg:layer_block')
+		.existingItem('ad_astra:venus_sand')
+
+
+	// #endregion
 
 	// #region Deprecated
 

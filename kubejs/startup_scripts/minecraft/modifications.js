@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function registerMinecraftItemModifications(event) {
 
@@ -25,5 +26,11 @@ function registerMinecraftItemModifications(event) {
 
 	event.modify('minecraft:netherite_leggings', item => {
 		item.maxDamage = 960
+	})
+
+	// Removes lava buckets as fuel
+
+	event.modify('minecraft:lava_bucket', item => {
+		item.burnTime = 0
 	})
 }

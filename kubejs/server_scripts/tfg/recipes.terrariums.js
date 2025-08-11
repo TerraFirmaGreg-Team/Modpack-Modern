@@ -1,5 +1,9 @@
 // priority: 0
+"use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function registerTFGTerrariumRecipes(event) {
 	
 	event.remove({ id: 'gtceu:gas_collector/nether_air' })
@@ -180,7 +184,7 @@ function registerTFGTerrariumRecipes(event) {
 		'B',
 		'C' 
 	], {
-		A: 'minecraft:ender_eye',
+		A: 'tfg:vitrified_pearl',
 		B: 'minecraft:cyan_carpet',
 		C: 'minecraft:end_stone'
 	}).id('tfg:shaped/artificial_end_portal_frame')

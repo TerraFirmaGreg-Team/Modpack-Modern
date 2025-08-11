@@ -1,5 +1,9 @@
 // priority: 0
+"use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function registerTFGStoneDustRecipes(event) {
 
 	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_blackstone' })

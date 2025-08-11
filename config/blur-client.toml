@@ -1,6 +1,6 @@
 
 [screens]
-	blurExclusions = ["net.minecraft.client.gui.screens.ChatScreen", "com.replaymod.lib.de.johni0702.minecraft.gui.container.AbstractGuiOverlay$UserInputGuiScreen", "ai.arcblroth.projectInception.client.InceptionInterfaceScreen", "net.optifine.gui.GuiChatOF", "baritone.", "io.github.darkkronicle.advancedchatcore.chat.AdvancedChatScreen", "net.coderbot.iris.gui.screen.ShaderPackScreen", "eu.midnightdust.midnightcontrols.client.gui.TouchscreenOverlay"]
+	blurExclusions = ["net.minecraft.client.gui.screens.ChatScreen", "com.replaymod.lib.de.johni0702.minecraft.gui.container.AbstractGuiOverlay$UserInputGuiScreen", "ai.arcblroth.projectInception.client.InceptionInterfaceScreen", "net.optifine.gui.GuiChatOF", "baritone.", "io.github.darkkronicle.advancedchatcore.chat.AdvancedChatScreen", "net.coderbot.iris.gui.screen.ShaderPackScreen", "eu.midnightdust.midnightcontrols.client.gui.TouchscreenOverlay", "com.tacz.guns.client.gui.GunRefitScreen"]
 	showScreenTitle = false
 	strangeEffect = false
 

@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerBeneathRecipes = (event) => {
 
@@ -19,6 +20,20 @@ const registerBeneathRecipes = (event) => {
 	event.remove({ id: 'beneath:crafting/hellbricks' })
 	event.remove({ id: 'beneath:crafting/nether_brick' })
 	event.remove({ id: 'beneath:quern/slime' })
+	event.remove({ id: 'beneath:crafting/wood/crimson_planks' })
+	event.remove({ id: 'beneath:crafting/wood/crimson_slab' })
+	event.remove({ id: 'beneath:crafting/wood/crimson_button' })
+	event.remove({ id: 'beneath:crafting/wood/crimson_pressure_plate' })
+	event.remove({ id: 'beneath:crafting/wood/crimson_lumber_log' })
+	event.remove({ id: 'beneath:crafting/wood/crimson_lumber_planks' })
+	event.remove({ id: 'beneath:crafting/wood/crimson_slab_undo' })
+	event.remove({ id: 'beneath:crafting/wood/warped_planks' })
+	event.remove({ id: 'beneath:crafting/wood/warped_slab' })
+	event.remove({ id: 'beneath:crafting/wood/warped_button' })
+	event.remove({ id: 'beneath:crafting/wood/warped_pressure_plate' })
+	event.remove({ id: 'beneath:crafting/wood/warped_lumber_log' })
+	event.remove({ id: 'beneath:crafting/wood/warped_lumber_planks' })
+	event.remove({ id: 'beneath:crafting/wood/warped_slab_undo' })
 	
 	event.shaped('beneath:unposter', [
 		'ABA',
@@ -52,4 +67,71 @@ const registerBeneathRecipes = (event) => {
 		.EUt(8)
 
 	event.recipes.tfc.landslide('beneath:soul_clay', 'beneath:soul_clay')
+
+	generateGreenHouseRecipe(event, '8x minecraft:warped_fungus', 'tfg:semiheavy_ammoniacal_water', 16000,
+		'64x beneath:wood/log/warped', 'tfg:green_house/warped_fungus', 'ad_astra:mars', 8, 
+		'16x minecraft:warped_wart_block', GTValues.VA[GTValues.MV])
+	generateGreenHouseRecipe(event, '8x minecraft:crimson_fungus', 'tfg:semiheavy_ammoniacal_water', 16000,
+		'64x beneath:wood/log/crimson', 'tfg:green_house/crimson_fungus', 'ad_astra:mars', 8,
+		'16x minecraft:nether_wart_block', GTValues.VA[GTValues.MV])
+
+	// don't pass in the items like doors, trapdoors etc because beneath already has good recipes for those
+	woodBuilder(event, 'crimson', 'beneath:wood/lumber/crimson', '#tfc:crimson_logs', 'beneath:wood/log/crimson',
+		'beneath:wood/stripped_log/crimson', 'beneath:wood/planks/crimson', null,
+		'beneath:wood/planks/crimson_slab', null, null, null, null, null, 'beneath:wood/planks/crimson_pressure_plate',
+		'beneath:wood/planks/crimson_button')
+
+	event.recipes.gtceu.lathe(`tfg:cutter/crimson_stripped_wood_from_wood`)
+		.itemInputs('beneath:wood/wood/crimson')
+		.itemOutputs('beneath:wood/stripped_wood/crimson')
+		.duration(50)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.custom({
+		type: 'vintageimprovements:turning',
+		ingredients: [{ item: 'beneath:wood/wood/crimson' }],
+		results: [{ item: 'beneath:wood/stripped_wood/crimson' }],
+		processingTime: 50
+	}).id(`tfg:vi/lathe/stripping_crimson_wood`)
+
+	event.shaped('beneath:wood/sewing_table/crimson', [
+		' AB',
+		'CCC',
+		'D D'
+	], {
+		A: '#forge:leather',
+		B: '#forge:shears',
+		C: 'beneath:wood/planks/crimson',
+		D: 'beneath:wood/log/crimson'
+	}).id('tfg:shaped/crimson_sewing_table')
+
+
+	woodBuilder(event, 'warped', 'beneath:wood/lumber/warped', '#tfc:warped_logs', 'beneath:wood/log/warped',
+		'beneath:wood/stripped_log/warped', 'beneath:wood/planks/warped', null,
+		'beneath:wood/planks/warped_slab', null, null, null, null, null, 'beneath:wood/planks/warped_pressure_plate',
+		'beneath:wood/planks/warped_button')
+
+	event.recipes.gtceu.lathe(`tfg:cutter/warped_stripped_wood_from_wood`)
+		.itemInputs('beneath:wood/wood/warped')
+		.itemOutputs('beneath:wood/stripped_wood/warped')
+		.duration(50)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.custom({
+		type: 'vintageimprovements:turning',
+		ingredients: [{ item: 'beneath:wood/wood/warped' }],
+		results: [{ item: 'beneath:wood/stripped_wood/warped' }],
+		processingTime: 50
+	}).id(`tfg:vi/lathe/stripping_warped_wood`)
+
+	event.shaped('beneath:wood/sewing_table/warped', [
+		' AB',
+		'CCC',
+		'D D'
+	], {
+		A: '#forge:leather',
+		B: '#forge:shears',
+		C: 'beneath:wood/planks/warped',
+		D: 'beneath:wood/log/warped'
+	}).id('tfg:shaped/warped_sewing_table')
 }

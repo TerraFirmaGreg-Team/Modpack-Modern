@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerGTCEuItems = (event) => {
 
@@ -34,4 +35,5 @@ const registerGTCEuItems = (event) => {
 
     event.create('tfg:chipboard_composite')
     .translationKey('item.chipboard_composite')
+
 }

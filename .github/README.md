@@ -3,14 +3,14 @@
 <div align="center">
   <h1>TerraFirmaGreg - Modern</h1>
   <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern">
-    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo.png?raw=true" alt="Logo" height="100"/>
+    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/icon/v3/1080x_1080p_still_ring.gif?raw=true" alt="Logo" height="120"/>
   </a>
   <br/>
   <a href="https://discord.gg/AEaCzCTUwQ">
-    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/button/discord_logo.png?raw=true" alt="Join our Discord" height="50"/>
+    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/button/brands/discord_logo_32x.png?raw=true" alt="Join our Discord" height="50"/>
   </a>
   <a href="https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-modern">
-    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/button/curseforge_logo.png?raw=true" alt="Available on CurseForge" height="50"/>
+    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/button/brands/curseforge_logo_32x.png?raw=true" alt="Available on CurseForge" height="50"/>
   </a>
   <br/>
   <p align="center">
@@ -26,11 +26,11 @@
 
 <br/>
 
-![Logo Large](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/title/large.png?raw=true)
+![Logo_Title](https://github.com/TerraFirmaGreg-Team/.github/blob/main/storage/modern/title_logo.png?raw=true)
 
 ---
-
-## **TerraFirmaGreg-Modern** is a deep survival and tech modpack for Minecraft 1.20.1, seamlessly fusing together TerraFirmaCraft and GregTech.
+<h2 align="center"> TerraFirmaGreg-Modern is a deep survival and tech modpack for Minecraft 1.20.1, seamlessly fusing together TerraFirmaCraft and GregTech. </h2>
+  
 Embark on a technological journey, starting by banging rocks together, taming an untouched wilderness into an industrial wonderland, and ending with control over the very stars.
 
 Are you looking for a longer modpack where every step feels rewarding, and you're constantly building upon previous technologies in a way that feels seamless and natural? Do you want a modpack where every mod is carefully integrated instead of just thrown in? Do you dislike magic mods, or want to try a tech modpack that feels less "minecrafty" with its automation? Or do you just want to try out GregTech without losing years of your life? Then TerraFirmaGreg may be the modpack for you!
@@ -50,7 +50,7 @@ Other small mods and addons tie everything together, and an ingame book and ques
 
 ---
 
-## Development
+<h2 align="center">Development</h2>
 
 This modpack is still a work in progress, and is constantly being updated. In its current state, the modpack is fully completable, and worlds will always be compatible with future versions. Clear instructions will be provided if you need to take any extra steps when updating. 
 
@@ -60,12 +60,14 @@ Want to help translate? Please read [this](../kubejs/README%20IF%20TRANSLATING.m
 
 ---
 
-![Image Readme](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/image_readme.png?raw=true)
+![Image_Readme](https://github.com/TerraFirmaGreg-Team/.github/blob/main/storage/modern/image_readme.png?raw=true)
 
-### External Credits
-- WithersChat from the Monifactory team for the universal circuit textures
-- GregTech Community Pack Modern for most of their quest text
-- Better End for some assets
+<h2 align="center">External Credits and Special Thanks</h2>
+
+- WithersChat from the [Monifactory](https://www.curseforge.com/minecraft/modpacks/monifactory) team for the universal circuit textures.
+- [GregTech Community Pack Modern](https://www.curseforge.com/minecraft/modpacks/gregtech-community-pack-modern) for most of their quest text.
+- [Better End](https://www.curseforge.com/minecraft/mc-mods/betterend) for some assets.
+- Uni for Mars' dunes terrain generation.
 
 <!-- Links: -->
 [TerraFirmaCraft]: https://www.curseforge.com/minecraft/mc-mods/terrafirmacraft

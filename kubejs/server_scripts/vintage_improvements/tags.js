@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function registerVintageImprovementsItemTags(event) {
 
@@ -32,11 +33,17 @@ function registerVintageImprovementsItemTags(event) {
 	event.add('vintageimprovements:curving_heads', 'tfg:chisel_head_extruder_mold')
 	event.add('vintageimprovements:curving_heads', 'tfg:mace_head_extruder_mold')
 	event.add('vintageimprovements:curving_heads', 'tfg:mattock_head_extruder_mold')
+	event.add('vintageimprovements:curving_heads', 'tfg:screwdriver_tip_extruder_mold')
+	event.add('vintageimprovements:curving_heads', 'tfg:wrench_tip_extruder_mold')
+	event.add('vintageimprovements:curving_heads', 'tfg:wire_cutter_head_extruder_mold')
+	event.add('vintageimprovements:curving_heads', 'tfg:small_casing_extruder_mold')
+	event.add('vintageimprovements:curving_heads', 'tfg:shell_casing_extruder_mold')
+	event.add('vintageimprovements:curving_heads', 'tfg:large_casing_extruder_mold')
 	event.add('vintageimprovements:curving_heads', 'gtceu:cell_extruder_mold')
 	event.add('vintageimprovements:curving_heads', 'gtceu:ingot_extruder_mold')
 	event.add('vintageimprovements:curving_heads', 'gtceu:bottle_extruder_mold')
 	event.add('vintageimprovements:curving_heads', 'gtceu:foil_extruder_mold')
-	event.add('vintageimprovements:curving_heads', 'gtceu:credit_casting_mold')
+	event.add('vintageimprovements:curving_heads', 'gtceu:cylinder_casting_mold')
 }
 
 

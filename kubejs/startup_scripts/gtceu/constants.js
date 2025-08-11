@@ -1,7 +1,10 @@
 // priority: 0
+"use strict";
 
+//#region Disabled Items
+/** @global */
 global.GTCEU_DISABLED_ITEMS = [
-    // Пыль пшеницы
+    // Пыль пшеницы (Wheat Dusts)
     'gtceu:wheat_dust',
     'gtceu:small_wheat_dust',
     'gtceu:tiny_wheat_dust',
@@ -22,14 +25,14 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:lp_steam_solar_boiler',
     'gtceu:charcoal_pile_igniter',
 
-    // Примитивная помпа
+    // Примитивная помпа (Primitive Pump)
     'gtceu:infinite_water_cover',
     'gtceu:ender_fluid_link_cover',
     'gtceu:pump_deck', 
     'gtceu:pump_hatch', 
     'gtceu:primitive_pump',
 
-    // Другое
+    // Другое (Other)
     'gtceu:flint_mortar',
     'gtceu:flint_knife',
     'gtceu:firebrick',
@@ -108,6 +111,50 @@ global.GTCEU_DISABLED_ITEMS = [
 
     'gtceu:compressed_clay',
 
+    'gtceu:damascus_steel_nugget',
+    'gtceu:damascus_steel_ingot',
+    'gtceu:damascus_steel_block',
+    'gtceu:damascus_steel_plate',
+    'gtceu:double_damascus_steel_plate',
+    'gtceu:damascus_steel_gear',
+    'gtceu:damascus_steel_buzzsaw_blade',
+    'gtceu:damascus_steel_drill_head',
+    'gtceu:damascus_steel_chainsaw_head',
+    'gtceu:damascus_steel_bolt',
+    'gtceu:damascus_steel_screw',
+    'gtceu:damascus_steel_rod',
+    'gtceu:long_damascus_steel_rod',
+    'gtceu:damascus_steel_dust',
+    'gtceu:small_damascus_steel_dust',
+    'gtceu:tiny_damascus_steel_dust',
+    'gtceu:lv_damascus_steel_drill',
+    'gtceu:mv_damascus_steel_drill',
+    'gtceu:hv_damascus_steel_drill',
+    'gtceu:ev_damascus_steel_drill',
+    'gtceu:iv_damascus_steel_drill',
+    'gtceu:lv_damascus_steel_chainsaw',
+    'gtceu:damascus_steel_buzzsaw',
+    'gtceu:damascus_steel_bucket',
+
+    //armor
+    'gtceu:bronze_helmet',
+    'gtceu:bronze_chestplate',
+    'gtceu:bronze_leggings',
+    'gtceu:bronze_boots',
+    'gtceu:steel_helmet',
+    'gtceu:steel_chestplate',
+    'gtceu:steel_leggings',
+    'gtceu:steel_boots',
+    'gtceu:titanium_helmet',
+    'gtceu:titanium_chestplate',
+    'gtceu:titanium_leggings',
+    'gtceu:titanium_boots',
+
+    // Huh
+    'gtceu:wax_dust',
+    'gtceu:small_wax_dust',
+    'gtceu:tiny_wax_dust',
+
     // Sculk
     'gtceu:tiny_echo_shard_dust',
     'gtceu:small_echo_shard_dust',
@@ -119,9 +166,16 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:echo_shard_plate',
     'gtceu:echo_shard_rod',
     'gtceu:echo_shard_block',
-    'gtceu:tiny_skulk_dust',
-    'gtceu:small_skulk_dust',
-    'gtceu:skulk_dust',
+    'gtceu:tiny_sculk_dust',
+    'gtceu:small_sculk_dust',
+    'gtceu:sculk_dust',
+
+    // Ender eye
+    'gtceu:ender_eye_plate',
+    'gtceu:ender_eye_block',
+    'gtceu:ender_eye_dust',
+    'gtceu:small_ender_eye_dust',
+    'gtceu:tiny_ender_eye_dust',
 
     // Marble
     'gtceu:marble',
@@ -131,15 +185,29 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:cracked_marble_bricks',
     'gtceu:mossy_marble_bricks'
 ];
+//#endregion
 
+
+//#region Hidden Items
+/** @global */
 global.GTCEU_HIDED_ITEMS = [
     'gtceu:netherrack_dust', 
     'gtceu:small_netherrack_dust', 
     'gtceu:tiny_netherrack_dust',
-    
+     'gtceu:lv_damascus_steel_wirecutter',
+    'gtceu:hv_damascus_steel_wirecutter',
+    'gtceu:iv_damascus_steel_wirecutter',
+    'gtceu:lv_damascus_steel_wrench',
+    'gtceu:hv_damascus_steel_wrench',
+    'gtceu:iv_damascus_steel_wrench',
+    'gtceu:lv_damascus_steel_screwdriver',
+
     'gtceu:sus_record'
 ];
+//#endregion
 
+//#region Armor
+/** @global */
 global.GTCEU_ARMORS = [
 	'gtceu:hazmat_chestpiece',
 	'gtceu:hazmat_leggings',
@@ -149,15 +217,17 @@ global.GTCEU_ARMORS = [
 	'gtceu:nanomuscle_leggings',
 	'gtceu:nanomuscle_boots',
 	'gtceu:nanomuscle_helmet',
-	// typo in gtceu
-	'gtceu:avanced_nanomuscle_chestplate',
+	'gtceu:advanced_nanomuscle_chestplate',
 	'gtceu:quarktech_chestplate',
 	'gtceu:quarktech_leggings',
 	'gtceu:quarktech_boots',
 	'gtceu:quarktech_helmet',
 	'gtceu:advanced_quarktech_chestplate'
 ];
+//#endregion
 
+//#region Extruder Molds
+/** @global */
 global.TFG_EXTRUDER_MOLDS = [
     'tfg:mining_hammer_head_extruder_mold',
     'tfg:sword_head_extruder_mold',
@@ -180,16 +250,26 @@ global.TFG_EXTRUDER_MOLDS = [
     'tfg:fish_hook_extruder_mold',
     'tfg:whisk_extruder_mold',
     'tfg:screwdriver_tip_extruder_mold',
-    'tfg:wrench_tip_extruder_mold'
+    'tfg:wrench_tip_extruder_mold',
+    'tfg:wire_cutter_head_extruder_mold',
+	'tfg:small_casing_extruder_mold',
+	'tfg:shell_casing_extruder_mold',
+	'tfg:large_casing_extruder_mold'
 ];
+//#endregion
 
+//#region Casting Molds
+/** @global */
 global.TFG_CASTING_MOLDS = [
     'tfg:lamp_casting_mold',
     'tfg:trapdoor_casting_mold',
     'tfg:chain_casting_mold',
     'tfg:bell_casting_mold'
 ];
+//#endregion
 
+//#region Ore Bearing Stone
+/** @global */
 global.ORE_BEARING_STONES = [
     'gabbro', 
     'shale', 
@@ -223,4 +303,28 @@ global.ORE_BEARING_STONES = [
     'mercury_stone',
     'glacio_stone'
 ];
+//#endregion
+
+//#region Add Circuits
+/** @global */
+global.ADD_CIRCUIT = [
+    {recipeId: 'gtceu:chemical_reactor/tetrafluoroethylene_from_chloroform', circuitNumber: 1},
+    {recipeId: 'gtceu:chemical_reactor/hydrofluoric_acid_from_elements', circuitNumber: 2},
+];
+//#endregion
+
+//#region Superconductors
+/** @global */
+global.GTCEU_SUPERCONDUCTORS = [
+    {name: 'manganese_phosphide', materialId: 'ManganesePhosphide'}, 
+    {name: 'magnesium_diboride', materialId: 'MagnesiumDiboride'},
+    {name: 'mercury_barium_calcium_cuprate', materialId: 'MercuryBariumCalciumCuprate'},
+    {name: 'uranium_triplatinum', materialId: 'UraniumTriplatinum'},
+    {name: 'samarium_iron_arsenic_oxide', materialId: 'SamariumIronArsenicOxide'},
+    {name: 'indium_tin_barium_titanium_cuprate', materialId: 'IndiumTinBariumTitaniumCuprate'},
+    {name: 'uranium_rhodium_dinaquadide', materialId: 'UraniumRhodiumDinaquadide'},
+    {name: 'enriched_naquadah_trinium_europium_duranide', materialId: 'EnrichedNaquadahTriniumEuropiumDuranide'},
+    {name: 'ruthenium_trinium_americium_neutronate', materialId: 'RutheniumTriniumAmericiumNeutronate'}
+]
+//#endregion
 

@@ -1,4 +1,5 @@
 ﻿// priority: 0
+"use strict";
 
 function registerTFCMachineRecipes(event) {
 	
@@ -311,8 +312,7 @@ function registerTFCMachineRecipes(event) {
 		.EUt(4)
 
 	// Jute Fiber
-	generateMixerRecipe(event, 'tfc:jute', 
-		JsonIO.of({ amount: 200, value: { tag: "tfg:clean_water" }}),
+	generateMixerRecipe(event, 'tfc:jute', "#tfg:clean_water 200",
 		'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
 
 	// Ceramic Recycling
@@ -370,8 +370,8 @@ function registerTFCMachineRecipes(event) {
 		.duration(1200)
 		.EUt(2)
 
-	const BROWNS = [ '16x #tfc:compost_browns_low', '4x #tfc:compost_browns_high' ];
-	const GREENS = [ '16x #tfc:compost_greens_low', '4x #tfc:compost_greens_high' ];
+	const BROWNS = [ '16x #tfc:compost_browns_low', '8x #tfc:compost_browns', '4x #tfc:compost_browns_high' ];
+	const GREENS = [ '16x #tfc:compost_greens_low', '8x #tfc:compost_greens', '4x #tfc:compost_greens_high' ];
 
 	let i = 0;
 	BROWNS.forEach(brown => {

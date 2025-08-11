@@ -1,0 +1,6 @@
+{
+	"parent": "betterend:block/cross",
+	"textures": {
+		"cross": "betterend:block/cave_pumpkin_stem_dead"
+	}
+}

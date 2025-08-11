@@ -1,0 +1,6 @@
+{
+	"variants": {
+		"mature=true": { "model": "betterend:block/chorus_mushroom_wild_mature" },
+		"mature=false": { "model": "betterend:block/chorus_mushroom_wild_immature" }
+	}
+}

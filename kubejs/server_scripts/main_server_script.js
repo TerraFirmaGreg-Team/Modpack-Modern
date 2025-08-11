@@ -1,4 +1,5 @@
 // priority: 1
+"use strict";
 
 /**
  * Событие регистрации предмет-тэгов.
@@ -14,7 +15,6 @@ ServerEvents.tags('item', event => {
 	registerBeneathItemTags(event)
 	registerBetterEndItemTags(event)
 	registerChalkItemTags(event);
-	registerChiselAndBitsItemTags(event)
 	registerComputerCraftItemTags(event)
 	registerConstructionWandItemTags(event)
 	registerCreateItemTags(event)
@@ -39,15 +39,17 @@ ServerEvents.tags('item', event => {
 	registerModernMarkingsItemTags(event)
 	registerMoreRedItemTags(event)
 	registerHotOrNotItemTags(event)
+	registerPrimitiveCreaturesItemTags(event)
 	registerRailWaysItemTags(event)
 	registerRnrItemTags(event)
 	registerSophisticatedBackpacksItemTags(event)
 	registerSpeciesItemTags(event)
+	registerTACZItemTags(event)
 	registerTFCAmbientalItemTags(event)
 	registerTFCItemTags(event)
 	registerTFCTextileItemTags(event)
 	registerTFGItemTags(event)
-  registerTFCLunchboxItemTags(event)
+    registerTFCLunchboxItemTags(event)
 	registerVintageImprovementsItemTags(event)
 })
 
@@ -60,7 +62,6 @@ ServerEvents.tags('block', event => {
 	registerAFCBlockTags(event)
 	registerAsticorCartsBlockTags(event)
 	registerBeneathBlockTags(event)
-	registerChiselAndBitsBlockTags(event)
 	registerComputerCraftBlockTags(event)
 	registerCreateBlockTags(event)
 	registerCreateAdditionsBlockTags(event)
@@ -143,11 +144,13 @@ TFCEvents.data(event => {
 	registerTFCDataForAdAstra(event);
 	registerTFCDataForArborFirmaCraft(event)
 	registerTFCDataForChalk(event);
+	registerTFCDataForCreateAddition(event);
 	registerTFCDataForFirmalife(event)
 	registerTFCDataForGTCEU(event)
 	registerTFCDataForImmersiveAircraft(event);
 	registerTFCDataForMinecraft(event)
 	registerTFCDataForSophisticatedBackpacks(event)
+	registerTFCDataForTACZ(event)
 	registerTFCDataForTFC(event)
 	registerTFCDataForTFCBetterBF(event)
 	registerTFCDataForTFCLunchbox(event)
@@ -203,7 +206,6 @@ ServerEvents.recipes(event => {
 	registerBetterEndRecipes(event)
 	registerBuildingGadgetsRecipes(event)
 	registerChalkRecipes(event);
-	registerChiselAndBitsRecipes(event)
 	registerComfortsRecipes(event);
 	registerComputerCraftRecipes(event)
 	//registerCccBridgeRecipes(event)
@@ -214,6 +216,7 @@ ServerEvents.recipes(event => {
 	registerCreatedecoRecipes(event)
 	registerCreateFactoryLogisticsRecipes(event)
 	registerCreateHorsePowerBlockRecipes(event)
+	registerCreateHypertubeRecipes(event)
 	registerDiggerHelmetRecipes(event)
 	registerDomumOrnamentumRecipes(event)
 	registerEndermanOverhaulRecipes(event)
@@ -237,12 +240,16 @@ ServerEvents.recipes(event => {
 	registerMinecraftRecipes(event)
 	registerModernMarkingRecipes(event)
 	registerMoreRedRecipes(event)
+	registerPrimitiveCreaturesRecipes(event)
+	registerProgrammedCircuitCardRecipes(event)
 	registerRailWaysRecipes(event)
 	registerRnrRecipes(event)
 	registerSophisticatedBackpacksRecipes(event)
 	registerSimplylightRecipes(event)
 	registerSpeciesRecipes(event)
+	registerTACZRecipes(event)
 	registerTFCRecipes(event)
+	registerTFCAmbientalRecipes(event)
 	registerTFCBetterBFRecipes(event)
 	registerTFCLunchBoxRecipes(event)
 	registerTFCGroomingStationRecipes(event)
@@ -253,3 +260,25 @@ ServerEvents.recipes(event => {
 	registerVintageImprovementsRecipes(event)
 	registerWaterFlasksRecipes(event)
 })
+
+TaCZServerEvents.gunIndexLoad((event) => {
+	gunIndexLogic(event)
+})
+
+TaCZServerEvents.ammoIndexLoad((event) => {
+	ammoIndexLogic(event)
+})
+
+TaCZServerEvents.attachmentIndexLoad((event) => {
+	attachmentIndexLogic(event)
+})
+
+TaCZServerEvents.gunDataLoad((event) => {
+	gunDataLogic(event)
+})
+
+TaCZServerEvents.attachmentDataLoad((event) => {
+	attachmentDataLogic(event)
+})
+
+

@@ -1,4 +1,5 @@
 ﻿// priority: 0
+"use strict";
 
 function removeMinecraftRecipes(event) {
 
@@ -2079,4 +2080,5 @@ function removeMinecraftRecipes(event) {
 	//#endregion
 
 	event.remove({ id: 'minecraft:flower_banner_pattern' })
+	event.remove({ id: 'gtceu:assembler/lodestone' })
 }

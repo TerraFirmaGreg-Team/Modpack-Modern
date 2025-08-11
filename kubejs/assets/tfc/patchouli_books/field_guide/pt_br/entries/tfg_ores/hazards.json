@@ -1,0 +1,89 @@
+{
+	"name": "Materiais Perigosos",
+	"icon": "createdeco:decal_skull",
+	"category": "tfc:tfg_ores",
+	"priority": true,
+	"sortnum": 1,
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "Materiais Perigosos",
+			"item": "gtceu:cobaltite_dust",
+			"text": "Alguns minérios e pós são perigosos e podem causar efeitos negativos ou até mesmo matá-lo se forem carregados em seu inventário.$(br2)Certos equipamentos, como $(thing)máscaras$(), $(thing)luvas$() e $(thing)trajes de materiais perigosos$(), mais tarde, podem ser usados para neutralizar esses efeitos."
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "Máscara Facial",
+			"recipe": "gtceu:shaped/face_mask",
+			"text": "A $(thing)Máscara Facial$() fornece proteção contra quaisquer perigos de $(item)Inalação$(), como Arsenicose."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_gloves",
+			"title": "Luvas de Borracha",
+			"link_recipes": true,
+			"text": "Luvas de Borracha podem ser feitas de $(l:mechanics/leather_making)Couro$() e $(l:arborfirmacraft/making_rubber)Látex$(), ou de Chapas de Borracha. Elas oferecem proteção contra quaisquer riscos de $(item)Contato com a Pele$(), como Beriliose."
+		},
+		{
+			"type": "tfc:knapping_recipe",
+			"recipe": "tfchotornot:leather_knapping/mittens",
+			"text": "Primeiro, trabalhe o couro em mitenes."
+		},
+		{
+			"type": "tfc:sealed_barrel_recipe",
+			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
+			"text": "As Mitenes são então embebidas em $(thing)Vinagre$(), uma mistura de frutas e álcool."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:latex_soaked_gloves",
+			"text": "Luvas de couro preparadas são então aquecidas em uma $(thing)cubat$() com $(thing)Látex Vulcanizado$(), a um passo da borracha."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_gloves",
+			"text": "Por fim, as luvas embebidas em látex são aquecidas em um $(l:firmalife/oven)Forno$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Rochas",
+			"item": { "tag": "tfc:rock_knapping" },
+			"text": "A maneira mais fácil de evitar que itens perigosos entrem no seu inventário é não pegá-los. $(br)Preencher seu inventário com $(thing)Rochas$(), por exemplo, permitirá que você escolha quais itens deseja pegar, permitindo que você lide com os perigosos de uma só vez mais tarde."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Recipientes",
+			"text": "Materiais perigosos só causam dano enquanto estiverem em seu $(thing)inventário$(), mas isso não se aplica a outros contêineres!$(br)Materiais perigosos não causarão dano enquanto estiverem em outro contêiner, como uma $(l:tfg_tips/inventory_management)Mochila$() ou $(l:getting_started/pottery#vessel)Vaso$(). $(thing)Clicar com o botão direito$() enquanto segura um vaso permitirá a transferência direta do seu conteúdo de e para outros contêineres.",
+			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Água Termal",
+			"item": "tfc:bucket/spring_water",
+			"text": "Ficar na $(thing)Água Termal$() causará um efeito lento de $(thing)Regeneração$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Álcool Envelhecido",
+			"text": "$(thing)Álcool Envelhecido$() dará bônus de poções, alguns dos quais você pode achar úteis.$(br2)Você pode bebê-las com um $(l:getting_started/pottery#jug)Cântaro$() ou um $(l:waterflasks/recipes)Cantil$().",
+			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Cerveja Envelhecida: Absorção II (20:00)$(br2)Sidra Envelhecida: Velocidade (5:20)$(br2)Rum Envelhecido: Velocidade II (2:40)$(br2)Saquê Envelhecido: Resistência (5:20)$(br2)Vodca Envelhecida: Resistência II (2:40)$(br2)Uísque de Milho Envelhecido: Pressa (5:20)$(br2)Uísque de Centeio Envelhecido: Pressa (5:20)$(br2)Uísque Envelhecido: Pressa II (2:40)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": { "tag": "tfc:foods" },
+			"title": "Nutrição",
+			"text": "Comer alimentos melhores com mais $(l:getting_started/food_and_water#nutrients)nutrição$() aumentará seu HP máximo em uma quantidade significativa.$(br2)$(l:mechanics/pot#soup)Sopas$(), $(l:mechanics/sandwiches)Sanduíches$() e $(l:mechanics/salad)Saladas$() são ótimos para isso."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Cama",
+			"item": { "tag": "minecraft:beds" },
+			"text": "Se tudo mais falhar, levar uma cama para renascer é uma boa ideia.$(br2)Se você não tiver acesso a $(thing)Lã$() ou $(thing)Linha$(), você também pode fazer uma $(l:getting_started/a_place_to_sleep)Cama de Palha$()."
+		}
+	]
+}

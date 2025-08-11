@@ -39,9 +39,6 @@
 	#Allow any stonecutting recipes to be processed by a Mechanical Saw.
 	allowStonecuttingOnSaw = true
 	#.
-	#Allow any Druidcraft woodcutter recipes to be processed by a Mechanical Saw.
-	allowWoodcuttingOnSaw = true
-	#.
 	#Allow Spouts to interact with Casting Tables and Basins from Tinkers' Construct.
 	allowCastingBySpout = true
 	#.
@@ -106,6 +103,14 @@
 	#Time in ticks until the next item launched by an ejector scans blocks for potential collisions
 	#Range: > 10
 	ejectorScanInterval = 120
+	#.
+	#Maximum length in blocks of chain conveyor connections.
+	#Range: > 5
+	maxChainConveyorLength = 32
+	#.
+	#Maximum amount of connections each chain conveyor can have.
+	#Range: > 1
+	maxChainConveyorConnections = 4
 
 	#.
 	#Encased Fan
@@ -140,13 +145,6 @@
 		#Range: > 1
 		maxBlocksMoved = 2048
 		#.
-		#[in Bytes]
-		#[0 to disable this limit]
-		#Maximum amount of data a contraption can have before it can't be synced with players.
-		#Un-synced contraptions will not be visible and will not have collision.
-		#Range: > 0
-		maxDataSize = 2000000
-		#.
 		#Maximum value of a chassis attachment range.
 		#Range: > 1
 		maxChassisRange = 16
@@ -157,7 +155,7 @@
 		#.
 		#Max length of rope available off a Rope Pulley.
 		#Range: > 1
-		maxRopeLength = 256
+		maxRopeLength = 400
 		#.
 		#Maximum allowed distance of two coupled minecarts.
 		#Range: > 1
@@ -201,6 +199,10 @@
 		#Whether stabilised bearings create a separated entity even on non-rotating contraptions.
 		#[Technical]
 		stabiliseStableContraptions = false
+		#.
+		#Whether the players hitbox should be expanded to the size of the contraption hitbox.
+		#[Technical]
+		syncPlayerPickupHitboxWithContraptionHitbox = false
 
 	#.
 	#Configure speed/capacity levels for requirements and indicators.
@@ -241,6 +243,13 @@
 		#.
 		#Fine tune the kinetic stats of individual components
 		[kinetics.stressValues.v2]
+			large_water_wheel = 16.0
+			windmill_bearing = 32.0
+			hand_crank = 2.0
+			creative_motor = 2097152.0
+			water_wheel = 4.0
+			copper_valve_handle = 2.0
+			steam_engine = 16.0
 
 			#.
 			#.
@@ -251,11 +260,11 @@
 				deployer = 0.25
 				mechanical_piston = 0.5
 				millstone = 65535.0
-				mechanical_bearing = 1.0
+				mechanical_bearing = 0.5
 				clockwork_bearing = 0.5
 				cuckoo_clock = 0.125
 				speedometer = 0.0
-				copper_backtank = 0.5
+				copper_backtank = 0.25
 				mechanical_saw = 65535.0
 				flywheel = 0.0
 				encased_chain_drive = 0.0
@@ -266,10 +275,10 @@
 				crushing_wheel = 65535.0
 				mechanical_mixer = 65535.0
 				gantry_shaft = 0.0
-				rope_pulley = 0.5
+				rope_pulley = 0.25
 				rotation_speed_controller = 0.0
-				mechanical_arm = 0.5
-				netherite_backtank = 0.5
+				mechanical_arm = 0.25
+				netherite_backtank = 0.25
 				andesite_encased_shaft = 65535.0
 				mechanical_press = 65535.0
 				large_cogwheel = 65535.0
@@ -281,7 +290,7 @@
 				shaft = 65535.0
 				brass_encased_shaft = 65535.0
 				gearshift = 0.0
-				turntable = 0.5
+				turntable = 0.25
 				sticky_mechanical_piston = 0.5
 				sequenced_gearshift = 0.0
 				weighted_ejector = 0.25
@@ -290,9 +299,10 @@
 				belt = 65535.0
 				brass_encased_cogwheel = 65535.0
 				gearbox = 0.0
-				hose_pulley = 0.5
-				elevator_pulley = 0.5
+				hose_pulley = 0.25
+				elevator_pulley = 0.25
 				mechanical_crafter = 0.125
+				chain_conveyor = 0.0
 
 			#.
 			#[in Stress Units]
@@ -371,12 +381,12 @@
 	#Range: > 1
 	linkRange = 256
 	#.
-	#Maximum possible distance in blocks between data gatherers and their target.
+	#Maximum possible distance in blocks between display links and their target.
 	#Range: > 1
 	displayLinkRange = 64
 	#.
 	#The total amount of stacks a vault can hold per block in size.
-	#Range: > 1
+	#Range: 1 ~ 2048
 	vaultCapacity = 20
 	#.
 	#The amount of ticks a brass tunnel waits between distributions.
@@ -385,6 +395,18 @@
 	#.
 	#Whether hostile mobs walking near a seat will start riding it.
 	seatHostileMobs = true
+	#.
+	#Maximum distance in blocks a Package Port can be placed at from its target.
+	#Range: > 1
+	packagePortRange = 5
+	#.
+	#The amount of packages a chain conveyor can carry at a time.
+	#Range: > 1
+	chainConveyorCapacity = 20
+	#.
+	#The amount of ticks a factory gauge waits between requests.
+	#Range: > 5
+	factoryGaugeTimer = 100
 
 #.
 #Everything related to Schematic tools

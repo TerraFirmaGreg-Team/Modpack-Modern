@@ -1,0 +1,8 @@
+{
+	"parent": "emi:item/third_item",
+	"textures": {
+		"first": "minecraft:item/kelp",
+		"second": "tfc:item/plant/cattail",
+		"third": "tfc:item/plant/lilac"
+	}
+}

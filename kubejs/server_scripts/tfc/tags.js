@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerTFCItemTags = (event) => {
 	// Теги для соответствия инструментов TFC и GT
@@ -6,7 +7,7 @@ const registerTFCItemTags = (event) => {
 	forEachMaterial(material => {
 		if (material.hasProperty(PropertyKey.TOOL)) {
 			for (let [key, value] of Object.entries(global.GTCEU_TOOLTYPES_WHICH_HAS_TFC_DUPS)) {
-				var tool = ToolHelper.get(value, material)
+				let tool = ToolHelper.get(value, material)
 				if (!tool.isEmpty()) {
 					event.add(key, tool.getId())
 				}
@@ -64,11 +65,19 @@ const registerTFCItemTags = (event) => {
 	event.add('tfg:ferments_to_rennet', 'firmalife:food/fig')
 	event.add('tfg:ferments_to_rennet', 'tfc:plant/ivy')
 
+	//Plants
+	event.add('tfc:plants', '#tfc:wild_fruits')
+
 	// Для складывания
 	event.add('tfc:pileable_ingots', '#forge:ingots')
 	event.add('tfc:pileable_sheets', '#forge:plates')
 	event.add('tfc:pileable_double_ingots', 'gtceu:tin_alloy_double_ingot')
 	event.add('tfc:pileable_double_ingots', 'gtceu:red_alloy_double_ingot')
+	event.add('tfc:pileable_double_ingots', 'gtceu:lead_double_ingot')
+	event.add('tfc:pileable_double_ingots', 'gtceu:invar_double_ingot')
+	event.add('tfc:pileable_double_ingots', 'gtceu:potin_double_ingot')
+	event.add('tfc:pileable_double_ingots', 'gtceu:cobalt_double_ingot')
+	event.add('tfc:pileable_double_ingots', 'gtceu:cobalt_brass_double_ingot')
 
 	// Рыба
 	event.add('minecraft:fishes', 'tfc:food/calamari')
@@ -482,6 +491,12 @@ const registerTFCFluidTags = (event) => {
 
 	event.add('tfc:usable_in_ingot_mold', 'gtceu:red_alloy')
 	event.add('tfc:usable_in_ingot_mold', 'gtceu:tin_alloy')
+	event.add('tfc:usable_in_ingot_mold', 'gtceu:lead')
+	event.add('tfc:usable_in_ingot_mold', 'gtceu:invar')
+	event.add('tfc:usable_in_ingot_mold', 'gtceu:potin')
+	event.add('tfc:usable_in_ingot_mold', 'gtceu:cobalt')
+	event.add('tfc:usable_in_ingot_mold', 'gtceu:cobalt_brass')
+	event.add('tfc:usable_in_ingot_mold', 'gtceu:aluminium_silicate')
 
 	event.add('tfc:usable_in_bell_mold', 'gtceu:bronze')
 	event.add('tfc:usable_in_bell_mold', 'gtceu:gold')
@@ -512,6 +527,15 @@ const registerTFCFluidTags = (event) => {
 	event.add('tfc:usable_in_wooden_bucket', 'tfc:spring_water')
 	event.add('tfc:usable_in_blue_steel_bucket', 'tfc:spring_water')
 	event.add('tfc:usable_in_red_steel_bucket', 'tfc:spring_water')
+
+	event.add('tfc:alcohols', "tfcagedalcohol:aged_beer")
+	event.add('tfc:alcohols', "tfcagedalcohol:aged_cider")
+	event.add('tfc:alcohols', "tfcagedalcohol:aged_rum")
+	event.add('tfc:alcohols', "tfcagedalcohol:aged_sake")
+	event.add('tfc:alcohols', "tfcagedalcohol:aged_vodka")
+	event.add('tfc:alcohols', "tfcagedalcohol:aged_whiskey")
+	event.add('tfc:alcohols', "tfcagedalcohol:aged_corn_whiskey")
+	event.add('tfc:alcohols', "tfcagedalcohol:aged_rye_whiskey")
 
 	// Добавляем тег для скрытия в EMI
 	event.add('c:hidden_from_recipe_viewers', 'tfc:metal/bismuth')

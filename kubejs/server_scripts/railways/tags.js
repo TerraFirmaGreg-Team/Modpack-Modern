@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerRailWaysItemTags = (event) => {
     
@@ -9,7 +10,7 @@ const registerRailWaysItemTags = (event) => {
     })
     // Adding Conductor tags
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
-		if (dye != 'white') event.add('tfg:colored_caps', `railways:${dye}_conductor_cap`)
+		if (dye !== 'white') event.add('tfg:colored_caps', `railways:${dye}_conductor_cap`)
 		event.remove('c:hidden_from_recipe_viewers',`railways:${dye}_conductor_cap`)
 	})
 }

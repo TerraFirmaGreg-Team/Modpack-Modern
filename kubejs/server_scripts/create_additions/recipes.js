@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerCreateAdditionsRecipes = (event) => {
 
@@ -90,12 +91,12 @@ const registerCreateAdditionsRecipes = (event) => {
 		C: 'gtceu:ulv_voltage_coil',
 		D: 'gtceu:ulv_machine_hull',
 		E: 'gtceu:tin_single_cable',
-		F: '#tfg:shafts'
+		F: '#forge:shafts'
 	}).id('tfg:createadditions/shaped/alternator')
 
 	//#region Liquid blaze burners
 
-	event.recipes.tfc.anvil('createaddition:straw', '#forge:plates/tin_alloy', ['shrink_second_last', 'upset_not_last', 'punch_last'])
+	event.recipes.tfc.anvil('createaddition:straw', '#forge:plates/tin_alloy', ['punch_last', 'shrink_second_last', 'upset_not_last'])
 		.tier(3)
 		.id(`tfc:anvil/straw`)
 
@@ -210,5 +211,17 @@ const registerCreateAdditionsRecipes = (event) => {
 		},
 		burnTime: 150 * 9 * 9
 	}).id('tfg:createadditions/liquid_burning/seed_oil')
+
+	event.custom({
+		type: 'createaddition:liquid_burning',
+		input: {
+			fluid: 'gtceu:steam',
+			amount: 256
+		},
+		burnTime: 4 * 9 * 9
+	}).id('tfg:createadditions/liquid_burning/steam')
 	//#endregion
+	
+	event.shapeless('createaddition:diamond_grit_sandpaper', ['minecraft:paper', 'tfc:glue', '#forge:dusts/diamond'])
+		.id('tfg:shapeless/diamond_grit_sand_paper')
 }

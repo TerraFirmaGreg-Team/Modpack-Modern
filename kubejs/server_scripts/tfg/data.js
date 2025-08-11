@@ -1,11 +1,11 @@
 // priority: 0
+"use strict";
 
 function registerTFCDataForTFG(event) {
 	registerTFGHeatData(event);
 	registerTFGItemSize(event);
 	registerTFGSupportData(event);
 	registerTFGFoodData(event);
-	registerTFGFauna(event);
 	registerTFGCropRanges(event);
 	registerTFGFLPlanters(event);
 }
@@ -42,6 +42,20 @@ const registerTFGItemSize = (event) => {
 	event.itemSize('tfg:fishing_net/tin_alloy', 'large', 'medium', 'tin_alloy_fishing_net')
 	event.itemSize('tfg:fishing_net/magnalium', 'large', 'medium', 'magnalium_fishing_net')
 
+	event.itemSize('tfg:trowel', 'large', 'medium', 'trowel')
+
+	event.itemSize('tfg:railgun_ammo_shell', 'large', 'heavy', 'trowel')
+
+	event.itemSize('tfg:harvest_basket', 'large', 'medium', 'harvest_basket')
+	event.itemSize('tfg:aluminium_harvest_basket', 'large', 'medium', 'aluminium_harvest_basket')
+
+	event.itemSize('tfg:rapeseed_product', 'small', 'light', 'rapeseed_product')
+	event.itemSize('tfg:sunflower_product', 'small', 'light', 'sunflower_product')
+	event.itemSize('betterend:amber_root_product', 'small', 'light', 'amber_roots')
+	event.itemSize('betterend:blossom_berry_product', 'small', 'light', 'amber_roots')
+	event.itemSize('betterend:cave_pumpkin', 'small', 'light', 'amber_roots')
+	event.itemSize('betterend:chorus_mushroom_product', 'small', 'light', 'amber_roots')
+	event.itemSize('betterend:shadow_berry_product', 'small', 'light', 'amber_roots')
 }
 
 
@@ -61,12 +75,16 @@ const registerTFGSupportData = (event) => {
 
 		event.support(`tfg:${stone}_support_horizontal`, 2, 2, 4, `${stone}_support`)
 	})
+
+	global.AD_ASTRA_WOOD.forEach(wood => {
+		event.support(`tfg:${wood.name}_support_horizontal`, 2, 2, 4, `${wood.name}_support`)
+	})
 }
 
 
 const registerTFGFoodData = (event) => {
 
-	// birt has the same stats as chicken
+	// meats
 
 	event.foodItem('tfg:food/raw_birt', food => {
 		food.hunger(4)
@@ -109,6 +127,21 @@ const registerTFGFoodData = (event) => {
 		food.decayModifier(2.25)
 	})
 
+	event.foodItem('tfg:food/raw_moon_rabbit', food => {
+		food.hunger(4)
+		food.protein(2.0)
+		food.decayModifier(3)
+	})
+
+	event.foodItem('tfg:food/cooked_moon_rabbit', food => {
+		food.hunger(6)
+		food.saturation(2.5)
+		food.protein(5)
+		food.decayModifier(2.25)
+	})
+
+	// high-tech food
+
 	global.FOOD_FRUIT.forEach(fruit => {
 		event.foodItem(`tfg:food/freeze_dried/${fruit.name}`, food => {
 			food.hunger(4)
@@ -132,6 +165,8 @@ const registerTFGFoodData = (event) => {
 		food.type('dynamic')
 	})
 
+	// crops
+
 	event.foodItem('tfg:roasted_sunflower_seeds', food => {
 		food.hunger(4)
 		food.decayModifier(0.5)
@@ -143,44 +178,182 @@ const registerTFGFoodData = (event) => {
 		food.decayModifier(0.5)
 	})
 
-	event.foodItem('tfg:food/raw_moon_rabbit', food => {
+	event.foodItem('betterend:amber_root_product', food => {
 		food.hunger(4)
-		food.protein(2.0)
+		food.decayModifier(1)
+		food.saturation(1)
+		food.grain(3)
+	})
+
+	event.foodItem('betterend:blossom_berry_product', food => {
+		food.hunger(5)
+		food.decayModifier(2)
+		food.saturation(1)
+		food.water(7.5)
+		food.fruit(1.5)
+	})
+
+	event.foodItem('betterend:cave_pumpkin', food => {
+		food.hunger(4)
+		food.saturation(0)
+		food.decayModifier(0.5)
+	})
+
+	event.foodItem('betterend:cave_pumpkin_chunks', food => {
+		food.hunger(4)
+		food.saturation(1)
+		food.decayModifier(1.5)
+		food.water(5)
+		food.fruit(0.75)
+	})
+
+	event.foodItem('betterend:cave_pumpkin_pie', food => {
+		food.hunger(4)
+		food.saturation(3)
+		food.decayModifier(2.5)
+		food.water(5)
+		food.fruit(2)
+		food.grain(1.5)
+	})
+
+	event.foodItem('betterend:chorus_mushroom_product', food => {
+		food.hunger(2)
+		food.saturation(1)
 		food.decayModifier(3)
+		food.water(3)
+		food.vegetables(1.5)
 	})
 
-	event.foodItem('tfg:food/cooked_moon_rabbit', food => {
-		food.hunger(6)
+	event.foodItem('betterend:chorus_mushroom_cooked', food => {
+		food.hunger(2)
 		food.saturation(2.5)
-		food.protein(5)
-		food.decayModifier(2.25)
+		food.decayModifier(1.5)
+		food.vegetables(2)
+	})
+
+	event.foodItem('betterend:shadow_berry_product', food => {
+		food.hunger(5)
+		food.decayModifier(2)
+		food.saturation(1)
+		food.water(5)
+		food.fruit(1.5)
+	})
+
+	event.foodItem('betterend:shadow_berry_cooked', food => {
+		food.hunger(5)
+		food.decayModifier(1)
+		food.saturation(2)
+		food.fruit(2)
+	})
+
+	event.foodItem('betterend:bolux_mushroom_product', food => {
+		food.hunger(2)
+		food.saturation(1)
+		food.decayModifier(3)
+		food.water(3)
+		food.vegetables(1.5)
+	})
+
+	event.foodItem('betterend:bolux_mushroom_cooked', food => {
+		food.hunger(2)
+		food.saturation(2.5)
+		food.decayModifier(1.5)
+		food.vegetables(2)
+	})
+
+	// misc
+
+	event.foodItem('tfg:food/ice_soup', food => {
+		food.hunger(1)
+		food.water(20)
+		food.decayModifier(0)
+	})
+
+	event.drinkable('tfg:semiheavy_ammoniacal_water', data => {
+		data.thirst(10)
+		data.effect('minecraft:nausea', effect => {
+			effect.chance(0.5)
+			effect.duration(200)
+		})
 	})
 }
 
-const registerTFGFauna = (event) => {
-
-	//event.fauna(climate => { }, fauna => { fauna.chance(0) }, 'tfg:moon_rabbit')
-}
 
 const registerTFGCropRanges = (event) => {
 
+	// Earth
 	event.climateRange(climate => {
-        climate.minHydration(20)
-        climate.maxHydration(80)
-        climate.minTemperature(5)
-        climate.maxTemperature(40)
-        climate.hydrationWiggle(7.5)
-        climate.temperatureWiggle(5.5)
-    }, 'tfg:sunflower')
+		climate.minHydration(20)
+		climate.maxHydration(80)
+		climate.minTemperature(5)
+		climate.maxTemperature(40)
+		climate.hydrationWiggle(7.5)
+		climate.temperatureWiggle(5.5)
+	}, 'tfg:sunflower')
 
-    event.climateRange(climate => {
-        climate.minHydration(10)
-        climate.maxHydration(60)
-        climate.minTemperature(-5)
-        climate.maxTemperature(25)
-        climate.hydrationWiggle(7.5)
-        climate.temperatureWiggle(1.5)
-    }, 'tfg:rapeseed')
+	event.climateRange(climate => {
+		climate.minHydration(10)
+		climate.maxHydration(60)
+		climate.minTemperature(-5)
+		climate.maxTemperature(25)
+		climate.hydrationWiggle(7.5)
+		climate.temperatureWiggle(1.5)
+	}, 'tfg:rapeseed')
+
+	// Mars
+	event.climateRange(climate => {
+		climate.minHydration(0)
+		climate.maxHydration(40)
+		climate.minTemperature(-150)
+		climate.maxTemperature(15)
+		climate.hydrationWiggle(7.5)
+		climate.temperatureWiggle(5.5)
+	}, 'betterend:amber_root')
+
+	event.climateRange(climate => {
+		climate.minHydration(0)
+		climate.maxHydration(100)
+		climate.minTemperature(-80)
+		climate.maxTemperature(30)
+		climate.hydrationWiggle(7.5)
+		climate.temperatureWiggle(5.5)
+	}, 'betterend:blossom_berry')
+
+	event.climateRange(climate => {
+		climate.minHydration(0)
+		climate.maxHydration(40)
+		climate.minTemperature(-150)
+		climate.maxTemperature(15)
+		climate.hydrationWiggle(7.5)
+		climate.temperatureWiggle(5.5)
+	}, 'betterend:bolux_mushroom')
+
+	event.climateRange(climate => {
+		climate.minHydration(0)
+		climate.maxHydration(60)
+		climate.minTemperature(-100)
+		climate.maxTemperature(30)
+		climate.hydrationWiggle(7.5)
+		climate.temperatureWiggle(5.5)
+	}, 'betterend:cave_pumpkin_plant')
+
+	event.climateRange(climate => {
+		climate.minHydration(0)
+		climate.maxHydration(40)
+		climate.minTemperature(-150)
+		climate.maxTemperature(15)
+		climate.hydrationWiggle(7.5)
+		climate.temperatureWiggle(5.5)
+	}, 'betterend:chorus_mushroom')
+
+	event.climateRange(climate => {
+		climate.minHydration(0)
+		climate.maxHydration(100)
+		climate.minTemperature(-80)
+		climate.maxTemperature(30)
+		climate.hydrationWiggle(7.5)
+		climate.temperatureWiggle(5.5)
+	}, 'betterend:shadow_berry')
 }
 
 const registerTFGFLPlanters = (event) => {
@@ -188,7 +361,7 @@ const registerTFGFLPlanters = (event) => {
 	event.firmalifePlantable(
 		'tfg:sunflower_seeds',
 		'large',
-		10,
+		0,
 		3,
 		0.15,
 		'tfg:sunflower_seeds',
@@ -206,7 +379,7 @@ const registerTFGFLPlanters = (event) => {
 	event.firmalifePlantable(
 		'tfg:rapeseed_seeds',
 		'large',
-		10,
+		0,
 		3,
 		0.15,
 		'tfg:rapeseed_seeds',
@@ -217,6 +390,117 @@ const registerTFGFLPlanters = (event) => {
 			'tfg:block/crop/rapeseed_greenhouse_1',
 			'tfg:block/crop/rapeseed_greenhouse_2',
 			'tfg:block/crop/rapeseed_greenhouse_3'
+		],
+		null
+	)
+
+	event.firmalifePlantable(
+		'betterend:amber_root_seeds',
+		'large',
+		0,
+		3,
+		0.15,
+		'betterend:amber_root_seeds',
+		'betterend:amber_root_product',
+		'phosphorous',
+		[
+			'betterend:block/amber_root_0',
+			'betterend:block/amber_root_1',
+			'betterend:block/amber_root_2',
+			'betterend:block/amber_root_3'
+		],
+		null
+	)
+
+	event.firmalifePlantable(
+		'betterend:blossom_berry_seeds',
+		'large',
+		0,
+		3,
+		0.15,
+		'betterend:blossom_berry_seeds',
+		'betterend:blossom_berry_product',
+		'potassium',
+		[
+			'betterend:block/blossom_berry_seed_0',
+			'betterend:block/blossom_berry_seed_1',
+			'betterend:block/blossom_berry_seed_2',
+			'betterend:block/blossom_berry_seed_3' // TODO
+		],
+		null
+	)
+
+	event.firmalifePlantable(
+		'betterend:bolux_mushroom_seeds',
+		'quad',
+		1,
+		3,
+		0.15,
+		'betterend:bolux_mushroom_seeds',
+		'betterend:bolux_mushroom_product',
+		'phosphorous',
+		[
+			// TODO: all
+			'betterend:block/bolux_mushroom_greenhouse_0',
+			'betterend:block/bolux_mushroom_greenhouse_1',
+			'betterend:block/bolux_mushroom_greenhouse_2',
+			'betterend:block/bolux_mushroom_greenhouse_3'
+		],
+		null
+	)
+
+	event.firmalifePlantable(
+		'betterend:chorus_mushroom_seeds',
+		'quad',
+		1,
+		3,
+		0.15,
+		'betterend:chorus_mushroom_seeds',
+		'betterend:chorus_mushroom_product',
+		'phosphorous',
+		[
+			'betterend:block/chorus_mushroom_0',
+			'betterend:block/chorus_mushroom_1',
+			'betterend:block/chorus_mushroom_2',
+			'betterend:block/chorus_mushroom_3'
+		],
+		null
+	)
+
+	event.firmalifePlantable(
+		'betterend:cave_pumpkin_plant_seeds',
+		'hanging',
+		2,
+		3,
+		0.15,
+		'betterend:cave_pumpkin_plant_seeds',
+		'betterend:cave_pumpkin',
+		'phosphorous',
+		[
+			// TODO: all
+			'betterend:block/cave_pumpkin_greenhouse_0',
+			'betterend:block/cave_pumpkin_greenhouse_1',
+			'betterend:block/cave_pumpkin_greenhouse_2',
+			'betterend:block/cave_pumpkin_greenhouse_3'
+		],
+		'betterend:block/cave_pumpkin_greenhouse_fruit'
+	)
+
+	event.firmalifePlantable(
+		'betterend:shadow_berry_seeds',
+		'quad',
+		1,
+		3,
+		0.15,
+		'betterend:shadow_berry_seeds',
+		'betterend:shadow_berry_product',
+		'potassium',
+		[
+			// TODO: all
+			'betterend:block/shadow_berry_greenhouse_0',
+			'betterend:block/shadow_berry_greenhouse_1',
+			'betterend:block/shadow_berry_greenhouse_2',
+			'betterend:block/shadow_berry_greenhouse_3'
 		],
 		null
 	)

@@ -30,6 +30,12 @@
 			x: -4.5d
 			y: 8.5d
 		}
+		{
+			id: "338395C5F9B3A67D"
+			linked_quest: "044DD42F4F1E900F"
+			x: 2.5d
+			y: 3.5d
+		}
 	]
 	quests: [
 		{
@@ -269,6 +275,21 @@
 				{
 					id: "72281E0F0CCE2EB9"
 					item: "sophisticatedbackpacks:stack_upgrade_starter_tier"
+					type: "item"
+				}
+				{
+					id: "4791539E1F6BA061"
+					item: "sophisticatedbackpacks:stonecutter_upgrade"
+					type: "item"
+				}
+				{
+					id: "48BDD2BB39BFCED2"
+					item: "sophisticatedbackpacks:feeding_upgrade"
+					type: "item"
+				}
+				{
+					id: "61776E81CC7B8F0B"
+					item: "sophisticatedbackpacks:advanced_feeding_upgrade"
 					type: "item"
 				}
 			]
@@ -568,26 +589,15 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"This is a guide on how to automatically route &lall&r your Hot Ingots to your Chemical Bath, while keeping everything automated in tip-top shape."
-				""
-				"The cheap way would be to use filters, and manually add Hot Ingots one by one... which is so boring! Let's try the fun option."
-				""
-				"Install an &aItem Tag Filter&r Cover on the side of your &3Chemical Bath&r, open it and set it to whitelist \"&e&lhot_ingots&r\"."
-				""
-				"From here, you can route with &9any logistics system&r of your choice."
+				"{quests.high_voltage.250_iq.desc.1}"
 				"{@pagebreak}"
-				"Connect the output of your &3EBF(s)&r to the input of your &3Chemical Bath&r and the output dump (Chest or Crate)."
-				"You can also have a &dRestrictive Pipe&r in front of the output dump to ensure the Chemical Bath will be prioritized."
-				""
-				"&l&9Note:&r If you wish to know more tags for more automation setups, they will display if you press Shift when hovering over an item. For instance, an item tagged with &e&o#forge:plates/copper&r would be filtered as &e&lplates/copper&r."
-				""
-				"&9Other Note:&r The Item Tag Filter partially supports &dregex&r. Hover over the info icon for more information."
+				"{quests.high_voltage.250_iq.desc.2}"
 			]
 			icon: "gtceu:item_tag_filter"
 			id: "7C1FD81C5DCFB74E"
 			shape: "square"
 			size: 1.0d
-			subtitle: "Stop burning your darn hands!"
+			subtitle: "{quests.high_voltage.250_iq.subtitle}"
 			tasks: [
 				{
 					id: "34DEDF3B7F0DB3BC"
@@ -600,7 +610,7 @@
 					type: "item"
 				}
 			]
-			title: "250IQ"
+			title: "{quests.high_voltage.250_iq.title}"
 			x: 10.0d
 			y: 9.0d
 		}
@@ -1142,7 +1152,7 @@
 				id: "05BCE3FC68B3C66E"
 				item: {
 					Count: 1
-					id: "gtceu:avanced_nanomuscle_chestplate"
+					id: "gtceu:advanced_nanomuscle_chestplate"
 					tag: { }
 				}
 				type: "item"
@@ -2457,7 +2467,13 @@
 			subtitle: "{quests.tfg_tips.tools_tips.soybean_oil.subtitle}"
 			tasks: [{
 				id: "627EFBAAD0A86E02"
-				item: "ftbfiltersystem:smart_filter"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item(firmalife:bucket/soybean_oil)"
+					}
+				}
 				title: "{quests.tfg_tips.tools_tips.soybean_oil.task}"
 				type: "item"
 			}]
@@ -2486,6 +2502,82 @@
 			title: "{quests.tfg_tips.tools_tips.markings.title}"
 			x: 0.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["150B7C5CD152E1BA"]
+			description: ["{quests.tfg_tips.tools_tips.harvest_basket.desc}"]
+			id: "5B0A9757F1EF1B9E"
+			subtitle: "{quests.tfg_tips.tools_tips.harvest_basket.subtitle}"
+			tasks: [{
+				id: "15C2F940F5A576D5"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(tfg:harvester)"
+					}
+				}
+				title: "{quests.tfg_tips.tools_tips.harvest_basket.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.tools_tips.harvest_basket.title}"
+			x: -6.0d
+			y: 10.0d
+		}
+		{
+			description: ["{quests.tfg_tips.harpoon.desc}"]
+			id: "78374FC41EFCFD9B"
+			subtitle: "{quests.tfg_tips.harpoon.subtitle}"
+			tasks: [{
+				id: "0DDF6CE85945464A"
+				item: {
+					Count: 1
+					id: "species:harpoon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.harpoon.title}"
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["78374FC41EFCFD9B"]
+			description: ["{quests.tfg_tips.coil.desc}"]
+			id: "3876C12655AE6E3C"
+			subtitle: "{quests.tfg_tips.coil.subtitle}"
+			tasks: [{
+				id: "0B27949208A80BD9"
+				item: "species:coil"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.coil.title}"
+			x: -9.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["72B3EA6588E18CCC"]
+			description: ["{quests.tfg_tips.self_defense.desc}"]
+			icon: "species:cranktrap"
+			id: "104EFD3257F7BA61"
+			subtitle: "{quests.tfg_tips.self_defense.subtitle}"
+			tasks: [
+				{
+					id: "227B319F72D2E23C"
+					item: "species:cranktrap"
+					type: "item"
+				}
+				{
+					id: "7551326CEF2F9575"
+					item: "createaddition:barbed_wire"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.self_defense.title}"
+			x: -2.5d
+			y: 0.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.tools_tips.subtitle}"]

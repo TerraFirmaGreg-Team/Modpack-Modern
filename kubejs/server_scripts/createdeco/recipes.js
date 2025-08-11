@@ -1,3 +1,5 @@
+"use strict";
+
 const registerCreatedecoRecipes = (event) => {
 
 	//#region Item Replacements
@@ -48,6 +50,7 @@ const registerCreatedecoRecipes = (event) => {
 	event.remove({ id: 'createdeco:zinc_bars_overlay' })
 	event.remove({ id: 'createdeco:zinc_bars' })
 	event.remove({ id: 'createdeco:industrial_iron_block' })
+	event.remove({ id: 'createdeco:netherite_ingot' })
 	event.remove({ id: 'gtceu:assembler/bricks' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/tin_alloy' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/brass' })
@@ -69,11 +72,11 @@ const registerCreatedecoRecipes = (event) => {
 
 	function lampRecipe(output, lampType, lampColor) {
 
-		const replacementLampType = lampType;
-		if (lampType == 'industrial_iron') {
+		let replacementLampType = lampType;
+		if (lampType === 'industrial_iron') {
 			replacementLampType = 'steel';
 		}
-		if (lampType == 'andesite') {
+		if (lampType === 'andesite') {
 			replacementLampType = 'wrought_iron';
 		}
 
@@ -230,7 +233,7 @@ const registerCreatedecoRecipes = (event) => {
 		event.remove({ id: `createdeco:${bar.metal}_trapdoor` })
 		event.remove({ id: `createdeco:${bar.metal}_door` })
 
-		if (bar.metal != 'iron') {
+		if (bar.metal !== 'iron') {
 			event.remove({ type: 'minecraft:stonecutting', output: `createdeco:${bar.metal}_bars` })
 
 			event.recipes.tfc.anvil(`4x createdeco:${bar.metal}_bars`, `#forge:ingots/${bar.material}`, ['shrink_last', 'punch_second_last', 'punch_third_last'])
@@ -347,49 +350,49 @@ const registerCreatedecoRecipes = (event) => {
 
 	event.recipes.gtceu.forming_press('createdeco:gold_coin')
 		.itemInputs('#forge:nuggets/gold')
-		.notConsumable('gtceu:credit_casting_mold')
+		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('4x createdeco:gold_coin')
 		.duration(50)
 		.EUt(16)
 
 	event.recipes.gtceu.forming_press('createdeco:netherite_coin')
 		.itemInputs('#forge:nuggets/blue_steel')
-		.notConsumable('gtceu:credit_casting_mold')
+		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('4x createdeco:netherite_coin')
 		.duration(50)
 		.EUt(16)
 
 	event.recipes.gtceu.forming_press('createdeco:brass_coin')
 		.itemInputs('#forge:nuggets/brass')
-		.notConsumable('gtceu:credit_casting_mold')
+		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('4x createdeco:brass_coin')
 		.duration(50)
 		.EUt(16)
 
 	event.recipes.gtceu.forming_press('createdeco:iron_coin')
 		.itemInputs('#forge:nuggets/wrought_iron')
-		.notConsumable('gtceu:credit_casting_mold')
+		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('4x createdeco:iron_coin')
 		.duration(50)
 		.EUt(16)
 
 	event.recipes.gtceu.forming_press('createdeco:copper_coin')
 		.itemInputs('#forge:nuggets/copper')
-		.notConsumable('gtceu:credit_casting_mold')
+		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('4x createdeco:copper_coin')
 		.duration(50)
 		.EUt(16)
 
 	event.recipes.gtceu.forming_press('createdeco:industrial_iron_coin')
 		.itemInputs('#forge:nuggets/steel')
-		.notConsumable('gtceu:credit_casting_mold')
+		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('createdeco:industrial_iron_coin')
 		.duration(50)
 		.EUt(16)
 
 	event.recipes.gtceu.forming_press('createdeco:zinc_coin')
 		.itemInputs('#forge:nuggets/zinc')
-		.notConsumable('gtceu:credit_casting_mold')
+		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('createdeco:zinc_coin')
 		.duration(50)
 		.EUt(16)

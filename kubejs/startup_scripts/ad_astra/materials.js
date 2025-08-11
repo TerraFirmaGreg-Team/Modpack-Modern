@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerAdAstraMaterials = (event) => {
 
@@ -22,25 +23,33 @@ const registerAdAstraMaterials = (event) => {
 		.ore()
 		.addOreByproducts('olivine', 'rutile', 'rutile')
 		.ingot()
+		.liquid()
 		.blastTemp(2000, 'low', GTValues.VA[GTValues.MV])
 		.flags(
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
 			GTMaterialFlags.GENERATE_PLATE, 
 			GTMaterialFlags.GENERATE_ROD,
-			GTMaterialFlags.GENERATE_DENSE
+			GTMaterialFlags.GENERATE_DENSE,
+			GTMaterialFlags.GENERATE_GEAR,
+			GTMaterialFlags.GENERATE_FRAME,
+			GTMaterialFlags.DISABLE_ALLOY_BLAST
 		)
 
-	// mars?
+	// mars
 	event.create('ostrum')
-		//.components('2x scheelite', '1x hematite', '1x rutile', '4x oxygen')
+		//.components('3x scheelite', '2x hematite', '2x thorium', '4x oxygen')
 		.color(0xbd7980)
 		.secondaryColor(0xA66C8D)
 		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
-		.ore()
+		.dust()
 		.ingot()
+		.liquid()
+		.blastTemp(2900, 'mid', GTValues.VA[GTValues.HV])
 		.flags(
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
-			GTMaterialFlags.GENERATE_PLATE
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.DISABLE_ALLOY_BLAST
+
 		)
 
 	// venus?

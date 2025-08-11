@@ -79,7 +79,7 @@
 				"weight": 100
 			},
 			{
-				"type": "minecraft:skeleton",
+				"type": "minecraft:stray",
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
@@ -92,7 +92,7 @@
 			},
 			{
 				"type": "species:limpet",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
 			},

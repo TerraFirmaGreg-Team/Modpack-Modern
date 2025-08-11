@@ -1,12 +1,14 @@
 {
     "name": "TerraFirmaGreg-Modern",
-    "version": "0.9.11",
+    "version": "DEV",
+    "release_type": "release",
     "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
     "author": "Exception, Xikaro",
     "overrides": [
         "config",
         "defaultconfigs",
         "kubejs",
+		"tacz",
         "!kubejs/probe/**"
     ],
     "server_overrides": [
@@ -17,7 +19,8 @@
         "server_starter.conf",
         "server-icon.png",
         "start_server.bat",
-        "README.md"
+        "README.md",
+        "!kubejs/assets/**"
     ],
     "client_overrides": [
         "resourcepacks"
@@ -155,7 +158,7 @@
         "first-person-model": {
             "side": "CLIENT"
         },
-        "ftb-backups-2": {
+        "flickerfix": {
             "side": "CLIENT"
         },
         "no-report-button": {
@@ -206,10 +209,10 @@
         "fast-ip-ping": {
             "side": "CLIENT"
         },
-        "badoptimizations": {
+        "entityculling": {
             "side": "CLIENT"
         },
-        "entityculling": {
+        "pick-up-notifier": {
             "side": "CLIENT"
         },
         "resourceful-config": {
@@ -236,10 +239,10 @@
         "xaeros-minimap": {
             "side": "BOTH"
         },
-        "particular-reforged": {
+        "xaeros-world-map": {
             "side": "BOTH"
         },
-        "pick-up-notifier": {
+        "particular-reforged": {
             "side": "BOTH"
         },
         "inventory-tweaks-refoxed": {
@@ -250,6 +253,9 @@
         },
         "detected-setblock-be-gone": {
             "side": "BOTH"
+        },
+        "ad-astra-auto-lander": {
+            "side": "CLIENT"
         },
         "probejs": {
             "export": false

@@ -207,8 +207,8 @@
 			]
 			icon: "gtceu:mv_steam_turbine"
 			id: "583D0CC4FAA4FC98"
-			shape: "square"
-			size: 1.0d
+			shape: "octagon"
+			size: 2.0d
 			subtitle: "{quests.medium_voltage.mv_energy.subtitle}"
 			tasks: [{
 				id: "1F170291094582D6"
@@ -223,8 +223,8 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_energy.title}"
-			x: 6.0d
-			y: -0.5d
+			x: 7.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2AD44111B9B39C90"]
@@ -838,7 +838,7 @@
 		{
 			dependencies: [
 				"3D98819A799D2E64"
-				"0EFEE489906256AA"
+				"79E8DC4D9B5F6B97"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -928,8 +928,8 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_batteries.title}"
-			x: 9.0d
-			y: -0.5d
+			x: 9.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["22E462070F8B027A"]
@@ -1409,8 +1409,8 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_battery.title}"
-			x: 7.0d
-			y: -0.5d
+			x: 8.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1529,8 +1529,8 @@
 			description: ["{quests.medium_voltage.lsb.desc}"]
 			icon: "gtceu:steel_large_boiler"
 			id: "730D7C10DEED3117"
-			shape: "square"
-			size: 1.0d
+			shape: "heart"
+			size: 1.5d
 			subtitle: "{quests.medium_voltage.lsb.subtitle}"
 			tasks: [{
 				id: "67728209D0BE18B1"

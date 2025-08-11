@@ -34,6 +34,12 @@
 			x: -29.0d
 			y: 0.0d
 		}
+		{
+			id: "7C03FE015586C652"
+			linked_quest: "55213ACBF5F5D398"
+			x: -14.5d
+			y: 13.0d
+		}
 	]
 	quests: [
 		{
@@ -1385,7 +1391,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["4CD3F04793CE47A2"]
 			description: ["{quests.steam_age.paper.desc}"]
 			disable_toast: true
 			id: "16CF5A9012EF4B27"
@@ -1508,32 +1513,6 @@
 			title: "{quests.steam_age.steam_grinder.title}"
 			x: -25.0d
 			y: 6.0d
-		}
-		{
-			dependencies: ["3E175E20C91F168B"]
-			dependency_requirement: "one_completed"
-			description: ["{quests.steam_age.organization.desc}"]
-			icon: "create:clipboard"
-			id: "03CCE899894A3364"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.steam_age.organization.subtitle}"
-			tasks: [
-				{
-					id: "2F56DA36512D2363"
-					item: "create:clipboard"
-					type: "item"
-				}
-				{
-					id: "6A41DD1F9FFD1781"
-					item: "create:crafting_blueprint"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "{quests.steam_age.organization.title}"
-			x: -16.5d
-			y: 10.5d
 		}
 		{
 			dependencies: ["32046292AA5B0E30"]

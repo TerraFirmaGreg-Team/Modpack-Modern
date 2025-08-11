@@ -1,5 +1,9 @@
 // priority: 0
+"use strict";
 
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
 function registerTFGMoldRecipes(event) {
 
 	event.shaped('tfg:mining_hammer_head_extruder_mold', [
@@ -256,6 +260,16 @@ function registerTFGMoldRecipes(event) {
 		'f  ',
 		'hS ',
 		'   '
+	], {
+		S: 'gtceu:empty_mold',
+		f: '#forge:tools/files',
+		h: '#forge:tools/hammers'
+	})
+
+	event.shaped('tfg:wire_cutter_head_extruder_mold', [
+		'hS ',
+		'   ',
+		' f '
 	], {
 		S: 'gtceu:empty_mold',
 		f: '#forge:tools/files',

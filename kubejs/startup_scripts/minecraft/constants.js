@@ -1,9 +1,11 @@
 // priority: 0
+"use strict";
 
 /**
  * Список хранит предметы,
  * у которых должны быть удалены тэги и они должны быть скрыты в REI.
  */
+
 global.MINECRAFT_DISABLED_ITEMS = [
     // Зараженные блоки
     'minecraft:infested_stone',
@@ -135,19 +137,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:chiseled_sandstone', 
     'minecraft:sand', 
     'minecraft:suspicious_sand',
-
-    // Красный песок
-    'minecraft:red_sandstone', 
-    'minecraft:red_sandstone_stairs', 
-    'minecraft:red_sandstone_slab', 
-    'minecraft:red_sandstone_wall', 
-    'minecraft:smooth_red_sandstone', 
-    'minecraft:smooth_red_sandstone_stairs', 
-    'minecraft:smooth_red_sandstone_slab',
-    'minecraft:cut_red_sandstone', 
-    'minecraft:cut_red_sandstone_slab', 
-    'minecraft:chiseled_red_sandstone', 
-    'minecraft:red_sand',
 
     // Кораллы
     'minecraft:horn_coral',
@@ -660,6 +649,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:honeycomb',
     'minecraft:grindstone',
     'minecraft:fermented_spider_eye',
+    'minecraft:ender_eye',
 
     // Кримзон незер дерево
     // TODO: Разблокировать после добавления ада
@@ -717,10 +707,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:warped_nylium', 
     'minecraft:soul_sand', 
     'minecraft:soul_soil', 
-    'minecraft:crying_obsidian', 
-    'minecraft:nether_wart_block', 
-    'minecraft:warped_wart_block', 
-    'minecraft:crimson_fungus', 
+    'minecraft:crying_obsidian',
     'minecraft:piglin_head', 
     'minecraft:zombie_head', 
     'minecraft:skeleton_skull', 
@@ -734,7 +721,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crimson_roots', 
     //'minecraft:nether_brick', 
     'minecraft:nether_wart', 
-    'minecraft:warped_fungus',
     'minecraft:respawn_anchor',
     'minecraft:ghast_tear',
     'minecraft:nautilus_shell'
@@ -773,21 +759,6 @@ global.VANILLA_WOOD_TYPES = [
     "mangrove",
     "crimson", // TODO: Разблокировать когда появится АД
     "warped" // TODO: Разблокировать когда появится АД
-];
-
-global.VANILLA_STONE_TYPES = [
-    "sand",
-    "red_sand",
-    "gravel",
-    "ore",
-    "deepslate",
-    "basalt",
-    "endstone",
-    "netherrack",
-    "andesite",
-    "diorite",
-    "granite",
-    "tuff"
 ];
 
 global.MINECRAFT_DYE_NAMES = [

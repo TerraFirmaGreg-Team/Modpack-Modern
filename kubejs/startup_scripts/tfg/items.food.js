@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function registerTFGFoodItems(event) {
 
@@ -88,4 +89,12 @@ function registerTFGFoodItems(event) {
 			.effect('minecraft:hunger', 100, 0, 1))
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
+
+	event.create('tfg:food/ice_soup')
+		.translationKey('item.tfg.food.ice_soup')
+		.texture('tfg:item/food/ice_soup')
+		.food(food => food.eaten(ctx => {
+			ctx.player.give('tfc:ceramic/bowl')
+		}))
+		// intentionally not tagged as food
 }

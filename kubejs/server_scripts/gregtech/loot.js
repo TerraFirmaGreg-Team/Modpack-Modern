@@ -1,5 +1,5 @@
 // priority: 10
-
+"use strict";
 const STONE_TYPES_TO_COBBLE = {
 	gabbro: 'tfc:rock/cobble/gabbro',
 	shale: 'tfc:rock/cobble/shale',
@@ -168,19 +168,14 @@ const registerGTCEULoots = (event) => {
 
 			// I LOVE LOOTJS I LOVE LOOTJS I LOVE LOOTJS
 			let rawOreBlock = `:${ChemicalHelper.get(TagPrefix.rawOreBlock, material, 1).getItem()}`;
-			if (material == GTMaterials.Copper || material == GTMaterials.Gold || material == GTMaterials.Iron)
-			{
-				rawOreBlock = "minecraft" + rawOreBlock;
-			}
-			else if (material == TFGHelpers.getMaterial('desh')
-				|| material == TFGHelpers.getMaterial('ostrum')
-				|| material == TFGHelpers.getMaterial('calorite'))
-			{
-				rawOreBlock = "ad_astra" + rawOreBlock;
-			}
-			else
-			{
-				rawOreBlock = "gtceu" + rawOreBlock;
+			if (material === GTMaterials.Copper || material === GTMaterials.Gold || material === GTMaterials.Iron) {
+				rawOreBlock = `minecraft${  rawOreBlock}`;
+			} else if (material === TFGHelpers.getMaterial('desh')
+				|| material === TFGHelpers.getMaterial('ostrum')
+				|| material === TFGHelpers.getMaterial('calorite')) {
+				rawOreBlock = `ad_astra${  rawOreBlock}`;
+			} else {
+				rawOreBlock = `gtceu${  rawOreBlock}`;
 			}
 
 			event.addBlockLootModifier(rawOreBlock)
@@ -198,10 +193,10 @@ const registerGTCEULoots = (event) => {
 				let stoneTypeMaterial = TFGHelpers.getMaterial(stoneType)
 
 				// Material doesn't work here because of reasons
-				if (stoneTypeMaterial == null) {
-					if (stoneType == "pyroxenite")
+				if (stoneTypeMaterial === null) {
+					if (stoneType === "pyroxenite")
 						stoneTypeMaterial = GTMaterials.Blackstone;
-					else if (stoneType == "deepslate")
+					else if (stoneType === "deepslate")
 						stoneTypeMaterial = GTMaterials.Deepslate;
 				}
 

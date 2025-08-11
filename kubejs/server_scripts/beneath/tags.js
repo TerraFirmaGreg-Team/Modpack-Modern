@@ -1,3 +1,5 @@
+"use strict";
+
 const registerBeneathBlockTags = (event) => {
 
 	global.BENEATH_DISABLED_ITEMS.forEach(item => {
@@ -8,7 +10,6 @@ const registerBeneathBlockTags = (event) => {
 
 	event.add('forge:ores', 'beneath:ore/nether_cursecoal')
 	event.add('forge:ores', 'beneath:ore/blackstone_sylvite')
-
 	event.add('beneath:mushrooms', 'minecraft:red_mushroom')
 	event.add('beneath:mushrooms', 'minecraft:brown_mushroom')
 	event.add('beneath:poisonous_mushrooms', 'minecraft:red_mushroom')
@@ -28,6 +29,8 @@ const registerBeneathItemTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
 
+	event.add("forge:raw_materials/cursecoal", "beneath:cursecoal")
+	event.add("forge:raw_materials/sylvite", "tfc:ores/sylvite")
 	event.add('forge:ores', 'beneath:ore/nether_cursecoal')
 	event.add('forge:ores', 'beneath:ore/blackstone_sylvite')
 	

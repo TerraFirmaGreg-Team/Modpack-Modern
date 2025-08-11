@@ -93,7 +93,7 @@
 				"weight": 50
 			},
 			{
-				"type": "minecraft:skeleton",
+				"type": "minecraft:stray",
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 50
@@ -106,7 +106,7 @@
 			},
 			{
 				"type": "species:limpet",
-				"maxCount": 2,
+				"maxCount": 1,
 				"minCount": 1,
 				"weight": 50
 			},
@@ -115,6 +115,24 @@
 				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "endermanoverhaul:end_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 2
+			},
+			{
+				"type": "endermanoverhaul:end_islands_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 2
+			},
+			{
+				"type": "endermanoverhaul:soulsand_valley_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 2
 			}
 		],
 		"underground_water_creature": [],
