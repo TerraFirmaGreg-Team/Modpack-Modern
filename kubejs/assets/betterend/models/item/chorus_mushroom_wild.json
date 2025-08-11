@@ -1,3 +1,7 @@
 {
-	"parent": "betterend:block/chorus_mushroom_wild_mature"
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "betterend:block/chorus_mushroom_3",
+		"layer1": "betterend:block/wild_crop"
+	}
 }

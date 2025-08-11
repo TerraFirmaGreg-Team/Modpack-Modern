@@ -425,7 +425,7 @@ const registerTFGFLPlanters = (event) => {
 			'betterend:block/blossom_berry_seed_0',
 			'betterend:block/blossom_berry_seed_1',
 			'betterend:block/blossom_berry_seed_2',
-			'betterend:block/blossom_berry_seed_3' // TODO
+			'betterend:block/blossom_berry_seed_3'
 		],
 		null
 	)
@@ -440,7 +440,6 @@ const registerTFGFLPlanters = (event) => {
 		'betterend:bolux_mushroom_product',
 		'phosphorous',
 		[
-			// TODO: all
 			'betterend:block/bolux_mushroom_greenhouse_0',
 			'betterend:block/bolux_mushroom_greenhouse_1',
 			'betterend:block/bolux_mushroom_greenhouse_2',
@@ -477,13 +476,13 @@ const registerTFGFLPlanters = (event) => {
 		'betterend:cave_pumpkin',
 		'phosphorous',
 		[
-			// TODO: all
 			'betterend:block/cave_pumpkin_greenhouse_0',
 			'betterend:block/cave_pumpkin_greenhouse_1',
 			'betterend:block/cave_pumpkin_greenhouse_2',
 			'betterend:block/cave_pumpkin_greenhouse_3'
 		],
-		'betterend:block/cave_pumpkin_greenhouse_fruit'
+		//'betterend:block/cave_pumpkin_greenhouse_fruit'
+		'betterend:block/cave_pumpkin_top' // TODO: check
 	)
 
 	event.firmalifePlantable(
@@ -496,7 +495,6 @@ const registerTFGFLPlanters = (event) => {
 		'betterend:shadow_berry_product',
 		'potassium',
 		[
-			// TODO: all
 			'betterend:block/shadow_berry_greenhouse_0',
 			'betterend:block/shadow_berry_greenhouse_1',
 			'betterend:block/shadow_berry_greenhouse_2',

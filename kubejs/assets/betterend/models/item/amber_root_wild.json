@@ -1,3 +1,7 @@
 {
-	"parent": "betterend:block/amber_root_wild_mature"
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "betterend:block/amber_root_3",
+		"layer1": "betterend:block/wild_crop"
+	}
 }
