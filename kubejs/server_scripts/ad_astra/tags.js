@@ -113,7 +113,7 @@ const registerAdAstraItemTags = (event) => {
 	// these are log tags
 	event.remove('ad_astra:aeronos_caps', 'ad_astra:aeronos_cap')
 	event.remove('ad_astra:strophar_caps', 'ad_astra:strophar_cap')
-	
+		
 	global.AD_ASTRA_WOOD.forEach(wood => {
 
 		if (wood.log) {
@@ -400,6 +400,7 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/flammalix")
 	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/lutebus")
 	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/orango")
+	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/torchflower")
 	
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/crop/amber_root")
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/crop/blossom_berry")
@@ -412,7 +413,9 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/lamellarium")
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/lutebus")
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/orango")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/pitcher_plant")
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/ruscus")
+	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/torchflower")
 	
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/crop/blossom_berry")
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/crop/bolux_mushroom")
@@ -424,26 +427,25 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/flamaea")
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/globulagus")
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/lamellarium")
+	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/pitcher_plant")
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/ruscus")
 
 	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/small_amaranita_mushroom")
 	
 	// TODO
-	event.add("tfg:mars_trees", "tfg:mars/surface/strophar_huge")
-	event.add("tfg:mars_trees", "tfg:mars/surface/aeronos_huge")
-	event.add("tfg:mars_trees", "species:alphacene_mushroom")
+	//event.add("tfg:mars_trees", "species:alphacene_mushroom")
 	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/aeronos_patch")
 	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/strophar_patch")
 	
-	event.add("tfg:mars_amber_vegetal_decoration", "#tfg:mars_trees")
+	event.add("tfg:mars_amber_vegetal_decoration", 'tfg:mars_forest')
 	event.add("tfg:mars_amber_vegetal_decoration", "#tfg:mars_amber_small_plants")
 	event.add("tfg:mars_amber_vegetal_decoration", "#tfg:mars_global_small_plants")
 
-	event.add("tfg:mars_rusticus_vegetal_decoration", "#tfg:mars_trees")
+	event.add("tfg:mars_rusticus_vegetal_decoration", 'tfg:mars_forest')
 	event.add("tfg:mars_rusticus_vegetal_decoration", "#tfg:mars_rusticus_small_plants")
 	event.add("tfg:mars_rusticus_vegetal_decoration", "#tfg:mars_global_small_plants")
 
-	event.add("tfg:mars_sangnum_vegetal_decoration", "#tfg:mars_trees")
+	event.add("tfg:mars_sangnum_vegetal_decoration", 'tfg:mars_forest')
 	event.add("tfg:mars_sangnum_vegetal_decoration", "#tfg:mars_sangnum_small_plants")
 	event.add("tfg:mars_sangnum_vegetal_decoration", "#tfg:mars_global_small_plants")
 

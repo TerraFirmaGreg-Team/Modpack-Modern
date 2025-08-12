@@ -20,6 +20,11 @@ const registerBeneathBlockTags = (event) => {
 
 	event.add('beneath:blackstone_decor', 'minecraft:blackstone');
 	event.remove('beneath:blackstone')
+
+	event.remove('minecraft:leaves', 'beneath:wood/leaves/crimson')
+	event.remove('minecraft:leaves', 'beneath:wood/leaves/warped')
+	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/crimson')
+	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/warped')
 }
 
 const registerBeneathItemTags = (event) => {
@@ -37,4 +42,9 @@ const registerBeneathItemTags = (event) => {
 	event.add('forge:mushrooms', '#beneath:mushrooms')
 	
 	event.remove('beneath:sparks_on_sulfur')
+	
+	event.remove('minecraft:leaves', 'beneath:wood/leaves/crimson')
+	event.remove('minecraft:leaves', 'beneath:wood/leaves/warped')
+	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/crimson')
+	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/warped')
 }
