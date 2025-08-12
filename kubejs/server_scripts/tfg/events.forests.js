@@ -28,7 +28,7 @@ TFCEvents.worldgenData(event => {
 		],
 		'tfg:mars/tree/crimson', // tree feature
 		'tfg:mars/tree/crimson_dead', // dead tree feature
-		null, // old growth tree feature
+		'tfg:mars/tree/crimson', // old growth tree feature
 		null, // krummholz
 		null, // chance for old growth
 		null, // chance for old growth in non-old growth forests
@@ -51,7 +51,8 @@ TFCEvents.worldgenData(event => {
 		],
 		'tfg:mars/tree/warped',
 		'tfg:mars/tree/warped_dead',
-		null, null, null, null, null, null, null, 
+		'tfg:mars/tree/warped',
+		null, null, null, null, null, null, 
 		placement => {}
 	)
 })
