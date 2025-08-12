@@ -916,7 +916,9 @@ global.TFC_MEAT_RECIPE_COMPONENTS = [
     { input: 'betterend:bolux_mushroom_product', output: 'betterend:bolux_mushroom_cooked', name: 'bolux_mushroom' },
     { input: 'betterend:chorus_mushroom_product', output: 'betterend:chorus_mushroom_cooked', name: 'chorus_mushroom' },
     { input: 'betterend:shadow_berry_product', output: 'betterend:shadow_berry_cooked', name: 'shadow_berry' },
-    { input: 'betterend:cave_pumpkin_pie_raw', output: 'betterend:cave_pumpkin_pie', name: 'cave_pumpkin_pie' }
+    { input: 'betterend:cave_pumpkin_pie_raw', output: 'betterend:cave_pumpkin_pie', name: 'cave_pumpkin_pie' },
+	 { input: 'tfg:food/raw_glacian_mutton', output: 'tfg:food/cooked_glacian_mutton', name: 'cooked_glacian_mutton' },
+	 { input: 'tfg:food/raw_sniffer_beef', output: 'tfg:food/cooked_sniffer_beef', name: 'cooked_sniffer_beef' }
 ];
 
 global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = [
