@@ -521,7 +521,7 @@ function registerTFGFoodRecipes(event) {
 		}, 0, 0).id(`tfg:mortar/masa_flour`)
 
 	event.recipes.tfc.advanced_shaped_crafting(
-		TFC.isp.of(`4x firmalife:food/soybean_paste`).copyFood(), ['A', 'B'], {
+		TFC.isp.of(`firmalife:food/soybean_paste`).copyFood(), ['A', 'B'], {
 			A: TFC.ingredient.notRotten(`firmalife:food/dehydrated_soybeans`),
 			B: '#forge:tools/mortars'
 		}, 0, 0).id(`tfg:mortar/soybean_paste`)
