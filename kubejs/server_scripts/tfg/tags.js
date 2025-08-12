@@ -590,6 +590,10 @@ const registerTFGBiomeTags = (event) => {
 	// #endregion
 }
 
+function registerTFGConfiguredFeatures(event) {
+	registerTFGForestConfiguredFeatures(event)
+}
+
 // Other space decoration is in ad_astra/tags.js
 const registerTFGPlacedFeatures = (event) => {
 

@@ -160,5 +160,8 @@ global.FOOD_FRUIT = [
 	{name: 'pumpkin_chunks', id: 'tfc:food/pumpkin_chunks', saturation: 1, water: 5, fruit: 0.8, decay: 2.25},
 	{name: 'melon_slice', id: 'tfc:food/melon_slice', saturation: 0.2, water: 5, fruit: 0.8, decay: 2.25},
 	{name: 'fig', id: 'firmalife:food/fig', saturation: 1, water: 5, fruit: 0.9, decay: 1},
-	{name: 'pineapple', id: 'firmalife:food/pineapple', saturation: 1, water: 1, fruit: 0.8, decay: 4.5}
+	{name: 'pineapple', id: 'firmalife:food/pineapple', saturation: 1, water: 1, fruit: 0.8, decay: 4.5},
+	{name: 'cave_pumpkin', id: 'betterend:cave_pumpkin_chunks', saturation: 1, water: 5, fruit: 0.8, decay: 2.25 },
+	{name: 'blossom_berry', id: 'betterend:blossom_berry_product', saturation: 1, water: 7.5, fruit: 1.5, decay: 2 },
+	{name: 'shadow_berry', id: 'betterend:shadow_berry_cooked', saturation: 1, water: 5, fruit: 1.5, decay: 2 }
 ];

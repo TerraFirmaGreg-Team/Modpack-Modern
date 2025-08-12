@@ -1287,9 +1287,9 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VH[GTValues.EV])
 
 	event.recipes.gtceu.large_chemical_reactor('tfg:solar_coolant_t2')
-		.inputFluids(Fluid.of('tfg:solar_coolant', 1000), Fluid.of('gtceu:argon', 1000))
+		.inputFluids(Fluid.of('tfg:solar_coolant', 8000), Fluid.of('gtceu:argon', 1000))
 		.itemInputs(Item.of('#forge:aerogels'))
-		.outputFluids(Fluid.of('tfg:solar_coolant_tier2', 1000))
+		.outputFluids(Fluid.of('tfg:solar_coolant_tier2', 8000))
 		.duration(20*15)
 		.EUt(GTValues.VH[GTValues.IV])
 
