@@ -19,7 +19,8 @@
         "server_starter.conf",
         "server-icon.png",
         "start_server.bat",
-        "README.md"
+        "README.md",
+        "!kubejs/assets/**"
     ],
     "client_overrides": [
         "resourcepacks"
@@ -154,9 +155,6 @@
         "embeddium": {
             "side": "CLIENT"
         },
-        "first-person-model": {
-            "side": "CLIENT"
-        },
         "flickerfix": {
             "side": "CLIENT"
         },
@@ -214,9 +212,6 @@
         "pick-up-notifier": {
             "side": "CLIENT"
         },
-        "smooth-boot-reloaded": {
-            "side": "CLIENT"
-        },
         "resourceful-config": {
             "side": "BOTH"
         },
@@ -239,6 +234,9 @@
             "side": "BOTH"
         },
         "xaeros-minimap": {
+            "side": "BOTH"
+        },
+        "xaeros-world-map": {
             "side": "BOTH"
         },
         "particular-reforged": {

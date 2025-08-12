@@ -1,0 +1,10 @@
+{
+	"type": "tfc:multiple",
+	"config": {
+		"features": [
+			"tfg:mars/tree/warped_amber",
+			"tfg:mars/tree/warped_rusticus",
+			"tfg:mars/tree/warped_sangnum"
+		]
+	}
+}

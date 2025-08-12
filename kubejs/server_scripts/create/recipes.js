@@ -155,12 +155,12 @@ const registerCreateRecipes = (event) => {
 		'ABA',
 		'AAA'
 	], {
-		A: '#forge:plates/iron',
+		A: '#forge:ingots/iron',
 		B: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/basin')
 
 	event.recipes.gtceu.assembler('tfg:create/basin')
-		.itemInputs('5x #forge:plates/iron')
+		.itemInputs('5x #forge:ingots/iron')
 		.circuit(3)
 		.itemOutputs('create:basin')
 		.duration(200)
@@ -2387,4 +2387,13 @@ const registerCreateRecipes = (event) => {
 
 	event.shapeless('create:sand_paper', ['minecraft:paper', 'tfc:glue', '#forge:sand'])
 		.id('tfg:shapeless/sand_paper')
+
+	// The custom ores
+
+	event.smelting('#forge:ingots/copper', 'create:crushed_raw_copper')
+	event.smelting('#forge:ingots/gold', 'create:crushed_raw_gold')
+	event.smelting('#forge:ingots/zinc', 'create:crushed_raw_zinc')
+	event.smelting('#forge:ingots/silver', 'create:crushed_raw_silver')
+	event.smelting('#forge:ingots/tin', 'create:crushed_raw_tin')
+	event.smelting('#forge:ingots/lead', 'create:crushed_raw_lead')
 }

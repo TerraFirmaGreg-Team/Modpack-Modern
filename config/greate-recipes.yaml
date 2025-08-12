@@ -1,0 +1,7 @@
+# Enable/Disable wire coating recipes in the crafting grid/packer/assembler.
+# If disabled, wire coating recipes will only be accessible via the spout & wire coating factory.
+enableGTWireCoatingRecipes: true
+
+# Enable/Disable harder recipes for various Create blocks & items.
+enableHardCreateRecipes: false
+

@@ -1975,7 +1975,7 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(tfclunchbox:lunchbox)item(tfclunchbox:cooling_lunchbox))"
+							"ftbfiltersystem:filter": "or(item(tfclunchbox:lunchbox)item(tfclunchbox:cooling_lunchbox)item(tfclunchbox:electric_lunchbox))"
 						}
 					}
 					title: "{quests.tfg_tips.lunchbox.task.1}"

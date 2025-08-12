@@ -32,7 +32,7 @@
 		},
 		{
 			"__comment": "Box1",
-			"from": [ 4, 0, 4 ],
+			"from": [ 4, -1, 4 ],
 			"to": [ 6, 3, 6 ],
 			"faces": {
 				"north": { "uv": [ 0, 0, 2, 3 ], "texture": "#texture" },
@@ -43,7 +43,7 @@
 		},
 		{
 			"__comment": "Box1",
-			"from": [ 10, 0, 12 ],
+			"from": [ 10, -1, 12 ],
 			"to": [ 12, 2, 14 ],
 			"faces": {
 				"north": { "uv": [ 0, 0, 2, 2 ], "texture": "#texture" },

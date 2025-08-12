@@ -140,6 +140,32 @@ const registerTFGFoodData = (event) => {
 		food.decayModifier(2.25)
 	})
 
+	event.foodItem('tfg:food/raw_glacian_mutton', food => {
+		food.hunger(4)
+		food.protein(2.0)
+		food.decayModifier(3)
+	})
+
+	event.foodItem('tfg:food/cooked_glacian_mutton', food => {
+		food.hunger(6)
+		food.saturation(3)
+		food.protein(5)
+		food.decayModifier(1.5)
+	})
+	
+	event.foodItem('tfg:food/raw_sniffer_beef', food => {
+		food.hunger(4)
+		food.protein(2.0)
+		food.decayModifier(3)
+	})
+
+	event.foodItem('tfg:food/cooked_sniffer_beef', food => {
+		food.hunger(6)
+		food.saturation(4)
+		food.protein(7)
+		food.decayModifier(1.5)
+	})
+	
 	// high-tech food
 
 	global.FOOD_FRUIT.forEach(fruit => {
@@ -202,18 +228,28 @@ const registerTFGFoodData = (event) => {
 	event.foodItem('betterend:cave_pumpkin_chunks', food => {
 		food.hunger(4)
 		food.saturation(1)
-		food.decayModifier(1.5)
+		food.decayModifier(2.5)
 		food.water(5)
-		food.fruit(0.75)
+		food.fruit(0.8)
+	})
+
+	event.foodItem('betterend:cave_pumpkin_pie_dough', food => {
+		food.hunger(2)
+		food.decayModifier(3)
+	})
+
+	event.foodItem('betterend:cave_pumpkin_pie_raw', food => {
+		food.hunger(2)
+		food.decayModifier(3)
 	})
 
 	event.foodItem('betterend:cave_pumpkin_pie', food => {
 		food.hunger(4)
-		food.saturation(3)
-		food.decayModifier(2.5)
+		food.saturation(4)
+		food.decayModifier(2)
 		food.water(5)
-		food.fruit(2)
-		food.grain(1.5)
+		food.fruit(4)
+		food.grain(2)
 	})
 
 	event.foodItem('betterend:chorus_mushroom_product', food => {
@@ -425,7 +461,7 @@ const registerTFGFLPlanters = (event) => {
 			'betterend:block/blossom_berry_seed_0',
 			'betterend:block/blossom_berry_seed_1',
 			'betterend:block/blossom_berry_seed_2',
-			'betterend:block/blossom_berry_seed_3' // TODO
+			'betterend:block/blossom_berry_seed_3'
 		],
 		null
 	)
@@ -440,7 +476,6 @@ const registerTFGFLPlanters = (event) => {
 		'betterend:bolux_mushroom_product',
 		'phosphorous',
 		[
-			// TODO: all
 			'betterend:block/bolux_mushroom_greenhouse_0',
 			'betterend:block/bolux_mushroom_greenhouse_1',
 			'betterend:block/bolux_mushroom_greenhouse_2',
@@ -468,22 +503,22 @@ const registerTFGFLPlanters = (event) => {
 	)
 
 	event.firmalifePlantable(
-		'betterend:cave_pumpkin_seeds',
+		'betterend:cave_pumpkin_plant_seeds',
 		'hanging',
 		2,
 		3,
 		0.15,
-		'betterend:cave_pumpkin_seeds',
+		'betterend:cave_pumpkin_plant_seeds',
 		'betterend:cave_pumpkin',
 		'phosphorous',
 		[
-			// TODO: all
 			'betterend:block/cave_pumpkin_greenhouse_0',
 			'betterend:block/cave_pumpkin_greenhouse_1',
 			'betterend:block/cave_pumpkin_greenhouse_2',
 			'betterend:block/cave_pumpkin_greenhouse_3'
 		],
-		'betterend:block/cave_pumpkin_greenhouse_fruit'
+		//'betterend:block/cave_pumpkin_greenhouse_fruit'
+		'betterend:block/cave_pumpkin_top' // TODO: check
 	)
 
 	event.firmalifePlantable(
@@ -496,7 +531,6 @@ const registerTFGFLPlanters = (event) => {
 		'betterend:shadow_berry_product',
 		'potassium',
 		[
-			// TODO: all
 			'betterend:block/shadow_berry_greenhouse_0',
 			'betterend:block/shadow_berry_greenhouse_1',
 			'betterend:block/shadow_berry_greenhouse_2',

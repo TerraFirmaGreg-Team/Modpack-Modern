@@ -690,7 +690,6 @@ global.TFC_MUD_TYPES = [
 global.TFC_WOOD_ITEM_TYPES_TO_WOOD_DUST = {
     '#tfc:lumber': { name: 'lumber', output: ['1x gtceu:wood_dust'] },
     '#tfc:support_beams': { name: 'support_beams', output: ['2x gtceu:wood_dust'] },
-    // '#minecraft:boats': { name: 'boats', output: ['5x gtceu:wood_dust'] },
     '#tfc:minecarts': { name: 'minecarts', output: ['5x gtceu:wood_dust', '1x gtceu:small_wrought_iron_dust'] },
     '#minecraft:signs': { name: 'signs', output: ['1x gtceu:wood_dust'] },
     '#minecraft:hanging_signs': { name: 'hanging_signs', output: ['1x gtceu:wood_dust'] },
@@ -709,18 +708,12 @@ global.TFC_WOOD_ITEM_TYPES_TO_WOOD_DUST = {
     '#tfc:twigs': { name: 'twigs', output: ['1x gtceu:wood_dust'] },
     '#tfc:workbenches': { name: 'workbenches', output: ['1x gtceu:wood_dust'] },
     '#forge:chests/wooden': { name: 'wooden_chests', output: ['8x gtceu:wood_dust'] },
-    // '#tfg:only_trapped_wooden_chests': { name: 'trapped_wooden_chests', output: ['8x gtceu:wood_dust', '1x gtceu:wrought_iron_small_dust'] },
     '#tfc:looms': { name: 'looms', output: ['2x gtceu:wood_dust'] },
     '#tfc:sluices': { name: 'sluices', output: ['4x gtceu:wood_dust'] },
     '#tfc:barrels': { name: 'barrels', output: ['2x gtceu:wood_dust'] },
     '#tfc:lecterns': { name: 'lecterns', output: ['4x gtceu:wood_dust'] },
     '#tfc:scribing_tables': { name: 'scribing_tables', output: ['1x gtceu:wood_dust'] },
     '#tfc:jar_shelves': { name: 'jar_shelves', output: ['1x gtceu:wood_dust'] },
-    // '#tfc:axles': { name: 'axles', output: ['1x gtceu:wood_dust'] },
-    // '#tfg:bladed_axles': { name: 'bladed_axles', output: ['1x gtceu:wood_dust'] },
-    // '#tfc:clutches': { name: 'clutches', output: ['1x gtceu:wood_dust'] },
-    // '#tfc:gear_boxes': { name: 'gear_boxes', output: ['3x gtceu:wood_dust'] },
-    // '#tfc:water_wheels': { name: 'water_wheels', output: ['4x gtceu:wood_dust'] },
     '#tfcastikorcarts:cart_wheel': { name: '', output: ['1x gtceu:wood_dust'] },
     '#tfcastikorcarts:plow': { name: 'plow', output: ['2x gtceu:wood_dust'] },
     '#tfcastikorcarts:animal_cart': { name: 'animal_cart', output: ['2x gtceu:wood_dust'] },
@@ -919,7 +912,13 @@ global.TFC_MEAT_RECIPE_COMPONENTS = [
     { input: 'tfg:food/raw_crawlermari', output: 'tfg:food/cooked_crawlermari', name: 'cooked_crawlermari' },
     { input: 'tfg:food/raw_limpet', output: 'tfg:food/cooked_limpet', name: 'cooked_limpet' },
     { input: 'tfg:sunflower_product', output: 'tfg:roasted_sunflower_seeds', name: 'roasted_sunflower_seeds' },
-    { input: 'tfg:food/raw_moon_rabbit', output: 'tfg:food/cooked_moon_rabbit', name: 'cooked_moon_rabbit' }
+    { input: 'tfg:food/raw_moon_rabbit', output: 'tfg:food/cooked_moon_rabbit', name: 'cooked_moon_rabbit' },
+    { input: 'betterend:bolux_mushroom_product', output: 'betterend:bolux_mushroom_cooked', name: 'bolux_mushroom' },
+    { input: 'betterend:chorus_mushroom_product', output: 'betterend:chorus_mushroom_cooked', name: 'chorus_mushroom' },
+    { input: 'betterend:shadow_berry_product', output: 'betterend:shadow_berry_cooked', name: 'shadow_berry' },
+    { input: 'betterend:cave_pumpkin_pie_raw', output: 'betterend:cave_pumpkin_pie', name: 'cave_pumpkin_pie' },
+	 { input: 'tfg:food/raw_glacian_mutton', output: 'tfg:food/cooked_glacian_mutton', name: 'cooked_glacian_mutton' },
+	 { input: 'tfg:food/raw_sniffer_beef', output: 'tfg:food/cooked_sniffer_beef', name: 'cooked_sniffer_beef' }
 ];
 
 global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = [

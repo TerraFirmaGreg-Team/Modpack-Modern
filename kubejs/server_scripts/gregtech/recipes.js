@@ -162,7 +162,7 @@ const registerGTCEURecipes = (event) => {
 	// 8x Ванильная растительность -> Plant Ball (Compressor)
 
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_seeds')
-		.itemInputs('8x #tfc:seeds')
+		.itemInputs('4x #tfc:seeds')
 		.itemOutputs('gtceu:plant_ball')
 		.duration(300)
 		.EUt(2)
@@ -179,13 +179,13 @@ const registerGTCEURecipes = (event) => {
 		.EUt(2)
 
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_plants')
-		.itemInputs('8x #tfc:plants')
+		.itemInputs('4x #tfc:plants')
 		.itemOutputs('gtceu:plant_ball')
 		.duration(300)
 		.EUt(2)
 
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_corals')
-		.itemInputs('8x #tfc:corals')
+		.itemInputs('4x #tfc:corals')
 		.itemOutputs('gtceu:plant_ball')
 		.duration(300)
 		.EUt(2)
@@ -199,57 +199,57 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.brewery('biomass_from_tfc_seeds')
 		.itemInputs('#tfc:seeds')
 		.inputFluids("#tfc:any_water 20")
-		.outputFluids(Fluid.of('gtceu:biomass', 20))
-		.duration(128)
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_food')
 		.itemInputs('#tfc:foods')
 		.inputFluids("#tfc:any_water 20")
-		.outputFluids(Fluid.of('gtceu:biomass', 20))
-		.duration(128)
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_plants')
 		.itemInputs('#tfc:plants')
 		.inputFluids("#tfc:any_water 20")
-		.outputFluids(Fluid.of('gtceu:biomass', 20))
-		.duration(128)
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_corals')
 		.itemInputs('#tfc:corals')
 		.inputFluids("#tfc:any_water 20")
-		.outputFluids(Fluid.of('gtceu:biomass', 20))
-		.duration(128)
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_spider_eyes')
 		.itemInputs('minecraft:spider_eye')
 		.inputFluids("#tfc:any_water 20")
-		.outputFluids(Fluid.of('gtceu:biomass', 20))
-		.duration(128)
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_leaves')
 		.itemInputs('#minecraft:leaves')
 		.inputFluids("#tfc:any_water 20")
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
-		.duration(128)
+		.duration(100)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_fallen_leaves')
 		.itemInputs('#tfc:fallen_leaves')
 		.inputFluids("#tfc:any_water 20")
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
-		.duration(128)
+		.duration(100)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_minecraft_plants')
 		.itemInputs('#createaddition:plants')
 		.inputFluids("#tfc:any_water 20")
-		.outputFluids(Fluid.of('gtceu:biomass', 20))
-		.duration(128)
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
 		.EUt(3)
 
 	//#endregion
@@ -258,8 +258,21 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.gtceu.extractor(`tfg/fish_oil`)
 		.itemInputs('#minecraft:fishes')
-		.outputFluids(Fluid.of('gtceu:fish_oil', 40))
-		.duration(16)
+		.outputFluids(Fluid.of('gtceu:fish_oil', 200))
+		.duration(40)
+		.EUt(4)
+
+	event.recipes.gtceu.extractor(`tfg/tallow`)
+		.itemInputs('tfc:blubber')
+		.outputFluids(Fluid.of('tfc:tallow', 200))
+		.duration(40)
+		.EUt(4)
+
+	// you get tallow from killing things like orcas, so this seems close enough
+	event.recipes.gtceu.mixer('tallow_to_fish_oil')
+		.inputFluids('tfc:tallow 100', 'tfc:lye 100')
+		.outputFluids('gtceu:fish_oil 200')
+		.duration(100)
 		.EUt(4)
 
 	//#endregion
@@ -268,7 +281,7 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.gtceu.extractor(`tfg/seed_oil`)
 		.itemInputs('#tfc:seeds')
-		.outputFluids(Fluid.of('gtceu:seed_oil', 16))
+		.outputFluids(Fluid.of('gtceu:seed_oil', 50))
 		.duration(32)
 		.EUt(2)
 
@@ -512,10 +525,14 @@ const registerGTCEURecipes = (event) => {
 		.EUt(5)
 
 	// Исправление рецепта пыли серебра стерлинга
-	generateMixerRecipe(event, ['#forge:dusts/copper', '4x #forge:dusts/silver'], [], '5x gtceu:sterling_silver_dust', 1, [], 500, 7, 64, 'sterling_silver')
+	event.remove({ id: 'gtceu:mixer/sterling_silver' })
+	generateMixerRecipe(event, ['#forge:dusts/copper', '4x #forge:dusts/silver'], [], '5x gtceu:sterling_silver_dust', 
+		1, [], 500, 7, 64, 'gtceu:mixer/sterling_silver')
 
 	// Исправление рецепта пыли розовой бронзы
-	generateMixerRecipe(event, ['#forge:dusts/copper', '4x #forge:dusts/gold'], [], '5x gtceu:rose_gold_dust', 3, [], 500, 7, 64, 'rose_gold')
+	event.remove({ id: 'gtceu:mixer/rose_gold' })
+	generateMixerRecipe(event, ['#forge:dusts/copper', '4x #forge:dusts/gold'], [], '5x gtceu:rose_gold_dust', 
+		3, [], 500, 7, 64, 'gtceu:mixer/rose_gold')
 
 	//#region Рецепт ULV микросхемы
 
@@ -1274,9 +1291,9 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VH[GTValues.EV])
 
 	event.recipes.gtceu.large_chemical_reactor('tfg:solar_coolant_t2')
-		.inputFluids(Fluid.of('tfg:solar_coolant', 1000), Fluid.of('gtceu:argon', 1000))
+		.inputFluids(Fluid.of('tfg:solar_coolant', 8000), Fluid.of('gtceu:argon', 1000))
 		.itemInputs(Item.of('#forge:aerogels'))
-		.outputFluids(Fluid.of('tfg:solar_coolant_tier2', 1000))
+		.outputFluids(Fluid.of('tfg:solar_coolant_tier2', 8000))
 		.duration(20*15)
 		.EUt(GTValues.VH[GTValues.IV])
 

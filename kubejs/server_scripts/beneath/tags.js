@@ -10,7 +10,6 @@ const registerBeneathBlockTags = (event) => {
 
 	event.add('forge:ores', 'beneath:ore/nether_cursecoal')
 	event.add('forge:ores', 'beneath:ore/blackstone_sylvite')
-
 	event.add('beneath:mushrooms', 'minecraft:red_mushroom')
 	event.add('beneath:mushrooms', 'minecraft:brown_mushroom')
 	event.add('beneath:poisonous_mushrooms', 'minecraft:red_mushroom')
@@ -21,6 +20,11 @@ const registerBeneathBlockTags = (event) => {
 
 	event.add('beneath:blackstone_decor', 'minecraft:blackstone');
 	event.remove('beneath:blackstone')
+
+	event.remove('minecraft:leaves', 'beneath:wood/leaves/crimson')
+	event.remove('minecraft:leaves', 'beneath:wood/leaves/warped')
+	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/crimson')
+	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/warped')
 }
 
 const registerBeneathItemTags = (event) => {
@@ -30,8 +34,17 @@ const registerBeneathItemTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
 
+	event.add("forge:raw_materials/cursecoal", "beneath:cursecoal")
+	event.add("forge:raw_materials/sylvite", "tfc:ores/sylvite")
 	event.add('forge:ores', 'beneath:ore/nether_cursecoal')
 	event.add('forge:ores', 'beneath:ore/blackstone_sylvite')
+
+	event.add('forge:mushrooms', '#beneath:mushrooms')
 	
 	event.remove('beneath:sparks_on_sulfur')
+	
+	event.remove('minecraft:leaves', 'beneath:wood/leaves/crimson')
+	event.remove('minecraft:leaves', 'beneath:wood/leaves/warped')
+	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/crimson')
+	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/warped')
 }

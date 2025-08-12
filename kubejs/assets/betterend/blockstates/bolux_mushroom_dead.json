@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"": [
+			{ "model": "betterend:block/bolux_mushroom_dead", "y": 0 },
+			{ "model": "betterend:block/bolux_mushroom_dead", "y": 90 },
+			{ "model": "betterend:block/bolux_mushroom_dead", "y": 180 },
+			{ "model": "betterend:block/bolux_mushroom_dead", "y": 270 }
+		]
+	}
+}

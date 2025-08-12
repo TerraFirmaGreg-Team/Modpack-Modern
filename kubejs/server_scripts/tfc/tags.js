@@ -323,6 +323,8 @@ const registerTFCItemTags = (event) => {
 	event.add('tfc:forge_invisible_whitelist', 'greate:aluminum_mechanical_pump')
 	event.add('tfc:forge_invisible_whitelist', 'greate:stainless_steel_mechanical_pump')
 	event.add('tfc:forge_invisible_whitelist', 'greate:titanium_mechanical_pump')
+
+	event.add('forge:mushrooms', 'tfc:plant/artists_conk')
 }
 
 const registerTFCBlockTags = (event) => {

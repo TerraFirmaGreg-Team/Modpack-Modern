@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "light_level=0":  { "model": "tfg:block/reflector_night" },
+    "light_level=5":  { "model": "tfg:block/reflector_day_1" },
+    "light_level=10": { "model": "tfg:block/reflector_day_2" },
+    "light_level=15": { "model": "tfg:block/reflector_day_3" }
+  }
+}

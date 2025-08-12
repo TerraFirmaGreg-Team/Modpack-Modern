@@ -7,7 +7,7 @@
 	"elements": [ 	 
 		{
 			"__comment": "Box1",
-			"from": [ 11, 0, 4 ],
+			"from": [ 11, -1, 4 ],
 			"to": [ 13, 2, 6 ],
 			"faces": {
 				"north": { "uv": [ 0, 0, 2, 2 ], "texture": "#texture" },
@@ -43,7 +43,7 @@
 		},
 		{
 			"__comment": "Box1",
-			"from": [ 3, 0, 6 ],
+			"from": [ 3, -1, 6 ],
 			"to": [ 5, 3, 8 ],
 			"faces": {
 				"north": { "uv": [ 0, 0, 2, 3 ], "texture": "#texture" },
@@ -79,7 +79,7 @@
 		},
 		{
 			"__comment": "Box1",
-			"from": [ 10, 0, 12 ],
+			"from": [ 10, -1, 12 ],
 			"to": [ 12, 2, 14 ],
 			"faces": {
 				"north": { "uv": [ 0, 0, 2, 2 ], "texture": "#texture" },
