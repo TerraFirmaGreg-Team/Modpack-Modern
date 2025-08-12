@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
-    "parent": "block/block",
+	"render_type": "cutout_mipped",
 	"textures": {
 		"1": "betterend:block/wild_crop",
 		"particle": "#crop",
@@ -80,5 +80,12 @@
 				"south": {"uv": [0, 0, 16, 16], "texture": "#1"}
 			}
 		}
-	]
+	],
+	"display": {
+		"gui": {
+			"rotation": [ 30, 225, 0 ],
+			"translation": [ 0, 0, 0 ],
+			"scale": [ 0.625, 0.625, 0.625 ]
+		}
+	}
 }

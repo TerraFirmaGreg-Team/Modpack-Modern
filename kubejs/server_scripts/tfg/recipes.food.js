@@ -814,6 +814,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputs: ["species:birtday_cake"]
 	})
 
+
 	// These don't need the ISP handling, they're just here to keep all the food recipes together
 
 	event.recipes.gtceu.mixer('tfg:tfc/olive_oil_water')
@@ -880,7 +881,7 @@ function registerTFGFoodRecipes(event) {
 
 	//#endregion
 
-	//#region Heating recipes for new foods
+	//#region New foods
 
 	event.recipes.tfc.heating('tfg:food/raw_birt', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_birt').copyFood())
@@ -896,6 +897,47 @@ function registerTFGFoodRecipes(event) {
 
 	event.recipes.tfc.heating('tfg:food/raw_moon_rabbit', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_moon_rabbit').copyFood())
+
+	event.recipes.tfc.heating('betterend:bolux_mushroom_product', 200)
+		.resultItem(TFC.isp.of('betterend:bolux_mushroom_cooked').copyFood())
+
+	event.recipes.tfc.heating('betterend:chorus_mushroom_product', 200)
+		.resultItem(TFC.isp.of('betterend:chorus_mushroom_cooked').copyFood())
+
+	event.recipes.tfc.heating('betterend:shadow_berry_product', 200)
+		.resultItem(TFC.isp.of('betterend:shadow_berry_cooked').copyFood())
+
+	event.recipes.tfc.heating('betterend:cave_pumpkin_pie_raw', 200)
+		.resultItem(TFC.isp.of('betterend:cave_pumpkin_pie').copyFood())
+
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('4x betterend:cave_pumpkin_chunks').copyFood(),
+		[TFC.ingredient.notRotten('betterend:cave_pumpkin'), '#forge:tools/hammers'], 'betterend:cave_pumpkin')
+		.id(`tfg:crafting/cave_pumpkin_chunks_hammer`)
+
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('4x betterend:cave_pumpkin_chunks').copyFood(),
+		[TFC.ingredient.notRotten('betterend:cave_pumpkin'), '#tfc:knives'], 'betterend:cave_pumpkin')
+		.id(`tfg:crafting/cave_pumpkin_chunks_knife`)
+
+	// TODO: replace sniffer egg with a tag for all mars eggs?
+	processorRecipe("cave_pumpkin_pie_dough", 300, GTValues.VA[GTValues.HV], {
+		itemInputs: ['minecraft:sniffer_egg', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', '#tfc:sweetener'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ["betterend:cave_pumpkin_pie_dough"]
+	})
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients(['minecraft:sniffer_egg', 'betterend:cave_pumpkin_chunks', 'betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', '#tfc:sweetener'],
+			Fluid.of('minecraft:water', 1000))
+		.outputItem('betterend:cave_pumpkin_pie_dough')
+		.id('tfg:mixing_bowl/cave_pumpkin_pie_dough')
+
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.isp.of(`betterend:cave_pumpkin_pie_raw`).copyFood().firmaLifeAddPiePan(), [
+			TFC.ingredient.notRotten(`betterend:cave_pumpkin_pie_dough`),
+			'#firmalife:pie_pans'
+		]).id(`tfg:shapeless/cave_pumpkin_pie_raw`)
 
 	//#endregion
 

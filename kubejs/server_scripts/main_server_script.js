@@ -103,6 +103,10 @@ ServerEvents.tags('fluid', event => {
 	registerVintageImprovementsFluidTags(event)
 })
 
+ServerEvents.tags('worldgen/configured_feature', event => {
+	registerTFGConfiguredFeatures(event)
+})
+
 /**
  * Событие регистрации тегов структур.
  */
