@@ -202,9 +202,9 @@ const registerTFGFoodData = (event) => {
 	event.foodItem('betterend:cave_pumpkin_chunks', food => {
 		food.hunger(4)
 		food.saturation(1)
-		food.decayModifier(1.5)
+		food.decayModifier(2.5)
 		food.water(5)
-		food.fruit(0.75)
+		food.fruit(0.8)
 	})
 
 	event.foodItem('betterend:cave_pumpkin_pie_dough', food => {
