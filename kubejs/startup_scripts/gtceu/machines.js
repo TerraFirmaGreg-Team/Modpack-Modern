@@ -340,7 +340,7 @@ const registerGTCEuMachines = (event) => {
 		.rotationState(RotationState.NON_Y_AXIS)
 		.generator(true)
 		.recipeType('large_solar_panel_tier3')
-		.recipeModifiers(GTRecipeModifiers.PARALLEL_HATCH)
+		.recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
 		.appearanceBlock(() => Block.getBlock('tfg:casings/machine_casing_iron_desh'))
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle("             A       A             ", "             A       A             ", "             A       A             ", "             S       S             ", "             S       S             ", "             S       S             ", "             CCCCCCCCC             ", "                                   ", "                                   ", "                                   ", "                                   ", "                                   ", "                                   ", "                                   ")
