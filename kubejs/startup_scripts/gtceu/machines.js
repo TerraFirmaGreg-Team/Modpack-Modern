@@ -571,7 +571,6 @@ const registerGTCEuMachines = (event) => {
 		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('ostrum_harvester')
-		//.recipeModifiers(GTRecipeModifiers.crackerOverclock)
 		.recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, (machine, recipe) => GTRecipeModifiers.crackerOverclock(machine, recipe)])
 		.appearanceBlock(() => Block.getBlock('gtceu:nonconducting_casing'))
 		.pattern(definition => FactoryBlockPattern.start()
