@@ -77,7 +77,7 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:martian_sludge', 1000))
 		.inputFluids(Fluid.of('gtceu:formamide', 1000))
 		.inputFluids(Fluid.of('gtceu:radioactive_waste', 1000))
-		.outputFluids(Fluid.of('gtceu:radon', 100))
+		.outputFluids(Fluid.of('gtceu:radon', 1000))
 		.itemOutputs('#forge:dusts/nuclear_residue')
 		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.EV])

@@ -155,7 +155,6 @@ const registerGTCEUBedrockOreVeins = (event) => {
 			.material(GTMaterials.Chalcopyrite, 10)
 			.material(GTMaterials.Zeolite, 4)
 			.material(GTMaterials.Cassiterite, 3)
-			.material(GTMaterials.Realgar, 2)
 			.dimensions('ad_astra:moon')
 	})
 
@@ -227,4 +226,45 @@ function registerGTCEUBedrockFluidVeins(event) {
 		vein.depletionChance(1)
 		vein.depletedYield(10)
 	})
+
+	// Mars Fluid Vein - Credit to Monifactory
+
+	const Registries = Java.loadClass("net.minecraft.core.registries.Registries")
+	const ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey")
+	const martianOasisResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/martian_oasis")
+
+	event.add('tfg:semiheavy_ammoniacal_water', vein => {
+		vein.dimensions('ad_astra:mars')
+		vein.fluid(() => Fluid.of('tfg:semiheavy_ammoniacal_water').fluid)
+		vein.weight(100)
+		vein.minimumYield(200)
+		vein.maximumYield(400)
+		vein.depletionAmount(1)
+		vein.depletionChance(20)
+		vein.depletedYield(15)
+	})
+
+	event.add('tfg:heavy_ammoniacal_water', vein => {
+		vein.dimensions('ad_astra:mars')
+		vein.fluid(() => Fluid.of('tfg:heavy_ammoniacal_water').fluid)
+		vein.biomes(20, martianOasisResourceKey)
+		vein.weight(0)
+		vein.minimumYield(300)
+		vein.maximumYield(650)
+		vein.depletionAmount(1)
+		vein.depletionChance(20)
+		vein.depletedYield(20)
+	})
+
+	event.add('tfg:mars_argon', vein => {
+		vein.dimensions('ad_astra:mars')
+		vein.fluid(() => Fluid.of('gtceu:argon').fluid)
+		vein.weight(5)
+		vein.minimumYield(30)
+		vein.maximumYield(10)
+		vein.depletionAmount(1)
+		vein.depletionChance(1)
+		vein.depletedYield(10)
+	})
+
 }

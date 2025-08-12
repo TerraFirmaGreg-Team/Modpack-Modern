@@ -92,7 +92,7 @@ event.recipes.gtceu.extraterrestrial_ore_fabricator('ostrum')
 
 event.recipes.gtceu.extraterrestrial_ore_fabricator('dense_ostrum')
     .inputFluids('gtceu:dense_ostrum_vapor 1000')
-    .inputFluids(Fluid.of('gtceu:tritiated_water', 1000))
+    .inputFluids(Fluid.of('gtceu:tritiated_water', 500))
     .itemOutputsRanged('#forge:crushed_ores/uraninite',1,10)
     .itemOutputsRanged(Item.of('gtceu:crushed_certus_quartz_ore'),1,10)
     .itemOutputsRanged(Item.of('gtceu:crushed_beryllium_ore'),1,10)
