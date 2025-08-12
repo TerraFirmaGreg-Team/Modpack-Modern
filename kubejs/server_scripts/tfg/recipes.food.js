@@ -910,6 +910,12 @@ function registerTFGFoodRecipes(event) {
 	event.recipes.tfc.heating('betterend:cave_pumpkin_pie_raw', 200)
 		.resultItem(TFC.isp.of('betterend:cave_pumpkin_pie').copyFood())
 
+	event.recipes.tfc.heating('tfg:food/raw_glacian_mutton', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_glacian_mutton').copyFood())
+	
+	event.recipes.tfc.heating('tfg:food/raw_sniffer_beef', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_sniffer_beef').copyFood())
+
 	event.recipes.tfc.advanced_shapeless_crafting(
 		TFC.itemStackProvider.of('4x betterend:cave_pumpkin_chunks').copyFood(),
 		[TFC.ingredient.notRotten('betterend:cave_pumpkin'), '#forge:tools/hammers'], 'betterend:cave_pumpkin')

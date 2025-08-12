@@ -140,6 +140,32 @@ const registerTFGFoodData = (event) => {
 		food.decayModifier(2.25)
 	})
 
+	event.foodItem('tfg:food/raw_glacian_mutton', food => {
+		food.hunger(4)
+		food.protein(2.0)
+		food.decayModifier(3)
+	})
+
+	event.foodItem('tfg:food/cooked_glacian_mutton', food => {
+		food.hunger(6)
+		food.saturation(3)
+		food.protein(5)
+		food.decayModifier(1.5)
+	})
+	
+	event.foodItem('tfg:food/raw_sniffer_beef', food => {
+		food.hunger(4)
+		food.protein(2.0)
+		food.decayModifier(3)
+	})
+
+	event.foodItem('tfg:food/cooked_sniffer_beef', food => {
+		food.hunger(6)
+		food.saturation(4)
+		food.protein(7)
+		food.decayModifier(1.5)
+	})
+	
 	// high-tech food
 
 	global.FOOD_FRUIT.forEach(fruit => {
