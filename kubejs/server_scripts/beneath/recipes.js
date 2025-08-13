@@ -75,6 +75,14 @@ const registerBeneathRecipes = (event) => {
 		'64x beneath:wood/log/crimson', 'tfg:green_house/crimson_fungus', 'ad_astra:mars', 8,
 		'16x minecraft:nether_wart_block', GTValues.VA[GTValues.MV])
 
+	Ingredient.of('#beneath:mushrooms').stacks.forEach(element => {
+		const itemId = element.id;
+		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
+
+		generateGreenHouseRecipe(event, element.withCount(4), '#tfc:any_fresh_water', 8000, element.withCount(24),
+			recipeId, 'minecraft:the_nether', 8, element.withCount(4), GTValues.VH[GTValues.LV]);
+	});
+
 	// don't pass in the items like doors, trapdoors etc because beneath already has good recipes for those
 	woodBuilder(event, 'crimson', 'beneath:wood/lumber/crimson', '#tfc:crimson_logs', 'beneath:wood/log/crimson',
 		'beneath:wood/stripped_log/crimson', 'beneath:wood/planks/crimson', null,

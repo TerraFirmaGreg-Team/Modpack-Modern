@@ -7,6 +7,7 @@
 - Added mechanical press recipes to weld weak steels @Pyritie
 - Added backpacks, lunchboxes, and vessels to the toolbelt's blacklist @Pyritie
 - Moon rabbits can eat chorus fruit now @Pyritie
+- Added electric greenhouse recipes for mushrooms and bamboo (#1610) @Pyritie
 ### Bug fixes
 - Fixed moon mob spawning light levels, so now they need a light level of 0 instead of 11 (#1587) @NINAustinFett
 - Fixed wrong output amount of mortaring soybean paste (#1607) @TomPlop
