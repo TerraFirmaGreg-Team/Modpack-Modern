@@ -4,9 +4,12 @@
 ### Changes
 - Complete rework of prospector's picks. (#1594) @Redeix
 - Rebalance Large Solar Array to make Mk2 circuit 2 viable, and buffed to LSA Mk3 circuit 2 (#1591) @TomPlop
+- Added mechanical press recipes to weld weak steels @Pyritie
 ### Bug fixes
 - Fixed moon mob spawning light levels, so now they need a light level of 0 instead of 11 (#1587) @NINAustinFett
 - Fixed wrong output amount of mortaring soybean paste (#1607) @TomPlop
+- Fixed duplicate mixer recipes for rose gold and sterling silver @Pyritie
+- Fixed mechanical mixers requiring an alloy that needed that tier of mixer @Pyritie
 
 ## [0.10.9] - 10-08-2025
 ### Changes
