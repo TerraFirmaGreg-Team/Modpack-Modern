@@ -775,7 +775,7 @@ function registerGTCEUMetalRecipes(event) {
 			.id(`shapeless/mortar_chipped_${material.getName()}`)
 
 		let amount = 9;
-		if (material === GTMaterials.NetherQuartz || material === GTMaterials.Amethyst)
+		if (material === GTMaterials.NetherQuartz || material === GTMaterials.CertusQuartz || material === GTMaterials.Amethyst)
 			amount = 4;
 
 		event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, amount), ChemicalHelper.get(TagPrefix.block, material, 1))
