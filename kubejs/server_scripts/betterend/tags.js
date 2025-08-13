@@ -28,6 +28,7 @@ function registerBetterEndItemTags(event) {
 	event.add('tfc:foods', 'betterend:cave_pumpkin_pie_dough')
 	event.add('tfc:foods', 'betterend:cave_pumpkin_pie_raw')
 	event.add('tfc:foods', 'betterend:cave_pumpkin_pie')
+	event.add('firmalife:foods/washable', 'betterend:cave_pumpkin_pie_raw')
 	event.add('firmalife:foods/washable', 'betterend:cave_pumpkin_pie')
 
 	event.add('tfc:foods', 'betterend:chorus_mushroom_product')

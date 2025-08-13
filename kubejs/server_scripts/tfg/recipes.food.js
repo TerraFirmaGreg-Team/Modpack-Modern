@@ -683,8 +683,8 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	processorRecipe("raw_pumpkin_pie", 20, 8, {
-		itemInputs: ["firmalife:food/pumpkin_pie_dough", "firmalife:pie_pan"],
-		itemOutputs: ["firmalife:raw_pumpkin_pie"],
+		itemInputs: ["firmalife:food/pumpkin_pie_dough", "#firmalife:pie_pans"],
+		itemOutputs: ["firmalife:food/raw_pumpkin_pie"],
 		itemOutputProvider: TFC.isp.of("firmalife:food/raw_pumpkin_pie").copyFood()
 	})
 
@@ -960,6 +960,12 @@ function registerTFGFoodRecipes(event) {
 			TFC.ingredient.notRotten(`betterend:cave_pumpkin_pie_dough`),
 			'#firmalife:pie_pans'
 		]).id(`tfg:shapeless/cave_pumpkin_pie_raw`)
+
+	processorRecipe("raw_cave_pumpkin_pie", 20, 8, {
+		itemInputs: [`betterend:cave_pumpkin_pie_dough`, "#firmalife:pie_pans"],
+		itemOutputs: ["betterend:cave_pumpkin_pie_raw"],
+		itemOutputProvider: TFC.isp.of("betterend:cave_pumpkin_pie_raw").copyFood()
+	})
 
 	//#endregion
 
