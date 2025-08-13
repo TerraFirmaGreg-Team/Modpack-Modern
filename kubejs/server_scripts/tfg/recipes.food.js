@@ -880,6 +880,23 @@ function registerTFGFoodRecipes(event) {
 		.id(`tfg:mortar/salt`)
 
 	//#endregion
+	
+	//#region Выход: Золотое яблоко
+
+	processorRecipe('golden_apple_from_red', 30 * 20, GTValues.VA[GTValues.HV], {
+		itemInputs: ['tfc:food/red_apple'],
+		fluidInputs: [Fluid.of('gtceu:gold', 144 * 8)],
+		itemOutputs: ['minecraft:golden_apple'],
+		circuit: 5
+	})
+	processorRecipe('golden_apple_from_green', 30 * 20, GTValues.VA[GTValues.HV], {
+		itemInputs: ['tfc:food/green_apple'],
+		fluidInputs: [Fluid.of('gtceu:gold', 144 * 8)],
+		itemOutputs: ['minecraft:golden_apple'],
+		circuit: 5
+	})
+
+    //#endregion
 
 	//#region New foods
 

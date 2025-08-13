@@ -15,6 +15,7 @@
 - Fixed mechanical mixers requiring an alloy that needed that tier of mixer @Pyritie
 - Finally fixed all the issues with upgrading the toolbelt - now you can safely dye and undye, upgrade with and without tools inside it, etc (#368) @Pyritie
 - Fixed a dupe with certus quartz @Pyritie
+- Moved the golden apple recipe over to the food processor so it respects food expiry data @Pyritie
 
 ## [0.10.9] - 10-08-2025
 ### Changes

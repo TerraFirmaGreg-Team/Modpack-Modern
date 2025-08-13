@@ -288,34 +288,6 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Золотое яблоко
-
-	event.recipes.gtceu.chemical_reactor('golden_apple')
-		.itemInputs('tfc:food/green_apple', '8x #forge:ingots/gold')
-		.itemOutputs('minecraft:golden_apple')
-		.duration(50)
-		.EUt(30)
-
-	event.recipes.gtceu.large_chemical_reactor('golden_apple')
-		.itemInputs('tfc:food/green_apple', '8x #forge:ingots/gold')
-		.itemOutputs('minecraft:golden_apple')
-		.duration(50)
-		.EUt(30)
-
-	event.recipes.gtceu.chemical_reactor('golden_apple_1')
-		.itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
-		.itemOutputs('minecraft:golden_apple')
-		.duration(50)
-		.EUt(30)
-
-    event.recipes.gtceu.large_chemical_reactor('golden_apple_1')             
-        .itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
-        .itemOutputs('minecraft:golden_apple')
-        .duration(50)
-        .EUt(30)
-
-    //#endregion
-
 	//#region Выход: Компаратор
 
 	// Компаратор
