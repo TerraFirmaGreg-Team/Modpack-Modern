@@ -304,6 +304,22 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:mars_stone_dusts', 'gtceu:granite_red_dust')
 	event.add('forge:mars_stone_dusts', 'tfg:mars_stone_dust')
 
+	//Mars animal region
+	event.add('tfg:martian_eggs', 'tfg:sniffer_egg')
+	
+	event.add('tfg:martian_animal_foods', 'betterend:amber_root_product')
+	event.add('tfg:martian_animal_foods', 'betterend:blossom_berry_product')
+	event.add('tfg:martian_animal_foods', 'betterend:chorus_mushroom_product')
+	event.add('tfg:martian_animal_foods', 'betterend:shadow_berry_product')
+	event.add('tfg:martian_animal_foods', 'betterend:bolux_mushroom_product')
+	event.add('tfg:martian_animal_foods', 'betterend:cave_pumpkin_chunks')
+	
+	event.add('tfg:glacian_ram_food', '#tfg:martian_animal_foods')
+	event.add('tfg:sniffer_food', '#tfg:martian_animal_foods')
+	
+	//#endregion
+
+
 	// #region 0.7.19 -> 0.9 conversion
 	event.add('c:hidden_from_recipe_viewers', 'treetap:tap')
 	event.add('c:hidden_from_recipe_viewers', 'tfcea:refrigerator')
