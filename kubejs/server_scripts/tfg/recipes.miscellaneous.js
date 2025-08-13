@@ -1335,4 +1335,29 @@ function registerTFGMiscellaneousRecipes(event) {
 	]));
 
 	event.replaceInput({ id: "minecraft:jukebox"}, 'minecraft:diamond', 'tfg:etching_diamond_tip');
+	
+	
+	//Large Nest
+	event.shaped('tfg:large_nest_box',
+	[
+		'B B',
+		'ABA',
+		'AAA'
+	], {
+		A: 'beneath:crimson_thatch',
+		B: 'beneath:crimson_straw'
+	}).id('tfg:shaped_large_nest_crimson')
+	
+	event.shaped('tfg:large_nest_box_warped',
+	[
+		'B B',
+		'ABA',
+		'AAA'
+	], {
+		A: 'beneath:warped_thatch',
+		B: 'beneath:warped_straw'
+	}).id('tfg:shaped_large_nest_warped')
+		
+	
+	//#endregion
 }
