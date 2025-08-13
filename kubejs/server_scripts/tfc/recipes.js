@@ -208,10 +208,6 @@ const registerTFCRecipes = (event) => {
 	generateMixerRecipe(event, '#forge:dusts/sodium_hydroxide', "#tfg:clean_water 1000",
 		[], null, Fluid.of('tfc:lye', 1000), 100, 2, 64, 'lye_from_sodium_hydroxide')
 
-	event.recipes.tfc.pot([], Fluid.of('tfc:lye', 1000), 100, 80)
-		.itemOutput('gtceu:sodium_hydroxide_dust')
-		.id('tfg:pot/sodium_hydroxide')
-
 	event.recipes.firmalife.vat()
 		.inputFluid(Fluid.of('tfc:lye', 1000))
 		.outputItem('gtceu:sodium_hydroxide_dust')

@@ -525,10 +525,14 @@ const registerGTCEURecipes = (event) => {
 		.EUt(5)
 
 	// Исправление рецепта пыли серебра стерлинга
-	generateMixerRecipe(event, ['#forge:dusts/copper', '4x #forge:dusts/silver'], [], '5x gtceu:sterling_silver_dust', 1, [], 500, 7, 64, 'sterling_silver')
+	event.remove({ id: 'gtceu:mixer/sterling_silver' })
+	generateMixerRecipe(event, ['#forge:dusts/copper', '4x #forge:dusts/silver'], [], '5x gtceu:sterling_silver_dust', 
+		1, [], 500, 7, 64, 'gtceu:mixer/sterling_silver')
 
 	// Исправление рецепта пыли розовой бронзы
-	generateMixerRecipe(event, ['#forge:dusts/copper', '4x #forge:dusts/gold'], [], '5x gtceu:rose_gold_dust', 3, [], 500, 7, 64, 'rose_gold')
+	event.remove({ id: 'gtceu:mixer/rose_gold' })
+	generateMixerRecipe(event, ['#forge:dusts/copper', '4x #forge:dusts/gold'], [], '5x gtceu:rose_gold_dust', 
+		3, [], 500, 7, 64, 'gtceu:mixer/rose_gold')
 
 	//#region Рецепт ULV микросхемы
 

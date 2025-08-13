@@ -436,7 +436,7 @@ function registerGTCEUMetalRecipes(event) {
 		let hammerRecipe = event.recipes.gtceu.forge_hammer(`hammer_poor_raw_${material.getName()}_to_crushed_ore`)
 			.itemInputs(poorOreItem)
 			.category(GTRecipeCategories.ORE_FORGING)
-			.duration(10)
+			.duration(100)
 			.EUt(16)
 
 		if (material.hasProperty(PropertyKey.GEM)) {
@@ -506,7 +506,7 @@ function registerGTCEUMetalRecipes(event) {
 		let hammerRecipe = event.recipes.gtceu.forge_hammer(`hammer_raw_${material.getName()}_to_crushed_ore`)
 			.itemInputs(normalOreItem)
 			.category(GTRecipeCategories.ORE_FORGING)
-			.duration(10)
+			.duration(100)
 			.EUt(16)
 
 		if (material.hasProperty(PropertyKey.GEM)) {
@@ -568,7 +568,7 @@ function registerGTCEUMetalRecipes(event) {
 		let hammerRecipe = event.recipes.gtceu.forge_hammer(`hammer_rich_raw_${material.getName()}_to_crushed_ore`)
 			.itemInputs(richOreItem)
 			.category(GTRecipeCategories.ORE_FORGING)
-			.duration(10)
+			.duration(100)
 			.EUt(16)
 
 		if (material.hasProperty(PropertyKey.GEM)) {
