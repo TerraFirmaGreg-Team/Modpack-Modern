@@ -54,6 +54,9 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfc:foods/usable_in_salad', 'minecraft:glow_berries')
     event.add('tfc:foods/usable_in_salad', 'minecraft:chorus_fruit')
     event.add('tfc:foods/usable_in_salad', 'minecraft:popped_chorus_fruit')
+
+    event.add('tfc:rabbit_food', 'minecraft:chorus_fruit')
+    event.add('tfc:rabbit_food', 'minecraft:popped_chorus_fruit')
     
     event.add('tfc:rock/raw', 'minecraft:deepslate')
     event.add('tfc:rock/raw', 'minecraft:blackstone')
