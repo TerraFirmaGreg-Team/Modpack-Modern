@@ -58,12 +58,12 @@ const registerTFCRecipes = (event) => {
 	// Дерево
 	global.TFC_WOOD_TYPES.forEach(wood => {
 		generateGreenHouseRecipe(event, `8x tfc:wood/sapling/${wood}`, '#tfc:any_fresh_water', 16000, `64x tfc:wood/log/${wood}`,
-			`tfg:greenhouse/${wood}`, 'minecraft:overworld', 16, `8x tfc:wood/sapling/${wood}`, GTValues.VH[GTValues.LV])
+			`tfg:greenhouse/${wood}`, 'minecraft:overworld', 16, `32x tfc:wood/sapling/${wood}`, GTValues.VH[GTValues.LV])
 	})
 
 	global.AFC_SAPLINGS.forEach(x => {
 		generateGreenHouseRecipe(event, `8x afc:wood/sapling/${x.sapling}`, '#tfc:any_fresh_water', 16000, `64x ${x.log}`,
-			`tfg:greenhouse/${x.sapling}`, 'minecraft:overworld', 16, `8x afc:wood/sapling/${x.sapling}`, GTValues.VH[GTValues.LV])
+			`tfg:greenhouse/${x.sapling}`, 'minecraft:overworld', 16, `32x afc:wood/sapling/${x.sapling}`, GTValues.VH[GTValues.LV])
 	})
 
 	// Семена фруктов
@@ -90,7 +90,7 @@ const registerTFCRecipes = (event) => {
 		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
 
 		generateGreenHouseRecipe(event, itemId, '#tfc:any_fresh_water', 8000, `8x ${itemId}`,
-			recipeId, null, 8, `8x ${itemId}`, GTValues.VH[GTValues.LV]);
+			recipeId, null, 8, `16x ${itemId}`, GTValues.VH[GTValues.LV]);
 	});
 
 	//#endregion
