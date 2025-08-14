@@ -9,6 +9,8 @@
 - Moon rabbits can eat chorus fruit now @Pyritie
 - Added electric greenhouse recipes for mushrooms and bamboo (#1610) @Pyritie
 - Increased amount of saplings that the electric greenhouse returns to be more in line with create-based tree farms @Pyritie
+- Firmalife mixing bowls can now be placed on tool racks (#1623) @Pyritie
+- Fixed recipe for pyroxenite button (again) (#1625) @Pyritie
 ### Bug fixes
 - Fixed moon mob spawning light levels, so now they need a light level of 0 instead of 11 (#1587) @NINAustinFett
 - Fixed wrong output amount of mortaring soybean paste (#1607) @TomPlop
