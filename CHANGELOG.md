@@ -21,6 +21,7 @@
 - Fixed a dupe with certus quartz @Pyritie
 - Moved the golden apple recipe over to the food processor so it respects food expiry data @Pyritie
 - Removed some remaining swine-steel crafting recipes @Pyritie
+- Added missing hoe/scythe mineable tags from custom crops (#1622) @Pyritie
 
 ## [0.10.9] - 10-08-2025
 ### Changes
