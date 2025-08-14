@@ -1043,6 +1043,14 @@ function registerGTCEuMachineRecipes(event) {
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
+	event.recipes.gtceu.assembler('gtceu:atomic_casing')
+		.itemInputs('4x #forge:dense_plates/lead', '2x #forge:plates/rtm_alloy', '#forge:frames/titanium')
+		.inputFluids(Fluid.of('gtceu:polyvinyl_butyral', 288))
+		.itemOutputs('2x gtceu:atomic_casing')
+		.circuit(4)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.HV])
+
 	//#endregion
 
 	//#region Large Solar Panel
@@ -1242,6 +1250,49 @@ function registerGTCEuMachineRecipes(event) {
 		}
 	).id('tfg:shaped/evaporation_tower')
 
+	//#endregion
 
+	//#region Nuclear Controler
+
+	event.shaped(
+		'gtceu:fission_reactor',
+		[	'TUT',
+			'WZW',
+			'TUT'],
+		{
+			T: 'gtceu:atomic_casing',
+			W: '#gtceu:circuits/ev',
+			U: 'gtceu:hv_field_generator',
+			Z: 'gtceu:ev_machine_hull'
+		}
+	).id('tfg:shaped/fission_reactor')
+
+	event.shaped(
+		'gtceu:nuclear_fuel_factory',
+		[	'TUT',
+			'WZW',
+			'TBT'],
+		{
+			T: 'gtceu:atomic_casing',
+			W: '#gtceu:circuits/ev',
+			U: 'gtceu:ev_emitter',
+			Z: 'gtceu:ev_machine_hull',
+			B: 'gtceu:ev_robot_arm'
+		}
+	).id('tfg:shaped/nuclear_fuel_factory')
+
+	event.shaped(
+		'gtceu:heat_exchanger',
+		[	'TUT',
+			'WZW',
+			'TBT'],
+		{
+			T: 'gtceu:high_temperature_smelting_casing',
+			W: '#gtceu:circuits/ev',
+			U: 'gtceu:ev_sensor',
+			Z: 'gtceu:ev_machine_hull',
+			B: 'gtceu:ev_fluid_regulator'
+		}
+	).id('tfg:shaped/heat_exchanger')
 
 }

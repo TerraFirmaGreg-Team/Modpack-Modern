@@ -259,6 +259,9 @@ const registerGTCEuMaterialModification = (event) => {
 
 	GTMaterials.Silicon.addFlags(GENERATE_DENSE);
 
+	GTMaterials.RTMAlloy.addFlags(GENERATE_DENSE);
+	GTMaterials.Lead.addFlags(GENERATE_DENSE);
+
 	GTMaterials.Quartzite.addFlags(GENERATE_ROD);
 	
 	GTMaterials.TreatedWood.addFlags(GENERATE_LONG_ROD);
