@@ -1299,6 +1299,21 @@
 			x: 10.0d
 			y: -4.0d
 		}
+		{
+			dependencies: ["00A2566109144D7F"]
+			description: ["{quests.high_voltage.space_survival.desc}"]
+			icon: "ad_astra:oxygen_distributor"
+			id: "08AAD91CE348A08B"
+			subtitle: "{quests.high_voltage.space_survival.subtitle}"
+			tasks: [{
+				id: "66E3342A47817498"
+				title: "{quests.high_voltage.space_survival.title}"
+				type: "checkmark"
+			}]
+			title: "{quests.high_voltage.space_survival.title}"
+			x: 13.0d
+			y: 1.5d
+		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]
 	title: "{quests.high_voltage}"
