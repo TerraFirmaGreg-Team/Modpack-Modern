@@ -683,8 +683,8 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	processorRecipe("raw_pumpkin_pie", 20, 8, {
-		itemInputs: ["firmalife:food/pumpkin_pie_dough", "firmalife:pie_pan"],
-		itemOutputs: ["firmalife:raw_pumpkin_pie"],
+		itemInputs: ["firmalife:food/pumpkin_pie_dough", "#firmalife:pie_pans"],
+		itemOutputs: ["firmalife:food/raw_pumpkin_pie"],
 		itemOutputProvider: TFC.isp.of("firmalife:food/raw_pumpkin_pie").copyFood()
 	})
 
@@ -880,6 +880,23 @@ function registerTFGFoodRecipes(event) {
 		.id(`tfg:mortar/salt`)
 
 	//#endregion
+	
+	//#region Выход: Золотое яблоко
+
+	processorRecipe('golden_apple_from_red', 30 * 20, GTValues.VA[GTValues.HV], {
+		itemInputs: ['tfc:food/red_apple'],
+		fluidInputs: [Fluid.of('gtceu:gold', 144 * 8)],
+		itemOutputs: ['minecraft:golden_apple'],
+		circuit: 5
+	})
+	processorRecipe('golden_apple_from_green', 30 * 20, GTValues.VA[GTValues.HV], {
+		itemInputs: ['tfc:food/green_apple'],
+		fluidInputs: [Fluid.of('gtceu:gold', 144 * 8)],
+		itemOutputs: ['minecraft:golden_apple'],
+		circuit: 5
+	})
+
+    //#endregion
 
 	//#region New foods
 
@@ -910,6 +927,12 @@ function registerTFGFoodRecipes(event) {
 	event.recipes.tfc.heating('betterend:cave_pumpkin_pie_raw', 200)
 		.resultItem(TFC.isp.of('betterend:cave_pumpkin_pie').copyFood())
 
+	event.recipes.tfc.heating('tfg:food/raw_glacian_mutton', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_glacian_mutton').copyFood())
+	
+	event.recipes.tfc.heating('tfg:food/raw_sniffer_beef', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_sniffer_beef').copyFood())
+
 	event.recipes.tfc.advanced_shapeless_crafting(
 		TFC.itemStackProvider.of('4x betterend:cave_pumpkin_chunks').copyFood(),
 		[TFC.ingredient.notRotten('betterend:cave_pumpkin'), '#forge:tools/hammers'], 'betterend:cave_pumpkin')
@@ -920,15 +943,14 @@ function registerTFGFoodRecipes(event) {
 		[TFC.ingredient.notRotten('betterend:cave_pumpkin'), '#tfc:knives'], 'betterend:cave_pumpkin')
 		.id(`tfg:crafting/cave_pumpkin_chunks_knife`)
 
-	// TODO: replace sniffer egg with a tag for all mars eggs?
 	processorRecipe("cave_pumpkin_pie_dough", 300, GTValues.VA[GTValues.HV], {
-		itemInputs: ['minecraft:sniffer_egg', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', '#tfc:sweetener'],
+		itemInputs: ['#tfg:martian_eggs', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', '#tfc:sweetener'],
 		fluidInputs: ['minecraft:water 1000'],
 		itemOutputs: ["betterend:cave_pumpkin_pie_dough"]
 	})
 
 	event.recipes.firmalife.mixing_bowl()
-		.ingredients(['minecraft:sniffer_egg', 'betterend:cave_pumpkin_chunks', 'betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', '#tfc:sweetener'],
+		.ingredients(['#tfg:martian_eggs', 'betterend:cave_pumpkin_chunks', 'betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', '#tfc:sweetener'],
 			Fluid.of('minecraft:water', 1000))
 		.outputItem('betterend:cave_pumpkin_pie_dough')
 		.id('tfg:mixing_bowl/cave_pumpkin_pie_dough')
@@ -938,6 +960,12 @@ function registerTFGFoodRecipes(event) {
 			TFC.ingredient.notRotten(`betterend:cave_pumpkin_pie_dough`),
 			'#firmalife:pie_pans'
 		]).id(`tfg:shapeless/cave_pumpkin_pie_raw`)
+
+	processorRecipe("raw_cave_pumpkin_pie", 20, 8, {
+		itemInputs: [`betterend:cave_pumpkin_pie_dough`, "#firmalife:pie_pans"],
+		itemOutputs: ["betterend:cave_pumpkin_pie_raw"],
+		itemOutputProvider: TFC.isp.of("betterend:cave_pumpkin_pie_raw").copyFood()
+	})
 
 	//#endregion
 
