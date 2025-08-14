@@ -1,20 +1,4 @@
 {
 	"type": "minecraft:block",
-	"pools": [
-		{
-			"name": "loot_pool",
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "megacells:mega_emc_interface"
-				}
-			],
-			"conditions": [
-				{
-					"condition": "minecraft:survives_explosion"
-				}
-			]
-		}
-	]
+	"pools": []
 }
