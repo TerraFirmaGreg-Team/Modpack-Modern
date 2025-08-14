@@ -1027,6 +1027,22 @@ function registerGTCEuMachineRecipes(event) {
 		.duration(2.5 * 20)
 		.EUt(16)
 
+	event.recipes.gtceu.assembler('tfg:casings/machine_casing_stainless_evaporation')
+		.itemInputs('gtceu:clean_machine_casing', '4x gtceu:annealed_copper_double_wire')
+		.inputFluids(Fluid.of('gtceu:polyvinyl_chloride', 288))
+		.itemOutputs('tfg:casings/machine_casing_stainless_evaporation')
+		.circuit(4)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.assembler('tfg:casings/machine_casing_mars')
+		.itemInputs('gtceu:clean_machine_casing', '4x #forge:double_wires/kanthal')
+		.inputFluids(Fluid.of('gtceu:polybenzimidazole', 288))
+		.itemOutputs('tfg:casings/machine_casing_mars')
+		.circuit(4)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.HV])
+
 	//#endregion
 
 	//#region Large Solar Panel
@@ -1150,5 +1166,82 @@ function registerGTCEuMachineRecipes(event) {
 		.dimension('ad_astra:moon')
 		.EUt(-(GTValues.V[GTValues.LuV]), 2)
 		.circuit(2)
+
+	//#endregion
+
+	//#region Mars Ore Line
+
+	// Multiblock
+
+	event.shaped(
+		'gtceu:extraterrestrial_ore_fabricator',
+		[	'USU',
+			'WZW',
+			'PTP'],
+		{
+			S: 'tfg:casings/machine_casing_vacuum_engine_intake',
+			Z: 'gtceu:ev_machine_hull',
+			W: '#gtceu:circuits/ev',
+			U: '#forge:double_plates/stellite_100',
+			T: 'gtceu:aluminium_single_cable',
+			P: 'gtceu:ev_electric_pump'
+		}
+	).id('gtceu:shaped/extraterrestrial_ore_fabricator')
+
+	event.recipes.gtceu.assembler('tfg:ostrum_harvester')
+		.itemInputs(
+			'1x gtceu:ev_machine_hull',
+			'4x #gtceu:circuits/ev',
+			'4x gtceu:ev_electric_motor',
+			'4x #forge:rotors/black_steel',
+			'4x gtceu:ev_electric_pump',
+			'4x #forge:gears/desh')
+		.itemOutputs('gtceu:ostrum_harvester')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(2)
+
+	// Vacuum Intake
+
+	event.shaped(
+		'tfg:casings/machine_casing_vacuum_engine_intake',
+		[	'USU',
+			'WZW',
+			'UTU'],
+		{
+			S: '#forge:tools/hammers',
+			T: '#forge:tools/wrenches',
+			W: '#forge:rotors/ultimet',
+			U: 'gtceu:ultimet_normal_item_pipe',
+			Z: 'gtceu:inert_machine_casing'
+		}
+	).id('tfg:shaped/casing_machine_casing_vacuum_engine_intake')
+
+	event.recipes.gtceu.assembler('tfg:casings/machine_casing_vacuum_engine_intake')
+		.itemInputs(
+			'2x #forge:rotors/ultimet',
+			'4x gtceu:ultimet_normal_item_pipe',
+			'1x gtceu:inert_machine_casing')
+		.itemOutputs('tfg:casings/machine_casing_vacuum_engine_intake')
+		.duration(50)
+		.EUt(GTValues.VH[GTValues.LV])
+		.circuit(2)
+
+	// Stainless Evaporation Tower
+
+	event.shaped(
+		'gtceu:evaporation_tower',
+		[	'TUT',
+			'WZW',
+			'TUT'],
+		{
+			T: '#gtceu:circuits/ev',
+			W: 'gtceu:hv_electric_pump',
+			U: '#forge:double_wires/kanthal',
+			Z: 'gtceu:hv_machine_hull'
+		}
+	).id('tfg:shaped/evaporation_tower')
+
+
 
 }

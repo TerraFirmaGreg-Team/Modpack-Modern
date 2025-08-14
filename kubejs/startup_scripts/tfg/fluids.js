@@ -34,8 +34,8 @@ const registerTFGFluids = (event) => {
 	//#region Mars
 
 	event.create('tfg:heavy_ammoniacal_water')
-		.thinTexture(0x82a0ed)
-		.bucketColor(0x82a0ed)
+		.thinTexture(0x08733f)
+		.bucketColor(0x08733f)
 		.temperature(236)
 		.noBlock()
 

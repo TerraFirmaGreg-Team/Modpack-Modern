@@ -32,6 +32,21 @@ const registerTFGBlocks = (event) => {
 		.particleCount(2)
 		.particleForced(false)
 
+	event.create('tfg:spice', 'tfg:particle_emitter')
+		.textureAll('tfg:block/sand_spice')
+		.soundType('sand')
+		.hardness(1)
+		.resistance(1)
+		.unbreakable()
+		.tagBlock('tfcambiental:hot_stuff')
+		.lightLevel(0.1)
+		.mapColor('color_white')
+		.particleOffset(0, 2, 0)
+		.particleVelocity(0.05, 0, 0.05)
+		.particle('electric_spark')
+		.particleCount(3)
+		.particleForced(false)
+
 	// #region Machine Casings
 
 	global.TFG_MACHINE_CASINGS.forEach(type => {
