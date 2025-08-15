@@ -477,13 +477,13 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// Семена фруктов
 	global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, '#tfg:clean_water', element.fluid_amount, element.output,
+		generateGreenHouseRecipe(event, element.input, '#tfc:any_fresh_water', element.fluid_amount, element.output,
 			element.name, 'minecraft:overworld', 8, null, GTValues.VA[GTValues.LV])
 	})
 
 	// Семена ягод
 	global.FIRMALIFE_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, '#tfg:clean_water', element.fluid_amount, element.output,
+		generateGreenHouseRecipe(event, element.input, '#tfc:any_fresh_water', element.fluid_amount, element.output,
 			element.name, null, 8, null, GTValues.VA[GTValues.LV])
 	})
 

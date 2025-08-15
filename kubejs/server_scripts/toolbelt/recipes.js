@@ -2,37 +2,59 @@
 "use strict";
 
 const registerToolBeltRecipes = (event) => {
-    
-    // Удаление всех рецептов мода
-    event.remove({ mod: 'toolbelt' });
 
-    // Мешочек
-    event.shaped('toolbelt:pouch', [
-        'ACA', 
-        'B B',
-        'ABA'
-    ], {
-        A: '#forge:string',
-        B: '#forge:leather',
-        C: '#forge:plates/wrought_iron'
-    }).id('tfg:toolbelt/shaped/pouch')
+	event.remove({ mod: 'toolbelt' });
 
-    // ToolBelt с размером 2
-    event.shaped(Item.of('toolbelt:belt', {Size:2}), [
-        'ABA', 
-        'B B',
-        'BCB'
-    ], {
-        A: '#forge:string',
-        B: '#forge:leather',
-        C: '#forge:plates/wrought_iron'
-    }).id(`tfg:toolbelt/shaped/belt_${  2}`)
+	event.shaped('toolbelt:pouch', [
+		'ACA',
+		'BAB'
+	], {
+		A: '#forge:string',
+		B: '#forge:leather',
+		C: '#forge:bolts/rose_gold'
+	}).id('tfg:toolbelt/shaped/pouch')
 
-    // ToolBelt с размером 3 - 9
-    for (let i = 3; i < 10; i++) {
-        event.shapeless(Item.of('toolbelt:belt', {Size:i}), [
-            Ingredient.of(Item.of('toolbelt:belt', {Size:i-1}).strongNBT()).or(Ingredient.of(Item.of('toolbelt:belt', {Size:i-1,Items:[]}).strongNBT())),
-            'toolbelt:pouch'
-        ]).id(`tfg:toolbelt/shaped/belt_${  i}`)
-    }
+	event.shaped(Item.of('toolbelt:belt', { Size: 2 }), [
+		'ABA',
+		'B B',
+		'BCB'
+	], {
+		A: '#forge:string',
+		B: '#forge:leather',
+		C: '#forge:plates/wrought_iron'
+	}).id(`tfg:toolbelt/shaped/belt_${2}`)
+
+
+	event.shapeless('toolbelt:belt', ['toolbelt:belt', 'toolbelt:pouch'])
+		.modifyResult((grid, result) => {
+			let orig = grid.find(Item.of('toolbelt:belt').ignoreNBT())
+
+			if (orig.nbt == null) {
+				orig.nbt = { Size: 3 };
+			}
+			else {
+				if (orig.nbt.Size == null) {
+					orig.nbt = { Size: 3 };
+				}
+				else {
+					orig.nbt.Size = orig.nbt.getInt("Size") + 1;
+				}
+			}
+
+			return result.withNBT(orig.nbt);
+		})
+
+
+	event.shapeless('toolbelt:belt', ['toolbelt:belt', 'tfc:powder/wood_ash'])
+		.modifyResult((grid, result) => {
+			let orig = grid.find(Item.of('toolbelt:belt').ignoreNBT())
+
+			if (orig.nbt == null || orig.nbt.display == null) {
+				return result;
+			}
+			else {
+				delete orig.nbt.display;
+				return result.withNBT(orig.nbt);
+			}
+		})
 }

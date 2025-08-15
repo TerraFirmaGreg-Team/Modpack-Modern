@@ -7,15 +7,6 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['minecraft:name_tag'], (item, advanced, text) => {
 		text.add(1, [text.of('§7Used on a Scribing Table along with an item to name it, or with black dye to name the tag.')])
 	})
-	event.addAdvanced(['toolbelt:belt'], (item, advanced, text) => {
-		text.add(1, [text.of('§7Press the §o§6Swap Tool§7 keybind to open the radial menu.')]),
-		text.add(2, [text.of(`§7You can also right click with it in hand to add or remove tools.`)])
-		text.add(3, [text.of(`§cDo not dye this or you won't be able to upgrade.`)])
-	})
-	event.addAdvanced(['toolbelt:pouch'], (item, advanced, text) => {
-		text.add(1, [text.of('§7Used to upgrade your toolbelt to add more slots')]),
-		text.add(2, [text.of(`§7Can't be used with §cd§ey§ae§9d §rbelts or belts that have tools inside.`)])
-	})
 	event.addAdvanced(['firmalife:bucket/yeast_starter'], (item, advanced, text) => {
 		text.add(1, [text.of('§7Created with dried fruit')])
 	})
@@ -34,6 +25,9 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfg:electric_greenhouse'], (item, advanced, text) => {
 		text.add(1, text.of('This machine has a §2Perfect Overclock§r!')),
 		text.add(2, text.of(`The interior is customizable! Check the multiblock preview in JEI.`))
+	})
+	event.addAdvanced(['gtceu:large_chemical_reactor'], (item, advanced, text) => {
+		text.add(1, text.of('This machine has a §2Perfect Overclock§r!'))
 	})
 	event.addAdvanced(['gtceu:nether_dome'], (item, advanced, text) => {
 		text.add(1, text.of('§7Artificial enviroment to simulate the Nether.')),

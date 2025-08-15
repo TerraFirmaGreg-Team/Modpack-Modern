@@ -106,6 +106,7 @@ function registerTFGSpaceRecipes(event) {
 		.itemOutputs('64x minecraft:chorus_fruit')
 		.chancedOutput('8x tfg:lunar_chorus_flower', 750, 0)
 		.chancedOutput('8x tfg:lunar_chorus_flower', 500, 0)
+		.chancedOutput('8x tfg:lunar_chorus_flower', 750, 0)
 		.duration(36000) // 30 mins
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.MV])
@@ -117,6 +118,7 @@ function registerTFGSpaceRecipes(event) {
 		.itemOutputs('64x minecraft:chorus_fruit')
 		.chancedOutput('8x tfg:lunar_chorus_flower', 4000, 0)
 		.chancedOutput('8x tfg:lunar_chorus_flower', 3000, 0)
+		.chancedOutput('8x tfg:lunar_chorus_flower', 4000, 0)
 		.duration(12000) // 10 mins
 		.circuit(2)
 		.EUt(GTValues.VA[GTValues.MV])
