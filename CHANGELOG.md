@@ -12,6 +12,7 @@
 - Firmalife mixing bowls can now be placed on tool racks (#1623) @Pyritie
 - Fixed recipe for pyroxenite button (again) (#1625) @Pyritie
 - Refactored locometal recipes to use stonecutters, metal plated locometal is now also much cheaper (#1624) @Pyritie
+- Increased the air capacity of space suits by 250% @Pyritie
 ### Bug fixes
 - Fixed moon mob spawning light levels, so now they need a light level of 0 instead of 11 (#1587) @NINAustinFett
 - Fixed wrong output amount of mortaring soybean paste (#1607) @TomPlop
