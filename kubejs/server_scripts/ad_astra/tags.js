@@ -335,7 +335,8 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'endermanoverhaul:end_enderman',
 		'endermanoverhaul:end_islands_enderman',
 
-		'minecraft:sniffer',
+		'tfg:sniffer',
+		'tfg:glacian_ram',
 		'species:wraptor',
 		'species:goober',
 		'species:cruncher',
@@ -343,7 +344,12 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'species:quake',
 		'endermanoverhaul:crimson_forest_enderman',
 		'endermanoverhaul:warped_forest_enderman',
-		'endermanoverhaul:badlands_enderman'
+		'endermanoverhaul:badlands_enderman',
+		'wan_ancient_beasts:walker',
+		'wan_ancient_beasts:eater',
+		'wan_ancient_beasts:crusher',
+		'wan_ancient_beasts:soarer',
+		'wan_ancient_beasts:glider'
 	]
 
 	COLD_ENTITIES.forEach(entity => {
@@ -364,6 +370,11 @@ const registerAdAstraEntityTypeTags = (event) => {
 	event.add('tfg:ignores_gravity', 'endermanoverhaul:spirit')
 	event.add('tfg:ignores_gravity', 'species:birt')
 	event.add('tfg:ignores_gravity', 'ad_astra:star_crawler')
+	
+	event.add('tfg:ignores_gravity', 'species:wraptor')
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:crusher')
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:soarer')
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:glider')
 }
 
 const registerAdAstraPlacedFeatures = (event) => {
