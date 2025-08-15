@@ -71,7 +71,27 @@
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
-		"creature": [],
+		"creature": [
+			{
+				"type": "species:goober",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "wan_ancient_beasts:crusher",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 80
+			},
+			{
+				"type": "wan_ancient_beasts:glider",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
+			}
+			
+			],
 		"misc": [],
 		"monster": [
 			{
