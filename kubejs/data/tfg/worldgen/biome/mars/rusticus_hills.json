@@ -75,8 +75,8 @@
 		"axolotls": [],
 		"creature": [
 			{
-				"type": "minecraft:sniffer",
-				"maxCount": 3,
+				"type": "tfg:sniffer",
+				"maxCount": 4,
 				"minCount": 1,
 				"weight": 100
 			},
@@ -87,9 +87,27 @@
 				"weight": 100
 			},
 			{
-				"type": "species:springling",
+				"type": "wan_ancient_beasts:crusher",
 				"maxCount": 3,
 				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "wan_ancient_beasts:glider",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 30
+			},
+			{
+				"type": "wan_ancient_beasts:soarer",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "species:springling",
+				"maxCount": 5,
+				"minCount": 2,
 				"weight": 100
 			}
 		],
