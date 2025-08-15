@@ -3,7 +3,7 @@
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 2
+			"chance": 1
 		},
 		{
 			"type": "minecraft:in_square"
@@ -14,6 +14,13 @@
 		{
 			"type": "minecraft:heightmap",
 			"heightmap": "WORLD_SURFACE"
+		},
+		{
+			"type": "tfc:near_fluid",
+			"radius": 6,
+			"fluids": [
+				"tfg:semiheavy_ammoniacal_water"
+			]
 		}
 	]
 }

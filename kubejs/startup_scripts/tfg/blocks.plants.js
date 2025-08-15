@@ -3,7 +3,7 @@
 
 const registerTFGCrops = (event) => {
 
-    // Earth
+    // Earth Crops
 
     event.create('tfg:sunflower', 'tfc:double_crop')
         .translationKey('block.tfg.sunflower')
@@ -60,7 +60,7 @@ const registerTFGCrops = (event) => {
         .tagBlock('minecraft:mineable/hoe')
         .tagItem('c:hidden_from_recipe_viewers')
 
-    // Mars
+    // Mars Crops
 
     event.create('betterend:amber_root', 'tfc:crop')
         .soundType('crop')
@@ -251,4 +251,35 @@ const registerTFGCrops = (event) => {
         .tagBoth('tfc:wild_crops')
         .tagBlock('minecraft:mineable/hoe')
         .tagItem('c:hidden_from_recipe_viewers')
+
+    // Mars Saplings
+
+    event.create('tfg:saplings/crimson', 'tfc:sapling')
+        .features('tfg:mars/tree/crimson')
+        .translationKey('minecraft.block.crimson_fungus')
+        .growthDays(6)
+
+    event.create('tfg:saplings/warped', 'tfc:sapling')
+        .features('tfg:mars/tree/warped')
+        .translationKey('minecraft.block.warped_fungus')
+        .growthDays(6)
+
+    event.create('tfg:saplings/alphacene', 'tfc:sapling')
+        .features('species:alphacene_mushroom')
+        .translationKey('species.block.alphacene_mushroom')
+        .growthDays(3)
+
+    event.create('tfg:saplings/strophar', 'tfc:sapling')
+        .features('tfg:mars/tree/strophar')
+        .translationKey('ad_astra.block.strophar_mushroom')
+        .growthDays(7)
+
+    event.create('tfg:saplings/aeronos', 'tfc:sapling')
+        .features('tfg:mars/tree/aeronos')
+        .translationKey('ad_astra.block.strophar_mushroom')
+        .growthDays(9)
+
+    event.create('tfg:saplings/glacian', 'tfc:sapling')
+        .features('tfg:mars/tree/glacian')
+        .growthDays(9)
 }

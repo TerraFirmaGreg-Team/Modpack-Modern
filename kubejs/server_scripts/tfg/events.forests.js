@@ -55,9 +55,66 @@ TFCEvents.worldgenData(event => {
 		null, null, null, null, null, null, 
 		placement => {}
 	)
+
+	event.forestEntry('tfg:mars/aeronos_forest_entry',
+		climate => {},
+		'ad_astra:aeronos_stem',
+		'ad_astra:aeronos_cap',
+		'ad_astra:aeronos_stem',
+		null,
+		[
+			"ad_astra:aeronos_mushroom",
+			'beneath:wood/fallen_leaves/crimson',
+			'beneath:wood/twig/crimson'
+		],
+		'tfg:mars/tree/aeronos',
+		'tfg:mars/tree/aeronos_dead',
+		'tfg:mars/tree/aeronos_old_growth',
+		null, null, null, null, null, null,
+		placement => {}
+	)
+
+	event.forestEntry('tfg:mars/strophar_forest_entry',
+		climate => {},
+		'ad_astra:strophar_stem',
+		'ad_astra:strophar_cap',
+		null,
+		null,
+		[
+			"ad_astra:strophar_mushroom",
+			'beneath:wood/fallen_leaves/warped',
+			'beneath:wood/twig/warped'
+		],
+		'tfg:mars/tree/strophar',
+		'tfg:mars/tree/strophar_dead',
+		'tfg:mars/tree/strophar_old_growth',
+		null, null, null, null, null, null,
+		placement => {}
+	)
+
+	event.forestEntry('tfg:mars/alphacene_forest_entry',
+		climate => {},
+		'minecraft:mushroom_stem',
+		'species:alphacene_mushroom_block',
+		'minecraft:mushroom_stem',
+		null,
+		[
+			"species:alphacene_mushroom",
+			'beneath:wood/fallen_leaves/crimson',
+			'beneath:wood/twig/crimson'
+		],
+		'species:alphacene_mushroom',
+		'tfg:mars/tree/alphacene_dead',
+		'species:alphacene_mushroom',
+		null, null, null, null, null, null,
+		placement => {}
+	)
 })
 
 function registerTFGForestConfiguredFeatures(event) {
 	event.add('tfg:mars_forest_entries', 'tfg:mars/crimson_forest_entry')
 	event.add('tfg:mars_forest_entries', 'tfg:mars/warped_forest_entry')
+	event.add('tfg:mars_forest_entries', 'tfg:mars/aeronos_forest_entry')
+	event.add('tfg:mars_forest_entries', 'tfg:mars/strophar_forest_entry')
+	event.add('tfg:mars_forest_entries', 'tfg:mars/alphacene_forest_entry')
 }
