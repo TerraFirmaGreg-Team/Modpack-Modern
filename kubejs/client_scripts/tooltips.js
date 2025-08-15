@@ -128,6 +128,11 @@ const registerTooltips = (event) => {
 		text.add(1, text.of('Massive structure producing from §616384 to 65536 EU/t§r on the §6moon§r during the §6day§r'))
 	})
 
+	// Mars Animals
+	event.addAdvanced(['species:petrified_egg'], (item, advanced, text) => {
+		text.add(1, text.of("§7Requires Magma to Incubate"))
+	})
+
 	// MEGA Deprecated 0.10
 	event.addAdvanced(['#megacells:mega_interface'], (item, advanced, text) => {
 		text.add(1, text.of('§cDeprecated, cannot be crafted any more'))
