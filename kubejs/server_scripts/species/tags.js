@@ -17,4 +17,6 @@ const registerSpeciesItemTags = (event) => {
 
 	event.add('forge:eggs', 'species:birt_egg')
 	event.add('firmalife:foods/raw_eggs', 'species:birt_egg')
+
+	event.add('species:cruncher_eats', '#tfc:foods/meat')
 }
