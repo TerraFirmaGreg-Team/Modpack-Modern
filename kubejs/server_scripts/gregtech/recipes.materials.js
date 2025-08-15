@@ -775,7 +775,7 @@ function registerGTCEUMetalRecipes(event) {
 			.id(`shapeless/mortar_chipped_${material.getName()}`)
 
 		let amount = 9;
-		if (material === GTMaterials.NetherQuartz || material === GTMaterials.Amethyst)
+		if (material === GTMaterials.NetherQuartz || material === GTMaterials.CertusQuartz || material === GTMaterials.Amethyst)
 			amount = 4;
 
 		event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, amount), ChemicalHelper.get(TagPrefix.block, material, 1))
@@ -1155,7 +1155,8 @@ function registerGTCEUMetalRecipes(event) {
 		if (material === GTMaterials.get("andesite_alloy")
 			|| material === GTMaterials.get("refined_radiance")
 			|| material === GTMaterials.get("shadow_steel")
-			|| material === GTMaterials.get("chromatic_compound"))
+			|| material === GTMaterials.get("chromatic_compound")
+			|| material === GTMaterials.DamascusSteel)
 		{ return; }
 
 		const toolProperty = material.getProperty(PropertyKey.TOOL)

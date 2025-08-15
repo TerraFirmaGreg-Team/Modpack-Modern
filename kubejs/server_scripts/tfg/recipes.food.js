@@ -683,8 +683,8 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	processorRecipe("raw_pumpkin_pie", 20, 8, {
-		itemInputs: ["firmalife:food/pumpkin_pie_dough", "firmalife:pie_pan"],
-		itemOutputs: ["firmalife:raw_pumpkin_pie"],
+		itemInputs: ["firmalife:food/pumpkin_pie_dough", "#firmalife:pie_pans"],
+		itemOutputs: ["firmalife:food/raw_pumpkin_pie"],
 		itemOutputProvider: TFC.isp.of("firmalife:food/raw_pumpkin_pie").copyFood()
 	})
 
@@ -880,6 +880,23 @@ function registerTFGFoodRecipes(event) {
 		.id(`tfg:mortar/salt`)
 
 	//#endregion
+	
+	//#region Выход: Золотое яблоко
+
+	processorRecipe('golden_apple_from_red', 30 * 20, GTValues.VA[GTValues.HV], {
+		itemInputs: ['tfc:food/red_apple'],
+		fluidInputs: [Fluid.of('gtceu:gold', 144 * 8)],
+		itemOutputs: ['minecraft:golden_apple'],
+		circuit: 5
+	})
+	processorRecipe('golden_apple_from_green', 30 * 20, GTValues.VA[GTValues.HV], {
+		itemInputs: ['tfc:food/green_apple'],
+		fluidInputs: [Fluid.of('gtceu:gold', 144 * 8)],
+		itemOutputs: ['minecraft:golden_apple'],
+		circuit: 5
+	})
+
+    //#endregion
 
 	//#region New foods
 
@@ -943,6 +960,12 @@ function registerTFGFoodRecipes(event) {
 			TFC.ingredient.notRotten(`betterend:cave_pumpkin_pie_dough`),
 			'#firmalife:pie_pans'
 		]).id(`tfg:shapeless/cave_pumpkin_pie_raw`)
+
+	processorRecipe("raw_cave_pumpkin_pie", 20, 8, {
+		itemInputs: [`betterend:cave_pumpkin_pie_dough`, "#firmalife:pie_pans"],
+		itemOutputs: ["betterend:cave_pumpkin_pie_raw"],
+		itemOutputProvider: TFC.isp.of("betterend:cave_pumpkin_pie_raw").copyFood()
+	})
 
 	//#endregion
 

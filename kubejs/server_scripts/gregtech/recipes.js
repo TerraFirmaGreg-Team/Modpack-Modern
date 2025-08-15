@@ -1378,12 +1378,19 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Buttons
-	event.replaceOutput({ id: 'gtceu:cutter/blackstone_button' }, 'minecraft:polished_blackstone_button', '6x minecraft:polished_blackstone_button')
-	event.replaceOutput({ id: 'gtceu:cutter/blackstone_button_water' }, 'minecraft:polished_blackstone_button', '6x minecraft:polished_blackstone_button')
-	event.replaceOutput({ id: 'gtceu:cutter/blackstone_button_distilled_water' }, 'minecraft:polished_blackstone_button', '6x minecraft:polished_blackstone_button')
 	removeCutterRecipe(event, 'blackstone_button')
 	removeCutterRecipe(event, 'blackstone_button_water')
 	removeCutterRecipe(event, 'blackstone_button_distilled_water')
+	removeCutterRecipe(event, 'cut_polished_blackstone_brickslab_into_button')
+	removeCutterRecipe(event, 'cut_polished_blackstone_brickslab_into_button_water')
+	removeCutterRecipe(event, 'cut_polished_blackstone_brickslab_into_button_distilled_water')
+
+	event.recipes.gtceu.cutter('tfg:blackstone_button')
+		.itemInputs('minecraft:polished_blackstone_pressure_plate')
+		.itemOutputs('6x minecraft:polished_blackstone_button')
+		.EUt(7)
+		.duration(100)
+
 
 	event.replaceOutput({ id: 'gtceu:cutter/bamboo_button' }, 'minecraft:bamboo_button', '6x minecraft:bamboo_button')
 	event.replaceOutput({ id: 'gtceu:cutter/bamboo_button_water' }, 'minecraft:bamboo_button', '6x minecraft:bamboo_button')

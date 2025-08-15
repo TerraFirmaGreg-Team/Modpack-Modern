@@ -520,7 +520,7 @@ function registerVintageImprovementsRecipes(event) {
 			// Skip glass too
 			if (r.inputs.item[0].content.ingredient.item === "gtceu:glass_dust") return
 			// And this
-			if (r.inputs.item[0].content.ingredient.item === "gtceu:damascus_steel_ingot") return
+			if (r.inputs.item[0].content.ingredient.tag === "#forge:ingots/damascus_steel") return
 
 			let input = r.inputs.item[0].content.ingredient;
 			input.count = r.inputs.item[0].content.count;
