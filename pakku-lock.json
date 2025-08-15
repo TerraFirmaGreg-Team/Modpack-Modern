@@ -13671,6 +13671,72 @@
             ]
         },
         {
+            "pakku_id": "qM5Yyq0zqqJc8XtT",
+            "pakku_links": [
+                "pB7ARGecP03UXpd6"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "wans-ancient-beasts",
+                "modrinth": "wab"
+            },
+            "name": {
+                "curseforge": "Wan's Ancient Beasts",
+                "modrinth": "Wan's Ancient Beasts"
+            },
+            "id": {
+                "curseforge": "1108604",
+                "modrinth": "nWC3kyL3"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "wab-1.20.1-1.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6871/96/wab-1.20.1-1.3.0.jar",
+                    "id": "6871096",
+                    "parent_id": "1108604",
+                    "hashes": {
+                        "sha1": "e614c4c18b0623cb26c7aede3f75b9ed43cf54c7",
+                        "md5": "190aa6671f0a42775ee89381a47369a9"
+                    },
+                    "required_dependencies": [],
+                    "size": 9916516,
+                    "date_published": "2025-08-10T12:28:16.640Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "wab-1.20.1-1.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/nWC3kyL3/versions/txtFU0oY/wab-1.20.1-1.3.0.jar",
+                    "id": "txtFU0oY",
+                    "parent_id": "nWC3kyL3",
+                    "hashes": {
+                        "sha512": "216b256897bfa01671883aebd9f38dceb1077b8abff63a85f12f80ef800cb28d6b7bd8dd42c54ff928a587dd43d4ddc8fde7a8f45ec85459287bfabe578d4760",
+                        "sha1": "e614c4c18b0623cb26c7aede3f75b9ed43cf54c7"
+                    },
+                    "required_dependencies": [
+                        "8BmcQJ2H"
+                    ],
+                    "size": 9916516,
+                    "date_published": "2025-08-12T15:03:58.487235Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "zonLLbYfp9ViO9i7",
             "type": "MOD",
             "side": "BOTH",
