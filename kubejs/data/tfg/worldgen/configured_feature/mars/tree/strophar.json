@@ -1,0 +1,79 @@
+{
+	"type": "minecraft:tree",
+	"config": {
+		"decorators": [],
+		"dirt_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "ad_astra:strophar_stem"
+			}
+		},
+		"foliage_placer": {
+			"type": "minecraft:acacia_foliage_placer",
+			"offset": 1,
+			"radius": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": 3,
+					"max_inclusive": 5
+				}
+			}
+		},
+		"foliage_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "ad_astra:strophar_cap"
+			}
+		},
+		"force_dirt": false,
+		"ignore_vines": true,
+		"minimum_size": {
+			"type": "minecraft:two_layers_feature_size",
+			"limit": 1,
+			"lower_size": 0,
+			"upper_size": 0
+		},
+		"trunk_placer": {
+			"type": "minecraft:forking_trunk_placer",
+			"base_height": 5,
+			"height_rand_a": 2,
+			"height_rand_b": 5
+		},
+		"trunk_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "ad_astra:strophar_stem"
+			}
+		},
+		"root_placer": {
+			"type": "minecraft:mangrove_root_placer",
+			"trunk_offset_y": 4,
+			"mangrove_root_placement": {
+				"max_root_width": 8,
+				"max_root_length": 8,
+				"random_skew_chance": 0.2,
+				"can_grow_through": "#minecraft:mangrove_logs_can_grow_through",
+				"muddy_roots_in": [
+					"tfg:grass/mars_dirt",
+					"tfg:grass/amber_mycelium",
+					"tfg:grass/rusticus_mycelium",
+					"tfg:grass/sangnum_mycelium",
+					"ad_astra:mars_sand",
+					"ad_astra:venus_sand"
+				],
+				"muddy_roots_provider": {
+					"type": "minecraft:simple_state_provider",
+					"state": {
+						"Name": "ad_astra:strophar_stem"
+					}
+				}
+			},
+			"root_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "ad_astra:strophar_stem"
+				}
+			}
+		}
+	}
+}

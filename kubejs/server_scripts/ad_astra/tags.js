@@ -446,15 +446,12 @@ const registerAdAstraPlacedFeatures = (event) => {
 
 	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/small_amaranita_mushroom")
 	
-	event.add("tfg:mars_amber_vegetal_decoration", 'tfg:mars_forest')
 	event.add("tfg:mars_amber_vegetal_decoration", "#tfg:mars_amber_small_plants")
 	event.add("tfg:mars_amber_vegetal_decoration", "#tfg:mars_global_small_plants")
 
-	event.add("tfg:mars_rusticus_vegetal_decoration", 'tfg:mars_forest')
 	event.add("tfg:mars_rusticus_vegetal_decoration", "#tfg:mars_rusticus_small_plants")
 	event.add("tfg:mars_rusticus_vegetal_decoration", "#tfg:mars_global_small_plants")
 
-	event.add("tfg:mars_sangnum_vegetal_decoration", 'tfg:mars_forest')
 	event.add("tfg:mars_sangnum_vegetal_decoration", "#tfg:mars_sangnum_small_plants")
 	event.add("tfg:mars_sangnum_vegetal_decoration", "#tfg:mars_global_small_plants")
 

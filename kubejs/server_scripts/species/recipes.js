@@ -66,5 +66,7 @@ function registerSpeciesRecipes(event) {
 		B: 'firmaciv:rope_coil'
 	}).id('tfg:shaped/harpoon')
 
-	// TODO: birtday cake
+	generateGreenHouseRecipe(event, '8x tfg:saplings/alphacene', 'tfg:semiheavy_ammoniacal_water', 16000,
+		'64x species:alphacene_mushroom_block', 'tfg:green_house/alphacene_mushroom', 'ad_astra:mars', 8,
+		'8x minecraft:mushroom_stem', GTValues.VA[GTValues.MV])
 }
