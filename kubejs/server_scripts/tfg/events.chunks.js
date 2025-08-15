@@ -37,11 +37,11 @@ TFCEvents.createChunkDataProvider('mars', event => {
 
     const rain = TFC.misc.lerpFloatLayer(0, 0, 0, 0);
     const tempLayer = TFC.misc.newOpenSimplex2D(event.worldSeed + 4621678939469)
-        .spread(0.2)
+        .spread(0.002)
         .octaves(3)
         .scaled(70, 90)
     const forestLayer = TFC.misc.newOpenSimplex2D(event.worldSeed + 98713856895664)
-        .spread(0.8)
+        .spread(0.0002)
         .terraces(9)
         .affine(6, 12)
         .scaled(6, 18, 0, 1)
