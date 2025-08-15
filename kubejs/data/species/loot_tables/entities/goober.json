@@ -47,7 +47,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:slimeball",
+          "name": "minecraft:slime_ball",
 		  "functions": [
             {
               "function": "minecraft:set_count",
