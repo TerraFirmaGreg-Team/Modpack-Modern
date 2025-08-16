@@ -2,6 +2,7 @@
 "use strict";
 
 const $HeightMap = Java.loadClass("net.minecraft.world.level.levelgen.Heightmap")
+const $ForestType = Java.loadClass("net.dries007.tfc.world.chunkdata.ForestType")
 
 const ROCK_LAYER_HEIGHT = 40;
 
@@ -70,12 +71,23 @@ TFCEvents.createChunkDataProvider('mars', event => {
             tempLayer.noise(x + 15, z + 15)
         );
 
+        let forestType = $ForestType.NONE;
+        const forestTypeNoise = forestLayer.noise(x, z);
+        if (forestTypeNoise < 0.2)
+            forestType = $ForestType.OLD_GROWTH;
+        else if (forestTypeNoise < 0.4)
+            forestType = $ForestType.NORMAL;
+        else if (forestTypeNoise < 0.6)
+            forestType = $ForestType.EDGE;
+        else if (forestTypeNoise < 0.8)
+            forestType = $ForestType.SPARSE;
+
         data.generatePartial(
             rain,
             temp,
-            forestLayer.noise(x, z) * 4, // Kube accepts ordinal numbers for enum constants
+            forestType,
             forestLayer.noise(x * 78423 + 869, z),
-            forestLayer.noise(x, z * 651349 - 698763)
+            forestTypeNoise //forestLayer.noise(x, z * 651349 - 698763)
         );
     });
 
