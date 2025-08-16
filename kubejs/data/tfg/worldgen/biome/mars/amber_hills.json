@@ -68,6 +68,10 @@
 		"endermanoverhaul:badlands_enderman": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"minecraft:enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
 	"spawners": {
@@ -142,6 +146,12 @@
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "minecraft:enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
 			}
 		],
 		"underground_water_creature": [],

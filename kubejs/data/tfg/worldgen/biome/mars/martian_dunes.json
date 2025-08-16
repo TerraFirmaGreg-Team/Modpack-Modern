@@ -62,6 +62,10 @@
 		"endermanoverhaul:badlands_enderman": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"minecraft:enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
 	"spawners": {
