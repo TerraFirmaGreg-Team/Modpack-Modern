@@ -5,13 +5,13 @@ TFCEvents.worldgenData(event => {
 
 	event.forest('tfg:mars_forest', '#tfg:mars_forest_entries',
 		[
-			event.forestTypesMapEntry('none', 0, 0, 0, 0, false, false, 0),
-			event.forestTypesMapEntry('sparse', [1, 3], 6, 0.08, 0, true, false, null),
-			event.forestTypesMapEntry('edge', 2, 10, null, 1, false, false, [0, 1]),
-			event.forestTypesMapEntry('normal', 5, 25, null, 1, true, false, null),
-			event.forestTypesMapEntry('old_growth', 7, 40, null, 1, false, true, [0, 1])
+			event.forestTypesMapEntry('none', [1, 3], 0, 0, 0, false, false, 0),
+			event.forestTypesMapEntry('sparse', [2, 5], 6, 0.08, 0, true, false, null),
+			event.forestTypesMapEntry('edge', 5, 15, 0.1, 1, true, true, [0, 1]),
+			event.forestTypesMapEntry('normal', 10, 25, 0.1, 1, true, true, [1, 2]),
+			event.forestTypesMapEntry('old_growth', 15, 40, 0.2, 1, true, true, [1, 2])
 		],
-		true, 
+		false, 
 		placement => {}
 	)
 
@@ -24,7 +24,9 @@ TFCEvents.worldgenData(event => {
 		[ // ground cover
 			'minecraft:crimson_fungus',
 			'beneath:wood/fallen_leaves/crimson',
-			'beneath:wood/twig/crimson'
+			'beneath:wood/twig/crimson',
+			'tfc:groundcover/feather',
+			'tfc:groundcover/stick'
 		],
 		'tfg:mars/tree/crimson', // tree feature
 		'tfg:mars/tree/crimson_dead', // dead tree feature
@@ -47,7 +49,9 @@ TFCEvents.worldgenData(event => {
 		[
 			'minecraft:warped_fungus',
 			'beneath:wood/fallen_leaves/warped',
-			'beneath:wood/twig/warped'
+			'beneath:wood/twig/warped',
+			'tfc:groundcover/feather',
+			'tfc:groundcover/stick'
 		],
 		'tfg:mars/tree/warped',
 		'tfg:mars/tree/warped_dead',
@@ -55,9 +59,72 @@ TFCEvents.worldgenData(event => {
 		null, null, null, null, null, null, 
 		placement => {}
 	)
+
+	event.forestEntry('tfg:mars/aeronos_forest_entry',
+		climate => {},
+		'ad_astra:aeronos_stem',
+		'ad_astra:aeronos_cap',
+		'ad_astra:aeronos_stem',
+		null,
+		[
+			"ad_astra:aeronos_mushroom",
+			'beneath:wood/fallen_leaves/crimson',
+			'beneath:wood/twig/crimson',
+			'tfc:groundcover/feather',
+			'tfc:groundcover/stick'
+		],
+		'tfg:mars/tree/aeronos',
+		'tfg:mars/tree/aeronos_dead',
+		'tfg:mars/tree/aeronos_old_growth',
+		null, null, null, null, null, null,
+		placement => {}
+	)
+
+	event.forestEntry('tfg:mars/strophar_forest_entry',
+		climate => {},
+		'ad_astra:strophar_stem',
+		'ad_astra:strophar_cap',
+		null,
+		null,
+		[
+			"ad_astra:strophar_mushroom",
+			'beneath:wood/fallen_leaves/warped',
+			'beneath:wood/twig/warped',
+			'tfc:groundcover/feather',
+			'tfc:groundcover/stick'
+		],
+		'tfg:mars/tree/strophar',
+		'tfg:mars/tree/strophar_dead',
+		'tfg:mars/tree/strophar_old_growth',
+		null, null, null, null, null, null,
+		placement => {}
+	)
+
+	event.forestEntry('tfg:mars/alphacene_forest_entry',
+		climate => {},
+		'minecraft:mushroom_stem',
+		'species:alphacene_mushroom_block',
+		'minecraft:mushroom_stem',
+		null,
+		[
+			"species:alphacene_mushroom",
+			'beneath:wood/fallen_leaves/crimson',
+			'beneath:wood/twig/crimson',
+			'tfc:groundcover/feather',
+			'tfc:groundcover/stick'
+		],
+		'species:alphacene_mushroom',
+		'tfg:mars/tree/alphacene_dead',
+		'species:alphacene_mushroom',
+		null, null, null, null, null, null,
+		placement => {}
+	)
 })
 
 function registerTFGForestConfiguredFeatures(event) {
 	event.add('tfg:mars_forest_entries', 'tfg:mars/crimson_forest_entry')
 	event.add('tfg:mars_forest_entries', 'tfg:mars/warped_forest_entry')
+	event.add('tfg:mars_forest_entries', 'tfg:mars/aeronos_forest_entry')
+	event.add('tfg:mars_forest_entries', 'tfg:mars/strophar_forest_entry')
+	event.add('tfg:mars_forest_entries', 'tfg:mars/alphacene_forest_entry')
 }

@@ -140,7 +140,6 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Potin.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(807 * 0.6, 807 * 0.8, 807, 2));
 	GTMaterials.Cobalt.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495 * 0.6, 1495 * 0.8, 1495, 3));
 	GTMaterials.Cobaltite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495 * 0.6, 1495 * 0.8, 1495, GTMaterials.Cobalt, 3, 85));
-	GTMaterials.CobaltOxide.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495 * 0.6, 1495 * 0.8, 1495, GTMaterials.Cobalt, 3));
 	GTMaterials.CobaltBrass.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1060 * 0.6, 1060 * 0.8, 1060, 3));
 	let AlSi = GTMaterials.get('aluminium_silicate')
 	AlSi.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, 1))

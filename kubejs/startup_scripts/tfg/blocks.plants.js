@@ -3,7 +3,7 @@
 
 const registerTFGCrops = (event) => {
 
-    // Earth
+    // Earth Crops
 
     event.create('tfg:sunflower', 'tfc:double_crop')
         .translationKey('block.tfg.sunflower')
@@ -13,6 +13,7 @@ const registerTFGCrops = (event) => {
         .doubleStages(2)
         .hardness(0.4)
         .growthModifier(0.8)
+        .tagBlock('minecraft:mineable/hoe')
         .productItem(product => {
             product.texture('tfg:item/sunflower_product')
         })
@@ -22,6 +23,7 @@ const registerTFGCrops = (event) => {
         .deadBlock(dead => {
             dead.hardness(0.2)
             dead.soundType('crop')
+            dead.tagBlock('minecraft:mineable/hoe')
         })
 
     event.create('tfg:sunflower_wild', 'tfc:wild_crop')
@@ -31,6 +33,7 @@ const registerTFGCrops = (event) => {
         .food('tfg:sunflower_product')
         .hardness(0.2)
         .tagBoth('tfc:wild_crops')
+        .tagBlock('minecraft:mineable/hoe')
         .tagItem('c:hidden_from_recipe_viewers')
 
     event.create('tfg:rapeseed', 'tfc:double_crop')
@@ -40,9 +43,11 @@ const registerTFGCrops = (event) => {
         .stages(3)
         .doubleStages(3)
         .hardness(0.4)
+        .tagBlock('minecraft:mineable/hoe')
         .deadBlock(dead => {
             dead.hardness(0.2)
             dead.soundType('crop')
+            dead.tagBlock('minecraft:mineable/hoe')
         })
 
     event.create('tfg:rapeseed_wild', 'tfc:wild_crop')
@@ -52,15 +57,17 @@ const registerTFGCrops = (event) => {
         .food('tfg:rapeseed_product')
         .hardness(0.2)
         .tagBoth('tfc:wild_crops')
+        .tagBlock('minecraft:mineable/hoe')
         .tagItem('c:hidden_from_recipe_viewers')
 
-    // Mars
+    // Mars Crops
 
     event.create('betterend:amber_root', 'tfc:crop')
         .soundType('crop')
         .nutrient('phosphorous')
         .stages(3)
         .hardness(0.4)
+        .tagBlock('minecraft:mineable/hoe')
         .productItem(product => {
             product.food(food => {
 	            food.hunger(4)
@@ -70,6 +77,7 @@ const registerTFGCrops = (event) => {
         .deadBlock(dead => {
             dead.hardness(0.2)
             dead.soundType('crop')
+            dead.tagBlock('minecraft:mineable/hoe')
         })
 
     event.create('betterend:amber_root_wild', 'tfc:wild_crop')
@@ -79,6 +87,7 @@ const registerTFGCrops = (event) => {
         .food('betterend:amber_root_product')
         .hardness(0.2)
         .tagBoth('tfc:wild_crops')
+        .tagBlock('minecraft:mineable/hoe')
         .tagItem('c:hidden_from_recipe_viewers')
 
 
@@ -87,6 +96,7 @@ const registerTFGCrops = (event) => {
         .nutrient('potassium')
         .stages(3)
         .hardness(0.4)
+        .tagBlock('minecraft:mineable/hoe')
         .productItem(product => {
             product.food(food => {
 	            food.hunger(5)
@@ -96,6 +106,7 @@ const registerTFGCrops = (event) => {
         .deadBlock(dead => {
             dead.hardness(0.2)
             dead.soundType('crop')
+            dead.tagBlock('minecraft:mineable/hoe')
         })
 
     event.create('betterend:blossom_berry_wild', 'tfc:wild_crop')
@@ -105,6 +116,7 @@ const registerTFGCrops = (event) => {
         .food('betterend:blossom_berry_product')
         .hardness(0.2)
         .tagBoth('tfc:wild_crops')
+        .tagBlock('minecraft:mineable/hoe')
         .tagItem('c:hidden_from_recipe_viewers')
 
 
@@ -123,9 +135,11 @@ const registerTFGCrops = (event) => {
         .nutrient('nitrogen')
         .stages(3)
         .hardness(0.4)
+        .tagBlock('minecraft:mineable/hoe')
         .deadBlock(dead => {
             dead.hardness(0.2)
             dead.soundType('crop')
+            dead.tagBlock('minecraft:mineable/hoe')
         })
         .fruitBlock('betterend:cave_pumpkin')
         .textureAt(0, "betterend:block/cave_pumpkin_stem_0")
@@ -141,6 +155,7 @@ const registerTFGCrops = (event) => {
         .seeds('betterend:cave_pumpkin_seeds')
         .hardness(0.2)
         .tagBoth('tfc:wild_crops')
+        .tagBlock('minecraft:mineable/hoe')
         .tagItem('c:hidden_from_recipe_viewers')
 
 
@@ -150,6 +165,7 @@ const registerTFGCrops = (event) => {
         .nutrient('phosphorous')
         .stages(3)
         .hardness(0.4)
+        .tagBlock('minecraft:mineable/hoe')
         .productItem(product => {
             product.food(food => {
 	            food.hunger(2)
@@ -161,6 +177,7 @@ const registerTFGCrops = (event) => {
         .deadBlock(dead => {
             dead.hardness(0.2)
             dead.soundType('nether_wart')
+            dead.tagBlock('minecraft:mineable/hoe')
         })
 
     event.create('betterend:chorus_mushroom_wild', 'tfc:wild_crop')
@@ -171,6 +188,7 @@ const registerTFGCrops = (event) => {
         .food('betterend:chorus_mushroom_product')
         .hardness(0.2)
         .tagBoth('tfc:wild_crops')
+        .tagBlock('minecraft:mineable/hoe')
         .tagItem('c:hidden_from_recipe_viewers')
 
 
@@ -179,6 +197,7 @@ const registerTFGCrops = (event) => {
         .nutrient('potassium')
         .stages(3)
         .hardness(0.4)
+        .tagBlock('minecraft:mineable/hoe')
         .productItem(product => {
             product.food(food => {
 	            food.hunger(5)
@@ -189,6 +208,7 @@ const registerTFGCrops = (event) => {
         .deadBlock(dead => {
             dead.hardness(0.2)
             dead.soundType('crop')
+            dead.tagBlock('minecraft:mineable/hoe')
         })
 
     event.create('betterend:shadow_berry_wild', 'tfc:wild_crop')
@@ -198,6 +218,7 @@ const registerTFGCrops = (event) => {
         .food('betterend:shadow_berry_product')
         .hardness(0.2)
         .tagBoth('tfc:wild_crops')
+        .tagBlock('minecraft:mineable/hoe')
         .tagItem('c:hidden_from_recipe_viewers')
 
 
@@ -206,6 +227,7 @@ const registerTFGCrops = (event) => {
         .nutrient('phosphorous')
         .stages(3)
         .hardness(0.4)
+        .tagBlock('minecraft:mineable/hoe')
         .productItem(product => {
             product.food(food => {
 	            food.hunger(2)
@@ -217,6 +239,7 @@ const registerTFGCrops = (event) => {
         .deadBlock(dead => {
             dead.hardness(0.2)
             dead.soundType('nether_wart')
+            dead.tagBlock('minecraft:mineable/hoe')
         })
 
     event.create('betterend:bolux_mushroom_wild', 'tfc:wild_crop')
@@ -226,5 +249,37 @@ const registerTFGCrops = (event) => {
         .food('betterend:bolux_mushroom_product')
         .hardness(0.2)
         .tagBoth('tfc:wild_crops')
+        .tagBlock('minecraft:mineable/hoe')
         .tagItem('c:hidden_from_recipe_viewers')
+
+    // Mars Saplings
+
+    event.create('tfg:saplings/crimson', 'tfc:sapling')
+        .features('tfg:mars/tree/crimson')
+        .translationKey('minecraft.block.crimson_fungus')
+        .growthDays(6)
+
+    event.create('tfg:saplings/warped', 'tfc:sapling')
+        .features('tfg:mars/tree/warped')
+        .translationKey('minecraft.block.warped_fungus')
+        .growthDays(6)
+
+    event.create('tfg:saplings/alphacene', 'tfc:sapling')
+        .features('species:alphacene_mushroom')
+        .translationKey('species.block.alphacene_mushroom')
+        .growthDays(3)
+
+    event.create('tfg:saplings/strophar', 'tfc:sapling')
+        .features('tfg:mars/tree/strophar')
+        .translationKey('ad_astra.block.strophar_mushroom')
+        .growthDays(7)
+
+    event.create('tfg:saplings/aeronos', 'tfc:sapling')
+        .features('tfg:mars/tree/aeronos')
+        .translationKey('ad_astra.block.strophar_mushroom')
+        .growthDays(9)
+
+    event.create('tfg:saplings/glacian', 'tfc:sapling')
+        .features('tfg:mars/tree/glacian')
+        .growthDays(9)
 }

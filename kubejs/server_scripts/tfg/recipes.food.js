@@ -932,6 +932,27 @@ function registerTFGFoodRecipes(event) {
 	
 	event.recipes.tfc.heating('tfg:food/raw_sniffer_beef', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_sniffer_beef').copyFood())
+	
+	event.recipes.tfc.heating('tfg:food/raw_wraptor', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_wraptor').copyFood())
+	
+	event.recipes.tfc.heating('tfg:food/raw_springling_chops', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_springling_chops').copyFood())
+		
+	event.recipes.tfc.heating('tfg:food/raw_walker_steak', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_walker_steak').copyFood())
+	
+	event.recipes.tfc.heating('tfg:food/raw_glider_wings', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_glider_wings').copyFood())
+	
+	event.recipes.tfc.heating('tfg:food/raw_whole_soarer', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_whole_soarer').copyFood())
+	
+	event.recipes.tfc.heating('tfg:food/raw_crusher_meat', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_crusher_meat').copyFood())
+		
+	event.recipes.tfc.heating('tfg:food/raw_goober_meat', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_goober_meat').copyFood())
 
 	event.recipes.tfc.advanced_shapeless_crafting(
 		TFC.itemStackProvider.of('4x betterend:cave_pumpkin_chunks').copyFood(),

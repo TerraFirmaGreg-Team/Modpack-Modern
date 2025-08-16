@@ -68,12 +68,12 @@ const registerBeneathRecipes = (event) => {
 
 	event.recipes.tfc.landslide('beneath:soul_clay', 'beneath:soul_clay')
 
-	generateGreenHouseRecipe(event, '8x minecraft:warped_fungus', 'tfg:semiheavy_ammoniacal_water', 16000,
+	generateGreenHouseRecipe(event, '8x tfg:saplings/warped', 'tfg:semiheavy_ammoniacal_water', 16000,
 		'64x beneath:wood/log/warped', 'tfg:green_house/warped_fungus', 'ad_astra:mars', 8, 
-		'16x minecraft:warped_wart_block', GTValues.VA[GTValues.MV])
-	generateGreenHouseRecipe(event, '8x minecraft:crimson_fungus', 'tfg:semiheavy_ammoniacal_water', 16000,
+		'32x minecraft:warped_wart_block', GTValues.VA[GTValues.MV])
+	generateGreenHouseRecipe(event, '8x tfg:saplings/crimson', 'tfg:semiheavy_ammoniacal_water', 16000,
 		'64x beneath:wood/log/crimson', 'tfg:green_house/crimson_fungus', 'ad_astra:mars', 8,
-		'16x minecraft:nether_wart_block', GTValues.VA[GTValues.MV])
+		'32x minecraft:nether_wart_block', GTValues.VA[GTValues.MV])
 
 	Ingredient.of('#beneath:mushrooms').stacks.forEach(element => {
 		const itemId = element.id;

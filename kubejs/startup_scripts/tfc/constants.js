@@ -917,8 +917,16 @@ global.TFC_MEAT_RECIPE_COMPONENTS = [
     { input: 'betterend:chorus_mushroom_product', output: 'betterend:chorus_mushroom_cooked', name: 'chorus_mushroom' },
     { input: 'betterend:shadow_berry_product', output: 'betterend:shadow_berry_cooked', name: 'shadow_berry' },
     { input: 'betterend:cave_pumpkin_pie_raw', output: 'betterend:cave_pumpkin_pie', name: 'cave_pumpkin_pie' },
-	 { input: 'tfg:food/raw_glacian_mutton', output: 'tfg:food/cooked_glacian_mutton', name: 'cooked_glacian_mutton' },
-	 { input: 'tfg:food/raw_sniffer_beef', output: 'tfg:food/cooked_sniffer_beef', name: 'cooked_sniffer_beef' }
+	{ input: 'tfg:food/raw_glacian_mutton', output: 'tfg:food/cooked_glacian_mutton', name: 'cooked_glacian_mutton' },
+	{ input: 'tfg:food/raw_sniffer_beef', output: 'tfg:food/cooked_sniffer_beef', name: 'cooked_sniffer_beef' },
+	{ input: 'tfg:food/raw_wraptor', output: 'tfg:food/cooked_wraptor', name: 'cooked_wraptor' },
+	{ input: 'wan_ancient_beasts:raw_toxlacanth', output: 'wan_ancient_beasts:cooked_toxlacanth', name: 'cooked_toxlacanth' },
+	{ input: 'tfg:food/raw_springling_chops', output: 'tfg:food/cooked_springling_chops', name: 'cooked_springling_chops' },
+	{ input: 'tfg:food/raw_walker_steak', output: 'tfg:food/cooked_walker_steak', name: 'cooked_walker_steak' },
+	{ input: 'tfg:food/raw_glider_wings', output: 'tfg:food/cooked_glider_wings', name: 'cooked_glider_wings' },
+	{ input: 'tfg:food/raw_whole_soarer', output: 'tfg:food/cooked_whole_soarer', name: 'cooked_whole_soarer' },
+	{ input: 'tfg:food/raw_crusher_meat', output: 'tfg:food/cooked_crusher_meat', name: 'cooked_crusher_meat' },
+	{ input: 'tfg:food/raw_goober_meat', output: 'tfg:food/cooked_goober_meat', name: 'cooked_goober_meat' }
 ];
 
 global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = [

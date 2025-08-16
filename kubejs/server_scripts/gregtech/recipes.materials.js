@@ -1155,7 +1155,8 @@ function registerGTCEUMetalRecipes(event) {
 		if (material === GTMaterials.get("andesite_alloy")
 			|| material === GTMaterials.get("refined_radiance")
 			|| material === GTMaterials.get("shadow_steel")
-			|| material === GTMaterials.get("chromatic_compound"))
+			|| material === GTMaterials.get("chromatic_compound")
+			|| material === GTMaterials.DamascusSteel)
 		{ return; }
 
 		const toolProperty = material.getProperty(PropertyKey.TOOL)

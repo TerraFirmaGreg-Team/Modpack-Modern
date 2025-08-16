@@ -738,7 +738,7 @@ function removeGTCEURecipes(event) {
 		event.remove({ id: `gtceu:assembler/${material}_pressure_plate` })	
 	})
 	
-	event.remove({ output: 'gtceu:damascus_steel_crowbar'})
+	event.remove({ id: /^gtceu:.*damascus_steel.*/ })
 
 	//removes metal armor
 	const armor = [

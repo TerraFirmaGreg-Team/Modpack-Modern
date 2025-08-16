@@ -296,6 +296,10 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:grass', 'tfg:grass/rusticus_mycelium')
 	event.add('tfc:grass', 'tfg:grass/sangnum_mycelium')
 	event.add('tfc:farmland', 'tfg:grass/mars_farmland')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/mars_dirt')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/amber_mycelium')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/rusticus_mycelium')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/sangnum_mycelium')
 	// #endregion
 
 	 // Mars stone dust

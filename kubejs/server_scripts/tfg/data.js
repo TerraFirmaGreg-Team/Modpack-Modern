@@ -128,7 +128,7 @@ const registerTFGFoodData = (event) => {
 	})
 
 	event.foodItem('tfg:food/raw_moon_rabbit', food => {
-		food.hunger(4)
+		food.hunger(3)
 		food.protein(2.0)
 		food.decayModifier(3)
 	})
@@ -141,7 +141,7 @@ const registerTFGFoodData = (event) => {
 	})
 
 	event.foodItem('tfg:food/raw_glacian_mutton', food => {
-		food.hunger(4)
+		food.hunger(3)
 		food.protein(2.0)
 		food.decayModifier(3)
 	})
@@ -154,7 +154,7 @@ const registerTFGFoodData = (event) => {
 	})
 	
 	event.foodItem('tfg:food/raw_sniffer_beef', food => {
-		food.hunger(4)
+		food.hunger(3)
 		food.protein(2.0)
 		food.decayModifier(3)
 	})
@@ -165,6 +165,99 @@ const registerTFGFoodData = (event) => {
 		food.protein(7)
 		food.decayModifier(1.5)
 	})
+	
+	event.foodItem('tfg:food/raw_wraptor', food => {
+		food.hunger(3)
+		food.protein(2.0)
+		food.decayModifier(3)
+	})
+
+	event.foodItem('tfg:food/cooked_wraptor', food => {
+		food.hunger(6)
+		food.saturation(4)
+		food.protein(5)
+		food.decayModifier(1.5)
+	})
+	
+	event.foodItem('tfg:food/raw_springling_chops', food => {
+		food.hunger(2)
+		food.protein(1.5)
+		food.decayModifier(3)
+	})
+
+	event.foodItem('tfg:food/cooked_springling_chops', food => {
+		food.hunger(4)
+		food.saturation(3)
+		food.protein(5)
+		food.decayModifier(1.5)
+	})
+	
+	event.foodItem('tfg:food/raw_walker_steak', food => {
+		food.hunger(3)
+		food.protein(2.0)
+		food.decayModifier(3)
+	})
+
+	event.foodItem('tfg:food/cooked_walker_steak', food => {
+		food.hunger(6)
+		food.saturation(3)
+		food.protein(8)
+		food.decayModifier(1.5)
+	})
+	
+	event.foodItem('tfg:food/raw_glider_wings', food => {
+		food.hunger(1)
+		food.protein(1.5)
+		food.decayModifier(3)
+	})
+
+	event.foodItem('tfg:food/cooked_glider_wings', food => {
+		food.hunger(3)
+		food.saturation(3)
+		food.protein(3)
+		food.decayModifier(1.5)
+	})
+	
+	event.foodItem('tfg:food/raw_whole_soarer', food => {
+		food.hunger(3)
+		food.protein(2.0)
+		food.decayModifier(3)
+	})
+
+	event.foodItem('tfg:food/cooked_whole_soarer', food => {
+		food.hunger(6)
+		food.saturation(6)
+		food.protein(4)
+		food.decayModifier(1.5)
+	})
+	
+	event.foodItem('tfg:food/raw_crusher_meat', food => {
+		food.hunger(3)
+		food.protein(1.5)
+		food.decayModifier(3)
+	})
+
+	event.foodItem('tfg:food/cooked_crusher_meat', food => {
+		food.hunger(5)
+		food.saturation(6)
+		food.protein(4)
+		food.decayModifier(1.5)
+	})
+	
+	event.foodItem('tfg:food/raw_goober_meat', food => {
+		food.hunger(2)
+		food.protein(3.0)
+		food.decayModifier(3)
+	})
+
+	event.foodItem('tfg:food/cooked_goober_meat', food => {
+		food.hunger(4)
+		food.saturation(3)
+		food.protein(6)
+		food.decayModifier(1.5)
+	})
+	
+	
 	
 	// high-tech food
 
