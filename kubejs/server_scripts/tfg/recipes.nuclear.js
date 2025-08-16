@@ -47,12 +47,19 @@ function registerTFGNuclearRecipes(event) {
 
 	//#region Mars Water
 
-	event.recipes.gtceu.electrolyzer('mars_water')
-		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
+	event.recipes.gtceu.electrolyzer('mars_heavy_water')
+		.inputFluids(Fluid.of('tfg:heavy_ammoniacal_water', 1000))
 		.outputFluids(Fluid.of('gtceu:heavy_water', 500))
 		.itemOutputs('#forge:dusts/ammonium_chloride', '2x #forge:small_dusts/ammonium_chloride')
 		.duration(20*9)
 		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.electrolyzer('mars_semiheavy_water')
+		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
+		.outputFluids(Fluid.of('minecraft:water', 500))
+		.itemOutputs('2x #forge:tiny_dusts/ammonium_chloride')
+		.duration(20*9)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	// Martian Sludge
 
@@ -77,7 +84,7 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:martian_sludge', 1000))
 		.inputFluids(Fluid.of('gtceu:formamide', 1000))
 		.inputFluids(Fluid.of('gtceu:radioactive_waste', 1000))
-		.outputFluids(Fluid.of('gtceu:radon', 100))
+		.outputFluids(Fluid.of('gtceu:radon', 1000))
 		.itemOutputs('#forge:dusts/nuclear_residue')
 		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.EV])
@@ -85,7 +92,7 @@ function registerTFGNuclearRecipes(event) {
 	event.recipes.gtceu.vacuum_freezer('oxidized_nuclear_residue')
 		.itemInputs('#forge:dusts/nuclear_residue')
 		.inputFluids(Fluid.of('gtceu:dioxygen_difluoride', 1000))
-		.outputFluids(Fluid.of('minecraft:water', 10))
+		.outputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1000))
 		.itemOutputs('#forge:dusts/oxidized_nuclear_residue')
 		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.IV])
@@ -208,8 +215,14 @@ function registerTFGNuclearRecipes(event) {
 
 	//#region FLiBe Line
 
-	event.recipes.gtceu.evaporation_tower('raw_rich_brine')
+	event.recipes.gtceu.evaporation_tower('raw_rich_brine_earth')
 		.inputFluids(Fluid.of('tfc:spring_water', 20000))
+		.outputFluids(Fluid.of('gtceu:raw_rich_brine', 1000))
+		.duration(20*50)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.evaporation_tower('raw_rich_brine_mars')
+		.inputFluids(Fluid.of('tfg:heavy_ammoniacal_water', 20000))
 		.outputFluids(Fluid.of('gtceu:raw_rich_brine', 1000))
 		.duration(20*50)
 		.EUt(GTValues.VA[GTValues.EV])
@@ -289,6 +302,12 @@ function registerTFGNuclearRecipes(event) {
 
 	event.recipes.gtceu.evaporation_tower('evaporation_brine')
 		.inputFluids(Fluid.of('tfc:salt_water', 20000))
+		.outputFluids(Fluid.of('gtceu:raw_brine', 1000))
+		.duration(20*50)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.evaporation_tower('evaporation_brine_mars')
+		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 20000))
 		.outputFluids(Fluid.of('gtceu:raw_brine', 1000))
 		.duration(20*50)
 		.EUt(GTValues.VA[GTValues.HV])

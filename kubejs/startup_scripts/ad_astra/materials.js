@@ -41,7 +41,6 @@ const registerAdAstraMaterials = (event) => {
 		.color(0xbd7980)
 		.secondaryColor(0xA66C8D)
 		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
-		.dust()
 		.ingot()
 		.liquid()
 		.blastTemp(2900, 'mid', GTValues.VA[GTValues.HV])

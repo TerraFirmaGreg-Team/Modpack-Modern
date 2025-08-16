@@ -72,4 +72,20 @@ const registerGTCEuRecipeTypes = (event) => {
 		.setProgressBar(GuiTextures.PROGRESS_BAR_DISTILLATION_TOWER, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.BATH)
 
+	event.create('ostrum_harvester')
+        .category('ostrum_harvester')
+        .setEUIO('in')
+        .setMaxIOSize(0, 1, 1, 0)
+		.setSlotOverlay(false, false, GuiTextures.EXTRACTOR_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRACT, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.BATH)
+
+	event.create('extraterrestrial_ore_fabricator')
+        .category('extraterrestrial_ore_fabricator')
+        .setEUIO('in')
+        .setMaxIOSize(0, 6, 2, 0)
+		.setSlotOverlay(false, false, GuiTextures.EXTRACTOR_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRACT, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.BATH)
+
 }
