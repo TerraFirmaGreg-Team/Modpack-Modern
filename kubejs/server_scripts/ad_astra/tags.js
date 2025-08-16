@@ -243,6 +243,7 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:mars_soil', 'tfg:grass/amber_mycelium')
 	event.add('tfg:mars_soil', 'tfg:grass/sangnum_mycelium')
 	event.add('ad_astra:mars_stone_replaceables', '#tfg:mars_soil')
+	event.add('minecraft:animals_spawnable_on', '#tfg:mars_soil')
 	
 	event.add('tfc:can_carve', '#ad_astra:moon_stone_replaceables')
 	event.add('tfc:can_carve', '#ad_astra:mars_stone_replaceables')
@@ -363,7 +364,9 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'wan_ancient_beasts:eater',
 		'wan_ancient_beasts:crusher',
 		'wan_ancient_beasts:soarer',
-		'wan_ancient_beasts:glider'
+		'wan_ancient_beasts:glider',
+		'wan_ancient_beasts:toxlacanth',
+		'wan_ancient_beasts:surfer'
 	]
 
 	COLD_ENTITIES.forEach(entity => {
