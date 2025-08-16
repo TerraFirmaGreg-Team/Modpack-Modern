@@ -53,16 +53,20 @@
 	"has_precipitation": false,
 	"spawn_costs": {
 		"endermanoverhaul:crimson_forest_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"endermanoverhaul:warped_forest_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"endermanoverhaul:badlands_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"minecraft:enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
 	"spawners": {
@@ -71,45 +75,51 @@
 		"creature": [
 			{
 				"type": "tfg:sniffer",
-				"maxCount": 4,
+				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100
 			},
 			{
 				"type": "species:wraptor",
 				"maxCount": 4,
-				"minCount": 1,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
 				"type": "wan_ancient_beasts:walker",
-				"maxCount": 5,
+				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100
 			},
 			{
 				"type": "wan_ancient_beasts:crusher",
-				"maxCount": 4,
+				"maxCount": 5,
 				"minCount": 1,
-				"weight": 20
+				"weight": 100
 			},
 			{
 				"type": "wan_ancient_beasts:glider",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 100
+				"weight": 20
 			},
 			{
-				"type": "species:goober",
+				"type": "wan_ancient_beasts:soarer",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 50
+				"weight": 5
 			},
 			{
 				"type": "tfg:glacian_ram",
-				"maxCount": 6,
+				"maxCount": 5,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "wan_ancient_beasts:eater",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 5
 			}
 		],
 		"misc": [],
@@ -122,7 +132,7 @@
 			},
 			{
 				"type": "endermanoverhaul:warped_forest_enderman",
-				"maxCount": 3,
+				"maxCount": 1,
 				"minCount": 1,
 				"weight": 100
 			},
@@ -131,11 +141,24 @@
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "minecraft:enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
 			}
 		],
 		"underground_water_creature": [],
 		"water_ambient": [],
-		"water_creature": []
+		"water_creature": [
+			{
+				"type": "wan_ancient_beasts:surfer",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			}
+		]
 	},
 	"temperature": 0.8
 }
