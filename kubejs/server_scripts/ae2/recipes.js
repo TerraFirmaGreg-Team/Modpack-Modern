@@ -1152,7 +1152,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'ae2:logic_processor',
 			'ae2:engineering_processor',
 			'ae2:calculation_processor',
-			'#gtceu:circuits/iv',
+			'#gtceu:circuits/ev',
 			'6x #forge:plates/stainless_steel')
 		.inputFluids(Fluid.of('tfg:fluix', 144*5))
 		.itemOutputs('ae2:crafting_unit')
@@ -1165,7 +1165,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'ae2:logic_processor',
 			'ae2:engineering_processor',
 			'ae2:calculation_processor',
-			'#gtceu:circuits/iv',
+			'#gtceu:circuits/ev',
 			'6x #forge:plates/stainless_steel')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*5))
 		.itemOutputs('2x ae2:crafting_unit')
@@ -2150,24 +2150,38 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'8x ae2:engineering_processor',
 			'14x gtceu:iv_sensor',
 			'ae2:logic_processor')
-		.inputFluids(Fluid.of('gtceu:titanium', 1440))
+		.inputFluids(Fluid.of('tfg:fluix', 144*200))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*150))
 		.itemOutputs('ae2:quantum_ring')
 		.duration(900)
-		.EUt(8300)
+		.EUt(GTValues.VA[GTValues.ZPM])
 		.cleanroom(CleanroomType.CLEANROOM)
 
 	// Quantum Link Chamber
 	event.recipes.gtceu.assembly_line('ae2:quantum_link')
 		.itemInputs(
 			'8x ae2:fluix_pearl',
-			'6x ae2:quartz_vibrant_glass',
-			'8x ae2:engineering_processor',
-			'14x gtceu:iv_sensor',
-			'2x gtceu:hv_lithium_battery')
-		.inputFluids(Fluid.of('gtceu:titanium', 1088))
+			'gtceu:fusion_glass',
+			'32x megacells:accumulation_processor',
+			'32x megacells:accumulation_processor',
+			'32x ae2:engineering_processor',
+			'32x ae2:engineering_processor',
+			'32x ae2:logic_processor',
+			'32x ae2:logic_processor',
+			'32x ae2:calculation_processor',
+			'32x ae2:calculation_processor',
+			'gtceu:ruthenium_trinium_americium_neutronate_hex_wire',
+			'32x gtceu:uv_sensor',
+			'32x gtceu:uv_emitter',
+			'8x gtceu:uv_field_generator',
+			'gtceu:max_battery')
+		.inputFluids(Fluid.of('tfg:fluix', 144*2000))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*1500))
+		.stationResearch(b => b.researchStack(Item.of('minecraft:glass')).EUt(GTValues.VA[GTValues.UV]).CWUt(256))
+		.dimension('ad_astra:moon')
 		.itemOutputs('ae2:quantum_link')
 		.duration(700)
-		.EUt(8300)
+		.EUt(GTValues.VA[GTValues.UHV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
 	// Chemical Reactor

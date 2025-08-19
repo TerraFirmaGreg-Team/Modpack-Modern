@@ -564,7 +564,7 @@ const registerGTCEuMachines = (event) => {
 
 	//#endregion
 	
-	//#region Mars Ore Line
+	//#region Ore Line
 
 	// Ostrum Harvester
 
@@ -595,6 +595,42 @@ const registerGTCEuMachines = (event) => {
 				.or(Predicates.abilities(PartAbility.MUFFLER).setExactLimit(1).setPreviewCount(1)))
 			.where('F', Predicates.heatingCoils())
 			.where('G', Predicates.blocks('tfg:spice'))
+			.where('#', Predicates.air())
+			.where(' ', Predicates.any())
+			.build()
+		)
+		.workableCasingModel(
+			'gtceu:block/casings/gcym/nonconducting_casing',
+			'gtceu:block/multiblock/distillation_tower')
+
+	// Moon Harvester
+
+	event.create('moon_dust_harvester', 'multiblock')
+		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('moon_dust_harvester')
+		.recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, (machine, recipe) => GTRecipeModifiers.crackerOverclock(machine, recipe)])
+		.appearanceBlock(() => Block.getBlock('gtceu:nonconducting_casing'))
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle('A   A', 'AAAAA', 'ACCCA', 'AAEAA', ' AAA ')
+			.aisle('     ', 'BBBBB', 'B   B', 'BB BB', ' BFB ')
+			.aisle('     ', 'ADDDA', 'D   D', 'A   A', ' BFB ')
+			.aisle('     ', 'ADDDA', 'D   D', 'A   A', ' BFB ')
+			.aisle('     ', 'ADDDA', 'D   D', 'A   A', ' BFB ')
+			.aisle('     ', 'BBBBB', 'B   B', 'BBFBB', ' BFB ')
+			.aisle('A   A', 'AAAAA', 'ACXCA', 'AACAA', ' AAA ')
+			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('A', Predicates.blocks('tfg:casings/machine_casing_iron_desh'))
+			.where('B', Predicates.blocks('gtceu:nonconducting_casing'))
+			.where('C', Predicates.blocks('gtceu:nonconducting_casing')
+				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(2))
+				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1).setPreviewCount(1)))
+			.where('D', Predicates.blocks('tfg:casings/machine_casing_vacuum_engine_intake'))
+			.where('E', Predicates.blocks('gtceu:nonconducting_casing')
+				.or(Predicates.abilities(PartAbility.MUFFLER).setExactLimit(1).setPreviewCount(1)))
+			.where('F', Predicates.heatingCoils())
 			.where('#', Predicates.air())
 			.where(' ', Predicates.any())
 			.build()

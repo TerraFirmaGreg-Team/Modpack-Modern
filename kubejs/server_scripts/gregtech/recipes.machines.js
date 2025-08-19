@@ -690,7 +690,7 @@ function registerGTCEuMachineRecipes(event) {
 	["scannerResearch(java.util.function.UnaryOperator)"](b =>
 		b.researchStack(Item.of('gtceu:computer_monitor_cover')).EUt(GTValues.VA[GTValues.IV]).duration(120 * 20))
 
-	event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer' })
+	/*event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer' })
 	event.recipes.gtceu.assembly_line('me_pattern_buffer')
 		.itemInputs('gtceu:luv_dual_input_hatch',
 			'gtceu:luv_emitter',
@@ -720,7 +720,7 @@ function registerGTCEuMachineRecipes(event) {
 		.itemOutputs('gtceu:me_pattern_buffer_proxy')
 		.duration(30 * 20)
 		.EUt(GTValues.VA[GTValues.ZPM])
-		.stationResearch(b => b.researchStack(Item.of('gtceu:me_pattern_buffer')).EUt(GTValues.VA[GTValues.LuV]).CWUt(32))
+		.stationResearch(b => b.researchStack(Item.of('gtceu:me_pattern_buffer')).EUt(GTValues.VA[GTValues.LuV]).CWUt(32))*/
 
 	event.remove({ id: 'gtceu:assembly_line/ultimate_battery' })
 	event.recipes.gtceu.assembly_line('ultimate_battery')
