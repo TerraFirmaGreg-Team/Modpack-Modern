@@ -6,6 +6,7 @@
 - Rebalance Large Solar Array to make Mk2 circuit 2 viable, and buffed to LSA Mk3 circuit 2 (#1591) @TomPlop
 - Added mechanical press recipes to weld weak steels @Pyritie
 - Added backpacks, lunchboxes, and vessels to the toolbelt's blacklist @Pyritie
+- Toolbelt no longer has a max number of item slots, but of course use this responsibly so you don't chunkban yourself @Pyritie
 - Moon rabbits can eat chorus fruit now @Pyritie
 - Added electric greenhouse recipes for mushrooms and bamboo (#1610) @Pyritie
 - Increased amount of saplings that the electric greenhouse returns to be more in line with create-based tree farms @Pyritie
