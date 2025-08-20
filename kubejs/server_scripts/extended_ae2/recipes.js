@@ -185,7 +185,7 @@ const registerExtendedAE2Recipes = (event) => {
             '4x gtceu:tungsten_steel_plate',
             '4x ae2:annihilation_core',
             '4x ae2:formation_core',
-            'megacells:accumulation_processor',
+            '2x megacells:accumulation_processor',
             '2x #ae2:pattern_provider')
         .inputFluids(Fluid.of('tfg:fluix', 144*8))
         .itemOutputs('expatternprovider:ex_pattern_provider')
@@ -193,21 +193,21 @@ const registerExtendedAE2Recipes = (event) => {
         .EUt(GTValues.VA[GTValues.IV])
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // LuV Moon Only
+    // IV Moon Only
         
-    event.recipes.gtceu.assembler('expatternprovider:ex_pattern_provider_moon')
+    event.recipes.gtceu.assembler('expatternprovider:ex_pattern_provider_iv_moon')
         .itemInputs(
-            'gtceu:luv_robot_arm',
+            'gtceu:iv_robot_arm',
             '8x gtceu:laminated_glass',
-            '4x #forge:plates/rhodium_plated_palladium',
+            '4x #forge:plates/tungsten_steel_plate',
             '4x ae2:annihilation_core',
             '4x ae2:formation_core',
-            'megacells:accumulation_processor',
+            '2x megacells:accumulation_processor',
             '2x #ae2:pattern_provider')
         .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*8))
         .itemOutputs('2x expatternprovider:ex_pattern_provider')
         .duration(300)
-        .EUt(GTValues.VA[GTValues.LuV])
+        .EUt(GTValues.VA[GTValues.IV])
         .dimension('ad_astra:moon')
 
     // ZPM
@@ -217,15 +217,32 @@ const registerExtendedAE2Recipes = (event) => {
             'gtceu:zpm_robot_arm',
             '8x gtceu:laminated_glass',
             '4x #forge:plates/naquadah_alloy',
-            '32x ae2:annihilation_core',
-            '32x ae2:formation_core',
-            'megacells:accumulation_processor',
+            '16x ae2:annihilation_core',
+            '16x ae2:formation_core',
+            '8x megacells:accumulation_processor',
             '16x #ae2:pattern_provider')
-        .inputFluids(Fluid.of('tfg:fluix', 144*16))
+        .inputFluids(Fluid.of('tfg:fluix', 144*32))
         .itemOutputs('8x expatternprovider:ex_pattern_provider')
         .duration(300)
         .EUt(GTValues.VA[GTValues.ZPM])
         .cleanroom(CleanroomType.CLEANROOM)
+
+    // ZPM Moon Only
+        
+    event.recipes.gtceu.assembler('expatternprovider:ex_pattern_provider_zpm_moon')
+        .itemInputs(
+            'gtceu:zpm_robot_arm',
+            '8x gtceu:laminated_glass',
+            '4x #forge:plates/rhodium_plated_palladium',
+            '16x ae2:annihilation_core',
+            '16x ae2:formation_core',
+            '8x megacells:accumulation_processor',
+            '16x #ae2:pattern_provider')
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*32))
+        .itemOutputs('16x expatternprovider:ex_pattern_provider')
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.ZPM])
+        .dimension('ad_astra:moon')
 
     // Pattern Provider Upgrade
 
@@ -238,30 +255,29 @@ const registerExtendedAE2Recipes = (event) => {
             '4x gtceu:tungsten_steel_plate',
             '4x ae2:annihilation_core',
             '4x ae2:formation_core',
-            'megacells:accumulation_processor',
-            '#ae2:pattern_provider')
+            '2x megacells:accumulation_processor',
+            '2x #ae2:pattern_provider')
         .inputFluids(Fluid.of('tfg:fluix', 144*8))
         .itemOutputs('expatternprovider:pattern_provider_upgrade')
         .duration(300)
-        .circuit(4)
         .EUt(GTValues.VA[GTValues.IV])
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // LuV Moon Only
+    // IV Moon Only
         
-    event.recipes.gtceu.assembler('expatternprovider:pattern_provider_upgrade_luv_moon')
+    event.recipes.gtceu.assembler('expatternprovider:pattern_provider_upgrade_iv_moon')
         .itemInputs(
-            'gtceu:luv_robot_arm',
+            'gtceu:iv_robot_arm',
             '8x gtceu:laminated_glass',
-            '4x #forge:plates/rhodium_plated_palladium',
+            '4x #forge:plates/tungsten_steel_plate',
             '4x ae2:annihilation_core',
             '4x ae2:formation_core',
-            'megacells:accumulation_processor')
+            '2x megacells:accumulation_processor',
+            '2x #ae2:pattern_provider')
         .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*8))
         .itemOutputs('2x expatternprovider:pattern_provider_upgrade')
         .duration(300)
-        .circuit(4)
-        .EUt(GTValues.VA[GTValues.LuV])
+        .EUt(GTValues.VA[GTValues.IV])
         .dimension('ad_astra:moon')
 
     // ZPM
@@ -271,16 +287,32 @@ const registerExtendedAE2Recipes = (event) => {
             'gtceu:zpm_robot_arm',
             '8x gtceu:laminated_glass',
             '4x #forge:plates/naquadah_alloy',
-            '32x ae2:annihilation_core',
-            '32x ae2:formation_core',
-            'megacells:accumulation_processor',
-            '8x #ae2:pattern_provider')
-        .inputFluids(Fluid.of('tfg:fluix', 144*16))
+            '16x ae2:annihilation_core',
+            '16x ae2:formation_core',
+            '8x megacells:accumulation_processor',
+            '16x #ae2:pattern_provider')
+        .inputFluids(Fluid.of('tfg:fluix', 144*32))
         .itemOutputs('8x expatternprovider:pattern_provider_upgrade')
         .duration(300)
-        .circuit(4)
         .EUt(GTValues.VA[GTValues.ZPM])
         .cleanroom(CleanroomType.CLEANROOM)
+
+    // ZPM Moon Only
+        
+    event.recipes.gtceu.assembler('expatternprovider:pattern_provider_upgrade_zpm_moon')
+        .itemInputs(
+            'gtceu:zpm_robot_arm',
+            '8x gtceu:laminated_glass',
+            '4x #forge:plates/rhodium_plated_palladium',
+            '16x ae2:annihilation_core',
+            '16x ae2:formation_core',
+            '8x megacells:accumulation_processor',
+            '16x #ae2:pattern_provider')
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*32))
+        .itemOutputs('16x expatternprovider:pattern_provider_upgrade')
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.ZPM])
+        .dimension('ad_astra:moon')
 
     //#endregion
 
