@@ -53,6 +53,7 @@ F:layout_editor_grid_snapping_strength = '1.0';
 S:anchor_overlay_color_base_override = '';
 I:layout_editor_grid_size = '10';
 B:invert_anchor_overlay_color = 'false';
+B:enable_buddy = 'true';
 S:anchor_overlay_color_border_override = '';
 F:anchor_overlay_opacity_normal = '0.5';
 F:anchor_overlay_opacity_busy = '0.7';

@@ -7,14 +7,14 @@ const registerTFGMaterials = (event) => {
 	event.create('hardwood')
 		.dust()
 		.flags(GTMaterialFlags.FLAMMABLE)
-		.iconSet(GTMaterialIconSet.FINE)
+		.iconSet(GTMaterialIconSet.WOOD)
 		.color('0x7a5225')
 		.secondaryColor('0x7a5225')
 
 	event.create('thermochemically_treated_hardwood')
 		.dust()
 		.flags(GTMaterialFlags.FLAMMABLE)
-		.iconSet(GTMaterialIconSet.FINE)
+		.iconSet(GTMaterialIconSet.WOOD)
 		.color('0x52482c')
 		.secondaryColor('0x52482c')
 
@@ -173,7 +173,7 @@ const registerTFGMaterials = (event) => {
 
 	event.create('tfg:solar_coolant_tier2')
         .gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(73))
-		.formula('(He³8O11H11)(Ar)(?)')
+		.formula('(He³8O11H11)8(Ar)(?)')
 		.color(0xfeff5d)
 
 	//end region

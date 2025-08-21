@@ -56,28 +56,30 @@ function registerTFGSpaceRecipes(event) {
 		.EUt(16)
 
 	// Aqueous accumulator
-
+	
+	let aaCircuit = 1;
 
 	event.recipes.gtceu.aqueous_accumulator('water')
+		.circuit(aaCircuit++)
 		.duration(20)
 		.EUt(GTValues.VHA[GTValues.ULV])
 		.addDataString("fluidA", "minecraft:water")
 		.outputFluids(Fluid.of("minecraft:water", 1000))
 		
 	event.recipes.gtceu.aqueous_accumulator('sea_water')
+		.circuit(aaCircuit++)
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.addDataString("fluidA", "tfc:salt_water")
 		.outputFluids(Fluid.of("tfc:salt_water", 1000))
 		
 	event.recipes.gtceu.aqueous_accumulator('semiheavy_water_mars')
+		.circuit(aaCircuit++)
 		.dimension('ad_astra:mars')
 		.duration(20)
 		.EUt(GTValues.VHA[GTValues.ULV])
 		.addDataString("fluidA", "tfg:semiheavy_ammoniacal_water")
 		.outputFluids(Fluid.of("tfg:semiheavy_ammoniacal_water", 1000))
-		
-	let aaCircuit = 1;
 
 	event.recipes.gtceu.aqueous_accumulator('lava_overworld')
 		.circuit(aaCircuit++)
@@ -104,6 +106,7 @@ function registerTFGSpaceRecipes(event) {
 		.itemOutputs('64x minecraft:chorus_fruit')
 		.chancedOutput('8x tfg:lunar_chorus_flower', 750, 0)
 		.chancedOutput('8x tfg:lunar_chorus_flower', 500, 0)
+		.chancedOutput('8x tfg:lunar_chorus_flower', 750, 0)
 		.duration(36000) // 30 mins
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.MV])
@@ -115,6 +118,7 @@ function registerTFGSpaceRecipes(event) {
 		.itemOutputs('64x minecraft:chorus_fruit')
 		.chancedOutput('8x tfg:lunar_chorus_flower', 4000, 0)
 		.chancedOutput('8x tfg:lunar_chorus_flower', 3000, 0)
+		.chancedOutput('8x tfg:lunar_chorus_flower', 4000, 0)
 		.duration(12000) // 10 mins
 		.circuit(2)
 		.EUt(GTValues.VA[GTValues.MV])

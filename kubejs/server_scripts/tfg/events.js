@@ -572,7 +572,4 @@ TFCEvents.startFire(event => {
             return;
         }
     }
-    
-    
-
 })

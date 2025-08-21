@@ -304,12 +304,18 @@ const registerAdAstraRecipes = (event) => {
 		B: 'tfg:space_suit_fabric',
 		D: 'ad_astra:oxygen_gear'
 	}).id('tfg:space_suit')
+
+	event.shapeless('ad_astra:space_suit', ['ad_astra:space_suit'])
+		.id('tfg:empty_space_suit')
 /*
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_suit')
 		.itemInputs('ad_astra:space_suit', '5x #forge:plates/tungsten_steel','5x tfg:better_space_suit_fabric')
 		.itemOutputs('ad_astra:netherite_space_suit')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.IV])
+
+	event.shapeless('ad_astra:netherite_space_suit', ['ad_astra:netherite_space_suit'])
+		.id('tfg:empty_netherite_space_suit')
 */
 	event.shaped('ad_astra:space_pants', [
 		'BAB',
@@ -367,6 +373,9 @@ const registerAdAstraRecipes = (event) => {
 		C: 'gtceu:aluminium_fluid_cell'
 	}).id('tfg:gas_tank')
 
+	event.shapeless('ad_astra:gas_tank', ['ad_astra:gas_tank'])
+		.id('tfg:empty_gas_tank')
+
 	event.shaped('ad_astra:large_gas_tank', [
 		'ABA',
 		'ACA',
@@ -376,6 +385,9 @@ const registerAdAstraRecipes = (event) => {
 		B: '#forge:small_fluid_pipes/polyethylene',
 		C: 'gtceu:stainless_steel_fluid_cell'
 	}).id('tfg:large_gas_tank')
+
+	event.shapeless('ad_astra:large_gas_tank', ['ad_astra:large_gas_tank'])
+		.id('tfg:empty_large_gas_tank')
 
 	//#endregion
 
@@ -907,13 +919,14 @@ const registerAdAstraRecipes = (event) => {
 		}).id('tfg:shaped/strophar_ladder')
 
 
-		generateGreenHouseRecipe(event, '8x ad_astra:strophar_mushroom', 'tfg:semiheavy_ammoniacal_water', 16000,
+		generateGreenHouseRecipe(event, '8x tfg:saplings/strophar', 'tfg:semiheavy_ammoniacal_water', 16000,
 			'64x ad_astra:strophar_stem', 'tfg:green_house/strophar_mushroom', 'ad_astra:mars', 8, 
 			'16x ad_astra:strophar_cap', GTValues.VA[GTValues.MV])
-		generateGreenHouseRecipe(event, '8x ad_astra:aeronos_mushroom', 'tfg:semiheavy_ammoniacal_water', 16000, 
+		generateGreenHouseRecipe(event, '8x tfg:saplings/aeronos', 'tfg:semiheavy_ammoniacal_water', 16000, 
 			'64x ad_astra:aeronos_stem', 'tfg:green_house/aeronos_mushroom', 'ad_astra:mars', 8,
 			'16x ad_astra:aeronos_cap', GTValues.VA[GTValues.MV])
-		// TODO: needs a sapling
-		//generateGreenHouseRecipe(event, '8x ___', 16000, '64x ad_astra:glacian_log', 'tfg:green_house/glacian_tree', 'ad_astra:mars', 8, '8x species:alphacene_moss_block', GTValues.VA[GTValues.MV])
+		generateGreenHouseRecipe(event, '8x tfg:saplings/glacian', 'tfg:semiheavy_ammoniacal_water', 16000,
+			'64x ad_astra:glacian_log', 'tfg:green_house/glacian_tree', 'ad_astra:mars', 8,
+			'8x species:alphacene_moss_block', GTValues.VA[GTValues.MV])
 	//#endregion
 }

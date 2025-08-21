@@ -57,31 +57,31 @@ const registerTFCRecipes = (event) => {
 
 	// Дерево
 	global.TFC_WOOD_TYPES.forEach(wood => {
-		generateGreenHouseRecipe(event, `8x tfc:wood/sapling/${wood}`, '#tfg:clean_water', 16000, `64x tfc:wood/log/${wood}`,
-			`tfg:greenhouse/${wood}`, 'minecraft:overworld', 16, null, GTValues.VA[GTValues.MV])
+		generateGreenHouseRecipe(event, `8x tfc:wood/sapling/${wood}`, '#tfc:any_fresh_water', 16000, `64x tfc:wood/log/${wood}`,
+			`tfg:greenhouse/${wood}`, 'minecraft:overworld', 16, `32x tfc:wood/sapling/${wood}`, GTValues.VH[GTValues.LV])
 	})
 
 	global.AFC_SAPLINGS.forEach(x => {
-		generateGreenHouseRecipe(event, `8x afc:wood/sapling/${x.sapling}`, '#tfg:clean_water', 16000, `64x ${x.log}`,
-			`tfg:greenhouse/${x.sapling}`, 'minecraft:overworld', 16, null, GTValues.VA[GTValues.MV])
+		generateGreenHouseRecipe(event, `8x afc:wood/sapling/${x.sapling}`, '#tfc:any_fresh_water', 16000, `64x ${x.log}`,
+			`tfg:greenhouse/${x.sapling}`, 'minecraft:overworld', 16, `32x afc:wood/sapling/${x.sapling}`, GTValues.VH[GTValues.LV])
 	})
 
 	// Семена фруктов
 	global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, '#tfg:clean_water', element.fluid_amount, element.output,
-			element.name, 'minecraft:overworld', 8, null, GTValues.VA[GTValues.LV])
+		generateGreenHouseRecipe(event, element.input, '#tfc:any_fresh_water', element.fluid_amount, element.output,
+			element.name, 'minecraft:overworld', 8, element.input, GTValues.VH[GTValues.LV])
 	})
 
 	// Семена овощей
 	global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, '#tfg:clean_water', element.fluid_amount, element.output,
-			element.name, null, 8, null, GTValues.VA[GTValues.LV])
+		generateGreenHouseRecipe(event, element.input, '#tfc:any_fresh_water', element.fluid_amount, element.output,
+			element.name, null, 8, element.input, GTValues.VH[GTValues.LV])
 	})
 
 	// Семена ягод
 	global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, '#tfg:clean_water', element.fluid_amount, element.output,
-			element.name, null, 8, null, GTValues.VA[GTValues.LV])
+		generateGreenHouseRecipe(event, element.input, '#tfc:any_fresh_water', element.fluid_amount, element.output,
+			element.name, null, 8, element.input, GTValues.VH[GTValues.LV])
 	})
 
 	// Растения
@@ -89,8 +89,8 @@ const registerTFCRecipes = (event) => {
 		const itemId = element.id;
 		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
 
-		generateGreenHouseRecipe(event, itemId, '#tfg:clean_water', 8000, `8x ${itemId}`,
-			recipeId, null, 8, null, GTValues.VA[GTValues.LV]);
+		generateGreenHouseRecipe(event, itemId, '#tfc:any_fresh_water', 8000, `8x ${itemId}`,
+			recipeId, null, 8, `16x ${itemId}`, GTValues.VH[GTValues.LV]);
 	});
 
 	//#endregion
@@ -202,9 +202,23 @@ const registerTFCRecipes = (event) => {
 	event.recipes.create.splashing([Item.of('tfc:powder/wood_ash').withChance(0.25), Item.of('minecraft:stick').withChance(0.25)], 'tfc:torch')
 		.id('tfg:splashing/wash_torch')
 
-	//Lye in mixer
+	//Lye
 	generateMixerRecipe(event, 'tfc:powder/wood_ash', "#tfg:clean_water 200",
-		[], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_in_mixer')
+		[], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_from_wood_ash')
+	generateMixerRecipe(event, '#forge:dusts/sodium_hydroxide', "#tfg:clean_water 1000",
+		[], null, Fluid.of('tfc:lye', 1000), 100, 2, 64, 'lye_from_sodium_hydroxide')
+
+	event.recipes.firmalife.vat()
+		.inputFluid(Fluid.of('tfc:lye', 1000))
+		.outputItem('gtceu:sodium_hydroxide_dust')
+		.length(100)
+		.temperature(80)
+
+	event.recipes.gtceu.distillery('lye_to_sodium_hydroxide')
+		.inputFluids('tfc:lye 1000')
+		.itemOutputs('gtceu:sodium_hydroxide_dust')
+		.duration(100)
+		.EUt(2)
 
 	// Brass Mechanism
 	event.recipes.shapeless('gtceu:small_brass_gear', [ 'tfc:brass_mechanisms' ]).id('tfg:replace_brass_mechanisms')

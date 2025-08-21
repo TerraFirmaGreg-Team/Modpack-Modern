@@ -59,6 +59,7 @@ const registerTFCItemTags = (event) => {
 	event.add('tfc:usable_on_tool_rack', 'waterflasks:iron_flask')
 	event.add('tfc:usable_on_tool_rack', 'waterflasks:red_steel_flask')
 	event.add('tfc:usable_on_tool_rack', 'tfc:wool_cloth')
+	event.add('tfc:usable_on_tool_rack', 'firmalife:mixing_bowl')
 
 	// Igniters
 	event.add('tfc:starts_fires_with_durability', 'gtceu:matchbox')
@@ -327,6 +328,13 @@ const registerTFCItemTags = (event) => {
 	event.add('tfc:forge_invisible_whitelist', 'greate:aluminum_mechanical_pump')
 	event.add('tfc:forge_invisible_whitelist', 'greate:stainless_steel_mechanical_pump')
 	event.add('tfc:forge_invisible_whitelist', 'greate:titanium_mechanical_pump')
+
+	event.add('forge:mushrooms', 'tfc:plant/artists_conk')
+
+	global.TFC_STONE_TYPES.forEach(stone => {
+		event.add('minecraft:stone_buttons', `tfc:rock/button/${stone}`)
+		event.add('minecraft:buttons', `tfc:rock/button/${stone}`)
+	})
 }
 
 const registerTFCBlockTags = (event) => {
@@ -444,6 +452,11 @@ const registerTFCBlockTags = (event) => {
 	const brick_blacklist = ('drying|slab|stairs|wall|additionalplacements');
 	event.add('tfc:bloomery_insulation', `/^(?=.*brick)(?!.*(${brick_blacklist})).*/`);
 	event.add('tfc:forge_insulation', `/^(?=.*brick)(?!.*(${brick_blacklist})).*/`);
+
+	global.TFC_STONE_TYPES.forEach(stone => {
+		event.add('minecraft:stone_buttons', `tfc:rock/button/${stone}`)
+		event.add('minecraft:buttons', `tfc:rock/button/${stone}`)
+	})
 }
 
 const registerTFCFluidTags = (event) => {

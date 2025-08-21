@@ -12,6 +12,8 @@
 	debug_packet = false
 	#Enables the generation of dynamic assets. This is required for the mod to work properly. Turn off if you chose to add all the generated assets via datapack manually. This can speedup boot times for modpacks. Note that the generated assets will depend on loaded datapacks
 	generate_dynamic_assets = true
+	#Allow the item_search or searchBar to be visible.
+	tab_item_search = true
 
 	[general.tooltips]
 		#Enabled tooltips showing which mod an EC item is from

@@ -32,7 +32,7 @@
 		},
 		{
 			"__comment": "Box1",
-			"from": [ 10, 0, 9 ],
+			"from": [ 10, -1, 9 ],
 			"to": [ 12, 3, 11 ],
 			"faces": {
 				"north": { "uv": [ 0, 0, 2, 3 ], "texture": "#texture" },
@@ -43,7 +43,7 @@
 		},
 		{
 			"__comment": "Box1",
-			"from": [ 2, 0, 5 ],
+			"from": [ 2, -1, 5 ],
 			"to": [ 4, 3, 7 ],
 			"faces": {
 				"north": { "uv": [ 1, 0, 3, 3 ], "texture": "#texture" },
@@ -79,7 +79,7 @@
 		},
 		{
 			"__comment": "Box1",
-			"from": [ 9, 0, 2 ],
+			"from": [ 9, -1, 2 ],
 			"to": [ 11, 4, 4 ],
 			"faces": {
 				"north": { "uv": [ 0, 0, 2, 4 ], "texture": "#texture" },
@@ -127,7 +127,7 @@
 		},
 		{
 			"__comment": "Box1",
-			"from": [ 2, 0, 12 ],
+			"from": [ 2, -1, 12 ],
 			"to": [ 4, 2, 14 ],
 			"faces": {
 				"north": { "uv": [ 0, 1, 2, 3 ], "texture": "#texture" },

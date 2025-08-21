@@ -183,7 +183,8 @@ function registerGTCEUMetalRecipes(event) {
 		if (material.hasFlag(MaterialFlags.GENERATE_PLATE)
 			&& material !== GTMaterials.Wood
 			&& material !== GTMaterials.TreatedWood
-			&& !material.hasProperty(PropertyKey.POLYMER)) {
+			&& !material.hasProperty(PropertyKey.POLYMER))
+		{
 			const plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
 			const blockStack = ChemicalHelper.get(TagPrefix.block, material, 1)
 
@@ -388,6 +389,38 @@ function registerGTCEUMetalRecipes(event) {
 
 	/**
 	 * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
+	 * @param {*} oreProperty 
+	 * @param {number} multiplier 
+	 * @param {Internal.ItemStack} oreItem 
+	 * @param {string} type
+	 */
+	function smeltOre(material, oreProperty, multiplier, oreItem, type) {
+		const smeltingMaterial = oreProperty.getDirectSmeltResult().isNull() ? material : oreProperty.getDirectSmeltResult();
+		if (!material.hasProperty(PropertyKey.BLAST) && !material.hasFlag(MaterialFlags.NO_ORE_SMELTING)) {
+			let ingotItem;
+			if (smeltingMaterial.hasProperty(PropertyKey.INGOT)) {
+				ingotItem = ChemicalHelper.getIngot(smeltingMaterial, GTValues.M * multiplier)
+			}
+			else if (smeltingMaterial.hasProperty(PropertyKey.GEM)) {
+				if (multiplier >= 1) {
+					ingotItem = ChemicalHelper.get(TagPrefix.gem, smeltingMaterial, multiplier)
+				}
+				else {
+					ingotItem = ChemicalHelper.get(TagPrefix.gemFlawed, smeltingMaterial, 1)
+				}
+			}
+			else {
+				ingotItem = ChemicalHelper.getDust(smeltingMaterial, GTValues.M * multiplier)
+			}
+
+			if (!ingotItem.isEmpty()) {
+				event.smelting(ingotItem, oreItem).id(`gtceu:smelting/smelt_${type}_${material.getName()}_ore_to_ingot`)
+			}
+		}
+	}
+
+	/**
+	 * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
 	*/
 	const processPoorRawOre = (material) => {
 		const poorOreItem = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1)
@@ -396,22 +429,14 @@ function registerGTCEUMetalRecipes(event) {
 		if (poorOreItem === null || crushedOreItem === null) return;
 
 		const oreProperty = material.getProperty(PropertyKey.ORE)
-		const smeltingMaterial = oreProperty.getDirectSmeltResult() === null ? material : oreProperty.getDirectSmeltResult();
 		const multiplier = oreProperty.getOreMultiplier();
-
-		let ingotItem;
-		if (smeltingMaterial.hasProperty(PropertyKey.INGOT)) ingotItem = ChemicalHelper.get(TagPrefix.nugget, smeltingMaterial, 5)
-		else if (smeltingMaterial.hasProperty(PropertyKey.GEM)) ingotItem = ChemicalHelper.get(TagPrefix.gemFlawed, smeltingMaterial, 1)
-		else ingotItem = ChemicalHelper.get(TagPrefix.dustSmall, smeltingMaterial, 1)
-
-		ingotItem.setCount(ingotItem.getCount() * multiplier)
 		crushedOreItem.setCount(crushedOreItem.getCount() * multiplier)
 
 		// Forge hammer
 		let hammerRecipe = event.recipes.gtceu.forge_hammer(`hammer_poor_raw_${material.getName()}_to_crushed_ore`)
 			.itemInputs(poorOreItem)
 			.category(GTRecipeCategories.ORE_FORGING)
-			.duration(10)
+			.duration(100)
 			.EUt(16)
 
 		if (material.hasProperty(PropertyKey.GEM)) {
@@ -462,9 +487,7 @@ function registerGTCEUMetalRecipes(event) {
 		}
 
 		// Smelting
-		if (!material.hasProperty(PropertyKey.BLAST) && !ingotItem.isEmpty()) {
-			event.smelting(ingotItem, poorOreItem).id(`gtceu:smelting/smelt_poor_raw_${material.getName()}_ore_to_ingot`)
-		}
+		smeltOre(material, oreProperty, multiplier / 2, poorOreItem, 'poor')
 	}
 
 	/**
@@ -479,21 +502,11 @@ function registerGTCEUMetalRecipes(event) {
 		if (normalOreItem === null || crushedOreItem === null)
 			return;
 
-		const smeltingMaterial = oreProperty.getDirectSmeltResult() === null ? material : oreProperty.getDirectSmeltResult();
-
-		let ingotItem;
-		if (smeltingMaterial.hasProperty(PropertyKey.INGOT))
-			ingotItem = ChemicalHelper.get(TagPrefix.ingot, smeltingMaterial, multiplier)
-		else if (smeltingMaterial.hasProperty(PropertyKey.GEM))
-			ingotItem = ChemicalHelper.get(TagPrefix.gem, smeltingMaterial, multiplier)
-		else
-			ingotItem = ChemicalHelper.get(TagPrefix.dust, smeltingMaterial, multiplier)
-
 		// Forge hammer
 		let hammerRecipe = event.recipes.gtceu.forge_hammer(`hammer_raw_${material.getName()}_to_crushed_ore`)
 			.itemInputs(normalOreItem)
 			.category(GTRecipeCategories.ORE_FORGING)
-			.duration(10)
+			.duration(100)
 			.EUt(16)
 
 		if (material.hasProperty(PropertyKey.GEM)) {
@@ -531,14 +544,12 @@ function registerGTCEUMetalRecipes(event) {
 		event.recipes.tfc.quern(crushedOreItem, normalOreItem)
 			.id(`tfg:quern/${material.getName()}_crushed_ore_from_normal_raw_ore`)
 
-		// Smelting
-		if (!material.hasProperty(PropertyKey.BLAST) && !ingotItem.isEmpty()) {
-			event.smelting(ingotItem, normalOreItem).id(`gtceu:smelting/smelt_raw_${material.getName()}_ore_to_ingot`)
-		}
-
 		// Remove ore block recipes
 		event.remove({ id: `gtceu:compressor/compress_${material.getName()}_to_raw_ore_block` })
 		event.remove({ id: `gtceu:forge_hammer/decompress_${material.getName()}_to_raw_ore` })
+
+		// Smelting
+		smeltOre(material, oreProperty, multiplier, normalOreItem, 'raw')
 	}
 
 	/**
@@ -553,21 +564,11 @@ function registerGTCEUMetalRecipes(event) {
 		if (richOreItem === null || crushedOreItem === null)
 			return;
 
-		const smeltingMaterial = oreProperty.getDirectSmeltResult() === null ? material : oreProperty.getDirectSmeltResult();
-
-		let ingotItem;
-		if (smeltingMaterial.hasProperty(PropertyKey.INGOT))
-			ingotItem = ChemicalHelper.get(TagPrefix.ingot, smeltingMaterial, multiplier)
-		else if (smeltingMaterial.hasProperty(PropertyKey.GEM))
-			ingotItem = ChemicalHelper.get(TagPrefix.gem, smeltingMaterial, multiplier)
-		else
-			ingotItem = ChemicalHelper.get(TagPrefix.dust, smeltingMaterial, multiplier)
-
 		// Forge hammer
 		let hammerRecipe = event.recipes.gtceu.forge_hammer(`hammer_rich_raw_${material.getName()}_to_crushed_ore`)
 			.itemInputs(richOreItem)
 			.category(GTRecipeCategories.ORE_FORGING)
-			.duration(10)
+			.duration(100)
 			.EUt(16)
 
 		if (material.hasProperty(PropertyKey.GEM)) {
@@ -604,9 +605,7 @@ function registerGTCEUMetalRecipes(event) {
 			.id(`tfg:quern/${material.getName()}_crushed_ore_from_rich_raw_ore`)
 
 		// Smelting
-		if (!material.hasProperty(PropertyKey.BLAST) && !ingotItem.isEmpty()) {
-			event.smelting(ingotItem, richOreItem).id(`gtceu:smelting/smelt_rich_raw_${material.getName()}_ore_to_ingot`)
-		}
+		smeltOre(material, oreProperty, multiplier, richOreItem, 'rich')
 	}
 
 	/**
@@ -776,7 +775,7 @@ function registerGTCEUMetalRecipes(event) {
 			.id(`shapeless/mortar_chipped_${material.getName()}`)
 
 		let amount = 9;
-		if (material === GTMaterials.NetherQuartz || material === GTMaterials.Amethyst)
+		if (material === GTMaterials.NetherQuartz || material === GTMaterials.CertusQuartz || material === GTMaterials.Amethyst)
 			amount = 4;
 
 		event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, amount), ChemicalHelper.get(TagPrefix.block, material, 1))
@@ -1156,7 +1155,8 @@ function registerGTCEUMetalRecipes(event) {
 		if (material === GTMaterials.get("andesite_alloy")
 			|| material === GTMaterials.get("refined_radiance")
 			|| material === GTMaterials.get("shadow_steel")
-			|| material === GTMaterials.get("chromatic_compound"))
+			|| material === GTMaterials.get("chromatic_compound")
+			|| material === GTMaterials.DamascusSteel)
 		{ return; }
 
 		const toolProperty = material.getProperty(PropertyKey.TOOL)

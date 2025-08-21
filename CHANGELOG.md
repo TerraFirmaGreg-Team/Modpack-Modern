@@ -2,7 +2,72 @@
 
 ## [Unreleased]
 ### Changes
+- Complete rework of prospector's picks. (#1594) @Redeix
+- Rebalance Large Solar Array to make Mk2 circuit 2 viable, and buffed to LSA Mk3 circuit 2 (#1591) @TomPlop
+- Added mechanical press recipes to weld weak steels @Pyritie
+- Added backpacks, lunchboxes, and vessels to the toolbelt's blacklist @Pyritie
+- Moon rabbits can eat chorus fruit now @Pyritie
+- Added electric greenhouse recipes for mushrooms and bamboo (#1610) @Pyritie
+- Increased amount of saplings that the electric greenhouse returns to be more in line with create-based tree farms @Pyritie
+- Firmalife mixing bowls can now be placed on tool racks (#1623) @Pyritie
+- Fixed recipe for pyroxenite button (again) (#1625) @Pyritie
+- Refactored locometal recipes to use stonecutters, metal plated locometal is now also much cheaper (#1624) @Pyritie
+- Increased the air capacity of space suits by 250% @Pyritie
+- Converted custom tooltips to lang strings for translations (#1663) @Redeix
+- Removed energy P2P (#1661) @TomPlop @BlueBoat29
+- Fixed grammar on death messages and added some new ones (#1642) @vdegans
 ### Bug fixes
+- Fixed moon mob spawning light levels, so now they need a light level of 0 instead of 11 (#1587) @NINAustinFett
+- Fixed wrong output amount of mortaring soybean paste (#1607) @TomPlop
+- Fixed duplicate mixer recipes for rose gold and sterling silver @Pyritie
+- Added missing rose gold + sterling silver alloy smelter recipes (#1664) @Redeix
+- Fixed mechanical mixers requiring an alloy that needed that tier of mixer @Pyritie
+- Finally fixed all the issues with upgrading the toolbelt - now you can safely dye and undye, upgrade with and without tools inside it, etc (#368) @Pyritie
+- Fixed a dupe with certus quartz @Pyritie
+- Moved the golden apple recipe over to the food processor so it respects food expiry data @Pyritie
+- Removed some remaining swine-steel crafting recipes @Pyritie
+- Added missing hoe/scythe mineable tags from custom crops (#1622) @Pyritie
+- Fixed some (but not all) model issues with the reflector block (#1664) @Redeix
+- Fixed food processor outputs not stacking @gustovafing
+- Fixed using the grappling hook on a ladder killing you (#106) @Zippity 
+
+## [0.10.9] - 10-08-2025
+### Changes
+- Heavily reduced how much power the electric refrigerators use @Pyritie
+- Prevented the ad astra rockets from exploding, due to being unreliable on high latency servers @Pyritie
+### Bug fixes
+- Fixed kubejs errors on Linux machines. @Pyritie
+- Fixed recipe conflict with conductor whistle and clockwork sniper. @Redeix
+- Fixed the patchouli page explaining tfc alloys to use the new alloy ratios @Pyritie
+
+## [0.10.8] - 10-08-2025
+### Changes
+- FTBQuests has been changed back to linear mode, hopefully to prevent future cases where the quests get stuck on something. Please send us feedback! (#1568) @TomPlop
+- Added fanfare effects to the railgun launcher multiblock. (#1557) @Redeix
+- Added new EMI tab to see ore vein info! Press 'R' on any ore item @gustovafing
+- Added some chalk stick knapping recipes (#1562) @3ncanis
+- The Vitrified Ender Pearl recipe now only accepts normal ender pearls (#1567) @TomPlop
+- Buffed production of fish oil and biomass amounts, tweaked biodiesel recipe slightly @Pyritie
+- Added compatibility between ad astra's 3x3 doors and GregTech wrenches (#1554) @Pyritie
+- Added more icon sets for dusts and rods, so they look more visually distinct @Pyritie
+- Slightly buffed the amount of latex from tree tapping @Pyritie
+- Changed the structure of the Large Solar Arrays a little to include new reflector block. (#1575) @Redeix
+### Bug fixes
+- Fixed a broken model for the aqueous accumulator. (#1557) @Redeix
+- Fixed broken recipes for the aqueous accumulator. @Pyritie
+- Fixed log spam on the moon @Pyritie
+- Fixed recipe collision with maize flour and cured maize @Pyritie
+- Fixed Large Solar Array generating twice as much energy as expected with the "active" configuration (#1563) @TomPlop
+- Fixed Electric Greenhouse log recipes so they're back to only needing half an amp of LV (#1564) @TomPlop
+- Fixed missing quern recipes for softwood/hardwood pulp (#1561) @Pyritie
+- Fixed duplicate red alloy mixing recipe (#1565) @Pyritie
+- Fixed many raw ores missing smelting recipes (#1566) @Pyritie
+- Fixed duplicate fluix block, preventing AE2 controllers from being crafted @Pyritie
+- Fixed blaze burner straw consuming fuel 10x as fast as it should've (#1537) @dimethylene
+- Fixed stonecutter and feeding backpack upgrades to show up in EMI (#1574) @SpicyNoodle5
+- Fixed missing loot tables for some custom casings. (#1575) @Redeix
+- Fixed very low block strengths for some custom casings. (#1575) @Redeix
+- Fixed missing lang for basic photovoltaic cell. (#1575) @Redeixx
 
 ## [0.10.7] - 07-08-2025
 - Fixed an issue with mod dependencies

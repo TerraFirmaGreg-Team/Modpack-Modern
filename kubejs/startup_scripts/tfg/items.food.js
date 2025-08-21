@@ -74,6 +74,15 @@ function registerTFGFoodItems(event) {
 		.food(food => food.hunger(4).saturation(2))
 		.tag('tfc:foods/grains')
 		.tag('tfc:foods/usable_in_salad')
+	
+	//Moon Rabbit
+	event.create('tfg:food/raw_moon_rabbit')
+		.translationKey('item.tfg.food.raw_moon_rabbit')
+		.texture('tfg:item/food/raw_moon_rabbit')
+		.food(food => food.hunger(2).saturation(2)
+			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
 
 	event.create('tfg:food/cooked_moon_rabbit')
 		.translationKey('item.tfg.food.cooked_moon_rabbit')
@@ -82,13 +91,150 @@ function registerTFGFoodItems(event) {
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
-	event.create('tfg:food/raw_moon_rabbit')
-		.translationKey('item.tfg.food.raw_moon_rabbit')
-		.texture('tfg:item/food/raw_moon_rabbit')
+	//Glacian Ram
+	event.create('tfg:food/raw_glacian_mutton')
+		.translationKey('item.tfg.food.raw_glacian_mutton')
+		.texture('tfg:item/food/raw_glacian_mutton')
 		.food(food => food.hunger(2).saturation(2)
 			.effect('minecraft:hunger', 100, 0, 1))
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
+
+	event.create('tfg:food/cooked_glacian_mutton')
+		.translationKey('item.tfg.food.cooked_glacian_mutton')
+		.texture('tfg:item/food/cooked_glacian_mutton')
+		.food(food => food.hunger(5).saturation(8))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/cooked_meats')
+
+	//Sniffer
+	event.create('tfg:food/raw_sniffer_beef')
+		.translationKey('item.tfg.food.raw_sniffer_beef')
+		.texture('tfg:item/food/raw_sniffer_beef')
+		.food(food => food.hunger(3).saturation(2)
+			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
+
+	event.create('tfg:food/cooked_sniffer_beef')
+		.translationKey('item.tfg.food.cooked_sniffer_beef')
+		.texture('tfg:item/food/cooked_sniffer_beef')
+		.food(food => food.hunger(8).saturation(9))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/cooked_meats')
+		
+	//Wraptor
+	event.create('tfg:food/raw_wraptor')
+		.translationKey('item.tfg.food.raw_wraptor')
+		.texture('tfg:item/food/raw_wraptor')
+		.food(food => food.hunger(3).saturation(2)
+			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
+
+	event.create('tfg:food/cooked_wraptor')
+		.translationKey('item.tfg.food.cooked_wraptor')
+		.texture('tfg:item/food/cooked_wraptor')
+		.food(food => food.hunger(6).saturation(8))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/cooked_meats')
+
+	//Springling
+	event.create('tfg:food/raw_springling_chops')
+		.translationKey('item.tfg.food.raw_springling_chops')
+		.texture('tfg:item/food/raw_springling_chops')
+		.food(food => food.hunger(2).saturation(2)
+			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
+
+	event.create('tfg:food/cooked_springling_chops')
+		.translationKey('item.tfg.food.cooked_springling_chops')
+		.texture('tfg:item/food/cooked_springling_chops')
+		.food(food => food.hunger(4).saturation(4))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/cooked_meats')
+	
+	//Walker
+	event.create('tfg:food/raw_walker_steak')
+		.translationKey('item.tfg.food.raw_walker_steak')
+		.texture('tfg:item/food/raw_walker_steak')
+		.food(food => food.hunger(3).saturation(2)
+			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
+
+	event.create('tfg:food/cooked_walker_steak')
+		.translationKey('item.tfg.food.cooked_walker_steak')
+		.texture('tfg:item/food/cooked_walker_steak')
+		.food(food => food.hunger(8).saturation(10))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/cooked_meats')
+		
+	//Glider
+	event.create('tfg:food/raw_glider_wings')
+		.translationKey('item.tfg.food.raw_glider_wings')
+		.texture('tfg:item/food/raw_glider_wings')
+		.food(food => food.hunger(1).saturation(1)
+			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
+
+	event.create('tfg:food/cooked_glider_wings')
+		.translationKey('item.tfg.food.cooked_glider_wings')
+		.texture('tfg:item/food/cooked_glider_wings')
+		.food(food => food.hunger(2).saturation(3))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/cooked_meats')
+	
+	//Soarer
+	event.create('tfg:food/raw_whole_soarer')
+		.translationKey('item.tfg.food.raw_whole_soarer')
+		.texture('tfg:item/food/raw_whole_soarer')
+		.food(food => food.hunger(2).saturation(2)
+			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
+
+	event.create('tfg:food/cooked_whole_soarer')
+		.translationKey('item.tfg.food.cooked_whole_soarer')
+		.texture('tfg:item/food/cooked_whole_soarer')
+		.food(food => food.hunger(6).saturation(6))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/cooked_meats')
+		
+	//Crusher
+	event.create('tfg:food/raw_crusher_meat')
+		.translationKey('item.tfg.food.raw_crusher_meat')
+		.texture('tfg:item/food/raw_crusher_meat')
+		.food(food => food.hunger(3).saturation(2)
+			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
+
+	event.create('tfg:food/cooked_crusher_meat')
+		.translationKey('item.tfg.food.cooked_crusher_meat')
+		.texture('tfg:item/food/cooked_crusher_meat')
+		.food(food => food.hunger(5).saturation(6))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/cooked_meats')
+	
+	//Goober
+	event.create('tfg:food/raw_goober_meat')
+		.translationKey('item.tfg.food.raw_goober_meat')
+		.texture('tfg:item/food/raw_goober_meat')
+		.food(food => food.hunger(1).saturation(2)
+			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
+
+	event.create('tfg:food/cooked_goober_meat')
+		.translationKey('item.tfg.food.cooked_goober_meat')
+		.texture('tfg:item/food/cooked_goober_meat')
+		.food(food => food.hunger(3).saturation(6))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/cooked_meats')
+		
 
 	event.create('tfg:food/ice_soup')
 		.translationKey('item.tfg.food.ice_soup')

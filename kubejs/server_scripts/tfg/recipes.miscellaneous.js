@@ -566,29 +566,29 @@ function registerTFGMiscellaneousRecipes(event) {
 	// Biofuels
 
 	event.recipes.gtceu.chemical_reactor(`seed_oil_alcohol_biodiesel`)
-		.inputFluids("#tfc:alcohols 1000")
-		.inputFluids(Fluid.of('gtceu:seed_oil', 6000))
+		.inputFluids("#tfc:alcohols 1000", Fluid.of('gtceu:seed_oil', 6000))
+		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
 		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_reactor(`olive_oil_alcohol_biodiesel`)
-		.inputFluids("#tfc:alcohols 1000")
-		.inputFluids(Fluid.of('tfc:olive_oil', 4000))
+		.inputFluids("#tfc:alcohols 1000", Fluid.of('tfc:olive_oil', 4000))
+		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
 		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_reactor(`soybean_oil_alcohol_biodiesel`)
-		.inputFluids("#tfc:alcohols 1000")
-		.inputFluids(Fluid.of('firmalife:soybean_oil', 4000))
+		.inputFluids("#tfc:alcohols 1000", Fluid.of('firmalife:soybean_oil', 4000))
+		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
 		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_reactor(`fish_oil_alcohol_biodiesel`)
-		.inputFluids("#tfc:alcohols 1000")
-		.inputFluids(Fluid.of('gtceu:fish_oil', 6000))
+		.inputFluids("#tfc:alcohols 1000", Fluid.of('gtceu:fish_oil', 6000))
+		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
 		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.ULV])
@@ -662,7 +662,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.pyrolyse_oven('vitrified_ender_dust')
-		.itemInputs('#forge:ender_pearls', '2x tfc:powder/kaolinite', '4x #forge:insulation_t1')
+		.itemInputs('minecraft:ender_pearl', '2x tfc:powder/kaolinite', '4x #forge:insulation_t1')
 		.inputFluids(Fluid.of('gtceu:nitrogen', 100))
 		.itemOutputs('tfg:vitrified_pearl')
 		.chancedOutput('gtceu:ash_dust', 2500, 0)
@@ -995,6 +995,17 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(1000)
 		.blastFurnaceTemp(3000)
 		.EUt(GTValues.VA[GTValues.EV])
+		
+	event.recipes.gtceu.electric_blast_furnace('smelt_sniffer_wool')
+		.itemInputs('tfg:sniffer_wool')
+		.chancedOutput('gtceu:ash_dust', 7500, 0)
+		.outputFluids(Fluid.of('tfg:molten_aes', 200))
+		.circuit(4)
+		.duration(80)
+		.blastFurnaceTemp(3400)
+		.EUt(GTValues.VA[GTValues.EV])
+
+
 	//endregion
 	
 	//#region Casings
@@ -1043,13 +1054,47 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.recipes.gtceu.assembler('tfg:assembler/machine_casing_aluminium_plated_steel')
 		.itemInputs(
 			ChemicalHelper.get(TagPrefix.plate, GTMaterials.Aluminium, 6),
-			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.Steel, 1),
+			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.Steel, 1)
 		)
 		.inputFluids(Fluid.of('gtceu:silicon', 72))
 		.itemOutputs('2x tfg:machine_casing_aluminium_plated_steel')
 		.circuit(6)
 		.duration(20 * (2.5))
 		.EUt(GTValues.VH[GTValues.LV])
+
+	event.recipes.gtceu.assembler('tfg:reflector_from_lens')
+		.itemInputs(
+			'24x #forge:lenses',
+			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.BlackSteel, 1)
+		)
+		.inputFluids(Fluid.of('gtceu:silver', 1296))
+		.itemOutputs('1x tfg:reflector')
+		.circuit(6)
+		.duration(20 * (60))
+		.EUt(GTValues.VH[GTValues.HV])
+
+	event.recipes.gtceu.assembler('tfg:reflector_from_inr')
+		.itemInputs(
+			'1x gtceu:neutron_reflector',
+			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.BlackSteel, 1)
+		)
+		.itemOutputs('2x tfg:reflector')
+		.circuit(9)
+		.duration(20 * (20))
+		.EUt(GTValues.VH[GTValues.MV])
+
+	event.recipes.gtceu.assembler('tfg:reflector_from_certus')
+		.itemInputs(
+			ChemicalHelper.get(TagPrefix.plate, GTMaterials.CertusQuartz, 12),
+			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.BlackSteel, 1)
+		)
+		.inputFluids(Fluid.of('gtceu:silver', 488))
+		.itemOutputs('1x tfg:reflector')
+		.circuit(6)
+		.dimension('ad_astra:moon')
+		.duration(20 * (60))
+		.EUt(GTValues.VH[GTValues.MV])
+
 	//#endregion
 		
 	//region ammonia borane
@@ -1115,7 +1160,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.IV])
 	event.recipes.gtceu.mixer('tfg:aes_polyurethane_electric_only')
-		.itemInputs('tfg:aes_compressed_wool', '#forge:dusts/methylene_diphenyl_diisocyanate')
+		.itemInputs('tfg:aes_compressed_wool', '2x tfg:sniffer_wool','#forge:dusts/methylene_diphenyl_diisocyanate')
 		.inputFluids(Fluid.of('gtceu:diethylenetriamine', 250), Fluid.of('gtceu:acetone', 1000))
 		.itemOutputs('tfg:aes_polyurethane')
 		.duration(80)
@@ -1290,4 +1335,29 @@ function registerTFGMiscellaneousRecipes(event) {
 	]));
 
 	event.replaceInput({ id: "minecraft:jukebox"}, 'minecraft:diamond', 'tfg:etching_diamond_tip');
+	
+	
+	//Large Nest
+	event.shaped('tfg:large_nest_box',
+	[
+		'B B',
+		'ABA',
+		'AAA'
+	], {
+		A: 'beneath:crimson_thatch',
+		B: 'beneath:crimson_straw'
+	}).id('tfg:shaped_large_nest_crimson')
+	
+	event.shaped('tfg:large_nest_box_warped',
+	[
+		'B B',
+		'ABA',
+		'AAA'
+	], {
+		A: 'beneath:warped_thatch',
+		B: 'beneath:warped_straw'
+	}).id('tfg:shaped_large_nest_warped')
+		
+	
+	//#endregion
 }

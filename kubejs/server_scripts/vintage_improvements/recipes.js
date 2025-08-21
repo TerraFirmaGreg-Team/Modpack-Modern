@@ -520,7 +520,7 @@ function registerVintageImprovementsRecipes(event) {
 			// Skip glass too
 			if (r.inputs.item[0].content.ingredient.item === "gtceu:glass_dust") return
 			// And this
-			if (r.inputs.item[0].content.ingredient.item === "gtceu:damascus_steel_ingot") return
+			if (r.inputs.item[0].content.ingredient.tag === "#forge:ingots/damascus_steel") return
 
 			let input = r.inputs.item[0].content.ingredient;
 			input.count = r.inputs.item[0].content.count;
@@ -700,6 +700,22 @@ function registerVintageImprovementsRecipes(event) {
 		results: [{ item: 'tfc:ceramic/unfired_fire_brick' }],
 		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 	}).id(`tfg:vi/curving/fire_brick`)
+
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ tag: 'forge:ingots/copper' }],
+		itemAsHead: 'gtceu:bottle_extruder_mold',
+		results: [{ item: 'afc:tree_tap' }],
+		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/curving/tree_tap`)
+
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ tag: 'forge:plates/copper' }],
+		itemAsHead: 'tfg:small_casing_extruder_mold',
+		results: [{ item: 'firmalife:sprinkler' }],
+		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/curving/sprinkler`)
 
 	// #endregion
 }

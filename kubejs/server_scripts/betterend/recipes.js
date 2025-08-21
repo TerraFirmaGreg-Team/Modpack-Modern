@@ -52,6 +52,6 @@ function registerBetterEndRecipes(event) {
 	generateGreenHouseRecipe(event, '8x betterend:chorus_mushroom_seeds', 'tfg:semiheavy_ammoniacal_water', 8000,
 		'24x betterend:chorus_mushroom_product', 'chorus_mushroom', 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV])
 
-	generateGreenHouseRecipe(event, '8x betterend:shadow_berry', 'tfg:semiheavy_ammoniacal_water', 8000, 
+	generateGreenHouseRecipe(event, '8x betterend:shadow_berry_seeds', 'tfg:semiheavy_ammoniacal_water', 8000, 
 		'24x betterend:shadow_berry_product', 'shadow_berry', 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV])
 }

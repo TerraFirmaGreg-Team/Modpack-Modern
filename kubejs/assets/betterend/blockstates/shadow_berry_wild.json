@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "mature=true": [
+			{ "model": "betterend:block/shadow_berry_wild_mature", "y": 0 },
+			{ "model": "betterend:block/shadow_berry_wild_mature", "y": 90 },
+			{ "model": "betterend:block/shadow_berry_wild_mature", "y": 180 },
+			{ "model": "betterend:block/shadow_berry_wild_mature", "y": 270 }
+		],
+		"mature=false": [
+			{ "model": "betterend:block/shadow_berry_wild_immature", "y": 0 },
+			{ "model": "betterend:block/shadow_berry_wild_immature", "y": 90 },
+			{ "model": "betterend:block/shadow_berry_wild_immature", "y": 180 },
+			{ "model": "betterend:block/shadow_berry_wild_immature", "y": 270 }
+		]
+    }
+}

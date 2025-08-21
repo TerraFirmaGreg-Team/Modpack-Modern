@@ -1,3 +1,6 @@
 {
-	"parent": "betterend:block/cave_pumpkin_pie"
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "betterend:item/cave_pumpkin_pie"
+	}
 }

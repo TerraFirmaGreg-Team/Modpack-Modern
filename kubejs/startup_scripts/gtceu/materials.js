@@ -140,7 +140,6 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Potin.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(807 * 0.6, 807 * 0.8, 807, 2));
 	GTMaterials.Cobalt.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495 * 0.6, 1495 * 0.8, 1495, 3));
 	GTMaterials.Cobaltite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495 * 0.6, 1495 * 0.8, 1495, GTMaterials.Cobalt, 3, 85));
-	GTMaterials.CobaltOxide.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495 * 0.6, 1495 * 0.8, 1495, GTMaterials.Cobalt, 3));
 	GTMaterials.CobaltBrass.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1060 * 0.6, 1060 * 0.8, 1060, 3));
 	let AlSi = GTMaterials.get('aluminium_silicate')
 	AlSi.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, 1))
@@ -368,19 +367,20 @@ const registerGTCEuMaterialModification = (event) => {
 
 	
 	global.MINECRAFT_DYE_NAMES.forEach(colorName => {
-		let material = GTCEuAPI.materialManager.getMaterial(`gtceu:${colorName}_dye`);
+		let material = GTMaterials.get(`gtceu:${colorName}_dye`);
 		let property = material.getProperty(PropertyKey.FLUID);
 		property.getStorage().store($FluidStorageKeys.LIQUID, () => Fluid.of(`tfc:${colorName}_dye`).fluid, null);
 	});
 
 
-	let rose_quartz = GTCEuAPI.materialManager.getMaterial('greate:rose_quartz');
+	let rose_quartz = GTMaterials.get('greate:rose_quartz');
 	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
 	rose_quartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
 	
-	GTCEuAPI.materialManager.getMaterial('tfg:kaolinite').setFormula("Al2Si2O5(OH)4", true)
-	GTCEuAPI.materialManager.getMaterial('tfg:vitrified_pearl').setFormula("(Al2Si2O5(OH)4)(BeK4N5)", true)
-	GTCEuAPI.materialManager.getMaterial('tfg:tmos').setFormula("Si(OCH3)4", true)
-
+	GTMaterials.get('tfg:kaolinite').setFormula("Al2Si2O5(OH)4", true)
+	GTMaterials.get('tfg:vitrified_pearl').setFormula("(Al2Si2O5(OH)4)(BeK4N5)", true)
+	GTMaterials.get('tfg:tmos').setFormula("Si(OCH3)4", true)
+	GTMaterials.get('tfg:fluix').setFormula("?(?SiO2)(SiO2)", true)
+	GTMaterials.CertusQuartz.setFormula("?SiO2", true)
 }

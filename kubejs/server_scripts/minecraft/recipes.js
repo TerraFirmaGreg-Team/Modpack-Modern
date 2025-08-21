@@ -288,34 +288,6 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Золотое яблоко
-
-	event.recipes.gtceu.chemical_reactor('golden_apple')
-		.itemInputs('tfc:food/green_apple', '8x #forge:ingots/gold')
-		.itemOutputs('minecraft:golden_apple')
-		.duration(50)
-		.EUt(30)
-
-	event.recipes.gtceu.large_chemical_reactor('golden_apple')
-		.itemInputs('tfc:food/green_apple', '8x #forge:ingots/gold')
-		.itemOutputs('minecraft:golden_apple')
-		.duration(50)
-		.EUt(30)
-
-	event.recipes.gtceu.chemical_reactor('golden_apple_1')
-		.itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
-		.itemOutputs('minecraft:golden_apple')
-		.duration(50)
-		.EUt(30)
-
-    event.recipes.gtceu.large_chemical_reactor('golden_apple_1')             
-        .itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
-        .itemOutputs('minecraft:golden_apple')
-        .duration(50)
-        .EUt(30)
-
-    //#endregion
-
 	//#region Выход: Компаратор
 
 	// Компаратор
@@ -1143,4 +1115,17 @@ const registerMinecraftRecipes = (event) => {
 			.duration(50)
 			.EUt(2)
 	})
+
+	// Greenhouse
+	generateGreenHouseRecipe(event, '8x minecraft:bamboo', '#tfc:any_fresh_water', 4000,
+		'64x minecraft:bamboo', 'bamboo', 'minecraft:overworld', 8, 
+		'8x minecraft:bamboo', GTValues.VA[GTValues.LV])
+
+	generateGreenHouseRecipe(event, '4x minecraft:red_mushroom', '#tfc:any_fresh_water', 4000,
+		'24x minecraft:red_mushroom', 'red_mushroom', 'minecraft:the_nether', 8, 
+		'4x minecraft:red_mushroom', GTValues.VA[GTValues.LV])
+
+	generateGreenHouseRecipe(event, '4x minecraft:brown_mushroom', '#tfc:any_fresh_water', 4000,
+		'24x minecraft:brown_mushroom', 'brown_mushroom', 'minecraft:the_nether', 8, 
+		'4x minecraft:brown_mushroom', GTValues.VA[GTValues.LV])
 }

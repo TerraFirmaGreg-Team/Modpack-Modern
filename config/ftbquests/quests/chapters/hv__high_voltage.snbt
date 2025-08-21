@@ -561,7 +561,7 @@
 					type: "item"
 				}
 			]
-			title: "{quests.high_voltage.ptfe.title"
+			title: "{quests.high_voltage.ptfe.title}"
 			x: 0.0d
 			y: 4.5d
 		}
@@ -626,28 +626,18 @@
 			icon: "minecraft:tnt"
 			id: "2B7B214EDE0B45A2"
 			size: 1.0d
-			tasks: [
-				{
-					id: "04BF6A36E965C348"
-					item: "minecraft:tnt"
-					type: "item"
+			tasks: [{
+				id: "69AFBED9D1866F49"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(minecraft:tnt)item(gtceu:industrial_tnt)item(gtceu:powderbarrel)item(gtceu:dynamite))"
+					}
 				}
-				{
-					id: "162CDC2567F6D6A8"
-					item: "gtceu:industrial_tnt"
-					type: "item"
-				}
-				{
-					id: "4CFB597542DD0194"
-					item: "gtceu:dynamite"
-					type: "item"
-				}
-				{
-					id: "0BF4703D1DBAA5B7"
-					item: "gtceu:powderbarrel"
-					type: "item"
-				}
-			]
+				title: "{quests.high_voltage.tnt.task}"
+				type: "item"
+			}]
 			title: "{quests.high_voltage.tnt.title}"
 			x: 3.5d
 			y: 3.0d
@@ -1240,6 +1230,89 @@
 			title: "{quests.high_voltage.kaolinite_powder.title}"
 			x: 6.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["3FBDC8552F7D8008"]
+			description: ["{quests.high_voltage.gun.desc}"]
+			id: "74C6DD5F67B1731F"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.high_voltage.gun.subtitle}"
+			tasks: [
+				{
+					disable_toast: true
+					id: "00B3B5D0D419F8E9"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(tacz:modern_kinetic_gun)"
+						}
+					}
+					match_nbt: false
+					title: "{quests.high_voltage.gun.task1}"
+					type: "item"
+				}
+				{
+					id: "7485BE99651C8334"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfg:absorption_salvo)item(tfg:resistance_salvo)item(tfg:instant_health_salvo)item(tfg:regeneration_tablet)item(tfg:speed_tablet)item(tfcagedalcohol:bucket/aged_beer)item(tfcagedalcohol:bucket/aged_vodka)item(tfcagedalcohol:bucket/aged_sake)item(tfcagedalcohol:bucket/aged_rum))"
+						}
+					}
+					optional_task: true
+					title: "{quests.high_voltage.gun.task2}"
+					type: "item"
+				}
+				{
+					id: "2B1D15C7E99C9DDC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:food": {
+								creationDate: -2L
+								foodData: {
+									dairy: 0.0f
+									decay: 0.0f
+									food: 0
+									fruit: 0.0f
+									grain: 0.0f
+									meat: 0.0f
+									sat: 0.0f
+									veg: 0.0f
+									water: 0.0f
+								}
+								ingredients: [ ]
+								traits: [ ]
+							}
+						}
+						id: "tfg:food/meal_bag"
+					}
+					match_nbt: false
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.high_voltage.gun.title}"
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["00A2566109144D7F"]
+			description: ["{quests.high_voltage.space_survival.desc}"]
+			icon: "ad_astra:oxygen_distributor"
+			id: "08AAD91CE348A08B"
+			subtitle: "{quests.high_voltage.space_survival.subtitle}"
+			tasks: [{
+				id: "66E3342A47817498"
+				title: "{quests.high_voltage.space_survival.title}"
+				type: "checkmark"
+			}]
+			title: "{quests.high_voltage.space_survival.title}"
+			x: 13.0d
+			y: 1.5d
 		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]

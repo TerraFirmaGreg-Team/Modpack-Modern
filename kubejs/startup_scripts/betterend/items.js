@@ -16,6 +16,9 @@ function registerBetterEndItems(event) {
 	        food.hunger(4)
 	        food.saturation(1)
 		})
+	event.create('betterend:cave_pumpkin_pie_raw')
+	event.create('betterend:cave_pumpkin_pie_dough')
+		.food(food => {})
 	event.create('betterend:cave_pumpkin_pie')
 		.food(food => {
 	        food.hunger(4)

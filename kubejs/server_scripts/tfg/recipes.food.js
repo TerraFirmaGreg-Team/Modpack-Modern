@@ -521,7 +521,7 @@ function registerTFGFoodRecipes(event) {
 		}, 0, 0).id(`tfg:mortar/masa_flour`)
 
 	event.recipes.tfc.advanced_shaped_crafting(
-		TFC.isp.of(`4x firmalife:food/soybean_paste`).copyFood(), ['A', 'B'], {
+		TFC.isp.of(`firmalife:food/soybean_paste`).copyFood(), ['A', 'B'], {
 			A: TFC.ingredient.notRotten(`firmalife:food/dehydrated_soybeans`),
 			B: '#forge:tools/mortars'
 		}, 0, 0).id(`tfg:mortar/soybean_paste`)
@@ -661,8 +661,8 @@ function registerTFGFoodRecipes(event) {
 
 	processorRecipe("butter", 300, 16, {
 		itemInputs: ["tfc:powder/salt"],
-		itemOutputs: ["firmalife:food/butter"],
 		fluidInputs: [Fluid.of('firmalife:cream', 1000)],
+		itemOutputs: ["firmalife:food/butter"],
 		itemOutputProvider: TFC.isp.of('firmalife:food/butter').resetFood()
 	})
 
@@ -683,8 +683,8 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	processorRecipe("raw_pumpkin_pie", 20, 8, {
-		itemInputs: ["firmalife:food/pumpkin_pie_dough", "firmalife:pie_pan"],
-		itemOutputs: ["firmalife:raw_pumpkin_pie"],
+		itemInputs: ["firmalife:food/pumpkin_pie_dough", "#firmalife:pie_pans"],
+		itemOutputs: ["firmalife:food/raw_pumpkin_pie"],
 		itemOutputProvider: TFC.isp.of("firmalife:food/raw_pumpkin_pie").copyFood()
 	})
 
@@ -740,6 +740,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	processorRecipe("cured_maize", 300, 8, {
+		circuit: 1,
 		itemInputs: ["tfc:food/maize_grain"],
 		inputFluids: [Fluid.of('tfc:limewater', 100)],
 		itemOutputs: ["firmalife:food/cured_maize"],
@@ -747,6 +748,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	processorRecipe("soy_mixture", 300, 8, {
+		circuit: 1,
 		itemInputs: ["tfc:food/soybean", 'tfc:powder/salt'],
 		fluidInputs: ['#tfg:clean_water 50'],
 		itemOutputs: ["firmalife:food/soy_mixture"],
@@ -811,6 +813,7 @@ function registerTFGFoodRecipes(event) {
 		fluidInputs: [Fluid.of('gtceu:helium_3', 50)],
 		itemOutputs: ["species:birtday_cake"]
 	})
+
 
 	// These don't need the ISP handling, they're just here to keep all the food recipes together
 
@@ -877,8 +880,25 @@ function registerTFGFoodRecipes(event) {
 		.id(`tfg:mortar/salt`)
 
 	//#endregion
+	
+	//#region Выход: Золотое яблоко
 
-	//#region Heating recipes for new foods
+	processorRecipe('golden_apple_from_red', 30 * 20, GTValues.VA[GTValues.HV], {
+		itemInputs: ['tfc:food/red_apple'],
+		fluidInputs: [Fluid.of('gtceu:gold', 144 * 8)],
+		itemOutputs: ['minecraft:golden_apple'],
+		circuit: 5
+	})
+	processorRecipe('golden_apple_from_green', 30 * 20, GTValues.VA[GTValues.HV], {
+		itemInputs: ['tfc:food/green_apple'],
+		fluidInputs: [Fluid.of('gtceu:gold', 144 * 8)],
+		itemOutputs: ['minecraft:golden_apple'],
+		circuit: 5
+	})
+
+    //#endregion
+
+	//#region New foods
 
 	event.recipes.tfc.heating('tfg:food/raw_birt', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_birt').copyFood())
@@ -894,6 +914,79 @@ function registerTFGFoodRecipes(event) {
 
 	event.recipes.tfc.heating('tfg:food/raw_moon_rabbit', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_moon_rabbit').copyFood())
+
+	event.recipes.tfc.heating('betterend:bolux_mushroom_product', 200)
+		.resultItem(TFC.isp.of('betterend:bolux_mushroom_cooked').copyFood())
+
+	event.recipes.tfc.heating('betterend:chorus_mushroom_product', 200)
+		.resultItem(TFC.isp.of('betterend:chorus_mushroom_cooked').copyFood())
+
+	event.recipes.tfc.heating('betterend:shadow_berry_product', 200)
+		.resultItem(TFC.isp.of('betterend:shadow_berry_cooked').copyFood())
+
+	event.recipes.tfc.heating('betterend:cave_pumpkin_pie_raw', 200)
+		.resultItem(TFC.isp.of('betterend:cave_pumpkin_pie').copyFood())
+
+	event.recipes.tfc.heating('tfg:food/raw_glacian_mutton', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_glacian_mutton').copyFood())
+	
+	event.recipes.tfc.heating('tfg:food/raw_sniffer_beef', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_sniffer_beef').copyFood())
+	
+	event.recipes.tfc.heating('tfg:food/raw_wraptor', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_wraptor').copyFood())
+	
+	event.recipes.tfc.heating('tfg:food/raw_springling_chops', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_springling_chops').copyFood())
+		
+	event.recipes.tfc.heating('tfg:food/raw_walker_steak', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_walker_steak').copyFood())
+	
+	event.recipes.tfc.heating('tfg:food/raw_glider_wings', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_glider_wings').copyFood())
+	
+	event.recipes.tfc.heating('tfg:food/raw_whole_soarer', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_whole_soarer').copyFood())
+	
+	event.recipes.tfc.heating('tfg:food/raw_crusher_meat', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_crusher_meat').copyFood())
+		
+	event.recipes.tfc.heating('tfg:food/raw_goober_meat', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_goober_meat').copyFood())
+
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('4x betterend:cave_pumpkin_chunks').copyFood(),
+		[TFC.ingredient.notRotten('betterend:cave_pumpkin'), '#forge:tools/hammers'], 'betterend:cave_pumpkin')
+		.id(`tfg:crafting/cave_pumpkin_chunks_hammer`)
+
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('4x betterend:cave_pumpkin_chunks').copyFood(),
+		[TFC.ingredient.notRotten('betterend:cave_pumpkin'), '#tfc:knives'], 'betterend:cave_pumpkin')
+		.id(`tfg:crafting/cave_pumpkin_chunks_knife`)
+
+	processorRecipe("cave_pumpkin_pie_dough", 300, GTValues.VA[GTValues.HV], {
+		itemInputs: ['#tfg:martian_eggs', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', '#tfc:sweetener'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ["betterend:cave_pumpkin_pie_dough"]
+	})
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients(['#tfg:martian_eggs', 'betterend:cave_pumpkin_chunks', 'betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', '#tfc:sweetener'],
+			Fluid.of('minecraft:water', 1000))
+		.outputItem('betterend:cave_pumpkin_pie_dough')
+		.id('tfg:mixing_bowl/cave_pumpkin_pie_dough')
+
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.isp.of(`betterend:cave_pumpkin_pie_raw`).copyFood().firmaLifeAddPiePan(), [
+			TFC.ingredient.notRotten(`betterend:cave_pumpkin_pie_dough`),
+			'#firmalife:pie_pans'
+		]).id(`tfg:shapeless/cave_pumpkin_pie_raw`)
+
+	processorRecipe("raw_cave_pumpkin_pie", 20, 8, {
+		itemInputs: [`betterend:cave_pumpkin_pie_dough`, "#firmalife:pie_pans"],
+		itemOutputs: ["betterend:cave_pumpkin_pie_raw"],
+		itemOutputProvider: TFC.isp.of("betterend:cave_pumpkin_pie_raw").copyFood()
+	})
 
 	//#endregion
 
