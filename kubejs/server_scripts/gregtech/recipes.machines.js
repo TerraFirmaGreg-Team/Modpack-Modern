@@ -690,38 +690,6 @@ function registerGTCEuMachineRecipes(event) {
 	["scannerResearch(java.util.function.UnaryOperator)"](b =>
 		b.researchStack(Item.of('gtceu:computer_monitor_cover')).EUt(GTValues.VA[GTValues.IV]).duration(120 * 20))
 
-	/*event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer' })
-	event.recipes.gtceu.assembly_line('me_pattern_buffer')
-		.itemInputs('gtceu:luv_dual_input_hatch',
-			'gtceu:luv_emitter',
-			'4x #gtceu:circuits/luv',
-			'3x ae2:pattern_provider',
-			'3x ae2:interface',
-			'4x ae2:speed_card',
-			'2x ae2:capacity_card',
-			'64x #forge:fine_wires/europium',
-			'32x #forge:fine_wires/europium')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 576), Fluid.of('gtceu:lubricant', 500))
-		.itemOutputs('gtceu:me_pattern_buffer')
-		.duration(30 * 20)
-		.EUt(GTValues.VA[GTValues.LuV])
-	["scannerResearch(java.util.function.UnaryOperator)"](b =>
-		b.researchStack(Item.of('gtceu:luv_dual_input_hatch')).EUt(GTValues.VA[GTValues.LuV]).duration(60 * 20))
-
-	event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer_proxy' })
-	event.recipes.gtceu.assembly_line('me_pattern_buffer_proxy')
-		.itemInputs('gtceu:luv_machine_hull',
-			'2x gtceu:luv_sensor',
-			'#gtceu:circuits/luv',
-			'ae2:quantum_link',
-			'2x ae2:quantum_ring',
-			'64x #forge:fine_wires/europium')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 576), Fluid.of('gtceu:lubricant', 500))
-		.itemOutputs('gtceu:me_pattern_buffer_proxy')
-		.duration(30 * 20)
-		.EUt(GTValues.VA[GTValues.ZPM])
-		.stationResearch(b => b.researchStack(Item.of('gtceu:me_pattern_buffer')).EUt(GTValues.VA[GTValues.LuV]).CWUt(32))*/
-
 	event.remove({ id: 'gtceu:assembly_line/ultimate_battery' })
 	event.recipes.gtceu.assembly_line('ultimate_battery')
 		.itemInputs('16x #forge:double_plates/darmstadtium',
@@ -896,48 +864,7 @@ function registerGTCEuMachineRecipes(event) {
 	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_hatch' }, 'gtceu:steel_dust', '6x gtceu:steel_dust')
 	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_hatch' }, 'gtceu:steel_block', '6x gtceu:steel_ingot')
 
-	// #region Bedrock Miner
-
-	event.recipes.gtceu.assembler('gtceu:mv_bedrock_miner')
-		.itemInputs('1x gtceu:hv_machine_hull',
-			'4x #forge:frames/steel',
-			'4x #gtceu:circuits/iv',
-			'4x gtceu:hv_electric_motor',
-			'4x gtceu:hv_robot_arm',
-			'4x gtceu:hv_conveyor_module',
-			'4x #forge:gears/blue_steel')
-		.itemOutputs('gtceu:mv_bedrock_ore_miner')
-		.duration(400)
-		.EUt(GTValues.VA[GTValues.HV])
-		.circuit(2)
-
-	event.recipes.gtceu.assembler('gtceu:hv_bedrock_miner')
-		.itemInputs('1x gtceu:ev_machine_hull',
-			'4x #forge:frames/titanium',
-			'4x #gtceu:circuits/luv',
-			'4x gtceu:luv_electric_motor',
-			'4x gtceu:luv_robot_arm',
-			'4x gtceu:luv_conveyor_module',
-			'4x #forge:gears/ruridit')
-		.itemOutputs('gtceu:hv_bedrock_ore_miner')
-		.duration(400)
-		.EUt(GTValues.VA[GTValues.IV])
-		.circuit(2)
-
-	event.recipes.gtceu.assembler('gtceu:ev_bedrock_miner')
-		.itemInputs('1x gtceu:iv_machine_hull',
-			'4x #forge:frames/tungsten_steel',
-			'4x #gtceu:circuits/zpm',
-			'4x gtceu:zpm_electric_motor',
-			'4x gtceu:zpm_robot_arm',
-			'4x gtceu:zpm_conveyor_module',
-			'4x #forge:gears/osmiridium')
-		.itemOutputs('gtceu:ev_bedrock_ore_miner')
-		.duration(400)
-		.EUt(GTValues.VA[GTValues.ZPM])
-		.circuit(2)
-
-	//#endregion
+	//#region Chipboard Composite
 
 	event.recipes.gtceu.mixer('gtceu:chipboard_composite_wax')
 		.itemInputs('2x #tfg:wood_dusts',
@@ -1188,11 +1115,11 @@ function registerGTCEuMachineRecipes(event) {
 			'PTP'],
 		{
 			S: 'tfg:casings/machine_casing_vacuum_engine_intake',
-			Z: 'gtceu:ev_machine_hull',
-			W: '#gtceu:circuits/ev',
+			Z: 'gtceu:iv_machine_hull',
+			W: '#gtceu:circuits/iv',
 			U: '#forge:double_plates/stellite_100',
-			T: 'gtceu:aluminium_single_cable',
-			P: 'gtceu:ev_electric_pump'
+			T: '#forge:single_cables/platinum',
+			P: 'gtceu:iv_electric_pump'
 		}
 	).id('gtceu:shaped/extraterrestrial_ore_fabricator')
 
@@ -1207,6 +1134,19 @@ function registerGTCEuMachineRecipes(event) {
 		.itemOutputs('gtceu:ostrum_harvester')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(2)
+
+	event.recipes.gtceu.assembler('tfg:moon_dust_harvester')
+		.itemInputs(
+			'1x gtceu:hv_machine_hull',
+			'4x #gtceu:circuits/hv',
+			'4x gtceu:hv_electric_motor',
+			'4x #forge:rotors/titanium',
+			'4x gtceu:hv_electric_pump',
+			'4x #forge:gears/rocket_alloy_t1')
+		.itemOutputs('gtceu:moon_dust_harvester')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.HV])
 		.circuit(2)
 
 	// Vacuum Intake
