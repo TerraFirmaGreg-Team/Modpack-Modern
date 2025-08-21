@@ -80,3 +80,4 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
 Platform.mods.primitive_creatures.name = "Primitive Creatures";
 Platform.mods.tfg.name = "TerraFirmaGreg";
 Platform.mods.kubejs.name = "TerraFirmaGreg";
+Platform.mods.wan_ancient_beasts.name = "Wan's Ancient Beasts";
