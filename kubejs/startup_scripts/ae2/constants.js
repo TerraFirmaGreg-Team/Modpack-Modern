@@ -25,6 +25,7 @@ global.AE2_DISABLED_ITEMS = [
     'ae2:charged_staff',
     'ae2:name_press',
     'ae2:charger',
+    'ae2:fe_p2p_tunnel',
 
     // Блоки
     'ae2:vibration_chamber',

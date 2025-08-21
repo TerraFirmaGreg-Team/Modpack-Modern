@@ -17,6 +17,8 @@ const registerAE2Recipes = (event) => {
 		], mod: 'ae2'
 	});
 
+	event.remove( { output: 'ae2:fe_p2p_tunnel' } )
+
 	// Cutting knives (for renaming things)
 	event.shaped('ae2:certus_quartz_cutting_knife', [
 		'  A',
