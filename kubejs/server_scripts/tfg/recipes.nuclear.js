@@ -208,12 +208,14 @@ function registerTFGNuclearRecipes(event) {
 
 	event.recipes.gtceu.gas_turbine('dense_steam')
 		.inputFluids(Fluid.of('gtceu:dense_steam', 1))
-		.EUt(-(32*4))
+		.EUt(-(32))
 		.duration(20*2)
 
 	//#endregion
 
-	//#region FLiBe Line
+	//#region FLiBe Line - SCRAP FROM MARS TO VENUS
+
+	/*
 
 	event.recipes.gtceu.evaporation_tower('raw_rich_brine_earth')
 		.inputFluids(Fluid.of('tfc:spring_water', 20000))
@@ -296,9 +298,13 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*36)
 		.EUt(GTValues.VA[GTValues.IV])
 
+	*/
+
 	//#endregion
 
-	//#region Bromine Line
+	//#region Bromine Line - SCRAP FROM MARS TO VENUS
+
+	/*
 
 	event.recipes.gtceu.evaporation_tower('evaporation_brine')
 		.inputFluids(Fluid.of('tfc:salt_water', 20000))
@@ -416,5 +422,7 @@ function registerTFGNuclearRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:bromine', 1000))
 		.duration(20*25)
 		.EUt(GTValues.VA[GTValues.HV])
+
+	*/
 
 }
