@@ -18,6 +18,7 @@
 - Fixed grammar on death messages and added some new ones (#1642) @vdegans
 - Added IV fridge, and IV-UV aqueous accumulator, food processor, food oven, and gas compressor machines @Pyritie
 - Added machine recipes for the wrought iron grill @Pyritie
+- Added recipes for redyeing/bleaching shipping containers (#1631) @Pyritie
 ### Bug fixes
 - Fixed moon mob spawning light levels, so now they need a light level of 0 instead of 11 (#1587) @NINAustinFett
 - Fixed wrong output amount of mortaring soybean paste (#1607) @TomPlop
