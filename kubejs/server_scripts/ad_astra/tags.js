@@ -243,6 +243,7 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:mars_soil', 'tfg:grass/amber_mycelium')
 	event.add('tfg:mars_soil', 'tfg:grass/sangnum_mycelium')
 	event.add('ad_astra:mars_stone_replaceables', '#tfg:mars_soil')
+	event.add('minecraft:animals_spawnable_on', '#tfg:mars_soil')
 	
 	event.add('tfc:can_carve', '#ad_astra:moon_stone_replaceables')
 	event.add('tfc:can_carve', '#ad_astra:mars_stone_replaceables')
@@ -349,7 +350,8 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'endermanoverhaul:end_enderman',
 		'endermanoverhaul:end_islands_enderman',
 
-		'minecraft:sniffer',
+		'tfg:sniffer',
+		'tfg:glacian_ram',
 		'species:wraptor',
 		'species:goober',
 		'species:cruncher',
@@ -357,7 +359,14 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'species:quake',
 		'endermanoverhaul:crimson_forest_enderman',
 		'endermanoverhaul:warped_forest_enderman',
-		'endermanoverhaul:badlands_enderman'
+		'endermanoverhaul:badlands_enderman',
+		'wan_ancient_beasts:walker',
+		'wan_ancient_beasts:eater',
+		'wan_ancient_beasts:crusher',
+		'wan_ancient_beasts:soarer',
+		'wan_ancient_beasts:glider',
+		'wan_ancient_beasts:toxlacanth',
+		'wan_ancient_beasts:surfer'
 	]
 
 	COLD_ENTITIES.forEach(entity => {
@@ -378,6 +387,11 @@ const registerAdAstraEntityTypeTags = (event) => {
 	event.add('tfg:ignores_gravity', 'endermanoverhaul:spirit')
 	event.add('tfg:ignores_gravity', 'species:birt')
 	event.add('tfg:ignores_gravity', 'ad_astra:star_crawler')
+	
+	event.add('tfg:ignores_gravity', 'species:wraptor')
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:crusher')
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:soarer')
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:glider')
 }
 
 const registerAdAstraPlacedFeatures = (event) => {

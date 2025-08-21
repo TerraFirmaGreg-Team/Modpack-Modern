@@ -12,6 +12,8 @@
 - Firmalife mixing bowls can now be placed on tool racks (#1623) @Pyritie
 - Fixed recipe for pyroxenite button (again) (#1625) @Pyritie
 - Refactored locometal recipes to use stonecutters, metal plated locometal is now also much cheaper (#1624) @Pyritie
+- Increased the air capacity of space suits by 250% @Pyritie
+- Converted custom tooltips to lang strings for translations (#1663) @Redeix
 ### Bug fixes
 - Fixed moon mob spawning light levels, so now they need a light level of 0 instead of 11 (#1587) @NINAustinFett
 - Fixed wrong output amount of mortaring soybean paste (#1607) @TomPlop
@@ -22,6 +24,8 @@
 - Moved the golden apple recipe over to the food processor so it respects food expiry data @Pyritie
 - Removed some remaining swine-steel crafting recipes @Pyritie
 - Added missing hoe/scythe mineable tags from custom crops (#1622) @Pyritie
+- Added missing rose gold alloy smelter recipes (#1664) @Redeix
+- Fixed some (but not all) model issues with the reflector block (#1664) @Redeix
 
 ## [0.10.9] - 10-08-2025
 ### Changes
