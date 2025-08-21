@@ -14,6 +14,8 @@
 - Refactored locometal recipes to use stonecutters, metal plated locometal is now also much cheaper (#1624) @Pyritie
 - Increased the air capacity of space suits by 250% @Pyritie
 - Converted custom tooltips to lang strings for translations (#1663) @Redeix
+- Removed energy P2P (#1661) @TomPlop @BlueBoat29
+- Fixed grammar on death messages and added some new ones (#1642) @vdegans
 ### Bug fixes
 - Fixed moon mob spawning light levels, so now they need a light level of 0 instead of 11 (#1587) @NINAustinFett
 - Fixed wrong output amount of mortaring soybean paste (#1607) @TomPlop
@@ -26,6 +28,8 @@
 - Removed some remaining swine-steel crafting recipes @Pyritie
 - Added missing hoe/scythe mineable tags from custom crops (#1622) @Pyritie
 - Fixed some (but not all) model issues with the reflector block (#1664) @Redeix
+- Fixed food processor outputs not stacking @gustovafing
+- Fixed using the grappling hook on a ladder killing you (#106) @Zippity 
 
 ## [0.10.9] - 10-08-2025
 ### Changes
