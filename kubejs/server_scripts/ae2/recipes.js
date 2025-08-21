@@ -1253,57 +1253,57 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 	event.recipes.gtceu.assembler('ae2:interface_mv')
 		.itemInputs(
 			'gtceu:mv_conveyor_module',
-			'8x #forge:plates/glass',
+			'2x #tfc:workbenches',
 			'4x #forge:plates/aluminium',
 			'4x ae2:annihilation_core',
 			'4x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('ae2:interface')
-		.duration(200)
+		.duration(20*20)
 		.EUt(GTValues.VA[GTValues.MV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
-	// HV Moon Only
-	event.recipes.gtceu.assembler('ae2:interface_hv_moon')
+	// MV Moon Only
+	event.recipes.gtceu.assembler('ae2:interface_mv_moon')
 		.itemInputs(
-			'gtceu:hv_conveyor_module',
-			'8x #forge:plates/glass',
-			'4x #forge:plates/stainless_steel',
+			'gtceu:mv_conveyor_module',
+			'2x #tfc:workbenches',
+			'4x #forge:plates/aluminium',
 			'4x ae2:annihilation_core',
 			'4x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('4x ae2:interface')
-		.duration(200)
-		.EUt(GTValues.VA[GTValues.HV])
+		.duration(20*10)
+		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
 
-	// EV
-	event.recipes.gtceu.assembler('ae2:interface_ev')
+	// IV
+	event.recipes.gtceu.assembler('ae2:interface_iv')
 		.itemInputs(
-			'gtceu:ev_conveyor_module',
-			'8x #forge:plates/glass',
-			'4x #forge:plates/titanium',
+			'gtceu:iv_conveyor_module',
+			'2x #tfc:workbenches',
+			'4x #forge:plates/tungsten_steel',
 			'16x ae2:annihilation_core',
 			'16x ae2:formation_core')
-		.inputFluids(Fluid.of('tfg:fluix', 1152))
-		.itemOutputs('8x ae2:interface')
-		.duration(200)
-		.EUt(GTValues.VA[GTValues.EV])
+		.inputFluids(Fluid.of('tfg:fluix', 144*8))
+		.itemOutputs('16x ae2:interface')
+		.duration(20*20)
+		.EUt(GTValues.VA[GTValues.IV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
-	// LuV
-	event.recipes.gtceu.assembler('ae2:interface_luv')
+	// IV Moon Only
+	event.recipes.gtceu.assembler('ae2:interface_iv_moon')
 		.itemInputs(
-			'gtceu:luv_conveyor_module',
-			'8x #forge:plates/glass',
-			'4x #forge:plates/rhodium_plated_palladium',
-			'32x ae2:annihilation_core',
-			'32x ae2:formation_core')
-		.inputFluids(Fluid.of('tfg:fluix', 4608))
+			'gtceu:iv_conveyor_module',
+			'2x #tfc:workbenches',
+			'4x #forge:plates/tungsten_steel',
+			'16x ae2:annihilation_core',
+			'16x ae2:formation_core')
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*8))
 		.itemOutputs('32x ae2:interface')
-		.duration(200)
-		.EUt(GTValues.VA[GTValues.LuV])
-		.cleanroom(CleanroomType.CLEANROOM)
+		.duration(20*10)
+		.EUt(GTValues.VA[GTValues.IV])
+		.dimension('ad_astra:moon')
 
 
 	//#endregion
