@@ -1185,6 +1185,76 @@
             ]
         },
         {
+            "pakku_id": "RrbGnesL6XuNDCb1",
+            "pakku_links": [
+                "x1EwQZ6H2kVKR3U3"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "armor-stand-shift-swap",
+                "modrinth": "armor-stand-shift-swap"
+            },
+            "name": {
+                "curseforge": "Armor Stand Shift Swap",
+                "modrinth": "Armor Stand Shift Swap"
+            },
+            "id": {
+                "curseforge": "905132",
+                "modrinth": "vFDTNKLA"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "armorstandshiftswap-forge-1.20.1-1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5877/380/armorstandshiftswap-forge-1.20.1-1.0.0.jar",
+                    "id": "5877380",
+                    "parent_id": "905132",
+                    "hashes": {
+                        "sha1": "4dc1875a4f6ca118f17a86531d314e095f7c2f1f",
+                        "md5": "30648633cdc4a0fc652d951c5299bf6d"
+                    },
+                    "required_dependencies": [
+                        "419699"
+                    ],
+                    "size": 83802,
+                    "date_published": "2024-11-05T15:01:52.897Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "armorstandshiftswap-forge-1.20.1-1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/vFDTNKLA/versions/o416kPwV/armorstandshiftswap-forge-1.20.1-1.0.0.jar",
+                    "id": "o416kPwV",
+                    "parent_id": "vFDTNKLA",
+                    "hashes": {
+                        "sha512": "9be8e668569ce2b070fcb36d4dea4c34a2a50fbff2dadcd38cf2a9b75b3f598d9ad156380a9d74d87c67736dde3a04382271174a5ff57ed02c6da1785f3298d1",
+                        "sha1": "4dc1875a4f6ca118f17a86531d314e095f7c2f1f"
+                    },
+                    "required_dependencies": [
+                        "lhGA9TYQ"
+                    ],
+                    "size": 83802,
+                    "date_published": "2024-11-05T15:34:55.705362Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Wg44U8f1K4nbIsj1",
             "pakku_links": [
                 "64uacGcEw697jVGs",
@@ -1385,7 +1455,7 @@
             ]
         },
         {
-            "pakku_id": "i6VxVERP0ZuJlfnt",
+            "pakku_id": "tcGlxrXYONei6sfG",
             "type": "MOD",
             "side": "SERVER",
             "slug": {
@@ -1401,6 +1471,27 @@
                 "modrinth": "OfKzpbRU"
             },
             "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "baguettelib-1.20.1-Forge-1.1.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6909/482/baguettelib-1.20.1-Forge-1.1.0.jar",
+                    "id": "6909482",
+                    "parent_id": "1264423",
+                    "hashes": {
+                        "sha1": "140ea51f71e5f316e473354cdeeb0dbba5422632",
+                        "md5": "74448bf96f648170cc03ab7bee6a6e3d"
+                    },
+                    "required_dependencies": [],
+                    "size": 30314,
+                    "date_published": "2025-08-20T23:30:04.997Z"
+                },
                 {
                     "type": "modrinth",
                     "file_name": "baguettelib-1.20.1-Forge-1.0.0.jar",
@@ -1422,27 +1513,6 @@
                     "required_dependencies": [],
                     "size": 26550,
                     "date_published": "2025-06-25T13:03:42.486510Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "baguettelib-1.20.1-Forge-1.1.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6909/482/baguettelib-1.20.1-Forge-1.1.0.jar",
-                    "id": "6909482",
-                    "parent_id": "1264423",
-                    "hashes": {
-                        "sha1": "140ea51f71e5f316e473354cdeeb0dbba5422632",
-                        "md5": "74448bf96f648170cc03ab7bee6a6e3d"
-                    },
-                    "required_dependencies": [],
-                    "size": 30314,
-                    "date_published": "2025-08-20T23:30:04.997Z"
                 }
             ]
         },
@@ -3133,7 +3203,8 @@
         {
             "pakku_id": "tIc0aOMFiuJNztfY",
             "pakku_links": [
-                "0DMPJ1AWW6qfYubI"
+                "0DMPJ1AWW6qfYubI",
+                "tcGlxrXYONei6sfG"
             ],
             "type": "MOD",
             "side": "SERVER",
@@ -12722,7 +12793,7 @@
             ]
         },
         {
-            "pakku_id": "ZGt3prWXJVURPwKE",
+            "pakku_id": "kR8s4t9LptntMSpg",
             "pakku_links": [
                 "64uacGcEw697jVGs"
             ],
@@ -12741,29 +12812,6 @@
                 "modrinth": "ONgsGaM9"
             },
             "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "waterflasks-3.0.8.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ONgsGaM9/versions/VIl9hEx7/waterflasks-3.0.8.jar",
-                    "id": "VIl9hEx7",
-                    "parent_id": "ONgsGaM9",
-                    "hashes": {
-                        "sha512": "7cc5e39ac45223a4b28387a60e0b361d777f44f34b9baa5d24a1541a0a21c0decf86146c19dbe4fcc4892048c0ca4f5a5737d09210c42f61d0e34448b3390c47",
-                        "sha1": "6fc568609f6a182d18f8f4fac286c9bf122a486b"
-                    },
-                    "required_dependencies": [
-                        "JaCEZUhg"
-                    ],
-                    "size": 939203,
-                    "date_published": "2025-07-29T01:27:09.745095Z"
-                },
                 {
                     "type": "curseforge",
                     "file_name": "waterflasks-3.0.9.jar",
@@ -12787,6 +12835,29 @@
                     ],
                     "size": 943232,
                     "date_published": "2025-08-12T03:42:03.923Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "waterflasks-3.0.8.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/ONgsGaM9/versions/VIl9hEx7/waterflasks-3.0.8.jar",
+                    "id": "VIl9hEx7",
+                    "parent_id": "ONgsGaM9",
+                    "hashes": {
+                        "sha512": "7cc5e39ac45223a4b28387a60e0b361d777f44f34b9baa5d24a1541a0a21c0decf86146c19dbe4fcc4892048c0ca4f5a5737d09210c42f61d0e34448b3390c47",
+                        "sha1": "6fc568609f6a182d18f8f4fac286c9bf122a486b"
+                    },
+                    "required_dependencies": [
+                        "JaCEZUhg"
+                    ],
+                    "size": 939203,
+                    "date_published": "2025-07-29T01:27:09.745095Z"
                 }
             ]
         },
