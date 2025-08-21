@@ -16,6 +16,8 @@
 - Converted custom tooltips to lang strings for translations (#1663) @Redeix
 - Removed energy P2P (#1661) @TomPlop @BlueBoat29
 - Fixed grammar on death messages and added some new ones (#1642) @vdegans
+- Added IV fridge, and IV-UV aqueous accumulator, food processor, food oven, and gas compressor machines @Pyritie
+- Added machine recipes for the wrought iron grill @Pyritie
 ### Bug fixes
 - Fixed moon mob spawning light levels, so now they need a light level of 0 instead of 11 (#1587) @NINAustinFett
 - Fixed wrong output amount of mortaring soybean paste (#1607) @TomPlop

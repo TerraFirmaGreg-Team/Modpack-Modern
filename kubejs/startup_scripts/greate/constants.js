@@ -14,12 +14,7 @@ global.GREATE_DISABLED_ITEMS = [
 	'gtceu:darmstadtium_alloy',
 	'gtceu:neutronium_alloy',
 
-	'gtceu:tungsten_steel_whisk',
-	'gtceu:rhodium_plated_palladium_whisk',
-	'gtceu:naquadah_alloy_whisk',
-	'gtceu:darmstadtium_whisk',
 	'gtceu:neutronium_whisk',
-
 	'greate:polybenzimidazole_belt_connector',
 	'greate:polytetrafluoroethylene_belt_connector',
 	

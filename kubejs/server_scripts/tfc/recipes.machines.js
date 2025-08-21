@@ -419,4 +419,12 @@ function registerTFCMachineRecipes(event) {
 			processingTime: 50
 		}).id(`tfg:vi/lathe/stripping_${wood}_wood`)
 	})
+
+	
+	event.recipes.gtceu.extruder('tfg:wrought_iron_grill_electric_only')
+		.itemInputs('2x #forge:plates/wrought_iron')
+		.notConsumable('tfg:large_casing_extruder_mold')
+		.itemOutputs('tfc:wrought_iron_grill')
+		.duration(60)
+		.EUt(8)
 }
