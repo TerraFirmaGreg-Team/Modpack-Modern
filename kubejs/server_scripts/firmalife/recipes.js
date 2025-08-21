@@ -743,4 +743,11 @@ const registerFirmaLifeRecipes = (event) => {
 			Fluid.of('afc:birch_syrup', 1000))
 		.outputItem('createaddition:honey_cake')
 		.id('tfg:mixing_bowl/birch_honey_cake')
+
+	event.remove({ id: 'firmalife:mixing_bowl/chocolate_ice_cream' })
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients([TFC.ingredient.notRotten('firmalife:food/vanilla_ice_cream')],
+			Fluid.of('tfcchannelcasting:milk_chocolate', 100))
+		.outputItem(TFC.isp.of('firmalife:food/chocolate_ice_cream').copyFood())
+		.id('tfg:mixing_bowl/chocolate_ice_cream')
 }

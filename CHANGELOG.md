@@ -30,6 +30,7 @@
 - Fixed some (but not all) model issues with the reflector block (#1664) @Redeix
 - Fixed food processor outputs not stacking @gustovafing
 - Fixed using the grappling hook on a ladder killing you (#106) @Zippity 
+- Added more missing food processor recipes (#1632, #1638) @Pyritie
 
 ## [0.10.9] - 10-08-2025
 ### Changes
