@@ -630,11 +630,9 @@
 			id: "5792DDAA82895E67"
 			subtitle: "{quests.metal_age.red_blu.subtitle}"
 			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: "gtceu:overworld_marker"
-				id: "720D64916D1E3892"
-				title: "{quests.stone_age.temperature.task}"
-				type: "dimension"
+				id: "63890641DCD6659F"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
 			}]
 			title: "{quests.metal_age.red_blu.title}"
 			x: 24.0d
