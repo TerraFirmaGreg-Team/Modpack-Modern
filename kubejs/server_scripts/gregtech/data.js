@@ -124,7 +124,7 @@ const registerGTCEUMetals = (event) => {
 
 
 const registerGTCEUBedrockOreVeins = (event) => {
-
+/*
 	// Tin, Magnesium
 	event.add('tfg:moon_tin', vein => {
 		vein.weight(75)
@@ -190,6 +190,7 @@ const registerGTCEUBedrockOreVeins = (event) => {
 			.material(GTMaterials.Pollucite, 1)
 			.dimensions('ad_astra:moon')
 	})
+	*/
 }
 
 function registerGTCEUBedrockFluidVeins(event) {
