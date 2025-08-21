@@ -661,6 +661,7 @@
 				"5088768AAA28FCBA"
 				"6D04BAC5B215F90F"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.redblu_anvil.desc}"]
 			id: "56CA2EB7812529C5"
 			shape: "octagon"
