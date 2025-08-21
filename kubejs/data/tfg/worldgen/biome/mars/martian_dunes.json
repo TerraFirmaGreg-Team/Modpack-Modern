@@ -13,9 +13,9 @@
 		},
 		"particle": {
 			"options": {
-				"type": "minecraft:crimson_spore"
+				"type": "tfc:wind"
 			},
-			"probability": 0.014
+			"probability": 0.05
 		},
 		"sky_color": 15117444,
 		"water_color": 4159204,
