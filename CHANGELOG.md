@@ -1,8 +1,11 @@
 # Changelog
 
 ## [Unreleased]
-### Changes
+### Major changes
 - Complete rework of prospector's picks. (#1594) @Redeix
+- Removed the mod that was causing placed entities to sometimes not spawn
+- Removed energy P2P (#1661) @TomPlop @BlueBoat29
+### Changes
 - Rebalance Large Solar Array to make Mk2 circuit 2 viable, and buffed to LSA Mk3 circuit 2 (#1591) @TomPlop
 - Added mechanical press recipes to weld weak steels @Pyritie
 - Added backpacks, lunchboxes, and vessels to the toolbelt's blacklist @Pyritie
@@ -14,7 +17,6 @@
 - Refactored locometal recipes to use stonecutters, metal plated locometal is now also much cheaper (#1624) @Pyritie
 - Increased the air capacity of space suits by 250% @Pyritie
 - Converted custom tooltips to lang strings for translations (#1663) @Redeix
-- Removed energy P2P (#1661) @TomPlop @BlueBoat29
 - Fixed grammar on death messages and added some new ones (#1642) @vdegans
 - Added IV fridge, and IV-UV aqueous accumulator, food processor, food oven, and gas compressor machines @Pyritie
 - Added machine recipes for the wrought iron grill @Pyritie
