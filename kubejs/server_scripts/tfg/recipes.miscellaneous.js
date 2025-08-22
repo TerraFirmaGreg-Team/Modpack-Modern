@@ -880,6 +880,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		)
 		.inputFluids(Fluid.of('gtceu:glue', 50))
 		.itemOutputs('tfg:harvest_basket')
+		.circuit(2)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 

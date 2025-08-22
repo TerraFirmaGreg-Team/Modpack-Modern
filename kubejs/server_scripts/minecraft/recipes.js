@@ -147,14 +147,21 @@ const registerMinecraftRecipes = (event) => {
 	event.recipes.gtceu.chemical_bath('paper_from_papyrus_distilled')
 		.itemInputs('tfc:papyrus')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 100))
-		.itemOutputs('minecraft:paper')
+		.itemOutputs('4x tfc:soaked_papyrus_strip')
 		.duration(100)
 		.EUt(7)
 
 	event.recipes.gtceu.chemical_bath('paper_from_papyrus')
 		.itemInputs('tfc:papyrus')
 		.inputFluids("#tfg:clean_water 100")
+		.itemOutputs('4x tfc:soaked_papyrus_strip')
+		.duration(100)
+		.EUt(7)
+
+	event.recipes.gtceu.assembler('papyrus_strips')
+		.itemInputs('4x tfc:soaked_papyrus_strip')
 		.itemOutputs('minecraft:paper')
+		.circuit(1)
 		.duration(100)
 		.EUt(7)
 
