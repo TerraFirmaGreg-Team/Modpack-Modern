@@ -8,7 +8,7 @@
 		"Name": "ad_astra:mars_stone"
 	},
 	"default_fluid": {
-		"Name": "tfg:semiheavy_ammoniacal_water"
+		"Name": "tfg:fluid/semiheavy_ammoniacal_water"
 	},
 	"noise": {
 		"min_y": -32,
