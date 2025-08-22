@@ -41,6 +41,7 @@
 - Fixed using the grappling hook on a ladder killing you (#106) @Zippity 
 - Added more missing food processor recipes (#1632, #1638) @Pyritie
 - Fixed a few stuck quests (#1667, #1666) @Wicpar
+- Fixed inconsistent quern and macerator recipes for small tfc ores (#1672) @Pyritie
 
 ## [0.10.9] - 10-08-2025
 ### Changes
