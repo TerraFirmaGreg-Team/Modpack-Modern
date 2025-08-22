@@ -47,14 +47,14 @@ function registerTFGNuclearRecipes(event) {
 
 	//#region Mars Water
 
-	event.recipes.gtceu.electrolyzer('mars_heavy_water')
+	event.recipes.gtceu.centrifuge('mars_heavy_water')
 		.inputFluids(Fluid.of('tfg:heavy_ammoniacal_water', 1000))
 		.outputFluids(Fluid.of('gtceu:heavy_water', 500))
 		.itemOutputs('#forge:dusts/ammonium_chloride', '2x #forge:small_dusts/ammonium_chloride')
 		.duration(20*9)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.recipes.gtceu.electrolyzer('mars_semiheavy_water')
+	event.recipes.gtceu.centrifuge('mars_semiheavy_water')
 		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
 		.outputFluids(Fluid.of('minecraft:water', 500))
 		.itemOutputs('2x #forge:tiny_dusts/ammonium_chloride')
