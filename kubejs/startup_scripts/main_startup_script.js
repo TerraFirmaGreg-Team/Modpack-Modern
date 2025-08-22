@@ -23,7 +23,6 @@ BlockEvents.modification(event => {
 
 ItemEvents.modification(event => {
 	registerBeneathItemModifications(event)
-	registerConstructionWandsItemModifications(event)
 	registerCreateItemModifications(event)
 	registerFirmalifeItemModifications(event)
 	registerGTCEuItemModifications(event)

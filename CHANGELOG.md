@@ -27,6 +27,7 @@
 - Alabaster is now renewable via rock breaker @gustovafing
 - Added a new ore vein to all dimensions for gypsum, calcite, borax, and fuller's earth @Pyritie
 - Added some more moon ore veins for copper, tin, gold, aluminium.. nothing exciting @Pyritie
+- Changed the recipe for the infinity construction wand @Pyritie
 ### Bug fixes
 - Fixed moon mob spawning light levels, so now they need a light level of 0 instead of 11 (#1587) @NINAustinFett
 - Fixed wrong output amount of mortaring soybean paste (#1607) @TomPlop
