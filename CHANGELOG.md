@@ -5,6 +5,7 @@
 - Complete rework of prospector's picks. (#1594) @Redeix
 - Removed the mod that was causing placed entities to sometimes not spawn
 - Removed energy P2P (#1661) @TomPlop @BlueBoat29
+- Removed GT bedrock miners, replaced with a new system for Moon infinites (#1569) @TomPlop
 ### Changes
 - Rebalance Large Solar Array to make Mk2 circuit 2 viable, and buffed to LSA Mk3 circuit 2 (#1591) @TomPlop
 - Added mechanical press recipes to weld weak steels @Pyritie
@@ -21,6 +22,8 @@
 - Added IV fridge, and IV-UV aqueous accumulator, food processor, food oven, and gas compressor machines @Pyritie
 - Added machine recipes for the wrought iron grill @Pyritie
 - Added recipes for redyeing/bleaching shipping containers (#1631) @Pyritie
+- Adjusted recipes for ME Interface and Pattern Provider for consistency (#1569) @TomPlop
+- Changed the cost of the ME Quantum Tunnel (#1569) @TomPlop
 ### Bug fixes
 - Fixed moon mob spawning light levels, so now they need a light level of 0 instead of 11 (#1587) @NINAustinFett
 - Fixed wrong output amount of mortaring soybean paste (#1607) @TomPlop
