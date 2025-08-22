@@ -24,6 +24,7 @@
 - Added recipes for redyeing/bleaching shipping containers (#1631) @Pyritie
 - Adjusted recipes for ME Interface and Pattern Provider for consistency (#1569) @TomPlop
 - Changed the cost of the ME Quantum Tunnel (#1569) @TomPlop
+- Alabaster is now renewable via rock breaker @gustovafing
 ### Bug fixes
 - Fixed moon mob spawning light levels, so now they need a light level of 0 instead of 11 (#1587) @NINAustinFett
 - Fixed wrong output amount of mortaring soybean paste (#1607) @TomPlop
