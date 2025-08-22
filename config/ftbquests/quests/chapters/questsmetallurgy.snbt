@@ -308,6 +308,7 @@
 					}
 					id: "tfc:kaolin_clay"
 				}
+				match_nbt: false
 				type: "item"
 				weak_nbt_match: true
 			}]
@@ -966,7 +967,9 @@
 						}
 						id: "tfc:metal/ingot/weak_red_steel"
 					}
+					match_nbt: false
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "2A068958F7451FFB"
@@ -980,7 +983,9 @@
 						}
 						id: "tfc:metal/ingot/black_steel"
 					}
+					match_nbt: false
 					type: "item"
+					weak_nbt_match: true
 				}
 			]
 			title: "{quests.metal_age.highcarb_red_steel.title}"
@@ -1157,7 +1162,9 @@
 						}
 						id: "tfc:metal/ingot/weak_blue_steel"
 					}
+					match_nbt: false
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "2755C292E4E19530"
@@ -1171,7 +1178,9 @@
 						}
 						id: "tfc:metal/ingot/black_steel"
 					}
+					match_nbt: false
 					type: "item"
+					weak_nbt_match: true
 				}
 			]
 			title: "{quests.metal_age.highcarb_blu_steel.title}"
