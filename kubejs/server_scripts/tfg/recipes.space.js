@@ -287,7 +287,7 @@ function registerTFGSpaceRecipes(event) {
 		'CHC',
 		'NEN'
 	], {
-		C: '#gtceu:circuits/iv',
+		C: '#gtceu:circuits/ev',
 		S: 'gtceu:hv_sensor',
 		E: 'gtceu:hv_emitter',
 		H: 'gtceu:ev_machine_hull',

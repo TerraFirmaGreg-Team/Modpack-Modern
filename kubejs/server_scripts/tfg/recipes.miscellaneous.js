@@ -825,7 +825,7 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.recipes.gtceu.assembler('sensor_iv')
 		.itemInputs('gtceu:quantum_eye', '#forge:rods/iridium', '#gtceu:circuits/iv', '4x #forge:plates/tungsten_steel')
-		.itemOutputs('gtceu:ev_sensor')
+		.itemOutputs('gtceu:iv_sensor')
 		.duration(100)
 		.EUt(30)
 	
