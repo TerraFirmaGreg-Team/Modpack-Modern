@@ -59,14 +59,4 @@ const registerTFGFluids = (event) => {
 		.renderType('translucent')
 	//#endregion
 
-	//#region Moon Fluid
-
-	event.create('tfg:heavy_ammoniacal_water')
-		.thinTexture(0x08733f)
-		.bucketColor(0x08733f)
-		.temperature(236)
-		.noBlock()
-
-	//#endregion
-
 }
