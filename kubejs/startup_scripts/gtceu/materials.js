@@ -170,11 +170,11 @@ const registerGTCEuMaterialModification = (event) => {
 
 	//		  /* Generate Dusty Ores for Infinite Ores
 
-	GTMaterials.Iron.addFlags(GENERATE_DUSTY_ORES);
-	GTMaterials.Copper.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Goethite.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Diamond.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.CertusQuartz.addFlags(GENERATE_DUSTY_ORES);
-	GTMaterials.Thorium.addFlags(GENERATE_DUSTY_ORES);
-	GTMaterials.Uraninite.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Gold.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Cassiterite.addFlags(GENERATE_DUSTY_ORES);
 
 	//
 	//        /* Имеют инструменты, броню TFC, двойные слитки */

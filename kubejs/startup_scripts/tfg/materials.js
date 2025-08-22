@@ -351,5 +351,49 @@ const registerTFGMaterials = (event) => {
 		.liquid(new GTFluidBuilder().customStill().temperature(450))
 		.formula('(?)')
 
+	//#endregion
+
+	// Moon Ore Line
+
+	event.create('regolith_vapor')
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(727))
+
+	event.create('tfg:certus_regolith')
+		.dust()
+		.flags(GTMaterialFlags.NO_UNIFICATION)
+		.iconSet(GTMaterialIconSet.CERTUS)
+		.color('0xc1e6e4')
+		.secondaryColor('0x7a5225')
+
+	event.create('tfg:goethe_regolith')
+		.dust()
+		.flags(GTMaterialFlags.NO_UNIFICATION)
+		.iconSet(GTMaterialIconSet.METALLIC)
+		.color('0xb0af5b')
+		.secondaryColor('0x7a5225')
+
+	event.create('tfg:bright_regolith')
+		.dust()
+		.flags(GTMaterialFlags.NO_UNIFICATION)
+		.iconSet(GTMaterialIconSet.SHINY)
+		.color('0xf0efe9')
+		.secondaryColor('0xffffff')
+
+	event.create('tfg:cassiterite_regolith')
+		.dust()
+		.flags(GTMaterialFlags.NO_UNIFICATION)
+		.iconSet(GTMaterialIconSet.METALLIC)
+		.color('0xbab6b7')
+		.secondaryColor('0x7a5225')
+
+		// Reactant to Ore line
+
+	event.create('tfg:regolith_mush')
+		.dust()
+		.flags(GTMaterialFlags.NO_UNIFICATION)
+		.iconSet(GTMaterialIconSet.WOOD)
+		.color('0xa2cde0')
+		.secondaryColor('0x7a5225')
+
 
 }
