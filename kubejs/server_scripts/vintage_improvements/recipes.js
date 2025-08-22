@@ -717,6 +717,14 @@ function registerVintageImprovementsRecipes(event) {
 		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 	}).id(`tfg:vi/curving/sprinkler`)
 
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ tag: 'forge:double_plates/wrought_iron' }],
+		itemAsHead: 'tfg:large_casing_extruder_mold',
+		results: [{ item: 'tfc:wrought_iron_grill' }],
+		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/curving/wrought_iron_grill`)
+
 	// #endregion
 }
 
