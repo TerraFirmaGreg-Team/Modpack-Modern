@@ -466,4 +466,36 @@ const registerCreatedecoRecipes = (event) => {
 	}).id('tfg:createdeco/shaped/industrial_iron_ladder')
 
 	// #endregion
+
+	// #region Shipping Containers
+
+	global.MINECRAFT_DYE_NAMES.forEach(color => {
+		event.remove({ id: `createdeco:${color}_shipping_container_from_dyeing_vaults` })
+
+		event.recipes.gtceu.chemical_bath(`createdeco:${color}_shipping_container`)
+			.itemInputs('create:item_vault')
+			.inputFluids(Fluid.of(`tfc:${color}_dye`, 144))
+			.itemOutputs(`createdeco:${color}_shipping_container`)
+			.duration(100)
+			.EUt(16)
+			.category(GTRecipeCategories.CHEM_DYES);
+
+		event.recipes.gtceu.chemical_bath(`createdeco:${color}_shipping_container_recolor`)
+			.itemInputs('#createdeco:shipping_containers')
+			.inputFluids(Fluid.of(`tfc:${color}_dye`, 144))
+			.itemOutputs(`createdeco:${color}_shipping_container`)
+			.duration(100)
+			.EUt(16)
+			.category(GTRecipeCategories.CHEM_DYES);
+	})
+
+	event.recipes.gtceu.chemical_bath(`createdeco:bleach_shipping_container`)
+		.itemInputs('#createdeco:shipping_containers')
+		.inputFluids(Fluid.of('gtceu:chlorine', 144))
+		.itemOutputs('create:item_vault')
+		.duration(100)
+		.EUt(16)
+		.category(GTRecipeCategories.CHEM_DYES);
+
+	// #endregion
 };

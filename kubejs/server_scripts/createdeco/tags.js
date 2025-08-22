@@ -4,17 +4,14 @@ const metalBars = ['andesite', 'brass', 'iron', 'copper', 'industrial_iron', 'zi
 
 const registerCreateDecoItemTags = (event) => {
 
-	//#region Hidden Items  
 	global.CREATEDECO_DISABLED_ITEMS.forEach(item => {
 		event.removeAllTagsFrom(item)
 		event.add('c:hidden_from_recipe_viewers', item)
 	});
-	//#endregion
 
 	event.remove('createdeco:internal/blocks/iron_blocks', 'minecraft:iron_block')
 	event.remove('createdeco:internal/blocks/industrial_iron_blocks', 'create:industrial_iron_block')
 
-	//#region Apply Tags
 	metalBars.forEach(metalBars => {
 		event.add('tfg:metal_bars', `createdeco:${metalBars}_bars`)
 		event.add('tfg:metal_bars', `createdeco:${metalBars}_bars_overlay`)
@@ -53,7 +50,10 @@ const registerCreateDecoItemTags = (event) => {
 	event.add("createdeco:internal/blocks/industrial_iron_blocks", "#forge:storage_blocks/steel")
 	event.add("createdeco:internal/blocks/zinc_blocks", "#forge:storage_blocks/zinc")
 	event.add("createdeco:internal/blocks/andesite_blocks", "#forge:storage_blocks/tin_alloy")
-	//#endregion
+
+	global.MINECRAFT_DYE_NAMES.forEach(color => {
+		event.add('createdeco:shipping_containers', `createdeco:${color}_shipping_container`)
+	})
 };
 
 const registerCreateDecoBlockTags = (event) => {
