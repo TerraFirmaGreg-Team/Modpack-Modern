@@ -25,6 +25,8 @@
 - Adjusted recipes for ME Interface and Pattern Provider for consistency (#1569) @TomPlop
 - Changed the cost of the ME Quantum Tunnel (#1569) @TomPlop
 - Alabaster is now renewable via rock breaker @gustovafing
+- Added a new ore vein to all dimensions for gypsum, calcite, borax, and fuller's earth @Pyritie
+- Added some more moon ore veins for copper, tin, gold, aluminium.. nothing exciting @Pyritie
 ### Bug fixes
 - Fixed moon mob spawning light levels, so now they need a light level of 0 instead of 11 (#1587) @NINAustinFett
 - Fixed wrong output amount of mortaring soybean paste (#1607) @TomPlop

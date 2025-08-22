@@ -14,22 +14,22 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_amethyst)Аметист і Гранат$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_apatite)Апатит і Пірохлор$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_monazite)Бастнезит і Монацит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_olivine)Бентоніт та Олівін$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_bismuthinite)Вісмут (Звичайний)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuthinite)Вісмут (Поверхня)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Вугілля$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Вульфеніт і Молібденіт$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Гарнієрит і Кобальтит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_hematite)Гематит та Лімоніт$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_hematite)Гематит, Гетит і Рубін$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_limonite)Гетит і Малахіт$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)Гранат і Каситеритові піски$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)Графіт і Діамант$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_amethyst)Аметист і Гранат$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_apatite)Апатит і Пірохлор$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_monazite)Бастнезит і Монацит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_olivine)Бентоніт та Олівін$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_bismuthinite)Вісмут (Звичайний)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuthinite)Вісмут (Поверхня)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Вугілля$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Вульфеніт і Молібденіт$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Гарнієрит і Кобальтит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_hematite)Гематит та Лімоніт$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_hematite)Гематит, Гетит і Рубін$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_limonite)Гетит і Малахіт$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gypsum)Гіпс і Кальцит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)Гранат і Каситеритові піски$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_gold)Золото (Глибоке)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Золото, Лімоніт та Гематит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_cassiterite)Каситерит (Звичайний)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cassiterite)Каситерит (Поверхнивий)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Кварц$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Кіаніт, Слюда та Боксити$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lapis)Лапіс, Лазурит та Содаліт$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_limonite)Лімоніт$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_magnetite)Магнетит і Ванадій$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_manganese)Марганець і Тантал$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Мідь та Халькопірит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_basaltic_sands)Мінеральні піски$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_oilsands)Нафтові піски$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)Опал і Гранат$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)Графіт і Діамант$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_gold)Золото (Глибоке)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Золото, Лімоніт та Гематит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_cassiterite)Каситерит (Звичайний)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cassiterite)Каситерит (Поверхнивий)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Кварц$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Кіаніт, Слюда та Боксити$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lapis)Лапіс, Лазурит та Содаліт$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_limonite)Лімоніт$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_magnetite)Магнетит і Ванадій$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_manganese)Марганець і Тантал$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Мідь та Халькопірит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_basaltic_sands)Мінеральні піски$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_oilsands)Нафтові піски$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)Редстоун, Кіновар і Рубін$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Сапфір і Альмадін$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)Селітра та Електротин$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)Сірка та Пірит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_beryllium)Смарагд і Берилій$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Солі та Бура$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Сподумен та Лепідоліт$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_silver)Срібло, Гален і Свинець$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)Стеатит, Тальк і Трона$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Сфалерит і Пірит$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Сфалерит і Сірка$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)Тетраедрит (Звичайний)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Тетраедрит (Поверхня)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Топаз і Халькоцит$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)Опал і Гранат$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)Редстоун, Кіновар і Рубін$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Сапфір і Альмадін$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)Селітра та Електротин$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)Сірка та Пірит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_beryllium)Смарагд і Берилій$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Солі та Бура$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Сподумен та Лепідоліт$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_silver)Срібло, Гален і Свинець$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)Стеатит, Тальк і Трона$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Сфалерит і Пірит$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Сфалерит і Сірка$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)Тетраедрит (Звичайний)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Тетраедрит (Поверхня)$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)Ураніт & Пітчбленд$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_copper)Халькопірит та Реальгар$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Хроміт і Магнетит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Шеєліт та Вольфрам$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sheldonite)Шелдоніт і Борніт$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Топаз і Халькоцит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)Ураніт & Пітчбленд$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_copper)Халькопірит та Реальгар$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Хроміт і Магнетит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Шеєліт та Вольфрам$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sheldonite)Шелдоніт і Борніт$()$()",
       "type": "patchouli:text"
     },
     {
@@ -974,6 +974,98 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Розплавляється в$(): Чавун$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Рідкість$(): 180$(br)$(thing)Щільність$(): 0.3$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): -32 — 60$(br)$(thing)Розмір$(): 40$(br)$(thing)Висота$(): 9$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Аргиліт, Вапняк, Глинистий сланець, Доломіт, Конгломерат, Крейда, Кременистий сланець",
+      "title": "Гіпс і Кальцит",
+      "type": "patchouli:text",
+      "anchor": "normal_gypsum"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гіпс",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gypsum"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Використовується для$(): Алебастрової (фарбованої) цегли$(br)$(thing)Формула$(): CaS(H₂O)₂O₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кальцит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/calcite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 30%$(br)$(thing)Джерело$(): Кальцію$(br)$(thing)Формула$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Бура",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/borax"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Джерело$(): Натрію, Бору$(br)$(thing)Формула$(): Na₂B₄(H₂O)₁₀O₇",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Земля Фуллера",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/fullers_earth"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Джерело$(): Магнезії$(br)$(thing)Формула$(): MgSi₄H(H₂O)₄O₁₁",
       "type": "patchouli:multiblock"
     },
     {
