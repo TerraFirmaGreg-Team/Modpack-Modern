@@ -97,7 +97,7 @@ function registerTFGFoodRecipes(event) {
 	 * @param {boolean?} isFirmaDynamic 
 	 */
 	function cookingRecipe(id, input, out, fluid, isFirmaDynamic) {
-		return registerFoodRecipe("food_oven", id, 300, 32, "", {
+		return registerFoodRecipe("food_oven", id, 300, GTValues.VA[GTValues.LV], "", {
 			itemInputs: [input],
 			itemOutputs: [out],
 			fluidInputs: (fluid === undefined) ? [] : [fluid],
@@ -599,7 +599,7 @@ function registerTFGFoodRecipes(event) {
 	cookingRecipe("dried_seaweed_b", "tfc:groundcover/seaweed", "tfc:food/dried_seaweed")
 	
 	// Vinegar
-	processorRecipe('vinegar_alcohol', 600, 32, {
+	processorRecipe('vinegar_alcohol', 600, GTValues.VA[GTValues.LV], {
 		circuit: 5,
 		itemInputs: ['#tfc:foods/fruits'],
 		fluidInputs: ['#tfc:alcohols 250'],
