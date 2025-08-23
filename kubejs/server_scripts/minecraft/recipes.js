@@ -797,13 +797,6 @@ const registerMinecraftRecipes = (event) => {
 		B: 'minecraft:brick'
 	}).id('tfc:crafting/bricks')
 
-	event.recipes.gtceu.assembler('minecraft:bricks')
-		.itemInputs('5x minecraft:brick')
-		.inputFluids(Fluid.of('gtceu:concrete', 144))
-		.itemOutputs(`4x minecraft:bricks`)
-		.duration(50)
-		.EUt(7)
-
 	//#endregion
 
 	//#region Выход: Элитра

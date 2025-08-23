@@ -165,6 +165,7 @@ const registerCreatedecoRecipes = (event) => {
 			.itemInputs('5x minecraft:brick', powder)
 			.inputFluids(Fluid.of('gtceu:concrete', 144))
 			.itemOutputs(`4x createdeco:${type}_bricks`)
+			.circuit(3)
 			.duration(50)
 			.EUt(7)
 	});
