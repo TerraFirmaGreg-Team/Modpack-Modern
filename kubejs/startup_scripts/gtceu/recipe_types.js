@@ -23,7 +23,7 @@ const registerGTCEuRecipeTypes = (event) => {
 	event.create('large_solar_panel')
 		.category('generator')
 		.setEUIO('out')
-		.setMaxIOSize(2, 0, 0, 0)
+		.setMaxIOSize(2, 0, 2, 1)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.COOLING)
 
@@ -71,5 +71,29 @@ const registerGTCEuRecipeTypes = (event) => {
 		.setMaxIOSize(0, 1, 1, 6)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_DISTILLATION_TOWER, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.BATH)
+
+	event.create('ostrum_harvester')
+        .category('ostrum_harvester')
+        .setEUIO('in')
+        .setMaxIOSize(0, 1, 1, 0)
+		.setSlotOverlay(false, false, GuiTextures.EXTRACTOR_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.JET_ENGINE)
+
+	event.create('moon_dust_harvester')
+        .category('moon_dust_harvester')
+        .setEUIO('in')
+        .setMaxIOSize(1, 1, 0, 0)
+		.setSlotOverlay(false, false, GuiTextures.DUST_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.JET_ENGINE)
+
+	event.create('extraterrestrial_ore_fabricator')
+        .category('extraterrestrial_ore_fabricator')
+        .setEUIO('in')
+        .setMaxIOSize(0, 6, 2, 0)
+		.setSlotOverlay(false, false, GuiTextures.EXTRACTOR_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRACT, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.BATH)
 
 }

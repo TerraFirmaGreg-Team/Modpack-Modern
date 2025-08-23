@@ -100,6 +100,8 @@ const registerCreateBlockTags = (event) => {
 
 	event.add('create:chest_mounted_storage', '#forge:chests/wooden')
 	event.add('create:chest_mounted_storage', 'framedblocks:framed_chest')
+
+	event.add('create:passive_boiler_heaters', 'minecraft:campfire')
 }
 
 

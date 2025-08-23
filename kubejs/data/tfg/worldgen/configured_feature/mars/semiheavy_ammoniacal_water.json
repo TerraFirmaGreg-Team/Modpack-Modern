@@ -1,7 +1,7 @@
 {
 	"type": "tfc:flood_fill_lake",
 	"config": {
-		"state": "tfg:semiheavy_ammoniacal_water",
+		"state": "tfg:fluid/semiheavy_ammoniacal_water",
 		"replace_fluids": [],
 		"overfill": true
 	}

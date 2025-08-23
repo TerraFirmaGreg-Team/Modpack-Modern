@@ -9,7 +9,6 @@ const registerTFGItems = (event) => {
 
 	registerTFGDeprecatedItems(event)
 	registerTFGFoodItems(event)
-	registerTFGNuclearItems(event)
 
 	// #region Electronics
 	event.create('tfg:unfinished_electron_tube', 'create:sequenced_assembly')
@@ -389,4 +388,7 @@ const registerTFGItems = (event) => {
 	event.create('tfg:photo_cell_t1')
 		.translationKey("item.tfg.basic.photovoltaic.cell")
 		.texture('tfg:item/photo_cell_t1')
+
+	//#endregion
+	
 }
