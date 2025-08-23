@@ -895,23 +895,43 @@ function registerGTCEuMachineRecipes(event) {
 		.duration(10)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.recipes.gtceu.chemical_bath('gtceu:treated_chipboard_composite')
-		.itemInputs('1x tfg:chipboard_composite')
-		.inputFluids(Fluid.of('gtceu:creosote', 50))
-		.itemOutputs('gtceu:treated_wood_dust')
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
-
 	event.recipes.gtceu.compressor('gtceu:wood_mdf')
 		.itemInputs('1x tfg:chipboard_composite')
 		.itemOutputs('gtceu:wood_plate')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.gtceu.compressor('gtceu:treated_wood_mdf')
-		.itemInputs('1x gtceu:treated_wood_dust')
-		.itemOutputs('gtceu:treated_wood_plate')
+	event.recipes.gtceu.chemical_bath('gtceu:treated_chipboard_composite')
+		.itemInputs('1x tfg:chipboard_composite')
+		.inputFluids(Fluid.of('gtceu:creosote', 50))
+		.itemOutputs('tfg:treated_chipboard_composite')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.chemical_bath('gtceu:bath_high_density_treated_fiberboard')
+		.itemInputs('1x gtceu:wood_plate')
+		.inputFluids(Fluid.of('gtceu:creosote', 50))
+		.itemOutputs('tfg:high_density_treated_fiberboard')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.chemical_bath('gtceu:bath_high_density_treated_fiberboard')
+		.itemInputs('1x gtceu:wood_plate')
+		.inputFluids(Fluid.of('gtceu:creosote', 50))
+		.itemOutputs('tfg:high_density_treated_fiberboard')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.compressor('tfg:chemical_treated_wood')
+		.itemInputs('#tfg:wood_dusts')
+		.itemOutputs('gtceu:treated_wood_dust')
 		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.assembler('tfg:resin_circuit_assembler')
+		.itemInputs('gtceu:wood_plate', '2x gtceu:sticky_resin')
+		.itemOutputs('gtceu:resin_circuit_board')
+		.duration(20*10)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	//#region New Casings

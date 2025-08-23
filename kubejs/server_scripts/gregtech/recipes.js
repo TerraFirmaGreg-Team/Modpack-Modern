@@ -128,8 +128,9 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.tfc.barrel_sealed(2000)
 		.outputItem('gtceu:treated_wood_dust')
-		.inputs('tfg:chipboard_composite', TFC.fluidStackIngredient('#forge:creosote', 50))
-		.id('tfg:barrel/treated_chipboard_composite')
+		.inputs('#tfg:wood_dusts', TFC.fluidStackIngredient('#forge:creosote', 50))
+		.id('tfg:barrel/treated_wood_dust')
+		
 	//#endregion
 
 	//#region Выход: Капля резины
@@ -1426,5 +1427,9 @@ const registerGTCEURecipes = (event) => {
 	event.replaceInput({ id: 'gtceu:shaped/large_combustion_engine' }, '#gtceu:circuits/iv', '#gtceu:circuits/ev')
 	event.replaceInput({ id: 'gtceu:shaped/nano_chestplate_advanced' }, '#gtceu:circuits/iv', '#gtceu:circuits/ev')
 	event.replaceInput({ id: 'gtceu:assembler/ev_large_miner' }, '#gtceu:circuits/iv', '#gtceu:circuits/ev')
+
+	//# Circuit Board
+
+	event.replaceInput({ id: 'gtceu:assembler/phenolic_board' }, '#tfg:wood_dusts', 'tfg:high_density_treated_fiberboard')
 	
 }
