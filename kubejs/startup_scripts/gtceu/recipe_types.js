@@ -23,7 +23,7 @@ const registerGTCEuRecipeTypes = (event) => {
 	event.create('large_solar_panel')
 		.category('generator')
 		.setEUIO('out')
-		.setMaxIOSize(2, 0, 0, 0)
+		.setMaxIOSize(2, 0, 2, 1)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.COOLING)
 

@@ -6,6 +6,7 @@
 - Removed the mod that was causing placed entities to sometimes not spawn
 - Removed energy P2P (#1661) @TomPlop @BlueBoat29
 - Removed GT bedrock miners, replaced with a new system for Moon infinites (#1569) @TomPlop
+- Buffed Large Solar Panel MK I so now it has a consistent EV-generating recipe, but halved the output of ad astra solar panels on the moon @TomPlop @Pyritie
 ### Changes
 - Rebalance Large Solar Array to make Mk2 circuit 2 viable, and buffed to LSA Mk3 circuit 2 (#1591) @TomPlop
 - Added mechanical press recipes to weld weak steels @Pyritie
