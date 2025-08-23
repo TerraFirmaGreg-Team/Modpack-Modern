@@ -642,17 +642,6 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_brick_wall')
 	removeMaceratorRecipe(event, 'macerate_flower_pot')
 
-/*	removeMaceratorRecipe(event, 'macerate_treated_wood_fence_gate')
-	removeMaceratorRecipe(event, 'macerate_long_treated_wood_rod')
-	removeMaceratorRecipe(event, 'macerate_treated_wood_normal_fluid_pipe')
-	removeMaceratorRecipe(event, 'macerate_treated_wood_large_fluid_pipe')
-	removeMaceratorRecipe(event, 'macerate_treated_wood_small_fluid_pipe')
-	removeMaceratorRecipe(event, 'macerate_treated_wood_door')
-	removeMaceratorRecipe(event, 'macerate_treated_wood_frame')
-	removeMaceratorRecipe(event, 'macerate_treated_wood_fence')
-	removeMaceratorRecipe(event, 'macerate_treated_wood_boat')
-	removeMaceratorRecipe(event, 'macerate_treated_wood_chest_boat')*/
-
 	removeMaceratorRecipe(event, 'macerate_marble')
 
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
