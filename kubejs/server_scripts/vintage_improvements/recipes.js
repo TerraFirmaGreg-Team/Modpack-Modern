@@ -542,6 +542,9 @@ function registerVintageImprovementsRecipes(event) {
 
 	// #region Vacuum
 
+	// Item to fluids: vacuumizing
+	// Fluids to item: pressurizing
+
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ item: 'tfc:glue' }],
@@ -621,11 +624,12 @@ function registerVintageImprovementsRecipes(event) {
 
 	// Vulc. latex to raw rubber pulp
 	event.custom({
-		type: 'vintageimprovements:vacuumizing',
+		type: 'vintageimprovements:pressurizing',
 		ingredients: [{ fluid: 'tfg:vulcanized_latex', amount: 250 }],
 		results: [{ item: 'gtceu:raw_rubber_dust' }],
+		heatRequirement: "heated",
 		processingTime: 120
-	}).id('tfg:vi/vacuumizing/vulcanized_latex_to_raw_rubber')
+	}).id('tfg:vi/pressurizing/vulcanized_latex_to_raw_rubber')
 
 	// Seed oils
 	event.custom({
@@ -648,6 +652,14 @@ function registerVintageImprovementsRecipes(event) {
 		results: [{ fluid: 'gtceu:seed_oil', amount: 16 }],
 		processingTime: 100
 	}).id('tfg:vi/vacuumizing/seed_oil')
+
+	event.custom({
+		type: 'vintageimprovements:pressurizing',
+		ingredients: [{ fluid: 'tfc:lye', amount: 1000 }],
+		results: [{ item: 'gtceu:sodium_hydroxide_dust' }],
+		heatRequirement: "heated",
+		processingTime: 300
+	}).id('tfg:vi/pressurizing/lye')
 
 	// #endregion
 
