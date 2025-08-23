@@ -895,6 +895,12 @@ function registerGTCEuMachineRecipes(event) {
 		.duration(10)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	event.recipes.gtceu.compressor('gtceu:wood_mdf')
+		.itemInputs('1x tfg:chipboard_composite')
+		.itemOutputs('gtceu:wood_plate')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
+/*
 	event.recipes.gtceu.chemical_bath('gtceu:treated_chipboard_composite')
 		.itemInputs('1x tfg:chipboard_composite')
 		.inputFluids(Fluid.of('gtceu:creosote', 50))
@@ -902,17 +908,11 @@ function registerGTCEuMachineRecipes(event) {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.gtceu.compressor('gtceu:wood_mdf')
-		.itemInputs('1x tfg:chipboard_composite')
-		.itemOutputs('gtceu:wood_plate')
-		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
-
 	event.recipes.gtceu.compressor('gtceu:treated_wood_mdf')
 		.itemInputs('1x gtceu:treated_wood_dust')
 		.itemOutputs('gtceu:treated_wood_plate')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.ULV])*/
 
 	//#region New Casings
 
