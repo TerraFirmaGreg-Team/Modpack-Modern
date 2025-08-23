@@ -18,7 +18,7 @@
       "item": "tfc:metal/propick/copper",
       "title": "Prospector's Pick",
       "link_recipes": false,
-      "text": "If you're looking for ore veins, and you can't find the vein by guessing, it's time to pull out the $(thing)prospector's pick$(). If you are familiar with base prospector's picks in $(thing)TFC$() you may be suprised to learn that they function very differently in $(thing)TerraFirmaGreg$()"
+      "text": "If you're looking for ore veins, and you can't find the vein by guessing, it's time to pull out the $(item)prospector's pick$(). If you are familiar with base prospector's picks in $(thing)TFC$() you may be suprised to learn that they function very differently in $(thing)TerraFirmaGreg$()"
     },
     {
       "type": "patchouli:text",
@@ -29,6 +29,13 @@
       "text": "The prospector's pick can display the following information on use:$(br)$(li)In chat the pick can display the $(thing)total quantity$() of the ore vein, the $(thing)contents$() of the ore vein, and the $(thing)quantity per ore-type$() of the ore vein.$(li)$(thing)colored steel$() prospector's picks can also display either a large X-Ray particle in the $(thing)center$() of an ore vein, or $(thing)paricle's per ore block$()"
     },
     {
+      "type": "patchouli:image",
+      "title": "Prospector View",
+      "images": ["tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"],
+      "border": true,
+      "text": "Using a prospector's pick looks like this. The large $(bold)\"!\"$() mark particle is from per-vein style x-ray. And the smaller ones are from per-block style x-ray."
+    },
+    {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/propick_head_mold",
       "text": "To make a prospector's pick, you can $(l:getting_started/pottery)knapp$() an unfired mold out of clay as shown above."
@@ -36,16 +43,31 @@
     {
       "type": "tfc:heat_recipe",
       "recipe": "tfc:heating/propick_head_mold",
-      "text": "Once the mold has been $(l:getting_started/pottery)knapped$(), it needs to be $(l:mechanics/heating)fired$() to create a $(thing)propick head mold.$()$(br2)To create the tool head, $(l:getting_started/finding_ores#casting)cast$() liquid metal into the mold."
+      "text": "Once the mold has been $(l:getting_started/pottery)knapped$(), it needs to be $(l:mechanics/heating)fired$() to create a $(item)propick head mold.$()$(br2)To create the tool head, $(l:getting_started/finding_ores#casting)cast$() liquid metal into the mold."
     },
     {
       "type": "tfc:anvil_recipe",
       "recipe": "tfc:anvil/copper_propick_head",
-      "text": "A prospector's pick head can also be $(l:mechanics/anvils#working)smithed$() out of an $(thing)ingot$() of any tool metal on an $(l:mechanics/anvils)Anvil$().$(br2)The prospector's pick is then created by crafting the tool head with a stick."
+      "text": "A prospector's pick head can also be $(l:mechanics/anvils#working)smithed$() out of an $(item)ingot$() of any tool metal on an $(l:mechanics/anvils)Anvil$().$(br2)The prospector's pick is then created by crafting the tool head with a stick."
     },
     {
       "type": "patchouli:text",
       "text": "The majority of the stats and charecteristics of the prospector's picks can be adjustable in your server config file."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "prospector",
+      "item": "gtceu:prospector.lv",
+      "title": "Digital Ore Prospector's",
+      "link_recipes": false,
+      "text": "Technology is now! And with it comes new ways to find your ore veins!$(br)$(item)Ore Prospector's$() are $(thing)GregTech's$() solution to finding ore veins and fluid deposits in your world. The size and capabilities of the ore prospectors are determined by the $(#ff1100)voltage tier$()."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Ore Prospector",
+      "images": ["tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"],
+      "border": true,
+      "text": "An example of what you may see using the $(#e373ff)LuV ore prospector$()."
     }
   ],
   "read_by_default": true,
@@ -58,6 +80,9 @@
     "tfc:metal/propick/steel": 2,
     "tfc:metal/propick/black_steel": 2,
     "tfc:metal/propick/blue_steel": 2,
-    "tfc:metal/propick/red_steel": 2
+    "tfc:metal/propick/red_steel": 2,
+    "gtceu:prospector.lv": 10,
+    "gtceu:prospector.hv": 10,
+    "gtceu:prospector.luv": 10
   }
 }
