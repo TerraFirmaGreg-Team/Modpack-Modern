@@ -62,7 +62,6 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:harvester', 'tfg:harvest_basket')
 	event.add('tfg:harvester', 'tfg:aluminium_harvest_basket')
 
-	event.removeAll('tfc:propicks')
 	event.add('tfg:tools/ore_prospectors/copper', 'tfc:metal/propick/copper')
 	event.add('tfg:tools/ore_prospectors/bronze', 'tfc:metal/propick/bronze')
 	event.add('tfg:tools/ore_prospectors/bronze', 'tfc:metal/propick/bismuth_bronze')

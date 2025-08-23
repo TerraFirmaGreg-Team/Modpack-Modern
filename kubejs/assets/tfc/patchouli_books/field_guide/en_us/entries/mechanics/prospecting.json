@@ -18,7 +18,15 @@
       "item": "tfc:metal/propick/copper",
       "title": "Prospector's Pick",
       "link_recipes": false,
-      "text": "If you're looking for metal ores or mineral veins (which have no nuggets), and you can't find the vein by guessing, it's time to pull out the $(thing)prospector's pick$(). It searches the 25x25x25 area centered on the block clicked, and reports to the action bar the amount and type of ore located."
+      "text": "If you're looking for metal ores or mineral veins (which have no nuggets), and you can't find the vein by guessing, it's time to pull out the $(thing)prospector's pick$(). If you are familiar with base prospector's picks in $(thing)TFC$() you may be suprised to learn that they function very differently in $(thing)TerraFirmaGreg$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Right-clicking a prospector's pick in $(thing)TFG$() will cast a search ray in your views direction. The rays width and depth is dependent on the tier of the pick noted in its tooltips. Depending on the tier of the prospector's pick can also give you a count of the ore quantities and even display an $(thing)X-Ray$() indicator of the ore vein."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The prospector's pick can display the following information on use:$(br)$(li)In chat the pick can display the $(thing)total quantity$() of the ore vein, the $(thing)contents$() of the ore vein, and the $(thing)quantity per ore-type$() of the ore vein.$(li)$(thing)colored steel$() prospector's picks can also display either a large X-Ray particle in the $(thing)center$() of an ore vein, or $(thing)paricle's per ore block$()"
     },
     {
       "type": "tfc:knapping_recipe",
@@ -37,11 +45,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "The prospector's pick will never report finding something when nothing is actually there. However, it may incorrectly say nothing is there when a vein is in range. Higher tier tools will reduce or eliminate these false negatives.$(br2)Prospector's picks at the same tier give identical results when used on the same block unless ores were removed.$(br2)If the prospector's pick finds multiple ores nearby, it will only report one."
-    },
-    {
-      "type": "patchouli:text",
-      "text": "Right-clicking a Prospector's Pick on a block will report finding one of these possible results:$(br)$(li)Nothing (may be false)$(li)Traces$(li)A Small Sample$(li)A Medium Sample$(li)A Large Sample$(li)A Very Large Sample$(br2)Very large samples indicate at least eighty and potentially many more blocks."
+      "text": "The majority of the stats and charecteristics of the prospector's picks can be adjustable in your server config file."
     }
   ],
   "read_by_default": true,
