@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "You remembered where you picked up those $(l:getting_started/finding_ores)small metal nuggets$(), right? Finding additional ores may require extensive exploration and mining. You should become very familiar with $(l:tfg_ores/index)ores and minerals$(). If you need a specific resource, you must find the rock type it spawns in either under your feet or across the world."
+      "text": "You remembered where you picked up those $(l:getting_started/finding_ores)small metal nuggets$(), right? Finding additional ores may require extensive exploration and mining. You should become very familiar with $(l:tfg_ores/earth_ore_index)ores and minerals$(). If you need a specific resource, you must find the rock type it spawns in either under your feet or across the world."
     },
     {
       "type": "patchouli:text",
