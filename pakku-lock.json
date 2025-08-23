@@ -749,7 +749,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "alltheleaks-1.0.0+1.20.1-forge.jar",
+                    "file_name": "alltheleaks-1.0.1+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -757,16 +757,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6874/194/alltheleaks-1.0.0+1.20.1-forge.jar",
-                    "id": "6874194",
+                    "url": "https://edge.forgecdn.net/files/6916/160/alltheleaks-1.0.1+1.20.1-forge.jar",
+                    "id": "6916160",
                     "parent_id": "1091339",
                     "hashes": {
-                        "sha1": "24e32ff985ceac5ef964d49b76764ed6c700ac2e",
-                        "md5": "baa29b8a4c714ea6bbc23a6cfd36c778"
+                        "sha1": "13dda9865bb6ecff4f9cbea148f71215172ebe73",
+                        "md5": "3f02888ca792a2daae94d68ba71edb18"
                     },
                     "required_dependencies": [],
-                    "size": 1134422,
-                    "date_published": "2025-08-11T09:03:47.890Z"
+                    "size": 1134589,
+                    "date_published": "2025-08-22T19:39:22.777Z"
                 }
             ]
         },
@@ -8484,8 +8484,30 @@
             },
             "files": [
                 {
+                    "type": "modrinth",
+                    "file_name": "lootr-forge-1.20-0.7.35.92.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/EltpO5cN/versions/9viyYois/lootr-forge-1.20-0.7.35.92.jar",
+                    "id": "9viyYois",
+                    "parent_id": "EltpO5cN",
+                    "hashes": {
+                        "sha512": "903ae0ba7077c86719399c32b4dba5726ce78c19f5eed8bb21acdbe1350cd3572fa2f1278a6b04d352b45ea12284bc97c24e77eab97500a44c0835e92288a0a2",
+                        "sha1": "6e0c4289f06552c89bfe63b6d43a0609fecd6935"
+                    },
+                    "required_dependencies": [],
+                    "size": 458609,
+                    "date_published": "2025-08-22T02:15:11.750259Z"
+                },
+                {
                     "type": "curseforge",
-                    "file_name": "lootr-forge-1.20-0.7.35.91.jar",
+                    "file_name": "lootr-forge-1.20-0.7.35.92.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -8494,40 +8516,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6330/326/lootr-forge-1.20-0.7.35.91.jar",
-                    "id": "6330326",
+                    "url": "https://edge.forgecdn.net/files/6913/496/lootr-forge-1.20-0.7.35.92.jar",
+                    "id": "6913496",
                     "parent_id": "361276",
                     "hashes": {
-                        "sha1": "4175b32e3bc25b05c45cc84f70b585279a871d3c",
-                        "md5": "512ee49d21782875b33513fb074eb098"
+                        "sha1": "6e0c4289f06552c89bfe63b6d43a0609fecd6935",
+                        "md5": "46f8cc588def48fc8971cdaae64b40ac"
                     },
                     "required_dependencies": [],
-                    "size": 458532,
-                    "date_published": "2025-03-22T03:44:13.050Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "lootr-forge-1.20-0.7.35.91.jar",
-                    "mc_versions": [
-                        "1.19.3",
-                        "1.19.4",
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/EltpO5cN/versions/HmhkyU8X/lootr-forge-1.20-0.7.35.91.jar",
-                    "id": "HmhkyU8X",
-                    "parent_id": "EltpO5cN",
-                    "hashes": {
-                        "sha512": "9b576ec6008a5c86ce9ea218285bc133f49e9eaf8f4b854fa49170a9cc3c8de028b236f2e563493405732277fd1d2909520d5961076b3ddbffcb0c7c539b4826",
-                        "sha1": "4175b32e3bc25b05c45cc84f70b585279a871d3c"
-                    },
-                    "required_dependencies": [],
-                    "size": 458532,
-                    "date_published": "2025-07-15T09:13:32.531920Z"
+                    "size": 458609,
+                    "date_published": "2025-08-22T02:12:46.677Z"
                 }
             ]
         },
@@ -10133,27 +10131,6 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "particular-1.20.1-Forge-1.2.4.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6603/252/particular-1.20.1-Forge-1.2.4.jar",
-                    "id": "6603252",
-                    "parent_id": "1219053",
-                    "hashes": {
-                        "sha1": "4dc0cfd572151816c939d2896ad8f13838cb7cf6",
-                        "md5": "ce29494f89ec662a19a954fa054ad49b"
-                    },
-                    "required_dependencies": [],
-                    "size": 421834,
-                    "date_published": "2025-05-31T23:14:51.347Z"
-                },
-                {
                     "type": "modrinth",
                     "file_name": "particular-1.20.1-Forge-1.2.4.jar",
                     "mc_versions": [
@@ -10173,6 +10150,27 @@
                     "required_dependencies": [],
                     "size": 421834,
                     "date_published": "2025-06-06T19:00:04.136808Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "particular-1.20.1-Forge-1.2.7.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6916/904/particular-1.20.1-Forge-1.2.7.jar",
+                    "id": "6916904",
+                    "parent_id": "1219053",
+                    "hashes": {
+                        "sha1": "db04a6b14b7fb219701c50907986384bca363298",
+                        "md5": "de5105497a7fa79ab099a592879ef260"
+                    },
+                    "required_dependencies": [],
+                    "size": 420332,
+                    "date_published": "2025-08-22T23:10:47.973Z"
                 }
             ]
         },
@@ -13236,33 +13234,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.10.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6872/582/TerraFirmaGreg-Core-Modern-0.7.10.jar",
-                    "id": "6872582",
-                    "parent_id": "513402",
-                    "hashes": {
-                        "sha1": "9a5c98fcaef9d12fdc1a86035ebf4f9170d1cb2e",
-                        "md5": "ca805dc57f89624bf9e53e4f9babda0a"
-                    },
-                    "required_dependencies": [
-                        "890405",
-                        "302973"
-                    ],
-                    "size": 515916,
-                    "date_published": "2025-08-10T20:34:53.927Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.10.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.11.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13271,19 +13244,44 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/8m3psJno/TerraFirmaGreg-Core-Modern-0.7.10.jar",
-                    "id": "8m3psJno",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/oiDw0Fhg/TerraFirmaGreg-Core-Modern-0.7.11.jar",
+                    "id": "oiDw0Fhg",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "bb8b2907e7dcf1e630aac76575cefc04cc594b6da0aeafa76bed5a5838677720bddf2b134d3480e06e850ff041f3963b1d22803c8ac873f315e32b698f01ef29",
-                        "sha1": "9a5c98fcaef9d12fdc1a86035ebf4f9170d1cb2e"
+                        "sha512": "cee41d5314832cc92ce25e8c33298e15bf478907739d3a932b0e96e79b741e1314c67fae538997066b06e47cf079b13117073aaab6c946e0311581d3b9f2bace",
+                        "sha1": "b69f0c4aadf8edfb7b3e3864af70d35d84a45a77"
                     },
                     "required_dependencies": [
                         "JaCEZUhg",
                         "7tG215v7"
                     ],
-                    "size": 515916,
-                    "date_published": "2025-08-10T20:34:55.642076Z"
+                    "size": 584412,
+                    "date_published": "2025-08-23T12:10:49.232137Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.11.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6918/492/TerraFirmaGreg-Core-Modern-0.7.11.jar",
+                    "id": "6918492",
+                    "parent_id": "513402",
+                    "hashes": {
+                        "sha1": "b69f0c4aadf8edfb7b3e3864af70d35d84a45a77",
+                        "md5": "8d41611089b9a9ad0e018cbf93f8b680"
+                    },
+                    "required_dependencies": [
+                        "890405",
+                        "302973"
+                    ],
+                    "size": 584412,
+                    "date_published": "2025-08-23T12:10:47.487Z"
                 }
             ]
         },

@@ -6,6 +6,7 @@
 - Removed the mod that was causing placed entities to sometimes not spawn
 - Removed energy P2P (#1661) @TomPlop @BlueBoat29
 - Removed GT bedrock miners, replaced with a new system for Moon infinites (#1569) @TomPlop
+- Buffed Large Solar Panel MK I so now it has a consistent EV-generating recipe, but halved the output of ad astra solar panels on the moon @TomPlop @Pyritie
 ### Changes
 - Rebalance Large Solar Array to make Mk2 circuit 2 viable, and buffed to LSA Mk3 circuit 2 (#1591) @TomPlop
 - Added mechanical press recipes to weld weak steels @Pyritie
@@ -28,6 +29,8 @@
 - Added a new ore vein to all dimensions for gypsum, calcite, borax, and fuller's earth @Pyritie
 - Added some more moon ore veins for copper, tin, gold, aluminium.. nothing exciting @Pyritie
 - Changed the recipe for the infinity construction wand @Pyritie
+- Rebalanced the liquid blaze burner fuel recipes to be more in-line with GregTech generation @Pyritie
+- Changed the recipes for the circuit boards required for the electron tube and vacuum tube, and phenolic circuit board @TomPlop
 ### Bug fixes
 - Fixed moon mob spawning light levels, so now they need a light level of 0 instead of 11 (#1587) @NINAustinFett
 - Fixed wrong output amount of mortaring soybean paste (#1607) @TomPlop
@@ -45,6 +48,7 @@
 - Added more missing food processor recipes (#1632, #1638) @Pyritie
 - Fixed a few stuck quests (#1667, #1666) @Wicpar
 - Fixed inconsistent quern and macerator recipes for small tfc ores (#1672) @Pyritie
+- Fixed recipe conflict with ceramic bricks and create deco colored bricks @Pyritie
 
 ## [0.10.9] - 10-08-2025
 ### Changes

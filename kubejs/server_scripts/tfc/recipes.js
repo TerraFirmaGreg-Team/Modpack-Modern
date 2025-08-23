@@ -208,12 +208,6 @@ const registerTFCRecipes = (event) => {
 	generateMixerRecipe(event, '#forge:dusts/sodium_hydroxide', "#tfg:clean_water 1000",
 		[], null, Fluid.of('tfc:lye', 1000), 100, 2, 64, 'lye_from_sodium_hydroxide')
 
-	event.recipes.firmalife.vat()
-		.inputFluid(Fluid.of('tfc:lye', 1000))
-		.outputItem('gtceu:sodium_hydroxide_dust')
-		.length(100)
-		.temperature(80)
-
 	event.recipes.gtceu.distillery('lye_to_sodium_hydroxide')
 		.inputFluids('tfc:lye 1000')
 		.itemOutputs('gtceu:sodium_hydroxide_dust')
