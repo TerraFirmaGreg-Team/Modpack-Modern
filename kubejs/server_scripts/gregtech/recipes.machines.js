@@ -915,10 +915,10 @@ function registerGTCEuMachineRecipes(event) {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.gtceu.chemical_bath('gtceu:bath_high_density_treated_fiberboard')
-		.itemInputs('1x gtceu:wood_plate')
+	event.recipes.gtceu.chemical_bath('gtceu:bath_treated_chipboard_composite')
+		.itemInputs('1x gtceu:chipboard_composite')
 		.inputFluids(Fluid.of('gtceu:creosote', 50))
-		.itemOutputs('tfg:high_density_treated_fiberboard')
+		.itemOutputs('tfg:treated_chipboard_composite')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
