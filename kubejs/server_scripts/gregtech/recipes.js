@@ -1431,13 +1431,5 @@ const registerGTCEURecipes = (event) => {
 	//# Circuit Board
 
 	event.replaceInput({ id: 'gtceu:assembler/phenolic_board' }, '#tfg:wood_dusts', 'tfg:high_density_treated_fiberboard')
-	event.recipes.gtceu.assembler('tfg:assembler/resin_circuit_board')
-		.itemInputs(
-			'gtceu:luv_machine_hull',
-			'2x gtceu:luv_sensor')
-		.inputFluids(Fluid.of('gtceu:glue', 200))
-		.itemOutputs('gtceu:me_pattern_buffer_proxy')
-		.duration(30*20)
-		.EUt(GTValues.VA[GTValues.ZPM])
 	
 }

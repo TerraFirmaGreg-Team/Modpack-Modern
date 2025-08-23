@@ -58,8 +58,6 @@ const registerGTCEUItemTags = (event) => {
 
 	event.remove('minecraft:planks', 'gtceu:wood_plate')
 
-	'gtceu:wood_plate'
-
 	event.add('tfg:sugars', 'minecraft:sugar')
 	event.add('tfg:sugars', 'afc:birch_sugar')
 	event.add('tfg:sugars', 'afc:maple_sugar')
