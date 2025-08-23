@@ -130,7 +130,6 @@ const registerTFCItemTags = (event) => {
 	event.add('tfc:steam_bloomery_basic_fuels', 'minecraft:coal')
 	event.add('tfc:steam_bloomery_basic_fuels', 'minecraft:charcoal')
 	event.add('tfc:steam_bloomery_basic_fuels', 'gtceu:rich_raw_coal')
-	event.add('tfc:steam_bloomery_basic_fuels', 'gtceu:rich_raw_coal')
 	event.add('tfc:steam_bloomery_basic_fuels', 'gtceu:raw_coal')
 	event.add('tfc:steam_bloomery_basic_fuels', 'gtceu:poor_raw_coal')
 	event.add('tfc:steam_bloomery_basic_fuels', 'gtceu:coal_dust')
