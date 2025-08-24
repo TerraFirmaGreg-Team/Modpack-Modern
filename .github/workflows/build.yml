@@ -357,7 +357,7 @@ jobs:
           mkdir -p .pakku/multimc-overrides/flame
           mkdir -p .pakku/multimc-overrides/mods
 
-          cp -vf .pakku/multimc-overrides ./build/.cache/multimc
+          mv -vf .pakku/multimc-overrides ./build/.cache/multimc
           cp -vf ./build/.cache/curseforge/manifest.json ./build/.cache/multimc/flame/manifest.json
           cp -vf ./build/.cache/curseforge/overrides ./build/.cache/multimc/.minecraft
           cp -vf ./mods ./build/.cache/multimc/.minecraft/mods
@@ -569,7 +569,7 @@ jobs:
             **Release Type**: `${{ needs.info.outputs.release_type }}`
             **Game Version**: `${{ needs.info.outputs.mc_version }}`
 
-            [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-modern/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
+            :curseforge_logo: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-modern/files/${{ needs.release-curseforge.outputs.id }}) • :github_logo: [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
             ```markdown
             ${{ steps.truncated.outputs.text  }}
             - ...```
