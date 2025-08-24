@@ -284,8 +284,8 @@ jobs:
 
             ${{ needs.info.outputs.changelog }}
 
-  build-modpack:
-    name: 📦 Build Modpack
+  build-project:
+    name: 📦 Build Project
     needs: [info]
     runs-on: ubuntu-latest
     steps:
@@ -357,8 +357,7 @@ jobs:
 
       - name: 📁 Preparing the artifact multimc
         run: |
-          mkdir -p .pakku/multimc-overrides/flame
-          mkdir -p .pakku/multimc-overrides/mods
+          mkdir -p .pakku/multimc-overrides/flame .pakku/multimc-overrides/mods
 
           mv -vf .pakku/multimc-overrides ./build/multimc
 
@@ -391,7 +390,7 @@ jobs:
 
   release-github:
     name: 🚀 Release to GitHub
-    needs: [info, build-modpack]
+    needs: [info, build-project]
     runs-on: ubuntu-latest
     if: ${{ needs.info.outputs.make_release == 'true' }}
     outputs:
@@ -454,7 +453,7 @@ jobs:
 
   release-curseforge:
     name: 🚀 Release to CurseForge
-    needs: [info, build-modpack, release-github]
+    needs: [info, build-project, release-github]
     runs-on: ubuntu-latest
     if: ${{ needs.info.outputs.make_release == 'true' }}
     outputs:
@@ -504,7 +503,7 @@ jobs:
 
   release-modrinth:
       name: 🚀 Release to Modrinth
-      needs: [info, build-modpack, release-github]
+      needs: [info, build-project, release-github]
       runs-on: ubuntu-latest
       if: false
       outputs:
@@ -552,7 +551,7 @@ jobs:
 
   discord-message:
     name: 📱 Discord Message
-    needs: [info, release-curseforge, release-github]
+    needs: [info, release-github, release-curseforge]
     runs-on: ubuntu-latest
     steps:
       - name: ✂️ Truncate Changelog
