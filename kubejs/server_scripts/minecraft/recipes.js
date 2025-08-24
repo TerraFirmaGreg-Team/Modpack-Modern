@@ -147,14 +147,21 @@ const registerMinecraftRecipes = (event) => {
 	event.recipes.gtceu.chemical_bath('paper_from_papyrus_distilled')
 		.itemInputs('tfc:papyrus')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 100))
-		.itemOutputs('minecraft:paper')
+		.itemOutputs('4x tfc:soaked_papyrus_strip')
 		.duration(100)
 		.EUt(7)
 
 	event.recipes.gtceu.chemical_bath('paper_from_papyrus')
 		.itemInputs('tfc:papyrus')
 		.inputFluids("#tfg:clean_water 100")
+		.itemOutputs('4x tfc:soaked_papyrus_strip')
+		.duration(100)
+		.EUt(7)
+
+	event.recipes.gtceu.assembler('papyrus_strips')
+		.itemInputs('4x tfc:soaked_papyrus_strip')
 		.itemOutputs('minecraft:paper')
+		.circuit(1)
 		.duration(100)
 		.EUt(7)
 
@@ -287,34 +294,6 @@ const registerMinecraftRecipes = (event) => {
 		.EUt(7).duration(100)
 
 	//#endregion
-
-	//#region Выход: Золотое яблоко
-
-	event.recipes.gtceu.chemical_reactor('golden_apple')
-		.itemInputs('tfc:food/green_apple', '8x #forge:ingots/gold')
-		.itemOutputs('minecraft:golden_apple')
-		.duration(50)
-		.EUt(30)
-
-	event.recipes.gtceu.large_chemical_reactor('golden_apple')
-		.itemInputs('tfc:food/green_apple', '8x #forge:ingots/gold')
-		.itemOutputs('minecraft:golden_apple')
-		.duration(50)
-		.EUt(30)
-
-	event.recipes.gtceu.chemical_reactor('golden_apple_1')
-		.itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
-		.itemOutputs('minecraft:golden_apple')
-		.duration(50)
-		.EUt(30)
-
-    event.recipes.gtceu.large_chemical_reactor('golden_apple_1')             
-        .itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
-        .itemOutputs('minecraft:golden_apple')
-        .duration(50)
-        .EUt(30)
-
-    //#endregion
 
 	//#region Выход: Компаратор
 
@@ -818,13 +797,6 @@ const registerMinecraftRecipes = (event) => {
 		B: 'minecraft:brick'
 	}).id('tfc:crafting/bricks')
 
-	event.recipes.gtceu.assembler('minecraft:bricks')
-		.itemInputs('5x minecraft:brick')
-		.inputFluids(Fluid.of('gtceu:concrete', 144))
-		.itemOutputs(`4x minecraft:bricks`)
-		.duration(50)
-		.EUt(7)
-
 	//#endregion
 
 	//#region Выход: Элитра
@@ -1143,4 +1115,17 @@ const registerMinecraftRecipes = (event) => {
 			.duration(50)
 			.EUt(2)
 	})
+
+	// Greenhouse
+	generateGreenHouseRecipe(event, '8x minecraft:bamboo', '#tfc:any_fresh_water', 4000,
+		'64x minecraft:bamboo', 'bamboo', 'minecraft:overworld', 8, 
+		'8x minecraft:bamboo', GTValues.VA[GTValues.LV])
+
+	generateGreenHouseRecipe(event, '4x minecraft:red_mushroom', '#tfc:any_fresh_water', 4000,
+		'24x minecraft:red_mushroom', 'red_mushroom', 'minecraft:the_nether', 8, 
+		'4x minecraft:red_mushroom', GTValues.VA[GTValues.LV])
+
+	generateGreenHouseRecipe(event, '4x minecraft:brown_mushroom', '#tfc:any_fresh_water', 4000,
+		'24x minecraft:brown_mushroom', 'brown_mushroom', 'minecraft:the_nether', 8, 
+		'4x minecraft:brown_mushroom', GTValues.VA[GTValues.LV])
 }

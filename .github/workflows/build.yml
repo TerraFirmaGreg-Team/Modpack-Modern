@@ -32,7 +32,7 @@ jobs:
     
     steps:
       - name: 📦 Checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
         with:
           fetch-depth: 0
         
@@ -215,7 +215,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
         with:
           fetch-depth: 0
 
@@ -252,7 +252,7 @@ jobs:
 
       - name: 🔍 Create Pull Request if tag not found
         if: ${{ steps.check_existing_pr.outputs.exists == 'false' }}
-        uses: devops-infra/action-pull-request@v0.6.0
+        uses: devops-infra/action-pull-request@v0.6.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_branch: dev
@@ -275,7 +275,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
 
       - name: 🔄 Replace strings
         shell: bash
@@ -287,7 +287,7 @@ jobs:
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       - name: 📝 Cache pakku
-        uses: actions/cache@v4.2.3
+        uses: actions/cache@v4.2.4
         id: cache
         with:
           path: build/.cache
@@ -341,7 +341,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
 
       - name: 🔄 Replace strings
         shell: bash
@@ -354,7 +354,7 @@ jobs:
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
 
       - name: 📝 Cache pakku
-        uses: actions/cache@v4.2.3
+        uses: actions/cache@v4.2.4
         id: cache
         with:
           path: build/.cache
@@ -396,10 +396,10 @@ jobs:
 
     steps:
       - name: 📦 Checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
 
       - name: 📦 Download artifact
-        uses: actions/download-artifact@v4.3.0
+        uses: actions/download-artifact@v5.0.0
         with:
           merge-multiple: true
 
@@ -473,7 +473,7 @@ jobs:
           fi  
 
       - name: 📦 Download artifact
-        uses: actions/download-artifact@v4.3.0
+        uses: actions/download-artifact@v5.0.0
         with:
           merge-multiple: true
 
@@ -523,7 +523,7 @@ jobs:
             fi  
     
         - name: 📦 Download artifact
-          uses: actions/download-artifact@v4.3.0
+          uses: actions/download-artifact@v5.0.0
           with:
             merge-multiple: true
 

@@ -480,8 +480,29 @@
 					type: "item"
 				}
 				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfchotornot:tongs/wood"
+						tag: {
+							Damage: 0
+						}
+					}
 					id: "45EFF5E3C4FB5D77"
-					item: "firmalife:peel"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfchotornot:insulating)"
+						}
+					}
+					optional_task: true
+					title: "Any #tfchotornot:insulating"
 					type: "item"
 				}
 			]
@@ -1975,7 +1996,7 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(tfclunchbox:lunchbox)item(tfclunchbox:cooling_lunchbox))"
+							"ftbfiltersystem:filter": "or(item(tfclunchbox:lunchbox)item(tfclunchbox:cooling_lunchbox)item(tfclunchbox:electric_lunchbox))"
 						}
 					}
 					title: "{quests.tfg_tips.lunchbox.task.1}"

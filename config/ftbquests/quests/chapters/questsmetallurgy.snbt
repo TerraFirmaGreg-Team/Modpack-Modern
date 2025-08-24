@@ -308,6 +308,7 @@
 					}
 					id: "tfc:kaolin_clay"
 				}
+				match_nbt: false
 				type: "item"
 				weak_nbt_match: true
 			}]
@@ -630,11 +631,9 @@
 			id: "5792DDAA82895E67"
 			subtitle: "{quests.metal_age.red_blu.subtitle}"
 			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: "gtceu:overworld_marker"
-				id: "720D64916D1E3892"
-				title: "{quests.stone_age.temperature.task}"
-				type: "dimension"
+				id: "63890641DCD6659F"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
 			}]
 			title: "{quests.metal_age.red_blu.title}"
 			x: 24.0d
@@ -661,6 +660,7 @@
 				"5088768AAA28FCBA"
 				"6D04BAC5B215F90F"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.redblu_anvil.desc}"]
 			id: "56CA2EB7812529C5"
 			shape: "octagon"
@@ -967,7 +967,9 @@
 						}
 						id: "tfc:metal/ingot/weak_red_steel"
 					}
+					match_nbt: false
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "2A068958F7451FFB"
@@ -981,7 +983,9 @@
 						}
 						id: "tfc:metal/ingot/black_steel"
 					}
+					match_nbt: false
 					type: "item"
+					weak_nbt_match: true
 				}
 			]
 			title: "{quests.metal_age.highcarb_red_steel.title}"
@@ -1158,7 +1162,9 @@
 						}
 						id: "tfc:metal/ingot/weak_blue_steel"
 					}
+					match_nbt: false
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "2755C292E4E19530"
@@ -1172,7 +1178,9 @@
 						}
 						id: "tfc:metal/ingot/black_steel"
 					}
+					match_nbt: false
 					type: "item"
+					weak_nbt_match: true
 				}
 			]
 			title: "{quests.metal_age.highcarb_blu_steel.title}"

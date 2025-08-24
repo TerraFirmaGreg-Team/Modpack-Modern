@@ -51,6 +51,7 @@ ServerEvents.tags('item', event => {
 	registerTFGItemTags(event)
     registerTFCLunchboxItemTags(event)
 	registerVintageImprovementsItemTags(event)
+	registerWABItemTags(event)
 })
 
 /**
@@ -85,6 +86,7 @@ ServerEvents.tags('block', event => {
 	registerTFCBlockTags(event)
 	registerTFGBlockTags(event)
 	registerVintageImprovementsBlockTags(event)
+	registerWABBlockTags(event)
 })
 
 /**
@@ -101,6 +103,10 @@ ServerEvents.tags('fluid', event => {
 	registerTFCFluidTags(event)
 	registerTFGFluidTags(event)
 	registerVintageImprovementsFluidTags(event)
+})
+
+ServerEvents.tags('worldgen/configured_feature', event => {
+	registerTFGConfiguredFeatures(event)
 })
 
 /**
@@ -156,6 +162,7 @@ TFCEvents.data(event => {
 	registerTFCDataForTFCLunchbox(event)
 	registerTFCDataForTFG(event)
 	registerTFCDataForWaterFlasks(event)
+	registerWABFoodData(event)
 })
 
 /**
@@ -178,10 +185,6 @@ LootJS.modifiers((event) => {
  */
 GTCEuServerEvents.oreVeins(event => {
 	event.removeAll()
-})
-
-GTCEuServerEvents.bedrockOreVeins(event => {
-	registerGTCEUBedrockOreVeins(event)
 })
 
 GTCEuServerEvents.fluidVeins(event => {
@@ -259,6 +262,7 @@ ServerEvents.recipes(event => {
 	registerTreeTapRecipes(event)
 	registerVintageImprovementsRecipes(event)
 	registerWaterFlasksRecipes(event)
+	registerWABRecipes(event)
 })
 
 TaCZServerEvents.gunIndexLoad((event) => {

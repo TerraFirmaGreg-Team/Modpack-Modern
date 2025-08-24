@@ -1,6 +1,8 @@
 {
 	"carvers": {
-		"air": []
+		"air": [
+			"tfg:mars_cave"
+		]
 	},
 	"downfall": 0.0,
 	"effects": {
@@ -10,12 +12,6 @@
 			"offset": 2.0,
 			"sound": "minecraft:ambient.cave",
 			"tick_delay": 6000
-		},
-		"particle": {
-			"options": {
-				"type": "minecraft:crimson_spore"
-			},
-			"probability": 0.014
 		},
 		"sky_color": 15117444,
 		"water_color": 4159204,
@@ -56,29 +52,64 @@
 	"has_precipitation": false,
 	"spawn_costs": {
 		"endermanoverhaul:crimson_forest_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"endermanoverhaul:warped_forest_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"endermanoverhaul:badlands_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"minecraft:enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
-		"creature": [],
+		"creature": [
+			{
+				"type": "wan_ancient_beasts:crusher",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "wan_ancient_beasts:glider",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 20
+			}
+		],
 		"misc": [],
 		"monster": [
+			{
+				"type": "endermanoverhaul:crimson_forest_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "endermanoverhaul:warped_forest_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
 			{
 				"type": "endermanoverhaul:badlands_enderman",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "minecraft:enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
 			}
 		],
 		"underground_water_creature": [],

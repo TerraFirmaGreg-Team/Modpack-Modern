@@ -674,6 +674,7 @@
 							"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:rubber\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:rubber\"}})item(gtceu:rubber_bucket))"
 						}
 					}
+					title: "{quests.low_voltage.lv_chemical_reactor.task}"
 					type: "item"
 				}
 			]

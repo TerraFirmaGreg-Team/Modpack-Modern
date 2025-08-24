@@ -520,7 +520,7 @@ function registerVintageImprovementsRecipes(event) {
 			// Skip glass too
 			if (r.inputs.item[0].content.ingredient.item === "gtceu:glass_dust") return
 			// And this
-			if (r.inputs.item[0].content.ingredient.item === "gtceu:damascus_steel_ingot") return
+			if (r.inputs.item[0].content.ingredient.tag === "#forge:ingots/damascus_steel") return
 
 			let input = r.inputs.item[0].content.ingredient;
 			input.count = r.inputs.item[0].content.count;
@@ -541,6 +541,9 @@ function registerVintageImprovementsRecipes(event) {
 	// #endregion
 
 	// #region Vacuum
+
+	// Item to fluids: vacuumizing
+	// Fluids to item: pressurizing
 
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
@@ -621,11 +624,12 @@ function registerVintageImprovementsRecipes(event) {
 
 	// Vulc. latex to raw rubber pulp
 	event.custom({
-		type: 'vintageimprovements:vacuumizing',
+		type: 'vintageimprovements:pressurizing',
 		ingredients: [{ fluid: 'tfg:vulcanized_latex', amount: 250 }],
 		results: [{ item: 'gtceu:raw_rubber_dust' }],
+		heatRequirement: "heated",
 		processingTime: 120
-	}).id('tfg:vi/vacuumizing/vulcanized_latex_to_raw_rubber')
+	}).id('tfg:vi/pressurizing/vulcanized_latex_to_raw_rubber')
 
 	// Seed oils
 	event.custom({
@@ -648,6 +652,14 @@ function registerVintageImprovementsRecipes(event) {
 		results: [{ fluid: 'gtceu:seed_oil', amount: 16 }],
 		processingTime: 100
 	}).id('tfg:vi/vacuumizing/seed_oil')
+
+	event.custom({
+		type: 'vintageimprovements:pressurizing',
+		ingredients: [{ fluid: 'tfc:lye', amount: 1000 }],
+		results: [{ item: 'gtceu:sodium_hydroxide_dust' }],
+		heatRequirement: "heated",
+		processingTime: 300
+	}).id('tfg:vi/pressurizing/lye')
 
 	// #endregion
 
@@ -700,6 +712,30 @@ function registerVintageImprovementsRecipes(event) {
 		results: [{ item: 'tfc:ceramic/unfired_fire_brick' }],
 		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 	}).id(`tfg:vi/curving/fire_brick`)
+
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ tag: 'forge:ingots/copper' }],
+		itemAsHead: 'gtceu:bottle_extruder_mold',
+		results: [{ item: 'afc:tree_tap' }],
+		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/curving/tree_tap`)
+
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ tag: 'forge:plates/copper' }],
+		itemAsHead: 'tfg:small_casing_extruder_mold',
+		results: [{ item: 'firmalife:sprinkler' }],
+		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/curving/sprinkler`)
+
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ tag: 'forge:double_plates/wrought_iron' }],
+		itemAsHead: 'tfg:large_casing_extruder_mold',
+		results: [{ item: 'tfc:wrought_iron_grill' }],
+		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/curving/wrought_iron_grill`)
 
 	// #endregion
 }

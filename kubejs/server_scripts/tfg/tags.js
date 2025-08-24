@@ -12,6 +12,19 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:compost_greens_high', 'tfg:sunflower_product')
 	event.add('tfg:water_breathing_ingredients', 'tfg:rapeseed_product')
 	event.add('tfg:night_vision_ingredients', 'tfg:sunflower_product')
+
+	event.add('c:hidden_from_recipe_viewers', 'tfg:ash_pile')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/black_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/brown_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/green_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/pink_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/red_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/white_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/yellow_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/moon_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/venus_sand')
+
 	//temporary hidden items
 	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source_small')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source')
@@ -48,6 +61,17 @@ const registerTFGItemTags = (event) => {
 
 	event.add('tfg:harvester', 'tfg:harvest_basket')
 	event.add('tfg:harvester', 'tfg:aluminium_harvest_basket')
+
+	event.add('tfg:tools/ore_prospectors/copper', 'tfc:metal/propick/copper')
+	event.add('tfg:tools/ore_prospectors/bronze', 'tfc:metal/propick/bronze')
+	event.add('tfg:tools/ore_prospectors/bronze', 'tfc:metal/propick/bismuth_bronze')
+	event.add('tfg:tools/ore_prospectors/bronze', 'tfc:metal/propick/black_bronze')
+	event.add('tfg:tools/ore_prospectors/wrought_iron', 'tfc:metal/propick/wrought_iron')
+	event.add('tfg:tools/ore_prospectors/steel', 'tfc:metal/propick/steel')
+	event.add('tfg:tools/ore_prospectors/black_steel', 'tfc:metal/propick/black_steel')
+	event.add('tfg:tools/ore_prospectors/blue_steel', 'tfc:metal/propick/blue_steel')
+	event.add('tfg:tools/ore_prospectors/red_steel', 'tfc:metal/propick/red_steel')
+
 	//#endregion
 
 	// #region Paper from wood
@@ -284,6 +308,10 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:grass', 'tfg:grass/rusticus_mycelium')
 	event.add('tfc:grass', 'tfg:grass/sangnum_mycelium')
 	event.add('tfc:farmland', 'tfg:grass/mars_farmland')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/mars_dirt')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/amber_mycelium')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/rusticus_mycelium')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/sangnum_mycelium')
 	// #endregion
 
 	 // Mars stone dust
@@ -291,6 +319,22 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:mars_stone_dusts', 'tfg:venus_stone_dust')
 	event.add('forge:mars_stone_dusts', 'gtceu:granite_red_dust')
 	event.add('forge:mars_stone_dusts', 'tfg:mars_stone_dust')
+
+	//Mars animal region
+	event.add('tfg:martian_eggs', 'tfg:sniffer_egg')
+	
+	event.add('tfg:martian_animal_foods', 'betterend:amber_root_product')
+	event.add('tfg:martian_animal_foods', 'betterend:blossom_berry_product')
+	event.add('tfg:martian_animal_foods', 'betterend:chorus_mushroom_product')
+	event.add('tfg:martian_animal_foods', 'betterend:shadow_berry_product')
+	event.add('tfg:martian_animal_foods', 'betterend:bolux_mushroom_product')
+	event.add('tfg:martian_animal_foods', 'betterend:cave_pumpkin_chunks')
+	
+	event.add('tfg:glacian_ram_food', '#tfg:martian_animal_foods')
+	event.add('tfg:sniffer_food', '#tfg:martian_animal_foods')
+	
+	//#endregion
+
 
 	// #region 0.7.19 -> 0.9 conversion
 	event.add('c:hidden_from_recipe_viewers', 'treetap:tap')
@@ -576,6 +620,10 @@ const registerTFGBiomeTags = (event) => {
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/schist_caves')
 
 	// #endregion
+}
+
+function registerTFGConfiguredFeatures(event) {
+	registerTFGForestConfiguredFeatures(event)
 }
 
 // Other space decoration is in ad_astra/tags.js

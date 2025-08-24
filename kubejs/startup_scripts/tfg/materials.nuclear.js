@@ -129,14 +129,6 @@ const registerTFGNuclearMaterials = (event) => {
 
     //#region Dust
 
-    event.create('tfg:mars_stone_dust')
-        .dust()
-        .components('2x deuterium', '1x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-        .color(0xE79B07)
-        .secondaryColor(0x5A4316)
-        .iconSet(GTMaterialIconSet.ROUGH)
-
     event.create('tfg:nuclear_residue')
         .dust()
         .formula('(?)')

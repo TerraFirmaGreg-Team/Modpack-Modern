@@ -368,6 +368,15 @@ function registerGTCEUMetalRecipes(event) {
 			.duration(material.getMass())
 			.category(GTRecipeCategories.ORE_CRUSHING)
 			.EUt(GTValues.VA[GTValues.ULV])
+
+		let tfcName = material.getName();
+		if (material === GTMaterials.Bismuth)
+			tfcName = "bismuthinite";
+		else if (material === GTMaterials.YellowLimonite)
+			tfcName = "limonite";
+
+		event.recipes.tfc.quern(smallDust, smallOre)
+			.id(`tfc:quern/small_${tfcName}`)
 	}
 
 	/**
@@ -385,6 +394,9 @@ function registerGTCEUMetalRecipes(event) {
 			.duration(material.getMass())
 			.category(GTRecipeCategories.ORE_CRUSHING)
 			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.tfc.quern(smallDust, smallNativeOre)
+			.id(`tfc:quern/small_native_${material.getName()}`)
 	}
 
 	/**
@@ -436,7 +448,7 @@ function registerGTCEUMetalRecipes(event) {
 		let hammerRecipe = event.recipes.gtceu.forge_hammer(`hammer_poor_raw_${material.getName()}_to_crushed_ore`)
 			.itemInputs(poorOreItem)
 			.category(GTRecipeCategories.ORE_FORGING)
-			.duration(10)
+			.duration(100)
 			.EUt(16)
 
 		if (material.hasProperty(PropertyKey.GEM)) {
@@ -506,7 +518,7 @@ function registerGTCEUMetalRecipes(event) {
 		let hammerRecipe = event.recipes.gtceu.forge_hammer(`hammer_raw_${material.getName()}_to_crushed_ore`)
 			.itemInputs(normalOreItem)
 			.category(GTRecipeCategories.ORE_FORGING)
-			.duration(10)
+			.duration(100)
 			.EUt(16)
 
 		if (material.hasProperty(PropertyKey.GEM)) {
@@ -568,7 +580,7 @@ function registerGTCEUMetalRecipes(event) {
 		let hammerRecipe = event.recipes.gtceu.forge_hammer(`hammer_rich_raw_${material.getName()}_to_crushed_ore`)
 			.itemInputs(richOreItem)
 			.category(GTRecipeCategories.ORE_FORGING)
-			.duration(10)
+			.duration(100)
 			.EUt(16)
 
 		if (material.hasProperty(PropertyKey.GEM)) {
@@ -775,7 +787,7 @@ function registerGTCEUMetalRecipes(event) {
 			.id(`shapeless/mortar_chipped_${material.getName()}`)
 
 		let amount = 9;
-		if (material === GTMaterials.NetherQuartz || material === GTMaterials.Amethyst)
+		if (material === GTMaterials.NetherQuartz || material === GTMaterials.CertusQuartz || material === GTMaterials.Amethyst)
 			amount = 4;
 
 		event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, amount), ChemicalHelper.get(TagPrefix.block, material, 1))
@@ -1155,7 +1167,8 @@ function registerGTCEUMetalRecipes(event) {
 		if (material === GTMaterials.get("andesite_alloy")
 			|| material === GTMaterials.get("refined_radiance")
 			|| material === GTMaterials.get("shadow_steel")
-			|| material === GTMaterials.get("chromatic_compound"))
+			|| material === GTMaterials.get("chromatic_compound")
+			|| material === GTMaterials.DamascusSteel)
 		{ return; }
 
 		const toolProperty = material.getProperty(PropertyKey.TOOL)

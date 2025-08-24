@@ -164,6 +164,13 @@ const registerFirmaLifeRecipes = (event) => {
 		.duration(30)
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	event.recipes.gtceu.alloy_smelter('pie_pan')
+		.itemInputs('#forge:ingots/wrought_iron')
+		.notConsumable('gtceu:cylinder_casting_mold')
+		.itemOutputs('6x firmalife:pie_pan')
+		.EUt(GTValues.VA[GTValues.ULV])
+		.duration(100)
+
 	event.replaceInput({ id: 'firmalife:crafting/bottle_label' }, 'firmalife:beeswax', '#forge:wax')
 
 	//#endregion
@@ -192,10 +199,10 @@ const registerFirmaLifeRecipes = (event) => {
 
 	//#region Медная / Copper
 
-	event.recipes.gtceu.bender('tfg:firmalife/sprinkler_electric_only')
+	event.recipes.gtceu.extruder('tfg:firmalife/sprinkler_electric_only')
 		.itemInputs('#forge:plates/copper')
+		.notConsumable('tfg:small_casing_extruder_mold')
 		.itemOutputs('firmalife:sprinkler')
-		.circuit(4)
 		.duration(60)
 		.EUt(8)
 
@@ -470,13 +477,13 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// Семена фруктов
 	global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, '#tfg:clean_water', element.fluid_amount, element.output,
+		generateGreenHouseRecipe(event, element.input, '#tfc:any_fresh_water', element.fluid_amount, element.output,
 			element.name, 'minecraft:overworld', 8, null, GTValues.VA[GTValues.LV])
 	})
 
 	// Семена ягод
 	global.FIRMALIFE_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, '#tfg:clean_water', element.fluid_amount, element.output,
+		generateGreenHouseRecipe(event, element.input, '#tfc:any_fresh_water', element.fluid_amount, element.output,
 			element.name, null, 8, null, GTValues.VA[GTValues.LV])
 	})
 
@@ -533,18 +540,18 @@ const registerFirmaLifeRecipes = (event) => {
 		.duration(200)
 
 	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['#tfg:wood_dusts', 'tfc:glue'])
-		.outputItem('tfg:chipboard_composite')
+		.itemIngredients(['#tfg:wood_dusts', '#tfg:wood_dusts', 'tfc:glue'])
+		.outputItem('2x tfg:chipboard_composite')
 		.id('tfg:mixing_bowl/chipboard_composite_glue')
 
 	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['#tfg:wood_dusts', 'gtceu:sticky_resin'])
-		.outputItem('tfg:chipboard_composite')
+		.itemIngredients(['#tfg:wood_dusts', '#tfg:wood_dusts', '#tfg:wood_dusts', '#tfg:wood_dusts', 'gtceu:sticky_resin'])
+		.outputItem('4x tfg:chipboard_composite')
 		.id('tfg:mixing_bowl/chipboard_composite_resin')
 
 	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['#tfg:wood_dusts', '#forge:wax'])
-		.outputItem('tfg:chipboard_composite')
+		.itemIngredients(['#tfg:wood_dusts', '#tfg:wood_dusts', '#forge:wax'])
+		.outputItem('2x tfg:chipboard_composite')
 		.id('tfg:mixing_bowl/chipboard_composite_wax')
 
 	// Dough
@@ -574,14 +581,14 @@ const registerFirmaLifeRecipes = (event) => {
 			'firmalife:mixing_bowl'
 		]).id(`tfg:shapeless/${grain}_dough_3`)
 
-		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`4x tfc:food/${grain}_dough`).copyFood(), [
+		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`2x tfc:food/${grain}_dough`).copyFood(), [
 			'firmalife:spoon',
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
 			TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 100)), 
 			'firmalife:mixing_bowl'
 		]).id(`tfg:shapeless/${grain}_flatbread_dough`)
 
-		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`8x tfc:food/${grain}_dough`).copyFood(), [ 
+		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`4x tfc:food/${grain}_dough`).copyFood(), [ 
 			'firmalife:spoon',
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`), 
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`), 
@@ -589,7 +596,7 @@ const registerFirmaLifeRecipes = (event) => {
 			'firmalife:mixing_bowl'
 		]).id(`tfg:shapeless/${grain}_flatbread_dough_2`)
 
-		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`12x tfc:food/${grain}_dough`).copyFood(), [
+		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`6x tfc:food/${grain}_dough`).copyFood(), [
 			'firmalife:spoon', 
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
@@ -598,7 +605,7 @@ const registerFirmaLifeRecipes = (event) => {
 			'firmalife:mixing_bowl'
 		]).id(`tfg:shapeless/${grain}_flatbread_dough_3`)
 
-		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`16x tfc:food/${grain}_dough`).copyFood(), [
+		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`8x tfc:food/${grain}_dough`).copyFood(), [
 			'firmalife:spoon', 
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
@@ -736,4 +743,11 @@ const registerFirmaLifeRecipes = (event) => {
 			Fluid.of('afc:birch_syrup', 1000))
 		.outputItem('createaddition:honey_cake')
 		.id('tfg:mixing_bowl/birch_honey_cake')
+
+	event.remove({ id: 'firmalife:mixing_bowl/chocolate_ice_cream' })
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients([TFC.ingredient.notRotten('firmalife:food/vanilla_ice_cream')],
+			Fluid.of('tfcchannelcasting:milk_chocolate', 100))
+		.outputItem(TFC.isp.of('firmalife:food/chocolate_ice_cream').copyFood())
+		.id('tfg:mixing_bowl/chocolate_ice_cream')
 }

@@ -54,6 +54,9 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfc:foods/usable_in_salad', 'minecraft:glow_berries')
     event.add('tfc:foods/usable_in_salad', 'minecraft:chorus_fruit')
     event.add('tfc:foods/usable_in_salad', 'minecraft:popped_chorus_fruit')
+
+    event.add('tfc:rabbit_food', 'minecraft:chorus_fruit')
+    event.add('tfc:rabbit_food', 'minecraft:popped_chorus_fruit')
     
     event.add('tfc:rock/raw', 'minecraft:deepslate')
     event.add('tfc:rock/raw', 'minecraft:blackstone')
@@ -83,6 +86,8 @@ const registerMinecraftItemTags = (event) => {
 	event.add('tfc:compost_greens', 'minecraft:warped_wart_block')
 
     event.add('forge:dyes/black', 'minecraft:ink_sac')
+
+    event.add('tfc:hematitic_sand', 'minecraft:red_sand')
 }
 
 const registerMinecraftBlockTags = (event) => {
@@ -152,6 +157,25 @@ const registerMinecraftBlockTags = (event) => {
     event.add('tfg:brick_stairs', 'minecraft:blackstone_stairs')
     event.add('tfg:brick_slabs', 'minecraft:blackstone_slab')
     event.add('tfg:brick_walls', 'minecraft:blackstone_wall')
+
+    event.add('tfc:bloomery_insulation', 'minecraft:polished_deepslate');
+	event.add('tfc:forge_insulation', 'minecraft:polished_deepslate');
+    event.add('tfc:bloomery_insulation', 'minecraft:polished_blackstone');
+	event.add('tfc:forge_insulation', 'minecraft:polished_blackstone');
+    event.add('tfc:bloomery_insulation', 'minecraft:deepslate_tiles');
+	event.add('tfc:forge_insulation', 'minecraft:deepslate_tiles');
+    event.add('tfc:bloomery_insulation', 'minecraft:cracked_deepslate_tiles');
+	event.add('tfc:forge_insulation', 'minecraft:cracked_deepslate_tiles');
+    event.add('tfc:bloomery_insulation', 'minecraft:chiseled_deepslate');
+	event.add('tfc:forge_insulation', 'minecraft:chiseled_deepslate');
+    event.add('tfc:bloomery_insulation', 'minecraft:chiseled_polished_blackstone');
+	event.add('tfc:forge_insulation', 'minecraft:chiseled_polished_blackstone');
+    event.add('tfc:bloomery_insulation', 'minecraft:gilded_blackstone');
+	event.add('tfc:forge_insulation', 'minecraft:gilded_blackstone');
+    event.add('tfc:bloomery_insulation', 'minecraft:basalt');
+	event.add('tfc:forge_insulation', 'minecraft:basalt');
+    event.add('tfc:bloomery_insulation', 'minecraft:smooth_basalt');
+	event.add('tfc:forge_insulation', 'minecraft:smooth_basalt');
     
     //#region
 

@@ -29,6 +29,7 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_DOUBLE_INGOTS,
 		HAS_SMALL_TFC_ORE,
 		HAS_SMALL_NATIVE_TFC_ORE,
+		GENERATE_DUSTY_ORES,
 	} = TFGMaterialFlags
 
 	const {
@@ -140,7 +141,6 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Potin.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(807 * 0.6, 807 * 0.8, 807, 2));
 	GTMaterials.Cobalt.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495 * 0.6, 1495 * 0.8, 1495, 3));
 	GTMaterials.Cobaltite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495 * 0.6, 1495 * 0.8, 1495, GTMaterials.Cobalt, 3, 85));
-	GTMaterials.CobaltOxide.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495 * 0.6, 1495 * 0.8, 1495, GTMaterials.Cobalt, 3));
 	GTMaterials.CobaltBrass.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1060 * 0.6, 1060 * 0.8, 1060, 3));
 	let AlSi = GTMaterials.get('aluminium_silicate')
 	AlSi.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, 1))
@@ -167,6 +167,15 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Tin.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Zinc.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_BOLT_SCREW);
 	GTMaterials.SterlingSilver.addFlags(GENERATE_DOUBLE_INGOTS);
+
+	//		  /* Generate Dusty Ores for Infinite Ores
+
+	GTMaterials.Goethite.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Diamond.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.CertusQuartz.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Gold.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Cassiterite.addFlags(GENERATE_DUSTY_ORES);
+
 	//
 	//        /* Имеют инструменты, броню TFC, двойные слитки */
 	GTMaterials.Copper.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
@@ -258,6 +267,9 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.IronMagnetic.addFlags(GENERATE_PLATE)
 
 	GTMaterials.Silicon.addFlags(GENERATE_DENSE);
+
+	GTMaterials.RTMAlloy.addFlags(GENERATE_DENSE);
+	GTMaterials.Lead.addFlags(GENERATE_DENSE);
 
 	GTMaterials.Quartzite.addFlags(GENERATE_ROD);
 	

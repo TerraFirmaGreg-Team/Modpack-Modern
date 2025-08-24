@@ -794,4 +794,20 @@ function registerTFGRockRecipes(event) {
 			.EUt(GTValues.VA[GTValues.LV])
 	})
 	//#endregion
+
+	//#region Alabaster
+
+	event.recipes.gtceu.rock_breaker("tfg:alabaster")
+		.notConsumable("tfc:alabaster/raw")
+		.itemOutputs("tfc:alabaster/raw")
+		.duration(16)
+		.EUt(7)
+
+	event.recipes.gtceu.cutter("tfg:raw_alabaster_to_bricks")
+		.itemInputs("tfc:alabaster/raw")
+		.itemOutputs("4x tfc:alabaster_brick")
+		.duration(40)
+		.EUt(2)
+	
+	//#endregion
 }

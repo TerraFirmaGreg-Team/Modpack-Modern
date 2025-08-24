@@ -1,6 +1,8 @@
 {
 	"carvers": {
-		"air": []
+		"air": [
+			"tfg:mars_cave"
+		]
 	},
 	"downfall": 0.0,
 	"effects": {
@@ -10,12 +12,6 @@
 			"offset": 2.0,
 			"sound": "minecraft:ambient.cave",
 			"tick_delay": 6000
-		},
-		"particle": {
-			"options": {
-				"type": "minecraft:crimson_spore"
-			},
-			"probability": 0.014
 		},
 		"sky_color": 15117444,
 		"water_color": 4159204,
@@ -51,7 +47,22 @@
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
-		
+		"endermanoverhaul:crimson_forest_enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"endermanoverhaul:warped_forest_enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"endermanoverhaul:badlands_enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"minecraft:enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		}
 	},
 	"spawners": {
 		"ambient": [],

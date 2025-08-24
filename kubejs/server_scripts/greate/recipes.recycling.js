@@ -381,7 +381,7 @@ function registerGreateRecyclingRecipes(event) {
 		.itemInputs('greate:steel_mechanical_saw')
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.WroughtIron, 8),
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.BlackSteel, 2),
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.CobaltBrass, 2),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Copper, 4))
 		.duration(GTMaterials.CobaltBrass.getMass() * 16)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
@@ -391,7 +391,7 @@ function registerGreateRecyclingRecipes(event) {
 		.itemInputs('greate:steel_mechanical_saw')
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.WroughtIron, 8),
-			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.BlackSteel, 2),
+			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.CobaltBrass, 2),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.AnnealedCopper, 4))
 		.duration(GTMaterials.CobaltBrass.getMass() * 16)
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)

@@ -104,7 +104,7 @@ function registerTFGPapermakingRecipes(event) {
 		.outputItem('tfg:soaked_hardwood_strip')
 		.id('tfg:barrel/soak_hardwood_strip')
 	event.recipes.gtceu.chemical_bath('tfg:chemical_bath/soak_hardwood_strips')
-		.inputFluids("#tfc:clean_water 100")
+		.inputFluids("#tfg:clean_water 100")
 		.itemInputs('tfg:hardwood_strip')
 		.itemOutputs('tfg:soaked_hardwood_strip')
 		.duration(200)

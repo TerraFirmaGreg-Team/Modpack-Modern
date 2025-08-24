@@ -1,0 +1,48 @@
+{
+	"type": "minecraft:tree",
+	"config": {
+		"decorators": [],
+		"dirt_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfg:mars_dirt"
+			}
+		},
+		"foliage_placer": {
+			"type": "minecraft:blob_foliage_placer",
+			"height": 0,
+			"offset": 0,
+			"radius": 0
+		},
+		"foliage_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "minecraft:air"
+			}
+		},
+		"force_dirt": false,
+		"ignore_vines": true,
+		"minimum_size": {
+			"type": "minecraft:two_layers_feature_size",
+			"limit": 0,
+			"lower_size": 0,
+			"upper_size": 0
+		},
+		"trunk_placer": {
+			"type": "minecraft:straight_trunk_placer",
+			"base_height": 7,
+			"height_rand_a": 4,
+			"height_rand_b": 2
+		},
+		"trunk_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "minecraft:mushroom_stem",
+				"Properties": {
+					"down": "false",
+					"up": "false"
+				}
+			}
+		}
+	}
+}

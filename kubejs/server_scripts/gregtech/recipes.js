@@ -128,8 +128,9 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.tfc.barrel_sealed(2000)
 		.outputItem('gtceu:treated_wood_dust')
-		.inputs('tfg:chipboard_composite', TFC.fluidStackIngredient('#forge:creosote', 50))
-		.id('tfg:barrel/treated_chipboard_composite')
+		.inputs('#tfg:wood_dusts', TFC.fluidStackIngredient('#forge:creosote', 50))
+		.id('tfg:barrel/treated_wood_dust')
+		
 	//#endregion
 
 	//#region Выход: Капля резины
@@ -525,10 +526,14 @@ const registerGTCEURecipes = (event) => {
 		.EUt(5)
 
 	// Исправление рецепта пыли серебра стерлинга
-	generateMixerRecipe(event, ['#forge:dusts/copper', '4x #forge:dusts/silver'], [], '5x gtceu:sterling_silver_dust', 1, [], 500, 7, 64, 'sterling_silver')
+	event.remove({ id: 'gtceu:mixer/sterling_silver' })
+	generateMixerRecipe(event, ['#forge:dusts/copper', '4x #forge:dusts/silver'], [], '5x gtceu:sterling_silver_dust', 
+		1, [], 500, 7, 64, 'gtceu:mixer/sterling_silver')
 
 	// Исправление рецепта пыли розовой бронзы
-	generateMixerRecipe(event, ['#forge:dusts/copper', '4x #forge:dusts/gold'], [], '5x gtceu:rose_gold_dust', 3, [], 500, 7, 64, 'rose_gold')
+	event.remove({ id: 'gtceu:mixer/rose_gold' })
+	generateMixerRecipe(event, ['#forge:dusts/copper', '4x #forge:dusts/gold'], [], '5x gtceu:rose_gold_dust', 
+		3, [], 500, 7, 64, 'gtceu:mixer/rose_gold')
 
 	//#region Рецепт ULV микросхемы
 
@@ -1287,9 +1292,9 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VH[GTValues.EV])
 
 	event.recipes.gtceu.large_chemical_reactor('tfg:solar_coolant_t2')
-		.inputFluids(Fluid.of('tfg:solar_coolant', 1000), Fluid.of('gtceu:argon', 1000))
+		.inputFluids(Fluid.of('tfg:solar_coolant', 8000), Fluid.of('gtceu:argon', 1000))
 		.itemInputs(Item.of('#forge:aerogels'))
-		.outputFluids(Fluid.of('tfg:solar_coolant_tier2', 1000))
+		.outputFluids(Fluid.of('tfg:solar_coolant_tier2', 8000))
 		.duration(20*15)
 		.EUt(GTValues.VH[GTValues.IV])
 
@@ -1358,7 +1363,7 @@ const registerGTCEURecipes = (event) => {
 		'ADA',
 		'BCB'
 	], {
-		A: '#gtceu:circuits/iv',
+		A: '#gtceu:circuits/ev',
 		B: 'gtceu:ev_electric_motor',
 		C: 'gtceu:aluminium_single_cable',
 		D: 'gtceu:ev_centrifuge',
@@ -1374,12 +1379,19 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Buttons
-	event.replaceOutput({ id: 'gtceu:cutter/blackstone_button' }, 'minecraft:polished_blackstone_button', '6x minecraft:polished_blackstone_button')
-	event.replaceOutput({ id: 'gtceu:cutter/blackstone_button_water' }, 'minecraft:polished_blackstone_button', '6x minecraft:polished_blackstone_button')
-	event.replaceOutput({ id: 'gtceu:cutter/blackstone_button_distilled_water' }, 'minecraft:polished_blackstone_button', '6x minecraft:polished_blackstone_button')
 	removeCutterRecipe(event, 'blackstone_button')
 	removeCutterRecipe(event, 'blackstone_button_water')
 	removeCutterRecipe(event, 'blackstone_button_distilled_water')
+	removeCutterRecipe(event, 'cut_polished_blackstone_brickslab_into_button')
+	removeCutterRecipe(event, 'cut_polished_blackstone_brickslab_into_button_water')
+	removeCutterRecipe(event, 'cut_polished_blackstone_brickslab_into_button_distilled_water')
+
+	event.recipes.gtceu.cutter('tfg:blackstone_button')
+		.itemInputs('minecraft:polished_blackstone_pressure_plate')
+		.itemOutputs('6x minecraft:polished_blackstone_button')
+		.EUt(7)
+		.duration(100)
+
 
 	event.replaceOutput({ id: 'gtceu:cutter/bamboo_button' }, 'minecraft:bamboo_button', '6x minecraft:bamboo_button')
 	event.replaceOutput({ id: 'gtceu:cutter/bamboo_button_water' }, 'minecraft:bamboo_button', '6x minecraft:bamboo_button')
@@ -1388,4 +1400,36 @@ const registerGTCEURecipes = (event) => {
 	event.replaceOutput({ id: 'gtceu:cutter/treated_button' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
 	event.replaceOutput({ id: 'gtceu:cutter/treated_button_water' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
 	event.replaceOutput({ id: 'gtceu:cutter/treated_button_distilled_water' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
+
+	//#region Replace Recipe
+
+	event.remove({ id : 'gtceu:assembly_line/me_pattern_buffer_proxy'})
+	event.recipes.gtceu.assembly_line('tfg:me_pattern_buffer_proxy')
+		.itemInputs(
+			'gtceu:luv_machine_hull',
+			'2x gtceu:luv_sensor',
+			'#gtceu:circuits/luv',
+			'gtceu:fusion_glass',
+			'2x ae2:quantum_ring',
+			'32x gtceu:fine_europium_wire',
+			'32x gtceu:fine_europium_wire',
+			'16x megacells:accumulation_processor')
+		.inputFluids(Fluid.of('gtceu:lubricant', 500))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*4))
+		.stationResearch(b => b.researchStack(Item.of('gtceu:me_pattern_buffer')).EUt(GTValues.VA[GTValues.LuV]).CWUt(32))
+		.itemOutputs('gtceu:me_pattern_buffer_proxy')
+		.duration(30*20)
+		.EUt(GTValues.VA[GTValues.ZPM])
+
+	event.replaceInput({ id: 'gtceu:assembly_line/me_pattern_buffer' }, 'ae2:pattern_provider', '3x expatternprovider:ex_pattern_provider')
+	event.replaceInput({ id: 'gtceu:assembly_line/me_pattern_buffer' }, 'ae2:interface', '3x expatternprovider:oversize_interface')
+
+	event.replaceInput({ id: 'gtceu:shaped/large_combustion_engine' }, '#gtceu:circuits/iv', '#gtceu:circuits/ev')
+	event.replaceInput({ id: 'gtceu:shaped/nano_chestplate_advanced' }, '#gtceu:circuits/iv', '#gtceu:circuits/ev')
+	event.replaceInput({ id: 'gtceu:assembler/ev_large_miner' }, '#gtceu:circuits/iv', '#gtceu:circuits/ev')
+
+	//# Circuit Board
+
+	event.replaceInput({ id: 'gtceu:assembler/phenolic_board' }, '#tfg:wood_dusts', 'tfg:high_density_treated_fiberboard')
+	
 }

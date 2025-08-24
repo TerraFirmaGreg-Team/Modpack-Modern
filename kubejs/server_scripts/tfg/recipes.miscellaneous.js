@@ -825,7 +825,7 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.recipes.gtceu.assembler('sensor_iv')
 		.itemInputs('gtceu:quantum_eye', '#forge:rods/iridium', '#gtceu:circuits/iv', '4x #forge:plates/tungsten_steel')
-		.itemOutputs('gtceu:ev_sensor')
+		.itemOutputs('gtceu:iv_sensor')
 		.duration(100)
 		.EUt(30)
 	
@@ -880,6 +880,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		)
 		.inputFluids(Fluid.of('gtceu:glue', 50))
 		.itemOutputs('tfg:harvest_basket')
+		.circuit(2)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -995,6 +996,17 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(1000)
 		.blastFurnaceTemp(3000)
 		.EUt(GTValues.VA[GTValues.EV])
+		
+	event.recipes.gtceu.electric_blast_furnace('smelt_sniffer_wool')
+		.itemInputs('tfg:sniffer_wool')
+		.chancedOutput('gtceu:ash_dust', 7500, 0)
+		.outputFluids(Fluid.of('tfg:molten_aes', 200))
+		.circuit(4)
+		.duration(80)
+		.blastFurnaceTemp(3400)
+		.EUt(GTValues.VA[GTValues.EV])
+
+
 	//endregion
 	
 	//#region Casings
@@ -1149,7 +1161,8 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.IV])
 	event.recipes.gtceu.mixer('tfg:aes_polyurethane_electric_only')
-		.itemInputs('tfg:aes_compressed_wool', '#forge:dusts/methylene_diphenyl_diisocyanate')
+		.itemInputs('tfg:aes_compressed_wool', //'2x tfg:sniffer_wool' REVERT UNTIL MARS,
+		'#forge:dusts/methylene_diphenyl_diisocyanate')
 		.inputFluids(Fluid.of('gtceu:diethylenetriamine', 250), Fluid.of('gtceu:acetone', 1000))
 		.itemOutputs('tfg:aes_polyurethane')
 		.duration(80)
@@ -1324,4 +1337,29 @@ function registerTFGMiscellaneousRecipes(event) {
 	]));
 
 	event.replaceInput({ id: "minecraft:jukebox"}, 'minecraft:diamond', 'tfg:etching_diamond_tip');
+	
+	
+	//Large Nest
+	event.shaped('tfg:large_nest_box',
+	[
+		'B B',
+		'ABA',
+		'AAA'
+	], {
+		A: 'beneath:crimson_thatch',
+		B: 'beneath:crimson_straw'
+	}).id('tfg:shaped_large_nest_crimson')
+	
+	event.shaped('tfg:large_nest_box_warped',
+	[
+		'B B',
+		'ABA',
+		'AAA'
+	], {
+		A: 'beneath:warped_thatch',
+		B: 'beneath:warped_straw'
+	}).id('tfg:shaped_large_nest_warped')
+		
+	
+	//#endregion
 }
