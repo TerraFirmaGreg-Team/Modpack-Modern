@@ -390,4 +390,8 @@ const registerTFGItems = (event) => {
 		.texture('tfg:item/photo_cell_t1')
 	
 	//#region Mars Animals
+	event.create('tfg:wraptor_sugar')
+		.tag('tfg:sugars')
+		.tag('tfg:haste_ingredients')
+		.tag('tfc:sweetener')
 }

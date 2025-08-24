@@ -163,6 +163,7 @@ TFCEvents.data(event => {
 	registerTFCDataForTFG(event)
 	registerTFCDataForWaterFlasks(event)
 	registerWABFoodData(event)
+	registerSpeciesFoodData(event)
 })
 
 /**

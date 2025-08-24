@@ -146,6 +146,10 @@ const registerTooltips = (event) => {
 		text.add(1, text.of("§7Harvested from the feathers of a Wraptor"))
 	})
 	
+	event.addAdvanced(['tfg:wraptor_sugar'], (item, advanced, text) => {
+		text.add(1, text.of("§7Don't think about it too much"))
+	})
+	
 
 	// MEGA Deprecated 0.10
 	event.addAdvanced(['#megacells:mega_interface'], (item, advanced, text) => {
