@@ -24,6 +24,7 @@ jobs:
       project_full_name: ${{ steps.check.outputs.project_name }}-${{ steps.check.outputs.project_version }}
       changelog: ${{ steps.changelog.outputs.description }}
       mc_version: ${{ steps.check.outputs.minecraft_version }}
+      loader_version: ${{ steps.check.outputs.loader_version }}
       release_type: ${{ steps.check.outputs.release_type }}
       diff: ${{ steps.read_diff.outputs.diff }}
       exists: ${{ steps.check.outputs.exists }}
@@ -163,10 +164,12 @@ jobs:
         id: check
         shell: bash
         run: |
-          echo "project_name=${{ steps.pakku_info.outputs.name }}" >> $GITHUB_OUTPUT
+         
           MC_VERSIONS_JSON='${{ steps.pakku_lock_info.outputs.mc_versions }}'
           MINECRAFT_VERSION=$(echo "$MC_VERSIONS_JSON" | jq -r '.[0]' | tr -d '[]"')
           echo "minecraft_version=$MINECRAFT_VERSION" >> $GITHUB_OUTPUT
+
+
 
           if ${{ env.DEV_ENVIRONMENT == 'true' }}; then
             echo "project_version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
@@ -174,6 +177,8 @@ jobs:
             echo "project_version=${{ steps.changelog.outputs.version }}" >> $GITHUB_OUTPUT
           fi
 
+          echo "loader_version=${{ steps.pakku_lock_info.outputs.loaders }}" >> $GITHUB_OUTPUT
+          echo "project_name=${{ steps.pakku_info.outputs.name }}" >> $GITHUB_OUTPUT
           echo "release_type=${{ steps.pakku_info.outputs.release_type }}" >> $GITHUB_OUTPUT
           echo "exists=${{ steps.check_tag.outputs.exists }}" >> $GITHUB_OUTPUT
           echo "make_release=${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'false' }}" >> $GITHUB_OUTPUT
@@ -283,8 +288,15 @@ jobs:
           set +e
 
           VERSION=${{ needs.info.outputs.project_version }}
+          LOADER_VERSION=${{ needs.info.outputs.loader_version }}
+          MINECRAFT_VERSION=${{ needs.info.outputs.mc_version }}
+
+
           sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
+
+          sed -i -e "s/LOADER_VERSION/${LOADER_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
+          sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
 
       - name: 📝 Cache pakku
         uses: actions/cache@v4.2.4
