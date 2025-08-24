@@ -1,6 +1,8 @@
 {
 	"carvers": {
-		"air": []
+		"air": [
+			"tfg:mars_cave"
+		]
 	},
 	"downfall": 0.0,
 	"effects": {
@@ -10,12 +12,6 @@
 			"offset": 2.0,
 			"sound": "minecraft:ambient.cave",
 			"tick_delay": 6000
-		},
-		"particle": {
-			"options": {
-				"type": "minecraft:crimson_spore"
-			},
-			"probability": 0.014
 		},
 		"sky_color": 15117444,
 		"water_color": 4159204,
