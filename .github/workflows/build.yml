@@ -209,6 +209,8 @@ jobs:
             📃 **Release**:  `${{ steps.check.outputs.project_version }}`
             📃 **Release Type**: `${{ steps.check.outputs.release_type }}`
             📃 **Game Version**: `${{ steps.check.outputs.minecraft_version }}`
+            📃 **Loader Type**: `${{ steps.check.outputs.loader_type }}`
+            📃 **Loader Version**: `${{ steps.check.outputs.loader_version }}`
 
             📃 **Dev Environment**: `${{ env.DEV_ENVIRONMENT }}`
             📃 **Tag Exists**: `${{ steps.check.outputs.exists }}`
@@ -296,6 +298,7 @@ jobs:
 
           VERSION=${{ needs.info.outputs.project_version }}
           LOADER_VERSION=${{ needs.info.outputs.loader_version }}
+          LOADER_TYPE=${{ needs.info.outputs.loader_type }}
           MINECRAFT_VERSION=${{ needs.info.outputs.mc_version }}
 
 
@@ -303,6 +306,7 @@ jobs:
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
           sed -i -e "s/LOADER_VERSION/${LOADER_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
+          sed -i -e "s/LOADER_TYPE/${LOADER_TYPE}/g" .pakku/server-overrides/forge-auto-install.txt
           sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
 
       - name: 📝 Cache pakku

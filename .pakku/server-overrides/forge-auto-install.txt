@@ -6,7 +6,7 @@ minecraftVersion=MINECRAFT_VERSION
 
 # Specify your desired LoaderType.
 # Possible options are ["Forge" or "NeoForge"]
-loaderType=Forge
+loaderType=LOADER_TYPE
 
 # Specify your desired Loader-Version.
 # Possible options are [Version like: "20.4.164-beta" or "latest" or "recommended"]
