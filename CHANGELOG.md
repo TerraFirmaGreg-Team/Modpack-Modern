@@ -1,6 +1,10 @@
 # Changelog
 
 ## [Unreleased]
+### Changes
+### Bug fixes
+
+## [0.10.10] - 23-08-2025
 ### Major changes
 - Complete rework of prospector's picks. (#1594) @Redeix
 - Removed the mod that was causing placed entities to sometimes not spawn
