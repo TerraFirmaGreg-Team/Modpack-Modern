@@ -305,6 +305,7 @@ jobs:
 
           sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
+          sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
 
           sed -i -e "s/LOADER_VERSION/${LOADER_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
           sed -i -e "s/LOADER_TYPE/${LOADER_TYPE}/g" .pakku/server-overrides/forge-auto-install.txt
@@ -321,9 +322,13 @@ jobs:
       - name: 📦 Export modpack
         run: |
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          java -jar pakku.jar fetch
           java -jar pakku.jar export
 
-      - name: 📁 Rename artifact curseforge
+          mkdir -p .pakku/multimc-overrides/flame
+          mkdir -p .pakku/multimc-overrides/mods
+
+      - name: 📁 Preparing the artifact curseforge
         run: |
           cd ./build/curseforge/
           mv *.zip $(basename -s .zip *.zip)-curseforge.zip
@@ -335,7 +340,7 @@ jobs:
           path: ./build/curseforge/${{ needs.info.outputs.project_full_name }}-curseforge.zip
           if-no-files-found: error
 
-      - name: 📁 Rename artifact modrinth
+      - name: 📁 Preparing the artifact modrinth
         run: |
           cd ./build/modrinth/
           mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
@@ -347,7 +352,27 @@ jobs:
           path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
           if-no-files-found: warn
 
-      - name: 📁 Rename artifact server
+      - name: 📁 Preparing the artifact multimc
+        run: |
+          mkdir -p .pakku/multimc-overrides/flame
+          mkdir -p .pakku/multimc-overrides/mods
+
+          cp -vf .pakku/multimc-overrides ./build/.cache/multimc
+          cp -vf ./build/.cache/curseforge/manifest.json ./build/.cache/multimc/flame/manifest.json
+          cp -vf ./build/.cache/curseforge/overrides ./build/.cache/multimc/.minecraft
+          cp -vf ./mods ./build/.cache/multimc/.minecraft/mods
+
+          cd ./build/multimc-overrides/
+          zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
+      
+      - name: 🚀 Upload artifact multimc
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: ${{ needs.info.outputs.project_full_name }}-multimc
+          path: ./build/multimc/${{ needs.info.outputs.project_full_name }}-multimc.zip
+          if-no-files-found: error
+
+      - name: 📁 Preparing the artifact server
         run: |
           cd ./build/serverpack/
           mv *.zip $(basename -s .zip *.zip)-serverpack.zip
@@ -359,61 +384,9 @@ jobs:
           path: ./build/serverpack/${{ needs.info.outputs.project_full_name }}-serverpack.zip
           if-no-files-found: error
 
-  build-multimc:
-    name: 📦 Build MultiMC
-    needs: [info]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v5.0.0
-
-      - name: 🔄 Replace strings
-        shell: bash
-        run: |
-          set +e
-
-          VERSION=${{ needs.info.outputs.project_version }}
-
-          sed -i -e "s/DEV/${VERSION}/g" pakku.json
-          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
-          sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
-
-      - name: 📝 Cache pakku
-        uses: actions/cache@v4.2.4
-        id: cache
-        with:
-          path: build/.cache
-          key: pakku-cache-${{ hashFiles('pakku-lock.json') }}
-          restore-keys: pakku-cache-
-
-      - name: 📦 Export
-        run: |
-          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
-          java -jar pakku.jar --debug fetch
-          java -jar pakku.jar --debug export
-          
-      - name: 📁 Move files
-        run: |
-          ls
-          mkdir -p .pakku/multimc-overrides/flame
-          mkdir -p .pakku/multimc-overrides/mods
-          mv -vf ./build/.cache/curseforge/manifest.json .pakku/multimc-overrides/flame/manifest.json
-          mv -vf ./build/.cache/curseforge/overrides .pakku/multimc-overrides/.minecraft
-          mv -vf ./mods .pakku/multimc-overrides/.minecraft/mods
-          cd .pakku/multimc-overrides/
-          
-          zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
-      
-      - name: 🚀 Upload zip multimc
-        uses: actions/upload-artifact@v4.6.2
-        with:
-          name: ${{ needs.info.outputs.project_full_name }}-multimc
-          path: .pakku/multimc-overrides/${{ needs.info.outputs.project_full_name }}-multimc.zip
-          if-no-files-found: error
-
   release-github:
     name: 🚀 Release to GitHub
-    needs: [info, build-modpack, build-multimc]
+    needs: [info, build-modpack]
     runs-on: ubuntu-latest
     if: ${{ needs.info.outputs.make_release == 'true' }}
     outputs:
@@ -445,13 +418,6 @@ jobs:
             echo '::error::No value found for artifact `multimc.zip`.' && exit 1
           fi
           echo "✔️ All artifacts found"
-
-      # - name: 🚫 Сlose label "Done"
-      #   uses: Xikaro/close-issues-based-on-label@master
-      #   env:
-      #     LABEL: "Status: Done"
-      #     COMMENT: In ${{ needs.info.outputs.project_version }}
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 📄 Format diff
         id: format_diff
