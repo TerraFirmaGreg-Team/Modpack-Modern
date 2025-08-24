@@ -1,9 +1,9 @@
 {
-    "name": "TerraFirmaGreg-Modern",
-    "version": "DEV",
+    "name": "FSSmp",
+    "version": "1.0",
     "release_type": "release",
-    "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
-    "author": "Exception, Xikaro",
+    "description": "Modpack for ForgeStone SMP based on TerraFirmaGreg",
+    "author": "rombel",
     "overrides": [
         "config",
         "defaultconfigs",

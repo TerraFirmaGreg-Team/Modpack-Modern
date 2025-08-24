@@ -5247,7 +5247,7 @@
                 "e7thBe1Z6fvyxUtU"
             ],
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "ftb-backups-2"
             },
@@ -10178,7 +10178,7 @@
                 "3Hn4sTVbBvKyQJJS"
             ],
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "pick-up-notifier",
                 "modrinth": "pick-up-notifier"
@@ -11128,6 +11128,67 @@
             ]
         },
         {
+            "pakku_id": "ju1urAUnaHQkzPCo",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "simple-voice-chat",
+                "modrinth": "simple-voice-chat"
+            },
+            "name": {
+                "curseforge": "Simple Voice Chat",
+                "modrinth": "Simple Voice Chat"
+            },
+            "id": {
+                "curseforge": "416089",
+                "modrinth": "9eGKb6K1"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "voicechat-forge-1.20.1-2.5.36.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6863/774/voicechat-forge-1.20.1-2.5.36.jar",
+                    "id": "6863774",
+                    "parent_id": "416089",
+                    "hashes": {
+                        "sha1": "dbf49fe4ce5cd9dd6245fe1f4c1cd03e13ab94f4",
+                        "md5": "a1031da1382071ae3d5c306a02b028b8"
+                    },
+                    "required_dependencies": [],
+                    "size": 7628119,
+                    "date_published": "2025-08-08T15:22:42.067Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "voicechat-forge-1.20.1-2.5.36.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/9eGKb6K1/versions/r5eJrLh4/voicechat-forge-1.20.1-2.5.36.jar",
+                    "id": "r5eJrLh4",
+                    "parent_id": "9eGKb6K1",
+                    "hashes": {
+                        "sha512": "b551367707098dda7528ba6411f957933a736cc9017fd54312e189ddd1f0fee761dcfd1f6dd7ba4f9d0fc105469141723388a800ba5ed0ffd39cb76af9e86ac5",
+                        "sha1": "5d8ec5198d2c6ea0109aa4af8ff446c183ea3ff9"
+                    },
+                    "required_dependencies": [],
+                    "size": 7628120,
+                    "date_published": "2025-08-08T15:23:06.403568Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "S6lFre0k0NDMOA8K",
             "type": "MOD",
             "slug": {
@@ -11197,6 +11258,47 @@
                     "required_dependencies": [],
                     "size": 20450,
                     "date_published": "2024-07-24T23:23:54.183Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "PtFSovAaJ6dYBFpS",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "sit",
+                "modrinth": "sit"
+            },
+            "name": {
+                "curseforge": "Sit",
+                "modrinth": "FabricSit"
+            },
+            "id": {
+                "curseforge": "278717",
+                "modrinth": "eM1KzRjc"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "sit-1.20.1-1.3.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5378/497/sit-1.20.1-1.3.5.jar",
+                    "id": "5378497",
+                    "parent_id": "278717",
+                    "hashes": {
+                        "sha1": "228fa17d1bbacbc3e49c20e6d9b91050011f6ee2",
+                        "md5": "87f16ae5de8125e49f3740a45b3fc1c7"
+                    },
+                    "required_dependencies": [],
+                    "size": 14510,
+                    "date_published": "2024-05-28T12:32:29.747Z"
                 }
             ]
         },
