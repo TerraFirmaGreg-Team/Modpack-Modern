@@ -167,8 +167,12 @@ jobs:
          
           MC_VERSIONS_JSON='${{ steps.pakku_lock_info.outputs.mc_versions }}'
           MINECRAFT_VERSION=$(echo "$MC_VERSIONS_JSON" | jq -r '.[0]' | tr -d '[]"')
-          echo "minecraft_version=$MINECRAFT_VERSION" >> $GITHUB_OUTPUT
 
+          LOADER_VERSIONS_JSON='${{ steps.pakku_lock_info.outputs.loaders }}'
+          LOADER_VERSION=$(echo "$LOADER_VERSIONS_JSON" | jq -r '.[0]' | cut -d: -f2)
+
+          echo "minecraft_version=$MINECRAFT_VERSION" >> $GITHUB_OUTPUT
+          echo "loader_version=$LOADER_VERSION" >> $GITHUB_OUTPUT
 
 
           if ${{ env.DEV_ENVIRONMENT == 'true' }}; then
@@ -177,7 +181,6 @@ jobs:
             echo "project_version=${{ steps.changelog.outputs.version }}" >> $GITHUB_OUTPUT
           fi
 
-          echo "loader_version=${{ steps.pakku_lock_info.outputs.loaders }}" >> $GITHUB_OUTPUT
           echo "project_name=${{ steps.pakku_info.outputs.name }}" >> $GITHUB_OUTPUT
           echo "release_type=${{ steps.pakku_info.outputs.release_type }}" >> $GITHUB_OUTPUT
           echo "exists=${{ steps.check_tag.outputs.exists }}" >> $GITHUB_OUTPUT
@@ -361,7 +364,7 @@ jobs:
           set +e
 
           VERSION=${{ needs.info.outputs.project_version }}
-          
+
           sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
