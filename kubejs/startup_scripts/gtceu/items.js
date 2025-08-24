@@ -36,4 +36,10 @@ const registerGTCEuItems = (event) => {
     event.create('tfg:chipboard_composite')
     .translationKey('item.chipboard_composite')
 
+    event.create('tfg:treated_chipboard_composite')
+    .translationKey('item.treated_chipboard_composite')
+
+    event.create('tfg:high_density_treated_fiberboard')
+    .translationKey('item.high_density_treated_fiberboard')
+
 }

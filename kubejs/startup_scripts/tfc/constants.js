@@ -960,8 +960,7 @@ global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = [
     { input: '#forge:dusts/borax', output: '4x tfc:powder/flux', name: 'flux_powder' },
     { input: '#forge:dusts/soda_ash', output: '4x tfc:powder/soda_ash', name: 'soda_ash' },
     { input: 'gtceu:charcoal_dust', output: '2x tfc:powder/charcoal', name: 'charcoal' },
-    { input: 'tfc:ore/sylvite', output: '4x tfc:powder/sylvite', name: 'sylvite' },
-    { input: 'firmalife:ore/small_chromite', output: 'gtceu:small_chromite_dust', name: 'chromite' }
+    { input: 'tfc:ore/sylvite', output: '4x tfc:powder/sylvite', name: 'sylvite' }
 ];
 
 global.TFC_GRAINS = [

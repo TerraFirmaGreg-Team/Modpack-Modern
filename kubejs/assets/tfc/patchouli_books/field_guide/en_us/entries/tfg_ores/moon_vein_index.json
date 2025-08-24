@@ -14,13 +14,105 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_apatite)Apatite & Pyrochlore$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_monazite)Bastnasite & Monazite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)Bauxite & Ilmenite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_quartz)Certus Quartz$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_magnetite)Chromite & Magnetite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sheldonite)Cooperite & Bornite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_desh)Desh & Ilmenite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_beryllium)Emerald & Beryllium$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnierite)Garnierite & Cobaltite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_mica)Kyanite, Mica, & Bauxite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_manganese)Manganese & Tantalum$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_pyrolusite)Pyrolusite and Cobalt$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)Redstone, Cinnabar, & Ruby$()$()",
+      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_garnet)Amethyst, Opal, & Garnet$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_apatite)Apatite & Pyrochlore$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_monazite)Bastnasite & Monazite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)Bauxite & Ilmenite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_cassiterite)Cassiterite & Chalcopyrite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_quartz)Certus Quartz$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_magnetite)Chromite & Magnetite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sheldonite)Cooperite & Bornite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_desh)Desh & Ilmenite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_beryllium)Emerald & Beryllium$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnierite)Garnierite & Cobaltite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gold)Gold & Magnetite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gypsum)Gypsum & Calcite$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_saltpeter)Saltpeter & Electrotine$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sapphire)Sapphire & Almandine$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_scheelite)Scheelite & Tungstate$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_silver)Silver, Galena, & Lead$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_lubricant)Soapstone, Talc, & Trona$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sphalerite)Sphalerite & Pyrite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_topaz)Topaz & Chalcocite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)Wulfenite & Molybdenite$()$()",
+      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_mica)Kyanite, Mica, & Bauxite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_manganese)Manganese & Tantalum$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_pyrolusite)Pyrolusite and Cobalt$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)Redstone, Cinnabar, & Ruby$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_saltpeter)Saltpeter & Electrotine$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sapphire)Sapphire & Almandine$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_scheelite)Scheelite & Tungstate$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_silver)Silver, Galena, & Lead$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_lubricant)Soapstone, Talc, & Trona$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sphalerite)Sphalerite & Pyrite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_tetrahedrite)Tetrahedrite & Chalcocite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_topaz)Topaz & Chalcocite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)Wulfenite & Molybdenite$()$()",
       "type": "patchouli:text"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Rarity$(): 230$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 10 — 128$(br)$(thing)Size$(): 35$(br)$(thing)Height$(): 7$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Rhyolite",
+      "title": "Amethyst, Opal, & Garnet",
+      "type": "patchouli:text",
+      "anchor": "moon_garnet"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Amethyst",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/amethyst"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 38%$(br)$(thing)Source of$(): Iron$(br)$(thing)Formula$(): (SiO₂)₄Fe",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Opal",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/opal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 38%$(br)$(thing)Source of$(): Silicon, Oxygen$(br)$(thing)Formula$(): (SiO₂)",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Yellow Garnet",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/yellow_garnet"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 14%$(br)$(thing)Source of$(): Andradite, Grossular, Uvarovite",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Red Garnet",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/red_garnet"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 9%$(br)$(thing)Source of$(): Pyrope, Almandine, Spessartine",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:empty",
@@ -277,6 +369,98 @@
       "enable_visualize": false,
       "text": "$(thing)Percentage$(): 21%$(br)$(thing)Source of$(): Magnesium, Rutile, Titanium$(br)$(thing)Formula$(): (Mg,Fe)Ti₂O₅",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Rarity$(): 210$(br)$(thing)Density$(): 0.3$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 10 — 128$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Granite, Norite",
+      "title": "Cassiterite & Chalcopyrite",
+      "type": "patchouli:text",
+      "anchor": "moon_cassiterite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Cassiterite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cassiterite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 41%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): SnO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Chalcopyrite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcopyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 35%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): CuFeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Tin",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tin"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 17%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): Sn",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Zeolite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/zeolite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 5%$(br)$(thing)Source of$(): Aluminium, Oxygen$(br)$(thing)Formula$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -877,6 +1061,98 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)Rarity$(): 170$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 10 — 80$(br)$(thing)Size$(): 40$(br)$(thing)Height$(): 10$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Basalt, Diorite, Granite",
+      "title": "Gold & Magnetite",
+      "type": "patchouli:text",
+      "anchor": "moon_gold"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Native Gold",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gold"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 55%$(br)$(thing)Melts into$(): Gold$(br)$(thing)Formula$(): Au",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Bauxite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bauxite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 20%$(br)$(thing)Source of$(): Aluminium$(br)$(thing)Formula$(): Al₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Magnetite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/magnetite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 20%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): Fe₃O₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Green Sapphire",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/green_sapphire"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 5%$(br)$(thing)Source of$(): Aluminium$(br)$(thing)Formula$(): Al₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)Rarity$(): 260$(br)$(thing)Density$(): 0.55$(br)$(thing)Type$(): Pipe Vein$(br)$(thing)Y$(): 0 — 120$(br)$(thing)Height$(): 60$(br)$(thing)Radius$(): 12$(br)$(thing)Indicator Max Depth$(): 50$(br2)$(thing)Stone Types$(): Anorthosite, Basalt, Basalt, Gabbro, Phonolite",
       "title": "Graphite & Diamond",
       "type": "patchouli:text",
@@ -940,6 +1216,113 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Percentage$(): 10%$(br)$(thing)Source of$(): Magnesium, Iron$(br)$(thing)Formula$(): Mg₂Fe(SiO₂)₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Rarity$(): 180$(br)$(thing)Density$(): 0.3$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 10 — 100$(br)$(thing)Size$(): 40$(br)$(thing)Height$(): 9$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Anorthosite, Norite, Phonolite",
+      "title": "Gypsum & Calcite",
+      "type": "patchouli:text",
+      "anchor": "moon_gypsum"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Gypsum",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gypsum"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 35%$(br)$(thing)Used for$(): Alabaster (dyeable) bricks$(br)$(thing)Formula$(): CaS(H₂O)₂O₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Calcite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/calcite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 25%$(br)$(thing)Source of$(): Calcium$(br)$(thing)Formula$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Borax",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/borax"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 20%$(br)$(thing)Source of$(): Sodium, Boron$(br)$(thing)Formula$(): Na₂B₄(H₂O)₁₀O₇",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Alunite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/alunite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Source of$(): Potassium, Aluminium$(br)$(thing)Formula$(): KAl₃Si₂H₆O₁₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Olivine",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/olivine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 5%$(br)$(thing)Source of$(): Magnesium, Iron$(br)$(thing)Formula$(): Mg₂Fe(SiO₂)₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1011,10 +1394,10 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Pollucite",
+      "name": "Aluminium",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/pollucite"
+          "0": "#forge:ores/aluminium"
         },
         "pattern": [
           [
@@ -1026,7 +1409,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 14%$(br)$(thing)Source of$(): Caesium, Aluminium$(br)$(thing)Formula$(): Cs₂Al₂Si₄(H₂O)₂O₁₂",
+      "text": "$(thing)Percentage$(): 14%$(br)$(thing)Source of$(): Aluminium$(br)$(thing)Formula$(): Al",
       "type": "patchouli:multiblock"
     },
     {
@@ -1856,6 +2239,98 @@
       "enable_visualize": false,
       "text": "$(thing)Percentage$(): 15%$(br)$(thing)Source of$(): Iron, Titanium, Nitrogen$(br)$(thing)Formula$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Rarity$(): 190$(br)$(thing)Density$(): 0.3$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 50 — 128$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Andesite, Dacite, Phonolite, Rhyolite",
+      "title": "Tetrahedrite & Chalcocite",
+      "type": "patchouli:text",
+      "anchor": "moon_tetrahedrite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Tetrahedrite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tetrahedrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 40%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₃SbS₃Fe",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Chalcocite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcocite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 25%$(br)$(thing)Source of$(): Copper$(br)$(thing)Formula$(): Cu₂S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Stibnite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/stibnite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 20%$(br)$(thing)Smelts into$(): Antimony$(br)$(thing)Formula$(): Sb₂S₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Native Copper",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/copper"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",

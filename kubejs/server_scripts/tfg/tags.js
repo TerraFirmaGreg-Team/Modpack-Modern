@@ -12,6 +12,19 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:compost_greens_high', 'tfg:sunflower_product')
 	event.add('tfg:water_breathing_ingredients', 'tfg:rapeseed_product')
 	event.add('tfg:night_vision_ingredients', 'tfg:sunflower_product')
+
+	event.add('c:hidden_from_recipe_viewers', 'tfg:ash_pile')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/black_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/brown_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/green_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/pink_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/red_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/white_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/yellow_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/moon_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/venus_sand')
+
 	//temporary hidden items
 	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source_small')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source')
@@ -49,7 +62,6 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:harvester', 'tfg:harvest_basket')
 	event.add('tfg:harvester', 'tfg:aluminium_harvest_basket')
 
-	event.removeAll('tfc:propicks')
 	event.add('tfg:tools/ore_prospectors/copper', 'tfc:metal/propick/copper')
 	event.add('tfg:tools/ore_prospectors/bronze', 'tfc:metal/propick/bronze')
 	event.add('tfg:tools/ore_prospectors/bronze', 'tfc:metal/propick/bismuth_bronze')

@@ -56,7 +56,7 @@ This modpack is still a work in progress, and is constantly being updated. In it
 
 Interested in contributing? For detailed setup instructions, coding standards, and guidelines, please read [this](CONTRIBUTING.md).
 
-Want to help translate? Please read [this](../kubejs/README%20IF%20TRANSLATING.md) instead.
+Want to help translate? Please read [this](../kubejs/README_IF_TRANSLATING.md) instead.
 
 ---
 

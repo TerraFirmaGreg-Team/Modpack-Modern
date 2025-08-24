@@ -922,7 +922,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: 'gtceu:glass_tube',
 		B: '#forge:bolts/steel',
-		C: 'gtceu:treated_wood_plate',
+		C: 'gtceu:wood_plate',
 		D: 'gtceu:red_alloy_single_wire',
 		E: '#forge:plates/wrought_iron',
 		F: '#forge:tools/screwdrivers',
@@ -931,7 +931,7 @@ const registerCreateRecipes = (event) => {
 
 	event.recipes.createSequencedAssembly([
 		'2x create:electron_tube',
-	], 'gtceu:treated_wood_plate', [
+	], 'gtceu:wood_plate', [
 		event.recipes.createDeploying('tfg:unfinished_electron_tube', ['tfg:unfinished_electron_tube', '#forge:plates/wrought_iron']),
 		event.recipes.createDeploying('tfg:unfinished_electron_tube', ['tfg:unfinished_electron_tube', 'gtceu:red_alloy_single_wire']),
 		event.recipes.createDeploying('tfg:unfinished_electron_tube', ['tfg:unfinished_electron_tube', 'gtceu:red_alloy_single_wire']),

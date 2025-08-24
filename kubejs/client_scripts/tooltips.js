@@ -1,130 +1,126 @@
 "use strict";
 
+/**
+ * @param {Internal.ItemTooltipEventJS} event 
+ */
 const registerTooltips = (event) => {
-	event.addAdvanced(['gtceu:lv_macerator', 'gtceu:mv_macerator', 'gtceu:hp_steam_macerator'], (item, advanced, text) => {
-		text.add(1, [text.of('§7Only outputs the first slot shown in EMI/JEI until HV.')])
-	})
+	//Your IDE may say that "item" and "advanced" are never used, but they are required! So dont remove them <3
+	
 	event.addAdvanced(['minecraft:name_tag'], (item, advanced, text) => {
-		text.add(1, [text.of('§7Used on a Scribing Table along with an item to name it, or with black dye to name the tag.')])
+		text.add(1, Text.translate('tfg.tooltip.nametag'))
 	})
 	event.addAdvanced(['firmalife:bucket/yeast_starter'], (item, advanced, text) => {
-		text.add(1, [text.of('§7Created with dried fruit')])
+		text.add(1, Text.translate('tfg.tooltip.yeast_starter'))
 	})
 	event.addAdvanced(['firmalife:beehive'], (item, advanced, text) => {
-		text.add(1, [text.of('§7Needs to be filled with empty frames and surrounded by flowers to attract bees.')])
-	})
-	event.addAdvanced(["treetap:tap"], (item, advanced, text) => {
-		text.add(1, [text.of("§4Obsolete§f: Replaced by the AFC TreeTap, you can craft it from this one by placing this in a crafting table!")])
-	})
-	event.addAdvanced(["tfcea:refrigerator"], (item, advanced, text) => {
-		text.add(1, [text.of("§4Obsolete§f: Replaced by the GregTech Refrigerator, you can craft it from this one by placing this in a crafting table!")])
+		text.add(1, Text.translate('tfg.tooltip.beehive'))
 	})
 	event.addAdvanced(['create:blaze_burner'], (item, advanced, text) => {
-		text.add(1, text.of('§cSuperheat§r §7with Coke, Anthracite, or Flawless and Exquisite coal gems.'))
+		text.add(1, Text.translate('tfg.tooltip.blaze_burner'))
 	})
 	event.addAdvanced(['tfg:electric_greenhouse'], (item, advanced, text) => {
-		text.add(1, text.of('This machine has a §2Perfect Overclock§r!')),
-		text.add(2, text.of(`The interior is customizable! Check the multiblock preview in JEI.`))
+		text.add(1, Text.translate('tfg.tooltip.machine.perfect_overclock')),
+		text.add(2, Text.translate('tfg.tooltip.machine.customize_interior'))
 	})
 	event.addAdvanced(['gtceu:large_chemical_reactor'], (item, advanced, text) => {
-		text.add(1, text.of('This machine has a §2Perfect Overclock§r!'))
+		text.add(1, Text.translate('tfg.tooltip.machine.perfect_overclock'))
 	})
 	event.addAdvanced(['gtceu:nether_dome'], (item, advanced, text) => {
-		text.add(1, text.of('§7Artificial enviroment to simulate the Nether.')),
-		text.add(2, text.of(`§7The interior is customizable! Check the multiblock preview in JEI.`))
+		text.add(1, Text.translate('tfg.tooltip.nether_dome_1')),
+		text.add(2, Text.translate('tfg.tooltip.machine.customize_interior'))
 	})
 	event.addAdvanced(['gtceu:end_dome'], (item, advanced, text) => {
-		text.add(1, text.of('§7Artificial enviroment to simulate the End.')),
-		text.add(2, text.of(`§7The interior is customizable! Check the multiblock preview in JEI.`))
+		text.add(1, Text.translate('tfg.tooltip.end_dome_1')),
+		text.add(2, Text.translate('tfg.tooltip.machine.customize_interior'))
 	})
 
 	// Insulation
 	event.addAdvanced(['create:copper_diving_helmet', 'create:copper_backtank', 'create:copper_diving_boots'], (item, advanced, text) => {
-		text.add(1, text.of('§7Warmth: -1')),
-		text.add(2, text.of('§7Insulation: +1'))
+		text.add(1, Text.translate('tfg.tooltip.armor.copper_diving_suit_warmth')),
+		text.add(2, Text.translate('tfg.tooltip.armor.copper_diving_suit_insulation'))
 	})
 	event.addAdvanced(['create:netherite_diving_helmet', 'create:netherite_backtank', 'create:netherite_diving_boots', 'minecraft:netherite_leggings'], (item, advanced, text) => {
-		text.add(1, text.of('§7Warmth: -2')),
-		text.add(2, text.of('§7Insulation: +9'))
-		text.add(3, text.of('§7Wear the full set to be §eHeatproof§7 from ambient temperatures.'))
+		text.add(1, Text.translate('tfg.tooltip.armor.netherite_diving_suit_warmth')),
+		text.add(2, Text.translate('tfg.tooltip.armor.netherite_diving_suit_insulation'))
+		text.add(3, Text.translate('tfg.tooltip.armor.netherite_diving_suit_set'))
 	})
 	event.addAdvanced(['gtceu:nanomuscle_helmet', 'gtceu:nanomuscle_chestplate', 'gtceu:nanomuscle_leggings', 'gtceu:nanomuscle_boots', 'gtceu:advanced_nanomuscle_chestplate'], (item, advanced, text) => {
-		text.add(1, text.of('§7Warmth: 0')),
-		text.add(2, text.of('§7Insulation: +10'))
-		text.add(3, text.of('§7Wear the full set to be §eFully Insulated§7 from ambient temperatures.'))
+		text.add(1, Text.translate('tfg.tooltip.armor.nanomuscle_warmth')),
+		text.add(2, Text.translate('tfg.tooltip.armor.nanomuscle_insulation'))
+		text.add(3, Text.translate('tfg.tooltip.armor.nanomuscle_set'))
 	})
 	event.addAdvanced(['gtceu:quarktech_helmet', 'gtceu:quarktech_chestplate', 'gtceu:quarktech_leggings', 'gtceu:quarktech_boots', 'gtceu:advanced_quarktech_chestplate'], (item, advanced, text) => {
-		text.add(1, text.of('§7Warmth: 0')),
-		text.add(2, text.of('§7Insulation: +10'))
-		text.add(3, text.of('§7Wear the full set to be §eFully Insulated§7 from ambient temperatures.'))
+		text.add(1, Text.translate('tfg.tooltip.armor.quarktech_warmth')),
+		text.add(2, Text.translate('tfg.tooltip.armor.quarktech_insulation'))
+		text.add(3, Text.translate('tfg.tooltip.armor.quarktech_set'))
 	})
 	event.addAdvanced([
 		'ad_astra:space_helmet', 'ad_astra:space_suit', 'ad_astra:space_pants', 'ad_astra:space_boots',
 		'ad_astra:netherite_space_helmet', 'ad_astra:netherite_space_suit', 'ad_astra:netherite_space_pants', 'ad_astra:netherite_space_boots',
 		'ad_astra:jet_suit_helmet', 'ad_astra:jet_suit', 'ad_astra:jet_suit_pants', 'ad_astra:jet_suit_boots'
 	], (item, advanced, text) => {
-		text.add(1, text.of('§7Warmth: 0')),
-		text.add(2, text.of('§7Insulation: +10'))
-		text.add(3, text.of('§7Wear the full set to be §eFully Insulated§7 from ambient temperatures.'))
+		text.add(1, Text.translate('tfg.tooltip.armor.space_suit_warmth')),
+		text.add(2, Text.translate('tfg.tooltip.armor.space_suit_insulation'))
+		text.add(3, Text.translate('tfg.tooltip.armor.space_suit_set'))
 	})
 
 	// Supports
 	global.TFC_WOOD_TYPES.forEach(wood => {
 		event.addAdvanced([`tfc:wood/support/${wood}`], (item, advanced, text) => {
-			text.add(1, text.of('§79 x 5 x 9'))
+			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
 		})
 	})
 	global.AFC_WOOD_TYPES.forEach(wood => {
 		event.addAdvanced([`afc:wood/support/${wood}`], (item, advanced, text) => {
-			text.add(1, text.of('§79 x 5 x 9'))
+			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
 		})
 	})
 	global.AD_ASTRA_WOOD.forEach(wood => {
 		event.addAdvanced([`tfg:${wood.name}_support`], (item, advanced, text) => {
-			text.add(1, text.of('§79 x 5 x 9'))
+			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
 		})
 	})
 	event.addAdvanced(['tfg:light_concrete_support', 'tfg:dark_concrete_support', 'tfg:rebar_support'], (item, advanced, text) => {
-		text.add(1, text.of('§717 x 9 x 17'))
+		text.add(1, Text.translate('tfg.tooltip.support.tier2'))
 	})
 	event.addAdvanced(['tfg:reinforced_light_concrete_support', 'tfg:reinforced_dark_concrete_support', 'tfg:steel_support'], (item, advanced, text) => {
-		text.add(1, text.of('§733 x 13 x 33'))
+		text.add(1, Text.translate('tfg.tooltip.support.tier3'))
 	})
 	const other_stone = ['pyroxenite', 'migmatite', 'travertine']
 	const stone_types = global.TFC_STONE_TYPES.concat(other_stone)
 
 	stone_types.forEach(stone => {
 		event.addAdvanced([`tfg:${stone}_support`], (item, advanced, text) => {
-			text.add(1, text.of('§79 x 5 x 9'))
+			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
 		})
 	})
 
 	// Vessels
 	event.addAdvanced(['#tfc:fired_vessels'], (item, advanced, text) => {
-		text.add(1, text.of('§cMax: 3024mB'))
+		text.add(1, Text.translate('tfg.tooltip.vessels'))
 
 	})
 
 	// Solar Panel
 	event.addAdvanced(['ad_astra:solar_panel'], (item, advanced, text) => {
-		text.add(1, text.of('Produces §6256 FE/t§r (64 EU/t) on the §6moon§r during the §6day§r'))
+		text.add(1, Text.translate('tfg.tooltip.solar_panel.single'))
 	})
 
 	event.addAdvanced(['gtceu:large_solar_panel'], (item, advanced, text) => {
-		text.add(1, text.of('Massive structure producing from §61024 to 4096 EU/t§r on the §6moon§r during the §6day§r'))
+		text.add(1, Text.translate('tfg.tooltip.solar_panel.large_tier1'))
 	})
 
 	event.addAdvanced(['gtceu:large_solar_panel_tier2'], (item, advanced, text) => {
-		text.add(1, text.of('Massive structure producing from §64096 to 16384 EU/t§r on the §6moon§r during the §6day§r'))
+		text.add(1, Text.translate('tfg.tooltip.solar_panel.large_tier2'))
 	})
 
 	event.addAdvanced(['gtceu:large_solar_panel_tier3'], (item, advanced, text) => {
-		text.add(1, text.of('Massive structure producing from §616384 to 65536 EU/t§r on the §6moon§r during the §6day§r'))
+		text.add(1, Text.translate('tfg.tooltip.solar_panel.large_tier3'))
 	})
 
 	// Mars Animals
 	event.addAdvanced(['species:petrified_egg'], (item, advanced, text) => {
-		text.add(1, text.of("§7Requires Magma to Incubate"))
+		text.add(1, Text.translate('tfg.tooltip.petrified_egg'))
 	})
 	
 	event.addAdvanced(['tfg:sniffer_egg'], (item, advanced, text) => {
@@ -151,11 +147,18 @@ const registerTooltips = (event) => {
 	})
 	
 
-	// MEGA Deprecated 0.10
+	//#region Deprecated Items
 	event.addAdvanced(['#megacells:mega_interface'], (item, advanced, text) => {
-		text.add(1, text.of('§cDeprecated, cannot be crafted any more'))
+		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
 	})
 	event.addAdvanced(['#megacells:mega_pattern_provider'], (item, advanced, text) => {
-		text.add(1, text.of('§cDeprecated, cannot be crafted any more'))
+		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
 	})
+	event.addAdvanced(["treetap:tap"], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.obsolete.tree_tap'))
+	})
+	event.addAdvanced(["tfcea:refrigerator"], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.obsolete.fridge'))
+	})
+	//#endregion
 }

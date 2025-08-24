@@ -1,0 +1,8 @@
+
+[propick_vein_rendering]
+	#
+	#
+	#1 in N chance for the precise xray ore prospector particles to appear per block. Set to 0 to disable. Default: 5
+	#Range: 0 ~ 1000
+	PreciseOreProspectorParticleChance = 5
+

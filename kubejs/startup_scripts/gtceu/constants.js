@@ -183,7 +183,12 @@ global.GTCEU_DISABLED_ITEMS = [
 	'gtceu:mossy_marble_cobblestone',
 	'gtceu:marble_bricks',
 	'gtceu:cracked_marble_bricks',
-	'gtceu:mossy_marble_bricks'
+	'gtceu:mossy_marble_bricks',
+
+	// Machine Bedrock Miner
+	'gtceu:mv_bedrock_ore_miner',
+	'gtceu:hv_bedrock_ore_miner',
+	'gtceu:ev_bedrock_ore_miner'
 ];
 //#endregion
 

@@ -128,8 +128,9 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.tfc.barrel_sealed(2000)
 		.outputItem('gtceu:treated_wood_dust')
-		.inputs('tfg:chipboard_composite', TFC.fluidStackIngredient('#forge:creosote', 50))
-		.id('tfg:barrel/treated_chipboard_composite')
+		.inputs('#tfg:wood_dusts', TFC.fluidStackIngredient('#forge:creosote', 50))
+		.id('tfg:barrel/treated_wood_dust')
+		
 	//#endregion
 
 	//#region Выход: Капля резины
@@ -1362,7 +1363,7 @@ const registerGTCEURecipes = (event) => {
 		'ADA',
 		'BCB'
 	], {
-		A: '#gtceu:circuits/iv',
+		A: '#gtceu:circuits/ev',
 		B: 'gtceu:ev_electric_motor',
 		C: 'gtceu:aluminium_single_cable',
 		D: 'gtceu:ev_centrifuge',
@@ -1399,4 +1400,36 @@ const registerGTCEURecipes = (event) => {
 	event.replaceOutput({ id: 'gtceu:cutter/treated_button' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
 	event.replaceOutput({ id: 'gtceu:cutter/treated_button_water' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
 	event.replaceOutput({ id: 'gtceu:cutter/treated_button_distilled_water' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
+
+	//#region Replace Recipe
+
+	event.remove({ id : 'gtceu:assembly_line/me_pattern_buffer_proxy'})
+	event.recipes.gtceu.assembly_line('tfg:me_pattern_buffer_proxy')
+		.itemInputs(
+			'gtceu:luv_machine_hull',
+			'2x gtceu:luv_sensor',
+			'#gtceu:circuits/luv',
+			'gtceu:fusion_glass',
+			'2x ae2:quantum_ring',
+			'32x gtceu:fine_europium_wire',
+			'32x gtceu:fine_europium_wire',
+			'16x megacells:accumulation_processor')
+		.inputFluids(Fluid.of('gtceu:lubricant', 500))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*4))
+		.stationResearch(b => b.researchStack(Item.of('gtceu:me_pattern_buffer')).EUt(GTValues.VA[GTValues.LuV]).CWUt(32))
+		.itemOutputs('gtceu:me_pattern_buffer_proxy')
+		.duration(30*20)
+		.EUt(GTValues.VA[GTValues.ZPM])
+
+	event.replaceInput({ id: 'gtceu:assembly_line/me_pattern_buffer' }, 'ae2:pattern_provider', '3x expatternprovider:ex_pattern_provider')
+	event.replaceInput({ id: 'gtceu:assembly_line/me_pattern_buffer' }, 'ae2:interface', '3x expatternprovider:oversize_interface')
+
+	event.replaceInput({ id: 'gtceu:shaped/large_combustion_engine' }, '#gtceu:circuits/iv', '#gtceu:circuits/ev')
+	event.replaceInput({ id: 'gtceu:shaped/nano_chestplate_advanced' }, '#gtceu:circuits/iv', '#gtceu:circuits/ev')
+	event.replaceInput({ id: 'gtceu:assembler/ev_large_miner' }, '#gtceu:circuits/iv', '#gtceu:circuits/ev')
+
+	//# Circuit Board
+
+	event.replaceInput({ id: 'gtceu:assembler/phenolic_board' }, '#tfg:wood_dusts', 'tfg:high_density_treated_fiberboard')
+	
 }

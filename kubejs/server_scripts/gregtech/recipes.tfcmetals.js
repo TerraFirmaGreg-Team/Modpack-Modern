@@ -43,7 +43,6 @@ function registerGTCEuTFCMetalsRecipes(event) {
 	event.remove({ id: 'gtceu:electric_blast_furnace/blast_black_bronze' })
 	event.remove({ id: 'gtceu:electric_blast_furnace/blast_black_bronze_gas' })
 	event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_black_bronze_ingot' })
-	event.remove({ id: 'gtceu:vacuum_freezer/black_bronze' })
 	event.remove({ id: 'gtceu:electric_blast_furnace/blast_sterling_silver' })
 	event.remove({ id: 'gtceu:electric_blast_furnace/blast_sterling_silver_gas' })
 	event.remove({ id: 'gtceu:electric_blast_furnace/blast_rose_gold' })

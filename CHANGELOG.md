@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 ### Changes
+### Bug fixes
+
+## [0.10.10] - 23-08-2025
+### Major changes
 - Complete rework of prospector's picks. (#1594) @Redeix
+- Removed the mod that was causing placed entities to sometimes not spawn
+- Removed energy P2P (#1661) @TomPlop @BlueBoat29
+- Removed GT bedrock miners, replaced with a new system for Moon infinites (#1569) @TomPlop
+- Buffed Large Solar Panel MK I so now it has a consistent EV-generating recipe, but halved the output of ad astra solar panels on the moon @TomPlop @Pyritie
+### Changes
 - Rebalance Large Solar Array to make Mk2 circuit 2 viable, and buffed to LSA Mk3 circuit 2 (#1591) @TomPlop
 - Added mechanical press recipes to weld weak steels @Pyritie
 - Added backpacks, lunchboxes, and vessels to the toolbelt's blacklist @Pyritie
@@ -13,16 +22,37 @@
 - Fixed recipe for pyroxenite button (again) (#1625) @Pyritie
 - Refactored locometal recipes to use stonecutters, metal plated locometal is now also much cheaper (#1624) @Pyritie
 - Increased the air capacity of space suits by 250% @Pyritie
+- Converted custom tooltips to lang strings for translations (#1663) @Redeix
+- Fixed grammar on death messages and added some new ones (#1642) @vdegans
+- Added IV fridge, and IV-UV aqueous accumulator, food processor, food oven, and gas compressor machines @Pyritie
+- Added machine recipes for the wrought iron grill @Pyritie
+- Added recipes for redyeing/bleaching shipping containers (#1631) @Pyritie
+- Adjusted recipes for ME Interface and Pattern Provider for consistency (#1569) @TomPlop
+- Changed the cost of the ME Quantum Tunnel (#1569) @TomPlop
+- Alabaster is now renewable via rock breaker @gustovafing
+- Added a new ore vein to all dimensions for gypsum, calcite, borax, and fuller's earth @Pyritie
+- Added some more moon ore veins for copper, tin, gold, aluminium.. nothing exciting @Pyritie
+- Changed the recipe for the infinity construction wand @Pyritie
+- Rebalanced the liquid blaze burner fuel recipes to be more in-line with GregTech generation @Pyritie
+- Changed the recipes for the circuit boards required for the electron tube and vacuum tube, and phenolic circuit board @TomPlop
 ### Bug fixes
 - Fixed moon mob spawning light levels, so now they need a light level of 0 instead of 11 (#1587) @NINAustinFett
 - Fixed wrong output amount of mortaring soybean paste (#1607) @TomPlop
 - Fixed duplicate mixer recipes for rose gold and sterling silver @Pyritie
+- Added missing rose gold + sterling silver alloy smelter recipes (#1664) @Redeix
 - Fixed mechanical mixers requiring an alloy that needed that tier of mixer @Pyritie
 - Finally fixed all the issues with upgrading the toolbelt - now you can safely dye and undye, upgrade with and without tools inside it, etc (#368) @Pyritie
 - Fixed a dupe with certus quartz @Pyritie
 - Moved the golden apple recipe over to the food processor so it respects food expiry data @Pyritie
 - Removed some remaining swine-steel crafting recipes @Pyritie
 - Added missing hoe/scythe mineable tags from custom crops (#1622) @Pyritie
+- Fixed some (but not all) model issues with the reflector block (#1664) @Redeix
+- Fixed food processor outputs not stacking @gustovafing
+- Fixed using the grappling hook on a ladder killing you (#106) @Zippity 
+- Added more missing food processor recipes (#1632, #1638) @Pyritie
+- Fixed a few stuck quests (#1667, #1666) @Wicpar
+- Fixed inconsistent quern and macerator recipes for small tfc ores (#1672) @Pyritie
+- Fixed recipe conflict with ceramic bricks and create deco colored bricks @Pyritie
 
 ## [0.10.9] - 10-08-2025
 ### Changes

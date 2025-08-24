@@ -57,7 +57,7 @@
 [whitelist]
 	#Whitelist. Read about the format here: https://github.com/Tschipp/CarryOn/wiki/Black---and-Whitelist-Config
 	#Entities that CAN be picked up (useWhitelistEntities must be true)
-	allowedEntities = ["tfc:turkey", "tfc:isopod", "tfc:lobster", "tfc:frog", "tfc:penguin", "tfc:turtle", "tfc:horseshoe_crab", "tfc:crayfish", "tfc:grouse", "tfc:pheasant", "tfc:peafowl", "tfc:rat", "tfc:chicken", "tfc:duck", "tfc:quail", "tfc:rabbit"]
+	allowedEntities = ["tfc:turkey", "tfc:isopod", "tfc:lobster", "tfc:frog", "tfc:penguin", "tfc:turtle", "tfc:horseshoe_crab", "tfc:crayfish", "tfc:grouse", "tfc:pheasant", "tfc:peafowl", "tfc:rat", "tfc:chicken", "tfc:duck", "tfc:quail", "tfc:rabbit", "tfg:moon_rabbit", "species:birt"]
 	#Blocks that CAN be picked up (useWhitelistBlocks must be true)
 	allowedBlocks = ["framedblocks:framed_chest", "tfc:wood/chest/*", "tfc:wood/trapped_chest/*", "afc:wood/chest/*", "afc:wood/trapped_chest/*", "#forge:chests/wooden"]
 	#Entities that CAN have other entities stacked on top of them (useWhitelistStacking must be true)

@@ -83,14 +83,14 @@
 3. Select Minecraft version **`1.20.1`** and Forge version **`47.2.6`** — these versions are necessary for the modpack to work correctly.
 
 > [!TIP]  
-> ![Interface for creating a new instance in PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/guide/new_instances.png?raw=true)
+> ![Interface for creating a new instance in PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/wiki/new_instances.png?raw=true)
 
 #### Step 3: Cleaning the Project Folder
 1. Locate the instance folder in the PrismLauncher directory at **`TerraFirmaGreg-Modern/minecraft`**.
 
 > [!TIP]  
 > For quick access, right-click on the instance and select **`Folder`**.  
-> ![Instance folder in PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/guide/prism_folder.png?raw=true)
+> ![Instance folder in PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/wiki/prism_folder.png?raw=true)
 
 > [!WARNING]  
 > Delete all files and directories inside the `minecraft` folder to avoid version conflicts and leftover old data.
@@ -237,6 +237,12 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
 
 ### 3. Additional Recommendations
 
+- #### Semantic Versioning Rules:
+    - The project follows [Semantic Versioning](https://semver.org/).
+    - **Patch**: Bug fixes and small changes (`1.0.0` → `1.0.1`)
+    - **Minor**: New features that don't break compatibility (`1.0.0` → `1.1.0`)
+    - **Major**: Breaking changes (`1.0.0` → `2.0.0`)
+
 - #### Working with Git: 
     - Create separate branches for each new functionality or bug fix.
     - Regularly synchronize your fork with the original repository to avoid conflicts.
@@ -316,14 +322,14 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
 3. Выберите версию Minecraft **`1.20.1`** и версию **`Forge 47.2.6`** — именно эти версии необходимы для корректной работы модпака.
 
 > [!TIP]  
-> ![Интерфейс для создания новой инстанции в PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/guide/new_instances.png?raw=true)
+> ![Интерфейс для создания новой инстанции в PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/wiki/new_instances.png?raw=true)
 
 #### Шаг 3: Очистка папки проекта
 1. Найдите папку инстанции в директории PrismLauncher по пути **`TerraFirmaGreg-Modern/minecraft`**.
 
 > [!TIP]  
 > Для быстрого доступа нажмите правой кнопкой по инстанции и выберите **`Folder`**.  
-> ![Папка инстанции в PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/guide/prism_folder.png?raw=true)
+> ![Папка инстанции в PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/wiki/prism_folder.png?raw=true)
 
 > [!WARNING]  
 > Удалите все файлы и каталоги внутри папки `minecraft`, чтобы избежать конфликтов версий и остатков старых данных.
@@ -469,6 +475,12 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
 ---
 
 ### 3. Дополнительные рекомендации
+
+- #### Правила семантического версионирования:
+    - The project follows [Semantic Versioning](https://semver.org/).
+    - **Patch**: Исправлены ошибки и небольшие изменения (`1.0.0` → `1.0.1`)
+    - **Minor**: Новые функции, которые не нарушают совместимость (`1.0.0` → `1.1.0`)
+    - **Major**: Критические изменения (`1.0.0` → `2.0.0`)
 
 - #### Работа с Git: 
     - Создавайте отдельные ветки для каждой новой функциональности или исправления ошибок. 

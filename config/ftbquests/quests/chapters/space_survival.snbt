@@ -154,27 +154,6 @@
 	]
 	quests: [
 		{
-			dependencies: ["5826EC76931359B8"]
-			description: ["{quests.space_survival.bedrock_mining.desc}"]
-			icon: "gtceu:mv_bedrock_ore_miner"
-			id: "3C92063DE5B9D5E9"
-			subtitle: "{quests.space_survival.bedrock_mining.subtitle}"
-			tasks: [{
-				id: "7768441FAA017BB1"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:mv_bedrock_ore_miner)item(gtceu:hv_bedrock_ore_miner)item(gtceu:ev_bedrock_ore_miner))"
-					}
-				}
-				type: "item"
-			}]
-			title: "{quests.space_survival.bedrock_mining.title}"
-			x: -1.0d
-			y: 1.0d
-		}
-		{
 			dependencies: ["16B735F9C391D260"]
 			description: ["{quests.space_survival.preparations.desc}"]
 			disable_toast: true
@@ -456,10 +435,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: [
-				"5826EC76931359B8"
-				"3C92063DE5B9D5E9"
-			]
+			dependencies: ["5826EC76931359B8"]
 			description: [
 				"{quests.space_survival.railgun.desc.1}"
 				"{@pagebreak}"

@@ -8,10 +8,11 @@
         "config",
         "defaultconfigs",
         "kubejs",
-		"tacz",
+        "tacz",
         "!kubejs/probe/**"
     ],
     "server_overrides": [
+        "!kubejs/assets",
         "forge-auto-install.txt",
         "generate_auto_installation_file.bat",
         "minecraft_server.jar",
@@ -19,8 +20,7 @@
         "server_starter.conf",
         "server-icon.png",
         "start_server.bat",
-        "README.md",
-        "!kubejs/assets/**"
+        "README.md"
     ],
     "client_overrides": [
         "resourcepacks"
@@ -155,8 +155,11 @@
         "embeddium": {
             "side": "CLIENT"
         },
-        "flickerfix": {
+        "first-person-model": {
             "side": "CLIENT"
+        },
+        "ftb-backups-2": {
+            "side": "BOTH"
         },
         "no-report-button": {
             "side": "CLIENT"
@@ -206,10 +209,10 @@
         "fast-ip-ping": {
             "side": "CLIENT"
         },
-        "entityculling": {
+        "badoptimizations": {
             "side": "CLIENT"
         },
-        "pick-up-notifier": {
+        "entityculling": {
             "side": "CLIENT"
         },
         "resourceful-config": {
@@ -236,10 +239,10 @@
         "xaeros-minimap": {
             "side": "BOTH"
         },
-        "xaeros-world-map": {
+        "particular-reforged": {
             "side": "BOTH"
         },
-        "particular-reforged": {
+        "pick-up-notifier": {
             "side": "BOTH"
         },
         "inventory-tweaks-refoxed": {
@@ -250,9 +253,6 @@
         },
         "detected-setblock-be-gone": {
             "side": "BOTH"
-        },
-        "ad-astra-auto-lander": {
-            "side": "CLIENT"
         },
         "probejs": {
             "export": false

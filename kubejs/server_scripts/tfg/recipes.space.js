@@ -97,6 +97,21 @@ function registerTFGSpaceRecipes(event) {
 		.addDataString("fluidA", "minecraft:lava")
 		.outputFluids(Fluid.of("minecraft:lava", 1000))
 
+	event.recipes.gtceu.aqueous_accumulator('spring_water')
+		.circuit(aaCircuit++)
+		.dimension('minecraft:overworld')
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.LV])
+		.addDataString("fluidA", "tfc:spring_water")
+		.outputFluids(Fluid.of("tfc:spring_water", 1000))
+
+	event.recipes.gtceu.aqueous_accumulator('more_water')
+		.circuit(aaCircuit++)
+		.duration(10)
+		.EUt(GTValues.VHA[GTValues.HV])
+		.addDataString("fluidA", "minecraft:water")
+		.outputFluids(Fluid.of("minecraft:water", 20000))
+
 	// Plants - Can't use the default builder here because fertiliser is much harder to get on the moon,
 	// and we're using helium-3 as the fertiliser
 
@@ -279,7 +294,7 @@ function registerTFGSpaceRecipes(event) {
 		'CHC',
 		'NEN'
 	], {
-		C: '#gtceu:circuits/iv',
+		C: '#gtceu:circuits/ev',
 		S: 'gtceu:hv_sensor',
 		E: 'gtceu:hv_emitter',
 		H: 'gtceu:ev_machine_hull',

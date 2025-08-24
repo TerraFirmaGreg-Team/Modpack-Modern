@@ -19,7 +19,7 @@
 	#Exclude WoodType from all of Modules
 	#    EXAMPLE: blacklist = [
 	#        "forestry:.*fireproof.*",		COMMENT: .* is an RegEx, it exclude all of WoodType containing "fireproof" from Forestry
-	#        "biomesoplenty:.*",				COMMENT: .* is an RegEx, it exclude all of WoodType from Wood Mod for any Module
+	#        "biomesoplenty:.*",			COMMENT: .* is an RegEx, it exclude all of WoodType from Wood Mod for any Module
 	#        "biomesoplenty:redwood"		COMMENT: exclude redwood from Wood Mod for any module
 	#    ]
 	#
@@ -34,9 +34,9 @@
 	#Exclude EntrySet from the module for All of WoodType or LeavesType
 	#    This is only applied to Wood-Good.
 	#    EXAMPLE: blacklist = [
-	#        "chipped:checkered_trapdoor",	COMMENT: chipped:checkered_oak_trapdoor without "oak"
-	#        "variantvanillablocks:chest",	COMMENT: variantvanillablocks:oak_chest without "oak"
-	#        "chipped:.*"					COMMENT: .* is an regex which will exclude all of EntrySets from one Module - Wood-Good ONLY
+	#        "chipped:checkered_trapdoor",		COMMENT: chipped:checkered_oak_trapdoor without "oak"
+	#        "variantvanillablocks:chest",		COMMENT: variantvanillablocks:oak_chest without "oak"
+	#        "chipped:.*"						COMMENT: .* is an regex which will exclude all of EntrySets from one Module - Wood-Good ONLY
 	#    ]
 	#
 	blacklist = []

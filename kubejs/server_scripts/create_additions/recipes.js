@@ -113,6 +113,7 @@ const registerCreateAdditionsRecipes = (event) => {
 		processingTime: 20 * 6
 	}).id(`tfg:vi/lathe/straw`)
 
+	// the amount is hardcoded to 100mb because create additions sucks
 	event.custom({
 		type: 'createaddition:liquid_burning',
 		input: {
@@ -126,99 +127,99 @@ const registerCreateAdditionsRecipes = (event) => {
 		type: 'createaddition:liquid_burning',
 		input: {
 			fluidTag: 'forge:creosote',
-			amount: 160
+			amount: 100
 		},
-		burnTime: 10 * 9 * 9
+		burnTime: 500
 	}).id('tfg:createadditions/liquid_burning/creosote')
 
 	event.custom({
 		type: 'createaddition:liquid_burning',
 		input: {
 			fluidTag: 'forge:biomass',
-			amount: 40
+			amount: 100
 		},
-		burnTime: 10 * 9 * 9
+		burnTime: 2000
 	}).id('tfg:createadditions/liquid_burning/biomass')
 
 	event.custom({
 		type: 'createaddition:liquid_burning',
 		input: {
 			fluidTag: 'forge:oil',
-			amount: 200
+			amount: 100
 		},
-		burnTime: 10 * 9 * 9
+		burnTime: 400
 	}).id('tfg:createadditions/liquid_burning/oil')
 
 	event.custom({
 		type: 'createaddition:liquid_burning',
 		input: {
 			fluidTag: 'forge:oil_heavy',
-			amount: 32
+			amount: 100
 		},
-		burnTime: 10 * 9 * 9
+		burnTime: 2500
 	}).id('tfg:createadditions/liquid_burning/oil_heavy')
 
 	event.custom({
 		type: 'createaddition:liquid_burning',
 		input: {
 			fluidTag: 'forge:sulfuric_heavy_fuel',
-			amount: 32
+			amount: 100
 		},
-		burnTime: 10 * 9 * 9
+		burnTime: 2500
 	}).id('tfg:createadditions/liquid_burning/sulfuric_heavy_fuel')
 
 	event.custom({
 		type: 'createaddition:liquid_burning',
 		input: {
 			fluidTag: 'forge:heavy_fuel',
-			amount: 16
+			amount: 100
 		},
-		burnTime: 30 * 9 * 9
+		burnTime: 7000
 	}).id('tfg:createadditions/liquid_burning/heavy_fuel')
 
 	event.custom({
 		type: 'createaddition:liquid_burning',
 		input: {
 			fluidTag: 'forge:fish_oil',
-			amount: 50
+			amount: 100
 		},
-		burnTime: 100 * 9 * 9
+		burnTime: 7000
 	}).id('tfg:createadditions/liquid_burning/fish_oil')
 
 	event.custom({
 		type: 'createaddition:liquid_burning',
 		input: {
 			fluid: 'tfc:olive_oil',
-			amount: 50
+			amount: 100
 		},
-		burnTime: 150 * 9 * 9
+		burnTime: 7000
 	}).id('tfg:createadditions/liquid_burning/olive_oil')
 
 	event.custom({
 		type: 'createaddition:liquid_burning',
 		input: {
 			fluid: 'firmalife:soybean_oil',
-			amount: 50
+			amount: 100
 		},
-		burnTime: 150 * 9 * 9
+		burnTime: 7000
 	}).id('tfg:createadditions/liquid_burning/soybean_oil')
 
 	event.custom({
 		type: 'createaddition:liquid_burning',
 		input: {
 			fluidTag: 'forge:seed_oil',
-			amount: 50
+			amount: 100
 		},
-		burnTime: 150 * 9 * 9
+		burnTime: 7000
 	}).id('tfg:createadditions/liquid_burning/seed_oil')
 
 	event.custom({
 		type: 'createaddition:liquid_burning',
 		input: {
 			fluid: 'gtceu:steam',
-			amount: 256
+			amount: 100
 		},
-		burnTime: 4 * 9 * 9
+		burnTime: 1
 	}).id('tfg:createadditions/liquid_burning/steam')
 	//#endregion
 	

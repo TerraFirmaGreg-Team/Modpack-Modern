@@ -825,7 +825,7 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.recipes.gtceu.assembler('sensor_iv')
 		.itemInputs('gtceu:quantum_eye', '#forge:rods/iridium', '#gtceu:circuits/iv', '4x #forge:plates/tungsten_steel')
-		.itemOutputs('gtceu:ev_sensor')
+		.itemOutputs('gtceu:iv_sensor')
 		.duration(100)
 		.EUt(30)
 	
@@ -880,6 +880,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		)
 		.inputFluids(Fluid.of('gtceu:glue', 50))
 		.itemOutputs('tfg:harvest_basket')
+		.circuit(2)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -1168,7 +1169,8 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.IV])
 	event.recipes.gtceu.mixer('tfg:aes_polyurethane_electric_only')
-		.itemInputs('tfg:aes_compressed_wool', '2x tfg:sniffer_wool','#forge:dusts/methylene_diphenyl_diisocyanate')
+		.itemInputs('tfg:aes_compressed_wool', //'2x tfg:sniffer_wool' REVERT UNTIL MARS,
+		'#forge:dusts/methylene_diphenyl_diisocyanate')
 		.inputFluids(Fluid.of('gtceu:diethylenetriamine', 250), Fluid.of('gtceu:acetone', 1000))
 		.itemOutputs('tfg:aes_polyurethane')
 		.duration(80)

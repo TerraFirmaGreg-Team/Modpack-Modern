@@ -29,6 +29,7 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_garnierite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_gold')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_graphite')
+	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_gypsum')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_hematite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_lapis')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_limonite')
@@ -57,14 +58,25 @@ const registerTFGOreVeinFeatures = (event) => {
 	// #endregion
 
 
+	// #region mars ores
+
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_hematite')
+
+	// #endregion
+
+
 	// #region moon ores
 
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_apatite')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_bauxite')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_beryllium')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_cassiterite')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_desh')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_garnet')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_garnierite')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_gold')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_graphite')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_gypsum')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_lubricant')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_magnetite')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_manganese')
@@ -80,6 +92,7 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_sheldonite')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_silver')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_sphalerite')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_tetrahedrite')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_topaz')
 
 	// #endregion
@@ -99,6 +112,7 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_goethite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_gold')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_graphite')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_gypsum')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_hematite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_lapis')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_lubricant')

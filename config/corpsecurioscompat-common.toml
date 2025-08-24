@@ -3,4 +3,6 @@
 [general]
 	#Items that should not be transferred to curios slots (format: 'modid:item')
 	blacklisted_items = []
+	#Whether cursed items should be transferred back to curios slots (true = transfer cursed items, false = don't transfer)
+	transfer_cursed_items = false
 

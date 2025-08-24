@@ -188,10 +188,6 @@ GTCEuServerEvents.oreVeins(event => {
 	event.removeAll()
 })
 
-GTCEuServerEvents.bedrockOreVeins(event => {
-	registerGTCEUBedrockOreVeins(event)
-})
-
 GTCEuServerEvents.fluidVeins(event => {
 	registerGTCEUBedrockFluidVeins(event)
 })
