@@ -169,7 +169,7 @@ jobs:
           MINECRAFT_VERSION=$(echo "$MC_VERSIONS_JSON" | jq -r '.[0]' | tr -d '[]"')
 
           LOADER_VERSIONS_JSON='${{ steps.pakku_lock_info.outputs.loaders }}'
-          LOADER_VERSION=$(echo "$LOADER_VERSIONS_JSON" | jq -r '.[0]' | cut -d: -f2)
+          LOADER_VERSION=$(echo "$LOADER_VERSIONS_JSON" | jq -r '.forge')
 
           echo "minecraft_version=$MINECRAFT_VERSION" >> $GITHUB_OUTPUT
           echo "loader_version=$LOADER_VERSION" >> $GITHUB_OUTPUT
