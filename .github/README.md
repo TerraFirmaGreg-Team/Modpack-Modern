@@ -67,6 +67,8 @@ Want to help translate? Please read [this](../kubejs/README_IF_TRANSLATING.md) i
 - WithersChat from the [Monifactory](https://www.curseforge.com/minecraft/modpacks/monifactory) team for the universal circuit textures.
 - [GregTech Community Pack Modern](https://www.curseforge.com/minecraft/modpacks/gregtech-community-pack-modern) for most of their quest text.
 - [Better End](https://www.curseforge.com/minecraft/mc-mods/betterend) for some assets.
+- [Complimentary Reimagined](https://www.complementary.dev/shaders/) for their wonderful shaders. As per their [license](https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/main/License.txt), TerraFirmaGreg-Modern accepts all responsibility for the inclusion of this shader pack in our modpack.
+- [TaidumCraft](https://modrinth.com/modpack/taidumcraft) for their modification of Complimentary Reimagined to work with Ad Astra's added dimensions.
 - Uni for Mars' dunes terrain generation.
 
 <!-- Links: -->
