@@ -25,6 +25,7 @@ jobs:
       changelog: ${{ steps.changelog.outputs.description }}
       mc_version: ${{ steps.check.outputs.minecraft_version }}
       loader_version: ${{ steps.check.outputs.loader_version }}
+      loader_type: ${{ steps.check.outputs.loader_type }}
       release_type: ${{ steps.check.outputs.release_type }}
       diff: ${{ steps.read_diff.outputs.diff }}
       exists: ${{ steps.check.outputs.exists }}
@@ -168,11 +169,14 @@ jobs:
           MC_VERSIONS_JSON='${{ steps.pakku_lock_info.outputs.mc_versions }}'
           MINECRAFT_VERSION=$(echo "$MC_VERSIONS_JSON" | jq -r '.[0]' | tr -d '[]"')
 
-          LOADER_VERSIONS_JSON='${{ steps.pakku_lock_info.outputs.loaders }}'
-          LOADER_VERSION=$(echo "$LOADER_VERSIONS_JSON" | jq -r '.forge')
+          LOADERS_JSON='${{ steps.pakku_lock_info.outputs.loaders }}'
+
+          LOADER_TYPE=$(echo "$LOADERS_JSON" | jq -r 'keys[0]')
+          LOADER_VERSION=$(echo "$LOADERS_JSON" | jq -r ".[keys[0]]")
 
           echo "minecraft_version=$MINECRAFT_VERSION" >> $GITHUB_OUTPUT
           echo "loader_version=$LOADER_VERSION" >> $GITHUB_OUTPUT
+          echo "loader_type=$LOADER_TYPE" >> $GITHUB_OUTPUT
 
 
           if ${{ env.DEV_ENVIRONMENT == 'true' }}; then
