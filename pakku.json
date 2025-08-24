@@ -8,7 +8,7 @@
         "config",
         "defaultconfigs",
         "kubejs",
-		"tacz",
+        "tacz",
         "!kubejs/probe/**"
     ],
     "server_overrides": [
@@ -215,9 +215,6 @@
         "entityculling": {
             "side": "CLIENT"
         },
-        "pick-up-notifier": {
-            "side": "CLIENT"
-        },
         "resourceful-config": {
             "side": "BOTH"
         },
@@ -242,11 +239,8 @@
         "xaeros-minimap": {
             "side": "BOTH"
         },
-        "xaeros-world-map": {
-            "side": "BOTH"
-        },
         "particular-reforged": {
-            "side": "CLIENT"
+            "side": "BOTH"
         },
         "pick-up-notifier": {
             "side": "BOTH"
