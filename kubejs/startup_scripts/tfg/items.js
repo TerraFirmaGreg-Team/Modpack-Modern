@@ -368,7 +368,6 @@ const registerTFGItems = (event) => {
 	event.create('tfg:elite_power_thruster')
 	
 	event.create('tfg:better_space_suit_fabric')
-	event.create('tfg:glacian_wool')
 	//endregion
 
 	//#region Universal compost items
@@ -389,4 +388,6 @@ const registerTFGItems = (event) => {
 	event.create('tfg:photo_cell_t1')
 		.translationKey("item.tfg.basic.photovoltaic.cell")
 		.texture('tfg:item/photo_cell_t1')
+	
+	//#region Mars Animals
 }
