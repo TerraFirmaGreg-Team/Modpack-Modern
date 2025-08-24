@@ -310,6 +310,7 @@ const registerTFGItemTags = (event) => {
 
 	//Mars animal region
 	event.add('tfg:martian_eggs', 'tfg:sniffer_egg')
+	event.add('tfg:martian_eggs', 'tfg:wraptor_egg')
 	
 	event.add('tfg:martian_animal_foods', 'betterend:amber_root_product')
 	event.add('tfg:martian_animal_foods', 'betterend:blossom_berry_product')
@@ -320,6 +321,7 @@ const registerTFGItemTags = (event) => {
 	
 	event.add('tfg:glacian_ram_food', '#tfg:martian_animal_foods')
 	event.add('tfg:sniffer_food', '#tfg:martian_animal_foods')
+	event.add('tfg:wraptor_food', '#tfg:martian_animal_foods')
 	
 	//#endregion
 
