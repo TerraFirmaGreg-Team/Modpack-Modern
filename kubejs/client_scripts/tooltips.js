@@ -126,6 +126,26 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['species:petrified_egg'], (item, advanced, text) => {
 		text.add(1, text.of("§7Requires Magma to Incubate"))
 	})
+	
+	event.addAdvanced(['tfg:sniffer_egg'], (item, advanced, text) => {
+		text.add(1, text.of("§9§oCredit: Minecraft")),
+		text.add(2, text.of("§7Can only be incubated in a §oLarge Nest"))
+
+	})
+	
+	event.addAdvanced(['tfg:wraptor_egg'], (item, advanced, text) => {
+		text.add(1, text.of("§9§oCredit: Species")),
+		text.add(2, text.of("§7Can only be incubated in a §oLarge Nest"))
+	})
+	
+	event.addAdvanced(['tfg:sniffer_wool'], (item, advanced, text) => {
+		text.add(1, text.of("§7Harvested from the back of a Sniffer"))
+	})
+	
+	event.addAdvanced(['tfg:wraptor_wool'], (item, advanced, text) => {
+		text.add(1, text.of("§7Harvested from the feathers of a Wraptor"))
+	})
+	
 
 	// MEGA Deprecated 0.10
 	event.addAdvanced(['#megacells:mega_interface'], (item, advanced, text) => {
