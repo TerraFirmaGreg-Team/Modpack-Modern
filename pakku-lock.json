@@ -5077,7 +5077,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "everycomp-1.20-2.9.0-forge.jar",
+                    "file_name": "everycomp-1.20-2.9.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5085,22 +5085,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/eiktJyw1/versions/QeAScqwj/everycomp-1.20-2.9.0-forge.jar",
-                    "id": "QeAScqwj",
+                    "url": "https://cdn.modrinth.com/data/eiktJyw1/versions/ZmTNauR4/everycomp-1.20-2.9.1-forge.jar",
+                    "id": "ZmTNauR4",
                     "parent_id": "eiktJyw1",
                     "hashes": {
-                        "sha512": "e9677f60675a83f0d645c95503bdcede921d7a5b0ce513766b051b785519bb7191165381deaae1837c716de12458e2f13ef59820a72af2d36788e9ed1f5fca9a",
-                        "sha1": "79b7d93cebf1aa77d9d0b244f196d426a3a71e59"
+                        "sha512": "861479f930de09109a285ad3ddbfe54764510fa4228ba95d13e200d467b580c3a5e67d7b88ee453db7b4796f3f26a333934aae3610d0e8624a7fb5c357bfff5f",
+                        "sha1": "88eabf9f0c614cc097b1b39b5a970b5e7835274b"
                     },
                     "required_dependencies": [
                         "twkfQtEc"
                     ],
-                    "size": 2805521,
-                    "date_published": "2025-08-21T08:37:42.008646Z"
+                    "size": 2808536,
+                    "date_published": "2025-08-24T04:23:13.159167Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "everycomp-1.20-2.9.0-forge.jar",
+                    "file_name": "everycomp-1.20-2.9.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5108,18 +5108,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6910/551/everycomp-1.20-2.9.0-forge.jar",
-                    "id": "6910551",
+                    "url": "https://edge.forgecdn.net/files/6921/386/everycomp-1.20-2.9.1-forge.jar",
+                    "id": "6921386",
                     "parent_id": "628539",
                     "hashes": {
-                        "sha1": "79b7d93cebf1aa77d9d0b244f196d426a3a71e59",
-                        "md5": "3ef743fb5d8e8b445edaa56825616f44"
+                        "sha1": "88eabf9f0c614cc097b1b39b5a970b5e7835274b",
+                        "md5": "3685dc96dc9eec27c20d73fb19240108"
                     },
                     "required_dependencies": [
                         "499980"
                     ],
-                    "size": 2805521,
-                    "date_published": "2025-08-21T08:37:31.970Z"
+                    "size": 2808536,
+                    "date_published": "2025-08-24T04:22:59.213Z"
                 }
             ]
         },
@@ -5717,7 +5717,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "fancymenu_forge_3.6.4_MC_1.20.1.jar",
+                    "file_name": "fancymenu_forge_3.7.0_MC_1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5725,19 +5725,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Wq5SjeWM/versions/uWOORZzp/fancymenu_forge_3.6.4_MC_1.20.1.jar",
-                    "id": "uWOORZzp",
+                    "url": "https://cdn.modrinth.com/data/Wq5SjeWM/versions/MbyfTTsz/fancymenu_forge_3.7.0_MC_1.20.1.jar",
+                    "id": "MbyfTTsz",
                     "parent_id": "Wq5SjeWM",
                     "hashes": {
-                        "sha512": "a63c8caeb1b39d2161c6836e1fb7b4ec0d4faa37230039fcb6bef6c6a3b4ccdf736d2f8140c867e7f70b64012aabb7817fabfa0c6222a2547b512a5a58ef18f9",
-                        "sha1": "da528b28187269d2c44c8192e89c701187953d1e"
+                        "sha512": "00579685f38e30eaeaf2ab01c23ea72b53ef03245e46be35297e0955383e070a92983ec5ca2043592fcf34213d3cf9ae8e82165187da7d3b32d84b65c9d054fa",
+                        "sha1": "f33a40f7d33585e781d90d00d156178e369ae8ed"
                     },
                     "required_dependencies": [
                         "CVT4pFB2",
                         "J81TRJWm"
                     ],
-                    "size": 3573433,
-                    "date_published": "2025-07-18T21:12:19.752104Z"
+                    "size": 3628603,
+                    "date_published": "2025-08-23T14:53:05.096476Z"
                 },
                 {
                     "type": "curseforge",
@@ -10663,7 +10663,7 @@
                 "modrinth": "puzzles-lib"
             },
             "name": {
-                "curseforge": "Puzzles Lib [Forge & Fabric]",
+                "curseforge": "Puzzles Lib",
                 "modrinth": "Puzzles Lib"
             },
             "id": {
@@ -10672,29 +10672,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "PuzzlesLib-v8.1.32-1.20.1-Forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6387/81/PuzzlesLib-v8.1.32-1.20.1-Forge.jar",
-                    "id": "6387081",
-                    "parent_id": "495476",
-                    "hashes": {
-                        "sha1": "1f24a25582fa6bb2569e32401a232ee90d34cc1a",
-                        "md5": "3ca3da58d71c0b14241df38578ffdb22"
-                    },
-                    "required_dependencies": [],
-                    "size": 1342204,
-                    "date_published": "2025-04-05T11:23:03.413Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "PuzzlesLib-v8.1.32-1.20.1-Forge.jar",
+                    "file_name": "PuzzlesLib-v8.1.33-1.20.1-Forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10702,16 +10681,37 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/QAGBst4M/versions/YFZdsqXl/PuzzlesLib-v8.1.32-1.20.1-Forge.jar",
-                    "id": "YFZdsqXl",
+                    "url": "https://cdn.modrinth.com/data/QAGBst4M/versions/mIyVGf3d/PuzzlesLib-v8.1.33-1.20.1-Forge.jar",
+                    "id": "mIyVGf3d",
                     "parent_id": "QAGBst4M",
                     "hashes": {
-                        "sha512": "f6420b4884583727ee66d7410ce5ad3ce2a5fd9aed49700ea4bba1fd944a4b63d2d3f15a3d0d64afa2ec1aa261f8ef52b6277712c7d19e6dd31ff9d9360f05ae",
-                        "sha1": "1f24a25582fa6bb2569e32401a232ee90d34cc1a"
+                        "sha512": "4e0a6243f70a7f99bb631940bfeca49f31b13ec34f338d994fe129f0445e738ffd925e5c440f4e6bf822f9013bb8c2156de6dfcd62741d85c3ca3e8221d86a19",
+                        "sha1": "285b7c7616971338ccbe0022c9ea0f8ad3036aaf"
                     },
                     "required_dependencies": [],
-                    "size": 1342204,
-                    "date_published": "2025-04-05T11:23:08.540092Z"
+                    "size": 1342987,
+                    "date_published": "2025-08-23T12:27:37.945208Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "PuzzlesLib-v8.1.33-1.20.1-Forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6918/565/PuzzlesLib-v8.1.33-1.20.1-Forge.jar",
+                    "id": "6918565",
+                    "parent_id": "495476",
+                    "hashes": {
+                        "sha1": "285b7c7616971338ccbe0022c9ea0f8ad3036aaf",
+                        "md5": "19f23e3040eaadc7c30ae38f5a3dec68"
+                    },
+                    "required_dependencies": [],
+                    "size": 1342987,
+                    "date_published": "2025-08-23T12:27:32.200Z"
                 }
             ]
         },
@@ -13235,7 +13235,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.11.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.12.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13244,23 +13244,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/oiDw0Fhg/TerraFirmaGreg-Core-Modern-0.7.11.jar",
-                    "id": "oiDw0Fhg",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/Dd2UXNbV/TerraFirmaGreg-Core-Modern-0.7.12.jar",
+                    "id": "Dd2UXNbV",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "cee41d5314832cc92ce25e8c33298e15bf478907739d3a932b0e96e79b741e1314c67fae538997066b06e47cf079b13117073aaab6c946e0311581d3b9f2bace",
-                        "sha1": "b69f0c4aadf8edfb7b3e3864af70d35d84a45a77"
+                        "sha512": "225f221bfe05db8bf12db88423c1978f5c288ea6377f000827b9d8d49c86181dc2c50f31e7cb008d81a8ebff57f2b77d027a90eed9725df8586ee9a6d610164e",
+                        "sha1": "6b2684bf4af912e4951ec5790725798c90b512ef"
                     },
                     "required_dependencies": [
                         "JaCEZUhg",
                         "7tG215v7"
                     ],
-                    "size": 584412,
-                    "date_published": "2025-08-23T12:10:49.232137Z"
+                    "size": 584411,
+                    "date_published": "2025-08-24T07:00:10.368612Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.11.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.12.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13269,19 +13269,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6918/492/TerraFirmaGreg-Core-Modern-0.7.11.jar",
-                    "id": "6918492",
+                    "url": "https://edge.forgecdn.net/files/6921/637/TerraFirmaGreg-Core-Modern-0.7.12.jar",
+                    "id": "6921637",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "b69f0c4aadf8edfb7b3e3864af70d35d84a45a77",
-                        "md5": "8d41611089b9a9ad0e018cbf93f8b680"
+                        "sha1": "6b2684bf4af912e4951ec5790725798c90b512ef",
+                        "md5": "364dc88bee9a429c47f1e59dffd1da2a"
                     },
                     "required_dependencies": [
-                        "890405",
-                        "302973"
+                        "302973",
+                        "890405"
                     ],
-                    "size": 584412,
-                    "date_published": "2025-08-23T12:10:47.487Z"
+                    "size": 584411,
+                    "date_published": "2025-08-24T07:00:04.203Z"
                 }
             ]
         },
