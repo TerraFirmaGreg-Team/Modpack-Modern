@@ -280,6 +280,7 @@ jobs:
             📃 **Name**: ${{ needs.info.outputs.project_name }}
             📃 **Release**:  `${{ steps.changelog.outputs.version }}`
             📃 **Release Type**: `${{ needs.info.outputs.release_type }}`
+            📃 **Loader**: `${{ needs.info.outputs.loader_type }}-${{ needs.info.outputs.loader_version }}`
 
             ${{ needs.info.outputs.changelog }}
 
