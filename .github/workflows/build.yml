@@ -356,12 +356,12 @@ jobs:
           mkdir -p .pakku/multimc-overrides/flame
           mkdir -p .pakku/multimc-overrides/mods
 
-          mv -vf .pakku/multimc-overrides ./build/.cache/multimc
+          mv -vf .pakku/multimc-overrides ./build/multimc
 
-          cp -vf ./build/.cache/curseforge/manifest.json ./build/.cache/multimc/flame/manifest.json
-          
-          cp -rf ./build/.cache/curseforge/overrides ./build/.cache/multimc/.minecraft
-          cp -rf ./mods ./build/.cache/multimc/.minecraft/mods
+          cp -vf ./build/.cache/curseforge/manifest.json ./build/multimc/flame/manifest.json
+
+          cp -rf ./build/.cache/curseforge/overrides ./build/multimc/.minecraft
+          cp -rf ./mods ./build/multimc/.minecraft/mods
 
           cd ./build/multimc/
           zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
