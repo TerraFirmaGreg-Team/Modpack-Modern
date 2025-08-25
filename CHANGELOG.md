@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 ### Changes
+- Fuelling blaze burners with liquids is now done directly instead of through straws (break and replace your blaze burners to update) @Ghoulcel
+- Blaze burner liquid fuelling has been fully made consistent with GregTech power values (#1694) @Ghoulcel
 ### Bug fixes
 
 ## [0.10.10] - 23-08-2025
