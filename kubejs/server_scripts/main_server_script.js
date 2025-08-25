@@ -132,6 +132,7 @@ ServerEvents.tags('worldgen/biome', event => {
 
 ServerEvents.tags('entity_type', event => {
 	registerAdAstraEntityTypeTags(event)
+	registerWABEntityTypeTags(event)
 })
 
 /**
