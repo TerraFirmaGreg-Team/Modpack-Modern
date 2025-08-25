@@ -3992,6 +3992,74 @@
             ]
         },
         {
+            "pakku_id": "h91JpkOd7PzSuphT",
+            "pakku_links": [
+                "Nw8xTCQngHA15ilh"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "create-liquid-fuel",
+                "modrinth": "create-liquid-fuel"
+            },
+            "name": {
+                "curseforge": "Create: Liquid Fuel",
+                "modrinth": "Create: Liquid Fuel"
+            },
+            "id": {
+                "curseforge": "840734",
+                "modrinth": "sH9tXU9f"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "createliquidfuel-2.1.1-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5217/310/createliquidfuel-2.1.1-1.20.1.jar",
+                    "id": "5217310",
+                    "parent_id": "840734",
+                    "hashes": {
+                        "sha1": "d216cf52735f8e4d3594943139599f6b0b20b8cf",
+                        "md5": "41d2472841c5dc5d43adc52b27b3123b"
+                    },
+                    "required_dependencies": [],
+                    "size": 20245,
+                    "date_published": "2024-03-28T06:32:19.517Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "createliquidfuel-2.1.1-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/sH9tXU9f/versions/SZfHDdfk/createliquidfuel-2.1.1-1.20.1.jar",
+                    "id": "SZfHDdfk",
+                    "parent_id": "sH9tXU9f",
+                    "hashes": {
+                        "sha512": "5dec0dbd9a5c1e6b06de5c60f5d5477a595ad6ddb762f67ea3379cc195fbee68d3be87f2bccfdeb60f6edbb4b029d54e2c8b7c0d3f3967d8f42587c77683d8d7",
+                        "sha1": "d216cf52735f8e4d3594943139599f6b0b20b8cf"
+                    },
+                    "required_dependencies": [
+                        "LNytGWDc"
+                    ],
+                    "size": 20245,
+                    "date_published": "2024-03-28T06:27:19.888846Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "44GxMgEFkWpmSaA7",
             "type": "MOD",
             "side": "BOTH",
@@ -4720,6 +4788,69 @@
                     "required_dependencies": [],
                     "size": 1048567,
                     "date_published": "2025-04-14T03:37:26.013177Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "PDnn8hOodQ10vlXc",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "embeddium",
+                "modrinth": "embeddium"
+            },
+            "name": {
+                "curseforge": "Embeddium",
+                "modrinth": "Embeddium"
+            },
+            "id": {
+                "curseforge": "908741",
+                "modrinth": "sk9rgfiA"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "embeddium-0.3.31+mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5681/725/embeddium-0.3.31+mc1.20.1.jar",
+                    "id": "5681725",
+                    "parent_id": "908741",
+                    "hashes": {
+                        "sha1": "bb2fa8f3e493af16af9160d049f96c614a1faf2f",
+                        "md5": "1dfb2ee49ce9ad5d484ff3eea0d628b7"
+                    },
+                    "required_dependencies": [],
+                    "size": 1320675,
+                    "date_published": "2024-08-31T23:11:49.240Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "embeddium-0.3.31+mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/sk9rgfiA/versions/UTbfe5d1/embeddium-0.3.31+mc1.20.1.jar",
+                    "id": "UTbfe5d1",
+                    "parent_id": "sk9rgfiA",
+                    "hashes": {
+                        "sha512": "ffbf2da4685260a4d5c14c621708bd20722563f084f042d3dfb0a7b87f048e39299648c854a93939129da0d23a15a91ec628560d601e76074b08e275f6e132e9",
+                        "sha1": "bb2fa8f3e493af16af9160d049f96c614a1faf2f"
+                    },
+                    "required_dependencies": [],
+                    "size": 1320675,
+                    "date_published": "2024-08-31T23:11:49.184634Z"
                 }
             ]
         },
@@ -11262,6 +11393,79 @@
             ]
         },
         {
+            "pakku_id": "pQiulj1ubTpJDbGB",
+            "pakku_links": [
+                "PDnn8hOodQ10vlXc",
+                "mvg3RbUFDvBr0S4R"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "modrinth": "sodium-extras",
+                "curseforge": "magnesium-extras"
+            },
+            "name": {
+                "modrinth": "Sodium Extras",
+                "curseforge": "Sodium/Embeddium Extras"
+            },
+            "id": {
+                "modrinth": "vqqx0QiE",
+                "curseforge": "558905"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "sodiumextras-forge-1.0.7-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/vqqx0QiE/versions/VNFB2Vgv/sodiumextras-forge-1.0.7-1.20.1.jar",
+                    "id": "VNFB2Vgv",
+                    "parent_id": "vqqx0QiE",
+                    "hashes": {
+                        "sha512": "47f298943079eb6b8f5222cbb093fec0c29c86a6f68e8000545059d64ff5c4cbf76fa774565a0d4d89d1fb0a278b62292f7619fb818e4fdfd9f01a637e7fcbfb",
+                        "sha1": "7603f44bc4750774fbbdc07a3153c391650fcf3d"
+                    },
+                    "required_dependencies": [
+                        "sk9rgfiA",
+                        "Es5v4eyq"
+                    ],
+                    "size": 438540,
+                    "date_published": "2025-01-01T04:39:15.567585Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "sodiumextras-forge-1.0.7-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6041/697/sodiumextras-forge-1.0.7-1.20.1.jar",
+                    "id": "6041697",
+                    "parent_id": "558905",
+                    "hashes": {
+                        "sha1": "7603f44bc4750774fbbdc07a3153c391650fcf3d",
+                        "md5": "823adea3bcfd64dbdbaec46950cf4108"
+                    },
+                    "required_dependencies": [
+                        "1103431",
+                        "908741"
+                    ],
+                    "size": 438540,
+                    "date_published": "2025-01-01T04:39:13.763Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "DwWgXMg1kgevfWs4",
             "pakku_links": [
                 "mvg3RbUFDvBr0S4R"
@@ -13697,46 +13901,6 @@
                     "required_dependencies": [],
                     "size": 960799,
                     "date_published": "2025-07-17T08:39:43.103Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "V5l5vox7aWdt6HSJ",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "xenon",
-                "modrinth": "xenon"
-            },
-            "name": {
-                "curseforge": "Xenon",
-                "modrinth": "Xenon"
-            },
-            "id": {
-                "curseforge": "564239",
-                "modrinth": "BsmAXLQn"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "xenon-0.3.31+mc1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5752/40/xenon-0.3.31+mc1.20.1.jar",
-                    "id": "5752040",
-                    "parent_id": "564239",
-                    "hashes": {
-                        "sha1": "93e7c3938f88dbd24591412033572f42f90d3cb4",
-                        "md5": "41ca035046ec01bd29a879be036a4560"
-                    },
-                    "required_dependencies": [],
-                    "size": 2093415,
-                    "date_published": "2024-09-24T12:55:08.173Z"
                 }
             ]
         },
