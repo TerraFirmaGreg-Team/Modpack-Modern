@@ -80,7 +80,7 @@
 #### Step 2: Creating a New Instance in PrismLauncher
 1. Open [PrismLauncher] and click on the **`Add Instance`** button.
 2. In the **Name** field, enter the name **`TerraFirmaGreg-Modern`**.
-3. Select Minecraft version **`1.20.1`** and Forge version **`47.2.6`** — these versions are necessary for the modpack to work correctly.
+3. Select Minecraft version **`1.20.1`** and Forge version **`47.4.6`** — these versions are necessary for the modpack to work correctly.
 
 > [!TIP]  
 > ![Interface for creating a new instance in PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/wiki/new_instances.png?raw=true)
@@ -319,7 +319,7 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
 #### Шаг 2: Создание новой инстанции в PrismLauncher
 1. Откройте [PrismLauncher] и нажмите на кнопку **`Add Instance`**.
 2. В поле **Name** введите название **`TerraFirmaGreg-Modern`**.
-3. Выберите версию Minecraft **`1.20.1`** и версию **`Forge 47.2.6`** — именно эти версии необходимы для корректной работы модпака.
+3. Выберите версию Minecraft **`1.20.1`** и версию **`Forge 47.4.6`** — именно эти версии необходимы для корректной работы модпака.
 
 > [!TIP]  
 > ![Интерфейс для создания новой инстанции в PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/wiki/new_instances.png?raw=true)
