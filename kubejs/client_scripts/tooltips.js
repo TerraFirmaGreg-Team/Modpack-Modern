@@ -124,26 +124,26 @@ const registerTooltips = (event) => {
 	})
 	
 	event.addAdvanced(['tfg:sniffer_egg'], (item, advanced, text) => {
-		text.add(1, text.of("§9§oCredit: Minecraft")),
-		text.add(2, text.of("§7Can only be incubated in a §oLarge Nest"))
+		text.add(1, Text.translate('tfg.tooltip.attribution.sniffer')),
+		text.add(2, Text.translate('tfg.tooltip.large_egg')
 
 	})
 	
 	event.addAdvanced(['tfg:wraptor_egg'], (item, advanced, text) => {
-		text.add(1, text.of("§9§oCredit: Species")),
-		text.add(2, text.of("§7Can only be incubated in a §oLarge Nest"))
+		text.add(1, Text.translate('tfg.tooltip.attribution.wraptor')),
+		text.add(2, Text.translate('tfg.tooltip.large_egg'))
 	})
 	
 	event.addAdvanced(['tfg:sniffer_wool'], (item, advanced, text) => {
-		text.add(1, text.of("§7Harvested from the back of a Sniffer"))
+		text.add(1, Text.translate('tfg.tooltip.sniffer_wool'))
 	})
 	
 	event.addAdvanced(['tfg:wraptor_wool'], (item, advanced, text) => {
-		text.add(1, text.of("§7Harvested from the feathers of a Wraptor"))
+		text.add(1, Text.translate('tfg.tooltip.wraptor_wool'))
 	})
 	
 	event.addAdvanced(['tfg:wraptor_sugar'], (item, advanced, text) => {
-		text.add(1, text.of("§7Don't think about it too much"))
+		text.add(1, Text.translate('tfg.tooltip.wraptor_sugar'))
 	})
 	
 
