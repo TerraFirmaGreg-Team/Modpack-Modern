@@ -353,7 +353,7 @@ function registerTFGSpaceBlocks(event) {
 		.requiresTool(false)
 		.mapColor('terracotta_yellow')
 		.tagBlock('minecraft:mineable/shovel')
-		.tagBoth('forge:dirt')
+		.tagBoth('tfc:dirt')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -363,7 +363,7 @@ function registerTFGSpaceBlocks(event) {
 		.requiresTool(false)
 		.mapColor('terracotta_yellow')
 		.tagBlock('minecraft:mineable/shovel')
-		.tagBoth('forge:dirt')
+		.tagBoth('tfc:kaolin_clay')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -373,7 +373,7 @@ function registerTFGSpaceBlocks(event) {
 		.requiresTool(false)
 		.mapColor('terracotta_orange')
 		.tagBlock('minecraft:mineable/shovel')
-		.tagBoth('forge:dirt')
+		.tagBoth('tfc:dirt')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -383,7 +383,7 @@ function registerTFGSpaceBlocks(event) {
 		.requiresTool(false)
 		.mapColor('terracotta_orange')
 		.tagBlock('minecraft:mineable/shovel')
-		.tagBoth('forge:dirt')
+		.tagBoth('tfc:kaolin_clay')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -393,7 +393,7 @@ function registerTFGSpaceBlocks(event) {
 		.requiresTool(false)
 		.mapColor('terracotta_red')
 		.tagBlock('minecraft:mineable/shovel')
-		.tagBoth('forge:dirt')
+		.tagBoth('tfc:dirt')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -403,7 +403,7 @@ function registerTFGSpaceBlocks(event) {
 		.requiresTool(false)
 		.mapColor('terracotta_red')
 		.tagBlock('minecraft:mineable/shovel')
-		.tagBoth('forge:dirt')
+		.tagBoth('tfc:kaolin_clay')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -413,7 +413,7 @@ function registerTFGSpaceBlocks(event) {
 		.requiresTool(false)
 		.mapColor('dirt')
 		.tagBlock('minecraft:mineable/shovel')
-		.tagBoth('forge:dirt')
+		.tagBoth('tfc:dirt')
 		.fullBlock(true)
 		.opaque(true)
 
