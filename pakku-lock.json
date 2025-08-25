@@ -8,6 +8,69 @@
     },
     "projects": [
         {
+            "pakku_id": "6k7DoFyO7bpHnhyk",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "aaa-particles",
+                "modrinth": "aaa-particles"
+            },
+            "name": {
+                "curseforge": "AAA Particles",
+                "modrinth": "AAA Particles"
+            },
+            "id": {
+                "curseforge": "979809",
+                "modrinth": "En8uHTOK"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "aaa_particles-1.20.1-1.4.11-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6616/719/aaa_particles-1.20.1-1.4.11-forge.jar",
+                    "id": "6616719",
+                    "parent_id": "979809",
+                    "hashes": {
+                        "sha1": "e046caeff220722933cb82097a62412d902f6002",
+                        "md5": "41e2e1bbd89f858b35f280858857323f"
+                    },
+                    "required_dependencies": [],
+                    "size": 5255759,
+                    "date_published": "2025-06-05T09:17:54.350Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "aaa_particles-1.20.1-1.4.11-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/En8uHTOK/versions/heNkI8gU/aaa_particles-1.20.1-1.4.11-forge.jar",
+                    "id": "heNkI8gU",
+                    "parent_id": "En8uHTOK",
+                    "hashes": {
+                        "sha512": "7d0df9076d1871338556165be8ee3feadfb8e09ab7315ab2726c398f8351ea5e3e0d1907caae2aa9afa5443d9e6ef71d139590887ee0a670a0e4de11dfa0e17b",
+                        "sha1": "e046caeff220722933cb82097a62412d902f6002"
+                    },
+                    "required_dependencies": [],
+                    "size": 5255759,
+                    "date_published": "2025-06-05T09:23:07.127326Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "v1XVLzfV3EJPc5ke",
             "pakku_links": [
                 "mYY02F5XR0fB6HXF"
@@ -4420,6 +4483,88 @@
             ]
         },
         {
+            "pakku_id": "NTPct5Wu0LfCm96a",
+            "pakku_links": [
+                "6k7DoFyO7bpHnhyk",
+                "NAvm5gacwCvqJee5",
+                "pB7ARGecP03UXpd6",
+                "znIzfNElWkwpdz2V"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "desert-behemoths-sandworms",
+                "modrinth": "desert-behemoths-sandworms!"
+            },
+            "name": {
+                "curseforge": "Desert Behemoths: Sandworms!",
+                "modrinth": "Desert Behemoths: Sandworms!"
+            },
+            "id": {
+                "curseforge": "1066153",
+                "modrinth": "b1GD2Ca2"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "sandworm_mod-1.1.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5600/383/sandworm_mod-1.1.1.jar",
+                    "id": "5600383",
+                    "parent_id": "1066153",
+                    "hashes": {
+                        "sha1": "c55788dcd8a1d24f4b41f20d40f5b670b163950a",
+                        "md5": "d83733870396560256a5706db01375a5"
+                    },
+                    "required_dependencies": [
+                        "979809",
+                        "616457",
+                        "388172"
+                    ],
+                    "size": 4515741,
+                    "date_published": "2024-08-06T00:57:24.447Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "sandworm_mod-1.1.0.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4",
+                        "1.20.5",
+                        "1.20.6"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/b1GD2Ca2/versions/44Ejqnzj/sandworm_mod-1.1.0.jar",
+                    "id": "44Ejqnzj",
+                    "parent_id": "b1GD2Ca2",
+                    "hashes": {
+                        "sha512": "d3e21410f3369bf5437cf35dd68eaa619b72d431d90be9106497a5f934e1ab9e3fb2bd5054022ab2f310e8e21e654a088a2040bb793b3e69a26d99644381e088",
+                        "sha1": "69ac6ea39135c26a2625c0dce585f2594fd4ca52"
+                    },
+                    "required_dependencies": [
+                        "bN3xUWdo",
+                        "En8uHTOK",
+                        "8BmcQJ2H"
+                    ],
+                    "size": 4515705,
+                    "date_published": "2024-07-30T08:15:53.352176Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "qTkHGASztASuivVS",
             "type": "MOD",
             "side": "BOTH",
@@ -5378,7 +5523,7 @@
                 "e7thBe1Z6fvyxUtU"
             ],
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "ftb-backups-2"
             },
@@ -8472,6 +8617,68 @@
             ]
         },
         {
+            "pakku_id": "znIzfNElWkwpdz2V",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "lodestonelib",
+                "curseforge": "lodestone"
+            },
+            "name": {
+                "modrinth": "Lodestone",
+                "curseforge": "Lodestone"
+            },
+            "id": {
+                "modrinth": "bN3xUWdo",
+                "curseforge": "616457"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "lodestone-1.20.1-1.6.4.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/bN3xUWdo/versions/dRIycWqx/lodestone-1.20.1-1.6.4.1.jar",
+                    "id": "dRIycWqx",
+                    "parent_id": "bN3xUWdo",
+                    "hashes": {
+                        "sha512": "fec5107deb73c06c4b1756349cb874e0933c4181fd20e8528e46a24e35ccb048898c8607830deea3242d7303784a9c3a03f3fadd40d13fb6dc27a34a77f5cc85",
+                        "sha1": "e6346060ae70cbf103b231d8a1536bcd044c84a8"
+                    },
+                    "required_dependencies": [],
+                    "size": 670934,
+                    "date_published": "2025-02-20T16:05:31.211605Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "lodestone-1.20.1-1.6.4.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6213/794/lodestone-1.20.1-1.6.4.1.jar",
+                    "id": "6213794",
+                    "parent_id": "616457",
+                    "hashes": {
+                        "sha1": "e6346060ae70cbf103b231d8a1536bcd044c84a8",
+                        "md5": "2816fa972ca3a21e6e38783f979955be"
+                    },
+                    "required_dependencies": [],
+                    "size": 670934,
+                    "date_published": "2025-02-20T15:59:37.757Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "9RZJfprxqWyxsrEF",
             "type": "MOD",
             "side": "BOTH",
@@ -10309,7 +10516,7 @@
                 "3Hn4sTVbBvKyQJJS"
             ],
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "pick-up-notifier",
                 "modrinth": "pick-up-notifier"
