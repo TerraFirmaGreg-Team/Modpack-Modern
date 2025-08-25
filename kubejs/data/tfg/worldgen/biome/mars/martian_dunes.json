@@ -35,7 +35,9 @@
 		[],
 		[],
 		"#tfg:mars_veins",
-		[],
+		[
+			"tfg:mars/terrain/red_quicksand"
+		],
 		[
 			"tfc:raw_boulder_small_patch",
 			"tfc:cobble_boulder_small_patch"

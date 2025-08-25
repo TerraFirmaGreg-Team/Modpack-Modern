@@ -5,6 +5,9 @@ const registerWABBlockTags = (event) => {
 		event.removeAllTagsFrom(block)
 		event.add('c:hidden_from_recipe_viewers', block)
 	})
+
+	event.add('tfc:can_landslide', 'wan_ancient_beasts:quick_red_sand')
+	event.add('tfc:can_landslide', 'wan_ancient_beasts:quick_sand')
 }
 
 const registerWABItemTags = (event) => {
