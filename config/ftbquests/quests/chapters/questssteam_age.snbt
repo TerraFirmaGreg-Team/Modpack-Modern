@@ -1639,25 +1639,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"183D47F04CAEBFA7"
-				"753A53733C6DFA04"
-			]
-			description: ["{quests.steam_age.straw.desc}"]
-			id: "7314F69F0DE6E78E"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.steam_age.straw.subtitle}"
-			tasks: [{
-				id: "25F19B16E99D6DD0"
-				item: "createaddition:straw"
-				type: "item"
-			}]
-			title: "{quests.steam_age.straw.title}"
-			x: -15.0d
-			y: 16.0d
-		}
-		{
 			dependencies: ["183D47F04CAEBFA7"]
 			description: ["{quests.steam_age.fuel_sources.desc}"]
 			icon: "createdeco:decal_fire"
