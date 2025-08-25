@@ -34,7 +34,19 @@ const registerWABRecipes = (event) => {
 		.itemOutputs('32x #forge:dusts/bone')
 		.duration(400)
 		.EUt(30)
-	
+
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('4x tfg:fletching', [
+			'wan_ancient_beasts:glider_feather',
+			'#forge:tools/knives'
+		]).id('tfg:shapeless/glider_feather_fletching'))
+
+	event.recipes.gtceu.assembler('tfg:assembler/glider_feather_fletching')
+		.itemInputs('1x wan_ancient_beasts:glider_feather')
+		.itemOutputs('4x tfg:fletching')
+		.duration(20)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.ULV])	
 }
 
 const registerWABFoodData = (event) => {

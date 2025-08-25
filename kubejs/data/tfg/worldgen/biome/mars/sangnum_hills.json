@@ -38,7 +38,10 @@
 		[],
 		[],
 		"#tfg:mars_veins",
-		[],
+		[
+			"tfg:mars/terrain/clay_disc",
+			"tfg:mars/terrain/kaolin_clay_disc"
+		],
 		[
 			"tfg:mars_forest",
 			"tfc:raw_boulder",
@@ -79,7 +82,7 @@
 				"weight": 20
 			},
 			{
-				"type": "species:wraptor",
+				"type": "tfg:wraptor",
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100

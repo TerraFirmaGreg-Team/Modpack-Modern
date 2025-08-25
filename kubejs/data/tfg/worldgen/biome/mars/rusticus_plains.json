@@ -36,7 +36,9 @@
 		[],
 		[],
 		"#tfg:mars_veins",
-		[],
+		[
+			"tfg:mars/terrain/clay_disc"
+		],
 		[
 			"tfg:mars_forest",
 			"tfg:mars/semiheavy_ammoniacal_water"
@@ -74,7 +76,7 @@
 				"weight": 100
 			},
 			{
-				"type": "species:wraptor",
+				"type": "tfg:wraptor",
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100
