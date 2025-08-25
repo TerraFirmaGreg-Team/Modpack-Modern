@@ -34,7 +34,6 @@ global.SPECIES_DISABLED_ITEMS = [
 	'species:ricoshield',
 	'species:smoke_bomb',
 	'species:wicked_dope',
-	'species:cracked_wraptor_egg',
 	'species:monster_meal',
 	'species:wicked_treat',
 	'species:ghoul_tongue',

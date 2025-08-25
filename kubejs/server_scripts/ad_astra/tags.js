@@ -352,7 +352,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 
 		'tfg:sniffer',
 		'tfg:glacian_ram',
-		'species:wraptor',
+		'tfg:wraptor',
 		'species:goober',
 		'species:cruncher',
 		'species:springling',
