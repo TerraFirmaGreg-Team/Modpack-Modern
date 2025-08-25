@@ -75,7 +75,7 @@
 		"axolotls": [],
 		"creature": [
 			{
-				"type": "species:wraptor",
+				"type": "tfg:wraptor",
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 50

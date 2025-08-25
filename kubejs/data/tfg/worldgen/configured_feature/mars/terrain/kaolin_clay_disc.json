@@ -1,0 +1,53 @@
+{
+	"type": "tfc:if_then",
+	"config": {
+		"if": {
+			"feature": {
+				"type": "tfc:soil_disc",
+				"config": {
+					"min_radius": 7,
+					"max_radius": 9,
+					"height": 6,
+					"states": [
+						{
+							"replace": "tfg:grass/mars_dirt",
+							"with": "tfc:red_kaolin_clay"
+						},
+						{
+							"replace": "tfg:grass/amber_mycelium",
+							"with": {
+								"Name": "tfg:grass/amber_kaolin_mycelium",
+								"Properties": {
+									"snowy": "false"
+								}
+							}
+						},
+						{
+							"replace": "tfg:grass/rusticus_mycelium",
+							"with": {
+								"Name": "tfg:grass/rusticus_kaolin_mycelium",
+								"Properties": {
+									"snowy": "false"
+								}
+							}
+						},
+						{
+							"replace": "tfg:grass/sangnum_mycelium",
+							"with": {
+								"Name": "tfg:grass/sangnum_kaolin_mycelium",
+								"Properties": {
+									"snowy": "false"
+								}
+							}
+						}
+					]
+				}
+			},
+			"placement": []
+		},
+		"then": {
+			"feature": "tfg:mars/surface/torchflower",
+			"placement": []
+		}
+	}
+}

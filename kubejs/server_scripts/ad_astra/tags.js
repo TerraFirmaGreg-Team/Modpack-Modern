@@ -239,9 +239,16 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:mars_soil', 'tfc:sand/red')
 	event.add('tfg:mars_soil', 'tfc:sand/pink')
 	event.add('tfg:mars_soil', 'tfg:grass/mars_dirt')
-	event.add('tfg:mars_soil', 'tfg:grass/rusticus_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/mars_clay_dirt')
 	event.add('tfg:mars_soil', 'tfg:grass/amber_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/rusticus_mycelium')
 	event.add('tfg:mars_soil', 'tfg:grass/sangnum_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/amber_clay_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/rusticus_clay_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/sangnum_clay_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/amber_kaolin_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/rusticus_kaolin_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/sangnum_kaolin_mycelium')
 	event.add('ad_astra:mars_stone_replaceables', '#tfg:mars_soil')
 	event.add('minecraft:animals_spawnable_on', '#tfg:mars_soil')
 	
@@ -388,8 +395,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 	event.add('tfg:ignores_gravity', 'species:birt')
 	event.add('tfg:ignores_gravity', 'ad_astra:star_crawler')
 	
-	event.add('tfg:ignores_gravity', 'species:wraptor')
-	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:crusher')
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:walker')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:soarer')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:glider')
 }
@@ -428,7 +434,6 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/flammalix")
 	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/lutebus")
 	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/orango")
-	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/torchflower")
 	
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/crop/amber_root")
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/crop/blossom_berry")
@@ -441,9 +446,7 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/lamellarium")
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/lutebus")
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/orango")
-	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/pitcher_plant")
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/ruscus")
-	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/torchflower")
 	
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/crop/blossom_berry")
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/crop/bolux_mushroom")
@@ -455,7 +458,6 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/flamaea")
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/globulagus")
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/lamellarium")
-	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/pitcher_plant")
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/ruscus")
 
 	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/small_amaranita_mushroom")
