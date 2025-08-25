@@ -39,9 +39,9 @@ const registerWABRecipes = (event) => {
 		event.shapeless('4x tfg:fletching', [
 			'wan_ancient_beasts:glider_feather',
 			'#forge:tools/knives'
-		]).id('tfg:shapeless/fletching'))
+		]).id('tfg:shapeless/glider_feather_fletching'))
 
-	event.recipes.gtceu.assembler('tfg:assembler/fletching')
+	event.recipes.gtceu.assembler('tfg:assembler/glider_feather_fletching')
 		.itemInputs('1x wan_ancient_beasts:glider_feather')
 		.itemOutputs('4x tfg:fletching')
 		.duration(20)
