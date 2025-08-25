@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+        "up": "minecraft:block/snow",
+        "down": "tfc:block/red_kaolin_clay",
+        "north": "tfg:block/grass/snowy_kaolin",
+        "south": "tfg:block/grass/snowy_kaolin",
+        "east": "tfg:block/grass/snowy_kaolin",
+        "west": "tfg:block/grass/snowy_kaolin",
+        "particle": "tfg:block/grass/snowy_kaolin"
+    }
+}
