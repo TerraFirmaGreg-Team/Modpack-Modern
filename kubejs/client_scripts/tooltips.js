@@ -125,7 +125,7 @@ const registerTooltips = (event) => {
 	
 	event.addAdvanced(['tfg:sniffer_egg'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.attribution.sniffer')),
-		text.add(2, Text.translate('tfg.tooltip.large_egg')
+		text.add(2, Text.translate('tfg.tooltip.large_egg'))
 
 	})
 	
