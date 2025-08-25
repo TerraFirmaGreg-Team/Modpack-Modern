@@ -1,5 +1,5 @@
 {
-	"feature": "tfg:moon/asurine/blob",
+	"feature": "tfg:mars/terrain/ochrum_blob",
 	"placement": [
 		{
 			"type": "minecraft:count",
@@ -13,10 +13,10 @@
 			"height": {
 				"type": "minecraft:trapezoid",
 				"max_inclusive": {
-					"absolute": 120
+					"absolute": 80
 				},
 				"min_inclusive": {
-					"absolute": 0
+					"absolute": -32
 				}
 			}
 		},
