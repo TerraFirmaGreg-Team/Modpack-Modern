@@ -20,24 +20,7 @@
 					]
 				}
 			},
-			"placement": [
-				{
-					"type": "minecraft:block_predicate_filter",
-					"predicate": {
-						"type": "minecraft:any_of",
-						"predicates": [
-							{
-								"type": "minecraft:matching_blocks",
-								"blocks": "minecraft:red_sand"
-							},
-							{
-								"type": "minecraft:matching_blocks",
-								"blocks": "ad_astra:mars_sand"
-							}
-						]
-					}
-				}
-			]
+			"placement": []
 		},
 		"tries": 8,
 		"xz_spread": 8,
