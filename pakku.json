@@ -280,6 +280,7 @@
             "export": false
         },
         "probejs": {
+            "side": "CLIENT",
             "export": false
         }
     }
