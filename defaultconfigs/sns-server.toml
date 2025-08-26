@@ -50,7 +50,7 @@
 		slotCap = 48
 		#The maximum item size allowed in the container
 		#Allowed Values: TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE, HUGE
-		allowedSize = "SMALL"
+		allowedSize = "NORMAL"
 
 	["Container Item Config"."Ore Sack"]
 		#Determines if this container will automatically pickup items
