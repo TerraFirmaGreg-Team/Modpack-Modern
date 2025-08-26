@@ -35,10 +35,14 @@
 		[],
 		[],
 		"#tfg:mars_veins",
-		[],
+		[
+			"tfg:mars/terrain/red_quicksand"
+		],
 		[
 			"tfc:raw_boulder_small_patch",
-			"tfc:cobble_boulder_small_patch"
+			"tfc:cobble_boulder_small_patch",
+			"tfg:mars/surface/small_skull_and_bones",
+			"tfg:mars/surface/large_skull_and_bones"
 		],
 		[
 

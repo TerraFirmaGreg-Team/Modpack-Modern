@@ -226,7 +226,10 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/shale')
 	event.add('ad_astra:mars_stone_replaceables', 'ad_astra:mars_stone')
 	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_mars_stone')
+	event.add('ad_astra:mars_stone_replaceables', 'minecraft:red_sandstone')
 	event.add('ad_astra:mars_stone_replaceables', 'ad_astra:venus_stone')
+	event.add('ad_astra:mars_stone_replaceables', 'ad_astra:venus_sandstone')
+	event.add('ad_astra:mars_stone_replaceables', 'create:ochrum')
 	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_venus_stone')
 	event.add('ad_astra:mars_stone_replaceables', 'gtceu:red_granite')
 	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_red_granite')
@@ -395,7 +398,11 @@ const registerAdAstraEntityTypeTags = (event) => {
 	event.add('tfg:ignores_gravity', 'species:birt')
 	event.add('tfg:ignores_gravity', 'ad_astra:star_crawler')
 	
+	// this guy has a bounce animation that looks silly in low grav
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:crusher')
+	// this huge guy also looks silly in low grav
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:walker')
+	// flying mobs
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:soarer')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:glider')
 }
@@ -421,7 +428,7 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_black_sand')
 
 	//#region Mars
-
+	event.add('tfg:mars_veins', 'tfg:mars/terrain/ochrum_blob')
 	
 	// Vegetation
 	event.add("tfg:mars_amber_small_plants", "tfg:mars/crop/amber_root")

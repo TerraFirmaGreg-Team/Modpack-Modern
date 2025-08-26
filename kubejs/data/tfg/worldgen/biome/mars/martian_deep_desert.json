@@ -35,8 +35,14 @@
 		[],
 		[],
 		"#tfg:mars_veins",
-		[],
-		[],
+		[
+			"tfg:mars/terrain/spice_disc",
+			"tfg:mars/terrain/red_quicksand"
+		],
+		[
+			"tfg:mars/surface/small_skull_and_bones",
+			"tfg:mars/surface/large_skull_and_bones"
+		],
 		[
 
 		],

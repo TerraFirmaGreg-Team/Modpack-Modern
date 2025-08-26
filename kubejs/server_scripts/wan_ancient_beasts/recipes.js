@@ -46,7 +46,7 @@ const registerWABRecipes = (event) => {
 		.itemOutputs('4x tfg:fletching')
 		.duration(20)
 		.circuit(4)
-		.EUt(GTValues.VA[GTValues.ULV])	
+		.EUt(GTValues.VA[GTValues.ULV])
 }
 
 const registerWABFoodData = (event) => {
