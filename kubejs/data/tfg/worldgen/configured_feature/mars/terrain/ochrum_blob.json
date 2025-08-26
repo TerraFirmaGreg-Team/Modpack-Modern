@@ -10,7 +10,25 @@
 				},
 				"target": {
 					"predicate_type": "minecraft:tag_match",
-					"tag": "ad_astra:mars_stone_replaceables"
+					"tag": "forge:stone"
+				}
+			},
+			{
+				"state": {
+					"Name": "create:ochrum"
+				},
+				"target": {
+					"predicate_type": "minecraft:tag_match",
+					"tag": "forge:gravel"
+				}
+			},
+			{
+				"state": {
+					"Name": "create:ochrum"
+				},
+				"target": {
+					"predicate_type": "minecraft:tag_match",
+					"tag": "tfc:dirt"
 				}
 			}
 		]
