@@ -1,7 +1,7 @@
 {
     "parent": "minecraft:block/cube",
     "textures": {
-        "up": "tfg:block/grass/sangnum_mycelium_top",
+        "up": "tfg:block/grass/sangnum_top",
         "down": "tfg:block/grass/mars_clay_dirt",
         "north": "tfg:block/grass/sangnum_clay_side",
         "south": "tfg:block/grass/sangnum_clay_side",
