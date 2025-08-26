@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:simple_random_selector",
+	"config": {
+		"features": [
+			{
+				"feature": "tfg:mars/surface/skulls/crusher",
+				"placement": []
+			},
+			{
+				"feature": "tfg:mars/surface/skulls/glider",
+				"placement": []
+			},
+			{
+				"feature": "tfg:mars/surface/skulls/soarer",
+				"placement": []
+			},
+			{
+				"feature": "tfg:mars/surface/skulls/surfer",
+				"placement": []
+			},
+			{
+				"feature": "tfg:mars/surface/skulls/tiny",
+				"placement": []
+			}
+		]
+	}
+}
