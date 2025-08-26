@@ -37,11 +37,13 @@
 		[],
 		"#tfg:mars_veins",
 		[
-			"tfg:mars/terrain/clay_disc"
+			"tfg:mars/terrain/clay_disc",
+			"tfg:mars/terrain/peat_disc"
 		],
 		[
 			"tfg:mars_forest",
-			"tfg:mars/semiheavy_ammoniacal_water"
+			"tfg:mars/semiheavy_ammoniacal_water",
+			"tfg:mars/surface/rotten_flesh_patch"
 		],
 		"#tfg:mars_sangnum_vegetal_decoration",
 		"#tfg:mars_top_layer_modification"
