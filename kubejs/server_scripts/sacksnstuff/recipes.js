@@ -65,7 +65,22 @@ const registerSNSRecipes = (event) => {
 				E: 'tfc:bone_needle'
 			}
 		)
-	).id('sns:shaped/leather_sack')
+	).id('sns:crafting/leather_sack')
+	
+	event.recipes.tfc.damage_inputs_shaped_crafting(
+		event.shaped('sns:leather_sack', [
+				' A ',
+				'BCB',
+				'DBE'
+			], {
+				A: '#forge:rope',
+				B: 'sns:leather_strip',
+				C: 'sns:unfinished_leather_sack',
+				D: 'minecraft:name_tag',
+				E: 'tfc:bone_needle'
+			}
+		)
+	).id('sns:crafting/leather_sack_coil')
 	
 	event.recipes.tfc.damage_inputs_shaped_crafting(
 		event.shaped('sns:ore_sack', [
@@ -80,7 +95,7 @@ const registerSNSRecipes = (event) => {
 				E: 'tfc:bone_needle'
 			}
 		)
-	).id('sns:shaped/ore_sack')
+	).id('sns:crafting/ore_sack')
 		
 		
 	event.recipes.tfc.anvil(
@@ -112,12 +127,28 @@ const registerSNSRecipes = (event) => {
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.LV])
 		
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ tag: 'forge:plates/wrought_iron' }],
+		itemAsHead: 'gtceu:small_pipe_extruder_mold',
+		results: [{ item: 'sns:buckle' }],
+		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id('sns:vi/curving/buckle')
+		
 	event.recipes.gtceu.extruder('sns:buckle2')
 		.itemInputs('#forge:plates/steel')
 		.notConsumable('gtceu:small_pipe_extruder_mold')
 		.itemOutputs('2x sns:buckle')
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.LV])
+		
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ tag: 'forge:plates/steel' }],
+		itemAsHead: 'gtceu:small_pipe_extruder_mold',
+		results: [{ item: '2x sns:buckle' }],
+		processingTime: 80 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id('sns:vi/curving/buckle')
 
 	event.shaped('sns:pack_frame', [
 			'AAA',
@@ -137,6 +168,17 @@ const registerSNSRecipes = (event) => {
 			B: '#forge:string'
 			
 		}).id('sns:shaped/reinforced_fiber')
+	
+	event.shaped('2x sns:reinforced_fiber', [
+			' A ',
+			'BBB',
+			' C '
+		], {
+			A: '#forge:rope',
+			B: '#forge:string',
+			C: '#forge:tools/knife'
+			
+		}).id('sns:shaped/reinforced_fiber_rope')
 		
 	event.recipes.gtceu.assembler('sns:reinforced_fiber')
 		.itemInputs('2x tfc:jute_fiber', '#forge:string')
