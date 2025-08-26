@@ -9,18 +9,25 @@ function registerTFGCollapseRecipes(event) {
 	// #region Nether
 	event.recipes.tfc.collapse('minecraft:cobbled_deepslate', 'minecraft:deepslate')
 	event.recipes.tfc.collapse('minecraft:cobbled_deepslate', 'tfg:rock/hardened_deepslate')
-	event.recipes.tfc.collapse('minecraft:blackstone', 'minecraft:blackstone')
-	event.recipes.tfc.collapse('minecraft:blackstone', 'tfg:rock/hardened_blackstone')
-	event.recipes.tfc.collapse('minecraft:dripstone_block', 'minecraft:dripstone_block')
-	event.recipes.tfc.collapse('minecraft:dripstone_block', 'tfg:rock/hardened_dripstone')
+	event.recipes.tfc.collapse('tfg:rock/cobble_blackstone', 'minecraft:blackstone')
+	event.recipes.tfc.collapse('tfg:rock/cobble_blackstone', 'tfg:rock/hardened_blackstone')
+	event.recipes.tfc.collapse('tfg:rock/cobble_dripstone', 'minecraft:dripstone_block')
+	event.recipes.tfc.collapse('tfg:rock/cobble_dripstone', 'tfg:rock/hardened_dripstone')
 
 	event.recipes.tfc.collapse('tfc:rock/cobble/basalt', 'minecraft:basalt')
 	event.recipes.tfc.collapse('minecraft:cobbled_deepslate', '#forge:ores_in_ground/deepslate')
-	event.recipes.tfc.collapse('minecraft:blackstone', '#forge:ores_in_ground/pyroxenite')
-	event.recipes.tfc.collapse('minecraft:dripstone_block', '#forge:ores_in_ground/dripstone')
+	event.recipes.tfc.collapse('tfg:rock/cobble_blackstone', '#forge:ores_in_ground/pyroxenite')
+	event.recipes.tfc.collapse('tfg:rock/cobble_dripstone', '#forge:ores_in_ground/dripstone')
 		
 	event.recipes.tfc.landslide('tfg:ash_pile', 'tfg:ash_pile')
 	event.recipes.tfc.landslide('minecraft:cobbled_deepslate', 'minecraft:cobbled_deepslate')
+	event.recipes.tfc.landslide('tfg:rock/cobble_blackstone', 'tfg:rock/cobble_blackstone')
+	event.recipes.tfc.landslide('tfg:rock/cobble_dripstone', 'tfg:rock/cobble_dripstone')
+
+	event.recipes.tfc.landslide('tfg:rock/gravel_deepslate', 'tfg:rock/gravel_deepslate')
+	event.recipes.tfc.landslide('tfg:rock/gravel_blackstone', 'tfg:rock/gravel_blackstone')
+	event.recipes.tfc.landslide('tfg:rock/gravel_dripstone', 'tfg:rock/gravel_dripstone')
+
 	// #endregion Nether
 
 	// #region Space
