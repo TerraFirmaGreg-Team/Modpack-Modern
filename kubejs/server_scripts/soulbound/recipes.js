@@ -12,7 +12,7 @@ const registerSoulboundRecipes = (event) => {
 	
 	
 	SoulbindableItems.forEach(item => {
-		event.shapeless(Item.of(item, '{soulbindingSoulboundItems:1b}'), ['minecraft:dirt', item])
+		event.shapeless(Item.of(item, '{soulbindingSoulboundItems:1b}'), ['endermanoverhaul:soul_pearl', item])
 		.modifyResult((craftingGrid, result) => {
 			let orig = craftingGrid.find(Ingredient.of(item))
 			
