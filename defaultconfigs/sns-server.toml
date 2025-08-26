@@ -61,7 +61,7 @@
 		doInventoryTransfer = true
 		#Controls the amount of slots this container has
 		#Range: 1 ~ 27
-		slotCount = 6
+		slotCount = 9
 		#Item stack max for the type of container
 		#Range: 1 ~ 512
 		slotCap = 512
