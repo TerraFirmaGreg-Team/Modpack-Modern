@@ -1,0 +1,8 @@
+#Swaps the enchant glint from when auto pickup is enabled to when it's disabled
+voidGlint = true
+#When enabled sacks will display their contents like how TFC vessels do
+displayItemContentsAsImages = true
+#Config for which hiking boots model is used. FANCY for the full 3D model, NO_FLOOF for only toes and VANILLA for the vanilla style model
+#Allowed Values: FANCY, NO_FLOOF, VANILLA
+bootModelType = "FANCY"
+
