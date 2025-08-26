@@ -1455,6 +1455,70 @@
             ]
         },
         {
+            "pakku_id": "xYgkxAJKwHb9tvUM",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "autopack-director",
+                "modrinth": "autopack-director"
+            },
+            "name": {
+                "curseforge": "AutoPack-Director",
+                "modrinth": "AutoPack-Director"
+            },
+            "id": {
+                "curseforge": "1182657",
+                "modrinth": "Fqqapnbs"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "AutoPack-Director-1.0.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6102/172/AutoPack-Director-1.0.1.jar",
+                    "id": "6102172",
+                    "parent_id": "1182657",
+                    "hashes": {
+                        "sha1": "973a115aeee0cd6d40ad0a0e1e255d5aa0419bb2",
+                        "md5": "5b6d859ea086f988ed041045d0b58896"
+                    },
+                    "required_dependencies": [],
+                    "size": 3031600,
+                    "date_published": "2025-01-19T07:37:46.543Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "Modpack-Director-1.0.1.jar",
+                    "mc_versions": [
+                        "1.12.2",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/Fqqapnbs/versions/47y19tCP/Modpack-Director-1.0.1.jar",
+                    "id": "47y19tCP",
+                    "parent_id": "Fqqapnbs",
+                    "hashes": {
+                        "sha512": "2a58aff6a3bbcc4e44f6b81f7fb8477fd87f55112ff53c3704ae25a136d2ffd5146043983cf653444e823a4c9a247866028a452ff482d9cdc6cb81af4a1ffca3",
+                        "sha1": "973a115aeee0cd6d40ad0a0e1e255d5aa0419bb2"
+                    },
+                    "required_dependencies": [],
+                    "size": 3031600,
+                    "date_published": "2025-01-19T06:45:11.832901Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "tcGlxrXYONei6sfG",
             "type": "MOD",
             "side": "SERVER",
@@ -5378,7 +5442,7 @@
                 "e7thBe1Z6fvyxUtU"
             ],
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "ftb-backups-2"
             },
@@ -5388,6 +5452,7 @@
             "id": {
                 "curseforge": "622737"
             },
+            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5435,6 +5500,7 @@
             "id": {
                 "curseforge": "314906"
             },
+            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5475,6 +5541,7 @@
             "id": {
                 "curseforge": "410811"
             },
+            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5517,6 +5584,7 @@
             "id": {
                 "curseforge": "943925"
             },
+            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5560,6 +5628,7 @@
             "id": {
                 "curseforge": "404465"
             },
+            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5603,6 +5672,7 @@
             "id": {
                 "curseforge": "289412"
             },
+            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5647,6 +5717,7 @@
             "id": {
                 "curseforge": "314905"
             },
+            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5690,6 +5761,7 @@
             "id": {
                 "curseforge": "404468"
             },
+            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5735,6 +5807,7 @@
             "id": {
                 "curseforge": "889915"
             },
+            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -6977,44 +7050,45 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "GregTech Revival 32x 1.19.2-1.20.1-1.21 ver 0.19.zip",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6546/954/GregTech Revival 32x 1.19.2-1.20.1-1.21 ver 0.19.zip",
-                    "id": "6546954",
-                    "parent_id": "964322",
-                    "hashes": {
-                        "sha1": "b0e072c301f713e7e1c2cc21a75646e7d64051f6",
-                        "md5": "d2a57f619ac14ffd8705596b56a6e599"
-                    },
-                    "required_dependencies": [],
-                    "size": 8116393,
-                    "date_published": "2025-05-19T12:40:51.413Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "GregTech Revival 32x 1.19.2-1.20.1-1.21 ver 0.19.zip",
+                    "file_name": "[ver 0.20] GT Revival 32x 1.19.2-1.20.1-1.21.zip",
                     "mc_versions": [
-                        "1.20",
-                        "1.20.1"
+                        "1.19.2",
+                        "1.20.1",
+                        "1.21.1"
                     ],
                     "loaders": [
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/fUawEtti/versions/UuwQOAHO/GregTech Revival 32x 1.19.2-1.20.1-1.21 ver 0.19.zip",
-                    "id": "UuwQOAHO",
+                    "url": "https://cdn.modrinth.com/data/fUawEtti/versions/oQJH7fHm/[ver 0.20] GT Revival 32x 1.19.2-1.20.1-1.21.zip",
+                    "id": "oQJH7fHm",
                     "parent_id": "fUawEtti",
                     "hashes": {
-                        "sha512": "0cede40c825cee8fd314abd9825b9e35f943aa5379fa6f81adc8643473c66cbef6a6ae846a546b8584514d857c21831d1bf81d6c6393fe7306dedd725c2570f1",
-                        "sha1": "b0e072c301f713e7e1c2cc21a75646e7d64051f6"
+                        "sha512": "d9834d62867186584f1a6b62d91f1426dd3ff646e5c85c2c562767db2b4616769640314d970e5550bcd3e5fc65be3eb733831503d607add010805c7d54949f32",
+                        "sha1": "388145cb295a0778deb2af3920c3a53ecfb80804"
                     },
                     "required_dependencies": [],
-                    "size": 8116393,
-                    "date_published": "2025-05-19T12:41:42.204377Z"
+                    "size": 8289791,
+                    "date_published": "2025-07-19T13:09:55.325382Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "[ver 0.20] GT Revival 32x 1.19.2-1.20.1-1.21.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6787/476/[ver 0.20] GT Revival 32x 1.19.2-1.20.1-1.21.zip",
+                    "id": "6787476",
+                    "parent_id": "964322",
+                    "hashes": {
+                        "sha1": "388145cb295a0778deb2af3920c3a53ecfb80804",
+                        "md5": "9c4fad9bba1ff5c4dd7c24d68c9310a9"
+                    },
+                    "required_dependencies": [],
+                    "size": 8289791,
+                    "date_published": "2025-07-19T13:10:34.260Z"
                 }
             ]
         },
@@ -10309,7 +10383,7 @@
                 "3Hn4sTVbBvKyQJJS"
             ],
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "pick-up-notifier",
                 "modrinth": "pick-up-notifier"
@@ -12122,21 +12196,23 @@
             ]
         },
         {
-            "pakku_id": "4WwQ11qPky8VtFcw",
+            "pakku_id": "EmmEeCWccT896XlZ",
             "pakku_links": [
-                "F6H99cZ4H6jZRpEK",
-                "fMkiGcRPRv1DdRC1",
                 "64uacGcEw697jVGs"
             ],
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "tfc-better-blast-furnace"
+                "curseforge": "tfc-better-blast-furnace",
+                "modrinth": "tfc-better-blast-furnace"
             },
             "name": {
-                "curseforge": "TFC Better Blast Furnace"
+                "curseforge": "TFC Better Blast Furnace",
+                "modrinth": "TFC Better Blast Furnace"
             },
             "id": {
-                "curseforge": "1046432"
+                "curseforge": "1046432",
+                "modrinth": "tr715LZ4"
             },
             "files": [
                 {
@@ -12161,6 +12237,27 @@
                     ],
                     "size": 21088,
                     "date_published": "2024-06-23T02:44:03.777Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "TFCBetterBlastFurnace-1.20.1-1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/tr715LZ4/versions/kXi8g4JA/TFCBetterBlastFurnace-1.20.1-1.0.0.jar",
+                    "id": "kXi8g4JA",
+                    "parent_id": "tr715LZ4",
+                    "hashes": {
+                        "sha512": "d4c9d5fab5bffd67c8a14acffd13e9defa6e6cfa4bdff44c1d8021dce660d814b2e7352f43361a8118349d24b753b74af7921c4d111d998495ffd1d5afa99bd8",
+                        "sha1": "91dbfe3c3e7e7fc9ffb126d879c1507e8c2f8b82"
+                    },
+                    "required_dependencies": [],
+                    "size": 21088,
+                    "date_published": "2025-08-17T17:27:17.212986Z"
                 }
             ]
         },
@@ -13402,6 +13499,66 @@
                     ],
                     "size": 584411,
                     "date_published": "2025-08-24T07:00:04.203Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "RVPHBXeZSGhgSPEu",
+            "type": "SHADER",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "terrafirmagreg-shaders",
+                "modrinth": "terrafirmagreg-shaders"
+            },
+            "name": {
+                "curseforge": "TerraFirmaGreg-Shaders",
+                "modrinth": "TerraFirmaGreg-Shaders"
+            },
+            "id": {
+                "curseforge": "954161",
+                "modrinth": "cFPyBbB1"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "TerraFirmaGreg-Shaders-Unbound-2.0.1.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6926/661/TerraFirmaGreg-Shaders-Unbound-2.0.1.zip",
+                    "id": "6926661",
+                    "parent_id": "954161",
+                    "hashes": {
+                        "sha1": "acacf78875b08aa2132abbb387ec4397a96711a3",
+                        "md5": "26fb51631705d06253a4b5766121e2b9"
+                    },
+                    "required_dependencies": [],
+                    "size": 568225,
+                    "date_published": "2025-08-25T13:12:54.383Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "TerraFirmaGreg-Shaders-Unbound-2.0.1.zip",
+                    "mc_versions": [
+                        "1.12.2",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "iris",
+                        "optifine"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/cFPyBbB1/versions/7LqM8Hgz/TerraFirmaGreg-Shaders-Unbound-2.0.1.zip",
+                    "id": "7LqM8Hgz",
+                    "parent_id": "cFPyBbB1",
+                    "hashes": {
+                        "sha512": "c62a4f1efaec1d1a27f69ae485cb874fc9064fdfecfc2dcea8440f5d70ec0fd91f9c55fd7e42f118e57e36087b2987f2b3a20f757ec8c80943a55ab49dda9d77",
+                        "sha1": "acacf78875b08aa2132abbb387ec4397a96711a3"
+                    },
+                    "required_dependencies": [],
+                    "size": 568225,
+                    "date_published": "2025-08-25T13:12:55.910412Z"
                 }
             ]
         },
