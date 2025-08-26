@@ -44,11 +44,11 @@
 ["Drop Settings"]
 	#Chances are set as decimals.  1.0 is the same as 100%, 0.01 is the same as 1%
 	#Range: 0.0 ~ 1.0
-	"Chance for the Witch to drop Binding Chains" = 0.00
+	"Chance for the Witch to drop Binding Chains" = 0.0
 	#Range: 0.0 ~ 1.0
-	"Chance for the Evoker to drop Binding Chains" = 0.00
+	"Chance for the Evoker to drop Binding Chains" = 0.0
 	#Range: 0.0 ~ 1.0
-	"Chance for the Piglin Brute to drop Binding Chains" = 0.00
+	"Chance for the Piglin Brute to drop Binding Chains" = 0.0
 
 ["Misc Settings"]
 	"Binding Chains will Bind and Greatly SLOW Mobs when tossed to them" = true

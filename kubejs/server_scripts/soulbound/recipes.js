@@ -3,15 +3,7 @@
 
 const registerSoulboundRecipes = (event) => {
 	
-	const SoulbindableItems = [
-		'ad_astra:space_helmet',
-		'ad_astra:space_suit',
-		'ad_astra:space_pants',
-		'ad_astra:space_boots'	
-	]
-	
-	
-	SoulbindableItems.forEach(item => {
+	global.SOULBINDABLE_ITEMS.forEach(item => {
 		event.shapeless(Item.of(item, '{soulbindingSoulboundItems:1b}'), ['endermanoverhaul:soul_pearl', item])
 		.modifyResult((craftingGrid, result) => {
 			let orig = craftingGrid.find(Ingredient.of(item))
