@@ -46,12 +46,7 @@ const registerWABRecipes = (event) => {
 		.itemOutputs('4x tfg:fletching')
 		.duration(20)
 		.circuit(4)
-		.EUt(GTValues.VA[GTValues.ULV])	
-
-
-	
-	event.recipes.tfc.landslide('wan_ancient_beasts:quick_red_sand', 'wan_ancient_beasts:quick_red_sand')
-	event.recipes.tfc.landslide('wan_ancient_beasts:quick_sand', 'wan_ancient_beasts:quick_sand')
+		.EUt(GTValues.VA[GTValues.ULV])
 }
 
 const registerWABFoodData = (event) => {
