@@ -11283,6 +11283,76 @@
             ]
         },
         {
+            "pakku_id": "zOlM6hm7KZ1BAq5R",
+            "pakku_links": [
+                "64uacGcEw697jVGs"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "sacks-n-such",
+                "modrinth": "sacks-n-such"
+            },
+            "name": {
+                "curseforge": "Sacks 'N Such",
+                "modrinth": "Sacks 'N Such"
+            },
+            "id": {
+                "curseforge": "695822",
+                "modrinth": "PhnM3Lkv"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Sacks 'N Such-1.20.1-1.2.3-all.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6464/916/Sacks 'N Such-1.20.1-1.2.3-all.jar",
+                    "id": "6464916",
+                    "parent_id": "695822",
+                    "hashes": {
+                        "sha1": "490701ab6768325bf455d19455966567cd01996b",
+                        "md5": "abcc4d700ed32305824902e4f2b29bbb"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 660385,
+                    "date_published": "2025-04-25T23:21:11.043Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "Sacks 'N Such-1.20.1-1.2.3-all.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/PhnM3Lkv/versions/tXZzHNm6/Sacks 'N Such-1.20.1-1.2.3-all.jar",
+                    "id": "tXZzHNm6",
+                    "parent_id": "PhnM3Lkv",
+                    "hashes": {
+                        "sha512": "cd1a5514f6231eee01e514be4bd8e05cdcf5411df68327b83586996ddae15d5c6fda3ff2edec22c3aad6ccb0052e45a73c98a19e2832671f34291e2afd7df358",
+                        "sha1": "490701ab6768325bf455d19455966567cd01996b"
+                    },
+                    "required_dependencies": [
+                        "JaCEZUhg"
+                    ],
+                    "size": 660385,
+                    "date_published": "2025-04-25T23:21:12.798597Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "87oulFfvlQlJm2Pt",
             "type": "MOD",
             "side": "BOTH",
@@ -11939,6 +12009,43 @@
                     "required_dependencies": [],
                     "size": 1334328,
                     "date_published": "2025-07-27T13:23:07.270Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "AZEF3WB6o1ORFoD1",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "soulbinding"
+            },
+            "name": {
+                "curseforge": "Soulbinding"
+            },
+            "id": {
+                "curseforge": "925229"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "SoulBinding1.20.1(Forge)vs1.0.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4928/200/SoulBinding1.20.1(Forge)vs1.0.2.jar",
+                    "id": "4928200",
+                    "parent_id": "925229",
+                    "hashes": {
+                        "sha1": "b794e39c75a28753900dfe81d97137bc1d7b50d7",
+                        "md5": "fa3f5d7f9a0e01037f39de4ca8fdec1f"
+                    },
+                    "required_dependencies": [],
+                    "size": 23878,
+                    "date_published": "2023-12-05T04:59:29.643Z"
                 }
             ]
         },
