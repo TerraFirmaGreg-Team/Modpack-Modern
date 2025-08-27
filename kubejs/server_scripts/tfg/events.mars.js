@@ -7,11 +7,9 @@ ItemEvents.firstLeftClicked('gtceu:long_copper_rod', event => {
 
     let player = event.player;
     player.sendSystemMessage(event.getItem().getHoverName());
-    // let eyePos = player.getEyePosition().toBlockPos();
     let biome = event.getLevel().getBiome(player.blockPosition());
 
-    player.sendSystemMessage("debug stick of dooooom!");
-    // player.sendSystemMessage(player.getEyePosition())
+    // player.sendSystemMessage("debug stick of dooooom!");
     let currentWind = TFC.climate.getWindVector(player.level, player.blockPosition());
 
     let tags = Array(
@@ -69,13 +67,9 @@ ItemEvents.firstRightClicked('gtceu:long_tin_rod', event => {
     increment = JavaMath.toRadians(increment)
 
     player.sendSystemMessage(`current angle: ${JavaMath.toDegrees(initAngle).toFixed(1)}`);
-    // player.sendSystemMessage(`${windVec.x * Math.cos(increment) - windVec.y * Math.sin(increment)}`);
 
     let newX = (windVec.x * JavaMath.cos(increment)) - (windVec.y * JavaMath.sin(increment))
     let newY = (windVec.x * JavaMath.sin(increment)) + (windVec.y * JavaMath.cos(increment))
-
-    // windVec.x = (windVec.x * JavaMath.cos(increment)) - (windVec.y * JavaMath.sin(increment)); //clockwise default, counterclockwise else
-    // windVec.y = (windVec.x * JavaMath.sin(increment)) + (windVec.y * JavaMath.cos(increment));
 
     player.sendSystemMessage(`new x: ${newX.toFixed(1)}, z: ${newY.toFixed(1)}`);
 
