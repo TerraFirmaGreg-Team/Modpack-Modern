@@ -176,7 +176,7 @@ const registerSNSRecipes = (event) => {
 		], {
 			A: '#forge:rope',
 			B: '#forge:string',
-			C: '#forge:tools/knifes'
+			C: '#forge:tools/knives'
 			
 		}).id('sns:shaped/reinforced_fiber_rope')
 		
