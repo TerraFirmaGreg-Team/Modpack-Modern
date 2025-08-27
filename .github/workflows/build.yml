@@ -505,7 +505,7 @@ jobs:
       name: 🚀 Release to Modrinth
       needs: [info, build-project, release-github]
       runs-on: ubuntu-latest
-      if: false
+      if: ${{ needs.info.outputs.make_release == 'true' }}
       outputs:
         id: ${{ steps.release.outputs.id }}
 
@@ -529,9 +529,6 @@ jobs:
             if [ ! -f ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack ]; then
               echo '::error::No value found for artifact `modrinth.mrpack`.' && exit 1
             fi
-            if [ ! -f ${{ needs.info.outputs.project_full_name }}-serverpack.zip ]; then
-              echo '::error::No value found for artifact `serverpack.zip`.' && exit 1
-            fi
             echo "✔️ All artifacts found"
     
         - name: 🚀 Upload Modrinth
@@ -541,12 +538,11 @@ jobs:
             api-token: ${{ secrets.MODRINTH_TOKEN }}
             project-id: ${{ vars.MODRINTH_ID }}
             modpack-path: ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
-            modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
             changelog: ${{ needs.info.outputs.changelog }}
             changelog-format: markdown
             game-version: ${{ needs.info.outputs.mc_version }}
             display-name: ${{ needs.info.outputs.project_full_name }}
-            server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
+
             release-type: ${{ needs.info.outputs.release_type }}
 
   discord-message:

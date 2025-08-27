@@ -1,0 +1,60 @@
+
+["Professions that can sell Binding Chains"]
+	Armorer = false
+	Butcher = false
+	Cartographer = false
+	Cleric = false
+	Farmer = false
+	Fisherman = false
+	Fletcher = false
+	Leatherworker = false
+	Librarian = false
+	Mason = false
+	Shepherd = false
+	Toolsmith = false
+	Weaponsmith = false
+
+["Profession Settings"]
+	#Range: 0 ~ 5
+	"Profession Level needed to sell Binding Chains" = 1
+	#Range: 0 ~ 999999
+	"Max Binding Chains that a Villager can sell per day" = 10
+	#Item Needed must be lowercase and spelt correctly.  If not, the Binding Chains WILL NOT appear in trades.
+	"Item needed for Trade" = "minecraft:emerald"
+	#Range: 0 ~ 64
+	"Amount of Trade Items Needed" = 16
+
+["Wandering Trader Settings"]
+	"Wandering Trader can Sell Binding Chains" = true
+	#The Wandering Trader randomly picks a few trades from the Generic Trade List and a single trade from Rare List.
+	"Binding Chains are in the Rare List" = true
+	"Binding Chains are in the Generic List" = false
+	#Range: 0 ~ 999999
+	"Max Binding Chains that the Trader can sell" = 3
+	#Item Needed must be lowercase and spelt correctly.  If not, the Binding Chains WILL NOT appear in trades.
+	"Item needed for Trade" = "minecraft:emerald"
+	#Range: 0 ~ 64
+	"Amount of Trade Items Needed" = 16
+
+["Anvil Settings"]
+	#The way that the Anvil is coded requires at least 1 Experience Level to successfully alter an item outside of Creative Mode!
+	#Range: 1 ~ 999999
+	"Experience Levels Needed to Attach Binding Chains to an Item" = 1
+
+["Drop Settings"]
+	#Chances are set as decimals.  1.0 is the same as 100%, 0.01 is the same as 1%
+	#Range: 0.0 ~ 1.0
+	"Chance for the Witch to drop Binding Chains" = 0.0
+	#Range: 0.0 ~ 1.0
+	"Chance for the Evoker to drop Binding Chains" = 0.0
+	#Range: 0.0 ~ 1.0
+	"Chance for the Piglin Brute to drop Binding Chains" = 0.0
+
+["Misc Settings"]
+	"Binding Chains will Bind and Greatly SLOW Mobs when tossed to them" = true
+	#Chances are set as decimals.  1.0 is the same as 100%, 0.01 is the same as 1%
+	#Range: 0.0 ~ 1.0
+	"Chance for the Bound Mob to drop Binding Chains when killed" = 1.0
+	"Binding Chains can be used as Piglin Currency" = false
+	"The Binding Chains ICON has a Foil Effect making it shimmer as if it is enchanted" = true
+
