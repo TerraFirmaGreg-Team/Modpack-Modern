@@ -328,17 +328,18 @@ const registerAdAstraBiomeTags = (event) => {
 
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_dunes')
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_deep_desert')
-	event.add('tfg:has_medium_sand_particles', 'tfg:mars/martian_dune_edge')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/amber_plains')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/amber_hills')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/rusticus_plains')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/rusticus_hills')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/sangnum_plains')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/sangnum_hills')
-	event.add('tfg:has_medium_sand_particles', 'tfg:mars/martian_oasis')
-	event.add('tfg:has_medium_sand_particles', 'tfg:mars/martian_mountains')
+	event.add('tfg:has_light_sand_particles', 'tfg:mars/martian_dune_edge')
+	event.add('tfg:has_light_sand_particles', 'tfg:mars/amber_edge')
+	event.add('tfg:has_light_sand_particles', 'tfg:mars/rusticus_edge')
+	event.add('tfg:has_light_sand_particles', 'tfg:mars/sangnum_edge')
+	event.add('tfg:has_light_sand_particles', 'tfg:mars/martian_mountains')
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/martian_river')
-	event.add('tfg:has_light_sand_particles', 'tfg:mars/martian_riverbed')
 }
 
 const registerAdAstraEntityTypeTags = (event) => {
