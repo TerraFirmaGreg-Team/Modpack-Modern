@@ -43,6 +43,8 @@ ServerEvents.tags('item', event => {
 	registerRailWaysItemTags(event)
 	registerRnrItemTags(event)
 	registerSophisticatedBackpacksItemTags(event)
+	registerSoulboundItemTags(event)
+	registeSNSItemTags(event)
 	registerSpeciesItemTags(event)
 	registerTACZItemTags(event)
 	registerTFCAmbientalItemTags(event)
@@ -132,6 +134,7 @@ ServerEvents.tags('worldgen/biome', event => {
 
 ServerEvents.tags('entity_type', event => {
 	registerAdAstraEntityTypeTags(event)
+	registerWABEntityTypeTags(event)
 })
 
 /**
@@ -163,6 +166,7 @@ TFCEvents.data(event => {
 	registerTFCDataForTFG(event)
 	registerTFCDataForWaterFlasks(event)
 	registerWABFoodData(event)
+	registerSpeciesFoodData(event)
 })
 
 /**
@@ -185,10 +189,6 @@ LootJS.modifiers((event) => {
  */
 GTCEuServerEvents.oreVeins(event => {
 	event.removeAll()
-})
-
-GTCEuServerEvents.bedrockOreVeins(event => {
-	registerGTCEUBedrockOreVeins(event)
 })
 
 GTCEuServerEvents.fluidVeins(event => {
@@ -251,8 +251,11 @@ ServerEvents.recipes(event => {
 	registerProgrammedCircuitCardRecipes(event)
 	registerRailWaysRecipes(event)
 	registerRnrRecipes(event)
+	registerSandwormRecipes(event)
 	registerSophisticatedBackpacksRecipes(event)
+	registerSoulboundRecipes(event)
 	registerSimplylightRecipes(event)
+	registerSNSRecipes(event)
 	registerSpeciesRecipes(event)
 	registerTACZRecipes(event)
 	registerTFCRecipes(event)

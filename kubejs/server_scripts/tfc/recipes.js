@@ -183,6 +183,9 @@ const registerTFCRecipes = (event) => {
 	event.recipes.tfc.heating('tfc:plant/winged_kelp', 200)
 		.resultItem('tfc:food/dried_kelp')
 
+	// Burning Bread
+	event.recipes.tfc.heating('#tfc:foods/breads', 850)
+
 	// Soda Ash
 	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_seaweed').id('tfg:smelting/dried_seaweed_to_soda')
 	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_kelp').id('tfg:smelting/dried_kelp_to_soda')
@@ -207,12 +210,6 @@ const registerTFCRecipes = (event) => {
 		[], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_from_wood_ash')
 	generateMixerRecipe(event, '#forge:dusts/sodium_hydroxide', "#tfg:clean_water 1000",
 		[], null, Fluid.of('tfc:lye', 1000), 100, 2, 64, 'lye_from_sodium_hydroxide')
-
-	event.recipes.firmalife.vat()
-		.inputFluid(Fluid.of('tfc:lye', 1000))
-		.outputItem('gtceu:sodium_hydroxide_dust')
-		.length(100)
-		.temperature(80)
 
 	event.recipes.gtceu.distillery('lye_to_sodium_hydroxide')
 		.inputFluids('tfc:lye 1000')

@@ -690,38 +690,6 @@ function registerGTCEuMachineRecipes(event) {
 	["scannerResearch(java.util.function.UnaryOperator)"](b =>
 		b.researchStack(Item.of('gtceu:computer_monitor_cover')).EUt(GTValues.VA[GTValues.IV]).duration(120 * 20))
 
-	event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer' })
-	event.recipes.gtceu.assembly_line('me_pattern_buffer')
-		.itemInputs('gtceu:luv_dual_input_hatch',
-			'gtceu:luv_emitter',
-			'4x #gtceu:circuits/luv',
-			'3x ae2:pattern_provider',
-			'3x ae2:interface',
-			'4x ae2:speed_card',
-			'2x ae2:capacity_card',
-			'64x #forge:fine_wires/europium',
-			'32x #forge:fine_wires/europium')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 576), Fluid.of('gtceu:lubricant', 500))
-		.itemOutputs('gtceu:me_pattern_buffer')
-		.duration(30 * 20)
-		.EUt(GTValues.VA[GTValues.LuV])
-	["scannerResearch(java.util.function.UnaryOperator)"](b =>
-		b.researchStack(Item.of('gtceu:luv_dual_input_hatch')).EUt(GTValues.VA[GTValues.LuV]).duration(60 * 20))
-
-	event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer_proxy' })
-	event.recipes.gtceu.assembly_line('me_pattern_buffer_proxy')
-		.itemInputs('gtceu:luv_machine_hull',
-			'2x gtceu:luv_sensor',
-			'#gtceu:circuits/luv',
-			'ae2:quantum_link',
-			'2x ae2:quantum_ring',
-			'64x #forge:fine_wires/europium')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 576), Fluid.of('gtceu:lubricant', 500))
-		.itemOutputs('gtceu:me_pattern_buffer_proxy')
-		.duration(30 * 20)
-		.EUt(GTValues.VA[GTValues.ZPM])
-		.stationResearch(b => b.researchStack(Item.of('gtceu:me_pattern_buffer')).EUt(GTValues.VA[GTValues.LuV]).CWUt(32))
-
 	event.remove({ id: 'gtceu:assembly_line/ultimate_battery' })
 	event.recipes.gtceu.assembly_line('ultimate_battery')
 		.itemInputs('16x #forge:double_plates/darmstadtium',
@@ -896,48 +864,7 @@ function registerGTCEuMachineRecipes(event) {
 	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_hatch' }, 'gtceu:steel_dust', '6x gtceu:steel_dust')
 	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_hatch' }, 'gtceu:steel_block', '6x gtceu:steel_ingot')
 
-	// #region Bedrock Miner
-
-	event.recipes.gtceu.assembler('gtceu:mv_bedrock_miner')
-		.itemInputs('1x gtceu:hv_machine_hull',
-			'4x #forge:frames/steel',
-			'4x #gtceu:circuits/iv',
-			'4x gtceu:hv_electric_motor',
-			'4x gtceu:hv_robot_arm',
-			'4x gtceu:hv_conveyor_module',
-			'4x #forge:gears/blue_steel')
-		.itemOutputs('gtceu:mv_bedrock_ore_miner')
-		.duration(400)
-		.EUt(GTValues.VA[GTValues.HV])
-		.circuit(2)
-
-	event.recipes.gtceu.assembler('gtceu:hv_bedrock_miner')
-		.itemInputs('1x gtceu:ev_machine_hull',
-			'4x #forge:frames/titanium',
-			'4x #gtceu:circuits/luv',
-			'4x gtceu:luv_electric_motor',
-			'4x gtceu:luv_robot_arm',
-			'4x gtceu:luv_conveyor_module',
-			'4x #forge:gears/ruridit')
-		.itemOutputs('gtceu:hv_bedrock_ore_miner')
-		.duration(400)
-		.EUt(GTValues.VA[GTValues.IV])
-		.circuit(2)
-
-	event.recipes.gtceu.assembler('gtceu:ev_bedrock_miner')
-		.itemInputs('1x gtceu:iv_machine_hull',
-			'4x #forge:frames/tungsten_steel',
-			'4x #gtceu:circuits/zpm',
-			'4x gtceu:zpm_electric_motor',
-			'4x gtceu:zpm_robot_arm',
-			'4x gtceu:zpm_conveyor_module',
-			'4x #forge:gears/osmiridium')
-		.itemOutputs('gtceu:ev_bedrock_ore_miner')
-		.duration(400)
-		.EUt(GTValues.VA[GTValues.ZPM])
-		.circuit(2)
-
-	//#endregion
+	//#region Chipboard Composite
 
 	event.recipes.gtceu.mixer('gtceu:chipboard_composite_wax')
 		.itemInputs('2x #tfg:wood_dusts',
@@ -968,23 +895,43 @@ function registerGTCEuMachineRecipes(event) {
 		.duration(10)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.recipes.gtceu.chemical_bath('gtceu:treated_chipboard_composite')
-		.itemInputs('1x tfg:chipboard_composite')
-		.inputFluids(Fluid.of('gtceu:creosote', 50))
-		.itemOutputs('gtceu:treated_wood_dust')
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
-
 	event.recipes.gtceu.compressor('gtceu:wood_mdf')
 		.itemInputs('1x tfg:chipboard_composite')
 		.itemOutputs('gtceu:wood_plate')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.gtceu.compressor('gtceu:treated_wood_mdf')
-		.itemInputs('1x gtceu:treated_wood_dust')
-		.itemOutputs('gtceu:treated_wood_plate')
-		.duration(200)
+	event.recipes.gtceu.chemical_bath('gtceu:treated_chipboard_composite')
+		.itemInputs('1x tfg:chipboard_composite')
+		.inputFluids(Fluid.of('gtceu:creosote', 50))
+		.itemOutputs('tfg:treated_chipboard_composite')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.chemical_bath('gtceu:bath_high_density_treated_fiberboard')
+		.itemInputs('1x gtceu:wood_plate')
+		.inputFluids(Fluid.of('gtceu:creosote', 50))
+		.itemOutputs('tfg:high_density_treated_fiberboard')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.chemical_bath('gtceu:bath_treated_wood_dust')
+		.itemInputs('#tfg:wood_dusts')
+		.inputFluids(Fluid.of('gtceu:creosote', 50))
+		.itemOutputs('gtceu:treated_wood_dust')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.compressor('tfg:compressed_treated_chipboard_composite')
+			.itemInputs('tfg:treated_chipboard_composite')
+			.itemOutputs('tfg:high_density_treated_fiberboard')
+			.duration(200)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.assembler('tfg:resin_circuit_assembler')
+		.itemInputs('gtceu:wood_plate', '2x gtceu:sticky_resin')
+		.itemOutputs('gtceu:resin_circuit_board')
+		.duration(20*10)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	//#region New Casings
@@ -1026,6 +973,30 @@ function registerGTCEuMachineRecipes(event) {
 		.circuit(4)
 		.duration(2.5 * 20)
 		.EUt(16)
+
+	event.recipes.gtceu.assembler('tfg:casings/machine_casing_stainless_evaporation')
+		.itemInputs('gtceu:clean_machine_casing', '4x gtceu:annealed_copper_double_wire')
+		.inputFluids(Fluid.of('gtceu:polyvinyl_chloride', 288))
+		.itemOutputs('tfg:casings/machine_casing_stainless_evaporation')
+		.circuit(4)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.assembler('tfg:casings/machine_casing_mars')
+		.itemInputs('gtceu:clean_machine_casing', '4x #forge:double_wires/kanthal')
+		.inputFluids(Fluid.of('gtceu:polybenzimidazole', 288))
+		.itemOutputs('tfg:casings/machine_casing_mars')
+		.circuit(4)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.assembler('gtceu:atomic_casing')
+		.itemInputs('4x #forge:dense_plates/lead', '2x #forge:plates/rtm_alloy', '#forge:frames/titanium')
+		.inputFluids(Fluid.of('gtceu:polyvinyl_butyral', 288))
+		.itemOutputs('2x gtceu:atomic_casing')
+		.circuit(4)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.HV])
 
 	//#endregion
 
@@ -1089,33 +1060,36 @@ function registerGTCEuMachineRecipes(event) {
 
 	// Solar T1
 
-	event.recipes.gtceu.large_solar_panel('solar_panel_t1_cheap')
-		.notConsumable('tfg:photo_cell_t1')
+	event.recipes.gtceu.large_solar_panel('solar_panel_t1_emergency')
+		.chancedInput('tfg:photo_cell_t1', 100, 0)
 		.duration(20 * 20)
 		.daytime(false)
 		.dimension('ad_astra:moon')
-		.EUt(-(GTValues.V[GTValues.HV]), 2)
+		.EUt(-((GTValues.V[GTValues.HV])), 2)
 		.circuit(1)
 
 	event.recipes.gtceu.large_solar_panel('solar_panel_t1')
-		.chancedInput('tfg:photo_cell_t1', 500, 0)
+		.notConsumable('tfg:photo_cell_t1')
+		.perTick(true)
+		.chancedFluidInput('tfg:compressed_trimix_3 4', 5000, 0)
+		.perTick(false)
 		.duration(20 * 20)
 		.daytime(false)
 		.dimension('ad_astra:moon')
-		.EUt(-((GTValues.V[GTValues.EV])), 2)
+		.EUt(-(GTValues.V[GTValues.EV]), 2)
 		.circuit(2)
 
 	// Solar T2
 
-	event.recipes.gtceu.large_solar_panel_tier2('solar_panel_t2_cheap')
-		.chancedInput('ad_astra:photovoltaic_etrium_cell', 500, 0)
+	event.recipes.gtceu.large_solar_panel_tier2('solar_panel_t2_emergency')
+		.chancedInput('ad_astra:photovoltaic_etrium_cell', 100, 0)
 		.duration(20 * 20)
 		.daytime(false)
 		.dimension('ad_astra:moon')
 		.EUt(-(GTValues.V[GTValues.EV]), 2)
 		.circuit(1)
 
-	event.recipes.gtceu.large_solar_panel_tier2('solar_panel_t2')
+	event.recipes.gtceu.large_solar_panel_tier2('solar_panel_t2_strong')
 		.notConsumable('ad_astra:photovoltaic_etrium_cell')
 		.perTick(true)
 		.chancedFluidInput('tfg:solar_coolant 10', 5000, 0)
@@ -1128,17 +1102,28 @@ function registerGTCEuMachineRecipes(event) {
 		.EUt(-(GTValues.V[GTValues.IV]), 2)
 		.circuit(2)
 
+	event.recipes.gtceu.large_solar_panel_tier2('solar_panel_t2_cheap')
+		.notConsumable('ad_astra:photovoltaic_etrium_cell')
+		.perTick(true)
+		.inputFluids('tfg:compressed_trimix_3 1')
+		.perTick(false)
+		.duration(20 * 20)
+		.daytime(false)
+		.dimension('ad_astra:moon')
+		.EUt(-(GTValues.V[GTValues.EV]), 2)
+		.circuit(3)
+
 	// Solar T3
 
-	event.recipes.gtceu.large_solar_panel_tier3('solar_panel_t3_cheap')
-		.chancedInput('ad_astra:photovoltaic_vesnium_cell', 500, 0)
+	event.recipes.gtceu.large_solar_panel_tier3('solar_panel_t3_emergency')
+		.chancedInput('ad_astra:photovoltaic_vesnium_cell', 100, 0)
 		.duration(20 * 20)
 		.daytime(false)
 		.dimension('ad_astra:moon')
 		.EUt(-(GTValues.V[GTValues.IV]), 2)
 		.circuit(1)
 
-	event.recipes.gtceu.large_solar_panel_tier3('solar_panel_t3')
+	event.recipes.gtceu.large_solar_panel_tier3('solar_panel_t3_strong')
 		.notConsumable('ad_astra:photovoltaic_vesnium_cell')
 		.perTick(true)
 		.chancedFluidInput('tfg:solar_coolant_tier2 10', 5000, 0)
@@ -1150,5 +1135,163 @@ function registerGTCEuMachineRecipes(event) {
 		.dimension('ad_astra:moon')
 		.EUt(-(GTValues.V[GTValues.LuV]), 2)
 		.circuit(2)
+
+	event.recipes.gtceu.large_solar_panel_tier3('solar_panel_t3_cheap')
+		.notConsumable('ad_astra:photovoltaic_vesnium_cell')
+		.perTick(true)
+		.chancedFluidInput('tfg:solar_coolant 10', 5000, 0)
+		.inputFluids('tfg:cryogenized_fluix 4')
+		.outputFluids('tfg:fluix 1')
+		.perTick(false)
+		.duration(20 * 20)
+		.daytime(false)
+		.dimension('ad_astra:moon')
+		.EUt(-(GTValues.V[GTValues.IV]), 2)
+		.circuit(2)
+
+	//#endregion
+
+	//#region Mars Ore Line
+
+	// Multiblock
+
+	/* LOCKED UNTIL VENUS
+
+	event.shaped(
+		'gtceu:extraterrestrial_ore_fabricator',
+		[	'USU',
+			'WZW',
+			'PTP'],
+		{
+			S: 'tfg:casings/machine_casing_vacuum_engine_intake',
+			Z: 'gtceu:iv_machine_hull',
+			W: '#gtceu:circuits/iv',
+			U: '#forge:double_plates/stellite_100',
+			T: '#forge:single_cables/platinum',
+			P: 'gtceu:iv_electric_pump'
+		}
+	).id('gtceu:shaped/extraterrestrial_ore_fabricator')
+
+	*/
+
+	event.recipes.gtceu.assembler('tfg:ostrum_harvester')
+		.itemInputs(
+			'1x gtceu:ev_machine_hull',
+			'4x #gtceu:circuits/ev',
+			'4x gtceu:ev_electric_motor',
+			'4x #forge:rotors/black_steel',
+			'4x gtceu:ev_electric_pump',
+			'4x #forge:gears/desh')
+		.itemOutputs('gtceu:ostrum_harvester')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(2)
+
+	event.recipes.gtceu.assembler('tfg:moon_dust_harvester')
+		.itemInputs(
+			'1x gtceu:hv_machine_hull',
+			'4x #gtceu:circuits/hv',
+			'4x gtceu:hv_electric_motor',
+			'4x #forge:rotors/titanium',
+			'4x gtceu:hv_electric_pump',
+			'4x #forge:gears/rocket_alloy_t1')
+		.itemOutputs('gtceu:moon_dust_harvester')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.HV])
+		.circuit(2)
+
+	// Vacuum Intake
+
+	event.shaped(
+		'tfg:casings/machine_casing_vacuum_engine_intake',
+		[	'USU',
+			'WZW',
+			'UTU'],
+		{
+			S: '#forge:tools/hammers',
+			T: '#forge:tools/wrenches',
+			W: '#forge:rotors/ultimet',
+			U: 'gtceu:ultimet_normal_item_pipe',
+			Z: 'gtceu:inert_machine_casing'
+		}
+	).id('tfg:shaped/casing_machine_casing_vacuum_engine_intake')
+
+	event.recipes.gtceu.assembler('tfg:casings/machine_casing_vacuum_engine_intake')
+		.itemInputs(
+			'2x #forge:rotors/ultimet',
+			'4x gtceu:ultimet_normal_item_pipe',
+			'1x gtceu:inert_machine_casing')
+		.itemOutputs('tfg:casings/machine_casing_vacuum_engine_intake')
+		.duration(50)
+		.EUt(GTValues.VH[GTValues.LV])
+		.circuit(2)
+
+	// Stainless Evaporation Tower - LOCKED UNTIL VENUS
+
+	/*
+
+	event.shaped(
+		'gtceu:evaporation_tower',
+		[	'TUT',
+			'WZW',
+			'TUT'],
+		{
+			T: '#gtceu:circuits/ev',
+			W: 'gtceu:hv_electric_pump',
+			U: '#forge:double_wires/kanthal',
+			Z: 'gtceu:hv_machine_hull'
+		}
+	).id('tfg:shaped/evaporation_tower')
+
+	*/
+
+	//#endregion
+
+	//#region Nuclear Controler - LOCKED UNTIL MARS
+
+	/*
+
+	event.shaped(
+		'gtceu:fission_reactor',
+		[	'TUT',
+			'WZW',
+			'TUT'],
+		{
+			T: 'gtceu:atomic_casing',
+			W: '#gtceu:circuits/ev',
+			U: 'gtceu:hv_field_generator',
+			Z: 'gtceu:ev_machine_hull'
+		}
+	).id('tfg:shaped/fission_reactor')
+
+	event.shaped(
+		'gtceu:nuclear_fuel_factory',
+		[	'TUT',
+			'WZW',
+			'TBT'],
+		{
+			T: 'gtceu:atomic_casing',
+			W: '#gtceu:circuits/ev',
+			U: 'gtceu:ev_emitter',
+			Z: 'gtceu:ev_machine_hull',
+			B: 'gtceu:ev_robot_arm'
+		}
+	).id('tfg:shaped/nuclear_fuel_factory')
+
+	event.shaped(
+		'gtceu:heat_exchanger',
+		[	'TUT',
+			'WZW',
+			'TBT'],
+		{
+			T: 'gtceu:high_temperature_smelting_casing',
+			W: '#gtceu:circuits/ev',
+			U: 'gtceu:ev_sensor',
+			Z: 'gtceu:ev_machine_hull',
+			B: 'gtceu:ev_fluid_regulator'
+		}
+	).id('tfg:shaped/heat_exchanger')
+
+	*/
 
 }

@@ -2,8 +2,6 @@
 [general]
 	#Puts all the added items into a new Every Compat tab instead of their own mod tabs. Be warned that if disabled it could cause some issue with some mods that have custom tabs
 	creative_tab = true
-	#Makes dynamic assets that are generated depend on loaded resource packs. Turn off to make them just use vanilla assets
-	assets_depend_on_loaded_packs = true
 	#Creates a debug folder inside your instance directory where all the dynamically generated resources will be saved
 	save_debug_resources = false
 	#Sends a packet to verify all dependencies mod versions are the same on connect. DIsable if it causes issues

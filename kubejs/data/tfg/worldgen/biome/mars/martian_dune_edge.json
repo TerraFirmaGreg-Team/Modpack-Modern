@@ -11,12 +11,6 @@
 			"sound": "minecraft:ambient.cave",
 			"tick_delay": 6000
 		},
-		"particle": {
-			"options": {
-				"type": "minecraft:crimson_spore"
-			},
-			"probability": 0.014
-		},
 		"sky_color": 15117444,
 		"water_color": 4159204,
 		"water_fog_color": 1069623
@@ -44,7 +38,10 @@
 			"tfc:raw_boulder",
 			"tfc:cobble_boulder",
 			"tfc:raw_boulder_small_patch",
-			"tfc:cobble_boulder_small_patch"
+			"tfc:cobble_boulder_small_patch",
+			"tfg:mars/surface/small_skull_and_bones",
+			"tfg:mars/surface/large_skull_and_bones",
+			"tfg:mars/surface/rotten_flesh_patch"
 		],
 		[
 

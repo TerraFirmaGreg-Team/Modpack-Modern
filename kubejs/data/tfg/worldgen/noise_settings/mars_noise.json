@@ -32,7 +32,7 @@
 					"points": [
 						{
 							"derivative": 0.0,
-							"location": -0.18,
+							"location": -0.19,
 							"value": -1
 						},
 						{
@@ -111,12 +111,12 @@
 					"points": [
 						{
 							"derivative": 0.0,
-							"location": -0.18,
+							"location": -0.12,
 							"value": -1
 						},
 						{
 							"derivative": 0.0,
-							"location": -0.17,
+							"location": -0.11,
 							"value": 0
 						}
 					]
@@ -137,12 +137,12 @@
 						"points": [
 							{
 								"derivative": 0.0,
-								"location": -0.18,
+								"location": -0.12,
 								"value": 0
 							},
 							{
 								"derivative": 0.0,
-								"location": -0.17,
+								"location": -0.11,
 								"value": 1
 							}
 						]
@@ -225,12 +225,12 @@
 					"points": [
 						{
 							"derivative": 0.0,
-							"location": -0.19,
+							"location": -0.17,
 							"value": 1
 						},
 						{
 							"derivative": 0.0,
-							"location": -0.17,
+							"location": -0.16,
 							"value": 0
 						}
 					]
@@ -238,7 +238,7 @@
 			}
 		},
 		"lava": 0,
-		"ridges": "tfg:mars/ridges",
+		"ridges": "tfg:mars/ridges_splined",
 		"temperature": {
 			"type": "minecraft:shifted_noise",
 			"noise": "minecraft:temperature",
@@ -288,8 +288,7 @@
 				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
-						"tfg:mars/martian_river",
-						"tfg:mars/martian_riverbed"
+						"tfg:mars/martian_river"
 					]
 				},
 				"then_run": {
@@ -335,6 +334,118 @@
 									"result_state": {
 										"Name": "ad_astra:venus_sandstone"
 									}
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"_": "VENUS SAND ONLY FOR DUNE EDGE",
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:mars/martian_dune_edge"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:condition",
+					"if_true": {
+						"type": "minecraft:y_above",
+						"anchor": {
+							"absolute": 85
+						},
+						"surface_depth_multiplier": 0,
+						"add_stone_depth": false
+					},
+					"then_run": {
+						"type": "minecraft:sequence",
+						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 2,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:not",
+												"invert": {
+													"type": "minecraft:vertical_gradient",
+													"random_name": "tfg:mars_top_layer_sand",
+													"false_at_and_above": {
+														"absolute": 100
+													},
+													"true_at_and_below": {
+														"absolute": 90
+													}
+												}
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": {
+													"Name": "ad_astra:venus_sand"
+												}
+											}
+										},
+										{
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "ad_astra:mars_sand"
+											}
+										}
+									]
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 6,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:not",
+												"invert": {
+													"type": "minecraft:vertical_gradient",
+													"random_name": "tfg:mars_top_layer_sand",
+													"false_at_and_above": {
+														"absolute": 97
+													},
+													"true_at_and_below": {
+														"absolute": 87
+													}
+												}
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": {
+													"Name": "ad_astra:venus_sandstone"
+												}
+											}
+										},
+										{
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "ad_astra:mars_stone"
+											}
+										}
+									]
 								}
 							}
 						]
@@ -584,13 +695,88 @@
 				}
 			},
 
-
+			{
+				"_": "AMBER EDGE",
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:mars/amber_edge"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:condition",
+					"if_true": {
+						"type": "minecraft:y_above",
+						"anchor": {
+							"absolute": 90
+						},
+						"surface_depth_multiplier": 0,
+						"add_stone_depth": false
+					},
+					"then_run": {
+						"type": "minecraft:sequence",
+						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "ceiling",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "kubejs_tfc:rock",
+									"rock_block": "hardened",
+									"fallback_state": {
+										"Name": "ad_astra:mars_stone"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "tfg:needs_post_processing",
+									"state": {
+										"Name": "tfg:grass/amber_mycelium"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 2,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "tfg:grass/mars_dirt"
+									}
+								}
+							}
+						]
+					}
+				}
+			},
 			{
 				"_": "AMBER MYCELIUM + DIRT",
 				"type": "minecraft:condition",
 				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
+						"tfg:mars/amber_edge",
 						"tfg:mars/amber_hills",
 						"tfg:mars/amber_plains"
 					]
@@ -601,69 +787,134 @@
 						"type": "minecraft:above_preliminary_surface"
 					},
 					"then_run": {
-						"type": "minecraft:condition",
-						"if_true": {
-							"type": "minecraft:water",
-							"offset": 0,
-							"surface_depth_multiplier": 0,
-							"add_stone_depth": false
-						},
-						"then_run": {
-							"type": "minecraft:sequence",
-							"sequence": [
-								{
-									"type": "minecraft:condition",
-									"if_true": {
-
-										"type": "minecraft:not",
-										"invert": {
-											"type": "minecraft:water",
-											"offset": 0,
-											"surface_depth_multiplier": 0,
-											"add_stone_depth": false
-										}
-									},
-									"then_run": {
-										"type": "minecraft:block",
-										"result_state": {
-											"Name": "ad_astra:venus_sand"
-										}
-									}
-								},
-								{
-									"type": "minecraft:condition",
-									"if_true": {
-										"type": "minecraft:stone_depth",
+						"type": "minecraft:sequence",
+						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:not",
+									"invert": {
+										"type": "minecraft:water",
 										"offset": 0,
-										"surface_type": "floor",
-										"add_surface_depth": false,
-										"secondary_depth_range": 0
-									},
-									"then_run": {
-										"type": "tfg:needs_post_processing",
-										"state": {
-											"Name": "tfg:grass/amber_mycelium"
-										}
+										"surface_depth_multiplier": 0,
+										"add_stone_depth": false
 									}
 								},
-								{
-									"type": "minecraft:condition",
-									"if_true": {
-										"type": "minecraft:stone_depth",
-										"offset": 2,
-										"surface_type": "floor",
-										"add_surface_depth": false,
-										"secondary_depth_range": 0
-									},
-									"then_run": {
-										"type": "minecraft:block",
-										"result_state": {
-											"Name": "tfg:grass/mars_dirt"
-										}
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "ad_astra:venus_sand"
 									}
 								}
-							]
-						}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "tfg:needs_post_processing",
+									"state": {
+										"Name": "tfg:grass/amber_mycelium"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 2,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "tfg:grass/mars_dirt"
+									}
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"_": "RUSTICUS EDGE",
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:mars/rusticus_edge"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:condition",
+					"if_true": {
+						"type": "minecraft:y_above",
+						"anchor": {
+							"absolute": 90
+						},
+						"surface_depth_multiplier": 0,
+						"add_stone_depth": false
+					},
+					"then_run": {
+						"type": "minecraft:sequence",
+						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "ceiling",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "kubejs_tfc:rock",
+									"rock_block": "hardened",
+									"fallback_state": {
+										"Name": "ad_astra:mars_stone"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "tfg:needs_post_processing",
+									"state": {
+										"Name": "tfg:grass/rusticus_mycelium"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 2,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "tfg:grass/mars_dirt"
+									}
+								}
+							}
+						]
 					}
 				}
 			},
@@ -673,6 +924,7 @@
 				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
+						"tfg:mars/rusticus_edge",
 						"tfg:mars/rusticus_hills",
 						"tfg:mars/rusticus_plains"
 					]
@@ -683,69 +935,135 @@
 						"type": "minecraft:above_preliminary_surface"
 					},
 					"then_run": {
-						"type": "minecraft:condition",
-						"if_true": {
-							"type": "minecraft:water",
-							"offset": 0,
-							"surface_depth_multiplier": 0,
-							"add_stone_depth": false
-						},
-						"then_run": {
-							"type": "minecraft:sequence",
-							"sequence": [
-								{
-									"type": "minecraft:condition",
-									"if_true": {
+						"type": "minecraft:sequence",
+						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
 
-										"type": "minecraft:not",
-										"invert": {
-											"type": "minecraft:water",
-											"offset": 0,
-											"surface_depth_multiplier": 0,
-											"add_stone_depth": false
-										}
-									},
-									"then_run": {
-										"type": "minecraft:block",
-										"result_state": {
-											"Name": "ad_astra:venus_sand"
-										}
-									}
-								},
-								{
-									"type": "minecraft:condition",
-									"if_true": {
-										"type": "minecraft:stone_depth",
+									"type": "minecraft:not",
+									"invert": {
+										"type": "minecraft:water",
 										"offset": 0,
-										"surface_type": "floor",
-										"add_surface_depth": false,
-										"secondary_depth_range": 0
-									},
-									"then_run": {
-										"type": "tfg:needs_post_processing",
-										"state": {
-											"Name": "tfg:grass/rusticus_mycelium"
-										}
+										"surface_depth_multiplier": 0,
+										"add_stone_depth": false
 									}
 								},
-								{
-									"type": "minecraft:condition",
-									"if_true": {
-										"type": "minecraft:stone_depth",
-										"offset": 2,
-										"surface_type": "floor",
-										"add_surface_depth": false,
-										"secondary_depth_range": 0
-									},
-									"then_run": {
-										"type": "minecraft:block",
-										"result_state": {
-											"Name": "tfg:grass/mars_dirt"
-										}
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "ad_astra:venus_sand"
 									}
 								}
-							]
-						}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "tfg:needs_post_processing",
+									"state": {
+										"Name": "tfg:grass/rusticus_mycelium"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 2,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "tfg:grass/mars_dirt"
+									}
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"_": "SANGNUM EDGE",
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:mars/sangnum_edge"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:condition",
+					"if_true": {
+						"type": "minecraft:y_above",
+						"anchor": {
+							"absolute": 90
+						},
+						"surface_depth_multiplier": 0,
+						"add_stone_depth": false
+					},
+					"then_run": {
+						"type": "minecraft:sequence",
+						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "ceiling",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "kubejs_tfc:rock",
+									"rock_block": "hardened",
+									"fallback_state": {
+										"Name": "ad_astra:mars_stone"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "tfg:needs_post_processing",
+									"state": {
+										"Name": "tfg:grass/sangnum_mycelium"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 2,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "tfg:grass/mars_dirt"
+									}
+								}
+							}
+						]
 					}
 				}
 			},
@@ -755,9 +1073,9 @@
 				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
+						"tfg:mars/sangnum_edge",
 						"tfg:mars/sangnum_hills",
-						"tfg:mars/sangnum_plains",
-						"tfg:mars/martian_oasis"
+						"tfg:mars/sangnum_plains"
 					]
 				},
 				"then_run": {
@@ -766,69 +1084,60 @@
 						"type": "minecraft:above_preliminary_surface"
 					},
 					"then_run": {
-						"type": "minecraft:condition",
-						"if_true": {
-							"type": "minecraft:water",
-							"offset": 0,
-							"surface_depth_multiplier": 0,
-							"add_stone_depth": false
-						},
-						"then_run": {
-							"type": "minecraft:sequence",
-							"sequence": [
-								{
-									"type": "minecraft:condition",
-									"if_true": {
+						"type": "minecraft:sequence",
+						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
 
-										"type": "minecraft:not",
-										"invert": {
-											"type": "minecraft:water",
-											"offset": 0,
-											"surface_depth_multiplier": 0,
-											"add_stone_depth": false
-										}
-									},
-									"then_run": {
-										"type": "minecraft:block",
-										"result_state": {
-											"Name": "ad_astra:venus_sand"
-										}
-									}
-								},
-								{
-									"type": "minecraft:condition",
-									"if_true": {
-										"type": "minecraft:stone_depth",
+									"type": "minecraft:not",
+									"invert": {
+										"type": "minecraft:water",
 										"offset": 0,
-										"surface_type": "floor",
-										"add_surface_depth": false,
-										"secondary_depth_range": 0
-									},
-									"then_run": {
-										"type": "tfg:needs_post_processing",
-										"state": {
-											"Name": "tfg:grass/sangnum_mycelium"
-										}
+										"surface_depth_multiplier": 0,
+										"add_stone_depth": false
 									}
 								},
-								{
-									"type": "minecraft:condition",
-									"if_true": {
-										"type": "minecraft:stone_depth",
-										"offset": 2,
-										"surface_type": "floor",
-										"add_surface_depth": false,
-										"secondary_depth_range": 0
-									},
-									"then_run": {
-										"type": "minecraft:block",
-										"result_state": {
-											"Name": "tfg:grass/mars_dirt"
-										}
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "ad_astra:venus_sand"
 									}
 								}
-							]
-						}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "tfg:needs_post_processing",
+									"state": {
+										"Name": "tfg:grass/sangnum_mycelium"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 2,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "tfg:grass/mars_dirt"
+									}
+								}
+							}
+						]
 					}
 				}
 			},

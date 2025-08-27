@@ -122,77 +122,6 @@ const registerGTCEUMetals = (event) => {
 	event.metal('gtceu:aluminium_silicate', 1540, 0.00857, '#forge:ingots/aluminium_silicate', null, null, 1, 'tfg:aluminium_silicate')
 }
 
-
-const registerGTCEUBedrockOreVeins = (event) => {
-
-	// Tin, Magnesium
-	event.add('tfg:moon_tin', vein => {
-		vein.weight(75)
-			.size(2)
-			.yield(1, 4)
-			.material(GTMaterials.Cassiterite, 5)
-			.material(GTMaterials.Tin, 2)
-			.material(GTMaterials.Olivine, 1)
-			.dimensions('ad_astra:moon')
-	})
-
-	// Iron, Gold, Magnesium
-	event.add('tfg:moon_magnetite', vein => {
-		vein.weight(75)
-			.size(2)
-			.yield(1, 4)
-			.material(GTMaterials.Magnetite, 8)
-			.material(GTMaterials.Gold, 3)
-			.material(GTMaterials.Olivine, 1)
-			.dimensions('ad_astra:moon')
-	})
-
-	// Copper, Arsenic, Tin
-	event.add('tfg:moon_copper', vein => {
-		vein.weight(100)
-			.size(2)
-			.yield(1, 4)
-			.material(GTMaterials.Chalcopyrite, 10)
-			.material(GTMaterials.Zeolite, 4)
-			.material(GTMaterials.Cassiterite, 3)
-			.material(GTMaterials.Realgar, 2)
-			.dimensions('ad_astra:moon')
-	})
-
-	// Certus Quartz, Barium
-	event.add('tfg:moon_certus', vein => {
-		vein.weight(20)
-			.size(1)
-			.yield(1, 2)
-			.material(GTMaterials.CertusQuartz, 6)
-			.material(GTMaterials.Barite, 2)
-			.material(GTMaterials.Quartzite, 7)
-			.dimensions('ad_astra:moon')
-	})
-
-	// Asbestos, Tin, Calcium
-	event.add('tfg:moon_asbestos', vein => {
-		vein.weight(100)
-			.size(2)
-			.yield(1, 5)
-			.material(GTMaterials.Asbestos, 3)
-			.material(GTMaterials.CassiteriteSand, 4)
-			.material(GTMaterials.Diatomite, 1)
-			.dimensions('ad_astra:moon')
-	})
-
-	// Mica - Talc Silicon Aluminium Potassium Fluorine Caesium
-	event.add('tfg:moon_mica', vein => {
-		vein.weight(50)
-			.size(1)
-			.yield(1, 3)
-			.material(GTMaterials.Mica, 5)
-			.material(GTMaterials.Kyanite, 2)
-			.material(GTMaterials.Pollucite, 1)
-			.dimensions('ad_astra:moon')
-	})
-}
-
 function registerGTCEUBedrockFluidVeins(event) {
 
 	event.add('tfg:moon_helium_3', vein => {
@@ -226,5 +155,125 @@ function registerGTCEUBedrockFluidVeins(event) {
 		vein.depletionAmount(1)
 		vein.depletionChance(1)
 		vein.depletedYield(10)
+	})
+
+	// Mars Fluid Vein - Credit to Monifactory
+
+	const Registries = Java.loadClass("net.minecraft.core.registries.Registries")
+	const ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey")
+	const martianAmberHillsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/amber_hills")
+	const martianAmberPlainsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/amber_plains")
+	const martianMountainsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/martian_mountains")
+	const martianRusticusHillsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/rusticus_hills")
+	const martianRusticusPlainsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/rusticus_plains")
+	const martianSangnumHillsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/sangnum_hills")
+	const martianSangnumPlainsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/sangnum_plains")
+
+	event.add('tfg:semiheavy_ammoniacal_water', vein => {
+		vein.dimensions('ad_astra:mars')
+		vein.fluid(() => Fluid.of('tfg:semiheavy_ammoniacal_water').fluid)
+		vein.weight(100)
+		vein.minimumYield(200)
+		vein.maximumYield(400)
+		vein.depletionAmount(1)
+		vein.depletionChance(20)
+		vein.depletedYield(15)
+	})
+
+	event.add('tfg:liquid_carbon_dioxide', vein => {
+		vein.dimensions('ad_astra:mars')
+		vein.fluid(() => Fluid.of('gtceu:liquid_carbon_dioxide').fluid)
+		vein.weight(15)
+		vein.minimumYield(20)
+		vein.maximumYield(350)
+		vein.depletionAmount(1)
+		vein.depletionChance(20)
+		vein.depletedYield(5)
+	})
+
+	// Heavy Ammonical Water in Specific Biome Credit to Monifactory from https://github.com/ThePansmith/Monifactory/blob/main/kubejs/server_scripts/worldgen/fluidVeins.js
+
+	event.add('tfg:heavy_ammoniacal_water_amber_hills', vein => {
+		vein.dimensions('ad_astra:mars')
+		vein.fluid(() => Fluid.of('tfg:heavy_ammoniacal_water').fluid)
+		vein.biomes(20, martianAmberHillsResourceKey)
+		vein.weight(0)
+		vein.minimumYield(100)
+		vein.maximumYield(650)
+		vein.depletionAmount(1)
+		vein.depletionChance(20)
+		vein.depletedYield(5)
+	})
+
+	event.add('tfg:heavy_ammoniacal_water_amber_plains', vein => {
+		vein.dimensions('ad_astra:mars')
+		vein.fluid(() => Fluid.of('tfg:heavy_ammoniacal_water').fluid)
+		vein.biomes(20, martianAmberPlainsResourceKey)
+		vein.weight(0)
+		vein.minimumYield(100)
+		vein.maximumYield(650)
+		vein.depletionAmount(1)
+		vein.depletionChance(20)
+		vein.depletedYield(5)
+	})
+
+	event.add('tfg:heavy_ammoniacal_water_mountains', vein => {
+		vein.dimensions('ad_astra:mars')
+		vein.fluid(() => Fluid.of('tfg:heavy_ammoniacal_water').fluid)
+		vein.biomes(20, martianMountainsResourceKey)
+		vein.weight(0)
+		vein.minimumYield(100)
+		vein.maximumYield(650)
+		vein.depletionAmount(1)
+		vein.depletionChance(20)
+		vein.depletedYield(5)
+	})
+
+	event.add('tfg:heavy_ammoniacal_water_rusticus_hills', vein => {
+		vein.dimensions('ad_astra:mars')
+		vein.fluid(() => Fluid.of('tfg:heavy_ammoniacal_water').fluid)
+		vein.biomes(20, martianRusticusHillsResourceKey)
+		vein.weight(0)
+		vein.minimumYield(100)
+		vein.maximumYield(650)
+		vein.depletionAmount(1)
+		vein.depletionChance(20)
+		vein.depletedYield(5)
+	})
+
+	event.add('tfg:heavy_ammoniacal_water_rusticus_plains', vein => {
+		vein.dimensions('ad_astra:mars')
+		vein.fluid(() => Fluid.of('tfg:heavy_ammoniacal_water').fluid)
+		vein.biomes(20, martianRusticusPlainsResourceKey)
+		vein.weight(0)
+		vein.minimumYield(100)
+		vein.maximumYield(650)
+		vein.depletionAmount(1)
+		vein.depletionChance(20)
+		vein.depletedYield(5)
+	})
+
+	event.add('tfg:heavy_ammoniacal_water_sangnum_hills', vein => {
+		vein.dimensions('ad_astra:mars')
+		vein.fluid(() => Fluid.of('tfg:heavy_ammoniacal_water').fluid)
+		vein.biomes(20, martianSangnumHillsResourceKey)
+		vein.weight(0)
+		vein.minimumYield(100)
+		vein.maximumYield(650)
+		vein.depletionAmount(1)
+		vein.depletionChance(20)
+		vein.depletedYield(5)
+	})
+
+	event.add('tfg:heavy_ammoniacal_water_sangnum_plains', vein => {
+		vein.dimensions('ad_astra:mars')
+		vein.fluid(() => Fluid.of('tfg:heavy_ammoniacal_water').fluid)
+		vein.biomes(20, martianSangnumPlainsResourceKey)
+		vein.weight(0)
+		vein.minimumYield(100)
+		vein.maximumYield(650)
+		vein.depletionAmount(1)
+		vein.depletionChance(20)
+		vein.depletedYield(5)
 	})
 }

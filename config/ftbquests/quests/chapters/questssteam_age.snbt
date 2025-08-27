@@ -253,6 +253,7 @@
 				{
 					id: "704B7094BE2FB3E1"
 					item: "create:steam_engine"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -409,8 +410,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.crushing_wheel.title}"
-			x: -19.5d
-			y: 18.0d
+			x: -21.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["7DB7AB5349218605"]
@@ -436,13 +437,13 @@
 			]
 			title: "{quests.steam_age.treated_planks.title}"
 			x: -19.5d
-			y: 12.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
-				"246D2C5989E3E907"
 				"233B414B4F189140"
 				"781C6AD30194CB45"
+				"3E175E20C91F168B"
 			]
 			description: ["{quests.steam_age.electron_tube.desc}"]
 			id: "033E74BC588E7EAD"
@@ -564,8 +565,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.mech_crafter.title}"
-			x: -19.5d
-			y: 17.0d
+			x: -20.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["46FA9DD4755A5548"]
@@ -828,9 +829,9 @@
 		}
 		{
 			dependencies: [
-				"033E74BC588E7EAD"
 				"5917B0D4708BF534"
 				"6100B3C732E379AA"
+				"246D2C5989E3E907"
 			]
 			description: ["{quests.steam_age.centrifuge.desc}"]
 			id: "19A1D52A7F550478"
@@ -842,8 +843,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.centrifuge.title}"
-			x: -18.0d
-			y: 17.0d
+			x: -20.5d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1593,7 +1594,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.steam_age.packager.title}"
-			x: -22.0d
+			x: -19.5d
 			y: 17.0d
 		}
 		{
@@ -1639,25 +1640,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"183D47F04CAEBFA7"
-				"753A53733C6DFA04"
-			]
-			description: ["{quests.steam_age.straw.desc}"]
-			id: "7314F69F0DE6E78E"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.steam_age.straw.subtitle}"
-			tasks: [{
-				id: "25F19B16E99D6DD0"
-				item: "createaddition:straw"
-				type: "item"
-			}]
-			title: "{quests.steam_age.straw.title}"
-			x: -15.0d
-			y: 16.0d
-		}
-		{
 			dependencies: ["183D47F04CAEBFA7"]
 			description: ["{quests.steam_age.fuel_sources.desc}"]
 			icon: "createdeco:decal_fire"
@@ -1670,6 +1652,22 @@
 			title: "{quests.steam_age.fuel_sources.title}"
 			x: -16.5d
 			y: 16.0d
+		}
+		{
+			dependencies: ["183D47F04CAEBFA7"]
+			description: ["{quests.steam_age.straw.desc}"]
+			icon: "create:fluid_pipe"
+			id: "6A28DE8263316927"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.steam_age.straw.subtitle}"
+			tasks: [{
+				id: "75B27729685EE9D0"
+				type: "checkmark"
+			}]
+			title: "{quests.steam_age.straw.title}"
+			x: -15.0d
+			y: 14.5d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

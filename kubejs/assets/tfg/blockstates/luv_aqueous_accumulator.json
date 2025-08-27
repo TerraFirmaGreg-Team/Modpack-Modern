@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "tfg:block/machines/luv_aqueous_accumulator",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tfg:block/machines/luv_aqueous_accumulator"
+    },
+    "facing=south": {
+      "model": "tfg:block/machines/luv_aqueous_accumulator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tfg:block/machines/luv_aqueous_accumulator",
+      "y": 270
+    }
+  }
+}

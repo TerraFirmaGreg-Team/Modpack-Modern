@@ -45,13 +45,12 @@ function registerConstructionwandRecipes(event) {
     event.shaped('1x constructionwand:infinity_wand', [
         ' EB',
         ' C ',
-        'AD '  
+        'A  '
     ], {
         A: '#forge:rods/polytetrafluoroethylene',
         C: '#forge:rods/long/aluminium',
         B: '#forge:double_plates/titanium',
-        D: '#gtceu:circuits/iv',
-        E: 'minecraft:nether_star',
+        E: 'ae2:charged_certus_quartz_crystal',
     }).id('constructionwand:shaped/infinity_wand')
 
     event.shaped('1x constructionwand:core_angel', [

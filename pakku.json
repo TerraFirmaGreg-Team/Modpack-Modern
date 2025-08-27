@@ -8,10 +8,11 @@
         "config",
         "defaultconfigs",
         "kubejs",
-		"tacz",
+        "tacz",
         "!kubejs/probe/**"
     ],
     "server_overrides": [
+        "!kubejs/assets",
         "forge-auto-install.txt",
         "generate_auto_installation_file.bat",
         "minecraft_server.jar",
@@ -19,8 +20,7 @@
         "server_starter.conf",
         "server-icon.png",
         "start_server.bat",
-        "README.md",
-        "!kubejs/assets/**"
+        "README.md"
     ],
     "client_overrides": [
         "resourcepacks"
@@ -155,7 +155,7 @@
         "embeddium": {
             "side": "CLIENT"
         },
-        "flickerfix": {
+        "first-person-model": {
             "side": "CLIENT"
         },
         "no-report-button": {
@@ -206,10 +206,10 @@
         "fast-ip-ping": {
             "side": "CLIENT"
         },
-        "entityculling": {
+        "badoptimizations": {
             "side": "CLIENT"
         },
-        "pick-up-notifier": {
+        "entityculling": {
             "side": "CLIENT"
         },
         "resourceful-config": {
@@ -236,11 +236,11 @@
         "xaeros-minimap": {
             "side": "BOTH"
         },
-        "xaeros-world-map": {
-            "side": "BOTH"
-        },
         "particular-reforged": {
             "side": "BOTH"
+        },
+        "pick-up-notifier": {
+            "side": "CLIENT"
         },
         "inventory-tweaks-refoxed": {
             "side": "BOTH"
@@ -251,10 +251,36 @@
         "detected-setblock-be-gone": {
             "side": "BOTH"
         },
-        "ad-astra-auto-lander": {
-            "side": "CLIENT"
+        "ftb-backups-2": {
+            "side": "BOTH",
+            "export": false
+        },
+        "ftb-chunks-forge": {
+            "export": false
+        },
+        "ftb-essentials": {
+            "export": false
+        },
+        "ftb-filter-system": {
+            "export": false
+        },
+        "ftb-library-forge": {
+            "export": false
+        },
+        "ftb-quests-forge": {
+            "export": false
+        },
+        "ftb-ranks-forge": {
+            "export": false
+        },
+        "ftb-teams-forge": {
+            "export": false
+        },
+        "ftb-xmod-compat": {
+            "export": false
         },
         "probejs": {
+            "side": "CLIENT",
             "export": false
         }
     }

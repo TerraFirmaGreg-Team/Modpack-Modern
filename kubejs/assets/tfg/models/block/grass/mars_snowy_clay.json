@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+        "up": "minecraft:block/snow",
+        "down": "tfg:block/grass/mars_clay_dirt",
+        "north": "tfg:block/grass/snowy_clay_side",
+        "south": "tfg:block/grass/snowy_clay_side",
+        "east": "tfg:block/grass/snowy_clay_side",
+        "west": "tfg:block/grass/snowy_clay_side",
+        "particle": "tfg:block/grass/snowy_clay_side"
+    }
+}

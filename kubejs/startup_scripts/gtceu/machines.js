@@ -4,6 +4,7 @@ const registerGTCEuMachines = (event) => {
 
 	const $SteamMulti = Java.loadClass('com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine');
 	const $Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
+	const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine")
 
 	//#region Nether Dome
 
@@ -560,5 +561,134 @@ const registerGTCEuMachines = (event) => {
 		.workableCasingModel(
 			'gtceu:block/casings/solid/machine_casing_stainless_evaporation',
 			'gtceu:block/multiblock/distillation_tower')
+
+	//#endregion
+	
+	//#region Ore Line
+
+	// Ostrum Harvester
+
+	event.create('ostrum_harvester', 'multiblock')
+		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('ostrum_harvester')
+		.recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, (machine, recipe) => GTRecipeModifiers.crackerOverclock(machine, recipe)])
+		.appearanceBlock(() => Block.getBlock('gtceu:nonconducting_casing'))
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle('     ' ,'A   A', 'AAAAA', 'ACCCA', 'AAEAA', ' AAA ')
+			.aisle('  G  ' ,'     ', 'BBBBB', 'B   B', 'BB BB', ' BFB ')
+			.aisle(' GGG ' ,'     ', 'ADDDA', 'D   D', 'A   A', ' BFB ')
+			.aisle('GGGGG' ,'     ', 'ADDDA', 'D   D', 'A   A', ' BFB ')
+			.aisle(' GGG ' ,'     ', 'ADDDA', 'D   D', 'A   A', ' BFB ')
+			.aisle('  G  ' ,'     ', 'BBBBB', 'B   B', 'BB BB', ' BFB ')
+			.aisle('     ' ,'A   A', 'AAAAA', 'ACXCA', 'AACAA', ' AAA ')
+			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('A', Predicates.blocks('gtceu:secure_maceration_casing'))
+			.where('B', Predicates.blocks('gtceu:nonconducting_casing'))
+			.where('C', Predicates.blocks('gtceu:nonconducting_casing')
+				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(2))
+				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1).setPreviewCount(1)))
+			.where('D', Predicates.blocks('tfg:casings/machine_casing_vacuum_engine_intake'))
+			.where('E', Predicates.blocks('gtceu:nonconducting_casing')
+				.or(Predicates.abilities(PartAbility.MUFFLER).setExactLimit(1).setPreviewCount(1)))
+			.where('F', Predicates.heatingCoils())
+			.where('G', Predicates.blocks('tfg:spice'))
+			.where('#', Predicates.air())
+			.where(' ', Predicates.any())
+			.build()
+		)
+		.workableCasingModel(
+			'gtceu:block/casings/gcym/nonconducting_casing',
+			'gtceu:block/multiblock/distillation_tower')
+
+	// Moon Harvester
+
+	event.create('moon_dust_harvester', 'multiblock')
+		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('moon_dust_harvester')
+		.recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, (machine, recipe) => GTRecipeModifiers.crackerOverclock(machine, recipe)])
+		.appearanceBlock(() => Block.getBlock('gtceu:nonconducting_casing'))
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle('A   A', 'AAAAA', 'ACCCA', 'AAEAA', ' AAA ')
+			.aisle('     ', 'BBBBB', 'B   B', 'BB BB', ' BFB ')
+			.aisle('     ', 'ADDDA', 'D   D', 'A   A', ' BFB ')
+			.aisle('     ', 'ADDDA', 'D   D', 'A   A', ' BFB ')
+			.aisle('     ', 'ADDDA', 'D   D', 'A   A', ' BFB ')
+			.aisle('     ', 'BBBBB', 'B   B', 'BB BB', ' BFB ')
+			.aisle('A   A', 'AAAAA', 'ACXCA', 'AACAA', ' AAA ')
+			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('A', Predicates.blocks('tfg:casings/machine_casing_iron_desh'))
+			.where('B', Predicates.blocks('gtceu:nonconducting_casing'))
+			.where('C', Predicates.blocks('gtceu:nonconducting_casing')
+				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1).setMaxGlobalLimited(2).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1).setPreviewCount(1)))
+			.where('D', Predicates.blocks('tfg:casings/machine_casing_vacuum_engine_intake'))
+			.where('E', Predicates.blocks('gtceu:nonconducting_casing'))
+			.where('F', Predicates.heatingCoils())
+			.where('#', Predicates.air())
+			.where(' ', Predicates.any())
+			.build()
+		)
+		.workableCasingModel(
+			'gtceu:block/casings/gcym/nonconducting_casing',
+			'gtceu:block/multiblock/distillation_tower')
+
+	// Extraterrestrial Ore Fabricator
+
+	event.create('extraterrestrial_ore_fabricator', 'multiblock')
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('extraterrestrial_ore_fabricator')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+		.appearanceBlock(() => Block.getBlock('tfg:casings/machine_casing_mars'))
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle('AAAAAAAAA', 'AAAAAAAAA', 'AAAAAAAAA', '         ', '         ' )
+			.aisle('BAAAAAAAA', 'B#######D', 'BBBBBBBAA', ' BCCCB   ', ' BBBBB   ' )
+			.aisle('AAAAAAAAA', 'A#######D', 'BB###BBGA', ' C###C   ', ' BBHBB   ' )
+			.aisle('BEBEBEAAA', 'BEBEBEA#D', 'BBBBBBBAA', ' BCCCB   ', ' BBBBB   ' )
+			.aisle('A#####AFA', 'A#####AXA', 'AAAAAAAFA', '         ', '         ' )
+			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('A', Predicates.blocks('tfg:casings/machine_casing_mars')
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1).setMaxGlobalLimited(2)))
+			.where('B', Predicates.blocks('gtceu:high_temperature_smelting_casing'))
+			.where('C', Predicates.blocks('tfg:casings/machine_casing_vacuum_engine_intake'))
+			.where('D', Predicates.blocks('gtceu:heat_vent'))
+			.where('E', Predicates.blocks('tfg:casings/machine_casing_mars')
+				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(6)))
+			.where('F', Predicates.blocks('tfg:casings/machine_casing_mars')
+				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+			.where('G', Predicates.abilities(PartAbility.MUFFLER).setExactLimit(1))
+			.where('H', Predicates.abilities(PartAbility.EXPORT_ITEMS).setExactLimit(1))
+			.where('#', Predicates.air())
+			.where(' ', Predicates.any())
+			.build()
+		)
+		.shapeInfo(controller => MultiblockShapeInfo.builder()
+			.aisle('KKAAAAAAA', 'AAAAAAAAA', 'AAAAAAAAA', '         ', '         ' )
+			.aisle('BAAAAAAAA', 'B       D', 'BBBBBBBAA', ' BCCCB   ', ' BBBBB   ' )
+			.aisle('AAAAAAAAA', 'A       D', 'BB   BBGA', ' C   C   ', ' BBHBB   ' )
+			.aisle('BEBEBEAAA', 'BEBEBEA#D', 'BBBBBBBAA', ' BCCCB   ', ' BBBBB   ' )
+			.aisle('A     AMA', 'A     AXA', 'AAAAAAAAA', '         ', '         ' )
+			.where('X', controller, Direction.SOUTH)
+			.where('A', Block.getBlock('tfg:casings/machine_casing_mars'))
+			.where('B', Block.getBlock('gtceu:high_temperature_smelting_casing'))
+			.where('C', Block.getBlock('tfg:casings/machine_casing_vacuum_engine_intake'))
+			.where('D', Block.getBlock('gtceu:heat_vent'))
+			.where('E', GTMachines.FLUID_IMPORT_HATCH[GTValues.EV], Direction.SOUTH)
+			.where('G', GTMachines.MUFFLER_HATCH[GTValues.LV], Direction.UP)
+			.where('H', GTMachines.ITEM_EXPORT_BUS[GTValues.EV], Direction.UP)
+			.where('M', GTMachines.AUTO_MAINTENANCE_HATCH, Direction.SOUTH)
+			.where('K', GTMachines.ENERGY_INPUT_HATCH[GTValues.HV], Direction.NORTH)
+			.where(' ', Block.getBlock('minecraft:air'))
+			.build()
+		)
+
+		.workableCasingModel(
+			'tfg:block/casings/machine_casing_mars',
+			'gtceu:block/machines/thermal_centrifuge')
 
 }

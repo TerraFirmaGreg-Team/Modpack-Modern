@@ -122,11 +122,6 @@
                             {
                                 "derivative": 0.0,
                                 "location": -1.1,
-                                "value": -0.4
-                            },
-                            {
-                                "derivative": 0.0,
-                                "location": -1.02,
                                 "value": 0.4
                             },
                             {
@@ -153,11 +148,6 @@
                         "spline": {
                             "coordinate": "tfg:mars/continents",
                             "points": [
-                                {
-                                    "derivative": 0.0,
-                                    "location": -1.1,
-                                    "value": 0.2222
-                                },
                                 {
                                     "derivative": 0.0,
                                     "location": -1.02,

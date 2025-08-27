@@ -19,17 +19,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sheldonite)Cooperita e Bornita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Cromita e Magnetita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)Enxofre e Pirita$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Esfalerita e Enxofre$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Esfalerita e Pirita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_beryllium)Esmeralda e Berílio$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Espodumena e Lepidolita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_limonite)Goethita e Malaquita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)Grafite e Diamante$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)Granada e Areia Cassiterita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_hematite)Hematita e Limonita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_hematite)Hematita, Goethita e Rubi$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lapis)Lápis-lazúri, Lazurita e Sodalita$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sheldonite)Cooperita e Bornita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Cromita e Magnetita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)Enxofre e Pirita$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Esfalerita e Enxofre$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Esfalerita e Pirita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_beryllium)Esmeralda e Berílio$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Espodumena e Lepidolita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gypsum)Gipsita e Calcita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_limonite)Goethita e Malaquita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)Grafite e Diamante$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)Granada e Areia Cassiterita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_hematite)Hematita e Limonita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_hematite)Hematita, Goethita e Rubi$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_limonite)Limonita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_magnetite)Magnetita e Vanádio$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_manganese)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)Opala e Granada$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_gold)Ouro (Profundo)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Ouro, Limonita e Hematita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)Pedra-sabão, Talco e Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_silver)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzos$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)Redstone, Cinábrio e Rubi$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Safira e Almandina$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Sais e Bórax$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)Salitre e Eletrotina$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Sheelita e Tungstato$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_lapis)Lápis-lazúri, Lazurita e Sodalita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_limonite)Limonita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_magnetite)Magnetita e Vanádio$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_manganese)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)Opala e Granada$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_gold)Ouro (Profundo)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Ouro, Limonita e Hematita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)Pedra-sabão, Talco e Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_silver)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzos$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)Redstone, Cinábrio e Rubi$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Safira e Almandina$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Sais e Bórax$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)Salitre e Eletrotina$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)Tetraedrita (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetraedrita (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Topázio e Calcocita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)Uraninita e Pechblenda$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenita e Molibdenita$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)Tetraedrita (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetraedrita (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Topázio e Calcocita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)Uraninita e Pechblenda$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenita e Molibdenita$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1655,6 +1655,98 @@
       "enable_visualize": false,
       "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Derrete em$(): Níquel$(br)$(thing)Fórmula$(): Ni",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 180$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): -32 — 60$(br)$(thing)Tamanho$(): 40$(br)$(thing)Altura$(): 9$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Giz",
+      "title": "Gipsita e Calcita",
+      "type": "patchouli:text",
+      "anchor": "normal_gypsum"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Gipsita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gypsum"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Usado para$(): Tijolos de Alabastro (tingíveis)$(br)$(thing)Fórmula$(): CaS(H₂O)₂O₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Calcita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/calcite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 30%$(br)$(thing)Fonte de$(): Cálcio$(br)$(thing)Fórmula$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Bórax",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/borax"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Fonte de$(): Sódio, Boro$(br)$(thing)Fórmula$(): Na₂B₄(H₂O)₁₀O₇",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Terra de Fuller",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/fullers_earth"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Fonte de$(): Magnésio$(br)$(thing)Fórmula$(): MgSi₄H(H₂O)₄O₁₁",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",

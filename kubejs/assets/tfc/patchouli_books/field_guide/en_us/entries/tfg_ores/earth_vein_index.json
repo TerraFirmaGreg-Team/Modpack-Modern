@@ -19,17 +19,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)Garnet & Cassiterite Sands$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Garnierite & Cobaltite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_limonite)Goethite & Malachite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_gold)Gold (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Gold, Limonite, & Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_hematite)Hematite & Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_hematite)Hematite, Goethite, & Ruby$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Kyanite, Mica, & Bauxite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lapis)Lapis, Lazurite, & Sodalite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_limonite)Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_magnetite)Magnetite & Vanadium$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_manganese)Manganese & Tantalum$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_basaltic_sands)Mineral Sands$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)Garnet & Cassiterite Sands$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Garnierite & Cobaltite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_limonite)Goethite & Malachite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_gold)Gold (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Gold, Limonite, & Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gypsum)Gypsum & Calcite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_hematite)Hematite & Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_hematite)Hematite, Goethite, & Ruby$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Kyanite, Mica, & Bauxite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lapis)Lapis, Lazurite, & Sodalite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_limonite)Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_magnetite)Magnetite & Vanadium$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_manganese)Manganese & Tantalum$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_oilsands)Oilsands$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)Opal & Garnet$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzes$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)Redstone, Cinnabar, & Ruby$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)Saltpeter & Electrotine$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Salts & Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Sapphire & Almandine$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite & Tungstate$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_silver)Silver, Galena, & Lead$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)Soapstone, Talc, & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Sphalerite & Pyrite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite & Sulfur$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Lepidolite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)Sulfur & Pyrite$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_basaltic_sands)Mineral Sands$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_oilsands)Oilsands$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)Opal & Garnet$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzes$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)Redstone, Cinnabar, & Ruby$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)Saltpeter & Electrotine$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Salts & Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Sapphire & Almandine$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite & Tungstate$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_silver)Silver, Galena, & Lead$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)Soapstone, Talc, & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Sphalerite & Pyrite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite & Sulfur$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Lepidolite$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)Tetrahedrite (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Topaz & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)Uraninite & Pitchblende$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenite & Molybdenite$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)Sulfur & Pyrite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)Tetrahedrite (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Topaz & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)Uraninite & Pitchblende$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenite & Molybdenite$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1586,6 +1586,98 @@
       "enable_visualize": false,
       "text": "$(thing)Percentage$(): 25%$(br)$(thing)Used for$(): Macerators, AE2$(br)$(thing)Formula$(): C",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Rarity$(): 180$(br)$(thing)Density$(): 0.3$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): -32 — 60$(br)$(thing)Size$(): 40$(br)$(thing)Height$(): 9$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Dolomite, Limestone, Shale",
+      "title": "Gypsum & Calcite",
+      "type": "patchouli:text",
+      "anchor": "normal_gypsum"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Gypsum",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gypsum"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 35%$(br)$(thing)Used for$(): Alabaster (dyeable) bricks$(br)$(thing)Formula$(): CaS(H₂O)₂O₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Calcite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/calcite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 30%$(br)$(thing)Source of$(): Calcium$(br)$(thing)Formula$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Borax",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/borax"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 20%$(br)$(thing)Source of$(): Sodium, Boron$(br)$(thing)Formula$(): Na₂B₄(H₂O)₁₀O₇",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Fuller's Earth",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/fullers_earth"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Source of$(): Magnesium$(br)$(thing)Formula$(): MgSi₄H(H₂O)₄O₁₁",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",

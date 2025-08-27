@@ -226,7 +226,10 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/shale')
 	event.add('ad_astra:mars_stone_replaceables', 'ad_astra:mars_stone')
 	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_mars_stone')
+	event.add('ad_astra:mars_stone_replaceables', 'minecraft:red_sandstone')
 	event.add('ad_astra:mars_stone_replaceables', 'ad_astra:venus_stone')
+	event.add('ad_astra:mars_stone_replaceables', 'ad_astra:venus_sandstone')
+	event.add('ad_astra:mars_stone_replaceables', 'create:ochrum')
 	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_venus_stone')
 	event.add('ad_astra:mars_stone_replaceables', 'gtceu:red_granite')
 	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_red_granite')
@@ -239,9 +242,16 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:mars_soil', 'tfc:sand/red')
 	event.add('tfg:mars_soil', 'tfc:sand/pink')
 	event.add('tfg:mars_soil', 'tfg:grass/mars_dirt')
-	event.add('tfg:mars_soil', 'tfg:grass/rusticus_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/mars_clay_dirt')
 	event.add('tfg:mars_soil', 'tfg:grass/amber_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/rusticus_mycelium')
 	event.add('tfg:mars_soil', 'tfg:grass/sangnum_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/amber_clay_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/rusticus_clay_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/sangnum_clay_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/amber_kaolin_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/rusticus_kaolin_mycelium')
+	event.add('tfg:mars_soil', 'tfg:grass/sangnum_kaolin_mycelium')
 	event.add('ad_astra:mars_stone_replaceables', '#tfg:mars_soil')
 	event.add('minecraft:animals_spawnable_on', '#tfg:mars_soil')
 	
@@ -318,17 +328,18 @@ const registerAdAstraBiomeTags = (event) => {
 
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_dunes')
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_deep_desert')
-	event.add('tfg:has_medium_sand_particles', 'tfg:mars/martian_dune_edge')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/amber_plains')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/amber_hills')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/rusticus_plains')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/rusticus_hills')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/sangnum_plains')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/sangnum_hills')
-	event.add('tfg:has_medium_sand_particles', 'tfg:mars/martian_oasis')
-	event.add('tfg:has_medium_sand_particles', 'tfg:mars/martian_mountains')
+	event.add('tfg:has_light_sand_particles', 'tfg:mars/martian_dune_edge')
+	event.add('tfg:has_light_sand_particles', 'tfg:mars/amber_edge')
+	event.add('tfg:has_light_sand_particles', 'tfg:mars/rusticus_edge')
+	event.add('tfg:has_light_sand_particles', 'tfg:mars/sangnum_edge')
+	event.add('tfg:has_light_sand_particles', 'tfg:mars/martian_mountains')
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/martian_river')
-	event.add('tfg:has_light_sand_particles', 'tfg:mars/martian_riverbed')
 }
 
 const registerAdAstraEntityTypeTags = (event) => {
@@ -352,7 +363,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 
 		'tfg:sniffer',
 		'tfg:glacian_ram',
-		'species:wraptor',
+		'tfg:wraptor',
 		'species:goober',
 		'species:cruncher',
 		'species:springling',
@@ -388,8 +399,11 @@ const registerAdAstraEntityTypeTags = (event) => {
 	event.add('tfg:ignores_gravity', 'species:birt')
 	event.add('tfg:ignores_gravity', 'ad_astra:star_crawler')
 	
-	event.add('tfg:ignores_gravity', 'species:wraptor')
+	// this guy has a bounce animation that looks silly in low grav
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:crusher')
+	// this huge guy also looks silly in low grav
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:walker')
+	// flying mobs
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:soarer')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:glider')
 }
@@ -415,7 +429,7 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_black_sand')
 
 	//#region Mars
-
+	event.add('tfg:mars_veins', 'tfg:mars/terrain/ochrum_blob')
 	
 	// Vegetation
 	event.add("tfg:mars_amber_small_plants", "tfg:mars/crop/amber_root")
@@ -428,7 +442,6 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/flammalix")
 	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/lutebus")
 	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/orango")
-	event.add("tfg:mars_amber_small_plants", "tfg:mars/surface/torchflower")
 	
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/crop/amber_root")
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/crop/blossom_berry")
@@ -441,9 +454,7 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/lamellarium")
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/lutebus")
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/orango")
-	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/pitcher_plant")
 	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/ruscus")
-	event.add("tfg:mars_rusticus_small_plants", "tfg:mars/surface/torchflower")
 	
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/crop/blossom_berry")
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/crop/bolux_mushroom")
@@ -455,7 +466,6 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/flamaea")
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/globulagus")
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/lamellarium")
-	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/pitcher_plant")
 	event.add("tfg:mars_sangnum_small_plants", "tfg:mars/surface/ruscus")
 
 	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/small_amaranita_mushroom")

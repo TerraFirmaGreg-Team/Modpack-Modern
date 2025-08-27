@@ -1233,12 +1233,15 @@
 		}
 		{
 			dependencies: ["378E2294EFD85C65"]
+			description: ["{quests.ae2.programmed_circuit_card.desc}"]
 			id: "51B34B3E51B6ECDD"
+			subtitle: "{quests.ae2.programmed_circuit_card.subtitle}"
 			tasks: [{
 				id: "295980339E1FE027"
 				item: "pccard:card_programmed_circuit"
 				type: "item"
 			}]
+			title: "{quests.ae2.programmed_circuit_card.title}"
 			x: 1.0d
 			y: -10.5d
 		}

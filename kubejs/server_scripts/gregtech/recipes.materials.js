@@ -368,6 +368,15 @@ function registerGTCEUMetalRecipes(event) {
 			.duration(material.getMass())
 			.category(GTRecipeCategories.ORE_CRUSHING)
 			.EUt(GTValues.VA[GTValues.ULV])
+
+		let tfcName = material.getName();
+		if (material === GTMaterials.Bismuth)
+			tfcName = "bismuthinite";
+		else if (material === GTMaterials.YellowLimonite)
+			tfcName = "limonite";
+
+		event.recipes.tfc.quern(smallDust, smallOre)
+			.id(`tfc:quern/small_${tfcName}`)
 	}
 
 	/**
@@ -385,6 +394,9 @@ function registerGTCEUMetalRecipes(event) {
 			.duration(material.getMass())
 			.category(GTRecipeCategories.ORE_CRUSHING)
 			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.tfc.quern(smallDust, smallNativeOre)
+			.id(`tfc:quern/small_native_${material.getName()}`)
 	}
 
 	/**

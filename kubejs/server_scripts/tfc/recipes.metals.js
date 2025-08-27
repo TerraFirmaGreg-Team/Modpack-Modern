@@ -116,49 +116,49 @@ function registerTFCMetalsRecipes(event) {
 	event.recipes.gtceu.forge_hammer('tfg/refined_bloom')
 		.itemInputs('tfc:raw_iron_bloom')
 		.itemOutputs('tfc:refined_iron_bloom')
-		.duration(400)
+		.duration(200)
 		.EUt(4)
 
 	// Укрепленная крица -> Слиток кованного железа
 	event.recipes.gtceu.forge_hammer('tfg/wrought_iron_ingot')
 		.itemInputs('tfc:refined_iron_bloom')
 		.itemOutputs('gtceu:wrought_iron_ingot')
-		.duration(400)
+		.duration(200)
 		.EUt(4)
 
 	// Чугун -> Высокоуглеродная сталь
 	event.recipes.gtceu.forge_hammer('tfg/high_carbon_steel')
 		.itemInputs('tfc:metal/ingot/pig_iron')
 		.itemOutputs('tfc:metal/ingot/high_carbon_steel')
-		.duration(500)
+		.duration(300)
 		.EUt(4)
 
 	// Высокоуглеродная сталь -> Cталь
 	event.recipes.gtceu.forge_hammer('tfg/steel')
 		.itemInputs('tfc:metal/ingot/high_carbon_steel')
 		.itemOutputs('gtceu:steel_ingot')
-		.duration(500)
+		.duration(300)
 		.EUt(4)
 
 	// Высокоуглеродная черная сталь -> черная сталь 
 	event.recipes.gtceu.forge_hammer('tfg/black_steel')
 		.itemInputs('tfc:metal/ingot/high_carbon_black_steel')
 		.itemOutputs('tfc:metal/ingot/black_steel')
-		.duration(600)
+		.duration(300)
 		.EUt(4)
 
 	// Высокоуглеродная синяя сталь -> синяя сталь 
 	event.recipes.gtceu.forge_hammer('tfg/blue_steel')
 		.itemInputs('tfc:metal/ingot/high_carbon_blue_steel')
 		.itemOutputs('tfc:metal/ingot/blue_steel')
-		.duration(700)
+		.duration(400)
 		.EUt(4)
 
 	// Высокоуглеродная красная сталь -> красная сталь 
 	event.recipes.gtceu.forge_hammer('tfg/red_steel')
 		.itemInputs('tfc:metal/ingot/high_carbon_red_steel')
 		.itemOutputs('tfc:metal/ingot/red_steel')
-		.duration(700)
+		.duration(400)
 		.EUt(4)
 
 	// Слабая сталь + Чугун -> Высокоуглеродная черная сталь
@@ -199,6 +199,40 @@ function registerTFCMetalsRecipes(event) {
 		.itemOutputs('2x tfc:metal/ingot/high_carbon_red_steel')
 		.duration(700)
 		.EUt(4)
+
+	// Rose Gold + Sterling Silver
+	const copper_types = [
+		"#forge:ingots/copper",
+		"#forge:dusts/copper",
+		"#forge:ingots/annealed_copper",
+		"#forge:dusts/annealed_copper"
+	];
+	const gold_types = [
+		"#forge:ingots/gold",
+		"#forge:dusts/gold"
+	];
+	const silver_types = [
+		"#forge:ingots/silver",
+		"#forge:dusts/silver"
+	];
+
+	copper_types.forEach(copper_types_array => {
+		gold_types.forEach(gold_types_array => {
+			event.recipes.gtceu.alloy_smelter(`rose_gold_from_${copper_types_array.replace(/:/g, "/").replace(/#/g, "")}_and_${gold_types_array.replace(/:/g, "/").replace(/#/g, "")}`)
+				.itemInputs(Ingredient.of(copper_types_array).withCount(1), Ingredient.of(gold_types_array).withCount(4))
+				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.RoseGold, 5))
+				.duration(20*10)
+				.EUt(GTValues.VA[GTValues.LV])
+		});
+		silver_types.forEach(silver_types_array => {
+			event.recipes.gtceu.alloy_smelter(`sterling_silver_from_${copper_types_array.replace(/:/g, "/").replace(/#/g, "")}_and_${silver_types_array.replace(/:/g, "/").replace(/#/g, "")}`)
+				.itemInputs(Ingredient.of(copper_types_array).withCount(1), Ingredient.of(silver_types_array).withCount(4))
+				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.SterlingSilver, 5))
+				.duration(20*10)
+				.EUt(GTValues.VA[GTValues.LV])
+		});
+	});
+
 
 	const TFC_INTERMEDIATE_METALS =
 		[

@@ -66,5 +66,12 @@ function registerTFGCollapseRecipes(event) {
 	event.recipes.tfc.landslide('tfg:grass/mars_dirt', 'tfg:grass/amber_mycelium')
 	event.recipes.tfc.landslide('tfg:grass/mars_dirt', 'tfg:grass/rusticus_mycelium')
 	event.recipes.tfc.landslide('tfg:grass/mars_dirt', 'tfg:grass/sangnum_mycelium')
+	event.recipes.tfc.landslide('tfg:grass/mars_clay_dirt', 'tfg:grass/mars_clay_dirt')
+	event.recipes.tfc.landslide('tfg:grass/mars_clay_dirt', 'tfg:grass/amber_clay_mycelium')
+	event.recipes.tfc.landslide('tfg:grass/mars_clay_dirt', 'tfg:grass/rusticus_clay_mycelium')
+	event.recipes.tfc.landslide('tfg:grass/mars_clay_dirt', 'tfg:grass/sangnum_clay_mycelium')
+	event.recipes.tfc.landslide('tfc:red_kaolin_clay', 'tfg:grass/amber_kaolin_mycelium')
+	event.recipes.tfc.landslide('tfc:red_kaolin_clay', 'tfg:grass/rusticus_kaolin_mycelium')
+	event.recipes.tfc.landslide('tfc:red_kaolin_clay', 'tfg:grass/sangnum_kaolin_mycelium')
 	// #endregion
 }

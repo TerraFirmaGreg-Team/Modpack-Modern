@@ -63,6 +63,9 @@ const registerCreateItemTags = (event) => {
 	event.add('create:non_movable', 'gtceu:mv_super_chest')
 	event.add('create:non_movable', 'gtceu:hv_super_chest')
 	event.add('create:non_movable', 'gtceu:ev_super_chest')
+	event.add('create:non_movable', 'tfg:spice')
+	event.add('create:non_movable', 'tfg:geyser_source')
+	event.add('create:non_movable', 'tfg:geyser_source_small')
 
 	event.add('c:hidden_from_recipe_viewers', 'create:cardboard_package_12x10')
 	event.add('c:hidden_from_recipe_viewers', 'create:cardboard_package_10x8')
@@ -100,14 +103,36 @@ const registerCreateBlockTags = (event) => {
 
 	event.add('create:chest_mounted_storage', '#forge:chests/wooden')
 	event.add('create:chest_mounted_storage', 'framedblocks:framed_chest')
+
+	event.remove('create:passive_boiler_heaters', 'minecraft:campfire')
+	
+	event.add('create:non_movable', 'gtceu:wood_crate')
+	event.add('create:non_movable', 'gtceu:bronze_crate')
+	event.add('create:non_movable', 'gtceu:black_bronze_crate')
+	event.add('create:non_movable', 'gtceu:bismuth_bronze_crate')
+	event.add('create:non_movable', 'gtceu:steel_crate')
+	event.add('create:non_movable', 'gtceu:aluminium_crate')
+	event.add('create:non_movable', 'gtceu:stainless_steel_crate')
+	event.add('create:non_movable', 'gtceu:titanium_crate')
+	event.add('create:non_movable', 'gtceu:tungsten_steel_crate')
+	event.add('create:non_movable', '#create:toolboxes')
+	event.add('create:non_movable', 'gtceu:lv_super_chest')
+	event.add('create:non_movable', 'gtceu:mv_super_chest')
+	event.add('create:non_movable', 'gtceu:hv_super_chest')
+	event.add('create:non_movable', 'gtceu:ev_super_chest')
+	event.add('create:non_movable', 'tfg:spice')
+	event.add('create:non_movable', 'tfg:geyser_source')
+	event.add('create:non_movable', 'tfg:geyser_source_small')
 }
 
 
 const registerCreateFluidTags = (event) => {
 
-	// Делаем воду из TFC бесконечной для помпы Create
+	//Hose Pulley Infinites
 	event.add('create:bottomless/allow', 'tfc:fresh_water')
 	event.add('create:bottomless/allow', 'tfc:salt_water')
+	event.add('create:bottomless/allow', 'tfg:semiheavy_ammoniacal_water')
+	event.remove('create:bottomless/allow', 'minecraft:lava')
 
 	// Добавляем тег для скрытия в EMI
 	event.add('c:hidden_from_recipe_viewers', 'create:chocolate')
@@ -124,8 +149,4 @@ const registerCreateFluidTags = (event) => {
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:salt_water')
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:spring_water')
 	event.add('create:fan_processing_catalysts/splashing', 'tfg:semiheavy_ammoniacal_water')
-
-	//Hose Pulley Infinites
-	event.add('create:bottomless/allow', 'tfg:semiheavy_ammoniacal_water')
-	event.remove('create:bottomless/allow', 'minecraft:lava')
 }

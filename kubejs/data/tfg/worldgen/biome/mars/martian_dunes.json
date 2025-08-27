@@ -11,12 +11,6 @@
 			"sound": "minecraft:ambient.cave",
 			"tick_delay": 6000
 		},
-		"particle": {
-			"options": {
-				"type": "tfc:wind"
-			},
-			"probability": 0.05
-		},
 		"sky_color": 15117444,
 		"water_color": 4159204,
 		"water_fog_color": 1069623
@@ -39,10 +33,14 @@
 		[],
 		[],
 		"#tfg:mars_veins",
-		[],
+		[
+			"tfg:mars/terrain/red_quicksand"
+		],
 		[
 			"tfc:raw_boulder_small_patch",
-			"tfc:cobble_boulder_small_patch"
+			"tfc:cobble_boulder_small_patch",
+			"tfg:mars/surface/small_skull_and_bones",
+			"tfg:mars/surface/large_skull_and_bones"
 		],
 		[
 

@@ -150,8 +150,10 @@ function removeTFCRecipes(event) {
 	event.remove({ id: 'tfc:crafting/vanilla/redstone/minecart' })
 	event.remove({ id: 'tfc:crafting/cake' })
 	event.remove({ id: 'tfc:crafting/pumpkin_chunks' })
+	event.remove({ id: 'tfc:crafting/alabaster_brick' })
 
 	event.remove({ id: /^tfc:crafting\/dough\/.*/ })
+	event.remove({ id: 'tfc:heating/destroy_bread' })
 
 	event.remove({ id: 'tfc:crafting/gunpowder_graphite' })
 	event.remove({ id: 'tfc:crafting/gunpowder' })

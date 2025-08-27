@@ -97,7 +97,7 @@ function registerTFGFoodRecipes(event) {
 	 * @param {boolean?} isFirmaDynamic 
 	 */
 	function cookingRecipe(id, input, out, fluid, isFirmaDynamic) {
-		return registerFoodRecipe("food_oven", id, 300, 32, "", {
+		return registerFoodRecipe("food_oven", id, 300, GTValues.VA[GTValues.LV], "", {
 			itemInputs: [input],
 			itemOutputs: [out],
 			fluidInputs: (fluid === undefined) ? [] : [fluid],
@@ -545,8 +545,17 @@ function registerTFGFoodRecipes(event) {
 		itemOutputs: ["firmalife:food/tortilla_chips"],
 		itemOutputProvider: TFC.isp.of("firmalife:food/tortilla_chips").copyFood()
 	})
+	
+	processorRecipe("tomato_sauce", 300, 8, {
+		circuit: 1,
+		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'tfc:food/garlic'],
+		fluidInputs: ['tfg:clean_water 200'],
+		itemOutputs: ['5x firmalife:food/tomato_sauce'],
+		itemOutputProvider: TFC.isp.of('5x firmalife:food/tomato_sauce').copyOldestFood()
+	})
 
 	processorRecipe("tomato_sauce_mix", 600, 8, {
+		circuit: 2,
 		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'tfc:food/garlic'],
 		itemOutputs: ['5x firmalife:food/tomato_sauce_mix'],
 		itemOutputProvider: TFC.isp.of('5x firmalife:food/tomato_sauce_mix').copyOldestFood(),
@@ -590,13 +599,14 @@ function registerTFGFoodRecipes(event) {
 	cookingRecipe("dried_seaweed_b", "tfc:groundcover/seaweed", "tfc:food/dried_seaweed")
 	
 	// Vinegar
-	processorRecipe('vinegar_alcohol', 600, 32, {
+	processorRecipe('vinegar_alcohol', 600, GTValues.VA[GTValues.LV], {
 		circuit: 5,
 		itemInputs: ['#tfc:foods/fruits'],
 		fluidInputs: ['#tfc:alcohols 250'],
 		fluidOutputs: [Fluid.of('tfc:vinegar', 250)],
 	})
 
+	// Pizza
 	processorRecipe("pizza_no_extra", 600, 16, {
 		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese"],
 		itemOutputs: ["firmalife:food/raw_pizza"],
@@ -633,6 +643,20 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of("4x firmalife:food/pizza_dough").copyOldestFood()
 	})
 
+	processorRecipe("shredded_cheese", 100, 16, {
+		itemInputs: ['#firmalife:foods/cheeses'],
+		itemOutputs: ['4x firmalife:food/shredded_cheese'],
+		circuit: 30,
+		itemOutputProvider: TFC.isp.of('firmalife:food/shredded_cheese').copyFood()
+	})
+
+	processorRecipe("basil", 20, 16, {
+		itemInputs: ['firmalife:plant/basil'],
+		itemOutputs: ['2x firmalife:spice/basil_leaves'],
+		circuit: 30
+	})
+
+	// Ice cream
 	processorRecipe("vanilla_ice_cream", 300, 16, {
 		itemInputs: ['firmalife:ice_shavings', '#tfc:sweetener', 'firmalife:spice/vanilla'],
 		itemOutputs: ['2x firmalife:food/vanilla_ice_cream'],
@@ -643,7 +667,7 @@ function registerTFGFoodRecipes(event) {
 	processorRecipe("chocolate_ice_cream", 300, 16, {
 		itemInputs: ['firmalife:food/vanilla_ice_cream'],
 		itemOutputs: ['firmalife:food/chocolate_ice_cream'],
-		fluidInputs: [Fluid.of('firmalife:chocolate', 1000)],
+		fluidInputs: [Fluid.of('tfcchannelcasting:milk_chocolate', 100)],
 		itemOutputProvider: TFC.isp.of("firmalife:food/chocolate_ice_cream").resetFood()
 	})
 
@@ -657,6 +681,12 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: [`firmalife:food/vanilla_ice_cream`, `firmalife:food/chocolate_chip_cookie_dough`],
 		itemOutputs: [`2x firmalife:food/cookie_dough_ice_cream`],
 		itemOutputProvider: TFC.isp.of("firmalife:food/cookie_dough_ice_cream").resetFood()
+	})
+
+	processorRecipe("banana_split", 500, 16, {
+		itemInputs: ['firmalife:food/vanilla_ice_cream', 'firmalife:food/strawberry_ice_cream', 'firmalife:food/chocolate_ice_cream', 'firmalife:food/pineapple', 'tfc:food/cherry', '2x tfc:food/banana'],
+		itemOutputs: ['2x firmalife:food/banana_split'],
+		itemOutputProvider: TFC.isp.of('2x firmalife:food/banana_split').resetFood()
 	})
 
 	processorRecipe("butter", 300, 16, {
@@ -753,6 +783,62 @@ function registerTFGFoodRecipes(event) {
 		fluidInputs: ['#tfg:clean_water 50'],
 		itemOutputs: ["firmalife:food/soy_mixture"],
 		itemOutputProvider: TFC.isp.of('firmalife:food/soy_mixture').copyOldestFood()
+	})
+
+	processorRecipe("brown_mushroom", 100, 8, {
+		circuit: 30,
+		itemInputs: ["minecraft:brown_mushroom_block"],
+		itemOutputs: ["4x minecraft:brown_mushroom"],
+		itemOutputProvider: TFC.isp.of("4x minecraft:brown_mushroom").resetFood()
+	})
+
+	processorRecipe("red_mushroom", 100, 8, {
+		circuit: 30,
+		itemInputs: ["minecraft:red_mushroom_block"],
+		itemOutputs: ["4x minecraft:red_mushroom"],
+		itemOutputProvider: TFC.isp.of("4x minecraft:red_mushroom").resetFood()
+	})
+
+	processorRecipe("cut_pumpkin", 100, 8, {
+		circuit: 30,
+		itemInputs: ["tfc:pumpkin"],
+		itemOutputs: ["4x tfc:food/pumpkin_chunks"],
+		itemOutputProvider: TFC.isp.of("4x tfc:food/pumpkin_chunks").copyOldestFood()
+	})
+
+	processorRecipe("cut_melon", 100, 8, {
+		circuit: 30,
+		itemInputs: ["tfc:melon"],
+		itemOutputs: ["4x tfc:food/melon_slice"],
+		itemOutputProvider: TFC.isp.of("4x tfc:food/melon_slice").copyOldestFood()
+	})
+
+	processorRecipe("salsa", 300, 8, {
+		circuit: 1,
+		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'firmalife:plant/cilantro'],
+		itemOutputs: ['5x firmalife:food/salsa'],
+		itemOutputProvider: TFC.isp.of('5x firmalife:food/salsa').copyOldestFood()
+	})
+
+	processorRecipe("bacon", 300, 8, {
+		circuit: 1,
+		itemInputs: [/*TFC.ingredient.hasTrait(*/'tfc:food/pork'/*, 'firmalife:smoked')*/, 'tfc:powder/salt'],
+		itemOutputs: ['4x firmalife:food/bacon'],
+		itemOutputProvider: TFC.isp.of('4x firmalife:food/bacon').copyOldestFood()
+	})
+
+	processorRecipe("picked_egg", 1000, 8, {
+		circuit: 1,
+		itemInputs: ['minecraft:clay_ball', 'tfc:powder/wood_ash', 'tfc:powder/salt', 'tfc:food/boiled_egg'],
+		itemOutputs: ['firmalife:food/pickled_egg'],
+		itemOutputProvider: TFC.isp.of('firmalife:food/pickled_egg').copyOldestFood()
+	})
+
+	processorRecipe("garlic_bread", 300, 8, {
+		circuit: 1,
+		itemInputs: ['firmalife:food/toast', 'firmalife:food/butter', 'tfc:food/garlic'],
+		itemOutputs: ['firmalife:food/garlic_bread'],
+		itemOutputProvider: TFC.isp.of('firmalife:food/garlic_bread').copyOldestFood()
 	})
 
 	// Alcohols
@@ -964,6 +1050,13 @@ function registerTFGFoodRecipes(event) {
 		[TFC.ingredient.notRotten('betterend:cave_pumpkin'), '#tfc:knives'], 'betterend:cave_pumpkin')
 		.id(`tfg:crafting/cave_pumpkin_chunks_knife`)
 
+	processorRecipe("cut_cave_pumpkin", 100, 8, {
+		circuit: 30,
+		itemInputs: ["betterend:cave_pumpkin"],
+		itemOutputs: ["4x betterend:cave_pumpkin_chunks"],
+		itemOutputProvider: TFC.isp.of("4x betterend:cave_pumpkin_chunks").copyOldestFood()
+	})
+
 	processorRecipe("cave_pumpkin_pie_dough", 300, GTValues.VA[GTValues.HV], {
 		itemInputs: ['#tfg:martian_eggs', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', '#tfc:sweetener'],
 		fluidInputs: ['minecraft:water 1000'],
@@ -994,6 +1087,7 @@ function registerTFGFoodRecipes(event) {
 	event.remove({id: 'gtceu:shaped/mv_food_refrigerator'})
 	event.remove({id: 'gtceu:shaped/hv_food_refrigerator'})
 	event.remove({id: 'gtceu:shaped/ev_food_refrigerator'})
+	event.remove({id: 'gtceu:shaped/iv_food_refrigerator'})
 
     event.recipes.gtceu.assembler('tfg:assembler/mv_food_refrigerator')
         .itemInputs(
@@ -1034,8 +1128,23 @@ function registerTFGFoodRecipes(event) {
 			'gtceu:ev_hermetic_casing',
 			'#gtceu:circuits/ev'
 		)
-		.inputFluids(Fluid.of('tfg:isobutane', 6000))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 6000))
         .itemOutputs('1x tfg:ev_food_refrigerator')
+        .duration(200)
+        .circuit(7)
+        .EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.assembler('tfg:assembler/iv_food_refrigerator')
+        .itemInputs(
+			ChemicalHelper.get(TagPrefix.cableGtSingle, GTMaterials.Platinum, 2), 
+			ChemicalHelper.get(TagPrefix.plate, GTMaterials.Polyethylene, 2),
+			ChemicalHelper.get(TagPrefix.rotor, GTMaterials.Titanium, 1),
+			'2x gtceu:iv_electric_pump',
+			'gtceu:iv_hermetic_casing',
+			'#gtceu:circuits/iv'
+		)
+		.inputFluids(Fluid.of('tfg:solar_coolant_tier2', 6000))
+        .itemOutputs('1x tfg:iv_food_refrigerator')
         .duration(200)
         .circuit(7)
         .EUt(GTValues.VA[GTValues.LV])
@@ -1050,19 +1159,4 @@ function registerTFGFoodRecipes(event) {
 		C: 'tfc:compost',
 		D: 'gtceu:steel_machine_casing'
 	}).id('tfg:shaped/electric_greenhouse')
-
-	// Tweaks to the machine crafts that are more annoying to do in java
-	event.replaceInput({id: 'gtceu:shaped/lv_food_processor'}, 'gtceu:lv_electric_piston', 'gtceu:steel_whisk')
-	event.replaceInput({id: 'gtceu:shaped/mv_food_processor'}, 'gtceu:mv_electric_piston', 'gtceu:aluminium_whisk')
-	event.replaceInput({id: 'gtceu:shaped/hv_food_processor'}, 'gtceu:hv_electric_piston', 'gtceu:stainless_steel_whisk')
-	event.replaceInput({id: 'gtceu:shaped/ev_food_processor'}, 'gtceu:ev_electric_piston', 'gtceu:titanium_whisk')
-
-	event.replaceInput({id: 'gtceu:shaped/lv_food_oven'}, 'gtceu:lv_electric_piston', '#tfg:metal_bars')
-	event.replaceInput({id: 'gtceu:shaped/mv_food_oven'}, 'gtceu:mv_electric_piston', '#tfg:metal_bars')
-	event.replaceInput({id: 'gtceu:shaped/hv_food_oven'}, 'gtceu:hv_electric_piston', '#tfg:metal_bars')
-	event.replaceInput({id: 'gtceu:shaped/ev_food_oven'}, 'gtceu:ev_electric_piston', '#tfg:metal_bars')
-	
-	event.replaceInput({id: 'gtceu:shaped/mv_food_refrigerator'}, 'gtceu:mv_machine_hull', 'gtceu:mv_hermetic_casing')
-	event.replaceInput({id: 'gtceu:shaped/hv_food_refrigerator'}, 'gtceu:hv_machine_hull', 'gtceu:hv_hermetic_casing')
-	event.replaceInput({id: 'gtceu:shaped/ev_food_refrigerator'}, 'gtceu:ev_machine_hull', 'gtceu:ev_hermetic_casing')
 }

@@ -331,6 +331,95 @@ function registerTFGSpaceBlocks(event) {
 
 	// #endregion
 
+	// #region Mars Blocks
+
+	event.create('tfg:spice', 'tfg:particle_emitter')
+		.textureAll('tfg:block/sand_spice')
+		.soundType('sand')
+		.hardness(2)
+		.resistance(6)
+		// makes it invisible on xaeros, so people can't use it to find the deposits :)
+		.mapColor('none')
+		.particleOffset(0.3, 1.5, 0.3)
+		.particleVelocity(0, 0.05, 0)
+		.particle('electric_spark')
+		.particleCount(2)
+		.particleForced(false)
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:grass/amber_clay_mycelium')
+		.property(BlockProperties.SNOWY)
+		.soundType('wart_block')
+		.requiresTool(false)
+		.mapColor('terracotta_yellow')
+		.tagBlock('minecraft:mineable/shovel')
+		.tagBoth('tfc:dirt')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:grass/amber_kaolin_mycelium')
+		.property(BlockProperties.SNOWY)
+		.soundType('wart_block')
+		.requiresTool(false)
+		.mapColor('terracotta_yellow')
+		.tagBlock('minecraft:mineable/shovel')
+		.tagBoth('tfc:kaolin_clay')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:grass/rusticus_clay_mycelium')
+		.property(BlockProperties.SNOWY)
+		.soundType('wart_block')
+		.requiresTool(false)
+		.mapColor('terracotta_orange')
+		.tagBlock('minecraft:mineable/shovel')
+		.tagBoth('tfc:dirt')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:grass/rusticus_kaolin_mycelium')
+		.property(BlockProperties.SNOWY)
+		.soundType('wart_block')
+		.requiresTool(false)
+		.mapColor('terracotta_orange')
+		.tagBlock('minecraft:mineable/shovel')
+		.tagBoth('tfc:kaolin_clay')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:grass/sangnum_clay_mycelium')
+		.property(BlockProperties.SNOWY)
+		.soundType('wart_block')
+		.requiresTool(false)
+		.mapColor('terracotta_red')
+		.tagBlock('minecraft:mineable/shovel')
+		.tagBoth('tfc:dirt')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:grass/sangnum_kaolin_mycelium')
+		.property(BlockProperties.SNOWY)
+		.soundType('wart_block')
+		.requiresTool(false)
+		.mapColor('terracotta_red')
+		.tagBlock('minecraft:mineable/shovel')
+		.tagBoth('tfc:kaolin_clay')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:grass/mars_clay_dirt')
+		.property(BlockProperties.SNOWY)
+		.soundType('gravel')
+		.requiresTool(false)
+		.mapColor('dirt')
+		.tagBlock('minecraft:mineable/shovel')
+		.tagBoth('tfc:dirt')
+		.fullBlock(true)
+		.opaque(true)
+
+	// #endregion
+
 	//#region Venus Blocks
 	//Fluorapatite
 	const fluorapatite_colors = ['blue', 'green', 'brown', 'orange', 'white', 'yellow'];
