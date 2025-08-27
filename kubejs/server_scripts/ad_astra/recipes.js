@@ -267,6 +267,7 @@ const registerAdAstraRecipes = (event) => {
 	/*
 	event.recipes.gtceu.forming_press('better_space_suit_fabric')
 		.itemInputs(
+			'#forge:foils/polybenzimidazole',
 			'gtceu:carbon_fiber_mesh',
 			'#forge:aerogels',
 			'tfg:glacian_wool'

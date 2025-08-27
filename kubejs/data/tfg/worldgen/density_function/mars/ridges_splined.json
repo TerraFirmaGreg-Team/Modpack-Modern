@@ -1,0 +1,43 @@
+{
+    "type": "minecraft:mul",
+    "argument1": {
+        "type": "minecraft:flat_cache",
+        "argument": {
+            "type": "minecraft:shifted_noise",
+            "noise": "minecraft:ridge",
+            "shift_x": "minecraft:shift_x",
+            "shift_y": 0.0,
+            "shift_z": "minecraft:shift_z",
+            "xz_scale": 0.25,
+            "y_scale": 0.0
+        }
+    },
+    "argument2": {
+        "type": "minecraft:spline",
+        "spline": {
+            "coordinate": "tfg:mars/continents",
+            "points": [
+                {
+                    "location": -1,
+                    "derivative": 0,
+                    "value": 0
+                },
+                {
+                    "location": -0.12,
+                    "derivative": 0,
+                    "value": 0
+                },
+                {
+                    "location": -0.10,
+                    "derivative": 0,
+                    "value": 1
+                },
+                {
+                    "location": 1,
+                    "derivative": 0,
+                    "value": 1
+                }
+            ]
+        }
+    }
+}

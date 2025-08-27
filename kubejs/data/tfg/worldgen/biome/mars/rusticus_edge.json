@@ -33,22 +33,16 @@
 		[],
 		[],
 		"#tfg:mars_veins",
-		[],
 		[
-			"tfc:raw_boulder",
-			"tfc:cobble_boulder",
-			"tfc:raw_boulder_small_patch",
-			"tfc:cobble_boulder_small_patch",
-			"tfg:mars/surface/small_skull_and_bones",
-			"tfg:mars/surface/large_skull_and_bones",
+			"tfg:mars/terrain/clay_disc",
+			"tfg:mars/terrain/peat_disc"
+		],
+		[
+			"tfg:mars_forest",
 			"tfg:mars/surface/rotten_flesh_patch"
 		],
-		[
-
-		],
-		[
-			"tfc:surface_loose_rocks"
-		]
+		"#tfg:mars_rusticus_vegetal_decoration",
+		"#tfg:mars_top_layer_modification"
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
@@ -74,8 +68,26 @@
 		"axolotls": [],
 		"creature": [
 			{
+				"type": "tfg:sniffer",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "tfg:wraptor",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "wan_ancient_beasts:walker",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
 				"type": "wan_ancient_beasts:crusher",
-				"maxCount": 2,
+				"maxCount": 5,
 				"minCount": 1,
 				"weight": 100
 			},
@@ -84,6 +96,24 @@
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 20
+			},
+			{
+				"type": "wan_ancient_beasts:soarer",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 5
+			},
+			{
+				"type": "tfg:glacian_ram",
+				"maxCount": 5,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "wan_ancient_beasts:eater",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 5
 			}
 		],
 		"misc": [],
@@ -115,7 +145,14 @@
 		],
 		"underground_water_creature": [],
 		"water_ambient": [],
-		"water_creature": []
+		"water_creature": [
+			{
+				"type": "wan_ancient_beasts:surfer",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			}
+		]
 	},
 	"temperature": 0.8
 }
