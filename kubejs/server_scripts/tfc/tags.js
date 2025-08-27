@@ -330,6 +330,8 @@ const registerTFCItemTags = (event) => {
 		event.add('minecraft:stone_buttons', `tfc:rock/button/${stone}`)
 		event.add('minecraft:buttons', `tfc:rock/button/${stone}`)
 	})
+	
+	event.add('tfc:any_knapping', '#tfc:pit_kiln_straw')
 }
 
 const registerTFCBlockTags = (event) => {
