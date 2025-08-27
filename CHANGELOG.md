@@ -4,6 +4,7 @@
 ### Changes
 - Fuelling blaze burners with liquids is now done directly instead of through straws (break and replace your blaze burners to update) @Ghoulcel
 - Blaze burner liquid fuelling has been fully made consistent with GregTech power values (#1694) @Ghoulcel
+- Sewing Tables now use a knife instead of shears @BlueBoat29
 ### Bug fixes
 - Fixed tongs getting stuck in ovens @Pyritie
 
