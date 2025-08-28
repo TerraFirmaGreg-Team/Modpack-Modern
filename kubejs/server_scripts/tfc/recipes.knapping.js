@@ -207,5 +207,26 @@ function registerTFCKnappingRecipes(event) {
 		.id('tfg:rock_knapping/stone_shovel_head')
 
 	//#endregion
+	
+	event.recipes.tfc.knapping('tfc:thatch', 'tfg:straw', [
+		"XXX",
+		"XXX",
+		"XXX"
+		
+	])
+		.ingredient('tfc:straw')
+		.outsideSlotRequired(false)
+		.id('tfc:straw_knapping/thatch_block')
+		
+	event.remove({ id: 'tfcambiental:crafting/straw_hat'})
+	
+	event.recipes.tfc.knapping('tfcambiental:straw_hat', 'tfg:straw', [
+		" XXX ",
+		"XXXXX"
+	
+	])
+		.ingredient('tfc:straw')
+		.outsideSlotRequired(false)
+		.id('sns:straw_knapping/straw_hat')
 
 }

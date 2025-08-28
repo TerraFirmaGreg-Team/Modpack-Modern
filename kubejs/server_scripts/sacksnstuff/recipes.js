@@ -13,6 +13,7 @@ const registerSNSRecipes = (event) => {
 	event.remove({ id: 'sns:crafting/leather_sack'})
 	event.remove({ id: 'sns:crafting/burlap_sack'})
 	event.remove({ id: 'sns:crafting/seed_pouch'})
+	event.remove({ id: 'sns:crafting/straw_basket'})
 	
 	event.remove({ output: 'sns:pack_frame'})
 	
@@ -96,7 +97,19 @@ const registerSNSRecipes = (event) => {
 			}
 		)
 	).id('sns:crafting/ore_sack')
-		
+	
+	event.recipes.tfc.knapping('sns:straw_basket', 'tfg:straw', [
+		" XXX ",
+		"X   X",
+		"X   X",
+		"XXXXX",
+		" XXX "
+	])
+		.ingredient('tfc:straw')
+		.outsideSlotRequired(false)
+		.id('sns:straw_knapping/straw_basket')
+	
+	//#region helper items	
 		
 	event.recipes.tfc.anvil(
         'sns:buckle',
