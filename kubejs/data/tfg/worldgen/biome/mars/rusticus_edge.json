@@ -39,12 +39,15 @@
 		],
 		[
 			"tfg:mars_forest",
+			"tfg:mars/surface/small_skull_and_bones",
+			"tfg:mars/surface/large_skull_and_bones",
 			"tfg:mars/surface/rotten_flesh_patch"
 		],
 		"#tfg:mars_rusticus_vegetal_decoration",
 		"#tfg:mars_top_layer_modification"
 	],
 	"has_precipitation": false,
+	"creature_spawn_probability": 0.00003,
 	"spawn_costs": {
 		"endermanoverhaul:crimson_forest_enderman": {
 			"energy_budget": 0.05,
@@ -114,6 +117,12 @@
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 5
+			},
+			{
+				"type": "species:goober",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 30
 			}
 		],
 		"misc": [],
@@ -145,14 +154,7 @@
 		],
 		"underground_water_creature": [],
 		"water_ambient": [],
-		"water_creature": [
-			{
-				"type": "wan_ancient_beasts:surfer",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 100
-			}
-		]
+		"water_creature": []
 	},
 	"temperature": 0.8
 }

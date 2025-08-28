@@ -1,6 +1,8 @@
 {
 	"carvers": {
-		"air": []
+		"air": [
+			"tfg:mars_desert_cave"
+		]
 	},
 	"downfall": 0.0,
 	"effects": {
@@ -44,7 +46,9 @@
 		[
 
 		],
-		[]
+		[
+			"tfg:glow_lichen"
+		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

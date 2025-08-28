@@ -43,6 +43,8 @@
 		[
 			"tfg:mars_forest",
 			"tfg:mars/semiheavy_ammoniacal_water",
+			"tfg:mars/surface/small_skull_and_bones",
+			"tfg:mars/surface/large_skull_and_bones",
 			"tfg:mars/surface/rotten_flesh_patch"
 		],
 		"#tfg:mars_sangnum_vegetal_decoration",
@@ -74,7 +76,7 @@
 			{
 				"type": "tfg:sniffer",
 				"maxCount": 3,
-				"minCount": 1,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
@@ -82,6 +84,12 @@
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100
+			},
+			{
+				"type": "species:goober",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 30
 			},
 			{
 				"type": "wan_ancient_beasts:walker",
@@ -92,7 +100,7 @@
 			{
 				"type": "wan_ancient_beasts:crusher",
 				"maxCount": 5,
-				"minCount": 1,
+				"minCount": 3,
 				"weight": 100
 			},
 			{
@@ -110,14 +118,14 @@
 			{
 				"type": "tfg:glacian_ram",
 				"maxCount": 5,
-				"minCount": 1,
+				"minCount": 3,
 				"weight": 100
 			},
 			{
 				"type": "wan_ancient_beasts:eater",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 5
+				"weight": 10
 			}
 		],
 		"misc": [],
@@ -151,9 +159,15 @@
 		"water_ambient": [],
 		"water_creature": [
 			{
+				"type": "wan_ancient_beasts:toxlacanth",
+				"maxCount": 5,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
 				"type": "wan_ancient_beasts:surfer",
-				"maxCount": 2,
-				"minCount": 1,
+				"maxCount": 3,
+				"minCount": 2,
 				"weight": 100
 			}
 		]

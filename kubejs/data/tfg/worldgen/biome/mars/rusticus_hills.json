@@ -48,6 +48,8 @@
 			"tfc:cobble_boulder",
 			"tfc:raw_boulder_small_patch",
 			"tfc:cobble_boulder_small_patch",
+			"tfg:mars/surface/small_skull_and_bones",
+			"tfg:mars/surface/large_skull_and_bones",
 			"tfg:mars/surface/rotten_flesh_patch"
 		],
 		"#tfg:mars_rusticus_vegetal_decoration",
@@ -79,24 +81,24 @@
 			{
 				"type": "tfg:sniffer",
 				"maxCount": 3,
-				"minCount": 1,
+				"minCount": 2,
 				"weight": 10
 			},
 			{
 				"type": "tfg:wraptor",
-				"maxCount": 4,
+				"maxCount": 3,
 				"minCount": 2,
 				"weight": 100
 			},
 			{
 				"type": "wan_ancient_beasts:crusher",
-				"maxCount": 5,
-				"minCount": 1,
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
 				"type": "wan_ancient_beasts:glider",
-				"maxCount": 4,
+				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100
 			},
@@ -110,7 +112,7 @@
 				"type": "wan_ancient_beasts:eater",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 20
 			},
 			{
 				"type": "species:springling",
@@ -154,7 +156,20 @@
 		],
 		"underground_water_creature": [],
 		"water_ambient": [],
-		"water_creature": []
+		"water_creature": [
+			{
+				"type": "wan_ancient_beasts:toxlacanth",
+				"maxCount": 5,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "wan_ancient_beasts:surfer",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			}
+		]
 	},
 	"temperature": 0.8
 }

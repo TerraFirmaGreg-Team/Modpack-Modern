@@ -33,19 +33,25 @@
 			"tfg:earth/geode/quartzite"
 		],
 		[
-
+			"tfc:random_empty_hot_spring",
+			"tfg:mars/terrain/empty_rivulet",
+			"tfg:mars/terrain/water_fissure",
+			"tfg:mars/terrain/empty_fissure"
 		],
 		[],
 		[],
 		"#tfg:mars_veins",
 		[],
 		[
+			"tfc:raw_boulder",
 			"tfc:raw_boulder_small_patch",
 			"tfc:cobble_boulder_small_patch",
-			"tfg:mars/surface/rotten_flesh_patch"
+			"tfg:mars/surface/small_skull_and_bones",
+			"tfg:mars/surface/large_skull_and_bones",
+			"tfg:mars/surface/rotten_flesh_patch",
+			"tfg:mars/surface/feather_patch"
 		],
 		[
-
 		],
 		"#tfg:mars_top_layer_modification"
 	],
@@ -76,7 +82,7 @@
 				"type": "tfg:wraptor",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "species:springling",
@@ -88,19 +94,19 @@
 				"type": "wan_ancient_beasts:crusher",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 80
+				"weight": 30
 			},
 			{
 				"type": "wan_ancient_beasts:glider",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 50
+				"weight": 100
 			},
 			{
 				"type": "wan_ancient_beasts:soarer",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 50
+				"weight": 100
 			}
 		],
 		"misc": [],
