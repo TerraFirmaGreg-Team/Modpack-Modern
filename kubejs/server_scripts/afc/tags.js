@@ -22,6 +22,7 @@ const registerAFCItemTags = (event) => {
         event.add('firmalife:wine_shelves', `afc:wood/wine_shelf/${woodType}`)
         event.add('firmalife:stomping_barrels', `afc:wood/stomping_barrel/${woodType}`)
         event.add('firmalife:barrel_presses', `afc:wood/barrel_press/${woodType}`)
+		event.add('tfc:sewing_tables', `afc:wood/sewing_table/${woodType}`)
     })
 
 	//Hardwood Tags

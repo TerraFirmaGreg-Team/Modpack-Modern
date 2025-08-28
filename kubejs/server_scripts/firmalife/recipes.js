@@ -540,18 +540,18 @@ const registerFirmaLifeRecipes = (event) => {
 		.duration(200)
 
 	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['#tfg:wood_dusts', 'tfc:glue'])
-		.outputItem('tfg:chipboard_composite')
+		.itemIngredients(['#tfg:wood_dusts', '#tfg:wood_dusts', 'tfc:glue'])
+		.outputItem('2x tfg:chipboard_composite')
 		.id('tfg:mixing_bowl/chipboard_composite_glue')
 
 	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['#tfg:wood_dusts', 'gtceu:sticky_resin'])
-		.outputItem('tfg:chipboard_composite')
+		.itemIngredients(['#tfg:wood_dusts', '#tfg:wood_dusts', '#tfg:wood_dusts', '#tfg:wood_dusts', 'gtceu:sticky_resin'])
+		.outputItem('4x tfg:chipboard_composite')
 		.id('tfg:mixing_bowl/chipboard_composite_resin')
 
 	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['#tfg:wood_dusts', '#forge:wax'])
-		.outputItem('tfg:chipboard_composite')
+		.itemIngredients(['#tfg:wood_dusts', '#tfg:wood_dusts', '#forge:wax'])
+		.outputItem('2x tfg:chipboard_composite')
 		.id('tfg:mixing_bowl/chipboard_composite_wax')
 
 	// Dough

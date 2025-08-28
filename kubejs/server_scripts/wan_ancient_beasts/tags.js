@@ -26,3 +26,12 @@ const registerWABItemTags = (event) => {
 	event.add('firmalife:foods/cooked_fish', 'wan_ancient_beasts:cooked_toxlacanth')
 	event.add('tfc:food/meats', 'wan_ancient_beasts:cooked_toxlacanth')
 }
+
+const registerWABEntityTypeTags = (event) => {
+	
+	event.add('wan_ancient_beasts:eater_ignore', '#wan_ancient_beasts:ancient_mobs')
+	event.add('wan_ancient_beasts:eater_ignore', 'tfg:sniffer')
+	event.add('wan_ancient_beasts:eater_ignore', 'tfg:wraptor')
+	event.add('wan_ancient_beasts:eater_ignore', 'species:springling')
+
+}

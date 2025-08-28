@@ -161,7 +161,6 @@ function registerGTCEUBedrockFluidVeins(event) {
 
 	const Registries = Java.loadClass("net.minecraft.core.registries.Registries")
 	const ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey")
-	const martianOasisResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/martian_oasis")
 	const martianAmberHillsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/amber_hills")
 	const martianAmberPlainsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/amber_plains")
 	const martianMountainsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/martian_mountains")
@@ -193,18 +192,6 @@ function registerGTCEUBedrockFluidVeins(event) {
 	})
 
 	// Heavy Ammonical Water in Specific Biome Credit to Monifactory from https://github.com/ThePansmith/Monifactory/blob/main/kubejs/server_scripts/worldgen/fluidVeins.js
-
-	event.add('tfg:heavy_ammoniacal_water_oasis', vein => {
-		vein.dimensions('ad_astra:mars')
-		vein.fluid(() => Fluid.of('tfg:heavy_ammoniacal_water').fluid)
-		vein.biomes(350, martianOasisResourceKey)
-		vein.weight(0)
-		vein.minimumYield(300)
-		vein.maximumYield(650)
-		vein.depletionAmount(1)
-		vein.depletionChance(20)
-		vein.depletedYield(20)
-	})
 
 	event.add('tfg:heavy_ammoniacal_water_amber_hills', vein => {
 		vein.dimensions('ad_astra:mars')
@@ -289,19 +276,4 @@ function registerGTCEUBedrockFluidVeins(event) {
 		vein.depletionChance(20)
 		vein.depletedYield(5)
 	})
-
-	// Ammonia
-
-	event.add('tfg:ammonia_mars_oasis', vein => {
-		vein.dimensions('ad_astra:mars')
-		vein.fluid(() => Fluid.of('gtceu:ammonia').fluid)
-		vein.biomes(400, martianOasisResourceKey)
-		vein.weight(0)
-		vein.minimumYield(300)
-		vein.maximumYield(650)
-		vein.depletionAmount(1)
-		vein.depletionChance(20)
-		vein.depletedYield(20)
-	})
-
 }

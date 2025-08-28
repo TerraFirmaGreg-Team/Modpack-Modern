@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+        "up": "tfg:block/grass/rusticus_top_1",
+        "down": "tfg:block/grass/mars_clay_dirt",
+        "north": "tfg:block/grass/rusticus_clay_side",
+        "south": "tfg:block/grass/rusticus_clay_side",
+        "east": "tfg:block/grass/rusticus_clay_side",
+        "west": "tfg:block/grass/rusticus_clay_side",
+        "particle": "tfg:block/grass/rusticus_clay_side"
+    }
+}

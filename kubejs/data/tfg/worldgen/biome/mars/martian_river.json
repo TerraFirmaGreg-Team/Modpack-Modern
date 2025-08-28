@@ -14,12 +14,6 @@
 			"sound": "minecraft:ambient.cave",
 			"tick_delay": 6000
 		},
-		"particle": {
-			"options": {
-				"type": "minecraft:crimson_spore"
-			},
-			"probability": 0.014
-		},
 		"sky_color": 15117444,
 		"water_color": 4159204,
 		"water_fog_color": 1069623
@@ -38,9 +32,7 @@
 			"tfg:earth/geode/pyrite",
 			"tfg:earth/geode/quartzite"
 		],
-		[
-
-		],
+		[],
 		[],
 		[],
 		"#tfg:mars_veins",
@@ -78,7 +70,7 @@
 		"axolotls": [],
 		"creature": [
 			{
-				"type": "species:wraptor",
+				"type": "tfg:wraptor",
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 50

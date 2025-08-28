@@ -122,6 +122,30 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['species:petrified_egg'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.petrified_egg'))
 	})
+	
+	event.addAdvanced(['tfg:sniffer_egg'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.attribution.sniffer')),
+		text.add(2, Text.translate('tfg.tooltip.large_egg'))
+
+	})
+	
+	event.addAdvanced(['tfg:wraptor_egg'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.attribution.wraptor')),
+		text.add(2, Text.translate('tfg.tooltip.large_egg'))
+	})
+	
+	event.addAdvanced(['tfg:sniffer_wool'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.sniffer_wool'))
+	})
+	
+	event.addAdvanced(['tfg:wraptor_wool'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.wraptor_wool'))
+	})
+	
+	event.addAdvanced(['tfg:wraptor_sugar'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.wraptor_sugar'))
+	})
+	
 
 	//#region Deprecated Items
 	event.addAdvanced(['#megacells:mega_interface'], (item, advanced, text) => {

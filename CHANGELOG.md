@@ -1,6 +1,19 @@
 # Changelog
 
 ## [Unreleased]
+### Mods
+- Reverted the change from Embeddium to Xenon, because it was causing more issues than it solved
+- Added Sacks 'n' Such which has several new early game bags -- such as one that automatically picks up ore and can hold 512 per slot -- as well as some other things such as hiking boots and horseshoes
+### Changes
+- Fuelling blaze burners with liquids is now done directly instead of through straws (break and replace your blaze burners to update) @Ghoulcel
+- Blaze burner liquid fuelling has been fully made consistent with GregTech power values (#1694) @Ghoulcel
+- Sewing Tables now use a knife instead of shears @BlueBoat29
+- Create Logistics Jars now hold 8000 mB each instead of just 1000 mB (#1707) @Ghoulcel
+- Added a way to keep your space suit with you on death, so you can more safely set your spawn on other planets (#1710) @BlueBoat29
+### Bug fixes
+- Fixed tongs getting stuck in ovens, and now you can use them the same way you'd previously use a Peel @Pyritie
+
+## [0.10.10] - 23-08-2025
 ### Major changes
 - Complete rework of prospector's picks. (#1594) @Redeix
 - Removed the mod that was causing placed entities to sometimes not spawn

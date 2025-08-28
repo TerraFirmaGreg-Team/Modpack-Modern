@@ -1,0 +1,24 @@
+{
+	"variants": {
+		"snowy=false": [
+			{
+				"model": "tfg:block/grass/amber_clay"
+			},
+			{
+				"model": "tfg:block/grass/amber_clay",
+				"y": 90
+			},
+			{
+				"model": "tfg:block/grass/amber_clay",
+				"y": 180
+			},
+			{
+				"model": "tfg:block/grass/amber_clay",
+				"y": 270
+			}
+		],
+		"snowy=true": {
+			"model": "tfg:block/grass/mars_snowy_clay"
+		}
+	}
+}

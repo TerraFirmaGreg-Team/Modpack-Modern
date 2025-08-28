@@ -183,6 +183,9 @@ const registerTFCRecipes = (event) => {
 	event.recipes.tfc.heating('tfc:plant/winged_kelp', 200)
 		.resultItem('tfc:food/dried_kelp')
 
+	// Burning Bread
+	event.recipes.tfc.heating('#tfc:foods/breads', 850)
+
 	// Soda Ash
 	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_seaweed').id('tfg:smelting/dried_seaweed_to_soda')
 	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_kelp').id('tfg:smelting/dried_kelp_to_soda')

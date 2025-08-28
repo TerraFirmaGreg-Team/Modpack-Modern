@@ -122,11 +122,6 @@
                             {
                                 "derivative": 0.0,
                                 "location": -1.1,
-                                "value": -0.4
-                            },
-                            {
-                                "derivative": 0.0,
-                                "location": -1.02,
                                 "value": 0.4
                             },
                             {
@@ -155,11 +150,6 @@
                             "points": [
                                 {
                                     "derivative": 0.0,
-                                    "location": -1.1,
-                                    "value": 0.2222
-                                },
-                                {
-                                    "derivative": 0.0,
                                     "location": -1.02,
                                     "value": 0.02
                                 },
@@ -172,450 +162,6 @@
                                     "derivative": 0.0,
                                     "location": -0.18,
                                     "value": 0.015
-                                },
-                                {
-                                    "derivative": 0.0,
-                                    "location": -0.16,
-                                    "value": {
-                                        "coordinate": "tfg:mars/erosion",
-                                        "points": [
-                                            {
-                                                "derivative": 0.0,
-                                                "location": -0.85,
-                                                "value": {
-                                                    "coordinate": "tfg:mars/ridges_folded",
-                                                    "points": [
-                                                        {
-                                                            "derivative": 0.38940096,
-                                                            "location": -1.0,
-                                                            "value": -0.08880186
-                                                        },
-                                                        {
-                                                            "derivative": 0.38940096,
-                                                            "location": 1.0,
-                                                            "value": 0.69000006
-                                                        }
-                                                    ]
-                                                }
-                                            },
-                                            {
-                                                "derivative": 0.0,
-                                                "location": -0.7,
-                                                "value": {
-                                                    "coordinate": "tfg:mars/ridges_folded",
-                                                    "points": [
-                                                        {
-                                                            "derivative": 0.37788022,
-                                                            "location": -1.0,
-                                                            "value": -0.115760356
-                                                        },
-                                                        {
-                                                            "derivative": 0.37788022,
-                                                            "location": 1.0,
-                                                            "value": 0.6400001
-                                                        }
-                                                    ]
-                                                }
-                                            },
-                                            {
-                                                "derivative": 0.0,
-                                                "location": -0.4,
-                                                "value": {
-                                                    "coordinate": "tfg:mars/ridges_folded",
-                                                    "points": [
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": -1.0,
-                                                            "value": -0.2222
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": -0.75,
-                                                            "value": -0.2222
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": -0.65,
-                                                            "value": 0.0
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 0.5954547,
-                                                            "value": 2.9802322E-8
-                                                        },
-                                                        {
-                                                            "derivative": 0.2534563,
-                                                            "location": 0.6054547,
-                                                            "value": 2.9802322E-8
-                                                        },
-                                                        {
-                                                            "derivative": 0.2534563,
-                                                            "location": 1.0,
-                                                            "value": 0.100000024
-                                                        }
-                                                    ]
-                                                }
-                                            },
-                                            {
-                                                "derivative": 0.0,
-                                                "location": -0.35,
-                                                "value": {
-                                                    "coordinate": "tfg:mars/ridges_folded",
-                                                    "points": [
-                                                        {
-                                                            "derivative": 0.5,
-                                                            "location": -1.0,
-                                                            "value": -0.3
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": -0.4,
-                                                            "value": 0.05
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 0.0,
-                                                            "value": 0.05
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 0.4,
-                                                            "value": 0.05
-                                                        },
-                                                        {
-                                                            "derivative": 0.007000001,
-                                                            "location": 1.0,
-                                                            "value": 0.060000002
-                                                        }
-                                                    ]
-                                                }
-                                            },
-                                            {
-                                                "derivative": 0.0,
-                                                "location": -0.1,
-                                                "value": {
-                                                    "coordinate": "tfg:mars/ridges_folded",
-                                                    "points": [
-                                                        {
-                                                            "derivative": 0.5,
-                                                            "location": -1.0,
-                                                            "value": -0.15
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": -0.4,
-                                                            "value": 0.0
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 0.0,
-                                                            "value": 0.0
-                                                        },
-                                                        {
-                                                            "derivative": 0.1,
-                                                            "location": 0.4,
-                                                            "value": 0.05
-                                                        },
-                                                        {
-                                                            "derivative": 0.007000001,
-                                                            "location": 1.0,
-                                                            "value": 0.060000002
-                                                        }
-                                                    ]
-                                                }
-                                            },
-                                            {
-                                                "derivative": 0.0,
-                                                "location": 0.2,
-                                                "value": {
-                                                    "coordinate": "tfg:mars/ridges_folded",
-                                                    "points": [
-                                                        {
-                                                            "derivative": 0.5,
-                                                            "location": -1.0,
-                                                            "value": -0.15
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": -0.4,
-                                                            "value": 0.0
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 0.0,
-                                                            "value": 0.0
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 0.4,
-                                                            "value": 0.0
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 1.0,
-                                                            "value": 0.0
-                                                        }
-                                                    ]
-                                                }
-                                            },
-                                            {
-                                                "derivative": 0.0,
-                                                "location": 0.7,
-                                                "value": {
-                                                    "coordinate": "tfg:mars/ridges_folded",
-                                                    "points": [
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": -1.0,
-                                                            "value": -0.02
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": -0.4,
-                                                            "value": -0.03
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 0.0,
-                                                            "value": -0.03
-                                                        },
-                                                        {
-                                                            "derivative": 0.06,
-                                                            "location": 0.4,
-                                                            "value": 0.0
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 1.0,
-                                                            "value": 0.0
-                                                        }
-                                                    ]
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
-                                {
-                                    "derivative": 0.0,
-                                    "location": -0.15,
-                                    "value": {
-                                        "coordinate": "tfg:mars/erosion",
-                                        "points": [
-                                            {
-                                                "derivative": 0.0,
-                                                "location": -0.85,
-                                                "value": {
-                                                    "coordinate": "tfg:mars/ridges_folded",
-                                                    "points": [
-                                                        {
-                                                            "derivative": 0.38940096,
-                                                            "location": -1.0,
-                                                            "value": -0.08880186
-                                                        },
-                                                        {
-                                                            "derivative": 0.38940096,
-                                                            "location": 1.0,
-                                                            "value": 0.69000006
-                                                        }
-                                                    ]
-                                                }
-                                            },
-                                            {
-                                                "derivative": 0.0,
-                                                "location": -0.7,
-                                                "value": {
-                                                    "coordinate": "tfg:mars/ridges_folded",
-                                                    "points": [
-                                                        {
-                                                            "derivative": 0.37788022,
-                                                            "location": -1.0,
-                                                            "value": -0.115760356
-                                                        },
-                                                        {
-                                                            "derivative": 0.37788022,
-                                                            "location": 1.0,
-                                                            "value": 0.6400001
-                                                        }
-                                                    ]
-                                                }
-                                            },
-                                            {
-                                                "derivative": 0.0,
-                                                "location": -0.4,
-                                                "value": {
-                                                    "coordinate": "tfg:mars/ridges_folded",
-                                                    "points": [
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": -1.0,
-                                                            "value": -0.2222
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": -0.75,
-                                                            "value": -0.2222
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": -0.65,
-                                                            "value": 0.0
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 0.5954547,
-                                                            "value": 2.9802322E-8
-                                                        },
-                                                        {
-                                                            "derivative": 0.2534563,
-                                                            "location": 0.6054547,
-                                                            "value": 2.9802322E-8
-                                                        },
-                                                        {
-                                                            "derivative": 0.2534563,
-                                                            "location": 1.0,
-                                                            "value": 0.100000024
-                                                        }
-                                                    ]
-                                                }
-                                            },
-                                            {
-                                                "derivative": 0.0,
-                                                "location": -0.35,
-                                                "value": {
-                                                    "coordinate": "tfg:mars/ridges_folded",
-                                                    "points": [
-                                                        {
-                                                            "derivative": 0.5,
-                                                            "location": -1.0,
-                                                            "value": -0.3
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": -0.4,
-                                                            "value": 0.05
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 0.0,
-                                                            "value": 0.05
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 0.4,
-                                                            "value": 0.05
-                                                        },
-                                                        {
-                                                            "derivative": 0.007000001,
-                                                            "location": 1.0,
-                                                            "value": 0.060000002
-                                                        }
-                                                    ]
-                                                }
-                                            },
-                                            {
-                                                "derivative": 0.0,
-                                                "location": -0.1,
-                                                "value": {
-                                                    "coordinate": "tfg:mars/ridges_folded",
-                                                    "points": [
-                                                        {
-                                                            "derivative": 0.5,
-                                                            "location": -1.0,
-                                                            "value": -0.15
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": -0.4,
-                                                            "value": 0.0
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 0.0,
-                                                            "value": 0.0
-                                                        },
-                                                        {
-                                                            "derivative": 0.1,
-                                                            "location": 0.4,
-                                                            "value": 0.05
-                                                        },
-                                                        {
-                                                            "derivative": 0.007000001,
-                                                            "location": 1.0,
-                                                            "value": 0.060000002
-                                                        }
-                                                    ]
-                                                }
-                                            },
-                                            {
-                                                "derivative": 0.0,
-                                                "location": 0.2,
-                                                "value": {
-                                                    "coordinate": "tfg:mars/ridges_folded",
-                                                    "points": [
-                                                        {
-                                                            "derivative": 0.5,
-                                                            "location": -1.0,
-                                                            "value": -0.15
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": -0.4,
-                                                            "value": 0.0
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 0.0,
-                                                            "value": 0.0
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 0.4,
-                                                            "value": 0.0
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 1.0,
-                                                            "value": 0.0
-                                                        }
-                                                    ]
-                                                }
-                                            },
-                                            {
-                                                "derivative": 0.0,
-                                                "location": 0.7,
-                                                "value": {
-                                                    "coordinate": "tfg:mars/ridges_folded",
-                                                    "points": [
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": -1.0,
-                                                            "value": -0.02
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": -0.4,
-                                                            "value": -0.03
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 0.0,
-                                                            "value": -0.03
-                                                        },
-                                                        {
-                                                            "derivative": 0.06,
-                                                            "location": 0.4,
-                                                            "value": 0.0
-                                                        },
-                                                        {
-                                                            "derivative": 0.0,
-                                                            "location": 1.0,
-                                                            "value": 0.0
-                                                        }
-                                                    ]
-                                                }
-                                            }
-                                        ]
-                                    }
                                 },
                                 {
                                     "derivative": 0.0,
@@ -1004,7 +550,7 @@
                                                         {
                                                             "derivative": 0.0,
                                                             "location": 0.0,
-                                                            "value": 0.01
+                                                            "value": -0.1
                                                         },
                                                         {
                                                             "derivative": 0.04,
@@ -1038,7 +584,7 @@
                                                         {
                                                             "derivative": 0.0,
                                                             "location": 0.0,
-                                                            "value": 0.01
+                                                            "value": -0.1
                                                         },
                                                         {
                                                             "derivative": 0.04,
@@ -1492,7 +1038,7 @@
                                                         {
                                                             "derivative": 0.0,
                                                             "location": 0.0,
-                                                            "value": 0.17
+                                                            "value": -0.17
                                                         }
                                                     ]
                                                 }
@@ -1545,7 +1091,7 @@
                                                         {
                                                             "derivative": 0.0,
                                                             "location": 0.0,
-                                                            "value": 0.17
+                                                            "value": -0.17
                                                         }
                                                     ]
                                                 }
@@ -1569,7 +1115,7 @@
                                                         {
                                                             "derivative": 0.0,
                                                             "location": 0.0,
-                                                            "value": 0.05
+                                                            "value": -0.05
                                                         },
                                                         {
                                                             "derivative": 0.04,
@@ -1603,7 +1149,7 @@
                                                         {
                                                             "derivative": 0.0,
                                                             "location": 0.0,
-                                                            "value": 0.1
+                                                            "value": -0.1
                                                         },
                                                         {
                                                             "derivative": 0.04,

@@ -686,8 +686,7 @@ function registerTFGFoodRecipes(event) {
 	processorRecipe("banana_split", 500, 16, {
 		itemInputs: ['firmalife:food/vanilla_ice_cream', 'firmalife:food/strawberry_ice_cream', 'firmalife:food/chocolate_ice_cream', 'firmalife:food/pineapple', 'tfc:food/cherry', '2x tfc:food/banana'],
 		itemOutputs: ['2x firmalife:food/banana_split'],
-		itemOutputProvider: TFC.isp.of('2x firmalife:food/banana_split').resetFood(),
-		circuit: 4
+		itemOutputProvider: TFC.isp.of('2x firmalife:food/banana_split').resetFood()
 	})
 
 	processorRecipe("butter", 300, 16, {

@@ -1,0 +1,26 @@
+{
+	"type": "tfc:soil_disc",
+	"config": {
+		"min_radius": 5,
+		"max_radius": 9,
+		"height": 7,
+		"states": [
+			{
+				"replace": "tfg:grass/mars_dirt",
+				"with": "tfc:peat"
+			},
+			{
+				"replace": "tfg:grass/amber_mycelium",
+				"with": "tfc:peat"
+			},
+			{
+				"replace": "tfg:grass/rusticus_mycelium",
+				"with": "tfc:peat"
+			},
+			{
+				"replace": "tfg:grass/sangnum_mycelium",
+				"with": "tfc:peat"
+			}
+		]
+	}
+}

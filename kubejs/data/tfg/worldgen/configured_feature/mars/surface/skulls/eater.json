@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:simple_block",
+	"config": {
+		"to_place": {
+			"type": "minecraft:randomized_int_state_provider",
+			"property": "rotation",
+			"values": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": 0,
+					"max_inclusive": 15
+				}
+			},
+			"source": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "wan_ancient_beasts:eater_skull"
+				}
+			}
+		}
+	}
+}

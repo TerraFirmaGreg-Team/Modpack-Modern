@@ -1,6 +1,8 @@
 {
 	"carvers": {
-		"air": []
+		"air": [
+			"tfg:mars_desert_cave"
+		]
 	},
 	"downfall": 0.0,
 	"effects": {
@@ -10,12 +12,6 @@
 			"offset": 2.0,
 			"sound": "minecraft:ambient.cave",
 			"tick_delay": 6000
-		},
-		"particle": {
-			"options": {
-				"type": "minecraft:crimson_spore"
-			},
-			"probability": 0.014
 		},
 		"sky_color": 15117444,
 		"water_color": 4159204,
@@ -39,10 +35,14 @@
 		[],
 		[],
 		"#tfg:mars_veins",
-		[],
+		[
+			"tfg:mars/terrain/red_quicksand"
+		],
 		[
 			"tfc:raw_boulder_small_patch",
-			"tfc:cobble_boulder_small_patch"
+			"tfc:cobble_boulder_small_patch",
+			"tfg:mars/surface/small_skull_and_bones",
+			"tfg:mars/surface/large_skull_and_bones"
 		],
 		[
 

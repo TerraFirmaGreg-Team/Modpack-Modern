@@ -1,0 +1,19 @@
+{
+	"feature": "tfg:mars/terrain/empty_fissure",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 3
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE_WG"
+		}
+	]
+}

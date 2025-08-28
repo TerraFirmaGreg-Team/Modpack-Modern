@@ -1005,6 +1005,14 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(80)
 		.blastFurnaceTemp(3400)
 		.EUt(GTValues.VA[GTValues.EV])
+	event.recipes.gtceu.electric_blast_furnace('smelt_wraptor_wool')
+		.itemInputs('tfg:wraptor_wool')
+		.chancedOutput('gtceu:ash_dust', 5000, 0)
+		.outputFluids(Fluid.of('tfg:molten_aes', 100))
+		.circuit(8)
+		.duration(60)
+		.blastFurnaceTemp(3400)
+		.EUt(GTValues.VA[GTValues.EV])
 
 
 	//endregion
@@ -1337,7 +1345,6 @@ function registerTFGMiscellaneousRecipes(event) {
 	]));
 
 	event.replaceInput({ id: "minecraft:jukebox"}, 'minecraft:diamond', 'tfg:etching_diamond_tip');
-	
 	
 	//Large Nest
 	event.shaped('tfg:large_nest_box',
