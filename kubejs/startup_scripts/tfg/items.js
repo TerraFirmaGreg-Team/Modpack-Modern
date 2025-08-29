@@ -396,4 +396,11 @@ const registerTFGItems = (event) => {
 		.tag('tfc:sweetener')
 	//#endregion
 	
+	//#region Flax Stuff
+	event.create('tfg:flax_waste')
+	event.create('tfg:flax_tow')	
+	event.create('tfg:flax_line')
+	event.create('tfg:linen_thread')
+	event.create('tfg:linen_cloth')
+	
 }

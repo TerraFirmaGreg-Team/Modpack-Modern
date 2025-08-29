@@ -59,6 +59,42 @@ const registerTFGCrops = (event) => {
         .tagBoth('tfc:wild_crops')
         .tagBlock('minecraft:mineable/hoe')
         .tagItem('c:hidden_from_recipe_viewers')
+		
+	event.create('tfg:flax', 'tfc:double_crop')
+        .translationKey('block.tfg.flax')
+        .soundType('crop')
+        .nutrient('nitrogen')
+        .stages(5)
+        .doubleStages(3)
+        .hardness(0.4)
+        .growthModifier(1.2)
+		.expiryModifier(1.2)
+        .tagBlock('minecraft:mineable/hoe')
+        .productItem(product => {
+            product.texture('tfg:item/flax_product')
+        })
+        .seedItem(seed => {
+            seed.texture('tfg:item/flax_seed')
+			seed.food(food => {
+	            food.hunger(1)
+	            food.saturation(2)
+            })
+        })
+        .deadBlock(dead => {
+            dead.hardness(0.2)
+            dead.soundType('crop')
+            dead.tagBlock('minecraft:mineable/hoe')
+        })
+
+    event.create('tfg:flax_wild', 'tfc:wild_crop')
+        .type('double')
+        .soundType('crop')
+        .seeds('tfg:flax_seeds')
+        .food('tfg:flax_product')
+        .hardness(0.2)
+        .tagBoth('tfc:wild_crops')
+        .tagBlock('minecraft:mineable/hoe')
+        .tagItem('c:hidden_from_recipe_viewers')
 
     // Mars Crops
 

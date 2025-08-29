@@ -257,6 +257,8 @@ const registerTFGFoodData = (event) => {
 		food.decayModifier(1.5)
 	})
 	
+
+	
 	
 	
 	// high-tech food
@@ -428,6 +430,15 @@ const registerTFGCropRanges = (event) => {
 		climate.hydrationWiggle(7.5)
 		climate.temperatureWiggle(1.5)
 	}, 'tfg:rapeseed')
+	
+	event.climateRange(climate => {
+		climate.minHydration(15)
+		climate.maxHydration(65)
+		climate.minTemperature(-8)
+		climate.maxTemperature(25)
+		climate.hydrationWiggle(6.5)
+		climate.temperatureWiggle(3)
+	}, 'tfg:flax')
 
 	// Mars
 	event.climateRange(climate => {
