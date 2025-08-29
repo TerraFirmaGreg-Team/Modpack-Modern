@@ -72,6 +72,7 @@ const registerTFGCrops = (event) => {
         .tagBlock('minecraft:mineable/hoe')
         .productItem(product => {
             product.texture('tfg:item/flax_product')
+			product.tag('tfc:scrapable')
         })
         .seedItem(seed => {
             seed.texture('tfg:item/flax_seed')

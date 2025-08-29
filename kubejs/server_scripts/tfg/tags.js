@@ -101,6 +101,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:sewing_dark_cloth', 'tfg:polycaprolactam_fabric')
 	event.add('forge:string', 'tfg:phantom_thread')
 	event.add('forge:string', 'tfg:polycaprolactam_string')
+	event.add('forge:string', 'firmalife:pineapple_yarn')
 	//#endregion
 
 	// #region Medicines
