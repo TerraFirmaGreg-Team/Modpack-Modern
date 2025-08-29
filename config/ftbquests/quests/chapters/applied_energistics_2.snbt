@@ -248,7 +248,8 @@
 		}
 		{
 			dependencies: ["3C3C21482E31267B"]
-			description: ["To get started, you’ll need to power your &bME Network&r. These are the two &bAE2&r blocks that can directly accept &bEU&r energy.\\n\\nWe strongly recommend crafting a &bME Controller&r, as &bchannels&r are enabled in TerraFirmaGreg, and the &bME Controller&r is the best way to manage multiple channels efficiently.\\n\\nThis is also a great time to use the in-game guide (press &aU&r on a &bME Controller&r) or watch some videos about &bAE2&r on version 1.20.1 to learn more!"]
+			description: ["{quests.ae2.ae_controller.desc}"]
+			subtitle: "{quests.ae2.ae_controller.subtitle}"
 			icon: "ae2:controller"
 			id: "1AAD526450E5A732"
 			tasks: [
@@ -313,7 +314,8 @@
 		}
 		{
 			dependencies: ["3C3C21482E31267B"]
-			description: ["You will need to store your disks, and thanks to the &bMEGA&r addon, you now have an extra option.\\n\\nYou should start with a &bME Drive&r. It can store up to &e10&r disks and consumes &e4 EU/t&r. This will be your main storage solution.\\n\\nThe other option is the &bME Cell Dock&r. It only stores &e1&r disk but consumes just &e1 EU/t&r, and it can be placed directly on a cable like a cover. This makes it quite useful for &aSubnets&r."]
+			description: ["{quests.ae2.drive.desc}"]
+			subtitle: "{quests.ae2.drive.subtitle}"
 			id: "6E4E5753CCEB3F95"
 			tasks: [
 				{
@@ -337,7 +339,8 @@
 				"1AAD526450E5A732"
 				"4F719A457E0C0AFB"
 			]
-			description: ["Your basic cables to connect your &bAE2&r infrastructure.\\n\\nRemember that regular cables carry only &e8 Channels&r, while &6Dense Cables&r can carry up to &a32 Channels&r.\\n\\nGood news: in &2TFG&r, you can directly craft the &9Smart Cables&r! They are very helpful as they show a &evisual indicator&r for the number of used channels."]
+			description: ["{quests.ae2.cables.desc}"]
+			subtitle: "{quests.ae2.cables.subtitle}"
 			icon: "ae2:fluix_smart_cable"
 			id: "0DDA9B67B59A9481"
 			tasks: [
@@ -364,7 +367,8 @@
 		}
 		{
 			dependencies: ["0DDA9B67B59A9481"]
-			description: ["These terminals are mandatory to access your ME Network and to set up your auto-crafting system."]
+			description: ["{quests.ae2.terminals.desc}"]
+			subtitle: "{quests.ae2.terminals.subtitle}"
 			id: "4B6466FD94886C55"
 			tasks: [
 				{
@@ -388,7 +392,8 @@
 		}
 		{
 			dependencies: ["0DDA9B67B59A9481"]
-			description: ["The &dCrafting Unit&r works the same way as your &bME Cell Housing&r.\\n\\nUse a &6Packer&r to make it functional — by itself, it serves no purpose, though you can use it to complete multi-blocks.\\n\\nIt’s your mandatory structure to run your &bAE2&r auto-crafting.\\n\\nAs usual, use the in-game guide from &bAE2&r to learn more about the &dCrafting CPU&r."]
+			description: ["{quests.ae2.crafting_unit.desc}"]
+			subtitle: "{quests.ae2.crafting_unit.subtitle}"
 			id: "56B39375B0C67781"
 			tasks: [{
 				id: "194AB0197D7500B9"
@@ -400,7 +405,7 @@
 		}
 		{
 			dependencies: ["56B39375B0C67781"]
-			description: ["Simply use the in-game guide — it will explain everything far better than we ever could in a quest.\\n\\nTake your time to read it, it’s a great resource!"]
+			description: ["{quests.ae2.crafting_accelerator.desc}"]
 			id: "24C621C3BC62B4E8"
 			tasks: [{
 				id: "51DDE6A3596F60DB"
@@ -412,7 +417,7 @@
 		}
 		{
 			dependencies: ["56B39375B0C67781"]
-			description: ["Simply use the in-game guide — it will explain everything far better than we ever could in a quest.\\n\\nTake your time to read it, it’s a great resource!"]
+			description: ["{quests.ae2.crafting_storage.desc}"]
 			id: "4BFB7D164BC9D15B"
 			tasks: [{
 				id: "2E6E7DA7B95CF411"
@@ -430,7 +435,8 @@
 		}
 		{
 			dependencies: ["4B6466FD94886C55"]
-			description: ["The &9Pattern Provider&r is a modern &bAE2&r block.\\n\\nIt can both push items from patterns and also receive items back into the network.\\n\\nAs always, check the in-game guide using &eG&r to learn more about it."]
+			description: ["{quests.ae2.pattern_provider.desc}"]
+			subtitle: "{quests.ae2.pattern_provider.subtitle}"
 			icon: "ae2:pattern_provider"
 			id: "378E2294EFD85C65"
 			tasks: [{
@@ -449,7 +455,8 @@
 		}
 		{
 			dependencies: ["4B6466FD94886C55"]
-			description: ["Simply use the in-game guide — it will explain everything far better than we ever could in a quest.\\n\\nTake your time to read it, it’s a great resource!"]
+			description: ["{quests.ae2.pattern.desc}"]
+			subtitle: "{quests.ae2.pattern.subtitle}"
 			id: "386C54268DA9F2BF"
 			tasks: [{
 				id: "7E43EFA5DBA2F0D2"
@@ -490,7 +497,8 @@
 		}
 		{
 			dependencies: ["0DDA9B67B59A9481"]
-			description: ["The &dME Interface&r is one of your bread and butter tools to get items or fluids out of, or inside, your network.\\n\\nAs always, check the in-game guide using &eG&r to learn more about it."]
+			description: ["{quests.ae2.interface.desc}"]
+			subtitle: "{quests.ae2.interface.subtitle}"
 			id: "25007C5E43D28DB2"
 			tasks: [{
 				id: "0DEB4627504A8944"
@@ -502,10 +510,7 @@
 		}
 		{
 			dependencies: ["25007C5E43D28DB2"]
-			description: [
-				"The &dME Export Bus&r is a strong tool to get items or fluids out of your &dME Network&r.\\n"
-				"You should especially look at the &eExtendedAE&r ones, as they can be of great help for some automation.\\n\\n&cImportant notice&r: Remember that using too many exporters could cause &4TPS&r issues.\\n\\nBut don't worry—reaching &otoo many&r would require &6dozens&r of them."
-			]
+			description: ["{quests.ae2.export_bus.desc}"]
 			id: "5C60E691DD073782"
 			tasks: [{
 				id: "36BB5964C98CF157"
@@ -523,7 +528,8 @@
 		}
 		{
 			dependencies: ["6CF08AFB924905F0"]
-			description: ["This entire branch becomes fully unlockable once you reach &1IV&r."]
+			title: "{quests.ae2.iv.title}"
+			description: ["{quests.ae2.iv.desc}"]
 			icon_scale: 2.0d
 			id: "0F1104DEEB22EF86"
 			size: 1.0d
@@ -537,7 +543,7 @@
 		}
 		{
 			dependencies: ["0F1104DEEB22EF86"]
-			description: ["To get this &eNew Inscriber Press&r, you will need to &6invest a bit&r.\\n\\nFirst, you must &1upgrade&r your &eImplosion Compressor&r with &1two IV Energy Hatches&r.\\n\\nThen, get yourself a &1new IV Laser Engraver&r if you don't already have one.\\n\\nAnd finally, prepare a &clot of Industrial TNT&r from &7GregTech&r — it’s the &conly one that works&r for this process.\\n\\nPlan carefully, as this step is quite demanding!"]
+			description: ["{quests.ae2.accumulation_press.desc}"]
 			id: "2F27252748DA8DCA"
 			tasks: [{
 				id: "4D79128456585A40"
@@ -549,7 +555,7 @@
 		}
 		{
 			dependencies: ["2F27252748DA8DCA"]
-			description: ["The &eAccumulation Processor&r will require a &7large amount of Silicon&r for each craft.\\n\\nWe hope you already have a &6dedicated EBF&r producing Silicon, or at least a &bstrong infrastructure&r to manufacture it quickly.\\n\\nPrepare accordingly, as you’ll need plenty of it!"]
+			description: ["{quests.ae2.accumulation_processor.desc}"]
 			id: "5B4AD301357488D6"
 			shape: "octagon"
 			size: 1.5d
@@ -563,7 +569,7 @@
 		}
 		{
 			dependencies: ["5B4AD301357488D6"]
-			description: ["These are a &eneat upgrade&r for your &bCrafting CPU&r.\\n\\nThey will help to &7speed up&r your auto-crafting and allow you to handle &6larger jobs&r with ease."]
+			description: ["{quests.ae2.mega_crafting.desc}"]
 			id: "1EB60600FDF376F8"
 			tasks: [
 				{
@@ -582,7 +588,7 @@
 		}
 		{
 			dependencies: ["5B4AD301357488D6"]
-			description: ["The &eExtended Pattern Terminal&r is a &awonderful upgrade&r to manage all your patterns in an &aeasier&r way.\\n\\nYou get &6more search options&r for your patterns, and with how many you should be getting now, it will be a &dhuge QoL&r improvement.\\n\\nMake the upgrade version to simply shift right click it without bothering with removing it."]
+			description: ["{quests.ae2.extended_patprov.desc}"]
 			icon: "expatternprovider:ex_pattern_access_part"
 			id: "7676B598362927CA"
 			tasks: [{
@@ -601,7 +607,7 @@
 		}
 		{
 			dependencies: ["5B4AD301357488D6"]
-			description: ["Here they are, your bigger &bInterface&r with an upgrade so you don't even need to disconnect them to upgrade.\\n\\nYou will be quite happy with them."]
+			description: ["{quests.ae2.extended_interface.desc}"]
 			icon: "expatternprovider:ex_interface"
 			id: "1BD1BB1FFF9A70A9"
 			tasks: [{
@@ -620,7 +626,8 @@
 		}
 		{
 			dependencies: ["6CF08AFB924905F0"]
-			description: ["This branch becomes unlockable once you reach &dLuV&r."]
+			title: "{quests.ae2.luv.title}"
+			description: ["{quests.ae2.luv.desc}"]
 			icon_scale: 2.0d
 			id: "1F3621FABA32DC6B"
 			size: 1.0d

@@ -18,6 +18,13 @@ function registerMinecraftItemModifications(event) {
 		}
 	})
 
+	event.modify('minecraft:popped_chorus_fruit', item => {
+		item.foodProperties = food => {
+			food.hunger(2)
+			food.saturation(1)
+		}
+	})
+
 	event.modify('minecraft:elytra', item => {
 		item.maxDamage = 2046
 	})
