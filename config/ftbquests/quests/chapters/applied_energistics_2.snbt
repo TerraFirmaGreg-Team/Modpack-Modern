@@ -249,9 +249,9 @@
 		{
 			dependencies: ["3C3C21482E31267B"]
 			description: ["{quests.ae2.ae_controller.desc}"]
-			subtitle: "{quests.ae2.ae_controller.subtitle}"
 			icon: "ae2:controller"
 			id: "1AAD526450E5A732"
+			subtitle: "{quests.ae2.ae_controller.subtitle}"
 			tasks: [
 				{
 					id: "2D32E17277B9A4C5"
@@ -315,8 +315,8 @@
 		{
 			dependencies: ["3C3C21482E31267B"]
 			description: ["{quests.ae2.drive.desc}"]
-			subtitle: "{quests.ae2.drive.subtitle}"
 			id: "6E4E5753CCEB3F95"
+			subtitle: "{quests.ae2.drive.subtitle}"
 			tasks: [
 				{
 					id: "19403D95C159B55A"
@@ -340,9 +340,9 @@
 				"4F719A457E0C0AFB"
 			]
 			description: ["{quests.ae2.cables.desc}"]
-			subtitle: "{quests.ae2.cables.subtitle}"
 			icon: "ae2:fluix_smart_cable"
 			id: "0DDA9B67B59A9481"
+			subtitle: "{quests.ae2.cables.subtitle}"
 			tasks: [
 				{
 					id: "5A80BA33AFB71A00"
@@ -368,8 +368,8 @@
 		{
 			dependencies: ["0DDA9B67B59A9481"]
 			description: ["{quests.ae2.terminals.desc}"]
-			subtitle: "{quests.ae2.terminals.subtitle}"
 			id: "4B6466FD94886C55"
+			subtitle: "{quests.ae2.terminals.subtitle}"
 			tasks: [
 				{
 					id: "5ECAC7A491A1CC16"
@@ -393,8 +393,8 @@
 		{
 			dependencies: ["0DDA9B67B59A9481"]
 			description: ["{quests.ae2.crafting_unit.desc}"]
-			subtitle: "{quests.ae2.crafting_unit.subtitle}"
 			id: "56B39375B0C67781"
+			subtitle: "{quests.ae2.crafting_unit.subtitle}"
 			tasks: [{
 				id: "194AB0197D7500B9"
 				item: "ae2:crafting_unit"
@@ -436,9 +436,9 @@
 		{
 			dependencies: ["4B6466FD94886C55"]
 			description: ["{quests.ae2.pattern_provider.desc}"]
-			subtitle: "{quests.ae2.pattern_provider.subtitle}"
 			icon: "ae2:pattern_provider"
 			id: "378E2294EFD85C65"
+			subtitle: "{quests.ae2.pattern_provider.subtitle}"
 			tasks: [{
 				id: "4288288133E5FED3"
 				item: {
@@ -456,8 +456,8 @@
 		{
 			dependencies: ["4B6466FD94886C55"]
 			description: ["{quests.ae2.pattern.desc}"]
-			subtitle: "{quests.ae2.pattern.subtitle}"
 			id: "386C54268DA9F2BF"
+			subtitle: "{quests.ae2.pattern.subtitle}"
 			tasks: [{
 				id: "7E43EFA5DBA2F0D2"
 				item: "ae2:blank_pattern"
@@ -498,8 +498,8 @@
 		{
 			dependencies: ["0DDA9B67B59A9481"]
 			description: ["{quests.ae2.interface.desc}"]
-			subtitle: "{quests.ae2.interface.subtitle}"
 			id: "25007C5E43D28DB2"
+			subtitle: "{quests.ae2.interface.subtitle}"
 			tasks: [{
 				id: "0DEB4627504A8944"
 				item: "ae2:interface"
@@ -528,7 +528,6 @@
 		}
 		{
 			dependencies: ["6CF08AFB924905F0"]
-			title: "{quests.ae2.iv.title}"
 			description: ["{quests.ae2.iv.desc}"]
 			icon_scale: 2.0d
 			id: "0F1104DEEB22EF86"
@@ -538,6 +537,7 @@
 				item: "tfg:iv_universal_circuit"
 				type: "item"
 			}]
+			title: "{quests.ae2.iv.title}"
 			x: 3.0d
 			y: 0.0d
 		}
@@ -626,7 +626,6 @@
 		}
 		{
 			dependencies: ["6CF08AFB924905F0"]
-			title: "{quests.ae2.luv.title}"
 			description: ["{quests.ae2.luv.desc}"]
 			icon_scale: 2.0d
 			id: "1F3621FABA32DC6B"
@@ -636,6 +635,7 @@
 				item: "tfg:luv_universal_circuit"
 				type: "item"
 			}]
+			title: "{quests.ae2.luv.title}"
 			x: 0.5d
 			y: 2.5d
 		}
