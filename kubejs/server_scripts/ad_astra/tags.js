@@ -403,6 +403,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:crusher')
 	// this huge guy also looks silly in low grav
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:walker')
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:eater')
 	// flying mobs
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:soarer')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:glider')
