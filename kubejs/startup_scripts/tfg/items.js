@@ -397,10 +397,16 @@ const registerTFGItems = (event) => {
 	//#endregion
 	
 	//#region Flax Stuff
+	event.create('tfg:washed_flax')
+		.tag('tfc:scrapable')
 	event.create('tfg:flax_waste')
+		.tag('tfc:scrapable')
 	event.create('tfg:flax_tow')	
 	event.create('tfg:flax_line')
 	event.create('tfg:linen_thread')
+		.tag('forge:string')
 	event.create('tfg:linen_cloth')
+		.tag('forge:cloth')
+		.tag('tfc:sewing_light_cloth')
 	
 }

@@ -332,6 +332,8 @@ const registerTFCItemTags = (event) => {
 	})
 	
 	event.add('tfc:any_knapping', '#tfc:pit_kiln_straw')
+	
+	event.add('forge:string', 'tfc:pineapple_yarn')
 }
 
 const registerTFCBlockTags = (event) => {

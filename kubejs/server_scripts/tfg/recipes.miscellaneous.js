@@ -1367,6 +1367,29 @@ function registerTFGMiscellaneousRecipes(event) {
 		B: 'beneath:warped_straw'
 	}).id('tfg:shaped_large_nest_warped')
 		
-	
 	//#endregion
+	
+	//#region flax stuff
+	event.recipes.tfc.loom(
+		'1x tfg:linen_cloth',
+		'16x tfg:linen_thread',
+		8,
+		'minecraft:block/brown_wool'
+	)
+	
+	event.recipes.tfc.scraping(
+		'tfg:flax_waste',
+		'tfg:washed_flax',
+		'tfg:item/flax_waste',
+		'tfg:item/washed_flax',
+		'3x tfg:flax_line'
+	).id('tfg:scraping/flax_line')
+	
+	event.recipes.tfc.scraping(
+		'tfc:groundcover/humus',
+		'tfg:flax_waste',
+		'tfc:item/groundcover/humus',
+		'tfg:item/flax_waste',
+		'tfg:flax_tow'
+	).id('tfg:scraping/flax_tow')
 }
