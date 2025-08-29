@@ -81,11 +81,6 @@
 								"fluids": "tfg:semiheavy_ammoniacal_water"
 							},
 							{
-								"type": "minecraft:matching_fluids",
-								"offset": [ 0, 1, 0 ],
-								"fluids": "tfg:fluid/semiheavy_ammoniacal_water"
-							},
-							{
 								"type": "minecraft:matching_block_tag",
 								"offset": [ 0, -1, 0 ],
 								"tag": "ad_astra:mars_stone_replaceables"
@@ -96,7 +91,7 @@
 			]
 		},
 		"tries": 36,
-		"xz_spread": 7,
-		"y_spread": 1
+		"xz_spread": 8,
+		"y_spread": 3
 	}
 }
