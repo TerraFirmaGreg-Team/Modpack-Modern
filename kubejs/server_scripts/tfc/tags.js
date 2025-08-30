@@ -604,6 +604,7 @@ const registerTFCPlacedFeatures = (event) => {
 	// Crops
 	event.add('tfc:feature/crops', 'tfg:earth/sunflower_patch')
 	event.add('tfc:feature/crops', 'tfg:earth/rapeseed_patch')
+	event.add('tfc:feature/crops', 'tfg:earth/flax_patch')
 
 	// Other decoration
 	event.add('tfc:in_biome/underground_decoration', 'tfg:glow_lichen')
