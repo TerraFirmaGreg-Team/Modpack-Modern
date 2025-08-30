@@ -382,6 +382,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagBoth('forge:smooth_stone')
 		.tagBoth('tfc:igneous_intrusive_items')
 		.tagBoth('tfc:rock/smooth')
+		.tagBoth('tfg:brick_index')
 		.mapColor('terracotta_blue')
 		.tagBlock('minecraft:mineable/pickaxe')
 		.fullBlock(true)

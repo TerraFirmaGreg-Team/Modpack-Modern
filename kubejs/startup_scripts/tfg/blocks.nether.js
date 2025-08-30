@@ -88,6 +88,17 @@ function registerTFGNetherBlocks(event) {
 		.tagItem('tfc:rock_knapping')
 		.tagItem('tfc:sedimentary_rock')
 		.tagItem("rnr:loose_rock_items")
+
+	event.create('tfg:loose/crackrack', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose/crackrack')
+		.rockTypeModel('igneous_intrusive')
+		.soundType('basalt')
+		.translationKey("block.tfg.loose.crackrack")
+		.tagBlock('tfc:loose_rocks')
+		.tagItem('tfc:any_knapping')
+		.tagItem('tfc:rock_knapping')
+		.tagItem('tfc:igneous_intrusive_rock')
+		.tagItem("rnr:loose_rock_items")
 	
 	// Cobblestones
 	event.create('tfg:rock/cobble_blackstone')

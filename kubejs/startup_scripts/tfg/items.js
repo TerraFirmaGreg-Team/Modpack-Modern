@@ -86,6 +86,8 @@ const registerTFGItems = (event) => {
 		.translationKey('item.tfg.brick.glacio_stone')
 	event.create('tfg:brick/permafrost')
 		.translationKey('item.tfg.brick.permafrost')
+	event.create('tfg:brick/red_granite')
+		.translationKey('item.tfg.red_granite')
 	// #endregion
 
 	// #region Primitive rubber gloves
