@@ -451,6 +451,9 @@ const registerTFGBlockTags = (event) => {
 
 	event.add('tfc:crops', 'tfg:sunflower')
 	event.add('tfc:mineable_with_sharp_tool', 'tfg:sunflower')
+	
+	event.add('tfc:crops', 'tfg:flax')
+	event.add('tfc:mineable_with_sharp_tool', 'tfg:flax')
 
 	// #region Nether blocks
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')
