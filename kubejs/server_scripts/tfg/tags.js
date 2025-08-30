@@ -94,6 +94,8 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
 	// #endregion
 
+	event.add('buildinggadgets2:deny', 'tfg:spice')
+
 	//#region Cloth & String
 	event.add('forge:cloth', 'tfg:phantom_silk')
 	event.add('forge:cloth', 'tfg:polycaprolactam_fabric')
@@ -459,6 +461,11 @@ const registerTFGBlockTags = (event) => {
 	
 	event.add('tfc:crops', 'tfg:flax')
 	event.add('tfc:mineable_with_sharp_tool', 'tfg:flax')
+
+	// Spice unmovable
+
+	event.add('buildinggadgets2:deny', 'tfg:spice')
+	event.add('ae2:blacklisted/spatial', 'tfg:spice')
 
 	// #region Nether blocks
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')
