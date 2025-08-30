@@ -1421,7 +1421,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.recipes.gtceu.assembler('tfg:assembler/flax_burlap')
 		.itemInputs('16x tfg:flax_tow')
 		.circuit(10)
-		.itemOutputs('tfg:burlap_cloth')
+		.itemOutputs('tfc:burlap_cloth')
 		.duration(100)
 		.EUt(4)
 

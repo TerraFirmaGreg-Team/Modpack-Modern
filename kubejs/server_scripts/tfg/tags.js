@@ -7,9 +7,11 @@ const registerTFGItemTags = (event) => {
 	//crop stuff
 	event.add('tfc:seeds', 'tfg:sunflower_seeds')
 	event.add('tfc:seeds', 'tfg:rapeseed_seeds')
+	event.add('tfc:seeds', 'tfg:flax_seeds')
 	event.add('tfc:foods', 'tfg:roasted_sunflower_seeds')
 	event.add('tfc:compost_greens_high', 'tfg:rapeseed_product')
 	event.add('tfc:compost_greens_high', 'tfg:sunflower_product')
+	event.add('tfc:compost_greens_high', 'tfg:flax_product')
 	event.add('tfg:water_breathing_ingredients', 'tfg:rapeseed_product')
 	event.add('tfg:night_vision_ingredients', 'tfg:sunflower_product')
 

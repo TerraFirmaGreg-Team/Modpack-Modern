@@ -533,6 +533,24 @@ const registerTFGFLPlanters = (event) => {
 		],
 		null
 	)
+	
+	event.firmalifePlantable(
+		'tfg:flax_seeds',
+		'large',
+		0,
+		3,
+		0.2,
+		'tfg:flax_seeds',
+		'tfg:flax_product',
+		'nitrogen',
+		[
+			'tfg:block/crop/flax_age_0',
+			'tfg:block/crop/flax_age_1',
+			'tfg:block/crop/flax_age_5_top',
+			'tfg:block/crop/flax_age_6_top'
+		],
+		null
+	)
 
 	event.firmalifePlantable(
 		'betterend:amber_root_seeds',
