@@ -70,16 +70,52 @@
 		"axolotls": [],
 		"creature": [
 			{
+				"type": "tfg:sniffer",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
 				"type": "tfg:wraptor",
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 50
 			},
 			{
+				"type": "wan_ancient_beasts:crusher",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "wan_ancient_beasts:glider",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
 				"type": "species:goober",
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "wan_ancient_beasts:walker",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "tfg:glacian_ram",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "wan_ancient_beasts:eater",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
 			}
 		],
 		"misc": [],
