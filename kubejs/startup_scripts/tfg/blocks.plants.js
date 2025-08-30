@@ -76,10 +76,6 @@ const registerTFGCrops = (event) => {
         })
         .seedItem(seed => {
             seed.texture('tfg:item/flax_seed')
-			seed.food(food => {
-	            food.hunger(1)
-	            food.saturation(2)
-            })
         })
         .deadBlock(dead => {
             dead.hardness(0.2)
