@@ -467,6 +467,12 @@ const registerTFGBlockTags = (event) => {
 	event.add('buildinggadgets2:deny', 'tfg:spice')
 	event.add('ae2:blacklisted/spatial', 'tfg:spice')
 
+	event.add('buildinggadgets2:deny', 'tfg:geyser_source')
+	event.add('ae2:blacklisted/spatial', 'tfg:geyser_source')
+
+	event.add('buildinggadgets2:deny', 'tfg:geyser_source_small')
+	event.add('ae2:blacklisted/spatial', 'tfg:geyser_source_small')
+
 	// #region Nether blocks
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')
 	event.add('minecraft:moss_replaceable', 'tfg:rock/hardened_deepslate')

@@ -14,7 +14,7 @@ const $ChanceLogic = Java.loadClass('com.gregtechceu.gtceu.api.recipe.chance.log
     .EUt(GTValues.VA[GTValues.LV]);
 
 
-    // Thorium Uraninite Silver Bauxite Lead Beryllium and Apatite or Trisulphate
+    // Ostrum Linear Accelerator Recipes
 
 event.recipes.gtceu.ostrum_linear_accelerator('ostrum_transformation')
     .inputFluids('gtceu:residual_radioactive_concoction 1000')
