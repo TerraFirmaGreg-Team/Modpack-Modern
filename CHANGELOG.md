@@ -12,7 +12,7 @@
 - Added a way to keep your space suit with you on death, so you can more safely set your spawn on other planets (#1710) @BlueBoat29
 ### Bug fixes
 - Fixed tongs getting stuck in ovens, and now you can use them the same way you'd previously use a Peel @Pyritie
-- Allowed gears, plates, double plates, springs, and small springs to be heated (#1727) @Redeix
+- Allowed powders, gears, plates, double plates, springs, and small springs to be heated (#1727) @Redeix
 ### Translation updates
 - Chinese (simplified) @jmecn & @CN059
 - Ukranian @MetEnBouldry
