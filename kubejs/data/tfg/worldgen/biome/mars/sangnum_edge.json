@@ -35,7 +35,8 @@
 		"#tfg:mars_veins",
 		[
 			"tfg:mars/terrain/clay_disc",
-			"tfg:mars/terrain/peat_disc"
+			"tfg:mars/terrain/peat_disc",
+			"tfg:mars/terrain/venus_sand_disc"
 		],
 		[
 			"tfg:mars_forest",
@@ -86,7 +87,7 @@
 				"type": "wan_ancient_beasts:walker",
 				"maxCount": 3,
 				"minCount": 1,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "wan_ancient_beasts:crusher",
@@ -154,7 +155,14 @@
 		],
 		"underground_water_creature": [],
 		"water_ambient": [],
-		"water_creature": []
+		"water_creature": [
+			{
+				"type": "wan_ancient_beasts:surfer",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			}
+		]
 	},
 	"temperature": 0.8
 }

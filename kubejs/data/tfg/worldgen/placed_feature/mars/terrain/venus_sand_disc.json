@@ -1,0 +1,26 @@
+{
+	"feature": "tfg:mars/terrain/venus_sand_disc",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 3
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR"
+		},
+		{
+			"type": "tfc:near_fluid",
+			"fluids": [
+				"tfg:semiheavy_ammoniacal_water"
+			],
+			"radius": 4
+		}
+	]
+}
