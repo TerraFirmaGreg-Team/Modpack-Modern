@@ -676,8 +676,8 @@
 						}
 					}
 					optional_task: true
-					type: "item"
 					title: "{quests.ae2.storage_bus.task}"
+					type: "item"
 				}
 			]
 			x: 3.5d
@@ -686,22 +686,19 @@
 		{
 			dependencies: ["25007C5E43D28DB2"]
 			description: ["{quests.ae2.interface_automation.desc}"]
-			title: "{quests.ae2.interface_automation.title}"
 			icon: "gtceu:mv_robot_arm"
 			id: "7D9A1A05B6CA486F"
-			tasks: [
-				{
-					id: "6F0FED3BC5B3B5F0"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "6F0FED3BC5B3B5F0"
+				type: "checkmark"
+			}]
+			title: "{quests.ae2.interface_automation.title}"
 			x: 5.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["6CF08AFB924905F0"]
 			description: ["{quests.ae2.hv.desc}"]
-			title: "{quests.ae2.hv.title}"
 			icon_scale: 2.0d
 			id: "3C3C21482E31267B"
 			size: 1.0d
@@ -710,6 +707,7 @@
 				item: "tfg:hv_universal_circuit"
 				type: "item"
 			}]
+			title: "{quests.ae2.hv.title}"
 			x: 0.5d
 			y: -2.5d
 		}
@@ -926,8 +924,8 @@
 						"ftbfiltersystem:filter": "or(item(expatternprovider:ex_pattern_provider)item(expatternprovider:pattern_provider_upgrade))"
 					}
 				}
-				type: "item"
 				title: "{quests.ae2.extended_patprov.task}"
+				type: "item"
 			}]
 			x: 7.0d
 			y: 1.5d
@@ -946,8 +944,8 @@
 						"ftbfiltersystem:filter": "or(item(expatternprovider:ex_drive)item(expatternprovider:drive_upgrade))"
 					}
 				}
-				type: "item"
 				title: "{quests.ae2.extended_drive.task}"
+				type: "item"
 			}]
 			x: 6.0d
 			y: -1.5d
@@ -965,8 +963,8 @@
 						"ftbfiltersystem:filter": "or(item(expatternprovider:ex_export_bus_part)item(expatternprovider:ex_import_bus_part))"
 					}
 				}
-				type: "item"
 				title: "{quests.ae2.extended_import_export.task}"
+				type: "item"
 			}]
 			x: 6.0d
 			y: 1.5d
@@ -1037,7 +1035,6 @@
 			dependencies: ["0DDA9B67B59A9481"]
 			description: ["{quests.ae2.p2p.desc}"]
 			id: "275963DA1B499986"
-			title: "{quests.ae2.p2p.title}"
 			tasks: [
 				{
 					id: "2F6C204528E60C43"
@@ -1053,8 +1050,8 @@
 							"ftbfiltersystem:filter": "or(item(ae2:redstone_p2p_tunnel)item(ae2:item_p2p_tunnel)item(ae2:fluid_p2p_tunnel)item(ae2:light_p2p_tunnel))"
 						}
 					}
-					title: "{quests.ae2.p2p.task}"
 					optional_task: true
+					title: "{quests.ae2.p2p.task}"
 					type: "item"
 				}
 				{
@@ -1080,6 +1077,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.ae2.p2p.title}"
 			x: 2.0d
 			y: -7.5d
 		}
@@ -1218,7 +1216,6 @@
 		{
 			dependencies: ["378E2294EFD85C65"]
 			description: ["{quests.ae2.cutting_knife.desc}"]
-			title: "{quests.ae2.cutting_knife.title}"
 			id: "13B0A0B4601F3959"
 			tasks: [{
 				id: "508DE2D583EBD2AD"
@@ -1232,6 +1229,7 @@
 				title: "{quests.ae2.cutting_knife.task}"
 				type: "item"
 			}]
+			title: "{quests.ae2.cutting_knife.title}"
 			x: 0.0d
 			y: -10.5d
 		}

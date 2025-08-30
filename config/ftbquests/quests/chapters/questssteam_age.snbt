@@ -3,7 +3,16 @@
 	default_quest_shape: ""
 	filename: "questssteam_age"
 	group: "3C4612A920658A7E"
-	icon: "gtceu:steel_gear"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f
+				ticks: 0L
+			}
+		}
+		id: "gtceu:steel_gear"
+	}
 	id: "784A885090386609"
 	order_index: 2
 	quest_links: [
