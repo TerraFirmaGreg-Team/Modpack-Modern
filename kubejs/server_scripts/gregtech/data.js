@@ -40,6 +40,11 @@ const registerGTCEUHeats = (event) => {
 			makeItemHeatByTagPrefix(TagPrefix.block, material, tfcProperty, 20)
 			makeItemHeatByTagPrefix(TagPrefix.rodLong, material, tfcProperty, 1.429)
 			makeItemHeatByTagPrefix(TagPrefix.gearSmall, material, tfcProperty, 1.429)
+			makeItemHeatByTagPrefix(TagPrefix.gear, material, tfcProperty, 2.875)
+			makeItemHeatByTagPrefix(TagPrefix.plate, material, tfcProperty, 2.875)
+			makeItemHeatByTagPrefix(TagPrefix.plateDouble, material, tfcProperty, 5.75)
+			makeItemHeatByTagPrefix(TagPrefix.springSmall, material, tfcProperty, 0.567)
+			makeItemHeatByTagPrefix(TagPrefix.spring, material, tfcProperty, 1.429)
 
 			makeItemHeatByTagPrefix(TagPrefix.ingot, material, tfcProperty, 1.429)
 			makeItemHeatByTagPrefix(TFGTagPrefix.ingotDouble, material, tfcProperty, 2.875)
