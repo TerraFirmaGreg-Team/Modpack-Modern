@@ -161,7 +161,7 @@ const registerSNSRecipes = (event) => {
 		itemAsHead: 'gtceu:small_pipe_extruder_mold',
 		results: [{ item: '2x sns:buckle' }],
 		processingTime: 80 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-	}).id('sns:vi/curving/buckle')
+	}).id('sns:vi/curving/buckle2')
 
 	event.shaped('sns:pack_frame', [
 			'AAA',
@@ -177,7 +177,7 @@ const registerSNSRecipes = (event) => {
 			'BBB',
 			'AAA'
 		], {
-			A: '#tfc:burlap_fiber',
+			A: '#tfg:burlap_fiber',
 			B: '#forge:string'
 			
 		}).id('sns:shaped/reinforced_fiber')

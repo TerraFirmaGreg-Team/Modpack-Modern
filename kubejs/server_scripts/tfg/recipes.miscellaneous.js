@@ -1409,7 +1409,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		'tfc:block/burlap'
 	)
 	
-	event.replaceInput({ output: 'minecraft:lead'}, 'tfc:jute_fiber', '#tfg:burlap_fiber');
+	event.replaceInput({ id: 'tfc:crafting/lead' }, 'tfc:jute_fiber', '#tfg:burlap_fiber');
 	
 	event.recipes.gtceu.assembler('tfg:assembler/linen_cloth')
 		.itemInputs('16x tfg:linen_thread')
