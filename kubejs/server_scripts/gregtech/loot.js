@@ -24,6 +24,7 @@ const STONE_TYPES_TO_COBBLE = {
 	deepslate: 'minecraft:cobbled_deepslate',
 	pyroxenite: 'tfg:rock/cobble_blackstone',
 	dripstone: 'tfg:block/rock/cobble_dripstone',
+	keratophyre: 'tfg:block/rock/cobble_crackrack',
 	moon_stone: 'ad_astra:moon_cobblestone',
 	moon_deepslate: 'ad_astra:moon_sand',
 	mars_stone: 'ad_astra:mars_cobblestone',
@@ -45,49 +46,12 @@ const registerGTCEULoots = (event) => {
 			.addLoot(STONE_TYPES_TO_COBBLE[stoneType]);
 	})
 
-	// Non-TFC hammer crushing
-	const CRUSHING = [
-		{ raw: 'minecraft:deepslate', crushed: 'minecraft:cobbled_deepslate'},
-		{ raw: 'minecraft:cobbled_deepslate', crushed: 'tfg:rock/gravel_deepslate'},
-		{ raw: 'tfg:rock/gravel_deepslate', crushed: 'tfc:sand/black'},
-
-		{ raw: 'minecraft:blackstone', crushed: 'tfg:rock/cobble_blackstone'},
-		{ raw: 'tfg:rock/cobble_blackstone', crushed: 'tfg:rock/gravel_blackstone'},
-		{ raw: 'tfg:rock/gravel_blackstone', crushed: 'tfc:sand/black'},
-
-		{ raw: 'minecraft:dripstone_block', crushed: 'minecraft:cobbled_dripstone'},
-		{ raw: 'minecraft:cobbled_dripstone', crushed: 'minecraft:gravel_dripstone'},
-		{ raw: 'minecraft:gravel_dripstone', crushed: 'tfc:sand/brown'},
-
-		// TODO 
-		{ raw: 'beneath:crackrack', crushed: 'tfc:sand/pink'},		
-
-		{ raw: 'ad_astra:moon_stone', crushed: 'ad_astra:moon_cobblestone'},
-		{ raw: 'tfg:rock/hardened_moon_stone', crushed: 'ad_astra:moon_cobblestone'},
-		{ raw: 'ad_astra:moon_cobblestone', crushed: 'ad_astra:moon_sand'},
-		{ raw: 'ad_astra:moon_deepslate', crushed: 'ad_astra:moon_sand'},
-		{ raw: 'tfg:rock/hardened_moon_deepslate', crushed: 'ad_astra:moon_sand'},
-		{ raw: 'ad_astra:mars_stone', crushed: 'ad_astra:mars_cobblestone'},
-		{ raw: 'tfg:rock/hardened_mars_stone', crushed: 'ad_astra:mars_cobblestone'},
-		{ raw: 'ad_astra:mars_cobblestone', crushed: 'ad_astra:mars_sand'},
-		{ raw: 'ad_astra:venus_stone', crushed: 'ad_astra:venus_cobblestone'},
-		{ raw: 'tfg:rock/hardened_venus_stone', crushed: 'ad_astra:venus_cobblestone'},
-		{ raw: 'ad_astra:venus_cobblestone', crushed: 'ad_astra:venus_sand'},
-		{ raw: 'ad_astra:mercury_stone', crushed: 'ad_astra:mercury_cobblestone'},
-		{ raw: 'tfg:rock/hardened_mercury_stone', crushed: 'ad_astra:mercury_cobblestone'},
-		{ raw: 'ad_astra:mercury_cobblestone', crushed: 'tfc:sand/red'},
-		{ raw: 'ad_astra:glacio_stone', crushed: 'ad_astra:glacio_cobblestone'},
-		{ raw: 'tfg:rock/hardened_glacio_stone', crushed: 'ad_astra:glacio_cobblestone'},
-		{ raw: 'ad_astra:glacio_cobblestone', crushed: 'tfc:sand/white'},
-		{ raw: 'ad_astra:conglomerate', crushed: 'tfc:rock/gravel/conglomerate'},
-		{ raw: 'ad_astra:permafrost', crushed: '4x gtceu:ice_dust'}
-	]
-
-	CRUSHING.forEach(x => {
+	// Defined in kubejs/startup_scripts/tfg/constants.js
+	global.HAMMERING.forEach(x => {
 		event.addBlockLootModifier(x.raw)
 			.matchMainHand('#forge:tools/hammers')
 			.removeLoot(ItemFilter.ALWAYS_TRUE)
-			.addLoot(x.crushed)
+			.addLoot(x.hammered)
 	})
 
 	event.addBlockLootModifier('minecraft:gilded_blackstone')

@@ -448,6 +448,26 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfc:mineable_with_sharp_tool', 'tfg:sunflower')
 
 	// #region Nether blocks
+	event.add('tfc:metamorphic_items', 'minecraft:deepslate')
+	event.add('tfc:metamorphic_items', 'minecraft:cobbled_deepslate')
+	event.add('tfc:metamorphic_items', 'minecraft:polished_deepslate')
+
+	event.add('tfc:igneous_intrusive_items', 'minecraft:blackstone')
+	event.add('tfc:igneous_intrusive_items', 'minecraft:gilded_blackstone')
+	event.add('tfc:igneous_intrusive_items', 'minecraft:polished_blackstone')
+	event.add('tfc:igneous_intrusive_items', 'minecraft:chiseled_blackstone')
+
+	event.add('tfc:sedimentary_items', 'minecraft:dripstone_block')
+	event.add('tfc:sedimentary_items', 'create:cut_dripstone')
+	event.add('tfc:sedimentary_items', 'create:polished_cut_dripstone')
+
+	event.add('tfc:igneous_intrusive_items', 'beneath:crackrack')
+
+	event.add('tfc:igneous_extrusive_items', 'minecraft:basalt')
+	event.add('tfc:igneous_extrusive_items', 'minecraft:basalt')
+	event.add('tfc:igneous_extrusive_items', 'minecraft:smooth_basalt')
+	event.add('tfc:igneous_extrusive_items', 'minecraft:polished_basalt')
+
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')
 	event.add('minecraft:moss_replaceable', 'tfg:rock/hardened_deepslate')
 	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_deepslate')
@@ -466,6 +486,13 @@ const registerTFGBlockTags = (event) => {
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_dripstone')
 	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_dripstone')
 	event.add('tfc:rock/hardened', 'tfg:rock/hardened_dripstone')
+	// #endregion
+
+	// #region Moon blocks
+	event.add('tfc:igneous_intrusive_items', 'ad_astra:moon_stone')
+	event.add('tfc:igneous_intrusive_items', 'ad_astra:moon_cobblestone')
+	event.add('tfc:igneous_intrusive_items', 'ad_astra:moon_deepslate')
+	event.add('tfc:igneous_intrusive_items', 'ad_astra:glacio_stone')
 	// #endregion
 
 	// #region Mars blocks
