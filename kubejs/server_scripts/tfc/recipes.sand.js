@@ -34,7 +34,7 @@ function registerTFCSandRecipes(event) {
 		event.recipes.gtceu.forge_hammer(`raw_${sandColor}_sandstone_to_sand`)
 			.itemInputs(`tfc:raw_sandstone/${sandColor}`)
 			.itemOutputs(`4x tfc:sand/${sandColor}`)
-			.duration(200)
+			.duration(20*3.5)
 			.EUt(2)
 
 		event.recipes.greate.pressing(`4x tfc:sand/${sandColor}`, `tfc:raw_sandstone/${sandColor}`)
@@ -45,7 +45,7 @@ function registerTFCSandRecipes(event) {
 		event.recipes.gtceu.forge_hammer(`smooth_${sandColor}_sandstone_to_sand`)
 			.itemInputs(`tfc:smooth_sandstone/${sandColor}`)
 			.itemOutputs(`4x tfc:sand/${sandColor}`)
-			.duration(200)
+			.duration(20*3.5)
 			.EUt(2)
 
 		event.recipes.greate.pressing(`4x tfc:sand/${sandColor}`, `tfc:smooth_sandstone/${sandColor}`)
@@ -56,7 +56,7 @@ function registerTFCSandRecipes(event) {
 		event.recipes.gtceu.forge_hammer(`cut_${sandColor}_sandstone_to_sand`)
 			.itemInputs(`tfc:cut_sandstone/${sandColor}`)
 			.itemOutputs(`4x tfc:sand/${sandColor}`)
-			.duration(200)
+			.duration(20*3.5)
 			.EUt(2)
 
 		event.recipes.greate.pressing(`4x tfc:sand/${sandColor}`, `tfc:cut_sandstone/${sandColor}`)
@@ -138,7 +138,7 @@ function registerTFCSandRecipes(event) {
 	event.recipes.gtceu.forge_hammer('brown_gravel_to_sand')
 		.itemInputs('#tfc:brown_gravel')
 		.itemOutputs('tfc:sand/brown')
-		.duration(200)
+		.duration(20*3.5)
 		.EUt(2)
 
 	event.recipes.greate.pressing('tfc:sand/brown', '#tfc:brown_gravel')
@@ -149,7 +149,7 @@ function registerTFCSandRecipes(event) {
 	event.recipes.gtceu.forge_hammer('white_gravel_to_sand')
 		.itemInputs('#tfc:white_gravel')
 		.itemOutputs('tfc:sand/white')
-		.duration(200)
+		.duration(20*3.5)
 		.EUt(2)
 
 	event.recipes.greate.pressing('tfc:sand/white', '#tfc:white_gravel')
@@ -160,7 +160,7 @@ function registerTFCSandRecipes(event) {
 	event.recipes.gtceu.forge_hammer('black_gravel_to_sand')
 		.itemInputs('#tfc:black_gravel')
 		.itemOutputs('tfc:sand/black')
-		.duration(200)
+		.duration(20*3.5)
 		.EUt(2)
 
 	event.recipes.greate.pressing('tfc:sand/black', '#tfc:black_gravel')
@@ -171,7 +171,7 @@ function registerTFCSandRecipes(event) {
 	event.recipes.gtceu.forge_hammer('red_gravel_to_sand')
 		.itemInputs('#tfc:red_gravel')
 		.itemOutputs('tfc:sand/red')
-		.duration(200)
+		.duration(20*3.5)
 		.EUt(2)
 
 	event.recipes.greate.pressing('tfc:sand/red', '#tfc:red_gravel')
@@ -182,7 +182,7 @@ function registerTFCSandRecipes(event) {
 	event.recipes.gtceu.forge_hammer('yellow_gravel_to_sand')
 		.itemInputs('#tfc:yellow_gravel')
 		.itemOutputs('tfc:sand/yellow')
-		.duration(200)
+		.duration(20*3.5)
 		.EUt(2)
 
 	event.recipes.greate.pressing('tfc:sand/yellow', '#tfc:yellow_gravel')
@@ -193,7 +193,7 @@ function registerTFCSandRecipes(event) {
 	event.recipes.gtceu.forge_hammer('green_gravel_to_sand')
 		.itemInputs('#tfc:green_gravel')
 		.itemOutputs('tfc:sand/green')
-		.duration(200)
+		.duration(20*3.5)
 		.EUt(2)
 
 	event.recipes.greate.pressing('tfc:sand/green', '#tfc:green_gravel')
@@ -204,7 +204,7 @@ function registerTFCSandRecipes(event) {
 	event.recipes.gtceu.forge_hammer('pink_gravel_to_sand')
 		.itemInputs('#tfc:pink_gravel')
 		.itemOutputs('tfc:sand/pink')
-		.duration(200)
+		.duration(20*3.5)
 		.EUt(2)
 
 	event.recipes.greate.pressing('tfc:sand/pink', '#tfc:pink_gravel')

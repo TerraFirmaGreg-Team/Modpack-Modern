@@ -1,7 +1,7 @@
 {
 	"type": "tfc:fissure",
 	"config": {
-		"wall_state": "tfc:rock/raw/basalt",
+		"wall_state": "minecraft:obsidian",
 		"fluid_state": "tfg:fluid/semiheavy_ammoniacal_water",
 		"count": 1,
 		"radius": 6
