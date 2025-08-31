@@ -175,6 +175,11 @@ const registerTFGItems = (event) => {
 	event.create('tfg:foil_pack')
 	event.create('tfg:clean_foil_pack')
 	event.create('tfg:flint_club_head')
+
+	event.create('tfg:twigs/strophar').tag('tfc:twigs')
+	event.create('tfg:twigs/aeronos').tag('tfc:twigs')
+	event.create('tfg:twigs/glacian').tag('tfc:twigs')
+	event.create('tfg:twigs/alphacene').tag('tfc:twigs')
 	//#endregion
 
 	//#region Cloth & String
