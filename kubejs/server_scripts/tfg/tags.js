@@ -334,6 +334,9 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:brick_index', 'minecraft:chiseled_deepslate')
 
 	// Blackstone (Pyroxenite)
+	event.remove('tfc:metamorphic_rock', 'beneath:blackstone_pebble')
+	event.add('tfc:igneous_intrusive_rock', 'beneath:blackstone_pebble')
+	event.add('rnr:loose_rock_items', 'beneath:blackstone_pebble')
 
 	event.add('forge:stone', 'minecraft:blackstone')
 	event.add('tfc:igneous_intrusive_items', 'minecraft:blackstone')
