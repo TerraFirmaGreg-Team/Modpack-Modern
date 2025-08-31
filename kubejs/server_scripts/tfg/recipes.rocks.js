@@ -18,6 +18,8 @@ function registerTFGRockRecipes(event) {
 		{ loose: 'tfg:loose/crackrack', block: 'tfg:rock/cobble_crackrack' },
 		{ loose: 'tfg:loose/moon_stone', block: 'ad_astra:moon_cobblestone' },
 		{ loose: 'tfg:brick/moon_stone', block: '4x ad_astra:moon_stone_bricks' },
+		{ loose: 'tfg:loose/moon_deepslate', block: 'tfg:rock/cobble_moon_deepslate' },
+		{ loose: 'tfg:brick/moon_deepslate', block: '4x tfg:rock/bricks_moon_deepslate' },
 		{ loose: 'tfg:loose/moon_deepslate', block: 'ad_astra:moon_deepslate' },
 		{ loose: 'tfg:loose/mars_stone', block: 'ad_astra:mars_cobblestone' },
 		{ loose: 'tfg:brick/mars_stone', block: '4x ad_astra:mars_stone_bricks' },
@@ -59,9 +61,9 @@ function registerTFGRockRecipes(event) {
 		{ cobble: 'minecraft:blackstone', loose: 'beneath:blackstone_pebble' },
 		{ cobble: 'tfg:rock/cobble_dripstone', loose: 'tfg:loose/dripstone' },
 		{ cobble: 'tfg:rock/cobble_crackrack', loose: 'tfg:loose/crackrack' },
-		{ cobble: 'ad_astra:moon_deepslate', loose: 'tfg:loose/moon_deepslate' },
+		{ cobble: 'tfg:rock/cobble_moon_deepslate', loose: 'tfg:loose/moon_deepslate' },
 		{ cobble: 'gtceu:red_granite_cobblestone', loose: 'tfg:brick/red_granite' },
-		{ cobble: 'tfg:rock/cobble_permafrost', loose: 'tfg:loose/permafrost' }
+		{ cobble: 'tfg:rock/cobble_permafrost', loose: 'tfg:loose/permafrost' },
 	]
 
 	COBBLE_TO_LOOSE.forEach(x => {
@@ -95,6 +97,7 @@ function registerTFGRockRecipes(event) {
 		{ loose: 'tfg:loose/deepslate', brick: 'tfg:brick/deepslate' },
 		{ loose: 'tfg:loose/crackrack', brick: 'minecraft:nether_brick' },
 		{ loose: 'tfg:loose/moon_stone', brick: 'tfg:brick/moon_stone' },
+		{ loose: 'tfg:loose/moon_deepslate', brick: 'tfg:brick/moon_deepslate' },
 		{ loose: 'tfg:loose/mars_stone', brick: 'tfg:brick/mars_stone' },
 		{ loose: 'tfg:loose/venus_stone', brick: 'tfg:brick/venus_stone' },
 		{ loose: 'tfg:loose/mercury_stone', brick: 'tfg:brick/mercury_stone' },
@@ -147,6 +150,8 @@ function registerTFGRockRecipes(event) {
 
 		{ raw: 'ad_astra:moon_deepslate', polished: 'tfg:rock/polished_moon_deepslate' },
 		{ raw: 'tfg:rock/hardened_moon_deepslate', polished: 'tfg:rock/polished_moon_deepslate' },
+		{ raw: 'tfg:rock/bricks_moon_deepslate', polished: 'tfg:rock/chiseled_bricks_moon_deepslate' },
+		{ raw: 'tfg:rock/chiseled_bricks_moon_deepslate', polished: 'tfg:rock/bricks_moon_deepslate' },
 		
 		{ raw: 'ad_astra:glacio_stone', polished: 'ad_astra:polished_glacio_stone' },
 		{ raw: 'tfg:rock/hardened_glacio_stone', polished: 'ad_astra:polished_glacio_stone' },
@@ -220,29 +225,47 @@ function registerTFGRockRecipes(event) {
 	})
 
 	// Stone Cutter Sets
-	//const red_granite_bricks = event.get('tfg:red_granite_bricks').getObjectIds()
-	const red_granite_bricks = Ingredient.of('#tfg:red_granite_bricks').itemIds.toArray().map(String);
-	red_granite_bricks.forEach(block => {
-		event.stonecutting(block, '#tfg:red_granite_bricks')
+	const red_granite_cutter_set = Ingredient.of('#tfg:red_granite_cutter_set').itemIds.toArray().map(String);
+	red_granite_cutter_set.forEach(block => {
+		event.stonecutting(block,
+			Ingredient.of('#tfg:red_granite_cutter_set').subtract(block)
+		).id(`tfg:stonecutter/${block.replace(/:/g, "/")}`)
+		
 	})
-	
-	event.stonecutting('ad_astra:moon_stone_bricks', 'ad_astra:chiseled_moon_stone_bricks')
-	event.stonecutting('ad_astra:chiseled_moon_stone_bricks', 'ad_astra:moon_stone_bricks')
 
-	event.stonecutting('ad_astra:glacio_stone_bricks', 'ad_astra:chiseled_glacio_stone_bricks')
-	event.stonecutting('ad_astra:chiseled_glacio_stone_bricks', 'ad_astra:glacio_stone_bricks')
+	const moon_deepslate_cutter_set = Ingredient.of('#tfg:moon_deepslate_cutter_set').itemIds.toArray().map(String);
+	moon_deepslate_cutter_set.forEach(block => {
+		event.stonecutting(block,
+			Ingredient.of('#tfg:moon_deepslate_cutter_set').subtract(block)
+		).id(`tfg:stonecutter/${block.replace(/:/g, "/")}`)
+		
+	})
 
-	event.stonecutting('ad_astra:mars_stone_bricks', 'ad_astra:chiseled_mars_stone_bricks')
-	event.stonecutting('ad_astra:chiseled_mars_stone_bricks', 'ad_astra:mars_stone_bricks')
+	// pillar shaped recipes
+	event.shaped(
+		Item.of('create:deepslate_pillar', 2), [ ' A ', ' A ' ], { A: 'minecraft:polished_deepslate' }
+	)
+	event.shaped(
+		Item.of('create:layered_deepslate', 2), [ 'AA ' ], { A: 'minecraft:polished_deepslate' }
+	)
 
-	event.stonecutting('ad_astra:venus_stone_bricks', 'ad_astra:chiseled_venus_stone_bricks')
-	event.stonecutting('ad_astra:chiseled_venus_stone_bricks', 'ad_astra:venus_stone_bricks')
+	event.shaped(
+		Item.of('create:dripstone_pillar', 2), [ ' A ', ' A ' ], { A: 'create:polished_cut_dripstone' }
+	)
+	event.shaped(
+		Item.of('create:layered_dripstone', 2), [ 'AA ' ], { A: 'create:polished_cut_dripstone' }
+	)
 
-	event.stonecutting('ad_astra:mercury_stone_bricks', 'ad_astra:chiseled_mercury_stone_bricks')
-	event.stonecutting('ad_astra:chiseled_mercury_stone_bricks', 'ad_astra:mercury_stone_bricks')
+	event.shaped(
+		Item.of('create:dripstone_pillar', 2), [ ' A ', ' A ' ], { A: 'create:polished_cut_dripstone' }
+	)
+	event.shaped(
+		Item.of('create:layered_dripstone', 2), [ 'AA ' ], { A: 'create:polished_cut_dripstone' }
+	)
 
-	event.stonecutting('ad_astra:permafrost_bricks', 'ad_astra:chiseled_permafrost_bricks')
-	event.stonecutting('ad_astra:chiseled_permafrost_bricks', 'ad_astra:permafrost_bricks')
+	event.shaped(
+		Item.of('tfg:rock/pillar_moon_deepslate', 2), [ ' A ', ' A ' ], { A: 'tfg:rock/bricks_moon_deepslate' }
+	)
 	
 	// cracked bricks
 
@@ -256,7 +279,9 @@ function registerTFGRockRecipes(event) {
 		{ raw: 'gtceu:red_granite_bricks', cracked: 'gtceu:cracked_red_granite_bricks' },
 		{ raw: 'ad_astra:mercury_stone_bricks', cracked: 'ad_astra:cracked_mercury_stone_bricks' },
 		{ raw: 'ad_astra:glacio_stone_bricks', cracked: 'ad_astra:cracked_glacio_stone_bricks' },
-		{ raw: 'ad_astra:permafrost_bricks', cracked: 'ad_astra:cracked_permafrost_bricks' }
+		{ raw: 'ad_astra:permafrost_bricks', cracked: 'ad_astra:cracked_permafrost_bricks' },
+		{ raw: 'tfg:rock/bricks_moon_deepslate', cracked: 'tfg:rock/cracked_bricks_moon_deepslate' }
+		
 	]
 
 	CRACKING.forEach(x => {

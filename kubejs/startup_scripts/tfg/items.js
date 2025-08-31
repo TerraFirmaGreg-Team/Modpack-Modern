@@ -88,6 +88,8 @@ const registerTFGItems = (event) => {
 		.translationKey('item.tfg.brick.permafrost')
 	event.create('tfg:brick/red_granite')
 		.translationKey('item.tfg.red_granite')
+	event.create('tfg:brick/moon_deepslate')
+		.translationKey('item.tfg.moon_deepslate')
 	// #endregion
 
 	// #region Primitive rubber gloves
