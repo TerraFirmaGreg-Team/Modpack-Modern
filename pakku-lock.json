@@ -12710,6 +12710,29 @@
             },
             "files": [
                 {
+                    "type": "curseforge",
+                    "file_name": "tfcgroomer-1.20.1-0.1.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6118/92/tfcgroomer-1.20.1-0.1.4.jar",
+                    "id": "6118092",
+                    "parent_id": "1003785",
+                    "hashes": {
+                        "sha1": "e1bb7e932f900cee6be0bf5faf3fc77111488865",
+                        "md5": "e4f19ca0413c9716cb86a3b50ae27a36"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 134178,
+                    "date_published": "2025-01-23T23:02:18.440Z"
+                },
+                {
                     "type": "modrinth",
                     "file_name": "tfcgroomer-1.20.1-0.1.4.jar",
                     "mc_versions": [
@@ -12729,29 +12752,6 @@
                     "required_dependencies": [],
                     "size": 134178,
                     "date_published": "2025-07-27T17:29:15.479048Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "tfcgroomer-1.20.1-0.2.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6935/736/tfcgroomer-1.20.1-0.2.0.jar",
-                    "id": "6935736",
-                    "parent_id": "1003785",
-                    "hashes": {
-                        "sha1": "ad89216cf3689907af1c28b133bae6e26f749941",
-                        "md5": "2f48a69948c27210a6c791c6c338124d"
-                    },
-                    "required_dependencies": [
-                        "302973"
-                    ],
-                    "size": 152509,
-                    "date_published": "2025-08-27T22:46:58.430Z"
                 }
             ]
         },

@@ -401,4 +401,18 @@ const registerTFGItems = (event) => {
 		.tag('tfc:sweetener')
 	//#endregion
 	
+	//#region Flax Stuff
+	event.create('tfg:flax_waste')
+		.tag('tfc:scrapable')
+	event.create('tfg:flax_tow')
+		.tag('tfg:burlap_fiber')
+		.tag('tfc:compost_browns')
+	event.create('tfg:flax_line')
+		.tag('tfc:compost_browns_low')
+	event.create('tfg:linen_thread')
+		.tag('forge:string')
+	event.create('tfg:linen_cloth')
+		.tag('forge:cloth')
+		.tag('tfc:sewing_light_cloth')
+	
 }

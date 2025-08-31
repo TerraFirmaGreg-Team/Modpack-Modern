@@ -10,9 +10,11 @@
 - Sewing Tables now use a knife instead of shears @BlueBoat29
 - Create Logistics Jars now hold 8000 mB each instead of just 1000 mB (#1707) @Ghoulcel
 - Added a way to keep your space suit with you on death, so you can more safely set your spawn on other planets (#1710) @BlueBoat29
+- Added Flax as a cold-weather alternative to jute and a plant-based option for light colored cloth @BlueBoat29 
 ### Bug fixes
 - Fixed tongs getting stuck in ovens, and now you can use them the same way you'd previously use a Peel @Pyritie
 - Allowed powders, gears, plates, double plates, springs, and small springs to be heated (#1727) @Redeix
+- Fixed rapeseed wild block model @BlueBoat29
 ### Translation updates
 - Chinese (simplified) @jmecn & @CN059
 - Ukranian @MetEnBouldry
