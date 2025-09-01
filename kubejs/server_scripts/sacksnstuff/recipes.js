@@ -159,7 +159,7 @@ const registerSNSRecipes = (event) => {
 		type: 'vintageimprovements:curving',
 		ingredients: [{ tag: 'forge:plates/steel' }],
 		itemAsHead: 'gtceu:small_pipe_extruder_mold',
-		results: [{ item: '2x sns:buckle' }],
+		results: [{ item: 'sns:buckle', count: 2 }],
 		processingTime: 80 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 	}).id('sns:vi/curving/buckle2')
 
