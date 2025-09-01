@@ -218,9 +218,14 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:any_iron_double_ingot', '#forge:double_ingots/iron')
 	event.add('tfg:any_iron_double_ingot', '#forge:double_ingots/wrought_iron')
 
+	// Allow any bronze type
 	event.add('tfg:any_bronze_frame', '#forge:frames/bronze')
 	event.add('tfg:any_bronze_frame', '#forge:frames/bismuth_bronze')
 	event.add('tfg:any_bronze_frame', '#forge:frames/black_bronze')
+	
+	event.add('forge:rods/any_bronze', '#forge:rods/bronze')
+	event.add('forge:rods/any_bronze', '#forge:rods/bismuth_bronze')
+	event.add('forge:rods/any_bronze', '#forge:rods/black_bronze')
 
 	//#region Food
 	const RAW_MEATS = [

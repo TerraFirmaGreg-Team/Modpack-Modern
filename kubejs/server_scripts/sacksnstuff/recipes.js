@@ -14,6 +14,7 @@ const registerSNSRecipes = (event) => {
 	event.remove({ id: 'sns:crafting/burlap_sack'})
 	event.remove({ id: 'sns:crafting/seed_pouch'})
 	event.remove({ id: 'sns:crafting/straw_basket'})
+	event.remove({ id: 'sns:crafting/frame_pack'})
 	
 	event.remove({ output: 'sns:pack_frame'})
 	
@@ -57,12 +58,12 @@ const registerSNSRecipes = (event) => {
 		event.shaped('sns:leather_sack', [
 				'AAA',
 				'BCB',
-				'DBE'
+				' BE'
 			], {
 				A: '#tfg:burlap_fiber',
 				B: 'sns:leather_strip',
 				C: 'sns:unfinished_leather_sack',
-				D: 'minecraft:name_tag',
+				//D: 'minecraft:name_tag',
 				E: 'tfc:bone_needle'
 			}
 		)
@@ -108,6 +109,22 @@ const registerSNSRecipes = (event) => {
 		.ingredient('tfc:straw')
 		.outsideSlotRequired(false)
 		.id('sns:straw_knapping/straw_basket')
+	
+	
+	event.recipes.tfc.damage_inputs_shaped_crafting(
+		event.shaped('sns:frame_pack', [
+				'ABA',
+				'ACA',
+				'DBE'
+			], {
+				A: 'sns:bound_leather_strip',
+				B: 'sns:reinforced_fabric',
+				C: 'sns:pack_frame',
+				D: 'minecraft:name_tag',
+				E: 'tfc:bone_needle'
+			}
+		)
+	).id('sns:crafting/frame_pack')
 	
 	//#region helper items	
 		
@@ -168,11 +185,27 @@ const registerSNSRecipes = (event) => {
 			'A A',
 			'AAA'
 		], {
-			A: '#forge:rods/wrought_iron'
+			A: '#forge:rods/any_bronze'
 			
 		}).id('sns:shaped/pack_frame')
 
-	event.shaped('2x sns:reinforced_fiber', [
+	event.shaped('sns:pack_frame', [
+			' A ',
+			'A A',
+			' A '
+		], {
+			A: '#forge:rods/wrought_iron'
+			
+		}).id('sns:shaped/pack_frame_iron')
+
+	event.recipes.gtceu.assembler('sns:pack_frame')
+		.itemInputs('4x #forge:rods/wrought_iron')
+		.itemOutputs('sns:pack_frame')
+		.circuit(4)
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.shaped('3x sns:reinforced_fiber', [
 			'AAA',
 			'BBB',
 			'AAA'
