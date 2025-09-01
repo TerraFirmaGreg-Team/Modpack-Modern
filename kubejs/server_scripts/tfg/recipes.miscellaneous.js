@@ -1367,6 +1367,60 @@ function registerTFGMiscellaneousRecipes(event) {
 		B: 'beneath:warped_straw'
 	}).id('tfg:shaped_large_nest_warped')
 		
-	
 	//#endregion
+	
+	//#region flax stuff
+	
+	event.recipes.tfc.scraping(
+		'tfg:flax_waste',
+		'tfg:flax_product',
+		'tfg:item/flax_waste',
+		'tfg:item/flax_product',
+		'2x tfg:flax_line'
+	).id('tfg:scraping/flax_line')
+	
+	event.recipes.tfc.scraping(
+		'tfc:groundcover/humus',
+		'tfg:flax_waste',
+		'tfc:item/groundcover/humus',
+		'tfg:item/flax_waste',
+		'tfg:flax_tow'
+	).id('tfg:scraping/flax_tow')
+	
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('4x tfg:linen_thread', [
+			'tfg:flax_line',
+			'tfc:spindle'
+		]).id('tfg:shapeless/linen_thread')
+	)
+	
+	//#region looming
+	event.recipes.tfc.loom(
+		'1x tfg:linen_cloth',
+		'16x tfg:linen_thread',
+		8,
+		'tfc:block/burlap'
+	)
+	
+	event.recipes.tfc.loom(
+		'1x tfc:burlap_cloth',
+		'16x tfg:flax_tow',
+		12,
+		'tfc:block/burlap'
+	)
+		
+	event.recipes.gtceu.assembler('tfg:assembler/linen_cloth')
+		.itemInputs('16x tfg:linen_thread')
+		.circuit(10)
+		.itemOutputs('tfg:linen_cloth')
+		.duration(100)
+		.EUt(4)
+	
+	event.recipes.gtceu.assembler('tfg:assembler/flax_burlap')
+		.itemInputs('16x tfg:flax_tow')
+		.circuit(10)
+		.itemOutputs('tfc:burlap_cloth')
+		.duration(100)
+		.EUt(4)
+
 }
