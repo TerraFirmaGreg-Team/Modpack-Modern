@@ -16,7 +16,7 @@
 		slotCap = 32
 		#The maximum item size allowed in the container
 		#Allowed Values: TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE, HUGE
-		allowedSize = "SMALL"
+		allowedSize = "NORMAL"
 
 	["Container Item Config"."Leather Sack"]
 		#Determines if this container will automatically pickup items
@@ -81,7 +81,7 @@
 		slotCount = 27
 		#Item stack max for the type of container
 		#Range: 1 ~ 512
-		slotCap = 64
+		slotCap = 128
 		#The maximum item size allowed in the container
 		#Allowed Values: TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE, HUGE
 		allowedSize = "SMALL"
