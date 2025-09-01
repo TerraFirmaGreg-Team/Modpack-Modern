@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "betterend:block/lanceleaf_seed_0" },
+            { "model": "betterend:block/lanceleaf_seed_1" },
+            { "model": "betterend:block/lanceleaf_seed_2" },
+            { "model": "betterend:block/lanceleaf_seed_3" }
+        ]
+    }
+}

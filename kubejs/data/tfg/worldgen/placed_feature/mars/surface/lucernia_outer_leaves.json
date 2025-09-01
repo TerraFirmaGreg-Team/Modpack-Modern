@@ -1,14 +1,13 @@
 {
-	"feature": "tfg:mars/surface/small_amaranita_mushroom",
+	"feature": "tfg:mars/surface/lucernia_outer_leaves",
 	"placement": [
 		{
-			"type": "minecraft:rarity_filter",
-			"chance": 2
+			"type": "minecraft:count",
+			"count": 2
 		},
 		{
 			"type": "tfc:climate",
-			"min_forest": "none",
-			"max_forest": "normal"
+			"min_forest": "sparse"
 		},
 		{
 			"type": "minecraft:in_square"

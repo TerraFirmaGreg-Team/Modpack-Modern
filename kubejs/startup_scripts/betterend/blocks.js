@@ -61,6 +61,9 @@ function registerBetterEndBlocks(event) {
 		.box(3, 0, 3, 13, 8, 13)
 	createPlant(event, 'lucernia_outer_leaves', 'mars')
 	// TODO: needs a feature
+	createPlant(event, 'lanceleaf_small', 'mars')
+		.box(4, 0, 4, 12, 8, 12)
+	// TODO: needs a feature
 
 	// 1 block tall waterlogged
 
@@ -83,6 +86,7 @@ function registerBetterEndBlocks(event) {
 		.tagBlock('minecraft:mineable/hoe')
 		.mapColor('fire')
 		.seasonalColors(false)
+		.tagItem('tfg:mars_plants')
 		.fallenLeaves(leaves => {
 			leaves.noCollision()
 			leaves.notSolid()
@@ -105,6 +109,7 @@ function registerBetterEndBlocks(event) {
 		.tagBlock('minecraft:mineable/hoe')
 		.mapColor('color_orange')
 		.seasonalColors(false)
+		.tagItem('tfg:mars_plants')
 		.fallenLeaves(leaves => {
 			leaves.noCollision()
 			leaves.notSolid()
@@ -130,8 +135,22 @@ function registerBetterEndBlocks(event) {
 	// end lotus
 	// lanceleaf
 
+	event.create('betterend:large_amaranita_mushroom', 'tfg:tall_decorative_plant')
+		.height(3)
+		.soundType('nether_wart')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagItem('tfg:mars_plants')
+		.tagItem('forge:mushrooms')
+		.mapColor('fire')
 
-	// ??
+	event.create('betterend:lanceleaf', 'tfg:tall_decorative_plant')
+		.height(5)
+		.soundType('crop')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagItem('tfg:mars_plants')
+		.mapColor('color_orange')
+
+	// europa...?
 
 	createPlant(event, 'crystal_grass', 'unused')
 		.box(3, 0, 3, 13, 12, 13)

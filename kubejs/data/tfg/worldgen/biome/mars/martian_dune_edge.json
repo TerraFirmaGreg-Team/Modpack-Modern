@@ -43,11 +43,11 @@
 			"tfc:cobble_boulder_small_patch",
 			"tfg:mars/surface/small_skull_and_bones",
 			"tfg:mars/surface/large_skull_and_bones",
-			"tfg:mars/surface/rotten_flesh_patch",
-			"tfg:mars/surface/feather_patch"
+			"tfg:mars/surface/rotten_flesh_patch"
 		],
 		[
-
+			"tfg:mars/surface/feather_patch_wraptor",
+			"tfg:mars/surface/feather_patch_glider"
 		],
 		"#tfg:mars_top_layer_modification"
 	],

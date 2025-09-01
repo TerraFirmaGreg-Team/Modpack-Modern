@@ -265,7 +265,8 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfg:moon_plants')
 		.tagBlock('minecraft:replaceable')
 
-	event.create('tfg:corallium_arenicolus_0', 'tfg:double_decorative_plant')
+	event.create('tfg:corallium_arenicolus_0', 'tfg:tall_decorative_plant')
+		.height(2)
 		.soundType('nether_wart')
 		.tagItem('tfg:venus_plants')
 		.lightLevel(0.4)

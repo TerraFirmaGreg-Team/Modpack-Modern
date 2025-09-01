@@ -65,7 +65,7 @@ TFCEvents.worldgenData(event => {
 		'ad_astra:aeronos_stem',
 		'ad_astra:aeronos_cap',
 		'betterend:cave_bush',
-		'betterend:cave_bush',
+		'betterend:cave_bush_fallen',
 		[
 			"ad_astra:aeronos_mushroom",
 			'betterend:cave_bush',
@@ -86,7 +86,7 @@ TFCEvents.worldgenData(event => {
 		'ad_astra:strophar_stem',
 		'ad_astra:strophar_cap',
 		'betterend:lucernia_leaves',
-		'betterend:lucernia_leaves',
+		'betterend:lucernia_leaves_fallen',
 		[
 			"ad_astra:strophar_mushroom",
 			'betterend:lucernia_leaves',

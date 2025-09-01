@@ -1,14 +1,13 @@
 {
-	"feature": "tfg:mars/surface/small_amaranita_mushroom",
+	"feature": "tfg:mars/surface/large_amaranita_mushroom",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 2
+			"chance": 3
 		},
 		{
 			"type": "tfc:climate",
-			"min_forest": "none",
-			"max_forest": "normal"
+			"min_forest": "edge"
 		},
 		{
 			"type": "minecraft:in_square"
