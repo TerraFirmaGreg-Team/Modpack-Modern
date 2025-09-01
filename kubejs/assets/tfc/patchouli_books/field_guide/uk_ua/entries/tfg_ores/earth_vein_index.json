@@ -2255,7 +2255,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Джерело$(): Свободи\uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
+      "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Джерело$(): Свободи \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
       "type": "patchouli:multiblock"
     },
     {

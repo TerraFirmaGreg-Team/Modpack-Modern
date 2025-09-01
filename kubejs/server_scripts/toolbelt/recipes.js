@@ -10,7 +10,7 @@ const registerToolBeltRecipes = (event) => {
 		'BAB'
 	], {
 		A: '#forge:string',
-		B: '#forge:leather',
+		B: 'sns:leather_strip',
 		C: '#forge:bolts/rose_gold'
 	}).id('tfg:toolbelt/shaped/pouch')
 
@@ -20,8 +20,8 @@ const registerToolBeltRecipes = (event) => {
 		'BCB'
 	], {
 		A: '#forge:string',
-		B: '#forge:leather',
-		C: '#forge:plates/wrought_iron'
+		B: 'sns:leather_strip',
+		C: 'sns:buckle'
 	}).id(`tfg:toolbelt/shaped/belt_${2}`)
 
 
