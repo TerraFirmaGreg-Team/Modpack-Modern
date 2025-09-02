@@ -264,7 +264,7 @@ const registerAdAstraRecipes = (event) => {
 		.itemOutputs('2x tfg:space_suit_fabric')
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
-	/*
+	
 	event.recipes.gtceu.forming_press('better_space_suit_fabric')
 		.itemInputs(
 			'#forge:foils/polybenzimidazole',
@@ -275,7 +275,7 @@ const registerAdAstraRecipes = (event) => {
 		.itemOutputs('2x tfg:better_space_suit_fabric')
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.IV])
-*/
+
 	event.shaped('ad_astra:space_helmet', [
 		'AAA',
 		'ADA',
@@ -285,7 +285,7 @@ const registerAdAstraRecipes = (event) => {
 		B: 'tfg:space_suit_fabric',
 		D: '#forge:small_fluid_pipes/polyethylene'
 	}).id('tfg:space_helmet')
-/*
+
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_helmet')
 		.itemInputs(
 			'ad_astra:space_helmet',
@@ -296,7 +296,7 @@ const registerAdAstraRecipes = (event) => {
 		.itemOutputs('ad_astra:netherite_space_helmet')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.IV])
-*/
+
 	event.shaped('ad_astra:space_suit', [
 		'B B',
 		'BDB',
@@ -308,7 +308,7 @@ const registerAdAstraRecipes = (event) => {
 
 	event.shapeless('ad_astra:space_suit', ['ad_astra:space_suit'])
 		.id('tfg:empty_space_suit')
-/*
+
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_suit')
 		.itemInputs('ad_astra:space_suit', '5x #forge:plates/tungsten_steel','5x tfg:better_space_suit_fabric')
 		.itemOutputs('ad_astra:netherite_space_suit')
@@ -317,7 +317,7 @@ const registerAdAstraRecipes = (event) => {
 
 	event.shapeless('ad_astra:netherite_space_suit', ['ad_astra:netherite_space_suit'])
 		.id('tfg:empty_netherite_space_suit')
-*/
+
 	event.shaped('ad_astra:space_pants', [
 		'BAB',
 		'B B',
@@ -326,13 +326,13 @@ const registerAdAstraRecipes = (event) => {
 		A: 'gtceu:hv_electric_motor',
 		B: 'tfg:space_suit_fabric',
 	}).id('tfg:space_pants')
-/*
+
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_pants')
 		.itemInputs('ad_astra:space_pants', '4x #forge:plates/tungsten_steel', '4x tfg:better_space_suit_fabric')
 		.itemOutputs('ad_astra:netherite_space_pants')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.IV])
-*/
+
 	event.shaped('ad_astra:space_boots', [
 		'B B',
 		'A A'
@@ -340,13 +340,13 @@ const registerAdAstraRecipes = (event) => {
 		A: '#forge:plates/polyphenylene_sulfide',
 		B: 'tfg:space_suit_fabric'
 	}).id('tfg:space_boots')
-/*
+
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_boots')
 		.itemInputs('ad_astra:space_boots', '2x #forge:plates/tungsten_steel', '2x tfg:better_space_suit_fabric')
 		.itemOutputs('ad_astra:netherite_space_boots')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.IV])
-*/
+
 
 	event.shaped('ad_astra:oxygen_gear', [
 		'BAB',

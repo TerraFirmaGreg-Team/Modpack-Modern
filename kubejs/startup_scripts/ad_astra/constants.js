@@ -82,15 +82,7 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:ostrum_tank',
 	'tfg:rocket_fin_t3',
 	'tfg:rocket_cone_t3',
-	'tfg:elite_power_thruster',
-	'tfg:better_space_suit_fabric',
-	'ad_astra:netherite_space_helmet',
-	'ad_astra:netherite_space_suit',
-	'ad_astra:netherite_space_pants',
-	'ad_astra:netherite_space_boots',
-	
-
-
+	'tfg:elite_power_thruster',	
 
 	// Disabled until LuV planet
 	
