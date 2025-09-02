@@ -46,6 +46,10 @@ const registerTFGItemTags = (event) => {
 	//Knapping
 	event.add('tfc:any_knapping', 'minecraft:flint')
 
+	//Circuit Stuff
+	event.add('tfg:components/uv_leds', 'tfg:uv_led')
+	event.add('tfg:components/uv_leds', 'tfg:smd_uv_led')
+
 	//#region Tools & Armor
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/wood')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/brass')
