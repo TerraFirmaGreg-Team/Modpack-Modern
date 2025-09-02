@@ -289,30 +289,31 @@ const registerTFGCrops = (event) => {
 
     event.create('tfg:saplings/crimson', 'tfc:sapling')
         .features('tfg:mars/tree/crimson')
-        .translationKey('minecraft.block.crimson_fungus')
+        .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(6)
 
     event.create('tfg:saplings/warped', 'tfc:sapling')
         .features('tfg:mars/tree/warped')
-        .translationKey('minecraft.block.warped_fungus')
+        .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(6)
 
     event.create('tfg:saplings/alphacene', 'tfc:sapling')
         .features('species:alphacene_mushroom')
-        .translationKey('species.block.alphacene_mushroom')
+        .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(3)
 
     event.create('tfg:saplings/strophar', 'tfc:sapling')
         .features('tfg:mars/tree/strophar')
-        .translationKey('ad_astra.block.strophar_mushroom')
+        .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(7)
 
     event.create('tfg:saplings/aeronos', 'tfc:sapling')
         .features('tfg:mars/tree/aeronos')
-        .translationKey('ad_astra.block.strophar_mushroom')
+        .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(9)
 
     event.create('tfg:saplings/glacian', 'tfc:sapling')
         .features('tfg:mars/tree/glacian')
+        .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(9)
 }
