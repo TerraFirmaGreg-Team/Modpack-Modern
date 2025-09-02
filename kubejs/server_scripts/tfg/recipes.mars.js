@@ -4,7 +4,7 @@ const $ChanceLogic = Java.loadClass('com.gregtechceu.gtceu.api.recipe.chance.log
 
     // Ostrum Harvester
 
- event.recipes.gtceu.ostrum_harvester(`ostrum_harvesting`)
+ event.recipes.gtceu.ostrum_harvester(`tfg:ostrum_harvesting`)
     .perTick(true)
     .inputFluids('gtceu:drilling_fluid 4')
     .perTick(false)
@@ -16,7 +16,7 @@ const $ChanceLogic = Java.loadClass('com.gregtechceu.gtceu.api.recipe.chance.log
 
     // Ostrum Linear Accelerator Recipes
 
-event.recipes.gtceu.ostrum_linear_accelerator('ostrum_transformation')
+event.recipes.gtceu.ostrum_linear_accelerator('tfg:ostrum_transformation')
     .inputFluids('gtceu:residual_radioactive_concoction 1000')
     .itemInputs('32x #forge:dusts/ostrum')
     .dimension('ad_astra:mars')
@@ -27,7 +27,7 @@ event.recipes.gtceu.ostrum_linear_accelerator('ostrum_transformation')
     .duration(20*5)
     .EUt(GTValues.VA[GTValues.EV]);
 
-event.recipes.gtceu.ostrum_linear_accelerator('lightweight_ostrum')
+event.recipes.gtceu.ostrum_linear_accelerator('tfg:lightweight_ostrum')
     .inputFluids('gtceu:lightweight_ostrum_vapor 1000')
     .inputFluids('gtceu:residual_radioactive_concoction 100')
     .inputFluids(Fluid.of('gtceu:heavy_water', 1000))
@@ -38,7 +38,7 @@ event.recipes.gtceu.ostrum_linear_accelerator('lightweight_ostrum')
     .duration(20*5)
     .EUt(GTValues.VA[GTValues.IV]);
 
-event.recipes.gtceu.ostrum_linear_accelerator('ostrum')
+event.recipes.gtceu.ostrum_linear_accelerator('tfg:ostrum')
     .inputFluids('gtceu:ostrum_vapor 1000')
     .inputFluids('gtceu:residual_radioactive_concoction 100')
     .inputFluids(Fluid.of('gtceu:radon', 100))
@@ -49,7 +49,7 @@ event.recipes.gtceu.ostrum_linear_accelerator('ostrum')
     .duration(20*5)
     .EUt(GTValues.VA[GTValues.IV]);
 
-event.recipes.gtceu.ostrum_linear_accelerator('dense_ostrum')
+event.recipes.gtceu.ostrum_linear_accelerator('tfg:dense_ostrum')
     .inputFluids('gtceu:dense_ostrum_vapor 1000')
     .inputFluids('gtceu:residual_radioactive_concoction 100')
     .inputFluids(Fluid.of('gtceu:tritiated_water', 500))
