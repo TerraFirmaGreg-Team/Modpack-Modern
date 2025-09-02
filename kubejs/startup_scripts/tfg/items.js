@@ -175,6 +175,11 @@ const registerTFGItems = (event) => {
 	event.create('tfg:foil_pack')
 	event.create('tfg:clean_foil_pack')
 	event.create('tfg:flint_club_head')
+
+	event.create('tfg:twigs/strophar').tag('tfc:twigs')
+	event.create('tfg:twigs/aeronos').tag('tfc:twigs')
+	event.create('tfg:twigs/glacian').tag('tfc:twigs')
+	event.create('tfg:twigs/alphacene').tag('tfc:twigs')
 	//#endregion
 
 	//#region Cloth & String
@@ -395,5 +400,19 @@ const registerTFGItems = (event) => {
 		.tag('tfg:haste_ingredients')
 		.tag('tfc:sweetener')
 	//#endregion
+	
+	//#region Flax Stuff
+	event.create('tfg:flax_waste')
+		.tag('tfc:scrapable')
+	event.create('tfg:flax_tow')
+		.tag('tfg:burlap_fiber')
+		.tag('tfc:compost_browns')
+	event.create('tfg:flax_line')
+		.tag('tfc:compost_browns_low')
+	event.create('tfg:linen_thread')
+		.tag('forge:string')
+	event.create('tfg:linen_cloth')
+		.tag('forge:cloth')
+		.tag('tfc:sewing_light_cloth')
 	
 }

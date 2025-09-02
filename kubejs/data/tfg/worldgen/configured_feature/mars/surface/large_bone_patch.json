@@ -60,7 +60,7 @@
 							{
 								"type": "minecraft:matching_block_tag",
 								"offset": [ 0, -1, 0 ],
-								"tag": "tfg:mars_soil"
+								"tag": "ad_astra:mars_stone_replaceables"
 							}
 						]
 					}

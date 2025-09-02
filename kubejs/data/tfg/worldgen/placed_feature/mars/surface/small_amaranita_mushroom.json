@@ -3,7 +3,12 @@
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 3
+			"chance": 2
+		},
+		{
+			"type": "tfc:climate",
+			"min_forest": "none",
+			"max_forest": "normal"
 		},
 		{
 			"type": "minecraft:in_square"

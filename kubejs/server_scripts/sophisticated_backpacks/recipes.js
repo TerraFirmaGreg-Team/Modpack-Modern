@@ -10,14 +10,15 @@ const registerSophisticatedBackpacksRecipes = (event) => {
 
     // Базовый рюкзак
     event.shaped('sophisticatedbackpacks:backpack', [
-        'ABD', 
-        'ACA',
+        'AED', 
+        'BCB',
         'BBB'  
     ], {
-        A: '#forge:string',
-        B: '#forge:leather',  
-        C: '#forge:chests/wooden',
-        D: 'minecraft:name_tag'   
+        A: 'sns:reinforced_fiber',
+        B: 'sns:bound_leather_strip',  
+        C: 'sns:pack_frame',
+        D: 'minecraft:name_tag',
+		E: 'sns:reinforced_fabric'
     }).id('tfg:sophisticated_backpacks/shaped/backpack')
 
     // Железный рюкзак

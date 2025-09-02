@@ -42,7 +42,10 @@
 		[],
 		"#tfg:mars_veins",
 		[
-			"tfg:mars/terrain/venus_sand_disc"
+			"tfg:mars/terrain/venus_sand_disc",
+			"tfg:mars/terrain/basalt_delta",
+			"tfg:mars/terrain/gabbro_delta",
+			"tfg:mars/terrain/red_granite_delta"
 		],
 		[
 			"tfc:raw_boulder",
@@ -51,14 +54,19 @@
 			"tfg:mars/surface/small_skull_and_bones",
 			"tfg:mars/surface/large_skull_and_bones",
 			"tfg:mars/surface/rotten_flesh_patch",
-			"tfg:mars/surface/feather_patch"
+			"tfg:mars/surface/pile_venus_sand",
+			"tfg:mars/surface/flint_patch"
 		],
 		[
 			"tfg:mars/surface/charnia",
+			"tfg:mars/surface/flamaea",
+
 			"tfg:mars/surface/aeridium",
 			"tfg:mars/surface/clawfern",
-			"tfg:mars/surface/flamaea",
-			"tfg:mars/surface/flammalix"
+			"tfg:mars/surface/flammalix",
+
+			"tfg:mars/surface/feather_patch_wraptor",
+			"tfg:mars/surface/feather_patch_glider"
 		],
 		"#tfg:mars_top_layer_modification"
 	],

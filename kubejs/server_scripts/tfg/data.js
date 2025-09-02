@@ -258,6 +258,8 @@ const registerTFGFoodData = (event) => {
 		food.decayModifier(1.5)
 	})
 	
+
+	
 	
 	
 	// high-tech food
@@ -429,6 +431,15 @@ const registerTFGCropRanges = (event) => {
 		climate.hydrationWiggle(7.5)
 		climate.temperatureWiggle(1.5)
 	}, 'tfg:rapeseed')
+	
+	event.climateRange(climate => {
+		climate.minHydration(15)
+		climate.maxHydration(65)
+		climate.minTemperature(-8)
+		climate.maxTemperature(25)
+		climate.hydrationWiggle(6.5)
+		climate.temperatureWiggle(3)
+	}, 'tfg:flax')
 
 	// Mars
 	event.climateRange(climate => {
@@ -520,6 +531,24 @@ const registerTFGFLPlanters = (event) => {
 			'tfg:block/crop/rapeseed_greenhouse_1',
 			'tfg:block/crop/rapeseed_greenhouse_2',
 			'tfg:block/crop/rapeseed_greenhouse_3'
+		],
+		null
+	)
+	
+	event.firmalifePlantable(
+		'tfg:flax_seeds',
+		'large',
+		0,
+		3,
+		0.2,
+		'tfg:flax_seeds',
+		'tfg:flax_product',
+		'nitrogen',
+		[
+			'tfg:block/crop/flax_age_0',
+			'tfg:block/crop/flax_age_1',
+			'tfg:block/crop/flax_age_5_top',
+			'tfg:block/crop/flax_age_6_top'
 		],
 		null
 	)

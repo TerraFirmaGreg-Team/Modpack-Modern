@@ -1,0 +1,8 @@
+{
+	"parent": "betterend:block/cross_inverted",
+	"render_type": "cutout_mipped",
+	"textures": {
+		"cross": "betterend:block/inflexia",
+		"particle": "betterend:block/inflexia"
+	}
+}

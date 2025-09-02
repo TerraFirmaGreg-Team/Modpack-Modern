@@ -30,6 +30,15 @@
 					"predicate_type": "minecraft:tag_match",
 					"tag": "tfc:dirt"
 				}
+			},
+			{
+				"state": {
+					"Name": "create:ochrum"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "ad_astra:venus_sand"
+				}
 			}
 		]
 	}

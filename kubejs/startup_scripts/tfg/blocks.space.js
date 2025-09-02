@@ -265,7 +265,8 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfg:moon_plants')
 		.tagBlock('minecraft:replaceable')
 
-	event.create('tfg:corallium_arenicolus_0', 'tfg:double_decorative_plant')
+	event.create('tfg:corallium_arenicolus_0', 'tfg:tall_decorative_plant')
+		.height(2)
 		.soundType('nether_wart')
 		.tagItem('tfg:venus_plants')
 		.lightLevel(0.4)
@@ -417,6 +418,52 @@ function registerTFGSpaceBlocks(event) {
 		.tagBoth('tfc:dirt')
 		.fullBlock(true)
 		.opaque(true)
+
+	event.create('tfg:groundcover/glider_feather', 'tfc:ground_cover')
+		.box(4, 0, 4, 12, 2, 12)
+		.soundType('wool')
+		.groundCoverModelShape('feather')
+		.withPreexistingItem('wan_ancient_beasts:glider_feather')
+		.textureAll('wan_ancient_beasts:item/glider_feather')
+
+	event.create('tfg:groundcover/wraptor_feather', 'tfc:ground_cover')
+		.box(4, 0, 4, 12, 2, 12)
+		.soundType('wool')
+		.groundCoverModelShape('feather')
+		.withPreexistingItem('minecraft:feather')
+		.textureAll('tfg:item/wraptor_wool')
+
+	event.create('tfg:groundcover/aeronos_stick', 'tfc:ground_cover')
+		.box(3, 0, 3, 13, 3, 13)
+		.groundCoverModelShape('twig')
+		.withPreexistingItem('tfg:twigs/aeronos')
+		.texture('particle', 'ad_astra:block/aeronos_stem')
+		.texture('all', 'ad_astra:block/aeronos_stem')
+		.texture('top', 'ad_astra:block/aeronos_stem_inside')
+
+	event.create('tfg:groundcover/strophar_stick', 'tfc:ground_cover')
+		.box(3, 0, 3, 13, 3, 13)
+		.groundCoverModelShape('twig')
+		.withPreexistingItem('tfg:twigs/strophar')
+		.texture('particle', 'ad_astra:block/strophar_stem')
+		.texture('all', 'ad_astra:block/strophar_stem')
+		.texture('top', 'ad_astra:block/strophar_stem_inside')
+
+	event.create('tfg:groundcover/glacian_stick', 'tfc:ground_cover')
+		.box(3, 0, 3, 13, 3, 13)
+		.groundCoverModelShape('twig')
+		.withPreexistingItem('tfg:twigs/glacian')
+		.texture('particle', 'ad_astra:block/glacian_log')
+		.texture('all', 'ad_astra:block/glacian_log')
+		.texture('top', 'ad_astra:block/glacian_log_top')
+
+	event.create('tfg:groundcover/alphacene_stick', 'tfc:ground_cover')
+		.box(3, 0, 3, 13, 3, 13)
+		.groundCoverModelShape('twig')
+		.withPreexistingItem('tfg:twigs/alphacene')
+		.texture('particle', 'species:block/alphacene_mushroom_block')
+		.texture('all', 'species:block/alphacene_mushroom_block')
+		.texture('top', 'minecraft:block/mushroom_stem')
 
 	// #endregion
 
