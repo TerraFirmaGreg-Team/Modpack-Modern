@@ -968,7 +968,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.supply_cart.title}"
-			x: 6.0d
+			x: 4.5d
 			y: -1.5d
 		}
 		{
@@ -999,7 +999,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.equines.title}"
-			x: 5.0d
+			x: 6.5d
 			y: -1.5d
 		}
 		{
@@ -1020,7 +1020,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.animal_cart.title}"
-			x: 7.0d
+			x: 5.5d
 			y: -1.5d
 		}
 		{
@@ -1041,7 +1041,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.plow.title}"
-			x: 8.0d
+			x: 8.5d
 			y: -1.5d
 		}
 		{
@@ -1417,6 +1417,40 @@
 			title: "{quests.tfg_tips.aluminium_hopper.title}"
 			x: 18.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["05528D09F7EE6E33"]
+			description: ["{quests.tfg_tips.horseshoes.desc}"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "sns:metal/horseshoes/steel"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "40566F6665A095C6"
+			subtitle: "{quests.tfg_tips.horseshoes.subtitle}"
+			tasks: [{
+				id: "75C43AA489BAE404"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(sns:metal/horseshoes/steel)item(sns:metal/horseshoes/black_steel)item(sns:metal/horseshoes/blue_steel)item(sns:metal/horseshoes/red_steel))"
+					}
+				}
+				title: "{quests.tfg_tips.horseshoes.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.horseshoes.title}"
+			x: 7.5d
+			y: -1.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.transportation_tips.subtitle}"]
