@@ -24,6 +24,7 @@ TFCEvents.worldgenData(event => {
 		[ // ground cover
 			'minecraft:crimson_fungus',
 			'beneath:wood/fallen_leaves/crimson',
+			'beneath:wood/leaves/crimson',
 			'beneath:wood/twig/crimson',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
@@ -49,6 +50,7 @@ TFCEvents.worldgenData(event => {
 		[
 			'minecraft:warped_fungus',
 			'beneath:wood/fallen_leaves/warped',
+			'beneath:wood/leaves/warped',
 			'beneath:wood/twig/warped',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
