@@ -42,7 +42,10 @@
 		[],
 		"#tfg:mars_veins",
 		[
-			"tfg:mars/terrain/venus_sand_disc"
+			"tfg:mars/terrain/venus_sand_disc",
+			"tfg:mars/terrain/basalt_delta",
+			"tfg:mars/terrain/gabbro_delta",
+			"tfg:mars/terrain/red_granite_delta"
 		],
 		[
 			"tfc:raw_boulder",
