@@ -6,26 +6,10 @@
 				"type": "minecraft:simple_block",
 				"config": {
 					"to_place": {
-						"type": "minecraft:weighted_state_provider",
-						"entries": [
-							{
-								"data": {
-									"Name": "tfc:groundcover/bone"
-								},
-								"weight": 60
-							},
-							{
-								"data": {
-									"Name": "species:bone_spike",
-									"Properties": {
-										"thickness": "tip",
-										"vertical_direction": "up",
-										"waterlogged": "false"
-									}
-								},
-								"weight": 40
-							}
-						]
+						"type": "minecraft:simple_state_provider",
+						"state": {
+							"Name": "tfc:groundcover/flint"
+						}
 					}
 				}
 			},
@@ -49,8 +33,8 @@
 				}
 			]
 		},
-		"tries": 8,
-		"xz_spread": 3,
+		"tries": 12,
+		"xz_spread": 5,
 		"y_spread": 2
 	}
 }

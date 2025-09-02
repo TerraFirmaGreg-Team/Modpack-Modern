@@ -146,18 +146,6 @@
 							"weirdness": [ -1, 1 ]
 						}
 					},
-					{
-						"biome": "tfg:mars/martian_river",
-						"parameters": {
-							"continentalness": [ 0.01, 1 ],
-							"depth": 0,
-							"erosion": [ 0, 1 ],
-							"humidity": [ -1, 1 ],
-							"offset": 0,
-							"temperature": [ -1, 1 ],
-							"weirdness": [ -0.07, 0.07 ]
-						}
-					},
 
 
 					{
@@ -197,6 +185,19 @@
 						}
 					},
 
+
+					{
+						"biome": "tfg:mars/martian_river",
+						"parameters": {
+							"continentalness": [ -0.09, 0.65 ],
+							"depth": 0,
+							"erosion": [ 0, 1 ],
+							"humidity": [ -1, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -0.07, 0.07 ]
+						}
+					},
 
 
 					{

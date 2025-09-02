@@ -309,6 +309,13 @@ const registerAdAstraBlockTags = (event) => {
 	event.remove('ad_astra:strophar_caps', 'ad_astra:strophar_cap')
 	event.remove('ad_astra:aeronos_caps', 'ad_astra:aeronos_cap')
 
+	event.add('tfg:environment_not_sturdy', 'ad_astra:strophar_cap')
+	event.add('tfg:environment_not_sturdy', 'ad_astra:aeronos_cap')
+	event.add('tfg:environment_not_sturdy', 'minecraft:nether_wart_block')
+	event.add('tfg:environment_not_sturdy', 'minecraft:warped_wart_block')
+	event.add('tfg:environment_not_sturdy', 'species:alphacene_mushroom_block')
+	event.add('tfg:environment_not_sturdy', 'species:alphacene_moss_block')
+
 	global.AD_ASTRA_WOOD.forEach(wood => {
 
 		if (wood.log) {
