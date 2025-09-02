@@ -20,11 +20,11 @@ const $ChanceLogic = Java.loadClass('com.gregtechceu.gtceu.api.recipe.chance.log
 event.recipes.gtceu.ostrum_linear_accelerator('tfg:ostrum_transformation')
     .inputFluids('gtceu:residual_radioactive_concoction 1000')
     .itemInputs('32x #forge:dusts/ostrum')
-    .dimension('ad_astra:mars')
     .chancedFluidOutputLogic($ChanceLogic.XOR)
     .chancedFluidOutput('gtceu:lightweight_ostrum_vapor',6000,0)
     .chancedFluidOutput('gtceu:ostrum_vapor',3000,0)
     .chancedFluidOutput('gtceu:dense_ostrum_vapor',1000,0)
+    .dimension('ad_astra:mars')
     .duration(20*5)
     .EUt(GTValues.VA[GTValues.EV]);
 
