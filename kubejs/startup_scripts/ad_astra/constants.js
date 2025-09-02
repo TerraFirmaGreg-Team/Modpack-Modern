@@ -101,7 +101,11 @@ global.AD_ASTRA_DISABLED_FLUIDS =
 	'ad_astra:hydrogen',
 	'ad_astra:oil',
 	'ad_astra:fuel',
-	'ad_astra:cryo_fuel'
+	'ad_astra:cryo_fuel',
+
+	'gtceu:molten_desh',
+	'gtceu:molten_ostrum',
+	'gtceu:molten_calorite'
 ];
 
 global.BREATHABLE_COMPRESSED_AIRS =
