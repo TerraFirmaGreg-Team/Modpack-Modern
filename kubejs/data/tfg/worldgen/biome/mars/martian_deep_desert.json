@@ -51,16 +51,48 @@
 		]
 	],
 	"has_precipitation": false,
+	"creature_spawn_probability": 0.00003,
 	"spawn_costs": {
-		
+		"endermanoverhaul:cave_enderman": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"species:quake": {
+			"energy_budget": 0.2,
+			"charge": 0.7
+		}
 	},
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
-		"creature": [],
+		"creature": [
+			{
+				"type": "species:stackatick",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
 		"misc": [],
 		"monster": [
-		
+			{
+				"type": "endermanoverhaul:cave_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "ad_astra:martian_raptor",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:quake",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			}
 		],
 		"underground_water_creature": [],
 		"water_ambient": [],

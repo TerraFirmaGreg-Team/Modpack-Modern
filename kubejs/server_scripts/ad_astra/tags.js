@@ -385,7 +385,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'endermanoverhaul:spirit',
 		'endermanoverhaul:end_enderman',
 		'endermanoverhaul:end_islands_enderman',
-
+		// mars
 		'tfg:sniffer',
 		'tfg:glacian_ram',
 		'tfg:wraptor',
@@ -393,9 +393,11 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'species:cruncher',
 		'species:springling',
 		'species:quake',
+		'species:stackatick',
 		'endermanoverhaul:crimson_forest_enderman',
 		'endermanoverhaul:warped_forest_enderman',
 		'endermanoverhaul:badlands_enderman',
+		'endermanoverhaul:cave_enderman',
 		'wan_ancient_beasts:walker',
 		'wan_ancient_beasts:eater',
 		'wan_ancient_beasts:crusher',
