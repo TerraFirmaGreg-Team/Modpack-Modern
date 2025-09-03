@@ -45,6 +45,9 @@ const registerAdAstraItemTags = (event) => {
 		event.removeAllTagsFrom(item)
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
+
+	event.add('c:hidden_from_recipe_viewers', 'ad_astra:alphacene_mushroom')
+	event.add('c:hidden_from_recipe_viewers', 'ad_astra:strophar_mushroom')
 	
 	event.add('gtceu:ppe_armor', '#ad_astra:space_suit_items')
 	event.add('minecraft:trimmable_armor', '#ad_astra:space_suit_items')

@@ -45,22 +45,22 @@ const registerTFGItems = (event) => {
 
 	event.create('tfg:soaked_unrefined_paper')
 		.translationKey('item.tfg.soaked_unrefined_paper')
-	
+
 	event.create('tfg:terra_firma_greg')
 		.translationKey('item.tfg.terra_firma_greg')
 		.tag('c:hidden_from_recipe_viewers')
-	
+
 	//#region chalk creation
 	event.create('tfg:unfired_chalk')
 		.translationKey('item.tfg.unfired_chalk')
 
 	Color.DYE.forEach((dyeName, dye) => {
 		event.create(`tfg:wet_${dyeName}_chalk`)
-		.translationKey(`item.tfg.wet_${dyeName}_chalk`)
-		.textureJson({
-			layer0: 'tfg:item/unfired_chalk'
-		})
-		.color(0, dye.getHexJS());
+			.translationKey(`item.tfg.wet_${dyeName}_chalk`)
+			.textureJson({
+				layer0: 'tfg:item/unfired_chalk'
+			})
+			.color(0, dye.getHexJS());
 	});
 	//#endregion
 
@@ -137,7 +137,7 @@ const registerTFGItems = (event) => {
 
 	event.create(`tfg:antipoison_tablet`)
 		.translationKey(`item.tfg.antipoison_tablet`)
-		.tooltip(`§9Cures All Harmful Effects`)   
+		.tooltip(`§9Cures All Harmful Effects`)
 
 	//salvos
 
@@ -176,10 +176,18 @@ const registerTFGItems = (event) => {
 	event.create('tfg:clean_foil_pack')
 	event.create('tfg:flint_club_head')
 
-	event.create('tfg:twigs/strophar').tag('tfc:twigs')
-	event.create('tfg:twigs/aeronos').tag('tfc:twigs')
-	event.create('tfg:twigs/glacian').tag('tfc:twigs')
-	event.create('tfg:twigs/alphacene').tag('tfc:twigs')
+	event.create('tfg:twigs/strophar')
+		.tag('tfc:twigs')
+		.texture('tfg:item/wood/twig/strophar')
+	event.create('tfg:twigs/aeronos')
+		.tag('tfc:twigs')
+		.texture('tfg:item/wood/twig/aeronos')
+	event.create('tfg:twigs/glacian')
+		.tag('tfc:twigs')
+		.texture('tfg:item/wood/twig/glacian')
+	event.create('tfg:twigs/alphacene')
+		.tag('tfc:twigs')
+		.texture('tfg:item/wood/twig/alphacene')
 	//#endregion
 
 	//#region Cloth & String
@@ -279,10 +287,10 @@ const registerTFGItems = (event) => {
 
 	event.create('tfg:airship_balloon')
 		.translationKey('item.tfg.airship_balloon')
-		
+
 	event.create('tfg:lv_aircraft_engine')
 		.translationKey('item.tfg.lv_aircraft_engine')
-	
+
 	event.create('tfg:hv_aircraft_engine')
 		.translationKey('item.tfg.hv_aircraft_engine')
 
@@ -318,14 +326,14 @@ const registerTFGItems = (event) => {
 
 	event.create('tfg:aluminium_hull_reinforcement')
 		.translationKey('item.tfg.aluminium_hull_reinforcement')
-		
+
 	event.create('tfg:stainless_steel_hull_reinforcement')
 		.translationKey('item.tfg.stainless_steel_hull_reinforcement')
 
 	event.create('tfg:titanium_hull_reinforcement')
 		.translationKey('item.tfg.titanium_hull_reinforcement')
 	//#endregion
-	
+
 	//Tacz Helper Region
 	event.create('tfg:flintlock_mechanism')
 		.translationKey('item.tfg.flintlock_mechanism')
@@ -343,7 +351,7 @@ const registerTFGItems = (event) => {
 	event.create('tfg:nitrocellulose')
 		.translationKey('tfg:nitrocellulose')
 	//endregion
-	
+
 	//Tier2 Insulation
 	event.create('tfg:aes_wool')
 		.translationKey('tfg:aes_wool')
@@ -354,23 +362,23 @@ const registerTFGItems = (event) => {
 	event.create('tfg:aes_insulation_roll')
 		.translationKey('tfg:aes_insulation_roll')
 	//endregion
-	
+
 	//Tier 2 Rocket Parts
 	event.create('tfg:rocket_fin_t2')
 	event.create('tfg:rocket_cone_t2')
 	//endregion
-	
+
 	//Tier 3 Insulation
 	event.create('tfg:aes_polyurethane')
 	event.create('tfg:mli_shielding')
 	event.create('tfg:silica_aerogel')
 	//endregion
-	
+
 	//Tier 3 Rocket Parts
 	event.create('tfg:rocket_fin_t3')
 	event.create('tfg:rocket_cone_t3')
 	event.create('tfg:elite_power_thruster')
-	
+
 	event.create('tfg:better_space_suit_fabric')
 	//endregion
 
@@ -393,14 +401,14 @@ const registerTFGItems = (event) => {
 		.translationKey("item.tfg.basic.photovoltaic.cell")
 		.texture('tfg:item/photo_cell_t1')
 	//#endregion
-	
+
 	//#region Mars Animals
 	event.create('tfg:wraptor_sugar')
 		.tag('tfg:sugars')
 		.tag('tfg:haste_ingredients')
 		.tag('tfc:sweetener')
 	//#endregion
-	
+
 	//#region Flax Stuff
 	event.create('tfg:flax_waste')
 		.tag('tfc:scrapable')
@@ -414,5 +422,5 @@ const registerTFGItems = (event) => {
 	event.create('tfg:linen_cloth')
 		.tag('forge:cloth')
 		.tag('tfc:sewing_light_cloth')
-	
+
 }

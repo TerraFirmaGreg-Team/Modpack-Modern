@@ -90,7 +90,7 @@ const registerTFCRecipes = (event) => {
 		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
 
 		generateGreenHouseRecipe(event, itemId, '#tfc:any_fresh_water', 8000, `8x ${itemId}`,
-			recipeId, null, 8, `16x ${itemId}`, GTValues.VH[GTValues.LV]);
+			recipeId, null, 8, ${itemId}, GTValues.VH[GTValues.LV]);
 	});
 
 	//#endregion
