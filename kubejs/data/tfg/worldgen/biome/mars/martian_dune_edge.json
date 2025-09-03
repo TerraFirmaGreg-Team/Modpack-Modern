@@ -56,7 +56,6 @@
 		"#tfg:mars_top_layer_modification"
 	],
 	"has_precipitation": false,
-	"creature_spawn_probability": 0.00003,
 	"spawn_costs": {
 		"endermanoverhaul:crimson_forest_enderman": {
 			"energy_budget": 0.05,
@@ -73,6 +72,14 @@
 		"minecraft:enderman": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"endermanoverhaul:cave_enderman": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"species:quake": {
+			"energy_budget": 0.2,
+			"charge": 0.7
 		}
 	},
 	"spawners": {
@@ -80,10 +87,16 @@
 		"axolotls": [],
 		"creature": [
 			{
-				"type": "wan_ancient_beasts:crusher",
+				"type": "species:stackatick",
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "wan_ancient_beasts:crusher",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 10
 			},
 			{
 				"type": "wan_ancient_beasts:glider",
@@ -95,18 +108,6 @@
 		"misc": [],
 		"monster": [
 			{
-				"type": "endermanoverhaul:crimson_forest_enderman",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "endermanoverhaul:warped_forest_enderman",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
 				"type": "endermanoverhaul:badlands_enderman",
 				"maxCount": 1,
 				"minCount": 1,
@@ -117,6 +118,24 @@
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 20
+			},
+			{
+				"type": "endermanoverhaul:cave_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "ad_astra:martian_raptor",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:quake",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [],
