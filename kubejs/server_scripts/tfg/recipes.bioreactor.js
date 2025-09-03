@@ -1,0 +1,166 @@
+// priority: 0
+"use strict";
+
+/**
+ * @param {Internal.RecipesEventJS} event 
+ */
+function registerTFGBioreactorRecipes(event) {
+	const $ISPRecipeLogic = Java.loadClass("su.terrafirmagreg.core.common.data.tfgt.machine.trait.ISPOutputRecipeLogic")
+	const $SizedIngredient = Java.loadClass("com.gregtechceu.gtceu.api.recipe.ingredient.SizedIngredient")
+
+	/**
+	 * @typedef {Object} BioreactorRecipeData
+	 * @property {number?} circuit
+	 * @property {Internal.GTRecipeComponents$FluidIngredientJS_[]?} fluidInputs
+	 * @property {Internal.FluidStackJS[]?} fluidOutputs
+	 * @property {(string | [string, Internal.Ingredient])[]?} itemInputs
+	 * @property {string[]?} itemOutputs Ingredient outputs - first output is replaced with ISP output if defined
+	 * @property {Internal.ItemStackProviderJS?} itemOutputProvider ItemStackProvider which provides the recipe output.
+	*
+	* **NOTE:** TFC Ingredients do not support item counts higher than 1. Do `Sized(TFCIngredient('item:item'), count)` instead of `TFCIngredient('[count]x item:item')`
+	*/
+
+	//#region Helper funcs
+
+	/**
+	 * @param {"bioreactor"} type 
+	 * @param {string} id 
+	 * @param {number} duration 
+	 * @param {number} EUt 
+	 * @param {string} text
+	 * @param {BioreactorRecipeData} data 
+	 */
+	function registerBioreactorRecipe(type, id, duration, EUt, text, data) {
+		if (data.itemInputs === undefined) data.itemInputs = []
+		if (data.itemOutputs === undefined) data.itemOutputs = []
+		if (data.fluidInputs === undefined) data.fluidInputs = []
+		if (data.fluidOutputs === undefined) data.fluidOutputs = []
+		let gregInputs = [], inputs = []
+		let outputFirstIndex = (data.itemOutputProvider === undefined) ? 0 : 1
+		data.itemInputs.forEach(item => {
+			if (typeof item === "string") {
+				gregInputs.push(item)
+
+				const match = item.match(/^(\d+)\s*x\s*/i);
+				let count = 1
+				if (match) {
+					count = parseInt(match[1]);
+					item = item.slice(match[0].length);
+				}
+				inputs.push($SizedIngredient.create(item, count))
+			} else {
+				gregInputs.push(item[0])
+				inputs.push(item[1])
+			}
+		})
+
+		$ISPRecipeLogic.RegisterRecipeData(`${type  }/${  id}`, inputs, (data.itemOutputProvider === undefined) ? null : data.itemOutputProvider.asCanonClass(), data.itemOutputs.slice(outputFirstIndex).map(i => Item.of(i)))
+
+		let r = event.recipes.gtceu[type](id)
+		.duration(duration)
+		.EUt(EUt)
+
+		if (data.circuit) r.circuit(data.circuit)
+		if (data.itemOutputs.length > 0) r.itemOutputs(data.itemOutputs)
+		if (data.itemInputs.length > 0) r.itemInputs(data.itemInputs)
+		if (data.fluidInputs.length > 0) r.inputFluids(data.fluidInputs);
+		if (data.fluidOutputs.length > 0) r.outputFluids(data.fluidOutputs);
+		if (text !== "") r.addDataString("action", text);
+
+		return r;
+	}
+
+		/**
+	 * @param {string} id 
+	 * @param {number} duration 
+	 * @param {number} EUt 
+	 * @param {FoodRecipeData} data 
+	 */
+	const bioreactorRecipe = (id, duration, EUt, data) => registerBioreactorRecipe("bioreactor", id, duration, EUt, "", data)
+
+	//#region Recipes
+	// EXAMPLE (WIP)
+	// bioreactorRecipe('test/test', 3*60*20, GTValues.VA[GTValues.EV], {
+	// 	itemInputs: ['tfc:food/red_apple'],
+	// 	fluidInputs: ['#tfc:milks 1000'],
+	// 	itemOutputs: ['3x tfc:food/green_apple'],
+	// 	fluidOutputs: ['minecraft:lava 1000'],
+	// 	itemOutputProvider: TFC.isp.of('3x tfc:food/green_apple').copyOldestFood()
+	// })
+
+	//#endregion
+	//#region Multiblock Parts
+	
+	event.recipes.gtceu.assembler('tfg:uv_led')
+		.itemInputs('gtceu:phosphorus_wafer', '2x gtceu:smd_resistor')
+		.inputFluids(Fluid.of('gtceu:polyethylene', 72))
+		.itemOutputs('4x tfg:uv_led')
+		.duration(10*20)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.EV]);
+
+	event.recipes.gtceu.assembler('tfg:smd_uv_led')
+		.itemInputs('gtceu:phosphorus_wafer', '2x gtceu:advanced_smd_resistor')
+		.inputFluids(Fluid.of('gtceu:polyethylene', 72))
+		.itemOutputs('16x tfg:smd_uv_led')
+		.duration(10*20)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.IV]);
+
+	event.recipes.gtceu.assembler('tfg:uv_casing')
+		.itemInputs('gtceu:inert_machine_casing', '16x #tfg:components/uv_leds', '#gtceu:circuits/mv')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+		.itemOutputs('tfg:casings/machine_casing_ultraviolet')
+		.duration(8*20)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.EV]);
+
+	event.recipes.gtceu.assembler('tfg:bioculture_casing')
+		.itemInputs('gtceu:plascrete', '#forge:frames/desh')
+		.inputFluids(Fluid.of('gtceu:hastelloy_c_276', 288))
+		.itemOutputs('tfg:casings/machine_casing_bioculture')
+		.duration(8*20)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.HV]);
+
+	event.recipes.gtceu.assembler('tfg:bioculture_glass')
+		.itemInputs('#forge:frames/desh', ChemicalHelper.get(TagPrefix.dust, GTMaterials.Iron, 1), ChemicalHelper.get(TagPrefix.dust, GTMaterials.Bismuth, 1))
+		.inputFluids(Fluid.of('gtceu:glass', 144))
+		.itemOutputs('tfg:casings/machine_casing_bioculture_glass')
+		.duration(8*20)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.HV]);
+
+	event.shaped('tfg:bioreactor', [
+		'CBC',
+		'EAF',
+		'CDC'
+	], {
+		A: 'gtceu:ev_machine_hull',
+		B: '#tfg:components/uv_leds',
+		C: '#gtceu:circuits/ev',
+		D: 'gtceu:aluminium_single_cable',
+		E: 'gtceu:ev_electric_pump',
+		F: 'gtceu:ev_electric_motor',
+	}).id('tfg:shaped/bioreactor');
+
+	event.shaped('tfg:casings/bioculture_rotor_primary', [
+		'CBC',
+		'DBD',
+		'CAC'
+	], {
+		A: 'gtceu:ev_rotor_holder',
+		B: 'gtceu:tungsten_steel_rotor',
+		C: 'gtceu:inert_machine_casing',
+		D: ChemicalHelper.get(TagPrefix.ring, GTMaterials.StyreneButadieneRubber, 1)
+	}).id('tfg:shaped/bioculture_rotor_primary');
+
+	event.shapeless('tfg:casings/bioculture_rotor_secondary', [
+		'tfg:casings/bioculture_rotor_primary'
+	]).id('tfg:shapeless/bioculture_rotor_primary_to_secondary')
+
+	event.shapeless('tfg:casings/bioculture_rotor_primary', [
+		'tfg:casings/bioculture_rotor_secondary'
+	]).id('tfg:shapeless/bioculture_rotor_secondary_to_primary')
+	//#endregion
+}
