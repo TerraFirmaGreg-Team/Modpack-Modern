@@ -46,7 +46,8 @@ const registerAdAstraItemTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
 	
-	
+	event.add('gtceu:ppe_armor', '#ad_astra:space_suit_items')
+	event.add('minecraft:trimmable_armor', '#ad_astra:space_suit_items')
 	
 	event.add('forge:cobblestone', 'ad_astra:moon_cobblestone')
 	event.add('forge:cobblestone', 'ad_astra:mars_cobblestone')
@@ -309,12 +310,16 @@ const registerAdAstraBlockTags = (event) => {
 	event.remove('ad_astra:strophar_caps', 'ad_astra:strophar_cap')
 	event.remove('ad_astra:aeronos_caps', 'ad_astra:aeronos_cap')
 
-	event.add('tfg:environment_not_sturdy', 'ad_astra:strophar_cap')
-	event.add('tfg:environment_not_sturdy', 'ad_astra:aeronos_cap')
-	event.add('tfg:environment_not_sturdy', 'minecraft:nether_wart_block')
-	event.add('tfg:environment_not_sturdy', 'minecraft:warped_wart_block')
-	event.add('tfg:environment_not_sturdy', 'species:alphacene_mushroom_block')
-	event.add('tfg:environment_not_sturdy', 'species:alphacene_moss_block')
+	event.add('tfg:heightmap_ignore', 'ad_astra:strophar_cap')
+	event.add('tfg:heightmap_ignore', 'ad_astra:strophar_stem')
+	event.add('tfg:heightmap_ignore', 'ad_astra:aeronos_cap')
+	event.add('tfg:heightmap_ignore', 'ad_astra:aeronos_stem')
+	event.add('tfg:heightmap_ignore', 'minecraft:nether_wart_block')
+	event.add('tfg:heightmap_ignore', 'minecraft:warped_wart_block')
+	event.add('tfg:heightmap_ignore', 'species:alphacene_mushroom_block')
+	event.add('tfg:heightmap_ignore', 'species:alphacene_mushroom_growth')
+	event.add('tfg:heightmap_ignore', 'ad_astra:glacian_log')
+	event.add('tfg:heightmap_ignore', 'species:alphacene_moss_block')
 
 	global.AD_ASTRA_WOOD.forEach(wood => {
 
@@ -427,6 +432,9 @@ const registerAdAstraEntityTypeTags = (event) => {
 	// flying mobs
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:soarer')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:glider')
+	// swimming mobs
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:surfer')
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:toxlacanth')
 }
 
 const registerAdAstraPlacedFeatures = (event) => {
