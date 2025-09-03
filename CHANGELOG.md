@@ -15,6 +15,7 @@
 - Fixed tongs getting stuck in ovens, and now you can use them the same way you'd previously use a Peel @Pyritie
 - Allowed powders, gears, plates, double plates, springs, and small springs to be heated (#1727) @Redeix
 - Fixed rapeseed wild block model @BlueBoat29
+- Fixed butchery knife not giving additional meat when used to kill an animal @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn & @CN059
 - Ukranian @MetEnBouldry
