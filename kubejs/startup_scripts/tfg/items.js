@@ -175,6 +175,8 @@ const registerTFGItems = (event) => {
 	event.create('tfg:foil_pack')
 	event.create('tfg:clean_foil_pack')
 	event.create('tfg:flint_club_head')
+	event.create('tfg:uv_led')
+	event.create('tfg:smd_uv_led')
 
 	event.create('tfg:twigs/strophar').tag('tfc:twigs')
 	event.create('tfg:twigs/aeronos').tag('tfc:twigs')
