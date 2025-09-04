@@ -24,11 +24,11 @@
           },
           {
             "block": "gtceu:granite_uraninite_ore",
-            "weight": 50
+            "weight": 20
           },
           {
-            "block": "gtceu:raw_uraninite_block",
-            "weight": 1
+            "block": "gtceu:granite_wulfenite_ore",
+            "weight": 10
           }
         ]
       },
@@ -47,11 +47,11 @@
           },
           {
             "block": "gtceu:diorite_uraninite_ore",
-            "weight": 50
+            "weight": 20
           },
           {
-            "block": "gtceu:raw_uraninite_block",
-            "weight": 1
+            "block": "gtceu:diorite_wulfenite_ore",
+            "weight": 10
           }
         ]
       },
@@ -70,11 +70,11 @@
           },
           {
             "block": "gtceu:gabbro_uraninite_ore",
-            "weight": 50
+            "weight": 20
           },
           {
-            "block": "gtceu:raw_uraninite_block",
-            "weight": 1
+            "block": "gtceu:gabbro_wulfenite_ore",
+            "weight": 10
           }
         ]
       },
@@ -93,11 +93,11 @@
           },
           {
             "block": "gtceu:schist_uraninite_ore",
-            "weight": 50
+            "weight": 20
           },
           {
-            "block": "gtceu:raw_uraninite_block",
-            "weight": 1
+            "block": "gtceu:schist_wulfenite_ore",
+            "weight": 10
           }
         ]
       },
@@ -116,11 +116,11 @@
           },
           {
             "block": "gtceu:gneiss_uraninite_ore",
-            "weight": 50
+            "weight": 20
           },
           {
-            "block": "gtceu:raw_uraninite_block",
-            "weight": 1
+            "block": "gtceu:gneiss_wulfenite_ore",
+            "weight": 10
           }
         ]
       },
@@ -140,11 +140,11 @@
           },
           {
             "block": "gtceu:pyroxenite_uraninite_ore",
-            "weight": 50
+            "weight": 20
           },
           {
-            "block": "gtceu:raw_uraninite_block",
-            "weight": 1
+            "block": "gtceu:pyroxenite_wulfenite_ore",
+            "weight": 10
           }
         ]
       }
@@ -161,7 +161,11 @@
         },
         {
           "block": "gtceu:uraninite_indicator",
-          "weight": 50
+          "weight": 20
+        },
+        {
+          "block": "gtceu:wulfenite_indicator",
+          "weight": 10
         }
       ]
     }

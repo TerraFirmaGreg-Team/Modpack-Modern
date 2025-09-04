@@ -39,7 +39,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 220$(br)$(thing)密度$(): 0.45$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -64 — -20$(br)$(thing)尺寸$(): 24$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩, 花岗岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 240$(br)$(thing)密度$(): 0.45$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -64 — -20$(br)$(thing)尺寸$(): 24$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩, 花岗岩, 辉长岩, 闪长岩",
       "title": "晶质铀矿, 沥青铀矿",
       "type": "patchouli:text",
       "anchor": "deep_pitchblende"
@@ -61,7 +61,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 50%$(br)$(thing)来源$(): 铀, 钍, 铅$(br)$(thing)化学式$(): (UO₂)₃ThPb$(br)$(thing)危害$(): $(c)$(t:需要全身防护)致癌 (任何接触)$(/t)$()",
+      "text": "$(thing)百分比$(): 62%$(br)$(thing)来源$(): 铀, 钍, 铅$(br)$(thing)化学式$(): (UO₂)₃ThPb$(br)$(thing)危害$(): $(c)$(t:需要全身防护)致癌 (任何接触)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -81,13 +81,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 50%$(br)$(thing)来源$(): 铀$(br)$(thing)化学式$(): UO₂$(br)$(thing)危害$(): $(c)$(t:需要全身防护)致癌 (任何接触)$(/t)$()",
+      "text": "$(thing)百分比$(): 25%$(br)$(thing)来源$(): 铀$(br)$(thing)化学式$(): UO₂$(br)$(thing)危害$(): $(c)$(t:需要全身防护)致癌 (任何接触)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "钼铅矿",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/wulfenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 12%$(br)$(thing)来源$(): 铅, 钼$(br)$(thing)化学式$(): PbMoO₄",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
@@ -2287,7 +2302,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 90%$(br)$(thing)熔化$(): 铋$(br)$(thing)化学式$(): Bi",
+      "text": "$(thing)百分比$(): 85%$(br)$(thing)熔化$(): 铋$(br)$(thing)化学式$(): Bi",
       "type": "patchouli:multiblock"
     },
     {
@@ -2312,6 +2327,26 @@
     },
     {
       "Type": "patchouli:multiblock",
+      "name": "原生银",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 5%$(br)$(thing)熔化$(): 银$(br)$(thing)化学式$(): Ag",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
       "name": "硫",
       "multiblock": {
         "mapping": {
@@ -2329,6 +2364,11 @@
       "enable_visualize": false,
       "text": "$(thing)百分比$(): 3%$(br)$(thing)来源$(): 硫$(br)$(thing)化学式$(): S",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
