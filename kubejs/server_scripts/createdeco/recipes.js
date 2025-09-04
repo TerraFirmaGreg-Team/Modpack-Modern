@@ -508,12 +508,12 @@ const registerCreatedecoRecipes = (event) => {
 
 	// #region Sheet Metal
 
-	event.stonecutting('createdeco:andesite_sheet_metal', '#forge:plates/tin_alloy')
-	event.stonecutting('createdeco:brass_sheet_metal', '#forge:plates/brass')
-	event.stonecutting('createdeco:iron_sheet_metal', '#forge:plates/wrought_iron')
-	event.stonecutting('createdeco:copper_sheet_metal', '#forge:plates/copper')
-	event.stonecutting('createdeco:industrial_iron_sheet_metal', '#forge:plates/steel')
-	event.stonecutting('createdeco:zinc_sheet_metal', '#forge:plates/zinc')
+	event.stonecutting('4x createdeco:andesite_sheet_metal', '#forge:plates/tin_alloy')
+	event.stonecutting('4x createdeco:brass_sheet_metal', '#forge:plates/brass')
+	event.stonecutting('4x createdeco:iron_sheet_metal', '#forge:plates/wrought_iron')
+	event.stonecutting('4x createdeco:copper_sheet_metal', '#forge:plates/copper')
+	event.stonecutting('4x createdeco:industrial_iron_sheet_metal', '#forge:plates/steel')
+	event.stonecutting('4x createdeco:zinc_sheet_metal', '#forge:plates/zinc')
 
 	// #endregion
 };
