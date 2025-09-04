@@ -1,0 +1,97 @@
+
+{
+  "name": "Долбленые каноэ",
+  "category": "tfc:firmaciv",
+  "icon": "firmaciv:canoe_with_paddle_icon_only",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Долбленое каноэ, вероятно, будет вашим первым шагом к водным путешествиям! Если вы находитесь в медном веке, то вы, скорее всего, сможете построить каноэ."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/canoe_isometric.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Вы можете поставить блоки или животных на место пилота, но учтите, что у вас не будет возможности грести! Это очень полезно, когда вы просто хотите спустить материалы вниз по реке самостоятельно.$(br2)Каноэ имеет два места и управляется с заднего сиденья. Для достижения полной скорости вам необходимо держать весло для каноэ, а если два игрока будут держать весла, то вы будете двигаться еще быстрее."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Для постройки долбленого каноэ вам нужно разместить 3 обтесанных бревна в горизонтальный ряд, срезать верхушки бревен пилой, затем выдолбить форму каноэ топором и, наконец, поджечь внутреннюю часть каноэ, чтобы выжечь корпус. Процесс займет столько же времени, сколько и обжиг в земляной печи."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Для вырезания долбленого каноэ подходит только мягкая древесина, и как следует, подходят только бревна:$(br2)Дугласовой пихты$(br)Сосны$(br)Пальмы$(br)Ели$(br)Секвойи$(br)Сейбы$(br)Мангрового дерева$(br)Белого кедра$(br)Ивы"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            " F ",
+            " 0 ",
+            " B "
+          ]
+        ],
+        "mapping": {
+          "F": "tfc:wood/stripped_log/douglas_fir[axis=x]",
+          "0": "tfc:wood/stripped_log/douglas_fir[axis=x]",
+          "B": "tfc:wood/stripped_log/douglas_fir[axis=x]"
+        }
+      },
+      "name": "Просто бревно",
+      "text": "Первый шаг создания долбленого каноэ.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            " F ",
+            " 0 ",
+            " B "
+          ]
+        ],
+        "mapping": {
+          "F": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]",
+          "0": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=false]",
+          "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]"
+        }
+      },
+      "name": "Странные плиты",
+      "text": "Верхняя часть бревна удалена пилой.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            " F ",
+            " 0 ",
+            " B "
+          ]
+        ],
+        "mapping": {
+          "F": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=west,end=true]",
+          "0": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=false]",
+          "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=true]"
+        }
+      },
+      "name": "Странная скульптура",
+      "text": "Полностью вырезанное долбленое каноэ, готовое к выжиганию корпуса.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmaciv:crafting/canoe_paddle",
+      "text": "Не забудьте создать одно или два весла!"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1
+}
