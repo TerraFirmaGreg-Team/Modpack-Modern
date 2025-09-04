@@ -20,6 +20,18 @@
 			{
 				"replace": "tfg:grass/sangnum_mycelium",
 				"with": "ad_astra:venus_sand"
+			},
+			{
+				"replace": "gtceu:red_granite",
+				"with": "ad_astra:venus_sand"
+			},
+			{
+				"replace": "tfc:rock/raw/basalt",
+				"with": "ad_astra:venus_sand"
+			},
+			{
+				"replace": "tfc:rock/raw/gabbro",
+				"with": "ad_astra:venus_sand"
 			}
 		]
 	}

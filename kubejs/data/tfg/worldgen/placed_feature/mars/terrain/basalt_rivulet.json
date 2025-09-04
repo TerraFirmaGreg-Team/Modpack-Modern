@@ -1,9 +1,9 @@
 {
-	"feature": "tfg:mars/terrain/magma_rivulet",
+	"feature": "tfg:mars/terrain/basalt_rivulet",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 6
+			"chance": 4
 		},
 		{
 			"type": "minecraft:in_square"
