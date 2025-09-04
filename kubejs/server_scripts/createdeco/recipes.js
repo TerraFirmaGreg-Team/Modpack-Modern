@@ -58,6 +58,12 @@ const registerCreatedecoRecipes = (event) => {
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/copper' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/steel' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/zinc' })
+	event.remove({ id: 'createdeco:andesite_sheet_metal' })
+	event.remove({ id: 'createdeco:brass_sheet_metal' })
+	event.remove({ id: 'createdeco:iron_sheet_metal' })
+	event.remove({ id: 'createdeco:copper_sheet_metal' })
+	event.remove({ id: 'createdeco:industrial_iron_sheet_metal' })
+	event.remove({ id: 'createdeco:zinc_sheet_metal' })
 	//#endregion
 
 	//#region Lamp Recipes
@@ -497,6 +503,17 @@ const registerCreatedecoRecipes = (event) => {
 		.duration(100)
 		.EUt(16)
 		.category(GTRecipeCategories.CHEM_DYES);
+
+	// #endregion
+
+	// #region Sheet Metal
+
+	event.stonecutting('createdeco:andesite_sheet_metal', '#forge:plates/tin_alloy')
+	event.stonecutting('createdeco:brass_sheet_metal', '#forge:plates/brass')
+	event.stonecutting('createdeco:iron_sheet_metal', '#forge:plates/wrought_iron')
+	event.stonecutting('createdeco:copper_sheet_metal', '#forge:plates/copper')
+	event.stonecutting('createdeco:industrial_iron_sheet_metal', '#forge:plates/steel')
+	event.stonecutting('createdeco:zinc_sheet_metal', '#forge:plates/zinc')
 
 	// #endregion
 };
