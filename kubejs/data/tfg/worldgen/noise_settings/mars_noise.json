@@ -292,52 +292,41 @@
 					]
 				},
 				"then_run": {
-					"type": "minecraft:condition",
-					"if_true": {
-						"type": "minecraft:y_above",
-						"anchor": {
-							"absolute": 70
-						},
-						"surface_depth_multiplier": 0,
-						"add_stone_depth": false
-					},
-					"then_run": {
-						"type": "minecraft:sequence",
-						"sequence": [
-							{
-								"type": "minecraft:condition",
-								"if_true": {
-									"type": "minecraft:stone_depth",
-									"offset": 2,
-									"surface_type": "floor",
-									"add_surface_depth": false,
-									"secondary_depth_range": 0
-								},
-								"then_run": {
-									"type": "minecraft:block",
-									"result_state": {
-										"Name": "ad_astra:venus_sand"
-									}
-								}
+					"type": "minecraft:sequence",
+					"sequence": [
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"offset": 2,
+								"surface_type": "floor",
+								"add_surface_depth": false,
+								"secondary_depth_range": 0
 							},
-							{
-								"type": "minecraft:condition",
-								"if_true": {
-									"type": "minecraft:stone_depth",
-									"offset": 6,
-									"surface_type": "floor",
-									"add_surface_depth": false,
-									"secondary_depth_range": 0
-								},
-								"then_run": {
-									"type": "minecraft:block",
-									"result_state": {
-										"Name": "ad_astra:venus_sandstone"
-									}
+							"then_run": {
+								"type": "minecraft:block",
+								"result_state": {
+									"Name": "ad_astra:venus_sand"
 								}
 							}
-						]
-					}
+						},
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"offset": 6,
+								"surface_type": "floor",
+								"add_surface_depth": false,
+								"secondary_depth_range": 0
+							},
+							"then_run": {
+								"type": "minecraft:block",
+								"result_state": {
+									"Name": "ad_astra:venus_sandstone"
+								}
+							}
+						}
+					]
 				}
 			},
 			{
