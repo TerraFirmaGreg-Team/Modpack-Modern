@@ -58,7 +58,7 @@ const registerTFGNuclearMaterials = (event) => {
         .fluid()
         .components('1x deuterium','1x hydrogen', '1x oxygen')
         .iconSet(GTMaterialIconSet.FINE)
-        .color(0xB5B9FF)
+        .color(0xb5d4ff)
         .secondaryColor(0x81FFF9)
 
     event.create('uranium_waste')
