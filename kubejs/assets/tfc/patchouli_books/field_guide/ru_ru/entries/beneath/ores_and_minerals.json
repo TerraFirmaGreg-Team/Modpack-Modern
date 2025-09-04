@@ -1,0 +1,70 @@
+{
+	"name": "Руды и минералы",
+	"category": "tfc:beneath",
+	"icon": "beneath:ore/normal_nether_gold",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Руды, которые вы можете найти в Бездне, в основном похожи на те, что находятся на поверхности, но с некоторыми различиями. Для более конкретной информации можете ознакомиться с разделом: $(l:tfg_ores)Руды в TFG$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Мигматит",
+			"item": { "tag": "forge:ores_in_ground/deepslate" },
+			"text": "Самым распространенным типом породы, который можно найти, является мигматит. Эта глубинная метаморфическая порода содержит широкий ассортимент руд, которые обычно встречаются в других типах пород на поверхности."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Травертин",
+			"item": { "tag": "forge:ores_in_ground/dripstone" },
+			"text": "В более влажных районах вы можете найти $(thing)Травертин$(). Это осадочная порода, которая может содержать такие же виды руд, что и мигматит."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Пироксенит",
+			"item": { "tag": "forge:ores_in_ground/pyroxenite" },
+			"text": "В самой глубине Бездны различные типы пород постепенно превращаются в $(thing)Пироксенит$(). Эта ультрамафическая магматическая порода чрезвычайно богата рудами, но такая глубина также сопряжена с экстремальной жарой, поэтому будьте готовы!"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"anchor": "cursecoal",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "beneath:ore/nether_cursecoal"
+				}
+			},
+			"name": "Антрацит",
+			"text": "Антрацит является мощным $(l:beneath/hellforge)топливом$(). Его можно найти в мигматите на внешних уровнях бездны.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:multiblock",
+			"anchor": "sylvite",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "beneath:ore/blackstone_sylvite"
+				}
+			},
+			"name": "Сильвит",
+			"text": "Сильвит является неплохим удобрением, которое можно найти в пироксените на нижних уровнях Бездны.",
+			"enable_visualize": false
+		}
+	],
+	"read_by_default": true
+}
