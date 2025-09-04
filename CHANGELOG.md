@@ -18,6 +18,7 @@
 - Fixed butchery knife not giving additional meat when used to kill an animal @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn & @CN059
+- Russian @Dl, @Kostabl, @Turikar42, & @But3r
 - Ukranian @MetEnBouldry
 
 ## [0.10.10] - 23-08-2025
