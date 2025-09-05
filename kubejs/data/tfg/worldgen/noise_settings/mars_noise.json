@@ -225,12 +225,12 @@
 					"points": [
 						{
 							"derivative": 0.0,
-							"location": -0.17,
+							"location": -0.15,
 							"value": 1
 						},
 						{
 							"derivative": 0.0,
-							"location": -0.16,
+							"location": -0.14,
 							"value": 0
 						}
 					]
@@ -366,6 +366,23 @@
 								"type": "minecraft:condition",
 								"if_true": {
 									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "ceiling",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "kubejs_tfc:rock",
+									"rock_block": "hardened",
+									"fallback_state": {
+										"Name": "ad_astra:mars_stone"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
 									"offset": 2,
 									"surface_type": "floor",
 									"add_surface_depth": false,
@@ -476,6 +493,23 @@
 					"then_run": {
 						"type": "minecraft:sequence",
 						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "ceiling",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "kubejs_tfc:rock",
+									"rock_block": "hardened",
+									"fallback_state": {
+										"Name": "minecraft:red_sandstone"
+									}
+								}
+							},
 							{
 								"type": "minecraft:condition",
 								"if_true": {
@@ -765,6 +799,23 @@
 										"Name": "tfg:grass/mars_dirt"
 									}
 								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 5,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "kubejs_tfc:rock",
+									"rock_block": "gravel",
+									"fallback_state": {
+										"Name": "ad_astra:mars_stone"
+									}
+								}
 							}
 						]
 					}
@@ -836,6 +887,23 @@
 									"type": "minecraft:block",
 									"result_state": {
 										"Name": "tfg:grass/mars_dirt"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 5,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "kubejs_tfc:rock",
+									"rock_block": "gravel",
+									"fallback_state": {
+										"Name": "ad_astra:mars_stone"
 									}
 								}
 							}
@@ -913,6 +981,23 @@
 										"Name": "tfg:grass/mars_dirt"
 									}
 								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 5,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "kubejs_tfc:rock",
+									"rock_block": "gravel",
+									"fallback_state": {
+										"Name": "ad_astra:mars_stone"
+									}
+								}
 							}
 						]
 					}
@@ -985,6 +1070,23 @@
 									"type": "minecraft:block",
 									"result_state": {
 										"Name": "tfg:grass/mars_dirt"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 5,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "kubejs_tfc:rock",
+									"rock_block": "gravel",
+									"fallback_state": {
+										"Name": "ad_astra:mars_stone"
 									}
 								}
 							}
@@ -1062,6 +1164,23 @@
 										"Name": "tfg:grass/mars_dirt"
 									}
 								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 5,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "kubejs_tfc:rock",
+									"rock_block": "gravel",
+									"fallback_state": {
+										"Name": "ad_astra:mars_stone"
+									}
+								}
 							}
 						]
 					}
@@ -1134,6 +1253,23 @@
 									"type": "minecraft:block",
 									"result_state": {
 										"Name": "tfg:grass/mars_dirt"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 5,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "kubejs_tfc:rock",
+									"rock_block": "gravel",
+									"fallback_state": {
+										"Name": "ad_astra:mars_stone"
 									}
 								}
 							}

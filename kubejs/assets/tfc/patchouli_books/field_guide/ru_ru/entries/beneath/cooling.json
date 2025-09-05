@@ -1,0 +1,49 @@
+{
+	"name": "Управление температурой",
+	"category": "tfc:beneath",
+	"icon": "minecraft:ice",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "В Бездне жарко! Температура начинается с 15°C и становится только выше по мере того как вы будете спускаться.$(br2)$(item)Джутовая$() и $(item)Шёлковая$() одежда могут помочь с жарой, но есть и другие способы охладиться!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:water_bucket",
+			"title": "Вода",
+			"text": "Воду можно найти на всех внешних уровнях Бездны. Быстро окунувшись, вы сможете быстро охладиться!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Лёд",
+			"item": "minecraft:packed_ice",
+			"text": "Возьмите с собой $(thing)Лёд$()! Стоя рядом с ним, можно понизить температуру окружающей среды. Лёд можно добыть на поверхности с помощью $(item)Пилы$(). При этом запомните - $(thing)Плотный$() и $(thing)Синий$() лёд не тает."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Снаряжение из синей стали",
+			"item": "create:netherite_diving_helmet,create:netherite_backtank,minecraft:netherite_leggings,create:netherite_diving_boots",
+			"text": "Ищете что-то более удобное и надежное? $(thing)Лаволазное снаряжение из синей стали$() будет поддерживать вашу температуру на уровне 28°C и позволит плавать в лаве! $(br2)$(item)Лаванепроницаемую шкуру$() можно получить с местного $(thing)красного оленя$() или найти в бастионах."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/netherite_diving_helmet",
+			"recipe2": "tfg:create/shaped/netherite_diving_helmet_upgrade"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/netherite_backtank",
+			"recipe2": "tfg:create/shaped/netherite_backtank_upgrade"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:minecraft/shaped/netherite_leggings"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/netherite_diving_boots",
+			"recipe2": "tfg:create/shaped/netherite_diving_boots_upgrade"
+		}
+	],
+	"read_by_default": true
+}

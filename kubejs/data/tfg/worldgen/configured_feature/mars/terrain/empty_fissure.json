@@ -1,0 +1,9 @@
+{
+	"type": "tfc:fissure",
+	"config": {
+		"wall_state": "minecraft:obsidian",
+		"fluid_state": "minecraft:air",
+		"count": 1,
+		"radius": 6
+	}
+}

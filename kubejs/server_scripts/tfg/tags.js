@@ -7,9 +7,11 @@ const registerTFGItemTags = (event) => {
 	//crop stuff
 	event.add('tfc:seeds', 'tfg:sunflower_seeds')
 	event.add('tfc:seeds', 'tfg:rapeseed_seeds')
+	event.add('tfc:seeds', 'tfg:flax_seeds')
 	event.add('tfc:foods', 'tfg:roasted_sunflower_seeds')
 	event.add('tfc:compost_greens_high', 'tfg:rapeseed_product')
 	event.add('tfc:compost_greens_high', 'tfg:sunflower_product')
+	event.add('tfc:compost_greens_high', 'tfg:flax_product')
 	event.add('tfg:water_breathing_ingredients', 'tfg:rapeseed_product')
 	event.add('tfg:night_vision_ingredients', 'tfg:sunflower_product')
 
@@ -43,6 +45,10 @@ const registerTFGItemTags = (event) => {
 
 	//Knapping
 	event.add('tfc:any_knapping', 'minecraft:flint')
+
+	//Circuit Stuff
+	event.add('tfg:components/uv_leds', 'tfg:uv_led')
+	event.add('tfg:components/uv_leds', 'tfg:smd_uv_led')
 
 	//#region Tools & Armor
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/wood')
@@ -92,6 +98,8 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
 	// #endregion
 
+	event.add('buildinggadgets2:deny', 'tfg:spice')
+
 	//#region Cloth & String
 	event.add('forge:cloth', 'tfg:phantom_silk')
 	event.add('forge:cloth', 'tfg:polycaprolactam_fabric')
@@ -101,6 +109,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:sewing_dark_cloth', 'tfg:polycaprolactam_fabric')
 	event.add('forge:string', 'tfg:phantom_thread')
 	event.add('forge:string', 'tfg:polycaprolactam_string')
+	event.add('forge:string', 'firmalife:pineapple_yarn')
 	//#endregion
 
 	// #region Medicines
@@ -215,9 +224,14 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:any_iron_double_ingot', '#forge:double_ingots/iron')
 	event.add('tfg:any_iron_double_ingot', '#forge:double_ingots/wrought_iron')
 
+	// Allow any bronze type
 	event.add('tfg:any_bronze_frame', '#forge:frames/bronze')
 	event.add('tfg:any_bronze_frame', '#forge:frames/bismuth_bronze')
 	event.add('tfg:any_bronze_frame', '#forge:frames/black_bronze')
+	
+	event.add('forge:rods/any_bronze', '#forge:rods/bronze')
+	event.add('forge:rods/any_bronze', '#forge:rods/bismuth_bronze')
+	event.add('forge:rods/any_bronze', '#forge:rods/black_bronze')
 
 	//#region Food
 	const RAW_MEATS = [
@@ -448,6 +462,31 @@ const registerTFGBlockTags = (event) => {
 
 	event.add('tfc:crops', 'tfg:sunflower')
 	event.add('tfc:mineable_with_sharp_tool', 'tfg:sunflower')
+	
+	event.add('tfc:crops', 'tfg:flax')
+	event.add('tfc:mineable_with_sharp_tool', 'tfg:flax')
+
+	// Spice unmovable
+
+	event.add('buildinggadgets2:deny', 'tfg:spice')
+	event.add('ae2:blacklisted/spatial', 'tfg:spice')
+
+	event.add('buildinggadgets2:deny', 'tfg:geyser_source')
+	event.add('ae2:blacklisted/spatial', 'tfg:geyser_source')
+
+	event.add('buildinggadgets2:deny', 'tfg:geyser_source_small')
+	event.add('ae2:blacklisted/spatial', 'tfg:geyser_source_small')
+
+	// Spice unmovable
+
+	event.add('buildinggadgets2:deny', 'tfg:spice')
+	event.add('ae2:blacklisted/spatial', 'tfg:spice')
+
+	event.add('buildinggadgets2:deny', 'tfg:geyser_source')
+	event.add('ae2:blacklisted/spatial', 'tfg:geyser_source')
+
+	event.add('buildinggadgets2:deny', 'tfg:geyser_source_small')
+	event.add('ae2:blacklisted/spatial', 'tfg:geyser_source_small')
 
 	// #region Nether blocks
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')

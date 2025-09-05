@@ -6,6 +6,7 @@ const registerTFGOreVeinFeatures = (event) => {
 
 	// #region earth ores
 
+	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_sheldonite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_garnet_amethyst')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_garnet_opal')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_gold')
@@ -16,7 +17,6 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_pitchblende')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_sapphire')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_scheelite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_sheldonite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_topaz')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_apatite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_basaltic_sands')
@@ -60,7 +60,32 @@ const registerTFGOreVeinFeatures = (event) => {
 
 	// #region mars ores
 
+	event.add('tfg:mars_veins', 'tfg:mars/vein/deep_mars_chromite')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/deep_mars_pitchblende')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/deep_mars_sheldonite')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_almandine')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_apatite')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_beryllium')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_coal')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_copper')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_galena')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_sapphire')
 	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_hematite')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_lubricant')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_neodynium')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_nickel')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_pitchblende')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_quartzite')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_salt')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_stibnite')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_sulfur')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_tantalite')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_tungsten')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/surface_bismuthinite')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/surface_cassiterite')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/surface_hematite')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/surface_nickel_galena')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/surface_tetrahedrite')
 
 	// #endregion
 
@@ -71,6 +96,7 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_bauxite')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_beryllium')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_cassiterite')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_sheldonite')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_desh')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_garnet')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_garnierite')
@@ -89,7 +115,6 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_saltpeter')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_sapphire')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_scheelite')
-	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_sheldonite')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_silver')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_sphalerite')
 	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_tetrahedrite')
@@ -105,6 +130,7 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_basaltic_sands')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_beryllium')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_cassiterite')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sheldonite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_copper')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_garnet')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_garnet_tin')
@@ -129,7 +155,6 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_saltpeter')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sapphire')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_scheelite')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sheldonite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_silver')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sphalerite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sulfur')

@@ -24,9 +24,10 @@ TFCEvents.worldgenData(event => {
 		[ // ground cover
 			'minecraft:crimson_fungus',
 			'beneath:wood/fallen_leaves/crimson',
+			'beneath:wood/leaves/crimson',
 			'beneath:wood/twig/crimson',
-			'tfc:groundcover/feather',
-			'tfc:groundcover/stick'
+			'tfg:groundcover/wraptor_feather',
+			'tfg:groundcover/glider_feather'
 		],
 		'tfg:mars/tree/crimson', // tree feature
 		'tfg:mars/tree/crimson_dead', // dead tree feature
@@ -49,9 +50,10 @@ TFCEvents.worldgenData(event => {
 		[
 			'minecraft:warped_fungus',
 			'beneath:wood/fallen_leaves/warped',
+			'beneath:wood/leaves/warped',
 			'beneath:wood/twig/warped',
-			'tfc:groundcover/feather',
-			'tfc:groundcover/stick'
+			'tfg:groundcover/wraptor_feather',
+			'tfg:groundcover/glider_feather'
 		],
 		'tfg:mars/tree/warped',
 		'tfg:mars/tree/warped_dead',
@@ -64,14 +66,15 @@ TFCEvents.worldgenData(event => {
 		climate => {},
 		'ad_astra:aeronos_stem',
 		'ad_astra:aeronos_cap',
-		'ad_astra:aeronos_stem',
-		null,
+		'betterend:cave_bush',
+		'betterend:cave_bush_fallen',
 		[
 			"ad_astra:aeronos_mushroom",
-			'beneath:wood/fallen_leaves/crimson',
-			'beneath:wood/twig/crimson',
-			'tfc:groundcover/feather',
-			'tfc:groundcover/stick'
+			'betterend:cave_bush',
+			'betterend:cave_bush_fallen',
+			'tfg:groundcover/wraptor_feather',
+			'tfg:groundcover/glider_feather',
+			'tfg:groundcover/aeronos_stick'
 		],
 		'tfg:mars/tree/aeronos',
 		'tfg:mars/tree/aeronos_dead',
@@ -84,14 +87,15 @@ TFCEvents.worldgenData(event => {
 		climate => {},
 		'ad_astra:strophar_stem',
 		'ad_astra:strophar_cap',
-		null,
-		null,
+		'betterend:lucernia_leaves',
+		'betterend:lucernia_leaves_fallen',
 		[
 			"ad_astra:strophar_mushroom",
-			'beneath:wood/fallen_leaves/warped',
-			'beneath:wood/twig/warped',
-			'tfc:groundcover/feather',
-			'tfc:groundcover/stick'
+			'betterend:lucernia_leaves',
+			'betterend:lucernia_leaves_fallen',
+			'tfg:groundcover/wraptor_feather',
+			'tfg:groundcover/glider_feather',
+			'tfg:groundcover/strophar_stick'
 		],
 		'tfg:mars/tree/strophar',
 		'tfg:mars/tree/strophar_dead',
@@ -108,9 +112,9 @@ TFCEvents.worldgenData(event => {
 		null,
 		[
 			"species:alphacene_mushroom",
-			'beneath:wood/fallen_leaves/crimson',
-			'beneath:wood/twig/crimson',
-			'tfc:groundcover/feather',
+			'tfg:groundcover/wraptor_feather',
+			'tfg:groundcover/glider_feather',
+			'tfg:groundcover/alphacene_stick',
 			'tfc:groundcover/stick'
 		],
 		'species:alphacene_mushroom',

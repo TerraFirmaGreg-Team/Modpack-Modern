@@ -784,7 +784,7 @@ const registerMinecraftRecipes = (event) => {
 		' BA',
 		'A  '
 	], {
-		A: 'tfc:jute_fiber',
+		A: '#tfg:burlap_fiber',
 		B: '#forge:rings'
 	}).id('tfc:crafting/lead')
 

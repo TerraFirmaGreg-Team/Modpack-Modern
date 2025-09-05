@@ -1,0 +1,37 @@
+{
+    "name": "Beneath",
+    "category": "tfc:firmaciv",
+    "icon": "beneath:wood/sapling/crimson",
+    "flag": "mod:beneath",
+    "read_by_default": true,
+    "sortnum": 100,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Deep within the nether you can utilize both Crimson and Warped wood to create some rather flashy $(l:firmaciv/watercraft)Boats$().$(br2)Format Error: Due to a limitation, Watercrafts created with these materials are NOT impervious to lava, you WILL sink and BURN."
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Softwoods",
+            "text": "Softwoods have sufficiently soft enough pulp and bark that they're perfect for creating $(l:firmaciv/canoe)Dugout Canoes$()",
+            "item": "beneath:wood/stripped_log/crimson"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)Crimson$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Hardwoods",
+            "text": "Known for their exceptional sturdiness, Hardwood trees are ideal for creating larger and sophisticated Watercrafts such as $(l:firmaciv/rowboat)Rowboats$() and $(l:firmaciv/sloop)Sloops$()",
+            "item": "beneath:wood/planks/warped"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)Warped$()"
+        }
+    ]
+}

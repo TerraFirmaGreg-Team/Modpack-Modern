@@ -1948,18 +1948,20 @@ const registerCreateRecipes = (event) => {
 
 	event.shaped('create:brown_toolbox', [
 		'CEC',
-		'BAB',
+		'BFB',
 		'DAD'
 	], {
 		A: '#forge:chests/wooden',
 		B: '#forge:plates/brass',
 		C: '#forge:bolts/brass',
 		D: '#forge:screws',
-		E: '#forge:tools/screwdrivers'
+		E: '#forge:tools/screwdrivers',
+		F: 'gtceu:treated_wood_frame'
 	}).id('tfg:create/shaped/brown_toolbox')
 
 	event.recipes.gtceu.assembler('create:brown_toolbox')
-		.itemInputs('2x #forge:chests/wooden', '2x #forge:plates/brass', '2x #forge:bolts/brass', '2x #forge:screws')
+		.itemInputs('#forge:chests/wooden', 'gtceu:treated_wood_frame', '2x #forge:plates/brass', 
+					'2x #forge:bolts/brass', '2x #forge:screws')
 		.itemOutputs('create:brown_toolbox')
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])

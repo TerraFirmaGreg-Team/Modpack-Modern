@@ -43,6 +43,7 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:steel_cable',
 	'ad_astra:desh_cable',
 	'ad_astra:glacian_leaves',
+	'ad_astra:raw_ostrum',
 
 	// Don't tag prefix these, several systems rely on all ore blocks being gregtech's generated ones
 	'ad_astra:moon_ice_shard_ore',
@@ -81,15 +82,7 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:ostrum_tank',
 	'tfg:rocket_fin_t3',
 	'tfg:rocket_cone_t3',
-	'tfg:elite_power_thruster',
-	'tfg:better_space_suit_fabric',
-	'ad_astra:netherite_space_helmet',
-	'ad_astra:netherite_space_suit',
-	'ad_astra:netherite_space_pants',
-	'ad_astra:netherite_space_boots',
-	
-
-
+	'tfg:elite_power_thruster',	
 
 	// Disabled until LuV planet
 	
@@ -108,7 +101,11 @@ global.AD_ASTRA_DISABLED_FLUIDS =
 	'ad_astra:hydrogen',
 	'ad_astra:oil',
 	'ad_astra:fuel',
-	'ad_astra:cryo_fuel'
+	'ad_astra:cryo_fuel',
+
+	'gtceu:molten_desh',
+	'gtceu:molten_ostrum',
+	'gtceu:molten_calorite'
 ];
 
 global.BREATHABLE_COMPRESSED_AIRS =

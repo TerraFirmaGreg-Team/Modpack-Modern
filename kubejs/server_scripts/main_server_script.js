@@ -181,6 +181,7 @@ LootJS.modifiers((event) => {
 	registerSpeciesLoots(event)
 	registerTFCLoots(event)
 	registerTFGLoots(event)
+	registerWansAncientBeastsLoots(event)
 });
 
 /**

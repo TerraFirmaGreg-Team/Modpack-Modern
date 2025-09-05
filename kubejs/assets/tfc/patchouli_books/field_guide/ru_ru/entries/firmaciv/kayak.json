@@ -1,0 +1,33 @@
+{
+  "name": "Каяки",
+  "category": "tfc:firmaciv",
+  "icon": "firmaciv:kayak_with_paddle_icon_only",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ваш лучший друг для одиночных путешествий. Конечно, немаловажно, что это единственная лодка, которую можно переносить как предмет. Это самая быстрая и маневренная лодка для одного игрока!$(br2)Чтобы перенести каяк, просто разбейте его.",
+      "title": "Каяк"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Каяк",
+      "images": [
+        "firmaciv:textures/gui/book/kayak_isometric.png"
+      ],
+      "text": "Каяки — самые маленькие и самые портативные лодки."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmaciv:crafting/kayak",
+      "recipe2": "firmaciv:crafting/kayak_paddle"
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "anchor": "soaking",
+      "recipe": "firmaciv:barrel/large_waterproof_hide_olive",
+      "text": "Вымочите крупное мягченое голье в жире или оливковом масле, чтобы сделать его водонепроницаемым."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 2
+}

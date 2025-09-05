@@ -32,19 +32,19 @@
 			"tfg:earth/geode/pyrite",
 			"tfg:earth/geode/quartzite"
 		],
-		[
-
-		],
+		[],
 		[],
 		[],
 		"#tfg:mars_veins",
 		[],
 		[
 			"tfc:raw_boulder_small_patch",
-			"tfc:cobble_boulder_small_patch"
+			"tfc:cobble_boulder_small_patch",
+			"tfg:mars/surface/pile_venus_sand_no_water",
+			"tfg:mars/surface/flint_patch"
 		],
 		[
-
+			"tfg:mars/surface/charnia"
 		],
 		"#tfg:mars_top_layer_modification"
 	],
@@ -65,6 +65,14 @@
 		"minecraft:enderman": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"endermanoverhaul:cave_enderman": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"species:quake": {
+			"energy_budget": 0.2,
+			"charge": 0.7
 		}
 	},
 	"spawners": {
@@ -72,16 +80,52 @@
 		"axolotls": [],
 		"creature": [
 			{
+				"type": "tfg:sniffer",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
 				"type": "tfg:wraptor",
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 50
 			},
 			{
+				"type": "wan_ancient_beasts:crusher",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "wan_ancient_beasts:glider",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
 				"type": "species:goober",
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "wan_ancient_beasts:walker",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "tfg:glacian_ram",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "wan_ancient_beasts:eater",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
 			}
 		],
 		"misc": [],
@@ -99,16 +143,28 @@
 				"weight": 100
 			},
 			{
-				"type": "endermanoverhaul:badlands_enderman",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 20
+			},
+			{
+				"type": "endermanoverhaul:cave_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "ad_astra:martian_raptor",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:quake",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [],

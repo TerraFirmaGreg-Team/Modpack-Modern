@@ -15,7 +15,7 @@
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 80
+			"chance": 120
 		},
 		{
 			"type": "minecraft:in_square"
@@ -25,7 +25,7 @@
 		},
 		{
 			"type": "minecraft:heightmap",
-			"heightmap": "WORLD_SURFACE"
+			"heightmap": "OCEAN_FLOOR"
 		}
 	]
 }

@@ -159,30 +159,30 @@ function registerTFGRockRecipes(event) {
 
 	const HAMMERING = [
 		{ raw: 'minecraft:deepslate', hammered: 'minecraft:cobbled_deepslate', duration: 10, eu: 16 },
-		{ raw: 'minecraft:cobbled_deepslate', hammered: 'tfc:sand/black', duration: 200, eu: 2 },
-		{ raw: 'minecraft:blackstone', hammered: 'tfc:sand/black', duration: 200, eu: 2 },
-		{ raw: 'beneath:crackrack', hammered: 'tfc:sand/pink', duration: 200, eu: 2 },
-		{ raw: 'minecraft:dripstone_block', hammered: 'tfc:sand/brown', duration: 200, eu: 2 },
+		{ raw: 'minecraft:cobbled_deepslate', hammered: 'tfc:sand/black', duration: 20*3.5, eu: 2 },
+		{ raw: 'minecraft:blackstone', hammered: 'tfc:sand/black', duration: 20*3.5, eu: 2 },
+		{ raw: 'beneath:crackrack', hammered: 'tfc:sand/pink', duration: 20*3.5, eu: 2 },
+		{ raw: 'minecraft:dripstone_block', hammered: 'tfc:sand/brown', duration: 20*3.5, eu: 2 },
 
 		{ raw: 'ad_astra:moon_stone', hammered: 'ad_astra:moon_cobblestone', duration: 10, eu: 16 },
 		{ raw: 'tfg:rock/hardened_moon_stone', hammered: 'ad_astra:moon_cobblestone', duration: 10, eu: 16 },
-		{ raw: 'ad_astra:moon_cobblestone', hammered: 'ad_astra:moon_sand', duration: 200, eu: 2 },
-		{ raw: 'ad_astra:moon_deepslate', hammered: 'ad_astra:moon_sand', duration: 200, eu: 2 },
-		{ raw: 'tfg:rock/hardened_moon_deepslate', hammered: 'ad_astra:moon_sand', duration: 200, eu: 2 },
+		{ raw: 'ad_astra:moon_cobblestone', hammered: 'ad_astra:moon_sand', duration: 20*3.5, eu: 2 },
+		{ raw: 'ad_astra:moon_deepslate', hammered: 'ad_astra:moon_sand', duration: 20*3.5, eu: 2 },
+		{ raw: 'tfg:rock/hardened_moon_deepslate', hammered: 'ad_astra:moon_sand', duration: 20*3.5, eu: 2 },
 		{ raw: 'ad_astra:mars_stone', hammered: 'ad_astra:mars_cobblestone', duration: 10, eu: 16 },
 		{ raw: 'tfg:rock/hardened_mars_stone', hammered: 'ad_astra:mars_cobblestone', duration: 10, eu: 16 },
-		{ raw: 'ad_astra:mars_cobblestone', hammered: 'ad_astra:mars_sand', duration: 200, eu: 2 },
+		{ raw: 'ad_astra:mars_cobblestone', hammered: 'ad_astra:mars_sand', duration: 20*3.5, eu: 2 },
 		{ raw: 'ad_astra:venus_stone', hammered: 'ad_astra:venus_cobblestone', duration: 10, eu: 16 },
 		{ raw: 'tfg:rock/hardened_venus_stone', hammered: 'ad_astra:venus_cobblestone', duration: 10, eu: 16 },
-		{ raw: 'ad_astra:venus_cobblestone', hammered: 'ad_astra:venus_sand', duration: 200, eu: 2 },
+		{ raw: 'ad_astra:venus_cobblestone', hammered: 'ad_astra:venus_sand', duration: 20*3.5, eu: 2 },
 		{ raw: 'ad_astra:mercury_stone', hammered: 'ad_astra:mercury_cobblestone', duration: 10, eu: 16 },
 		{ raw: 'tfg:rock/hardened_mercury_stone', hammered: 'ad_astra:mercury_cobblestone', duration: 10, eu: 16 },
-		{ raw: 'ad_astra:mercury_cobblestone', hammered: 'tfc:sand/red', duration: 200, eu: 2 },
+		{ raw: 'ad_astra:mercury_cobblestone', hammered: 'tfc:sand/red', duration: 20*3.5, eu: 2 },
 		{ raw: 'ad_astra:glacio_stone', hammered: 'ad_astra:glacio_cobblestone', duration: 10, eu: 16 },
 		{ raw: 'tfg:rock/hardened_glacio_stone', hammered: 'ad_astra:glacio_cobblestone', duration: 10, eu: 16 },
-		{ raw: 'ad_astra:glacio_cobblestone', hammered: 'tfc:sand/white', duration: 200, eu: 2 },
+		{ raw: 'ad_astra:glacio_cobblestone', hammered: 'tfc:sand/white', duration: 20*3.5, eu: 2 },
 		{ raw: 'ad_astra:conglomerate', hammered: 'tfc:rock/gravel/conglomerate', duration: 10, eu: 16 },
-		{ raw: 'ad_astra:permafrost', hammered: '4x gtceu:ice_dust', duration: 200, eu: 2 }
+		{ raw: 'ad_astra:permafrost', hammered: '4x gtceu:ice_dust', duration: 20, eu: 2 }
 	]
 
 	HAMMERING.forEach(x => {

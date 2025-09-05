@@ -47,4 +47,6 @@ const registerBeneathItemTags = (event) => {
 	event.remove('minecraft:leaves', 'beneath:wood/leaves/warped')
 	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/crimson')
 	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/warped')
+	event.add('tfc:sewing_tables', 'beneath:wood/sewing_table/crimson')
+	event.add('tfc:sewing_tables', 'beneath:wood/sewing_table/warped')
 }
