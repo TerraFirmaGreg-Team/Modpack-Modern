@@ -1,0 +1,23 @@
+{
+	"name": "Уникальные блоки",
+	"category": "tfc:beneath",
+	"icon": "beneath:blackstone_aqueduct",
+	"pages": [
+		{
+			"type": "patchouli:crafting",
+			"recipe": "beneath:crafting/blackstone_aqueduct",
+			"text": "Пироксенитовый акведук позволяет проводить лаву на любое расстояние."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shapeless/hellbricks_from_soot",
+			"text": "Адские кирпичи — это строительный блок, который также используется для Адской кузницы."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "beneath:crafting/blackstone_brick",
+			"text": "Мигматитовые и пироксенитовые кирпичи изготавливаются как и все остальные кирпичи. И это подразумевает создание кирпичей как предметов."
+		}
+	],
+	"read_by_default": true
+}

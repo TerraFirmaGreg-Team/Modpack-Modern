@@ -35,6 +35,8 @@
 		[
 			"tfc:random_empty_hot_spring",
 			"tfg:mars/terrain/empty_rivulet",
+			"tfg:mars/terrain/magma_rivulet",
+			"tfg:mars/terrain/basalt_rivulet",
 			"tfg:mars/terrain/water_fissure",
 			"tfg:mars/terrain/empty_fissure"
 		],

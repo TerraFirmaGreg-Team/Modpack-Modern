@@ -56,7 +56,7 @@ function registerTFGNuclearRecipes(event) {
 
 	event.recipes.gtceu.centrifuge('mars_semiheavy_water')
 		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
-		.outputFluids(Fluid.of('minecraft:water', 500))
+		.outputFluids(Fluid.of('tfg:semiheavy_water', 500))
 		.itemOutputs('2x #forge:tiny_dusts/ammonium_chloride')
 		.duration(20*9)
 		.EUt(GTValues.VA[GTValues.MV])

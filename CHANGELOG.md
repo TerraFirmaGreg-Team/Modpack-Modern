@@ -12,6 +12,7 @@
 - Added a way to keep your space suit with you on death, so you can more safely set your spawn on other planets (#1710) @BlueBoat29
 - Added Flax as a cold-weather alternative to jute and a plant-based option for light colored cloth @BlueBoat29
 - Sheet metal blocks are now made in a stonecutter and their yield increased (#1746) @SpicyNoodle5
+- Added a small amount of silver to the Bismith (Surface) vein @Pyritie
 ### Bug fixes
 - Fixed tongs getting stuck in ovens, and now you can use them the same way you'd previously use a Peel @Pyritie
 - Allowed powders, gears, plates, double plates, springs, and small springs to be heated (#1727) @Redeix
@@ -19,6 +20,7 @@
 - Fixed butchery knife not giving additional meat when used to kill an animal @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn & @CN059
+- Russian @Dl, @Kostabl, @Turikar42, & @But3r
 - Ukranian @MetEnBouldry
 
 ## [0.10.10] - 23-08-2025

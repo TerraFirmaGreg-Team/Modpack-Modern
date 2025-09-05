@@ -16,7 +16,7 @@
         "with": [
           {
             "block": "gtceu:granite_bismuth_ore",
-            "weight": 90
+            "weight": 85
           },
           {
             "block": "gtceu:granite_sulfur_ore",
@@ -25,6 +25,10 @@
           {
             "block": "gtceu:granite_lead_ore",
             "weight": 7
+          },
+          {
+            "block": "gtceu:granite_silver_ore",
+            "weight": 5
           }
         ]
       },
@@ -35,7 +39,7 @@
         "with": [
           {
             "block": "gtceu:diorite_bismuth_ore",
-            "weight": 90
+            "weight": 85
           },
           {
             "block": "gtceu:diorite_sulfur_ore",
@@ -44,6 +48,10 @@
           {
             "block": "gtceu:diorite_lead_ore",
             "weight": 7
+          },
+          {
+            "block": "gtceu:diorite_silver_ore",
+            "weight": 5
           }
         ]
       },
@@ -54,7 +62,7 @@
         "with": [
           {
             "block": "gtceu:gabbro_bismuth_ore",
-            "weight": 90
+            "weight": 85
           },
           {
             "block": "gtceu:gabbro_sulfur_ore",
@@ -63,6 +71,10 @@
           {
             "block": "gtceu:gabbro_lead_ore",
             "weight": 7
+          },
+          {
+            "block": "gtceu:gabbro_silver_ore",
+            "weight": 5
           }
         ]
       },
@@ -73,7 +85,7 @@
         "with": [
           {
             "block": "gtceu:shale_bismuth_ore",
-            "weight": 90
+            "weight": 85
           },
           {
             "block": "gtceu:shale_sulfur_ore",
@@ -82,6 +94,10 @@
           {
             "block": "gtceu:shale_lead_ore",
             "weight": 7
+          },
+          {
+            "block": "gtceu:shale_silver_ore",
+            "weight": 5
           }
         ]
       },
@@ -92,7 +108,7 @@
         "with": [
           {
             "block": "gtceu:claystone_bismuth_ore",
-            "weight": 90
+            "weight": 85
           },
           {
             "block": "gtceu:claystone_sulfur_ore",
@@ -101,6 +117,10 @@
           {
             "block": "gtceu:claystone_lead_ore",
             "weight": 7
+          },
+          {
+            "block": "gtceu:claystone_silver_ore",
+            "weight": 5
           }
         ]
       },
@@ -111,7 +131,7 @@
         "with": [
           {
             "block": "gtceu:limestone_bismuth_ore",
-            "weight": 90
+            "weight": 85
           },
           {
             "block": "gtceu:limestone_sulfur_ore",
@@ -120,6 +140,10 @@
           {
             "block": "gtceu:limestone_lead_ore",
             "weight": 7
+          },
+          {
+            "block": "gtceu:limestone_silver_ore",
+            "weight": 5
           }
         ]
       },
@@ -130,7 +154,7 @@
         "with": [
           {
             "block": "gtceu:conglomerate_bismuth_ore",
-            "weight": 90
+            "weight": 85
           },
           {
             "block": "gtceu:conglomerate_sulfur_ore",
@@ -139,6 +163,10 @@
           {
             "block": "gtceu:conglomerate_lead_ore",
             "weight": 7
+          },
+          {
+            "block": "gtceu:conglomerate_silver_ore",
+            "weight": 5
           }
         ]
       },
@@ -149,7 +177,7 @@
         "with": [
           {
             "block": "gtceu:dolomite_bismuth_ore",
-            "weight": 90
+            "weight": 85
           },
           {
             "block": "gtceu:dolomite_sulfur_ore",
@@ -158,6 +186,10 @@
           {
             "block": "gtceu:dolomite_lead_ore",
             "weight": 7
+          },
+          {
+            "block": "gtceu:dolomite_silver_ore",
+            "weight": 5
           }
         ]
       },
@@ -168,7 +200,7 @@
         "with": [
           {
             "block": "gtceu:chert_bismuth_ore",
-            "weight": 90
+            "weight": 85
           },
           {
             "block": "gtceu:chert_sulfur_ore",
@@ -177,6 +209,10 @@
           {
             "block": "gtceu:chert_lead_ore",
             "weight": 7
+          },
+          {
+            "block": "gtceu:chert_silver_ore",
+            "weight": 5
           }
         ]
       },
@@ -187,7 +223,7 @@
         "with": [
           {
             "block": "gtceu:chalk_bismuth_ore",
-            "weight": 90
+            "weight": 85
           },
           {
             "block": "gtceu:chalk_sulfur_ore",
@@ -196,6 +232,10 @@
           {
             "block": "gtceu:chalk_lead_ore",
             "weight": 7
+          },
+          {
+            "block": "gtceu:chalk_silver_ore",
+            "weight": 5
           }
         ]
       }
@@ -208,7 +248,7 @@
       "blocks": [
         {
           "block": "tfc:ore/small_bismuthinite",
-          "weight": 90
+          "weight": 85
         },
         {
           "block": "gtceu:sulfur_indicator",
@@ -217,6 +257,10 @@
         {
           "block": "gtceu:lead_indicator",
           "weight": 7
+        },
+        {
+          "block": "tfc:ore/small_native_silver",
+          "weight": 5
         }
       ]
     }
