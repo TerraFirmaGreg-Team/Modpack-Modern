@@ -49,16 +49,18 @@ const registerTFGNuclearMaterials = (event) => {
 
     event.create('heavy_water')
         .fluid()
+        .temperature(236)
         .components('2x deuterium', '1x oxygen')
         .iconSet(GTMaterialIconSet.FINE)
         .color(0xB5B9FF)
         .secondaryColor(0x81FFF9)
 
-    event.create('semiheavy_water')
+    event.create('tfg:semiheavy_water')
         .fluid()
+        .temperature(213)
         .components('1x deuterium','1x hydrogen', '1x oxygen')
         .iconSet(GTMaterialIconSet.FINE)
-        .color(0xb5d4ff)
+        .color(0xb5ffff)
         .secondaryColor(0x81FFF9)
 
     event.create('uranium_waste')
