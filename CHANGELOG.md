@@ -10,7 +10,8 @@
 - Sewing Tables now use a knife instead of shears @BlueBoat29
 - Create Logistics Jars now hold 8000 mB each instead of just 1000 mB (#1707) @Ghoulcel
 - Added a way to keep your space suit with you on death, so you can more safely set your spawn on other planets (#1710) @BlueBoat29
-- Added Flax as a cold-weather alternative to jute and a plant-based option for light colored cloth @BlueBoat29 
+- Added Flax as a cold-weather alternative to jute and a plant-based option for light colored cloth @BlueBoat29
+- Sheet metal blocks are now made in a stonecutter and their yield increased (#1746) @SpicyNoodle5
 - Added a small amount of silver to the Bismith (Surface) vein @Pyritie
 ### Bug fixes
 - Fixed tongs getting stuck in ovens, and now you can use them the same way you'd previously use a Peel @Pyritie
