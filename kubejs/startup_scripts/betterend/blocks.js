@@ -42,8 +42,6 @@ function registerBetterEndBlocks(event) {
 	createPlant(event, 'creeping_moss', 'mars')
 		.box(2, 0, 2, 14, 20, 14)
 		.lootItem('beneath:warped_straw')
-	createPlant(event, 'flamaea', 'mars')
-		.box(2, 0, 2, 14, 3, 14)
 	createPlant(event, 'flammalix', 'mars')
 	createPlant(event, 'globulagus', 'mars')
 		.box(3, 0, 3, 13, 13, 13)
@@ -60,10 +58,8 @@ function registerBetterEndBlocks(event) {
 	createPlant(event, 'small_amaranita_mushroom', 'mars')
 		.box(3, 0, 3, 13, 8, 13)
 	createPlant(event, 'lucernia_outer_leaves', 'mars')
-	// TODO: needs a feature
 	createPlant(event, 'lanceleaf_small', 'mars')
 		.box(4, 0, 4, 12, 8, 12)
-	// TODO: needs a feature
 
 	// 1 block tall waterlogged
 
@@ -73,6 +69,22 @@ function registerBetterEndBlocks(event) {
 	createPlant(event, 'charnia_light_blue', 'mars')
 	createPlant(event, 'charnia_purple', 'mars')
 	createPlant(event, 'charnia_red', 'mars')
+
+	// Water surface
+
+	event.create('betterend:flamaea', 'tfg:floating_plant')
+		.soundType('crop')
+		.box(1, 0, 1, 15, 2, 15)
+		.mapColor('color_light_blue')
+		.tagItem('tfg:mars_plants')
+		.tagItem('forge:mushrooms')
+
+	event.create('betterend:lacugrove', 'tfg:floating_plant')
+		.xz_offset(false)
+		.soundType('crop')
+		.box(0, 0, 0, 16, 1, 16)
+		.mapColor('color_cyan')
+		.tagItem('tfg:mars_plants')
 
 	// Mosses / Can go on sides of blocks
 	
@@ -138,7 +150,6 @@ function registerBetterEndBlocks(event) {
 	event.create('betterend:large_amaranita_mushroom', 'tfg:tall_decorative_plant')
 		.height(3)
 		.soundType('nether_wart')
-		.tagBlock('minecraft:mineable/hoe')
 		.tagItem('tfg:mars_plants')
 		.tagItem('forge:mushrooms')
 		.mapColor('fire')
@@ -146,7 +157,6 @@ function registerBetterEndBlocks(event) {
 	event.create('betterend:lanceleaf', 'tfg:tall_decorative_plant')
 		.height(5)
 		.soundType('crop')
-		.tagBlock('minecraft:mineable/hoe')
 		.tagItem('tfg:mars_plants')
 		.mapColor('color_orange')
 

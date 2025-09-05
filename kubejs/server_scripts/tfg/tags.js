@@ -577,6 +577,7 @@ const registerTFGBlockTags = (event) => {
 	event.add('forge:mineable/wrench', 'tfg:reflector')
 	event.add('forge:mineable/wrench', 'tfg:machine_casing_aluminium_plated_steel')
 
+	event.add('tfg:decorative_plant_attachable', '#minecraft:logs')
 }
 //#endregion
 
