@@ -24,15 +24,10 @@
 		],
 		[],
 		[
-			"tfg:earth/geode/amethyst",
-			"tfg:earth/geode/barite",
-			"tfg:earth/geode/calcite",
-			"tfg:earth/geode/gypsum",
-			"tfg:earth/geode/opal",
-			"tfg:earth/geode/pyrite",
-			"tfg:earth/geode/quartzite"
-		],
-		[
+			"tfg:mars/terrain/venus_sand_disc",
+			"tfg:mars/terrain/basalt_delta",
+			"tfg:mars/terrain/gabbro_delta",
+			"tfg:mars/terrain/red_granite_delta",
 			"tfc:random_empty_hot_spring",
 			"tfg:mars/terrain/empty_rivulet",
 			"tfg:mars/terrain/magma_rivulet",
@@ -42,13 +37,9 @@
 		],
 		[],
 		[],
+		[],
 		"#tfg:mars_veins",
-		[
-			"tfg:mars/terrain/venus_sand_disc",
-			"tfg:mars/terrain/basalt_delta",
-			"tfg:mars/terrain/gabbro_delta",
-			"tfg:mars/terrain/red_granite_delta"
-		],
+		"#tfg:mars_underground_decoration",
 		[
 			"tfc:raw_boulder",
 			"tfc:raw_boulder_small_patch",
