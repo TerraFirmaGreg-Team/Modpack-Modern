@@ -11483,32 +11483,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "Sacks 'N Such-1.20.1-1.2.3-all.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6464/916/Sacks 'N Such-1.20.1-1.2.3-all.jar",
-                    "id": "6464916",
-                    "parent_id": "695822",
-                    "hashes": {
-                        "sha1": "490701ab6768325bf455d19455966567cd01996b",
-                        "md5": "abcc4d700ed32305824902e4f2b29bbb"
-                    },
-                    "required_dependencies": [
-                        "302973"
-                    ],
-                    "size": 660385,
-                    "date_published": "2025-04-25T23:21:11.043Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "Sacks 'N Such-1.20.1-1.2.3-all.jar",
+                    "file_name": "Sacks 'N Such-1.20.1-1.2.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11517,18 +11493,43 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/PhnM3Lkv/versions/tXZzHNm6/Sacks 'N Such-1.20.1-1.2.3-all.jar",
-                    "id": "tXZzHNm6",
+                    "url": "https://cdn.modrinth.com/data/PhnM3Lkv/versions/PA25BnBO/Sacks 'N Such-1.20.1-1.2.4.jar",
+                    "id": "PA25BnBO",
                     "parent_id": "PhnM3Lkv",
                     "hashes": {
-                        "sha512": "cd1a5514f6231eee01e514be4bd8e05cdcf5411df68327b83586996ddae15d5c6fda3ff2edec22c3aad6ccb0052e45a73c98a19e2832671f34291e2afd7df358",
-                        "sha1": "490701ab6768325bf455d19455966567cd01996b"
+                        "sha512": "c6ca411476f100cee117889e6fa8945d5f6848669f53f87b8bcbcd0ed5697bc795ee6e22202464e1a2687b85adf15396b65899ab4b58d7a73cc196108105e7cc",
+                        "sha1": "9819909ff38f14408e313998d225e986333d52b7"
                     },
                     "required_dependencies": [
-                        "JaCEZUhg"
+                        "JaCEZUhg",
+                        "UHJfcchT"
                     ],
-                    "size": 660385,
-                    "date_published": "2025-04-25T23:21:12.798597Z"
+                    "size": 1239847,
+                    "date_published": "2025-09-05T08:32:48.466815Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "Sacks 'N Such-1.20.1-1.2.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6965/231/Sacks 'N Such-1.20.1-1.2.4.jar",
+                    "id": "6965231",
+                    "parent_id": "695822",
+                    "hashes": {
+                        "sha1": "9819909ff38f14408e313998d225e986333d52b7",
+                        "md5": "80004a900325176c2ff9427198dedb42"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 1239847,
+                    "date_published": "2025-09-05T08:32:46.673Z"
                 }
             ]
         },
