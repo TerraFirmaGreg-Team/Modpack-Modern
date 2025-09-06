@@ -166,3 +166,23 @@ global.FOOD_FRUIT = [
 	{name: 'blossom_berry', id: 'betterend:blossom_berry_product', saturation: 1, water: 7.5, fruit: 1.5, decay: 2 },
 	{name: 'shadow_berry', id: 'betterend:shadow_berry_cooked', saturation: 1, water: 5, fruit: 1.5, decay: 2 }
 ];
+
+global.COOLING_FOODS = [
+	'firmalife:food/vanilla_ice_cream',
+	'firmalife:food/chocolate_ice_cream',
+	'firmalife:food/strawberry_ice_cream',
+	'firmalife:food/cookie_dough_ice_cream',
+	'firmalife:food/banana_split'
+];
+
+global.COOLING_FOODS_STRONG = [
+	'tfg:ice_soup'
+];
+
+global.WARMING_FOODS = [
+	'tfc:food/grain_soup',
+	'tfc:food/fruit_soup',
+	'tfc:food/vegetables_soup',
+	'tfc:food/protein_soup',
+	'tfc:food/dairy_soup'
+];

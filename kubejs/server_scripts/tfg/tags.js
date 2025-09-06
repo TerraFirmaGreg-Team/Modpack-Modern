@@ -256,6 +256,13 @@ const registerTFGItemTags = (event) => {
 		event.add('tfc:foods/cooked_meats', meat)
 	})
 
+	//These tags are used to add the tooltips and for searchability
+	global.COOLING_FOODS.forEach(food => { event.add('tfg:cooling_foods', food) })
+	
+	event.add('tfg:cooling_foods_strong', 'tfg:food/ice_soup')
+	
+	global.WARMING_FOODS.forEach(food => { event.add('tfg:warming_foods', food) })
+
 	//jam sandwhich stuff
 	const usable_in_jam_sandwich = Ingredient.of('#tfc:foods/usable_in_jam_sandwich').itemIds.toArray().map(String);
 	const preserves = Ingredient.of('#tfc:foods/preserves').itemIds.toArray().map(String);

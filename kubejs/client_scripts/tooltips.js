@@ -146,6 +146,20 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('tfg.tooltip.wraptor_sugar'))
 	})
 	
+	//#region temperature changing foods
+	event.addAdvanced(['#tfg:cooling_foods'], (item, advanced, text) => {
+		text.add(2, Text.translate('tfg.tooltip.cooling_foods'))
+	})
+	
+	event.addAdvanced(['#tfg:cooling_foods_strong'], (item, advanced, text) => {
+		text.add(2, Text.translate('tfg.tooltip.cooling_foods_strong'))
+	})
+	
+	event.addAdvanced(['#tfg:warming_foods'], (item, advanced, text) => {
+		text.add(2, Text.translate('tfg.tooltip.warming_foods'))
+	})
+
+	//#endregion
 
 	//#region Deprecated Items
 	event.addAdvanced(['#megacells:mega_interface'], (item, advanced, text) => {
