@@ -14,6 +14,7 @@
 - Sheet metal blocks are now made in a stonecutter and their yield increased (#1746) @SpicyNoodle5
 - Added a small amount of silver to the Bismith (Surface) vein @Pyritie
 - Added plascrete as an alternative to steel frames in the electric greenhouse @Redeix
+- Added the ability for foods to affect the player's temperature @BlueBoat29
 ### Bug fixes
 - Fixed tongs getting stuck in ovens, and now you can use them the same way you'd previously use a Peel @Pyritie
 - Allowed powders, gears, plates, double plates, springs, and small springs to be heated (#1727) @Redeix
