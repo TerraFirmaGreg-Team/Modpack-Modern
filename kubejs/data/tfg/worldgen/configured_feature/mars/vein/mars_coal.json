@@ -221,14 +221,18 @@
       }
     ],
     "indicator": {
-      "rarity": 15,
-      "depth": 50,
+      "rarity": 20,
+      "depth": 10,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [
         {
+          "block": "tfc:ore/small_hematite",
+          "weight": 30
+        },
+        {
           "block": "gtceu:coal_indicator",
-          "weight": 95
+          "weight": 65
         },
         {
           "block": "gtceu:coal_bud_indicator",
