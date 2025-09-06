@@ -10,6 +10,10 @@
 		},
 		{
 			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING"
 		}
 	]
 }
