@@ -16,6 +16,11 @@ function registerTFGBioreactorRecipes(event) {
 	 * @property {(string | [string, Internal.Ingredient])[]?} itemInputs
 	 * @property {string[]?} itemOutputs Ingredient outputs - first output is replaced with ISP output if defined
 	 * @property {Internal.ItemStackProviderJS?} itemOutputProvider ItemStackProvider which provides the recipe output.
+	 * @property {boolean?} daytime
+	 * @property {boolean?} perTick
+	 * @property {(string | [string, Internal.GTRecipeSchema$GTRecipeJS.dimension])?} dimension
+	 * @property {Internal.GTRecipeSchema$GTRecipeJS.cleanroom?} cleanroom CleanroomType
+	 * @property {string[]?} notConsumable
 	*
 	* **NOTE:** TFC Ingredients do not support item counts higher than 1. Do `Sized(TFCIngredient('item:item'), count)` instead of `TFCIngredient('[count]x item:item')`
 	*/
@@ -35,6 +40,7 @@ function registerTFGBioreactorRecipes(event) {
 		if (data.itemOutputs === undefined) data.itemOutputs = []
 		if (data.fluidInputs === undefined) data.fluidInputs = []
 		if (data.fluidOutputs === undefined) data.fluidOutputs = []
+		if (data.notConsumable === undefined) data.notConsumable = []
 		let gregInputs = [], inputs = []
 		let outputFirstIndex = (data.itemOutputProvider === undefined) ? 0 : 1
 		data.itemInputs.forEach(item => {
@@ -61,6 +67,11 @@ function registerTFGBioreactorRecipes(event) {
 		.EUt(EUt)
 
 		if (data.circuit) r.circuit(data.circuit)
+		if (data.daytime) r.daytime(data.daytime)
+		if (data.perTick) r.perTick(data.perTick)
+		if (data.dimension) r.dimension(data.dimension)
+		if (data.cleanroom) r.cleanroom(data.cleanroom)
+		if (data.notConsumable.length > 0) r.notConsumable(data.notConsumable)
 		if (data.itemOutputs.length > 0) r.itemOutputs(data.itemOutputs)
 		if (data.itemInputs.length > 0) r.itemInputs(data.itemInputs)
 		if (data.fluidInputs.length > 0) r.inputFluids(data.fluidInputs);
@@ -70,7 +81,7 @@ function registerTFGBioreactorRecipes(event) {
 		return r;
 	}
 
-		/**
+	/**
 	 * @param {string} id 
 	 * @param {number} duration 
 	 * @param {number} EUt 
@@ -78,14 +89,30 @@ function registerTFGBioreactorRecipes(event) {
 	 */
 	const bioreactorRecipe = (id, duration, EUt, data) => registerBioreactorRecipe("bioreactor", id, duration, EUt, "", data)
 
+	/**
+	 * @param {string} id 
+	 * @param {number} duration 
+	 * @param {number} EUt 
+	 * @param {FoodRecipeData} data 
+	 * @param {string} text
+	 */
+	const bioreactorRecipeText = (id, duration, EUt, text, data) => registerBioreactorRecipe("bioreactor", id, duration, EUt, text, data)
+
+	/////////////////////////////////////////
+
 	//#region Recipes
-	// EXAMPLE (WIP)
-	// bioreactorRecipe('test/test', 3*60*20, GTValues.VA[GTValues.EV], {
+	// EXAMPLE
+	// bioreactorRecipeText('test/test', 1*10*20, GTValues.VA[GTValues.EV], 'tfg.food_recipe.brining', {
 	// 	itemInputs: ['tfc:food/red_apple'],
-	// 	fluidInputs: ['#tfc:milks 1000'],
+	// 	fluidInputs: ['#tfc:milks 10'],
 	// 	itemOutputs: ['3x tfc:food/green_apple'],
-	// 	fluidOutputs: ['minecraft:lava 1000'],
-	// 	itemOutputProvider: TFC.isp.of('3x tfc:food/green_apple').copyOldestFood()
+	// 	notConsumable: ['minecraft:bucket'],
+	// 	dimension: 'minecraft:overworld',
+	// 	perTick: true,
+	// 	daytime: true,
+	// 	cleanroom: CleanroomType.STERILE_CLEANROOM,
+	// 	fluidOutputs: ['minecraft:lava 10'],
+	// 	itemOutputProvider: TFC.isp.of('3x tfc:food/green_apple').copyFood().addTrait('firmalife:smoked')
 	// })
 
 	//#endregion
