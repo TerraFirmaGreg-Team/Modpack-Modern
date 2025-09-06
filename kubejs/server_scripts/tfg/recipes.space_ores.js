@@ -169,7 +169,7 @@ function registerTFGSpaceOres(event) {
 	event.recipes.gtceu.ostrum_linear_accelerator('tfg:lightweight_ostrum')
 		.inputFluids('gtceu:lightweight_ostrum_vapor 1000')
 		.inputFluids('gtceu:residual_radioactive_concoction 100')
-		.inputFluids(Fluid.of('gtceu:heavy_water', 1000))
+		.inputFluids(Fluid.of('tfg:heavy_water', 1000))
 		.itemOutputsRanged('#forge:dusty_raw_materials/pitchblende', 1, 10)
 		.itemOutputsRanged('#forge:dusty_raw_materials/silver', 1, 10)
 		.itemOutputsRanged('#forge:dusty_raw_materials/tricalcium_phosphate', 1, 10)

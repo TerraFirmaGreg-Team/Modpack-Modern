@@ -47,7 +47,7 @@ const registerTFGNuclearMaterials = (event) => {
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create('heavy_water')
+    event.create('tfg:heavy_water')
         .liquid(new GTFluidBuilder().temperature(236))
         .components('2x deuterium', '1x oxygen')
         .iconSet(GTMaterialIconSet.FINE)

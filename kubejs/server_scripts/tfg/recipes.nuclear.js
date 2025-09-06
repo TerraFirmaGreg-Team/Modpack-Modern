@@ -49,7 +49,7 @@ function registerTFGNuclearRecipes(event) {
 
 	event.recipes.gtceu.centrifuge('mars_heavy_water')
 		.inputFluids(Fluid.of('tfg:heavy_ammoniacal_water', 1000))
-		.outputFluids(Fluid.of('gtceu:heavy_water', 500))
+		.outputFluids(Fluid.of('tfg:heavy_water', 500))
 		.itemOutputs('#forge:dusts/ammonium_chloride', '2x #forge:small_dusts/ammonium_chloride')
 		.duration(20*9)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -177,7 +177,7 @@ function registerTFGNuclearRecipes(event) {
 	// Recipe for Uranium Reactor
 	event.recipes.gtceu.fission_reactor('uranium_radioactive')
 		.itemInputs('#forge:bolts/uranium_pellet')
-		.inputFluids(Fluid.of('gtceu:heavy_water', 750))
+		.inputFluids(Fluid.of('tfg:heavy_water', 750))
 		.outputFluids(Fluid.of('gtceu:radioactive_steam', 750))
 		.outputFluids(Fluid.of('gtceu:radioactive_waste', 50))
 		.duration(20*100)
@@ -186,7 +186,7 @@ function registerTFGNuclearRecipes(event) {
 	// Recipe for Plutonium Reactor
 	event.recipes.gtceu.fission_reactor('plutonium_irradiated')
 		.itemInputs('#forge:bolts/plutonium_pellet')
-		.inputFluids(Fluid.of('gtceu:heavy_water', 2000))
+		.inputFluids(Fluid.of('tfg:heavy_water', 2000))
 		.outputFluids(Fluid.of('gtceu:irradiated_steam', 2000))
 		.outputFluids(Fluid.of('gtceu:tritiated_water', 50))
 		.duration(20*100)
