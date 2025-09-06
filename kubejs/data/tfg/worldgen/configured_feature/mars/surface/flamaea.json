@@ -16,7 +16,7 @@
 			"placement": [
 				{
 					"type": "minecraft:heightmap",
-					"heightmap": "WORLD_SURFACE"
+					"heightmap": "MOTION_BLOCKING"
 				},
 				{
 					"type": "minecraft:block_predicate_filter",
@@ -28,9 +28,9 @@
 								"blocks": "minecraft:air"
 							},
 							{
-								"type": "minecraft:matching_block_tag",
+								"type": "minecraft:matching_blocks",
 								"offset": [ 0, -1, 0 ],
-								"tag": "tfg:fluid/semiheavy_ammoniacal_water"
+								"blocks": "tfg:fluid/semiheavy_ammoniacal_water"
 							}
 						]
 					}
@@ -38,7 +38,7 @@
 			]
 		},
 		"tries": 16,
-		"xz_spread": 8,
-		"y_spread": 1
+		"xz_spread": 10,
+		"y_spread": 0
 	}
 }

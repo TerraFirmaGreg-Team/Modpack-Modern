@@ -23,19 +23,13 @@
 		],
 		[],
 		[
-			"tfg:earth/geode/amethyst",
-			"tfg:earth/geode/barite",
-			"tfg:earth/geode/calcite",
-			"tfg:earth/geode/gypsum",
-			"tfg:earth/geode/opal",
-			"tfg:earth/geode/pyrite",
-			"tfg:earth/geode/quartzite"
+
 		],
 		[],
 		[],
 		[],
 		"#tfg:mars_veins",
-		[],
+		"#tfg:mars_underground_decoration",
 		[
 			"tfc:raw_boulder",
 			"tfc:cobble_boulder",

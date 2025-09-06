@@ -23,22 +23,14 @@
 		],
 		[],
 		[
-			"tfg:earth/geode/amethyst",
-			"tfg:earth/geode/barite",
-			"tfg:earth/geode/calcite",
-			"tfg:earth/geode/gypsum",
-			"tfg:earth/geode/opal",
-			"tfg:earth/geode/pyrite",
-			"tfg:earth/geode/quartzite"
+			"tfg:mars/terrain/spice_disc",
+			"tfg:mars/terrain/red_quicksand"
 		],
 		[],
 		[],
 		[],
 		"#tfg:mars_veins",
-		[
-			"tfg:mars/terrain/spice_disc",
-			"tfg:mars/terrain/red_quicksand"
-		],
+		"#tfg:mars_underground_decoration",
 		[
 			"tfg:mars/surface/small_skull_and_bones",
 			"tfg:mars/surface/large_skull_and_bones"
