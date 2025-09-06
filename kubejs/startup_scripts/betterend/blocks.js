@@ -72,24 +72,49 @@ function registerBetterEndBlocks(event) {
 
 	// Water surface
 
-	event.create('betterend:flamaea', 'tfg:floating_plant')
+	event.create('betterend:flamaea', 'tfg:floating_decorative_plant')
 		.soundType('crop')
 		.box(1, 0, 1, 15, 2, 15)
 		.mapColor('color_light_blue')
 		.tagItem('tfg:mars_plants')
 		.tagItem('forge:mushrooms')
+		.tagBlock('minecraft:replaceable')
 
-	event.create('betterend:lacugrove', 'tfg:floating_plant')
+	event.create('betterend:lacugrove', 'tfg:floating_decorative_plant')
 		.xz_offset(false)
 		.soundType('crop')
 		.box(0, 0, 0, 16, 1, 16)
 		.mapColor('color_cyan')
 		.tagItem('tfg:mars_plants')
+		.tagBlock('minecraft:replaceable')
 
 	// Mosses / Can go on sides of blocks
-	
-	//createPlant(event, 'aurant_polypore', 'mars')
-	//createPlant(event, 'purple_polypore', 'mars')
+
+	// TODO: needs features
+	event.create('betterend:aurant_polypore', 'tfg:attached_decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:mars_plants')
+		.tagItem('forge:mushrooms')
+		.tagBlock('minecraft:replaceable')
+
+	event.create('betterend:purple_polypore', 'tfg:attached_decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:mars_plants')
+		.tagItem('forge:mushrooms')
+		.tagBlock('minecraft:replaceable')
+		
+	event.create('betterend:filalux_wings', 'tfg:attached_decorative_plant')
+		.soundType('nether_wart')
+		.allowVertical(true)
+		.tagItem('tfg:mars_plants')
+		.tagItem('forge:mushrooms')
+		.tagBlock('minecraft:replaceable')
+
+	event.create('betterend:bulb_moss', 'tfg:attached_decorative_plant')
+		.soundType('crop')
+		.lootItem('tfc:straw')
+		.tagItem('tfg:mars_plants')
+		.tagBlock('minecraft:replaceable')
 
 	// Leaves
 
@@ -105,6 +130,7 @@ function registerBetterEndBlocks(event) {
 			leaves.defaultCutout()
 			leaves.soundType('azalea_leaves')
 			leaves.tagBlock('minecraft:mineable/hoe')
+			leaves.tagBlock('minecraft:replaceable')
 			// TODO: kjs-tfc 1.3.3 will have an option to disable tinting on leaves
 			leaves.models((modelType, generator) => {
 				if (modelType.layers != 8) {
@@ -128,6 +154,7 @@ function registerBetterEndBlocks(event) {
 			leaves.defaultCutout()
 			leaves.soundType('azalea_leaves')
 			leaves.tagBlock('minecraft:mineable/hoe')
+			leaves.tagBlock('minecraft:replaceable')
 			// TODO: kjs-tfc 1.3.3 will have an option to disable tinting on leaves
 			leaves.models((modelType, generator) => {
 				if (modelType.layers != 8) {

@@ -42,6 +42,11 @@ const registerBeneathItemTags = (event) => {
 	event.add('forge:mushrooms', '#beneath:mushrooms')
 	
 	event.remove('beneath:sparks_on_sulfur')
+
+	event.add('tfc:firepit_kindling', 'beneath:crimson_straw')
+	event.add('tfc:firepit_kindling', 'beneath:warped_straw')
+	event.add('tfc:pit_kiln_straw', 'beneath:crimson_straw')
+	event.add('tfc:pit_kiln_straw', 'beneath:warped_straw')
 	
 	event.remove('minecraft:leaves', 'beneath:wood/leaves/crimson')
 	event.remove('minecraft:leaves', 'beneath:wood/leaves/warped')
