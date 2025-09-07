@@ -22,6 +22,8 @@
 - Fixed rapeseed wild block model @BlueBoat29
 - Fixed butchery knife not giving additional meat when used to kill an animal @Pyritie
 - Prospector picks can be placed on tool racks and interact with most inventory's again. @Redeix
+- Fixed some of the more obvious dupes while we wait for a GregTech to do them properly (#1576) @Pyritie
+- Fixed not being able to use buzzsaws (and chainsaws) to cut things into lumber (#1685) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn & @CN059
 - Russian @Dl, @Kostabl, @Turikar42, & @But3r
