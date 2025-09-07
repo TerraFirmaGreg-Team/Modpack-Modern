@@ -15,11 +15,13 @@
 - Added a small amount of silver to the Bismith (Surface) vein @Pyritie
 - Added plascrete as an alternative to steel frames in the electric greenhouse @Redeix
 - Added the ability for foods to affect the player's temperature @BlueBoat29
+- EMI Batched rendering has been disabled by default. @TomPlop
 ### Bug fixes
 - Fixed tongs getting stuck in ovens, and now you can use them the same way you'd previously use a Peel @Pyritie
 - Allowed powders, gears, plates, double plates, springs, and small springs to be heated (#1727) @Redeix
 - Fixed rapeseed wild block model @BlueBoat29
 - Fixed butchery knife not giving additional meat when used to kill an animal @Pyritie
+- Prospector picks can be placed on tool racks and interact with most inventory's again. @Redeix
 ### Translation updates
 - Chinese (simplified) @jmecn & @CN059
 - Russian @Dl, @Kostabl, @Turikar42, & @But3r
