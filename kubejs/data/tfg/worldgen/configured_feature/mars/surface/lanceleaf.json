@@ -24,92 +24,102 @@
 					},
 					"then": {
 						"feature": {
-							"type": "tfc:if_then",
+							"type": "tfc:multiple",
 							"config": {
-								"if": {
-									"feature": {
-										"type": "minecraft:simple_block",
-										"config": {
-											"to_place": {
-												"type": "minecraft:simple_state_provider",
-												"state": {
-													"Name": "betterend:lanceleaf",
-													"Properties": {
-														"height": "1"
+								"features": [
+									{
+										"feature": {
+											"type": "minecraft:simple_block",
+											"config": {
+												"to_place": {
+													"type": "minecraft:simple_state_provider",
+													"state": {
+														"Name": "betterend:lanceleaf",
+														"Properties": {
+															"height": "1"
+														}
 													}
 												}
 											}
-										}
-									},
-									"placement": []
-								},
-								"then": {
-									"feature": {
-										"type": "tfc:if_then",
-										"config": {
-											"if": {
-												"feature": {
-													"type": "minecraft:simple_block",
-													"config": {
-														"to_place": {
-															"type": "minecraft:simple_state_provider",
-															"state": {
-																"Name": "betterend:lanceleaf",
-																"Properties": {
-																	"height": "2"
-																}
-															}
-														}
-													}
-												},
-												"placement": []
-											},
-											"then": {
-												"feature": {
-													"type": "tfc:if_then",
-													"config": {
-														"if": {
-															"feature": {
-																"type": "minecraft:simple_block",
-																"config": {
-																	"to_place": {
-																		"type": "minecraft:simple_state_provider",
-																		"state": {
-																			"Name": "betterend:lanceleaf",
-																			"Properties": {
-																				"height": "3"
-																			}
-																		}
-																	}
-																}
-															},
-															"placement": []
-														},
-														"then": {
-															"feature": {
-																"type": "minecraft:simple_block",
-																"config": {
-																	"to_place": {
-																		"type": "minecraft:simple_state_provider",
-																		"state": {
-																			"Name": "betterend:lanceleaf",
-																			"Properties": {
-																				"height": "4"
-																			}
-																		}
-																	}
-																}
-															},
-															"placement": []
-														}
-													}
-												},
-												"placement": []
+										},
+										"placement": [
+											{
+												"type": "minecraft:random_offset",
+												"xz_spread": 0,
+												"y_spread": 1
 											}
-										}
+										]
 									},
-									"placement": []
-								}
+									{
+										"feature": {
+											"type": "minecraft:simple_block",
+											"config": {
+												"to_place": {
+													"type": "minecraft:simple_state_provider",
+													"state": {
+														"Name": "betterend:lanceleaf",
+														"Properties": {
+															"height": "2"
+														}
+													}
+												}
+											}
+										},
+										"placement": [
+											{
+												"type": "minecraft:random_offset",
+												"xz_spread": 0,
+												"y_spread": 2
+											}
+										]
+									},
+									{
+										"feature": {
+											"type": "minecraft:simple_block",
+											"config": {
+												"to_place": {
+													"type": "minecraft:simple_state_provider",
+													"state": {
+														"Name": "betterend:lanceleaf",
+														"Properties": {
+															"height": "3"
+														}
+													}
+												}
+											}
+										},
+										"placement": [
+											{
+												"type": "minecraft:random_offset",
+												"xz_spread": 0,
+												"y_spread": 3
+											}
+										]
+									},
+									{
+										"feature": {
+											"type": "minecraft:simple_block",
+											"config": {
+												"to_place": {
+													"type": "minecraft:simple_state_provider",
+													"state": {
+														"Name": "betterend:lanceleaf",
+														"Properties": {
+															"height": "4"
+														}
+													}
+												}
+											}
+										},
+										"placement": [
+											{
+												"type": "minecraft:random_offset",
+												"xz_spread": 0,
+												"y_spread": 4
+											}
+										]
+									}
+								]
 							}
 						},
 						"placement": []
