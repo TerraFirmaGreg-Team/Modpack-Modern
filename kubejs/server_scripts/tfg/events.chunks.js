@@ -6,6 +6,7 @@ const $ForestType = Java.loadClass("net.dries007.tfc.world.chunkdata.ForestType"
 
 const ROCK_LAYER_HEIGHT = 40;
 
+
 // Bare minimum
 TFCEvents.createChunkDataProvider('moon', event => {
     const emptyLayer = TFC.misc.lerpFloatLayer(0, 0, 0, 0);
@@ -35,22 +36,42 @@ TFCEvents.createChunkDataProvider('moon', event => {
 })
 
 TFCEvents.createChunkDataProvider('mars', event => {
+    
+    let tempLayer = TFC.misc.newOpenSimplex2D(event.worldSeed + 4621678939469)
+        .octaves(2)
+        .spread(0.15)
+        .scaled(-155, 30)
+    let rainLayer = TFC.misc.newOpenSimplex2D(event.worldSeed + 2846746456346)
+        .octaves(2)
+        .spread(0.15)
+        .scaled(-200, 100)
+    let forestDensityNoise = TFC.misc.newOpenSimplex2D(event.worldSeed + 98713856895664)
+        .octaves(4)
+        .spread(0.0025)
+        .scaled(-0.2, 1.2)
+        .clamped(0, 1)
+    let forestWeirdnessNoise = TFC.misc.newOpenSimplex2D(event.worldSeed + 3210378120)
+        .octaves(4)
+        .spread(0.0025)
+        .map(i => 1.1 * Math.abs(i))
+        .clamped(0, 1)
 
-    const rain = TFC.misc.lerpFloatLayer(0, 0, 0, 0);
-    const tempLayer = TFC.misc.newOpenSimplex2D(event.worldSeed + 4621678939469)
-        .spread(0.002)
-        .octaves(3)
-        .scaled(70, 90)
-    const forestLayer = TFC.misc.newOpenSimplex2D(event.worldSeed + 98713856895664)
-        .spread(0.00002)
-        .terraces(9)
-        .affine(6, 12)
-        .scaled(6, 18, 0, 1)
+    TFC.misc.register2DNoiseForInspection('temp', tempLayer)
+    TFC.misc.register2DNoiseForInspection('rain', rainLayer)
+    TFC.misc.register2DNoiseForInspection('forestType', forestDensityNoise)
+    TFC.misc.register2DNoiseForInspection('forestWeirdness', forestWeirdnessNoise)
 
-    const rockNoise = TFC.misc.newOpenSimplex2D(event.worldSeed + 8008135)
-        .octaves(3)
-        .scaled(0x80000000, 0x7fffffff) // Integer.MIN_VALUE to Integer.MAX_VALUE
-        .spread(0.00001) // spread it out so the vaiance is small
+    const forestTypeLayer = TFC.misc.uniformLayeredArea(event.worldSeed + 45245235242); 
+    for (let i = 0 ; i < 3 ; i++) {
+        forestTypeLayer.zoom(true, event.worldSeed + 19763144126).smooth(event.worldSeed + 79784123632);
+    }
+    for (let i = 0 ; i < 6 ; i++) {
+        forestTypeLayer.zoom(true, event.worldSeed + 451364589723);
+    }
+    forestTypeLayer
+        .smooth(event.worldSeed + 71214856214)
+        .zoom(true, event.worldSeed + 854126548632)
+        .smooth(event.worldSeed + 145256147896)
 
     // Precompute the aquifer heights as constants as this is not used
     var aquifer = [];
@@ -64,6 +85,12 @@ TFCEvents.createChunkDataProvider('mars', event => {
         let x = chunk.pos.minBlockX;
         let z = chunk.pos.minBlockZ;
 
+        let rain = TFC.misc.lerpFloatLayer(
+            rainLayer.noise(x, z),
+            rainLayer.noise(x, z + 15),
+            rainLayer.noise(x + 15, z),
+            rainLayer.noise(x + 15, z + 15)
+        );
         let temp = TFC.misc.lerpFloatLayer(
             tempLayer.noise(x, z),
             tempLayer.noise(x, z + 15),
@@ -72,7 +99,7 @@ TFCEvents.createChunkDataProvider('mars', event => {
         );
 
         let forestType = $ForestType.NONE;
-        const forestTypeNoise = forestLayer.noise(x, z);
+        const forestTypeNoise = forestTypeLayer.getAt(x, z);
         if (forestTypeNoise < 0.2)
             forestType = $ForestType.OLD_GROWTH;
         else if (forestTypeNoise < 0.4)
@@ -86,8 +113,8 @@ TFCEvents.createChunkDataProvider('mars', event => {
             rain,
             temp,
             forestType,
-            forestLayer.noise(x * 78423 + 869, z),
-            forestTypeNoise //forestLayer.noise(x, z * 651349 - 698763)
+            forestWeirdnessNoise.noise(x, z), // forest weirdness
+            forestDensityNoise.noise(x, z) // forest density
         );
     });
 
@@ -101,7 +128,24 @@ TFCEvents.createChunkDataProvider('mars', event => {
         data.generateFull(heights, aquifer);
     });
 
-    event.rocks((x, y, z, surfaceY, cache, rockLayers) => {
-        return rockLayers.sampleAtLayer(rockNoise.noise(x, z), (surfaceY - y) / ROCK_LAYER_HEIGHT);
+
+    // Rocks
+
+    const rockLayer = TFC.misc.uniformLayeredArea(event.worldSeed + 413567326);
+
+    for (let i = 0 ; i < 3 ; i++) {
+        rockLayer.zoom(true, event.worldSeed + 19763144126).smooth(event.worldSeed + 79784123632);
+    }
+    for (let i = 0 ; i < 6 ; i++) {
+        rockLayer.zoom(true, event.worldSeed + 451364589723);
+    }
+    rockLayer
+        .smooth(event.worldSeed + 71214856214)
+        .zoom(true, event.worldSeed + 854126548632)
+        .smooth(event.worldSeed + 145256147896)
+
+    event.rocks((x, y, z, surfaceY, cache, rockSettings) => {
+
+        return rockSettings.sampleAtLayer(rockLayer.getAt(x, z), (surfaceY - y) / ROCK_LAYER_HEIGHT);
     });
 })
