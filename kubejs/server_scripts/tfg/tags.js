@@ -314,29 +314,27 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:metamorphic_items', 'minecraft:polished_deepslate')	
 	event.add('tfc:rock/smooth', 'minecraft:polished_deepslate')
 	event.add('create:stone_types/deepslate', 'minecraft:polished_deepslate')
-	event.add('tfg:brick_index', 'minecraft:polished_deepslate')
 
 	event.add('forge:stone_bricks', 'minecraft:deepslate_bricks')
 	event.add('tfc:metamorphic_items', 'minecraft:deepslate_bricks')
 	event.add('tfc:rock/bricks', 'minecraft:deepslate_bricks')
-	event.add('tfg:brick_index', 'minecraft:deepslate_bricks')
 
 	event.add('forge:stone_bricks', 'minecraft:deepslate_tiles')
 	event.add('tfc:metamorphic_items', 'minecraft:deepslate_tiles')
 	event.add('tfc:rock/bricks', 'minecraft:deepslate_tiles')
 	event.add('tfc:rock/chiseled_bricks', 'minecraft:deepslate_tiles')
-	event.add('tfg:brick_index', 'minecraft:deepslate_tiles')
 
 	event.add('forge:stone_bricks', 'minecraft:chiseled_deepslate')
 	event.add('tfc:metamorphic_items', 'minecraft:chiseled_deepslate')
 	event.add('tfc:rock/bricks', 'minecraft:chiseled_deepslate')
 	event.add('tfc:rock/chiseled_bricks', 'minecraft:chiseled_deepslate')
-	event.add('tfg:brick_index', 'minecraft:chiseled_deepslate')
 
 	// Blackstone (Pyroxenite)
 	event.remove('tfc:metamorphic_rock', 'beneath:blackstone_pebble')
 	event.add('tfc:igneous_intrusive_rock', 'beneath:blackstone_pebble')
 	event.add('rnr:loose_rock_items', 'beneath:blackstone_pebble')
+
+	event.add('tfc:igneous_intrusive_items', 'beneath:blackstone_brick')
 
 	event.add('forge:stone', 'minecraft:blackstone')
 	event.add('tfc:igneous_intrusive_items', 'minecraft:blackstone')
@@ -346,31 +344,44 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:smooth_stone', 'minecraft:polished_blackstone')
 	event.add('tfc:igneous_intrusive_items', 'minecraft:polished_blackstone')
 	event.add('tfc:rock/smooth', 'minecraft:polished_blackstone')
-	event.add('tfg:brick_index', 'minecraft:polished_blackstone')
 
 	event.add('forge:stone_bricks', 'minecraft:polished_blackstone_bricks')
 	event.add('tfc:igneous_intrusive_items', 'minecraft:polished_blackstone_bricks')
 	event.add('tfc:rock/bricks', 'minecraft:polished_blackstone_bricks')
-	event.add('tfg:brick_index', 'minecraft:polished_blackstone_bricks')
 
 	event.add('forge:stone_bricks', 'minecraft:cracked_blackstone_bricks')
 	event.add('tfc:igneous_intrusive_items', 'minecraft:cracked_blackstone_bricks')
 	event.add('tfc:rock/bricks', 'minecraft:cracked_blackstone_bricks')
 	event.add('tfc:rock/cracked_bricks', 'minecraft:cracked_blackstone_bricks')
-	event.add('tfg:brick_index', 'minecraft:cracked_blackstone_bricks')
 
 	event.add('forge:stone_bricks', 'minecraft:polished_blackstone_bricks')
 	event.add('tfc:igneous_intrusive_items', 'minecraft:polished_blackstone_bricks')
 	event.add('tfc:rock/bricks', 'minecraft:polished_blackstone_bricks')
-	event.add('tfg:brick_index', 'minecraft:polished_blackstone_bricks')
 
 	event.add('forge:stone_bricks', 'minecraft:polished_blackstone_bricks')
 	event.add('tfc:igneous_intrusive_items', 'minecraft:chiseled_polished_blackstone_bricks')
 	event.add('tfc:rock/bricks', 'minecraft:chiseled_polished_blackstone_bricks')
 	event.add('tfc:rock/chiseled_bricks', 'minecraft:chiseled_polished_blackstone_bricks')
-	event.add('tfg:brick_index', 'minecraft:chiseled_polished_blackstone_bricks')
 
-	//TODO: Non-Full MC blackstone blocks to igneous_intrusive_items
+	event.add('tfc:igneous_intrusive_items', 'minecraft:polished_blackstone_stairs')
+	event.add('tfg:rock_stairs', 'minecraft:polished_blackstone_stairs')
+
+	event.add('tfc:igneous_intrusive_items', 'minecraft:polished_blackstone_brick_slab')
+	event.add('tfg:rock_slabs', 'minecraft:polished_blackstone_slab')
+
+	event.add('tfc:igneous_intrusive_items', 'minecraft:polished_blackstone_wall')
+	event.add('tfg:rock_walls', 'minecraft:polished_blackstone_wall')
+
+	event.add('tfc:igneous_intrusive_items', 'minecraft:polished_blackstone_brick_stairs')
+	event.add('tfg:brick_stairs', 'minecraft:polished_blackstone_brick_stairs')
+
+	event.add('tfc:igneous_intrusive_items', 'minecraft:polished_blackstone_brick_slab')
+	event.add('tfg:brick_slabs', 'minecraft:polished_blackstone_brick_slab')
+
+	event.add('tfc:igneous_intrusive_items', 'minecraft:polished_blackstone_brick_wall')
+	event.add('tfg:brick_walls', 'minecraft:polished_blackstone_brick_wall')
+
+	event.add('tfc:igneous_intrusive_items', 'beneath:blackstone_aqueduct')	
 
 	// Dripstone (Travertine)
 	const create_dripstone_blocks = Ingredient.of('#create:stone_types/dripstone').itemIds.toArray().map(String);
@@ -384,31 +395,27 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:smooth_stone', 'create:cut_dripstone')
 	event.add('tfc:sedimentary_items', 'create:cut_dripstone')
 	event.add('tfc:rock/smooth', 'create:cut_dripstone')
-	event.add('tfg:brick_index', 'create:cut_dripstone')
 
 	event.add('forge:stone_bricks', 'create:cut_dripstone_bricks')
 	event.add('tfc:igneous_intrusive_items', 'create:cut_dripstone_bricks')
 	event.add('tfc:rock/bricks', 'create:cut_dripstone_bricks')
-	event.add('tfg:brick_index', 'create:cut_dripstone_bricks')
 
 	event.add('forge:stone_bricks', 'create:small_dripstone_bricks')
 	event.add('tfc:igneous_intrusive_items', 'create:small_dripstone_bricks')
 	event.add('tfc:rock/bricks', 'create:small_dripstone_bricks')
 	event.add('tfc:rock/chiseled_bricks', 'create:small_dripstone_bricks')
-	event.add('tfg:brick_index', 'create:small_dripstone_bricks')
 
 	event.add('forge:smooth_stone', 'ad_astra:polished_mars_stone')
 	event.add('tfc:rock/smooth', 'create:polished_cut_dripstone')
-	event.add('tfg:brick_index', 'create:polished_cut_dripstone')
  
 	// Crackrack (Keratophyre)
 	event.add('forge:stone', 'beneath:crackrack')
 	event.add('tfc:igneous_intrusive_items', 'beneath:crackrack')
+	event.add('tfc:igneous_intrusive_items', 'minecraft:nether_brick')	
 	
 	event.add('forge:stone_bricks', 'minecraft:nether_bricks')
 	event.add('tfc:igneous_intrusive_items', 'minecraft:nether_bricks')
 	event.add('tfc:rock/bricks', 'minecraft:nether_bricks')
-	event.add('tfg:brick_index', 'minecraft:nether_bricks')
 
 	// Basalt
 	event.add('forge:stone', 'minecraft:basalt')
@@ -417,12 +424,10 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:smooth_stone', 'minecraft:smooth_basalt')
 	event.add('tfc:igneous_extrusive_items', 'minecraft:smooth_basalt')	
 	event.add('tfc:rock/smooth', 'minecraft:smooth_basalt')
-	event.add('tfg:brick_index', 'minecraft:smooth_basalt')
 
 	event.add('forge:smooth_stone', 'minecraft:polished_basalt')
 	event.add('tfc:igneous_extrusive_items', 'minecraft:polished_basalt')	
 	event.add('tfc:rock/smooth', 'minecraft:polished_basalt')
-	event.add('tfg:brick_index', 'minecraft:polished_basalt')
 	// #endregion
 
 	// #region Space blocks
@@ -437,24 +442,20 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:smooth_stone', 'ad_astra:polished_moon_stone')
 	event.add('tfc:igneous_intrusive_items', 'ad_astra:polished_moon_stone')
 	event.add('tfc:rock/smooth', 'ad_astra:polished_moon_stone')
-	event.add('tfg:brick_index', 'ad_astra:polished_moon_stone')
 
 	event.add('forge:stone_bricks', 'ad_astra:moon_stone_bricks')
 	event.add('tfc:igneous_intrusive_items', 'ad_astra:moon_stone_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:moon_stone_bricks')
-	event.add('tfg:brick_index', 'ad_astra:moon_stone_bricks')
 
 	event.add('forge:stone_bricks', 'ad_astra:cracked_moon_stone_bricks')
 	event.add('tfc:igneous_intrusive_items', 'ad_astra:cracked_moon_stone_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:cracked_moon_stone_bricks')
 	event.add('tfc:rock/cracked_bricks', 'ad_astra:cracked_moon_stone_bricks')
-	event.add('tfg:brick_index', 'ad_astra:cracked_moon_stone_bricks')
 
 	event.add('forge:stone_bricks', 'ad_astra:chiseled_moon_stone_bricks')
 	event.add('tfc:igneous_intrusive_items', 'ad_astra:chiseled_moon_stone_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:chiseled_moon_stone_bricks')
 	event.add('tfc:rock/chiseled_bricks', 'ad_astra:chiseled_moon_stone_bricks')
-	event.add('tfg:brick_index', 'ad_astra:chiseled_moon_stone_bricks')
 
 	event.add('tfc:igneous_intrusive_items', 'ad_astra:moon_pillar')
 
@@ -474,24 +475,20 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:smooth_stone', 'ad_astra:polished_glacio_stone')
 	event.add('tfc:igneous_intrusive_items', 'ad_astra:polished_glacio_stone')
 	event.add('tfc:rock/smooth', 'ad_astra:polished_glacio_stone')
-	event.add('tfg:brick_index', 'ad_astra:polished_glacio_stone')
 
 	event.add('forge:stone_bricks', 'ad_astra:glacio_stone_bricks')
 	event.add('tfc:igneous_intrusive_items', 'ad_astra:glacio_stone_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:glacio_stone_bricks')
-	event.add('tfg:brick_index', 'ad_astra:glacio_stone_bricks')
 
 	event.add('forge:stone_bricks', 'ad_astra:cracked_glacio_stone_bricks')
 	event.add('tfc:igneous_intrusive_items', 'ad_astra:cracked_glacio_stone_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:cracked_glacio_stone_bricks')
 	event.add('tfc:rock/cracked_bricks', 'ad_astra:cracked_glacio_stone_bricks')
-	event.add('tfg:brick_index', 'ad_astra:cracked_glacio_stone_bricks')
 
 	event.add('forge:stone_bricks', 'ad_astra:chiseled_glacio_stone_bricks')
 	event.add('tfc:igneous_intrusive_items', 'ad_astra:chiseled_glacio_stone_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:chiseled_glacio_stone_bricks')
 	event.add('tfc:rock/chiseled_bricks', 'ad_astra:chiseled_glacio_stone_bricks')
-	event.add('tfg:brick_index', 'ad_astra:chiseled_glacio_stone_bricks')
 		
 	// Mars Stone (Argillite)
 	event.add('forge:stone', 'ad_astra:mars_stone')
@@ -504,24 +501,20 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:smooth_stone', 'ad_astra:polished_mars_stone')
 	event.add('tfc:sedimentary_items', 'ad_astra:polished_mars_stone')
 	event.add('tfc:rock/smooth', 'ad_astra:polished_mars_stone')
-	event.add('tfg:brick_index', 'ad_astra:polished_mars_stone')
 
 	event.add('forge:stone_bricks', 'ad_astra:mars_stone_bricks')
 	event.add('tfc:sedimentary_items', 'ad_astra:mars_stone_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:mars_stone_bricks')
-	event.add('tfg:brick_index', 'ad_astra:mars_stone_bricks')
 
 	event.add('forge:stone_bricks', 'ad_astra:cracked_mars_stone_bricks')
 	event.add('tfc:sedimentary_items', 'ad_astra:cracked_mars_stone_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:cracked_mars_stone_bricks')
 	event.add('tfc:rock/cracked_bricks', 'ad_astra:cracked_mars_stone_bricks')
-	event.add('tfg:brick_index', 'ad_astra:cracked_mars_stone_bricks')
 
 	event.add('forge:stone_bricks', 'ad_astra:chiseled_mars_stone_bricks')
 	event.add('tfc:sedimentary_items', 'ad_astra:chiseled_mars_stone_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:chiseled_mars_stone_bricks')
 	event.add('tfc:rock/chiseled_bricks', 'ad_astra:chiseled_mars_stone_bricks')
-	event.add('tfg:brick_index', 'ad_astra:chiseled_mars_stone_bricks')
 
 	// Venus Stone (Trachyte)
 	event.add('forge:stone', 'ad_astra:venus_stone')
@@ -534,24 +527,20 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:smooth_stone', 'ad_astra:polished_venus_stone')
 	event.add('tfc:igneous_extrusive_items', 'ad_astra:polished_venus_stone')
 	event.add('tfc:rock/smooth', 'ad_astra:polished_venus_stone')
-	event.add('tfg:brick_index', 'ad_astra:polished_venus_stone')
 
 	event.add('forge:stone_bricks', 'ad_astra:venus_stone_bricks')
 	event.add('tfc:igneous_extrusive_items', 'ad_astra:venus_stone_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:venus_stone_bricks')
-	event.add('tfg:brick_index', 'ad_astra:venus_stone_bricks')
 
 	event.add('forge:stone_bricks', 'ad_astra:cracked_venus_stone_bricks')
 	event.add('tfc:igneous_extrusive_items', 'ad_astra:cracked_venus_stone_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:cracked_venus_stone_bricks')
 	event.add('tfc:rock/cracked_bricks', 'ad_astra:cracked_venus_stone_bricks')
-	event.add('tfg:brick_index', 'ad_astra:cracked_venus_stone_bricks')
 
 	event.add('forge:stone_bricks', 'ad_astra:chiseled_venus_stone_bricks')
 	event.add('tfc:igneous_extrusive_items', 'ad_astra:chiseled_venus_stone_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:chiseled_venus_stone_bricks')
 	event.add('tfc:rock/chiseled_bricks', 'ad_astra:chiseled_venus_stone_bricks')
-	event.add('tfg:brick_index', 'ad_astra:chiseled_venus_stone_bricks')
 
 	// Red Granite
 	event.add('forge:stone', 'gtceu:red_granite')
@@ -568,73 +557,62 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:smooth_stone', 'gtceu:polished_red_granite')
 	event.add('tfc:igneous_intrusive_items', 'gtceu:polished_red_granite')
 	event.add('tfc:rock/smooth', 'gtceu:polished_red_granite')
-	event.add('tfg:brick_index', 'gtceu:polished_red_granite')
 
 	event.add('forge:stone_bricks', 'gtceu:red_granite_bricks')
 	event.add('tfc:igneous_intrusive_items', 'gtceu:red_granite_bricks')
 	event.add('tfc:rock/bricks', 'gtceu:red_granite_bricks')
-	event.add('tfg:brick_index', 'gtceu:red_granite_bricks')
 	event.add('tfg:red_granite_cutter_set', 'gtceu:red_granite_bricks')
 
 	event.add('forge:stone_bricks', 'gtceu:mossy_red_granite_bricks')
 	event.add('tfc:igneous_intrusive_items', 'gtceu:mossy_red_granite_bricks')
 	event.add('tfc:rock/bricks', 'gtceu:mossy_red_granite_bricks')
 	event.add('tfc:rock/mossy_bricks', 'gtceu:mossy_red_granite_bricks')
-	event.add('tfg:brick_index', 'gtceu:mossy_red_granite_bricks')
 
 	event.add('forge:stone_bricks', 'gtceu:cracked_red_granite_bricks')
 	event.add('tfc:igneous_intrusive_items', 'gtceu:cracked_red_granite_bricks')
 	event.add('tfc:rock/bricks', 'gtceu:cracked_red_granite_bricks')
 	event.add('tfc:rock/cracked_bricks', 'gtceu:cracked_red_granite_bricks')
-	event.add('tfg:brick_index', 'gtceu:cracked_red_granite_bricks')
 
 	event.add('forge:stone_bricks', 'gtceu:red_granite_tile')
 	event.add('tfc:igneous_intrusive_items', 'gtceu:red_granite_tile')
 	event.add('tfc:rock/bricks', 'gtceu:red_granite_tile')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:red_granite_tile')
-	event.add('tfg:brick_index', 'gtceu:red_granite_tile')
 	event.add('tfg:red_granite_cutter_set', 'gtceu:red_granite_tile')
 
 	event.add('forge:stone_bricks', 'gtceu:square_red_granite_bricks')
 	event.add('tfc:igneous_intrusive_items', 'gtceu:square_red_granite_bricks')
 	event.add('tfc:rock/bricks', 'gtceu:square_red_granite_bricks')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:square_red_granite_bricks')
-	event.add('tfg:brick_index', 'gtceu:square_red_granite_bricks')
 	event.add('tfg:red_granite_cutter_set', 'gtceu:square_red_granite_bricks')
 
 	event.add('forge:stone_bricks', 'gtceu:red_granite_windmill_a')
 	event.add('tfc:igneous_intrusive_items', 'gtceu:red_granite_windmill_a')
 	event.add('tfc:rock/bricks', 'gtceu:red_granite_windmill_a')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:red_granite_windmill_a')
-	event.add('tfg:brick_index', 'gtceu:red_granite_windmill_a')
 	event.add('tfg:red_granite_cutter_set', 'gtceu:red_granite_windmill_a')
 
 	event.add('forge:stone_bricks', 'gtceu:red_granite_windmill_b')
 	event.add('tfc:igneous_intrusive_items', 'gtceu:red_granite_windmill_b')
 	event.add('tfc:rock/bricks', 'gtceu:red_granite_windmill_b')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:red_granite_windmill_b')
-	event.add('tfg:brick_index', 'gtceu:red_granite_windmill_b')
 	event.add('tfg:red_granite_cutter_set', 'gtceu:red_granite_windmill_b')
 
 	event.add('forge:stone_bricks', 'gtceu:small_red_granite_bricks')
 	event.add('tfc:igneous_intrusive_items', 'gtceu:small_red_granite_bricks')
 	event.add('tfc:rock/bricks', 'gtceu:small_red_granite_bricks')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:small_red_granite_bricks')
-	event.add('tfg:brick_index', 'gtceu:small_red_granite_bricks')
 	event.add('tfg:red_granite_cutter_set', 'gtceu:small_red_granite_bricks')
 
 	event.add('forge:stone_bricks', 'gtceu:red_granite_small_tile')
 	event.add('tfc:igneous_intrusive_items', 'gtceu:red_granite_small_tile')
 	event.add('tfc:rock/bricks', 'gtceu:red_granite_small_tile')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:red_granite_small_tile')
-	event.add('tfg:brick_index', 'gtceu:red_granite_small_tile')
 	event.add('tfg:red_granite_cutter_set', 'gtceu:red_granite_small_tile')
 
 	event.add('forge:stone_bricks', 'gtceu:chiseled_red_granite')
 	event.add('tfc:igneous_intrusive_items', 'gtceu:chiseled_red_granite')
 	event.add('tfc:rock/bricks', 'gtceu:chiseled_red_granite')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:chiseled_red_granite')
-	event.add('tfg:brick_index', 'gtceu:chiseled_red_granite')
 	event.add('tfg:red_granite_cutter_set', 'gtceu:chiseled_red_granite')	
 	
 	// Mercury Stone (Komatiite)
@@ -648,24 +626,20 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:smooth_stone', 'ad_astra:polished_mercury_stone')
 	event.add('tfc:igneous_intrusive_items', 'ad_astra:polished_mercury_stone')
 	event.add('tfc:rock/smooth', 'ad_astra:polished_mercury_stone')
-	event.add('tfg:brick_index', 'ad_astra:polished_mercury_stone')
 
 	event.add('forge:stone_bricks', 'ad_astra:mercury_stone_bricks')
 	event.add('tfc:igneous_intrusive_items', 'ad_astra:mercury_stone_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:mercury_stone_bricks')
-	event.add('tfg:brick_index', 'ad_astra:mercury_stone_bricks')
 
 	event.add('forge:stone_bricks', 'ad_astra:cracked_mercury_stone_bricks')
 	event.add('tfc:igneous_intrusive_items', 'ad_astra:cracked_mercury_stone_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:cracked_mercury_stone_bricks')
 	event.add('tfc:rock/cracked_bricks', 'ad_astra:cracked_mercury_stone_bricks')
-	event.add('tfg:brick_index', 'ad_astra:cracked_mercury_stone_bricks')
 
 	event.add('forge:stone_bricks', 'ad_astra:chiseled_mercury_stone_bricks')
 	event.add('tfc:igneous_intrusive_items', 'ad_astra:chiseled_mercury_stone_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:chiseled_mercury_stone_bricks')
 	event.add('tfc:rock/chiseled_bricks', 'ad_astra:chiseled_mercury_stone_bricks')
-	event.add('tfg:brick_index', 'ad_astra:chiseled_mercury_stone_bricks')
 
 	// Permafrost (???)
 	event.add('forge:stone', 'ad_astra:permafrost')
@@ -674,24 +648,20 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:smooth_stone', 'ad_astra:polished_permafrost')
 	event.add('tfc:sedimentary_items', 'ad_astra:polished_permafrost')
 	event.add('tfc:rock/smooth', 'ad_astra:polished_permafrost')
-	event.add('tfg:brick_index', 'ad_astra:polished_permafrost')
 
 	event.add('forge:stone_bricks', 'ad_astra:permafrost_bricks')
 	event.add('tfc:sedimentary_items', 'ad_astra:permafrost_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:permafrost_bricks')
-	event.add('tfg:brick_index', 'ad_astra:permafrost_bricks')
 
 	event.add('forge:stone_bricks', 'ad_astra:cracked_permafrost_bricks')
 	event.add('tfc:sedimentary_items', 'ad_astra:cracked_permafrost_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:cracked_permafrost_bricks')
 	event.add('tfc:rock/cracked_bricks', 'ad_astra:cracked_permafrost_bricks')
-	event.add('tfg:brick_index', 'ad_astra:cracked_permafrost_bricks')
 
 	event.add('forge:stone_bricks', 'ad_astra:chiseled_permafrost_bricks')
 	event.add('tfc:igneous_intrusive_items', 'ad_astra:chiseled_permafrost_bricks')
 	event.add('tfc:rock/bricks', 'ad_astra:chiseled_permafrost_bricks')
 	event.add('tfc:rock/chiseled_bricks', 'ad_astra:chiseled_permafrost_bricks')
-	event.add('tfg:brick_index', 'ad_astra:chiseled_permafrost_bricks')
 	
 	// Dirt
 	event.add('tfg:moon_plants', 'tfg:lunar_roots')
