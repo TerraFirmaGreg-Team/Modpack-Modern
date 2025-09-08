@@ -7,7 +7,7 @@
 		},
 		{
 			"type": "tfc:climate",
-			"min_forest": "edge"
+			"max_forest": "sparse"
 		},
 		{
 			"type": "minecraft:in_square"
