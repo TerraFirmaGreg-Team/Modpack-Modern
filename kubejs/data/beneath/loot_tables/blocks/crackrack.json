@@ -19,7 +19,7 @@
 						},
 						{
 							"type": "minecraft:item",
-							"name": "beneath:crackrack_rock",
+							"name": "tfg:loose/crackrack",
 							"functions": [
 								{
 									"function": "minecraft:set_count",
