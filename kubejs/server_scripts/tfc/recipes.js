@@ -89,8 +89,8 @@ const registerTFCRecipes = (event) => {
 		const itemId = element.id;
 		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
 
-		generateGreenHouseRecipe(event, itemId, '#tfc:any_fresh_water', 8000, `8x ${itemId}`,
-			recipeId, null, 8, `16x ${itemId}`, GTValues.VH[GTValues.LV]);
+		generateGreenHouseRecipe(event, itemId, '#tfc:any_fresh_water', 8000, `8x ${itemId}`, 
+			recipeId, null, 8, itemId, GTValues.VH[GTValues.LV]);
 	});
 
 	//#endregion
@@ -182,6 +182,9 @@ const registerTFCRecipes = (event) => {
 		.resultItem('tfc:food/dried_kelp')
 	event.recipes.tfc.heating('tfc:plant/winged_kelp', 200)
 		.resultItem('tfc:food/dried_kelp')
+
+	// Burning Bread
+	event.recipes.tfc.heating('#tfc:foods/breads', 850)
 
 	// Soda Ash
 	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_seaweed').id('tfg:smelting/dried_seaweed_to_soda')

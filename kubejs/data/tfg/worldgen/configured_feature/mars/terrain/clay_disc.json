@@ -1,0 +1,53 @@
+{
+	"type": "tfc:if_then",
+	"config": {
+		"if": {
+			"feature": {
+				"type": "tfc:soil_disc",
+				"config": {
+					"min_radius": 3,
+					"max_radius": 5,
+					"height": 3,
+					"states": [
+						{
+							"replace": "tfg:grass/mars_dirt",
+							"with": "tfg:grass/mars_clay_dirt"
+						},
+						{
+							"replace": "tfg:grass/amber_mycelium",
+							"with": {
+								"Name": "tfg:grass/amber_clay_mycelium",
+								"Properties": {
+									"snowy": "false"
+								}
+							}
+						},
+						{
+							"replace": "tfg:grass/rusticus_mycelium",
+							"with": {
+								"Name": "tfg:grass/rusticus_clay_mycelium",
+								"Properties": {
+									"snowy": "false"
+								}
+							}
+						},
+						{
+							"replace": "tfg:grass/sangnum_mycelium",
+							"with": {
+								"Name": "tfg:grass/sangnum_clay_mycelium",
+								"Properties": {
+									"snowy": "false"
+								}
+							}
+						}
+					]
+				}
+			},
+			"placement": []
+		},
+		"then": {
+			"feature": "tfg:mars/surface/pitcher_plant",
+			"placement": []
+		}
+	}
+}

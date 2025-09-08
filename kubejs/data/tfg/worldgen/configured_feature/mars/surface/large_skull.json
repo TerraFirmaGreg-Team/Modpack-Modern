@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:simple_random_selector",
+	"config": {
+		"features": [
+			{
+				"feature": "tfg:mars/surface/skulls/walker",
+				"placement": []
+			},
+			{
+				"feature": "tfg:mars/surface/skulls/eater",
+				"placement": []
+			},
+			{
+				"feature": "tfg:mars/surface/skulls/charger",
+				"placement": []
+			}
+		]
+	}
+}

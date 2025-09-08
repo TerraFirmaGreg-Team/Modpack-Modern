@@ -8,7 +8,10 @@
 					"to_place": {
 						"type": "minecraft:simple_state_provider",
 						"state": {
-							"Name": "betterend:shadow_berry_wild"
+							"Name": "betterend:shadow_berry_wild",
+							"Properties": {
+								"mature": "true"
+							}
 						}
 					}
 				}

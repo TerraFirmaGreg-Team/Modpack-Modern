@@ -42,7 +42,7 @@ TFCEvents.createChunkDataProvider('mars', event => {
         .octaves(3)
         .scaled(70, 90)
     const forestLayer = TFC.misc.newOpenSimplex2D(event.worldSeed + 98713856895664)
-        .spread(0.0002)
+        .spread(0.00002)
         .terraces(9)
         .affine(6, 12)
         .scaled(6, 18, 0, 1)

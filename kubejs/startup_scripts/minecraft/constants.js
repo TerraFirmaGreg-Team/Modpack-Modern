@@ -743,6 +743,9 @@ global.MINECRAFT_HIDED_ITEMS = [
     'minecraft:oxidized_cut_copper_stairs', 
     'minecraft:oxidized_cut_copper_slab',*/
 
+    'minecraft:crimson_fungus',
+    'minecraft:warped_fungus',
+
     "minecraft:raw_iron_block",
     "minecraft:raw_copper_block",
     "minecraft:raw_gold_block"

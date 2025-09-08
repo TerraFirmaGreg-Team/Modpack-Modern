@@ -9,16 +9,11 @@
 			"type": "minecraft:in_square"
 		},
 		{
+			"type": "minecraft:biome"
+		},
+		{
 			"type": "minecraft:heightmap",
 			"heightmap": "WORLD_SURFACE_WG"
-		},
-		{
-			"type": "minecraft:random_offset",
-			"xz_spread": 0,
-			"y_spread": -3
-		},
-		{
-			"type": "minecraft:biome"
 		}
 	]
 }

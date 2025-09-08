@@ -168,13 +168,23 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Zinc.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_BOLT_SCREW);
 	GTMaterials.SterlingSilver.addFlags(GENERATE_DOUBLE_INGOTS);
 
-	//		  /* Generate Dusty Ores for Infinite Ores
+	//#region Generate Dusty Ores for Infinite Ores
 
 	GTMaterials.Goethite.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.Diamond.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.CertusQuartz.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.Gold.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.Cassiterite.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Pitchblende.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Silver.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.TricalciumPhosphate.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Bauxite.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Lead.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Beryllium.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Thorium.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Uraninite.addFlags(GENERATE_DUSTY_ORES);
+
+	//#endregion
 
 	//
 	//        /* Имеют инструменты, броню TFC, двойные слитки */

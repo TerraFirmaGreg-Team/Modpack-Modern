@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"": [
+			{ "model": "betterend:block/lacugrove", "y": 0 },
+			{ "model": "betterend:block/lacugrove", "y": 90 },
+			{ "model": "betterend:block/lacugrove", "y": 180 },
+			{ "model": "betterend:block/lacugrove", "y": 270 }
+		]
+	}
+}

@@ -239,7 +239,7 @@
 			tasks: [
 				{
 					id: "3B06766C1A6B30C0"
-					item: "minecraft:chorus_flower"
+					item: "tfg:lunar_chorus_flower"
 					type: "item"
 				}
 				{
@@ -574,8 +574,8 @@
 				type: "item"
 			}]
 			title: "{quests.space_survival.input_bus_railgun.title}"
-			x: 6.0d
-			y: -1.0d
+			x: 6.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["783BB3FC5702DA8C"]
@@ -600,8 +600,8 @@
 				}
 			]
 			title: "{quests.space_survival.ammo_railgun.title}"
-			x: 6.0d
-			y: -2.0d
+			x: 6.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["498E559B9C37D2CA"]
@@ -660,8 +660,8 @@
 				type: "item"
 			}]
 			title: "{quests.space_survival.output_bus_railgun.title}"
-			x: 6.0d
-			y: 3.0d
+			x: 6.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["498E559B9C37D2CA"]
@@ -677,6 +677,29 @@
 			title: "{quests.space_survival.delay_railgun.title}"
 			x: 6.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["3F785579F13B0F46"]
+			description: [
+				"{quests.space_survival.soulbound.desc.1}"
+				"{@pagebreak}"
+				"{quests.space_survival.soulbound.desc.2}"
+			]
+			id: "6B9257192CF56FE3"
+			shape: "heart"
+			subtitle: "{quests.space_survival.soulbound.subtitle}"
+			tasks: [{
+				id: "546E6DECAA00CB7B"
+				item: {
+					Count: 1
+					id: "endermanoverhaul:soul_pearl"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{quests.space_survival.soulbound.title}"
+			x: 3.0d
+			y: -4.0d
 		}
 	]
 	subtitle: ["{quests.space_survival.subtitle}"]

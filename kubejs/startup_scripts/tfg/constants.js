@@ -85,16 +85,17 @@ global.MOON_BIOMES = [
  * @type {string[]} - Biome IDs
  */
 global.MARS_BIOMES = [
-	'tfg:mars/martian_oasis',
 	'tfg:mars/martian_deep_desert',
 	'tfg:mars/martian_dunes',
 	'tfg:mars/martian_dune_edge',
 	'tfg:mars/martian_river',
-	'tfg:mars/martian_riverbed',
+	'tfg:mars/amber_edge',
 	'tfg:mars/amber_plains',
 	'tfg:mars/amber_hills',
+	'tfg:mars/rusticus_edge',
 	'tfg:mars/rusticus_plains',
 	'tfg:mars/rusticus_hills',
+	'tfg:mars/sangnum_edge',
 	'tfg:mars/sangnum_plains',
 	'tfg:mars/sangnum_hills',
 	'tfg:mars/martian_mountains'
@@ -164,4 +165,24 @@ global.FOOD_FRUIT = [
 	{name: 'cave_pumpkin', id: 'betterend:cave_pumpkin_chunks', saturation: 1, water: 5, fruit: 0.8, decay: 2.25 },
 	{name: 'blossom_berry', id: 'betterend:blossom_berry_product', saturation: 1, water: 7.5, fruit: 1.5, decay: 2 },
 	{name: 'shadow_berry', id: 'betterend:shadow_berry_cooked', saturation: 1, water: 5, fruit: 1.5, decay: 2 }
+];
+
+global.COOLING_FOODS = [
+	'firmalife:food/vanilla_ice_cream',
+	'firmalife:food/chocolate_ice_cream',
+	'firmalife:food/strawberry_ice_cream',
+	'firmalife:food/cookie_dough_ice_cream',
+	'firmalife:food/banana_split'
+];
+
+global.COOLING_FOODS_STRONG = [
+	'tfg:ice_soup'
+];
+
+global.WARMING_FOODS = [
+	'tfc:food/grain_soup',
+	'tfc:food/fruit_soup',
+	'tfc:food/vegetables_soup',
+	'tfc:food/protein_soup',
+	'tfc:food/dairy_soup'
 ];

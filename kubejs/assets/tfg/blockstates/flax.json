@@ -1,0 +1,34 @@
+{
+	"variants": {
+		"age=0": {
+			"model": "tfg:block/crop/flax_age_0"
+		},
+		"age=1": {
+			"model": "tfg:block/crop/flax_age_1"
+		},
+		"age=2": {
+			"model": "tfg:block/crop/flax_age_2"
+		},
+		"age=3": {
+			"model": "tfg:block/crop/flax_age_3"
+		},
+		"age=4,part=bottom": {
+			"model": "tfg:block/crop/flax_age_4_bottom"
+		},
+		"age=5,part=bottom": {
+			"model": "tfg:block/crop/flax_age_5_bottom"
+		},
+		"age=6,part=bottom": {
+			"model": "tfg:block/crop/flax_age_6_bottom"
+		},
+		"age=4,part=top": {
+			"model": "tfg:block/crop/flax_age_4_top"
+		},
+		"age=5,part=top": {
+			"model": "tfg:block/crop/flax_age_5_top"
+		},
+		"age=6,part=top": {
+			"model": "tfg:block/crop/flax_age_6_top"
+		}
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"feature": "tfg:mars/surface/large_amaranita_mushroom",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 3
+		},
+		{
+			"type": "tfc:climate",
+			"min_forest": "edge"
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE"
+		}
+	]
+}

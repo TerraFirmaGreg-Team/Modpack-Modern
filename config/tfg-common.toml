@@ -1,5 +1,7 @@
-#Should be create compat enabled?
-createCompat = true
-#Should be tfc ambiental compat enabled?
-tfcAmbientalCompat = true
+
+[general]
+	#Should be create compat enabled?
+	createCompat = true
+	#Should be tfc ambiental compat enabled?
+	tfcAmbientalCompat = true
 

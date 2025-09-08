@@ -105,6 +105,13 @@ function registerTFGSpaceRecipes(event) {
 		.addDataString("fluidA", "tfc:spring_water")
 		.outputFluids(Fluid.of("tfc:spring_water", 1000))
 
+	event.recipes.gtceu.aqueous_accumulator('more_water')
+		.circuit(aaCircuit++)
+		.duration(10)
+		.EUt(GTValues.VHA[GTValues.HV])
+		.addDataString("fluidA", "minecraft:water")
+		.outputFluids(Fluid.of("minecraft:water", 20000))
+
 	// Plants - Can't use the default builder here because fertiliser is much harder to get on the moon,
 	// and we're using helium-3 as the fertiliser
 

@@ -5,6 +5,10 @@ const registerWABBlockTags = (event) => {
 		event.removeAllTagsFrom(block)
 		event.add('c:hidden_from_recipe_viewers', block)
 	})
+
+	// don't put sand layers on these, otherwise they'll fall through
+	event.add('minecraft:snow_layer_cannot_survive_on', 'wan_ancient_beasts:quick_sand')
+	event.add('minecraft:snow_layer_cannot_survive_on', 'wan_ancient_beasts:quick_red_sand')
 }
 
 const registerWABItemTags = (event) => {
@@ -25,4 +29,13 @@ const registerWABItemTags = (event) => {
 	event.add('tfc:foods/cooked_meats', 'wan_ancient_beasts:cooked_toxlacanth')
 	event.add('firmalife:foods/cooked_fish', 'wan_ancient_beasts:cooked_toxlacanth')
 	event.add('tfc:food/meats', 'wan_ancient_beasts:cooked_toxlacanth')
+}
+
+const registerWABEntityTypeTags = (event) => {
+	
+	event.add('wan_ancient_beasts:eater_ignore', '#wan_ancient_beasts:ancient_mobs')
+	event.add('wan_ancient_beasts:eater_ignore', 'tfg:sniffer')
+	event.add('wan_ancient_beasts:eater_ignore', 'tfg:wraptor')
+	event.add('wan_ancient_beasts:eater_ignore', 'species:springling')
+
 }

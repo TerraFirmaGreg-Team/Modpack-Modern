@@ -1,0 +1,37 @@
+{
+    "name": "ArborFirmaCraft",
+    "category": "tfc:firmaciv",
+    "icon": "afc:wood/sapling/weeping_maple",
+    "flag": "mod:afc",
+    "read_by_default": true,
+    "sortnum": 100,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "If you see Tualang or Fig trees in your travels, you'll be pleased to know that you'll be able to create $(l:firmaciv/watercraft)Boats$() with them just like any other kind of Wood"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Softwoods",
+            "text": "Softwoods have sufficiently soft enough pulp and bark that they're perfect for creating $(l:firmaciv/canoe)Dugout Canoes$()",
+            "item": "afc:wood/stripped_log/tualang,afc:wood/stripped_log/fig,afc:wood/stripped_log/cypress"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)Tualang$() $(li)Fig$() $(li)Cypress$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Hardwoods",
+            "text": "Known for their exceptional sturdiness, Hardwood trees are ideal for creating larger and sophisticated Watercrafts such as $(l:firmaciv/rowboat)Rowboats$() and $(l:firmaciv/sloop)Sloops$()",
+            "item": "afc:wood/planks/baobab,afc:wood/planks/eucalyptus,afc:wood/planks/mahogany,afc:wood/planks/hevea,afc:wood/planks/teak,afc:wood/planks/ironwood,afc:wood/planks/ipe"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)Baobab$() $(li)Eucalyptus$() $(li)Mahogany$() $(li)Hevea$() $(li)Teak$() $(li)Ironwood$() $(li)Ipe$()"
+        }
+    ]
+}

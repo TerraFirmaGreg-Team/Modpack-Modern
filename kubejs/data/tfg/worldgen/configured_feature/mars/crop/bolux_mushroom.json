@@ -8,7 +8,10 @@
 					"to_place": {
 						"type": "minecraft:simple_state_provider",
 						"state": {
-							"Name": "betterend:bolux_mushroom_wild"
+							"Name": "betterend:bolux_mushroom_wild",
+							"Properties": {
+								"mature": "true"
+							}
 						}
 					}
 				}

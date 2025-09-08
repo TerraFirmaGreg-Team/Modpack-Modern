@@ -6,6 +6,11 @@
 			"chance": 2
 		},
 		{
+			"type": "tfc:climate",
+			"min_forest": "none",
+			"max_forest": "normal"
+		},
+		{
 			"type": "minecraft:in_square"
 		},
 		{

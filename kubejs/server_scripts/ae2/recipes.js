@@ -2162,8 +2162,8 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 	// Quantum Link Chamber
 	event.recipes.gtceu.assembly_line('ae2:quantum_link')
 		.itemInputs(
-			'8x ae2:fluix_pearl',
-			'gtceu:fusion_glass',
+			'8x tfg:cryo_fluix_pearl',
+			'ae2:quartz_glass',
 			'32x megacells:accumulation_processor',
 			'32x megacells:accumulation_processor',
 			'32x ae2:engineering_processor',
@@ -2179,12 +2179,11 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'gtceu:max_battery')
 		.inputFluids(Fluid.of('tfg:fluix', 144*2000))
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*1500))
-		.stationResearch(b => b.researchStack(Item.of('minecraft:glass')).EUt(GTValues.VA[GTValues.UV]).CWUt(256))
+		.stationResearch(b => b.researchStack(Item.of('ae2:quartz_glass')).EUt(GTValues.VA[GTValues.UV]).CWUt(256))
 		.dimension('ad_astra:moon')
 		.itemOutputs('ae2:quantum_link')
 		.duration(700)
 		.EUt(GTValues.VA[GTValues.UHV])
-		.cleanroom(CleanroomType.CLEANROOM)
 
 	// Chemical Reactor
 	event.recipes.gtceu.chemical_reactor('ae2:fluix_pearl')
