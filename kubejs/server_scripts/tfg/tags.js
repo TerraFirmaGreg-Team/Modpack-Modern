@@ -336,7 +336,6 @@ const registerTFGItemTags = (event) => {
 	// #endregion
 
 	// Mars stone dust
-
 	event.add('forge:mars_stone_dusts', 'tfg:venus_stone_dust')
 	event.add('forge:mars_stone_dusts', 'gtceu:granite_red_dust')
 	event.add('forge:mars_stone_dusts', 'tfg:mars_stone_dust')
@@ -355,6 +354,9 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:glacian_ram_food', '#tfg:martian_animal_foods')
 	event.add('tfg:sniffer_food', '#tfg:martian_animal_foods')
 	event.add('tfg:wraptor_food', '#tfg:martian_animal_foods')
+
+	event.add('tfg:mineral_rich_wool', 'tfg:wraptor_wool')
+	event.add('tfg:mineral_rich_wool', 'tfg:sniffer_wool')
 	//#endregion
 		
 	//#region Пыли стоунтайпов в один тэг
