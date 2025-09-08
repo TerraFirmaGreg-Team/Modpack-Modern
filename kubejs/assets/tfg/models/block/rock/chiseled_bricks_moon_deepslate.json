@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tfg:block/rock/chiseled_bricks_moon_deepslate"
+  }
+}

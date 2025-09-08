@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "tfg:block/rock/polished_moon_deepslate"
+	}
+}
