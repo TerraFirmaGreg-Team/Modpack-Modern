@@ -106,8 +106,22 @@ const registerAdAstraItemTags = (event) => {
 	event.add('firmalife:foods/cheeses', 'ad_astra:cheese')
 
 	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_helmet')
+	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_chestplate')
+	event.add('ad_astra:space_suit_items', 'gtceu:advanced_quarktech_chestplate')
 	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_leggings')
 	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_boots')
+
+	event.add('ad_astra:freeze_resistant_armor', 'gtceu:quarktech_helmet')
+	event.add('ad_astra:freeze_resistant_armor', 'gtceu:quarktech_chestplate')
+	event.add('ad_astra:freeze_resistant_armor', 'gtceu:advanced_quarktech_chestplate')
+	event.add('ad_astra:freeze_resistant_armor', 'gtceu:quarktech_leggings')
+	event.add('ad_astra:freeze_resistant_armor', 'gtceu:quarktech_boots')
+	
+	event.add('ad_astra:heat_resistant_armor', 'gtceu:quarktech_helmet')
+	event.add('ad_astra:heat_resistant_armor', 'gtceu:quarktech_chestplate')
+	event.add('ad_astra:heat_resistant_armor', 'gtceu:advanced_quarktech_chestplate')
+	event.add('ad_astra:heat_resistant_armor', 'gtceu:quarktech_leggings')
+	event.add('ad_astra:heat_resistant_armor', 'gtceu:quarktech_boots')
 	
 	event.remove('minecraft:wool', 'ad_astra:glacian_fur')
 

@@ -48,6 +48,9 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('tfg.tooltip.armor.nanomuscle_warmth')),
 		text.add(2, Text.translate('tfg.tooltip.armor.nanomuscle_insulation'))
 		text.add(3, Text.translate('tfg.tooltip.armor.nanomuscle_set'))
+		if (item == 'gtceu:nanomuscle_leggings') {
+			text.add(4, Text.translate('tfg.tooltip.armor.nanomuscle_legs_buff'))
+		}
 	})
 	event.addAdvanced(['gtceu:quarktech_helmet', 'gtceu:quarktech_chestplate', 'gtceu:quarktech_leggings', 'gtceu:quarktech_boots', 'gtceu:advanced_quarktech_chestplate'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.armor.quarktech_warmth')),
@@ -148,15 +151,15 @@ const registerTooltips = (event) => {
 	
 	//#region temperature changing foods
 	event.addAdvanced(['#tfg:cooling_foods'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.cooling_foods'))
+		text.add(1, Text.translate('tfg.tooltip.cooling_foods'))
 	})
 	
 	event.addAdvanced(['#tfg:cooling_foods_strong'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.cooling_foods_strong'))
+		text.add(1, Text.translate('tfg.tooltip.cooling_foods_strong'))
 	})
 	
 	event.addAdvanced(['#tfg:warming_foods'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'))
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'))
 	})
 
 	//#endregion
