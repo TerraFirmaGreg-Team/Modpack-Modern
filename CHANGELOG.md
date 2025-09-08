@@ -7,17 +7,19 @@
 ### Changes
 - Fuelling blaze burners with liquids is now done directly instead of through straws (break and replace your blaze burners to update) @Ghoulcel
 - Blaze burner liquid fuelling has been fully made consistent with GregTech power values (#1694) @Ghoulcel
+- Create Factory Logistics Jars now hold 8000mB instead of 1000mB (#1707) @Ghoulcel
 - Sewing Tables now use a knife instead of shears @BlueBoat29
 - Create Logistics Jars now hold 8000 mB each instead of just 1000 mB (#1707) @Ghoulcel
 - Added a way to keep your space suit with you on death, so you can more safely set your spawn on other planets (#1710) @BlueBoat29
 - Added Flax as a cold-weather alternative to jute and a plant-based option for light colored cloth @BlueBoat29
 - Sheet metal blocks are now made in a stonecutter and their yield increased (#1746) @SpicyNoodle5
 - Added a small amount of silver to the Bismith (Surface) vein @Pyritie
-- Added plascrete as an alternative to steel frames in the electric greenhouse @Redeix
+- Added steel machine casings as an alternative to steel frames in the electric greenhouse @Redeix
 - Added the ability for foods to affect the player's temperature @BlueBoat29
 - EMI Batched rendering has been disabled by default. @TomPlop
 - Automatic backups now happen hourly instead of daily (#1705) @Pyritie @Xikaro
 - Advanced Peripherals' Redstone Integrator has been deprecated in favour of ComputerCraft's Redstone Relay (#1737) @Pyritie
+- Speed up recipes for turning blocks into sand (#1720) @TomPlop
 ### Bug fixes
 - Fixed tongs getting stuck in ovens, and now you can use them the same way you'd previously use a Peel @Pyritie
 - Allowed powders, gears, plates, double plates, springs, and small springs to be heated (#1727) @Redeix
@@ -27,10 +29,13 @@
 - Fixed some of the more obvious dupes while we wait for a GregTech to do them properly (#1576) @Pyritie
 - Fixed not being able to use buzzsaws (and chainsaws) to cut things into lumber (#1685) @Pyritie
 - Fixed recipe conflict with dimethyl carbonate, acetic acid, and formaldehyde (#1731) @Pyritie
+- Fixed missing item in quartz sand centrifuging (#1717) @Pyritie
+- Popped chorus fruit is now edible (#1722) @programmer3481
 ### Translation updates
 - Chinese (simplified) @jmecn & @CN059
 - Russian @Dl, @Kostabl, @Turikar42, & @But3r
 - Ukranian @MetEnBouldry
+- Brazilian Portuguese @gifpxto
 
 ## [0.10.10] - 23-08-2025
 ### Major changes
