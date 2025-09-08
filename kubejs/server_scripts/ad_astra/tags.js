@@ -272,6 +272,8 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:mars_soil', 'tfg:grass/sangnum_kaolin_mycelium')
 	event.add('ad_astra:mars_stone_replaceables', '#tfg:mars_soil')
 	event.add('minecraft:animals_spawnable_on', '#tfg:mars_soil')
+	event.add('minecraft:animals_spawnable_on', '#tfg:mars_plants')
+	event.add('minecraft:animals_spawnable_on', '#forge:gravel')
 	
 	event.add('tfc:can_carve', '#ad_astra:moon_stone_replaceables')
 	event.add('tfc:can_carve', '#ad_astra:mars_stone_replaceables')

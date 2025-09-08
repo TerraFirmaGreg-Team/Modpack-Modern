@@ -8,11 +8,11 @@ TFCEvents.worldgenData(event => {
 			// https://notenoughmail.github.io/kubejs_tfc/1.20.1/worldgen/#forest-types-map-entry
 			// type, treeCount, groundcoverCount, perChunkChance, bushCount, hasSpoilerOldGrowth, allowsOldGrowth, leafPileCount
 
-			event.forestTypesMapEntry('none',       [0, 1], 0,  0.02, 0, false, false, 0),
-			event.forestTypesMapEntry('sparse',     [1, 3], 6,  0.2,  0, false, false, [0, 1]),
-			event.forestTypesMapEntry('edge',       [2, 4], 15, 0.8,  1, true,  false, [0, 1]),
-			event.forestTypesMapEntry('normal',     [4, 6], 25, 1,    1, true,  false, [1, 2]),
-			event.forestTypesMapEntry('old_growth', [5, 8], 40, 1,    2, true,  true,  [1, 2])
+			event.forestTypesMapEntry('none',       [0, 1],  1,  0.1,  0, false, false, 0),
+			event.forestTypesMapEntry('sparse',     [1, 3],  10, 0.3,  1, false, false, [0, 1]),
+			event.forestTypesMapEntry('edge',       [3, 5],  20, 0.8,  1, true,  false, [1, 2]),
+			event.forestTypesMapEntry('normal',     [6, 8],  35, 1,    2, true,  false, [2, 3]),
+			event.forestTypesMapEntry('old_growth', [8, 12], 50, 1,    2, true,  true,  [3, 4])
 		],
 		false, 
 		placement => {}
