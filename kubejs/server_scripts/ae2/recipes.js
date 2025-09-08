@@ -2167,7 +2167,10 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'32x megacells:accumulation_processor',
 			'32x megacells:accumulation_processor',
 			'32x ae2:engineering_processor',
+			'32x ae2:engineering_processor',
 			'32x ae2:logic_processor',
+			'32x ae2:logic_processor',
+			'32x ae2:calculation_processor',
 			'32x ae2:calculation_processor',
 			'gtceu:ruthenium_trinium_americium_neutronate_hex_wire',
 			'32x gtceu:uv_sensor',
@@ -2181,7 +2184,6 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemOutputs('ae2:quantum_link')
 		.duration(700)
 		.EUt(GTValues.VA[GTValues.UHV])
-		.cleanroom(CleanroomType.CLEANROOM)
 
 	// Chemical Reactor
 	event.recipes.gtceu.chemical_reactor('ae2:fluix_pearl')
