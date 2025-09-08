@@ -1151,6 +1151,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:carbon_monoxide', 1000), Fluid.of('gtceu:oxygen', 500), Fluid.of('gtceu:methanol', 2000))
 		.outputFluids(Fluid.of('tfg:dimethyl_carbonate', 1000), Fluid.of('minecraft:water', 1000))
 		.duration(120)
+		.circuit(3)
 		.EUt(GTValues.VA[GTValues.HV])
 	event.recipes.gtceu.chemical_reactor('tfg:methyl_phenylcarbamate_synthesis')
 		.inputFluids(Fluid.of('tfg:aniline', 1000), Fluid.of('tfg:dimethyl_carbonate', 1000))
@@ -1175,6 +1176,9 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('tfg:aes_polyurethane')
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.IV])
+		
+	addCircuitToRecipe(event, 'gtceu:chemical_reactor/formaldehyde', 2)
+	addCircuitToRecipe(event, 'gtceu:chemical_reactor/acetic_acid_from_methanol', 1)
 	//endregion
 	
 	//Aerogel
