@@ -149,7 +149,7 @@ TFCEvents.registerClimateModel(event => {
 			// average of -110 at night, -15 at day
 			let avgTemp = calcAverage(pos.z, 10000, -110, -15);
 			// +- 45 based on latitude, down to -10 at bedrock
-			return calcCurrentTemp(avgTemp, 65, pos.y, calendarTicks, 45, -10, 0.5);
+			return calcCurrentTemp(avgTemp, 88, pos.y, calendarTicks, 45, -10, 0.5);
 		})
 
 		builder.setAverageTemperatureCalculation((level, pos) => {
