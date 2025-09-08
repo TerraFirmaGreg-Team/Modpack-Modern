@@ -78,6 +78,11 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:tools/ore_prospectors/blue_steel', 'tfc:metal/propick/blue_steel')
 	event.add('tfg:tools/ore_prospectors/red_steel', 'tfc:metal/propick/red_steel')
 
+	event.add('tfg:empty_dna_syringes', 'tfg:empty_dna_syringe')
+	event.add('tfg:empty_dna_syringes', 'tfg:clean_dna_syringe')
+
+	event.add('tfc:sewing_needles', 'tfg:stainless_steel_needle')
+
 	//#endregion
 
 	// #region Paper from wood

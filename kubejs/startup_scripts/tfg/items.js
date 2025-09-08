@@ -229,6 +229,10 @@ const registerTFGItems = (event) => {
 		.parentModel('tfg:item/aluminium_harvest_basket')
 		.unstackable()
 
+	event.create('tfg:stainless_steel_needle')
+		.translationKey('item.tfg.stainless_steel_needle')
+		.unstackable()
+
 	//Fishing Nets
 	event.create('tfg:fishing_net/wood')
 		.translationKey('item.tfg.fishing_net.wood')
