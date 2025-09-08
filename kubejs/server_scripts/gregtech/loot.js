@@ -22,8 +22,9 @@ const STONE_TYPES_TO_COBBLE = {
 	andesite: 'tfc:rock/cobble/andesite',
 	granite: 'tfc:rock/cobble/granite',
 	deepslate: 'minecraft:cobbled_deepslate',
-	pyroxenite: 'minecraft:blackstone',
-	dripstone: 'minecraft:dripstone_block',
+	pyroxenite: 'tfg:rock/cobble_blackstone',
+	dripstone: 'tfg:block/rock/cobble_dripstone',
+	keratophyre: 'tfg:block/rock/cobble_crackrack',
 	moon_stone: 'ad_astra:moon_cobblestone',
 	moon_deepslate: 'ad_astra:moon_sand',
 	mars_stone: 'ad_astra:mars_cobblestone',
@@ -36,103 +37,6 @@ const STONE_TYPES_TO_COBBLE = {
 const registerGTCEULoots = (event) => {
 
 	// Have to define these here because normal loot table jsons don't support checking for hammers
-	event.addBlockLootModifier('minecraft:deepslate')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('minecraft:cobbled_deepslate')
-
-	event.addBlockLootModifier('minecraft:blackstone')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('tfc:sand/black')
-
-	event.addBlockLootModifier('minecraft:dripstone_block')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('tfc:sand/brown')
-
-	event.addBlockLootModifier('tfg:rock/hardened_blackstone')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('tfc:sand/black')
-
-	event.addBlockLootModifier('tfg:rock/hardened_deepslate')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('minecraft:cobbled_deepslate')
-
-	event.addBlockLootModifier('tfg:rock/hardened_dripstone')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('tfc:sand/brown')
-
-	event.addBlockLootModifier('minecraft:gilded_blackstone')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addSequenceLoot(
-			LootEntry.of('tfc:sand/black'),
-			LootEntry.of('tfc:powder/native_gold')
-		)
-
-	event.addBlockLootModifier('beneath:crackrack')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('tfc:sand/pink')
-
-	event.addBlockLootModifier('ad_astra:moon_stone')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('ad_astra:moon_cobblestone')
-
-	event.addBlockLootModifier('ad_astra:moon_cobblestone')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('ad_astra:moon_sand')
-
-	event.addBlockLootModifier('ad_astra:moon_deepslate')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('ad_astra:moon_sand')
-
-	event.addBlockLootModifier('ad_astra:mars_stone')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('ad_astra:mars_cobblestone')
-
-	event.addBlockLootModifier('ad_astra:mars_cobblestone')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('ad_astra:mars_sand')
-
-	event.addBlockLootModifier('ad_astra:venus_stone')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('ad_astra:venus_cobblestone')
-
-	event.addBlockLootModifier('ad_astra:venus_cobblestone')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('ad_astra:venus_sand')
-
-	event.addBlockLootModifier('ad_astra:mercury_stone')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('ad_astra:mercury_cobblestone')
-
-	event.addBlockLootModifier('ad_astra:mercury_cobblestone')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('tfc:sand/red')
-
-	event.addBlockLootModifier('ad_astra:glacio_stone')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('ad_astra:glacio_cobblestone')
-
-	event.addBlockLootModifier('ad_astra:glacio_cobblestone')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addLoot('tfc:sand/white')
 
 	// Crush raw rock into cobble
 	global.TFC_STONE_TYPES.forEach(stoneType => {
@@ -142,6 +46,22 @@ const registerGTCEULoots = (event) => {
 			.addLoot(STONE_TYPES_TO_COBBLE[stoneType]);
 	})
 
+	// Defined in kubejs/startup_scripts/tfg/constants.js
+	global.HAMMERING.forEach(x => {
+		event.addBlockLootModifier(x.raw)
+			.matchMainHand('#forge:tools/hammers')
+			.removeLoot(ItemFilter.ALWAYS_TRUE)
+			.addLoot(x.hammered)
+	})
+
+	event.addBlockLootModifier('minecraft:gilded_blackstone')
+		.matchMainHand('#forge:tools/hammers')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addSequenceLoot(
+			LootEntry.of('tfg:rock/cobble_blackstone'),
+			LootEntry.of('tfc:powder/native_gold')
+		)
+	
 	// Go through all materials
 	forEachMaterial(material => {
 		if (material.hasProperty(PropertyKey.ORE)) {
