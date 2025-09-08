@@ -75,12 +75,6 @@
 		"axolotls": [],
 		"creature": [
 			{
-				"type": "tfg:sniffer",
-				"maxCount": 3,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
 				"type": "tfg:wraptor",
 				"maxCount": 4,
 				"minCount": 2,
