@@ -5470,7 +5470,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ExtendedAE-1.20-1.4.4-forge.jar",
+                    "file_name": "ExtendedAE-1.20-1.4.5-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5479,20 +5479,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6870/350/ExtendedAE-1.20-1.4.4-forge.jar",
-                    "id": "6870350",
+                    "url": "https://edge.forgecdn.net/files/6975/234/ExtendedAE-1.20-1.4.5-forge.jar",
+                    "id": "6975234",
                     "parent_id": "892005",
                     "hashes": {
-                        "sha1": "3c10e9aa3f2a02021b61bd0ef9af51b9e27552d5",
-                        "md5": "78ef780bd578ac44b63dae4df89f3774"
+                        "sha1": "b513e33baff2597c7ab5f0da78e6a817e0e118da",
+                        "md5": "9f22f10d59e9eb246e05f34a6d555b90"
                     },
                     "required_dependencies": [
                         "957920",
-                        "223794",
-                        "1173950"
+                        "1173950",
+                        "223794"
                     ],
-                    "size": 1538479,
-                    "date_published": "2025-08-10T08:11:07.093Z"
+                    "size": 1580425,
+                    "date_published": "2025-09-08T04:16:40.817Z"
                 }
             ]
         },
@@ -6865,69 +6865,6 @@
             ]
         },
         {
-            "pakku_id": "tQgKccUPjTVsdsDX",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "curseforge": "get-it-together-drops",
-                "modrinth": "get-it-together-drops"
-            },
-            "name": {
-                "curseforge": "Get It Together, Drops!",
-                "modrinth": "Get It Together, Drops!"
-            },
-            "id": {
-                "curseforge": "411045",
-                "modrinth": "T0OUgf8P"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "getittogetherdrops-forge-1.20-1.3.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4578/649/getittogetherdrops-forge-1.20-1.3.jar",
-                    "id": "4578649",
-                    "parent_id": "411045",
-                    "hashes": {
-                        "sha1": "70a4d8acaedc4dfb066974726d21916b78edd7af",
-                        "md5": "48b718676addc7770ac9a9bf63a84633"
-                    },
-                    "required_dependencies": [],
-                    "size": 7863,
-                    "date_published": "2023-06-10T18:01:36.853Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "getittogetherdrops-forge-1.20-1.3.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/T0OUgf8P/versions/csPzTtJp/getittogetherdrops-forge-1.20-1.3.jar",
-                    "id": "csPzTtJp",
-                    "parent_id": "T0OUgf8P",
-                    "hashes": {
-                        "sha512": "65ccbff7c6726392e3767305cbab643dab9a8a7cbb4b11e5a8f19de32e7c4e7ac63ff707ca0ae39ed6e6c699832910362b74dbbacb403ef78b524156f29f2b14",
-                        "sha1": "70a4d8acaedc4dfb066974726d21916b78edd7af"
-                    },
-                    "required_dependencies": [],
-                    "size": 7863,
-                    "date_published": "2023-06-10T18:01:17.003071Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "OX3oijTxjmeoXyM3",
             "type": "MOD",
             "side": "BOTH",
@@ -7555,29 +7492,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "immersive_aircraft-1.3.3+1.20.1-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6742/170/immersive_aircraft-1.3.3+1.20.1-forge.jar",
-                    "id": "6742170",
-                    "parent_id": "666014",
-                    "hashes": {
-                        "sha1": "0749b5c005eafdcf5c8a19760c5c64b3cb021633",
-                        "md5": "4460fa3fa7959a5960c5379578773291"
-                    },
-                    "required_dependencies": [],
-                    "size": 2391382,
-                    "date_published": "2025-07-07T20:39:55.963Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "immersive_aircraft-1.3.3+1.20.1-forge.jar",
+                    "file_name": "immersive_aircraft-1.4.0+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7585,16 +7501,37 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/x3HZvrj6/versions/GsVmbbkj/immersive_aircraft-1.3.3+1.20.1-forge.jar",
-                    "id": "GsVmbbkj",
+                    "url": "https://cdn.modrinth.com/data/x3HZvrj6/versions/jPZ0GRsN/immersive_aircraft-1.4.0+1.20.1-forge.jar",
+                    "id": "jPZ0GRsN",
                     "parent_id": "x3HZvrj6",
                     "hashes": {
-                        "sha512": "7b74442e161bb74538e0d8da34a81616daeea56a0da62db86113a78b3bf3c2b3a6b0e12f12454fd7c96092762f6b212ba57cb87eb1af2b242a4d5df4eca03055",
-                        "sha1": "0749b5c005eafdcf5c8a19760c5c64b3cb021633"
+                        "sha512": "c89ce2ec78ced38c71b0bb022db0a3218556b5479e148a3f751c40456a79fb18799a3f1233e3be03bc18754d5fe1db2dd16f2bd826396a4c777e4e1acaa9fe76",
+                        "sha1": "64e6c792c5208005ee6b099e8fb7d2738873737d"
                     },
                     "required_dependencies": [],
-                    "size": 2391382,
-                    "date_published": "2025-07-07T20:40:00.415348Z"
+                    "size": 2428368,
+                    "date_published": "2025-09-07T14:19:11.649750Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "immersive_aircraft-1.4.0+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6972/825/immersive_aircraft-1.4.0+1.20.1-forge.jar",
+                    "id": "6972825",
+                    "parent_id": "666014",
+                    "hashes": {
+                        "sha1": "64e6c792c5208005ee6b099e8fb7d2738873737d",
+                        "md5": "f49ff767f611a95f9bd29a0e9977d9d5"
+                    },
+                    "required_dependencies": [],
+                    "size": 2428368,
+                    "date_published": "2025-09-07T14:19:09.407Z"
                 }
             ]
         },
