@@ -369,6 +369,9 @@ const registerTFCBlockTags = (event) => {
 	event.add('tfc:can_start_collapse', '#tfg:rock_walls')
 	event.add('tfc:can_trigger_collapse', '#tfg:rock_walls')
 
+	event.add('tfc:can_start_collapse', '#tfc:rock/smooth')
+	event.add('tfc:can_trigger_collapse', '#tfc:rock/smooth')
+
 	// Возможность обрушения руды
 	event.add('tfc:can_collapse', '#forge:ores')
 	event.add('tfc:can_start_collapse', '#forge:ores')
