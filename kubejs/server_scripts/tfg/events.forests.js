@@ -9,10 +9,10 @@ TFCEvents.worldgenData(event => {
 			// type, treeCount, groundcoverCount, perChunkChance, bushCount, hasSpoilerOldGrowth, allowsOldGrowth, leafPileCount
 
 			event.forestTypesMapEntry('none',       [0, 1],  1,  0.1,  0, false, false, 0),
-			event.forestTypesMapEntry('sparse',     [1, 3],  10, 0.3,  1, false, false, [0, 1]),
-			event.forestTypesMapEntry('edge',       [3, 5],  20, 0.8,  1, true,  false, [1, 2]),
-			event.forestTypesMapEntry('normal',     [6, 8],  35, 1,    2, true,  false, [2, 3]),
-			event.forestTypesMapEntry('old_growth', [8, 12], 50, 1,    2, true,  true,  [3, 4])
+			event.forestTypesMapEntry('sparse',     [0, 3],  10, 0.3,  1, false, false, [0, 1]),
+			event.forestTypesMapEntry('edge',       [2, 5],  20, 0.8,  1, true,  false, [1, 2]),
+			event.forestTypesMapEntry('normal',     [5, 8],  35, 1,    2, true,  false, [2, 3]),
+			event.forestTypesMapEntry('old_growth', [8, 12], 50, 1,    3, true,  true,  [3, 4])
 		],
 		false, 
 		placement => {}
@@ -20,9 +20,10 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/crimson_forest_entry',
 		climate => {
-			climate.maxTemp(-20)
-			climate.minTemp(-65)
-			climate.minRain(-10)
+			climate.maxTemp(-41)
+			climate.minTemp(-98)
+			climate.minRain(-12)
+			climate.fuzzy(true)
 		},
 		'beneath:wood/wood/crimson', // bush log
 		'beneath:wood/leaves/crimson', // bush leaves
@@ -31,7 +32,6 @@ TFCEvents.worldgenData(event => {
 		[ // ground cover
 			'minecraft:crimson_fungus',
 			'beneath:wood/fallen_leaves/crimson',
-			'beneath:wood/leaves/crimson',
 			'beneath:wood/twig/crimson',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
@@ -44,16 +44,16 @@ TFCEvents.worldgenData(event => {
 		null, // chance for old growth in non-old growth forests
 		null, // chance for a fallen tree
 		null, // chance for a dead tree
-		null, // true to spawn on ocean floor, false for world surface
+		null, // false (default) to spawn with the ocean floor heightmap, true for world surface
 		placement => {}
 	)
 
 	event.forestEntry('tfg:mars/warped_forest_entry',
 		climate => {
-			climate.maxTemp(-20)
-			climate.minTemp(-65)
-			climate.minRain(-20)
+			climate.maxTemp(-39)
+			climate.minTemp(-101)
 			climate.maxRain(0)
+			climate.fuzzy(true)
 		},
 		'beneath:wood/wood/warped',
 		'beneath:wood/leaves/warped',
@@ -62,7 +62,6 @@ TFCEvents.worldgenData(event => {
 		[
 			'minecraft:warped_fungus',
 			'beneath:wood/fallen_leaves/warped',
-			'beneath:wood/leaves/warped',
 			'beneath:wood/twig/warped',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
@@ -76,18 +75,16 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/aeronos_forest_entry',
 		climate => {
-			climate.maxTemp(-30)
-			climate.minTemp(-85)
-			climate.minRain(-15)
+			climate.minTemp(-77)
+			climate.minRain(-14)
+			climate.fuzzy(true)
 		},
 		'ad_astra:aeronos_stem',
 		'ad_astra:aeronos_cap',
-		'betterend:cave_bush',
-		'betterend:cave_bush_fallen',
+		null,
+		null,
 		[
 			"ad_astra:aeronos_mushroom",
-			'betterend:cave_bush',
-			'betterend:cave_bush_fallen',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather',
 			'tfg:groundcover/aeronos_stick'
@@ -101,18 +98,16 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/strophar_forest_entry',
 		climate => {
-			climate.maxTemp(-20)
-			climate.minTemp(-80)
-			climate.maxRain(5)
+			climate.minTemp(-73)
+			climate.maxRain(2)
+			climate.fuzzy(true)
 		},
 		'ad_astra:strophar_stem',
 		'ad_astra:strophar_cap',
-		'betterend:lucernia_leaves',
-		'betterend:lucernia_leaves_fallen',
+		null,
+		null,
 		[
 			"ad_astra:strophar_mushroom",
-			'betterend:lucernia_leaves',
-			'betterend:lucernia_leaves_fallen',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather',
 			'tfg:groundcover/strophar_stick'
@@ -126,22 +121,62 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/alphacene_forest_entry',
 		climate => {
-			climate.minTemp(-40)
+			climate.minTemp(-65)
+			climate.fuzzy(true)
 		},
-		'minecraft:mushroom_stem',
-		'species:alphacene_mushroom_block',
-		'minecraft:mushroom_stem',
+		null,
+		null,
+		null,
 		null,
 		[
 			"species:alphacene_mushroom",
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather',
-			'tfg:groundcover/alphacene_stick',
-			'tfc:groundcover/stick'
+			'tfg:groundcover/alphacene_stick'
 		],
 		'species:alphacene_mushroom',
 		'tfg:mars/tree/alphacene_dead',
 		'species:alphacene_mushroom',
+		null, null, null, null, null, null,
+		placement => {}
+	)
+
+	event.forestEntry('tfg:mars/cave_bush_forest_entry',
+		climate => {
+			climate.minRain(-5)
+			climate.minForest('edge')
+			climate.fuzzy(true)
+		},
+		'beneath:wood/stripped_wood/crimson',
+		'betterend:cave_bush',
+		null,
+		null,
+		[
+			'betterend:cave_bush_fallen',
+		],
+		'tfg:mars/tree/cave_bush',
+		'tfg:mars/tree/cave_bush', 
+		'tfg:mars/tree/cave_bush',
+		null, null, null, null, null, null,
+		placement => {}
+	)
+
+	event.forestEntry('tfg:mars/lucernia_forest_entry',
+		climate => {
+			climate.maxRain(-7)
+			climate.minForest('edge')
+			climate.fuzzy(true)
+		},
+		'beneath:wood/stripped_wood/warped',
+		'betterend:lucernia_leaves',
+		null,
+		null,
+		[
+			'betterend:lucernia_leaves_fallen',
+		],
+		'tfg:mars/tree/lucernia',
+		'tfg:mars/tree/lucernia', 
+		'tfg:mars/tree/lucernia',
 		null, null, null, null, null, null,
 		placement => {}
 	)
@@ -155,4 +190,6 @@ function registerTFGForestConfiguredFeatures(event) {
 	event.add('tfg:mars_forest_entries', 'tfg:mars/aeronos_forest_entry')
 	event.add('tfg:mars_forest_entries', 'tfg:mars/strophar_forest_entry')
 	event.add('tfg:mars_forest_entries', 'tfg:mars/alphacene_forest_entry')
+	event.add('tfg:mars_forest_entries', 'tfg:mars/cave_bush_forest_entry')
+	event.add('tfg:mars_forest_entries', 'tfg:mars/lucernia_forest_entry')
 }

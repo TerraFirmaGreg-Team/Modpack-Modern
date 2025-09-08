@@ -41,11 +41,11 @@ TFCEvents.createChunkDataProvider('moon', event => {
 
 let tempLayer = TFC.misc.newOpenSimplex2D(4621678939469)
 	.octaves(2)
-	.spread(0.15)
+	.spread(0.05)
 	.scaled(-10, 10)
 let rainLayer = TFC.misc.newOpenSimplex2D(2846746456346)
 	.octaves(2)
-	.spread(0.15)
+	.spread(0.05)
 	.scaled(-3, 3)
 let forestDensityNoise = TFC.misc.newOpenSimplex2D(98713856895664)
 	.octaves(4)
