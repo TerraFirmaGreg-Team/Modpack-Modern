@@ -1,0 +1,16 @@
+{
+	"feature": "tfc:large_cave_spike",
+	"placement": [
+		{
+			"type": "minecraft:carving_mask",
+			"step": "air",
+			"min_y": {
+				"above_bottom": 25
+			}
+		},
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 167
+		}
+	]
+}

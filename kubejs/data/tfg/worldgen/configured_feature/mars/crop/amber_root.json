@@ -8,7 +8,10 @@
 					"to_place": {
 						"type": "minecraft:simple_state_provider",
 						"state": {
-							"Name": "betterend:amber_root_wild"
+							"Name": "betterend:amber_root_wild",
+							"Properties": {
+								"mature": "true"
+							}
 						}
 					}
 				}

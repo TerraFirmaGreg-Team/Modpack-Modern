@@ -14,13 +14,1333 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)(Placeholder Vein)$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandine & Sapphire$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornite & Cooperite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Coal & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Gold, Electrotine, & Bauxite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende, Thorium, & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorium, & Uraninite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartzite, Asbestos, & Barite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone & Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Salts & Spodumene$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Soapstone, Talc, & Glauconite$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_nickel_galena)Sphalerite & Galena$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит и Пирохлор$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит и Монацит$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_bismuthinite)Висмут$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 210$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): -16 — 100$(br)$(thing)Размер$(): 40$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец, Трахит",
-      "title": "(Placeholder Vein)",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарниерит и Кобальтит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Изумруд и Бериллий$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_cassiterite)Касситерит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Марганец и Тантал$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Медь и Халькопирит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Серебро, Галена и Свинец$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сфалерит & Пирит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраэдрит (обычный)$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_tetrahedrite)Тетраэдрит (Поверхностный)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеелит и Вольфрамат$()$()",
+      "type": "patchouli:text"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 280$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 65$(br)$(thing)Высота$(): 8$(br)$(thing)Индикатор Max Depth$(): 15$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Габбро, Диорит, Доломит, Известняк, Кремнистый сланец, Сланец, Трахит",
+      "title": "Almandine & Sapphire",
+      "type": "patchouli:text",
+      "anchor": "mars_almandine"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Альмандин",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/almandine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 36%$(br)$(thing)Хромит$(): Алюминий, Железо$(br)$(thing)Формула$(): Al₂Fe₃Si₃O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Пироп",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrope"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 26%$(br)$(thing)Хромит$(): Алюминий, Магний$(br)$(thing)Формула$(): Al₂Mg₃Si₃O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сапфир",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sapphire"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Хромит$(): Алюминий$(br)$(thing)Формула$(): Al₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Зелёный сапфир",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/green_sapphire"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Хромит$(): Алюминий$(br)$(thing)Формула$(): Al₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 370$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): -20 — 0$(br)$(thing)Размер$(): 60$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Базальт, Дацит, Диорит, Конгломерат, Кремнистый сланец, Мел, Трахит",
+      "title": "Bornite & Cooperite",
+      "type": "patchouli:text",
+      "anchor": "deep_mars_sheldonite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Борнит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bornite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Хромит$(): Медь$(br)$(thing)Формула$(): Cu₅FeS₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Шелдонит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cooperite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Хромит$(): Платина, Никель, Палладий$(br)$(thing)Формула$(): Pt₃NiSPd",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Никель",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nickel"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Платина",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/platinum"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Плавится в$(): Платина$(br)$(thing)Формула$(): Pt",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 215$(br)$(thing)Плотность$(): 0.6$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 55$(br)$(thing)Индикатор Max Depth$(): 10$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Базальт, Гранит, Дацит, Диорит, Доломит, Конгломерат, Мел, Трахит",
+      "title": "Coal & Hematite",
+      "type": "patchouli:text",
+      "anchor": "mars_coal"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Уголь",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 70%$(br)$(thing)Используется для$(): топливо, ректификация$(br)$(thing)Формула$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 230$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 40$(br)$(thing)Индикатор Max Depth$(): 15$(br2)$(thing)Виды камней$(): Аргиллит, Габбро, Гранит, Диорит, Кремнистый сланец, Мел, Сланец",
+      "title": "Gold, Electrotine, & Bauxite",
+      "type": "patchouli:text",
+      "anchor": "mars_sapphire"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородная Золото",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gold"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 55%$(br)$(thing)Плавится в$(): Золото$(br)$(thing)Формула$(): Au",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Боксит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bauxite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Хромит$(): Алюминий$(br)$(thing)Формула$(): Al₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Электротин",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/electrotine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Хромит$(): Золото, Серебро, Редстоун$(br)$(thing)Формула$(): (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Зелёный сапфир",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/green_sapphire"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Хромит$(): Алюминий$(br)$(thing)Формула$(): Al₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 220$(br)$(thing)Плотность$(): 0.55$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 20$(br)$(thing)Индикатор Max Depth$(): 15$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Габбро, Дацит, Диорит, Доломит, Конгломерат, Сланец, Трахит",
+      "title": "Pitchblende, Thorium, & Hematite",
+      "type": "patchouli:text",
+      "anchor": "mars_pitchblende"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Уранит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pitchblende"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 41%$(br)$(thing)Хромит$(): Уран, Торий, Свинец$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Торий",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/thorium"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 29%$(br)$(thing)Хромит$(): Торий$(br)$(thing)Формула$(): Th",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 29%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 370$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): -20 — 0$(br)$(thing)Размер$(): 60$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Габбро, Дацит, Диорит, Сланец, Трахит",
+      "title": "Pitchblende, Thorium, & Uraninite",
+      "type": "patchouli:text",
+      "anchor": "deep_mars_pitchblende"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Уранит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pitchblende"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 52%$(br)$(thing)Хромит$(): Уран, Торий, Свинец$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Торий",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/thorium"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 26%$(br)$(thing)Хромит$(): Торий$(br)$(thing)Формула$(): Th",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Уранинит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/uraninite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 21%$(br)$(thing)Хромит$(): Уран$(br)$(thing)Формула$(): UO₂$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 210$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 40$(br)$(thing)Индикатор Max Depth$(): 15$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Гранит, Известняк, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Quartzite, Asbestos, & Barite",
+      "type": "patchouli:text",
+      "anchor": "mars_quartzite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кварцит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/quartzite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 41%$(br)$(thing)Используется для$(): компоненты уровня LV$(br)$(thing)Формула$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Барит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/barite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Хромит$(): Барий$(br)$(thing)Формула$(): BaSO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Асбест",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/asbestos"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 17%$(br)$(thing)Хромит$(): Магний$(br)$(thing)Формула$(): Mg₃Si₂H₄O₉$(br)$(thing)Ядовит$(): $(c)$(t:Requires Face Mask)Asbestosis (Inhalation)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 370$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): -20 — 0$(br)$(thing)Размер$(): 60$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Базальт, Дацит, Известняк, Кремнистый сланец, Мел, Сланец",
+      "title": "Redstone & Chromite",
+      "type": "patchouli:text",
+      "anchor": "deep_mars_chromite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Редстоун",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/redstone"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 45%$(br)$(thing)Плавится в$(): Редстоун$(br)$(thing)Формула$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Рубин",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/ruby"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Хромит$(): Хром, Алюминий$(br)$(thing)Формула$(): CrAl₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Хромит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chromite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Хромит$(): Хром$(br)$(thing)Формула$(): FeCr₂O₄$(br)$(thing)Ядовит$(): $(c)$(t:Requires Rubber Gloves)Irritant (Skin Contact)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 210$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 40$(br)$(thing)Высота$(): 6$(br)$(thing)Индикатор Max Depth$(): 15$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Гранит, Диорит, Известняк, Кремнистый сланец, Мел, Трахит",
+      "title": "Salts & Spodumene",
+      "type": "patchouli:text",
+      "anchor": "mars_salt"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сподумен",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/spodumene"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Хромит$(): Литий, Алюминий$(br)$(thing)Формула$(): LiAlSi₂O₆",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Соль",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/salt"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Хромит$(): Натрий, Хлор$(br)$(thing)Формула$(): NaCl",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Каменная соль",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/rock_salt"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Хромит$(): Калий, Хлор$(br)$(thing)Формула$(): KCl",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Лепидолит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lepidolite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Хромит$(): Калий, Литий, Алюминий, Фтор$(br)$(thing)Формула$(): KLi₃Al₄F₂O₁₀",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 220$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 30$(br)$(thing)Индикатор Max Depth$(): 15$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Гранит, Дацит, Диорит, Доломит, Известняк, Конгломерат, Сланец",
+      "title": "Soapstone, Talc, & Glauconite",
+      "type": "patchouli:text",
+      "anchor": "mars_lubricant"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Мыльный камень",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/soapstone"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 31%$(br)$(thing)Хромит$(): Магний$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Глауконитовый песок",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/glauconite_sand"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 26%$(br)$(thing)Хромит$(): Магний, Алюминий$(br)$(thing)Формула$(): KMg₂Al₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Тальк",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/talc"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 21%$(br)$(thing)Хромит$(): Магний$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Пентландит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pentlandite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni₉S₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 150$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 80 — 180$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Sphalerite & Galena",
+      "type": "patchouli:text",
+      "anchor": "surface_nickel_galena"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Галена",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/galena"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): PbS$(br)$(thing)Ядовит$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Никель",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nickel"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 23%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сфалерит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sphalerite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 17%$(br)$(thing)Плавится в$(): Цинк$(br)$(thing)Формула$(): ZnS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородная Серебро",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 11%$(br)$(thing)Плавится в$(): Серебро$(br)$(thing)Формула$(): Ag",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кобальтит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cobaltite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 11%$(br)$(thing)Хромит$(): Кобальт, Мышьяк$(br)$(thing)Формула$(): CoAsS$(br)$(thing)Ядовит$(): $(c)$(t:Requires Face Mask)Arsenicosis (Inhalation)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 220$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 15$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Базальт, Дацит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Апатит и Пирохлор",
+      "type": "patchouli:text",
+      "anchor": "mars_apatite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Апатит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/apatite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 47%$(br)$(thing)Хромит$(): Кальций, Фосфор$(br)$(thing)Формула$(): Ca₅(PO₄)₃Cl",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Трикальцийфосфат",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tricalcium_phosphate"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 33%$(br)$(thing)Хромит$(): Кальций, Фосфор$(br)$(thing)Формула$(): Ca₃(PO₄)₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Пирохлор",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrochlore"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 14%$(br)$(thing)Хромит$(): Ниобий$(br)$(thing)Формула$(): Ca₂Nb₂O₇",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 4%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 215$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 15$(br2)$(thing)Виды камней$(): Аргиллит, Базальт, Габбро, Диорит, Доломит, Кремнистый сланец, Мел, Трахит",
+      "title": "Бастнезит и Монацит",
+      "type": "patchouli:text",
+      "anchor": "mars_neodynium"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Бастнезит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bastnasite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 58%$(br)$(thing)Хромит$(): Церий, Фтор$(br)$(thing)Формула$(): CeCFO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Монацит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/monazite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 29%$(br)$(thing)Хромит$(): Фосфор, Редкая земля$(br)$(thing)Формула$(): ?(PO₄)",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Неодим",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/neodymium"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Хромит$(): Неодим$(br)$(thing)Формула$(): Nd",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 140$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 80 — 180$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Висмут",
+      "type": "patchouli:text",
+      "anchor": "surface_bismuthinite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Висмут",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bismuth"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 40%$(br)$(thing)Плавится в$(): Висмут$(br)$(thing)Формула$(): Bi",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сера",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Хромит$(): Сера$(br)$(thing)Формула$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гипс",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gypsum"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Используется для$(): Алебастр (можно покрасить) и его кирпичи$(br)$(thing)Формула$(): CaS(H₂O)₂O₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 250$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 55$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Базальт, Гранит, Дацит, Известняк, Мел, Сланец",
+      "title": "Гарниерит и Кобальтит",
+      "type": "patchouli:text",
+      "anchor": "mars_nickel"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гарниерит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/garnierite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): NiO",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Никель",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nickel"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 28%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кобальтит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cobaltite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 28%$(br)$(thing)Хромит$(): Кобальт, Мышьяк$(br)$(thing)Формула$(): CoAsS$(br)$(thing)Ядовит$(): $(c)$(t:Requires Face Mask)Arsenicosis (Inhalation)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 7%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 210$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 40$(br)$(thing)Индикатор Max Depth$(): 30$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Базальт, Дацит, Доломит, Известняк, Конгломерат",
+      "title": "Гематит и Лимонит",
       "type": "patchouli:text",
       "anchor": "mars_hematite"
     },
@@ -41,8 +1361,943 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 100%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "text": "$(thing)Процент руды$(): 50%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Жёлтый лимонит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/yellow_limonite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeHO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гётит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/goethite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeHO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородная Золото",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gold"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Золото$(br)$(thing)Формула$(): Au",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 140$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 80 — 180$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Гематит и Лимонит",
+      "type": "patchouli:text",
+      "anchor": "surface_hematite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 55%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Жёлтый лимонит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/yellow_limonite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 33%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeHO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородная Золото",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gold"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Золото$(br)$(thing)Формула$(): Au",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кальцит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/calcite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Хромит$(): Кальций$(br)$(thing)Формула$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 350$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): трубчатая жила$(br)$(thing)Y-уровень$(): -20 — 50$(br)$(thing)Высота$(): 40$(br)$(thing)Радиус$(): 8$(br)$(thing)Индикатор Max Depth$(): 15$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит",
+      "title": "Изумруд и Бериллий",
+      "type": "patchouli:text",
+      "anchor": "mars_beryllium"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Изумруд",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/emerald"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 50%$(br)$(thing)Используется для$(): компоненты уровня MV, Предметные фильтры (Тэг)$(br)$(thing)Формула$(): Be₃Al₂Si₆O₁₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Бериллий",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/beryllium"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Используется для$(): Эндер-жемчуг$(br)$(thing)Формула$(): Be$(br)$(thing)Ядовит$(): $(c)$(t:Requires Rubber Gloves)Berylliosis (Skin Contact)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Реальгар",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/realgar"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Хромит$(): Мышьяк$(br)$(thing)Формула$(): As₄S₄$(br)$(thing)Ядовит$(): $(c)$(t:Requires Face Mask)Arsenicosis (Inhalation)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 135$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 80 — 180$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Касситерит",
+      "type": "patchouli:text",
+      "anchor": "surface_cassiterite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Касситерит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cassiterite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 55%$(br)$(thing)Плавится в$(): Олово$(br)$(thing)Формула$(): SnO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Олово",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tin"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Плавится в$(): Олово$(br)$(thing)Формула$(): Sn",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Селитра",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/saltpeter"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Хромит$(): Калий, Азот$(br)$(thing)Формула$(): KNO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 230$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 42$(br)$(thing)Индикатор Max Depth$(): 15$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Базальт, Габбро, Известняк, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Марганец и Тантал",
+      "type": "patchouli:text",
+      "anchor": "mars_tantalite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гроссуляр",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/grossular"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 37%$(br)$(thing)Хромит$(): Кальций, Алюминий$(br)$(thing)Формула$(): Ca₃Al₂Si₃O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Спасерит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/spessartine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Хромит$(): Марганец, Алюминий$(br)$(thing)Формула$(): Al₂Mn₃Si₃O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Пиролюзит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrolusite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Хромит$(): Марганец$(br)$(thing)Формула$(): MnO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Танталит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tantalite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 12%$(br)$(thing)Хромит$(): Марганец, Тантал$(br)$(thing)Формула$(): MnTa₂O₆",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 220$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 50$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Базальт, Дацит, Доломит, Известняк, Конгломерат, Сланец, Трахит",
+      "title": "Медь и Халькопирит",
+      "type": "patchouli:text",
+      "anchor": "mars_copper"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Халькопирит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcopyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 65%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): CuFeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородная Медь",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/copper"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): Cu",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Пирит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 215$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 50$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Кремнистый сланец, Мел, Сланец",
+      "title": "Серебро, Галена и Свинец",
+      "type": "patchouli:text",
+      "anchor": "mars_galena"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Галена",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/galena"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 40%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): PbS$(br)$(thing)Ядовит$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Свинец",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lead"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 33%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): Pb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородная Серебро",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Плавится в$(): Серебро$(br)$(thing)Формула$(): Ag",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 6%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 215$(br)$(thing)Плотность$(): 0.2$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 30$(br2)$(thing)Виды камней$(): Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Кремнистый сланец, Мел, Трахит",
+      "title": "Сфалерит & Пирит",
+      "type": "patchouli:text",
+      "anchor": "mars_sulfur"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Пирит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 42%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сфалерит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sphalerite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 23%$(br)$(thing)Плавится в$(): Цинк$(br)$(thing)Формула$(): ZnS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 19%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сера",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 14%$(br)$(thing)Хромит$(): Сера$(br)$(thing)Формула$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 210$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 40$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Базальт, Габбро, Дацит, Диорит, Доломит, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Тетраэдрит (обычный)",
+      "type": "patchouli:text",
+      "anchor": "mars_stibnite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Тетраэдрит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tetrahedrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 47%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): Cu₃SbS₃Fe",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородная Медь",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/copper"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 28%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): Cu",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Стибнит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/stibnite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 19%$(br)$(thing)Плавится в$(): Сурьма$(br)$(thing)Формула$(): Sb₂S₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 4%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 140$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 80 — 180$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Тетраэдрит (Поверхностный)",
+      "type": "patchouli:text",
+      "anchor": "surface_tetrahedrite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Тетраэдрит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tetrahedrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 57%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): Cu₃SbS₃Fe",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородная Медь",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/copper"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 19%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): Cu",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Стибнит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/stibnite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 19%$(br)$(thing)Плавится в$(): Сурьма$(br)$(thing)Формула$(): Sb₂S₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Редстоун",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/redstone"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 4%$(br)$(thing)Плавится в$(): Редстоун$(br)$(thing)Формула$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 280$(br)$(thing)Плотность$(): 0.45$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 50$(br)$(thing)Индикатор Max Depth$(): 15$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Базальт, Доломит, Известняк, Кремнистый сланец, Мел, Сланец",
+      "title": "Шеелит и Вольфрамат",
+      "type": "patchouli:text",
+      "anchor": "mars_tungsten"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Шеелит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/scheelite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 42%$(br)$(thing)Хромит$(): Вольфрам$(br)$(thing)Формула$(): Ca(WO₃)O",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Вольфрамат",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tungstate"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 33%$(br)$(thing)Хромит$(): Вольфрам, Литий$(br)$(thing)Формула$(): Li₂(WO₃)O",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Литий",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lithium"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 19%$(br)$(thing)Хромит$(): Литий$(br)$(thing)Формула$(): Li",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 4%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     }
   ],
   "sortnum": 7

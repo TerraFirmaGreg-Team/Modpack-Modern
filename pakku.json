@@ -158,9 +158,6 @@
         "first-person-model": {
             "side": "CLIENT"
         },
-        "ftb-backups-2": {
-            "side": "BOTH"
-        },
         "no-report-button": {
             "side": "CLIENT"
         },
@@ -243,7 +240,7 @@
             "side": "BOTH"
         },
         "pick-up-notifier": {
-            "side": "BOTH"
+            "side": "CLIENT"
         },
         "inventory-tweaks-refoxed": {
             "side": "BOTH"
@@ -254,7 +251,36 @@
         "detected-setblock-be-gone": {
             "side": "BOTH"
         },
+        "ftb-backups-2": {
+            "side": "BOTH",
+            "export": false
+        },
+        "ftb-chunks-forge": {
+            "export": false
+        },
+        "ftb-essentials": {
+            "export": false
+        },
+        "ftb-filter-system": {
+            "export": false
+        },
+        "ftb-library-forge": {
+            "export": false
+        },
+        "ftb-quests-forge": {
+            "export": false
+        },
+        "ftb-ranks-forge": {
+            "export": false
+        },
+        "ftb-teams-forge": {
+            "export": false
+        },
+        "ftb-xmod-compat": {
+            "export": false
+        },
         "probejs": {
+            "side": "CLIENT",
             "export": false
         }
     }

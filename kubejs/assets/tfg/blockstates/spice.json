@@ -1,0 +1,21 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "species:block/red_suspicious_sand_0"
+			},
+			{
+				"model": "species:block/red_suspicious_sand_1"
+			},
+			{
+				"model": "species:block/red_suspicious_sand_2"
+			},
+			{
+				"model": "species:block/red_suspicious_sand_3"
+			},
+			{
+				"model": "tfg:block/sand_spice"
+			}
+		]
+	}
+}

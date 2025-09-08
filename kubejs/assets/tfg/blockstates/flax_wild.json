@@ -1,0 +1,16 @@
+{
+	"variants": {
+		"part=top,mature=true": {
+			"model": "tfg:block/crop/flax_wild_top"
+		},
+		"part=top,mature=false": {
+			"model": "tfg:block/crop/flax_dead_top"
+		},
+		"part=bottom,mature=true": {
+			"model": "tfg:block/crop/flax_wild_bottom"
+		},
+		"part=bottom,mature=false": {
+			"model": "tfg:block/crop/flax_dead_bottom"
+		}
+	}
+}

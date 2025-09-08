@@ -1,0 +1,37 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "betterend:block/lacugrove_leaves",
+		"layer0": "betterend:block/lacugrove_leaves"
+	},
+	"elements": [
+		{
+			"from": [ -0.02, 0.05, -0.02 ],
+			"to": [ 16.02, 0.05, 16.02 ],
+			"faces": {
+				"up": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#layer0"
+				},
+				"down": {
+					"uv": [ 0, 16, 16, 0 ],
+					"texture": "#layer0"
+				}
+			}
+		},
+		{
+			"from": [ 1, 1, 1 ],
+			"to": [ 15, 1, 15 ],
+			"faces": {
+				"up": {
+					"uv": [ 16, 16, 0, 0 ],
+					"texture": "#layer0"
+				},
+				"down": {
+					"uv": [ 16, 0, 0, 16 ],
+					"texture": "#layer0"
+				}
+			}
+		}
+	]
+}

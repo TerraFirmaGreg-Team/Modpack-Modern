@@ -52,21 +52,33 @@ function registerTFGNetherBlocks(event) {
 
 	// Spikes
 	event.create('tfg:spike/dripstone_spike', 'tfc:rock_spike')
+		.textureAll('minecraft:block/dripstone_block')
 		.soundType('dripstone_block')
 		.tagBoth('tfc:sedimentary_items')
-		.noItem()
+		.hardness(0.8)
+		.resistance(0.8)
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
 
 	event.create('tfg:spike/deepslate_spike', 'tfc:rock_spike')
+		.textureAll('minecraft:block/deepslate')
 		.soundType('deepslate')
 		.tagBoth('tfc:metamorphic_items')
-		.noItem()
+		.hardness(0.8)
+		.resistance(0.8)
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
 
 	event.create('tfg:spike/blackstone_spike', 'tfc:rock_spike')
+		.textureAll('minecraft:block/blackstone')
 		.stoneSoundType()
 		.tagBoth('tfc:igneous_intrusive_items')
-		.noItem()
-	
-	// Loose rocks
+		.hardness(0.8)
+		.resistance(0.8)
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
+
+  // Loose rocks
 	event.create('tfg:loose/deepslate', 'tfc:loose_rock')
 		.itemTexture('tfg:item/loose/deepslate')
 		.rockTypeModel('metamorphic')

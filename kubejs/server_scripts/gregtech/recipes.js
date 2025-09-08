@@ -993,6 +993,8 @@ const registerGTCEURecipes = (event) => {
 
 	event.replaceInput({ mod: 'gtceu' }, 'minecraft:sugar', '#tfg:sugars')
 	event.replaceInput({ mod: 'gtceu' }, 'minecraft:string', '#forge:string')
+
+	event.replaceInput({ id: 'gtceu:shaped/blacklight' }, 'gtceu:tungsten_carbide_screw', '#tfg:components/uv_leds')
 	
 	event.recipes.gtceu.fluid_solidifier('tfg:solidify_glue')
 		.inputFluids(Fluid.of('gtceu:glue', 50))
@@ -1171,6 +1173,8 @@ const registerGTCEURecipes = (event) => {
 
 
 	//#region GT Facades
+	event.remove({ id: 'gtceu:crafting/facade_cover'})
+	
 	event.shapeless(Item.of('gtceu:facade_cover', 8, '{Facade: {Count:1b,id:"minecraft:stone"}}'), ['3x #forge:plates/iron', "#tfg:whitelisted/facades"])
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id

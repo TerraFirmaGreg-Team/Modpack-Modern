@@ -1035,6 +1035,8 @@ global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS = [
     { input: '8x tfc:seeds/yellow_bell_pepper', fluid_amount: 4000, output: '24x tfc:food/yellow_bell_pepper', name: 'yellow_bell_pepper' },
     { input: '8x tfg:sunflower_seeds', fluid_amount: 4000, output: '24x tfg:sunflower_product', name: 'sunflower' },
     { input: '8x tfg:rapeseed_seeds', fluid_amount: 4000, output: '24x tfg:rapeseed_product', name: 'rapeseed' },
+	{ input: '8x tfg:flax_seeds', fluid_amount: 4000, output: '24x tfg:flax_product', name: 'flax' }
+
 ];
 
 global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS = [

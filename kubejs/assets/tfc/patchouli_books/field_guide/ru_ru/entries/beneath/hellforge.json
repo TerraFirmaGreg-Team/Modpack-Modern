@@ -1,0 +1,50 @@
+{
+	"name": "Адская кузня",
+	"category": "tfc:beneath",
+	"icon": "beneath:cursecoal",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Адская кузня$() — это чрезвычайно большая кузница с очень большой вместимостью топлива и ресурсов, а так же нагрева. В ее постройке используются адские кирпичи, антрацит и пироксенитовые акведуки."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"ZXXXZ",
+						"XYYYX",
+						"XY0YX",
+						"XYYYX",
+						"ZXXXZ"
+					],
+					[
+						"     ",
+						" XXX ",
+						" XXX ",
+						" XXX ",
+						"     "
+					]
+				],
+				"mapping": {
+					"Z": "beneath:blackstone_aqueduct[fluid=lava]",
+					"Y": "beneath:hellforge_side",
+					"0": "beneath:hellforge",
+					"X": "beneath:hellbricks"
+				}
+			},
+			"name": "Hellforge",
+			"text": "",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Адская кузня требует, чтобы в крайних акведуках была текучая лава, а также был поставлен 21 блок адского кирпича. Центр 3x3 должен быть заполнен кучками $(l:beneath/ores_and_minerals#cursecoal)Антрацита$(), которые затем можно поджечь, чтобы запустить кузню."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "В Адской кузне может находиться как топливо, так и предметы для плавки - различий нет. Поэтому будьте внимательны и смотрите что помещаете внутрь! Также справа имеются слоты для контейнеров, как в $(l:tfc:mechanics/charcoal_forge)угольной кузнице$(). Чем ярче разгорается кузня и чем быстрее движутся предметы в ней - тем жарче."
+		}
+	],
+	"read_by_default": true
+}

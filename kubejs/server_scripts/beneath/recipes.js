@@ -108,7 +108,7 @@ const registerBeneathRecipes = (event) => {
 		'D D'
 	], {
 		A: '#forge:leather',
-		B: '#forge:shears',
+		B: '#forge:tools/knives',
 		C: 'beneath:wood/planks/crimson',
 		D: 'beneath:wood/log/crimson'
 	}).id('tfg:shaped/crimson_sewing_table')
@@ -138,7 +138,7 @@ const registerBeneathRecipes = (event) => {
 		'D D'
 	], {
 		A: '#forge:leather',
-		B: '#forge:shears',
+		B: '#forge:tools/knives',
 		C: 'beneath:wood/planks/warped',
 		D: 'beneath:wood/log/warped'
 	}).id('tfg:shaped/warped_sewing_table')

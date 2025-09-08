@@ -42,9 +42,16 @@ const registerBeneathItemTags = (event) => {
 	event.add('forge:mushrooms', '#beneath:mushrooms')
 	
 	event.remove('beneath:sparks_on_sulfur')
+
+	event.add('tfc:firepit_kindling', 'beneath:crimson_straw')
+	event.add('tfc:firepit_kindling', 'beneath:warped_straw')
+	event.add('tfc:pit_kiln_straw', 'beneath:crimson_straw')
+	event.add('tfc:pit_kiln_straw', 'beneath:warped_straw')
 	
 	event.remove('minecraft:leaves', 'beneath:wood/leaves/crimson')
 	event.remove('minecraft:leaves', 'beneath:wood/leaves/warped')
 	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/crimson')
 	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/warped')
+	event.add('tfc:sewing_tables', 'beneath:wood/sewing_table/crimson')
+	event.add('tfc:sewing_tables', 'beneath:wood/sewing_table/warped')
 }
