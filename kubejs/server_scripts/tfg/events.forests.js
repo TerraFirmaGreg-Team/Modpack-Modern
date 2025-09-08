@@ -141,46 +141,6 @@ TFCEvents.worldgenData(event => {
 		placement => {}
 	)
 
-	event.forestEntry('tfg:mars/cave_bush_forest_entry',
-		climate => {
-			climate.minRain(-5)
-			climate.minForest('edge')
-			climate.fuzzy(true)
-		},
-		'beneath:wood/stripped_wood/crimson',
-		'betterend:cave_bush',
-		null,
-		null,
-		[
-			'betterend:cave_bush_fallen',
-		],
-		'tfg:mars/tree/cave_bush',
-		'tfg:mars/tree/cave_bush', 
-		'tfg:mars/tree/cave_bush',
-		null, null, null, null, null, null,
-		placement => {}
-	)
-
-	event.forestEntry('tfg:mars/lucernia_forest_entry',
-		climate => {
-			climate.maxRain(-7)
-			climate.minForest('edge')
-			climate.fuzzy(true)
-		},
-		'beneath:wood/stripped_wood/warped',
-		'betterend:lucernia_leaves',
-		null,
-		null,
-		[
-			'betterend:lucernia_leaves_fallen',
-		],
-		'tfg:mars/tree/lucernia',
-		'tfg:mars/tree/lucernia', 
-		'tfg:mars/tree/lucernia',
-		null, null, null, null, null, null,
-		placement => {}
-	)
-
 	// TODO: glacian
 })
 
@@ -190,6 +150,4 @@ function registerTFGForestConfiguredFeatures(event) {
 	event.add('tfg:mars_forest_entries', 'tfg:mars/aeronos_forest_entry')
 	event.add('tfg:mars_forest_entries', 'tfg:mars/strophar_forest_entry')
 	event.add('tfg:mars_forest_entries', 'tfg:mars/alphacene_forest_entry')
-	event.add('tfg:mars_forest_entries', 'tfg:mars/cave_bush_forest_entry')
-	event.add('tfg:mars_forest_entries', 'tfg:mars/lucernia_forest_entry')
 }
