@@ -168,6 +168,7 @@ global.FOOD_FRUIT = [
 ];
 
 /** @type {Hammering[]} */
+global.HAMMERING = [
 		// Beneath
 		{ raw: 'minecraft:deepslate', hammered: 'minecraft:cobbled_deepslate', duration: 10, eu: 16 },
 		{ raw: 'tfg:rock/hardened_deepslate', hammered: 'minecraft:cobbled_deepslate', duration: 10, eu: 16 },
