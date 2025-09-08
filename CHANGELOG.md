@@ -20,6 +20,7 @@
 - Automatic backups now happen hourly instead of daily (#1705) @Pyritie @Xikaro
 - Advanced Peripherals' Redstone Integrator has been deprecated in favour of ComputerCraft's Redstone Relay (#1737) @Pyritie
 - Speed up recipes for turning blocks into sand (#1720) @TomPlop
+- Added a recipe for turning bone meal into white dye (#1757) @Pyritie
 ### Bug fixes
 - Fixed tongs getting stuck in ovens, and now you can use them the same way you'd previously use a Peel @Pyritie
 - Allowed powders, gears, plates, double plates, springs, and small springs to be heated (#1727) @Redeix
