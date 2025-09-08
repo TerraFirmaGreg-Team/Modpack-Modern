@@ -33,6 +33,7 @@
 - Fixed missing item in quartz sand centrifuging (#1717) @Pyritie
 - Popped chorus fruit is now edible (#1722) @programmer3481
 - Fixed missing sheet pile texture for cobalt, cobalt brass, aluminium silicate, invar, lead, red alloy, and tin alloy (#1713) @Pyritie
+- Fixed missing collapse tags for smooth stone (#1732) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn & @CN059
 - Russian @Dl, @Kostabl, @Turikar42, & @But3r
