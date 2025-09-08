@@ -1,6 +1,10 @@
 # Changelog
 
 ## [Unreleased]
+### Changes
+### Bug fixes
+
+## [0.10.11] - 08-09-2025
 ### Mods
 - Reverted the change from Embeddium to Xenon, because it was causing more issues than it solved
 - Added Sacks 'n' Such which has several new early game bags -- such as one that automatically picks up ore and can hold 512 per slot -- as well as some other things such as hiking boots and horseshoes
