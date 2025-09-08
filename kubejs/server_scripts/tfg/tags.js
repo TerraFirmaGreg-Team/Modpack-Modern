@@ -1,4 +1,4 @@
-"use strict";
+﻿"use strict";
 
 const registerTFGItemTags = (event) => {
 
@@ -335,7 +335,7 @@ const registerTFGItemTags = (event) => {
 	event.add('minecraft:mineable/shovel', 'tfg:grass/sangnum_mycelium')
 	// #endregion
 
-	 // Mars stone dust
+	// Mars stone dust
 
 	event.add('forge:mars_stone_dusts', 'tfg:venus_stone_dust')
 	event.add('forge:mars_stone_dusts', 'gtceu:granite_red_dust')
@@ -355,9 +355,41 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:glacian_ram_food', '#tfg:martian_animal_foods')
 	event.add('tfg:sniffer_food', '#tfg:martian_animal_foods')
 	event.add('tfg:wraptor_food', '#tfg:martian_animal_foods')
-	
 	//#endregion
-
+		
+	//#region Пыли стоунтайпов в один тэг
+	event.add('tfg:stone_dusts', 'tfg:gabbro_dust')
+	event.add('tfg:stone_dusts', 'tfg:shale_dust')
+	event.add('tfg:stone_dusts', 'tfg:claystone_dust')
+	event.add('tfg:stone_dusts', 'tfg:limestone_dust')
+	event.add('tfg:stone_dusts', 'tfg:conglomerate_dust')
+	event.add('tfg:stone_dusts', 'tfg:dolomite_dust')
+	event.add('tfg:stone_dusts', 'tfg:chert_dust')
+	event.add('tfg:stone_dusts', 'tfg:chalk_dust')
+	event.add('tfg:stone_dusts', 'tfg:rhyolite_dust')
+	event.add('tfg:stone_dusts', 'tfg:dacite_dust')
+	event.add('tfg:stone_dusts', 'gtceu:quartzite_dust')
+	event.add('tfg:stone_dusts', 'tfg:slate_dust')
+	event.add('tfg:stone_dusts', 'tfg:phyllite_dust')
+	event.add('tfg:stone_dusts', 'tfg:schist_dust')
+	event.add('tfg:stone_dusts', 'tfg:gneiss_dust')
+	event.add('tfg:stone_dusts', 'gtceu:marble_dust')
+	event.add('tfg:stone_dusts', 'gtceu:basalt_dust')
+	event.add('tfg:stone_dusts', 'gtceu:diorite_dust')
+	event.add('tfg:stone_dusts', 'gtceu:andesite_dust')
+	event.add('tfg:stone_dusts', 'gtceu:granite_dust')
+	event.add('tfg:stone_dusts', 'gtceu:deepslate_dust')
+	event.add('tfg:stone_dusts', 'gtceu:blackstone_dust')
+	event.add('tfg:stone_dusts', 'tfg:dripstone_dust')
+	event.add('tfg:stone_dusts', 'tfg:moon_stone_dust')
+	event.add('tfg:stone_dusts', 'tfg:moon_deepslate_dust')
+	event.add('tfg:stone_dusts', 'tfg:mars_stone_dust')
+	event.add('tfg:stone_dusts', 'tfg:venus_stone_dust')
+	event.add('tfg:stone_dusts', 'tfg:mercury_stone_dust')
+	event.add('tfg:stone_dusts', 'tfg:glacio_stone_dust')
+	event.add('tfg:stone_dusts', 'gtceu:stone_dust')
+	event.add('tfg:stone_dusts', 'gtceu:red_granite_dust')
+	//#endregion
 
 	// #region 0.7.19 -> 0.9 conversion
 	event.add('c:hidden_from_recipe_viewers', 'treetap:tap')
