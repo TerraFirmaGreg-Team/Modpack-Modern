@@ -10,7 +10,7 @@ function registerComputerCraftRecyclingRecipes(event) {
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Aluminium, 5),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.BatteryAlloy, 6),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.MagnesiumDiboride, 1)
-	)
+		)
 		.duration(GTMaterials.Aluminium.getMass() * 5)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -33,7 +33,7 @@ function registerComputerCraftRecyclingRecipes(event) {
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.StainlessSteel, 4),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.BatteryAlloy, 8),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.MercuryBariumCalciumCuprate, 1)
-	)
+		)
 		.duration(GTMaterials.StainlessSteel.getMass() * 4)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -57,7 +57,7 @@ function registerComputerCraftRecyclingRecipes(event) {
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.BatteryAlloy, 6),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 12),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Aluminium, 4)
-	)
+		)
 		.duration(GTMaterials.StainlessSteel.getMass() * 20)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -82,7 +82,7 @@ function registerComputerCraftRecyclingRecipes(event) {
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Aluminium, 15),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.BatteryAlloy, 9),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.StainlessSteel, 4)
-	)
+		)
 		.duration(GTMaterials.Titanium.getMass() * 20)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -94,7 +94,7 @@ function registerComputerCraftRecyclingRecipes(event) {
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Aluminium, 15),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.BatteryAlloy, 9),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.StainlessSteel, 4)
-	)
+		)
 		.duration(GTMaterials.Titanium.getMass() * 20)
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -107,7 +107,7 @@ function registerComputerCraftRecyclingRecipes(event) {
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Chromium, 2),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.BatteryAlloy, 4),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Platinum, 2)
-	)
+		)
 		.duration(GTMaterials.Titanium.getMass() * 9)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -119,7 +119,7 @@ function registerComputerCraftRecyclingRecipes(event) {
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Chromium, 2),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.BatteryAlloy, 4),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Platinum, 2)
-	)
+		)
 		.duration(GTMaterials.Titanium.getMass() * 9)
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -131,7 +131,7 @@ function registerComputerCraftRecyclingRecipes(event) {
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Titanium, 9),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 1),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Platinum, 2)
-	)
+		)
 		.duration(GTMaterials.Titanium.getMass() * 9)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -142,7 +142,7 @@ function registerComputerCraftRecyclingRecipes(event) {
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Titanium, 9),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 1),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Platinum, 2)
-	)
+		)
 		.duration(GTMaterials.Titanium.getMass() * 9)
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -152,7 +152,7 @@ function registerComputerCraftRecyclingRecipes(event) {
 		.itemInputs('computercraft:monitor_normal')
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Aluminium, 5)
-	)
+		)
 		.duration(GTMaterials.Aluminium.getMass() * 5)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -161,7 +161,7 @@ function registerComputerCraftRecyclingRecipes(event) {
 		.itemInputs('computercraft:monitor_normal')
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Aluminium, 5)
-	)
+		)
 		.duration(GTMaterials.Aluminium.getMass() * 5)
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -171,7 +171,7 @@ function registerComputerCraftRecyclingRecipes(event) {
 		.itemInputs('computercraft:monitor_advanced')
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.StainlessSteel, 4)
-	)
+		)
 		.duration(GTMaterials.StainlessSteel.getMass() * 4)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -180,7 +180,7 @@ function registerComputerCraftRecyclingRecipes(event) {
 		.itemInputs('computercraft:monitor_advanced')
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.StainlessSteel, 4)
-	)
+		)
 		.duration(GTMaterials.StainlessSteel.getMass() * 4)
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -193,7 +193,7 @@ function registerComputerCraftRecyclingRecipes(event) {
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Cupronickel, 15),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 2),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Copper, 6)
-	)
+		)
 		.duration(GTMaterials.Aluminium.getMass() * 15)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -205,7 +205,7 @@ function registerComputerCraftRecyclingRecipes(event) {
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Cupronickel, 15),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 2),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Copper, 6)
-	)
+		)
 		.duration(GTMaterials.Aluminium.getMass() * 15)
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -217,7 +217,7 @@ function registerComputerCraftRecyclingRecipes(event) {
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.StainlessSteel, 6),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Titanium, 1),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 1)
-	)
+		)
 		.duration(GTMaterials.StainlessSteel.getMass() * 6)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -228,8 +228,32 @@ function registerComputerCraftRecyclingRecipes(event) {
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.StainlessSteel, 6),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Titanium, 1),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 1)
-	)
+		)
 		.duration(GTMaterials.StainlessSteel.getMass() * 6)
+		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+		.EUt(GTValues.VA[GTValues.LV])
+
+
+	// Redstone Relay
+	event.recipes.gtceu.macerator('computercraft:macerator/recycling/redstone_relay')
+		.itemInputs('computercraft:redstone_relay')
+		.itemOutputs(
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.RedAlloy, 6),
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Brass, 5),
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Aluminium, 4)
+		)
+		.duration(GTMaterials.RedAlloy.getMass() * 6)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.arc_furnace('computercraft:arc_furnace/recycling/redstone_relay')
+		.itemInputs('computercraft:redstone_relay')
+		.itemOutputs(
+			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.RedAlloy, 6),
+			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Brass, 5),
+			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Aluminium, 4)
+		)
+		.duration(GTMaterials.RedAlloy.getMass() * 6)
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
 }

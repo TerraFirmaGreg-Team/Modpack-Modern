@@ -8,6 +8,9 @@ global.ADVANCED_PERIPHERALS_DISABLED_ITEMS = [
     'advancedperipherals:colony_integrator', 
     'advancedperipherals:computer_tool',
 
+    // deprecated in favour of CC's redstone relay
+    'advancedperipherals:redstone_integrator',
+
     // banned for trans-dimensional travel
     'advancedperipherals:overpowered_end_automata_core',
     // banned for offline chunk loading (bad for server performance)

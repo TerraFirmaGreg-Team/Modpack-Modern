@@ -17,6 +17,7 @@
 - Added the ability for foods to affect the player's temperature @BlueBoat29
 - EMI Batched rendering has been disabled by default. @TomPlop
 - Automatic backups now happen hourly instead of daily (#1705) @Pyritie @Xikaro
+- Advanced Peripherals' Redstone Integrator has been deprecated in favour of ComputerCraft's Redstone Relay (#1737) @Pyritie
 ### Bug fixes
 - Fixed tongs getting stuck in ovens, and now you can use them the same way you'd previously use a Peel @Pyritie
 - Allowed powders, gears, plates, double plates, springs, and small springs to be heated (#1727) @Redeix
