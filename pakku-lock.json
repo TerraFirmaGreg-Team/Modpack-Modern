@@ -13747,7 +13747,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.14.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.15.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13756,23 +13756,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/G0w8issU/TerraFirmaGreg-Core-Modern-0.7.14.jar",
-                    "id": "G0w8issU",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/ZyDcPsIB/TerraFirmaGreg-Core-Modern-0.7.15.jar",
+                    "id": "ZyDcPsIB",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "c78515626c06c33424dd216465dd3b4fe6fbddd44c075cf8212d1c4d0b175aee8833950943952af5a3c3755dd70eff2ce4e1c9c8d1f89b1dcd613bb38cb63da7",
-                        "sha1": "238656d34a911f01b848ff8ae308532c8326a291"
+                        "sha512": "a14c88f3d2adf08d90f7673738952b175c47e27ad35a1d25cf3ad79a7d1d26a26e3c8e49a8398216770e2e00502fe67a0898da97e69cd8745bd6f89ebf6bf215",
+                        "sha1": "2052273da069c570e006185a0e0c3caa353498fc"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "JaCEZUhg"
                     ],
-                    "size": 643691,
-                    "date_published": "2025-09-09T11:15:57.654695Z"
+                    "size": 643710,
+                    "date_published": "2025-09-09T13:12:40.003997Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.14.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.15.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13781,19 +13781,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6979/344/TerraFirmaGreg-Core-Modern-0.7.14.jar",
-                    "id": "6979344",
+                    "url": "https://edge.forgecdn.net/files/6979/603/TerraFirmaGreg-Core-Modern-0.7.15.jar",
+                    "id": "6979603",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "238656d34a911f01b848ff8ae308532c8326a291",
-                        "md5": "9ff7cdabfc85bbc5d129857a61fd6cc5"
+                        "sha1": "2052273da069c570e006185a0e0c3caa353498fc",
+                        "md5": "4f84db916fb45f8648179c6dfb05ca3a"
                     },
                     "required_dependencies": [
-                        "302973",
-                        "890405"
+                        "890405",
+                        "302973"
                     ],
-                    "size": 643691,
-                    "date_published": "2025-09-09T11:15:55.350Z"
+                    "size": 643710,
+                    "date_published": "2025-09-09T13:12:37.720Z"
                 }
             ]
         },
