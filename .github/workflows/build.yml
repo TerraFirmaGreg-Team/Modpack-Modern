@@ -445,6 +445,7 @@ jobs:
             ${{ steps.format_diff.outputs.text }}
           files: |
             ${{ needs.info.outputs.project_full_name }}-curseforge.zip
+            ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
             ${{ needs.info.outputs.project_full_name }}-serverpack.zip
             ${{ needs.info.outputs.project_full_name }}-multimc.zip
           prerelease: ${{ needs.info.outputs.release_type != 'release' }}
