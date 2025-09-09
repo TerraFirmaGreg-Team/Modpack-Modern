@@ -100,10 +100,8 @@ const registerAdAstraRecipes = (event) => {
 	//#endregion
 
 
-	//region tier 2 rocket DISABLED UNTIL EV
-	
-	event.remove({ mod: 'gtceu', input: 'gtceu:hot_rocket_alloy_t2_ingot' })
-/*
+	//region tier 2 rocket
+
 	event.recipes.gtceu.mixer('tfg:rocket_alloy_t2')
 		.itemInputs('19x #forge:dusts/titanium', '3x #forge:small_dusts/chromium', '3x #forge:small_dusts/tin', '3x #forge:small_dusts/aluminium')
 		.inputFluids(Fluid.of('gtceu:vanadium', 540))
@@ -163,7 +161,7 @@ const registerAdAstraRecipes = (event) => {
 		.duration(1440)
 		.circuit(3)
 		.EUt(GTValues.VA[GTValues.EV])
-*/
+
 	//#endregion
 
 	//region Tier 3 DISABLED UNTIL IV

@@ -1166,8 +1166,6 @@ function registerGTCEuMachineRecipes(event) {
 
 	// Multiblock
 
-	/* LOCKED UNTIL VENUS
-
 	event.shaped(
 		'gtceu:extraterrestrial_ore_fabricator',
 		[	'USU',
@@ -1182,8 +1180,6 @@ function registerGTCEuMachineRecipes(event) {
 			P: 'gtceu:iv_electric_pump'
 		}
 	).id('gtceu:shaped/extraterrestrial_ore_fabricator')
-
-	*/
 
 	event.recipes.gtceu.assembler('tfg:ostrum_harvester')
 		.itemInputs(
@@ -1258,9 +1254,7 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#endregion
 
-	//#region Nuclear Controler - LOCKED UNTIL MARS
-
-	/*
+	//#region Nuclear Controler
 
 	event.shaped(
 		'gtceu:fission_reactor',
@@ -1302,7 +1296,5 @@ function registerGTCEuMachineRecipes(event) {
 			B: 'gtceu:ev_fluid_regulator'
 		}
 	).id('tfg:shaped/heat_exchanger')
-
-	*/
 
 }
