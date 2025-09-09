@@ -85,6 +85,9 @@ function registerTFGMedicineRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Arrow
+	event.shapeless(Item.of('8x minecraft:tipped_arrow', '{Potion:"minecraft:poison"}'),
+		['4x minecraft:arrow', 'tfg:poison_pill', '4x minecraft:arrow'])
+
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/arrow/poison_1`)
 		.circuit(4)
 		.inputFluids(Fluid.of('gtceu:ethanol', 25))
@@ -141,6 +144,9 @@ function registerTFGMedicineRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Arrow
+	event.shapeless(Item.of('8x minecraft:tipped_arrow', '{Potion:"minecraft:regeneration"}'),
+		['4x minecraft:arrow', 'tfg:regeneration_pill', '4x minecraft:arrow'])
+
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/arrow/regeneration_1`)
 		.circuit(4)
 		.inputFluids(Fluid.of('gtceu:ethanol', 25))
@@ -197,6 +203,9 @@ function registerTFGMedicineRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Arrow
+	event.shapeless(Item.of('8x minecraft:tipped_arrow', '{Potion:"minecraft:swiftness"}'),
+		['4x minecraft:arrow', 'tfg:speed_pill', '4x minecraft:arrow'])
+
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/arrow/swiftness_1`)
 		.circuit(4)
 		.inputFluids(Fluid.of('gtceu:ethanol', 25))
@@ -253,6 +262,9 @@ function registerTFGMedicineRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Arrow
+	event.shapeless(Item.of('8x minecraft:tipped_arrow', '{Potion:"minecraft:slowness"}'),
+		['4x minecraft:arrow', 'tfg:slowness_pill', '4x minecraft:arrow'])
+
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/arrow/slowness_1`)
 		.circuit(4)
 		.inputFluids(Fluid.of('gtceu:ethanol', 25))
@@ -309,6 +321,9 @@ function registerTFGMedicineRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Arrow
+	event.shapeless(Item.of('8x minecraft:tipped_arrow', '{Potion:"minecraft:weakness"}'),
+		['4x minecraft:arrow', 'tfg:weakness_pill', '4x minecraft:arrow'])
+
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/arrow/weakness_1`)
 		.circuit(4)
 		.inputFluids(Fluid.of('gtceu:ethanol', 25))
@@ -405,6 +420,9 @@ function registerTFGMedicineRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Arrow
+	event.shapeless(Item.of('8x minecraft:tipped_arrow', '{Potion:"minecraft:water_breathing"}'),
+		['4x minecraft:arrow', 'tfg:water_breathing_pill', '4x minecraft:arrow'])
+
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/arrow/water_breathing_1`)
 		.circuit(4)
 		.inputFluids(Fluid.of('gtceu:ethanol', 25))
@@ -461,6 +479,9 @@ function registerTFGMedicineRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Arrow
+	event.shapeless(Item.of('8x minecraft:tipped_arrow', '{Potion:"minecraft:night_vision"}'),
+		['4x minecraft:arrow', 'tfg:night_vision_pill', '4x minecraft:arrow'])
+
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/arrow/night_vision_1`)
 		.circuit(4)
 		.inputFluids(Fluid.of('gtceu:ethanol', 25))
