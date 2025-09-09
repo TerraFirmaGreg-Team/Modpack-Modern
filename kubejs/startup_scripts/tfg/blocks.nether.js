@@ -113,9 +113,31 @@ function registerTFGNetherBlocks(event) {
 		.tagItem("rnr:loose_rock_items")
 	
 	// Cobblestones
+	
+	event.create('tfg:rock/mossy_cobble_deepslate')
+		.soundType('stone')
+		.tagBoth('forge:cobblestone')
+		.tagBoth('forge:cobblestone/normal')
+		.tagBoth('tfc:metamorphic')
+		.mapColor('terracotta_grey')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfc:can_landslide')
+		.fullBlock(true)
+		.opaque(true)
+	
 	event.create('tfg:rock/cobble_blackstone')
 		.soundType('stone')
-		.model('tfg:block/rock/cobble_blackstone')
+		.tagBoth('forge:cobblestone')
+		.tagBoth('forge:cobblestone/normal')
+		.tagBoth('tfc:igneous_intrusive_items')
+		.mapColor('color_black')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfc:can_landslide')
+		.fullBlock(true)
+		.opaque(true)
+	
+	event.create('tfg:rock/mossy_cobble_blackstone')
+		.soundType('stone')
 		.tagBoth('forge:cobblestone')
 		.tagBoth('forge:cobblestone/normal')
 		.tagBoth('tfc:igneous_intrusive_items')
@@ -127,7 +149,17 @@ function registerTFGNetherBlocks(event) {
 	
 	event.create('tfg:rock/cobble_dripstone')
 		.soundType('dripstone_block')
-		.model('tfg:block/rock/cobble_dripstone')
+		.tagBoth('forge:cobblestone')
+		.tagBoth('forge:cobblestone/normal')
+		.tagBoth('tfc:sedimentary_items')
+		.mapColor('terracotta')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfc:can_landslide')
+		.fullBlock(true)
+		.opaque(true)
+	
+	event.create('tfg:rock/mossy_cobble_dripstone')
+		.soundType('dripstone_block')
 		.tagBoth('forge:cobblestone')
 		.tagBoth('forge:cobblestone/normal')
 		.tagBoth('tfc:sedimentary_items')
@@ -139,7 +171,17 @@ function registerTFGNetherBlocks(event) {
 	
 	event.create('tfg:rock/cobble_crackrack')
 		.soundType('netherrack')
-		.model('tfg:block/rock/cobble_crackrack')
+		.tagBoth('forge:cobblestone')
+		.tagBoth('forge:cobblestone/normal')
+		.tagBoth('tfc:igneous_intrusive_items')
+		.mapColor('crimson_stem')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfc:can_landslide')
+		.fullBlock(true)
+		.opaque(true)
+	
+	event.create('tfg:rock/mossy_cobble_crackrack')
+		.soundType('netherrack')
 		.tagBoth('forge:cobblestone')
 		.tagBoth('forge:cobblestone/normal')
 		.tagBoth('tfc:igneous_intrusive_items')
@@ -153,7 +195,6 @@ function registerTFGNetherBlocks(event) {
 
 	event.create('tfg:rock/polished_crackrack')
 		.soundType('basalt')
-		.model('tfg:block/rock/polished_crackrack')
 		.tagBoth('forge:smooth_stone')
 		.tagBoth('tfc:igneous_intrusive_items')
 		.tagBoth('tfc:rock/smooth')
@@ -165,7 +206,6 @@ function registerTFGNetherBlocks(event) {
 	// Gravels
 	event.create('tfg:rock/gravel_deepslate')
 		.soundType('gravel')
-		.model('tfg:block/rock/gravel_deepslate')
 		.tagBoth('forge:gravel')
 		.tagBoth('tfc:rock/gravel')
 		.tagBoth('tfc:metamorphic_items')
@@ -177,7 +217,6 @@ function registerTFGNetherBlocks(event) {
 
 	event.create('tfg:rock/gravel_blackstone')
 		.soundType('gravel')
-		.model('tfg:block/rock/gravel_blackstone')
 		.tagBoth('forge:gravel')
 		.tagBoth('tfc:rock/gravel')
 		.tagBoth('tfc:igneous_intrusive_items')
@@ -189,7 +228,6 @@ function registerTFGNetherBlocks(event) {
 
 	event.create('tfg:rock/gravel_dripstone')
 		.soundType('gravel')
-		.model('tfg:block/rock/gravel_dripstone')
 		.tagBoth('forge:gravel')
 		.tagBoth('tfc:rock/gravel')
 		.tagBoth('tfc:sedimentary_items')
@@ -201,7 +239,6 @@ function registerTFGNetherBlocks(event) {
 	
 	event.create('tfg:rock/gravel_crackrack')
 		.soundType('gravel')
-		.model('tfg:block/rock/gravel_crackrack')
 		.tagBoth('forge:gravel')
 		.tagBoth('tfc:rock/gravel')
 		.tagBoth('tfc:igneous_intrusive_items')
