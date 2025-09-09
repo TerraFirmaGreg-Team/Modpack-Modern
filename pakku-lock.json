@@ -10824,7 +10824,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "primitive_creatures-2.0.2 -forge-1.20.1.jar",
+                    "file_name": "primitive creatures V2.0.4 1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10832,20 +10832,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/GfUwaZEm/versions/uNaRNzlu/primitive_creatures-2.0.2 -forge-1.20.1.jar",
-                    "id": "uNaRNzlu",
+                    "url": "https://cdn.modrinth.com/data/GfUwaZEm/versions/WS4cl75O/primitive creatures V2.0.4 1.20.1.jar",
+                    "id": "WS4cl75O",
                     "parent_id": "GfUwaZEm",
                     "hashes": {
-                        "sha512": "d2a385a2c11e89e653df517f364d8daf241343fbc90fa5e127d8927c42fec5f019e0d7608b1b60b77799ac63e8504fe33f2db5296b97f20a6133b3c3d96bf8fe",
-                        "sha1": "636e1df95059035e65a44102811543e7ef4d54ab"
+                        "sha512": "24066d5ac2ce72e86a8bbf11d4e860d681cc67faec01621bb368160d636c1e2121803530c3f46e829a85b4419d16fc0a4715896d11c6101f5e8ffad5a664cd6a",
+                        "sha1": "939d37037cc19b15aa8581afa513a724268858b1"
                     },
                     "required_dependencies": [],
-                    "size": 432958,
-                    "date_published": "2025-07-27T22:34:47.018170Z"
+                    "size": 501549,
+                    "date_published": "2025-08-22T19:33:48.426929Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "primitive_creatures-2.0.2 -forge-1.20.1.jar",
+                    "file_name": "primitive creatures V2.0.4 1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10853,18 +10853,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6819/208/primitive_creatures-2.0.2 -forge-1.20.1.jar",
-                    "id": "6819208",
+                    "url": "https://edge.forgecdn.net/files/6916/123/primitive creatures V2.0.4 1.20.1.jar",
+                    "id": "6916123",
                     "parent_id": "1218288",
                     "hashes": {
-                        "sha1": "636e1df95059035e65a44102811543e7ef4d54ab",
-                        "md5": "f42ff9cf3c6443df4ab473a6c54f3ed2"
+                        "sha1": "939d37037cc19b15aa8581afa513a724268858b1",
+                        "md5": "9baf3e79f190339e9df0f86bb87bf523"
                     },
                     "required_dependencies": [
                         "388172"
                     ],
-                    "size": 432958,
-                    "date_published": "2025-07-27T22:32:37.827Z"
+                    "size": 501549,
+                    "date_published": "2025-08-22T19:27:59.940Z"
                 }
             ]
         },
