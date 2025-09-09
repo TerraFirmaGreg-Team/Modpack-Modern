@@ -1335,8 +1335,8 @@ const registerGTCEURecipes = (event) => {
 	event.shapeless(Item.of('gtceu:matchbox', '{usesLeft:8}'), ['minecraft:paper', '8x gtceu:matches'])
 		.id('tfg:shapeless/matchbox')
 
-	// TODO: Nano CPU use Nuclear Tritiated Water COMMENTED UNTIL MARS IS OUT
-/*
+	// TODO: Nano CPU use Nuclear Tritiated Water
+
 	event.remove({ id: 'gtceu:chemical_reactor/nano_cpu_wafer' })
 	event.remove({ id: 'gtceu:large_chemical_reactor/nano_cpu_wafer' })
 	
@@ -1357,7 +1357,7 @@ const registerGTCEURecipes = (event) => {
 		.chancedOutput('#forge:tiny_dusts/uranium_235', 2300, 0)
 		.duration(20*40)
 		.EUt(GTValues.VA[GTValues.HV])
-*/
+
 	// Change the Large Centrifugal Unit to be craftable at EV
 
 	event.remove({ id: 'gtceu:shaped/large_centrifuge' })

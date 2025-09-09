@@ -36,7 +36,6 @@ function registerTFGNuclearRecipes(event) {
 	//#region Processing Fuels
 
 	event.recipes.gtceu.centrifuge('thorium_isotope')
-		//.inputFluids(Fluid.of('minecraft:water', 50))
 		.itemInputs('9x #forge:dusts/thorium')
 		.chancedOutput('#forge:dusts/thorium_230', 9000, 0)
 		.itemOutputs('8x #forge:dusts/thorium_232')

@@ -1170,7 +1170,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.IV])
 	event.recipes.gtceu.mixer('tfg:aes_polyurethane_electric_only')
-		.itemInputs('tfg:aes_compressed_wool', //'2x #tfg:mineral_rich_wool' REVERT UNTIL MARS,
+		.itemInputs('tfg:aes_compressed_wool', '2x #tfg:mineral_rich_wool',
 		'#forge:dusts/methylene_diphenyl_diisocyanate')
 		.inputFluids(Fluid.of('gtceu:diethylenetriamine', 250), Fluid.of('gtceu:acetone', 1000))
 		.itemOutputs('tfg:aes_polyurethane')
