@@ -191,11 +191,14 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('gtceu:cobalt_brass_sword')])
 	event.addEntityLootModifier('primitive_creatures:nahida')
 		.addWeightedLoot([
-			Item.of('tfc:goat_horn'),
 			Item.of('sns:leather_sack'),
 			Item.of('sns:burlap_sack'),
 			Item.of('sns:seed_pouch'),
-			Item.of('sns:ore_sack')])
+			Item.of('sns:ore_sack'),
+			Item.of('sns:frame_pack'),
+			Item.of('sophisticatedbackpacks:backpack')])
+	event.addEntityLootModifier('primitive_creatures:nahida')
+		.addLoot(Item.of('tfc:goat_horn'))
 	event.addEntityLootModifier('primitive_creatures:nahida')
 		.randomChance(CLOTHING_DROP_RATE)
 		.addWeightedLoot([
