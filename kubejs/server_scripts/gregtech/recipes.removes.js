@@ -666,6 +666,16 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:forming_press/form_purpur_slab_into_pillar' })
 
 	event.remove({ id: 'gtceu:rock_breaker/red_granite' })
+	event.remove({ id: 'gtceu:laser_engraver/engrave_red_granite_bricks' })
+	event.remove({ id: 'gtceu:laser_extruder/extrude_red_granite_bricks' })
+	event.remove({ id: 'gtceu:laser_engraver/engrave_red_granite_tile' })
+	event.remove({ id: 'gtceu:laser_engraver/gtceu_red_granite_tile' })
+	event.remove({ id: 'gtceu:laser_engraver/engrave_red_granite_small_tile' })
+	event.remove({ id: 'gtceu:laser_engraver/engrave_red_granite_windmill_a' })
+	event.remove({ id: 'gtceu:laser_engraver/engrave_red_granite_windmill_b' })
+	event.remove({ id: 'gtceu:laser_engraver/engrave_small_red_granite_bricks' })
+	event.remove({ id: 'gtceu:laser_engraver/engrave_square_red_granite_bricks' })
+	event.remove({ id: 'gtceu:laser_engraver/engrave_chiseled_red_granite' })
 
 	event.remove({ id: 'gtceu:lathe/stone_rod_from_cobblestone' })
 

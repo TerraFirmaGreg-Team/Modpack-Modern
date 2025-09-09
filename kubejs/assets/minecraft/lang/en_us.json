@@ -40,6 +40,13 @@
   "block.minecraft.polished_blackstone_stairs": "Polished Pyroxenite Stairs",
   "block.minecraft.polished_blackstone_wall": "Polished Pyroxenite Wall",
   "block.minecraft.dripstone_block": "Raw Travertine",
+  "block.minecraft.nether_bricks": "Keratophyre Bricks",
+  "block.minecraft.nether_brick_fence": "Keratophyre Brick Fence",
+  "block.minecraft.nether_brick_slab": "Keratophyre Brick Slab",
+  "block.minecraft.nether_brick_wall": "Keratophyre Brick Wall",
+  "block.minecraft.nether_brick_stairs": "Keratophyre Brick Stairs",
+  "block.minecraft.cracked_nether_bricks": "Cracked Keratophyre Bricks",
+  "block.minecraft.chiseled_nether_bricks": "Chiseled Keratophyre Bricks",
   "block.minecraft.magma_block": "Pyroxenite Magma",
   "block.minecraft.twisting_vines": "Lightbloom Stem",
   "block.minecraft.pearlescent_froglight": "Pearlescent Lightbloom",
@@ -65,5 +72,6 @@
   "item.minecraft.netherite_leggings": "Blue Steel Diving Leggings",
   "item.minecraft.string": "Silk Thread",
   "item.minecraft.glow_ink_sac": "Glowing Dye",
+  "item.minecraft.nether_brick": "Keratophyre Brick",
   "material.tfg.dripstone": "Travertine"
 }

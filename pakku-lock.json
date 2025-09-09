@@ -9336,7 +9336,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "moonlight-1.20-2.16.8-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.9-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9345,20 +9345,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/sWagczEr/moonlight-1.20-2.16.8-forge.jar",
-                    "id": "sWagczEr",
+                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/mHSe3j3i/moonlight-1.20-2.16.9-forge.jar",
+                    "id": "mHSe3j3i",
                     "parent_id": "twkfQtEc",
                     "hashes": {
-                        "sha512": "b4cbaddad5ca2b917086a59e2c6d6b7c03cba3d57bf792178c9c5d1dfa27dcd95141ca66a414ce9d68b0ae66c43707dbcd5031a2871200bb58e5899640ecf347",
-                        "sha1": "3cde645d204a3cc5e1550b839e2954ee5b70d454"
+                        "sha512": "d221e717a8a52ff40e162868d0398e8648cca525891484e5cd88a2985bc22e2232e5e1bb9705c2805571f2ddfc6996192e819355d77d7c14c57fbd38cf70124a",
+                        "sha1": "622e2bd81157c7988e48988518a7bc11767a42a9"
                     },
                     "required_dependencies": [],
-                    "size": 1332010,
-                    "date_published": "2025-08-28T00:18:44.173850Z"
+                    "size": 1332304,
+                    "date_published": "2025-09-09T04:55:52.934953Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "moonlight-1.20-2.16.8-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.9-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9367,16 +9367,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6935/940/moonlight-1.20-2.16.8-forge.jar",
-                    "id": "6935940",
+                    "url": "https://edge.forgecdn.net/files/6978/608/moonlight-1.20-2.16.9-forge.jar",
+                    "id": "6978608",
                     "parent_id": "499980",
                     "hashes": {
-                        "sha1": "3cde645d204a3cc5e1550b839e2954ee5b70d454",
-                        "md5": "20835c6dc3195e10f86ecfa2662e4b97"
+                        "sha1": "622e2bd81157c7988e48988518a7bc11767a42a9",
+                        "md5": "27fe3ce6505b0f96e4884256baddb553"
                     },
                     "required_dependencies": [],
-                    "size": 1332010,
-                    "date_published": "2025-08-28T00:18:29.220Z"
+                    "size": 1332304,
+                    "date_published": "2025-09-09T04:55:38.910Z"
                 }
             ]
         },
@@ -12672,7 +12672,7 @@
             ]
         },
         {
-            "pakku_id": "JrHF5fM3A8rUpASP",
+            "pakku_id": "ViGiIGRKwYjLGy3r",
             "pakku_links": [
                 "64uacGcEw697jVGs"
             ],
@@ -12691,27 +12691,6 @@
                 "modrinth": "2yZ8ZSeO"
             },
             "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "tfcgroomer-1.20.1-0.1.4.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/2yZ8ZSeO/versions/qd2e8zR5/tfcgroomer-1.20.1-0.1.4.jar",
-                    "id": "qd2e8zR5",
-                    "parent_id": "2yZ8ZSeO",
-                    "hashes": {
-                        "sha512": "5bb17013e6750ff579ceacba78bca68bff36c21bf093ef5e7c452499bb4e81de3ed24e92c53833f9327991dc0feeb648938b0efcfdd5efad795c1419100488c1",
-                        "sha1": "e1bb7e932f900cee6be0bf5faf3fc77111488865"
-                    },
-                    "required_dependencies": [],
-                    "size": 134178,
-                    "date_published": "2025-07-27T17:29:15.479048Z"
-                },
                 {
                     "type": "curseforge",
                     "file_name": "tfcgroomer-1.20.1-0.2.1.jar",
@@ -12734,6 +12713,27 @@
                     ],
                     "size": 152681,
                     "date_published": "2025-08-31T20:19:12.327Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "tfcgroomer-1.20.1-0.1.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/2yZ8ZSeO/versions/qd2e8zR5/tfcgroomer-1.20.1-0.1.4.jar",
+                    "id": "qd2e8zR5",
+                    "parent_id": "2yZ8ZSeO",
+                    "hashes": {
+                        "sha512": "5bb17013e6750ff579ceacba78bca68bff36c21bf093ef5e7c452499bb4e81de3ed24e92c53833f9327991dc0feeb648938b0efcfdd5efad795c1419100488c1",
+                        "sha1": "e1bb7e932f900cee6be0bf5faf3fc77111488865"
+                    },
+                    "required_dependencies": [],
+                    "size": 134178,
+                    "date_published": "2025-07-27T17:29:15.479048Z"
                 }
             ]
         },
@@ -13747,7 +13747,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.13.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.15.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13756,23 +13756,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/YdOk8Iq3/TerraFirmaGreg-Core-Modern-0.7.13.jar",
-                    "id": "YdOk8Iq3",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/ZyDcPsIB/TerraFirmaGreg-Core-Modern-0.7.15.jar",
+                    "id": "ZyDcPsIB",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "b7c574c483ad516c98cf1b51dbf3b09c42cb5f8138b5806e021f6f4ca8d3f9521b95121019db7e297cf3b4220c9619456962f21da45b395f0539a69c35e3e20e",
-                        "sha1": "037ed97a39edda4c353ed0a7fd7bb638d0452e41"
+                        "sha512": "a14c88f3d2adf08d90f7673738952b175c47e27ad35a1d25cf3ad79a7d1d26a26e3c8e49a8398216770e2e00502fe67a0898da97e69cd8745bd6f89ebf6bf215",
+                        "sha1": "2052273da069c570e006185a0e0c3caa353498fc"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "JaCEZUhg"
                     ],
-                    "size": 628670,
-                    "date_published": "2025-09-08T15:21:22.717738Z"
+                    "size": 643710,
+                    "date_published": "2025-09-09T13:12:40.003997Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.13.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.15.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13781,19 +13781,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6976/596/TerraFirmaGreg-Core-Modern-0.7.13.jar",
-                    "id": "6976596",
+                    "url": "https://edge.forgecdn.net/files/6979/603/TerraFirmaGreg-Core-Modern-0.7.15.jar",
+                    "id": "6979603",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "037ed97a39edda4c353ed0a7fd7bb638d0452e41",
-                        "md5": "24b2e00abe4a9973ed536d4652b67491"
+                        "sha1": "2052273da069c570e006185a0e0c3caa353498fc",
+                        "md5": "4f84db916fb45f8648179c6dfb05ca3a"
                     },
                     "required_dependencies": [
-                        "302973",
-                        "890405"
+                        "890405",
+                        "302973"
                     ],
-                    "size": 628670,
-                    "date_published": "2025-09-08T15:21:19.573Z"
+                    "size": 643710,
+                    "date_published": "2025-09-09T13:12:37.720Z"
                 }
             ]
         },
