@@ -58,4 +58,27 @@ const registerEveryCompatRecipes = (event) => {
 			.duration(40)
 			.EUt(7)
 	})
+
+	const AD_ASTRA = [
+		'glacian',
+		'aeronos',
+		'strophar'
+	]
+
+	AD_ASTRA.forEach(wood => {
+		event.remove({ id: `everycomp:c/ad_astra/${wood}_window_pane` })
+		
+		event.shapeless(`2x everycomp:c/ad_astra/${wood}_window_pane`,
+		[ 
+			`everycomp:c/ad_astra/${wood}_window`, 
+			'#forge:tools/saws' 
+		])
+		.id(`tfg:everycompat/shapeless/${wood}_window_pane`)
+		
+		event.recipes.gtceu.cutter(`tfg:everycompat/shapeless/${wood}_window_pane`)
+			.itemInputs(`3x everycomp:c/ad_astra/${wood}_window`)
+			.itemOutputs(`8x everycomp:c/ad_astra/${wood}_window_pane`)
+			.duration(40)
+			.EUt(7)
+	})
 }
