@@ -210,7 +210,9 @@ function registerPrimitiveCreaturesLoots(event) {
 	// mistah beeeaaaasssstt
 	event.addEntityLootModifier('primitive_creatures:beast')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([4,8], ['minecraft:bone'])
+		.addWeightedLoot([12,16], ['minecraft:bone'])
 		.addWeightedLoot([2,3], ['tfc:large_raw_hide'])
-		// raw meat?
+		.addWeightedLoot([4,6], ['tfc:blubber'])
+		// change to our own raw meat?
+		.addWeightedLoot([20, 30], ['tfc:food/bear'])
 }
