@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 ### Changes
+- Added cobblestone, gravel, polished stone, bricks, and chiseled bricks to all stone types that didn't have those stone types, along with some other unification (#1764) @vidal-adrien
+- Nether brick is now crafted from Keratophyre (#1764) @vidal-adrien
 ### Bug fixes
 - Fixed two instances of illegal lang exceptions causing errors on servers. @Redeix
 
