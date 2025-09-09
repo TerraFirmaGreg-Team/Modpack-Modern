@@ -1,6 +1,10 @@
 {
-	"feature": "tfg:mars/surface/flint_patch",
+	"feature": "tfg:mars/surface/aurant_polypore",
 	"placement": [
+		{
+			"type": "tfc:climate",
+			"min_forest": "edge"
+		},
 		{
 			"type": "minecraft:rarity_filter",
 			"chance": 2
