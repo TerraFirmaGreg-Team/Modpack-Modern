@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Changes
 ### Bug fixes
+- Fixed two instances of illegal lang exceptions causing errors on servers. @Redeix
 
 ## [0.10.11] - 08-09-2025
 ### Mods

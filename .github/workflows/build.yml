@@ -445,6 +445,7 @@ jobs:
             ${{ steps.format_diff.outputs.text }}
           files: |
             ${{ needs.info.outputs.project_full_name }}-curseforge.zip
+            ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
             ${{ needs.info.outputs.project_full_name }}-serverpack.zip
             ${{ needs.info.outputs.project_full_name }}-multimc.zip
           prerelease: ${{ needs.info.outputs.release_type != 'release' }}
@@ -531,19 +532,19 @@ jobs:
             fi
             echo "✔️ All artifacts found"
     
-        - name: 🚀 Upload Modrinth
-          id: release
-          uses: Xikaro/upload-curseforge-modpack-action@1.1.1
-          with:
-            api-token: ${{ secrets.MODRINTH_TOKEN }}
-            project-id: ${{ vars.MODRINTH_ID }}
-            modpack-path: ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
-            changelog: ${{ needs.info.outputs.changelog }}
-            changelog-format: markdown
-            game-version: ${{ needs.info.outputs.mc_version }}
-            display-name: ${{ needs.info.outputs.project_full_name }}
+        # - name: 🚀 Upload Modrinth
+        #   id: release
+        #   uses: Xikaro/upload-curseforge-modpack-action@1.1.1
+        #   with:
+        #     api-token: ${{ secrets.MODRINTH_TOKEN }}
+        #     project-id: ${{ vars.MODRINTH_ID }}
+        #     modpack-path: ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
+        #     changelog: ${{ needs.info.outputs.changelog }}
+        #     changelog-format: markdown
+        #     game-version: ${{ needs.info.outputs.mc_version }}
+        #     display-name: ${{ needs.info.outputs.project_full_name }}
 
-            release-type: ${{ needs.info.outputs.release_type }}
+        #     release-type: ${{ needs.info.outputs.release_type }}
 
   discord-message:
     name: 📱 Discord Message
@@ -569,7 +570,7 @@ jobs:
             **Release Type**: `${{ needs.info.outputs.release_type }}`
             **Game Version**: `${{ needs.info.outputs.mc_version }}`
 
-            :curseforge_logo: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-modern/files/${{ needs.release-curseforge.outputs.id }}) • :github_logo: [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
+            [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-modern/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
             ```markdown
             ${{ steps.truncated.outputs.text  }}
             - ...```

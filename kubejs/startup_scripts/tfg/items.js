@@ -86,6 +86,10 @@ const registerTFGItems = (event) => {
 		.translationKey('item.tfg.brick.glacio_stone')
 	event.create('tfg:brick/permafrost')
 		.translationKey('item.tfg.brick.permafrost')
+	event.create('tfg:brick/red_granite')
+		.translationKey('item.tfg.red_granite')
+	event.create('tfg:brick/moon_deepslate')
+		.translationKey('item.tfg.moon_deepslate')
 	// #endregion
 
 	// #region Primitive rubber gloves
@@ -227,6 +231,10 @@ const registerTFGItems = (event) => {
 	event.create('tfg:aluminium_harvest_basket')
 		.translationKey('item.tfg.aluminium_harvest_basket')
 		.parentModel('tfg:item/aluminium_harvest_basket')
+		.unstackable()
+
+	event.create('tfg:stainless_steel_needle')
+		.translationKey('item.tfg.stainless_steel_needle')
 		.unstackable()
 
 	//Fishing Nets

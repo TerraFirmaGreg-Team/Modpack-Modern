@@ -189,5 +189,48 @@ function registerTFGBioreactorRecipes(event) {
 	event.shapeless('tfg:casings/bioculture_rotor_primary', [
 		'tfg:casings/bioculture_rotor_secondary'
 	]).id('tfg:shapeless/bioculture_rotor_secondary_to_primary')
+
+	event.replaceInput({input: 'tfc:bone_needle'}, 'tfc:bone_needle', '#tfc:sewing_needles')
+
+	event.recipes.gtceu.wiremill('tfg:stainless_steel_needle')
+		.itemInputs(ChemicalHelper.get(TagPrefix.pipeNormalFluid, GTMaterials.StainlessSteel, 1))
+		.itemOutputs('tfg:stainless_steel_needle')
+		.duration(2*60*20)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.assembler('tfg:empty_dna_syringe')
+		.itemInputs(
+			ChemicalHelper.get(TagPrefix.ring, GTMaterials.StyreneButadieneRubber, 2),
+			ChemicalHelper.get(TagPrefix.pipeNormalFluid, GTMaterials.Polytetrafluoroethylene, 1),
+			ChemicalHelper.get(TagPrefix.rod, GTMaterials.Polytetrafluoroethylene, 1),
+			'tfg:stainless_steel_needle'
+		)
+		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 288))
+		.itemOutputs('tfg:empty_dna_syringe')
+		.duration(4*60*20)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.EV])
+		.cleanroom(CleanroomType.CLEANROOM)
+
+	event.shapeless('tfg:dirty_dna_syringe', [
+		'tfg:filled_dna_syringe'
+	]).id('tfg:shapeless/filled_dna_syringe_emptying')
+
+	event.recipes.gtceu.chemical_bath('tfg:ethanol_cleaning_syringe')
+		.itemInputs('tfg:dirty_dna_syringe')
+		.inputFluids(Fluid.of('gtceu:ethanol', 500))
+		.itemOutputs('tfg:clean_dna_syringe')
+		.duration(10*20)
+		.EUt(GTValues.VA[GTValues.MV])
+		.cleanroom(CleanroomType.CLEANROOM)
+
+	event.recipes.gtceu.chemical_bath('tfg:hydrogen_peroxide_cleaning_syringe')
+		.itemInputs('tfg:dirty_dna_syringe')
+		.inputFluids(Fluid.of('gtceu:hydrogen_peroxide', 200))
+		.itemOutputs('tfg:clean_dna_syringe')
+		.duration(10*20)
+		.EUt(GTValues.VA[GTValues.MV])
+		.cleanroom(CleanroomType.CLEANROOM)
 	//#endregion
 }
