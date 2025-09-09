@@ -47,18 +47,18 @@ const registerTFGNuclearMaterials = (event) => {
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create('heavy_water')
-        .fluid()
+    event.create('tfg:heavy_water')
+        .liquid(new GTFluidBuilder().temperature(236))
         .components('2x deuterium', '1x oxygen')
         .iconSet(GTMaterialIconSet.FINE)
         .color(0xB5B9FF)
         .secondaryColor(0x81FFF9)
 
-    event.create('semiheavy_water')
-        .fluid()
+    event.create('tfg:semiheavy_water')
+        .liquid(new GTFluidBuilder().temperature(213))
         .components('1x deuterium','1x hydrogen', '1x oxygen')
         .iconSet(GTMaterialIconSet.FINE)
-        .color(0xb5d4ff)
+        .color(0xb5ffff)
         .secondaryColor(0x81FFF9)
 
     event.create('uranium_waste')

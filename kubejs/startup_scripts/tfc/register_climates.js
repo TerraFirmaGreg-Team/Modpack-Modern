@@ -199,7 +199,7 @@ TFCEvents.registerClimateModel(event => {
 		
 			// irl mars' poles have a snowfall of 0.13mm but that's barely noticeable here.
 			// Use a negative rainfall to stop it snowing closer to the equator. TFC clamps negatives to zero so it's fine
-			return calcAverage(pos.z, 10000, 13, -25)
+			return calcAverage(pos.x, 10000, 13, -25)
 		})
 
 		builder.setAirFog((level, pos, calendarTicks) => 0)

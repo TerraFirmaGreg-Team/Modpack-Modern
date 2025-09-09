@@ -5,18 +5,25 @@ TFCEvents.worldgenData(event => {
 
 	event.forest('tfg:mars_forest', '#tfg:mars_forest_entries',
 		[
-			event.forestTypesMapEntry('none', [1, 3], 0, 0, 0, false, false, 0),
-			event.forestTypesMapEntry('sparse', [2, 5], 6, 0.08, 0, true, false, null),
-			event.forestTypesMapEntry('edge', 5, 15, 0.1, 1, true, true, [0, 1]),
-			event.forestTypesMapEntry('normal', 10, 25, 0.1, 1, true, true, [1, 2]),
-			event.forestTypesMapEntry('old_growth', 15, 40, 0.2, 1, true, true, [1, 2])
+			// https://notenoughmail.github.io/kubejs_tfc/1.20.1/worldgen/#forest-types-map-entry
+			// type, treeCount, groundcoverCount, perChunkChance, bushCount, hasSpoilerOldGrowth, allowsOldGrowth, leafPileCount
+
+			event.forestTypesMapEntry('none',       [0, 1], 0,  0.02, 0, false, false, 0),
+			event.forestTypesMapEntry('sparse',     [1, 3], 6,  0.2,  0, false, false, [0, 1]),
+			event.forestTypesMapEntry('edge',       [2, 4], 15, 0.8,  1, true,  false, [0, 1]),
+			event.forestTypesMapEntry('normal',     [4, 6], 25, 1,    1, true,  false, [1, 2]),
+			event.forestTypesMapEntry('old_growth', [5, 8], 40, 1,    2, true,  true,  [1, 2])
 		],
 		false, 
 		placement => {}
 	)
 
 	event.forestEntry('tfg:mars/crimson_forest_entry',
-		climate => {}, // TODO: climate variation?
+		climate => {
+			climate.maxTemp(-20)
+			climate.minTemp(-65)
+			climate.minRain(-10)
+		},
 		'beneath:wood/wood/crimson', // bush log
 		'beneath:wood/leaves/crimson', // bush leaves
 		'beneath:wood/log/crimson', // fallen log
@@ -42,7 +49,12 @@ TFCEvents.worldgenData(event => {
 	)
 
 	event.forestEntry('tfg:mars/warped_forest_entry',
-		climate => {},
+		climate => {
+			climate.maxTemp(-20)
+			climate.minTemp(-65)
+			climate.minRain(-20)
+			climate.maxRain(0)
+		},
 		'beneath:wood/wood/warped',
 		'beneath:wood/leaves/warped',
 		'beneath:wood/log/warped',
@@ -63,7 +75,11 @@ TFCEvents.worldgenData(event => {
 	)
 
 	event.forestEntry('tfg:mars/aeronos_forest_entry',
-		climate => {},
+		climate => {
+			climate.maxTemp(-30)
+			climate.minTemp(-85)
+			climate.minRain(-15)
+		},
 		'ad_astra:aeronos_stem',
 		'ad_astra:aeronos_cap',
 		'betterend:cave_bush',
@@ -84,7 +100,11 @@ TFCEvents.worldgenData(event => {
 	)
 
 	event.forestEntry('tfg:mars/strophar_forest_entry',
-		climate => {},
+		climate => {
+			climate.maxTemp(-20)
+			climate.minTemp(-80)
+			climate.maxRain(5)
+		},
 		'ad_astra:strophar_stem',
 		'ad_astra:strophar_cap',
 		'betterend:lucernia_leaves',
@@ -105,7 +125,9 @@ TFCEvents.worldgenData(event => {
 	)
 
 	event.forestEntry('tfg:mars/alphacene_forest_entry',
-		climate => {},
+		climate => {
+			climate.minTemp(-40)
+		},
 		'minecraft:mushroom_stem',
 		'species:alphacene_mushroom_block',
 		'minecraft:mushroom_stem',
@@ -123,6 +145,8 @@ TFCEvents.worldgenData(event => {
 		null, null, null, null, null, null,
 		placement => {}
 	)
+
+	// TODO: glacian
 })
 
 function registerTFGForestConfiguredFeatures(event) {

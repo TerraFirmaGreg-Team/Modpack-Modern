@@ -239,7 +239,8 @@ function registerTFGFoodItems(event) {
 	event.create('tfg:food/ice_soup')
 		.translationKey('item.tfg.food.ice_soup')
 		.texture('tfg:item/food/ice_soup')
-		.food(food => food.eaten(ctx => {
+		.food(food => food.effect('tfg:cooling', 100, 0, 1)
+			.eaten(ctx => {
 			ctx.player.give('tfc:ceramic/bowl')
 		}))
 		// intentionally not tagged as food

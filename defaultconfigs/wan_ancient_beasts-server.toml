@@ -48,7 +48,7 @@
 	damage = 10.0
 	#Crusher armor [default: 20]
 	#Range: 0.0 ~ 30.0
-	armor = 35.0
+	armor = 30.0
 	#Crusher armor toughness [default: 4]
 	#Range: 0.0 ~ 20.0
 	armorToughness = 6.0

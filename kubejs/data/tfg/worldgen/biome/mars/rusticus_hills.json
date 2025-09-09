@@ -24,25 +24,16 @@
 		],
 		[],
 		[
-			"tfg:earth/geode/amethyst",
-			"tfg:earth/geode/barite",
-			"tfg:earth/geode/calcite",
-			"tfg:earth/geode/gypsum",
-			"tfg:earth/geode/opal",
-			"tfg:earth/geode/pyrite",
-			"tfg:earth/geode/quartzite"
-		],
-		[
+			"tfg:mars/terrain/clay_disc",
+			"tfg:mars/terrain/kaolin_clay_disc",
+			"tfg:mars/terrain/venus_sand_disc",
 			"tfc:random_empty_hot_spring"
 		],
 		[],
 		[],
+		[],
 		"#tfg:mars_veins",
-		[
-			"tfg:mars/terrain/clay_disc",
-			"tfg:mars/terrain/kaolin_clay_disc",
-			"tfg:mars/terrain/venus_sand_disc"
-		],
+		"#tfg:mars_underground_decoration",
 		[
 			"tfg:mars_forest",
 			"tfc:raw_boulder",

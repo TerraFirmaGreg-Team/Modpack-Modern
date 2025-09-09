@@ -225,12 +225,12 @@
 					"points": [
 						{
 							"derivative": 0.0,
-							"location": -0.15,
+							"location": -0.13,
 							"value": 1
 						},
 						{
 							"derivative": 0.0,
-							"location": -0.14,
+							"location": -0.12,
 							"value": 0
 						}
 					]
@@ -294,12 +294,7 @@
 				"then_run": {
 					"type": "minecraft:condition",
 					"if_true": {
-						"type": "minecraft:y_above",
-						"anchor": {
-							"absolute": 70
-						},
-						"surface_depth_multiplier": 0,
-						"add_stone_depth": false
+						"type": "minecraft:above_preliminary_surface"
 					},
 					"then_run": {
 						"type": "minecraft:sequence",

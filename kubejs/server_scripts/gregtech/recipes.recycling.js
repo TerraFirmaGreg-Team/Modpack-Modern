@@ -188,37 +188,6 @@ function registerGTCEURecyclingRecipes(event) {
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	// Steam oven
-
-	event.recipes.gtceu.macerator('gtceu:macerate_steam_oven')
-		.itemInputs('gtceu:steam_oven')
-		.itemOutputs('18x #forge:dusts/bronze', '8x #forge:dusts/invar', '7x #forge:dusts/wrought_iron', '2x #forge:dusts/steel')
-		.duration(1972)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.arc_furnace('gtceu:arc_steam_oven')
-		.itemInputs('gtceu:steam_oven')
-		.itemOutputs('18x #forge:ingots/bronze', '8x #forge:ingots/invar', '7x #forge:ingots/wrought_iron', '2x #forge:ingots/steel')
-		.duration(1792)
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-		.EUt(GTValues.VA[GTValues.LV])
-
-	// Steam grinder
-
-	event.recipes.gtceu.macerator('gtceu:macerate_steam_grinder')
-		.itemInputs('gtceu:steam_grinder')
-		.itemOutputs('18x #forge:dusts/bronze', '8x #forge:dusts/invar', '7x #forge:dusts/wrought_iron', '2x #forge:dusts/steel')
-		.duration(1972)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.arc_furnace('gtceu:arc_steam_grinder')
-		.itemInputs('gtceu:steam_grinder')
-		.itemOutputs('18x #forge:ingots/bronze', '8x #forge:ingots/invar', '7x #forge:ingots/wrought_iron', '2x #forge:ingots/steel')
-		.duration(1792)
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-		.EUt(GTValues.VA[GTValues.LV])
 
 	// Clean Foil pack
 	event.recipes.gtceu.macerator('gtceu:macerator/recycling/clean_foil_pack')

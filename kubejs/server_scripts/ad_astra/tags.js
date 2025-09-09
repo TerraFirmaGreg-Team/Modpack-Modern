@@ -106,8 +106,22 @@ const registerAdAstraItemTags = (event) => {
 	event.add('firmalife:foods/cheeses', 'ad_astra:cheese')
 
 	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_helmet')
+	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_chestplate')
+	event.add('ad_astra:space_suit_items', 'gtceu:advanced_quarktech_chestplate')
 	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_leggings')
 	event.add('ad_astra:space_suit_items', 'gtceu:quarktech_boots')
+
+	event.add('ad_astra:freeze_resistant_armor', 'gtceu:quarktech_helmet')
+	event.add('ad_astra:freeze_resistant_armor', 'gtceu:quarktech_chestplate')
+	event.add('ad_astra:freeze_resistant_armor', 'gtceu:advanced_quarktech_chestplate')
+	event.add('ad_astra:freeze_resistant_armor', 'gtceu:quarktech_leggings')
+	event.add('ad_astra:freeze_resistant_armor', 'gtceu:quarktech_boots')
+	
+	event.add('ad_astra:heat_resistant_armor', 'gtceu:quarktech_helmet')
+	event.add('ad_astra:heat_resistant_armor', 'gtceu:quarktech_chestplate')
+	event.add('ad_astra:heat_resistant_armor', 'gtceu:advanced_quarktech_chestplate')
+	event.add('ad_astra:heat_resistant_armor', 'gtceu:quarktech_leggings')
+	event.add('ad_astra:heat_resistant_armor', 'gtceu:quarktech_boots')
 	
 	event.remove('minecraft:wool', 'ad_astra:glacian_fur')
 
@@ -463,11 +477,28 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_black_sand')
 
 	//#region Mars
-	event.add('tfg:mars_veins', 'tfg:mars/terrain/ochrum_blob')
+
+	// Underground decoration
+	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/cave_column')
+	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/cave_spike')
+	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/large_cave_spike')
+	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/calcite')
+	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/mega_calcite')
+	event.add('tfg:mars_underground_decoration', 'tfc:icicle')
+	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/loose_rocks')
+	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/ochrum_blob')
+	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/amethyst")
+	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/barite")
+	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/calcite")
+	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/gypsum")
+	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/opal")
+	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/pyrite")
+	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/quartzite")
 	
 	// Vegetation
 	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/charnia")
 	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/flamaea")
+	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/lacugrove")
 
 	event.add("tfg:mars_amber_vegetal_decoration", "#tfg:mars_global_small_plants")
 	event.add("tfg:mars_rusticus_vegetal_decoration", "#tfg:mars_global_small_plants")

@@ -8,8 +8,9 @@ function registerBetterEndBlocks(event) {
 	event.create('betterend:chorus_lily', 'tfc:ground_cover')
 		.soundType('cherry_wood')
 		.hardness(0.5)
-		.tagBlock('minecraft:mineable/hoe')
 		.tagItem('tfg:moon_plants')
+		.tagBlock('minecraft:mineable/hoe')
+        .tagBlock('tfg:do_not_destroy_in_space')
 		.mapColor('terracotta_white')
 		.box(0, 0, 0, 16, 6, 16)
 		.fullBlock(false)
@@ -42,8 +43,6 @@ function registerBetterEndBlocks(event) {
 	createPlant(event, 'creeping_moss', 'mars')
 		.box(2, 0, 2, 14, 20, 14)
 		.lootItem('beneath:warped_straw')
-	createPlant(event, 'flamaea', 'mars')
-		.box(2, 0, 2, 14, 3, 14)
 	createPlant(event, 'flammalix', 'mars')
 	createPlant(event, 'globulagus', 'mars')
 		.box(3, 0, 3, 13, 13, 13)
@@ -60,10 +59,8 @@ function registerBetterEndBlocks(event) {
 	createPlant(event, 'small_amaranita_mushroom', 'mars')
 		.box(3, 0, 3, 13, 8, 13)
 	createPlant(event, 'lucernia_outer_leaves', 'mars')
-	// TODO: needs a feature
 	createPlant(event, 'lanceleaf_small', 'mars')
 		.box(4, 0, 4, 12, 8, 12)
-	// TODO: needs a feature
 
 	// 1 block tall waterlogged
 
@@ -74,16 +71,64 @@ function registerBetterEndBlocks(event) {
 	createPlant(event, 'charnia_purple', 'mars')
 	createPlant(event, 'charnia_red', 'mars')
 
+	// Water surface
+
+	event.create('betterend:flamaea', 'tfg:floating_decorative_plant')
+		.soundType('crop')
+		.box(1, 0, 1, 15, 2, 15)
+		.mapColor('color_light_blue')
+		.tagItem('tfg:mars_plants')
+		.tagItem('forge:mushrooms')
+        .tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('minecraft:replaceable')
+
+	event.create('betterend:lacugrove', 'tfg:floating_decorative_plant')
+		.xz_offset(false)
+		.soundType('crop')
+		.box(0, 0, 0, 16, 1, 16)
+		.mapColor('color_cyan')
+		.tagItem('tfg:mars_plants')
+        .tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('minecraft:replaceable')
+
 	// Mosses / Can go on sides of blocks
-	
-	//createPlant(event, 'aurant_polypore', 'mars')
-	//createPlant(event, 'purple_polypore', 'mars')
+
+	// TODO: needs features
+	event.create('betterend:aurant_polypore', 'tfg:attached_decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:mars_plants')
+		.tagItem('forge:mushrooms')
+		.tagBlock('minecraft:replaceable')
+        .tagBlock('tfg:do_not_destroy_in_space')
+
+	event.create('betterend:purple_polypore', 'tfg:attached_decorative_plant')
+		.soundType('nether_wart')
+		.tagItem('tfg:mars_plants')
+		.tagItem('forge:mushrooms')
+		.tagBlock('minecraft:replaceable')
+        .tagBlock('tfg:do_not_destroy_in_space')
+		
+	event.create('betterend:filalux_wings', 'tfg:attached_decorative_plant')
+		.soundType('nether_wart')
+		.allowVertical(true)
+		.tagItem('tfg:mars_plants')
+		.tagItem('forge:mushrooms')
+		.tagBlock('minecraft:replaceable')
+        .tagBlock('tfg:do_not_destroy_in_space')
+
+	event.create('betterend:bulb_moss', 'tfg:attached_decorative_plant')
+		.soundType('crop')
+		.lootItem('tfc:straw')
+		.tagItem('tfg:mars_plants')
+		.tagBlock('minecraft:replaceable')
+        .tagBlock('tfg:do_not_destroy_in_space')
 
 	// Leaves
 
 	event.create('betterend:cave_bush', 'tfc:leaves')
 		.soundType('azalea_leaves')
 		.tagBlock('minecraft:mineable/hoe')
+        .tagBlock('tfg:do_not_destroy_in_space')
 		.mapColor('fire')
 		.seasonalColors(false)
 		.tagItem('tfg:mars_plants')
@@ -93,6 +138,7 @@ function registerBetterEndBlocks(event) {
 			leaves.defaultCutout()
 			leaves.soundType('azalea_leaves')
 			leaves.tagBlock('minecraft:mineable/hoe')
+			leaves.tagBlock('minecraft:replaceable')
 			// TODO: kjs-tfc 1.3.3 will have an option to disable tinting on leaves
 			leaves.models((modelType, generator) => {
 				if (modelType.layers != 8) {
@@ -107,6 +153,7 @@ function registerBetterEndBlocks(event) {
 	event.create('betterend:lucernia_leaves', 'tfc:leaves')
 		.soundType('azalea_leaves')
 		.tagBlock('minecraft:mineable/hoe')
+        .tagBlock('tfg:do_not_destroy_in_space')
 		.mapColor('color_orange')
 		.seasonalColors(false)
 		.tagItem('tfg:mars_plants')
@@ -116,6 +163,7 @@ function registerBetterEndBlocks(event) {
 			leaves.defaultCutout()
 			leaves.soundType('azalea_leaves')
 			leaves.tagBlock('minecraft:mineable/hoe')
+			leaves.tagBlock('minecraft:replaceable')
 			// TODO: kjs-tfc 1.3.3 will have an option to disable tinting on leaves
 			leaves.models((modelType, generator) => {
 				if (modelType.layers != 8) {
@@ -138,16 +186,16 @@ function registerBetterEndBlocks(event) {
 	event.create('betterend:large_amaranita_mushroom', 'tfg:tall_decorative_plant')
 		.height(3)
 		.soundType('nether_wart')
-		.tagBlock('minecraft:mineable/hoe')
 		.tagItem('tfg:mars_plants')
+        .tagBlock('tfg:do_not_destroy_in_space')
 		.tagItem('forge:mushrooms')
 		.mapColor('fire')
 
 	event.create('betterend:lanceleaf', 'tfg:tall_decorative_plant')
 		.height(5)
 		.soundType('crop')
-		.tagBlock('minecraft:mineable/hoe')
 		.tagItem('tfg:mars_plants')
+        .tagBlock('tfg:do_not_destroy_in_space')
 		.mapColor('color_orange')
 
 	// europa...?
@@ -171,4 +219,5 @@ function createPlant(event, id, planet) {
 	return event.create(`betterend:${id}`, 'tfg:decorative_plant')
 		.tagItem(`tfg:${planet}_plants`)
 		.tagBlock('minecraft:replaceable')
+        .tagBlock('tfg:do_not_destroy_in_space')
 }

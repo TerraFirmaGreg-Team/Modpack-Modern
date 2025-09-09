@@ -254,8 +254,8 @@ function registerTFGStoneDustRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 		.duration(100)
 		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('asurine'), 1))
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.CertusQuartz, 1), 4500, 0)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Zinc, 1), 3500, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.CertusQuartz, 1), 4500, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Zinc, 1), 3500, 0)
 
 	// Misc dust
 
@@ -264,5 +264,5 @@ function registerTFGStoneDustRecipes(event) {
 		.duration(60)
 		.itemInputs('2x gtceu:quartz_sand_dust')
 		.itemOutputs('gtceu:quartzite_dust')
-		.chancedOutput('#forge:dust/nether_quartz', 2000, 0)
+		.chancedOutput('#forge:dusts/nether_quartz', 2000, 0)
 }

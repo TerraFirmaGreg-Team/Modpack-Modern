@@ -4,7 +4,7 @@
 
 const registerSoulboundItemTags = (event) => {
 	
-	global.SOULBINDABLE_ITEMS.forEach(item => {
-		event.add('tfg:soulbindable_items', item)
+	global.SOULBINDABLE_ITEMS.forEach(x => {
+		event.add('tfg:soulbindable_items', x.equipment)
 	})
 }

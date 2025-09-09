@@ -554,6 +554,13 @@ function registerGreateRecipes(event) {
 
 	// #region Belt Connector
 
+	removeMaceratorRecipe(event, 'macerate_rubber_belt_connector')
+	removeMaceratorRecipe(event, 'macerate_silicone_rubber_belt_connector')
+	removeMaceratorRecipe(event, 'macerate_polyethylene_belt_connector')
+	event.remove({ id: 'gtceu:extractor/extract_rubber_belt_connector' })
+	event.remove({ id: 'gtceu:extractor/extract_silicone_rubber_belt_connector' })
+	event.remove({ id: 'gtceu:extractor/extract_polyethylene_belt_connector' })
+
 	event.shaped('3x greate:rubber_belt_connector', [
 		'C  ',
 		'AAA',
@@ -565,11 +572,13 @@ function registerGreateRecipes(event) {
 	}).id('gtceu:shaped/rubber_belt_connector')
 
 	event.recipes.gtceu.assembler('rubber_belt_connector')
-		.itemInputs('#forge:plates/rubber')
+		.itemInputs('gtceu:rubber_plate')
 		.itemOutputs('greate:rubber_belt_connector')
 		.circuit(11)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.removePreviousMaterialInfo()
+		.addMaterialInfo(true)
 
 	event.shaped('3x greate:silicone_rubber_belt_connector', [
 		'C  ',
@@ -582,11 +591,13 @@ function registerGreateRecipes(event) {
 	}).id('gtceu:shaped/silicone_rubber_belt_connector')
 
 	event.recipes.gtceu.assembler('silicone_rubber_belt_connector')
-		.itemInputs('#forge:plates/silicone_rubber')
+		.itemInputs('gtceu:silicone_rubber_plate')
 		.itemOutputs('greate:silicone_rubber_belt_connector')
 		.circuit(11)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.removePreviousMaterialInfo()
+		.addMaterialInfo(true)
 
 	event.shaped('3x greate:polyethylene_belt_connector', [
 		'C  ',
@@ -599,11 +610,13 @@ function registerGreateRecipes(event) {
 	}).id('gtceu:shaped/polyethylene_belt_connector')
 
 	event.recipes.gtceu.assembler('polyethylene_belt_connector')
-		.itemInputs('#forge:plates/styrene_butadiene_rubber')
+		.itemInputs('gtceu:styrene_butadiene_rubber_plate')
 		.itemOutputs('greate:polyethylene_belt_connector')
 		.circuit(11)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.removePreviousMaterialInfo()
+		.addMaterialInfo(true)
 
 	// #endregion
 
