@@ -239,7 +239,7 @@ const registerSNSRecipes = (event) => {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])	
 			
-	generateCutterRecipe(event, '#forge:leather', '4x sns:leather_strip', 80, GTValues.VA[GTValues.LV], 'sns:leather_strip_cut')
+	generateCutterRecipe(event, '#forge:leather', '4x sns:leather_strip', 80, GTValues.VA[GTValues.LV], 'sns_leather_strip_cut')
 	
 	event.recipes.gtceu.assembler('sns:bound_leather_strip')
 		.itemInputs('2x sns:leather_strip', 'sns:reinforced_fiber')
