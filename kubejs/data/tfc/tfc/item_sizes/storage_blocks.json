@@ -1,0 +1,25 @@
+{
+  "ingredient": {
+    "type": "forge:difference",
+    "base": { "tag": "forge:storage_blocks" },
+    "subtracted": [
+      { "item": "minecraft:stone" },
+      { "item": "minecraft:bricks" },
+      { "item": "minecraft:quartz_block" },
+      { "item": "minecraft:amethyst_block" },
+      { "item": "minecraft:glass" },
+      { "item": "minecraft:clay" },
+      { "item": "minecraft:ice" },
+      { "item": "minecraft:bone_block" },
+      { "item": "minecraft:obsidian" },
+      { "item": "minecraft:glowstone" },
+      { "item": "ae2:quartz_block" },
+      { "item": "gtceu:red_granite" },
+      { "item": "gtceu:light_concrete" },
+      { "item": "gtceu:dark_concrete" },
+      { "item": "create:cardboard_block" }
+    ]
+  },
+  "size": "large",
+  "weight": "medium"
+}

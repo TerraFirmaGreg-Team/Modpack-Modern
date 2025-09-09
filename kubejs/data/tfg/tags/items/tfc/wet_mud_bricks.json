@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    "tfc:drying_bricks/loam",
+    "tfc:drying_bricks/sandy_loam",
+    "tfc:drying_bricks/silt",
+    "tfc:drying_bricks/silty_loam"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "ingredient": [
+    { "item": "framedblocks:framed_slope_edge" },
+    { "item": "framedblocks:framed_slab_edge" },
+    { "item": "framedblocks:framed_slab_corner" },
+    { "item": "framedblocks:framed_corner_pillar" },
+    { "item": "framedblocks:framed_button" },
+    { "item": "framedblocks:framed_stone_button" },
+    { "item": "framedblocks:framed_floor_board" },
+    { "item": "framedblocks:framed_wall_board" },
+    { "item": "framedblocks:framed_corner_strip" },
+    { "item": "framedblocks:framed_pane" },
+    { "item": "framedblocks:framed_bars" },
+    { "item": "framedblocks:framed_horizontal_pane" },
+    { "item": "framedblocks:framed_slope_slab" },
+    { "item": "framedblocks:framed_flat_slope_slab_corner" },
+    { "item": "framedblocks:framed_slope_panel" },
+    { "item": "framedblocks:framed_flat_slope_panel_corner" },
+    { "item": "framedblocks:framed_small_corner_slope_panel" },
+    { "item": "framedblocks:framed_small_inner_corner_slope_panel" },
+    { "item": "framedblocks:framed_small_double_corner_slope_panel" },
+    { "item": "framedblocks:framed_mini_cube" }
+  ],
+  "size": "very_small",
+  "weight": "very_light"
+}
