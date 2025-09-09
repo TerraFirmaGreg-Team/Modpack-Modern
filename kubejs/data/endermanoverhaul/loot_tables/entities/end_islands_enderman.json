@@ -7,6 +7,10 @@
 				{
 					"type": "minecraft:item",
 					"name": "endermanoverhaul:ancient_pearl"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "endermanoverhaul:soul_pearl"
 				}
 			],
 			"rolls": 1.0
