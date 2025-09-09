@@ -18,7 +18,7 @@ const registerSoulboundRecipes = (event) => {
 				}
 				result.nbt.put('soulbindingSoulboundItems', true)
 				return result;
-			}).id(`tfg:soulbind_${x.equipment}`);
+			}).id(`tfg:soulbind_${x.equipment}`.replace(/[: ]/g, '_'));
 
 	})
 
