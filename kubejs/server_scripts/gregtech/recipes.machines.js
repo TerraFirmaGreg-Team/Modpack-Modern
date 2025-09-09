@@ -1166,10 +1166,10 @@ function registerGTCEuMachineRecipes(event) {
 
 	// Multiblock
 
-	/* LOCKED UNTIL VENUS
+	/* LOCKED UNTIL MARS
 
 	event.shaped(
-		'gtceu:extraterrestrial_ore_fabricator',
+		'gtceu:ostrum_linear_accelerator',
 		[	'USU',
 			'WZW',
 			'PTP'],
@@ -1181,7 +1181,7 @@ function registerGTCEuMachineRecipes(event) {
 			T: '#forge:single_cables/platinum',
 			P: 'gtceu:iv_electric_pump'
 		}
-	).id('gtceu:shaped/extraterrestrial_ore_fabricator')
+	).id('gtceu:shaped/ostrum_linear_accelerator')
 
 	*/
 
