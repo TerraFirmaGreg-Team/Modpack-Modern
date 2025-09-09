@@ -64,7 +64,7 @@ const registerSNSRecipes = (event) => {
 				B: 'sns:leather_strip',
 				C: 'sns:unfinished_leather_sack',
 				//D: 'minecraft:name_tag',
-				E: 'tfc:bone_needle'
+				E: '#tfc:sewing_needles'
 			}
 		)
 	).id('sns:crafting/leather_sack')
@@ -79,7 +79,7 @@ const registerSNSRecipes = (event) => {
 				B: 'sns:leather_strip',
 				C: 'sns:unfinished_leather_sack',
 				D: 'minecraft:name_tag',
-				E: 'tfc:bone_needle'
+				E: '#tfc:sewing_needles'
 			}
 		)
 	).id('sns:crafting/leather_sack_coil')*/
@@ -94,7 +94,7 @@ const registerSNSRecipes = (event) => {
 				B: '#forge:leather',
 				C: 'sns:unfinished_leather_sack',
 				D: 'minecraft:name_tag',
-				E: 'tfc:bone_needle'
+				E: '#tfc:sewing_needles'
 			}
 		)
 	).id('sns:crafting/ore_sack')
@@ -121,7 +121,7 @@ const registerSNSRecipes = (event) => {
 				B: 'sns:reinforced_fabric',
 				C: 'sns:pack_frame',
 				D: 'minecraft:name_tag',
-				E: 'tfc:bone_needle'
+				E: '#tfc:sewing_needles'
 			}
 		)
 	).id('sns:crafting/frame_pack')
