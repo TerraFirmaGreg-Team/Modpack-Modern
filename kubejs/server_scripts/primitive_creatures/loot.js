@@ -188,10 +188,10 @@ function registerPrimitiveCreaturesLoots(event) {
 	event.addEntityLootModifier('primitive_creatures:nahida')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([
-			Item.of('gtceu:cobalt_brass_spade').damage([0.85, 1]),
-			Item.of('gtceu:cobalt_brass_sickle').damage([0.85, 1]),
-			Item.of('gtceu:cobalt_brass_mining_hammer').damage([0.85, 1]),
-			Item.of('gtceu:cobalt_brass_sword').damage([0.85, 1])])
+			LootEntry.of('gtceu:cobalt_brass_spade').damage([0.85, 1]),
+			LootEntry.of('gtceu:cobalt_brass_sickle').damage([0.85, 1]),
+			LootEntry.of('gtceu:cobalt_brass_mining_hammer').damage([0.85, 1]),
+			LootEntry.of('gtceu:cobalt_brass_sword').damage([0.85, 1])])
 	event.addEntityLootModifier('primitive_creatures:nahida')
 		.addWeightedLoot([
 			Item.of('sns:leather_sack'),
