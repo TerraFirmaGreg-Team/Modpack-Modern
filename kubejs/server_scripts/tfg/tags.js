@@ -762,6 +762,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:stone_dusts', 'tfg:glacio_stone_dust')
 	event.add('tfg:stone_dusts', 'gtceu:stone_dust')
 	event.add('tfg:stone_dusts', 'gtceu:red_granite_dust')
+	event.add('tfg:stone_dusts', 'gtceu:netherrack_dust')
 	//#endregion
 
 	// #region 0.7.19 -> 0.9 conversion
