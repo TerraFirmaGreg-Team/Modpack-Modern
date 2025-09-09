@@ -423,7 +423,7 @@ function registerTFGSpaceBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 	
-	// Decorative
+	// Bricks / Decorative
 
 	event.create('tfg:rock/bricks_moon_deepslate')
 		.soundType('deepslate')
