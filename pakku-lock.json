@@ -1582,6 +1582,28 @@
             },
             "files": [
                 {
+                    "type": "modrinth",
+                    "file_name": "AutoPack-Director-1.2.0.jar",
+                    "mc_versions": [
+                        "1.12.2",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/Fqqapnbs/versions/vYcOEYf1/AutoPack-Director-1.2.0.jar",
+                    "id": "vYcOEYf1",
+                    "parent_id": "Fqqapnbs",
+                    "hashes": {
+                        "sha512": "89f3170fdad94d6831d24507ccdb29a913ad0390d029d1e21d3ed4a68dd6f62d79f67fc9e67b9399c346ca412518c1b564862b70910c93ce0299f8292f7f0c91",
+                        "sha1": "19cbf1a49a8658741c87989c8605d8009819a495"
+                    },
+                    "required_dependencies": [],
+                    "size": 96783,
+                    "date_published": "2025-09-10T09:08:06.843938Z"
+                },
+                {
                     "type": "curseforge",
                     "file_name": "AutoPack-Director-1.0.1.jar",
                     "mc_versions": [
@@ -1602,29 +1624,6 @@
                     "required_dependencies": [],
                     "size": 3031600,
                     "date_published": "2025-01-19T07:37:46.543Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "Modpack-Director-1.0.1.jar",
-                    "mc_versions": [
-                        "1.12.2",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/Fqqapnbs/versions/47y19tCP/Modpack-Director-1.0.1.jar",
-                    "id": "47y19tCP",
-                    "parent_id": "Fqqapnbs",
-                    "hashes": {
-                        "sha512": "2a58aff6a3bbcc4e44f6b81f7fb8477fd87f55112ff53c3704ae25a136d2ffd5146043983cf653444e823a4c9a247866028a452ff482d9cdc6cb81af4a1ffca3",
-                        "sha1": "973a115aeee0cd6d40ad0a0e1e255d5aa0419bb2"
-                    },
-                    "required_dependencies": [],
-                    "size": 3031600,
-                    "date_published": "2025-01-19T06:45:11.832901Z"
                 }
             ]
         },
