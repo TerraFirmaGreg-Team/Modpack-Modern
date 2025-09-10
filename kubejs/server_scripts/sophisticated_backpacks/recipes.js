@@ -328,7 +328,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         'BDB',
         'EBA'
     ], {
-        A: 'gtceu:ev_field_generator',
+        A: 'gtceu:hv_field_generator',
         B: '#forge:plates/titanium',
         C: '#gtceu:circuits/ev',
         D: 'sophisticatedbackpacks:upgrade_base',
@@ -357,7 +357,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         B: 'gtceu:mercury_barium_calcium_cuprate_single_wire',
         C: '#gtceu:batteries/hv',
         D: 'sophisticatedbackpacks:upgrade_base',
-        E: 'gtceu:hv_field_generator'
+        E: 'gtceu:mv_field_generator'
     }).id('tfg:sophisticated_backpacks/shaped/stack_upgrade_starter_tier')
 
     event.shaped('sophisticatedbackpacks:stack_upgrade_tier_1', [
@@ -369,7 +369,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         B: 'gtceu:samarium_iron_arsenic_oxide_single_wire',
         C: '#gtceu:batteries/iv',
         D: 'sophisticatedbackpacks:upgrade_base',
-        E: 'gtceu:iv_field_generator'
+        E: 'gtceu:ev_field_generator'
     }).id('tfg:sophisticated_backpacks/shaped/stack_upgrade_tier_1')
 
     // Улучшение - проигрыватель
