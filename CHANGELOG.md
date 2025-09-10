@@ -2,7 +2,13 @@
 
 ## [Unreleased]
 ### Changes
+- Added roaming Illager patrols @Pyritie
+- Added Vat recipe for boiling salt water into salt (#1784) @TreyR9
 ### Bug fixes
+- Added missing recipes for TFC Macaw's barbed fences
+- Fixed Field Generator recipes to follow the new path of pearl progression (#1790) @TomPlop
+- Fixed some backpack upgrades to be consistent with their required circuits (#1790) @TomPlop
+- Fixed Keratophyre not having a stone dust @Pyritie
 
 ## [0.10.12] - 09-09-2025
 ### Changes

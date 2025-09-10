@@ -24,7 +24,7 @@ const registerAdAstraMaterials = (event) => {
 		.addOreByproducts('olivine', 'rutile', 'rutile')
 		.ingot()
 		.liquid()
-		.blastTemp(2000, 'low', GTValues.VA[GTValues.MV])
+		.blastTemp(2800, 'mid', GTValues.VA[GTValues.HV])
 		.flags(
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
 			GTMaterialFlags.GENERATE_PLATE, 
@@ -43,7 +43,7 @@ const registerAdAstraMaterials = (event) => {
 		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
 		.ingot()
 		.liquid()
-		.blastTemp(2900, 'mid', GTValues.VA[GTValues.HV])
+		.blastTemp(3700, 'mid', GTValues.VA[GTValues.EV])
 		.flags(
 			GTMaterialFlags.DISABLE_DECOMPOSITION,
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 

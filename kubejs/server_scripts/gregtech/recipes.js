@@ -1432,6 +1432,21 @@ const registerGTCEURecipes = (event) => {
 	event.replaceInput({ id: 'gtceu:shaped/nano_chestplate_advanced' }, '#gtceu:circuits/iv', '#gtceu:circuits/ev')
 	event.replaceInput({ id: 'gtceu:assembler/ev_large_miner' }, '#gtceu:circuits/iv', '#gtceu:circuits/ev')
 
+	event.replaceInput({ id: 'gtceu:shaped/power_substation' }, '#gtceu:circuits/luv', '#gtceu:circuits/ev')
+	event.replaceInput({ id: 'gtceu:assembler/casing_palladium_substation' }, 'gtceu:iridium_frame', 'gtceu:ultimet_frame')
+
+	event.replaceInput({ id: 'gtceu:shaped/field_generator_hv' }, 'gtceu:quantum_eye', 'tfg:cryo_fluix_pearl')
+	event.replaceInput({ id: 'gtceu:shaped/field_generator_ev' }, 'minecraft:nether_star', 'gtceu:quantum_eye')
+	event.replaceInput({ id: 'gtceu:shaped/field_generator_iv' }, 'gtceu:quantum_star', 'minecraft:nether_star')
+
+	event.remove({ id: 'gtceu:chemical_bath/quantum_eye' })
+	event.recipes.gtceu.chemical_bath('tfg:quantum_eye')
+			.itemInputs('tfg:cryo_fluix_pearl')
+			.inputFluids(Fluid.of('gtceu:radon', 250))
+			.itemOutputs('gtceu:quantum_eye')
+			.duration(20*24)
+			.EUt(GTValues.VA[GTValues.HV])
+	
 	//# Circuit Board
 
 	event.replaceInput({ id: 'gtceu:assembler/phenolic_board' }, '#tfg:wood_dusts', 'tfg:high_density_treated_fiberboard')

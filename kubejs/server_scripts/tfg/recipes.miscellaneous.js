@@ -829,14 +829,6 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(100)
 		.EUt(30)
 	
-	// Temporary
-	event.recipes.gtceu.chemical_bath('quantum_eye')
-		.itemInputs('tfg:vitrified_pearl')
-		.inputFluids(Fluid.of('gtceu:radon', 250))
-		.itemOutputs('gtceu:quantum_eye')
-		.duration(24 * 20)
-		.EUt(480)
-
 	// Harvest Baskets
 
 	event.shaped('tfg:harvest_basket', [
