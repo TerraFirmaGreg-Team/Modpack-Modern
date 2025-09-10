@@ -7,7 +7,9 @@
 - Power Substation is now available at EV (#1790) @TomPlop
 - Increased the tier of EBF coil required for Desh (#1790) @TomPlop
 - Quantum Eye now requires a Cryogenized Fluix Pearl (#1790) @TomPlop
+- Moon ore vein tweaks @Pyritie
 ### Bug fixes
+- Fixed issue with the modpack not loading on MacOS or certain Linux distros @Xikaro
 - Added missing recipes for TFC Macaw's barbed fences
 - Fixed Field Generator recipes to follow the new path of pearl progression (#1790) @TomPlop
 - Fixed some backpack upgrades to be consistent with their required circuits (#1790) @TomPlop
