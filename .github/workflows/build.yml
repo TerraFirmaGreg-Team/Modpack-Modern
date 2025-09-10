@@ -321,6 +321,7 @@ jobs:
         with:
           path: build/.cache
           key: pakku-cache-${{ hashFiles('pakku-lock.json') }}
+          restore-keys: pakku-cache-
 
       - name: 📦 Export modpack
         run: |

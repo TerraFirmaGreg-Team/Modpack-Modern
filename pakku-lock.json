@@ -330,7 +330,10 @@
             ]
         },
         {
-            "pakku_id": "axmNNDPGdG6D8KXw",
+            "pakku_id": "w4J4AtAF3fKDeBHZ",
+            "pakku_links": [
+                "rjOX4EXWlGvG84kO"
+            ],
             "type": "RESOURCE_PACK",
             "side": "CLIENT",
             "slug": {
@@ -3047,7 +3050,7 @@
             ]
         },
         {
-            "pakku_id": "FSZCR19k6ZVXOZLa",
+            "pakku_id": "Va4c3L8RVchOUkDi",
             "type": "RESOURCE_PACK",
             "side": "CLIENT",
             "slug": {
@@ -7098,7 +7101,7 @@
             ]
         },
         {
-            "pakku_id": "M7ZZyOcbd5Zi4KR6",
+            "pakku_id": "0jxn9gNhlmSZ6ooq",
             "type": "RESOURCE_PACK",
             "side": "CLIENT",
             "slug": {
@@ -7114,6 +7117,24 @@
                 "modrinth": "fUawEtti"
             },
             "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "[ver 0.20] GT Revival 32x 1.19.2-1.20.1-1.21.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6787/476/[ver 0.20] GT Revival 32x 1.19.2-1.20.1-1.21.zip",
+                    "id": "6787476",
+                    "parent_id": "964322",
+                    "hashes": {
+                        "sha1": "388145cb295a0778deb2af3920c3a53ecfb80804",
+                        "md5": "9c4fad9bba1ff5c4dd7c24d68c9310a9"
+                    },
+                    "required_dependencies": [],
+                    "size": 8289791,
+                    "date_published": "2025-07-19T13:10:34.260Z"
+                },
                 {
                     "type": "modrinth",
                     "file_name": "[ver 0.20] GT Revival 32x 1.19.2-1.20.1-1.21.zip",
@@ -7136,24 +7157,6 @@
                     "required_dependencies": [],
                     "size": 8289791,
                     "date_published": "2025-07-19T13:09:55.325382Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "[ver 0.20] GT Revival 32x 1.19.2-1.20.1-1.21.zip",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6787/476/[ver 0.20] GT Revival 32x 1.19.2-1.20.1-1.21.zip",
-                    "id": "6787476",
-                    "parent_id": "964322",
-                    "hashes": {
-                        "sha1": "388145cb295a0778deb2af3920c3a53ecfb80804",
-                        "md5": "9c4fad9bba1ff5c4dd7c24d68c9310a9"
-                    },
-                    "required_dependencies": [],
-                    "size": 8289791,
-                    "date_published": "2025-07-19T13:10:34.260Z"
                 }
             ]
         },
@@ -7348,7 +7351,7 @@
             ]
         },
         {
-            "pakku_id": "ZhW43OKdjEIc58t0",
+            "pakku_id": "xahPtsrvcLFX70mD",
             "type": "RESOURCE_PACK",
             "side": "CLIENT",
             "slug": {
@@ -7597,7 +7600,7 @@
             ]
         },
         {
-            "pakku_id": "14Lq4eydOtkfdzrZ",
+            "pakku_id": "vEzSlPTesOJoM5Q4",
             "type": "RESOURCE_PACK",
             "side": "CLIENT",
             "slug": {
@@ -7635,7 +7638,7 @@
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "Improved+AE+2+ver+0.02+-+32x32.zip",
+                    "file_name": "Improved AE 2 1.20.1 ver 0.03 - 32x32.zip",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7643,21 +7646,21 @@
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/dOV2wnYX/versions/dx2qVbMr/Improved+AE+2+ver+0.02+-+32x32.zip",
-                    "id": "dx2qVbMr",
+                    "url": "https://cdn.modrinth.com/data/dOV2wnYX/versions/rZ9MKijP/Improved AE 2 1.20.1 ver 0.03 - 32x32.zip",
+                    "id": "rZ9MKijP",
                     "parent_id": "dOV2wnYX",
                     "hashes": {
-                        "sha512": "4e325591554e7033e5cb0910efa8fd1dbb1c0798d0e01c8e7f935b43b7d4a8ae850143c2866c8c5514e2d70a1a39d852a701759f4b0b13cdcec5acec67a4d3ee",
-                        "sha1": "d3e66e4dbe2507f946fb3814dd497a0e479310d1"
+                        "sha512": "c12562cdf7b411bf0d63d096a4690a7172e4986d0fd253c733182ff04668bbe19a8559504d5243e9fe0da8b9a8b34f8d7b1b8e0475e13e17a71fdc9bebc2c0bc",
+                        "sha1": "298baeaea7237a0c5361fd3186e4f5ad5bc0c266"
                     },
                     "required_dependencies": [],
-                    "size": 1736883,
-                    "date_published": "2023-12-20T22:17:54.786513Z"
+                    "size": 1987955,
+                    "date_published": "2025-07-16T05:36:29.702562Z"
                 }
             ]
         },
         {
-            "pakku_id": "kPsJ7kAbZgiJic9u",
+            "pakku_id": "jZb43VmCUz6QhpIQ",
             "type": "RESOURCE_PACK",
             "side": "CLIENT",
             "slug": {
@@ -7673,6 +7676,24 @@
                 "modrinth": "ZyLGK5YD"
             },
             "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Improved Create 32x ver 0.04 1.18.2-1.20.1-1.21.1.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6934/603/Improved Create 32x ver 0.04 1.18.2-1.20.1-1.21.1.zip",
+                    "id": "6934603",
+                    "parent_id": "973588",
+                    "hashes": {
+                        "sha1": "e88d82dc5aa9eaab0f865038bd6cb0d8c726db3b",
+                        "md5": "5eaec6c3219fafd59dbc825cb031c832"
+                    },
+                    "required_dependencies": [],
+                    "size": 7541771,
+                    "date_published": "2025-08-27T15:44:21.017Z"
+                },
                 {
                     "type": "modrinth",
                     "file_name": "Improved Create 32x ver 0.04 1.18.2-1.20.1-1.21.1.zip",
@@ -7695,24 +7716,6 @@
                     "required_dependencies": [],
                     "size": 7541771,
                     "date_published": "2025-08-27T15:45:03.011726Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "Improved Create 32x ver 0.04 1.18.2-1.20.1-1.21.1.zip",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6934/603/Improved Create 32x ver 0.04 1.18.2-1.20.1-1.21.1.zip",
-                    "id": "6934603",
-                    "parent_id": "973588",
-                    "hashes": {
-                        "sha1": "e88d82dc5aa9eaab0f865038bd6cb0d8c726db3b",
-                        "md5": "5eaec6c3219fafd59dbc825cb031c832"
-                    },
-                    "required_dependencies": [],
-                    "size": 7541771,
-                    "date_published": "2025-08-27T15:44:21.017Z"
                 }
             ]
         },
@@ -9715,7 +9718,7 @@
             ]
         },
         {
-            "pakku_id": "v7A0bgYd4KcqmpVA",
+            "pakku_id": "KKOHP7XIf8ibsOeY",
             "type": "RESOURCE_PACK",
             "slug": {
                 "curseforge": "new-animals-for-terrafirmacraft"
@@ -12460,7 +12463,7 @@
             ]
         },
         {
-            "pakku_id": "XZwi3JnDyzH7acsj",
+            "pakku_id": "73uV6QykaOBW9DSj",
             "type": "RESOURCE_PACK",
             "slug": {
                 "curseforge": "tfc-anvil-helper"
