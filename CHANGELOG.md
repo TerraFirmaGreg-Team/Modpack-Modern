@@ -4,6 +4,9 @@
 ### Changes
 - Added roaming Illager patrols @Pyritie
 - Added Vat recipe for boiling salt water into salt (#1784) @TreyR9
+- Power Substation is now available at EV (#1790) @TomPlop
+- Increased the tier of EBF coil required for Desh (#1790) @TomPlop
+- Quantum Eye now requires a Cryogenized Fluix Pearl (#1790) @TomPlop
 ### Bug fixes
 - Added missing recipes for TFC Macaw's barbed fences
 - Fixed Field Generator recipes to follow the new path of pearl progression (#1790) @TomPlop
