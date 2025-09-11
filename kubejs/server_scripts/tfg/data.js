@@ -169,6 +169,11 @@ function registerTFGItemSize(event) {
     "huge_item_pipes"
   );
 
+  // Air ducts
+  event.itemSize("gtceu:small_duct_pipe", "very_small", "very_light", "small_duct_pipe");
+  event.itemSize("gtceu:large_duct_pipe", "normal", "light", "large_duct_pipe");
+  event.itemSize("gtceu:huge_duct_pipe", "normal", "medium", "huge_duct_pipe");
+
   // Cables
   event.itemSize(Ingredient.of("#forge:single_cables").or("#forge:single_wires"), "tiny", "very_light", "cables_1x");
   event.itemSize(
@@ -248,7 +253,10 @@ function registerTFGItemSize(event) {
       "expatternprovider:precise_storage_bus",
       "expatternprovider:threshold_export_bus",
       "expatternprovider:oversize_interface_part",
-    ]), "very_small", "very_light", "ae2_small_parts"
+    ]),
+    "very_small",
+    "very_light",
+    "ae2_small_parts"
   );
 }
 
