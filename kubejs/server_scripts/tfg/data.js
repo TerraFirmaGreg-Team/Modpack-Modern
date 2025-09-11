@@ -138,7 +138,7 @@ function registerTFGItemSize(event) {
   event.itemSize(Ingredient.of("#forge:whisks"), "large", "medium", "whisks");
 
   // Fluid pipes
-  event.itemSize(Ingredient.of("#forge:tiny_fluid_pipes"), "tiny", "very_light", "small_fluid_pipes");
+  event.itemSize(Ingredient.of("#forge:tiny_fluid_pipes"), "tiny", "very_light", "tiny_fluid_pipes");
   event.itemSize(Ingredient.of("#forge:small_fluid_pipes"), "very_small", "very_light", "small_fluid_pipes");
   event.itemSize(Ingredient.of("#forge:large_fluid_pipes"), "normal", "light", "large_fluid_pipes");
   event.itemSize(Ingredient.of("#forge:huge_fluid_pipes"), "normal", "medium", "huge_fluid_pipes");
@@ -234,6 +234,7 @@ function registerTFGItemSize(event) {
       "ae2:item_p2p_tunnel",
       "ae2:fluid_p2p_tunnel",
       "ae2:light_p2p_tunnel",
+      "ae2:facade",
       "expatternprovider:ex_interface_part",
       "expatternprovider:ex_export_bus_part",
       "expatternprovider:ex_import_bus_part",
