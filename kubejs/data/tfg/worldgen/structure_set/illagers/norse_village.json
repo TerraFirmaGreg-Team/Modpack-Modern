@@ -13,6 +13,12 @@
 		"salt": 26256356324,
 		"spacing": 50,
 		"separation": 30,
-		"type": "minecraft:random_spread"
+		"type": "tfc:climate",
+		"climate": {
+			"min_temperature": -12,
+			"max_temperature": 5,
+			"min_rainfall": 200,
+			"max_forest": "edge"
+		}
 	}
 }
