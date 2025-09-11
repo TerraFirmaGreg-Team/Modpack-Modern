@@ -2,8 +2,8 @@
 	"feature": "tfg:mars/surface/flint_patch",
 	"placement": [
 		{
-			"type": "minecraft:count",
-			"count": 2
+			"type": "minecraft:rarity_filter",
+			"chance": 2
 		},
 		{
 			"type": "minecraft:in_square"

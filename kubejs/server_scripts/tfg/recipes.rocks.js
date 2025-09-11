@@ -1,4 +1,4 @@
-// priority: 0
+﻿// priority: 0
 "use strict";
 
 /**
@@ -299,35 +299,6 @@ function registerTFGRockRecipes(event) {
 			.recipeTier(1)
 			.id(`greate:pressing/${x.raw}_to_${x.cracked}`.replace(/:/g, '_'))
 	})
-
-	// forge hammer / mechanical press
-	const HAMMERING = [
-		{ raw: 'minecraft:deepslate', hammered: 'minecraft:cobbled_deepslate', duration: 10, eu: 16 },
-		{ raw: 'minecraft:cobbled_deepslate', hammered: 'tfc:sand/black', duration: 20*3.5, eu: 2 },
-		{ raw: 'minecraft:blackstone', hammered: 'tfc:sand/black', duration: 20*3.5, eu: 2 },
-		{ raw: 'beneath:crackrack', hammered: 'tfc:sand/pink', duration: 20*3.5, eu: 2 },
-		{ raw: 'minecraft:dripstone_block', hammered: 'tfc:sand/brown', duration: 20*3.5, eu: 2 },
-
-		{ raw: 'ad_astra:moon_stone', hammered: 'ad_astra:moon_cobblestone', duration: 10, eu: 16 },
-		{ raw: 'tfg:rock/hardened_moon_stone', hammered: 'ad_astra:moon_cobblestone', duration: 10, eu: 16 },
-		{ raw: 'ad_astra:moon_cobblestone', hammered: 'ad_astra:moon_sand', duration: 20*3.5, eu: 2 },
-		{ raw: 'ad_astra:moon_deepslate', hammered: 'ad_astra:moon_sand', duration: 20*3.5, eu: 2 },
-		{ raw: 'tfg:rock/hardened_moon_deepslate', hammered: 'ad_astra:moon_sand', duration: 20*3.5, eu: 2 },
-		{ raw: 'ad_astra:mars_stone', hammered: 'ad_astra:mars_cobblestone', duration: 10, eu: 16 },
-		{ raw: 'tfg:rock/hardened_mars_stone', hammered: 'ad_astra:mars_cobblestone', duration: 10, eu: 16 },
-		{ raw: 'ad_astra:mars_cobblestone', hammered: 'ad_astra:mars_sand', duration: 20*3.5, eu: 2 },
-		{ raw: 'ad_astra:venus_stone', hammered: 'ad_astra:venus_cobblestone', duration: 10, eu: 16 },
-		{ raw: 'tfg:rock/hardened_venus_stone', hammered: 'ad_astra:venus_cobblestone', duration: 10, eu: 16 },
-		{ raw: 'ad_astra:venus_cobblestone', hammered: 'ad_astra:venus_sand', duration: 20*3.5, eu: 2 },
-		{ raw: 'ad_astra:mercury_stone', hammered: 'ad_astra:mercury_cobblestone', duration: 10, eu: 16 },
-		{ raw: 'tfg:rock/hardened_mercury_stone', hammered: 'ad_astra:mercury_cobblestone', duration: 10, eu: 16 },
-		{ raw: 'ad_astra:mercury_cobblestone', hammered: 'tfc:sand/red', duration: 20*3.5, eu: 2 },
-		{ raw: 'ad_astra:glacio_stone', hammered: 'ad_astra:glacio_cobblestone', duration: 10, eu: 16 },
-		{ raw: 'tfg:rock/hardened_glacio_stone', hammered: 'ad_astra:glacio_cobblestone', duration: 10, eu: 16 },
-		{ raw: 'ad_astra:glacio_cobblestone', hammered: 'tfc:sand/white', duration: 20*3.5, eu: 2 },
-		{ raw: 'ad_astra:conglomerate', hammered: 'tfc:rock/gravel/conglomerate', duration: 10, eu: 16 },
-		{ raw: 'ad_astra:permafrost', hammered: '4x gtceu:ice_dust', duration: 20, eu: 2 }
-	]
 
 	// Defined in kubejs/startup_scripts/tfg/constants.js
 	global.HAMMERING.forEach(x => {
@@ -975,5 +946,21 @@ function registerTFGRockRecipes(event) {
 		.duration(40)
 		.EUt(2)
 	
+	//#endregion
+
+	//#region Crackrack/netherrack dust compat
+	event.recipes.gtceu.macerator(`raw_crackrack_to_dust`)
+		.itemInputs('beneath:crackrack')
+		.itemOutputs('gtceu:netherrack_dust')
+		.duration(150)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+	event.recipes.gtceu.macerator('crackrack_cobble_to_dust')
+		.itemInputs('tfg:rock/cobble_crackrack')
+		.itemOutputs('gtceu:netherrack_dust')
+		.duration(150)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 	//#endregion
 }

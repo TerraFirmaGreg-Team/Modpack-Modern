@@ -265,4 +265,14 @@ function registerTFGStoneDustRecipes(event) {
 		.itemInputs('2x gtceu:quartz_sand_dust')
 		.itemOutputs('gtceu:quartzite_dust')
 		.chancedOutput('#forge:dusts/nether_quartz', 2000, 0)
+
+	event.recipes.gtceu.centrifuge('netherrack_separation')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(10 * 20)
+		.itemInputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Netherrack, 1))
+		.itemOutputs(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.SiliconDioxide, 1))
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Graphite, 1), 3500, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Sodium, 1), 4500, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Sulfur, 1), 3500, 0)
+		.outputFluids(Fluid.of('gtceu:oxygen', 12))
 }

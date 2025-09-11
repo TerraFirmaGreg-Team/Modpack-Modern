@@ -818,14 +818,14 @@ function registerGTCEuMachineRecipes(event) {
 	// Steam multi parts
 
 	removeMaceratorRecipe(event, 'macerate_steel_machine_casing')
-	event.shaped('gtceu:steel_machine_casing', [
+	event.recipes.gtceu.shaped('gtceu:steel_machine_casing', [
 		' A ',
 		'ABA',
 		' A '
 	], {
 		A: ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 1),
 		B: '#forge:tools/hammers'
-	}).id('gtceu:shaped/steel_hull')
+	}).addMaterialInfo().id('gtceu:shaped/steel_hull')
 	
 	removeMaceratorRecipe(event, 'macerate_steam_input_hatch')
 	event.recipes.gtceu.shaped('gtceu:steam_input_hatch', [
@@ -983,7 +983,6 @@ function registerGTCEuMachineRecipes(event) {
 		.circuit(4)
 		.duration(2.5 * 20)
 		.EUt(16)
-		.addMaterialInfo(true)
 
 	event.recipes.gtceu.assembler('tfg:casings/machine_casing_stainless_evaporation')
 		.itemInputs('gtceu:clean_machine_casing', '4x gtceu:annealed_copper_double_wire')
@@ -1166,10 +1165,10 @@ function registerGTCEuMachineRecipes(event) {
 
 	// Multiblock
 
-	/* LOCKED UNTIL VENUS
+	/* LOCKED UNTIL MARS
 
 	event.shaped(
-		'gtceu:extraterrestrial_ore_fabricator',
+		'gtceu:ostrum_linear_accelerator',
 		[	'USU',
 			'WZW',
 			'PTP'],
@@ -1181,7 +1180,7 @@ function registerGTCEuMachineRecipes(event) {
 			T: '#forge:single_cables/platinum',
 			P: 'gtceu:iv_electric_pump'
 		}
-	).id('gtceu:shaped/extraterrestrial_ore_fabricator')
+	).id('gtceu:shaped/ostrum_linear_accelerator')
 
 	*/
 
