@@ -1,0 +1,18 @@
+{
+	"structures": [
+		{
+			"structure": "tfg:illagers/norse_village_living",
+			"weight": 75
+		},
+		{
+			"structure": "tfg:illagers/norse_village_ruined",
+			"weight": 25
+		}
+	],
+	"placement": {
+		"salt": 26256356324,
+		"spacing": 50,
+		"separation": 30,
+		"type": "minecraft:random_spread"
+	}
+}
