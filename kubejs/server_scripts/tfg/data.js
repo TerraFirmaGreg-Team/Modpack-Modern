@@ -91,7 +91,7 @@ function registerTFGItemSize(event) {
   event.itemSize(orArray(global.FRAMED_TINY_BLOCKS), "very_small", "very_light", "framed_tiny_blocks");
   event.itemSize(Ingredient.of("#forge:gears"), "large", "heavy", "gears");
   event.itemSize(Ingredient.of("#forge:glass_panes"), "small", "very_light", "glass_panes");
-  event.itemSize(Ingredient.of("#tfg:greate/crushing_wheels"), "large", "medium", "crushing_wheels");
+  event.itemSize(Ingredient.of("#greate:crushing_wheels"), "large", "medium", "crushing_wheels");
   event.itemSize(Ingredient.of("#tfg:gregtech/molds"), "large", "heavy", "gregtech_molds");
   event.itemSize(Ingredient.of("#forge:hot_ingots"), "large", "medium", "hot_ingots");
   event.itemSize(Ingredient.of("#forge:rods/long"), "large", "medium", "long_rods");
@@ -136,6 +136,119 @@ function registerTFGItemSize(event) {
   event.itemSize("vintageimprovements:helve_hammer", "large", "medium", "vintage_helve_hammer");
   event.itemSize("vintageimprovements:lathe", "normal", "medium", "vintage_lathe");
   event.itemSize(Ingredient.of("#forge:whisks"), "large", "medium", "whisks");
+
+  // Fluid pipes
+  event.itemSize(Ingredient.of("#forge:tiny_fluid_pipes"), "tiny", "very_light", "small_fluid_pipes");
+  event.itemSize(Ingredient.of("#forge:small_fluid_pipes"), "very_small", "very_light", "small_fluid_pipes");
+  event.itemSize(Ingredient.of("#forge:large_fluid_pipes"), "normal", "light", "large_fluid_pipes");
+  event.itemSize(Ingredient.of("#forge:huge_fluid_pipes"), "normal", "medium", "huge_fluid_pipes");
+  event.itemSize(
+    Ingredient.of("#forge:quadruple_fluid_pipes").or("#forge:nonuple_fluid_pipes"),
+    "normal",
+    "medium",
+    "multiple_fluid_pipes"
+  );
+
+  // Item pipes
+  event.itemSize(
+    Ingredient.of("#forge:small_item_pipes").or("#forge:small_restrictive_pipes"),
+    "very_small",
+    "very_light",
+    "small_item_pipes"
+  );
+  event.itemSize(
+    Ingredient.of("#forge:large_item_pipes").or("#forge:large_restrictive_pipes"),
+    "normal",
+    "light",
+    "large_item_pipes"
+  );
+  event.itemSize(
+    Ingredient.of("#forge:huge_item_pipes").or("#forge:huge_restrictive_pipes"),
+    "normal",
+    "medium",
+    "huge_item_pipes"
+  );
+
+  // Cables
+  event.itemSize(Ingredient.of("#forge:single_cables").or("#forge:single_wires"), "tiny", "very_light", "cables_1x");
+  event.itemSize(
+    Ingredient.of("#forge:double_cables").or("#forge:double_wires"),
+    "very_small",
+    "very_light",
+    "cables_2x"
+  );
+  event.itemSize(Ingredient.of("#forge:octal_cables").or("#forge:octal_wires"), "normal", "light", "cables_8x");
+  event.itemSize(Ingredient.of("#forge:hex_cables").or("#forge:hex_wires"), "normal", "medium", "cables_16x");
+  event.itemSize("computercraft:cable", "tiny", "very_light", "networking_cable");
+  event.itemSize("gtceu:normal_optical_pipe", "very_small", "very_light", "optical_fiber_cable");
+  event.itemSize(
+    Ingredient.of("#ae2:glass_cable").or("#ae2:covered_cable").or("#ae2:smart_cable"),
+    "very_small",
+    "very_light",
+    "me_cables"
+  );
+  event.itemSize(
+    Ingredient.of("#ae2:covered_dense_cable").or("#ae2:smart_dense_cable"),
+    "normal",
+    "light",
+    "me_dense_cables"
+  );
+  event.itemSize(
+    orArray([
+      "ae2:quartz_fixture",
+      "ae2:light_detector",
+      "ae2:wireless_access_point",
+      "ae2:quartz_fiber",
+      "ae2:toggle_bus",
+      "ae2:inverted_toggle_bus",
+      "ae2:cable_anchor",
+      "ae2:level_emitter",
+      "ae2:energy_level_emitter",
+      "expatternprovider:threshold_level_emitter",
+    ]),
+    "tiny",
+    "very_light",
+    "ae2_tiny_parts"
+  );
+  event.itemSize(
+    orArray([
+      "ae2:monitor",
+      "ae2:semi_dark_monitor",
+      "ae2:dark_monitor",
+      "ae2:storage_bus",
+      "ae2:import_bus",
+      "ae2:export_bus",
+      "ae2:annihilation_plane",
+      "ae2:formation_plane",
+      "ae2:pattern_encoding_terminal",
+      "ae2:crafting_terminal",
+      "ae2:terminal",
+      "ae2:storage_monitor",
+      "ae2:conversion_monitor",
+      "ae2:cable_pattern_provider",
+      "ae2:cable_interface",
+      "ae2:pattern_access_terminal",
+      "ae2:cable_energy_acceptor",
+      "ae2:me_p2p_tunnel",
+      "ae2:redstone_p2p_tunnel",
+      "ae2:item_p2p_tunnel",
+      "ae2:fluid_p2p_tunnel",
+      "ae2:light_p2p_tunnel",
+      "expatternprovider:ex_interface_part",
+      "expatternprovider:ex_export_bus_part",
+      "expatternprovider:ex_import_bus_part",
+      "expatternprovider:ex_pattern_access_part",
+      "expatternprovider:tag_storage_bus",
+      "expatternprovider:tag_export_bus",
+      "expatternprovider:mod_storage_bus",
+      "expatternprovider:mod_export_bus",
+      "expatternprovider:active_formation_plane",
+      "expatternprovider:precise_export_bus",
+      "expatternprovider:precise_storage_bus",
+      "expatternprovider:threshold_export_bus",
+      "expatternprovider:oversize_interface_part",
+    ]), "very_small", "very_light", "ae2_small_parts"
+  );
 }
 
 //up, down, horizontal
