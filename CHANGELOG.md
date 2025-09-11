@@ -2,7 +2,11 @@
 
 ## [Unreleased]
 ### Changes
-- Added roaming Illager patrols @Pyritie
+### Bug fixes
+
+## [0.10.13] - 11-09-2025
+### Changes
+- Primitive Illagers are now on the hunt... @Pyritie
 - Added Vat recipe for boiling salt water into salt (#1784) @TreyR9
 - Power Substation is now available at EV (#1790) @TomPlop
 - Increased the tier of EBF coil required for Desh (#1790) @TomPlop
@@ -15,6 +19,9 @@
 - Fixed Field Generator recipes to follow the new path of pearl progression (#1790) @TomPlop
 - Fixed some backpack upgrades to be consistent with their required circuits (#1790) @TomPlop
 - Fixed Keratophyre not having a stone dust @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry
 
 ## [0.10.12] - 09-09-2025
 ### Changes
