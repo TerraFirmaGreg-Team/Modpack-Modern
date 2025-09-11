@@ -111,11 +111,19 @@
 			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_ethylene.subtitle}"
-			tasks: [{
-				id: "29191DABA0ACE155"
-				item: "gtceu:ethylene_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "29191DABA0ACE155"
+					item: "gtceu:ethylene_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "354BABE3C51C2193"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.medium_voltage.mv_ethylene.title}"
 			x: -10.0d
 			y: 1.0d
@@ -126,15 +134,24 @@
 				"6A304E453D74C57C"
 			]
 			description: ["{quests.medium_voltage.mv_ethanol.desc}"]
+			icon: "gtceu:ethanol_bucket"
 			id: "5D9D01EF219A31C5"
 			optional: true
 			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_ethanol.subtitle}"
-			tasks: [{
-				id: "6D7350EA7AB6CF25"
-				item: "gtceu:ethanol_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6D7350EA7AB6CF25"
+					item: "gtceu:ethanol_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "02F5020AAB4C34F4"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.medium_voltage.mv_ethanol.title}"
 			x: -8.0d
 			y: -0.5d
@@ -161,7 +178,20 @@
 					type: "item"
 				}
 				{
-					id: "0A030191139FF66A"
+					id: "5E1F539CC1A08044"
+					item: "gtceu:sulfuric_light_fuel_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1A5A8490B26FABE1"
+					item: "gtceu:light_fuel_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "29CA9DEDB47956BC"
+					title: "{quests.tasktype.checkmark}"
 					type: "checkmark"
 				}
 			]
@@ -181,11 +211,25 @@
 			optional: true
 			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_fuel_cracking.subtitle}"
-			tasks: [{
-				id: "5687D81E6BFDC7E0"
-				item: "gtceu:severely_steam_cracked_naphtha_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5687D81E6BFDC7E0"
+					item: "gtceu:severely_steam_cracked_naphtha_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "529E44B75535D1FE"
+					item: "gtceu:severely_steam_cracked_light_fuel_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2FC65EDF34EEF471"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.medium_voltage.mv_fuel_cracking.title}"
 			x: -8.5d
 			y: 2.5d
@@ -828,6 +872,7 @@
 				}
 				{
 					id: "06279C01C8950D46"
+					title: "{quests.tasktype.checkmark}"
 					type: "checkmark"
 				}
 			]
@@ -849,15 +894,24 @@
 				"{quests.medium_voltage.mv_sulfuric_acid.desc.3}"
 			]
 			hide_dependency_lines: true
+			icon: "gtceu:sulfuric_acid_bucket"
 			id: "316FF60D6FFE97CE"
 			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_sulfuric_acid.subtitle}"
-			tasks: [{
-				id: "06B5F04DEFC12458"
-				item: "gtceu:sulfuric_acid_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "06B5F04DEFC12458"
+					item: "gtceu:sulfuric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "17FDE848EFD8F80F"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.medium_voltage.mv_sulfuric_acid.title}"
 			x: -10.0d
 			y: -0.5d
@@ -873,11 +927,19 @@
 			id: "64CACABB48635904"
 			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_hydrochloric.subtitle}"
-			tasks: [{
-				id: "34147C1DD7B8DE55"
-				item: "gtceu:hydrochloric_acid_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "34147C1DD7B8DE55"
+					item: "gtceu:hydrochloric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4C41225D9804BDE8"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.medium_voltage.mv_hydrochloric.title}"
 			x: -10.0d
 			y: -2.5d
@@ -1063,17 +1125,25 @@
 				{
 					id: "027B41ACE1566E28"
 					item: "gtceu:refinery_gas_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "0ABB837337D9CAF9"
 					item: "gtceu:methane_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "401B9B85969AE681"
 					item: "gtceu:lpg_bucket"
+					optional_task: true
 					type: "item"
+				}
+				{
+					id: "504B31ED744A91BB"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
 				}
 			]
 			title: "{quests.medium_voltage.mv_lpg.title}"
@@ -1350,13 +1420,22 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.medium_voltage.mv_chlorine.desc}"]
+			icon: "gtceu:chlorine_bucket"
 			id: "694DF1C33B53A0D5"
 			subtitle: "{quests.medium_voltage.mv_chlorine.subtitle}"
-			tasks: [{
-				id: "28B146A81C429249"
-				item: "gtceu:chlorine_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "28B146A81C429249"
+					item: "gtceu:chlorine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "43F36B864F6948C8"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.medium_voltage.mv_chlorine.title}"
 			x: -9.5d
 			y: -3.5d
@@ -1364,14 +1443,22 @@
 		{
 			dependencies: ["45449ECE4F8128E7"]
 			description: ["{quests.medium_voltage.mv_hydrogen.desc}"]
+			icon: "gtceu:hydrogen_bucket"
 			id: "042E4EF7CF366C0C"
-			optional: true
 			subtitle: "{quests.medium_voltage.mv_hydrogen.subtitle}"
-			tasks: [{
-				id: "089961E2732EDC72"
-				item: "gtceu:hydrogen_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "089961E2732EDC72"
+					item: "gtceu:hydrogen_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5F4C1C813954B210"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.medium_voltage.mv_hydrogen.title}"
 			x: -10.5d
 			y: -3.5d
@@ -1466,7 +1553,6 @@
 			subtitle: "{quests.medium_voltage.mv_kanthal_ingot.subtitle}"
 			tasks: [
 				{
-					count: 128L
 					id: "5D22FAD1B450AFAB"
 					item: "gtceu:kanthal_ingot"
 					type: "item"

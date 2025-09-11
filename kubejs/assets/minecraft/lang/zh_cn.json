@@ -40,6 +40,13 @@
   "block.minecraft.polished_blackstone_stairs": "磨制辉石岩楼梯",
   "block.minecraft.polished_blackstone_wall": "磨制辉石岩墙",
   "block.minecraft.dripstone_block": "天然石灰华",
+  "block.minecraft.nether_bricks": "角斑岩砖",
+  "block.minecraft.nether_brick_fence": "角斑岩砖栅栏",
+  "block.minecraft.nether_brick_slab": "角斑岩砖台阶",
+  "block.minecraft.nether_brick_wall": "角斑岩砖墙",
+  "block.minecraft.nether_brick_stairs": "角斑岩砖楼梯",
+  "block.minecraft.cracked_nether_bricks": "裂纹角斑岩砖",
+  "block.minecraft.chiseled_nether_bricks": "雕纹角斑岩砖",
   "block.minecraft.magma_block": "辉石岩岩浆块",
   "block.minecraft.twisting_vines": "光绽花藤",
   "block.minecraft.pearlescent_froglight": "珠光光绽花",
@@ -65,5 +72,6 @@
   "item.minecraft.netherite_leggings": "蓝钢潜水护腿",
   "item.minecraft.string": "丝线",
   "item.minecraft.glow_ink_sac": "荧光染料",
+  "item.minecraft.nether_brick": "角斑岩砖",
   "material.tfg.dripstone": "石灰华"
 }

@@ -194,10 +194,7 @@
 			y: 2.25d
 		}
 		{
-			dependencies: [
-				"35E7E45987D9B1F6"
-				"14D277A164202FF8"
-			]
+			dependencies: ["35E7E45987D9B1F6"]
 			description: [
 				"The &3Large Combustion Engine&r is a multiblock able to burn &dCombustion Fuels&r for even more Power Generation!"
 				""

@@ -933,17 +933,26 @@
 			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_oxygen.subtitle}"
-			tasks: [{
-				id: "6239439140B6B39B"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:oxygen\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:oxygen\"}})item(gtceu:oxygen_bucket))"
+			tasks: [
+				{
+					id: "6239439140B6B39B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:oxygen\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:oxygen\"}})item(gtceu:oxygen_bucket))"
+						}
 					}
+					optional_task: true
+					title: "{quests.low_voltage.lv_oxygen.task}"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "7B08D711ECDA1BE7"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.low_voltage.lv_oxygen.title}"
 			x: -4.0d
 			y: 10.5d
@@ -955,17 +964,26 @@
 			id: "0EAC071414AEC07E"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_glue.subtitle}"
-			tasks: [{
-				id: "062DC32EE976C58B"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:glue\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:glue\"}})item(gtceu:glue_bucket))"
+			tasks: [
+				{
+					id: "062DC32EE976C58B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:glue\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:glue\"}})item(gtceu:glue_bucket))"
+						}
 					}
+					optional_task: true
+					title: "{quests.low_voltage.lv_glue.task}"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "252EF730A28B9CB7"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.low_voltage.lv_glue.title}"
 			x: -2.0d
 			y: 10.5d
@@ -1268,20 +1286,30 @@
 		{
 			dependencies: ["15928F50AE80A5CF"]
 			description: ["{quests.low_voltage.lv_nitrogen.desc}"]
+			icon: "gtceu:nitrogen_bucket"
 			id: "39F6BCF4B8DFC7D4"
 			shape: "square"
 			subtitle: "{quests.low_voltage.lv_nitrogen.subtitle}"
-			tasks: [{
-				id: "332632EB70DC54EB"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:nitrogen\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:nitrogen\"}})item(gtceu:nitrogen_bucket))"
+			tasks: [
+				{
+					id: "332632EB70DC54EB"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:nitrogen\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:nitrogen\"}})item(gtceu:nitrogen_bucket))"
+						}
 					}
+					optional_task: true
+					title: "{quests.low_voltage.lv_nitrogen.task}"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "2B5F5E0D08B8D849"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.low_voltage.lv_nitrogen.title}"
 			x: -6.0d
 			y: 10.5d
@@ -1550,7 +1578,6 @@
 			id: "6042514C8FC54334"
 			subtitle: "{quests.low_voltage.cupronickel_ingot.subtitle}"
 			tasks: [{
-				count: 128L
 				id: "701DEB748320107C"
 				item: "gtceu:cupronickel_ingot"
 				type: "item"

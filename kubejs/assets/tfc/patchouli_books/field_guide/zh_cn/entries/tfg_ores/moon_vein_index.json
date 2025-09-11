@@ -29,30 +29,10 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 230$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 10 — 80$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 安山岩, 玄武岩, 英安岩, 辉长岩",
+      "text": "$(thing)稀有度$(): 230$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 10 — 80$(br)$(thing)尺寸$(): 30$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 安山岩, 玄武岩, 英安岩, 辉长岩",
       "title": "戴斯矿, 钛铁矿",
       "type": "patchouli:text",
       "anchor": "moon_desh"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "戴斯矿",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/desh"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 40%$(br)$(thing)来源$(): 铁, 钛, 氮$(br)$(thing)化学式$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
@@ -71,7 +51,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 25%$(br)$(thing)来源$(): 铁, 钛$(br)$(thing)化学式$(): FeTiO₃",
+      "text": "$(thing)百分比$(): 30%$(br)$(thing)来源$(): 铁, 钛$(br)$(thing)化学式$(): FeTiO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "戴斯矿",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/desh"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 25%$(br)$(thing)来源$(): 铁, 钛, 氮$(br)$(thing)化学式$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -91,7 +91,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 20%$(br)$(thing)来源$(): 铝$(br)$(thing)化学式$(): Al",
+      "text": "$(thing)百分比$(): 25%$(br)$(thing)来源$(): 铝$(br)$(thing)化学式$(): Al",
       "type": "patchouli:multiblock"
     },
     {
@@ -111,7 +111,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 15%$(br)$(thing)来源$(): 镁, 金红石, 钛$(br)$(thing)化学式$(): (Mg,Fe)Ti₂O₅",
+      "text": "$(thing)百分比$(): 20%$(br)$(thing)来源$(): 镁, 金红石, 钛$(br)$(thing)化学式$(): (Mg,Fe)Ti₂O₅",
       "type": "patchouli:multiblock"
     },
     {
@@ -121,7 +121,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 310$(br)$(thing)密度$(): 0.2$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 50$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 响岩, 安山岩, 流纹岩, 英安岩",
+      "text": "$(thing)稀有度$(): 310$(br)$(thing)密度$(): 0.2$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 响岩, 安山岩, 流纹岩, 英安岩",
       "title": "氟碳镧铈矿, 独居石",
       "type": "patchouli:text",
       "anchor": "moon_monazite"
@@ -213,7 +213,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 200$(br)$(thing)密度$(): 0.45$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 响岩, 流纹岩, 辉长岩",
+      "text": "$(thing)稀有度$(): 200$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 响岩, 流纹岩, 辉长岩",
       "title": "白钨矿, 钨酸锂",
       "type": "patchouli:text",
       "anchor": "moon_scheelite"
@@ -280,7 +280,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 190$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 66$(br)$(thing)尺寸$(): 36$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 斜长岩, 玄武岩, 苏长岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 190$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 66$(br)$(thing)尺寸$(): 30$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 斜长岩, 玄武岩, 苏长岩, 辉长岩, 闪长岩",
       "title": "皂石, 滑石, 天然碱",
       "type": "patchouli:text",
       "anchor": "moon_lubricant"
@@ -387,7 +387,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 180$(br)$(thing)密度$(): 0.3$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 10 — 100$(br)$(thing)尺寸$(): 40$(br)$(thing)高度$(): 9$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 响岩, 斜长岩, 苏长岩",
+      "text": "$(thing)稀有度$(): 180$(br)$(thing)密度$(): 0.3$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 10 — 100$(br)$(thing)尺寸$(): 30$(br)$(thing)高度$(): 9$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 响岩, 斜长岩, 苏长岩",
       "title": "石膏, 方解石",
       "type": "patchouli:text",
       "anchor": "moon_gypsum"
@@ -494,7 +494,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 260$(br)$(thing)密度$(): 0.55$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 0 — 120$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 12$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 响岩, 斜长岩, 玄武岩, 玄武岩, 辉长岩",
+      "text": "$(thing)稀有度$(): 260$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 0 — 120$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 9$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 响岩, 斜长岩, 玄武岩, 玄武岩, 辉长岩",
       "title": "石墨, 钻石",
       "type": "patchouli:text",
       "anchor": "moon_graphite"
@@ -561,7 +561,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 250$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 5 — 85$(br)$(thing)尺寸$(): 55$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 流纹岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 250$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 5 — 85$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 流纹岩, 辉长岩, 闪长岩",
       "title": "硅镁镍矿, 辉钴矿",
       "type": "patchouli:text",
       "anchor": "moon_garnierite"
@@ -668,7 +668,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 210$(br)$(thing)密度$(): 0.3$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 90$(br)$(thing)尺寸$(): 35$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 苏长岩, 英安岩",
+      "text": "$(thing)稀有度$(): 210$(br)$(thing)密度$(): 0.3$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 90$(br)$(thing)尺寸$(): 30$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 苏长岩, 英安岩",
       "title": "硝石, 电石",
       "type": "patchouli:text",
       "anchor": "moon_saltpeter"
@@ -1036,7 +1036,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 250$(br)$(thing)密度$(): 0.2$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 20 — 100$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 响岩, 安山岩, 英安岩",
+      "text": "$(thing)稀有度$(): 250$(br)$(thing)密度$(): 0.2$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 20 — 100$(br)$(thing)尺寸$(): 35$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 响岩, 安山岩, 英安岩",
       "title": "红石, 朱砂, 红宝石",
       "type": "patchouli:text",
       "anchor": "moon_redstone"
@@ -1128,7 +1128,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 260$(br)$(thing)密度$(): 0.45$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 0 — 120$(br)$(thing)高度$(): 70$(br)$(thing)半径$(): 10$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 响岩, 斜长岩, 玄武岩",
+      "text": "$(thing)稀有度$(): 260$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 0 — 120$(br)$(thing)高度$(): 70$(br)$(thing)半径$(): 8$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 响岩, 斜长岩, 玄武岩",
       "title": "绿宝石, 铍矿",
       "type": "patchouli:text",
       "anchor": "moon_beryllium"
@@ -1449,7 +1449,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 230$(br)$(thing)密度$(): 0.3$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 10 — 100$(br)$(thing)尺寸$(): 60$(br)$(thing)指示器最大深度$(): 80$(br2)$(thing)岩石类型$(): 响岩, 安山岩, 斜长岩, 流纹岩, 玄武岩, 苏长岩, 英安岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 230$(br)$(thing)密度$(): 0.3$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 10 — 100$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 80$(br2)$(thing)岩石类型$(): 响岩, 安山岩, 斜长岩, 流纹岩, 玄武岩, 苏长岩, 英安岩, 辉长岩, 闪长岩",
       "title": "赛特斯石英矿",
       "type": "patchouli:text",
       "anchor": "moon_quartz"
@@ -1541,7 +1541,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 210$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 20 — 80$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 安山岩, 斜长岩, 玄武岩, 苏长岩, 辉长岩",
+      "text": "$(thing)稀有度$(): 210$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 20 — 80$(br)$(thing)尺寸$(): 35$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 安山岩, 斜长岩, 玄武岩, 苏长岩, 辉长岩",
       "title": "软锰矿 & 钴矿",
       "type": "patchouli:text",
       "anchor": "moon_pyrolusite"
@@ -1633,7 +1633,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 170$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 10 — 80$(br)$(thing)尺寸$(): 40$(br)$(thing)高度$(): 10$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 玄武岩, 花岗岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 170$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 10 — 80$(br)$(thing)尺寸$(): 35$(br)$(thing)高度$(): 10$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 玄武岩, 花岗岩, 闪长岩",
       "title": "金矿, 磁铁矿",
       "type": "patchouli:text",
       "anchor": "moon_gold"
@@ -1725,7 +1725,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 245$(br)$(thing)密度$(): 0.45$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 50$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 玄武岩, 苏长岩, 英安岩, 辉长岩",
+      "text": "$(thing)稀有度$(): 245$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 50$(br)$(thing)尺寸$(): 35$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 玄武岩, 苏长岩, 英安岩, 辉长岩",
       "title": "钼铅矿, 辉钼矿",
       "type": "patchouli:text",
       "anchor": "moon_molybdenum"
@@ -1817,7 +1817,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 200$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 80$(br)$(thing)尺寸$(): 50$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 响岩, 斜长岩, 流纹岩, 玄武岩, 苏长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 200$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 80$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 响岩, 斜长岩, 流纹岩, 玄武岩, 苏长岩, 闪长岩",
       "title": "铝土矿, 钛铁矿",
       "type": "patchouli:text",
       "anchor": "moon_bauxite"
@@ -1884,7 +1884,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 280$(br)$(thing)密度$(): 0.3$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 90$(br)$(thing)尺寸$(): 70$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 斜长岩, 苏长岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 280$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 90$(br)$(thing)尺寸$(): 50$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 斜长岩, 苏长岩, 辉长岩, 闪长岩",
       "title": "铬铁矿, 磁铁矿",
       "type": "patchouli:text",
       "anchor": "moon_magnetite"
@@ -1991,7 +1991,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 210$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 20 — 75$(br)$(thing)尺寸$(): 30$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 斜长岩, 流纹岩, 苏长岩, 英安岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 210$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 20 — 75$(br)$(thing)尺寸$(): 30$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 斜长岩, 流纹岩, 苏长岩, 英安岩, 闪长岩",
       "title": "银矿, 方铅矿, 铅矿",
       "type": "patchouli:text",
       "anchor": "moon_silver"
@@ -2083,7 +2083,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 210$(br)$(thing)密度$(): 0.3$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 10 — 128$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 花岗岩, 苏长岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 210$(br)$(thing)密度$(): 0.3$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 10 — 128$(br)$(thing)尺寸$(): 35$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 花岗岩, 苏长岩, 辉长岩, 闪长岩",
       "title": "锡石矿, 黄铜矿",
       "type": "patchouli:text",
       "anchor": "moon_cassiterite"
@@ -2175,7 +2175,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 215$(br)$(thing)密度$(): 0.5$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 5 — 80$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 安山岩, 玄武岩, 玄武岩, 苏长岩, 英安岩, 辉长岩",
+      "text": "$(thing)稀有度$(): 215$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 5 — 80$(br)$(thing)尺寸$(): 30$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 安山岩, 玄武岩, 玄武岩, 苏长岩, 英安岩, 辉长岩",
       "title": "锰矿, 钽矿",
       "type": "patchouli:text",
       "anchor": "moon_manganese"
@@ -2267,7 +2267,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 205$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 2 — 75$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 响岩, 安山岩, 玄武岩, 英安岩, 辉长岩",
+      "text": "$(thing)稀有度$(): 205$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 2 — 75$(br)$(thing)尺寸$(): 35$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 响岩, 安山岩, 玄武岩, 英安岩, 辉长岩",
       "title": "闪锌矿, 黄铁矿",
       "type": "patchouli:text",
       "anchor": "moon_sphalerite"
@@ -2309,7 +2309,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 35%$(br)$(thing)熔化$(): 铸铁$(br)$(thing)化学式$(): FeS₂",
+      "text": "$(thing)百分比$(): 40%$(br)$(thing)熔化$(): 铸铁$(br)$(thing)化学式$(): FeS₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -2329,12 +2329,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 15%$(br)$(thing)来源$(): 铁, 钛, 氮$(br)$(thing)化学式$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
+      "text": "$(thing)百分比$(): 10%$(br)$(thing)来源$(): 铁, 钛, 氮$(br)$(thing)化学式$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 210$(br)$(thing)密度$(): 0.5$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 0 — 120$(br)$(thing)尺寸$(): 64$(br)$(thing)高度$(): 25$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 响岩, 安山岩, 斜长岩, 流纹岩, 玄武岩, 苏长岩, 英安岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 210$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 0 — 120$(br)$(thing)尺寸$(): 45$(br)$(thing)高度$(): 16$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 响岩, 安山岩, 斜长岩, 流纹岩, 玄武岩, 苏长岩, 英安岩, 辉长岩, 闪长岩",
       "title": "黄玉, 辉铜矿",
       "type": "patchouli:text",
       "anchor": "moon_topaz"
@@ -2426,7 +2426,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 190$(br)$(thing)密度$(): 0.3$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 50 — 128$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 响岩, 安山岩, 流纹岩, 英安岩",
+      "text": "$(thing)稀有度$(): 190$(br)$(thing)密度$(): 0.3$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 50 — 128$(br)$(thing)尺寸$(): 35$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 响岩, 安山岩, 流纹岩, 英安岩",
       "title": "黝铜矿, 辉铜矿",
       "type": "patchouli:text",
       "anchor": "moon_tetrahedrite"

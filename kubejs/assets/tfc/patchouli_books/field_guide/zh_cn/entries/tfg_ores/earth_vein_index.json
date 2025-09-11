@@ -3470,7 +3470,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 170$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -60 — 10$(br)$(thing)尺寸$(): 50$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩",
+      "text": "$(thing)稀有度$(): 170$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -60 — 10$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩",
       "title": "青金石, 蓝金石, 方钠石",
       "type": "patchouli:text",
       "anchor": "normal_lapis"
