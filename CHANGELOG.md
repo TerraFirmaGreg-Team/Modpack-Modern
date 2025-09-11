@@ -10,7 +10,8 @@
 - Moon ore vein tweaks @Pyritie
 ### Bug fixes
 - Fixed issue with the modpack not loading on MacOS or certain Linux distros @Xikaro
-- Added missing recipes for TFC Macaw's barbed fences
+- Fixed Solar Boilers not understanding TFC's variable rain system (#1093) @FiNiTe-Weeb
+- Added missing recipes for TFC Macaw's barbed fences @Pyritie
 - Fixed Field Generator recipes to follow the new path of pearl progression (#1790) @TomPlop
 - Fixed some backpack upgrades to be consistent with their required circuits (#1790) @TomPlop
 - Fixed Keratophyre not having a stone dust @Pyritie
