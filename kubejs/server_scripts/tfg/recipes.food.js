@@ -560,7 +560,7 @@ function registerTFGFoodRecipes(event) {
 	processorRecipe("tomato_sauce", 300, 8, {
 		circuit: 1,
 		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'tfc:food/garlic'],
-		fluidInputs: ['tfg:clean_water 200'],
+		fluidInputs: ['#tfg:clean_water 200'],
 		itemOutputs: ['5x firmalife:food/tomato_sauce'],
 		itemOutputProvider: TFC.isp.of('5x firmalife:food/tomato_sauce').copyOldestFood()
 	})
