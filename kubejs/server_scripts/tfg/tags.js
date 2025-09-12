@@ -434,7 +434,7 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:smooth_stone', 'ad_astra:polished_mars_stone')
 	event.add('tfc:rock/smooth', 'create:polished_cut_dripstone')
  
-	// Crackrack (Keratophyre) [Igneous Intrusive]
+	// Crackrack / "Nether" (Keratophyre) [Igneous Intrusive]
 	event.add('forge:stone', 'beneath:crackrack')
 	event.add('tfc:igneous_intrusive_items', 'beneath:crackrack')
 	event.add('tfc:igneous_intrusive_items', 'minecraft:nether_brick')	
@@ -442,6 +442,16 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:stone_bricks', 'minecraft:nether_bricks')
 	event.add('tfc:igneous_intrusive_items', 'minecraft:nether_bricks')
 	event.add('tfc:rock/bricks', 'minecraft:nether_bricks')
+
+	event.add('forge:stone_bricks', 'minecraft:cracked_nether_bricks')
+	event.add('tfc:igneous_intrusive_items', 'minecraft:cracked_nether_bricks')
+	event.add('tfc:rock/bricks', 'minecraft:cracked_nether_bricks')
+	event.add('tfc:rock/cracked_bricks', 'minecraft:cracked_nether_bricks')
+
+	event.add('forge:stone_bricks', 'minecraft:chiseled_nether_bricks')
+	event.add('tfc:igneous_intrusive_items', 'minecraft:chiseled_nether_bricks')
+	event.add('tfc:rock/bricks', 'minecraft:chiseled_nether_bricks')
+	event.add('tfc:rock/chiseled_bricks', 'minecraft:chiseled_nether_bricks')
 
 	// Basalt
 	event.add('forge:stone', 'minecraft:basalt')
