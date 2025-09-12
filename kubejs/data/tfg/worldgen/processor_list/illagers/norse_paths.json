@@ -1,0 +1,74 @@
+{
+	"processors": [
+		{
+			"processor_type": "minecraft:rule",
+			"rules": [
+				{
+					"input_predicate": {
+						"block": "rnr:hoggin",
+						"predicate_type": "minecraft:block_match"
+					},
+					"location_predicate": {
+						"tag": "minecraft:water",
+						"predicate_type": "minecraft:tag_match"
+					},
+					"output_state": {
+						"Name": "tfc:wood/planks/hickory"
+					}
+				},
+				{
+					"input_predicate": {
+						"block": "rnr:hoggin",
+						"predicate_type": "minecraft:random_block_match",
+						"probability": 0.1
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"output_state": {
+						"Name": "rnr:rock/gravel_road/andesite"
+					}
+				},
+				{
+					"input_predicate": {
+						"block": "rnr:hoggin",
+						"predicate_type": "minecraft:random_block_match",
+						"probability": 0.1
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"output_state": {
+						"Name": "rnr:rock/gravel_road/gabbro"
+					}
+				},
+				{
+					"input_predicate": {
+						"block": "rnr:hoggin",
+						"predicate_type": "minecraft:random_block_match",
+						"probability": 0.05
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"output_state": {
+						"Name": "tfc:grass_path/sandy_loam"
+					}
+				},
+				{
+					"input_predicate": {
+						"block": "rnr:hoggin",
+						"predicate_type": "minecraft:random_block_match",
+						"probability": 0.1
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"output_state": {
+						"Name": "tfc:grass/sandy_loam"
+					}
+				}
+			]
+		}
+	]
+}

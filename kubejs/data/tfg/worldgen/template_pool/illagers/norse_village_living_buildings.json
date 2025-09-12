@@ -1,6 +1,6 @@
 {
 	"name": "tfg:illagers/norse_village_living_buildings",
-	"fallback": "tfg:illagers/village_ends",
+	"fallback": "tfg:illagers/norse_village_living_paths",
 	"elements": [
 		{
 			"weight": 30,
@@ -54,6 +54,13 @@
 				"processors": "minecraft:empty",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"projection": "rigid",
+				"element_type": "minecraft:empty_pool_element"
 			}
 		}
 	]
