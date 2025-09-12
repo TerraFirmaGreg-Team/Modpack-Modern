@@ -513,6 +513,16 @@ const registerFirmaLifeRecipes = (event) => {
 		.id('tfg:vat/sugar_water')
 
 	//#endregion
+	
+	//#region Salt by Vat
+
+	event.recipes.firmalife.vat()
+		//.inputs('minecraft:stick', Fluid.of('tfc:salt_water', 625))
+		.inputFluid(Fluid.of('tfc:salt_water', 625))
+		.outputItem('gtceu:small_salt_dust')
+		.id('tfg:vat/sea_water_to_salt');
+
+	//#endregion
 
 	//#region Replace existing dyes
 

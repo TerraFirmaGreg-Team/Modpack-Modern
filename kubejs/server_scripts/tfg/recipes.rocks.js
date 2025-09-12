@@ -1,4 +1,4 @@
-// priority: 0
+﻿// priority: 0
 "use strict";
 
 /**
@@ -946,5 +946,21 @@ function registerTFGRockRecipes(event) {
 		.duration(40)
 		.EUt(2)
 	
+	//#endregion
+
+	//#region Crackrack/netherrack dust compat
+	event.recipes.gtceu.macerator(`raw_crackrack_to_dust`)
+		.itemInputs('beneath:crackrack')
+		.itemOutputs('gtceu:netherrack_dust')
+		.duration(150)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+	event.recipes.gtceu.macerator('crackrack_cobble_to_dust')
+		.itemInputs('tfg:rock/cobble_crackrack')
+		.itemOutputs('gtceu:netherrack_dust')
+		.duration(150)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 	//#endregion
 }
