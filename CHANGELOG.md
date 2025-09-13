@@ -2,7 +2,13 @@
 
 ## [Unreleased]
 ### Changes
+- Wooden crates can now also be crafted with bronze screws @Pyritie
 ### Bug fixes
+- Fixed not downloading the FTB library of mods on server builds (#1811, #1801, #1812, #1411) @Xikaro
+- Fixed ingot piles occasionally crashing on servers @Pyritie
+- Fixed being able to get infinite lava by bucketing lava aqueducts @Pyritie
+- More fixes for the Solar Boilers and TFC's rain system @FiNiTe-Weeb
+- Fixed river water not washing ores (#1785)
 
 ## [0.10.13] - 11-09-2025
 ### Changes
