@@ -14,12 +14,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandine & Sapphire$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornite & Cooperite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Coal & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Gold, Electrotine, & Bauxite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende, Thorium, & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorium, & Uraninite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartzite, Asbestos, & Barite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone & Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Salts & Spodumene$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Soapstone, Talc, & Glauconite$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_nickel_galena)Sphalerite & Galena$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит и Пирохлор$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит и Монацит$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_bismuthinite)Висмут$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandine & Sapphire$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornite & Cooperite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Coal & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Gold, Electrotine, & Bauxite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende, Thorium, & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorium, & Uraninite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartzite, Asbestos, & Barite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone & Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Salts & Spodumene$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Soapstone, Talc, & Glauconite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Sphalerite & Galena$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит и Пирохлор$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит и Монацит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Висмут$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарниерит и Кобальтит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Изумруд и Бериллий$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_cassiterite)Касситерит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Марганец и Тантал$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Медь и Халькопирит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Серебро, Галена и Свинец$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сфалерит & Пирит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраэдрит (обычный)$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_tetrahedrite)Тетраэдрит (Поверхностный)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеелит и Вольфрамат$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарниерит и Кобальтит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Изумруд и Бериллий$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Касситерит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Марганец и Тантал$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Медь и Халькопирит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Серебро, Галена и Свинец$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сфалерит & Пирит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраэдрит (обычный)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Тетраэдрит (Поверхностный)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеелит и Вольфрамат$()$()",
       "type": "patchouli:text"
     },
     {
@@ -867,7 +867,7 @@
       "text": "$(thing)Редкость$(): 150$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 80 — 180$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец, Трахит",
       "title": "Sphalerite & Galena",
       "type": "patchouli:text",
-      "anchor": "surface_nickel_galena"
+      "anchor": "mars_surface_nickel_galena"
     },
     {
       "Type": "patchouli:multiblock",
@@ -1158,7 +1158,7 @@
       "text": "$(thing)Редкость$(): 140$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 80 — 180$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец, Трахит",
       "title": "Висмут",
       "type": "patchouli:text",
-      "anchor": "surface_bismuthinite"
+      "anchor": "mars_surface_bismuthinite"
     },
     {
       "Type": "patchouli:multiblock",
@@ -1434,7 +1434,7 @@
       "text": "$(thing)Редкость$(): 140$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 80 — 180$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец, Трахит",
       "title": "Гематит и Лимонит",
       "type": "patchouli:text",
-      "anchor": "surface_hematite"
+      "anchor": "mars_surface_hematite"
     },
     {
       "Type": "patchouli:multiblock",
@@ -1593,7 +1593,7 @@
       "text": "$(thing)Редкость$(): 135$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 80 — 180$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец, Трахит",
       "title": "Касситерит",
       "type": "patchouli:text",
-      "anchor": "surface_cassiterite"
+      "anchor": "mars_surface_cassiterite"
     },
     {
       "Type": "patchouli:multiblock",
@@ -2120,7 +2120,7 @@
       "text": "$(thing)Редкость$(): 140$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 80 — 180$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец, Трахит",
       "title": "Тетраэдрит (Поверхностный)",
       "type": "patchouli:text",
-      "anchor": "surface_tetrahedrite"
+      "anchor": "mars_surface_tetrahedrite"
     },
     {
       "Type": "patchouli:multiblock",
