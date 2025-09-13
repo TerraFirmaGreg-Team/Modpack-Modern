@@ -319,95 +319,28 @@ function registerTFGRockRecipes(event) {
 
 	const CUTTER = [
 		// #region Nether
-		{ 
-			raw: 'tfg:rock/hardened_deepslate',
-			stair: 'tfg:rock/deepslate_stairs',
-			slab: 'tfg:rock/deepslate_slab',
-			wall: 'tfg:rock/deepslate_wall',
-			stonecutting: false
-		},
-		{ 
-			raw: 'minecraft:deepslate',
-			stair: 'tfg:rock/deepslate_stairs',
-			slab: 'tfg:rock/deepslate_slab',
-			wall: 'tfg:rock/deepslate_wall',
-			stonecutting: false
-		},
-		{ 
-			raw: 'minecraft:cobbled_deepslate',
-			stair: 'minecraft:cobbled_deepslate_stairs',
-			slab: 'minecraft:cobbled_deepslate_slab',
-			wall: 'minecraft:cobbled_deepslate_wall',
-			dust: 'gtceu:deepslate_dust',
-			loose: 'tfg:loose/deepslate',
-			stonecutting: false
-		},
-		{ 
-			raw: 'tfg:rock/mossy_cobble_deepslate',
-			stair: 'tfg:rock/mossy_cobble_deepslate_stairs',
-			slab: 'tfg:rock/mossy_cobble_deepslate_slab',
-			wall: 'tfg:rock/mossy_cobble_deepslate_wall',
-			stonecutting: false
-		},
-		{
-			raw: 'minecraft:polished_deepslate',
-			stair: 'minecraft:polished_deepslate_stairs',
-			slab: 'minecraft:polished_deepslate_slab',
-			wall: 'minecraft:polished_deepslate_wall',
-			dust: 'gtceu:deepslate_dust',
-			stonecutting: false
-		},
-		{
-			raw: 'minecraft:deepslate_bricks',
-			stair: 'minecraft:deepslate_brick_stairs',
-			slab: 'minecraft:deepslate_brick_slab',
-			wall: 'minecraft:deepslate_brick_wall',
-			dust: 'gtceu:deepslate_dust',
-			stonecutting: false
-		},
-		{
-			raw: 'minecraft:deepslate_tiles',
-			stair: 'minecraft:deepslate_tile_stairs',
-			slab: 'minecraft:deepslate_tile_slab',
-			wall: 'minecraft:deepslate_tile_wall',
-			dust: 'gtceu:deepslate_dust',
-			stonecutting: false
-		},
-		{
-			raw: 'minecraft:blackstone',
-			stair: 'minecraft:blackstone_stairs',
-			slab: 'minecraft:blackstone_slab',
-			wall: 'minecraft:blackstone_wall',
-			dust: 'gtceu:blackstone_dust',
-			loose: 'beneath:blackstone_pebble',
-			stonecutting: false
-		},
-		{
-			raw: 'minecraft:polished_blackstone',
-			stair: 'minecraft:polished_blackstone_stairs',
-			slab: 'minecraft:polished_blackstone_slab',
-			wall: 'minecraft:polished_blackstone_wall',
-			dust: 'gtceu:blackstone_dust',
-			stonecutting: false
-		},
-		{
-			raw: 'minecraft:polished_blackstone_bricks',
-			stair: 'minecraft:polished_blackstone_brick_stairs',
-			slab: 'minecraft:polished_blackstone_brick_slab',
-			wall: 'minecraft:polished_blackstone_brick_wall',
-			dust: 'gtceu:blackstone_dust',
-			stonecutting: false
-		},
+		{  raw: 'minecraft:deepslate',                 stair: 'tfg:rock/deepslate_stairs',                  slab: 'tfg:rock/deepslate_slab',                  wall: 'tfg:rock/deepslate_wall',
+		                                                                                                    stonecutting: false },
+		{  raw: 'minecraft:cobbled_deepslate',         stair: 'minecraft:cobbled_deepslate_stairs',         slab: 'minecraft:cobbled_deepslate_slab',         wall: 'minecraft:cobbled_deepslate_wall',
+		   dust: 'gtceu:deepslate_dust', 		       loose: 'tfg:loose/deepslate',                        stonecutting: false },
+		{  raw: 'tfg:rock/mossy_cobble_deepslate',     stair: 'tfg:rock/mossy_cobble_deepslate_stairs',     slab: 'tfg:rock/mossy_cobble_deepslate_slab',     wall: 'tfg:rock/mossy_cobble_deepslate_wall',
+                                                                                                            stonecutting: false },
+		{ raw: 'minecraft:polished_deepslate',         stair: 'minecraft:polished_deepslate_stairs',        slab: 'minecraft:polished_deepslate_slab',        wall: 'minecraft:polished_deepslate_wall',
+		  dust: 'gtceu:deepslate_dust',                                                                     stonecutting: false },
+		{ raw: 'minecraft:deepslate_bricks',           stair: 'minecraft:deepslate_brick_stairs',           slab: 'minecraft:deepslate_brick_slab',           wall: 'minecraft:deepslate_brick_wall',
+		  dust: 'gtceu:deepslate_dust',                                                                     stonecutting: false },
+		{ raw: 'minecraft:deepslate_tiles',            stair: 'minecraft:deepslate_tile_stairs',            slab: 'minecraft:deepslate_tile_slab',            wall: 'minecraft:deepslate_tile_wall',
+		  dust: 'gtceu:deepslate_dust',                                                                     stonecutting: false },
+		{ raw: 'minecraft:blackstone',                 stair: 'minecraft:blackstone_stairs',                slab: 'minecraft:blackstone_slab',                wall: 'minecraft:blackstone_wall',
+			dust: 'gtceu:blackstone_dust',             loose: 'beneath:blackstone_pebble',                  stonecutting: false },
+		{ raw: 'minecraft:polished_blackstone',        stair: 'minecraft:polished_blackstone_stairs',       slab: 'minecraft:polished_blackstone_slab',       wall: 'minecraft:polished_blackstone_wall',
+		  dust: 'gtceu:blackstone_dust',                                                                    stonecutting: false },
+		{ raw: 'minecraft:polished_blackstone_bricks', stair: 'minecraft:polished_blackstone_brick_stairs', slab: 'minecraft:polished_blackstone_brick_slab', wall: 'minecraft:polished_blackstone_brick_wall',
+		  dust: 'gtceu:blackstone_dust',                                                                    stonecutting: false },
 		// #endregion
 		// #region Space
-		{ 
-			raw: 'ad_astra:moon_cobblestone',
-			stair: 'ad_astra:moon_cobblestone_stairs',
-			slab: 'ad_astra:moon_cobblestone_slab',
-			dust: 'tfg:moon_stone_dust',
-			loose: 'tfg:loose/moon_stone',
-			stonecutting: true
-		},
+		{ raw: 'ad_astra:moon_cobblestone',            stair: 'ad_astra:moon_cobblestone_stairs',           slab: 'ad_astra:moon_cobblestone_slab',
+		  dust: 'tfg:moon_stone_dust',                 loose: 'tfg:loose/moon_stone',                       stonecutting: true },
 		{ 
 			raw: 'ad_astra:mars_cobblestone',
 			stair: 'ad_astra:mars_cobblestone_stairs',
