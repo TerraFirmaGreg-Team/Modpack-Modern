@@ -1,0 +1,13 @@
+{
+  "ingredient": {
+    "type": "forge:difference",
+    "base": { "tag": "forge:plates" },
+    "subtracted": [
+      { "item": "minecraft:paper" },
+      { "item": "gtceu:wood_plate" },
+      { "item": "gtceu:treated_wood_plate" }
+    ]
+  },
+  "size": "large",
+  "weight": "medium"
+}
