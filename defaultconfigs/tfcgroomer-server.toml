@@ -1,0 +1,59 @@
+
+[general]
+	#
+	# Enable option to toggle automatic breeding of animals by a Grooming Station on a block-to-block basis.
+	enableBreedingToggle = true
+	#
+	# If true, grooming stations will automatically breed animals together when feeding.
+	breedingEnabledByDefault = false
+	#
+	# How much time (in ticks) the Grooming Station waits before checking for animals to feed.
+	#Range: 20 ~ 6000
+	groomingStationTicks = 1200
+
+[tier_ranges]
+	#
+	# The maximum distance in blocks a bismuth bronze grooming station will scan for animals to feed
+	#Range: > 1
+	bismuth_bronze = 2
+	#
+	# The maximum distance in blocks a black bronze grooming station will scan for animals to feed
+	#Range: > 1
+	black_bronze = 2
+	#
+	# The maximum distance in blocks a bronze grooming station will scan for animals to feed
+	#Range: > 1
+	bronze = 2
+	#
+	# The maximum distance in blocks a copper grooming station will scan for animals to feed
+	#Range: > 1
+	copper = 1
+	#
+	# The maximum distance in blocks a wrought iron grooming station will scan for animals to feed
+	#Range: > 1
+	wrought_iron = 3
+	#
+	# The maximum distance in blocks a steel grooming station will scan for animals to feed
+	#Range: > 1
+	steel = 4
+	#
+	# The maximum distance in blocks a black steel grooming station will scan for animals to feed
+	#Range: > 1
+	black_steel = 5
+	#
+	# The maximum distance in blocks a blue steel grooming station will scan for animals to feed
+	#Range: > 1
+	blue_steel = 6
+	#
+	# The maximum distance in blocks a red steel grooming station will scan for animals to feed
+	#Range: > 1
+	red_steel = 6
+
+[automation]
+	#
+	# If true, grooming stations will interact with in-world automation such as hoppers on a side-specific basis.
+	groomingStationEnableAutomation = true
+	#
+	# If true, the Grooming Station will emit a redstone signal proportional to how full it is.
+	groomingStationRedstoneOutput = true
+
