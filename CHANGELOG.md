@@ -14,6 +14,8 @@
 - Fixed river water not washing ores (#1785)
 - Added missing textures for placed Potin ingots/plates @Pyritie
 - Fixed recipe conflict with music labels and paper blocks @Pyritie
+- Added missing helve hammer recipes for lead, potin, cobalt, cobalt brass, and invar @Pyritie
+- Fixed black bronze requiring an LS millstone to macerate (#1786) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
