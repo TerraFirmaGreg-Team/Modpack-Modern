@@ -336,6 +336,15 @@ const registerTFGItemTags = (event) => {
 
 	event.add('tfc:metamorphic_items', 'minecraft:cobbled_deepslate')
 
+	event.add('tfc:metamorphic_items', 'minecraft:cobbled_deepslate_stairs')
+	event.add('tfg:rock_stairs', 'minecraft:cobbled_deepslate_stairs')
+
+	event.add('tfc:metamorphic_items', 'minecraft:cobbled_deepslate_slab')
+	event.add('tfg:rock_slab', 'minecraft:cobbled_deepslate_slab')
+	
+	event.add('tfc:metamorphic_items', 'minecraft:cobbled_deepslate_wall')
+	event.add('tfg:rock_wall', 'minecraft:cobbled_deepslate_wall')
+
 	event.add('forge:smooth_stone', 'minecraft:polished_deepslate')
 	event.add('tfc:metamorphic_items', 'minecraft:polished_deepslate')	
 	event.add('tfc:rock/smooth', 'minecraft:polished_deepslate')
@@ -744,7 +753,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:mineral_rich_wool', 'tfg:sniffer_wool')
 	//#endregion
 		
-	//#region Пыли стоунтайпов в один тэг
+	//#region Stone Dusts Tag
 	event.add('tfg:stone_dusts', 'tfg:gabbro_dust')
 	event.add('tfg:stone_dusts', 'tfg:shale_dust')
 	event.add('tfg:stone_dusts', 'tfg:claystone_dust')

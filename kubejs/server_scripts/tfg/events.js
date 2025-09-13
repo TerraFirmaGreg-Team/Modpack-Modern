@@ -315,8 +315,22 @@ global.BRICK_INDEX = global.BRICK_INDEX.concat([
 	  mossy_brick:    'gtceu:mossy_dark_concrete_bricks',    mossy_stairs:   null,                                  mossy_slab:   null,                                  mossy_wall:   null,
 	  smooth_brick:   'gtceu:polished_dark_concrete',        smooth_stairs:  null,                                  smooth_slab:  null,                                  smooth_wall:  null,
 	  chiseled_brick: 'gtceu:chiseled_dark_concrete' },
-      
-	{ brick_type:     'red_granite',
+
+	{ brick_type:     'deepslate',
+	  brick:          'minecraft:deepslate_bricks',          brick_stairs:   'minecraft:deepslate_brick_stairs',         brick_slab:   'minecraft:deepslate_brick_slab',         brick_wall:   'minecraft:deepslate_brick_wall',
+	  cracked_brick:  'minecraft:cracked_deepslate_bricks',  cracked_stairs: 'tfg:rock/cracked_bricks_deepslate_stairs', cracked_slab: 'tfg:rock/cracked_bricks_deepslate_slab', cracked_wall: 'tfg:rock/cracked_bricks_deepslate_wall', 
+	  mossy_brick:    'tfg:rock/mossy_bricks_deepslate',     mossy_stairs:   'tfg:rock/mossy_bricks_deepslate_stairs',   mossy_slab:   'tfg:rock/mossy_bricks_deepslate_slab',   mossy_wall:   'tfg:rock/mossy_bricks_deepslate_wall',
+	  smooth_brick:   'minecraft:polished_deepslate',        smooth_stairs:  'minecraft:polished_deepslate_stairs',      smooth_slab:  'minecraft:polished_deepslate_slab',      smooth_wall:  'minecraft:polished_deepslate_wall',
+	  chiseled_brick: 'minecraft:chiseled_deepslate' },
+
+    { brick_type:     'deepslate_tiles',
+	  brick:          'minecraft:deepslate_tiles',           brick_stairs:   'minecraft:deepslate_tile_stairs',          brick_slab:   'minecraft:deepslate_tile_slab',          brick_wall:   'minecraft:deepslate_tile_wall',
+	  cracked_brick:  'minecraft:cracked_deepslate_tiles',   cracked_stairs: 'tfg:rock/cracked_tiles_deepslate_stairs',  cracked_slab: 'tfg:rock/cracked_tiles_deepslate_slab',  cracked_wall: 'tfg:rock/cracked_tiles_deepslate_wall', 
+	  mossy_brick:    null,                                  mossy_stairs:   null,                                       mossy_slab:   null,                                     mossy_wall:   null,
+	  smooth_brick:   'minecraft:polished_deepslate',        smooth_stairs:  'minecraft:polished_deepslate_stairs',      smooth_slab:  'minecraft:polished_deepslate_slab',      smooth_wall:  'minecraft:polished_deepslate_wall',
+	  chiseled_brick: 'minecraft:chiseled_deepslate' },    
+
+    { brick_type:     'red_granite',
 	  brick:          'gtceu:red_granite_bricks',            brick_stairs:   null,                                  brick_slab:   null,                                  brick_wall:   null,
 	  cracked_brick:  'gtceu:cracked_red_granite_bricks',    cracked_stairs: null,                                  cracked_slab: null,                                  cracked_wall: null, 
 	  mossy_brick:    'gtceu:mossy_red_granite_bricks',      mossy_stairs:   null,                                  mossy_slab:   null,                                  mossy_wall:   null,

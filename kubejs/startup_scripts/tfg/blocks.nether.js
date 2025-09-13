@@ -1,40 +1,21 @@
 "use strict";
 
 function registerTFGNetherBlocks(event) {
+	const SHAPES = ['stairs', 'slab', 'wall']
+
 	// #region Raw Stones
-	
-	event.create('tfg:rock/deepslate_stairs', 'stairs')
-		.soundType('deepslate')
-		.textureAll('minecraft:block/deepslate')
-		.tagBoth('minecraft:stairs')
-		.tagBoth('tfc:rock_stairs')
-		.tagBoth('tfc:metamorphic_items')
-		.mapColor('terracotta_grey')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
-	
-	event.create('tfg:rock/deepslate_slab', 'slab')
-		.soundType('deepslate')
-		.textureAll('minecraft:block/deepslate')
-		.tagBoth('minecraft:slabs')
-		.tagBoth('tfc:rock_slabs')
-		.tagBoth('tfc:metamorphic_items')
-		.mapColor('terracotta_grey')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
-	
-	event.create('tfg:rock/deepslate_wall', 'wall')
-		.soundType('deepslate')
-		.textureAll('minecraft:block/deepslate')
-		.tagBoth('minecraft:walls')
-		.tagBoth('tfc:rock_walls')
-		.tagBoth('tfc:metamorphic_items')
-		.mapColor('terracotta_grey')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/deepslate_${shape}`, shape)
+			.soundType('deepslate')
+			.textureAll('minecraft:block/deepslate')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:rock_${shape}`)
+			.tagBoth('tfc:metamorphic_items')
+			.mapColor('terracotta_grey')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
 
 	// #endregion Raw Stones
 
@@ -155,6 +136,8 @@ function registerTFGNetherBlocks(event) {
 	// #endregion Loose rocks
 	
 	// #region Cobblestones
+	
+	// Deepslate
 	event.create('tfg:rock/mossy_cobble_deepslate')
 		.soundType('stone')
 		.tagBoth('forge:cobblestone')
@@ -165,36 +148,18 @@ function registerTFGNetherBlocks(event) {
 		.tagBlock('tfc:can_landslide')
 		.fullBlock(true)
 		.opaque(true)
-	
-	event.create('tfg:rock/mossy_cobble_deepslate_stairs', 'stairs')
-		.soundType('stone')
-		.tagBoth('minecraft:stairs')
-		.tagBoth('tfc:rock_stairs')
-		.tagBoth('tfc:metamorphic_items')
-		.mapColor('terracotta_grey')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
-	
-	event.create('tfg:rock/mossy_cobble_deepslate_slab', 'slab')
-		.soundType('stone')
-		.tagBoth('minecraft:slabs')
-		.tagBoth('tfc:rock_slabs')
-		.tagBoth('tfc:metamorphic_items')
-		.mapColor('terracotta_grey')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
-	
-	event.create('tfg:rock/mossy_cobble_deepslate_wall', 'wall')
-		.soundType('stone')
-		.tagBoth('minecraft:walls')
-		.tagBoth('tfc:rock_walls')
-		.tagBoth('tfc:metamorphic_items')
-		.mapColor('terracotta_grey')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/mossy_cobble_deepslate_${shape}`, shape)
+			.soundType('deepslate')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:rock_${shape}`)
+			.tagBoth('tfc:metamorphic_items')
+			.mapColor('terracotta_grey')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
 	
 	event.create('tfg:rock/cobble_blackstone')
 		.soundType('stone')
@@ -207,6 +172,7 @@ function registerTFGNetherBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 	
+	// Blackstone
 	event.create('tfg:rock/mossy_cobble_blackstone')
 		.soundType('stone')
 		.tagBoth('forge:cobblestone')
@@ -325,6 +291,34 @@ function registerTFGNetherBlocks(event) {
 	// #endregion Gravels
 	
 	// #region Bricks / Decorative
+	
+	// Deepslate
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cracked_bricks_deepslate_${shape}`, shape)
+			.soundType('deepslate')
+			.textureAll('minecraft:block/cracked_deepslate_bricks')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:brick_${shape}`)
+			.tagBoth('tfc:metamorphic_items')
+			.mapColor('terracotta_grey')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cracked_tiles_deepslate_${shape}`, shape)
+			.soundType('deepslate')
+			.textureAll('minecraft:block/cracked_deepslate_tiles')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:brick_${shape}`)
+			.tagBoth('tfc:metamorphic_items')
+			.mapColor('terracotta_grey')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
 	event.create('tfg:rock/mossy_bricks_deepslate')
 		.soundType('deepslate')
 		.tagBoth('minecraft:stone_bricks')
@@ -337,6 +331,19 @@ function registerTFGNetherBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 	
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/mossy_bricks_deepslate_${shape}`, shape)
+			.soundType('deepslate')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:brick_${shape}`)
+			.tagBoth('tfc:metamorphic_items')
+			.mapColor('terracotta_grey')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+	
+	// Blackstone
 	event.create('tfg:rock/mossy_bricks_blackstone')
 		.soundType('stone')
 		.tagBoth('minecraft:stone_bricks')

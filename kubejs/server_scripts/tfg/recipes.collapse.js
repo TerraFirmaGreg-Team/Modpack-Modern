@@ -22,9 +22,13 @@ function registerTFGCollapseRecipes(event) {
 		
 	event.recipes.tfc.landslide('tfg:ash_pile', 'tfg:ash_pile')
 	event.recipes.tfc.landslide('minecraft:cobbled_deepslate', 'minecraft:cobbled_deepslate')
+	event.recipes.tfc.landslide('minecraft:mossy_cobbled_deepslate', 'minecraft:mossy_cobbled_deepslate')
 	event.recipes.tfc.landslide('tfg:rock/cobble_blackstone', 'tfg:rock/cobble_blackstone')
+	event.recipes.tfc.landslide('tfg:rock/mossy_cobble_blackstone', 'tfg:rock/mossy_cobble_blackstone')
 	event.recipes.tfc.landslide('tfg:rock/cobble_dripstone', 'tfg:rock/cobble_dripstone')
+	event.recipes.tfc.landslide('tfg:rock/mossy_cobble_dripstone', 'tfg:rock/mossy_cobble_dripstone')
 	event.recipes.tfc.landslide('tfg:rock/cobble_crackrack', 'tfg:rock/cobble_crackrack')
+	event.recipes.tfc.landslide('tfg:rock/mossy_cobble_crackrack', 'tfg:rock/mossy_cobble_crackrack')
 
 	event.recipes.tfc.landslide('tfg:rock/gravel_deepslate', 'tfg:rock/gravel_deepslate')
 	event.recipes.tfc.landslide('tfg:rock/gravel_blackstone', 'tfg:rock/gravel_blackstone')
