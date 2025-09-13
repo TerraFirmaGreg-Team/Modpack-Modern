@@ -22,6 +22,7 @@ ServerEvents.tags('item', event => {
 	registerCreateConnectedItemTags(event)
 	registerCreateDecoItemTags(event)
 	registerCreateFactoryLogisticsItemTags(event)
+	registerDomumOrnamentumItemTags(event)
 	registerDiggerHelmetItemTags(event)
 	registerEndermanOverhaulItemTags(event)
 	registerEveryCompatItemTags(event)
