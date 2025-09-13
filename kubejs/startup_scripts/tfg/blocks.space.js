@@ -1,9 +1,8 @@
 "use strict";
 
 function registerTFGSpaceBlocks(event) {
-
-	// Dimension markers
-
+	
+	// #region Dimension markers
 	event.create('tfg:marker/moon')
 		.stoneSoundType()
 		.item(item => {
@@ -40,8 +39,9 @@ function registerTFGSpaceBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 
-	// Hardened stones
-
+	// #endregion Dimension markers
+	
+	// #region Hardened Stones
 	event.create('tfg:rock/hardened_moon_stone')
 		.stoneSoundType()
 		.requiresTool(true)
@@ -147,8 +147,9 @@ function registerTFGSpaceBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 
-	// Loose stones
-
+	// #endregion Hardened Stones
+	
+	// #region Loose stones
 	event.create('tfg:loose/moon_stone', 'tfc:loose_rock')
 		.stoneSoundType()
 		.itemTexture('tfg:item/loose/moon_stone')
@@ -221,8 +222,9 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:igneous_intrusive_rock')
 		.tagItem("rnr:loose_rock_items")
 
-	// Spikes
-
+	// #endregion Loose stones
+	
+	// #region Spikes
 	event.create('tfg:spike/moon_stone_spike', 'tfc:rock_spike')
 		.textureAll('ad_astra:block/moon_stone')
 		.stoneSoundType()
@@ -287,8 +289,9 @@ function registerTFGSpaceBlocks(event) {
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
 
-	// Cobblestones
+	// #endregion Spikes
 	
+	// #region Cobblestones	
 	event.create('tfg:rock/mossy_cobble_moon')
 		.soundType('stone')
 		.tagBoth('forge:cobblestone')
@@ -386,8 +389,9 @@ function registerTFGSpaceBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 	
-	// Gravels
-
+	// #endregion Cobblestones
+	
+	// #region Gravels
 	event.create('tfg:rock/gravel_moon')
 		.soundType('gravel')
 		.tagBoth('forge:gravel')
@@ -475,8 +479,9 @@ function registerTFGSpaceBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 
-	// Smooth Stones
-
+	// #endregion Gravels
+	
+	// #region Smooth (Polished/Cut) Stones
 	event.create('tfg:rock/polished_moon_deepslate')
 		.soundType('deepslate')
 		.tagBoth('forge:smooth_stone')
@@ -487,8 +492,9 @@ function registerTFGSpaceBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 	
-	// Bricks / Decorative
-
+	// #endregion Smooth (Polished/Cut) Stones
+	
+	// #region Bricks / Decorative
 	event.create('tfg:rock/mossy_bricks_moon')
 		.soundType('stone')
 		.tagBoth('minecraft:stone_bricks')
@@ -615,6 +621,8 @@ function registerTFGSpaceBlocks(event) {
 		.tagBlock('minecraft:mineable/pickaxe')
 		.fullBlock(true)
 		.opaque(true)
+
+	// #endregion Bricks / Decorative
 
 	// #region Plants
 

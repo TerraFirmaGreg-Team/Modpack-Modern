@@ -1,8 +1,7 @@
 "use strict";
 
 function registerTFGNetherBlocks(event) {
-
-	// Raw stones
+	// #region Raw Stones
 	
 	event.create('tfg:rock/deepslate_stairs', 'stairs')
 		.soundType('deepslate')
@@ -37,7 +36,9 @@ function registerTFGNetherBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 
-	// Hardened stones
+	// #endregion Raw Stones
+
+	// #region Hardened Stones
 	event.create('tfg:rock/hardened_deepslate')
 		.soundType('deepslate')
 		.property(BlockProperties.AXIS)
@@ -85,7 +86,9 @@ function registerTFGNetherBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 
-	// Spikes
+	// #endregion Hardened stones
+	 
+	// #region Spikes
 	event.create('tfg:spike/dripstone_spike', 'tfc:rock_spike')
 		.textureAll('minecraft:block/dripstone_block')
 		.soundType('dripstone_block')
@@ -113,7 +116,9 @@ function registerTFGNetherBlocks(event) {
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
 
-  // Loose rocks
+	// #endregion Spikes
+
+  	// #region Loose rocks
 	event.create('tfg:loose/deepslate', 'tfc:loose_rock')
 		.itemTexture('tfg:item/loose/deepslate')
 		.rockTypeModel('metamorphic')
@@ -147,8 +152,9 @@ function registerTFGNetherBlocks(event) {
 		.tagItem('tfc:igneous_intrusive_rock')
 		.tagItem("rnr:loose_rock_items")
 	
-	// Cobblestones
+	// #endregion Loose rocks
 	
+	// #region Cobblestones
 	event.create('tfg:rock/mossy_cobble_deepslate')
 		.soundType('stone')
 		.tagBoth('forge:cobblestone')
@@ -256,7 +262,8 @@ function registerTFGNetherBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 	
-	// Smooth Stones
+	
+	// #region Smooth (Polished/Cut) Stones
 
 	event.create('tfg:rock/polished_crackrack')
 		.soundType('basalt')
@@ -268,7 +275,9 @@ function registerTFGNetherBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 	
-	// Gravels
+	// #endregion Smooth (Polished/Cut) Stones
+
+	// #region Gravels
 	event.create('tfg:rock/gravel_deepslate')
 		.soundType('gravel')
 		.tagBoth('forge:gravel')
@@ -313,8 +322,9 @@ function registerTFGNetherBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 	
-	// Bricks / Decorative
-
+	// #endregion Gravels
+	
+	// #region Bricks / Decorative
 	event.create('tfg:rock/mossy_bricks_deepslate')
 		.soundType('deepslate')
 		.tagBoth('minecraft:stone_bricks')
@@ -363,7 +373,9 @@ function registerTFGNetherBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 	
-	// Plants
+	// #endregion Bricks / Decorative
+	 
+	// #region Plants
 	event.create('tfg:mushroom_roots', 'tfg:decorative_plant')
 		.soundType('nether_wart')
 		.tagItem('tfc:plants')
