@@ -138,6 +138,8 @@ function registerTFGRockRecipes(event) {
 		{ raw: 'create:small_dripstone_bricks', polished: 'create:cut_dripstone_bricks' },
 
 		{ raw: 'beneath:crackrack', polished: 'tfg:rock/polished_crackrack' },
+		{ raw: 'minecraft:nether_bricks', polished: 'minecraft:chiseled_nether_bricks' },
+		{ raw: 'minecraft:chiseled_nether_bricks', polished: 'minecraft:nether_bricks' },
 
 		{ raw: 'minecraft:basalt', polished: 'minecraft:smooth_basalt' },
 		{ raw: 'minecraft:smooth_basalt', polished: 'minecraft:polished_basalt' },
@@ -272,6 +274,7 @@ function registerTFGRockRecipes(event) {
 	const CRACKING = [
 		{ raw: 'minecraft:deepslate_bricks', cracked: 'minecraft:cracked_deepslate_bricks' },
 		{ raw: 'minecraft:deepslate_tiles', cracked: 'minecraft:cracked_deepslate_tiles' },
+		{ raw: 'minecraft:nether_bricks', cracked: 'minecraft:cracked_nether_bricks' },
 		{ raw: 'ad_astra:moon_stone_bricks', cracked: 'ad_astra:cracked_moon_stone_bricks' },
 		{ raw: 'ad_astra:mars_stone_bricks', cracked: 'ad_astra:cracked_mars_stone_bricks' },
 		{ raw: 'ad_astra:venus_stone_bricks', cracked: 'ad_astra:cracked_venus_stone_bricks' },
@@ -281,7 +284,6 @@ function registerTFGRockRecipes(event) {
 		{ raw: 'ad_astra:glacio_stone_bricks', cracked: 'ad_astra:cracked_glacio_stone_bricks' },
 		{ raw: 'ad_astra:permafrost_bricks', cracked: 'ad_astra:cracked_permafrost_bricks' },
 		{ raw: 'tfg:rock/bricks_moon_deepslate', cracked: 'tfg:rock/cracked_bricks_moon_deepslate' }
-		
 	]
 
 	CRACKING.forEach(x => {
@@ -318,12 +320,33 @@ function registerTFGRockRecipes(event) {
 	const CUTTER = [
 		// #region Nether
 		{ 
+			raw: 'tfg:rock/hardened_deepslate',
+			stair: 'tfg:rock/deepslate_stairs',
+			slab: 'tfg:rock/deepslate_slab',
+			wall: 'tfg:rock/deepslate_wall',
+			stonecutting: false
+		},
+		{ 
+			raw: 'minecraft:deepslate',
+			stair: 'tfg:rock/deepslate_stairs',
+			slab: 'tfg:rock/deepslate_slab',
+			wall: 'tfg:rock/deepslate_wall',
+			stonecutting: false
+		},
+		{ 
 			raw: 'minecraft:cobbled_deepslate',
 			stair: 'minecraft:cobbled_deepslate_stairs',
 			slab: 'minecraft:cobbled_deepslate_slab',
 			wall: 'minecraft:cobbled_deepslate_wall',
 			dust: 'gtceu:deepslate_dust',
 			loose: 'tfg:loose/deepslate',
+			stonecutting: false
+		},
+		{ 
+			raw: 'tfg:rock/mossy_cobble_deepslate',
+			stair: 'tfg:rock/mossy_cobble_deepslate_stairs',
+			slab: 'tfg:rock/mossy_cobble_deepslate_slab',
+			wall: 'tfg:rock/mossy_cobble_deepslate_wall',
 			stonecutting: false
 		},
 		{

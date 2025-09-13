@@ -389,6 +389,15 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:rock/bricks', 'minecraft:chiseled_polished_blackstone_bricks')
 	event.add('tfc:rock/chiseled_bricks', 'minecraft:chiseled_polished_blackstone_bricks')
 
+	event.add('tfc:igneous_intrusive_items', 'minecraft:blackstone_stairs')
+	event.add('tfg:rock_stairs', 'minecraft:blackstone_stairs')
+
+	event.add('tfc:igneous_intrusive_items', 'minecraft:blackstone_brick_slab')
+	event.add('tfg:rock_slabs', 'minecraft:blackstone_slab')
+
+	event.add('tfc:igneous_intrusive_items', 'minecraft:blackstone_wall')
+	event.add('tfg:rock_walls', 'minecraft:blackstone_wall')
+	
 	event.add('tfc:igneous_intrusive_items', 'minecraft:polished_blackstone_stairs')
 	event.add('tfg:rock_stairs', 'minecraft:polished_blackstone_stairs')
 
@@ -437,7 +446,6 @@ const registerTFGItemTags = (event) => {
 	// Crackrack / "Nether" (Keratophyre) [Igneous Intrusive]
 	event.add('forge:stone', 'beneath:crackrack')
 	event.add('tfc:igneous_intrusive_items', 'beneath:crackrack')
-	event.add('tfc:igneous_intrusive_items', 'minecraft:nether_brick')	
 	
 	event.add('forge:stone_bricks', 'minecraft:nether_bricks')
 	event.add('tfc:igneous_intrusive_items', 'minecraft:nether_bricks')
