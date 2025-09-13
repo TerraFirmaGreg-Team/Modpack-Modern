@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Changes
 - Wooden crates can now also be crafted with bronze screws @Pyritie
+- The tape measure can now be put in your toolbelt (#1813) @Nashy1232
 ### Bug fixes
 - Fixed not downloading the FTB library of mods on server builds (#1811, #1801, #1812, #1411) @Xikaro
 - Fixed ingot piles occasionally crashing on servers @Pyritie
