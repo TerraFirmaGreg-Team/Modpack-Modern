@@ -61,6 +61,10 @@ const registerTFCItemTags = (event) => {
 	event.add('tfc:usable_on_tool_rack', 'tfc:wool_cloth')
 	event.add('tfc:usable_on_tool_rack', 'firmalife:mixing_bowl')
 
+	// Igniters
+	event.add('tfc:starts_fires_with_durability', 'gtceu:matchbox')
+	event.add('tfc:starts_fires_with_items', 'gtceu:matches')
+
 	// Ингредиенты для закваски
 	event.add('tfg:ferments_to_rennet', 'tfc:food/soybean')
 	event.add('tfg:ferments_to_rennet', 'firmalife:food/fig')
