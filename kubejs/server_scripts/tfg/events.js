@@ -295,42 +295,37 @@ global.BRICK_INDEX = global.BRICK_INDEX.concat([
 	// smooth_brick: '', smooth_stairs: '', smooth_slab: '', smooth_wall: '',
 	// chiseled_brick: ''
 	// },
-	{
-	brick_type: 'red',
-	brick: 'minecraft:bricks', brick_stairs: 'minecraft:brick_stairs', brick_slab: 'minecraft:brick_slab', brick_wall: 'minecraft:brick_wall',
-	cracked_brick: 'createdeco:cracked_red_bricks', cracked_stairs: 'createdeco:cracked_red_brick_stairs', cracked_slab: 'createdeco:cracked_red_brick_slab', cracked_wall: 'createdeco:cracked_red_brick_wall', 
-	mossy_brick: 'createdeco:mossy_red_bricks', mossy_stairs: 'createdeco:mossy_red_brick_stairs', mossy_slab: 'createdeco:mossy_red_brick_slab', mossy_wall: 'createdeco:mossy_red_brick_wall',
-	smooth_brick: 'createdeco:corner_red_bricks', smooth_stairs: 'createdeco:corner_red_brick_stairs', smooth_slab: 'createdeco:corner_red_brick_slab', smooth_wall: 'createdeco:corner_red_brick_wall',
-	chiseled_brick: 'createdeco:tiled_red_bricks'
-	},
-	{
-	brick_type: 'light_concrete',
-	brick: 'gtceu:light_concrete_bricks', brick_stairs: null, brick_slab: null, brick_wall: null,
-	cracked_brick: 'gtceu:cracked_light_concrete_bricks', cracked_stairs: null, cracked_slab: null, cracked_wall: null, 
-	mossy_brick: 'gtceu:mossy_light_concrete_bricks', mossy_stairs: null, mossy_slab: null, mossy_wall: null,
-	smooth_brick: 'gtceu:polished_light_concrete', smooth_stairs: null, smooth_slab: null, smooth_wall: null,
-	chiseled_brick: 'gtceu:chiseled_light_concrete'
-	},
-	{
-	brick_type: 'dark_concrete',
-	brick: 'gtceu:dark_concrete_bricks', brick_stairs: null, brick_slab: null, brick_wall: null,
-	cracked_brick: 'gtceu:cracked_dark_concrete_bricks', cracked_stairs: null, cracked_slab: null, cracked_wall: null, 
-	mossy_brick: 'gtceu:mossy_dark_concrete_bricks', mossy_stairs: null, mossy_slab: null, mossy_wall: null,
-	smooth_brick: 'gtceu:polished_dark_concrete', smooth_stairs: null, smooth_slab: null, smooth_wall: null,
-	chiseled_brick: 'gtceu:chiseled_dark_concrete'
-	},
-	{
-	brick_type: 'red_granite',
-	brick: 'gtceu:red_granite_bricks', brick_stairs: null, brick_slab: null, brick_wall: null,
-	cracked_brick: 'gtceu:cracked_red_granite_bricks', cracked_stairs: null, cracked_slab: null, cracked_wall: null, 
-	mossy_brick: 'gtceu:mossy_red_granite_bricks', mossy_stairs: null, mossy_slab: null, mossy_wall: null,
-	smooth_brick: 'gtceu:polished_red_granite', smooth_stairs: null, smooth_slab: null, smooth_wall: null,
-	chiseled_brick: 'gtceu:chiseled_red_granite'
-	}
+	{ brick_type:     'red',
+	  brick:          'minecraft:bricks',                    brick_stairs:   'minecraft:brick_stairs',              brick_slab:   'minecraft:brick_slab',                brick_wall:   'minecraft:brick_wall',
+	  cracked_brick:  'createdeco:cracked_red_bricks',       cracked_stairs: 'createdeco:cracked_red_brick_stairs', cracked_slab: 'createdeco:cracked_red_brick_slab',   cracked_wall: 'createdeco:cracked_red_brick_wall', 
+	  mossy_brick:    'createdeco:mossy_red_bricks',         mossy_stairs:   'createdeco:mossy_red_brick_stairs',   mossy_slab:   'createdeco:mossy_red_brick_slab',     mossy_wall:   'createdeco:mossy_red_brick_wall',
+	  smooth_brick:   'createdeco:corner_red_bricks',        smooth_stairs:  'createdeco:corner_red_brick_stairs',  smooth_slab:  'createdeco:corner_red_brick_slab',    smooth_wall:  'createdeco:corner_red_brick_wall',
+	  chiseled_brick: 'createdeco:tiled_red_bricks' },
+
+	{ brick_type:     'light_concrete',
+	  brick:          'gtceu:light_concrete_bricks',         brick_stairs:   null,                                  brick_slab:   null,                                  brick_wall:   null,
+	  cracked_brick:  'gtceu:cracked_light_concrete_bricks', cracked_stairs: null,                                  cracked_slab: null,                                  cracked_wall: null, 
+	  mossy_brick:    'gtceu:mossy_light_concrete_bricks',   mossy_stairs:   null,                                  mossy_slab:   null,                                  mossy_wall:   null,
+	  smooth_brick:   'gtceu:polished_light_concrete',       smooth_stairs:  null,                                  smooth_slab:  null,                                  smooth_wall:  null,
+	  chiseled_brick: 'gtceu:chiseled_light_concrete' },
+
+	{ brick_type:     'dark_concrete',
+	  brick:          'gtceu:dark_concrete_bricks',          brick_stairs:   null,                                  brick_slab:   null,                                  brick_wall:   null,
+	  cracked_brick:  'gtceu:cracked_dark_concrete_bricks',  cracked_stairs: null,                                  cracked_slab: null,                                  cracked_wall: null, 
+	  mossy_brick:    'gtceu:mossy_dark_concrete_bricks',    mossy_stairs:   null,                                  mossy_slab:   null,                                  mossy_wall:   null,
+	  smooth_brick:   'gtceu:polished_dark_concrete',        smooth_stairs:  null,                                  smooth_slab:  null,                                  smooth_wall:  null,
+	  chiseled_brick: 'gtceu:chiseled_dark_concrete' },
+      
+	{ brick_type:     'red_granite',
+	  brick:          'gtceu:red_granite_bricks',            brick_stairs:   null,                                  brick_slab:   null,                                  brick_wall:   null,
+	  cracked_brick:  'gtceu:cracked_red_granite_bricks',    cracked_stairs: null,                                  cracked_slab: null,                                  cracked_wall: null, 
+	  mossy_brick:    'gtceu:mossy_red_granite_bricks',      mossy_stairs:   null,                                  mossy_slab:   null,                                  mossy_wall:   null,
+	  smooth_brick:   'gtceu:polished_red_granite',          smooth_stairs:  null,                                  smooth_slab:  null,                                  smooth_wall:  null,
+	  chiseled_brick: 'gtceu:chiseled_red_granite' }
 ]);
 
 global.COBBLE_INDEX = (global.TFC_STONE_TYPES ? global.TFC_STONE_TYPES : []).map(tfc_stone => ({
-	cobble_type: tfc_stone,
+	cobble_type:  tfc_stone,
 	block:        `tfc:rock/cobble/${tfc_stone}`,       stairs:       `tfc:rock/cobble/${tfc_stone}_stairs`,       slab:       `tfc:rock/cobble/${tfc_stone}_slab`,        wall:       `tfc:rock/cobble/${tfc_stone}_wall`,
     mossy_block:  `tfc:rock/mossy_cobble/${tfc_stone}`, mossy_stairs: `tfc:rock/mossy_cobble/${tfc_stone}_stairs`, mossy_slab: `tfc:rock/mossy_cobble/${tfc_stone}_slab`,  mossy_wall: `tfc:rock/mossy_cobble/${tfc_stone}_wall`
 }));
