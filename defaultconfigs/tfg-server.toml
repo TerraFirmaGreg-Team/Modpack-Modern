@@ -1,0 +1,133 @@
+
+[hang_glider]
+	#
+	#If true, gliders will function in the Ad Astra dimension Earth Orbit
+	can_glide_on_earth_orbit = false
+	#
+	#If true, gliders will function in the Ad Astra dimension Moon Orbit
+	can_glide_on_moon_orbit = false
+	#
+	#If true, gliders will function in the Ad Astra dimension Mars Orbit
+	can_glide_on_mars_orbit = false
+	#
+	#If true, gliders will function in the Ad Astra dimension Venus Orbit
+	can_glide_on_venus_orbit = false
+	#
+	#If true, gliders will function in the Ad Astra dimension Mercury Orbit
+	can_glide_on_mercury_orbit = false
+	#
+	#If true, gliders will function in the Ad Astra dimension Glacio Orbit
+	can_glide_on_glacio_orbit = false
+	#
+	#If true, gliders will function in the Ad Astra dimension Moon
+	can_glide_on_moon = false
+	#
+	#If true, gliders will function in the Ad Astra dimension Mars
+	can_glide_on_mars = false
+	#
+	#If true, gliders will function in the Ad Astra dimension Venus
+	can_glide_on_venus = false
+	#
+	#If true, gliders will function in the Ad Astra dimension Mercury
+	can_glide_on_mercury = false
+	#
+	#If true, gliders will function in the Ad Astra dimension Glacio
+	can_glide_on_glacio = false
+
+[prospector_picks]
+
+	[prospector_picks.copper]
+		#
+		#Length of search area. Default = 15
+		#Range: 0 ~ 200
+		CopperOreProspectorLength = 15
+		#
+		#Half the width of the search area. Default = 5
+		#Example. If you want a 20x20 set the value to 10
+		#Range: 0 ~ 50
+		CopperOreProspectorHalfWidth = 5
+
+	[prospector_picks.bronze]
+		#
+		#Length of search area. Default = 20
+		#Range: 0 ~ 200
+		BronzeOreProspectorLength = 20
+		#
+		#Half the width of the search area. Default = 8
+		#Example. If you want a 20x20 set the value to 10
+		#Range: 0 ~ 50
+		BronzeOreProspectorHalfWidth = 8
+
+	[prospector_picks.wrought_iron]
+		#
+		#Length of search area. Default = 30
+		#Range: 0 ~ 200
+		WroughtIronOreProspectorLength = 30
+		#
+		#Half the width of the search area. Default = 10
+		#Example. If you want a 20x20 set the value to 10
+		#Range: 0 ~ 50
+		WroughtIronOreProspectorHalfWidth = 10
+
+	[prospector_picks.steel]
+		#
+		#Length of search area. Default = 40
+		#Range: 0 ~ 200
+		SteelOreProspectorLength = 40
+		#
+		#Half the width of the search area. Default = 12
+		#Example. If you want a 20x20 set the value to 10
+		#Range: 0 ~ 50
+		SteelOreProspectorHalfWidth = 12
+
+	[prospector_picks.black_steel]
+		#
+		#Length of search area. Default = 50
+		#Range: 0 ~ 200
+		BlackSteelOreProspectorLength = 50
+		#
+		#Half the width of the search area. Default = 15
+		#Example. If you want a 20x20 set the value to 10
+		#Range: 0 ~ 50
+		BlackSteelOreProspectorHalfWidth = 15
+
+	[prospector_picks.blue_steel]
+		#
+		#Length of search area. Default = 75
+		#Range: 0 ~ 200
+		BlueSteelOreProspectorLength = 75
+		#
+		#Half the width of the search area. Default = 15
+		#Example. If you want a 20x20 set the value to 10
+		#Range: 0 ~ 50
+		BlueSteelOreProspectorHalfWidth = 15
+		#
+		#Should the Blue Steel Prospector's Pick render particles per vein (vague)?
+		#Setting false will render particles per block (precise). Default: true
+		"Blue SteelProspectorRender" = true
+
+	[prospector_picks.red_steel]
+		#
+		#Length of search area. Default = 50
+		#Range: 0 ~ 200
+		RedSteelOreProspectorLength = 50
+		#
+		#Half the width of the search area. Default = 25
+		#Example. If you want a 20x20 set the value to 10
+		#Range: 0 ~ 50
+		RedSteelOreProspectorHalfWidth = 25
+		#
+		#Should the Red Steel Prospector's Pick render particles per vein (vague)?
+		#Setting false will render particles per block (precise). Default: false
+		"Red SteelProspectorRender" = false
+
+[harvest_basket]
+	#
+	#Radius of the harvest basket collection. Set to 0 to disable. Default: 7
+	#Range: 0 ~ 20
+	HarvestBasketRange = 7
+
+[syringe_blacklist]
+	#Blacklist of entity IDs that cannot be sampled by the DNA syringe. Can be empty.
+	syringeBlacklist = []
+
