@@ -10,6 +10,12 @@
 - Fixed being able to get infinite lava by bucketing lava aqueducts @Pyritie
 - More fixes for the Solar Boilers and TFC's rain system @FiNiTe-Weeb
 - Fixed river water not washing ores (#1785)
+- Added missing textures for placed Potin ingots/plates @Pyritie
+- Fixed recipe conflict with music labels and paper blocks @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry
+- Brazilian Portuguese @gifpxto
 
 ## [0.10.13] - 11-09-2025
 ### Changes
