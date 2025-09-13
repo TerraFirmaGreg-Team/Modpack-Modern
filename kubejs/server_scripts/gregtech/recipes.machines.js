@@ -808,8 +808,25 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#forge:tools/saws'
 	}).id('tfg:shaped/wooden_crate_wrought_iron')
 
-	event.recipes.gtceu.assembler('gtceu:wood_crate')
+	event.recipes.gtceu.assembler('tfg:wood_crate')
 		.itemInputs('4x #minecraft:planks', '4x #forge:screws/wrought_iron')
+		.itemOutputs('gtceu:wood_crate')
+		.duration(100)
+		.EUt(16)
+		.circuit(5)
+
+	event.recipes.shaped('gtceu:wood_crate', [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: '#forge:screws/any_bronze',
+		B: '#minecraft:planks',
+		C: '#forge:tools/saws'
+	}).id('tfg:shaped/wooden_crate_bronze')
+
+	event.recipes.gtceu.assembler('tfg:wood_crate_bronze')
+		.itemInputs('4x #minecraft:planks', '4x #forge:screws/any_bronze')
 		.itemOutputs('gtceu:wood_crate')
 		.duration(100)
 		.EUt(16)
@@ -818,14 +835,14 @@ function registerGTCEuMachineRecipes(event) {
 	// Steam multi parts
 
 	removeMaceratorRecipe(event, 'macerate_steel_machine_casing')
-	event.shaped('gtceu:steel_machine_casing', [
+	event.recipes.gtceu.shaped('gtceu:steel_machine_casing', [
 		' A ',
 		'ABA',
 		' A '
 	], {
 		A: ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 1),
 		B: '#forge:tools/hammers'
-	}).id('gtceu:shaped/steel_hull')
+	}).addMaterialInfo().id('gtceu:shaped/steel_hull')
 	
 	removeMaceratorRecipe(event, 'macerate_steam_input_hatch')
 	event.recipes.gtceu.shaped('gtceu:steam_input_hatch', [
@@ -983,7 +1000,6 @@ function registerGTCEuMachineRecipes(event) {
 		.circuit(4)
 		.duration(2.5 * 20)
 		.EUt(16)
-		.addMaterialInfo(true)
 
 	event.recipes.gtceu.assembler('tfg:casings/machine_casing_stainless_evaporation')
 		.itemInputs('gtceu:clean_machine_casing', '4x gtceu:annealed_copper_double_wire')

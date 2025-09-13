@@ -2,8 +2,41 @@
 
 ## [Unreleased]
 ### Changes
+- Wooden crates can now also be crafted with bronze screws @Pyritie
+- The tape measure can now be put in your toolbelt (#1813) @Nashy1232
+### Bug fixes
+- Fixed not downloading the FTB library of mods on server builds (#1811, #1801, #1812, #1411) @Xikaro
+- Fixed ingot piles occasionally crashing on servers @Pyritie
+- Fixed being able to get infinite lava by bucketing lava aqueducts @Pyritie
+- More fixes for the Solar Boilers and TFC's rain system @FiNiTe-Weeb
+- Fixed river water not washing ores (#1785)
+
+## [0.10.13] - 11-09-2025
+### Changes
+- Primitive Illagers are now on the hunt... @Pyritie
+- Added Vat recipe for boiling salt water into salt (#1784) @TreyR9
+- Power Substation is now available at EV (#1790) @TomPlop
+- Increased the tier of EBF coil required for Desh (#1790) @TomPlop
+- Quantum Eye now requires a Cryogenized Fluix Pearl (#1790) @TomPlop
+- Moon ore vein tweaks @Pyritie
+### Bug fixes
+- Fixed issue with the modpack not loading on MacOS or certain Linux distros @Xikaro
+- Fixed Solar Boilers not understanding TFC's variable rain system (#1093) @FiNiTe-Weeb
+- Added missing recipes for TFC Macaw's barbed fences @Pyritie
+- Fixed Field Generator recipes to follow the new path of pearl progression (#1790) @TomPlop
+- Fixed some backpack upgrades to be consistent with their required circuits (#1790) @TomPlop
+- Fixed Keratophyre not having a stone dust @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry
+
+## [0.10.12] - 09-09-2025
+### Changes
+- Added cobblestone, gravel, polished stone, bricks, and chiseled bricks to all stone types that didn't have those stone types, along with some other unification (#1764) @vidal-adrien
+- Nether brick is now crafted from Keratophyre (#1764) @vidal-adrien
 ### Bug fixes
 - Fixed two instances of illegal lang exceptions causing errors on servers. @Redeix
+- Fixed the field guide having no pages @Pyritie
 
 ## [0.10.11] - 08-09-2025
 ### Mods

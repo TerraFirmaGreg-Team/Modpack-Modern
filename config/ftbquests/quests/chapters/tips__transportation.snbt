@@ -513,10 +513,10 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:saws)"
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/saws)"
 						}
 					}
-					title: "{quests.tasktype.item.any} #tfc:saws"
+					title: "{quests.tasktype.item.any} Saws"
 					type: "item"
 				}
 				{
@@ -528,7 +528,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:axes)"
 						}
 					}
-					title: "{quests.tasktype.item.any} #tfc:axes"
+					title: "{quests.tasktype.item.any} Axes"
 					type: "item"
 				}
 				{
@@ -1454,5 +1454,5 @@
 		}
 	]
 	subtitle: ["{quests.tfg_tips.transportation_tips.subtitle}"]
-	title: "Tips - Transportation"
+	title: "{quests.tfg_tips.transportation_tips.title}"
 }

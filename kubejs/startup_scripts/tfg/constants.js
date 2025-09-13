@@ -198,7 +198,7 @@ global.HAMMERING = [
 		{ raw: 'tfg:rock/gravel_moon', hammered: 'ad_astra:moon_sand', duration: 70, eu: 2 },
 
 		{ raw: 'ad_astra:moon_deepslate', hammered: 'tfg:rock/cobble_moon_deepslate', duration: 10, eu: 16 },
-		{ raw: 'ad_astra:hardened_moon_deepslate', hammered: 'tfg:rock/cobble_moon_deepslate', duration: 10, eu: 16 },
+		{ raw: 'tfg:rock/hardened_moon_deepslate', hammered: 'tfg:rock/cobble_moon_deepslate', duration: 10, eu: 16 },
 		{ raw: 'tfg:rock/cobble_moon_deepslate', hammered: 'tfg:rock/gravel_moon_deepslate', duration: 10, eu: 16 },
 		{ raw: 'tfg:rock/gravel_moon_deepslate', hammered: 'ad_astra:moon_sand', duration: 10, eu: 16 },
 

@@ -2225,7 +2225,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 170$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -60 — 10$(br)$(thing)Tamanho$(): 50$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Ardósia, Filito, Gnaisse, Mármore, Quartzito, Xisto",
+      "text": "$(thing)Raridade$(): 170$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -60 — 10$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Ardósia, Filito, Gnaisse, Mármore, Quartzito, Xisto",
       "title": "Lápis-lazúri, Lazurita e Sodalita",
       "type": "patchouli:text",
       "anchor": "normal_lapis"

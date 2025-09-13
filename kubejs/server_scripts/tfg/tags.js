@@ -238,6 +238,10 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:rods/any_bronze', '#forge:rods/bismuth_bronze')
 	event.add('forge:rods/any_bronze', '#forge:rods/black_bronze')
 
+	event.add('forge:screws/any_bronze', '#forge:screws/bronze')
+	event.add('forge:screws/any_bronze', '#forge:screws/bismuth_bronze')
+	event.add('forge:screws/any_bronze', '#forge:screws/black_bronze')
+
 	//#region Food
 	const RAW_MEATS = [
 		'tfg:food/raw_birt',
@@ -762,6 +766,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:stone_dusts', 'tfg:glacio_stone_dust')
 	event.add('tfg:stone_dusts', 'gtceu:stone_dust')
 	event.add('tfg:stone_dusts', 'gtceu:red_granite_dust')
+	event.add('tfg:stone_dusts', 'gtceu:netherrack_dust')
 	//#endregion
 
 	// #region 0.7.19 -> 0.9 conversion
