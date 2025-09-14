@@ -5,8 +5,8 @@
 		{
 			"weight": 100,
 			"element": {
-				"location": "tfg:norse/baseline/norse_start",
-				"processors": "minecraft:empty",
+				"location": "tfg:norse/baseline/norse_root_base",
+				"processors": "tfg:illagers/norse_paths",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}

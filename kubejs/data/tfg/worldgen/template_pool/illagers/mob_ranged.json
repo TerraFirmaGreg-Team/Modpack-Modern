@@ -5,7 +5,7 @@
 		{
 			"weight": 50,
 			"element": {
-				"location": "tfg:illager_generic/ambusher",
+				"location": "tfg:illager_generic/mobs/ambusher",
 				"processors": "minecraft:empty",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
@@ -14,7 +14,7 @@
 		{
 			"weight": 100,
 			"element": {
-				"location": "tfg:illager_generic/hunter",
+				"location": "tfg:illager_generic/mobs/hunter",
 				"processors": "minecraft:empty",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"

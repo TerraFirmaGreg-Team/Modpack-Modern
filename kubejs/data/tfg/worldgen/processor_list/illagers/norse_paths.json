@@ -9,13 +9,42 @@
 						"predicate_type": "minecraft:block_match"
 					},
 					"location_predicate": {
-						"tag": "minecraft:water",
-						"predicate_type": "minecraft:tag_match"
+						"block": "minecraft:water",
+						"predicate_type": "minecraft:block_match"
 					},
 					"output_state": {
 						"Name": "tfc:wood/planks/hickory"
 					}
 				},
+				{
+					"input_predicate": {
+						"block": "rnr:hoggin",
+						"predicate_type": "minecraft:block_match"
+					},
+					"location_predicate": {
+						"block": "tfc:fluid/river_water",
+						"predicate_type": "minecraft:block_match"
+					},
+					"output_state": {
+						"Name": "tfc:wood/planks/hickory"
+					}
+				},
+				{
+					"input_predicate": {
+						"block": "rnr:hoggin",
+						"predicate_type": "minecraft:block_match"
+					},
+					"location_predicate": {
+						"block": "minecraft:air",
+						"predicate_type": "minecraft:block_match"
+					},
+					"output_state": {
+						"Name": "tfc:wood/planks/hickory"
+					}
+				},
+
+
+
 				{
 					"input_predicate": {
 						"block": "rnr:hoggin",
@@ -46,20 +75,20 @@
 					"input_predicate": {
 						"block": "rnr:hoggin",
 						"predicate_type": "minecraft:random_block_match",
-						"probability": 0.05
+						"probability": 0.15
 					},
 					"location_predicate": {
 						"predicate_type": "minecraft:always_true"
 					},
 					"output_state": {
-						"Name": "tfc:grass_path/sandy_loam"
+						"Name": "tfc:grass_path/silty_loam"
 					}
 				},
 				{
 					"input_predicate": {
 						"block": "rnr:hoggin",
 						"predicate_type": "minecraft:random_block_match",
-						"probability": 0.1
+						"probability": 0.15
 					},
 					"location_predicate": {
 						"predicate_type": "minecraft:always_true"
