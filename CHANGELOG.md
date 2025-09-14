@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 ### Changes
+- Reduced the durability of wooden tongs @Pyritie
 ### Bug fixes
 - Ice soup now requires a bowl to craft, so it doesn't generate free bowls @Pyritie
 ### Translation updates
