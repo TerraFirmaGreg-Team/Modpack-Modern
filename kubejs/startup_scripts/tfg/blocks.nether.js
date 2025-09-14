@@ -17,6 +17,32 @@ function registerTFGNetherBlocks(event) {
 			.opaque(true)
 	})
 
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/dripstone_${shape}`, shape)
+			.soundType('dripstone_block')
+			.textureAll('minecraft:block/dripstone_block')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:rock_${shape}`)
+			.tagBoth('tfc:sedimentary_items')
+			.mapColor('terracotta')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/crackrack_${shape}`, shape)
+			.soundType('netherrack')
+			.textureAll('beneath:block/crackrack')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:rock_${shape}`)
+			.tagBoth('tfc:igneous_intrusive_items')
+			.mapColor('crimson_stem')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+ 
 	// #endregion Raw Stones
 
 	// #region Hardened Stones
@@ -161,6 +187,7 @@ function registerTFGNetherBlocks(event) {
 			.opaque(true)
 	})
 	
+	// Blackstone
 	event.create('tfg:rock/cobble_blackstone')
 		.soundType('stone')
 		.tagBoth('forge:cobblestone')
@@ -172,7 +199,19 @@ function registerTFGNetherBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 	
-	// Blackstone
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cobble_blackstone_${shape}`, shape)
+			.soundType('stone')
+			.textureAll('minecraft:block/blackstone_top')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:rock_${shape}`)
+			.tagBoth('tfc:igneous_intrusive_items')
+			.mapColor('color_black')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+	
 	event.create('tfg:rock/mossy_cobble_blackstone')
 		.soundType('stone')
 		.tagBoth('forge:cobblestone')
@@ -184,6 +223,19 @@ function registerTFGNetherBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 	
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/mossy_cobble_blackstone_${shape}`, shape)
+			.soundType('stone')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:rock_${shape}`)
+			.tagBoth('tfc:igneous_intrusive_items')
+			.mapColor('color_black')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+	
+	// Dripstone
 	event.create('tfg:rock/cobble_dripstone')
 		.soundType('dripstone_block')
 		.tagBoth('forge:cobblestone')
@@ -194,6 +246,18 @@ function registerTFGNetherBlocks(event) {
 		.tagBlock('tfc:can_landslide')
 		.fullBlock(true)
 		.opaque(true)
+	
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cobble_dripstone_${shape}`, shape)
+			.soundType('dripstone_block')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:rock_${shape}`)
+			.tagBoth('tfc:sedimentary_items')
+			.mapColor('terracotta')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
 	
 	event.create('tfg:rock/mossy_cobble_dripstone')
 		.soundType('dripstone_block')
@@ -206,6 +270,19 @@ function registerTFGNetherBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 	
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/mossy_cobble_dripstone_${shape}`, shape)
+			.soundType('dripstone_block')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:rock_${shape}`)
+			.tagBoth('tfc:sedimentary_items')
+			.mapColor('terracotta')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+	
+	// Crackrack
 	event.create('tfg:rock/cobble_crackrack')
 		.soundType('netherrack')
 		.tagBoth('forge:cobblestone')
@@ -216,6 +293,18 @@ function registerTFGNetherBlocks(event) {
 		.tagBlock('tfc:can_landslide')
 		.fullBlock(true)
 		.opaque(true)
+	
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cobble_crackrack_${shape}`, shape)
+			.soundType('netherrack')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:rock_${shape}`)
+			.tagBoth('tfc:igneous_intrusive_items')
+			.mapColor('crimson_stem')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
 	
 	event.create('tfg:rock/mossy_cobble_crackrack')
 		.soundType('netherrack')
@@ -228,6 +317,17 @@ function registerTFGNetherBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 	
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/mossy_cobble_crackrack_${shape}`, shape)
+			.soundType('netherrack')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:rock_${shape}`)
+			.tagBoth('tfc:igneous_intrusive_items')
+			.mapColor('crimson_stem')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
 	
 	// #region Smooth (Polished/Cut) Stones
 
@@ -240,6 +340,18 @@ function registerTFGNetherBlocks(event) {
 		.tagBlock('minecraft:mineable/pickaxe')
 		.fullBlock(true)
 		.opaque(true)
+	
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/polished_crackrack_${shape}`, shape)
+			.soundType('netherrack')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:rock_${shape}`)
+			.tagBoth('tfc:igneous_intrusive_items')
+			.mapColor('crimson_stem')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
 	
 	// #endregion Smooth (Polished/Cut) Stones
 
@@ -344,6 +456,19 @@ function registerTFGNetherBlocks(event) {
 	})
 	
 	// Blackstone
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cracked_bricks_blackstone_${shape}`, shape)
+			.soundType('stone')
+			.textureAll('minecraft:block/cracked_polished_blackstone_bricks')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:brick_${shape}`)
+			.tagBoth('tfc:igneous_intrusive_items')
+			.mapColor('terracotta_grey')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
 	event.create('tfg:rock/mossy_bricks_blackstone')
 		.soundType('stone')
 		.tagBoth('minecraft:stone_bricks')
@@ -356,6 +481,43 @@ function registerTFGNetherBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 	
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/mossy_bricks_blackstone_${shape}`, shape)
+			.soundType('stone')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:brick_${shape}`)
+			.tagBoth('tfc:igneous_intrusive_items')
+			.mapColor('terracotta_grey')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+	
+	// Dripstone
+	event.create('tfg:rock/cracked_bricks_dripstone')
+		.soundType('dripstone_block')
+		.tagBoth('minecraft:stone_bricks')
+		.tagBoth('forge:stone_bricks')
+		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:sedimentary_items')
+		.tagBoth('tfg:brick_index')
+		.mapColor('terracotta')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cracked_bricks_dripstone_${shape}`, shape)
+			.soundType('stone')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:brick_${shape}`)
+			.tagBoth('tfc:sedimentary_items')
+			.mapColor('terracotta')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
 	event.create('tfg:rock/mossy_bricks_dripstone')
 		.soundType('dripstone_block')
 		.tagBoth('minecraft:stone_bricks')
@@ -368,6 +530,32 @@ function registerTFGNetherBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 	
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/mossy_bricks_dripstone_${shape}`, shape)
+			.soundType('stone')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:brick_${shape}`)
+			.tagBoth('tfc:sedimentary_items')
+			.mapColor('terracotta')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+	
+	// Crackrack
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cracked_bricks_nether_${shape}`, shape)
+			.soundType('nether_bricks')
+			.textureAll('minecraft:block/cracked_nether_bricks')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:brick_${shape}`)
+			.tagBoth('tfc:igneous_intrusive_items')
+			.mapColor('nether')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
 	event.create('tfg:rock/mossy_bricks_nether')
 		.soundType('nether_bricks')
 		.tagBoth('minecraft:stone_bricks')
@@ -379,6 +567,18 @@ function registerTFGNetherBlocks(event) {
 		.tagBlock('minecraft:mineable/pickaxe')
 		.fullBlock(true)
 		.opaque(true)
+	
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/mossy_bricks_nether_${shape}`, shape)
+			.soundType('nether_bricks')
+			.tagBoth(`minecraft:${shape}`)
+			.tagBoth(`tfg:brick_${shape}`)
+			.tagBoth('tfc:igneous_intrusive_items')
+			.mapColor('nether')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
 	
 	// #endregion Bricks / Decorative
 	 

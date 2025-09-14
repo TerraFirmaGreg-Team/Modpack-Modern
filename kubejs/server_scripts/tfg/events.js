@@ -267,22 +267,23 @@ function getTFGPersistentDataRoot(player) {
  * @property {string|null} chiseled_brick - Chiseled brick block ID.
  */
 
+// #region BRICK_INDEX
 /** @type {BrickVariant[]} */
 global.BRICK_INDEX = (global.TFC_STONE_TYPES ? global.TFC_STONE_TYPES : []).map(tfc_stone => ({
-	brick_type: tfc_stone,
-	brick: `tfc:rock/bricks/${tfc_stone}`, brick_stairs: `tfc:rock/bricks/${tfc_stone}_stairs`, brick_slab: `tfc:rock/bricks/${tfc_stone}_slab`, brick_wall: `tfc:rock/bricks/${tfc_stone}_wall`, 
+	brick_type:    tfc_stone,
+	brick:         `tfc:rock/bricks/${tfc_stone}`,         brick_stairs:   `tfc:rock/bricks/${tfc_stone}_stairs`,         brick_slab:   `tfc:rock/bricks/${tfc_stone}_slab`,         brick_wall:   `tfc:rock/bricks/${tfc_stone}_wall`, 
 	cracked_brick: `tfc:rock/cracked_bricks/${tfc_stone}`, cracked_stairs: `tfc:rock/cracked_bricks/${tfc_stone}_stairs`, cracked_slab: `tfc:rock/cracked_bricks/${tfc_stone}_slab`, cracked_wall: `tfc:rock/cracked_bricks/${tfc_stone}_wall`, 
-	mossy_brick: `tfc:rock/mossy_bricks/${tfc_stone}`, mossy_stairs: `tfc:rock/mossy_bricks/${tfc_stone}_stairs`, mossy_slab: `tfc:rock/mossy_bricks/${tfc_stone}_slab`, mossy_wall: `tfc:rock/mossy_bricks/${tfc_stone}_wall`,
-	smooth_brick: `tfc:rock/smooth/${tfc_stone}`, smooth_stairs: `tfc:rock/smooth/${tfc_stone}_stairs`, smooth_slab: `tfc:rock/smooth/${tfc_stone}_slab`, smooth_wall: `tfc:rock/smooth/${tfc_stone}_wall`, 
+	mossy_brick:   `tfc:rock/mossy_bricks/${tfc_stone}`,   mossy_stairs:   `tfc:rock/mossy_bricks/${tfc_stone}_stairs`,   mossy_slab:   `tfc:rock/mossy_bricks/${tfc_stone}_slab`,   mossy_wall:   `tfc:rock/mossy_bricks/${tfc_stone}_wall`,
+	smooth_brick:  `tfc:rock/smooth/${tfc_stone}`,         smooth_stairs:  `tfc:rock/smooth/${tfc_stone}_stairs`,         smooth_slab:  `tfc:rock/smooth/${tfc_stone}_slab`,         smooth_wall:  `tfc:rock/smooth/${tfc_stone}_wall`, 
 	chiseled_brick: `tfc:rock/chiseled/${tfc_stone}`
 }));
 (global.CREATE_DECO_BRICK_TYPES ? global.CREATE_DECO_BRICK_TYPES : []).slice(0, -1).forEach(create_brick => {
   global.BRICK_INDEX.push({
-		brick_type: create_brick,
-		brick: `createdeco:${create_brick}_bricks`, brick_stairs: `createdeco:${create_brick}_brick_stairs`, brick_slab: `createdeco:${create_brick}_brick_slab`, brick_wall: `createdeco:${create_brick}_brick_wall`,	
-		cracked_brick: `createdeco:cracked_${create_brick}_bricks`, cracked_stairs: `createdeco:cracked_${create_brick}_brick_stairs`, cracked_slab: `createdeco:cracked_${create_brick}_brick_slab`, cracked_wall: `createdeco:cracked_${create_brick}_brick_wall`, 
-		mossy_brick: `createdeco:mossy_${create_brick}_bricks`, mossy_stairs: `createdeco:mossy_${create_brick}_brick_stairs`, mossy_slab: `createdeco:mossy_${create_brick}_brick_slab`, mossy_wall: `createdeco:mossy_${create_brick}_brick_wall`,
-		smooth_brick: `createdeco:corner_${create_brick}_bricks`, smooth_stairs: `createdeco:corner_${create_brick}_brick_stairs`, smooth_slab: `createdeco:corner_${create_brick}_brick_slab`, smooth_wall: `createdeco:corner_${create_brick}_brick_wall`,
+		brick_type:     create_brick,
+		brick:          `createdeco:${create_brick}_bricks`,         brick_stairs:   `createdeco:${create_brick}_brick_stairs`,         brick_slab:   `createdeco:${create_brick}_brick_slab`,         brick_wall:   `createdeco:${create_brick}_brick_wall`,	
+		cracked_brick:  `createdeco:cracked_${create_brick}_bricks`, cracked_stairs: `createdeco:cracked_${create_brick}_brick_stairs`, cracked_slab: `createdeco:cracked_${create_brick}_brick_slab`, cracked_wall: `createdeco:cracked_${create_brick}_brick_wall`, 
+		mossy_brick:    `createdeco:mossy_${create_brick}_bricks`,   mossy_stairs:   `createdeco:mossy_${create_brick}_brick_stairs`,   mossy_slab:   `createdeco:mossy_${create_brick}_brick_slab`,   mossy_wall:   `createdeco:mossy_${create_brick}_brick_wall`,
+		smooth_brick:   `createdeco:corner_${create_brick}_bricks`,  smooth_stairs:  `createdeco:corner_${create_brick}_brick_stairs`,  smooth_slab:  `createdeco:corner_${create_brick}_brick_slab`,  smooth_wall:  `createdeco:corner_${create_brick}_brick_wall`,
 		chiseled_brick: `createdeco:tiled_${create_brick}_bricks`
 	})
 });
@@ -296,48 +297,71 @@ global.BRICK_INDEX = global.BRICK_INDEX.concat([
 	// chiseled_brick: ''
 	// },
 	{ brick_type:     'red',
-	  brick:          'minecraft:bricks',                    brick_stairs:   'minecraft:brick_stairs',              brick_slab:   'minecraft:brick_slab',                brick_wall:   'minecraft:brick_wall',
-	  cracked_brick:  'createdeco:cracked_red_bricks',       cracked_stairs: 'createdeco:cracked_red_brick_stairs', cracked_slab: 'createdeco:cracked_red_brick_slab',   cracked_wall: 'createdeco:cracked_red_brick_wall', 
-	  mossy_brick:    'createdeco:mossy_red_bricks',         mossy_stairs:   'createdeco:mossy_red_brick_stairs',   mossy_slab:   'createdeco:mossy_red_brick_slab',     mossy_wall:   'createdeco:mossy_red_brick_wall',
-	  smooth_brick:   'createdeco:corner_red_bricks',        smooth_stairs:  'createdeco:corner_red_brick_stairs',  smooth_slab:  'createdeco:corner_red_brick_slab',    smooth_wall:  'createdeco:corner_red_brick_wall',
+	  brick:          'minecraft:bricks',                             brick_stairs:   'minecraft:brick_stairs',                    brick_slab:   'minecraft:brick_slab',                      brick_wall:   'minecraft:brick_wall',
+	  cracked_brick:  'createdeco:cracked_red_bricks',                cracked_stairs: 'createdeco:cracked_red_brick_stairs',       cracked_slab: 'createdeco:cracked_red_brick_slab',         cracked_wall: 'createdeco:cracked_red_brick_wall', 
+	  mossy_brick:    'createdeco:mossy_red_bricks',                  mossy_stairs:   'createdeco:mossy_red_brick_stairs',         mossy_slab:   'createdeco:mossy_red_brick_slab',           mossy_wall:   'createdeco:mossy_red_brick_wall',
+	  smooth_brick:   'createdeco:corner_red_bricks',                 smooth_stairs:  'createdeco:corner_red_brick_stairs',        smooth_slab:  'createdeco:corner_red_brick_slab',          smooth_wall:  'createdeco:corner_red_brick_wall',
 	  chiseled_brick: 'createdeco:tiled_red_bricks' },
 
 	{ brick_type:     'light_concrete',
-	  brick:          'gtceu:light_concrete_bricks',         brick_stairs:   null,                                  brick_slab:   null,                                  brick_wall:   null,
-	  cracked_brick:  'gtceu:cracked_light_concrete_bricks', cracked_stairs: null,                                  cracked_slab: null,                                  cracked_wall: null, 
-	  mossy_brick:    'gtceu:mossy_light_concrete_bricks',   mossy_stairs:   null,                                  mossy_slab:   null,                                  mossy_wall:   null,
-	  smooth_brick:   'gtceu:polished_light_concrete',       smooth_stairs:  null,                                  smooth_slab:  null,                                  smooth_wall:  null,
+	  brick:          'gtceu:light_concrete_bricks',                  brick_stairs:   null,                                        brick_slab:   null,                                        brick_wall:   null,
+	  cracked_brick:  'gtceu:cracked_light_concrete_bricks',          cracked_stairs: null,                                        cracked_slab: null,                                        cracked_wall: null, 
+	  mossy_brick:    'gtceu:mossy_light_concrete_bricks',            mossy_stairs:   null,                                        mossy_slab:   null,                                        mossy_wall:   null,
+	  smooth_brick:   'gtceu:polished_light_concrete',                smooth_stairs:  null,                                        smooth_slab:  null,                                        smooth_wall:  null,
 	  chiseled_brick: 'gtceu:chiseled_light_concrete' },
 
 	{ brick_type:     'dark_concrete',
-	  brick:          'gtceu:dark_concrete_bricks',          brick_stairs:   null,                                  brick_slab:   null,                                  brick_wall:   null,
-	  cracked_brick:  'gtceu:cracked_dark_concrete_bricks',  cracked_stairs: null,                                  cracked_slab: null,                                  cracked_wall: null, 
-	  mossy_brick:    'gtceu:mossy_dark_concrete_bricks',    mossy_stairs:   null,                                  mossy_slab:   null,                                  mossy_wall:   null,
-	  smooth_brick:   'gtceu:polished_dark_concrete',        smooth_stairs:  null,                                  smooth_slab:  null,                                  smooth_wall:  null,
+	  brick:          'gtceu:dark_concrete_bricks',                   brick_stairs:   null,                                         brick_slab:   null,                                       brick_wall:   null,
+	  cracked_brick:  'gtceu:cracked_dark_concrete_bricks',           cracked_stairs: null,                                         cracked_slab: null,                                       cracked_wall: null, 
+	  mossy_brick:    'gtceu:mossy_dark_concrete_bricks',             mossy_stairs:   null,                                         mossy_slab:   null,                                       mossy_wall:   null,
+	  smooth_brick:   'gtceu:polished_dark_concrete',                 smooth_stairs:  null,                                         smooth_slab:  null,                                       smooth_wall:  null,
 	  chiseled_brick: 'gtceu:chiseled_dark_concrete' },
 
 	{ brick_type:     'deepslate',
-	  brick:          'minecraft:deepslate_bricks',          brick_stairs:   'minecraft:deepslate_brick_stairs',         brick_slab:   'minecraft:deepslate_brick_slab',         brick_wall:   'minecraft:deepslate_brick_wall',
-	  cracked_brick:  'minecraft:cracked_deepslate_bricks',  cracked_stairs: 'tfg:rock/cracked_bricks_deepslate_stairs', cracked_slab: 'tfg:rock/cracked_bricks_deepslate_slab', cracked_wall: 'tfg:rock/cracked_bricks_deepslate_wall', 
-	  mossy_brick:    'tfg:rock/mossy_bricks_deepslate',     mossy_stairs:   'tfg:rock/mossy_bricks_deepslate_stairs',   mossy_slab:   'tfg:rock/mossy_bricks_deepslate_slab',   mossy_wall:   'tfg:rock/mossy_bricks_deepslate_wall',
-	  smooth_brick:   'minecraft:polished_deepslate',        smooth_stairs:  'minecraft:polished_deepslate_stairs',      smooth_slab:  'minecraft:polished_deepslate_slab',      smooth_wall:  'minecraft:polished_deepslate_wall',
+	  brick:          'minecraft:deepslate_bricks',                   brick_stairs:   'minecraft:deepslate_brick_stairs',           brick_slab:   'minecraft:deepslate_brick_slab',           brick_wall:   'minecraft:deepslate_brick_wall',
+	  cracked_brick:  'minecraft:cracked_deepslate_bricks',           cracked_stairs: 'tfg:rock/cracked_bricks_deepslate_stairs',   cracked_slab: 'tfg:rock/cracked_bricks_deepslate_slab',   cracked_wall: 'tfg:rock/cracked_bricks_deepslate_wall', 
+	  mossy_brick:    'tfg:rock/mossy_bricks_deepslate',              mossy_stairs:   'tfg:rock/mossy_bricks_deepslate_stairs',     mossy_slab:   'tfg:rock/mossy_bricks_deepslate_slab',     mossy_wall:   'tfg:rock/mossy_bricks_deepslate_wall',
+	  smooth_brick:   'minecraft:polished_deepslate',                 smooth_stairs:  'minecraft:polished_deepslate_stairs',        smooth_slab:  'minecraft:polished_deepslate_slab',        smooth_wall:  'minecraft:polished_deepslate_wall',
 	  chiseled_brick: 'minecraft:chiseled_deepslate' },
 
     { brick_type:     'deepslate_tiles',
-	  brick:          'minecraft:deepslate_tiles',           brick_stairs:   'minecraft:deepslate_tile_stairs',          brick_slab:   'minecraft:deepslate_tile_slab',          brick_wall:   'minecraft:deepslate_tile_wall',
-	  cracked_brick:  'minecraft:cracked_deepslate_tiles',   cracked_stairs: 'tfg:rock/cracked_tiles_deepslate_stairs',  cracked_slab: 'tfg:rock/cracked_tiles_deepslate_slab',  cracked_wall: 'tfg:rock/cracked_tiles_deepslate_wall', 
-	  mossy_brick:    null,                                  mossy_stairs:   null,                                       mossy_slab:   null,                                     mossy_wall:   null,
-	  smooth_brick:   'minecraft:polished_deepslate',        smooth_stairs:  'minecraft:polished_deepslate_stairs',      smooth_slab:  'minecraft:polished_deepslate_slab',      smooth_wall:  'minecraft:polished_deepslate_wall',
-	  chiseled_brick: 'minecraft:chiseled_deepslate' },    
+	  brick:          'minecraft:deepslate_tiles',                    brick_stairs:   'minecraft:deepslate_tile_stairs',            brick_slab:   'minecraft:deepslate_tile_slab',            brick_wall:   'minecraft:deepslate_tile_wall',
+	  cracked_brick:  'minecraft:cracked_deepslate_tiles',            cracked_stairs: 'tfg:rock/cracked_tiles_deepslate_stairs',    cracked_slab: 'tfg:rock/cracked_tiles_deepslate_slab',    cracked_wall: 'tfg:rock/cracked_tiles_deepslate_wall', 
+	  mossy_brick:    null,                                           mossy_stairs:   null,                                         mossy_slab:   null,                                       mossy_wall:   null,
+	  smooth_brick:   'minecraft:polished_deepslate',                 smooth_stairs:  'minecraft:polished_deepslate_stairs',        smooth_slab:  'minecraft:polished_deepslate_slab',        smooth_wall:  'minecraft:polished_deepslate_wall',
+	  chiseled_brick: 'minecraft:chiseled_deepslate' },
+
+    { brick_type:     'blackstone',
+	  brick:          'minecraft:polished_blackstone_bricks',         brick_stairs:   'minecraft:polished_blackstone_brick_stairs', brick_slab:   'minecraft:polished_blackstone_brick_slab', brick_wall:   'minecraft:polished_blackstone_brick_wall',
+	  cracked_brick:  'minecraft:cracked_polished_blackstone_bricks', cracked_stairs: 'tfg:rock/cracked_bricks_blackstone_stairs',  cracked_slab: 'tfg:rock/cracked_bricks_blackstone_slab',  cracked_wall: 'tfg:rock/cracked_bricks_blackstone_wall', 
+	  mossy_brick:    'tfg:rock/mossy_bricks_blackstone',             mossy_stairs:   'tfg:rock/mossy_bricks_blackstone_stairs',    mossy_slab:   'tfg:rock/mossy_bricks_blackstone_slab',    mossy_wall:   'tfg:rock/mossy_bricks_blackstone_wall',
+	  smooth_brick:   'minecraft:polished_blackstone',                smooth_stairs:  'minecraft:polished_blackstone_stairs',       smooth_slab:  'minecraft:polished_blackstone_slab',       smooth_wall:  'minecraft:polished_blackstone_wall',
+	  chiseled_brick: 'minecraft:chiseled_blackstone' },
+
+    { brick_type:     'dripstone',
+	  brick:          'create:cut_dripstone_bricks',                  brick_stairs:   'create:cut_dripstone_brick_stairs',          brick_slab:   'create:cut_dripstone_brick_slab',          brick_wall:   'create:cut_dripstone_brick_wall',
+	  cracked_brick:  'tfg:rock/cracked_bricks_dripstone',            cracked_stairs: 'tfg:rock/cracked_bricks_dripstone_stairs',   cracked_slab: 'tfg:rock/cracked_bricks_dripstone_slab',   cracked_wall: 'tfg:rock/cracked_bricks_dripstone_wall', 
+	  mossy_brick:    'tfg:rock/mossy_bricks_dripstone',              mossy_stairs:   'tfg:rock/mossy_bricks_dripstone_stairs',     mossy_slab:   'tfg:rock/mossy_bricks_dripstone_slab',     mossy_wall:   'tfg:rock/mossy_bricks_dripstone_wall',
+	  smooth_brick:   'create:polished_cut_dripstone',                smooth_stairs:  'create:polished_cut_dripstone_stairs',       smooth_slab:  'create:polished_cut_dripstone_slab',       smooth_wall:  'create:polished_cut_dripstone_wall',
+	  chiseled_brick: 'create:small_dripstone_bricks' },
+
+    { brick_type:     'crackrack',
+	  brick:          'minecraft:nether_bricks',                      brick_stairs:   'minecraft:nether_bricks_stairs',             brick_slab:   'minecraft:nether_bricks_slab',             brick_wall:   'minecraft:nether_bricks_wall',
+	  cracked_brick:  'minecraft:cracked_nether_bricks',              cracked_stairs: 'tfg:rock/cracked_bricks_nether_stairs',      cracked_slab: 'tfg:rock/cracked_bricks_nether_slab',      cracked_wall: 'tfg:rock/cracked_bricks_nether_wall', 
+	  mossy_brick:    'tfg:rock/mossy_bricks_nether',                 mossy_stairs:   'tfg:rock/mossy_bricks_nether_stairs',        mossy_slab:   'tfg:rock/mossy_bricks_nether_slab',        mossy_wall:   'tfg:rock/mossy_bricks_nether_wall',
+	  smooth_brick:   'tfg:rock/polished_crackrack',                  smooth_stairs:  'tfg:rock/polished_crackrack_stairs',         smooth_slab:  'tfg:rock/polished_crackrack_slab',         smooth_wall:  'tfg:rock/polished_crackrack_wall',
+	  chiseled_brick: 'minecraft:chiseled_nether_bricks' },
 
     { brick_type:     'red_granite',
-	  brick:          'gtceu:red_granite_bricks',            brick_stairs:   null,                                  brick_slab:   null,                                  brick_wall:   null,
-	  cracked_brick:  'gtceu:cracked_red_granite_bricks',    cracked_stairs: null,                                  cracked_slab: null,                                  cracked_wall: null, 
-	  mossy_brick:    'gtceu:mossy_red_granite_bricks',      mossy_stairs:   null,                                  mossy_slab:   null,                                  mossy_wall:   null,
-	  smooth_brick:   'gtceu:polished_red_granite',          smooth_stairs:  null,                                  smooth_slab:  null,                                  smooth_wall:  null,
+	  brick:          'gtceu:red_granite_bricks',                     brick_stairs:   null,                                         brick_slab:   null,                                       brick_wall:   null,
+	  cracked_brick:  'gtceu:cracked_red_granite_bricks',             cracked_stairs: null,                                         cracked_slab: null,                                       cracked_wall: null, 
+	  mossy_brick:    'gtceu:mossy_red_granite_bricks',               mossy_stairs:   null,                                         mossy_slab:   null,                                       mossy_wall:   null,
+	  smooth_brick:   'gtceu:polished_red_granite',                   smooth_stairs:  null,                                         smooth_slab:  null,                                       smooth_wall:  null,
 	  chiseled_brick: 'gtceu:chiseled_red_granite' }
 ]);
+// #endregion BRICK_INDEX
 
+// #region COBBLE_INDEX
 global.COBBLE_INDEX = (global.TFC_STONE_TYPES ? global.TFC_STONE_TYPES : []).map(tfc_stone => ({
 	cobble_type:  tfc_stone,
 	block:        `tfc:rock/cobble/${tfc_stone}`,       stairs:       `tfc:rock/cobble/${tfc_stone}_stairs`,       slab:       `tfc:rock/cobble/${tfc_stone}_slab`,        wall:       `tfc:rock/cobble/${tfc_stone}_wall`,
@@ -346,9 +370,22 @@ global.COBBLE_INDEX = (global.TFC_STONE_TYPES ? global.TFC_STONE_TYPES : []).map
 
 global.COBBLE_INDEX = global.COBBLE_INDEX.concat([
     { cobble_type:  'deepslate',
-      block:        'minecraft:cobbled_deepslate',     stairs: 'minecraft:cobbled_deepslate_stairs',           slab:       'minecraft:cobbled_deepslate_slab',     wall:      'minecraft:cobbled_deepslate_wall',
-      mossy_block:  'tfg:rock/mossy_cobble_deepslate', mossy_stairs: 'tfg:rock/mossy_cobble_deepslate_stairs', mossy_slab: 'tfg:rock/mossy_cobble_deepslate_slab', mosy_wall: 'tfg:rock/mossy_cobble_deepslate_wall' }
+      block:        'minecraft:cobbled_deepslate',      stairs:       'minecraft:cobbled_deepslate_stairs',        slab:       'minecraft:cobbled_deepslate_slab',         wall:      'minecraft:cobbled_deepslate_wall',
+      mossy_block:  'tfg:rock/mossy_cobble_deepslate',  mossy_stairs: 'tfg:rock/mossy_cobble_deepslate_stairs',    mossy_slab: 'tfg:rock/mossy_cobble_deepslate_slab',     mosy_wall: 'tfg:rock/mossy_cobble_deepslate_wall'  },
+    
+    { cobble_type:  'blackstone',
+      block:        'tfg:rock/cobble_blackstone',       stairs:       'tfg:rock/cobble_blackstone_stairs',         slab:       'tfg:rock/cobble_blackstone_slab',          wall:      'tfg:rock/cobble_blackstone_wall',
+      mossy_block:  'tfg:rock/mossy_cobble_blackstone', mossy_stairs: 'tfg:rock/mossy_cobble_blackstone_stairs',   mossy_slab: 'tfg:rock/mossy_cobble_blackstone_slab',    mosy_wall: 'tfg:rock/mossy_cobble_blackstone_wall' },
+
+    { cobble_type:  'dripstone',
+      block:        'tfg:rock/cobble_dripstone',        stairs:       'tfg:rock/cobble_dripstone_stairs',          slab:       'tfg:rock/cobble_dripstone_slab',           wall:      'tfg:rock/cobble_dripstone_wall',
+      mossy_block:  'tfg:rock/mossy_cobble_dripstone',  mossy_stairs: 'tfg:rock/mossy_cobble_dripstone_stairs',    mossy_slab: 'tfg:rock/mossy_cobble_dripstone_slab',     mosy_wall: 'tfg:rock/mossy_cobble_dripstone_wall'  },
+
+    { cobble_type:  'crackrack',
+      block:        'tfg:rock/cobble_crackrack',        stairs:       'tfg:rock/cobble_crackrack_stairs',          slab:       'tfg:rock/cobble_crackrack_slab',           wall:      'tfg:rock/cobble_crackrack_wall',
+      mossy_block:  'tfg:rock/mossy_cobble_crackrack',  mossy_stairs: 'tfg:rock/mossy_cobble_crackrack_stairs',    mossy_slab: 'tfg:rock/mossy_cobble_crackrack_slab',     mosy_wall: 'tfg:rock/mossy_cobble_crackrack_wall'  }
 ]); 
+// #endregion COBBLE_INDEX
 
 /**
  * Function for replacing a block with another block by crouch-right-clicking with a tool.

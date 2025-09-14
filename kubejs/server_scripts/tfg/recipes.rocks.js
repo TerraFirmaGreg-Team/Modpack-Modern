@@ -6,10 +6,8 @@
  */
 function registerTFGRockRecipes(event) {
 
-	// #region Nether rock recipes
-
+	// #region GLUEING_TOGETHER
 	// loose rocks to cobble, bricks to brick blocks
-
 	const GLUEING_TOGETHER = [
 		{ loose: 'tfg:loose/deepslate', block: 'minecraft:cobbled_deepslate' },
 		{ loose: 'beneath:blackstone_pebble', block: 'minecraft:blackstone' },
@@ -54,9 +52,9 @@ function registerTFGRockRecipes(event) {
 			.duration(50)
 			.EUt(2)
 	})
+	// #endregion GLUEING_TOGETHER
 
-	// Cobble to loose
-
+	// #region COBBLE_TO_LOOSE
 	const COBBLE_TO_LOOSE = [
 		{ cobble: 'minecraft:blackstone', loose: 'beneath:blackstone_pebble' },
 		{ cobble: 'tfg:rock/cobble_dripstone', loose: 'tfg:loose/dripstone' },
@@ -69,9 +67,9 @@ function registerTFGRockRecipes(event) {
 	COBBLE_TO_LOOSE.forEach(x => {
 		event.shapeless(`4x ${x.loose}`, [x.cobble])		
 	})
+	// #endregion COBBLE_TO_LOOSE
 
-	// loose to gravel
-
+	// #region LOOSE_TO_GRAVEL
 	const LOOSE_TO_GRAVEL = [
 		{ loose: 'tfg:loose/deepslate', gravel: 'tfg:rock/gravel_deepslate' },
 		{ loose: 'beneath:blackstone_pebble', gravel: 'tfg:rock/gravel_blackstone' },
@@ -91,8 +89,7 @@ function registerTFGRockRecipes(event) {
 		event.shapeless(`16x ${x.loose}`, [`4x ${x.gravel}`])
 	})
 
-	// loose to bricks
-
+	// #region LOOSE_TO_BRICKS
 	const LOOSE_TO_BRICKS = [
 		{ loose: 'tfg:loose/deepslate', brick: 'tfg:brick/deepslate' },
 		{ loose: 'tfg:loose/crackrack', brick: 'minecraft:nether_brick' },
@@ -116,9 +113,9 @@ function registerTFGRockRecipes(event) {
 			.duration(40)
 			.EUt(8)
 	})
+	// #endregion LOOSE_TO_BRICKS
 
-	// raw to polished
-
+	// #region RAW_TO_POLISHED
 	const RAW_TO_POLISHED = [
 		// Beneath
 		{ raw: 'minecraft:deepslate', polished: 'minecraft:polished_deepslate' },
@@ -226,48 +223,7 @@ function registerTFGRockRecipes(event) {
 		//}).id(`tfg:vi/laser/tfg/${x.raw.replace(/:/g, '_')}_to_${x.polished.replace(/:/g, '_')}`)
 	})
 
-	// Stone Cutter Sets
-	const red_granite_cutter_set = Ingredient.of('#tfg:red_granite_cutter_set').itemIds.toArray().map(String);
-	red_granite_cutter_set.forEach(block => {
-		event.stonecutting(block,
-			Ingredient.of('#tfg:red_granite_cutter_set').subtract(block)
-		).id(`tfg:stonecutter/${block.replace(/:/g, "/")}`)
-		
-	})
-
-	const moon_deepslate_cutter_set = Ingredient.of('#tfg:moon_deepslate_cutter_set').itemIds.toArray().map(String);
-	moon_deepslate_cutter_set.forEach(block => {
-		event.stonecutting(block,
-			Ingredient.of('#tfg:moon_deepslate_cutter_set').subtract(block)
-		).id(`tfg:stonecutter/${block.replace(/:/g, "/")}`)
-		
-	})
-
-	// pillar shaped recipes
-	event.shaped(
-		Item.of('create:deepslate_pillar', 2), [ ' A ', ' A ' ], { A: 'minecraft:polished_deepslate' }
-	)
-	event.shaped(
-		Item.of('create:layered_deepslate', 2), [ 'AA ' ], { A: 'minecraft:polished_deepslate' }
-	)
-
-	event.shaped(
-		Item.of('create:dripstone_pillar', 2), [ ' A ', ' A ' ], { A: 'create:polished_cut_dripstone' }
-	)
-	event.shaped(
-		Item.of('create:layered_dripstone', 2), [ 'AA ' ], { A: 'create:polished_cut_dripstone' }
-	)
-
-	event.shaped(
-		Item.of('create:dripstone_pillar', 2), [ ' A ', ' A ' ], { A: 'create:polished_cut_dripstone' }
-	)
-	event.shaped(
-		Item.of('create:layered_dripstone', 2), [ 'AA ' ], { A: 'create:polished_cut_dripstone' }
-	)
-
-	event.shaped(
-		Item.of('tfg:rock/pillar_moon_deepslate', 2), [ ' A ', ' A ' ], { A: 'tfg:rock/bricks_moon_deepslate' }
-	)
+	// #endregion RAW_TO_POLISHED
 	
 	// cracked bricks
 
@@ -317,167 +273,237 @@ function registerTFGRockRecipes(event) {
 
 	// slabs, stairs, walls
 
+	// #region CUTTER
+	//
+	// (spacing for region titles)
+	// 
 	const CUTTER = [
 		// #region Nether
 		// Deepslate
-		{  raw:  'minecraft:deepslate',                  stair: 'tfg:rock/deepslate_stairs',                  slab: 'tfg:rock/deepslate_slab',                  wall: 'tfg:rock/deepslate_wall',
-		   dust: null,                                   loose: null,                                         stonecutting: false },
+		{  raw:  'minecraft:deepslate',                         stair: 'tfg:rock/deepslate_stairs',                  slab: 'tfg:rock/deepslate_slab',                  wall: 'tfg:rock/deepslate_wall',
+		   dust: null,                                          loose: null,                                         stonecutting: false }, // Raw
 
-		{  raw:  'minecraft:cobbled_deepslate',          stair: 'minecraft:cobbled_deepslate_stairs',         slab: 'minecraft:cobbled_deepslate_slab',         wall: 'minecraft:cobbled_deepslate_wall',
-		   dust: 'gtceu:deepslate_dust', 		         loose: 'tfg:loose/deepslate',                        stonecutting: false },
+		{  raw:  'minecraft:cobbled_deepslate',                 stair: 'minecraft:cobbled_deepslate_stairs',         slab: 'minecraft:cobbled_deepslate_slab',         wall: 'minecraft:cobbled_deepslate_wall',
+		   dust: 'gtceu:deepslate_dust', 		                loose: 'tfg:loose/deepslate',                        stonecutting: false }, // Cobble
 
-		{  raw:  'tfg:rock/mossy_cobble_deepslate',      stair: 'tfg:rock/mossy_cobble_deepslate_stairs',     slab: 'tfg:rock/mossy_cobble_deepslate_slab',     wall: 'tfg:rock/mossy_cobble_deepslate_wall',
-           dust: null,                                   loose: null,                                         stonecutting: false },
+		{  raw:  'tfg:rock/mossy_cobble_deepslate',             stair: 'tfg:rock/mossy_cobble_deepslate_stairs',     slab: 'tfg:rock/mossy_cobble_deepslate_slab',     wall: 'tfg:rock/mossy_cobble_deepslate_wall',
+           dust: null,                                          loose: null,                                         stonecutting: true },  // Cobble - Mossy
 
-		{ raw:  'minecraft:polished_deepslate',          stair: 'minecraft:polished_deepslate_stairs',        slab: 'minecraft:polished_deepslate_slab',        wall: 'minecraft:polished_deepslate_wall',
-		  dust: 'gtceu:deepslate_dust',                  loose: null,                                         stonecutting: false },
+		{ raw:  'minecraft:polished_deepslate',                 stair: 'minecraft:polished_deepslate_stairs',        slab: 'minecraft:polished_deepslate_slab',        wall: 'minecraft:polished_deepslate_wall',
+		  dust: 'gtceu:deepslate_dust',                         loose: null,                                         stonecutting: false }, // Smooth
 
-		{ raw:  'create:cut_deepslate',                  stair: 'create:cut_deepslate_stairs',                slab: 'create:cut_deepslate_slab',                wall: 'create:cut_deepslate_wall',
-		  dust: 'gtceu:deepslate_dust',                  loose: null,                                         stonecutting: false },
+		{ raw:  'create:cut_deepslate',                         stair: 'create:cut_deepslate_stairs',                slab: 'create:cut_deepslate_slab',                wall: 'create:cut_deepslate_wall',
+		  dust: 'gtceu:deepslate_dust',                         loose: null,                                         stonecutting: false }, // Smooth - Extra
 
-		{ raw:  'create:polished_cut_deepslate',         stair: 'create:polished_cut_deepslate_stairs',       slab: 'create:polished_cut_deepslate_slab',       wall: 'create:polished_cut_deepslate_wall',
-		  dust: 'gtceu:deepslate_dust',                  loose: null,                                         stonecutting: false },
+		{ raw:  'create:polished_cut_deepslate',                stair: 'create:polished_cut_deepslate_stairs',       slab: 'create:polished_cut_deepslate_slab',       wall: 'create:polished_cut_deepslate_wall',
+		  dust: 'gtceu:deepslate_dust',                         loose: null,                                         stonecutting: false }, // Smooth - Extra
 
-		{ raw:  'minecraft:deepslate_bricks',            stair: 'minecraft:deepslate_brick_stairs',           slab: 'minecraft:deepslate_brick_slab',           wall: 'minecraft:deepslate_brick_wall',
-		  dust: 'gtceu:deepslate_dust',                  loose: null,                                         stonecutting: false },
+		{ raw:  'minecraft:deepslate_bricks',                   stair: 'minecraft:deepslate_brick_stairs',           slab: 'minecraft:deepslate_brick_slab',           wall: 'minecraft:deepslate_brick_wall',
+		  dust: 'gtceu:deepslate_dust',                         loose: null,                                         stonecutting: false }, // Bricks
 
-		{ raw:  'minecraft:cracked_deepslate_bricks',    stair: 'tfg:rock/cracked_bricks_deepslate_stairs',   slab: 'tfg:rock/cracked_bricks_deepslate_slab',   wall: 'tfg:rock/cracked_bricks_deepslate_wall',
-		  dust: 'gtceu:deepslate_dust',                  loose: null,                                         stonecutting: false },
+		{ raw:  'minecraft:cracked_deepslate_bricks',           stair: 'tfg:rock/cracked_bricks_deepslate_stairs',   slab: 'tfg:rock/cracked_bricks_deepslate_slab',   wall: 'tfg:rock/cracked_bricks_deepslate_wall',
+		  dust: 'gtceu:deepslate_dust',                         loose: null,                                         stonecutting: true },  // Bricks - Cracked
+		
+		{ raw:  'tfg:rock/mossy_bricks_deepslate',              stair: 'tfg:rock/mossy_bricks_deepslate_stairs',     slab: 'tfg:rock/mossy_bricks_deepslate_slab',     wall: 'tfg:rock/mossy_bricks_deepslate_wall',
+		  dust: 'gtceu:deepslate_dust',                         loose: null,                                         stonecutting: true },  // Bricks - Mossy
+		
+		{ raw:  'minecraft:deepslate_tiles',                    stair: 'minecraft:deepslate_tile_stairs',            slab: 'minecraft:deepslate_tile_slab',            wall: 'minecraft:deepslate_tile_wall',
+		  dust: 'gtceu:deepslate_dust',                         loose: null,                                         stonecutting: false }, // Bricks - Extra
 
-		{ raw:  'create:cut_deepslate_bricks',           stair: 'create:cut_deepslate_brick_stairs',          slab: 'create:cut_deepslate_brick_slab',          wall: 'create:cut_deepslate_brick_wall',
-		  dust: 'gtceu:deepslate_dust',                  loose: null,                                         stonecutting: false },
+		{ raw:  'minecraft:cracked_deepslate_tiles',            stair: 'tfg:rock/cracked_tiles_deepslate_stairs',    slab: 'tfg:rock/cracked_tiles_deepslate_slab',    wall: 'tfg:rock/cracked_tiles_deepslate_wall',
+		  dust: 'gtceu:deepslate_dust',                         loose: null,                                         stonecutting: true },  // Bricks - Cracked - Extra
 
-		{ raw:  'minecraft:deepslate_tiles',             stair: 'minecraft:deepslate_tile_stairs',            slab: 'minecraft:deepslate_tile_slab',            wall: 'minecraft:deepslate_tile_wall',
-		  dust: 'gtceu:deepslate_dust',                  loose: null,                                         stonecutting: false },
-
-		{ raw:  'minecraft:cracked_deepslate_tiles',     stair: 'tfg:rock/cracked_tiles_deepslate_stairs',    slab: 'tfg:rock/cracked_tiles_deepslate_slab',    wall: 'tfg:rock/cracked_tiles_deepslate_wall',
-		  dust: 'gtceu:deepslate_dust',                  loose: null,                                         stonecutting: false },
-
-		{ raw:  'create:small_deepslate_bricks',         stair: 'create:small_deepslate_brick_stairs',        slab: 'create:small_deepslate_brick_slab',        wall: 'create:small_deepslate_brick_wall',
-		  dust: 'gtceu:deepslate_dust',                  loose: null,                                         stonecutting: false },
+		{ raw:  'create:cut_deepslate_bricks',                  stair: 'create:cut_deepslate_brick_stairs',          slab: 'create:cut_deepslate_brick_slab',          wall: 'create:cut_deepslate_brick_wall',
+		  dust: 'gtceu:deepslate_dust',                         loose: null,                                         stonecutting: false }, // Bricks - Extra		
+		
+		{ raw:  'create:small_deepslate_bricks',                stair: 'create:small_deepslate_brick_stairs',        slab: 'create:small_deepslate_brick_slab',        wall: 'create:small_deepslate_brick_wall',
+		  dust: 'gtceu:deepslate_dust',                         loose: null,                                         stonecutting: false }, // Bricks - Extra
 
 		// Blackstone
-		{ raw:  'minecraft:blackstone',                  stair: 'minecraft:blackstone_stairs',                slab: 'minecraft:blackstone_slab',                wall: 'minecraft:blackstone_wall',
-		  dust: 'gtceu:blackstone_dust',                 loose: 'beneath:blackstone_pebble',                  stonecutting: false },
+		{ raw:  'minecraft:blackstone',                         stair: 'minecraft:blackstone_stairs',                slab: 'minecraft:blackstone_slab',                wall: 'minecraft:blackstone_wall',
+		  dust: 'gtceu:blackstone_dust',                        loose: null,                  						 stonecutting: false }, // Raw
 
-		{ raw:  'minecraft:polished_blackstone',         stair: 'minecraft:polished_blackstone_stairs',       slab: 'minecraft:polished_blackstone_slab',       wall: 'minecraft:polished_blackstone_wall',
-		  dust: 'gtceu:blackstone_dust',                 loose: null,                                         stonecutting: false },
+		{ raw:  'tfg:rock/cobble_blackstone',                   stair: 'tfg:rock/cobble_blackstone_stairs',          slab: 'tfg:rock/cobble_blackstone_slab',          wall: 'tfg:rock/cobble_blackstone_wall',
+		  dust: 'gtceu:blackstone_dust',                        loose: 'beneath:blackstone_pebble',                  stonecutting: true },  // Cobble
+		
+		{ raw:  'tfg:rock/mossy_cobble_blackstone',             stair: 'tfg:rock/mossy_cobble_blackstone_stairs',    slab: 'tfg:rock/mossy_cobble_blackstone_slab',    wall: 'tfg:rock/mossy_cobble_blackstone_wall',
+		  dust: 'gtceu:blackstone_dust',                        loose: null,                                         stonecutting: true },  // Cobble - Mossy
 
-		{ raw:  'minecraft:polished_blackstone_bricks',  stair: 'minecraft:polished_blackstone_brick_stairs', slab: 'minecraft:polished_blackstone_brick_slab', wall: 'minecraft:polished_blackstone_brick_wall',
-		  dust: 'gtceu:blackstone_dust',                 loose: null,                                         stonecutting: false },
+		{ raw:  'minecraft:polished_blackstone',                stair: 'minecraft:polished_blackstone_stairs',       slab: 'minecraft:polished_blackstone_slab',       wall: 'minecraft:polished_blackstone_wall',
+		  dust: 'gtceu:blackstone_dust',                        loose: null,                                         stonecutting: false }, // Smooth
+
+		{ raw:  'minecraft:polished_blackstone_bricks',         stair: 'minecraft:polished_blackstone_brick_stairs', slab: 'minecraft:polished_blackstone_brick_slab', wall: 'minecraft:polished_blackstone_brick_wall',
+		  dust: 'gtceu:blackstone_dust',                        loose: null,                                         stonecutting: false }, // Bricks
+
+		{ raw:  'minecraft:cracked_polished_blackstone_bricks', stair: 'tfg:rock/cracked_bricks_blackstone_stairs',  slab: 'tfg:rock/cracked_bricks_blackstone_slab',  wall: 'tfg:rock/cracked_bricks_blackstone_wall',
+		  dust: 'gtceu:blackstone_dust',                 	    loose: null,                                         stonecutting: true },  // Bricks - Cracked
+
+		{ raw:  'tfg:rock/mossy_bricks_blackstone',             stair: 'tfg:rock/mossy_bricks_blackstone_stairs',    slab: 'tfg:rock/mossy_bricks_blackstone_slab',    wall: 'tfg:rock/mossy_bricks_blackstone_wall',
+		  dust: 'gtceu:blackstone_dust',                 	    loose: null,                                         stonecutting: true },  // Bricks - Mossy
+
+		// Dripstone
+		{ raw:  'minecraft:dripstone_block',                    stair: 'tfg:rock/dripstone_stairs',                  slab: 'tfg:rock/dripstone_slab',                  wall: 'tfg:rock/dripstone_wall',
+		  dust: 'tfg:dripstone_dust',                           loose: null,                                         stonecutting: true },  // Raw
+
+		{ raw:  'tfg:rock/cobble_dripstone',                    stair: 'tfg:rock/cobble_dripstone_stairs',           slab: 'tfg:rock/cobble_dripstone_slab',           wall: 'tfg:rock/cobble_dripstone_wall',
+		  dust: 'tfg:dripstone_dust',                           loose: 'tfg:loose/dripstone',                        stonecutting: true },  // Cobble
+		
+		{ raw:  'tfg:rock/mossy_cobble_dripstone',              stair: 'tfg:rock/mossy_cobble_dripstone_stairs',     slab: 'tfg:rock/mossy_cobble_dripstone_slab',     wall: 'tfg:rock/mossy_cobble_dripstone_wall',
+		  dust: 'tfg:dripstone_dust',                           loose: null,                                         stonecutting: true },  // Cobble - Mossy
+
+		{ raw:  'create:polished_cut_dripstone',                stair: 'create:polished_cut_dripstone_stairs',       slab: 'create:polished_cut_dripstone_slab',       wall: 'create:polished_cut_dripstone_wall',
+		  dust: 'tfg:dripstone_dust',                           loose: null,                                         stonecutting: false }, // Smooth
+
+		{ raw:  'create:cut_dripstone',                         stair: 'create:cut_dripstone_stairs',                slab: 'create:cut_dripstone_slab',                wall: 'create:cut_dripstone_wall',
+		  dust: 'tfg:dripstone_dust',                           loose: null,                                         stonecutting: false }, // Smooth
+
+		{ raw:  'create:cut_dripstone_bricks',                  stair: 'create:cut_dripstone_brick_stairs',          slab: 'create:cut_dripstone_brick_slab',          wall: 'create:cut_dripstone_brick_wall',
+		  dust: 'tfg:dripstone_dust',                           loose: null,                                         stonecutting: false }, // Bricks
+
+		{ raw:  'tfg:rock/cracked_bricks_dripstone',            stair: 'tfg:rock/cracked_bricks_dripstone_stairs',   slab: 'tfg:rock/cracked_bricks_dripstone_slab',   wall: 'tfg:rock/cracked_bricks_dripstone_wall',
+		  dust: 'tfg:dripstone_dust',                           loose: null,                                         stonecutting: true },  // Bricks - Cracked
+
+		{ raw:  'tfg:rock/mossy_bricks_dripstone',              stair: 'tfg:rock/mossy_bricks_dripstone_stairs',     slab: 'tfg:rock/mossy_bricks_dripstone_slab',     wall: 'tfg:rock/mossy_bricks_dripstone_wall',
+		  dust: 'tfg:dripstone_dust',                           loose: null,                                         stonecutting: true },  // Bricks - Mossy
+
+		{ raw:  'create:small_dripstone_bricks',                stair: 'create:small_dripstone_brick_stairs',        slab: 'create:small_dripstone_brick_slab',        wall: 'create:small_dripstone_brick_wall',
+		  dust: 'tfg:dripstone_dust',                           loose: null,                                         stonecutting: false }, // Bricks - Extra
+
+		// Crackrack / Nether
+		{ raw:  'beneath:crackrack',                            stair: 'tfg:rock/crackrack_stairs',                  slab: 'tfg:rock/crackrack_slab',                  wall: 'tfg:rock/crackrack_wall',
+		  dust: 'gtceu:netherrack_dust',                        loose: null,                                         stonecutting: true },  // Raw
+
+		{ raw:  'tfg:rock/cobble_crackrack',                    stair: 'tfg:rock/cobble_crackrack_stairs',           slab: 'tfg:rock/cobble_crackrack_slab',           wall: 'tfg:rock/cobble_crackrack_wall',
+		  dust: 'gtceu:netherrack_dust',                        loose: 'tfg:loose/crackrack',                        stonecutting: true },  // Cobble
+
+		{ raw:  'tfg:rock/mossy_cobble_crackrack',              stair: 'tfg:rock/mossy_cobble_crackrack_stairs',     slab: 'tfg:rock/mossy_cobble_crackrack_slab',     wall: 'tfg:rock/mossy_cobble_crackrack_wall',
+		  dust: 'gtceu:netherrack_dust',                        loose: null,                                         stonecutting: true },  // Cobble - Mossy
+
+		{ raw:  'tfg:rock/polished_crackrack',                  stair: 'tfg:rock/polished_crackrack_stairs',         slab: 'tfg:rock/polished_crackrack_slab',         wall: 'tfg:rock/polished_crackrack_wall',
+		  dust: 'gtceu:netherrack_dust',                        loose: null,                                         stonecutting: true },  // Smooth
+
+		{ raw:  'minecraft:nether_bricks',                      stair: 'minecraft:nether_brick_stairs',              slab: 'minecraft:nether_brick_slab',              wall: 'minecraft:nether_brick_wall',
+		  dust: 'gtceu:netherrack_dust',                        loose: null,                                         stonecutting: true },  // Bricks
+
+		{ raw:  'minecraft:cracked_nether_bricks',              stair: 'tfg:rock/cracked_bricks_nether_stairs',      slab: 'tfg:rock/cracked_bricks_nether_slab',      wall: 'tfg:rock/cracked_bricks_nether_wall',
+		  dust: 'gtceu:netherrack_dust',                        loose: null,                                         stonecutting: true },  // Bricks - Cracked
+		
+		{ raw:  'tfg:rock/mossy_bricks_nether',                 stair: 'tfg:rock/mossy_bricks_nether_stairs',        slab: 'tfg:rock/mossy_bricks_nether_slab',        wall: 'tfg:rock/mossy_bricks_nether_wall',
+		  dust: 'gtceu:netherrack_dust',                        loose: null,                                         stonecutting: true },  // Bricks - Mossy
+
 		// #endregion
 
 		// #region Space
-		{ raw:  'ad_astra:moon_cobblestone',             stair: 'ad_astra:moon_cobblestone_stairs',           slab: 'ad_astra:moon_cobblestone_slab',           wall: null,
-		  dust: 'tfg:moon_stone_dust',                   loose: 'tfg:loose/moon_stone',                       stonecutting: true },
+		{ raw:  'ad_astra:moon_cobblestone',                    stair: 'ad_astra:moon_cobblestone_stairs',           slab: 'ad_astra:moon_cobblestone_slab',           wall: null,
+		  dust: 'tfg:moon_stone_dust',                          loose: 'tfg:loose/moon_stone',                       stonecutting: true },
 		
-		{ raw:  'ad_astra:mars_cobblestone',             stair: 'ad_astra:mars_cobblestone_stairs',           slab: 'ad_astra:mars_cobblestone_slab',           wall: null,
-          dust: 'tfg:mars_stone_dust',                   loose: 'tfg:loose/mars_stone',                       stonecutting: true },
+		{ raw:  'ad_astra:mars_cobblestone',                    stair: 'ad_astra:mars_cobblestone_stairs',           slab: 'ad_astra:mars_cobblestone_slab',           wall: null,
+          dust: 'tfg:mars_stone_dust',                          loose: 'tfg:loose/mars_stone',                       stonecutting: true },
 		
-		{ raw:  'ad_astra:venus_cobblestone',            stair: 'ad_astra:venus_cobblestone_stairs',          slab: 'ad_astra:venus_cobblestone_slab',          wall: null,
-			dust: 'tfg:venus_stone_dust',                loose: 'tfg:loose/venus_stone',                      stonecutting: true },
+		{ raw:  'ad_astra:venus_cobblestone',                   stair: 'ad_astra:venus_cobblestone_stairs',          slab: 'ad_astra:venus_cobblestone_slab',          wall: null,
+			dust: 'tfg:venus_stone_dust',                       loose: 'tfg:loose/venus_stone',                      stonecutting: true },
 
-		{ raw:  'ad_astra:mercury_cobblestone',          stair: 'ad_astra:mercury_cobblestone_stairs',        slab: 'ad_astra:mercury_cobblestone_slab',        wall: null,
-		  dust: 'tfg:mercury_stone_dust',                loose: 'tfg:loose/mercury_stone',                    stonecutting: true },
+		{ raw:  'ad_astra:mercury_cobblestone',                 stair: 'ad_astra:mercury_cobblestone_stairs',        slab: 'ad_astra:mercury_cobblestone_slab',        wall: null,
+		  dust: 'tfg:mercury_stone_dust',                       loose: 'tfg:loose/mercury_stone',                    stonecutting: true },
 
-		{ raw: 'ad_astra:glacio_cobblestone',            stair: 'ad_astra:glacio_cobblestone_stairs',         slab: 'ad_astra:glacio_cobblestone_slab',         wall: null,
-		  dust: 'tfg:glacio_stone_dust',                 loose: 'tfg:loose/glacio_stone',                     stonecutting: true },
+		{ raw: 'ad_astra:glacio_cobblestone',                   stair: 'ad_astra:glacio_cobblestone_stairs',         slab: 'ad_astra:glacio_cobblestone_slab',         wall: null,
+		  dust: 'tfg:glacio_stone_dust',                        loose: 'tfg:loose/glacio_stone',                     stonecutting: true },
 
-		{ raw: 'ad_astra:moon_stone',                    stair: 'ad_astra:moon_stone_stairs',                 slab: 'ad_astra:moon_stone_slab',                 wall: null,
-          dust: 'tfg:moon_stone_dust',                   stonecutting: true },
+		{ raw: 'ad_astra:moon_stone',                           stair: 'ad_astra:moon_stone_stairs',                 slab: 'ad_astra:moon_stone_slab',                 wall: null,
+          dust: 'tfg:moon_stone_dust',                          stonecutting: true },
 
-		{ raw: 'ad_astra:mars_stone',                    stair: 'ad_astra:mars_stone_stairs',                 slab: 'ad_astra:mars_stone_slab',                 wall: null,
-		  dust: 'tfg:mars_stone_dust',                   stonecutting: true },
+		{ raw: 'ad_astra:mars_stone',                           stair: 'ad_astra:mars_stone_stairs',                 slab: 'ad_astra:mars_stone_slab',                 wall: null,
+		  dust: 'tfg:mars_stone_dust',                          stonecutting: true },
 
-		{ raw: 'ad_astra:venus_stone',                   stair: 'ad_astra:venus_stone_stairs',                slab: 'ad_astra:venus_stone_slab',                wall: null,
-		  dust: 'tfg:venus_stone_dust',                  stonecutting: true },
+		{ raw: 'ad_astra:venus_stone',                          stair: 'ad_astra:venus_stone_stairs',                slab: 'ad_astra:venus_stone_slab',                wall: null,
+		  dust: 'tfg:venus_stone_dust',                         stonecutting: true },
 
-		{ raw: 'ad_astra:mercury_stone',                 stair: 'ad_astra:mercury_stone_stairs',              slab: 'ad_astra:mercury_stone_slab',              wall: null,
-		  dust: 'tfg:mercury_stone_dust',                stonecutting: true },
+		{ raw: 'ad_astra:mercury_stone',                        stair: 'ad_astra:mercury_stone_stairs',              slab: 'ad_astra:mercury_stone_slab',              wall: null,
+		  dust: 'tfg:mercury_stone_dust',                       stonecutting: true },
 		 
-		{ raw: 'ad_astra:glacio_stone',                  stair: 'ad_astra:glacio_stone_stairs',               slab: 'ad_astra:glacio_stone_slab',               wall: null,
-		  dust: 'tfg:glacio_stone_dust',                 stonecutting: true },
+		{ raw: 'ad_astra:glacio_stone',                         stair: 'ad_astra:glacio_stone_stairs',               slab: 'ad_astra:glacio_stone_slab',               wall: null,
+		  dust: 'tfg:glacio_stone_dust',                        stonecutting: true },
 		
-		{ raw: 'ad_astra:venus_sandstone_bricks',        stair: 'ad_astra:venus_sandstone_brick_stairs',      slab: 'ad_astra:venus_sandstone_brick_slab',      wall: null,
-		  dust: '4x gtceu:venus_sand',                   stonecutting: true },
+		{ raw: 'ad_astra:venus_sandstone_bricks',               stair: 'ad_astra:venus_sandstone_brick_stairs',      slab: 'ad_astra:venus_sandstone_brick_slab',      wall: null,
+		  dust: '4x gtceu:venus_sand',                          stonecutting: true },
 
-		{ raw: 'ad_astra:moon_stone_bricks',             stair: 'ad_astra:moon_stone_brick_stairs',           slab: 'ad_astra:moon_stone_brick_slab',           wall: 'ad_astra:moon_stone_brick_wall',
-		  dust: 'tfg:moon_stone_dust',                   stonecutting: true },
+		{ raw: 'ad_astra:moon_stone_bricks',                    stair: 'ad_astra:moon_stone_brick_stairs',           slab: 'ad_astra:moon_stone_brick_slab',           wall: 'ad_astra:moon_stone_brick_wall',
+		  dust: 'tfg:moon_stone_dust',                          stonecutting: true },
 
-		{ raw: 'ad_astra:mars_stone_bricks',             stair: 'ad_astra:mars_stone_brick_stairs',           slab: 'ad_astra:mars_stone_brick_slab',           wall: 'ad_astra:mars_stone_brick_wall',
-		  dust: 'tfg:mars_stone_dust',                   stonecutting: true },
+		{ raw: 'ad_astra:mars_stone_bricks',                    stair: 'ad_astra:mars_stone_brick_stairs',           slab: 'ad_astra:mars_stone_brick_slab',           wall: 'ad_astra:mars_stone_brick_wall',
+		  dust: 'tfg:mars_stone_dust',                          stonecutting: true },
 
-		{ raw: 'ad_astra:venus_stone_bricks',            stair: 'ad_astra:venus_stone_brick_stairs',          slab: 'ad_astra:venus_stone_brick_slab',          wall: 'ad_astra:venus_stone_brick_wall',
-		  dust: 'tfg:venus_stone_dust',                  stonecutting: true
+		{ raw: 'ad_astra:venus_stone_bricks',                   stair: 'ad_astra:venus_stone_brick_stairs',          slab: 'ad_astra:venus_stone_brick_slab',          wall: 'ad_astra:venus_stone_brick_wall',
+		  dust: 'tfg:venus_stone_dust',                         stonecutting: true
 		},
 
-		{ raw: 'ad_astra:mercury_stone_bricks',          stair: 'ad_astra:mercury_stone_brick_stairs',        slab: 'ad_astra:mercury_stone_brick_slab',        wall: 'ad_astra:mercury_stone_brick_wall',
-		  dust: 'tfg:mercury_stone_dust',                stonecutting: true },
+		{ raw: 'ad_astra:mercury_stone_bricks',                 stair: 'ad_astra:mercury_stone_brick_stairs',        slab: 'ad_astra:mercury_stone_brick_slab',        wall: 'ad_astra:mercury_stone_brick_wall',
+		  dust: 'tfg:mercury_stone_dust',                       stonecutting: true },
 
-		{ raw: 'ad_astra:glacio_stone_bricks',           stair: 'ad_astra:glacio_stone_brick_stairs',         slab: 'ad_astra:glacio_stone_brick_slab',         wall: 'ad_astra:glacio_stone_brick_wall',
-		  dust: 'tfg:glacio_stone_dust',                 stonecutting: true },
+		{ raw: 'ad_astra:glacio_stone_bricks',                  stair: 'ad_astra:glacio_stone_brick_stairs',         slab: 'ad_astra:glacio_stone_brick_slab',         wall: 'ad_astra:glacio_stone_brick_wall',
+		  dust: 'tfg:glacio_stone_dust',                        stonecutting: true },
 
-		{ raw: 'ad_astra:permafrost_bricks',             stair: 'ad_astra:permafrost_brick_stairs',           slab: 'ad_astra:permafrost_brick_slab',           wall: 'ad_astra:permafrost_brick_wall',
-		  dust: 'gtceu:ice_dust',                        stonecutting: true },
+		{ raw: 'ad_astra:permafrost_bricks',                    stair: 'ad_astra:permafrost_brick_stairs',           slab: 'ad_astra:permafrost_brick_slab',           wall: 'ad_astra:permafrost_brick_wall',
+		  dust: 'gtceu:ice_dust',                               stonecutting: true },
 
-		{ raw: 'ad_astra:chiseled_moon_stone_bricks',    stair: 'ad_astra:chiseled_moon_stone_stairs',        slab: 'ad_astra:chiseled_moon_stone_slab',        wall: null,
-		  dust: 'tfg:moon_stone_dust',                   stonecutting: true
+		{ raw: 'ad_astra:chiseled_moon_stone_bricks',           stair: 'ad_astra:chiseled_moon_stone_stairs',        slab: 'ad_astra:chiseled_moon_stone_slab',        wall: null,
+		  dust: 'tfg:moon_stone_dust',                          stonecutting: true
 		},
 
-		{ raw: 'ad_astra:chiseled_mars_stone_bricks',    stair: 'ad_astra:chiseled_mars_stone_stairs',        slab: 'ad_astra:chiseled_mars_stone_slab',        wall: null,
-		  dust: 'tfg:mars_stone_dust',                   stonecutting: true },
+		{ raw: 'ad_astra:chiseled_mars_stone_bricks',           stair: 'ad_astra:chiseled_mars_stone_stairs',        slab: 'ad_astra:chiseled_mars_stone_slab',        wall: null,
+		  dust: 'tfg:mars_stone_dust',                          stonecutting: true },
 		
-		{ raw: 'ad_astra:chiseled_venus_stone_bricks',   stair: 'ad_astra:chiseled_venus_stone_stairs',       slab: 'ad_astra:chiseled_venus_stone_slab',       wall: null,
-		  dust: 'tfg:venus_stone_dust',                  stonecutting: true },
+		{ raw: 'ad_astra:chiseled_venus_stone_bricks',          stair: 'ad_astra:chiseled_venus_stone_stairs',       slab: 'ad_astra:chiseled_venus_stone_slab',       wall: null,
+		  dust: 'tfg:venus_stone_dust',                         stonecutting: true },
 		
-		{ raw: 'ad_astra:chiseled_mercury_stone_bricks', stair: 'ad_astra:chiseled_mercury_stone_stairs',     slab: 'ad_astra:chiseled_mercury_stone_slab',     wall: null,
-		  dust: 'tfg:mercury_stone_dust',                stonecutting: true },
+		{ raw: 'ad_astra:chiseled_mercury_stone_bricks',        stair: 'ad_astra:chiseled_mercury_stone_stairs',     slab: 'ad_astra:chiseled_mercury_stone_slab',     wall: null,
+		  dust: 'tfg:mercury_stone_dust',                       stonecutting: true },
 		
-		{ raw: 'ad_astra:chiseled_glacio_stone_bricks',  stair: 'ad_astra:chiseled_glacio_stone_stairs',      slab: 'ad_astra:chiseled_glacio_stone_slab',      wall: null,
-		  dust: 'tfg:glacio_stone_dust',                 stonecutting: true },
+		{ raw: 'ad_astra:chiseled_glacio_stone_bricks',         stair: 'ad_astra:chiseled_glacio_stone_stairs',      slab: 'ad_astra:chiseled_glacio_stone_slab',      wall: null,
+		  dust: 'tfg:glacio_stone_dust',                        stonecutting: true },
 
-		{ raw: 'ad_astra:chiseled_permafrost_bricks',    stair: 'ad_astra:chiseled_permafrost_brick_stairs',  slab: 'ad_astra:chiseled_permafrost_brick_slab',  wall: null,
-		  dust: 'gtceu:ice_dust',                        stonecutting: true },
+		{ raw: 'ad_astra:chiseled_permafrost_bricks',           stair: 'ad_astra:chiseled_permafrost_brick_stairs',  slab: 'ad_astra:chiseled_permafrost_brick_slab',  wall: null,
+		  dust: 'gtceu:ice_dust',                               stonecutting: true },
 
-		{ raw: 'ad_astra:polished_moon_stone',           stair: 'ad_astra:polished_moon_stone_stairs',        slab: 'ad_astra:polished_moon_stone_slab',        wall: null,
-          dust: 'tfg:moon_stone_dust',                   stonecutting: true },
+		{ raw: 'ad_astra:polished_moon_stone',                  stair: 'ad_astra:polished_moon_stone_stairs',        slab: 'ad_astra:polished_moon_stone_slab',        wall: null,
+          dust: 'tfg:moon_stone_dust',                          stonecutting: true },
 		
-		{ raw: 'ad_astra:polished_mars_stone',           stair: 'ad_astra:polished_mars_stone_stairs',        slab: 'ad_astra:polished_mars_stone_slab',        wall: null,
-		  dust: 'tfg:mars_stone_dust',                   stonecutting: true },
+		{ raw: 'ad_astra:polished_mars_stone',                  stair: 'ad_astra:polished_mars_stone_stairs',        slab: 'ad_astra:polished_mars_stone_slab',        wall: null,
+		  dust: 'tfg:mars_stone_dust',                          stonecutting: true },
 
-		{ raw: 'ad_astra:polished_venus_stone',          stair: 'ad_astra:polished_venus_stone_stairs',       slab: 'ad_astra:polished_venus_stone_slab',       wall: null,
-		  dust: 'tfg:venus_stone_dust',                  stonecutting: true },
+		{ raw: 'ad_astra:polished_venus_stone',                 stair: 'ad_astra:polished_venus_stone_stairs',       slab: 'ad_astra:polished_venus_stone_slab',       wall: null,
+		  dust: 'tfg:venus_stone_dust',                         stonecutting: true },
 		
-		{ raw: 'ad_astra:polished_mercury_stone',        stair: 'ad_astra:polished_mercury_stone_stairs',     slab: 'ad_astra:polished_mercury_stone_slab',     wall: null,
-		  dust: 'tfg:mercury_stone_dust',                stonecutting: true },
+		{ raw: 'ad_astra:polished_mercury_stone',               stair: 'ad_astra:polished_mercury_stone_stairs',     slab: 'ad_astra:polished_mercury_stone_slab',     wall: null,
+		  dust: 'tfg:mercury_stone_dust',                       stonecutting: true },
 
-		{ raw: 'ad_astra:polished_glacio_stone',         stair: 'ad_astra:polished_glacio_stone_stairs',      slab: 'ad_astra:polished_glacio_stone_slab',      wall: null,
-		  dust: 'tfg:glacio_stone_dust',                 stonecutting: true },
+		{ raw: 'ad_astra:polished_glacio_stone',                stair: 'ad_astra:polished_glacio_stone_stairs',      slab: 'ad_astra:polished_glacio_stone_slab',      wall: null,
+		  dust: 'tfg:glacio_stone_dust',                        stonecutting: true },
 		
-		{ raw: 'ad_astra:polished_permafrost',           stair: 'ad_astra:polished_permafrost_stairs',        slab: 'ad_astra:polished_permafrost_slab',        wall: null,
-		  dust: 'gtceu:ice_dust',                        stonecutting: true },
+		{ raw: 'ad_astra:polished_permafrost',                  stair: 'ad_astra:polished_permafrost_stairs',        slab: 'ad_astra:polished_permafrost_slab',        wall: null,
+		  dust: 'gtceu:ice_dust',                               stonecutting: true },
 		
-		{ raw: 'ae2:sky_stone_block',                    stair: 'ae2:sky_stone_stairs',                       slab: 'ae2:sky_stone_slab',                       wall: 'ae2:sky_stone_wall',
-		  dust: 'ae2:sky_dust',                          stonecutting: true },
+		{ raw: 'ae2:sky_stone_block',                           stair: 'ae2:sky_stone_stairs',                       slab: 'ae2:sky_stone_slab',                       wall: 'ae2:sky_stone_wall',
+		  dust: 'ae2:sky_dust',                                 stonecutting: true },
 		
-		{ raw: 'ae2:smooth_sky_stone_block',             stair: 'ae2:smooth_sky_stone_stairs',                slab: 'ae2:smooth_sky_stone_slab',                wall: 'ae2:smooth_sky_stone_wall',
-		  dust: 'ae2:sky_dust',                          stonecutting: true
+		{ raw: 'ae2:smooth_sky_stone_block',                    stair: 'ae2:smooth_sky_stone_stairs',                slab: 'ae2:smooth_sky_stone_slab',                wall: 'ae2:smooth_sky_stone_wall',
+		  dust: 'ae2:sky_dust',                                 stonecutting: true
 		},
 
-		{ raw: 'ae2:sky_stone_brick',                    stair: 'ae2:sky_stone_brick_stairs',                 slab: 'ae2:sky_stone_brick_slab',                 wall: 'ae2:sky_stone_brick_wall',
-		  dust: 'ae2:sky_dust',                          stonecutting: true },
+		{ raw: 'ae2:sky_stone_brick',                           stair: 'ae2:sky_stone_brick_stairs',                 slab: 'ae2:sky_stone_brick_slab',                 wall: 'ae2:sky_stone_brick_wall',
+		  dust: 'ae2:sky_dust',                                 stonecutting: true },
 		
-		{ raw: 'ae2:sky_stone_small_brick',              stair: 'ae2:sky_stone_small_brick_stairs',           slab: 'ae2:sky_stone_small_brick_slab',           wall: 'ae2:sky_stone_small_brick_wall',
-		  dust: 'ae2:sky_dust',                          stonecutting: true },
+		{ raw: 'ae2:sky_stone_small_brick',                     stair: 'ae2:sky_stone_small_brick_stairs',           slab: 'ae2:sky_stone_small_brick_slab',           wall: 'ae2:sky_stone_small_brick_wall',
+		  dust: 'ae2:sky_dust',                                 stonecutting: true },
 		
-		{ raw: 'ae2:fluix_block',                        stair: 'ae2:fluix_stairs',                           slab: 'ae2:fluix_slab',                           wall: 'ae2:fluix_wall',
-		  dust: 'ae2:fluix_dust',                        stonecutting: true },
+		{ raw: 'ae2:fluix_block',                               stair: 'ae2:fluix_stairs',                           slab: 'ae2:fluix_slab',                           wall: 'ae2:fluix_wall',
+		  dust: 'ae2:fluix_dust',                               stonecutting: true },
 
-		{ raw: 'minecraft:purpur_block',                 stair: 'minecraft:purpur_stairs',                    slab: 'minecraft:purpur_slab',                    wall: null,
-		  dust: null,                                    stonecutting: true }
-		// #endregion
+		{ raw: 'minecraft:purpur_block',                        stair: 'minecraft:purpur_stairs',                    slab: 'minecraft:purpur_slab',                    wall: null,
+		  dust: null,                                           stonecutting: true }
+		// #endregion Nether
 	]
-	
+
 	CUTTER.forEach(x => {
 		console.log(x.raw)
 
@@ -542,9 +568,26 @@ function registerTFGRockRecipes(event) {
 			event.shapeless(`4x ${x.loose}`, [x.raw])
 		}
 	})
+	// #endregion CUTTER
 
-	// pillars
+	// Stone Cutter Sets
+	const red_granite_cutter_set = Ingredient.of('#tfg:red_granite_cutter_set').itemIds.toArray().map(String);
+	red_granite_cutter_set.forEach(block => {
+		event.stonecutting(block,
+			Ingredient.of('#tfg:red_granite_cutter_set').subtract(block)
+		).id(`tfg:stonecutter/${block.replace(/:/g, "/")}`)
+		
+	})
 
+	const moon_deepslate_cutter_set = Ingredient.of('#tfg:moon_deepslate_cutter_set').itemIds.toArray().map(String);
+	moon_deepslate_cutter_set.forEach(block => {
+		event.stonecutting(block,
+			Ingredient.of('#tfg:moon_deepslate_cutter_set').subtract(block)
+		).id(`tfg:stonecutter/${block.replace(/:/g, "/")}`)
+		
+	})
+
+	// #region PILLARS
 	const PILLARS = [
 		{ raw: 'ad_astra:moon_stone_bricks', pillar: 'ad_astra:moon_pillar' },
 		{ raw: 'ad_astra:mars_stone_bricks', pillar: 'ad_astra:mars_pillar' },
@@ -566,8 +609,34 @@ function registerTFGRockRecipes(event) {
 		event.stonecutting(x.pillar, x.raw).id(`${x.raw}_to_${x.pillar}`.replace(/:/g, '_'))
 	})
 
-	// macerating
+	// pillar shaped recipes
+	event.shaped(
+		Item.of('create:deepslate_pillar', 2), [ ' A ', ' A ' ], { A: 'minecraft:polished_deepslate' }
+	)
+	event.shaped(
+		Item.of('create:layered_deepslate', 2), [ 'AA ' ], { A: 'minecraft:polished_deepslate' }
+	)
 
+	event.shaped(
+		Item.of('create:dripstone_pillar', 2), [ ' A ', ' A ' ], { A: 'create:polished_cut_dripstone' }
+	)
+	event.shaped(
+		Item.of('create:layered_dripstone', 2), [ 'AA ' ], { A: 'create:polished_cut_dripstone' }
+	)
+
+	event.shaped(
+		Item.of('create:dripstone_pillar', 2), [ ' A ', ' A ' ], { A: 'create:polished_cut_dripstone' }
+	)
+	event.shaped(
+		Item.of('create:layered_dripstone', 2), [ 'AA ' ], { A: 'create:polished_cut_dripstone' }
+	)
+
+	event.shaped(
+		Item.of('tfg:rock/pillar_moon_deepslate', 2), [ ' A ', ' A ' ], { A: 'tfg:rock/bricks_moon_deepslate' }
+	)
+	// #endregion PILLARS
+
+	// #region MACERATOR
 	const MACERATOR = [
 		{ block: 'minecraft:deepslate', dust: 'gtceu:deepslate_dust' },
 		{ block: 'minecraft:dripstone_block', dust: 'tfg:dripstone_dust' },
@@ -590,8 +659,25 @@ function registerTFGRockRecipes(event) {
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 	})
 
-	// rock breaker
+	//#region Crackrack/netherrack dust compat
+	event.recipes.gtceu.macerator(`raw_crackrack_to_dust`)
+		.itemInputs('beneath:crackrack')
+		.itemOutputs('gtceu:netherrack_dust')
+		.duration(150)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
+	event.recipes.gtceu.macerator('crackrack_cobble_to_dust')
+		.itemInputs('tfg:rock/cobble_crackrack')
+		.itemOutputs('gtceu:netherrack_dust')
+		.duration(150)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+	//#endregion
+
+	// #endregion MACERATOR
+
+	// #region ROCK_DUPING (Breaker)
 	const ROCK_DUPING = [
 		'minecraft:deepslate',
 		'minecraft:cobbled_deepslate',
@@ -723,11 +809,9 @@ function registerTFGRockRecipes(event) {
 		.duration(16)
 		.EUt(7)
 		.dimension('ad_astra:glacio')
-
-	// #endregion
+	// #endregion ROCK_DUPING (Breaker)
 
 	// #region sandstone
-
 	event.recipes.gtceu.compressor('tfg:venus_sandstone')
 		.itemInputs('4x ad_astra:venus_sand')
 		.itemOutputs('ad_astra:venus_sandstone')
@@ -735,7 +819,7 @@ function registerTFGRockRecipes(event) {
 		.EUt(2)
 		.dimension('ad_astra:mars')
 
-	// #endregion
+	// #endregion sandstone
 
 	//#region Magma Blocks
 	event.remove({id: 'gtceu:compressor/magma_block'})
@@ -785,21 +869,5 @@ function registerTFGRockRecipes(event) {
 		.duration(40)
 		.EUt(2)
 	
-	//#endregion
-
-	//#region Crackrack/netherrack dust compat
-	event.recipes.gtceu.macerator(`raw_crackrack_to_dust`)
-		.itemInputs('beneath:crackrack')
-		.itemOutputs('gtceu:netherrack_dust')
-		.duration(150)
-		.EUt(2)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-	event.recipes.gtceu.macerator('crackrack_cobble_to_dust')
-		.itemInputs('tfg:rock/cobble_crackrack')
-		.itemOutputs('gtceu:netherrack_dust')
-		.duration(150)
-		.EUt(2)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 	//#endregion
 }
