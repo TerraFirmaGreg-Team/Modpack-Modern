@@ -87,6 +87,11 @@ const registerGTCEUHeats = (event) => {
 			makeItemHeatByToolType(GTToolType.BUTCHERY_KNIFE, material, tfcProperty, 2.875)
 			makeItemHeatByToolType(GTToolType.MINING_HAMMER, material, tfcProperty, 1.429)
 			makeItemHeatByToolType(GTToolType.SPADE, material, tfcProperty, 2.875)
+			makeItemHeatByToolType(GTToolType.WRENCH, material, tfcProperty, 2.875)
+			makeItemHeatByToolType(GTToolType.SCREWDRIVER, material, tfcProperty, 1.429)
+			makeItemHeatByToolType(GTToolType.MORTAR, material, tfcProperty, 1.429)
+			makeItemHeatByToolType(GTToolType.WIRE_CUTTER, material, tfcProperty, 1.429)
+			makeItemHeatByToolType(GTToolType.CROWBAR, material, tfcProperty, 1.429)
 		}
 	})
 
