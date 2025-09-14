@@ -259,6 +259,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem(`tfc:${STONE_CHARACS.moon.type}_rock`)
+		.tagBoth(`tfc:${STONE_CHARACS.moon.type}_items`)
 		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:loose/moon_deepslate', 'tfc:loose_rock')
@@ -269,6 +270,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem(`tfc:${STONE_CHARACS.moon_deepslate.type}_rock`)
+		.tagBoth(`tfc:${STONE_CHARACS.moon_deepslate.type}_items`)
 		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:loose/mars_stone', 'tfc:loose_rock')
@@ -279,6 +281,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem(`tfc:${STONE_CHARACS.mars.type}_rock`)
+		.tagBoth(`tfc:${STONE_CHARACS.mars.type}_items`)
 		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:loose/venus_stone', 'tfc:loose_rock')
@@ -289,6 +292,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem(`tfc:${STONE_CHARACS.venus.type}_rock`)
+		.tagBoth(`tfc:${STONE_CHARACS.venus.type}_items`)
 		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:loose/mercury_stone', 'tfc:loose_rock')
@@ -299,6 +303,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem(`tfc:${STONE_CHARACS.mercury.type}_rock`)
+		.tagBoth(`tfc:${STONE_CHARACS.mercury.type}_items`)
 		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:loose/glacio_stone', 'tfc:loose_rock')
@@ -309,6 +314,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem(`tfc:${STONE_CHARACS.glacio.type}_rock`)
+		.tagBoth(`tfc:${STONE_CHARACS.glacio.type}_items`)
 		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:loose/permafrost', 'tfc:loose_rock')
@@ -328,6 +334,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem(`tfc:${STONE_CHARACS.red_granite.type}_rock`)
+		.tagBoth(`tfc:${STONE_CHARACS.red_granite.type}_items`)
 		.tagItem("rnr:loose_rock_items")
 
 	// #endregion Loose stones
@@ -882,6 +889,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagBoth('minecraft:stone_bricks')
 		.tagBoth('forge:stone_bricks')
 		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
 		.tagBoth(`tfc:${STONE_CHARACS.moon.type}_items`)
 		.mapColor(STONE_CHARACS.moon.mapColor)
 		.tagBlock('minecraft:mineable/pickaxe')
@@ -898,6 +906,16 @@ function registerTFGSpaceBlocks(event) {
 			.fullBlock(true)
 			.opaque(true)
 	})
+
+	event.create('tfg:rock/chiseled_bricks_moon_wall', 'wall')
+		.soundType(STONE_CHARACS.moon.sound)
+		.textureAll('ad_astra:block/chiseled_moon_stone_bricks')
+		.tagBoth('tfg:brick_walls')
+		.tagBoth(`tfc:${STONE_CHARACS.moon.type}_items`)
+		.mapColor(STONE_CHARACS.moon.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
 
 	// Moon Deepslate
 	event.create('tfg:rock/bricks_moon_deepslate')
@@ -952,6 +970,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagBoth('minecraft:stone_bricks')
 		.tagBoth('forge:stone_bricks')
 		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
 		.tagBoth(`tfc:${STONE_CHARACS.moon_deepslate.type}_items`)
 		.mapColor(STONE_CHARACS.moon_deepslate.mapColor)
 		.tagBoth('tfg:moon_deepslate_cutter_set')
@@ -982,6 +1001,17 @@ function registerTFGSpaceBlocks(event) {
 		.tagBlock('minecraft:mineable/pickaxe')
 		.fullBlock(true)
 		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/chiseled_bricks_moon_deepslate_${shape}`, shape)
+			.soundType(STONE_CHARACS.moon_deepslate.sound)
+			.tagBoth(`tfg:brick_${shape}`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${STONE_CHARACS.moon_deepslate.type}_items`)
+			.mapColor(STONE_CHARACS.moon_deepslate.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
 	
 	event.create('tfg:rock/pillar_moon_deepslate')
 		.soundType(STONE_CHARACS.moon_deepslate.sound)
@@ -1012,6 +1042,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagBoth('minecraft:stone_bricks')
 		.tagBoth('forge:stone_bricks')
 		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
 		.tagBoth(`tfc:${STONE_CHARACS.mars.type}_items`)
 		.mapColor(STONE_CHARACS.mars.mapColor)
 		.tagBlock('minecraft:mineable/pickaxe')
@@ -1028,6 +1059,16 @@ function registerTFGSpaceBlocks(event) {
 			.fullBlock(true)
 			.opaque(true)
 	})
+
+	event.create('tfg:rock/chiseled_bricks_mars_wall', 'wall')
+		.soundType(STONE_CHARACS.mars.sound)
+		.textureAll('ad_astra:block/chiseled_mars_stone_bricks')
+		.tagBoth('tfg:brick_walls')
+		.tagBoth(`tfc:${STONE_CHARACS.mars.type}_items`)
+		.mapColor(STONE_CHARACS.mars.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
 	
 	// Venus Stone
 	SHAPES.forEach(shape => {
@@ -1047,6 +1088,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagBoth('minecraft:stone_bricks')
 		.tagBoth('forge:stone_bricks')
 		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
 		.tagBoth(`tfc:${STONE_CHARACS.venus.type}_items`)
 		.mapColor(STONE_CHARACS.venus.mapColor)
 		.tagBlock('minecraft:mineable/pickaxe')
@@ -1063,6 +1105,16 @@ function registerTFGSpaceBlocks(event) {
 			.fullBlock(true)
 			.opaque(true)
 	})
+
+	event.create('tfg:rock/chiseled_bricks_venus_wall', 'wall')
+		.soundType(STONE_CHARACS.venus.sound)
+		.textureAll('ad_astra:block/chiseled_venus_stone_bricks')
+		.tagBoth('tfg:brick_walls')
+		.tagBoth(`tfc:${STONE_CHARACS.venus.type}_items`)
+		.mapColor(STONE_CHARACS.venus.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
 	
 	// Mercury Stone
 	SHAPES.forEach(shape => {
@@ -1082,6 +1134,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagBoth('minecraft:stone_bricks')
 		.tagBoth('forge:stone_bricks')
 		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
 		.tagBoth(`tfc:${STONE_CHARACS.mercury.type}_items`)
 		.mapColor(STONE_CHARACS.mercury.mapColor)
 		.tagBlock('minecraft:mineable/pickaxe')
@@ -1098,6 +1151,16 @@ function registerTFGSpaceBlocks(event) {
 			.fullBlock(true)
 			.opaque(true)
 	})
+
+	event.create('tfg:rock/chiseled_bricks_mercury_wall', 'wall')
+		.soundType(STONE_CHARACS.mercury.sound)
+		.textureAll('ad_astra:block/chiseled_mercury_stone_bricks')
+		.tagBoth('tfg:brick_walls')
+		.tagBoth(`tfc:${STONE_CHARACS.mercury.type}_items`)
+		.mapColor(STONE_CHARACS.mercury.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
 	
 	// Glacio Stone
 	SHAPES.forEach(shape => {
@@ -1117,6 +1180,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagBoth('minecraft:stone_bricks')
 		.tagBoth('forge:stone_bricks')
 		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
 		.tagBoth(`tfc:${STONE_CHARACS.glacio.type}_items`)
 		.mapColor(STONE_CHARACS.glacio.mapColor)
 		.tagBlock('minecraft:mineable/pickaxe')
@@ -1133,6 +1197,16 @@ function registerTFGSpaceBlocks(event) {
 			.fullBlock(true)
 			.opaque(true)
 	})
+
+	event.create('tfg:rock/chiseled_bricks_glacio_wall', 'wall')
+		.soundType(STONE_CHARACS.glacio.sound)
+		.textureAll('ad_astra:block/chiseled_glacio_stone_bricks')
+		.tagBoth('tfg:brick_walls')
+		.tagBoth(`tfc:${STONE_CHARACS.glacio.type}_items`)
+		.mapColor(STONE_CHARACS.glacio.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
 	
 	// Permafrost
 	SHAPES.forEach(shape => {
@@ -1152,6 +1226,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagBoth('minecraft:stone_bricks')
 		.tagBoth('forge:stone_bricks')
 		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
 		.mapColor(STONE_CHARACS.permafrost.mapColor)
 		.tagBlock('minecraft:mineable/pickaxe')
 		.fullBlock(true)
@@ -1166,6 +1241,15 @@ function registerTFGSpaceBlocks(event) {
 			.fullBlock(true)
 			.opaque(true)
 	})
+
+	event.create('tfg:rock/chiseled_bricks_permafrost_wall', 'wall')
+		.soundType(STONE_CHARACS.permafrost.sound)
+		.textureAll('ad_astra:block/chiseled_permafrost_bricks')
+		.tagBoth('tfg:brick_walls')
+		.mapColor(STONE_CHARACS.permafrost.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
 
 	// Red Granite
 	

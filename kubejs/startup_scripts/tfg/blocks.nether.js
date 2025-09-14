@@ -140,6 +140,7 @@ function registerTFGNetherBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem(`tfc:${STONE_CHARACS.deepslate.type}_rock`)
+		.tagBoth(`tfc:${STONE_CHARACS.deepslate.type}_items`)
 		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:loose/dripstone', 'tfc:loose_rock')
@@ -151,6 +152,7 @@ function registerTFGNetherBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem(`tfc:${STONE_CHARACS.dripstone.type}_rock`)
+		.tagBoth(`tfc:${STONE_CHARACS.dripstone.type}_items`)
 		.tagItem("rnr:loose_rock_items")
 
 	event.create('tfg:loose/crackrack', 'tfc:loose_rock')
@@ -162,6 +164,7 @@ function registerTFGNetherBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem(`tfc:${STONE_CHARACS.crackrack.type}_rock`)
+		.tagBoth(`tfc:${STONE_CHARACS.crackrack.type}_items`)
 		.tagItem("rnr:loose_rock_items")
 	
 	// #endregion Loose rocks
@@ -431,6 +434,7 @@ function registerTFGNetherBlocks(event) {
 		.tagBoth('minecraft:stone_bricks')
 		.tagBoth('forge:stone_bricks')
 		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
 		.tagBoth(`tfc:${STONE_CHARACS.deepslate.type}_items`)
 		.mapColor(STONE_CHARACS.deepslate.mapColor)
 		.tagBlock('minecraft:mineable/pickaxe')
@@ -466,6 +470,7 @@ function registerTFGNetherBlocks(event) {
 		.tagBoth('minecraft:stone_bricks')
 		.tagBoth('forge:stone_bricks')
 		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
 		.tagBoth(`tfc:${STONE_CHARACS.blackstone.type}_items`)
 		.mapColor(STONE_CHARACS.blackstone.mapColor)
 		.tagBlock('minecraft:mineable/pickaxe')
@@ -489,6 +494,7 @@ function registerTFGNetherBlocks(event) {
 		.tagBoth('minecraft:stone_bricks')
 		.tagBoth('forge:stone_bricks')
 		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
 		.tagBoth(`tfc:${STONE_CHARACS.dripstone.type}_items`)
 		.mapColor(STONE_CHARACS.dripstone.mapColor)
 		.tagBlock('minecraft:mineable/pickaxe')
@@ -511,6 +517,7 @@ function registerTFGNetherBlocks(event) {
 		.tagBoth('minecraft:stone_bricks')
 		.tagBoth('forge:stone_bricks')
 		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
 		.tagBoth(`tfc:${STONE_CHARACS.dripstone.type}_items`)
 		.mapColor(STONE_CHARACS.dripstone.mapColor)
 		.tagBlock('minecraft:mineable/pickaxe')
@@ -546,6 +553,7 @@ function registerTFGNetherBlocks(event) {
 		.tagBoth('minecraft:stone_bricks')
 		.tagBoth('forge:stone_bricks')
 		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
 		.tagBoth(`tfc:${STONE_CHARACS.nether.type}_items`)
 		.mapColor(STONE_CHARACS.nether.mapColor)
 		.tagBlock('minecraft:mineable/pickaxe')

@@ -416,8 +416,10 @@ function registerTFGRockRecipes(event) {
 		{ raw:  'tfg:rock/mossy_bricks_moon',                   stair: 'tfg:rock/mossy_bricks_moon_stairs',          slab: 'tfg:rock/mossy_bricks_moon_slab',          wall: 'tfg:rock/mossy_bricks_moon_wall',
 		  dust: 'tfg:moon_stone_dust',                          loose: null,                                         stonecutting: true },  // Bricks - Mossy
 
-		{ raw:  'ad_astra:chiseled_moon_stone_bricks',          stair: 'ad_astra:chiseled_moon_stone_stairs',        slab: 'ad_astra:chiseled_moon_stone_slab',        wall: null,
+		{ raw:  'ad_astra:chiseled_moon_stone_bricks',          stair: 'ad_astra:chiseled_moon_stone_stairs',        slab: 'ad_astra:chiseled_moon_stone_slab',        wall: 'tfg:rock/chiseled_bricks_moon_wall',
 		  dust: 'tfg:moon_stone_dust',                          loose: null,                                         stonecutting: true },  // Bricks - Extra
+
+		// Moon Deepslate
 		
 		// Mars
 		{ raw:  'ad_astra:mars_cobblestone',                    stair: 'ad_astra:mars_cobblestone_stairs',           slab: 'ad_astra:mars_cobblestone_slab',           wall: null,
