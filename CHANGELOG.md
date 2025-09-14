@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Changes
 ### Bug fixes
+- Ice soup now requires a bowl to craft, so it doesn't generate free bowls @Pyritie
 ### Translation updates
 
 ## [0.10.14] - 14-09-2025
