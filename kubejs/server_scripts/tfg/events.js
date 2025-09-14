@@ -352,6 +352,13 @@ global.BRICK_INDEX = global.BRICK_INDEX.concat([
 	  smooth_brick:   'tfg:rock/polished_crackrack',                  smooth_stairs:  'tfg:rock/polished_crackrack_stairs',         smooth_slab:  'tfg:rock/polished_crackrack_slab',         smooth_wall:  'tfg:rock/polished_crackrack_wall',
 	  chiseled_brick: 'minecraft:chiseled_nether_bricks' },
 
+    { brick_type:     'moon',
+	  brick:          'ad_astra:moon_stone_bricks',                   brick_stairs:   'ad_astra:moon_stone_brick_stairs',           brick_slab:   'ad_astra:moon_stone_brick_slab',           brick_wall:   'ad_astra:moon_stone_brick_wall',
+	  cracked_brick:  'ad_astra:cracked_moon_stone_bricks',           cracked_stairs: 'tfg:rock/cracked_bricks_moon_stairs',        cracked_slab: 'tfg:rock/cracked_bricks_moon_slab',        cracked_wall: 'tfg:rock/cracked_bricks_moon_wall',
+	  mossy_brick:    'tfg:rock/mossy_bricks_moon',                   mossy_stairs:   'tfg:rock/mossy_bricks_moon_stairs',          mossy_slab:   'tfg:rock/mossy_bricks_moon_slab',          mossy_wall:   'tfg:rock/mossy_bricks_moon_wall',
+	  smooth_brick:   'ad_astra:polished_moon_stone',                 smooth_stairs:  'ad_astra:polished_moon_stone_stairs',        smooth_slab:  'ad_astra:polished_moon_stone_slab',        smooth_wall:  'tfg:rock/polished_moon_wall',
+	  chiseled_brick: 'ad_astra:chiseled_moon_stone_bricks' },
+
     { brick_type:     'red_granite',
 	  brick:          'gtceu:red_granite_bricks',                     brick_stairs:   null,                                         brick_slab:   null,                                       brick_wall:   null,
 	  cracked_brick:  'gtceu:cracked_red_granite_bricks',             cracked_stairs: null,                                         cracked_slab: null,                                       cracked_wall: null, 
@@ -383,7 +390,11 @@ global.COBBLE_INDEX = global.COBBLE_INDEX.concat([
 
     { cobble_type:  'crackrack',
       block:        'tfg:rock/cobble_crackrack',        stairs:       'tfg:rock/cobble_crackrack_stairs',          slab:       'tfg:rock/cobble_crackrack_slab',           wall:      'tfg:rock/cobble_crackrack_wall',
-      mossy_block:  'tfg:rock/mossy_cobble_crackrack',  mossy_stairs: 'tfg:rock/mossy_cobble_crackrack_stairs',    mossy_slab: 'tfg:rock/mossy_cobble_crackrack_slab',     mosy_wall: 'tfg:rock/mossy_cobble_crackrack_wall'  }
+      mossy_block:  'tfg:rock/mossy_cobble_crackrack',  mossy_stairs: 'tfg:rock/mossy_cobble_crackrack_stairs',    mossy_slab: 'tfg:rock/mossy_cobble_crackrack_slab',     mosy_wall: 'tfg:rock/mossy_cobble_crackrack_wall'  },
+
+    { cobble_type:  'moon',
+      block:        'ad_astra:moon_cobblestone',        stairs:       'ad_astra:moon_cobblestone_stairs',          slab:       'ad_astra:moon_cobblestone_slab',           wall:      'tfg:rock/cobble_moon_wall',
+      mossy_block:  'tfg:rock/mossy_cobble_moon',       mossy_stairs: 'tfg:rock/mossy_cobble_moon_stairs',         mossy_slab: 'tfg:rock/mossy_cobble_moon_slab',          mosy_wall: 'tfg:rock/mossy_cobble_moon_wall'  }
 ]); 
 // #endregion COBBLE_INDEX
 

@@ -394,9 +394,32 @@ function registerTFGRockRecipes(event) {
 		// #endregion
 
 		// #region Space
-		{ raw:  'ad_astra:moon_cobblestone',                    stair: 'ad_astra:moon_cobblestone_stairs',           slab: 'ad_astra:moon_cobblestone_slab',           wall: null,
-		  dust: 'tfg:moon_stone_dust',                          loose: 'tfg:loose/moon_stone',                       stonecutting: true },
+		// Moon
+		{ raw:  'ad_astra:moon_stone',                          stair: 'ad_astra:moon_stone_stairs',                 slab: 'ad_astra:moon_stone_slab',                 wall: 'tfg:rock/moon_stone_wall',
+          dust: 'tfg:moon_stone_dust',                          loose: null,                                         stonecutting: true },  // Raw
+
+		{ raw:  'ad_astra:moon_cobblestone',                    stair: 'ad_astra:moon_cobblestone_stairs',           slab: 'ad_astra:moon_cobblestone_slab',           wall: 'tfg:rock/cobble_moon_wall',
+		  dust: 'tfg:moon_stone_dust',                          loose: 'tfg:loose/moon_stone',                       stonecutting: true },  // Cobble
+
+		{ raw:  'tfg:rock/mossy_cobble_moon',                   stair: 'tfg:rock/mossy_cobble_moon_stairs',          slab: 'tfg:rock/mossy_cobble_moon_slab',          wall: 'tfg:rock/mossy_cobble_moon_wall',
+		  dust: 'tfg:moon_stone_dust',                          loose: null,                                         stonecutting: true },  // Cobble - Mossy
+
+		{ raw:  'ad_astra:polished_moon_stone',                 stair: 'ad_astra:polished_moon_stone_stairs',        slab: 'ad_astra:polished_moon_stone_slab',        wall: 'tfg:rock/polished_moon_wall',
+          dust: 'tfg:moon_stone_dust',                          loose: null,                                         stonecutting: true },  // Smooth
 		
+		{ raw:  'ad_astra:moon_stone_bricks',                   stair: 'ad_astra:moon_stone_brick_stairs',           slab: 'ad_astra:moon_stone_brick_slab',           wall: 'ad_astra:moon_stone_brick_wall',
+		  dust: 'tfg:moon_stone_dust',                          loose: null,                                         stonecutting: true },  // Bricks
+
+		{ raw:  'ad_astra:cracked_moon_stone_bricks',           stair: 'tfg:rock/cracked_bricks_moon_stairs',        slab: 'tfg:rock/cracked_bricks_moon_slab',        wall: 'tfg:rock/cracked_bricks_moon_wall',
+		  dust: 'tfg:moon_stone_dust',                          loose: null,                                         stonecutting: true },  // Bricks - Cracked
+		
+		{ raw:  'tfg:rock/mossy_bricks_moon',                   stair: 'tfg:rock/mossy_bricks_moon_stairs',          slab: 'tfg:rock/mossy_bricks_moon_slab',          wall: 'tfg:rock/mossy_bricks_moon_wall',
+		  dust: 'tfg:moon_stone_dust',                          loose: null,                                         stonecutting: true },  // Bricks - Mossy
+
+		{ raw:  'ad_astra:chiseled_moon_stone_bricks',          stair: 'ad_astra:chiseled_moon_stone_stairs',        slab: 'ad_astra:chiseled_moon_stone_slab',        wall: null,
+		  dust: 'tfg:moon_stone_dust',                          loose: null,                                         stonecutting: true },  // Bricks - Extra
+		
+		// Mars
 		{ raw:  'ad_astra:mars_cobblestone',                    stair: 'ad_astra:mars_cobblestone_stairs',           slab: 'ad_astra:mars_cobblestone_slab',           wall: null,
           dust: 'tfg:mars_stone_dust',                          loose: 'tfg:loose/mars_stone',                       stonecutting: true },
 		
@@ -408,10 +431,7 @@ function registerTFGRockRecipes(event) {
 
 		{ raw: 'ad_astra:glacio_cobblestone',                   stair: 'ad_astra:glacio_cobblestone_stairs',         slab: 'ad_astra:glacio_cobblestone_slab',         wall: null,
 		  dust: 'tfg:glacio_stone_dust',                        loose: 'tfg:loose/glacio_stone',                     stonecutting: true },
-
-		{ raw: 'ad_astra:moon_stone',                           stair: 'ad_astra:moon_stone_stairs',                 slab: 'ad_astra:moon_stone_slab',                 wall: null,
-          dust: 'tfg:moon_stone_dust',                          stonecutting: true },
-
+		
 		{ raw: 'ad_astra:mars_stone',                           stair: 'ad_astra:mars_stone_stairs',                 slab: 'ad_astra:mars_stone_slab',                 wall: null,
 		  dust: 'tfg:mars_stone_dust',                          stonecutting: true },
 
@@ -427,15 +447,11 @@ function registerTFGRockRecipes(event) {
 		{ raw: 'ad_astra:venus_sandstone_bricks',               stair: 'ad_astra:venus_sandstone_brick_stairs',      slab: 'ad_astra:venus_sandstone_brick_slab',      wall: null,
 		  dust: '4x gtceu:venus_sand',                          stonecutting: true },
 
-		{ raw: 'ad_astra:moon_stone_bricks',                    stair: 'ad_astra:moon_stone_brick_stairs',           slab: 'ad_astra:moon_stone_brick_slab',           wall: 'ad_astra:moon_stone_brick_wall',
-		  dust: 'tfg:moon_stone_dust',                          stonecutting: true },
-
 		{ raw: 'ad_astra:mars_stone_bricks',                    stair: 'ad_astra:mars_stone_brick_stairs',           slab: 'ad_astra:mars_stone_brick_slab',           wall: 'ad_astra:mars_stone_brick_wall',
 		  dust: 'tfg:mars_stone_dust',                          stonecutting: true },
 
 		{ raw: 'ad_astra:venus_stone_bricks',                   stair: 'ad_astra:venus_stone_brick_stairs',          slab: 'ad_astra:venus_stone_brick_slab',          wall: 'ad_astra:venus_stone_brick_wall',
-		  dust: 'tfg:venus_stone_dust',                         stonecutting: true
-		},
+		  dust: 'tfg:venus_stone_dust',                         stonecutting: true },
 
 		{ raw: 'ad_astra:mercury_stone_bricks',                 stair: 'ad_astra:mercury_stone_brick_stairs',        slab: 'ad_astra:mercury_stone_brick_slab',        wall: 'ad_astra:mercury_stone_brick_wall',
 		  dust: 'tfg:mercury_stone_dust',                       stonecutting: true },
@@ -445,10 +461,6 @@ function registerTFGRockRecipes(event) {
 
 		{ raw: 'ad_astra:permafrost_bricks',                    stair: 'ad_astra:permafrost_brick_stairs',           slab: 'ad_astra:permafrost_brick_slab',           wall: 'ad_astra:permafrost_brick_wall',
 		  dust: 'gtceu:ice_dust',                               stonecutting: true },
-
-		{ raw: 'ad_astra:chiseled_moon_stone_bricks',           stair: 'ad_astra:chiseled_moon_stone_stairs',        slab: 'ad_astra:chiseled_moon_stone_slab',        wall: null,
-		  dust: 'tfg:moon_stone_dust',                          stonecutting: true
-		},
 
 		{ raw: 'ad_astra:chiseled_mars_stone_bricks',           stair: 'ad_astra:chiseled_mars_stone_stairs',        slab: 'ad_astra:chiseled_mars_stone_slab',        wall: null,
 		  dust: 'tfg:mars_stone_dust',                          stonecutting: true },
@@ -464,9 +476,6 @@ function registerTFGRockRecipes(event) {
 
 		{ raw: 'ad_astra:chiseled_permafrost_bricks',           stair: 'ad_astra:chiseled_permafrost_brick_stairs',  slab: 'ad_astra:chiseled_permafrost_brick_slab',  wall: null,
 		  dust: 'gtceu:ice_dust',                               stonecutting: true },
-
-		{ raw: 'ad_astra:polished_moon_stone',                  stair: 'ad_astra:polished_moon_stone_stairs',        slab: 'ad_astra:polished_moon_stone_slab',        wall: null,
-          dust: 'tfg:moon_stone_dust',                          stonecutting: true },
 		
 		{ raw: 'ad_astra:polished_mars_stone',                  stair: 'ad_astra:polished_mars_stone_stairs',        slab: 'ad_astra:polished_mars_stone_slab',        wall: null,
 		  dust: 'tfg:mars_stone_dust',                          stonecutting: true },
@@ -487,8 +496,7 @@ function registerTFGRockRecipes(event) {
 		  dust: 'ae2:sky_dust',                                 stonecutting: true },
 		
 		{ raw: 'ae2:smooth_sky_stone_block',                    stair: 'ae2:smooth_sky_stone_stairs',                slab: 'ae2:smooth_sky_stone_slab',                wall: 'ae2:smooth_sky_stone_wall',
-		  dust: 'ae2:sky_dust',                                 stonecutting: true
-		},
+		  dust: 'ae2:sky_dust',                                 stonecutting: true },
 
 		{ raw: 'ae2:sky_stone_brick',                           stair: 'ae2:sky_stone_brick_stairs',                 slab: 'ae2:sky_stone_brick_slab',                 wall: 'ae2:sky_stone_brick_wall',
 		  dust: 'ae2:sky_dust',                                 stonecutting: true },

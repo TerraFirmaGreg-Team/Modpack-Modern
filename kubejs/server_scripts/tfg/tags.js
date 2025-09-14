@@ -354,6 +354,15 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:rock/smooth', 'minecraft:polished_deepslate')
 	event.add('create:stone_types/deepslate', 'minecraft:polished_deepslate')
 
+	event.add('tfc:metamorphic_items', 'minecraft:polished_deepslate_stairs')
+	event.add('tfg:rock_stairs', 'minecraft:polished_deepslate_stairs')
+
+	event.add('tfc:metamorphic_items', 'minecraft:polished_deepslate_slab')
+	event.add('tfg:rock_slab', 'minecraft:polished_deepslate_slab')
+	
+	event.add('tfc:metamorphic_items', 'minecraft:polished_deepslate_wall')
+	event.add('tfg:rock_wall', 'minecraft:polished_deepslate_wall')
+
 	event.add('forge:stone_bricks', 'minecraft:deepslate_bricks')
 	event.add('tfc:metamorphic_items', 'minecraft:deepslate_bricks')
 	event.add('tfc:rock/bricks', 'minecraft:deepslate_bricks')
@@ -362,6 +371,20 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:metamorphic_items', 'minecraft:deepslate_tiles')
 	event.add('tfc:rock/bricks', 'minecraft:deepslate_tiles')
 	event.add('tfc:rock/chiseled_bricks', 'minecraft:deepslate_tiles')
+
+	event.add('tfc:metamorphic_items', 'minecraft:deepslate_tile_stairs')
+	event.add('tfg:rock_stairs', 'minecraft:deepslate_tile_stairs')
+
+	event.add('tfc:metamorphic_items', 'minecraft:deepslate_tile_slab')
+	event.add('tfg:rock_slab', 'minecraft:deepslate_tile_slab')
+	
+	event.add('tfc:metamorphic_items', 'minecraft:deepslate_tile_wall')
+	event.add('tfg:rock_wall', 'minecraft:deepslate_tile_wall')
+
+	event.add('forge:stone_bricks', 'minecraft:cracked_deepslate_tiles')
+	event.add('tfc:metamorphic_items', 'minecraft:cracked_deepslate_tiles')
+	event.add('tfc:rock/bricks', 'minecraft:cracked_deepslate_tiles')
+	event.add('tfc:rock/chiseled_bricks', 'minecraft:cracked_deepslate_tiles')
 
 	event.add('forge:stone_bricks', 'minecraft:chiseled_deepslate')
 	event.add('tfc:metamorphic_items', 'minecraft:chiseled_deepslate')
