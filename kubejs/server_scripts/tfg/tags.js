@@ -539,11 +539,6 @@ const registerTFGItemTags = (event) => {
 
 	// #region Space blocks
 	AA_REGULAR_STONES.forEach(stone => {
-		console.log("STONE")
-		console.log(stone)
-		console.log(`ad_astra:${stone}_stone`)
-		console.log("TYPE")
-		console.log(getStoneType(stone))
 		event.add('forge:stone', `ad_astra:${stone}_stone`)
 		event.add(`tfc:${getStoneType(stone)}_items`, `ad_astra:${stone}_stone`)
 
