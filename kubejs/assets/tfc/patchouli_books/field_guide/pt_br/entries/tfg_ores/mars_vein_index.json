@@ -14,12 +14,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandine & Sapphire$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Apatita e Pirocloro$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Bastnasita e Monazita$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_bismuthinite)Bismuto$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornite & Cooperite$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_cassiterite)Cassiterita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Coal & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Cobre e Calcopirita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Esfalerita e Pirita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Esmeralda e Berílio$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Gold, Electrotine, & Bauxite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Hematita e Limonita$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_hematite)Hematita e Limonita$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandine & Sapphire$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Apatita e Pirocloro$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Bastnasita e Monazita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Bismuto$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornite & Cooperite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Cassiterita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Coal & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Cobre e Calcopirita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Esfalerita e Pirita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Esmeralda e Berílio$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Gold, Electrotine, & Bauxite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Hematita e Limonita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Hematita e Limonita$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende, Thorium, & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorium, & Uraninite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartzite, Asbestos, & Barite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone & Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Salts & Spodumene$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Soapstone, Talc, & Glauconite$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_nickel_galena)Sphalerite & Galena$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Tetraedrita (Normal)$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_tetrahedrite)Tetraedrita (Superfície)$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende, Thorium, & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorium, & Uraninite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartzite, Asbestos, & Barite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone & Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Salts & Spodumene$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Soapstone, Talc, & Glauconite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Sphalerite & Galena$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Tetraedrita (Normal)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Tetraedrita (Superfície)$()$()",
       "type": "patchouli:text"
     },
     {
@@ -323,7 +323,7 @@
       "text": "$(thing)Raridade$(): 140$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
       "title": "Bismuto",
       "type": "patchouli:text",
-      "anchor": "surface_bismuthinite"
+      "anchor": "mars_surface_bismuthinite"
     },
     {
       "Type": "patchouli:multiblock",
@@ -507,7 +507,7 @@
       "text": "$(thing)Raridade$(): 135$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
       "title": "Cassiterita",
       "type": "patchouli:text",
-      "anchor": "surface_cassiterite"
+      "anchor": "mars_surface_cassiterite"
     },
     {
       "Type": "patchouli:multiblock",
@@ -1153,7 +1153,7 @@
       "text": "$(thing)Raridade$(): 140$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
       "title": "Hematita e Limonita",
       "type": "patchouli:text",
-      "anchor": "surface_hematite"
+      "anchor": "mars_surface_hematite"
     },
     {
       "Type": "patchouli:multiblock",
@@ -2013,7 +2013,7 @@
       "text": "$(thing)Raridade$(): 150$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
       "title": "Sphalerite & Galena",
       "type": "patchouli:text",
-      "anchor": "surface_nickel_galena"
+      "anchor": "mars_surface_nickel_galena"
     },
     {
       "Type": "patchouli:multiblock",
@@ -2212,7 +2212,7 @@
       "text": "$(thing)Raridade$(): 140$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
       "title": "Tetraedrita (Superfície)",
       "type": "patchouli:text",
-      "anchor": "surface_tetrahedrite"
+      "anchor": "mars_surface_tetrahedrite"
     },
     {
       "Type": "patchouli:multiblock",
