@@ -173,7 +173,8 @@ function registerVintageImprovementsRecipes(event) {
 		{ material: GTMaterials.Bismuth, blows: STARTING_BLOWS },
 		{ material: GTMaterials.RoseGold, blows: STARTING_BLOWS },
 		{ material: GTMaterials.SterlingSilver, blows: STARTING_BLOWS },
-		{ material: GTMaterials.Tin, blows: STARTING_BLOWS }
+		{ material: GTMaterials.Tin, blows: STARTING_BLOWS },
+		{ material: GTMaterials.Lead, blows: STARTING_BLOWS }
 	]
 
 	let HAMMERING_ITEMS = [
@@ -192,6 +193,7 @@ function registerVintageImprovementsRecipes(event) {
 	HAMMERING_MATERIALS.push({ material: GTMaterials.BismuthBronze, blows: STARTING_BLOWS })
 	HAMMERING_MATERIALS.push({ material: GTMaterials.Brass, blows: STARTING_BLOWS })
 	HAMMERING_MATERIALS.push({ material: GTMaterials.RedAlloy, blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.Potin, blows: STARTING_BLOWS })
 
 	HAMMERING_MATERIALS.forEach(x => {
 		generateHammeringRecipe(event, x.material, x.blows, 'bronze');
@@ -210,6 +212,9 @@ function registerVintageImprovementsRecipes(event) {
 	HAMMERING_MATERIALS.push({ material: GTMaterials.TinAlloy, blows: STARTING_BLOWS })
 	HAMMERING_MATERIALS.push({ material: GTMaterials.Iron, blows: STARTING_BLOWS })
 	HAMMERING_MATERIALS.push({ material: GTMaterials.WroughtIron, blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.Invar, blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.Cobalt, blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.CobaltBrass, blows: STARTING_BLOWS })
 	HAMMERING_ITEMS.push({ input: 'tfc:metal/ingot/pig_iron', output: 'tfc:metal/ingot/high_carbon_steel', blows: STARTING_BLOWS })
 	HAMMERING_ITEMS.push({ input: 'tfc:metal/ingot/high_carbon_steel', output: 'gtceu:steel_ingot', blows: STARTING_BLOWS })
 

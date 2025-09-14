@@ -74,7 +74,7 @@ function registerTFGFoodItems(event) {
 		.food(food => food.hunger(4).saturation(2))
 		.tag('tfc:foods/grains')
 		.tag('tfc:foods/usable_in_salad')
-	
+
 	//Moon Rabbit
 	event.create('tfg:food/raw_moon_rabbit')
 		.translationKey('item.tfg.food.raw_moon_rabbit')
@@ -122,7 +122,7 @@ function registerTFGFoodItems(event) {
 		.food(food => food.hunger(8).saturation(9))
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
-		
+
 	//Wraptor
 	event.create('tfg:food/raw_wraptor')
 		.translationKey('item.tfg.food.raw_wraptor')
@@ -154,7 +154,7 @@ function registerTFGFoodItems(event) {
 		.food(food => food.hunger(4).saturation(4))
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
-	
+
 	//Walker
 	event.create('tfg:food/raw_walker_steak')
 		.translationKey('item.tfg.food.raw_walker_steak')
@@ -170,7 +170,7 @@ function registerTFGFoodItems(event) {
 		.food(food => food.hunger(8).saturation(10))
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
-		
+
 	//Glider
 	event.create('tfg:food/raw_glider_wings')
 		.translationKey('item.tfg.food.raw_glider_wings')
@@ -186,7 +186,7 @@ function registerTFGFoodItems(event) {
 		.food(food => food.hunger(2).saturation(3))
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
-	
+
 	//Soarer
 	event.create('tfg:food/raw_whole_soarer')
 		.translationKey('item.tfg.food.raw_whole_soarer')
@@ -202,7 +202,7 @@ function registerTFGFoodItems(event) {
 		.food(food => food.hunger(6).saturation(6))
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
-		
+
 	//Crusher
 	event.create('tfg:food/raw_crusher_meat')
 		.translationKey('item.tfg.food.raw_crusher_meat')
@@ -218,7 +218,7 @@ function registerTFGFoodItems(event) {
 		.food(food => food.hunger(5).saturation(6))
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
-	
+
 	//Goober
 	event.create('tfg:food/raw_goober_meat')
 		.translationKey('item.tfg.food.raw_goober_meat')
@@ -234,14 +234,16 @@ function registerTFGFoodItems(event) {
 		.food(food => food.hunger(3).saturation(6))
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
-		
+
 
 	event.create('tfg:food/ice_soup')
 		.translationKey('item.tfg.food.ice_soup')
 		.texture('tfg:item/food/ice_soup')
-		.food(food => food.effect('tfg:cooling', 100, 0, 1)
-			.eaten(ctx => {
-			ctx.player.give('tfc:ceramic/bowl')
-		}))
-		// intentionally not tagged as food
+		.food(food => {
+			food.effect('tfg:cooling', 100, 0, 1)
+			food.eaten(ctx => {
+				ctx.player.give('tfc:ceramic/bowl')
+			})
+		})
+	// intentionally not tagged as food
 }
