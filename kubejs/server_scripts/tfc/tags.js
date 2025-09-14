@@ -6,6 +6,7 @@ function registerTFCItemTags(event) {
     // Теги для соответствия инструментов TFC и GT
 
     forEachMaterial((material) => {
+        // Tool rack tags
         if (material.hasProperty(PropertyKey.TOOL)) {
             for (let [key, value] of Object.entries(global.GTCEU_TOOLTYPES_WHICH_HAS_TFC_DUPS)) {
                 let tool = ToolHelper.get(value, material);
@@ -534,26 +535,58 @@ function registerTFCFluidTags(event) {
     event.add("tfc:usable_in_tool_head_mold", "gtceu:black_bronze");
     event.add("tfc:usable_in_tool_head_mold", "gtceu:bronze");
 
-    event.add("tfc:usable_in_barrel", "gtceu:creosote");
-    event.add("tfc:usable_in_wooden_bucket", "gtceu:creosote");
-    event.add("tfc:usable_in_red_steel_bucket", "gtceu:creosote");
-    event.add("tfc:usable_in_blue_steel_bucket", "gtceu:creosote");
+    const $FluidState = Java.loadClass("com.gregtechceu.gtceu.api.fluids.FluidState")
+    const $FluidAttribute = Java.loadClass("com.gregtechceu.gtceu.api.fluids.attribute.FluidAttributes")
 
-    event.add("tfc:usable_in_barrel", "gtceu:ice");
+    forEachMaterial(material => {
+        if (material.hasProperty(PropertyKey.FLUID)) {
+            let fluid = material.getFluid();
+
+            // Ignore gases
+            let fluidType = fluid.getFluidType();
+            if (fluidType.isLighterThanAir())
+                return;
+
+            // Check for acids
+            try {
+                // This is in a try catch because I don't know how to check if an object is of type 
+                // AttributedFluid or GTFluid here
+                if (fluid.getAttributes().contains($FluidAttribute.ACID))
+                    return;
+            }
+            catch (exception) {
+                return;
+            }
+
+            // Check for plasmas (and gases again in case the previous check didn't work)
+            let fluidState = fluid.getState();
+            if (fluidState === $FluidState.PLASMA || fluidState === $FluidState.GAS)
+                return;
+
+            let fluidName = fluidType.toString();
+            let temperature = fluidType.getTemperature();
+
+            // 340 is the max temperature of wood pipes
+            // 120 is the cryogenic temperature threshold (see gtceu/FluidConstants)
+            if (temperature <= 340 && temperature >= 120) {
+                event.add("tfc:usable_in_barrel", fluidName);
+                event.add("tfc:usable_in_wooden_bucket", fluidName);
+            }
+
+            // Red steel's max temperature, can do cryo
+            if (temperature <= 370) {
+                event.add("tfc:usable_in_red_steel_bucket", fluidName);
+            }
+
+            // Blue steel's max temp, can't do cryo
+            if (temperature <= 4618 && temperature >= 120) {
+                event.add("tfc:usable_in_blue_steel_bucket", fluidName);
+            }
+        }
+    })
+
     event.add("tfc:usable_in_pot", "gtceu:ice");
-    event.add("tfc:usable_in_wooden_bucket", "gtceu:ice");
-    event.add("tfc:usable_in_red_steel_bucket", "gtceu:ice");
-
-    event.add("tfc:usable_in_barrel", "gtceu:glue");
-    event.add("tfc:usable_in_wooden_bucket", "gtceu:glue");
-    event.add("tfc:usable_in_blue_steel_bucket", "tfc:spring_water");
-    event.add("tfc:usable_in_red_steel_bucket", "gtceu:glue");
-
     event.add("tfc:ingredients", "tfc:spring_water");
-    event.add("tfc:usable_in_barrel", "tfc:spring_water");
-    event.add("tfc:usable_in_wooden_bucket", "tfc:spring_water");
-    event.add("tfc:usable_in_blue_steel_bucket", "tfc:spring_water");
-    event.add("tfc:usable_in_red_steel_bucket", "tfc:spring_water");
 
     event.add("tfc:alcohols", "tfcagedalcohol:aged_beer");
     event.add("tfc:alcohols", "tfcagedalcohol:aged_cider");
