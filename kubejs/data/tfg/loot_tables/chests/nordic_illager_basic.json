@@ -22,22 +22,6 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:wood/planks/hickory",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
 					"name": "tfc:wood/lumber/willow",
 					"weight": 100,
 					"functions": [
@@ -54,22 +38,6 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:wood/planks/willow",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
 					"name": "afc:wood/lumber/cypress",
 					"weight": 100,
 					"functions": [
@@ -79,38 +47,6 @@
 								"type": "minecraft:uniform",
 								"max": 8,
 								"min": 4
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "afc:wood/planks/cypress",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:stick",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 5
 							},
 							"function": "minecraft:set_count"
 						}
@@ -157,8 +93,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
+								"max": 12,
+								"min": 6
 							},
 							"function": "minecraft:set_count"
 						}
@@ -192,11 +128,6 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:ceramic/jug",
-					"weight": 10
-				},
-				{
-					"type": "minecraft:item",
 					"name": "primitive_creatures:totem_0",
 					"weight": 10
 				},
@@ -209,6 +140,31 @@
 					"type": "minecraft:item",
 					"name": "primitive_creatures:totem_3",
 					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:rabbit_foot",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:sentry_armor_trim_smithing_template",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:vex_armor_trim_smithing_template",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:wild_armor_trim_smithing_template",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:coast_armor_trim_smithing_template",
+					"weight": 20
 				},
 				{
 					"type": "minecraft:item",
@@ -235,8 +191,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 6,
-								"min": 3
+								"max": 8,
+								"min": 4
 							},
 							"function": "minecraft:set_count"
 						}
@@ -251,8 +207,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
+								"max": 8,
+								"min": 4
 							},
 							"function": "minecraft:set_count"
 						}
@@ -276,7 +232,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:torch",
+					"name": "tfc:candle",
 					"weight": 100,
 					"functions": [
 						{
@@ -285,6 +241,70 @@
 								"type": "minecraft:uniform",
 								"max": 8,
 								"min": 4
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:candle/gray",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8,
+								"min": 4
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:candle/light_gray",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8,
+								"min": 4
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:candle",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8,
+								"min": 4
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:emerald",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -299,8 +319,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
+								"max": 20,
+								"min": 12
 							},
 							"function": "minecraft:set_count"
 						}
@@ -308,7 +328,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:bone_meal",
+					"name": "minecraft:bone",
 					"weight": 100,
 					"functions": [
 						{
@@ -324,15 +344,47 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:compost",
+					"name": "firmalife:jar/compost",
 					"weight": 80,
 					"functions": [
 						{
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 6,
-								"min": 3
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "firmalife:jar/guano",
+					"weight": 80,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "firmalife:jar/honey",
+					"weight": 80,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -356,7 +408,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:groundcover/pumice",
+					"name": "minecraft:paper",
 					"weight": 50,
 					"functions": [
 						{
@@ -372,15 +424,15 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:groundcover/humus",
-					"weight": 100,
+					"name": "tfc:groundcover/pumice",
+					"weight": 50,
 					"functions": [
 						{
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
+								"max": 4,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -465,6 +517,16 @@
 							"function": "minecraft:set_count"
 						}
 					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "chalk:gray_chalk",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "chalk:light_gray_chalk",
+					"weight": 100
 				}
 			],
 			"rolls": {

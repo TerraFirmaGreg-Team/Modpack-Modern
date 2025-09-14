@@ -13,7 +13,7 @@
 						"predicate_type": "minecraft:block_match"
 					},
 					"output_state": {
-						"Name": "tfc:wood/planks/hickory"
+						"Name": "tfc:mud_bricks/sandy_loam"
 					}
 				},
 				{
@@ -26,7 +26,7 @@
 						"predicate_type": "minecraft:block_match"
 					},
 					"output_state": {
-						"Name": "tfc:wood/planks/hickory"
+						"Name": "tfc:mud_bricks/sandy_loam"
 					}
 				},
 				{
@@ -39,7 +39,7 @@
 						"predicate_type": "minecraft:block_match"
 					},
 					"output_state": {
-						"Name": "tfc:wood/planks/hickory"
+						"Name": "tfc:mud_bricks/sandy_loam"
 					}
 				},
 
@@ -88,7 +88,7 @@
 					"input_predicate": {
 						"block": "rnr:hoggin",
 						"predicate_type": "minecraft:random_block_match",
-						"probability": 0.15
+						"probability": 0.1
 					},
 					"location_predicate": {
 						"predicate_type": "minecraft:always_true"

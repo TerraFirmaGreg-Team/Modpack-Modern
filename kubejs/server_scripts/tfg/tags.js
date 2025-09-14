@@ -1065,12 +1065,9 @@ const registerTFGBiomeTags = (event) => {
 
 	event.add('tfg:has_structure/illages', 'tfc:plains')
 	event.add('tfg:has_structure/illages', 'tfc:hills')
-	event.add('tfg:has_structure/illages', 'tfc:lowlands')
-	event.add('tfg:has_structure/illages', 'tfc:low_canyons')
 	event.add('tfg:has_structure/illages', 'tfc:rolling_hills')
 	event.add('tfg:has_structure/illages', 'tfc:badlands')
 	event.add('tfg:has_structure/illages', 'tfc:plateau')
-	event.add('tfg:has_structure/illages', 'tfc:highlands')
 	event.add('tfg:has_structure/illages', 'tfc:old_mountains')
 
 	// #endregion

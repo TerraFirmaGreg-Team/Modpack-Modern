@@ -103,14 +103,14 @@
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:cobalt_brass_ingot",
-					"weight": 20,
+					"weight": 40,
 					"functions": [
 						{
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 2,
-								"min": 1
+								"max": 4,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -119,14 +119,14 @@
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:cobalt_ingot",
-					"weight": 30,
+					"weight": 50,
 					"functions": [
 						{
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 3,
-								"min": 1
+								"max": 4,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -135,14 +135,14 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:copper_ingot",
-					"weight": 40,
+					"weight": 50,
 					"functions": [
 						{
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 3,
-								"min": 1
+								"max": 4,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -151,14 +151,14 @@
 				{
 					"type": "minecraft:item",
 					"name": "create:zinc_ingot",
-					"weight": 30,
+					"weight": 40,
 					"functions": [
 						{
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 2,
-								"min": 1
+								"max": 4,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -167,14 +167,30 @@
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:lead_ingot",
-					"weight": 30,
+					"weight": 40,
 					"functions": [
 						{
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 3,
-								"min": 1
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "create:brass_ingot",
+					"weight": 40,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -183,14 +199,14 @@
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:bismuth_ingot",
-					"weight": 50,
+					"weight": 60,
 					"functions": [
 						{
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 3,
-								"min": 1
+								"max": 4,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -290,6 +306,26 @@
 							"function": "minecraft:set_count"
 						}
 					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:sentry_armor_trim_smithing_template",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:vex_armor_trim_smithing_template",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:wild_armor_trim_smithing_template",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:coast_armor_trim_smithing_template",
+					"weight": 20
 				}
 			],
 			"rolls": {
