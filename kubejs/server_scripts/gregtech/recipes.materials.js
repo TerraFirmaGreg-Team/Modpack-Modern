@@ -642,7 +642,7 @@ function registerGTCEUMetalRecipes(event) {
 				type: "ae2:transform",
 				circumstance: {
 					type: "fluid",
-					tag: "tfc:water"
+					tag: "tfc:any_water"
 				},
 				ingredients: [
 					crushedOreItem.toJson()
@@ -716,7 +716,7 @@ function registerGTCEUMetalRecipes(event) {
 				type: "ae2:transform",
 				circumstance: {
 					type: "fluid",
-					tag: "tfc:water"
+					tag: "tfc:any_water"
 				},
 				ingredients: [
 					impureDustItem.toJson()
@@ -756,7 +756,7 @@ function registerGTCEUMetalRecipes(event) {
 				type: "ae2:transform",
 				circumstance: {
 					type: "fluid",
-					tag: "tfc:water"
+					tag: "tfc:any_water"
 				},
 				ingredients: [
 					pureDust.toJson()

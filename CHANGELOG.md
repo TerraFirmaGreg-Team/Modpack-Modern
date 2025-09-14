@@ -3,6 +3,30 @@
 ## [Unreleased]
 ### Changes
 ### Bug fixes
+### Translation updates
+
+## [0.10.14] - 14-09-2025
+### Changes
+- Wooden crates can now also be crafted with bronze screws @Pyritie
+- The tape measure can now be put in your toolbelt (#1813) @Nashy1232
+- Added machine processing for Flax (#1803) @BlueBoat29
+- Added cobblestones to GT facade crafting @Nashy1232
+- Every fluid that can go in wooden pipes can now also go in a wooden bucket and barrel (#1796) @Pyritie
+### Bug fixes
+- Fixed not downloading the FTB library of mods on server builds (#1811, #1801, #1812, #1411) @Xikaro
+- Fixed ingot piles occasionally crashing on servers @Pyritie
+- Fixed being able to get infinite lava by bucketing lava aqueducts @Pyritie
+- More fixes for the Solar Boilers and TFC's rain system @FiNiTe-Weeb
+- Fixed river water not washing ores (#1785)
+- Added missing textures for placed Potin ingots/plates @Pyritie
+- Fixed recipe conflict with music labels and paper blocks @Pyritie
+- Added missing helve hammer recipes for lead, potin, cobalt, cobalt brass, and invar @Pyritie
+- Fixed black bronze requiring an LS millstone to macerate (#1786) @Pyritie
+- Fixed not being able to melt down certain tools (#1819) @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry
+- Brazilian Portuguese @gifpxto
 
 ## [0.10.13] - 11-09-2025
 ### Changes

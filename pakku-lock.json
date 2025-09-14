@@ -478,7 +478,6 @@
                 "curseforge": "561137",
                 "modrinth": "Rd89yO7d"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "modrinth",
@@ -549,7 +548,6 @@
                 "curseforge": "561439",
                 "modrinth": "z3TjJLQ0"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "modrinth",
@@ -620,7 +618,6 @@
                 "curseforge": "563963",
                 "modrinth": "jr5nzfKv"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "modrinth",
@@ -1583,29 +1580,30 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "AutoPack-Director-1.2.0.jar",
+                    "file_name": "AutoPack-Director-1.3.0.jar",
                     "mc_versions": [
                         "1.12.2",
                         "1.20.1"
                     ],
                     "loaders": [
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Fqqapnbs/versions/vYcOEYf1/AutoPack-Director-1.2.0.jar",
-                    "id": "vYcOEYf1",
+                    "url": "https://cdn.modrinth.com/data/Fqqapnbs/versions/gLhrG1om/AutoPack-Director-1.3.0.jar",
+                    "id": "gLhrG1om",
                     "parent_id": "Fqqapnbs",
                     "hashes": {
-                        "sha512": "89f3170fdad94d6831d24507ccdb29a913ad0390d029d1e21d3ed4a68dd6f62d79f67fc9e67b9399c346ca412518c1b564862b70910c93ce0299f8292f7f0c91",
-                        "sha1": "19cbf1a49a8658741c87989c8605d8009819a495"
+                        "sha512": "75fd0ba47fd41c3984e941cff9f21630a506db7c21e5a0213baf5fb5b24bf784a7171a6f7d41f5f65b165cbb0aa61176e5637c138a9c5f61e775e3ffeb5efb4c",
+                        "sha1": "1b9683932e33d479152858841c1d202d535dcfe9"
                     },
                     "required_dependencies": [],
-                    "size": 96783,
-                    "date_published": "2025-09-10T09:08:06.843938Z"
+                    "size": 3458905,
+                    "date_published": "2025-09-12T17:57:12.375823Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "AutoPack-Director-1.0.1.jar",
+                    "file_name": "AutoPack-Director-1.3.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1613,17 +1611,17 @@
                         "neoforge",
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6102/172/AutoPack-Director-1.0.1.jar",
-                    "id": "6102172",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6990/27/AutoPack-Director-1.3.0.jar",
+                    "id": "6990027",
                     "parent_id": "1182657",
                     "hashes": {
-                        "sha1": "973a115aeee0cd6d40ad0a0e1e255d5aa0419bb2",
-                        "md5": "5b6d859ea086f988ed041045d0b58896"
+                        "sha1": "1b9683932e33d479152858841c1d202d535dcfe9",
+                        "md5": "996c53f4be78f06a04d6dcee5e8730fa"
                     },
                     "required_dependencies": [],
-                    "size": 3031600,
-                    "date_published": "2025-01-19T07:37:46.543Z"
+                    "size": 3458905,
+                    "date_published": "2025-09-12T17:54:26.640Z"
                 }
             ]
         },
@@ -3913,7 +3911,6 @@
                 "curseforge": "1121632",
                 "modrinth": "9Qm19XSM"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -4553,7 +4550,6 @@
                 "curseforge": "1066153",
                 "modrinth": "b1GD2Ca2"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -4629,7 +4625,6 @@
                 "curseforge": "942945",
                 "modrinth": "zv7fYVyQ"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5207,7 +5202,6 @@
                 "curseforge": "448233",
                 "modrinth": "NNAgCjsB"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "modrinth",
@@ -5582,7 +5576,6 @@
             "id": {
                 "curseforge": "622737"
             },
-            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5630,7 +5623,6 @@
             "id": {
                 "curseforge": "314906"
             },
-            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5671,7 +5663,6 @@
             "id": {
                 "curseforge": "410811"
             },
-            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5714,7 +5705,6 @@
             "id": {
                 "curseforge": "943925"
             },
-            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5758,7 +5748,6 @@
             "id": {
                 "curseforge": "404465"
             },
-            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5802,7 +5791,6 @@
             "id": {
                 "curseforge": "289412"
             },
-            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5847,7 +5835,6 @@
             "id": {
                 "curseforge": "314905"
             },
-            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5891,7 +5878,6 @@
             "id": {
                 "curseforge": "404468"
             },
-            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5937,7 +5923,6 @@
             "id": {
                 "curseforge": "889915"
             },
-            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -6121,7 +6106,6 @@
                 "curseforge": "1030285",
                 "modrinth": "nRL5uFe0"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -6485,7 +6469,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Firmalife-1.20.1-2.1.22.jar",
+                    "file_name": "Firmalife-1.20.1-2.1.23.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6494,22 +6478,22 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/5bKeBHw2/versions/ZXszXbjJ/Firmalife-1.20.1-2.1.22.jar",
-                    "id": "ZXszXbjJ",
+                    "url": "https://cdn.modrinth.com/data/5bKeBHw2/versions/t7KGvsmo/Firmalife-1.20.1-2.1.23.jar",
+                    "id": "t7KGvsmo",
                     "parent_id": "5bKeBHw2",
                     "hashes": {
-                        "sha512": "4ae0cb649301feed7312c978272f4c6146a9056a9357b13cb25361c41f43551ce83cbda1ecbb43a3eefdc7b3197059b67e827f392221a2e56362c95c2b458cbf",
-                        "sha1": "2d914eae0dff75cea1d5766118382cf89621506f"
+                        "sha512": "7c6f0d0489b97301a9fbeab1a738b73969fc720521c8feeaf1e3a0c7bf06687df0ee37a88a8cec5efe134c342809608683774d67169eaeb2eb6a6bf2c6d2b718",
+                        "sha1": "71990d2b344d64f19558c40bf73454379282aad9"
                     },
                     "required_dependencies": [
                         "JaCEZUhg"
                     ],
-                    "size": 4628395,
-                    "date_published": "2025-07-27T13:22:55.237813Z"
+                    "size": 4617231,
+                    "date_published": "2025-09-12T23:10:39.190669Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "Firmalife-1.20.1-2.1.22.jar",
+                    "file_name": "Firmalife-1.20.1-2.1.23.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6518,18 +6502,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6817/407/Firmalife-1.20.1-2.1.22.jar",
-                    "id": "6817407",
+                    "url": "https://edge.forgecdn.net/files/6990/927/Firmalife-1.20.1-2.1.23.jar",
+                    "id": "6990927",
                     "parent_id": "453394",
                     "hashes": {
-                        "sha1": "2d914eae0dff75cea1d5766118382cf89621506f",
-                        "md5": "0a6fd6eb9e5221a8af7206931ba10c5a"
+                        "sha1": "71990d2b344d64f19558c40bf73454379282aad9",
+                        "md5": "281054629313b958c0e343e8ed1507d5"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 4628395,
-                    "date_published": "2025-07-27T13:22:52.537Z"
+                    "size": 4617231,
+                    "date_published": "2025-09-12T23:10:35.550Z"
                 }
             ]
         },
@@ -9338,7 +9322,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "moonlight-1.20-2.16.9-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.10-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9347,20 +9331,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/mHSe3j3i/moonlight-1.20-2.16.9-forge.jar",
-                    "id": "mHSe3j3i",
+                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/76Ai9UYo/moonlight-1.20-2.16.10-forge.jar",
+                    "id": "76Ai9UYo",
                     "parent_id": "twkfQtEc",
                     "hashes": {
-                        "sha512": "d221e717a8a52ff40e162868d0398e8648cca525891484e5cd88a2985bc22e2232e5e1bb9705c2805571f2ddfc6996192e819355d77d7c14c57fbd38cf70124a",
-                        "sha1": "622e2bd81157c7988e48988518a7bc11767a42a9"
+                        "sha512": "e473516a33484c5f3c700748c53f56f663557a125ba592bb7eeb25eb963944667738b2dadf8e3708f1795b89ccace97d2e33ef38f28094a19cc4fd6e4d1e817f",
+                        "sha1": "08b395bc0548556e8731418cdd0d5a754fa7cbae"
                     },
                     "required_dependencies": [],
                     "size": 1332304,
-                    "date_published": "2025-09-09T04:55:52.934953Z"
+                    "date_published": "2025-09-10T18:32:20.445301Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "moonlight-1.20-2.16.9-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.10-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9369,16 +9353,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6978/608/moonlight-1.20-2.16.9-forge.jar",
-                    "id": "6978608",
+                    "url": "https://edge.forgecdn.net/files/6983/934/moonlight-1.20-2.16.10-forge.jar",
+                    "id": "6983934",
                     "parent_id": "499980",
                     "hashes": {
-                        "sha1": "622e2bd81157c7988e48988518a7bc11767a42a9",
-                        "md5": "27fe3ce6505b0f96e4884256baddb553"
+                        "sha1": "08b395bc0548556e8731418cdd0d5a754fa7cbae",
+                        "md5": "0641e7fdc055c448da668274730b9087"
                     },
                     "required_dependencies": [],
                     "size": 1332304,
-                    "date_published": "2025-09-09T04:55:38.910Z"
+                    "date_published": "2025-09-10T18:32:04.930Z"
                 }
             ]
         },
@@ -9893,7 +9877,6 @@
                 "curseforge": "433760",
                 "modrinth": "MPCX6s5C"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "modrinth",
@@ -12083,7 +12066,6 @@
             "id": {
                 "curseforge": "925229"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -12185,7 +12167,6 @@
                 "curseforge": "857737",
                 "modrinth": "s5d4P01r"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "modrinth",
@@ -13678,7 +13659,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaCraft-Forge-1.20.1-3.2.18.jar",
+                    "file_name": "TerraFirmaCraft-Forge-1.20.1-3.2.19.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13687,22 +13668,22 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/JaCEZUhg/versions/Gu29xenE/TerraFirmaCraft-Forge-1.20.1-3.2.18.jar",
-                    "id": "Gu29xenE",
+                    "url": "https://cdn.modrinth.com/data/JaCEZUhg/versions/tzI7ngJN/TerraFirmaCraft-Forge-1.20.1-3.2.19.jar",
+                    "id": "tzI7ngJN",
                     "parent_id": "JaCEZUhg",
                     "hashes": {
-                        "sha512": "b5a5223fe037e97d0ddd7077697292bfebe6c207a87a3b10c4e51f95c91b0ea8b93fc7cd0240b80256966c14f7fb5850a18f0bcbf7316ae777272833a8038de8",
-                        "sha1": "665ebee0375f06d68500447e250df5c8ad75b8b7"
+                        "sha512": "83a5dd8463e11efff783f2c9ad87e911b44a8344d2884490e1f862d52d34c39ecbb1fb88ac200921a457f8fd038362b2ea53dac0e7d0041d272d73931f551200",
+                        "sha1": "107d4aec4694c509ea7ea8f3963478ae8002f46e"
                     },
                     "required_dependencies": [
                         "nU0bVIaL"
                     ],
-                    "size": 47452509,
-                    "date_published": "2025-08-01T12:29:28.442090Z"
+                    "size": 47458568,
+                    "date_published": "2025-09-12T23:05:08.687798Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaCraft-Forge-1.20.1-3.2.18.jar",
+                    "file_name": "TerraFirmaCraft-Forge-1.20.1-3.2.19.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13711,18 +13692,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6835/820/TerraFirmaCraft-Forge-1.20.1-3.2.18.jar",
-                    "id": "6835820",
+                    "url": "https://edge.forgecdn.net/files/6990/923/TerraFirmaCraft-Forge-1.20.1-3.2.19.jar",
+                    "id": "6990923",
                     "parent_id": "302973",
                     "hashes": {
-                        "sha1": "665ebee0375f06d68500447e250df5c8ad75b8b7",
-                        "md5": "eb6b3344ab06d8a988f36610088ddc60"
+                        "sha1": "107d4aec4694c509ea7ea8f3963478ae8002f46e",
+                        "md5": "ef643b2327eb4e1ccc096aa54bdb9c60"
                     },
                     "required_dependencies": [
                         "306770"
                     ],
-                    "size": 47452509,
-                    "date_published": "2025-08-01T12:29:22.040Z"
+                    "size": 47458568,
+                    "date_published": "2025-09-12T23:05:02.727Z"
                 }
             ]
         },
@@ -13749,7 +13730,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.16.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.17.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13758,23 +13739,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/piLcuiD0/TerraFirmaGreg-Core-Modern-0.7.16.jar",
-                    "id": "piLcuiD0",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/XObIJwol/TerraFirmaGreg-Core-Modern-0.7.17.jar",
+                    "id": "XObIJwol",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "ac36d718abf0426a09582433d888130629741d89b7a881dd132ae067f2d1d660c924106f6ab2e594be734f7d5b1ecb64993e051dc66bc6d5286173afc5cfa6a7",
-                        "sha1": "9632c5b46038c79b7ec2e829012ac666aab966e3"
+                        "sha512": "9ca258636dce9c30dfd2328d21241bcc26510c852483b928c77568774ed55d125e837af4fcdce43cffa6e324ff6e41a89023dac3e9b378d107508255ad09137a",
+                        "sha1": "b1677afbe3a4943509dbd076cad88be2fabf56a8"
                     },
                     "required_dependencies": [
                         "JaCEZUhg",
                         "7tG215v7"
                     ],
-                    "size": 647170,
-                    "date_published": "2025-09-11T06:22:17.668297Z"
+                    "size": 650297,
+                    "date_published": "2025-09-13T23:32:53.471935Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.16.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.7.17.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13783,19 +13764,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6985/335/TerraFirmaGreg-Core-Modern-0.7.16.jar",
-                    "id": "6985335",
+                    "url": "https://edge.forgecdn.net/files/6994/374/TerraFirmaGreg-Core-Modern-0.7.17.jar",
+                    "id": "6994374",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "9632c5b46038c79b7ec2e829012ac666aab966e3",
-                        "md5": "03f82164a10c821e9f18ca3cd9fa4d21"
+                        "sha1": "b1677afbe3a4943509dbd076cad88be2fabf56a8",
+                        "md5": "d94571859f8258da7a16257b8f4844c7"
                     },
                     "required_dependencies": [
                         "302973",
                         "890405"
                     ],
-                    "size": 647170,
-                    "date_published": "2025-09-11T06:22:16.030Z"
+                    "size": 650297,
+                    "date_published": "2025-09-13T23:32:51.560Z"
                 }
             ]
         },

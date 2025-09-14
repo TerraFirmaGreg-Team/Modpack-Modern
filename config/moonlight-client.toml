@@ -1,7 +1,5 @@
 
 [general]
-	#Merge all dynamic resource packs from all mods that use this library into a single pack
-	merge_dynamic_packs = true
 	#Prevents map texture from being upladed to GPU when only map markers have changed.Could increase performance
 	lazy_map_upload = true
 	#Renders map textures using mipmap. Vastly improves look from afar as well when inside a Map Atlas from Map Atlases or similar. Set to 0 to have no mipmap like vanilla
@@ -10,8 +8,6 @@
 	#Fix minecraft entity shading to be exactly the same that blocks use. (1 for up,0.8 for north, 0.6 for west and 0.5 for down).This means that if you have a model and render it with a tile renderer or entity it will appear identical as one rendered via baked models.Using no gui will prevent it from changing item rendered in GUIs, in case you dont like that look.Note there is a known compat issue with Figura mod. Keep this True or False with that one
 	#Allowed Values: FALSE, NO_GUI, TRUE
 	consistent_entity_renderer_shading = "NO_GUI"
-	#ONLY for debugging purpose. blocktypes_debug.txt, the file can be found in ~/.minecraft/logs/...
-	blocktypes_debug = false
-	woodtypes_debug = false
-	leavestypes_debug = false
+	#Merge all dynamic resource packs from all mods that use this library into a single pack
+	merge_dynamic_resource_packs = true
 

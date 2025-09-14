@@ -200,8 +200,8 @@
 				item: "gtceu:ev_diode"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -3.5d
+			x: 5.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4EA8888B12D75BF1"]
@@ -1819,6 +1819,17 @@
 			}]
 			x: -8.75d
 			y: -1.75d
+		}
+		{
+			dependencies: ["341751B307577B72"]
+			id: "7EAA2149BD77A5E6"
+			tasks: [{
+				id: "531E56A4C9F646FD"
+				item: "gtceu:helium_bucket"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 2.5d
 		}
 	]
 	title: "EV In Work"

@@ -67,6 +67,9 @@
     "goggles.detailed": false,
     "placard": true
   },
+  "tfcgroomer": {
+    "grooming_station": true
+  },
   "gtceu": {
     "primitive_pump": true,
     "auto_output_info": true,

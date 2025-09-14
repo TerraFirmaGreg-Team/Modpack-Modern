@@ -808,8 +808,25 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#forge:tools/saws'
 	}).id('tfg:shaped/wooden_crate_wrought_iron')
 
-	event.recipes.gtceu.assembler('gtceu:wood_crate')
+	event.recipes.gtceu.assembler('tfg:wood_crate')
 		.itemInputs('4x #minecraft:planks', '4x #forge:screws/wrought_iron')
+		.itemOutputs('gtceu:wood_crate')
+		.duration(100)
+		.EUt(16)
+		.circuit(5)
+
+	event.recipes.shaped('gtceu:wood_crate', [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: '#forge:screws/any_bronze',
+		B: '#minecraft:planks',
+		C: '#forge:tools/saws'
+	}).id('tfg:shaped/wooden_crate_bronze')
+
+	event.recipes.gtceu.assembler('tfg:wood_crate_bronze')
+		.itemInputs('4x #minecraft:planks', '4x #forge:screws/any_bronze')
 		.itemOutputs('gtceu:wood_crate')
 		.duration(100)
 		.EUt(16)
