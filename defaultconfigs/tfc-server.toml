@@ -6,7 +6,7 @@ familiarityDecayLimit = 0.3
 [general]
 	#
 	# Enable nether portal creation
-	enableNetherPortals = false
+	enableNetherPortals = true
 	#
 	# Forces a number of game rules to specific values.
 	#   naturalRegeneration = false (Health regen is much slower and not tied to extra saturation)
@@ -497,7 +497,7 @@ familiarityDecayLimit = 0.3
 		#Range: 0.001 ~ 1000.0
 		cropGrowthModifier = 1.0
 		#
-		# Modifier applied to the expiry time of every crop. The modifier multiplies the ticks it takes to grow, so larger values cause longer growth times. For example, a value of 2 doubles the growth time.
+		# Modifier applied to the expiry time of every crop. The modifier multiplies the ticks it takes to grow, so larger values cause longer expiry times. For example, a value of 2 doubles the expiry time.
 		#Range: 0.001 ~ 1000.0
 		cropExpiryModifier = 1.0
 
@@ -809,8 +809,8 @@ familiarityDecayLimit = 0.3
 
 	[mechanics.fluids]
 		#
-		# If true, TFC buckets that naturally place sources (colored steel) will place sources. If false, this behavior is disabled.
-		enableBucketsPlacingSources = true
+		# If true, TFC buckets that naturally place sources (colored steel) will place sources. If false, this behavior is disabled. By default, colored steel buckets do not place sources.
+		enableBucketsPlacingSources1 = false
 
 	[mechanics.vanillaChanges]
 		#
