@@ -1,9 +1,14 @@
 {
-	"feature": "tfg:mars/surface/flint_patch",
+	"feature": "tfg:mars/tree/cave_bush",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
 			"chance": 2
+		},
+		{
+			"type": "tfc:climate",
+			"min_forest": "edge",
+			"min_rainfall": -5
 		},
 		{
 			"type": "minecraft:in_square"

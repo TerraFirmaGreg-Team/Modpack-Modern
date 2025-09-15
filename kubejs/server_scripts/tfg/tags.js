@@ -995,6 +995,14 @@ const registerTFGBlockTags = (event) => {
 	event.add('forge:mineable/wrench', 'tfg:machine_casing_aluminium_plated_steel')
 
 	event.add('tfg:decorative_plant_attachable', '#minecraft:logs')
+	event.add('tfg:decorative_plant_attachable', 'minecraft:mushroom_stem')
+	event.add('tfg:decorative_plant_attachable', 'species:alphacene_mushroom_block')
+	event.add('tfg:decorative_plant_attachable', 'ad_astra:aeronos_cap')
+	event.add('tfg:decorative_plant_attachable', 'ad_astra:strophar_cap')
+	event.add('tfg:decorative_plant_attachable', 'minecraft:nether_wart_block')
+	event.add('tfg:decorative_plant_attachable', 'minecraft:warped_wart_block')
+	event.add('tfg:decorative_plant_attachable', 'betterend:cave_bush')
+	event.add('tfg:decorative_plant_attachable', 'betterend:lucernia_leaves')
 }
 //#endregion
 

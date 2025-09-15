@@ -16,7 +16,7 @@
 					"mars": {
 						"raw": "ad_astra:mars_stone",
 						"hardened": "tfg:rock/hardened_mars_stone",
-						"gravel": "ad_astra:mars_cobblestone",
+						"gravel": "tfg:rock/gravel_mars",
 						"cobble": "ad_astra:mars_cobblestone",
 						"sand": "ad_astra:mars_sand",
 						"sandstone": "ad_astra:mars_stone",
@@ -26,7 +26,7 @@
 					"venus": {
 						"raw": "ad_astra:venus_stone",
 						"hardened": "tfg:rock/hardened_venus_stone",
-						"gravel": "ad_astra:venus_cobblestone",
+						"gravel": "tfg:rock/gravel_venus",
 						"cobble": "ad_astra:venus_cobblestone",
 						"sand": "ad_astra:venus_sand",
 						"sandstone": "ad_astra:venus_sandstone",
@@ -36,7 +36,7 @@
 					"red_granite": {
 						"raw": "gtceu:red_granite",
 						"hardened": "tfg:rock/hardened_red_granite",
-						"gravel": "gtceu:red_granite_cobblestone",
+						"gravel": "tfg:rock/gravel_red_granite",
 						"cobble": "gtceu:red_granite_cobblestone",
 						"sand": "minecraft:red_sand",
 						"sandstone": "minecraft:red_sandstone",
