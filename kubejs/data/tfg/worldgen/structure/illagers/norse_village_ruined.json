@@ -11,5 +11,6 @@
 	},
 	"project_start_to_heightmap": "WORLD_SURFACE_WG",
 	"use_expansion_hack": true,
+	"adapt_noise": true,
 	"spawn_overrides": {}
 }
