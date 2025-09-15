@@ -334,4 +334,9 @@ const registerTFCRecipes = (event) => {
     // jute net -> burlap net
     event.replaceInput({ id: 'tfc:crafting/jute_net'}, 'tfc:jute_fiber', '#tfg:burlap_fiber')
 
+    // horse armor to use burlap
+    global.TFC_EQUIPMENT_METALS.forEach(material => {
+        event.replaceInput({ id: `tfc:crafting/${material}_horse_armor`}, `tfc:jute_fiber`, `#tfg:burlap_fiber`)
+    })
+
 }
