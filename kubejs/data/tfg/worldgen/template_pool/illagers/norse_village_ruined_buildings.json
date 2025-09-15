@@ -7,7 +7,7 @@
 			"element": {
 				"location": "tfg:norse/ruins/norse_burial_ruin",
 				"processors": "minecraft:empty",
-				"projection": "rigid",
+				"projection": "terrain_matching",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},

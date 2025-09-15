@@ -25,7 +25,7 @@
 			"element": {
 				"location": "tfg:norse/baseline/norse_burial_base",
 				"processors": "tfg:illagers/norse_structures",
-				"projection": "rigid",
+				"projection": "terrain_matching",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
