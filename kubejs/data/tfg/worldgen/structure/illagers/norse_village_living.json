@@ -2,7 +2,7 @@
 	"type": "minecraft:jigsaw",
 	"start_pool": "tfg:illagers/norse_village_living_start_pool",
 	"size": 4,
-	"max_distance_from_center": 80,
+	"max_distance_from_center": 116,
 	"biomes": "#tfg:has_structure/illages",
 	"step": "surface_structures",
 	"terrain_adaptation": "beard_thin",
