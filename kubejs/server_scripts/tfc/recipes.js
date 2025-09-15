@@ -332,6 +332,6 @@ const registerTFCRecipes = (event) => {
 		.id('tfg:barrel/water_to_salt_water_tfc')
 
     // jute net -> burlap net
-    event.replaceInput({ output: 'tfc:jute_net'}, 'tfc:jute_fiber', '#tfg:burlap_fiber')
+    event.replaceInput({ id: 'tfc:crafting/jute_net'}, 'tfc:jute_fiber', '#tfg:burlap_fiber')
 
 }
