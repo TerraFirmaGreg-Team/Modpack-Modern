@@ -1,0 +1,24 @@
+{
+	"structures": [
+		{
+			"structure": "tfg:illagers/norse_village_living",
+			"weight": 75
+		},
+		{
+			"structure": "tfg:illagers/norse_village_ruined",
+			"weight": 25
+		}
+	],
+	"placement": {
+		"salt": 26256356324,
+		"spacing": 40,
+		"separation": 25,
+		"type": "tfc:climate",
+		"climate": {
+			"min_temperature": -12,
+			"max_temperature": 5,
+			"min_rainfall": 200,
+			"max_forest": "edge"
+		}
+	}
+}

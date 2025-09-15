@@ -1060,6 +1060,7 @@ const registerTFGBiomeTags = (event) => {
 	// #region TFG Structure Biomes
 
 	event.add('tfg:has_structure/plains_temperate_0', 'tfc:plains')
+	event.add('tfg:has_structure/plains_temperate_0', 'tfc:plateau')
 	event.add('tfg:has_structure/plains_temperate_0', 'tfc:highlands')
 
 	event.add('tfg:has_structure/aqueduct', 'tfc:plains')
@@ -1069,6 +1070,13 @@ const registerTFGBiomeTags = (event) => {
 
 	event.add('tfg:has_structure/ocean_moai_0', 'tfc:volcanic_oceanic_mountains')
 	event.add('tfg:has_structure/ocean_moai_0', 'tfc:volcanic_mountains')
+
+	event.add('tfg:has_structure/illages', 'tfc:plains')
+	event.add('tfg:has_structure/illages', 'tfc:hills')
+	event.add('tfg:has_structure/illages', 'tfc:rolling_hills')
+	event.add('tfg:has_structure/illages', 'tfc:badlands')
+	event.add('tfg:has_structure/illages', 'tfc:plateau')
+	event.add('tfg:has_structure/illages', 'tfc:old_mountains')
 
 	// #endregion
 
