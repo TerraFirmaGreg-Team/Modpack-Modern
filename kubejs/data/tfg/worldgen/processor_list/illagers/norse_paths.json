@@ -29,19 +29,6 @@
 						"Name": "tfc:rock/bricks/andesite"
 					}
 				},
-				{
-					"input_predicate": {
-						"block": "rnr:hoggin",
-						"predicate_type": "minecraft:block_match"
-					},
-					"location_predicate": {
-						"block": "minecraft:air",
-						"predicate_type": "minecraft:block_match"
-					},
-					"output_state": {
-						"Name": "tfc:mud_bricks/sandy_loam"
-					}
-				},
 
 
 
