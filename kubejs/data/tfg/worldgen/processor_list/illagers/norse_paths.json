@@ -13,7 +13,7 @@
 						"predicate_type": "minecraft:block_match"
 					},
 					"output_state": {
-						"Name": "tfc:mud_bricks/sandy_loam"
+						"Name": "tfc:rock/bricks/andesite"
 					}
 				},
 				{
@@ -26,7 +26,7 @@
 						"predicate_type": "minecraft:block_match"
 					},
 					"output_state": {
-						"Name": "tfc:mud_bricks/sandy_loam"
+						"Name": "tfc:rock/bricks/andesite"
 					}
 				},
 				{
