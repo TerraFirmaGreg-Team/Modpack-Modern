@@ -1,10 +1,6 @@
 ﻿// priority: 0
 "use strict";
 
-function registerTFCMaterialsRecipesTools(event) {
-
-}
-
 function registerTFCMaterialsRecipes(event) {
 
 	forEachMaterial(material => {
@@ -1221,12 +1217,6 @@ function registerTFCMaterialsRecipes(event) {
 					}
 				}
 				//#endregion
-
-                //#region crowbar
-                if (!material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
-
-                }
-                //#endregion
 			}
 		}
 
