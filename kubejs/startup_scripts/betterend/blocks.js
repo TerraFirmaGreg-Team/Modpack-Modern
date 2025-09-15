@@ -139,7 +139,7 @@ function registerBetterEndBlocks(event) {
 			leaves.soundType('azalea_leaves')
 			leaves.tagBlock('minecraft:mineable/hoe')
 			leaves.tagBlock('minecraft:replaceable')
-			// TODO: kjs-tfc 1.3.3 will have an option to disable tinting on leaves
+			leaves.noDynamicTinting()
 			leaves.models((modelType, generator) => {
 				if (modelType.layers != 8) {
 					generator.parent("tfc:block/groundcover/fallen_leaves_height" + modelType.height);
@@ -164,7 +164,7 @@ function registerBetterEndBlocks(event) {
 			leaves.soundType('azalea_leaves')
 			leaves.tagBlock('minecraft:mineable/hoe')
 			leaves.tagBlock('minecraft:replaceable')
-			// TODO: kjs-tfc 1.3.3 will have an option to disable tinting on leaves
+			leaves.noDynamicTinting()
 			leaves.models((modelType, generator) => {
 				if (modelType.layers != 8) {
 					generator.parent("tfc:block/groundcover/fallen_leaves_height" + modelType.height);

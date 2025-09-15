@@ -989,6 +989,14 @@ const registerTFGBlockTags = (event) => {
 	event.add('forge:mineable/wrench', 'tfg:machine_casing_aluminium_plated_steel')
 
 	event.add('tfg:decorative_plant_attachable', '#minecraft:logs')
+	event.add('tfg:decorative_plant_attachable', 'minecraft:mushroom_stem')
+	event.add('tfg:decorative_plant_attachable', 'species:alphacene_mushroom_block')
+	event.add('tfg:decorative_plant_attachable', 'ad_astra:aeronos_cap')
+	event.add('tfg:decorative_plant_attachable', 'ad_astra:strophar_cap')
+	event.add('tfg:decorative_plant_attachable', 'minecraft:nether_wart_block')
+	event.add('tfg:decorative_plant_attachable', 'minecraft:warped_wart_block')
+	event.add('tfg:decorative_plant_attachable', 'betterend:cave_bush')
+	event.add('tfg:decorative_plant_attachable', 'betterend:lucernia_leaves')
 }
 //#endregion
 
@@ -1046,6 +1054,7 @@ const registerTFGBiomeTags = (event) => {
 	// #region TFG Structure Biomes
 
 	event.add('tfg:has_structure/plains_temperate_0', 'tfc:plains')
+	event.add('tfg:has_structure/plains_temperate_0', 'tfc:plateau')
 	event.add('tfg:has_structure/plains_temperate_0', 'tfc:highlands')
 
 	event.add('tfg:has_structure/aqueduct', 'tfc:plains')
@@ -1055,6 +1064,13 @@ const registerTFGBiomeTags = (event) => {
 
 	event.add('tfg:has_structure/ocean_moai_0', 'tfc:volcanic_oceanic_mountains')
 	event.add('tfg:has_structure/ocean_moai_0', 'tfc:volcanic_mountains')
+
+	event.add('tfg:has_structure/illages', 'tfc:plains')
+	event.add('tfg:has_structure/illages', 'tfc:hills')
+	event.add('tfg:has_structure/illages', 'tfc:rolling_hills')
+	event.add('tfg:has_structure/illages', 'tfc:badlands')
+	event.add('tfg:has_structure/illages', 'tfc:plateau')
+	event.add('tfg:has_structure/illages', 'tfc:old_mountains')
 
 	// #endregion
 

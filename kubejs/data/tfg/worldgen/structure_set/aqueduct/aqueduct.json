@@ -1,14 +1,18 @@
 {
-    "structures": [
-      {
-        "structure": "tfg:aqueduct/aqueduct",
-        "weight": 1
-      }
-    ],
-    "placement": {
-      "salt": 264226226,
-      "spacing": 128,
-      "separation": 120,
-      "type": "minecraft:random_spread"
-    }
-  }
+	"structures": [
+		{
+			"structure": "tfg:aqueduct/aqueduct",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"salt": 264226226,
+		"spacing": 128,
+		"separation": 120,
+		"type": "tfc:climate",
+		"climate": {
+			"min_temperature": -5,
+			"max_rainfall": 350
+		}
+	}
+}
