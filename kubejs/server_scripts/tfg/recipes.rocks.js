@@ -547,8 +547,6 @@ function registerTFGRockRecipes(event) {
 		  dust: null,                                           loose: null,                                             stonecutting: true }
 	])
 
-	// #region Space
-
 	CUTTER.forEach(x => {
 		if (x.stair != null) {
 			event.recipes.tfc.chisel(x.stair, x.raw, 'stair')
@@ -759,7 +757,7 @@ function registerTFGRockRecipes(event) {
 	]
 	
 	ROCK_DUPING.forEach(x => {
-		if (x.dust != null) {
+		if (x.dim != null) {
 			event.recipes.gtceu.rock_breaker(x.block)
 				.notConsumable(x.block)
 				.itemOutputs(x.block)
