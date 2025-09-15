@@ -1151,3 +1151,15 @@ global.calcAmountOfMetalProcessed = function (defaultAmount, percents) {
     const value = defaultAmount * (percentPerItem / 100);
     return value % 2 === 0 ? value : Math.round(value) - 1;
 };
+
+global.TFC_EQUIPMENT_METALS = /** @type {const} */ ([
+    "copper",
+    "bismuth_bronze",
+    "bronze",
+    "black_bronze",
+    "wrought_iron",
+    "steel",
+    "black_steel",
+    "red_steel",
+    "blue_steel"
+]);
