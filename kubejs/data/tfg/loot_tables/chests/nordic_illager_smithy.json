@@ -46,7 +46,23 @@
 							"count": {
 								"type": "minecraft:uniform",
 								"max": 15,
-								"min": 5
+								"min": 9
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:mortar",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 15,
+								"min": 9
 							},
 							"function": "minecraft:set_count"
 						}
@@ -135,7 +151,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:copper_ingot",
-					"weight": 50,
+					"weight": 80,
 					"functions": [
 						{
 							"add": false,

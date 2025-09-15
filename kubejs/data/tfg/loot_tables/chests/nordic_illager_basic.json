@@ -22,6 +22,22 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "tfc:wood/sapling/hickory",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 6,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
 					"name": "tfc:wood/lumber/willow",
 					"weight": 100,
 					"functions": [
@@ -38,6 +54,22 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "tfc:wood/sapling/willow",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 6,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
 					"name": "afc:wood/lumber/cypress",
 					"weight": 100,
 					"functions": [
@@ -47,6 +79,22 @@
 								"type": "minecraft:uniform",
 								"max": 8,
 								"min": 4
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "afc:wood/sapling/cypress",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 6,
+								"min": 3
 							},
 							"function": "minecraft:set_count"
 						}
@@ -239,8 +287,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
+								"max": 6,
+								"min": 3
 							},
 							"function": "minecraft:set_count"
 						}
@@ -255,8 +303,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
+								"max": 6,
+								"min": 3
 							},
 							"function": "minecraft:set_count"
 						}
@@ -271,8 +319,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
+								"max": 6,
+								"min": 3
 							},
 							"function": "minecraft:set_count"
 						}
@@ -287,8 +335,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
+								"max": 6,
+								"min": 3
 							},
 							"function": "minecraft:set_count"
 						}
@@ -351,8 +399,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
+								"max": 2,
+								"min": 1
 							},
 							"function": "minecraft:set_count"
 						}
@@ -367,8 +415,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
+								"max": 2,
+								"min": 1
 							},
 							"function": "minecraft:set_count"
 						}
@@ -383,8 +431,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
+								"max": 2,
+								"min": 1
 							},
 							"function": "minecraft:set_count"
 						}
@@ -520,13 +568,29 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "tfc:glue",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 6,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
 					"name": "chalk:gray_chalk",
-					"weight": 100
+					"weight": 70
 				},
 				{
 					"type": "minecraft:item",
 					"name": "chalk:light_gray_chalk",
-					"weight": 100
+					"weight": 70
 				}
 			],
 			"rolls": {
