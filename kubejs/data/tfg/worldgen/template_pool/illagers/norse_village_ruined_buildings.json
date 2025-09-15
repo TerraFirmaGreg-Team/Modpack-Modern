@@ -1,9 +1,9 @@
 {
-	"name": "tfg:illagers/norse_village_living_buildings",
+	"name": "tfg:illagers/norse_village_ruined_buildings",
 	"fallback": "minecraft:empty",
 	"elements": [
 		{
-			"weight": 30,
+			"weight": 40,
 			"element": {
 				"location": "tfg:norse/ruins/norse_burial_ruin",
 				"processors": "minecraft:empty",
@@ -12,7 +12,7 @@
 			}
 		},
 		{
-			"weight": 50,
+			"weight": 80,
 			"element": {
 				"location": "tfg:norse/ruins/norse_farmhousebig_ruin",
 				"processors": "tfg:illagers/norse_structures",
@@ -39,7 +39,7 @@
 			}
 		},
 		{
-			"weight": 100,
+			"weight": 50,
 			"element": {
 				"location": "tfg:norse/ruins/norse_mosshouse_ruin",
 				"processors": "tfg:illagers/norse_structures",
@@ -48,7 +48,7 @@
 			}
 		},
 		{
-			"weight": 100,
+			"weight": 50,
 			"element": {
 				"location": "tfg:norse/burned/norse_mosshouse_burn",
 				"processors": "tfg:illagers/norse_structures",
