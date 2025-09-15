@@ -54,6 +54,8 @@ function registerTFGSpaceBlocks(event) {
 		red_granite:    { sound: 'stone',     type: "igneous_intrusive", mapColor: 'terracotta_red'        }
 	}
 
+	const AA_REGULAR_STONES = ['moon', 'mars', 'venus', 'mercury', 'glacio']
+
 	// #region Raw Stones
 	event.create('tfg:rock/moon_stone_wall', 'wall')
 		.soundType(STONE_CHARACS.moon.sound)
