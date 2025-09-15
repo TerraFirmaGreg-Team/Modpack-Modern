@@ -10,7 +10,7 @@
 		"absolute": 0
 	},
 	"project_start_to_heightmap": "WORLD_SURFACE_WG",
-	"use_expansion_hack": true,
+	"use_expansion_hack": false,
 	"adapt_noise": true,
 	"spawn_overrides": {
 		"creature": {
