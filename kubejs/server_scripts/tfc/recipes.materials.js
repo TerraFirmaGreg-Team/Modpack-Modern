@@ -731,6 +731,26 @@ function registerTFCMaterialsRecipes(event) {
 					.tier(tfcProperty.getTier())
 					.id(`gtceu:anvil/${material.getName()}_wrench_tip`)
 				//#endregion
+
+				//#region crowbar
+				let crowbarItem = ToolHelper.get(GTToolType.CROWBAR, material)
+				if (!crowbarItem.isEmpty()) {
+					event.recipes.tfc.heating(crowbarItem, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 216))
+						.useDurability(true)
+						.id(`gtceu:heating/metal/${material.getName()}_crowbar`)
+				}
+				//#endregion
+
+				//#region mortar
+				let mortarItem = ToolHelper.get(GTToolType.MORTAR, material)
+				if (!mortarItem.isEmpty()) {
+					event.recipes.tfc.heating(mortarItem, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+						.useDurability(true)
+						.id(`gtceu:heating/metal/${material.getName()}_mortar`)
+				}
+				//#endregion
 				
 				//#region wire cutters
 				event.recipes.tfc.heating(`gtceu:${material.getName()}_wire_cutter`, tfcProperty.getMeltTemp())
