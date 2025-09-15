@@ -591,6 +591,11 @@
 					"type": "minecraft:item",
 					"name": "chalk:light_gray_chalk",
 					"weight": 70
+				},
+				{
+					"type": "minecraft:item",
+					"name": "species:music_disc_lapidarian",
+					"weight": 8
 				}
 			],
 			"rolls": {

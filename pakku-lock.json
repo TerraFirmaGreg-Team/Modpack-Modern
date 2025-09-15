@@ -10833,7 +10833,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "primitive creatures V2.0.4 1.20.1.jar",
+                    "file_name": "primitive creatures V2.2 1.20.1 .jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10841,18 +10841,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6916/123/primitive creatures V2.0.4 1.20.1.jar",
-                    "id": "6916123",
+                    "url": "https://edge.forgecdn.net/files/7000/784/primitive creatures V2.2 1.20.1 .jar",
+                    "id": "7000784",
                     "parent_id": "1218288",
                     "hashes": {
-                        "sha1": "939d37037cc19b15aa8581afa513a724268858b1",
-                        "md5": "9baf3e79f190339e9df0f86bb87bf523"
+                        "sha1": "f76bde1ecf37c7111859ebb02cdef978ec370191",
+                        "md5": "9cc3392503d06d05fe2d5fe22a64e6cf"
                     },
                     "required_dependencies": [
                         "388172"
                     ],
-                    "size": 501549,
-                    "date_published": "2025-08-22T19:27:59.940Z"
+                    "size": 525102,
+                    "date_published": "2025-09-15T19:44:19.663Z"
                 }
             ]
         },
