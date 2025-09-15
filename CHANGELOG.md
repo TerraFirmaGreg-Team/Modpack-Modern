@@ -5,6 +5,7 @@
 - Reduced the durability of wooden tongs @Pyritie
 ### Bug fixes
 - Ice soup now requires a bowl to craft, so it doesn't generate free bowls @Pyritie
+- Fixed repairing an iron flask consuming the knife, also added some flask recipes with rubber instead of a bladder (#1826) @Pyritie
 ### Translation updates
 
 ## [0.10.14] - 14-09-2025
