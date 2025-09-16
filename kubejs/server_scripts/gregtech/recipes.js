@@ -1415,8 +1415,7 @@ const registerGTCEURecipes = (event) => {
 			'#gtceu:circuits/luv',
 			'gtceu:fusion_glass',
 			'2x ae2:quantum_ring',
-			'32x gtceu:fine_europium_wire',
-			'32x gtceu:fine_europium_wire',
+			'64x gtceu:fine_europium_wire',
 			'16x megacells:accumulation_processor')
 		.inputFluids(Fluid.of('gtceu:lubricant', 500))
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 4))
