@@ -111,4 +111,10 @@ function registerTFGCollapseRecipes(event) {
 	event.recipes.tfc.landslide('tfc:red_kaolin_clay', 'tfg:grass/rusticus_kaolin_mycelium')
 	event.recipes.tfc.landslide('tfc:red_kaolin_clay', 'tfg:grass/sangnum_kaolin_mycelium')
 	// #endregion
+
+	// #region Other
+	event.recipes.tfc.collapse('minecraft:cobblestone', 'minecraft:stone')
+	event.recipes.tfc.landslide('minecraft:cobblestone', 'minecraft:cobblestone')
+	event.recipes.tfc.landslide('minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone')
+	// #endregion
 }

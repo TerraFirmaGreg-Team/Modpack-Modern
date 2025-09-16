@@ -244,4 +244,40 @@ const registerTFGBlocks = (event) => {
 		.textureAll('tfg:item/deprecated')
 
 	// #endregion
+
+	// #region Reconstructed Stone
+	event.create(`tfg:rock/stone_wall`, 'wall')
+			.soundType('stone')
+			.textureAll('minecraft:block/stone')
+			.tagBoth('tfg:rock_wall')
+			.mapColor('stone')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+
+	let SHAPES = ['stairs', 'wall']
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/smooth_stone_${shape}`, shape)
+			.soundType('stone')
+			.textureAll('minecraft:block/smooth_stone')
+			.tagBoth(`tfg:rock_${shape}s`.replace(/ss/g, 's'))
+			.mapColor('stone')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	SHAPES = ['stairs', 'slab', 'wall']
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cracked_bricks_stone_${shape}`, shape)
+			.soundType('stone')
+			.textureAll('minecraft:block/smooth_stone')
+			.tagBoth(`tfg:brick_${shape}s`.replace(/ss/g, 's'))
+			.mapColor('stone')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	// #endregion Reconstructed Stone
 }

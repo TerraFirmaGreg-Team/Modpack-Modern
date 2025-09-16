@@ -372,7 +372,14 @@ global.BRICK_INDEX = global.BRICK_INDEX.concat([
 	  cracked_brick:  'gtceu:cracked_red_granite_bricks',             cracked_stairs: 'tfg:rock/cracked_bricks_red_granite_stairs',    cracked_slab: 'tfg:rock/cracked_bricks_red_granite_slab', cracked_wall: 'tfg:rock/cracked_bricks_red_granite_wall',
       mossy_brick:    'gtceu:mossy_red_granite_bricks',               mossy_stairs:   'tfg:rock/mossy_bricks_red_granite_stairs',      mossy_slab:   'tfg:rock/mossy_bricks_red_granite_slab',   mossy_wall:   'tfg:rock/mossy_bricks_red_granite_wall',
 	  smooth_brick:   'gtceu:polished_red_granite',                   smooth_stairs:  'tfg:rock/polished_red_granite_stairs',          smooth_slab:  'tfg:rock/polished_red_granite_slab',       smooth_wall:  'tfg:rock/polished_red_granite_wall',
-	  chiseled_brick: 'gtceu:chiseled_red_granite' }
+	  chiseled_brick: 'gtceu:chiseled_red_granite' },
+
+    { brick_type:     'stone',
+	  brick:          'minecraft:stone_bricks',                       brick_stairs:   'minecraft:stone_brick_stairs',                  brick_slab:   'minecraft:stone_brick_slab',               brick_wall:   'minecraft:stone_brick_wall',
+	  cracked_brick:  'minecraft:cracked_stone_bricks',               cracked_stairs: 'tfg:rock/cracked_bricks_stone_stairs',          cracked_slab: 'tfg:rock/cracked_bricks_stone_slab',       cracked_wall: 'tfg:rock/cracked_bricks_stone_wall',
+      mossy_brick:    'minecraft:mossy_stone_bricks',                 mossy_stairs:   'minecraft:mossy_stone_brick_stairs',            mossy_slab:   'minecraft:mossy_stone_brick_slab',         mossy_wall:   'minecraft:mossy_stone_brick_wall',
+	  smooth_brick:   'minecraft:smooth_stone',                       smooth_stairs:  'tfg:rock/smooth_stone_stairs',                  smooth_slab:  'minecraft:smooth_stone_slab',              smooth_wall:  'tfg:rock/smooth_stone_wall',
+	  chiseled_brick: 'minecraft:chiseled_stone_bricks' }
 ]);
 
 global.BRICK_INDEX = global.BRICK_INDEX.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
@@ -420,7 +427,11 @@ global.COBBLE_INDEX = global.COBBLE_INDEX.concat([
 
     { cobble_type:  'red_granite',
       block:        'gtceu:red_granite_cobblestone',        stairs:       'tfg:rock/cobble_red_granite_stairs',           slab:       'tfg:rock/cobble_red_granite_slab',         wall:       'tfg:rock/cobble_red_granite_wall',
-      mossy_block:  'gtceu:mossy_red_granite_cobblestone',  mossy_stairs: 'tfg:rock/mossy_cobble_red_granite_stairs',     mossy_slab: 'tfg:rock/mossy_cobble_red_granite_slab',   mossy_wall: 'tfg:rock/mossy_cobble_red_granite_wall'    }
+      mossy_block:  'gtceu:mossy_red_granite_cobblestone',  mossy_stairs: 'tfg:rock/mossy_cobble_red_granite_stairs',     mossy_slab: 'tfg:rock/mossy_cobble_red_granite_slab',   mossy_wall: 'tfg:rock/mossy_cobble_red_granite_wall'    },
+
+    { cobble_type:  'stone',
+      block:        'minecraft:cobblestone',                stairs:       'minecraft:cobblestone_stairs',                 slab:       'minecraft:cobblestone_slab',               wall:       'minecraft:cobblestone_wall',
+      mossy_block:  'minecraft:mossy_cobblestone',          mossy_stairs: 'minecraft:mossy_cobblestone_stairs',           mossy_slab: 'minecraft:mossy_cobblestone_slab',         mossy_wall: 'minecraft:mossy_cobblestone_wall'          }
 ]);
 
 global.COBBLE_INDEX = global.COBBLE_INDEX.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (

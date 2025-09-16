@@ -869,6 +869,30 @@ function registerTFGSpaceBlocks(event) {
 			.fullBlock(true)
 			.opaque(true)
 	})
+
+	event.create('tfg:rock/smooth_red_sandstone_wall', 'wall')
+		.soundType('stone')
+		.textureAll('minecraft:block/smooth_red_sandstone')
+		.mapColor('teracotta_red')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:rock/cut_red_sandstone_stairs', 'stairs')
+		.soundType('stone')
+		.textureAll('minecraft:block/cut_red_sandstone')
+		.mapColor('teracotta_red')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+		
+	event.create('tfg:rock/cut_red_sandstone_wall', 'wall')
+		.soundType('stone')
+		.textureAll('minecraft:block/cut_red_sandstone')
+		.mapColor('teracotta_red')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
 	
 	// #endregion Smooth (Polished/Cut) Stones
 	
