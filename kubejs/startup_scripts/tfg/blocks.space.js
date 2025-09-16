@@ -869,30 +869,6 @@ function registerTFGSpaceBlocks(event) {
 			.fullBlock(true)
 			.opaque(true)
 	})
-
-	event.create('tfg:rock/smooth_red_sandstone_wall', 'wall')
-		.soundType('stone')
-		.textureAll('minecraft:block/smooth_red_sandstone')
-		.mapColor('teracotta_red')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
-
-	event.create('tfg:rock/cut_red_sandstone_stairs', 'stairs')
-		.soundType('stone')
-		.textureAll('minecraft:block/cut_red_sandstone')
-		.mapColor('teracotta_red')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
-		
-	event.create('tfg:rock/cut_red_sandstone_wall', 'wall')
-		.soundType('stone')
-		.textureAll('minecraft:block/cut_red_sandstone')
-		.mapColor('teracotta_red')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
 	
 	// #endregion Smooth (Polished/Cut) Stones
 	
@@ -1316,6 +1292,52 @@ function registerTFGSpaceBlocks(event) {
 	})
 
 	// #endregion Bricks / Decorative
+
+	// #region Sandstone
+	event.create('tfg:rock/smooth_red_sandstone_wall', 'wall')
+		.soundType('stone')
+		.textureAll('minecraft:block/smooth_red_sandstone')
+		.mapColor('teracotta_red')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:rock/cut_red_sandstone_stairs', 'stairs')
+		.soundType('stone')
+		.textureAll('minecraft:block/cut_red_sandstone')
+		.mapColor('teracotta_red')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+		
+	event.create('tfg:rock/cut_red_sandstone_wall', 'wall')
+		.soundType('stone')
+		.textureAll('minecraft:block/cut_red_sandstone')
+		.mapColor('teracotta_red')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:rock/bricks_venus_sandstone_wall', 'wall')
+		.soundType('stone')
+		.textureAll('ad_astra:block/venus_sandstone_bricks')
+		.mapColor(STONE_CHARACS.venus.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cracked_bricks_venus_sandstone_${shape}`, shape)
+			.soundType(STONE_CHARACS.venus.sound)
+			.textureAll('ad_astra:block/cracked_venus_sandstone_bricks')
+			.tagBoth(`tfg:brick_${shape}`.replace(/ss/g, 's'))
+			.mapColor(STONE_CHARACS.venus.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	// #endregion Sandstone
 
 	// #region Plants
 

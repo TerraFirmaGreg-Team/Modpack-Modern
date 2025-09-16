@@ -374,11 +374,18 @@ global.BRICK_INDEX = global.BRICK_INDEX.concat([
 	  smooth_brick:   'gtceu:polished_red_granite',                   smooth_stairs:  'tfg:rock/polished_red_granite_stairs',          smooth_slab:  'tfg:rock/polished_red_granite_slab',       smooth_wall:  'tfg:rock/polished_red_granite_wall',
 	  chiseled_brick: 'gtceu:chiseled_red_granite' },
 
+    { brick_type:     'venus_sandstone',
+	  brick:          'ad_astra:venus_sandstone_bricks',               brick_stairs:   'ad_astra:venus_sandstone_brick_stairs',          brick_slab:   'ad_astra:venus_sandstone_brick_slab',           brick_wall:   'tfg:rock/bricks_venus_sandstone_wall',
+	  cracked_brick:  'ad_astra:cracked_venus_sandstone_bricks',       cracked_stairs: 'tfg:rock/cracked_bricks_venus_sandstone_stairs', cracked_slab: 'tfg:rock/cracked_bricks_venus_sandstone_slab',  cracked_wall: 'tfg:rock/cracked_bricks_stone_wall',
+      mossy_brick:    null,                                            mossy_stairs:   null,                                             mossy_slab:   null,                                            mossy_wall:   null,
+	  smooth_brick:   null,                                            smooth_stairs:  null,                                             smooth_slab:  null,                                            smooth_wall:  null,
+	  chiseled_brick: null },
+
     { brick_type:     'stone',
-	  brick:          'minecraft:stone_bricks',                       brick_stairs:   'minecraft:stone_brick_stairs',                  brick_slab:   'minecraft:stone_brick_slab',               brick_wall:   'minecraft:stone_brick_wall',
-	  cracked_brick:  'minecraft:cracked_stone_bricks',               cracked_stairs: 'tfg:rock/cracked_bricks_stone_stairs',          cracked_slab: 'tfg:rock/cracked_bricks_stone_slab',       cracked_wall: 'tfg:rock/cracked_bricks_stone_wall',
-      mossy_brick:    'minecraft:mossy_stone_bricks',                 mossy_stairs:   'minecraft:mossy_stone_brick_stairs',            mossy_slab:   'minecraft:mossy_stone_brick_slab',         mossy_wall:   'minecraft:mossy_stone_brick_wall',
-	  smooth_brick:   'minecraft:smooth_stone',                       smooth_stairs:  'tfg:rock/smooth_stone_stairs',                  smooth_slab:  'minecraft:smooth_stone_slab',              smooth_wall:  'tfg:rock/smooth_stone_wall',
+	  brick:          'minecraft:stone_bricks',                        brick_stairs:   'minecraft:stone_brick_stairs',                   brick_slab:   'minecraft:stone_brick_slab',                    brick_wall:   'minecraft:stone_brick_wall',
+	  cracked_brick:  'minecraft:cracked_stone_bricks',                cracked_stairs: 'tfg:rock/cracked_bricks_stone_stairs',           cracked_slab: 'tfg:rock/cracked_bricks_stone_slab',            cracked_wall: 'tfg:rock/cracked_bricks_stone_wall',
+      mossy_brick:    'minecraft:mossy_stone_bricks',                  mossy_stairs:   'minecraft:mossy_stone_brick_stairs',             mossy_slab:   'minecraft:mossy_stone_brick_slab',              mossy_wall:   'minecraft:mossy_stone_brick_wall',
+	  smooth_brick:   'minecraft:smooth_stone',                        smooth_stairs:  'tfg:rock/smooth_stone_stairs',                   smooth_slab:  'minecraft:smooth_stone_slab',                   smooth_wall:  'tfg:rock/smooth_stone_wall',
 	  chiseled_brick: 'minecraft:chiseled_stone_bricks' }
 ]);
 

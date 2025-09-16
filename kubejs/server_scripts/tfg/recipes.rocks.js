@@ -540,6 +540,13 @@ function registerTFGRockRecipes(event) {
 
 		{ raw:  'minecraft:cut_red_sandstone',                  stair: 'tfg:rock/cut_red_sandstone_stairs',              slab: 'minecraft:smooth_red_sandstone_slab',          wall: 'tfg:rock/cut_red_sandstone_wall',
 		  dust: null,                                           loose: null,                                             stonecutting: true },  // Smooth - Extra
+
+		// Venus Sandstone
+		{ raw:  'ad_astra:venus_sandstone_bricks',              stair: 'ad_astra:venus_sandstone_brick_stairs',          slab: 'ad_astra:venus_sandstone_brick_slab',          wall: 'tfg:rock/bricks_venus_sandstone_wall',
+		  dust: null,                                           loose: null,                                             stonecutting: true },  // Bricks
+
+		{ raw:  'ad_astra:cracked_venus_sandstone_bricks',      stair: 'tfg:rock/cracked_bricks_venus_sandstone_stairs', slab: 'tfg:rock/cracked_bricks_venus_sandstone_slab', wall: 'tfg:rock/cracked_bricks_venus_sandstone_wall',
+		  dust: null,                                           loose: null,                                             stonecutting: true },  // Bricks - Cracked
 		
 		// Other Space Blocks
 		{ raw:  'ae2:sky_stone_block',                          stair: 'ae2:sky_stone_stairs',                           slab: 'ae2:sky_stone_slab',                           wall: 'ae2:sky_stone_wall',
