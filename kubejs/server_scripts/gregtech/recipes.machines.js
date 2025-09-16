@@ -678,53 +678,6 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#endregion
 
-	// #region Assembly line stack size problems
-
-	event.remove({ id: 'gtceu:assembly_line/high_performance_computing_array' })
-	event.recipes.gtceu.assembly_line('high_performace_computing_array')
-		.itemInputs('gtceu:data_bank',
-			'4x #gtceu:circuits/zpm',
-			'8x gtceu:luv_field_generator',
-			'gtceu:data_orb',
-			'gtceu:computer_monitor_cover',
-			'32x #forge:double_wires/uranium_rhodium_dinaquadide',
-			'32x #forge:double_wires/uranium_rhodium_dinaquadide',
-			'16x gtceu:normal_optical_pipe')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 1152),
-			Fluid.of('gtceu:vanadium_gallium', 1152),
-			Fluid.of('gtceu:pcb_coolant', 4000))
-		.itemOutputs('gtceu:high_performance_computation_array')
-		.duration(60 * 20)
-		.EUt(100000)
-	["scannerResearch(java.util.function.UnaryOperator)"](b =>
-		b.researchStack(Item.of('gtceu:computer_monitor_cover')).EUt(GTValues.VA[GTValues.IV]).duration(120 * 20))
-
-	event.remove({ id: 'gtceu:assembly_line/ultimate_battery' })
-	event.recipes.gtceu.assembly_line('ultimate_battery')
-		.itemInputs('16x #forge:double_plates/darmstadtium',
-			'4x #gtceu:circuits/uhv',
-			'16x gtceu:energy_cluster',
-			'4x gtceu:uv_field_generator',
-			'64x gtceu:uhpic_wafer',
-			'64x gtceu:uhpic_wafer',
-			'64x gtceu:advanced_smd_diode',
-			'64x gtceu:advanced_smd_capacitor',
-			'64x gtceu:advanced_smd_resistor',
-			'64x gtceu:advanced_smd_transistor',
-			'64x gtceu:advanced_smd_inductor',
-			'32x gtceu:enriched_naquadah_trinium_europium_duranide_double_wire',
-			'64x #forge:bolts/neutronium')
-		.inputFluids(
-			Fluid.of('gtceu:soldering_alloy', 5760),
-			Fluid.of('gtceu:polybenzimidazole', 2304),
-			Fluid.of('gtceu:naquadria', 2592))
-		.itemOutputs('gtceu:max_battery')
-		.duration(100 * 20)
-		.EUt(300000)
-		.stationResearch(b => b.researchStack(Item.of('gtceu:energy_cluster')).EUt(GTValues.VA[GTValues.UHV]).CWUt(144))
-
-	// #endregion
-
 	// Drums
 	const DRUMS_AND_CRATES = [
 		'bismuth_bronze',
