@@ -863,6 +863,18 @@ function registerTFGFoodRecipes(event) {
 		}).notConsumable('#tfc:barrels')
 	})
 
+	event.recipes.tfc.barrel_sealed('72000')
+		.inputs(TFC.ingredient.notRotten('tfc:food/oat_flour'), TFC.fluidStackIngredient('#tfc:water', 500))
+		.outputFluid(Fluid.of('tfg:kvass', 500))
+		.id('tfg:barrel/kvass_making')
+
+	// why it takes so long even tho its kvass? because
+
+	event.recipes.tfc.barrel_sealed('576000')
+		.inputs('firmalife:ice_shavings', TFC.fluidStackIngredient('tfg:kvass', 150))
+		.outputFluid(Fluid.of('tfg:cold_kvass', 150))
+		.id('tfg:barrel/kvass_cooling')
+
 	// Cakes
 
 	processorRecipe("cake_base", 300, 8, {

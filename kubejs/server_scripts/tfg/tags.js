@@ -1048,6 +1048,17 @@ const registerTFGFluidTags = (event) => {
 	event.add('firmalife:usable_in_vat', 'tfg:semiheavy_ammoniacal_water')
 	event.add('minecraft:water', 'tfg:semiheavy_ammoniacal_water')
 
+	event.add('tfc:alcohols', 'tfg:cold_kvass')
+	event.add('ad_astra:evaporates_in_space', 'tfg:cold_kvass')
+	event.add('tfc:drinkables', 'tfg:cold_kvass')
+	event.add('tfc:any_drinkables', 'tfg:cold_kvass')
+	event.add('tfc:ingredients', 'tfg:cold_kvass')
+	event.add('tfc:usable_in_pot', 'tfg:cold_kvass')
+	event.add('tfc:usable_in_wooden_bucket', 'tfg:cold_kvass')
+	event.add('tfc:usable_in_barrel', 'tfg:cold_kvass')
+	event.add('tfc:usable_in_red_steel_bucket', 'tfg:cold_kvass')
+	event.add('tfc:usable_in_blue_steel_bucket', 'tfg:cold_kvass')
+
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
 	})

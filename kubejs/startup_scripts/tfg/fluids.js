@@ -59,4 +59,15 @@ const registerTFGFluids = (event) => {
 		.renderType('translucent')
 	//#endregion
 
+	//#region drinkables
+	event.create('tfg:cold_kvass')
+        .thinTexture(0x69340a)
+		.bucketColor(0x69340a)
+		.temperature(273)
+	
+	event.create('tfg:kvass')
+        .thinTexture(0x69340a)
+		.bucketColor(0x69340a)
+		.temperature(273)
+	//#endregion
 }

@@ -148,6 +148,11 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfg:wraptor_sugar'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.wraptor_sugar'))
 	})
+
+	// Fluid Tooltip
+	event.addAdvanced(['tfg:cold_kvass_bucket'], (item, advanced, text) => {
+		text.add(1, text.of('§9Strength (02:40)'))
+	})
 	
 	//#region temperature changing foods
 	event.addAdvanced(['#tfg:cooling_foods'], (item, advanced, text) => {
