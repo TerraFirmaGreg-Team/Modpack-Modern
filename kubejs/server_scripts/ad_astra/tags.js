@@ -274,6 +274,7 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('minecraft:animals_spawnable_on', '#tfg:mars_soil')
 	event.add('minecraft:animals_spawnable_on', '#tfg:mars_plants')
 	event.add('minecraft:animals_spawnable_on', '#forge:gravel')
+	event.add('minecraft:valid_spawn', '#minecraft:animals_spawnable_on')
 	
 	event.add('tfc:can_carve', '#ad_astra:moon_stone_replaceables')
 	event.add('tfc:can_carve', '#ad_astra:mars_stone_replaceables')
@@ -372,6 +373,7 @@ const registerAdAstraBiomeTags = (event) => {
 
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_dunes')
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_deep_desert')
+	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_mountains')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/amber_plains')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/amber_hills')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/rusticus_plains')
@@ -382,7 +384,6 @@ const registerAdAstraBiomeTags = (event) => {
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/amber_edge')
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/rusticus_edge')
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/sangnum_edge')
-	event.add('tfg:has_light_sand_particles', 'tfg:mars/martian_mountains')
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/martian_river')
 }
 
