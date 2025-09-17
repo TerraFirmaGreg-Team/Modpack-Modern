@@ -16,7 +16,6 @@ function registerFacadeWhitelistTags(event) {
 		'#tfc:colored_raw_alabaster',
 		'#tfc:colored_bricks_alabaster',
 		'#tfc:colored_polished_alabaster',
-		'#tfc:mud_bricks',
 		'#forge:sandstone',
 		'#forge:storage_blocks',
 		'#forge:glass',
@@ -47,6 +46,10 @@ function registerFacadeWhitelistTags(event) {
 		'tfc:alabaster/raw',
 		'tfc:alabaster/bricks',
 		'tfc:alabaster/polished',
+		'tfc:mud_bricks/silt',
+		'tfc:mud_bricks/loam',
+		'tfc:mud_bricks/silty_loam',
+		'tfc:mud_bricks/sandy_loam',
 		
 		//firmalife blocks
 		'firmalife:metal/blocks/stainless_steel',
