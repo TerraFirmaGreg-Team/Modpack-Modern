@@ -158,16 +158,6 @@ function registerFacadeWhitelistTags(event) {
 		'blue_bricks',
 		'scarlet_bricks'
 	]
-
-	const createdeco_catwalks_fm =
-	[
-		'andesite',
-		'brass',
-		'iron',
-		'copper',
-		'industrial_iron',
-		'zinc'
-	]
 	
 	const gtceu_stonelike_fm = 
 	[
@@ -277,7 +267,7 @@ function registerFacadeWhitelistTags(event) {
 	});
 
 	//createdeco catwalks
-	createdeco_catwalks_fm.forEach(facade_material => {
+	global.CREATE_DECO_CATWALK_TYPES.forEach(facade_material => {
 		event.add('tfg:whitelisted/facades', `createdeco:${  facade_material  }_catwalk`)
 	})
 	
