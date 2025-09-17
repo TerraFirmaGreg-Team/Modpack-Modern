@@ -1093,7 +1093,7 @@ global.TFC_CURDS_AND_CHEESES = /** @type {const} */ ([
     },
 ]);
 
-global.TFC_MUD_BRICKS = /** @type {const} */ ([
+global.TFC_DRY_MUD_BRICKS = /** @type {const} */ ([
     "tfc:mud_brick/loam",
     "tfc:mud_brick/sandy_loam",
     "tfc:mud_brick/silt",
