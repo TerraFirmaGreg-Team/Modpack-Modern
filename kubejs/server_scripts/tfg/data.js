@@ -83,6 +83,7 @@ function registerTFGItemSize(event) {
     event.itemSize("create:flywheel", "large", "medium", "flywheel");
     event.itemSize("create:large_water_wheel", "very_large", "heavy", "large_water_wheel");
     event.itemSize("create:water_wheel", "large", "medium", "water_wheel");
+    event.itemSize(Ingredient.of("#forge:double_plates"), "large", "medium", "double_plates");
     event.itemSize(Ingredient.of("#forge:dense_plates"), "large", "medium", "dense_plates");
     event.itemSize(Ingredient.of("#forge:dusts"), "small", "very_light", "dusts");
     event.itemSize(Ingredient.of("#forge:pure_dusts"), "small", "very_light", "pure_dusts");
@@ -97,7 +98,7 @@ function registerTFGItemSize(event) {
     event.itemSize(Ingredient.of("#forge:rods/long"), "large", "medium", "long_rods");
     event.itemSize(Ingredient.of("#tfg:metal_bars"), "small", "very_light", "metal_bars");
     event.itemSize(
-        Ingredient.of("#tfc:mud_bricks").or("#tfc:wet_mud_bricks"),
+        Ingredient.of("#tfc:dry_mud_bricks").or("#tfc:wet_mud_bricks"),
         "very_small",
         "very_light",
         "mud_bricks"

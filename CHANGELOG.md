@@ -2,10 +2,19 @@
 
 ## [Unreleased]
 ### Changes
+- New overworld structures with new enemies and loot! You can find them in cold and wet climates (#1836) @KrestenFM @Pyritie
+- Changed and unified stack sizes for many items (check [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/pull/1778) for a full list) (#1778) @KonSola5
 - Reduced the durability of wooden tongs @Pyritie
+- Jute net is renamed to Burlap net and can now also be made from Flax (#1833) @Nashy1232
+- Orbits now function as cleanrooms @BlueBoat29
+- Added CreateDeco catwalks to AE2 and gt Facades @Programmer3481
 ### Bug fixes
 - Ice soup now requires a bowl to craft, so it doesn't generate free bowls @Pyritie
 - Fixed repairing an iron flask consuming the knife, also added some flask recipes with rubber instead of a bladder (#1826) @Pyritie
+- Fixed not being able to use the small pipe extruder mold in the curving press (#1823) @Nashy1232
+- Fixed some EMI rendering issues on 4x GUI scales and low screen resolutions (#1830) @Newlumberjack-sys
+- Fixed not being able to melt mortars and crowbars (#1837) @Newlumberjack-sys
+- Fixed problems with moss carpet into biomass (#1842) @Nashy1232
 ### Translation updates
 
 ## [0.10.14] - 14-09-2025
