@@ -14,6 +14,7 @@ const registerSNSRecipes = (event) => {
 	event.remove({ id: 'sns:crafting/burlap_sack'})
 	event.remove({ id: 'sns:crafting/seed_pouch'})
 	event.remove({ id: 'sns:crafting/straw_basket'})
+	event.remove({ id: 'sns:crafting/frame_pack'})
 	
 	event.remove({ output: 'sns:pack_frame'})
 	
@@ -57,18 +58,18 @@ const registerSNSRecipes = (event) => {
 		event.shaped('sns:leather_sack', [
 				'AAA',
 				'BCB',
-				'DBE'
+				' BE'
 			], {
-				A: 'tfc:jute_fiber',
+				A: '#tfg:burlap_fiber',
 				B: 'sns:leather_strip',
 				C: 'sns:unfinished_leather_sack',
-				D: 'minecraft:name_tag',
-				E: 'tfc:bone_needle'
+				//D: 'minecraft:name_tag',
+				E: '#tfc:sewing_needles'
 			}
 		)
 	).id('sns:crafting/leather_sack')
 	
-	event.recipes.tfc.damage_inputs_shaped_crafting(
+	/*event.recipes.tfc.damage_inputs_shaped_crafting(
 		event.shaped('sns:leather_sack', [
 				' A ',
 				'BCB',
@@ -78,10 +79,10 @@ const registerSNSRecipes = (event) => {
 				B: 'sns:leather_strip',
 				C: 'sns:unfinished_leather_sack',
 				D: 'minecraft:name_tag',
-				E: 'tfc:bone_needle'
+				E: '#tfc:sewing_needles'
 			}
 		)
-	).id('sns:crafting/leather_sack_coil')
+	).id('sns:crafting/leather_sack_coil')*/
 	
 	event.recipes.tfc.damage_inputs_shaped_crafting(
 		event.shaped('sns:ore_sack', [
@@ -93,7 +94,7 @@ const registerSNSRecipes = (event) => {
 				B: '#forge:leather',
 				C: 'sns:unfinished_leather_sack',
 				D: 'minecraft:name_tag',
-				E: 'tfc:bone_needle'
+				E: '#tfc:sewing_needles'
 			}
 		)
 	).id('sns:crafting/ore_sack')
@@ -108,6 +109,22 @@ const registerSNSRecipes = (event) => {
 		.ingredient('tfc:straw')
 		.outsideSlotRequired(false)
 		.id('sns:straw_knapping/straw_basket')
+	
+	
+	event.recipes.tfc.damage_inputs_shaped_crafting(
+		event.shaped('sns:frame_pack', [
+				'ABA',
+				'ACA',
+				'DBE'
+			], {
+				A: 'sns:bound_leather_strip',
+				B: 'sns:reinforced_fabric',
+				C: 'sns:pack_frame',
+				D: 'minecraft:name_tag',
+				E: '#tfc:sewing_needles'
+			}
+		)
+	).id('sns:crafting/frame_pack')
 	
 	//#region helper items	
 		
@@ -159,29 +176,45 @@ const registerSNSRecipes = (event) => {
 		type: 'vintageimprovements:curving',
 		ingredients: [{ tag: 'forge:plates/steel' }],
 		itemAsHead: 'gtceu:small_pipe_extruder_mold',
-		results: [{ item: '2x sns:buckle' }],
+		results: [{ item: 'sns:buckle', count: 2 }],
 		processingTime: 80 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-	}).id('sns:vi/curving/buckle')
+	}).id('sns:vi/curving/buckle2')
 
 	event.shaped('sns:pack_frame', [
 			'AAA',
 			'A A',
 			'AAA'
 		], {
-			A: '#forge:rods/wrought_iron'
+			A: '#forge:rods/any_bronze'
 			
 		}).id('sns:shaped/pack_frame')
 
-	event.shaped('2x sns:reinforced_fiber', [
+	event.shaped('sns:pack_frame', [
+			' A ',
+			'A A',
+			' A '
+		], {
+			A: '#forge:rods/wrought_iron'
+			
+		}).id('sns:shaped/pack_frame_iron')
+
+	event.recipes.gtceu.assembler('sns:pack_frame')
+		.itemInputs('4x #forge:rods/wrought_iron')
+		.itemOutputs('sns:pack_frame')
+		.circuit(4)
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.shaped('3x sns:reinforced_fiber', [
 			'AAA',
 			'BBB',
 			'AAA'
 		], {
-			A: 'tfc:jute_fiber',
+			A: '#tfg:burlap_fiber',
 			B: '#forge:string'
 			
 		}).id('sns:shaped/reinforced_fiber')
-	
+	/*
 	event.shaped('2x sns:reinforced_fiber', [
 			' A ',
 			'BBB',
@@ -191,10 +224,10 @@ const registerSNSRecipes = (event) => {
 			B: '#forge:string',
 			C: '#forge:tools/knives'
 			
-		}).id('sns:shaped/reinforced_fiber_rope')
+		}).id('sns:shaped/reinforced_fiber_rope')*/
 		
 	event.recipes.gtceu.assembler('sns:reinforced_fiber')
-		.itemInputs('2x tfc:jute_fiber', '#forge:string')
+		.itemInputs('2x #tfg:burlap_fiber', '#forge:string')
 		.itemOutputs('sns:reinforced_fiber')
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -206,7 +239,7 @@ const registerSNSRecipes = (event) => {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])	
 			
-	generateCutterRecipe(event, '#forge:leather', '4x sns:leather_strip', 80, GTValues.VA[GTValues.LV], 'sns:leather_strip_cut')
+	generateCutterRecipe(event, '#forge:leather', '4x sns:leather_strip', 80, GTValues.VA[GTValues.LV], 'sns_leather_strip_cut')
 	
 	event.recipes.gtceu.assembler('sns:bound_leather_strip')
 		.itemInputs('2x sns:leather_strip', 'sns:reinforced_fiber')
@@ -215,7 +248,6 @@ const registerSNSRecipes = (event) => {
 		.duration(120)
 		.EUt(GTValues.VA[GTValues.LV])
 		
-	
 	event.recipes.gtceu.bender('sns:horseshoe_steel_electric_only')
 		.itemInputs('#forge:rods/steel')
 		.itemOutputs('sns:metal/horseshoe/steel')

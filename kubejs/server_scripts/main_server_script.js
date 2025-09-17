@@ -22,6 +22,7 @@ ServerEvents.tags('item', event => {
 	registerCreateConnectedItemTags(event)
 	registerCreateDecoItemTags(event)
 	registerCreateFactoryLogisticsItemTags(event)
+	registerDomumOrnamentumItemTags(event)
 	registerDiggerHelmetItemTags(event)
 	registerEndermanOverhaulItemTags(event)
 	registerEveryCompatItemTags(event)
@@ -181,6 +182,7 @@ LootJS.modifiers((event) => {
 	registerSpeciesLoots(event)
 	registerTFCLoots(event)
 	registerTFGLoots(event)
+	registerWansAncientBeastsLoots(event)
 });
 
 /**
@@ -241,6 +243,7 @@ ServerEvents.recipes(event => {
 	registerHandGliderRecipes(event)
 	registerHotOrNotRecipes(event)
 	registerImmersiveAircraftRecipes(event)
+	registerMacawsForTFCRecipes(event)
 	registerMeasurementsRecipes(event)
 	registerMegaCellsRecipes(event)
 	registerMERequesterRecipes(event)

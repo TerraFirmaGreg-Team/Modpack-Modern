@@ -17,12 +17,11 @@ const registerSpeciesItemTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
 
+	event.add('c:hidden_from_recipe_viewers', 'species:alphacene_mushroom')
+
 	event.add('forge:eggs', 'species:birt_egg')
 	event.add('firmalife:foods/raw_eggs', 'species:birt_egg')
 	
-	event.add('species:goober_breed_items', 'betterend:flammalix')
-	event.add('species:goober_breed_items', 'betterend:small_amaranita_mushroom')
-	event.add('species:goober_breed_items', 'betterend:bolux_mushroom_product')
-	event.add('species:goober_breed_items', 'betterend:chorus_mushroom_product')
+	event.add('species:goober_breed_items', '#forge:mushrooms')
 	event.add('species:cruncher_eats', '#tfc:foods/meat')
 }

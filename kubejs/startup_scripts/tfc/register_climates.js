@@ -12,6 +12,12 @@ const TWO_PI = JavaMath.PI * 2;
 
 const OXYGENATED_TEMP = 15;
 
+global.MARS_PLANET_SIZE = 10000;
+global.MARS_MIN_AVG_TEMP = -110;
+global.MARS_MAX_AVG_TEMP = -15;
+global.MARS_MIN_AVG_RAIN = -25;
+global.MARS_MAX_AVG_RAIN = 13;
+
 function clamp(val, min, max) {
 	return Math.min(Math.max(val, min), max);
 }
@@ -147,22 +153,22 @@ TFCEvents.registerClimateModel(event => {
 			}
 
 			// average of -110 at night, -15 at day
-			let avgTemp = calcAverage(pos.z, 10000, -110, -15);
+			let avgTemp = calcAverage(pos.z, global.MARS_PLANET_SIZE, -110, -15);
 			// +- 45 based on latitude, down to -10 at bedrock
-			return calcCurrentTemp(avgTemp, 65, pos.y, calendarTicks, 45, -10, 0.5);
+			return calcCurrentTemp(avgTemp, 88, pos.y, calendarTicks, 45, -10, 0.5);
 		})
 
 		builder.setAverageTemperatureCalculation((level, pos) => {
 
 			// Earth is 10k to each pole, and mars is about half as big as earth, so 5k to each pole sounds good
-			return calcAverage(pos.z, 10000, -110, -15);
+			return calcAverage(pos.z, global.MARS_PLANET_SIZE, -110, -15);
 		})
 
 		builder.setAverageRainfallCalculation((level, pos) => {
 		
 			// irl mars' poles have a snowfall of 0.13mm but that's barely noticeable here.
 			// Use a negative rainfall to stop it snowing closer to the equator. TFC clamps negatives to zero so it's fine
-			return calcAverage(pos.z, 10000, 13, -25)
+			return calcAverage(pos.x, global.MARS_PLANET_SIZE, -25, 13)
 		})
 
 		builder.setAirFog((level, pos, calendarTicks) => 0)

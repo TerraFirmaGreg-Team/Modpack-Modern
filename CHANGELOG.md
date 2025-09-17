@@ -1,17 +1,108 @@
 # Changelog
 
 ## [Unreleased]
+### Changes
+- New overworld structures with new enemies and loot! You can find them in cold and wet climates (#1836) @KrestenFM @Pyritie
+- Changed and unified stack sizes for many items (check [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/pull/1778) for a full list) (#1778) @KonSola5
+- Reduced the durability of wooden tongs @Pyritie
+- Jute net is renamed to Burlap net and can now also be made from Flax (#1833) @Nashy1232
+### Bug fixes
+- Ice soup now requires a bowl to craft, so it doesn't generate free bowls @Pyritie
+- Fixed repairing an iron flask consuming the knife, also added some flask recipes with rubber instead of a bladder (#1826) @Pyritie
+- Fixed not being able to use the small pipe extruder mold in the curving press (#1823) @Nashy1232
+- Fixed some EMI rendering issues on 4x GUI scales and low screen resolutions (#1830) @Newlumberjack-sys
+- Fixed not being able to melt mortars and crowbars (#1837) @Newlumberjack-sys
+### Translation updates
+
+## [0.10.14] - 14-09-2025
+### Changes
+- Wooden crates can now also be crafted with bronze screws @Pyritie
+- The tape measure can now be put in your toolbelt (#1813) @Nashy1232
+- Added machine processing for Flax (#1803) @BlueBoat29
+- Added cobblestones to GT facade crafting @Nashy1232
+- Every fluid that can go in wooden pipes can now also go in a wooden bucket and barrel (#1796) @Pyritie
+### Bug fixes
+- Fixed not downloading the FTB library of mods on server builds (#1811, #1801, #1812, #1411) @Xikaro
+- Fixed ingot piles occasionally crashing on servers @Pyritie
+- Fixed being able to get infinite lava by bucketing lava aqueducts @Pyritie
+- More fixes for the Solar Boilers and TFC's rain system @FiNiTe-Weeb
+- Fixed river water not washing ores (#1785)
+- Added missing textures for placed Potin ingots/plates @Pyritie
+- Fixed recipe conflict with music labels and paper blocks @Pyritie
+- Added missing helve hammer recipes for lead, potin, cobalt, cobalt brass, and invar @Pyritie
+- Fixed black bronze requiring an LS millstone to macerate (#1786) @Pyritie
+- Fixed not being able to melt down certain tools (#1819) @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry
+- Brazilian Portuguese @gifpxto
+
+## [0.10.13] - 11-09-2025
+### Changes
+- Primitive Illagers are now on the hunt... @Pyritie
+- Added Vat recipe for boiling salt water into salt (#1784) @TreyR9
+- Power Substation is now available at EV (#1790) @TomPlop
+- Increased the tier of EBF coil required for Desh (#1790) @TomPlop
+- Quantum Eye now requires a Cryogenized Fluix Pearl (#1790) @TomPlop
+- Moon ore vein tweaks @Pyritie
+### Bug fixes
+- Fixed issue with the modpack not loading on MacOS or certain Linux distros @Xikaro
+- Fixed Solar Boilers not understanding TFC's variable rain system (#1093) @FiNiTe-Weeb
+- Added missing recipes for TFC Macaw's barbed fences @Pyritie
+- Fixed Field Generator recipes to follow the new path of pearl progression (#1790) @TomPlop
+- Fixed some backpack upgrades to be consistent with their required circuits (#1790) @TomPlop
+- Fixed Keratophyre not having a stone dust @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry
+
+## [0.10.12] - 09-09-2025
+### Changes
+- Added cobblestone, gravel, polished stone, bricks, and chiseled bricks to all stone types that didn't have those stone types, along with some other unification (#1764) @vidal-adrien
+- Nether brick is now crafted from Keratophyre (#1764) @vidal-adrien
+### Bug fixes
+- Fixed two instances of illegal lang exceptions causing errors on servers. @Redeix
+- Fixed the field guide having no pages @Pyritie
+
+## [0.10.11] - 08-09-2025
 ### Mods
 - Reverted the change from Embeddium to Xenon, because it was causing more issues than it solved
 - Added Sacks 'n' Such which has several new early game bags -- such as one that automatically picks up ore and can hold 512 per slot -- as well as some other things such as hiking boots and horseshoes
 ### Changes
 - Fuelling blaze burners with liquids is now done directly instead of through straws (break and replace your blaze burners to update) @Ghoulcel
 - Blaze burner liquid fuelling has been fully made consistent with GregTech power values (#1694) @Ghoulcel
+- Create Factory Logistics Jars now hold 8000mB instead of 1000mB (#1707) @Ghoulcel
 - Sewing Tables now use a knife instead of shears @BlueBoat29
 - Create Logistics Jars now hold 8000 mB each instead of just 1000 mB (#1707) @Ghoulcel
 - Added a way to keep your space suit with you on death, so you can more safely set your spawn on other planets (#1710) @BlueBoat29
+- Added Flax as a cold-weather alternative to jute and a plant-based option for light colored cloth @BlueBoat29
+- Sheet metal blocks are now made in a stonecutter and their yield increased (#1746) @SpicyNoodle5
+- Added a small amount of silver to the Bismith (Surface) vein @Pyritie
+- Added steel machine casings as an alternative to steel frames in the electric greenhouse @Redeix
+- Added the ability for foods to affect the player's temperature @BlueBoat29
+- EMI Batched rendering has been disabled by default. @TomPlop
+- Automatic backups now happen hourly instead of daily (#1705) @Pyritie @Xikaro
+- Advanced Peripherals' Redstone Integrator has been deprecated in favour of ComputerCraft's Redstone Relay (#1737) @Pyritie
+- Speed up recipes for turning blocks into sand (#1720) @TomPlop
+- Added a recipe for turning bone meal into white dye (#1757) @Pyritie
 ### Bug fixes
 - Fixed tongs getting stuck in ovens, and now you can use them the same way you'd previously use a Peel @Pyritie
+- Allowed powders, gears, plates, double plates, springs, and small springs to be heated (#1727) @Redeix
+- Fixed rapeseed wild block model @BlueBoat29
+- Fixed butchery knife not giving additional meat when used to kill an animal @Pyritie
+- Prospector picks can be placed on tool racks and interact with most inventory's again. @Redeix
+- Fixed some of the more obvious dupes while we wait for a GregTech to do them properly (#1576) @Pyritie
+- Fixed not being able to use buzzsaws (and chainsaws) to cut things into lumber (#1685) @Pyritie
+- Fixed recipe conflict with dimethyl carbonate, acetic acid, and formaldehyde (#1731) @Pyritie
+- Fixed missing item in quartz sand centrifuging (#1717) @Pyritie
+- Popped chorus fruit is now edible (#1722) @programmer3481
+- Fixed missing sheet pile texture for cobalt, cobalt brass, aluminium silicate, invar, lead, red alloy, and tin alloy (#1713) @Pyritie
+- Fixed missing collapse tags for smooth stone (#1732) @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn & @CN059
+- Russian @Dl, @Kostabl, @Turikar42, & @But3r
+- Ukranian @MetEnBouldry
+- Brazilian Portuguese @gifpxto
 
 ## [0.10.10] - 23-08-2025
 ### Major changes

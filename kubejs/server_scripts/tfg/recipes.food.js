@@ -18,6 +18,11 @@ function registerTFGFoodRecipes(event) {
 	 * @property {(string | [string, Internal.Ingredient])[]?} itemInputs
 	 * @property {string[]?} itemOutputs Ingredient outputs - first output is replaced with ISP output if defined
 	 * @property {Internal.ItemStackProviderJS?} itemOutputProvider ItemStackProvider which provides the recipe output.
+	 * @property {boolean?} daytime
+	 * @property {boolean?} perTick
+	 * @property {(string | [string, Internal.GTRecipeSchema$GTRecipeJS.dimension])?} dimension
+	 * @property {Internal.GTRecipeSchema$GTRecipeJS.cleanroom?} cleanroom CleanroomType
+	 * @property {string[]?} notConsumable
 	*
 	* **NOTE:** TFC Ingredients do not support item counts higher than 1. Do `Sized(TFCIngredient('item:item'), count)` instead of `TFCIngredient('[count]x item:item')`
 	*/
@@ -37,6 +42,7 @@ function registerTFGFoodRecipes(event) {
 		if (data.itemOutputs === undefined) data.itemOutputs = []
 		if (data.fluidInputs === undefined) data.fluidInputs = []
 		if (data.fluidOutputs === undefined) data.fluidOutputs = []
+		if (data.notConsumable === undefined) data.notConsumable = []
 		let gregInputs = [], inputs = []
 		let outputFirstIndex = (data.itemOutputProvider === undefined) ? 0 : 1
 		data.itemInputs.forEach(item => {
@@ -63,6 +69,11 @@ function registerTFGFoodRecipes(event) {
 		.EUt(EUt)
 
 		if (data.circuit) r.circuit(data.circuit)
+		if (data.daytime) r.daytime(data.daytime)
+		if (data.perTick) r.perTick(data.perTick)
+		if (data.dimension) r.dimension(data.dimension)
+		if (data.cleanroom) r.cleanroom(data.cleanroom)
+		if (data.notConsumable.length > 0) r.notConsumable(data.notConsumable)
 		if (data.itemOutputs.length > 0) r.itemOutputs(data.itemOutputs)
 		if (data.itemInputs.length > 0) r.itemInputs(data.itemInputs)
 		if (data.fluidInputs.length > 0) r.inputFluids(data.fluidInputs);
@@ -549,7 +560,7 @@ function registerTFGFoodRecipes(event) {
 	processorRecipe("tomato_sauce", 300, 8, {
 		circuit: 1,
 		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'tfc:food/garlic'],
-		fluidInputs: ['tfg:clean_water 200'],
+		fluidInputs: ['#tfg:clean_water 200'],
 		itemOutputs: ['5x firmalife:food/tomato_sauce'],
 		itemOutputProvider: TFC.isp.of('5x firmalife:food/tomato_sauce').copyOldestFood()
 	})
@@ -957,7 +968,7 @@ function registerTFGFoodRecipes(event) {
 	event.recipes.tfc.quern('gtceu:cocoa_dust', 'firmalife:food/roasted_cocoa_beans')
 		.id('tfg:quern/cocoa_dust');
 
-	event.recipes.tfc.pot(['firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings'],
+	event.recipes.tfc.pot(['#tfc:bowls', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings'],
 		Fluid.of('minecraft:water', 1000), 20, 10)
 		.itemOutput('tfg:food/ice_soup')
 		.id('tfg:pot/ice_soup')

@@ -1,0 +1,20 @@
+{
+	"type": "forge:remove_spawns",
+	"biomes": {
+		"type": "forge:any"
+	},
+	"entity_types": [
+		"primitive_creatures:beast",
+		"primitive_creatures:iloger_1",
+		"primitive_creatures:iloger_2",
+		"primitive_creatures:iloger_3",
+		"primitive_creatures:iloger_4",
+		"primitive_creatures:iloger_5",
+		"primitive_creatures:iloger_6",
+		"primitive_creatures:musselwarden",
+		"primitive_creatures:piloger_9",
+		"primitive_creatures:iloger_10",
+		"primitive_creatures:viloger_10",
+		"primitive_creatures:wiloger"
+	]
+}

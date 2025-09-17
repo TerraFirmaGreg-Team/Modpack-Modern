@@ -58,12 +58,63 @@ const registerTFGBlocks = (event) => {
 
     event.create('tfg:casings/machine_casing_vacuum_engine_intake', 'gtceu:active')
         .simple('tfg:block/casings/machine_casing_vacuum_engine_intake')
-        .translationKey(`block.tfg.casings.machine_casing_vacuum_engine_intake`)
+        .translationKey('block.tfg.casings.machine_casing_vacuum_engine_intake')
         .soundType('metal')
         .resistance(6).hardness(5)
         .tagBlock('mineable/pickaxe')
         .tagBlock('forge:mineable/wrench')
         .requiresTool(true)
+		.mapColor('color_light_gray')
+
+	event.create('tfg:casings/machine_casing_bioculture')
+		.translationKey('block.tfg.casings.machine_casing_bioculture')
+		.model('tfg:block/casings/machine_casing_bioculture')
+		.soundType('copper')
+		.hardness(5)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+		.mapColor('color_red')
+
+	event.create('tfg:casings/machine_casing_bioculture_glass')
+		.translationKey('block.tfg.casings.machine_casing_bioculture_glass')
+		.model('tfg:block/casings/machine_casing_bioculture_glass')
+		.soundType('glass')
+		.hardness(5)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+		.mapColor('color_orange')
+		.defaultTranslucent()
+
+	event.create('tfg:casings/bioculture_rotor_primary', 'gtceu:active')
+		.translationKey('block.tfg.casings.bioculture_rotor_primary')
+		.model('tfg:block/casings/bioculture_rotor_primary')
+		.soundType('copper')
+		.hardness(5)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+		.mapColor('color_light_gray')
+
+	event.create('tfg:casings/bioculture_rotor_secondary', 'gtceu:active')
+		.translationKey('block.tfg.casings.bioculture_rotor_secondary')
+		.model('tfg:block/casings/bioculture_rotor_secondary')
+		.soundType('copper')
+		.hardness(5)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+		.mapColor('color_light_gray')
+
+	event.create('tfg:casings/machine_casing_ultraviolet', 'gtceu:active')
+		.translationKey('block.tfg.casings.machine_casing_ultraviolet')
+		.bloom('tfg:block/casings/machine_casing_ultraviolet')
+		.soundType('glass')
+		.hardness(5)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
 		.mapColor('color_light_gray')
 
 	//#endregion
@@ -193,4 +244,40 @@ const registerTFGBlocks = (event) => {
 		.textureAll('tfg:item/deprecated')
 
 	// #endregion
+
+	// #region Reconstructed Stone
+	event.create(`tfg:rock/stone_wall`, 'wall')
+			.soundType('stone')
+			.textureAll('minecraft:block/stone')
+			.tagBoth('tfg:rock_wall')
+			.mapColor('stone')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+
+	let SHAPES = ['stairs', 'wall']
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/smooth_stone_${shape}`, shape)
+			.soundType('stone')
+			.textureAll('minecraft:block/smooth_stone')
+			.tagBoth(`tfg:rock_${shape}s`.replace(/ss/g, 's'))
+			.mapColor('stone')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	SHAPES = ['stairs', 'slab', 'wall']
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cracked_bricks_stone_${shape}`, shape)
+			.soundType('stone')
+			.textureAll('minecraft:block/smooth_stone')
+			.tagBoth(`tfg:brick_${shape}s`.replace(/ss/g, 's'))
+			.mapColor('stone')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	// #endregion Reconstructed Stone
 }

@@ -14,13 +14,1052 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)(Placeholder Vein)$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandine & Sapphire$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Apatita e Pirocloro$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Bastnasita e Monazita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Bismuto$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornite & Cooperite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Cassiterita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Coal & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Cobre e Calcopirita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Esfalerita e Pirita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Esmeralda e Berílio$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Gold, Electrotine, & Bauxite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Hematita e Limonita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Hematita e Limonita$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 210$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -16 — 100$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
-      "title": "(Placeholder Vein)",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende, Thorium, & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorium, & Uraninite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartzite, Asbestos, & Barite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone & Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Salts & Spodumene$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Soapstone, Talc, & Glauconite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Sphalerite & Galena$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Tetraedrita (Normal)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Tetraedrita (Superfície)$()$()",
+      "type": "patchouli:text"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 280$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 65$(br)$(thing)Altura$(): 8$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Calcário, Cherte, Diorito, Dolomito, Folhelho, Gabro, Red Granite, Traquito",
+      "title": "Almandine & Sapphire",
+      "type": "patchouli:text",
+      "anchor": "mars_almandine"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Almandina",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/almandine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 36%$(br)$(thing)Fonte de$(): Alumínio, Ferro$(br)$(thing)Fórmula$(): Al₂Fe₃Si₃O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Piropo",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrope"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 26%$(br)$(thing)Fonte de$(): Alumínio, Magnésio$(br)$(thing)Fórmula$(): Al₂Mg₃Si₃O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Safira",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sapphire"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Fonte de$(): Alimínio$(br)$(thing)Fórmula$(): Al₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Safira Verde",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/green_sapphire"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Fonte de$(): Aluminium$(br)$(thing)Fórmula$(): Al₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 220$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Folhelho, Giz, Red Granite, Traquito",
+      "title": "Apatita e Pirocloro",
+      "type": "patchouli:text",
+      "anchor": "mars_apatite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Apatita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/apatite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 47%$(br)$(thing)Fonte de$(): Cálcio, Fósforo, TEPT Florestal$(br)$(thing)Fórmula$(): Ca₅(PO₄)₃Cl",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Fosfato Tricálcico",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tricalcium_phosphate"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 33%$(br)$(thing)Fonte de$(): Cálcio, Fósforo$(br)$(thing)Fórmula$(): Ca₃(PO₄)₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Pirocloro",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrochlore"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 14%$(br)$(thing)Fonte de$(): Nióbio$(br)$(thing)Fórmula$(): Ca₂Nb₂O₇",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 4%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 215$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Basalto, Cherte, Diorito, Dolomito, Gabro, Giz, Traquito",
+      "title": "Bastnasita e Monazita",
+      "type": "patchouli:text",
+      "anchor": "mars_neodynium"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Bastnasita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bastnasite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 58%$(br)$(thing)Fonte de$(): Cério, Flúor$(br)$(thing)Fórmula$(): CeCFO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Monazita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/monazite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 29%$(br)$(thing)Fonte de$(): Fósforo, Terra Rara$(br)$(thing)Fórmula$(): ?(PO₄)",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Neodímio",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/neodymium"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Fonte de$(): Neodímio$(br)$(thing)Fórmula$(): Nd",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 140$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
+      "title": "Bismuto",
+      "type": "patchouli:text",
+      "anchor": "mars_surface_bismuthinite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Bismuto",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bismuth"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 40%$(br)$(thing)Derrete em$(): Bismuto$(br)$(thing)Fórmula$(): Bi",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Enxofre",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Fonte de$(): Enxofre$(br)$(thing)Fórmula$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Gipsita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gypsum"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Usado para$(): Tijolos de Alabastro (tingíveis)$(br)$(thing)Fórmula$(): CaS(H₂O)₂O₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 370$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -20 — 0$(br)$(thing)Tamanho$(): 60$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilita, Basalto, Cherte, Conglomerado, Dacito, Diorito, Giz, Red Granite, Traquito",
+      "title": "Bornite & Cooperite",
+      "type": "patchouli:text",
+      "anchor": "deep_mars_sheldonite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Bornita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bornite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Derrete em$(): Cobre$(br)$(thing)Fórmula$(): Cu₅FeS₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Cooperita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cooperite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Fonte de$(): Platina, Níquel, Paládio$(br)$(thing)Fórmula$(): Pt₃NiSPd",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Níquel",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nickel"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Derrete em$(): Níquel$(br)$(thing)Fórmula$(): Ni",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Platina",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/platinum"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Derrete em$(): Platina$(br)$(thing)Fórmula$(): Pt",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 135$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
+      "title": "Cassiterita",
+      "type": "patchouli:text",
+      "anchor": "mars_surface_cassiterite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Cassiterita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cassiterite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 55%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): SnO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Estanho",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tin"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): Sn",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Salitre",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/saltpeter"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Fonte de$(): Potássio, Nitrogênio$(br)$(thing)Fórmula$(): KNO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 215$(br)$(thing)Densidade$(): 0.6$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 55$(br)$(thing)Profundidade Máxima do Indicador$(): 10$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Conglomerado, Dacito, Diorito, Dolomito, Giz, Granito, Red Granite, Traquito",
+      "title": "Coal & Hematite",
+      "type": "patchouli:text",
+      "anchor": "mars_coal"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Carvão",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 70%$(br)$(thing)Usado para$(): Combustível, Destilação$(br)$(thing)Fórmula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 30%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 220$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 50$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Conglomerado, Dacito, Dolomito, Folhelho, Traquito",
+      "title": "Cobre e Calcopirita",
+      "type": "patchouli:text",
+      "anchor": "mars_copper"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Calcopirita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcopyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 65%$(br)$(thing)Derrete em$(): Cobre$(br)$(thing)Fórmula$(): CuFeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Cobre Nativo",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/copper"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Derrete em$(): Cobre$(br)$(thing)Fórmula$(): Cu",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Pirita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): FeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 215$(br)$(thing)Densidade$(): 0.2$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 30$(br2)$(thing)Tipos de Pedra$(): Argilita, Basalto, Cherte, Dacito, Diorito, Gabro, Giz, Granito, Traquito",
+      "title": "Esfalerita e Pirita",
+      "type": "patchouli:text",
+      "anchor": "mars_sulfur"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Pirita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 42%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): FeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Esfalerita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sphalerite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 23%$(br)$(thing)Derrete em$(): Zinco$(br)$(thing)Fórmula$(): ZnS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 19%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Enxofre",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 14%$(br)$(thing)Fonte de$(): Enxofre$(br)$(thing)Fórmula$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 350$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): -20 — 50$(br)$(thing)Altura$(): 40$(br)$(thing)Raio$(): 8$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito",
+      "title": "Esmeralda e Berílio",
+      "type": "patchouli:text",
+      "anchor": "mars_beryllium"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Esmeralda",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/emerald"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 50%$(br)$(thing)Usado para$(): Components MV, Filtros de Tag de Item$(br)$(thing)Fórmula$(): Be₃Al₂Si₆O₁₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Berílio",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/beryllium"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Fonte de$(): Berílio$(br)$(thing)Fórmula$(): Be$(br)$(thing)Perigo$(): $(c)$(t:Requer Luvas de Borracha)Beriliose (Contato com a Pele)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Realgar",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/realgar"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Fonte de$(): Arsênico$(br)$(thing)Fórmula$(): As₄S₄$(br)$(thing)Perigo$(): $(c)$(t:Requer Máscara Facial)Arsenicose (Inalação)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 250$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 55$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Dacito, Folhelho, Giz, Granito, Red Granite",
+      "title": "Garnierita e Cobaltita",
+      "type": "patchouli:text",
+      "anchor": "mars_nickel"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Garnierita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/garnierite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Derrete em$(): Níquel$(br)$(thing)Fórmula$(): NiO",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Níquel",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nickel"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 28%$(br)$(thing)Derrete em$(): Níquel$(br)$(thing)Fórmula$(): Ni",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Cobaltita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cobaltite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 28%$(br)$(thing)Fonte de$(): Cobalto, Arsênico$(br)$(thing)Fórmula$(): CoAsS$(br)$(thing)Perigo$(): $(c)$(t:Requer Máscara Facial)Arsenicose (Inalação)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 7%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 230$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilito, Cherte, Diorito, Folhelho, Gabro, Giz, Granito",
+      "title": "Gold, Electrotine, & Bauxite",
+      "type": "patchouli:text",
+      "anchor": "mars_sapphire"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Ouro Nativo",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gold"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 55%$(br)$(thing)Derrete em$(): Ouro$(br)$(thing)Fórmula$(): Au",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Bauxita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bauxite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Fonte de$(): Alumínio$(br)$(thing)Fórmula$(): Al₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Eletrotina",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/electrotine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Fonte de$(): Ouro, Prata, Redstone$(br)$(thing)Fórmula$(): (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Safira Verde",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/green_sapphire"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Fonte de$(): Aluminium$(br)$(thing)Fórmula$(): Al₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 210$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 30$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Conglomerado, Dacito, Dolomito, Red Granite",
+      "title": "Hematita e Limonita",
       "type": "patchouli:text",
       "anchor": "mars_hematite"
     },
@@ -41,8 +1080,1224 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 100%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
+      "text": "$(thing)Porcentagem$(): 50%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Limonita Amarela",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/yellow_limonite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 30%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): FeHO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Goethita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/goethite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): FeHO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Ouro Nativo",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gold"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Derrete em$(): Ouro$(br)$(thing)Fórmula$(): Au",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 140$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
+      "title": "Hematita e Limonita",
+      "type": "patchouli:text",
+      "anchor": "mars_surface_hematite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 55%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Limonita Amarela",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/yellow_limonite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 33%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): FeHO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Ouro Nativo",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gold"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Derrete em$(): Ouro$(br)$(thing)Fórmula$(): Au",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Calcita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/calcite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Fonte de$(): Cálcio$(br)$(thing)Fórmula$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 230$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 42$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Folhelho, Gabro, Giz, Red Granite, Traquito",
+      "title": "Manganês e Tântalo",
+      "type": "patchouli:text",
+      "anchor": "mars_tantalite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Glossulária",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/grossular"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 37%$(br)$(thing)Fonte de$(): Cálcio, Alumínio$(br)$(thing)Fórmula$(): Ca₃Al₂Si₃O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Espessartita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/spessartine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Fonte de$(): Manganês, Alumínio$(br)$(thing)Fórmula$(): Al₂Mn₃Si₃O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Pirolusita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrolusite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Fonte de$(): Manganês$(br)$(thing)Fórmula$(): MnO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Tantalita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tantalite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 12%$(br)$(thing)Fonte de$(): Manganês, Tântalo$(br)$(thing)Fórmula$(): MnTa₂O₆",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 220$(br)$(thing)Densidade$(): 0.55$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Red Granite, Traquito",
+      "title": "Pitchblende, Thorium, & Hematite",
+      "type": "patchouli:text",
+      "anchor": "mars_pitchblende"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Pechblenda",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pitchblende"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 41%$(br)$(thing)Fonte de$(): Urânio, Tório, Chumbo$(br)$(thing)Fórmula$(): (UO₂)₃ThPb$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Carcinogênico (Qualquer Contato)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Tório",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/thorium"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 29%$(br)$(thing)Fonte de$(): Tório$(br)$(thing)Fórmula$(): Th",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 29%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 370$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -20 — 0$(br)$(thing)Tamanho$(): 60$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Dacito, Diorito, Folhelho, Gabro, Traquito",
+      "title": "Pitchblende, Thorium, & Uraninite",
+      "type": "patchouli:text",
+      "anchor": "deep_mars_pitchblende"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Pechblenda",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pitchblende"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 52%$(br)$(thing)Fonte de$(): Urânio, Tório, Chumbo$(br)$(thing)Fórmula$(): (UO₂)₃ThPb$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Carcinogênico (Qualquer Contato)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Tório",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/thorium"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 26%$(br)$(thing)Fonte de$(): Tório$(br)$(thing)Fórmula$(): Th",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Uraninita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/uraninite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 21%$(br)$(thing)Fonte de$(): Urânio$(br)$(thing)Fórmula$(): UO₂$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Carcinogênico (Qualquer Contato)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 215$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 50$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Cherte, Dacito, Folhelho, Gabro, Giz, Granito, Red Granite",
+      "title": "Prata, Galena e Chumbo",
+      "type": "patchouli:text",
+      "anchor": "mars_galena"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Galena",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/galena"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 40%$(br)$(thing)Derrete em$(): Chumbo$(br)$(thing)Fórmula$(): PbS$(br)$(thing)Perigo$(): $(c)$(t:Requer Máscara Facial)Pouco Venenoso (Inalação)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Chumbo",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lead"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 33%$(br)$(thing)Derrete em$(): Chumbo$(br)$(thing)Fórmula$(): Pb$(br)$(thing)Perigo$(): $(c)$(t:Requer Máscara Facial)Pouco Venenoso (Inalação)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Prata Nativa",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Derrete em$(): Prata$(br)$(thing)Fórmula$(): Ag",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 6%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 210$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Calcário, Cherte, Folhelho, Giz, Granito, Red Granite, Traquito",
+      "title": "Quartzite, Asbestos, & Barite",
+      "type": "patchouli:text",
+      "anchor": "mars_quartzite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Quartzito",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/quartzite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 41%$(br)$(thing)Usado para$(): Componentes LV$(br)$(thing)Fórmula$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Barita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/barite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Fonte de$(): Bário$(br)$(thing)Fórmula$(): BaSO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Amianto",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/asbestos"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 17%$(br)$(thing)Fonte de$(): Magnésio, Câncer de pulmão$(br)$(thing)Fórmula$(): Mg₃Si₂H₄O₉$(br)$(thing)Perigo$(): $(c)$(t:Requer Máscara Facial)Asbestose (Inalação)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 370$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -20 — 0$(br)$(thing)Tamanho$(): 60$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Dacito, Folhelho, Giz",
+      "title": "Redstone & Chromite",
+      "type": "patchouli:text",
+      "anchor": "deep_mars_chromite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Redstone",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/redstone"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 45%$(br)$(thing)Derrete em$(): Redstone$(br)$(thing)Fórmula$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Rubi",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/ruby"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Fonte de$(): Cromo, Alumínio$(br)$(thing)Fórmula$(): CrAl₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Cromita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chromite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Fonte de$(): Cromo$(br)$(thing)Fórmula$(): FeCr₂O₄$(br)$(thing)Perigo$(): $(c)$(t:Requer Luvas de Borracha)Irritante (Contato com a Pele)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 210$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Altura$(): 6$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Calcário, Cherte, Diorito, Giz, Granito, Red Granite, Traquito",
+      "title": "Salts & Spodumene",
+      "type": "patchouli:text",
+      "anchor": "mars_salt"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Espodumena",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/spodumene"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Fonte de$(): Lítio, Alumínio$(br)$(thing)Fórmula$(): LiAlSi₂O₆",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Sal",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/salt"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 30%$(br)$(thing)Fonte de$(): Sódio, Cloro$(br)$(thing)Fórmula$(): NaCl",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Sal-gema",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/rock_salt"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Fonte de$(): Potássio, Cloro$(br)$(thing)Fórmula$(): KCl",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Lepidorita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lepidolite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Fonte de$(): Potássio, Lítio, Alumínio, Flúor$(br)$(thing)Fórmula$(): KLi₃Al₄F₂O₁₀",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 280$(br)$(thing)Densidade$(): 0.45$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 50$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilito, Basalto, Calcário, Cherte, Dolomito, Folhelho, Giz, Red Granite",
+      "title": "Sheelita e Tungstato",
+      "type": "patchouli:text",
+      "anchor": "mars_tungsten"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Sheelita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/scheelite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 42%$(br)$(thing)Fonte de$(): Tungstênio$(br)$(thing)Fórmula$(): Ca(WO₃)O",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Tungstato",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tungstate"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 33%$(br)$(thing)Fonte de$(): Tungstênio, Lítio$(br)$(thing)Fórmula$(): Li₂(WO₃)O",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Lítio",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lithium"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 19%$(br)$(thing)Fonte de$(): Lítio$(br)$(thing)Fórmula$(): Li",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 4%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 220$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 30$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Calcário, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Granito, Red Granite",
+      "title": "Soapstone, Talc, & Glauconite",
+      "type": "patchouli:text",
+      "anchor": "mars_lubricant"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Pedra-sabão",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/soapstone"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 31%$(br)$(thing)Fonte de$(): Magnésio$(br)$(thing)Fórmula$(): Mg₃Si₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Areia Glauconita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/glauconite_sand"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 26%$(br)$(thing)Fonte de$(): Magnésio, Alumínio$(br)$(thing)Fórmula$(): KMg₂Al₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Talco",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/talc"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 21%$(br)$(thing)Fonte de$(): Magnésio$(br)$(thing)Fórmula$(): Mg₃Si₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Pentlandita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pentlandite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Derrete em$(): Níquel$(br)$(thing)Fórmula$(): Ni₉S₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 150$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
+      "title": "Sphalerite & Galena",
+      "type": "patchouli:text",
+      "anchor": "mars_surface_nickel_galena"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Galena",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/galena"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Derrete em$(): Chumbo$(br)$(thing)Fórmula$(): PbS$(br)$(thing)Perigo$(): $(c)$(t:Requer Máscara Facial)Pouco Venenoso (Inalação)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Níquel",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nickel"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 23%$(br)$(thing)Derrete em$(): Níquel$(br)$(thing)Fórmula$(): Ni",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Esfalerita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sphalerite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 17%$(br)$(thing)Derrete em$(): Zinco$(br)$(thing)Fórmula$(): ZnS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Prata Nativa",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 11%$(br)$(thing)Derrete em$(): Prata$(br)$(thing)Fórmula$(): Ag",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Cobaltita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cobaltite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 11%$(br)$(thing)Fonte de$(): Cobalto, Arsênico$(br)$(thing)Fórmula$(): CoAsS$(br)$(thing)Perigo$(): $(c)$(t:Requer Máscara Facial)Arsenicose (Inalação)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 210$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Basalto, Cherte, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Red Granite, Traquito",
+      "title": "Tetraedrita (Normal)",
+      "type": "patchouli:text",
+      "anchor": "mars_stibnite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Tetraedrita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tetrahedrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 47%$(br)$(thing)Derrete em$(): Cobre$(br)$(thing)Fórmula$(): Cu₃SbS₃Fe",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Cobre Nativo",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/copper"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 28%$(br)$(thing)Derrete em$(): Cobre$(br)$(thing)Fórmula$(): Cu",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Estibnita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/stibnite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 19%$(br)$(thing)Derrete em$(): Antimônio$(br)$(thing)Fórmula$(): Sb₂S₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 4%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 140$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
+      "title": "Tetraedrita (Superfície)",
+      "type": "patchouli:text",
+      "anchor": "mars_surface_tetrahedrite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Tetraedrita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tetrahedrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 57%$(br)$(thing)Derrete em$(): Cobre$(br)$(thing)Fórmula$(): Cu₃SbS₃Fe",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Cobre Nativo",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/copper"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 19%$(br)$(thing)Derrete em$(): Cobre$(br)$(thing)Fórmula$(): Cu",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Estibnita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/stibnite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 19%$(br)$(thing)Derrete em$(): Antimônio$(br)$(thing)Fórmula$(): Sb₂S₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Redstone",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/redstone"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 4%$(br)$(thing)Derrete em$(): Redstone$(br)$(thing)Fórmula$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     }
   ],
   "sortnum": 7

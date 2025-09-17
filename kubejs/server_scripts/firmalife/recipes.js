@@ -33,6 +33,9 @@ const registerFirmaLifeRecipes = (event) => {
 	// Jar lid
 	event.remove({ id: 'firmalife:heating/stainless_steel_jar_lid' })
 
+	// Default Sugar Water
+	event.remove({ id: 'firmalife:vat/sugar_water' })
+
 	// Plated Blocks
 	event.remove({ id: 'firmalife:crafting/crafting/metal/block/stainless_steel' })
 	event.remove({ id: 'firmalife:crafting/metal/block/stainless_steel_slab' })
@@ -503,6 +506,24 @@ const registerFirmaLifeRecipes = (event) => {
 
 	//#endregion
 
+	//#region Better Sugar Water
+	event.recipes.firmalife.vat()
+		.inputs('#tfc:sweetener', Fluid.of('minecraft:water', 2000))
+		.outputFluid(Fluid.of('firmalife:sugar_water', 2000))
+		.id('tfg:vat/sugar_water')
+
+	//#endregion
+	
+	//#region Salt by Vat
+
+	event.recipes.firmalife.vat()
+		//.inputs('minecraft:stick', Fluid.of('tfc:salt_water', 625))
+		.inputFluid(Fluid.of('tfc:salt_water', 625))
+		.outputItem('gtceu:small_salt_dust')
+		.id('tfg:vat/sea_water_to_salt');
+
+	//#endregion
+
 	//#region Replace existing dyes
 
 	global.MINECRAFT_DYE_NAMES.forEach(dyeName => {
@@ -533,8 +554,8 @@ const registerFirmaLifeRecipes = (event) => {
 
 	event.recipes.gtceu.mixer('sugar_water')
 		.itemInputs('#tfc:sweetener')
-		.inputFluids("#tfg:clean_water 1000")
-		.outputFluids(Fluid.of('firmalife:sugar_water', 500))
+		.inputFluids("#tfg:clean_water 2000")
+		.outputFluids(Fluid.of('firmalife:sugar_water', 2000))
 		.circuit(5)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(200)

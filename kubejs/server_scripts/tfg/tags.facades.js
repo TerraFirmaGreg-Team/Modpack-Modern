@@ -28,6 +28,7 @@ function registerFacadeWhitelistTags(event) {
 		'#simplylight:any_lamp_off',
 		'#minecraft:planks',
 		'#minecraft:logs',
+		'#forge:cobblestone',
 
 		'#tfg:ad_astra_iron_blocks',
 		'#tfg:ad_astra_steel_blocks',

@@ -1,0 +1,6 @@
+{
+  "parent": "tfc:block/wild_crop/crop",
+  "textures": {
+    "crop": "tfg:block/crop/flax_age_5_bottom"
+  }
+}

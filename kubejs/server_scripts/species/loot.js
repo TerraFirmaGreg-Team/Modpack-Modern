@@ -8,15 +8,23 @@ function registerSpeciesLoots(event) {
 		.addWeightedLoot([1, 2], ['gtceu:blue_alloy_single_wire'])
 
 	event.addEntityLootModifier('species:birt')
-		.randomChanceWithEnchantment('minecraft:looting', [0, 0.3, 0.6, 1])
-		.addWeightedLoot([1, 3], ['tfc:food/raw_birt'])
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([1, 3], ['tfg:food/raw_birt'])
 
 
 	event.addEntityLootModifier('species:limpet')
 		.addWeightedLoot([5, 8], ['tfg:food/raw_limpet'])
 
 	event.addEntityLootModifier('species:limpet')
-		.randomChanceWithEnchantment('minecraft:looting', [0, 0.3, 0.6, 1])
-		.addWeightedLoot([2, 4], ['tfc:food/raw_limpet'])
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([2, 4], ['tfg:food/raw_limpet'])
 
+
+	event.addEntityLootModifier('species:goober')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([2, 4], ['tfg:food/raw_goober_meat'])
+
+	event.addEntityLootModifier('species:springling')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([1, 3], ['tfg:food/raw_springling_chops'])
 }

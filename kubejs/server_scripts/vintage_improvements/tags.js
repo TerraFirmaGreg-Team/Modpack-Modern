@@ -44,6 +44,7 @@ function registerVintageImprovementsItemTags(event) {
 	event.add('vintageimprovements:curving_heads', 'gtceu:bottle_extruder_mold')
 	event.add('vintageimprovements:curving_heads', 'gtceu:foil_extruder_mold')
 	event.add('vintageimprovements:curving_heads', 'gtceu:cylinder_casting_mold')
+	event.add('vintageimprovements:curving_heads', 'gtceu:small_pipe_extruder_mold')
 }
 
 

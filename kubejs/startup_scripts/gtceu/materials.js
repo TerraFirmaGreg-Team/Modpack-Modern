@@ -168,13 +168,23 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Zinc.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_BOLT_SCREW);
 	GTMaterials.SterlingSilver.addFlags(GENERATE_DOUBLE_INGOTS);
 
-	//		  /* Generate Dusty Ores for Infinite Ores
+	//#region Generate Dusty Ores for Infinite Ores
 
 	GTMaterials.Goethite.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.Diamond.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.CertusQuartz.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.Gold.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.Cassiterite.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Pitchblende.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Silver.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.TricalciumPhosphate.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Bauxite.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Lead.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Beryllium.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Thorium.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Uraninite.addFlags(GENERATE_DUSTY_ORES);
+
+	//#endregion
 
 	//
 	//        /* Имеют инструменты, броню TFC, двойные слитки */
@@ -304,7 +314,9 @@ const registerGTCEuMaterialModification = (event) => {
 	// Bismuth item pipe - 1/4 as good as tin
 	GTMaterials.Bismuth.setProperty(PropertyKey.ITEM_PIPE, new $ITEM_PIPE_PROPERTY(16384, 0.125));
 	// Bis bronze fluid pipe - same stats as bronze
+	GTMaterials.BismuthBronze.getProperties().removeProperty(PropertyKey.BLAST);
 	GTMaterials.BismuthBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
+	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.BLAST);
 	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.ITEM_PIPE);
 	GTMaterials.BlackBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
 	// Red steel fluid pipe - same flow rate as aluminium, bad heat tolerance (same as PE) but can do cryo

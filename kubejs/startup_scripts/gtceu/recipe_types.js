@@ -88,10 +88,10 @@ const registerGTCEuRecipeTypes = (event) => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.JET_ENGINE)
 
-	event.create('extraterrestrial_ore_fabricator')
-        .category('extraterrestrial_ore_fabricator')
+	event.create('ostrum_linear_accelerator')
+        .category('ostrum_linear_accelerator')
         .setEUIO('in')
-        .setMaxIOSize(0, 6, 2, 0)
+        .setMaxIOSize(1, 6, 3, 3)
 		.setSlotOverlay(false, false, GuiTextures.EXTRACTOR_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRACT, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH)

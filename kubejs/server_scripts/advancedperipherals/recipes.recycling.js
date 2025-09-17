@@ -120,29 +120,6 @@ function registerAdvancedPeripheralsRecyclingRecipes(event) {
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	// Redstone Integrator
-	event.recipes.gtceu.macerator('advancedperipherals:macerator/recycling/redstone_integrator')
-		.itemInputs('advancedperipherals:redstone_integrator')
-		.itemOutputs(
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.RedAlloy, 6),
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Brass, 5),
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Aluminium, 4)
-		)
-		.duration(GTMaterials.RedAlloy.getMass() * 6)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.arc_furnace('advancedperipherals:arc_furnace/recycling/redstone_integrator')
-		.itemInputs('advancedperipherals:redstone_integrator')
-		.itemOutputs(
-			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.RedAlloy, 6),
-			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Brass, 5),
-			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Aluminium, 4)
-		)
-		.duration(GTMaterials.RedAlloy.getMass() * 6)
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-		.EUt(GTValues.VA[GTValues.LV])
-
 	// Block Reader
 	event.recipes.gtceu.macerator('advancedperipherals:macerator/recycling/block_reader')
 		.itemInputs('advancedperipherals:block_reader')

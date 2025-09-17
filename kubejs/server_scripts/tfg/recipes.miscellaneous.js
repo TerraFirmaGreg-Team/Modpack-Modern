@@ -829,14 +829,6 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(100)
 		.EUt(30)
 	
-	// Temporary
-	event.recipes.gtceu.chemical_bath('quantum_eye')
-		.itemInputs('tfg:vitrified_pearl')
-		.inputFluids(Fluid.of('gtceu:radon', 250))
-		.itemOutputs('gtceu:quantum_eye')
-		.duration(24 * 20)
-		.EUt(480)
-
 	// Harvest Baskets
 
 	event.shaped('tfg:harvest_basket', [
@@ -1151,6 +1143,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:carbon_monoxide', 1000), Fluid.of('gtceu:oxygen', 500), Fluid.of('gtceu:methanol', 2000))
 		.outputFluids(Fluid.of('tfg:dimethyl_carbonate', 1000), Fluid.of('minecraft:water', 1000))
 		.duration(120)
+		.circuit(2)
 		.EUt(GTValues.VA[GTValues.HV])
 	event.recipes.gtceu.chemical_reactor('tfg:methyl_phenylcarbamate_synthesis')
 		.inputFluids(Fluid.of('tfg:aniline', 1000), Fluid.of('tfg:dimethyl_carbonate', 1000))
@@ -1169,12 +1162,14 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.IV])
 	event.recipes.gtceu.mixer('tfg:aes_polyurethane_electric_only')
-		.itemInputs('tfg:aes_compressed_wool', //'2x tfg:sniffer_wool' REVERT UNTIL MARS,
+		.itemInputs('tfg:aes_compressed_wool', //'2x #tfg:mineral_rich_wool' REVERT UNTIL MARS,
 		'#forge:dusts/methylene_diphenyl_diisocyanate')
 		.inputFluids(Fluid.of('gtceu:diethylenetriamine', 250), Fluid.of('gtceu:acetone', 1000))
 		.itemOutputs('tfg:aes_polyurethane')
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.IV])
+		
+	addCircuitToRecipe(event, 'gtceu:chemical_reactor/acetic_acid_from_methanol', 1)
 	//endregion
 	
 	//Aerogel
@@ -1367,6 +1362,86 @@ function registerTFGMiscellaneousRecipes(event) {
 		B: 'beneath:warped_straw'
 	}).id('tfg:shaped_large_nest_warped')
 		
-	
 	//#endregion
+	
+	//#region flax stuff
+	event.recipes.tfc.scraping(
+		'tfg:flax_waste',
+		'tfg:flax_product',
+		'tfg:item/flax_waste',
+		'tfg:item/flax_product',
+		'2x tfg:flax_line'
+	).id('tfg:scraping/flax_line')
+	
+	event.recipes.tfc.scraping(
+		'tfc:groundcover/humus',
+		'tfg:flax_waste',
+		'tfc:item/groundcover/humus',
+		'tfg:item/flax_waste',
+		'tfg:flax_tow'
+	).id('tfg:scraping/flax_tow')
+	
+	event.recipes.gtceu.centrifuge('tfg:flax_product')
+		.itemInputs('tfg:flax_product')
+		.itemOutputs('2x tfg:flax_line', 'tfg:flax_tow', 'tfc:groundcover/humus')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.LV])
+		
+	event.custom({
+		type: 'vintageimprovements:centrifugation',
+		ingredients: [{ item: 'tfg:flax_product' }],
+		results: [{ item: 'tfg:flax_line', count: 2 }, { item: 'tfg:flax_tow' }, { item: 'tfc:groundcover/humus' } ],
+		processingTime: 40 * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id('tfg:vi_seperate_flax')
+	
+	//#region flax line spining
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('4x tfg:linen_thread', [
+			'tfg:flax_line',
+			'tfc:spindle'
+		]).id('tfg:shapeless/linen_thread')
+	)
+	
+	event.custom({
+		type: 'vintageimprovements:coiling',
+		ingredients: [{ item: 'tfg:flax_line' }],
+		results: [{ item: 'tfg:linen_thread', count: 4 }],
+		processingTime: 2 * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id('tfg:vi_spin_flax_line')
+	
+	event.recipes.gtceu.wiremill('tfg:spin_flax_line')
+		.itemInputs('tfg:flax_line')
+		.itemOutputs('4x tfg:linen_thread')
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.LV])
+	
+	//#region flax looming
+	event.recipes.tfc.loom(
+		'1x tfg:linen_cloth',
+		'16x tfg:linen_thread',
+		8,
+		'tfc:block/burlap'
+	)
+	
+	event.recipes.tfc.loom(
+		'1x tfc:burlap_cloth',
+		'16x tfg:flax_tow',
+		12,
+		'tfc:block/burlap'
+	)
+		
+	event.recipes.gtceu.assembler('tfg:assembler/linen_cloth')
+		.itemInputs('16x tfg:linen_thread')
+		.circuit(10)
+		.itemOutputs('tfg:linen_cloth')
+		.duration(100)
+		.EUt(4)
+	
+	event.recipes.gtceu.assembler('tfg:assembler/flax_burlap')
+		.itemInputs('16x tfg:flax_tow')
+		.circuit(10)
+		.itemOutputs('tfc:burlap_cloth')
+		.duration(100)
+		.EUt(4)
+
 }

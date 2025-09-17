@@ -446,7 +446,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 90%$(br)$(thing)Розплавляється в$(): Вісмут$(br)$(thing)Формула$(): Bi",
+      "text": "$(thing)Відсоток$(): 85%$(br)$(thing)Розплавляється в$(): Вісмут$(br)$(thing)Формула$(): Bi",
       "type": "patchouli:multiblock"
     },
     {
@@ -471,6 +471,26 @@
     },
     {
       "Type": "patchouli:multiblock",
+      "name": "Самородна Срібла",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Розплавляється в$(): Срібло$(br)$(thing)Формула$(): Ag",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
       "name": "Сірка",
       "multiblock": {
         "mapping": {
@@ -488,6 +508,11 @@
       "enable_visualize": false,
       "text": "$(thing)Відсоток$(): 3%$(br)$(thing)Джерело$(): Сірки$(br)$(thing)Формула$(): S",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -1681,7 +1706,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 170$(br)$(thing)Щільність$(): 0.25$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): -60 — 10$(br)$(thing)Розмір$(): 50$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Кварцит, Мармур, Філіт, Шиферний сланець",
+      "text": "$(thing)Рідкість$(): 170$(br)$(thing)Щільність$(): 0.25$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): -60 — 10$(br)$(thing)Розмір$(): 40$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Кварцит, Мармур, Філіт, Шиферний сланець",
       "title": "Лапіс, Лазурит та Содаліт",
       "type": "patchouli:text",
       "anchor": "normal_lapis"
@@ -2255,7 +2280,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Джерело$(): Свободи\uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
+      "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Джерело$(): Свободи \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
       "type": "patchouli:multiblock"
     },
     {
@@ -3455,7 +3480,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 220$(br)$(thing)Щільність$(): 0.45$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): -64 — -20$(br)$(thing)Розмір$(): 24$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Кварцит, Мармур, Філіт, Шиферний сланець",
+      "text": "$(thing)Рідкість$(): 240$(br)$(thing)Щільність$(): 0.45$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): -64 — -20$(br)$(thing)Розмір$(): 24$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Кварцит, Мармур, Філіт, Шиферний сланець",
       "title": "Ураніт & Пітчбленд",
       "type": "patchouli:text",
       "anchor": "deep_pitchblende"
@@ -3477,7 +3502,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 50%$(br)$(thing)Джерело$(): Урану, Торію, Свинцю$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібен повний захист)Канцерогенне (будь-який контакт)$(/t)$()",
+      "text": "$(thing)Відсоток$(): 62%$(br)$(thing)Джерело$(): Урану, Торію, Свинцю$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібен повний захист)Канцерогенне (будь-який контакт)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -3497,13 +3522,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 50%$(br)$(thing)Джерело$(): Урану$(br)$(thing)Формула$(): UO₂$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібен повний захист)Канцерогенне (будь-який контакт)$(/t)$()",
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Урану$(br)$(thing)Формула$(): UO₂$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібен повний захист)Канцерогенне (будь-який контакт)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Вульфеніт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/wulfenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 12%$(br)$(thing)Джерело$(): Свинцю, Молібденуму$(br)$(thing)Формула$(): PbMoO₄",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",

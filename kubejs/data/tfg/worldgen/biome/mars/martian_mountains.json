@@ -24,24 +24,22 @@
 		],
 		[],
 		[
-			"tfg:earth/geode/amethyst",
-			"tfg:earth/geode/barite",
-			"tfg:earth/geode/calcite",
-			"tfg:earth/geode/gypsum",
-			"tfg:earth/geode/opal",
-			"tfg:earth/geode/pyrite",
-			"tfg:earth/geode/quartzite"
-		],
-		[
+			"tfg:mars/terrain/venus_sand_disc",
+			"tfg:mars/terrain/basalt_delta",
+			"tfg:mars/terrain/gabbro_delta",
+			"tfg:mars/terrain/red_granite_delta",
 			"tfc:random_empty_hot_spring",
 			"tfg:mars/terrain/empty_rivulet",
+			"tfg:mars/terrain/magma_rivulet",
+			"tfg:mars/terrain/basalt_rivulet",
 			"tfg:mars/terrain/water_fissure",
 			"tfg:mars/terrain/empty_fissure"
 		],
 		[],
 		[],
-		"#tfg:mars_veins",
 		[],
+		"#tfg:mars_veins",
+		"#tfg:mars_underground_decoration",
 		[
 			"tfc:raw_boulder",
 			"tfc:raw_boulder_small_patch",
@@ -49,9 +47,19 @@
 			"tfg:mars/surface/small_skull_and_bones",
 			"tfg:mars/surface/large_skull_and_bones",
 			"tfg:mars/surface/rotten_flesh_patch",
-			"tfg:mars/surface/feather_patch"
+			"tfg:mars/surface/pile_venus_sand",
+			"tfg:mars/surface/flint_patch"
 		],
 		[
+			"tfg:mars/surface/charnia",
+			"tfg:mars/surface/flamaea",
+
+			"tfg:mars/surface/aeridium",
+			"tfg:mars/surface/clawfern",
+			"tfg:mars/surface/flammalix",
+
+			"tfg:mars/surface/feather_patch_wraptor",
+			"tfg:mars/surface/feather_patch_glider"
 		],
 		"#tfg:mars_top_layer_modification"
 	],
@@ -72,6 +80,14 @@
 		"minecraft:enderman": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"endermanoverhaul:cave_enderman": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"species:quake": {
+			"energy_budget": 0.2,
+			"charge": 0.7
 		}
 	},
 	"spawners": {
@@ -82,7 +98,7 @@
 				"type": "tfg:wraptor",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 50
+				"weight": 20
 			},
 			{
 				"type": "species:springling",
@@ -94,7 +110,7 @@
 				"type": "wan_ancient_beasts:crusher",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 30
+				"weight": 10
 			},
 			{
 				"type": "wan_ancient_beasts:glider",
@@ -107,6 +123,12 @@
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "wan_ancient_beasts:eater",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
 			}
 		],
 		"misc": [],
@@ -124,21 +146,46 @@
 				"weight": 100
 			},
 			{
-				"type": "endermanoverhaul:badlands_enderman",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 20
+			},
+			{
+				"type": "endermanoverhaul:cave_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "ad_astra:martian_raptor",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:quake",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [],
 		"water_ambient": [],
-		"water_creature": []
+		"water_creature": [
+			{
+				"type": "wan_ancient_beasts:toxlacanth",
+				"maxCount": 5,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "wan_ancient_beasts:surfer",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			}
+		]
 	},
 	"temperature": 0.8
 }

@@ -70,7 +70,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.first_backpack.title}"
-			x: 13.0d
+			x: 16.0d
 			y: 2.0d
 		}
 		{
@@ -87,7 +87,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.red_steel_backpack.title}"
-			x: 15.0d
+			x: 18.0d
 			y: 2.0d
 		}
 		{
@@ -104,7 +104,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.backpack_upgrades.title}"
-			x: 14.5d
+			x: 16.5d
 			y: 4.0d
 		}
 		{
@@ -121,7 +121,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.aluminium_backpack.title}"
-			x: 16.0d
+			x: 19.0d
 			y: 2.0d
 		}
 		{
@@ -138,7 +138,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.titanium_backpack.title}"
-			x: 17.0d
+			x: 20.0d
 			y: 2.0d
 		}
 		{
@@ -152,7 +152,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.crafting_upgrade.title}"
-			x: 16.0d
+			x: 18.0d
 			y: 4.5d
 		}
 		{
@@ -173,7 +173,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.advanced_upgrades.title}"
-			x: 16.0d
+			x: 18.0d
 			y: 3.5d
 		}
 		{
@@ -294,7 +294,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.all_backpack_upgrades.title}"
-			x: 17.5d
+			x: 19.5d
 			y: 4.0d
 		}
 		{
@@ -331,7 +331,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.256m_portable_cells.title}"
-			x: 12.0d
+			x: 12.5d
 			y: 3.0d
 		}
 		{
@@ -369,8 +369,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.maxed_out_toolbelt.title}"
-			x: 12.0d
-			y: 4.0d
+			x: 12.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7FA5B6354A49C396"]
@@ -390,8 +390,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.toolbelt.title}"
-			x: 11.0d
-			y: 4.0d
+			x: 10.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7FA5B6354A49C396"]
@@ -432,49 +432,37 @@
 			subtitle: "{quests.tfg_tips.backpack_materials.subtitle}"
 			tasks: [
 				{
-					id: "3D54644D50E1904E"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:string)"
-						}
-					}
-					title: "Any #forge:string"
-					type: "item"
-				}
-				{
-					id: "40410856739CAF06"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:leather)"
-						}
-					}
-					title: "Any #forge:leather"
-					type: "item"
-				}
-				{
-					id: "62219AEA780A9850"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:chests/wooden)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #forge:chests/wooden"
-					type: "item"
-				}
-				{
 					id: "56622AE6FBE714A2"
 					item: "minecraft:name_tag"
 					type: "item"
 				}
+				{
+					id: "26C63DDBFC21E987"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "sns:pack_frame"
+					}
+					type: "item"
+				}
+				{
+					id: "51D50469150985C8"
+					item: "sns:reinforced_fiber"
+					type: "item"
+				}
+				{
+					id: "441FD9DFB12362DB"
+					item: "sns:bound_leather_strip"
+					type: "item"
+				}
 			]
 			title: "{quests.tfg_tips.backpack_materials.title}"
-			x: 11.0d
+			x: 13.5d
 			y: 2.0d
 		}
 		{
@@ -509,14 +497,23 @@
 				}
 			]
 			title: "{quests.tfg_tips.vessels.title}"
-			x: 11.0d
-			y: 1.0d
+			x: 10.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["72B3EA6588E18CCC"]
 			description: ["{quests.tfg_tips.portable_storage.desc}"]
 			disable_toast: true
-			icon: "sophisticatedbackpacks:backpack"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						voidSlots: [I; ]
+					}
+				}
+				id: "sns:leather_sack"
+			}
 			id: "7FA5B6354A49C396"
 			shape: "octagon"
 			size: 2.0d
@@ -548,8 +545,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.tungstensteel_backpack.title}"
-			x: 19.5d
-			y: 2.0d
+			x: 22.964285714285722d
+			y: 2.0357142857142847d
 		}
 		{
 			dependencies: ["74AE7DB845B88CF3"]
@@ -1476,7 +1473,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.fishing_net.title}"
-			x: -5.5d
+			x: -3.0d
 			y: 7.0d
 		}
 		{
@@ -1497,8 +1494,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.cane.title}"
-			x: -3.5d
-			y: 7.0d
+			x: -2.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["72B3EA6588E18CCC"]
@@ -2340,8 +2337,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.digger_helmet.title}"
-			x: -2.5d
-			y: 8.5d
+			x: -6.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["72B3EA6588E18CCC"]
@@ -2579,7 +2576,194 @@
 			x: -2.5d
 			y: 0.5d
 		}
+		{
+			dependencies: ["7FA5B6354A49C396"]
+			description: ["{quests.tfg_tips.first_sacks.desc}"]
+			id: "509C064AA92FD78F"
+			subtitle: "{quests.tfg_tips.first_sacks.subtitle}"
+			tasks: [
+				{
+					id: "5166FB8DE88DF0CA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								voidSlots: [I; ]
+								weight: 0b
+							}
+						}
+						id: "sns:leather_sack"
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "064BB0E0D6295650"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								voidSlots: [I; ]
+								weight: 0b
+							}
+						}
+						id: "sns:burlap_sack"
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.first_sacks.title}"
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7178843BCD50A012"]
+			description: ["{quests.tfg_tips.frame_pack.desc}"]
+			id: "5443F4F5AE53B91A"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.tfg_tips.frame_pack.subtitle}"
+			tasks: [{
+				id: "54D2B434FC11CEB6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							voidSlots: [I; ]
+							weight: 0b
+						}
+					}
+					id: "sns:frame_pack"
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.frame_pack.title}"
+			x: 16.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["509C064AA92FD78F"]
+			description: ["{quests.tfg_tips.special_sacks.desc}"]
+			id: "21C58B2541BFA2EE"
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.special_sacks.subtitle}"
+			tasks: [
+				{
+					id: "174C280F11DC3D85"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								voidSlots: [I; ]
+								weight: 0b
+							}
+						}
+						id: "sns:seed_pouch"
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3B5EC702928D4E22"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								voidSlots: [I; ]
+								weight: 0b
+							}
+						}
+						id: "sns:ore_sack"
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.special_sacks.title}"
+			x: 12.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7FA5B6354A49C396"]
+			description: ["{quests.tfg_tips.toolbox.desc}"]
+			icon: "create:brown_toolbox"
+			id: "1652649B64E7C04C"
+			subtitle: "{quests.tfg_tips.toolbox.subtitle}"
+			tasks: [{
+				id: "7712BDD1CF0760F5"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:toolboxes)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #create:toolboxes"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.toolbox.title}"
+			x: 9.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7FA5B6354A49C396"]
+			description: ["{quests.tfg_tips.straw_basket.desc}"]
+			id: "67F40A90844EC0FC"
+			subtitle: "{quests.tfg_tips.straw_basket.subtitle}"
+			tasks: [{
+				id: "542549225517097C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							voidSlots: [I; ]
+							weight: 0b
+						}
+					}
+					id: "sns:straw_basket"
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.straw_basket.title}"
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["150B7C5CD152E1BA"]
+			description: ["{quests.tfg_tips.hiking.desc}"]
+			icon: {
+				Count: 1
+				id: "sns:hiking_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "21042F13F754E6E6"
+			subtitle: "{quests.tfg_tips.hiking.subtitle}"
+			tasks: [{
+				id: "263569419A799471"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(sns:hiking_boots)item(sns:steel_toe_hiking_boots)item(sns:black_steel_toe_hiking_boots)item(sns:blue_steel_toe_hiking_boots)item(sns:red_steel_toe_hiking_boots))"
+					}
+				}
+				title: "{quests.tfg_tips.hiking.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.hiking.title}"
+			x: -3.0d
+			y: 10.0d
+		}
 	]
 	subtitle: ["{quests.tfg_tips.tools_tips.subtitle}"]
-	title: "Tips - Tools"
+	title: "{quests.tfg_tips.tools_tips.title}"
 }

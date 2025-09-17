@@ -249,9 +249,9 @@
 		{
 			dependencies: ["3C3C21482E31267B"]
 			description: ["{quests.ae2.ae_controller.desc}"]
-			subtitle: "{quests.ae2.ae_controller.subtitle}"
 			icon: "ae2:controller"
 			id: "1AAD526450E5A732"
+			subtitle: "{quests.ae2.ae_controller.subtitle}"
 			tasks: [
 				{
 					id: "2D32E17277B9A4C5"
@@ -315,8 +315,8 @@
 		{
 			dependencies: ["3C3C21482E31267B"]
 			description: ["{quests.ae2.drive.desc}"]
-			subtitle: "{quests.ae2.drive.subtitle}"
 			id: "6E4E5753CCEB3F95"
+			subtitle: "{quests.ae2.drive.subtitle}"
 			tasks: [
 				{
 					id: "19403D95C159B55A"
@@ -340,9 +340,9 @@
 				"4F719A457E0C0AFB"
 			]
 			description: ["{quests.ae2.cables.desc}"]
-			subtitle: "{quests.ae2.cables.subtitle}"
 			icon: "ae2:fluix_smart_cable"
 			id: "0DDA9B67B59A9481"
+			subtitle: "{quests.ae2.cables.subtitle}"
 			tasks: [
 				{
 					id: "5A80BA33AFB71A00"
@@ -368,8 +368,8 @@
 		{
 			dependencies: ["0DDA9B67B59A9481"]
 			description: ["{quests.ae2.terminals.desc}"]
-			subtitle: "{quests.ae2.terminals.subtitle}"
 			id: "4B6466FD94886C55"
+			subtitle: "{quests.ae2.terminals.subtitle}"
 			tasks: [
 				{
 					id: "5ECAC7A491A1CC16"
@@ -393,8 +393,8 @@
 		{
 			dependencies: ["0DDA9B67B59A9481"]
 			description: ["{quests.ae2.crafting_unit.desc}"]
-			subtitle: "{quests.ae2.crafting_unit.subtitle}"
 			id: "56B39375B0C67781"
+			subtitle: "{quests.ae2.crafting_unit.subtitle}"
 			tasks: [{
 				id: "194AB0197D7500B9"
 				item: "ae2:crafting_unit"
@@ -428,6 +428,7 @@
 						"ftbfiltersystem:filter": "or(item(ae2:1k_crafting_storage)item(ae2:4k_crafting_storage)item(ae2:16k_crafting_storage)item(ae2:64k_crafting_storage)item(ae2:256k_crafting_storage))"
 					}
 				}
+				title: "{quests.ae2.crafting_storage.task}"
 				type: "item"
 			}]
 			x: -2.5d
@@ -436,9 +437,9 @@
 		{
 			dependencies: ["4B6466FD94886C55"]
 			description: ["{quests.ae2.pattern_provider.desc}"]
-			subtitle: "{quests.ae2.pattern_provider.subtitle}"
 			icon: "ae2:pattern_provider"
 			id: "378E2294EFD85C65"
+			subtitle: "{quests.ae2.pattern_provider.subtitle}"
 			tasks: [{
 				id: "4288288133E5FED3"
 				item: {
@@ -448,6 +449,7 @@
 						"ftbfiltersystem:filter": "or(item(ae2:pattern_provider)item(ae2:cable_pattern_provider))"
 					}
 				}
+				title: "{quests.ae2.pattern_provider.task}"
 				type: "item"
 			}]
 			x: 0.5d
@@ -456,8 +458,8 @@
 		{
 			dependencies: ["4B6466FD94886C55"]
 			description: ["{quests.ae2.pattern.desc}"]
-			subtitle: "{quests.ae2.pattern.subtitle}"
 			id: "386C54268DA9F2BF"
+			subtitle: "{quests.ae2.pattern.subtitle}"
 			tasks: [{
 				id: "7E43EFA5DBA2F0D2"
 				item: "ae2:blank_pattern"
@@ -498,8 +500,8 @@
 		{
 			dependencies: ["0DDA9B67B59A9481"]
 			description: ["{quests.ae2.interface.desc}"]
-			subtitle: "{quests.ae2.interface.subtitle}"
 			id: "25007C5E43D28DB2"
+			subtitle: "{quests.ae2.interface.subtitle}"
 			tasks: [{
 				id: "0DEB4627504A8944"
 				item: "ae2:interface"
@@ -521,6 +523,7 @@
 						"ftbfiltersystem:filter": "or(item(ae2:export_bus)item(expatternprovider:threshold_export_bus)item(expatternprovider:tag_export_bus)item(expatternprovider:mod_export_bus)item(expatternprovider:precise_export_bus))"
 					}
 				}
+				title: "{quests.ae2.export_bus.task}"
 				type: "item"
 			}]
 			x: 3.5d
@@ -528,7 +531,6 @@
 		}
 		{
 			dependencies: ["6CF08AFB924905F0"]
-			title: "{quests.ae2.iv.title}"
 			description: ["{quests.ae2.iv.desc}"]
 			icon_scale: 2.0d
 			id: "0F1104DEEB22EF86"
@@ -538,6 +540,7 @@
 				item: "tfg:iv_universal_circuit"
 				type: "item"
 			}]
+			title: "{quests.ae2.iv.title}"
 			x: 3.0d
 			y: 0.0d
 		}
@@ -588,7 +591,7 @@
 		}
 		{
 			dependencies: ["5B4AD301357488D6"]
-			description: ["{quests.ae2.extended_patprov.desc}"]
+			description: ["{quests.ae2.extended_pattern_access.desc}"]
 			icon: "expatternprovider:ex_pattern_access_part"
 			id: "7676B598362927CA"
 			tasks: [{
@@ -600,6 +603,7 @@
 						"ftbfiltersystem:filter": "or(item(expatternprovider:ex_pattern_access_part)item(expatternprovider:pattern_terminal_upgrade))"
 					}
 				}
+				title: "{quests.ae2.extended_pattern_access.task}"
 				type: "item"
 			}]
 			x: 7.0d
@@ -619,6 +623,7 @@
 						"ftbfiltersystem:filter": "or(item(expatternprovider:ex_interface)item(expatternprovider:interface_upgrade))"
 					}
 				}
+				title: "{quests.ae2.extended_interface.task}"
 				type: "item"
 			}]
 			x: 5.0d
@@ -626,7 +631,6 @@
 		}
 		{
 			dependencies: ["6CF08AFB924905F0"]
-			title: "{quests.ae2.luv.title}"
 			description: ["{quests.ae2.luv.desc}"]
 			icon_scale: 2.0d
 			id: "1F3621FABA32DC6B"
@@ -636,12 +640,13 @@
 				item: "tfg:luv_universal_circuit"
 				type: "item"
 			}]
+			title: "{quests.ae2.luv.title}"
 			x: 0.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["25007C5E43D28DB2"]
-			description: ["The &dME Import Bus&r is a strong tool to get items or fluids inside of your &dME Network&r.\\n\\n&cImportant notice&r: Remember that using too many exporters could cause &4TPS&r issues.\\n\\nBut don't worry—reaching &otoo many&r would require &6dozens&r of them."]
+			description: ["{quests.ae2.import_bus.desc}"]
 			id: "15C437C4C5175A2A"
 			tasks: [{
 				id: "75C8C7F782E37AEA"
@@ -653,7 +658,7 @@
 		}
 		{
 			dependencies: ["25007C5E43D28DB2"]
-			description: ["&bThe ME Storage Bus&r is an incredibly strong tool from &aAE2&r.\\n\\nIt can be used to store items and fluids directly in physical storage. Using the &epriority&r feature will be quite useful.\\n\\nAlso, &aExtendedAE&r comes with a lot of &bStorage Bus&r variants that we highly recommend you to check.\\nIt’s a great way to manage your &6hot ingots&r from your &cEBF&r or later on from your &cAlloy Blast Smelter&r.\\n\\n"]
+			description: ["{quests.ae2.storage_bus.desc}"]
 			id: "281CB6A630F3B702"
 			tasks: [
 				{
@@ -671,6 +676,7 @@
 						}
 					}
 					optional_task: true
+					title: "{quests.ae2.storage_bus.task}"
 					type: "item"
 				}
 			]
@@ -679,39 +685,20 @@
 		}
 		{
 			dependencies: ["25007C5E43D28DB2"]
-			description: ["To be used in conjunction with your &bME Interface&r, just slap a cover on your machine.\\n\\nRemember to activate the &eAccept Input&r on the &6Output&r face in your &aGregtech&r machine's GUI.\\n\\nUsing &9filters&r there could be quite useful.\\n\\nAlso, the &dRobot Arm&r will be necessary on &eKeep Exact&r mode with a filter to avoid overfilling the item input.\\n\\nThe &3fluid input&r doesn’t have this issue, as it will fill only one slot automatically."]
-			icon: "gtceu:lv_robot_arm"
+			description: ["{quests.ae2.interface_automation.desc}"]
+			icon: "gtceu:mv_robot_arm"
 			id: "7D9A1A05B6CA486F"
-			tasks: [
-				{
-					id: "6F0FED3BC5B3B5F0"
-					type: "checkmark"
-				}
-				{
-					id: "5410E9A9EBF7E61A"
-					item: "gtceu:lv_conveyor_module"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "29EDB24D2B1EE0C9"
-					item: "gtceu:lv_robot_arm"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "522AAC5C052F1C17"
-					item: "gtceu:lv_electric_pump"
-					optional_task: true
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6F0FED3BC5B3B5F0"
+				type: "checkmark"
+			}]
+			title: "{quests.ae2.interface_automation.title}"
 			x: 5.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["6CF08AFB924905F0"]
-			description: ["This entire branch is fully unlockable in &6HV&r!"]
+			description: ["{quests.ae2.hv.desc}"]
 			icon_scale: 2.0d
 			id: "3C3C21482E31267B"
 			size: 1.0d
@@ -720,12 +707,13 @@
 				item: "tfg:hv_universal_circuit"
 				type: "item"
 			}]
+			title: "{quests.ae2.hv.title}"
 			x: 0.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["3C3C21482E31267B"]
-			description: ["The &bStorage Component&r will be a core part of your progression through &aAE2&r and they will be quite expensive.\\n\\nEven though you will need them to make your &bStorage Cells&r.\\n\\nThe &e1k ME Storage Component&r doesn't have a moon recipe but all the others will have one, so once again think about this sweet &dMoon base&r."]
+			description: ["{quests.ae2.cell_component_1k.desc}"]
 			id: "0D2403243B52F7AC"
 			tasks: [{
 				id: "5BF4753E8A51B19D"
@@ -737,7 +725,7 @@
 		}
 		{
 			dependencies: ["0D2403243B52F7AC"]
-			description: ["As you can notice the &e4k Storage Component&r has a tremendously cheaper recipe on the &dMoon&r.\\n\\nYou will also always need one lower tier circuit from the Moon recipes."]
+			description: ["{quests.ae2.cell_component_4k.desc}"]
 			id: "344D269116B1ADE1"
 			tasks: [{
 				id: "73D9BCEF519851E1"
@@ -749,7 +737,7 @@
 		}
 		{
 			dependencies: ["344D269116B1ADE1"]
-			description: ["As you can notice, the &e16k Storage Component&r has a &amuch cheaper recipe&r on the &dMoon&r.\\n\\nHowever, keep in mind that every Moon recipe will always require &bone lower tier Storage Component&r from the normal recipes.\\n\\nOnce again, it’s another reason to consider setting up your &dMoon Base&r!"]
+			description: ["{quests.ae2.cell_component_16k.desc}"]
 			id: "5187909B66DF2D43"
 			tasks: [{
 				id: "10474E98DF607084"
@@ -761,7 +749,7 @@
 		}
 		{
 			dependencies: ["5187909B66DF2D43"]
-			description: ["Now that you have &1IV&r Circuits, you can make this enormous &5Storage Component&r. Having moon recipes is beginning to make quite the huge difference in cost."]
+			description: ["{quests.ae2.cell_component_64k.desc}"]
 			id: "7F17A0505F55307C"
 			tasks: [{
 				id: "2524EB6BDAC323E8"
@@ -773,7 +761,7 @@
 		}
 		{
 			dependencies: ["7F17A0505F55307C"]
-			description: ["The &c256k ME Storage Component&r is the last one you can make with an Assembler and it's so big you may be fine with them to end the pack but well why stop here if you can get bigger ones."]
+			description: ["{quests.ae2.cell_component_256k.desc}"]
 			id: "550683A6705A9C15"
 			tasks: [{
 				id: "40B66DB4F6CC170E"
@@ -785,7 +773,7 @@
 		}
 		{
 			dependencies: ["3C3C21482E31267B"]
-			description: ["The &bME Cell Housing&r exists in two versions: one for &aItems&r and one for &9Fluids&r.\\n\\nYou can recycle them using a &ePacker&r or simply by &eShift + Right-Click&r while holding the storage cell in your hand."]
+			description: ["{quests.ae2.cell_housing.desc}"]
 			id: "4F719A457E0C0AFB"
 			tasks: [
 				{
@@ -807,11 +795,7 @@
 				"1F3621FABA32DC6B"
 				"550683A6705A9C15"
 			]
-			description: [
-				"The &3MEGA Storage Component&r will need an &bAssembly Line&r, notice that the Earth version must be crafted within a &7Cleanroom&r or you can use a &7Cleaning Maintenance Hatch&r if you have access to one."
-				""
-				"No need for that on the Moon though."
-			]
+			description: ["{quests.ae2.cell_component_1m.desc}"]
 			id: "36241E7089A4E6E5"
 			tasks: [{
 				id: "0FDED81B4B719A5E"
@@ -823,7 +807,7 @@
 		}
 		{
 			dependencies: ["36241E7089A4E6E5"]
-			description: ["Simply bigger and more expensive."]
+			description: ["{quests.ae2.cell_component_4m.desc}"]
 			id: "4AA0D8BEA540E0B9"
 			tasks: [{
 				id: "05F57484C16B7F46"
@@ -835,7 +819,7 @@
 		}
 		{
 			dependencies: ["4AA0D8BEA540E0B9"]
-			description: ["This one can only be made on the &cMoon&r and nowhere else. It will also require a &7Cleanroom&r environment, so if you don’t want to bother with a Cleanroom on the &cMoon&r, you should make the &7Cleaning Maintenance Hatch&r.\\n\\nIt will also need some research. Refer to the &cZPM&r Chapter if you don’t know what we are speaking about."]
+			description: ["{quests.ae2.cell_component_16m.desc}"]
 			id: "61D498F27A4194D3"
 			tasks: [{
 				id: "73C08CBD3CF57D1F"
@@ -847,7 +831,7 @@
 		}
 		{
 			dependencies: ["61D498F27A4194D3"]
-			description: ["The &c64M MEGA Storage Component&r is the biggest one you can make in &8TerraFirmaGreg&r. Honestly, we believe you won’t need it but it’s there for completionists."]
+			description: ["{quests.ae2.cell_component_64m.desc}"]
 			id: "426B327852C46764"
 			tasks: [{
 				id: "230D2F68A39EE752"
@@ -859,7 +843,7 @@
 		}
 		{
 			dependencies: ["1F3621FABA32DC6B"]
-			description: ["The &dME Oversize Interface&r is a &dME Extended Interface&r but each slot can hold 16x more items or fluids. If you have processes that need huge quantities, this could be your go-to."]
+			description: ["{quests.ae2.oversize_interface.desc}"]
 			id: "68CCEBFC927C9956"
 			tasks: [{
 				id: "0A9E49725E393A12"
@@ -871,7 +855,7 @@
 		}
 		{
 			dependencies: ["1F3621FABA32DC6B"]
-			description: ["The &6Assembler Matrix&r is basically a customizable multiblock Molecular Assembler. The requirements for this quest should let you build one that we deem quite strong enough. You could add more layers of &bPattern Core&r or &aCraft Core&r if you want so.\\n\\nAs usual, check the in-game guide for detailed informations."]
+			description: ["{quests.ae2.assembler_matrix.desc}"]
 			id: "6820CDE4B47C5E6A"
 			tasks: [
 				{
@@ -916,7 +900,7 @@
 		}
 		{
 			dependencies: ["4B6466FD94886C55"]
-			description: ["The &9Molecular Assembler&r is basically your auto-crafting table.\\n\\nYou can use it for a precise craft or combine it with a &9Pattern Provider&r.\\n\\nAs always, check the in-game guide using &eG&r to learn more about it."]
+			description: ["{quests.ae2.molecular_assembler.desc}"]
 			id: "24A3199B77ED28D1"
 			tasks: [{
 				id: "64CDEEF086CAFF4B"
@@ -928,7 +912,7 @@
 		}
 		{
 			dependencies: ["5B4AD301357488D6"]
-			description: ["Here they are, your bigger &bPattern Providers&r with an upgrade so you don't even need to disconnect them to upgrade.\\n\\nYou will be quite happy with them."]
+			description: ["{quests.ae2.extended_patprov.desc}"]
 			icon: "expatternprovider:ex_pattern_provider"
 			id: "59D42D755D58D18F"
 			tasks: [{
@@ -940,6 +924,7 @@
 						"ftbfiltersystem:filter": "or(item(expatternprovider:ex_pattern_provider)item(expatternprovider:pattern_provider_upgrade))"
 					}
 				}
+				title: "{quests.ae2.extended_patprov.task}"
 				type: "item"
 			}]
 			x: 7.0d
@@ -947,7 +932,7 @@
 		}
 		{
 			dependencies: ["5B4AD301357488D6"]
-			description: ["The &dME Extended Drive&r will &6double&r the amount of &eStorage Cells&r you can have within it.\\n\\nYou can also craft the &eupgrade&r to simply &aRight Click&r it without bothering removing it, it won't cost you more."]
+			description: ["{quests.ae2.extended_drive.desc}"]
 			icon: "expatternprovider:ex_drive"
 			id: "169A9816CB1C865E"
 			tasks: [{
@@ -959,6 +944,7 @@
 						"ftbfiltersystem:filter": "or(item(expatternprovider:ex_drive)item(expatternprovider:drive_upgrade))"
 					}
 				}
+				title: "{quests.ae2.extended_drive.task}"
 				type: "item"
 			}]
 			x: 6.0d
@@ -966,7 +952,7 @@
 		}
 		{
 			dependencies: ["5B4AD301357488D6"]
-			description: ["They are 8 times faster, enjoy."]
+			description: ["{quests.ae2.extended_import_export.desc}"]
 			id: "281E32721BDC662A"
 			tasks: [{
 				id: "5A404361DAA37570"
@@ -977,6 +963,7 @@
 						"ftbfiltersystem:filter": "or(item(expatternprovider:ex_export_bus_part)item(expatternprovider:ex_import_bus_part))"
 					}
 				}
+				title: "{quests.ae2.extended_import_export.task}"
 				type: "item"
 			}]
 			x: 6.0d
@@ -984,7 +971,7 @@
 		}
 		{
 			dependencies: ["5B4AD301357488D6"]
-			description: ["This &eupgrade&r will let you &atransfer faster&r while also offering &6more upgrade slots&r if needed."]
+			description: ["{quests.ae2.extended_io_port.desc}"]
 			id: "63CABFAA2A3DBA73"
 			tasks: [{
 				id: "6CB2D20DEF2D590F"
@@ -996,7 +983,7 @@
 		}
 		{
 			dependencies: ["5B4AD301357488D6"]
-			description: ["The &aME Wireless Connector&r is your go-to if you don't want to extend massive lines of &bME Cables&r.\\n\\nDon't forget to check the in-game guide with &eG&r to learn about how they work and their limitations.\\n\\nThey won't work for &ccross-dimensional&r connections, that would be too easy, wouldn't it?"]
+			description: ["{quests.ae2.wireless.desc}"]
 			id: "30043A96FB868600"
 			tasks: [
 				{
@@ -1015,7 +1002,7 @@
 		}
 		{
 			dependencies: ["5B4AD301357488D6"]
-			description: ["The upgrade of the &bMolecular Assembler&r.\\n\\nIt runs &68 crafting jobs&r at the same time and goes &62 times faster&r.\\n\\nThough you can only use it with a &bPattern Provider&r, it will be a &agreat upgrade&r before you get the &dMatrix Multiblock&r a bit later on."]
+			description: ["{quests.ae2.extended_molecular_assembler.desc}"]
 			id: "24F024801B32301C"
 			tasks: [{
 				id: "70CBB0F5F73D5ECA"
@@ -1027,7 +1014,7 @@
 		}
 		{
 			dependencies: ["1F3621FABA32DC6B"]
-			description: ["These &bCell Housings&r work the same way as the basic ones but you will need these to make the biggest disk from &dMEGA&r."]
+			description: ["{quests.ae2.mega_cell_housing.desc}"]
 			id: "0811468D614DE860"
 			tasks: [
 				{
@@ -1046,7 +1033,7 @@
 		}
 		{
 			dependencies: ["0DDA9B67B59A9481"]
-			description: ["With channels being enabled on &aTerraFirmaGreg&r you may want to learn about &dP2P&r.\\n\\nAs usual, we advise you to use the in-game guide for more detailed information.\\n\\nAnother advice, make the &bAdvanced Memory Card&r from &dBetter P2P&r as soon as possible. It will be a big help when using &dME P2P&r.\\n\\nYou can even place your &dME P2P Input&r on your ME Network ahead of time and connect them to an output whenever you need."]
+			description: ["{quests.ae2.p2p.desc}"]
 			id: "275963DA1B499986"
 			tasks: [
 				{
@@ -1064,6 +1051,7 @@
 						}
 					}
 					optional_task: true
+					title: "{quests.ae2.p2p.task}"
 					type: "item"
 				}
 				{
@@ -1085,15 +1073,17 @@
 							selectedIndex: { }
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
+			title: "{quests.ae2.p2p.title}"
 			x: 2.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["4F719A457E0C0AFB"]
-			description: ["The &bCell Workbench&r is your way to customize your storage cells.\\n\\nYou can set them with &aWhitelist&r/&cBlacklist&r filters or add upgrades like the &4Overflow Destruction Card&r — but be cautious with this one!"]
+			description: ["{quests.ae2.cell_workbench.desc}"]
 			id: "1D558BCDB40C80A6"
 			tasks: [
 				{
@@ -1118,7 +1108,7 @@
 		}
 		{
 			dependencies: ["5B4AD301357488D6"]
-			description: ["A &ebigger battery&r for a &abigger network&r, not much else but &6quite useful&r."]
+			description: ["{quests.ae2.mega_battery.desc}"]
 			id: "4DC682D5751B1179"
 			tasks: [{
 				id: "75FCBFDDCA91159E"
@@ -1134,7 +1124,11 @@
 		}
 		{
 			dependencies: ["5B4AD301357488D6"]
-			description: ["The &aME Requester&r may be one of your &6strongest tools&r if you want to have a base working mostly on &eauto-crafting&r and not passive.\\n\\nYou can set it up to &aauto-craft batches&r of an item when under a specific level.\\n\\nIf you are using a lot of &dCrafting Upgrades&r, you would be better to use this machine as it will be quite less &cTPS intensive&r.\\n\\nAlso notice that you can set your &bCrafting CPU&r to be &6dedicated to on-demand crafting&r or &aused through the Requester&r.\\n\\nGo have a look by opening their &eGUI&r.\\n\\nDon't forget to make a &bTerminal&r as it will ease your management if you have many &aME Requesters&r."]
+			description: [
+				"{quests.ae2.requester.desc.1}"
+				"{@pagebreak}"
+				"{quests.ae2.requester.desc.2}"
+			]
 			icon: "merequester:requester"
 			id: "40BA1FB9E1B550D0"
 			tasks: [
@@ -1146,6 +1140,7 @@
 				{
 					id: "61FCB18C45D6A10E"
 					item: "merequester:requester_terminal"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1154,7 +1149,7 @@
 		}
 		{
 			dependencies: ["6E4E5753CCEB3F95"]
-			description: ["&bEmitters&r and &bToggle Bus&r are your way to manage &cRedstone&r signals in &bAE2&r.\\n\\nCheck the in-game guide for more detailed information."]
+			description: ["{quests.ae2.emitters.desc}"]
 			id: "52FA85C11CFD07F3"
 			tasks: [
 				{
@@ -1165,21 +1160,25 @@
 				{
 					id: "4A34832473D16DED"
 					item: "ae2:energy_level_emitter"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "7B7AA3570B46D90A"
 					item: "expatternprovider:threshold_level_emitter"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "4BA3454532E5E184"
 					item: "ae2:toggle_bus"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "23DDBFFE02DA6F1A"
 					item: "ae2:inverted_toggle_bus"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1188,7 +1187,7 @@
 		}
 		{
 			dependencies: ["0DDA9B67B59A9481"]
-			description: ["These are the batteries for your ME Network. You may not need them at the beginning, but remember they exist — your energy cost could rise quickly, and losing your ME Network can be a really dangerous situation."]
+			description: ["{quests.ae2.batteries.desc}"]
 			id: "5C26DF08671274FE"
 			tasks: [
 				{
@@ -1216,13 +1215,8 @@
 		}
 		{
 			dependencies: ["378E2294EFD85C65"]
-			description: [
-				"You can rename easily any AE2 part with this knife. It can be quite useful especially for Pattern Provider as the name will appear in your Pattern Terminal."
-				""
-				"As an example &oAssembler HV #2&r as a name for the Pattern Provider would let you know easily that this Assembler HV is setup on Circuit 2."
-			]
+			description: ["{quests.ae2.cutting_knife.desc}"]
 			id: "13B0A0B4601F3959"
-			subtitle: "Organization is key"
 			tasks: [{
 				id: "508DE2D583EBD2AD"
 				item: {
@@ -1232,9 +1226,10 @@
 						"ftbfiltersystem:filter": "or(item(ae2:nether_quartz_cutting_knife)item(ae2:certus_quartz_cutting_knife))"
 					}
 				}
-				title: "Either of them"
+				title: "{quests.ae2.cutting_knife.task}"
 				type: "item"
 			}]
+			title: "{quests.ae2.cutting_knife.title}"
 			x: 0.0d
 			y: -10.5d
 		}
@@ -1242,13 +1237,11 @@
 			dependencies: ["378E2294EFD85C65"]
 			description: ["{quests.ae2.programmed_circuit_card.desc}"]
 			id: "51B34B3E51B6ECDD"
-			subtitle: "{quests.ae2.programmed_circuit_card.subtitle}"
 			tasks: [{
 				id: "295980339E1FE027"
 				item: "pccard:card_programmed_circuit"
 				type: "item"
 			}]
-			title: "{quests.ae2.programmed_circuit_card.title}"
 			x: 1.0d
 			y: -10.5d
 		}

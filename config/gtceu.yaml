@@ -400,15 +400,15 @@ client:
     # 3 - left-bottom corner
     # 4 - right-bottom corner
     # Default: 1
-    hudLocation: 1
+    hudLocation: 4
 
     # Horizontal offset of HUD.
     # Default: 0
-    hudOffsetX: 0
+    hudOffsetX: 3
 
     # Vertical offset of HUD.
     # Default: 0
-    hudOffsetY: 0
+    hudOffsetY: 3
 
   renderer:
     # Render fluids in multiblocks that support them?

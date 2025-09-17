@@ -24,28 +24,22 @@
 		],
 		[],
 		[
-			"tfg:earth/geode/amethyst",
-			"tfg:earth/geode/barite",
-			"tfg:earth/geode/calcite",
-			"tfg:earth/geode/gypsum",
-			"tfg:earth/geode/opal",
-			"tfg:earth/geode/pyrite",
-			"tfg:earth/geode/quartzite"
+			"tfg:mars/terrain/clay_disc",
+			"tfg:mars/terrain/peat_disc",
+			"tfg:mars/terrain/venus_sand_disc"
 		],
 		[],
 		[],
 		[],
 		"#tfg:mars_veins",
-		[
-			"tfg:mars/terrain/clay_disc",
-			"tfg:mars/terrain/peat_disc"
-		],
+		"#tfg:mars_underground_decoration",
 		[
 			"tfg:mars_forest",
 			"tfg:mars/semiheavy_ammoniacal_water",
 			"tfg:mars/surface/small_skull_and_bones",
 			"tfg:mars/surface/large_skull_and_bones",
-			"tfg:mars/surface/rotten_flesh_patch"
+			"tfg:mars/surface/rotten_flesh_patch",
+			"tfg:mars/surface/pile_venus_sand"
 		],
 		"#tfg:mars_sangnum_vegetal_decoration",
 		"#tfg:mars_top_layer_modification"
@@ -67,6 +61,14 @@
 		"minecraft:enderman": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"endermanoverhaul:cave_enderman": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"species:quake": {
+			"energy_budget": 0.2,
+			"charge": 0.7
 		}
 	},
 	"spawners": {
@@ -153,6 +155,24 @@
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 20
+			},
+			{
+				"type": "endermanoverhaul:cave_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "ad_astra:martian_raptor",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:quake",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [],

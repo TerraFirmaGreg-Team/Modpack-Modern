@@ -89,8 +89,8 @@ const registerTFCRecipes = (event) => {
 		const itemId = element.id;
 		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
 
-		generateGreenHouseRecipe(event, itemId, '#tfc:any_fresh_water', 8000, `8x ${itemId}`,
-			recipeId, null, 8, `16x ${itemId}`, GTValues.VH[GTValues.LV]);
+		generateGreenHouseRecipe(event, itemId, '#tfc:any_fresh_water', 8000, `8x ${itemId}`, 
+			recipeId, null, 8, itemId, GTValues.VH[GTValues.LV]);
 	});
 
 	//#endregion
@@ -330,4 +330,13 @@ const registerTFCRecipes = (event) => {
 		.inputFluid(Fluid.of('minecraft:water', 250))
 		.outputFluid(Fluid.of('tfc:salt_water', 250))
 		.id('tfg:barrel/water_to_salt_water_tfc')
+
+    // jute net -> burlap net
+    event.replaceInput({ id: 'tfc:crafting/jute_net'}, 'tfc:jute_fiber', '#tfg:burlap_fiber')
+
+    // horse armor to use burlap
+    global.TFC_EQUIPMENT_METALS.forEach(material => {
+        event.replaceInput({ id: `tfc:crafting/${material}_horse_armor`}, `tfc:jute_fiber`, `#tfg:burlap_fiber`)
+    })
+
 }

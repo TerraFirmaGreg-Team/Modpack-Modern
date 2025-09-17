@@ -16,7 +16,7 @@
 					"mars": {
 						"raw": "ad_astra:mars_stone",
 						"hardened": "tfg:rock/hardened_mars_stone",
-						"gravel": "ad_astra:mars_cobblestone",
+						"gravel": "tfg:rock/gravel_mars",
 						"cobble": "ad_astra:mars_cobblestone",
 						"sand": "ad_astra:mars_sand",
 						"sandstone": "ad_astra:mars_stone",
@@ -26,7 +26,7 @@
 					"venus": {
 						"raw": "ad_astra:venus_stone",
 						"hardened": "tfg:rock/hardened_venus_stone",
-						"gravel": "ad_astra:venus_cobblestone",
+						"gravel": "tfg:rock/gravel_venus",
 						"cobble": "ad_astra:venus_cobblestone",
 						"sand": "ad_astra:venus_sand",
 						"sandstone": "ad_astra:venus_sandstone",
@@ -36,7 +36,7 @@
 					"red_granite": {
 						"raw": "gtceu:red_granite",
 						"hardened": "tfg:rock/hardened_red_granite",
-						"gravel": "gtceu:red_granite_cobblestone",
+						"gravel": "tfg:rock/gravel_red_granite",
 						"cobble": "gtceu:red_granite_cobblestone",
 						"sand": "minecraft:red_sand",
 						"sandstone": "minecraft:red_sandstone",
@@ -146,24 +146,12 @@
 							"weirdness": [ -1, 1 ]
 						}
 					},
-					{
-						"biome": "tfg:mars/martian_river",
-						"parameters": {
-							"continentalness": [ 0.01, 1 ],
-							"depth": 0,
-							"erosion": [ 0, 1 ],
-							"humidity": [ -1, 1 ],
-							"offset": 0,
-							"temperature": [ -1, 1 ],
-							"weirdness": [ -0.07, 0.07 ]
-						}
-					},
 
 
 					{
 						"biome": "tfg:mars/amber_edge",
 						"parameters": {
-							"continentalness": [ -0.16, -0.09 ],
+							"continentalness": [ -0.16, -0.07 ],
 							"depth": 0,
 							"erosion": [ -1, 1 ],
 							"humidity": [ -1, 1 ],
@@ -175,7 +163,7 @@
 					{
 						"biome": "tfg:mars/rusticus_edge",
 						"parameters": {
-							"continentalness": [ -0.16, -0.09 ],
+							"continentalness": [ -0.16, -0.07 ],
 							"depth": 0,
 							"erosion": [ -1, 1 ],
 							"humidity": [ -1, 1 ],
@@ -187,7 +175,7 @@
 					{
 						"biome": "tfg:mars/sangnum_edge",
 						"parameters": {
-							"continentalness": [ -0.16, -0.09 ],
+							"continentalness": [ -0.16, -0.07 ],
 							"depth": 0,
 							"erosion": [ -1, 1 ],
 							"humidity": [ -1, 1 ],
@@ -198,11 +186,24 @@
 					},
 
 
+					{
+						"biome": "tfg:mars/martian_river",
+						"parameters": {
+							"continentalness": [ -0.07, 0.65 ],
+							"depth": 0,
+							"erosion": [ 0, 1 ],
+							"humidity": [ -1, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -0.07, 0.07 ]
+						}
+					},
+
 
 					{
 						"biome": "tfg:mars/amber_plains",
 						"parameters": {
-							"continentalness": [ -0.09, 0.4 ],
+							"continentalness": [ -0.07, 0.65 ],
 							"depth": 0,
 							"erosion": [ 0, 1 ],
 							"humidity": [ -0.2, 0.2 ],
@@ -214,7 +215,7 @@
 					{
 						"biome": "tfg:mars/rusticus_plains",
 						"parameters": {
-							"continentalness": [ -0.09, 0.4 ],
+							"continentalness": [ -0.07, 0.65 ],
 							"depth": 0,
 							"erosion": [ 0, 1 ],
 							"humidity": [ -0.2, 0.2 ],
@@ -227,7 +228,7 @@
 					{
 						"biome": "tfg:mars/rusticus_plains",
 						"parameters": {
-							"continentalness": [ -0.09, 0.4 ],
+							"continentalness": [ -0.07, 0.65 ],
 							"depth": 0,
 							"erosion": [ 0, 1 ],
 							"humidity": [ -1, -0.2 ],
@@ -239,7 +240,7 @@
 					{
 						"biome": "tfg:mars/sangnum_plains",
 						"parameters": {
-							"continentalness": [ -0.09, 0.4 ],
+							"continentalness": [ -0.07, 0.65 ],
 							"depth": 0,
 							"erosion": [ 0, 1 ],
 							"humidity": [ -1, -0.2 ],
@@ -252,7 +253,7 @@
 					{
 						"biome": "tfg:mars/sangnum_plains",
 						"parameters": {
-							"continentalness": [ -0.09, 0.4 ],
+							"continentalness": [ -0.07, 0.65 ],
 							"depth": 0,
 							"erosion": [ 0, 1 ],
 							"humidity": [ 0.2, 1 ],
@@ -264,7 +265,7 @@
 					{
 						"biome": "tfg:mars/amber_plains",
 						"parameters": {
-							"continentalness": [ -0.09, 0.4 ],
+							"continentalness": [ -0.07, 0.65 ],
 							"depth": 0,
 							"erosion": [ 0, 1 ],
 							"humidity": [ 0.2, 1 ],
@@ -279,7 +280,7 @@
 					{
 						"biome": "tfg:mars/rusticus_hills",
 						"parameters": {
-							"continentalness": [ 0.1, 0.4 ],
+							"continentalness": [ -0.07, 0.65 ],
 							"depth": 0,
 							"erosion": [ -1, 0 ],
 							"humidity": [ -0.2, 0.2 ],
@@ -291,7 +292,7 @@
 					{
 						"biome": "tfg:mars/sangnum_hills",
 						"parameters": {
-							"continentalness": [ 0.1, 0.4 ],
+							"continentalness": [ -0.07, 0.65 ],
 							"depth": 0,
 							"erosion": [ -1, 0 ],
 							"humidity": [ -0.2, 0.2 ],
@@ -304,7 +305,7 @@
 					{
 						"biome": "tfg:mars/sangnum_hills",
 						"parameters": {
-							"continentalness": [ 0.1, 0.4 ],
+							"continentalness": [ -0.07, 0.65 ],
 							"depth": 0,
 							"erosion": [ -1, 0 ],
 							"humidity": [ -1, -0.2 ],
@@ -316,7 +317,7 @@
 					{
 						"biome": "tfg:mars/amber_hills",
 						"parameters": {
-							"continentalness": [ 0.1, 0.4 ],
+							"continentalness": [ -0.07, 0.65 ],
 							"depth": 0,
 							"erosion": [ -1, 0 ],
 							"humidity": [ -1, -0.2 ],
@@ -329,7 +330,7 @@
 					{
 						"biome": "tfg:mars/amber_hills",
 						"parameters": {
-							"continentalness": [ 0.1, 0.4 ],
+							"continentalness": [ -0.07, 0.65 ],
 							"depth": 0,
 							"erosion": [ -1, 0 ],
 							"humidity": [ 0.2, 1 ],
@@ -341,7 +342,7 @@
 					{
 						"biome": "tfg:mars/rusticus_hills",
 						"parameters": {
-							"continentalness": [ 0.1, 0.4 ],
+							"continentalness": [ -0.07, 0.65 ],
 							"depth": 0,
 							"erosion": [ -1, 0 ],
 							"humidity": [ 0.2, 1 ],
@@ -356,75 +357,75 @@
 					{
 						"biome": "tfg:mars/rusticus_hills",
 						"parameters": {
-							"continentalness": [ 0.4, 0.7 ],
+							"continentalness": [ 0.65, 1 ],
 							"depth": 0,
 							"erosion": [ -1, 1 ],
 							"humidity": [ -0.2, 0.2 ],
 							"offset": 0,
 							"temperature": [ -1, 1 ],
-							"weirdness": [ 0, 1 ]
+							"weirdness": [ 0, 0.8 ]
 						}
 					},
 					{
 						"biome": "tfg:mars/sangnum_hills",
 						"parameters": {
-							"continentalness": [ 0.4, 0.7 ],
+							"continentalness": [ 0.65, 1 ],
 							"depth": 0,
 							"erosion": [ -1, 1 ],
 							"humidity": [ -0.2, 0.2 ],
 							"offset": 0,
 							"temperature": [ -1, 1 ],
-							"weirdness": [ -1, 0 ]
+							"weirdness": [ -0.8, 0 ]
 						}
 					},
 
 					{
 						"biome": "tfg:mars/sangnum_hills",
 						"parameters": {
-							"continentalness": [ 0.4, 0.7 ],
+							"continentalness": [ 0.65, 1 ],
 							"depth": 0,
 							"erosion": [ -1, 1 ],
 							"humidity": [ -1, -0.2 ],
 							"offset": 0,
 							"temperature": [ -1, 1 ],
-							"weirdness": [ 0, 1 ]
+							"weirdness": [ 0, 0.8 ]
 						}
 					},
 					{
 						"biome": "tfg:mars/amber_hills",
 						"parameters": {
-							"continentalness": [ 0.4, 0.7 ],
+							"continentalness": [ 0.65, 1 ],
 							"depth": 0,
 							"erosion": [ -1, 1 ],
 							"humidity": [ -1, -0.2 ],
 							"offset": 0,
 							"temperature": [ -1, 1 ],
-							"weirdness": [ -1, 0 ]
+							"weirdness": [ -0.8, 0 ]
 						}
 					},
 
 					{
 						"biome": "tfg:mars/amber_hills",
 						"parameters": {
-							"continentalness": [ 0.4, 0.7 ],
+							"continentalness": [ 0.65, 1 ],
 							"depth": 0,
 							"erosion": [ -1, 1 ],
 							"humidity": [ 0.2, 1 ],
 							"offset": 0,
 							"temperature": [ -1, 1 ],
-							"weirdness": [ 0, 1 ]
+							"weirdness": [ 0, 0.8 ]
 						}
 					},
 					{
 						"biome": "tfg:mars/rusticus_hills",
 						"parameters": {
-							"continentalness": [ 0.4, 0.7 ],
+							"continentalness": [ 0.65, 1 ],
 							"depth": 0,
 							"erosion": [ -1, 1 ],
 							"humidity": [ 0.2, 1 ],
 							"offset": 0,
 							"temperature": [ -1, 1 ],
-							"weirdness": [ -1, 0 ]
+							"weirdness": [ -0.8, 0 ]
 						}
 					},
 
@@ -439,7 +440,19 @@
 							"humidity": [ -1, 1 ],
 							"offset": 0,
 							"temperature": [ -1, 1 ],
-							"weirdness": [ -1, 1 ]
+							"weirdness": [ -1, -0.8 ]
+						}
+					},
+					{
+						"biome": "tfg:mars/martian_mountains",
+						"parameters": {
+							"continentalness": [ 0.65, 1 ],
+							"depth": 0,
+							"erosion": [ -1, 1 ],
+							"humidity": [ -1, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ 0.8, 1 ]
 						}
 					}
 				]

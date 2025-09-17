@@ -10,14 +10,14 @@
 		},
 		{
 			"type": "minecraft:heightmap",
-			"heightmap": "WORLD_SURFACE_WG"
+			"heightmap": "OCEAN_FLOOR_WG"
 		},
 		{
 			"type": "minecraft:biome"
 		},
 		{
 			"type": "tfc:climate",
-			"min_forest": "sparse"
+			"min_forest": "edge"
 		}
 	]
 }

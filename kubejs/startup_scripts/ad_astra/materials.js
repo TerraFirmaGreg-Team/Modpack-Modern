@@ -24,7 +24,7 @@ const registerAdAstraMaterials = (event) => {
 		.addOreByproducts('olivine', 'rutile', 'rutile')
 		.ingot()
 		.liquid()
-		.blastTemp(2000, 'low', GTValues.VA[GTValues.MV])
+		.blastTemp(2800, 'mid', GTValues.VA[GTValues.HV])
 		.flags(
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
 			GTMaterialFlags.GENERATE_PLATE, 
@@ -37,18 +37,18 @@ const registerAdAstraMaterials = (event) => {
 
 	// mars
 	event.create('ostrum')
-		//.components('3x scheelite', '2x hematite', '2x thorium', '4x oxygen')
+		.components('2x pitchblende', '1x tricalcium_phosphate', '1x bauxite', '1x silver', '1x beryllium')
 		.color(0xbd7980)
 		.secondaryColor(0xA66C8D)
 		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
 		.ingot()
 		.liquid()
-		.blastTemp(2900, 'mid', GTValues.VA[GTValues.HV])
+		.blastTemp(3700, 'mid', GTValues.VA[GTValues.EV])
 		.flags(
+			GTMaterialFlags.DISABLE_DECOMPOSITION,
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
 			GTMaterialFlags.GENERATE_PLATE,
 			GTMaterialFlags.DISABLE_ALLOY_BLAST
-
 		)
 
 	// venus?

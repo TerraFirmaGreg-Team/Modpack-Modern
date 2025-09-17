@@ -1,0 +1,26 @@
+{
+	"feature": "tfg:mars/surface/charnia",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 4
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR"
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_fluids",
+				"fluids": "tfg:semiheavy_ammoniacal_water"
+			}
+		}
+	]
+}

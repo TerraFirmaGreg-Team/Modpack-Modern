@@ -239,17 +239,19 @@ function registerGTCEuMachineRecipes(event) {
 	//#region CokeOven
 
 	// Coke Oven
-	event.shaped('gtceu:coke_oven', [
+	removeMaceratorRecipe(event, 'macerate_coke_oven')
+	event.recipes.gtceu.shaped('gtceu:coke_oven', [
 		'ABA',
 		'BCB',
 		'ABA'
 	], {
 		A: 'gtceu:coke_oven_bricks',
-		B: '#forge:plates/wrought_iron',
+		B: ChemicalHelper.get(TagPrefix.plate, GTMaterials.WroughtIron, 1),
 		C: '#forge:tools/wrenches'
-	}).id('gtceu:shaped/coke_oven')
+	}).addMaterialInfo().id('gtceu:shaped/coke_oven')
 
 	// Coke Oven Hatch
+	removeMaceratorRecipe(event, 'macerate_coke_oven_hatch')
 	event.recipes.tfc.no_remainder_shaped_crafting(
 		event.shaped('gtceu:coke_oven_hatch', [
 			'AB'
@@ -261,157 +263,164 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#endregion
 
-	// High Pressure Steam Miner
-	event.replaceInput({ id: 'gtceu:shaped/steam_miner_steel' },
-		'gtceu:lp_steam_miner', 'gtceu:steel_brick_casing')
-
 	//#region Выход: Стальные машины
 
 	// HP Steam Boilers
-	event.shaped('gtceu:hp_steam_solid_boiler', [
+	removeMaceratorRecipe(event, 'macerate_hp_steam_solid_boiler')
+	event.recipes.gtceu.shaped('gtceu:hp_steam_solid_boiler', [
 		'AEA',
 		'ADA',
 		'BCB'
 	], {
-		A: '#forge:plates/steel',
-		B: 'gtceu:tin_alloy_small_fluid_pipe',
+		A: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Steel, 1),
+		B: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.TinAlloy, 1),
 		C: 'gtceu:steel_brick_casing',
 		D: 'tfc:crucible',
-		E: '#forge:rods/black_steel'
-	}).id('gtceu:shaped/steam_boiler_coal_steel')
-
-	event.shaped('gtceu:hp_steam_liquid_boiler', [
+		E: ChemicalHelper.get(TagPrefix.rod, GTMaterials.BlackSteel, 1)
+	}).addMaterialInfo().id('gtceu:shaped/steam_boiler_coal_steel')
+	
+	removeMaceratorRecipe(event, 'macerate_hp_steam_liquid_boiler')
+	event.recipes.gtceu.shaped('gtceu:hp_steam_liquid_boiler', [
 		'AEA',
 		'ADA',
 		'BCB'
 	], {
-		A: '#forge:plates/steel',
-		B: 'gtceu:tin_alloy_small_fluid_pipe',
+		A: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Steel, 1),
+		B: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.TinAlloy, 1),
 		C: 'gtceu:steel_brick_casing',
 		D: '#forge:glass',
-		E: '#forge:rods/black_steel'
-	}).id('gtceu:shaped/steam_boiler_lava_steel')
-
-	event.shaped('gtceu:hp_steam_solar_boiler', [
+		E: ChemicalHelper.get(TagPrefix.rod, GTMaterials.BlackSteel, 1)
+	}).addMaterialInfo().id('gtceu:shaped/steam_boiler_lava_steel')
+	
+	removeMaceratorRecipe(event, 'macerate_hp_steam_solar_boiler')
+	event.recipes.gtceu.shaped('gtceu:hp_steam_solar_boiler', [
 		'AAA',
 		'BCB',
 		'EDE'
 	], {
 		A: '#forge:glass_panes',
-		B: '#forge:double_plates/silver',
-		C: '#forge:rods/black_steel',
+		B: ChemicalHelper.get(TagPrefix.plateDouble, GTMaterials.Silver, 1),
+		C: ChemicalHelper.get(TagPrefix.rod, GTMaterials.BlackSteel, 1),
 		D: 'gtceu:steel_brick_casing',
-		E: 'gtceu:tin_alloy_small_fluid_pipe',
-	}).id('gtceu:shaped/steam_boiler_solar_steel')
+		E: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.TinAlloy, 1),
+	}).addMaterialInfo().id('gtceu:shaped/steam_boiler_solar_steel')
 
 	// Экстрактор
-	event.shaped('gtceu:hp_steam_extractor', [
+	removeMaceratorRecipe(event, 'macerate_hp_steam_extractor')
+	event.recipes.gtceu.shaped('gtceu:hp_steam_extractor', [
 		'BEB',
 		'CAC',
 		'DFD'
 	], {
 		A: 'gtceu:steel_brick_casing',
-		B: 'gtceu:tin_alloy_small_fluid_pipe',
-		C: '#forge:plates/steel',
-		D: '#forge:plates/wrought_iron',
+		B: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.TinAlloy, 1),
+		C: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Steel, 1),
+		D: ChemicalHelper.get(TagPrefix.plate, GTMaterials.WroughtIron, 1),
 		E: '#forge:glass_panes',
-		F: '#forge:rings/black_steel'
-	}).id('gtceu:shaped/steam_extractor_steel')
+		F: ChemicalHelper.get(TagPrefix.ring, GTMaterials.BlackSteel, 1)
+	}).addMaterialInfo().id('gtceu:shaped/steam_extractor_steel')
 
 	// Дробитель
-	event.shaped('gtceu:hp_steam_macerator', [
+	removeMaceratorRecipe(event, 'macerate_hp_steam_macerator')
+	event.recipes.gtceu.shaped('gtceu:hp_steam_macerator', [
 		'BFB',
 		'CAC',
 		'DED'
 	], {
 		A: 'gtceu:steel_brick_casing',
 		B: '#forge:small_gears/wrought_iron',
-		C: '#forge:plates/steel',
-		D: '#forge:rods/black_steel',
-		E: 'gtceu:tin_alloy_small_fluid_pipe',
+		C: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Steel, 1),
+		D: ChemicalHelper.get(TagPrefix.rod, GTMaterials.BlackSteel, 1),
+		E: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.TinAlloy, 1),
 		F: '#forge:raw_materials/diamond'
-	}).id('gtceu:shaped/steam_macerator_steel')
+	}).addMaterialInfo().id('gtceu:shaped/steam_macerator_steel')
 
 	// Компрессор
-	event.shaped('gtceu:hp_steam_compressor', [
+	removeMaceratorRecipe(event, 'macerate_hp_steam_compressor')
+	event.recipes.gtceu.shaped('gtceu:hp_steam_compressor', [
 		'BCB',
 		'EAE',
 		'DFD'
 	], {
 		A: 'gtceu:steel_brick_casing',
-		B: 'gtceu:tin_alloy_small_fluid_pipe',
-		C: '#forge:plates/steel',
-		D: '#forge:plates/wrought_iron',
+		B: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.TinAlloy, 1),
+		C: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Steel, 1),
+		D: ChemicalHelper.get(TagPrefix.plate, GTMaterials.WroughtIron, 1),
 		E: 'minecraft:piston',
-		F: '#forge:rods/black_steel'
-	}).id('gtceu:shaped/steam_compressor_steel')
+		F: ChemicalHelper.get(TagPrefix.rod, GTMaterials.BlackSteel, 1)
+	}).addMaterialInfo().id('gtceu:shaped/steam_compressor_steel')
 
 	// Молот
-	event.shaped('gtceu:hp_steam_forge_hammer', [
+	removeMaceratorRecipe(event, 'macerate_hp_steam_forge_hammer')
+	event.recipes.gtceu.shaped('gtceu:hp_steam_forge_hammer', [
 		'DFD',
 		'BEB',
 		'CAC'
 	], {
 		A: 'gtceu:steel_brick_casing',
-		B: 'gtceu:tin_alloy_small_fluid_pipe',
-		C: '#forge:plates/steel',
-		D: '#forge:plates/wrought_iron',
-		E: '#forge:ingots/black_steel',
+		B: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.TinAlloy, 1),
+		C: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Steel, 1),
+		D: ChemicalHelper.get(TagPrefix.plate, GTMaterials.WroughtIron, 1),
+		E: ChemicalHelper.get(TagPrefix.ingot, GTMaterials.BlackSteel, 1),
 		F: 'minecraft:piston'
-	}).id('gtceu:shaped/steam_hammer_steel')
+	}).addMaterialInfo().id('gtceu:shaped/steam_hammer_steel')
 
 	// Печь
-	event.shaped('gtceu:hp_steam_furnace', [
+	removeMaceratorRecipe(event, 'macerate_hp_steam_furnace')
+	event.recipes.gtceu.shaped('gtceu:hp_steam_furnace', [
 		'BCB',
 		'DAD',
 		'FFF'
 	], {
 		A: 'gtceu:steel_brick_casing',
-		B: 'gtceu:tin_alloy_small_fluid_pipe',
-		C: '#forge:plates/steel',
-		D: '#forge:plates/wrought_iron',
-		F: '#forge:rods/black_steel'
-	}).id('gtceu:shaped/steam_furnace_steel')
+		B: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.TinAlloy, 1),
+		C: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Steel, 1),
+		D: ChemicalHelper.get(TagPrefix.plate, GTMaterials.WroughtIron, 1),
+		F: ChemicalHelper.get(TagPrefix.rod, GTMaterials.BlackSteel, 1)
+	}).addMaterialInfo().id('gtceu:shaped/steam_furnace_steel')
 
 	// Сплавщик
-	event.shaped('gtceu:hp_steam_alloy_smelter', [
+	removeMaceratorRecipe(event, 'macerate_hp_steam_alloy_smelter')
+	event.recipes.gtceu.shaped('gtceu:hp_steam_alloy_smelter', [
 		'FCF',
 		'DAD',
 		'CBC'
 	], {
 		A: 'gtceu:steel_brick_casing',
-		B: 'gtceu:tin_alloy_small_fluid_pipe',
-		C: '#forge:plates/steel',
-		D: '#forge:plates/wrought_iron',
-		F: '#forge:rods/black_steel'
-	}).id('gtceu:shaped/steam_alloy_smelter_steel')
+		B: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.TinAlloy, 1),
+		C: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Steel, 1),
+		D: ChemicalHelper.get(TagPrefix.plate, GTMaterials.WroughtIron, 1),
+		F: ChemicalHelper.get(TagPrefix.rod, GTMaterials.BlackSteel, 1)
+	}).addMaterialInfo().id('gtceu:shaped/steam_alloy_smelter_steel')
 
 	// Блоко-ломатель
-	event.shaped('gtceu:hp_steam_rock_crusher', [
+	removeMaceratorRecipe(event, 'macerate_hp_steam_rock_crusher')
+	event.recipes.gtceu.shaped('gtceu:hp_steam_rock_crusher', [
 		'ECE',
 		'BAB',
 		'DDD'
 	], {
 		A: 'gtceu:steel_brick_casing',
-		B: 'gtceu:tin_alloy_small_fluid_pipe',
+		B: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.TinAlloy, 1),
 		C: '#forge:drill_heads',
-		D: '#forge:rods/wrought_iron',
-		E: '#forge:screws/wrought_iron'
-	}).id('gtceu:shaped/steam_rock_breaker_steel')
+		D: ChemicalHelper.get(TagPrefix.rod, GTMaterials.WroughtIron, 1),
+		E: ChemicalHelper.get(TagPrefix.screw, GTMaterials.WroughtIron, 1)
+	}).addMaterialInfo().id('gtceu:shaped/steam_rock_breaker_steel')
 
 	// Miner
-	event.shaped('gtceu:hp_steam_miner', [
+	removeMaceratorRecipe(event, 'macerate_hp_steam_miner')
+	event.recipes.gtceu.shaped('gtceu:hp_steam_miner', [
 		'EFE',
 		'BAB',
 		'DCD'
 	], {
 		A: 'gtceu:steel_brick_casing',
-		B: 'gtceu:tin_alloy_small_fluid_pipe',
+		B: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.TinAlloy, 1),
 		C: '#forge:drill_heads',
-		D: '#forge:rods/steel',
-		E: '#forge:plates/wrought_iron',
+		D: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 1),
+		E: ChemicalHelper.get(TagPrefix.plate, GTMaterials.WroughtIron, 1),
 		F: '#gtceu:circuits/ulv'
-	}).id('gtceu:shaped/steam_miner_steel')
+	}).addMaterialInfo().id('gtceu:shaped/steam_miner_steel')
 
 	//#endregion
 
@@ -587,7 +596,7 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#region ULV Hatches
 
-	event.recipes.shaped('gtceu:ulv_input_bus', [
+	event.recipes.gtceu.shaped('gtceu:ulv_input_bus', [
 		'CAC',
 		'CBC',
 		'CDC'
@@ -598,7 +607,7 @@ function registerGTCEuMachineRecipes(event) {
 		D: '#forge:tools/wrenches'
 	}).id('gtceu:shaped/ulv_input_bus')
 
-	event.recipes.shaped('gtceu:ulv_output_bus', [
+	event.recipes.gtceu.shaped('gtceu:ulv_output_bus', [
 		'CDC',
 		'CBC',
 		'CAC'
@@ -609,7 +618,7 @@ function registerGTCEuMachineRecipes(event) {
 		D: '#forge:tools/wrenches'
 	}).id('gtceu:shaped/ulv_output_bus')
 
-	event.recipes.shaped('gtceu:ulv_input_hatch', [
+	event.recipes.gtceu.shaped('gtceu:ulv_input_hatch', [
 		'CAC',
 		'CBC',
 		'CDC'
@@ -620,7 +629,7 @@ function registerGTCEuMachineRecipes(event) {
 		D: '#forge:tools/wrenches'
 	}).id('gtceu:shaped/ulv_input_hatch')
 
-	event.recipes.shaped('gtceu:ulv_output_hatch', [
+	event.recipes.gtceu.shaped('gtceu:ulv_output_hatch', [
 		'CDC',
 		'CBC',
 		'CAC'
@@ -668,53 +677,6 @@ function registerGTCEuMachineRecipes(event) {
 		.duration(400)
 
 	//#endregion
-
-	// #region Assembly line stack size problems
-
-	event.remove({ id: 'gtceu:assembly_line/high_performance_computing_array' })
-	event.recipes.gtceu.assembly_line('high_performace_computing_array')
-		.itemInputs('gtceu:data_bank',
-			'4x #gtceu:circuits/zpm',
-			'8x gtceu:luv_field_generator',
-			'gtceu:data_orb',
-			'gtceu:computer_monitor_cover',
-			'32x #forge:double_wires/uranium_rhodium_dinaquadide',
-			'32x #forge:double_wires/uranium_rhodium_dinaquadide',
-			'16x gtceu:normal_optical_pipe')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 1152),
-			Fluid.of('gtceu:vanadium_gallium', 1152),
-			Fluid.of('gtceu:pcb_coolant', 4000))
-		.itemOutputs('gtceu:high_performance_computation_array')
-		.duration(60 * 20)
-		.EUt(100000)
-	["scannerResearch(java.util.function.UnaryOperator)"](b =>
-		b.researchStack(Item.of('gtceu:computer_monitor_cover')).EUt(GTValues.VA[GTValues.IV]).duration(120 * 20))
-
-	event.remove({ id: 'gtceu:assembly_line/ultimate_battery' })
-	event.recipes.gtceu.assembly_line('ultimate_battery')
-		.itemInputs('16x #forge:double_plates/darmstadtium',
-			'4x #gtceu:circuits/uhv',
-			'16x gtceu:energy_cluster',
-			'4x gtceu:uv_field_generator',
-			'64x gtceu:uhpic_wafer',
-			'64x gtceu:uhpic_wafer',
-			'64x gtceu:advanced_smd_diode',
-			'64x gtceu:advanced_smd_capacitor',
-			'64x gtceu:advanced_smd_resistor',
-			'64x gtceu:advanced_smd_transistor',
-			'64x gtceu:advanced_smd_inductor',
-			'32x gtceu:enriched_naquadah_trinium_europium_duranide_double_wire',
-			'64x #forge:bolts/neutronium')
-		.inputFluids(
-			Fluid.of('gtceu:soldering_alloy', 5760),
-			Fluid.of('gtceu:polybenzimidazole', 2304),
-			Fluid.of('gtceu:naquadria', 2592))
-		.itemOutputs('gtceu:max_battery')
-		.duration(100 * 20)
-		.EUt(300000)
-		.stationResearch(b => b.researchStack(Item.of('gtceu:energy_cluster')).EUt(GTValues.VA[GTValues.UHV]).CWUt(144))
-
-	// #endregion
 
 	// Drums
 	const DRUMS_AND_CRATES = [
@@ -799,8 +761,25 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#forge:tools/saws'
 	}).id('tfg:shaped/wooden_crate_wrought_iron')
 
-	event.recipes.gtceu.assembler('gtceu:wood_crate')
+	event.recipes.gtceu.assembler('tfg:wood_crate')
 		.itemInputs('4x #minecraft:planks', '4x #forge:screws/wrought_iron')
+		.itemOutputs('gtceu:wood_crate')
+		.duration(100)
+		.EUt(16)
+		.circuit(5)
+
+	event.recipes.shaped('gtceu:wood_crate', [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: '#forge:screws/any_bronze',
+		B: '#minecraft:planks',
+		C: '#forge:tools/saws'
+	}).id('tfg:shaped/wooden_crate_bronze')
+
+	event.recipes.gtceu.assembler('tfg:wood_crate_bronze')
+		.itemInputs('4x #minecraft:planks', '4x #forge:screws/any_bronze')
 		.itemOutputs('gtceu:wood_crate')
 		.duration(100)
 		.EUt(16)
@@ -808,61 +787,62 @@ function registerGTCEuMachineRecipes(event) {
 
 	// Steam multi parts
 
-	event.shaped('gtceu:steel_machine_casing', [
+	removeMaceratorRecipe(event, 'macerate_steel_machine_casing')
+	event.recipes.gtceu.shaped('gtceu:steel_machine_casing', [
 		' A ',
 		'ABA',
 		' A '
 	], {
-		A: '#forge:ingots/steel',
+		A: ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 1),
 		B: '#forge:tools/hammers'
-	}).id('gtceu:shaped/steel_hull')
-
-	event.shaped('gtceu:steam_input_hatch', [
+	}).addMaterialInfo().id('gtceu:shaped/steel_hull')
+	
+	removeMaceratorRecipe(event, 'macerate_steam_input_hatch')
+	event.recipes.gtceu.shaped('gtceu:steam_input_hatch', [
 		'ACA',
 		' B ',
 		'ACA'
 	], {
-		A: '#forge:screws/wrought_iron',
+		A: ChemicalHelper.get(TagPrefix.screw, GTMaterials.WroughtIron, 1),
 		B: 'gtceu:steel_machine_casing',
-		C: '#forge:small_fluid_pipes/steel'
-	}).id('gtceu:shaped/steam_hatch')
-
-	event.shaped('gtceu:steam_grinder', [
+		C: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.Steel, 1)
+	}).addMaterialInfo().id('gtceu:shaped/steam_hatch')
+	
+	removeMaceratorRecipe(event, 'macerate_steam_grinder')
+	event.recipes.gtceu.shaped('gtceu:steam_grinder', [
 		'ABA',
 		'ACA',
 		'ABA'
 	], {
-		A: 'gtceu:steam_machine_casing',
-		B: '#forge:gears/invar',
+		A: 'gtceu:bronze_plate',
+		B: ChemicalHelper.get(TagPrefix.gear, GTMaterials.Invar, 1),
 		C: 'gtceu:hp_steam_macerator'
-	}).id('gtceu:shaped/steam_grinder')
-
-	event.shaped('gtceu:steam_oven', [
+	}).addMaterialInfo().id('gtceu:shaped/steam_grinder')
+	
+	removeMaceratorRecipe(event, 'macerate_steam_oven')
+	event.recipes.gtceu.shaped('gtceu:steam_oven', [
 		'ABA',
 		'ACA',
 		'ABA'
 	], {
-		A: 'gtceu:steam_machine_casing',
+		A: 'gtceu:bronze_plate',
 		B: 'gtceu:heatproof_machine_casing',
 		C: 'gtceu:hp_steam_furnace'
-	}).id('gtceu:shaped/steam_oven')
+	}).addMaterialInfo().id('gtceu:shaped/steam_oven')
 
 	event.replaceInput({ id: 'gtceu:shaped/hv_cutter' }, 'gtceu:red_steel_buzz_saw_blade', 'gtceu:diamond_buzz_saw_blade')
 
+	removeMaceratorRecipe(event, 'macerate_steam_input_bus')
+	event.recipes.gtceu.shaped('gtceu:steam_input_bus', ['A', 'B'], {
+		A: '#forge:chests/wooden',
+		B: 'gtceu:steam_machine_casing'
+	}).addMaterialInfo().id('gtceu:shaped/steam_input_bus')
 
-	event.replaceOutput({ id: 'gtceu:macerator/macerate_steel_machine_casing' }, 'gtceu:steel_dust', '4x gtceu:steel_dust')
-	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steel_machine_casing' }, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
-
-	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_bus' }, 'gtceu:steel_dust', '4x gtceu:steel_dust')
-	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_bus' }, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
-	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_output_bus' }, 'gtceu:steel_dust', '4x gtceu:steel_dust')
-	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_output_bus' }, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
-
-	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_hatch' }, 'gtceu:steel_dust', '6x gtceu:steel_dust')
-	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_hatch' }, 'gtceu:steel_block', '6x gtceu:steel_ingot')
-
-	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_hatch' }, 'gtceu:steel_dust', '6x gtceu:steel_dust')
-	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_hatch' }, 'gtceu:steel_block', '6x gtceu:steel_ingot')
+	removeMaceratorRecipe(event, 'macerate_steam_output_bus')
+	event.recipes.gtceu.shaped('gtceu:steam_output_bus', ['B', 'A'], {
+		A: '#forge:chests/wooden',
+		B: 'gtceu:steam_machine_casing'
+	}).addMaterialInfo().id('gtceu:shaped/steam_output_bus')
 
 	//#region Chipboard Composite
 
@@ -1155,10 +1135,10 @@ function registerGTCEuMachineRecipes(event) {
 
 	// Multiblock
 
-	/* LOCKED UNTIL VENUS
+	/* LOCKED UNTIL MARS
 
 	event.shaped(
-		'gtceu:extraterrestrial_ore_fabricator',
+		'gtceu:ostrum_linear_accelerator',
 		[	'USU',
 			'WZW',
 			'PTP'],
@@ -1170,7 +1150,7 @@ function registerGTCEuMachineRecipes(event) {
 			T: '#forge:single_cables/platinum',
 			P: 'gtceu:iv_electric_pump'
 		}
-	).id('gtceu:shaped/extraterrestrial_ore_fabricator')
+	).id('gtceu:shaped/ostrum_linear_accelerator')
 
 	*/
 
