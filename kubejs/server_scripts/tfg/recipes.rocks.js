@@ -652,6 +652,9 @@ function registerTFGRockRecipes(event) {
 					.category(GTRecipeCategories.MACERATOR_RECYCLING)
 			}
 		}
+		if (x.slab != null && x.wall != null) {
+			event.recipes.tfc.chisel(x.wall, x.slab, 'smooth')
+		}
 
 		if (x.loose != null) {
 			event.shapeless(`4x ${x.loose}`, [x.raw])

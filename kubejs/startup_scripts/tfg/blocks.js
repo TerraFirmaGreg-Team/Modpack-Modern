@@ -271,7 +271,7 @@ const registerTFGBlocks = (event) => {
 	SHAPES.forEach(shape => {
 		event.create(`tfg:rock/cracked_bricks_stone_${shape}`, shape)
 			.soundType('stone')
-			.textureAll('minecraft:block/smooth_stone')
+			.textureAll('minecraft:block/cracked_stone_bricks')
 			.tagBoth(`tfg:brick_${shape}s`.replace(/ss/g, 's'))
 			.mapColor('stone')
 			.tagBlock('minecraft:mineable/pickaxe')
