@@ -15,6 +15,10 @@
 			},
 			"placement": [
 				{
+					"type": "minecraft:heightmap",
+					"heightmap": "OCEAN_FLOOR"
+				},
+				{
 					"type": "minecraft:block_predicate_filter",
 					"predicate": {
 						"type": "minecraft:all_of",
@@ -33,7 +37,7 @@
 				}
 			]
 		},
-		"tries": 16,
+		"tries": 8,
 		"xz_spread": 6,
 		"y_spread": 1
 	}
