@@ -1296,7 +1296,7 @@ function registerTFGSpaceBlocks(event) {
 	// #region Sandstone
 	event.create('tfg:rock/smooth_red_sandstone_wall', 'wall')
 		.soundType('stone')
-		.textureAll('minecraft:block/smooth_red_sandstone')
+		.textureAll('minecraft:block/red_sandstone_top')
 		.mapColor('teracotta_red')
 		.tagBlock('minecraft:mineable/pickaxe')
 		.fullBlock(true)
