@@ -32,3 +32,12 @@ global.CREATE_DECO_GLASS_PANES = /** @type {const} */ ([
     "createdeco:brass_window_pane",
     "createdeco:zinc_window_pane",
 ]);
+
+global.CREATE_DECO_CATWALK_TYPES = /** @type {const} */ ([
+    "andesite",
+	"brass",
+	"iron",
+	"copper",
+	"industrial_iron",
+	"zinc",
+]);

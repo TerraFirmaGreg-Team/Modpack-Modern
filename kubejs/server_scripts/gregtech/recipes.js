@@ -1415,6 +1415,7 @@ const registerGTCEURecipes = (event) => {
 			'#gtceu:circuits/luv',
 			'gtceu:fusion_glass',
 			'2x ae2:quantum_ring',
+			// tom insists on keeping this jank, it feels like a bug to me but apparently it's "intended base gt behaviour"
 			'32x gtceu:fine_europium_wire',
 			'32x gtceu:fine_europium_wire',
 			'16x megacells:accumulation_processor')

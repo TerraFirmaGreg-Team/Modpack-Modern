@@ -342,6 +342,11 @@
 					"type": "minecraft:item",
 					"name": "minecraft:coast_armor_trim_smithing_template",
 					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "alekiships:music_disc_pirate_crafting",
+					"weight": 8
 				}
 			],
 			"rolls": {
