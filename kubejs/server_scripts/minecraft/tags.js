@@ -74,7 +74,8 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfc:compost_greens_high', 'minecraft:pearlescent_froglight')
     event.add('tfc:compost_greens_high', 'minecraft:verdant_froglight')
     event.add('tfc:compost_greens_high', 'minecraft:ochre_froglight')
-    event.add('tfc:moss', 'minecraft:moss_carpet')
+    //event.add('tfc:moss', 'minecraft:moss_carpet')
+    event.remove('createaddition:plants', 'minecraft:moss_carpet')
 
     event.add('tfc:colored_terracotta', 'minecraft:white_terracotta')
 
