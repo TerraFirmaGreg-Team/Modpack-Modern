@@ -339,8 +339,8 @@ function registerTFCItemTags(event) {
         event.add("tfc:wet_mud_bricks", wetMudBrick);
     });
 
-    global.TFC_MUD_BRICKS.forEach((mudBrick) => {
-        event.add("tfc:mud_bricks", mudBrick);
+    global.TFC_DRY_MUD_BRICKS.forEach((dryMudBrick) => {
+        event.add("tfc:dry_mud_bricks", dryMudBrick);
     });
 }
 

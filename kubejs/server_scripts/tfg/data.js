@@ -98,7 +98,7 @@ function registerTFGItemSize(event) {
     event.itemSize(Ingredient.of("#forge:rods/long"), "large", "medium", "long_rods");
     event.itemSize(Ingredient.of("#tfg:metal_bars"), "small", "very_light", "metal_bars");
     event.itemSize(
-        Ingredient.of("#tfc:mud_bricks").or("#tfc:wet_mud_bricks"),
+        Ingredient.of("#tfc:dry_mud_bricks").or("#tfc:wet_mud_bricks"),
         "very_small",
         "very_light",
         "mud_bricks"
