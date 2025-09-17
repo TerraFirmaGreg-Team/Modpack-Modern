@@ -34,11 +34,18 @@
 		[
 			"tfc:raw_boulder_small_patch",
 			"tfc:cobble_boulder_small_patch",
+			"tfg:mars/terrain/mossy_boulder",
 			"tfg:mars/surface/pile_venus_sand_no_water",
 			"tfg:mars/surface/flint_patch"
 		],
 		[
-			"tfg:mars/surface/charnia"
+			"tfg:mars/surface/charnia",
+			"tfg:mars/surface/flamaea",
+
+			"tfg:mars/surface/lucernia_outer_leaves",
+			"tfg:mars/surface/lanceleaf_small",
+			"tfg:mars/surface/flammalix",
+			"tfg:mars/surface/selagine"
 		],
 		"#tfg:mars_top_layer_modification"
 	],

@@ -500,7 +500,9 @@ const registerAdAstraPlacedFeatures = (event) => {
 	
 	// Vegetation
 	event.add("tfg:mars_global_small_plants", "tfg:mars/tree/lucernia")
+	event.add("tfg:mars_global_small_plants", "tfg:mars/tree/lucernia_common")
 	event.add("tfg:mars_global_small_plants", "tfg:mars/tree/cave_bush")
+	event.add("tfg:mars_global_small_plants", "tfg:mars/tree/cave_bush_common")
 	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/charnia")
 	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/flamaea")
 	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/lacugrove")

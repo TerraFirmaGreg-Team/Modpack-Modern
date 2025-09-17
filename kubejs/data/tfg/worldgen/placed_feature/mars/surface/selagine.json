@@ -1,14 +1,9 @@
 {
-	"feature": "tfg:mars/tree/cave_bush",
+	"feature": "tfg:mars/surface/selagine",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
 			"chance": 3
-		},
-		{
-			"type": "tfc:climate",
-			"min_forest": "edge",
-			"min_rainfall": -5
 		},
 		{
 			"type": "minecraft:in_square"

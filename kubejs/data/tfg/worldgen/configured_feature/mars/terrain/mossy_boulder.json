@@ -1,0 +1,71 @@
+{
+	"type": "tfc:boulder",
+	"config": {
+		"states": [
+			{
+				"rock": "ad_astra:mars_stone",
+				"blocks": [
+					"ad_astra:mars_stone",
+					"ad_astra:mars_cobblestone",
+					"tfg:rock/mossy_cobble_mars"
+				]
+			},
+			{
+				"rock": "tfc:rock/raw/chalk",
+				"blocks": [
+					"ad_astra:mars_stone",
+					"ad_astra:mars_cobblestone",
+					"tfg:rock/mossy_cobble_mars"
+				]
+			},
+			{
+				"rock": "tfc:rock/raw/shale",
+				"blocks": [
+					"ad_astra:mars_stone",
+					"ad_astra:mars_cobblestone",
+					"tfg:rock/mossy_cobble_mars"
+				]
+			},
+			{
+				"rock": "tfc:rock/raw/dolomite",
+				"blocks": [
+					"ad_astra:mars_stone",
+					"ad_astra:mars_cobblestone",
+					"tfg:rock/mossy_cobble_mars"
+				]
+			},
+			{
+				"rock": "tfc:rock/raw/limestone",
+				"blocks": [
+					"ad_astra:venus_stone",
+					"ad_astra:venus_cobblestone",
+					"tfg:rock/mossy_cobble_venus"
+				]
+			},
+			{
+				"rock": "tfc:rock/raw/claystone",
+				"blocks": [
+					"ad_astra:venus_stone",
+					"ad_astra:venus_cobblestone",
+					"tfg:rock/mossy_cobble_venus"
+				]
+			},
+			{
+				"rock": "tfc:rock/raw/conglomerate",
+				"blocks": [
+					"ad_astra:venus_stone",
+					"ad_astra:venus_cobblestone",
+					"tfg:rock/mossy_cobble_venus"
+				]
+			},
+			{
+				"rock": "tfc:rock/raw/chert",
+				"blocks": [
+					"ad_astra:venus_stone",
+					"ad_astra:venus_cobblestone",
+					"tfg:rock/mossy_cobble_venus"
+				]
+			}
+		]
+	}
+}
