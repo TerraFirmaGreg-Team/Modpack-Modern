@@ -1056,6 +1056,8 @@
   "tfg.emi.ore_veins.size": "Size: %d",
   "tfg.emi.ore_veins.height": "Height: %d",
   "tfg.emi.ore_veins.radius": "Radius: %d",
+  "tfg.emi.liquid_bb_burn_time": "Duration: %d secs",
+  "tfg.emi.liquid_bb_superheat": "§lSuperheated",
   "emi.category.tfg.ore_vein_info": "Ore Veins",
   "tfg.toast.ore_prospector_none": "No ores found in range.",
   "tfg.toast.ore_prospector_message": "Ores found within %s §6blocks in this direction: %s",

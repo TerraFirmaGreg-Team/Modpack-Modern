@@ -488,7 +488,7 @@ BlockEvents.rightClicked(event => {
         transformBlockWithTool(event, b.mossy_slab, b.brick_slab, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
         transformBlockWithItem(event, b.mossy_slab, b.brick_slab, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
         transformBlockWithTool(event, b.mossy_wall, b.brick_wall, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-        transformBlockWithItem(event, b.mossy_wall, b.mossy_wall, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+        transformBlockWithItem(event, b.mossy_wall, b.brick_wall, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
         //cracked -> brick
         transformBlockWithItem(event, b.cracked_brick, b.brick, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
         transformBlockWithItem(event, b.cracked_stairs, b.brick_stairs, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
