@@ -961,12 +961,4 @@ function registerTFGFauna(event) {
 			faunaData.solidGround(true)
 		},
 		"wan_ancient_beasts:glider")
-
-	event.fauna(
-		climate => {
-			climate.minTemp(-85)
-			climate.fuzzy(true)
-		},
-		faunaData => {},
-		"wan_ancient_beasts:surfer")
 }

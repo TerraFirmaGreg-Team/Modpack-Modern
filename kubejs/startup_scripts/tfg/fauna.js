@@ -13,6 +13,4 @@ TFCEvents.registerFaunas(event => {
 
 	event.replace("wan_ancient_beasts:soarer", "no_restrictions", "world_surface");
 	event.replace("wan_ancient_beasts:glider", "no_restrictions", "world_surface");
-
-	event.and("wan_ancient_beasts:surfer", "no_restrictions", "ocean_floor");
 })
