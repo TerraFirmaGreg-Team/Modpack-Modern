@@ -7,7 +7,10 @@
 - Reduced the durability of wooden tongs @Pyritie
 - Jute net is renamed to Burlap net and can now also be made from Flax (#1833) @Nashy1232
 - Orbits now function as cleanrooms @BlueBoat29
-- Added CreateDeco catwalks to AE2 and gt Facades @Programmer3481
+- Added CreateDeco catwalks to AE2 and GT Facades @Programmer3481
+- Added mossy, stairs, slabs, walls, and more to the non-TFC stone types (#1845) @vidal-adrien
+- Added back vanilla stone and all its variants, craftable out of the stone dust you get from ore processing (#1845) @vidal-adrien
+- Tweaked the moon worldgen a bit to add the new stone stuff @Pyritie
 ### Bug fixes
 - Ice soup now requires a bowl to craft, so it doesn't generate free bowls @Pyritie
 - Fixed repairing an iron flask consuming the knife, also added some flask recipes with rubber instead of a bladder (#1826) @Pyritie
@@ -16,6 +19,7 @@
 - Fixed not being able to melt mortars and crowbars (#1837) @Newlumberjack-sys
 - Fixed problems with moss carpet into biomass (#1842) @Nashy1232
 ### Translation updates
+- Chinese (simplified) @jmecn
 
 ## [0.10.14] - 14-09-2025
 ### Changes
