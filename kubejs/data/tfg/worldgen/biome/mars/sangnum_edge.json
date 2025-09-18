@@ -77,19 +77,19 @@
 			{
 				"type": "tfg:wraptor",
 				"maxCount": 4,
-				"minCount": 2,
+				"minCount": 3,
 				"weight": 100
 			},
 			{
 				"type": "wan_ancient_beasts:walker",
 				"maxCount": 3,
-				"minCount": 1,
+				"minCount": 2,
 				"weight": 50
 			},
 			{
 				"type": "wan_ancient_beasts:crusher",
 				"maxCount": 5,
-				"minCount": 1,
+				"minCount": 3,
 				"weight": 100
 			},
 			{
@@ -100,14 +100,14 @@
 			},
 			{
 				"type": "wan_ancient_beasts:soarer",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 5
 			},
 			{
 				"type": "tfg:glacian_ram",
 				"maxCount": 5,
-				"minCount": 1,
+				"minCount": 3,
 				"weight": 100
 			},
 			{
@@ -119,7 +119,7 @@
 			{
 				"type": "species:goober",
 				"maxCount": 2,
-				"minCount": 1,
+				"minCount": 2,
 				"weight": 30
 			}
 		],

@@ -256,6 +256,8 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_red_granite')
 	event.add('ad_astra:mars_stone_replaceables', 'minecraft:dripstone_block')
 	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_dripstone')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/gravel_venus')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/gravel_mars')
 	event.add('tfg:mars_soil', 'minecraft:red_sand')
 	event.add('tfg:mars_soil', 'ad_astra:mars_sand')
 	event.add('tfg:mars_soil', 'ad_astra:venus_sand')

@@ -97,38 +97,38 @@
 		"creature": [
 			{
 				"type": "tfg:wraptor",
-				"maxCount": 2,
-				"minCount": 1,
+				"maxCount": 3,
+				"minCount": 2,
 				"weight": 20
 			},
 			{
 				"type": "species:springling",
 				"maxCount": 4,
-				"minCount": 2,
+				"minCount": 3,
 				"weight": 100
 			},
 			{
 				"type": "wan_ancient_beasts:crusher",
-				"maxCount": 2,
-				"minCount": 1,
+				"maxCount": 3,
+				"minCount": 2,
 				"weight": 10
 			},
 			{
 				"type": "wan_ancient_beasts:glider",
-				"maxCount": 2,
-				"minCount": 1,
+				"maxCount": 3,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
 				"type": "wan_ancient_beasts:soarer",
-				"maxCount": 2,
-				"minCount": 1,
+				"maxCount": 3,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
 				"type": "wan_ancient_beasts:eater",
-				"maxCount": 1,
-				"minCount": 1,
+				"maxCount": 3,
+				"minCount": 2,
 				"weight": 10
 			}
 		],
