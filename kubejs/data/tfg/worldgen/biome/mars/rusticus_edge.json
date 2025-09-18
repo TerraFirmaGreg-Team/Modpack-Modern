@@ -44,7 +44,7 @@
 		"#tfg:mars_top_layer_modification"
 	],
 	"has_precipitation": false,
-	"creature_spawn_probability": 0.15,
+	"creature_spawn_probability": 0.2,
 	"spawn_costs": {
 		"endermanoverhaul:crimson_forest_enderman": {
 			"energy_budget": 0.05,
