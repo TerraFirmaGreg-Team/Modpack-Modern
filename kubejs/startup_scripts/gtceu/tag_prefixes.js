@@ -93,4 +93,5 @@ const registerGTCEuTagPrefixes = (event) => {
 	TagPrefix.rawOreBlock.unformattedTagPath("raw_ore_blocks")
 
 	TagPrefix.rawOre.setIgnored(GTMaterials.Iron);
+	TagPrefix.gear.setIgnored(GTMaterials.Stone);
 }
