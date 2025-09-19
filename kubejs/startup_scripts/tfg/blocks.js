@@ -134,6 +134,28 @@ const registerTFGBlocks = (event) => {
 		.tagBlock('minecraft:mineable/wrench')
 		.mapColor('color_black')
 
+	event.create('tfg:sample_rack', 'tfg:active_cardinal')
+		.soundType('metal')
+		.hardness(5)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+		.mapColor('color_light_gray')
+		.notSolid()
+		.renderType('cutout')
+		.opaque(false)
+
+	event.create('tfg:growth_monitor', 'tfg:active_cardinal')
+		.soundType('metal')
+		.hardness(5)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+		.mapColor('color_light_gray')
+		.notSolid()
+		.renderType('cutout')
+		.opaque(false)
+
 	//#endregion
 	
 	event.create('tfg:titanium_concrete')
