@@ -5,6 +5,7 @@ const registerTFGBlocks = (event) => {
 	registerTFGNetherBlocks(event)
 	registerTFGSpaceBlocks(event)
 	registerTFGSupportBlocks(event)
+	registerTFGAqueductBlocks(event)
 	registerTFGCrops(event)
 
 	event.create('tfg:artificial_end_portal_frame')
@@ -247,10 +248,10 @@ const registerTFGBlocks = (event) => {
 
 	// #region Reconstructed Stone
 	event.create(`tfg:rock/stone_wall`, 'wall')
-			.soundType('stone')
+			.soundType(global.STONE_CHARACS.reconstructed.sound)
 			.textureAll('minecraft:block/stone')
 			.tagBoth('tfg:rock_wall')
-			.mapColor('stone')
+			.mapColor(global.STONE_CHARACS.reconstructed.mapColor)
 			.tagBlock('minecraft:mineable/pickaxe')
 			.fullBlock(true)
 			.opaque(true)
@@ -258,10 +259,10 @@ const registerTFGBlocks = (event) => {
 	let SHAPES = ['stairs', 'wall']
 	SHAPES.forEach(shape => {
 		event.create(`tfg:rock/smooth_stone_${shape}`, shape)
-			.soundType('stone')
+			.soundType(global.STONE_CHARACS.reconstructed.sound)
 			.textureAll('minecraft:block/smooth_stone')
 			.tagBoth(`tfg:rock_${shape}s`.replace(/ss/g, 's'))
-			.mapColor('stone')
+			.mapColor(global.STONE_CHARACS.reconstructed.mapColor)
 			.tagBlock('minecraft:mineable/pickaxe')
 			.fullBlock(true)
 			.opaque(true)
@@ -270,10 +271,10 @@ const registerTFGBlocks = (event) => {
 	SHAPES = ['stairs', 'slab', 'wall']
 	SHAPES.forEach(shape => {
 		event.create(`tfg:rock/cracked_bricks_stone_${shape}`, shape)
-			.soundType('stone')
+			.soundType(global.STONE_CHARACS.reconstructed.sound)
 			.textureAll('minecraft:block/cracked_stone_bricks')
 			.tagBoth(`tfg:brick_${shape}s`.replace(/ss/g, 's'))
-			.mapColor('stone')
+			.mapColor(global.STONE_CHARACS.reconstructed.mapColor)
 			.tagBlock('minecraft:mineable/pickaxe')
 			.fullBlock(true)
 			.opaque(true)
