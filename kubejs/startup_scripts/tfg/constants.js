@@ -182,7 +182,9 @@ global.STONE_CHARACS = { // Sets of stone block properties used for block regist
 	glacio:         { sound: 'stone',           type: "igneous_extrusive", mapColor: 'terracotta_light_blue' },
 	permafrost:     { sound: 'stone',           type: null,                mapColor: 'snow'                  },
 	red_granite:    { sound: 'stone',           type: "igneous_intrusive", mapColor: 'terracotta_red'        },
-	reconstructed:  { sound: 'stone',           type: null,                mapColor: 'stone'                 }
+	reconstituted:  { sound: 'stone',           type: null,                mapColor: 'stone'                 },
+	light_concrete: { sound: 'stone',           type: null,                mapColor: 'color_light_gray'      },
+	dark_concrete:  { sound: 'stone',           type: null,                mapColor: 'color_gray'            }
 }
 
 

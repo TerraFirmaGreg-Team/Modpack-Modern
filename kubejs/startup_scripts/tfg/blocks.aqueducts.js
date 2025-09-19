@@ -78,9 +78,9 @@ function registerTFGAqueductBlocks(event) {
         .tagBoth('tfg:rock/aqueducts')
 
     event.create('tfg:rock/aqueduct_stone', 'tfc:aqueduct')
-        .soundType(global.STONE_CHARACS.reconstructed.sound)
+        .soundType(global.STONE_CHARACS.reconstituted.sound)
         .textureAll('minecraft:block/stone_bricks')
-        .mapColor(global.STONE_CHARACS.reconstructed.mapColor)
+        .mapColor(global.STONE_CHARACS.reconstituted.mapColor)
         .tagBoth('tfg:rock/aqueducts')
 
 }
