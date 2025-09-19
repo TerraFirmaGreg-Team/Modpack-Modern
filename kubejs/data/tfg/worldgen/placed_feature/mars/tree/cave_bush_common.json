@@ -2,12 +2,12 @@
 	"feature": "tfg:mars/tree/cave_bush",
 	"placement": [
 		{
-			"type": "minecraft:rarity_filter",
-			"chance": 3
+			"type": "minecraft:count",
+			"count": 2
 		},
 		{
 			"type": "tfc:climate",
-			"min_forest": "edge",
+			"min_forest": "normal",
 			"min_rainfall": -5
 		},
 		{

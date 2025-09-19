@@ -200,6 +200,9 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/gravel/rhyolite')
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/gravel/andesite')
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/gravel/dacite')
+	event.add('ad_astra:moon_stone_replaceables', 'tfg:rock/gravel_moon')
+	event.add('ad_astra:moon_stone_replaceables', 'tfg:rock/gravel_moon_deepslate')
+	event.add('ad_astra:moon_stone_replaceables', 'tfg:rock/gravel_glacio')
 	event.add('ad_astra:moon_stone_replaceables', 'tfg:rock/hardened_moon_deepslate')
 	event.add('ad_astra:moon_stone_replaceables', 'ad_astra:glacio_stone')
 	event.add('ad_astra:moon_stone_replaceables', 'tfg:rock/hardened_glacio_stone')
@@ -253,9 +256,13 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_red_granite')
 	event.add('ad_astra:mars_stone_replaceables', 'minecraft:dripstone_block')
 	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_dripstone')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/gravel_venus')
+	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/gravel_mars')
 	event.add('tfg:mars_soil', 'minecraft:red_sand')
 	event.add('tfg:mars_soil', 'ad_astra:mars_sand')
 	event.add('tfg:mars_soil', 'ad_astra:venus_sand')
+	event.add('tfg:mars_soil', 'tfg:rock/gravel_venus')
+	event.add('tfg:mars_soil', 'tfg:rock/gravel_mars')
 	event.add('tfg:mars_soil', 'tfc:sand/black')
 	event.add('tfg:mars_soil', 'tfc:sand/red')
 	event.add('tfg:mars_soil', 'tfc:sand/pink')
@@ -274,6 +281,7 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('minecraft:animals_spawnable_on', '#tfg:mars_soil')
 	event.add('minecraft:animals_spawnable_on', '#tfg:mars_plants')
 	event.add('minecraft:animals_spawnable_on', '#forge:gravel')
+	event.add('minecraft:valid_spawn', '#minecraft:animals_spawnable_on')
 	
 	event.add('tfc:can_carve', '#ad_astra:moon_stone_replaceables')
 	event.add('tfc:can_carve', '#ad_astra:mars_stone_replaceables')
@@ -372,6 +380,7 @@ const registerAdAstraBiomeTags = (event) => {
 
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_dunes')
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_deep_desert')
+	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_mountains')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/amber_plains')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/amber_hills')
 	event.add('tfg:has_medium_sand_particles', 'tfg:mars/rusticus_plains')
@@ -382,7 +391,6 @@ const registerAdAstraBiomeTags = (event) => {
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/amber_edge')
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/rusticus_edge')
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/sangnum_edge')
-	event.add('tfg:has_light_sand_particles', 'tfg:mars/martian_mountains')
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/martian_river')
 }
 
@@ -499,7 +507,9 @@ const registerAdAstraPlacedFeatures = (event) => {
 	
 	// Vegetation
 	event.add("tfg:mars_global_small_plants", "tfg:mars/tree/lucernia")
+	event.add("tfg:mars_global_small_plants", "tfg:mars/tree/lucernia_common")
 	event.add("tfg:mars_global_small_plants", "tfg:mars/tree/cave_bush")
+	event.add("tfg:mars_global_small_plants", "tfg:mars/tree/cave_bush_common")
 	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/charnia")
 	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/flamaea")
 	event.add("tfg:mars_global_small_plants", "tfg:mars/surface/lacugrove")

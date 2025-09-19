@@ -1,14 +1,14 @@
 {
-	"feature": "tfg:mars/tree/cave_bush",
+	"feature": "tfg:mars/tree/lucernia",
 	"placement": [
 		{
-			"type": "minecraft:rarity_filter",
-			"chance": 3
+			"type": "minecraft:count",
+			"count": 2
 		},
 		{
 			"type": "tfc:climate",
-			"min_forest": "edge",
-			"min_rainfall": -5
+			"min_forest": "normal",
+			"max_rainfall": -7
 		},
 		{
 			"type": "minecraft:in_square"

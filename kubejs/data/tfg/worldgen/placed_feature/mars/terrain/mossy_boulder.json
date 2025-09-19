@@ -1,0 +1,23 @@
+{
+	"feature": "tfg:mars/terrain/mossy_boulder",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 36
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR_WG"
+		},
+		{
+			"type": "tfc:flat_enough",
+			"flatness": 0.2
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

@@ -35,6 +35,7 @@
 			"tfc:cobble_boulder",
 			"tfc:raw_boulder_small_patch",
 			"tfc:cobble_boulder_small_patch",
+			"tfg:mars/terrain/mossy_boulder",
 			"tfg:mars/surface/small_skull_and_bones",
 			"tfg:mars/surface/large_skull_and_bones",
 			"tfg:mars/surface/rotten_flesh_patch",
@@ -45,7 +46,8 @@
 		],
 		[
 			"tfg:mars/surface/feather_patch_wraptor",
-			"tfg:mars/surface/feather_patch_glider"
+			"tfg:mars/surface/feather_patch_glider",
+			"tfg:mars/surface/selagine"
 		],
 		"#tfg:mars_top_layer_modification"
 	],
@@ -72,6 +74,10 @@
 			"charge": 0.7
 		},
 		"species:quake": {
+			"energy_budget": 0.2,
+			"charge": 0.7
+		},
+		"ad_astra:martian_raptor": {
 			"energy_budget": 0.2,
 			"charge": 0.7
 		}

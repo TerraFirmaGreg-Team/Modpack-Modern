@@ -113,6 +113,8 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
 
     "gtceu:compressed_clay",
 
+    "gtceu:stone_rod",
+
     "gtceu:damascus_steel_nugget",
     "gtceu:damascus_steel_ingot",
     "gtceu:damascus_steel_block",

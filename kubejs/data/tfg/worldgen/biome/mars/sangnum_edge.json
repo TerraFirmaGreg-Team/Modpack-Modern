@@ -44,6 +44,7 @@
 		"#tfg:mars_top_layer_modification"
 	],
 	"has_precipitation": false,
+	"creature_spawn_probability": 0.2,
 	"spawn_costs": {
 		"endermanoverhaul:crimson_forest_enderman": {
 			"energy_budget": 0.05,
@@ -68,6 +69,10 @@
 		"species:quake": {
 			"energy_budget": 0.2,
 			"charge": 0.7
+		},
+		"ad_astra:martian_raptor": {
+			"energy_budget": 0.2,
+			"charge": 0.7
 		}
 	},
 	"spawners": {
@@ -77,19 +82,19 @@
 			{
 				"type": "tfg:wraptor",
 				"maxCount": 4,
-				"minCount": 2,
-				"weight": 100
+				"minCount": 3,
+				"weight": 50
 			},
 			{
 				"type": "wan_ancient_beasts:walker",
 				"maxCount": 3,
-				"minCount": 1,
+				"minCount": 2,
 				"weight": 50
 			},
 			{
 				"type": "wan_ancient_beasts:crusher",
 				"maxCount": 5,
-				"minCount": 1,
+				"minCount": 3,
 				"weight": 100
 			},
 			{
@@ -100,14 +105,14 @@
 			},
 			{
 				"type": "wan_ancient_beasts:soarer",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 5
 			},
 			{
 				"type": "tfg:glacian_ram",
 				"maxCount": 5,
-				"minCount": 1,
+				"minCount": 3,
 				"weight": 100
 			},
 			{
@@ -119,7 +124,7 @@
 			{
 				"type": "species:goober",
 				"maxCount": 2,
-				"minCount": 1,
+				"minCount": 2,
 				"weight": 30
 			}
 		],

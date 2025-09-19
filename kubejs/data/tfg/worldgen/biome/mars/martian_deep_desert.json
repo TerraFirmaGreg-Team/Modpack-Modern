@@ -52,6 +52,10 @@
 		"species:quake": {
 			"energy_budget": 0.2,
 			"charge": 0.7
+		},
+		"ad_astra:martian_raptor": {
+			"energy_budget": 0.2,
+			"charge": 0.7
 		}
 	},
 	"spawners": {

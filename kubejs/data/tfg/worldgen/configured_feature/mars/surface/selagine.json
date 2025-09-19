@@ -8,7 +8,7 @@
 					"to_place": {
 						"type": "minecraft:simple_state_provider",
 						"state": {
-							"Name": "minecraft:torchflower"
+							"Name": "betterend:selagine"
 						}
 					}
 				}
@@ -28,9 +28,14 @@
 								"blocks": "minecraft:air"
 							},
 							{
-								"type": "minecraft:matching_block_tag",
-								"offset": [ 0, -1, 0 ],
-								"tag": "tfg:mars_soil"
+								"type": "minecraft:any_of",
+								"predicates": [
+									{
+										"type": "minecraft:matching_block_tag",
+										"offset": [ 0, -1, 0 ],
+										"tag": "tfg:mars_soil"
+									}
+								]
 							}
 						]
 					}
@@ -38,7 +43,7 @@
 			]
 		},
 		"tries": 8,
-		"xz_spread": 6,
-		"y_spread": 1
+		"xz_spread": 10,
+		"y_spread": 3
 	}
 }

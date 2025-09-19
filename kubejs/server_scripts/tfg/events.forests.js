@@ -8,11 +8,11 @@ TFCEvents.worldgenData(event => {
 			// https://notenoughmail.github.io/kubejs_tfc/1.20.1/worldgen/#forest-types-map-entry
 			// type, treeCount, groundcoverCount, perChunkChance, bushCount, hasSpoilerOldGrowth, allowsOldGrowth, leafPileCount
 
-			event.forestTypesMapEntry('none',       [0, 1],  1,  0.1,  0, false, false, 0),
-			event.forestTypesMapEntry('sparse',     [0, 3],  10, 0.3,  1, false, false, [0, 1]),
-			event.forestTypesMapEntry('edge',       [2, 5],  20, 0.8,  1, true,  false, [1, 2]),
-			event.forestTypesMapEntry('normal',     [5, 8],  35, 1,    2, true,  false, [2, 3]),
-			event.forestTypesMapEntry('old_growth', [8, 12], 50, 1,    3, true,  true,  [3, 4])
+			event.forestTypesMapEntry('none',       [0, 1],   1,  0.1,  0, false, false, 0),
+			event.forestTypesMapEntry('sparse',     [0, 3],   10, 0.3,  1, false, false, [0, 1]),
+			event.forestTypesMapEntry('edge',       [2, 5],   20, 0.8,  2, true,  false, [1, 2]),
+			event.forestTypesMapEntry('normal',     [7, 10],  35, 1,    3, true,  false, [4, 6]),
+			event.forestTypesMapEntry('old_growth', [10, 13], 50, 1,    4, true,  true,  [5, 8])
 		],
 		false, 
 		placement => {}
@@ -20,7 +20,7 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/crimson_forest_entry',
 		climate => {
-			climate.maxTemp(-41)
+			climate.maxTemp(-31)
 			climate.minTemp(-98)
 			climate.minRain(-12)
 			climate.fuzzy(true)
@@ -50,7 +50,7 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/warped_forest_entry',
 		climate => {
-			climate.maxTemp(-39)
+			climate.maxTemp(-29)
 			climate.minTemp(-101)
 			climate.maxRain(0)
 			climate.fuzzy(true)

@@ -5,7 +5,7 @@
 			"type": "minecraft:weighted_state_provider",
 			"entries": [
 				{
-					"weight": 35,
+					"weight": 10,
 					"data": {
 						"Name": "tfg:rock/hardened_glacio_stone"
 					}
@@ -17,7 +17,7 @@
 					}
 				},
 				{
-					"weight": 20,
+					"weight": 5,
 					"data": {
 						"Name": "ad_astra:glacio_stone_slab"
 					}
@@ -26,6 +26,18 @@
 					"weight": 20,
 					"data": {
 						"Name": "ad_astra:glacio_cobblestone_slab"
+					}
+				},
+				{
+					"weight": 25,
+					"data": {
+						"Name": "tfg:rock/mossy_cobble_glacio"
+					}
+				},
+				{
+					"weight": 10,
+					"data": {
+						"Name": "tfg:rock/mossy_cobble_glacio_slab"
 					}
 				}
 			]
