@@ -23,32 +23,35 @@ function registerBlockInteractionTags(event) {
 	 * @property {string|null} smooth_slab - Smooth brick slab block ID.
 	 * @property {string|null} smooth_wall - Smooth brick wall block ID.
 	 * @property {string|null} chiseled_brick - Chiseled brick block ID.
-	 */
+	 */ 
 	 
 	 for (const b of global.BRICK_INDEX) {
-		 event.add('tfg:interaction/brick', b.brick)
-		 event.add('tfg:interaction/brick_stairs', b.brick_stairs)
-		 event.add('tfg:interaction/brick_slab', b.brick_slab)
-		 event.add('tfg:interaction/brick_wall', b.brick_wall)
+		if (b.brick !== null) { event.add('tfg:interaction/brick', b.brick) }
+		if (b.brick_stairs !== null)  {event.add('tfg:interaction/brick_stairs', b.brick_stairs) }
+		if (b.brick_slab !== null) { event.add('tfg:interaction/brick_slab', b.brick_slab) }
+		if (b.brick_wall !== null) { event.add('tfg:interaction/brick_wall', b.brick_wall) }
 
-		 event.add('tfg:interaction/cracked_brick', b.cracked_brick)
-		 event.add('tfg:interaction/cracked_brick_stairs', b.cracked_stairs)
-		 event.add('tfg:interaction/cracked_brick_slab', b.cracked_slab)
-		 event.add('tfg:interaction/cracked_brick_wall', b.cracked_wall)
+		if (b.cracked_brick !== null) { event.add('tfg:interaction/cracked_brick', b.cracked_brick) }
+		if (b.cracked_stairs !== null) { event.add('tfg:interaction/cracked_brick_stairs', b.cracked_stairs) }
+		if (b.cracked_slab !== null) { event.add('tfg:interaction/cracked_brick_slab', b.cracked_slab) }
+		if (b.cracked_wall !== null) { event.add('tfg:interaction/cracked_brick_wall', b.cracked_wall) }
 
-		 event.add('tfg:interaction/mossy_brick', b.mossy_brick)
-		 event.add('tfg:interaction/mossy_brick_stairs', b.mossy_stairs)
-		 event.add('tfg:interaction/mossy_brick_slab', b.mossy_slab)
-		 event.add('tfg:interaction/mossy_brick_wall', b.mossy_wall)
+		if (b.mossy_brick !== null) { event.add('tfg:interaction/mossy_brick', b.mossy_brick) }
+		if (b.mossy_stairs !== null) { event.add('tfg:interaction/mossy_brick_stairs', b.mossy_stairs) }
+		if (b.mossy_slab !== null) { event.add('tfg:interaction/mossy_brick_slab', b.mossy_slab) }
+		if (b.mossy_wall !== null) { event.add('tfg:interaction/mossy_brick_wall', b.mossy_wall) }
 
-		 event.add('tfg:interaction/smooth_bricks', b.smooth_brick)
+		if (b.smooth_brick !== null) { event.add('tfg:interaction/smooth_brick', b.smooth_brick) }
 		 //event.add('tfg:interaction/smooth_bricks', b.smooth_stairs)
 		 //event.add('tfg:interaction/smooth_bricks', b.smooth_slab)
 		 //event.add('tfg:interaction/smooth_bricks', b.smooth_wall)
+		 
 
 	 }
-	 /*
+	 
+	 
 	 for (const c of global.COBBLE_INDEX) {
+		
 		 event.add('tfg:interaction/cobble', c.block)
 		 event.add('tfg:interaction/cobble_stairs', c.stairs)
 		 event.add('tfg:interaction/cobble_slab', c.slab)
@@ -60,6 +63,6 @@ function registerBlockInteractionTags(event) {
 		 event.add('tfg:interaction/mossy_cobble_wall', c.mossy_wall)
 
 		 
-	 })
-	*/
+	 }
+	
 }

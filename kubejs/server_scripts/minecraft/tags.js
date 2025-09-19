@@ -90,6 +90,9 @@ const registerMinecraftItemTags = (event) => {
 
     event.add('tfc:makes_black_dye', 'minecraft:ink_sac')
     event.add('tfc:makes_white_dye', 'minecraft:bone_meal')
+	
+	event.add('create:blaze_burner_fuel/regular', 'minecraft:coal')
+	event.add('create:blaze_burner_fuel/regular', 'minecraft:charcoal')
 }
 
 const registerMinecraftBlockTags = (event) => {
