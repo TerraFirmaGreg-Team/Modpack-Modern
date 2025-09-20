@@ -468,7 +468,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 
 const registerAdAstraPlacedFeatures = (event) => {
 	
-	// Moon
+	//#region Moon
 	event.add('tfg:moon_craters', 'tfg:moon/crater/extra_large')
 	event.add('tfg:moon_craters', 'tfg:moon/crater/large')
 	event.add('tfg:moon_craters', 'tfg:moon/crater/medium')
@@ -486,7 +486,14 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_white_sand')
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_black_sand')
 
+	//#endregion
+
 	//#region Mars
+
+	// Craters
+	event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_extra_large')
+	event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_large')
+	event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_medium')
 
 	// Underground decoration
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/ice_cave')
