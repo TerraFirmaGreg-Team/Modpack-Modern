@@ -506,8 +506,8 @@ const registerAdAstraPlacedFeatures = (event) => {
 
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/calcite')
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/mega_calcite')
-	event.add('tfg:mars_underground_decoration', 'tfc:mars/underground/icicle')
-	event.add('tfg:mars_underground_decoration', 'tfc:mars/underground/icicle_extra')
+	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/icicle')
+	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/icicle_extra')
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/loose_rocks')
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/ochrum_blob')
 
