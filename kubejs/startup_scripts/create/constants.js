@@ -65,27 +65,6 @@ global.CREATE_DISABLED_ITEMS = [
     'create:layered_scoria', 
     'create:scoria_pillar',
 
-    // Ochrium
-    'create:ochrum', 
-    'create:cut_ochrum', 
-    'create:cut_ochrum_stairs', 
-    'create:cut_ochrum_slab', 
-    'create:cut_ochrum_wall', 
-    'create:polished_cut_ochrum', 
-    'create:polished_cut_ochrum_stairs', 
-    'create:polished_cut_ochrum_slab', 
-    'create:polished_cut_ochrum_wall', 
-    'create:cut_ochrum_bricks', 
-    'create:cut_ochrum_brick_stairs', 
-    'create:cut_ochrum_brick_slab', 
-    'create:cut_ochrum_brick_wall', 
-    'create:small_ochrum_bricks', 
-    'create:small_ochrum_brick_stairs', 
-    'create:small_ochrum_brick_slab', 
-    'create:small_ochrum_brick_wall',
-    'create:layered_ochrum', 
-    'create:ochrum_pillar',
-
     // Cringite
     'create:crimsite', 
     'create:cut_crimsite', 
@@ -126,23 +105,6 @@ global.CREATE_DISABLED_ITEMS = [
     'create:small_tuff_brick_wall', 
     'create:layered_tuff', 
     'create:tuff_pillar',
-
-
-    // Shit Glass
-    'create:crimson_window', 
-    'create:warped_window', 
-    'create:oak_window', 
-    'create:spruce_window', 
-    'create:birch_window', 
-    'create:jungle_window', 
-    'create:acacia_window', 
-    'create:oak_window_pane', 
-    'create:spruce_window_pane', 
-    'create:birch_window_pane', 
-    'create:jungle_window_pane', 
-    'create:acacia_window_pane', 
-    'create:crimson_window_pane',
-    'create:warped_window_pane', 
 
     // Blocks
     'create:andesite_alloy_block',  

@@ -1,5 +1,5 @@
 {
-	"feature": "tfc:underground_loose_rocks",
+	"feature": "tfc:cave_spike",
 	"placement": [
 		{
 			"type": "minecraft:count",
@@ -10,10 +10,10 @@
 			"height": {
 				"type": "minecraft:uniform",
 				"min_inclusive": {
-					"above_bottom": 7
+					"above_bottom": 5
 				},
 				"max_inclusive": {
-					"absolute": 75
+					"absolute": 85
 				}
 			}
 		},
@@ -33,6 +33,13 @@
 			"max_steps": 8,
 			"target_condition": {
 				"type": "minecraft:solid"
+			}
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_block_tag",
+				"tag": "forge:stone"
 			}
 		},
 		{

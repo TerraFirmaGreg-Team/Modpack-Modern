@@ -11,18 +11,18 @@
 		{
 			"type": "minecraft:height_range",
 			"height": {
-				"type": "biased_to_bottom",
+				"type": "uniform",
 				"min_inclusive": {
-					"absolute": -20
+					"absolute": 40
 				},
 				"max_inclusive": {
-					"absolute": 100
+					"absolute": 150
 				}
 			}
 		},
 		{
 			"type": "tfc:climate",
-			"max_temperature": -30
+			"max_temperature": -70
 		}
 	]
 }
