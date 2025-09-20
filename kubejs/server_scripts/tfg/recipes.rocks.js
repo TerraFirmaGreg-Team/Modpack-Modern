@@ -253,8 +253,7 @@ function registerTFGRockRecipes(event) {
 
 	// #endregion RAW_TO_POLISHED
 	
-	// cracked bricks
-
+	// #region CRACKING
 	const CRACKING = [
 		{ raw: 'minecraft:deepslate_bricks',      cracked: 'minecraft:cracked_deepslate_bricks' },
 		{ raw: 'minecraft:deepslate_tiles',       cracked: 'minecraft:cracked_deepslate_tiles' },
@@ -285,7 +284,9 @@ function registerTFGRockRecipes(event) {
 			.recipeTier(1)
 			.id(`greate:pressing/${x.raw}_to_${x.cracked}`.replace(/:/g, '_'))
 	})
+	// #endregion CRACKING
 
+	// #region HAMMERING
 	// Defined in kubejs/startup_scripts/tfg/constants.js
 	global.HAMMERING.forEach(x => {
 		event.recipes.gtceu.forge_hammer(`${x.raw}_to_${x.hammered}`.replace(/[: ]/g, '_'))
@@ -298,8 +299,7 @@ function registerTFGRockRecipes(event) {
 			.recipeTier(x.eu <= 8 ? 0 : 1)
 			.id(`greate:pressing/${x.raw}_to_${x.hammered}`.replace(/[: ]/g, '_'))
 	})
-
-	// slabs, stairs, walls
+	// #endregion HAMMERING
 
 	// #region CUTTER
 	//
