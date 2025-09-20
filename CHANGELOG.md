@@ -14,6 +14,8 @@
 - Added rice and pasta to meal bags (#1864) @Nashy1232
 - Added back minecart with furnace as a minecart with boiler, and now it can accept any forge fuel (#1860) @Nashy1232
 - Adds EMI pages for Create Blaze Burner Fuels and for in-world block modifications @BlueBoat29
+- Removed nether portals @Pyritie
+- Added recipes for the rest of Create's windows and window panes @Pyritie
 ### Bug fixes
 - Ice soup now requires a bowl to craft, so it doesn't generate free bowls @Pyritie
 - Fixed repairing an iron flask consuming the knife, also added some flask recipes with rubber instead of a bladder (#1826) @Pyritie
