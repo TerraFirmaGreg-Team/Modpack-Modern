@@ -251,6 +251,11 @@
         "detected-setblock-be-gone": {
             "side": "BOTH"
         },
+
+
+        "autopack-director": {
+            "export": false
+        },
         "ftb-backups-2": {
             "side": "BOTH",
             "export": true
@@ -279,6 +284,8 @@
         "ftb-xmod-compat": {
             "export": true
         },
+
+
         "probejs": {
             "side": "CLIENT",
             "export": false
