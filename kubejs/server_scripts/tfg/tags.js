@@ -4,6 +4,7 @@ const registerTFGItemTags = (event) => {
 
 	registerTFGTrimTags(event)
 	registerFacadeWhitelistTags(event)
+	registerBlockInteractionTags(event)
 	//crop stuff
 	event.add('tfc:seeds', 'tfg:sunflower_seeds')
 	event.add('tfc:seeds', 'tfg:rapeseed_seeds')
