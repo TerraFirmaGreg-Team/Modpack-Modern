@@ -40,8 +40,8 @@
 						"hardened": "tfg:rock/hardened_red_granite",
 						"gravel": "tfg:rock/gravel_red_granite",
 						"cobble": "gtceu:red_granite_cobblestone",
-						"sand": "minecraft:red_sand",
-						"sandstone": "minecraft:red_sandstone",
+						"sand": "tfc:sand/red",
+						"sandstone": "tfc:raw_sandstone/red",
 						"spike": "tfg:spike/red_granite_spike",
 						"loose": "tfg:loose/red_granite"
 					},

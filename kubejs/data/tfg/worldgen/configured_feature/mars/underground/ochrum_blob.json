@@ -27,8 +27,8 @@
 					"Name": "create:ochrum"
 				},
 				"target": {
-					"predicate_type": "minecraft:tag_match",
-					"tag": "tfc:dirt"
+					"predicate_type": "minecraft:block_match",
+					"block": "ad_astra:venus_sand"
 				}
 			},
 			{
@@ -37,7 +37,7 @@
 				},
 				"target": {
 					"predicate_type": "minecraft:block_match",
-					"block": "ad_astra:venus_sand"
+					"block": "ad_astra:venus_sandstone"
 				}
 			}
 		]

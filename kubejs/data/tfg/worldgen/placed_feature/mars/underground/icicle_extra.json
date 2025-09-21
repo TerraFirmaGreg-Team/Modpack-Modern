@@ -1,9 +1,9 @@
 {
-	"feature": "tfc:calcite",
+	"feature": "tfg:mars/underground/icicle_extra",
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 3
+			"count": 10
 		},
 		{
 			"type": "minecraft:in_square"
@@ -11,14 +11,18 @@
 		{
 			"type": "minecraft:height_range",
 			"height": {
-				"type": "biased_to_bottom",
+				"type": "uniform",
 				"min_inclusive": {
-					"absolute": -24
+					"absolute": 40
 				},
 				"max_inclusive": {
-					"absolute": 90
+					"absolute": 150
 				}
 			}
+		},
+		{
+			"type": "tfc:climate",
+			"max_temperature": -70
 		}
 	]
 }
