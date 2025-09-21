@@ -16,6 +16,7 @@
 - Adds EMI pages for Create Blaze Burner Fuels and for in-world block modifications @BlueBoat29
 - Removed nether portals @Pyritie
 - Added recipes for the rest of Create's windows and window panes @Pyritie
+- Halved how quickly the durability decreases on the various hiking/steel toe boots @Pyritie
 ### Bug fixes
 - Ice soup now requires a bowl to craft, so it doesn't generate free bowls @Pyritie
 - Fixed repairing an iron flask consuming the knife, also added some flask recipes with rubber instead of a bladder (#1826) @Pyritie
