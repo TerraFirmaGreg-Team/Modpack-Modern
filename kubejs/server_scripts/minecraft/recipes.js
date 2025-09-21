@@ -1128,4 +1128,13 @@ const registerMinecraftRecipes = (event) => {
 	generateGreenHouseRecipe(event, '4x minecraft:brown_mushroom', '#tfc:any_fresh_water', 4000,
 		'24x minecraft:brown_mushroom', 'brown_mushroom', 'minecraft:the_nether', 8, 
 		'4x minecraft:brown_mushroom', GTValues.VA[GTValues.LV])
+
+    // Minecart w/ Furnace
+    event.shapeless('minecraft:furnace_minecart', ['minecraft:water_bucket', 'gtceu:hp_steam_solid_boiler', 'minecraft:minecart']);
+
+    event.recipes.gtceu.assembler('minecraft:furnace_minecart')
+        .itemInputs('minecraft:water_bucket', 'gtceu:hp_steam_solid_boiler', 'minecraft:minecart')
+        .itemOutputs('minecraft:furnace_minecart')
+        .duration(100)
+        .EUt(4)
 }

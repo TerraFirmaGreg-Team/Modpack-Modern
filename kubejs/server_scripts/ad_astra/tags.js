@@ -489,14 +489,21 @@ const registerAdAstraPlacedFeatures = (event) => {
 	//#region Mars
 
 	// Underground decoration
-	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/cave_column')
-	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/cave_spike')
-	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/large_cave_spike')
+	//event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/cave_column')
+	//event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/cave_spike')
+	//event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/large_cave_spike')
+	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/ice_cave')
+
+	event.add('tfg:mars_underground_decoration', 'tfc:cave_spike')
+	event.add('tfg:mars_underground_decoration', 'tfc:cave_column')
+	event.add('tfg:mars_underground_decoration', 'tfc:large_cave_spike')
+
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/calcite')
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/mega_calcite')
-	event.add('tfg:mars_underground_decoration', 'tfc:icicle')
+	event.add('tfg:mars_underground_decoration', 'tfc:mars/underground/icicle')
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/loose_rocks')
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/ochrum_blob')
+
 	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/amethyst")
 	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/barite")
 	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/calcite")
@@ -550,8 +557,6 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add("tfg:mars_rusticus_vegetal_decoration", "tfg:mars/surface/bulb_moss")
 	event.add("tfg:mars_rusticus_vegetal_decoration", "tfg:mars/surface/aurant_polypore")
 	event.add("tfg:mars_rusticus_vegetal_decoration", "tfg:mars/surface/purple_polypore")
-	event.add("tfg:mars_rusticus_vegetal_decoration", "tfg:mars/surface/filalux_wings")
-	event.add("tfg:mars_rusticus_vegetal_decoration", "tfg:mars/surface/filalux_wings_top")
 
 	event.add("tfg:mars_rusticus_vegetal_decoration", "tfg:mars/surface/aeridium")
 	event.add("tfg:mars_rusticus_vegetal_decoration", "tfg:mars/surface/flammalix")
@@ -570,8 +575,9 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add("tfg:mars_sangnum_vegetal_decoration", "tfg:mars/surface/small_amaranita_mushroom")
 	event.add("tfg:mars_sangnum_vegetal_decoration", "tfg:mars/surface/large_amaranita_mushroom")
 	
-	event.add("tfg:mars_sangnum_vegetal_decoration", "tfg:mars/surface/aurant_polypore")
 	event.add("tfg:mars_sangnum_vegetal_decoration", "tfg:mars/surface/purple_polypore")
+	event.add("tfg:mars_sangnum_vegetal_decoration", "tfg:mars/surface/filalux_wings")
+	event.add("tfg:mars_sangnum_vegetal_decoration", "tfg:mars/surface/filalux_wings_top")
 
 	event.add("tfg:mars_sangnum_vegetal_decoration", "tfg:mars/surface/cave_grass")
 	event.add("tfg:mars_sangnum_vegetal_decoration", "tfg:mars/surface/clawfern")
