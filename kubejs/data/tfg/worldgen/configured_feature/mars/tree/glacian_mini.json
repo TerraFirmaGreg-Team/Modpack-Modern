@@ -1,0 +1,22 @@
+{
+	"type": "tfc:random_tree",
+	"config": {
+		"structures": [
+			"tfg:trees/mossy_glowshroom_mini_1"
+		],
+		"trunk": {
+			"state": {
+				"Name": "tfg:glacian_log"
+			},
+			"min_height": 0,
+			"max_height": 1,
+			"wide": true
+		},
+		"placement": {
+			"width": 4,
+			"height": 10,
+			"allow_submerged": false,
+			"allow_deeply_submerged": false
+		}
+	}
+}

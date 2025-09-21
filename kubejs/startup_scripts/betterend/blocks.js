@@ -95,7 +95,6 @@ function registerBetterEndBlocks(event) {
 
 	// Mosses / Can go on sides of blocks
 
-	// TODO: needs features
 	event.create('betterend:aurant_polypore', 'tfg:attached_decorative_plant')
 		.soundType('nether_wart')
 		.tagItem('tfg:mars_plants')
@@ -121,6 +120,14 @@ function registerBetterEndBlocks(event) {
 	event.create('betterend:bulb_moss', 'tfg:attached_decorative_plant')
 		.soundType('crop')
 		.lootItem('tfc:straw')
+		.tagItem('tfg:mars_plants')
+		.tagBlock('minecraft:replaceable')
+		.tagBlock('tfg:do_not_destroy_in_space')
+
+	// Used for glacian trees
+	event.create('betterend:glacian_hymenophore', 'tfg:attached_decorative_plant')
+		.soundType('crop')
+		.allowVertical(true)
 		.tagItem('tfg:mars_plants')
 		.tagBlock('minecraft:replaceable')
 		.tagBlock('tfg:do_not_destroy_in_space')
@@ -177,13 +184,7 @@ function registerBetterEndBlocks(event) {
 			})
 		})
 
-	// "Structures"?
-	// blue_vine (blue)
-	// glowing pillar (orange)
-	// large amaranita
-	// end lily
-	// end lotus
-	// lanceleaf
+	// Tall plants
 
 	event.create('betterend:large_amaranita_mushroom', 'tfg:tall_decorative_plant')
 		.height(3)

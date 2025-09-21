@@ -328,10 +328,59 @@ const registerTFGCrops = (event) => {
         .defaultCutout()
 
     event.create('tfg:saplings/glacian', 'tfc:sapling')
-        .features('tfg:mars/tree/glacian')
+        .features('tfg:mars/tree/glacian_mini')
         .tagBoth('minecraft:sapling')
         .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(9)
         .soundType('nether_wart')
         .defaultCutout()
+
+    // Glacian tree stuff
+	event.create('tfg:glacian_leaves', 'tfc:leaves')
+		.soundType('azalea_leaves')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfg:do_not_destroy_in_space')
+		.mapColor('snow')
+		.seasonalColors(false)
+		.fallenLeaves(leaves => {
+			leaves.noCollision()
+			leaves.notSolid()
+			leaves.defaultCutout()
+			leaves.soundType('azalea_leaves')
+			leaves.tagBlock('minecraft:mineable/hoe')
+			leaves.tagBlock('minecraft:replaceable')
+			leaves.noDynamicTinting()
+			leaves.models((modelType, generator) => {
+				if (modelType.layers != 8) {
+					generator.parent("tfc:block/groundcover/fallen_leaves_height" + modelType.height);
+					generator.texture("all", "ad_astra:block/glacian_leaves");
+				} else {
+					generator.parent("ad_astra:block/glacian_leaves");
+				}
+			})
+		})
+
+    event.create('tfg:glacian_wood', 'tfc:log')
+        .tagBoth('minecraft:logs')
+        .tagItem('minecraft:logs_that_burn')
+        .tagItem('ad_astra:glacian_logs')
+        .tagBlock('minecraft:mineable/axe')
+        .soundType('wood')
+        .stripped(stripped => {
+            stripped.tagBoth('minecraft:logs')
+            stripped.tagItem('minecraft:logs_that_burn')
+            stripped.tagItem('ad_astra:glacian_logs')
+            stripped.tagBlock('minecraft:mineable/axe')
+            stripped.soundType('wood')
+        })
+
+    event.create('tfg:glacian_log', 'tfc:log')
+        .tagBoth('minecraft:logs')
+        .tagBoth('c:hidden_from_recipe_viewers')
+        .soundType('wood')
+        .stripped(stripped => {
+            stripped.tagBoth('minecraft:logs')
+            stripped.tagBoth('c:hidden_from_recipe_viewers')
+            stripped.soundType('wood')
+        })
 }

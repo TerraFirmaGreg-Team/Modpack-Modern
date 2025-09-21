@@ -30,9 +30,9 @@ TFCEvents.worldgenData(event => {
 		'beneath:wood/log/crimson', // fallen log
 		'beneath:wood/fallen_leaves/crimson', // fallen leaves
 		[ // ground cover
-			'minecraft:crimson_fungus',
-			'beneath:wood/fallen_leaves/crimson',
-			'beneath:wood/twig/crimson',
+			'2 minecraft:crimson_fungus',
+			'3 beneath:wood/fallen_leaves/crimson',
+			'2 beneath:wood/twig/crimson',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
 		],
@@ -60,9 +60,9 @@ TFCEvents.worldgenData(event => {
 		'beneath:wood/log/warped',
 		'beneath:wood/fallen_leaves/warped',
 		[
-			'minecraft:warped_fungus',
-			'beneath:wood/fallen_leaves/warped',
-			'beneath:wood/twig/warped',
+			'2 minecraft:warped_fungus',
+			'3 beneath:wood/fallen_leaves/warped',
+			'2 beneath:wood/twig/warped',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
 		],
@@ -84,10 +84,10 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
-			"ad_astra:aeronos_mushroom",
+			"2 ad_astra:aeronos_mushroom",
+			'3 tfg:groundcover/aeronos_stick',
 			'tfg:groundcover/wraptor_feather',
-			'tfg:groundcover/glider_feather',
-			'tfg:groundcover/aeronos_stick'
+			'tfg:groundcover/glider_feather'
 		],
 		'tfg:mars/tree/aeronos',
 		'tfg:mars/tree/aeronos_dead',
@@ -107,10 +107,10 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
-			"ad_astra:strophar_mushroom",
+			"2 ad_astra:strophar_mushroom",
+			'3 tfg:groundcover/strophar_stick',
 			'tfg:groundcover/wraptor_feather',
-			'tfg:groundcover/glider_feather',
-			'tfg:groundcover/strophar_stick'
+			'tfg:groundcover/glider_feather'
 		],
 		'tfg:mars/tree/strophar',
 		'tfg:mars/tree/strophar_dead',
@@ -129,10 +129,10 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
-			"species:alphacene_mushroom",
+			"2 species:alphacene_mushroom",
+			'3 tfg:groundcover/alphacene_stick',
 			'tfg:groundcover/wraptor_feather',
-			'tfg:groundcover/glider_feather',
-			'tfg:groundcover/alphacene_stick'
+			'tfg:groundcover/glider_feather'
 		],
 		'species:alphacene_mushroom',
 		'tfg:mars/tree/alphacene_dead',
@@ -141,7 +141,26 @@ TFCEvents.worldgenData(event => {
 		placement => {}
 	)
 
-	// TODO: glacian
+	event.forestEntry('tfg:mars/glacian_forest_entry',
+		climate => {
+			climate.maxTemp(-82)
+			climate.fuzzy(true)
+		},
+		'ad_astra:glacian_log',
+		'tfg:glacian_leaves',
+		null,
+		null,
+		[
+			"2 betterend:glacian_hymenophore[facing=up]",
+			"4 tfg:glacian_leaves_fallen",
+			'2 tfg:groundcover/glacian_stick'
+		],
+		'tfg:mars/tree/glacian',
+		'tfg:mars/tree/glacian_dead',
+		'tfg:mars/tree/glacian',
+		null, null, null, null, null, null,
+		placement => {}
+	)
 })
 
 function registerTFGForestConfiguredFeatures(event) {
@@ -150,4 +169,5 @@ function registerTFGForestConfiguredFeatures(event) {
 	event.add('tfg:mars_forest_entries', 'tfg:mars/aeronos_forest_entry')
 	event.add('tfg:mars_forest_entries', 'tfg:mars/strophar_forest_entry')
 	event.add('tfg:mars_forest_entries', 'tfg:mars/alphacene_forest_entry')
+	event.add('tfg:mars_forest_entries', 'tfg:mars/glacian_forest_entry')
 }

@@ -366,8 +366,11 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:heightmap_ignore', 'minecraft:warped_wart_block')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_mushroom_block')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_mushroom_growth')
-	event.add('tfg:heightmap_ignore', 'ad_astra:glacian_log')
+	event.add('tfg:heightmap_ignore', 'tfg:glacian_log')
+	event.add('tfg:heightmap_ignore', 'tfg:glacian_wood')
+	event.add('tfg:heightmap_ignore', 'tfg:glacian_leaves')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_moss_block')
+	event.add('tfg:heightmap_ignore', 'minecraft:ice')
 
 	global.AD_ASTRA_WOOD.forEach(wood => {
 
@@ -512,9 +515,9 @@ const registerAdAstraPlacedFeatures = (event) => {
 	//#region Mars
 
 	// Craters
-	event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_extra_large')
-	event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_large')
-	event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_medium')
+	//event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_extra_large')
+	//event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_large')
+	//event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_medium')
 
 	// Underground decoration
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/ice_cave')
