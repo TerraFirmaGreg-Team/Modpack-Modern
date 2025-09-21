@@ -128,7 +128,6 @@ function registerBetterEndBlocks(event) {
 	event.create('betterend:glacian_hymenophore', 'tfg:attached_decorative_plant')
 		.soundType('crop')
 		.allowVertical(true)
-		.tagItem('tfg:mars_plants')
 		.tagBlock('minecraft:replaceable')
 		.tagBlock('tfg:do_not_destroy_in_space')
 

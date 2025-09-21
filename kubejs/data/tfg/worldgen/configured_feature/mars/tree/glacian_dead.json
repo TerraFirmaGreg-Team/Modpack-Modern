@@ -1,5 +1,5 @@
 {
-	"type": "tfc:stacked_tree",
+	"type": "afc:trunkless_stacked_tree",
 	"config": {
 		"layers": [
 			{
@@ -20,7 +20,7 @@
 		],
 		"trunk": {
 			"state": {
-				"Name": "tfg:glacian_log"
+				"Name": "tfg:glacian_wood"
 			},
 			"min_height": 0,
 			"max_height": 1,
