@@ -369,6 +369,7 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:heightmap_ignore', 'tfg:glacian_log')
 	event.add('tfg:heightmap_ignore', 'tfg:glacian_wood')
 	event.add('tfg:heightmap_ignore', 'tfg:glacian_leaves')
+	event.add('tfg:heightmap_ignore', 'betterend:glacian_hymenophore')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_moss_block')
 	event.add('tfg:heightmap_ignore', 'minecraft:ice')
 

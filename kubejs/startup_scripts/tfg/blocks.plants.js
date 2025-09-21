@@ -289,7 +289,7 @@ const registerTFGCrops = (event) => {
 
     event.create('tfg:saplings/crimson', 'tfc:sapling')
         .features('tfg:mars/tree/crimson')
-        .tagBoth('minecraft:sapling')
+        .tagBoth('minecraft:saplings')
         .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(6)
         .soundType('nether_wart')
@@ -297,7 +297,7 @@ const registerTFGCrops = (event) => {
 
     event.create('tfg:saplings/warped', 'tfc:sapling')
         .features('tfg:mars/tree/warped')
-        .tagBoth('minecraft:sapling')
+        .tagBoth('minecraft:saplings')
         .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(6)
         .soundType('nether_wart')
@@ -305,7 +305,7 @@ const registerTFGCrops = (event) => {
 
     event.create('tfg:saplings/alphacene', 'tfc:sapling')
         .features('species:alphacene_mushroom')
-        .tagBoth('minecraft:sapling')
+        .tagBoth('minecraft:saplings')
         .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(3)
         .soundType('nether_wart')
@@ -313,7 +313,7 @@ const registerTFGCrops = (event) => {
 
     event.create('tfg:saplings/strophar', 'tfc:sapling')
         .features('tfg:mars/tree/strophar')
-        .tagBoth('minecraft:sapling')
+        .tagBoth('minecraft:saplings')
         .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(7)
         .soundType('nether_wart')
@@ -321,7 +321,7 @@ const registerTFGCrops = (event) => {
 
     event.create('tfg:saplings/aeronos', 'tfc:sapling')
         .features('tfg:mars/tree/aeronos')
-        .tagBoth('minecraft:sapling')
+        .tagBoth('minecraft:saplings')
         .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(9)
         .soundType('nether_wart')
@@ -329,7 +329,7 @@ const registerTFGCrops = (event) => {
 
     event.create('tfg:saplings/glacian', 'tfc:sapling')
         .features('tfg:mars/tree/glacian_mini')
-        .tagBoth('minecraft:sapling')
+        .tagBoth('minecraft:saplings')
         .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(9)
         .soundType('nether_wart')

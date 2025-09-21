@@ -30,9 +30,9 @@ TFCEvents.worldgenData(event => {
 		'beneath:wood/log/crimson', // fallen log
 		'beneath:wood/fallen_leaves/crimson', // fallen leaves
 		[ // ground cover
-			'2 minecraft:crimson_fungus',
-			'3 beneath:wood/fallen_leaves/crimson',
-			'2 beneath:wood/twig/crimson',
+			'minecraft:crimson_fungus',
+			'beneath:wood/fallen_leaves/crimson',
+			'beneath:wood/twig/crimson',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
 		],
@@ -60,9 +60,9 @@ TFCEvents.worldgenData(event => {
 		'beneath:wood/log/warped',
 		'beneath:wood/fallen_leaves/warped',
 		[
-			'2 minecraft:warped_fungus',
-			'3 beneath:wood/fallen_leaves/warped',
-			'2 beneath:wood/twig/warped',
+			'minecraft:warped_fungus',
+			'beneath:wood/fallen_leaves/warped',
+			'beneath:wood/twig/warped',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
 		],
@@ -84,8 +84,8 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
-			"2 ad_astra:aeronos_mushroom",
-			'3 tfg:groundcover/aeronos_stick',
+			"ad_astra:aeronos_mushroom",
+			'tfg:groundcover/aeronos_stick',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
 		],
@@ -107,8 +107,8 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
-			"2 ad_astra:strophar_mushroom",
-			'3 tfg:groundcover/strophar_stick',
+			"ad_astra:strophar_mushroom",
+			'tfg:groundcover/strophar_stick',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
 		],
@@ -129,8 +129,8 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
-			"2 species:alphacene_mushroom",
-			'3 tfg:groundcover/alphacene_stick',
+			"species:alphacene_mushroom",
+			'tfg:groundcover/alphacene_stick',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
 		],
@@ -151,9 +151,9 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
-			"2 betterend:glacian_hymenophore[facing=up]",
-			"4 tfg:glacian_leaves_fallen",
-			'2 tfg:groundcover/glacian_stick'
+			//"betterend:glacian_hymenophore[facing=up]",
+			"tfg:glacian_leaves_fallen",
+			'tfg:groundcover/glacian_stick'
 		],
 		'tfg:mars/tree/glacian',
 		'tfg:mars/tree/glacian_dead',
