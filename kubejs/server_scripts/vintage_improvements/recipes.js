@@ -679,6 +679,13 @@ function registerVintageImprovementsRecipes(event) {
 
 	event.custom({
 		type: 'vintageimprovements:coiling',
+		ingredients: [{ item: 'tfg:glacian_wool' }],
+		results: [{ item: 'tfc:wool_yarn', count: 8 }],
+		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/coiling/glacian_wool_yarn`)
+
+	event.custom({
+		type: 'vintageimprovements:coiling',
 		ingredients: [{ item: 'minecraft:phantom_membrane' }],
 		results: [{ item: 'tfg:phantom_thread', count: 16 }],
 		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
