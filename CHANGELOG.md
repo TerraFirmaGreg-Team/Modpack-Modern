@@ -23,6 +23,7 @@
 - Fixed some EMI rendering issues on 4x GUI scales and low screen resolutions (#1830) @Newlumberjack-sys
 - Fixed not being able to melt mortars and crowbars (#1837) @Newlumberjack-sys
 - Fixed problems with moss carpet into biomass (#1842) @Nashy1232
+- Fixed inconsistencies with tags on sacks (#1820) @BlueBoat29
 ### Translation updates
 - Chinese (simplified) @jmecn
 
