@@ -259,7 +259,15 @@ function registerGTCEuMachineRecipes(event) {
 			A: 'gtceu:coke_oven_bricks',
 			B: '#tfc:barrels'
 		})
-	).id('gtceu:shaped/coke_oven_hatch')
+	).id('tfg:shaped/coke_oven_hatch_barrel')
+
+	event.remove({ id: 'gtceu:arc_furnace/arc_coke_oven_hatch' })
+	event.recipes.gtceu.shaped('gtceu:coke_oven_hatch', [
+		'AB'
+	], {
+		A: 'gtceu:coke_oven_bricks',
+		B: '#forge:chests/wooden'
+	}).addMaterialInfo().id('gtceu:shaped/coke_oven_hatch')
 
 	//#endregion
 
