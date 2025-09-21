@@ -6,6 +6,30 @@
  */
 function registerTFGRockRecipes(event) {
 
+	// #region REMOVES
+	event.remove({ id: 'gtceu:shaped/stone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/stone_slab_saw' })
+	
+	event.remove({ id: 'gtceu:shaped/cobblestone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/cobblestone_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/cobblestone_slab_wall' })
+
+	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_slab_wall' })
+
+	event.remove({ id: 'gtceu:shaped/red_sandstone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/red_sandstone_wall_saw' })
+	event.remove({ id: 'gtceu:shaped/red_sandstone_polish_hammer' })
+	
+	event.remove({ id: 'gtceu:shaped/smooth_red_sandstone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/smooth_red_sandstone_slab_saw' })
+
+	event.remove({ id: 'gtceu:shaped/cut_red_sandstone_slab_saw' })
+
+	removeMaceratorRecipe(event, 'macerate_nether_bricks')
+	removeMaceratorRecipe(event, 'macerate_chiseled_nether_bricks')
+
 	// #region GLUEING_TOGETHER
 	// loose rocks to cobble, bricks to brick blocks
 	const GLUEING_TOGETHER = [
@@ -301,21 +325,21 @@ function registerTFGRockRecipes(event) {
 	})
 	// #endregion HAMMERING
 
-	// #region CUTTER
+	// #region CUT_GRIND
 	//
 	// (spacing for region titles)
 	// 
-	let CUTTER = [
+	let CUT_GRIND = [
 		// #region Nether
 		// Deepslate
 		{  raw:  'minecraft:deepslate',                         stair: 'tfg:rock/deepslate_stairs',                     slab: 'tfg:rock/deepslate_slab',                       wall: 'tfg:rock/deepslate_wall',
-		   dust: null,                                          loose: null,                                            stonecutting: false }, // Raw
+		   dust: 'gtceu:deepslate_dust',                        loose: null,                                            stonecutting: false }, // Raw
 
 		{  raw:  'minecraft:cobbled_deepslate',                 stair: 'minecraft:cobbled_deepslate_stairs',            slab: 'minecraft:cobbled_deepslate_slab',              wall: 'minecraft:cobbled_deepslate_wall',
 		   dust: 'gtceu:deepslate_dust', 		                loose: 'tfg:loose/deepslate',                           stonecutting: false }, // Cobble
 
 		{  raw:  'tfg:rock/mossy_cobble_deepslate',             stair: 'tfg:rock/mossy_cobble_deepslate_stairs',        slab: 'tfg:rock/mossy_cobble_deepslate_slab',          wall: 'tfg:rock/mossy_cobble_deepslate_wall',
-           dust: null,                                          loose: null,                                            stonecutting: true },  // Cobble - Mossy
+           dust: 'gtceu:deepslate_dust',                        loose: null,                                            stonecutting: true },  // Cobble - Mossy
 
 		{ raw:  'minecraft:polished_deepslate',                 stair: 'minecraft:polished_deepslate_stairs',           slab: 'minecraft:polished_deepslate_slab',             wall: 'minecraft:polished_deepslate_wall',
 		  dust: 'gtceu:deepslate_dust',                         loose: null,                                            stonecutting: false }, // Smooth
@@ -425,40 +449,40 @@ function registerTFGRockRecipes(event) {
 	// #region Space
 	const AA_REGULAR_STONES = ['moon', 'mars', 'venus', 'mercury', 'glacio']
 
-	CUTTER = CUTTER.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
+	CUT_GRIND = CUT_GRIND.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
 		{ raw:  `ad_astra:${stone}_stone`,                      stair: `ad_astra:${stone}_stone_stairs`,                slab: `ad_astra:${stone}_stone_slab`,                  wall: `tfg:rock/${stone}_stone_wall`,
 	      dust: `tfg:${stone}_stone_dust`,                      loose: null,                                            stonecutting: true }   // Raw
 	)) )
-	CUTTER = CUTTER.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
+	CUT_GRIND = CUT_GRIND.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
 		{ raw:  `ad_astra:${stone}_cobblestone`,                stair: `ad_astra:${stone}_cobblestone_stairs`,          slab: `ad_astra:${stone}_cobblestone_slab`,            wall: `tfg:rock/cobble_${stone}_wall`,
 		  dust: `tfg:${stone}_stone_dust`,                      loose: `tfg:loose/${stone}_stone`,                      stonecutting: true }   // Cobble
 	)) )
-	CUTTER = CUTTER.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
+	CUT_GRIND = CUT_GRIND.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
 		{ raw:  `tfg:rock/mossy_cobble_${stone}`,               stair: `tfg:rock/mossy_cobble_${stone}_stairs`,         slab: `tfg:rock/mossy_cobble_${stone}_slab`,           wall: `tfg:rock/mossy_cobble_${stone}_wall`,
 		  dust: `tfg:${stone}_stone_dust`,                      loose: null,                                            stonecutting: true }   // Cobble - Mossy
 	)) )
-	CUTTER = CUTTER.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
+	CUT_GRIND = CUT_GRIND.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
 		{ raw:  `ad_astra:polished_${stone}_stone`,             stair: `ad_astra:polished_${stone}_stone_stairs`,       slab: `ad_astra:polished_${stone}_stone_slab`,         wall: `tfg:rock/polished_${stone}_wall`,
 		  dust: `tfg:${stone}_stone_dust`,                      loose: null,                                            stonecutting: true }   // Smooth
 	)) )
-	CUTTER = CUTTER.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
+	CUT_GRIND = CUT_GRIND.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
 		{ raw:  `ad_astra:${stone}_stone_bricks`,               stair: `ad_astra:${stone}_stone_brick_stairs`,          slab: `ad_astra:${stone}_stone_brick_slab`,            wall: `ad_astra:${stone}_stone_brick_wall`,
 		  dust: `tfg:${stone}_stone_dust`,                      loose: null,                                            stonecutting: true }   // Bricks
 	)) )
-	CUTTER = CUTTER.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
+	CUT_GRIND = CUT_GRIND.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
 		{ raw:  `ad_astra:cracked_${stone}_stone_bricks`,       stair: `tfg:rock/cracked_bricks_${stone}_stairs`,       slab: `tfg:rock/cracked_bricks_${stone}_slab`,         wall: `tfg:rock/cracked_bricks_${stone}_wall`,
 		  dust: `tfg:${stone}_stone_dust`,                      loose: null,                                            stonecutting: true }   // Bricks - Cracked
 	)) )
-	CUTTER = CUTTER.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
+	CUT_GRIND = CUT_GRIND.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
 		{ raw:  `tfg:rock/mossy_bricks_${stone}`,               stair: `tfg:rock/mossy_bricks_${stone}_stairs`,         slab: `tfg:rock/mossy_bricks_${stone}_slab`,           wall: `tfg:rock/mossy_bricks_${stone}_wall`,
 		  dust: `tfg:${stone}_stone_dust`,                      loose: null,                                            stonecutting: true }   // Bricks - Mossy
 	)) )
-	CUTTER = CUTTER.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
+	CUT_GRIND = CUT_GRIND.concat( (AA_REGULAR_STONES ? AA_REGULAR_STONES : []).map(stone => (
 		{ raw:  `ad_astra:chiseled_${stone}_stone_bricks`,      stair: `ad_astra:chiseled_${stone}_stone_stairs`,       slab: `ad_astra:chiseled_${stone}_stone_slab`,         wall: `tfg:rock/chiseled_bricks_${stone}_wall`,
 		  dust: `tfg:${stone}_stone_dust`,                      loose: null,                                            stonecutting: true }   // Bricks - Extra
 	)) )
 
-	CUTTER = CUTTER.concat([
+	CUT_GRIND = CUT_GRIND.concat([
 		// Moon Deepstone
 		{ raw:  'ad_astra:moon_deepslate',                      stair: 'tfg:rock/moon_deepslate_stairs',                 slab: 'tfg:rock/moon_deepslate_slab',                 wall: 'tfg:rock/moon_deepslate_wall',
 		  dust: 'tfg:moon_deepslate_dust',                      loose: null,                                             stonecutting: true },  // Raw
@@ -566,7 +590,6 @@ function registerTFGRockRecipes(event) {
 
 		{ raw:  'minecraft:purpur_block',                       stair: 'minecraft:purpur_stairs',                        slab: 'minecraft:purpur_slab',                        wall: null,
 		  dust: null,                                           loose: null,                                             stonecutting: true },
-		
 		// #endregion Space
 
 		// #region Other
@@ -594,17 +617,29 @@ function registerTFGRockRecipes(event) {
 		// #endregion Other
 	])
 
-	CUTTER.forEach(x => {
+	CUT_GRIND.forEach(x => {
 		console.log(x.raw)
+		if (x.raw != null && x.dust != null ) {
+			try{
+				event.recipes.gtceu.macerator(x.raw.replace(/.*:/g, 'macerate_'))
+					.itemInputs(x.raw)
+					.itemOutputs(x.dust)
+					.duration(150)
+					.EUt(2)
+					.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			} catch(e){ console.log("Failed to add macerator recipe") }
+		}
 		if (x.stair != null) {
-			event.recipes.tfc.chisel(x.stair, x.raw, 'stair')
+			if (x.raw != null) {
+				event.recipes.tfc.chisel(x.stair, x.raw, 'stair')
 
-			if (x.stonecutting) {
-				event.stonecutting(x.stair, x.raw).id(`${x.raw}_to_${x.stair}`.replace(/:/g, '_'))
+				if (x.stonecutting) {
+					event.stonecutting(x.stair, x.raw).id(`${x.raw}_to_${x.stair}`.replace(/:/g, '_'))
+				}
 			}
 
 			if (x.dust != null) {
-				event.recipes.gtceu.macerator(`macerate_${x.stair}`.replace(/:/g, '_'))
+				event.recipes.gtceu.macerator(x.stair.replace(/.*:/g, 'macerate_'))
 					.itemInputs(x.stair)
 					.itemOutputs(x.dust)
 					.duration(150)
@@ -617,14 +652,16 @@ function registerTFGRockRecipes(event) {
 			}
 		}
 		if (x.slab != null) {
-			event.recipes.tfc.chisel(x.slab, x.raw, 'slab').extraDrop(x.slab)
-			
-			if (x.stonecutting) {
-				event.stonecutting(`2x ${x.slab}`, x.raw).id(`${x.raw}_to_${x.slab}`.replace(/:/g, '_'))
+			if (x.raw != null) {
+				event.recipes.tfc.chisel(x.slab, x.raw, 'slab').extraDrop(x.slab)
+				
+				if (x.stonecutting) {
+					event.stonecutting(`2x ${x.slab}`, x.raw).id(`${x.raw}_to_${x.slab}`.replace(/:/g, '_'))
+				}
 			}
 
 			if (x.dust != null) {
-				event.recipes.gtceu.macerator(`macerate_${x.slab}`.replace(/:/g, '_'))
+				event.recipes.gtceu.macerator(x.slab.replace(/.*:/g, 'macerate_'))
 					.itemInputs(`2x ${x.slab}`)
 					.itemOutputs(x.dust)
 					.duration(150)
@@ -637,26 +674,28 @@ function registerTFGRockRecipes(event) {
 			}
 		}
 		if (x.wall != null) {
-			event.recipes.tfc.chisel(x.wall, x.raw, 'smooth')
-			
-			if (x.stonecutting) {
-				event.stonecutting(x.wall, x.raw).id(`${x.raw}_to_${x.wall}`.replace(/:/g, '_'))
+			if (x.raw != null) {
+				event.recipes.tfc.chisel(x.wall, x.raw, 'smooth')
+				
+				if (x.stonecutting) {
+					event.stonecutting(x.wall, x.raw).id(`${x.raw}_to_${x.wall}`.replace(/:/g, '_'))
+				}
+			}
+			if (x.slab != null) {
+				event.recipes.tfc.chisel(x.wall, x.slab, 'smooth')
 			}
 
 			if (x.dust != null) {
-				event.recipes.gtceu.macerator(`macerate_${x.wall}`.replace(/:/g, '_'))
-					.itemInputs(x.wall)
+				event.recipes.gtceu.macerator(x.wall.replace(/.*:/g, 'macerate_'))
+					.itemInputs(`2x ${x.wall}`)
 					.itemOutputs(x.dust)
 					.duration(150)
 					.EUt(2)
 					.category(GTRecipeCategories.MACERATOR_RECYCLING)
 			}
 		}
-		if (x.slab != null && x.wall != null) {
-			event.recipes.tfc.chisel(x.wall, x.slab, 'smooth')
-		}
 
-		if (x.loose != null) {
+		if (x.loose != null && x.raw != null) {
 			event.shapeless(`4x ${x.loose}`, [x.raw])
 		}
 	})
@@ -668,9 +707,52 @@ function registerTFGRockRecipes(event) {
 		.duration(40)
 		.EUt(2)
 
-	// #endregion CUTTER
+	// #endregion CUT_GRIND
 
-	// Stone Cutter Sets
+	// #region MACERATOR
+	// For all the blocks not already handles bu the CUTTER loop.
+	const MACERATOR = [
+		{ block: 'tfg:rock/hardened_deepslate',      dust: 'gtceu:deepslate_dust'    },
+		{ block: 'minecraft:chiseled_deepslate',     dust: 'gtceu:deepslate_dust'    },
+		{ block: 'tfg:rock/hardened_blackstone',     dust: 'gtceu:blackstone_dust'   },
+		{ block: 'minecraft:chiseled_blackstone',    dust: 'gtceu:blackstone_dust'   },
+		{ block: 'tfg:rock/hardened_dripstone',      dust: 'tfg:dripstone_dust'      },
+		{ block: 'minecraft:chiseled_nether_bricks', dust: 'gtceu:netherrack_dust'   },		
+		{ block: 'tfg:rock/hardened_moon_stone',     dust: 'tfg:moon_stone_dust'     },
+		{ block: 'ad_astra:moon_pillar',             dust: 'tfg:moon_stone_dust'     },
+		{ block: 'tfg:rock/hardened_moon_deepslate', dust: 'tfg:moon_deepslate_dust' },
+		{ block: 'tfg:rock/pillar_moon_deepslate',   dust: 'tfg:moon_deepslate_dust' },
+		{ block: 'tfg:rock/hardened_mars_stone',     dust: 'tfg:mars_stone_dust'     },
+		{ block: 'ad_astra:mars_pillar',             dust: 'tfg:mars_stone_dust'     },
+		{ block: 'tfg:rock/hardened_venus_stone',    dust: 'tfg:venus_stone_dust'    },
+		{ block: 'ad_astra:venus_pillar',            dust: 'tfg:venus_stone_dust'    },
+		{ block: 'tfg:rock/hardened_mercury_stone',  dust: 'tfg:mercury_stone_dust'  },
+		{ block: 'ad_astra:mercury_pillar',          dust: 'tfg:mercury_stone_dust'  },
+		{ block: 'tfg:rock/hardened_glacio_stone',   dust: 'tfg:glacio_stone_dust'   },
+		{ block: 'ad_astra:glacio_pillar',           dust: 'tfg:glacio_stone_dust'   },		
+		{ block: 'tfg:rock/hardened_red_granite',    dust: 'gtceu:granite_red_dust'  },
+		{ block: 'gtceu:red_granite_tile',           dust: 'gtceu:granite_red_dust'  },
+		{ block: 'gtceu:square_red_granite_bricks',  dust: 'gtceu:granite_red_dust'  },
+		{ block: 'gtceu:red_granite_windmill_a',     dust: 'gtceu:granite_red_dust'  },
+		{ block: 'gtceu:red_granite_windmill_b',     dust: 'gtceu:granite_red_dust'  },
+		{ block: 'gtceu:small_red_granite_bricks',   dust: 'gtceu:granite_red_dust'  },
+		{ block: 'gtceu:red_granite_small_tile',     dust: 'gtceu:granite_red_dust'  },
+		{ block: 'gtceu:chiseled_red_granite',       dust: 'gtceu:granite_red_dust'  }		
+	]
+
+	MACERATOR.forEach(x => {
+		event.recipes.gtceu.macerator(x.block.replace(/.*:/g, 'macerate_'))
+			.itemInputs(x.block)
+			.itemOutputs(x.dust)
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+	})
+	//#endregion
+
+	// #endregion MACERATOR
+
+	// #region STONECUTTER
 	const red_granite_cutter_set = Ingredient.of('#tfg:red_granite_cutter_set').itemIds.toArray().map(String);
 	red_granite_cutter_set.forEach(block => {
 		event.stonecutting(block,
@@ -686,6 +768,8 @@ function registerTFGRockRecipes(event) {
 		).id(`tfg:stonecutter/${block.replace(/:/g, "/")}`)
 		
 	})
+
+	// #endregion STONECUTTER
 
 	// #region PILLARS
 	const PILLARS = [
@@ -735,47 +819,6 @@ function registerTFGRockRecipes(event) {
 		Item.of('tfg:rock/pillar_moon_deepslate', 2), [ ' A ', ' A ' ], { A: 'tfg:rock/bricks_moon_deepslate' }
 	)
 	// #endregion PILLARS
-
-	// #region MACERATOR
-	const MACERATOR = [
-		{ block: 'minecraft:deepslate',       dust: 'gtceu:deepslate_dust' },
-		{ block: 'minecraft:dripstone_block', dust: 'tfg:dripstone_dust' },
-		{ block: 'ad_astra:moon_stone',       dust: 'tfg:moon_stone_dust' },
-		{ block: 'ad_astra:moon_deepslate',   dust: 'tfg:moon_deepslate_dust' },
-		{ block: 'ad_astra:mars_stone',       dust: 'tfg:mars_stone_dust' },
-		{ block: 'ad_astra:venus_stone',      dust: 'tfg:venus_stone_dust' },
-		{ block: 'ad_astra:mercury_stone',    dust: 'tfg:mercury_stone_dust' },
-		{ block: 'ad_astra:glacio_stone',     dust: 'tfg:glacio_stone_dust' },
-		{ block: 'ad_astra:permafrost',       dust: 'gtceu:ice_dust' },
-		{ block: 'ae2:sky_stone',             dust: 'ae2:sky_dust' }
-	]
-
-	MACERATOR.forEach(x => {
-		event.recipes.gtceu.macerator(`macerate_${x.block}`.replace(/:/g, '_'))
-			.itemInputs(x.block)
-			.itemOutputs(x.dust)
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-	})
-
-	//#region Crackrack/netherrack dust compat
-	event.recipes.gtceu.macerator(`raw_crackrack_to_dust`)
-		.itemInputs('beneath:crackrack')
-		.itemOutputs('gtceu:netherrack_dust')
-		.duration(150)
-		.EUt(2)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-	event.recipes.gtceu.macerator('crackrack_cobble_to_dust')
-		.itemInputs('tfg:rock/cobble_crackrack')
-		.itemOutputs('gtceu:netherrack_dust')
-		.duration(150)
-		.EUt(2)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-	//#endregion
-
-	// #endregion MACERATOR
 
 	// #region ROCK_DUPING (Breaker)
 	const ROCK_DUPING = [
