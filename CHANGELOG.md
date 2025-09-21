@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 ### Changes
--  New overworld structures with new enemies and loot! You can find them in cold and wet climates (#1836) @KrestenFM @Pyritie
+- New overworld structures with new enemies and loot! You can find them in cold and wet climates (#1836) @KrestenFM @Pyritie
 - Changed and unified stack sizes for many items (check [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/pull/1778) for a full list) (#1778) @KonSola5
 - Reduced the durability of wooden tongs @Pyritie
 - Jute net is renamed to Burlap net and can now also be made from Flax (#1833) @Nashy1232
