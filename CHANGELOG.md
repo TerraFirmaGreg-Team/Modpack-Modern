@@ -24,6 +24,8 @@
 - Fixed some EMI rendering issues on 4x GUI scales and low screen resolutions (#1830) @Newlumberjack-sys
 - Fixed not being able to melt mortars and crowbars (#1837) @Newlumberjack-sys
 - Fixed problems with moss carpet into biomass (#1842) @Nashy1232
+- Fixed lunch boxes giving 1.5-2x more saturation than intended (#1824) @Thomasx0
+- Fixed Create Stock Ticker creating phantom copies of the electric lunchbox while open @Thomasx0
 ### Translation updates
 - Chinese (simplified) @jmecn
 
