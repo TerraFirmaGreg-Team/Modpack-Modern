@@ -149,7 +149,6 @@ function registerTFGSpaceOres(event) {
 		.dimension('ad_astra:mars')
 		.itemOutputsRanged('gtceu:ostrum_dust', 1, 5)
 		.duration(20 * 30)
-		.duration(20 * 30)
 		.EUt(GTValues.VA[GTValues.LV]);
 
 

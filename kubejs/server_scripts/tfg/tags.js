@@ -50,6 +50,9 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:components/uv_leds', 'tfg:uv_led')
 	event.add('tfg:components/uv_leds', 'tfg:smd_uv_led')
 
+	//Fission Nucleat Fuel
+	event.add('deafission:fuels', 'tfg:thorium_pellet')
+
 	//#region Tools & Armor
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/wood')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/brass')
@@ -904,6 +907,22 @@ const registerTFGBlockTags = (event) => {
 
 	event.add('buildinggadgets2:deny', 'tfg:geyser_source_small')
 	event.add('ae2:blacklisted/spatial', 'tfg:geyser_source_small')
+
+	// Fision Components
+    var COMPONENTS = 'deafission:components';
+    
+    event.add(COMPONENTS, 'minecraft:white_wool');
+    event.add(COMPONENTS, 'minecraft:black_wool');
+    event.add(COMPONENTS, 'minecraft:pink_wool');
+    event.add(COMPONENTS, 'minecraft:white_wool');
+    event.add(COMPONENTS, 'minecraft:bedrock');
+
+    event.add(COMPONENTS, 'minecraft:iron_block');
+    event.add(COMPONENTS, 'minecraft:emerald_block');
+    event.add(COMPONENTS, 'minecraft:netherite_block');
+    event.add(COMPONENTS, 'minecraft:nether_portal');
+    
+    event.add(COMPONENTS, 'minecraft:packed_ice');
 
 	// #region Nether blocks
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')

@@ -247,3 +247,29 @@ const registerTFGNuclearMaterials = (event) => {
     //#endregion
 
     }
+
+    const $FuelCellItem = Java.loadClass("fi.dea.mc.deafission.common.data.items.FuelCellItem");
+
+StartupEvents.registry("item", (event) => {
+  event.createCustom("tfg:thorium_pellet", () => {
+    return new $FuelCellItem(
+      10000,
+      1,
+      1
+    );
+  })
+  event.createCustom("tfg:uranium_pellet", () => {
+    return new $FuelCellItem(
+      10000,
+      1,
+      1.5
+    );
+  })
+  event.createCustom("tfg:plutonium_pellet", () => {
+    return new $FuelCellItem(
+      10000,
+      1,
+      2.0
+    );
+  })
+  });
