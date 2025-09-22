@@ -909,7 +909,7 @@ global.TFC_MEAT_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfg:food/raw_sniffer_beef", output: "tfg:food/cooked_sniffer_beef", name: "cooked_sniffer_beef" },
     { input: "tfg:food/raw_wraptor", output: "tfg:food/cooked_wraptor", name: "cooked_wraptor" },
     {
-        input: "wan_ancient_beasts:raw_toxlacanth",
+        input: "wan_ancient_beasts:toxlacanth",
         output: "wan_ancient_beasts:cooked_toxlacanth",
         name: "cooked_toxlacanth",
     },
