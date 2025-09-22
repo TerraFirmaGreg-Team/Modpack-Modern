@@ -939,10 +939,10 @@
 					Count: 1
 					id: "gtceu:stone_hammer"
 					tag: {
+						Damage: 0
 						DisallowContainerItem: 0b
 						GT.Behaviours: { }
 						GT.Tool: {
-							Damage: 0
 							HarvestLevel: 1
 							MaxDamage: 47
 							ToolSpeed: 5.2f
