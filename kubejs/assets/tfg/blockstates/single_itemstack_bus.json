@@ -14,6 +14,15 @@
     "facing=west": {
       "model": "tfg:block/machines/ports/single_itemstack_bus",
       "y": 270
+    },
+    "facing=up": {
+      "gtceu:z": 180,
+      "model": "tfg:block/machines/ports/single_itemstack_bus",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "tfg:block/machines/ports/single_itemstack_bus",
+      "x": 90
     }
   }
 }
