@@ -984,6 +984,8 @@ const registerMinecraftRecipes = (event) => {
 	// Slime
 	event.smelting('tfc:glue', 'minecraft:slime_ball')
 		.id('tfg:smelting/slime_to_glue')
+	event.smelting('tfc:glue', 'minecraft:magma_cream')
+		.id('tfg:smelting/magma_cream_to_glue')
 
 	// Clay
 	event.shaped('minecraft:clay', [
