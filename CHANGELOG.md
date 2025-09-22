@@ -33,6 +33,9 @@
 - Fixed lunch boxes giving 1.5-2x more saturation than intended (#1824) @Thomasx0
 - Fixed Create Stock Ticker creating phantom copies of the electric lunchbox while open @Thomasx0
 - Fixed inconsistencies with tags on sacks (#1820) @BlueBoat29
+- Fixed the moon dust harvester not working with 4A or 16A energy hatches (#1874) @TomPlop
+- Disabled being able to rotate the Vintage Improvements Lathe because it was causing crashes @Pyritie
+- Fixed the Vintage Improvements Curving Press always using one item as an ingredient instead of the full amount @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 
