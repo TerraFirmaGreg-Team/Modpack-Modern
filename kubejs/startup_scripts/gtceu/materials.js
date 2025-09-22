@@ -408,4 +408,10 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.get('tfg:tmos').setFormula("Si(OCH3)4", true)
 	GTMaterials.get('tfg:fluix').setFormula("?(?SiO2)(SiO2)", true)
 	GTMaterials.CertusQuartz.setFormula("?SiO2", true)
+
+	GTMaterials.Deuterium.setFormula("H²", true)
+	GTMaterials.Tritium.setFormula("H³", true)
+	GTMaterials.get('tfg:semiheavy_water').setFormula("H²HO", true)
+	GTMaterials.get('tfg:heavy_water').setFormula("H²2O", true)
+	GTMaterials.get('tritiated_water').setFormula("H³2O", true)
 }
