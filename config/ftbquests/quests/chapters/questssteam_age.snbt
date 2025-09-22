@@ -828,8 +828,8 @@
 			optional: true
 			subtitle: "{quests.steam_age.lathe.subtitle}"
 			tasks: [{
-				id: "269D79581AC1E0D6"
-				item: "vintageimprovements:lathe"
+				id: "23961EE69549B16E"
+				item: "vintageimprovements:belt_grinder"
 				type: "item"
 			}]
 			title: "{quests.steam_age.lathe.title}"

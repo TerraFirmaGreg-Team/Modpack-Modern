@@ -8,6 +8,7 @@
   - Drums now require a Soft Mallet to turn on their auto-output instead of a Screwdriver
 - New overworld structures with new enemies and loot! You can find them in cold and wet climates (#1836) @KrestenFM @Pyritie
 - You can no longer light nether portals. Existing ones will still work. @Pyritie
+- The old Create Lathe has been replaced with the Belt Grinder, which does exactly the same things as the lathe did, and is much easier to automate. Put your old lathe in a crafting grid to convert it. @Pyritie
 ### Changes
 - Changed and unified stack sizes for many items (check [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/pull/1778) for a full list) (#1778) @KonSola5
 - Reduced the durability of wooden tongs @Pyritie
