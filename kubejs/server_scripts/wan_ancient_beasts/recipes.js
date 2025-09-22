@@ -72,7 +72,7 @@ const registerWABRecipes = (event) => {
 	}).id('tfg:shaped/reinforced_shield_from_shield')
 }
 
-const registerWABFoodData = (event) => {
+const registerWABData = (event) => {
 	
 	event.foodItem('wan_ancient_beasts:toxlacanth', food => {
 		food.hunger(2)
@@ -100,4 +100,7 @@ const registerWABFoodData = (event) => {
 		food.protein(5)
 		food.decayModifier(2.25)
 	})
+
+
+	event.itemSize('wan_ancient_beasts:reinforced_shield', 'very_large', 'very_heavy')
 }
