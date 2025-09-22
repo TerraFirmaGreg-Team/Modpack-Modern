@@ -681,7 +681,7 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:lv_steam_turbine)item(gtceu:lv_combustion))"
 					}
 				}
-				title: "{quests.gregtech_energy.mv_generator.task}"
+				title: "{quests.gregtech_energy.lv_generator.task}"
 				type: "item"
 			}]
 			title: "{quests.gregtech_energy.lv_generator.title}"
