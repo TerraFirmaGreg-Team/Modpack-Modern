@@ -527,15 +527,17 @@ function registerVintageImprovementsRecipes(event) {
 			// And this
 			if (r.inputs.item[0].content.ingredient.tag === "#forge:ingots/damascus_steel") return
 
-			let input = r.inputs.item[0].content.ingredient;
-			input.count = r.inputs.item[0].content.count;
+			let input_array = [];
+			for (let i = 0; i < r.inputs.item[0].content.count; i++) {
+				input_array.push(r.inputs.item[0].content.ingredient);
+			}
 
 			let output = r.outputs.item[0].content.ingredient;
 			output.count = r.outputs.item[0].content.count;
 
 			event.custom({
 				type: 'vintageimprovements:curving',
-				ingredients: [input],
+				ingredients: input_array,
 				itemAsHead: r.inputs.item[1].content.ingredient.item,
 				results: [output],
 				processingTime: r.duration * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
