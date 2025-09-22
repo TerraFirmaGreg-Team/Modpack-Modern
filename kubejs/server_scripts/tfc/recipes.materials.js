@@ -271,6 +271,20 @@ function registerTFCMaterialsRecipes(event) {
 								.tier(tfcProperty.getTier())
 								.id(`tfc:anvil/${material.getName()}_shield`)
 
+							event.custom({
+								type: 'vintageimprovements:curving',
+								ingredients: [doublePlateItem],
+								itemAsHead: 'gtceu:plate_extruder_mold',
+								results: [{ item: `tfc:metal/shield/${material.getName()}` }],
+								processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+							}).id(`tfg:vi/curving/${material.getName()}_shield`)
+
+							event.recipes.gtceu.extruder(`tfg:${material.getName()}_shield`)
+								.itemInputs(doublePlateItem)
+								.notConsumable('gtceu:plate_extruder_mold')
+								.itemOutputs(`tfc:metal/shield/${material.getName()}`)
+								.duration(material.getMass() * 6)
+								.EUt(GTValues.VA[GTValues.LV])
 							//#endregion
 
 							//#region Конская броня
