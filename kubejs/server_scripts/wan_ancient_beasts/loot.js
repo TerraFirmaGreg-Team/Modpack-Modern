@@ -5,6 +5,7 @@ function registerWansAncientBeastsLoots(event) {
 	
 	event.addEntityLootModifier('wan_ancient_beasts:crusher')
 		.addWeightedLoot([2, 4], ['minecraft:bone'])
+		.addWeightedLoot([2, 4], ['wan_ancient_beasts:crusher_spike'])
 		.addWeightedLoot([4, 7], ['tfg:food/raw_crusher_meat'])
 
 	event.addEntityLootModifier('wan_ancient_beasts:crusher')
@@ -14,6 +15,7 @@ function registerWansAncientBeastsLoots(event) {
 
 	event.addEntityLootModifier('wan_ancient_beasts:glider')
 		.addWeightedLoot([1, 3], ['minecraft:bone'])
+		.addWeightedLoot([2, 4], ['wan_ancient_beasts:glider_feather'])
 		.addWeightedLoot([6, 8], ['tfg:food/raw_glider_wings'])
 
 	event.addEntityLootModifier('wan_ancient_beasts:glider')
@@ -23,6 +25,7 @@ function registerWansAncientBeastsLoots(event) {
 
 	event.addEntityLootModifier('wan_ancient_beasts:soarer')
 		.addWeightedLoot([1, 3], ['minecraft:bone'])
+		.addWeightedLoot([2, 4], ['minecraft:feather'])
 		.addWeightedLoot([2, 4], ['tfg:food/raw_whole_soarer'])
 
 	event.addEntityLootModifier('wan_ancient_beasts:soarer')

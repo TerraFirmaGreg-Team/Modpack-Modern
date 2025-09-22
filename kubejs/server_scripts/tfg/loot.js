@@ -173,11 +173,20 @@ function registerTFGLoots(event) {
 
 
 	event.addEntityLootModifier('tfg:sniffer')
+		.addWeightedLoot([5, 8], ['minecraft:bone'])
 		.addWeightedLoot([16, 20], ['tfg:food/raw_sniffer_beef'])
 
 	event.addEntityLootModifier('tfg:sniffer')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([8, 10], ['tfg:food/raw_sniffer_beef'])
 
-	// TODO: wraptor meat?
+
+	event.addEntityLootModifier('tfg:wraptor')
+		.addWeightedLoot([2, 3], ['minecraft:bone'])
+		.addWeightedLoot([2, 4], ['minecraft:feather'])
+		.addWeightedLoot([4, 7], ['tfg:food/raw_wraptor'])
+
+	event.addEntityLootModifier('tfg:wraptor')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([2, 3], ['tfg:food/raw_wraptor'])
 };
