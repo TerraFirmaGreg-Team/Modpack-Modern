@@ -14294,7 +14294,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "wab-1.20.1-1.3.1.jar",
+                    "file_name": "wab-1.20.1-1.3.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14303,22 +14303,22 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/nWC3kyL3/versions/cf1QAPDG/wab-1.20.1-1.3.1.jar",
-                    "id": "cf1QAPDG",
+                    "url": "https://cdn.modrinth.com/data/nWC3kyL3/versions/RY6tjr9r/wab-1.20.1-1.3.2.jar",
+                    "id": "RY6tjr9r",
                     "parent_id": "nWC3kyL3",
                     "hashes": {
-                        "sha512": "cc80da2f8bbc7c9780b4ecbbc135b236bac6deec26166bf7149bfc5c9989c21f2f5be8948491fbab8d200c51ca854ee742c70ef735a164b37869d559c8b6731c",
-                        "sha1": "1262e27c352d303b608dbfd587d4231741d9c89f"
+                        "sha512": "5ac692f7eeaf6d0cdb4fd6131b2bbe30bbb873c28a34b999b37a83b7b0e726ad6fb82138a9fb93f34e40384431fcfa549b41d9fbff845f5554182ca427f4f441",
+                        "sha1": "7298a59e383d2327e2acc49d8f1b132cedb8860b"
                     },
                     "required_dependencies": [
                         "8BmcQJ2H"
                     ],
-                    "size": 9068035,
-                    "date_published": "2025-08-21T12:47:19.839859Z"
+                    "size": 9115799,
+                    "date_published": "2025-09-22T20:47:32.603138Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "wab-1.20.1-1.3.1.jar",
+                    "file_name": "wab-1.20.1-1.3.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14327,18 +14327,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6911/60/wab-1.20.1-1.3.1.jar",
-                    "id": "6911060",
+                    "url": "https://edge.forgecdn.net/files/7023/583/wab-1.20.1-1.3.2.jar",
+                    "id": "7023583",
                     "parent_id": "1108604",
                     "hashes": {
-                        "sha1": "1262e27c352d303b608dbfd587d4231741d9c89f",
-                        "md5": "f0c1ece64562ca523efb513e1e7c19c9"
+                        "sha1": "7298a59e383d2327e2acc49d8f1b132cedb8860b",
+                        "md5": "a3cf1ea1c616b546b586c7415143e5fe"
                     },
-                    "required_dependencies": [
-                        "388172"
-                    ],
-                    "size": 9068035,
-                    "date_published": "2025-08-21T12:44:33.350Z"
+                    "required_dependencies": [],
+                    "size": 9115799,
+                    "date_published": "2025-09-22T20:37:11.317Z"
                 }
             ]
         },
