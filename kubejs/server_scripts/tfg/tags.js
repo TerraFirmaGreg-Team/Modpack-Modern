@@ -745,6 +745,7 @@ const registerTFGItemTags = (event) => {
 	//Mars animal region
 	event.add('tfg:martian_eggs', 'tfg:sniffer_egg')
 	event.add('tfg:martian_eggs', 'tfg:wraptor_egg')
+	event.add('tfc:eggs', '#tfg:martian_eggs')
 	
 	event.add('tfg:martian_animal_foods', 'betterend:amber_root_product')
 	event.add('tfg:martian_animal_foods', 'betterend:blossom_berry_product')
