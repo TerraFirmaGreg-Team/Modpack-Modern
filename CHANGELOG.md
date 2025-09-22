@@ -1,6 +1,11 @@
 # Changelog
 
 ## [Unreleased]
+### Major Changes
+- GregTech updated to 7.2.0, check [here](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern/files/7022042) for the full list of changes, but here's a summary:
+  - AoE tools like the mining hammer now work properly again
+  - Now only multiblock machines turn themselves off if they don't have enough power, but this can be changed with a Machine Control Cover
+  - Drums now require a Soft Mallet to turn on their auto-output instead of a Screwdriver
 ### Changes
 - New overworld structures with new enemies and loot! You can find them in cold and wet climates (#1836) @KrestenFM @Pyritie
 - Changed and unified stack sizes for many items (check [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/pull/1778) for a full list) (#1778) @KonSola5
@@ -8,6 +13,7 @@
 - Jute net is renamed to Burlap net and can now also be made from Flax (#1833) @Nashy1232
 - Orbits now function as cleanrooms @BlueBoat29
 - Added Create Deco catwalks to AE2 and GT Facades @Programmer3481
+- Added locometal to GT Facades @Pyritie
 - Added mossy, stairs, slabs, walls, and more to the non-TFC stone types (#1845) @vidal-adrien
 - Added back vanilla stone and all its variants, craftable out of the stone dust you get from ore processing (#1845) @vidal-adrien
 - Tweaked the moon worldgen a bit to add the new stone stuff @Pyritie
