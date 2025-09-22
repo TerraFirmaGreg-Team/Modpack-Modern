@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=up":    { "model": "betterend:block/mossy_glowshroom_fur" },
+        "facing=down":  { "model": "betterend:block/mossy_glowshroom_fur", "x": 180 },
+        "facing=north": { "model": "betterend:block/mossy_glowshroom_fur", "x": 90 },
+        "facing=south": { "model": "betterend:block/mossy_glowshroom_fur", "x": 90, "y": 180 },
+        "facing=east":  { "model": "betterend:block/mossy_glowshroom_fur", "x": 90, "y": 90 },
+        "facing=west":  { "model": "betterend:block/mossy_glowshroom_fur", "x": 90, "y": 270 }
+    }
+}

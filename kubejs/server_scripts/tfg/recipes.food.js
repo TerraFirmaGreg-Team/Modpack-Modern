@@ -1113,6 +1113,7 @@ function registerTFGFoodRecipes(event) {
         .itemOutputs('1x tfg:mv_food_refrigerator')
         .duration(200)
         .circuit(7)
+		.addMaterialInfo(true)
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.assembler('tfg:assembler/hv_food_refrigerator')
@@ -1128,6 +1129,7 @@ function registerTFGFoodRecipes(event) {
         .itemOutputs('1x tfg:hv_food_refrigerator')
         .duration(200)
         .circuit(7)
+		.addMaterialInfo(true)
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.assembler('tfg:assembler/ev_food_refrigerator')
@@ -1143,6 +1145,7 @@ function registerTFGFoodRecipes(event) {
         .itemOutputs('1x tfg:ev_food_refrigerator')
         .duration(200)
         .circuit(7)
+		.addMaterialInfo(true)
         .EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('tfg:assembler/iv_food_refrigerator')
@@ -1158,6 +1161,7 @@ function registerTFGFoodRecipes(event) {
         .itemOutputs('1x tfg:iv_food_refrigerator')
         .duration(200)
         .circuit(7)
+		.addMaterialInfo(true)
         .EUt(GTValues.VA[GTValues.LV])
 
 	event.shaped('tfg:electric_greenhouse', [

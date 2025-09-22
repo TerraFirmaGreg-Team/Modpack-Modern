@@ -1662,22 +1662,6 @@
 			x: -16.5d
 			y: 16.0d
 		}
-		{
-			dependencies: ["183D47F04CAEBFA7"]
-			description: ["{quests.steam_age.straw.desc}"]
-			icon: "create:fluid_pipe"
-			id: "6A28DE8263316927"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.steam_age.straw.subtitle}"
-			tasks: [{
-				id: "75B27729685EE9D0"
-				type: "checkmark"
-			}]
-			title: "{quests.steam_age.straw.title}"
-			x: -15.0d
-			y: 14.5d
-		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]
 	title: "{quests.steam_age}"

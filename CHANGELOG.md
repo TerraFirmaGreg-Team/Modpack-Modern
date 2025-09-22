@@ -1,18 +1,44 @@
 # Changelog
 
 ## [Unreleased]
-### Changes
+### Major Changes
+- GregTech updated to 7.2.0, check [here](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern/files/7022042) for the full list of changes, but here's a summary:
+  - AoE tools like the mining hammer now work properly again
+  - Now only multiblock machines turn themselves off if they don't have enough power, but this can be changed with a Machine Control Cover
+  - Drums now require a Soft Mallet to turn on their auto-output instead of a Screwdriver
 - New overworld structures with new enemies and loot! You can find them in cold and wet climates (#1836) @KrestenFM @Pyritie
+- You can no longer light nether portals. Existing ones will still work. @Pyritie
+### Changes
 - Changed and unified stack sizes for many items (check [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/pull/1778) for a full list) (#1778) @KonSola5
 - Reduced the durability of wooden tongs @Pyritie
 - Jute net is renamed to Burlap net and can now also be made from Flax (#1833) @Nashy1232
+- Orbits now function as cleanrooms @BlueBoat29
+- Added Create Deco catwalks to AE2 and GT Facades @Programmer3481
+- Added locometal to GT Facades @Pyritie
+- Added mossy, stairs, slabs, walls, and more to the non-TFC stone types (#1845) @vidal-adrien
+- Added back vanilla stone and all its variants, craftable out of the stone dust you get from ore processing (#1845) @vidal-adrien
+- Tweaked the moon worldgen a bit to add the new stone stuff @Pyritie
+- Added rice and pasta to meal bags (#1864) @Nashy1232
+- Added back minecart with furnace as a minecart with boiler, and now it can accept any forge fuel (#1860) @Nashy1232
+- Adds EMI pages for Create Blaze Burner Fuels and for in-world block modifications @BlueBoat29
+- Added recipes for the rest of Create's windows and window panes @Pyritie
+- Halved how quickly the durability decreases on the various hiking/steel toe boots @Pyritie
+- Added curving press/extruder recipes for TFC shields @Pyritie
 ### Bug fixes
 - Ice soup now requires a bowl to craft, so it doesn't generate free bowls @Pyritie
 - Fixed repairing an iron flask consuming the knife, also added some flask recipes with rubber instead of a bladder (#1826) @Pyritie
 - Fixed not being able to use the small pipe extruder mold in the curving press (#1823) @Nashy1232
 - Fixed some EMI rendering issues on 4x GUI scales and low screen resolutions (#1830) @Newlumberjack-sys
 - Fixed not being able to melt mortars and crowbars (#1837) @Newlumberjack-sys
+- Fixed problems with moss carpet into biomass (#1842) @Nashy1232
+- Fixed lunch boxes giving 1.5-2x more saturation than intended (#1824) @Thomasx0
+- Fixed Create Stock Ticker creating phantom copies of the electric lunchbox while open @Thomasx0
+- Fixed inconsistencies with tags on sacks (#1820) @BlueBoat29
+- Fixed the moon dust harvester not working with 4A or 16A energy hatches (#1874) @TomPlop
+- Disabled being able to rotate the Vintage Improvements Lathe because it was causing crashes @Pyritie
+- Fixed the Vintage Improvements Curving Press always using one item as an ingredient instead of the full amount @Pyritie
 ### Translation updates
+- Chinese (simplified) @jmecn
 
 ## [0.10.14] - 14-09-2025
 ### Changes

@@ -6,8 +6,8 @@
 			"min_forest": "edge"
 		},
 		{
-			"type": "minecraft:rarity_filter",
-			"chance": 2
+			"type": "minecraft:count",
+			"count": 2
 		},
 		{
 			"type": "minecraft:in_square"
@@ -18,6 +18,11 @@
 		{
 			"type": "minecraft:heightmap",
 			"heightmap": "OCEAN_FLOOR"
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": 0,
+			"y_spread": 3
 		}
 	]
 }

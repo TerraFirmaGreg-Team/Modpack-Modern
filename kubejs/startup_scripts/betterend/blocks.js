@@ -10,7 +10,7 @@ function registerBetterEndBlocks(event) {
 		.hardness(0.5)
 		.tagItem('tfg:moon_plants')
 		.tagBlock('minecraft:mineable/hoe')
-        .tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfg:do_not_destroy_in_space')
 		.mapColor('terracotta_white')
 		.box(0, 0, 0, 16, 6, 16)
 		.fullBlock(false)
@@ -61,6 +61,8 @@ function registerBetterEndBlocks(event) {
 	createPlant(event, 'lucernia_outer_leaves', 'mars')
 	createPlant(event, 'lanceleaf_small', 'mars')
 		.box(4, 0, 4, 12, 8, 12)
+	createPlant(event, 'selagine', 'mars')
+		.lootItem('tfc:straw')
 
 	// 1 block tall waterlogged
 
@@ -79,7 +81,7 @@ function registerBetterEndBlocks(event) {
 		.mapColor('color_light_blue')
 		.tagItem('tfg:mars_plants')
 		.tagItem('forge:mushrooms')
-        .tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagBlock('minecraft:replaceable')
 
 	event.create('betterend:lacugrove', 'tfg:floating_decorative_plant')
@@ -88,47 +90,53 @@ function registerBetterEndBlocks(event) {
 		.box(0, 0, 0, 16, 1, 16)
 		.mapColor('color_cyan')
 		.tagItem('tfg:mars_plants')
-        .tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagBlock('minecraft:replaceable')
 
 	// Mosses / Can go on sides of blocks
 
-	// TODO: needs features
 	event.create('betterend:aurant_polypore', 'tfg:attached_decorative_plant')
 		.soundType('nether_wart')
 		.tagItem('tfg:mars_plants')
 		.tagItem('forge:mushrooms')
 		.tagBlock('minecraft:replaceable')
-        .tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfg:do_not_destroy_in_space')
 
 	event.create('betterend:purple_polypore', 'tfg:attached_decorative_plant')
 		.soundType('nether_wart')
 		.tagItem('tfg:mars_plants')
 		.tagItem('forge:mushrooms')
 		.tagBlock('minecraft:replaceable')
-        .tagBlock('tfg:do_not_destroy_in_space')
-		
+		.tagBlock('tfg:do_not_destroy_in_space')
+
 	event.create('betterend:filalux_wings', 'tfg:attached_decorative_plant')
 		.soundType('nether_wart')
 		.allowVertical(true)
 		.tagItem('tfg:mars_plants')
 		.tagItem('forge:mushrooms')
 		.tagBlock('minecraft:replaceable')
-        .tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfg:do_not_destroy_in_space')
 
 	event.create('betterend:bulb_moss', 'tfg:attached_decorative_plant')
 		.soundType('crop')
 		.lootItem('tfc:straw')
 		.tagItem('tfg:mars_plants')
 		.tagBlock('minecraft:replaceable')
-        .tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfg:do_not_destroy_in_space')
+
+	// Used for glacian trees
+	event.create('betterend:glacian_hymenophore', 'tfg:attached_decorative_plant')
+		.soundType('crop')
+		.allowVertical(true)
+		.tagBlock('minecraft:replaceable')
+		.tagBlock('tfg:do_not_destroy_in_space')
 
 	// Leaves
 
 	event.create('betterend:cave_bush', 'tfc:leaves')
 		.soundType('azalea_leaves')
 		.tagBlock('minecraft:mineable/hoe')
-        .tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfg:do_not_destroy_in_space')
 		.mapColor('fire')
 		.seasonalColors(false)
 		.tagItem('tfg:mars_plants')
@@ -153,7 +161,7 @@ function registerBetterEndBlocks(event) {
 	event.create('betterend:lucernia_leaves', 'tfc:leaves')
 		.soundType('azalea_leaves')
 		.tagBlock('minecraft:mineable/hoe')
-        .tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfg:do_not_destroy_in_space')
 		.mapColor('color_orange')
 		.seasonalColors(false)
 		.tagItem('tfg:mars_plants')
@@ -175,19 +183,13 @@ function registerBetterEndBlocks(event) {
 			})
 		})
 
-	// "Structures"?
-	// blue_vine (blue)
-	// glowing pillar (orange)
-	// large amaranita
-	// end lily
-	// end lotus
-	// lanceleaf
+	// Tall plants
 
 	event.create('betterend:large_amaranita_mushroom', 'tfg:tall_decorative_plant')
 		.height(3)
 		.soundType('nether_wart')
 		.tagItem('tfg:mars_plants')
-        .tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagItem('forge:mushrooms')
 		.mapColor('fire')
 
@@ -195,7 +197,7 @@ function registerBetterEndBlocks(event) {
 		.height(5)
 		.soundType('crop')
 		.tagItem('tfg:mars_plants')
-        .tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfg:do_not_destroy_in_space')
 		.mapColor('color_orange')
 
 	// europa...?
@@ -219,5 +221,5 @@ function createPlant(event, id, planet) {
 	return event.create(`betterend:${id}`, 'tfg:decorative_plant')
 		.tagItem(`tfg:${planet}_plants`)
 		.tagBlock('minecraft:replaceable')
-        .tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfg:do_not_destroy_in_space')
 }

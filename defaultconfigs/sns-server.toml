@@ -152,7 +152,7 @@
 		#The amount of 'steps' taken before one point of durability is lost
 		#Steps are defined as being any change in position while grounded between ticks (IE over 1 second 20 'steps' occur)
 		#Range: > 0
-		stepsPerDamage = 500
+		stepsPerDamage = 1000
 
 	["Boot config"."Steel Toe Boots"]
 		#The movement speed bonus these boots provide
@@ -167,7 +167,7 @@
 		#The amount of 'steps' taken before one point of durability is lost
 		#Steps are defined as being any change in position while grounded between ticks (IE over 1 second 20 'steps' occur)
 		#Range: > 0
-		stepsPerDamage = 750
+		stepsPerDamage = 1500
 
 	["Boot config"."Black Steel Toe Boots"]
 		#The movement speed bonus these boots provide
@@ -182,7 +182,7 @@
 		#The amount of 'steps' taken before one point of durability is lost
 		#Steps are defined as being any change in position while grounded between ticks (IE over 1 second 20 'steps' occur)
 		#Range: > 0
-		stepsPerDamage = 1000
+		stepsPerDamage = 2000
 
 	["Boot config"."Blue Steel Toe Boots"]
 		#The movement speed bonus these boots provide
@@ -197,7 +197,7 @@
 		#The amount of 'steps' taken before one point of durability is lost
 		#Steps are defined as being any change in position while grounded between ticks (IE over 1 second 20 'steps' occur)
 		#Range: > 0
-		stepsPerDamage = 1500
+		stepsPerDamage = 4000
 
 	["Boot config"."Red Steel Toe Boots"]
 		#The movement speed bonus these boots provide
@@ -212,7 +212,7 @@
 		#The amount of 'steps' taken before one point of durability is lost
 		#Steps are defined as being any change in position while grounded between ticks (IE over 1 second 20 'steps' occur)
 		#Range: > 0
-		stepsPerDamage = 1500
+		stepsPerDamage = 4000
 
 ["Horseshoes config"]
 

@@ -1634,6 +1634,13 @@ const registerCreateRecipes = (event) => {
 		['dark_oak', 'tfc:wood/planks/hickory'],
 		['mangrove', 'tfc:wood/planks/mangrove'],
 		['cherry', 'afc:wood/planks/fig'],
+		['oak', 'tfc:wood/planks/oak'],
+		['spruce', 'afc:wood/planks/cypress'],
+		['jungle', 'afc:wood/planks/teak'],
+		['birch', 'afc:wood/planks/eucalyptus'],
+		['acacia', 'afc:wood/planks/baobab'],
+		['crimson', 'beneath:wood/planks/crimson'],
+		['warped', 'beneath:wood/planks/warped'],
 		['bamboo', 'minecraft:bamboo_planks'],
 		['ornate_iron', 'tfc:metal/bars/wrought_iron'],
 		['industrial_iron', 'tfc:metal/bars/steel']

@@ -3,19 +3,15 @@
 const registerEndermanOverhaulItemTags = (event) => {
 
 	const DISABLED_ITEMS = [
-		'endermanoverhaul:tiny_skull',
 		'endermanoverhaul:enderman_tooth',
 		'endermanoverhaul:corrupted_blade',
 		'endermanoverhaul:corrupted_shield',
 
-		'endermanoverhaul:badlands_hood',
 		'endermanoverhaul:savanna_hood',
 		'endermanoverhaul:snowy_hood',
 
 		'endermanoverhaul:bubble_pearl',
-		'endermanoverhaul:icy_pearl',
-		'endermanoverhaul:crimson_pearl',
-		'endermanoverhaul:warped_pearl'
+		'endermanoverhaul:icy_pearl'
 	]
 
 	DISABLED_ITEMS.forEach(item => {

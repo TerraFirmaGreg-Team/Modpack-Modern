@@ -5,7 +5,7 @@
 			"type": "minecraft:weighted_state_provider",
 			"entries": [
 				{
-					"weight": 35,
+					"weight": 10,
 					"data": {
 						"Name": "tfg:rock/hardened_moon_deepslate"
 					}
@@ -13,19 +13,31 @@
 				{
 					"weight": 25,
 					"data": {
-						"Name": "ad_astra:moon_deepslate"
+						"Name": "tfg:rock/cobble_moon_deepslate"
+					}
+				},
+				{
+					"weight": 5,
+					"data": {
+						"Name": "tfg:rock/moon_deepslate_slab"
 					}
 				},
 				{
 					"weight": 10,
 					"data": {
-						"Name": "ad_astra:moon_cobblestone"
+						"Name": "tfg:rock/cobble_moon_deepslate_slab"
+					}
+				},
+				{
+					"weight": 25,
+					"data": {
+						"Name": "tfg:rock/mossy_cobble_moon_deepslate"
 					}
 				},
 				{
 					"weight": 10,
 					"data": {
-						"Name": "ad_astra:moon_cobblestone_slab"
+						"Name": "tfg:rock/mossy_cobble_moon_deepslate_slab"
 					}
 				}
 			]

@@ -326,27 +326,27 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:sentry_armor_trim_smithing_template",
-					"weight": 20
+					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:vex_armor_trim_smithing_template",
-					"weight": 20
+					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:wild_armor_trim_smithing_template",
-					"weight": 20
+					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:coast_armor_trim_smithing_template",
-					"weight": 20
+					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
 					"name": "alekiships:music_disc_pirate_crafting",
-					"weight": 8
+					"weight": 10
 				}
 			],
 			"rolls": {

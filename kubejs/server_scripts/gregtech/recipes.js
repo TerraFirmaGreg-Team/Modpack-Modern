@@ -1433,6 +1433,28 @@ const registerGTCEURecipes = (event) => {
 	event.replaceInput({ id: 'gtceu:shaped/nano_chestplate_advanced' }, '#gtceu:circuits/iv', '#gtceu:circuits/ev')
 	event.replaceInput({ id: 'gtceu:assembler/ev_large_miner' }, '#gtceu:circuits/iv', '#gtceu:circuits/ev')
 
+	// the recycling fix only works if the addMaterialInfo() is on the shaped recipe, NOT the assembler
+	removeMaceratorRecipe(event, 'macerate_palladium_substation')
+	event.recipes.gtceu.shaped('gtceu:palladium_substation', [
+		'AAA',
+		' B ',
+		'AAA'
+	], {
+		A: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Palladium, 1),
+		B: ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.Ultimet, 1)
+	}).addMaterialInfo().id('tfg:shaped/casing_palladium_substation')
+
+	event.recipes.gtceu.assembler('casing_palladium_substation')
+		.itemInputs(
+			ChemicalHelper.get(TagPrefix.plate, GTMaterials.Palladium, 6),
+			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.Ultimet, 1)
+		)
+		.itemOutputs('gtceu:palladium_substation')
+		.duration(20 * 2.5)
+		.circuit(6)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	
 	removeMaceratorRecipe(event, 'macerate_power_substation')
 	event.recipes.gtceu.shaped('gtceu:power_substation', [
 		'ABA',
@@ -1444,18 +1466,6 @@ const registerGTCEURecipes = (event) => {
 		C: '#gtceu:circuits/ev',
 		D: 'gtceu:palladium_substation'
 	}).addMaterialInfo().id('gtceu:shaped/power_substation')
-
-	removeMaceratorRecipe(event, 'macerate_palladium_substation')
-	event.recipes.gtceu.assembler('casing_palladium_substation')
-		.itemInputs(
-			ChemicalHelper.get(TagPrefix.plate, GTMaterials.Palladium, 6),
-			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.Ultimet, 1)
-		)
-		.itemOutputs('gtceu:palladium_substation')
-		.duration(20 * 2.5)
-		.circuit(6)
-		.EUt(GTValues.VA[GTValues.LV])
-		.addMaterialInfo(true)
 
 	event.replaceInput({ id: 'gtceu:shaped/field_generator_hv' }, 'gtceu:quantum_eye', 'tfg:cryo_fluix_pearl')
 	event.replaceInput({ id: 'gtceu:shaped/field_generator_ev' }, 'minecraft:nether_star', 'gtceu:quantum_eye')
