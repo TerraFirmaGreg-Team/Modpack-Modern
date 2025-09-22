@@ -178,4 +178,6 @@ function registerTFGLoots(event) {
 	event.addEntityLootModifier('tfg:sniffer')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([8, 10], ['tfg:food/raw_sniffer_beef'])
+
+	// TODO: wraptor meat?
 };
