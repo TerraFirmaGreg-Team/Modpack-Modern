@@ -6,8 +6,9 @@
   - AoE tools like the mining hammer now work properly again
   - Now only multiblock machines turn themselves off if they don't have enough power, but this can be changed with a Machine Control Cover
   - Drums now require a Soft Mallet to turn on their auto-output instead of a Screwdriver
-### Changes
 - New overworld structures with new enemies and loot! You can find them in cold and wet climates (#1836) @KrestenFM @Pyritie
+- You can no longer light nether portals. Existing ones will still work. @Pyritie
+### Changes
 - Changed and unified stack sizes for many items (check [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/pull/1778) for a full list) (#1778) @KonSola5
 - Reduced the durability of wooden tongs @Pyritie
 - Jute net is renamed to Burlap net and can now also be made from Flax (#1833) @Nashy1232
@@ -20,7 +21,6 @@
 - Added rice and pasta to meal bags (#1864) @Nashy1232
 - Added back minecart with furnace as a minecart with boiler, and now it can accept any forge fuel (#1860) @Nashy1232
 - Adds EMI pages for Create Blaze Burner Fuels and for in-world block modifications @BlueBoat29
-- Removed nether portals @Pyritie
 - Added recipes for the rest of Create's windows and window panes @Pyritie
 - Halved how quickly the durability decreases on the various hiking/steel toe boots @Pyritie
 ### Bug fixes
