@@ -78,7 +78,7 @@ const registerGTCEuRecipeTypes = (event) => {
         .setMaxIOSize(0, 1, 1, 0)
 		.setSlotOverlay(false, false, GuiTextures.EXTRACTOR_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.JET_ENGINE)
+        .setSound(GTSoundEntries.TURBINE)
 
 	event.create('moon_dust_harvester')
         .category('moon_dust_harvester')
@@ -86,7 +86,7 @@ const registerGTCEuRecipeTypes = (event) => {
         .setMaxIOSize(1, 1, 0, 0)
 		.setSlotOverlay(false, false, GuiTextures.DUST_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.JET_ENGINE)
+        .setSound(GTSoundEntries.TURBINE)
 
 	event.create('ostrum_linear_accelerator')
         .category('ostrum_linear_accelerator')
