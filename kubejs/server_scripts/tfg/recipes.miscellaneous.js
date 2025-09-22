@@ -703,8 +703,6 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	// Have to redo all these because .replaceInput doesn't work for some reason!!
-
 	event.recipes.gtceu.shaped('gtceu:mv_field_generator', [
 		'ABA',
 		'CDC',
@@ -719,113 +717,6 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.recipes.gtceu.assembler('field_generator_mv')
 		.itemInputs('tfg:vitrified_pearl', '2x #forge:plates/aluminium', '2x #gtceu:circuits/mv', '4x #forge:quadruple_wires/magnesium_diboride')
 		.itemOutputs('gtceu:mv_field_generator')
-		.duration(100)
-		.EUt(30)
-
-	event.recipes.gtceu.shaped('gtceu:hv_emitter', [
-		'ABC',
-		'BDB',
-		'CBA'
-	], {
-		A: ChemicalHelper.get(TagPrefix.wireGtSingle, GTMaterials.Gold, 1),
-		B: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Chromium, 1),
-		C: '#gtceu:circuits/hv',
-		D: 'tfg:vitrified_pearl'
-	}).addMaterialInfo().id('gtceu:shaped/emitter_hv')
-
-	event.recipes.gtceu.assembler('emitter_hv')
-		.itemInputs('tfg:vitrified_pearl', '4x #forge:rods/chromium', '2x #gtceu:circuits/hv', '2x #forge:single_cables/gold')
-		.itemOutputs('gtceu:hv_emitter')
-		.circuit(1)
-		.duration(100)
-		.EUt(30)
-
-	event.recipes.gtceu.shaped('gtceu:hv_sensor', [
-		'A B',
-		'AC ',
-		'DAA'
-	], {
-		A: ChemicalHelper.get(TagPrefix.plate, GTMaterials.StainlessSteel, 1),
-		B: 'tfg:vitrified_pearl',
-		C: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Chromium, 1),
-		D: '#gtceu:circuits/hv',
-	}).addMaterialInfo().id('gtceu:shaped/sensor_hv')
-
-	event.recipes.gtceu.assembler('sensor_hv')
-		.itemInputs('tfg:vitrified_pearl', '#forge:rods/chromium', '#gtceu:circuits/hv', '4x #forge:plates/stainless_steel')
-		.itemOutputs('gtceu:hv_sensor')
-		.duration(100)
-		.EUt(30)
-
-	//Cryo Pearl replacements
-    event.recipes.gtceu.shaped('gtceu:ev_emitter', [
-		'ABC',
-		'BDB',
-		'CBA'
-	], {
-		A: ChemicalHelper.get(TagPrefix.cableGtSingle, GTMaterials.Aluminium, 1),
-		B: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Platinum, 1),
-		C: '#gtceu:circuits/ev',
-		D: 'tfg:cryo_fluix_pearl'
-	}).addMaterialInfo().id('gtceu:shaped/emitter_ev')
-
-	event.recipes.gtceu.assembler('emitter_ev')
-		.itemInputs('tfg:cryo_fluix_pearl', '4x #forge:rods/platinum', '2x #gtceu:circuits/ev', '2x #forge:single_cables/aluminium')
-		.itemOutputs('gtceu:ev_emitter')
-		.circuit(1)
-		.duration(100)
-		.EUt(30)
-
-	event.recipes.gtceu.shaped('gtceu:ev_sensor', [
-		'A B',
-		'AC ',
-		'DAA'
-	], {
-		A: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Titanium, 1),
-		B: 'tfg:cryo_fluix_pearl',
-		C: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Platinum, 1),
-		D: '#gtceu:circuits/ev',
-	}).addMaterialInfo().id('gtceu:shaped/sensor_ev')
-
-	event.recipes.gtceu.assembler('sensor_ev')
-		.itemInputs('tfg:cryo_fluix_pearl', '#forge:rods/platinum', '#gtceu:circuits/ev', '4x #forge:plates/titanium')
-		.itemOutputs('gtceu:ev_sensor')
-		.duration(100)
-		.EUt(30)
-		
-	//quantum eye IV replacements
-    event.recipes.gtceu.shaped('gtceu:iv_emitter', [
-		'ABC',
-		'BDB',
-		'CBA'
-	], {
-		A: ChemicalHelper.get(TagPrefix.cableGtSingle, GTMaterials.Tungsten, 1),
-		B: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Iridium, 1),
-		C: '#gtceu:circuits/iv',
-		D: 'gtceu:quantum_eye'
-	}).addMaterialInfo().id('gtceu:shaped/emitter_iv')
-
-	event.recipes.gtceu.assembler('emitter_iv')
-		.itemInputs('gtceu:quantum_eye', '4x #forge:rods/iridium', '2x #gtceu:circuits/iv', '2x #forge:single_cables/tungsten')
-		.itemOutputs('gtceu:iv_emitter')
-		.circuit(1)
-		.duration(100)
-		.EUt(30)
-
-	event.recipes.gtceu.shaped('gtceu:iv_sensor', [
-		'A B',
-		'AC ',
-		'DAA'
-	], {
-		A: ChemicalHelper.get(TagPrefix.plate, GTMaterials.TungstenSteel, 1),
-		B: 'gtceu:quantum_eye',
-		C: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Iridium, 1),
-		D: '#gtceu:circuits/iv',
-	}).addMaterialInfo().id('gtceu:shaped/sensor_iv')
-
-	event.recipes.gtceu.assembler('sensor_iv')
-		.itemInputs('gtceu:quantum_eye', '#forge:rods/iridium', '#gtceu:circuits/iv', '4x #forge:plates/tungsten_steel')
-		.itemOutputs('gtceu:iv_sensor')
 		.duration(100)
 		.EUt(30)
 	

@@ -76,6 +76,10 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
 	registerTFGElement(event)
 })
 
+GTCEuStartupEvents.craftingComponents(event => {
+	registerTFGCraftingComponents(event)
+})
+
 Platform.mods.primitive_creatures.name = "Primitive Creatures";
 Platform.mods.tfg.name = "TerraFirmaGreg";
 Platform.mods.kubejs.name = "TerraFirmaGreg";
