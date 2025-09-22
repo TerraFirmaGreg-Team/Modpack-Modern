@@ -1,4 +1,4 @@
-const registerSpeciesFoodData = (event) => {
+const registerSpeciesData = (event) => {
 	
 	event.foodItem('species:cracked_wraptor_egg', food => {
 		food.hunger(4)
