@@ -30,6 +30,12 @@ const registerWABItemTags = (event) => {
 	event.add('firmalife:foods/cooked_fish', 'wan_ancient_beasts:cooked_toxlacanth')
 	event.add('tfc:food/meats', 'wan_ancient_beasts:cooked_toxlacanth')
 
+	// Eater meat
+	event.add('tfc:foods/raw_meats', 'wan_ancient_beasts:raw_ancient_meat')
+	event.add('tfc:foods/meats', 'wan_ancient_beasts:raw_ancient_meat')
+	event.add('tfc:foods/cooked_meats', 'wan_ancient_beasts:cooked_ancient_meat')
+	event.add('tfc:foods/meats', 'wan_ancient_beasts:cooked_ancient_meat')
+
 	event.add('wan_ancient_beasts:surfer_food', '#firmalife:foods/raw_fish')
 	event.add('wan_ancient_beasts:eater_food', '#tfg:martian_animal_foods')
 }

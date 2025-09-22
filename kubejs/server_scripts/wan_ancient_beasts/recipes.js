@@ -28,6 +28,9 @@ const registerWABRecipes = (event) => {
 	
 	event.recipes.tfc.heating('wan_ancient_beasts:toxlacanth', 200)
 		.resultItem(TFC.isp.of('wan_ancient_beasts:cooked_toxlacanth').copyFood())
+
+	event.recipes.tfc.heating('wan_ancient_beasts:raw_ancient_meat', 200)
+		.resultItem(TFC.isp.of('wan_ancient_beasts:cooked_ancient_meat').copyFood())
 	
 	event.recipes.gtceu.macerator('wan_ancient_beasts:skull_crush')
 		.itemInputs('#wan_ancient_beasts:ancient_skull')
@@ -47,6 +50,26 @@ const registerWABRecipes = (event) => {
 		.duration(20)
 		.circuit(4)
 		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.shaped('wan_ancient_beasts:reinforced_shield', [
+		'BAB',
+		'ACA',
+		'BAB'
+	], {
+		A: '#forge:plates/bismuth_bronze',
+		B: 'wan_ancient_beasts:crusher_spike',
+		C: 'wan_ancient_beasts:eater_tooth'
+	}).id('tfg:shaped/reinforced_shield')
+
+	event.shaped('wan_ancient_beasts:reinforced_shield', [
+		'BAB',
+		' C ',
+		'B B'
+	], {
+		A: 'wan_ancient_beasts:eater_tooth',
+		B: 'wan_ancient_beasts:crusher_spike',
+		C: 'tfc:metal/shield/bismuth_bronze'
+	}).id('tfg:shaped/reinforced_shield_from_shield')
 }
 
 const registerWABFoodData = (event) => {
@@ -64,4 +87,17 @@ const registerWABFoodData = (event) => {
 		food.decayModifier(2.25)
 	})
 	
+	// Eater meat
+	event.foodItem('wan_ancient_beasts:raw_ancient_meat', food => {
+		food.hunger(2)
+		food.protein(2)
+		food.decayModifier(3)
+	})
+
+	event.foodItem('wan_ancient_beasts:cooked_ancient_meat', food => {
+		food.hunger(4)
+		food.saturation(3)
+		food.protein(5)
+		food.decayModifier(2.25)
+	})
 }
