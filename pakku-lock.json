@@ -3266,29 +3266,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "corpse-forge-1.20.1-1.0.21.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6624/394/corpse-forge-1.20.1-1.0.21.jar",
-                    "id": "6624394",
-                    "parent_id": "316582",
-                    "hashes": {
-                        "sha1": "fb68fba706e0a41f1e46492e0d54fde4945b8a05",
-                        "md5": "346a9e592558c1fde772b39c10be4cdf"
-                    },
-                    "required_dependencies": [],
-                    "size": 245618,
-                    "date_published": "2025-06-07T07:02:24.647Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "corpse-forge-1.20.1-1.0.21.jar",
+                    "file_name": "corpse-forge-1.20.1-1.0.23.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3296,16 +3275,37 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/WrpuIfhw/versions/AQNfDafD/corpse-forge-1.20.1-1.0.21.jar",
-                    "id": "AQNfDafD",
+                    "url": "https://cdn.modrinth.com/data/WrpuIfhw/versions/7fc0hJN6/corpse-forge-1.20.1-1.0.23.jar",
+                    "id": "7fc0hJN6",
                     "parent_id": "WrpuIfhw",
                     "hashes": {
-                        "sha512": "efa706eef95c18d163ca6c96fd424215ddec663f0a7ea201298c48dfb95739a18d5eb778088460e2b8abc9ad6c5f88ec9cf9f6a0e8acf5fd8344a638c5638622",
-                        "sha1": "28a8acf26ea41661b1a2d395f673433c495743be"
+                        "sha512": "c9ddf7d243aac2cbf88fc2fd7e71ce4470354765d602dadf0fa68105a0561cb14b482c60d9e04084845bcf2237442d913888dcfb45b392bc700b0f3470517c96",
+                        "sha1": "78a776f057588a84a86c57dbe376b9b26f69f2c4"
                     },
                     "required_dependencies": [],
-                    "size": 245618,
-                    "date_published": "2025-06-07T07:02:35.673314Z"
+                    "size": 245643,
+                    "date_published": "2025-09-21T09:09:35.879376Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "corpse-forge-1.20.1-1.0.23.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7018/272/corpse-forge-1.20.1-1.0.23.jar",
+                    "id": "7018272",
+                    "parent_id": "316582",
+                    "hashes": {
+                        "sha1": "843b16ca88bc5c390bb22a2a84437e6bffdd43dd",
+                        "md5": "a486f676f5e47e5846e31cb66cb5c16d"
+                    },
+                    "required_dependencies": [],
+                    "size": 245644,
+                    "date_published": "2025-09-21T09:06:56.603Z"
                 }
             ]
         },
@@ -7038,7 +7038,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "gtceu-1.20.1-7.1.4.jar",
+                    "file_name": "gtceu-1.20.1-7.2.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7046,20 +7046,20 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/7tG215v7/versions/Ilo1KJeO/gtceu-1.20.1-7.1.4.jar",
-                    "id": "Ilo1KJeO",
+                    "url": "https://cdn.modrinth.com/data/7tG215v7/versions/Lnimev8q/gtceu-1.20.1-7.2.0.jar",
+                    "id": "Lnimev8q",
                     "parent_id": "7tG215v7",
                     "hashes": {
-                        "sha512": "95524c09f4e74ad02b5f71fdf348c71c3fa698fa26cf7f457d1c8b833ddf5bbe8b1af37e589b957e19c877ada99afb0ee5a0d79df8c9b99a08b8f586a4472796",
-                        "sha1": "3592865e7174fd2d2305ccd043439c39936e67f8"
+                        "sha512": "d683642ee0e85705f606abfcc3ee75da93e48d8326c0654d2b6917529230fb262f9f097a4b014d1f7b81aad0704d968b394eeb5f54f51f3a6da277e36f2363a6",
+                        "sha1": "d41938569195b8b6a971a24f950f7999dfeba852"
                     },
                     "required_dependencies": [],
-                    "size": 17817033,
-                    "date_published": "2025-08-08T04:42:15.054096Z"
+                    "size": 17969208,
+                    "date_published": "2025-09-22T11:07:49.593489Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "gtceu-1.20.1-7.1.4.jar",
+                    "file_name": "gtceu-1.20.1-7.2.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7067,16 +7067,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6862/94/gtceu-1.20.1-7.1.4.jar",
-                    "id": "6862094",
+                    "url": "https://edge.forgecdn.net/files/7022/42/gtceu-1.20.1-7.2.0.jar",
+                    "id": "7022042",
                     "parent_id": "890405",
                     "hashes": {
-                        "sha1": "3592865e7174fd2d2305ccd043439c39936e67f8",
-                        "md5": "114eefcc835095af33dd2f1e700f9475"
+                        "sha1": "d41938569195b8b6a971a24f950f7999dfeba852",
+                        "md5": "a0d92a7b07cf8bdfe474e0f5f5463cbb"
                     },
                     "required_dependencies": [],
-                    "size": 17817033,
-                    "date_published": "2025-08-08T04:42:24.830Z"
+                    "size": 17969208,
+                    "date_published": "2025-09-22T11:07:44.827Z"
                 }
             ]
         },
@@ -13035,7 +13035,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "tfclunchbox-1.20.1-1.0.0.25.jar",
+                    "file_name": "tfclunchbox-1.20.1-1.0.0.26.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13044,18 +13044,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6861/955/tfclunchbox-1.20.1-1.0.0.25.jar",
-                    "id": "6861955",
+                    "url": "https://edge.forgecdn.net/files/7018/662/tfclunchbox-1.20.1-1.0.0.26.jar",
+                    "id": "7018662",
                     "parent_id": "1283445",
                     "hashes": {
-                        "sha1": "1065ea7140958b3e7263cb4c345e9c26448f8f77",
-                        "md5": "9dcf11f898db58376569522a757b0f4f"
+                        "sha1": "e9ddf2c2ea8a3458c06ef31712543d201a1cb499",
+                        "md5": "574470b68082c6ca738468c372d7dbe0"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 148507,
-                    "date_published": "2025-08-08T04:01:47.173Z"
+                    "size": 148782,
+                    "date_published": "2025-09-21T11:20:27.443Z"
                 }
             ]
         },
