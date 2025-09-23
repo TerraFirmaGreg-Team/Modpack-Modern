@@ -521,8 +521,7 @@ const registerAdAstraPlacedFeatures = (event) => {
 	//event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_medium')
 
 	// Underground decoration
-	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/ice_cave')
-
+	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/loose_rocks')
 	event.add('tfg:mars_underground_decoration', 'tfc:cave_spike')
 	event.add('tfg:mars_underground_decoration', 'tfc:cave_column')
 	event.add('tfg:mars_underground_decoration', 'tfc:large_cave_spike')
@@ -531,9 +530,10 @@ const registerAdAstraPlacedFeatures = (event) => {
 
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/calcite')
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/mega_calcite')
+	
+	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/ice_cave')
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/icicle')
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/icicle_extra')
-	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/loose_rocks')
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/ochrum_blob')
 
 	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/amethyst")
