@@ -49,7 +49,14 @@ const registerAdAstraItemTags = (event) => {
 	event.add('c:hidden_from_recipe_viewers', 'ad_astra:alphacene_mushroom')
 	event.add('c:hidden_from_recipe_viewers', 'ad_astra:strophar_mushroom')
 	
-	event.add('gtceu:ppe_armor', '#ad_astra:space_suit_items')
+	event.add('gtceu:ppe_armor', 'ad_astra:netherite_space_helmet')
+	event.add('gtceu:ppe_armor', 'ad_astra:netherite_space_suit')
+	event.add('gtceu:ppe_armor', 'ad_astra:netherite_space_pants')
+	event.add('gtceu:ppe_armor', 'ad_astra:netherite_space_boots')
+	event.add('gtceu:ppe_armor', 'ad_astra:jet_suit_helmet')
+	event.add('gtceu:ppe_armor', 'ad_astra:jet_suit')
+	event.add('gtceu:ppe_armor', 'ad_astra:jet_suit_pants')
+	event.add('gtceu:ppe_armor', 'ad_astra:jet_suit_boots')
 	event.add('minecraft:trimmable_armor', '#ad_astra:space_suit_items')
 	
 	event.add('forge:cobblestone', 'ad_astra:moon_cobblestone')
