@@ -283,22 +283,38 @@ const registerTFGItemTags = (event) => {
 		event.add('tfc:foods/usable_in_jam_sandwich_2', item);
 	});
 
-	//meal bags
+	//#region Meal Bag
+	/**
+	 * List of item tags and item IDs that are allowed to be used in a meal bag.
+	 * @type {string[]}
+	 */
+	const usable_in_meal_bag = [
+		'#tfc:foods/meats',
+		'#tfc:foods/grains',
+		'#tfc:foods/vegetables',
+		'#tfc:foods/fruits',
+		'#tfc:foods/dairy',
+		'#firmalife:foods/chocolate',
+		'#tfcchannelcasting:foods/chocolate_sweet',
+		'firmalife:food/chocolate_chip_cookie',
+		'firmalife:food/vanilla_ice_cream',
+		'firmalife:food/strawberry_ice_cream',
+		'firmalife:food/chocolate_ice_cream',
+		'firmalife:food/banana_split',
+		'tfc:food/cooked_egg',
+		'tfc:food/boiled_egg',
+		'tfc:food/cooked_rice',
+		'firmalife:food/cooked_pasta',
+		'firmalife:food/pasta_with_tomato_sauce',
+		'firmalife:food/cooked_rice_noodles',
+		'tfg:roasted_sunflower_seeds'
+	];
+	usable_in_meal_bag.forEach(item => {
+		event.add('tfg:foods/usable_in_meal_bag', item);
+	});
 	event.add('tfg:foil_packs', 'tfg:foil_pack');
 	event.add('tfg:foil_packs', 'tfg:clean_foil_pack')
-	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/meats');
-	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/grains');
-	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/vegetables');
-	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/fruits');
-	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/dairy');
-    event.add('tfg:foods/usable_in_meal_bag', '#firmalife:foods/chocolate');
-	event.add('tfg:foods/usable_in_meal_bag', 'tfc:food/cooked_egg');
-	event.add('tfg:foods/usable_in_meal_bag', 'tfc:food/boiled_egg');
-    event.add('tfg:foods/usable_in_meal_bag', 'tfc:food/cooked_rice');
-    event.add('tfg:foods/usable_in_meal_bag', 'firmalife:food/cooked_pasta');
-    event.add('tfg:foods/usable_in_meal_bag', 'firmalife:food/pasta_with_tomato_sauce');
-    event.add('tfg:foods/usable_in_meal_bag', 'firmalife:food/cooked_rice_noodles');
-    event.add('tfg:foods/usable_in_meal_bag', 'tfg:roasted_sunflower_seeds');
+	//#endregion
 	//#endregion
 
 	//#region Blacklisted from the railgun
