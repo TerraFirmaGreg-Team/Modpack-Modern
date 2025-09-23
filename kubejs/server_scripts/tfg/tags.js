@@ -16,6 +16,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:water_breathing_ingredients', 'tfg:rapeseed_product')
 	event.add('tfg:night_vision_ingredients', 'tfg:sunflower_product')
 
+	// Actually "layers", can't rename them without screwing with peoples' worlds
 	event.add('c:hidden_from_recipe_viewers', 'tfg:ash_pile')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/black_sand')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/brown_sand')
@@ -27,6 +28,13 @@ const registerTFGItemTags = (event) => {
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_sand')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/moon_sand')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/venus_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/hematitic_sand')
+
+	// Actually "piles", the kind that can hide plants inside them
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_sand_covering')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/venus_sand_covering')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/hematitic_sand_covering')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_snow_covering')
 
 	//temporary hidden items
 	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source_small')
