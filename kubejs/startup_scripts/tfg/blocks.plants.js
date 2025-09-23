@@ -14,6 +14,7 @@ const registerTFGCrops = (event) => {
         .hardness(0.4)
         .growthModifier(0.8)
         .tagBlock('minecraft:mineable/hoe')
+        .tagBlock('minecraft:flowers')
         .productItem(product => {
             product.texture('tfg:item/sunflower_product')
         })
@@ -34,6 +35,7 @@ const registerTFGCrops = (event) => {
         .hardness(0.2)
         .tagBoth('tfc:wild_crops')
         .tagBlock('minecraft:mineable/hoe')
+        .tagBlock('minecraft:flowers')
         .tagItem('c:hidden_from_recipe_viewers')
 
     event.create('tfg:rapeseed', 'tfc:double_crop')
@@ -44,6 +46,7 @@ const registerTFGCrops = (event) => {
         .doubleStages(3)
         .hardness(0.4)
         .tagBlock('minecraft:mineable/hoe')
+        .tagBlock('minecraft:flowers')
         .deadBlock(dead => {
             dead.hardness(0.2)
             dead.soundType('crop')
@@ -58,6 +61,7 @@ const registerTFGCrops = (event) => {
         .hardness(0.2)
         .tagBoth('tfc:wild_crops')
         .tagBlock('minecraft:mineable/hoe')
+        .tagBlock('minecraft:flowers')
         .tagItem('c:hidden_from_recipe_viewers')
 		
 	event.create('tfg:flax', 'tfc:double_crop')
