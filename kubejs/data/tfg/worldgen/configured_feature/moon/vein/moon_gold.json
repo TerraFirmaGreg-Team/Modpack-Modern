@@ -3,9 +3,9 @@
   "type": "tfc:disc_vein",
   "config": {
     "height": 10,
-    "size": 40,
+    "size": 35,
     "rarity": 170,
-    "density": 0.4,
+    "density": 0.35,
     "min_y": 10,
     "max_y": 80,
     "random_name": "moon_gold",

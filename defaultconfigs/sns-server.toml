@@ -138,9 +138,6 @@
 		allowedSize = "VERY_LARGE"
 
 ["Boot config"]
-	#The amount of steps taken before one point of durability is lost
-	#Range: > 0
-	bootsStepPerDamage = 500
 
 	["Boot config"."Hiking Boots"]
 		#The movement speed bonus these boots provide
@@ -152,6 +149,10 @@
 		#The extra fall distance in blocks before you begin taking fall damage
 		#Range: 0.0 ~ 64.0
 		fallPadding = 0.5
+		#The amount of 'steps' taken before one point of durability is lost
+		#Steps are defined as being any change in position while grounded between ticks (IE over 1 second 20 'steps' occur)
+		#Range: > 0
+		stepsPerDamage = 1000
 
 	["Boot config"."Steel Toe Boots"]
 		#The movement speed bonus these boots provide
@@ -163,6 +164,10 @@
 		#The extra fall distance in blocks before you begin taking fall damage
 		#Range: 0.0 ~ 64.0
 		fallPadding = 1.0
+		#The amount of 'steps' taken before one point of durability is lost
+		#Steps are defined as being any change in position while grounded between ticks (IE over 1 second 20 'steps' occur)
+		#Range: > 0
+		stepsPerDamage = 1500
 
 	["Boot config"."Black Steel Toe Boots"]
 		#The movement speed bonus these boots provide
@@ -174,6 +179,10 @@
 		#The extra fall distance in blocks before you begin taking fall damage
 		#Range: 0.0 ~ 64.0
 		fallPadding = 2.0
+		#The amount of 'steps' taken before one point of durability is lost
+		#Steps are defined as being any change in position while grounded between ticks (IE over 1 second 20 'steps' occur)
+		#Range: > 0
+		stepsPerDamage = 2000
 
 	["Boot config"."Blue Steel Toe Boots"]
 		#The movement speed bonus these boots provide
@@ -185,6 +194,10 @@
 		#The extra fall distance in blocks before you begin taking fall damage
 		#Range: 0.0 ~ 64.0
 		fallPadding = 5.0
+		#The amount of 'steps' taken before one point of durability is lost
+		#Steps are defined as being any change in position while grounded between ticks (IE over 1 second 20 'steps' occur)
+		#Range: > 0
+		stepsPerDamage = 4000
 
 	["Boot config"."Red Steel Toe Boots"]
 		#The movement speed bonus these boots provide
@@ -196,11 +209,12 @@
 		#The extra fall distance in blocks before you begin taking fall damage
 		#Range: 0.0 ~ 64.0
 		fallPadding = 5.0
+		#The amount of 'steps' taken before one point of durability is lost
+		#Steps are defined as being any change in position while grounded between ticks (IE over 1 second 20 'steps' occur)
+		#Range: > 0
+		stepsPerDamage = 4000
 
 ["Horseshoes config"]
-	#The amount of steps taken before one point of durability is lost
-	#Range: > 0
-	horseshoesStepsPerDamage = 500
 
 	["Horseshoes config"."Steel Horseshoes"]
 		#The movement speed bonus horseshoes provide
@@ -212,6 +226,10 @@
 		#The step height bonus these horseshoes provide
 		#Range: 0.0 ~ 512.0
 		stepHeightBonus = 0.0
+		#The amount of 'steps' taken before one point of durability is lost
+		#Steps are defined as being any change in position while grounded between ticks (IE over 1 second 20 'steps' occur)
+		#Range: > 0
+		stepsPerDamage = 750
 
 	["Horseshoes config"."Black Steel Horseshoes"]
 		#The movement speed bonus horseshoes provide
@@ -223,6 +241,10 @@
 		#The step height bonus these horseshoes provide
 		#Range: 0.0 ~ 512.0
 		stepHeightBonus = 0.0
+		#The amount of 'steps' taken before one point of durability is lost
+		#Steps are defined as being any change in position while grounded between ticks (IE over 1 second 20 'steps' occur)
+		#Range: > 0
+		stepsPerDamage = 1000
 
 	["Horseshoes config"."Blue Steel Horseshoes"]
 		#The movement speed bonus horseshoes provide
@@ -234,6 +256,10 @@
 		#The step height bonus these horseshoes provide
 		#Range: 0.0 ~ 512.0
 		stepHeightBonus = 1.0
+		#The amount of 'steps' taken before one point of durability is lost
+		#Steps are defined as being any change in position while grounded between ticks (IE over 1 second 20 'steps' occur)
+		#Range: > 0
+		stepsPerDamage = 1500
 
 	["Horseshoes config"."Red Steel Horseshoes"]
 		#The movement speed bonus horseshoes provide
@@ -245,6 +271,10 @@
 		#The step height bonus these horseshoes provide
 		#Range: 0.0 ~ 512.0
 		stepHeightBonus = 1.0
+		#The amount of 'steps' taken before one point of durability is lost
+		#Steps are defined as being any change in position while grounded between ticks (IE over 1 second 20 'steps' occur)
+		#Range: > 0
+		stepsPerDamage = 1500
 
 ["Global config"]
 	#Global control for automatic pickup, this will not force enable for every type

@@ -16,8 +16,8 @@
 		{
 			id: "308E11BE764398A1"
 			linked_quest: "7C1FD81C5DCFB74E"
-			x: -7.5d
-			y: -6.5d
+			x: -8.0d
+			y: -7.5d
 		}
 		{
 			id: "33D3C2A9337335D2"
@@ -309,11 +309,19 @@
 			id: "727075AAF9F91FAE"
 			size: 1.0d
 			subtitle: "{quests.high_voltage.rutile_loop_2.subtitle}"
-			tasks: [{
-				id: "6B0E33342374C12E"
-				item: "gtceu:titanium_tetrachloride_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6B0E33342374C12E"
+					item: "gtceu:titanium_tetrachloride_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0C97C06E9C6A0277"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.high_voltage.rutile_loop_2.title}"
 			x: -5.0d
 			y: 3.0d
@@ -323,6 +331,8 @@
 			description: ["{quests.high_voltage.superconductors.desc}"]
 			icon: "gtceu:mercury_barium_calcium_cuprate_double_wire"
 			id: "45F9AAE4ABE32033"
+			optional: true
+			shape: "heart"
 			size: 1.0d
 			tasks: [{
 				id: "2C582DDA7BC36951"
@@ -330,7 +340,7 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.superconductors.title}"
-			x: -7.5d
+			x: -8.0d
 			y: -10.0d
 		}
 		{
@@ -395,7 +405,8 @@
 			description: ["{quests.high_voltage.mv_superconductors.desc}"]
 			icon: "gtceu:magnesium_diboride_double_wire"
 			id: "72F0DFAF5CC6D0FE"
-			shape: "square"
+			optional: true
+			shape: "heart"
 			size: 1.0d
 			tasks: [{
 				id: "4CCBDA5AC16CBB48"
@@ -413,6 +424,7 @@
 			id: "6B1595678ECB7AC8"
 			shape: "octagon"
 			size: 3.0d
+			subtitle: "{quests.high_voltage.circuit_assembler.subtitle}"
 			tasks: [{
 				id: "337D8EF42A7BD3A2"
 				item: "gtceu:hv_circuit_assembler"
@@ -440,22 +452,6 @@
 			title: "{quests.high_voltage.vitrified_pearl.title}"
 			x: 6.0d
 			y: 2.0d
-		}
-		{
-			dependencies: ["6A451F43F3D7A671"]
-			description: ["{quests.high_voltage.microprocessor_mainframe.desc}"]
-			icon: "gtceu:micro_processor_mainframe"
-			id: "14D277A164202FF8"
-			shape: "gear"
-			size: 3.0d
-			tasks: [{
-				id: "71E3128BA0CAC113"
-				item: "gtceu:micro_processor_mainframe"
-				type: "item"
-			}]
-			title: "{quests.high_voltage.microprocessor_mainframe.title}"
-			x: 0.0d
-			y: -10.5d
 		}
 		{
 			dependencies: ["52AD30F04DD5A812"]
@@ -534,6 +530,7 @@
 				}
 				{
 					id: "7245625D6C687E3A"
+					title: "{quests.tasktype.checkmark}"
 					type: "checkmark"
 				}
 			]
@@ -577,6 +574,7 @@
 			description: ["{quests.high_voltage.nitrobenzene.desc}"]
 			icon: "gtceu:nitrobenzene_bucket"
 			id: "56E7A3A0CC690C8A"
+			optional: true
 			shape: "square"
 			size: 1.0d
 			tasks: [
@@ -588,6 +586,7 @@
 				}
 				{
 					id: "70D29F223E0CC5CB"
+					title: "{quests.tasktype.checkmark}"
 					type: "checkmark"
 				}
 			]
@@ -673,12 +672,12 @@
 					disable_toast: true
 					id: "3DC62CA60F006A06"
 					item: "ae2:ender_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "20403A639228B809"
 					item: "minecraft:ender_pearl"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -747,6 +746,7 @@
 				}
 				{
 					id: "24520333587F2436"
+					title: "{quests.tasktype.checkmark}"
 					type: "checkmark"
 				}
 			]
@@ -759,6 +759,7 @@
 			description: ["{quests.high_voltage.cetane_diesel.desc}"]
 			icon: "gtceu:cetane_boosted_diesel_bucket"
 			id: "04F6E968CEEC3D49"
+			optional: true
 			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.high_voltage.cetane_diesel.subtitle}"
@@ -771,6 +772,7 @@
 				}
 				{
 					id: "6BFCFA5257BE071F"
+					title: "{quests.tasktype.checkmark}"
 					type: "checkmark"
 				}
 			]
@@ -870,6 +872,7 @@
 				}
 				{
 					id: "6445F5DC9728583A"
+					title: "{quests.tasktype.checkmark}"
 					type: "checkmark"
 				}
 			]
@@ -914,8 +917,8 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.blue_alloy.title}"
-			x: -1.0d
-			y: -8.5d
+			x: 0.0d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -965,7 +968,6 @@
 			id: "7E755297E9685374"
 			subtitle: "{quests.high_voltage.nichrome.subtitle}"
 			tasks: [{
-				count: 128L
 				id: "7B963F86A90057FF"
 				item: "gtceu:nichrome_ingot"
 				type: "item"
@@ -1259,6 +1261,7 @@
 			id: "74C6DD5F67B1731F"
 			optional: true
 			shape: "heart"
+			size: 1.5d
 			subtitle: "{quests.high_voltage.gun.subtitle}"
 			tasks: [
 				{
@@ -1319,7 +1322,7 @@
 			]
 			title: "{quests.high_voltage.gun.title}"
 			x: 10.0d
-			y: -4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["00A2566109144D7F"]

@@ -29,30 +29,10 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 230$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 10 — 80$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Дацит",
+      "text": "$(thing)Редкость$(): 230$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 10 — 80$(br)$(thing)Размер$(): 30$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Дацит",
       "title": "Desh & Ilmenite",
       "type": "patchouli:text",
       "anchor": "moon_desh"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Desh",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/desh"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 40%$(br)$(thing)Source of$(): Iron, Titanium, Nitrogen$(br)$(thing)Формула$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
@@ -71,7 +51,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Хромит$(): Железо, Титан$(br)$(thing)Формула$(): FeTiO₃",
+      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Хромит$(): Железо, Титан$(br)$(thing)Формула$(): FeTiO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Desh",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/desh"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Source of$(): Iron, Titanium, Nitrogen$(br)$(thing)Формула$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -91,7 +91,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Хромит$(): Алюминий$(br)$(thing)Формула$(): Al",
+      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Хромит$(): Алюминий$(br)$(thing)Формула$(): Al",
       "type": "patchouli:multiblock"
     },
     {
@@ -111,7 +111,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Source of$(): Magnesium, Rutile, Titanium$(br)$(thing)Формула$(): (Mg,Fe)Ti₂O₅",
+      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Source of$(): Magnesium, Rutile, Titanium$(br)$(thing)Формула$(): (Mg,Fe)Ti₂O₅",
       "type": "patchouli:multiblock"
     },
     {
@@ -121,7 +121,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 210$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 20 — 80$(br)$(thing)Размер$(): 40$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Андезит, Анортозит, Базальт, Габбро, Норит",
+      "text": "$(thing)Редкость$(): 210$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 20 — 80$(br)$(thing)Размер$(): 35$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Андезит, Анортозит, Базальт, Габбро, Норит",
       "title": "Pyrolusite and Cobalt",
       "type": "patchouli:text",
       "anchor": "moon_pyrolusite"
@@ -397,7 +397,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 310$(br)$(thing)Плотность$(): 0.2$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 50$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Андезит, Дацит, Риолит, Фонолит",
+      "text": "$(thing)Редкость$(): 310$(br)$(thing)Плотность$(): 0.2$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 40$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Андезит, Дацит, Риолит, Фонолит",
       "title": "Бастнезит и Монацит",
       "type": "patchouli:text",
       "anchor": "moon_monazite"
@@ -489,7 +489,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 200$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 80$(br)$(thing)Размер$(): 50$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Анортозит, Базальт, Диорит, Норит, Риолит, Фонолит",
+      "text": "$(thing)Редкость$(): 200$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 80$(br)$(thing)Размер$(): 40$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Анортозит, Базальт, Диорит, Норит, Риолит, Фонолит",
       "title": "Боксит и Ильменит",
       "type": "patchouli:text",
       "anchor": "moon_bauxite"
@@ -556,7 +556,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 245$(br)$(thing)Плотность$(): 0.45$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 50$(br)$(thing)Размер$(): 40$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Базальт, Габбро, Дацит, Норит",
+      "text": "$(thing)Редкость$(): 245$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 50$(br)$(thing)Размер$(): 35$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Базальт, Габбро, Дацит, Норит",
       "title": "Вульфенит & Молибденит",
       "type": "patchouli:text",
       "anchor": "moon_molybdenum"
@@ -648,7 +648,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 250$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 5 — 85$(br)$(thing)Размер$(): 55$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Габбро, Диорит, Риолит",
+      "text": "$(thing)Редкость$(): 250$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 5 — 85$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Габбро, Диорит, Риолит",
       "title": "Гарниерит и Кобальтит",
       "type": "patchouli:text",
       "anchor": "moon_garnierite"
@@ -755,7 +755,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 180$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): 10 — 100$(br)$(thing)Размер$(): 40$(br)$(thing)Высота$(): 9$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Анортозит, Норит, Фонолит",
+      "text": "$(thing)Редкость$(): 180$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): 10 — 100$(br)$(thing)Размер$(): 30$(br)$(thing)Высота$(): 9$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Анортозит, Норит, Фонолит",
       "title": "Гипс и Кальцит",
       "type": "patchouli:text",
       "anchor": "moon_gypsum"
@@ -862,7 +862,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 260$(br)$(thing)Плотность$(): 0.55$(br)$(thing)Вид$(): трубчатая жила$(br)$(thing)Y-уровень$(): 0 — 120$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 12$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Анортозит, Базальт, Базальт, Габбро, Фонолит",
+      "text": "$(thing)Редкость$(): 260$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): трубчатая жила$(br)$(thing)Y-уровень$(): 0 — 120$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 9$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Анортозит, Базальт, Базальт, Габбро, Фонолит",
       "title": "Графит и Алмаз",
       "type": "patchouli:text",
       "anchor": "moon_graphite"
@@ -929,7 +929,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 170$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): 10 — 80$(br)$(thing)Размер$(): 40$(br)$(thing)Высота$(): 10$(br)$(thing)Индикатор Max Depth$(): 60$(br2)$(thing)Виды камней$(): Базальт, Гранит, Диорит",
+      "text": "$(thing)Редкость$(): 170$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): 10 — 80$(br)$(thing)Размер$(): 35$(br)$(thing)Высота$(): 10$(br)$(thing)Индикатор Max Depth$(): 60$(br2)$(thing)Виды камней$(): Базальт, Гранит, Диорит",
       "title": "Золото и Магнетит",
       "type": "patchouli:text",
       "anchor": "moon_gold"
@@ -1021,7 +1021,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 260$(br)$(thing)Плотность$(): 0.45$(br)$(thing)Вид$(): трубчатая жила$(br)$(thing)Y-уровень$(): 0 — 120$(br)$(thing)Высота$(): 70$(br)$(thing)Радиус$(): 10$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Анортозит, Базальт, Фонолит",
+      "text": "$(thing)Редкость$(): 260$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): трубчатая жила$(br)$(thing)Y-уровень$(): 0 — 120$(br)$(thing)Высота$(): 70$(br)$(thing)Радиус$(): 8$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Анортозит, Базальт, Фонолит",
       "title": "Изумруд и Бериллий",
       "type": "patchouli:text",
       "anchor": "moon_beryllium"
@@ -1128,7 +1128,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 230$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 10 — 100$(br)$(thing)Размер$(): 60$(br)$(thing)Индикатор Max Depth$(): 80$(br2)$(thing)Виды камней$(): Андезит, Анортозит, Базальт, Габбро, Дацит, Диорит, Норит, Риолит, Фонолит",
+      "text": "$(thing)Редкость$(): 230$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 10 — 100$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 80$(br2)$(thing)Виды камней$(): Андезит, Анортозит, Базальт, Габбро, Дацит, Диорит, Норит, Риолит, Фонолит",
       "title": "Истинный кварц",
       "type": "patchouli:text",
       "anchor": "moon_quartz"
@@ -1220,7 +1220,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 210$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 10 — 128$(br)$(thing)Размер$(): 40$(br)$(thing)Индикатор Max Depth$(): 60$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит, Норит",
+      "text": "$(thing)Редкость$(): 210$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 10 — 128$(br)$(thing)Размер$(): 35$(br)$(thing)Индикатор Max Depth$(): 60$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит, Норит",
       "title": "Касситерит и Халькопирит",
       "type": "patchouli:text",
       "anchor": "moon_cassiterite"
@@ -1312,7 +1312,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 215$(br)$(thing)Плотность$(): 0.5$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 5 — 80$(br)$(thing)Размер$(): 40$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Андезит, Базальт, Базальт, Габбро, Дацит, Норит",
+      "text": "$(thing)Редкость$(): 215$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 5 — 80$(br)$(thing)Размер$(): 30$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Андезит, Базальт, Базальт, Габбро, Дацит, Норит",
       "title": "Марганец и Тантал",
       "type": "patchouli:text",
       "anchor": "moon_manganese"
@@ -1404,7 +1404,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 190$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 66$(br)$(thing)Размер$(): 36$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Анортозит, Базальт, Габбро, Диорит, Норит",
+      "text": "$(thing)Редкость$(): 190$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 66$(br)$(thing)Размер$(): 30$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Анортозит, Базальт, Габбро, Диорит, Норит",
       "title": "Мыльный камень, Тальк и Трона",
       "type": "patchouli:text",
       "anchor": "moon_lubricant"
@@ -1511,7 +1511,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 250$(br)$(thing)Плотность$(): 0.2$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 20 — 100$(br)$(thing)Размер$(): 45$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Андезит, Дацит, Фонолит",
+      "text": "$(thing)Редкость$(): 250$(br)$(thing)Плотность$(): 0.2$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 20 — 100$(br)$(thing)Размер$(): 35$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Андезит, Дацит, Фонолит",
       "title": "Редстоун, Киноварь и Рубин",
       "type": "patchouli:text",
       "anchor": "moon_redstone"
@@ -1710,7 +1710,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 210$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 90$(br)$(thing)Размер$(): 35$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Андезит, Дацит, Норит, Риолит",
+      "text": "$(thing)Редкость$(): 210$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 90$(br)$(thing)Размер$(): 30$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Андезит, Дацит, Норит, Риолит",
       "title": "Селитра и Электротин",
       "type": "patchouli:text",
       "anchor": "moon_saltpeter"
@@ -1802,7 +1802,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 210$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 20 — 75$(br)$(thing)Размер$(): 30$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Анортозит, Дацит, Диорит, Норит, Риолит",
+      "text": "$(thing)Редкость$(): 210$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 20 — 75$(br)$(thing)Размер$(): 30$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Анортозит, Дацит, Диорит, Норит, Риолит",
       "title": "Серебро, Галена и Свинец",
       "type": "patchouli:text",
       "anchor": "moon_silver"
@@ -1894,7 +1894,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 205$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 2 — 75$(br)$(thing)Размер$(): 40$(br)$(thing)Индикатор Max Depth$(): 60$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Дацит, Фонолит",
+      "text": "$(thing)Редкость$(): 205$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 2 — 75$(br)$(thing)Размер$(): 35$(br)$(thing)Индикатор Max Depth$(): 60$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Дацит, Фонолит",
       "title": "Сфалерит & Пирит",
       "type": "patchouli:text",
       "anchor": "moon_sphalerite"
@@ -1936,7 +1936,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeS₂",
+      "text": "$(thing)Процент руды$(): 40%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeS₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1956,12 +1956,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Source of$(): Iron, Titanium, Nitrogen$(br)$(thing)Формула$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Source of$(): Iron, Titanium, Nitrogen$(br)$(thing)Формула$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 190$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 50 — 128$(br)$(thing)Размер$(): 40$(br)$(thing)Индикатор Max Depth$(): 60$(br2)$(thing)Виды камней$(): Андезит, Дацит, Риолит, Фонолит",
+      "text": "$(thing)Редкость$(): 190$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 50 — 128$(br)$(thing)Размер$(): 35$(br)$(thing)Индикатор Max Depth$(): 60$(br2)$(thing)Виды камней$(): Андезит, Дацит, Риолит, Фонолит",
       "title": "Тетраэдрит и Халькозин",
       "type": "patchouli:text",
       "anchor": "moon_tetrahedrite"
@@ -2053,7 +2053,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 210$(br)$(thing)Плотность$(): 0.5$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): 0 — 120$(br)$(thing)Размер$(): 64$(br)$(thing)Высота$(): 25$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Андезит, Анортозит, Базальт, Габбро, Дацит, Диорит, Норит, Риолит, Фонолит",
+      "text": "$(thing)Редкость$(): 210$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): 0 — 120$(br)$(thing)Размер$(): 45$(br)$(thing)Высота$(): 16$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Андезит, Анортозит, Базальт, Габбро, Дацит, Диорит, Норит, Риолит, Фонолит",
       "title": "Топаз и Халькозин",
       "type": "patchouli:text",
       "anchor": "moon_topaz"
@@ -2145,7 +2145,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 280$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 90$(br)$(thing)Размер$(): 70$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Анортозит, Габбро, Диорит, Норит",
+      "text": "$(thing)Редкость$(): 280$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 90$(br)$(thing)Размер$(): 50$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Анортозит, Габбро, Диорит, Норит",
       "title": "Хромит и Магнетит",
       "type": "patchouli:text",
       "anchor": "moon_magnetite"
@@ -2359,7 +2359,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 200$(br)$(thing)Плотность$(): 0.45$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 20$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Габбро, Риолит, Фонолит",
+      "text": "$(thing)Редкость$(): 200$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 20$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Габбро, Риолит, Фонолит",
       "title": "Шеелит и Вольфрамат",
       "type": "patchouli:text",
       "anchor": "moon_scheelite"

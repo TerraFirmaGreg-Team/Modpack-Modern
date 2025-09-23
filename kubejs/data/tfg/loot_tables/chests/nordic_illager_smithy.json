@@ -1,0 +1,359 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:charcoal",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 20,
+								"min": 12
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:ceramic/ingot_mold",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:clay_ball",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 15,
+								"min": 9
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:mortar",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 15,
+								"min": 9
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:poor_raw_coal",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 14,
+								"min": 8
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:raw_coal",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 6
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:rich_raw_coal",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 6,
+								"min": 4
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:cobalt_brass_ingot",
+					"weight": 40,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:cobalt_ingot",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:copper_ingot",
+					"weight": 80,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "create:zinc_ingot",
+					"weight": 40,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:lead_ingot",
+					"weight": 40,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "create:brass_ingot",
+					"weight": 40,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:bismuth_ingot",
+					"weight": 60,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfchotornot:tongs/copper",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfchotornot:tongs/wood",
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:ceramic/vessel",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:powder/flux",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8,
+								"min": 4
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:powder/lime",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8,
+								"min": 4
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:hematitic_glass_batch",
+					"weight": 30,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 2,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:olivine_glass_batch",
+					"weight": 30,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 2,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:volcanic_glass_batch",
+					"weight": 30,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 2,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:sentry_armor_trim_smithing_template",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:vex_armor_trim_smithing_template",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:wild_armor_trim_smithing_template",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:coast_armor_trim_smithing_template",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "alekiships:music_disc_pirate_crafting",
+					"weight": 10
+				}
+			],
+			"rolls": {
+				"type": "minecraft:uniform",
+				"max": 12,
+				"min": 8
+			}
+		}
+	]
+}

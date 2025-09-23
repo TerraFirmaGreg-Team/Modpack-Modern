@@ -3,9 +3,6 @@
 
 global.SPECIES_DISABLED_BLOCKS = [
 	'species:red_suspicious_sand',
-	'species:bone_bark',
-	'species:bone_vertebra',
-	'species:bone_spike',
 	'species:alphacene_moss_carpet',
 	'species:alphacene_grass_block',
 	'species:cruncher_pellet',
@@ -15,7 +12,6 @@ global.SPECIES_DISABLED_BLOCKS = [
 
 global.SPECIES_DISABLED_ITEMS = [
 	'species:deepfish_bucket',
-	'species:bone_spike',
 	'species:ancient_pinecone',
 	'species:cruncher_egg',
 	'species:ichor_bottle',
@@ -27,11 +23,9 @@ global.SPECIES_DISABLED_ITEMS = [
 	'species:bewereager_head',
 	'species:quake_head',
 	'species:ghoul_head',
-	'species:deflector_dummy',
 	'species:wicked_mask',
 	'species:wicked_swapper',
 	'species:spectralibur',
-	'species:ricoshield',
 	'species:smoke_bomb',
 	'species:wicked_dope',
 	'species:monster_meal',
@@ -40,5 +34,6 @@ global.SPECIES_DISABLED_ITEMS = [
 	'species:broken_links',
 	'species:werefang',
 	'species:wicked_wax',
-	'species:kinetic_core'
+	'species:springling_egg',
+	'species:petrified_egg'
 ];

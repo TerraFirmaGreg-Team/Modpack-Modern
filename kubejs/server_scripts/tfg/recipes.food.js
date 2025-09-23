@@ -560,7 +560,7 @@ function registerTFGFoodRecipes(event) {
 	processorRecipe("tomato_sauce", 300, 8, {
 		circuit: 1,
 		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'tfc:food/garlic'],
-		fluidInputs: ['tfg:clean_water 200'],
+		fluidInputs: ['#tfg:clean_water 200'],
 		itemOutputs: ['5x firmalife:food/tomato_sauce'],
 		itemOutputProvider: TFC.isp.of('5x firmalife:food/tomato_sauce').copyOldestFood()
 	})
@@ -968,7 +968,7 @@ function registerTFGFoodRecipes(event) {
 	event.recipes.tfc.quern('gtceu:cocoa_dust', 'firmalife:food/roasted_cocoa_beans')
 		.id('tfg:quern/cocoa_dust');
 
-	event.recipes.tfc.pot(['firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings'],
+	event.recipes.tfc.pot(['#tfc:bowls', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings'],
 		Fluid.of('minecraft:water', 1000), 20, 10)
 		.itemOutput('tfg:food/ice_soup')
 		.id('tfg:pot/ice_soup')
@@ -1113,6 +1113,7 @@ function registerTFGFoodRecipes(event) {
         .itemOutputs('1x tfg:mv_food_refrigerator')
         .duration(200)
         .circuit(7)
+		.addMaterialInfo(true)
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.assembler('tfg:assembler/hv_food_refrigerator')
@@ -1128,6 +1129,7 @@ function registerTFGFoodRecipes(event) {
         .itemOutputs('1x tfg:hv_food_refrigerator')
         .duration(200)
         .circuit(7)
+		.addMaterialInfo(true)
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.assembler('tfg:assembler/ev_food_refrigerator')
@@ -1143,6 +1145,7 @@ function registerTFGFoodRecipes(event) {
         .itemOutputs('1x tfg:ev_food_refrigerator')
         .duration(200)
         .circuit(7)
+		.addMaterialInfo(true)
         .EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('tfg:assembler/iv_food_refrigerator')
@@ -1158,6 +1161,7 @@ function registerTFGFoodRecipes(event) {
         .itemOutputs('1x tfg:iv_food_refrigerator')
         .duration(200)
         .circuit(7)
+		.addMaterialInfo(true)
         .EUt(GTValues.VA[GTValues.LV])
 
 	event.shaped('tfg:electric_greenhouse', [

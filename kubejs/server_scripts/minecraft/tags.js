@@ -74,7 +74,8 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfc:compost_greens_high', 'minecraft:pearlescent_froglight')
     event.add('tfc:compost_greens_high', 'minecraft:verdant_froglight')
     event.add('tfc:compost_greens_high', 'minecraft:ochre_froglight')
-    event.add('tfc:moss', 'minecraft:moss_carpet')
+    //event.add('tfc:moss', 'minecraft:moss_carpet')
+    event.remove('createaddition:plants', 'minecraft:moss_carpet')
 
     event.add('tfc:colored_terracotta', 'minecraft:white_terracotta')
 
@@ -89,6 +90,9 @@ const registerMinecraftItemTags = (event) => {
 
     event.add('tfc:makes_black_dye', 'minecraft:ink_sac')
     event.add('tfc:makes_white_dye', 'minecraft:bone_meal')
+	
+	event.add('create:blaze_burner_fuel/regular', 'minecraft:coal')
+	event.add('create:blaze_burner_fuel/regular', 'minecraft:charcoal')
 }
 
 const registerMinecraftBlockTags = (event) => {

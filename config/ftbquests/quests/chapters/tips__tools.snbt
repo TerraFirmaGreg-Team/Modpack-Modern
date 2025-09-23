@@ -862,6 +862,7 @@
 				id: "gtceu:iv_copper_drill"
 				tag: {
 					Charge: 2147483647L
+					Damage: 0
 					DisallowContainerItem: 0b
 					GT.Behaviours: {
 						AoEColumn: 4
@@ -873,7 +874,6 @@
 						TorchPlacing: 1b
 					}
 					GT.Tool: {
-						Damage: 0
 						HarvestLevel: 2
 						MaxDamage: 5543
 						ToolSpeed: 6.0f
@@ -2765,5 +2765,5 @@
 		}
 	]
 	subtitle: ["{quests.tfg_tips.tools_tips.subtitle}"]
-	title: "Tips - Tools"
+	title: "{quests.tfg_tips.tools_tips.title}"
 }

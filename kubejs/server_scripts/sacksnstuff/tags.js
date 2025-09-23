@@ -24,4 +24,21 @@ function registeSNSItemTags(event) {
 	event.add('sns:allowed_in_ore_sack', '#tfc:metamorphic_rock')
 	event.add('sns:allowed_in_ore_sack', '#tfg:igneous_intrusive_rock')
 	event.add('sns:allowed_in_ore_sack', '#tfc:igneous_extrusive_rock')
+	
+	event.add('sns:prevented_in_item_containers', '#tfc:fired_vessels')
+	
+	event.add('sns:prevented_in_frame_pack','sophisticatedbackpacks:backpack')
+	event.add('sns:prevented_in_frame_pack','sophisticatedbackpacks:iron_backpack')
+	event.add('sns:prevented_in_frame_pack','sophisticatedbackpacks:gold_backpack')
+	event.add('sns:prevented_in_frame_pack','sophisticatedbackpacks:diamond_backpack')
+	event.add('sns:prevented_in_frame_pack','sophisticatedbackpacks:netherite_backpack')
+	
+	event.remove('sns:prevented_in_straw_basket', '#tfc:ore_pieces')
+	event.remove('sns:prevented_in_burlap_sack', '#tfc:ore_pieces')
+	event.remove('sns:prevented_in_leather_sack', '#tfc:ore_pieces')
+	event.remove('sns:prevented_in_straw_basket', '#tfc:small_ore_pieces')
+	event.remove('sns:prevented_in_burlap_sack', '#tfc:small_ore_pieces')
+	event.remove('sns:prevented_in_leather_sack', '#tfc:small_ore_pieces')
+
+
 }

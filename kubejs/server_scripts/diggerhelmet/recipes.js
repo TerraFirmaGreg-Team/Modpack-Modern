@@ -47,10 +47,10 @@ function registerDiggerHelmetRecipes(event) {
 	}).id('tfg:shaped/auto_drink_modifier_rubber')
 
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
-		event.shapeless('diggerhelmet:silk_lining', ['tfcambiental:silk_cowl', '#forge:string', 'tfc:bone_needle'])
+		event.shapeless('diggerhelmet:silk_lining', ['tfcambiental:silk_cowl', '#forge:string', '#tfc:sewing_needles'])
 	).id('tfg:shapeless/diggerhelmet/silk_lining')
 
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
-		event.shapeless('diggerhelmet:wool_lining', ['tfcambiental:wool_hat', '#forge:string', 'tfc:bone_needle'])
+		event.shapeless('diggerhelmet:wool_lining', ['tfcambiental:wool_hat', '#forge:string', '#tfc:sewing_needles'])
 	).id('tfg:shapeless/diggerhelmet/wool_lining')
 }

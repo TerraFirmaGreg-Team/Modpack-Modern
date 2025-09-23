@@ -703,140 +703,23 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	// Have to redo all these because .replaceInput doesn't work for some reason!!
-
-	event.shaped('gtceu:mv_field_generator', [
+	event.recipes.gtceu.shaped('gtceu:mv_field_generator', [
 		'ABA',
 		'CDC',
 		'ABA'
 	], {
-		A: '#forge:quadruple_wires/magnesium_diboride',
-		B: '#forge:plates/aluminium',
+		A: ChemicalHelper.get(TagPrefix.wireGtQuadruple, GTMaterials.MagnesiumDiboride, 1),
+		B: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Aluminium, 1),
 		C: '#gtceu:circuits/mv',
 		D: 'tfg:vitrified_pearl'
-	}).id('gtceu:shaped/field_generator_mv')
+	}).addMaterialInfo().id('gtceu:shaped/field_generator_mv')
 
 	event.recipes.gtceu.assembler('field_generator_mv')
 		.itemInputs('tfg:vitrified_pearl', '2x #forge:plates/aluminium', '2x #gtceu:circuits/mv', '4x #forge:quadruple_wires/magnesium_diboride')
 		.itemOutputs('gtceu:mv_field_generator')
 		.duration(100)
 		.EUt(30)
-
-	event.shaped('gtceu:hv_emitter', [
-		'ABC',
-		'BDB',
-		'CBA'
-	], {
-		A: '#forge:single_cables/gold',
-		B: '#forge:rods/chromium',
-		C: '#gtceu:circuits/hv',
-		D: 'tfg:vitrified_pearl'
-	}).id('gtceu:shaped/emitter_hv')
-
-	event.recipes.gtceu.assembler('emitter_hv')
-		.itemInputs('tfg:vitrified_pearl', '4x #forge:rods/chromium', '2x #gtceu:circuits/hv', '2x #forge:single_cables/gold')
-		.itemOutputs('gtceu:hv_emitter')
-		.circuit(1)
-		.duration(100)
-		.EUt(30)
-
-	event.shaped('gtceu:hv_sensor', [
-		'A B',
-		'AC ',
-		'DAA'
-	], {
-		A: '#forge:plates/stainless_steel',
-		B: 'tfg:vitrified_pearl',
-		C: '#forge:rods/chromium',
-		D: '#gtceu:circuits/hv',
-	}).id('gtceu:shaped/sensor_hv')
-
-	event.recipes.gtceu.assembler('sensor_hv')
-		.itemInputs('tfg:vitrified_pearl', '#forge:rods/chromium', '#gtceu:circuits/hv', '4x #forge:plates/stainless_steel')
-		.itemOutputs('gtceu:hv_sensor')
-		.duration(100)
-		.EUt(30)
-
-	//Cryo Pearl replacements
-    event.shaped('gtceu:ev_emitter', [
-		'ABC',
-		'BDB',
-		'CBA'
-	], {
-		A: '#forge:single_cables/aluminium',
-		B: '#forge:rods/platinum',
-		C: '#gtceu:circuits/ev',
-		D: 'tfg:cryo_fluix_pearl'
-	}).id('gtceu:shaped/emitter_ev')
-
-	event.recipes.gtceu.assembler('emitter_ev')
-		.itemInputs('tfg:cryo_fluix_pearl', '4x #forge:rods/platinum', '2x #gtceu:circuits/ev', '2x #forge:single_cables/aluminium')
-		.itemOutputs('gtceu:ev_emitter')
-		.circuit(1)
-		.duration(100)
-		.EUt(30)
-
-	event.shaped('gtceu:ev_sensor', [
-		'A B',
-		'AC ',
-		'DAA'
-	], {
-		A: '#forge:plates/titanium',
-		B: 'tfg:cryo_fluix_pearl',
-		C: '#forge:rods/platinum',
-		D: '#gtceu:circuits/ev',
-	}).id('gtceu:shaped/sensor_ev')
-
-	event.recipes.gtceu.assembler('sensor_ev')
-		.itemInputs('tfg:cryo_fluix_pearl', '#forge:rods/platinum', '#gtceu:circuits/ev', '4x #forge:plates/titanium')
-		.itemOutputs('gtceu:ev_sensor')
-		.duration(100)
-		.EUt(30)
-		
-	//quantum eye IV replacements
-    event.shaped('gtceu:iv_emitter', [
-		'ABC',
-		'BDB',
-		'CBA'
-	], {
-		A: '#forge:single_cables/tungsten',
-		B: '#forge:rods/iridium',
-		C: '#gtceu:circuits/iv',
-		D: 'gtceu:quantum_eye'
-	}).id('gtceu:shaped/emitter_iv')
-
-	event.recipes.gtceu.assembler('emitter_iv')
-		.itemInputs('gtceu:quantum_eye', '4x #forge:rods/iridium', '2x #gtceu:circuits/iv', '2x #forge:single_cables/tungsten')
-		.itemOutputs('gtceu:iv_emitter')
-		.circuit(1)
-		.duration(100)
-		.EUt(30)
-
-	event.shaped('gtceu:iv_sensor', [
-		'A B',
-		'AC ',
-		'DAA'
-	], {
-		A: '#forge:plates/tungsten_steel',
-		B: 'gtceu:quantum_eye',
-		C: '#forge:rods/iridium',
-		D: '#gtceu:circuits/iv',
-	}).id('gtceu:shaped/sensor_iv')
-
-	event.recipes.gtceu.assembler('sensor_iv')
-		.itemInputs('gtceu:quantum_eye', '#forge:rods/iridium', '#gtceu:circuits/iv', '4x #forge:plates/tungsten_steel')
-		.itemOutputs('gtceu:iv_sensor')
-		.duration(100)
-		.EUt(30)
 	
-	// Temporary
-	event.recipes.gtceu.chemical_bath('quantum_eye')
-		.itemInputs('tfg:vitrified_pearl')
-		.inputFluids(Fluid.of('gtceu:radon', 250))
-		.itemOutputs('gtceu:quantum_eye')
-		.duration(24 * 20)
-		.EUt(480)
-
 	// Harvest Baskets
 
 	event.shaped('tfg:harvest_basket', [
@@ -1013,6 +896,31 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(60)
 		.blastFurnaceTemp(3400)
 		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('8x tfc:wool_yarn', [
+			'tfc:spindle', 
+			'tfg:glacian_wool'
+		]).id('tfg:shapeless/glacian_wool_to_yarn'))
+
+	event.recipes.gtceu.wiremill('tfg:glacian_wool_yarn')
+		.itemInputs('tfg:glacian_wool')
+		.itemOutputs('8x tfc:wool_yarn')
+		.duration(100)
+		.EUt(4)
+
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('4x tfg:fletching', [
+			'tfg:wraptor_wool',
+			'#forge:tools/knives'
+		]).id('tfg:shapeless/wraptor_feather_fletching'))
+
+	event.recipes.gtceu.assembler('tfg:assembler/wraptor_feather_fletching')
+		.itemInputs('1x tfg:wraptor_wool')
+		.itemOutputs('4x tfg:fletching')
+		.duration(20)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.ULV])
 
 
 	//endregion
@@ -1373,7 +1281,6 @@ function registerTFGMiscellaneousRecipes(event) {
 	//#endregion
 	
 	//#region flax stuff
-	
 	event.recipes.tfc.scraping(
 		'tfg:flax_waste',
 		'tfg:flax_product',
@@ -1390,6 +1297,20 @@ function registerTFGMiscellaneousRecipes(event) {
 		'tfg:flax_tow'
 	).id('tfg:scraping/flax_tow')
 	
+	event.recipes.gtceu.centrifuge('tfg:flax_product')
+		.itemInputs('tfg:flax_product')
+		.itemOutputs('2x tfg:flax_line', 'tfg:flax_tow', 'tfc:groundcover/humus')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.LV])
+		
+	event.custom({
+		type: 'vintageimprovements:centrifugation',
+		ingredients: [{ item: 'tfg:flax_product' }],
+		results: [{ item: 'tfg:flax_line', count: 2 }, { item: 'tfg:flax_tow' }, { item: 'tfc:groundcover/humus' } ],
+		processingTime: 40 * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id('tfg:vi_seperate_flax')
+	
+	//#region flax line spining
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
 		event.shapeless('4x tfg:linen_thread', [
 			'tfg:flax_line',
@@ -1397,7 +1318,20 @@ function registerTFGMiscellaneousRecipes(event) {
 		]).id('tfg:shapeless/linen_thread')
 	)
 	
-	//#region looming
+	event.custom({
+		type: 'vintageimprovements:coiling',
+		ingredients: [{ item: 'tfg:flax_line' }],
+		results: [{ item: 'tfg:linen_thread', count: 4 }],
+		processingTime: 2 * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id('tfg:vi_spin_flax_line')
+	
+	event.recipes.gtceu.wiremill('tfg:spin_flax_line')
+		.itemInputs('tfg:flax_line')
+		.itemOutputs('4x tfg:linen_thread')
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.LV])
+	
+	//#region flax looming
 	event.recipes.tfc.loom(
 		'1x tfg:linen_cloth',
 		'16x tfg:linen_thread',

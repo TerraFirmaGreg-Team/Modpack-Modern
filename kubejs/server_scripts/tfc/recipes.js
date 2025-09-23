@@ -330,4 +330,23 @@ const registerTFCRecipes = (event) => {
 		.inputFluid(Fluid.of('minecraft:water', 250))
 		.outputFluid(Fluid.of('tfc:salt_water', 250))
 		.id('tfg:barrel/water_to_salt_water_tfc')
+
+    // jute net -> burlap net
+    event.replaceInput({ id: 'tfc:crafting/jute_net'}, 'tfc:jute_fiber', '#tfg:burlap_fiber')
+
+    // horse armor to use burlap
+    global.TFC_EQUIPMENT_METALS.forEach(material => {
+        event.replaceInput({ id: `tfc:crafting/${material}_horse_armor`}, `tfc:jute_fiber`, `#tfg:burlap_fiber`)
+    })
+
+	// Just a dummy recipe to tell people they can get wood ash by throwing torches in water via TFC
+	event.custom({
+		type: "ae2:transform",
+		circumstance: {
+			type: "fluid",
+			tag: "tfc:water"
+		},
+		ingredients: [{ item: 'tfc:torch' }],
+		result: { item: 'tfc:powder/wood_ash' }
+	}).id(`tfg:ae_transform/torch_to_wood_ash`)
 }

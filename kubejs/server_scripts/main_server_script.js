@@ -22,6 +22,7 @@ ServerEvents.tags('item', event => {
 	registerCreateConnectedItemTags(event)
 	registerCreateDecoItemTags(event)
 	registerCreateFactoryLogisticsItemTags(event)
+	registerDomumOrnamentumItemTags(event)
 	registerDiggerHelmetItemTags(event)
 	registerEndermanOverhaulItemTags(event)
 	registerEveryCompatItemTags(event)
@@ -165,8 +166,8 @@ TFCEvents.data(event => {
 	registerTFCDataForTFCLunchbox(event)
 	registerTFCDataForTFG(event)
 	registerTFCDataForWaterFlasks(event)
-	registerWABFoodData(event)
-	registerSpeciesFoodData(event)
+	registerWABData(event)
+	registerSpeciesData(event)
 })
 
 /**
@@ -242,6 +243,7 @@ ServerEvents.recipes(event => {
 	registerHandGliderRecipes(event)
 	registerHotOrNotRecipes(event)
 	registerImmersiveAircraftRecipes(event)
+	registerMacawsForTFCRecipes(event)
 	registerMeasurementsRecipes(event)
 	registerMegaCellsRecipes(event)
 	registerMERequesterRecipes(event)

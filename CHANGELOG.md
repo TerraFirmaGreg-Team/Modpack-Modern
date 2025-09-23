@@ -4,6 +4,105 @@
 ### Changes
 ### Bug fixes
 
+## [0.10.16] - 23-09-2025
+### Bug fixes
+- Fix startup crash on linux servers @Pyritie
+- Fix broken loot table for badlands enderman @Pyritie
+
+## [0.10.15] - 23-09-2025
+### Major Changes
+- GregTech updated to 7.2.0, check [here](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern/files/7022042) for the full list of changes, but here's a summary:
+  - AoE tools like the mining hammer now work properly again
+  - Now only multiblock machines turn themselves off if they don't have enough power, but this can be changed with a Machine Control Cover
+  - Drums now require a Soft Mallet to turn on their auto-output instead of a Screwdriver
+- New overworld structures with new enemies and loot! You can find them in cold and wet climates (#1836) @KrestenFM @Pyritie
+- You can no longer light nether portals. Existing ones will still work. @Pyritie
+- The old Create Lathe has been replaced with the Belt Grinder, which does exactly the same things as the lathe did, and is much easier to automate. Put your old lathe in a crafting grid to convert it. @Pyritie
+### Changes
+- Changed and unified stack sizes for many items (check [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/pull/1778) for a full list) (#1778) @KonSola5
+- Reduced the durability of wooden tongs @Pyritie
+- Jute net is renamed to Burlap net and can now also be made from Flax (#1833) @Nashy1232
+- Orbits now function as cleanrooms @BlueBoat29
+- Added Create Deco catwalks to AE2 and GT Facades @Programmer3481
+- Added locometal to GT Facades @Pyritie
+- Added mossy, stairs, slabs, walls, and more to the non-TFC stone types (#1845) @vidal-adrien
+- Added back vanilla stone and all its variants, craftable out of the stone dust you get from ore processing (#1845) @vidal-adrien
+- Tweaked the moon worldgen a bit to add the new stone stuff @Pyritie
+- Added rice, pasta, icecream, and chocolates to meal bags @Nashy1232 & @Redeix
+- Added back minecart with furnace as a minecart with boiler, and now it can accept any forge fuel (#1860) @Nashy1232
+- Adds EMI pages for Create Blaze Burner Fuels and for in-world block modifications @BlueBoat29
+- Added recipes for the rest of Create's windows and window panes @Pyritie
+- Halved how quickly the durability decreases on the various hiking/steel toe boots @Pyritie
+- Added curving press/extruder recipes for TFC shields @Pyritie
+- Added `#minecraft:flowers` block tags to flower crops @Redeix
+- Added quests for the bauxite and gem slurry processing lines @Pyritie
+- Mechanical Arms can now interact with Charcoal Forges, Crucibles, and Rotor Holders @BlueBoat29
+### Bug fixes
+- Ice soup now requires a bowl to craft, so it doesn't generate free bowls @Pyritie
+- Fixed repairing an iron flask consuming the knife, also added some flask recipes with rubber instead of a bladder (#1826) @Pyritie
+- Fixed not being able to use the small pipe extruder mold in the curving press (#1823) @Nashy1232
+- Fixed some EMI rendering issues on 4x GUI scales and low screen resolutions (#1830) @Newlumberjack-sys
+- Fixed not being able to melt mortars and crowbars (#1837) @Newlumberjack-sys
+- Fixed problems with moss carpet into biomass (#1842) @Nashy1232
+- Fixed lunch boxes giving 1.5-2x more saturation than intended (#1824) @Thomasx0
+- Fixed Create Stock Ticker creating phantom copies of the electric lunchbox while open @Thomasx0
+- Fixed inconsistencies with tags on sacks (#1820) @BlueBoat29
+- Fixed the moon dust harvester not working with 4A or 16A energy hatches (#1874) @TomPlop
+- Disabled being able to rotate the Vintage Improvements Lathe because it was causing crashes @Pyritie
+- Fixed the Vintage Improvements Curving Press always using one item as an ingredient instead of the full amount @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+
+## [0.10.14] - 14-09-2025
+### Changes
+- Wooden crates can now also be crafted with bronze screws @Pyritie
+- The tape measure can now be put in your toolbelt (#1813) @Nashy1232
+- Added machine processing for Flax (#1803) @BlueBoat29
+- Added cobblestones to GT facade crafting @Nashy1232
+- Every fluid that can go in wooden pipes can now also go in a wooden bucket and barrel (#1796) @Pyritie
+### Bug fixes
+- Fixed not downloading the FTB library of mods on server builds (#1811, #1801, #1812, #1411) @Xikaro
+- Fixed ingot piles occasionally crashing on servers @Pyritie
+- Fixed being able to get infinite lava by bucketing lava aqueducts @Pyritie
+- More fixes for the Solar Boilers and TFC's rain system @FiNiTe-Weeb
+- Fixed river water not washing ores (#1785)
+- Added missing textures for placed Potin ingots/plates @Pyritie
+- Fixed recipe conflict with music labels and paper blocks @Pyritie
+- Added missing helve hammer recipes for lead, potin, cobalt, cobalt brass, and invar @Pyritie
+- Fixed black bronze requiring an LS millstone to macerate (#1786) @Pyritie
+- Fixed not being able to melt down certain tools (#1819) @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry
+- Brazilian Portuguese @gifpxto
+
+## [0.10.13] - 11-09-2025
+### Changes
+- Primitive Illagers are now on the hunt... @Pyritie
+- Added Vat recipe for boiling salt water into salt (#1784) @TreyR9
+- Power Substation is now available at EV (#1790) @TomPlop
+- Increased the tier of EBF coil required for Desh (#1790) @TomPlop
+- Quantum Eye now requires a Cryogenized Fluix Pearl (#1790) @TomPlop
+- Moon ore vein tweaks @Pyritie
+### Bug fixes
+- Fixed issue with the modpack not loading on MacOS or certain Linux distros @Xikaro
+- Fixed Solar Boilers not understanding TFC's variable rain system (#1093) @FiNiTe-Weeb
+- Added missing recipes for TFC Macaw's barbed fences @Pyritie
+- Fixed Field Generator recipes to follow the new path of pearl progression (#1790) @TomPlop
+- Fixed some backpack upgrades to be consistent with their required circuits (#1790) @TomPlop
+- Fixed Keratophyre not having a stone dust @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry
+
+## [0.10.12] - 09-09-2025
+### Changes
+- Added cobblestone, gravel, polished stone, bricks, and chiseled bricks to all stone types that didn't have those stone types, along with some other unification (#1764) @vidal-adrien
+- Nether brick is now crafted from Keratophyre (#1764) @vidal-adrien
+### Bug fixes
+- Fixed two instances of illegal lang exceptions causing errors on servers. @Redeix
+- Fixed the field guide having no pages @Pyritie
+
 ## [0.10.11] - 08-09-2025
 ### Mods
 - Reverted the change from Embeddium to Xenon, because it was causing more issues than it solved

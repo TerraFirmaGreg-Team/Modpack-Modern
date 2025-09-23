@@ -1997,7 +1997,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 170$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -60 — 10$(br)$(thing)Size$(): 50$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Gneiss, Marble, Phyllite, Quartzite, Schist, Slate",
+      "text": "$(thing)Rarity$(): 170$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -60 — 10$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Gneiss, Marble, Phyllite, Quartzite, Schist, Slate",
       "title": "Lapis, Lazurite, & Sodalite",
       "type": "patchouli:text",
       "anchor": "normal_lapis"

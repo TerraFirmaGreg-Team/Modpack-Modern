@@ -44,6 +44,17 @@ function registerGTCEuItemModifications(event) {
 		item.armorKnockbackResistance = 0.25
 	})
 	
+	event.modify('gtceu:poor_raw_coal', item => {
+		item.burnTime = 30*20
+	})
+	event.modify('gtceu:raw_coal', item => {
+		item.burnTime = 60*20
+	})
+	event.modify('gtceu:rich_raw_coal', item => {
+		item.burnTime = 120*20
+	})
+	
+	
 	//#region eating radioactive stuff
 	const EDIBLE_ITEMS = [
 		'gtceu:thorium_nugget',

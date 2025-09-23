@@ -988,6 +988,8 @@ const registerMinecraftRecipes = (event) => {
 	//#region Slime
 	event.smelting('tfc:glue', 'minecraft:slime_ball')
 		.id('tfg:smelting/slime_to_glue')
+	event.smelting('tfc:glue', 'minecraft:magma_cream')
+		.id('tfg:smelting/magma_cream_to_glue')
 
 	//#region Clay
 	event.shaped('minecraft:clay', [
@@ -1161,5 +1163,15 @@ const registerMinecraftRecipes = (event) => {
 			D: '#tfc:sewing_needles'
 		})
 	).id('tfg:shaped/bundle')
+	// #endregion
+
+    //#region Minecart w/ Furnace
+    event.shapeless('minecraft:furnace_minecart', ['minecraft:water_bucket', 'gtceu:hp_steam_solid_boiler', 'minecraft:minecart']);
+
+    event.recipes.gtceu.assembler('minecraft:furnace_minecart')
+        .itemInputs('minecraft:water_bucket', 'gtceu:hp_steam_solid_boiler', 'minecraft:minecart')
+        .itemOutputs('minecraft:furnace_minecart')
+        .duration(100)
+        .EUt(4)
 	// #endregion
 }

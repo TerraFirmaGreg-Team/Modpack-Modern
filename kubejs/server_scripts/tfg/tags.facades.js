@@ -28,6 +28,8 @@ function registerFacadeWhitelistTags(event) {
 		'#simplylight:any_lamp_off',
 		'#minecraft:planks',
 		'#minecraft:logs',
+		'#forge:cobblestone',
+		'#railways:locometal',
 
 		'#tfg:ad_astra_iron_blocks',
 		'#tfg:ad_astra_steel_blocks',
@@ -264,6 +266,11 @@ function registerFacadeWhitelistTags(event) {
 		event.add('tfg:whitelisted/facades', `createdeco:cracked_${  facade_material}`)
 		event.add('tfg:whitelisted/facades', `createdeco:mossy_${  facade_material}`)
 	});
+
+	//createdeco catwalks
+	global.CREATE_DECO_CATWALK_TYPES.forEach(facade_material => {
+		event.add('tfg:whitelisted/facades', `createdeco:${  facade_material  }_catwalk`)
+	})
 	
 	//everycomp windows
 	global.TFC_WOOD_TYPES.forEach(facade_material => {
