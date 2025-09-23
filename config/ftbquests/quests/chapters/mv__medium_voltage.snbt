@@ -422,7 +422,6 @@
 			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_steel_alloy.subtitle}"
 			tasks: [{
-				count: 4L
 				id: "2E6C71CB2E5EEAC7"
 				item: "gtceu:vanadium_steel_ingot"
 				type: "item"

@@ -339,4 +339,14 @@ const registerTFCRecipes = (event) => {
         event.replaceInput({ id: `tfc:crafting/${material}_horse_armor`}, `tfc:jute_fiber`, `#tfg:burlap_fiber`)
     })
 
+	// Just a dummy recipe to tell people they can get wood ash by throwing torches in water via TFC
+	event.custom({
+		type: "ae2:transform",
+		circumstance: {
+			type: "fluid",
+			tag: "tfc:water"
+		},
+		ingredients: [{ item: 'tfc:torch' }],
+		result: { item: 'tfc:powder/wood_ash' }
+	}).id(`tfg:ae_transform/torch_to_wood_ash`)
 }

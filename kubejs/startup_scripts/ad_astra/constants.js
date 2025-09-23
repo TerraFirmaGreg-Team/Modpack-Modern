@@ -43,6 +43,7 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:steel_cable',
 	'ad_astra:desh_cable',
 	'ad_astra:glacian_leaves',
+	'ad_astra:raw_ostrum_block',
 	'ad_astra:raw_ostrum',
 
 	// Don't tag prefix these, several systems rely on all ore blocks being gregtech's generated ones

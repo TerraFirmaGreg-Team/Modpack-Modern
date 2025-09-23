@@ -29,6 +29,7 @@ function registerFacadeWhitelistTags(event) {
 		'#minecraft:planks',
 		'#minecraft:logs',
 		'#forge:cobblestone',
+		'#railways:locometal',
 
 		'#tfg:ad_astra_iron_blocks',
 		'#tfg:ad_astra_steel_blocks',

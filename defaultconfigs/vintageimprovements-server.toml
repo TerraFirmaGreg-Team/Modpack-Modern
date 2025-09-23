@@ -21,7 +21,7 @@
 			#.
 			#Medium speed value for grinder crafts, speedLimits = 2.
 			#Range: 1 ~ 256
-			mediumSpeedValue = 64
+			mediumSpeedValue = 128
 			#.
 			#Allows sandpaper crafts on belt grinder, when recipes collides belt grinder recipe have priority.
 			allowSandpaperPolishingOnGrinder = true
@@ -82,7 +82,7 @@
 			#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
 			[kinetics.stressValues.v2.impact]
 				laser = 0.25
-				belt_grinder = 0.5
+				belt_grinder = 0.25
 				vacuum_chamber = 0.5
 				lathe = 0.25
 				lathe_moving = 0.25

@@ -319,9 +319,10 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			.EUt(GTValues.VA[GTValues.ULV])
 
 		event.custom({
-			type: 'vintageimprovements:turning',
+			type: 'vintageimprovements:polishing',
 			ingredients: [{ item: log }],
 			results: [{ item: stripped_log }],
+			speed_limits: 0,
 			processingTime: 50
 		}).id(`tfg:vi/lathe/stripping_${name}_log`)
 	}

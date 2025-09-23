@@ -85,9 +85,9 @@ TFCEvents.worldgenData(event => {
 		null,
 		[
 			"ad_astra:aeronos_mushroom",
+			'tfg:groundcover/aeronos_stick',
 			'tfg:groundcover/wraptor_feather',
-			'tfg:groundcover/glider_feather',
-			'tfg:groundcover/aeronos_stick'
+			'tfg:groundcover/glider_feather'
 		],
 		'tfg:mars/tree/aeronos',
 		'tfg:mars/tree/aeronos_dead',
@@ -108,9 +108,9 @@ TFCEvents.worldgenData(event => {
 		null,
 		[
 			"ad_astra:strophar_mushroom",
+			'tfg:groundcover/strophar_stick',
 			'tfg:groundcover/wraptor_feather',
-			'tfg:groundcover/glider_feather',
-			'tfg:groundcover/strophar_stick'
+			'tfg:groundcover/glider_feather'
 		],
 		'tfg:mars/tree/strophar',
 		'tfg:mars/tree/strophar_dead',
@@ -130,9 +130,9 @@ TFCEvents.worldgenData(event => {
 		null,
 		[
 			"species:alphacene_mushroom",
+			'tfg:groundcover/alphacene_stick',
 			'tfg:groundcover/wraptor_feather',
-			'tfg:groundcover/glider_feather',
-			'tfg:groundcover/alphacene_stick'
+			'tfg:groundcover/glider_feather'
 		],
 		'species:alphacene_mushroom',
 		'tfg:mars/tree/alphacene_dead',
@@ -141,7 +141,36 @@ TFCEvents.worldgenData(event => {
 		placement => {}
 	)
 
-	// TODO: glacian
+	event.forestEntry('tfg:mars/glacian_forest_entry',
+		climate => {
+			climate.maxTemp(-82)
+			climate.fuzzy(true)
+		},
+		'tfg:glacian_wood_stripped',
+		'tfg:glacian_leaves',
+		null,
+		null,
+		[
+			//"betterend:glacian_hymenophore[facing=up]",
+			"tfg:glacian_leaves_fallen",
+			'tfg:groundcover/glacian_stick'
+		],
+		'tfg:mars/tree/glacian',
+		'tfg:mars/tree/glacian_dead',
+		'tfg:mars/tree/glacian',
+		null, null, null, null, null, null,
+		placement => {
+			placement.flatEnough(flatness => {
+				flatness.flatness(0.8)
+				flatness.radius(4)
+			})
+			placement.jsonPlacement({
+				"type": "minecraft:random_offset",
+				"xz_spread": 0,
+				"y_spread": -2
+			})
+		}
+	)
 })
 
 function registerTFGForestConfiguredFeatures(event) {
@@ -150,4 +179,5 @@ function registerTFGForestConfiguredFeatures(event) {
 	event.add('tfg:mars_forest_entries', 'tfg:mars/aeronos_forest_entry')
 	event.add('tfg:mars_forest_entries', 'tfg:mars/strophar_forest_entry')
 	event.add('tfg:mars_forest_entries', 'tfg:mars/alphacene_forest_entry')
+	event.add('tfg:mars_forest_entries', 'tfg:mars/glacian_forest_entry')
 }

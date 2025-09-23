@@ -283,22 +283,38 @@ const registerTFGItemTags = (event) => {
 		event.add('tfc:foods/usable_in_jam_sandwich_2', item);
 	});
 
-	//meal bags
+	//#region Meal Bag
+	/**
+	 * List of item tags and item IDs that are allowed to be used in a meal bag.
+	 * @type {string[]}
+	 */
+	const usable_in_meal_bag = [
+		'#tfc:foods/meats',
+		'#tfc:foods/grains',
+		'#tfc:foods/vegetables',
+		'#tfc:foods/fruits',
+		'#tfc:foods/dairy',
+		'#firmalife:foods/chocolate',
+		'#tfcchannelcasting:foods/chocolate_sweet',
+		'firmalife:food/chocolate_chip_cookie',
+		'firmalife:food/vanilla_ice_cream',
+		'firmalife:food/strawberry_ice_cream',
+		'firmalife:food/chocolate_ice_cream',
+		'firmalife:food/banana_split',
+		'tfc:food/cooked_egg',
+		'tfc:food/boiled_egg',
+		'tfc:food/cooked_rice',
+		'firmalife:food/cooked_pasta',
+		'firmalife:food/pasta_with_tomato_sauce',
+		'firmalife:food/cooked_rice_noodles',
+		'tfg:roasted_sunflower_seeds'
+	];
+	usable_in_meal_bag.forEach(item => {
+		event.add('tfg:foods/usable_in_meal_bag', item);
+	});
 	event.add('tfg:foil_packs', 'tfg:foil_pack');
 	event.add('tfg:foil_packs', 'tfg:clean_foil_pack')
-	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/meats');
-	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/grains');
-	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/vegetables');
-	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/fruits');
-	event.add('tfg:foods/usable_in_meal_bag', '#tfc:foods/dairy');
-    event.add('tfg:foods/usable_in_meal_bag', '#firmalife:foods/chocolate');
-	event.add('tfg:foods/usable_in_meal_bag', 'tfc:food/cooked_egg');
-	event.add('tfg:foods/usable_in_meal_bag', 'tfc:food/boiled_egg');
-    event.add('tfg:foods/usable_in_meal_bag', 'tfc:food/cooked_rice');
-    event.add('tfg:foods/usable_in_meal_bag', 'firmalife:food/cooked_pasta');
-    event.add('tfg:foods/usable_in_meal_bag', 'firmalife:food/pasta_with_tomato_sauce');
-    event.add('tfg:foods/usable_in_meal_bag', 'firmalife:food/cooked_rice_noodles');
-    event.add('tfg:foods/usable_in_meal_bag', 'tfg:roasted_sunflower_seeds');
+	//#endregion
 	//#endregion
 
 	//#region Blacklisted from the railgun
@@ -333,6 +349,32 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:cannot_launch_in_railgun', 'create:cardboard_package_12x12')
 	event.add('tfg:cannot_launch_in_railgun', 'create_factory_logistics:composite_package')
 	event.add('tfg:cannot_launch_in_railgun', 'create_factory_logistics:copper_jar_package_8x8')
+	event.add('tfg:cannot_launch_in_railgun', 'sns:ore_sack')
+	event.add('tfg:cannot_launch_in_railgun', 'sns:leather_sack')
+	event.add('tfg:cannot_launch_in_railgun', 'sns:burlap_sack')
+	event.add('tfg:cannot_launch_in_railgun', 'sns:seed_pouch')
+	event.add('tfg:cannot_launch_in_railgun', 'sns:straw_basket')
+	event.add('tfg:cannot_launch_in_railgun', 'sns:frame_pack')
+	event.add('tfg:cannot_launch_in_railgun', 'sophisticatedbackpacks:backpack')
+	event.add('tfg:cannot_launch_in_railgun', 'sophisticatedbackpacks:copper_backpack')
+	event.add('tfg:cannot_launch_in_railgun', 'sophisticatedbackpacks:iron_backpack')
+	event.add('tfg:cannot_launch_in_railgun', 'sophisticatedbackpacks:gold_backpack')
+	event.add('tfg:cannot_launch_in_railgun', 'sophisticatedbackpacks:diamond_backpack')
+	event.add('tfg:cannot_launch_in_railgun', 'sophisticatedbackpacks:netherite_backpack')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:wood_crate')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:bronze_crate')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:black_bronze_crate')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:bismuth_bronze_crate')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:steel_crate')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:aluminium_crate')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:stainless_steel_crate')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:titanium_crate')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:tungsten_steel_crate')
+	event.add('tfg:cannot_launch_in_railgun', '#create:toolboxes')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:lv_super_chest')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:mv_super_chest')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:hv_super_chest')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:ev_super_chest')
 	//#endregion
 
 	const SHAPES =    ['stairs', 'slab', 'wall']
@@ -563,9 +605,9 @@ const registerTFGItemTags = (event) => {
 			event.add(`tfg:rock_${shape}`.replace(/ss/g, 's'), `ad_astra:${stone}_cobblestone_${shape}`)
 		})
 
-		event.add('forge:smooth_stone', `ad_astra:polished_:${stone}_stone`)
+		event.add('forge:smooth_stone', `ad_astra:polished_${stone}_stone`)
 		event.add(`tfc:${getStoneType(stone)}_items`, `ad_astra:polished_${stone}_stone`)
-		event.add('tfc:rock/smooth', `ad_astra:polished_:${stone}_stone`)
+		event.add('tfc:rock/smooth', `ad_astra:polished_${stone}_stone`)
 
 		SHAPES_AA.forEach(shape => {
 			event.add(`tfc:${getStoneType(stone)}_items`, `ad_astra:polished_${stone}_stone_${shape}`)
@@ -719,6 +761,7 @@ const registerTFGItemTags = (event) => {
 	//Mars animal region
 	event.add('tfg:martian_eggs', 'tfg:sniffer_egg')
 	event.add('tfg:martian_eggs', 'tfg:wraptor_egg')
+	event.add('tfc:eggs', '#tfg:martian_eggs')
 	
 	event.add('tfg:martian_animal_foods', 'betterend:amber_root_product')
 	event.add('tfg:martian_animal_foods', 'betterend:blossom_berry_product')
@@ -998,8 +1041,10 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfg:decorative_plant_attachable', '#minecraft:logs')
 	event.add('tfg:decorative_plant_attachable', 'minecraft:mushroom_stem')
 	event.add('tfg:decorative_plant_attachable', 'species:alphacene_mushroom_block')
+	event.add('tfg:decorative_plant_attachable', 'species:alphacene_moss_block')
 	event.add('tfg:decorative_plant_attachable', 'ad_astra:aeronos_cap')
 	event.add('tfg:decorative_plant_attachable', 'ad_astra:strophar_cap')
+	event.add('tfg:decorative_plant_attachable', 'tfg:glacian_leaves')
 	event.add('tfg:decorative_plant_attachable', 'minecraft:nether_wart_block')
 	event.add('tfg:decorative_plant_attachable', 'minecraft:warped_wart_block')
 	event.add('tfg:decorative_plant_attachable', 'betterend:cave_bush')

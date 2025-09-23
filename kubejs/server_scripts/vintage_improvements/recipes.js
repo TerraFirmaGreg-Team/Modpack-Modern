@@ -91,33 +91,28 @@ function registerVintageImprovementsRecipes(event) {
 		F: '#forge:tools/hammers'
 	}).id('tfg:vi/shaped/helve_hammer')
 
-	event.recipes.create.mechanical_crafting('vintageimprovements:lathe', [
-		'DEEFE',
-		'AB CG',
-		'DEEFE'
+	event.shaped('vintageimprovements:grinder_belt', [
+		'AAA',
+		'CBC'
+	], {
+		A: 'createaddition:diamond_grit_sandpaper',
+		B: 'greate:rubber_belt_connector',
+		C: 'tfc:glue'
+	}).id('tfg:vi/shaped/grinder_belt')
+
+	event.shaped('vintageimprovements:belt_grinder', [
+		'GBG',
+		'EAF',
+		'DCD'
 	], {
 		A: 'gtceu:ulv_machine_hull',
-		B: 'minecraft:piston',
-		C: 'minecraft:diamond',
-		D: '#forge:plates/treated_wood',
-		E: '#forge:rods/black_steel',
-		F: '#gtceu:circuits/ulv',
-		G: 'create:precision_mechanism'
-	}).id('tfg:vi/mechanical_crafting/lathe')
-
-	// Re-enable this thing's EMI category as well, if we end up using it
-	//event.shaped('vintageimprovements:laser', [
-	//	'FBF',
-	//	'EAE',
-	//	'DCD'
-	//], {
-	//	A: 'gtceu:ulv_machine_hull',
-	//	B: 'create:precision_mechanism',
-	//	C: 'tfc:lens',
-	//	D: 'gtceu:red_alloy_single_wire',
-	//	E: 'minecraft:piston',
-	//	F: '#gtceu:circuits/ulv'
-	//}).id('tfg:vi/shaped/laser')
+		B: 'vintageimprovements:grinder_belt',
+		C: 'greate:steel_cogwheel',
+		D: '#gtceu:circuits/ulv',
+		E: 'create:precision_mechanism',
+		F: 'minecraft:diamond',
+		G: '#forge:rods/black_steel'
+	}).id('tfg:vi/shaped/belt_grinder')
 
 	// #endregion
 
@@ -137,16 +132,6 @@ function registerVintageImprovementsRecipes(event) {
 		.itemOutputs('vintageimprovements:redstone_module')
 		.duration(20 * 20)
 		.EUt(20)
-
-	event.shaped('vintageimprovements:recipe_card', [
-		' B ',
-		'CA ',
-		' B '
-	], {
-		A: '#forge:plates/brass',
-		B: '#forge:screws/wrought_iron',
-		C: '#forge:tools/screwdrivers'
-	}).id('tfg:vi/shaped/recipe_card')
 
 	event.shaped('vintageimprovements:helve_hammer_slot_cover', [
 		'B B',
@@ -387,19 +372,26 @@ function registerVintageImprovementsRecipes(event) {
 
 			if (latheInput !== null) {
 				event.custom({
-					type: 'vintageimprovements:turning',
+					type: 'vintageimprovements:polishing',
 					ingredients: [latheInput],
 					results: [ChemicalHelper.get(TagPrefix.rod, material, 2)],
-					processingTime: material.getMass() * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+					speed_limits: 3,
+					processingTime: material.getMass() * 4 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 				}).id(`tfg:vi/lathe/${material.getName()}_to_rod`)
+			}
+
+			if (material.hasProperty(PropertyKey.GEM)) {
+				event.recipes.create.sandpaper_polishing(ChemicalHelper.get(TagPrefix.rod, material, 1), latheInput)
+					.id(`tfg:polishing/${material.getName()}_rod`)
 			}
 		}
 
 		if (material.hasFlag(MaterialFlags.GENERATE_BOLT_SCREW)) {
 			event.custom({
-				type: 'vintageimprovements:turning',
+				type: 'vintageimprovements:polishing',
 				ingredients: [ChemicalHelper.get(TagPrefix.bolt, material, 1)],
 				results: [ChemicalHelper.get(TagPrefix.screw, material, 1)],
+				speed_limits: 2,
 				processingTime: Math.max(1, material.getMass() / 8) * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/lathe/${material.getName()}_bolt_to_screw`)
 		}
@@ -459,51 +451,58 @@ function registerVintageImprovementsRecipes(event) {
 	// #region Lathe
 
 	event.custom({
-		type: 'vintageimprovements:turning',
+		type: 'vintageimprovements:polishing',
 		ingredients: [{ tag: 'forge:glass' }],
 		results: [{ item: 'tfc:lens' }],
+		speed_limits: 1,
 		processingTime: 100
 	}).id(`tfg:vi/lathe/lens`)
 
 	event.custom({
-		type: 'vintageimprovements:turning',
+		type: 'vintageimprovements:polishing',
 		ingredients: [{ tag: 'forge:exquisite_gems/rose_quartz' }],
 		results: [{ item: 'gtceu:rose_quartz_lens' }, { item: 'gtceu:rose_quartz_dust', count: 2 }],
+		speed_limits: 1,
 		processingTime: 100
 	}).id(`tfg:vi/lathe/rose_quartz_lens`)
 
 	event.custom({
-		type: 'vintageimprovements:turning',
+		type: 'vintageimprovements:polishing',
 		ingredients: [{ tag: 'forge:exquisite_gems/diamond' }],
 		results: [{ item: 'gtceu:diamond_lens' }, { item: 'gtceu:diamond_dust', count: 2 }],
+		speed_limits: 1,
 		processingTime: 100
 	}).id(`tfg:vi/lathe/diamond_lens`)
 
 	event.custom({
-		type: 'vintageimprovements:turning',
+		type: 'vintageimprovements:polishing',
 		ingredients: [{ tag: 'forge:exquisite_gems/emerald' }],
 		results: [{ item: 'gtceu:emerald_lens' }, { item: 'gtceu:emerald_dust', count: 2 }],
+		speed_limits: 1,
 		processingTime: 100
 	}).id(`tfg:vi/lathe/emerald_lens`)
 
 	event.custom({
-		type: 'vintageimprovements:turning',
+		type: 'vintageimprovements:polishing',
 		ingredients: [{ tag: 'forge:exquisite_gems/ruby' }],
 		results: [{ item: 'gtceu:ruby_lens' }, { item: 'gtceu:ruby_dust', count: 2 }],
+		speed_limits: 1,
 		processingTime: 100
 	}).id(`tfg:vi/lathe/ruby_lens`)
 
 	event.custom({
-		type: 'vintageimprovements:turning',
+		type: 'vintageimprovements:polishing',
 		ingredients: [{ tag: 'forge:exquisite_gems/sapphire' }],
 		results: [{ item: 'gtceu:sapphire_lens' }, { item: 'gtceu:sapphire_dust', count: 2 }],
+		speed_limits: 1,
 		processingTime: 100
 	}).id(`tfg:vi/lathe/sapphire_lens`)
 
 	event.custom({
-		type: 'vintageimprovements:turning',
+		type: 'vintageimprovements:polishing',
 		ingredients: [{ tag: 'forge:exquisite_gems/amethyst' }],
 		results: [{ item: 'gtceu:amethyst_lens' }, { item: 'gtceu:amethyst_dust', count: 2 }],
+		speed_limits: 1,
 		processingTime: 100
 	}).id(`tfg:vi/lathe/amethyst_lens`)
 
@@ -527,15 +526,17 @@ function registerVintageImprovementsRecipes(event) {
 			// And this
 			if (r.inputs.item[0].content.ingredient.tag === "#forge:ingots/damascus_steel") return
 
-			let input = r.inputs.item[0].content.ingredient;
-			input.count = r.inputs.item[0].content.count;
+			let input_array = [];
+			for (let i = 0; i < r.inputs.item[0].content.count; i++) {
+				input_array.push(r.inputs.item[0].content.ingredient);
+			}
 
 			let output = r.outputs.item[0].content.ingredient;
 			output.count = r.outputs.item[0].content.count;
 
 			event.custom({
 				type: 'vintageimprovements:curving',
-				ingredients: [input],
+				ingredients: input_array,
 				itemAsHead: r.inputs.item[1].content.ingredient.item,
 				results: [output],
 				processingTime: r.duration * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
@@ -676,6 +677,13 @@ function registerVintageImprovementsRecipes(event) {
 		results: [{ item: 'tfc:wool_yarn', count: 8 }],
 		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 	}).id(`tfg:vi/coiling/wool_yarn`)
+
+	event.custom({
+		type: 'vintageimprovements:coiling',
+		ingredients: [{ item: 'tfg:glacian_wool' }],
+		results: [{ item: 'tfc:wool_yarn', count: 8 }],
+		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/coiling/glacian_wool_yarn`)
 
 	event.custom({
 		type: 'vintageimprovements:coiling',

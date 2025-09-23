@@ -7,6 +7,6 @@ PlayerEvents.tick((event) => {
 		&& player.chestArmorItem === 'create:netherite_backtank'
 		&& player.legsArmorItem === 'minecraft:netherite_leggings'
 		&& player.feetArmorItem === 'create:netherite_diving_boots') {
-		player.potionEffects.add("minecraft:fire_resistance", 350, 1, true, false);
+		player.potionEffects.add("minecraft:fire_resistance", 350, 0, true, false);
 	}
 });

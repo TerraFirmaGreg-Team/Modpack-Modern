@@ -177,5 +177,9 @@ const registerTooltips = (event) => {
 	event.addAdvanced(["tfcea:refrigerator"], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.obsolete.fridge'))
 	})
+	
+	event.addAdvanced(['vintageimprovements:lathe'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
+	})
 	//#endregion
 }

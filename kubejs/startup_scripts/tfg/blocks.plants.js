@@ -14,6 +14,7 @@ const registerTFGCrops = (event) => {
         .hardness(0.4)
         .growthModifier(0.8)
         .tagBlock('minecraft:mineable/hoe')
+        .tagBlock('minecraft:flowers')
         .productItem(product => {
             product.texture('tfg:item/sunflower_product')
         })
@@ -34,6 +35,7 @@ const registerTFGCrops = (event) => {
         .hardness(0.2)
         .tagBoth('tfc:wild_crops')
         .tagBlock('minecraft:mineable/hoe')
+        .tagBlock('minecraft:flowers')
         .tagItem('c:hidden_from_recipe_viewers')
 
     event.create('tfg:rapeseed', 'tfc:double_crop')
@@ -44,6 +46,7 @@ const registerTFGCrops = (event) => {
         .doubleStages(3)
         .hardness(0.4)
         .tagBlock('minecraft:mineable/hoe')
+        .tagBlock('minecraft:flowers')
         .deadBlock(dead => {
             dead.hardness(0.2)
             dead.soundType('crop')
@@ -58,6 +61,7 @@ const registerTFGCrops = (event) => {
         .hardness(0.2)
         .tagBoth('tfc:wild_crops')
         .tagBlock('minecraft:mineable/hoe')
+        .tagBlock('minecraft:flowers')
         .tagItem('c:hidden_from_recipe_viewers')
 		
 	event.create('tfg:flax', 'tfc:double_crop')
@@ -289,7 +293,7 @@ const registerTFGCrops = (event) => {
 
     event.create('tfg:saplings/crimson', 'tfc:sapling')
         .features('tfg:mars/tree/crimson')
-        .tagBoth('minecraft:sapling')
+        .tagBoth('minecraft:saplings')
         .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(6)
         .soundType('nether_wart')
@@ -297,7 +301,7 @@ const registerTFGCrops = (event) => {
 
     event.create('tfg:saplings/warped', 'tfc:sapling')
         .features('tfg:mars/tree/warped')
-        .tagBoth('minecraft:sapling')
+        .tagBoth('minecraft:saplings')
         .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(6)
         .soundType('nether_wart')
@@ -305,7 +309,7 @@ const registerTFGCrops = (event) => {
 
     event.create('tfg:saplings/alphacene', 'tfc:sapling')
         .features('species:alphacene_mushroom')
-        .tagBoth('minecraft:sapling')
+        .tagBoth('minecraft:saplings')
         .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(3)
         .soundType('nether_wart')
@@ -313,7 +317,7 @@ const registerTFGCrops = (event) => {
 
     event.create('tfg:saplings/strophar', 'tfc:sapling')
         .features('tfg:mars/tree/strophar')
-        .tagBoth('minecraft:sapling')
+        .tagBoth('minecraft:saplings')
         .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(7)
         .soundType('nether_wart')
@@ -321,17 +325,66 @@ const registerTFGCrops = (event) => {
 
     event.create('tfg:saplings/aeronos', 'tfc:sapling')
         .features('tfg:mars/tree/aeronos')
-        .tagBoth('minecraft:sapling')
+        .tagBoth('minecraft:saplings')
         .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(9)
         .soundType('nether_wart')
         .defaultCutout()
 
     event.create('tfg:saplings/glacian', 'tfc:sapling')
-        .features('tfg:mars/tree/glacian')
-        .tagBoth('minecraft:sapling')
+        .features('tfg:mars/tree/glacian_mini')
+        .tagBoth('minecraft:saplings')
         .tagBlock('tfg:do_not_destroy_in_space')
         .growthDays(9)
         .soundType('nether_wart')
         .defaultCutout()
+
+    // Glacian tree stuff
+	event.create('tfg:glacian_leaves', 'tfc:leaves')
+		.soundType('azalea_leaves')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfg:do_not_destroy_in_space')
+		.mapColor('snow')
+		.seasonalColors(false)
+		.fallenLeaves(leaves => {
+			leaves.noCollision()
+			leaves.notSolid()
+			leaves.defaultCutout()
+			leaves.soundType('azalea_leaves')
+			leaves.tagBlock('minecraft:mineable/hoe')
+			leaves.tagBlock('minecraft:replaceable')
+			leaves.noDynamicTinting()
+			leaves.models((modelType, generator) => {
+				if (modelType.layers != 8) {
+					generator.parent("tfc:block/groundcover/fallen_leaves_height" + modelType.height);
+					generator.texture("all", "ad_astra:block/glacian_leaves");
+				} else {
+					generator.parent("ad_astra:block/glacian_leaves");
+				}
+			})
+		})
+
+    event.create('tfg:glacian_wood', 'tfc:log')
+        .tagBoth('minecraft:logs')
+        .tagItem('minecraft:logs_that_burn')
+        .tagItem('ad_astra:glacian_logs')
+        .tagBlock('minecraft:mineable/axe')
+        .soundType('wood')
+        .stripped(stripped => {
+            stripped.tagBoth('minecraft:logs')
+            stripped.tagItem('minecraft:logs_that_burn')
+            stripped.tagItem('ad_astra:glacian_logs')
+            stripped.tagBlock('minecraft:mineable/axe')
+            stripped.soundType('wood')
+        })
+
+    event.create('tfg:glacian_log', 'tfc:log')
+        .tagBoth('minecraft:logs')
+        .tagBoth('c:hidden_from_recipe_viewers')
+        .soundType('wood')
+        .stripped(stripped => {
+            stripped.tagBoth('minecraft:logs')
+            stripped.tagBoth('c:hidden_from_recipe_viewers')
+            stripped.soundType('wood')
+        })
 }

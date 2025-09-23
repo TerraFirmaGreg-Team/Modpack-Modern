@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "minecraft:item/charcoal"
+		"layer0": "tfc:item/stripped_log/log/blackwood"
 	}
 }
