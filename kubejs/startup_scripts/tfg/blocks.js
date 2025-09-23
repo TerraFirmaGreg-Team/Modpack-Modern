@@ -160,6 +160,14 @@ const registerTFGBlocks = (event) => {
 		.renderType('cutout')
 		.opaque(false)
 
+	event.create('tfg:casings/machine_casing_sterilizing_pipes', 'tfg:active_cardinal')
+		.soundType('metal')
+		.hardness(5)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+		.mapColor('color_brown')
+
 	//#endregion
 	
 	event.create('tfg:titanium_concrete')
