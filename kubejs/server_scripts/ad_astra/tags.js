@@ -49,6 +49,8 @@ const registerAdAstraItemTags = (event) => {
 	event.add('c:hidden_from_recipe_viewers', 'ad_astra:alphacene_mushroom')
 	event.add('c:hidden_from_recipe_viewers', 'ad_astra:strophar_mushroom')
 	
+	event.add('gtceu:ppe_armor', 'ad_astra:space_helmet')
+	event.add('gtceu:ppe_armor', 'ad_astra:space_suit')
 	event.add('gtceu:ppe_armor', 'ad_astra:netherite_space_helmet')
 	event.add('gtceu:ppe_armor', 'ad_astra:netherite_space_suit')
 	event.add('gtceu:ppe_armor', 'ad_astra:netherite_space_pants')
