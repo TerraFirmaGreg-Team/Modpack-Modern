@@ -1,3 +1,6 @@
 {
-	"parent": "ad_astra:block/moon_sand"
+	"parent": "minecraft:block/snow_height4",
+  "textures": {
+	"texture": "ad_astra:block/moon_sand"
+  }
 }
