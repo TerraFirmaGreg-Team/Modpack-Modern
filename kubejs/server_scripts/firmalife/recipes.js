@@ -771,4 +771,22 @@ const registerFirmaLifeRecipes = (event) => {
 			Fluid.of('tfcchannelcasting:milk_chocolate', 100))
 		.outputItem(TFC.isp.of('firmalife:food/chocolate_ice_cream').copyFood())
 		.id('tfg:mixing_bowl/chocolate_ice_cream')
+
+    // Cound't find a way to remove just the heating recipes, so removing by id 
+	const setChocolateHeating = (variant) => {
+    const itemId = `firmalife:food/${variant}_chocolate`
+    const fluidId = `tfcchannelcasting:${variant}_chocolate`
+    const recipeId = `firmalife:heating/${variant}_chocolate`
+
+    event.remove({ id: recipeId })
+    event.remove({ type: 'tfc:heating', ingredient: { item: itemId } })
+
+    event.recipes.tfc.heating(itemId, 200)
+        .resultFluid(Fluid.of(fluidId, 144))
+        .id(recipeId)
+	}
+
+	setChocolateHeating('white')
+	setChocolateHeating('milk')
+	setChocolateHeating('dark')
 }
