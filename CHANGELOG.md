@@ -4,6 +4,11 @@
 ### Changes
 ### Bug fixes
 
+## [0.10.16] - 23-09-2025
+### Bug fixes
+- Fix startup crash on linux servers @Pyritie
+- Fix broken loot table for badlands enderman @Pyritie
+
 ## [0.10.15] - 23-09-2025
 ### Major Changes
 - GregTech updated to 7.2.0, check [here](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern/files/7022042) for the full list of changes, but here's a summary:
