@@ -29,7 +29,7 @@ function registerTFGAqueductBlocks(event) {
         .tagBoth(`tfc:${global.STONE_CHARACS.moon.type}_items`)
         .tagBoth('tfg:rock/aqueducts')
 
-    event.create('tfg:rock/aqueduct_moon_deepslate_stone', 'tfc:aqueduct')
+    event.create('tfg:rock/aqueduct_moon_deepslate', 'tfc:aqueduct')
         .soundType(global.STONE_CHARACS.moon_deepslate.sound)
         .textureAll('tfg:block/rock/bricks_moon_deepslate')
         .mapColor(global.STONE_CHARACS.moon_deepslate.mapColor)
@@ -64,7 +64,7 @@ function registerTFGAqueductBlocks(event) {
         .tagBoth(`tfc:${global.STONE_CHARACS.glacio.type}_items`)
         .tagBoth('tfg:rock/aqueducts')
 
-    event.create('tfg:rock/aqueduct_permafrost_stone', 'tfc:aqueduct')
+    event.create('tfg:rock/aqueduct_permafrost', 'tfc:aqueduct')
         .soundType(global.STONE_CHARACS.permafrost.sound)
         .textureAll('ad_astra:block/permafrost_bricks')
         .mapColor(global.STONE_CHARACS.permafrost.mapColor)

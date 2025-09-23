@@ -156,6 +156,44 @@ function registerTFGRockRecipes(event) {
 	})
 	// #endregion LOOSE_TO_BRICKS
 
+	// #region AQUEDUCTS
+	const AQUEDUCTS = [
+		{ brick: 'tfg:brick/deepslate',       aqueduct: 'tfg:rock/aqueduct_deepslate'      },
+		{ brick: 'tfg:brick/dripstone',       aqueduct: 'tfg:rock/aqueduct_dripstone'      },
+		{ brick: 'minecraft:nether_brick',    aqueduct: 'tfg:rock/aqueduct_nether'         },
+		{ brick: 'tfg:brick/moon_stone',      aqueduct: 'tfg:rock/aqueduct_moon_stone'     },
+		{ brick: 'tfg:brick/moon_deepslate',  aqueduct: 'tfg:rock/aqueduct_moon_deepslate' },
+		{ brick: 'tfg:brick/mars_stone',      aqueduct: 'tfg:rock/aqueduct_mars_stone'     },
+		{ brick: 'tfg:brick/venus_stone',     aqueduct: 'tfg:rock/aqueduct_venus_stone'    },
+		{ brick: 'tfg:brick/mercury_stone',   aqueduct: 'tfg:rock/aqueduct_mercury_stone'  },
+		{ brick: 'tfg:brick/glacio_stone',    aqueduct: 'tfg:rock/aqueduct_glacio_stone'   },
+		{ brick: 'tfg:brick/permafrost',      aqueduct: 'tfg:rock/aqueduct_permafrost'     },
+		{ brick: 'tfg:brick/red_granite',     aqueduct: 'tfg:rock/aqueduct_red_granite'    }
+	]
+
+	AQUEDUCTS.forEach(x => {
+		event.shaped(x.aqueduct, [
+			'A A',
+			'BAB'
+		], {
+			A: x.loose,
+			B: 'tfc:mortar'
+		})
+	})
+
+	event.shaped('tfg:rock/aqueduct_stone', [
+		'ABA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'gtceu:stone_ingot',
+		B: 'tfc:mortar'
+	})
+	
+	
+	// #endregion AQUEDUCT
+
+
 	// #region RAW_TO_POLISHED
 	const RAW_TO_POLISHED = [
 		// Beneath
@@ -279,18 +317,19 @@ function registerTFGRockRecipes(event) {
 	
 	// #region CRACKING
 	const CRACKING = [
-		{ raw: 'minecraft:deepslate_bricks',      cracked: 'minecraft:cracked_deepslate_bricks' },
-		{ raw: 'minecraft:deepslate_tiles',       cracked: 'minecraft:cracked_deepslate_tiles' },
-		{ raw: 'minecraft:nether_bricks',         cracked: 'minecraft:cracked_nether_bricks' },
-		{ raw: 'ad_astra:moon_stone_bricks',      cracked: 'ad_astra:cracked_moon_stone_bricks' },
-		{ raw: 'ad_astra:mars_stone_bricks',      cracked: 'ad_astra:cracked_mars_stone_bricks' },
-		{ raw: 'ad_astra:venus_stone_bricks',     cracked: 'ad_astra:cracked_venus_stone_bricks' },
+		{ raw: 'minecraft:deepslate_bricks',      cracked: 'minecraft:cracked_deepslate_bricks'      },
+		{ raw: 'minecraft:deepslate_tiles',       cracked: 'minecraft:cracked_deepslate_tiles'       },
+		{ raw: 'minecraft:nether_bricks',         cracked: 'minecraft:cracked_nether_bricks'         },
+		{ raw: 'ad_astra:moon_stone_bricks',      cracked: 'ad_astra:cracked_moon_stone_bricks'      },
+		{ raw: 'tfg:rock/bricks_moon_deepslate',  cracked: 'tfg:rock/cracked_bricks_moon_deepslate'  },
+		{ raw: 'ad_astra:mars_stone_bricks',      cracked: 'ad_astra:cracked_mars_stone_bricks'      },
+		{ raw: 'ad_astra:venus_stone_bricks',     cracked: 'ad_astra:cracked_venus_stone_bricks'     },
 		{ raw: 'ad_astra:venus_sandstone_bricks', cracked: 'ad_astra:cracked_venus_sandstone_bricks' },
-		{ raw: 'gtceu:red_granite_bricks',        cracked: 'gtceu:cracked_red_granite_bricks' },
-		{ raw: 'ad_astra:mercury_stone_bricks',   cracked: 'ad_astra:cracked_mercury_stone_bricks' },
-		{ raw: 'ad_astra:glacio_stone_bricks',    cracked: 'ad_astra:cracked_glacio_stone_bricks' },
-		{ raw: 'ad_astra:permafrost_bricks',      cracked: 'ad_astra:cracked_permafrost_bricks' },
-		{ raw: 'tfg:rock/bricks_moon_deepslate',  cracked: 'tfg:rock/cracked_bricks_moon_deepslate' }
+		{ raw: 'ad_astra:mercury_stone_bricks',   cracked: 'ad_astra:cracked_mercury_stone_bricks'   },
+		{ raw: 'ad_astra:glacio_stone_bricks',    cracked: 'ad_astra:cracked_glacio_stone_bricks'    },
+		{ raw: 'ad_astra:permafrost_bricks',      cracked: 'ad_astra:cracked_permafrost_bricks'      },
+		{ raw: 'gtceu:red_granite_bricks',        cracked: 'gtceu:cracked_red_granite_bricks'        }
+		
 	]
 
 	CRACKING.forEach(x => {
@@ -328,7 +367,7 @@ function registerTFGRockRecipes(event) {
 	// #region CUT_GRIND
 	//
 	// (spacing for region titles)
-	// 
+	//
 	let CUT_GRIND = [
 		// #region Nether
 		// Deepslate
@@ -627,7 +666,7 @@ function registerTFGRockRecipes(event) {
 					.duration(150)
 					.EUt(2)
 					.category(GTRecipeCategories.MACERATOR_RECYCLING)
-			} catch(e){ console.log("Failed to add macerator recipe") }
+			} catch(e){ }
 		}
 		if (x.stair != null) {
 			if (x.raw != null) {
@@ -678,7 +717,7 @@ function registerTFGRockRecipes(event) {
 				event.recipes.tfc.chisel(x.wall, x.raw, 'smooth')
 				
 				if (x.stonecutting) {
-					event.stonecutting(x.wall, x.raw).id(`${x.raw}_to_${x.wall}`.replace(/:/g, '_'))
+					event.stonecutting(`2x ${x.wall}`, x.raw).id(`${x.raw}_to_${x.wall}`.replace(/:/g, '_'))
 				}
 			}
 			if (x.slab != null) {
@@ -753,36 +792,49 @@ function registerTFGRockRecipes(event) {
 	// #endregion MACERATOR
 
 	// #region STONECUTTER
-	const red_granite_cutter_set = Ingredient.of('#tfg:red_granite_cutter_set').itemIds.toArray().map(String);
-	red_granite_cutter_set.forEach(block => {
-		event.stonecutting(block,
-			Ingredient.of('#tfg:red_granite_cutter_set').subtract(block)
-		).id(`tfg:stonecutter/${block.replace(/:/g, "/")}`)
-		
-	})
+	const STONECUTTER = [
+		[ 'minecraft:deepslate_bricks',           'minecraft:deepslate_tiles',               'minecraft:chiseled_deepslate'       ],
+		[ 'minecraft:polished_blackstone_bricks', 'minecraft:chiseled_polished_blackstone'                                        ],
+		[ 'minecraft:nether_bricks',              'minecraft:nether_bricks'                                                       ],
+		[ 'ad_astra:moon_stone_bricks',           'ad_astra:chiseled_moon_stone_bricks',                                          ],
+		[ 'tfg:rock/bricks_moon_deepslate',       'tfg:rock/chiseled_bricks_moon_deepslate',                                      ],
+		[ 'ad_astra:mars_stone_bricks',           'ad_astra:chiseled_mars_stone_bricks',                                          ],
+		[ 'ad_astra:venus_stone_bricks',          'ad_astra:chiseled_venus_stone_bricks',                                         ],
+		[ 'ad_astra:mercury_stone_bricks',        'ad_astra:chiseled_mercury_stone_bricks',                                       ],
+		[ 'ad_astra:glacio_stone_bricks',         'ad_astra:chiseled_glacio_stone_bricks',                                        ],
+		[ 'ad_astra:permafrost_bricks',           'ad_astra:chiseled_permafrost_bricks',                                          ],
+		[ 'gtceu:red_granite_bricks',             'gtceu:red_granite_tile',                  'gtceu:square_red_granite_bricks',
+		  'gtceu:red_granite_windmill_a',     	  'gtceu:red_granite_windmill_b',            'gtceu:small_red_granite_bricks',
+		  'gtceu:red_granite_small_tile',         'gtceu:chiseled_red_granite'                                                    ],
+		[ 'minecraft:stone_bricks',               'minecraft:chiseled_stone_bricks'                                               ]
+	]
 
-	const moon_deepslate_cutter_set = Ingredient.of('#tfg:moon_deepslate_cutter_set').itemIds.toArray().map(String);
-	moon_deepslate_cutter_set.forEach(block => {
-		event.stonecutting(block,
-			Ingredient.of('#tfg:moon_deepslate_cutter_set').subtract(block)
-		).id(`tfg:stonecutter/${block.replace(/:/g, "/")}`)
-		
+	STONECUTTER.forEach(set => {
+		set.forEach(block1 => {
+			set.forEach(block2 => {
+				if( block1 != block2 ){ event.stonecutting(block1, block2) }
+			})
+		})
 	})
-
 	// #endregion STONECUTTER
 
 	// #region PILLARS
 	const PILLARS = [
-		{ raw: 'ad_astra:moon_stone_bricks',    pillar: 'ad_astra:moon_pillar' },
-		{ raw: 'ad_astra:mars_stone_bricks',    pillar: 'ad_astra:mars_pillar' },
-		{ raw: 'ad_astra:venus_stone_bricks',   pillar: 'ad_astra:venus_pillar' },
-		{ raw: 'ad_astra:mercury_stone_bricks', pillar: 'ad_astra:mercury_pillar' },
-		{ raw: 'ad_astra:glacio_stone_bricks',  pillar: 'ad_astra:glacio_pillar' },
-		{ raw: 'ad_astra:permafrost_bricks',    pillar: 'ad_astra:permafrost_pillar' },
-		{ raw: 'minecraft:purpur_block',        pillar: 'minecraft:purpur_pillar' }
+		{ raw: 'minecraft:polished_deepslate',   pillar: 'create:deepslate_pillar'         },
+		{ raw: 'create:polished_cut_dripstone',  pillar: 'create:dripstone_pillar'         },
+		{ raw: 'create:cut_dripstone',           pillar: 'create:dripstone_pillar'         },
+		{ raw: 'ad_astra:moon_stone_bricks',     pillar: 'ad_astra:moon_pillar'            },
+		{ raw: 'tfg:rock/pillar_moon_deepslate', pillar: 'tfg:rock/bricks_moon_deepslate'  },
+		{ raw: 'ad_astra:mars_stone_bricks',     pillar: 'ad_astra:mars_pillar'            },
+		{ raw: 'ad_astra:venus_stone_bricks',    pillar: 'ad_astra:venus_pillar'           },
+		{ raw: 'ad_astra:mercury_stone_bricks',  pillar: 'ad_astra:mercury_pillar'         },
+		{ raw: 'ad_astra:glacio_stone_bricks',   pillar: 'ad_astra:glacio_pillar'          },
+		{ raw: 'ad_astra:permafrost_bricks',     pillar: 'ad_astra:permafrost_pillar'      },
+		{ raw: 'minecraft:purpur_block',         pillar: 'minecraft:purpur_pillar'         }
 	]
 
 	PILLARS.forEach(x => {
+		console.log(x.pillar)
 		event.shaped(`2x ${x.pillar}`, [
 			'A',
 			'A'
@@ -793,30 +845,16 @@ function registerTFGRockRecipes(event) {
 		event.stonecutting(x.pillar, x.raw).id(`${x.raw}_to_${x.pillar}`.replace(/:/g, '_'))
 	})
 
-	// pillar shaped recipes
-	event.shaped(
-		Item.of('create:deepslate_pillar', 2), [ ' A ', ' A ' ], { A: 'minecraft:polished_deepslate' }
-	)
+	// horizontal shaped recipes	
 	event.shaped(
 		Item.of('create:layered_deepslate', 2), [ 'AA ' ], { A: 'minecraft:polished_deepslate' }
 	)
 
 	event.shaped(
-		Item.of('create:dripstone_pillar', 2), [ ' A ', ' A ' ], { A: 'create:polished_cut_dripstone' }
-	)
-	event.shaped(
 		Item.of('create:layered_dripstone', 2), [ 'AA ' ], { A: 'create:polished_cut_dripstone' }
 	)
-
 	event.shaped(
-		Item.of('create:dripstone_pillar', 2), [ ' A ', ' A ' ], { A: 'create:polished_cut_dripstone' }
-	)
-	event.shaped(
-		Item.of('create:layered_dripstone', 2), [ 'AA ' ], { A: 'create:polished_cut_dripstone' }
-	)
-
-	event.shaped(
-		Item.of('tfg:rock/pillar_moon_deepslate', 2), [ ' A ', ' A ' ], { A: 'tfg:rock/bricks_moon_deepslate' }
+		Item.of('create:layered_dripstone', 2), [ 'AA ' ], { A: 'create:cut_dripstone' }
 	)
 	// #endregion PILLARS
 
