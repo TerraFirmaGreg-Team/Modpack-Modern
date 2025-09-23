@@ -694,6 +694,112 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of("firmalife:food/cookie_dough_ice_cream").resetFood()
 	})
 
+	// Soups in the Food Processor
+    processorRecipe("grain_soup", 300, 8, {
+        circuit: 20,
+        itemInputs: [
+            '#tfc:bowls',
+            '2x #tfc:foods/grains',
+            '3x #tfc:foods/usable_in_soup'
+        ],
+        fluidInputs: [Fluid.of('minecraft:water', 100)],
+        itemOutputs: ['tfc:food/grain_soup'],
+        itemOutputProvider: TFC.isp.of('tfc:food/grain_soup').meal(
+            (food) => food.hunger(5).water(1).saturation(1).grain(1).decayModifier(4.5),
+            [
+                (portion) => portion
+                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
+                    .nutrientModifier(1)
+                    .saturationModifier(0.8)
+                    .waterModifier(0.8)
+            ]
+        )
+    })
+
+    processorRecipe("fruit_soup", 300, 8, {
+        circuit: 21,
+        itemInputs: [
+            '#tfc:bowls',
+            '2x #tfc:foods/fruits',
+            '3x #tfc:foods/usable_in_soup'
+        ],
+        fluidInputs: [Fluid.of('minecraft:water', 100)],
+        itemOutputs: ['tfc:food/fruit_soup'],
+        itemOutputProvider: TFC.isp.of('tfc:food/fruit_soup').meal(
+            (food) => food.hunger(5).water(1).saturation(1).fruit(1).decayModifier(4.5),
+            [
+                (portion) => portion
+                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
+                    .nutrientModifier(1)
+                    .saturationModifier(0.8)
+                    .waterModifier(0.8)
+            ]
+        )
+    })
+
+    processorRecipe("vegetables_soup", 300, 8, {
+        circuit: 22,
+        itemInputs: [
+            '#tfc:bowls',
+            '2x #tfc:foods/vegetables',
+            '3x #tfc:foods/usable_in_soup'
+        ],
+        fluidInputs: [Fluid.of('minecraft:water', 100)],
+        itemOutputs: ['tfc:food/vegetables_soup'],
+        itemOutputProvider: TFC.isp.of('tfc:food/vegetables_soup').meal(
+            (food) => food.hunger(5).water(1).saturation(1).vegetables(1).decayModifier(4.5),
+            [
+                (portion) => portion
+                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
+                    .nutrientModifier(1)
+                    .saturationModifier(0.8)
+                    .waterModifier(0.8)
+            ]
+        )
+    })
+
+    processorRecipe("protein_soup", 300, 8, {
+        circuit: 23,
+        itemInputs: [
+            '#tfc:bowls',
+            '2x #tfc:foods/meats',
+            '3x #tfc:foods/usable_in_soup'
+        ],
+        fluidInputs: [Fluid.of('minecraft:water', 100)],
+        itemOutputs: ['tfc:food/protein_soup'],
+        itemOutputProvider: TFC.isp.of('tfc:food/protein_soup').meal(
+            (food) => food.hunger(5).water(1).saturation(1).protein(1).decayModifier(4.5),
+            [
+                (portion) => portion
+                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
+                    .nutrientModifier(1)
+                    .saturationModifier(0.8)
+                    .waterModifier(0.8)
+            ]
+        )
+    })
+
+    processorRecipe("dairy_soup", 300, 8, {
+        circuit: 24,
+        itemInputs: [
+            '#tfc:bowls',
+            '2x #tfc:foods/dairy',
+            '3x #tfc:foods/usable_in_soup'
+        ],
+        fluidInputs: [Fluid.of('minecraft:water', 100)],
+        itemOutputs: ['tfc:food/dairy_soup'],
+        itemOutputProvider: TFC.isp.of('tfc:food/dairy_soup').meal(
+            (food) => food.hunger(5).water(1).saturation(1).dairy(1).decayModifier(4.5),
+            [
+                (portion) => portion
+                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
+                    .nutrientModifier(1)
+                    .saturationModifier(0.8)
+                    .waterModifier(0.8)
+            ]
+        )
+    })
+
 	processorRecipe("banana_split", 500, 16, {
 		itemInputs: ['firmalife:food/vanilla_ice_cream', 'firmalife:food/strawberry_ice_cream', 'firmalife:food/chocolate_ice_cream', 'firmalife:food/pineapple', 'tfc:food/cherry', '2x tfc:food/banana'],
 		itemOutputs: ['2x firmalife:food/banana_split'],
