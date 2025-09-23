@@ -1,0 +1,31 @@
+{
+	"variants": {
+		"layers=1": [
+			{ "model": "tfg:block/pile/mars_snow/sand_height2a" },
+			{ "model": "tfg:block/pile/mars_snow/sand_height2b" },
+			{ "model": "tfg:block/pile/mars_snow/sand_height2c" },
+			{ "model": "tfg:block/pile/mars_snow/sand_height2d" }
+		],
+		"layers=2": {
+			"model": "tfg:block/pile/mars_snow/sand_height4"
+		},
+		"layers=3": {
+			"model": "tfg:block/pile/mars_snow/sand_height6"
+		},
+		"layers=4": {
+			"model": "tfg:block/pile/mars_snow/sand_height8"
+		},
+		"layers=5": {
+			"model": "tfg:block/pile/mars_snow/sand_height10"
+		},
+		"layers=6": {
+			"model": "tfg:block/pile/mars_snow/sand_height12"
+		},
+		"layers=7": {
+			"model": "tfg:block/pile/mars_snow/sand_height14"
+		},
+		"layers=8": {
+			"model": "tfg:block/pile/mars_snow/sand_height14"
+		}
+	}
+}
