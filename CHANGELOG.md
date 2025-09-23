@@ -26,6 +26,8 @@
 - Halved how quickly the durability decreases on the various hiking/steel toe boots @Pyritie
 - Added curving press/extruder recipes for TFC shields @Pyritie
 - Added `#minecraft:flowers` block tags to flower crops @Redeix
+- Added quests for the bauxite and gem slurry processing lines @Pyritie
+- Mechanical Arms can now interact with Charcoal Forges, Crucibles, and Rotor Holders @BlueBoat29
 ### Bug fixes
 - Ice soup now requires a bowl to craft, so it doesn't generate free bowls @Pyritie
 - Fixed repairing an iron flask consuming the knife, also added some flask recipes with rubber instead of a bladder (#1826) @Pyritie

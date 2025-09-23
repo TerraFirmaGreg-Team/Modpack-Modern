@@ -334,7 +334,7 @@
 				type: "item"
 			}]
 			title: "{quests.gregtech_energy.lst.title}"
-			x: -4.5d
+			x: -3.0d
 			y: -3.0d
 		}
 		{
@@ -541,7 +541,7 @@
 				}
 			]
 			title: "{quests.gregtech_energy.lgt_fuel.title}"
-			x: -11.0d
+			x: -9.5d
 			y: -3.0d
 		}
 		{
@@ -574,7 +574,7 @@
 				}
 			]
 			title: "{quests.gregtech_energy.lpt_fuel.title}"
-			x: -9.0d
+			x: -8.5d
 			y: 3.0d
 		}
 		{
@@ -604,7 +604,7 @@
 				}
 			]
 			title: "{quests.gregtech_energy.lst_fuel.title}"
-			x: -9.0d
+			x: -7.5d
 			y: -7.0d
 		}
 		{
@@ -655,7 +655,7 @@
 				}
 			]
 			title: "{quests.gregtech_energy.lce_fuel.title}"
-			x: -10.0d
+			x: -8.5d
 			y: 1.0d
 		}
 		{
@@ -766,7 +766,7 @@
 				type: "item"
 			}]
 			title: "{quests.gregtech_energy.hv_single_generator.title}"
-			x: -3.0d
+			x: -4.5d
 			y: -3.0d
 		}
 		{
@@ -800,7 +800,7 @@
 				}
 			]
 			title: "{quests.gregtech_energy.hv_fuel.title}"
-			x: -12.0d
+			x: -10.5d
 			y: -3.0d
 		}
 		{
@@ -947,7 +947,7 @@
 				item: "gtceu:benzene_bucket"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -9.5d
 			y: -5.0d
 		}
 		{
@@ -958,7 +958,7 @@
 				item: "gtceu:diesel_bucket"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -8.5d
 			y: -5.0d
 		}
 		{
@@ -980,7 +980,7 @@
 				item: "gtceu:bio_diesel_bucket"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -8.5d
 			y: -7.0d
 		}
 		{
@@ -991,7 +991,7 @@
 				item: "gtceu:cetane_boosted_diesel_bucket"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -8.5d
 			y: -3.0d
 		}
 		{
@@ -1002,7 +1002,7 @@
 				item: "gtceu:high_octane_gasoline_bucket"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -8.5d
 			y: -1.0d
 		}
 		{
@@ -1051,6 +1051,57 @@
 			}]
 			x: -6.0d
 			y: 3.0d
+		}
+		{
+			dependencies: [
+				"20DA81038C507C90"
+				"3467E14C8BB54214"
+				"634EAFA86B3D57A1"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{quests.gregtech_energy.rotor.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.rotor.desc.2}"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:turbine_rotor"
+				tag: {
+					GT.PartStats: {
+						Material: "gtceu:ultimet"
+					}
+				}
+			}
+			id: "44EDD02C1DD583DC"
+			subtitle: "{quests.gregtech_energy.rotor.subtitle}"
+			tasks: [
+				{
+					id: "389EECA7BAFCBF63"
+					item: {
+						Count: 1
+						id: "gtceu:turbine_rotor"
+						tag: {
+							GT.PartStats: {
+								Material: "gtceu:ultimet"
+							}
+						}
+					}
+					match_nbt: false
+					title: "{quests.gregtech_energy.rotor.task}"
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "255F57665D599573"
+					item: "create:mechanical_arm"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.gregtech_energy.rotor.title}"
+			x: -3.0d
+			y: -2.0d
 		}
 	]
 	subtitle: ["{quests.gregtech_energy.subtitle}"]
