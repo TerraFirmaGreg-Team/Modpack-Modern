@@ -146,12 +146,6 @@
 			y: -2.5d
 		}
 		{
-			id: "55D33C26C288D18B"
-			linked_quest: "59DFC4DA7D29C315"
-			x: 12.0d
-			y: -2.5d
-		}
-		{
 			id: "579B261E3FDD2C96"
 			linked_quest: "799288FB7A4DCA11"
 			x: -5.5d
@@ -196,12 +190,7 @@
 			y: -0.5d
 		}
 		{
-			id: "2EB4A92AFFCAA0BE"
-			linked_quest: "727075AAF9F91FAE"
-			x: 12.0d
-			y: -1.5d
-		}
-		{
+			icon: "gtceu:uraninite_dust"
 			id: "561FFC1C2CED7596"
 			linked_quest: "06B4AAC7DD796182"
 			x: 12.0d
@@ -561,7 +550,7 @@
 				}
 			]
 			title: "{quests.ore_proc.platline.title}"
-			x: -3.0d
+			x: -3.5d
 			y: -0.5d
 		}
 		{
@@ -1381,6 +1370,48 @@
 			title: "{quests.ore_proc.steam_tier.title}"
 			x: -8.5d
 			y: -9.0d
+		}
+		{
+			dependencies: ["197A13A0790F000B"]
+			description: ["{quests.ore_proc.bauxite.desc}"]
+			icon: "gtceu:crushed_bauxite_ore"
+			id: "7A583AFF73DD856D"
+			subtitle: "{quests.ore_proc.bauxite.subtitle}"
+			tasks: [{
+				id: "19DC487BC6E88278"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:crushed_bauxite_ore)item(gtceu:purified_bauxite_ore))"
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.ore_proc.bauxite.title}"
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["00004BE1D77EA003"]
+			description: ["{quests.ore_proc.gem_slurry.desc}"]
+			id: "12C0BC3514FCEF96"
+			subtitle: "{quests.ore_proc.gem_slurry.subtitle}"
+			tasks: [{
+				id: "57587D74BD9DA754"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:crushed_ruby_ore)item(gtceu:crushed_sapphire_ore)item(gtceu:crushed_green_sapphire_ore))"
+					}
+				}
+				title: "{quests.ore_proc.gem_slurry.task}"
+				type: "item"
+			}]
+			title: "{quests.ore_proc.gem_slurry.title}"
+			x: -2.5d
+			y: -0.5d
 		}
 	]
 	subtitle: ["{quests.ore_proc.subtitle}"]
