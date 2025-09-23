@@ -27,6 +27,7 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
 
     // Примитивная помпа (Primitive Pump)
     "gtceu:infinite_water_cover",
+    "gtceu:ender_item_link_cover",
     "gtceu:ender_fluid_link_cover",
     "gtceu:pump_deck",
     "gtceu:pump_hatch",
@@ -110,6 +111,8 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:uv_world_accelerator",
 
     "gtceu:compressed_clay",
+
+    "gtceu:stone_rod",
 
     "gtceu:damascus_steel_nugget",
     "gtceu:damascus_steel_ingot",

@@ -909,7 +909,7 @@ global.TFC_MEAT_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfg:food/raw_sniffer_beef", output: "tfg:food/cooked_sniffer_beef", name: "cooked_sniffer_beef" },
     { input: "tfg:food/raw_wraptor", output: "tfg:food/cooked_wraptor", name: "cooked_wraptor" },
     {
-        input: "wan_ancient_beasts:raw_toxlacanth",
+        input: "wan_ancient_beasts:toxlacanth",
         output: "wan_ancient_beasts:cooked_toxlacanth",
         name: "cooked_toxlacanth",
     },
@@ -923,6 +923,7 @@ global.TFC_MEAT_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfg:food/raw_whole_soarer", output: "tfg:food/cooked_whole_soarer", name: "cooked_whole_soarer" },
     { input: "tfg:food/raw_crusher_meat", output: "tfg:food/cooked_crusher_meat", name: "cooked_crusher_meat" },
     { input: "tfg:food/raw_goober_meat", output: "tfg:food/cooked_goober_meat", name: "cooked_goober_meat" },
+    { input: "wan_ancient_beasts:raw_ancient_meat", output: "wan_ancient_beasts:cooked_ancient_meat", name: "cooked_eater_meat" }
 ]);
 
 global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = /** @type {const} */ ([
@@ -1093,7 +1094,7 @@ global.TFC_CURDS_AND_CHEESES = /** @type {const} */ ([
     },
 ]);
 
-global.TFC_MUD_BRICKS = /** @type {const} */ ([
+global.TFC_DRY_MUD_BRICKS = /** @type {const} */ ([
     "tfc:mud_brick/loam",
     "tfc:mud_brick/sandy_loam",
     "tfc:mud_brick/silt",
@@ -1151,3 +1152,15 @@ global.calcAmountOfMetalProcessed = function (defaultAmount, percents) {
     const value = defaultAmount * (percentPerItem / 100);
     return value % 2 === 0 ? value : Math.round(value) - 1;
 };
+
+global.TFC_EQUIPMENT_METALS = /** @type {const} */ ([
+    "copper",
+    "bismuth_bronze",
+    "bronze",
+    "black_bronze",
+    "wrought_iron",
+    "steel",
+    "black_steel",
+    "red_steel",
+    "blue_steel"
+]);

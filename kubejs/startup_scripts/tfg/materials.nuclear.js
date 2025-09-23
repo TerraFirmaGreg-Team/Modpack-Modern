@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerTFGNuclearMaterials = (event) => {
 
@@ -31,21 +32,18 @@ const registerTFGNuclearMaterials = (event) => {
     event.create('radioactive_steam')
         .gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(3730))
         .components('2x hydrogen', '1x oxygen')
-        .formula("H20(?)")
-        .flags(
-            GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .formula('H2O(?)')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('radioactive_waste')
         .gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(3730))
         .formula("(?)")
-        .flags(
-            GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('irradiated_steam')
         .gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(4250))
         .formula("(?)")
-        .flags(
-            GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('tfg:heavy_water')
         .liquid(new GTFluidBuilder().temperature(236))
@@ -71,7 +69,7 @@ const registerTFGNuclearMaterials = (event) => {
     event.create('nuclear_waste')
         .liquid(new GTFluidBuilder().customStill().temperature(3850))
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-        .formula('(ThU(?)')
+        .formula('ThU(?)')
 
     event.create('dirty_hexafluorosilicic_acid')
         .liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))

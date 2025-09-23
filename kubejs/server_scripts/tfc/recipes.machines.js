@@ -406,16 +406,18 @@ function registerTFCMachineRecipes(event) {
 			.EUt(2)
 
 		event.custom({
-			type: 'vintageimprovements:turning',
+			type: 'vintageimprovements:polishing',
 			ingredients: [{ item: `tfc:wood/log/${wood}` }],
 			results: [{ item: `tfc:wood/stripped_log/${wood}` }],
+			speed_limits: 0,
 			processingTime: 50
 		}).id(`tfg:vi/lathe/stripping_${wood}_log`)
 
 		event.custom({
-			type: 'vintageimprovements:turning',
+			type: 'vintageimprovements:polishing',
 			ingredients: [{ item: `tfc:wood/wood/${wood}` }],
 			results: [{ item: `tfc:wood/stripped_wood/${wood}` }],
+			speed_limits: 0,
 			processingTime: 50
 		}).id(`tfg:vi/lathe/stripping_${wood}_wood`)
 	})

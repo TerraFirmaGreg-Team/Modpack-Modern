@@ -21,7 +21,7 @@
 		[
 			"tfc:erosion"
 		],
-		[],
+		"#tfg:mars_craters",
 		[
 			"tfg:mars/terrain/red_quicksand"
 		],
@@ -37,7 +37,7 @@
 			"tfg:mars/surface/large_skull_and_bones"
 		],
 		[
-
+			"tfg:mars/surface/selagine"
 		],
 		"#tfg:mars_top_layer_modification"
 	],
@@ -53,6 +53,10 @@
 			"charge": 0.7
 		},
 		"species:quake": {
+			"energy_budget": 0.2,
+			"charge": 0.7
+		},
+		"ad_astra:martian_raptor": {
 			"energy_budget": 0.2,
 			"charge": 0.7
 		}

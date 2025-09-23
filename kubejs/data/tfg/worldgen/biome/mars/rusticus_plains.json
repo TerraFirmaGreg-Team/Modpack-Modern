@@ -22,7 +22,7 @@
 		[
 			"tfc:erosion"
 		],
-		[],
+		"#tfg:mars_craters",
 		[
 			"tfg:mars/terrain/clay_disc",
 			"tfg:mars/terrain/peat_disc",
@@ -45,6 +45,7 @@
 		"#tfg:mars_top_layer_modification"
 	],
 	"has_precipitation": false,
+	"creature_spawn_probability": 0.2,
 	"spawn_costs": {
 		"endermanoverhaul:crimson_forest_enderman": {
 			"energy_budget": 0.05,
@@ -69,6 +70,10 @@
 		"species:quake": {
 			"energy_budget": 0.2,
 			"charge": 0.7
+		},
+		"ad_astra:martian_raptor": {
+			"energy_budget": 0.2,
+			"charge": 0.7
 		}
 	},
 	"spawners": {
@@ -77,57 +82,57 @@
 		"creature": [
 			{
 				"type": "tfg:sniffer",
-				"maxCount": 3,
-				"minCount": 2,
+				"maxCount": 4,
+				"minCount": 3,
 				"weight": 100
 			},
 			{
 				"type": "tfg:wraptor",
 				"maxCount": 4,
-				"minCount": 2,
-				"weight": 100
+				"minCount": 3,
+				"weight": 50
 			},
 			{
 				"type": "species:goober",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 30
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 40
 			},
 			{
 				"type": "wan_ancient_beasts:walker",
 				"maxCount": 3,
-				"minCount": 1,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
 				"type": "wan_ancient_beasts:crusher",
 				"maxCount": 5,
-				"minCount": 3,
+				"minCount": 4,
 				"weight": 100
 			},
 			{
 				"type": "wan_ancient_beasts:glider",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 20
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 40
 			},
 			{
 				"type": "wan_ancient_beasts:soarer",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
-				"weight": 5
+				"weight": 10
 			},
 			{
 				"type": "tfg:glacian_ram",
 				"maxCount": 5,
-				"minCount": 3,
+				"minCount": 4,
 				"weight": 100
 			},
 			{
 				"type": "wan_ancient_beasts:eater",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
-				"weight": 10
+				"weight": 15
 			}
 		],
 		"misc": [],

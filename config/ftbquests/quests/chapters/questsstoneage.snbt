@@ -140,10 +140,10 @@
 						Count: 1
 						id: "gtceu:stone_hammer"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 1
 								MaxDamage: 47
 								ToolSpeed: 5.2f
@@ -159,10 +159,10 @@
 						Count: 1
 						id: "gtceu:stone_shovel"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 1
 								MaxDamage: 47
 								ToolSpeed: 5.2f
@@ -178,13 +178,13 @@
 						Count: 1
 						id: "gtceu:stone_axe"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
 								DisableShields: 1b
 								TreeFelling: 1b
 							}
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 1
 								MaxDamage: 47
 								ToolSpeed: 3.2f
@@ -200,10 +200,10 @@
 						Count: 1
 						id: "gtceu:stone_hoe"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 47
 							}
 							HideFlags: 2
@@ -217,12 +217,12 @@
 						Count: 1
 						id: "gtceu:stone_knife"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
 								AttackDamage: 1.0f
 								AttackSpeed: 3.0f
-								Damage: 0
 								MaxDamage: 47
 							}
 							HideFlags: 2
@@ -314,12 +314,12 @@
 				}
 				id: "gtceu:copper_saw"
 				tag: {
+					Damage: 0
 					DisallowContainerItem: 0b
 					GT.Behaviours: {
 						HarvestIce: 1b
 					}
 					GT.Tool: {
-						Damage: 0
 						MaxDamage: 791
 					}
 					HideFlags: 2
@@ -762,9 +762,8 @@
 						Count: 1
 						id: "gtceu:stone_hammer"
 						tag: {
-							GT.Tool: {
-								Damage: 0
-							}
+							Damage: 0
+							GT.Tool: { }
 						}
 					}
 					id: "0425FDD03AEC4F0D"
@@ -807,12 +806,12 @@
 						Count: 1
 						id: "gtceu:stone_knife"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
 								AttackDamage: 1.0f
 								AttackSpeed: 3.0f
-								Damage: 0
 								MaxDamage: 47
 							}
 							HideFlags: 2
@@ -826,13 +825,13 @@
 						Count: 1
 						id: "gtceu:stone_axe"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
 								DisableShields: 1b
 								TreeFelling: 1b
 							}
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 1
 								MaxDamage: 47
 								ToolSpeed: 3.2f
@@ -1293,12 +1292,12 @@
 				}
 				id: "gtceu:copper_pickaxe"
 				tag: {
+					Damage: 0
 					DisallowContainerItem: 0b
 					GT.Behaviours: {
 						TorchPlacing: 1b
 					}
 					GT.Tool: {
-						Damage: 0
 						HarvestLevel: 2
 						MaxDamage: 791
 						ToolSpeed: 6.0f

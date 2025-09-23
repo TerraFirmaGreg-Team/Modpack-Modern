@@ -210,6 +210,22 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('tfc_textile:panther_pants'),
 			Item.of('tfc_textile:panther_boots')])
 
+	// berserker - guy with celtic blue face paint
+	event.addEntityLootModifier('primitive_creatures:iloger_10')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addWeightedLoot([
+			LootEntry.of('gtceu:cobalt_brass_sword').damage([0.85, 1]),
+			LootEntry.of('sns:burlap_sack'),
+			LootEntry.of('sns:seed_pouch'),
+			LootEntry.of('sns:ore_sack')])
+	event.addEntityLootModifier('primitive_creatures:iloger_10')
+		.randomChance(CLOTHING_DROP_RATE)
+		.addWeightedLoot([
+			Item.of('tfc_textile:sabertooth_hat'),
+			Item.of('tfc_textile:sabertooth_shirt'),
+			Item.of('tfc_textile:sabertooth_pants'),
+			Item.of('tfc_textile:sabertooth_boots')])
+
 	// mistah beeeaaaasssstt
 	event.addEntityLootModifier('primitive_creatures:beast')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)

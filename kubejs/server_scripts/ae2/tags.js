@@ -43,6 +43,8 @@ const registerAE2ItemTags = (event) => {
 
 const registerAE2BlockTags = (event) => {
     
+	registerAe2FacadeWhitelistTags(event)
+    
     global.AE2_DISABLED_ITEMS.forEach(item => {
         event.removeAllTagsFrom(item)
     })

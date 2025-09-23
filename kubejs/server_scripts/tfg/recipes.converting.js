@@ -115,4 +115,7 @@ function registerTFGConvertingRecipes(event) {
 	event.shapeless('tfc:ore/rich_sphalerite', 'gtceu:rich_raw_sphalerite')
 	event.shapeless('tfc:ore/normal_sphalerite', 'gtceu:raw_sphalerite')
 	event.shapeless('tfc:ore/poor_sphalerite', 'gtceu:poor_raw_sphalerite')
+
+
+	event.shapeless('vintageimprovements:belt_grinder', 'vintageimprovements:lathe')
 }
