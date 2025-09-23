@@ -3,7 +3,7 @@
 const $Vec2 = Java.loadClass("net.minecraft.world.phys.Vec2")
 
 ItemEvents.firstLeftClicked('gtceu:long_copper_rod', event => {
-    if (event.getItem().getHoverName().getString() !== "zippity") return;
+    //if (event.getItem().getHoverName().getString() !== "zippity") return;
 
     let player = event.player;
     player.sendSystemMessage(event.getItem().getHoverName());
@@ -25,7 +25,7 @@ ItemEvents.firstLeftClicked('gtceu:long_copper_rod', event => {
 
 // scale wind up (down) on (crouch +) left click
 ItemEvents.firstLeftClicked('gtceu:long_tin_rod', event => {
-    if (event.getItem().getHoverName().getString() !== "zippity") return;
+    //if (event.getItem().getHoverName().getString() !== "zippity") return;
     const player = event.getPlayer()
 
     const climateManager = global.getMarsClimateController();
@@ -55,7 +55,7 @@ ItemEvents.firstLeftClicked('gtceu:long_tin_rod', event => {
 });
 
 ItemEvents.firstRightClicked('gtceu:long_tin_rod', event => {
-    if (event.getItem().getHoverName().getString() !== "zippity") return;
+    //if (event.getItem().getHoverName().getString() !== "zippity") return;
     const player = event.getPlayer();
 
     const climateManager = global.getMarsClimateController();

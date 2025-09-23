@@ -467,6 +467,8 @@ function registerTFCBlockTags(event) {
         event.add("minecraft:stone_buttons", `tfc:rock/button/${stone}`);
         event.add("minecraft:buttons", `tfc:rock/button/${stone}`);
     });
+
+    event.add('tfc:groundcover/feather', 'tfc:can_be_snow_piled')
 }
 
 /** @param {TagEvent.Fluid} event */
