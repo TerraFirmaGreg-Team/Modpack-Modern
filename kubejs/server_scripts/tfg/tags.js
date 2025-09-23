@@ -605,9 +605,9 @@ const registerTFGItemTags = (event) => {
 			event.add(`tfg:rock_${shape}`.replace(/ss/g, 's'), `ad_astra:${stone}_cobblestone_${shape}`)
 		})
 
-		event.add('forge:smooth_stone', `ad_astra:polished_:${stone}_stone`)
+		event.add('forge:smooth_stone', `ad_astra:polished_${stone}_stone`)
 		event.add(`tfc:${getStoneType(stone)}_items`, `ad_astra:polished_${stone}_stone`)
-		event.add('tfc:rock/smooth', `ad_astra:polished_:${stone}_stone`)
+		event.add('tfc:rock/smooth', `ad_astra:polished_${stone}_stone`)
 
 		SHAPES_AA.forEach(shape => {
 			event.add(`tfc:${getStoneType(stone)}_items`, `ad_astra:polished_${stone}_stone_${shape}`)
