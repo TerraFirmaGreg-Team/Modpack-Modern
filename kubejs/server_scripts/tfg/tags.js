@@ -1020,6 +1020,8 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfc:can_landslide', 'tfg:grass/sangnum_kaolin_mycelium')
 	event.add('minecraft:mushroom_grow_block', '#tfc:dirt')
 	event.add('minecraft:mushroom_grow_block', '#tfc:grass')
+	event.add('minecraft:mushroom_grow_block', '#forge:sand')
+	event.add('minecraft:mushroom_grow_block', '#forge:gravel')
 	event.add('minecraft:mineable/shovel', 'tfg:grass/mars_farmland')
 	event.add('tfc:bush_plantable_on', 'tfg:grass/mars_farmland')
 	event.add('tfc:grass_plantable_on', 'tfg:grass/mars_farmland')

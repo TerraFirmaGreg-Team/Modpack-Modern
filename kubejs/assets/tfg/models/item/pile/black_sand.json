@@ -1,6 +1,3 @@
 {
-	"parent": "minecraft:block/snow_height4",
-  "textures": {
-	"texture": "tfc:block/sand/black"
-  }
+	"parent": "tfc:block/sand/black"
 }
