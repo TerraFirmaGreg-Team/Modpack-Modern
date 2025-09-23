@@ -1,3 +1,6 @@
 {
-	"parent": "tfg:block/pile/mars_sand"
+  "parent": "minecraft:block/snow_height4",
+  "textures": {
+    "texture": "ad_astra:block/mars_sand"
+  }
 }

@@ -542,7 +542,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:player_head',
     'minecraft:command_block_minecart', 
     'minecraft:knowledge_book', 
-    'minecraft:bundle',
+    // 'minecraft:bundle',
     'minecraft:debug_stick', 
     'minecraft:spawner',
     'minecraft:pitcher_pod', 

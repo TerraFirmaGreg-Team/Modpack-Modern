@@ -30,6 +30,42 @@ function invLerp(x, y, a) {
 	return (a - x) / (y - x);
 }
 
+/**
+ * allows runtime control of wind vector; called every tick
+ * @returns {Object} singleton manager object
+ */
+console.debug("defining mars climate controller!")
+global.getMarsClimateController = function() {
+    if (!global._MARS_CLIMATE_CONTROLLER) {
+        console.info("Initializing MARS_CLIMATE_CONTROLLER...");
+        global._MARS_CLIMATE_CONTROLLER = {
+            windX: 0,
+            windZ: 0,
+            
+            getWind: function() {
+                return {x: this.windX, z: this.windZ};
+            },
+            
+            setWind: function(vector) {
+                const strength = Math.hypot(vector.x, vector.z);
+                // if (strength > 1.0) throw new RangeError("Vector length > 1");
+                this.windX = vector.x;
+                this.windZ = vector.z;
+            },
+            
+            createCallbackForBuilder: function(builder) {
+                var self = this;
+                return function() {
+                    const wind = self.getWind();
+                    return builder.vector(wind.x, wind.z);
+                };
+            }
+        };
+    }
+    return global._MARS_CLIMATE_CONTROLLER;
+};
+console.debug("finished defining mars climate controller!")
+
 
 /**
  * @param {number} averageTemp Output from calcAverageTemp
@@ -146,6 +182,7 @@ TFCEvents.registerClimateModel(event => {
 	})
 
 	event.register('tfg:mars_climate', builder => {
+		console.debug("registering mars climate!")
 
 		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
 			if (OxygenAPI.hasOxygen(level, pos.above())) {
@@ -173,6 +210,7 @@ TFCEvents.registerClimateModel(event => {
 
 		builder.setAirFog((level, pos, calendarTicks) => 0)
 		builder.setWaterFog((level, pos, calendarTicks) => 0.1)
-		builder.setWindVector((level, block, calendarTicks) => builder.vector(0.25, 0.1))
+		const controller = global.getMarsClimateController();
+		builder.setWindVector(controller.createCallbackForBuilder(builder));
 	})
 })

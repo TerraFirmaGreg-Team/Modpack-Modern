@@ -1,3 +1,6 @@
 {
-	"parent": "tfg:block/pile/red_sand"
+	"parent": "minecraft:block/snow_height4",
+  "textures": {
+	"texture": "tfc:block/sand/red"
+  }
 }
