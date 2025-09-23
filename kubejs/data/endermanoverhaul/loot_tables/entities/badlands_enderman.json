@@ -24,9 +24,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "endermanoverhaul:badlands_hood"
-				},
-				{
+					"name": "endermanoverhaul:badlands_hood",
 					"conditions": [
 						{
 							"condition": "minecraft:random_chance",
