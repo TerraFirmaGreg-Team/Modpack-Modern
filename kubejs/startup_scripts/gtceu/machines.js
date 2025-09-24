@@ -534,7 +534,7 @@ const registerGTCEuMachines = (event) => {
 	//#endregion
 
 	//#region Evaporation Tower
-
+/*
 	event.create('evaporation_tower', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('evaporation_tower')
@@ -561,7 +561,7 @@ const registerGTCEuMachines = (event) => {
 		.workableCasingModel(
 			'gtceu:block/casings/solid/machine_casing_stainless_evaporation',
 			'gtceu:block/multiblock/distillation_tower')
-
+	*/
 	//#endregion
 	
 	//#region Ore Line
