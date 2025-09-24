@@ -594,7 +594,7 @@ const registerCreateRecipes = (event) => {
 	event.shaped('8x create:sail_frame', [
 		'ADA',
 		'BCB',
-		'ABA'
+		'ADA'
 	], {
 		A: '#forge:screws/wood',
 		B: 'gtceu:treated_wood_rod',
