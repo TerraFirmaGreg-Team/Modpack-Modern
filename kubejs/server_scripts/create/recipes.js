@@ -592,13 +592,14 @@ const registerCreateRecipes = (event) => {
 	// Create sail creation using custom sail items.
 
 	event.shaped('8x create:sail_frame', [
-		'ABA',
+		'ADA',
 		'BCB',
 		'ABA'
 	], {
-		A: '#forge:bolts/wrought_iron',
+		A: '#forge:screws/wood',
 		B: 'gtceu:treated_wood_rod',
-		C: 'gtceu:treated_wood_frame'
+		C: 'gtceu:treated_wood_frame',
+		D: '#forge:rods/wrought_iron'
 	}).id('tfg:create/shaped/sail_frame')
 
 	event.shaped('8x create:white_sail', [
