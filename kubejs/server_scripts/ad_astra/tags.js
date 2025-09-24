@@ -131,6 +131,10 @@ const registerAdAstraItemTags = (event) => {
 	// these are log tags
 	event.remove('ad_astra:aeronos_caps', 'ad_astra:aeronos_cap')
 	event.remove('ad_astra:strophar_caps', 'ad_astra:strophar_cap')
+
+	event.add('tfc:makes_tannin', '#ad_astra:glacian_logs')
+	event.add('tfc:makes_tannin', '#tfc:crimson_logs')
+	event.add('tfc:makes_tannin', '#tfc:warped_logs')
 		
 	global.AD_ASTRA_WOOD.forEach(wood => {
 
