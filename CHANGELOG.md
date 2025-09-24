@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 ### Changes
-- Water wheels and windmills are now Greate tiered! Small water wheels are ULS, Large water wheels and windmills are LS @Pyritie
+- Water wheels and windmills are now Greate tiered! Small water wheels are ULS (32 SU max), Large water wheels and windmills are LS (128 SU max) @Pyritie
 - Windmill Sail Frames no longer generate SU, but are cheaper to craft @Pyritie
 ### Bug fixes
 - Soup can no longer kill you from overheating @BlueBoat29
