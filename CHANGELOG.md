@@ -2,7 +2,11 @@
 
 ## [Unreleased]
 ### Changes
+- Water wheels and windmills are now Greate tiered! Small water wheels are ULS, Large water wheels and windmills are LS @Pyritie
+- Windmill Sail Frames no longer generate SU, but are cheaper to craft @Pyritie
 ### Bug fixes
+- Soup can no longer kill you from overheating @BlueBoat29
+- Air Distributors now consume as much gas as they should, instead of significantly more (#1760) @Bumperdo09
 
 ## [0.10.16] - 23-09-2025
 ### Bug fixes
