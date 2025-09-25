@@ -21,22 +21,22 @@ function registerCreateFactoryLogisticsRecipes(event) {
 		.EUt(20)
 
 
-	event.shaped('create_factory_logistics:jar_packager', [
+	event.shaped('2x create_factory_logistics:jar_packager', [
 		'AAA',
 		'BCD',
 		'EFE'
 	], {
 		A: '#forge:rods/copper',
 		B: '#forge:springs/copper',
-		C: 'create:andesite_casing',
+		C: 'gtceu:ulv_machine_casing',
 		D: 'create:fluid_tank',
 		E: 'create:electron_tube',
 		F: '#tfg:metal_bars'
 	}).id('create_factory_logistics:shaped/jar_packager')
 
 	event.recipes.gtceu.assembler('create_factory_logistics:jar_packager')
-		.itemInputs('create:andesite_casing', '4x #forge:rods/copper', '#forge:springs/copper', 'create:fluid_tank', '#gtceu:circuits/ulv')
-		.itemOutputs('create_factory_logistics:jar_packager')
+		.itemInputs('gtceu:ulv_machine_casing', '4x #forge:rods/copper', '#forge:springs/copper', 'create:fluid_tank', '#gtceu:circuits/ulv')
+		.itemOutputs('2x create_factory_logistics:jar_packager')
 		.duration(200)
 		.EUt(20)
 		

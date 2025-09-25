@@ -1719,22 +1719,22 @@ const registerCreateRecipes = (event) => {
 		.duration(200)
 		.EUt(7)
 
-	event.shaped('create:packager', [
+	event.shaped('2x create:packager', [
 		'AAA',
 		'BCD',
 		'EFE'
 	], {
 		A: '#forge:rods/wrought_iron',
 		B: '#forge:springs/wrought_iron',
-		C: 'create:andesite_casing',
+		C: 'gtceu:ulv_machine_casing',
 		D: 'create:bound_cardboard_block',
 		E: 'create:electron_tube',
 		F: '#tfg:metal_bars'
 	}).id('tfg:create/shaped/packager')
 
 	event.recipes.gtceu.assembler('tfg:create/packager')
-		.itemInputs('create:andesite_casing', '4x #forge:rods/wrought_iron', '#forge:springs/wrought_iron', '4x create:cardboard', '#gtceu:circuits/ulv')
-		.itemOutputs('create:packager')
+		.itemInputs('gtceu:ulv_machine_casing', '4x #forge:rods/wrought_iron', '#forge:springs/wrought_iron', '4x create:cardboard', '#gtceu:circuits/ulv')
+		.itemOutputs('2x create:packager')
 		.duration(200)
 		.EUt(20)
 
