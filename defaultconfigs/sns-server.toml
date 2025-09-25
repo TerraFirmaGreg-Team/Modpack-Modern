@@ -197,7 +197,7 @@
 		#The amount of 'steps' taken before one point of durability is lost
 		#Steps are defined as being any change in position while grounded between ticks (IE over 1 second 20 'steps' occur)
 		#Range: > 0
-		stepsPerDamage = 2500
+		stepsPerDamage = 3000
 
 	["Boot config"."Red Steel Toe Boots"]
 		#The movement speed bonus these boots provide
