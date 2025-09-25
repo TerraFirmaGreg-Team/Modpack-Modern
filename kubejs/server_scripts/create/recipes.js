@@ -1554,20 +1554,23 @@ const registerCreateRecipes = (event) => {
 	//#region Blaze burner
 
 	event.shaped('create:blaze_burner', [
-		'B B',
+		'EFE',
 		'BAB',
 		'DCD'
 	], {
-		A: '#forge:storage_blocks/coke',
-		B: 'tfc:metal/bars/black_steel',
-		C: '#forge:plates/black_steel',
-		D: '#forge:plates/steel'
+		A: '#forge:gems/coke',
+		B: 'tfc:metal/bars/steel',
+		C: '#forge:double_plates/steel',
+		D: '#forge:plates/steel',
+		E: '#forge:rods/steel',
+		F: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/blaze_burner')
 
 	event.recipes.gtceu.assembler('create:blaze_burner')
-		.itemInputs('#forge:storage_blocks/coke', '4x tfc:metal/bars/black_steel', '#forge:plates/black_steel')
+		.itemInputs('#forge:gems/coke', '2x tfc:metal/bars/steel', '2x #forge:rods/steel', '#forge:double_plates/steel', '2x #forge:plates/steel')
 		.itemOutputs('create:blaze_burner')
 		.duration(50)
+		.circuit(2)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	//#endregion
