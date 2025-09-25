@@ -1,7 +1,7 @@
 // priority: 0
 "use strict";
 
-function registeSNSItemTags(event) {
+function registerSNSItemTags(event) {
 
 	global.SNS_DISABLED_ITEMS.forEach(item => {
 		event.removeAllTagsFrom(item)
@@ -22,7 +22,7 @@ function registeSNSItemTags(event) {
 	
 	event.add('sns:allowed_in_ore_sack', '#tfc:sedimentary_rock')
 	event.add('sns:allowed_in_ore_sack', '#tfc:metamorphic_rock')
-	event.add('sns:allowed_in_ore_sack', '#tfg:igneous_intrusive_rock')
+	event.add('sns:allowed_in_ore_sack', '#tfc:igneous_intrusive_rock')
 	event.add('sns:allowed_in_ore_sack', '#tfc:igneous_extrusive_rock')
 	
 	event.add('sns:prevented_in_item_containers', '#tfc:fired_vessels')
