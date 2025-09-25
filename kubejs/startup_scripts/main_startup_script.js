@@ -27,6 +27,7 @@ ItemEvents.modification(event => {
 	registerFirmalifeItemModifications(event)
 	registerGTCEuItemModifications(event)
 	registerMinecraftItemModifications(event)
+    registerSNSItemModifications(event)
 })
 
 StartupEvents.registry('fluid', event => {

@@ -45,7 +45,7 @@ ServerEvents.tags('item', event => {
 	registerRnrItemTags(event)
 	registerSophisticatedBackpacksItemTags(event)
 	registerSoulboundItemTags(event)
-	registeSNSItemTags(event)
+	registerSNSItemTags(event)
 	registerSpeciesItemTags(event)
 	registerTACZItemTags(event)
 	registerTFCAmbientalItemTags(event)
