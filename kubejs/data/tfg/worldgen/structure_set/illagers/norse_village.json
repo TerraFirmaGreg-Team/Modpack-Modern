@@ -10,36 +10,15 @@
 		}
 	],
 	"placement": {
-		"type": "lithostitched:condition",
-		"condition": {
-			"type": "lithostitched:all_of",
-			"conditions": [
-				{
-					"type": "tfc:climate",
-					"salt": 26256356324,
-					"spacing": 40,
-					"separation": 25,
-					"climate": {
-						"min_temperature": -12,
-						"max_temperature": 5,
-						"min_rainfall": 200,
-						"max_forest": "edge"
-					}
-				},
-				{
-					"type": "lithostitched:grid",
-					"radius": 105,
-					"distance_between_points": 15,
-					"condition": {
-						"type": "lithostitched:not",
-						"condition": {
-							"type": "lithostitched:in_biome",
-							"biomes": "#tfg:has_structure/illages"
-						}
-					},
-					"allowed_count": 0
-				}
-			]
+		"type": "tfc:climate",
+		"salt": 26256356324,
+		"spacing": 40,
+		"separation": 25,
+		"climate": {
+			"min_temperature": -12,
+			"max_temperature": 5,
+			"min_rainfall": 200,
+			"max_forest": "edge"
 		}
 	}
 }
