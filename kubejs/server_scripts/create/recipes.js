@@ -594,7 +594,7 @@ const registerCreateRecipes = (event) => {
 	event.shaped('8x create:sail_frame', [
 		'ADA',
 		'BCB',
-		'ADA'
+		'ABA'
 	], {
 		A: '#forge:screws/wood',
 		B: 'gtceu:treated_wood_rod',
@@ -1515,12 +1515,13 @@ const registerCreateRecipes = (event) => {
 	}).id('create:shaped/water_wheel')
 
 	event.shaped('create:large_water_wheel', [
-		'AAA',
-		'ABA',
-		'AAA'
+		'ACA',
+		'CBC',
+		'ACA'
 	], {
 		A: 'gtceu:treated_wood_planks',
-		B: 'create:water_wheel'
+		B: 'create:water_wheel',
+		C: '#forge:rods/steel'
 	}).id('create:shaped/large_water_wheel')
 
 	// #endregion
