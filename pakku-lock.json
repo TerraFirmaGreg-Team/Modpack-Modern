@@ -8593,6 +8593,67 @@
             ]
         },
         {
+            "pakku_id": "bxyAJNntv1MTkwyz",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "lithostitched",
+                "modrinth": "lithostitched"
+            },
+            "name": {
+                "curseforge": "Lithostitched",
+                "modrinth": "Lithostitched"
+            },
+            "id": {
+                "curseforge": "936015",
+                "modrinth": "XaDC71GB"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "lithostitched-forge-1.20.1-1.4.11.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6742/615/lithostitched-forge-1.20.1-1.4.11.jar",
+                    "id": "6742615",
+                    "parent_id": "936015",
+                    "hashes": {
+                        "sha1": "d1a755de84ee5d8910ff1e65e815473056e93ece",
+                        "md5": "3c596bbc1b5f769f22be751e9c21a6c8"
+                    },
+                    "required_dependencies": [],
+                    "size": 476347,
+                    "date_published": "2025-07-07T23:21:45.877Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "lithostitched-forge-1.20.1-1.4.11.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/XaDC71GB/versions/srPoHKt8/lithostitched-forge-1.20.1-1.4.11.jar",
+                    "id": "srPoHKt8",
+                    "parent_id": "XaDC71GB",
+                    "hashes": {
+                        "sha512": "4e50a0fb4f054b429803cb20fc0820011b12098ebca1f17b1b0634cab832369e08446901d5e97fd35b01e99cf6066d20a16cc673c5b7bc8196568b3db67128c2",
+                        "sha1": "d1a755de84ee5d8910ff1e65e815473056e93ece"
+                    },
+                    "required_dependencies": [],
+                    "size": 476347,
+                    "date_published": "2025-07-07T23:21:46.041450Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "OcjL6nfubOOv2SoV",
             "type": "MOD",
             "side": "SERVER",

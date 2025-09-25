@@ -7,9 +7,9 @@
 	"step": "surface_structures",
 	"terrain_adaptation": "beard_thin",
 	"start_height": {
-		"absolute": 0
+		"absolute": -1
 	},
-	"project_start_to_heightmap": "WORLD_SURFACE_WG",
+	"project_start_to_heightmap": "MOTION_BLOCKING",
 	"use_expansion_hack": false,
 	"adapt_noise": true,
 	"spawn_overrides": {

@@ -10,10 +10,10 @@
 		}
 	],
 	"placement": {
+		"type": "tfc:climate",
 		"salt": 26256356324,
 		"spacing": 40,
 		"separation": 25,
-		"type": "tfc:climate",
 		"climate": {
 			"min_temperature": -12,
 			"max_temperature": 5,

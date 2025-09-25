@@ -5,28 +5,40 @@
 		{
 			"weight": 100,
 			"element": {
-				"location": "tfg:norse/baseline/norse_longhouse_base",
-				"processors": "tfg:illagers/norse_structures",
-				"projection": "rigid",
-				"element_type": "minecraft:single_pool_element"
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:norse/baseline/norse_longhouse_base",
+					"processors": "tfg:illagers/norse_structures",
+					"projection": "rigid"
+				},
+				"limit": 2
 			}
 		},
 		{
 			"weight": 100,
 			"element": {
-				"location": "tfg:norse/baseline/norse_smithy_base",
-				"processors": "tfg:illagers/norse_structures",
-				"projection": "rigid",
-				"element_type": "minecraft:single_pool_element"
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:norse/baseline/norse_smithy_base",
+					"processors": "tfg:illagers/norse_structures",
+					"projection": "rigid"
+				},
+				"limit": 1
 			}
 		},
 		{
 			"weight": 40,
 			"element": {
-				"location": "tfg:norse/baseline/norse_burial_base",
-				"processors": "tfg:illagers/norse_structures",
-				"projection": "terrain_matching",
-				"element_type": "minecraft:single_pool_element"
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:norse/baseline/norse_burial_base",
+					"processors": "tfg:illagers/norse_structures",
+					"projection": "terrain_matching"
+				},
+				"limit": 2
 			}
 		},
 		{
