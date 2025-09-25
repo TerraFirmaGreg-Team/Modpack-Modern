@@ -1,7 +1,7 @@
 // priority: 0
 "use strict";
 
-function registeSNSItemTags(event) {
+function registerSNSItemTags(event) {
 
 	global.SNS_DISABLED_ITEMS.forEach(item => {
 		event.removeAllTagsFrom(item)
