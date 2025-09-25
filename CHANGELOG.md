@@ -2,11 +2,17 @@
 
 ## [Unreleased]
 ### Changes
-- Water wheels and windmills are now Greate tiered! Small water wheels are ULS (32 SU max), Large water wheels and windmills are LS (128 SU max) @Pyritie
+- Water wheels and windmills are now Greate tiered! Small water wheels are ULS (32 SU max), large water wheels and windmills are LS (128 SU max) @Pyritie
 - Windmill Sail Frames no longer generate SU, but are cheaper to craft @Pyritie
+- Blaze burners now only need regular steel to craft (#1889) @TreyR9
+- Significantly increased durability of hiking boots, and now red steel ones have even more durability while blue steel ones increase your speed a little more (#1894) @Nashy1232
 ### Bug fixes
 - Soup can no longer kill you from overheating @BlueBoat29
 - Air Distributors now consume as much gas as they should, instead of significantly more (#1760) @Bumperdo09
+- Fixed not being able to put igneous intrusive stones into the ore sack (#1893) @Nashy1232
+- Fixed food processor jam recipes not accepting honey (#1896) @Xaligal
+### Translation updates
+- Chinese (simplified) @jmecn
 
 ## [0.10.16] - 23-09-2025
 ### Bug fixes
