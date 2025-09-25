@@ -31,14 +31,15 @@
 		{
 			"weight": 40,
 			"element": {
-				"element_type": "lithostitched:limited",
+				"element_type": "lithostitched:delegating",
 				"delegate": {
 					"element_type": "minecraft:single_pool_element",
 					"location": "tfg:norse/baseline/norse_burial_base",
 					"processors": "tfg:illagers/norse_structures",
 					"projection": "terrain_matching"
 				},
-				"limit": 2
+				"max_count": 2,
+				"override_terrain_adaptation": "bury"
 			}
 		},
 		{

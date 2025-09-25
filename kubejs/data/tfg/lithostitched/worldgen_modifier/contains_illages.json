@@ -7,11 +7,8 @@
 	"spawn_condition": {
 		"type": "lithostitched:grid",
 		"condition": {
-			"type": "lithostitched:not",
-			"condition": {
-				"type": "lithostitched:in_biome",
-				"biomes": "#tfg:has_structure/illages"
-			}
+			"type": "lithostitched:in_biome",
+			"biomes": "#tfg:never_has_structure/illages"
 		},
 		"radius": 105,
 		"distance_between_points": 15,

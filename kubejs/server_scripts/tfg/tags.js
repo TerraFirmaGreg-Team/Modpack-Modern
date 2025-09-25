@@ -1124,6 +1124,10 @@ const registerTFGBiomeTags = (event) => {
 	event.add('tfg:has_structure/illages', 'tfc:plateau')
 	event.add('tfg:has_structure/illages', 'tfc:old_mountains')
 
+	event.add('tfg:never_has_structure/illages', '#tfc:is_lake')
+	event.add('tfg:never_has_structure/illages', '#tfc:is_ocean')
+	event.add('tfg:never_has_structure/illages', '#tfc:is_river')
+
 	// #endregion
 
 	// #region Nether biomes
