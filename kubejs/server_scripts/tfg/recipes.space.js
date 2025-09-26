@@ -274,6 +274,14 @@ function registerTFGSpaceRecipes(event) {
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	event.recipes.gtceu.assembler('tfg:railgun_ammo_mars')
+		.itemInputs('#forge:double_plates/lead', '2x #forge:rods/ostrum', '2x #forge:fine_wires/silver')
+		.inputFluids('gtceu:rocket_fuel 250')
+		.itemOutputs('8x tfg:railgun_ammo_shell')
+		.dimension('ad_astra:mars')
+		.duration(20 * 10)
+		.EUt(GTValues.VA[GTValues.MV])
+
 	event.shaped('tfg:railgun_ammo_loader', [
 		'RMR',
 		'MBM',
