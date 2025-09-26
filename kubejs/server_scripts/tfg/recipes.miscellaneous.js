@@ -163,7 +163,6 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV]);
 
 	//Airship Balloon
-	// TODO: Add the needle back here once #963 is fixed
 	event.shaped('tfg:airship_balloon', [
 		'ABA',
 		'BAB',
@@ -1078,8 +1077,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.IV])
 	event.recipes.gtceu.mixer('tfg:aes_polyurethane_electric_only')
-		.itemInputs('tfg:aes_compressed_wool', //'2x #tfg:mineral_rich_wool' REVERT UNTIL MARS,
-		'#forge:dusts/methylene_diphenyl_diisocyanate')
+		.itemInputs('2x #tfg:mineral_rich_wool', '#forge:dusts/methylene_diphenyl_diisocyanate')
 		.inputFluids(Fluid.of('gtceu:diethylenetriamine', 250), Fluid.of('gtceu:acetone', 1000))
 		.itemOutputs('tfg:aes_polyurethane')
 		.duration(80)

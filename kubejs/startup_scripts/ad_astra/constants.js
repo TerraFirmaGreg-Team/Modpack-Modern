@@ -30,7 +30,6 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:oil_bucket',
 	'ad_astra:fuel_bucket',
 	'ad_astra:cryo_fuel_bucket',
-	'ad_astra_giselle_addon:gravity_normalizer',
 	'ad_astra:cable_duct',
 	'ad_astra:fluid_pipe_duct',
 	'ad_astra:iron_plate',
@@ -68,13 +67,6 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:glacio_copper_ore',
 	'ad_astra:glacio_iron_ore',
 	'ad_astra:glacio_lapis_ore',
-
-	// Disabled until EV planet
-
-	'ad_astra:tier_2_rocket',
-	'ad_astra:desh_engine',
-	'tfg:rocket_fin_t2',
-	'tfg:rocket_cone_t2',
 
 	// Disabled until IV planets
 

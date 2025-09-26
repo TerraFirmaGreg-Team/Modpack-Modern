@@ -6,8 +6,6 @@
  */
 function registerTFGSpaceRecipes(event) {
 
-	// TODO: Change these to work on any dim as long as they're in an oxygenated area?
-
 	const allowedCombustibleDims = [
 		{
 			dimension: "minecraft:the_nether",

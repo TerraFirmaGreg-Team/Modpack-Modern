@@ -1335,29 +1335,28 @@ const registerGTCEURecipes = (event) => {
 	event.shapeless(Item.of('gtceu:matchbox', '{usesLeft:8}'), ['minecraft:paper', '8x gtceu:matches'])
 		.id('tfg:shapeless/matchbox')
 
-	// TODO: Nano CPU use Nuclear Tritiated Water COMMENTED UNTIL MARS IS OUT
-	/*
-		event.remove({ id: 'gtceu:chemical_reactor/nano_cpu_wafer' })
-		event.remove({ id: 'gtceu:large_chemical_reactor/nano_cpu_wafer' })
+
+	event.remove({ id: 'gtceu:chemical_reactor/nano_cpu_wafer' })
+	event.remove({ id: 'gtceu:large_chemical_reactor/nano_cpu_wafer' })
 		
-		event.recipes.gtceu.chemical_reactor('tfg:nano_cpu_wafer')
-			.inputFluids(Fluid.of('gtceu:tritiated_water', 576))
-			.itemInputs('gtceu:cpu_wafer', '16x gtceu:carbon_fibers')
-			.itemOutputs('gtceu:nano_cpu_wafer')
-			.duration(20*60)
-			.EUt(GTValues.VA[GTValues.EV])
-			.cleanroom(CleanroomType.CLEANROOM)
+	event.recipes.gtceu.chemical_reactor('tfg:nano_cpu_wafer')
+		.inputFluids(Fluid.of('gtceu:tritiated_water', 576))
+		.itemInputs('gtceu:cpu_wafer', '16x gtceu:carbon_fibers')
+		.itemOutputs('gtceu:nano_cpu_wafer')
+		.duration(20*60)
+		.EUt(GTValues.VA[GTValues.EV])
+		.cleanroom(CleanroomType.CLEANROOM)
 	
-		// Remove Plutonium from centrifuging Uranium dust
+	// Remove Plutonium from centrifuging Uranium dust
 	
-		event.remove({ id: 'gtceu:centrifuge/uranium_238_separation' })
+	event.remove({ id: 'gtceu:centrifuge/uranium_238_separation' })
 	
-		event.recipes.gtceu.centrifuge('tfg:uranium_238_separation')
-			.itemInputs('#forge:dusts/uranium')
-			.chancedOutput('#forge:tiny_dusts/uranium_235', 2300, 0)
-			.duration(20*40)
-			.EUt(GTValues.VA[GTValues.HV])
-	*/
+	event.recipes.gtceu.centrifuge('tfg:uranium_238_separation')
+		.itemInputs('#forge:dusts/uranium')
+		.chancedOutput('#forge:tiny_dusts/uranium_235', 2300, 0)
+		.duration(20*40)
+		.EUt(GTValues.VA[GTValues.HV])
+	
 	// Change the Large Centrifugal Unit to be craftable at EV
 
 	event.remove({ id: 'gtceu:shaped/large_centrifuge' })
