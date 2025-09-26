@@ -1,0 +1,52 @@
+{
+  "parent": "minecraft:block/orientable",
+	"textures": {
+		"particle": "gtceu:block/casings/steam/bricked_steel/side",
+		"side": "gtceu:block/casings/steam/bricked_steel/side",
+		"top": "gtceu:block/casings/steam/bricked_steel/top",
+		"bottom": "gtceu:block/casings/steam/bricked_steel/bottom",
+		"overlay": "gtceu:block/generators/boiler/coal/overlay_front",
+    "vent": "gtceu:block/overlay/machine/overlay_steam_vent"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "overlay",
+			"from": [0, 0, -0.01],
+			"to": [16, 16, -0.01],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 16.1]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#overlay"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#overlay"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [0, 16.01, 0],
+			"to": [16, 16.01, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 14, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"east": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"south": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"west": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#vent"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#vent"}
+			}
+		}
+	]
+}
