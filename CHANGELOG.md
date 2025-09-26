@@ -11,6 +11,9 @@
 - Air Distributors now consume as much gas as they should, instead of significantly more (#1760) @Bumperdo09
 - Fixed not being able to put igneous intrusive stones into the ore sack (#1893) @Nashy1232
 - Fixed food processor jam recipes not accepting honey (#1896) @Xaligal
+- Fixed stainless steel needles being consumed (#1900) @Redeix
+- Updated boiler minecart models and textures (#1900) @Redeix
+- Fixed flux dupe using filled sea shells (#1903) @Redeix
 ### Translation updates
 - Chinese (simplified) @jmecn
 

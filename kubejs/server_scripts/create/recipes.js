@@ -1712,31 +1712,25 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/cardboard_from_glue')
 
 	event.recipes.gtceu.assembler('tfg:create/cardboard_from_glue')
-		.itemInputs('5x minecraft:paper')
-		.inputFluids(Fluid.of('gtceu:glue', 100))
+		.itemInputs('4x minecraft:paper')
+		.inputFluids(Fluid.of('gtceu:glue', 50))
 		.circuit(5)
 		.itemOutputs('2x create:cardboard')
 		.duration(200)
 		.EUt(7)
 
-	event.shaped('create:packager', [
+	event.shaped('2x create:packager', [
 		'AAA',
 		'BCD',
 		'EFE'
 	], {
 		A: '#forge:rods/wrought_iron',
 		B: '#forge:springs/wrought_iron',
-		C: 'gtceu:ulv_machine_hull',
+		C: 'gtceu:ulv_machine_casing',
 		D: 'create:bound_cardboard_block',
 		E: 'create:electron_tube',
 		F: '#tfg:metal_bars'
 	}).id('tfg:create/shaped/packager')
-
-	event.recipes.gtceu.assembler('tfg:create/packager')
-		.itemInputs('gtceu:ulv_machine_hull', '4x #forge:rods/wrought_iron', '#forge:springs/wrought_iron', '4x create:cardboard', '#forge:string', '#gtceu:circuits/ulv')
-		.itemOutputs('create:packager')
-		.duration(200)
-		.EUt(20)
 
 	event.shaped('create:item_hatch', [
 		'A',
