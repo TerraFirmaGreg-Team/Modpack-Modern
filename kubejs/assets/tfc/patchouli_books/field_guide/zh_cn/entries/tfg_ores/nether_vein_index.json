@@ -145,7 +145,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 50%$(br)$(thing)来源$(): 铀, 钍, 铅$(br)$(thing)化学式$(): (UO₂)₃ThPb$(br)$(thing)危害$(): $(c)$(t:需要全身防护)致癌 (任何接触)$(/t)$()",
+      "text": "$(thing)百分比$(): 62%$(br)$(thing)来源$(): 铀, 钍, 铅$(br)$(thing)化学式$(): (UO₂)₃ThPb$(br)$(thing)危害$(): $(c)$(t:需要全身防护)致癌 (任何接触)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -165,13 +165,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 50%$(br)$(thing)来源$(): 铀$(br)$(thing)化学式$(): UO₂$(br)$(thing)危害$(): $(c)$(t:需要全身防护)致癌 (任何接触)$(/t)$()",
+      "text": "$(thing)百分比$(): 25%$(br)$(thing)来源$(): 铀$(br)$(thing)化学式$(): UO₂$(br)$(thing)危害$(): $(c)$(t:需要全身防护)致癌 (任何接触)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "钼铅矿",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/wulfenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 12%$(br)$(thing)来源$(): 铅, 钼$(br)$(thing)化学式$(): PbMoO₄",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
@@ -781,33 +796,8 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 75%$(br)$(thing)来源$(): 硅岩, 三钛$(br)$(thing)化学式$(): Nq",
+      "text": "$(thing)百分比$(): 100%$(br)$(thing)来源$(): 硅岩, 三钛$(br)$(thing)化学式$(): Nq",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "钚矿",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/plutonium"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 25%$(br)$(thing)来源$(): 钚矿$(br)$(thing)化学式$(): Pu²³⁹$(br)$(thing)危害$(): $(c)$(t:需要全身防护)致癌 (任何接触)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",

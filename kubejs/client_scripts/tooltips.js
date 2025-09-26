@@ -129,7 +129,6 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfg:sniffer_egg'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.attribution.sniffer')),
 		text.add(2, Text.translate('tfg.tooltip.large_egg'))
-
 	})
 	
 	event.addAdvanced(['tfg:wraptor_egg'], (item, advanced, text) => {
@@ -149,7 +148,7 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('tfg.tooltip.wraptor_sugar'))
 	})
 	
-	//#region temperature changing foods
+	// Temperature changing foods
 	event.addAdvanced(['#tfg:cooling_foods'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.cooling_foods'))
 	})
@@ -162,7 +161,14 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('tfg.tooltip.warming_foods'))
 	})
 
-	//#endregion
+	// Greate tooltips on Create things
+	event.addAdvanced(['create:water_wheel'], (item, advanced, text) => {
+		text.add(2, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.uls_limit")))
+	})
+	event.addAdvanced(['create:large_water_wheel', 'create:windmill_bearing'], (item, advanced, text) => {
+		text.add(2, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
+	})
+
 
 	//#region Deprecated Items
 	event.addAdvanced(['#megacells:mega_interface'], (item, advanced, text) => {
@@ -176,6 +182,10 @@ const registerTooltips = (event) => {
 	})
 	event.addAdvanced(["tfcea:refrigerator"], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.obsolete.fridge'))
+	})
+	
+	event.addAdvanced(['vintageimprovements:lathe'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
 	})
 	//#endregion
 }

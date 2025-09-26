@@ -253,7 +253,7 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["033E74BC588E7EAD"]
+			dependencies: ["32046292AA5B0E30"]
 			description: ["{quests.steam_age.steam_engine.desc}"]
 			id: "183D47F04CAEBFA7"
 			size: 1.5d
@@ -272,8 +272,8 @@
 				}
 			]
 			title: "{quests.steam_age.steam_engine.title}"
-			x: -16.5d
-			y: 14.5d
+			x: -5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7F14D2A34F480ACA"]
@@ -828,8 +828,8 @@
 			optional: true
 			subtitle: "{quests.steam_age.lathe.subtitle}"
 			tasks: [{
-				id: "269D79581AC1E0D6"
-				item: "vintageimprovements:lathe"
+				id: "23961EE69549B16E"
+				item: "vintageimprovements:belt_grinder"
 				type: "item"
 			}]
 			title: "{quests.steam_age.lathe.title}"
@@ -1536,8 +1536,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.rotation_speed_controller.title}"
-			x: -5.5d
-			y: -2.0d
+			x: -7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1659,8 +1659,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.steam_age.fuel_sources.title}"
-			x: -16.5d
-			y: 16.0d
+			x: -7.5d
+			y: -2.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

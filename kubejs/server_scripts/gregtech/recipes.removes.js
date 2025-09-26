@@ -644,6 +644,8 @@ function removeGTCEURecipes(event) {
 
 	removeMaceratorRecipe(event, 'macerate_marble')
 
+	removeMaceratorRecipe(event, 'macerate_wool')
+
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__ender_eye' })
 

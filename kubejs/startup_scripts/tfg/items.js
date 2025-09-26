@@ -257,6 +257,7 @@ const registerTFGItems = (event) => {
 	event.create('tfg:stainless_steel_needle')
 		.translationKey('item.tfg.stainless_steel_needle')
 		.unstackable()
+		.maxDamage(9999)
 
 	//Fishing Nets
 	event.create('tfg:fishing_net/wood')

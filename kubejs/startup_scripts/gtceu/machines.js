@@ -532,38 +532,7 @@ const registerGTCEuMachines = (event) => {
 			"gtceu:block/machines/electromagnetic_separator")
 
 	//#endregion
-
-	//#region Evaporation Tower
-
-	event.create('evaporation_tower', 'multiblock')
-		.rotationState(RotationState.NON_Y_AXIS)
-		.recipeType('evaporation_tower')
-		.noRecipeModifier()
-		.appearanceBlock(() => Block.getBlock('tfg:casings/machine_casing_stainless_evaporation'))
-		.pattern(definition => FactoryBlockPattern.start()
-			.aisle('ZBZ','CCC','CCC','CCC',' A ')
-			.aisle('BAB','C#C','C#C','C#C','AAA')
-			.aisle('ZXZ','CCC','CCC','CCC',' A ')
-			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
-			.where('A', Predicates.blocks('tfg:casings/machine_casing_stainless_evaporation'))
-			.where('B', Predicates.blocks('tfg:casings/machine_casing_stainless_evaporation')
-				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(1).setPreviewCount(1))
-				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
-				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1)))
-			.where('C', Predicates.blocks('tfg:casings/machine_casing_stainless_evaporation')
-				.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
-				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
-			.where('Z', Predicates.blocks('gtceu:aluminium_frame'))
-			.where('#', Predicates.air())
-			.where(' ', Predicates.any())
-			.build()
-		)
-		.workableCasingModel(
-			'gtceu:block/casings/solid/machine_casing_stainless_evaporation',
-			'gtceu:block/multiblock/distillation_tower')
-
-	//#endregion
-	
+		
 	//#region Ore Line
 
 	// Ostrum Harvester

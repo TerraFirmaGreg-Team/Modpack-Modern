@@ -24,9 +24,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "endermanoverhaul:badlands_hood"
-				},
-				{
+					"name": "endermanoverhaul:badlands_hood",
 					"conditions": [
 						{
 							"condition": "minecraft:random_chance",
@@ -57,6 +55,5 @@
 			],
 			"rolls": 2.0
 		}
-	],
-	"random_sequence": "endermanoverhaul:entities/badlands_enderman"
+	]
 }

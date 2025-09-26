@@ -131,6 +131,10 @@ const registerAdAstraItemTags = (event) => {
 	// these are log tags
 	event.remove('ad_astra:aeronos_caps', 'ad_astra:aeronos_cap')
 	event.remove('ad_astra:strophar_caps', 'ad_astra:strophar_cap')
+
+	event.add('tfc:makes_tannin', '#ad_astra:glacian_logs')
+	event.add('tfc:makes_tannin', '#tfc:crimson_logs')
+	event.add('tfc:makes_tannin', '#tfc:warped_logs')
 		
 	global.AD_ASTRA_WOOD.forEach(wood => {
 
@@ -417,6 +421,15 @@ const registerAdAstraBiomeTags = (event) => {
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/rusticus_edge')
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/sangnum_edge')
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/martian_river')
+	
+	event.add('waves:has_waves', 'tfg:mars/martian_river')
+	event.add('waves:has_waves', 'tfg:mars/martian_mountains')
+	event.add('waves:has_waves', 'tfg:mars/amber_plains')
+	event.add('waves:has_waves', 'tfg:mars/amber_hills')
+	event.add('waves:has_waves', 'tfg:mars/rusticus_plains')
+	event.add('waves:has_waves', 'tfg:mars/rusticus_hills')
+	event.add('waves:has_waves', 'tfg:mars/sangnum_plains')
+	event.add('waves:has_waves', 'tfg:mars/sangnum_hills')
 }
 
 const registerAdAstraEntityTypeTags = (event) => {
@@ -521,8 +534,7 @@ const registerAdAstraPlacedFeatures = (event) => {
 	//event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_medium')
 
 	// Underground decoration
-	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/ice_cave')
-
+	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/loose_rocks')
 	event.add('tfg:mars_underground_decoration', 'tfc:cave_spike')
 	event.add('tfg:mars_underground_decoration', 'tfc:cave_column')
 	event.add('tfg:mars_underground_decoration', 'tfc:large_cave_spike')
@@ -531,9 +543,10 @@ const registerAdAstraPlacedFeatures = (event) => {
 
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/calcite')
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/mega_calcite')
+	
+	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/ice_cave')
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/icicle')
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/icicle_extra')
-	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/loose_rocks')
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/ochrum_blob')
 
 	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/amethyst")

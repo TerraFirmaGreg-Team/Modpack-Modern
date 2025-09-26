@@ -871,6 +871,28 @@ const registerAdAstraRecipes = (event) => {
 	event.stonecutting('ad_astra:encased_etrium_block', '#tfg:ad_astra_etrium_blocks')
 	event.stonecutting('ad_astra:etrium_plateblock', '#tfg:ad_astra_etrium_blocks')
 
+	event.recipes.tfc.loom(
+		'8x ad_astra:glacian_fur',
+		'8x tfg:glacian_wool',
+		8,
+		'ad_astra:block/glacian_fur'
+	)
+
+	event.recipes.gtceu.assembler('tfg:assembler/glacian_fur')
+		.itemInputs('8x tfg:glacian_wool')
+		.circuit(10)
+		.itemOutputs('8x ad_astra:glacian_fur')
+		.duration(100)
+		.EUt(4)
+
+	event.shaped('minecraft:pink_bed', [
+		'AAA',
+		'BBB'
+	], {
+		A: 'ad_astra:glacian_wool',
+		B: '#tfc:lumber'
+	}).id('tfg:shaped/glacian_bed')
+
 	//#endregion
 
 	//#region Space stations
