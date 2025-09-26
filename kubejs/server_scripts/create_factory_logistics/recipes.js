@@ -34,13 +34,7 @@ function registerCreateFactoryLogisticsRecipes(event) {
 		F: '#tfg:metal_bars'
 	}).id('create_factory_logistics:shaped/jar_packager')
 
-	event.recipes.gtceu.assembler('create_factory_logistics:jar_packager')
-		.itemInputs('gtceu:ulv_machine_casing', '4x #forge:rods/copper', '#forge:springs/copper', 'create:fluid_tank', '#gtceu:circuits/ulv')
-		.itemOutputs('2x create_factory_logistics:jar_packager')
-		.duration(200)
-		.EUt(20)
 		
-
 	event.shapeless('create_factory_logistics:factory_fluid_gauge', ['create_factory_logistics:factory_fluid_gauge'])
 		.id('create_factory_logistics:shapeless/factory_fluid_gauge_clear')
 

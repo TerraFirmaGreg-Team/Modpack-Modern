@@ -1732,12 +1732,6 @@ const registerCreateRecipes = (event) => {
 		F: '#tfg:metal_bars'
 	}).id('tfg:create/shaped/packager')
 
-	event.recipes.gtceu.assembler('tfg:create/packager')
-		.itemInputs('gtceu:ulv_machine_casing', '4x #forge:rods/wrought_iron', '#forge:springs/wrought_iron', '4x create:cardboard', '#gtceu:circuits/ulv')
-		.itemOutputs('2x create:packager')
-		.duration(200)
-		.EUt(20)
-
 	event.shaped('create:item_hatch', [
 		'A',
 		'B',
