@@ -393,5 +393,34 @@ const registerTFGMaterials = (event) => {
 		.color('0xa2cde0')
 		.secondaryColor('0x7a5225')
 
+		//#region Tungsten Line
+
+	event.create('tfg:sodium_tungstate')
+		.dust()
+		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.iconSet(GTMaterialIconSet.BRIGHT)
+		.components('2x sodium','1x tungsten', '4x oxygen')
+		.color('0xdcf6f7')
+
+	event.create('tfg:ammonium_tungstate')
+		.dust()
+		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.iconSet(GTMaterialIconSet.DULL)
+		.formula('(NH4)10(H2W12O42)')
+		.color('0xfafafa')
+
+	event.create('tfg:APT')
+		.gem()
+		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.iconSet(GTMaterialIconSet.FLINT)
+		.color('0xaabdf0')
+
+	event.create('tfg:tungsten_oxide')
+		.dust()
+		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.iconSet(GTMaterialIconSet.FLINT)
+		.components('1x tungsten', '3x oxygen')
+		.color('0xf0c851')
+
 
 }
