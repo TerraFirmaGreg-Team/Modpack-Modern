@@ -79,7 +79,6 @@ global.AD_ASTRA_DISABLED_ITEMS =
 
 	// Disabled until LuV planet
 	
-	'ad_astra:glacio_globe', // maybe
 	'ad_astra:tier_4_rocket',
 	'ad_astra:calorite_engine',
 	'ad_astra:calorite_tank',
