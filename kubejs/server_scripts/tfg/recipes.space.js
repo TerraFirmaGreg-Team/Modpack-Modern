@@ -158,6 +158,16 @@ function registerTFGSpaceRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
 
+	event.recipes.gtceu.fermenter('tfg:chorus_flower')
+		.itemInputs('tfg:lunar_chorus_flower')
+		.inputFluids(Fluid.of('gtceu:biomass', 20))
+		.chancedOutput('ae2:ender_dust', 100, 0)
+		.outputFluids(Fluid.of('gtceu:nitrogen', 1000))
+		.circuit(2)
+		.duration(5 * 20)
+		.EUt(GTValues.VA[GTValues.MV])
+		.dimension('ad_astra:moon')
+
 	// Lightblooms
 	event.recipes.gtceu.greenhouse('tfg:lightbloom')
 		.notConsumable('8x minecraft:twisting_vines')
