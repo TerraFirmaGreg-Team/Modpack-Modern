@@ -171,19 +171,6 @@ const registerTooltips = (event) => {
 
 
 	//#region Deprecated Items
-	event.addAdvanced(['#megacells:mega_interface'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
-	})
-	event.addAdvanced(['#megacells:mega_pattern_provider'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
-	})
-	event.addAdvanced(["treetap:tap"], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.obsolete.tree_tap'))
-	})
-	event.addAdvanced(["tfcea:refrigerator"], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.obsolete.fridge'))
-	})
-	
 	event.addAdvanced(['vintageimprovements:lathe'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
 	})
