@@ -541,7 +541,7 @@
 				}
 			]
 			title: "{quests.gregtech_energy.lgt_fuel.title}"
-			x: -9.5d
+			x: -10.0d
 			y: -3.0d
 		}
 		{
@@ -574,7 +574,7 @@
 				}
 			]
 			title: "{quests.gregtech_energy.lpt_fuel.title}"
-			x: -8.5d
+			x: -9.0d
 			y: 3.0d
 		}
 		{
@@ -604,7 +604,7 @@
 				}
 			]
 			title: "{quests.gregtech_energy.lst_fuel.title}"
-			x: -7.5d
+			x: -9.0d
 			y: -7.0d
 		}
 		{
@@ -655,7 +655,7 @@
 				}
 			]
 			title: "{quests.gregtech_energy.lce_fuel.title}"
-			x: -8.5d
+			x: -9.0d
 			y: 1.0d
 		}
 		{
@@ -800,7 +800,7 @@
 				}
 			]
 			title: "{quests.gregtech_energy.hv_fuel.title}"
-			x: -10.5d
+			x: -11.0d
 			y: -3.0d
 		}
 		{
@@ -947,7 +947,7 @@
 				item: "gtceu:benzene_bucket"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -10.0d
 			y: -5.0d
 		}
 		{
@@ -958,19 +958,26 @@
 				item: "gtceu:diesel_bucket"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.0d
 			y: -5.0d
 		}
 		{
-			dependencies: ["05E2F203DA46A5E8"]
+			dependencies: ["7AF726555D721DFC"]
 			id: "4512E5DE7A84F809"
-			tasks: [{
-				id: "4BAECE3F4EC86920"
-				item: "gtceu:fission_reactor"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 1.0d
+			tasks: [
+				{
+					id: "4BAECE3F4EC86920"
+					item: "gtceu:fission_reactor"
+					type: "item"
+				}
+				{
+					id: "73A11457C2E4230D"
+					item: "tfg:nuclear_turbine"
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4C620105AAC49381"]
@@ -980,7 +987,7 @@
 				item: "gtceu:bio_diesel_bucket"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -10.0d
 			y: -7.0d
 		}
 		{
@@ -991,7 +998,7 @@
 				item: "gtceu:cetane_boosted_diesel_bucket"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.0d
 			y: -3.0d
 		}
 		{
@@ -1002,7 +1009,7 @@
 				item: "gtceu:high_octane_gasoline_bucket"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.0d
 			y: -1.0d
 		}
 		{
