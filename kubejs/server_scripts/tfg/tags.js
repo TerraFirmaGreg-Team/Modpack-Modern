@@ -52,7 +52,10 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:components/uv_leds', 'tfg:smd_uv_led')
 
 	//Fission Nucleat Fuel
-	event.add('deafission:fuels', 'tfg:thorium_pellet')
+	event.add('deafission:fuels', 'tfg:thorium_rod')
+	event.add('deafission:fuels', 'tfg:uranium_rod')
+	event.add('deafission:fuels', 'tfg:plutonium_rod')
+	event.add('tfg:fission_rods', '#deafission:fuels')
 
 	//#region Tools & Armor
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/wood')

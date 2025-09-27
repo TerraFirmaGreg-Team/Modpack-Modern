@@ -455,4 +455,13 @@ const registerTFGItems = (event) => {
 		.tag('forge:cloth')
 		.tag('tfc:sewing_light_cloth')
 
+	//#endregion
+
+	// Empty Fission Rod
+
+	event.create('tfg:empty_rod')
+		.translationKey('item.tfg.empty_road')
+		.texture('tfg:item/fuel_rod_empty')
+		.tag('tfg:fission_rods')
+
 }

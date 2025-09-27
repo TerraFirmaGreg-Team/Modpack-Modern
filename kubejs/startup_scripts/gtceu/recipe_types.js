@@ -44,7 +44,7 @@ const registerGTCEuRecipeTypes = (event) => {
 	event.create('nuclear_fuel_factory')
 		.category('nuclear_fuel_factory')
 		.setEUIO('in')
-		.setMaxIOSize(2, 1, 1, 0)
+		.setMaxIOSize(3, 1, 1, 0)
 		.setSlotOverlay(false, false, GuiTextures.ATOMIC_OVERLAY_1)
 		.setProgressBar(GuiTextures.ATOMIC_OVERLAY_1, FillDirection.DOWN_TO_UP)
 		.setSound(GTSoundEntries.MINER)
