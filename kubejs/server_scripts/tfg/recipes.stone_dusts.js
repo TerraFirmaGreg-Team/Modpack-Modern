@@ -256,7 +256,7 @@ function registerTFGStoneDustRecipes(event) {
 		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('mars_stone'), 1))
 		.itemOutputs(ChemicalHelper.get(TagPrefix.dustSmall, TFGHelpers.getMaterial('aluminium_silicate'), 1))
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Hematite, 1), 4500, 0)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Perchlorate, 1), 4000, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Calcite, 1), 4000, 0)
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Beryllium, 1), 2000, 0)
 		.outputFluids(Fluid.of('gtceu:oxygen', 36))
 

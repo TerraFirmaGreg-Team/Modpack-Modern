@@ -94,7 +94,7 @@
 	#.
 	#Number of sail-type blocks required to increase windmill speed by 1RPM.
 	#Range: > 1
-	windmillSailsPerRPM = 8
+	windmillSailsPerRPM = 4
 	#.
 	#Max Distance in blocks a Weighted Ejector can throw
 	#Range: > 0

@@ -163,10 +163,10 @@ const registerTooltips = (event) => {
 
 	// Greate tooltips on Create things
 	event.addAdvanced(['create:water_wheel'], (item, advanced, text) => {
-		text.add(2, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.uls_limit")))
+		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.uls_limit")))
 	})
 	event.addAdvanced(['create:large_water_wheel', 'create:windmill_bearing'], (item, advanced, text) => {
-		text.add(2, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
+		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
 	})
 
 
