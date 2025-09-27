@@ -159,6 +159,7 @@ const registerTFGBlocks = (event) => {
 		.notSolid()
 		.renderType('cutout')
 		.opaque(false)
+		.lightLevel(7)
 
 	event.create('tfg:casings/machine_casing_sterilizing_pipes', 'tfg:active_cardinal')
 		.soundType('metal')
