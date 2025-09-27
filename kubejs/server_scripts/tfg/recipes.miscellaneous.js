@@ -1357,5 +1357,12 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('tfc:burlap_cloth')
 		.duration(100)
 		.EUt(4)
+		
+	event.recipes.gtceu.assembler('tfg:ostrum_carbon_casing')
+		.itemInputs('2x #forge:plates/ostrum', '2x #forge:plates/titaniun_carbide', '#forge:frames/black_steel')
+		.circuit(6)
+		.itemOutput('2x tfg:casings/machine_casing_ostrum_carbon')
+		.duration(20 * (2.5))
+		.EUt(GTValues.VH[GTValues.LV])
 
 }
