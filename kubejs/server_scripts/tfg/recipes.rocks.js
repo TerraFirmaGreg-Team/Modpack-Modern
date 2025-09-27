@@ -219,6 +219,9 @@ function registerTFGRockRecipes(event) {
 		{ raw: 'ae2:sky_stone_brick',                     polished: 'ae2:sky_stone_small_brick' },
 		{ raw: 'ae2:sky_stone_small_brick',               polished: 'ae2:smooth_sky_stone_block' },
 		{ raw: 'gtceu:certus_quartz_block',               polished: 'ae2:cut_quartz_block' },
+		
+		// Concrete
+		{ raw: 'tfg:titanium_concrete', 				  polished: 'tfg:polished_titanium_concrete' },
 
 		// Recon Stone
 		{ raw: 'minecraft:stone',                         polished: 'minecraft:smooth_stone' },
