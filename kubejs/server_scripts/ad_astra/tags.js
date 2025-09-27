@@ -404,6 +404,10 @@ const registerAdAstraBiomeTags = (event) => {
 		event.add('species:limpet_spawns', biome)
 	})
 
+	global.MARS_BIOMES.forEach(biome => {
+		event.add('tfg:mars_biomes', biome)
+	})
+
 	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_dunes')
 	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_deep_desert')
 
@@ -527,11 +531,6 @@ const registerAdAstraPlacedFeatures = (event) => {
 	//#endregion
 
 	//#region Mars
-
-	// Craters
-	//event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_extra_large')
-	//event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_large')
-	//event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_medium')
 
 	// Underground decoration
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/loose_rocks')
