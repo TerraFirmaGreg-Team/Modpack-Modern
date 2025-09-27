@@ -410,12 +410,6 @@ function registerTFCBlockTags(event) {
     // Удаление тегов у руд
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/");
 
-    //#region Позволяем ТФК магме греть бойлер из Create
-    global.TFC_MAGMA_BLOCKS.forEach((el) => {
-        event.add("create:passive_boiler_heaters", el);
-    });
-    //#endregion
-
     //#region Nether
 
     event.add("beneath:nether_bush_plantable_on", "#tfc:clay_grass");
