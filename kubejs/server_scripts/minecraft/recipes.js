@@ -946,7 +946,7 @@ const registerMinecraftRecipes = (event) => {
 	], {
 		A: 'minecraft:blaze_rod',
 		B: 'minecraft:blaze_powder',
-		C: '#forge:ingots/blue_steel',
+		C: '#minecraft:logs',
 		D: '#forge:storage_blocks/charcoal',
 	}).id('tfg:campfire_charcoal')
 
@@ -957,7 +957,7 @@ const registerMinecraftRecipes = (event) => {
 	], {
 		A: 'minecraft:blaze_rod',
 		B: 'minecraft:blaze_powder',
-		C: '#forge:ingots/blue_steel',
+		C: '#minecraft:logs',
 		D: '#forge:storage_blocks/coal',
 	}).id('tfg:campfire_coal')
 	//#endregion
