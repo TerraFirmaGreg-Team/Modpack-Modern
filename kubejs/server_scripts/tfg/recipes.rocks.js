@@ -810,7 +810,7 @@ function registerTFGRockRecipes(event) {
 		{ block: 'ad_astra:mercury_stone',			dimension: 'ad_astra:mercury' },
 		{ block: 'ad_astra:mercury_cobblestone',	dimension: 'ad_astra:mercury' },
 		{ block: 'create:crimsite',					dimension: 'ad_astra:mercury' },
-		{ block: 'minecraft:tuff',					dimension: 'ad_astra:mercury' },
+		{ block: 'create:scorchia',					dimension: 'ad_astra:mercury' },
 		{ block: 'ad_astra:permafrost',				dimension: 'ad_astra:glacio'  },
 		{ block: 'tfg:rock/cobble_permafrost',		dimension: 'ad_astra:glacio'  },
 		{ block: 'create:veridium',					dimension: 'ad_astra:glacio'  },
