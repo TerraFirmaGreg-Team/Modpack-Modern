@@ -11007,7 +11007,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "pccard-1.20.1-1.0.16.jar",
+                    "file_name": "pccard-1.20.1-1.1.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11015,24 +11015,24 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/C3Mtqx9z/versions/IsDZ0N1Z/pccard-1.20.1-1.0.16.jar",
-                    "id": "IsDZ0N1Z",
+                    "url": "https://cdn.modrinth.com/data/C3Mtqx9z/versions/az0OBpPX/pccard-1.20.1-1.1.1.jar",
+                    "id": "az0OBpPX",
                     "parent_id": "C3Mtqx9z",
                     "hashes": {
-                        "sha512": "2d1a88bfeb17c524e2a7dd6c6439d77f6e1cff4158ea806bc341af30a26f501fb98fa598edb6e5d96cc0e0ae0c6125fcecd0c1dce954ecd5a9a4785f5b4fb0c8",
-                        "sha1": "9438bb45303d48223fc6a3c793878a84c1035403"
+                        "sha512": "fbf550d5114be22f4ae95625ced002fa6050d4a4d35e7304574f0aabb752eb8a58c9841c2c6e826ca525cb8606b6e08a59804d7d4103239c4a6c8c0cae7f5168",
+                        "sha1": "03af531fd11f2a070a3babf5ff00194f4486574d"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "XxWD5pD3",
                         "Ck4E7v7R"
                     ],
-                    "size": 407903,
-                    "date_published": "2025-07-23T04:05:01.093382Z"
+                    "size": 411463,
+                    "date_published": "2025-09-24T05:32:34.156736Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "pccard-1.20.1-1.0.16.jar",
+                    "file_name": "pccard-1.20.1-1.1.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11040,20 +11040,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6801/575/pccard-1.20.1-1.0.16.jar",
-                    "id": "6801575",
+                    "url": "https://edge.forgecdn.net/files/7027/959/pccard-1.20.1-1.1.1.jar",
+                    "id": "7027959",
                     "parent_id": "1150540",
                     "hashes": {
-                        "sha1": "47ab2dc0f1b5ffc8830ca67a6a0a6966e29c9a45",
-                        "md5": "6f1956cfcdc2d39a70df669e0e723908"
+                        "sha1": "d06ee96e70f1e6f4d2c330d7aabece62a9ee99d0",
+                        "md5": "0fcc90d28bf94ba23eb3da29afa27bcb"
                     },
                     "required_dependencies": [
                         "890405",
                         "1173950",
                         "223794"
                     ],
-                    "size": 407904,
-                    "date_published": "2025-07-23T04:04:42.327Z"
+                    "size": 411463,
+                    "date_published": "2025-09-24T05:32:14.740Z"
                 }
             ]
         },
