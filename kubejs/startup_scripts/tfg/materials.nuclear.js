@@ -251,21 +251,21 @@ const registerTFGNuclearMaterials = (event) => {
 StartupEvents.registry("item", (event) => {
   event.createCustom("tfg:thorium_rod", () => {
     return new $FuelCellItem(
-      5000,
+      500000,
       1,
       1
     );
   })
   event.createCustom("tfg:uranium_rod", () => {
     return new $FuelCellItem(
-      15000,
+      1500000,
       1,
       1.5
     );
   })
   event.createCustom("tfg:plutonium_rod", () => {
     return new $FuelCellItem(
-      20000,
+      2000000,
       1,
       2.0
     );

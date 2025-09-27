@@ -1483,4 +1483,14 @@ const registerGTCEURecipes = (event) => {
 
 	event.replaceInput({ id: 'gtceu:assembler/phenolic_board' }, '#tfg:wood_dusts', 'tfg:high_density_treated_fiberboard')
 
+	//# New Alloys For Turbines
+
+	event.recipes.gtceu.mixer('tfg:tungsten-bismuth_oxide_composite')
+		.itemInputs('2x #forge:dusts/bismuth', 'gtceu:tungsten_dust')
+		.inputFluids(Fluid.of('gtceu:oxygen', 3000))
+		.itemOutputs('3x tfg:tungsten-bismuth_oxide_composite_dust')
+		.duration(20 * 12)
+		.EUt(GTValues.VA[GTValues.EV])
+
+
 }
