@@ -807,6 +807,17 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.duration(200)
 		.EUt(480)
 
+	// Pattern box
+
+	event.shaped('ae2:pattern_box', [
+		'ABA',
+		'CAC'
+	], {
+		A: 'create:cardboard',
+		B: 'ae2:blank_pattern',
+		C: '#forge:fine_wires/red_alloy'
+	}).id('tfg:shaped/ae2_pattern_box')
+
 	// Annihilation Core
 
 	event.recipes.gtceu.assembler('ae2:annihilation_core')
