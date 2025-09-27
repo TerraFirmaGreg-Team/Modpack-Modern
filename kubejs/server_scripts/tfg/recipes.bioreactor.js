@@ -35,7 +35,7 @@ function registerTFGBioreactorRecipes(event) {
 	 * @param {string} text
 	 * @param {BioreactorRecipeData} data 
 	 */
-	function registerBioreactorRecipe(type, id, duration, EUt, text, data) {
+	function registerBiochemRecipe(type, id, duration, EUt, text, data) {
 		if (data.itemInputs === undefined) data.itemInputs = []
 		if (data.itemOutputs === undefined) data.itemOutputs = []
 		if (data.fluidInputs === undefined) data.fluidInputs = []
@@ -87,7 +87,7 @@ function registerTFGBioreactorRecipes(event) {
 	 * @param {number} EUt 
 	 * @param {FoodRecipeData} data 
 	 */
-	const bioreactorRecipe = (id, duration, EUt, data) => registerBioreactorRecipe("bioreactor", id, duration, EUt, "", data)
+	const bioreactorRecipe = (id, duration, EUt, data) => registerBiochemRecipe("bioreactor", id, duration, EUt, "", data)
 
 	/**
 	 * @param {string} id 
@@ -96,7 +96,24 @@ function registerTFGBioreactorRecipes(event) {
 	 * @param {FoodRecipeData} data 
 	 * @param {string} text
 	 */
-	const bioreactorRecipeText = (id, duration, EUt, text, data) => registerBioreactorRecipe("bioreactor", id, duration, EUt, text, data)
+	const bioreactorRecipeText = (id, duration, EUt, text, data) => registerBiochemRecipe("bioreactor", id, duration, EUt, text, data)
+
+	/**
+	 * @param {string} id 
+	 * @param {number} duration 
+	 * @param {number} EUt 
+	 * @param {FoodRecipeData} data 
+	 */
+	const growthChamberRecipe = (id, duration, EUt, data) => registerBiochemRecipe("growth_chamber", id, duration, EUt, "", data)
+
+	/**
+	 * @param {string} id 
+	 * @param {number} duration 
+	 * @param {number} EUt 
+	 * @param {FoodRecipeData} data 
+	 * @param {string} text
+	 */
+	const growthChamberRecipeText = (id, duration, EUt, text, data) => registerBiochemRecipe("growth_chamber", id, duration, EUt, text, data)
 
 	/////////////////////////////////////////
 

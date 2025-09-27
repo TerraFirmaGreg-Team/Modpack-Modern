@@ -1,6 +1,7 @@
 {
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
 	"textures": {
 		"0": "tfg:block/machines/sample_racks/sample_rack_base",
 		"1": "tfg:block/machines/sample_racks/sample_rack_overlay_active",
@@ -195,6 +196,8 @@
 			"name": "tube1",
 			"from": [13, 13.1, 8.5],
 			"to": [12, 8.1, 7.5],
+            "forge_data": { "block_light": 15, "sky_light": 15 },
+            "shade": false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [12, 13.1, 8.5]},
 			"faces": {
 				"north": {"uv": [7.5, 3, 7, 0.5], "texture": "#1"},
@@ -223,6 +226,8 @@
 			"name": "tube1",
 			"from": [11, 13.1, 8.5],
 			"to": [10, 8.1, 7.5],
+            "forge_data": { "block_light": 15, "sky_light": 15 },
+            "shade": false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [10, 13.1, 8.5]},
 			"faces": {
 				"north": {"uv": [7.5, 3, 7, 0.5], "texture": "#1"},
@@ -251,6 +256,8 @@
 			"name": "tube1",
 			"from": [9, 13.1, 8.5],
 			"to": [8, 8.1, 7.5],
+            "forge_data": { "block_light": 15, "sky_light": 15 },
+            "shade": false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 13.1, 8.5]},
 			"faces": {
 				"north": {"uv": [7.5, 5.5, 7, 3], "texture": "#1"},
@@ -279,6 +286,8 @@
 			"name": "tube1",
 			"from": [7, 13.1, 8.5],
 			"to": [6, 8.1, 7.5],
+            "forge_data": { "block_light": 15, "sky_light": 15 },
+            "shade": false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [6, 13.1, 8.5]},
 			"faces": {
 				"north": {"uv": [7.5, 3, 7, 0.5], "texture": "#1"},
@@ -307,6 +316,8 @@
 			"name": "tube1",
 			"from": [5, 13.1, 8.5],
 			"to": [4, 8.1, 7.5],
+            "forge_data": { "block_light": 15, "sky_light": 15 },
+            "shade": false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [4, 13.1, 8.5]},
 			"faces": {
 				"north": {"uv": [7.5, 5.5, 7, 3], "texture": "#1"},
@@ -335,6 +346,8 @@
 			"name": "tube1",
 			"from": [3, 13.1, 8.5],
 			"to": [2, 8.1, 7.5],
+            "forge_data": { "block_light": 15, "sky_light": 15 },
+            "shade": false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [2, 13.1, 8.5]},
 			"faces": {
 				"north": {"uv": [7.5, 3, 7, 0.5], "texture": "#1"},
@@ -363,6 +376,8 @@
 			"name": "beaker",
 			"from": [6, 13.01, 6],
 			"to": [3, 8.01, 3],
+            "forge_data": { "block_light": 15, "sky_light": 15 },
+            "shade": false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [6, 13, 6]},
 			"faces": {
 				"north": {"uv": [14.5, 0, 13, 2.5], "texture": "#1"},
@@ -377,6 +392,8 @@
 			"name": "fluid",
 			"from": [6, 11.01, 6],
 			"to": [3, 11.01, 3],
+            "forge_data": { "block_light": 15, "sky_light": 15 },
+            "shade": false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [6, 9, 6]},
 			"faces": {
 				"north": {"uv": [14.5, 0, 13, 2.5], "texture": "#1"},
@@ -391,6 +408,8 @@
 			"name": "beaker",
 			"from": [9, 13.01, 14],
 			"to": [6, 8.01, 11],
+            "forge_data": { "block_light": 15, "sky_light": 15 },
+            "shade": false,
 			"rotation": {"angle": -22.5, "axis": "y", "origin": [9, 13, 14]},
 			"faces": {
 				"north": {"uv": [14.5, 0, 13, 2.5], "texture": "#1"},
@@ -405,6 +424,8 @@
 			"name": "fluid",
 			"from": [9, 11.01, 14],
 			"to": [6, 11.01, 11],
+            "forge_data": { "block_light": 15, "sky_light": 15 },
+            "shade": false,
 			"rotation": {"angle": -22.5, "axis": "y", "origin": [9, 9, 14]},
 			"faces": {
 				"north": {"uv": [14.5, 0, 13, 2.5], "texture": "#1"},
@@ -419,6 +440,8 @@
 			"name": "fluid",
 			"from": [10, 13.01, 7],
 			"to": [8, 13.01, 5],
+            "forge_data": { "block_light": 15, "sky_light": 15 },
+            "shade": false,
 			"rotation": {"angle": -45, "axis": "y", "origin": [12, 19, 7]},
 			"faces": {
 				"north": {"uv": [15, 5, 16, 8], "texture": "#1"},
@@ -433,6 +456,8 @@
 			"name": "grad_cylin1",
 			"from": [10, 14.01, 7],
 			"to": [8, 8.01, 5],
+            "forge_data": { "block_light": 15, "sky_light": 15 },
+            "shade": false,
 			"rotation": {"angle": -45, "axis": "y", "origin": [12, 14, 7]},
 			"faces": {
 				"north": {"uv": [15, 5, 16, 8], "texture": "#1"},

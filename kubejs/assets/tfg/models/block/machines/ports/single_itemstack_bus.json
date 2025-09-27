@@ -10,7 +10,7 @@
           "model": {
           "parent": "gtceu:block/machine/template/cube_all/sided",
           "textures": {
-            "all": "gtceu:block/casings/voltage/mv/side",
+            "all": "tfg:block/casings/machine_casing_bioculture",
             "overlay_front": "tfg:block/machines/railgun_ammo_loader/overlay_front_active",
             "overlay_front_emissive": "tfg:block/machines/railgun_ammo_loader/overlay_front_emissive"
           }

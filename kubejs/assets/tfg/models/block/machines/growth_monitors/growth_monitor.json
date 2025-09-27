@@ -1,6 +1,7 @@
 {
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "tfg:block/machines/growth_monitors/growth_monitor_base",
@@ -137,6 +138,8 @@
 			"name": "screen",
 			"from": [-15, -2.83853, -2.49104],
 			"to": [31, 27.16147, -2.49104],
+            "forge_data": { "block_light": 13, "sky_light": 13 },
+            "shade": false,
 			"rotation": {"angle": 22.5, "axis": "x", "origin": [6.5, 16.06147, 0.60896]},
 			"faces": {
 				"north": {"uv": [16, 12, 0, 0], "rotation": 180, "texture": "#1"},

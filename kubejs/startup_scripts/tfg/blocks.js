@@ -120,7 +120,6 @@ const registerTFGBlocks = (event) => {
 
 	event.create('tfg:casings/machine_casing_ultraviolet', 'gtceu:active')
 		.translationKey('block.tfg.casings.machine_casing_ultraviolet')
-		.bloom('tfg:block/casings/machine_casing_ultraviolet')
 		.soundType('glass')
 		.hardness(5)
 		.resistance(6)
@@ -159,7 +158,6 @@ const registerTFGBlocks = (event) => {
 		.notSolid()
 		.renderType('cutout')
 		.opaque(false)
-		.lightLevel(7)
 
 	event.create('tfg:casings/machine_casing_sterilizing_pipes', 'tfg:active_cardinal')
 		.soundType('metal')
