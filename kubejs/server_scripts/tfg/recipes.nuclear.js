@@ -173,7 +173,8 @@ function registerTFGNuclearRecipes(event) {
 
     event.recipes.deafission.fission_reactor_fuel('tfg:thorium_uranium_waste')
 		.itemInputs(Item.of('tfg:thorium_rod'))
-		.outputFluids(Fluid.of('gtceu:uranium_waste', 1000))
+		.outputFluids(Fluid.of('gtceu:uranium_waste', 250))
+		.itemOutputs(Item.of('tfg:empty_rod'))
         .hideDuration(true);
     
     event.recipes.deafission.fission_reactor_coolant('tfg:thorium_uranium_waste_coolant')
@@ -205,6 +206,7 @@ function registerTFGNuclearRecipes(event) {
     event.recipes.deafission.fission_reactor_fuel('tfg:uranium_radioactive')
 		.itemInputs(Item.of('tfg:uranium_rod'))
 		.outputFluids(Fluid.of('gtceu:radioactive_waste', 5000))
+		.itemOutputs(Item.of('tfg:empty_rod'))
         .hideDuration(true);
     
     event.recipes.deafission.fission_reactor_coolant('tfg:uranium_radioactive_coolant')
@@ -227,6 +229,7 @@ function registerTFGNuclearRecipes(event) {
     event.recipes.deafission.fission_reactor_fuel('tfg:plutonium_irradiated')
 		.itemInputs(Item.of('tfg:plutonium_rod'))
 		.outputFluids(Fluid.of('gtceu:tritiated_water', 500))
+		.itemOutputs(Item.of('tfg:empty_rod'))
         .hideDuration(true);
     
     event.recipes.deafission.fission_reactor_coolant('tfg:plutonium_irradiated_coolant')
