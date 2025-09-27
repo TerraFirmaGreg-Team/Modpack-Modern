@@ -1482,6 +1482,91 @@ const registerGTCEURecipes = (event) => {
 
 	event.replaceInput({ id: 'gtceu:assembler/phenolic_board' }, '#tfg:wood_dusts', 'tfg:high_density_treated_fiberboard')
 
+	//#region New Tungsten Line
+
+	event.remove({ id: 'gtceu:chemical_bath/tungstic_acid_from_scheelite' })
+	event.remove({ id: 'gtceu:chemical_bath/tungstic_acid_from_tungstate' })
+	event.remove({ id: 'gtceu:electrolyzer/tungstic_acid_electrolysis' })
+
+	// Transform Tungstate and Scheelite
+
+	event.recipes.gtceu.large_chemical_reactor('tfg:scheelite_to_sodium_tungstate')
+		.itemInputs(Item.of('gtceu:scheelite_dust', 6))
+		.itemInputs(Item.of('gtceu:soda_ash_dust', 6))
+		.itemOutputs(Item.of('tfg:sodium_tungstate_dust', 6))
+		.itemOutputs(Item.of('gtceu:calcite_dust', 6))
+		.duration(20*12)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.large_chemical_reactor('tfg:tungstate_to_sodium_tungstate')
+		.itemInputs(Item.of('gtceu:tungstate_dust', 6))
+		.itemInputs(Item.of('gtceu:soda_ash_dust', 6))
+		.itemOutputs(Item.of('tfg:sodium_tungstate_dust', 6))
+		.itemOutputs(Item.of('gtceu:lithium_dust', 2))
+		.itemOutputs(Item.of('gtceu:carbon_dust', 1))
+		.outputFluids(Fluid.of('gtceu:oxygen', 3000))
+		.duration(20*12)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.chemical_bath('tfg:tungstate_to_tungsten_acid')
+		.inputFluids(Fluid.of('gtceu:hydrochloric_acid', 12000))
+		.itemInputs(Item.of('tfg:sodium_tungstate_dust', 6))
+		.itemOutputs(Item.of('gtceu:salt_dust', 48))
+		.itemOutputs(Item.of('gtceu:tungstic_acid_dust', 6))
+		.duration(20*24)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.chemical_bath('tfg:tungsten_acid_to_ammonium_tungstate')
+		.inputFluids(Fluid.of('gtceu:ammonia', 10000))
+		.itemInputs(Item.of('gtceu:tungstic_acid_dust', 12))
+		.itemOutputs(Item.of('tfg:ammonium_tungstate_dust', 1))
+		.duration(20*16)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.evaporation_tower('tfg:ammonium_tungstate_to_apt_h')
+		.itemInputs(Item.of('tfg:ammonium_tungstate_dust', 1))
+		.itemOutputs(Item.of('tfg:apt_gem', 1))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
+		.duration(20*120)
+		.EUt(GTValues.VHA[GTValues.HV])
+
+	event.recipes.gtceu.distillery('tfg:ammonium_tungstate_to_apt')
+		.itemInputs(Item.of('tfg:ammonium_tungstate_dust', 1))
+		.itemOutputs(Item.of('tfg:apt_gem', 1))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
+		.duration(20*120)
+		.EUt(GTValues.VHA[GTValues.HV])
+
+	event.recipes.gtceu.pyrolyse_oven('tfg:apt')
+		.itemInputs(Item.of('tfg:apt_gem', 1))
+		.itemOutputs(Item.of('tfg:tungsten_oxide_dust', 3))
+		.outputFluids(Fluid.of('gtceu:ammonia', 10000))
+		.duration(20*36)
+		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(1)
+
+	event.recipes.gtceu.pyrolyse_oven('tfg:apt_nitrogen')
+		.itemInputs(Item.of('tfg:apt_gem', 1))
+		.inputFluids(Fluid.of('gtceu:nitrogen', 1000))
+		.itemOutputs(Item.of('tfg:tungsten_oxide_dust', 3))
+		.outputFluids(Fluid.of('gtceu:ammonia', 10000))
+		.duration(20*18)
+		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(2)
+
+	event.recipes.gtceu.arc_furnace('tfg:tungsten_apt')
+		.itemInputs(Item.of('tfg:tungsten_oxide_dust', 1))
+		.inputFluids(Fluid.of('gtceu:hydrogen', 1000))
+		.itemOutputs(Item.of('gtceu:tungsten_dust', 1))
+		.duration(20*2.8)
+		.EUt(GTValues.VA[GTValues.EV])
+		
+
 	//# New Alloys For Turbines
 
 	event.recipes.gtceu.mixer('tfg:tungsten-bismuth_oxide_composite')

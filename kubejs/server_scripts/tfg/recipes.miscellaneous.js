@@ -781,13 +781,13 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 	
 	//Rock-wool stuff
-	event.recipes.gtceu.mixer('aes_mix')
+	event.recipes.gtceu.mixer('tfg:aes_mix')
 		.itemInputs('5x gtceu:silicon_dioxide_dust', '4x gtceu:quicklime_dust', 'gtceu:magnesia_dust')
 		.itemOutputs('10x tfg:aes_mix_dust')
 		.duration(160)
 		.EUt(GTValues.VA[GTValues.EV])
 	
-	event.recipes.gtceu.electric_blast_furnace('molten_aes')
+	event.recipes.gtceu.electric_blast_furnace('tfg:molten_aes')
 		.itemInputs('2x tfg:aes_mix_dust')
 		.outputFluids(Fluid.of('tfg:molten_aes', 1000))
 		.chancedOutput('gtceu:ash_dust', 3000, 0)
@@ -796,7 +796,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.blastFurnaceTemp(3000)
 		.EUt(GTValues.VA[GTValues.EV])
 		
-	event.recipes.gtceu.electric_blast_furnace('molten_aes_he')
+	event.recipes.gtceu.electric_blast_furnace('tfg:molten_aes_he')
 		.itemInputs('2x tfg:aes_mix_dust')
 		.inputFluids(Fluid.of('gtceu:helium', 200))
 		.outputFluids(Fluid.of('tfg:molten_aes', 1000))
@@ -805,20 +805,20 @@ function registerTFGMiscellaneousRecipes(event) {
 		.blastFurnaceTemp(3000)
 		.EUt(GTValues.VA[GTValues.EV])
 		
-	event.recipes.gtceu.centrifuge('aes_wool')
+	event.recipes.gtceu.centrifuge('tfg:aes_wool')
 		.inputFluids(Fluid.of('tfg:molten_aes', 200))
 		.itemOutputs('tfg:aes_wool')
 		.duration(30)
 		.EUt(GTValues.VA[GTValues.EV])
 		
-	event.recipes.gtceu.forming_press('aes_compressed_wool')
+	event.recipes.gtceu.forming_press('tfg:aes_compressed_wool')
 		.itemInputs('4x tfg:aes_wool')
 		.notConsumable('gtceu:ingot_casting_mold')
 		.itemOutputs('tfg:aes_compressed_wool')
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.EV])
 		
-	event.recipes.gtceu.chemical_bath('aes_insulation_sheet')
+	event.recipes.gtceu.chemical_bath('tfg:aes_insulation_sheet')
 		.itemInputs('tfg:aes_compressed_wool')
 		.inputFluids(Fluid.of('gtceu:epoxy', 72))
 		.circuit(1)
@@ -826,7 +826,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.EV])
 	
-	event.recipes.gtceu.chemical_bath('aes_insulation_roll')
+	event.recipes.gtceu.chemical_bath('tfg:aes_insulation_roll')
 		.itemInputs('9x tfg:aes_compressed_wool')
 		.inputFluids(Fluid.of('gtceu:epoxy', 648))
 		.itemOutputs('tfg:aes_insulation_roll')
@@ -834,7 +834,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.EV])
 		
-	event.recipes.gtceu.assembler('aes_insulation_roll')
+	event.recipes.gtceu.assembler('tfg:aes_insulation_roll')
 		.itemInputs('9x tfg:aes_insulation_sheet')
 		.itemOutputs('tfg:aes_insulation_roll')
 		.circuit(0)
@@ -849,7 +849,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		A: 'tfg:aes_insulation_sheet',
 	}).id('tfg:shaped/aes_insulation_roll')
 	
-	event.recipes.gtceu.assembler('aes_insulation_sheet')
+	event.recipes.gtceu.assembler('tfg:aes_insulation_sheet')
 		.itemInputs('9x tfg:aes_insulation_sheet')
 		.itemOutputs('tfg:aes_insulation_roll')
 		.circuit(0)
@@ -860,7 +860,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		'tfg:aes_insulation_roll'
 	]).id('tfg:shapeless/aes_insulation_sheet')
 	
-	event.recipes.gtceu.electric_blast_furnace('smelt_aes_sheet')
+	event.recipes.gtceu.electric_blast_furnace('tfg:smelt_aes_sheet')
 		.itemInputs('tfg:aes_insulation_sheet')
 		.inputFluids(Fluid.of('gtceu:helium', 200))
 		.outputFluids(Fluid.of('tfg:molten_aes', 800))
@@ -869,7 +869,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(140)
 		.blastFurnaceTemp(3000)
 		.EUt(GTValues.VA[GTValues.EV])
-	event.recipes.gtceu.electric_blast_furnace('smelt_aes_roll')
+	event.recipes.gtceu.electric_blast_furnace('tfg:smelt_aes_roll')
 		.itemInputs('tfg:aes_insulation_roll')
 		.inputFluids(Fluid.of('gtceu:helium', 1000))
 		.itemOutputs('2x gtceu:ash_dust')
@@ -879,7 +879,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.blastFurnaceTemp(3000)
 		.EUt(GTValues.VA[GTValues.EV])
 		
-	event.recipes.gtceu.electric_blast_furnace('smelt_sniffer_wool')
+	event.recipes.gtceu.electric_blast_furnace('tfg:smelt_sniffer_wool')
 		.itemInputs('tfg:sniffer_wool')
 		.chancedOutput('gtceu:ash_dust', 7500, 0)
 		.outputFluids(Fluid.of('tfg:molten_aes', 200))
@@ -887,7 +887,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(80)
 		.blastFurnaceTemp(3400)
 		.EUt(GTValues.VA[GTValues.EV])
-	event.recipes.gtceu.electric_blast_furnace('smelt_wraptor_wool')
+	event.recipes.gtceu.electric_blast_furnace('tfg:smelt_wraptor_wool')
 		.itemInputs('tfg:wraptor_wool')
 		.chancedOutput('gtceu:ash_dust', 5000, 0)
 		.outputFluids(Fluid.of('tfg:molten_aes', 100))
@@ -1077,7 +1077,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.IV])
 	event.recipes.gtceu.mixer('tfg:aes_polyurethane_electric_only')
-		.itemInputs('2x #tfg:mineral_rich_wool', '#forge:dusts/methylene_diphenyl_diisocyanate')
+		.itemInputs('2x #tfg:mineral_rich_wool', 'tfg:aes_compressed_wool', '#forge:dusts/methylene_diphenyl_diisocyanate')
 		.inputFluids(Fluid.of('gtceu:diethylenetriamine', 250), Fluid.of('gtceu:acetone', 1000))
 		.itemOutputs('tfg:aes_polyurethane')
 		.duration(80)
@@ -1357,5 +1357,20 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('tfc:burlap_cloth')
 		.duration(100)
 		.EUt(4)
+		
+	event.recipes.gtceu.assembler('tfg:ostrum_carbon_casing')
+		.itemInputs('2x #forge:plates/ostrum', '2x #forge:plates/titanium_carbide', '#forge:frames/black_steel')
+		.itemOutputs('2x tfg:casings/machine_casing_ostrum_carbon')
+		.circuit(6)
+		.duration(20 * (2.5))
+		.EUt(GTValues.VH[GTValues.LV])
+		
+	event.recipes.gtceu.assembler('tfg:titanium_concrete')
+		.itemInputs('2x #forge:rods/titanium')
+		.inputFluids(Fluid.of('gtceu:concrete', 144*1.5))
+		.itemOutputs('tfg:titanium_concrete')
+		.circuit(2)
+		.duration(20)
+		.EUt(GTValues.VH[GTValues.EV])
 
 }
