@@ -62,18 +62,16 @@ const registerTFGMaterials = (event) => {
 		.iconSet('metallic')
 		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR)
 		.blastTemp(1760, 'low', 256, 900)
-/*
-
 
 	event.create('rocket_alloy_t2')
 		.ingot()
-		.components('76x titanium', '15x vanadium', '3x aluminium', '3x chromium', '3x tin')
+		.components('19x titanium', '4x vanadium', '3x aluminium', '3x chromium', '3x tin')
 		.color(0x3c253d)
 		.iconSet('metallic')
 		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR)
 		.blastTemp(3200, 'mid', 1024, 1100)
 	
-	event.create('rocket_alloy_t3')
+/*	event.create('rocket_alloy_t3')
 		.ingot()
 		.components('8x titanium', '9x tungsten_steel', '2x tantalum', '2x radon')
 		.color(0x6c678b)
@@ -394,6 +392,35 @@ const registerTFGMaterials = (event) => {
 		.iconSet(GTMaterialIconSet.WOOD)
 		.color('0xa2cde0')
 		.secondaryColor('0x7a5225')
+
+		//#region Tungsten Line
+
+	event.create('tfg:sodium_tungstate')
+		.dust()
+		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.iconSet(GTMaterialIconSet.BRIGHT)
+		.components('2x sodium','1x tungsten', '4x oxygen')
+		.color('0xdcf6f7')
+
+	event.create('tfg:ammonium_tungstate')
+		.dust()
+		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.iconSet(GTMaterialIconSet.DULL)
+		.formula('(NH4)10(H2W12O42)')
+		.color('0xfafafa')
+
+	event.create('tfg:apt')
+		.gem()
+		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.iconSet(GTMaterialIconSet.FLINT)
+		.color('0xaabdf0')
+
+	event.create('tfg:tungsten_oxide')
+		.dust()
+		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.iconSet(GTMaterialIconSet.FLINT)
+		.components('1x tungsten', '3x oxygen')
+		.color('0xf0c851')
 
 
 }

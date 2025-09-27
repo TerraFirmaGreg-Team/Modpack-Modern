@@ -379,6 +379,11 @@ function registerVintageImprovementsRecipes(event) {
 					processingTime: material.getMass() * 4 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 				}).id(`tfg:vi/lathe/${material.getName()}_to_rod`)
 			}
+
+			if (material.hasProperty(PropertyKey.GEM)) {
+				event.recipes.create.sandpaper_polishing(ChemicalHelper.get(TagPrefix.rod, material, 1), latheInput)
+					.id(`tfg:polishing/${material.getName()}_rod`)
+			}
 		}
 
 		if (material.hasFlag(MaterialFlags.GENERATE_BOLT_SCREW)) {

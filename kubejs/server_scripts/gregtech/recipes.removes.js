@@ -643,6 +643,9 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_flower_pot')
 
 	removeMaceratorRecipe(event, 'macerate_marble')
+	removeMaceratorRecipe(event, 'macerate_red_granite')
+
+	removeMaceratorRecipe(event, 'macerate_wool')
 
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__ender_eye' })
@@ -650,6 +653,8 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:smelting/sticky_resin_from_slime' })
 
 	event.remove({ id: 'gtceu:wiremill/string_from_polycaprolactam' })
+
+	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_granite_red' })
 
 	event.remove({ id: 'gtceu:chemical_bath/black_steel_cool_down' })
 	event.remove({ id: 'gtceu:chemical_bath/black_steel_cool_down_distilled_water' })

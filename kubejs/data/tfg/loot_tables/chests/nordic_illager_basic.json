@@ -495,8 +495,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
+								"max": 4,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -511,8 +511,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
+								"max": 4,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -559,8 +559,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 10,
-								"min": 6
+								"max": 7,
+								"min": 4
 							},
 							"function": "minecraft:set_count"
 						}

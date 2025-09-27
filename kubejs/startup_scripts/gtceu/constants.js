@@ -307,6 +307,11 @@ global.GTCEU_CASTING_MOLDS = /** @type {const} */ ([
     "gtceu:small_gear_casting_mold",
     "gtceu:rotor_casting_mold",
     "gtceu:pill_casting_mold",
+    "gtceu:tiny_pipe_casting_mold",
+    "gtceu:small_pipe_casting_mold",
+    "gtceu:normal_pipe_casting_mold",
+    "gtceu:large_pipe_casting_mold",
+    "gtceu:huge_pipe_casting_mold",
 ]);
 //#endregion
 
