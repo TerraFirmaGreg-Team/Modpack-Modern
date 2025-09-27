@@ -409,7 +409,7 @@ const registerTFGMaterials = (event) => {
 		.formula('(NH4)10(H2W12O42)')
 		.color('0xfafafa')
 
-	event.create('tfg:APT')
+	event.create('tfg:apt')
 		.gem()
 		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.iconSet(GTMaterialIconSet.FLINT)
