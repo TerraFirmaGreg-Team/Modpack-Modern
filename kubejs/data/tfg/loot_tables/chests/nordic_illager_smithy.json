@@ -325,6 +325,22 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "gtceu:matches",
+					"weight": 70,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8,
+								"min": 4
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
 					"name": "minecraft:sentry_armor_trim_smithing_template",
 					"weight": 10
 				},

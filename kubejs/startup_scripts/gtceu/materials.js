@@ -389,6 +389,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Nickel.setMaterialSecondaryARGB(0x8d8d71)
 	GTMaterials.Thorium.setMaterialARGB(0xf8a8c0)
 	GTMaterials.Thorium.setMaterialSecondaryARGB(0xcd8dbc)
+	GTMaterials.GraniteRed.setMaterialARGB(0x974B3C)
+	GTMaterials.GraniteRed.setMaterialSecondaryARGB(0x632117)
 
 	
 	global.MINECRAFT_DYE_NAMES.forEach(colorName => {
@@ -408,4 +410,5 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.get('tfg:tmos').setFormula("Si(OCH3)4", true)
 	GTMaterials.get('tfg:fluix').setFormula("?(?SiO2)(SiO2)", true)
 	GTMaterials.CertusQuartz.setFormula("?SiO2", true)
+	GTMaterials.GraniteRed.setFormula("?", true)
 }

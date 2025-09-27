@@ -62,18 +62,16 @@ const registerTFGMaterials = (event) => {
 		.iconSet('metallic')
 		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR)
 		.blastTemp(1760, 'low', 256, 900)
-/*
-
 
 	event.create('rocket_alloy_t2')
 		.ingot()
-		.components('76x titanium', '15x vanadium', '3x aluminium', '3x chromium', '3x tin')
+		.components('19x titanium', '4x vanadium', '3x aluminium', '3x chromium', '3x tin')
 		.color(0x3c253d)
 		.iconSet('metallic')
 		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR)
 		.blastTemp(3200, 'mid', 1024, 1100)
 	
-	event.create('rocket_alloy_t3')
+/*	event.create('rocket_alloy_t3')
 		.ingot()
 		.components('8x titanium', '9x tungsten_steel', '2x tantalum', '2x radon')
 		.color(0x6c678b)

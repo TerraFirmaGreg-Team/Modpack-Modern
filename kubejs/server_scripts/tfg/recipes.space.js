@@ -6,8 +6,6 @@
  */
 function registerTFGSpaceRecipes(event) {
 
-	// TODO: Change these to work on any dim as long as they're in an oxygenated area?
-
 	const allowedCombustibleDims = [
 		{
 			dimension: "minecraft:the_nether",
@@ -158,6 +156,16 @@ function registerTFGSpaceRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
 
+	event.recipes.gtceu.fermenter('tfg:chorus_flower')
+		.itemInputs('tfg:lunar_chorus_flower')
+		.inputFluids(Fluid.of('gtceu:biomass', 20))
+		.chancedOutput('ae2:ender_dust', 100, 0)
+		.outputFluids(Fluid.of('gtceu:nitrogen', 1000))
+		.circuit(2)
+		.duration(5 * 20)
+		.EUt(GTValues.VA[GTValues.MV])
+		.dimension('ad_astra:moon')
+
 	// Lightblooms
 	event.recipes.gtceu.greenhouse('tfg:lightbloom')
 		.notConsumable('8x minecraft:twisting_vines')
@@ -263,6 +271,14 @@ function registerTFGSpaceRecipes(event) {
 		.inputFluids('gtceu:rocket_fuel 250')
 		.itemOutputs('4x tfg:railgun_ammo_shell')
 		.dimension('ad_astra:moon')
+		.duration(20 * 10)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.assembler('tfg:railgun_ammo_mars')
+		.itemInputs('#forge:double_plates/lead', '2x #forge:rods/ostrum', '2x #forge:fine_wires/silver')
+		.inputFluids('gtceu:rocket_fuel 250')
+		.itemOutputs('8x tfg:railgun_ammo_shell')
+		.dimension('ad_astra:mars')
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.MV])
 

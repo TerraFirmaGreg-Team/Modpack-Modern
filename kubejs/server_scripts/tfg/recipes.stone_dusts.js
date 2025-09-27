@@ -48,7 +48,7 @@ function registerTFGStoneDustRecipes(event) {
 		.duration(480)
 		.itemInputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Granite, 1))
 		.itemOutputs(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.SiliconDioxide, 1))
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Redrock, 1), 2000, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Redrock, 1), 3000, 0)
 		.outputFluids(Fluid.of('gtceu:oxygen', 5))
 
 	event.recipes.gtceu.centrifuge('gtceu:decomposition_centrifuging__deepslate')
@@ -70,6 +70,16 @@ function registerTFGStoneDustRecipes(event) {
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Magnesium, 1), 4500, 0)
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Gold, 1), 3500, 0)
 		.outputFluids(Fluid.of('gtceu:oxygen', 16))
+
+	event.recipes.gtceu.centrifuge('red_granite_dust_separation')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(480)
+		.itemInputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.GraniteRed, 1))
+		.itemOutputs(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.SiliconDioxide, 1))
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Hematite, 1), 3500, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Magnesium, 1), 2000, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Redrock, 1), 1500, 0)
+		.outputFluids(Fluid.of('gtceu:oxygen', 8))
 
 	// TFC
 
@@ -238,6 +248,26 @@ function registerTFGStoneDustRecipes(event) {
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Sodium, 1), 4000, 0)
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Potassium, 1), 4000, 0)
 		.outputFluids(Fluid.of('gtceu:oxygen', 50), Fluid.of('gtceu:helium_3', 300))
+		
+	event.recipes.gtceu.centrifuge('mars_stone_dust_separation')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(480)
+		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('mars_stone'), 1))
+		.itemOutputs(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.SiliconDioxide, 1))
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, TFGHelpers.getMaterial('aluminium_silicate'), 1), 4000, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Hematite, 1), 4500, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Beryllium, 1), 2000, 0)
+		.outputFluids(Fluid.of('gtceu:oxygen', 36))
+
+	event.recipes.gtceu.centrifuge('venus_stone_dust_separation')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(480)
+		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('venus_stone'), 1))
+		.itemOutputs(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.SiliconDioxide, 1))
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, TFGHelpers.getMaterial('aluminium_silicate'), 1), 3500, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Potassium, 1), 2000, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Lithium, 1), 2000, 0)
+		.outputFluids(Fluid.of('gtceu:oxygen', 32))
 
 	// AE2
 
@@ -251,11 +281,18 @@ function registerTFGStoneDustRecipes(event) {
 	// Create
 
 	event.recipes.gtceu.centrifuge('asurine_dust_separation')
-		.EUt(GTValues.VA[GTValues.LV])
-		.duration(100)
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(480)
 		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('asurine'), 1))
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.CertusQuartz, 1), 4500, 0)
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Zinc, 1), 3500, 0)
+
+	event.recipes.gtceu.centrifuge('ochrum_dust_separation')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(480)
+		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('ochrum'), 1))
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Gold, 1), 3500, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Silver, 1), 3500, 0)
 
 	// Misc dust
 
@@ -268,7 +305,7 @@ function registerTFGStoneDustRecipes(event) {
 
 	event.recipes.gtceu.centrifuge('netherrack_separation')
 		.EUt(GTValues.VA[GTValues.MV])
-		.duration(10 * 20)
+		.duration(480)
 		.itemInputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Netherrack, 1))
 		.itemOutputs(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.SiliconDioxide, 1))
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Graphite, 1), 3500, 0)

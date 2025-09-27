@@ -233,18 +233,6 @@ const registerTFGBlocks = (event) => {
 
 	// #endregion
 
-	// #region Deprecated
-
-	event.create('treetap:tap')
-		.requiresTool(false)
-		.textureAll('tfg:item/deprecated')
-
-	event.create('tfcea:refrigerator')
-		.requiresTool(false)
-		.textureAll('tfg:item/deprecated')
-
-	// #endregion
-
 	// #region Reconstructed Stone
 	event.create(`tfg:rock/stone_wall`, 'wall')
 			.soundType('stone')

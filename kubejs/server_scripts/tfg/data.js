@@ -838,8 +838,7 @@ function registerTFGFLPlanters(event) {
 			"betterend:block/cave_pumpkin_greenhouse_2",
 			"betterend:block/cave_pumpkin_greenhouse_3",
 		],
-		//'betterend:block/cave_pumpkin_greenhouse_fruit'
-		"betterend:block/cave_pumpkin_top" // TODO: check
+		"betterend:block/cave_pumpkin_top"
 	);
 
 	event.firmalifePlantable(

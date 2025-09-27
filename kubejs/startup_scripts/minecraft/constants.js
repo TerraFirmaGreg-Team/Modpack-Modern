@@ -629,7 +629,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:ender_eye',
 
     // Кримзон незер дерево
-    // TODO: Разблокировать после добавления ада
     'minecraft:crimson_stem', 
     'minecraft:crimson_hyphae', 
     'minecraft:stripped_crimson_stem', 
@@ -647,7 +646,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crimson_hanging_sign',
 
     // Варпед незер дерево
-    // TODO: Разблокировать после добавления ада
     'minecraft:warped_stem', 
     'minecraft:warped_hyphae', 
     'minecraft:stripped_warped_stem', 
@@ -680,13 +678,10 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crying_obsidian',
     'minecraft:piglin_head', 
     'minecraft:zombie_head', 
-    'minecraft:nether_sprouts', 
-    'minecraft:warped_roots', 
     'minecraft:dragon_head', 
     'minecraft:dragon_breath', 
     'minecraft:creeper_head', 
     'minecraft:wither_skeleton_skull', 
-    'minecraft:crimson_roots', 
     'minecraft:nether_wart', 
     'minecraft:respawn_anchor',
     'minecraft:ghast_tear',
