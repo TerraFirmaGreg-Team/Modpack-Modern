@@ -32,10 +32,14 @@
 		{
 			"weight": 100,
 			"element": {
-				"location": "tfg:norse/ruins/norse_longhouse_ruin",
-				"processors": "tfg:illagers/norse_structures",
-				"projection": "rigid",
-				"element_type": "minecraft:single_pool_element"
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:norse/ruins/norse_longhouse_ruin",
+					"processors": "tfg:illagers/norse_structures",
+					"projection": "rigid"
+				},
+				"limit": 2
 			}
 		},
 		{
@@ -59,19 +63,27 @@
 		{
 			"weight": 50,
 			"element": {
-				"location": "tfg:norse/ruins/norse_smithy_ruin",
-				"processors": "tfg:illagers/norse_structures",
-				"projection": "rigid",
-				"element_type": "minecraft:single_pool_element"
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:norse/ruins/norse_smithy_ruin",
+					"processors": "tfg:illagers/norse_structures",
+					"projection": "rigid"
+				},
+				"limit": 1
 			}
 		},
 		{
 			"weight": 50,
 			"element": {
-				"location": "tfg:norse/burned/norse_smithy_burn",
-				"processors": "tfg:illagers/norse_structures",
-				"projection": "rigid",
-				"element_type": "minecraft:single_pool_element"
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:norse/burned/norse_smithy_burn",
+					"processors": "tfg:illagers/norse_structures",
+					"projection": "rigid"
+				},
+				"limit": 1
 			}
 		},
 		{

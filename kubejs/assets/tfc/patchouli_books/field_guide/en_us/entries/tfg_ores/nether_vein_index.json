@@ -1823,33 +1823,8 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 75%$(br)$(thing)Source of$(): Naquadah, Tritanium$(br)$(thing)Formula$(): Nq",
+      "text": "$(thing)Percentage$(): 100%$(br)$(thing)Source of$(): Naquadah, Tritanium$(br)$(thing)Formula$(): Nq",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Plutonium",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/plutonium"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 25%$(br)$(thing)Source of$(): Plutonium$(br)$(thing)Formula$(): Pu²³⁹$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -2754,7 +2729,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 50%$(br)$(thing)Source of$(): Uranium, Thorium, Lead$(br)$(thing)Formula$(): (UO₂)₃ThPb$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
+      "text": "$(thing)Percentage$(): 62%$(br)$(thing)Source of$(): Uranium, Thorium, Lead$(br)$(thing)Formula$(): (UO₂)₃ThPb$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -2774,13 +2749,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 50%$(br)$(thing)Source of$(): Uranium$(br)$(thing)Formula$(): UO₂$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
+      "text": "$(thing)Percentage$(): 25%$(br)$(thing)Source of$(): Uranium$(br)$(thing)Formula$(): UO₂$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Wulfenite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/wulfenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 12%$(br)$(thing)Source of$(): Lead, Molybdenum$(br)$(thing)Formula$(): PbMoO₄",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
