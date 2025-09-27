@@ -62,18 +62,16 @@ const registerTFGMaterials = (event) => {
 		.iconSet('metallic')
 		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR)
 		.blastTemp(1760, 'low', 256, 900)
-/*
-
 
 	event.create('rocket_alloy_t2')
 		.ingot()
-		.components('76x titanium', '15x vanadium', '3x aluminium', '3x chromium', '3x tin')
+		.components('19x titanium', '4x vanadium', '3x aluminium', '3x chromium', '3x tin')
 		.color(0x3c253d)
 		.iconSet('metallic')
 		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR)
 		.blastTemp(3200, 'mid', 1024, 1100)
 	
-	event.create('rocket_alloy_t3')
+/*	event.create('rocket_alloy_t3')
 		.ingot()
 		.components('8x titanium', '9x tungsten_steel', '2x tantalum', '2x radon')
 		.color(0x6c678b)
@@ -176,14 +174,14 @@ const registerTFGMaterials = (event) => {
 		.formula('(He³8O11H11)8(Ar)(?)')
 		.color(0xfeff5d)
 
-	//end region
+	//#endregion
 	event.create('liquid_carbon_dioxide')
 		.liquid(100) //Not realistic but I want it to be cryogenic
 		.components('1x carbon', '2x oxygen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xDBFBFF)
 
-	//Region Rockwool
+	//#region Rockwool
 	event.create('tfg:aes_mix')
 		.dust()
 		.flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
@@ -197,9 +195,9 @@ const registerTFGMaterials = (event) => {
 		.components('5x silicon_dioxide', '4x quicklime', '1x magnesia')
 		.color(0xe65609)
 		.secondaryColor(0xe65609)
-	//end region
+	//#endregion
 	
-	//Region Ammonia Borane
+	//#region Ammonia Borane
 	event.create('tfg:sodium_hydride')
 		.dust()
 		.flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
@@ -234,9 +232,9 @@ const registerTFGMaterials = (event) => {
 		.components('1x ammonia', '1x boron', '3x hydrogen')
 		.color(0xCCE3E3)
 		.secondaryColor(0xCCE3E3)
-	//endregion
+	//#endregion
 	
-	//region polyurethane
+	//#region polyurethane
 	event.create('tfg:aniline')
 		.liquid()
 		.components('6x carbon', '5x hydrogen', '1x nitrogen', '2x hydrogen')
@@ -261,9 +259,9 @@ const registerTFGMaterials = (event) => {
 		.flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
 		.components('13x carbon','10x hydrogen','2x nitrogen', '2x oxygen')
 		.color(0xFFFFBA)
-	//endregion
+	//#endregion
 	
-	//region aerogel
+	//#region aerogel
 	event.create('tfg:tmos')
 		.liquid()
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
@@ -275,7 +273,7 @@ const registerTFGMaterials = (event) => {
 	event.create('tfg:soaked_silica_gel')
 		.liquid()
 		.color(0x9ED5D9)
-	//endregion
+	//#endregion
 
 	//#region Bromine Line
 
@@ -333,7 +331,7 @@ const registerTFGMaterials = (event) => {
 
 	//#endregion
 
-	//# Mars Ore Line
+	//#region Mars Ore Line
 
 	event.create('lightweight_ostrum_vapor')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(760))
@@ -353,7 +351,7 @@ const registerTFGMaterials = (event) => {
 
 	//#endregion
 
-	// Moon Ore Line
+	//#region Moon Ore Line
 
 	event.create('regolith_vapor')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(727))
@@ -386,8 +384,6 @@ const registerTFGMaterials = (event) => {
 		.color('0xbab6b7')
 		.secondaryColor('0x7a5225')
 
-		// Reactant to Ore line
-
 	event.create('tfg:regolith_mush')
 		.dust()
 		.flags(GTMaterialFlags.NO_UNIFICATION)
@@ -395,5 +391,53 @@ const registerTFGMaterials = (event) => {
 		.color('0xa2cde0')
 		.secondaryColor('0x7a5225')
 
+	//#endregion
 
+	//#region Tungsten Line
+
+	event.create('tfg:sodium_tungstate')
+		.dust()
+		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.iconSet(GTMaterialIconSet.BRIGHT)
+		.components('2x sodium','1x tungsten', '4x oxygen')
+		.color('0xdcf6f7')
+
+	event.create('tfg:ammonium_tungstate')
+		.dust()
+		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.iconSet(GTMaterialIconSet.DULL)
+		.formula('(NH4)10(H2W12O42)')
+		.color('0xfafafa')
+
+	event.create('tfg:apt')
+		.gem()
+		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.iconSet(GTMaterialIconSet.FLINT)
+		.color('0xaabdf0')
+
+	event.create('tfg:tungsten_oxide')
+		.dust()
+		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.iconSet(GTMaterialIconSet.FLINT)
+		.components('1x tungsten', '3x oxygen')
+		.color('0xf0c851')
+
+	// #endregion
+
+	// #region Atmospheres
+
+	event.create('tfg:mars_air')
+        .gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(208))
+		.color('0xD08957')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.components('94x carbon_dioxide', '3x nitrogen', '2x argon', '1x oxygen')
+
+	// TODO: move neon and xenon somewhere else
+	event.create('tfg:liquid_mars_air')
+		.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(58))
+		.color('0xD08957')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.components('80x carbon_dioxide', '7x nitrogen', '5x argon', '3x oxygen', '1x carbon_monoxide', '1x deuterium', '1x neon', '1x krypton', '1x xenon')
+
+	// #endregion
 }

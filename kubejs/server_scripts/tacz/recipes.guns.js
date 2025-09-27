@@ -122,7 +122,7 @@ function registerTACZGunRecipes(event){
 	//Region certus era
 	event.recipes.gtceu.assembler('tfg_tacz:aa_pride')
 		.itemInputs('gtceu:titanium_small_fluid_pipe', '4x #forge:ingots/titanium', '2x #forge:plates/stainless_steel',
-					'2x #forge:rods/long/titanium', '8x #forge:screws/tungsten', 'tfg:certus_mechanism')
+					'2x #forge:rods/long/titanium', '8x #forge:screws/hsla_steel', 'tfg:certus_mechanism')
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1152))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"applied_armorer:niklas_pistol_semi_pride",HasBulletInBarrel:0b}'))
@@ -132,7 +132,7 @@ function registerTACZGunRecipes(event){
 		
 	event.recipes.gtceu.assembler('tfg_tacz:aa_right')
 		.itemInputs('gtceu:titanium_small_fluid_pipe', '5x #forge:ingots/titanium', '3x #forge:plates/stainless_steel',
-					'#forge:rods/long/titanium', '10x #forge:screws/tungsten', 'tfg:certus_mechanism')
+					'#forge:rods/long/titanium', '10x #forge:screws/hsla_steel', 'tfg:certus_mechanism')
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1152))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 		'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"applied_armorer:niklas_pistol_semi_right",HasBulletInBarrel:0b}'))
@@ -142,7 +142,7 @@ function registerTACZGunRecipes(event){
 		
 	event.recipes.gtceu.assembler('tfg_tacz:aa_win_win')
 		.itemInputs('2x gtceu:titanium_small_fluid_pipe', '10x #forge:ingots/titanium', '6x #forge:plates/stainless_steel',
-					'2x #forge:rods/long/titanium', '16x #forge:screws/tungsten', 'tfg:certus_mechanism')
+					'2x #forge:rods/long/titanium', '16x #forge:screws/hsla_steel', 'tfg:certus_mechanism')
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 2304))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"applied_armorer:niklas_pistol_double_win_win",HasBulletInBarrel:1b}'))
@@ -152,7 +152,7 @@ function registerTACZGunRecipes(event){
 		
 	event.recipes.gtceu.assembler('tfg_tacz:aa_ar')
 		.itemInputs('gtceu:titanium_small_fluid_pipe', '10x #forge:ingots/titanium', '5x #forge:plates/stainless_steel',
-					'2x #forge:rods/long/tungsten_carbide', '2x tfc:lens', '20x #forge:screws/tungsten', 
+					'2x #forge:rods/long/hsla_steel', '2x tfc:lens', '20x #forge:screws/hsla_steel', 
 					'tfg:certus_mechanism')
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 2880))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
@@ -163,7 +163,7 @@ function registerTACZGunRecipes(event){
 		
 	event.recipes.gtceu.assembler('tfg_tacz:aa_914')
 		.itemInputs('gtceu:titanium_small_fluid_pipe', '10x #forge:ingots/titanium', '10x #forge:plates/stainless_steel',
-					'2x #forge:rods/long/tungsten_carbide', '2x tfc:lens', '20x #forge:screws/tungsten', 
+					'2x #forge:rods/long/hsla_steel', '2x tfc:lens', '20x #forge:screws/hsla_steel', 
 					'tfg:certus_mechanism')
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1728))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
@@ -174,8 +174,8 @@ function registerTACZGunRecipes(event){
 		
 	event.recipes.gtceu.assembler('tfg_tacz:aa_k30')
 		.itemInputs('2x gtceu:titanium_small_fluid_pipe', '8x #forge:ingots/titanium', '2x #forge:ingots/magnalium', 
-					'8x #forge:plates/stainless_steel', '3x #forge:rods/long/tungsten_carbide', '2x tfc:lens', 
-					'24x #forge:screws/tungsten', 'tfg:certus_mechanism')
+					'8x #forge:plates/stainless_steel', '3x #forge:rods/long/hsla_steel', '2x tfc:lens', 
+					'24x #forge:screws/hsla_steel', 'tfg:certus_mechanism')
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1728))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"applied_armorer:moritz_sniper_semi_k30",HasBulletInBarrel:0b}'))

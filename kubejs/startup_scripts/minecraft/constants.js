@@ -62,11 +62,12 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:prismarine_shard',
 
     // Эндстоун
-    //'minecraft:end_stone', 
+    'minecraft:end_stone', 
     'minecraft:end_stone_bricks', 
     'minecraft:end_stone_brick_stairs',
     'minecraft:end_stone_brick_slab', 
     'minecraft:end_stone_brick_wall',
+    'minecraft:end_crystal',
 
     // Dripstone
     'minecraft:pointed_dripstone',
@@ -605,7 +606,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:azalea_leaves', 
     'minecraft:flowering_azalea_leaves', 
     'minecraft:dirt_path', 
-    //'minecraft:dragon_egg', 
+    'minecraft:dragon_egg', 
     'minecraft:end_portal_frame', 
     'minecraft:mushroom_stew', 
     'minecraft:structure_void',
@@ -629,7 +630,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:ender_eye',
 
     // Кримзон незер дерево
-    // TODO: Разблокировать после добавления ада
     'minecraft:crimson_stem', 
     'minecraft:crimson_hyphae', 
     'minecraft:stripped_crimson_stem', 
@@ -647,7 +647,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crimson_hanging_sign',
 
     // Варпед незер дерево
-    // TODO: Разблокировать после добавления ада
     'minecraft:warped_stem', 
     'minecraft:warped_hyphae', 
     'minecraft:stripped_warped_stem', 
@@ -665,11 +664,13 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:warped_hanging_sign',
 
     // Куча незер блоков
-    //'minecraft:netherrack',
+    'minecraft:netherrack',
     'minecraft:red_nether_bricks', 
     'minecraft:red_nether_brick_stairs', 
     'minecraft:red_nether_brick_slab', 
     'minecraft:red_nether_brick_wall',
+    'minecraft:blaze_rod',
+    'minecraft:blaze_powder',
 
     // И еще куча незер блоков
     // TODO: Разблокировать после добавления ада
@@ -680,13 +681,10 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crying_obsidian',
     'minecraft:piglin_head', 
     'minecraft:zombie_head', 
-    'minecraft:nether_sprouts', 
-    'minecraft:warped_roots', 
     'minecraft:dragon_head', 
     'minecraft:dragon_breath', 
     'minecraft:creeper_head', 
     'minecraft:wither_skeleton_skull', 
-    'minecraft:crimson_roots', 
     'minecraft:nether_wart', 
     'minecraft:respawn_anchor',
     'minecraft:ghast_tear',

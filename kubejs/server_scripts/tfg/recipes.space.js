@@ -6,8 +6,6 @@
  */
 function registerTFGSpaceRecipes(event) {
 
-	// TODO: Change these to work on any dim as long as they're in an oxygenated area?
-
 	const allowedCombustibleDims = [
 		{
 			dimension: "minecraft:the_nether",
@@ -34,26 +32,55 @@ function registerTFGSpaceRecipes(event) {
 
 	// Air collector
 
-	event.recipes.gtceu.gas_collector('nether')
+	event.recipes.gtceu.gas_collector('tfg:nether')
 		.circuit(2)
 		.outputFluids(Fluid.of('gtceu:air', 10000))
 		.dimension('minecraft:the_nether')
 		.duration(200)
 		.EUt(16)
 
-	event.recipes.gtceu.gas_collector('moon')
+	event.recipes.gtceu.gas_collector('tfg:moon')
 		.circuit(3)
 		.outputFluids(Fluid.of('gtceu:argon', 1))
 		.dimension('ad_astra:moon')
 		.duration(20*60*30)
 		.EUt(16)
 
-	event.recipes.gtceu.gas_collector('mars')
-		.circuit(3)
-		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 10000))
+	event.recipes.gtceu.gas_collector('tfg:mars')
+		.circuit(4)
+		.outputFluids(Fluid.of('tfg:mars_air', 10000))
 		.dimension('ad_astra:mars')
 		.duration(20*10)
 		.EUt(16)
+
+	event.recipes.gtceu.vacuum_freezer('tfg:liquid_mars_air')
+		.inputFluids(Fluid.of('tfg:mars_air', 4000))
+		.outputFluids(Fluid.of('tfg:liquid_mars_air', 4000))
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.centrifuge('tfg:centrifuge_mars_air')
+		.inputFluids(Fluid.of('tfg:mars_air', 10000))
+		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 3900), Fluid.of('gtceu:nitrogen', 1000), Fluid.of('gtceu:argon', 500))
+		.duration(1600)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	// TODO: move neon and xenon somewhere else
+	event.recipes.gtceu.distillation_tower('tfg:distill_liquid_mars_air')
+		.inputFluids(Fluid.of('tfg:liquid_mars_air', 100000))
+		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 80000))
+		.outputFluids(Fluid.of('gtceu:carbon_monoxide', 1000))
+		.outputFluids(Fluid.of('gtceu:nitrogen', 7000))
+		.outputFluids(Fluid.of('gtceu:argon', 5000))
+		.outputFluids(Fluid.of('gtceu:oxygen', 3000))
+		.outputFluids(Fluid.of('gtceu:krypton', 1000))
+		.outputFluids(Fluid.of('gtceu:deuterium', 1000))
+		.outputFluids(Fluid.of('gtceu:neon', 1000))
+		.outputFluids(Fluid.of('gtceu:xenon', 1000))
+		.chancedOutput('gtceu:ammonium_chloride_dust', 2250, 0)
+		.disableDistilleryRecipes(true)
+		.duration(2000)
+		.EUt(GTValues.VA[GTValues.EV])
 
 	// Aqueous accumulator
 	
@@ -150,6 +177,16 @@ function registerTFGSpaceRecipes(event) {
 
 	event.recipes.gtceu.fermenter('tfg:chorus')
 		.itemInputs('minecraft:chorus_fruit')
+		.inputFluids(Fluid.of('gtceu:biomass', 20))
+		.chancedOutput('ae2:ender_dust', 100, 0)
+		.outputFluids(Fluid.of('gtceu:nitrogen', 1000))
+		.circuit(2)
+		.duration(5 * 20)
+		.EUt(GTValues.VA[GTValues.MV])
+		.dimension('ad_astra:moon')
+
+	event.recipes.gtceu.fermenter('tfg:chorus_flower')
+		.itemInputs('tfg:lunar_chorus_flower')
 		.inputFluids(Fluid.of('gtceu:biomass', 20))
 		.chancedOutput('ae2:ender_dust', 100, 0)
 		.outputFluids(Fluid.of('gtceu:nitrogen', 1000))
@@ -263,6 +300,14 @@ function registerTFGSpaceRecipes(event) {
 		.inputFluids('gtceu:rocket_fuel 250')
 		.itemOutputs('4x tfg:railgun_ammo_shell')
 		.dimension('ad_astra:moon')
+		.duration(20 * 10)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.assembler('tfg:railgun_ammo_mars')
+		.itemInputs('#forge:double_plates/lead', '2x #forge:rods/ostrum', '2x #forge:fine_wires/silver')
+		.inputFluids('gtceu:rocket_fuel 250')
+		.itemOutputs('8x tfg:railgun_ammo_shell')
+		.dimension('ad_astra:mars')
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.MV])
 

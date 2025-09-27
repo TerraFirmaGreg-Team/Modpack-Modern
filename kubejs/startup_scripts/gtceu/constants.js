@@ -62,6 +62,9 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:tiny_netherite_dust",
     "gtceu:small_netherite_dust",
     "gtceu:netherite_dust",
+    "gtceu:blaze_bucket",
+    "gtceu:small_blaze_dust",
+    "gtceu:tiny_blaze_dust",
 
     "gtceu:treated_wood_hanging_sign",
     "gtceu:treated_wood_boat",

@@ -854,12 +854,6 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Nether Brick
-
-	event.smelting('minecraft:nether_brick', 'minecraft:netherrack')
-
-	//#endregion
-
 	//#region Netherite leggings (for the lavaproof diving set)
 
 	event.recipes.tfc.advanced_shaped_crafting(
@@ -948,9 +942,9 @@ const registerMinecraftRecipes = (event) => {
 		'ABA',
 		'CDC'
 	], {
-		A: 'minecraft:blaze_rod',
-		B: 'minecraft:blaze_powder',
-		C: '#forge:ingots/blue_steel',
+		A: '#forge:rods/black_steel',
+		B: 'minecraft:lava_bucket',
+		C: '#minecraft:logs',
 		D: '#forge:storage_blocks/charcoal',
 	}).id('tfg:campfire_charcoal')
 
@@ -959,9 +953,9 @@ const registerMinecraftRecipes = (event) => {
 		'ABA',
 		'CDC'
 	], {
-		A: 'minecraft:blaze_rod',
-		B: 'minecraft:blaze_powder',
-		C: '#forge:ingots/blue_steel',
+		A: '#forge:rods/black_steel',
+		B: 'minecraft:lava_bucket',
+		C: '#minecraft:logs',
 		D: '#forge:storage_blocks/coal',
 	}).id('tfg:campfire_coal')
 	//#endregion

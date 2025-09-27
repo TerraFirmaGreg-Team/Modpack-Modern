@@ -45,7 +45,7 @@ ServerEvents.tags('item', event => {
 	registerRnrItemTags(event)
 	registerSophisticatedBackpacksItemTags(event)
 	registerSoulboundItemTags(event)
-	registeSNSItemTags(event)
+	registerSNSItemTags(event)
 	registerSpeciesItemTags(event)
 	registerTACZItemTags(event)
 	registerTFCAmbientalItemTags(event)
@@ -125,12 +125,10 @@ ServerEvents.tags('worldgen/placed_feature', event => {
 })
 
 ServerEvents.tags('worldgen/biome', event => {
+	registerAdAstraBiomeTags(event)
+	registerCreatePickyWheelsBiomeTags(event)
 	registerTFCBiomeTags(event)
 	registerTFGBiomeTags(event)
-})
-
-ServerEvents.tags('worldgen/biome', event => {
-	registerAdAstraBiomeTags(event)
 })
 
 ServerEvents.tags('entity_type', event => {
