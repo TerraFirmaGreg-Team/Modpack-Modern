@@ -62,11 +62,12 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:prismarine_shard',
 
     // Эндстоун
-    //'minecraft:end_stone', 
+    'minecraft:end_stone', 
     'minecraft:end_stone_bricks', 
     'minecraft:end_stone_brick_stairs',
     'minecraft:end_stone_brick_slab', 
     'minecraft:end_stone_brick_wall',
+    'minecraft:end_crystal',
 
     // Dripstone
     'minecraft:pointed_dripstone',
@@ -605,7 +606,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:azalea_leaves', 
     'minecraft:flowering_azalea_leaves', 
     'minecraft:dirt_path', 
-    //'minecraft:dragon_egg', 
+    'minecraft:dragon_egg', 
     'minecraft:end_portal_frame', 
     'minecraft:mushroom_stew', 
     'minecraft:structure_void',
@@ -663,7 +664,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:warped_hanging_sign',
 
     // Куча незер блоков
-    //'minecraft:netherrack',
+    'minecraft:netherrack',
     'minecraft:red_nether_bricks', 
     'minecraft:red_nether_brick_stairs', 
     'minecraft:red_nether_brick_slab', 

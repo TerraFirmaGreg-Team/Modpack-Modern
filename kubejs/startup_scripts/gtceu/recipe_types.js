@@ -1,17 +1,4 @@
 const registerGTCEuRecipeTypes = (event) => {
-	event.create('nether_dome')
-		.category('nether_dome')
-		.setEUIO('in')
-		.setMaxIOSize(2, 1, 1, 1)
-		.setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
-		.setSound(GTSoundEntries.FIRE)
-
-	event.create('end_dome')
-		.category('end_dome')
-		.setEUIO('in')
-		.setMaxIOSize(2, 1, 1, 1)
-		.setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
-		.setSound(GTSoundEntries.FIRE)
 
 	event.create('steam_bloomery')
 		.category('steam_bloomery')

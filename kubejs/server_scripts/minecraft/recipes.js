@@ -850,12 +850,6 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Nether Brick
-
-	event.smelting('minecraft:nether_brick', 'minecraft:netherrack')
-
-	//#endregion
-
 	//#region Netherite leggings (for the lavaproof diving set)
 
 	event.recipes.tfc.advanced_shaped_crafting(

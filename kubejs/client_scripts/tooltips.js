@@ -25,14 +25,6 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['gtceu:large_chemical_reactor'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.perfect_overclock'))
 	})
-	event.addAdvanced(['gtceu:nether_dome'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.nether_dome_1')),
-		text.add(2, Text.translate('tfg.tooltip.machine.customize_interior'))
-	})
-	event.addAdvanced(['gtceu:end_dome'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.end_dome_1')),
-		text.add(2, Text.translate('tfg.tooltip.machine.customize_interior'))
-	})
 
 	// Insulation
 	event.addAdvanced(['create:copper_diving_helmet', 'create:copper_backtank', 'create:copper_diving_boots'], (item, advanced, text) => {
