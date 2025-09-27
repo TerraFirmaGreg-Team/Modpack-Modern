@@ -1,15 +1,18 @@
 {
     "name": "TerraFirmaGreg-Modern",
-    "version": "0.9.10",
+    "version": "DEV",
+    "release_type": "release",
     "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
     "author": "Exception, Xikaro",
     "overrides": [
         "config",
         "defaultconfigs",
         "kubejs",
+        "tacz",
         "!kubejs/probe/**"
     ],
     "server_overrides": [
+        "!kubejs/assets",
         "forge-auto-install.txt",
         "generate_auto_installation_file.bat",
         "minecraft_server.jar",
@@ -30,9 +33,6 @@
             "side": "CLIENT"
         },
         "better-chat": {
-            "side": "CLIENT"
-        },
-        "better-foliage-renewed": {
             "side": "CLIENT"
         },
         "betterf3": {
@@ -158,9 +158,6 @@
         "first-person-model": {
             "side": "CLIENT"
         },
-        "ftb-backups-2": {
-            "side": "CLIENT"
-        },
         "no-report-button": {
             "side": "CLIENT"
         },
@@ -243,7 +240,7 @@
             "side": "BOTH"
         },
         "pick-up-notifier": {
-            "side": "BOTH"
+            "side": "CLIENT"
         },
         "inventory-tweaks-refoxed": {
             "side": "BOTH"
@@ -254,7 +251,43 @@
         "detected-setblock-be-gone": {
             "side": "BOTH"
         },
+
+
+        "autopack-director": {
+            "export": false
+        },
+        "ftb-backups-2": {
+            "side": "BOTH",
+            "export": true
+        },
+        "ftb-chunks-forge": {
+            "export": true
+        },
+        "ftb-essentials": {
+            "export": true
+        },
+        "ftb-filter-system": {
+            "export": true
+        },
+        "ftb-library-forge": {
+            "export": true
+        },
+        "ftb-quests-forge": {
+            "export": true
+        },
+        "ftb-ranks-forge": {
+            "export": true
+        },
+        "ftb-teams-forge": {
+            "export": true
+        },
+        "ftb-xmod-compat": {
+            "export": true
+        },
+
+
         "probejs": {
+            "side": "CLIENT",
             "export": false
         }
     }

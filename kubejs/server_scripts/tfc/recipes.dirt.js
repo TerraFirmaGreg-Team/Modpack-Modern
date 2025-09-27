@@ -1,4 +1,5 @@
 ﻿// priority: 0
+"use strict";
 
 function registerTFCDirtRecipes(event) {
 
@@ -32,7 +33,7 @@ function registerTFCDirtRecipes(event) {
 		// Dirt -> Mud
 		event.recipes.gtceu.mixer(`${mud}_grass_to_mud`)
 			.itemInputs(`tfc:dirt/${mud}`)
-			.inputFluids(Fluid.of('minecraft:water', 100))
+			.inputFluids("#tfc:any_water 100")
 			.circuit(2)
 			.itemOutputs(`tfc:mud/${mud}`)
 			.duration(200)

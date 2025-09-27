@@ -1,0 +1,6 @@
+
+[Teleporting]
+	#How long in ticks before the entity can teleport again
+	#Range: > 0
+	cooldown = 600
+

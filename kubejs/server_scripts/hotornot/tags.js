@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerHotOrNotItemTags = (event) => {
     
@@ -7,6 +8,10 @@ const registerHotOrNotItemTags = (event) => {
         event.removeAllTagsFrom(item)
         event.add('c:hidden_from_recipe_viewers', item)
     })
+
+    event.add('tfchotornot:hot_whitelist', '#forge:hot_ingots')
+
+    event.add('firmalife:usable_on_oven', '#tfchotornot:insulating')
 }
 
 const registerHotOrNotBlockTags = (event) => {

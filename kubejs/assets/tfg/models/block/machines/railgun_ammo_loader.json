@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "gtceu:machine",
+  "machine": "tfg:railgun_ammo_loader",
+  "replaceable_textures": [
+    "all"
+  ],
+  "variants": {
+      "": {
+          "model": {
+          "parent": "gtceu:block/machine/template/cube_all/sided",
+          "textures": {
+            "all": "gtceu:block/casings/voltage/mv/side",
+            "overlay_front": "tfg:block/machines/railgun_ammo_loader/overlay_front_active",
+            "overlay_front_emissive": "tfg:block/machines/railgun_ammo_loader/overlay_front_emissive"
+          }
+        }
+      }
+  }
+}

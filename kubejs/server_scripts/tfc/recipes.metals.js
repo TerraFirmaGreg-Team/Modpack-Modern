@@ -1,8 +1,23 @@
 ﻿// priority: 0
+"use strict";
 
 function registerTFCMetalsRecipes(event) {
 
-	//#region Рецепты для новых сплавов
+	//#region Alloying
+
+	// Fix ratios of TFC alloys to match GT's
+
+	event.recipes.tfc.alloy('tfc:bronze', [
+		TFC.alloyPart('tfc:copper', 0.7, 0.8),
+		TFC.alloyPart('tfc:tin', 0.2, 0.3)
+	]).id('tfc:alloy/bronze')
+
+	event.recipes.tfc.alloy('tfc:brass', [
+		TFC.alloyPart('tfc:copper', 0.7, 0.8),
+		TFC.alloyPart('tfc:zinc', 0.2, 0.3)
+	]).id('tfc:alloy/brass')
+
+	// New alloys
 
 	event.recipes.tfc.alloy('tfg:red_alloy', [
 		TFC.alloyPart('tfg:redstone', 0.75, 0.85),
@@ -14,9 +29,26 @@ function registerTFCMetalsRecipes(event) {
 		TFC.alloyPart('tfc:cast_iron', 0.45, 0.55)
 	]).id('tfg:alloy/tin_alloy')
 
+	event.recipes.tfc.alloy('tfg:invar', [
+		TFC.alloyPart('tfc:nickel', 0.60, 0.70),
+		TFC.alloyPart('tfc:cast_iron', 0.30, 0.40)
+	]).id('tfg:alloy/invar')
+
+	event.recipes.tfc.alloy('tfg:potin', [
+		TFC.alloyPart('tfc:copper', 0.63, 0.69),
+		TFC.alloyPart('tfc:tin', 0.19, 0.25),
+		TFC.alloyPart('tfg:lead', 0.08, 0.14)
+	]).id('tfg:alloy/potin')
+
+	event.recipes.tfc.alloy('tfg:cobalt_brass', [
+		TFC.alloyPart('tfc:brass', 0.74, 0.81),
+		TFC.alloyPart('tfg:cobalt', 0.08, 0.14),
+		TFC.alloyPart('tfg:aluminium_silicate', 0.08, 0.14)
+	]).id('tfg:alloy/cobalt_brass')
+
 	//#endregion
 
-	
+
 	//#region Фикс рецептов колоколов
 
 	//#region Из золота
@@ -84,52 +116,58 @@ function registerTFCMetalsRecipes(event) {
 	event.recipes.gtceu.forge_hammer('tfg/refined_bloom')
 		.itemInputs('tfc:raw_iron_bloom')
 		.itemOutputs('tfc:refined_iron_bloom')
-		.duration(400)
+		.duration(200)
 		.EUt(4)
 
 	// Укрепленная крица -> Слиток кованного железа
 	event.recipes.gtceu.forge_hammer('tfg/wrought_iron_ingot')
 		.itemInputs('tfc:refined_iron_bloom')
 		.itemOutputs('gtceu:wrought_iron_ingot')
-		.duration(400)
+		.duration(200)
 		.EUt(4)
 
 	// Чугун -> Высокоуглеродная сталь
 	event.recipes.gtceu.forge_hammer('tfg/high_carbon_steel')
 		.itemInputs('tfc:metal/ingot/pig_iron')
 		.itemOutputs('tfc:metal/ingot/high_carbon_steel')
-		.duration(500)
+		.duration(300)
 		.EUt(4)
 
 	// Высокоуглеродная сталь -> Cталь
 	event.recipes.gtceu.forge_hammer('tfg/steel')
 		.itemInputs('tfc:metal/ingot/high_carbon_steel')
 		.itemOutputs('gtceu:steel_ingot')
-		.duration(500)
+		.duration(300)
 		.EUt(4)
 
 	// Высокоуглеродная черная сталь -> черная сталь 
 	event.recipes.gtceu.forge_hammer('tfg/black_steel')
 		.itemInputs('tfc:metal/ingot/high_carbon_black_steel')
 		.itemOutputs('tfc:metal/ingot/black_steel')
-		.duration(600)
+		.duration(300)
 		.EUt(4)
 
 	// Высокоуглеродная синяя сталь -> синяя сталь 
 	event.recipes.gtceu.forge_hammer('tfg/blue_steel')
 		.itemInputs('tfc:metal/ingot/high_carbon_blue_steel')
 		.itemOutputs('tfc:metal/ingot/blue_steel')
-		.duration(700)
+		.duration(400)
 		.EUt(4)
 
 	// Высокоуглеродная красная сталь -> красная сталь 
 	event.recipes.gtceu.forge_hammer('tfg/red_steel')
 		.itemInputs('tfc:metal/ingot/high_carbon_red_steel')
 		.itemOutputs('tfc:metal/ingot/red_steel')
-		.duration(700)
+		.duration(400)
 		.EUt(4)
 
 	// Слабая сталь + Чугун -> Высокоуглеродная черная сталь
+	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_black_steel',
+		['tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron', 'tfc:powder/flux'])
+		.heated()
+		.recipeTier(1)
+		.id(`greate:compacting/high_carbon_black_steel`)
+
 	event.recipes.gtceu.alloy_smelter('tfg/high_carbon_black_steel')
 		.itemInputs('tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron')
 		.itemOutputs('2x tfc:metal/ingot/high_carbon_black_steel')
@@ -137,6 +175,12 @@ function registerTFCMetalsRecipes(event) {
 		.EUt(4)
 
 	// Слабая синяя сталь + Черная сталь -> Высокоуглеродная синяя сталь
+	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_blue_steel',
+		['tfc:metal/ingot/weak_blue_steel', 'tfc:metal/ingot/black_steel', 'tfc:powder/flux'])
+		.heated()
+		.recipeTier(1)
+		.id(`greate:compacting/high_carbon_blue_steel`)
+
 	event.recipes.gtceu.alloy_smelter('tfg/high_carbon_blue_steel')
 		.itemInputs('tfc:metal/ingot/weak_blue_steel', 'tfc:metal/ingot/black_steel')
 		.itemOutputs('2x tfc:metal/ingot/high_carbon_blue_steel')
@@ -144,24 +188,64 @@ function registerTFCMetalsRecipes(event) {
 		.EUt(4)
 
 	// Слабая красная сталь + Черная сталь -> Высокоуглеродная красная сталь
+	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_red_steel',
+		['tfc:metal/ingot/weak_red_steel', 'tfc:metal/ingot/black_steel', 'tfc:powder/flux'])
+		.heated()
+		.recipeTier(1)
+		.id(`greate:compacting/high_carbon_red_steel`)
+
 	event.recipes.gtceu.alloy_smelter('tfg/high_carbon_red_steel')
 		.itemInputs('tfc:metal/ingot/weak_red_steel', 'tfc:metal/ingot/black_steel')
 		.itemOutputs('2x tfc:metal/ingot/high_carbon_red_steel')
 		.duration(700)
 		.EUt(4)
 
+	// Rose Gold + Sterling Silver
+	const copper_types = [
+		"#forge:ingots/copper",
+		"#forge:dusts/copper",
+		"#forge:ingots/annealed_copper",
+		"#forge:dusts/annealed_copper"
+	];
+	const gold_types = [
+		"#forge:ingots/gold",
+		"#forge:dusts/gold"
+	];
+	const silver_types = [
+		"#forge:ingots/silver",
+		"#forge:dusts/silver"
+	];
+
+	copper_types.forEach(copper_types_array => {
+		gold_types.forEach(gold_types_array => {
+			event.recipes.gtceu.alloy_smelter(`rose_gold_from_${copper_types_array.replace(/:/g, "/").replace(/#/g, "")}_and_${gold_types_array.replace(/:/g, "/").replace(/#/g, "")}`)
+				.itemInputs(Ingredient.of(copper_types_array).withCount(1), Ingredient.of(gold_types_array).withCount(4))
+				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.RoseGold, 5))
+				.duration(20*10)
+				.EUt(GTValues.VA[GTValues.LV])
+		});
+		silver_types.forEach(silver_types_array => {
+			event.recipes.gtceu.alloy_smelter(`sterling_silver_from_${copper_types_array.replace(/:/g, "/").replace(/#/g, "")}_and_${silver_types_array.replace(/:/g, "/").replace(/#/g, "")}`)
+				.itemInputs(Ingredient.of(copper_types_array).withCount(1), Ingredient.of(silver_types_array).withCount(4))
+				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.SterlingSilver, 5))
+				.duration(20*10)
+				.EUt(GTValues.VA[GTValues.LV])
+		});
+	});
+
+
 	const TFC_INTERMEDIATE_METALS =
-	[
-		{ metal: 'pig_iron', meltTemp: 1535 },
-		{ metal: 'high_carbon_steel', meltTemp: 1540 },
-		{ metal: 'high_carbon_black_steel', meltTemp: 1540 },
-		{ metal: 'high_carbon_red_steel', meltTemp: 1540 },
-		{ metal: 'high_carbon_blue_steel', meltTemp: 1540 },
-		{ metal: 'weak_steel', meltTemp: 1540 },
-		{ metal: 'weak_blue_steel', meltTemp: 1540 },
-		{ metal: 'weak_red_steel', meltTemp: 1540 },
-		{ metal: 'unknown', meltTemp: 400 }
-	]
+		[
+			{ metal: 'pig_iron', meltTemp: 1535 },
+			{ metal: 'high_carbon_steel', meltTemp: 1540 },
+			{ metal: 'high_carbon_black_steel', meltTemp: 1540 },
+			{ metal: 'high_carbon_red_steel', meltTemp: 1540 },
+			{ metal: 'high_carbon_blue_steel', meltTemp: 1540 },
+			{ metal: 'weak_steel', meltTemp: 1540 },
+			{ metal: 'weak_blue_steel', meltTemp: 1540 },
+			{ metal: 'weak_red_steel', meltTemp: 1540 },
+			{ metal: 'unknown', meltTemp: 400 }
+		]
 
 	TFC_INTERMEDIATE_METALS.forEach(x => {
 
@@ -211,6 +295,11 @@ function registerTFCMetalsRecipes(event) {
 	// Рецепт Jacks
 	event.recipes.tfc.welding('tfc:jacks', '#forge:rods/brass', '#forge:plates/brass', 2)
 		.id(`tfc:welding/jacks`)
+
+	event.recipes.greate.compacting('tfc:jacks', ['#forge:rods/brass', '#forge:plates/brass', 'tfc:powder/flux'])
+		.heated()
+		.recipeTier(0)
+		.id('greate:compacting/jacks')
 
 	// Декрафт Jacks
 	event.recipes.tfc.heating('tfc:jacks', 930)
@@ -272,32 +361,6 @@ function registerTFCMetalsRecipes(event) {
 		.tier(5)
 		.id('tfc:anvil/blue_steel_ingot')
 
-	// Small Gears
-	event.recipes.tfc.anvil('gtceu:small_wrought_iron_gear', '#forge:ingots/wrought_iron', ['hit_last', 'shrink_second_last', 'draw_third_last'])
-		.tier(3)
-		.id('tfc:anvil/small_wrought_iron_gear')
-	event.recipes.tfc.anvil('gtceu:small_steel_gear', '#forge:ingots/steel', ['hit_last', 'shrink_second_last', 'draw_third_last'])
-		.tier(4)
-		.id('tfc:anvil/small_steel_gear')
-	event.recipes.tfc.anvil('gtceu:small_iron_gear', '#forge:ingots/iron', ['hit_last', 'shrink_second_last', 'draw_third_last'])
-		.tier(2)
-		.id('tfc:anvil/small_iron_gear')
-	event.recipes.tfc.anvil('gtceu:small_brass_gear', '#forge:ingots/brass', ['hit_last', 'shrink_second_last', 'draw_third_last'])
-		.tier(2)
-		.id('tfc:anvil/small_brass_gear')
-	event.recipes.tfc.anvil('gtceu:small_bronze_gear', '#forge:ingots/bronze', ['hit_last', 'shrink_second_last', 'draw_third_last'])
-		.tier(2)
-		.id('tfc:anvil/small_bronze_gear')
-	event.recipes.tfc.anvil('gtceu:small_bismuth_bronze_gear', '#forge:ingots/bismuth_bronze', ['hit_last', 'shrink_second_last', 'draw_third_last'])
-		.tier(2)
-		.id('tfc:anvil/small_bismuth_bronze_gear')
-	event.recipes.tfc.anvil('gtceu:small_black_bronze_gear', '#forge:ingots/black_bronze', ['hit_last', 'shrink_second_last', 'draw_third_last'])
-		.tier(2)
-		.id('tfc:anvil/small_black_bronze_gear')
-	event.recipes.tfc.anvil('gtceu:small_red_alloy_gear', '#forge:ingots/red_alloy', ['hit_last', 'shrink_second_last', 'draw_third_last'])
-		.tier(2)
-		.id('tfc:anvil/small_red_alloy_gear')
-
 	// Cast iron -> Raw Iron Bloom
 	event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('gtceu:iron', 144), 15000)
 		.id('tfc:bloomery/raw_iron_bloom')
@@ -317,23 +380,52 @@ function registerTFCMetalsRecipes(event) {
 	];
 
 	global.TFC_STONE_TYPES.forEach(stone => {
-        deposit_ores.forEach(ore => {
-		
-		event.recipes.gtceu.ore_washer(`tfc:ore_washer/water/deposit/${ore}/${stone}`)
-			.itemInputs(`1x tfc:deposit/${ore}/${stone}`)
-			.inputFluids(Fluid.of('minecraft:water', 100))
-			.circuit(4)
-			.itemOutputs(`1x tfc:ore/normal_${ore}`)
-			.duration(400)
-			.EUt(GTValues.VA[GTValues.LV])
+		deposit_ores.forEach(ore => {
 
-		event.recipes.gtceu.ore_washer(`tfc:ore_washer/distilled_water/deposit/${ore}/${stone}`)
-			.itemInputs(`1x tfc:deposit/${ore}/${stone}`)
-			.inputFluids(Fluid.of('gtceu:distilled_water', 50))
-			.circuit(4)
-			.itemOutputs(`1x tfc:ore/normal_${ore}`)
-			.duration(200)
-			.EUt(GTValues.VA[GTValues.LV])
-	})})
+			event.recipes.gtceu.ore_washer(`tfc:ore_washer/water/deposit/${ore}/${stone}`)
+				.itemInputs(`1x tfc:deposit/${ore}/${stone}`)
+				.inputFluids("#tfg:clean_water 100")
+				.circuit(4)
+				.itemOutputs(`1x tfc:ore/normal_${ore}`)
+				.duration(400)
+				.EUt(GTValues.VA[GTValues.LV])
+
+			event.recipes.gtceu.ore_washer(`tfc:ore_washer/distilled_water/deposit/${ore}/${stone}`)
+				.itemInputs(`1x tfc:deposit/${ore}/${stone}`)
+				.inputFluids(Fluid.of('gtceu:distilled_water', 50))
+				.circuit(4)
+				.itemOutputs(`1x tfc:ore/normal_${ore}`)
+				.duration(200)
+				.EUt(GTValues.VA[GTValues.LV])
+		})
+	})
 	//#endregion
+
+	// Melting powders
+
+	const METAL_POWDERS = [
+		{ powder: 'tfc:powder/native_copper', material: GTMaterials.Copper },
+		{ powder: 'tfc:powder/native_gold', material: GTMaterials.Gold },
+		{ powder: 'tfc:powder/hematite', material: GTMaterials.Hematite },
+		{ powder: 'tfc:powder/native_silver', material: GTMaterials.Silver },
+		{ powder: 'tfc:powder/cassiterite', material: GTMaterials.Cassiterite },
+		{ powder: 'tfc:powder/bismuthinite', material: GTMaterials.Bismuth },
+		{ powder: 'tfc:powder/garnierite', material: GTMaterials.Garnierite },
+		{ powder: 'tfc:powder/malachite', material: GTMaterials.Malachite },
+		{ powder: 'tfc:powder/magnetite', material: GTMaterials.Magnetite },
+		{ powder: 'tfc:powder/limonite', material: GTMaterials.YellowLimonite },
+		{ powder: 'tfc:powder/sphalerite', material: GTMaterials.Sphalerite },
+		{ powder: 'tfc:powder/tetrahedrite', material: GTMaterials.Tetrahedrite },
+		{ powder: 'tfc:powder/pyrite', material: GTMaterials.Pyrite }
+	]
+
+	METAL_POWDERS.forEach(x => {
+		const tfcProperty = x.material.getProperty(TFGPropertyKey.TFC_PROPERTY)
+
+		let outputMaterial = (tfcProperty.getOutputMaterial() === null) ? x.material : tfcProperty.getOutputMaterial()
+
+		event.recipes.tfc.heating(x.powder, tfcProperty.getMeltTemp())
+			.resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(36, tfcProperty.getPercentOfMaterial())))
+			.id(`tfg:heating/powder/${x.material.getName()}`)
+	})
 }

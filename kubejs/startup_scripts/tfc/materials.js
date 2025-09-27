@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerTFCMaterials = (event) => {
     const registerStoneMaterial = (rockType, color) => 
@@ -30,6 +31,12 @@ const registerTFCMaterials = (event) => {
 
     registerStoneMaterial('dripstone', 0x927965)
 
+    registerStoneMaterial('moon_stone', 0x506869)
+    registerStoneMaterial('moon_deepslate', 0x45474D)
+    registerStoneMaterial('mars_stone', 0xD08957)
+    registerStoneMaterial('venus_stone', 0xD5A664)
+    registerStoneMaterial('mercury_stone', 0x723E49)
+    registerStoneMaterial('glacio_stone', 0x9897BF)
 
     // Specialized icon sets for TFC's own
 
@@ -92,7 +99,7 @@ const registerTFCMaterials = (event) => {
     GTMaterials.Lithium.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_hematite'))
     GTMaterials.Galena.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_copper'))
     GTMaterials.Grossular.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_sapphire'))
-    GTMaterials.Neodymium.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_magnetite'))
+    GTMaterials.Neodymium.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_limonite'))
     GTMaterials.Palladium.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_pyrite'))
     GTMaterials.Platinum.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_gold'))
     GTMaterials.Thorium.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_hematite'))

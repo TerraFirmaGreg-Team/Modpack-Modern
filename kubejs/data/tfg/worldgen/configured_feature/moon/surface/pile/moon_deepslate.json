@@ -1,0 +1,46 @@
+{
+	"type": "minecraft:block_pile",
+	"config": {
+		"state_provider": {
+			"type": "minecraft:weighted_state_provider",
+			"entries": [
+				{
+					"weight": 10,
+					"data": {
+						"Name": "tfg:rock/hardened_moon_deepslate"
+					}
+				},
+				{
+					"weight": 25,
+					"data": {
+						"Name": "tfg:rock/cobble_moon_deepslate"
+					}
+				},
+				{
+					"weight": 5,
+					"data": {
+						"Name": "tfg:rock/moon_deepslate_slab"
+					}
+				},
+				{
+					"weight": 10,
+					"data": {
+						"Name": "tfg:rock/cobble_moon_deepslate_slab"
+					}
+				},
+				{
+					"weight": 25,
+					"data": {
+						"Name": "tfg:rock/mossy_cobble_moon_deepslate"
+					}
+				},
+				{
+					"weight": 10,
+					"data": {
+						"Name": "tfg:rock/mossy_cobble_moon_deepslate_slab"
+					}
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,146 @@
+{
+	"carvers": {
+		"air": [
+			"tfg:mars_desert_cave"
+		]
+	},
+	"downfall": 0.0,
+	"effects": {
+		"fog_color": 15117444,
+		"mood_sound": {
+			"block_search_extent": 8,
+			"offset": 2.0,
+			"sound": "minecraft:ambient.cave",
+			"tick_delay": 6000
+		},
+		"sky_color": 15117444,
+		"water_color": 4159204,
+		"water_fog_color": 1069623
+	},
+	"features": [
+		[
+			"tfc:erosion"
+		],
+		[],
+		[
+
+		],
+		[],
+		[],
+		[],
+		"#tfg:mars_veins",
+		"#tfg:mars_underground_decoration",
+		[
+			"tfc:raw_boulder",
+			"tfc:cobble_boulder",
+			"tfc:raw_boulder_small_patch",
+			"tfc:cobble_boulder_small_patch",
+			"tfg:mars/terrain/mossy_boulder",
+			"tfg:mars/surface/small_skull_and_bones",
+			"tfg:mars/surface/large_skull_and_bones",
+			"tfg:mars/surface/rotten_flesh_patch",
+			"tfg:mars/surface/pile_red_sand",
+			"tfg:mars/surface/pile_venus_sand_no_water",
+			"tfg:mars/surface/pile_mars_sand",
+			"tfg:mars/surface/flint_patch"
+		],
+		[
+			"tfg:mars/surface/feather_patch_wraptor",
+			"tfg:mars/surface/feather_patch_glider",
+			"tfg:mars/surface/selagine"
+		],
+		"#tfg:mars_top_layer_modification"
+	],
+	"has_precipitation": false,
+	"spawn_costs": {
+		"endermanoverhaul:crimson_forest_enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"endermanoverhaul:warped_forest_enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"endermanoverhaul:badlands_enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"minecraft:enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"endermanoverhaul:cave_enderman": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"species:quake": {
+			"energy_budget": 0.2,
+			"charge": 0.7
+		},
+		"ad_astra:martian_raptor": {
+			"energy_budget": 0.2,
+			"charge": 0.7
+		}
+	},
+	"spawners": {
+		"ambient": [],
+		"axolotls": [],
+		"creature": [
+			{
+				"type": "species:stackatick",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "wan_ancient_beasts:crusher",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "wan_ancient_beasts:glider",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 20
+			}
+		],
+		"misc": [],
+		"monster": [
+			{
+				"type": "endermanoverhaul:badlands_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "endermanoverhaul:cave_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "ad_astra:martian_raptor",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:quake",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
+		"underground_water_creature": [],
+		"water_ambient": [],
+		"water_creature": []
+	},
+	"temperature": 0.8
+}

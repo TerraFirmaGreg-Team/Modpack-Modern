@@ -14,8 +14,7 @@ B:advanced_customization_mode = 'false';
 
 ##[loading]
 
-B:preload_animations = 'true';
-S:preload_resources = '';
+S:preload_resources = '[cubic_panorama]beneath%!source_end!%[slideshow]new_loading_screen%!source_end!%';
 S:custom_game_intro_skip_text = '';
 B:allow_game_intro_skip = 'true';
 S:game_intro_animation_name = '';
@@ -53,6 +52,7 @@ F:layout_editor_grid_snapping_strength = '1.0';
 S:anchor_overlay_color_base_override = '';
 I:layout_editor_grid_size = '10';
 B:invert_anchor_overlay_color = 'false';
+B:enable_buddy = 'true';
 S:anchor_overlay_color_border_override = '';
 F:anchor_overlay_opacity_normal = '0.5';
 F:anchor_overlay_opacity_busy = '0.7';
@@ -85,3 +85,9 @@ B:show_welcome_screen = 'false';
 ##[keyframe_editor]
 
 B:arrow_keys_move_preview = 'false';
+
+
+##[advanced]
+
+L:placeholder_caching_duration_ms = '30';
+L:requirement_caching_duration_ms = '0';

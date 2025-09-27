@@ -1,0 +1,465 @@
+{
+	"type": "ad_astra:mars",
+	"generator": {
+		"type": "kubejs_tfc:wrapped",
+		"event_key": "mars",
+		"settings": {
+			"flat_bedrock": false,
+			"spawn_distance": 0,
+			"spawn_center_x": 0,
+			"spawn_center_z": 0,
+			"temperature_scale": 5000,
+			"rainfall_scale": 5000,
+			"continentalness": -0.5,
+			"rock_layer_settings": {
+				"rocks": {
+					"mars": {
+						"raw": "ad_astra:mars_stone",
+						"hardened": "tfg:rock/hardened_mars_stone",
+						"gravel": "tfg:rock/gravel_mars",
+						"cobble": "ad_astra:mars_cobblestone",
+						"sand": "ad_astra:mars_sand",
+						"sandstone": "ad_astra:mars_stone",
+						"spike": "tfg:spike/mars_stone_spike",
+						"mossy": "tfg:rock/mossy_cobble_mars",
+						"loose": "tfg:loose/mars_stone"
+					},
+					"venus": {
+						"raw": "ad_astra:venus_stone",
+						"hardened": "tfg:rock/hardened_venus_stone",
+						"gravel": "tfg:rock/gravel_venus",
+						"cobble": "ad_astra:venus_cobblestone",
+						"sand": "ad_astra:venus_sand",
+						"sandstone": "ad_astra:venus_sandstone",
+						"spike": "tfg:spike/venus_stone_spike",
+						"mossy": "tfg:rock/mossy_cobble_venus",
+						"loose": "tfg:loose/venus_stone"
+					},
+					"red_granite": {
+						"raw": "gtceu:red_granite",
+						"hardened": "tfg:rock/hardened_red_granite",
+						"gravel": "tfg:rock/gravel_red_granite",
+						"cobble": "gtceu:red_granite_cobblestone",
+						"sand": "tfc:sand/red",
+						"sandstone": "tfc:raw_sandstone/red",
+						"spike": "tfg:spike/red_granite_spike",
+						"loose": "tfg:loose/red_granite"
+					},
+					"granite": "tfc:granite",
+					"diorite": "tfc:diorite",
+					"gabbro": "tfc:gabbro",
+					"shale": "tfc:shale",
+					"claystone": "tfc:claystone",
+					"limestone": "tfc:limestone",
+					"conglomerate": "tfc:conglomerate",
+					"dolomite": "tfc:dolomite",
+					"chert": "tfc:chert",
+					"chalk": "tfc:chalk",
+					"basalt": "tfc:basalt",
+					"dacite": "tfc:dacite"
+				},
+				"layers": [
+					{
+						"id": "mix",
+						"layers": {
+							"mars": "bottom",
+							"dolomite": "bottom",
+							"chert": "bottom",
+							"conglomerate": "bottom",
+							"red_granite": "bottom",
+							"basalt": "bottom",
+							"dacite": "bottom",
+							"venus": "bottom",
+							"shale": "bottom"
+						}
+					},
+					{
+						"id": "sedimentary",
+						"layers": {
+							"mars": "mix",
+							"chalk": "mix",
+							"shale": "mix",
+							"dolomite": "mix",
+							"limestone": "mix",
+							"claystone": "mix",
+							"conglomerate": "mix",
+							"chert": "mix"
+						}
+					}
+				],
+				"bottom": [
+					"red_granite",
+					"gabbro",
+					"diorite",
+					"granite"
+				],
+				"ocean_floor": [
+					"sedimentary"
+				],
+				"volcanic": [
+					"sedimentary"
+				],
+				"land": [
+					"sedimentary"
+				],
+				"uplift": [
+					"sedimentary"
+				]
+			}
+		},
+		"generator": {
+			"type": "minecraft:noise",
+			"biome_source": {
+				"type": "minecraft:multi_noise",
+				"biomes": [
+					{
+						"biome": "tfg:mars/martian_deep_desert",
+						"parameters": {
+							"continentalness": [ -1.2, -0.455 ],
+							"depth": 0,
+							"erosion": [ -1, 1 ],
+							"humidity": [ -1, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -1, 1 ]
+						}
+					},
+					{
+						"biome": "tfg:mars/martian_dunes",
+						"parameters": {
+							"continentalness": [ -0.455, -0.19 ],
+							"depth": 0,
+							"erosion": [ -1, 1 ],
+							"humidity": [ -1, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -1, 1 ]
+						}
+					},
+					{
+						"biome": "tfg:mars/martian_dune_edge",
+						"parameters": {
+							"continentalness": [ -0.19, -0.16 ],
+							"depth": 0,
+							"erosion": [ -1, 1 ],
+							"humidity": [ -1, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -1, 1 ]
+						}
+					},
+
+
+					{
+						"biome": "tfg:mars/amber_edge",
+						"parameters": {
+							"continentalness": [ -0.16, -0.07 ],
+							"depth": 0,
+							"erosion": [ -1, 1 ],
+							"humidity": [ -1, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ 0.3, 1 ]
+						}
+					},
+					{
+						"biome": "tfg:mars/rusticus_edge",
+						"parameters": {
+							"continentalness": [ -0.16, -0.07 ],
+							"depth": 0,
+							"erosion": [ -1, 1 ],
+							"humidity": [ -1, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -0.3, 0.3 ]
+						}
+					},
+					{
+						"biome": "tfg:mars/sangnum_edge",
+						"parameters": {
+							"continentalness": [ -0.16, -0.07 ],
+							"depth": 0,
+							"erosion": [ -1, 1 ],
+							"humidity": [ -1, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -1, -0.3 ]
+						}
+					},
+
+
+					{
+						"biome": "tfg:mars/martian_river",
+						"parameters": {
+							"continentalness": [ -0.07, 0.65 ],
+							"depth": 0,
+							"erosion": [ 0, 1 ],
+							"humidity": [ -1, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -0.07, 0.07 ]
+						}
+					},
+
+
+					{
+						"biome": "tfg:mars/amber_plains",
+						"parameters": {
+							"continentalness": [ -0.07, 0.65 ],
+							"depth": 0,
+							"erosion": [ 0, 1 ],
+							"humidity": [ -0.2, 0.2 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ 0.07, 1 ]
+						}
+					},
+					{
+						"biome": "tfg:mars/rusticus_plains",
+						"parameters": {
+							"continentalness": [ -0.07, 0.65 ],
+							"depth": 0,
+							"erosion": [ 0, 1 ],
+							"humidity": [ -0.2, 0.2 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -1, -0.07 ]
+						}
+					},
+
+					{
+						"biome": "tfg:mars/rusticus_plains",
+						"parameters": {
+							"continentalness": [ -0.07, 0.65 ],
+							"depth": 0,
+							"erosion": [ 0, 1 ],
+							"humidity": [ -1, -0.2 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ 0.07, 1 ]
+						}
+					},
+					{
+						"biome": "tfg:mars/sangnum_plains",
+						"parameters": {
+							"continentalness": [ -0.07, 0.65 ],
+							"depth": 0,
+							"erosion": [ 0, 1 ],
+							"humidity": [ -1, -0.2 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -1, -0.07 ]
+						}
+					},
+
+					{
+						"biome": "tfg:mars/sangnum_plains",
+						"parameters": {
+							"continentalness": [ -0.07, 0.65 ],
+							"depth": 0,
+							"erosion": [ 0, 1 ],
+							"humidity": [ 0.2, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ 0.07, 1 ]
+						}
+					},
+					{
+						"biome": "tfg:mars/amber_plains",
+						"parameters": {
+							"continentalness": [ -0.07, 0.65 ],
+							"depth": 0,
+							"erosion": [ 0, 1 ],
+							"humidity": [ 0.2, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -1, -0.07 ]
+						}
+					},
+
+
+
+					{
+						"biome": "tfg:mars/rusticus_hills",
+						"parameters": {
+							"continentalness": [ -0.07, 0.65 ],
+							"depth": 0,
+							"erosion": [ -1, 0 ],
+							"humidity": [ -0.2, 0.2 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ 0, 1 ]
+						}
+					},
+					{
+						"biome": "tfg:mars/sangnum_hills",
+						"parameters": {
+							"continentalness": [ -0.07, 0.65 ],
+							"depth": 0,
+							"erosion": [ -1, 0 ],
+							"humidity": [ -0.2, 0.2 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -1, 0 ]
+						}
+					},
+
+					{
+						"biome": "tfg:mars/sangnum_hills",
+						"parameters": {
+							"continentalness": [ -0.07, 0.65 ],
+							"depth": 0,
+							"erosion": [ -1, 0 ],
+							"humidity": [ -1, -0.2 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ 0, 1 ]
+						}
+					},
+					{
+						"biome": "tfg:mars/amber_hills",
+						"parameters": {
+							"continentalness": [ -0.07, 0.65 ],
+							"depth": 0,
+							"erosion": [ -1, 0 ],
+							"humidity": [ -1, -0.2 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -1, 0 ]
+						}
+					},
+
+					{
+						"biome": "tfg:mars/amber_hills",
+						"parameters": {
+							"continentalness": [ -0.07, 0.65 ],
+							"depth": 0,
+							"erosion": [ -1, 0 ],
+							"humidity": [ 0.2, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ 0, 1 ]
+						}
+					},
+					{
+						"biome": "tfg:mars/rusticus_hills",
+						"parameters": {
+							"continentalness": [ -0.07, 0.65 ],
+							"depth": 0,
+							"erosion": [ -1, 0 ],
+							"humidity": [ 0.2, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -1, 0 ]
+						}
+					},
+
+
+
+					{
+						"biome": "tfg:mars/rusticus_hills",
+						"parameters": {
+							"continentalness": [ 0.65, 1 ],
+							"depth": 0,
+							"erosion": [ -1, 1 ],
+							"humidity": [ -0.2, 0.2 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ 0, 0.8 ]
+						}
+					},
+					{
+						"biome": "tfg:mars/sangnum_hills",
+						"parameters": {
+							"continentalness": [ 0.65, 1 ],
+							"depth": 0,
+							"erosion": [ -1, 1 ],
+							"humidity": [ -0.2, 0.2 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -0.8, 0 ]
+						}
+					},
+
+					{
+						"biome": "tfg:mars/sangnum_hills",
+						"parameters": {
+							"continentalness": [ 0.65, 1 ],
+							"depth": 0,
+							"erosion": [ -1, 1 ],
+							"humidity": [ -1, -0.2 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ 0, 0.8 ]
+						}
+					},
+					{
+						"biome": "tfg:mars/amber_hills",
+						"parameters": {
+							"continentalness": [ 0.65, 1 ],
+							"depth": 0,
+							"erosion": [ -1, 1 ],
+							"humidity": [ -1, -0.2 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -0.8, 0 ]
+						}
+					},
+
+					{
+						"biome": "tfg:mars/amber_hills",
+						"parameters": {
+							"continentalness": [ 0.65, 1 ],
+							"depth": 0,
+							"erosion": [ -1, 1 ],
+							"humidity": [ 0.2, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ 0, 0.8 ]
+						}
+					},
+					{
+						"biome": "tfg:mars/rusticus_hills",
+						"parameters": {
+							"continentalness": [ 0.65, 1 ],
+							"depth": 0,
+							"erosion": [ -1, 1 ],
+							"humidity": [ 0.2, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -0.8, 0 ]
+						}
+					},
+
+
+
+					{
+						"biome": "tfg:mars/martian_mountains",
+						"parameters": {
+							"continentalness": [ 0.65, 1 ],
+							"depth": 0,
+							"erosion": [ -1, 1 ],
+							"humidity": [ -1, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ -1, -0.8 ]
+						}
+					},
+					{
+						"biome": "tfg:mars/martian_mountains",
+						"parameters": {
+							"continentalness": [ 0.65, 1 ],
+							"depth": 0,
+							"erosion": [ -1, 1 ],
+							"humidity": [ -1, 1 ],
+							"offset": 0,
+							"temperature": [ -1, 1 ],
+							"weirdness": [ 0.8, 1 ]
+						}
+					}
+				]
+			},
+			"settings": "tfg:mars_noise"
+		}
+	}
+}

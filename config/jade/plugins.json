@@ -57,11 +57,25 @@
   "greate": {
     "belt_icon": true
   },
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
+  "tfcgroomer": {
+    "grooming_station": true
+  },
   "gtceu": {
     "primitive_pump": true,
     "auto_output_info": true,
     "workable_provider": true,
     "transformer": true,
+    "energy_converter_provider": true,
     "controllable_provider": true,
     "me_pattern_buffer": true,
     "exhaust_vent_info": true,
@@ -97,9 +111,6 @@
     "jade_chamber": true,
     "jade_wireless": true
   },
-  "lootr": {
-    "info": true
-  },
   "balm": {
     "jade": true
   },
@@ -124,6 +135,7 @@
     "cheese": true,
     "shelf": true,
     "oven_top": true,
+    "pumping_station": true,
     "solar_drier": true,
     "oven_bottom": true,
     "fruit_tree_sapling": true,
@@ -195,19 +207,14 @@
     "lightroom": true,
     "photograph_frame": true
   },
-  "create": {
-    "filter": true,
-    "backtank_capacity": true,
-    "goggles.requires_goggles": true,
-    "goggles": false,
-    "blaze_burner": true,
-    "exact_block": true,
-    "crafting_blueprint": true,
-    "goggles.detailed": false,
-    "placard": true
+  "jadeaddons.lootr": {
+    "info": true
   },
   "corpse": {
     "corpse": true
+  },
+  "afc": {
+    "tap": true
   },
   "tfc_support_indicator": {
     "support_indicator": true

@@ -1,0 +1,36 @@
+{
+	"type": "tfg:venus",
+	"generator": {
+		"type": "minecraft:noise",
+		"settings": "tfg:venus_noise",
+		"biome_source": {
+			"type": "minecraft:multi_noise",
+			"biomes": [
+				{
+					"biome": "tfg:venus/venus_delta",
+					"parameters": {
+						"temperature": 1,
+						"humidity": 0,
+						"continentalness": 0.3,
+						"erosion": -0.5,
+						"weirdness": 0.5,
+						"depth": 0,
+						"offset": 0
+					}
+				},
+				{
+					"biome": "tfg:venus/venus_fractured_lands",
+					"parameters": {
+						"temperature": 0.5,
+						"humidity": 0.5,
+						"continentalness": 0,
+						"erosion": 1.0,
+						"depth": -0.5,
+						"weirdness": -0.5,
+						"offset": 0.0
+					}
+				}
+			]
+		}
+	}
+}

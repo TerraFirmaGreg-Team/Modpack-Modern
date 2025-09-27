@@ -1,4 +1,5 @@
 ﻿// priority: 0
+"use strict";
 
 function registerTFCMachineRecipes(event) {
 	
@@ -117,20 +118,6 @@ function registerTFCMachineRecipes(event) {
 		.duration(3200)
 		.EUt(16)
 
-	//#region Рецепты плоского теста
-
-	global.TFC_MIXER_FLATBREAD_DOUGH_RECIPE_COMPONENTS.forEach(element => {
-		event.recipes.gtceu.mixer(element.name)
-			.itemInputs(element.input)
-			.inputFluids(Fluid.of('minecraft:water', 100))
-			.itemOutputs(element.output)
-			.duration(300)
-			.EUt(16)
-			.circuit(3)
-	})
-
-	//#endregion
-
 	//#region Молды в ассемблере
 
 	for (let i = 0; i < global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS.length; i++) {
@@ -143,6 +130,20 @@ function registerTFCMachineRecipes(event) {
 			.duration(450)
 			.EUt(2)
 	}
+
+	event.recipes.gtceu.extruder('tfg:unfired_clay_brick')
+		.itemInputs('minecraft:clay_ball')
+		.notConsumable('gtceu:ingot_extruder_mold')
+		.itemOutputs('tfc:ceramic/unfired_brick')
+		.duration(20)
+		.EUt(2)
+
+	event.recipes.gtceu.extruder('tfg:unfired_fire_clay_brick')
+		.itemInputs('tfc:fire_clay')
+		.notConsumable('gtceu:ingot_extruder_mold')
+		.itemOutputs('tfc:ceramic/unfired_fire_brick')
+		.duration(20)
+		.EUt(2)
 
 	//#endregion
 
@@ -174,158 +175,9 @@ function registerTFCMachineRecipes(event) {
 		.duration(2400)
 		.EUt(16)
 
-	// Curdled milk
-	event.recipes.gtceu.fermenter('tfg:fermenter/curdled_milk')
-		.inputFluids(Fluid.of('minecraft:milk', 2000))
-		.itemInputs('firmalife:rennet')
-		.outputFluids(Fluid.of('tfc:curdled_milk', 2000))
-		.duration(2400)
-		.EUt(16)
-
-	event.recipes.gtceu.fermenter('tfg:fermenter/curdled_yak_milk')
-		.inputFluids(Fluid.of('firmalife:yak_milk', 2000))
-		.itemInputs('firmalife:rennet')
-		.outputFluids(Fluid.of('firmalife:curdled_yak_milk', 2000))
-		.duration(2400)
-		.EUt(16)
-
-	event.recipes.gtceu.fermenter('tfg:fermenter/curdled_goat_milk')
-		.inputFluids(Fluid.of('firmalife:goat_milk', 2000))
-		.itemInputs('firmalife:rennet')
-		.outputFluids(Fluid.of('firmalife:curdled_goat_milk', 2000))
-		.duration(2400)
-		.EUt(16)
-
-	//Curds
-	event.recipes.gtceu.fermenter('tfg:fermenter/milk_curd')
-		.inputFluids(Fluid.of('tfc:curdled_milk', 1000))
-		.itemOutputs('firmalife:food/milk_curd')
-		.duration(1200)
-		.EUt(16)
-
-	event.recipes.gtceu.fermenter('tfg:fermenter/yak_curd')
-		.inputFluids(Fluid.of('firmalife:curdled_yak_milk', 1000))
-		.itemOutputs('firmalife:food/yak_curd')
-		.duration(1200)
-		.EUt(16)
-
-	event.recipes.gtceu.fermenter('tfg:fermenter/goat_curd')
-		.inputFluids(Fluid.of('firmalife:curdled_goat_milk', 1000))
-		.itemOutputs('firmalife:food/goat_curd')
-		.duration(1200)
-		.EUt(16)
-
-	// Cheese wheels
-	event.recipes.gtceu.fermenter('tfg:fermenter/gouda_wheel')
-		.inputFluids(Fluid.of('tfc:salt_water', 750))
-		.itemInputs('3x firmalife:food/milk_curd')
-		.itemOutputs('firmalife:gouda_wheel')
-		.duration(12000)
-		.EUt(24)
-
-	event.recipes.gtceu.fermenter('tfg:fermenter/shosha_wheel')
-		.inputFluids(Fluid.of('tfc:salt_water', 750))
-		.itemInputs('3x firmalife:food/yak_curd')
-		.itemOutputs('firmalife:shosha_wheel')
-		.duration(12000)
-		.EUt(24)
-
-	event.recipes.gtceu.fermenter('tfg:fermenter/feta_wheel')
-		.inputFluids(Fluid.of('tfc:salt_water', 750))
-		.itemInputs('3x firmalife:food/goat_curd')
-		.itemOutputs('firmalife:feta_wheel')
-		.duration(12000)
-		.EUt(24)
-
-	// Cutting
-	event.recipes.gtceu.cutter('tfg:cutter/gouda')
-		.itemInputs('firmalife:gouda_wheel')
-		.itemOutputs('4x firmalife:food/gouda')
-		.duration(40)
-		.EUt(7)
-
-	event.recipes.gtceu.cutter('tfg:cutter/shosha')
-		.itemInputs('firmalife:shosha_wheel')
-		.itemOutputs('4x firmalife:food/shosha')
-		.duration(40)
-		.EUt(7)
-
-	event.recipes.gtceu.cutter('tfg:cutter/feta')
-		.itemInputs('firmalife:feta_wheel')
-		.itemOutputs('4x firmalife:food/feta')
-		.duration(40)
-		.EUt(7)
-
-	event.recipes.gtceu.cutter('tfg:cutter/cheddar')
-		.itemInputs('firmalife:cheddar_wheel')
-		.itemOutputs('4x firmalife:food/cheddar')
-		.duration(40)
-		.EUt(7)
-
-	event.recipes.gtceu.cutter('tfg:cutter/chevre')
-		.itemInputs('firmalife:chevre_wheel')
-		.itemOutputs('4x firmalife:food/chevre')
-		.duration(40)
-		.EUt(7)
-
-	event.recipes.gtceu.cutter('tfg:cutter/rajya_metok')
-		.itemInputs('firmalife:rajya_metok_wheel')
-		.itemOutputs('4x firmalife:food/rajya_metok')
-		.duration(40)
-		.EUt(7)
-
-	// Misc
-	global.TFC_MILKS.forEach(milk => {
-		event.recipes.gtceu.fermenter(`tfg:fermenter/cream_from_${milk.id.replace(':', '_')}`)
-			.inputFluids(Fluid.of(milk.id, 1000))
-			.outputFluids(Fluid.of('firmalife:cream'))
-			.circuit(6)
-			.duration(1200)
-			.EUt(24)
-	})
-
-	event.recipes.gtceu.mixer('tfg:mixer/tomato_sauce')
-		.itemInputs('firmalife:food/tomato_sauce_mix')
-		.inputFluids(Fluid.of('minecraft:water', 200))
-		.itemOutputs('firmalife:food/tomato_sauce')
-		.duration(200)
-		.EUt(24)
-
 	//#endregion
 
-	//#region Оливки
-
-	event.recipes.gtceu.macerator(`tfg:tfc/olive_paste`)
-		.itemInputs('tfc:food/olive')
-		.itemOutputs('2x tfc:olive_paste')
-		.duration(60)
-		.EUt(2)
-
-	event.recipes.gtceu.mixer('tfg:tfc/olive_oil_water')
-		.inputFluids(Fluid.of('water', 200))
-		.itemInputs('1x tfc:olive_paste')
-		.outputFluids(Fluid.of('tfc:olive_oil_water', 200))
-		.duration(200)
-		.EUt(28)
-
-	event.recipes.gtceu.distillery('tfg:tfc/olive_oil')
-		.inputFluids(Fluid.of('tfc:olive_oil_water', 250))
-		.outputFluids(Fluid.of('tfc:olive_oil', 50))
-		.duration(600)
-		.EUt(28)
-
-	//#endregion
-
-	// Vinegar and Brine
-
-	global.TFC_ALCOHOL.forEach(alcohol => {
-		event.recipes.gtceu.fermenter(`tfg:tfc/vinegar/${alcohol.id.replace(':', '_')}`)
-			.itemInputs('#tfc:foods/fruits')
-			.inputFluids(Fluid.of(alcohol.id, 250))
-			.outputFluids(Fluid.of('tfc:vinegar', 250))
-			.duration(600)
-			.EUt(28)
-	})
+	// Brine
 
 	event.recipes.gtceu.mixer('tfg:tfc/brine')
 		.inputFluids(Fluid.of('tfc:salt_water', 900))
@@ -341,14 +193,6 @@ function registerTFCMachineRecipes(event) {
 		.itemInputs('#tfc:glass_batches')
 		.notConsumable('#tfg:unfinished_lamps')
 		.itemOutputs('tfc:lamp_glass')
-		.duration(100)
-		.EUt(2)
-
-	// Glass lens
-	event.recipes.gtceu.alloy_smelter(`tfg:tfc/glass_lens`)
-		.itemInputs('tfc:silica_glass_batch')
-		.notConsumable('#forge:lenses')
-		.itemOutputs('tfc:lens')
 		.duration(100)
 		.EUt(2)
 
@@ -468,7 +312,8 @@ function registerTFCMachineRecipes(event) {
 		.EUt(4)
 
 	// Jute Fiber
-	generateMixerRecipe(event, 'tfc:jute', Fluid.of('minecraft:water', 200), 'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
+	generateMixerRecipe(event, 'tfc:jute', "#tfg:clean_water 200",
+		'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
 
 	// Ceramic Recycling
 	event.recipes.gtceu.macerator('tfg:sherd_to_brick_dust')
@@ -525,8 +370,8 @@ function registerTFCMachineRecipes(event) {
 		.duration(1200)
 		.EUt(2)
 
-	const BROWNS = [ '16x #tfc:compost_browns_low', '4x #tfc:compost_browns_high' ];
-	const GREENS = [ '16x #tfc:compost_greens_low', '4x #tfc:compost_greens_high' ];
+	const BROWNS = [ '16x #tfc:compost_browns_low', '8x #tfc:compost_browns', '4x #tfc:compost_browns_high' ];
+	const GREENS = [ '16x #tfc:compost_greens_low', '8x #tfc:compost_greens', '4x #tfc:compost_greens_high' ];
 
 	let i = 0;
 	BROWNS.forEach(brown => {
@@ -561,17 +406,27 @@ function registerTFCMachineRecipes(event) {
 			.EUt(2)
 
 		event.custom({
-			type: 'vintageimprovements:turning',
+			type: 'vintageimprovements:polishing',
 			ingredients: [{ item: `tfc:wood/log/${wood}` }],
 			results: [{ item: `tfc:wood/stripped_log/${wood}` }],
+			speed_limits: 0,
 			processingTime: 50
 		}).id(`tfg:vi/lathe/stripping_${wood}_log`)
 
 		event.custom({
-			type: 'vintageimprovements:turning',
+			type: 'vintageimprovements:polishing',
 			ingredients: [{ item: `tfc:wood/wood/${wood}` }],
 			results: [{ item: `tfc:wood/stripped_wood/${wood}` }],
+			speed_limits: 0,
 			processingTime: 50
 		}).id(`tfg:vi/lathe/stripping_${wood}_wood`)
 	})
+
+	
+	event.recipes.gtceu.extruder('tfg:wrought_iron_grill_electric_only')
+		.itemInputs('2x #forge:plates/wrought_iron')
+		.notConsumable('tfg:large_casing_extruder_mold')
+		.itemOutputs('tfc:wrought_iron_grill')
+		.duration(60)
+		.EUt(8)
 }

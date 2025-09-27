@@ -1,0 +1,93 @@
+{
+	"custom_clouds": true,
+	"custom_sky": true,
+	"custom_weather": false,
+	"dimension": "ad_astra:venus_orbit",
+	"has_fog": false,
+	"has_thick_fog": false,
+	"render_in_rain": true,
+	"sky_renderables": [
+		{
+			"back_light_color": -39,
+			"back_light_scale": 42.0,
+			"blend": false,
+			"global_rotation": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"local_rotation": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY",
+			"scale": 14.0,
+			"texture": "ad_astra:textures/environment/sun.png"
+		},
+		{
+			"back_light_color": -801674,
+			"back_light_scale": 240.0,
+			"blend": false,
+			"global_rotation": [
+				180.0,
+				0.0,
+				0.0
+			],
+			"local_rotation": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"movement_type": "STATIC",
+			"scale": 80.0,
+			"texture": "ad_astra:textures/environment/venus.png"
+		}
+	],
+	"star_brightness": 0.6,
+	"star_colors": [
+		{
+			"data": -1447239681,
+			"weight": 3
+		},
+		{
+			"data": -1143472129,
+			"weight": 5
+		},
+		{
+			"data": -726785,
+			"weight": 100
+		},
+		{
+			"data": -3038977,
+			"weight": 80
+		},
+		{
+			"data": -7697665,
+			"weight": 150
+		},
+		{
+			"data": -12254977,
+			"weight": 10
+		},
+		{
+			"data": -2817,
+			"weight": 60
+		},
+		{
+			"data": -464897,
+			"weight": 40
+		},
+		{
+			"data": -256,
+			"weight": 20
+		},
+		{
+			"data": -65536,
+			"weight": 1
+		}
+	],
+	"stars": 13000,
+	"sunrise_angle": 90,
+	"sunrise_color": 0
+}

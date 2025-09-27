@@ -1,3 +1,6 @@
+﻿// priority: 0
+"use strict";
+
 const registerGTCEuMaterials = (event) => {
 
 }
@@ -11,19 +14,22 @@ const registerGTCEuMaterialModification = (event) => {
 	const $FLUID_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties')
 	const $HAZARD_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.HazardProperty')
 
+
 	const $MATERIAL_FLAGS = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
 
 	const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys')
 
 	const {
-		HAS_TFC_TOOL,
-		HAS_TFC_ARMOR,
+		HAS_TFC_TOOL, // used to generate new TFC items like javelins
+		HAS_GT_TOOL, // does not generate items, just TFC recipes for GT tools
+		HAS_TFC_ARMOR, 
 		HAS_TFC_UTILITY,
 		CAN_BE_UNMOLDED,
 		GENERATE_BELL,
 		GENERATE_DOUBLE_INGOTS,
 		HAS_SMALL_TFC_ORE,
 		HAS_SMALL_NATIVE_TFC_ORE,
+		GENERATE_DUSTY_ORES,
 	} = TFGMaterialFlags
 
 	const {
@@ -37,10 +43,12 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_FRAME,
 		GENERATE_PLATE,
 		GENERATE_DENSE,
-		GENERATE_RING
+		GENERATE_RING,
+		GENERATE_FOIL,
+		GENERATE_FINE_WIRE,
 	} = $MATERIAL_FLAGS
 
-	var metalTooling = [
+	const metalTooling = [
 		GTToolType.AXE,
 		GTToolType.PICKAXE,
 		GTToolType.HARD_HAMMER,
@@ -57,6 +65,9 @@ const registerGTCEuMaterialModification = (event) => {
 		GTToolType.BUZZSAW,
 		GTToolType.SCYTHE,
 		GTToolType.WIRE_CUTTER,
+		GTToolType.WIRE_CUTTER_LV,
+		GTToolType.WIRE_CUTTER_HV,
+		GTToolType.WIRE_CUTTER_IV,
 		GTToolType.DRILL_LV,
 		GTToolType.DRILL_MV,
 		GTToolType.DRILL_HV,
@@ -75,6 +86,10 @@ const registerGTCEuMaterialModification = (event) => {
 	/* TFC Проперти для материалов */
 
 	// TFC_PROPERTY = (forging temp, welding temp, melt temp, material, tier, percent of material)
+	// OR			= (forging temp, welding temp, melt temp, tier)
+	// 
+	// If registering a new material that you want to melt into a liquid in a vessel etc,
+	// make sure you add it to registerGTCEUMetals()!
 
 	GTMaterials.Copper.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(648, 864, 1080, 1));
 	GTMaterials.BismuthBronze.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(591, 788, 985, 2));
@@ -120,6 +135,19 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Redstone.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(240, 320, 460, 1));
 	GTMaterials.RedAlloy.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(570, 650, 740, 2));
 	GTMaterials.TinAlloy.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1000, 1100, 1250, 3));
+	GTMaterials.Lead.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(330 * 0.6, 330 * 0.8, 330, 2));
+	GTMaterials.Galena.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(330 * 0.6, 330 * 0.8, 330, GTMaterials.Lead, 2, 85));
+	GTMaterials.Invar.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1494 * 0.6, 1494 * 0.8, 1494, 3));
+	GTMaterials.Potin.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(807 * 0.6, 807 * 0.8, 807, 2));
+	GTMaterials.Cobalt.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495 * 0.6, 1495 * 0.8, 1495, 3));
+	GTMaterials.Cobaltite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1495 * 0.6, 1495 * 0.8, 1495, GTMaterials.Cobalt, 3, 85));
+	GTMaterials.CobaltBrass.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1060 * 0.6, 1060 * 0.8, 1060, 3));
+	let AlSi = GTMaterials.get('aluminium_silicate')
+	AlSi.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, 1))
+	GTMaterials.Kyanite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 95))
+	GTMaterials.Mica.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 90))
+	GTMaterials.Spodumene.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 85))
+	GTMaterials.Pollucite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 85))
 
 
 	GTMaterials.Gold.addFlags(GENERATE_BELL);
@@ -137,8 +165,27 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RoseGold.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Silver.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Tin.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Zinc.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Zinc.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_BOLT_SCREW);
 	GTMaterials.SterlingSilver.addFlags(GENERATE_DOUBLE_INGOTS);
+
+	//#region Generate Dusty Ores for Infinite Ores
+
+	GTMaterials.Goethite.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Diamond.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.CertusQuartz.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Gold.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Cassiterite.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Pitchblende.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Silver.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.TricalciumPhosphate.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Bauxite.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Lead.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Beryllium.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Thorium.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Uraninite.addFlags(GENERATE_DUSTY_ORES);
+
+	//#endregion
+
 	//
 	//        /* Имеют инструменты, броню TFC, двойные слитки */
 	GTMaterials.Copper.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
@@ -168,10 +215,26 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Silver.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
 	//
 	//        /* Имеют двойные слитки */
-	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR);
+	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR, CAN_BE_UNMOLDED);
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Lead.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Invar.addFlags(GENERATE_DOUBLE_INGOTS, HAS_GT_TOOL);
+	GTMaterials.Potin.addFlags(GENERATE_DOUBLE_INGOTS, CAN_BE_UNMOLDED);
+	GTMaterials.Cobalt.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.CobaltBrass.addFlags(GENERATE_DOUBLE_INGOTS, HAS_GT_TOOL);
 	//
-	//        /* Другое */
+	//		  /* Superconductors */
+	GTMaterials.ManganesePhosphide.addFlags(GENERATE_FINE_WIRE);
+	GTMaterials.MagnesiumDiboride.addFlags(GENERATE_FINE_WIRE);
+	GTMaterials.MercuryBariumCalciumCuprate.addFlags(GENERATE_FINE_WIRE);
+	GTMaterials.UraniumTriplatinum.addFlags(GENERATE_FINE_WIRE);
+	GTMaterials.SamariumIronArsenicOxide.addFlags(GENERATE_FINE_WIRE);
+	//GTMaterials.IndiumTinBariumTitaniumCuprate.addFlags();
+	//GTMaterials.UraniumRhodiumDinaquadide.addFlags();
+	//GTMaterials.EnrichedNaquadahTriniumEuropiumDuranide.addFlags();
+	GTMaterials.RutheniumTriniumAmericiumNeutronate.addFlags(GENERATE_FINE_WIRE);
+	//
+	//        /* Другое (Other) */
 
 	// TODO: Exception needs to check the wizardry
 	GTMaterials.Bismuth.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
@@ -185,6 +248,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Copper.addFlags(GENERATE_FRAME);
 	GTMaterials.BlackBronze.addFlags(GENERATE_FRAME);
 	GTMaterials.BismuthBronze.addFlags(GENERATE_FRAME);
+	GTMaterials.RhodiumPlatedPalladium.addFlags(GENERATE_FRAME);
 
 	GTMaterials.Wood.addFlags(GENERATE_SMALL_GEAR);
 	GTMaterials.Brass.addFlags(GENERATE_SMALL_GEAR, GENERATE_RING);
@@ -194,7 +258,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
 	GTMaterials.BlackSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
 	GTMaterials.BlueSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
-	GTMaterials.RedSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
+	GTMaterials.RedSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW, GENERATE_FOIL);
 	GTMaterials.WroughtIron.addFlags(GENERATE_ROTOR, GENERATE_SPRING, GENERATE_SMALL_GEAR);
 	
 	GTMaterials.Copper.addFlags(GENERATE_BOLT_SCREW);
@@ -203,6 +267,10 @@ const registerGTCEuMaterialModification = (event) => {
 
 	GTMaterials.Cupronickel.addFlags(GENERATE_BOLT_SCREW, GENERATE_RING);
 
+	GTMaterials.Ultimet.addFlags(GENERATE_ROTOR)
+	
+	GTMaterials.HSLASteel.addFlags(GENERATE_BOLT_SCREW)
+	
 	GTMaterials.Invar.addFlags(GENERATE_RING);
 	GTMaterials.Magnalium.addFlags(GENERATE_RING);
 	GTMaterials.TinAlloy.addFlags(GENERATE_RING);
@@ -211,6 +279,11 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.IronMagnetic.addFlags(GENERATE_PLATE)
 
 	GTMaterials.Silicon.addFlags(GENERATE_DENSE);
+
+	GTMaterials.RTMAlloy.addFlags(GENERATE_DENSE);
+	GTMaterials.Lead.addFlags(GENERATE_DENSE);
+
+	GTMaterials.Quartzite.addFlags(GENERATE_ROD);
 	
 	GTMaterials.TreatedWood.addFlags(GENERATE_LONG_ROD);
 
@@ -223,8 +296,8 @@ const registerGTCEuMaterialModification = (event) => {
 	]).build());
 
 	GTMaterials.Copper.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.0, 1.5, 132, 2, metalTooling).build());
-	GTMaterials.BismuthBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.7, 2.0, 188, 2, metalTooling).build());
-	GTMaterials.BlackBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.1, 2.0, 194, 2, metalTooling).build());
+	GTMaterials.BismuthBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.7, 2.0, 188, 2, metalTooling.concat(GTToolType.MORTAR)).build());
+	GTMaterials.BlackBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.1, 2.0, 194, 2, metalTooling.concat(GTToolType.MORTAR)).build());
 	GTMaterials.BlackSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6.5, 4.5, 1228, 3, metalTooling).build());
 	// Cast iron tools don't make sense but gregtech shits itself if they're missing,
 	// so I'm just giving them terrible terrible stats
@@ -232,9 +305,9 @@ const registerGTCEuMaterialModification = (event) => {
 	// Hide netherite too
 	GTMaterials.Netherite.getProperty(PropertyKey.TOOL).removeTypes(metalTooling);
 
-	for (var material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
-		var toolProperty = material.getProperty(PropertyKey.TOOL);
-		if (toolProperty == null)
+	for (let material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
+		let toolProperty = material.getProperty(PropertyKey.TOOL);
+		if (toolProperty === null)
 			continue;
 
 		toolProperty.setDurability(toolProperty.getDurability() * 6);
@@ -243,7 +316,11 @@ const registerGTCEuMaterialModification = (event) => {
 	// Bismuth item pipe - 1/4 as good as tin
 	GTMaterials.Bismuth.setProperty(PropertyKey.ITEM_PIPE, new $ITEM_PIPE_PROPERTY(16384, 0.125));
 	// Bis bronze fluid pipe - same stats as bronze
+	GTMaterials.BismuthBronze.getProperties().removeProperty(PropertyKey.BLAST);
 	GTMaterials.BismuthBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
+	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.BLAST);
+	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.ITEM_PIPE);
+	GTMaterials.BlackBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
 	// Red steel fluid pipe - same flow rate as aluminium, bad heat tolerance (same as PE) but can do cryo
 	GTMaterials.RedSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(370, 75, true, false, true, false));
 	// Blue steel fluid pipe - same flow rate as aluminium, same temp tolerance as tungsten
@@ -254,6 +331,20 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Cobaltite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
 	GTMaterials.Galena.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.WEAK_POISON, 1, false));
 	GTMaterials.Chromite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.IRRITANT, 1, false));
+	GTMaterials.Thorium.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.ANY, GTMedicalConditions.CARCINOGEN, 1, true));
+
+	// Make these the lowest tier of EBF instead
+	GTMaterials.BlackSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
+	GTMaterials.RedSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
+	GTMaterials.BlueSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
+
+	// Change byproducts so you can't get certus from normal quartzite
+	GTMaterials.Quartzite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.NetherQuartz, GTMaterials.Barite, GTMaterials.NetherQuartz);
+	GTMaterials.CertusQuartz.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.CertusQuartz, GTMaterials.Quartzite, GTMaterials.CertusQuartz);
+
+	// Change Beryllium to add Chemical Bath recipe and Thorium byproduct
+	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Emerald, GTMaterials.Emerald, GTMaterials.Thorium, GTMaterials.Thorium);
+	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setWashedIn(GTMaterials.SodiumPersulfate);
 
 	// Color Adjustments
 	GTMaterials.BismuthBronze.setMaterialARGB(0x5A966E)
@@ -274,7 +365,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.IronMagnetic.setMaterialARGB(0x503d32)
 	GTMaterials.IronMagnetic.setMaterialSecondaryARGB(0x131212)
 	GTMaterials.Zinc.setMaterialARGB(0xd6ffdc)
-	GTMaterials.Zinc.setMaterialSecondaryARGB(0x213b3f)
+	GTMaterials.Zinc.setMaterialSecondaryARGB(0xA3BE9E)
 	GTMaterials.Graphite.setMaterialARGB(0x889BA8)
 	GTMaterials.Graphite.setMaterialSecondaryARGB(0x30383E)
 	GTMaterials.Amethyst.setMaterialARGB(0xCC9EF0)
@@ -282,7 +373,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Cobalt.setMaterialARGB(0xC9E4FB)
 	GTMaterials.Cobalt.setMaterialSecondaryARGB(0x1D2688)
 	GTMaterials.CertusQuartz.setMaterialARGB(0xB8D8FC)
-	GTMaterials.CertusQuartz.setMaterialSecondaryARGB(0x466580)
+	GTMaterials.CertusQuartz.setMaterialSecondaryARGB(0xADCCEF)
 	GTMaterials.Vanadium.setMaterialARGB(0xD8D4E7)
 	GTMaterials.Vanadium.setMaterialSecondaryARGB(0x7E988F)
 	GTMaterials.Brass.setMaterialSecondaryARGB(0x791905)
@@ -298,12 +389,28 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Platinum.setMaterialSecondaryARGB(0x59563a)
 	GTMaterials.Nickel.setMaterialARGB(0xfff4ba)
 	GTMaterials.Nickel.setMaterialSecondaryARGB(0x8d8d71)
+	GTMaterials.Thorium.setMaterialARGB(0xf8a8c0)
+	GTMaterials.Thorium.setMaterialSecondaryARGB(0xcd8dbc)
+	GTMaterials.GraniteRed.setMaterialARGB(0x974B3C)
+	GTMaterials.GraniteRed.setMaterialSecondaryARGB(0x632117)
 
 	
-	global.MINECRAFT_DYE_NAMES.forEach(colorName =>
-	{
-		var material = GTCEuAPI.materialManager.getMaterial(`gtceu:${colorName}_dye`);
-		var property = material.getProperty(PropertyKey.FLUID);
+	global.MINECRAFT_DYE_NAMES.forEach(colorName => {
+		let material = GTMaterials.get(`gtceu:${colorName}_dye`);
+		let property = material.getProperty(PropertyKey.FLUID);
 		property.getStorage().store($FluidStorageKeys.LIQUID, () => Fluid.of(`tfc:${colorName}_dye`).fluid, null);
 	});
+
+
+	let rose_quartz = GTMaterials.get('greate:rose_quartz');
+	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
+	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
+	rose_quartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
+	
+	GTMaterials.get('tfg:kaolinite').setFormula("Al2Si2O5(OH)4", true)
+	GTMaterials.get('tfg:vitrified_pearl').setFormula("(Al2Si2O5(OH)4)(BeK4N5)", true)
+	GTMaterials.get('tfg:tmos').setFormula("Si(OCH3)4", true)
+	GTMaterials.get('tfg:fluix').setFormula("?(?SiO2)(SiO2)", true)
+	GTMaterials.CertusQuartz.setFormula("?SiO2", true)
+	GTMaterials.GraniteRed.setFormula("?", true)
 }

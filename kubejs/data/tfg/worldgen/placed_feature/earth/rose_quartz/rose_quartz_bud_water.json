@@ -1,0 +1,18 @@
+{
+	"feature": "tfg:earth/rose_quartz/rose_quartz_bud_water",
+	"placement": [
+		{
+			"type": "minecraft:environment_scan",
+			"direction_of_search": "up",
+			"max_steps": 15,
+			"target_condition": {
+				"type": "minecraft:matching_fluids",
+				"fluids": [
+					"tfc:salt_water",
+					"tfc:river_water",
+					"minecraft:water"
+				]
+			}
+		}
+	]
+}

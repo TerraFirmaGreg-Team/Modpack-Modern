@@ -1,0 +1,9 @@
+{
+	"feature": "tfg:mars/surface/pitcher_plant",
+	"placement": [
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR"
+		}
+	]
+}

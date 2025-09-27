@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+        { "model": "betterend:block/inflexia_1" },
+        { "model": "betterend:block/inflexia_2" },
+        { "model": "betterend:block/inflexia_3" },
+        { "model": "betterend:block/inflexia_4" }
+    ]
+  }
+}

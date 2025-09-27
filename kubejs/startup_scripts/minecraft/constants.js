@@ -1,9 +1,11 @@
 // priority: 0
+"use strict";
 
 /**
  * Список хранит предметы,
  * у которых должны быть удалены тэги и они должны быть скрыты в REI.
  */
+
 global.MINECRAFT_DISABLED_ITEMS = [
     // Зараженные блоки
     'minecraft:infested_stone',
@@ -14,32 +16,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:infested_chiseled_stone_bricks', 
     'minecraft:infested_deepslate',
 
-    // Каменные блоки
-    'minecraft:stone', 
-    'minecraft:stone_stairs', 
-    'minecraft:stone_slab', 
-    'minecraft:stone_pressure_plate', 
-    'minecraft:stone_button', 
-    'minecraft:smooth_stone', 
-    'minecraft:smooth_stone_slab', 
-    'minecraft:cobblestone', 
-    'minecraft:cobblestone_stairs', 
-    'minecraft:cobblestone_slab', 
-    'minecraft:cobblestone_wall', 
-    'minecraft:stone_bricks', 
-    'minecraft:stone_brick_stairs', 
-    'minecraft:stone_brick_slab', 
-    'minecraft:stone_brick_wall', 
-    'minecraft:cracked_stone_bricks', 
-    'minecraft:chiseled_stone_bricks', 
-    'minecraft:mossy_stone_bricks', 
-    'minecraft:mossy_stone_brick_stairs', 
-    'minecraft:mossy_stone_brick_slab', 
-    'minecraft:mossy_stone_brick_wall', 
-    'minecraft:mossy_cobblestone', 
-    'minecraft:mossy_cobblestone_stairs', 
-    'minecraft:mossy_cobblestone_slab', 
-    'minecraft:mossy_cobblestone_wall',
+    // Stone
+    'minecraft:stone_pressure_plate',
+    'minecraft:stone_button',
 
     // Гранитовые блоки
     'minecraft:granite', 
@@ -136,19 +115,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:chiseled_sandstone', 
     'minecraft:sand', 
     'minecraft:suspicious_sand',
-
-    // Красный песок
-    'minecraft:red_sandstone', 
-    'minecraft:red_sandstone_stairs', 
-    'minecraft:red_sandstone_slab', 
-    'minecraft:red_sandstone_wall', 
-    'minecraft:smooth_red_sandstone', 
-    'minecraft:smooth_red_sandstone_stairs', 
-    'minecraft:smooth_red_sandstone_slab',
-    'minecraft:cut_red_sandstone', 
-    'minecraft:cut_red_sandstone_slab', 
-    'minecraft:chiseled_red_sandstone', 
-    'minecraft:red_sand',
 
     // Кораллы
     'minecraft:horn_coral',
@@ -503,7 +469,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:mud',
     'minecraft:netherite_scrap',
     'minecraft:suspicious_gravel',
-    'minecraft:stonecutter',
     'minecraft:gravel',
     'minecraft:large_fern', 
     'minecraft:tall_grass', 
@@ -565,9 +530,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:carrot_on_a_stick',
     'minecraft:carrot',
     'minecraft:pumpkin',
-    'minecraft:pearlescent_froglight', 
-    'minecraft:verdant_froglight', 
-    'minecraft:ochre_froglight',
     'minecraft:suspicious_stew',
     'minecraft:mycelium', 
     'minecraft:farmland', 
@@ -588,7 +550,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:beetroot_soup', 
     'minecraft:cocoa_beans', 
     'minecraft:experience_bottle', 
-    'minecraft:shulker_shell', 
     'minecraft:rabbit_stew',
     'minecraft:recovery_compass', 
     'minecraft:chorus_plant', 
@@ -618,11 +579,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:honey_bottle', 
     'minecraft:honeycomb_block', 
     'minecraft:honey_block',
-    'minecraft:popped_chorus_fruit', 
-    'minecraft:purpur_pillar', 
-    'minecraft:purpur_block', 
-    'minecraft:purpur_stairs', 
-    'minecraft:purpur_slab', 
     'minecraft:shears', 
     'minecraft:lantern', 
     'minecraft:soul_lantern',
@@ -660,8 +616,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:anvil', 
     'minecraft:chipped_anvil', 
     'minecraft:damaged_anvil', 
-    'minecraft:furnace', 
-    'minecraft:furnace_minecart',
+    'minecraft:furnace',
     'minecraft:amethyst_cluster',
     'minecraft:rabbit_hide',
     'minecraft:raw_iron',
@@ -671,9 +626,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:honeycomb',
     'minecraft:grindstone',
     'minecraft:fermented_spider_eye',
+    'minecraft:ender_eye',
 
     // Кримзон незер дерево
-    // TODO: Разблокировать после добавления ада
     'minecraft:crimson_stem', 
     'minecraft:crimson_hyphae', 
     'minecraft:stripped_crimson_stem', 
@@ -691,7 +646,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crimson_hanging_sign',
 
     // Варпед незер дерево
-    // TODO: Разблокировать после добавления ада
     'minecraft:warped_stem', 
     'minecraft:warped_hyphae', 
     'minecraft:stripped_warped_stem', 
@@ -709,14 +663,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:warped_hanging_sign',
 
     // Куча незер блоков
-    //'minecraft:netherrack', 
-    //'minecraft:nether_bricks', 
-    'minecraft:cracked_nether_bricks',
-    'minecraft:nether_brick_stairs', 
-    'minecraft:nether_brick_slab', 
-    'minecraft:nether_brick_wall', 
-    'minecraft:nether_brick_fence', 
-    'minecraft:chiseled_nether_bricks', 
+    //'minecraft:netherrack',
     'minecraft:red_nether_bricks', 
     'minecraft:red_nether_brick_stairs', 
     'minecraft:red_nether_brick_slab', 
@@ -728,25 +675,14 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:warped_nylium', 
     'minecraft:soul_sand', 
     'minecraft:soul_soil', 
-    'minecraft:crying_obsidian', 
-    'minecraft:nether_wart_block', 
-    'minecraft:warped_wart_block', 
-    'minecraft:crimson_fungus', 
+    'minecraft:crying_obsidian',
     'minecraft:piglin_head', 
     'minecraft:zombie_head', 
-    'minecraft:skeleton_skull', 
-    'minecraft:nether_sprouts', 
-    'minecraft:warped_roots', 
     'minecraft:dragon_head', 
     'minecraft:dragon_breath', 
     'minecraft:creeper_head', 
     'minecraft:wither_skeleton_skull', 
-    'minecraft:weeping_vines', 
-    'minecraft:crimson_roots', 
-    //'minecraft:nether_brick', 
     'minecraft:nether_wart', 
-    'minecraft:twisting_vines', 
-    'minecraft:warped_fungus',
     'minecraft:respawn_anchor',
     'minecraft:ghast_tear',
     'minecraft:nautilus_shell'
@@ -769,6 +705,9 @@ global.MINECRAFT_HIDED_ITEMS = [
     'minecraft:oxidized_cut_copper_stairs', 
     'minecraft:oxidized_cut_copper_slab',*/
 
+    'minecraft:crimson_fungus',
+    'minecraft:warped_fungus',
+
     "minecraft:raw_iron_block",
     "minecraft:raw_copper_block",
     "minecraft:raw_gold_block"
@@ -785,21 +724,6 @@ global.VANILLA_WOOD_TYPES = [
     "mangrove",
     "crimson", // TODO: Разблокировать когда появится АД
     "warped" // TODO: Разблокировать когда появится АД
-];
-
-global.VANILLA_STONE_TYPES = [
-    "sand",
-    "red_sand",
-    "gravel",
-    "ore",
-    "deepslate",
-    "basalt",
-    "endstone",
-    "netherrack",
-    "andesite",
-    "diorite",
-    "granite",
-    "tuff"
 ];
 
 global.MINECRAFT_DYE_NAMES = [

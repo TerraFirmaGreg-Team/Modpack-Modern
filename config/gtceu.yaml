@@ -9,7 +9,7 @@ recipes:
   disableManualCompression: true
 
   # Change the recipe of Rods in the Lathe to 1 Rod and 2 Small Piles of Dust, instead of 2 Rods.
-  # Default: false
+  # Default: true
   harderRods: false
 
   # Whether to make crafting recipes for Bricks, Firebricks, Nether Bricks, and Coke Bricks harder.
@@ -50,7 +50,7 @@ recipes:
   nerfPaperCrafting: true
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
-  # Default: false
+  # Default: true
   hardAdvancedIronRecipes: true
 
   # Whether to make coloring blocks like Concrete or Glass harder.
@@ -86,7 +86,7 @@ recipes:
   hardMultiRecipes: false
 
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
-  # Default: true
+  # Default: false
   enchantedTools: false
 
 worldgen:
@@ -153,14 +153,8 @@ worldgen:
     oreIndicatorChunkCacheSize: 2048
 
 machines:
-  # Whether insufficient energy supply should reset Machine recipe progress to zero.
-  # If true, progress will reset.
-  # If false, progress will decrease to zero with 2x speed
-  # Default: false
-  recipeProgressLowEnergy: false
-
   # Whether to require a Wrench, Wirecutter, or other GregTech tools to break machines, casings, wires, and more.
-  # Default: false
+  # Default: true
   requireGTToolsForBlocks: true
 
   # Whether machines explode in rainy weather or when placed next to certain terrain, such as fire or lava
@@ -188,6 +182,10 @@ machines:
   # Default: true
   machineSounds: true
 
+  # Duration in ticks that batching will try to reach.
+  # Default: 100
+  batchDuration: 100
+
   # Whether Steam Multiblocks should use Steel instead of Bronze.
   # Default: false
   steelSteamMultiblocks: true
@@ -212,6 +210,10 @@ machines:
   # Whether to enable the Maintenance Hatch, required for Multiblocks.
   # Default: true
   enableMaintenance: true
+
+  # Time in ticks between when Multiblocks can require Maintenance. By default, 48 hours.
+  # Default: 3456000
+  maintenanceTime: 3456000
 
   # Whether to enable World Accelerators, which accelerate ticks for surrounding Tile Entities, Crops, etc.
   # Default: true
@@ -279,7 +281,7 @@ machines:
 
   # Whether the Assembly Line should require the fluid inputs to be in order.
   # (Requires Ordered Assembly Line Item Inputs to be enabled.)
-  # Default: false
+  # Default: true
   orderedAssemblyLineFluids: false
 
   # Default maximum parallel of steam multiblocks
@@ -355,6 +357,11 @@ client:
   # Default: true
   machinesEmissiveTextures: true
 
+  # Whether most machines will have block entity renderers, mainly used for rendering certain covers. (Restart required)
+  # Disable if experiencing performance issues.
+  # Default: true
+  machinesHaveBERsByDefault: true
+
   # Whether or not sounds should be played when using tools outside of crafting.
   # Default: true
   toolUseSounds: true
@@ -369,8 +376,8 @@ client:
   defaultPaintingColor: #FFFFFF
 
   # The default color to overlay onto Machine (and other) UIs.
-  # 16777215 (#FFFFFF) is no coloring (like GTCE) (default).
-  # 13819135 (#D2DCFF in decimal) is the classic blue from GT5.
+  # #FFFFFF is no coloring (like GTCE) (default).
+  # #D2DCFF is the classic blue from GT5.
   defaultUIColor: #FFFFFF
 
   # Use VBO cache for multiblock preview.
@@ -393,20 +400,28 @@ client:
     # 3 - left-bottom corner
     # 4 - right-bottom corner
     # Default: 1
-    hudLocation: 1
+    hudLocation: 4
 
     # Horizontal offset of HUD.
     # Default: 0
-    hudOffsetX: 0
+    hudOffsetX: 3
 
     # Vertical offset of HUD.
     # Default: 0
-    hudOffsetY: 0
+    hudOffsetY: 3
 
   renderer:
     # Render fluids in multiblocks that support them?
     # Default: true
     renderFluids: true
+
+    # Whether or not to color tiered machine highlights in the tier color
+    # Default: true
+    coloredTieredMachineOutline: true
+
+    # Whether or not to color wire/cable highlights based on voltage tier
+    # Default: true
+    coloredWireOutline: true
 
 # Config options for Tools and Armor
 tools:
@@ -478,7 +493,7 @@ gameplay:
   universalHazards: true
 
   # Whether environmental hazards like pollution or radiation are active
-  # Default: true
+  # Default: false
   environmentalHazards: false
 
   # How much environmental hazards decay per chunk, per tick.
@@ -516,7 +531,7 @@ compat:
     updateIntervals: 40
 
     # The energy consumption of ME Hatch/Bus.
-    # Default: 1.0AE/t
+    # Default: 4.0AE/t
     meHatchEnergyUsage: 1.0
 
   # Config options regarding GTCEu compatibility with minimap mods
@@ -560,7 +575,7 @@ compat:
     buttonAnchor: BOTTOM_LEFT
 
     # Which direction the buttons will go
-    # Default: "HORIZONTAL"
+    # Default: "VERTICAL"
     direction: HORIZONTAL
 
     # How horizontally far away from the anchor to place the buttons
@@ -570,10 +585,6 @@ compat:
     # How vertically far away from the anchor to place the buttons
     # Default: 0
     yOffset: 0
-
-    # Whether to put buttons on a separate toolbar on the right instead of the map type toolbar in JourneyMap.
-    # Default: true
-    rightToolbar: true
 
   # Whether to hide facades of all blocks in JEI and creative search menu.
   # Default: true

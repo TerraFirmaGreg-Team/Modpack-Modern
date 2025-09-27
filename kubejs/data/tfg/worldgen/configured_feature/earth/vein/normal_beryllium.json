@@ -36,8 +36,8 @@
       },
       {
         "replace": [
-          "minecraft:basalt",
-          "tfc:rock/raw/basalt"
+          "tfc:rock/raw/basalt",
+          "minecraft:basalt"
         ],
         "with": [
           {

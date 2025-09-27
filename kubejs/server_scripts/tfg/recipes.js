@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * 
  * @param {Internal.RecipesEventJS} event 
@@ -14,4 +16,13 @@ const registerTFGRecipes = (event) => {
 	registerTFGSupportRecipes(event)
 	registerTFGFishingNetsRecipes(event)
 	registerTFGConvertingRecipes(event)
+	registerTFGFoodRecipes(event)
+	registerTFGSpaceRecipes(event)
+	registerTFGStoneDustRecipes(event)
+	registerTFGRecyclingRecipes(event)
+	registerTFGNuclearRecipes(event)
+	registerTFGBioreactorRecipes(event)
+	registerTFGSpaceOres(event)
+
+	
 }

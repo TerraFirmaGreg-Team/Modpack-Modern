@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 /**
  * 
@@ -34,44 +35,6 @@ const registerTFCRecipes = (event) => {
 
 	//#endregion
 
-	//#region Рецепты зерен
-
-	global.TFC_QUERN_GRAIN_RECIPE_COMPONENTS.forEach(element => {
-
-		event.recipes.gtceu.macerator(`tfg:${element.name}`)
-			.itemInputs(element.input)
-			.itemOutputs(element.output)
-			.chancedOutput('tfc:straw', 7000, 500)
-			.duration(200)
-			.EUt(2)
-
-		event.recipes.tfc.quern(element.output, element.input)
-			.id(`tfg:quern/${element.name}`)
-	})
-
-	//#endregion
-
-	//#region Рецепты муки
-
-	global.TFC_QUERN_FLOUR_RECIPE_COMPONENTS.forEach(element => {
-		event.recipes.gtceu.macerator(`tfg:${element.name}`)
-			.itemInputs(element.input)
-			.itemOutputs(element.output)
-			.duration(200)
-			.EUt(2)
-	})
-
-	//#endregion
-
-	//#region Рецепты обжарки мяса
-
-	global.TFC_FURNACE_MEAT_RECIPE_COMPONENTS.forEach(element => {
-		event.smelting(element.output, element.input)
-			.id(`tfg:smelting/${element.name}`)
-	})
-
-	//#endregion
-
 	//#region Рецепты обжарки форм
 
 	global.TFC_FURNACE_MOLD_RECIPE_COMPONENTS.forEach(element => {
@@ -94,50 +57,53 @@ const registerTFCRecipes = (event) => {
 
 	// Дерево
 	global.TFC_WOOD_TYPES.forEach(wood => {
-		generateGreenHouseRecipe(event, `8x tfc:wood/sapling/${wood}`, 16000, `64x tfc:wood/log/${wood}`, `tfg:greenhouse/${wood}`, true)
+		generateGreenHouseRecipe(event, `8x tfc:wood/sapling/${wood}`, '#tfc:any_fresh_water', 16000, `64x tfc:wood/log/${wood}`,
+			`tfg:greenhouse/${wood}`, 'minecraft:overworld', 16, `32x tfc:wood/sapling/${wood}`, GTValues.VH[GTValues.LV])
 	})
 
 	global.AFC_SAPLINGS.forEach(x => {
-		generateGreenHouseRecipe(event, `8x afc:wood/sapling/${x.sapling}`, 16000, `64x ${x.log}`, `tfg:greenhouse/${x.sapling}`, true)
+		generateGreenHouseRecipe(event, `8x afc:wood/sapling/${x.sapling}`, '#tfc:any_fresh_water', 16000, `64x ${x.log}`,
+			`tfg:greenhouse/${x.sapling}`, 'minecraft:overworld', 16, `32x afc:wood/sapling/${x.sapling}`, GTValues.VH[GTValues.LV])
 	})
 
 	// Семена фруктов
 	global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, true)
+		generateGreenHouseRecipe(event, element.input, '#tfc:any_fresh_water', element.fluid_amount, element.output,
+			element.name, 'minecraft:overworld', 8, element.input, GTValues.VH[GTValues.LV])
 	})
 
 	// Семена овощей
 	global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, false)
+		generateGreenHouseRecipe(event, element.input, '#tfc:any_fresh_water', element.fluid_amount, element.output,
+			element.name, null, 8, element.input, GTValues.VH[GTValues.LV])
 	})
 
 	// Семена ягод
 	global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, false)
+		generateGreenHouseRecipe(event, element.input, '#tfc:any_fresh_water', element.fluid_amount, element.output,
+			element.name, null, 8, element.input, GTValues.VH[GTValues.LV])
 	})
 
 	// Растения
-	Ingredient.of('#tfc:plants').stacks.forEach(element => {
+	Ingredient.of('#tfc:plants').subtract('#tfc:wild_fruits').stacks.forEach(element => {
 		const itemId = element.id;
 		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
 
-		generateGreenHouseRecipe(event, itemId, 8000, `8x ${itemId}`, recipeId, false);
+		generateGreenHouseRecipe(event, itemId, '#tfc:any_fresh_water', 8000, `8x ${itemId}`, 
+			recipeId, null, 8, itemId, GTValues.VH[GTValues.LV]);
 	});
-
-	//#endregion
-
-	//#region Рецепты хлеба
-
-	global.TFC_FURNACE_BREAD_RECIPE_COMPONENTS.forEach(element => {
-		event.smelting(element.output, element.input)
-			.id(`tfg:smelting/${element.name}`)
-	})
 
 	//#endregion
 
 	event.shapeless('tfc:crucible', ['tfc:crucible']).id('tfg:empty_crucible')
 
 	event.shapeless('2x minecraft:stick', ['#minecraft:saplings', '#forge:tools/knives']).id('tfg:strip_saplings')
+
+	event.recipes.gtceu.cutter('tfg:saplings_to_sticks')
+		.itemInputs('#minecraft:saplings')
+		.itemOutputs('2x minecraft:stick')
+		.duration(20)
+		.EUt(7)
 
 	// Доменная печь
 	event.shaped('tfc:blast_furnace', [
@@ -165,12 +131,12 @@ const registerTFCRecipes = (event) => {
 
 	// Тыква -> Кусочки тыквы
 	event.recipes.tfc.advanced_shapeless_crafting(
-		TFC.itemStackProvider.of('5x tfc:food/pumpkin_chunks').copyFood(),
+		TFC.itemStackProvider.of('4x tfc:food/pumpkin_chunks').copyFood(),
 		[TFC.ingredient.notRotten('tfc:pumpkin'), '#forge:tools/hammers'], 'tfc:pumpkin')
 		.id(`tfc:crafting/pumpkin_chunks_hammer`)
 
 	event.recipes.tfc.advanced_shapeless_crafting(
-		TFC.itemStackProvider.of('5x tfc:food/pumpkin_chunks').copyFood(),
+		TFC.itemStackProvider.of('4x tfc:food/pumpkin_chunks').copyFood(),
 		[TFC.ingredient.notRotten('tfc:pumpkin'), '#tfc:knives'], 'tfc:pumpkin')
 		.id(`tfc:crafting/pumpkin_chunks_knife`)
 
@@ -178,14 +144,18 @@ const registerTFCRecipes = (event) => {
 	event.smelting('tfc:powder/lime', 'tfc:powder/flux')
 		.id('tfg:smelting/lime')
 
-	// Kaolinite Clay
-	event.smelting('tfc:powder/kaolinite', 'tfc:kaolin_clay')
-		.id('tfg:smelting/kaolinite_clay')
+	// Kaolinite Clay - regular smelting recipes can't have multiple inputs
+	event.recipes.gtceu.alloy_smelter('tfg:kaolinite')
+		.itemInputs('tfc:kaolin_clay')
+		.circuit(1)
+		.chancedOutput('tfc:powder/kaolinite', 2000, 0)
+		.duration(100)
+		.EUt(16)
 
-	// Fire Brick
-	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_brick')
-		.itemInputs('#forge:dusts/graphite', 'tfc:kaolin_clay')
-		.itemOutputs('tfc:fire_clay')
+	// Fire Clay
+	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_clay')
+		.itemInputs('#forge:dusts/graphite', '4x tfc:kaolin_clay')
+		.itemOutputs('2x tfc:fire_clay')
 		.duration(600)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -201,7 +171,8 @@ const registerTFCRecipes = (event) => {
 		.id('tfg:tfc/pot/salt')
 
 	// Salt Water
-	generateMixerRecipe(event, ['#forge:dusts/salt'], Fluid.of('minecraft:water', 1000), [], 2, Fluid.of('tfc:salt_water', 1000), 40, 7, 64, 'tfg:tfc/salt_water')
+	generateMixerRecipe(event, ['#forge:dusts/salt'], "#tfg:clean_water 1000",
+		[], 2, Fluid.of('tfc:salt_water', 1000), 40, 7, 64, 'tfg:tfc/salt_water')
 
 
 	// Seaweed and kelp
@@ -211,6 +182,9 @@ const registerTFCRecipes = (event) => {
 		.resultItem('tfc:food/dried_kelp')
 	event.recipes.tfc.heating('tfc:plant/winged_kelp', 200)
 		.resultItem('tfc:food/dried_kelp')
+
+	// Burning Bread
+	event.recipes.tfc.heating('#tfc:foods/breads', 850)
 
 	// Soda Ash
 	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_seaweed').id('tfg:smelting/dried_seaweed_to_soda')
@@ -231,8 +205,17 @@ const registerTFCRecipes = (event) => {
 	event.recipes.create.splashing([Item.of('tfc:powder/wood_ash').withChance(0.25), Item.of('minecraft:stick').withChance(0.25)], 'tfc:torch')
 		.id('tfg:splashing/wash_torch')
 
-	//Lye in mixer
-	generateMixerRecipe(event, 'tfc:powder/wood_ash', Fluid.of('minecraft:water', 200), [], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_in_mixer')
+	//Lye
+	generateMixerRecipe(event, 'tfc:powder/wood_ash', "#tfg:clean_water 200",
+		[], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_from_wood_ash')
+	generateMixerRecipe(event, '#forge:dusts/sodium_hydroxide', "#tfg:clean_water 1000",
+		[], null, Fluid.of('tfc:lye', 1000), 100, 2, 64, 'lye_from_sodium_hydroxide')
+
+	event.recipes.gtceu.distillery('lye_to_sodium_hydroxide')
+		.inputFluids('tfc:lye 1000')
+		.itemOutputs('gtceu:sodium_hydroxide_dust')
+		.duration(100)
+		.EUt(2)
 
 	// Brass Mechanism
 	event.recipes.shapeless('gtceu:small_brass_gear', [ 'tfc:brass_mechanisms' ]).id('tfg:replace_brass_mechanisms')
@@ -334,4 +317,36 @@ const registerTFCRecipes = (event) => {
 	]).id('tfc:shapeless/jar_lid')
 
 	event.replaceInput({ mod: 'tfc' }, 'minecraft:sugar', '#tfg:sugars')
+
+	// Sea Water
+	event.recipes.tfc.barrel_instant()
+		.inputItem(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Salt, 1))
+		.inputFluid(Fluid.of('minecraft:water', 1000))
+		.outputFluid(Fluid.of('tfc:salt_water', 1000))
+		.id('tfg:barrel/water_to_salt_water')
+
+	event.recipes.tfc.barrel_instant()
+		.inputItem("tfc:powder/salt")
+		.inputFluid(Fluid.of('minecraft:water', 250))
+		.outputFluid(Fluid.of('tfc:salt_water', 250))
+		.id('tfg:barrel/water_to_salt_water_tfc')
+
+    // jute net -> burlap net
+    event.replaceInput({ id: 'tfc:crafting/jute_net'}, 'tfc:jute_fiber', '#tfg:burlap_fiber')
+
+    // horse armor to use burlap
+    global.TFC_EQUIPMENT_METALS.forEach(material => {
+        event.replaceInput({ id: `tfc:crafting/${material}_horse_armor`}, `tfc:jute_fiber`, `#tfg:burlap_fiber`)
+    })
+
+	// Just a dummy recipe to tell people they can get wood ash by throwing torches in water via TFC
+	event.custom({
+		type: "ae2:transform",
+		circumstance: {
+			type: "fluid",
+			tag: "tfc:water"
+		},
+		ingredients: [{ item: 'tfc:torch' }],
+		result: { item: 'tfc:powder/wood_ash' }
+	}).id(`tfg:ae_transform/torch_to_wood_ash`)
 }

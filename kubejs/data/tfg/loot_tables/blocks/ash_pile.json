@@ -7,34 +7,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "tfc:powder/wood_ash",
-					"conditions": [
-						{
-							"condition": "minecraft:random_chance",
-							"chance": 0.9
-						}
-					]
-				}
-			],
-			"conditions": [
-				{
-					"condition": "minecraft:survives_explosion"
-				}
-			]
-		},
-		{
-			"name": "loot_pool",
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "tfc:soot",
-					"conditions": [
-						{
-							"condition": "minecraft:random_chance",
-							"chance": 0.1
-						}
-					]
+					"name": "tfc:powder/wood_ash"
 				}
 			],
 			"conditions": [

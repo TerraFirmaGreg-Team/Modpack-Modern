@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"": [
+			{ "model": "betterend:block/selagine_1", "weight": 2 },
+			{ "model": "betterend:block/selagine_2", "weight": 2 },
+			{ "model": "betterend:block/selagine_3" },
+			{ "model": "betterend:block/selagine_4" }
+		]
+	}
+}

@@ -1,0 +1,13 @@
+{
+  "ingredient": {
+    "type": "forge:difference",
+    "base": { "tag": "forge:ingots" },
+    "subtracted": [
+      { "item": "minecraft:brick" },
+      { "item": "minecraft:nether_brick" },
+      { "item": "minecraft:clay_ball" }
+    ]
+  },
+  "size": "large",
+  "weight": "medium"
+}

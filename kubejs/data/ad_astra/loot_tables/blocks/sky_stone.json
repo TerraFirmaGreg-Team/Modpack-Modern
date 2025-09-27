@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:poor_raw_iron"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:rich_raw_iron"
+				}
+			],
+			"rolls": 5.0
+		}
+	],
+	"random_sequence": "ad_astra:blocks/sky_stone"
+}

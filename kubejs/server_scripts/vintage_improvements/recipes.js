@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function registerVintageImprovementsRecipes(event) {
 
@@ -82,67 +83,36 @@ function registerVintageImprovementsRecipes(event) {
 		'BBE',
 		'C D'
 	], {
-		A: '#forge:frames/bronze',
+		A: '#tfg:any_bronze_frame',
 		B: '#tfg:hardwood',
-		C: '#forge:double_iron_ingots',
+		C: '#tfg:any_iron_double_ingot',
 		D: 'greate:andesite_alloy_cogwheel',
 		E: '#minecraft:planks',
 		F: '#forge:tools/hammers'
-	}).id('tfg:vi/shaped/helve_hammer_bronze')
+	}).id('tfg:vi/shaped/helve_hammer')
 
-	event.shaped('vintageimprovements:helve_hammer', [
-		'F A',
-		'BBE',
-		'C D'
+	event.shaped('vintageimprovements:grinder_belt', [
+		'AAA',
+		'CBC'
 	], {
-		A: '#forge:frames/black_bronze',
-		B: '#tfg:hardwood',
-		C: '#forge:double_iron_ingots',
-		D: 'greate:andesite_alloy_cogwheel',
-		E: '#minecraft:planks',
-		F: '#forge:tools/hammers'
-	}).id('tfg:vi/shaped/helve_hammer_black_bronze')
+		A: 'createaddition:diamond_grit_sandpaper',
+		B: 'greate:rubber_belt_connector',
+		C: 'tfc:glue'
+	}).id('tfg:vi/shaped/grinder_belt')
 
-	event.shaped('vintageimprovements:helve_hammer', [
-		'F A',
-		'BBE',
-		'C D'
-	], {
-		A: '#forge:frames/bismuth_bronze',
-		B: '#tfg:hardwood',
-		C: '#forge:double_iron_ingots',
-		D: 'greate:andesite_alloy_cogwheel',
-		E: '#minecraft:planks',
-		F: '#forge:tools/hammers'
-	}).id('tfg:vi/shaped/helve_hammer_bismuth_bronze')
-
-	event.recipes.create.mechanical_crafting('vintageimprovements:lathe', [
-		'DEEFE',
-		'AB CG',
-		'DEEFE'
+	event.shaped('vintageimprovements:belt_grinder', [
+		'GBG',
+		'EAF',
+		'DCD'
 	], {
 		A: 'gtceu:ulv_machine_hull',
-		B: 'minecraft:piston',
-		C: 'minecraft:diamond',
-		D: '#forge:plates/treated_wood',
-		E: '#forge:rods/black_steel',
-		F: '#gtceu:circuits/ulv',
-		G: 'create:precision_mechanism'
-	}).id('tfg:vi/mechanical_crafting/lathe')
-
-	// Re-enable this thing's EMI category as well, if we end up using it
-	//event.shaped('vintageimprovements:laser', [
-	//	'FBF',
-	//	'EAE',
-	//	'DCD'
-	//], {
-	//	A: 'gtceu:ulv_machine_hull',
-	//	B: 'create:precision_mechanism',
-	//	C: 'tfc:lens',
-	//	D: 'gtceu:red_alloy_single_wire',
-	//	E: 'minecraft:piston',
-	//	F: '#gtceu:circuits/ulv'
-	//}).id('tfg:vi/shaped/laser')
+		B: 'vintageimprovements:grinder_belt',
+		C: 'greate:steel_cogwheel',
+		D: '#gtceu:circuits/ulv',
+		E: 'create:precision_mechanism',
+		F: 'minecraft:diamond',
+		G: '#forge:rods/black_steel'
+	}).id('tfg:vi/shaped/belt_grinder')
 
 	// #endregion
 
@@ -160,18 +130,8 @@ function registerVintageImprovementsRecipes(event) {
 		.itemInputs('#forge:plates/red_alloy', '#forge:small_gears/brass', '#forge:bolts/red_alloy')
 		.inputFluids(Fluid.of('gtceu:redstone', 144))
 		.itemOutputs('vintageimprovements:redstone_module')
-		.duration(400)
+		.duration(20 * 20)
 		.EUt(20)
-
-	event.shaped('vintageimprovements:recipe_card', [
-		' B ',
-		'CA ',
-		' B '
-	], {
-		A: '#forge:plates/brass',
-		B: '#forge:screws/wrought_iron',
-		C: '#forge:tools/screwdrivers'
-	}).id('tfg:vi/shaped/recipe_card')
 
 	event.shaped('vintageimprovements:helve_hammer_slot_cover', [
 		'B B',
@@ -198,7 +158,8 @@ function registerVintageImprovementsRecipes(event) {
 		{ material: GTMaterials.Bismuth, blows: STARTING_BLOWS },
 		{ material: GTMaterials.RoseGold, blows: STARTING_BLOWS },
 		{ material: GTMaterials.SterlingSilver, blows: STARTING_BLOWS },
-		{ material: GTMaterials.Tin, blows: STARTING_BLOWS }
+		{ material: GTMaterials.Tin, blows: STARTING_BLOWS },
+		{ material: GTMaterials.Lead, blows: STARTING_BLOWS }
 	]
 
 	let HAMMERING_ITEMS = [
@@ -217,6 +178,7 @@ function registerVintageImprovementsRecipes(event) {
 	HAMMERING_MATERIALS.push({ material: GTMaterials.BismuthBronze, blows: STARTING_BLOWS })
 	HAMMERING_MATERIALS.push({ material: GTMaterials.Brass, blows: STARTING_BLOWS })
 	HAMMERING_MATERIALS.push({ material: GTMaterials.RedAlloy, blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.Potin, blows: STARTING_BLOWS })
 
 	HAMMERING_MATERIALS.forEach(x => {
 		generateHammeringRecipe(event, x.material, x.blows, 'bronze');
@@ -235,6 +197,9 @@ function registerVintageImprovementsRecipes(event) {
 	HAMMERING_MATERIALS.push({ material: GTMaterials.TinAlloy, blows: STARTING_BLOWS })
 	HAMMERING_MATERIALS.push({ material: GTMaterials.Iron, blows: STARTING_BLOWS })
 	HAMMERING_MATERIALS.push({ material: GTMaterials.WroughtIron, blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.Invar, blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.Cobalt, blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.CobaltBrass, blows: STARTING_BLOWS })
 	HAMMERING_ITEMS.push({ input: 'tfc:metal/ingot/pig_iron', output: 'tfc:metal/ingot/high_carbon_steel', blows: STARTING_BLOWS })
 	HAMMERING_ITEMS.push({ input: 'tfc:metal/ingot/high_carbon_steel', output: 'gtceu:steel_ingot', blows: STARTING_BLOWS })
 
@@ -292,6 +257,19 @@ function registerVintageImprovementsRecipes(event) {
 
 
 	forEachMaterial(material => {
+		if (material == GTMaterials.get("andesite_alloy"))
+			return;
+
+		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
+		if (ingotItem !== null && ingotItem.hasTag('c:hidden_from_recipe_viewers'))
+			return;
+
+		const gemItem = ChemicalHelper.get(TagPrefix.gem, material, 1);
+		if (gemItem !== null && gemItem.hasTag('c:hidden_from_recipe_viewers'))
+			return;
+
+		if (ingotItem === null && gemItem === null)
+			return;
 
 		// #region Coiling
 
@@ -314,7 +292,7 @@ function registerVintageImprovementsRecipes(event) {
 		}
 
 		const singleWire = ChemicalHelper.get(TagPrefix.wireGtSingle, material, 2)
-		if (singleWire != null) {
+		if (singleWire !== null) {
 			event.custom({
 				type: 'vintageimprovements:coiling',
 				ingredients: [ChemicalHelper.get(TagPrefix.ingot, material, 1)],
@@ -323,13 +301,22 @@ function registerVintageImprovementsRecipes(event) {
 			}).id(`tfg:vi/coiling/${material.getName()}_single_wire`)
 		}
 
-		if (material.hasFlag(MaterialFlags.GENERATE_FINE_WIRE) && singleWire != null) {
-			event.custom({
-				type: 'vintageimprovements:coiling',
-				ingredients: [ChemicalHelper.get(TagPrefix.wireGtSingle, material, 1)],
-				results: [ChemicalHelper.get(TagPrefix.wireFine, material, 4)],
-				processingTime: material.getMass() * 3 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/coiling/${material.getName()}_fine_wire`)
+		if (material.hasFlag(MaterialFlags.GENERATE_FINE_WIRE)) {
+			if (singleWire !== null) {
+				event.custom({
+					type: 'vintageimprovements:coiling',
+					ingredients: [ChemicalHelper.get(TagPrefix.wireGtSingle, material, 1)],
+					results: [ChemicalHelper.get(TagPrefix.wireFine, material, 4)],
+					processingTime: material.getMass() * 3 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+				}).id(`tfg:vi/coiling/${material.getName()}_fine_wire`)
+			} else {
+				event.custom({
+					type: 'vintageimprovements:coiling',
+					ingredients: [ChemicalHelper.get(TagPrefix.ingot, material, 1)],
+					results: [ChemicalHelper.get(TagPrefix.wireFine, material, 8)],
+					processingTime: material.getMass() * 3 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+				}).id(`tfg:vi/coiling/${material.getName()}_fine_wire`)
+			}
 		}
 
 		// #endregion
@@ -342,20 +329,22 @@ function registerVintageImprovementsRecipes(event) {
 
 			// aaaaargh I hate these custom type recipes
 			let gem = `gtceu:${material.getName()}_gem`;
-			if (material == GTMaterials.Coal)
+			if (material === GTMaterials.Coal)
 				gem = 'minecraft:coal'
-			else if (material == GTMaterials.Diamond)
+			else if (material === GTMaterials.Diamond)
 				gem = 'minecraft:diamond'
-			else if (material == GTMaterials.Emerald)
+			else if (material === GTMaterials.Emerald)
 				gem = 'minecraft:emerald'
-			else if (material == GTMaterials.Lapis)
+			else if (material === GTMaterials.Lapis)
 				gem = 'minecraft:lapis_lazuli'
-			else if (material == GTMaterials.NetherQuartz)
+			else if (material === GTMaterials.NetherQuartz)
 				gem = 'minecraft:quartz'
-			else if (material == GTMaterials.Amethyst)
+			else if (material === GTMaterials.Amethyst)
 				gem = 'minecraft:amethyst_shard'
-			else if (material == GTMaterials.CertusQuartz)
+			else if (material === GTMaterials.CertusQuartz)
 				gem = 'ae2:certus_quartz_crystal'
+			else if (material === TFGHelpers.getMaterial('rose_quartz'))
+				gem = 'create:rose_quartz'
 
 			event.custom({
 				type: 'vintageimprovements:vibrating',
@@ -381,49 +370,30 @@ function registerVintageImprovementsRecipes(event) {
 				? ChemicalHelper.get(TagPrefix.gem, material, 1)
 				: ChemicalHelper.get(TagPrefix.ingot, material, 1)
 
-			if (latheInput != null) {
+			if (latheInput !== null) {
 				event.custom({
-					type: 'vintageimprovements:turning',
+					type: 'vintageimprovements:polishing',
 					ingredients: [latheInput],
 					results: [ChemicalHelper.get(TagPrefix.rod, material, 2)],
-					processingTime: material.getMass() * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+					speed_limits: 3,
+					processingTime: material.getMass() * 4 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 				}).id(`tfg:vi/lathe/${material.getName()}_to_rod`)
+			}
+
+			if (material.hasProperty(PropertyKey.GEM)) {
+				event.recipes.create.sandpaper_polishing(ChemicalHelper.get(TagPrefix.rod, material, 1), latheInput)
+					.id(`tfg:polishing/${material.getName()}_rod`)
 			}
 		}
 
 		if (material.hasFlag(MaterialFlags.GENERATE_BOLT_SCREW)) {
 			event.custom({
-				type: 'vintageimprovements:turning',
+				type: 'vintageimprovements:polishing',
 				ingredients: [ChemicalHelper.get(TagPrefix.bolt, material, 1)],
 				results: [ChemicalHelper.get(TagPrefix.screw, material, 1)],
+				speed_limits: 2,
 				processingTime: Math.max(1, material.getMass() / 8) * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/lathe/${material.getName()}_bolt_to_screw`)
-		}
-
-		// #endregion
-
-		// #region Pressurizing
-
-		if (material.hasFlag(TFGMaterialFlags.GENERATE_DOUBLE_INGOTS)) {
-			const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
-
-			event.custom({
-				type: 'vintageimprovements:pressurizing',
-				ingredients: [ingotItem, ingotItem, { item: 'tfc:powder/flux' }],
-				heatRequirement: "heated",
-				results: [ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1)],
-				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/pressurizing/${material.getName()}_double_ingot`)
-
-			const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
-
-			event.custom({
-				type: 'vintageimprovements:pressurizing',
-				ingredients: [plateItem, plateItem, { item: 'tfc:powder/flux' }],
-				heatRequirement: "heated",
-				results: [ChemicalHelper.get(TagPrefix.plateDouble, material, 1)],
-				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/pressurizing/${material.getName()}_double_plate`)
 		}
 
 		// #endregion
@@ -481,11 +451,60 @@ function registerVintageImprovementsRecipes(event) {
 	// #region Lathe
 
 	event.custom({
-		type: 'vintageimprovements:turning',
+		type: 'vintageimprovements:polishing',
 		ingredients: [{ tag: 'forge:glass' }],
 		results: [{ item: 'tfc:lens' }],
+		speed_limits: 1,
 		processingTime: 100
 	}).id(`tfg:vi/lathe/lens`)
+
+	event.custom({
+		type: 'vintageimprovements:polishing',
+		ingredients: [{ tag: 'forge:exquisite_gems/rose_quartz' }],
+		results: [{ item: 'gtceu:rose_quartz_lens' }, { item: 'gtceu:rose_quartz_dust', count: 2 }],
+		speed_limits: 1,
+		processingTime: 100
+	}).id(`tfg:vi/lathe/rose_quartz_lens`)
+
+	event.custom({
+		type: 'vintageimprovements:polishing',
+		ingredients: [{ tag: 'forge:exquisite_gems/diamond' }],
+		results: [{ item: 'gtceu:diamond_lens' }, { item: 'gtceu:diamond_dust', count: 2 }],
+		speed_limits: 1,
+		processingTime: 100
+	}).id(`tfg:vi/lathe/diamond_lens`)
+
+	event.custom({
+		type: 'vintageimprovements:polishing',
+		ingredients: [{ tag: 'forge:exquisite_gems/emerald' }],
+		results: [{ item: 'gtceu:emerald_lens' }, { item: 'gtceu:emerald_dust', count: 2 }],
+		speed_limits: 1,
+		processingTime: 100
+	}).id(`tfg:vi/lathe/emerald_lens`)
+
+	event.custom({
+		type: 'vintageimprovements:polishing',
+		ingredients: [{ tag: 'forge:exquisite_gems/ruby' }],
+		results: [{ item: 'gtceu:ruby_lens' }, { item: 'gtceu:ruby_dust', count: 2 }],
+		speed_limits: 1,
+		processingTime: 100
+	}).id(`tfg:vi/lathe/ruby_lens`)
+
+	event.custom({
+		type: 'vintageimprovements:polishing',
+		ingredients: [{ tag: 'forge:exquisite_gems/sapphire' }],
+		results: [{ item: 'gtceu:sapphire_lens' }, { item: 'gtceu:sapphire_dust', count: 2 }],
+		speed_limits: 1,
+		processingTime: 100
+	}).id(`tfg:vi/lathe/sapphire_lens`)
+
+	event.custom({
+		type: 'vintageimprovements:polishing',
+		ingredients: [{ tag: 'forge:exquisite_gems/amethyst' }],
+		results: [{ item: 'gtceu:amethyst_lens' }, { item: 'gtceu:amethyst_dust', count: 2 }],
+		speed_limits: 1,
+		processingTime: 100
+	}).id(`tfg:vi/lathe/amethyst_lens`)
 
 	// #endregion
 
@@ -498,21 +517,26 @@ function registerVintageImprovementsRecipes(event) {
 
 			// LV recipes only
 			let EUt = (r.tickInputs && r.tickInputs.eu) ? r.tickInputs.eu[0].content : null;
-			if (!(EUt <= 32)) { return }
+			
+			if (!(EUt <= 32)) return
 			// Skip this one
-			if (r.outputs.item[0].content.ingredient.item == "gtceu:nan_certificate") { return }
+			if (r.outputs.item[0].content.ingredient.item === "gtceu:nan_certificate") return
 			// Skip glass too
-			if (r.inputs.item[0].content.ingredient.item == "gtceu:glass_dust") { return }
+			if (r.inputs.item[0].content.ingredient.item === "gtceu:glass_dust") return
+			// And this
+			if (r.inputs.item[0].content.ingredient.tag === "#forge:ingots/damascus_steel") return
 
-			let input = r.inputs.item[0].content.ingredient;
-			input.count = r.inputs.item[0].content.count;
+			let input_array = [];
+			for (let i = 0; i < r.inputs.item[0].content.count; i++) {
+				input_array.push(r.inputs.item[0].content.ingredient);
+			}
 
 			let output = r.outputs.item[0].content.ingredient;
 			output.count = r.outputs.item[0].content.count;
 
 			event.custom({
 				type: 'vintageimprovements:curving',
-				ingredients: [input],
+				ingredients: input_array,
 				itemAsHead: r.inputs.item[1].content.ingredient.item,
 				results: [output],
 				processingTime: r.duration * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
@@ -523,6 +547,9 @@ function registerVintageImprovementsRecipes(event) {
 	// #endregion
 
 	// #region Vacuum
+
+	// Item to fluids: vacuumizing
+	// Fluids to item: pressurizing
 
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
@@ -575,21 +602,21 @@ function registerVintageImprovementsRecipes(event) {
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ tag: 'tfg:latex_logs' }],
-		results: [{ fluid: 'tfg:latex', amount: 250 }],
+		results: [{ fluid: 'tfg:latex', amount: 100 }],
 		processingTime: 600
 	}).id('tfg:vi/vacuumizing/latex_from_rubber_logs')
 
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ tag: 'tfg:rubber_saplings' }],
-		results: [{ fluid: 'tfg:latex', amount: 100 }],
+		results: [{ fluid: 'tfg:latex', amount: 25 }],
 		processingTime: 300
 	}).id('tfg:vi/vacuumizing/latex_from_rubber_sapling')
 
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ tag: 'tfg:rubber_leaves' }],
-		results: [{ fluid: 'tfg:latex', amount: 50 }],
+		results: [{ fluid: 'tfg:latex', amount: 10 }],
 		processingTime: 150
 	}).id('tfg:vi/vacuumizing/latex_from_rubber_leaves')
 
@@ -603,11 +630,42 @@ function registerVintageImprovementsRecipes(event) {
 
 	// Vulc. latex to raw rubber pulp
 	event.custom({
-		type: 'vintageimprovements:vacuumizing',
+		type: 'vintageimprovements:pressurizing',
 		ingredients: [{ fluid: 'tfg:vulcanized_latex', amount: 250 }],
 		results: [{ item: 'gtceu:raw_rubber_dust' }],
+		heatRequirement: "heated",
 		processingTime: 120
-	}).id('tfg:vi/vacuumizing/vulcanized_latex_to_raw_rubber')
+	}).id('tfg:vi/pressurizing/vulcanized_latex_to_raw_rubber')
+
+	// Seed oils
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'tfg:sunflower_product' }],
+		results: [{ fluid: 'gtceu:seed_oil', amount: 350 }],
+		processingTime: 1000
+	}).id('tfg:vi/vacuumizing/sunflower')
+
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'tfg:rapeseed_product' }],
+		results: [{ fluid: 'gtceu:seed_oil', amount: 600 }],
+		processingTime: 1000
+	}).id('tfg:vi/vacuumizing/rapeseed')
+
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ tag: 'forge:seeds' }],
+		results: [{ fluid: 'gtceu:seed_oil', amount: 16 }],
+		processingTime: 100
+	}).id('tfg:vi/vacuumizing/seed_oil')
+
+	event.custom({
+		type: 'vintageimprovements:pressurizing',
+		ingredients: [{ fluid: 'tfc:lye', amount: 1000 }],
+		results: [{ item: 'gtceu:sodium_hydroxide_dust' }],
+		heatRequirement: "heated",
+		processingTime: 300
+	}).id('tfg:vi/pressurizing/lye')
 
 	// #endregion
 
@@ -622,6 +680,13 @@ function registerVintageImprovementsRecipes(event) {
 
 	event.custom({
 		type: 'vintageimprovements:coiling',
+		ingredients: [{ item: 'tfg:glacian_wool' }],
+		results: [{ item: 'tfc:wool_yarn', count: 8 }],
+		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/coiling/glacian_wool_yarn`)
+
+	event.custom({
+		type: 'vintageimprovements:coiling',
 		ingredients: [{ item: 'minecraft:phantom_membrane' }],
 		results: [{ item: 'tfg:phantom_thread', count: 16 }],
 		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
@@ -629,10 +694,61 @@ function registerVintageImprovementsRecipes(event) {
 
 	event.custom({
 		type: 'vintageimprovements:coiling',
+		ingredients: [{ item: 'firmalife:pineapple_fiber' }],
+		results: [{ item: 'firmalife:pineapple_yarn', count: 8 }],
+		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/coiling/pineapple_yarn`)
+
+	event.custom({
+		type: 'vintageimprovements:coiling',
 		ingredients: [ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Polycaprolactam, 1)],
 		results: [{ item: 'tfg:polycaprolactam_string', count: 32 }],
 		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 	}).id(`tfg:vi/coiling/nylon_string`)
+
+	// #endregion
+
+	// #region Curving
+
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ item: 'minecraft:clay_ball' }],
+		itemAsHead: 'gtceu:ingot_extruder_mold',
+		results: [{ item: 'tfc:ceramic/unfired_brick' }],
+		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/curving/clay_brick`)
+
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ item: 'tfc:fire_clay' }],
+		itemAsHead: 'gtceu:ingot_extruder_mold',
+		results: [{ item: 'tfc:ceramic/unfired_fire_brick' }],
+		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/curving/fire_brick`)
+
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ tag: 'forge:ingots/copper' }],
+		itemAsHead: 'gtceu:bottle_extruder_mold',
+		results: [{ item: 'afc:tree_tap' }],
+		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/curving/tree_tap`)
+
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ tag: 'forge:plates/copper' }],
+		itemAsHead: 'tfg:small_casing_extruder_mold',
+		results: [{ item: 'firmalife:sprinkler' }],
+		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/curving/sprinkler`)
+
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ tag: 'forge:double_plates/wrought_iron' }],
+		itemAsHead: 'tfg:large_casing_extruder_mold',
+		results: [{ item: 'tfc:wrought_iron_grill' }],
+		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/curving/wrought_iron_grill`)
 
 	// #endregion
 }

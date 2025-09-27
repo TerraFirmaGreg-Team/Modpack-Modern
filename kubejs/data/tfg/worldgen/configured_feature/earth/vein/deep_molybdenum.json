@@ -31,10 +31,6 @@
             "weight": 1
           },
           {
-            "block": "gtceu:rhyolite_molybdenum_ore",
-            "weight": 15
-          },
-          {
             "block": "gtceu:rhyolite_powellite_ore",
             "weight": 15
           }
@@ -42,8 +38,8 @@
       },
       {
         "replace": [
-          "minecraft:basalt",
-          "tfc:rock/raw/basalt"
+          "tfc:rock/raw/basalt",
+          "minecraft:basalt"
         ],
         "with": [
           {
@@ -61,10 +57,6 @@
           {
             "block": "gtceu:raw_molybdenite_block",
             "weight": 1
-          },
-          {
-            "block": "gtceu:basalt_molybdenum_ore",
-            "weight": 15
           },
           {
             "block": "gtceu:basalt_powellite_ore",
@@ -94,10 +86,6 @@
             "weight": 1
           },
           {
-            "block": "gtceu:andesite_molybdenum_ore",
-            "weight": 15
-          },
-          {
             "block": "gtceu:andesite_powellite_ore",
             "weight": 15
           }
@@ -123,10 +111,6 @@
           {
             "block": "gtceu:raw_molybdenite_block",
             "weight": 1
-          },
-          {
-            "block": "gtceu:dacite_molybdenum_ore",
-            "weight": 15
           },
           {
             "block": "gtceu:dacite_powellite_ore",
@@ -156,10 +140,6 @@
             "weight": 1
           },
           {
-            "block": "gtceu:granite_molybdenum_ore",
-            "weight": 15
-          },
-          {
             "block": "gtceu:granite_powellite_ore",
             "weight": 15
           }
@@ -185,10 +165,6 @@
           {
             "block": "gtceu:raw_molybdenite_block",
             "weight": 1
-          },
-          {
-            "block": "gtceu:diorite_molybdenum_ore",
-            "weight": 15
           },
           {
             "block": "gtceu:diorite_powellite_ore",
@@ -218,10 +194,6 @@
             "weight": 1
           },
           {
-            "block": "gtceu:gabbro_molybdenum_ore",
-            "weight": 15
-          },
-          {
             "block": "gtceu:gabbro_powellite_ore",
             "weight": 15
           }
@@ -241,10 +213,6 @@
         {
           "block": "gtceu:molybdenite_indicator",
           "weight": 30
-        },
-        {
-          "block": "gtceu:molybdenum_indicator",
-          "weight": 15
         },
         {
           "block": "gtceu:powellite_indicator",

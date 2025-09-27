@@ -1,4 +1,5 @@
 ﻿// priority: 0
+"use strict";
 
 function removeMinecraftRecipes(event) {
 
@@ -13,6 +14,26 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'ae2:entropy/heat/cobblestone_stone' })
 	event.remove({ id: 'gtceu:compressor/stone_from_dust' })
 	event.remove({ id: 'gtceu:rock_breaker/stone' })
+
+	event.remove({ id: 'gtceu:shaped/stone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/stone_slab_saw' })
+	
+	event.remove({ id: 'gtceu:shaped/cobblestone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/cobblestone_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/cobblestone_slab_wall' })
+
+	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_slab_wall' })
+
+	event.remove({ id: 'gtceu:shaped/red_sandstone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/red_sandstone_wall_saw' })
+	event.remove({ id: 'gtceu:shaped/red_sandstone_polish_hammer' })
+	
+	event.remove({ id: 'gtceu:shaped/smooth_red_sandstone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/smooth_red_sandstone_slab_saw' })
+
+	event.remove({ id: 'gtceu:shaped/cut_red_sandstone_slab_saw' })
 	
 	//#endregion
 
@@ -689,6 +710,7 @@ function removeMinecraftRecipes(event) {
 
 	event.remove({ id: 'minecraft:quartz' })
 	event.remove({ id: 'minecraft:quartz_from_blasting' })
+	event.remove({ id: 'minecraft:smooth_quartz' })
 
 	//#endregion
 
@@ -865,7 +887,7 @@ function removeMinecraftRecipes(event) {
 
 	//#endregion
 
-	event.remove({ id: 'ae2:entropy/cool/grass_block_dirt' }) // TODO: Сделать с тфк землей
+	event.remove({ id: 'ae2:entropy/cool/grass_block_dirt' })
 
 	//#region Выход: Высохшая земля
 
@@ -1304,7 +1326,7 @@ function removeMinecraftRecipes(event) {
 
 	event.remove({ id: 'gtceu:shaped/sugar' })
 	event.remove({ id: 'minecraft:sugar_from_honey_bottle' })
-	event.remove({ id: 'gtceu:macerator/macerate_sugar_cane' })
+	removeMaceratorRecipe(event, 'macerate_sugar_cane')
 
 	//#endregion
 
@@ -1321,14 +1343,14 @@ function removeMinecraftRecipes(event) {
 	//#region Выход: Семена тыквы
 
 	event.remove({ id: 'minecraft:pumpkin_seeds' })
-	event.remove({ id: 'gtceu:macerator/macerate_pumpkin' })
+	removeMaceratorRecipe(event, 'macerate_pumpkin')
 
 	//#endregion
 
 	//#region Выход: Семена арбуза
 
-	event.remove({ id: 'gtceu:macerator/macerate_melon_slice' })
-	event.remove({ id: 'gtceu:macerator/macerate_melon_block' })
+	removeMaceratorRecipe(event, 'macerate_melon_slice')
+	removeMaceratorRecipe(event, 'macerate_melon_block')
 
 	//#endregion
 
@@ -1655,10 +1677,10 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'gtceu:arc_furnace/arc_chainmail_leggings' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_chainmail_chestplate' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_chainmail_helmet' })
-	event.remove({ id: 'gtceu:macerator/macerate_chainmail_boots' })
-	event.remove({ id: 'gtceu:macerator/macerate_chainmail_leggings' })
-	event.remove({ id: 'gtceu:macerator/macerate_chainmail_chestplate' })
-	event.remove({ id: 'gtceu:macerator/macerate_chainmail_helmet' })
+	removeMaceratorRecipe(event, 'macerate_chainmail_boots')
+	removeMaceratorRecipe(event, 'macerate_chainmail_leggings')
+	removeMaceratorRecipe(event, 'macerate_chainmail_chestplate')
+	removeMaceratorRecipe(event, 'macerate_chainmail_helmet')
 	event.remove({ id: 'minecraft:iron_nugget_from_smelting' })
 	event.remove({ id: 'minecraft:iron_nugget_from_blasting' })
 
@@ -1670,13 +1692,13 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'gtceu:arc_furnace/arc_iron_leggings' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_iron_chestplate' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_iron_helmet' })
-	event.remove({ id: 'gtceu:macerator/macerate_iron_boots' })
-	event.remove({ id: 'gtceu:macerator/macerate_iron_leggings' })
-	event.remove({ id: 'gtceu:macerator/macerate_iron_chestplate' })
-	event.remove({ id: 'gtceu:macerator/macerate_iron_helmet' })
+	removeMaceratorRecipe(event, 'macerate_iron_boots')
+	removeMaceratorRecipe(event, 'macerate_iron_leggings')
+	removeMaceratorRecipe(event, 'macerate_iron_chestplate')
+	removeMaceratorRecipe(event, 'macerate_iron_helmet')
+	removeMaceratorRecipe(event, 'macerate_iron_horse_armor')
 	event.remove({ id: 'gtceu:shaped/iron_horse_armor' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_iron_horse_armor' })
-	event.remove({ id: 'gtceu:macerator/macerate_iron_horse_armor' })
 
 	//#endregion
 
@@ -1686,13 +1708,13 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'gtceu:arc_furnace/arc_golden_leggings' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_golden_chestplate' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_golden_helmet' })
-	event.remove({ id: 'gtceu:macerator/macerate_golden_boots' })
-	event.remove({ id: 'gtceu:macerator/macerate_golden_leggings' })
-	event.remove({ id: 'gtceu:macerator/macerate_golden_chestplate' })
-	event.remove({ id: 'gtceu:macerator/macerate_golden_helmet' })
+	removeMaceratorRecipe(event, 'macerate_golden_boots')
+	removeMaceratorRecipe(event, 'macerate_golden_leggings')
+	removeMaceratorRecipe(event, 'macerate_golden_chestplate')
+	removeMaceratorRecipe(event, 'macerate_golden_helmet')
+	removeMaceratorRecipe(event, 'macerate_golden_horse_armor')
 	event.remove({ id: 'gtceu:shaped/golden_horse_armor' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_golden_horse_armor' })
-	event.remove({ id: 'gtceu:macerator/macerate_golden_horse_armor' })
 	event.remove({ id: 'minecraft:gold_nugget_from_smelting' })
 	event.remove({ id: 'minecraft:gold_nugget_from_blasting' })
 
@@ -1700,12 +1722,12 @@ function removeMinecraftRecipes(event) {
 
 	//#region Алмазная броня
 
-	event.remove({ id: 'gtceu:macerator/macerate_diamond_boots' })
-	event.remove({ id: 'gtceu:macerator/macerate_diamond_leggings' })
-	event.remove({ id: 'gtceu:macerator/macerate_diamond_chestplate' })
-	event.remove({ id: 'gtceu:macerator/macerate_diamond_helmet' })
+	removeMaceratorRecipe(event, 'macerate_diamond_boots')
+	removeMaceratorRecipe(event, 'macerate_diamond_leggings')
+	removeMaceratorRecipe(event, 'macerate_diamond_chestplate')
+	removeMaceratorRecipe(event, 'macerate_diamond_helmet')
+	removeMaceratorRecipe(event, 'macerate_diamond_horse_armor')
 	event.remove({ id: 'gtceu:shaped/diamond_horse_armor' })
-	event.remove({ id: 'gtceu:macerator/macerate_diamond_horse_armor' })
 
 	//#endregion
 
@@ -1721,31 +1743,31 @@ function removeMinecraftRecipes(event) {
 
 	//#region Деревянные инструменты
 
-	event.remove({ id: 'gtceu:macerator/macerate_wooden_sword' })
-	event.remove({ id: 'gtceu:macerator/macerate_wooden_pickaxe' })
-	event.remove({ id: 'gtceu:macerator/macerate_wooden_axe' })
-	event.remove({ id: 'gtceu:macerator/macerate_wooden_shovel' })
-	event.remove({ id: 'gtceu:macerator/macerate_wooden_hoe' })
+	removeMaceratorRecipe(event, 'macerate_wooden_sword')
+	removeMaceratorRecipe(event, 'macerate_wooden_pickaxe')
+	removeMaceratorRecipe(event, 'macerate_wooden_axe')
+	removeMaceratorRecipe(event, 'macerate_wooden_shovel')
+	removeMaceratorRecipe(event, 'macerate_wooden_hoe')
 
 	//#endregion
 
 	//#region Каменные инстурменты
 
-	event.remove({ id: 'gtceu:macerator/macerate_stone_sword' })
-	event.remove({ id: 'gtceu:macerator/macerate_stone_pickaxe' })
-	event.remove({ id: 'gtceu:macerator/macerate_stone_axe' })
-	event.remove({ id: 'gtceu:macerator/macerate_stone_shovel' })
-	event.remove({ id: 'gtceu:macerator/macerate_stone_hoe' })
+	removeMaceratorRecipe(event, 'macerate_stone_sword')
+	removeMaceratorRecipe(event, 'macerate_stone_pickaxe')
+	removeMaceratorRecipe(event, 'macerate_stone_axe')
+	removeMaceratorRecipe(event, 'macerate_stone_shovel')
+	removeMaceratorRecipe(event, 'macerate_stone_hoe')
 
 	//#endregion
 
 	//#region Железные инструменты
 
-	event.remove({ id: 'gtceu:macerator/macerate_iron_sword' })
-	event.remove({ id: 'gtceu:macerator/macerate_iron_pickaxe' })
-	event.remove({ id: 'gtceu:macerator/macerate_iron_axe' })
-	event.remove({ id: 'gtceu:macerator/macerate_iron_shovel' })
-	event.remove({ id: 'gtceu:macerator/macerate_iron_hoe' })
+	removeMaceratorRecipe(event, 'macerate_iron_sword')
+	removeMaceratorRecipe(event, 'macerate_iron_pickaxe')
+	removeMaceratorRecipe(event, 'macerate_iron_axe')
+	removeMaceratorRecipe(event, 'macerate_iron_shovel')
+	removeMaceratorRecipe(event, 'macerate_iron_hoe')
 	event.remove({ id: 'gtceu:arc_furnace/arc_iron_sword' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_iron_pickaxe' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_iron_axe' })
@@ -1756,11 +1778,11 @@ function removeMinecraftRecipes(event) {
 
 	//#region Золотые инструменты
 
-	event.remove({ id: 'gtceu:macerator/macerate_golden_sword' })
-	event.remove({ id: 'gtceu:macerator/macerate_golden_pickaxe' })
-	event.remove({ id: 'gtceu:macerator/macerate_golden_axe' })
-	event.remove({ id: 'gtceu:macerator/macerate_golden_shovel' })
-	event.remove({ id: 'gtceu:macerator/macerate_golden_hoe' })
+	removeMaceratorRecipe(event, 'macerate_golden_sword')
+	removeMaceratorRecipe(event, 'macerate_golden_pickaxe')
+	removeMaceratorRecipe(event, 'macerate_golden_axe')
+	removeMaceratorRecipe(event, 'macerate_golden_shovel')
+	removeMaceratorRecipe(event, 'macerate_golden_hoe')
 	event.remove({ id: 'gtceu:arc_furnace/arc_golden_sword' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_golden_pickaxe' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_golden_axe' })
@@ -1771,11 +1793,11 @@ function removeMinecraftRecipes(event) {
 
 	//#region Алмазные инструменты
 
-	event.remove({ id: 'gtceu:macerator/macerate_diamond_sword' })
-	event.remove({ id: 'gtceu:macerator/macerate_diamond_pickaxe' })
-	event.remove({ id: 'gtceu:macerator/macerate_diamond_axe' })
-	event.remove({ id: 'gtceu:macerator/macerate_diamond_shovel' })
-	event.remove({ id: 'gtceu:macerator/macerate_diamond_hoe' })
+	removeMaceratorRecipe(event, 'macerate_diamond_sword')
+	removeMaceratorRecipe(event, 'macerate_diamond_pickaxe')
+	removeMaceratorRecipe(event, 'macerate_diamond_axe')
+	removeMaceratorRecipe(event, 'macerate_diamond_shovel')
+	removeMaceratorRecipe(event, 'macerate_diamond_hoe')
 	event.remove({ id: 'gtceu:arc_furnace/arc_diamond_sword' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_diamond_pickaxe' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_diamond_axe' })
@@ -2072,10 +2094,11 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'minecraft:ender_chest' })
 	event.remove({ id: 'minecraft:end_crystal' })
 	
-	event.remove({ id: 'gtceu:macerator/macerate_end_stone' })
+	removeMaceratorRecipe(event, 'macerate_end_stone')
 	event.remove({ id: 'gtceu:assembler/ender_chest' })
 	event.remove({ id: 'gtceu:assembler/end_crystal' })
 	//#endregion
 
 	event.remove({ id: 'minecraft:flower_banner_pattern' })
+	event.remove({ id: 'gtceu:assembler/lodestone' })
 }

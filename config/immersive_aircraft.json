@@ -31,17 +31,29 @@
   "regenerateHealthEveryNTicks": 0,
   "requireShiftForRepair": false,
   "bombBayEntity": {
-    "minecraft:egg": "minecraft:chicken"
+    "minecraft:egg": "tfc:chicken"
   },
   "rotaryCannonDamage": 5.0,
   "heavyCrossBowVelocity": 3.0,
   "fuelList": {
-    "minecraft:blaze_powder": 1200
+    "minecraft:blaze_powder": 1200,
+    "gtceu:coke_gem": 1200,
+    "beneath:cursecoal": 1200
   },
   "validDimensions": {
     "minecraft:the_end": true,
     "minecraft:the_nether": true,
-    "minecraft:overworld": true
+    "minecraft:overworld": true,
+    "ad_astra:earth_orbit": false,
+    "ad_astra:moon": false,
+    "ad_astra:moon_orbit": false,
+    "ad_astra:mars": false,
+    "ad_astra:mars_orbit": false,
+    "ad_astra:venus_orbit": false,
+    "ad_astra:mercury": false,
+    "ad_astra:mercury_orbit": false,
+    "ad_astra:glacio": false,
+    "ad_astra:glacio_orbit": false
   },
   "gunpowderAmmunition": {
     "minecraft:gunpowder": 100
@@ -52,7 +64,10 @@
     "minecraft:tipped_arrow": 100
   },
   "bombBayAmmunition": {
-    "minecraft:tnt": 100
+    "minecraft:tnt": 100,
+    "gtceu:powderbarrel": 80,
+    "gtceu:industrial_tnt": 50,
+    "gtceu:dynamite": 200
   },
   "version": 1,
   "name": "immersive_aircraft"

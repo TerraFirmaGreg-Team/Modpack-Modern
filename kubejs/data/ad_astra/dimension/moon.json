@@ -1,0 +1,166 @@
+{
+	"type": "tfg:moon",
+	"generator": {
+		"type": "kubejs_tfc:wrapped",
+		"event_key": "moon",
+		"settings": {
+			"flat_bedrock": false,
+			"spawn_distance": 0,
+			"spawn_center_x": 0,
+			"spawn_center_z": 0,
+			"temperature_scale": 2000,
+			"rainfall_scale": 2000,
+			"continentalness": -0.5,
+			"rock_layer_settings": {
+				"rocks": {
+					"gabbro": "tfc:gabbro"
+				},
+				"layers": [],
+				"bottom": [
+					"gabbro"
+				],
+				"ocean_floor": [
+					"bottom"
+				],
+				"volcanic": [
+					"bottom"
+				],
+				"land": [
+					"bottom"
+				],
+				"uplift": [
+					"bottom"
+				]
+			}
+		},
+		"generator": {
+			"type": "minecraft:noise",
+			"settings": "tfg:moon_noise",
+			"biome_source": {
+				"type": "minecraft:multi_noise",
+				"biomes": [
+					{
+						"biome": "tfg:moon/lunar_lights_dense",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": [ 0.4, 1 ],
+							"erosion": 0,
+							"weirdness": [ 0.4, 1 ],
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:moon/lunar_lights_sparse",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": [ 0.2, 0.4 ],
+							"erosion": 0,
+							"weirdness": [ 0.2, 0.4 ],
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:moon/lunar_asurine_dense",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": [ 0.4, 1 ],
+							"erosion": 0,
+							"weirdness": [ -1, -0.4 ],
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:moon/lunar_asurine_sparse",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": [ 0.2, 0.4 ],
+							"erosion": 0,
+							"weirdness": [ -0.4, -0.2 ],
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:moon/lunar_plains",
+						"parameters": {
+							"temperature": 0,
+							"humidity": -0.1,
+							"continentalness": [ -0.2, 0.2 ],
+							"erosion": 0,
+							"weirdness": [ -0.2, 0.2 ],
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:moon/lunar_sands",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0.2,
+							"continentalness": [ -0.2, 0.2 ],
+							"erosion": 0,
+							"weirdness": [ -0.2, 0.2 ],
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:moon/lunar_corals_sparse",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": [ -0.4, -0.2 ],
+							"erosion": 0,
+							"weirdness": [ -0.4, -0.2 ],
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:moon/lunar_corals_dense",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": [ -1, -0.4 ],
+							"erosion": 0,
+							"weirdness": [ -1, -0.4 ],
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:moon/lunar_chorus_sparse",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": [ -0.4, -0.2 ],
+							"erosion": 0,
+							"weirdness": [ 0.2, 0.4 ],
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:moon/lunar_chorus_dense",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": [ -1, -0.4 ],
+							"erosion": 0,
+							"weirdness": [ 0.4, 1 ],
+							"depth": 0,
+							"offset": 0
+						}
+					}
+				]
+			}
+		}
+	}
+}

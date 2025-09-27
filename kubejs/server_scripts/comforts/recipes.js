@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * 
  * @param {Internal.RecipesEventJS} event 
@@ -10,14 +12,8 @@ const registerComfortsRecipes = (event) => {
 		.id("comforts:crafting/shaped/rope_and_nail");
 
 	//sleeping bag
-	event.recipes.tfc.damage_inputs_shaped_crafting(
-		event.shaped("comforts:sleeping_bag_white", [
-			"AAA",
-			"B  "
-		], {
-			A: "#tfc:high_quality_cloth",
-			B: 'tfc:bone_needle'
-		})
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless("comforts:sleeping_bag_white", [ "3x #tfc:high_quality_cloth", '#tfc:sewing_needles' ])
 	).id('comforts:shaped/sleeping_bag_white');
 
 	event.shaped("comforts:hammock_white", [

@@ -1,0 +1,68 @@
+{
+	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
+	"parent": "block/block",
+	"textures": {
+		"particle": "betterend:block/end_lotus_stem",
+		"texture": "betterend:block/end_lotus_stem",
+		"roots": "betterend:block/end_lotus_roots"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Box1",
+			"from": [ 6, 0, 6 ],
+			"to": [ 10, 16, 10 ],
+			"faces": {
+				"down": { "uv": [ 4, 0, 8, 4 ], "texture": "#texture", "cullface": "down" },
+				"up": { "uv": [ 4, 0, 8, 4 ], "texture": "#texture", "cullface": "up" },
+				"north": { "uv": [ 0, 0, 4, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 0, 4, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 0, 4, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 0, 4, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 5, 0, 1 ],
+			"to": [ 5.001, 16, 17 ],
+			"rotation": { "origin": [ 5, 0, 1 ], "axis": "y", "angle": 22.5 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#roots" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#roots" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 11, 0, 1 ],
+			"to": [ 11.001, 16, 17 ],
+			"rotation": { "origin": [ 11, 0, 1 ], "axis": "y", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#roots" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#roots" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 0.5, 0, 4.999 ],
+			"to": [ 16.5, 16, 5 ],
+			"rotation": { "origin": [ 0.5, 0, 5 ], "axis": "y", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#roots" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#roots" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 0.5, 0, 10.999 ],
+			"to": [ 16.5, 16, 11 ],
+			"rotation": { "origin": [ 0.5, 0, 11 ], "axis": "y", "angle": 22.5 },
+			"shade": false,
+			"faces": {
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#roots" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#roots" }
+			}
+		}
+	]
+}

@@ -1,0 +1,55 @@
+{
+	"variants": {
+		"count=1": [
+			{
+				"model": "tfg:block/loose/moon_deepslate_1",
+				"y": 90
+			},
+			{
+				"model": "tfg:block/loose/moon_deepslate_1"
+			},
+			{
+				"model": "tfg:block/loose/moon_deepslate_1",
+				"y": 180
+			},
+			{
+				"model": "tfg:block/loose/moon_deepslate_1",
+				"y": 270
+			}
+		],
+		"count=2": [
+			{
+				"model": "tfg:block/loose/moon_deepslate_2",
+				"y": 90
+			},
+			{
+				"model": "tfg:block/loose/moon_deepslate_2"
+			},
+			{
+				"model": "tfg:block/loose/moon_deepslate_2",
+				"y": 180
+			},
+			{
+				"model": "tfg:block/loose/moon_deepslate_2",
+				"y": 270
+			}
+		],
+		"count=3": [
+			{
+				"model": "tfg:block/loose/moon_deepslate_3",
+				"y": 90
+			},
+			{
+				"model": "tfg:block/loose/moon_deepslate_3"
+			},
+			{
+				"model": "tfg:block/loose/moon_deepslate_3",
+				"y": 180
+			},
+			{
+				"model": "tfg:block/loose/moon_deepslate_3",
+				"y": 270
+			}
+		]
+	}
+}

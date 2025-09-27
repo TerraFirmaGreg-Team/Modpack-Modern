@@ -1,0 +1,14 @@
+guiScale:3
+resourcePacks:["vanilla","mod_resources","gtceu:dynamic_assets","Moonlight Mods Dynamic Assets","afc_compat_assets","afc_data","fabric","firmalife_compat_assets","firmalife_data","tfc_tumbleweed","tfcimprovedbadlands","file/TerraFirmaCraft_New_Animals.zip","file/Perfected Anvil Helper.zip","file/ComputerCraft Greg Refreshed 1.1 - 1.20.1.zip"]
+incompatibleResourcePacks:["firmalife_data","file/Perfected Anvil Helper.zip"]
+narrator:0
+soundCategory_master:1.0
+soundCategory_music:0.3
+soundCategory_record:1.0
+soundCategory_weather:1.0
+soundCategory_block:1.0
+soundCategory_hostile:1.0
+soundCategory_neutral:1.0
+soundCategory_player:1.0
+soundCategory_ambient:0.3
+soundCategory_voice:1.0

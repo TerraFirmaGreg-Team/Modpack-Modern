@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+        "up": "tfg:block/grass/sangnum_top",
+        "down": "tfc:block/red_kaolin_clay",
+        "north": "tfg:block/grass/sangnum_kaolin_side",
+        "south": "tfg:block/grass/sangnum_kaolin_side",
+        "east": "tfg:block/grass/sangnum_kaolin_side",
+        "west": "tfg:block/grass/sangnum_kaolin_side",
+        "particle": "tfg:block/grass/sangnum_kaolin_side"
+    }
+}

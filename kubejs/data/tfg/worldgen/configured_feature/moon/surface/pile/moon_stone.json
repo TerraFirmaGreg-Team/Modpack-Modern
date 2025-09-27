@@ -1,0 +1,46 @@
+{
+	"type": "minecraft:block_pile",
+	"config": {
+		"state_provider": {
+			"type": "minecraft:weighted_state_provider",
+			"entries": [
+				{
+					"weight": 10,
+					"data": {
+						"Name": "tfg:rock/hardened_moon_stone"
+					}
+				},
+				{
+					"weight": 25,
+					"data": {
+						"Name": "ad_astra:moon_cobblestone"
+					}
+				},
+				{
+					"weight": 5,
+					"data": {
+						"Name": "ad_astra:moon_stone_slab"
+					}
+				},
+				{
+					"weight": 20,
+					"data": {
+						"Name": "ad_astra:moon_cobblestone_slab"
+					}
+				},
+				{
+					"weight": 25,
+					"data": {
+						"Name": "tfg:rock/mossy_cobble_moon"
+					}
+				},
+				{
+					"weight": 10,
+					"data": {
+						"Name": "tfg:rock/mossy_cobble_moon_slab"
+					}
+				}
+			]
+		}
+	}
+}

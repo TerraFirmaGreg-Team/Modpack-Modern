@@ -1,3 +1,5 @@
+"use strict";
+
 global.AFC_DISABLED_ITEMS = [
             // Axles
             'afc:wood/axle/baobab',

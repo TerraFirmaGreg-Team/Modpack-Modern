@@ -1,0 +1,98 @@
+{
+    "multipart": [
+        {
+            "when": {
+                "mature": true
+            },
+            "apply": {
+                "model": "betterend:block/cave_pumpkin_wild"
+            }
+        },
+        {
+            "when": {
+                "mature": false
+            },
+            "apply": {
+                "model": "betterend:block/cave_pumpkin_dead"
+            }
+        },
+        {
+            "when": {
+                "east": true,
+                "mature": true
+            },
+            "apply": {
+                "model": "betterend:block/cave_pumpkin_wild_side",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "north": true,
+                "mature": true
+            },
+            "apply": {
+                "model": "betterend:block/cave_pumpkin_wild_side"
+            }
+        },
+        {
+            "when": {
+                "south": true,
+                "mature": true
+            },
+            "apply": {
+                "model": "betterend:block/cave_pumpkin_wild_side",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "west": true,
+                "mature": true
+            },
+            "apply": {
+                "model": "betterend:block/cave_pumpkin_wild_side",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "east": true,
+                "mature": false
+            },
+            "apply": {
+                "model": "betterend:block/cave_pumpkin_dead_side",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "north": true,
+                "mature": false
+            },
+            "apply": {
+                "model": "betterend:block/cave_pumpkin_dead_side"
+            }
+        },
+        {
+            "when": {
+                "south": true,
+                "mature": false
+            },
+            "apply": {
+                "model": "betterend:block/cave_pumpkin_dead_side",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "west": true,
+                "mature": false
+            },
+            "apply": {
+                "model": "betterend:block/cave_pumpkin_dead_side",
+                "y": 270
+            }
+        }
+    ]
+}

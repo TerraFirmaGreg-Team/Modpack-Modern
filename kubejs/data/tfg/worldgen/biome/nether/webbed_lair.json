@@ -77,7 +77,6 @@
 			"charge": 1.0
 		}
 	},
-	"creature_spawn_probability": 0.1,
 	"spawners": {
 		"water_ambient": [],
 		"ambient": [
@@ -155,7 +154,7 @@
 				"weight": 75
 			},
 			{
-				"type": "endermanoverhaul:cave_enderman",
+				"type": "endermanoverhaul:nether_wastes_enderman",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 75
@@ -165,6 +164,12 @@
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 10
+			},
+			{
+				"type": "minecraft:phantom",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 5
 			}
 		],
 		"underground_water_creature": [

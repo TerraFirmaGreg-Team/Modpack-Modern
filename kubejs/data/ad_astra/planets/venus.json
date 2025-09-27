@@ -1,0 +1,10 @@
+{
+	"dimension": "ad_astra:venus",
+	"gravity": 8.87,
+	"orbit": "ad_astra:venus_orbit",
+	"oxygen": false,
+	"solar_power": 16,
+	"solar_system": "ad_astra:solar_system",
+	"temperature": 465,
+	"tier": 3
+}

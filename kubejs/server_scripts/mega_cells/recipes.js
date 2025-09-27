@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerMegaCellsRecipes = (event) => {
     
@@ -22,42 +23,63 @@ const registerMegaCellsRecipes = (event) => {
         .notConsumable('megacells:accumulation_processor_press')
         .itemOutputs('megacells:printed_accumulation_processor')
         .duration(20)
+        .circuit(1)
         .EUt(1920)
+
+    event.recipes.gtceu.forming_press('megacells:printed_accumulation_processor_moon')
+        .itemInputs('#forge:dense_plates/silicon')
+        .notConsumable('megacells:accumulation_processor_press')
+        .itemOutputs('2x megacells:printed_accumulation_processor')
+        .duration(20)
+        .circuit(2)
+        .EUt(1920)
+        .dimension('ad_astra:moon')
+
+	// Accumulation Processor
+
+	event.recipes.gtceu.circuit_assembler('ae2:accumulation_processor_moon')
+		.itemInputs(
+			'ae2:printed_silicon',
+			'megacells:printed_accumulation_processor',
+			'#gtceu:circuits/iv',
+			'2x #gtceu:resistors',
+			'1x minecraft:redstone')
+		.inputFluids(Fluid.of('tfg:fluix', 144*5))
+		.itemOutputs('megacells:accumulation_processor')
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.IV])
+		.cleanroom(CleanroomType.CLEANROOM)
+
+	event.recipes.gtceu.circuit_assembler('ae2:accumulation_processor')
+		.itemInputs(
+			'ae2:printed_silicon',
+			'megacells:printed_accumulation_processor',
+			'#gtceu:circuits/iv',
+			'1x minecraft:redstone')
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*5))
+		.itemOutputs('2x megacells:accumulation_processor')
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.EV])
+		.dimension('ad_astra:moon')
 
     // Inscriber Silicon Press
     event.recipes.gtceu.laser_engraver('ae2:accumulation_processor_press')
-        .itemInputs('#forge:plates/naquadah')
+        .itemInputs('tfg:unfinished_inscriber_accumulation_press')
         .notConsumable('#forge:lenses/black')
         .itemOutputs('megacells:accumulation_processor_press')
         .duration(4000)
-        .EUt(1920)
-
-    //accumulation processor
-    event.recipes.gtceu.circuit_assembler('megacells:accumulation_processor')
-        .itemInputs(
-            'ae2:printed_silicon',
-            'megacells:printed_accumulation_processor',
-            '#gtceu:circuits/iv',
-            '2x #gtceu:resistors',
-            '2x #forge:fine_wires/niobium_titanium',)
-        .inputFluids(Fluid.of('tfg:fluix', 144))
-        .itemOutputs('2x megacells:accumulation_processor')
-        .duration(20)
-        .EUt(1920)
+        .EUt(GTValues.VA[GTValues.IV])
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.circuit_assembler('megacells:accumulation_processor_adv')
-        .itemInputs(
-            'ae2:printed_silicon',
-            'megacells:printed_accumulation_processor',
-            '#gtceu:circuits/iv',
-            'gtceu:advanced_smd_resistor',
-            '2x #forge:fine_wires/niobium_titanium',)
-        .inputFluids(Fluid.of('tfg:fluix', 144))
-        .itemOutputs('2x megacells:accumulation_processor')
-        .duration(20)
-        .EUt(1920)
-        .cleanroom(CleanroomType.CLEANROOM)
+	event.recipes.gtceu.implosion_compressor('tfg:unfinished_inscriber_accumulation_press')
+		.itemInputs(
+			'#forge:dense_plates/rocket_alloy_t1',
+			'#forge:dense_plates/desh',
+			'gtceu:quantum_star',
+            '64x gtceu:industrial_tnt')
+		.itemOutputs('tfg:unfinished_inscriber_accumulation_press')
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.IV])
 
     //Mega Item Cell Housing
     event.shaped('megacells:mega_item_cell_housing', [
@@ -99,251 +121,111 @@ const registerMegaCellsRecipes = (event) => {
     // 1m storage components
     event.recipes.gtceu.assembly_line('megacells:cell_component_1m')
         .itemInputs(
-            '4x #gtceu:circuits/uv',
-            '4x #forge:plates/darmstadtium',
-            '2x ae2:quartz_vibrant_glass',
-            '4x #forge:dusts/ender_pearl',
-            '4x ae2:matter_ball',
-            '2x megacells:accumulation_processor',)
-        .inputFluids(Fluid.of('gtceu:hsla_steel', 144))
+ 			'4x #gtceu:circuits/zpm',
+			'32x gtceu:hpic_chip',
+			'64x ae2:calculation_processor',
+			'64x ae2:logic_processor',
+			'64x ae2:logic_processor',
+            '16x megacells:accumulation_processor',
+            '1x ae2:cell_component_256k')
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 4608))
+        .inputFluids(Fluid.of('gtceu:polyphenylene_sulfide', 9216))
         .itemOutputs('megacells:cell_component_1m')
-        .duration(200)
-        .EUt(491520)
+        .duration(2000)
+        .EUt(GTValues.VA[GTValues.LuV])
+		.dimension('ad_astra:moon')
+
+    event.recipes.gtceu.assembly_line('megacells:cell_component_1m_256k')
+        .itemInputs(
+ 			'4x #gtceu:circuits/uv',
+			'32x gtceu:hpic_chip',
+			'64x ae2:engineering_processor',
+			'64x ae2:logic_processor',
+			'64x ae2:logic_processor',
+            '16x megacells:accumulation_processor',
+            '2x ae2:cell_component_256k')
+        .inputFluids(Fluid.of('tfg:fluix', 4608))
+        .inputFluids(Fluid.of('gtceu:polyphenylene_sulfide', 9216))
+        .itemOutputs('megacells:cell_component_1m')
+        .duration(4000)
+        .EUt(GTValues.VA[GTValues.ZPM])
         .cleanroom(CleanroomType.CLEANROOM)
 
     // 4m storage components
     event.recipes.gtceu.assembly_line('megacells:cell_component_4m')
         .itemInputs(
-            '4x #gtceu:circuits/uhv',
-            '4x #forge:plates/neutronium',
-            '2x ae2:quartz_vibrant_glass',
-            '4x #forge:dusts/ender_pearl',
-            '4x ae2:matter_ball',
-            '2x megacells:accumulation_processor')
-        .inputFluids(Fluid.of('gtceu:hsla_steel', 144))
+ 			'4x #gtceu:circuits/uv',
+			'64x gtceu:advanced_soc',
+			'64x ae2:calculation_processor',
+			'64x ae2:logic_processor',
+			'64x ae2:logic_processor',
+            '64x megacells:accumulation_processor',
+            '1x megacells:cell_component_1m')
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 9216))
+        .inputFluids(Fluid.of('gtceu:polyphenylene_sulfide', 18432))
         .itemOutputs('megacells:cell_component_4m')
-        .duration(200)
-        .EUt(1966080)
-        .cleanroom(CleanroomType.CLEANROOM)
-    
-    event.recipes.gtceu.assembly_line('megacells:cell_component_4m_1m')
+        .duration(2000)
+        .EUt(GTValues.VA[GTValues.ZPM])
+		.dimension('ad_astra:moon')
+
+    event.recipes.gtceu.assembly_line('megacells:cell_component_4m_256k')
         .itemInputs(
-            '2x megacells:accumulation_processor',
-            '2x #gtceu:circuits/uhv',
-            '2x ae2:quartz_vibrant_glass',
-            '4x megacells:cell_component_1m')
-        .inputFluids(Fluid.of('gtceu:hsla_steel', 144))
+ 			'4x #gtceu:circuits/uhv',
+			'64x gtceu:advanced_soc',
+			'64x ae2:engineering_processor',
+			'64x ae2:logic_processor',
+			'64x ae2:logic_processor',
+            '64x megacells:accumulation_processor',
+            '2x megacells:cell_component_1m')
+        .inputFluids(Fluid.of('tfg:fluix', 9216))
+        .inputFluids(Fluid.of('gtceu:polyphenylene_sulfide', 18432))
         .itemOutputs('megacells:cell_component_4m')
-        .duration(400)
-        .EUt(1966080)
+        .duration(4000)
+        .EUt(GTValues.VA[GTValues.UV])
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // // 16m storage components
-    // event.recipes.gtceu.assembly_line('megacells:cell_component_16m')
-    //     .itemInputs(
-    //         '4x #gtceu:circuits/uev',
-    //         '4x #forge:plates/tungsten_steel',
-    //         '8x #forge:dusts/certus_quartz',
-    //         '2x megacells:accumulation_processor',)
-    //     .inputFluids(Fluid.of('gtceu:hsla_steel', 144))
-    //     .itemOutputs('megacells:cell_component_16m')
-    //     .duration(200)
-    //     .EUt(7864320)
-    //     .cleanroom(CleanroomType.CLEANROOM)
-    
-    // event.recipes.gtceu.assembly_line('megacells:cell_component_16m_4m')
-    //     .itemInputs(
-    //         '2x megacells:accumulation_processor',
-    //         '2x #gtceu:circuits/uev',
-    //         '4x megacells:cell_component_4m')
-    //     .inputFluids(Fluid.of('gtceu:hsla_steel', 144))
-    //     .itemOutputs('megacells:cell_component_16m')
-    //     .duration(400)
-    //     .EUt(7864320)
-    //     .cleanroom(CleanroomType.CLEANROOM)
-    // // 64m storage components
-    // event.recipes.gtceu.assembly_line('megacells:cell_component_64m')
-    //     .itemInputs(
-    //         '4x #gtceu:circuits/uiv',
-    //         '4x #forge:plates/rhodium_plated_palladium',
-    //         '8x #forge:dusts/certus_quartz',
-    //         '2x megacells:accumulation_processor')
-    //     .inputFluids(Fluid.of('gtceu:hsla_steel', 144))
-    //     .itemOutputs('megacells:cell_component_64m')
-    //     .duration(200)
-    //     .EUt(31457280)
-    //     .cleanroom(CleanroomType.CLEANROOM)
-    //     event.recipes.gtceu.assembly_line('megacells:cell_component_64m_16m')
-    //     .itemInputs(
-    //         '2x megacells:accumulation_processor',
-    //         '2x #gtceu:circuits/uiv',
-    //         '4x megacells:cell_component_16m')
-    //     .inputFluids(Fluid.of('gtceu:hsla_steel', 144))
-    //     .itemOutputs('megacells:cell_component_64m')
-    //     .duration(400)
-    //     .EUt(31457280)
-    //     .cleanroom(CleanroomType.CLEANROOM)
-    // // 256m storage components
-    // event.recipes.gtceu.assembly_line('megacells:cell_component_256m')
-    //     .itemInputs(
-    //         '4x #gtceu:circuits/uxv',
-    //         '4x #forge:plates/naquadah_alloy',
-    //         '16x #forge:dusts/certus_quartz',
-    //         '2x megacells:accumulation_processor',)
-    //     .inputFluids(Fluid.of('gtceu:hsla_steel', 144))
-    //     .itemOutputs('megacells:cell_component_256m')
-    //     .duration(200)
-    //     .EUt(125829120)
-    //     .cleanroom(CleanroomType.CLEANROOM)
-    // event.recipes.gtceu.assembly_line('megacells:cell_component_256m_64m')
-    //     .itemInputs(
-    //         '2x megacells:accumulation_processor',
-    //         '2x #gtceu:circuits/uxv',
-    //         '4x megacells:cell_component_64m')
-    //     .inputFluids(Fluid.of('gtceu:hsla_steel', 144))
-    //     .itemOutputs('megacells:cell_component_256m')
-    //     .duration(400)
-    //     .EUt(125829120)
-    //     .cleanroom(CleanroomType.CLEANROOM)
-    //#endregion
-
-    //#region MEGA interface
-    // EV
-    event.recipes.gtceu.assembler('megacells:mega_interface_ev')
+    // 16m storage components
+    event.recipes.gtceu.assembly_line('megacells:cell_component_16m')
         .itemInputs(
-            '2x #ae2:interface',
-            '4x megacells:accumulation_processor',
-            '2x gtceu:ev_conveyor_module',
-            '4x gtceu:laminated_glass',
-            '4x gtceu:titanium_plate',
-            '2x ae2:annihilation_core',
-            '2x ae2:formation_core',
-            '#gtceu:circuits/ev')
-        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1152))
-        .itemOutputs('megacells:mega_interface')
-        .duration(300)
-        .EUt(1920)
+ 			'4x #gtceu:circuits/uhv',
+			'64x gtceu:uhpic_chip',
+			'64x ae2:engineering_processor',
+			'64x ae2:logic_processor',
+			'64x ae2:logic_processor',
+            '64x megacells:accumulation_processor',
+            '64x megacells:accumulation_processor',
+            '1x megacells:cell_component_4m')
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 18432))
+        .inputFluids(Fluid.of('tfg:fluix', 18432))
+        .inputFluids(Fluid.of('gtceu:polyphenylene_sulfide', 36864))
+        .itemOutputs('megacells:cell_component_16m')
+        .duration(8000)
+        .stationResearch(b => b.researchStack(Item.of('megacells:cell_component_4m')).EUt(GTValues.VA[GTValues.LuV]).CWUt(32))
+        .EUt(GTValues.VA[GTValues.UV])
+        .dimension('ad_astra:moon')
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // IV
-    event.recipes.gtceu.assembler('megacells:mega_interface_iv')
+    // 64m storage components
+    event.recipes.gtceu.assembly_line('megacells:cell_component_64m')
         .itemInputs(
-            '4x #ae2:interface',
-            '4x megacells:accumulation_processor',
-            '2x gtceu:iv_conveyor_module',
-            '4x gtceu:laminated_glass',
-            '4x gtceu:tungsten_steel_plate',
-            '2x ae2:annihilation_core',
-            '2x ae2:formation_core',
-            '#gtceu:circuits/iv',)
-        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1152))
-        .itemOutputs('2x megacells:mega_interface')
-        .duration(300)
-        .EUt(7680)
+ 			'8x #gtceu:circuits/uhv',
+			'64x gtceu:uhpic_chip',
+			'64x ae2:engineering_processor',
+			'64x ae2:logic_processor',
+			'64x ae2:logic_processor',
+			'64x ae2:calculation_processor',
+            '64x megacells:accumulation_processor',
+            '64x megacells:accumulation_processor',
+            '1x megacells:cell_component_16m')
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 36864))
+        .inputFluids(Fluid.of('tfg:fluix', 36864))
+        .inputFluids(Fluid.of('gtceu:polyphenylene_sulfide', 73728))
+        .itemOutputs('megacells:cell_component_64m')
+        .duration(8000)
+        .stationResearch(b => b.researchStack(Item.of('megacells:cell_component_16m')).EUt(GTValues.VA[GTValues.LuV]).CWUt(64))
+        .EUt(GTValues.VA[GTValues.UHV])
+        .dimension('ad_astra:moon')
         .cleanroom(CleanroomType.CLEANROOM)
-
-    // LuV
-    event.recipes.gtceu.assembler('megacells:mega_interface_luv')
-        .itemInputs(
-            '8x #ae2:interface',
-            '4x megacells:accumulation_processor',
-            '2x gtceu:luv_conveyor_module',
-            '4x gtceu:laminated_glass',
-            '4x gtceu:rhodium_plated_palladium_plate',
-            '2x ae2:annihilation_core',
-            '2x ae2:formation_core',
-            '#gtceu:circuits/luv')
-        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1152))
-        .itemOutputs('4x megacells:mega_interface')
-        .duration(300)
-        .EUt(30720)
-        .cleanroom(CleanroomType.CLEANROOM)
-
-    // ZPM
-    event.recipes.gtceu.assembler('megacells:mega_interface_zpm')
-        .itemInputs(
-            '16x #ae2:interface',
-            '4x megacells:accumulation_processor',
-            '2x gtceu:zpm_conveyor_module',
-            '4x gtceu:laminated_glass',
-            '4x gtceu:naquadah_alloy_plate',
-            '2x ae2:annihilation_core',
-            '2x ae2:formation_core',
-            '#gtceu:circuits/zpm')
-        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1152))
-        .itemOutputs('8x megacells:mega_interface')
-        .duration(300)
-        .EUt(119680)
-        .cleanroom(CleanroomType.CLEANROOM)
-
-    //#endregion
-
-    //#region MEGA provider
-    // EV
-    event.recipes.gtceu.assembler('megacells:mega_pattern_provider_ev')
-        .itemInputs(
-            '2x #ae2:pattern_provider',
-            '4x megacells:accumulation_processor',
-            '2x gtceu:ev_conveyor_module',
-            '4x gtceu:titanium_plate',
-            '2x ae2:annihilation_core',
-            '2x ae2:formation_core',
-            '#gtceu:circuits/ev')
-        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1152))
-        .itemOutputs('megacells:mega_pattern_provider')
-        .duration(300)
-        .EUt(1920)
-        .cleanroom(CleanroomType.CLEANROOM)
-
-    // IV
-    event.recipes.gtceu.assembler('megacells:mega_pattern_provider_iv')
-        .itemInputs(
-            '4x #ae2:pattern_provider',
-            '4x megacells:accumulation_processor',
-            '2x gtceu:iv_conveyor_module',
-            '4x gtceu:tungsten_steel_plate',
-            '2x ae2:annihilation_core',
-            '2x ae2:formation_core',
-            '#gtceu:circuits/iv',)
-        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1152))
-        .itemOutputs('2x megacells:mega_pattern_provider')
-        .duration(300)
-        .EUt(7680)
-        .cleanroom(CleanroomType.CLEANROOM)
-
-    // LuV
-    event.recipes.gtceu.assembler('megacells:mega_pattern_provider_luv')
-        .itemInputs(
-            '8x #ae2:pattern_provider',
-            '4x megacells:accumulation_processor',
-            '2x gtceu:luv_conveyor_module',
-            '4x gtceu:rhodium_plated_palladium_plate',
-            '2x ae2:annihilation_core',
-            '2x ae2:formation_core',
-            '#gtceu:circuits/luv')
-        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1152))
-        .itemOutputs('4x megacells:mega_pattern_provider')
-        .duration(300)
-        .EUt(30720)
-        .cleanroom(CleanroomType.CLEANROOM)
-
-    // ZPM
-    event.recipes.gtceu.assembler('megacells:mega_pattern_provider_zpm')
-        .itemInputs(
-            '16x #ae2:pattern_provider',
-            '4x megacells:accumulation_processor',
-            '2x gtceu:zpm_conveyor_module',
-            '4x gtceu:naquadah_alloy_plate',
-            '2x ae2:annihilation_core',
-            '2x ae2:formation_core',
-            '#gtceu:circuits/zpm')
-        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1152))
-        .itemOutputs('8x megacells:mega_pattern_provider')
-        .duration(300)
-        .EUt(119680)
-        .cleanroom(CleanroomType.CLEANROOM)
-
-    //#endregion
 
     // greater energy card
     event.recipes.gtceu.assembler('megacells:greater_energy_card')
@@ -370,19 +252,19 @@ const registerMegaCellsRecipes = (event) => {
         .EUt(12)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // event.recipes.gtceu.packer('megacells:item_storage_cell_16m')
-    // .itemInputs('megacells:mega_item_cell_housing', 'megacells:cell_component_16m')
-    // .itemOutputs('megacells:item_storage_cell_16m')
-    // .duration(10)
-    // .EUt(12)
-    // .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('megacells:item_storage_cell_16m')
+        .itemInputs('megacells:mega_item_cell_housing', 'megacells:cell_component_16m')
+        .itemOutputs('megacells:item_storage_cell_16m')
+        .duration(10)
+        .EUt(12)
+        .cleanroom(CleanroomType.CLEANROOM)
 
-    // event.recipes.gtceu.packer('megacells:item_storage_cell_64m')
-    // .itemInputs('megacells:mega_item_cell_housing', 'megacells:cell_component_64m')
-    // .itemOutputs('megacells:item_storage_cell_64m')
-    // .duration(10)
-    // .EUt(12)
-    // .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('megacells:item_storage_cell_64m')
+        .itemInputs('megacells:mega_item_cell_housing', 'megacells:cell_component_64m')
+        .itemOutputs('megacells:item_storage_cell_64m')
+        .duration(10)
+        .EUt(12)
+        .cleanroom(CleanroomType.CLEANROOM)
 
     // event.recipes.gtceu.packer('megacells:item_storage_cell_256m')
     // .itemInputs('megacells:mega_item_cell_housing', 'megacells:cell_component_256m')
@@ -406,19 +288,19 @@ const registerMegaCellsRecipes = (event) => {
         .EUt(12)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // event.recipes.gtceu.packer('megacells:fluid_storage_cell_16m')
-    // .itemInputs('megacells:mega_fluid_cell_housing', 'megacells:cell_component_16m')
-    // .itemOutputs('megacells:fluid_storage_cell_16m')
-    // .duration(10)
-    // .EUt(12)
-    // .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('megacells:fluid_storage_cell_16m')
+        .itemInputs('megacells:mega_fluid_cell_housing', 'megacells:cell_component_16m')
+        .itemOutputs('megacells:fluid_storage_cell_16m')
+        .duration(10)
+        .EUt(12)
+        .cleanroom(CleanroomType.CLEANROOM)
 
-    // event.recipes.gtceu.packer('megacells:fluid_storage_cell_64m')
-    // .itemInputs('megacells:mega_fluid_cell_housing', 'megacells:cell_component_64m')
-    // .itemOutputs('megacells:fluid_storage_cell_64m')
-    // .duration(10)
-    // .EUt(12)
-    // .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('megacells:fluid_storage_cell_64m')
+        .itemInputs('megacells:mega_fluid_cell_housing', 'megacells:cell_component_64m')
+        .itemOutputs('megacells:fluid_storage_cell_64m')
+        .duration(10)
+        .EUt(12)
+        .cleanroom(CleanroomType.CLEANROOM)
 
     // event.recipes.gtceu.packer('megacells:fluid_storage_cell_256m')
     // .itemInputs('megacells:mega_fluid_cell_housing', 'megacells:cell_component_256m')
@@ -442,19 +324,19 @@ const registerMegaCellsRecipes = (event) => {
         .EUt(12)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // event.recipes.gtceu.packer('megacells:item_storage_cell_16m_back')
-    // .itemInputs('megacells:item_storage_cell_16m')
-    // .itemOutputs('megacells:mega_item_cell_housing', 'megacells:cell_component_16m')
-    // .duration(10)
-    // .EUt(12)
-    // .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('megacells:item_storage_cell_16m_back')
+        .itemInputs('megacells:item_storage_cell_16m')
+        .itemOutputs('megacells:mega_item_cell_housing', 'megacells:cell_component_16m')
+        .duration(10)
+        .EUt(12)
+        .cleanroom(CleanroomType.CLEANROOM)
 
-    // event.recipes.gtceu.packer('megacells:item_storage_cell_64m_back')
-    // .itemInputs('megacells:item_storage_cell_64m')
-    // .itemOutputs('megacells:mega_item_cell_housing', 'megacells:cell_component_64m')
-    // .duration(10)
-    // .EUt(12)
-    // .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('megacells:item_storage_cell_64m_back')
+        .itemInputs('megacells:item_storage_cell_64m')
+        .itemOutputs('megacells:mega_item_cell_housing', 'megacells:cell_component_64m')
+        .duration(10)
+        .EUt(12)
+        .cleanroom(CleanroomType.CLEANROOM)
 
     // event.recipes.gtceu.packer('megacells:item_storage_cell_256m_back')
     // .itemInputs('megacells:item_storage_cell_256m')
@@ -478,19 +360,19 @@ const registerMegaCellsRecipes = (event) => {
         .EUt(12)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // event.recipes.gtceu.packer('megacells:fluid_storage_cell_16m_back')
-    // .itemInputs('megacells:fluid_storage_cell_16m')
-    // .itemOutputs('megacells:mega_fluid_cell_housing','megacells:cell_component_16m')
-    // .duration(10)
-    // .EUt(12)
-    // .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('megacells:fluid_storage_cell_16m_back')
+        .itemInputs('megacells:fluid_storage_cell_16m')
+        .itemOutputs('megacells:mega_fluid_cell_housing','megacells:cell_component_16m')
+        .duration(10)
+        .EUt(12)
+        .cleanroom(CleanroomType.CLEANROOM)
 
-    // event.recipes.gtceu.packer('megacells:fluid_storage_cell_64m_back')
-    // .itemInputs('megacells:fluid_storage_cell_64m')
-    // .itemOutputs('megacells:mega_fluid_cell_housing', 'megacells:cell_component_64m')
-    // .duration(10)
-    // .EUt(12)
-    // .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('megacells:fluid_storage_cell_64m_back')
+        .itemInputs('megacells:fluid_storage_cell_64m')
+        .itemOutputs('megacells:mega_fluid_cell_housing', 'megacells:cell_component_64m')
+        .duration(10)
+        .EUt(12)
+        .cleanroom(CleanroomType.CLEANROOM)
 
     // event.recipes.gtceu.packer('megacells:fluid_storage_cell_256m_back')
     // .itemInputs('megacells:fluid_storage_cell_256m')
@@ -501,21 +383,40 @@ const registerMegaCellsRecipes = (event) => {
 
     //#endregion 
 
-    //mega crafting unit
+    //#region Crafting Unit
+
     event.recipes.gtceu.assembler('megacells:mega_crafting_unit')
         .itemInputs(
-            '4x ae2:crafting_unit',
             '4x megacells:accumulation_processor',
-            '2x ae2:logic_processor',
-            '#gtceu:circuits/ev',
-            '2x ae2:fluix_smart_cable')
-        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 288))
+            '4x ae2:logic_processor',
+            '4x ae2:calculation_processor',
+            '4x ae2:engineering_processor',
+            '#gtceu:circuits/luv',
+            '6x #forge:plates/titanium_tungsten_carbide',
+            'ae2:crafting_unit')
+        .inputFluids(Fluid.of('tfg:fluix', 144*8))
         .itemOutputs('megacells:mega_crafting_unit')
-        .duration(20)
-        .EUt(2720)
+        .duration(20*15)
+        .EUt(GTValues.VA[GTValues.IV])
+        .cleanroom(CleanroomType.CLEANROOM)
 
+    event.recipes.gtceu.assembler('megacells:mega_crafting_unit_moon')
+        .itemInputs(
+            '4x megacells:accumulation_processor',
+            '4x ae2:logic_processor',
+            '4x ae2:calculation_processor',
+            '4x ae2:engineering_processor',
+            '#gtceu:circuits/luv',
+            '6x #forge:plates/titanium_tungsten_carbide',
+            'ae2:crafting_unit')
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*4))
+        .itemOutputs('2x megacells:mega_crafting_unit')
+        .duration(20*15)
+        .EUt(GTValues.VA[GTValues.IV])
+        .dimension('ad_astra:moon')
 
-        //#region Crafting  Storage
+    // Mega Crafting  Storage
+
     event.recipes.gtceu.packer('megacells:mega_crafting_accelerator')
         .itemInputs('megacells:mega_crafting_unit', 'ae2:engineering_processor')
         .itemOutputs('megacells:mega_crafting_accelerator')
@@ -537,26 +438,27 @@ const registerMegaCellsRecipes = (event) => {
         .EUt(12)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // event.recipes.gtceu.packer('megacells:16m_crafting_storage')
-    //     .itemInputs('megacells:mega_crafting_unit', 'megacells:cell_component_16m')
-    //     .itemOutputs('megacells:16m_crafting_storage')
-    //     .duration(10)
-    //     .EUt(12)
-    //     .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('megacells:16m_crafting_storage')
+        .itemInputs('megacells:mega_crafting_unit', 'megacells:cell_component_16m')
+        .itemOutputs('megacells:16m_crafting_storage')
+        .duration(10)
+        .EUt(12)
+        .cleanroom(CleanroomType.CLEANROOM)
 
-    // event.recipes.gtceu.packer('megacells:64m_crafting_storage')
-    //     .itemInputs('megacells:mega_crafting_unit', 'megacells:cell_component_64m')
-    //     .itemOutputs('megacells:64m_crafting_storage')
-    //     .duration(10)
-    //     .EUt(12)
-    //     .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('megacells:64m_crafting_storage')
+        .itemInputs('megacells:mega_crafting_unit', 'megacells:cell_component_64m')
+        .itemOutputs('megacells:64m_crafting_storage')
+        .duration(10)
+        .EUt(12)
+        .cleanroom(CleanroomType.CLEANROOM)
 
-    // event.recipes.gtceu.packer('megacells:256m_crafting_storage')
-    //     .itemInputs('megacells:mega_crafting_unit', 'megacells:cell_component_256m')
-    //     .itemOutputs('megacells:256m_crafting_storage')
-    //     .duration(10)
-    //     .EUt(12)
-    //     .cleanroom(CleanroomType.CLEANROOM)
+    /* event.recipes.gtceu.packer('megacells:256m_crafting_storage')
+        .itemInputs('megacells:mega_crafting_unit', 'megacells:cell_component_256m')
+        .itemOutputs('megacells:256m_crafting_storage')
+        .duration(10)
+        .EUt(12)
+        .cleanroom(CleanroomType.CLEANROOM)
+    */
 
     event.recipes.gtceu.packer('megacells:mega_crafting_monitor')
         .itemInputs('megacells:mega_crafting_unit', 'ae2:storage_monitor')
@@ -587,20 +489,19 @@ const registerMegaCellsRecipes = (event) => {
         .EUt(12)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // event.recipes.gtceu.packer('megacells:16m_crafting_storage_back')
-    //     .itemInputs('megacells:16m_crafting_storage')
-    //     .itemOutputs('megacells:mega_crafting_unit', 'megacells:cell_component_16m')
-    //     .duration(10)
-    //     .EUt(12)
-    //     .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('megacells:16m_crafting_storage_back')
+        .itemInputs('megacells:16m_crafting_storage')
+        .itemOutputs('megacells:mega_crafting_unit', 'megacells:cell_component_16m')
+        .duration(10)
+        .EUt(12)
+        .cleanroom(CleanroomType.CLEANROOM)
 
-    // event.recipes.gtceu.packer('megacells:64m_crafting_storage_back')
-    //     .itemInputs(
-    //         'megacells:64m_crafting_storage')
-    //     .itemOutputs('megacells:mega_crafting_unit','megacells:cell_component_64m')
-    //     .duration(10)
-    //     .EUt(12)
-    //     .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('megacells:64m_crafting_storage_back')
+        .itemInputs('megacells:64m_crafting_storage')
+        .itemOutputs('megacells:mega_crafting_unit','megacells:cell_component_64m')
+        .duration(10)
+        .EUt(12)
+        .cleanroom(CleanroomType.CLEANROOM)
 
     // event.recipes.gtceu.packer('megacells:256m_crafting_storage_back')
     //     .itemInputs('megacells:256m_crafting_storage')
@@ -652,32 +553,32 @@ const registerMegaCellsRecipes = (event) => {
         .cleanroom(CleanroomType.CLEANROOM)
 
     // 16m
-    // event.recipes.gtceu.assembler('megacells:portable_item_cell_16m')
-    //     .itemInputs(
-    //         'ae2:chest',
-    //         'megacells:cell_component_16m',
-    //         'megacells:mega_energy_cell',
-    //         '#gtceu:batteries/luv',
-    //         'megacells:mega_item_cell_housing')
-    //     .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
-    //     .itemOutputs('megacells:portable_item_cell_16m')
-    //     .duration(200)
-    //     .EUt(491520)
-    //     .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.assembler('megacells:portable_item_cell_16m')
+         .itemInputs(
+             'ae2:chest',
+             'megacells:cell_component_16m',
+             'megacells:mega_energy_cell',
+             '#gtceu:batteries/luv',
+             'megacells:mega_item_cell_housing')
+         .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
+         .itemOutputs('megacells:portable_item_cell_16m')
+         .duration(200)
+         .EUt(491520)
+         .cleanroom(CleanroomType.CLEANROOM)
 
-    // // 64m
-    // event.recipes.gtceu.assembler('megacells:portable_item_cell_64m')
-    //     .itemInputs(
-    //         'ae2:chest',
-    //         'megacells:cell_component_64m',
-    //         'megacells:mega_energy_cell',
-    //         '#gtceu:batteries/luv',
-    //         'megacells:mega_item_cell_housing')
-    //     .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
-    //     .itemOutputs('megacells:portable_item_cell_64m')
-    //     .duration(200)
-    //     .EUt(1966080)
-    //     .cleanroom(CleanroomType.CLEANROOM)
+    // 64m
+    event.recipes.gtceu.assembler('megacells:portable_item_cell_64m')
+         .itemInputs(
+             'ae2:chest',
+             'megacells:cell_component_64m',
+             'megacells:mega_energy_cell',
+             '#gtceu:batteries/luv',
+             'megacells:mega_item_cell_housing')
+         .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
+         .itemOutputs('megacells:portable_item_cell_64m')
+         .duration(200)
+         .EUt(1966080)
+         .cleanroom(CleanroomType.CLEANROOM)
 
     // // 256m
     // event.recipes.gtceu.assembler('megacells:portable_item_cell_256m')
@@ -726,33 +627,33 @@ const registerMegaCellsRecipes = (event) => {
         .EUt(122880)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // // 16m
-    // event.recipes.gtceu.assembler('megacells:portable_fluid_cell_16m')
-    //     .itemInputs(
-    //         'ae2:chest',
-    //         'megacells:cell_component_16m',
-    //         'megacells:mega_energy_cell',
-    //         '#gtceu:batteries/luv',
-    //         'megacells:mega_fluid_cell_housing')
-    //     .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
-    //     .itemOutputs('megacells:portable_fluid_cell_16m')
-    //     .duration(200)
-    //     .EUt(491520)
-    //     .cleanroom(CleanroomType.CLEANROOM)
+    // 16m
+    event.recipes.gtceu.assembler('megacells:portable_fluid_cell_16m')
+        .itemInputs(
+            'ae2:chest',
+            'megacells:cell_component_16m',
+            'megacells:mega_energy_cell',
+            '#gtceu:batteries/luv',
+            'megacells:mega_fluid_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
+        .itemOutputs('megacells:portable_fluid_cell_16m')
+        .duration(200)
+        .EUt(491520)
+        .cleanroom(CleanroomType.CLEANROOM)
 
-    // // 64m
-    // event.recipes.gtceu.assembler('megacells:portable_fluid_cell_64m')
-    //     .itemInputs(
-    //         'ae2:chest',
-    //         'megacells:cell_component_64m',
-    //         'megacells:mega_energy_cell',
-    //         '#gtceu:batteries/luv',
-    //         'megacells:mega_fluid_cell_housing')
-    //     .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
-    //     .itemOutputs('megacells:portable_fluid_cell_64m')
-    //     .duration(200)
-    //     .EUt(1966080)
-    //     .cleanroom(CleanroomType.CLEANROOM)
+    // 64m
+    event.recipes.gtceu.assembler('megacells:portable_fluid_cell_64m')
+        .itemInputs(
+            'ae2:chest',
+            'megacells:cell_component_64m',
+            'megacells:mega_energy_cell',
+            '#gtceu:batteries/luv',
+            'megacells:mega_fluid_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
+        .itemOutputs('megacells:portable_fluid_cell_64m')
+        .duration(200)
+        .EUt(1966080)
+        .cleanroom(CleanroomType.CLEANROOM)
 
     // // 256m
     // event.recipes.gtceu.assembler('megacells:portable_fluid_cell_256m')

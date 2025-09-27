@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerAE2WTLibRecipes = (event) => {
 
@@ -55,7 +56,7 @@ const registerAE2WTLibRecipes = (event) => {
             'gtceu:quantum_star',
             '2x gtceu:zpm_sensor',
             '4x ae2:wireless_booster',
-            '#gtceu:circuits/uv',)
+            '#gtceu:circuits/uv')
         .inputFluids(
             Fluid.of('gtceu:tritanium', 2304),
             Fluid.of('gtceu:titanium', 2160),

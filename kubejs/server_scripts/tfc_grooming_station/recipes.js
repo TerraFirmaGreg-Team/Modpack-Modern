@@ -1,19 +1,9 @@
 // priority: 0
+"use strict";
 
 const registerTFCGroomingStationRecipes = (event) => {
-    const materials = [
-        'copper',
-        'bismuth_bronze',
-        'bronze',
-        'black_bronze',
-        'wrought_iron',
-        'steel',
-        'black_steel',
-        'red_steel',
-        'blue_steel'
-    ]
 
-    materials.forEach(material => {
+    global.TFC_EQUIPMENT_METALS.forEach(material => {
         event.shaped(`tfcgroomer:${material}_grooming_station`, [
             'ABA', 
             'AAA',

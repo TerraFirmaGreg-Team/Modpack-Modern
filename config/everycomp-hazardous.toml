@@ -1,0 +1,52 @@
+
+#    ═════════════════════════ Attention ═════════════════════════
+#    Don't use this if you don't know what you are doing
+#        REASON:
+#    This file is a conditional registration. This is harmless in Singleplayer World,
+#    but harmful in SERVER because you won't able to join.
+#
+#    ══════════════════════════ Detail ═══════════════════════════
+#    This file allow you to exclude WoodTypes, LeavesType, EntrySet, or a Module
+#    1) You can find their names for WoodTypes, LeavesType, or EntrySet in `everycomp-entries.toml`
+#    2) Leave a value empty to disable that rule.
+#
+#    Module - is a Supported Mod, just a modId is sufficient.
+#    EntrySet - is a FurnitureType or DecorativeType that Wood-Good is supporting via the mod. it is either block or item.
+#
+#    NOTE: blacklisting a Module will be applied to Wood-Good, Stone-Zone, Gems-Realm
+#
+[woodtype]
+	#Exclude WoodType from all of Modules
+	#    EXAMPLE: blacklist = [
+	#        "forestry:.*fireproof.*",		COMMENT: .* is an RegEx, it exclude all of WoodType containing "fireproof" from Forestry
+	#        "biomesoplenty:.*",			COMMENT: .* is an RegEx, it exclude all of WoodType from Wood Mod for any Module
+	#        "biomesoplenty:redwood"		COMMENT: exclude redwood from Wood Mod for any module
+	#    ]
+	#
+	blacklist = []
+
+[leavestype]
+	#Exclude LeavesType from all of Modules
+	#	The example is same as WoodType's
+	blacklist = []
+
+[entryset]
+	#Exclude EntrySet from the module for All of WoodType or LeavesType
+	#    This is only applied to Wood-Good.
+	#    EXAMPLE: blacklist = [
+	#        "chipped:checkered_trapdoor",		COMMENT: chipped:checkered_oak_trapdoor without "oak"
+	#        "variantvanillablocks:chest",		COMMENT: variantvanillablocks:oak_chest without "oak"
+	#        "chipped:.*"						COMMENT: .* is an regex which will exclude all of EntrySets from one Module - Wood-Good ONLY
+	#    ]
+	#
+	blacklist = []
+
+[module]
+	#Exclude Module From Wood-Good, Stone-Zone & Gems-Realm
+	#    EXAMPLE: blacklist = [
+	#        "chipped",
+	#        "variantvanillablocks"
+	#    ]
+	#
+	blacklist = []
+

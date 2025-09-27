@@ -1,0 +1,46 @@
+{
+	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
+	"parent": "block/block",
+	"textures": {
+		"particle": "betterend:block/end_lotus_stem",
+		"texture": "betterend:block/end_lotus_stem",
+		"leaf": "betterend:block/end_lotus_leaf_cutout"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Box1",
+			"from": [ 6, 0, 6 ],
+			"to": [ 10, 12, 10 ],
+			"faces": {
+				"down": { "uv": [ 4, 0, 8, 4 ], "texture": "#texture", "cullface": "down" },
+				"north": { "uv": [ 0, 4, 4, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 4, 4, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 4, 4, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 4, 4, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Box2",
+			"from": [ 5, 12, 5 ],
+			"to": [ 11, 16, 11 ],
+			"faces": {
+				"down": { "uv": [ 4, 8, 10, 14 ], "texture": "#texture" },
+				"up": { "uv": [ 4, 8, 10, 14 ], "texture": "#texture", "cullface": "up" },
+				"north": { "uv": [ 4, 4, 10, 8 ], "texture": "#texture" },
+				"south": { "uv": [ 4, 4, 10, 8 ], "texture": "#texture" },
+				"west": { "uv": [ 4, 4, 10, 8 ], "texture": "#texture" },
+				"east": { "uv": [ 4, 4, 10, 8 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneY3",
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 0.001, 16 ],
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 16, 16, 0 ], "texture": "#leaf" },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#leaf" }
+			}
+		}
+	]
+}

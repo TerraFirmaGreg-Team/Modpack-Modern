@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 function registerTFCIconSets(event) {
 
@@ -28,7 +29,7 @@ function registerTFCIconSets(event) {
 	event.create('tfc_magnetite').parent('dull')
 	event.create('tfc_malachite').parent('shiny')
 	event.create('tfc_copper').parent('bright')
-	event.create('tfc_gold').parent('metallic')
+	event.create('tfc_gold').parent('shiny')
 	event.create('tfc_silver').parent('shiny')
 	event.create('tfc_sphalerite').parent('dull')
 	event.create('tfc_tetrahedrite').parent('dull')

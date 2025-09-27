@@ -10,7 +10,7 @@
 	#Range: 1 ~ 60
 	idleFps = 10
 	#Max frame rate during GUI screen(Inventory/Menu) is opened. (0:OFF)
-	#Range: 0 ~ 60
+	#Range: 0 ~ 260
 	guiScreenFps = 0
 	#Max frame rate when the character is stationary. (0:OFF)
 	#Range: 0 ~ 260

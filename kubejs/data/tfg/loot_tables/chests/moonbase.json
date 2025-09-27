@@ -1,0 +1,534 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:aluminium_fluid_cell",
+					"weight": 30,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Fluid: {Amount: 1000, FluidName: \"gtceu:rocket_fuel\"}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ad_astra:gas_tank",
+					"weight": 30,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{BotariumData: {StoredFluids: [{Amount: 1000, Fluid: \"tfg:compressed_heliox_3\"}]}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:long_aluminium_rod",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "vintageimprovements:aluminum_sheet",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 2,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:aluminium_tiny_fluid_pipe",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:long_stainless_steel_rod",
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:stainless_steel_plate",
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:stainless_steel_screw",
+					"weight": 30,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:steel_rod",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:steel_plate",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:double_steel_plate",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:steel_screw",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:steel_bolt",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:electrum_double_wire",
+					"weight": 30,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:silver_double_cable",
+					"weight": 30,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:hv_sodium_battery",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Charge: 1200000}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:hv_electric_pump",
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:hv_conveyor_module",
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:hv_electric_motor",
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:aluminium_ingot",
+					"weight": 65,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:steel_ingot",
+					"weight": 80,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 16,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:stainless_steel_ingot",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:advanced_integrated_circuit",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:good_integrated_circuit",
+					"weight": 20,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:basic_integrated_circuit",
+					"weight": 20,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ae2:certus_quartz_crystal",
+					"weight": 20,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 6,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ae2:charged_certus_quartz_crystal",
+					"weight": 10,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ae2:fluix_crystal",
+					"weight": 10,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ae2:fluix_glass_cable",
+					"weight": 20,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 6,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ae2:interface",
+					"weight": 5
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ae2:engineering_processor",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ae2:item_storage_cell_1k",
+					"weight": 5
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ae2:fluid_storage_cell_1k",
+					"weight": 5
+				},
+				{
+					"type": "minecraft:item",
+					"name": "species:music_disc_dial",
+					"weight": 8
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:ruby_gem",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:quartz",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:quartzite_gem",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:olivine_gem",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:armalcolite_gem",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:treated_wood_rod",
+					"weight": 20,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ad_astra:desh_ingot",
+					"weight": 30,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ad_astra:desh_plate",
+					"weight": 30,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ad_astra:raw_desh",
+					"weight": 30,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				}
+			],
+			"rolls": {
+				"type": "minecraft:uniform",
+				"max": 12,
+				"min": 5
+			}
+		}
+	]
+}

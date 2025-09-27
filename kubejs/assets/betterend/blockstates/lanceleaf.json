@@ -1,0 +1,9 @@
+{
+	"variants": {
+		"height=0": { "model": "betterend:block/lanceleaf_leaf_bottom" },
+		"height=1": { "model": "betterend:block/lanceleaf_leaf_pre_bottom" },
+		"height=2": { "model": "betterend:block/lanceleaf_leaf_middle" },
+		"height=3": { "model": "betterend:block/lanceleaf_leaf_pre_top" },
+		"height=4": { "model": "betterend:block/lanceleaf_leaf_top" }
+	}
+}

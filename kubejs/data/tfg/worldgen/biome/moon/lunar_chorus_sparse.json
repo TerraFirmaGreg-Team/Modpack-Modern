@@ -1,0 +1,137 @@
+{
+	"carvers": {
+		"air": [
+			"tfg:moon_cave",
+			"tfg:moon_canyon"
+		]
+	},
+	"downfall": 0.0,
+	"effects": {
+		"fog_color": 0,
+		"mood_sound": {
+			"block_search_extent": 8,
+			"offset": 2.0,
+			"sound": "minecraft:ambient.cave",
+			"tick_delay": 6000
+		},
+		"sky_color": 0,
+		"water_color": 4159204,
+		"water_fog_color": 329011
+	},
+	"features": [
+		[],
+		"#tfg:moon_craters",
+		[
+			"tfg:earth/geode/amethyst",
+			"tfg:earth/geode/barite",
+			"tfg:earth/geode/calcite",
+			"tfg:earth/geode/gypsum",
+			"tfg:earth/geode/opal",
+			"tfg:earth/geode/pyrite",
+			"tfg:earth/geode/quartzite"
+		],
+		[
+			"tfc:vein/gabbro_dike",
+			"tfc:vein/diorite_dike"
+		],
+		[],
+		[],
+		"#tfg:moon_veins",
+		"#tfg:moon_large_rock_features",
+		"#tfg:moon_small_rock_features",
+		[
+			"tfg:moon/surface/birt_dwelling",
+			"tfg:moon/surface/dead_coral_fans",
+			"tfg:moon/surface/warped_sprouts_patch",
+			"tfg:moon/surface/chorus_lily",
+			"tfg:moon/surface/chorus_grass_common",
+			"tfg:moon/surface/vaiolush_fern",
+			"tfg:moon/surface/inflexia",
+			"tfg:moon/surface/chorus_plant_rare"
+		],
+		[
+			"tfg:moon/hardening"
+		]
+	],
+	"has_precipitation": false,
+	"creature_spawn_probability": 0.00006,
+	"spawn_costs": {
+		"species:limpet": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		}
+	},
+	"spawners": {
+		"ambient": [],
+		"axolotls": [],
+		"creature": [
+			{
+				"type": "tfg:moon_rabbit",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 50
+			},
+			{
+				"type": "species:birt",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			}
+		],
+		"misc": [],
+		"monster": [
+			{
+				"type": "ad_astra:star_crawler",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "ad_astra:corrupted_lunarian",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "minecraft:stray",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 5
+			},
+			{
+				"type": "species:limpet",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "endermanoverhaul:windswept_hills_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "minecraft:enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "endermanoverhaul:end_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "endermanoverhaul:end_islands_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			}
+		],
+		"underground_water_creature": [],
+		"water_ambient": [],
+		"water_creature": []
+	},
+	"temperature": 0.7
+}

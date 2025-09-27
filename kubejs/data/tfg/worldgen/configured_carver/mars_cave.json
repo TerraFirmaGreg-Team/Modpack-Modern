@@ -1,0 +1,48 @@
+{
+	"type": "minecraft:cave",
+	"config": {
+		"probability": 0.025,
+		"y": {
+			"type": "uniform",
+			"min_inclusive": {
+				"absolute": -10
+			},
+			"max_inclusive": {
+				"absolute": 126
+			}
+		},
+		"yScale": {
+			"type": "uniform",
+			"value": {
+				"min_inclusive": 0.1,
+				"max_exclusive": 0.9
+			}
+		},
+		"lava_level": {
+			"above_bottom": -2032
+		},
+		"aquifers_enabled": false,
+		"horizontal_radius_multiplier": {
+			"type": "uniform",
+			"value": {
+				"min_inclusive": 1.2,
+				"max_exclusive": 2.0
+			}
+		},
+		"vertical_radius_multiplier": {
+			"type": "uniform",
+			"value": {
+				"min_inclusive": 1.3,
+				"max_exclusive": 2.0
+			}
+		},
+		"floor_level": {
+			"type": "uniform",
+			"value": {
+				"min_inclusive": -1,
+				"max_exclusive": -0.4
+			}
+		},
+		"replaceable": "#tfc:can_carve"
+	}
+}

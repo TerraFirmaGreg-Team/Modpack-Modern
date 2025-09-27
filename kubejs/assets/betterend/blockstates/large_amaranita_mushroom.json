@@ -1,0 +1,9 @@
+{
+	"variants": {
+		"height=0": { "model": "betterend:block/large_amaranita_roots" },
+		"height=1": { "model": "betterend:block/large_amaranita_stem" },
+		"height=2": { "model": "betterend:block/large_amaranita_cap" },
+		"height=3": { "model": "" },
+		"height=4": { "model": "" }
+	}
+}

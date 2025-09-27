@@ -1,8 +1,14 @@
-#Select the backend to use.
-#Allowed Values: OFF, BATCHING, INSTANCING
-backend = "INSTANCING"
-#Enable or disable a debug overlay that colors pixels by their normal.
-debugNormals = false
+#Select the backend to use. Set to "DEFAULT" to let Flywheel decide.
+backend = "DEFAULT"
 #Enable or disable instance update limiting with distance.
 limitUpdates = true
+#The number of worker threads to use. Set to -1 to let Flywheel decide. Set to 0 to disable parallelism. Requires a game restart to take effect.
+#Range: -1 ~ 32
+workerThreads = -1
+
+#Config options for Flywheel's built-in backends.
+[flw_backends]
+	#How smooth Flywheel's shader-based lighting should be. May have a large performance impact.
+	#Allowed Values: FLAT, TRI_LINEAR, SMOOTH, SMOOTH_INNER_FACE_CORRECTED
+	lightSmoothness = "SMOOTH"
 

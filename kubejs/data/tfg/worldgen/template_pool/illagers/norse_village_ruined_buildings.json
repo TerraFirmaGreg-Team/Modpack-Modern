@@ -1,0 +1,97 @@
+{
+	"name": "tfg:illagers/norse_village_ruined_buildings",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 40,
+			"element": {
+				"location": "tfg:norse/ruins/norse_burial_ruin",
+				"processors": "minecraft:empty",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 80,
+			"element": {
+				"location": "tfg:norse/ruins/norse_farmhousebig_ruin",
+				"processors": "tfg:illagers/norse_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:norse/ruins/norse_farmhouse_ruin",
+				"processors": "tfg:illagers/norse_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:norse/ruins/norse_longhouse_ruin",
+					"processors": "tfg:illagers/norse_structures",
+					"projection": "rigid"
+				},
+				"limit": 2
+			}
+		},
+		{
+			"weight": 50,
+			"element": {
+				"location": "tfg:norse/ruins/norse_mosshouse_ruin",
+				"processors": "tfg:illagers/norse_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 50,
+			"element": {
+				"location": "tfg:norse/burned/norse_mosshouse_burn",
+				"processors": "tfg:illagers/norse_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 50,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:norse/ruins/norse_smithy_ruin",
+					"processors": "tfg:illagers/norse_structures",
+					"projection": "rigid"
+				},
+				"limit": 1
+			}
+		},
+		{
+			"weight": 50,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:norse/burned/norse_smithy_burn",
+					"processors": "tfg:illagers/norse_structures",
+					"projection": "rigid"
+				},
+				"limit": 1
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"projection": "rigid",
+				"element_type": "minecraft:empty_pool_element"
+			}
+		}
+	]
+}

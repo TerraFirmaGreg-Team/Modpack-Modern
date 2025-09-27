@@ -27,7 +27,7 @@
 	   More info here
 	   (http://www.cronmaker.com)
 	*/
-	"backup_cron": "0 0 1 * * ?",
+	"backup_cron": "0 0 0/1 1/1 * ? *",
 	// Time between manual backups using the command
 	"manual_backups_time": 0,
 	// Only run a backup if a player has been online since the last backup

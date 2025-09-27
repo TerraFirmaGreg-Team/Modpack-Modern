@@ -1,0 +1,30 @@
+{
+	"has_precipitation": true,
+	"temperature": 0.7,
+	"downfall": 0.5,
+	"effects": {
+		"sky_color": 10465603,
+		"fog_color": 9938052,
+		"water_color": 8241044,
+		"water_fog_color": 10866612,
+		"grass_color": 13758586,
+		"foliage_color": 11653213,
+		"dry_foliage_color": 9279852,
+		"mood_sound": {
+			"block_search_extent": 8,
+			"offset": 2.0,
+			"sound": "minecraft:ambient.cave",
+			"tick_delay": 6000
+		}
+	},
+	"depth": -0.5,
+	"scale": 0.0,
+	"temperature_modifier": "none",
+	"spawn_costs": {},
+	"spawners": {},
+	"starts": [],
+	"carvers": {},
+	"features": [
+		"#tfg:venus_fractured_lands_terrain_features"
+	]
+  }

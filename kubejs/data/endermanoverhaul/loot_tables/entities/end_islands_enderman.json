@@ -1,0 +1,33 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "endermanoverhaul:ancient_pearl"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "endermanoverhaul:soul_pearl"
+				}
+			],
+			"rolls": 1.0
+		},
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "endermanoverhaul:corrupted_pearl"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "endermanoverhaul:soul_pearl"
+				}
+			],
+			"rolls": 1.0
+		}
+	]
+}

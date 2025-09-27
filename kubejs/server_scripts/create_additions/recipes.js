@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerCreateAdditionsRecipes = (event) => {
 
@@ -90,6 +91,10 @@ const registerCreateAdditionsRecipes = (event) => {
 		C: 'gtceu:ulv_voltage_coil',
 		D: 'gtceu:ulv_machine_hull',
 		E: 'gtceu:tin_single_cable',
-		F: '#tfg:shafts'
+		F: '#forge:shafts'
 	}).id('tfg:createadditions/shaped/alternator')
+
+	
+	event.shapeless('createaddition:diamond_grit_sandpaper', ['minecraft:paper', 'tfc:glue', '#forge:dusts/diamond'])
+		.id('tfg:shapeless/diamond_grit_sand_paper')
 }

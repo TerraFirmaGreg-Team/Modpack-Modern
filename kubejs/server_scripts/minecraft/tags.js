@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 /**
  * 
@@ -29,11 +30,13 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfc:foods', 'minecraft:brown_mushroom')
     event.add('tfc:foods', 'minecraft:glow_berries')
     event.add('tfc:foods', 'minecraft:chorus_fruit')
+    event.add('tfc:foods', 'minecraft:popped_chorus_fruit')
 
     event.add('tfc:foods/vegetables', 'minecraft:red_mushroom')
     event.add('tfc:foods/vegetables', 'minecraft:brown_mushroom')
     event.add('tfc:foods/fruits', 'minecraft:glow_berries')
     event.add('tfc:foods/fruits', 'minecraft:chorus_fruit')
+    event.add('tfc:foods/fruits', 'minecraft:popped_chorus_fruit')
 
     event.add('beneath:usable_in_juicer', 'minecraft:glow_berries')
     event.add('beneath:usable_in_juicer', 'minecraft:chorus_fruit')
@@ -44,11 +47,16 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfc:foods/usable_in_soup', 'minecraft:brown_mushroom')
     event.add('tfc:foods/usable_in_soup', 'minecraft:glow_berries')
     event.add('tfc:foods/usable_in_soup', 'minecraft:chorus_fruit')
+    event.add('tfc:foods/usable_in_soup', 'minecraft:popped_chorus_fruit')
 
     event.add('tfc:foods/usable_in_salad', 'minecraft:red_mushroom')
     event.add('tfc:foods/usable_in_salad', 'minecraft:brown_mushroom')
     event.add('tfc:foods/usable_in_salad', 'minecraft:glow_berries')
     event.add('tfc:foods/usable_in_salad', 'minecraft:chorus_fruit')
+    event.add('tfc:foods/usable_in_salad', 'minecraft:popped_chorus_fruit')
+
+    event.add('tfc:rabbit_food', 'minecraft:chorus_fruit')
+    event.add('tfc:rabbit_food', 'minecraft:popped_chorus_fruit')
     
     event.add('tfc:rock/raw', 'minecraft:deepslate')
     event.add('tfc:rock/raw', 'minecraft:blackstone')
@@ -56,11 +64,35 @@ const registerMinecraftItemTags = (event) => {
 
     event.remove('forge:gems', 'minecraft:charcoal')
     event.remove('forge:gems', 'minecraft:coal')
+    event.remove('forge:gems', 'minecraft:flint')
 
-    event.add('tfc:compost_greens_high', 'minecraft:red_mushroom_block')
-    event.add('tfc:compost_greens_high', 'minecraft:brown_mushroom_block')
+    event.add('tfc:compost_greens', 'minecraft:red_mushroom_block')
+    event.add('tfc:compost_greens', 'minecraft:brown_mushroom_block')
+    event.add('tfc:compost_greens', 'minecraft:moss_block')
+    event.add('tfc:compost_greens_low', 'minecraft:moss_carpet')
+    event.add('tfc:compost_greens_low', 'minecraft:twisting_vines')
+    event.add('tfc:compost_greens_high', 'minecraft:pearlescent_froglight')
+    event.add('tfc:compost_greens_high', 'minecraft:verdant_froglight')
+    event.add('tfc:compost_greens_high', 'minecraft:ochre_froglight')
+    //event.add('tfc:moss', 'minecraft:moss_carpet')
+    event.remove('createaddition:plants', 'minecraft:moss_carpet')
 
     event.add('tfc:colored_terracotta', 'minecraft:white_terracotta')
+
+    event.add('tfc:bells', 'minecraft:bell')
+
+    event.add('tfc:plants', 'minecraft:spore_blossom')
+    
+	event.add('tfc:compost_greens', 'minecraft:nether_wart_block')
+	event.add('tfc:compost_greens', 'minecraft:warped_wart_block')
+
+    event.add('tfc:hematitic_sand', 'minecraft:red_sand')
+
+    event.add('tfc:makes_black_dye', 'minecraft:ink_sac')
+    event.add('tfc:makes_white_dye', 'minecraft:bone_meal')
+	
+	event.add('create:blaze_burner_fuel/regular', 'minecraft:coal')
+	event.add('create:blaze_burner_fuel/regular', 'minecraft:charcoal')
 }
 
 const registerMinecraftBlockTags = (event) => {
@@ -130,6 +162,27 @@ const registerMinecraftBlockTags = (event) => {
     event.add('tfg:brick_stairs', 'minecraft:blackstone_stairs')
     event.add('tfg:brick_slabs', 'minecraft:blackstone_slab')
     event.add('tfg:brick_walls', 'minecraft:blackstone_wall')
+
+    event.add('tfc:bloomery_insulation', 'minecraft:polished_deepslate');
+	event.add('tfc:forge_insulation', 'minecraft:polished_deepslate');
+    event.add('tfc:bloomery_insulation', 'minecraft:polished_blackstone');
+	event.add('tfc:forge_insulation', 'minecraft:polished_blackstone');
+    event.add('tfc:bloomery_insulation', 'minecraft:deepslate_tiles');
+	event.add('tfc:forge_insulation', 'minecraft:deepslate_tiles');
+    event.add('tfc:bloomery_insulation', 'minecraft:cracked_deepslate_tiles');
+	event.add('tfc:forge_insulation', 'minecraft:cracked_deepslate_tiles');
+    event.add('tfc:bloomery_insulation', 'minecraft:chiseled_deepslate');
+	event.add('tfc:forge_insulation', 'minecraft:chiseled_deepslate');
+    event.add('tfc:bloomery_insulation', 'minecraft:chiseled_polished_blackstone');
+	event.add('tfc:forge_insulation', 'minecraft:chiseled_polished_blackstone');
+    event.add('tfc:bloomery_insulation', 'minecraft:gilded_blackstone');
+	event.add('tfc:forge_insulation', 'minecraft:gilded_blackstone');
+    event.add('tfc:bloomery_insulation', 'minecraft:basalt');
+	event.add('tfc:forge_insulation', 'minecraft:basalt');
+    event.add('tfc:bloomery_insulation', 'minecraft:smooth_basalt');
+	event.add('tfc:forge_insulation', 'minecraft:smooth_basalt');
     
     //#region
+
+    event.removeAll('minecraft:sniffer_diggable_block')
 }

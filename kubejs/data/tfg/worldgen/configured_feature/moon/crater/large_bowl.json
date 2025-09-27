@@ -1,0 +1,83 @@
+{
+	"type": "minecraft:geode",
+	"config": {
+		"blocks": {
+			"alternate_inner_layer_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "minecraft:air"
+				}
+			},
+			"cannot_replace": "#minecraft:features_cannot_replace",
+			"filling_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "minecraft:air"
+				}
+			},
+			"inner_layer_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "minecraft:air"
+				}
+			},
+			"inner_placements": [
+				{
+					"Name": "minecraft:air"
+				}
+			],
+			"invalid_blocks": "#minecraft:geode_invalid_blocks",
+			"middle_layer_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "minecraft:air"
+				}
+			},
+			"outer_layer_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "minecraft:air"
+				}
+			}
+		},
+		"crack": {
+			"base_crack_size": 0,
+			"crack_point_offset": 0,
+			"generate_crack_chance": 0
+		},
+		"distribution_points": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 4,
+				"min_inclusive": 3
+			}
+		},
+		"invalid_blocks_threshold": 4,
+		"layers": {
+			"filling": 0.01,
+			"inner_layer": 0.01,
+			"middle_layer": 0.01,
+			"outer_layer": 20
+		},
+		"max_gen_offset": 32,
+		"min_gen_offset": -32,
+		"noise_multiplier": 0,
+		"outer_wall_distance": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 6,
+				"min_inclusive": 4
+			}
+		},
+		"placements_require_layer0_alternate": false,
+		"point_offset": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 2,
+				"min_inclusive": 1
+			}
+		},
+		"use_alternate_layer0_chance": 0,
+		"use_potential_placements_chance": 0
+	}
+}

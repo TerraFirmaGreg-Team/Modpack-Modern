@@ -1,0 +1,19 @@
+{
+	"feature": "tfg:mars/semiheavy_ammoniacal_water",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 20
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR_WG"
+		}
+	]
+}

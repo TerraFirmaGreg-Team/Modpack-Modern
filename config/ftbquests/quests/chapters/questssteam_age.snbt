@@ -3,14 +3,23 @@
 	default_quest_shape: ""
 	filename: "questssteam_age"
 	group: "3C4612A920658A7E"
-	icon: "gtceu:steel_gear"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f
+				ticks: 0L
+			}
+		}
+		id: "gtceu:steel_gear"
+	}
 	id: "784A885090386609"
 	order_index: 2
 	quest_links: [
 		{
 			id: "39027CF4DC307D33"
 			linked_quest: "5E186CD5E83BFDF0"
-			x: -27.0d
+			x: -29.0d
 			y: 2.0d
 		}
 		{
@@ -31,13 +40,22 @@
 			linked_quest: "48A8E3210B2BAE1C"
 			shape: "octagon"
 			size: 2.0d
-			x: -27.0d
+			x: -29.0d
 			y: 0.0d
+		}
+		{
+			id: "7C03FE015586C652"
+			linked_quest: "55213ACBF5F5D398"
+			x: -14.5d
+			y: 13.0d
 		}
 	]
 	quests: [
 		{
-			dependencies: ["7B045998769930F0"]
+			dependencies: [
+				"7B045998769930F0"
+				"55FDF06AC0C01D0B"
+			]
 			description: ["{quests.steam_age.basic_millstone.desc}"]
 			id: "48C1E980F7D64317"
 			size: 1.5d
@@ -48,7 +66,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.basic_millstone.title}"
-			x: -18.0d
+			x: -19.5d
 			y: 0.0d
 		}
 		{
@@ -66,7 +84,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.horse_crank.title}"
-			x: -22.0d
+			x: -23.5d
 			y: -2.0d
 		}
 		{
@@ -81,7 +99,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.helve_hammer.title}"
-			x: -18.0d
+			x: -19.5d
 			y: -4.0d
 		}
 		{
@@ -109,7 +127,7 @@
 				}
 			]
 			title: "{quests.steam_age.basic_greate.title}"
-			x: -18.0d
+			x: -19.5d
 			y: -2.0d
 		}
 		{
@@ -172,7 +190,10 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["09D913288896A67A"]
+			dependencies: [
+				"09D913288896A67A"
+				"05A39719B66B8F76"
+			]
 			description: ["{quests.steam_age.steel_encased_fan.desc}"]
 			id: "616E28977F3216D9"
 			subtitle: "{quests.steam_age.steel_encased_fan.subtitle}"
@@ -232,9 +253,8 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["033E74BC588E7EAD"]
+			dependencies: ["32046292AA5B0E30"]
 			description: ["{quests.steam_age.steam_engine.desc}"]
-			hide_dependent_lines: true
 			id: "183D47F04CAEBFA7"
 			size: 1.5d
 			subtitle: "{quests.steam_age.steam_engine.subtitle}"
@@ -242,6 +262,7 @@
 				{
 					id: "704B7094BE2FB3E1"
 					item: "create:steam_engine"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -251,8 +272,8 @@
 				}
 			]
 			title: "{quests.steam_age.steam_engine.title}"
-			x: -16.5d
-			y: 14.5d
+			x: -5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7F14D2A34F480ACA"]
@@ -365,7 +386,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["09D913288896A67A"]
+			dependencies: [
+				"09D913288896A67A"
+				"05A39719B66B8F76"
+			]
 			description: ["{quests.steam_age.steel_millstone.desc}"]
 			hide_dependent_lines: true
 			id: "5E4FC017E09ACF44"
@@ -380,7 +404,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["5917B0D4708BF534"]
+			dependencies: [
+				"5917B0D4708BF534"
+				"6100B3C732E379AA"
+			]
 			description: ["{quests.steam_age.crushing_wheel.desc}"]
 			id: "4F3D0D746D26B59F"
 			optional: true
@@ -392,8 +419,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.crushing_wheel.title}"
-			x: -19.5d
-			y: 18.0d
+			x: -21.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["7DB7AB5349218605"]
@@ -419,13 +446,13 @@
 			]
 			title: "{quests.steam_age.treated_planks.title}"
 			x: -19.5d
-			y: 12.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
-				"246D2C5989E3E907"
 				"233B414B4F189140"
 				"781C6AD30194CB45"
+				"3E175E20C91F168B"
 			]
 			description: ["{quests.steam_age.electron_tube.desc}"]
 			id: "033E74BC588E7EAD"
@@ -490,6 +517,7 @@
 		{
 			dependencies: ["033E74BC588E7EAD"]
 			description: ["{quests.steam_age.deployers.desc}"]
+			icon: "create:deployer"
 			id: "6AA07588374B59AB"
 			subtitle: "{quests.steam_age.deployers.subtitle}"
 			tasks: [
@@ -501,12 +529,6 @@
 				{
 					id: "38F9301A818347F7"
 					item: "create:depot"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "66D11CA9FCD6933A"
-					item: "greate:rubber_belt_connector"
 					optional_task: true
 					type: "item"
 				}
@@ -552,8 +574,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.mech_crafter.title}"
-			x: -19.5d
-			y: 17.0d
+			x: -20.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["46FA9DD4755A5548"]
@@ -680,7 +702,10 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["46FA9DD4755A5548"]
+			dependencies: [
+				"46FA9DD4755A5548"
+				"6100B3C732E379AA"
+			]
 			description: ["{quests.steam_age.forge_hammer.desc}"]
 			id: "59F7F7A8C76DE31C"
 			shape: "square"
@@ -803,8 +828,8 @@
 			optional: true
 			subtitle: "{quests.steam_age.lathe.subtitle}"
 			tasks: [{
-				id: "269D79581AC1E0D6"
-				item: "vintageimprovements:lathe"
+				id: "23961EE69549B16E"
+				item: "vintageimprovements:belt_grinder"
 				type: "item"
 			}]
 			title: "{quests.steam_age.lathe.title}"
@@ -813,8 +838,9 @@
 		}
 		{
 			dependencies: [
-				"033E74BC588E7EAD"
 				"5917B0D4708BF534"
+				"6100B3C732E379AA"
+				"246D2C5989E3E907"
 			]
 			description: ["{quests.steam_age.centrifuge.desc}"]
 			id: "19A1D52A7F550478"
@@ -826,11 +852,14 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.centrifuge.title}"
-			x: -18.0d
-			y: 17.0d
+			x: -20.5d
+			y: 10.5d
 		}
 		{
-			dependencies: ["2C35D4E01AEC02AA"]
+			dependencies: [
+				"2C35D4E01AEC02AA"
+				"6100B3C732E379AA"
+			]
 			description: ["{quests.steam_age.vibrating_table.desc}"]
 			id: "1E8CC993E0251828"
 			optional: true
@@ -895,7 +924,10 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["46FA9DD4755A5548"]
+			dependencies: [
+				"46FA9DD4755A5548"
+				"6100B3C732E379AA"
+			]
 			description: ["{quests.steam_age.steam_furnace.desc}"]
 			id: "799288FB7A4DCA11"
 			subtitle: "{quests.steam_age.steam_furnace.subtitle}"
@@ -957,7 +989,7 @@
 			]
 			title: "{quests.steam_age.steam_oven.title}"
 			x: -16.5d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["46FA9DD4755A5548"]
@@ -1126,12 +1158,13 @@
 				}
 			]
 			title: "{quests.steam_age.create_tools.title}"
-			x: -20.0d
+			x: -21.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["6AA07588374B59AB"]
 			description: ["{quests.steam_age.trains.desc}"]
+			hide_dependency_lines: false
 			id: "02854A3E8A5D5043"
 			optional: true
 			shape: "heart"
@@ -1238,7 +1271,7 @@
 				}
 			]
 			title: "{quests.steam_age.poor_paths.title}"
-			x: -23.5d
+			x: -25.0d
 			y: -3.5d
 		}
 		{
@@ -1289,7 +1322,7 @@
 				}
 			]
 			title: "{quests.steam_age.normal_paths.title}"
-			x: -24.0d
+			x: -25.5d
 			y: -2.0d
 		}
 		{
@@ -1342,7 +1375,7 @@
 				}
 			]
 			title: "{quests.steam_age.good_paths.title}"
-			x: -23.5d
+			x: -25.0d
 			y: -0.5d
 		}
 		{
@@ -1368,7 +1401,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["4CD3F04793CE47A2"]
 			description: ["{quests.steam_age.paper.desc}"]
 			disable_toast: true
 			id: "16CF5A9012EF4B27"
@@ -1403,7 +1435,7 @@
 				type: "item"
 			}]
 			title: "{quests.metal_age.bronze_goodies.title}"
-			x: -20.0d
+			x: -21.5d
 			y: -2.0d
 		}
 		{
@@ -1455,7 +1487,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["46FA9DD4755A5548"]
+			dependencies: [
+				"46FA9DD4755A5548"
+				"6100B3C732E379AA"
+			]
 			description: ["{quests.steam_age.steam_macerator.desc}"]
 			id: "6CF7DCC996BACBFA"
 			optional: true
@@ -1490,32 +1525,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["3E175E20C91F168B"]
-			dependency_requirement: "one_completed"
-			description: ["{quests.steam_age.organization.desc}"]
-			icon: "create:clipboard"
-			id: "03CCE899894A3364"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.steam_age.organization.subtitle}"
-			tasks: [
-				{
-					id: "2F56DA36512D2363"
-					item: "create:clipboard"
-					type: "item"
-				}
-				{
-					id: "6A41DD1F9FFD1781"
-					item: "create:crafting_blueprint"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "{quests.steam_age.organization.title}"
-			x: -16.5d
-			y: 10.5d
-		}
-		{
 			dependencies: ["32046292AA5B0E30"]
 			description: ["{quests.steam_age.rotation_speed_controller.desc}"]
 			id: "414835BADD34513F"
@@ -1527,8 +1536,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.rotation_speed_controller.title}"
-			x: -5.5d
-			y: -2.0d
+			x: -7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1582,29 +1591,76 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["49896161B31DB7B4"]
-			description: [
-				"There is currently a bug with the Mechanical Mixer where some recipes want an actual Programmed Circuit item."
-				"For the time being, you can craft these with a Stick and a Wrench."
-				""
-				"This will be fixed whenever we're able to update Greate to the latest version, which requires Create 6, which requires other Create addons to be updated... hopefully that should be soon."
-			]
-			icon: {
-				Count: 1
-				id: "gtceu:programmed_circuit"
-				tag: {
-					Configuration: 0
-				}
-			}
-			id: "6068BC1F6917A69D"
-			size: 1.0d
+			dependencies: ["033E74BC588E7EAD"]
+			description: ["{quests.steam_age.packager.desc}"]
+			icon: "create:package_frogport"
+			id: "509E85016A2B199C"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{quests.steam_age.packager.subtitle}"
 			tasks: [{
-				id: "385A0D77B9B4AA74"
+				id: "4319E4113F8EBB13"
 				type: "checkmark"
 			}]
-			title: "Bug workaround"
-			x: -5.5d
-			y: 13.5d
+			title: "{quests.steam_age.packager.title}"
+			x: -19.5d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"7B045998769930F0"
+				"55FDF06AC0C01D0B"
+			]
+			description: ["{quests.steam_age.basic_mech_press.desc}"]
+			id: "14710C5B4981CECC"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.steam_age.basic_mech_press.subtitle}"
+			tasks: [{
+				id: "2F89D6D6745465DC"
+				item: "greate:andesite_alloy_mechanical_press"
+				type: "item"
+			}]
+			title: "{quests.steam_age.basic_mech_press.title}"
+			x: -17.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"09D913288896A67A"
+				"05A39719B66B8F76"
+			]
+			description: [
+				"{quests.steam_age.steel_mech_press.desc.1}"
+				"{@pagebreak}"
+				"{quests.steam_age.steel_mech_press.desc.2}"
+			]
+			id: "0D39D83AA5F9D543"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.steam_age.steel_mech_press.subtitle}"
+			tasks: [{
+				id: "32E30B6AC780CAF1"
+				item: "greate:steel_mechanical_press"
+				type: "item"
+			}]
+			title: "{quests.steam_age.steel_mech_press.title}"
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["183D47F04CAEBFA7"]
+			description: ["{quests.steam_age.fuel_sources.desc}"]
+			icon: "createdeco:decal_fire"
+			id: "753A53733C6DFA04"
+			subtitle: "{quests.steam_age.fuel_sources.subtitle}"
+			tasks: [{
+				id: "38A3F9A1D2F11EE3"
+				type: "checkmark"
+			}]
+			title: "{quests.steam_age.fuel_sources.title}"
+			x: -7.5d
+			y: -2.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

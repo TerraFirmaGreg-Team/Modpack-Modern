@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 global.SOPHISTICATED_BACKPACKS_DISABLED_ITEMS = [
     'sophisticatedbackpacks:inception_upgrade',
@@ -8,7 +9,6 @@ global.SOPHISTICATED_BACKPACKS_DISABLED_ITEMS = [
     'sophisticatedbackpacks:auto_smoking_upgrade',
     'sophisticatedbackpacks:blasting_upgrade',
     'sophisticatedbackpacks:auto_blasting_upgrade',
-    'sophisticatedbackpacks:stonecutter_upgrade',
     'sophisticatedbackpacks:stack_upgrade_tier_2',
     'sophisticatedbackpacks:stack_upgrade_tier_3',
     'sophisticatedbackpacks:stack_upgrade_tier_4',
@@ -17,11 +17,11 @@ global.SOPHISTICATED_BACKPACKS_DISABLED_ITEMS = [
     'sophisticatedbackpacks:xp_pump_upgrade',
     'sophisticatedbackpacks:advanced_compacting_upgrade',
     'sophisticatedbackpacks:compacting_upgrade',
-    'sophisticatedbackpacks:advanced_feeding_upgrade',
-    'sophisticatedbackpacks:feeding_upgrade',
     'sophisticatedbackpacks:anvil_upgrade',
     'sophisticatedbackpacks:copper_backpack',
     'sophisticatedbackpacks:infinity_upgrade',
-    'sophisticatedbackpacks:survival_infinity_upgrade'
+    'sophisticatedbackpacks:survival_infinity_upgrade',
+    'sophisticatedbackpacks:alchemy_upgrade',
+    'sophisticatedbackpacks:advanced_alchemy_upgrade'
 ];
 

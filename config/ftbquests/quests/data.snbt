@@ -10,13 +10,7 @@
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
-	icon: {
-		Count: 1
-		id: "ftbquests:custom_icon"
-		tag: {
-			Icon: "tfg:textures/gui/logo_512x512.png"
-		}
-	}
+	icon: "tfg:terra_firma_greg"
 	lock_message: "e"
 	loot_crate_no_drop: {
 		boss: 0
@@ -24,7 +18,7 @@
 		passive: 4000
 	}
 	pause_game: true
-	progression_mode: "flexible"
+	progression_mode: "linear"
 	show_lock_icons: true
 	title: "TerraFirmaGreg"
 	version: 13

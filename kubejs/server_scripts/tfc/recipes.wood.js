@@ -1,7 +1,10 @@
 ﻿// priority: 0
+"use strict";
 
 function registerTFCWoodRecipes(event) {
 
+	event.replaceInput({ output: '#tfc:sewing_tables'}, '#forge:shears', '#forge:tools/knives')
+	
 	// Какие то рецепты дерева
 	global.TFC_WOOD_TYPES.forEach(wood => {
 		event.remove({ id: `tfc:crafting/wood/${wood}_axle` })

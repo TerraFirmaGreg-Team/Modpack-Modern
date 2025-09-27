@@ -1,0 +1,14 @@
+{
+    "damage": 6,
+    "items": [
+        "tfc:pumpkin",
+        "tfc:melon"
+    ],
+    "knockback": 1.5,
+    "reload_ticks": 20,
+    "render_mode": {
+        "type": "create:tumble"
+    },
+    "sound_pitch": 0.8,
+    "velocity_multiplier": 1.55
+}

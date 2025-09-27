@@ -12,7 +12,7 @@
 		}
 	}
 	id: "28EBC0FF82EFD94B"
-	order_index: 2
+	order_index: 5
 	quest_links: [
 		{
 			id: "77A0335E38D755CA"
@@ -62,13 +62,6 @@
 			shape: "square"
 			x: 2.0d
 			y: 2.0d
-		}
-		{
-			id: "2B8FBCD290196265"
-			linked_quest: "14D277A164202FF8"
-			shape: "square"
-			x: 2.0d
-			y: 4.0d
 		}
 		{
 			id: "0E8AC841C484408C"
@@ -332,6 +325,38 @@
 			x: 8.5d
 			y: 1.0d
 		}
+		{
+			id: "3644488B52C563F6"
+			linked_quest: "173A04F328414A36"
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			id: "1824692F2A7A8B43"
+			linked_quest: "7E755297E9685374"
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			id: "35C2CDE00DEC7D92"
+			linked_quest: "3FBDC8552F7D8008"
+			shape: "none"
+			size: 1.5d
+			x: 13.5d
+			y: -3.0d
+		}
+		{
+			id: "5A5FBC9F634D16FA"
+			linked_quest: "6042514C8FC54334"
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			id: "429CE7B1CDBB2A2D"
+			linked_quest: "7AC97F7850E31D95"
+			x: 2.0d
+			y: 4.0d
+		}
 	]
 	quests: [
 		{
@@ -373,7 +398,6 @@
 				"15EC934CE8F4DC86"
 				"38DE506FF5B32031"
 				"5063FDFFBE3E4855"
-				"14D277A164202FF8"
 				"5E76D4C24026157D"
 			]
 			description: ["{quests.development.hull_hv.desc}"]
@@ -566,7 +590,6 @@
 			dependencies: [
 				"42CD789B8C40E424"
 				"698B5F65F2DE4439"
-				"14D277A164202FF8"
 				"5CC9B0E832545569"
 			]
 			description: ["{quests.development.iv.desc}"]
@@ -665,19 +688,6 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["5B2696206205CB2E"]
-			id: "70432F650591353C"
-			shape: "square"
-			size: 1.0d
-			tasks: [{
-				id: "77875BBDC0A937A9"
-				item: "gtceu:cupronickel_ingot"
-				type: "item"
-			}]
-			x: 11.0d
-			y: -3.0d
-		}
-		{
 			description: [
 				"{quests.development.explanation.desc.1}"
 				"{@pagebreak}"
@@ -702,6 +712,19 @@
 			title: "{quests.development.explanation.title}"
 			x: -1.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["3FBDC8552F7D8008"]
+			id: "2FF9BECA093B4D74"
+			subtitle: "This one will come with Mars Update"
+			tasks: [{
+				id: "6572F2DD0C89A68B"
+				title: "Coming with Mars"
+				type: "checkmark"
+			}]
+			title: "Rocket Tier 2"
+			x: 13.5d
+			y: -1.0d
 		}
 	]
 	subtitle: ["{quests.development.subtitle}"]

@@ -1,0 +1,17 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "gtceu:machine",
+  "machine": "tfg:interplanetary_logistics_monitor",
+  "variants": {
+    "": {
+      "model": {
+        "parent": "tfg:block/machines/monitor",
+        "textures": {
+			"all": "tfg:block/casings/machine_casing_inert_ptfe",
+			"overlay_front": "tfg:block/machines/interplanetary_logistics_monitor/overlay_front",
+			"overlay_front_active_emissive": "tfg:block/machines/interplanetary_logistics_monitor/overlay_front_active_emissive"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+
+[graphics]
+	#Should lodestone use experimental fabulous graphics layering? You pretty much never wanna turn this on at the moment unless you're a developer.
+	experimental_fabulous_layering = false
+
+	[graphics.particle]
+		#Should particles render on the delayed buffer? This means they will properly render after clouds & water do, but could cause issues with mods like sodium.
+		buffer_particles = true
+
+	[graphics.fire]
+		#Downwards offset of Minecraft's first-person fire overlay. Higher numbers cause it to visually display lower and free up more screen space.
+		#Range: 0.0 ~ 1.0
+		fire_overlay_offset = 0.0
+
+[screenshake]
+	#Intensity of screenshake. Higher numbers increase amplitude. Disable to turn off screenshake.
+	#Range: 0.0 ~ 5.0
+	screenshake_intensity = 1.0
+
+[screen_particles]
+	#Are screen particles enabled?
+	enable_screen_particles = true
+

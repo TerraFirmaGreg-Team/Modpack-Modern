@@ -1,0 +1,19 @@
+{
+	"feature": "tfg:mars/terrain/water_fissure",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 5
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE_WG"
+		}
+	]
+}

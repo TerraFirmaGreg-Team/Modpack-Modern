@@ -1,0 +1,38 @@
+{
+  "feature": "tfg:venus/terrain/lake_yellow_sand",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 188
+    },
+    {
+      "type": "minecraft:count",
+      "count": 6
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 68
+        },
+        "max_inclusive": {
+          "absolute": 68
+        }
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_fluids",
+        "fluids": "tfg:geyser_slurry"
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

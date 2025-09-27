@@ -6,12 +6,7 @@
 	icon: "minecraft:apple"
 	id: "5D74D1A68158F29E"
 	order_index: 1
-	quest_links: [{
-		id: "1AD1F9822B738105"
-		linked_quest: "2E36E5755B2F551C"
-		x: 2.0d
-		y: 3.5d
-	}]
+	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["427814F6E9386772"]
@@ -32,32 +27,6 @@
 			title: "{quests.tfg_tips.beginning.title}"
 			x: 0.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["60497014785301EB"]
-			description: ["{quests.tfg_tips.firmaciv.desc}"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "firmaciv:sextant"
-			}
-			id: "2B84F34BFA37C828"
-			shape: "octagon"
-			size: 2.0d
-			subtitle: "{quests.tfg_tips.firmaciv.subtitle}"
-			tasks: [{
-				id: "41793C99EC45695A"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
-			}]
-			title: "{quests.tfg_tips.firmaciv.title}"
-			x: -8.5d
-			y: -6.5d
 		}
 		{
 			dependencies: ["173F6FA60A5B280B"]
@@ -96,20 +65,12 @@
 				type: "dimension"
 			}]
 			title: "{quests.tfg_tips.arborfirmacraft.title}"
-			x: -6.0d
+			x: -5.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["173F6FA60A5B280B"]
-			description: [
-				"{quests.tfg_tips.beneath.desc}"
-				"DELETE:"
-				"# Beneath Must Haves"
-				"* How to go there"
-				"* Kaolin Claze"
-				"* Creation of Hellforge"
-				"* Juicer"
-			]
+			description: ["{quests.tfg_tips.beneath.desc}"]
 			disable_toast: true
 			icon: "minecraft:netherrack"
 			id: "4AA0EBFBA5D8788C"
@@ -124,117 +85,8 @@
 				type: "dimension"
 			}]
 			title: "{quests.tfg_tips.beneath.title}"
-			x: 4.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["173F6FA60A5B280B"]
-			description: ["{quests.tfg_tips.portable_storage.desc}"]
-			disable_toast: true
-			icon: "sophisticatedbackpacks:backpack"
-			id: "7FA5B6354A49C396"
-			shape: "octagon"
-			size: 2.0d
-			subtitle: "{quests.tfg_tips.portable_storage.subtitle}"
-			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: "gtceu:overworld_marker"
-				id: "0077AE7A70A4314E"
-				title: "{quests.stone_age.temperature.task}"
-				type: "dimension"
-			}]
-			title: "{quests.tfg_tips.portable_storage.title}"
 			x: 6.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["7178843BCD50A012"]
-			description: ["{quests.tfg_tips.first_backpack.desc}"]
-			id: "125563A12EE5C296"
-			shape: "octagon"
-			size: 2.0d
-			subtitle: "{quests.tfg_tips.first_backpack.subtitle}"
-			tasks: [{
-				id: "5E0385522B78E03A"
-				item: "sophisticatedbackpacks:backpack"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.first_backpack.title}"
-			x: 10.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7FA5B6354A49C396"]
-			description: ["{quests.tfg_tips.backpack_materials.desc}"]
-			id: "7178843BCD50A012"
-			size: 1.0d
-			subtitle: "{quests.tfg_tips.backpack_materials.subtitle}"
-			tasks: [
-				{
-					id: "3D54644D50E1904E"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:string)"
-						}
-					}
-					title: "Any #forge:string"
-					type: "item"
-				}
-				{
-					id: "40410856739CAF06"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:leather)"
-						}
-					}
-					title: "Any #forge:leather"
-					type: "item"
-				}
-				{
-					id: "62219AEA780A9850"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:chests/wooden)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #forge:chests/wooden"
-					type: "item"
-				}
-				{
-					id: "56622AE6FBE714A2"
-					item: "minecraft:name_tag"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.backpack_materials.title}"
-			x: 8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["173F6FA60A5B280B"]
-			description: ["{quests.tfg_tips.gt.desc}"]
-			disable_toast: true
-			icon: "gtceu:gregification_hazard_sign_block"
-			id: "02FDECC931B5E8EF"
-			shape: "octagon"
-			size: 2.0d
-			subtitle: "{quests.tfg_tips.gt.subtitle}"
-			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: "gtceu:overworld_marker"
-				id: "1CF4DE167763A6E5"
-				title: "{quests.stone_age.temperature.task}"
-				type: "dimension"
-			}]
-			title: "{quests.tfg_tips.gt.title}"
-			x: 4.0d
-			y: 4.0d
 		}
 		{
 			dependencies: ["173F6FA60A5B280B"]
@@ -263,745 +115,7 @@
 			}]
 			title: "{quests.tfg_tips.terrafirmacraft.title}"
 			x: 0.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["173F6FA60A5B280B"]
-			description: ["{quests.tfg_tips.misc.desc}"]
-			disable_toast: true
-			icon: "minecraft:grass_block"
-			id: "3B3A0FEEB59F597C"
-			shape: "octagon"
-			size: 2.0d
-			subtitle: "{quests.tfg_tips.misc.subtitle}"
-			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: "gtceu:overworld_marker"
-				id: "7E11DEE2A7B9915E"
-				title: "{quests.stone_age.temperature.task}"
-				type: "dimension"
-			}]
-			title: "{quests.tfg_tips.misc.title}"
-			x: -4.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["3DF4F4848B231980"]
-			description: ["{quests.tfg_tips.create_rowboat.desc}"]
-			icon: "firmaciv:rowboat_icon_only"
-			id: "4F9A15016C9F51A1"
-			size: 2.0d
-			subtitle: "{quests.tfg_tips.create_rowboat.subtitle}"
-			tasks: [
-				{
-					icon: "firmaciv:rowboat_icon_only"
-					id: "6F8880DE5F98C85C"
-					observe_type: 6
-					timer: 0L
-					title: "{quests.tasktype.lookat} #alekiships:rowboats"
-					to_observe: "#alekiships:rowboats"
-					type: "observation"
-				}
-				{
-					count: 2L
-					id: "509394990EF8B64F"
-					item: "alekiships:oar"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.create_rowboat.title}"
-			x: -14.5d
-			y: -8.5d
-		}
-		{
-			dependencies: ["2746958D3D4A0885"]
-			description: ["{quests.tfg_tips.create_sloop.desc}"]
-			id: "78358ED2C6F6FCFD"
-			shape: "gear"
-			size: 4.0d
-			subtitle: "{quests.tfg_tips.create_sloop.subtitle}"
-			tasks: [{
-				icon: "firmaciv:sloop_icon_only"
-				id: "042D48B3F44E9CCC"
-				observe_type: 6
-				timer: 0L
-				title: "{quests.tasktype.lookat} #alekiships:sloops"
-				to_observe: "#alekiships:sloops"
-				type: "observation"
-			}]
-			title: "{quests.tfg_tips.create_sloop.title}"
-			x: -14.5d
-			y: -11.5d
-		}
-		{
-			dependencies: [
-				"0A92F5C4BB6AF972"
-				"2B84F34BFA37C828"
-			]
-			description: ["{quests.tfg_tips.rowboat_materials.desc}"]
-			id: "3DF4F4848B231980"
-			subtitle: "{quests.tfg_tips.rowboat_materials.subtitle}"
-			tasks: [
-				{
-					count: 24L
-					id: "0F6F07AB9B00D2BC"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(firmaciv:hard_wood)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #firmaciv:hard_wood"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "51F1E1910AA3A8EE"
-					item: { Count: 6, id: "firmaciv:watercraft_frame_angled" }
-					type: "item"
-				}
-				{
-					count: 24L
-					id: "4084A14A4377D7F2"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "firmaciv:copper_bolt"
-					}
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "2FD99CA7F7DE1095"
-					item: {
-						Count: 2
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "alekiships:oarlock"
-					}
-					type: "item"
-				}
-				{
-					id: "44BCD5B14DE0C81D"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:hammers)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #tfc:hammers"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.rowboat_materials.title}"
-			x: -12.5d
-			y: -8.5d
-		}
-		{
-			dependencies: ["32C854110D49A77D"]
-			description: ["{quests.tfg_tips.create_canoe.desc}"]
-			icon: "firmaciv:canoe_icon_only"
-			id: "22DA27A8E2D11106"
-			size: 2.0d
-			subtitle: "{quests.tfg_tips.create_canoe.subtitle}"
-			tasks: [
-				{
-					icon: "firmaciv:canoe_icon_only"
-					id: "6AB8CFDB3C2267BE"
-					observe_type: 6
-					timer: 0L
-					title: "{quests.tasktype.lookat} #firmaciv:dugout_canoe"
-					to_observe: "#firmaciv:dugout_canoes"
-					type: "observation"
-				}
-				{
-					id: "704237932096E813"
-					item: "firmaciv:canoe_paddle"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.create_canoe.title}"
-			x: -14.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["2B84F34BFA37C828"]
-			dependency_requirement: "one_completed"
-			description: ["{quests.tfg_tips.canoe_materials.desc}"]
-			id: "32C854110D49A77D"
-			subtitle: "{quests.tfg_tips.canoe_materials.subtitle}"
-			tasks: [
-				{
-					id: "2FD18ABB3A2738AA"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:saws)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #tfc:saws"
-					type: "item"
-				}
-				{
-					id: "32C041E87DCFDE1C"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:axes)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #tfc:axes"
-					type: "item"
-				}
-				{
-					id: "1426E13B36E1ABE2"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(minecraft:flint_and_steel)item(tfc:firestarter))"
-						}
-					}
-					title: "{quests.tfg_tips.canoe_materials.task}"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "4810FFFD04014DCF"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:stripped_softwood)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #tfg:stripped_softwood"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.canoe_materials.title}"
-			x: -12.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["2B84F34BFA37C828"]
-			description: ["{quests.tfg_tips.kayak_materials.desc}"]
-			id: "03696C9BBC53AB26"
-			subtitle: "{quests.tfg_tips.kayak_materials.subtitle}"
-			tasks: [
-				{
-					count: 4L
-					id: "0BE3E082261E16FC"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:string)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #forge:string"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "7D12F1F3D84274D6"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:lumber)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #tfc:lumber"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "1EB9E03922752702"
-					item: { Count: 2, id: "firmaciv:large_waterproof_hide" }
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.kayak_materials.title}"
-			x: -12.5d
-			y: -6.5d
-		}
-		{
-			dependencies: ["03696C9BBC53AB26"]
-			description: ["{quests.tfg_tips.create_kayak.desc}"]
-			icon: "firmaciv:kayak"
-			id: "7B824CC8BD6E4E30"
-			size: 2.0d
-			subtitle: "{quests.tfg_tips.create_kayak.subtitle}"
-			tasks: [
-				{
-					id: "0FDBBEA81B483719"
-					item: "firmaciv:kayak"
-					type: "item"
-				}
-				{
-					id: "6943A44551907501"
-					item: "firmaciv:kayak_paddle"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.create_kayak.title}"
-			x: -14.5d
-			y: -6.5d
-		}
-		{
-			dependencies: ["2B84F34BFA37C828"]
-			description: ["{quests.tfg_tips.firmaciv_info.desc}"]
-			id: "5EDE435F876349CD"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.tfg_tips.firmaciv_info.subtitle}"
-			tasks: [
-				{
-					id: "343A05C706244FB9"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "firmaciv:sextant"
-					}
-					type: "item"
-				}
-				{
-					id: "0753AB3E96E9EF91"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "firmaciv:nav_clock"
-					}
-					type: "item"
-				}
-				{
-					id: "0F7BB20275FC7764"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "firmaciv:barometer"
-					}
-					type: "item"
-				}
-				{
-					id: "612EBA6C7B6FD94C"
-					item: "firmaciv:firmaciv_compass"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.firmaciv_info.title}"
-			x: -8.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["2B84F34BFA37C828"]
-			dependency_requirement: "one_completed"
-			description: ["{quests.tfg_tips.sloop_under_construction_materials.desc}"]
-			id: "2746958D3D4A0885"
-			subtitle: "{quests.tfg_tips.sloop_under_construction_materials.subtitle}"
-			tasks: [
-				{
-					count: 4L
-					id: "59C783845971E728"
-					item: {
-						Count: 4
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "alekiships:cleat"
-					}
-					type: "item"
-				}
-				{
-					count: 18L
-					id: "02D1AEA961D0AA2C"
-					item: { Count: 18, id: "firmaciv:watercraft_frame_angled" }
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "7984376BC7E0D56D"
-					item: { Count: 6, id: "firmaciv:watercraft_frame_flat" }
-					type: "item"
-				}
-				{
-					count: 116L
-					id: "10929AC1C1B89579"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(firmaciv:hard_wood)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #firmaciv:hard_wood"
-					type: "item"
-				}
-				{
-					count: 96L
-					id: "231AE8429370F100"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "firmaciv:copper_bolt"
-					}
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "269828143DC2013C"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(afc:wood/lumber/ironwood)item(tfc:wood/lumber/acacia)item(tfc:wood/lumber/ash)item(tfc:wood/lumber/aspen)item(tfc:wood/lumber/birch)item(tfc:wood/lumber/blackwood)item(tfc:wood/lumber/chestnut)item(tfc:wood/lumber/hickory)item(tfc:wood/lumber/maple)item(tfc:wood/lumber/oak)item(tfc:wood/lumber/rosewood)item(tfc:wood/lumber/sycamore)item(afc:wood/lumber/baobab)item(afc:wood/lumber/eucalyptus)item(afc:wood/lumber/mahogany)item(afc:wood/lumber/hevea)item(afc:wood/lumber/teak)item(afc:wood/lumber/ipe)item(beneath:wood/lumber/warped))"
-						}
-					}
-					title: "{quests.tfg_tips.sloop_under_construction_materials.task}"
-					type: "item"
-				}
-				{
-					count: 34L
-					id: "5979FB98DD21EE7E"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:stripped_hardwood)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #tfg:stripped_hardwood"
-					type: "item"
-				}
-				{
-					id: "6AD81FFA674BD0FB"
-					item: "firmaciv:medium_triangular_sail"
-					type: "item"
-				}
-				{
-					id: "3DCFE31A3B0F0F8C"
-					item: "firmaciv:small_triangular_sail"
-					type: "item"
-				}
-				{
-					id: "40505BFC804F7516"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "alekiships:anchor"
-					}
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "43971DE8A74AA81D"
-					item: { Count: 8, id: "firmaciv:rope_coil" }
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.sloop_under_construction_materials.title}"
-			x: -10.5d
-			y: -8.5d
-		}
-		{
-			dependencies: ["78358ED2C6F6FCFD"]
-			description: ["{quests.tfg_tips.warfare.desc}"]
-			id: "66FDACC7E7F9180C"
-			subtitle: "{quests.tfg_tips.warfare.subtitle}"
-			tasks: [
-				{
-					id: "3A0685797C186CDB"
-					item: "firmaciv:cannon"
-					type: "item"
-				}
-				{
-					id: "35B1717D4096B87E"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "alekiships:cannonball"
-					}
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.warfare.title}"
-			x: -10.5d
-			y: -11.5d
-		}
-		{
-			dependencies: [
-				"125563A12EE5C296"
-				"5792DDAA82895E67"
-			]
-			description: ["{quests.tfg_tips.red_steel_backpack.desc}"]
-			id: "4B79026C8D2DACC4"
-			subtitle: "{quests.tfg_tips.red_steel_backpack.subtitle}"
-			tasks: [{
-				id: "651E492E49A866DE"
-				item: "sophisticatedbackpacks:iron_backpack"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.red_steel_backpack.title}"
-			x: 11.5d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"125563A12EE5C296"
-				"5996A3A0D475B8A6"
-			]
-			description: ["{quests.tfg_tips.backpack_upgrades.desc}"]
-			id: "1B0C58B15E7F62B3"
-			subtitle: "{quests.tfg_tips.backpack_upgrades.subtitle}"
-			tasks: [{
-				id: "00DE24C80F1E9A1B"
-				item: "sophisticatedbackpacks:upgrade_base"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.backpack_upgrades.title}"
-			x: 11.5d
-			y: 2.0d
-		}
-		{
-			dependencies: [
-				"4B79026C8D2DACC4"
-				"7567E885B7166603"
-			]
-			description: ["{quests.tfg_tips.aluminium_backpack.desc}"]
-			id: "0FFBB6177DEB0A23"
-			subtitle: "{quests.tfg_tips.aluminium_backpack.subtitle}"
-			tasks: [{
-				id: "21EFA480785F7049"
-				item: "sophisticatedbackpacks:gold_backpack"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.aluminium_backpack.title}"
-			x: 12.5d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"0FFBB6177DEB0A23"
-				"7FA0ACB7F161F378"
-			]
-			description: ["{quests.tfg_tips.titanium_backpack.desc}"]
-			id: "5D188F6C46EA9ED0"
-			subtitle: "{quests.tfg_tips.titanium_backpack.subtitle}"
-			tasks: [{
-				id: "70358381977F885B"
-				item: "sophisticatedbackpacks:diamond_backpack"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.titanium_backpack.title}"
-			x: 13.5d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"5D188F6C46EA9ED0"
-				"30A6EDDF25A5E5F8"
-			]
-			description: ["{quests.tfg_tips.tungstensteel_backpack.desc}"]
-			id: "13F2929C1C303A0B"
-			shape: "gear"
-			size: 4.0d
-			subtitle: "{quests.tfg_tips.tungstensteel_backpack.subtitle}"
-			tasks: [{
-				id: "452555CFE4B8EEBE"
-				item: "sophisticatedbackpacks:netherite_backpack"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.tungstensteel_backpack.title}"
-			x: 16.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["1B0C58B15E7F62B3"]
-			description: ["{quests.tfg_tips.crafting_upgrade.desc}"]
-			id: "384B4517EB4F2687"
-			subtitle: "{quests.tfg_tips.crafting_upgrade.subtitle}"
-			tasks: [{
-				id: "24835F05BC647EE1"
-				item: "sophisticatedbackpacks:crafting_upgrade"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.crafting_upgrade.title}"
-			x: 12.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["1B0C58B15E7F62B3"]
-			description: ["{quests.tfg_tips.advanced_upgrades.desc}"]
-			id: "38FC4B876B96B77F"
-			subtitle: "{quests.tfg_tips.advanced_upgrades.subtitle}"
-			tasks: [
-				{
-					id: "22EB35740D104EBB"
-					item: "sophisticatedbackpacks:filter_upgrade"
-					type: "item"
-				}
-				{
-					id: "3699A2517B75FBD3"
-					item: "sophisticatedbackpacks:advanced_filter_upgrade"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.advanced_upgrades.title}"
-			x: 12.5d
-			y: 1.0d
-		}
-		{
-			dependencies: [
-				"384B4517EB4F2687"
-				"38FC4B876B96B77F"
-			]
-			description: ["{quests.tfg_tips.all_backpack_upgrades.desc}"]
-			id: "07700ADA82788D61"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.tfg_tips.all_backpack_upgrades.subtitle}"
-			tasks: [
-				{
-					id: "17ACA935E068F505"
-					item: "sophisticatedbackpacks:pickup_upgrade"
-					type: "item"
-				}
-				{
-					id: "71BFE15269AF003F"
-					item: "sophisticatedbackpacks:advanced_pickup_upgrade"
-					type: "item"
-				}
-				{
-					id: "1F464403CAFB846C"
-					item: "sophisticatedbackpacks:magnet_upgrade"
-					type: "item"
-				}
-				{
-					id: "2D96819E1EACD3D5"
-					item: "sophisticatedbackpacks:advanced_magnet_upgrade"
-					type: "item"
-				}
-				{
-					id: "7B869BD328658A8F"
-					item: "sophisticatedbackpacks:void_upgrade"
-					type: "item"
-				}
-				{
-					id: "23C08741706EFAB9"
-					item: "sophisticatedbackpacks:advanced_void_upgrade"
-					type: "item"
-				}
-				{
-					id: "28694EC9474F6F89"
-					item: "sophisticatedbackpacks:restock_upgrade"
-					type: "item"
-				}
-				{
-					id: "456D6D4DD7DBF2F1"
-					item: "sophisticatedbackpacks:advanced_restock_upgrade"
-					type: "item"
-				}
-				{
-					id: "23FF54BBD392FEDD"
-					item: "sophisticatedbackpacks:deposit_upgrade"
-					type: "item"
-				}
-				{
-					id: "5B5F33BB1555878B"
-					item: "sophisticatedbackpacks:tool_swapper_upgrade"
-					type: "item"
-				}
-				{
-					id: "35065D8DB0BAD94E"
-					item: "sophisticatedbackpacks:advanced_tool_swapper_upgrade"
-					type: "item"
-				}
-				{
-					id: "1D56B738DC0B4645"
-					item: "sophisticatedbackpacks:jukebox_upgrade"
-					type: "item"
-				}
-				{
-					id: "6D1D4EDEB22738A9"
-					item: "sophisticatedbackpacks:stack_upgrade_tier_1"
-					type: "item"
-				}
-				{
-					id: "10842F2A12CA8439"
-					item: "sophisticatedbackpacks:everlasting_upgrade"
-					type: "item"
-				}
-				{
-					id: "1B0CA61FB32AB731"
-					item: "sophisticatedbackpacks:advanced_refill_upgrade"
-					type: "item"
-				}
-				{
-					id: "54DB147D6D5CA300"
-					item: "sophisticatedbackpacks:refill_upgrade"
-					type: "item"
-				}
-				{
-					id: "59E128E411C2F1B2"
-					item: "sophisticatedbackpacks:advanced_deposit_upgrade"
-					type: "item"
-				}
-				{
-					id: "72281E0F0CCE2EB9"
-					item: "sophisticatedbackpacks:stack_upgrade_starter_tier"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.all_backpack_upgrades.title}"
-			x: 13.5d
-			y: 2.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["1469936B5DE3AC28"]
@@ -1014,7 +128,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.treetap.title}"
-			x: -11.0d
+			x: -8.0d
 			y: 0.0d
 		}
 		{
@@ -1026,7 +140,7 @@
 			description: ["{quests.tfg_tips.create_rubber_ingot.desc}"]
 			id: "6903C72A254A7B08"
 			shape: "gear"
-			size: 4.0d
+			size: 3.0d
 			subtitle: "{quests.tfg_tips.create_rubber_ingot.subtitle}"
 			tasks: [{
 				id: "12CE161368CA3973"
@@ -1034,7 +148,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_rubber_ingot.title}"
-			x: -17.0d
+			x: -13.0d
 			y: 0.0d
 		}
 		{
@@ -1053,8 +167,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_sticky_resin.title}"
-			x: -14.0d
-			y: -1.0d
+			x: -10.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["128483FFDC8277A0"]
@@ -1074,7 +188,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.find_latex_tree.title}"
-			x: -12.5d
+			x: -10.5d
 			y: 0.0d
 		}
 		{
@@ -1092,8 +206,8 @@
 				type: "observation"
 			}]
 			title: "{quests.tfg_tips.find_syrup_tree.title}"
-			x: -12.5d
-			y: 1.0d
+			x: -9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["308BB7D9D210C8DA"]
@@ -1114,111 +228,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_tree_sugar.title}"
-			x: -14.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["7FA5B6354A49C396"]
-			description: ["{quests.tfg_tips.vessels.desc}"]
-			id: "7220A4926B6A89DC"
-			subtitle: "{quests.tfg_tips.vessels.subtitle}"
-			tasks: [
-				{
-					id: "292592992CA57C39"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:fired_large_vessels)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #tfc:fired_large_vessels"
-					type: "item"
-				}
-				{
-					id: "636DA3A861FDAB62"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:fired_vessels)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #tfc:fired_vessels"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.vessels.title}"
-			x: 8.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["7FA5B6354A49C396"]
-			description: ["{quests.tfg_tips.portable_cells.desc}"]
-			id: "685802EB4C6700F5"
-			subtitle: "{quests.tfg_tips.portable_cells.subtitle}"
-			tasks: [
-				{
-					id: "28B6D074D9E774F5"
-					item: {
-						Count: 1
-						id: "ae2:portable_item_cell_1k"
-						tag: { }
-					}
-					match_nbt: false
-					type: "item"
-				}
-				{
-					id: "4FB4D78C88DEF1E1"
-					item: {
-						Count: 1
-						id: "ae2:portable_fluid_cell_1k"
-						tag: { }
-					}
-					match_nbt: false
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.portable_cells.title}"
-			x: 8.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["685802EB4C6700F5"]
-			description: [
-				"{quests.tfg_tips.256m_portable_cells.desc}"
-				""
-			]
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "520C374E5D3F34C1"
-			shape: "heart"
-			subtitle: "{quests.tfg_tips.256m_portable_cells.subtitle}"
-			tasks: [
-				{
-					id: "7742886F257F6BC3"
-					item: {
-						Count: 1
-						id: "megacells:portable_item_cell_256m"
-						tag: { }
-					}
-					match_nbt: false
-					type: "item"
-				}
-				{
-					id: "4D3CBCB9C6579DBB"
-					item: {
-						Count: 1
-						id: "megacells:portable_fluid_cell_256m"
-						tag: { }
-					}
-					match_nbt: false
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.256m_portable_cells.title}"
-			x: 9.0d
-			y: 1.0d
+			x: -9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1228,16 +239,17 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.refrigerator.desc}"]
 			id: "58EC77A796979E68"
+			shape: "gear"
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.refrigerator.subtitle}"
 			tasks: [{
 				id: "2D43E8E907B39B46"
-				item: "tfcea:refrigerator"
+				item: "tfg:mv_food_refrigerator"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.refrigerator.title}"
-			x: 9.0d
-			y: -17.0d
+			x: 5.5d
+			y: -21.0d
 		}
 		{
 			dependencies: ["2EFB241490502DB3"]
@@ -1251,7 +263,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.beekeeping.title}"
-			x: 0.0d
+			x: -2.5d
 			y: -7.5d
 		}
 		{
@@ -1315,8 +327,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.not_the_bees.title}"
-			x: 0.0d
-			y: -11.5d
+			x: -2.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["1071B804483BB882"]
@@ -1343,8 +355,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.beehive.title}"
-			x: 0.0d
-			y: -9.5d
+			x: -2.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["0FB14699D7BE5D4B"]
@@ -1372,7 +384,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.beeswax.title}"
-			x: 1.5d
+			x: -1.0d
 			y: -13.5d
 		}
 		{
@@ -1387,8 +399,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.honey.title}"
-			x: 0.0d
-			y: -13.5d
+			x: -3.0d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -1398,8 +410,7 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.cellar.desc}"]
 			id: "3D1FF501DE2E56FE"
-			shape: "gear"
-			size: 4.0d
+			size: 1.5d
 			subtitle: "{quests.tfg_tips.cellar.subtitle}"
 			tasks: [
 				{
@@ -1422,8 +433,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.cellar.title}"
-			x: 3.5d
-			y: -17.0d
+			x: 1.5d
+			y: -18.0d
 		}
 		{
 			dependencies: ["3D1FF501DE2E56FE"]
@@ -1443,8 +454,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.cellar_blocks.title}"
-			x: 3.5d
-			y: -20.0d
+			x: 0.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["2EFB241490502DB3"]
@@ -1469,14 +480,35 @@
 					type: "item"
 				}
 				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfchotornot:tongs/wood"
+						tag: {
+							Damage: 0
+						}
+					}
 					id: "45EFF5E3C4FB5D77"
-					item: "firmalife:peel"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfchotornot:insulating)"
+						}
+					}
+					optional_task: true
+					title: "Any #tfchotornot:insulating"
 					type: "item"
 				}
 			]
 			title: "{quests.tfg_tips.oven.title}"
-			x: 2.0d
-			y: -7.5d
+			x: -3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["029264BCA5477837"]
@@ -1505,8 +537,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.oven_appliances.title}"
-			x: 1.0d
-			y: -8.5d
+			x: -5.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["029264BCA5477837"]
@@ -1526,8 +558,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.oven_utils.title}"
-			x: 3.0d
-			y: -8.5d
+			x: -3.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["029264BCA5477837"]
@@ -1547,8 +579,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.oven_finish.title}"
-			x: 2.0d
-			y: -8.5d
+			x: -5.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["73D5ED4099F99A47"]
@@ -1575,8 +607,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.jam.title}"
-			x: 1.0d
-			y: -9.5d
+			x: -6.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2EFB241490502DB3"]
@@ -1590,8 +622,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.preservation.title}"
-			x: 6.0d
-			y: -7.5d
+			x: 5.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -1602,37 +634,59 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.passive_preservation.desc}"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:ceramic/vessel"
+				tag: { }
+			}
 			id: "13F7066858E923FF"
 			subtitle: "{quests.tfg_tips.passive_preservation.subtitle}"
 			tasks: [{
-				id: "54AAB9886964A160"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
+				dimension: "minecraft:overworld"
+				disable_toast: true
+				icon: "gtceu:overworld_marker"
+				id: "5BAF5F5343C3E42A"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
 			}]
 			title: "{quests.tfg_tips.passive_preservation.title}"
-			x: 6.5d
-			y: -15.5d
+			x: 5.5d
+			y: -17.0d
 		}
 		{
 			dependencies: ["4047EE998BC4CD03"]
 			description: ["{quests.tfg_tips.get_milk.desc}"]
 			id: "3C7F170E065B60E1"
 			subtitle: "{quests.tfg_tips.get_milk.subtitle}"
-			tasks: [{
-				id: "5ADFB5FC06EAED6C"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"minecraft:milk\"}})item(minecraft:milk_bucket))only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"firmalife:yak_milk\"}})item(firmalife:bucket/yak_milk))only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"firmalife:goat_milk\"}})item(firmalife:bucket/goat_milk)))"
+			tasks: [
+				{
+					id: "5ADFB5FC06EAED6C"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"minecraft:milk\"}})item(minecraft:milk_bucket))only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"firmalife:yak_milk\"}})item(firmalife:bucket/yak_milk))only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"firmalife:goat_milk\"}})item(firmalife:bucket/goat_milk)))"
+						}
 					}
+					optional_task: true
+					title: "{quests.tfg_tips.get_milk.task}"
+					type: "item"
 				}
-				title: "{quests.tfg_tips.get_milk.task}"
-				type: "item"
-			}]
+				{
+					id: "26460F400A280214"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.tfg_tips.get_milk.title}"
-			x: 4.5d
-			y: -8.5d
+			x: 3.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["4047EE998BC4CD03"]
@@ -1652,8 +706,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.get_meat.title}"
-			x: 5.5d
-			y: -8.5d
+			x: 4.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["4047EE998BC4CD03"]
@@ -1674,7 +728,7 @@
 			}]
 			title: "{quests.tfg_tips.get_fruit.title}"
 			x: 7.5d
-			y: -8.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["4047EE998BC4CD03"]
@@ -1694,8 +748,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.get_grain.title}"
-			x: 8.5d
-			y: -8.5d
+			x: 9.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["4047EE998BC4CD03"]
@@ -1715,8 +769,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.get_veggie.title}"
-			x: 6.5d
-			y: -8.5d
+			x: 6.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["45102650E3D790B8"]
@@ -1750,8 +804,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.process_grain.title}"
-			x: 8.5d
-			y: -12.5d
+			x: 9.0d
+			y: -15.0d
 		}
 		{
 			dependencies: [
@@ -1814,7 +868,7 @@
 			]
 			title: "{quests.tfg_tips.brine_something.title}"
 			x: 6.5d
-			y: -9.5d
+			y: -11.5d
 		}
 		{
 			dependencies: [
@@ -1877,8 +931,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.pickle_something.title}"
-			x: 6.5d
-			y: -12.5d
+			x: 7.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["52D944ADA884EFEF"]
@@ -1922,8 +976,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.dry_fruit.title}"
-			x: 7.5d
-			y: -11.0d
+			x: 8.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["52290DFBF39F0D07"]
@@ -1936,7 +990,7 @@
 						Count: 1
 						ForgeCaps: {
 							"tfc:food": {
-								creationDate: 26377904L
+								creationDate: -9223372036854775808L
 								traits: ["tfc:salted"]
 							}
 							"tfc:item_heat": {
@@ -1964,8 +1018,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.salt_meat.title}"
-			x: 5.5d
-			y: -10.5d
+			x: 3.5d
+			y: -11.5d
 		}
 		{
 			dependencies: [
@@ -2013,7 +1067,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.smoke_meat.title}"
-			x: 5.5d
+			x: 5.0d
 			y: -11.5d
 		}
 		{
@@ -2053,8 +1107,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.cook_meat.title}"
-			x: 5.5d
-			y: -13.5d
+			x: 5.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["3C7F170E065B60E1"]
@@ -2074,8 +1128,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_cheese.title}"
-			x: 4.0d
-			y: -11.0d
+			x: 2.0d
+			y: -11.5d
 		}
 		{
 			dependencies: [
@@ -2092,8 +1146,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.cheese_aging.title}"
-			x: 3.0d
-			y: -11.0d
+			x: 1.5d
+			y: -15.0d
 		}
 		{
 			dependencies: ["0FCB88A64D3FBF0F"]
@@ -2106,7 +1160,7 @@
 						Count: 1
 						ForgeCaps: {
 							"tfc:food": {
-								creationDate: 26482434L
+								creationDate: -9223372036854775808L
 								traits: [
 									"firmalife:fresh"
 									"firmalife:smoked"
@@ -2133,8 +1187,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.smoke_cheese.title}"
-			x: 4.0d
-			y: -13.5d
+			x: 3.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["2EFB241490502DB3"]
@@ -2148,242 +1202,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.greenhouse.title}"
-			x: 3.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["150B7C5CD152E1BA"]
-			description: ["{quests.tfg_tips.glassblowing.desc}"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "tfc:metal/block/brass"
-			}
-			id: "22E604DB7E7E87FB"
-			subtitle: "{quests.tfg_tips.glassblowing.subtitle}"
-			tasks: [
-				{
-					id: "00630DE980C1D57D"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:blowpipes)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #tfc:blowpipes"
-					type: "item"
-				}
-				{
-					icon: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/block/brass"
-					}
-					id: "6E7AA28CDBC41C74"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:glass_basin_blocks)"
-						}
-					}
-					optional_task: true
-					title: "Any #tfc:glass_basin_blocks"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.glassblowing.title}"
-			x: -3.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["22E604DB7E7E87FB"]
-			description: ["{quests.tfg_tips.glassblowing_tools.desc}"]
-			id: "2D959136A5FC5F46"
-			subtitle: "{quests.tfg_tips.glassblowing_tools.subtitle}"
-			tasks: [{
-				id: "5892192552832DEA"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:glassworking_tools)"
-					}
-				}
-				title: "Any #tfc:glassworking_tools"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.glassblowing_tools.title}"
-			x: -3.0d
-			y: 9.5d
-		}
-		{
-			dependencies: [
-				"2D959136A5FC5F46"
-				"56CA2EB7812529C5"
-			]
-			description: ["{quests.tfg_tips.lamps.desc}"]
-			id: "037CDA933FBE2CBE"
-			subtitle: "{quests.tfg_tips.lamps.subtitle}"
-			tasks: [
-				{
-					id: "0173845209C6B380"
-					item: "tfc:lamp_glass"
-					type: "item"
-				}
-				{
-					id: "539A1E3793AD3088"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:unfinished_lamps)"
-						}
-					}
-					title: "Any #tfg:unfinished_lamps"
-					type: "item"
-					weak_nbt_match: true
-				}
-				{
-					id: "146E09EE00F0EC3F"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:lamps)"
-						}
-					}
-					title: "Any #tfc:lamps"
-					type: "item"
-					weak_nbt_match: true
-				}
-			]
-			title: "{quests.tfg_tips.lamps.title}"
-			x: -5.0d
-			y: 11.0d
-		}
-		{
-			dependencies: [
-				"037CDA933FBE2CBE"
-				"56CA2EB7812529C5"
-			]
-			description: ["{quests.tfg_tips.lava_lamp.desc}"]
-			id: "4EBABACAB444244D"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.tfg_tips.lava_lamp.subtitle}"
-			tasks: [
-				{
-					id: "50C7B060CC8E91AA"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/lamp/blue_steel"
-					}
-					type: "item"
-				}
-				{
-					id: "5A61ADFCB2AE868E"
-					item: "minecraft:lava_bucket"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.lava_lamp.title}"
-			x: -5.0d
-			y: 12.5d
-		}
-		{
-			dependencies: ["037CDA933FBE2CBE"]
-			description: ["{quests.tfg_tips.creosote.desc}"]
-			id: "72C1E430FF6D2DD8"
-			subtitle: "{quests.tfg_tips.creosote.subtitle}"
-			tasks: [{
-				id: "6980AF89760133FD"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "only_one(item(gtceu:creosote_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:creosote\"}}))"
-					}
-				}
-				title: "{quests.tfg_tips.creosote.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.creosote.title}"
-			x: -6.0d
-			y: 12.0d
-		}
-		{
-			dependencies: ["037CDA933FBE2CBE"]
-			description: ["{quests.tfg_tips.olive_oil.desc}"]
-			id: "13FC17F88DFEB8A8"
-			subtitle: "{quests.tfg_tips.olive_oil.subtitle}"
-			tasks: [{
-				id: "41B624CA79C96356"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "only_one(item(tfc:bucket/olive_oil)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"tfc:olive_oil\"}}))"
-					}
-				}
-				title: "{quests.tfg_tips.olive_oil.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.olive_oil.title}"
-			x: -4.0d
-			y: 12.0d
-		}
-		{
-			dependencies: ["2D959136A5FC5F46"]
-			description: ["{quests.tfg_tips.glass_blocks.desc}"]
-			id: "382FC8824F311665"
-			subtitle: "{quests.tfg_tips.glass_blocks.subtitle}"
-			tasks: [
-				{
-					id: "443E37E091069F5E"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:glass/silica)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #forge:glass/silica"
-					type: "item"
-				}
-				{
-					id: "4D76B5D2C7738271"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "item_tag(exposure:filters)item_tag(forge:glass_panes)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #forge:glass_panes"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.glass_blocks.title}"
-			x: -3.0d
-			y: 11.0d
+			x: 0.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -2423,8 +1243,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.charcoal_pile.title}"
-			x: -1.5d
-			y: 9.0d
+			x: -2.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -2455,12 +1275,13 @@
 			]
 			title: "{quests.tfg_tips.thatch_bed.title}"
 			x: 0.0d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
 				"11AB8966EC8C10ED"
 				"0FACA5FBFCB26266"
+				"2D973C6DBC873824"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.bed.desc}"]
@@ -2482,7 +1303,7 @@
 			}]
 			title: "{quests.tfg_tips.bed.title}"
 			x: 0.0d
-			y: 16.0d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -2507,7 +1328,7 @@
 			}]
 			title: "{quests.tfg_tips.loom.title}"
 			x: 0.0d
-			y: 11.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1766C916084261AA"]
@@ -2521,7 +1342,7 @@
 			}]
 			title: "{quests.tfg_tips.wool_cloth.title}"
 			x: -1.0d
-			y: 12.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["1766C916084261AA"]
@@ -2534,8 +1355,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.pineapple_leather.title}"
-			x: 0.0d
-			y: 12.5d
+			x: -1.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1766C916084261AA"]
@@ -2548,8 +1369,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.burlap_cloth.title}"
-			x: -2.0d
-			y: 12.5d
+			x: 1.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["1766C916084261AA"]
@@ -2562,8 +1383,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.silk_cloth.title}"
-			x: 1.0d
-			y: 12.5d
+			x: 0.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["1766C916084261AA"]
@@ -2576,8 +1397,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.unrefined_paper.title}"
-			x: 2.0d
-			y: 12.5d
+			x: 1.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -2607,8 +1428,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.panning.title}"
-			x: 1.5d
-			y: 9.0d
+			x: -2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["082310DF9BEA92CE"]
@@ -2631,604 +1452,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.sluice.title}"
-			x: 1.5d
-			y: 10.5d
-		}
-		{
-			dependencies: ["60497014785301EB"]
-			description: ["{quests.tfg_tips.glider.desc}"]
-			id: "7EE13BE102F323F3"
-			subtitle: "{quests.tfg_tips.glider.subtitle}"
-			tasks: [{
-				id: "33731B2300E088A4"
-				item: {
-					Count: 1
-					id: "hangglider:hang_glider"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.glider.title}"
-			x: -2.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["7EE13BE102F323F3"]
-			description: ["{quests.tfg_tips.reinforced_glider.desc}"]
-			hide_until_deps_complete: true
-			id: "472D1C507490CC8A"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.tfg_tips.reinforced_glider.subtitle}"
-			tasks: [{
-				id: "1A3E7CD15E316BBC"
-				item: {
-					Count: 1
-					id: "hangglider:reinforced_hang_glider"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.reinforced_glider.title}"
-			x: -2.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["7FA5B6354A49C396"]
-			description: ["{quests.tfg_tips.toolbelt.desc}"]
-			id: "4433748B4DA986B0"
-			subtitle: "{quests.tfg_tips.toolbelt.subtitle}"
-			tasks: [
-				{
-					id: "72ED34F55F7DDC14"
-					item: "toolbelt:belt"
-					type: "item"
-				}
-				{
-					id: "3AD198BF4ECFCB8B"
-					item: "toolbelt:pouch"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.toolbelt.title}"
-			x: 8.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["4433748B4DA986B0"]
-			description: ["{quests.tfg_tips.maxed_out_toolbelt.desc}"]
-			id: "3439B50B06C5BC5D"
-			shape: "heart"
-			subtitle: "{quests.tfg_tips.maxed_out_toolbelt.subtitle}"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "toolbelt:belt"
-					tag: {
-						Items: [{
-							Count: 1b
-							Slot: 0
-							id: "minecraft:wooden_pickaxe"
-							tag: {
-								Damage: 0
-							}
-						}]
-						Size: 9.0d
-					}
-				}
-				id: "1E84FC347B772440"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "nbt(fuzzy:{Size:9.0d})"
-					}
-				}
-				match_nbt: true
-				title: "{quests.tfg_tips.maxed_out_toolbelt.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.maxed_out_toolbelt.title}"
-			x: 9.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["3B3A0FEEB59F597C"]
-			description: ["{quests.tfg_tips.blank_disc.desc}"]
-			id: "6197774254321BEC"
-			subtitle: "{quests.tfg_tips.blank_disc.subtitle}"
-			tasks: [{
-				id: "32B6A6C1F8A6E5E6"
-				item: "etched:blank_music_disc"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.blank_disc.title}"
-			x: -5.0d
-			y: 7.0d
-		}
-		{
-			dependencies: ["6197774254321BEC"]
-			description: ["{quests.tfg_tips.dye_discs.desc}"]
-			id: "0B8F9C3AD6A12CB6"
-			subtitle: "{quests.tfg_tips.dye_discs.subtitle}"
-			tasks: [{
-				id: "13E20F55DD3DB88C"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:creeper_drop_music_discs)"
-					}
-				}
-				title: "{quests.tfg_tips.dye_discs.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.dye_discs.title}"
-			x: -6.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["6197774254321BEC"]
-			description: ["{quests.tfg_tips.amogus.desc}"]
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "1074B137571B3F94"
-			invisible: true
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.tfg_tips.amogus.subtitle}"
-			tasks: [{
-				id: "2FF9DCD0199D9DBA"
-				item: "gtceu:sus_record"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.amogus.title}"
-			x: -6.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["6197774254321BEC"]
-			description: ["{quests.tfg_tips.special_discs.desc}"]
-			id: "7C13AE728BBF0143"
-			subtitle: "{quests.tfg_tips.special_discs.subtitle}"
-			tasks: [{
-				id: "3B4CD2ED82944A2F"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(minecraft:music_disc_otherside)item(minecraft:music_disc_5)item(minecraft:music_disc_pigstep)item(minecraft:music_disc_relic)item(alekiships:music_disc_pirate_crafting)item(create_connected:music_disc_elevator)item(create_connected:music_disc_interlude))"
-					}
-				}
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.special_discs.title}"
-			x: -6.5d
-			y: 8.0d
-		}
-		{
-			dependencies: [
-				"0B8F9C3AD6A12CB6"
-				"7C13AE728BBF0143"
-			]
-			description: ["{quests.tfg_tips.disc_collector.desc}"]
-			hide_until_deps_complete: true
-			id: "02082DC32D4CA243"
-			ignore_reward_blocking: true
-			shape: "heart"
-			subtitle: "{quests.tfg_tips.disc_collector.subtitle}"
-			tasks: [
-				{
-					id: "24B43805803B53CA"
-					item: "minecraft:music_disc_13"
-					type: "item"
-				}
-				{
-					id: "1159D566559E5F35"
-					item: "minecraft:music_disc_cat"
-					type: "item"
-				}
-				{
-					id: "07100A24C41FB1CE"
-					item: "minecraft:music_disc_blocks"
-					type: "item"
-				}
-				{
-					id: "3373103EFC55A78D"
-					item: "minecraft:music_disc_chirp"
-					type: "item"
-				}
-				{
-					id: "3E2800F825241179"
-					item: "minecraft:music_disc_far"
-					type: "item"
-				}
-				{
-					id: "79ABCB6113A7E1DE"
-					item: "minecraft:music_disc_mall"
-					type: "item"
-				}
-				{
-					id: "257F5BD35CF1EE40"
-					item: "minecraft:music_disc_mellohi"
-					type: "item"
-				}
-				{
-					id: "77A7292A5EF7E4CF"
-					item: "minecraft:music_disc_stal"
-					type: "item"
-				}
-				{
-					id: "28C17C33ECB70188"
-					item: "minecraft:music_disc_strad"
-					type: "item"
-				}
-				{
-					id: "691AC3897E696E25"
-					item: "minecraft:music_disc_ward"
-					type: "item"
-				}
-				{
-					id: "2C0F3BC25F8AAC9C"
-					item: "minecraft:music_disc_11"
-					type: "item"
-				}
-				{
-					id: "27AD5A6B311A902B"
-					item: "minecraft:music_disc_wait"
-					type: "item"
-				}
-				{
-					id: "50AAF85172A25310"
-					item: "minecraft:music_disc_otherside"
-					type: "item"
-				}
-				{
-					id: "38E544AE090529DA"
-					item: "minecraft:music_disc_5"
-					type: "item"
-				}
-				{
-					id: "4E695E99B5A3A67F"
-					item: "minecraft:music_disc_pigstep"
-					type: "item"
-				}
-				{
-					id: "51AE173DAB886094"
-					item: "minecraft:music_disc_relic"
-					type: "item"
-				}
-				{
-					id: "10C922DAB1EBB8E3"
-					item: "alekiships:music_disc_pirate_crafting"
-					type: "item"
-				}
-				{
-					id: "73844BD0542A6ACA"
-					item: "create_connected:music_disc_elevator"
-					type: "item"
-				}
-				{
-					id: "3A7EB997DD873A2D"
-					item: "create_connected:music_disc_interlude"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.disc_collector.title}"
-			x: -7.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["6197774254321BEC"]
-			description: [
-				"{quests.tfg_tips.label_album.desc}"
-				"{image:tfg:textures/quests/wheezo.png width:100 height:100 align:center}"
-			]
-			id: "08C37B4ED7DB918B"
-			subtitle: "{quests.tfg_tips.label_album.subtitle}"
-			tasks: [
-				{
-					id: "6EF6B96A209EF78F"
-					item: {
-						Count: 1
-						id: "etched:music_label"
-						tag: {
-							Label: {
-								Author: "Nebby1999"
-								Title: "Custom Music"
-							}
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "4367D62BE629E928"
-					item: "etched:album_cover"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.label_album.title}"
-			x: -5.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["08C37B4ED7DB918B"]
-			description: ["{quests.tfg_tips.etching_disc.desc}"]
-			id: "7560DC5AA338F0CD"
-			subtitle: "{quests.tfg_tips.etching_disc.subtitle}"
-			tasks: [
-				{
-					id: "76BD74F5BBFB17D4"
-					item: "etched:etching_table"
-					type: "item"
-				}
-				{
-					id: "446CE2C288EC58BF"
-					item: "etched:etched_music_disc"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.etching_disc.title}"
-			x: -5.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["7560DC5AA338F0CD"]
-			description: ["{quests.tfg_tips.disc_players.desc}"]
-			id: "1EE19C01C2651279"
-			subtitle: "{quests.tfg_tips.disc_players.subtitle}"
-			tasks: [{
-				id: "7C80BDB49F96AEE0"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(etched:album_jukebox)item(etched:boombox))"
-					}
-				}
-				title: "{quests.tfg_tips.disc_players.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.disc_players.title}"
-			x: -6.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["6197774254321BEC"]
-			description: ["{quests.tfg_tips.radio.desc}"]
-			id: "6D3B064ACEFC3630"
-			subtitle: "{quests.tfg_tips.radio.subtitle}"
-			tasks: [{
-				id: "4E7E1EC89D6E1E1F"
-				item: "etched:radio"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.radio.title}"
-			x: -4.0d
-			y: 7.0d
-		}
-		{
-			dependencies: ["7560DC5AA338F0CD"]
-			description: ["{quests.tfg_tips.DIGGY_DIGGY_HOLE.desc}"]
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			icon: {
-				Count: 1
-				id: "minecraft:netherite_pickaxe"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "6EF03629D3881D7B"
-			invisible: true
-			shape: "heart"
-			subtitle: "{quests.tfg_tips.DIGGY_DIGGY_HOLE.subtitle}"
-			tasks: [{
-				icon: "etched:blank_music_disc"
-				id: "5FFC33BE7B19801C"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "only_one(nbt(fuzzy:{Music:{Author:\"Wind Rose\",Title:'{\"text\":\"Diggy Diggy Hole\"}',Url:\"https://wind-rose.bandcamp.com/track/diggy-diggy-hole\"}})nbt(fuzzy:{Music:{Author:\"Wind Rose\",Title:'{\"text\":\"Diggy Diggy Hole\"}',Url:\"https://soundcloud.com/windrosemusic/diggy-diggy-hole\"}})nbt(fuzzy:{Music:{Author:\"Yogscast\",Title:'{\"text\":\"â™ª Diggy Diggy Hole - Original Song\"}',Url:\"https://soundcloud.com/yogscastofficial/diggy-diggy-hole\"}})nbt(fuzzy:{Music:{Author:\"Yogscast\",Title:'{\"text\":\"Diggy Diggy Hole\"}',Url:\"https://soundcloud.com/yogscast/diggy-diggy-hole\"}})nbt(fuzzy:{Music:{Author:\"Patient Zero\",Title:'{\"text\":\"Dwarf Hole (Diggy Diggy Hole)\"}',Url:\"https://patientzero.bandcamp.com/track/dwarf-hole-diggy-diggy-hole\"}})nbt(fuzzy:{Music:{Author:\"Patient Zero\",Title:'{\"text\":\"Dwarf Hole 2020 (Diggy Diggy Hole)\"}',Url:\"https://patientzero.bandcamp.com/track/dwarf-hole-2020-diggy-diggy-hole\"}})nbt(fuzzy:{Music:{Author:\"Patient Zero\",Title:'{\"text\":\"Dwarf Hole (Diggy Diggy Hole) (2020 remaster)\"}',Url:\"https://patientzero.bandcamp.com/track/dwarf-hole-diggy-diggy-hole-2020-remaster\"}})nbt(fuzzy:{Music:{Author:\"Patient Zero\",Title:'{\"text\":\"Dwarf Hole (Extra Diggy Mix) (2020 remaster)\"}',Url:\"https://patientzero.bandcamp.com/track/dwarf-hole-extra-diggy-mix-2020-remaster\"}}))"
-					}
-				}
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.DIGGY_DIGGY_HOLE.title}"
-			x: -5.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["3B3A0FEEB59F597C"]
-			description: ["{quests.tfg_tips.camera.desc}"]
-			id: "275C8EA942AB49DD"
-			subtitle: "{quests.tfg_tips.camera.subtitle}"
-			tasks: [{
-				id: "1EEC134E3699756E"
-				item: "exposure:camera"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.camera.title}"
-			x: -9.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["275C8EA942AB49DD"]
-			description: ["{quests.tfg_tips.film_rolls.desc}"]
-			id: "5D4EBB3347A69A42"
-			subtitle: "{quests.tfg_tips.film_rolls.subtitle}"
-			tasks: [{
-				id: "6ED3F6674D310225"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(exposure:film_rolls)"
-					}
-				}
-				title: "{quests.tasktype.item.any} #exposure:film_rolls"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.film_rolls.title}"
-			x: -9.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["5D4EBB3347A69A42"]
-			description: [
-				"{quests.tfg_tips.developing_film.desc}"
-				""
-			]
-			id: "399A7716D4A2AAC6"
-			subtitle: "{quests.tfg_tips.developing_film.subtitle}"
-			tasks: [
-				{
-					id: "2A5965A7455A3027"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(exposure:developed_film_rolls)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #exposure:developed_film_rolls"
-					type: "item"
-				}
-				{
-					id: "770F748F902AC680"
-					item: "exposure:lightroom"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.developing_film.title}"
-			x: -9.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["275C8EA942AB49DD"]
-			description: [
-				"{quests.tfg_tips.selfie.desc}"
-				"{image:tfg:textures/quests/selfie.png width:100 height:100 align:center}"
-			]
-			id: "2B26C247DE1EC95C"
-			subtitle: "{quests.tfg_tips.selfie.subtitle}"
-			tasks: [{
-				id: "7B97C1070D656769"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
-			}]
-			title: "{quests.tfg_tips.selfie.title}"
-			x: -8.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["399A7716D4A2AAC6"]
-			description: ["{quests.tfg_tips.photo.desc}"]
-			id: "3811F97636DBC518"
-			subtitle: "{quests.tfg_tips.photo.subtitle}"
-			tasks: [{
-				id: "1871A9FA59079915"
-				item: "exposure:photograph"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.photo.title}"
-			x: -9.5d
-			y: 8.5d
-		}
-		{
-			dependencies: ["3811F97636DBC518"]
-			description: ["{quests.tfg_tips.photo_album.desc}"]
-			id: "39BF972F09B09D4E"
-			subtitle: "{quests.tfg_tips.photo_album.subtitle}"
-			tasks: [{
-				id: "657ED910AECB4C14"
-				item: "exposure:album"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.photo_album.title}"
-			x: -10.0d
-			y: 9.5d
-		}
-		{
-			dependencies: ["3811F97636DBC518"]
-			description: ["{quests.tfg_tips.photo_frame.desc}"]
-			id: "67F69C63EFF6990C"
-			subtitle: "{quests.tfg_tips.photo_frame.subtitle}"
-			tasks: [{
-				id: "7417611F7203A781"
-				item: "exposure:photograph_frame"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.photo_frame.title}"
-			x: -9.0d
-			y: 9.5d
-		}
-		{
-			dependencies: ["275C8EA942AB49DD"]
-			description: ["{quests.tfg_tips.camera_attachments.desc}"]
-			id: "15AD11C9C5249AAF"
-			subtitle: "{quests.tfg_tips.camera_attachments.subtitle}"
-			tasks: [{
-				id: "79F9084E031CFAF3"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(minecraft:redstone_lamp)item(minecraft:spyglass))"
-					}
-				}
-				title: "{quests.tfg_tips.camera_attachments.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.camera_attachments.title}"
-			x: -10.5d
+			x: -3.5d
 			y: 5.0d
-		}
-		{
-			dependencies: ["275C8EA942AB49DD"]
-			description: ["{quests.tfg_tips.filters.desc}"]
-			id: "4E2C1CAD883EB032"
-			subtitle: "{quests.tfg_tips.filters.subtitle}"
-			tasks: [{
-				id: "3B6862254E5EF802"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "item_tag(exposure:filters)item_tag(forge:glass_panes)"
-					}
-				}
-				title: "{quests.tfg_tips.filters.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.filters.title}"
-			x: -10.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["4E2C1CAD883EB032"]
-			description: ["{quests.tfg_tips.interplanar_projector.desc}"]
-			id: "3952D56556B35FDB"
-			subtitle: "{quests.tfg_tips.interplanar_projector.subtitle}"
-			tasks: [{
-				id: "1FD277716ACD285F"
-				item: {
-					Count: 1
-					id: "exposure:interplanar_projector"
-					tag: {
-						Clean: 0b
-					}
-				}
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.interplanar_projector.title}"
-			x: -10.5d
-			y: 7.0d
 		}
 		{
 			dependencies: ["79FA776C414AE8E5"]
@@ -3248,50 +1473,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.candles.title}"
-			x: 1.5d
-			y: -11.5d
-		}
-		{
-			dependencies: ["150B7C5CD152E1BA"]
-			description: ["{quests.tfg_tips.cane.desc}"]
-			id: "75C6BF1C9405B4C7"
-			subtitle: "{quests.tfg_tips.cane.subtitle}"
-			tasks: [{
-				id: "37DD99D32072ADFC"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(tfccanes:walking_cane)item(tfccanes:refined_walking_cane))"
-					}
-				}
-				title: "{quests.tfg_tips.cane.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.cane.title}"
-			x: -1.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["150B7C5CD152E1BA"]
-			description: ["{quests.tfg_tips.fishing_net.desc}"]
-			id: "2A57C41D681E4611"
-			subtitle: "{quests.tfg_tips.fishing_net.subtitle}"
-			tasks: [{
-				id: "10826B1E02F646D4"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/fishing_nets)"
-					}
-				}
-				title: "{quests.tfg_tips.fishing_net.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.fishing_net.title}"
-			x: -2.0d
-			y: 5.0d
+			x: -2.5d
+			y: -14.5d
 		}
 		{
 			dependencies: ["5C01BDDA66249D7B"]
@@ -3311,8 +1494,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.sleeping_bags.title}"
-			x: -2.0d
-			y: 18.0d
+			x: -3.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["5C01BDDA66249D7B"]
@@ -3340,123 +1523,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.hammocks.title}"
-			x: 2.0d
-			y: 18.0d
-		}
-		{
-			dependencies: ["3B3A0FEEB59F597C"]
-			description: ["{quests.tfg_tips.tape_measure.desc}"]
-			id: "60D7605B4286C007"
-			subtitle: "{quests.tfg_tips.tape_measure.subtitle}"
-			tasks: [{
-				id: "7D3FFED593B5CE48"
-				item: "measurements:tape_measure"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.tape_measure.title}"
-			x: -6.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["3B3A0FEEB59F597C"]
-			description: ["{quests.tfg_tips.chalk.desc}"]
-			id: "63508402A5BF5169"
-			subtitle: "{quests.tfg_tips.chalk.subtitle}"
-			tasks: [
-				{
-					id: "2AA5B777EBBCF583"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(chalk:chalks)"
-						}
-					}
-					title: "Any #chalk:chalks"
-					type: "item"
-				}
-				{
-					id: "28B065D2AD85D082"
-					item: {
-						Count: 1
-						id: "chalk:chalk_box"
-						tag: {
-							Items: [
-								{
-									Count: 0b
-									id: "minecraft:air"
-									tag: { }
-								}
-								{
-									Count: 0b
-									id: "minecraft:air"
-									tag: { }
-								}
-								{
-									Count: 0b
-									id: "minecraft:air"
-									tag: { }
-								}
-								{
-									Count: 0b
-									id: "minecraft:air"
-									tag: { }
-								}
-								{
-									Count: 0b
-									id: "minecraft:air"
-									tag: { }
-								}
-								{
-									Count: 0b
-									id: "minecraft:air"
-									tag: { }
-								}
-								{
-									Count: 0b
-									id: "minecraft:air"
-									tag: { }
-								}
-								{
-									Count: 0b
-									id: "minecraft:air"
-									tag: { }
-								}
-								{
-									Count: 0b
-									id: "minecraft:air"
-									tag: { }
-								}
-							]
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.chalk.title}"
-			x: -5.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["037CDA933FBE2CBE"]
-			description: ["{quests.tfg_tips.tallow.desc}"]
-			id: "54E6994D5CC693A7"
-			subtitle: "{quests.tfg_tips.tallow.subtitle}"
-			tasks: [{
-				id: "07D0D54839A9A725"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"tfc:tallow\"}})item(tfc:bucket/tallow))"
-					}
-				}
-				title: "{quests.tfg_tips.tallow.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.tallow.title}"
-			x: -6.5d
-			y: 11.0d
+			x: 3.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -3476,8 +1544,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.status_effects.title}"
-			x: 3.0d
-			y: 8.0d
+			x: 2.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["28333A7852497C4D"]
@@ -3498,7 +1566,7 @@
 			}]
 			title: "{quests.tfg_tips.aged_alcohol.title}"
 			x: 3.0d
-			y: 10.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["28333A7852497C4D"]
@@ -3518,8 +1586,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.pills.title}"
-			x: 4.0d
-			y: 8.0d
+			x: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["28333A7852497C4D"]
@@ -3540,7 +1608,7 @@
 			}]
 			title: "{quests.tfg_tips.tablets.title}"
 			x: 4.0d
-			y: 9.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["28333A7852497C4D"]
@@ -3561,7 +1629,7 @@
 			}]
 			title: "{quests.tfg_tips.salvo.title}"
 			x: 4.0d
-			y: 10.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["128483FFDC8277A0"]
@@ -3578,8 +1646,8 @@
 				type: "observation"
 			}]
 			title: "{quests.tfg_tips.find_rosin_tree.title}"
-			x: -12.5d
-			y: -1.0d
+			x: -9.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5D865179941E7B3A"]
@@ -3592,25 +1660,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_conifer_rosin.title}"
-			x: -14.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["2B84F34BFA37C828"]
-			description: ["{quests.tfg_tips.beneathxfirmaciv.desc}"]
-			icon: "createdeco:decal_fire"
-			id: "252EB7FA56D1F88E"
-			shape: "diamond"
-			size: 2.0d
-			subtitle: "{quests.tfg_tips.beneathxfirmaciv.subtitle}"
-			tasks: [{
-				id: "6C19AB80033D5E24"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
-			}]
-			title: "{quests.tfg_tips.beneathxfirmaciv.title}"
-			x: -8.5d
-			y: -8.5d
+			x: -9.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["13F7066858E923FF"]
@@ -3630,180 +1681,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.vessel_preservation.title}"
-			x: 6.5d
-			y: -16.5d
-		}
-		{
-			dependencies: ["173F6FA60A5B280B"]
-			description: ["{quests.tfg_tips.transportation.desc}"]
-			disable_toast: true
-			id: "60497014785301EB"
-			shape: "octagon"
-			size: 2.0d
-			subtitle: "{quests.tfg_tips.transportation.subtitle}"
-			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: "gtceu:overworld_marker"
-				id: "2DDB6C944649BEDF"
-				title: "{quests.stone_age.temperature.task}"
-				type: "dimension"
-			}]
-			title: "{quests.tfg_tips.transportation.title}"
-			x: -4.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["3B3A0FEEB59F597C"]
-			description: [
-				"{quests.tfg_tips.digger_helmet.desc.1}"
-				"{@pagebreak}"
-				"{quests.tfg_tips.digger_helmet.desc.2}"
-				""
-				"{image:tfg:textures/quests/mining_helmet_option.png width:1000 height:135 align:center fit:true}"
-			]
-			id: "4425519187BF28FE"
-			subtitle: "{quests.tfg_tips.digger_helmet.subtitle}"
-			tasks: [{
-				id: "6010870D09DAD473"
-				item: {
-					Count: 1
-					id: "diggerhelmet:digger_helmet"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.digger_helmet.title}"
-			x: -4.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["60497014785301EB"]
-			description: ["{quests.tfg_tips.immersive_aircraft.desc}"]
-			icon: "immersive_aircraft:quadrocopter"
-			id: "62FD3E7A836D2E0A"
-			subtitle: "{quests.tfg_tips.immersive_aircraft.subtitle}"
-			tasks: [{
-				id: "5A1E6B47737C6071"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
-			}]
-			title: "{quests.tfg_tips.immersive_aircraft.title}"
-			x: -4.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["62FD3E7A836D2E0A"]
-			description: ["{quests.tfg_tips.quadrocopter.desc}"]
-			id: "5D7E9840A5A7AD7E"
-			subtitle: "{quests.tfg_tips.quadrocopter.subtitle}"
-			tasks: [{
-				id: "0746EC334B8F1C74"
-				item: "immersive_aircraft:quadrocopter"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.quadrocopter.title}"
-			x: -4.0d
-			y: -9.5d
-		}
-		{
-			dependencies: ["5D7E9840A5A7AD7E"]
-			description: ["{quests.tfg_tips.gyrodyne.desc}"]
-			id: "79767F5D33BCA30E"
-			subtitle: "{quests.tfg_tips.gyrodyne.subtitle}"
-			tasks: [{
-				id: "6A5B1A379C09AF7C"
-				item: "immersive_aircraft:gyrodyne"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.gyrodyne.title}"
-			x: -4.0d
-			y: -11.5d
-		}
-		{
-			dependencies: ["62FD3E7A836D2E0A"]
-			description: ["{quests.tfg_tips.airship.desc}"]
-			id: "598BD589D3C3057A"
-			subtitle: "{quests.tfg_tips.airship.subtitle}"
-			tasks: [{
-				id: "1CD23602092BE7B4"
-				item: "immersive_aircraft:airship"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.airship.title}"
-			x: -5.0d
-			y: -9.5d
-		}
-		{
-			dependencies: ["598BD589D3C3057A"]
-			description: ["{quests.tfg_tips.cargo_airship.desc}"]
-			id: "6E5195824D12ED1F"
-			subtitle: "{quests.tfg_tips.cargo_airship.subtitle}"
-			tasks: [{
-				id: "68F9CFD1ED872C19"
-				item: "immersive_aircraft:cargo_airship"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.cargo_airship.title}"
-			x: -5.0d
-			y: -11.5d
-		}
-		{
-			dependencies: ["6E5195824D12ED1F"]
-			description: ["{quests.tfg_tips.waghship.desc}"]
-			id: "0D89D46C99B96861"
-			subtitle: "{quests.tfg_tips.waghship.subtitle}"
-			tasks: [{
-				id: "53693DEF78884347"
-				item: "immersive_aircraft:warship"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.waghship.title}"
-			x: -5.0d
-			y: -13.5d
-		}
-		{
-			dependencies: ["62FD3E7A836D2E0A"]
-			description: ["{quests.tfg_tips.economy_plane.desc}"]
-			id: "037E11CB318CADAC"
-			subtitle: "{quests.tfg_tips.economy_plane.subtitle}"
-			tasks: [{
-				id: "1AAC1601977A030D"
-				item: "man_of_many_planes:economy_plane"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.economy_plane.title}"
-			x: -3.0d
-			y: -9.5d
-		}
-		{
-			dependencies: ["037E11CB318CADAC"]
-			description: ["{quests.tfg_tips.biplane.desc}"]
-			id: "6E4754288899732B"
-			subtitle: "{quests.tfg_tips.biplane.subtitle}"
-			tasks: [{
-				id: "46F8A8E1721833E5"
-				item: "immersive_aircraft:biplane"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.biplane.title}"
-			x: -3.0d
-			y: -11.5d
-		}
-		{
-			dependencies: ["6E4754288899732B"]
-			description: ["{quests.tfg_tips.scarlet_biplane.desc}"]
-			id: "7B5AD6AD5E99449C"
-			subtitle: "{quests.tfg_tips.scarlet_biplane.subtitle}"
-			tasks: [{
-				id: "3E274FFB71007307"
-				item: "man_of_many_planes:scarlet_biplane"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.scarlet_biplane.title}"
-			x: -3.0d
-			y: -13.5d
+			x: 9.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["4AA0EBFBA5D8788C"]
@@ -3821,8 +1700,8 @@
 				type: "observation"
 			}]
 			title: "{quests.tfg_tips.how_to_go_beneath.title}"
-			x: 12.0d
-			y: -7.0d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4AA0EBFBA5D8788C"]
@@ -3835,8 +1714,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.beneath_prep.title}"
-			x: 8.0d
-			y: -4.0d
+			x: 7.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4A8910950F638BB5"]
@@ -3857,7 +1736,7 @@
 			]
 			title: "{quests.tfg_tips.beneath_temp_management.title}"
 			x: 7.5d
-			y: -2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["70DA01DFDAE54224"]
@@ -3914,7 +1793,7 @@
 			]
 			title: "{quests.tfg_tips.blue_steel_diving.title}"
 			x: 16.0d
-			y: -7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4A8910950F638BB5"]
@@ -3935,7 +1814,7 @@
 			}]
 			title: "{quests.tfg_tips.beneath_clothes.title}"
 			x: 8.5d
-			y: -2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4A8910950F638BB5"]
@@ -3949,7 +1828,7 @@
 			}]
 			title: "{quests.tfg_tips.juicer.title}"
 			x: 9.5d
-			y: -3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["70DA01DFDAE54224"]
@@ -3963,7 +1842,7 @@
 			}]
 			title: "{quests.tfg_tips.fuck_go_back.title}"
 			x: 13.5d
-			y: -5.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5E2E37673AD87A4B"]
@@ -3979,158 +1858,8 @@
 				type: "dimension"
 			}]
 			title: "{quests.tfg_tips.reach_the_beneath.title}"
-			x: 13.5d
-			y: -7.0d
-		}
-		{
-			dependencies: ["62FD3E7A836D2E0A"]
-			description: ["{quests.tfg_tips.aircraft_upgrades.desc}"]
-			id: "785BED393088C8FC"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.tfg_tips.aircraft_upgrades.subtitle}"
-			tasks: [
-				{
-					id: "6DF2BE113934991F"
-					item: "immersive_aircraft:gyroscope"
-					type: "item"
-				}
-				{
-					id: "3825ED5E282B43EB"
-					item: "immersive_aircraft:sturdy_pipes"
-					type: "item"
-				}
-				{
-					id: "3DDFDDBC012E7A60"
-					item: "immersive_aircraft:industrial_gears"
-					type: "item"
-				}
-				{
-					id: "58C9E47E9F8301E6"
-					item: "immersive_aircraft:eco_engine"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.aircraft_upgrades.title}"
-			x: -2.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["62FD3E7A836D2E0A"]
-			description: ["{quests.tfg_tips.aircraft_weapons.desc}"]
-			id: "34E3478B77A0C2A0"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.tfg_tips.aircraft_weapons.subtitle}"
-			tasks: [
-				{
-					id: "5DB05CFA7AFF2627"
-					item: "immersive_aircraft:rotary_cannon"
-					type: "item"
-				}
-				{
-					id: "53D154EA5969DBCA"
-					item: "immersive_aircraft:telescope"
-					type: "item"
-				}
-				{
-					id: "1551101D10E08568"
-					item: "immersive_aircraft:heavy_crossbow"
-					type: "item"
-				}
-				{
-					id: "3C31C677394E4844"
-					item: "immersive_aircraft:bomb_bay"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.aircraft_weapons.title}"
-			x: -2.5d
-			y: -7.0d
-		}
-		{
-			dependencies: ["62FD3E7A836D2E0A"]
-			description: ["{quests.tfg_tips.steam_upgrades.desc}"]
-			id: "414A9A145910A9D4"
-			subtitle: "{quests.tfg_tips.steam_upgrades.subtitle}"
-			tasks: [{
-				id: "7FF1F5F3F2F10425"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(immersive_aircraft:steel_boiler)item(tfg:black_steel_plated_airplane_propeller)item(immersive_aircraft:improved_landing_gear)item(immersive_aircraft:hull_reinforcement))"
-					}
-				}
-				title: "{quests.tfg_tips.steam_upgrades.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.steam_upgrades.title}"
-			x: -6.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["414A9A145910A9D4"]
-			description: ["{quests.tfg_tips.lv_upgrades.desc}"]
-			id: "2F39D369639C40FD"
-			subtitle: "{quests.tfg_tips.lv_upgrades.subtitle}"
-			tasks: [{
-				id: "431AB936AD02B843"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(tfg:lv_aircraft_engine)item(tfg:redblu_steel_plated_airplane_propeller)item(tfg:redblu_steel_landing_gear)item(tfg:redblu_steel_hull_reinforcement))"
-					}
-				}
-				title: "{quests.tfg_tips.lv_upgrades.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.lv_upgrades.title}"
-			x: -6.0d
-			y: -9.5d
-		}
-		{
-			dependencies: ["2F39D369639C40FD"]
-			description: ["{quests.tfg_tips.mv_upgrades.desc}"]
-			id: "614CC5FB31A030B3"
-			subtitle: "{quests.tfg_tips.mv_upgrades.subtitle}"
-			tasks: [{
-				id: "383347322A8B639C"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(immersive_aircraft:nether_engine)item(immersive_aircraft:enhanced_propeller)item(tfg:aluminium_landing_gear)item(tfg:aluminium_hull_reinforcement))"
-					}
-				}
-				title: "{quests.tfg_tips.mv_upgrades.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.mv_upgrades.title}"
-			x: -6.0d
-			y: -11.5d
-		}
-		{
-			dependencies: ["614CC5FB31A030B3"]
-			description: ["{quests.tfg_tips.hv_upgrades.desc}"]
-			id: "47409DED94FCC2BC"
-			subtitle: "{quests.tfg_tips.hv_upgrades.subtitle}"
-			tasks: [{
-				id: "30455F8446278832"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(tfg:hv_aircraft_engine)item(tfg:stainless_steel_plated_airplane_propeller)item(tfg:stainless_steel_landing_gear)item(tfg:stainless_steel_hull_reinforcement))"
-					}
-				}
-				title: "{quests.tfg_tips.hv_upgrades.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.hv_upgrades.title}"
-			x: -6.0d
-			y: -13.5d
+			x: 13.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["70DA01DFDAE54224"]
@@ -4153,1048 +1882,7 @@
 			}]
 			title: "{quests.tfg_tips.piglin_bartering.title}"
 			x: 13.5d
-			y: -8.5d
-		}
-		{
-			dependencies: ["3B3A0FEEB59F597C"]
-			description: ["{quests.tfg_tips.grappling_hook.desc}"]
-			id: "7A200766AAC1EE19"
-			subtitle: "{quests.tfg_tips.grappling_hook.subtitle}"
-			tasks: [{
-				id: "1DD6337895FBD102"
-				item: {
-					Count: 1
-					id: "grapplemod:grapplinghook"
-					tag: {
-						Damage: 0
-						custom: {
-							angle: 20.0d
-							attract: 0b
-							attractradius: 3.0d
-							crc32: 2252267022L
-							detachonkeyrelease: 0b
-							doublehook: 0b
-							enderstaff: 0b
-							hookgravity: 1.0d
-							maxlen: 30.0d
-							motor: 0b
-							motoracceleration: 0.2d
-							motordampener: 0b
-							motormaxspeed: 4.0d
-							motorwhencrouching: 0b
-							motorwhennotcrouching: 1b
-							oneropepull: 0b
-							phaserope: 0b
-							playermovementmult: 1.0d
-							pullbackwards: 1b
-							reelin: 1b
-							repel: 0b
-							repelforce: 1.0d
-							rocket: 0b
-							rocket_active_time: 0.5d
-							rocket_force: 1.0d
-							rocket_refuel_ratio: 15.0d
-							rocket_vertical_angle: 0.0d
-							smartdoublemotor: 1b
-							smartmotor: 0b
-							sneakingangle: 10.0d
-							sneakingverticalthrowangle: 0.0d
-							sticky: 0b
-							throwspeed: 2.0d
-							verticalthrowangle: 0.0d
-						}
-					}
-				}
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.grappling_hook.title}"
-			x: -9.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["7A200766AAC1EE19"]
-			description: ["{quests.tfg_tips.grapple_repair.desc}"]
-			icon: "createdeco:decal_warning"
-			id: "1F93C858F1D02F7C"
-			subtitle: "{quests.tfg_tips.grapple_repair.subtitle}"
-			tasks: [{
-				id: "1269BD886B07619D"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
-			}]
-			title: "{quests.tfg_tips.grapple_repair.title}"
-			x: -15.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["6C64C20FF5DF972A"]
-			description: ["{quests.tfg_tips.grapple_length.desc}"]
-			id: "105FD1655EEB1921"
-			subtitle: "{quests.tfg_tips.grapple_length.subtitle}"
-			tasks: [
-				{
-					id: "6BC5AB4D7A479799"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/knives)"
-						}
-					}
-					title: "Any #forge:tools/knives"
-					type: "item"
-				}
-				{
-					id: "5557AB6B28C6C32F"
-					item: "firmaciv:rope_coil"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.grapple_length.title}"
-			x: -17.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["6C64C20FF5DF972A"]
-			description: ["{quests.tfg_tips.grapple_motor.desc}"]
-			id: "212E5863D8D919E1"
-			subtitle: "{quests.tfg_tips.grapple_motor.subtitle}"
-			tasks: [{
-				id: "7734D5D897479316"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:electric_motors)"
-					}
-				}
-				title: "Any #gtceu:electric_motors"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.grapple_motor.title}"
-			x: -17.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["1F93C858F1D02F7C"]
-			description: [
-				"{quests.tfg_tips.grapple_upgrades.desc.1}"
-				"{@pagebreak}"
-				"{quests.tfg_tips.grapple_upgrades.desc.2}"
-			]
-			id: "6C64C20FF5DF972A"
-			subtitle: "{quests.tfg_tips.grapple_upgrades.subtitle}"
-			tasks: [{
-				id: "18046502A04BADA8"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
-			}]
-			title: "{quests.tfg_tips.grapple_upgrades.title}"
-			x: -15.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["212E5863D8D919E1"]
-			description: ["{quests.tfg_tips.grapple_smart_motor.desc}"]
-			id: "396802012C8CA565"
-			subtitle: "{quests.tfg_tips.grapple_smart_motor.subtitle}"
-			tasks: [{
-				id: "5BFFEDB3DA7BFC12"
-				item: "gtceu:basic_electronic_circuit"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.grapple_smart_motor.title}"
-			x: -18.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["6C64C20FF5DF972A"]
-			description: ["{quests.tfg_tips.grapple_sticky.desc}"]
-			id: "48DF832E8367EC92"
-			subtitle: "{quests.tfg_tips.grapple_sticky.subtitle}"
-			tasks: [{
-				id: "33D1808773272B67"
-				item: "gtceu:sticky_resin"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.grapple_sticky.title}"
-			x: -15.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["6C64C20FF5DF972A"]
-			description: ["{quests.tfg_tips.grapple_gravity_50.desc}"]
-			id: "7CA1496B662BFD3A"
-			subtitle: "{quests.tfg_tips.grapple_gravity_50.subtitle}"
-			tasks: [{
-				id: "6E09C6EBEDC32D29"
-				item: "gtceu:helium_bucket"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.grapple_gravity_50.title}"
-			x: -13.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["7CA1496B662BFD3A"]
-			description: ["{quests.tfg_tips.grapple_gravity_0.desc}"]
-			id: "1545D7AF21997CFE"
-			subtitle: "{quests.tfg_tips.grapple_gravity_0.subtitle}"
-			tasks: [{
-				id: "27248376D7D18900"
-				item: "gtceu:gravitation_engine_unit"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.grapple_gravity_0.title}"
-			x: -12.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["6C64C20FF5DF972A"]
-			description: ["{quests.tfg_tips.grapple_tweaks.desc}"]
-			id: "1AE8FCB4436EC0A5"
-			subtitle: "{quests.tfg_tips.grapple_tweaks.subtitle}"
-			tasks: [
-				{
-					id: "611A9AAF15FAF6E3"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/wrenches)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #forge:tools/wrenches"
-					type: "item"
-				}
-				{
-					id: "3C7E6E92CACFE1E6"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/screwdrivers)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #forge:tools/screwdrivers"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.grapple_tweaks.title}"
-			x: -13.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["6C64C20FF5DF972A"]
-			description: ["{quests.tfg_tips.grapple_field.desc}"]
-			id: "3FECBEE0651EBA9A"
-			subtitle: "{quests.tfg_tips.grapple_field.subtitle}"
-			tasks: [{
-				id: "4116FB514C1D654D"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:field_generators)"
-					}
-				}
-				title: "{quests.tasktype.item.any} #gtceu:field_generators"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.grapple_field.title}"
-			x: -16.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["6C64C20FF5DF972A"]
-			description: ["{quests.tfg_tips.grapple_magnet.desc}"]
-			id: "0B0FC2CE8AB4649C"
-			subtitle: "{quests.tfg_tips.grapple_magnet.subtitle}"
-			tasks: [{
-				id: "1E7CFFA4C5A8D96E"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:magnetic_iron_ingot)item(gtceu:magnetic_steel_ingot)item(gtceu:magnetic_neodymium_ingot)item(gtceu:magnetic_samarium_ingot))"
-					}
-				}
-				title: "{quests.tfg_tips.grapple_magnet.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.grapple_magnet.title}"
-			x: -16.0d
-			y: 7.0d
-		}
-		{
-			dependencies: ["6C64C20FF5DF972A"]
-			description: ["{quests.tfg_tips.grapple_throw_speed.desc}"]
-			id: "008B6E08B11694FF"
-			subtitle: "{quests.tfg_tips.grapple_throw_speed.subtitle}"
-			tasks: [{
-				id: "42A65BEC1D0870D5"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:electric_pistons)"
-					}
-				}
-				title: "Any #gtceu:electric_pistons"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.grapple_throw_speed.title}"
-			x: -14.0d
-			y: 7.0d
-		}
-		{
-			dependencies: ["6C64C20FF5DF972A"]
-			description: ["{quests.tfg_tips.grapple_double.desc}"]
-			id: "62EA0912A9752840"
-			subtitle: "{quests.tfg_tips.grapple_double.subtitle}"
-			tasks: [{
-				id: "1791828087A3B592"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "gtceu:black_steel_pickaxe_head"
-				}
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.grapple_double.title}"
-			x: -13.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["02FDECC931B5E8EF"]
-			description: [
-				"&3Long-Distance Item Pipes&r can be used to send items across great distances. Place one endpoint at each end, and connect them with pipeline blocks."
-				""
-				"These pipes instantly transfer from the input side to the output side."
-				""
-				"They also have a minimum distance between pipe endpoints, so you can't use these for short-range operations."
-			]
-			icon: "gtceu:long_distance_item_pipeline_endpoint"
-			id: "22B0E30FF38145E7"
-			shape: "square"
-			size: 1.0d
-			subtitle: "Wondering how to move those ores around?"
-			tasks: [
-				{
-					count: 2L
-					id: "7D5959A062BEE77C"
-					item: "gtceu:long_distance_item_pipeline_endpoint"
-					type: "item"
-				}
-				{
-					id: "30A1D0C682D0FC2E"
-					item: "gtceu:long_distance_item_pipeline"
-					type: "item"
-				}
-			]
-			title: "Long-Distance Items"
-			x: 4.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["02FDECC931B5E8EF"]
-			dependency_requirement: "one_completed"
-			description: [
-				"The &aPortable Scanner&r, or &aTricorder&r, is GTCEu's debug tool."
-				""
-				"Using it will show you a block's details, the details of the energy network, its current status and contents, and its impact on performance."
-				""
-				"It'll also display a percentage of fluid remaining in the fluid vein for the &3Fluid Rigs&r."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o This little useful device comes from GregTech 5. It was extremely useful in the early days, because very little information (basically nothing) was given by GUIs or WAILA."
-			]
-			id: "58D40A430654C997"
-			shape: "square"
-			size: 1.0d
-			subtitle: "For the nosiest GregTech players"
-			tasks: [{
-				id: "1E2E112D32893B8D"
-				item: "gtceu:portable_scanner"
-				type: "item"
-			}]
-			title: "Tricorder"
-			x: 3.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["02FDECC931B5E8EF"]
-			description: [
-				"&3Long-Distance Fluid Pipes&r can be used to send fluids across great distances. Place one endpoint at each end, and connect them with pipeline blocks."
-				""
-				"These pipes instantly transfer from the input side to the output side."
-				""
-				"They also have a minimum distance between pipe endpoints, so you can't use these for short-range operations."
-				"{@pagebreak}"
-				"These pipes have a reputation of being &4buggy&r to set up. If they don't seem to work at first, try rotating the endpoints with a &eWrench&r."
-			]
-			icon: "gtceu:long_distance_fluid_pipeline_endpoint"
-			id: "0B1AA0D4CEBD06A8"
-			optional: true
-			shape: "square"
-			size: 1.0d
-			subtitle: "Wondering how to move that oil around?"
-			tasks: [
-				{
-					count: 2L
-					id: "2B2586817A16F100"
-					item: "gtceu:long_distance_fluid_pipeline_endpoint"
-					type: "item"
-				}
-				{
-					id: "246FB107C0C2B28C"
-					item: "gtceu:long_distance_fluid_pipeline"
-					type: "item"
-				}
-			]
-			title: "Long-Distance Pipeline"
-			x: 5.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["74AE7DB845B88CF3"]
-			description: [
-				"In this quest, we'll bestow upon you &5cursed wisdom&r... the ability to easily automate the Electrolyzer."
-				""
-				"The &9Smart Item Filter&r is a filter that recognises Recipe Maps. When placed on the side of a machine, you can set it to \"&3Electrolyzer&r\" to allow insertion of electrolyzable items specifically. You heard that right - no need to filter manually!"
-				""
-				"Oh, and it only gets &abetter&r. If you combine this bad boy with a &aRobot Arm&r, it'll only supply the &6exact amount&r of items required for a successful recipe to the machine."
-				"{@pagebreak}"
-				"Place the &aRobot Arm&r on your Electrolyzer, open its GUI, then place the &9Smart Filter&r inside. Ensure that the Smart Filter is set to Electrolyzer."
-				""
-				"Next, configure it to &d&lImport&r and &d&lSupply Exact&r. Finally, attach any inventory &7(a chest will do)&r onto the side where you placed the &aRobot Arm&r. Ta-dah! You've figured out how to handle &6all&r Electrolyzer recipes!"
-				""
-				"What about the output of the &3Electrolyzer&r? You may want to route the Fluids to several Tanks - or even &3Super Tanks&r if you've gotten that far. We highly recommend that you avoid any methods involving voiding Fluids.&7.&8. except for Water for obvious reasons."
-				"{@pagebreak}"
-				"&9Note:&r The Robot Arm has to facilitate the item transfer for its filtering functionality to work! Inserting directly into the machine &7(for instance, pushing with a Hopper!)&r will ignore the Robot Arm's &dSupply Exact&r setting."
-			]
-			icon: "gtceu:item_smart_filter"
-			id: "222295CD03AF00DC"
-			shape: "square"
-			size: 1.0d
-			subtitle: "Knock, knock - who's that? It's MENSA!"
-			tasks: [{
-				id: "11EC9A6D9E2C4B7E"
-				item: "gtceu:item_smart_filter"
-				type: "item"
-			}]
-			title: "200IQ"
-			x: 12.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["74AE7DB845B88CF3"]
-			description: [
-				"This is a guide on how to automatically route &lall&r your Hot Ingots to your Chemical Bath, while keeping everything automated in tip-top shape."
-				""
-				"The cheap way would be to use filters, and manually add Hot Ingots one by one... which is so boring! Let's try the fun option."
-				""
-				"Install an &aItem Tag Filter&r Cover on the side of your &3Chemical Bath&r, open it and set it to whitelist \"&e&lhot_ingots&r\"."
-				""
-				"From here, you can route with &9any logistics system&r of your choice."
-				"{@pagebreak}"
-				"Connect the output of your &3EBF(s)&r to the input of your &3Chemical Bath&r and the output dump (Chest or Crate)."
-				"You can also have a &dRestrictive Pipe&r in front of the output dump to ensure the Chemical Bath will be prioritized."
-				""
-				"&l&9Note:&r If you wish to know more tags for more automation setups, they will display if you press Shift when hovering over an item. For instance, an item tagged with &e&o#forge:plates/copper&r would be filtered as &e&lplates/copper&r."
-				""
-				"&9Other Note:&r The Item Tag Filter partially supports &dregex&r. Hover over the info icon for more information."
-			]
-			icon: "gtceu:item_tag_filter"
-			id: "7C1FD81C5DCFB74E"
-			shape: "square"
-			size: 1.0d
-			subtitle: "Stop burning your darn hands!"
-			tasks: [
-				{
-					id: "34DEDF3B7F0DB3BC"
-					item: "gtceu:item_tag_filter"
-					type: "item"
-				}
-				{
-					id: "35CAF01644B8D9A2"
-					item: "gtceu:fluid_tag_filter"
-					type: "item"
-				}
-			]
-			title: "250IQ"
-			x: 12.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["02FDECC931B5E8EF"]
-			description: [
-				"In theory, Crates are flat upgrades to Chests. A single block space that stores more items - what more could you ask for?"
-				""
-				"Unfortunately, there's a small downside - Crates do not support item movement shortcuts well. We plan on fixing this in the long-term."
-				""
-				"Where they shine however is the fact that they &6accept Covers&r, making them perfect candidates for buffers in automation."
-			]
-			icon: "gtceu:bronze_crate"
-			id: "6702D52922D85C0D"
-			shape: "square"
-			size: 1.0d
-			subtitle: "Earlygame buffering"
-			tasks: [{
-				id: "2F8D9ACDF8EB5B8D"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:wood_crate)item(gtceu:bronze_crate)item(gtceu:steel_crate)item(gtceu:aluminium_crate)item(gtceu:stainless_steel_crate)item(gtceu:titanium_crate)item(gtceu:tungsten_steel_crate))"
-					}
-				}
-				type: "item"
-			}]
-			title: "GregTech Storage"
-			x: 6.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["6702D52922D85C0D"]
-			description: ["With that tape you wil be able to move around the crate. The main advantage? You can put anything in a crate, weight won't be an issue here."]
-			icon: "gtceu:basic_tape"
-			id: "36B64597F76625ED"
-			shape: "square"
-			size: 1.0d
-			subtitle: "Moving stuff around"
-			tasks: [{
-				id: "1257FC299E957859"
-				item: "gtceu:basic_tape"
-				type: "item"
-			}]
-			title: "Tape for Crate"
-			x: 6.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["02FDECC931B5E8EF"]
-			description: ["With &5GregTech&r, you get access to various &6filters&r that help you ease into &aautomation&r. All of them are compatible with different &dCovers&r, which you'll learn more about during the &7LV&r Chapter.\\n\\nHere, we're introducing two more specific filters that you might find &bhandy&r in certain situations.\\n\\nTo use a filter, simply apply it as a &dCover&r on any &5GT Machine&r or &6pipe&r."]
-			icon: "gtceu:item_filter"
-			id: "74AE7DB845B88CF3"
-			subtitle: "filters"
-			tasks: [{
-				id: "268110D7B7999A7B"
-				title: "Filters"
-				type: "checkmark"
-			}]
-			x: 11.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["02FDECC931B5E8EF"]
-			description: ["You may have realized that most &eMultiblocks&r require a &6Maintenance Hatch&r. Until &6HV&r, where you can get an &aAutomatic Maintenance Hatch&r, you can use this item to fix the hatch without needing to use all of your maintenance tools.\\n\\nIt can be really useful if you don't want to invest in an &aAuto Maintenance Hatch&r yet, or if you're simply &cnot there yet&r."]
-			id: "179E89C50E900DC0"
-			tasks: [{
-				id: "7D2E6F5F843864DE"
-				item: "gtceu:duct_tape"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["2D2CB8104E40E808"]
-			description: ["{quests.tfg_tips.nano_saber.desc}"]
-			id: "7A4C6930EF68646E"
-			subtitle: "{quests.tfg_tips.nano_saber.subtitle}"
-			tasks: [{
-				id: "41A7611367BBD2A7"
-				item: "gtceu:nano_saber"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.nano_saber.title}"
-			x: 12.0d
-			y: 7.0d
-		}
-		{
-			dependencies: ["2D2CB8104E40E808"]
-			description: ["{quests.tfg_tips.magnets.desc}"]
-			id: "49D2EFFFC15563F9"
-			subtitle: "{quests.tfg_tips.magnets.subtitle}"
-			tasks: [{
-				id: "6290D18A38A1583C"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:lv_item_magnet)item(gtceu:hv_item_magnet))"
-					}
-				}
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.magnets.title}"
-			x: 12.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["02FDECC931B5E8EF"]
-			description: ["&bThe Terminal&r has one main purpose, and &awe highly encourage you to craft it&r.\\n\\nBuilding all these &eMultiblocks&r can be a bit &cintimidating&r, right? Well, here's a tip: use &dShift + Right-Click&r on any &6Multiblock Controller&r to &aautomatically assemble the entire structure&r!\\n\\nYou might need to &emove around some buses and hatches&r to suit your setup, but overall, this feature will save you a &alot of time&r."]
-			id: "2F6C9A987865B966"
-			tasks: [{
-				id: "6A86F6C3566828BF"
-				item: "gtceu:terminal"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["57FE828BAA8F6276"]
-			description: ["The &6Face Mask&r will protect you from &cinhaling dangerous dust&r. It’s quite &aeasy to craft&r and should prevent issues when working with &5arsenic&r."]
-			id: "361AC06D62D9BCCF"
-			tasks: [{
-				id: "7AC3F8AF754C76E2"
-				item: {
-					Count: 1
-					id: "gtceu:face_mask"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 11.0d
-			y: 11.5d
-		}
-		{
-			dependencies: ["02FDECC931B5E8EF"]
-			description: ["When you try to &aparallelize your setup&r with more machines, it can be a &cbother&r to set all the &einputs&r and &eoutputs&r for each one. Yeah, we're thinking of you, &dSuper Chests&r and &dTanks&r.\\n\\nIf you ever find yourself needing this &blittle tool&r, &adon't hesitate to use it&r."]
-			id: "7D5E9CFBE5990DFF"
-			tasks: [{
-				id: "39E0696844506874"
-				item: "gtceu:machine_memory_card"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["7516BF9C12015DF3"]
-			id: "103025F1C35CF578"
-			tasks: [{
-				id: "05DA89E5871EE93D"
-				item: {
-					Count: 1
-					id: "gtceu:nanomuscle_helmet"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 6.5d
-			y: 10.5d
-		}
-		{
-			dependencies: ["7516BF9C12015DF3"]
-			id: "38FF003C9349C0F2"
-			tasks: [{
-				id: "78123F2C1E8B08F5"
-				item: "gtceu:nanomuscle_chestplate"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 11.5d
-		}
-		{
-			dependencies: ["7516BF9C12015DF3"]
-			id: "4497F39E06A14406"
-			tasks: [{
-				id: "430BB68AD2F334C3"
-				item: "gtceu:nanomuscle_leggings"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 12.5d
-		}
-		{
-			dependencies: ["7516BF9C12015DF3"]
-			id: "61E1244FF797F11F"
-			tasks: [{
-				id: "1C5E79A87E343C64"
-				item: "gtceu:nanomuscle_boots"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 13.5d
-		}
-		{
-			dependencies: ["38FF003C9349C0F2"]
-			id: "4C37DAD7C66523CC"
-			tasks: [{
-				id: "05BCE3FC68B3C66E"
-				item: {
-					Count: 1
-					id: "gtceu:avanced_nanomuscle_chestplate"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 5.5d
-			y: 11.5d
-		}
-		{
-			dependencies: ["7516BF9C12015DF3"]
-			id: "20565B5D56786A6E"
-			tasks: [{
-				id: "51DBD71B96BB2673"
-				item: {
-					Count: 1
-					id: "gtceu:quarktech_helmet"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 8.5d
-			y: 10.5d
-		}
-		{
-			dependencies: ["7516BF9C12015DF3"]
-			id: "4D5B75F5270CCBD3"
-			tasks: [{
-				id: "6624FAF8B9BBD4CA"
-				item: "gtceu:quarktech_chestplate"
-				type: "item"
-			}]
-			x: 8.5d
-			y: 11.5d
-		}
-		{
-			dependencies: ["7516BF9C12015DF3"]
-			id: "31CE775295A1BBF1"
-			tasks: [{
-				id: "6EAB7217D35DDF42"
-				item: "gtceu:quarktech_leggings"
-				type: "item"
-			}]
-			x: 8.5d
-			y: 12.5d
-		}
-		{
-			dependencies: ["7516BF9C12015DF3"]
-			id: "2613FA0502BB5F12"
-			tasks: [{
-				id: "6A740FDB1D788187"
-				item: "gtceu:quarktech_boots"
-				type: "item"
-			}]
-			x: 8.5d
-			y: 13.5d
-		}
-		{
-			dependencies: ["4D5B75F5270CCBD3"]
-			id: "035B0FDD90E51C0C"
-			tasks: [{
-				id: "154A01EC8F888EDB"
-				item: {
-					Count: 1
-					id: "gtceu:advanced_quarktech_chestplate"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 9.5d
-			y: 11.5d
-		}
-		{
-			dependencies: ["2D2CB8104E40E808"]
-			description: ["{quests.tfg_tips.gt_tools.desc}"]
-			id: "2CA86664C6E0C888"
-			subtitle: "{quests.tfg_tips.gt_tools.subtitle}"
-			tasks: [{
-				id: "153D23778A26C74F"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:lv_power_unit)item(gtceu:mv_power_unit)item(gtceu:hv_power_unit)item(gtceu:ev_power_unit)item(gtceu:iv_power_unit))"
-					}
-				}
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.gt_tools.title}"
-			x: 12.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["02FDECC931B5E8EF"]
-			description: ["As with any good tech mod, &5GregTech&r comes with a wide variety of &6tools&r you can use. To operate them, you'll need to &acharge them with energy&r — and there are several ways to do that: place the tool in a &6Battery Buffer&r, in an &denergy slot&r of a machine, or even better, use a &eTurbo Charger&r.\\n\\nJust remember: you can only charge an item using a power source of &7equal&r or &ahigher tier&r. &cLower-tier sources&r won’t work on higher-tier tools — but don’t worry, &cnothing should explode&r. Probably."]
-			icon: {
-				Count: 1
-				id: "gtceu:iv_copper_drill"
-				tag: {
-					Charge: 2147483647L
-					DisallowContainerItem: 0b
-					GT.Behaviours: {
-						AoEColumn: 4
-						AoELayer: 8
-						AoERow: 4
-						MaxAoEColumn: 4
-						MaxAoELayer: 8
-						MaxAoERow: 4
-						TorchPlacing: 1b
-					}
-					GT.Tool: {
-						Damage: 0
-						HarvestLevel: 2
-						MaxDamage: 5543
-						ToolSpeed: 6.0f
-					}
-					HideFlags: 2
-					MaxCharge: 2147483647L
-				}
-			}
-			id: "2D2CB8104E40E808"
-			tasks: [
-				{
-					id: "5DA224C235E227E3"
-					title: "GT Tool"
-					type: "checkmark"
-				}
-				{
-					id: "5B0BF3A94CA0D8A9"
-					item: "gtceu:lv_charger_4x"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 11.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["02FDECC931B5E8EF"]
-			description: ["With &5GregTech&r comes its own line of armor. Sure, it was cool to wear &7metal plates&r, but now that you're an &bindustrial maniac&r, maybe it's time to check out some &atechnological armor&r.\\n\\n&5GregTech&r provides two models. The first one becomes available around &6HV&r and offers better protection than anything you've worn before. It's equipped with &estrong insulation&r to withstand Earth's harsh climate, and it may even be upgraded with a &dJetpack&r.\\n\\nThe second model won't be available until much later — around &1IV&r and &dLuV&r. This one will allow you to &9breathe in space&r using &3oxygen&r."]
-			icon: "gtceu:advanced_integrated_circuit"
-			id: "7516BF9C12015DF3"
-			tasks: [{
-				id: "666B73CFDEA434F9"
-				title: "Armor"
-				type: "checkmark"
-			}]
-			x: 7.5d
-			y: 10.5d
-		}
-		{
-			dependencies: ["02FDECC931B5E8EF"]
-			description: ["With the new version of &5Gregtech&r, a &chazard system&r has been introduced. By holding &dShift&r while hovering over &cHazardous Materials&r, you can see how they might affect you.\\n\\nWe strongly advise using proper &6protective equipment&r to keep your &corgans intact&r."]
-			icon: "gtceu:generic_hazard_sign_block"
-			id: "57FE828BAA8F6276"
-			tasks: [{
-				id: "2BB4EAF68B305732"
-				title: "Hazard"
-				type: "checkmark"
-			}]
-			x: 11.0d
-			y: 10.5d
-		}
-		{
-			dependencies: ["57FE828BAA8F6276"]
-			description: ["The &6Gloves&r will obviously protect you from &cskin contact hazards&r. You have two ways to make them: a &7longer and more involved path&r through &2TerrafirmaCraft&r, or a much &aeasier method&r using the &6High Pressure Steam Alloy Smelter&r."]
-			id: "3DB4AD491EF28CBE"
-			tasks: [{
-				id: "32F0E30B11FE80E4"
-				item: {
-					Count: 1
-					id: "gtceu:rubber_gloves"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 12.0d
-			y: 10.5d
-		}
-		{
-			dependencies: ["57FE828BAA8F6276"]
-			description: ["The &6Hazardous Materials Suit&r is the best way to protect yourself from &cany kind of harm&r. You’ll be able to craft it once you reach &bMV&r, and &ayou should definitely take the time to do so&r."]
-			id: "784A0743B257EAEB"
-			tasks: [
-				{
-					id: "2FD004A7EDFCB2E0"
-					item: {
-						Count: 1
-						id: "gtceu:hazmat_headpiece"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "49B2D90D24684C1A"
-					item: {
-						Count: 1
-						id: "gtceu:hazmat_chestpiece"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "58446E22E13A04F0"
-					item: {
-						Count: 1
-						id: "gtceu:hazmat_leggings"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "36AF158E546D9EC8"
-					item: {
-						Count: 1
-						id: "gtceu:hazmat_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			x: 12.0d
-			y: 11.5d
-		}
-		{
-			dependencies: ["47409DED94FCC2BC"]
-			description: ["{quests.tfg_tips.ev_upgrades.desc}"]
-			id: "3317B9525E02F617"
-			subtitle: "{quests.tfg_tips.ev_upgrades.subtitle}"
-			tasks: [{
-				id: "2224FC4D297B983F"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(tfg:ev_aircraft_engine)item(tfg:titanium_plated_airplane_propeller)item(tfg:titanium_landing_gear)item(tfg:titanium_hull_reinforcement))"
-					}
-				}
-				title: "{quests.tfg_tips.ev_upgrades.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.ev_upgrades.title}"
-			x: -6.0d
-			y: -15.0d
-		}
-		{
-			dependencies: ["05528D09F7EE6E33"]
-			description: ["{quests.tfg_tips.equines.desc}"]
-			id: "1594C2564FC7982D"
-			subtitle: "{quests.tfg_tips.equines.subtitle}"
-			tasks: [
-				{
-					icon: {
-						Count: 1
-						id: "ftbquests:custom_icon"
-						tag: {
-							Icon: "ftbchunks:textures/faces/minecraft/horse.png"
-						}
-					}
-					id: "39B185B16CC5E612"
-					observe_type: 6
-					timer: 0L
-					title: "{quests.tasktype.lookat} #tfc:horses"
-					to_observe: "#tfc:horses"
-					type: "observation"
-				}
-				{
-					id: "1B207BDB3745F667"
-					item: "minecraft:saddle"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.equines.title}"
-			x: -8.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["60497014785301EB"]
-			description: ["{quests.tfg_tips.astikorcarts.desc}"]
-			icon: "tfcastikorcarts:wheel/ash"
-			id: "05528D09F7EE6E33"
-			subtitle: "{quests.tfg_tips.astikorcarts.subtitle}"
-			tasks: [{
-				id: "7D268BC46A5F6014"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
-			}]
-			title: "{quests.tfg_tips.astikorcarts.title}"
-			x: -6.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["05528D09F7EE6E33"]
-			description: ["{quests.tfg_tips.supply_cart.desc}"]
-			id: "6CC2DE7963434FAD"
-			subtitle: "{quests.tfg_tips.supply_cart.subtitle}"
-			tasks: [{
-				id: "2F45CE2D7364E06B"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfcastikorcarts:supply_cart)"
-					}
-				}
-				title: "{quests.tasktype.item.any} #tfcastikorcarts:supply_cart"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.supply_cart.title}"
-			x: -7.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["05528D09F7EE6E33"]
-			description: ["{quests.tfg_tips.animal_cart.desc}"]
-			id: "3C4B7CE42195A466"
-			subtitle: "{quests.tfg_tips.animal_cart.subtitle}"
-			tasks: [{
-				id: "661B1D97980E0D09"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfcastikorcarts:animal_cart)"
-					}
-				}
-				title: "{quests.tasktype.item.any} #tfcastikorcarts:animal_cart"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.animal_cart.title}"
-			x: -6.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["05528D09F7EE6E33"]
-			description: ["{quests.tfg_tips.plow.desc}"]
-			id: "68B4990C3A20E27C"
-			subtitle: "{quests.tfg_tips.plow.subtitle}"
-			tasks: [{
-				id: "579F6AF5B08FC4CC"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfcastikorcarts:plow)"
-					}
-				}
-				title: "{quests.tasktype.item.any} #tfcastikorcarts:plow"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.plow.title}"
-			x: -5.0d
-			y: -2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4A8910950F638BB5"]
@@ -5207,27 +1895,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["150B7C5CD152E1BA"]
-			description: ["{quests.tfg_tips.trowel.desc}"]
-			id: "26DFC32AD5DED4E9"
-			subtitle: "{quests.tfg_tips.trowel.subtitle}"
-			tasks: [{
-				id: "694BF83F489646D6"
-				item: {
-					Count: 1
-					id: "tfg:trowel"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.trowel.title}"
-			x: -2.5d
-			y: 6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1FC019B45383695E"]
@@ -5304,8 +1972,134 @@
 				}
 			]
 			title: "{quests.tfg_tips.bacon.title}"
-			x: 4.75d
-			y: -12.5d
+			x: 3.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["13F7066858E923FF"]
+			description: ["{quests.tfg_tips.lunchbox.desc}"]
+			icon: {
+				Count: 1
+				id: "tfclunchbox:lunchbox"
+				tag: {
+					SelectedSlot: 0
+				}
+			}
+			id: "6C18E8F79A841620"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{quests.tfg_tips.lunchbox.subtitle}"
+			tasks: [
+				{
+					id: "33971FCF02C81741"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfclunchbox:lunchbox)item(tfclunchbox:cooling_lunchbox)item(tfclunchbox:electric_lunchbox))"
+						}
+					}
+					title: "{quests.tfg_tips.lunchbox.task.1}"
+					type: "item"
+				}
+				{
+					id: "134E8B8345E6DEE2"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfclunchbox:ice)"
+						}
+					}
+					optional_task: true
+					title: "{quests.tfg_tips.lunchbox.task.2}"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "56EF08B517ECA2B2"
+					item: {
+						Count: 1
+						id: "gtceu:fluid_cell"
+						tag: {
+							Fluid: {
+								Amount: 1000
+								FluidName: "gtceu:ice"
+							}
+						}
+					}
+					match_nbt: false
+					optional_task: true
+					title: "{quests.tfg_tips.lunchbox.task.3}"
+					type: "item"
+					weak_nbt_match: true
+				}
+			]
+			title: "{quests.tfg_tips.lunchbox.title}"
+			x: 8.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["13F7066858E923FF"]
+			description: ["{quests.tfg_tips.tools_tips.cryodesiccation.desc}"]
+			icon: "tfg:dry_ice"
+			id: "10F82C3E9AE13BE3"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{quests.tfg_tips.tools_tips.cryodesiccation.subtitle}"
+			tasks: [
+				{
+					id: "0D3A0F0019FB98FC"
+					item: "tfg:dry_ice"
+					type: "item"
+				}
+				{
+					id: "41436C2AE5AB2856"
+					item: "tfg:foil_pack"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.tools_tips.cryodesiccation.title}"
+			x: 3.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["1766C916084261AA"]
+			description: ["{quests.tfg_tips.phantom_silk.desc}"]
+			id: "2D973C6DBC873824"
+			subtitle: "{quests.tfg_tips.phantom_silk.subtitle}"
+			tasks: [{
+				id: "06ACBFC9D58340C0"
+				item: "tfg:phantom_silk"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.phantom_silk.title}"
+			x: 1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["07FBA022050DA24A"]
+			description: ["{quests.tfg_tips.greenhouse_automation.desc}"]
+			id: "30DD0DDF86C96926"
+			optional: true
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{quests.tfg_tips.greenhouse_automation.subtitle}"
+			tasks: [
+				{
+					id: "7C98C30FA74909A5"
+					item: "firmalife:picker"
+					type: "item"
+				}
+				{
+					id: "169EDE2968D7773A"
+					item: "firmalife:sweeper"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.greenhouse_automation.title}"
+			x: 0.0d
+			y: -10.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]

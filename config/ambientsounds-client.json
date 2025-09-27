@@ -17,7 +17,8 @@
     "nether": 1,
     "surface": 1,
     "twilightforest": 1,
-    "void": 1
+    "void": 1,
+    "ad_astra": 1
   },
   "regions": {
     "abyssalcraft_dark": {
@@ -218,5 +219,12 @@
   },
   "fade-volume": 0.005,
   "fade-pitch": 0.005,
-  "silent-dimensions": []
+  "silent-dimensions": [
+    "ad_astra:earth_orbit",
+    "ad_astra:moon",
+    "ad_astra:moon_orbit",
+    "ad_astra:venus_orbit",
+    "ad_astra:mars_orbit",
+    "ad_astra:mercury_orbit"
+  ]
 }

@@ -1,0 +1,19 @@
+{
+	"feature": "tfg:moon/surface/warped_sprouts_patch",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 7
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

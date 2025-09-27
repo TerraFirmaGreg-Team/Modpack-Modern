@@ -1,3 +1,5 @@
+"use strict";
+
 const registerCreatedecoRecipes = (event) => {
 
 	//#region Item Replacements
@@ -47,6 +49,8 @@ const registerCreatedecoRecipes = (event) => {
 	event.remove({ id: 'createdeco:industrial_iron_bars' })
 	event.remove({ id: 'createdeco:zinc_bars_overlay' })
 	event.remove({ id: 'createdeco:zinc_bars' })
+	event.remove({ id: 'createdeco:industrial_iron_block' })
+	event.remove({ id: 'createdeco:netherite_ingot' })
 	event.remove({ id: 'gtceu:assembler/bricks' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/tin_alloy' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/brass' })
@@ -54,6 +58,12 @@ const registerCreatedecoRecipes = (event) => {
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/copper' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/steel' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/zinc' })
+	event.remove({ id: 'createdeco:andesite_sheet_metal' })
+	event.remove({ id: 'createdeco:brass_sheet_metal' })
+	event.remove({ id: 'createdeco:iron_sheet_metal' })
+	event.remove({ id: 'createdeco:copper_sheet_metal' })
+	event.remove({ id: 'createdeco:industrial_iron_sheet_metal' })
+	event.remove({ id: 'createdeco:zinc_sheet_metal' })
 	//#endregion
 
 	//#region Lamp Recipes
@@ -68,17 +78,17 @@ const registerCreatedecoRecipes = (event) => {
 
 	function lampRecipe(output, lampType, lampColor) {
 
-		const replacementLampType = lampType;
-		if (lampType == 'industrial_iron') {
+		let replacementLampType = lampType;
+		if (lampType === 'industrial_iron') {
 			replacementLampType = 'steel';
 		}
-		if (lampType == 'andesite') {
+		if (lampType === 'andesite') {
 			replacementLampType = 'wrought_iron';
 		}
 
 		let ingredients = {
 			T: `minecraft:glowstone`,
-			N: `#forge:nuggets/${replacementLampType}`,
+			N: `#forge:bolts/${replacementLampType}`,
 			P: `#forge:plates/${replacementLampType}`,
 			D: null,
 			X: null
@@ -96,15 +106,15 @@ const registerCreatedecoRecipes = (event) => {
 		}
 
 		if (lampType === 'iron') {
-			ingredients.N = '#forge:nuggets/wrought_iron';
+			ingredients.N = '#forge:bolts/wrought_iron';
 			ingredients.P = '#forge:plates/wrought_iron';
 		}
 		if (lampType === 'andesite') {
-			ingredients.N = '#forge:nuggets/tin_alloy';
+			ingredients.N = '#forge:bolts/tin_alloy';
 			ingredients.P = '#forge:plates/tin_alloy';
 		}
 		if (lampType === 'industrial_iron') {
-			ingredients.N = '#forge:nuggets/steel';
+			ingredients.N = '#forge:bolts/steel';
 			ingredients.P = '#forge:plates/steel';
 		}
 
@@ -161,6 +171,7 @@ const registerCreatedecoRecipes = (event) => {
 			.itemInputs('5x minecraft:brick', powder)
 			.inputFluids(Fluid.of('gtceu:concrete', 144))
 			.itemOutputs(`4x createdeco:${type}_bricks`)
+			.circuit(3)
 			.duration(50)
 			.EUt(7)
 	});
@@ -173,6 +184,46 @@ const registerCreatedecoRecipes = (event) => {
 		event.replaceInput({ mod: "createdeco" }, `minecraft:${color}_dye`, `#forge:dyes/${color}`);
 	});
 	//#endregion
+
+	event.stonecutting('4x createdeco:andesite_mesh_fence', '#forge:ingots/tin_alloy')
+	event.stonecutting('4x createdeco:andesite_catwalk', '#forge:ingots/tin_alloy')
+	event.stonecutting('2x createdeco:andesite_catwalk_stairs', '#forge:ingots/tin_alloy')
+	event.stonecutting('8x createdeco:andesite_catwalk_railing', '#forge:ingots/tin_alloy')
+	event.stonecutting('4x createdeco:andesite_facade', '#forge:ingots/tin_alloy')
+	event.stonecutting('3x createdeco:andesite_support_wedge', '#forge:ingots/tin_alloy')
+	event.stonecutting('4x createdeco:iron_mesh_fence', '#forge:ingots/wrought_iron')
+	event.stonecutting('4x createdeco:iron_catwalk', '#forge:ingots/wrought_iron')
+	event.stonecutting('2x createdeco:iron_catwalk_stairs', '#forge:ingots/wrought_iron')
+	event.stonecutting('8x createdeco:iron_catwalk_railing', '#forge:ingots/wrought_iron')
+	event.stonecutting('4x createdeco:iron_facade', '#forge:ingots/wrought_iron')
+	event.stonecutting('3x createdeco:iron_support_wedge', '#forge:ingots/wrought_iron')
+
+	event.shaped('8x createdeco:iron_catwalk_railing', [
+		'AAA',
+		'B B',
+		'B B'
+	], {
+		A: '#forge:plates/wrought_iron',
+		B: 'tfc:metal/bars/wrought_iron'
+	}).id('createdeco:iron_catwalk_railing')
+
+	event.shaped('4x createdeco:iron_catwalk', [
+		' A ',
+		'ABA',
+		' A '
+	], {
+		A: '#forge:plates/wrought_iron',
+		B: 'tfc:metal/bars/wrought_iron'
+	}).id('createdeco:iron_catwalk')
+
+	event.shaped('2x createdeco:iron_catwalk_stairs', [
+		' A',
+		'AB'
+	], {
+		A: 'createdeco:iron_catwalk',
+		B: 'tfc:metal/bars/wrought_iron'
+	}).id('createdeco:iron_catwalk_stairs')
+	
 
 	// #region Bars + Doors
 
@@ -189,7 +240,7 @@ const registerCreatedecoRecipes = (event) => {
 		event.remove({ id: `createdeco:${bar.metal}_trapdoor` })
 		event.remove({ id: `createdeco:${bar.metal}_door` })
 
-		if (bar.metal != 'iron') {
+		if (bar.metal !== 'iron') {
 			event.remove({ type: 'minecraft:stonecutting', output: `createdeco:${bar.metal}_bars` })
 
 			event.recipes.tfc.anvil(`4x createdeco:${bar.metal}_bars`, `#forge:ingots/${bar.material}`, ['shrink_last', 'punch_second_last', 'punch_third_last'])
@@ -223,6 +274,15 @@ const registerCreatedecoRecipes = (event) => {
 			.duration(100)
 			.EUt(GTValues.VA[GTValues.LV])
 			.circuit(13)
+
+		event.shaped(`4x createdeco:${bar.metal}_facade`, [
+			' A ',
+			'ABA',
+			' A '
+		], {
+			A: `#forge:rods/${bar.material}`,
+			B: `createdeco:${bar.metal}_mesh_fence`
+		}).id(`tfg:shaped/createdeco_${bar.metal}_facade`)
 	})
 
 	// #endregion
@@ -273,7 +333,7 @@ const registerCreatedecoRecipes = (event) => {
 		.duration(GTMaterials.Zinc.getMass())
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.tfc.anvil(`createdeco:andesite_trapdoor`, `#forge:ingots/iron_alloy`, ['shrink_last', 'draw_second_last', 'draw_third_last'])
+	event.recipes.tfc.anvil(`createdeco:andesite_trapdoor`, `#forge:ingots/tin_alloy`, ['shrink_last', 'draw_second_last', 'draw_third_last'])
 		.tier(3).id(`createdeco:anvil/andesite_trapdoor`)
 
 	event.recipes.gtceu.alloy_smelter(`tfg:cast_tin_alloy_trapdoor`)
@@ -297,49 +357,49 @@ const registerCreatedecoRecipes = (event) => {
 
 	event.recipes.gtceu.forming_press('createdeco:gold_coin')
 		.itemInputs('#forge:nuggets/gold')
-		.notConsumable('gtceu:credit_casting_mold')
+		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('4x createdeco:gold_coin')
 		.duration(50)
 		.EUt(16)
 
 	event.recipes.gtceu.forming_press('createdeco:netherite_coin')
 		.itemInputs('#forge:nuggets/blue_steel')
-		.notConsumable('gtceu:credit_casting_mold')
+		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('4x createdeco:netherite_coin')
 		.duration(50)
 		.EUt(16)
 
 	event.recipes.gtceu.forming_press('createdeco:brass_coin')
 		.itemInputs('#forge:nuggets/brass')
-		.notConsumable('gtceu:credit_casting_mold')
+		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('4x createdeco:brass_coin')
 		.duration(50)
 		.EUt(16)
 
 	event.recipes.gtceu.forming_press('createdeco:iron_coin')
 		.itemInputs('#forge:nuggets/wrought_iron')
-		.notConsumable('gtceu:credit_casting_mold')
+		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('4x createdeco:iron_coin')
 		.duration(50)
 		.EUt(16)
 
 	event.recipes.gtceu.forming_press('createdeco:copper_coin')
 		.itemInputs('#forge:nuggets/copper')
-		.notConsumable('gtceu:credit_casting_mold')
+		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('4x createdeco:copper_coin')
 		.duration(50)
 		.EUt(16)
 
 	event.recipes.gtceu.forming_press('createdeco:industrial_iron_coin')
 		.itemInputs('#forge:nuggets/steel')
-		.notConsumable('gtceu:credit_casting_mold')
+		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('createdeco:industrial_iron_coin')
 		.duration(50)
 		.EUt(16)
 
 	event.recipes.gtceu.forming_press('createdeco:zinc_coin')
 		.itemInputs('#forge:nuggets/zinc')
-		.notConsumable('gtceu:credit_casting_mold')
+		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('createdeco:zinc_coin')
 		.duration(50)
 		.EUt(16)
@@ -381,6 +441,79 @@ const registerCreatedecoRecipes = (event) => {
 			.duration(40)
 			.EUt(7)
 	})
+
+	// #endregion
+
+	// #region Ladders
+
+	event.shaped('6x createdeco:iron_ladder', [
+		'A A',
+		'AAA',
+		'A A'
+	], {
+		A: '#forge:rods/wrought_iron'
+	}).id('tfg:createdeco/shaped/iron_ladder')
+
+	event.stonecutting('2x createdeco:iron_ladder', '#forge:ingots/wrought_iron')
+
+	event.shaped('6x createdeco:zinc_ladder', [
+		'A A',
+		'AAA',
+		'A A'
+	], {
+		A: '#forge:rods/zinc'
+	}).id('tfg:createdeco/shaped/zinc_ladder')
+
+	event.shaped('6x createdeco:industrial_iron_ladder', [
+		'A A',
+		'AAA',
+		'A A'
+	], {
+		A: '#forge:rods/steel'
+	}).id('tfg:createdeco/shaped/industrial_iron_ladder')
+
+	// #endregion
+
+	// #region Shipping Containers
+
+	global.MINECRAFT_DYE_NAMES.forEach(color => {
+		event.remove({ id: `createdeco:${color}_shipping_container_from_dyeing_vaults` })
+
+		event.recipes.gtceu.chemical_bath(`createdeco:${color}_shipping_container`)
+			.itemInputs('create:item_vault')
+			.inputFluids(Fluid.of(`tfc:${color}_dye`, 144))
+			.itemOutputs(`createdeco:${color}_shipping_container`)
+			.duration(100)
+			.EUt(16)
+			.category(GTRecipeCategories.CHEM_DYES);
+
+		event.recipes.gtceu.chemical_bath(`createdeco:${color}_shipping_container_recolor`)
+			.itemInputs('#createdeco:shipping_containers')
+			.inputFluids(Fluid.of(`tfc:${color}_dye`, 144))
+			.itemOutputs(`createdeco:${color}_shipping_container`)
+			.duration(100)
+			.EUt(16)
+			.category(GTRecipeCategories.CHEM_DYES);
+	})
+
+	event.recipes.gtceu.chemical_bath(`createdeco:bleach_shipping_container`)
+		.itemInputs('#createdeco:shipping_containers')
+		.inputFluids(Fluid.of('gtceu:chlorine', 144))
+		.itemOutputs('create:item_vault')
+		.duration(100)
+		.EUt(16)
+		.category(GTRecipeCategories.CHEM_DYES);
+
+	// #endregion
+
+	// #region Sheet Metal
+
+	event.stonecutting('4x createdeco:andesite_sheet_metal', '#forge:plates/tin_alloy')
+	event.stonecutting('4x createdeco:brass_sheet_metal', '#forge:plates/brass')
+	event.stonecutting('4x createdeco:iron_sheet_metal', '#forge:plates/wrought_iron')
+	event.stonecutting('4x createdeco:copper_sheet_metal', '#forge:plates/copper')
+	event.stonecutting('4x createdeco:industrial_iron_sheet_metal', '#forge:plates/steel')
+	event.stonecutting('4x createdeco:zinc_sheet_metal', '#forge:plates/zinc')
 
 	// #endregion
 };

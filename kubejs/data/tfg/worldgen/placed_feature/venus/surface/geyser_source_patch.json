@@ -1,0 +1,39 @@
+{
+  "feature": "tfg:venus/surface/geyser_source_patch",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 20
+    },
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 380
+				},
+				"min_inclusive": {
+					"above_bottom": 123
+				}
+			}
+		},
+		{
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:has_sturdy_face",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "direction": "down"
+          }
+        },
+		{
+			"type": "minecraft:biome"
+		}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+	"type": "tfc:multiple",
+	"config": {
+		"features": [
+			"tfg:mars/tree/crimson_amber",
+			"tfg:mars/tree/crimson_rusticus",
+			"tfg:mars/tree/crimson_sangnum"
+		]
+	}
+}

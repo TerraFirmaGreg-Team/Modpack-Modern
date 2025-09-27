@@ -1,0 +1,7 @@
+{
+	"type": "tfc:if_then",
+	"config": {
+		"if": "tfg:earth/rose_quartz/rose_quartz_geode",
+		"then": "tfg:earth/rose_quartz/rose_quartz_decoration"
+	}
+}

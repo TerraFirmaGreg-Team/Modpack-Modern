@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=x": { "model": "betterend:block/amaranita_stem", "x": 90, "y": 90 },
+    "axis=y": { "model": "betterend:block/amaranita_stem" },
+    "axis=z": { "model": "betterend:block/amaranita_stem", "x": 90 }
+  }
+}

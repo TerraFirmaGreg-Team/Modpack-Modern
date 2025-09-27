@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "iv__insane_voltage"
 	group: "21D975CEBDE06BA9"
-	icon: "gtceu:iv_electric_motor"
+	icon: "tfg:iv_universal_circuit"
 	id: "32EF20533F323E02"
 	order_index: 1
 	quest_links: [{
@@ -285,10 +285,7 @@
 			y: 3.75d
 		}
 		{
-			dependencies: [
-				"30A6EDDF25A5E5F8"
-				"14D277A164202FF8"
-			]
+			dependencies: ["30A6EDDF25A5E5F8"]
 			description: [
 				"The &aLarge Tungstensteel Boiler&r is the final Steam Boiler. It's even more efficient than the previous ones, and produces more steam."
 				""
@@ -471,7 +468,6 @@
 			dependencies: [
 				"7CC79617A4965F25"
 				"30A6EDDF25A5E5F8"
-				"14D277A164202FF8"
 			]
 			description: [
 				"Better Ore Processing for &6chanced Byproducts&r, only at the cost of this &3Macerator&r! A must have."

@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerFirmaCivRecipes = (event) => {
 
@@ -61,7 +62,7 @@ const registerFirmaCivRecipes = (event) => {
 	//#region Barometer
 	event.recipes.gtceu.assembler('tfg:firmaciv/barometer')
 		.itemInputs('#forge:plates/brass', '2x #forge:small_gears/brass', '#forge:glass_panes')
-		.inputFluids(Fluid.of('minecraft:water', 1000))
+		.inputFluids("#tfg:clean_water 1000")
 		.circuit(12)
 		.itemOutputs('firmaciv:barometer')
 		.duration(75)
@@ -103,6 +104,8 @@ const registerFirmaCivRecipes = (event) => {
 	//#endregion
 
 	// #region More rope
+	event.replaceInput({ output: 'firmaciv:rope_coil'}, 'tfc:jute_fiber', '#tfg:burlap_fiber')
+
 	event.shaped('firmaciv:rope_coil', [
 		'A ',
 		'AB',

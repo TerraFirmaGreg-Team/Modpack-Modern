@@ -1,0 +1,19 @@
+{
+	"feature": "tfg:moon/surface/birt_dwelling",
+	"placement": [
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 8
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING"
+		}
+	]
+}

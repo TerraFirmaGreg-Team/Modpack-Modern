@@ -1,0 +1,49 @@
+{
+	"feature": "tfg:unused/spike/rhyolite",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 256
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 95
+				},
+				"min_inclusive": {
+					"above_bottom": 15
+				}
+			}
+		},
+		{
+			"type": "minecraft:environment_scan",
+			"allowed_search_condition": {
+				"type": "minecraft:matching_blocks",
+				"blocks": "minecraft:air"
+			},
+			"direction_of_search": "down",
+			"max_steps": 32,
+			"target_condition": {
+				"type": "minecraft:solid"
+			}
+		},
+		{
+			"type": "tfc:underground"
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_blocks",
+				"blocks": [
+					"tfc:rock/raw/rhyolite",
+					"tfc:rock/hardened/rhyolite"
+				]
+			}
+		}
+	]
+}

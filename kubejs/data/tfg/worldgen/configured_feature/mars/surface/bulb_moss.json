@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "tfg:attached_decorative_plant",
+				"config": {
+					"block": "betterend:bulb_moss",
+					"heightRange": 6
+				}
+			},
+			"placement": []
+		},
+		"tries": 24,
+		"xz_spread": 5,
+		"y_spread": 0
+	}
+}

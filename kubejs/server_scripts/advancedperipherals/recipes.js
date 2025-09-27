@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerAdvancedPeripheralsRecipes = (event) => {
 
@@ -47,14 +48,6 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.duration(1200)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	//Redstone Integrator
-	event.recipes.gtceu.assembler('advancedperipherals:assembler/redstone_integrator')
-		.itemInputs('1x computercraft:wired_modem', '1x gtceu:mv_machine_casing', '10x vintageimprovements:redstone_module', '1x ae2:redstone_card', '2x gtceu:transistor', '1x gtceu:mv_emitter')
-		.circuit(4)
-		.itemOutputs('advancedperipherals:redstone_integrator')
-		.duration(1200)
-		.EUt(GTValues.VA[GTValues.MV])
-
 	//Block Reader
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/block_reader')
 		.itemInputs('1x computercraft:wired_modem', '1x gtceu:mv_machine_casing', '1x gtceu:lv_scanner', '1x gtceu:mv_sensor', '1x gtceu:mv_emitter', '1x #forge:lenses/amethyst')
@@ -76,14 +69,6 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.itemInputs('1x computercraft:wired_modem', '1x gtceu:hv_machine_casing', '1x computercraft:disk_drive', '1x gtceu:item_smart_filter', '16x gtceu:ram_chip', '1x #gtceu:circuits/ev')
 		.circuit(4)
 		.itemOutputs('advancedperipherals:nbt_storage')
-		.duration(1200)
-		.EUt(GTValues.VA[GTValues.HV])
-
-	//Chunk Controller
-	event.recipes.gtceu.assembler('advancedperipherals:assembler/chunk_controller')
-		.itemInputs('1x gtceu:hv_field_generator', '4x gtceu:hv_emitter', '4x gtceu:hv_sensor', '64x gtceu:ram_chip', '1x #forge:exquisite_gems/red_garnet', ChemicalHelper.get(TagPrefix.plate, GTMaterials.StainlessSteel, 4))
-		.circuit(4)
-		.itemOutputs('advancedperipherals:chunk_controller')
 		.duration(1200)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -110,14 +95,6 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.itemOutputs('advancedperipherals:weak_automata_core')
 		.duration(2400)
 		.EUt(GTValues.VA[GTValues.HV])
-
-	//Overpowered End Automata Core
-	event.recipes.gtceu.assembler('advancedperipherals:assembler/overpowered_end_automata_core')
-		.itemInputs('advancedperipherals:end_automata_core', ChemicalHelper.get(TagPrefix.gear, GTMaterials.Osmiridium, 4), '8x #gtceu:circuits/zpm')
-		.circuit(4)
-		.itemOutputs('advancedperipherals:overpowered_end_automata_core')
-		.duration(2400)
-		.EUt(GTValues.VA[GTValues.ZPM])
 
 	//Overpowered Husbandry Automata Core
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/overpowered_husbandry_automata_core')

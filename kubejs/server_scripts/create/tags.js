@@ -1,4 +1,5 @@
 // priority: 0
+"use strict";
 
 const registerCreateItemTags = (event) => {
 
@@ -24,7 +25,7 @@ const registerCreateItemTags = (event) => {
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		event.add('tfg:colored_valve_handles', `create:${dye}_valve_handle`)
 
-		if (dye != 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
+		if (dye !== 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
 	})
 
 	event.add('minecraft:trimmable_armor', 'create:copper_diving_helmet')
@@ -48,16 +49,28 @@ const registerCreateItemTags = (event) => {
 	event.add('create:blaze_burner_fuel/special', "gtceu:coke_gem")
 	event.add('create:blaze_burner_fuel/special', "beneath:cursecoal")
 
-	event.add('tfc:forge_invisible_whitelist', 'create:basin')
-
 	event.add('create:non_movable', 'gtceu:wood_crate')
 	event.add('create:non_movable', 'gtceu:bronze_crate')
+	event.add('create:non_movable', 'gtceu:black_bronze_crate')
+	event.add('create:non_movable', 'gtceu:bismuth_bronze_crate')
 	event.add('create:non_movable', 'gtceu:steel_crate')
 	event.add('create:non_movable', 'gtceu:aluminium_crate')
 	event.add('create:non_movable', 'gtceu:stainless_steel_crate')
 	event.add('create:non_movable', 'gtceu:titanium_crate')
 	event.add('create:non_movable', 'gtceu:tungsten_steel_crate')
 	event.add('create:non_movable', '#create:toolboxes')
+	event.add('create:non_movable', 'gtceu:lv_super_chest')
+	event.add('create:non_movable', 'gtceu:mv_super_chest')
+	event.add('create:non_movable', 'gtceu:hv_super_chest')
+	event.add('create:non_movable', 'gtceu:ev_super_chest')
+	event.add('create:non_movable', 'tfg:spice')
+	event.add('create:non_movable', 'tfg:geyser_source')
+	event.add('create:non_movable', 'tfg:geyser_source_small')
+
+	event.add('c:hidden_from_recipe_viewers', 'create:cardboard_package_12x10')
+	event.add('c:hidden_from_recipe_viewers', 'create:cardboard_package_10x8')
+	event.add('c:hidden_from_recipe_viewers', 'create:cardboard_package_10x12')
+	event.add('c:hidden_from_recipe_viewers', 'create:cardboard_package_12x12')
 
 	event.remove('create:stone_types/deepslate', 'minecraft:deepslate')
 	event.remove('create:stone_types/dripstone', 'minecraft:dripstone_block')
@@ -75,37 +88,67 @@ const registerCreateBlockTags = (event) => {
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		event.add('tfg:colored_valve_handles', `create:${dye}_valve_handle`)
 
-		if (dye != 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
+		if (dye !== 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
 	})
 
 	// Disable bulk blasting
 	event.removeAll('create:fan_processing_catalysts/blasting')
+	event.removeAll('create:fan_processing_catalysts/haunting')
 
 	// Waters for bulk washing
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/river_water')
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/salt_water')
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/spring_water')
+	event.add('create:fan_processing_catalysts/splashing', 'tfg:semiheavy_ammoniacal_water')
 
-	// Lets the basin be put on top of a charcoal forge
-	event.add('tfc:forge_invisible_whitelist', 'create:basin')
+	event.add('create:chest_mounted_storage', '#forge:chests/wooden')
+	event.add('create:chest_mounted_storage', 'framedblocks:framed_chest')
+
+	event.removeAll('create:passive_boiler_heaters')
+
+	event.remove('create:windmill_sails', 'create:sail_frame')
+	
+	event.add('create:non_movable', 'gtceu:wood_crate')
+	event.add('create:non_movable', 'gtceu:bronze_crate')
+	event.add('create:non_movable', 'gtceu:black_bronze_crate')
+	event.add('create:non_movable', 'gtceu:bismuth_bronze_crate')
+	event.add('create:non_movable', 'gtceu:steel_crate')
+	event.add('create:non_movable', 'gtceu:aluminium_crate')
+	event.add('create:non_movable', 'gtceu:stainless_steel_crate')
+	event.add('create:non_movable', 'gtceu:titanium_crate')
+	event.add('create:non_movable', 'gtceu:tungsten_steel_crate')
+	event.add('create:non_movable', '#create:toolboxes')
+	event.add('create:non_movable', 'gtceu:lv_super_chest')
+	event.add('create:non_movable', 'gtceu:mv_super_chest')
+	event.add('create:non_movable', 'gtceu:hv_super_chest')
+	event.add('create:non_movable', 'gtceu:ev_super_chest')
+	event.add('create:non_movable', 'tfg:spice')
+	event.add('create:non_movable', 'tfg:geyser_source')
+	event.add('create:non_movable', 'tfg:geyser_source_small')
 }
 
 
 const registerCreateFluidTags = (event) => {
 
-	// Делаем воду из TFC бесконечной для помпы Create
+	//Hose Pulley Infinites
 	event.add('create:bottomless/allow', 'tfc:fresh_water')
 	event.add('create:bottomless/allow', 'tfc:salt_water')
+	event.add('create:bottomless/allow', 'tfg:semiheavy_ammoniacal_water')
+	event.remove('create:bottomless/allow', 'minecraft:lava')
 
 	// Добавляем тег для скрытия в EMI
 	event.add('c:hidden_from_recipe_viewers', 'create:chocolate')
 	event.add('c:hidden_from_recipe_viewers', 'create:honey')
+	event.add('c:hidden_from_recipe_viewers', 'create:builders_tea')
+	event.add('c:hidden_from_recipe_viewers', 'create:uncraftable_potion')
 
 	// Disable bulk blasting
 	event.removeAll('create:fan_processing_catalysts/blasting')
+	event.removeAll('create:fan_processing_catalysts/haunting')
 	
 	// Waters for bulk washing
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:river_water')
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:salt_water')
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:spring_water')
+	event.add('create:fan_processing_catalysts/splashing', 'tfg:semiheavy_ammoniacal_water')
 }

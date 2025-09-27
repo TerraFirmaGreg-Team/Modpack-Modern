@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:delta_feature",
+  "config": {
+    "contents": {
+      "Name": "minecraft:lava"
+    },
+		"rim": {
+			"Name": "tfc:rock/hardened/basalt"
+		},
+		"rim_size": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 2,
+				"min_inclusive": 1
+			}
+		},
+		"size": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 16,
+				"min_inclusive": 4
+			}
+		}
+  }
+}

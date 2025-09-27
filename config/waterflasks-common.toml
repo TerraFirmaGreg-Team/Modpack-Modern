@@ -1,4 +1,6 @@
 #Settings for Water Flasks
 #Allow drinking when not thirsty? Could be useful or wasteful if that's not water in there... Default False
 thirstyDrinking = false
+#Empty flask when shift-right-clicked? Generally a useful feature, but does annoy a certain streamer... Default True
+shiftClickToEmpty = true
 

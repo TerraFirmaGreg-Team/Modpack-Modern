@@ -1,0 +1,37 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "tfc:spreading_crop",
+				"config": {
+					"block": "betterend:cave_pumpkin_wild"
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:heightmap",
+					"heightmap": "OCEAN_FLOOR_WG"
+				},
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "tfc:replaceable"
+					}
+				},
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "would_survive",
+						"state": {
+							"Name": "betterend:cave_pumpkin_wild"
+						}
+					}
+				}
+			]
+		},
+		"tries": 12,
+		"xz_spread": 10,
+		"y_spread": 2
+	}
+}
