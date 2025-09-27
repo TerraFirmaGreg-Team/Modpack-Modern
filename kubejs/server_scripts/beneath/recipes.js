@@ -96,9 +96,10 @@ const registerBeneathRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.custom({
-		type: 'vintageimprovements:turning',
+		type: 'vintageimprovements:polishing',
 		ingredients: [{ item: 'beneath:wood/wood/crimson' }],
 		results: [{ item: 'beneath:wood/stripped_wood/crimson' }],
+		speed_limits: 0,
 		processingTime: 50
 	}).id(`tfg:vi/lathe/stripping_crimson_wood`)
 
@@ -126,9 +127,10 @@ const registerBeneathRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.custom({
-		type: 'vintageimprovements:turning',
+		type: 'vintageimprovements:polishing',
 		ingredients: [{ item: 'beneath:wood/wood/warped' }],
 		results: [{ item: 'beneath:wood/stripped_wood/warped' }],
+		speed_limits: 0,
 		processingTime: 50
 	}).id(`tfg:vi/lathe/stripping_warped_wood`)
 

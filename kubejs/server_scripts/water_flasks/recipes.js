@@ -80,25 +80,33 @@ const registerWaterFlasksRecipes = (event) => {
 	event.recipes.tfc.no_remainder_shaped_crafting(
 		event.shaped('waterflasks:iron_flask', [
 			'AB',
-			'CD'
+			'C '
 		], {
 			A: 'waterflasks:broken_iron_flask',
 			B: 'waterflasks:bladder',
-			C: '#forge:cloth',
-			D: '#forge:tools/knives'
+			C: '#forge:cloth'
 		})).id('tfg:shaped/repair_broken_iron')
 
 	event.remove({ id: 'waterflasks:crafting/repair_iron' })
 	event.recipes.tfc.no_remainder_shaped_crafting(
 		event.shaped('waterflasks:iron_flask', [
 			'AB',
-			'CD'
+			'C '
 		], {
 			A: 'waterflasks:iron_flask',
 			B: 'waterflasks:bladder',
-			C: '#forge:cloth',
-			D: '#forge:tools/knives'
-		})).id('tfg:shaped/repair_iron')
+			C: '#forge:cloth'
+		})).id('tfg:shaped/repair_iron_bladder')
+
+	event.recipes.tfc.no_remainder_shaped_crafting(
+		event.shaped('waterflasks:iron_flask', [
+			'AB',
+			'C '
+		], {
+			A: 'waterflasks:iron_flask',
+			B: '#forge:foils/rubber',
+			C: '#forge:cloth'
+		})).id('tfg:shaped/repair_iron_rubber')
 
 	event.remove({ id: 'waterflasks:crafting/red_steel_flask' })
 	event.shaped('waterflasks:red_steel_flask', [
@@ -112,7 +120,19 @@ const registerWaterFlasksRecipes = (event) => {
 		D: 'waterflasks:bladder',
 		E: 'waterflasks:leather_side',
 		F: 'waterflasks:unfinished_red_steel_flask'
-	}).id('tfg:shaped/red_steel_flask')
+	}).id('tfg:shaped/red_steel_flask_bladder')
+
+	event.shaped('waterflasks:red_steel_flask', [
+		' AB',
+		'CDC',
+		'DFD'
+	], {
+		A: '#forge:string',
+		B: '#forge:tools/knives',
+		C: 'tfg:phantom_silk',
+		D: '#forge:foils/rubber',
+		F: 'waterflasks:unfinished_red_steel_flask'
+	}).id('tfg:shaped/red_steel_flask_rubber')
 
 	event.recipes.gtceu.assembler('tfg:water_flasks/iron_flask')
 		.itemInputs('2x #forge:cloth', '#forge:string', '#forge:plates/wrought_iron', '3x #forge:foils/rubber')

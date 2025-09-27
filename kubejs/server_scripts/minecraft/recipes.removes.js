@@ -14,6 +14,26 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'ae2:entropy/heat/cobblestone_stone' })
 	event.remove({ id: 'gtceu:compressor/stone_from_dust' })
 	event.remove({ id: 'gtceu:rock_breaker/stone' })
+
+	event.remove({ id: 'gtceu:shaped/stone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/stone_slab_saw' })
+	
+	event.remove({ id: 'gtceu:shaped/cobblestone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/cobblestone_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/cobblestone_slab_wall' })
+
+	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_slab_wall' })
+
+	event.remove({ id: 'gtceu:shaped/red_sandstone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/red_sandstone_wall_saw' })
+	event.remove({ id: 'gtceu:shaped/red_sandstone_polish_hammer' })
+	
+	event.remove({ id: 'gtceu:shaped/smooth_red_sandstone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/smooth_red_sandstone_slab_saw' })
+
+	event.remove({ id: 'gtceu:shaped/cut_red_sandstone_slab_saw' })
 	
 	//#endregion
 
@@ -867,7 +887,7 @@ function removeMinecraftRecipes(event) {
 
 	//#endregion
 
-	event.remove({ id: 'ae2:entropy/cool/grass_block_dirt' }) // TODO: Сделать с тфк землей
+	event.remove({ id: 'ae2:entropy/cool/grass_block_dirt' })
 
 	//#region Выход: Высохшая земля
 

@@ -65,20 +65,13 @@ const registerGTCEuRecipeTypes = (event) => {
 		.setProgressBar(GuiTextures.ATOMIC_OVERLAY_1, FillDirection.DOWN_TO_UP)
 		.setSound(GTSoundEntries.MINER)
 
-	event.create('evaporation_tower')
-		.category('evaporation_tower')
-		.setEUIO('in')
-		.setMaxIOSize(0, 1, 1, 6)
-		.setProgressBar(GuiTextures.PROGRESS_BAR_DISTILLATION_TOWER, FillDirection.LEFT_TO_RIGHT)
-		.setSound(GTSoundEntries.BATH)
-
 	event.create('ostrum_harvester')
         .category('ostrum_harvester')
         .setEUIO('in')
         .setMaxIOSize(0, 1, 1, 0)
 		.setSlotOverlay(false, false, GuiTextures.EXTRACTOR_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.JET_ENGINE)
+        .setSound(GTSoundEntries.TURBINE)
 
 	event.create('moon_dust_harvester')
         .category('moon_dust_harvester')
@@ -86,7 +79,7 @@ const registerGTCEuRecipeTypes = (event) => {
         .setMaxIOSize(1, 1, 0, 0)
 		.setSlotOverlay(false, false, GuiTextures.DUST_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.JET_ENGINE)
+        .setSound(GTSoundEntries.TURBINE)
 
 	event.create('ostrum_linear_accelerator')
         .category('ostrum_linear_accelerator')

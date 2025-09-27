@@ -16,31 +16,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:infested_chiseled_stone_bricks', 
     'minecraft:infested_deepslate',
 
-    // Каменные блоки
-    'minecraft:stone_stairs', 
-    'minecraft:stone_slab', 
-    'minecraft:stone_pressure_plate', 
-    'minecraft:stone_button', 
-    'minecraft:smooth_stone', 
-    'minecraft:smooth_stone_slab', 
-    'minecraft:cobblestone', 
-    'minecraft:cobblestone_stairs', 
-    'minecraft:cobblestone_slab', 
-    'minecraft:cobblestone_wall', 
-    'minecraft:stone_bricks', 
-    'minecraft:stone_brick_stairs', 
-    'minecraft:stone_brick_slab', 
-    'minecraft:stone_brick_wall', 
-    'minecraft:cracked_stone_bricks', 
-    'minecraft:chiseled_stone_bricks', 
-    'minecraft:mossy_stone_bricks', 
-    'minecraft:mossy_stone_brick_stairs', 
-    'minecraft:mossy_stone_brick_slab', 
-    'minecraft:mossy_stone_brick_wall', 
-    'minecraft:mossy_cobblestone', 
-    'minecraft:mossy_cobblestone_stairs', 
-    'minecraft:mossy_cobblestone_slab', 
-    'minecraft:mossy_cobblestone_wall',
+    // Stone
+    'minecraft:stone_pressure_plate',
+    'minecraft:stone_button',
 
     // Гранитовые блоки
     'minecraft:granite', 
@@ -638,8 +616,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:anvil', 
     'minecraft:chipped_anvil', 
     'minecraft:damaged_anvil', 
-    'minecraft:furnace', 
-    'minecraft:furnace_minecart',
+    'minecraft:furnace',
     'minecraft:amethyst_cluster',
     'minecraft:rabbit_hide',
     'minecraft:raw_iron',
@@ -652,7 +629,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:ender_eye',
 
     // Кримзон незер дерево
-    // TODO: Разблокировать после добавления ада
     'minecraft:crimson_stem', 
     'minecraft:crimson_hyphae', 
     'minecraft:stripped_crimson_stem', 
@@ -670,7 +646,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crimson_hanging_sign',
 
     // Варпед незер дерево
-    // TODO: Разблокировать после добавления ада
     'minecraft:warped_stem', 
     'minecraft:warped_hyphae', 
     'minecraft:stripped_warped_stem', 
@@ -703,13 +678,10 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crying_obsidian',
     'minecraft:piglin_head', 
     'minecraft:zombie_head', 
-    'minecraft:nether_sprouts', 
-    'minecraft:warped_roots', 
     'minecraft:dragon_head', 
     'minecraft:dragon_breath', 
     'minecraft:creeper_head', 
     'minecraft:wither_skeleton_skull', 
-    'minecraft:crimson_roots', 
     'minecraft:nether_wart', 
     'minecraft:respawn_anchor',
     'minecraft:ghast_tear',

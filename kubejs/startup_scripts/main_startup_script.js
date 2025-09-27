@@ -27,6 +27,7 @@ ItemEvents.modification(event => {
 	registerFirmalifeItemModifications(event)
 	registerGTCEuItemModifications(event)
 	registerMinecraftItemModifications(event)
+    registerSNSItemModifications(event)
 })
 
 StartupEvents.registry('fluid', event => {
@@ -74,6 +75,10 @@ GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
 
 GTCEuStartupEvents.registry("gtceu:element", event => {
 	registerTFGElement(event)
+})
+
+GTCEuStartupEvents.craftingComponents(event => {
+	registerTFGCraftingComponents(event)
 })
 
 Platform.mods.primitive_creatures.name = "Primitive Creatures";

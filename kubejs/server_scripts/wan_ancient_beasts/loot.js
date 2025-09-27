@@ -3,21 +3,43 @@
 
 function registerWansAncientBeastsLoots(event) {
 	
-	// Extra animal drop amounts for butchery knives
+	event.addEntityLootModifier('wan_ancient_beasts:crusher')
+		.addWeightedLoot([2, 4], ['minecraft:bone'])
+		.addWeightedLoot([2, 4], ['wan_ancient_beasts:crusher_spike'])
+		.addWeightedLoot([4, 7], ['tfg:food/raw_crusher_meat'])
 
 	event.addEntityLootModifier('wan_ancient_beasts:crusher')
 		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([1, 3], ['tfg:food/raw_crusher_meat'])
+		.addWeightedLoot([2, 4], ['tfg:food/raw_crusher_meat'])
+
+
+	event.addEntityLootModifier('wan_ancient_beasts:glider')
+		.addWeightedLoot([1, 3], ['minecraft:bone'])
+		.addWeightedLoot([2, 4], ['wan_ancient_beasts:glider_feather'])
+		.addWeightedLoot([6, 8], ['tfg:food/raw_glider_wings'])
 
 	event.addEntityLootModifier('wan_ancient_beasts:glider')
 		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([1, 3], ['tfg:food/raw_glider_wings'])
+		.addWeightedLoot([3, 4], ['tfg:food/raw_glider_wings'])
+
+
+	event.addEntityLootModifier('wan_ancient_beasts:soarer')
+		.addWeightedLoot([1, 3], ['minecraft:bone'])
+		.addWeightedLoot([2, 4], ['minecraft:feather'])
+		.addWeightedLoot([2, 4], ['tfg:food/raw_whole_soarer'])
 
 	event.addEntityLootModifier('wan_ancient_beasts:soarer')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([1, 2], ['tfg:food/raw_whole_soarer'])
 
+
+	event.addEntityLootModifier('wan_ancient_beasts:walker')
+		.addWeightedLoot([10, 15], ['minecraft:bone'])
+		.addWeightedLoot([25, 35], ['tfg:food/raw_walker_steak'])
+
 	event.addEntityLootModifier('wan_ancient_beasts:walker')
 		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([6, 12], ['tfg:food/raw_walker_steak'])
+		.addWeightedLoot([12, 16], ['tfg:food/raw_walker_steak'])
+
+	// TODO: eater, surfer
 }

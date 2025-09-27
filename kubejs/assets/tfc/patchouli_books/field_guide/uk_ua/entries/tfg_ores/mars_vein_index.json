@@ -14,12 +14,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandine & Sapphire$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornite & Cooperite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Coal & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Gold, Electrotine, & Bauxite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende, Thorium, & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorium, & Uraninite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartzite, Asbestos, & Barite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone & Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Salts & Spodumene$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Soapstone, Talc, & Glauconite$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_nickel_galena)Sphalerite & Galena$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит і Пірохлор$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит і Монацит$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_bismuthinite)Вісмут$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandine & Sapphire$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornite & Cooperite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Coal & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Gold, Electrotine, & Bauxite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende, Thorium, & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorium, & Uraninite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartzite, Asbestos, & Barite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone & Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Salts & Spodumene$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Sphalerite & Galena$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Trona, Talc, & Glauconite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит і Пірохлор$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит і Монацит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Вісмут$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарнієрит і Кобальтит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит та Лімоніт$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_hematite)Гематит та Лімоніт$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_cassiterite)Каситерит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Марганець і Тантал$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Мідь та Халькопірит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Смарагд і Берилій$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Срібло, Гален і Свинець$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сфалерит і Пірит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраедрит (Звичайний)$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_tetrahedrite)Тетраедрит (Поверхня)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеєліт та Вольфрам$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарнієрит і Кобальтит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит та Лімоніт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит та Лімоніт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Каситерит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Марганець і Тантал$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Мідь та Халькопірит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Смарагд і Берилій$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Срібло, Гален і Свинець$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сфалерит і Пірит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраедрит (Звичайний)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Тетраедрит (Поверхня)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеєліт та Вольфрам$()$()",
       "type": "patchouli:text"
     },
     {
@@ -757,117 +757,10 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 220$(br)$(thing)Щільність$(): 0.25$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Розмір$(): 30$(br)$(thing)Індикатор Max Depth$(): 15$(br2)$(thing)Типи каменю$(): Red Granite, Аргиліт, Аргіліт, Вапняк, Глинистий сланець, Граніт, Дацит, Діорит, Доломіт, Конгломерат",
-      "title": "Soapstone, Talc, & Glauconite",
-      "type": "patchouli:text",
-      "anchor": "mars_lubricant"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Соапостон",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/soapstone"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 31%$(br)$(thing)Джерело$(): Магнію$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Главконітний пісок",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/glauconite_sand"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 26%$(br)$(thing)Джерело$(): Магнію, Алюмінію$(br)$(thing)Формула$(): KMg₂Al₄H₂O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Тальк",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/talc"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 21%$(br)$(thing)Джерело$(): Магнію$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Пентландит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/pentlandite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Розплавляється в$(): Нікель$(br)$(thing)Формула$(): Ni₉S₈",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гематит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/hematite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Розплавляється в$(): Чавун$(br)$(thing)Формула$(): Fe₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)Рідкість$(): 150$(br)$(thing)Щільність$(): 0.25$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Розмір$(): 45$(br)$(thing)Індикатор Max Depth$(): 40$(br2)$(thing)Типи каменю$(): Red Granite, Аргиліт, Аргіліт, Базальт, Вапняк, Габро, Глинистий сланець, Граніт, Дацит, Діорит, Доломіт, Конгломерат, Крейда, Кременистий сланець, Трахіт",
       "title": "Sphalerite & Galena",
       "type": "patchouli:text",
-      "anchor": "surface_nickel_galena"
+      "anchor": "mars_surface_nickel_galena"
     },
     {
       "Type": "patchouli:multiblock",
@@ -968,6 +861,138 @@
       "enable_visualize": false,
       "text": "$(thing)Відсоток$(): 11%$(br)$(thing)Джерело$(): Кобальту, Миш'яку$(br)$(thing)Формула$(): CoAsS$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібна захисна маска)Арсенікоз (інгаляція)$(/t)$()",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Рідкість$(): 220$(br)$(thing)Щільність$(): 0.25$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Розмір$(): 40$(br)$(thing)Індикатор Max Depth$(): 15$(br2)$(thing)Типи каменю$(): Red Granite, Аргиліт, Аргіліт, Вапняк, Глинистий сланець, Граніт, Дацит, Діорит, Доломіт, Конгломерат",
+      "title": "Trona, Talc, & Glauconite",
+      "type": "patchouli:text",
+      "anchor": "mars_lubricant"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Тальк",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/talc"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 28%$(br)$(thing)Джерело$(): Магнію$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Главконітний пісок",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/glauconite_sand"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 21%$(br)$(thing)Джерело$(): Магнію, Алюмінію$(br)$(thing)Формула$(): KMg₂Al₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Трона",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/trona"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 21%$(br)$(thing)Джерело$(): Натрію$(br)$(thing)Формула$(): Na₃C₂H(H₂O)₂O₆",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Соапостон",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/soapstone"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 14%$(br)$(thing)Джерело$(): Магнію$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Пентландит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pentlandite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 7%$(br)$(thing)Розплавляється в$(): Нікель$(br)$(thing)Формула$(): Ni₉S₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 7%$(br)$(thing)Розплавляється в$(): Чавун$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -1158,7 +1183,7 @@
       "text": "$(thing)Рідкість$(): 140$(br)$(thing)Щільність$(): 0.25$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Розмір$(): 45$(br)$(thing)Індикатор Max Depth$(): 40$(br2)$(thing)Типи каменю$(): Red Granite, Аргиліт, Аргіліт, Базальт, Вапняк, Габро, Глинистий сланець, Граніт, Дацит, Діорит, Доломіт, Конгломерат, Крейда, Кременистий сланець, Трахіт",
       "title": "Вісмут",
       "type": "patchouli:text",
-      "anchor": "surface_bismuthinite"
+      "anchor": "mars_surface_bismuthinite"
     },
     {
       "Type": "patchouli:multiblock",
@@ -1434,7 +1459,7 @@
       "text": "$(thing)Рідкість$(): 140$(br)$(thing)Щільність$(): 0.25$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Розмір$(): 45$(br)$(thing)Індикатор Max Depth$(): 40$(br2)$(thing)Типи каменю$(): Red Granite, Аргиліт, Аргіліт, Базальт, Вапняк, Габро, Глинистий сланець, Граніт, Дацит, Діорит, Доломіт, Конгломерат, Крейда, Кременистий сланець, Трахіт",
       "title": "Гематит та Лімоніт",
       "type": "patchouli:text",
-      "anchor": "surface_hematite"
+      "anchor": "mars_surface_hematite"
     },
     {
       "Type": "patchouli:multiblock",
@@ -1526,7 +1551,7 @@
       "text": "$(thing)Рідкість$(): 135$(br)$(thing)Щільність$(): 0.25$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Розмір$(): 45$(br)$(thing)Індикатор Max Depth$(): 40$(br2)$(thing)Типи каменю$(): Red Granite, Аргиліт, Аргіліт, Базальт, Вапняк, Габро, Глинистий сланець, Граніт, Дацит, Діорит, Доломіт, Конгломерат, Крейда, Кременистий сланець, Трахіт",
       "title": "Каситерит",
       "type": "patchouli:text",
-      "anchor": "surface_cassiterite"
+      "anchor": "mars_surface_cassiterite"
     },
     {
       "Type": "patchouli:multiblock",
@@ -2120,7 +2145,7 @@
       "text": "$(thing)Рідкість$(): 140$(br)$(thing)Щільність$(): 0.25$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Розмір$(): 45$(br)$(thing)Індикатор Max Depth$(): 40$(br2)$(thing)Типи каменю$(): Red Granite, Аргиліт, Аргіліт, Базальт, Вапняк, Габро, Глинистий сланець, Граніт, Дацит, Діорит, Доломіт, Конгломерат, Крейда, Кременистий сланець, Трахіт",
       "title": "Тетраедрит (Поверхня)",
       "type": "patchouli:text",
-      "anchor": "surface_tetrahedrite"
+      "anchor": "mars_surface_tetrahedrite"
     },
     {
       "Type": "patchouli:multiblock",

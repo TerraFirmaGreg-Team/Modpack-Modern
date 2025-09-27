@@ -642,7 +642,7 @@ function registerGTCEUMetalRecipes(event) {
 				type: "ae2:transform",
 				circumstance: {
 					type: "fluid",
-					tag: "tfc:water"
+					tag: "tfc:any_water"
 				},
 				ingredients: [
 					crushedOreItem.toJson()
@@ -716,7 +716,7 @@ function registerGTCEUMetalRecipes(event) {
 				type: "ae2:transform",
 				circumstance: {
 					type: "fluid",
-					tag: "tfc:water"
+					tag: "tfc:any_water"
 				},
 				ingredients: [
 					impureDustItem.toJson()
@@ -756,7 +756,7 @@ function registerGTCEUMetalRecipes(event) {
 				type: "ae2:transform",
 				circumstance: {
 					type: "fluid",
-					tag: "tfc:water"
+					tag: "tfc:any_water"
 				},
 				ingredients: [
 					pureDust.toJson()
@@ -1094,9 +1094,10 @@ function registerGTCEUMetalRecipes(event) {
 
 		if (isLowTier) {
 			event.custom({
-				type: 'vintageimprovements:turning',
+				type: 'vintageimprovements:polishing',
 				ingredients: [doublePlateItem],
 				results: [buzzsawBladeItem],
+				speed_limits: 0,
 				processingTime: material.getMass() * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/lathe/${material.getName()}_buzzsaw`)
 		}

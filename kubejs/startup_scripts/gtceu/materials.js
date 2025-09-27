@@ -314,7 +314,9 @@ const registerGTCEuMaterialModification = (event) => {
 	// Bismuth item pipe - 1/4 as good as tin
 	GTMaterials.Bismuth.setProperty(PropertyKey.ITEM_PIPE, new $ITEM_PIPE_PROPERTY(16384, 0.125));
 	// Bis bronze fluid pipe - same stats as bronze
+	GTMaterials.BismuthBronze.getProperties().removeProperty(PropertyKey.BLAST);
 	GTMaterials.BismuthBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
+	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.BLAST);
 	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.ITEM_PIPE);
 	GTMaterials.BlackBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
 	// Red steel fluid pipe - same flow rate as aluminium, bad heat tolerance (same as PE) but can do cryo
@@ -387,6 +389,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Nickel.setMaterialSecondaryARGB(0x8d8d71)
 	GTMaterials.Thorium.setMaterialARGB(0xf8a8c0)
 	GTMaterials.Thorium.setMaterialSecondaryARGB(0xcd8dbc)
+	GTMaterials.GraniteRed.setMaterialARGB(0x974B3C)
+	GTMaterials.GraniteRed.setMaterialSecondaryARGB(0x632117)
 
 	
 	global.MINECRAFT_DYE_NAMES.forEach(colorName => {
@@ -406,4 +410,5 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.get('tfg:tmos').setFormula("Si(OCH3)4", true)
 	GTMaterials.get('tfg:fluix').setFormula("?(?SiO2)(SiO2)", true)
 	GTMaterials.CertusQuartz.setFormula("?SiO2", true)
+	GTMaterials.GraniteRed.setFormula("?", true)
 }

@@ -592,13 +592,14 @@ const registerCreateRecipes = (event) => {
 	// Create sail creation using custom sail items.
 
 	event.shaped('8x create:sail_frame', [
-		'ABA',
+		'ADA',
 		'BCB',
 		'ABA'
 	], {
-		A: '#forge:bolts/wrought_iron',
+		A: '#forge:screws/wood',
 		B: 'gtceu:treated_wood_rod',
-		C: 'gtceu:treated_wood_frame'
+		C: 'gtceu:treated_wood_frame',
+		D: '#forge:rods/wrought_iron'
 	}).id('tfg:create/shaped/sail_frame')
 
 	event.shaped('8x create:white_sail', [
@@ -1514,12 +1515,13 @@ const registerCreateRecipes = (event) => {
 	}).id('create:shaped/water_wheel')
 
 	event.shaped('create:large_water_wheel', [
-		'AAA',
-		'ABA',
-		'AAA'
+		'ACA',
+		'CBC',
+		'ACA'
 	], {
 		A: 'gtceu:treated_wood_planks',
-		B: 'create:water_wheel'
+		B: 'create:water_wheel',
+		C: '#forge:rods/steel'
 	}).id('create:shaped/large_water_wheel')
 
 	// #endregion
@@ -1552,20 +1554,23 @@ const registerCreateRecipes = (event) => {
 	//#region Blaze burner
 
 	event.shaped('create:blaze_burner', [
-		'B B',
+		'EFE',
 		'BAB',
 		'DCD'
 	], {
-		A: '#forge:storage_blocks/coke',
-		B: 'tfc:metal/bars/black_steel',
-		C: '#forge:plates/black_steel',
-		D: '#forge:plates/steel'
+		A: '#forge:gems/coke',
+		B: 'tfc:metal/bars/steel',
+		C: '#forge:double_plates/steel',
+		D: '#forge:plates/steel',
+		E: '#forge:rods/steel',
+		F: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/blaze_burner')
 
 	event.recipes.gtceu.assembler('create:blaze_burner')
-		.itemInputs('#forge:storage_blocks/coke', '4x tfc:metal/bars/black_steel', '#forge:plates/black_steel')
+		.itemInputs('#forge:gems/coke', '2x tfc:metal/bars/steel', '2x #forge:rods/steel', '#forge:double_plates/steel', '2x #forge:plates/steel')
 		.itemOutputs('create:blaze_burner')
 		.duration(50)
+		.circuit(2)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	//#endregion
@@ -1634,6 +1639,13 @@ const registerCreateRecipes = (event) => {
 		['dark_oak', 'tfc:wood/planks/hickory'],
 		['mangrove', 'tfc:wood/planks/mangrove'],
 		['cherry', 'afc:wood/planks/fig'],
+		['oak', 'tfc:wood/planks/oak'],
+		['spruce', 'afc:wood/planks/cypress'],
+		['jungle', 'afc:wood/planks/teak'],
+		['birch', 'afc:wood/planks/eucalyptus'],
+		['acacia', 'afc:wood/planks/baobab'],
+		['crimson', 'beneath:wood/planks/crimson'],
+		['warped', 'beneath:wood/planks/warped'],
 		['bamboo', 'minecraft:bamboo_planks'],
 		['ornate_iron', 'tfc:metal/bars/wrought_iron'],
 		['industrial_iron', 'tfc:metal/bars/steel']
@@ -1700,31 +1712,25 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/cardboard_from_glue')
 
 	event.recipes.gtceu.assembler('tfg:create/cardboard_from_glue')
-		.itemInputs('5x minecraft:paper')
-		.inputFluids(Fluid.of('gtceu:glue', 100))
+		.itemInputs('4x minecraft:paper')
+		.inputFluids(Fluid.of('gtceu:glue', 50))
 		.circuit(5)
 		.itemOutputs('2x create:cardboard')
 		.duration(200)
 		.EUt(7)
 
-	event.shaped('create:packager', [
+	event.shaped('2x create:packager', [
 		'AAA',
 		'BCD',
 		'EFE'
 	], {
 		A: '#forge:rods/wrought_iron',
 		B: '#forge:springs/wrought_iron',
-		C: 'gtceu:ulv_machine_hull',
+		C: 'gtceu:ulv_machine_casing',
 		D: 'create:bound_cardboard_block',
 		E: 'create:electron_tube',
 		F: '#tfg:metal_bars'
 	}).id('tfg:create/shaped/packager')
-
-	event.recipes.gtceu.assembler('tfg:create/packager')
-		.itemInputs('gtceu:ulv_machine_hull', '4x #forge:rods/wrought_iron', '#forge:springs/wrought_iron', '4x create:cardboard', '#forge:string', '#gtceu:circuits/ulv')
-		.itemOutputs('create:packager')
-		.duration(200)
-		.EUt(20)
 
 	event.shaped('create:item_hatch', [
 		'A',
@@ -2384,6 +2390,18 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.macerator('tfg:cut_asurine')
 		.itemInputs('create:cut_asurine')
 		.itemOutputs('#forge:dusts/asurine')
+		.duration(50)
+		.EUt(2)
+
+	event.recipes.gtceu.macerator('tfg:ochrum')
+		.itemInputs('create:ochrum')
+		.itemOutputs('#forge:dusts/ochrum')
+		.duration(50)
+		.EUt(2)
+
+	event.recipes.gtceu.macerator('tfg:cut_ochrum')
+		.itemInputs('create:cut_ochrum')
+		.itemOutputs('#forge:dusts/ochrum')
 		.duration(50)
 		.EUt(2)
 

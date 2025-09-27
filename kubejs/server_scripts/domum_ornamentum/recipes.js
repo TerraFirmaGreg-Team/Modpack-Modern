@@ -110,9 +110,12 @@ const registerDomumOrnamentumRecipes = (event) => {
 			B: '#forge:dyes/green'
 		}).id('domum_ornamentum:green_cactus_extra');
 
-	event.shapeless('4x domum_ornamentum:paper_extra', [
-		'4x #forge:paper'
-	]).id('domum_ornamentum:paper_extra');
+	event.shaped('4x domum_ornamentum:paper_extra', [
+		'AA',
+		'AA'
+	], {
+		A: '4x #forge:paper'
+	}).id('domum_ornamentum:paper_extra');
 
 	event.shapeless('4x domum_ornamentum:paper_extra', [
 		'4x domum_ornamentum:white_paper_extra'

@@ -22,6 +22,7 @@ ServerEvents.tags('item', event => {
 	registerCreateConnectedItemTags(event)
 	registerCreateDecoItemTags(event)
 	registerCreateFactoryLogisticsItemTags(event)
+	registerDomumOrnamentumItemTags(event)
 	registerDiggerHelmetItemTags(event)
 	registerEndermanOverhaulItemTags(event)
 	registerEveryCompatItemTags(event)
@@ -44,7 +45,7 @@ ServerEvents.tags('item', event => {
 	registerRnrItemTags(event)
 	registerSophisticatedBackpacksItemTags(event)
 	registerSoulboundItemTags(event)
-	registeSNSItemTags(event)
+	registerSNSItemTags(event)
 	registerSpeciesItemTags(event)
 	registerTACZItemTags(event)
 	registerTFCAmbientalItemTags(event)
@@ -165,8 +166,8 @@ TFCEvents.data(event => {
 	registerTFCDataForTFCLunchbox(event)
 	registerTFCDataForTFG(event)
 	registerTFCDataForWaterFlasks(event)
-	registerWABFoodData(event)
-	registerSpeciesFoodData(event)
+	registerWABData(event)
+	registerSpeciesData(event)
 })
 
 /**

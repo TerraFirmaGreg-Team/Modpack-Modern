@@ -469,7 +469,7 @@ function registerTFGFoodRecipes(event) {
 	global.TFC_JAMS.forEach(name => {
 		processorRecipe(`${name}_jam`, 200, 8, {
 			circuit: 15,
-			itemInputs: [`4x tfc:food/${name}`, "#tfg:sugars", "4x #tfc:empty_jar_with_lid"],
+			itemInputs: [`4x tfc:food/${name}`, "#tfc:sweetener", "4x #tfc:empty_jar_with_lid"],
 			fluidInputs: ['#tfg:clean_water 100'],
 			itemOutputs: [`4x tfc:jar/${name}`],
 			itemOutputProvider: TFC.isp.of(`4x tfc:jar/${name}`).copyFood()
@@ -477,7 +477,7 @@ function registerTFGFoodRecipes(event) {
 
 		processorRecipe(`${name}_jam_no_seal`, 200, 8, {
 			circuit: 16,
-			itemInputs: [`4x tfc:food/${name}`, "#tfg:sugars", "4x tfc:empty_jar"],
+			itemInputs: [`4x tfc:food/${name}`, "#tfc:sweetener", "4x tfc:empty_jar"],
 			fluidInputs: ['#tfg:clean_water 100'],
 			itemOutputs: [`4x tfc:jar/${name}_unsealed`],
 			itemOutputProvider: TFC.isp.of(`4x tfc:jar/${name}_unsealed`).copyFood()
@@ -487,7 +487,7 @@ function registerTFGFoodRecipes(event) {
 	global.FIRMALIFE_JAMS.forEach(name => {
 		processorRecipe(`${name}_jam`, 200, 8, {
 			circuit: 15,
-			itemInputs: [`4x firmalife:food/${name}`, "#tfg:sugars", "4x #tfc:empty_jar_with_lid"],
+			itemInputs: [`4x firmalife:food/${name}`, "#tfc:sweetener", "4x #tfc:empty_jar_with_lid"],
 			fluidInputs: ['#tfg:clean_water 100'],
 			itemOutputs: [`4x firmalife:jar/${name}`],
 			itemOutputProvider: TFC.isp.of(`4x firmalife:jar/${name}`).copyFood()
@@ -495,7 +495,7 @@ function registerTFGFoodRecipes(event) {
 
 		processorRecipe(`${name}_jam_no_seal`, 200, 8, {
 			circuit: 16,
-			itemInputs: [`4x firmalife:food/${name}`, "#tfg:sugars", "4x tfc:empty_jar"],
+			itemInputs: [`4x firmalife:food/${name}`, "#tfc:sweetener", "4x tfc:empty_jar"],
 			fluidInputs: ['#tfg:clean_water 100'],
 			itemOutputs: [`4x firmalife:jar/${name}_unsealed`],
 			itemOutputProvider: TFC.isp.of(`4x firmalife:jar/${name}_unsealed`).copyFood()
@@ -968,7 +968,7 @@ function registerTFGFoodRecipes(event) {
 	event.recipes.tfc.quern('gtceu:cocoa_dust', 'firmalife:food/roasted_cocoa_beans')
 		.id('tfg:quern/cocoa_dust');
 
-	event.recipes.tfc.pot(['firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings'],
+	event.recipes.tfc.pot(['#tfc:bowls', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings'],
 		Fluid.of('minecraft:water', 1000), 20, 10)
 		.itemOutput('tfg:food/ice_soup')
 		.id('tfg:pot/ice_soup')
@@ -1113,6 +1113,7 @@ function registerTFGFoodRecipes(event) {
         .itemOutputs('1x tfg:mv_food_refrigerator')
         .duration(200)
         .circuit(7)
+		.addMaterialInfo(true)
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.assembler('tfg:assembler/hv_food_refrigerator')
@@ -1128,6 +1129,7 @@ function registerTFGFoodRecipes(event) {
         .itemOutputs('1x tfg:hv_food_refrigerator')
         .duration(200)
         .circuit(7)
+		.addMaterialInfo(true)
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.assembler('tfg:assembler/ev_food_refrigerator')
@@ -1143,6 +1145,7 @@ function registerTFGFoodRecipes(event) {
         .itemOutputs('1x tfg:ev_food_refrigerator')
         .duration(200)
         .circuit(7)
+		.addMaterialInfo(true)
         .EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('tfg:assembler/iv_food_refrigerator')
@@ -1158,6 +1161,7 @@ function registerTFGFoodRecipes(event) {
         .itemOutputs('1x tfg:iv_food_refrigerator')
         .duration(200)
         .circuit(7)
+		.addMaterialInfo(true)
         .EUt(GTValues.VA[GTValues.LV])
 
 	event.shaped('tfg:electric_greenhouse', [

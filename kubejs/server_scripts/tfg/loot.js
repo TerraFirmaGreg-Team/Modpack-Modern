@@ -152,17 +152,41 @@ function registerTFGLoots(event) {
 			.addLoot(id)
 	})
 
-	// Extra animal drop amounts for butchery knives
+	// Animal drops
+
+	event.addEntityLootModifier('tfg:glacian_ram')
+		.addWeightedLoot([1, 2], ['minecraft:bone'])
+		.addWeightedLoot([8, 12], ['tfg:food/raw_glacian_mutton'])
 
 	event.addEntityLootModifier('tfg:glacian_ram')
 		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([6, 9], ['tfg:food/raw_glacian_mutton'])
+		.addWeightedLoot([4, 6], ['tfg:food/raw_glacian_mutton'])
+	
+		
+	event.addEntityLootModifier('tfg:moon_rabbit')
+		.addWeightedLoot([2, 3], ['minecraft:bone'])
+		.addLoot('tfg:food/raw_moon_rabbit')
 
 	event.addEntityLootModifier('tfg:moon_rabbit')
 		.matchMainHand('#forge:tools/butchery_knives')
-		.addLoot('tfg:food/raw_moon_rabbit')
+		.addWeightedLoot([1, 2], ['tfg:food/raw_moon_rabbit'])
+
+
+	event.addEntityLootModifier('tfg:sniffer')
+		.addWeightedLoot([5, 8], ['minecraft:bone'])
+		.addWeightedLoot([16, 20], ['tfg:food/raw_sniffer_beef'])
 
 	event.addEntityLootModifier('tfg:sniffer')
 		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([6, 9], ['tfg:food/raw_sniffer_beef'])
+		.addWeightedLoot([8, 10], ['tfg:food/raw_sniffer_beef'])
+
+
+	event.addEntityLootModifier('tfg:wraptor')
+		.addWeightedLoot([2, 3], ['minecraft:bone'])
+		.addWeightedLoot([2, 4], ['minecraft:feather'])
+		.addWeightedLoot([4, 7], ['tfg:food/raw_wraptor'])
+
+	event.addEntityLootModifier('tfg:wraptor')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([2, 3], ['tfg:food/raw_wraptor'])
 };

@@ -6,13 +6,12 @@ global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER = 4;
 
 global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 
-	'vintageimprovements:belt_grinder',
 	'vintageimprovements:convex_curving_head',
 	'vintageimprovements:concave_curving_head',
 	'vintageimprovements:w_shaped_curving_head',
 	'vintageimprovements:v_shaped_curving_head',
-	'vintageimprovements:grinder_belt',
 	'vintageimprovements:spring_coiling_machine_wheel',
+	'vintageimprovements:lathe',
 	'vintageimprovements:laser',
 	'vintageimprovements:laser_item',
 	'vintageimprovements:sulfur_chunk',
@@ -22,6 +21,7 @@ global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 	'vintageimprovements:copper_sulfate',
 	'vintageimprovements:incomplete_redstone_module',
 	'vintageimprovements:incomplete_recipe_card',
+	'vintageimprovements:recipe_card',
 	
 	'vintageimprovements:bronze_sheet',
 	'vintageimprovements:amethyst_bronze_sheet',
@@ -86,12 +86,13 @@ global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 	'vintageimprovements:nethersteel_rod',
 	'vintageimprovements:andesite_rod',
 	'vintageimprovements:shadow_steel_rod',
-	'vintageimprovements:desh_rod'
+	'vintageimprovements:desh_rod',
+	'vintageimprovements:ostrum_rod',
+	'vintageimprovements:calorite_rod'
 ]
 
 global.VINTAGE_IMPROVEMENTS_DISABLED_BLOCKS = [
 
-	'vintageimprovements:belt_grinder',
 	'vintageimprovements:sulfur_block',
 
 ]

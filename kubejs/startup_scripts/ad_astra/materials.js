@@ -48,6 +48,7 @@ const registerAdAstraMaterials = (event) => {
 			GTMaterialFlags.DISABLE_DECOMPOSITION,
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
 			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_ROD,
 			GTMaterialFlags.DISABLE_ALLOY_BLAST
 		)
 

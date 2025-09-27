@@ -251,34 +251,41 @@
         "detected-setblock-be-gone": {
             "side": "BOTH"
         },
+
+
+        "autopack-director": {
+            "export": false
+        },
         "ftb-backups-2": {
             "side": "BOTH",
-            "export": false
+            "export": true
         },
         "ftb-chunks-forge": {
-            "export": false
+            "export": true
         },
         "ftb-essentials": {
-            "export": false
+            "export": true
         },
         "ftb-filter-system": {
-            "export": false
+            "export": true
         },
         "ftb-library-forge": {
-            "export": false
+            "export": true
         },
         "ftb-quests-forge": {
-            "export": false
+            "export": true
         },
         "ftb-ranks-forge": {
-            "export": false
+            "export": true
         },
         "ftb-teams-forge": {
-            "export": false
+            "export": true
         },
         "ftb-xmod-compat": {
-            "export": false
+            "export": true
         },
+
+
         "probejs": {
             "side": "CLIENT",
             "export": false

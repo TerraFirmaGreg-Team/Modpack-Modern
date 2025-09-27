@@ -1,0 +1,17 @@
+{
+	"type": "lithostitched:set_structure_spawn_condition",
+	"structures": [
+		"tfg:illagers/norse_village_living",
+		"tfg:illagers/norse_village_ruined"
+	],
+	"spawn_condition": {
+		"type": "lithostitched:grid",
+		"condition": {
+			"type": "lithostitched:in_biome",
+			"biomes": "#tfg:never_has_structure/illages"
+		},
+		"radius": 105,
+		"distance_between_points": 15,
+		"allowed_count": 0
+	}
+}

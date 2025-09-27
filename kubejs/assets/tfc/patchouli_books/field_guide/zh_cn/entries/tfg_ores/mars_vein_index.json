@@ -14,13 +14,145 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)斑铜矿, 硫铂矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)氟碳镧铈矿, 独居石$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)沥青铀矿, 钍矿, 晶质铀矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)沥青铀矿, 钍矿, 赤铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)煤炭, 赤铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)白钨矿, 钨酸锂$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)皂石, 滑石, 海绿石矿砂$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)盐, 锂辉石$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)石英岩, 石棉, 重晶石$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)硅镁镍矿, 辉钴矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)磷灰石, 烧绿石$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)红石, 铬铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)绿宝石, 铍矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)赤铁矿, 褐铁矿$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)天然碱, 滑石, 海绿石矿砂$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)斑铜矿, 硫铂矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)氟碳镧铈矿, 独居石$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)沥青铀矿, 钍矿, 晶质铀矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)沥青铀矿, 钍矿, 赤铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)煤炭, 赤铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)白钨矿, 钨酸锂$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)盐, 锂辉石$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)石英岩, 石棉, 重晶石$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)硅镁镍矿, 辉钴矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)磷灰石, 烧绿石$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)红石, 铬铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)绿宝石, 铍矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)赤铁矿, 褐铁矿$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#surface_hematite)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_bismuthinite)辉铋矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)金矿, 电石, 铝土矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)铁铝榴石, 蓝宝石$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)铜矿, 黄铜矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)银矿, 方铅矿, 铅矿$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_cassiterite)锡石矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)锰矿, 钽矿$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_nickel_galena)闪锌矿, 方铅矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)闪锌矿, 黄铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#surface_tetrahedrite)黝铜矿 (地表)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)黝铜矿 (普通)$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)辉铋矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)金矿, 电石, 铝土矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)铁铝榴石, 蓝宝石$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)铜矿, 黄铜矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)银矿, 方铅矿, 铅矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)锡石矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)锰矿, 钽矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)闪锌矿, 方铅矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)闪锌矿, 黄铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)黝铜矿 (地表)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)黝铜矿 (普通)$()$()",
       "type": "patchouli:text"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)稀有度$(): 220$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 泥板岩, 白云岩, 石灰岩, 砾岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 闪长岩, 页岩",
+      "title": "天然碱, 滑石, 海绿石矿砂",
+      "type": "patchouli:text",
+      "anchor": "mars_lubricant"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "滑石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/talc"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 28%$(br)$(thing)来源$(): 镁$(br)$(thing)化学式$(): Mg₃Si₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "海绿石矿砂",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/glauconite_sand"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 21%$(br)$(thing)来源$(): 镁, 铝$(br)$(thing)化学式$(): KMg₂Al₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "天然碱",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/trona"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 21%$(br)$(thing)来源$(): 钠$(br)$(thing)化学式$(): Na₃C₂H(H₂O)₂O₆",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "皂石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/soapstone"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 14%$(br)$(thing)来源$(): 镁$(br)$(thing)化学式$(): Mg₃Si₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "镍黄铁矿",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pentlandite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 7%$(br)$(thing)熔化$(): 镍$(br)$(thing)化学式$(): Ni₉S₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "赤铁矿",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 7%$(br)$(thing)熔化$(): 铸铁$(br)$(thing)化学式$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:empty",
@@ -488,113 +620,6 @@
       "Type": "patchouli:empty",
       "draw_filler": true,
       "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 220$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 30$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 泥板岩, 白云岩, 石灰岩, 砾岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 闪长岩, 页岩",
-      "title": "皂石, 滑石, 海绿石矿砂",
-      "type": "patchouli:text",
-      "anchor": "mars_lubricant"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "皂石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/soapstone"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 31%$(br)$(thing)来源$(): 镁$(br)$(thing)化学式$(): Mg₃Si₄H₂O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "海绿石矿砂",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/glauconite_sand"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 26%$(br)$(thing)来源$(): 镁, 铝$(br)$(thing)化学式$(): KMg₂Al₄H₂O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "滑石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/talc"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 21%$(br)$(thing)来源$(): 镁$(br)$(thing)化学式$(): Mg₃Si₄H₂O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "镍黄铁矿",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/pentlandite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 15%$(br)$(thing)熔化$(): 镍$(br)$(thing)化学式$(): Ni₉S₈",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "赤铁矿",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/hematite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 5%$(br)$(thing)熔化$(): 铸铁$(br)$(thing)化学式$(): Fe₂O₃",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
@@ -1195,7 +1220,7 @@
       "text": "$(thing)稀有度$(): 140$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 80 — 180$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
       "title": "赤铁矿, 褐铁矿",
       "type": "patchouli:text",
-      "anchor": "surface_hematite"
+      "anchor": "mars_surface_hematite"
     },
     {
       "Type": "patchouli:multiblock",
@@ -1287,7 +1312,7 @@
       "text": "$(thing)稀有度$(): 140$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 80 — 180$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
       "title": "辉铋矿",
       "type": "patchouli:text",
-      "anchor": "surface_bismuthinite"
+      "anchor": "mars_surface_bismuthinite"
     },
     {
       "Type": "patchouli:multiblock",
@@ -1762,7 +1787,7 @@
       "text": "$(thing)稀有度$(): 135$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 80 — 180$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
       "title": "锡石矿",
       "type": "patchouli:text",
-      "anchor": "surface_cassiterite"
+      "anchor": "mars_surface_cassiterite"
     },
     {
       "Type": "patchouli:multiblock",
@@ -1921,7 +1946,7 @@
       "text": "$(thing)稀有度$(): 150$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 80 — 180$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
       "title": "闪锌矿, 方铅矿",
       "type": "patchouli:text",
-      "anchor": "surface_nickel_galena"
+      "anchor": "mars_surface_nickel_galena"
     },
     {
       "Type": "patchouli:multiblock",
@@ -2120,7 +2145,7 @@
       "text": "$(thing)稀有度$(): 140$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 80 — 180$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
       "title": "黝铜矿 (地表)",
       "type": "patchouli:text",
-      "anchor": "surface_tetrahedrite"
+      "anchor": "mars_surface_tetrahedrite"
     },
     {
       "Type": "patchouli:multiblock",

@@ -194,7 +194,7 @@ function registerTFGBioreactorRecipes(event) {
 
 	event.recipes.gtceu.wiremill('tfg:stainless_steel_needle')
 		.itemInputs(ChemicalHelper.get(TagPrefix.pipeNormalFluid, GTMaterials.StainlessSteel, 1))
-		.itemOutputs('tfg:stainless_steel_needle')
+		.itemOutputs(Item.of('tfg:stainless_steel_needle').withNBT({Unbreakable: 1}))
 		.duration(2*60*20)
 		.circuit(4)
 		.EUt(GTValues.VA[GTValues.MV])
@@ -204,7 +204,7 @@ function registerTFGBioreactorRecipes(event) {
 			ChemicalHelper.get(TagPrefix.ring, GTMaterials.StyreneButadieneRubber, 2),
 			ChemicalHelper.get(TagPrefix.pipeNormalFluid, GTMaterials.Polytetrafluoroethylene, 1),
 			ChemicalHelper.get(TagPrefix.rod, GTMaterials.Polytetrafluoroethylene, 1),
-			'tfg:stainless_steel_needle'
+			Item.of('tfg:stainless_steel_needle').weakNBT()
 		)
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 288))
 		.itemOutputs('tfg:empty_dna_syringe')

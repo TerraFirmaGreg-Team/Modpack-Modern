@@ -83,4 +83,25 @@ function registerSpeciesRecipes(event) {
 		.itemOutputs('4x tfg:wraptor_sugar')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.MV])
+
+	event.shaped('species:ricoshield', [
+		'ABA',
+		'ACA',
+		'ADA'
+	], {
+		A: '#forge:double_plates/copper',
+		B: 'create:precision_mechanism',
+		C: 'species:kinetic_core',
+		D: '#tfc:shields'
+	}).id('tfg:shaped/ricoshield')
+
+	event.shaped('species:deflector_dummy', [
+		'A',
+		'B',
+		'C'
+	], {
+		A: 'vintageimprovements:redstone_module',
+		B: 'species:kinetic_core',
+		C: 'tacz:target'
+	}).id('tfg:shaped/deflector_dummy')
 }

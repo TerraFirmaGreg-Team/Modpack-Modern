@@ -81,11 +81,11 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_sulfur')
 	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_tantalite')
 	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_tungsten')
-	event.add('tfg:mars_veins', 'tfg:mars/vein/surface_bismuthinite')
-	event.add('tfg:mars_veins', 'tfg:mars/vein/surface_cassiterite')
-	event.add('tfg:mars_veins', 'tfg:mars/vein/surface_hematite')
-	event.add('tfg:mars_veins', 'tfg:mars/vein/surface_nickel_galena')
-	event.add('tfg:mars_veins', 'tfg:mars/vein/surface_tetrahedrite')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_surface_bismuthinite')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_surface_cassiterite')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_surface_hematite')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_surface_nickel_galena')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_surface_tetrahedrite')
 
 	// #endregion
 

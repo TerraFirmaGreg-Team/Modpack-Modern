@@ -395,7 +395,7 @@
 													{
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "tfc:sand/black"
+															"Name": "tfg:rock/gravel_moon_deepslate"
 														}
 													}
 												]
@@ -511,7 +511,7 @@
 													{
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "ad_astra:moon_sand"
+															"Name": "tfg:rock/gravel_moon"
 														}
 													}
 												]
@@ -627,7 +627,7 @@
 													{
 														"type": "minecraft:block",
 														"result_state": {
-															"Name": "ad_astra:glacio_cobblestone"
+															"Name": "tfg:rock/gravel_glacio"
 														}
 													}
 												]
