@@ -7,7 +7,6 @@
  */
 const registerTFGItems = (event) => {
 
-	registerTFGDeprecatedItems(event)
 	registerTFGFoodItems(event)
 
 	// #region Electronics

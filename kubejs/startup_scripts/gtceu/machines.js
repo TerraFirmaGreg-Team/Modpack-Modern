@@ -654,7 +654,6 @@ const registerGTCEuMachines = (event) => {
 			.where(' ', Block.getBlock('minecraft:air'))
 			.build()
 		)
-
 		.workableCasingModel(
 			'tfg:block/casings/machine_casing_mars',
 			'gtceu:block/machines/thermal_centrifuge')

@@ -178,16 +178,6 @@ const registerFirmaLifeRecipes = (event) => {
 
 	//#endregion
 
-	// TODO: Не работает потому что грегтех
-	// Доставание меда из сот
-	/*
-	event.recipes.gtceu.assembler(`tfg:firmalife/beehive_honey_decomposition`)             
-		.itemInputs('firmalife:beehive_frame')
-		.circuit(1)
-		.itemOutputs('firmalife:beehive_frame', 'firmalife:beeswax')
-		.duration(10)
-		.EUt(2)*/
-
 	//#region Рецепты теплиц / Greenhouse
 
 	//#region Treated Wood

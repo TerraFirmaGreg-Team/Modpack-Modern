@@ -2393,6 +2393,18 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(2)
 
+	event.recipes.gtceu.macerator('tfg:ochrum')
+		.itemInputs('create:ochrum')
+		.itemOutputs('#forge:dusts/ochrum')
+		.duration(50)
+		.EUt(2)
+
+	event.recipes.gtceu.macerator('tfg:cut_ochrum')
+		.itemInputs('create:cut_ochrum')
+		.itemOutputs('#forge:dusts/ochrum')
+		.duration(50)
+		.EUt(2)
+
 	event.shapeless('create:sand_paper', ['minecraft:paper', 'tfc:glue', '#forge:sand'])
 		.id('tfg:shapeless/sand_paper')
 
