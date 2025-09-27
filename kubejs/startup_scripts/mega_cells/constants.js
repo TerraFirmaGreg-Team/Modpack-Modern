@@ -21,4 +21,8 @@ global.MEGA_CELLS_DISABLED_ITEMS = [
 
     'megacells:256m_crafting_storage',
 
+    'megacells:mega_pattern_provider',
+    'megacells:cable_mega_pattern_provider',
+    'megacells:mega_interface',
+    'megacells:cable_mega_interface'
 ]
