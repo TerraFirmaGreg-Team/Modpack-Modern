@@ -669,6 +669,8 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:red_nether_brick_stairs', 
     'minecraft:red_nether_brick_slab', 
     'minecraft:red_nether_brick_wall',
+    'minecraft:blaze_rod',
+    'minecraft:blaze_powder',
 
     // И еще куча незер блоков
     // TODO: Разблокировать после добавления ада

@@ -938,8 +938,8 @@ const registerMinecraftRecipes = (event) => {
 		'ABA',
 		'CDC'
 	], {
-		A: 'minecraft:blaze_rod',
-		B: 'minecraft:blaze_powder',
+		A: '#forge:rods/black_steel',
+		B: 'minecraft:lava_bucket',
 		C: '#minecraft:logs',
 		D: '#forge:storage_blocks/charcoal',
 	}).id('tfg:campfire_charcoal')
@@ -949,8 +949,8 @@ const registerMinecraftRecipes = (event) => {
 		'ABA',
 		'CDC'
 	], {
-		A: 'minecraft:blaze_rod',
-		B: 'minecraft:blaze_powder',
+		A: '#forge:rods/black_steel',
+		B: 'minecraft:lava_bucket',
 		C: '#minecraft:logs',
 		D: '#forge:storage_blocks/coal',
 	}).id('tfg:campfire_coal')
