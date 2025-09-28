@@ -4,7 +4,7 @@
 /**
  * @param {Internal.RecipesEventJS} event 
  */
-function registerTFGBioreactorRecipes(event) {
+function registerTFGBiochemRecipes(event) {
 	const $ISPRecipeLogic = Java.loadClass("su.terrafirmagreg.core.common.data.tfgt.machine.trait.ISPOutputRecipeLogic")
 	const $SizedIngredient = Java.loadClass("com.gregtechceu.gtceu.api.recipe.ingredient.SizedIngredient")
 
@@ -119,17 +119,17 @@ function registerTFGBioreactorRecipes(event) {
 
 	//#region Recipes
 	// EXAMPLE
-	// bioreactorRecipeText('test/test', 1*10*20, GTValues.VA[GTValues.EV], 'tfg.food_recipe.brining', {
-	// 	itemInputs: ['tfc:food/red_apple'],
-	// 	fluidInputs: ['#tfc:milks 10'],
-	// 	itemOutputs: ['3x tfc:food/green_apple'],
-	// 	notConsumable: ['minecraft:bucket'],
-	// 	dimension: 'minecraft:overworld',
-	// 	perTick: true,
-	// 	daytime: true,
-	// 	cleanroom: CleanroomType.STERILE_CLEANROOM,
-	// 	fluidOutputs: ['minecraft:lava 10'],
-	// 	itemOutputProvider: TFC.isp.of('3x tfc:food/green_apple').copyFood().addTrait('firmalife:smoked')
+	// growthChamberRecipeText('test/test', 10*60*20, GTValues.VA[GTValues.EV], 'tfg.food_recipe.brining', {
+		// itemInputs: ['tfc:food/red_apple','tfc:food/red_apple', '1x tfc:silica_glass_bottle'],
+		// fluidInputs: ['#tfc:milks 10'],
+		// itemOutputs: ['4x tfc:food/green_apple'],
+		// notConsumable: ['gtceu:petri_dish'],
+		// dimension: 'minecraft:overworld',
+		// perTick: true,
+		// daytime: true,
+		// cleanroom: CleanroomType.STERILE_CLEANROOM,
+		// fluidOutputs: ['minecraft:lava 10'],
+		// itemOutputProvider: TFC.isp.of('3x tfc:food/green_apple').copyFood().addTrait('firmalife:smoked')
 	// })
 
 	//#endregion
@@ -237,7 +237,7 @@ function registerTFGBioreactorRecipes(event) {
 	event.recipes.gtceu.chemical_bath('tfg:ethanol_cleaning_syringe')
 		.itemInputs('tfg:dirty_dna_syringe')
 		.inputFluids(Fluid.of('gtceu:ethanol', 500))
-		.itemOutputs('tfg:clean_dna_syringe')
+		.itemOutputs('tfg:empty_dna_syringe')
 		.duration(10*20)
 		.EUt(GTValues.VA[GTValues.MV])
 		.cleanroom(CleanroomType.CLEANROOM)
@@ -245,7 +245,7 @@ function registerTFGBioreactorRecipes(event) {
 	event.recipes.gtceu.chemical_bath('tfg:hydrogen_peroxide_cleaning_syringe')
 		.itemInputs('tfg:dirty_dna_syringe')
 		.inputFluids(Fluid.of('gtceu:hydrogen_peroxide', 200))
-		.itemOutputs('tfg:clean_dna_syringe')
+		.itemOutputs('tfg:empty_dna_syringe')
 		.duration(10*20)
 		.EUt(GTValues.VA[GTValues.MV])
 		.cleanroom(CleanroomType.CLEANROOM)

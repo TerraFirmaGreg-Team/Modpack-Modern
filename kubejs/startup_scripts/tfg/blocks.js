@@ -138,7 +138,7 @@ const registerTFGBlocks = (event) => {
 		.mapColor('color_black')
 
 	event.create('tfg:sample_rack', 'tfg:active_cardinal')
-		.soundType('metal')
+		.soundType('copper')
 		.hardness(5)
 		.resistance(6)
 		.tagBlock('minecraft:mineable/pickaxe')
@@ -149,7 +149,7 @@ const registerTFGBlocks = (event) => {
 		.opaque(false)
 
 	event.create('tfg:growth_monitor', 'tfg:active_cardinal')
-		.soundType('metal')
+		.soundType('copper')
 		.hardness(5)
 		.resistance(6)
 		.tagBlock('minecraft:mineable/pickaxe')
@@ -160,7 +160,7 @@ const registerTFGBlocks = (event) => {
 		.opaque(false)
 
 	event.create('tfg:casings/machine_casing_sterilizing_pipes', 'tfg:active_cardinal')
-		.soundType('metal')
+		.soundType('copper')
 		.hardness(5)
 		.resistance(6)
 		.tagBlock('minecraft:mineable/pickaxe')
