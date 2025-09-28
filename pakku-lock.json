@@ -852,7 +852,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "alltheleaks-1.0.5+1.20.1-forge.jar",
+                    "file_name": "alltheleaks-1.0.6+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -860,16 +860,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7037/734/alltheleaks-1.0.5+1.20.1-forge.jar",
-                    "id": "7037734",
+                    "url": "https://edge.forgecdn.net/files/7040/641/alltheleaks-1.0.6+1.20.1-forge.jar",
+                    "id": "7040641",
                     "parent_id": "1091339",
                     "hashes": {
-                        "sha1": "0f1f9fe61a05168ee42a6d41c488f9444cb78ec2",
-                        "md5": "f002f47565f692389d776ab6e00c261b"
+                        "sha1": "0a413f6fd8c02abc3544e7aa70957d2069780cca",
+                        "md5": "160ab11da7a2825a6a3213f750d37bd5"
                     },
                     "required_dependencies": [],
-                    "size": 1172553,
-                    "date_published": "2025-09-27T06:43:51.287Z"
+                    "size": 1172581,
+                    "date_published": "2025-09-28T00:12:20.703Z"
                 }
             ]
         },
@@ -4453,6 +4453,50 @@
                     "required_dependencies": [],
                     "size": 398066,
                     "date_published": "2025-04-13T13:09:28.168539Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Vah9OZxH3B14hSji",
+            "pakku_links": [
+                "WN9DdLqsRKVeZIc9",
+                "bf2svog06ajj5JHE"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "deafission"
+            },
+            "name": {
+                "curseforge": "Dea's Fission"
+            },
+            "id": {
+                "curseforge": "1354541"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "deafission-1.20.1-0.8.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7042/133/deafission-1.20.1-0.8.0.jar",
+                    "id": "7042133",
+                    "parent_id": "1354541",
+                    "hashes": {
+                        "sha1": "0ad09b258058857f5a83b35dcaff5aa23bc175db",
+                        "md5": "16c8bafe53ae9a65eb3f7fc46d0c4ebf"
+                    },
+                    "required_dependencies": [
+                        "890405",
+                        "238086"
+                    ],
+                    "size": 171173,
+                    "date_published": "2025-09-28T12:37:31.803Z"
                 }
             ]
         },
