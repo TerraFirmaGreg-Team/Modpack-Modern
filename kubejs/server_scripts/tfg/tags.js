@@ -13,6 +13,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:compost_greens_high', 'tfg:rapeseed_product')
 	event.add('tfc:compost_greens_high', 'tfg:sunflower_product')
 	event.add('tfc:compost_greens_high', 'tfg:flax_product')
+	event.add('tfc:compost_greens_high', 'tfg:lunar_chorus_flower')
 	event.add('tfg:water_breathing_ingredients', 'tfg:rapeseed_product')
 	event.add('tfg:night_vision_ingredients', 'tfg:sunflower_product')
 
@@ -1116,40 +1117,58 @@ const registerTFGBiomeTags = (event) => {
 	event.add('tfg:has_structure/illages', 'tfc:plateau')
 	event.add('tfg:has_structure/illages', 'tfc:old_mountains')
 
+	event.add('tfg:never_has_structure/illages', '#tfc:is_lake')
+	event.add('tfg:never_has_structure/illages', '#tfc:is_ocean')
+	event.add('tfg:never_has_structure/illages', '#tfc:is_river')
+
 	// #endregion
 
 	// #region Nether biomes
-
+	event.add('tfg:nether_biomes', 'tfg:nether/lush_hollow')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/lush_hollow')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/lush_hollow')
 	event.add('minecraft:allows_surface_slime_spawns', 'tfg:nether/lush_hollow')
 	event.add('minecraft:spawns_cold_variant_frogs', 'tfg:nether/lush_hollow')
-
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/decaying_caverns')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/decaying_caverns')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/decaying_caverns')
 	event.add('minecraft:allows_surface_slime_spawns', 'tfg:nether/decaying_caverns')
 	event.add('minecraft:spawns_warm_variant_frogs', 'tfg:nether/decaying_caverns')
 	event.add('minecraft:has_closer_water_fog', 'tfg:nether/decaying_caverns')
-
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/basalt_deltas')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/basalt_deltas')
-
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/ash_forest')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/ash_forest')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/ash_forest')
-
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/lava_floes')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/lava_floes')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/lava_floes')
-
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/webbed_lair')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/webbed_lair')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/webbed_lair')
-
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/gneiss_caves')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/gneiss_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/gneiss_caves')
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/diorite_caves')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/diorite_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/diorite_caves')
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/gabbro_caves')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/gabbro_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/gabbro_caves')
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/granite_caves')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/granite_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/granite_caves')
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/schist_caves')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/schist_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/schist_caves')
 

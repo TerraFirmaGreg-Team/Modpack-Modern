@@ -1,17 +1,4 @@
 const registerGTCEuRecipeTypes = (event) => {
-	event.create('nether_dome')
-		.category('nether_dome')
-		.setEUIO('in')
-		.setMaxIOSize(2, 1, 1, 1)
-		.setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
-		.setSound(GTSoundEntries.FIRE)
-
-	event.create('end_dome')
-		.category('end_dome')
-		.setEUIO('in')
-		.setMaxIOSize(2, 1, 1, 1)
-		.setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
-		.setSound(GTSoundEntries.FIRE)
 
 	event.create('steam_bloomery')
 		.category('steam_bloomery')
@@ -64,13 +51,6 @@ const registerGTCEuRecipeTypes = (event) => {
 		.setSlotOverlay(false, false, GuiTextures.ATOMIC_OVERLAY_1)
 		.setProgressBar(GuiTextures.ATOMIC_OVERLAY_1, FillDirection.DOWN_TO_UP)
 		.setSound(GTSoundEntries.MINER)
-
-	event.create('evaporation_tower')
-		.category('evaporation_tower')
-		.setEUIO('in')
-		.setMaxIOSize(0, 1, 1, 6)
-		.setProgressBar(GuiTextures.PROGRESS_BAR_DISTILLATION_TOWER, FillDirection.LEFT_TO_RIGHT)
-		.setSound(GTSoundEntries.BATH)
 
 	event.create('ostrum_harvester')
         .category('ostrum_harvester')

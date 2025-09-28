@@ -46,5 +46,6 @@ const registerWABEntityTypeTags = (event) => {
 	event.add('wan_ancient_beasts:eater_ignore', 'tfg:sniffer')
 	event.add('wan_ancient_beasts:eater_ignore', 'tfg:wraptor')
 	event.add('wan_ancient_beasts:eater_ignore', 'species:springling')
+	event.add('wan_ancient_beasts:eater_ignore', 'species:quake')
 
 }

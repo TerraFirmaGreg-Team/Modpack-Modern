@@ -66,6 +66,17 @@ function removeGreateRecipes(event) {
 	
 	event.remove({ id: 'gtceu:extractor/extract_andesite_alloy_shaft' })
 
+	event.remove({ id: 'gtceu:extractor/extract_andesite_alloy' })
+	event.remove({ id: 'gtceu:extractor/extract_steel_alloy '})
+	event.remove({ id: 'gtceu:extractor/extract_aluminium_alloy' })
+	event.remove({ id: 'gtceu:extractor/extract_stainless_steel_alloy' })
+	event.remove({ id: 'gtceu:extractor/extract_titanium_alloy' })
+	event.remove({ id: 'gtceu:extractor/extract_tungsten_steel_alloy' })
+	event.remove({ id: 'gtceu:extractor/extract_rhodium_plated_palladium_alloy' })
+	event.remove({ id: 'gtceu:extractor/extract_naquadah_alloy_alloy' })
+	event.remove({ id: 'gtceu:extractor/extract_darmstadtium_alloy' })
+	event.remove({ id: 'gtceu:extractor/extract_neutronium_alloy' })
+
 	removeMaceratorRecipe(event, 'macerate_andesite_alloy')
 	removeMaceratorRecipe(event, 'macerate_steel_alloy')
 	removeMaceratorRecipe(event, 'macerate_aluminium_alloy')

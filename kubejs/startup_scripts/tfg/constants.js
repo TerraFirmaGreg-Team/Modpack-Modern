@@ -113,7 +113,8 @@ global.TFG_MACHINE_CASINGS = [
 	'machine_casing_blue_solar_panel',
 	'machine_casing_green_solar_panel',
 	'machine_casing_red_solar_panel',
-	'machine_casing_mars'
+	'machine_casing_mars',
+	'machine_casing_ostrum_carbon'
 ];
 
 /**

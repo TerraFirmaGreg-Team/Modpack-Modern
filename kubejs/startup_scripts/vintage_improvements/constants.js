@@ -86,7 +86,9 @@ global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 	'vintageimprovements:nethersteel_rod',
 	'vintageimprovements:andesite_rod',
 	'vintageimprovements:shadow_steel_rod',
-	'vintageimprovements:desh_rod'
+	'vintageimprovements:desh_rod',
+	'vintageimprovements:ostrum_rod',
+	'vintageimprovements:calorite_rod'
 ]
 
 global.VINTAGE_IMPROVEMENTS_DISABLED_BLOCKS = [

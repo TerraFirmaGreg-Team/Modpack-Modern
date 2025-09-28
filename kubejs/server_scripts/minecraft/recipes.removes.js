@@ -867,7 +867,7 @@ function removeMinecraftRecipes(event) {
 
 	//#endregion
 
-	event.remove({ id: 'ae2:entropy/cool/grass_block_dirt' }) // TODO: Сделать с тфк землей
+	event.remove({ id: 'ae2:entropy/cool/grass_block_dirt' })
 
 	//#region Выход: Высохшая земля
 

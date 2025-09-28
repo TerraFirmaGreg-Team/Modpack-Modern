@@ -8,15 +8,6 @@ const registerTFGBlocks = (event) => {
 	registerTFGAqueductBlocks(event)
 	registerTFGCrops(event)
 
-	event.create('tfg:artificial_end_portal_frame')
-		.stoneSoundType()
-		.tagBlock('minecraft:mineable/pickaxe')
-		.requiresTool(true)
-		.fullBlock(true)
-		.item(item => {
-			item.modelJson({ parent: 'minecraft:block/end_portal_frame' })
-		})
-
 	event.create('tfg:dry_ice', 'tfg:particle_emitter')
 		.textureAll('tfg:block/dry_ice')
 		.soundType('bone_block')
@@ -32,6 +23,21 @@ const registerTFGBlocks = (event) => {
 		.particle('minecraft:campfire_cosy_smoke')
 		.particleCount(2)
 		.particleForced(false)
+		
+	event.create('tfg:exhaust_vent_particle', 'tfg:particle_emitter')
+		.textureAll('tfg:block/titanium_concrete')
+		.soundType('metal')
+		.hardness(5)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+		.mapColor('color_black')
+		.speedFactor(1.1)
+		.particleOffset(5, 1, 5)
+		.particleVelocity(0.0, 0.1, 0.0)
+		.particle('minecraft:campfire_signal_smoke')
+		.particleCount(50)
+		.particleForced(true)
 
 	// #region Machine Casings
 
@@ -119,6 +125,22 @@ const registerTFGBlocks = (event) => {
 		.mapColor('color_light_gray')
 
 	//#endregion
+	
+	event.create('tfg:titanium_concrete')
+		.translationKey('block.tfg.titanium_concrete')
+		.model('tfg:block/concrete/titanium_concrete')
+		.soundType('stone')
+		.mapColor('stone')
+		.tagBlock('minecraft:mineable/pickaxe')
+		
+		
+	event.create('tfg:polished_titanium_concrete')
+		.translationKey('block.tfg.polidhed_titanium_concrete')
+		.model('tfg:block/concrete/polished_titanium_concrete')
+		.soundType('stone')
+		.mapColor('stone')
+		.tagBlock('minecraft:mineable/pickaxe')
+		
 
 	// #region Decorative vases
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
@@ -234,19 +256,8 @@ const registerTFGBlocks = (event) => {
 
 	// #endregion
 
-	// #region Deprecated
-
-	event.create('treetap:tap')
-		.requiresTool(false)
-		.textureAll('tfg:item/deprecated')
-
-	event.create('tfcea:refrigerator')
-		.requiresTool(false)
-		.textureAll('tfg:item/deprecated')
-
-	// #endregion
-
 	// #region Reconstituted Stone
+
 	event.create(`tfg:rock/stone_wall`, 'wall')
 			.soundType(global.STONE_CHARACS.reconstituted.sound)
 			.textureAll('minecraft:block/stone')
@@ -281,4 +292,16 @@ const registerTFGBlocks = (event) => {
 	})
 
 	// #endregion Reconstituted Stone
+  
+  // #region Deprecated
+
+	event.create('treetap:tap')
+		.requiresTool(false)
+		.textureAll('tfg:item/deprecated')
+
+	event.create('tfcea:refrigerator')
+		.requiresTool(false)
+		.textureAll('tfg:item/deprecated')
+
+	// #endregion
 }

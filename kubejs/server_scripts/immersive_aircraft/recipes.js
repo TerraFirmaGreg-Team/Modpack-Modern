@@ -201,7 +201,7 @@ function registerImmersiveAircraftRecipes(event) {
 	],{
 		A: '#forge:tools/wrenches',
 		B: 'minecraft:comparator',
-		C: 'ae2:quartz_glass',
+		C: '#forge:gems/quartzite',
 		D: 'gtceu:small_brass_gear',
 		E: 'firmaciv:firmaciv_compass',
 		F: 'gtceu:aluminium_screw',
