@@ -437,7 +437,7 @@ const registerTFGMaterials = (event) => {
 		.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(58))
 		.color('0xD08957')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.components('80x carbon_dioxide', '7x nitrogen', '5x argon', '3x oxygen', '1x carbon_monoxide', '1x deuterium', '1x neon', '1x krypton', '1x xenon')
+		.components('80x carbon_dioxide', '7x nitrogen', '5x argon', '3x oxygen', '1x neon', '1x krypton', '1x xenon')
 
 	// #endregion
 }
