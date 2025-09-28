@@ -7,15 +7,6 @@ const registerTFGBlocks = (event) => {
 	registerTFGSupportBlocks(event)
 	registerTFGCrops(event)
 
-	event.create('tfg:artificial_end_portal_frame')
-		.stoneSoundType()
-		.tagBlock('minecraft:mineable/pickaxe')
-		.requiresTool(true)
-		.fullBlock(true)
-		.item(item => {
-			item.modelJson({ parent: 'minecraft:block/end_portal_frame' })
-		})
-
 	event.create('tfg:dry_ice', 'tfg:particle_emitter')
 		.textureAll('tfg:block/dry_ice')
 		.soundType('bone_block')

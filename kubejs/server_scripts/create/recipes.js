@@ -1521,7 +1521,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: 'gtceu:treated_wood_planks',
 		B: 'create:water_wheel',
-		C: '#forge:rods/steel'
+		C: '#forge:plates/steel'
 	}).id('create:shaped/large_water_wheel')
 
 	// #endregion
@@ -2004,19 +2004,18 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/wrench')
 
 	event.shaped('create:goggles', [
-		'DBD',
+		'BBB',
 		'AEA',
 		'C C'
 	], {
 		A: '#forge:rings/brass',
-		B: '#forge:leather',
+		B: 'sns:leather_strip',
 		C: 'tfc:lens',
-		D: 'tfc:glue',
 		E: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/goggles')
 
 	event.recipes.gtceu.assembler('create:goggles')
-		.itemInputs('2x #forge:rings/brass', '#forge:leather', '2x tfc:lens')
+		.itemInputs('2x #forge:rings/brass', '3x sns:leather_strip', '2x tfc:lens')
 		.itemOutputs('create:goggles')
 		.circuit(10)
 		.duration(50)

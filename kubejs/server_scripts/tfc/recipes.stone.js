@@ -576,13 +576,7 @@ function registerTFCStoneRecipes(event) {
 
 		//#endregion
 
-
-		event.custom({
-			type: "tfc:collapse",
-			ingredient: {
-				tag: `forge:ores_in_ground/${stone}`
-			},
-			result: `tfc:rock/cobble/${stone}`
-		}).id(`tfg:collapse/${stone}_gt_ores`)
+		event.recipes.tfc.collapse(`tfc:rock/cobble/${stone}`, `#forge:ores_in_ground/${stone}`)
+			.id(`tfg:collapse/${stone}_gt_ores`)
 	})
 }

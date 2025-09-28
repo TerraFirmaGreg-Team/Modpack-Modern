@@ -10,7 +10,6 @@ const registerTFGRecipes = (event) => {
 	registerTFGRockRecipes(event)
 	registerTFGCollapseRecipes(event)
 	registerTFGMoldRecipes(event)
-	registerTFGTerrariumRecipes(event)
 	registerTFGMedicineRecipes(event)
 	registerTFGMiscellaneousRecipes(event)
 	registerTFGSupportRecipes(event)
@@ -23,6 +22,4 @@ const registerTFGRecipes = (event) => {
 	registerTFGNuclearRecipes(event)
 	registerTFGBioreactorRecipes(event)
 	registerTFGSpaceOres(event)
-
-	
 }
