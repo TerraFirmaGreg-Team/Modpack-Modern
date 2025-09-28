@@ -7,25 +7,24 @@ function registerTFCStoneRecipes(event) {
 
 		let stoneMaterial = TFGHelpers.getMaterial(stone);
 		let stoneDust = ChemicalHelper.get(TagPrefix.dust, stoneMaterial, 1)
-		let smallStoneDust = ChemicalHelper.get(TagPrefix.dustSmall, stoneMaterial, 1)
 
-		// Кирпич (предмет)
+		// Brick (item)
 		event.recipes.gtceu.cutter(`tfg:tfc/${stone}_loose_to_brick`)
 			.itemInputs(`tfc:rock/loose/${stone}`)
 			.itemOutputs(`tfc:brick/${stone}`)
 			.duration(10)
 			.EUt(2)
 
-		//#region Сырой камень
+		//#region Raw Stone
 
-		// Сырой камень -> Сырой камень
+		// Breaker Duping
 		event.recipes.gtceu.rock_breaker(`${stone}_raw`)
 			.notConsumable(`tfc:rock/raw/${stone}`)
 			.itemOutputs(`tfc:rock/raw/${stone}`)
 			.duration(16)
 			.EUt(7)
 
-		// Сырой камень -> Булыжник
+		// Hammering
 		event.recipes.gtceu.forge_hammer(`${stone}_raw_to_cobble`)
 			.itemInputs(`tfc:rock/raw/${stone}`)
 			.itemOutputs(`tfc:rock/cobble/${stone}`)
@@ -36,7 +35,7 @@ function registerTFCStoneRecipes(event) {
 			.recipeTier(1)
 			.id(`greate:pressing/${stone}_raw_to_cobble`)
 
-		// ? -> Сырая нажимная пластина
+		// Raw Pressure Plate
 		event.shaped(`tfc:rock/pressure_plate/${stone}`, [
 			' B ',
 			'CDC',
@@ -55,7 +54,7 @@ function registerTFCStoneRecipes(event) {
 			.duration(50)
 			.EUt(2)
 
-		// ? -> Сырая кнопка
+		// Raw Button
 		event.remove({ id: `tfc:crafting/rock/${stone}_button` })
 
 		generateCutterRecipe(event, `tfc:rock/pressure_plate/${stone}`, `6x tfc:rock/button/${stone}`, 50, 2, `${stone}_raw_button`)
@@ -92,87 +91,77 @@ function registerTFCStoneRecipes(event) {
 		
 		// #region Stonecutting
 
-		// Сырой камень -> Ступени
+		// Raw
 		event.remove({ id: `tfc:crafting/rock/${stone}_raw_stairs` })
-
-		// Сырой камень -> Плиты
 		event.remove({ id: `tfc:crafting/rock/${stone}_raw_slab` })
-
-		// Сырой камень -> Стена
 		event.remove({ id: `tfc:crafting/rock/${stone}_raw_wall` })
 
-		// Булыжник -> Ступени
+		// Cobble
 		event.remove({ id: `tfc:crafting/rock/${stone}_cobble_stairs` })
-
-		// Булыжник -> Плиты
 		event.remove({ id: `tfc:crafting/rock/${stone}_cobble_slab` })
-
-		// Булыжник -> Стена
 		event.remove({ id: `tfc:crafting/rock/${stone}_cobble_wall` })
 
-		// Булыжник -> Ступени
-		event.remove({ id: `tfc:crafting/rock/${stone}_smooth_stairs` })
-
-		// Булыжник -> Плиты
-		event.remove({ id: `tfc:crafting/rock/${stone}_smooth_slab` })
-
-		// Булыжник -> Стена
-		event.remove({ id: `tfc:crafting/rock/${stone}_smooth_wall` })
-
-		// Блок кирпичей -> Ступени
-		event.remove({ id: `tfc:crafting/rock/${stone}_bricks_stairs` })
-
-		// Блок кирпичей -> Плиты
-		event.remove({ id: `tfc:crafting/rock/${stone}_bricks_slab` })
-
-		// Блок кирпичей -> Стена
-		event.remove({ id: `tfc:crafting/rock/${stone}_bricks_wall` })
-
-		// Потрескавшийся кирпич -> Ступени
-		event.remove({ id: `tfc:crafting/rock/${stone}_cracked_bricks_stairs` })
-
-		// Потрескавшийся кирпич -> Плиты
-		event.remove({ id: `tfc:crafting/rock/${stone}_cracked_bricks_slab` })
-
-		// Потрескавшийся кирпич -> Стена
-		event.remove({ id: `tfc:crafting/rock/${stone}_cracked_bricks_wall` })
-
-		// Замшелый булыжник -> Ступени
+		// Mossy Cobble
 		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_cobble_stairs` })
-
-		//Замшелый булыжник -> Плиты
 		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_cobble_slab` })
-
-		// Замшелый булыжник -> Стена
 		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_cobble_wall` })
 
-		// Замшелый булыжник -> Ступени
+		// Smooth
+		event.remove({ id: `tfc:crafting/rock/${stone}_smooth_stairs` })
+		event.remove({ id: `tfc:crafting/rock/${stone}_smooth_slab` })
+		event.remove({ id: `tfc:crafting/rock/${stone}_smooth_wall` })
+
+		// Bricks
+		event.remove({ id: `tfc:crafting/rock/${stone}_bricks_stairs` })
+		event.remove({ id: `tfc:crafting/rock/${stone}_bricks_slab` })
+		event.remove({ id: `tfc:crafting/rock/${stone}_bricks_wall` })
+
+		// Cracked Bricks
+		event.remove({ id: `tfc:crafting/rock/${stone}_cracked_bricks_stairs` })
+		event.remove({ id: `tfc:crafting/rock/${stone}_cracked_bricks_slab` })
+		event.remove({ id: `tfc:crafting/rock/${stone}_cracked_bricks_wall` })
+
+		// Mossy Bricks
 		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_bricks_stairs` })
-
-		//Замшелый булыжник -> Плиты
 		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_bricks_slab` })
-
-		// Замшелый булыжник -> Стена
 		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_bricks_wall` })
 
-		// Укрепленный сырой камень -> Гладкий
+		//walls
+		event.remove({ id: `tfc:stonecutting/rock/${stone}_raw_wall` })
+		event.remove({ id: `tfc:stonecutting/rock/${stone}_cobble_wall` })
+		event.remove({ id: `tfc:stonecutting/rock/${stone}_mossy_cobble_wall` })
+		event.remove({ id: `tfc:stonecutting/rock/${stone}_smooth_wall` })
+		event.remove({ id: `tfc:stonecutting/rock/${stone}_bricks_wall` })
+		event.remove({ id: `tfc:stonecutting/rock/${stone}_cracked_bricks_wall` })
+		event.remove({ id: `tfc:stonecutting/rock/${stone}_mossy_bricks_wall` })
+
+		// Hardened -> Smooth
 		event.stonecutting(`tfc:rock/smooth/${stone}`, `tfc:rock/hardened/${stone}`).id(`hardened_${stone}_to_smooth`)
 
-		// Блок кирпичей -> Резной кирпич
+		// Chiseled Brick -> Brick
 		event.stonecutting(`tfc:rock/chiseled/${stone}`, `tfc:rock/bricks/${stone}`).id(`chiseled_${stone}`)
+
+		//Walls
+		event.stonecutting(`2x tfc:rock/raw/${stone}_wall`, `tfc:rock/raw/${stone}`).id(`raw_to_${stone}_raw_wall`)
+		event.stonecutting(`2x tfc:rock/cobble/${stone}_wall`, `tfc:rock/cobble/${stone}`).id(`cobble_to_${stone}_cobble_wall`)
+		event.stonecutting(`2x tfc:rock/mossy_cobble/${stone}_wall`, `tfc:rock/mossy_cobble/${stone}`).id(`mossy_cobble_to_${stone}_mossy_cobble_wall`)
+		event.stonecutting(`2x tfc:rock/smooth/${stone}_wall`, `tfc:rock/smooth/${stone}`).id(`smooth_to_${stone}_smooth_wall`)
+		event.stonecutting(`2x tfc:rock/bricks/${stone}_wall`, `tfc:rock/bricks/${stone}`).id(`bricks_to_${stone}_bricks_wall`)
+		event.stonecutting(`2x tfc:rock/cracked_bricks/${stone}_wall`, `tfc:rock/cracked_bricks/${stone}`).id(`cracked_bricks_to_${stone}_cracked_bricks_wall`)
+		event.stonecutting(`2x tfc:rock/mossy_bricks/${stone}_wall`, `tfc:rock/mossy_bricks/${stone}`).id(`mossy_bricks_to_${stone}_mossy_bricks_wall`)
 
 		// #endregion
 
-		//#region Булыжник
+		//#region Cobblestone
 
-		// Булыжник -> Булыжник
+		// Breaker Dupe
 		event.recipes.gtceu.rock_breaker(`${stone}_cobble`)
 			.notConsumable(`tfc:rock/cobble/${stone}`)
 			.itemOutputs(`tfc:rock/cobble/${stone}`)
 			.duration(16)
 			.EUt(7)
 
-		// Булыжник -> Гравий
+		// Hammering Cobble -> Gravel
 		event.recipes.gtceu.forge_hammer(`${stone}_cobble_to_gravel`)
 			.itemInputs(`tfc:rock/cobble/${stone}`)
 			.itemOutputs(`tfc:rock/gravel/${stone}`)
@@ -183,7 +172,7 @@ function registerTFCStoneRecipes(event) {
 			.recipeTier(1)
 			.id(`greate:pressing/${stone}_cobble_to_gravel`)
 
-		// Камни -> Булыжник
+		// Glueing Losse to Cobble
 		event.shaped(`tfc:rock/cobble/${stone}`, [
 			'ABA',
 			'BAB',
@@ -204,7 +193,7 @@ function registerTFCStoneRecipes(event) {
 		// #endregion
 
 
-		//#region Кирпич -> Блок кирпичей
+		//#region Bricks Glueing
 
 		event.recipes.gtceu.assembler(`bricks_${stone}`)
 			.itemInputs(`5x tfc:brick/${stone}`)
@@ -216,7 +205,7 @@ function registerTFCStoneRecipes(event) {
 
 		//#endregion
 
-		//#region Кирпич -> Потрескавшийся кирпич
+		//#region Cracking Bricks
 
 		event.recipes.gtceu.forge_hammer(`cracked_bricks_${stone}`)
 			.itemInputs(`tfc:rock/bricks/${stone}`)
@@ -230,9 +219,9 @@ function registerTFCStoneRecipes(event) {
 
 		//#endregion
 
-		//#region Замшелый булыжник
+		//#region Mossy Cobble
 
-		// Булыжник -> Замшелый булыжник
+		// Cobble -> Mossy Cobble
 		event.shaped(`tfc:rock/mossy_cobble/${stone}`, [
 			'ABA',
 			'BAB',
@@ -260,7 +249,7 @@ function registerTFCStoneRecipes(event) {
 
 		//#endregion
 
-		//#region Блок кирпичей -> Замшелый кирпич
+		//#region Bricks -> Mossy Bricks
 
 		event.recipes.gtceu.assembler(`mossy_bricks_${stone}`)
 			.itemInputs(`tfc:rock/bricks/${stone}`, '#tfc:compost_greens_low')
@@ -272,7 +261,7 @@ function registerTFCStoneRecipes(event) {
 
 		//#endregion
 
-		//#region Укрепленный камень
+		//#region Hardened
 
 		event.recipes.gtceu.assembler(`hardened_${stone}`)
 			.itemInputs(`5x tfc:rock/raw/${stone}`)
@@ -284,7 +273,7 @@ function registerTFCStoneRecipes(event) {
 
 		//#endregion
 
-		//#region Укрепленный камень
+		//#region Smooth
 
 		event.recipes.gtceu.assembler(`smooth_${stone}`)
 			.itemInputs(`8x tfc:rock/raw/${stone}`)
@@ -296,7 +285,7 @@ function registerTFCStoneRecipes(event) {
 
 		//#endregion
 
-		//#region Акведук
+		//#region Aqueduct
 
 		event.recipes.gtceu.assembler(`aqueduct_${stone}`)
 			.itemInputs(`3x tfc:brick/${stone}`)
@@ -308,11 +297,14 @@ function registerTFCStoneRecipes(event) {
 
 		//#endregion
 
-		//#region Декрафт блоков камня в пыль
+		//#region Macerator
+		//
+		//
+		//
+		//
+		//#region Whole Blocks
 
-		//#region Целый блок
-
-		// Сырой
+		// Raw
 		event.recipes.gtceu.macerator(`raw_${stone}_to_dust`)
 			.itemInputs(`tfc:rock/raw/${stone}`)
 			.itemOutputs(stoneDust)
@@ -320,7 +312,15 @@ function registerTFCStoneRecipes(event) {
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
-		// Булыжник
+		// Hardened
+		event.recipes.gtceu.macerator(`hardened_${stone}_to_dust`)
+			.itemInputs(`tfc:rock/hardened/${stone}`)
+			.itemOutputs(stoneDust.withCount(2))
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+		// Cobble
 		event.recipes.gtceu.macerator(`cobble_${stone}_to_dust`)
 			.itemInputs(`tfc:rock/cobble/${stone}`)
 			.itemOutputs(stoneDust)
@@ -328,31 +328,7 @@ function registerTFCStoneRecipes(event) {
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
-		// Гладкий
-		event.recipes.gtceu.macerator(`smooth_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/smooth/${stone}`)
-			.itemOutputs(stoneDust)
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		// Кирпичи
-		event.recipes.gtceu.macerator(`bricks_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/bricks/${stone}`)
-			.itemOutputs(stoneDust)
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		// Потрескавшиеся кирпичи
-		event.recipes.gtceu.macerator(`cracked_bricks_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/cracked_bricks/${stone}`)
-			.itemOutputs(stoneDust)
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		// Замшелый булыжник
+		// Mossy Cobble
 		event.recipes.gtceu.macerator(`mossy_cobble_${stone}_to_dust`)
 			.itemInputs(`tfc:rock/mossy_cobble/${stone}`)
 			.itemOutputs(stoneDust)
@@ -360,7 +336,31 @@ function registerTFCStoneRecipes(event) {
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
-		// Замшелый кирпич
+		// Smooth
+		event.recipes.gtceu.macerator(`smooth_${stone}_to_dust`)
+			.itemInputs(`tfc:rock/smooth/${stone}`)
+			.itemOutputs(stoneDust)
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+		// Bricks
+		event.recipes.gtceu.macerator(`bricks_${stone}_to_dust`)
+			.itemInputs(`tfc:rock/bricks/${stone}`)
+			.itemOutputs(stoneDust)
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+		// Cracked Bricks
+		event.recipes.gtceu.macerator(`cracked_bricks_${stone}_to_dust`)
+			.itemInputs(`tfc:rock/cracked_bricks/${stone}`)
+			.itemOutputs(stoneDust)
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+		// Mossy Bricks
 		event.recipes.gtceu.macerator(`mossy_bricks_${stone}_to_dust`)
 			.itemInputs(`tfc:rock/mossy_bricks/${stone}`)
 			.itemOutputs(stoneDust)
@@ -368,129 +368,137 @@ function registerTFCStoneRecipes(event) {
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
+		// Chiseled
+		event.recipes.gtceu.macerator(`chiseled_${stone}_to_dust`)
+			.itemInputs(`tfc:rock/chiseled/${stone}`)
+			.itemOutputs(stoneDust)
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
 		//#endregion
 
-		//#region Ступень
+		//#region Stairs
 
-		// Сырой
+		// Raw
 		event.recipes.gtceu.macerator(`raw_stairs_${stone}_to_dust`)
 			.itemInputs(`tfc:rock/raw/${stone}_stairs`)
-			.itemOutputs(smallStoneDust.withCount(6))
+			.itemOutputs(stoneDust)
 			.duration(150)
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
-		// Булыжник
+		// Cobble
 		event.recipes.gtceu.macerator(`cobble_stairs_${stone}_to_dust`)
 			.itemInputs(`tfc:rock/cobble/${stone}_stairs`)
-			.itemOutputs(smallStoneDust.withCount(6))
+			.itemOutputs(stoneDust)
 			.duration(150)
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
-		// Гладкий
-		event.recipes.gtceu.macerator(`smooth_stairs_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/smooth/${stone}_stairs`)
-			.itemOutputs(smallStoneDust.withCount(6))
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		// Кирпичи
-		event.recipes.gtceu.macerator(`bricks_stairs_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/bricks/${stone}_stairs`)
-			.itemOutputs(smallStoneDust.withCount(6))
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		// Потрескавшиеся кирпичи
-		event.recipes.gtceu.macerator(`cracked_bricks_stairs_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/cracked_bricks/${stone}_stairs`)
-			.itemOutputs(smallStoneDust.withCount(6))
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		// Замшелый булыжник
+		// Mossy Cobble
 		event.recipes.gtceu.macerator(`mossy_cobble_stairs_${stone}_to_dust`)
 			.itemInputs(`tfc:rock/mossy_cobble/${stone}_stairs`)
-			.itemOutputs(smallStoneDust.withCount(6))
+			.itemOutputs(stoneDust)
 			.duration(150)
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
-		// Замшелый кирпич
+		// Smooth
+		event.recipes.gtceu.macerator(`smooth_stairs_${stone}_to_dust`)
+			.itemInputs(`tfc:rock/smooth/${stone}_stairs`)
+			.itemOutputs(stoneDust)
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+		// Bricks
+		event.recipes.gtceu.macerator(`bricks_stairs_${stone}_to_dust`)
+			.itemInputs(`tfc:rock/bricks/${stone}_stairs`)
+			.itemOutputs(stoneDust)
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+		// Cracked Bricks
+		event.recipes.gtceu.macerator(`cracked_bricks_stairs_${stone}_to_dust`)
+			.itemInputs(`tfc:rock/cracked_bricks/${stone}_stairs`)
+			.itemOutputs(stoneDust)
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+		// Mossy Bricks
 		event.recipes.gtceu.macerator(`mossy_bricks_stairs_${stone}_to_dust`)
 			.itemInputs(`tfc:rock/mossy_bricks/${stone}_stairs`)
-			.itemOutputs(smallStoneDust.withCount(6))
+			.itemOutputs(stoneDust)
 			.duration(150)
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 		//#endregion
 
-		//#region Плита
+		//#region Slab
 
-		// Сырой
+		// Raw
 		event.recipes.gtceu.macerator(`raw_slab_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/raw/${stone}_slab`)
-			.itemOutputs(smallStoneDust.withCount(2))
+			.itemInputs(`2x tfc:rock/raw/${stone}_slab`)
+			.itemOutputs(stoneDust)
 			.duration(150)
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
-		// Булыжник
+		// Cobble
 		event.recipes.gtceu.macerator(`cobble_slab_${stone}_to_dust`)
 			.itemInputs(`tfc:rock/cobble/${stone}_slab`)
-			.itemOutputs(smallStoneDust.withCount(2))
+			.itemOutputs(stoneDust)
 			.duration(150)
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
-		// Гладкий
-		event.recipes.gtceu.macerator(`smooth_slab_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/smooth/${stone}_slab`)
-			.itemOutputs(smallStoneDust.withCount(2))
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		// Кирпичи
-		event.recipes.gtceu.macerator(`bricks_slab_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/bricks/${stone}_slab`)
-			.itemOutputs(smallStoneDust.withCount(2))
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		// Потрескавшиеся кирпичи
-		event.recipes.gtceu.macerator(`cracked_bricks_slab_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/cracked_bricks/${stone}_slab`)
-			.itemOutputs(smallStoneDust.withCount(2))
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		// Замшелый булыжник
+		// Mossy Cobble
 		event.recipes.gtceu.macerator(`mossy_cobble_slab_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/mossy_cobble/${stone}_slab`)
-			.itemOutputs(smallStoneDust.withCount(2))
+			.itemInputs(`2x tfc:rock/mossy_cobble/${stone}_slab`)
+			.itemOutputs(stoneDust)
 			.duration(150)
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
-		// Замшелый кирпич
+		// Smooth
+		event.recipes.gtceu.macerator(`smooth_slab_${stone}_to_dust`)
+			.itemInputs(`2x tfc:rock/smooth/${stone}_slab`)
+			.itemOutputs(stoneDust)
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+		// Bricks
+		event.recipes.gtceu.macerator(`bricks_slab_${stone}_to_dust`)
+			.itemInputs(`2x tfc:rock/bricks/${stone}_slab`)
+			.itemOutputs(stoneDust)
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+		// Cracked Bricks
+		event.recipes.gtceu.macerator(`cracked_bricks_slab_${stone}_to_dust`)
+			.itemInputs(`2x tfc:rock/cracked_bricks/${stone}_slab`)
+			.itemOutputs(stoneDust)
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+		// Mossy Bricks
 		event.recipes.gtceu.macerator(`mossy_bricks_slab_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/mossy_bricks/${stone}_slab`)
-			.itemOutputs(smallStoneDust.withCount(2))
+			.itemInputs(`2x tfc:rock/mossy_bricks/${stone}_slab`)
+			.itemOutputs(stoneDust)
 			.duration(150)
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 		//#endregion
 
-		//#region Стена
+		//#region Walls
 
 		event.recipes.tfc.chisel(`tfc:rock/raw/${stone}_wall`, `tfc:rock/raw/${stone}_slab`, 'smooth')
 		event.recipes.tfc.chisel(`tfc:rock/cobble/${stone}_wall`, `tfc:rock/cobble/${stone}_slab`, 'smooth')
@@ -500,80 +508,63 @@ function registerTFCStoneRecipes(event) {
 		event.recipes.tfc.chisel(`tfc:rock/mossy_cobble/${stone}_wall`, `tfc:rock/mossy_cobble/${stone}_slab`, 'smooth')
 		event.recipes.tfc.chisel(`tfc:rock/mossy_bricks/${stone}_wall`, `tfc:rock/mossy_bricks/${stone}_slab`, 'smooth')
 
-		// Сырой
+		// Raw
 		event.recipes.gtceu.macerator(`raw_wall_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/raw/${stone}_wall`)
+			.itemInputs(`2x tfc:rock/raw/${stone}_wall`)
 			.itemOutputs(stoneDust)
 			.duration(150)
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
-		// Булыжник
+		// Cobble
 		event.recipes.gtceu.macerator(`cobble_wall_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/cobble/${stone}_wall`)
+			.itemInputs(`2x tfc:rock/cobble/${stone}_wall`)
 			.itemOutputs(stoneDust)
 			.duration(150)
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
-		// Гладкий
-		event.recipes.gtceu.macerator(`smooth_wall_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/smooth/${stone}_wall`)
-			.itemOutputs(stoneDust)
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		// Кирпичи
-		event.recipes.gtceu.macerator(`bricks_wall_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/bricks/${stone}_wall`)
-			.itemOutputs(stoneDust)
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		// Потрескавшиеся кирпичи
-		event.recipes.gtceu.macerator(`cracked_bricks_wall_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/cracked_bricks/${stone}_wall`)
-			.itemOutputs(stoneDust)
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		// Замшелый булыжник
+		// Mossy Cobble
 		event.recipes.gtceu.macerator(`mossy_cobble_wall_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/mossy_cobble/${stone}_wall`)
+			.itemInputs(`2x tfc:rock/mossy_cobble/${stone}_wall`)
 			.itemOutputs(stoneDust)
 			.duration(150)
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
-		// Замшелый кирпич
+		// Smooth
+		event.recipes.gtceu.macerator(`smooth_wall_${stone}_to_dust`)
+			.itemInputs(`2x tfc:rock/smooth/${stone}_wall`)
+			.itemOutputs(stoneDust)
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+		// Bricks
+		event.recipes.gtceu.macerator(`bricks_wall_${stone}_to_dust`)
+			.itemInputs(`2x tfc:rock/bricks/${stone}_wall`)
+			.itemOutputs(stoneDust)
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+		// Cracked Bricks
+		event.recipes.gtceu.macerator(`cracked_bricks_wall_${stone}_to_dust`)
+			.itemInputs(`2x tfc:rock/cracked_bricks/${stone}_wall`)
+			.itemOutputs(stoneDust)
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+		// Mossy Bricks
 		event.recipes.gtceu.macerator(`mossy_bricks_wall_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/mossy_bricks/${stone}_wall`)
+			.itemInputs(`2x tfc:rock/mossy_bricks/${stone}_wall`)
 			.itemOutputs(stoneDust)
 			.duration(150)
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 		//#endregion
-
-		// Резной кирпич
-		event.recipes.gtceu.macerator(`chiseled_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/chiseled/${stone}`)
-			.itemOutputs(stoneDust)
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		// Укрепленный
-		event.recipes.gtceu.macerator(`hardened_${stone}_to_dust`)
-			.itemInputs(`tfc:rock/hardened/${stone}`)
-			.itemOutputs(stoneDust.withCount(2))
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
 		//#endregion
 
 		event.recipes.tfc.collapse(`tfc:rock/cobble/${stone}`, `#forge:ores_in_ground/${stone}`)

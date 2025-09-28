@@ -665,7 +665,6 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:stone_bricks', 'gtceu:red_granite_bricks')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:red_granite_bricks')
 	event.add('tfc:rock/bricks', 'gtceu:red_granite_bricks')
-	event.add('tfg:red_granite_cutter_set', 'gtceu:red_granite_bricks')
 
 	event.add('forge:stone_bricks', 'gtceu:mossy_red_granite_bricks')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:mossy_red_granite_bricks')
@@ -681,43 +680,36 @@ const registerTFGItemTags = (event) => {
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:red_granite_tile')
 	event.add('tfc:rock/bricks', 'gtceu:red_granite_tile')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:red_granite_tile')
-	event.add('tfg:red_granite_cutter_set', 'gtceu:red_granite_tile')
 
 	event.add('forge:stone_bricks', 'gtceu:square_red_granite_bricks')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:square_red_granite_bricks')
 	event.add('tfc:rock/bricks', 'gtceu:square_red_granite_bricks')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:square_red_granite_bricks')
-	event.add('tfg:red_granite_cutter_set', 'gtceu:square_red_granite_bricks')
 
 	event.add('forge:stone_bricks', 'gtceu:red_granite_windmill_a')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:red_granite_windmill_a')
 	event.add('tfc:rock/bricks', 'gtceu:red_granite_windmill_a')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:red_granite_windmill_a')
-	event.add('tfg:red_granite_cutter_set', 'gtceu:red_granite_windmill_a')
 
 	event.add('forge:stone_bricks', 'gtceu:red_granite_windmill_b')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:red_granite_windmill_b')
 	event.add('tfc:rock/bricks', 'gtceu:red_granite_windmill_b')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:red_granite_windmill_b')
-	event.add('tfg:red_granite_cutter_set', 'gtceu:red_granite_windmill_b')
 
 	event.add('forge:stone_bricks', 'gtceu:small_red_granite_bricks')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:small_red_granite_bricks')
 	event.add('tfc:rock/bricks', 'gtceu:small_red_granite_bricks')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:small_red_granite_bricks')
-	event.add('tfg:red_granite_cutter_set', 'gtceu:small_red_granite_bricks')
 
 	event.add('forge:stone_bricks', 'gtceu:red_granite_small_tile')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:red_granite_small_tile')
 	event.add('tfc:rock/bricks', 'gtceu:red_granite_small_tile')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:red_granite_small_tile')
-	event.add('tfg:red_granite_cutter_set', 'gtceu:red_granite_small_tile')
 
 	event.add('forge:stone_bricks', 'gtceu:chiseled_red_granite')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:chiseled_red_granite')
 	event.add('tfc:rock/bricks', 'gtceu:chiseled_red_granite')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:chiseled_red_granite')
-	event.add('tfg:red_granite_cutter_set', 'gtceu:chiseled_red_granite')	
 	
 	// Permafrost (???) [NA]
 	event.remove('tfc:metamorphic_rock', 'tfg:loose/permafrost')

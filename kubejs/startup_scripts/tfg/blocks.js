@@ -5,6 +5,7 @@ const registerTFGBlocks = (event) => {
 	registerTFGNetherBlocks(event)
 	registerTFGSpaceBlocks(event)
 	registerTFGSupportBlocks(event)
+	registerTFGAqueductBlocks(event)
 	registerTFGCrops(event)
 
 	event.create('tfg:dry_ice', 'tfg:particle_emitter')
@@ -255,12 +256,13 @@ const registerTFGBlocks = (event) => {
 
 	// #endregion
 
-	// #region Reconstructed Stone
+	// #region Reconstituted Stone
+
 	event.create(`tfg:rock/stone_wall`, 'wall')
-			.soundType('stone')
+			.soundType(global.STONE_CHARACS.reconstituted.sound)
 			.textureAll('minecraft:block/stone')
 			.tagBoth('tfg:rock_wall')
-			.mapColor('stone')
+			.mapColor(global.STONE_CHARACS.reconstituted.mapColor)
 			.tagBlock('minecraft:mineable/pickaxe')
 			.fullBlock(true)
 			.opaque(true)
@@ -268,10 +270,10 @@ const registerTFGBlocks = (event) => {
 	let SHAPES = ['stairs', 'wall']
 	SHAPES.forEach(shape => {
 		event.create(`tfg:rock/smooth_stone_${shape}`, shape)
-			.soundType('stone')
+			.soundType(global.STONE_CHARACS.reconstituted.sound)
 			.textureAll('minecraft:block/smooth_stone')
 			.tagBoth(`tfg:rock_${shape}s`.replace(/ss/g, 's'))
-			.mapColor('stone')
+			.mapColor(global.STONE_CHARACS.reconstituted.mapColor)
 			.tagBlock('minecraft:mineable/pickaxe')
 			.fullBlock(true)
 			.opaque(true)
@@ -280,14 +282,26 @@ const registerTFGBlocks = (event) => {
 	SHAPES = ['stairs', 'slab', 'wall']
 	SHAPES.forEach(shape => {
 		event.create(`tfg:rock/cracked_bricks_stone_${shape}`, shape)
-			.soundType('stone')
+			.soundType(global.STONE_CHARACS.reconstituted.sound)
 			.textureAll('minecraft:block/cracked_stone_bricks')
 			.tagBoth(`tfg:brick_${shape}s`.replace(/ss/g, 's'))
-			.mapColor('stone')
+			.mapColor(global.STONE_CHARACS.reconstituted.mapColor)
 			.tagBlock('minecraft:mineable/pickaxe')
 			.fullBlock(true)
 			.opaque(true)
 	})
 
-	// #endregion Reconstructed Stone
+	// #endregion Reconstituted Stone
+  
+  // #region Deprecated
+
+	event.create('treetap:tap')
+		.requiresTool(false)
+		.textureAll('tfg:item/deprecated')
+
+	event.create('tfcea:refrigerator')
+		.requiresTool(false)
+		.textureAll('tfg:item/deprecated')
+
+	// #endregion
 }

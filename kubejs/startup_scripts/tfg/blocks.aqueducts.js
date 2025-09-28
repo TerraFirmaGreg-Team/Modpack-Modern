@@ -1,0 +1,86 @@
+function registerTFGAqueductBlocks(event) {
+
+    // Nether
+    event.create('tfg:rock/aqueduct_deepslate', 'tfc:aqueduct')
+        .soundType(global.STONE_CHARACS.deepslate.sound)
+        .textureAll('minecraft:block/deepslate_bricks')
+        .mapColor(global.STONE_CHARACS.deepslate.mapColor)
+        .tagBoth(`tfc:${global.STONE_CHARACS.deepslate.type}_items`)
+        .tagBoth('tfg:rock/aqueducts')
+
+    event.create('tfg:rock/aqueduct_dripstone', 'tfc:aqueduct')
+        .soundType(global.STONE_CHARACS.dripstone.sound)
+        .textureAll('create:block/palettes/stone_types/brick/dripstone_cut_brick')
+        .mapColor(global.STONE_CHARACS.dripstone.mapColor)
+        .tagBoth(`tfc:${global.STONE_CHARACS.dripstone.type}_items`)
+        .tagBoth('tfg:rock/aqueducts')
+
+    event.create('tfg:rock/aqueduct_nether', 'tfc:aqueduct')
+        .soundType(global.STONE_CHARACS.nether.sound)
+        .textureAll('minecraft:block/nether_bricks')
+        .mapColor(global.STONE_CHARACS.nether.mapColor)
+        .tagBoth(`tfc:${global.STONE_CHARACS.nether.type}_items`)
+        .tagBoth('tfg:rock/aqueducts')
+
+    event.create('tfg:rock/aqueduct_moon_stone', 'tfc:aqueduct')
+        .soundType(global.STONE_CHARACS.moon.sound)
+        .textureAll('ad_astra:block/moon_stone_bricks')
+        .mapColor(global.STONE_CHARACS.moon.mapColor)
+        .tagBoth(`tfc:${global.STONE_CHARACS.moon.type}_items`)
+        .tagBoth('tfg:rock/aqueducts')
+
+    event.create('tfg:rock/aqueduct_moon_deepslate', 'tfc:aqueduct')
+        .soundType(global.STONE_CHARACS.moon_deepslate.sound)
+        .textureAll('tfg:block/rock/bricks_moon_deepslate')
+        .mapColor(global.STONE_CHARACS.moon_deepslate.mapColor)
+        .tagBoth(`tfc:${global.STONE_CHARACS.moon_deepslate.type}_items`)
+        .tagBoth('tfg:rock/aqueducts')
+
+    event.create('tfg:rock/aqueduct_mars_stone', 'tfc:aqueduct')
+        .soundType(global.STONE_CHARACS.mars.sound)
+        .textureAll('ad_astra:block/mars_stone_bricks')
+        .mapColor(global.STONE_CHARACS.mars.mapColor)
+        .tagBoth(`tfc:${global.STONE_CHARACS.mars.type}_items`)
+        .tagBoth('tfg:rock/aqueducts')
+
+    event.create('tfg:rock/aqueduct_venus_stone', 'tfc:aqueduct')
+        .soundType(global.STONE_CHARACS.venus.sound)
+        .textureAll('ad_astra:block/venus_stone_bricks')
+        .mapColor(global.STONE_CHARACS.venus.mapColor)
+        .tagBoth(`tfc:${global.STONE_CHARACS.venus.type}_items`)
+        .tagBoth('tfg:rock/aqueducts')
+
+    event.create('tfg:rock/aqueduct_mercury_stone', 'tfc:aqueduct')
+        .soundType(global.STONE_CHARACS.mercury.sound)
+        .textureAll('ad_astra:block/mercury_stone_bricks')
+        .mapColor(global.STONE_CHARACS.mercury.mapColor)
+        .tagBoth(`tfc:${global.STONE_CHARACS.mercury.type}_items`)
+        .tagBoth('tfg:rock/aqueducts')
+
+    event.create('tfg:rock/aqueduct_glacio_stone', 'tfc:aqueduct')
+        .soundType(global.STONE_CHARACS.glacio.sound)
+        .textureAll('ad_astra:block/glacio_stone_bricks')
+        .mapColor(global.STONE_CHARACS.glacio.mapColor)
+        .tagBoth(`tfc:${global.STONE_CHARACS.glacio.type}_items`)
+        .tagBoth('tfg:rock/aqueducts')
+
+    event.create('tfg:rock/aqueduct_permafrost', 'tfc:aqueduct')
+        .soundType(global.STONE_CHARACS.permafrost.sound)
+        .textureAll('ad_astra:block/permafrost_bricks')
+        .mapColor(global.STONE_CHARACS.permafrost.mapColor)
+        .tagBoth('tfg:rock/aqueducts')
+
+    event.create('tfg:rock/aqueduct_red_granite', 'tfc:aqueduct')
+        .soundType(global.STONE_CHARACS.red_granite.sound)
+        .textureAll('gtceu:block/stones/red_granite/bricks')
+        .mapColor(global.STONE_CHARACS.red_granite.mapColor)
+        .tagBoth(`tfc:${global.STONE_CHARACS.red_granite.type}_items`)
+        .tagBoth('tfg:rock/aqueducts')
+
+    event.create('tfg:rock/aqueduct_stone', 'tfc:aqueduct')
+        .soundType(global.STONE_CHARACS.reconstituted.sound)
+        .textureAll('minecraft:block/stone_bricks')
+        .mapColor(global.STONE_CHARACS.reconstituted.mapColor)
+        .tagBoth('tfg:rock/aqueducts')
+
+}
