@@ -122,6 +122,16 @@ const registerTFGBlocks = (event) => {
 		.tagBlock('minecraft:mineable/pickaxe')
 		.tagBlock('minecraft:mineable/wrench')
 		.mapColor('color_light_gray')
+	
+	event.create('tfg:casings/heat_pipe_casing')
+		.translationKey('block.tfg.casings.heat_pipe_casing')
+		.model('tfg:block/casings/heat_pipe_casing')
+		.soundType('copper')
+		.hardness(5)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+		.mapColor('color_black')
 
 	//#endregion
 	
@@ -131,14 +141,56 @@ const registerTFGBlocks = (event) => {
 		.soundType('stone')
 		.mapColor('stone')
 		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBoth('tfg:titanium_concrete')
 		
 		
 	event.create('tfg:polished_titanium_concrete')
-		.translationKey('block.tfg.polidhed_titanium_concrete')
+		.translationKey('block.tfg.polished_titanium_concrete')
 		.model('tfg:block/concrete/polished_titanium_concrete')
 		.soundType('stone')
 		.mapColor('stone')
 		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBoth('tfg:titanium_concrete')
+		
+	event.create('tfg:titanium_concrete_tile')
+		.translationKey('block.tfg.titanium_concrete_tile')
+		.model('tfg:block/concrete/titanium_concrete_tile')
+		.soundType('stone')
+		.mapColor('stone')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBoth('tfg:titanium_concrete')
+		
+	event.create('tfg:titanium_concrete_tile_small')
+		.translationKey('block.tfg.titanium_concrete_tile_small')
+		.model('tfg:block/concrete/titanium_concrete_tile_small')
+		.soundType('stone')
+		.mapColor('stone')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBoth('tfg:titanium_concrete')
+		
+	event.create('tfg:titanium_concrete_bricks')
+		.translationKey('block.tfg.titanium_concrete_bricks')
+		.model('tfg:block/concrete/titanium_concrete_bricks')
+		.soundType('stone')
+		.mapColor('stone')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBoth('tfg:titanium_concrete')
+		
+	event.create('tfg:titanium_concrete_bricks_small')
+		.translationKey('block.tfg.titanium_concrete_bricks_small')
+		.model('tfg:block/concrete/titanium_concrete_bricks_small')
+		.soundType('stone')
+		.mapColor('stone')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBoth('tfg:titanium_concrete')
+		
+	event.create('tfg:titanium_concrete_bricks_square')
+		.translationKey('block.tfg.titanium_concrete_bricks_square')
+		.model('tfg:block/concrete/titanium_concrete_bricks_square')
+		.soundType('stone')
+		.mapColor('stone')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBoth('tfg:titanium_concrete')
 		
 
 	// #region Decorative vases
