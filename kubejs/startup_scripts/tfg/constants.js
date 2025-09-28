@@ -298,3 +298,16 @@ global.WARMING_FOODS = [
 	'tfc:food/protein_soup',
 	'tfc:food/dairy_soup'
 ];
+
+/**
+ * @typedef {Object} LabEqupmentContainers
+ * @property {string} type - Container Type
+ * @property {number} capacity - Max Capacity in mB
+ */
+
+/** @type {LabEqupmentContainers[]} */
+global.LAB_EQUIPMENT_CONTAINERS = [
+	{type: 'beaker', capacity: 1296},
+	{type: 'flask', capacity: 144},
+	{type: 'vial', capacity: 16}
+];

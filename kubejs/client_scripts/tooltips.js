@@ -161,6 +161,11 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
 	})
 
+	global.LAB_EQUIPMENT_CONTAINERS.forEach(container => {
+		event.addAdvanced([`tfg:${container.type}`], (item, advanced, text) => {
+			text.add(1, Text.translate('tfg.tooltip.lab_equipment.part').append(`§e${container.capacity.toString()}mB`))
+		})
+	})
 
 	//#region Deprecated Items
 	event.addAdvanced(['vintageimprovements:lathe'], (item, advanced, text) => {
