@@ -1,0 +1,8 @@
+{
+  "parent": "tfc:block/grass_side",
+    "textures": {
+        "texture": "tfg:block/grass/mars_clay_dirt",
+        "overlay": "tfg:block/grass/sangnum_clay_side",
+        "particle": "tfg:block/grass/sangnum_clay_side"
+    }
+}
