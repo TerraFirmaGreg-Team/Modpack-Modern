@@ -651,6 +651,9 @@ function removeGTCEURecipes(event) {
 
 	removeMaceratorRecipe(event, 'macerate_wool')
 
+	event.remove({ id: 'gtceu:gas_collector/nether_air' })
+	event.remove({ id: 'gtceu:gas_collector/ender_air' })
+
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__ender_eye' })
 

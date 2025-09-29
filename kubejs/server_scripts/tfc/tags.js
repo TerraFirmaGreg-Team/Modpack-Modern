@@ -624,7 +624,7 @@ function registerTFCBiomeTags(event) {
     event.add("tfc:kaolin_clay_spawns_in", "tfc:rolling_hills");
 
     global.TFC_BIOMES.forEach(biome => {
-        event.add('minecraft:is_overworld', biome);
+        event.add('tfg:overworld_biomes', biome);
     })
 }
 

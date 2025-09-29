@@ -260,6 +260,16 @@ function registerTFGItemSize(event) {
 		"very_light",
 		"ae2_small_parts"
 	);
+
+	event.itemSize("tfg:lab_equipment", "normal", "medium", "lab_equipment/lab_equipment");
+	event.itemSize("tfg:dirty_lab_equipment", "normal", "medium", "lab_equipment/dirty_lab_equipment");
+	event.itemSize("gtceu:petri_dish", "tiny", "light", "gtceu/petri_dish");
+
+	// These items don't like to have their size changed for some reason. 
+	// This is the only combination that I could get to work. V
+	event.itemSize("tfg:beaker", "large", "heavy", "tfg/beaker");
+	event.itemSize("tfg:flask", "normal", "medium", "tfg/flask");
+	event.itemSize("tfg:vial", "tiny", "light", "tfg/vial");
 }
 
 //up, down, horizontal
@@ -863,7 +873,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.maxTemp(-89)
+			climate.maxTemp(-99)
 		},
 		faunaData => {
 			faunaData.solidGround(true)
@@ -872,7 +882,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-85)
+			climate.minTemp(-95)
 			climate.maxTemp(-30)
 			climate.fuzzy(true)
 		},
@@ -883,7 +893,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-75)
+			climate.minTemp(-85)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -893,7 +903,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-85)
+			climate.minTemp(-95)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -903,7 +913,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-90)
+			climate.minTemp(-100)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -913,7 +923,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-75)
+			climate.minTemp(-85)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -923,7 +933,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-95)
+			climate.minTemp(-105)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -933,7 +943,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-75)
+			climate.minTemp(-85)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -943,7 +953,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-85)
+			climate.minTemp(-95)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -953,7 +963,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-85)
+			climate.minTemp(-95)
 			climate.fuzzy(true)
 		},
 		faunaData => {

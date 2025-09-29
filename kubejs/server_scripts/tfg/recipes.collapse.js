@@ -102,6 +102,8 @@ function registerTFGCollapseRecipes(event) {
 	event.recipes.tfc.landslide('tfg:grass/mars_dirt', 'tfg:grass/amber_mycelium')
 	event.recipes.tfc.landslide('tfg:grass/mars_dirt', 'tfg:grass/rusticus_mycelium')
 	event.recipes.tfc.landslide('tfg:grass/mars_dirt', 'tfg:grass/sangnum_mycelium')
+	event.recipes.tfc.landslide('tfg:grass/mars_dirt', 'tfg:grass/mars_farmland')
+	event.recipes.tfc.landslide('tfg:grass/mars_dirt', 'tfg:grass/mars_path')
   
 	event.recipes.tfc.landslide('tfg:grass/mars_clay_dirt', 'tfg:grass/mars_clay_dirt')
 	event.recipes.tfc.landslide('tfg:grass/mars_clay_dirt', 'tfg:grass/amber_clay_mycelium')

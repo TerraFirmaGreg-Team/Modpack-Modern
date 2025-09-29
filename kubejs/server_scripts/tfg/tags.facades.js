@@ -37,6 +37,7 @@ function registerFacadeWhitelistTags(event) {
 		'#tfg:ad_astra_ostrum_blocks',
 		'#tfg:ad_astra_calorite_blocks',
 		'#tfg:ad_astra_etrium_blocks',
+		'#tfg:titanium_concrete',
 	    
 		//rnr shingles
 		'rnr:ceramic_roof',

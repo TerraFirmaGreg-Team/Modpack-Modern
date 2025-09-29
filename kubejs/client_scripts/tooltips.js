@@ -81,7 +81,7 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfg:reinforced_light_concrete_support', 'tfg:reinforced_dark_concrete_support', 'tfg:steel_support'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.support.tier3'))
 	})
-	const other_stone = ['pyroxenite', 'migmatite', 'travertine']
+	const other_stone = ['migmatite', 'pyroxenite', 'travertine', 'keratophyre', 'anorthosite', 'norite', 'argillite', 'trachyte', 'komatiite', 'phonolite', 'permafrost', 'red_granite', 'stone']
 	const stone_types = global.TFC_STONE_TYPES.concat(other_stone)
 
 	stone_types.forEach(stone => {
@@ -161,6 +161,11 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
 	})
 
+	global.LAB_EQUIPMENT_CONTAINERS.forEach(container => {
+		event.addAdvanced([`tfg:${container.type}`], (item, advanced, text) => {
+			text.add(1, Text.translate('tfg.tooltip.lab_equipment.part').append(`§e${container.capacity.toString()}mB`))
+		})
+	})
 
 	//#region Deprecated Items
 	event.addAdvanced(['vintageimprovements:lathe'], (item, advanced, text) => {
