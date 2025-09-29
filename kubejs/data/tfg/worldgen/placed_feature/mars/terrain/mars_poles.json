@@ -1,0 +1,13 @@
+{
+	"feature": "tfg:mars/terrain/mars_poles",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 1
+		},
+		{
+			"type": "tfc:climate",
+			"max_temperature": -90
+		}
+	]
+}

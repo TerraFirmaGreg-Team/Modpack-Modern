@@ -370,8 +370,6 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:heightmap_ignore', 'minecraft:warped_wart_block')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_mushroom_block')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_mushroom_growth')
-	event.add('tfg:heightmap_ignore', 'tfg:glacian_log')
-	event.add('tfg:heightmap_ignore', 'tfg:glacian_wood')
 	event.add('tfg:heightmap_ignore', 'tfg:glacian_leaves')
 	event.add('tfg:heightmap_ignore', 'betterend:glacian_hymenophore')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_moss_block')
@@ -632,6 +630,7 @@ const registerAdAstraPlacedFeatures = (event) => {
 	// Top layer
 	event.add("tfg:mars_top_layer_modification", "tfg:glow_lichen")
 	event.add("tfg:mars_top_layer_modification", "tfc:surface_loose_rocks")
+	event.add("tfg:mars_top_layer_modification", "tfg:mars/terrain/mars_poles")
 	
 	//#endregion
 
