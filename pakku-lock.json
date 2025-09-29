@@ -2431,7 +2431,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "chat_heads-0.13.21-forge-1.20.jar",
+                    "file_name": "chat_heads-0.13.22-forge-1.20.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -2440,20 +2440,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Wb5oqrBJ/versions/XiV7Jcbq/chat_heads-0.13.21-forge-1.20.jar",
-                    "id": "XiV7Jcbq",
+                    "url": "https://cdn.modrinth.com/data/Wb5oqrBJ/versions/SRnXCJnZ/chat_heads-0.13.22-forge-1.20.jar",
+                    "id": "SRnXCJnZ",
                     "parent_id": "Wb5oqrBJ",
                     "hashes": {
-                        "sha512": "8ef2a0aec1140d4a7f02b931a92c7dd76ffed4d28edc541e6a8b734b04a7a9fc2dad21da596459dacfeeab9d84d123578a4d4ef42cd49c1bb635c8843edef3bb",
-                        "sha1": "2da1b635c8a8fd98b1b75696fcceae692584e4b5"
+                        "sha512": "996b877b7e52c727fc3f0b567e26f9fc3a91f30c5d05d71ce8cea2e927b7dd61cd4afb335f4aba53e0bc0b33edc406ea2b78ae7835a1ca3aedaca0f31519f590",
+                        "sha1": "7eeacd3ffc9690fa050a3bd61a2208bef91848ac"
                     },
                     "required_dependencies": [],
-                    "size": 270629,
-                    "date_published": "2025-09-20T11:02:52.895396Z"
+                    "size": 717672,
+                    "date_published": "2025-09-29T08:11:30.383170Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "chat_heads-0.13.21-forge-1.20.jar",
+                    "file_name": "chat_heads-0.13.22-forge-1.20.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -2462,16 +2462,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7014/791/chat_heads-0.13.21-forge-1.20.jar",
-                    "id": "7014791",
+                    "url": "https://edge.forgecdn.net/files/7045/2/chat_heads-0.13.22-forge-1.20.jar",
+                    "id": "7045002",
                     "parent_id": "407206",
                     "hashes": {
-                        "sha1": "2da1b635c8a8fd98b1b75696fcceae692584e4b5",
-                        "md5": "13e1961ab21b570873b4ee8c62f985b8"
+                        "sha1": "7eeacd3ffc9690fa050a3bd61a2208bef91848ac",
+                        "md5": "696d8cbeedf4c12c82b0caec71267fca"
                     },
                     "required_dependencies": [],
-                    "size": 270629,
-                    "date_published": "2025-09-20T11:02:56.223Z"
+                    "size": 717672,
+                    "date_published": "2025-09-29T08:11:34.607Z"
                 }
             ]
         },
@@ -4476,7 +4476,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "deafission-1.20.1-0.8.0.jar",
+                    "file_name": "deafission-1.20.1-0.9.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4484,19 +4484,19 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7042/133/deafission-1.20.1-0.8.0.jar",
-                    "id": "7042133",
+                    "url": "https://edge.forgecdn.net/files/7045/813/deafission-1.20.1-0.9.0.jar",
+                    "id": "7045813",
                     "parent_id": "1354541",
                     "hashes": {
-                        "sha1": "0ad09b258058857f5a83b35dcaff5aa23bc175db",
-                        "md5": "16c8bafe53ae9a65eb3f7fc46d0c4ebf"
+                        "sha1": "13e27d3430f6e2e670f7d421aa1afd398fa65c0c",
+                        "md5": "dd770e9bf3668515bd1fd395a380bac6"
                     },
                     "required_dependencies": [
                         "890405",
                         "238086"
                     ],
-                    "size": 171173,
-                    "date_published": "2025-09-28T12:37:31.803Z"
+                    "size": 172565,
+                    "date_published": "2025-09-29T14:23:11.330Z"
                 }
             ]
         },
@@ -12740,7 +12740,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "tfcgroomer-1.20.1-0.2.2.jar",
+                    "file_name": "tfcgroomer-1.20.1-0.2.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12748,18 +12748,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7005/300/tfcgroomer-1.20.1-0.2.2.jar",
-                    "id": "7005300",
+                    "url": "https://edge.forgecdn.net/files/7044/958/tfcgroomer-1.20.1-0.2.3.jar",
+                    "id": "7044958",
                     "parent_id": "1003785",
                     "hashes": {
-                        "sha1": "bf52f88b395cb93de7e47e19c2e20176885b6b3c",
-                        "md5": "8254c5b271801501f9f11777d02b2628"
+                        "sha1": "d528d3f837e7d1e93e1154b007a5493fca034a4c",
+                        "md5": "8003b81df31182bf58d417fe5b9ec4ad"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 153614,
-                    "date_published": "2025-09-17T07:41:08.883Z"
+                    "size": 153640,
+                    "date_published": "2025-09-29T07:44:29.643Z"
                 }
             ]
         },
