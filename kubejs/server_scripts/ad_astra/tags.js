@@ -374,6 +374,9 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:heightmap_ignore', 'betterend:glacian_hymenophore')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_moss_block')
 	event.add('tfg:heightmap_ignore', 'minecraft:ice')
+	
+    event.add('tfc:can_be_snow_piled', 'ad_astra:aeronos_mushroom')
+	event.add('tfc:can_be_snow_piled', 'ad_astra:strophar_mushroom')
 
 	global.AD_ASTRA_WOOD.forEach(wood => {
 

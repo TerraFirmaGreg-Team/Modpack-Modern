@@ -222,4 +222,5 @@ function createPlant(event, id, planet) {
 		.tagItem(`tfg:${planet}_plants`)
 		.tagBlock('minecraft:replaceable')
 		.tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfc:can_be_snow_piled')
 }
