@@ -256,6 +256,17 @@ function registerTFGNuclearRecipes(event) {
 */
 	//#endregion
 
+	//#region Fission Recipes for cooling
+
+	event.recipes.deafission.fission_reactor_processing('tfg:dry_ice')
+		.itemInputs('tfg:dry_ice')
+		.itemOutputs('minecraft:coal')
+        .blastFurnaceTemp(100)
+		.duration(20)
+		.EUt(1)
+
+	//#endregion
+
 	//#region Power Generation
 
 	event.recipes.gtceu.nuclear_turbine('dense_steam')
