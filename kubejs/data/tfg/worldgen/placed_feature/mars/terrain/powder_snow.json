@@ -1,5 +1,5 @@
 {
-	"feature": "tfg:mars/terrain/red_quicksand",
+	"feature": "tfg:mars/terrain/powder_snow",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
@@ -7,7 +7,7 @@
 		},
 		{
 			"type": "tfc:climate",
-			"min_temperature": -95
+			"max_temperature": -95
 		},
 		{
 			"type": "minecraft:in_square"
