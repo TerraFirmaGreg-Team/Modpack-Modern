@@ -426,15 +426,6 @@ const registerAdAstraBiomeTags = (event) => {
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/rusticus_edge')
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/sangnum_edge')
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/martian_river')
-	
-	event.add('waves:has_waves', 'tfg:mars/martian_river')
-	event.add('waves:has_waves', 'tfg:mars/martian_mountains')
-	event.add('waves:has_waves', 'tfg:mars/amber_plains')
-	event.add('waves:has_waves', 'tfg:mars/amber_hills')
-	event.add('waves:has_waves', 'tfg:mars/rusticus_plains')
-	event.add('waves:has_waves', 'tfg:mars/rusticus_hills')
-	event.add('waves:has_waves', 'tfg:mars/sangnum_plains')
-	event.add('waves:has_waves', 'tfg:mars/sangnum_hills')
 }
 
 const registerAdAstraEntityTypeTags = (event) => {

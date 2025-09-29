@@ -1094,7 +1094,6 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:usable_in_barrel', 'gtceu:seed_oil')
 	
 	event.add('forge:liquid', 'tfg:semiheavy_ammoniacal_water')
-	event.add('waves:has_waves', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:any_water', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:hydrating', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:drinkables', 'tfg:semiheavy_ammoniacal_water')
