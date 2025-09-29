@@ -260,6 +260,16 @@ function registerTFGItemSize(event) {
 		"very_light",
 		"ae2_small_parts"
 	);
+
+	event.itemSize("tfg:lab_equipment", "normal", "medium", "lab_equipment/lab_equipment");
+	event.itemSize("tfg:dirty_lab_equipment", "normal", "medium", "lab_equipment/dirty_lab_equipment");
+	event.itemSize("gtceu:petri_dish", "tiny", "light", "gtceu/petri_dish");
+
+	// These items don't like to have their size changed for some reason. 
+	// This is the only combination that I could get to work. V
+	event.itemSize("tfg:beaker", "large", "heavy", "tfg/beaker");
+	event.itemSize("tfg:flask", "normal", "medium", "tfg/flask");
+	event.itemSize("tfg:vial", "tiny", "light", "tfg/vial");
 }
 
 //up, down, horizontal
