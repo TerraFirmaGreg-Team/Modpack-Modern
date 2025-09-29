@@ -3,7 +3,7 @@
 	"placement": [
 		{
 			"type": "tfc:climate",
-			"max_temperature": -87
+			"max_temperature": -97
 		},
 		{
 			"type": "minecraft:count",
@@ -20,7 +20,7 @@
 					"absolute": -16
 				},
 				"max_inclusive": {
-					"absolute": 110
+					"absolute": 95
 				}
 			}
 		}
