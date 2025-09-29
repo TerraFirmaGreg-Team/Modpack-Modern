@@ -188,4 +188,6 @@ const registerMinecraftBlockTags = (event) => {
 
     event.add('tfc:can_be_snow_piled', 'minecraft:crimson_fungus')
 	event.add('tfc:can_be_snow_piled', 'minecraft:warped_fungus')
+	event.add('tfc:can_be_snow_piled', 'minecraft:torchflower')
+	event.add('tfc:can_be_snow_piled', 'minecraft:pitcher_plant')
 }
