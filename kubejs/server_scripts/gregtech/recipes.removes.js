@@ -641,11 +641,18 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_brick_slab')
 	removeMaceratorRecipe(event, 'macerate_brick_wall')
 	removeMaceratorRecipe(event, 'macerate_flower_pot')
+	removeMaceratorRecipe(event, 'macerate_netherrack')
+	removeMaceratorRecipe(event, 'macerate_red_nether_bricks')
+	removeMaceratorRecipe(event, 'macerate_red_nether_brick_wall')
+	removeMaceratorRecipe(event, 'macerate_blaze_rod')
 
 	removeMaceratorRecipe(event, 'macerate_marble')
 	removeMaceratorRecipe(event, 'macerate_red_granite')
 
 	removeMaceratorRecipe(event, 'macerate_wool')
+
+	event.remove({ id: 'gtceu:gas_collector/nether_air' })
+	event.remove({ id: 'gtceu:gas_collector/ender_air' })
 
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__ender_eye' })

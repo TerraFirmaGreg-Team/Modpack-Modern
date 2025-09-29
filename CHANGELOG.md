@@ -7,6 +7,7 @@
 - Radon, Plutonium, the Microprocessor Mainframe and Nano Circuits are now locked behind Fission tech. You shouldn't need IV-tier circuits for anything before then, please let us know if we've missed something.
 - Plutonium ore has been removed from the Beneath (only affects )
 - Titanium now has a more complicated refinement process! It's pretty straightforward if you just need a little of it, but it has a fully loopable recipe chain too!
+- The Netherarium and Enderarium have been removed. You will be able to get all their important outputs from Mars. If you have any nether/ender air stored, distill it because those recipes will be going away soon too.
 ### Create changes
 - Water wheels and windmills are now Greate tiered! Small water wheels are ULS (32 SU max), large water wheels and windmills are LS (128 SU max).
 - Large water wheels are now more expensive to craft (and now need steel), but also generate 128 SU by themselves, so you don't need to double them up any more. All water wheels now require actual rivers to rotate at their full effectiveness. You can still use them in oceans and lakes at partial efficiency.

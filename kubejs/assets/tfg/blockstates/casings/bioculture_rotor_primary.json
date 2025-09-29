@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "active=false,facing=north": [
+      { "model": "tfg:block/casings/bioculture_rotor_primary" }
+    ],
+    "active=false,facing=south": [
+      { "model": "tfg:block/casings/bioculture_rotor_primary", "y": 180 }
+    ],
+    "active=false,facing=west": [
+      { "model": "tfg:block/casings/bioculture_rotor_primary", "y": 270 }
+    ],
+    "active=false,facing=east": [
+      { "model": "tfg:block/casings/bioculture_rotor_primary", "y": 90 }
+    ],
+    "active=true,facing=north": [
+      { "model": "tfg:block/casings/bioculture_rotor_primary_active" }
+    ],
+    "active=true,facing=south": [
+      { "model": "tfg:block/casings/bioculture_rotor_primary_active", "y": 180 }
+    ],
+    "active=true,facing=west": [
+      { "model": "tfg:block/casings/bioculture_rotor_primary_active", "y": 270 }
+    ],
+    "active=true,facing=east": [
+      { "model": "tfg:block/casings/bioculture_rotor_primary_active", "y": 90 }
+    ]
+  }
+}

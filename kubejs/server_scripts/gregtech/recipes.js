@@ -397,7 +397,8 @@ const registerGTCEURecipes = (event) => {
 		.itemInputs('2x #forge:dusts/iridium', '#forge:dusts/diamond')
 		.circuit(10)
 		.itemOutputs('gtceu:nether_star_dust')
-		.inputFluids(Fluid.of('gtceu:nether_air', 1000))
+		// TODO: change to something else with venus
+		.inputFluids(Fluid.of('gtceu:neon', 1000))
 		.duration(700)
 		.EUt(2720)
 

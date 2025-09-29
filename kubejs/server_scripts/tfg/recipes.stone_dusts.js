@@ -304,6 +304,7 @@ function registerTFGStoneDustRecipes(event) {
 		.itemOutputs('gtceu:quartzite_dust')
 		.chancedOutput('#forge:dusts/nether_quartz', 2000, 0)
 
+	// Keratophyre
 	event.recipes.gtceu.centrifuge('netherrack_separation')
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(480)

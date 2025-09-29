@@ -1,0 +1,7 @@
+{
+  "parent": "tfg:block/casings/active_casing",
+  "textures": {
+    "active": "tfg:block/casings/machine_casing_ultraviolet_active",
+    "active_overlay": "tfg:block/casings/machine_casing_ultraviolet_active_emissive"
+  }
+}

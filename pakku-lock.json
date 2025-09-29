@@ -852,7 +852,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "alltheleaks-1.0.5+1.20.1-forge.jar",
+                    "file_name": "alltheleaks-1.0.6+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -860,16 +860,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7037/734/alltheleaks-1.0.5+1.20.1-forge.jar",
-                    "id": "7037734",
+                    "url": "https://edge.forgecdn.net/files/7040/641/alltheleaks-1.0.6+1.20.1-forge.jar",
+                    "id": "7040641",
                     "parent_id": "1091339",
                     "hashes": {
-                        "sha1": "0f1f9fe61a05168ee42a6d41c488f9444cb78ec2",
-                        "md5": "f002f47565f692389d776ab6e00c261b"
+                        "sha1": "0a413f6fd8c02abc3544e7aa70957d2069780cca",
+                        "md5": "160ab11da7a2825a6a3213f750d37bd5"
                     },
                     "required_dependencies": [],
-                    "size": 1172553,
-                    "date_published": "2025-09-27T06:43:51.287Z"
+                    "size": 1172581,
+                    "date_published": "2025-09-28T00:12:20.703Z"
                 }
             ]
         },
@@ -1484,70 +1484,6 @@
                     "required_dependencies": [],
                     "size": 19471,
                     "date_published": "2023-11-29T11:27:52.410590Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "xYgkxAJKwHb9tvUM",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "autopack-director",
-                "modrinth": "autopack-director"
-            },
-            "name": {
-                "curseforge": "AutoPack-Director",
-                "modrinth": "AutoPack-Director"
-            },
-            "id": {
-                "curseforge": "1182657",
-                "modrinth": "Fqqapnbs"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "AutoPack-Director-1.3.0.jar",
-                    "mc_versions": [
-                        "1.12.2",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Fqqapnbs/versions/gLhrG1om/AutoPack-Director-1.3.0.jar",
-                    "id": "gLhrG1om",
-                    "parent_id": "Fqqapnbs",
-                    "hashes": {
-                        "sha512": "75fd0ba47fd41c3984e941cff9f21630a506db7c21e5a0213baf5fb5b24bf784a7171a6f7d41f5f65b165cbb0aa61176e5637c138a9c5f61e775e3ffeb5efb4c",
-                        "sha1": "1b9683932e33d479152858841c1d202d535dcfe9"
-                    },
-                    "required_dependencies": [],
-                    "size": 3458905,
-                    "date_published": "2025-09-12T17:57:12.375823Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "AutoPack-Director-1.3.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6990/27/AutoPack-Director-1.3.0.jar",
-                    "id": "6990027",
-                    "parent_id": "1182657",
-                    "hashes": {
-                        "sha1": "1b9683932e33d479152858841c1d202d535dcfe9",
-                        "md5": "996c53f4be78f06a04d6dcee5e8730fa"
-                    },
-                    "required_dependencies": [],
-                    "size": 3458905,
-                    "date_published": "2025-09-12T17:54:26.640Z"
                 }
             ]
         },
@@ -4517,6 +4453,50 @@
                     "required_dependencies": [],
                     "size": 398066,
                     "date_published": "2025-04-13T13:09:28.168539Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Vah9OZxH3B14hSji",
+            "pakku_links": [
+                "WN9DdLqsRKVeZIc9",
+                "bf2svog06ajj5JHE"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "deafission"
+            },
+            "name": {
+                "curseforge": "Dea's Fission"
+            },
+            "id": {
+                "curseforge": "1354541"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "deafission-1.20.1-0.8.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7042/133/deafission-1.20.1-0.8.0.jar",
+                    "id": "7042133",
+                    "parent_id": "1354541",
+                    "hashes": {
+                        "sha1": "0ad09b258058857f5a83b35dcaff5aa23bc175db",
+                        "md5": "16c8bafe53ae9a65eb3f7fc46d0c4ebf"
+                    },
+                    "required_dependencies": [
+                        "890405",
+                        "238086"
+                    ],
+                    "size": 171173,
+                    "date_published": "2025-09-28T12:37:31.803Z"
                 }
             ]
         },
@@ -11007,7 +10987,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "pccard-1.20.1-1.0.16.jar",
+                    "file_name": "pccard-1.20.1-1.1.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11015,24 +10995,24 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/C3Mtqx9z/versions/IsDZ0N1Z/pccard-1.20.1-1.0.16.jar",
-                    "id": "IsDZ0N1Z",
+                    "url": "https://cdn.modrinth.com/data/C3Mtqx9z/versions/az0OBpPX/pccard-1.20.1-1.1.1.jar",
+                    "id": "az0OBpPX",
                     "parent_id": "C3Mtqx9z",
                     "hashes": {
-                        "sha512": "2d1a88bfeb17c524e2a7dd6c6439d77f6e1cff4158ea806bc341af30a26f501fb98fa598edb6e5d96cc0e0ae0c6125fcecd0c1dce954ecd5a9a4785f5b4fb0c8",
-                        "sha1": "9438bb45303d48223fc6a3c793878a84c1035403"
+                        "sha512": "fbf550d5114be22f4ae95625ced002fa6050d4a4d35e7304574f0aabb752eb8a58c9841c2c6e826ca525cb8606b6e08a59804d7d4103239c4a6c8c0cae7f5168",
+                        "sha1": "03af531fd11f2a070a3babf5ff00194f4486574d"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "XxWD5pD3",
                         "Ck4E7v7R"
                     ],
-                    "size": 407903,
-                    "date_published": "2025-07-23T04:05:01.093382Z"
+                    "size": 411463,
+                    "date_published": "2025-09-24T05:32:34.156736Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "pccard-1.20.1-1.0.16.jar",
+                    "file_name": "pccard-1.20.1-1.1.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11040,20 +11020,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6801/575/pccard-1.20.1-1.0.16.jar",
-                    "id": "6801575",
+                    "url": "https://edge.forgecdn.net/files/7027/959/pccard-1.20.1-1.1.1.jar",
+                    "id": "7027959",
                     "parent_id": "1150540",
                     "hashes": {
-                        "sha1": "47ab2dc0f1b5ffc8830ca67a6a0a6966e29c9a45",
-                        "md5": "6f1956cfcdc2d39a70df669e0e723908"
+                        "sha1": "d06ee96e70f1e6f4d2c330d7aabece62a9ee99d0",
+                        "md5": "0fcc90d28bf94ba23eb3da29afa27bcb"
                     },
                     "required_dependencies": [
                         "890405",
                         "1173950",
                         "223794"
                     ],
-                    "size": 407904,
-                    "date_published": "2025-07-23T04:04:42.327Z"
+                    "size": 411463,
+                    "date_published": "2025-09-24T05:32:14.740Z"
                 }
             ]
         },
@@ -12749,39 +12729,15 @@
             "type": "MOD",
             "side": "BOTH",
             "slug": {
-                "curseforge": "tfc-grooming-station",
-                "modrinth": "tfc-grooming-station"
+                "curseforge": "tfc-grooming-station"
             },
             "name": {
-                "curseforge": "TFC Grooming Station",
-                "modrinth": "TFC Grooming Station"
+                "curseforge": "TFC Grooming Station"
             },
             "id": {
-                "curseforge": "1003785",
-                "modrinth": "2yZ8ZSeO"
+                "curseforge": "1003785"
             },
             "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "tfcgroomer-1.20.1-0.1.4.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/2yZ8ZSeO/versions/qd2e8zR5/tfcgroomer-1.20.1-0.1.4.jar",
-                    "id": "qd2e8zR5",
-                    "parent_id": "2yZ8ZSeO",
-                    "hashes": {
-                        "sha512": "5bb17013e6750ff579ceacba78bca68bff36c21bf093ef5e7c452499bb4e81de3ed24e92c53833f9327991dc0feeb648938b0efcfdd5efad795c1419100488c1",
-                        "sha1": "e1bb7e932f900cee6be0bf5faf3fc77111488865"
-                    },
-                    "required_dependencies": [],
-                    "size": 134178,
-                    "date_published": "2025-07-27T17:29:15.479048Z"
-                },
                 {
                     "type": "curseforge",
                     "file_name": "tfcgroomer-1.20.1-0.2.2.jar",
