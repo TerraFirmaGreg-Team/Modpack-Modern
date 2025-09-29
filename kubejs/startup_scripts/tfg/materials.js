@@ -443,7 +443,7 @@ const registerTFGMaterials = (event) => {
 
 	//#region New Alloy for Turbines
 
-	event.create('tfg:tungsten-bismuth_oxide_composite')
+	event.create('tfg:tungsten_bismuth_oxide_composite')
 		.components('1x tungsten', '2x bismuth', '3x oxygen')
 		.color(0xf7cb48)
 		.secondaryColor(0xfffef0)
