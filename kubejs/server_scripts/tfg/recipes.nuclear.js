@@ -258,12 +258,19 @@ function registerTFGNuclearRecipes(event) {
 
 	//#region Fission Recipes for cooling
 
+	event.recipes.deafission.fission_reactor_processing('kubejs:coal2')
+  		.itemInputs('charcoal')
+  		.itemOutputs('2x coal')
+  		.outputFluids(Fluid.of('gtceu:benzene', 10))
+  		.addData("heat_per_tick", 1)
+  		.blastFurnaceTemp(500)
+  		.duration(100)
+
 	event.recipes.deafission.fission_reactor_processing('tfg:dry_ice')
-		.itemInputs('tfg:dry_ice')
-		.itemOutputs('minecraft:coal')
-        .blastFurnaceTemp(100)
-		.duration(20)
-		.EUt(1)
+  		.itemInputs('tfg:dry_ice')
+  		.addData("heat_per_tick", 1)
+  		.blastFurnaceTemp(500)
+  		.duration(100)
 
 	//#endregion
 
