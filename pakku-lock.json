@@ -71,6 +71,70 @@
             ]
         },
         {
+            "pakku_id": "xYgkxAJKwHb9tvUM",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "autopack-director",
+                "modrinth": "autopack-director"
+            },
+            "name": {
+                "curseforge": "AutoPack-Director",
+                "modrinth": "AutoPack-Director"
+            },
+            "id": {
+                "curseforge": "1182657",
+                "modrinth": "Fqqapnbs"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "AutoPack-Director-1.3.0.jar",
+                    "mc_versions": [
+                        "1.12.2",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/Fqqapnbs/versions/gLhrG1om/AutoPack-Director-1.3.0.jar",
+                    "id": "gLhrG1om",
+                    "parent_id": "Fqqapnbs",
+                    "hashes": {
+                        "sha512": "75fd0ba47fd41c3984e941cff9f21630a506db7c21e5a0213baf5fb5b24bf784a7171a6f7d41f5f65b165cbb0aa61176e5637c138a9c5f61e775e3ffeb5efb4c",
+                        "sha1": "1b9683932e33d479152858841c1d202d535dcfe9"
+                    },
+                    "required_dependencies": [],
+                    "size": 3458905,
+                    "date_published": "2025-09-12T17:57:12.375823Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "AutoPack-Director-1.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6990/27/AutoPack-Director-1.3.0.jar",
+                    "id": "6990027",
+                    "parent_id": "1182657",
+                    "hashes": {
+                        "sha1": "1b9683932e33d479152858841c1d202d535dcfe9",
+                        "md5": "996c53f4be78f06a04d6dcee5e8730fa"
+                    },
+                    "required_dependencies": [],
+                    "size": 3458905,
+                    "date_published": "2025-09-12T17:54:26.640Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "v1XVLzfV3EJPc5ke",
             "type": "MOD",
             "side": "BOTH",
