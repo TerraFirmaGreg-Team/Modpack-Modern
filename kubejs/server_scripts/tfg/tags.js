@@ -52,6 +52,12 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:components/uv_leds', 'tfg:uv_led')
 	event.add('tfg:components/uv_leds', 'tfg:smd_uv_led')
 
+	//Fission Nucleat Fuel
+	event.add('deafission:fuels', 'tfg:thorium_rod')
+	event.add('deafission:fuels', 'tfg:uranium_rod')
+	event.add('deafission:fuels', 'tfg:plutonium_rod')
+	event.add('tfg:fission_rods', '#deafission:fuels')
+
 	//#region Tools & Armor
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/wood')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/brass')
@@ -946,6 +952,23 @@ const registerTFGBlockTags = (event) => {
 
 	event.add('buildinggadgets2:deny', 'tfg:geyser_source_small')
 	event.add('ae2:blacklisted/spatial', 'tfg:geyser_source_small')
+
+	//#region Fision Components
+    var COMPONENTS = 'deafission:components';
+    
+	// Max Heating
+    event.add(COMPONENTS, 'ad_astra:glacian_fur'); // Max Heat 2
+	event.add(COMPONENTS, 'minecraft:blue_ice'); // Max Heat 0.5
+
+	event.add(COMPONENTS, 'minecraft:bedrock'); // Max Heat 10000 CREATIVE BLOCK
+
+	// Increase Throttle
+    event.add(COMPONENTS, 'minecraft:iron_block');
+    
+	// Increase Effiency
+    event.add(COMPONENTS, 'minecraft:packed_ice');
+
+	//#endregion
 
 	// #region Nether blocks
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')

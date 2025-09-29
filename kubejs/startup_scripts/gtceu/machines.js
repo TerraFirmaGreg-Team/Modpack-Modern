@@ -332,8 +332,8 @@ const registerGTCEuMachines = (event) => {
 			"gtceu:block/casings/gcym/high_temperature_smelting_casing",
 			"gtceu:block/machines/fluid_heater")
 
-	// Nuclear Fission Reactor
-
+	// Nuclear Fission Reactor - Just keeping it in case we got mod issues
+/*
 	event.create('fission_reactor', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('fission_reactor')
@@ -365,7 +365,7 @@ const registerGTCEuMachines = (event) => {
 		.workableCasingModel(
 			"gtceu:block/casings/gcym/atomic_casing",
 			"gtceu:block/machines/electromagnetic_separator")
-
+*/
 	//#endregion
 		
 	//#region Ore Line

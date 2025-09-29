@@ -210,38 +210,50 @@ const registerTFGNuclearMaterials = (event) => {
 
     //#region Fuel Pellet
 
-    event.create('uranium_pellet')
-        .ingot()
-        .element(GTElements.U)
-        .iconSet(GTMaterialIconSet.METALLIC)
-        .color(0x216614)
-        .radioactiveHazard(1000000)
-        .flags(GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.NO_SMELTING)
-
-    event.create('thorium_pellet')
-        .ingot()
-        .element(GTElements.Th)
-        .iconSet(GTMaterialIconSet.METALLIC)
-        .color(0x631e5a)
-        .radioactiveHazard(100000)
-        .flags(GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.NO_SMELTING)
-
-    event.create('plutonium_pellet')
-        .ingot()
-        .element(GTElements.Pu)
-        .iconSet(GTMaterialIconSet.METALLIC)
-        .color(0xc91414)
-        .radioactiveHazard(10000000)
-        .flags(GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.NO_SMELTING)
-
-    event.create('tbu-232_pellet')
-        .ingot()
-        .iconSet(GTMaterialIconSet.RADIOACTIVE)
-        .color(0xaa55ba)
-        .secondaryColor(0xECECEC)
-        .radioactiveHazard(10000000)
-        .flags(GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.NO_SMELTING)
-
-    //#endregion
+    /*
+    Adding the Fuel Rod, the textures are applied through a model.json
+    Durability
+    Number of rod unused for now
+    %Heat
+    In ReactorCurve getHeating returns fuelHeat * 200.0d * throttle and getCooling returns _state.Heat() * (coolantConversion + 0.01).
+    Where coolantConversion is 1.00 if enough coolant is present. Solving that equation for a steady-state: heating + cooling = 0.
+    When throttle=coolantConversion=1:heat = fuelHeat * 200.0d / 1.01
+    So one 100% cell is 198.0198 heat it should reach. Simulation accuracy might of course throw that off by a small margin.
+    So purely passively it reaches 20000.0 heat.
+    */
 
     }
+
+    const $FuelCellItem = Java.loadClass("fi.dea.mc.deafission.common.data.items.FuelCellItem");
+
+StartupEvents.registry("item", (event) => {
+  event.createCustom("tfg:thorium_rod", () => {
+    return new $FuelCellItem(
+      5000,
+      1,
+      0.7 // Max Heat 139 - 1 Fuel
+    );
+  })
+  event.createCustom("tfg:uranium_rod", () => {
+    return new $FuelCellItem(
+      20000,
+      1,
+      2.2 // Max Heat 435 - 1 Fuel
+    );
+  })
+  event.createCustom("tfg:plutonium_rod", () => {
+    return new $FuelCellItem(
+      30000,
+      1,
+      3.0 // Max Heat 595 - 1 Fuel
+    );
+  })
+
+    event.createCustom("tfg:tbu_232_rod", () => {
+    return new $FuelCellItem(
+      20000,
+      1,
+      2.0
+    );
+  })
+  });
