@@ -956,21 +956,22 @@ const registerTFGBlockTags = (event) => {
 	event.add('buildinggadgets2:deny', 'tfg:geyser_source_small')
 	event.add('ae2:blacklisted/spatial', 'tfg:geyser_source_small')
 
-	// Fision Components
+	//#region Fision Components
     var COMPONENTS = 'deafission:components';
     
-    event.add(COMPONENTS, 'minecraft:white_wool');
-    event.add(COMPONENTS, 'minecraft:black_wool');
-    event.add(COMPONENTS, 'minecraft:pink_wool');
-    event.add(COMPONENTS, 'minecraft:white_wool');
-    event.add(COMPONENTS, 'minecraft:bedrock');
+	// Max Heating
+    event.add(COMPONENTS, 'ad_astra:glacian_fur'); // Max Heat 2
+	event.add(COMPONENTS, 'minecraft:blue_ice'); // Max Heat 0.5
 
+	event.add(COMPONENTS, 'minecraft:bedrock'); // Max Heat 10000 CREATIVE BLOCK
+
+	// Increase Throttle
     event.add(COMPONENTS, 'minecraft:iron_block');
-    event.add(COMPONENTS, 'minecraft:emerald_block');
-    event.add(COMPONENTS, 'minecraft:netherite_block');
-    event.add(COMPONENTS, 'minecraft:nether_portal');
     
+	// Increase Effiency
     event.add(COMPONENTS, 'minecraft:packed_ice');
+
+	//#endregion
 
 	// #region Nether blocks
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')

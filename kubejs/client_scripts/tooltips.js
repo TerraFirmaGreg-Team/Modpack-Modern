@@ -169,6 +169,14 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
 	})
 
+	//#region Nuclear Fission Tooltips
+
+	event.addAdvanced(['minecraft:blue_ice'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.component.blue_ice"))
+	})
+	event.addAdvanced(['ad_astra:glacian_fur'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.component.glacian_fur"))
+	})
 
 	//#region Deprecated Items
 	event.addAdvanced(['vintageimprovements:lathe'], (item, advanced, text) => {
