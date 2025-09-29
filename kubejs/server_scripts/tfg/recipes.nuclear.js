@@ -23,14 +23,14 @@ function registerTFGNuclearRecipes(event) {
 		.itemOutputs('tfg:plutonium_rod')
 		.duration(20*300)
 		.EUt(GTValues.V[GTValues.EV])
-	
-	event.recipes.gtceu.nuclear_fuel_factory('tfg:tbu-232_rod')
+	/* REMOVE FOR VENUS COMMENTED OUT
+	event.recipes.gtceu.nuclear_fuel_factory('tfg:tbu_232_rod')
 		.inputFluids(Fluid.of('gtceu:nuclear_waste', 32000))
 		.itemInputs('#forge:ingots/thorium_232', 'tfg:empty_rod')
 		.itemOutputs('tfg:tbu-232_rod')
 		.duration(20*300)
 		.EUt(GTValues.V[GTValues.IV])
-
+	*/
 	event.recipes.gtceu.lathe('tfg:empty_rod')
 		.itemInputs('gtceu:cobalt_large_restrictive_item_pipe', 'tfg:empty_rod')
 		.itemOutputs('tfg:empty_rod')
