@@ -81,4 +81,16 @@ const registerAE2WTLibRecipes = (event) => {
         .itemOutputs(Item.of('ae2wtlib:wireless_universal_terminal', '{crafting:1b, pattern_access:1b, pattern_encoding:1b}'))
         .duration(300)
         .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.assembler('ae2wtlib:wireless_universal_terminal_ex')
+        .itemInputs(
+            'ae2:wireless_crafting_terminal',
+            'ae2wtlib:wireless_pattern_encoding_terminal',
+            'expatternprovider:wireless_ex_pat',
+            '1x gtceu:iv_sensor',
+            '1x gtceu:iv_emitter',
+            '2x #forge:plates/rhodium')
+        .itemOutputs(Item.of('ae2wtlib:wireless_universal_terminal', '{crafting:1b, pattern_access:1b, pattern_encoding:1b}'))
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.IV])
 }
