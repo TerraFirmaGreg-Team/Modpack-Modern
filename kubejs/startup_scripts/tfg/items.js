@@ -474,4 +474,12 @@ const registerTFGItems = (event) => {
 		.translationKey('item.tfg.lab_equipment.dirty_lab_equipment')
 		.tooltip(Text.translatable('tfg.tooltip.lab_equipment.set_dirty'))
 	//#endregion
+
+	// Empty Fission Rod
+
+	event.create('tfg:empty_rod')
+		.translationKey('item.tfg.empty_road')
+		.texture('tfg:item/fuel_rod_empty')
+		.tag('tfg:fission_rods')
+
 }

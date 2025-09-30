@@ -176,6 +176,9 @@ function registerTFGItemSize(event) {
 	event.itemSize("gtceu:large_duct_pipe", "normal", "light", "large_duct_pipe");
 	event.itemSize("gtceu:huge_duct_pipe", "normal", "medium", "huge_duct_pipe");
 
+	// Nuclear Rod
+	event.itemSize(Ingredient.of("#tfg:fission_rods"), "very_large", "heavy");
+
 	// Cables
 	event.itemSize(Ingredient.of("#forge:single_cables").or("#forge:single_wires"), "tiny", "very_light", "cables_1x");
 	event.itemSize(
@@ -873,7 +876,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.maxTemp(-99)
+			climate.maxTemp(-100)
 		},
 		faunaData => {
 			faunaData.solidGround(true)
@@ -882,7 +885,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-95)
+			climate.minTemp(-97)
 			climate.maxTemp(-30)
 			climate.fuzzy(true)
 		},
@@ -893,7 +896,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-85)
+			climate.minTemp(-95)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -903,7 +906,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-95)
+			climate.minTemp(-105)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -913,7 +916,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-100)
+			climate.minTemp(-102)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -923,7 +926,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-85)
+			climate.minTemp(-90)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -933,7 +936,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-105)
+			climate.minTemp(-106)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -943,7 +946,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-85)
+			climate.minTemp(-90)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -953,7 +956,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-95)
+			climate.minTemp(-100)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -963,7 +966,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-95)
+			climate.minTemp(-100)
 			climate.fuzzy(true)
 		},
 		faunaData => {

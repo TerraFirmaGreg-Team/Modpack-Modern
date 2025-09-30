@@ -613,33 +613,33 @@ const registerCreateRecipes = (event) => {
 
 
 	// Андезитовый корпус
-	event.recipes.createItemApplication(['create:andesite_casing'], ['#minecraft:logs', '#forge:plates/wrought_iron'])
+	event.recipes.createItemApplication(['create:andesite_casing'], ['#forge:stripped_logs', '#forge:plates/wrought_iron'])
 		.id('tfg:create/item_application/andesite_casing')
 
 	event.recipes.gtceu.assembler('tfg:create/andesite_casing')
-		.itemInputs('#minecraft:logs', '#forge:plates/wrought_iron')
+		.itemInputs('#forge:stripped_logs', '#forge:plates/wrought_iron')
 		.circuit(10)
 		.itemOutputs('create:andesite_casing')
 		.duration(50)
 		.EUt(4)
 
 	// Латунный корпус
-	event.recipes.createItemApplication(['create:brass_casing'], ['#minecraft:logs', '#forge:plates/brass'])
+	event.recipes.createItemApplication(['create:brass_casing'], ['#forge:stripped_logs', '#forge:plates/brass'])
 		.id('tfg:create/item_application/brass_casing')
 
 	event.recipes.gtceu.assembler('tfg:create/brass_casing')
-		.itemInputs('#minecraft:logs', '#forge:plates/brass')
+		.itemInputs('#forge:stripped_logs', '#forge:plates/brass')
 		.circuit(10)
 		.itemOutputs('create:brass_casing')
 		.duration(50)
 		.EUt(4)
 
 	// Медный корпус
-	event.recipes.createItemApplication(['create:copper_casing'], ['#minecraft:logs', '#forge:plates/copper'])
+	event.recipes.createItemApplication(['create:copper_casing'], ['#forge:stripped_logs', '#forge:plates/copper'])
 		.id('tfg:create/item_application/copper_casing')
 
 	event.recipes.gtceu.assembler('tfg:create/copper_casing')
-		.itemInputs('#minecraft:logs', '#forge:plates/copper')
+		.itemInputs('#forge:stripped_logs', '#forge:plates/copper')
 		.circuit(11)
 		.itemOutputs('create:copper_casing')
 		.duration(50)

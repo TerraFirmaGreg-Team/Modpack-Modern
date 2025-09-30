@@ -370,8 +370,6 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:heightmap_ignore', 'minecraft:warped_wart_block')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_mushroom_block')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_mushroom_growth')
-	event.add('tfg:heightmap_ignore', 'tfg:glacian_log')
-	event.add('tfg:heightmap_ignore', 'tfg:glacian_wood')
 	event.add('tfg:heightmap_ignore', 'tfg:glacian_leaves')
 	event.add('tfg:heightmap_ignore', 'betterend:glacian_hymenophore')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_moss_block')
@@ -442,15 +440,6 @@ const registerAdAstraBiomeTags = (event) => {
 	event.add('tfg:has_moderate_dust_storms', 'tfg:mars/sangnum_edge')
 	event.add('tfg:has_severe_dust_storms', 'tfg:mars/martian_dunes')
 	event.add('tfg:has_severe_dust_storms', 'tfg:mars/martian_deep_desert')
-	
-	event.add('waves:has_waves', 'tfg:mars/martian_river')
-	event.add('waves:has_waves', 'tfg:mars/martian_mountains')
-	event.add('waves:has_waves', 'tfg:mars/amber_plains')
-	event.add('waves:has_waves', 'tfg:mars/amber_hills')
-	event.add('waves:has_waves', 'tfg:mars/rusticus_plains')
-	event.add('waves:has_waves', 'tfg:mars/rusticus_hills')
-	event.add('waves:has_waves', 'tfg:mars/sangnum_plains')
-	event.add('waves:has_waves', 'tfg:mars/sangnum_hills')
 }
 
 const registerAdAstraEntityTypeTags = (event) => {
@@ -649,6 +638,7 @@ const registerAdAstraPlacedFeatures = (event) => {
 	// Top layer
 	event.add("tfg:mars_top_layer_modification", "tfg:glow_lichen")
 	event.add("tfg:mars_top_layer_modification", "tfc:surface_loose_rocks")
+	event.add("tfg:mars_top_layer_modification", "tfg:mars/terrain/mars_poles")
 	
 	//#endregion
 

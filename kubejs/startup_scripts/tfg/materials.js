@@ -440,4 +440,23 @@ const registerTFGMaterials = (event) => {
 		.components('80x carbon_dioxide', '7x nitrogen', '5x argon', '3x oxygen', '1x neon', '1x krypton', '1x xenon')
 
 	// #endregion
+
+	//#region New Alloy for Turbines
+
+	event.create('tfg:tungsten_bismuth_oxide_composite')
+		.components('1x tungsten', '2x bismuth', '3x oxygen')
+		.color(0xf7cb48)
+		.secondaryColor(0xfffef0)
+		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
+		.ingot()
+		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
+		.rotorStats(205, 90, 2 ,620)
+		.flags(
+			GTMaterialFlags.DISABLE_DECOMPOSITION, 
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_ROD,
+			GTMaterialFlags.GENERATE_BOLT_SCREW,
+			GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES,
+
+		)
 }

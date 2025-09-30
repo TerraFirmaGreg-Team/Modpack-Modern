@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "tfc:soil_disc",
+				"config": {
+					"min_radius": 2,
+					"max_radius": 3,
+					"height": 1,
+					"states": [
+						{
+							"replace": "minecraft:red_sand",
+							"with": "minecraft:powder_snow"
+						},
+						{
+							"replace": "ad_astra:mars_sand",
+							"with": "minecraft:powder_snow"
+						}
+					]
+				}
+			},
+			"placement": []
+		},
+		"tries": 8,
+		"xz_spread": 8,
+		"y_spread": 2
+	}
+}
