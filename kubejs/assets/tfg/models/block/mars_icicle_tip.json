@@ -1,0 +1,7 @@
+{
+	"parent": "tfc:block/thin_spike_tip",
+	"textures": {
+		"0": "tfg:block/mars_ice",
+		"particle": "tfg:block/mars_ice"
+	}
+}
