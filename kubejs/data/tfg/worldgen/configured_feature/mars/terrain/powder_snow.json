@@ -11,11 +11,11 @@
 					"states": [
 						{
 							"replace": "minecraft:red_sand",
-							"with": "wan_ancient_beasts:quick_red_sand"
+							"with": "minecraft:powder_snow"
 						},
 						{
 							"replace": "ad_astra:mars_sand",
-							"with": "wan_ancient_beasts:quick_red_sand"
+							"with": "minecraft:powder_snow"
 						}
 					]
 				}

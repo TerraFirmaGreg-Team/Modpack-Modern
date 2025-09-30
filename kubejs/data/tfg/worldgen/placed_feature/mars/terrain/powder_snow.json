@@ -1,20 +1,20 @@
 {
-	"feature": "tfg:mars/terrain/kaolin_clay_disc",
+	"feature": "tfg:mars/terrain/powder_snow",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 60
+			"chance": 15
 		},
 		{
 			"type": "tfc:climate",
-			"min_temperature": -65
+			"max_temperature": -97
 		},
 		{
 			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:heightmap",
-			"heightmap": "OCEAN_FLOOR_WG"
+			"heightmap": "WORLD_SURFACE_WG"
 		},
 		{
 			"type": "minecraft:biome"

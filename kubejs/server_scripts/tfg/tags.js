@@ -1086,6 +1086,13 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfg:decorative_plant_attachable', 'minecraft:warped_wart_block')
 	event.add('tfg:decorative_plant_attachable', 'betterend:cave_bush')
 	event.add('tfg:decorative_plant_attachable', 'betterend:lucernia_leaves')
+
+	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
+	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
+	event.add('tfcambiental:cold_stuff', 'tfg:mars_ice')
+	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
+	event.add('minecraft:ice', 'tfg:mars_ice')
+	event.add('minecraft:ice', 'tfg:dry_ice')
 }
 //#endregion
 
@@ -1117,7 +1124,6 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:usable_in_barrel', 'gtceu:seed_oil')
 	
 	event.add('forge:liquid', 'tfg:semiheavy_ammoniacal_water')
-	event.add('waves:has_waves', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:any_water', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:hydrating', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:drinkables', 'tfg:semiheavy_ammoniacal_water')

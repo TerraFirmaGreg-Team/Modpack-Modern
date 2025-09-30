@@ -876,7 +876,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.maxTemp(-99)
+			climate.maxTemp(-100)
 		},
 		faunaData => {
 			faunaData.solidGround(true)
@@ -885,7 +885,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-95)
+			climate.minTemp(-97)
 			climate.maxTemp(-30)
 			climate.fuzzy(true)
 		},
@@ -896,7 +896,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-85)
+			climate.minTemp(-95)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -906,7 +906,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-95)
+			climate.minTemp(-105)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -916,7 +916,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-100)
+			climate.minTemp(-102)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -926,7 +926,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-85)
+			climate.minTemp(-90)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -936,7 +936,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-105)
+			climate.minTemp(-106)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -946,7 +946,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-85)
+			climate.minTemp(-90)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -956,7 +956,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-95)
+			climate.minTemp(-100)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -966,7 +966,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-95)
+			climate.minTemp(-100)
 			climate.fuzzy(true)
 		},
 		faunaData => {

@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"tip=true": {
+			"model": "tfg:block/mars_icicle_tip"
+		},
+		"tip=false": {
+			"model": "tfg:block/mars_icicle"
+		}
+	}
+}

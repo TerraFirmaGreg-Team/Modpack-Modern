@@ -20,8 +20,8 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/crimson_forest_entry',
 		climate => {
-			climate.maxTemp(-26)
-			climate.minTemp(-98)
+			climate.maxTemp(-24)
+			climate.minTemp(-101)
 			climate.minRain(-12)
 			climate.fuzzy(true)
 		},
@@ -75,7 +75,7 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/aeronos_forest_entry',
 		climate => {
-			climate.minTemp(-87)
+			climate.minTemp(-92)
 			climate.minRain(-14)
 			climate.fuzzy(true)
 		},
@@ -98,7 +98,7 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/strophar_forest_entry',
 		climate => {
-			climate.minTemp(-83)
+			climate.minTemp(-92)
 			climate.maxRain(2)
 			climate.fuzzy(true)
 		},
@@ -143,7 +143,7 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/glacian_forest_entry',
 		climate => {
-			climate.maxTemp(-87)
+			climate.maxTemp(-92)
 			climate.fuzzy(true)
 		},
 		'tfg:glacian_wood_stripped',
