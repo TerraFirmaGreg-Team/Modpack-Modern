@@ -226,6 +226,7 @@
 			y: -0.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0C0B09D66D0CFFBA"]
 			description: ["{quests.ae2.ae_guide.desc}"]
 			id: "6CF08AFB924905F0"
@@ -1230,19 +1231,19 @@
 				type: "item"
 			}]
 			title: "{quests.ae2.cutting_knife.title}"
-			x: 0.0d
+			x: 0.5d
 			y: -10.5d
 		}
 		{
-			dependencies: ["378E2294EFD85C65"]
-			description: ["{quests.ae2.programmed_circuit_card.desc}"]
-			id: "51B34B3E51B6ECDD"
+			dependencies: ["386C54268DA9F2BF"]
+			description: ["{quests.ae2.pattern_box.desc}"]
+			id: "36BF57C3B7D81B6F"
 			tasks: [{
-				id: "295980339E1FE027"
-				item: "pccard:card_programmed_circuit"
+				id: "403A9E3BB8B14683"
+				item: "ae2:pattern_box"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -0.5d
 			y: -10.5d
 		}
 	]
