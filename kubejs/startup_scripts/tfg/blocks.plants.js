@@ -340,7 +340,7 @@ const registerTFGCrops = (event) => {
 		.defaultCutout()
 
 	event.create('tfg:saplings/strophar', 'tfc:sapling')
-		.features('tfg:mars/tree/strophar')
+		.features('tfg:mars/tree/strophar_mini')
 		.tagBoth('minecraft:saplings')
 		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagBlock('tfc:can_be_snow_piled')
@@ -349,7 +349,7 @@ const registerTFGCrops = (event) => {
 		.defaultCutout()
 
 	event.create('tfg:saplings/aeronos', 'tfc:sapling')
-		.features('tfg:mars/tree/aeronos')
+		.features('tfg:mars/tree/aeronos_mini')
 		.tagBoth('minecraft:saplings')
 		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagBlock('tfc:can_be_snow_piled')
