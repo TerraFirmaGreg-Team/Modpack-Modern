@@ -6230,79 +6230,6 @@
             ]
         },
         {
-            "pakku_id": "G5vYABMCGRJRuTU9",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "fastboot",
-                "modrinth": "fastboot"
-            },
-            "name": {
-                "curseforge": "FastBoot",
-                "modrinth": "FastBoot"
-            },
-            "id": {
-                "curseforge": "1030285",
-                "modrinth": "nRL5uFe0"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "fastboot-1.20.x-1.2.jar",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.5",
-                        "1.20.3",
-                        "1.20.1",
-                        "1.20",
-                        "1.20.6",
-                        "1.20.4"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5696/829/fastboot-1.20.x-1.2.jar",
-                    "id": "5696829",
-                    "parent_id": "1030285",
-                    "hashes": {
-                        "sha1": "0820d6611bdf664cc84bf351089e75998a9f1962",
-                        "md5": "9489df8d4e141724d79e503d85b3d51f"
-                    },
-                    "required_dependencies": [],
-                    "size": 24477,
-                    "date_published": "2024-09-06T08:48:44.887Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "fastboot-1.20.x-1.2.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1",
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.4",
-                        "1.20.5",
-                        "1.20.6"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/nRL5uFe0/versions/L7hAkvRy/fastboot-1.20.x-1.2.jar",
-                    "id": "L7hAkvRy",
-                    "parent_id": "nRL5uFe0",
-                    "hashes": {
-                        "sha512": "7c888221c58ba85199feeae6aba539bde4a02c4c996457b49d91cb9274f5a08b19cfecfe6d6c3387343ef15dbfde812f8e2672e4fd7979615045d6a9d16e6aa8",
-                        "sha1": "0820d6611bdf664cc84bf351089e75998a9f1962"
-                    },
-                    "required_dependencies": [],
-                    "size": 24477,
-                    "date_published": "2024-10-23T13:40:38.723694Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "UHbTbqy6h2Euzjqq",
             "pakku_links": [
                 "65w2fJEd83KAQpHz"
@@ -8140,67 +8067,6 @@
                     "required_dependencies": [],
                     "size": 552486,
                     "date_published": "2025-08-06T14:19:52.700Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "IaNjixC9jfe0gewf",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "jei",
-                "modrinth": "jei"
-            },
-            "name": {
-                "curseforge": "Just Enough Items (JEI)",
-                "modrinth": "Just Enough Items"
-            },
-            "id": {
-                "curseforge": "238222",
-                "modrinth": "u6dRKJwZ"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "jei-1.20.1-forge-15.20.0.116.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/u6dRKJwZ/versions/zzpNSbJZ/jei-1.20.1-forge-15.20.0.116.jar",
-                    "id": "zzpNSbJZ",
-                    "parent_id": "u6dRKJwZ",
-                    "hashes": {
-                        "sha512": "4a5337e8f8234e7053c8ad9c9f4f4aaf08ee03f66fea8146e9b5b2e357a8b892540b3b1dfefc73b618b9fa485c7c025481f9d17fb9f522a76839e499f8816741",
-                        "sha1": "ebb8d9033c29538824281b3ac651c49135aba78e"
-                    },
-                    "required_dependencies": [],
-                    "size": 1387236,
-                    "date_published": "2025-09-27T01:04:56.593434Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "jei-1.20.1-forge-15.20.0.116.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7037/120/jei-1.20.1-forge-15.20.0.116.jar",
-                    "id": "7037120",
-                    "parent_id": "238222",
-                    "hashes": {
-                        "sha1": "ebb8d9033c29538824281b3ac651c49135aba78e",
-                        "md5": "89817a7201d47a7a23c3f9d217f891f4"
-                    },
-                    "required_dependencies": [],
-                    "size": 1387236,
-                    "date_published": "2025-09-27T01:04:44.357Z"
                 }
             ]
         },
@@ -14026,6 +13892,74 @@
                     "required_dependencies": [],
                     "size": 3875,
                     "date_published": "2024-05-25T08:37:44.955753Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "uApLZTcIq87kCYwZ",
+            "pakku_links": [
+                "UYwzsHbcjulcx9ZL"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "tmrv",
+                "modrinth": "tmrv"
+            },
+            "name": {
+                "curseforge": "TooManyRecipeViewers (TMRV)",
+                "modrinth": "TooManyRecipeViewers"
+            },
+            "id": {
+                "curseforge": "1194921",
+                "modrinth": "yFypjcfd"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "toomanyrecipeviewers-0.6.3+mc.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6856/65/toomanyrecipeviewers-0.6.3+mc.20.1.jar",
+                    "id": "6856065",
+                    "parent_id": "1194921",
+                    "hashes": {
+                        "sha1": "38176b4ad936141c660d91d7a1d4a9d89fe89280",
+                        "md5": "3ee77fbbdedcb1b1e4b17e3578dfa1a3"
+                    },
+                    "required_dependencies": [
+                        "580555"
+                    ],
+                    "size": 1215669,
+                    "date_published": "2025-08-06T16:58:05.390Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "toomanyrecipeviewers-0.6.3+mc.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/yFypjcfd/versions/911yYuqS/toomanyrecipeviewers-0.6.3+mc.20.1.jar",
+                    "id": "911yYuqS",
+                    "parent_id": "yFypjcfd",
+                    "hashes": {
+                        "sha512": "a503584ccc1aec6bab207a5a9353427bed61371a9dc3e01fa4c5698226fc02c08b193edf8e31d97af51a47af66440f12a9a9be65bf0118b575888a4969912664",
+                        "sha1": "38176b4ad936141c660d91d7a1d4a9d89fe89280"
+                    },
+                    "required_dependencies": [
+                        "fRiHVvU7"
+                    ],
+                    "size": 1215669,
+                    "date_published": "2025-08-06T16:58:10.036353Z"
                 }
             ]
         },
