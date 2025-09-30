@@ -1232,7 +1232,7 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#region Nuclear Controler
 
-	event.shaped('gtceu:fission_reactor', [
+	event.shaped('deafission:fission_reactor_mk1', [
 		'TUT',
 		'WZW',
 		'TUT'
@@ -1242,7 +1242,7 @@ function registerGTCEuMachineRecipes(event) {
 		U: 'gtceu:hv_field_generator',
 		Z: 'gtceu:ev_machine_hull'
 	}
-	).id('tfg:shaped/fission_reactor')
+	).id('tfg:shaped/fission_reactor_mk1')
 
 	event.shaped('gtceu:nuclear_fuel_factory', [
 		'TUT',

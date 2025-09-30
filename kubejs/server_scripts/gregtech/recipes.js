@@ -1568,4 +1568,14 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.EV])
 		
 
+	//# New Alloys For Turbines
+
+	event.recipes.gtceu.mixer('tfg:tungsten_bismuth_oxide_composite')
+		.itemInputs('2x #forge:dusts/bismuth', 'gtceu:tungsten_dust')
+		.inputFluids(Fluid.of('gtceu:oxygen', 3000))
+		.itemOutputs('3x tfg:tungsten_bismuth_oxide_composite_dust')
+		.duration(20 * 12)
+		.EUt(GTValues.VA[GTValues.EV])
+
+
 }
