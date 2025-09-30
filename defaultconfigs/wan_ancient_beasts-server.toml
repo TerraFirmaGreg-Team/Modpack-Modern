@@ -33,7 +33,7 @@
 	health = 400.0
 	#Walker armor [default: 5]
 	#Range: 0.0 ~ 30.0
-	armor = 14.0
+	armor = 8.0
 	#Walker armor toughness [default: 4]
 	#Range: 0.0 ~ 20.0
 	armorToughness = 4.0
@@ -48,10 +48,10 @@
 	damage = 10.0
 	#Crusher armor [default: 20]
 	#Range: 0.0 ~ 30.0
-	armor = 30.0
+	armor = 20.0
 	#Crusher armor toughness [default: 4]
 	#Range: 0.0 ~ 20.0
-	armorToughness = 6.0
+	armorToughness = 4.0
 
 #Glider Attributes
 [glider]
