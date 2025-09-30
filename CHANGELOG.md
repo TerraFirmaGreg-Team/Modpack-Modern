@@ -28,7 +28,6 @@
 - Fixed stainless steel needles being consumed in sewing-type crafts (#1900) @Redeix
 - Updated boiler minecart models and textures (#1900) @Redeix
 - Fixed flux dupe using filled sea shells (#1903) @Redeix
-- Fixed rare crash caused by rock spikes in the beneath having the wrong fluid block property (#1906) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 
