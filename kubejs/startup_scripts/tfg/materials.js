@@ -411,13 +411,14 @@ const registerTFGMaterials = (event) => {
 
 	event.create('tfg:apt')
 		.gem()
-		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.iconSet(GTMaterialIconSet.FLINT)
+		.setFormula("(NH4)10(H2W12O42)(H2O)4")
 		.color('0xaabdf0')
 
 	event.create('tfg:tungsten_oxide')
 		.dust()
-		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.iconSet(GTMaterialIconSet.FLINT)
 		.components('1x tungsten', '3x oxygen')
 		.color('0xf0c851')
@@ -456,7 +457,48 @@ const registerTFGMaterials = (event) => {
 			GTMaterialFlags.GENERATE_PLATE,
 			GTMaterialFlags.GENERATE_ROD,
 			GTMaterialFlags.GENERATE_BOLT_SCREW,
-			GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES,
-
+			GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES
 		)
+
+	// #endregion
+
+	// #region Mars sap
+	
+	event.create('tfg:crimsene')
+		.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(220))
+		.gem()
+		.iconSet('lapis')
+		.flags(GTMaterialFlags.NO_UNIFICATION)
+		.color(0xB12727)
+		.secondaryColor(0x562C3E)
+
+	event.create('tfg:warpane')
+		.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(220))
+		.gem()
+		.iconSet('quartz')
+		.flags(GTMaterialFlags.NO_UNIFICATION)
+		.color(0x45ABA9)
+		.secondaryColor(0x562C3E)
+
+	event.create('tfg:mycelienzene')
+		.dust()
+		.color(0x9E7385)
+
+	event.create('tfg:cooked_mycelienzane')
+		.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(1830))
+		.color(0x9E7385)
+
+	event.create('tfg:iodomethane')
+		.liquid()
+		.components('1x carbon', '3x hydrogen', '1x iodine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xAC45C6)
+
+	event.create('tfg:trideuteroiodomethane')
+		.liquid()
+		.components('1x carbon', '3x deuterium', '1x iodine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xDD9DED)
+
+	// #endregion
 }

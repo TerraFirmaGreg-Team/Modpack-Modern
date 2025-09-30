@@ -182,6 +182,36 @@ const registerAFCRecipes = (event) => {
 		.requiresNaturalLog(true)
 		.id("tfg:tree_tapping/ancient_douglas_fir_resin")
 
+	// Mars stuff
+
+	event.recipes.afc.tree_tapping(TFC.blockIngredient('beneath:wood/log/crimson'))
+		.resultFluid(Fluid.of('tfg:crimsene', 1))
+		.minTemp(-110)
+		.maxTemp(-15)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/crimson_log")
+
+	event.recipes.afc.tree_tapping(TFC.blockIngredient('beneath:wood/wood/crimson'))
+		.resultFluid(Fluid.of('tfg:crimsene', 1))
+		.minTemp(-110)
+		.maxTemp(-15)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/crimson_wood")
+
+	event.recipes.afc.tree_tapping(TFC.blockIngredient('beneath:wood/log/warped'))
+		.resultFluid(Fluid.of('tfg:warpane', 1))
+		.minTemp(-110)
+		.maxTemp(-15)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/warped_log")
+		
+	event.recipes.afc.tree_tapping(TFC.blockIngredient('beneath:wood/wood/warped'))
+		.resultFluid(Fluid.of('tfg:warpane', 1))
+		.minTemp(-110)
+		.maxTemp(-15)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/warped_wood")
+
 	//#region Extractor Recipe
 
 	// Latex

@@ -361,16 +361,4 @@ const registerTFGBlocks = (event) => {
 	})
 
 	// #endregion Reconstituted Stone
-  
-  // #region Deprecated
-
-	event.create('treetap:tap')
-		.requiresTool(false)
-		.textureAll('tfg:item/deprecated')
-
-	event.create('tfcea:refrigerator')
-		.requiresTool(false)
-		.textureAll('tfg:item/deprecated')
-
-	// #endregion
 }
