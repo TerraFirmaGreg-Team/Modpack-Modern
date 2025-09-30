@@ -15,11 +15,15 @@
 - Water wheels and windmills no longer work in orbit or on the moon, and water wheels no longer work in the Beneath.
 - Blaze burners now only need regular steel to craft, so they are the best option if you want on-demand power generation anywhere you want. (#1889) @TreyR9
 - Removed all passive sources of steam engine heating. @Pyritie
+### AE2 changes
+- TODO
+- Programmed Circuit Card has been removed because it was incompatible with the above additions. Making several machines for different circuits is intended, however if you need to do something like make a whole assembler for a single unique recipe, let us know and we can move the circuit numbers around.
 ### Other changes
 - Significantly increased durability of hiking boots, and now red steel ones have even more durability while blue steel ones increase your speed a little more (#1894) @Nashy1232
 - EV-tier weapons now require titanium or HSLA instead of tungsten for some crafts @BlueBoat29
 - Improved placement of Illages so now they should never generate on top of a river @Pyritie
 - Create Packagers/Jar Packagers are now significantly cheaper to craft (#1892) @airrice 
+- Create Casings now need stripped logs instead of any logs @Pyritie
 ### Bug fixes
 - Soup can no longer kill you from overheating @BlueBoat29
 - Air Distributors now consume as much gas as they should, instead of significantly more (#1760) @Bumperdo09
