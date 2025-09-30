@@ -7038,7 +7038,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "greate-0.0.51.jar",
+                    "file_name": "greate-0.0.52.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7047,23 +7047,23 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/uOZLaa3T/greate-0.0.51.jar",
-                    "id": "uOZLaa3T",
+                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/pTqnXrIb/greate-0.0.52.jar",
+                    "id": "pTqnXrIb",
                     "parent_id": "8wDcQuht",
                     "hashes": {
-                        "sha512": "d333c40a6e2433c6fc46b75979881c6b1f5ad33984968c57eef16cb9357cec35e056d63fc1fc2cfb9878498e8d8861ae0571dc733267dd99395026c2ec61b339",
-                        "sha1": "663d459fae5b64775c79e361f8c34642c6202448"
+                        "sha512": "9a7383ead14d2e63b22b7b85ec731549a160c61b401d5b0a92b6d4449b68debd18e7ccb19fc129b3c91427f34c54617a87c6830a3d51abd085863f341a3b6b35",
+                        "sha1": "1c1073b2fe05768a513f4d24450f8c2aea979e5e"
                     },
                     "required_dependencies": [
                         "LNytGWDc",
                         "7tG215v7"
                     ],
-                    "size": 1500474,
-                    "date_published": "2025-08-16T17:23:29.632692Z"
+                    "size": 1512543,
+                    "date_published": "2025-09-30T03:55:11.946637Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "greate-0.0.51.jar",
+                    "file_name": "greate-0.0.52.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7072,19 +7072,19 @@
                         "forge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/6893/614/greate-0.0.51.jar",
-                    "id": "6893614",
+                    "url": "https://edge.forgecdn.net/files/7047/589/greate-0.0.52.jar",
+                    "id": "7047589",
                     "parent_id": "901996",
                     "hashes": {
-                        "sha1": "663d459fae5b64775c79e361f8c34642c6202448",
-                        "md5": "e6c1297fb76c8ada273142b1685e3253"
+                        "sha1": "1c1073b2fe05768a513f4d24450f8c2aea979e5e",
+                        "md5": "cbbccd503dbe97e0dd9c9c98701a8076"
                     },
                     "required_dependencies": [
                         "890405",
                         "328085"
                     ],
-                    "size": 1500474,
-                    "date_published": "2025-08-16T17:23:28.067Z"
+                    "size": 1512543,
+                    "date_published": "2025-09-30T03:55:09.973Z"
                 }
             ]
         },
@@ -10891,9 +10891,10 @@
             ]
         },
         {
-            "pakku_id": "sbXThweS7VFdgVMJ",
+            "pakku_id": "PAWjWa1z0Jw1ubBF",
             "pakku_links": [
-                "WN9DdLqsRKVeZIc9"
+                "WN9DdLqsRKVeZIc9",
+                "E7ASIvLUKD1YJURv"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -10910,31 +10911,6 @@
                 "modrinth": "C3Mtqx9z"
             },
             "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "pccard-1.20.1-1.1.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/C3Mtqx9z/versions/az0OBpPX/pccard-1.20.1-1.1.1.jar",
-                    "id": "az0OBpPX",
-                    "parent_id": "C3Mtqx9z",
-                    "hashes": {
-                        "sha512": "fbf550d5114be22f4ae95625ced002fa6050d4a4d35e7304574f0aabb752eb8a58c9841c2c6e826ca525cb8606b6e08a59804d7d4103239c4a6c8c0cae7f5168",
-                        "sha1": "03af531fd11f2a070a3babf5ff00194f4486574d"
-                    },
-                    "required_dependencies": [
-                        "7tG215v7",
-                        "XxWD5pD3",
-                        "Ck4E7v7R"
-                    ],
-                    "size": 411463,
-                    "date_published": "2025-09-24T05:32:34.156736Z"
-                },
                 {
                     "type": "curseforge",
                     "file_name": "pccard-1.20.1-1.1.1.jar",
@@ -10959,6 +10935,31 @@
                     ],
                     "size": 411463,
                     "date_published": "2025-09-24T05:32:14.740Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "pccard-1.20.1-1.1.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/C3Mtqx9z/versions/az0OBpPX/pccard-1.20.1-1.1.1.jar",
+                    "id": "az0OBpPX",
+                    "parent_id": "C3Mtqx9z",
+                    "hashes": {
+                        "sha512": "fbf550d5114be22f4ae95625ced002fa6050d4a4d35e7304574f0aabb752eb8a58c9841c2c6e826ca525cb8606b6e08a59804d7d4103239c4a6c8c0cae7f5168",
+                        "sha1": "03af531fd11f2a070a3babf5ff00194f4486574d"
+                    },
+                    "required_dependencies": [
+                        "7tG215v7",
+                        "XxWD5pD3",
+                        "Ck4E7v7R"
+                    ],
+                    "size": 411463,
+                    "date_published": "2025-09-24T05:32:34.156736Z"
                 }
             ]
         },
