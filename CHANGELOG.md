@@ -32,6 +32,11 @@
 ### Translation updates
 - Chinese (simplified) @jmecn
 
+## [0.10.17] - 30-09-2025
+### Bug fixes
+- Fixed not being able to use some extruder molds in the Curving Press @Pyritie
+- Fixed a rare crash from waterlogged rock spikes when generating chunks in the Beneath @Pyritie
+
 ## [0.10.16] - 23-09-2025
 ### Bug fixes
 - Fix startup crash on linux servers @Pyritie
