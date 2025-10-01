@@ -181,6 +181,8 @@ const registerMinecraftBlockTags = (event) => {
 	event.add('tfc:forge_insulation', 'minecraft:basalt');
     event.add('tfc:bloomery_insulation', 'minecraft:smooth_basalt');
 	event.add('tfc:forge_insulation', 'minecraft:smooth_basalt');
+
+    event.add('minecraft:mineable/pickaxe', 'minecraft:lantern');
     
     //#region
 
