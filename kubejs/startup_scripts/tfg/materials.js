@@ -413,7 +413,7 @@ const registerTFGMaterials = (event) => {
 		.gem()
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.iconSet(GTMaterialIconSet.FLINT)
-		.setFormula("(NH4)10(H2W12O42)(H2O)4")
+		.formula("(NH4)10(H2W12O42)(H2O)4")
 		.color('0xaabdf0')
 
 	event.create('tfg:tungsten_oxide')
