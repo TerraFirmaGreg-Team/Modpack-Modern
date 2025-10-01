@@ -78,7 +78,7 @@ const registerAE2WTLibRecipes = (event) => {
             '1x gtceu:iv_sensor',
             '1x gtceu:iv_emitter',
             '2x #forge:plates/rhodium')
-        .itemOutputs(Item.of('ae2wtlib:wireless_universal_terminal', '{crafting:1b, pattern_access:1b, pattern_encoding:1b}'))
+        .itemOutputs(Item.of('ae2wtlib:wireless_universal_terminal', '{crafting:1b, ex_pattern_access:1b, pattern_encoding:1b}'))
         .duration(300)
         .EUt(GTValues.VA[GTValues.IV])
 
@@ -90,7 +90,7 @@ const registerAE2WTLibRecipes = (event) => {
             '1x gtceu:iv_sensor',
             '1x gtceu:iv_emitter',
             '2x #forge:plates/rhodium')
-        .itemOutputs(Item.of('ae2wtlib:wireless_universal_terminal', '{crafting:1b, pattern_access:1b, pattern_encoding:1b}'))
+        .itemOutputs(Item.of('ae2wtlib:wireless_universal_terminal', '{crafting:1b, ex_pattern_access:1b, pattern_encoding:1b}'))
         .duration(300)
         .EUt(GTValues.VA[GTValues.IV])
 }
