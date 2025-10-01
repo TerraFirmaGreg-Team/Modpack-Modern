@@ -92,13 +92,13 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:radioactive_waste', 1000))
 		.outputFluids(Fluid.of('gtceu:radon', 1000))
 		.itemOutputs('#forge:dusts/nuclear_residue')
-		.duration(20*30)
+		.duration(20*10)
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.vacuum_freezer('oxidized_nuclear_residue')
 		.itemInputs('#forge:dusts/nuclear_residue')
 		.inputFluids(Fluid.of('gtceu:dioxygen_difluoride', 1000))
-		.outputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1000))
+		.outputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 4000))
 		.itemOutputs('#forge:dusts/oxidized_nuclear_residue')
 		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.IV])
@@ -181,6 +181,7 @@ function registerTFGNuclearRecipes(event) {
 		.itemInputs(Item.of('tfg:thorium_rod'))
 		.outputFluids(Fluid.of('gtceu:uranium_waste', 2500))
 		.itemOutputs(Item.of('tfg:empty_rod'))
+		.dimension('ad_astra:mars')
         .hideDuration(true);
     
     event.recipes.deafission.fission_reactor_coolant('tfg:thorium_coolant')
@@ -189,6 +190,7 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('minecraft:water', 400))
 		.outputFluids(Fluid.of('gtceu:dense_steam', 2))
 		.perTick(false)
+		.dimension('ad_astra:mars')
         .duration(1);
 
 	// Recipe for Uranium Reactor Just keeping it in case we got mod issues
