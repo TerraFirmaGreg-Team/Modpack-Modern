@@ -658,14 +658,15 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: ['#firmalife:foods/cheeses'],
 		itemOutputs: ['4x firmalife:food/shredded_cheese'],
 		circuit: 30,
-		itemOutputProvider: TFC.isp.of('firmalife:food/shredded_cheese').copyFood()
+		itemOutputProvider: TFC.isp.of('4x firmalife:food/shredded_cheese').copyFood()
 	})
 
 	processorRecipe("basil", 20, 16, {
 		itemInputs: ['firmalife:plant/basil'],
 		itemOutputs: ['2x firmalife:spice/basil_leaves'],
-		circuit: 30
-	})
+		circuit: 30,
+		itemOutputProvider: TFC.isp.of('2x firmalife:spice/basil_leaves').resetFood()
+	})	
 
 	// Ice cream
 	processorRecipe("vanilla_ice_cream", 300, 16, {
