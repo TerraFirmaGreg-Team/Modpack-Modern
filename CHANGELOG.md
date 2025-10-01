@@ -18,6 +18,8 @@
 ### AE2 changes
 - TODO
 - Programmed Circuit Card has been removed because it was incompatible with the above additions. Making several machines for different circuits is intended, however if you need to do something like make a whole assembler for a single unique recipe, let us know and we can move the circuit numbers around.
+- Added the Interplanetary Wireless Card, an infinite-range, cross-dimension upgrade for your wireless terminal but costs a lot of power to transfer items. Great for if you forgot something at home, but not useful for mass logistics.
+- Universal Wireless Terminal is now obtainable at EV instead of IV
 ### Other changes
 - Significantly increased durability of hiking boots, and now red steel ones have even more durability while blue steel ones increase your speed a little more (#1894) @Nashy1232
 - EV-tier weapons now require titanium or HSLA instead of tungsten for some crafts @BlueBoat29
@@ -32,6 +34,7 @@
 - Fixed stainless steel needles being consumed in sewing-type crafts (#1900) @Redeix
 - Updated boiler minecart models and textures (#1900) @Redeix
 - Fixed flux dupe using filled sea shells (#1903) @Redeix
+- Fixed some more dupes with tool heads (#1576) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 
