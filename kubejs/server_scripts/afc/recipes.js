@@ -371,6 +371,20 @@ const registerAFCRecipes = (event) => {
 		.duration(20*12)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
+
+	// Syrup into sugar
+
+	event.recipes.tfc.barrel_sealed(24000)
+	.inputFluid(Fluid.of('afc:maple_syrup', 100))
+	.outputItem('afc:maple_sugar')
+	.id('tfg:barrel/maple_syrup_to_sugar')
+
+	event.recipes.tfc.barrel_sealed(24000)
+	.inputFluid(Fluid.of('afc:birch_syrup', 100))
+	.outputItem('afc:birch_sugar')
+	.id('tfg:barrel/birch_syrup_to_sugar')
+
+
 	// Stripped logs
 
 	global.AFC_WOOD_TYPES.forEach(wood => {
