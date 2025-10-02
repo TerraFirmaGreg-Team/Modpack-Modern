@@ -553,6 +553,7 @@ function registerTFGFoodData(event) {
 		food.saturation(4);
 		food.decayModifier(2);
 		food.water(5);
+		food.protein(1);
 		food.fruit(4);
 		food.grain(2);
 	});
