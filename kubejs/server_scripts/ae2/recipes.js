@@ -169,7 +169,7 @@ const registerAE2Recipes = (event) => {
 		.id('tfg:crafting/equal_distribution_card')
 
 	// Energy Card
-	event.shapeless('ae2:energy_card', ['ae2:advanced_card', '2x gtceu:hv_lithium_battery'])
+	event.shapeless('ae2:energy_card', ['ae2:advanced_card', '2x #gtceu:batteries/hv'])
 		.id('tfg:crafting/energy_card')
 
 	// Quartz Fixture
@@ -194,8 +194,8 @@ const registerAE2Recipes = (event) => {
 		B: 'ae2:terminal',
 		C: 'ae2:engineering_processor',
 		D: '#gtceu:circuits/hv',
-		E: 'gtceu:hv_lithium_battery',
-		F: '#forge:plates/nether_quartz'
+		E: '#gtceu:batteries/hv',
+		F: '#forge:plates/certus_quartz'
 	}).id('tfg:crafting/wireless_terminal')
 
 	// Basic Card
@@ -932,7 +932,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 	event.recipes.gtceu.assembler('ae2:cell_component_16k_4k')
 		.itemInputs(
  			'2x #gtceu:circuits/iv',
-			'4x gtceu:nano_cpu_chip',
+			'16x gtceu:ram_chip',
 			'16x #forge:foils/polyvinyl_chloride',
 			'16x ae2:logic_processor',
             '3x ae2:cell_component_4k')
@@ -946,7 +946,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 	event.recipes.gtceu.assembler('ae2:cell_component_16k')
 		.itemInputs(
  			'2x #gtceu:circuits/ev',
-			'4x gtceu:nano_cpu_chip',
+			'16x gtceu:ram_chip',
 			'16x #forge:foils/polyvinyl_chloride',
 			'16x ae2:logic_processor',
             '2x ae2:cell_component_4k')

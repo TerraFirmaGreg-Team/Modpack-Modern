@@ -249,7 +249,6 @@ ServerEvents.recipes(event => {
 	registerModernMarkingRecipes(event)
 	registerMoreRedRecipes(event)
 	registerPrimitiveCreaturesRecipes(event)
-	registerProgrammedCircuitCardRecipes(event)
 	registerRailWaysRecipes(event)
 	registerRnrRecipes(event)
 	registerSandwormRecipes(event)

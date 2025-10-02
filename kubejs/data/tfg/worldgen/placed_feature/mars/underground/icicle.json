@@ -2,6 +2,10 @@
 	"feature": "tfg:mars/underground/icicle",
 	"placement": [
 		{
+			"type": "tfc:climate",
+			"max_temperature": -50
+		},
+		{
 			"type": "minecraft:count",
 			"count": 10
 		},
@@ -19,10 +23,6 @@
 					"absolute": 100
 				}
 			}
-		},
-		{
-			"type": "tfc:climate",
-			"max_temperature": -30
 		}
 	]
 }

@@ -36,6 +36,7 @@ const registerTFGCrops = (event) => {
 		.tagBoth('tfc:wild_crops')
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('minecraft:flowers')
+		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
 	event.create('tfg:rapeseed', 'tfc:double_crop')
@@ -62,6 +63,7 @@ const registerTFGCrops = (event) => {
 		.tagBoth('tfc:wild_crops')
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('minecraft:flowers')
+		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
 	event.create('tfg:flax', 'tfc:double_crop')
@@ -95,6 +97,7 @@ const registerTFGCrops = (event) => {
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
 	// Mars Crops
@@ -126,6 +129,7 @@ const registerTFGCrops = (event) => {
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
 
@@ -156,6 +160,7 @@ const registerTFGCrops = (event) => {
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
 
@@ -196,6 +201,7 @@ const registerTFGCrops = (event) => {
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
 
@@ -232,6 +238,7 @@ const registerTFGCrops = (event) => {
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
 
@@ -265,6 +272,7 @@ const registerTFGCrops = (event) => {
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
 
@@ -299,6 +307,7 @@ const registerTFGCrops = (event) => {
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
 	// Mars Saplings
@@ -307,6 +316,7 @@ const registerTFGCrops = (event) => {
 		.features('tfg:mars/tree/crimson')
 		.tagBoth('minecraft:saplings')
 		.tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfc:can_be_snow_piled')
 		.growthDays(6)
 		.soundType('nether_wart')
 		.defaultCutout()
@@ -315,6 +325,7 @@ const registerTFGCrops = (event) => {
 		.features('tfg:mars/tree/warped')
 		.tagBoth('minecraft:saplings')
 		.tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfc:can_be_snow_piled')
 		.growthDays(6)
 		.soundType('nether_wart')
 		.defaultCutout()
@@ -323,22 +334,25 @@ const registerTFGCrops = (event) => {
 		.features('species:alphacene_mushroom')
 		.tagBoth('minecraft:saplings')
 		.tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfc:can_be_snow_piled')
 		.growthDays(3)
 		.soundType('nether_wart')
 		.defaultCutout()
 
 	event.create('tfg:saplings/strophar', 'tfc:sapling')
-		.features('tfg:mars/tree/strophar')
+		.features('tfg:mars/tree/strophar_mini')
 		.tagBoth('minecraft:saplings')
 		.tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfc:can_be_snow_piled')
 		.growthDays(7)
 		.soundType('nether_wart')
 		.defaultCutout()
 
 	event.create('tfg:saplings/aeronos', 'tfc:sapling')
-		.features('tfg:mars/tree/aeronos')
+		.features('tfg:mars/tree/aeronos_mini')
 		.tagBoth('minecraft:saplings')
 		.tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfc:can_be_snow_piled')
 		.growthDays(9)
 		.soundType('nether_wart')
 		.defaultCutout()
@@ -347,6 +361,7 @@ const registerTFGCrops = (event) => {
 		.features('tfg:mars/tree/glacian_mini')
 		.tagBoth('minecraft:saplings')
 		.tagBlock('tfg:do_not_destroy_in_space')
+		.tagBlock('tfc:can_be_snow_piled')
 		.growthDays(9)
 		.soundType('nether_wart')
 		.defaultCutout()

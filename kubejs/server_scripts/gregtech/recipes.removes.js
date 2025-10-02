@@ -417,6 +417,10 @@ function removeGTCEURecipes(event) {
 
 	//#region Выход: Пыль незерака
 
+	event.remove({ id: 'gtceu:shaped/nether_bricks_hammer' })
+	event.remove({ id: 'gtceu:shaped/nether_bricks_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/nether_bricks_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/nether_bricks_wall_saw' })
 	removeMaceratorRecipe(event, 'macerate_nether_brick_stairs')
 	removeMaceratorRecipe(event, 'macerate_nether_brick_slab')
 
@@ -653,6 +657,11 @@ function removeGTCEURecipes(event) {
 
 	event.remove({ id: 'gtceu:gas_collector/nether_air' })
 	event.remove({ id: 'gtceu:gas_collector/ender_air' })
+	// TODO: uncomment with venus update
+	//event.remove({ id: 'gtceu:vacuum_freezer/liquid_ender_air' })
+	//event.remove({ id: 'gtceu:vacuum_freezer/liquid_nether_air' })
+	//event.remove({ id: 'gtceu:distillation_tower/distill_liquid_ender_air' })
+	//event.remove({ id: 'gtceu:distillation_tower/distill_liquid_nether_air' })
 
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__ender_eye' })

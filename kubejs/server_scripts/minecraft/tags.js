@@ -181,8 +181,15 @@ const registerMinecraftBlockTags = (event) => {
 	event.add('tfc:forge_insulation', 'minecraft:basalt');
     event.add('tfc:bloomery_insulation', 'minecraft:smooth_basalt');
 	event.add('tfc:forge_insulation', 'minecraft:smooth_basalt');
+
+    event.add('minecraft:mineable/pickaxe', 'minecraft:lantern');
     
     //#region
 
     event.removeAll('minecraft:sniffer_diggable_block')
+
+    event.add('tfc:can_be_snow_piled', 'minecraft:crimson_fungus')
+	event.add('tfc:can_be_snow_piled', 'minecraft:warped_fungus')
+	event.add('tfc:can_be_snow_piled', 'minecraft:torchflower')
+	event.add('tfc:can_be_snow_piled', 'minecraft:pitcher_plant')
 }

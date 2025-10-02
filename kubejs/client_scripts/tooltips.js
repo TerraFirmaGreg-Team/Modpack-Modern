@@ -167,7 +167,7 @@ const registerTooltips = (event) => {
 		})
 	})
 
-	//#region Nuclear Fission Tooltips
+	//Nuclear Fission Tooltips
 
 	event.addAdvanced(['minecraft:blue_ice'], (item, advanced, text) => {
 		text.add(1, Text.translate("tfg.tooltip.component.blue_ice"))
@@ -176,9 +176,15 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("tfg.tooltip.component.glacian_fur"))
 	})
 
-	//#region Deprecated Items
+	// AE2
+	event.addAdvanced(['tfg:wireless_card'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.wireless_card_1'))
+		text.add(2, Text.translate('tfg.tooltip.wireless_card_2'))
+		text.add(3, Text.translate('tfg.tooltip.wireless_card_3'))
+	})
+
+	// Deprecated Items
 	event.addAdvanced(['vintageimprovements:lathe'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
 	})
-	//#endregion
 }
