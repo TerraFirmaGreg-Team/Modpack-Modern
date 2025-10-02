@@ -210,6 +210,19 @@ const registerTFGBlocks = (event) => {
 		.tagBlock('minecraft:mineable/pickaxe')
 		.tagBoth('tfg:titanium_concrete')
 		
+	// #region insulation
+	event.create('tfg:glacian_wool_frame')
+		.soundType('copper')
+		.hardness(4)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+	event.create('tfg:aes_insulation_frame')
+		.soundType('copper')
+		.hardness(5)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
 
 	// #region Decorative vases
 	global.MINECRAFT_DYE_NAMES.forEach(color => {

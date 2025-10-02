@@ -562,6 +562,45 @@ function transformBlockWithTool(event, inputBlock, outputBlock, toolId, damageTo
 };
 
 /**
+ * Function for replacing a block with another block by crouch-right-clicking with a tool and receiving an item.
+ *
+ * If input and output is null recipe will just return.
+ *
+ * @param {*} event
+ * @param {string} inputBlock -Block ID to be replaced. Accepts a Tag, but not recommended.
+ * @param {string} outputBlock -Block ID of the replacement.
+ * @param {string} outputItem -Item ID of item to receive
+ * @param {number} outputCount -Number of items to be returned
+ * @param {string} toolId -Item ID of the tool.
+ * @param {boolean} damageTool -Sets wether the tool should be damaged on use.
+ * @param {string} soundId -Sound ID to be used as the flair sound effect. Can be null.
+ * @param {string} particleId -SimpleParticleType ID to be used as the flair particle. Can be null.
+ * @param {boolean} copyBlockstate - Sets wether the blockstate should be copied from the input block to the output block.
+ */
+function transformBlockWithToolReturn(event, inputBlock, outputBlock, outputItem, outputCount, toolId, damageTool, soundId, particleId, copyBlockstate) {
+	const { server, item, player, block } = event;
+
+	if (!inputBlock || !outputBlock) return;
+
+	if (inputBlock.startsWith('#')) {
+		if (!block.hasTag(inputBlock.substring(1))) return;
+	} else {
+		if (block.id.toString() !== inputBlock) return;
+	}
+
+	if (toolId.startsWith('#')) {
+		if (item.isEmpty() || !player.mainHandItem.hasTag(toolId.substring(1))) return;
+	} else {
+		if (item.isEmpty() || player.mainHandItem.id !== toolId) return;
+	}
+
+	transformBlockWithTool(event, inputBlock, outputBlock, toolId, damageTool, soundId, particleId, copyBlockstate)
+	
+	const dim = block.level.name.getString();
+	server.runCommandSilent(`execute in ${dim} run summon item ${player.x} ${player.y} ${player.z} {Item:{id:'${outputItem}', Count:${outputCount}b}}`);
+
+}
+/**
  * Function for replacing a block with another block by crouch-right-clicking with an item.
  *
  * If input and output is null recipe will just return.
@@ -697,6 +736,14 @@ BlockEvents.rightClicked(event => {
 		transformBlockWithTool(event, c.mossy_wall, c.wall, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
 		transformBlockWithItem(event, c.mossy_wall, c.wall, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
 	}
+	
+	//Misc Events
+	transformBlockWithItem(event, 'gtceu:incoloy_ma_956_frame', 'tfg:glacian_wool_frame', 'tfg:glacian_wool', true, 2, 'block.wool.place', 'minecraft:composter', true);
+	transformBlockWithToolReturn(event, 'tfg:glacian_wool_frame', 'gtceu:incoloy_ma_956_frame', 'tfg:glacian_wool', 2,'#forge:tools/wire_cutters', true, 'minecraft:block.beehive.shear', 'minecraft:crit', true);
+
+	transformBlockWithItem(event, 'gtceu:incoloy_ma_956_frame', 'tfg:aes_insulation_frame', 'tfg:aes_insulation_roll', true, 1, 'block.wool.place', 'minecraft:composter', true);
+	transformBlockWithToolReturn(event, 'tfg:aes_insulation_frame', 'gtceu:incoloy_ma_956_frame', 'tfg:aes_insulation_roll', 1, '#forge:tools/wire_cutters', true, 'minecraft:block.beehive.shear', 'minecraft:crit', true);
+
 });
 
 // Makes scythes, hoes, and knives take damage when cutting grass
