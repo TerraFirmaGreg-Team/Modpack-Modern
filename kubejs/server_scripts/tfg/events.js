@@ -738,10 +738,10 @@ BlockEvents.rightClicked(event => {
 	}
 	
 	//Misc Events
-	transformBlockWithItem(event, 'gtceu:incoloy_ma_956_frame', 'tfg:glacian_wool_frame', 'tfg:glacian_wool', true, 2, 'block.wool.place', 'minecraft:composter', true);
+	transformBlockWithItem(event, 'gtceu:incoloy_ma_956_frame', 'tfg:glacian_wool_frame', 'tfg:glacian_wool', true, 2, 'block.wool.place', 'minecraft:happy_villager', true);
 	transformBlockWithToolReturn(event, 'tfg:glacian_wool_frame', 'gtceu:incoloy_ma_956_frame', 'tfg:glacian_wool', 2,'#forge:tools/wire_cutters', true, 'minecraft:block.beehive.shear', 'minecraft:crit', true);
 
-	transformBlockWithItem(event, 'gtceu:incoloy_ma_956_frame', 'tfg:aes_insulation_frame', 'tfg:aes_insulation_roll', true, 1, 'block.wool.place', 'minecraft:composter', true);
+	transformBlockWithItem(event, 'gtceu:incoloy_ma_956_frame', 'tfg:aes_insulation_frame', 'tfg:aes_insulation_roll', true, 1, 'block.wool.place', 'minecraft:happy_villager', true);
 	transformBlockWithToolReturn(event, 'tfg:aes_insulation_frame', 'gtceu:incoloy_ma_956_frame', 'tfg:aes_insulation_roll', 1, '#forge:tools/wire_cutters', true, 'minecraft:block.beehive.shear', 'minecraft:crit', true);
 
 });
