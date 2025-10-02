@@ -16,6 +16,11 @@ const registerAFCRecipes = (event) => {
 	event.remove({ id: "afc:pot/rubber" })
 	event.remove({ id: "afc:tree_tapping/hevea_latex" })
 	event.remove({ id: "afc:tree_tapping/rubber_fig_latex" })
+	event.remove({ id: "afc:crafting/1_birch_sugar"})
+	event.remove({ id: "afc:crafting/1_maple_sugar"})
+	event.remove({ id: "afc:crafting/0_birch_sugar_bucket"})
+	event.remove({ id: "afc:crafting/0_maple_sugar_bucket"})
+
 
 	// #endregion
 
