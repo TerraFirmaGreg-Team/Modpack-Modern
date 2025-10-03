@@ -645,6 +645,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crimson_button',
     'minecraft:crimson_sign',
     'minecraft:crimson_hanging_sign',
+    'minecraft:crimson_fungus',
 
     // Варпед незер дерево
     'minecraft:warped_stem', 
@@ -662,6 +663,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:warped_button',
     'minecraft:warped_sign',
     'minecraft:warped_hanging_sign',
+    'minecraft:warped_fungus',
 
     // Куча незер блоков
     'minecraft:netherrack',

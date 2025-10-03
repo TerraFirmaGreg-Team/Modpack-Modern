@@ -68,6 +68,7 @@ const registerMinecraftItemTags = (event) => {
 
     event.add('tfc:compost_greens', 'minecraft:red_mushroom_block')
     event.add('tfc:compost_greens', 'minecraft:brown_mushroom_block')
+    event.add('tfc:compost_greens', 'minecraft:mushroom_stem')
     event.add('tfc:compost_greens', 'minecraft:moss_block')
     event.add('tfc:compost_greens_low', 'minecraft:moss_carpet')
     event.add('tfc:compost_greens_low', 'minecraft:twisting_vines')

@@ -661,7 +661,7 @@ function registerTFGCropRanges(event) {
 	}, "betterend:amber_root");
 
 	event.climateRange((climate) => {
-		climate.minHydration(0);
+		climate.minHydration(70);
 		climate.maxHydration(100);
 		climate.minTemperature(-80);
 		climate.maxTemperature(30);
@@ -697,7 +697,7 @@ function registerTFGCropRanges(event) {
 	}, "betterend:chorus_mushroom");
 
 	event.climateRange((climate) => {
-		climate.minHydration(0);
+		climate.minHydration(50);
 		climate.maxHydration(100);
 		climate.minTemperature(-80);
 		climate.maxTemperature(30);

@@ -193,6 +193,14 @@ function registerTFGSpaceRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
 
+	event.recipes.gtceu.mixer('tfg:bio_glowstone')
+		.itemInputs('betterend:cave_pumpkin_chunks', '4x species:alphacene_mushroom_block')
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.itemOutputs('2x minecraft:glowstone_dust')
+		.duration(5 * 20)
+		.EUt(GTValues.VA[GTValues.EV])
+		.dimension('ad_astra:mars')
+
 	// Lightblooms
 	event.recipes.gtceu.greenhouse('tfg:lightbloom')
 		.notConsumable('8x minecraft:twisting_vines')
