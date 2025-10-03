@@ -1,6 +1,7 @@
 {
-	"parent": "minecraft:block/cube_all",
+	"parent": "tfg:block/fission_component",
 	"textures": {
-		"all": "tfg:block/glacian_wool_frame"
+		"infill": "tfg:block/glacian_wool_infill",
+		"frame": "tfg:block/empty_fission_frame"
 	}
 }

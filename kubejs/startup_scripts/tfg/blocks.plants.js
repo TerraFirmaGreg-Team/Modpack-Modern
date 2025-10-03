@@ -169,6 +169,7 @@ const registerTFGCrops = (event) => {
 		.tagBlock('minecraft:mineable/axe')
 		.tagBlock('minecraft:mineable/hoe')
 		.mapColor('color_red')
+		.lightLevel(0.85)
 		.requiresTool(false)
 		.fullBlock(false)
 		.opaque(false)

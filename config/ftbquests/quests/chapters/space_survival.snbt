@@ -148,8 +148,20 @@
 		{
 			id: "52ABE7722ABB3281"
 			linked_quest: "0585527D1854628B"
-			x: -2.5d
+			x: -1.0d
 			y: 1.0d
+		}
+		{
+			id: "44E5362EDCDE6A5C"
+			linked_quest: "3AEAB1930F4CC034"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			id: "1EABB6DEF6179357"
+			linked_quest: "7CA3A5EFE3D5B688"
+			x: -1.0d
+			y: 3.0d
 		}
 	]
 	quests: [
@@ -246,13 +258,10 @@
 					id: "328B134E6C8F1E76"
 					item: {
 						Count: 1
-						ForgeCaps: {
-							"tfc:food": {
-								creationDate: 14190000L
-								traits: [ ]
-							}
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(minecraft:chorus_fruit))"
 						}
-						id: "minecraft:chorus_fruit"
 					}
 					type: "item"
 				}
@@ -277,12 +286,13 @@
 				{
 					id: "4E8C67A543FEB861"
 					item: "gtceu:mv_4a_energy_converter"
+					optional_task: true
 					type: "item"
 				}
 			]
 			title: "{quests.space_survival.solar_panels.title}"
 			x: -1.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -362,7 +372,7 @@
 			}]
 			title: "{quests.space_survival.rover.title}"
 			x: -4.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["493D733A5438DD7E"]
@@ -453,7 +463,7 @@
 			}]
 			title: "{quests.space_survival.railgun.title}"
 			x: 2.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["72BD27FEEB34C7B0"]
@@ -511,7 +521,7 @@
 			}]
 			title: "{quests.space_survival.interplanetary_railgun.title}"
 			x: 4.5d
-			y: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1A9A5F55F1F0AC58"]
@@ -529,7 +539,7 @@
 			}]
 			title: "{quests.space_survival.monitor_railgun.title}"
 			x: 4.5d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1A9A5F55F1F0AC58"]
@@ -547,7 +557,7 @@
 			}]
 			title: "{quests.space_survival.receiver_railgun.title}"
 			x: 4.5d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -575,7 +585,7 @@
 			}]
 			title: "{quests.space_survival.input_bus_railgun.title}"
 			x: 6.5d
-			y: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["783BB3FC5702DA8C"]
@@ -601,7 +611,7 @@
 			]
 			title: "{quests.space_survival.ammo_railgun.title}"
 			x: 6.5d
-			y: -2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["498E559B9C37D2CA"]
@@ -616,7 +626,7 @@
 			}]
 			title: "{quests.space_survival.redstone_railgun.title}"
 			x: 6.5d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["498E559B9C37D2CA"]
@@ -631,7 +641,7 @@
 			}]
 			title: "{quests.space_survival.robot_arm_railgun.title}"
 			x: 6.5d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -661,7 +671,7 @@
 			}]
 			title: "{quests.space_survival.output_bus_railgun.title}"
 			x: 6.5d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["498E559B9C37D2CA"]
@@ -676,7 +686,7 @@
 			}]
 			title: "{quests.space_survival.delay_railgun.title}"
 			x: 6.5d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3F785579F13B0F46"]
@@ -700,6 +710,434 @@
 			title: "{quests.space_survival.soulbound.title}"
 			x: 3.0d
 			y: -4.0d
+		}
+		{
+			description: [""]
+			id: "1777E6C81C8353D5"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				dimension: "ad_astra:moon"
+				icon: "ad_astra:mars_globe"
+				id: "4A794ADEE7A89594"
+				title: "I'm on the Moon"
+				type: "dimension"
+			}]
+			title: "{quests.space_survival.mars.title}"
+			x: 13.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5AC5AAB9B3758E30"]
+			id: "4259CD4F819806AB"
+			tasks: [{
+				id: "4DB592981780B997"
+				item: "tfg:semiheavy_ammoniacal_water_bucket"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1777E6C81C8353D5"]
+			icon: "tfg:grass/rusticus_mycelium"
+			id: "5AC5AAB9B3758E30"
+			tasks: [{
+				id: "019AC4216D25FA19"
+				type: "checkmark"
+			}]
+			x: 13.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1777E6C81C8353D5"]
+			icon: "ad_astra:mars_sand"
+			id: "26FB2DB58A28BE6A"
+			tasks: [{
+				id: "5C0832BD72EB54C7"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["26FB2DB58A28BE6A"]
+			id: "70F93982FC045A08"
+			tasks: [{
+				biome: "tfg:mars/martian_deep_desert"
+				icon: "minecraft:red_sand"
+				id: "4935048F5603F79B"
+				type: "biome"
+			}]
+			x: 10.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["26FB2DB58A28BE6A"]
+			id: "62A5111836CB4D37"
+			optional: true
+			shape: "heart"
+			tasks: [
+				{
+					id: "028ACAA581D97577"
+					item: "sandworm_mod:sandworm_tooth"
+					type: "item"
+				}
+				{
+					id: "5F74F03288BDE713"
+					item: "sandworm_mod:thumper"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"70F93982FC045A08"
+				"2F711C064635EF2D"
+			]
+			dependency_requirement: "one_completed"
+			id: "0CA5B715B76E4A5B"
+			tasks: [{
+				icon: "tfg:spice"
+				id: "00C333C49F5BBFC2"
+				observe_type: 0
+				timer: 0L
+				to_observe: "tfg:spice"
+				type: "observation"
+			}]
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1777E6C81C8353D5"]
+			icon: "tfg:mars_ice"
+			id: "3768570EC6535DBB"
+			tasks: [{
+				id: "677DF79B4DE1D571"
+				type: "checkmark"
+			}]
+			x: 17.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5AC5AAB9B3758E30"]
+			id: "204DDAFEA40C0146"
+			tasks: [{
+				id: "4A86DF6B1EB149DB"
+				item: "tfg:heavy_ammoniacal_water_bucket"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["00E2E32B33A65301"]
+			id: "0967CE7F5DFF5CF6"
+			tasks: [{
+				id: "2713B99184310ED3"
+				item: "tfg:glacian_wool"
+				type: "item"
+			}]
+			x: 17.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5AC5AAB9B3758E30"]
+			icon: "wan_ancient_beasts:soarer_egg"
+			id: "2F711C064635EF2D"
+			shape: "heart"
+			tasks: [{
+				id: "43FA9228D7E788F4"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5AC5AAB9B3758E30"]
+			id: "24E25ED8D00F0918"
+			tasks: [{
+				icon: "species:wraptor_egg"
+				id: "2B5C32298882BD0E"
+				observe_type: 5
+				timer: 0L
+				to_observe: "tfg:wraptor"
+				type: "observation"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5AC5AAB9B3758E30"]
+			id: "5F0D553D08A5985C"
+			tasks: [{
+				icon: "minecraft:sniffer_egg"
+				id: "6339BB0940C0BE77"
+				observe_type: 5
+				timer: 0L
+				to_observe: "tfg:sniffer"
+				type: "observation"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3768570EC6535DBB"]
+			id: "00E2E32B33A65301"
+			tasks: [{
+				icon: "ad_astra:glacian_ram_spawn_egg"
+				id: "20B88332B3FED126"
+				observe_type: 5
+				timer: 0L
+				to_observe: "tfg:glacian_ram"
+				type: "observation"
+			}]
+			x: 17.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5AC5AAB9B3758E30"]
+			id: "155F421FC2F39C3C"
+			tasks: [
+				{
+					icon: "beneath:wood/log/crimson"
+					id: "5C76478F563CE947"
+					observe_type: 1
+					timer: 0L
+					to_observe: "#tfc:crimson_logs"
+					type: "observation"
+				}
+				{
+					icon: "beneath:wood/log/warped"
+					id: "2D46DA77329E9F66"
+					observe_type: 1
+					timer: 0L
+					to_observe: "#tfc:warped_logs"
+					type: "observation"
+				}
+			]
+			x: 15.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5AC5AAB9B3758E30"]
+			id: "52E45601E8575846"
+			tasks: [{
+				id: "72E35CA3CF29585B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(betterend:amber_root_seeds)item(betterend:blossom_berry_seeds)item(betterend:cave_pumpkin_plant_seeds)item(betterend:chorus_mushroom_seeds)item(betterend:shadow_berry_seeds)item(betterend:bolux_mushroom_seeds))"
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0967CE7F5DFF5CF6"]
+			id: "6D7ADBBCEF5770B6"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0D11FBA73B54918F"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "04A7D0429E419846"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "608858DB0AEA4378"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5BC5195C7775137C"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 17.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"24E25ED8D00F0918"
+				"5F0D553D08A5985C"
+			]
+			dependency_requirement: "one_completed"
+			id: "75DE44FFAC51DD60"
+			tasks: [{
+				id: "4295E3343126DFEF"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:mineral_rich_wool)"
+					}
+				}
+				title: "Any #tfg:mineral_rich_wool"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["75DE44FFAC51DD60"]
+			id: "14710D52AE1732FD"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "44970A2CAF24030A"
+				item: "tfg:mli_shielding"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"24E25ED8D00F0918"
+				"52E45601E8575846"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 22686000L
+						traits: [ ]
+					}
+				}
+				id: "betterend:cave_pumpkin_pie"
+			}
+			id: "1AC201876984D248"
+			shape: "heart"
+			size: 1.5d
+			tasks: [{
+				id: "5F863BCE6DAA30D6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(betterend:cave_pumpkin_pie))"
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["155F421FC2F39C3C"]
+			id: "00202200344F3456"
+			tasks: [{
+				id: "0F811696C5BB0AA5"
+				item: "gtceu:iodine_dust"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5AC5AAB9B3758E30"]
+			id: "43EBECA48E341C47"
+			optional: true
+			shape: "heart"
+			tasks: [{
+				id: "0417B5DE47BE08CA"
+				item: "wan_ancient_beasts:surfer_egg"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5F0D553D08A5985C"
+				"24E25ED8D00F0918"
+			]
+			dependency_requirement: "one_completed"
+			id: "63F1FC03DC3198AB"
+			optional: true
+			shape: "heart"
+			tasks: [{
+				id: "71BA5426AA25BED0"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:large_nest_box)item(tfg:large_nest_box_warped))"
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6D7ADBBCEF5770B6"]
+			description: [""]
+			id: "5F3B9E4565922E77"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				dimension: "ad_astra:venus"
+				icon: "ad_astra:venus_globe"
+				id: "40A3104927F366FF"
+				type: "dimension"
+			}]
+			title: "{quests.space_survival.venus.title}"
+			x: 20.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6D7ADBBCEF5770B6"]
+			description: [""]
+			id: "5F937028722EB4C6"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				dimension: "ad_astra:mercury"
+				icon: "ad_astra:mercury_globe"
+				id: "7B5C6F856AE2380E"
+				type: "dimension"
+			}]
+			title: "{quests.space_survival.mercury.title}"
+			x: 20.5d
+			y: -6.0d
 		}
 	]
 	subtitle: ["{quests.space_survival.subtitle}"]
