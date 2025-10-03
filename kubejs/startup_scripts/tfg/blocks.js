@@ -224,6 +224,22 @@ const registerTFGBlocks = (event) => {
 		.tagBlock('minecraft:mineable/pickaxe')
 		.tagBlock('minecraft:mineable/wrench')
 
+	// Unfinished Insulation
+	event.create('tfg:moderate_core')
+		.soundType('ancient_debris')
+		.hardness(7)
+		.resistance(8)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+		.model('tfg:block/fission/moderate_core')
+	event.create('tfg:impure_moderate_core')
+		.soundType('ancient_debris')
+		.hardness(7)
+		.resistance(8)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+		.model('tfg:block/fission/impure_moderate_core')
+
 	// #region Decorative vases
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
 		event.create(`tfg:decorative_vase/generated/${color}`, 'cardinal')
