@@ -1070,13 +1070,13 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	processorRecipe("cave_pumpkin_pie_dough", 300, GTValues.VA[GTValues.HV], {
-		itemInputs: ['#tfg:martian_eggs', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', '#tfc:sweetener'],
+		itemInputs: ['#tfg:martian_eggs', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', 'tfg:wraptor_sugar'],
 		fluidInputs: ['minecraft:water 1000'],
 		itemOutputs: ["betterend:cave_pumpkin_pie_dough"]
 	})
 
 	event.recipes.firmalife.mixing_bowl()
-		.ingredients(['#tfg:martian_eggs', 'betterend:cave_pumpkin_chunks', 'betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', '#tfc:sweetener'],
+		.ingredients(['#tfg:martian_eggs', 'betterend:cave_pumpkin_chunks', 'betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', 'tfg:wraptor_sugar'],
 			Fluid.of('minecraft:water', 1000))
 		.outputItem('betterend:cave_pumpkin_pie_dough')
 		.id('tfg:mixing_bowl/cave_pumpkin_pie_dough')
