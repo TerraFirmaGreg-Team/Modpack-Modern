@@ -482,4 +482,11 @@ const registerTFGItems = (event) => {
 		.texture('tfg:item/fuel_rod_empty')
 		.tag('tfg:fission_rods')
 
+	event.create('tfg:refrigerant_pellet')
+		.translationKey('item.tfg.refrigerant_pellet')
+		.texture('tfg:item/refrigerant_pellet')
+		.tag('tfg:fission_coolant')
+
+
+
 }

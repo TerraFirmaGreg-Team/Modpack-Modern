@@ -290,7 +290,7 @@ const registerGTCEuMachines = (event) => {
 			.where('S', Predicates.blocks(GTBlocks.CASING_ENGINE_INTAKE.get()))
 			.where('K', Predicates.blocks('gtceu:high_temperature_smelting_casing'))
 			.where('C', Predicates.heatingCoils())
-			.where('L', Predicates.blocks('gtceu:atomic_casing')
+			.where('L', Predicates.blocks('gtceu:atomic_casing').setMinGlobalLimited(15)
 				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
 				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
 				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))

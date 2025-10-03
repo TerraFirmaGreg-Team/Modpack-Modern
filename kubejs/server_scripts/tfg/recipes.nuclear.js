@@ -58,7 +58,7 @@ function registerTFGNuclearRecipes(event) {
 		.outputFluids(Fluid.of('tfg:heavy_water', 500))
 		.itemOutputs('#forge:dusts/ammonium_chloride', '2x #forge:small_dusts/ammonium_chloride')
 		.duration(20*9)
-		.EUt(GTValues.VHA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.centrifuge('mars_semiheavy_water')
 		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
@@ -227,7 +227,7 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*100)
 		.EUt(32)*/
 
-	// Thorium Fission
+	// Plutonium Fission
 
     event.recipes.deafission.fission_reactor_fuel('tfg:plutonium')
 		.itemInputs(Item.of('tfg:plutonium_rod'))
@@ -239,7 +239,7 @@ function registerTFGNuclearRecipes(event) {
 		.notConsumable(Item.of('tfg:plutonium_rod'))
 		.perTick(true)
 		.inputFluids(Fluid.of('tfg:heavy_water', 25))
-		.outputFluids(Fluid.of('gtceu:irradiated_steam', 10))
+		.outputFluids(Fluid.of('gtceu:irradiated_steam', 40))
 		.perTick(false)
         .duration(1);
 
@@ -262,6 +262,31 @@ function registerTFGNuclearRecipes(event) {
         .blastFurnaceTemp(100)
 		.addData("heat_per_tick", 10)
 		.duration(20*1)
+
+	event.recipes.deafission.fission_reactor_processing('tfg:refrigerant_pellet')
+		.itemInputs('tfg:refrigerant_pellet')
+        .blastFurnaceTemp(100)
+		.addData("heat_per_tick", 40)
+		.duration(20*30)
+
+	event.recipes.gtceu.gas_pressurizer('tfg:tetrafluoroethane')
+		.inputFluids(Fluid.of('tfg:1_1_1_2_tetrafluoroethane', 1000), Fluid.of('gtceu:liquid_helium', 1000))
+		.outputFluids(Fluid.of('tfg:tetrafluoroethane', 1000))
+		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20*36)
+
+	event.recipes.gtceu.vacuum_freezer('tfg:tetrafluoroethane_gem')
+		.inputFluids(Fluid.of('tfg:tetrafluoroethane', 1000))
+		.itemOutputs(Item.of('tfg:tetrafluoroethane_gem', 1))
+		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20*14)
+
+	event.recipes.gtceu.assembler('tfg:tetrafluoroethane_gem')
+		.itemInputs(Item.of('tfg:tetrafluoroethane_gem', 1))
+		.itemInputs(Item.of('tfg:polycaprolactam_fabric', 16))
+		.itemOutputs(Item.of('tfg:refrigerant_pellet', 1))
+		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20*17)
 
 	//#endregion
 

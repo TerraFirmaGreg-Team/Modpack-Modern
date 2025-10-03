@@ -137,6 +137,16 @@ const registerTFGMaterials = (event) => {
 		.components('2x carbon', '2x hydrogen', '4x fluorine')
 		.color(0x46702e)
 
+	// Fission Component
+
+	event.create('tfg:tetrafluoroethane')
+		.fluid()
+		.gem()
+		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.iconSet(GTMaterialIconSet.QUARTZ)
+		.components('2x carbon', '2x hydrogen', '4x fluorine')
+		.color(0x46702e)
+
 	// Crafting components
 
 	event.create('tfg:kaolinite')
