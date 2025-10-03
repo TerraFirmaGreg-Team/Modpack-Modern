@@ -139,7 +139,7 @@ function registerTFGNuclearRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:dense_steam', 10))
 		.outputFluids(Fluid.of('gtceu:formamide', 10))
 		.perTick(false)
-		.duration(20*10)
+		.duration(20*5)
 		.EUt(1)
 
 	event.recipes.gtceu.heat_exchanger('plutonium_steam')
@@ -148,7 +148,7 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:irradiated_steam', 10))
 		.outputFluids(Fluid.of('gtceu:dense_steam', 10))
 		.perTick(false)
-		.duration(20*10)
+		.duration(20*5)
 		.EUt(1)
 
 	// Heat Exchanger for Energy

@@ -223,6 +223,18 @@ const registerTFGBlocks = (event) => {
 		.resistance(6)
 		.tagBlock('minecraft:mineable/pickaxe')
 		.tagBlock('minecraft:mineable/wrench')
+	event.create('tfg:moderate_core_frame')
+		.soundType('copper')
+		.hardness(4)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+	event.create('tfg:impure_moderate_core_frame')
+		.soundType('copper')
+		.hardness(5)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
 
 	// Unfinished Insulation
 	event.create('tfg:moderate_core')

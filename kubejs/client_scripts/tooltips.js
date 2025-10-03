@@ -172,8 +172,23 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['minecraft:blue_ice'], (item, advanced, text) => {
 		text.add(1, Text.translate("tfg.tooltip.component.blue_ice"))
 	})
-	event.addAdvanced(['ad_astra:glacian_fur'], (item, advanced, text) => {
+	event.addAdvanced(['tfg:glacian_wool_frame'], (item, advanced, text) => {
 		text.add(1, Text.translate("tfg.tooltip.component.glacian_fur"))
+	})
+	event.addAdvanced(['tfg:aes_insulation_frame'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.component.aes_insulation_frame"))
+	})
+	event.addAdvanced(['tfg:moderate_core_frame'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.component.moderate_core_frame"))
+	})
+	event.addAdvanced(['tfg:impure_moderate_core_frame'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.component.impure_moderate_core_frame"))
+	})
+	event.addAdvanced(['tfg:dry_ice'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.component.dry_ice"))
+	})
+	event.addAdvanced(['tfg:refrigerant_pellet'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.component.refrigerant_pellet"))
 	})
 
 	// AE2
