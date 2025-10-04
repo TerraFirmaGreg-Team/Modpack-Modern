@@ -897,14 +897,14 @@ const registerCreateRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	// Латунная рука
-	event.shaped('create:brass_hand', [
+	event.recipes.gtceu.shaped('create:brass_hand', [
 		' AB',
 		'CCD',
 		' C '
 	], {
 		A: '#forge:tools/hammers',
-		B: '#forge:ingots/brass',
-		C: '#forge:bolts/brass',
+		B: ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Brass, 1),
+		C: ChemicalHelper.get(TagPrefix.bolt, GTMaterials.Brass, 1),
 		D: '#forge:tools/files'
 	}).addMaterialInfo().id('tfg:create/shaped/brass_hand')
 
