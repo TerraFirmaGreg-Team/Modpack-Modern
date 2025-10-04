@@ -958,7 +958,7 @@ function registerGTCEuMachineRecipes(event) {
 	event.recipes.gtceu.assembler('steel_machine_casing')
 		.itemInputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 4))
 		.itemOutputs('gtceu:steel_machine_casing')
-		.circuit(4)
+		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(16)
 
@@ -966,7 +966,7 @@ function registerGTCEuMachineRecipes(event) {
 		.itemInputs('gtceu:clean_machine_casing', '4x gtceu:annealed_copper_double_wire')
 		.inputFluids(Fluid.of('gtceu:polyvinyl_chloride', 288))
 		.itemOutputs('tfg:casings/machine_casing_stainless_evaporation')
-		.circuit(4)
+		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -974,7 +974,7 @@ function registerGTCEuMachineRecipes(event) {
 		.itemInputs('gtceu:clean_machine_casing', '4x #forge:double_wires/kanthal')
 		.inputFluids(Fluid.of('gtceu:polybenzimidazole', 288))
 		.itemOutputs('tfg:casings/machine_casing_mars')
-		.circuit(4)
+		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -982,7 +982,7 @@ function registerGTCEuMachineRecipes(event) {
 		.itemInputs('4x #forge:dense_plates/lead', '2x #forge:plates/rtm_alloy', '#forge:frames/titanium')
 		.inputFluids(Fluid.of('gtceu:polyvinyl_butyral', 288))
 		.itemOutputs('2x gtceu:atomic_casing')
-		.circuit(4)
+		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -1269,5 +1269,17 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:ev_fluid_regulator'
 	}
 	).id('tfg:shaped/heat_exchanger')
+
+	event.shaped('tfg:nuclear_turbine', [
+		'CTC',
+		'TZT',
+		'BTB'
+	], {
+		T: '#forge:gears/magnalium',
+		Z: 'gtceu:ev_machine_hull',
+		B: 'gtceu:ultimet_large_item_pipe',
+		C: '#gtceu:circuits/ev'
+	}
+	).id('tfg:shaped/nuclear_turbine')
 
 }

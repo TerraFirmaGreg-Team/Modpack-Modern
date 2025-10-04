@@ -1615,7 +1615,7 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.EV])
 		
 
-	//# New Alloys For Turbines
+	// New Alloys For Turbines
 
 	event.recipes.gtceu.mixer('tfg:tungsten_bismuth_oxide_composite')
 		.itemInputs('2x #forge:dusts/bismuth', 'gtceu:tungsten_dust')
@@ -1624,5 +1624,47 @@ const registerGTCEURecipes = (event) => {
 		.duration(20 * 12)
 		.EUt(GTValues.VA[GTValues.EV])
 
+	// Handcrafted artisanal concrete
 
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/marble', '#forge:dusts/gypsum'], Fluid.of('minecraft:water', 1000))
+		.outputFluid(Fluid.of('gtceu:concrete', 1000))
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/clay'], Fluid.of('minecraft:water', 500))
+		.outputFluid(Fluid.of('gtceu:concrete', 500))
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/calcite', '#forge:dusts/gypsum'], Fluid.of('minecraft:water', 1000))
+		.outputFluid(Fluid.of('gtceu:concrete', 1000))
+
+	event.recipes.tfc.barrel_sealed(1000)
+		.inputFluid(Fluid.of('gtceu:concrete', 144))
+		.inputItem('gtceu:wood_frame')
+		.outputItem('gtceu:light_concrete')
+		.id('tfg:barrel/light_concrete')
+
+	event.recipes.tfc.barrel_sealed(1000)
+		.inputFluid(Fluid.of('gtceu:concrete', 96))
+		.inputItem('tfg:rebar_support')
+		.outputItem('tfg:reinforced_light_concrete_support')
+		.id('tfg:barrel/reinforced_light_concrete_support')
+
+	event.recipes.tfc.barrel_sealed(500)
+		.inputItem('gtceu:light_concrete')
+		.inputFluid(Fluid.of('tfc:black_dye', 18))
+		.outputItem('gtceu:dark_concrete')
+		.id('tfg:barrel/dark_concrete')
+		
+	event.recipes.tfc.barrel_sealed(500)
+		.inputItem('tfg:light_concrete_support')
+		.inputFluid(Fluid.of('tfc:black_dye', 10))
+		.outputItem('tfg:dark_concrete_support')
+		.id('tfg:barrel/dark_concrete_support')
+
+	event.recipes.tfc.barrel_sealed(500)
+		.inputItem('tfg:reinforced_light_concrete_support')
+		.inputFluid(Fluid.of('tfc:black_dye', 10))
+		.outputItem('tfg:reinforced_dark_concrete_support')
+		.id('tfg:barrel/reinforced_dark_concrete_support')
 }
