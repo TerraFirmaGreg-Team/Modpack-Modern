@@ -21,8 +21,8 @@ function excludeAllGemsButNormal(material) {
 
 function excludeAllOresButDust(material) {
 	TagPrefix.rawOre.setIgnored(material);
-	TagPrefix.poorRawOre.setIgnored(material);
-	TagPrefix.richRawOre.setIgnored(material);
+	TFGTagPrefix.poorRawOre.setIgnored(material);
+	TFGTagPrefix.richRawOre.setIgnored(material);
 	TagPrefix.rawOreBlock.setIgnored(material);
 	TagPrefix.crushedRefined.setIgnored(material);
 	TagPrefix.crushedPurified.setIgnored(material);
