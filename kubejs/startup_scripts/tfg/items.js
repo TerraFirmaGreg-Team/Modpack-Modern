@@ -13,6 +13,7 @@ const registerTFGItems = (event) => {
 	event.create('tfg:unfinished_electron_tube', 'create:sequenced_assembly')
 	event.create('tfg:unfinished_vacuum_tube', 'create:sequenced_assembly')
 	event.create('tfg:unfinished_basic_electronic_circuit', 'create:sequenced_assembly')
+	event.create('tfg:unfinished_good_electronic_circuit', 'create:sequenced_assembly')
 	event.create('tfg:unfinished_inscriber_accumulation_press')
 	event.create('tfg:vitrified_pearl')
 	event.create('tfg:cryo_fluix_pearl')

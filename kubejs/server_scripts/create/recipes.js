@@ -897,16 +897,16 @@ const registerCreateRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	// Латунная рука
-	event.shaped('create:brass_hand', [
+	event.recipes.gtceu.shaped('create:brass_hand', [
 		' AB',
 		'CCD',
 		' C '
 	], {
 		A: '#forge:tools/hammers',
-		B: '#forge:ingots/brass',
-		C: '#forge:bolts/brass',
+		B: ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Brass, 1),
+		C: ChemicalHelper.get(TagPrefix.bolt, GTMaterials.Brass, 1),
 		D: '#forge:tools/files'
-	}).id('tfg:create/shaped/brass_hand')
+	}).addMaterialInfo().id('tfg:create/shaped/brass_hand')
 
 	event.recipes.gtceu.assembler('tfg:create/brass_hand')
 		.itemInputs('3x #forge:bolts/brass', '#forge:plates/brass')
@@ -990,7 +990,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/super_glue')
 
 	// Deployer
-	event.shaped('create:deployer', [
+	event.recipes.gtceu.shaped('create:deployer', [
 		' A ',
 		'DBF',
 		' CE'
@@ -1001,7 +1001,7 @@ const registerCreateRecipes = (event) => {
 		D: '#forge:tools/wrenches',
 		E: '#forge:tools/screwdrivers',
 		F: 'create:electron_tube'
-	}).id('tfg:create/shaped/deployer')
+	}).addMaterialInfo().id('tfg:create/shaped/deployer')
 
 	event.recipes.gtceu.assembler('create:deployer')
 		.itemInputs('#forge:cogwheels', 'gtceu:ulv_machine_casing', 'create:brass_hand', 'create:electron_tube')

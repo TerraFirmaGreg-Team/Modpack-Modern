@@ -185,8 +185,26 @@ const registerGTCEURecipes = (event) => {
 		.duration(300)
 		.EUt(2)
 
+	event.recipes.gtceu.compressor('plant_ball_from_moon_plants')
+		.itemInputs('4x #tfg:moon_plants')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
+	event.recipes.gtceu.compressor('plant_ball_from_mars_plants')
+		.itemInputs('4x #tfg:mars_plants')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_corals')
 		.itemInputs('4x #tfc:corals')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
+	event.recipes.gtceu.compressor('plant_ball_from_misc_plants')
+		.itemInputs('4x #createaddition:plants')
 		.itemOutputs('gtceu:plant_ball')
 		.duration(300)
 		.EUt(2)
@@ -213,6 +231,20 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_plants')
 		.itemInputs('#tfc:plants')
+		.inputFluids("#tfc:any_water 20")
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_moon_plants')
+		.itemInputs('#tfg:moon_plants')
+		.inputFluids("#tfc:any_water 20")
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_mars_plants')
+		.itemInputs('#tfg:mars_plants')
 		.inputFluids("#tfc:any_water 20")
 		.outputFluids(Fluid.of('gtceu:biomass', 100))
 		.duration(100)
@@ -570,6 +602,21 @@ const registerGTCEURecipes = (event) => {
 		event.recipes.createFilling('tfg:unfinished_basic_electronic_circuit', ['tfg:unfinished_basic_electronic_circuit', Fluid.of('gtceu:glue', 50)]),
 		event.recipes.createDeploying('tfg:unfinished_basic_electronic_circuit', ['tfg:unfinished_basic_electronic_circuit', '#forge:plates/steel']),
 	]).transitionalItem('tfg:unfinished_basic_electronic_circuit').loops(1).id('tfg:gtceu/sequenced_assembly/basic_electronic_circuit')
+
+	event.remove({ id: 'gtceu:shaped/electronic_circuit_mv' })
+
+	event.recipes.createSequencedAssembly([
+		'gtceu:good_electronic_circuit',
+	], 'gtceu:phenolic_printed_circuit_board', [
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', 'gtceu:diode']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', 'gtceu:diode']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', '#forge:single_wires/copper']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', '#forge:single_wires/copper']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', 'gtceu:basic_electronic_circuit']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', 'gtceu:basic_electronic_circuit']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', 'gtceu:basic_electronic_circuit']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', '#forge:plates/steel']),
+	]).transitionalItem('tfg:unfinished_good_electronic_circuit').loops(1).id('tfg:gtceu/sequenced_assembly/good_electronic_circuit')
 
 	//#endregion
 

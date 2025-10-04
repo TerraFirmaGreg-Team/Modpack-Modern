@@ -25,6 +25,10 @@
           {
             "block": "gtceu:granite_lead_ore",
             "weight": 11
+          },
+          {
+            "block": "gtceu:granite_silver_ore",
+            "weight": 10
           }
         ]
       },
@@ -44,6 +48,10 @@
           {
             "block": "gtceu:diorite_lead_ore",
             "weight": 11
+          },
+          {
+            "block": "gtceu:diorite_silver_ore",
+            "weight": 10
           }
         ]
       },
@@ -63,6 +71,10 @@
           {
             "block": "gtceu:gabbro_lead_ore",
             "weight": 11
+          },
+          {
+            "block": "gtceu:gabbro_silver_ore",
+            "weight": 10
           }
         ]
       },
@@ -82,6 +94,10 @@
           {
             "block": "gtceu:shale_lead_ore",
             "weight": 11
+          },
+          {
+            "block": "gtceu:shale_silver_ore",
+            "weight": 10
           }
         ]
       },
@@ -101,6 +117,10 @@
           {
             "block": "gtceu:claystone_lead_ore",
             "weight": 11
+          },
+          {
+            "block": "gtceu:claystone_silver_ore",
+            "weight": 10
           }
         ]
       },
@@ -120,6 +140,10 @@
           {
             "block": "gtceu:limestone_lead_ore",
             "weight": 11
+          },
+          {
+            "block": "gtceu:limestone_silver_ore",
+            "weight": 10
           }
         ]
       },
@@ -139,6 +163,10 @@
           {
             "block": "gtceu:conglomerate_lead_ore",
             "weight": 11
+          },
+          {
+            "block": "gtceu:conglomerate_silver_ore",
+            "weight": 10
           }
         ]
       },
@@ -158,6 +186,10 @@
           {
             "block": "gtceu:dolomite_lead_ore",
             "weight": 11
+          },
+          {
+            "block": "gtceu:dolomite_silver_ore",
+            "weight": 10
           }
         ]
       },
@@ -177,6 +209,10 @@
           {
             "block": "gtceu:chert_lead_ore",
             "weight": 11
+          },
+          {
+            "block": "gtceu:chert_silver_ore",
+            "weight": 10
           }
         ]
       },
@@ -196,6 +232,10 @@
           {
             "block": "gtceu:chalk_lead_ore",
             "weight": 11
+          },
+          {
+            "block": "gtceu:chalk_silver_ore",
+            "weight": 10
           }
         ]
       }
@@ -217,6 +257,10 @@
         {
           "block": "gtceu:lead_indicator",
           "weight": 11
+        },
+        {
+          "block": "tfc:ore/small_native_silver",
+          "weight": 10
         }
       ]
     }
