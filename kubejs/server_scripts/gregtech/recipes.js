@@ -185,8 +185,26 @@ const registerGTCEURecipes = (event) => {
 		.duration(300)
 		.EUt(2)
 
+	event.recipes.gtceu.compressor('plant_ball_from_moon_plants')
+		.itemInputs('4x #tfg:moon_plants')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
+	event.recipes.gtceu.compressor('plant_ball_from_mars_plants')
+		.itemInputs('4x #tfg:mars_plants')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_corals')
 		.itemInputs('4x #tfc:corals')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
+	event.recipes.gtceu.compressor('plant_ball_from_misc_plants')
+		.itemInputs('4x #createaddition:plants')
 		.itemOutputs('gtceu:plant_ball')
 		.duration(300)
 		.EUt(2)
@@ -213,6 +231,20 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_plants')
 		.itemInputs('#tfc:plants')
+		.inputFluids("#tfc:any_water 20")
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_moon_plants')
+		.itemInputs('#tfg:moon_plants')
+		.inputFluids("#tfc:any_water 20")
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_mars_plants')
+		.itemInputs('#tfg:mars_plants')
 		.inputFluids("#tfc:any_water 20")
 		.outputFluids(Fluid.of('gtceu:biomass', 100))
 		.duration(100)

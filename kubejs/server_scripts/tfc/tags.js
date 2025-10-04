@@ -326,6 +326,7 @@ function registerTFCItemTags(event) {
     event.add("tfc:forge_invisible_whitelist", "greate:titanium_mechanical_pump");
 
     event.add("forge:mushrooms", "tfc:plant/artists_conk");
+    event.add("forge:raw_materials/sylvite", "tfc:ore/sylvite");
 
     global.TFC_STONE_TYPES.forEach((stone) => {
         event.add("minecraft:stone_buttons", `tfc:rock/button/${stone}`);

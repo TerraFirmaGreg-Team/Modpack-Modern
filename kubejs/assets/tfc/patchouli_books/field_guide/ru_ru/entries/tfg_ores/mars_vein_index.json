@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарниерит и Кобальтит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Изумруд и Бериллий$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Касситерит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Марганец и Тантал$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Медь и Халькопирит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Серебро, Галена и Свинец$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сфалерит & Пирит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраэдрит (обычный)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Тетраэдрит (Поверхностный)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеелит и Вольфрамат$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарниерит и Кобальтит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Графит и Алмаз$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Изумруд и Бериллий$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Касситерит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Марганец и Тантал$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Медь и Халькопирит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Серебро, Галена и Свинец$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сфалерит & Пирит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраэдрит (обычный)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Тетраэдрит (Поверхностный)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеелит и Вольфрамат$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1539,6 +1539,98 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Хромит$(): Кальций$(br)$(thing)Формула$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 220$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): трубчатая жила$(br)$(thing)Y-уровень$(): 0 — 120$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 9$(br)$(thing)Индикатор Max Depth$(): 50$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Габбро, Гранит, Дацит, Диорит, Трахит",
+      "title": "Графит и Алмаз",
+      "type": "patchouli:text",
+      "anchor": "mars_graphite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Графит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/graphite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 45%$(br)$(thing)Используется для$(): $(l:mechanics/fire_clay)Огнеупорная глина$(), Графен$(br)$(thing)Формула$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Уголь",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Используется для$(): топливо, ректификация$(br)$(thing)Формула$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Алмаз",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/diamond"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Используется для$(): Измельчители, предметы из AE2$(br)$(thing)Формула$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
       "type": "patchouli:multiblock"
     },
     {
