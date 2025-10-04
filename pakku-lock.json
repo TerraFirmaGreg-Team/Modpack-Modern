@@ -4540,7 +4540,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "deafission-1.20.1-0.10.0.jar",
+                    "file_name": "deafission-1.20.1-0.10.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4548,19 +4548,19 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7051/190/deafission-1.20.1-0.10.0.jar",
-                    "id": "7051190",
+                    "url": "https://edge.forgecdn.net/files/7066/119/deafission-1.20.1-0.10.1.jar",
+                    "id": "7066119",
                     "parent_id": "1354541",
                     "hashes": {
-                        "sha1": "4e638914cbe6219c350bb311edeb4681efdff0fc",
-                        "md5": "35c91edd7b33447916f5335861ec4d6e"
+                        "sha1": "a9de6f7459179ced4b9c6004c7e483c547f2f633",
+                        "md5": "09bf1bd9ec8810c37748998c3341e4d4"
                     },
                     "required_dependencies": [
                         "238086",
                         "890405"
                     ],
-                    "size": 172805,
-                    "date_published": "2025-09-30T22:20:24.360Z"
+                    "size": 172906,
+                    "date_published": "2025-10-04T15:56:36.763Z"
                 }
             ]
         },
