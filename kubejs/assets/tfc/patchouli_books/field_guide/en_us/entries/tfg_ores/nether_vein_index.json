@@ -2707,7 +2707,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 220$(br)$(thing)Density$(): 0.55$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Size$(): 29$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
+      "text": "$(thing)Rarity$(): 250$(br)$(thing)Density$(): 0.55$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Size$(): 24$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
       "title": "Uraninite & Pitchblende",
       "type": "patchouli:text",
       "anchor": "nether_pitchblende"

@@ -14,12 +14,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandine & Sapphire$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Apatita e Pirocloro$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Bastnasita e Monazita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Bismuto$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornite & Cooperite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Cassiterita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Coal & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Cobre e Calcopirita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Esfalerita e Pirita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Esmeralda e Berílio$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Gold, Electrotine, & Bauxite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Hematita e Limonita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Hematita e Limonita$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandine & Sapphire$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Apatita e Pirocloro$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Bastnasita e Monazita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Bismuto$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornite & Cooperite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Cassiterita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Coal & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Cobre e Calcopirita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Esfalerita e Pirita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Esmeralda e Berílio$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Gold, Electrotine, & Bauxite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Grafite e Diamante$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Hematita e Limonita$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende, Thorium, & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorium, & Uraninite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartzite, Asbestos, & Barite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone & Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Salts & Spodumene$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Sphalerite & Galena$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Tetraedrita (Normal)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Tetraedrita (Superfície)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Trona, Talc, & Glauconite$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Hematita e Limonita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende, Thorium, & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorium, & Uraninite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartzite, Asbestos, & Barite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone & Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Salts & Spodumene$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Sphalerite & Galena$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Tetraedrita (Normal)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Tetraedrita (Superfície)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Trona, Talc, & Glauconite$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1049,6 +1049,98 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Fonte de$(): Aluminium$(br)$(thing)Fórmula$(): Al₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 220$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): 0 — 120$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 9$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Argilita, Dacito, Diorito, Gabro, Granito, Red Granite, Traquito",
+      "title": "Grafite e Diamante",
+      "type": "patchouli:text",
+      "anchor": "mars_graphite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Grafite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/graphite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 45%$(br)$(thing)Usado para$(): $(l:mechanics/fire_clay)Argila Refratária$(), Grafeno$(br)$(thing)Fórmula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Carvão",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Usado para$(): Combustível, Destilação$(br)$(thing)Fórmula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Diamante",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/diamond"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Usado para$(): Maceradores, AE2$(br)$(thing)Fórmula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₂O₃",
       "type": "patchouli:multiblock"
     },
     {

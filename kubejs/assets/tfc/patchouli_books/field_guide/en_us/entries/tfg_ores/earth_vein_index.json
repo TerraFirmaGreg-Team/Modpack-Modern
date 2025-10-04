@@ -379,7 +379,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 80%$(br)$(thing)Melts into$(): Bismuth$(br)$(thing)Formula$(): Bi",
+      "text": "$(thing)Percentage$(): 72%$(br)$(thing)Melts into$(): Bismuth$(br)$(thing)Formula$(): Bi",
       "type": "patchouli:multiblock"
     },
     {
@@ -399,7 +399,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 11%$(br)$(thing)Smelts into$(): Lead$(br)$(thing)Formula$(): Pb$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
+      "text": "$(thing)Percentage$(): 10%$(br)$(thing)Smelts into$(): Lead$(br)$(thing)Formula$(): Pb$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Native Silver",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 9%$(br)$(thing)Melts into$(): Silver$(br)$(thing)Formula$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -419,8 +439,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 9%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
+      "text": "$(thing)Percentage$(): 8%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -1905,7 +1930,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 190$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 210$(br)$(thing)Size$(): 36$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
+      "text": "$(thing)Rarity$(): 190$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 210$(br)$(thing)Size$(): 36$(br)$(thing)Indicator Max Depth$(): 40$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
       "title": "Kyanite, Mica, & Bauxite",
       "type": "patchouli:text",
       "anchor": "normal_mica"
@@ -2802,7 +2827,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 175$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 30 — 70$(br)$(thing)Size$(): 40$(br)$(thing)Height$(): 4$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Claystone, Limestone, Shale",
+      "text": "$(thing)Rarity$(): 175$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 30 — 70$(br)$(thing)Size$(): 40$(br)$(thing)Height$(): 4$(br)$(thing)Indicator Max Depth$(): 40$(br2)$(thing)Stone Types$(): Claystone, Limestone, Shale",
       "title": "Salts & Borax",
       "type": "patchouli:text",
       "anchor": "normal_salt"
@@ -3361,7 +3386,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 180$(br)$(thing)Density$(): 0.375$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 20 — 60$(br)$(thing)Size$(): 35$(br)$(thing)Height$(): 6$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
+      "text": "$(thing)Rarity$(): 180$(br)$(thing)Density$(): 0.375$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 20 — 60$(br)$(thing)Size$(): 35$(br)$(thing)Height$(): 6$(br)$(thing)Indicator Max Depth$(): 40$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
       "title": "Spodumene & Lepidolite",
       "type": "patchouli:text",
       "anchor": "normal_spodumene"
@@ -3746,7 +3771,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 240$(br)$(thing)Density$(): 0.45$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -64 — -20$(br)$(thing)Size$(): 24$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
+      "text": "$(thing)Rarity$(): 240$(br)$(thing)Density$(): 0.45$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -64 — -20$(br)$(thing)Size$(): 19$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
       "title": "Uraninite & Pitchblende",
       "type": "patchouli:text",
       "anchor": "deep_pitchblende"
