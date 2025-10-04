@@ -8,7 +8,7 @@ const registerTFGBlocks = (event) => {
 	registerTFGAqueductBlocks(event)
 	registerTFGCrops(event)
 		
-	event.create('tfg:exhaust_vent_particle', 'tfg:particle_emitter')
+	event.create('tfg:exhaust_vent_particle', 'tfg:active_particle_emitter')
 		.textureAll('tfg:block/titanium_concrete')
 		.soundType('metal')
 		.hardness(5)
@@ -17,12 +17,13 @@ const registerTFGBlocks = (event) => {
 		.tagBlock('minecraft:mineable/wrench')
 		.mapColor('color_black')
 		.speedFactor(1.1)
-		.particleOffset(5, 1, 5)
-		.particleVelocity(0.0, 0.1, 0.0)
-		.particle('minecraft:campfire_signal_smoke')
-		.particleCount(50)
-		.particleForced(true)
-
+		.activeOffset(5, 1, 5)
+		.activeVelocity(0.0, 0.1, 0.0)
+		//.activeParticle('tfc:smoke_0')
+		.activeCount(50)
+		.activeForced(true)
+		.hasTicker(true) 
+	
 	// #region Machine Casings
 
 	global.TFG_MACHINE_CASINGS.forEach(type => {
@@ -161,7 +162,6 @@ const registerTFGBlocks = (event) => {
 		.tagBlock('minecraft:mineable/pickaxe')
 		.tagBoth('tfg:titanium_concrete')
 		
-		
 	event.create('tfg:polished_titanium_concrete')
 		.translationKey('block.tfg.polished_titanium_concrete')
 		.model('tfg:block/concrete/polished_titanium_concrete')
@@ -223,6 +223,7 @@ const registerTFGBlocks = (event) => {
 		.resistance(6)
 		.tagBlock('minecraft:mineable/pickaxe')
 		.tagBlock('minecraft:mineable/wrench')
+
 	event.create('tfg:moderate_core_frame')
 		.soundType('copper')
 		.hardness(4)
