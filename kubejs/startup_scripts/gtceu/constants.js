@@ -196,12 +196,6 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:hv_bedrock_ore_miner",
     "gtceu:ev_bedrock_ore_miner",
 
-    // Ore removal
-    "gtceu:raw_plutonium",
-    'gtceu:rich_raw_plutonium',
-    'gtceu:poor_raw_plutonium',
-    'gtceu:plutonium_indicator',
-
 ]);
 //#endregion
 
