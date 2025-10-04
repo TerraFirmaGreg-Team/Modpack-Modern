@@ -191,6 +191,11 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("tfg.tooltip.component.refrigerant_pellet"))
 	})
 
+	event.addAdvanced(['tfg:nuclear_turbine'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.component.nuclear_turbine_1"))
+		text.add(2, Text.translate("tfg.tooltip.component.nuclear_turbine_2"))
+	})
+
 	// AE2
 	event.addAdvanced(['tfg:wireless_card'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.wireless_card_1'))

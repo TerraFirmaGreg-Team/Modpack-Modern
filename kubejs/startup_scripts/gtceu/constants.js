@@ -200,11 +200,6 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:raw_plutonium",
     'gtceu:rich_raw_plutonium',
     'gtceu:poor_raw_plutonium',
-    'gtceu:crushed_plutonium_ore',
-    'gtceu:refined_plutonium_ore',
-    'gtceu:purified_plutonium_ore',
-    'gtceu:pure_plutonium_dust',
-    'gtceu:plutonium_indicator',
     'gtceu:plutonium_indicator',
 
 ]);

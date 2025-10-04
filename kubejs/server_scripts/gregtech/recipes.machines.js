@@ -1270,4 +1270,16 @@ function registerGTCEuMachineRecipes(event) {
 	}
 	).id('tfg:shaped/heat_exchanger')
 
+	event.shaped('tfg:nuclear_turbine', [
+		'CTC',
+		'TZT',
+		'BTB'
+	], {
+		T: '#forge:gears/magnalium',
+		Z: 'gtceu:ev_machine_hull',
+		B: 'gtceu:ultimet_large_item_pipe',
+		C: '#gtceu:circuits/ev'
+	}
+	).id('tfg:shaped/nuclear_turbine')
+
 }

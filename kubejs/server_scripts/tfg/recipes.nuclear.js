@@ -2,6 +2,29 @@
 
 function registerTFGNuclearRecipes(event) {
 
+	// Fission blocks
+
+	event.recipes.gtceu.assembler('tfg:redstone_port')
+		.itemInputs('gtceu:ev_machine_hull', 'gtceu:activity_detector_cover')
+		.itemOutputs('deafission:redstone_port')
+		.duration(20*30)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.assembler('tfg:material_holder')
+		.itemInputs('gtceu:ev_input_bus', '4x gtceu:uranium_triplatinum_single_wire', '2x gtceu:ev_conveyor_module', '#gtceu:circuits/ev')
+		.itemOutputs('deafission:material_holder')
+		.duration(20*30)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.assembler('tfg:fuel_holder')
+		.itemInputs('gtceu:ev_machine_hull', '4x gtceu:uranium_triplatinum_single_wire', '4x gtceu:ev_robot_arm', '4x gtceu:titanium_gear', '2x #gtceu:circuits/ev')
+		.itemOutputs('deafission:fuel_holder')
+		.duration(20*30)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.LV])
+
 	//#region Nuclear Pellet
 
 	event.recipes.gtceu.nuclear_fuel_factory('tfg:thorium_pellet')
