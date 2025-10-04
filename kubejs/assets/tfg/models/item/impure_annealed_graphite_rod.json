@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tfg:item/graphite_line/pure_graphite_rod",
+    "layer1": "tfg:item/graphite_line/annealed_rod"
+  }
+}
