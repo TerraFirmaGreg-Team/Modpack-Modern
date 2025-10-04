@@ -28,6 +28,7 @@
 - Create Casings now need stripped logs instead of any logs @Pyritie
 - You can now use honey to make jam in a food processor (#1921) @ShadowDimentio
 - Your first MV circuit now needs a sequenced assembly instead of a crafting table recipe @Pyritie
+- Added recipes for making liquid concrete (for supports) with barrels and mixing bowl @Pyritie
 ### Bug fixes
 - Soup can no longer kill you from overheating @BlueBoat29
 - Air Distributors now consume as much gas as they should, instead of significantly more (#1760) @Bumperdo09
