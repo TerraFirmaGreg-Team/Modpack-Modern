@@ -123,7 +123,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 220$(br)$(thing)密度$(): 0.55$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 29$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 250$(br)$(thing)密度$(): 0.55$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 24$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
       "title": "晶质铀矿, 沥青铀矿",
       "type": "patchouli:text",
       "anchor": "nether_pitchblende"

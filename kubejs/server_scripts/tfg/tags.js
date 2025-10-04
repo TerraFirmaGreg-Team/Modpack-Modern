@@ -959,16 +959,22 @@ const registerTFGBlockTags = (event) => {
     var COMPONENTS = 'deafission:components';
     
 	// Max Heating
-    event.add(COMPONENTS, 'ad_astra:glacian_fur'); // Max Heat 2
+    event.add(COMPONENTS, 'tfg:glacian_wool_frame'); // Max Heat 2
 	event.add(COMPONENTS, 'minecraft:blue_ice'); // Max Heat 0.5
+    event.add(COMPONENTS, 'tfg:aes_insulation_frame'); // Max Heat 1
+	event.add(COMPONENTS, 'tfg:moderate_core_frame'); // Max Heat 10
+	event.add(COMPONENTS, 'tfg:impure_moderate_core_frame'); // Max Heat 5
+	//event.add(COMPONENTS, 'minecraft:blue_ice'); // Max Heat 0.5
 
 	event.add(COMPONENTS, 'minecraft:bedrock'); // Max Heat 10000 CREATIVE BLOCK
 
 	// Increase Throttle
-    event.add(COMPONENTS, 'minecraft:iron_block');
+    //event.add(COMPONENTS, 'minecraft:iron_block');
     
 	// Increase Effiency
-    event.add(COMPONENTS, 'minecraft:packed_ice');
+    //event.add(COMPONENTS, 'minecraft:packed_ice');
+
+	event.add('tfg:fission_coolant','deafission:components')
 
 	//#endregion
 

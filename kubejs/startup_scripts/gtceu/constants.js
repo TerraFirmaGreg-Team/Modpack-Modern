@@ -195,6 +195,7 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:mv_bedrock_ore_miner",
     "gtceu:hv_bedrock_ore_miner",
     "gtceu:ev_bedrock_ore_miner",
+
 ]);
 //#endregion
 

@@ -498,7 +498,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 80%$(br)$(thing)Derrete em$(): Bismuto$(br)$(thing)Fórmula$(): Bi",
+      "text": "$(thing)Porcentagem$(): 72%$(br)$(thing)Derrete em$(): Bismuto$(br)$(thing)Fórmula$(): Bi",
       "type": "patchouli:multiblock"
     },
     {
@@ -518,7 +518,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 11%$(br)$(thing)Derrete em$(): Chumbo$(br)$(thing)Fórmula$(): Pb$(br)$(thing)Perigo$(): $(c)$(t:Requer Máscara Facial)Pouco Venenoso (Inalação)$(/t)$()",
+      "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Derrete em$(): Chumbo$(br)$(thing)Fórmula$(): Pb$(br)$(thing)Perigo$(): $(c)$(t:Requer Máscara Facial)Pouco Venenoso (Inalação)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Prata Nativa",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 9%$(br)$(thing)Derrete em$(): Prata$(br)$(thing)Fórmula$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -538,8 +558,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 9%$(br)$(thing)Fonte de$(): Enxofre$(br)$(thing)Fórmula$(): S",
+      "text": "$(thing)Porcentagem$(): 8%$(br)$(thing)Fonte de$(): Enxofre$(br)$(thing)Fórmula$(): S",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -858,7 +883,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 190$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 210$(br)$(thing)Tamanho$(): 36$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Ardósia, Diorito, Filito, Gabro, Gnaisse, Granito, Mármore, Quartzito, Xisto",
+      "text": "$(thing)Raridade$(): 190$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 210$(br)$(thing)Tamanho$(): 36$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Ardósia, Diorito, Filito, Gabro, Gnaisse, Granito, Mármore, Quartzito, Xisto",
       "title": "Cianita, Mica e Bauxita",
       "type": "patchouli:text",
       "anchor": "normal_mica"
@@ -1484,7 +1509,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 180$(br)$(thing)Densidade$(): 0.375$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 20 — 60$(br)$(thing)Tamanho$(): 35$(br)$(thing)Altura$(): 6$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Ardósia, Diorito, Filito, Gabro, Gnaisse, Granito, Mármore, Quartzito, Xisto",
+      "text": "$(thing)Raridade$(): 180$(br)$(thing)Densidade$(): 0.375$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 20 — 60$(br)$(thing)Tamanho$(): 35$(br)$(thing)Altura$(): 6$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Ardósia, Diorito, Filito, Gabro, Gnaisse, Granito, Mármore, Quartzito, Xisto",
       "title": "Espodumena e Lepidolita",
       "type": "patchouli:text",
       "anchor": "normal_spodumene"
@@ -3269,7 +3294,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 175$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 30 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Altura$(): 4$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Folhelho",
+      "text": "$(thing)Raridade$(): 175$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 30 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Altura$(): 4$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Folhelho",
       "title": "Sais e Bórax",
       "type": "patchouli:text",
       "anchor": "normal_salt"
@@ -3746,7 +3771,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 240$(br)$(thing)Densidade$(): 0.45$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -64 — -20$(br)$(thing)Tamanho$(): 24$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Ardósia, Diorito, Filito, Gabro, Gnaisse, Granito, Mármore, Quartzito, Xisto",
+      "text": "$(thing)Raridade$(): 240$(br)$(thing)Densidade$(): 0.45$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -64 — -20$(br)$(thing)Tamanho$(): 19$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Ardósia, Diorito, Filito, Gabro, Gnaisse, Granito, Mármore, Quartzito, Xisto",
       "title": "Uraninita e Pechblenda",
       "type": "patchouli:text",
       "anchor": "deep_pitchblende"

@@ -1232,7 +1232,8 @@ function registerGTCEUMetalRecipes(event) {
 			event.remove({ id: `gtceu:shaped/spring_small_${material.getName()}` })
 		}
 
-		if (oreProperty !== null) {
+		if (oreProperty !== null && material !== GTMaterials.Plutonium239) {
+
 			processSmallOre(material)
 			processSmallNativeOre(material)
 			processPoorRawOre(material)

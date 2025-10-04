@@ -26,6 +26,9 @@
 - Improved placement of Illages so now they should never generate on top of a river @Pyritie
 - Create Packagers/Jar Packagers are now significantly cheaper to craft (#1892) @airrice 
 - Create Casings now need stripped logs instead of any logs @Pyritie
+- You can now use honey to make jam in a food processor (#1921) @ShadowDimentio
+- Your first MV circuit now needs a sequenced assembly instead of a crafting table recipe @Pyritie
+- Added recipes for making liquid concrete (for supports) with barrels and mixing bowl @Pyritie
 ### Bug fixes
 - Soup can no longer kill you from overheating @BlueBoat29
 - Air Distributors now consume as much gas as they should, instead of significantly more (#1760) @Bumperdo09
@@ -35,6 +38,10 @@
 - Updated boiler minecart models and textures (#1900) @Redeix
 - Fixed flux dupe using filled sea shells (#1903) @Redeix
 - Fixed some more dupes with tool heads (#1576) @Pyritie
+- Fixed missing recipe for raw to polished alabaster @Pyritie
+- Fixed food processor not being able to cut Basil properly (#1934) @aldp2883
+- Fixed food processor outputting only 1 shredded cheese instead of 4 (#1925) @aldp2883
+- Fixed some more stack size issues with the assembly line (#1952)
 ### Translation updates
 - Chinese (simplified) @jmecn
 

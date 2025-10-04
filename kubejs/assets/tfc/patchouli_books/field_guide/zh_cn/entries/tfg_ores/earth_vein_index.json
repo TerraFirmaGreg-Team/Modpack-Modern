@@ -39,7 +39,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 240$(br)$(thing)密度$(): 0.45$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -64 — -20$(br)$(thing)尺寸$(): 24$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩, 花岗岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 240$(br)$(thing)密度$(): 0.45$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -64 — -20$(br)$(thing)尺寸$(): 19$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩, 花岗岩, 辉长岩, 闪长岩",
       "title": "晶质铀矿, 沥青铀矿",
       "type": "patchouli:text",
       "anchor": "deep_pitchblende"
@@ -401,7 +401,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 175$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 30 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)高度$(): 4$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 石灰岩, 粘土岩, 页岩",
+      "text": "$(thing)稀有度$(): 175$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 30 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)高度$(): 4$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 石灰岩, 粘土岩, 页岩",
       "title": "盐, 硼砂",
       "type": "patchouli:text",
       "anchor": "normal_salt"
@@ -1805,7 +1805,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 190$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 210$(br)$(thing)尺寸$(): 36$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩, 花岗岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 190$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 210$(br)$(thing)尺寸$(): 36$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩, 花岗岩, 辉长岩, 闪长岩",
       "title": "蓝晶石, 云母, 铝土矿",
       "type": "patchouli:text",
       "anchor": "normal_mica"
@@ -2394,7 +2394,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 80%$(br)$(thing)熔化$(): 铋$(br)$(thing)化学式$(): Bi",
+      "text": "$(thing)百分比$(): 72%$(br)$(thing)熔化$(): 铋$(br)$(thing)化学式$(): Bi",
       "type": "patchouli:multiblock"
     },
     {
@@ -2414,7 +2414,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 11%$(br)$(thing)熔化$(): 铅$(br)$(thing)化学式$(): Pb$(br)$(thing)危害$(): $(c)$(t:需要面罩)弱毒性 (吸入)$(/t)$()",
+      "text": "$(thing)百分比$(): 10%$(br)$(thing)熔化$(): 铅$(br)$(thing)化学式$(): Pb$(br)$(thing)危害$(): $(c)$(t:需要面罩)弱毒性 (吸入)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "原生银",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 9%$(br)$(thing)熔化$(): 银$(br)$(thing)化学式$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -2434,8 +2454,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 9%$(br)$(thing)来源$(): 硫$(br)$(thing)化学式$(): S",
+      "text": "$(thing)百分比$(): 8%$(br)$(thing)来源$(): 硫$(br)$(thing)化学式$(): S",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -3048,7 +3073,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 180$(br)$(thing)密度$(): 0.375$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 20 — 60$(br)$(thing)尺寸$(): 35$(br)$(thing)高度$(): 6$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩, 花岗岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 180$(br)$(thing)密度$(): 0.375$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 20 — 60$(br)$(thing)尺寸$(): 35$(br)$(thing)高度$(): 6$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩, 花岗岩, 辉长岩, 闪长岩",
       "title": "锂辉石, 锂云母",
       "type": "patchouli:text",
       "anchor": "normal_spodumene"
