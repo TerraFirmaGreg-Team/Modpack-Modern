@@ -321,6 +321,7 @@ const registerTFGCrops = (event) => {
 		.growthDays(6)
 		.soundType('nether_wart')
 		.defaultCutout()
+		.noCollision()
 
 	event.create('tfg:saplings/warped', 'tfc:sapling')
 		.features('tfg:mars/tree/warped')
@@ -330,6 +331,7 @@ const registerTFGCrops = (event) => {
 		.growthDays(6)
 		.soundType('nether_wart')
 		.defaultCutout()
+		.noCollision()
 
 	event.create('tfg:saplings/alphacene', 'tfc:sapling')
 		.features('species:alphacene_mushroom')
@@ -339,6 +341,7 @@ const registerTFGCrops = (event) => {
 		.growthDays(3)
 		.soundType('nether_wart')
 		.defaultCutout()
+		.noCollision()
 
 	event.create('tfg:saplings/strophar', 'tfc:sapling')
 		.features('tfg:mars/tree/strophar_mini')
@@ -348,6 +351,7 @@ const registerTFGCrops = (event) => {
 		.growthDays(7)
 		.soundType('nether_wart')
 		.defaultCutout()
+		.noCollision()
 
 	event.create('tfg:saplings/aeronos', 'tfc:sapling')
 		.features('tfg:mars/tree/aeronos_mini')
@@ -357,6 +361,7 @@ const registerTFGCrops = (event) => {
 		.growthDays(9)
 		.soundType('nether_wart')
 		.defaultCutout()
+		.noCollision()
 
 	event.create('tfg:saplings/glacian', 'tfc:sapling')
 		.features('tfg:mars/tree/glacian_mini')
@@ -366,6 +371,7 @@ const registerTFGCrops = (event) => {
 		.growthDays(9)
 		.soundType('nether_wart')
 		.defaultCutout()
+		.noCollision()
 
 	// Glacian tree stuff
 	event.create('tfg:glacian_leaves', 'tfc:leaves')
