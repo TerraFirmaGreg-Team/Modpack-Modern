@@ -1,0 +1,61 @@
+{
+  "variants": {
+    "active=false,facing=north": [
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v1", "y": 180 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v2", "y": 180 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v3", "y": 180 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v4", "y": 180 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v5", "y": 180 }
+    ],
+    "active=false,facing=south": [
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v1" },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v2" },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v3" },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v4" },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v5" }
+    ],
+    "active=false,facing=west": [
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v1", "y": 90 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v2", "y": 90 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v3", "y": 90 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v4", "y": 90 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v5", "y": 90 }
+    ],
+    "active=false,facing=east": [
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v1", "y": 270 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v2", "y": 270 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v3", "y": 270 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v4", "y": 270 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v5", "y": 270 }
+    ],
+
+    "active=true,facing=north": [
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v1_active", "y": 180 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v2_active", "y": 180 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v3_active", "y": 180 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v4_active", "y": 180 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v5_active", "y": 180 }
+    ],
+    "active=true,facing=south": [
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v1_active" },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v2_active" },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v3_active" },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v4_active" },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v5_active" }
+    ],
+    "active=true,facing=west": [
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v1_active", "y": 90 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v2_active", "y": 90 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v3_active", "y": 90 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v4_active", "y": 90 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v5_active", "y": 90 }
+    ],
+    "active=true,facing=east": [
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v1_active", "y": 270 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v2_active", "y": 270 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v3_active", "y": 270 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v4_active", "y": 270 },
+      { "model": "tfg:block/machines/sample_racks/sample_rack_v5_active", "y": 270 }
+    ]
+  }
+}

@@ -1,9 +1,0 @@
-{
-    "ldlib": {
-        "connection": "tfg:block/casings/machine_casing_ultraviolet_bloom_ctm",
-        "emissive": true
-    },
-    "shimmer": {
-        "bloom": true
-    }
-}

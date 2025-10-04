@@ -185,72 +185,72 @@
 		{
 			id: "709FB8C1561E7BB8"
 			linked_quest: "1646BF9194100E57"
-			x: 10.0d
-			y: -3.0d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
 			id: "10F2DA9FCC5E3860"
 			linked_quest: "6B08799BCFD01D3D"
-			x: 10.0d
-			y: -1.0d
+			x: 8.0d
+			y: 2.0d
 		}
 		{
 			id: "72CBEEAD5A41685E"
 			linked_quest: "069FD86133D7D582"
-			x: 10.0d
-			y: 0.0d
+			x: 8.0d
+			y: 3.0d
 		}
 		{
 			id: "76C69275A82861C8"
 			linked_quest: "7A1E3C3A2D699C5B"
-			x: 10.0d
-			y: 1.0d
+			x: 8.0d
+			y: 4.0d
 		}
 		{
 			id: "6C144735C40EE615"
 			linked_quest: "2FCBA0D780DBDA9E"
-			x: 10.0d
-			y: 2.0d
+			x: 8.0d
+			y: 5.0d
 		}
 		{
 			id: "5FDCCB7CE9DACB34"
 			linked_quest: "4C7C0F6A6598BC24"
-			x: 10.0d
-			y: 3.0d
+			x: 8.0d
+			y: 6.0d
 		}
 		{
 			id: "4ACE1AFCEDC37A05"
 			linked_quest: "6AF3A40BC9CE7122"
-			x: 10.0d
-			y: 4.0d
+			x: 8.0d
+			y: 7.0d
 		}
 		{
 			id: "532482B324E31386"
 			linked_quest: "1776FA1F3255731E"
 			shape: "square"
-			x: 11.0d
-			y: 1.0d
+			x: 9.0d
+			y: 4.0d
 		}
 		{
 			id: "0F86FC5CD130B2E1"
 			linked_quest: "78277DBC07D3C45C"
 			shape: "square"
-			x: 11.0d
-			y: 2.0d
+			x: 9.0d
+			y: 5.0d
 		}
 		{
 			id: "7D227159C48FAB94"
 			linked_quest: "0DC999F79A685194"
 			shape: "square"
-			x: 11.0d
-			y: 3.0d
+			x: 9.0d
+			y: 6.0d
 		}
 		{
 			id: "718938D16A6098A7"
 			linked_quest: "35F13B6D60361904"
 			shape: "square"
-			x: 11.0d
-			y: 4.0d
+			x: 9.0d
+			y: 7.0d
 		}
 		{
 			id: "713A4F2E798A8BDB"
@@ -268,14 +268,14 @@
 		{
 			id: "13ADAD728012FCB1"
 			linked_quest: "1C55AE6AD5BDE304"
-			x: 10.0d
-			y: -2.0d
+			x: 8.0d
+			y: 1.0d
 		}
 		{
 			id: "7C16D34BB19B0B27"
 			linked_quest: "4058958C4743E522"
-			x: 11.0d
-			y: -2.0d
+			x: 9.0d
+			y: 1.0d
 		}
 		{
 			id: "5D77547BEDCC8C01"
@@ -292,69 +292,99 @@
 		{
 			id: "6C5CB6A5A223CB66"
 			linked_quest: "48A8E3210B2BAE1C"
-			x: 8.5d
-			y: -3.0d
+			x: 0.0d
+			y: -4.5d
 		}
 		{
 			id: "40D9CA59F1C83729"
 			linked_quest: "3C173357029AB649"
-			x: 8.5d
-			y: -2.0d
+			x: 1.0d
+			y: -4.5d
 		}
 		{
 			id: "1DF239C119DF26F3"
 			linked_quest: "174DA15847665CF8"
-			x: 8.5d
-			y: -1.0d
+			x: 2.0d
+			y: -4.5d
 		}
 		{
 			id: "2FF35C2F777C21C9"
 			linked_quest: "04DE7C58F20B535A"
-			x: 8.5d
-			y: 0.0d
+			x: 3.0d
+			y: -4.5d
 		}
 		{
 			id: "5A2EFA6523C736B0"
 			linked_quest: "56CA2EB7812529C5"
-			x: 8.5d
-			y: 2.0d
+			x: 5.0d
+			y: -4.5d
 		}
 		{
 			id: "5F9DCB9698B1FBC7"
 			linked_quest: "52DAF93E2F3D688A"
-			x: 8.5d
-			y: 1.0d
+			x: 4.0d
+			y: -4.5d
 		}
 		{
 			id: "3644488B52C563F6"
 			linked_quest: "173A04F328414A36"
-			x: 11.0d
-			y: 0.0d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			id: "1824692F2A7A8B43"
 			linked_quest: "7E755297E9685374"
-			x: 11.0d
-			y: -1.0d
+			x: 9.0d
+			y: 2.0d
 		}
 		{
 			id: "35C2CDE00DEC7D92"
 			linked_quest: "3FBDC8552F7D8008"
 			shape: "none"
-			size: 1.5d
-			x: 13.5d
-			y: -3.0d
+			x: -2.0d
+			y: 2.0d
 		}
 		{
 			id: "5A5FBC9F634D16FA"
 			linked_quest: "6042514C8FC54334"
-			x: 11.0d
-			y: -3.0d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			id: "429CE7B1CDBB2A2D"
 			linked_quest: "7AC97F7850E31D95"
 			x: 2.0d
+			y: 4.0d
+		}
+		{
+			id: "123C2CBD093AC92C"
+			linked_quest: "52AB0BDC64293253"
+			shape: "none"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			id: "638F235BE94AB3DA"
+			linked_quest: "00A2566109144D7F"
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			id: "40F87EE4C9FE5E71"
+			linked_quest: "2979AFD231E5B37B"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			id: "114F4440C35A8772"
+			linked_quest: "5F3B9E4565922E77"
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			id: "2270E4372C4A926F"
+			linked_quest: "5F937028722EB4C6"
+			x: -4.0d
 			y: 4.0d
 		}
 	]
@@ -712,19 +742,6 @@
 			title: "{quests.development.explanation.title}"
 			x: -1.0d
 			y: -3.0d
-		}
-		{
-			dependencies: ["3FBDC8552F7D8008"]
-			id: "2FF9BECA093B4D74"
-			subtitle: "This one will come with Mars Update"
-			tasks: [{
-				id: "6572F2DD0C89A68B"
-				title: "Coming with Mars"
-				type: "checkmark"
-			}]
-			title: "Rocket Tier 2"
-			x: 13.5d
-			y: -1.0d
 		}
 	]
 	subtitle: ["{quests.development.subtitle}"]

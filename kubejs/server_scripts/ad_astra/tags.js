@@ -370,12 +370,13 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:heightmap_ignore', 'minecraft:warped_wart_block')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_mushroom_block')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_mushroom_growth')
-	event.add('tfg:heightmap_ignore', 'tfg:glacian_log')
-	event.add('tfg:heightmap_ignore', 'tfg:glacian_wood')
 	event.add('tfg:heightmap_ignore', 'tfg:glacian_leaves')
 	event.add('tfg:heightmap_ignore', 'betterend:glacian_hymenophore')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_moss_block')
 	event.add('tfg:heightmap_ignore', 'minecraft:ice')
+	
+    event.add('tfc:can_be_snow_piled', 'ad_astra:aeronos_mushroom')
+	event.add('tfc:can_be_snow_piled', 'ad_astra:strophar_mushroom')
 
 	global.AD_ASTRA_WOOD.forEach(wood => {
 
@@ -404,6 +405,10 @@ const registerAdAstraBiomeTags = (event) => {
 		event.add('species:limpet_spawns', biome)
 	})
 
+	global.MARS_BIOMES.forEach(biome => {
+		event.add('tfg:mars_biomes', biome)
+	})
+
 	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_dunes')
 	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_deep_desert')
 
@@ -421,15 +426,6 @@ const registerAdAstraBiomeTags = (event) => {
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/rusticus_edge')
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/sangnum_edge')
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/martian_river')
-	
-	event.add('waves:has_waves', 'tfg:mars/martian_river')
-	event.add('waves:has_waves', 'tfg:mars/martian_mountains')
-	event.add('waves:has_waves', 'tfg:mars/amber_plains')
-	event.add('waves:has_waves', 'tfg:mars/amber_hills')
-	event.add('waves:has_waves', 'tfg:mars/rusticus_plains')
-	event.add('waves:has_waves', 'tfg:mars/rusticus_hills')
-	event.add('waves:has_waves', 'tfg:mars/sangnum_plains')
-	event.add('waves:has_waves', 'tfg:mars/sangnum_hills')
 }
 
 const registerAdAstraEntityTypeTags = (event) => {
@@ -527,11 +523,6 @@ const registerAdAstraPlacedFeatures = (event) => {
 	//#endregion
 
 	//#region Mars
-
-	// Craters
-	//event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_extra_large')
-	//event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_large')
-	//event.add('tfg:mars_craters', 'tfg:mars/terrain/crater_medium')
 
 	// Underground decoration
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/loose_rocks')
@@ -633,6 +624,7 @@ const registerAdAstraPlacedFeatures = (event) => {
 	// Top layer
 	event.add("tfg:mars_top_layer_modification", "tfg:glow_lichen")
 	event.add("tfg:mars_top_layer_modification", "tfc:surface_loose_rocks")
+	event.add("tfg:mars_top_layer_modification", "tfg:mars/terrain/mars_poles")
 	
 	//#endregion
 

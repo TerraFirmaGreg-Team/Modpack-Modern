@@ -8,13 +8,14 @@ function registerGTCEUMetalRecipes(event) {
 
 	/**
 	 * @param {GTToolType} toolType 
+	 * @param {String} tagPrefixName
 	 * @param {TagPrefix} headTagPrefix 
 	 * @param {Internal.ItemStack} extruderMold 
 	 * @param {number} circuitMeta 
 	 * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
 	 * @returns 
 	 */
-	function makeToolRecipe(toolType, headTagPrefix, extruderMold, circuitMeta, material) {
+	function makeToolRecipe(toolType, tagPrefixName, headTagPrefix, extruderMold, circuitMeta, material) {
 		const toolItem = ToolHelper.get(toolType, material)
 
 		if (toolItem.isEmpty()) return
@@ -57,16 +58,17 @@ function registerGTCEUMetalRecipes(event) {
 				.id(`gtceu:shaped/${toolType.name}_${material.getName()}`)
 		}
 
-		processToolHead(headTagPrefix, extruderMold, circuitMeta, material)
+		processToolHead(headTagPrefix, tagPrefixName, extruderMold, circuitMeta, material)
 	}
 
 	/** 
 	 * @param {TagPrefix} headTagPrefix 
+	 * @param {String} tagPrefixName
 	 * @param {Internal.ItemStack} extruderMold 
 	 * @param {number} circuitMeta 
 	 * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
 	 */
-	function processToolHead(headTagPrefix, extruderMold, circuitMeta, material) {
+	function processToolHead(headTagPrefix, tagPrefixName, extruderMold, circuitMeta, material) {
 
 		const toolHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
 		if (toolHeadItem.isEmpty())
@@ -81,7 +83,7 @@ function registerGTCEUMetalRecipes(event) {
 
 			const materialAmount = Math.floor(headTagPrefix.materialAmount() / GTValues.M) === 1 ? 1 : 2;
 
-			event.recipes.gtceu.extruder(`tfg:extrude_${material.getName()}_ingot_to_${new String(headTagPrefix.name).toLowerCase()}_head`)
+			event.recipes.gtceu.extruder(`tfg:extrude_${material.getName()}_ingot_to_${tagPrefixName}`)
 				.itemInputs(ingotItem.copyWithCount(materialAmount))
 				.notConsumable(extruderMold)
 				.itemOutputs(toolHeadItem)
@@ -98,24 +100,25 @@ function registerGTCEUMetalRecipes(event) {
 				itemAsHead: extruderMold,
 				results: [toolHeadItem],
 				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/curving/${material.getName()}_ingot_to_${new String(headTagPrefix.name).toLowerCase()}_head`)
+			}).id(`tfg:vi/curving/${material.getName()}_ingot_to_${tagPrefixName}`)
 			
 			if (GTMaterials.Stone !== material) {
-				event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
+				removeMaceratorRecipe(event, `macerate_${material.getName()}_${tagPrefixName}`)
+				event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_${tagPrefixName}`)
 					.itemInputs(toolHeadItem)
 					.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, materialAmount))
 					.duration(material.getMass() * 6 * materialAmount)
 					.category(GTRecipeCategories.MACERATOR_RECYCLING)
 					.EUt(GTValues.VA[GTValues.ULV])
 				
-				event.recipes.gtceu.arc_furnace(`tfg:arc_furnace_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
+				event.recipes.gtceu.arc_furnace(`gtceu:arc_${material.getName()}_${tagPrefixName}`)
 					.itemInputs(toolHeadItem)
 					.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, materialAmount))
 					.duration(material.getMass() * 6 * materialAmount)
 					.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 					.EUt(GTValues.VA[GTValues.LV])
 
-				event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
+				event.recipes.gtceu.extractor(`gtceu:extract_${material.getName()}_${tagPrefixName}`)
 					.itemInputs(toolHeadItem)
 					.outputFluids(Fluid.of(material.getFluid(), materialAmount * 144))
 					.duration(material.getMass() * 6 * materialAmount)
@@ -129,15 +132,16 @@ function registerGTCEUMetalRecipes(event) {
 			if (gemItem.isEmpty())
 				return
 
-			event.recipes.gtceu.laser_engraver(`tfg:engrave_${material.getName()}_gem_to_${new String(headTagPrefix.name).toLowerCase()}_head`)
+			event.recipes.gtceu.laser_engraver(`tfg:engrave_${material.getName()}_gem_to_${tagPrefixName}`)
 				.itemInputs(gemItem.copyWithCount(Math.floor(headTagPrefix.materialAmount() / GTValues.M)))
 				.notConsumable(ChemicalHelper.get(TagPrefix.lens, GTMaterials.Glass, 1))
 				.circuit(circuitMeta)
 				.itemOutputs(toolHeadItem)
 				.duration(material.getMass() * 6)
 				.EUt(GTValues.VA[GTValues.LV])
-
-			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
+				
+			removeMaceratorRecipe(event, `macerate_${material.getName()}_${tagPrefixName}`)
+			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_${tagPrefixName}`)
 				.itemInputs(toolHeadItem)
 				.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 1))
 				.duration(material.getMass() * 6)
@@ -1178,31 +1182,31 @@ function registerGTCEUMetalRecipes(event) {
 
 		if (toolProperty !== null) {
 			let circuit = 1;
-			makeToolRecipe(GTToolType.SWORD, TFGTagPrefix.toolHeadSword, 'tfg:sword_head_extruder_mold', circuit++, material)
-			makeToolRecipe(GTToolType.PICKAXE, TFGTagPrefix.toolHeadPickaxe, 'tfg:pickaxe_head_extruder_mold', circuit++, material)
-			makeToolRecipe(GTToolType.AXE, TFGTagPrefix.toolHeadAxe, 'tfg:axe_head_extruder_mold', circuit++, material)
-			makeToolRecipe(GTToolType.SHOVEL, TFGTagPrefix.toolHeadShovel, 'tfg:shovel_head_extruder_mold', circuit++, material)
-			makeToolRecipe(GTToolType.HOE, TFGTagPrefix.toolHeadHoe, 'tfg:hoe_head_extruder_mold', circuit++, material)
-			makeToolRecipe(GTToolType.KNIFE, TFGTagPrefix.toolHeadKnife, 'tfg:knife_head_extruder_mold', circuit++, material)
-			makeToolRecipe(GTToolType.FILE, TFGTagPrefix.toolHeadFile, 'tfg:file_head_extruder_mold', circuit++, material)
-			makeToolRecipe(GTToolType.SAW, TFGTagPrefix.toolHeadSaw, 'tfg:saw_head_extruder_mold', circuit++, material)
-			makeToolRecipe(GTToolType.SPADE, TFGTagPrefix.toolHeadSpade, 'tfg:spade_head_extruder_mold', circuit++, material)
-			makeToolRecipe(GTToolType.MINING_HAMMER, TFGTagPrefix.toolHeadMiningHammer, 'tfg:mining_hammer_head_extruder_mold', circuit++, material)
-			makeToolRecipe(GTToolType.SCYTHE, TFGTagPrefix.toolHeadScythe, 'tfg:scythe_head_extruder_mold', circuit++, material)
-			makeToolRecipe(GTToolType.HARD_HAMMER, TFGTagPrefix.toolHeadHammer, 'tfg:hammer_head_extruder_mold', circuit++, material)
-			makeToolRecipe(GTToolType.BUTCHERY_KNIFE, TFGTagPrefix.toolHeadButcheryKnife, 'tfg:butchery_knife_head_extruder_mold', circuit++, material)
-			makeToolRecipe(GTToolType.SCREWDRIVER, TagPrefix.toolHeadScrewdriver, 'tfg:screwdriver_tip_extruder_mold', circuit++, material)
-			makeToolRecipe(GTToolType.WRENCH, TagPrefix.toolHeadWrench, 'tfg:wrench_tip_extruder_mold', circuit++, material)
-			makeToolRecipe(GTToolType.WIRE_CUTTER, TagPrefix.toolHeadWireCutter, 'tfg:wire_cutter_head_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.SWORD, "sword_head", TFGTagPrefix.toolHeadSword, 'tfg:sword_head_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.PICKAXE, "pickaxe_head", TFGTagPrefix.toolHeadPickaxe, 'tfg:pickaxe_head_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.AXE, "axe_head", TFGTagPrefix.toolHeadAxe, 'tfg:axe_head_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.SHOVEL, "shovel_head", TFGTagPrefix.toolHeadShovel, 'tfg:shovel_head_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.HOE, "hoe_head", TFGTagPrefix.toolHeadHoe, 'tfg:hoe_head_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.KNIFE, "knife_head", TFGTagPrefix.toolHeadKnife, 'tfg:knife_head_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.FILE, "file_head", TFGTagPrefix.toolHeadFile, 'tfg:file_head_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.SAW, "saw_head", TFGTagPrefix.toolHeadSaw, 'tfg:saw_head_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.SPADE, "spade_head", TFGTagPrefix.toolHeadSpade, 'tfg:spade_head_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.MINING_HAMMER, "mining_hammer_head", TFGTagPrefix.toolHeadMiningHammer, 'tfg:mining_hammer_head_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.SCYTHE, "scythe_head", TFGTagPrefix.toolHeadScythe, 'tfg:scythe_head_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.HARD_HAMMER, "hammer_head", TFGTagPrefix.toolHeadHammer, 'tfg:hammer_head_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.BUTCHERY_KNIFE, "butchery_knife_head", TFGTagPrefix.toolHeadButcheryKnife, 'tfg:butchery_knife_head_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.SCREWDRIVER, "screwdriver_tip", TagPrefix.toolHeadScrewdriver, 'tfg:screwdriver_tip_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.WRENCH, "wrench_tip", TagPrefix.toolHeadWrench, 'tfg:wrench_tip_extruder_mold', circuit++, material)
+			makeToolRecipe(GTToolType.WIRE_CUTTER, "wire_cutter_head", TagPrefix.toolHeadWireCutter, 'tfg:wire_cutter_head_extruder_mold', circuit++, material)
 
 			processToolMortar(GTToolType.MORTAR, material)
 
-			processToolHead(TFGTagPrefix.toolHeadPropick, 'tfg:propick_head_extruder_mold', circuit++, material)
-			processToolHead(TFGTagPrefix.toolHeadJavelin, 'tfg:javelin_head_extruder_mold', circuit++, material)
-			processToolHead(TFGTagPrefix.toolHeadChisel, 'tfg:chisel_head_extruder_mold', circuit++, material)
-			processToolHead(TFGTagPrefix.toolHeadMace, 'tfg:mace_head_extruder_mold', circuit++, material)
-			processToolHead(TFGTagPrefix.toolHeadMattock, 'tfg:mattock_head_extruder_mold', circuit++, material)
-			processToolHead(TFGTagPrefix.toolHeadHook, 'tfg:fish_hook_extruder_mold', circuit, material)
+			processToolHead(TFGTagPrefix.toolHeadPropick, "propick_head", 'tfg:propick_head_extruder_mold', circuit++, material)
+			processToolHead(TFGTagPrefix.toolHeadJavelin, "javelin_head", 'tfg:javelin_head_extruder_mold', circuit++, material)
+			processToolHead(TFGTagPrefix.toolHeadChisel, "chisel_head", 'tfg:chisel_head_extruder_mold', circuit++, material)
+			processToolHead(TFGTagPrefix.toolHeadMace, "mace_head", 'tfg:mace_head_extruder_mold', circuit++, material)
+			processToolHead(TFGTagPrefix.toolHeadMattock, "mattock_head", 'tfg:mattock_head_extruder_mold', circuit++, material)
+			processToolHead(TFGTagPrefix.toolHeadHook, "fish_hook", 'tfg:fish_hook_extruder_mold', circuit, material)
 
 			removePowerToolRecycling(material)
 		}

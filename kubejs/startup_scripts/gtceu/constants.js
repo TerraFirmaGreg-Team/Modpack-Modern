@@ -62,6 +62,9 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:tiny_netherite_dust",
     "gtceu:small_netherite_dust",
     "gtceu:netherite_dust",
+    "gtceu:blaze_bucket",
+    "gtceu:small_blaze_dust",
+    "gtceu:tiny_blaze_dust",
 
     "gtceu:treated_wood_hanging_sign",
     "gtceu:treated_wood_boat",
@@ -259,7 +262,7 @@ global.TFG_EXTRUDER_MOLDS = /** @type {const} */ ([
     "tfg:wire_cutter_head_extruder_mold",
     "tfg:small_casing_extruder_mold",
     "tfg:shell_casing_extruder_mold",
-    "tfg:large_casing_extruder_mold",
+    "tfg:large_casing_extruder_mold"
 ]);
 
 global.GTCEU_EXTRUDER_MOLDS = /** @type {const} */ ([
@@ -280,7 +283,7 @@ global.GTCEU_EXTRUDER_MOLDS = /** @type {const} */ ([
     "gtceu:bottle_extruder_mold",
     "gtceu:foil_extruder_mold",
     "gtceu:small_gear_extruder_mold",
-    "gtceu:rotor_extruder_mold",
+    "gtceu:rotor_extruder_mold"
 ]);
 //#endregion
 

@@ -25,14 +25,6 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['gtceu:large_chemical_reactor'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.perfect_overclock'))
 	})
-	event.addAdvanced(['gtceu:nether_dome'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.nether_dome_1')),
-		text.add(2, Text.translate('tfg.tooltip.machine.customize_interior'))
-	})
-	event.addAdvanced(['gtceu:end_dome'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.end_dome_1')),
-		text.add(2, Text.translate('tfg.tooltip.machine.customize_interior'))
-	})
 
 	// Insulation
 	event.addAdvanced(['create:copper_diving_helmet', 'create:copper_backtank', 'create:copper_diving_boots'], (item, advanced, text) => {
@@ -89,7 +81,7 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfg:reinforced_light_concrete_support', 'tfg:reinforced_dark_concrete_support', 'tfg:steel_support'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.support.tier3'))
 	})
-	const other_stone = ['pyroxenite', 'migmatite', 'travertine']
+	const other_stone = ['migmatite', 'pyroxenite', 'travertine', 'keratophyre', 'anorthosite', 'norite', 'argillite', 'trachyte', 'komatiite', 'phonolite', 'permafrost', 'red_granite', 'stone']
 	const stone_types = global.TFC_STONE_TYPES.concat(other_stone)
 
 	stone_types.forEach(stone => {
@@ -163,16 +155,36 @@ const registerTooltips = (event) => {
 
 	// Greate tooltips on Create things
 	event.addAdvanced(['create:water_wheel'], (item, advanced, text) => {
-		text.add(2, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.uls_limit")))
+		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.uls_limit")))
 	})
 	event.addAdvanced(['create:large_water_wheel', 'create:windmill_bearing'], (item, advanced, text) => {
-		text.add(2, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
+		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
 	})
 
+	global.LAB_EQUIPMENT_CONTAINERS.forEach(container => {
+		event.addAdvanced([`tfg:${container.type}`], (item, advanced, text) => {
+			text.add(1, Text.translate('tfg.tooltip.lab_equipment.part').append(`§e${container.capacity.toString()}mB`))
+		})
+	})
 
-	//#region Deprecated Items
+	//Nuclear Fission Tooltips
+
+	event.addAdvanced(['minecraft:blue_ice'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.component.blue_ice"))
+	})
+	event.addAdvanced(['ad_astra:glacian_fur'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.component.glacian_fur"))
+	})
+
+	// AE2
+	event.addAdvanced(['tfg:wireless_card'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.wireless_card_1'))
+		text.add(2, Text.translate('tfg.tooltip.wireless_card_2'))
+		text.add(3, Text.translate('tfg.tooltip.wireless_card_3'))
+	})
+
+	// Deprecated Items
 	event.addAdvanced(['vintageimprovements:lathe'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
 	})
-	//#endregion
 }

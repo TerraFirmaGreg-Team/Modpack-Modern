@@ -14,7 +14,8 @@
 		"stem_state": {
 			"Name": "beneath:wood/log/crimson",
 			"Properties": {
-				"axis": "y"
+				"axis": "y",
+				"branch_direction": "down"
 			}
 		},
 		"valid_base_block": {

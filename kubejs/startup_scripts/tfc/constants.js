@@ -1164,3 +1164,36 @@ global.TFC_EQUIPMENT_METALS = /** @type {const} */ ([
     "red_steel",
     "blue_steel"
 ]);
+
+ global.TFC_BIOMES = /** @type {const} */ ([
+     'tfc:badlands',
+     'tfc:canyons',
+     'tfc:deep_ocean',
+     'tfc:deep_ocean_trench',
+     'tfc:highlands',
+     'tfc:hills',
+     'tfc:inverted_badlands',
+     'tfc:lake',
+     'tfc:low_canyons',
+     'tfc:lowlands',
+     'tfc:mountain_lake',
+     'tfc:mountains',
+     'tfc:ocean',
+     'tfc:ocean_reef',
+     'tfc:oceanic_mountain_lake',
+     'tfc:oceanic_mountains',
+     'tfc:old_mountain_lake',
+     'tfc:old_mountains',
+     'tfc:plains',
+     'tfc:plateau',
+     'tfc:plateau_lake',
+     'tfc:river',
+     'tfc:rolling_hills',
+     'tfc:salt_marsh',
+     'tfc:shore',
+     'tfc:tidal_flats',
+     'tfc:volcanic_mountain_lake',
+     'tfc:volcanic_mountains',
+     'tfc:volcanic_oceanic_mountain_lake',
+     'tfc:volcanic_oceanic_mountains'
+ ])

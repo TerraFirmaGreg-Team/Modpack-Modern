@@ -1,6 +1,8 @@
 {
-    "parent": "tfc:block/grass_snowy_side",
+    "parent": "tfc:block/grass_side",
     "textures": {
-        "texture": "tfg:block/grass/mars_dirt"
+        "texture": "tfg:block/grass/mars_dirt",
+        "overlay": "tfg:block/grass/snowy_dirt_side",
+        "particle": "tfg:block/grass/snowy_dirt_side"
     }
 }

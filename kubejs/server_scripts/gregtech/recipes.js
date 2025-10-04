@@ -397,7 +397,8 @@ const registerGTCEURecipes = (event) => {
 		.itemInputs('2x #forge:dusts/iridium', '#forge:dusts/diamond')
 		.circuit(10)
 		.itemOutputs('gtceu:nether_star_dust')
-		.inputFluids(Fluid.of('gtceu:nether_air', 1000))
+		// TODO: change to something else with venus
+		.inputFluids(Fluid.of('gtceu:neon', 1000))
 		.duration(700)
 		.EUt(2720)
 
@@ -1566,5 +1567,15 @@ const registerGTCEURecipes = (event) => {
 		.duration(20*2.8)
 		.EUt(GTValues.VA[GTValues.EV])
 		
+
+	//# New Alloys For Turbines
+
+	event.recipes.gtceu.mixer('tfg:tungsten_bismuth_oxide_composite')
+		.itemInputs('2x #forge:dusts/bismuth', 'gtceu:tungsten_dust')
+		.inputFluids(Fluid.of('gtceu:oxygen', 3000))
+		.itemOutputs('3x tfg:tungsten_bismuth_oxide_composite_dust')
+		.duration(20 * 12)
+		.EUt(GTValues.VA[GTValues.EV])
+
 
 }

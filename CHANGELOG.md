@@ -1,21 +1,47 @@
 # Changelog
 
 ## [Unreleased]
-### Changes
-- Water wheels and windmills are now Greate tiered! Small water wheels are ULS (32 SU max), large water wheels and windmills are LS (128 SU max) @Pyritie
-- Windmill Sail Frames no longer generate SU, but are cheaper to craft @Pyritie
-- Blaze burners now only need regular steel to craft (#1889) @TreyR9
+### Mars
+- TODO
+### EV changes
+- Radon, Plutonium, the Microprocessor Mainframe and Nano Circuits are now locked behind Fission tech. You shouldn't need IV-tier circuits for anything before then, please let us know if we've missed something.
+- Plutonium ore has been removed from the Beneath (only affects )
+- Titanium now has a more complicated refinement process! It's pretty straightforward if you just need a little of it, but it has a fully loopable recipe chain too!
+- The Netherarium and Enderarium have been removed. You will be able to get all their important outputs from Mars. If you have any nether/ender air stored, distill it because those recipes will be going away soon too.
+### Create changes
+- Water wheels and windmills are now Greate tiered! Small water wheels are ULS (32 SU max), large water wheels and windmills are LS (128 SU max).
+- Large water wheels are now more expensive to craft (and now need steel), but also generate 128 SU by themselves, so you don't need to double them up any more. All water wheels now require actual rivers to rotate at their full effectiveness. You can still use them in oceans and lakes at partial efficiency.
+- Windmill Sail Frames no longer generate SU, but are cheaper to craft, only needing a single wrought iron rod per 8 frames. Windmills now also require large open spaces to work at full strength.
+- Water wheels and windmills no longer work in orbit or on the moon, and water wheels no longer work in the Beneath.
+- Blaze burners now only need regular steel to craft, so they are the best option if you want on-demand power generation anywhere you want. (#1889) @TreyR9
+- Removed all passive sources of steam engine heating. @Pyritie
+### AE2 changes
+- TODO
+- Programmed Circuit Card has been removed because it was incompatible with the above additions. Making several machines for different circuits is intended, however if you need to do something like make a whole assembler for a single unique recipe, let us know and we can move the circuit numbers around.
+- Added the Interplanetary Wireless Card, an infinite-range, cross-dimension upgrade for your wireless terminal but costs a lot of power to transfer items. Great for if you forgot something at home, but not useful for mass logistics.
+- Universal Wireless Terminal is now obtainable at EV instead of IV
+### Other changes
 - Significantly increased durability of hiking boots, and now red steel ones have even more durability while blue steel ones increase your speed a little more (#1894) @Nashy1232
+- EV-tier weapons now require titanium or HSLA instead of tungsten for some crafts @BlueBoat29
+- Improved placement of Illages so now they should never generate on top of a river @Pyritie
+- Create Packagers/Jar Packagers are now significantly cheaper to craft (#1892) @airrice 
+- Create Casings now need stripped logs instead of any logs @Pyritie
 ### Bug fixes
 - Soup can no longer kill you from overheating @BlueBoat29
 - Air Distributors now consume as much gas as they should, instead of significantly more (#1760) @Bumperdo09
 - Fixed not being able to put igneous intrusive stones into the ore sack (#1893) @Nashy1232
 - Fixed food processor jam recipes not accepting honey (#1896) @Xaligal
-- Fixed stainless steel needles being consumed (#1900) @Redeix
+- Fixed stainless steel needles being consumed in sewing-type crafts (#1900) @Redeix
 - Updated boiler minecart models and textures (#1900) @Redeix
 - Fixed flux dupe using filled sea shells (#1903) @Redeix
+- Fixed some more dupes with tool heads (#1576) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
+
+## [0.10.17] - 30-09-2025
+### Bug fixes
+- Fixed not being able to use some extruder molds in the Curving Press @Pyritie
+- Fixed a rare crash from waterlogged rock spikes when generating chunks in the Beneath @Pyritie
 
 ## [0.10.16] - 23-09-2025
 ### Bug fixes

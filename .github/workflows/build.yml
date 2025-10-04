@@ -304,6 +304,7 @@ jobs:
 
 
           sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" config/mod-director/modpack.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg

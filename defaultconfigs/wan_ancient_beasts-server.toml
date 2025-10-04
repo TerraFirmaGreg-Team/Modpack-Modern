@@ -15,7 +15,7 @@
 [eater]
 	#Eater health [default: 100]
 	#Range: 1.0 ~ 1024.0
-	health = 400.0
+	health = 300.0
 	#Eater attack damage [default: 30]
 	#Range: 0.0 ~ 1024.0
 	damage = 30.0
@@ -30,10 +30,10 @@
 [walker]
 	#Walker health [default: 200]
 	#Range: 1.0 ~ 1024.0
-	health = 600.0
+	health = 400.0
 	#Walker armor [default: 5]
 	#Range: 0.0 ~ 30.0
-	armor = 14.0
+	armor = 8.0
 	#Walker armor toughness [default: 4]
 	#Range: 0.0 ~ 20.0
 	armorToughness = 4.0
@@ -42,16 +42,16 @@
 [crusher]
 	#Crusher health [default: 50]
 	#Range: 1.0 ~ 1024.0
-	health = 200.0
+	health = 150.0
 	#Crusher attack damage [default: 10]
 	#Range: 0.0 ~ 1024.0
 	damage = 10.0
 	#Crusher armor [default: 20]
 	#Range: 0.0 ~ 30.0
-	armor = 30.0
+	armor = 20.0
 	#Crusher armor toughness [default: 4]
 	#Range: 0.0 ~ 20.0
-	armorToughness = 6.0
+	armorToughness = 4.0
 
 #Glider Attributes
 [glider]
@@ -63,7 +63,7 @@
 [soarer]
 	#Soarer health [default: 40]
 	#Range: 1.0 ~ 1024.0
-	health = 250.0
+	health = 200.0
 	#Soarer attack damage [default: 15]
 	#Range: 0.0 ~ 1024.0
 	damage = 25.0

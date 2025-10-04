@@ -1,17 +1,4 @@
 const registerGTCEuRecipeTypes = (event) => {
-	event.create('nether_dome')
-		.category('nether_dome')
-		.setEUIO('in')
-		.setMaxIOSize(2, 1, 1, 1)
-		.setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
-		.setSound(GTSoundEntries.FIRE)
-
-	event.create('end_dome')
-		.category('end_dome')
-		.setEUIO('in')
-		.setMaxIOSize(2, 1, 1, 1)
-		.setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
-		.setSound(GTSoundEntries.FIRE)
 
 	event.create('steam_bloomery')
 		.category('steam_bloomery')
@@ -44,7 +31,7 @@ const registerGTCEuRecipeTypes = (event) => {
 	event.create('nuclear_fuel_factory')
 		.category('nuclear_fuel_factory')
 		.setEUIO('in')
-		.setMaxIOSize(2, 1, 1, 0)
+		.setMaxIOSize(3, 1, 1, 0)
 		.setSlotOverlay(false, false, GuiTextures.ATOMIC_OVERLAY_1)
 		.setProgressBar(GuiTextures.ATOMIC_OVERLAY_1, FillDirection.DOWN_TO_UP)
 		.setSound(GTSoundEntries.MINER)
@@ -56,7 +43,7 @@ const registerGTCEuRecipeTypes = (event) => {
 		.setSlotOverlay(false, false, GuiTextures.ATOMIC_OVERLAY_1)
 		.setProgressBar(GuiTextures.ATOMIC_OVERLAY_1, FillDirection.DOWN_TO_UP)
 		.setSound(GTSoundEntries.MINER)
-
+/* Just keeping it in case we got mod issues
 	event.create('fission_reactor')
 		.category('fission_reactor')
 		.setEUIO('in')
@@ -64,7 +51,7 @@ const registerGTCEuRecipeTypes = (event) => {
 		.setSlotOverlay(false, false, GuiTextures.ATOMIC_OVERLAY_1)
 		.setProgressBar(GuiTextures.ATOMIC_OVERLAY_1, FillDirection.DOWN_TO_UP)
 		.setSound(GTSoundEntries.MINER)
-
+*/
 	event.create('ostrum_harvester')
         .category('ostrum_harvester')
         .setEUIO('in')

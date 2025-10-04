@@ -1,7 +1,7 @@
 {
 	"type": "tfc:thin_spike",
 	"config": {
-		"state": "tfc:icicle",
+		"state": "tfg:mars_icicle",
 		"radius": 10,
 		"tries": 50,
 		"min_height": 2,
