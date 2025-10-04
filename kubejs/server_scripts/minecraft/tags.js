@@ -94,6 +94,8 @@ const registerMinecraftItemTags = (event) => {
 	
 	event.add('create:blaze_burner_fuel/regular', 'minecraft:coal')
 	event.add('create:blaze_burner_fuel/regular', 'minecraft:charcoal')
+
+    event.add('minecraft:wart_blocks', 'minecraft:mushroom_stem')
 }
 
 const registerMinecraftBlockTags = (event) => {

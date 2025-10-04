@@ -209,6 +209,12 @@ const registerGTCEURecipes = (event) => {
 		.duration(300)
 		.EUt(2)
 
+	event.recipes.gtceu.compressor('plant_ball_from_wart_blocks')
+		.itemInputs('4x #minecraft:wart_blocks')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
 	//#endregion
 
 	//#region Выход: Биомасса
@@ -282,6 +288,13 @@ const registerGTCEURecipes = (event) => {
 		.itemInputs('#createaddition:plants')
 		.inputFluids("#tfc:any_water 20")
 		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_wart_blocks')
+		.itemInputs('#minecraft:wart_blocks')
+		.inputFluids("#tfc:any_water 20")
+		.outputFluids(Fluid.of('gtceu:biomass', 50))
 		.duration(100)
 		.EUt(3)
 
