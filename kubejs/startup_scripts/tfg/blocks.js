@@ -402,5 +402,23 @@ const registerTFGBlocks = (event) => {
 			.opaque(true)
 	})
 
+	event.create('tfg:rock/quartz_wall', 'wall')
+			.soundType('stone')
+			.textureAll('minecraft:block/quartz_block_side')
+			.tagBoth('tfg:rock_wall')
+			.mapColor('snow')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+
+	event.create('tfg:rock/smooth_quartz_wall', 'wall')
+			.soundType('stone')
+			.textureAll('minecraft:block/quartz_block_bottom')
+			.tagBoth('tfg:rock_wall')
+			.mapColor('snow')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+
 	// #endregion Reconstituted Stone
 }
