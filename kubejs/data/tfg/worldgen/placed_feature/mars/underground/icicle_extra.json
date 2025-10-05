@@ -3,7 +3,7 @@
 	"placement": [
 		{
 			"type": "tfc:climate",
-			"max_temperature": -85
+			"max_temperature": -100
 		},
 		{
 			"type": "minecraft:count",

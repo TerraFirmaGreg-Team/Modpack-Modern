@@ -1,8 +1,8 @@
 {
 	"type": "tfg:martian_poles",
 	"config": {
-		"snowStartTemp": -95,
-		"snowFinishTemp": -100,
-		"maximumTemp": -90
+		"snowStartTemp": -105,
+		"snowFinishTemp": -109,
+		"maximumTemp": -100
 	}
 }
