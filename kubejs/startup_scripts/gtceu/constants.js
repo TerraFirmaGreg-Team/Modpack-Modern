@@ -195,6 +195,18 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:mv_bedrock_ore_miner",
     "gtceu:hv_bedrock_ore_miner",
     "gtceu:ev_bedrock_ore_miner",
+
+    // Plutonium ores
+    "gtceu:raw_plutonium",
+    "gtceu:poor_raw_plutonium",
+    "gtceu:rich_raw_plutonium",
+    "gtceu:raw_plutonium_block",
+    "gtceu:refined_plutonium_ore",
+    "gtceu:purified_plutonium_ore",
+    "gtceu:crushed_plutonium_ore",
+    "gtceu:impure_plutonium_dust",
+    "gtceu:pure_plutonium_dust",
+    "gtceu:plutonium_surface_rock"
 ]);
 //#endregion
 

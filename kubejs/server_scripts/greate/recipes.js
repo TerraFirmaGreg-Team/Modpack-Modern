@@ -705,146 +705,137 @@ function registerGreateRecipes(event) {
 	// #endregion
 
 	// #region Whisks
-
 	event.shaped('gtceu:steel_whisk', [
-		'ABC',
-		'D D',
-		'D D'
+		'ADC',
+		'DDD',
+		'DDD'
 	], {
 		A: '#forge:tools/hammers',
-		B: '#forge:rings/steel',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/long/steel'
 	}).id('gtceu:shaped/steel_whisk')
 
 	event.recipes.gtceu.extruder('gtceu:steel_whisk')
-		.itemInputs('4x #forge:ingots/steel')
+		.itemInputs('7x #forge:ingots/steel')
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:steel_whisk')
 		.duration(GTMaterials.Steel.getMass() * 3)
 		.EUt(GTValues.VA[GTValues.MV])
 	
 	event.shaped('gtceu:aluminium_whisk', [
-		'ABC',
-		'D D',
-		'D D'
+		'ADC',
+		'DDD',
+		'DDD'
 	], {
 		A: '#forge:tools/hammers',
-		B: '#forge:rings/aluminium',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/long/aluminium'
 	}).id('gtceu:shaped/aluminium_whisk')
 
 	event.recipes.gtceu.extruder('gtceu:aluminium_whisk')
-		.itemInputs('4x #forge:ingots/aluminium')
+		.itemInputs('7x #forge:ingots/aluminium')
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:aluminium_whisk')
 		.duration(GTMaterials.Aluminium.getMass() * 3)
 		.EUt(GTValues.VA[GTValues.MV])
 	
 	event.shaped('gtceu:stainless_steel_whisk', [
-		'ABC',
-		'D D',
-		'D D'
+		'ADC',
+		'DDD',
+		'DDD'
 	], {
 		A: '#forge:tools/hammers',
-		B: '#forge:rings/stainless_steel',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/long/stainless_steel'
 	}).id('gtceu:shaped/stainless_steel_whisk')
 
 	event.recipes.gtceu.extruder('gtceu:stainless_steel_whisk')
-		.itemInputs('4x #forge:ingots/stainless_steel')
+		.itemInputs('7x #forge:ingots/stainless_steel')
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:stainless_steel_whisk')
 		.duration(GTMaterials.StainlessSteel.getMass() * 3)
 		.EUt(GTValues.VA[GTValues.MV])
 	
 	event.shaped('gtceu:titanium_whisk', [
-		'ABC',
-		'D D',
-		'D D'
+		'ADC',
+		'DDD',
+		'DDD'
 	], {
 		A: '#forge:tools/hammers',
-		B: '#forge:rings/titanium',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/long/titanium'
 	}).id('gtceu:shaped/titanium_whisk')
 
 	event.recipes.gtceu.extruder('gtceu:titanium_whisk')
-		.itemInputs('4x #forge:ingots/titanium')
+		.itemInputs('7x #forge:ingots/titanium')
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:titanium_whisk')
 		.duration(GTMaterials.Titanium.getMass() * 3)
 		.EUt(GTValues.VA[GTValues.MV])
-
+		
 	event.shaped('gtceu:tungsten_steel_whisk', [
-		'ABC',
-		'D D',
-		'D D'
+		'ADC',
+		'DDD',
+		'DDD'
 	], {
 		A: '#forge:tools/hammers',
-		B: '#forge:rings/tungsten_steel',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/long/tungsten_steel'
 	}).id('gtceu:shaped/tungsten_steel_whisk')
 
 	event.recipes.gtceu.extruder('gtceu:tungsten_steel_whisk')
-		.itemInputs('4x #forge:ingots/tungsten_steel')
+		.itemInputs('7x #forge:ingots/tungsten_steel')
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:tungsten_steel_whisk')
 		.duration(GTMaterials.TungstenSteel.getMass() * 3)
 		.EUt(GTValues.VA[GTValues.MV])
-
+		
 	event.shaped('gtceu:rhodium_plated_palladium_whisk', [
-		'ABC',
-		'D D',
-		'D D'
+		'ADC',
+		'DDD',
+		'DDD'
 	], {
 		A: '#forge:tools/hammers',
-		B: '#forge:rings/rhodium_plated_palladium',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/long/rhodium_plated_palladium'
 	}).id('gtceu:shaped/rhodium_plated_palladium_whisk')
 
 	event.recipes.gtceu.extruder('gtceu:rhodium_plated_palladium_whisk')
-		.itemInputs('4x #forge:ingots/rhodium_plated_palladium')
+		.itemInputs('7x #forge:ingots/rhodium_plated_palladium')
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:rhodium_plated_palladium_whisk')
 		.duration(GTMaterials.RhodiumPlatedPalladium.getMass() * 3)
 		.EUt(GTValues.VA[GTValues.MV])
-
+		
 	event.shaped('gtceu:naquadah_alloy_whisk', [
-		'ABC',
-		'D D',
-		'D D'
+		'ADC',
+		'DDD',
+		'DDD'
 	], {
 		A: '#forge:tools/hammers',
-		B: '#forge:rings/naquadah_alloy',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/long/naquadah_alloy'
 	}).id('gtceu:shaped/naquadah_alloy_whisk')
 
 	event.recipes.gtceu.extruder('gtceu:naquadah_alloy_whisk')
-		.itemInputs('4x #forge:ingots/naquadah_alloy')
+		.itemInputs('7x #forge:ingots/naquadah_alloy')
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:naquadah_alloy_whisk')
 		.duration(GTMaterials.NaquadahAlloy.getMass() * 3)
 		.EUt(GTValues.VA[GTValues.MV])
-
+		
 	event.shaped('gtceu:darmstadtium_whisk', [
-		'ABC',
-		'D D',
-		'D D'
+		'ADC',
+		'DDD',
+		'DDD'
 	], {
 		A: '#forge:tools/hammers',
-		B: '#forge:rings/darmstadtium',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/long/darmstadtium'
 	}).id('gtceu:shaped/darmstadtium_whisk')
 
 	event.recipes.gtceu.extruder('gtceu:darmstadtium_whisk')
-		.itemInputs('4x #forge:ingots/darmstadtium')
+		.itemInputs('7x #forge:ingots/darmstadtium')
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:darmstadtium_whisk')
 		.duration(GTMaterials.Darmstadtium.getMass() * 3)

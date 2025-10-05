@@ -4,6 +4,7 @@
 function registerTFGTagPrefixes(event) {
 
 	excludeAllGemsButNormal(TFGHelpers.getMaterial('tfg:apt'));
+	excludeAllGemsButNormal(TFGHelpers.getMaterial('tfg:tetrafluoroethane'));
 	excludeAllGemsButNormal(TFGHelpers.getMaterial('tfg:crimsene'));
 	excludeAllGemsButNormal(TFGHelpers.getMaterial('tfg:warpane'));
 }

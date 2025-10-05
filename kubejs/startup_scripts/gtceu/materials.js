@@ -46,6 +46,8 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_RING,
 		GENERATE_FOIL,
 		GENERATE_FINE_WIRE,
+		NO_ORE_PROCESSING_TAB,
+		NO_ORE_SMELTING
 	} = $MATERIAL_FLAGS
 
 	const metalTooling = [
@@ -265,6 +267,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.DamascusSteel.addFlags(GENERATE_BOLT_SCREW);
 	GTMaterials.Duranium.addFlags(GENERATE_BOLT_SCREW);
 
+	GTMaterials.Magnalium.addFlags(GENERATE_GEAR);
+
 	GTMaterials.Cupronickel.addFlags(GENERATE_BOLT_SCREW, GENERATE_RING);
 
 	GTMaterials.Ultimet.addFlags(GENERATE_ROTOR)
@@ -279,13 +283,15 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.IronMagnetic.addFlags(GENERATE_PLATE)
 
 	GTMaterials.Silicon.addFlags(GENERATE_DENSE);
-
 	GTMaterials.RTMAlloy.addFlags(GENERATE_DENSE);
 	GTMaterials.Lead.addFlags(GENERATE_DENSE);
 
 	GTMaterials.Quartzite.addFlags(GENERATE_ROD);
 	
 	GTMaterials.TreatedWood.addFlags(GENERATE_LONG_ROD);
+
+	// Hide ore processing tab for plutonium
+	GTMaterials.Plutonium239.addFlags(GENERATE_ROD, NO_ORE_PROCESSING_TAB, NO_ORE_SMELTING)
 
 	GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 8, 1, [
 		GTToolType.AXE,
