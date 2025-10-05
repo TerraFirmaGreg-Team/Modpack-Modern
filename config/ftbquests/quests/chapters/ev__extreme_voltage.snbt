@@ -43,26 +43,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["601088B7920140B2"]
-			description: [
-				""
-				"{@pagebreak}"
-				"{quests.high_voltage.hv_macerator.desc.2}"
-			]
-			icon: "gtceu:ev_large_miner"
-			id: "68A33ED44FA58C26"
-			shape: "heart"
-			size: 1.0d
-			tasks: [{
-				disable_toast: true
-				id: "7E864B77127F1CBD"
-				item: "gtceu:ev_large_miner"
-				type: "item"
-			}]
-			x: -0.75d
-			y: 1.5d
-		}
-		{
 			dependencies: [
 				"601088B7920140B2"
 				"55FB2776B724FB63"
@@ -1949,7 +1929,7 @@
 		{
 			dependencies: ["5EC5566546591DEE"]
 			id: "3F77D528961D5C5E"
-			shape: "octagon"
+			shape: "heart"
 			size: 2.0d
 			tasks: [{
 				id: "4FDF7AC6D093F2EF"
