@@ -1,5 +1,4 @@
 {
-	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ev__extreme_voltage"
@@ -92,7 +91,7 @@
 			description: [
 				"Before landing on &4Mars&r, there are a few important things to keep in mind.\\n\\nFirst, remember that &4Mars&r is a hostile planet. Expect &cmobs everywhere&r they hit hard, and they hit often. Bring your best &6weapons&r you don’t want to die the moment you touch down.\\n\\nThe planet is mostly a &edesert world&r, dotted with &aoasis islands&r where you’ll find &bwater&r, &ajungle&r biomes, and &7mountains&r much safer places to build your first base. Be careful though: the open desert is extremely dangerous.\\n\\nAll &bfluid veins&r are spread across Mars, except for one of the most important &eHeavy Ammoniacial Water&r which can only be found on these &aoasis islands&r. That’s another good reason to set up your base there.\\n\\nAnd one last tip: don’t kill everything you see. Some &aanimals&r can be &franched&r, and you’ll definitely need them later in your progression.\\n\\n"
 				"{@pagebreak}"
-				"Energy-wise, &4Mars&r will not be kind to you at first.\\n\\nNearly every common &6energy generation method&r is &cdisabled&r on the planet, which means you’ll have to rely almost entirely on &cFission&r to power your base.\\n\\nAt the very beginning, you can use &eAd Astra&r solar panels but don’t expect much from them. Their output is terrible, so it’s far better to bring along some &bfilled batteries&r such as &bLapotron Crystals&r to get started.\\n\\nAchieving energy stability on Mars will take time and effort, but once your systems are running smoothly, you’ll feel like &9unlimited power&r is right in the palm of your hand.\\n\\nStay alert, plan ahead, and Mars will reward your courage."
+				"Energy-wise, &4Mars&r will not be kind to you at first.\\n\\nNearly every common &6energy generation method&r is &cdisabled&r on the planet, which means you’ll have to rely almost entirely on &cFission&r to power your base.\\n\\nAt the very beginning, you can use &eAd Astra&r solar panels but don’t expect much from them. Their output is terrible, so it’s far better to bring along some &bfilled batteries&r such as &bLapotron Crystals&r to get started.\\n\\nAchieving energy stability on Mars will take time and effort, but once your systems are running smoothly, you’ll feel like &9unlimited power&r is right in the palm of your hand.\\n\\nStay alert, plan ahead, and Mars will reward your courage.\\n\\nBe sure to check out the &aSpace Survival&r chapter for more Mars-related things too!"
 			]
 			id: "2979AFD231E5B37B"
 			shape: "gear"
@@ -584,6 +583,7 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["00004BE1D77EA003"]
 			icon: "gtceu:uraninite_dust"
 			id: "2814C6FA71B07C95"
 			tasks: [
@@ -744,7 +744,7 @@
 				"30F9EE88C77561A6"
 				"3AFFD029CCE3DFC7"
 			]
-			icon: "tfg:nuclear_residue_dust"
+			icon: "gtceu:radon_bucket"
 			id: "2B666F65B5F196E6"
 			tasks: [
 				{
@@ -1945,6 +1945,19 @@
 			]
 			x: 4.5d
 			y: 13.5d
+		}
+		{
+			dependencies: ["5EC5566546591DEE"]
+			id: "3F77D528961D5C5E"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "4FDF7AC6D093F2EF"
+				item: "gtceu:ev_large_miner"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.5d
 		}
 	]
 	subtitle: ["{quests.extreme_voltage.subtitle}"]
