@@ -1,6 +1,10 @@
 # Changelog
 
 ## [Unreleased]
+### Changes
+### Bug fixes
+
+## [0.11.0] - 05-10-2025
 - WARNING! If you're upgrading your world from 0.10 to 0.11, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.10-to-0.11). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
 ### Mars
 - Build an upgraded rocket and set off to Mars, a long awaited new dimension! You can get started in EV.
