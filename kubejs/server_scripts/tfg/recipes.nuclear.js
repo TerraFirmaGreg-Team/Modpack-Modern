@@ -28,20 +28,24 @@ function registerTFGNuclearRecipes(event) {
 	//#region Nuclear Pellet
 
 	event.recipes.gtceu.nuclear_fuel_factory('tfg:thorium_pellet')
-		.itemInputs('10x #forge:ingots/thorium_230', '90x #forge:ingots/thorium_232', 'tfg:empty_rod')
+		.itemInputs('16x #forge:rods/thorium_230', '32x #forge:rods/thorium_232', 
+			'32x #forge:rods/thorium_232', '32x #forge:rods/thorium_232', '32x #forge:rods/thorium_232',
+			'tfg:empty_rod')
 		.itemOutputs('tfg:thorium_rod')
 		.duration(20*200)
 		.EUt(GTValues.V[GTValues.HV])
 
 	event.recipes.gtceu.nuclear_fuel_factory('tfg:uranium_pellet')
 		.inputFluids(Fluid.of('gtceu:uranium_waste', 10000))
-		.itemInputs('10x #forge:ingots/uranium_235', '90x #forge:ingots/uranium', 'tfg:empty_rod')
+		.itemInputs('16x #forge:rods/uranium_235', '32x #forge:rods/uranium', '32x #forge:rods/uranium', 
+			'32x #forge:rods/uranium', '32x #forge:rods/uranium', 'tfg:empty_rod')
 		.itemOutputs('tfg:uranium_rod')
 		.duration(20*600)
 		.EUt(GTValues.V[GTValues.HV])
 
 	event.recipes.gtceu.nuclear_fuel_factory('tfg:plutonium_pellet')
-		.itemInputs('90x #forge:ingots/plutonium', 'tfg:empty_rod')
+		.itemInputs('32x #forge:rods/plutonium', '32x #forge:rods/plutonium', '32x #forge:rods/plutonium',
+			'32x #forge:rods/plutonium', 'tfg:empty_rod')
 		.inputFluids(Fluid.of('gtceu:radon', 100))
 		.itemOutputs('tfg:plutonium_rod')
 		.duration(20*600)
