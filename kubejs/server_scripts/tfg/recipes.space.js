@@ -193,6 +193,14 @@ function registerTFGSpaceRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
 
+	event.recipes.gtceu.mixer('tfg:bio_glowstone')
+		.itemInputs('betterend:cave_pumpkin_chunks', '4x species:alphacene_mushroom_block')
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.itemOutputs('2x minecraft:glowstone_dust')
+		.duration(5 * 20)
+		.EUt(GTValues.VA[GTValues.EV])
+		.dimension('ad_astra:mars')
+
 	// Lightblooms
 	event.recipes.gtceu.greenhouse('tfg:lightbloom')
 		.notConsumable('8x minecraft:twisting_vines')
@@ -271,6 +279,7 @@ function registerTFGSpaceRecipes(event) {
 		.cleanroom(CleanroomType.CLEANROOM)
 
 	// Railgun stuff
+	// (the railgun inputs and outputs are in tfg-core)
 
 	event.recipes.gtceu.assembler('tfg:railgun_ammo_basic')
 		.itemInputs('#forge:double_plates/steel', '2x #forge:rods/magnetic_iron', '2x #forge:fine_wires/annealed_copper')
@@ -356,5 +365,73 @@ function registerTFGSpaceRecipes(event) {
 		H: 'gtceu:mv_machine_hull'
 	}).id('tfg:shaped/interplanetary_item_receiver')
 
-	// the railgun inputs and outputs are in tfg-core
+	// Mars tree tapping
+
+	event.recipes.gtceu.autoclave('tfg:crimsene')
+		.inputFluids(Fluid.of('tfg:crimsene', 144), Fluid.of('gtceu:liquid_carbon_dioxide', 1000))
+		.outputFluids(Fluid.of('gtceu:carbon_monoxide', 1000))
+		.itemOutputs('#forge:gems/crimsene')
+		.duration(20 * 30)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.autoclave('tfg:warpane')
+		.inputFluids(Fluid.of('tfg:warpane', 144), Fluid.of('gtceu:liquid_carbon_dioxide', 1000))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 1000))
+		.itemOutputs('#forge:gems/warpane')
+		.duration(20 * 30)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.macerator('tfg:crimsene')
+		.itemInputs('#forge:gems/crimsene')
+		.itemOutputs('#forge:dusts/crimsene')
+		.duration(20 * 5)
+		.EUt(2)
+
+	event.recipes.gtceu.macerator('tfg:warpane')
+		.itemInputs('#forge:gems/warpane')
+		.itemOutputs('#forge:dusts/warpane')
+		.duration(20 * 5)
+		.EUt(2)
+
+	event.recipes.gtceu.mixer('tfg:mars_sap')
+		.itemInputs('#forge:dusts/warpane', '#forge:dusts/crimsene')
+		.inputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000), Fluid.of('gtceu:krypton', 1000))
+		.itemOutputs('#forge:dusts/mycelienzene')
+		.duration(30 * 20)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.deafission.fission_reactor_processing('tfg:mars_sap')
+		.itemInputs('#forge:dusts/mycelienzene')
+		.outputFluids(Fluid.of('tfg:cooked_mycelienzane', 1000))
+		// TODO: change these to something appropriate
+		.blastFurnaceTemp(100)
+		.duration(30 * 10)
+
+	event.recipes.gtceu.centrifuge('mars_sap_separation')
+		.inputFluids(Fluid.of('tfg:cooked_mycelienzane', 2000))
+		.outputFluids(
+			Fluid.of('tfg:iodomethane', 1000),
+			Fluid.of('tfg:trideuteroiodomethane', 1000),
+			Fluid.of('gtceu:krypton', 1000),
+			Fluid.of('gtceu:diluted_hydrochloric_acid', 4000))
+		.duration(20 * 20)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:iodomethane_separation')
+		.inputFluids(
+			Fluid.of('tfg:iodomethane', 1000), 
+			Fluid.of('gtceu:hydrogen', 1000))
+		.itemOutputs('#forge:dusts/iodine')
+		.outputFluids(Fluid.of('gtceu:methane', 1000))
+		.duration(20 * 5)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:trideuteroiodomethane_separation')
+		.inputFluids(
+			Fluid.of('tfg:trideuteroiodomethane', 1000),
+			Fluid.of('gtceu:oxygen', 1500))
+		.itemOutputs('#forge:dusts/iodine', '#forge:dusts/carbon')
+		.outputFluids(Fluid.of('tfg:heavy_water', 1500))
+		.duration(20 * 5)
+		.EUt(GTValues.VA[GTValues.MV])
 }

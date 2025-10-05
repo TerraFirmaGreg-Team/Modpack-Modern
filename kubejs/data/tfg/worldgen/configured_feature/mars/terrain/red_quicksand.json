@@ -7,7 +7,7 @@
 				"config": {
 					"min_radius": 2,
 					"max_radius": 3,
-					"height": 2,
+					"height": 1,
 					"states": [
 						{
 							"replace": "minecraft:red_sand",

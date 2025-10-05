@@ -516,7 +516,9 @@ function sterilizeItem(event, input, output, multiplier, cleanroom) {
 
 	let autoclave_recipe = event.recipes.gtceu.autoclave(`tfg:autoclave_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
 		.itemInputs(input)
-		.inputFluids(Fluid.of('gtceu:steam', 15360))
+		.perTick(true)
+		.inputFluids(Fluid.of('gtceu:steam', 100*recipe_multiplier))
+		.perTick(false)
 		.itemOutputs(output)
 		.duration(240*20*recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);

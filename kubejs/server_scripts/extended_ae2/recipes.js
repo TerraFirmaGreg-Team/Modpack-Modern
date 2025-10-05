@@ -573,6 +573,21 @@ const registerExtendedAE2Recipes = (event) => {
         .itemOutputs('expatternprovider:wireless_ex_pat')
         .duration(30)
         .EUt(GTValues.VA[GTValues.IV])
+
+    event.shapeless('ae2wtlib:wireless_universal_terminal', ['expatternprovider:wireless_ex_pat', 'ae2wtlib:wireless_universal_terminal'])
+        .modifyResult((grid, result) => {
+            let orig = grid.find(Item.of('ae2wtlib:wireless_universal_terminal').ignoreNBT())
+            result = result.withNBT(orig.nbt);
+
+            if (orig.nbt == null) {
+                result.nbt = { ex_pattern_access: true };
+            }
+            else {
+                result.nbt.put('ex_pattern_access', true);
+            }
+
+            return result;
+        })
     
     //#region ex molecular assembler
 

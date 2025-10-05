@@ -265,9 +265,16 @@ const registerGTCEuMachines = (event) => {
 	// Nuclear Fuel Factory
 
 	event.create('nuclear_fuel_factory', 'multiblock')
+		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('nuclear_fuel_factory')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
+        .recipeModifiers(
+            [
+                GTRecipeModifiers.PARALLEL_HATCH,  
+                (machine, recipe) => GTRecipeModifiers.pyrolyseOvenOverclock(machine, recipe),
+				GTRecipeModifiers.BATCH_MODE
+            ]
+        )
 		.appearanceBlock(() => Block.getBlock('gtceu:atomic_casing'))
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle('RLLLR', 'I   I', 'I   I', 'I   I', 'RLLLR')
@@ -282,8 +289,8 @@ const registerGTCEuMachines = (event) => {
 			.where('P', Predicates.blocks('gtceu:laminated_glass'))
 			.where('S', Predicates.blocks(GTBlocks.CASING_ENGINE_INTAKE.get()))
 			.where('K', Predicates.blocks('gtceu:high_temperature_smelting_casing'))
-			.where('C', Predicates.blocks(GTBlocks.COIL_RTMALLOY.get()))
-			.where('L', Predicates.blocks('gtceu:atomic_casing')
+			.where('C', Predicates.heatingCoils())
+			.where('L', Predicates.blocks('gtceu:atomic_casing').setMinGlobalLimited(15)
 				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
 				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
 				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
@@ -303,7 +310,7 @@ const registerGTCEuMachines = (event) => {
 	event.create('heat_exchanger', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('heat_exchanger')
-        .recipeModifiers([GTRecipeModifiers.OC_PERFECT_SUBTICK])
+        .recipeModifiers([GTRecipeModifiers.OC_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
 		.appearanceBlock(() => Block.getBlock('gtceu:high_temperature_smelting_casing'))
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle('       ','BBBBBBB','BCCCCCB','BBBBBBB','       ')
@@ -445,7 +452,7 @@ const registerGTCEuMachines = (event) => {
 	event.create('ostrum_linear_accelerator', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('ostrum_linear_accelerator')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
 		.appearanceBlock(() => Block.getBlock('tfg:casings/machine_casing_mars'))
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle('AAAAAAAAA', 'AAAAAAAAA', 'AAAAAAAAA', '         ', '         ' )

@@ -185,8 +185,32 @@ const registerGTCEURecipes = (event) => {
 		.duration(300)
 		.EUt(2)
 
+	event.recipes.gtceu.compressor('plant_ball_from_moon_plants')
+		.itemInputs('4x #tfg:moon_plants')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
+	event.recipes.gtceu.compressor('plant_ball_from_mars_plants')
+		.itemInputs('4x #tfg:mars_plants')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_corals')
 		.itemInputs('4x #tfc:corals')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
+	event.recipes.gtceu.compressor('plant_ball_from_misc_plants')
+		.itemInputs('4x #createaddition:plants')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
+	event.recipes.gtceu.compressor('plant_ball_from_wart_blocks')
+		.itemInputs('4x #minecraft:wart_blocks')
 		.itemOutputs('gtceu:plant_ball')
 		.duration(300)
 		.EUt(2)
@@ -213,6 +237,20 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_plants')
 		.itemInputs('#tfc:plants')
+		.inputFluids("#tfc:any_water 20")
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_moon_plants')
+		.itemInputs('#tfg:moon_plants')
+		.inputFluids("#tfc:any_water 20")
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_mars_plants')
+		.itemInputs('#tfg:mars_plants')
 		.inputFluids("#tfc:any_water 20")
 		.outputFluids(Fluid.of('gtceu:biomass', 100))
 		.duration(100)
@@ -250,6 +288,13 @@ const registerGTCEURecipes = (event) => {
 		.itemInputs('#createaddition:plants')
 		.inputFluids("#tfc:any_water 20")
 		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_wart_blocks')
+		.itemInputs('#minecraft:wart_blocks')
+		.inputFluids("#tfc:any_water 20")
+		.outputFluids(Fluid.of('gtceu:biomass', 50))
 		.duration(100)
 		.EUt(3)
 
@@ -570,6 +615,21 @@ const registerGTCEURecipes = (event) => {
 		event.recipes.createFilling('tfg:unfinished_basic_electronic_circuit', ['tfg:unfinished_basic_electronic_circuit', Fluid.of('gtceu:glue', 50)]),
 		event.recipes.createDeploying('tfg:unfinished_basic_electronic_circuit', ['tfg:unfinished_basic_electronic_circuit', '#forge:plates/steel']),
 	]).transitionalItem('tfg:unfinished_basic_electronic_circuit').loops(1).id('tfg:gtceu/sequenced_assembly/basic_electronic_circuit')
+
+	event.remove({ id: 'gtceu:shaped/electronic_circuit_mv' })
+
+	event.recipes.createSequencedAssembly([
+		'gtceu:good_electronic_circuit',
+	], 'gtceu:phenolic_printed_circuit_board', [
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', 'gtceu:diode']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', 'gtceu:diode']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', '#forge:single_wires/copper']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', '#forge:single_wires/copper']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', 'gtceu:basic_electronic_circuit']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', 'gtceu:basic_electronic_circuit']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', 'gtceu:basic_electronic_circuit']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', '#forge:plates/steel']),
+	]).transitionalItem('tfg:unfinished_good_electronic_circuit').loops(1).id('tfg:gtceu/sequenced_assembly/good_electronic_circuit')
 
 	//#endregion
 
@@ -1568,7 +1628,7 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.EV])
 		
 
-	//# New Alloys For Turbines
+	// New Alloys For Turbines
 
 	event.recipes.gtceu.mixer('tfg:tungsten_bismuth_oxide_composite')
 		.itemInputs('2x #forge:dusts/bismuth', 'gtceu:tungsten_dust')
@@ -1577,5 +1637,47 @@ const registerGTCEURecipes = (event) => {
 		.duration(20 * 12)
 		.EUt(GTValues.VA[GTValues.EV])
 
+	// Handcrafted artisanal concrete
 
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/marble', '#forge:dusts/gypsum'], Fluid.of('minecraft:water', 1000))
+		.outputFluid(Fluid.of('gtceu:concrete', 1000))
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/clay'], Fluid.of('minecraft:water', 500))
+		.outputFluid(Fluid.of('gtceu:concrete', 500))
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/calcite', '#forge:dusts/gypsum'], Fluid.of('minecraft:water', 1000))
+		.outputFluid(Fluid.of('gtceu:concrete', 1000))
+
+	event.recipes.tfc.barrel_sealed(1000)
+		.inputFluid(Fluid.of('gtceu:concrete', 144))
+		.inputItem('gtceu:wood_frame')
+		.outputItem('gtceu:light_concrete')
+		.id('tfg:barrel/light_concrete')
+
+	event.recipes.tfc.barrel_sealed(1000)
+		.inputFluid(Fluid.of('gtceu:concrete', 96))
+		.inputItem('tfg:rebar_support')
+		.outputItem('tfg:reinforced_light_concrete_support')
+		.id('tfg:barrel/reinforced_light_concrete_support')
+
+	event.recipes.tfc.barrel_sealed(500)
+		.inputItem('gtceu:light_concrete')
+		.inputFluid(Fluid.of('tfc:black_dye', 18))
+		.outputItem('gtceu:dark_concrete')
+		.id('tfg:barrel/dark_concrete')
+		
+	event.recipes.tfc.barrel_sealed(500)
+		.inputItem('tfg:light_concrete_support')
+		.inputFluid(Fluid.of('tfc:black_dye', 10))
+		.outputItem('tfg:dark_concrete_support')
+		.id('tfg:barrel/dark_concrete_support')
+
+	event.recipes.tfc.barrel_sealed(500)
+		.inputItem('tfg:reinforced_light_concrete_support')
+		.inputFluid(Fluid.of('tfc:black_dye', 10))
+		.outputItem('tfg:reinforced_dark_concrete_support')
+		.id('tfg:barrel/reinforced_dark_concrete_support')
 }

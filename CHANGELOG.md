@@ -15,11 +15,20 @@
 - Water wheels and windmills no longer work in orbit or on the moon, and water wheels no longer work in the Beneath.
 - Blaze burners now only need regular steel to craft, so they are the best option if you want on-demand power generation anywhere you want. (#1889) @TreyR9
 - Removed all passive sources of steam engine heating. @Pyritie
+### AE2 changes
+- TODO
+- Programmed Circuit Card has been removed because it was incompatible with the above additions. Making several machines for different circuits is intended, however if you need to do something like make a whole assembler for a single unique recipe, let us know and we can move the circuit numbers around.
+- Added the Interplanetary Wireless Card, an infinite-range, cross-dimension upgrade for your wireless terminal but costs a lot of power to transfer items. Great for if you forgot something at home, but not useful for mass logistics.
+- Universal Wireless Terminal is now obtainable at EV instead of IV
 ### Other changes
 - Significantly increased durability of hiking boots, and now red steel ones have even more durability while blue steel ones increase your speed a little more (#1894) @Nashy1232
 - EV-tier weapons now require titanium or HSLA instead of tungsten for some crafts @BlueBoat29
 - Improved placement of Illages so now they should never generate on top of a river @Pyritie
 - Create Packagers/Jar Packagers are now significantly cheaper to craft (#1892) @airrice 
+- Create Casings now need stripped logs instead of any logs @Pyritie
+- You can now use honey to make jam in a food processor (#1921) @ShadowDimentio
+- Your first MV circuit now needs a sequenced assembly instead of a crafting table recipe @Pyritie
+- Added recipes for making liquid concrete (for supports) with barrels and mixing bowl @Pyritie
 ### Bug fixes
 - Soup can no longer kill you from overheating @BlueBoat29
 - Air Distributors now consume as much gas as they should, instead of significantly more (#1760) @Bumperdo09
@@ -28,9 +37,18 @@
 - Fixed stainless steel needles being consumed in sewing-type crafts (#1900) @Redeix
 - Updated boiler minecart models and textures (#1900) @Redeix
 - Fixed flux dupe using filled sea shells (#1903) @Redeix
-- Fixed rare crash caused by rock spikes in the beneath having the wrong fluid block property (#1906) @Pyritie
+- Fixed some more dupes with tool heads (#1576) @Pyritie
+- Fixed missing recipe for raw to polished alabaster @Pyritie
+- Fixed food processor not being able to cut Basil properly (#1934) @aldp2883
+- Fixed food processor outputting only 1 shredded cheese instead of 4 (#1925) @aldp2883
+- Fixed some more stack size issues with the assembly line (#1952)
 ### Translation updates
 - Chinese (simplified) @jmecn
+
+## [0.10.17] - 30-09-2025
+### Bug fixes
+- Fixed not being able to use some extruder molds in the Curving Press @Pyritie
+- Fixed a rare crash from waterlogged rock spikes when generating chunks in the Beneath @Pyritie
 
 ## [0.10.16] - 23-09-2025
 ### Bug fixes

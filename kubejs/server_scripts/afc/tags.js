@@ -121,6 +121,11 @@ const registerAFCBlockTags = (event) => {
 	event.add("afc:tappable_logs", "tfc:wood/log/ancient_spruce")
 	event.add("afc:tappable_logs", "tfc:wood/log/spruce")
 
+	event.add("afc:tappable_logs", "beneath:wood/log/crimson")
+	event.add("afc:tappable_logs", "beneath:wood/wood/crimson")
+	event.add("afc:tappable_logs", "beneath:wood/log/warped")
+	event.add("afc:tappable_logs", "beneath:wood/wood/warped")
+
     event.add("tfg:latex_logs", "#tfc:kapok_logs")
     event.add("tfg:latex_logs", "#afc:hevea_logs")
     event.add("tfg:latex_logs", "#afc:rubber_fig_logs")

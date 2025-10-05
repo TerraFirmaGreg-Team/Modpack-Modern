@@ -2,6 +2,8 @@
 "use strict";
 
 const registerExposureRecipes = (event) => {
+
+    event.remove({ id: 'exposure:sequenced_color_film_developing' })
     
     // Lightroom
     event.shaped('exposure:lightroom', [
@@ -58,6 +60,13 @@ const registerExposureRecipes = (event) => {
         D: '#forge:foils/gold',
         E: 'tfc:food/dried_kelp',
     }).id('exposure:color_film')
+
+    event.recipes.createSequencedAssembly([
+		'exposure:developed_color_film',
+	], 'exposure:color_film', [
+		event.recipes.createFilling('exposure:color_film', ['exposure:color_film', Fluid.of('tfc:spring_water', 50)]),
+	]).transitionalItem('exposure:color_film').loops(1).id('tfg:color_film_developing')
+
 
     // Developed Black and White Film
     event.custom({

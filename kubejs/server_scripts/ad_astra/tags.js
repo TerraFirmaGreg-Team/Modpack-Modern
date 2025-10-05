@@ -131,6 +131,8 @@ const registerAdAstraItemTags = (event) => {
 	// these are log tags
 	event.remove('ad_astra:aeronos_caps', 'ad_astra:aeronos_cap')
 	event.remove('ad_astra:strophar_caps', 'ad_astra:strophar_cap')
+	event.add('minecraft:wart_blocks', 'ad_astra:aeronos_cap')
+	event.add('minecraft:wart_blocks', 'ad_astra:strophar_cap')
 
 	event.add('tfc:makes_tannin', '#ad_astra:glacian_logs')
 	event.add('tfc:makes_tannin', '#tfc:crimson_logs')
@@ -370,12 +372,13 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('tfg:heightmap_ignore', 'minecraft:warped_wart_block')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_mushroom_block')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_mushroom_growth')
-	event.add('tfg:heightmap_ignore', 'tfg:glacian_log')
-	event.add('tfg:heightmap_ignore', 'tfg:glacian_wood')
 	event.add('tfg:heightmap_ignore', 'tfg:glacian_leaves')
 	event.add('tfg:heightmap_ignore', 'betterend:glacian_hymenophore')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_moss_block')
 	event.add('tfg:heightmap_ignore', 'minecraft:ice')
+	
+    event.add('tfc:can_be_snow_piled', 'ad_astra:aeronos_mushroom')
+	event.add('tfc:can_be_snow_piled', 'ad_astra:strophar_mushroom')
 
 	global.AD_ASTRA_WOOD.forEach(wood => {
 
@@ -425,15 +428,6 @@ const registerAdAstraBiomeTags = (event) => {
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/rusticus_edge')
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/sangnum_edge')
 	event.add('tfg:has_light_sand_particles', 'tfg:mars/martian_river')
-	
-	event.add('waves:has_waves', 'tfg:mars/martian_river')
-	event.add('waves:has_waves', 'tfg:mars/martian_mountains')
-	event.add('waves:has_waves', 'tfg:mars/amber_plains')
-	event.add('waves:has_waves', 'tfg:mars/amber_hills')
-	event.add('waves:has_waves', 'tfg:mars/rusticus_plains')
-	event.add('waves:has_waves', 'tfg:mars/rusticus_hills')
-	event.add('waves:has_waves', 'tfg:mars/sangnum_plains')
-	event.add('waves:has_waves', 'tfg:mars/sangnum_hills')
 }
 
 const registerAdAstraEntityTypeTags = (event) => {
@@ -632,6 +626,7 @@ const registerAdAstraPlacedFeatures = (event) => {
 	// Top layer
 	event.add("tfg:mars_top_layer_modification", "tfg:glow_lichen")
 	event.add("tfg:mars_top_layer_modification", "tfc:surface_loose_rocks")
+	event.add("tfg:mars_top_layer_modification", "tfg:mars/terrain/mars_poles")
 	
 	//#endregion
 

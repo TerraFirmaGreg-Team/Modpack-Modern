@@ -7,24 +7,8 @@ const registerTFGBlocks = (event) => {
 	registerTFGSupportBlocks(event)
 	registerTFGAqueductBlocks(event)
 	registerTFGCrops(event)
-
-	event.create('tfg:dry_ice', 'tfg:particle_emitter')
-		.textureAll('tfg:block/dry_ice')
-		.soundType('bone_block')
-		.hardness(1)
-		.resistance(1)
-		.tagBlock('minecraft:mineable/pickaxe')
-		.tagBlock('tfcambiental:cold_stuff')
-		.defaultTranslucent()
-		.mapColor('color_white')
-		.speedFactor(1.2)
-		.particleOffset(1, 1, 1)
-		.particleVelocity(0.05, 0, 0.05)
-		.particle('minecraft:campfire_cosy_smoke')
-		.particleCount(2)
-		.particleForced(false)
 		
-	event.create('tfg:exhaust_vent_particle', 'tfg:particle_emitter')
+	event.create('tfg:exhaust_vent_particle', 'tfg:active_particle_emitter')
 		.textureAll('tfg:block/titanium_concrete')
 		.soundType('metal')
 		.hardness(5)
@@ -33,12 +17,13 @@ const registerTFGBlocks = (event) => {
 		.tagBlock('minecraft:mineable/wrench')
 		.mapColor('color_black')
 		.speedFactor(1.1)
-		.particleOffset(5, 1, 5)
-		.particleVelocity(0.0, 0.1, 0.0)
-		.particle('minecraft:campfire_signal_smoke')
-		.particleCount(50)
-		.particleForced(true)
-
+		.activeOffset(5, 1, 5)
+		.activeVelocity(0.0, 0.1, 0.0)
+		//.activeParticle('tfc:smoke_0')
+		.activeCount(50)
+		.activeForced(true)
+		.hasTicker(true) 
+	
 	// #region Machine Casings
 
 	global.TFG_MACHINE_CASINGS.forEach(type => {
@@ -177,7 +162,6 @@ const registerTFGBlocks = (event) => {
 		.tagBlock('minecraft:mineable/pickaxe')
 		.tagBoth('tfg:titanium_concrete')
 		
-		
 	event.create('tfg:polished_titanium_concrete')
 		.translationKey('block.tfg.polished_titanium_concrete')
 		.model('tfg:block/concrete/polished_titanium_concrete')
@@ -226,6 +210,48 @@ const registerTFGBlocks = (event) => {
 		.tagBlock('minecraft:mineable/pickaxe')
 		.tagBoth('tfg:titanium_concrete')
 		
+	// #region insulation
+	event.create('tfg:glacian_wool_frame')
+		.soundType('copper')
+		.hardness(4)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+	event.create('tfg:aes_insulation_frame')
+		.soundType('copper')
+		.hardness(5)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+
+	event.create('tfg:moderate_core_frame')
+		.soundType('copper')
+		.hardness(4)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+	event.create('tfg:impure_moderate_core_frame')
+		.soundType('copper')
+		.hardness(5)
+		.resistance(6)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+
+	// Unfinished Insulation
+	event.create('tfg:moderate_core')
+		.soundType('ancient_debris')
+		.hardness(7)
+		.resistance(8)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+		.model('tfg:block/fission/moderate_core')
+	event.create('tfg:impure_moderate_core')
+		.soundType('ancient_debris')
+		.hardness(7)
+		.resistance(8)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:mineable/wrench')
+		.model('tfg:block/fission/impure_moderate_core')
 
 	// #region Decorative vases
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
@@ -377,16 +403,4 @@ const registerTFGBlocks = (event) => {
 	})
 
 	// #endregion Reconstituted Stone
-  
-  // #region Deprecated
-
-	event.create('treetap:tap')
-		.requiresTool(false)
-		.textureAll('tfg:item/deprecated')
-
-	event.create('tfcea:refrigerator')
-		.requiresTool(false)
-		.textureAll('tfg:item/deprecated')
-
-	// #endregion
 }

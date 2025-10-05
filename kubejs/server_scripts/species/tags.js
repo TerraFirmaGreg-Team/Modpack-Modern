@@ -28,4 +28,6 @@ const registerSpeciesItemTags = (event) => {
 	event.add('tfc:compost_greens', 'species:alphacene_mushroom_block')
 	event.add('tfc:compost_greens_low', 'species:alphacene_mushroom_growth')
 	event.add('tfc:compost_greens', 'species:alphacene_moss_block')
+
+	event.add('minecraft:wart_blocks', 'species:alphacene_mushroom_block')
 }
