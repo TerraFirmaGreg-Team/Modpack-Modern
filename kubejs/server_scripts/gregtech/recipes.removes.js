@@ -779,6 +779,15 @@ function removeGTCEURecipes(event) {
 	armor.forEach(armor => {
 		event.remove({ output: armor})
 	});
+
+	event.remove({ id: 'gtceu:shapeless/centrifuged_ore_to_dust_plutonium' })
+	event.remove({ id: 'gtceu:centrifuge/centrifuge_plutonium_dirty_dust_to_dust' })
+	event.remove({ id: 'gtceu:centrifuge/centrifuge_plutonium_pure_dust_to_dust' })
+	event.remove({ id: 'gtceu:large_chemical_reactor/radon_from_uranium_238' })
+	removeMaceratorRecipe(event, 'macerate_plutonium_refined_ore_to_dust')
+	event.remove({ id: 'gtceu:ore_washer/wash_plutonium_pure_dust_to_dust' })
+	event.remove({ id: 'gtceu:ore_washer/wash_plutonium_dirty_dust_to_dust' })
+	event.remove({ id: 'gtceu:forge_hammer/hammer_plutonium_refined_ore_to_dust' })
 }
 
 function removeMaceratorRecipe(event, id) {
