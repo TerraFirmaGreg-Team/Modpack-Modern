@@ -214,7 +214,7 @@ function registerTFGNuclearRecipes(event) {
     event.recipes.deafission.fission_reactor_coolant('tfg:thorium_coolant')
 		.notConsumable(Item.of('tfg:thorium_rod'))
 		.perTick(true)
-		.inputFluids(Fluid.of('minecraft:water', 400))
+		.inputFluids(Fluid.of('tfg:heavy_water', 2))
 		.outputFluids(Fluid.of('gtceu:dense_steam', 2))
 		.perTick(false)
 		.dimension('ad_astra:mars')

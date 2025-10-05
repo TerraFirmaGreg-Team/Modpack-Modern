@@ -1,1630 +1,1952 @@
 {
-	autofocus_id: "01E88C8523658529"
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ev__extreme_voltage"
 	group: "21D975CEBDE06BA9"
 	icon: "tfg:ev_universal_circuit"
-	id: "7FB9F636D95820A3"
+	id: "6B1AD2350778D945"
 	order_index: 0
 	quest_links: [
 		{
-			id: "2E99A771FCA40E15"
-			linked_quest: "7FA0ACB7F161F378"
-			shape: "gear"
-			size: 1.2d
+			id: "0D951ADFB3AF2E74"
+			linked_quest: "7B2EE67E37809269"
 			x: 4.5d
-			y: 5.625d
+			y: 0.0d
 		}
 		{
-			id: "01E88C8523658529"
-			linked_quest: "40408FFD02134148"
-			size: 0.75d
-			x: 4.5d
-			y: 6.75d
-		}
-		{
-			id: "567AFEA6A07F1886"
-			linked_quest: "390E59F05132FCB8"
-			size: 0.75d
-			x: 1.125d
-			y: 7.875d
-		}
-		{
-			id: "33EE8F2888E09B86"
-			linked_quest: "528CE69DA4358B2E"
-			size: 0.75d
-			x: 4.5d
-			y: 10.125d
-		}
-		{
-			id: "156278F7405DCE44"
+			id: "0E76B952D3BA3BDA"
 			linked_quest: "017019EB38F7A18C"
-			size: 0.75d
-			x: 5.625d
-			y: 10.125d
+			x: -0.75d
+			y: 9.0d
+		}
+		{
+			id: "0B4D3B550794CF68"
+			linked_quest: "351AED1612D00EF8"
+			x: -3.5d
+			y: -4.0d
 		}
 	]
 	quests: [
 		{
-			dependencies: ["16B735F9C391D260"]
-			description: [
-				"It's time to be blunt - Steam as a power option really isn't worth it at this point anymore. "
-				""
-				"The &3Large Steam Turbine&r acts as a multiblock Steam Turbine for &6HV&r power. It's quite an expensive multiblock to build just for a measly 1024 EU/t, but it also boasts the powerful ability to scale to &9higher Power Production and higher Efficiency&r."
-				"{@pagebreak}"
-				"The Turbine outputs &dDistilled Water&r if given an &3Output Hatch&r, which you could loop back to your &3Large Boilers&r. We don't entirely endorse this, as your Boilers will end up exploding if the system fails."
-				""
-				"Each Large Turbine will require a &aTurbine Rotor&r and a &3Rotor Holder&r. You can find out more about the Turbine mechanics in the &lnext&r Quest."
-				"{@pagebreak}"
-				"&9Note:&r This Quest &eonly&r requires the Controller, but you'll still need all the multiblock parts to construct the Turbine."
-				""
-				"Turbines &cvoid&r energy if they're unable to output. If you plan on using this with &6HV&r power, use a Rotor close to a 100% Power stat."
-			]
-			icon: "gtceu:steam_large_turbine"
-			id: "189F84D6C76CDC8B"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "If you're still running off Steam... boy, do we have a solution for you!"
+			description: ["You’ve built new &6chemistry lines&r, manufactured advanced &balloys&r, and even launched a &dRocket&r to reach the Moon. We hope you enjoyed the ride because now things get even more complex, with powerful new machines and demanding processes ahead.\\n\\nIn the &5EV Chapter&r, your main objective will be to craft your very first &1IV&r and &dLuV&r Circuits. Along the way, several key challenges await you:\\n\\n• Build your first &6Alloy Blast Smelter&r a faster version of the EBF. With it, you’ll be able to construct your first Large Machine: the &6Large Centrifuge&r, essential for the Nuclear Fission Line. It also lets you upgrade ore processing with a faster Thermal Centrifuge.\\n\\n• Master the new &eTungsten Line&r a &dTerraFirmaGreg&r–specific production chain. Looping all the required materials will test both your knowledge and your patience.\\n\\n• Prepare to fly to &4Mars&r where you’ll become an &aextraterrestrial farmer&r while also learning to harness the &cpower of the atom&r.\\n\\nGood luck this is where GregTech begins to show its true depth!"]
+			id: "4EA8888B12D75BF1"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "{quests.extreme_voltage.welcome_to_ev.subtitle}"
 			tasks: [{
-				id: "793B9FC5F9ACCCC7"
-				item: "gtceu:steam_large_turbine"
+				id: "31E403AF10910BA2"
+				item: "gtceu:ev_machine_hull"
 				type: "item"
 			}]
-			title: "Large Steam Turbine"
-			x: 3.375d
-			y: 4.5d
+			title: "{quests.extreme_voltage.welcome_to_ev.title}"
+			x: -3.75d
+			y: 0.0d
 		}
 		{
-			dependencies: [
-				"0F539EC8D2361791"
-				"189F84D6C76CDC8B"
-				"4E9DED9569AA17F5"
-			]
+			dependencies: ["601088B7920140B2"]
 			description: [
-				"The Large Turbines are the most complex Multiblock Generators that you'll find in GTCEu in the present day."
 				""
-				"Let's delve into Turbines!"
-				""
-				"&6This quest unlocks a new tutorial on Turbine Mechanics in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
-			]
-			icon: {
-				Count: 1
-				id: "gtceu:turbine_rotor"
-				tag: {
-					GT.PartStats: {
-						Material: "neutronium"
-					}
-				}
-			}
-			id: "188A8C3DD38C2762"
-			min_required_dependencies: 1
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "My mechanics are... complex"
-			tasks: [{
-				id: "2CE74616CF080BF9"
-				type: "checkmark"
-			}]
-			title: "Large Turbine Mechanics"
-			x: 2.25d
-			y: 4.5d
-		}
-		{
-			dependencies: ["35E7E45987D9B1F6"]
-			description: [
-				"Starting from here, &3Energy&r and &3Dynamo Hatches&r can be upgraded to a &d4A&r variant."
-				""
-				"This is extremely useful for Multiblock Generators."
-			]
-			icon: "gtceu:ev_energy_input_hatch"
-			id: "7820DF52516344F4"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "Perfectly regular progression"
-			tasks: [{
-				id: "1696F760B75B3544"
-				item: "gtceu:ev_energy_input_hatch"
-				type: "item"
-			}]
-			title: "Upgrading your EBF III"
-			x: 2.25d
-			y: 2.25d
-		}
-		{
-			dependencies: ["35E7E45987D9B1F6"]
-			description: [
-				"The &3Large Gas Turbine&r may not leave a huge impression in &5EV&r, but it has the ability to scale to &9better production&r than the base 4096 EU/t, and boasts &9greater efficiency&r."
-				""
-				"Each Large Turbine will require a &aTurbine Rotor&r and a &3Rotor Holder&r. More on the Turbine mechanics in the &lnext&r Quest."
 				"{@pagebreak}"
-				"&9Note:&r This Quest &eonly&r requires the Controller, but you still need all the multiblock parts to construct the Turbine."
-				""
-				"Turbines &cvoid&r energy if they're unable to output. If you plan on using this with HV power, use a Rotor with close to 100% Power stat."
-			]
-			icon: "gtceu:gas_large_turbine"
-			id: "0F539EC8D2361791"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "7243C47692B04E81"
-				item: "gtceu:gas_large_turbine"
-				type: "item"
-			}]
-			title: "Large Gas Turbine"
-			x: 2.25d
-			y: 3.375d
-		}
-		{
-			dependencies: [
-				"30A6EDDF25A5E5F8"
-				"7A55CC71442CC854"
-			]
-			description: [
-				"New Cutting Machine? &a✓&r"
-				""
-				"New Lens? &a✓&r"
-				""
-				"New Power Circuit? &a✓&r"
-				""
-				"New EBF Metal required? &a✓&r"
-				""
-				"New Coil for Energy Hatch? &a✓&r"
-				""
-				"&9Note:&r If you haven't found a Jungle yet, you can &acentrifuge Stone Dust&r for &dMetal Mixture Dust&r. This doubles as a Brown Dye."
-			]
-			icon: "gtceu:mpic_chip"
-			id: "35E7E45987D9B1F6"
-			size: 0.75d
-			tasks: [
-				{
-					id: "2475364829C80B50"
-					item: "gtceu:mpic_chip"
-					type: "item"
-				}
-				{
-					id: "1225B9C57910A98A"
-					item: "gtceu:brown_glass_lens"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Power Integrated Circuit"
-			x: 3.375d
-			y: 2.25d
-		}
-		{
-			dependencies: ["35E7E45987D9B1F6"]
-			description: [
-				"The &3Large Combustion Engine&r is a multiblock able to burn &dCombustion Fuels&r for even more Power Generation!"
-				""
-				"Its default production outputs 2048 EU/t, which is the same as 4 &3Turbo Combustion Generators&r."
-				""
-				"Where it shines is the ability to &6boost&r it with &aOxygen&r. This will double the fuel consumption, but &9triple the power generation&r, for 6144 EU/t! This results in &6150% Fuel efficiency&r."
-				""
-				"It also requires a small amount of &aLubricant&r - nothing too crazy."
-				""
-				"The &3LCE&r is also void-free, unlike Large Turbines. Any energy that cannot be output will momentarily pause the multiblock."
-				"{@pagebreak}"
-				"&9Note:&r This Quest requires &eany&r task to be completed, but you should still need all the parts."
-				""
-				"To harness the 6144 EU/t Power output, you will need a &34A EV Dynamo Hatch&r or an &3IV Dynamo Hatch&r."
-			]
-			icon: "gtceu:large_combustion_engine"
-			id: "1AD309112ADD8D8D"
-			size: 0.75d
-			tasks: [
-				{
-					id: "4B0E8EBCA3950AA0"
-					item: "gtceu:large_combustion_engine"
-					type: "item"
-				}
-				{
-					id: "38A33D0B4E9CD811"
-					item: "gtceu:ev_energy_output_hatch"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Large Combustion"
-			x: 3.375d
-			y: 1.125d
-		}
-		{
-			dependencies: [
-				"7A55CC71442CC854"
-				"478B0D55369C0F7F"
-			]
-			description: [
-				"At the cost of 4x the drilling Power, the &3Advanced Fluid Drilling Rig&r gains &616x the output&r in Fluid."
-				""
-				"The depletion of veins is also halved. This means you will get a total of &632x&r as much Oil (or whatever fluid) from a bedrock fluid vein until depletion!"
-				""
-				"Even when depleted, you can still use this and be firmly power positive."
-				""
-				"One single &3Advanced Fluid Drilling Rig&r should be enough to supply Power for a base up to &dLuV&r... and possibly beyond!"
-				"{@pagebreak}"
-				"As a &9reminder&r, since this last appeared in &bMV&r:"
-				""
-				"&9-&r &aLight Oil&r can be used for &dLPG&r and &dMethane&r to run in &3Large Gas Turbines&r."
-				"&9-&r &aOil&r can be used for &dDiesel&r and &dCetane-Boosted Diesel&r to run in &3Large Combustion Engines&r."
-				"&9-&r &aHeavy Oil&r can be used for &dNitrobenzene&r to run in &3Large Gas Turbines&r."
-			]
-			icon: "gtceu:hv_fluid_drilling_rig"
-			id: "10987A49F647279E"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "Extreme is an apt descriptor"
-			tasks: [{
-				id: "3FE1F17DD37F0A56"
-				item: "gtceu:hv_fluid_drilling_rig"
-				type: "item"
-			}]
-			title: "Extreme Fluid Drilling"
-			x: 3.375d
-			y: 3.375d
-		}
-		{
-			dependencies: [
-				"330BDB559A7BAB35"
-				"41D32C5178760F47"
-			]
-			description: [
-				"How do you get Platinum?"
-				""
-				"&9-&r As a byproduct of &aNickel Ore&r processing, either with a &3Chemical Bath&r, or a &3HV Macerator&r"
-				"&9-&r From &aSheldonite veins&r in the End"
-				"&9-&r From &aPlatinum Group Sludge&r, a complicated chain granting all Platinum Group metals. Highly &cunrecommended until IV&r, but eventually required."
-				""
-				"Platinum is needed in small amounts for &dSMD Diodes&r, and for a plethora of recipes starting in &5EV&r."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o Mekanism's primary material was planned to be Platinum. However, GregoriusT didn't agree - the fact that such a rare material could be found all over the world wasn't quite to his tastes. The Mekanism devs thus opted to make the primary material Osmium."
-			]
-			icon: "gtceu:platinum_ingot"
-			id: "3398FC108D9DCB46"
-			size: 0.75d
-			tasks: [
-				{
-					id: "422782D7BAC8024B"
-					item: "gtceu:platinum_dust"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "20DD24EB9315C33B"
-					item: "gtceu:platinum_ingot"
-					type: "item"
-				}
-			]
-			title: "Platinum"
-			x: 4.5d
-			y: 3.75d
-		}
-		{
-			dependencies: [
-				"0B25A282F677744B"
-				"7A55CC71442CC854"
-				"00004BE1D77EA003"
-			]
-			description: [
-				"We admit it... this is a completely &doptional&r Multiblock. Many playtesters kept using their &6HV&r singleblock miners and didn't find any problems in throughput."
-				""
-				"The &3Larger Miner&r will further boost your returns when collecting ores from veins."
-				""
-				"Ores are mined as if they were &amacerated&r, but they yield &6three times&r as many &dCrushed ores&r."
-				""
-				"You will need to have automated &aDrilling Fluid&r to run this."
-				""
-				"You might also want to use a &3Quantum Tunnel&r from AE2 and &3GTEU P2P Tunnels&r to transfer the items and to power it up."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o There were some interesting side effects from porting this over from Gregicality, as the multiblock originated from GregTech 5."
-				""
-				"It's not perfect, as there isn't really any advantage on upgrading this miner to the advanced versions. We were thinking of rebalancing the energy costs and yield per tier."
+				"{quests.high_voltage.hv_macerator.desc.2}"
 			]
 			icon: "gtceu:ev_large_miner"
-			id: "16E7CAC7BC8BFD8E"
-			shape: "rsquare"
-			size: 0.66d
+			id: "68A33ED44FA58C26"
+			shape: "heart"
+			size: 1.0d
 			tasks: [{
-				id: "4576F08E8AE8C110"
+				disable_toast: true
+				id: "7E864B77127F1CBD"
 				item: "gtceu:ev_large_miner"
 				type: "item"
 			}]
-			title: "Multiblock Miner"
-			x: 5.625d
-			y: 3.375d
+			x: -0.75d
+			y: 1.5d
 		}
 		{
 			dependencies: [
-				"40408FFD02134148"
-				"7FA0ACB7F161F378"
+				"601088B7920140B2"
+				"55FB2776B724FB63"
+				"3FBDC8552F7D8008"
 			]
-			description: ["You know the drill by now."]
-			icon: "gtceu:ev_assembler"
-			id: "7A55CC71442CC854"
-			size: 0.75d
-			subtitle: "Pushing into EV"
+			description: [""]
+			icon_scale: 2.0d
+			id: "52AB0BDC64293253"
+			shape: "none"
+			size: 2.0d
 			tasks: [{
-				id: "2F60DE9B52FDEFFC"
-				item: "gtceu:ev_assembler"
+				id: "00802CE875F2FB24"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_2_rocket"
+					tag: { }
+				}
 				type: "item"
 			}]
-			title: "EV Assembler"
-			x: 4.5d
-			y: 2.25d
+			title: "The next generation Rocket"
+			x: -3.75d
+			y: 3.0d
 		}
 		{
-			dependencies: ["7A55CC71442CC854"]
+			dependencies: ["52AB0BDC64293253"]
 			description: [
-				"The Best Battery-like item for &5EV&r!"
-				""
-				"The &aLapotron Crystal&r requires quite a bit of nested crafting, so craft it in large batches or automate it with AE2 patterns."
+				"Before landing on &4Mars&r, there are a few important things to keep in mind.\\n\\nFirst, remember that &4Mars&r is a hostile planet. Expect &cmobs everywhere&r they hit hard, and they hit often. Bring your best &6weapons&r you don’t want to die the moment you touch down.\\n\\nThe planet is mostly a &edesert world&r, dotted with &aoasis islands&r where you’ll find &bwater&r, &ajungle&r biomes, and &7mountains&r much safer places to build your first base. Be careful though: the open desert is extremely dangerous.\\n\\nAll &bfluid veins&r are spread across Mars, except for one of the most important &eHeavy Ammoniacial Water&r which can only be found on these &aoasis islands&r. That’s another good reason to set up your base there.\\n\\nAnd one last tip: don’t kill everything you see. Some &aanimals&r can be &franched&r, and you’ll definitely need them later in your progression.\\n\\n"
+				"{@pagebreak}"
+				"Energy-wise, &4Mars&r will not be kind to you at first.\\n\\nNearly every common &6energy generation method&r is &cdisabled&r on the planet, which means you’ll have to rely almost entirely on &cFission&r to power your base.\\n\\nAt the very beginning, you can use &eAd Astra&r solar panels but don’t expect much from them. Their output is terrible, so it’s far better to bring along some &bfilled batteries&r such as &bLapotron Crystals&r to get started.\\n\\nAchieving energy stability on Mars will take time and effort, but once your systems are running smoothly, you’ll feel like &9unlimited power&r is right in the palm of your hand.\\n\\nStay alert, plan ahead, and Mars will reward your courage."
 			]
-			icon: "gtceu:lapotron_crystal"
-			id: "69E384F389B0D07B"
-			shape: "rsquare"
-			size: 0.66d
+			id: "2979AFD231E5B37B"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				dimension: "ad_astra:moon"
+				icon: "ad_astra:mars_globe"
+				id: "18D9C6ACD5513680"
+				title: "I'm on the Moon"
+				type: "dimension"
+			}]
+			title: "I'm on Mars"
+			x: -3.75d
+			y: 7.0d
+		}
+		{
+			dependencies: ["04682CD04FE0A56E"]
+			icon: "gtceu:tungsten_ingot"
+			id: "5EC5566546591DEE"
 			tasks: [
 				{
-					id: "3DF109921CA21ADB"
-					item: "gtceu:lapotron_crystal"
+					id: "017BC39C681F5335"
+					item: "gtceu:tungsten_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "486FD2A6FCEFDFEF"
-					item: "gtceu:ev_lapotronic_battery"
+					id: "3A60698FD28B0CC5"
+					item: "gtceu:tungsten_ingot"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4EA8888B12D75BF1"]
+			dependency_requirement: "all_started"
+			description: ["The &eTungsten Line&r in TerraFirmaGreg has been completely reworked and you’ll be happy (or not) to know that it’s now &cmuch harder&r.\\n\\nIn this first &4Mars Alpha Release&r, you’ll need to navigate through &dEMI&r on your own to figure out how the process works. Future updates will include new quests to guide you step by step, adding more clarity to each stage of the chain.\\n\\nIt’s possible to &afully loop&r every material in the Tungsten Line, but doing so requires a lot of engineering. Alternatively, you can brute-force your way through by &cmass-producing&r the resources you need.\\n\\nA little tip: &4Mars&r has several &agood ore veins&r for farming &eSoda Ash Dust&r a useful ingredient for this complex production line.\\n\\nTake your time, optimize, and the Tungsten Line will become the foundation of your mid-to-late game progress."]
+			id: "04682CD04FE0A56E"
+			size: 1.0d
+			tasks: [{
+				id: "3ADAE06AC48E977A"
+				item: "gtceu:ev_chemical_bath"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4EA8888B12D75BF1"]
+			dependency_requirement: "all_started"
+			description: [""]
+			id: "601088B7920140B2"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "2B895EE3AD917E30"
+				item: "gtceu:ev_assembler"
+				type: "item"
+			}]
+			x: -0.75d
+			y: 3.0d
+		}
+		{
+			id: "6CEF66260369AA07"
+			tasks: [{
+				id: "7E660B560DC1F132"
+				item: "gtceu:ev_diode"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4EA8888B12D75BF1"]
+			description: ["&6The Distillation Tower&r is a direct multiblock upgrade of the &6Distillery&r. You won't have to choose outputs anymore the DT will handle them all automatically, at an increased power cost.\\n\\nThis machine will be your bread and butter for anything involving &ePetrochem&r or &eOrganic distillation.\\n\\nLike the &6Cleanroom&r, the DT can be made taller though not wider. Starting from the second layer, each added level requires an &9Output Hatch&r and grants one additional fluid output slot; if a level lacks its output hatch, the corresponding fluid will be voided. Count the number of outputs with &dEMI&r so you know how many layers you need. As always, use the Multiblock Preview tab in &dEMI&r and click the multiblock to see where you can place each part.\\n\\n&cNote:&r Be careful not to over-overclock the DT when producing fuels excessive OC can reduce the overall power yield, especially for Diesel. Do the math and double-check your calculations."]
+			id: "3A2E442E4D84C891"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "4F7F66B31C51745B"
+				item: "gtceu:distillation_tower"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A2E442E4D84C891"]
+			id: "55FB2776B724FB63"
+			tasks: [{
+				id: "7DC8E7D2B25A77A0"
+				item: "gtceu:epoxy_plate"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3A2E442E4D84C891"]
+			id: "2DEC7AF917AAE4EC"
+			tasks: [{
+				id: "0B67E6FCED83C635"
+				item: "gtceu:oil_bucket"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3A2E442E4D84C891"]
+			id: "43BBB9074608F9B1"
+			tasks: [{
+				id: "6DA5F3588DF9BECE"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4A16FE99ACCDE374"
+				"5EC5566546591DEE"
+			]
+			description: [""]
+			id: "24ECDF70031B39C4"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "5F816121BE08205B"
+				item: "gtceu:alloy_blast_smelter"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4EA8888B12D75BF1"]
+			dependency_requirement: "all_started"
+			description: [""]
+			id: "61D5055F344DDFAD"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "7A401E905A41C399"
+				item: "gtceu:ev_mixer"
+				type: "item"
+			}]
+			x: -0.75d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"61D5055F344DDFAD"
+				"42C2B749B61B1FBE"
+			]
+			icon: "gtceu:rtm_alloy_ingot"
+			id: "37B7342CD1B3B76D"
+			tasks: [
+				{
+					id: "05828FD56A7CC75E"
+					item: "gtceu:rtm_alloy_ingot"
+					type: "item"
+				}
+				{
+					id: "416E50101E8FB861"
+					item: "gtceu:rtm_alloy_dust"
 					optional_task: true
 					type: "item"
 				}
 			]
-			title: "Extreme Batteries"
-			x: 4.5d
-			y: 1.125d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
-				"3398FC108D9DCB46"
-				"41D32C5178760F47"
-				"40408FFD02134148"
+				"37B7342CD1B3B76D"
+				"601088B7920140B2"
 				"6B08799BCFD01D3D"
-				"7FA0ACB7F161F378"
 			]
-			description: [
-				"This quest will cover the Tungsten Chain. &aTungsten&r is obtained from either &eTungstate&r or &eScheelite&r, which are part of the same vein in the End."
-				""
-				"Just like the &dRutile&r chain, you will only need to input one item type, and everything else will be looped perfectly!"
-				"{@pagebreak}"
-				"You will need:"
-				""
-				"&9-&r One &3Chemical Bath&r, to make &dTungstic Acid&r."
-				"&9-&r One &3Electrolyzer&r, to electrolyze &oboth&r Bath outputs."
-				"&9-&r One &3Chemical Reactor&r, to loop &dHydrogen&r and &dChlorine&r back into &aHydrochloric Acid&r."
-				""
-				"You will be granted either Calcium or Lithium as a byproduct - it's on the house!"
-				"{@pagebreak}"
-				"&l&3Lore:&r&o In GTCE, Tungstate or Scheelite took 40sec and 4 Hydrogen buckets at 1920 EU/t to electrolyze into 1 Tungsten Dust. Even if it was simpler, it was much more expensive!"
-			]
-			hide_dependency_lines: true
-			icon: "gtceu:tungsten_dust"
-			id: "271CE5C2B78A1EDC"
-			size: 0.75d
-			subtitle: "All in one!"
+			id: "7F4E529627AD9148"
 			tasks: [{
-				id: "6BA811C086B5CF00"
-				item: "gtceu:tungsten_dust"
+				id: "00C380A4403239AA"
+				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
-			title: "Tungsten Chain"
-			x: 6.75d
-			y: 3.375d
+			x: 1.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["271CE5C2B78A1EDC"]
-			description: ["The &3EV Mixer&r is required for more alloys, the most important being &dTungstensteel&r."]
-			hide_dependency_lines: false
-			hide_dependent_lines: true
-			icon: "gtceu:ev_mixer"
-			id: "478B0D55369C0F7F"
-			size: 0.75d
-			subtitle: "Beginning to notice a pattern?"
-			tasks: [{
-				id: "0E0232ACC9B93FE4"
-				item: "gtceu:ev_mixer"
-				type: "item"
-			}]
-			title: "Extreme Mixing"
-			x: 5.625d
-			y: 2.25d
-		}
-		{
-			dependencies: ["478B0D55369C0F7F"]
-			description: [
-				"&aTungstensteel&r is composed half of Steel... suffice to say, you'll need large quantities of both &aIron&r and &aTungsten&r!"
-				""
-				"Right now, you will need it for &3Energy&r or &3Dynamo Hatches&r... one step closer to moving away from those pesky single block Generators."
-				""
-				"Boosting the smelting recipe in the &3Electric Blast Furnace&r will require &eHelium&r. You can get an initial supply from &aextracting Monazite&r or &acentrifuging Endstone&r."
-				""
-				"In the long term, you will want to get Helium via &aLiquid Air Distillation&r."
-			]
-			icon: "gtceu:tungsten_steel_ingot"
-			id: "30A6EDDF25A5E5F8"
-			shape: "gear"
-			size: 1.3d
-			subtitle: "The main &1IV&r Material!"
+			dependencies: ["7F4E529627AD9148"]
+			id: "4A16FE99ACCDE374"
 			tasks: [
 				{
-					id: "4BEA3166CD486845"
+					id: "7DE8B43CE2F0C269"
+					item: "gtceu:tantalum_carbide_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6321A83F519D39FC"
+					item: "gtceu:tantalum_carbide_ingot"
+					type: "item"
+				}
+				{
+					id: "7AA38E7C6B5166DA"
+					item: "gtceu:hsla_steel_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "42CB3CBDDF800000"
+					item: "gtceu:hsla_steel_ingot"
+					type: "item"
+				}
+				{
+					id: "0B1637A4D9FC5C44"
+					item: "gtceu:titanium_carbide_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6B766406CF2EC500"
+					item: "gtceu:titanium_carbide_ingot"
+					type: "item"
+				}
+				{
+					id: "25D51956B6A113B7"
+					item: "gtceu:molybdenum_disilicide_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "755EED124BD7DC5C"
+					item: "gtceu:molybdenum_disilicide_ingot"
+					type: "item"
+				}
+			]
+			title: "Large Multiblock Alloys"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7B2EE67E37809269"]
+			icon: "gtceu:ruthenium_dust"
+			id: "42C2B749B61B1FBE"
+			tasks: [
+				{
+					id: "78B9D8F5832AC641"
+					item: "gtceu:inert_metal_mixture_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "62533C761BBED7DB"
+					item: "gtceu:ruthenium_tetroxide_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "302BD7E61BCF4132"
+					item: "gtceu:ruthenium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2089E9E10970EBC9"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["24ECDF70031B39C4"]
+			description: ["The &6Large Centrifugal Unit&r is a mandatory multiblock for your Fission Line.\\n\\nIt supports up to &52x EV Energy Hatches&r, allowing it to process &1IV-tier&r recipes using the same mechanic as the EBF, so it should feel familiar.\\n\\nThis machine can operate in two modes: &bCentrifuge&r and &6Thermal Centrifuge&r. You can easily switch between them directly in the controller interface.\\n\\nWith this upgrade, you can finally bring your &aore processing&r to a whole new level of speed."]
+			id: "10F870BCEC5D5C74"
+			tasks: [{
+				id: "78C78EA1B0996FF9"
+				item: "gtceu:large_centrifuge"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"5EC5566546591DEE"
+				"61D5055F344DDFAD"
+			]
+			icon: "gtceu:tungsten_steel_ingot"
+			id: "0FB5E513356117C1"
+			tasks: [
+				{
+					id: "62FC7EB1C86B5DC2"
 					item: "gtceu:tungsten_steel_dust"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "6D93081E44DD9678"
+					id: "105E1F5A54451E49"
 					item: "gtceu:tungsten_steel_ingot"
 					type: "item"
 				}
 			]
-			title: "Tungstensteel"
-			x: 6.75d
-			y: 2.25d
+			x: 0.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["271CE5C2B78A1EDC"]
-			description: [
-				"Tungsten in Swedish translates directly as \"Heavy Stone\", which is pretty funny. You may know of this element as Wolfram too, hence its formula being W."
-				""
-				"&aTungsten&r will be the main &1IV&r Cable material, but will also show its face elsewhere!"
+			dependencies: [
+				"2979AFD231E5B37B"
+				"5EC5566546591DEE"
 			]
-			icon: "gtceu:tungsten_ingot"
-			id: "0B25A282F677744B"
-			size: 0.75d
+			description: ["The &6Nuclear Fuel Factory&r has one purpose: producing fuel rods for your &cFission Reactor&r.\\n\\nIt supports &9Parallel Hatches&r which you’ll unlock soon but they aren’t mandatory yet. Functionally, it works much like the Pyrolyse Oven: the &ebetter the coils&r you install, the faster the recipes will run.\\n\\nSince fuel rod production is both &cslow&r and &cexpensive&r, we strongly recommend using the &ahighest tier coils&r available. Don’t waste your time with Cupronickel you’ll only be nerfing yourself."]
+			id: "2AE4C12203E5F15E"
 			tasks: [{
-				id: "5D897ADB4F7D9920"
-				item: "gtceu:tungsten_ingot"
+				id: "6FF1B21AD971D795"
+				item: "gtceu:nuclear_fuel_factory"
 				type: "item"
 			}]
-			title: "Tungsten"
-			x: 6.75d
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2979AFD231E5B37B"]
+			id: "51BEA1053F203050"
+			tasks: [{
+				id: "03F10750FD9BBAA6"
+				item: "tfg:sniffer_wool"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			description: ["To run your Fission Reactor, you’ll need a steady supply of &bHeavy Water&r and there’s only one place to find it.\\n\\nIt’s located in &adeep fluid veins&r found exclusively beneath the &aoasis islands&r of Mars. Grab your &6Ore Prospector&r, switch it to &bFluid Mode&r, and start scanning.\\n\\nBecause the amount of &bHeavy Water&r required to keep your reactor running is enormous, you should seriously consider investing in a &6Large Centrifuge&r to produce it yourself.\\n\\nInstall a &516A EV Energy Hatch&r, and you’ll be ready for true mass production ensuring your reactor never runs dry.\\n\\nReliable cooling means reliable power build smart."]
+			icon: "tfg:heavy_water_bucket"
+			id: "4AD41E9FA7814EA1"
+			tasks: [
+				{
+					id: "642113FC75A34D13"
+					item: "tfg:heavy_water_bucket"
+					type: "item"
+				}
+				{
+					id: "30DC9ADDA6C91BC2"
+					item: "tfg:heavy_ammoniacal_water_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1873FFA06D0467F6"
+					item: "gtceu:mv_fluid_drilling_rig"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "41FE33DD5BA60884"
+					item: "gtceu:hv_fluid_drilling_rig"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0F2EEE4752F5EFE0"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
+			x: 8.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2AE4C12203E5F15E"]
+			id: "77CB4AE5B3AF5263"
+			tasks: [{
+				id: "329AD7949DFB8170"
+				item: {
+					Count: 1
+					id: "tfg:thorium_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"77CB4AE5B3AF5263"
+				"4AD41E9FA7814EA1"
+			]
+			description: ["Read the extensive explication made by Vazde the mod author in the Gregtech Energy Chapter"]
+			id: "29E0829816B9DBA0"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "2C3F3D0BA3CD96E2"
+				item: "deafission:fission_reactor_mk1"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["29E0829816B9DBA0"]
+			icon: "gtceu:uranium_waste_bucket"
+			id: "50B67962A82DA2FC"
+			tasks: [
+				{
+					id: "76014F4ABD6663C6"
+					item: "gtceu:uranium_waste_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "075CB8D209339D00"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
+			x: 10.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"50B67962A82DA2FC"
+				"2C000B45C23752D0"
+			]
+			id: "232977FC8CFF1872"
+			tasks: [{
+				id: "06E34E18011C37E9"
+				item: {
+					Count: 1
+					id: "tfg:uranium_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["15C667234DD25196"]
+			id: "2C000B45C23752D0"
+			tasks: [
+				{
+					id: "41486DFD29ACB6B9"
+					item: "gtceu:uranium_235_nugget"
+					type: "item"
+				}
+				{
+					id: "1B43B52E32A138D6"
+					item: "gtceu:uranium_ingot"
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2814C6FA71B07C95"]
+			id: "15C667234DD25196"
+			tasks: [
+				{
+					id: "5EE9BDC60E77373B"
+					item: "gtceu:uranium_hexafluoride_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "47BD9FDA7F1CD4F9"
+					item: "gtceu:enriched_uranium_hexafluoride_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "24749E7AEB78557F"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
+			x: 11.0d
+			y: 9.0d
+		}
+		{
+			icon: "gtceu:uraninite_dust"
+			id: "2814C6FA71B07C95"
+			tasks: [
+				{
+					id: "2714629D89C72CE8"
+					item: "gtceu:fluorine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2DC52FBD3C53F451"
+					item: "gtceu:hydrofluoric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6D2BD2FF428AB332"
+					item: "gtceu:uraninite_dust"
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["232977FC8CFF1872"]
+			icon: "gtceu:radioactive_steam_bucket"
+			id: "618D55F4BF91731F"
+			tasks: [
+				{
+					id: "41CE82E5D9E37D4C"
+					item: "gtceu:radioactive_steam_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4E5BA6A7A28F1A08"
+					item: "gtceu:radioactive_waste_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3388B693BB7E1B01"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
+			x: 13.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"618D55F4BF91731F"
+				"075434DAB3D9F0EA"
+			]
+			description: ["The &6Heat Exchanger&r is a critical component for your Fission Line not only for cooling but also for producing &eHigh Pressure Steam&r, the steam that powers your Nuclear Turbine.\\n\\nIt features &bPerfect Overclocking&r and &bSubtick Processing&r. If these terms sound unfamiliar, we strongly recommend reviewing the &dGregTech Energy Chapter&r to fully understand how they affect performance.\\n\\nDon’t hold back install a &516A EV Energy Hatch&r right from the start so you’ll never have to worry about speed or throughput limitations.\\n\\nWe also provide you with a &9Machine Controller&r to attach to your Heat Exchanger’s main controller. We’ve noticed that the machine can sometimes disable itself unexpectedly, so be sure to enable &ePrevent Power Failing&r. This will counter the GTm mechanic that shuts down machines when they momentarily lose power."]
+			id: "75725B3F6603F1D0"
+			rewards: [{
+				id: "79711B337329A3E4"
+				item: "gtceu:machine_controller_cover"
+				type: "item"
+			}]
+			tasks: [{
+				id: "67CB661D4F20EC3A"
+				item: "gtceu:heat_exchanger"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3680015209D25098"]
+			icon: "gtceu:ammonium_formate_bucket"
+			id: "075434DAB3D9F0EA"
+			tasks: [
+				{
+					id: "4108AB7C224A7BCD"
+					item: "gtceu:formic_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5B5D00D9BFC55DE3"
+					item: "gtceu:ammonium_formate_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "067ABC4F578074C6"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
+			x: 14.5d
+			y: 8.0d
+		}
+		{
+			icon: "gtceu:carbon_dioxide_bucket"
+			id: "3680015209D25098"
+			tasks: [
+				{
+					id: "36FEF2AC9608E51F"
+					item: "gtceu:mv_fluid_drilling_rig"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3A504CA9A88B1876"
+					item: "gtceu:ev_gas_collector"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1BD3FC35D407B2BB"
+					item: "gtceu:carbon_dioxide_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2D3D65D5570F26BC"
+					item: "gtceu:liquid_carbon_dioxide_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "01F234CC54488AC3"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
+			title: "Carbon Dioxide"
+			x: 14.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["75725B3F6603F1D0"]
+			icon: "gtceu:formamide_bucket"
+			id: "30F9EE88C77561A6"
+			tasks: [
+				{
+					id: "30F94AA84807C0F7"
+					item: "gtceu:formamide_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "57765F70472FF611"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
+			x: 14.5d
 			y: 4.5d
 		}
 		{
-			dependencies: ["069FD86133D7D582"]
-			description: [
-				"If you want a big boost to your processing abilities, look no further than these powerful Multiblocks!"
-				""
-				"Formerly known as &2Gregicality Multiblocks&r, the add-on has been fully integrated into GregTech CEu Modern!"
-				""
-				"You'll need to make use of many new &9alloys&r to build the new Multiblocks. Yay, more content!"
-				""
-				"&6This quest unlocks a new tutorial on the GCYM mechanics in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
-			]
-			icon: "gtceu:vibration_safe_casing"
-			id: "3B2D2C47BEBCFFA7"
-			shape: "gear"
-			size: 1.2d
-			subtitle: "We made it so far..."
-			tasks: [{
-				id: "02739BCF3877B446"
-				type: "checkmark"
-			}]
-			title: "Gregicality Multiblocks"
-			x: 9.0d
-			y: 6.6d
-		}
-		{
 			dependencies: [
-				"7A55CC71442CC854"
-				"478B0D55369C0F7F"
-				"6B08799BCFD01D3D"
-				"30A6EDDF25A5E5F8"
-				"173A04F328414A36"
+				"618D55F4BF91731F"
+				"30F9EE88C77561A6"
+				"3AFFD029CCE3DFC7"
 			]
-			description: [
-				"&aRuthenium-tungsten-molybdenum (RTM) Alloy Coils&r raise the Heat Capacity to a scorching &d4,500K&r."
-				""
-				"This will be required in &1IV&r, but as always, you should still get this earlier for the &6Coil bonuses&r."
-			]
-			icon: "gtceu:rtm_alloy_coil_block"
-			id: "069FD86133D7D582"
-			size: 0.75d
-			subtitle: "Wow, that's hot :flushed:"
-			tasks: [{
-				count: 16L
-				id: "16A26A909A8CE527"
-				item: "gtceu:rtm_alloy_coil_block"
-				type: "item"
-			}]
-			title: "RTM Alloy Coils"
-			x: 9.0d
-			y: 2.25d
-		}
-		{
-			dependencies: ["7FA0ACB7F161F378"]
-			description: [
-				"The &3Diode&r (the block, not the component) accepts energy inputs from 5 sides, but only outputs through a single side."
-				""
-				"Its main purpose is to &dlimit Amperage&r. It can be useful when regulating centralised Power generation, so you can distribute your power everywhere without having to math out what cable size is safe depending on consumers..."
-				""
-				"They can also be used as an electric equivalent to Repeaters when the voltage loss from Cables (or GTEU P2P tunnels - more on that later!) gets too high."
-				""
-				"You can use a &5Soft Hammer&r to change the Amperage limit of the output."
-				""
-				"&eAny&r of the listed Diodes will complete this Quest."
-			]
-			icon: "gtceu:ev_diode"
-			id: "4B8D66A65F102D7E"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "4BCA4F8ED0041BF6"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						display: {
-							Name: "{\"text\":\"Any diode\"}"
-						}
-						"ftbfiltersystem:filter": "or(item(gtceu:lv_diode)item(gtceu:mv_diode)item(gtceu:hv_diode)item(gtceu:ev_diode)item(gtceu:iv_diode))"
-					}
-				}
-				title: "Any of these diodes"
-				type: "item"
-			}]
-			title: "Diode"
-			x: 2.25d
-			y: 5.625d
-		}
-		{
-			dependencies: ["7FA0ACB7F161F378"]
-			description: [
-				"The &aLarge Titanium Boiler&r is yet another steam boiler. It's even more efficient than the previous ones, and produces more steam too. However, Steam &cbarely scales&r at this voltage."
-				""
-				"This thing absolutely isn't worth it, and there are so many better options for power by this point, so you should avoid making this. The better options require &9EV energy hatches&r, which are later in the chapter."
-				""
-				"&eNote&r: The LTB is so awful that we'll let you skip this quest (for completion progress) by clicking the Checkmark. You don't actually have to craft one."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o In GT5u, players can construct another multiblock - the Large Heat Exchanger. It's also constructed with titanium, but produced Superheated Steam from hot IC2 coolant, or lava. This was a much better than regular steam, and was actually viable! This might make its way to CEu in the future."
-			]
-			id: "249FA99AADAC3710"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "We're gonna need more charcoal"
-			tasks: [{
-				id: "7D2406F7A603AAAE"
-				item: "gtceu:titanium_large_boiler"
-				type: "item"
-			}]
-			title: "Worse Combustion"
-			x: 3.375d
-			y: 5.625d
-		}
-		{
-			dependencies: [
-				"40408FFD02134148"
-				"7FA0ACB7F161F378"
-			]
-			description: [
-				"A lot of &dKanthal&r will be required for the &aEV Motors&r. This may feel painful when you're on the edge of &5EV&r, but it won't be a problem later - trust us."
-				""
-				"&dNeodymium&r is the metal used for &aMagnetic Rods&r."
-				""
-				"&aAluminium Cables&r require &dPVC&r to be insulated."
-				""
-				"Lastly, you will need &4Radon&r for the &dQuantum Eyes&r in the &aEmitter&r recipe."
-			]
-			icon: "gtceu:ev_electric_motor"
-			id: "26575D4FEB3D3F62"
-			shape: "rsquare"
-			size: 0.66d
+			icon: "tfg:nuclear_residue_dust"
+			id: "2B666F65B5F196E6"
 			tasks: [
 				{
-					id: "0D12376158C00640"
+					id: "288D912790C6CCCD"
+					item: "tfg:ev_gas_pressurizer"
+					type: "item"
+				}
+				{
+					id: "52E98081FDB1308C"
+					item: "tfg:nuclear_residue_dust"
+					type: "item"
+				}
+				{
+					id: "05DF7549B91CD1A3"
+					item: "gtceu:radon_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"05FED2FF1BEA05F1"
+				"10F870BCEC5D5C74"
+			]
+			icon: "gtceu:martian_sludge_bucket"
+			id: "3AFFD029CCE3DFC7"
+			tasks: [
+				{
+					id: "3E029ED6CD5DAD17"
+					item: "gtceu:martian_sludge_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "39166179CC02E361"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			icon: "gtceu:dirty_hexafluorosilicic_acid_bucket"
+			id: "05FED2FF1BEA05F1"
+			tasks: [
+				{
+					id: "08F8F2088A212E35"
+					item: "gtceu:ev_chemical_bath"
+					type: "item"
+				}
+				{
+					id: "08DF3D70D9FFD655"
+					item: "gtceu:dirty_hexafluorosilicic_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "541418FD093548C2"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:mars_stone_dusts)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Hexafluorosilicic"
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2B666F65B5F196E6"]
+			id: "5523F60CE095BD0A"
+			tasks: [{
+				id: "2504712660F728D0"
+				item: "tfg:oxidized_nuclear_residue_dust"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5523F60CE095BD0A"]
+			id: "2AF2F789E1D55B65"
+			tasks: [{
+				id: "667E6EE8193E0159"
+				item: "tfg:refined_nuclear_residue_dust"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"41D968B30C11934C"
+				"08195E9FA1396936"
+			]
+			id: "4C0E5C517F0137B9"
+			tasks: [{
+				id: "4E08F09A3EE18E0E"
+				item: {
+					Count: 1
+					id: "tfg:plutonium_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 17.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["5523F60CE095BD0A"]
+			icon: "gtceu:residual_radioactive_concoction_bucket"
+			id: "617CF3335584DC8D"
+			tasks: [
+				{
+					id: "0073B020D5EEF563"
+					item: "gtceu:residual_radioactive_concoction_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "32926B204A8C681C"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4C0E5C517F0137B9"]
+			icon: "gtceu:tritiated_water_bucket"
+			id: "3E0ABDFCC0FC6928"
+			tasks: [
+				{
+					id: "3BB1444707ED8155"
+					item: "gtceu:tritiated_water_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5BB533665A83780A"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
+			x: 8.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3E0ABDFCC0FC6928"]
+			id: "61E3352A78B3EAA1"
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					icon: "gtceu:nano_cpu_wafer"
+					id: "7609BB0EF4101C43"
+					item: "gtceu:nano_cpu_wafer"
+					type: "item"
+				}
+				{
+					id: "23495A771BF46291"
+					item: "gtceu:nano_cpu_chip"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"61E3352A78B3EAA1"
+				"6A451F43F3D7A671"
+			]
+			description: ["{quests.high_voltage.microprocessor_mainframe.desc}"]
+			icon: "gtceu:micro_processor_mainframe"
+			id: "7AC97F7850E31D95"
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "17C6DCD66F08D42B"
+				item: "gtceu:micro_processor_mainframe"
+				type: "item"
+			}]
+			title: "{quests.high_voltage.microprocessor_mainframe.title}"
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7AC97F7850E31D95"]
+			id: "4AF566E0800A8D24"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "2CAD16C6AC69A976"
+				item: "gtceu:ev_circuit_assembler"
+				type: "item"
+			}]
+			x: -3.75d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"4AF566E0800A8D24"
+				"7C42505EE33E8DDB"
+			]
+			id: "7E7F18A8422A6A28"
+			tasks: [{
+				id: "456F56432E321D0A"
+				item: "gtceu:nano_processor"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7E7F18A8422A6A28"]
+			id: "5D254C351CC8FA1B"
+			tasks: [{
+				id: "2ACF2C33596925C0"
+				item: "gtceu:nano_processor_assembly"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"1B3106D6C2A68F52"
+				"5D254C351CC8FA1B"
+			]
+			id: "3E2FE834084D2946"
+			tasks: [{
+				id: "7E4F5BEAE4438C33"
+				item: "gtceu:nano_processor_computer"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["3E2FE834084D2946"]
+			id: "25A863E014BB1AF5"
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "7A034C1B600D5E55"
+				item: "gtceu:nano_processor_mainframe"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["513322E59D1FD011"]
+			icon: "gtceu:ostrum_harvester"
+			id: "236F53188110F6D5"
+			tasks: [
+				{
+					id: "372E90F40635AECA"
+					item: "gtceu:ostrum_harvester"
+					type: "item"
+				}
+				{
+					id: "47493C12FB17E5CE"
+					item: "gtceu:ostrum_dust"
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["017019EB38F7A18C"]
+			icon: "gtceu:nor_memory_wafer"
+			id: "1B3106D6C2A68F52"
+			tasks: [
+				{
+					id: "69EEB795313A4296"
+					item: "gtceu:nor_memory_wafer"
+					type: "item"
+				}
+				{
+					id: "4CEAE21097C54B83"
+					item: "gtceu:nor_memory_chip"
+					type: "item"
+				}
+				{
+					id: "5491A1B9F04491EE"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:lenses/pink)"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -0.75d
+			y: 12.5d
+		}
+		{
+			id: "3B18DE7395776B41"
+			tasks: [{
+				id: "19B30F6B7DE936AC"
+				item: "tfg:aes_insulation_roll"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0FB5E513356117C1"]
+			description: [""]
+			id: "3EC8D58DB73CEFE5"
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "22D878222531F717"
+				item: "gtceu:iv_machine_hull"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.95d
+		}
+		{
+			dependencies: ["2C000B45C23752D0"]
+			icon: "gtceu:uranium_triplatinum_single_wire"
+			id: "2BE373381980C85F"
+			shape: "heart"
+			tasks: [
+				{
+					id: "62E7978CA0CF18F2"
+					item: "gtceu:uranium_triplatinum_dust"
+					type: "item"
+				}
+				{
+					id: "644B85AB83960C75"
+					item: "gtceu:uranium_triplatinum_ingot"
+					type: "item"
+				}
+				{
+					id: "3E235768F0339D9B"
+					item: "gtceu:uranium_triplatinum_single_wire"
+					type: "item"
+				}
+			]
+			title: "EV Superconductor"
+			x: 12.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["017019EB38F7A18C"]
+			icon: "gtceu:mpic_wafer"
+			id: "2B071C17BB164389"
+			tasks: [
+				{
+					id: "11674DA6586D3428"
+					item: "gtceu:brown_glass_lens"
+					type: "item"
+				}
+				{
+					id: "5B4F2DA213E9B5B3"
+					item: "gtceu:mpic_wafer"
+					type: "item"
+				}
+				{
+					id: "4A507C54990F7703"
+					item: "gtceu:mpic_chip"
+					type: "item"
+				}
+			]
+			x: -0.75d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"43BBB9074608F9B1"
+				"2DEC7AF917AAE4EC"
+			]
+			id: "27377A5891031662"
+			tasks: [{
+				id: "212F8BA5C8FDBDA1"
+				item: "gtceu:phenol_bucket"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["43BBB9074608F9B1"]
+			id: "05E73E328595670C"
+			tasks: [{
+				id: "581AE360FB589E75"
+				item: "gtceu:creosote_bucket"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"43BBB9074608F9B1"
+				"2DEC7AF917AAE4EC"
+			]
+			dependency_requirement: "one_completed"
+			id: "3DBA9EF76D8A452D"
+			tasks: [{
+				id: "43E3F5E872C0660F"
+				item: "gtceu:benzene_bucket"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"43BBB9074608F9B1"
+				"2DEC7AF917AAE4EC"
+			]
+			dependency_requirement: "one_completed"
+			id: "30C4D76200F9F174"
+			tasks: [{
+				id: "6E079A398E7DF576"
+				item: "gtceu:toluene_bucket"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["43BBB9074608F9B1"]
+			id: "40A4B97DD42DF0A6"
+			tasks: [{
+				id: "734E34468F56DB3E"
+				item: "gtceu:dimethylbenzene_bucket"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["43BBB9074608F9B1"]
+			id: "09AF11666583F5C3"
+			tasks: [{
+				id: "3027BAD1308861C5"
+				item: "gtceu:ethanol_bucket"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["43BBB9074608F9B1"]
+			id: "79CF3C1D5B3E9D76"
+			tasks: [{
+				id: "20CA25FF1F2F8035"
+				item: "gtceu:acetic_acid_bucket"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["43BBB9074608F9B1"]
+			id: "2FBF5D3854E61EBB"
+			tasks: [{
+				id: "0E457A8A11667044"
+				item: "gtceu:methanol_bucket"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["43BBB9074608F9B1"]
+			id: "7102707C25BFBA7D"
+			tasks: [{
+				id: "24F71F59FEDE37AF"
+				item: "gtceu:acetone_bucket"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["43BBB9074608F9B1"]
+			id: "3D4371DC4C1418F0"
+			tasks: [{
+				id: "43452076DCA96CF2"
+				item: "gtceu:methyl_acetate_bucket"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3A2E442E4D84C891"]
+			id: "397546E863E9835E"
+			tasks: [
+				{
+					id: "3F040C1D8A8D6676"
+					item: "gtceu:gasoline_bucket"
+					type: "item"
+				}
+				{
+					id: "0EE342945671DDF9"
+					item: "gtceu:high_octane_gasoline_bucket"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"2B071C17BB164389"
+				"601088B7920140B2"
+			]
+			id: "60433993B715029A"
+			tasks: [
+				{
+					id: "3B6C19FB311BEE66"
+					item: "gtceu:power_substation"
+					type: "item"
+				}
+				{
+					id: "755FA550B58EFD6B"
+					item: "gtceu:ev_lapotronic_battery"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -0.75d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"2B071C17BB164389"
+				"601088B7920140B2"
+			]
+			id: "56597D7DB5891D31"
+			tasks: [{
+				id: "39DF973265B4379F"
+				item: "gtceu:ev_energy_input_hatch"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"2B071C17BB164389"
+				"601088B7920140B2"
+			]
+			id: "5CF58F7CBE255585"
+			tasks: [{
+				id: "0E52FED3B557B820"
+				item: "gtceu:ev_energy_output_hatch"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4EA8888B12D75BF1"]
+			description: [""]
+			icon: "gtceu:ev_electric_motor"
+			id: "3DE2AF7FC388F29C"
+			size: 1.0d
+			tasks: [
+				{
+					id: "47CBA539F745DDE6"
 					item: "gtceu:ev_electric_motor"
 					type: "item"
 				}
 				{
-					id: "322D14ACA96F5AB0"
+					id: "3D17AA76C54DF5FB"
 					item: "gtceu:ev_electric_piston"
 					type: "item"
 				}
 				{
-					id: "0B69C2C121FE94F4"
+					id: "07E3F4D3E3AAAD59"
 					item: "gtceu:ev_electric_pump"
 					type: "item"
 				}
 				{
-					id: "32CCFFF3D3AA039F"
+					id: "4B880EC4B97883A3"
 					item: "gtceu:ev_conveyor_module"
 					type: "item"
 				}
 				{
-					id: "717A861CDCAE51E1"
+					id: "2439C466CE78897B"
 					item: "gtceu:ev_robot_arm"
 					type: "item"
 				}
 				{
-					id: "751105214D8D6343"
+					id: "22F769351BA205F1"
 					item: "gtceu:ev_emitter"
 					type: "item"
 				}
 				{
-					id: "152B7CB2E3FA07E9"
+					id: "1377CE6C5A2F9AB0"
 					item: "gtceu:ev_sensor"
 					type: "item"
 				}
 			]
 			title: "The \"Fun\" will never stop"
-			x: 3.375d
-			y: 6.75d
+			x: -5.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["7FA0ACB7F161F378"]
-			description: [
-				"The &3ME Hatches&r directly connect to your &aAE System&r, allowing you to skip placing interfaces directly on buses and hatches."
-				""
-				"&l&3Lore:&r&o This feature originally comes from GTNH!"
-			]
-			id: "681F1423A36FD4FF"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "No more interfaces on buses"
+			dependencies: ["2DEC7AF917AAE4EC"]
+			id: "14BBAFD0D4E6C148"
 			tasks: [{
-				id: "69FC6941E6C83799"
-				item: "gtceu:me_input_bus"
+				id: "4E72EDC06E9FEB68"
+				item: "gtceu:heavy_fuel_bucket"
 				type: "item"
 			}]
-			title: "ME Hatches"
-			x: 5.625d
+			x: -5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2DEC7AF917AAE4EC"]
+			id: "16A31A25CE9FD231"
+			tasks: [{
+				id: "7C810332DCCF7645"
+				item: "gtceu:light_fuel_bucket"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2DEC7AF917AAE4EC"]
+			id: "411718755B7320DF"
+			tasks: [{
+				id: "37B4A02401253D2C"
+				item: "gtceu:naphtha_bucket"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2DEC7AF917AAE4EC"]
+			id: "194F7BD0039BF1B2"
+			tasks: [{
+				id: "2BA27929399F8283"
+				item: "gtceu:butadiene_bucket"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2DEC7AF917AAE4EC"]
+			id: "380E73BEF85491D8"
+			tasks: [{
+				id: "2482DB40AAE2DA5C"
+				item: "gtceu:butene_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2DEC7AF917AAE4EC"]
+			id: "1D5C9638D269CA35"
+			tasks: [{
+				id: "699E8B0FEE075003"
+				item: "gtceu:propane_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2DEC7AF917AAE4EC"]
+			id: "63BACC60C4886256"
+			tasks: [{
+				id: "4143E78C927F8A57"
+				item: "gtceu:propene_bucket"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"43BBB9074608F9B1"
+				"2DEC7AF917AAE4EC"
+			]
+			id: "5669977309A9C231"
+			tasks: [{
+				id: "592A32CC32715A73"
+				item: "gtceu:methane_bucket"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"43BBB9074608F9B1"
+				"2DEC7AF917AAE4EC"
+			]
+			id: "2335703DC492B4E9"
+			tasks: [{
+				id: "5DF5AB0FA1A4BEFF"
+				item: "gtceu:ethylene_bucket"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3A2E442E4D84C891"]
+			id: "341751B307577B72"
+			tasks: [{
+				id: "28BF6AF9EE672C1B"
+				item: "gtceu:liquid_air_bucket"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["341751B307577B72"]
+			id: "039CE42BF2D19668"
+			tasks: [{
+				id: "7A87F8C265177C3C"
+				item: "gtceu:oxygen_bucket"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["341751B307577B72"]
+			id: "3A46387D683ADC58"
+			tasks: [{
+				id: "60D5C9CC89134D1E"
+				item: "gtceu:argon_bucket"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"29E0829816B9DBA0"
+				"1655573AE1C8484B"
+			]
+			icon: "gtceu:dense_steam_bucket"
+			id: "154D41D2DB9AB896"
+			tasks: [
+				{
+					id: "47A0C3A8A890BFAA"
+					item: "gtceu:dense_steam_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "27609322DB4BC5BD"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
+			x: 8.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["70ABD1E3FC1CA672"]
+			id: "67682BC7044FD5F1"
+			shape: "heart"
+			tasks: [{
+				id: "54A324E2C942D472"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:me_input_bus)item(gtceu:me_output_bus)item(gtceu:me_input_hatch)item(gtceu:me_output_hatch))"
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"40408FFD02134148"
-				"7FA0ACB7F161F378"
-			]
-			description: [
-				"You've probably noticed the &9\"chance per tier\"&r when hovering over the bonus outputs in &2JEI&r Each overclock above the required tier will add that % bonus to the chanced output!"
-				""
-				"This means using an &3EV Macerator&r will yield &6more Byproducts&r!"
-			]
-			id: "7B23AF5B6B62BC19"
-			size: 0.75d
+			dependencies: ["70ABD1E3FC1CA672"]
+			id: "5A52FAABE58F7CCC"
+			shape: "heart"
 			tasks: [{
-				id: "4EC5F44332F7533B"
-				item: "gtceu:ev_macerator"
+				id: "621C750FCD93D1BC"
+				item: "buildinggadgets2:gadget_building"
 				type: "item"
 			}]
-			title: "Even more byproducts"
-			x: 5.625d
-			y: 6.75d
+			x: 3.5d
+			y: 4.5d
 		}
 		{
-			dependencies: [
-				"73E8283634E5E33A"
-				"3398FC108D9DCB46"
-				"40408FFD02134148"
-				"7FA0ACB7F161F378"
+			dependencies: ["70ABD1E3FC1CA672"]
+			id: "24158DEE63DAEB41"
+			shape: "heart"
+			tasks: [
+				{
+					id: "60B0BDB220A5E71B"
+					item: "ae2:wireless_access_point"
+					type: "item"
+				}
+				{
+					id: "453F7A947950C16A"
+					item: "ae2:wireless_booster"
+					type: "item"
+				}
+				{
+					id: "112A817D41F79E78"
+					item: "ae2:wireless_crafting_terminal"
+					type: "item"
+				}
 			]
-			description: [
-				"Quite a journey to get here."
-				""
-				"The &3EV Circuit Assembling&r \"unlocks\" the next tier of Circuits, &5Nano&r."
-			]
-			id: "383B789B654C4094"
-			size: 0.75d
-			subtitle: "Consider yourself firmly in EV!"
-			tasks: [{
-				id: "544E19AF6D2630DC"
-				item: "gtceu:ev_circuit_assembler"
-				type: "item"
-			}]
-			title: "EV Circuit Assembling"
 			x: 4.5d
-			y: 7.875d
+			y: 4.5d
 		}
 		{
-			dependencies: ["7FA0ACB7F161F378"]
-			description: [
-				"Note that in theory, the &3EV Chemical Reactor&r is skippable by using the &3Large Chemical Reactor&r instead, but we're evil enough to force you to make this."
-				""
-				"Its cost really shouldn't be an issue to you, and it's still useful due to its compact size."
-			]
-			id: "7D15EEE81B1A3100"
-			shape: "square"
-			size: 0.75d
+			dependencies: ["601088B7920140B2"]
+			id: "70ABD1E3FC1CA672"
 			tasks: [{
-				id: "0AF5929611BCDF2C"
-				item: "gtceu:ev_chemical_reactor"
-				type: "item"
+				id: "73ABA113A9069875"
+				title: "New QoL?"
+				type: "checkmark"
 			}]
-			title: "Extreme Chemical Reactions"
-			x: 5.625d
-			y: 5.625d
+			x: 3.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["7D15EEE81B1A3100"]
-			description: [
-				"&aNano CPU Wafers&r are made by infusing regular &aCPU Wafers&r with &dGlowstone&r and &9Raw Carbon Fibers&r."
-				""
-				"They will be needed in large quantities when making the &5Nano&r line of Circuits."
-				""
-				"Higher-tier polymers will increase your yield of &9Raw Carbon Fibers&r. One &dEpoxy&r is enough for a full stack."
-				""
-				"&9Tip:&r Don't like mining &dGlowstone&r? Check out Redstone ore processing."
-			]
-			icon: "gtceu:nano_cpu_wafer"
-			id: "63A87C9303D54487"
-			size: 0.75d
+			dependencies: ["55FB2776B724FB63"]
+			id: "7C42505EE33E8DDB"
 			tasks: [
 				{
-					count: 16L
-					id: "1276318CB2F198F7"
-					item: "gtceu:carbon_fibers"
-					optional_task: true
+					id: "2369ADF52953E564"
+					item: "gtceu:epoxy_circuit_board"
 					type: "item"
 				}
 				{
-					id: "47E901701A935F9D"
-					item: "gtceu:nano_cpu_wafer"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "5D6E97DA360FBA32"
-					item: "gtceu:nano_cpu_chip"
+					id: "26E42A951B781794"
+					item: "gtceu:epoxy_printed_circuit_board"
 					type: "item"
 				}
 			]
-			title: "Nano CPUs"
-			x: 6.75d
-			y: 6.75d
+			x: -9.5d
+			y: 5.5d
 		}
 		{
-			dependencies: [
-				"5E6BA54E8A5BEBDE"
-				"383B789B654C4094"
-				"63A87C9303D54487"
-				"4C3805F75C9EE3DD"
-			]
-			description: [
-				"Making the best &6HV&r Circuits will allow for easier &6HV&r Machines for your on-demand automation. Convenient!"
-				""
-				"Starting from here, all circuit lines will be consistent with each other until the end of the game."
-				""
-				"Each tier until &cZPM&r will show its own challenges when acquiring new and better Circuits."
-			]
-			id: "196FC518F744B983"
-			size: 0.75d
-			tasks: [{
-				id: "028DC1BC1D3E1381"
-				item: "gtceu:nano_processor"
-				type: "item"
-			}]
-			title: "Best HV Circuits!"
-			x: 6.75d
-			y: 7.875d
-		}
-		{
-			dependencies: ["117FBB18DEE6F08B"]
-			description: [
-				"Now that you have &aEpoxy&r, you can make &aAdvanced Circuit Boards&r! The next Circuit tier is oh so close, so keep pushing."
-				""
-				"&9&lTips:&r"
-				""
-				"- Consider using &dElectrotine decomposition&r and &dOre Processing&r for &eElectrum&r."
-				"- Consider using the &3Chemical Bath&r with &dMercury&r for &eGold&r, from a wide variety of ores."
-			]
-			id: "5E6BA54E8A5BEBDE"
-			size: 0.75d
-			subtitle: "Quite the gold cost..."
-			tasks: [{
-				id: "27C6D1AB82DA805D"
-				item: "gtceu:epoxy_printed_circuit_board"
-				type: "item"
-			}]
-			title: "Advanced Circuit Boards"
-			x: 5.625d
-			y: 7.875d
-		}
-		{
-			dependencies: ["383B789B654C4094"]
-			description: [
-				"The &6System-on-Chip&r (or &bSoC&r) is a specialty component that miniaturizes all the typical circuit components (like SMDs) onto a single chip."
-				""
-				"These are very useful as they unlock the most efficient recipes for creating &6Refined&r, &6Micro&r, and &6Nano Circuits&r."
-				""
-				"Each SoC-based circuit recipe requires a different minimum tier of &aAssembling Machine&r, with the Nano Circuits requiring you to hit &dLuV&r. &aSystem on Chip&r unlocks the best recipe for &dLV Circuits&r."
-			]
-			id: "6781213726919716"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "29BA6B4E01C4AFB6"
-				item: "gtceu:soc"
-				type: "item"
-			}]
-			title: "System on Chip"
-			x: 7.875d
-			y: 7.875d
-		}
-		{
-			dependencies: [
-				"196FC518F744B983"
-				"7F272A099E65F848"
-			]
-			description: [
-				"Nothing to say here."
-				""
-				"Nice work, we suppose."
-			]
-			id: "0017FFFAD7CD2EFE"
-			size: 0.75d
-			subtitle: "Harder, Better, Faster, Stronger"
-			tasks: [{
-				id: "658F8D1F068928CE"
-				item: "gtceu:nano_processor_assembly"
-				type: "item"
-			}]
-			title: "More EV Circuits!"
-			x: 7.875d
-			y: 9.0d
-		}
-		{
-			dependencies: [
-				"0017FFFAD7CD2EFE"
-				"2D5BECC0AC0E316B"
-			]
-			description: ["Entering &1IV&r with these Circuits shouldn't be too painful."]
-			id: "5CC9B0E832545569"
-			size: 0.75d
-			tasks: [{
-				id: "2E0E4FF63368E44C"
-				item: "gtceu:nano_processor_computer"
-				type: "item"
-			}]
-			title: "More IV Circuits"
-			x: 7.875d
-			y: 10.125d
-		}
-		{
-			dependencies: ["017019EB38F7A18C"]
-			description: [
-				"A NOR gate takes two input signals, and outputs a high signal only if both input signals are low."
-				""
-				"This doesn't matter for now though, and it's simply a more complex wafer."
-				"It is used for the &aData Orb&r (a crafting component for the &3Processing Array&r), and in &5Nano&r Circuit production."
-			]
-			id: "2D5BECC0AC0E316B"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "6D561B2E5375B013"
-				item: "gtceu:nor_memory_chip"
-				type: "item"
-			}]
-			title: "NOR Gates"
-			x: 6.75d
-			y: 10.125d
-		}
-		{
-			dependencies: ["5CC9B0E832545569"]
-			description: ["Save two of these for the &3IV Circuit Assembler&r."]
-			id: "58BBD540D7D4FF01"
-			size: 0.75d
-			tasks: [{
-				id: "40A35927E6D7848D"
-				item: "gtceu:nano_processor_mainframe"
-				type: "item"
-			}]
-			title: "First LuV Circuits!"
-			x: 7.875d
-			y: 11.25d
-		}
-		{
-			dependencies: [
-				"06B4AAC7DD796182"
-				"069FD86133D7D582"
-			]
-			description: ["Amperage goes up - we're now at a whopping &e6A&r per Superconductor."]
-			id: "4A96337843BAC13A"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "478E2D7B59664F86"
-				item: "gtceu:uranium_triplatinum_double_wire"
-				type: "item"
-			}]
-			title: "EV Superconductors"
-			x: 9.0d
-			y: 11.25d
-		}
-		{
-			dependencies: [
-				"4024C831C77101CA"
-				"16B735F9C391D260"
-			]
-			description: [
-				"&aEnder Fluid Link Covers&r are &dGregTech&r's answer to &r&3Ender Tanks&r."
-				""
-				"Each Cover sends their fluids through a frequency defined by an &68-digit hexadecimal number&r (0-9, then A-F for each digit). That gives you &64.29 billion&r channels to work with! Ender Fluid Link Covers work as long as their chunk is loaded - regardless of distance or dimension."
-				""
-				"They don't come cheap, so consider setting up a way to farm &3Ender Pearls&r."
-				"{@pagebreak}"
-				"Setting the mode to Import will &c&opull&r fluids from the world location it is attached to, while Export will &o&9&opush&r fluids to the world. You must turn the I/O to Enabled for it to start working. Each channel has a buffer of &d64 buckets&r."
-				""
-				"We recommend you set up a system to organise all those channels. We would also advise against using the default channel (FFFFFFFF) in all cases."
-			]
-			id: "23A7E6D95549B1F8"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "5FBC61FAAD7AA1D8"
-				item: "gtceu:ender_fluid_link_cover"
-				type: "item"
-			}]
-			title: "Ender Fluid Linking"
-			x: 6.75d
-			y: 9.0d
-		}
-		{
-			dependencies: ["4024C831C77101CA"]
-			description: [
-				"The &aAdvanced Energy Detector&r is an RS-latch for Energy Control."
-				""
-				"Slap it on a &3Battery Buffer&r, set a Minimum EU near 0, and a Maximum EU near the max capacity."
-				""
-				"The Cover will output a &4Redstone&r signal until the high threshold is reached, and then it will wait until the low threshold is reached to output redstone again."
-				""
-				"This is a must to automate inertia-based power generators such as Boilers, or more importantly &3Large Turbines&r."
-			]
-			id: "7F2FE3AF6F0C1190"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "Save on Redstone contraptions"
-			tasks: [{
-				id: "305731DA47087165"
-				item: "gtceu:advanced_energy_detector_cover"
-				type: "item"
-			}]
-			title: "Advanced Energy Detector"
-			x: 5.625d
-			y: 9.0d
-		}
-		{
-			dependencies: [
-				"73E8283634E5E33A"
-				"45F9AAE4ABE32033"
-			]
-			description: [
-				"You can now remotely expand your AE2 network if you're looking to move bases."
-				""
-				"The &3Quantum Tunnel&r is no slouch to craft, so you'll need to work for it if you want it!"
-			]
-			icon: "ae2:quantum_link"
-			id: "46C7E1D5E37B1ED2"
-			size: 0.75d
+			dependencies: ["2AF2F789E1D55B65"]
+			icon: "gtceu:plutonium_ingot"
+			id: "41D968B30C11934C"
+			shape: "gear"
+			size: 2.0d
 			tasks: [
 				{
-					count: 2L
-					id: "4C598D3CF4500DB0"
-					item: "ae2:quantum_link"
+					id: "12A08FBEBF9C39FD"
+					item: "gtceu:plutonium_dust"
 					type: "item"
 				}
 				{
-					count: 16L
-					id: "5C8C12569B770B97"
-					item: "ae2:quantum_ring"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "625E95960F92A2F6"
-					item: "ae2:quantum_entangled_singularity"
-					type: "item"
-				}
-			]
-			title: "Quantum Tunnel"
-			x: 3.375d
-			y: 10.125d
-		}
-		{
-			dependencies: [
-				"41D32C5178760F47"
-				"42FB276AB16258D9"
-				"00004BE1D77EA003"
-			]
-			description: [
-				"&aUranium&r has very few uses in &2GTCEu&r right now, as we're &4yet to&r implement our &3Nuclear Reactor&r (it's planned!)."
-				""
-				"Make &dUranium Hexafluoride&r from &aUraninite&r. This will allow you to seperate the isotopes between U-238 and U-235."
-				"{@pagebreak}"
-				"&9Fluorine&r is fully recycled in the reaction, but you will need around maybe 40 buckets to bootstrap."
-				""
-				"&9Hydrogen&r is consumed, so you will need quite a lot of it. Either electrolyze a lot of water using several &3LV Electrolyzers&r for the best energy efficiency, or recycle any unused &dhydrocarbons&r such as Methane."
-				""
-				"&9Tip:&r You can make this setup compact by having one single &3Centrifuge&r and using a &6Fluid Regulator&r set to &dSupply Exact 1,000&r."
-			]
-			icon: "gtceu:uranium_dust"
-			id: "06B4AAC7DD796182"
-			size: 0.75d
-			subtitle: "Let's hope this quest doesn't put you on a list"
-			tasks: [
-				{
-					count: 3L
-					id: "1BE01DA0E8A143FB"
-					item: "gtceu:uraninite_dust"
-					optional_task: true
-					title: "Uraninite Dust"
-					type: "item"
-				}
-				{
-					id: "39E343FCB7B1646D"
-					item: "gtceu:uranium_dust"
-					type: "item"
-				}
-				{
-					id: "71CC4448F43C777A"
-					item: "gtceu:uranium_hexafluoride_bucket"
-					type: "item"
-				}
-			]
-			title: "Uranium Refinement"
-			x: 4.5d
-			y: 11.25d
-		}
-		{
-			dependencies: [
-				"06B4AAC7DD796182"
-				"528CE69DA4358B2E"
-			]
-			description: [
-				"Don't worry, this is nothing compared to running an EBF."
-				""
-				"Hopefully for you, the &3LCR&r recipe in &2JEI&r for &aRadon&r should be self explanatory on how to set it up."
-				""
-				"Input some &aUranium&r, loop back the &dPlutonium&r using a &3Electric Furnace&r, and let the magic happen."
-				""
-				"&l&3Lore:&r&o This cursed yet charming \"chain\" is inherited from GregTech 5. Plutonium 239 existing as an ore is a sort of a placeholder to avoid having to obtain it through complicated means."
-			]
-			icon: "gtceu:radon_bucket"
-			id: "73E8283634E5E33A"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "200 seconds?! WHAT?!"
-			tasks: [
-				{
-					id: "4DBCC15F0E1C0EB8"
+					id: "00DADE2C3F126E7B"
 					item: "gtceu:plutonium_ingot"
 					type: "item"
 				}
-				{
-					id: "59404B44C72FECD8"
-					item: "gtceu:radon_bucket"
-					type: "item"
-				}
 			]
-			title: "Radon"
-			x: 4.5d
-			y: 9.0d
+			x: 17.0d
+			y: 6.5d
 		}
 		{
-			dependencies: [
-				"390E59F05132FCB8"
-				"4CD9F6D1B4CC7D81"
-				"1F571B9E1555DA04"
-				"40018C0546454CD9"
-			]
-			description: [
-				"&aEpoxy&r is the foundation for all future Circuit Boards in the game!"
-				""
-				"&9&lNote:&r This Quest is quite complicated, so tackle everything else before trying to make Epoxy. You'll need all the help you can get!"
-				"{@pagebreak}"
-				"There are several ways to obtain the ingredients for &aEpoxy&r."
-				""
-				"We will ignore recipes related to Glycerol, as they're never worth it unless modpack devs tweak things around. &mHint hint, if you're making your own pack!&r"
-				""
-				"Try and use &3Large Chemical Reactors&r to shortcut recipes."
-				"{@pagebreak}"
-				"&dChlorine&r is only partially recycled, so you'll need a constant supply. Feeding it manually will be sufficient at first."
-				""
-				"Recipes involving &dSodium Hydroxide&r could be looped by electrolyzing the &9Salt Water&r co-product."
-				""
-				"Doing this will probably require you to make some Quadruple Pipes, Pump Covers, Fluid Filters... or route everything using AE2."
-				""
-				"In general, closed loop setups are nice to prevent overproduction or overconsumption, but go for whatever's more fun for you."
-			]
-			id: "117FBB18DEE6F08B"
-			shape: "gear"
-			size: 1.2d
-			subtitle: "Prime circuit board material"
+			dependencies: ["617CF3335584DC8D"]
+			icon: "minecraft:red_sand"
+			id: "513322E59D1FD011"
 			tasks: [{
-				id: "35EAB019D81FD0A6"
-				item: "gtceu:epoxy_plate"
+				biome: "tfg:mars/martian_deep_desert"
+				id: "11C5B107B2144363"
+				title: "Visit the Deep Desert"
+				type: "biome"
+			}]
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["236F53188110F6D5"]
+			id: "691A36800DC755C1"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "130FE3E2CE8735F8"
+				item: "gtceu:ostrum_linear_accelerator"
 				type: "item"
 			}]
-			title: "Epoxy"
-			x: 3.375d
-			y: 7.875d
+			x: 14.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["390E59F05132FCB8"]
-			description: [
-				"You're going to want to use the &3LCR&r recipe for your first &aEpichlorohydrin&r."
-				""
-				"This recipe requires &aPropene&r, which means that &dOil Processing&r and &dFuel Cracking&r are now necessary ventures. We're truly sorry if you've been dragging your heels!"
-				""
-				"It's quite important that you make your first &3Distillation Tower&r before progressing to the right."
-				""
-				"Last of all, if you haven't noticed, you can loop the &dSalt Water&r byproduct to bootstrap the &dSodium Hydroxide&r."
-			]
-			id: "1F571B9E1555DA04"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "4D0ABF930ECC4D7B"
-				item: "gtceu:epichlorohydrin_bucket"
-				type: "item"
-			}]
-			title: "Epichlorohydrin"
-			x: 2.25d
-			y: 7.875d
-		}
-		{
-			dependencies: ["390E59F05132FCB8"]
-			description: [
-				"Obtain &aPhenol&r from:"
-				""
-				"&91 -&r &aWood Tar&r distillation."
-				""
-				"&92 -&r Reacting &aBenzene&r with &dChlorine&r and &dSodium Hydroxide&r This should be performed in an &3LCR&r, and the Chlorine is perfectly looped."
-				""
-				"&93 -&r Shortcutting the above recipe by ignoring the &dSodium Hydroxide&r. This is net negative on &dChlorine&r."
-				""
-				"&94 -&r Reacting &aBenzene&r, &dPropene&r and &dOxygen&r using a small amount of &4Phosphoric Acid&r - normally a catalyst, but consumed here in small quantities. This is called the Cumene process."
-				"{@pagebreak}"
-				"If you're having trouble deciding between the options presented, here's the appeal of each route:"
-				""
-				"&91 -&r Great if you're willing to set up a &3Pyrolyse Oven&r + &3Distillation Tower&r combo."
-				""
-				"&92 -&r This one's our preference! You can use the &dSalt&r to make more &dSalt Water&r, then electrolyze to create a loop."
-				""
-				"&93 -&r Very appealing if you have an infinite supply of &dChlorine&r. You could achieve this by setting up a &3Fluid Drilling Rig&r on a Salt Water vein."
-				""
-				"&94 -&r ...&4Phosphoric Acid&r is a pain to produce. You'd be mad to consider this."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o The Benzene + Oxygen recipe was added in GTCE with the intent of fixing missing chemical recipes, as the Large Chemical Reactor didn't exist. Now that CEu provides more realistic options, we may remove the recipe in future."
-			]
-			id: "4CD9F6D1B4CC7D81"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "7CB029DE17D67966"
-				item: "gtceu:phenol_bucket"
-				type: "item"
-			}]
-			title: "Phenol"
-			x: 2.25d
-			y: 6.75d
-		}
-		{
-			dependencies: ["390E59F05132FCB8"]
-			description: [
-				"While distilling &aWood Vinegar&r gives &aAcetone&r, the yield is low and might not meet your needs."
-				""
-				"You might want to use the direct &3LCR&r recipe from &aAcetic Acid&r to obtain &aAcetone&r."
-				""
-				"If you want to be fancy, you can also the good old &aAcetic Acid&r -> &dDissolved Calcium Acetate&r -> &aAcetone&r loop, which does not require a &3LCR&r, but still recycles the Calcium compound perfectly."
-				"{@pagebreak}"
-				"We've been talking about Acetic Acid, but we're yet to tell you how to obtain it. Wouldn't that be great?"
-				""
-				"&aAcetic Acid&r can be synthesized in the &3Chemical Reactor&r. Our favorite recipe is from &dEthylene&r."
-			]
-			id: "40018C0546454CD9"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "6F0BFB3747D3FDFB"
-				item: "gtceu:acetone_bucket"
-				type: "item"
-			}]
-			title: "Acetone"
-			x: 2.25d
-			y: 9.0d
-		}
-		{
-			dependencies: ["390E59F05132FCB8"]
-			description: [
-				"Silicone Rubber has its uses in Cable insulation, Conveyor recipes, and more."
-				""
-				"You may want to shelve this quest for now, as tackling Silicone Rubber can be a pretty severe &dChlorine&r sink."
-				"{@pagebreak}"
-				"&9Note:&r Rubber will eventually be usurped by either &aSilicone Rubber&r or &aStyrene-Butadienne Rubber&r for &1IV&r Cables."
-				""
-				"Both these rubbers will be required once you make it to &dLuV&r."
-			]
-			icon: "gtceu:silicone_rubber_plate"
-			id: "1A4AD56965407DC5"
-			size: 0.75d
-			subtitle: "An alternate rubber"
+			dependencies: ["691A36800DC755C1"]
+			icon: "gtceu:ostrum_vapor_bucket"
+			id: "58264E007C2D7CC6"
 			tasks: [
 				{
-					id: "3E2FBCED1C782E7C"
-					item: "gtceu:silicone_rubber_ingot"
+					id: "5399332E050D8560"
+					item: "gtceu:ostrum_vapor_bucket"
 					optional_task: true
-					title: "Silicone Rubber Ingot"
 					type: "item"
 				}
 				{
-					id: "3CF87D26761354C4"
-					item: "gtceu:silicone_rubber_plate"
-					title: "Silicone Rubber Plate"
+					id: "27311B3DC8E05EA7"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
+			x: 14.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["691A36800DC755C1"]
+			icon: "gtceu:lightweight_ostrum_vapor_bucket"
+			id: "4F647D6A4949EDF7"
+			tasks: [
+				{
+					id: "3529CF130C73746E"
+					item: "gtceu:lightweight_ostrum_vapor_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "58EA93A671979FEC"
-					item: "gtceu:silicone_rubber_bucket"
+					id: "4306FF9EA5A5105C"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
+			x: 12.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["691A36800DC755C1"]
+			icon: "gtceu:dense_ostrum_vapor_bucket"
+			id: "4C29DDE89AE8D6EE"
+			tasks: [
+				{
+					id: "24641F2651FFBE44"
+					item: "gtceu:dense_ostrum_vapor_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7D5E76A5B818616C"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
+			x: 15.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4F647D6A4949EDF7"]
+			id: "6ABD72F1C1971EE3"
+			shape: "heart"
+			tasks: [
+				{
+					id: "02963B7E2699E185"
+					item: "gtceu:tricalcium_phosphate_dust"
+					type: "item"
+				}
+				{
+					id: "0202E05696C78841"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:silver_dust"
+					}
+					type: "item"
+				}
+				{
+					id: "07372F88634076C6"
+					item: "gtceu:pitchblende_dust"
 					type: "item"
 				}
 			]
-			title: "Silicone Rubber"
-			x: 1.125d
-			y: 6.75d
+			x: 12.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["390E59F05132FCB8"]
-			description: [
-				"&7Styrene-Butadiene Rubber (SBR)&r is an enhanced type of Rubber."
-				""
-				"It can be used in place of Rubber in most recipes, and is &6four times more efficient&r at &ainsulating Cables&r. It is also strictly required for certain higher-tier recipes."
-				""
-				"This isn't exactly worth making until you get the &3Distillation Tower&r, but it eventually becomes easier with &dFuel Cracking&r."
-				"{@pagebreak}"
-				"&9Note:&r Rubber will eventually be usurped by either &aSilicone Rubber&r or &aStyrene-Butadienne Rubber&r for &1IV&r Cables."
-				""
-				"Both these rubbers will be required once you make it to &dLuV&r."
+			dependencies: ["58264E007C2D7CC6"]
+			id: "27804B847EE2CFF2"
+			shape: "heart"
+			tasks: [
+				{
+					id: "19277D14081DE23B"
+					item: "gtceu:aluminium_dust"
+					type: "item"
+				}
+				{
+					id: "552DAD2E001E8D83"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:lead_dust"
+					}
+					type: "item"
+				}
+				{
+					id: "6AFCA6EE597B7F67"
+					item: "gtceu:beryllium_dust"
+					type: "item"
+				}
 			]
-			id: "77070668969E31BF"
-			size: 0.75d
-			subtitle: "Steel Ball Run"
-			tasks: [{
-				id: "7D952AF37FC51956"
-				item: "gtceu:styrene_butadiene_rubber_plate"
-				type: "item"
-			}]
-			title: "Styrene-Butadiene Rubber"
-			x: 0.0d
-			y: 7.875d
+			x: 14.0d
+			y: 1.0d
 		}
 		{
-			dependencies: [
-				"40018C0546454CD9"
-				"48141DBA683F6B5A"
+			dependencies: ["4C29DDE89AE8D6EE"]
+			id: "09A85FAD0786E667"
+			shape: "heart"
+			tasks: [
+				{
+					id: "06B67B195C0429D5"
+					item: "gtceu:thorium_dust"
+					type: "item"
+				}
+				{
+					id: "0496A5C65EA6EA17"
+					item: "gtceu:uraninite_dust"
+					type: "item"
+				}
 			]
-			description: [
-				"&aGasoline&r is an extremely powerful Combustion Fuel. It's over &63 times&r as energy dense as &dDiesel&r!"
-				""
-				"&9Note:&r This Combustion Fuel exists solely as a &echallenge&r for you to overcome if you desire to take on it."
-				""
-				"It's completely &doptional&r, so we'll let you figure out how to obtain it, without any further tips."
-			]
-			id: "00E2BAEDB8199E4E"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "23F81DED8B4A515E"
-				item: "gtceu:gasoline_bucket"
-				type: "item"
-			}]
-			title: "Gasoline"
-			x: 1.125d
-			y: 9.0d
+			x: 15.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["00E2BAEDB8199E4E"]
-			description: [
-				"&6Multiply the energy density by 2&r and you have &aHigh Octane Gasoline&r."
-				""
-				"&9Note:&r Automating this requires a lot of &3Distillation Towers&r! A huge portion of your base would be dedicated to producing this constantly without anything bottlenecking."
-				""
-				"If you have a base successfully running on &aHOG&r, feel free to brag and share some screenshots on our &8Discord&r."
-			]
-			id: "046B4A0B2639B16A"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "56691AAE2579FB70"
-				item: "gtceu:high_octane_gasoline_bucket"
-				type: "item"
-			}]
-			title: "High Octane Gasoline"
-			x: 0.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["16A6AE5C770DB83A"]
-			description: [
-				"The &3Distillation Tower&r is a multiblock that will help you extract the most out of fluids. In &3Distilleries&r, you had to pick only one product to output. DTs output &6all of it at once&r!"
-				""
-				"&9Note the special placement rules:&r Energy, Items, and Fluid Inputs can only be placed on the bottom layer. Maintenance can be placed anywhere. Fluid Outputs can only be placed starting on the second vertical layer, and only allow one per layer as well."
-				"{@pagebreak}"
-				"The &3DT&r can form at any height from &c&c3&r to &c13&r blocks, allowing 2 to 12 Fluid Outputs. Fluid will always output on the layer corresponding to the recipe in &2JEI&r."
-				""
-				"The &3DT&r has one more &9special&r rule. You can deliberately build it too short, and it will &cvoid&r whichever Fluid should have been output at the top layers that were removed. This can be useful in some very niche situations."
-				""
-				"It is a good idea to use &3Super Tanks&r as the output for every layer."
-				"{@pagebreak}"
-				"&cNote:&r Using the &3Distillation Tower&r for Oil -> Fuel -> Diesel is &cnot&r worth it! You will spend more energy overclocking the Multiblock than what you would get back from the products. It would be better to wait until you can make the &3Processing Array&r (&1IV&r) for large scale Diesel production. "
-				""
-				"However, the DT is &6very valuable&r when extracting Cracked Fuels and Pyrolyse products."
-			]
-			id: "48141DBA683F6B5A"
+			dependencies: ["3A2E442E4D84C891"]
+			id: "36B9B5024356C53C"
 			shape: "gear"
-			size: 1.3d
-			subtitle: "Time for a real oil refinery!"
+			size: 2.0d
 			tasks: [{
-				id: "53541406691632A9"
-				item: "gtceu:distillation_tower"
-				type: "item"
-			}]
-			title: "Distillation Tower"
-			x: 1.125d
-			y: 10.125d
-		}
-		{
-			dependencies: [
-				"6D12CE80F92FC485"
-				"48141DBA683F6B5A"
-			]
-			description: [
-				"&aLiquid Air&r is a great way to get large amounts of &aNitrogen&r and &aOxygen&r at the cost of using more energy than &3LV Centrifuges&r."
-				""
-				"However, this will also give you both &6Helium&r and &6Argon&r - which are great to boost smelting in the &3Electric Blast Furnace&r."
-				""
-				"&cNote:&r You will need at least &3HV Input and Output Hatches&r to be able to run this recipe."
-			]
-			icon: "gtceu:air_bucket"
-			id: "1030A9F4AAC685ED"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [
-				{
-					id: "3860FB71F8A0E99F"
-					item: "gtceu:oxygen_bucket"
-					type: "item"
-				}
-				{
-					id: "5A8C43467303CECE"
-					item: "gtceu:nitrogen_bucket"
-					type: "item"
-				}
-				{
-					id: "58265BAC5C3F68C6"
-					item: "gtceu:helium_bucket"
-					type: "item"
-				}
-				{
-					id: "6091B9958BDE790E"
-					item: "gtceu:argon_bucket"
-					type: "item"
-				}
-			]
-			title: "True Distillation: Air"
-			x: 2.25d
-			y: 11.25d
-		}
-		{
-			dependencies: ["6958029B5514D4EC"]
-			description: [
-				"Some specific fluids are &dCryogenic&r, which are too cold for ordinary pipes. "
-				""
-				"Thus... you need to pick the right pipe for the job."
-				""
-				"Not many pipes support cold fluids, so you'll want to give &aStainless Steel&r or &aIridium&r a try. Later on you can use &aNaquadah&r or most of the fusion materials when you get there."
-				""
-				"&cWARNING:&r&r Cryogenics in the wrong pipes will cause &cvoiding&r, &cpipe freezing&r, and high rates of &cdeath&r! Be careful."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o This is the first time GregTech has cryogenic mechanics, a GTCEu-original feature!"
-			]
-			icon: "gtceu:stainless_steel_large_fluid_pipe"
-			id: "6D12CE80F92FC485"
-			shape: "circle"
-			size: 0.66d
-			tasks: [{
-				id: "5C8340E344B1EA59"
-				type: "checkmark"
-			}]
-			title: "This isn't Cryotheum!"
-			x: 3.375d
-			y: 11.25d
-		}
-		{
-			dependencies: ["48141DBA683F6B5A"]
-			description: [
-				"Here are the four most relevant &dHydrocarbons&r you will be obtaining from distilling Steam-Cracked Fuels."
-				""
-				"You will want to set this up &lbefore&r moving to &1IV&r."
-				""
-				"&aSteam-Cracked Light Fuel&r as input is probably the most favorable, but you are free to experiment."
-				""
-				"We know what you're thinking - something along the lines of \"&7&oThat Carbon output is just SO infuriating! It's ruining my automation!&r\"."
-				""
-				"Enable Item Voiding (in the controller GUI) if you don't want to build an Output Bus."
-			]
-			icon: "gtceu:oil_bucket"
-			id: "46367A76755866D9"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [
-				{
-					id: "1CE89B320D8F213B"
-					item: "gtceu:benzene_bucket"
-					type: "item"
-				}
-				{
-					id: "1704DE13A0C749B2"
-					item: "gtceu:butadiene_bucket"
-					type: "item"
-				}
-				{
-					id: "6731CE7073F05A40"
-					item: "gtceu:ethylene_bucket"
-					type: "item"
-				}
-				{
-					id: "12941D463CBE4704"
-					item: "gtceu:methane_bucket"
-					type: "item"
-				}
-			]
-			title: "True Distillation: Fuel"
-			x: 2.25d
-			y: 10.125d
-		}
-		{
-			dependencies: ["48141DBA683F6B5A"]
-			description: [
-				"This Quest requires the &3Pyrolyse Oven&r and is &doptional&r, yet convenient."
-				""
-				"The first four fluids are the important products of &aWood Tar&r Distillation:"
-				"&9-&r Phenol: useful for Epoxy and PBI"
-				"&9-&r Benzene: an important hydrocarbon"
-				"&9-&r Toluene: useful for TNT"
-				"&9-&r Dimethylbenzene: useful for PBI"
-				""
-				"Unlike Oil, putting &aWood Tar&r in the &3Distillation Tower&r for the byproducts, and using &dNitrobenzene&r for power is arguably worth it."
-				"{@pagebreak}"
-				"The bottom three are the important products from &aWood Vinegar&r Distillation:"
-				"&9-&r Acetic Acid: useful to make more Acetone"
-				"&9-&r Methanol: a moderately important hydrocarbon"
-				"&9-&r Acetone: useful for Epoxy and Gasoline"
-				"{@pagebreak}"
-				"It's also possible to use a \"full combo\" of 4 &3DTs&r -  input &aCharcoal Byproducts&r into a first tower, splitting into &aWood Tar&r, &aWood Gas&r and &aWood Vinegar&r."
-				""
-				"This isn't the most efficient cost-to-production ratio, but the option is there if you get bored."
-			]
-			icon: "gtceu:seed_oil_bucket"
-			id: "5742702B8021B1F5"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [
-				{
-					id: "5EB2EB8D1629FC7F"
-					item: "gtceu:phenol_bucket"
-					type: "item"
-				}
-				{
-					id: "1766C7D27D58CA7F"
-					item: "gtceu:benzene_bucket"
-					type: "item"
-				}
-				{
-					id: "392237D560CAE74C"
-					item: "gtceu:toluene_bucket"
-					type: "item"
-				}
-				{
-					id: "2A7B747BB348181D"
-					item: "gtceu:dimethylbenzene_bucket"
-					type: "item"
-				}
-				{
-					id: "158FF6EC9FF43862"
-					item: "gtceu:acetic_acid_bucket"
-					type: "item"
-				}
-				{
-					id: "4C5B5521CD219138"
-					item: "gtceu:methanol_bucket"
-					type: "item"
-				}
-				{
-					id: "39DFBE5FAB075669"
-					item: "gtceu:acetone_bucket"
-					type: "item"
-				}
-			]
-			title: "True Distillation: Organic"
-			x: 1.125d
-			y: 11.25d
-		}
-		{
-			dependencies: ["48141DBA683F6B5A"]
-			description: [
-				"The &3Cracker&r is a multiblock built with the sole purpose of cracking fluids. It comes with all the recipes of &3Chemical Reactor&r Cracking, but it is &6lossless&r."
-				""
-				"This is a great way to save a lot of Fuel in the long term!"
-				""
-				"Higher Coil tiers provide a small energy discount - up to 70% with the best Coils available."
-			]
-			id: "24866E83B280C9AB"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "You Crack Me Up"
-			tasks: [{
-				id: "4307AF60A80EE9FC"
+				id: "1855F64AC0C66B7D"
 				item: "gtceu:cracker"
 				type: "item"
 			}]
-			title: "Multiblock Cracking"
-			x: 0.0d
-			y: 10.125d
+			x: -8.75d
+			y: -1.75d
 		}
 		{
-			dependencies: ["3B2D2C47BEBCFFA7"]
-			description: [
-				"The &aAlloy Blast Smelter&r is the only main &2GCYM&r machine available in &5EV&r. You can use it to produce any alloy that you'd normally use the Mixer for. "
-				""
-				"Instead of producing &6Hot Ingots&r, the ABS produces &9Molten Fluids&r if the recipe is \"hot\" enough. These fluids require cooling with a &bVacuum Freezer&r. Otherwise, it produces regular liquids."
-				""
-				"Don't let the long smelting times scare you off. This machine incorporates the &dMixer step&r directly into the smelting recipe, and actually saves you quite a bit of time over smelting the dust in an EBF!"
-				""
-				"Nearly every &2GCYM&r material is produced in this machine, so if you have trouble finding a Mixer recipe, look for a Molten Fluid!"
-				"{@pagebreak}"
-				"&l&3Lore:&r&o This multiblock was inspired by GT++. It didn't use any heating coils, had no temperature requirements, and only produced regular liquids for all materials. It was pretty OP back in the day, but it eventually got restricted to only a single Energy Hatch to balance it out. For some reason, it also allowed you to melt any dust... into liquid...?"
-			]
-			id: "5979B0E13A1EDC9C"
-			shape: "square"
-			size: 0.75d
-			subtitle: "Visions of GT++"
+			dependencies: ["341751B307577B72"]
+			id: "7EAA2149BD77A5E6"
 			tasks: [{
-				id: "1493AF342D999313"
-				item: "gtceu:alloy_blast_smelter"
+				id: "531E56A4C9F646FD"
+				item: "gtceu:helium_bucket"
 				type: "item"
 			}]
-			x: 7.875d
-			y: 6.75d
+			x: -12.0d
+			y: 2.5d
 		}
 		{
-			description: [
-				"This Chapter will be updated later on with &lSpace Progression&r. Be wary &oprogression&r and &orecipes&r will &lchange&r as the structure of the quests."
-				""
-				"The modpack can be finish right now and is mostly vanilla Gregtech."
-			]
-			icon: "createdeco:decal_warning"
-			id: "02AD483C54EF96F0"
-			size: 2.5d
+			dependencies: ["7AC97F7850E31D95"]
+			description: ["Only used for perfectly looping hydrogen in the tungsten line now"]
+			id: "73754BA22D90089E"
+			shape: "octagon"
+			size: 2.0d
 			tasks: [{
-				id: "362E55351356CD43"
-				title: "Okay I understand it's not up to date"
-				type: "checkmark"
-			}]
-			title: "Quests are OLD and not updated for TFG"
-			x: 0.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["478B0D55369C0F7F"]
-			id: "173A04F328414A36"
-			tasks: [{
-				id: "66828E992294F8BD"
-				item: "gtceu:rtm_alloy_ingot"
+				id: "3CF029D7257DFE0C"
+				item: "tfg:evaporation_tower"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 1.0d
+			x: 1.5d
+			y: 13.5d
+		}
+		{
+			description: ["With Fission, you gain access to a brand new &6Dedicated Turbine&r!\\n\\nIt works just like the previous turbines but, similar to the Gas Turbine, it requires at least an &5EV Rotor Holder&r to operate.\\n\\nThe coils inside this turbine must be &7Cupronickel&r, and they don’t affect performance in any way they’re purely aesthetic (but we have to admit, they look pretty good).\\n\\nIn this quest, we suggest two &aRotors&r that fit nicely for the turbine at thisstage, but feel free to experiment and use any &brotor&r that suits your setup best."]
+			id: "1655573AE1C8484B"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "464798A8B69DC8B3"
+					item: "tfg:nuclear_turbine"
+					type: "item"
+				}
+				{
+					id: "013994473C28AB05"
+					item: {
+						Count: 1
+						id: "gtceu:turbine_rotor"
+						tag: {
+							GT.PartStats: {
+								Material: "tfg:tungsten_bismuth_oxide_composite"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "221D84FA27655688"
+					item: {
+						Count: 1
+						id: "gtceu:turbine_rotor"
+						tag: {
+							GT.PartStats: {
+								Material: "gtceu:ultimet"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["601088B7920140B2"]
+			description: ["The &dPlutonium Fuel Rod&r runs at extremely high temperatures so high, in fact, that you’ll need to use &bRefrigerant Pellets&r inside your reactor to prevent it from going into cooldown mode.\\n\\nThese pellets are quite expensive to produce, but you should still be able to mass-produce them early on, at least enough to keep your first few plutonium rods operational.\\n\\nLater on, if you don’t like constantly crafting these consumables, you’ll gain access to &6advanced reactor components&r. With those installed, your reactor will be able to safely reach up to &e600 Max Heat&r greatly improving efficiency and stability.\\n\\nInvest in better internal parts early to spend less time babysitting your power core."]
+			hide_dependency_lines: true
+			id: "08195E9FA1396936"
+			tasks: [{
+				id: "1B4C7B8C2EDFE595"
+				item: "tfg:refrigerant_pellet"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["29E0829816B9DBA0"]
+			description: ["One of the most interesting features of the Fission Reactor is its ability to have blocks added inside to modify its &emaximum heat capacity&r.\\n\\nYou can place &6Framed Blocks&r within the corners of the reactor, allowing for up to &e20 blocks&r in total. Alternatively, you can use &9Item Holders&r and insert cooling items with input buses, these help manage heat buildup effectively.\\n\\nIt’s also important to note that this internal setup is the &conly way&r to enable the &brecipe processing&r part of the Fission Reactor.\\n\\nSmart internal configuration will make the difference between a stable reactor and one on cooldown so plan your layout carefully."]
+			id: "63A8FE8F9C8EB5B3"
+			tasks: [
+				{
+					id: "7028407F5DD546D0"
+					item: "tfg:glacian_wool_frame"
+					type: "item"
+				}
+				{
+					id: "60F14B9B805089B6"
+					item: "tfg:aes_insulation_frame"
+					type: "item"
+				}
+				{
+					id: "28335255D6098F9E"
+					item: "deafission:material_holder"
+					type: "item"
+				}
+				{
+					id: "4D51D81460571013"
+					item: "tfg:dry_ice"
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7AC97F7850E31D95"]
+			id: "1E36CD12298820D8"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "635E7373EFE78BC3"
+					item: "tfg:moderate_core_frame"
+					type: "item"
+				}
+				{
+					id: "473E7CBA4AEEEE6E"
+					item: "tfg:impure_moderate_core_frame"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 13.5d
 		}
 	]
-	subtitle: ["The quests are outdated. They will be update in a later update."]
-	title: "&5EV&r - Extreme Voltage &6(WIP)&r"
+	subtitle: ["{quests.extreme_voltage.subtitle}"]
+	title: "{quests.extreme_voltage}"
 }
