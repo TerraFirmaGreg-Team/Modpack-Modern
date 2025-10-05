@@ -271,20 +271,17 @@
 			dependencies: ["7F14D2A34F480ACA"]
 			description: ["{quests.steam_age.mechanical_saw.desc}"]
 			id: "069825FBCFB0FB9C"
+			rewards: [{
+				id: "64CA1397D201AF37"
+				item: "create:filter"
+				type: "item"
+			}]
 			subtitle: "{quests.steam_age.mechanical_saw.subtitle}"
-			tasks: [
-				{
-					id: "5005121E0361DBD2"
-					item: "greate:andesite_alloy_mechanical_saw"
-					type: "item"
-				}
-				{
-					id: "54170C7DF3518AFE"
-					item: "create:filter"
-					optional_task: true
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5005121E0361DBD2"
+				item: "greate:andesite_alloy_mechanical_saw"
+				type: "item"
+			}]
 			title: "{quests.steam_age.mechanical_saw.title}"
 			x: -9.5d
 			y: 0.0d
