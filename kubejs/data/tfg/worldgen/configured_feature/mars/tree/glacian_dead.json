@@ -4,6 +4,21 @@
 		"layers": [
 			{
 				"templates": [
+					"tfg:trees/mossy_glowshroom_roots_1",
+					"tfg:trees/mossy_glowshroom_roots_2",
+					"tfg:trees/mossy_glowshroom_roots_3",
+					"tfg:trees/mossy_glowshroom_roots_4",
+					"tfg:trees/mossy_glowshroom_roots_5",
+					"tfg:trees/mossy_glowshroom_roots_6",
+					"tfg:trees/mossy_glowshroom_roots_7",
+					"tfg:trees/mossy_glowshroom_roots_8",
+					"tfg:trees/mossy_glowshroom_roots_9"
+				],
+				"min_count": 1,
+				"max_count": 1
+			},
+			{
+				"templates": [
 					"tfg:trees/mossy_glowshroom_stem_1",
 					"tfg:trees/mossy_glowshroom_stem_2",
 					"tfg:trees/mossy_glowshroom_stem_3",
@@ -28,7 +43,7 @@
 		},
 		"placement": {
 			"width": 1,
-			"height": 1,
+			"height": 10,
 			"allow_submerged": true,
 			"allow_deeply_submerged": false
 		}

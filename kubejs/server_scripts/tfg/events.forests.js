@@ -151,7 +151,6 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
-			//"betterend:glacian_hymenophore[facing=up]",
 			"tfg:glacian_leaves_fallen",
 			'tfg:groundcover/glacian_stick'
 		],
@@ -160,14 +159,10 @@ TFCEvents.worldgenData(event => {
 		'tfg:mars/tree/glacian',
 		null, null, null, null, null, null,
 		placement => {
-			placement.flatEnough(flatness => {
-				flatness.flatness(0.8)
-				flatness.radius(4)
-			})
 			placement.jsonPlacement({
 				"type": "minecraft:random_offset",
 				"xz_spread": 0,
-				"y_spread": -2
+				"y_spread": -7
 			})
 		}
 	)
