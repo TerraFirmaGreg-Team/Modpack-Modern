@@ -135,19 +135,11 @@
 			description: ["{quests.steam_age.water_wheel.desc}"]
 			id: "61DDB00751D1E7CB"
 			subtitle: "{quests.steam_age.water_wheel.subtitle}"
-			tasks: [
-				{
-					id: "1D82D22878EE6D21"
-					item: "create:water_wheel"
-					type: "item"
-				}
-				{
-					id: "1A20DE855DEB137C"
-					item: "create:large_water_wheel"
-					optional_task: true
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1D82D22878EE6D21"
+				item: "create:water_wheel"
+				type: "item"
+			}]
 			title: "{quests.steam_age.water_wheel.title}"
 			x: -14.5d
 			y: 0.0d
@@ -1660,6 +1652,20 @@
 			}]
 			title: "{quests.steam_age.fuel_sources.title}"
 			x: -7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["32046292AA5B0E30"]
+			description: ["{quests.steam_age.water_wheel.desc}"]
+			id: "56A068A5488CB273"
+			subtitle: "{quests.steam_age.water_wheel.subtitle}"
+			tasks: [{
+				id: "5772AD3BB700FD84"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			title: "{quests.steam_age.water_wheel.title}"
+			x: -3.5d
 			y: -2.0d
 		}
 	]
