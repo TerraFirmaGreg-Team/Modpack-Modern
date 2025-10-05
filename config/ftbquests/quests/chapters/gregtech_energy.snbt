@@ -963,11 +963,29 @@
 		}
 		{
 			dependencies: ["7AF726555D721DFC"]
+			description: [
+				"The &dFission Reactor&r is certainly an uncommon sight in GregTech - both in theme, and how it works. But fear not, we are here to guide you with this multi-purpose big-brain multiblock!\\n\\nWe'll spare you the physics for now, &efellow engineer&r. The most important thing you should know is that the reactor is like a big thermal &dbattery-generator&r. You input proper fuel, and get &cheat&r (just like &6EU/t&r) that gets stored in the reactor as &crising temperature&r (stored &6EU&r).\\n\\nYou can then transfer this heat to &9coolant fluids&r for running turbines, or performing EBF-style crafting recipes. Sometimes you may even have &ctoo much&r of it. And oh, you also get new elements to make new fuels and circuits and stuff. Maybe explore the solar system a bit more? Boring stuff.\\n\\n&7Flip the page to learn more.&r"
+				"{@pagebreak}"
+				"To start off, get your hands on some &dThorium&r. Remember to wear all the relevant PPE - &eDeatek Intergalactic&r is not responsible for any bodily harm resulting from improper handling of fissile materials. We really shouldn't have to remind you at this point anymore. Check the hazards quest if you need a refresher.\\n\\nNext, craft some empty &dFuel Rods&r and fill them with the &dNuclear Fuel Processing Plant&r. The rods"
+				"are reusable, so you don't have to make too many. In fact, you might want to make just a single one for now.\\n\\nYou'll of course need a completed reactor, too. Check the EMI preview. Note how there is a central column of Fuel Holders, and then some optional columns for Components and Material Holders - more of these later.\\n\\nWait. Why just a &osingle&r rod? Oh, are &ewe&r glad you asked. Let's delve deep into the reactor mechanics in the next quest."
+				"{@pagebreak}"
+				"The more fuel rods you have installed in the reactor, the &chotter&r it gets. And the hotter it is, the more heat it is able to transfer out to the coolant fluid and processable items. But physics has its limits, and the reactor can only ever get &cso hot&r, so don't install too many fuel cells.\\n\\nBut fear not! Unlike how the &0big-oil&r propaganda machine insists, nuclear energy is &aperfectly safe&r. Should the heat level of the reactor border dangerous territory, the reactor enters an &9automatic cooldown sequence&r, and won't start again until all heat has been &asafely dissipated&r. It's quite slow, though.\\n\\nThere has to be a way to make it hotter and faster? Once again, good thing you asked! &eOur brilliant engineers&r have a solution for you!"
+				"{@pagebreak}"
+				"In addition to the 5 &dFuel Holders&r, you can install &oup to&r 20 &dComponents&r. The reactors from some other manufacturers require very exact positioning, but our reactor is smarter. The &6stats&r of all installed ones will simply be &6summed up&r, and that's it!\\n\\nCurrently, the reactor is able to utilize them in three&8*&r different ways:\\n&e1)&r Max temperature &7(insulator)&r\\n&e2)&r Efficiency &7(fuel lasts longer)&r\\n&e3)&r Throttle &7(slows down the reactions)&r\\n\\n&8*)&r It's possible your local galaxy doesn't have the necessary materials for all of them. We estimate to find materials only for the first category.\\n\\nBut be wary. Rising the &ctemperature&r comes with a &cdownside&r."
+				"{@pagebreak}"
+				"While a &chotter&r reactor makes coolants and processing &cfaster&r, it is also more demaning for the fuel rods. Each fuel rod has limited durability, and this scales linearly with the temperature.\\n\\nAs you need more fuel rods for the higher heat, this in effect makes the damage scale &nquadratically&r. If you want to heat coolants the most efficiently, you'll use low temperature. But if you want faster fissile conversion, use as high a heat as the insulation allows."
+				"{@pagebreak}"
+				"You are finally ready to take a look at the various recipes involving the reactor; check where the &dcontroller&r is used, and you'll find three &eEMI&r tabs:\\n\\n&e1)&r Fission Reactor &7(fuels and compatible coolants)&r\\n&e2)&r Fission Heat Processing &7(think: EBF)&r\\n&e3)&r Fission\\nProducts &7(when the fuel runs out)&r\\n&e4)&r The multiblock preview\\n\\nVarious &afuels&r are only compatible with certain &9coolant fluids&r, so pay attention to this. And once a fuel rod is completely used up, statistical certainty can safely state it having &btra&dns&rf&dor&bmed&r into new elements.\\n\\nThe processing recipes on the other hand can run regardless of the fuel, as long as the temperature level is high enough."
+				"{@pagebreak}"
+				"The simplified math is as follows: with sufficient coolant fluid and a &c100%&r heat fuel rod, the reactor will reach a temperature of about &c200&r. This can also be referred to as heat level, or just heat. Having &dtwo&r &c100%&r fuel cells is equal to &done&r &c200%&r cell, and both lead to about &c400&r heat.\\n\\nThis is because the fuel rod generates &6200 HU/t&r (heat units). Coolant fluids are able to extract &61 HU/t&r per &c1&r degree of heat.\\n\\nIf the reactor's max heat is &c190&r, a &c100%&r fuel cell will overheat it. You can increase this with the components, or alternatively &dactive coolants&r via the processing system. Each recipe has a heat impact."
+				"{@pagebreak}"
+				"For example, if the recipe's temperature is &c100&r, and impact &6-10 HU/t&r, it is able to cool down the reactor by &619 HU/t &rat &c190&r degrees.\\n\\nThat makes it possible to run the reactor with lower max heat, and not overheat! If the temperature is below &c100&r, it won't run at all - just like EBF recipes have limits.\\n\\nThis is all &ewe&r can teach you for now. Come back later to see if there was been any advancements, &efellow nuclear engineer&r!"
+			]
 			id: "4512E5DE7A84F809"
 			tasks: [
 				{
 					id: "4BAECE3F4EC86920"
-					item: "gtceu:fission_reactor"
+					item: "deafission:fission_reactor_mk1"
 					type: "item"
 				}
 				{
