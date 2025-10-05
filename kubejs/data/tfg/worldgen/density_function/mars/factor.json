@@ -162,21 +162,7 @@
                             {
                               "derivative": 0.0,
                               "location": -0.69,
-                              "value": {
-                                "coordinate": "tfg:mars/ridges",
-                                "points": [
-                                  {
-                                    "derivative": 0.0,
-                                    "location": 0.0,
-                                    "value": 6.25
-                                  },
-                                  {
-                                    "derivative": 0.0,
-                                    "location": 0.1,
-                                    "value": 0.625
-                                  }
-                                ]
-                              }
+                              "value": 6.0
                             }
                           ]
                         }
@@ -195,21 +181,7 @@
                             {
                               "derivative": 0.0,
                               "location": -0.69,
-                              "value": {
-                                "coordinate": "tfg:mars/ridges",
-                                "points": [
-                                  {
-                                    "derivative": 0.0,
-                                    "location": 0.0,
-                                    "value": 6.25
-                                  },
-                                  {
-                                    "derivative": 0.0,
-                                    "location": 0.1,
-                                    "value": 0.625
-                                  }
-                                ]
-                              }
+                              "value": 5.47
                             }
                           ]
                         }
@@ -361,21 +333,7 @@
                             {
                               "derivative": 0.0,
                               "location": -0.69,
-                              "value": {
-                                "coordinate": "tfg:mars/ridges",
-                                "points": [
-                                  {
-                                    "derivative": 0.0,
-                                    "location": 0.0,
-                                    "value": 5.47
-                                  },
-                                  {
-                                    "derivative": 0.0,
-                                    "location": 0.1,
-                                    "value": 0.625
-                                  }
-                                ]
-                              }
+                              "value": 4.47
                             }
                           ]
                         }
@@ -394,21 +352,7 @@
                             {
                               "derivative": 0.0,
                               "location": -0.69,
-                              "value": {
-                                "coordinate": "tfg:mars/ridges",
-                                "points": [
-                                  {
-                                    "derivative": 0.0,
-                                    "location": 0.0,
-                                    "value": 5.47
-                                  },
-                                  {
-                                    "derivative": 0.0,
-                                    "location": 0.1,
-                                    "value": 0.625
-                                  }
-                                ]
-                              }
+                              "value": 4.47
                             }
                           ]
                         }
@@ -560,21 +504,7 @@
                             {
                               "derivative": 0.0,
                               "location": -0.69,
-                              "value": {
-                                "coordinate": "tfg:mars/ridges",
-                                "points": [
-                                  {
-                                    "derivative": 0.0,
-                                    "location": 0.0,
-                                    "value": 5.08
-                                  },
-                                  {
-                                    "derivative": 0.0,
-                                    "location": 0.1,
-                                    "value": 0.625
-                                  }
-                                ]
-                              }
+                              "value": 4.08
                             }
                           ]
                         }
@@ -593,21 +523,7 @@
                             {
                               "derivative": 0.0,
                               "location": -0.69,
-                              "value": {
-                                "coordinate": "tfg:mars/ridges",
-                                "points": [
-                                  {
-                                    "derivative": 0.0,
-                                    "location": 0.0,
-                                    "value": 5.08
-                                  },
-                                  {
-                                    "derivative": 0.0,
-                                    "location": 0.1,
-                                    "value": 0.625
-                                  }
-                                ]
-                              }
+                              "value": 4.08
                             }
                           ]
                         }
