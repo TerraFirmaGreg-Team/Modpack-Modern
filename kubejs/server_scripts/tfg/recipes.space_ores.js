@@ -140,6 +140,8 @@ function registerTFGSpaceOres(event) {
 		.duration(20 * 45)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	//#region Mars Ores Line
+
 	// Ostrum Harvester
 
 	event.recipes.gtceu.ostrum_harvester(`tfg:ostrum_harvesting`)
@@ -149,14 +151,13 @@ function registerTFGSpaceOres(event) {
 		.dimension('ad_astra:mars')
 		.itemOutputsRanged('gtceu:ostrum_dust', 1, 5)
 		.duration(20 * 30)
-		.duration(20 * 30)
 		.EUt(GTValues.VA[GTValues.LV]);
 
 
 	// Ostrum Linear Accelerator Recipes
 
 	event.recipes.gtceu.ostrum_linear_accelerator('tfg:ostrum_transformation')
-		.inputFluids('gtceu:residual_radioactive_concoction 1000')
+		.inputFluids('gtceu:residual_radioactive_concoction 100')
 		.itemInputs('32x #forge:dusts/ostrum')
 		.chancedFluidOutputLogic($ChanceLogic.XOR)
 		.chancedFluidOutput('gtceu:lightweight_ostrum_vapor', 6000, 0)

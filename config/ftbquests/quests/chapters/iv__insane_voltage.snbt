@@ -6,14 +6,7 @@
 	icon: "tfg:iv_universal_circuit"
 	id: "32EF20533F323E02"
 	order_index: 1
-	quest_links: [{
-		id: "050247AED8C803F9"
-		linked_quest: "30A6EDDF25A5E5F8"
-		shape: "gear"
-		size: 1.2d
-		x: 0.375d
-		y: 4.875d
-	}]
+	quest_links: [ ]
 	quests: [
 		{
 			dependencies: [
@@ -68,7 +61,6 @@
 			dependencies: [
 				"1776FA1F3255731E"
 				"5CA86A333670A55C"
-				"069FD86133D7D582"
 			]
 			description: [
 				"&aHSS-G Coils&r bring up the Heat Capacity to &d5,400K&r."
@@ -94,7 +86,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["069FD86133D7D582"]
+			dependencies: ["61D5055F344DDFAD"]
 			description: [
 				"&7High-Speed Steels&r (HSS) are more resistant Steel Alloys typically used in Rails."
 				""
@@ -139,7 +131,6 @@
 			dependencies: [
 				"1776FA1F3255731E"
 				"0425179329ED1B72"
-				"58BBD540D7D4FF01"
 			]
 			description: [
 				"When running the &3Extreme Combustion Engine&r, you're gonna want to boost it! &mWhy bother otherwise?&r"
@@ -175,8 +166,6 @@
 		}
 		{
 			dependencies: [
-				"7820DF52516344F4"
-				"4CD9F6D1B4CC7D81"
 				"5BACED5AE350EAB1"
 				"4343746E706264E6"
 				"528CE69DA4358B2E"
@@ -259,10 +248,7 @@
 			y: 2.625d
 		}
 		{
-			dependencies: [
-				"7CC79617A4965F25"
-				"30A6EDDF25A5E5F8"
-			]
+			dependencies: ["7CC79617A4965F25"]
 			description: [
 				"Tungstensteel under your belt? Nanoprocessor Mainframes on demand? Let's make some machinery."
 				""
@@ -285,7 +271,6 @@
 			y: 3.75d
 		}
 		{
-			dependencies: ["30A6EDDF25A5E5F8"]
 			description: [
 				"The &aLarge Tungstensteel Boiler&r is the final Steam Boiler. It's even more efficient than the previous ones, and produces more steam."
 				""
@@ -362,7 +347,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["7D15EEE81B1A3100"]
 			description: [
 				"Getting &aIndium&r requires a lot of &dSulfuric Acid&r, and two different ores: Galena and Sphalerite."
 				""
@@ -387,7 +371,6 @@
 		}
 		{
 			dependencies: [
-				"7820DF52516344F4"
 				"0F192D1F44B9B599"
 				"5CA86A333670A55C"
 				"528CE69DA4358B2E"
@@ -411,7 +394,6 @@
 			y: 3.75d
 		}
 		{
-			dependencies: ["30A6EDDF25A5E5F8"]
 			description: [
 				"&1IV&r Components - fortunately for you - aren't a massive step up in terms of complexity."
 				""
@@ -465,10 +447,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"7CC79617A4965F25"
-				"30A6EDDF25A5E5F8"
-			]
+			dependencies: ["7CC79617A4965F25"]
 			description: [
 				"Better Ore Processing for &6chanced Byproducts&r, only at the cost of this &3Macerator&r! A must have."
 				""
@@ -510,11 +489,9 @@
 		}
 		{
 			dependencies: [
-				"73E8283634E5E33A"
 				"12B4423F055BFBF5"
 				"327C3E02CD751453"
 				"0425179329ED1B72"
-				"069FD86133D7D582"
 				"6B128610C7D2825D"
 			]
 			description: [
@@ -542,11 +519,7 @@
 			y: 4.875d
 		}
 		{
-			dependencies: [
-				"0988B5FB795FF7DA"
-				"383B789B654C4094"
-				"69E384F389B0D07B"
-			]
+			dependencies: ["0988B5FB795FF7DA"]
 			description: [
 				"&o&7\"250,000,000 EU in a Battery? That's 25 minutes of Power when drained constantly.\""
 				""
@@ -664,7 +637,6 @@
 		{
 			dependencies: [
 				"635D14B8E9F996FD"
-				"7820DF52516344F4"
 				"528CE69DA4358B2E"
 			]
 			description: [
@@ -704,7 +676,6 @@
 			dependencies: [
 				"635D14B8E9F996FD"
 				"528CE69DA4358B2E"
-				"069FD86133D7D582"
 				"5DBBD9B1F5B01F4E"
 			]
 			description: [
@@ -810,11 +781,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"73E8283634E5E33A"
-				"0F192D1F44B9B599"
-				"63A87C9303D54487"
-			]
+			dependencies: ["0F192D1F44B9B599"]
 			description: [
 				"We know... this isn't actually gated behind &dIndium&r. However, you gotta trust us - this is the better recipe, so we don't want you wasting your time."
 				""
@@ -834,9 +801,7 @@
 		}
 		{
 			dependencies: [
-				"73E8283634E5E33A"
 				"216E5A3574AC08BF"
-				"069FD86133D7D582"
 				"6B128610C7D2825D"
 			]
 			description: [
@@ -927,7 +892,6 @@
 			y: 3.75d
 		}
 		{
-			dependencies: ["117FBB18DEE6F08B"]
 			description: [
 				"The next board material."
 				""

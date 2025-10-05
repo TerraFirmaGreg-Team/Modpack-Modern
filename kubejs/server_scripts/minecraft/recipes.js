@@ -844,15 +844,9 @@ const registerMinecraftRecipes = (event) => {
 	event.recipes.gtceu.mixer('gtceu:lv_glowstone')
 		.itemInputs('gtceu:gold_dust', 'minecraft:redstone', 'gtceu:sulfur_dust')
 		.itemOutputs('2x minecraft:glowstone_dust')
-		.circuit(32)
+		.circuit(8)
 		.duration(1200)
 		.EUt(30)
-
-	//#endregion
-
-	//#region Nether Brick
-
-	event.smelting('minecraft:nether_brick', 'minecraft:netherrack')
 
 	//#endregion
 
@@ -944,9 +938,9 @@ const registerMinecraftRecipes = (event) => {
 		'ABA',
 		'CDC'
 	], {
-		A: 'minecraft:blaze_rod',
-		B: 'minecraft:blaze_powder',
-		C: '#forge:ingots/blue_steel',
+		A: '#forge:rods/black_steel',
+		B: 'minecraft:lava_bucket',
+		C: '#minecraft:logs',
 		D: '#forge:storage_blocks/charcoal',
 	}).id('tfg:campfire_charcoal')
 
@@ -955,9 +949,9 @@ const registerMinecraftRecipes = (event) => {
 		'ABA',
 		'CDC'
 	], {
-		A: 'minecraft:blaze_rod',
-		B: 'minecraft:blaze_powder',
-		C: '#forge:ingots/blue_steel',
+		A: '#forge:rods/black_steel',
+		B: 'minecraft:lava_bucket',
+		C: '#minecraft:logs',
 		D: '#forge:storage_blocks/coal',
 	}).id('tfg:campfire_coal')
 	//#endregion

@@ -194,7 +194,7 @@ jobs:
       - name: 📄 Format diff
         id: format_diff
         if: ${{ steps.read_diff.outputs.diff != '' }}
-        uses: roamingowl/template-output-with-eta@v1.13.0
+        uses: roamingowl/template-output-with-eta@v2.0.0
         with:
           template: |
             ```markdown
@@ -304,6 +304,7 @@ jobs:
 
 
           sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" config/mod-director/modpack.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
@@ -316,7 +317,7 @@ jobs:
           sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
 
       - name: 📝 Cache pakku
-        uses: actions/cache@v4.2.4
+        uses: actions/cache@v4.3.0
         id: cache
         with:
           path: build/.cache
@@ -428,7 +429,7 @@ jobs:
       - name: 📄 Format diff
         id: format_diff
         if: ${{ needs.info.outputs.diff != '' }}
-        uses: roamingowl/template-output-with-eta@v1.13.0
+        uses: roamingowl/template-output-with-eta@v2.0.0
         with:
           template: |
             ```markdown

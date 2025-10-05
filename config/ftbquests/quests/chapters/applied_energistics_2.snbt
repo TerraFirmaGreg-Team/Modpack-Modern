@@ -69,7 +69,12 @@
 		}
 	]
 	order_index: 3
-	quest_links: [ ]
+	quest_links: [{
+		id: "6845144F7EA1081D"
+		linked_quest: "24158DEE63DAEB41"
+		x: 5.0d
+		y: -4.5d
+	}]
 	quests: [
 		{
 			dependencies: ["00A2566109144D7F"]
@@ -226,6 +231,7 @@
 			y: -0.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0C0B09D66D0CFFBA"]
 			description: ["{quests.ae2.ae_guide.desc}"]
 			id: "6CF08AFB924905F0"
@@ -1230,20 +1236,37 @@
 				type: "item"
 			}]
 			title: "{quests.ae2.cutting_knife.title}"
-			x: 0.0d
+			x: 0.5d
 			y: -10.5d
 		}
 		{
-			dependencies: ["378E2294EFD85C65"]
-			description: ["{quests.ae2.programmed_circuit_card.desc}"]
-			id: "51B34B3E51B6ECDD"
+			dependencies: ["386C54268DA9F2BF"]
+			description: ["{quests.ae2.pattern_box.desc}"]
+			id: "36BF57C3B7D81B6F"
 			tasks: [{
-				id: "295980339E1FE027"
-				item: "pccard:card_programmed_circuit"
+				id: "403A9E3BB8B14683"
+				item: "ae2:pattern_box"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -0.5d
 			y: -10.5d
+		}
+		{
+			dependencies: [
+				"5187909B66DF2D43"
+				"24158DEE63DAEB41"
+			]
+			description: ["{quests.ae2.interplanetary_wireless.desc}"]
+			icon: "tfg:wireless_card"
+			id: "4B1F957EB41A5E9B"
+			subtitle: "{quests.ae2.interplanetary_wireless.subtitle}"
+			tasks: [{
+				id: "647F84B024E272BA"
+				item: "tfg:wireless_card"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.5d
 		}
 	]
 	subtitle: ["{quests.ae2.subtitle}"]

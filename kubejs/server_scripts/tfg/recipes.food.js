@@ -469,7 +469,7 @@ function registerTFGFoodRecipes(event) {
 	global.TFC_JAMS.forEach(name => {
 		processorRecipe(`${name}_jam`, 200, 8, {
 			circuit: 15,
-			itemInputs: [`4x tfc:food/${name}`, "#tfg:sugars", "4x #tfc:empty_jar_with_lid"],
+			itemInputs: [`4x tfc:food/${name}`, "#tfc:sweetener", "4x #tfc:empty_jar_with_lid"],
 			fluidInputs: ['#tfg:clean_water 100'],
 			itemOutputs: [`4x tfc:jar/${name}`],
 			itemOutputProvider: TFC.isp.of(`4x tfc:jar/${name}`).copyFood()
@@ -477,7 +477,7 @@ function registerTFGFoodRecipes(event) {
 
 		processorRecipe(`${name}_jam_no_seal`, 200, 8, {
 			circuit: 16,
-			itemInputs: [`4x tfc:food/${name}`, "#tfg:sugars", "4x tfc:empty_jar"],
+			itemInputs: [`4x tfc:food/${name}`, "#tfc:sweetener", "4x tfc:empty_jar"],
 			fluidInputs: ['#tfg:clean_water 100'],
 			itemOutputs: [`4x tfc:jar/${name}_unsealed`],
 			itemOutputProvider: TFC.isp.of(`4x tfc:jar/${name}_unsealed`).copyFood()
@@ -487,7 +487,7 @@ function registerTFGFoodRecipes(event) {
 	global.FIRMALIFE_JAMS.forEach(name => {
 		processorRecipe(`${name}_jam`, 200, 8, {
 			circuit: 15,
-			itemInputs: [`4x firmalife:food/${name}`, "#tfg:sugars", "4x #tfc:empty_jar_with_lid"],
+			itemInputs: [`4x firmalife:food/${name}`, "#tfc:sweetener", "4x #tfc:empty_jar_with_lid"],
 			fluidInputs: ['#tfg:clean_water 100'],
 			itemOutputs: [`4x firmalife:jar/${name}`],
 			itemOutputProvider: TFC.isp.of(`4x firmalife:jar/${name}`).copyFood()
@@ -495,7 +495,7 @@ function registerTFGFoodRecipes(event) {
 
 		processorRecipe(`${name}_jam_no_seal`, 200, 8, {
 			circuit: 16,
-			itemInputs: [`4x firmalife:food/${name}`, "#tfg:sugars", "4x tfc:empty_jar"],
+			itemInputs: [`4x firmalife:food/${name}`, "#tfc:sweetener", "4x tfc:empty_jar"],
 			fluidInputs: ['#tfg:clean_water 100'],
 			itemOutputs: [`4x firmalife:jar/${name}_unsealed`],
 			itemOutputProvider: TFC.isp.of(`4x firmalife:jar/${name}_unsealed`).copyFood()
@@ -658,14 +658,15 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: ['#firmalife:foods/cheeses'],
 		itemOutputs: ['4x firmalife:food/shredded_cheese'],
 		circuit: 30,
-		itemOutputProvider: TFC.isp.of('firmalife:food/shredded_cheese').copyFood()
+		itemOutputProvider: TFC.isp.of('4x firmalife:food/shredded_cheese').copyFood()
 	})
 
 	processorRecipe("basil", 20, 16, {
 		itemInputs: ['firmalife:plant/basil'],
 		itemOutputs: ['2x firmalife:spice/basil_leaves'],
-		circuit: 30
-	})
+		circuit: 30,
+		itemOutputProvider: TFC.isp.of('2x firmalife:spice/basil_leaves').resetFood()
+	})	
 
 	// Ice cream
 	processorRecipe("vanilla_ice_cream", 300, 16, {
@@ -1069,13 +1070,13 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	processorRecipe("cave_pumpkin_pie_dough", 300, GTValues.VA[GTValues.HV], {
-		itemInputs: ['#tfg:martian_eggs', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', '#tfc:sweetener'],
+		itemInputs: ['#tfg:martian_eggs', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', 'tfg:wraptor_sugar'],
 		fluidInputs: ['minecraft:water 1000'],
 		itemOutputs: ["betterend:cave_pumpkin_pie_dough"]
 	})
 
 	event.recipes.firmalife.mixing_bowl()
-		.ingredients(['#tfg:martian_eggs', 'betterend:cave_pumpkin_chunks', 'betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', '#tfc:sweetener'],
+		.ingredients(['#tfg:martian_eggs', 'betterend:cave_pumpkin_chunks', 'betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', 'tfg:wraptor_sugar'],
 			Fluid.of('minecraft:water', 1000))
 		.outputItem('betterend:cave_pumpkin_pie_dough')
 		.id('tfg:mixing_bowl/cave_pumpkin_pie_dough')

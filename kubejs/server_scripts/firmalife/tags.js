@@ -18,8 +18,6 @@ const registerFirmaLifeItemTags = (event) => {
     
     event.add('tfc:foods/usable_in_salad', 'firmalife:food/pickled_egg')
 
-    event.add('tfc:fluxstone', 'firmalife:hollow_shell')
-
     // Удаление тегов у руд
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
 }

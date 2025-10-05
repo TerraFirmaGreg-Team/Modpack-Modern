@@ -22,6 +22,7 @@ ServerEvents.tags('item', event => {
 	registerCreateConnectedItemTags(event)
 	registerCreateDecoItemTags(event)
 	registerCreateFactoryLogisticsItemTags(event)
+	registerDeaFissionItemTags(event)
 	registerDomumOrnamentumItemTags(event)
 	registerDiggerHelmetItemTags(event)
 	registerEndermanOverhaulItemTags(event)
@@ -45,7 +46,7 @@ ServerEvents.tags('item', event => {
 	registerRnrItemTags(event)
 	registerSophisticatedBackpacksItemTags(event)
 	registerSoulboundItemTags(event)
-	registeSNSItemTags(event)
+	registerSNSItemTags(event)
 	registerSpeciesItemTags(event)
 	registerTACZItemTags(event)
 	registerTFCAmbientalItemTags(event)
@@ -125,12 +126,10 @@ ServerEvents.tags('worldgen/placed_feature', event => {
 })
 
 ServerEvents.tags('worldgen/biome', event => {
+	registerAdAstraBiomeTags(event)
+	registerCreatePickyWheelsBiomeTags(event)
 	registerTFCBiomeTags(event)
 	registerTFGBiomeTags(event)
-})
-
-ServerEvents.tags('worldgen/biome', event => {
-	registerAdAstraBiomeTags(event)
 })
 
 ServerEvents.tags('entity_type', event => {
@@ -251,7 +250,6 @@ ServerEvents.recipes(event => {
 	registerModernMarkingRecipes(event)
 	registerMoreRedRecipes(event)
 	registerPrimitiveCreaturesRecipes(event)
-	registerProgrammedCircuitCardRecipes(event)
 	registerRailWaysRecipes(event)
 	registerRnrRecipes(event)
 	registerSandwormRecipes(event)

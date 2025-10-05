@@ -9,7 +9,7 @@ function registerTACZMiscRecipes(event) {
 		' B '
 	],{
 		A: '#forge:dyes/red',
-		B: '#forge:plates/steel',
+		B: '#forge:foils/steel',
 		C: '#forge:rods/long/wood'
 	}).id('tfg_tacz:target');
 	
@@ -83,7 +83,7 @@ function registerTACZMiscRecipes(event) {
 		.duration(80)
 		
 	event.recipes.gtceu.assembler('tfg:certus_mechanism')
-		.itemInputs('2x ae2:charged_certus_quartz_crystal', '2x #forge:gears/titanium', '2x #forge:springs/tungsten', 
+		.itemInputs('2x ae2:charged_certus_quartz_crystal', '2x #forge:gears/titanium', '4x #forge:springs/hsla_steel', 
 					'16x #forge:screws/titanium', '2x #forge:rods/titanium', '6x #forge:rings/styrene_butadiene_rubber',
 					'16x #forge:fine_wires/red_alloy')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))

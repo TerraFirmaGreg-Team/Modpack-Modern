@@ -6,6 +6,10 @@
 			"chance": 60
 		},
 		{
+			"type": "tfc:climate",
+			"min_temperature": -85
+		},
+		{
 			"type": "minecraft:in_square"
 		},
 		{

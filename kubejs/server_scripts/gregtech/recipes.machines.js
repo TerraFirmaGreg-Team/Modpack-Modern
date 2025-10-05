@@ -286,7 +286,7 @@ function registerGTCEuMachineRecipes(event) {
 		D: 'tfc:crucible',
 		E: ChemicalHelper.get(TagPrefix.rod, GTMaterials.BlackSteel, 1)
 	}).addMaterialInfo().id('gtceu:shaped/steam_boiler_coal_steel')
-	
+
 	removeMaceratorRecipe(event, 'macerate_hp_steam_liquid_boiler')
 	event.recipes.gtceu.shaped('gtceu:hp_steam_liquid_boiler', [
 		'AEA',
@@ -299,7 +299,7 @@ function registerGTCEuMachineRecipes(event) {
 		D: '#forge:glass',
 		E: ChemicalHelper.get(TagPrefix.rod, GTMaterials.BlackSteel, 1)
 	}).addMaterialInfo().id('gtceu:shaped/steam_boiler_lava_steel')
-	
+
 	removeMaceratorRecipe(event, 'macerate_hp_steam_solar_boiler')
 	event.recipes.gtceu.shaped('gtceu:hp_steam_solar_boiler', [
 		'AAA',
@@ -804,7 +804,7 @@ function registerGTCEuMachineRecipes(event) {
 		A: ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 1),
 		B: '#forge:tools/hammers'
 	}).addMaterialInfo().id('gtceu:shaped/steel_hull')
-	
+
 	removeMaceratorRecipe(event, 'macerate_steam_input_hatch')
 	event.recipes.gtceu.shaped('gtceu:steam_input_hatch', [
 		'ACA',
@@ -815,7 +815,7 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:steel_machine_casing',
 		C: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.Steel, 1)
 	}).addMaterialInfo().id('gtceu:shaped/steam_hatch')
-	
+
 	removeMaceratorRecipe(event, 'macerate_steam_grinder')
 	event.recipes.gtceu.shaped('gtceu:steam_grinder', [
 		'ABA',
@@ -826,7 +826,7 @@ function registerGTCEuMachineRecipes(event) {
 		B: ChemicalHelper.get(TagPrefix.gear, GTMaterials.Invar, 1),
 		C: 'gtceu:hp_steam_macerator'
 	}).addMaterialInfo().id('gtceu:shaped/steam_grinder')
-	
+
 	removeMaceratorRecipe(event, 'macerate_steam_oven')
 	event.recipes.gtceu.shaped('gtceu:steam_oven', [
 		'ABA',
@@ -910,16 +910,16 @@ function registerGTCEuMachineRecipes(event) {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-		event.recipes.gtceu.compressor('tfg:compressed_treated_chipboard_composite')
-			.itemInputs('tfg:treated_chipboard_composite')
-			.itemOutputs('tfg:high_density_treated_fiberboard')
-			.duration(200)
-			.EUt(GTValues.VA[GTValues.ULV])
+	event.recipes.gtceu.compressor('tfg:compressed_treated_chipboard_composite')
+		.itemInputs('tfg:treated_chipboard_composite')
+		.itemOutputs('tfg:high_density_treated_fiberboard')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.assembler('tfg:resin_circuit_assembler')
 		.itemInputs('gtceu:wood_plate', '2x gtceu:sticky_resin')
 		.itemOutputs('gtceu:resin_circuit_board')
-		.duration(20*10)
+		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	//#region New Casings
@@ -958,7 +958,7 @@ function registerGTCEuMachineRecipes(event) {
 	event.recipes.gtceu.assembler('steel_machine_casing')
 		.itemInputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 4))
 		.itemOutputs('gtceu:steel_machine_casing')
-		.circuit(4)
+		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(16)
 
@@ -966,7 +966,7 @@ function registerGTCEuMachineRecipes(event) {
 		.itemInputs('gtceu:clean_machine_casing', '4x gtceu:annealed_copper_double_wire')
 		.inputFluids(Fluid.of('gtceu:polyvinyl_chloride', 288))
 		.itemOutputs('tfg:casings/machine_casing_stainless_evaporation')
-		.circuit(4)
+		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -974,7 +974,7 @@ function registerGTCEuMachineRecipes(event) {
 		.itemInputs('gtceu:clean_machine_casing', '4x #forge:double_wires/kanthal')
 		.inputFluids(Fluid.of('gtceu:polybenzimidazole', 288))
 		.itemOutputs('tfg:casings/machine_casing_mars')
-		.circuit(4)
+		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -982,7 +982,7 @@ function registerGTCEuMachineRecipes(event) {
 		.itemInputs('4x #forge:dense_plates/lead', '2x #forge:plates/rtm_alloy', '#forge:frames/titanium')
 		.inputFluids(Fluid.of('gtceu:polyvinyl_butyral', 288))
 		.itemOutputs('2x gtceu:atomic_casing')
-		.circuit(4)
+		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -1143,24 +1143,19 @@ function registerGTCEuMachineRecipes(event) {
 
 	// Multiblock
 
-	/* LOCKED UNTIL MARS
-
-	event.shaped(
-		'gtceu:ostrum_linear_accelerator',
-		[	'USU',
-			'WZW',
-			'PTP'],
-		{
-			S: 'tfg:casings/machine_casing_vacuum_engine_intake',
-			Z: 'gtceu:iv_machine_hull',
-			W: '#gtceu:circuits/iv',
-			U: '#forge:double_plates/stellite_100',
-			T: '#forge:single_cables/platinum',
-			P: 'gtceu:iv_electric_pump'
-		}
+	event.shaped('gtceu:ostrum_linear_accelerator', [
+		'USU',
+		'WZW',
+		'PTP'
+	], {
+		S: 'tfg:casings/machine_casing_vacuum_engine_intake',
+		Z: 'gtceu:iv_machine_hull',
+		W: '#gtceu:circuits/iv',
+		U: '#forge:double_plates/stellite_100',
+		T: '#forge:single_cables/platinum',
+		P: 'gtceu:iv_electric_pump'
+	}
 	).id('gtceu:shaped/ostrum_linear_accelerator')
-
-	*/
 
 	event.recipes.gtceu.assembler('tfg:ostrum_harvester')
 		.itemInputs(
@@ -1190,19 +1185,17 @@ function registerGTCEuMachineRecipes(event) {
 
 	// Vacuum Intake
 
-	event.shaped(
-		'tfg:casings/machine_casing_vacuum_engine_intake',
-		[	'USU',
-			'WZW',
-			'UTU'],
-		{
-			S: '#forge:tools/hammers',
-			T: '#forge:tools/wrenches',
-			W: '#forge:rotors/ultimet',
-			U: 'gtceu:ultimet_normal_item_pipe',
-			Z: 'gtceu:inert_machine_casing'
-		}
-	).id('tfg:shaped/casing_machine_casing_vacuum_engine_intake')
+	event.shaped('tfg:casings/machine_casing_vacuum_engine_intake', [
+		'USU',
+		'WZW',
+		'UTU'
+	], {
+		S: '#forge:tools/hammers',
+		T: '#forge:tools/wrenches',
+		W: '#forge:rotors/ultimet',
+		U: 'gtceu:ultimet_normal_item_pipe',
+		Z: 'gtceu:inert_machine_casing'
+	}).id('tfg:shaped/casing_machine_casing_vacuum_engine_intake')
 
 	event.recipes.gtceu.assembler('tfg:casings/machine_casing_vacuum_engine_intake')
 		.itemInputs(
@@ -1214,72 +1207,71 @@ function registerGTCEuMachineRecipes(event) {
 		.EUt(GTValues.VH[GTValues.LV])
 		.circuit(2)
 
-	// Stainless Evaporation Tower - LOCKED UNTIL VENUS
+	// Stainless Evaporation Tower
 
-	/*
-
-	event.shaped(
-		'gtceu:evaporation_tower',
-		[	'TUT',
-			'WZW',
-			'TUT'],
-		{
-			T: '#gtceu:circuits/ev',
-			W: 'gtceu:hv_electric_pump',
-			U: '#forge:double_wires/kanthal',
-			Z: 'gtceu:hv_machine_hull'
-		}
-	).id('tfg:shaped/evaporation_tower')
-
-	*/
+	event.recipes.gtceu.shaped('tfg:evaporation_tower', [
+		'TUT',
+		'WZW',
+		'TUT'
+	], {
+		T: '#gtceu:circuits/iv',
+		W: 'gtceu:ev_electric_pump',
+		U: '#forge:double_wires/nichrome',
+		Z: 'gtceu:ev_machine_hull'
+	}).addMaterialInfo().id('tfg:shaped/evaporation_tower')
 
 	//#endregion
 
-	//#region Nuclear Controler - LOCKED UNTIL MARS
+	//#region Nuclear Controler
 
-	/*
+	event.shaped('deafission:fission_reactor_mk1', [
+		'TUT',
+		'WZW',
+		'TUT'
+	], {
+		T: 'gtceu:atomic_casing',
+		W: '#gtceu:circuits/ev',
+		U: 'gtceu:hv_field_generator',
+		Z: 'gtceu:ev_machine_hull'
+	}
+	).id('tfg:shaped/fission_reactor_mk1')
 
-	event.shaped(
-		'gtceu:fission_reactor',
-		[	'TUT',
-			'WZW',
-			'TUT'],
-		{
-			T: 'gtceu:atomic_casing',
-			W: '#gtceu:circuits/ev',
-			U: 'gtceu:hv_field_generator',
-			Z: 'gtceu:ev_machine_hull'
-		}
-	).id('tfg:shaped/fission_reactor')
-
-	event.shaped(
-		'gtceu:nuclear_fuel_factory',
-		[	'TUT',
-			'WZW',
-			'TBT'],
-		{
-			T: 'gtceu:atomic_casing',
-			W: '#gtceu:circuits/ev',
-			U: 'gtceu:ev_emitter',
-			Z: 'gtceu:ev_machine_hull',
-			B: 'gtceu:ev_robot_arm'
-		}
+	event.shaped('gtceu:nuclear_fuel_factory', [
+		'TUT',
+		'WZW',
+		'TBT'
+	], {
+		T: 'gtceu:atomic_casing',
+		W: '#gtceu:circuits/ev',
+		U: 'gtceu:ev_emitter',
+		Z: 'gtceu:ev_machine_hull',
+		B: 'gtceu:ev_robot_arm'
+	}
 	).id('tfg:shaped/nuclear_fuel_factory')
 
-	event.shaped(
-		'gtceu:heat_exchanger',
-		[	'TUT',
-			'WZW',
-			'TBT'],
-		{
-			T: 'gtceu:high_temperature_smelting_casing',
-			W: '#gtceu:circuits/ev',
-			U: 'gtceu:ev_sensor',
-			Z: 'gtceu:ev_machine_hull',
-			B: 'gtceu:ev_fluid_regulator'
-		}
+	event.shaped('gtceu:heat_exchanger', [
+		'TUT',
+		'WZW',
+		'TBT'
+	], {
+		T: 'gtceu:high_temperature_smelting_casing',
+		W: '#gtceu:circuits/ev',
+		U: 'gtceu:ev_sensor',
+		Z: 'gtceu:ev_machine_hull',
+		B: 'gtceu:ev_fluid_regulator'
+	}
 	).id('tfg:shaped/heat_exchanger')
 
-	*/
+	event.shaped('tfg:nuclear_turbine', [
+		'CTC',
+		'TZT',
+		'BTB'
+	], {
+		T: '#forge:gears/magnalium',
+		Z: 'gtceu:ev_machine_hull',
+		B: 'gtceu:ultimet_large_item_pipe',
+		C: '#gtceu:circuits/ev'
+	}
+	).id('tfg:shaped/nuclear_turbine')
 
 }

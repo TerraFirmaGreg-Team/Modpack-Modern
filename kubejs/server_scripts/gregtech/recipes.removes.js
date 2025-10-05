@@ -417,6 +417,10 @@ function removeGTCEURecipes(event) {
 
 	//#region Выход: Пыль незерака
 
+	event.remove({ id: 'gtceu:shaped/nether_bricks_hammer' })
+	event.remove({ id: 'gtceu:shaped/nether_bricks_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/nether_bricks_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/nether_bricks_wall_saw' })
 	removeMaceratorRecipe(event, 'macerate_nether_brick_stairs')
 	removeMaceratorRecipe(event, 'macerate_nether_brick_slab')
 
@@ -641,8 +645,23 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_brick_slab')
 	removeMaceratorRecipe(event, 'macerate_brick_wall')
 	removeMaceratorRecipe(event, 'macerate_flower_pot')
+	removeMaceratorRecipe(event, 'macerate_netherrack')
+	removeMaceratorRecipe(event, 'macerate_red_nether_bricks')
+	removeMaceratorRecipe(event, 'macerate_red_nether_brick_wall')
+	removeMaceratorRecipe(event, 'macerate_blaze_rod')
 
 	removeMaceratorRecipe(event, 'macerate_marble')
+	removeMaceratorRecipe(event, 'macerate_red_granite')
+
+	removeMaceratorRecipe(event, 'macerate_wool')
+
+	event.remove({ id: 'gtceu:gas_collector/nether_air' })
+	event.remove({ id: 'gtceu:gas_collector/ender_air' })
+	// TODO: uncomment with venus update
+	//event.remove({ id: 'gtceu:vacuum_freezer/liquid_ender_air' })
+	//event.remove({ id: 'gtceu:vacuum_freezer/liquid_nether_air' })
+	//event.remove({ id: 'gtceu:distillation_tower/distill_liquid_ender_air' })
+	//event.remove({ id: 'gtceu:distillation_tower/distill_liquid_nether_air' })
 
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__ender_eye' })
@@ -650,6 +669,8 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:smelting/sticky_resin_from_slime' })
 
 	event.remove({ id: 'gtceu:wiremill/string_from_polycaprolactam' })
+
+	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_granite_red' })
 
 	event.remove({ id: 'gtceu:chemical_bath/black_steel_cool_down' })
 	event.remove({ id: 'gtceu:chemical_bath/black_steel_cool_down_distilled_water' })
@@ -758,6 +779,15 @@ function removeGTCEURecipes(event) {
 	armor.forEach(armor => {
 		event.remove({ output: armor})
 	});
+
+	event.remove({ id: 'gtceu:shapeless/centrifuged_ore_to_dust_plutonium' })
+	event.remove({ id: 'gtceu:centrifuge/centrifuge_plutonium_dirty_dust_to_dust' })
+	event.remove({ id: 'gtceu:centrifuge/centrifuge_plutonium_pure_dust_to_dust' })
+	event.remove({ id: 'gtceu:large_chemical_reactor/radon_from_uranium_238' })
+	removeMaceratorRecipe(event, 'macerate_plutonium_refined_ore_to_dust')
+	event.remove({ id: 'gtceu:ore_washer/wash_plutonium_pure_dust_to_dust' })
+	event.remove({ id: 'gtceu:ore_washer/wash_plutonium_dirty_dust_to_dust' })
+	event.remove({ id: 'gtceu:forge_hammer/hammer_plutonium_refined_ore_to_dust' })
 }
 
 function removeMaceratorRecipe(event, id) {

@@ -185,8 +185,32 @@ const registerGTCEURecipes = (event) => {
 		.duration(300)
 		.EUt(2)
 
+	event.recipes.gtceu.compressor('plant_ball_from_moon_plants')
+		.itemInputs('4x #tfg:moon_plants')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
+	event.recipes.gtceu.compressor('plant_ball_from_mars_plants')
+		.itemInputs('4x #tfg:mars_plants')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_corals')
 		.itemInputs('4x #tfc:corals')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
+	event.recipes.gtceu.compressor('plant_ball_from_misc_plants')
+		.itemInputs('4x #createaddition:plants')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
+	event.recipes.gtceu.compressor('plant_ball_from_wart_blocks')
+		.itemInputs('4x #minecraft:wart_blocks')
 		.itemOutputs('gtceu:plant_ball')
 		.duration(300)
 		.EUt(2)
@@ -213,6 +237,20 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_plants')
 		.itemInputs('#tfc:plants')
+		.inputFluids("#tfc:any_water 20")
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_moon_plants')
+		.itemInputs('#tfg:moon_plants')
+		.inputFluids("#tfc:any_water 20")
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_mars_plants')
+		.itemInputs('#tfg:mars_plants')
 		.inputFluids("#tfc:any_water 20")
 		.outputFluids(Fluid.of('gtceu:biomass', 100))
 		.duration(100)
@@ -250,6 +288,13 @@ const registerGTCEURecipes = (event) => {
 		.itemInputs('#createaddition:plants')
 		.inputFluids("#tfc:any_water 20")
 		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_wart_blocks')
+		.itemInputs('#minecraft:wart_blocks')
+		.inputFluids("#tfc:any_water 20")
+		.outputFluids(Fluid.of('gtceu:biomass', 50))
 		.duration(100)
 		.EUt(3)
 
@@ -397,7 +442,8 @@ const registerGTCEURecipes = (event) => {
 		.itemInputs('2x #forge:dusts/iridium', '#forge:dusts/diamond')
 		.circuit(10)
 		.itemOutputs('gtceu:nether_star_dust')
-		.inputFluids(Fluid.of('gtceu:nether_air', 1000))
+		// TODO: change to something else with venus
+		.inputFluids(Fluid.of('gtceu:neon', 1000))
 		.duration(700)
 		.EUt(2720)
 
@@ -569,6 +615,21 @@ const registerGTCEURecipes = (event) => {
 		event.recipes.createFilling('tfg:unfinished_basic_electronic_circuit', ['tfg:unfinished_basic_electronic_circuit', Fluid.of('gtceu:glue', 50)]),
 		event.recipes.createDeploying('tfg:unfinished_basic_electronic_circuit', ['tfg:unfinished_basic_electronic_circuit', '#forge:plates/steel']),
 	]).transitionalItem('tfg:unfinished_basic_electronic_circuit').loops(1).id('tfg:gtceu/sequenced_assembly/basic_electronic_circuit')
+
+	event.remove({ id: 'gtceu:shaped/electronic_circuit_mv' })
+
+	event.recipes.createSequencedAssembly([
+		'gtceu:good_electronic_circuit',
+	], 'gtceu:phenolic_printed_circuit_board', [
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', 'gtceu:diode']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', 'gtceu:diode']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', '#forge:single_wires/copper']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', '#forge:single_wires/copper']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', 'gtceu:basic_electronic_circuit']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', 'gtceu:basic_electronic_circuit']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', 'gtceu:basic_electronic_circuit']),
+		event.recipes.createDeploying('tfg:unfinished_good_electronic_circuit', ['tfg:unfinished_good_electronic_circuit', '#forge:plates/steel']),
+	]).transitionalItem('tfg:unfinished_good_electronic_circuit').loops(1).id('tfg:gtceu/sequenced_assembly/good_electronic_circuit')
 
 	//#endregion
 
@@ -1335,29 +1396,28 @@ const registerGTCEURecipes = (event) => {
 	event.shapeless(Item.of('gtceu:matchbox', '{usesLeft:8}'), ['minecraft:paper', '8x gtceu:matches'])
 		.id('tfg:shapeless/matchbox')
 
-	// TODO: Nano CPU use Nuclear Tritiated Water COMMENTED UNTIL MARS IS OUT
-	/*
-		event.remove({ id: 'gtceu:chemical_reactor/nano_cpu_wafer' })
-		event.remove({ id: 'gtceu:large_chemical_reactor/nano_cpu_wafer' })
+
+	event.remove({ id: 'gtceu:chemical_reactor/nano_cpu_wafer' })
+	event.remove({ id: 'gtceu:large_chemical_reactor/nano_cpu_wafer' })
 		
-		event.recipes.gtceu.chemical_reactor('tfg:nano_cpu_wafer')
-			.inputFluids(Fluid.of('gtceu:tritiated_water', 576))
-			.itemInputs('gtceu:cpu_wafer', '16x gtceu:carbon_fibers')
-			.itemOutputs('gtceu:nano_cpu_wafer')
-			.duration(20*60)
-			.EUt(GTValues.VA[GTValues.EV])
-			.cleanroom(CleanroomType.CLEANROOM)
+	event.recipes.gtceu.chemical_reactor('tfg:nano_cpu_wafer')
+		.inputFluids(Fluid.of('gtceu:tritiated_water', 576))
+		.itemInputs('gtceu:cpu_wafer', '16x gtceu:carbon_fibers')
+		.itemOutputs('gtceu:nano_cpu_wafer')
+		.duration(20*60)
+		.EUt(GTValues.VA[GTValues.EV])
+		.cleanroom(CleanroomType.CLEANROOM)
 	
-		// Remove Plutonium from centrifuging Uranium dust
+	// Remove Plutonium from centrifuging Uranium dust
 	
-		event.remove({ id: 'gtceu:centrifuge/uranium_238_separation' })
+	event.remove({ id: 'gtceu:centrifuge/uranium_238_separation' })
 	
-		event.recipes.gtceu.centrifuge('tfg:uranium_238_separation')
-			.itemInputs('#forge:dusts/uranium')
-			.chancedOutput('#forge:tiny_dusts/uranium_235', 2300, 0)
-			.duration(20*40)
-			.EUt(GTValues.VA[GTValues.HV])
-	*/
+	event.recipes.gtceu.centrifuge('tfg:uranium_238_separation')
+		.itemInputs('#forge:dusts/uranium')
+		.chancedOutput('#forge:tiny_dusts/uranium_235', 2300, 0)
+		.duration(20*40)
+		.EUt(GTValues.VA[GTValues.HV])
+	
 	// Change the Large Centrifugal Unit to be craftable at EV
 
 	event.remove({ id: 'gtceu:shaped/large_centrifuge' })
@@ -1381,6 +1441,43 @@ const registerGTCEURecipes = (event) => {
 		.outputFluids('gtceu:wood_gas 100')
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.LV])
+
+	event.remove({ id: 'gtceu:circuit_assembler/mainframe_iv_asmd_soldering_alloy'})
+	event.remove({ id: 'gtceu:circuit_assembler/mainframe_iv'})
+	event.remove({ id: 'gtceu:circuit_assembler/mainframe_iv_soldering_alloy'})
+	event.remove({ id: 'gtceu:circuit_assembler/mainframe_iv_asmd'})
+
+	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv')
+		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '8x #gtceu:inductors', '16x #gtceu:capacitors', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
+		.inputFluids(Fluid.of('gtceu:tin', 576))
+		.itemOutputs('gtceu:micro_processor_mainframe')
+		.duration(20 * 40)
+		.EUt(GTValues.VA[GTValues.HV])
+		.cleanroom(CleanroomType.CLEANROOM)
+
+	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv_soldering_alloy')
+		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '8x #gtceu:inductors', '16x #gtceu:capacitors', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.itemOutputs('gtceu:micro_processor_mainframe')
+		.duration(20 * 40)
+		.EUt(GTValues.VA[GTValues.HV])
+		.cleanroom(CleanroomType.CLEANROOM)
+
+	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv_asmd')
+		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '2x gtceu:advanced_smd_inductor', '4x gtceu:advanced_smd_capacitor', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
+		.inputFluids(Fluid.of('gtceu:tin', 576))
+		.itemOutputs('gtceu:micro_processor_mainframe')
+		.duration(20 * 20)
+		.EUt(GTValues.VA[GTValues.HV])
+		.cleanroom(CleanroomType.CLEANROOM)
+
+	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv_asmd_soldering_alloy')
+		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '2x gtceu:advanced_smd_inductor', '4x gtceu:advanced_smd_capacitor', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.itemOutputs('gtceu:micro_processor_mainframe')
+		.duration(20 * 20)
+		.EUt(GTValues.VA[GTValues.HV])
+		.cleanroom(CleanroomType.CLEANROOM)
 
 	// Buttons
 	removeCutterRecipe(event, 'blackstone_button')
@@ -1483,4 +1580,143 @@ const registerGTCEURecipes = (event) => {
 
 	event.replaceInput({ id: 'gtceu:assembler/phenolic_board' }, '#tfg:wood_dusts', 'tfg:high_density_treated_fiberboard')
 
+	//#region New Tungsten Line
+
+	event.remove({ id: 'gtceu:chemical_bath/tungstic_acid_from_scheelite' })
+	event.remove({ id: 'gtceu:chemical_bath/tungstic_acid_from_tungstate' })
+	event.remove({ id: 'gtceu:electrolyzer/tungstic_acid_electrolysis' })
+
+	// Transform Tungstate and Scheelite
+
+	event.recipes.gtceu.large_chemical_reactor('tfg:scheelite_to_sodium_tungstate')
+		.itemInputs(Item.of('gtceu:scheelite_dust', 6))
+		.itemInputs(Item.of('gtceu:soda_ash_dust', 6))
+		.itemOutputs(Item.of('tfg:sodium_tungstate_dust', 6))
+		.itemOutputs(Item.of('gtceu:calcite_dust', 6))
+		.duration(20*12)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.large_chemical_reactor('tfg:tungstate_to_sodium_tungstate')
+		.itemInputs(Item.of('gtceu:tungstate_dust', 6))
+		.itemInputs(Item.of('gtceu:soda_ash_dust', 6))
+		.itemOutputs(Item.of('tfg:sodium_tungstate_dust', 6))
+		.itemOutputs(Item.of('gtceu:lithium_dust', 2))
+		.itemOutputs(Item.of('gtceu:carbon_dust', 1))
+		.outputFluids(Fluid.of('gtceu:oxygen', 3000))
+		.duration(20*12)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.chemical_bath('tfg:tungstate_to_tungsten_acid')
+		.inputFluids(Fluid.of('gtceu:hydrochloric_acid', 12000))
+		.itemInputs(Item.of('tfg:sodium_tungstate_dust', 6))
+		.itemOutputs(Item.of('gtceu:salt_dust', 48))
+		.itemOutputs(Item.of('gtceu:tungstic_acid_dust', 6))
+		.duration(20*24)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.chemical_bath('tfg:tungsten_acid_to_ammonium_tungstate')
+		.inputFluids(Fluid.of('gtceu:ammonia', 10000))
+		.itemInputs(Item.of('gtceu:tungstic_acid_dust', 12))
+		.itemOutputs(Item.of('tfg:ammonium_tungstate_dust', 1))
+		.duration(20*16)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.evaporation_tower('tfg:ammonium_tungstate_to_apt_h')
+		.itemInputs(Item.of('tfg:ammonium_tungstate_dust', 1))
+		.itemOutputs(Item.of('tfg:apt_gem', 1))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
+		.duration(20*120)
+		.EUt(GTValues.VHA[GTValues.HV])
+
+	event.recipes.gtceu.distillery('tfg:ammonium_tungstate_to_apt')
+		.itemInputs(Item.of('tfg:ammonium_tungstate_dust', 1))
+		.itemOutputs(Item.of('tfg:apt_gem', 1))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
+		.duration(20*120)
+		.EUt(GTValues.VHA[GTValues.HV])
+
+	event.recipes.gtceu.pyrolyse_oven('tfg:apt')
+		.itemInputs(Item.of('tfg:apt_gem', 1))
+		.itemOutputs(Item.of('tfg:tungsten_oxide_dust', 3))
+		.outputFluids(Fluid.of('gtceu:ammonia', 10000))
+		.duration(20*36)
+		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(1)
+
+	event.recipes.gtceu.pyrolyse_oven('tfg:apt_nitrogen')
+		.itemInputs(Item.of('tfg:apt_gem', 1))
+		.inputFluids(Fluid.of('gtceu:nitrogen', 1000))
+		.itemOutputs(Item.of('tfg:tungsten_oxide_dust', 3))
+		.outputFluids(Fluid.of('gtceu:ammonia', 10000))
+		.duration(20*18)
+		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(2)
+
+	event.recipes.gtceu.arc_furnace('tfg:tungsten_apt')
+		.itemInputs(Item.of('tfg:tungsten_oxide_dust', 1))
+		.inputFluids(Fluid.of('gtceu:hydrogen', 1000))
+		.itemOutputs(Item.of('gtceu:tungsten_dust', 1))
+		.duration(20*2.8)
+		.EUt(GTValues.VA[GTValues.EV])
+		
+
+	// New Alloys For Turbines
+
+	event.recipes.gtceu.mixer('tfg:tungsten_bismuth_oxide_composite')
+		.itemInputs('2x #forge:dusts/bismuth', 'gtceu:tungsten_dust')
+		.inputFluids(Fluid.of('gtceu:oxygen', 3000))
+		.itemOutputs('3x tfg:tungsten_bismuth_oxide_composite_dust')
+		.duration(20 * 12)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	// Handcrafted artisanal concrete
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/marble', '#forge:dusts/gypsum'], Fluid.of('minecraft:water', 1000))
+		.outputFluid(Fluid.of('gtceu:concrete', 1000))
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/clay'], Fluid.of('minecraft:water', 500))
+		.outputFluid(Fluid.of('gtceu:concrete', 500))
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients(['#tfg:stone_dusts', '#tfg:stone_dusts', '#tfg:stone_dusts', '#forge:dusts/calcite', '#forge:dusts/gypsum'], Fluid.of('minecraft:water', 1000))
+		.outputFluid(Fluid.of('gtceu:concrete', 1000))
+
+	event.recipes.tfc.barrel_sealed(1000)
+		.inputFluid(Fluid.of('gtceu:concrete', 144))
+		.inputItem('gtceu:wood_frame')
+		.outputItem('gtceu:light_concrete')
+		.id('tfg:barrel/light_concrete')
+
+	event.recipes.tfc.barrel_sealed(1000)
+		.inputFluid(Fluid.of('gtceu:concrete', 96))
+		.inputItem('tfg:rebar_support')
+		.outputItem('tfg:reinforced_light_concrete_support')
+		.id('tfg:barrel/reinforced_light_concrete_support')
+
+	event.recipes.tfc.barrel_sealed(500)
+		.inputItem('gtceu:light_concrete')
+		.inputFluid(Fluid.of('tfc:black_dye', 18))
+		.outputItem('gtceu:dark_concrete')
+		.id('tfg:barrel/dark_concrete')
+		
+	event.recipes.tfc.barrel_sealed(500)
+		.inputItem('tfg:light_concrete_support')
+		.inputFluid(Fluid.of('tfc:black_dye', 10))
+		.outputItem('tfg:dark_concrete_support')
+		.id('tfg:barrel/dark_concrete_support')
+
+	event.recipes.tfc.barrel_sealed(500)
+		.inputItem('tfg:reinforced_light_concrete_support')
+		.inputFluid(Fluid.of('tfc:black_dye', 10))
+		.outputItem('tfg:reinforced_dark_concrete_support')
+		.id('tfg:barrel/reinforced_dark_concrete_support')
+
+	// Change
 }

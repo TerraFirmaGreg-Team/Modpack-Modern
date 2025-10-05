@@ -68,6 +68,7 @@ const registerMinecraftItemTags = (event) => {
 
     event.add('tfc:compost_greens', 'minecraft:red_mushroom_block')
     event.add('tfc:compost_greens', 'minecraft:brown_mushroom_block')
+    event.add('tfc:compost_greens', 'minecraft:mushroom_stem')
     event.add('tfc:compost_greens', 'minecraft:moss_block')
     event.add('tfc:compost_greens_low', 'minecraft:moss_carpet')
     event.add('tfc:compost_greens_low', 'minecraft:twisting_vines')
@@ -93,6 +94,8 @@ const registerMinecraftItemTags = (event) => {
 	
 	event.add('create:blaze_burner_fuel/regular', 'minecraft:coal')
 	event.add('create:blaze_burner_fuel/regular', 'minecraft:charcoal')
+
+    event.add('minecraft:wart_blocks', 'minecraft:mushroom_stem')
 }
 
 const registerMinecraftBlockTags = (event) => {
@@ -181,8 +184,15 @@ const registerMinecraftBlockTags = (event) => {
 	event.add('tfc:forge_insulation', 'minecraft:basalt');
     event.add('tfc:bloomery_insulation', 'minecraft:smooth_basalt');
 	event.add('tfc:forge_insulation', 'minecraft:smooth_basalt');
+
+    event.add('minecraft:mineable/pickaxe', 'minecraft:lantern');
     
     //#region
 
     event.removeAll('minecraft:sniffer_diggable_block')
+
+    event.add('tfc:can_be_snow_piled', 'minecraft:crimson_fungus')
+	event.add('tfc:can_be_snow_piled', 'minecraft:warped_fungus')
+	event.add('tfc:can_be_snow_piled', 'minecraft:torchflower')
+	event.add('tfc:can_be_snow_piled', 'minecraft:pitcher_plant')
 }

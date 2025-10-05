@@ -48,6 +48,8 @@ const registerAdAstraMaterials = (event) => {
 			GTMaterialFlags.DISABLE_DECOMPOSITION,
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
 			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_ROD,
+			GTMaterialFlags.GENERATE_FRAME,
 			GTMaterialFlags.DISABLE_ALLOY_BLAST
 		)
 
@@ -79,4 +81,12 @@ const registerAdAstraMaterials = (event) => {
 		)
 
 	// #endregion
+}
+
+const registerAdAstraMaterialModification = (event) => {
+
+	const $FLUID_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties')
+
+	// Ostrum fluid pipe - same flow rate as titanium, higher temp range
+	GTMaterials.get('ostrum').setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(3700, 150, true, false, true, false));
 }

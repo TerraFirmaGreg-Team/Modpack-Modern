@@ -13,6 +13,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:compost_greens_high', 'tfg:rapeseed_product')
 	event.add('tfc:compost_greens_high', 'tfg:sunflower_product')
 	event.add('tfc:compost_greens_high', 'tfg:flax_product')
+	event.add('tfc:compost_greens_high', 'tfg:lunar_chorus_flower')
 	event.add('tfg:water_breathing_ingredients', 'tfg:rapeseed_product')
 	event.add('tfg:night_vision_ingredients', 'tfg:sunflower_product')
 
@@ -50,6 +51,12 @@ const registerTFGItemTags = (event) => {
 	//Circuit Stuff
 	event.add('tfg:components/uv_leds', 'tfg:uv_led')
 	event.add('tfg:components/uv_leds', 'tfg:smd_uv_led')
+
+	//Fission Nucleat Fuel
+	event.add('deafission:fuels', 'tfg:thorium_rod')
+	event.add('deafission:fuels', 'tfg:uranium_rod')
+	event.add('deafission:fuels', 'tfg:plutonium_rod')
+	event.add('tfg:fission_rods', '#deafission:fuels')
 
 	//#region Tools & Armor
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/wood')
@@ -100,6 +107,8 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:wax', 'tfg:paraffin_wax')
 	event.add('forge:wax', 'firmalife:beeswax')
 	event.add('forge:wax', 'tfg:conifer_rosin')
+	event.add('forge:wax', 'tfg:crimsene_gem')
+	event.add('forge:wax', 'tfg:warpane_gem')
 
 	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
 	// #endregion
@@ -664,7 +673,6 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:stone_bricks', 'gtceu:red_granite_bricks')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:red_granite_bricks')
 	event.add('tfc:rock/bricks', 'gtceu:red_granite_bricks')
-	event.add('tfg:red_granite_cutter_set', 'gtceu:red_granite_bricks')
 
 	event.add('forge:stone_bricks', 'gtceu:mossy_red_granite_bricks')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:mossy_red_granite_bricks')
@@ -680,43 +688,36 @@ const registerTFGItemTags = (event) => {
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:red_granite_tile')
 	event.add('tfc:rock/bricks', 'gtceu:red_granite_tile')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:red_granite_tile')
-	event.add('tfg:red_granite_cutter_set', 'gtceu:red_granite_tile')
 
 	event.add('forge:stone_bricks', 'gtceu:square_red_granite_bricks')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:square_red_granite_bricks')
 	event.add('tfc:rock/bricks', 'gtceu:square_red_granite_bricks')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:square_red_granite_bricks')
-	event.add('tfg:red_granite_cutter_set', 'gtceu:square_red_granite_bricks')
 
 	event.add('forge:stone_bricks', 'gtceu:red_granite_windmill_a')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:red_granite_windmill_a')
 	event.add('tfc:rock/bricks', 'gtceu:red_granite_windmill_a')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:red_granite_windmill_a')
-	event.add('tfg:red_granite_cutter_set', 'gtceu:red_granite_windmill_a')
 
 	event.add('forge:stone_bricks', 'gtceu:red_granite_windmill_b')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:red_granite_windmill_b')
 	event.add('tfc:rock/bricks', 'gtceu:red_granite_windmill_b')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:red_granite_windmill_b')
-	event.add('tfg:red_granite_cutter_set', 'gtceu:red_granite_windmill_b')
 
 	event.add('forge:stone_bricks', 'gtceu:small_red_granite_bricks')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:small_red_granite_bricks')
 	event.add('tfc:rock/bricks', 'gtceu:small_red_granite_bricks')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:small_red_granite_bricks')
-	event.add('tfg:red_granite_cutter_set', 'gtceu:small_red_granite_bricks')
 
 	event.add('forge:stone_bricks', 'gtceu:red_granite_small_tile')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:red_granite_small_tile')
 	event.add('tfc:rock/bricks', 'gtceu:red_granite_small_tile')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:red_granite_small_tile')
-	event.add('tfg:red_granite_cutter_set', 'gtceu:red_granite_small_tile')
 
 	event.add('forge:stone_bricks', 'gtceu:chiseled_red_granite')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:chiseled_red_granite')
 	event.add('tfc:rock/bricks', 'gtceu:chiseled_red_granite')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:chiseled_red_granite')
-	event.add('tfg:red_granite_cutter_set', 'gtceu:chiseled_red_granite')	
 	
 	// Permafrost (???) [NA]
 	event.remove('tfc:metamorphic_rock', 'tfg:loose/permafrost')
@@ -741,15 +742,20 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:moon_plants', 'tfg:lunar_sprouts')
 
 	event.add('minecraft:dirt', 'tfg:grass/mars_dirt')
+	event.add('minecraft:dirt', 'tfg:grass/mars_clay_dirt')
 	event.add('tfc:dirt', 'tfg:grass/mars_dirt')
+	event.add('tfc:dirt', 'tfg:grass/mars_clay_dirt')
 	event.add('tfc:grass', 'tfg:grass/amber_mycelium')
+	event.add('tfc:grass', 'tfg:grass/amber_clay_mycelium')
 	event.add('tfc:grass', 'tfg:grass/rusticus_mycelium')
+	event.add('tfc:grass', 'tfg:grass/rusticus_clay_mycelium')
 	event.add('tfc:grass', 'tfg:grass/sangnum_mycelium')
+	event.add('tfc:grass', 'tfg:grass/sangnum_clay_mycelium')
 	event.add('tfc:farmland', 'tfg:grass/mars_farmland')
-	event.add('minecraft:mineable/shovel', 'tfg:grass/mars_dirt')
-	event.add('minecraft:mineable/shovel', 'tfg:grass/amber_mycelium')
-	event.add('minecraft:mineable/shovel', 'tfg:grass/rusticus_mycelium')
-	event.add('minecraft:mineable/shovel', 'tfg:grass/sangnum_mycelium')
+	event.add('tfc:paths', 'tfg:grass/mars_path')
+	event.add('tfc:kaolin_clay', 'tfg:grass/amber_kaolin_mycelium')
+	event.add('tfc:kaolin_clay', 'tfg:grass/rusticus_kaolin_mycelium')
+	event.add('tfc:kaolin_clay', 'tfg:grass/sangnum_kaolin_mycelium')
 
 	// #endregion
 
@@ -949,6 +955,29 @@ const registerTFGBlockTags = (event) => {
 	event.add('buildinggadgets2:deny', 'tfg:geyser_source_small')
 	event.add('ae2:blacklisted/spatial', 'tfg:geyser_source_small')
 
+	//#region Fision Components
+    var COMPONENTS = 'deafission:components';
+    
+	// Max Heating
+    event.add(COMPONENTS, 'tfg:glacian_wool_frame'); // Max Heat 2
+	event.add(COMPONENTS, 'minecraft:blue_ice'); // Max Heat 0.5
+    event.add(COMPONENTS, 'tfg:aes_insulation_frame'); // Max Heat 1
+	event.add(COMPONENTS, 'tfg:moderate_core_frame'); // Max Heat 10
+	event.add(COMPONENTS, 'tfg:impure_moderate_core_frame'); // Max Heat 5
+	//event.add(COMPONENTS, 'minecraft:blue_ice'); // Max Heat 0.5
+
+	event.add(COMPONENTS, 'minecraft:bedrock'); // Max Heat 10000 CREATIVE BLOCK
+
+	// Increase Throttle
+    //event.add(COMPONENTS, 'minecraft:iron_block');
+    
+	// Increase Effiency
+    //event.add(COMPONENTS, 'minecraft:packed_ice');
+
+	event.add('tfg:fission_coolant','deafission:components')
+
+	//#endregion
+
 	// #region Nether blocks
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')
 	event.add('minecraft:moss_replaceable', 'tfg:rock/hardened_deepslate')
@@ -985,6 +1014,7 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfc:dirt', 'tfg:grass/mars_dirt')
 	event.add('tfc:dirt', 'tfg:grass/mars_clay_dirt')
 	event.add('tfc:farmland', 'tfg:grass/mars_farmland')
+	event.add('tfc:paths', 'tfg:grass/mars_path')
 	event.add('tfc:grass', 'tfg:grass/amber_mycelium')
 	event.add('tfc:grass', 'tfg:grass/rusticus_mycelium')
 	event.add('tfc:grass', 'tfg:grass/sangnum_mycelium')
@@ -994,13 +1024,24 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfc:grass', 'tfg:grass/amber_kaolin_mycelium')
 	event.add('tfc:grass', 'tfg:grass/rusticus_kaolin_mycelium')
 	event.add('tfc:grass', 'tfg:grass/sangnum_kaolin_mycelium')
+	event.add('tfc:kaolin_clay', 'tfg:grass/amber_kaolin_mycelium')
+	event.add('tfc:kaolin_clay', 'tfg:grass/rusticus_kaolin_mycelium')
+	event.add('tfc:kaolin_clay', 'tfg:grass/sangnum_kaolin_mycelium')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/amber_mycelium')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/rusticus_mycelium')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/sangnum_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/amber_clay_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/rusticus_clay_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/sangnum_clay_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/amber_kaolin_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/rusticus_kaolin_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/sangnum_kaolin_mycelium')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/mars_farmland')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/mars_path')
 	event.add('tfc:can_landslide', 'tfg:grass/mars_dirt')
 	event.add('tfc:can_landslide', 'tfg:grass/mars_clay_dirt')
 	event.add('tfc:can_landslide', 'tfg:grass/mars_farmland')
+	event.add('tfc:can_landslide', 'tfg:grass/mars_path')
 	event.add('tfc:can_landslide', 'tfg:grass/amber_mycelium')
 	event.add('tfc:can_landslide', 'tfg:grass/rusticus_mycelium')
 	event.add('tfc:can_landslide', 'tfg:grass/sangnum_mycelium')
@@ -1010,12 +1051,25 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfc:can_landslide', 'tfg:grass/amber_kaolin_mycelium')
 	event.add('tfc:can_landslide', 'tfg:grass/rusticus_kaolin_mycelium')
 	event.add('tfc:can_landslide', 'tfg:grass/sangnum_kaolin_mycelium')
-	event.add('minecraft:mushroom_grow_block', '#tfc:dirt')
-	event.add('minecraft:mushroom_grow_block', '#tfc:grass')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/mars_dirt')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/mars_clay_dirt')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/mars_path')
 	event.add('minecraft:mineable/shovel', 'tfg:grass/mars_farmland')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/amber_mycelium')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/amber_clay_mycelium')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/amber_kaolin_mycelium')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/rusticus_mycelium')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/rusticus_clay_mycelium')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/rusticus_kaolin_mycelium')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/sangnum_mycelium')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/sangnum_clay_mycelium')
+	event.add('minecraft:mineable/shovel', 'tfg:grass/sangnum_kaolin_mycelium')
 	event.add('tfc:bush_plantable_on', 'tfg:grass/mars_farmland')
 	event.add('tfc:grass_plantable_on', 'tfg:grass/mars_farmland')
 	event.add('tfc:creeping_plantable_on', 'tfg:grass/mars_farmland')
+
+	event.add('minecraft:mushroom_grow_block', '#tfc:dirt')
+	event.add('minecraft:mushroom_grow_block', '#tfc:grass')
 	// #endregion
 
 	event.add('tfg:harvester_harvestable', '#tfc:fruit_tree_leaves')
@@ -1049,6 +1103,13 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfg:decorative_plant_attachable', 'minecraft:warped_wart_block')
 	event.add('tfg:decorative_plant_attachable', 'betterend:cave_bush')
 	event.add('tfg:decorative_plant_attachable', 'betterend:lucernia_leaves')
+
+	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
+	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
+	event.add('tfcambiental:cold_stuff', 'tfg:mars_ice')
+	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
+	event.add('minecraft:ice', 'tfg:mars_ice')
+	event.add('minecraft:ice', 'tfg:dry_ice')
 }
 //#endregion
 
@@ -1080,7 +1141,6 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:usable_in_barrel', 'gtceu:seed_oil')
 	
 	event.add('forge:liquid', 'tfg:semiheavy_ammoniacal_water')
-	event.add('waves:has_waves', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:any_water', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:hydrating', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:drinkables', 'tfg:semiheavy_ammoniacal_water')
@@ -1124,40 +1184,58 @@ const registerTFGBiomeTags = (event) => {
 	event.add('tfg:has_structure/illages', 'tfc:plateau')
 	event.add('tfg:has_structure/illages', 'tfc:old_mountains')
 
+	event.add('tfg:never_has_structure/illages', '#tfc:is_lake')
+	event.add('tfg:never_has_structure/illages', '#tfc:is_ocean')
+	event.add('tfg:never_has_structure/illages', '#tfc:is_river')
+
 	// #endregion
 
 	// #region Nether biomes
-
+	event.add('tfg:nether_biomes', 'tfg:nether/lush_hollow')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/lush_hollow')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/lush_hollow')
 	event.add('minecraft:allows_surface_slime_spawns', 'tfg:nether/lush_hollow')
 	event.add('minecraft:spawns_cold_variant_frogs', 'tfg:nether/lush_hollow')
-
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/decaying_caverns')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/decaying_caverns')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/decaying_caverns')
 	event.add('minecraft:allows_surface_slime_spawns', 'tfg:nether/decaying_caverns')
 	event.add('minecraft:spawns_warm_variant_frogs', 'tfg:nether/decaying_caverns')
 	event.add('minecraft:has_closer_water_fog', 'tfg:nether/decaying_caverns')
-
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/basalt_deltas')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/basalt_deltas')
-
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/ash_forest')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/ash_forest')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/ash_forest')
-
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/lava_floes')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/lava_floes')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/lava_floes')
-
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/webbed_lair')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/webbed_lair')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/webbed_lair')
-
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/gneiss_caves')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/gneiss_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/gneiss_caves')
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/diorite_caves')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/diorite_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/diorite_caves')
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/gabbro_caves')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/gabbro_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/gabbro_caves')
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/granite_caves')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/granite_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/granite_caves')
+	
+	event.add('tfg:nether_biomes', 'tfg:nether/schist_caves')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/schist_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/schist_caves')
 

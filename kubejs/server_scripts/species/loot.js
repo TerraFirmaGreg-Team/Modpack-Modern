@@ -21,6 +21,7 @@ function registerSpeciesLoots(event) {
 
 		
 	event.addEntityLootModifier('species:goober')
+		.addLoot('tfc:large_raw_hide')
 		.addWeightedLoot([4, 6], ['minecraft:bone'])
 		.addWeightedLoot([12, 20], ['tfg:food/raw_goober_meat'])
 
@@ -30,6 +31,7 @@ function registerSpeciesLoots(event) {
 
 		
 	event.addEntityLootModifier('species:springling')
+		.addLoot('tfc:small_raw_hide')
 		.addWeightedLoot([2, 4], ['minecraft:bone'])
 		.addWeightedLoot([6, 8], ['tfg:food/raw_springling_chops'])
 
@@ -40,6 +42,7 @@ function registerSpeciesLoots(event) {
 
 	// TODO: meat
 	event.addEntityLootModifier('species:cruncher')
+		.addLoot('tfc:large_raw_hide')
 		.addWeightedLoot([10, 13], ['minecraft:bone'])
 
 

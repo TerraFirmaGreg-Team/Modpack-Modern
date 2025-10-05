@@ -113,7 +113,8 @@ global.TFG_MACHINE_CASINGS = [
 	'machine_casing_blue_solar_panel',
 	'machine_casing_green_solar_panel',
 	'machine_casing_red_solar_panel',
-	'machine_casing_mars'
+	'machine_casing_mars',
+	'machine_casing_ostrum_carbon'
 ];
 
 /**
@@ -167,8 +168,29 @@ global.FOOD_FRUIT = [
 	{name: 'shadow_berry', id: 'betterend:shadow_berry_cooked', saturation: 1, water: 5, fruit: 1.5, decay: 2 }
 ];
 
+
+global.STONE_CHARACS = { // Sets of stone block properties used for block registry.
+	deepslate:      { sound: 'deepslate',       type: "metamorphic",       mapColor: 'terracotta_grey'       },
+	blackstone:     { sound: 'deepslate',       type: "igneous_intrusive", mapColor: 'color_black'           },
+	dripstone:      { sound: 'dripstone_block', type: "sedimentary",       mapColor: 'terracotta'            },
+	crackrack:      { sound: 'netherrack',      type: "igneous_intrusive", mapColor: 'crimson_stem'          },
+	nether:         { sound: 'nether_bricks',   type: "igneous_intrusive", mapColor: 'nether'                },
+	moon:           { sound: 'stone',           type: "igneous_intrusive", mapColor: 'terracotta_cyan'       },
+	moon_deepslate: { sound: 'deepslate',       type: "igneous_intrusive", mapColor: 'terracotta_blue'       },
+	mars:           { sound: 'stone',           type: "sedimentary",       mapColor: 'terracotta_orange'     },
+	venus:          { sound: 'stone',           type: "igneous_extrusive", mapColor: 'terracotta_yellow'     },
+	mercury:        { sound: 'stone',           type: "igneous_intrusive", mapColor: 'terracotta_purple'     },
+	glacio:         { sound: 'stone',           type: "igneous_extrusive", mapColor: 'terracotta_light_blue' },
+	permafrost:     { sound: 'stone',           type: null,                mapColor: 'snow'                  },
+	red_granite:    { sound: 'stone',           type: "igneous_intrusive", mapColor: 'terracotta_red'        },
+	reconstituted:  { sound: 'stone',           type: null,                mapColor: 'stone'                 },
+	light_concrete: { sound: 'stone',           type: null,                mapColor: 'color_light_gray'      },
+	dark_concrete:  { sound: 'stone',           type: null,                mapColor: 'color_gray'            }
+}
+
+
 /** @type {Hammering[]} */
-global.HAMMERING = [
+global.HAMMERING = [ // Crushing relationships for manual block hammering, create press hammering and gtceu forge hammer crushing.
 		// Beneath
 		{ raw: 'minecraft:deepslate',                  hammered: 'minecraft:cobbled_deepslate',    duration: 10, eu: 16 },
 		{ raw: 'tfg:rock/hardened_deepslate',          hammered: 'minecraft:cobbled_deepslate',    duration: 10, eu: 16 },
@@ -275,4 +297,17 @@ global.WARMING_FOODS = [
 	'tfc:food/vegetables_soup',
 	'tfc:food/protein_soup',
 	'tfc:food/dairy_soup'
+];
+
+/**
+ * @typedef {Object} LabEqupmentContainers
+ * @property {string} type - Container Type
+ * @property {number} capacity - Max Capacity in mB
+ */
+
+/** @type {LabEqupmentContainers[]} */
+global.LAB_EQUIPMENT_CONTAINERS = [
+	{type: 'beaker', capacity: 1296},
+	{type: 'flask', capacity: 144},
+	{type: 'vial', capacity: 16}
 ];

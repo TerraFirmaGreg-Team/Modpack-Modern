@@ -66,7 +66,6 @@ function registerGTCEUBlockTags(event) {
         event.removeAllTagsFrom(item);
     });
 
-    // TODO: Ores all broke for some reason? This is a workaround for now
     event.add("minecraft:mineable/pickaxe", "#forge:ores");
     event.add("minecraft:needs_iron_tool", "#forge:ores");
 
@@ -111,4 +110,7 @@ function registerGTCEUFluidTags(event) {
     event.add("c:hidden_from_recipe_viewers", "gtceu:molten_red_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:molten_blue_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:damascus_steel");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:blaze");
+
+	event.add('firmalife:usable_in_mixing_bowl', 'gtceu:concrete')
 }

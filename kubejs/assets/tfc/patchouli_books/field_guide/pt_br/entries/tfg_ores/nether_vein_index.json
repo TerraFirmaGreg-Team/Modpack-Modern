@@ -1865,33 +1865,8 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 75%$(br)$(thing)Fonte de$(): Naquadah, Tritânio$(br)$(thing)Fórmula$(): Nq",
+      "text": "$(thing)Porcentagem$(): 100%$(br)$(thing)Fonte de$(): Naquadah, Tritânio$(br)$(thing)Fórmula$(): Nq",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Plutônio",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/plutonium"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Fonte de$(): Plutônio$(br)$(thing)Fórmula$(): Pu²³⁹$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Carcinogênico (Qualquer Contato)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -2732,7 +2707,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 220$(br)$(thing)Densidade$(): 0.55$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 29$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
+      "text": "$(thing)Raridade$(): 250$(br)$(thing)Densidade$(): 0.55$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 24$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
       "title": "Uraninita e Pechblenda",
       "type": "patchouli:text",
       "anchor": "nether_pitchblende"
@@ -2754,7 +2729,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 50%$(br)$(thing)Fonte de$(): Urânio, Tório, Chumbo$(br)$(thing)Fórmula$(): (UO₂)₃ThPb$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Carcinogênico (Qualquer Contato)$(/t)$()",
+      "text": "$(thing)Porcentagem$(): 62%$(br)$(thing)Fonte de$(): Urânio, Tório, Chumbo$(br)$(thing)Fórmula$(): (UO₂)₃ThPb$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Carcinogênico (Qualquer Contato)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -2774,13 +2749,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 50%$(br)$(thing)Fonte de$(): Urânio$(br)$(thing)Fórmula$(): UO₂$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Carcinogênico (Qualquer Contato)$(/t)$()",
+      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Fonte de$(): Urânio$(br)$(thing)Fórmula$(): UO₂$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Carcinogênico (Qualquer Contato)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Wulfenita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/wulfenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 12%$(br)$(thing)Fonte de$(): Chumbo, Molibdênio$(br)$(thing)Fórmula$(): PbMoO₄",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",

@@ -59,7 +59,6 @@ function calcCurrentTemp(averageTemp, seaLevel, playerY, calendarTicks, tempRang
 		return averageTemp + (tempDiff * (playerY / seaLevel));
 	} else {
 
-		// TODO: check this
 		let depthPercent = 1 - (playerY / 20);
 
 		let bedrockTemp = lerp(averageTemp, coreTemp, coreTempMult);
@@ -77,7 +76,7 @@ function calcCurrentTemp(averageTemp, seaLevel, playerY, calendarTicks, tempRang
  */
 function calcAverage(playerZ, scale, min, max) {
 
-	let relative = (playerZ / scale * -1) + 0.5;
+	let relative = (playerZ / (scale * -1)) + 0.5;
 
 	// relative is now 1 for peak -z, 0 for peak +z
 

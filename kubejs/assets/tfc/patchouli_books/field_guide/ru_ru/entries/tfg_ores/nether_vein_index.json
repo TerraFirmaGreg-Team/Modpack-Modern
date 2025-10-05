@@ -1756,33 +1756,8 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 75%$(br)$(thing)Хромит$(): Наквада, Тританий$(br)$(thing)Формула$(): Nq",
+      "text": "$(thing)Процент руды$(): 100%$(br)$(thing)Хромит$(): Наквада, Тританий$(br)$(thing)Формула$(): Nq",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Плутоний",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/plutonium"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Хромит$(): Плутоний$(br)$(thing)Формула$(): Pu²³⁹$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -2491,7 +2466,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 220$(br)$(thing)Плотность$(): 0.55$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 128$(br)$(thing)Размер$(): 29$(br2)$(thing)Виды камней$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Пироксенит",
+      "text": "$(thing)Редкость$(): 250$(br)$(thing)Плотность$(): 0.55$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 128$(br)$(thing)Размер$(): 24$(br2)$(thing)Виды камней$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Пироксенит",
       "title": "Уранинит и Уранит",
       "type": "patchouli:text",
       "anchor": "nether_pitchblende"
@@ -2513,7 +2488,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 50%$(br)$(thing)Хромит$(): Уран, Торий, Свинец$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
+      "text": "$(thing)Процент руды$(): 62%$(br)$(thing)Хромит$(): Уран, Торий, Свинец$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -2533,13 +2508,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 50%$(br)$(thing)Хромит$(): Уран$(br)$(thing)Формула$(): UO₂$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
+      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Хромит$(): Уран$(br)$(thing)Формула$(): UO₂$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Вульфенит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/wulfenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 12%$(br)$(thing)Хромит$(): Свинец, Молибден$(br)$(thing)Формула$(): PbMoO₄",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",

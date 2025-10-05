@@ -184,19 +184,6 @@
 			y: -15.0d
 		}
 		{
-			id: "668281162F13AA91"
-			linked_quest: "16E7CAC7BC8BFD8E"
-			x: -6.0d
-			y: -0.5d
-		}
-		{
-			icon: "gtceu:uraninite_dust"
-			id: "561FFC1C2CED7596"
-			linked_quest: "06B4AAC7DD796182"
-			x: 12.0d
-			y: -0.5d
-		}
-		{
 			id: "21670DA706D747EC"
 			linked_quest: "378F0AFCF95354B2"
 			x: 12.0d
@@ -207,6 +194,18 @@
 			linked_quest: "48C1E980F7D64317"
 			x: -3.0d
 			y: -13.0d
+		}
+		{
+			id: "68F9EF067F3F0F59"
+			linked_quest: "3F77D528961D5C5E"
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			id: "50BB4A87A144C6CD"
+			linked_quest: "2814C6FA71B07C95"
+			x: 12.0d
+			y: -0.5d
 		}
 	]
 	quests: [

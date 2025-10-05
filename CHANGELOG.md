@@ -4,6 +4,57 @@
 ### Changes
 ### Bug fixes
 
+## [0.11.0] - 05-10-2025
+- WARNING! If you're upgrading your world from 0.10 to 0.11, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.10-to-0.11). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
+### Mars
+- Build an upgraded rocket and set off to Mars, a long awaited new dimension! You can get started in EV.
+- We're still finishing it up, so a few things aren't done yet. Please check [our TODO list](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/discussions/1744) before sending a bug report!
+### EV changes
+- Radon, Plutonium, the Microprocessor Mainframe and Nano Circuits are now locked behind Fission tech. You shouldn't need IV-tier circuits for anything before then, please let us know if we've missed something.
+- Plutonium ore has been removed from the Beneath.
+- Tungsten now has a more complicated refinement process! It's pretty straightforward if you just need a little of it, but it has a fully loopable recipe chain too!
+- The Netherarium and Enderarium have been removed. You will be able to get all their important outputs from Mars. If you have any nether/ender air stored, distill it because those recipes will be going away soon too.
+### Create changes
+- Water wheels and windmills are now Greate tiered! Small water wheels are ULS (32 SU max), large water wheels and windmills are LS (128 SU max).
+- Large water wheels are now more expensive to craft (and now need steel), but also generate 128 SU by themselves, so you don't need to double them up any more. All water wheels now require actual rivers to rotate at their full effectiveness. You can still use them in oceans and lakes at partial efficiency.
+- Windmill Sail Frames no longer generate SU, but are cheaper to craft, only needing a single wrought iron rod per 8 frames. Windmills now also require large open spaces to work at full strength.
+- Water wheels and windmills no longer work in orbit or on the moon, and water wheels no longer work in the Beneath.
+- Blaze burners now only need regular steel to craft, so they are the best option if you want on-demand power generation anywhere you want. (#1889) @TreyR9
+- Removed all passive sources of steam engine heating. @Pyritie
+- Create Packagers/Jar Packagers are now significantly cheaper to craft (#1892) @airrice 
+- Create Casings now need stripped logs instead of any logs @Pyritie
+### AE2 changes
+- Programmed Circuit Card has been removed because it was incompatible with the above additions. Making several machines for different circuits is intended, however if you need to do something like make a whole assembler for a single unique recipe, let us know and we can move the circuit numbers around.
+- This is because we've moved to a new AE2 fork which comes with a [lot of new features](https://cdn.discordapp.com/attachments/1378754174983868416/1418355912095039570/image.png?ex=68e39321&is=68e241a1&hm=2846f781dbb856cee89a3f80ea3200e0e36840bb10305722b0304240ee1fe6b8&)! Shoutouts to [Cosmic Frontiers](https://www.curseforge.com/minecraft/modpacks/cosmic-frontiers) for their work on this.
+- Added the Interplanetary Wireless Card, an infinite-range, cross-dimension upgrade for your wireless terminal but costs a lot of power to transfer items. Great for if you forgot something at home, but not useful for mass logistics.
+- Universal Wireless Terminal is now obtainable at EV instead of IV
+### Other changes
+- Significantly increased durability of hiking boots, and now red steel ones have even more durability while blue steel ones increase your speed a little more (#1894) @Nashy1232
+- EV-tier guns and ammo now require titanium or HSLA instead of tungsten for some crafts @BlueBoat29
+- Improved placement of Illages so now they should never generate on top of a river, increased the number of mobs they have, and nerfed their loot a little @Pyritie
+- You can now use honey to make jam in a food processor (#1921) @ShadowDimentio
+- Your first MV circuit now needs a sequenced assembly instead of a crafting table recipe @Pyritie
+- Added recipes for making liquid concrete (for supports) with barrels and mixing bowl @Pyritie
+- Added a mixer recipe for bio diesel to get started @TomPlop
+- Added more stone supports, aqueducts, and many other stone type fixes (#1919) @vidal-adrien
+- Added sandpaper recipes for earlier gem rods @Pyritie
+### Bug fixes
+- Soup can no longer kill you from overheating @BlueBoat29
+- Air Distributors now consume as much gas as they should, instead of significantly more (#1760) @Bumperdo09
+- Fixed not being able to put igneous intrusive stones into the ore sack (#1893) @Nashy1232
+- Fixed food processor jam recipes not accepting honey (#1896) @Xaligal
+- Fixed stainless steel needles being consumed in sewing-type crafts (#1900) @Redeix
+- Updated boiler minecart models and textures (#1900) @Redeix
+- Fixed flux dupe using filled sea shells (#1903) @Redeix
+- Fixed some more dupes with tool heads and whisks (#1576) @Pyritie
+- Fixed missing recipe for raw to polished alabaster @Pyritie
+- Fixed food processor not being able to cut Basil properly (#1934) @aldp2883
+- Fixed food processor outputting only 1 shredded cheese instead of 4 (#1925) @aldp2883
+- Fixed some more stack size issues with the assembly line (#1952)
+### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry
+
 ## [0.10.17] - 30-09-2025
 ### Bug fixes
 - Fixed not being able to use some extruder molds in the Curving Press @Pyritie

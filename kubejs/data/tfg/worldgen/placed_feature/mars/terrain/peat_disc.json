@@ -6,18 +6,19 @@
 			"chance": 200
 		},
 		{
-			"type": "minecraft:in_square"
-		},
-		{
-			"type": "minecraft:heightmap",
-			"heightmap": "OCEAN_FLOOR_WG"
+			"type": "tfc:climate",
+			"min_temperature": -85,
+			"min_forest": "edge"
 		},
 		{
 			"type": "minecraft:biome"
 		},
 		{
-			"type": "tfc:climate",
-			"min_forest": "edge"
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR_WG"
 		}
 	]
 }
