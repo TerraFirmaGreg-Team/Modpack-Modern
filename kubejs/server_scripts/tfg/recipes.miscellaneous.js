@@ -1327,6 +1327,18 @@ function registerTFGMiscellaneousRecipes(event) {
 		'tfg:flax_tow'
 	).id('tfg:scraping/flax_tow')
 
+	event.recipes.gtceu.cutter('tfg:flax_line_in_cutter')
+		.itemInputs('tfg:flax_product')
+		.itemOutputs('2x tfg:flax_line', 'tfg:flax_waste')
+		.duration(60)
+		.EUt(2)
+
+	event.recipes.gtceu.cutter('tfg:flax_tow_in_cutter')
+		.itemInputs('tfg:flax_waste')
+		.itemOutputs('1x tfg:flax_tow', '1x tfc:groundcover/humus')
+		.duration(60)
+		.EUt(2)
+
 	event.recipes.gtceu.centrifuge('tfg:flax_product')
 		.itemInputs('tfg:flax_product')
 		.itemOutputs('2x tfg:flax_line', 'tfg:flax_tow', 'tfc:groundcover/humus')
