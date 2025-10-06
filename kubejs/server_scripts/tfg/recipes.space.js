@@ -395,7 +395,7 @@ function registerTFGSpaceRecipes(event) {
 
 	event.recipes.gtceu.mixer('tfg:mars_sap')
 		.itemInputs('#forge:dusts/warpane', '#forge:dusts/crimsene')
-		.inputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000), Fluid.of('gtceu:krypton', 1000))
+		.inputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000), Fluid.of('gtceu:krypton', 500))
 		.itemOutputs('#forge:dusts/mycelienzene')
 		.duration(30 * 20)
 		.EUt(GTValues.VA[GTValues.EV])
