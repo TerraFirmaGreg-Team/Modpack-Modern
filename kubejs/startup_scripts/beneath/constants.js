@@ -3,7 +3,6 @@
 
 global.BENEATH_DISABLED_ITEMS = [
 	"beneath:cobblerack",
-	"beneath:crackrack_rock",
 	"beneath:lost_page",
 	"beneath:ore/slimed_netherrack",
 	"beneath:raw_slime",
