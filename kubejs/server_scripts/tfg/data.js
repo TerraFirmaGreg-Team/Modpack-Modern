@@ -24,6 +24,9 @@ function registerTFGHeatData(event) {
 	event.itemHeat("tfg:sunflower_product", 1, null, null);
 	event.itemHeat("tfg:roasted_sunflower_seeds", 1, null, null);
 	event.itemHeat("#tfc:powders", 1, null, null);
+
+	event.itemHeat('betterend:cave_pumpkin_pie_raw', 1.0, null, null);
+    event.itemHeat('betterend:cave_pumpkin_pie', 1.0, null, null);
 }
 
 /** @param {Internal.TFCDataEventJS} event */
