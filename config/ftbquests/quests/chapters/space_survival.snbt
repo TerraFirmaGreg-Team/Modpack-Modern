@@ -712,10 +712,17 @@
 			y: -4.0d
 		}
 		{
-			description: [""]
+			description: [
+				"{quests.extreme_voltage.mars.desc.1}"
+				"{@pagebreak}"
+				"{quests.extreme_voltage.mars.desc.2}"
+				"{@pagebreak}"
+				"{quests.extreme_voltage.mars.desc.3}"
+			]
 			id: "1777E6C81C8353D5"
 			shape: "octagon"
 			size: 3.0d
+			subtitle: "{quests.extreme_voltage.mars.subtitle}"
 			tasks: [{
 				dimension: "ad_astra:moon"
 				icon: "ad_astra:mars_globe"
@@ -723,7 +730,7 @@
 				title: "I'm on the Moon"
 				type: "dimension"
 			}]
-			title: "{quests.space_survival.mars.title}"
+			title: "{quests.extreme_voltage.mars.title}"
 			x: 13.5d
 			y: -8.0d
 		}
