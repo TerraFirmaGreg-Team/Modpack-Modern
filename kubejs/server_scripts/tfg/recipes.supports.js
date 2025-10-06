@@ -141,10 +141,10 @@ function registerTFGSupportRecipes(event) {
 				A: s.loose,
 				B: '#tfc:chisels',
 				C: 'tfc:mortar'
-			}).id(`tfg:shaped/${s.support}`)
+			}).id(`${s.support}`)
 		)
 
-		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/${s.support}`)
+		event.recipes.gtceu.assembler(`${s.support}`)
 			.circuit(11)
 			.inputFluids(Fluid.of('gtceu:concrete', 36))
 			.itemOutputs(`8x ${s.support}`)
@@ -180,14 +180,14 @@ function registerTFGSupportRecipes(event) {
     ).tier(4)
 	.id('tfg:anvil/steel_support')
 
-	event.recipes.gtceu.assembler('tfg:gtceu/assembler/steel_support')
+	event.recipes.gtceu.assembler('tfg:steel_support')
 		.circuit(11)
 		.itemOutputs('4x tfg:steel_support')
 		.itemInputs('2x #forge:double_ingots/steel')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 		
-	event.recipes.gtceu.macerator('tfg:macerator/recycling/steel_support')
+	event.recipes.gtceu.macerator('tfg:recycling_steel_support')
 		.itemInputs('tfg:steel_support')
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Steel, 2)
@@ -196,7 +196,7 @@ function registerTFGSupportRecipes(event) {
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.gtceu.arc_furnace('tfg:arc_furnace/recycling/steel_support')
+	event.recipes.gtceu.arc_furnace('tfg:recycling_steel_support')
 		.itemInputs('tfg:steel_support')
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.nugget, GTMaterials.Steel, 4)
@@ -205,7 +205,7 @@ function registerTFGSupportRecipes(event) {
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.recipes.gtceu.extractor('tfg:extractor/recycling/steel_support')
+	event.recipes.gtceu.extractor('tfg:recycling_steel_support')
 		.itemInputs('tfg:steel_support')
 		.outputFluids(Fluid.of('gtceu:steel', 64))
 		.duration(GTMaterials.Steel.getMass() * 2)
