@@ -452,7 +452,7 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			.itemInputs(`2x ${slab}`, '#forge:springs')
 			.itemOutputs(`2x ${pressure_plate}`)
 			.duration(50)
-			.circuit(0)
+			.circuit(3)
 			.EUt(GTValues.VA[GTValues.ULV])
 	}
 
