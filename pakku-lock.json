@@ -5388,6 +5388,79 @@
             ]
         },
         {
+            "pakku_id": "i98H2GCwZFLKulxG",
+            "pakku_links": [
+                "pB7ARGecP03UXpd6",
+                "bf2svog06ajj5JHE"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "entityjs",
+                "modrinth": "entityjs"
+            },
+            "name": {
+                "curseforge": "EntityJS",
+                "modrinth": "EntityJS"
+            },
+            "id": {
+                "curseforge": "967617",
+                "modrinth": "OvPZ16yX"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "entityjs-0.6.3-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6923/410/entityjs-0.6.3-1.20.1.jar",
+                    "id": "6923410",
+                    "parent_id": "967617",
+                    "hashes": {
+                        "sha1": "e8fb117fe197bb04afc81da897b28a0195e6e067",
+                        "md5": "d12d6b0162da6902cd0ed9cc69508d30"
+                    },
+                    "required_dependencies": [
+                        "388172",
+                        "238086"
+                    ],
+                    "size": 2358445,
+                    "date_published": "2025-08-24T17:06:22.457Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "entityjs-0.6.3-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/OvPZ16yX/versions/xUCJSmsf/entityjs-0.6.3-1.20.1.jar",
+                    "id": "xUCJSmsf",
+                    "parent_id": "OvPZ16yX",
+                    "hashes": {
+                        "sha512": "22e10738425fc85311e8e8a97878b17189867e7c4d94ee0ebacdac3b8601ff08995335eb974a80c9ac68cd6641bd2672515fbc66c3d0855062fd463d567008bf",
+                        "sha1": "e8fb117fe197bb04afc81da897b28a0195e6e067"
+                    },
+                    "required_dependencies": [
+                        "umyGl7zF",
+                        "8BmcQJ2H"
+                    ],
+                    "size": 2358445,
+                    "date_published": "2025-08-24T17:08:46.074919Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "6RNzeC2wkWRc6YSM",
             "type": "MOD",
             "side": "BOTH",
