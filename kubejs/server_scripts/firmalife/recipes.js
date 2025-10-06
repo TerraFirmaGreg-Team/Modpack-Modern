@@ -96,7 +96,7 @@ const registerFirmaLifeRecipes = (event) => {
 		.EUt(2)
 
 	event.recipes.gtceu.fluid_solidifier(`firmalife:firmalife/stainless_steel_jar_lid`)
-		.inputFluids(Fluid.of('gtceu:stainless_steel', 9))
+		.inputFluids(Fluid.of('gtceu:stainless_steel', 3))
 		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('firmalife:stainless_steel_jar_lid')
 		.duration(50)
@@ -104,7 +104,7 @@ const registerFirmaLifeRecipes = (event) => {
 
 	event.recipes.gtceu.extractor('firmalife:stainless_steel_jar_extraction')
 		.itemInputs('firmalife:stainless_steel_jar_lid')
-		.outputFluids(Fluid.of('gtceu:stainless_steel', 9))
+		.outputFluids(Fluid.of('gtceu:stainless_steel', 3))
 		.duration(50)
 		.EUt(2)
 

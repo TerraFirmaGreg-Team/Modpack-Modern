@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 ### Changes
+- Buffed how many stainless steel jar lids you can get per ingot from 16 to 48 @Pyritie
 ### Bug fixes
 - Fixed linux crash from recipe IDs (#1962) @Xaligal @Pyritie
 
