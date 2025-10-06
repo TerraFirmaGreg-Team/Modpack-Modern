@@ -882,6 +882,7 @@ function registerTFGFauna(event) {
 	event.fauna(
 		climate => {
 			climate.maxTemp(-108)
+			climate.fuzzy(false)
 		},
 		faunaData => {
 			faunaData.solidGround(true)
