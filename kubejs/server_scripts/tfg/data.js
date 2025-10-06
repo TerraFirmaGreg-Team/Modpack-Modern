@@ -559,6 +559,7 @@ function registerTFGFoodData(event) {
 		food.protein(1);
 		food.fruit(5);
 		food.grain(4);
+		food.dairy(1);
 	});
 
 	event.foodItem("betterend:chorus_mushroom_product", (food) => {
