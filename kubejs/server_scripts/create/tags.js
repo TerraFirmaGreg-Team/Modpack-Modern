@@ -21,6 +21,11 @@ const registerCreateItemTags = (event) => {
 	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_lead')
 	event.remove('c:hidden_from_recipe_viewers', 'create:powdered_obsidian')
 
+	// Create metal bars weren't metal bars :(
+	event.add('tfg:metal_bars', 'create:andesite_bars')
+	event.add('tfg:metal_bars', 'create:brass_bars')
+	event.add('tfg:metal_bars', 'create:copper_bars')
+
 	// Тэги для ручек и сидушек
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		event.add('tfg:colored_valve_handles', `create:${dye}_valve_handle`)

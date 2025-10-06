@@ -891,7 +891,7 @@ const registerAdAstraRecipes = (event) => {
 		'AAA',
 		'BBB'
 	], {
-		A: 'ad_astra:glacian_wool',
+		A: 'ad_astra:glacian_fur',
 		B: '#tfc:lumber'
 	}).id('tfg:shaped/glacian_bed')
 

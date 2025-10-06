@@ -94,6 +94,12 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*9)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	event.recipes.gtceu.distillery('mars_semiheavy_water')
+		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
+		.outputFluids(Fluid.of('minecraft:water', 250))
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.MV])
+
 	// Martian Sludge
 
 	event.recipes.gtceu.chemical_bath('dirty_hexafluorosilicic_acid')
@@ -214,7 +220,7 @@ function registerTFGNuclearRecipes(event) {
     event.recipes.deafission.fission_reactor_coolant('tfg:thorium_coolant')
 		.notConsumable(Item.of('tfg:thorium_rod'))
 		.perTick(true)
-		.inputFluids(Fluid.of('minecraft:water', 400))
+		.inputFluids(Fluid.of('tfg:heavy_water', 2))
 		.outputFluids(Fluid.of('gtceu:dense_steam', 2))
 		.perTick(false)
 		.dimension('ad_astra:mars')

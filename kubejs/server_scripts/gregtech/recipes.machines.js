@@ -1185,19 +1185,17 @@ function registerGTCEuMachineRecipes(event) {
 
 	// Vacuum Intake
 
-	event.shaped(
-		'tfg:casings/machine_casing_vacuum_engine_intake',
-		['USU',
-			'WZW',
-			'UTU'],
-		{
-			S: '#forge:tools/hammers',
-			T: '#forge:tools/wrenches',
-			W: '#forge:rotors/ultimet',
-			U: 'gtceu:ultimet_normal_item_pipe',
-			Z: 'gtceu:inert_machine_casing'
-		}
-	).id('tfg:shaped/casing_machine_casing_vacuum_engine_intake')
+	event.shaped('tfg:casings/machine_casing_vacuum_engine_intake', [
+		'USU',
+		'WZW',
+		'UTU'
+	], {
+		S: '#forge:tools/hammers',
+		T: '#forge:tools/wrenches',
+		W: '#forge:rotors/ultimet',
+		U: 'gtceu:ultimet_normal_item_pipe',
+		Z: 'gtceu:inert_machine_casing'
+	}).id('tfg:shaped/casing_machine_casing_vacuum_engine_intake')
 
 	event.recipes.gtceu.assembler('tfg:casings/machine_casing_vacuum_engine_intake')
 		.itemInputs(
@@ -1209,24 +1207,18 @@ function registerGTCEuMachineRecipes(event) {
 		.EUt(GTValues.VH[GTValues.LV])
 		.circuit(2)
 
-	// Stainless Evaporation Tower - LOCKED UNTIL VENUS
+	// Stainless Evaporation Tower
 
-	/*
-
-	event.shaped(
-		'gtceu:evaporation_tower',
-		[	'TUT',
-			'WZW',
-			'TUT'],
-		{
-			T: '#gtceu:circuits/ev',
-			W: 'gtceu:hv_electric_pump',
-			U: '#forge:double_wires/kanthal',
-			Z: 'gtceu:hv_machine_hull'
-		}
-	).id('tfg:shaped/evaporation_tower')
-
-	*/
+	event.recipes.gtceu.shaped('tfg:evaporation_tower', [
+		'TUT',
+		'WZW',
+		'TUT'
+	], {
+		T: '#gtceu:circuits/iv',
+		W: 'gtceu:ev_electric_pump',
+		U: '#forge:double_wires/nichrome',
+		Z: 'gtceu:ev_machine_hull'
+	}).addMaterialInfo().id('tfg:shaped/evaporation_tower')
 
 	//#endregion
 

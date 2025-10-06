@@ -33,7 +33,7 @@
 		slotCap = 64
 		#The maximum item size allowed in the container
 		#Allowed Values: TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE, HUGE
-		allowedSize = "VERY_LARGE"
+		allowedSize = "NORMAL"
 
 	["Container Item Config"."Burlap Sack"]
 		#Determines if this container will automatically pickup items

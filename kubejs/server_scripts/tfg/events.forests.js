@@ -20,8 +20,8 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/crimson_forest_entry',
 		climate => {
-			climate.maxTemp(-24)
-			climate.minTemp(-101)
+			climate.maxTemp(-13)
+			climate.minTemp(-109)
 			climate.minRain(-12)
 			climate.fuzzy(true)
 		},
@@ -50,8 +50,8 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/warped_forest_entry',
 		climate => {
-			climate.maxTemp(-24)
-			climate.minTemp(-101)
+			climate.maxTemp(-13)
+			climate.minTemp(-109)
 			climate.maxRain(0)
 			climate.fuzzy(true)
 		},
@@ -75,7 +75,7 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/aeronos_forest_entry',
 		climate => {
-			climate.minTemp(-92)
+			climate.minTemp(-100)
 			climate.minRain(-14)
 			climate.fuzzy(true)
 		},
@@ -98,7 +98,7 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/strophar_forest_entry',
 		climate => {
-			climate.minTemp(-92)
+			climate.minTemp(-100)
 			climate.maxRain(2)
 			climate.fuzzy(true)
 		},
@@ -121,7 +121,7 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/alphacene_forest_entry',
 		climate => {
-			climate.minTemp(-65)
+			climate.minTemp(-85)
 			climate.fuzzy(true)
 		},
 		null,
@@ -143,7 +143,7 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/glacian_forest_entry',
 		climate => {
-			climate.maxTemp(-92)
+			climate.maxTemp(-107)
 			climate.fuzzy(true)
 		},
 		'tfg:glacian_wood_stripped',
@@ -151,7 +151,6 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
-			//"betterend:glacian_hymenophore[facing=up]",
 			"tfg:glacian_leaves_fallen",
 			'tfg:groundcover/glacian_stick'
 		],
@@ -159,17 +158,7 @@ TFCEvents.worldgenData(event => {
 		'tfg:mars/tree/glacian_dead',
 		'tfg:mars/tree/glacian',
 		null, null, null, null, null, null,
-		placement => {
-			placement.flatEnough(flatness => {
-				flatness.flatness(0.8)
-				flatness.radius(4)
-			})
-			placement.jsonPlacement({
-				"type": "minecraft:random_offset",
-				"xz_spread": 0,
-				"y_spread": -2
-			})
-		}
+		placement => {}
 	)
 })
 
