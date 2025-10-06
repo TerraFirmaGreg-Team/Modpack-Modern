@@ -116,19 +116,19 @@ function registerTFGSupportRecipes(event) {
 
 	// REDO w/ table and loop
 	const EXO_STONE_SUPPORTS = [
-		{ loose: 'tfg:loose/deepslate', support: 'tfg:migmatite_support' },
-		{ loose: 'tfg:loose/blackstone', support: 'tfg:pyroxenite_support' },
-		{ loose: 'tfg:loose/dripstone', support: 'tfg:travertine_support' },
-		{ loose: 'tfg:loose/crackrack', support: 'tfg:keratophyre_support' },
-		{ loose: 'tfg:loose/moon_stone', support: 'tfg:anorthosite_support' },
+		{ loose: 'tfg:loose/deepslate',      support: 'tfg:migmatite_support' },
+		{ loose: 'tfg:loose/blackstone',     support: 'tfg:pyroxenite_support' },
+		{ loose: 'tfg:loose/dripstone',      support: 'tfg:travertine_support' },
+		{ loose: 'tfg:loose/crackrack',      support: 'tfg:keratophyre_support' },
+		{ loose: 'tfg:loose/moon_stone',     support: 'tfg:anorthosite_support' },
 		{ loose: 'tfg:loose/moon_deepslate', support: 'tfg:norite_support' },
-		{ loose: 'tfg:loose/mars_stone', support: 'tfg:argillite_support' },
-		{ loose: 'tfg:loose/venus_stone', support: 'tfg:trachyte_support' },
-		{ loose: 'tfg:loose/mercury_stone', support: 'tfg:komatiite_support' },
-		{ loose: 'tfg:loose/glacio_stone', support: 'tfg:phonolite_support' },
-		{ loose: 'tfg:loose/permafrost', support: 'tfg:permafrost_support' },
-		{ loose: 'tfg:loose/red_granite', support: 'tfg:red_granite_support' },
-		{ loose: 'gtceu:stone_ingot', support: 'tfg:stone_support' }
+		{ loose: 'tfg:loose/mars_stone',     support: 'tfg:argillite_support' },
+		{ loose: 'tfg:loose/venus_stone',    support: 'tfg:trachyte_support' },
+		{ loose: 'tfg:loose/mercury_stone',  support: 'tfg:komatiite_support' },
+		{ loose: 'tfg:loose/glacio_stone',   support: 'tfg:phonolite_support' },
+		{ loose: 'tfg:loose/permafrost',     support: 'tfg:permafrost_support' },
+		{ loose: 'tfg:loose/red_granite',    support: 'tfg:red_granite_support' },
+		{ loose: 'gtceu:stone_ingot',        support: 'tfg:stone_support' }
 	]
 
 	EXO_STONE_SUPPORTS.forEach(s => {
