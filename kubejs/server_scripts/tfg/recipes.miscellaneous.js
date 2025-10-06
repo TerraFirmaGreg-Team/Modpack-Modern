@@ -1390,12 +1390,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(100)
 		.EUt(4)
 
-	event.recipes.gtceu.assembler('tfg:ostrum_carbon_casing')
-		.itemInputs('2x #forge:plates/ostrum', '2x #forge:plates/titanium_carbide', '#forge:frames/black_steel')
-		.itemOutputs('2x tfg:casings/machine_casing_ostrum_carbon')
-		.circuit(6)
-		.duration(20 * (2.5))
-		.EUt(GTValues.VH[GTValues.LV])
+	
 
 	event.recipes.gtceu.assembler('tfg:titanium_concrete')
 		.itemInputs('2x #forge:rods/titanium', '4x #forge:dusts/kaolinite')

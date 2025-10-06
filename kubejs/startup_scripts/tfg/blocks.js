@@ -17,13 +17,14 @@ const registerTFGBlocks = (event) => {
 		.tagBlock('minecraft:mineable/wrench')
 		.mapColor('color_black')
 		.speedFactor(1.1)
-		.activeOffset(5, 1, 5)
-		.activeVelocity(0.0, 0.1, 0.0)
-		//.activeParticle('tfc:smoke_0')
-		.activeCount(50)
-		.activeForced(true)
+		.activeOffset(3.5, 2, 3.5)
+		.activeVelocity(0.0, 0.0, 0.0)
+		.activeParticle('tfg:cooling_steam')
+		.activeBase(0.0, 12.5, 0.0)
+		.activeCount(8)
+		.activeForced(false)
 		.hasTicker(true) 
-	
+ 
 	// #region Machine Casings
 
 	global.TFG_MACHINE_CASINGS.forEach(type => {
