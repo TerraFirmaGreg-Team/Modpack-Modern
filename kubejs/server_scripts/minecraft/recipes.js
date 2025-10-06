@@ -1107,7 +1107,7 @@ const registerMinecraftRecipes = (event) => {
 		event.recipes.gtceu.assembler(`minecraft:${x.type}_pressure_plate`)
 			.itemInputs('#forge:small_springs', `2x ${x.material}`)
 			.itemOutputs(`minecraft:${x.type}_pressure_plate`)
-			.circuit(0)
+			.circuit(3)
 			.duration(50)
 			.EUt(2)
 	})
