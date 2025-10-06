@@ -92,8 +92,19 @@ function registerSpeciesRecipes(event) {
 		A: '#forge:double_plates/copper',
 		B: 'create:precision_mechanism',
 		C: 'species:kinetic_core',
-		D: '#tfc:shields'
-	}).id('tfg:shaped/ricoshield')
+		D: 'tfc:metal/shield/blue_steel'
+	}).id('tfg:shaped/ricoshield_blue')
+
+	event.shaped('species:ricoshield', [
+		'ABA',
+		'ACA',
+		'ADA'
+	], {
+		A: '#forge:double_plates/copper',
+		B: 'create:precision_mechanism',
+		C: 'species:kinetic_core',
+		D: 'tfc:metal/shield/red_steel'
+	}).id('tfg:shaped/ricoshield_red')
 
 	event.shaped('species:deflector_dummy', [
 		'A',
