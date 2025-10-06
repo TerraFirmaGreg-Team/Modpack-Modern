@@ -9,6 +9,7 @@
 - Fixed missing texture for interplanetary wireless card (#1965, #1964) @Ko-lja
 - Fixed glacian trees floating above ground @Pyritie
 - Fixed tameable mars animals giving twice as much meat as they should @Pyritie
+- Fixed pyroxenite and keratophyre rocks in various recipes like stone supports @Pyritie
 
 ## [0.11.0] - 05-10-2025
 - WARNING! If you're upgrading your world from 0.10 to 0.11, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.10-to-0.11). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
