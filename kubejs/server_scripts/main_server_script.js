@@ -292,5 +292,3 @@ TaCZServerEvents.gunDataLoad((event) => {
 TaCZServerEvents.attachmentDataLoad((event) => {
 	attachmentDataLogic(event)
 })
-
-
