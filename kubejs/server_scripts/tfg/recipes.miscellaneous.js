@@ -1405,7 +1405,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	
 
 	event.recipes.gtceu.assembler('tfg:titanium_concrete')
-		.itemInputs('2x #forge:rods/titanium', '4x #forge:dusts/kaolinite')
+		.itemInputs('2x #forge:rods/titanium', '#forge:dusts/kaolinite')
 		.inputFluids(Fluid.of('gtceu:concrete', 144 * 1.5))
 		.itemOutputs('tfg:titanium_concrete')
 		.circuit(2)

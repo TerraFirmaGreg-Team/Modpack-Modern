@@ -443,7 +443,7 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20 * (2.5))
 		.EUt(GTValues.VH[GTValues.LV])
 	
-	event.recipes.gtceu.mixer('thermally_conductive_fluid')
+	event.recipes.gtceu.mixer('tfg:thermally_conductive_fluid')
 		.itemInputs('7x #forge:dusts/gallium', '2x #forge:dusts/tin', '#forge:dusts/zinc')
 		.outputFluids(Fluid.of('tfg:thermally_conductive_fluid', 1000))
 		.circuit(2)
@@ -451,8 +451,8 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*20)
 	
 	event.recipes.gtceu.assembler('tfg:heat_pipe_casing')
-		.itemInputs('2x gtceu:copper_huge_fluid_pipe', '2x gtceu:copper_large_fluid_pipe', '4x #forge:plates/hsla_steel')
-		.inputFluids(Fluid.of('tfg:thermally_conductive_fluid', 2000))
+		.itemInputs('4x gtceu:copper_large_fluid_pipe', '4x gtceu:copper_normal_fluid_pipe', '4x #forge:plates/hsla_steel')
+		.inputFluids(Fluid.of('tfg:thermally_conductive_fluid', 1000))
 		.itemOutputs('tfg:casings/heat_pipe_casing')
 		.circuit(6)
 		.EUt(GTValues.VA[GTValues.IV] * 2)
