@@ -94,6 +94,12 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*9)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	event.recipes.gtceu.distillery('mars_semiheavy_water')
+		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
+		.outputFluids(Fluid.of('minecraft:water', 250))
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.MV])
+
 	// Martian Sludge
 
 	event.recipes.gtceu.chemical_bath('dirty_hexafluorosilicic_acid')
