@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Changes
 ### Bug fixes
+- Fixed linux crash from recipe IDs (#1962) @Xaligal @Pyritie
 
 ## [0.11.0] - 05-10-2025
 - WARNING! If you're upgrading your world from 0.10 to 0.11, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.10-to-0.11). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
