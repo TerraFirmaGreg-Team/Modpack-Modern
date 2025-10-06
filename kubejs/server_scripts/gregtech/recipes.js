@@ -209,6 +209,12 @@ const registerGTCEURecipes = (event) => {
 		.duration(300)
 		.EUt(2)
 
+	event.recipes.gtceu.compressor('plant_ball_from_wart_blocks')
+		.itemInputs('4x #minecraft:wart_blocks')
+		.itemOutputs('gtceu:plant_ball')
+		.duration(300)
+		.EUt(2)
+
 	//#endregion
 
 	//#region Выход: Биомасса
@@ -282,6 +288,13 @@ const registerGTCEURecipes = (event) => {
 		.itemInputs('#createaddition:plants')
 		.inputFluids("#tfc:any_water 20")
 		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.duration(100)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_wart_blocks')
+		.itemInputs('#minecraft:wart_blocks')
+		.inputFluids("#tfc:any_water 20")
+		.outputFluids(Fluid.of('gtceu:biomass', 50))
 		.duration(100)
 		.EUt(3)
 
@@ -1429,6 +1442,43 @@ const registerGTCEURecipes = (event) => {
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	event.remove({ id: 'gtceu:circuit_assembler/mainframe_iv_asmd_soldering_alloy'})
+	event.remove({ id: 'gtceu:circuit_assembler/mainframe_iv'})
+	event.remove({ id: 'gtceu:circuit_assembler/mainframe_iv_soldering_alloy'})
+	event.remove({ id: 'gtceu:circuit_assembler/mainframe_iv_asmd'})
+
+	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv')
+		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '8x #gtceu:inductors', '16x #gtceu:capacitors', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
+		.inputFluids(Fluid.of('gtceu:tin', 576))
+		.itemOutputs('gtceu:micro_processor_mainframe')
+		.duration(20 * 40)
+		.EUt(GTValues.VA[GTValues.HV])
+		.cleanroom(CleanroomType.CLEANROOM)
+
+	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv_soldering_alloy')
+		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '8x #gtceu:inductors', '16x #gtceu:capacitors', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.itemOutputs('gtceu:micro_processor_mainframe')
+		.duration(20 * 40)
+		.EUt(GTValues.VA[GTValues.HV])
+		.cleanroom(CleanroomType.CLEANROOM)
+
+	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv_asmd')
+		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '2x gtceu:advanced_smd_inductor', '4x gtceu:advanced_smd_capacitor', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
+		.inputFluids(Fluid.of('gtceu:tin', 576))
+		.itemOutputs('gtceu:micro_processor_mainframe')
+		.duration(20 * 20)
+		.EUt(GTValues.VA[GTValues.HV])
+		.cleanroom(CleanroomType.CLEANROOM)
+
+	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv_asmd_soldering_alloy')
+		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '2x gtceu:advanced_smd_inductor', '4x gtceu:advanced_smd_capacitor', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.itemOutputs('gtceu:micro_processor_mainframe')
+		.duration(20 * 20)
+		.EUt(GTValues.VA[GTValues.HV])
+		.cleanroom(CleanroomType.CLEANROOM)
+
 	// Buttons
 	removeCutterRecipe(event, 'blackstone_button')
 	removeCutterRecipe(event, 'blackstone_button_water')
@@ -1667,4 +1717,6 @@ const registerGTCEURecipes = (event) => {
 		.inputFluid(Fluid.of('tfc:black_dye', 10))
 		.outputItem('tfg:reinforced_dark_concrete_support')
 		.id('tfg:barrel/reinforced_dark_concrete_support')
+
+	// Change
 }

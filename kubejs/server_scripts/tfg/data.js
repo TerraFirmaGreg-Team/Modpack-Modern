@@ -24,6 +24,9 @@ function registerTFGHeatData(event) {
 	event.itemHeat("tfg:sunflower_product", 1, null, null);
 	event.itemHeat("tfg:roasted_sunflower_seeds", 1, null, null);
 	event.itemHeat("#tfc:powders", 1, null, null);
+
+	event.itemHeat('betterend:cave_pumpkin_pie_raw', 1.0, null, null);
+    event.itemHeat('betterend:cave_pumpkin_pie', 1.0, null, null);
 }
 
 /** @param {Internal.TFCDataEventJS} event */
@@ -554,8 +557,8 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2);
 		food.water(5);
 		food.protein(1);
-		food.fruit(4);
-		food.grain(2);
+		food.fruit(5);
+		food.grain(4);
 	});
 
 	event.foodItem("betterend:chorus_mushroom_product", (food) => {
@@ -875,9 +878,11 @@ function registerTFGFLPlanters(event) {
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGFauna(event) {
 
+	// -108 is the average at z=-4k to z=-6k, which feels like a big enough band
 	event.fauna(
 		climate => {
-			climate.maxTemp(-100)
+			climate.maxTemp(-108)
+			climate.fuzzy(false)
 		},
 		faunaData => {
 			faunaData.solidGround(true)
@@ -886,7 +891,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-97)
+			climate.minTemp(-102)
 			climate.maxTemp(-30)
 			climate.fuzzy(true)
 		},
@@ -897,7 +902,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-95)
+			climate.minTemp(-100)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -907,7 +912,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-105)
+			climate.minTemp(-108)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -917,7 +922,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-102)
+			climate.minTemp(-109)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -927,7 +932,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-90)
+			climate.minTemp(-97)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -937,7 +942,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-106)
+			climate.minTemp(-109)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -947,7 +952,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-90)
+			climate.minTemp(-100)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -957,7 +962,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-100)
+			climate.minTemp(-105)
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -967,7 +972,7 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minTemp(-100)
+			climate.minTemp(-106)
 			climate.fuzzy(true)
 		},
 		faunaData => {

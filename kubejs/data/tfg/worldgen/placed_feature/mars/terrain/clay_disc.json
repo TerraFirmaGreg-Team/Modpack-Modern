@@ -7,7 +7,7 @@
 		},
 		{
 			"type": "tfc:climate",
-			"min_temperature": -95
+			"min_temperature": -100
 		},
 		{
 			"type": "minecraft:in_square"
