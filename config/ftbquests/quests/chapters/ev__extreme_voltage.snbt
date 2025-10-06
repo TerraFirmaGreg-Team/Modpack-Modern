@@ -69,13 +69,16 @@
 		{
 			dependencies: ["52AB0BDC64293253"]
 			description: [
-				"Before landing on &4Mars&r, there are a few important things to keep in mind.\\n\\nFirst, remember that &4Mars&r is a hostile planet. Expect &cmobs everywhere&r they hit hard, and they hit often. Bring your best &6weapons&r you don’t want to die the moment you touch down.\\n\\nThe planet is mostly a &edesert world&r, dotted with &aoasis islands&r where you’ll find &bwater&r, &ajungle&r biomes, and &7mountains&r much safer places to build your first base. Be careful though: the open desert is extremely dangerous.\\n\\nAll &bfluid veins&r are spread across Mars, except for one of the most important &eHeavy Ammoniacial Water&r which can only be found on these &aoasis islands&r. That’s another good reason to set up your base there.\\n\\nAnd one last tip: don’t kill everything you see. Some &aanimals&r can be &franched&r, and you’ll definitely need them later in your progression.\\n\\n"
+				"{quests.extreme_voltage.mars.desc.1}"
 				"{@pagebreak}"
-				"Energy-wise, &4Mars&r will not be kind to you at first.\\n\\nNearly every common &6energy generation method&r is &cdisabled&r on the planet, which means you’ll have to rely almost entirely on &cFission&r to power your base.\\n\\nAt the very beginning, you can use &eAd Astra&r solar panels but don’t expect much from them. Their output is terrible, so it’s far better to bring along some &bfilled batteries&r such as &bLapotron Crystals&r to get started.\\n\\nAchieving energy stability on Mars will take time and effort, but once your systems are running smoothly, you’ll feel like &9unlimited power&r is right in the palm of your hand.\\n\\nStay alert, plan ahead, and Mars will reward your courage.\\n\\nBe sure to check out the &aSpace Survival&r chapter for more Mars-related things too!"
+				"{quests.extreme_voltage.mars.desc.2}"
+				"{@pagebreak}"
+				"{quests.extreme_voltage.mars.desc.3}"
 			]
 			id: "2979AFD231E5B37B"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "{quests.extreme_voltage.mars.subtitle}"
 			tasks: [{
 				dimension: "ad_astra:moon"
 				icon: "ad_astra:mars_globe"
@@ -83,7 +86,7 @@
 				title: "I'm on the Moon"
 				type: "dimension"
 			}]
-			title: "I'm on Mars"
+			title: "{quests.extreme_voltage.mars.title}"
 			x: -3.75d
 			y: 7.0d
 		}
@@ -1460,8 +1463,8 @@
 				item: "gtceu:liquid_air_bucket"
 				type: "item"
 			}]
-			x: -11.0d
-			y: 2.5d
+			x: -8.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["341751B307577B72"]
@@ -1471,8 +1474,8 @@
 				item: "gtceu:oxygen_bucket"
 				type: "item"
 			}]
-			x: -12.0d
-			y: 3.5d
+			x: -9.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["341751B307577B72"]
@@ -1482,8 +1485,8 @@
 				item: "gtceu:argon_bucket"
 				type: "item"
 			}]
-			x: -11.0d
-			y: 3.5d
+			x: -8.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1804,8 +1807,8 @@
 				item: "gtceu:helium_bucket"
 				type: "item"
 			}]
-			x: -12.0d
-			y: 2.5d
+			x: -9.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7AC97F7850E31D95"]
