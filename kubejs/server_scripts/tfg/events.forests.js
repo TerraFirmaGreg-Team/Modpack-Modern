@@ -20,8 +20,8 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/crimson_forest_entry',
 		climate => {
-			climate.maxTemp(-24)
-			climate.minTemp(-108)
+			climate.maxTemp(-13)
+			climate.minTemp(-109)
 			climate.minRain(-12)
 			climate.fuzzy(true)
 		},
@@ -50,8 +50,8 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/warped_forest_entry',
 		climate => {
-			climate.maxTemp(-24)
-			climate.minTemp(-108)
+			climate.maxTemp(-13)
+			climate.minTemp(-109)
 			climate.maxRain(0)
 			climate.fuzzy(true)
 		},
@@ -75,7 +75,7 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/aeronos_forest_entry',
 		climate => {
-			climate.minTemp(-97)
+			climate.minTemp(-100)
 			climate.minRain(-14)
 			climate.fuzzy(true)
 		},
@@ -98,7 +98,7 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/strophar_forest_entry',
 		climate => {
-			climate.minTemp(-97)
+			climate.minTemp(-100)
 			climate.maxRain(2)
 			climate.fuzzy(true)
 		},
@@ -121,7 +121,7 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/alphacene_forest_entry',
 		climate => {
-			climate.minTemp(-75)
+			climate.minTemp(-85)
 			climate.fuzzy(true)
 		},
 		null,
@@ -143,7 +143,7 @@ TFCEvents.worldgenData(event => {
 
 	event.forestEntry('tfg:mars/glacian_forest_entry',
 		climate => {
-			climate.maxTemp(-105)
+			climate.maxTemp(-107)
 			climate.fuzzy(true)
 		},
 		'tfg:glacian_wood_stripped',
@@ -158,13 +158,7 @@ TFCEvents.worldgenData(event => {
 		'tfg:mars/tree/glacian_dead',
 		'tfg:mars/tree/glacian',
 		null, null, null, null, null, null,
-		placement => {
-			placement.jsonPlacement({
-				"type": "minecraft:random_offset",
-				"xz_spread": 0,
-				"y_spread": -7
-			})
-		}
+		placement => {}
 	)
 })
 
