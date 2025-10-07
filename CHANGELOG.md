@@ -6,6 +6,7 @@
 - Adjusted max HP of various moon and mars mobs @Pyritie
 - Added quest text for the mars section of the space survival chapter @Pyritie
 - Added field guide entry for mars crops @Pyritie
+- Changed the amount of open space windmills require to be extremely more lenient, so they should always work in tree farms @Pyritie
 ### Bug fixes
 - Fixed linux crash from recipe IDs (#1962) @Xaligal @Pyritie
 - Fixed missing texture for interplanetary wireless card (#1965, #1964) @Ko-lja
