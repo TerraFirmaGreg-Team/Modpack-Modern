@@ -4,6 +4,8 @@
 ### Changes
 - Buffed how many stainless steel jar lids you can get per ingot from 16 to 48 @Pyritie
 - Adjusted max HP of various moon and mars mobs @Pyritie
+- Added quest text for the mars section of the space survival chapter @Pyritie
+- Added field guide entry for mars crops @Pyritie
 ### Bug fixes
 - Fixed linux crash from recipe IDs (#1962) @Xaligal @Pyritie
 - Fixed missing texture for interplanetary wireless card (#1965, #1964) @Ko-lja
