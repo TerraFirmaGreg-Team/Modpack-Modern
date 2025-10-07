@@ -315,7 +315,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(vintageimprovements:lathe)item(gtceu:lv_lathe))"
+						"ftbfiltersystem:filter": "or(item(vintageimprovements:belt_grinder)item(gtceu:lv_lathe))"
 					}
 				}
 				title: "{quests.low_voltage.lv_lathe.task}"

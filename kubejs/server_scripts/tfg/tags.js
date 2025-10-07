@@ -17,6 +17,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:water_breathing_ingredients', 'tfg:rapeseed_product')
 	event.add('tfg:night_vision_ingredients', 'tfg:sunflower_product')
 
+	// Actually "layers", can't rename them without screwing with peoples' worlds
 	event.add('c:hidden_from_recipe_viewers', 'tfg:ash_pile')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/black_sand')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/brown_sand')
@@ -28,6 +29,13 @@ const registerTFGItemTags = (event) => {
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_sand')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/moon_sand')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/venus_sand')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/hematitic_sand')
+
+	// Actually "piles", the kind that can hide plants inside them
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_sand_covering')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/venus_sand_covering')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/hematitic_sand_covering')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_snow_covering')
 
 	//temporary hidden items
 	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source_small')
@@ -767,7 +775,7 @@ const registerTFGItemTags = (event) => {
 	//Mars animal region
 	event.add('tfg:martian_eggs', 'tfg:sniffer_egg')
 	event.add('tfg:martian_eggs', 'tfg:wraptor_egg')
-	event.add('tfc:eggs', '#tfg:martian_eggs')
+	event.add('forge:eggs', '#tfg:martian_eggs')
 	
 	event.add('tfg:martian_animal_foods', 'betterend:amber_root_product')
 	event.add('tfg:martian_animal_foods', 'betterend:blossom_berry_product')
@@ -1070,6 +1078,8 @@ const registerTFGBlockTags = (event) => {
 
 	event.add('minecraft:mushroom_grow_block', '#tfc:dirt')
 	event.add('minecraft:mushroom_grow_block', '#tfc:grass')
+	event.add('minecraft:mushroom_grow_block', '#forge:sand')
+	event.add('minecraft:mushroom_grow_block', '#forge:gravel')
 	// #endregion
 
 	event.add('tfg:harvester_harvestable', '#tfc:fruit_tree_leaves')
