@@ -274,7 +274,7 @@ const registerGTCEuMaterialModification = (event) => {
 
 	GTMaterials.Ultimet.addFlags(GENERATE_ROTOR)
 	
-	GTMaterials.HSLASteel.addFlags(GENERATE_BOLT_SCREW)
+	GTMaterials.HSLASteel.addFlags(GENERATE_BOLT_SCREW, GENERATE_DENSE)
 	
 	GTMaterials.Invar.addFlags(GENERATE_RING);
 	GTMaterials.Magnalium.addFlags(GENERATE_RING);

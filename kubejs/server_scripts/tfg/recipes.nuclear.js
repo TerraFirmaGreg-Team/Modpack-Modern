@@ -434,6 +434,43 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*1.5)
 
 	//#endregion
+	
+	//#region Cooling Tower
+	event.recipes.gtceu.assembler('tfg:ostrum_carbon_casing')
+		.itemInputs('2x #forge:plates/ostrum', '2x #forge:plates/titanium_carbide', '#forge:dense_plates/hsla_steel', '#forge:frames/black_steel')
+		.itemOutputs('2x tfg:casings/machine_casing_ostrum_carbon')
+		.circuit(6)
+		.duration(20 * (2.5))
+		.EUt(GTValues.VH[GTValues.LV])
+	
+	event.recipes.gtceu.mixer('tfg:thermally_conductive_fluid')
+		.itemInputs('7x #forge:dusts/gallium', '2x #forge:dusts/tin', '#forge:dusts/zinc')
+		.outputFluids(Fluid.of('tfg:thermally_conductive_fluid', 1000))
+		.circuit(2)
+		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20*20)
+	
+	event.recipes.gtceu.assembler('tfg:heat_pipe_casing')
+		.itemInputs('4x gtceu:copper_large_fluid_pipe', '4x gtceu:copper_normal_fluid_pipe', '4x #forge:plates/hsla_steel')
+		.inputFluids(Fluid.of('tfg:thermally_conductive_fluid', 1000))
+		.itemOutputs('tfg:casings/heat_pipe_casing')
+		.circuit(6)
+		.EUt(GTValues.VA[GTValues.IV] * 2)
+		.duration(20*4)
+		
+	event.shaped('tfg:cooling_tower', [
+		'ABA',
+		'CDC',
+		'EBE'
+	], {
+		A: 'gtceu:ostrum_normal_fluid_pipe',
+		B: 'gtceu:platinum_single_cable',
+		C: '#gtceu:circuits/iv',
+		D: 'gtceu:iv_machine_hull',
+		E: 'gtceu:iv_fluid_regulator'
+	}).id('tfg:shaped/cooling_tower')
+	
+	//#endregion
 
 	//#region FLiBe Line - SCRAP FROM MARS TO VENUS
 
