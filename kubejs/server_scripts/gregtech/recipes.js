@@ -1381,7 +1381,7 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.assembler('gtceu:treated_pressure_plate')
 		.itemInputs('#forge:small_springs', '2x gtceu:treated_wood_slab')
 		.itemOutputs('gtceu:treated_wood_pressure_plate')
-		.circuit(0)
+		.circuit(3)
 		.duration(50)
 		.EUt(2)
 

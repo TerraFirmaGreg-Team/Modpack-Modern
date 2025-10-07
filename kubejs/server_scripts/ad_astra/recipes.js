@@ -784,7 +784,7 @@ const registerAdAstraRecipes = (event) => {
 		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_pressure_plate`)
 			.itemInputs('#forge:small_springs', `2x ad_astra:${x.type}_plating_slab`)
 			.itemOutputs(`ad_astra:${x.type}_plating_pressure_plate`)
-			.circuit(0)
+			.circuit(3)
 			.duration(50)
 			.EUt(2)
 
