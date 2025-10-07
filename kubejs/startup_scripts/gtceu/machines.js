@@ -482,7 +482,7 @@ const registerGTCEuMachines = (event) => {
 			.aisle('KKAAAAAAA', 'AAAAAAAAA', 'AAAAAAAAA', '         ', '         ' )
 			.aisle('BAAAAAAAA', 'B       D', 'BBBBBBBAA', ' BCCCB   ', ' BBBBB   ' )
 			.aisle('AAAAAAAAA', 'A       D', 'BB   BBAA', ' C   C   ', ' BIAHB   ' )
-			.aisle('BEBEBEAAA', 'BFBFBFA#D', 'BBBBBBBAA', ' BCCCB   ', ' BBBBB   ' )
+			.aisle('BEBEBEAAA', 'BEBFBEA#D', 'BBBBBBBAA', ' BCCCB   ', ' BBBBB   ' )
 			.aisle('A     AMA', 'A     AXA', 'AAAAAAAAA', '         ', '         ' )
 			.where('X', controller, Direction.SOUTH)
 			.where('A', Block.getBlock('tfg:casings/machine_casing_mars'))
