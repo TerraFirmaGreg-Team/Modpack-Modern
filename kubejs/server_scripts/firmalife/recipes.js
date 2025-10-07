@@ -764,16 +764,22 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// Chocolate Melting
 	const setChocolateHeating = (variant) => {
-    const itemId = `firmalife:food/${variant}_chocolate`
-    const fluidId = `tfcchannelcasting:${variant}_chocolate`
-    const recipeId = `firmalife:heating/${variant}_chocolate`
+    const itemID = `firmalife:food/${variant}_chocolate`
+    const fluidID = `tfcchannelcasting:${variant}_chocolate`
+    const recipeID = `firmalife:heating/${variant}_chocolate`
+	const castingRecipeID = `tfcchannelcasting:casting/${variant}_chocolate`
 
-    event.remove({ id: recipeId })
-    event.remove({ type: 'tfc:heating', ingredient: { item: itemId } })
+    event.remove({ id: recipeID })
+	event.remove({ id: castingRecipeID })
+	event.remove({ id: `${castingRecipeID}_fire_ingot` })
+    event.remove({ type: 'tfc:heating', ingredient: { item: itemID } })
 
-    event.recipes.tfc.heating(itemId, 200)
-        .resultFluid(Fluid.of(fluidId, 144))
-        .id(recipeId)
+    event.recipes.tfc.heating(itemID, 200)
+        .resultFluid(Fluid.of(fluidID, 144))
+        .id(recipeID)
+
+	event.recipes.tfc.casting(`${itemID}`, 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient(`${fluidID}`, 144), 0)
+	event.recipes.tfc.casting(`${itemID}`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(`${fluidID}`, 144), 0)		
 	}
 
 	setChocolateHeating('white')
