@@ -185,6 +185,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Beryllium.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.Thorium.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.Uraninite.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Hematite.addFlags(GENERATE_DUSTY_ORES);
 
 	//#endregion
 

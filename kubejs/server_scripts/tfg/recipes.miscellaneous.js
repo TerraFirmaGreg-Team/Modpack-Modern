@@ -917,7 +917,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.outputFluids(Fluid.of('tfg:molten_aes', 200))
 		.circuit(4)
 		.duration(80)
-		.blastFurnaceTemp(3400)
+		.blastFurnaceTemp(3000)
 		.EUt(GTValues.VA[GTValues.EV])
 	event.recipes.gtceu.electric_blast_furnace('tfg:smelt_wraptor_wool')
 		.itemInputs('tfg:wraptor_wool')
@@ -925,7 +925,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.outputFluids(Fluid.of('tfg:molten_aes', 100))
 		.circuit(8)
 		.duration(60)
-		.blastFurnaceTemp(3400)
+		.blastFurnaceTemp(3000)
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.tfc.damage_inputs_shapeless_crafting(

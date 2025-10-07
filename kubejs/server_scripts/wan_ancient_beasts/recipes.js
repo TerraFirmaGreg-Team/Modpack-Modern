@@ -53,12 +53,13 @@ const registerWABRecipes = (event) => {
 
 	event.shaped('wan_ancient_beasts:reinforced_shield', [
 		'BAB',
-		'BCB',
+		'DCD',
 		'BAB'
 	], {
 		A: 'wan_ancient_beasts:eater_tooth',
 		B: 'wan_ancient_beasts:crusher_spike',
-		C: '#tfc:shields'
+		C: '#tfc:shields',
+		D: '#forge:plates/titanium'
 	}).id('tfg:shaped/reinforced_shield_from_shield')
 }
 

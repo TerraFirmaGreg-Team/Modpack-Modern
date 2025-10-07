@@ -881,9 +881,9 @@ const registerAdAstraRecipes = (event) => {
 	)
 
 	event.recipes.gtceu.assembler('tfg:assembler/glacian_fur')
-		.itemInputs('8x tfg:glacian_wool')
+		.itemInputs('tfg:glacian_wool')
 		.circuit(10)
-		.itemOutputs('8x ad_astra:glacian_fur')
+		.itemOutputs('ad_astra:glacian_fur')
 		.duration(100)
 		.EUt(4)
 

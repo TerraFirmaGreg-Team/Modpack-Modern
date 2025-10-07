@@ -554,7 +554,7 @@ function registerTFGFoodData(event) {
 	event.foodItem("betterend:cave_pumpkin_pie", (food) => {
 		food.hunger(4);
 		food.saturation(4);
-		food.decayModifier(2);
+		food.decayModifier(1.5);
 		food.water(5);
 		food.protein(1);
 		food.fruit(5);
