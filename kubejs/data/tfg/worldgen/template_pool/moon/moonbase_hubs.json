@@ -59,46 +59,61 @@
 		{
 			"weight": 100,
 			"element": {
-				"location": "tfg:moon/moonbase/hub/moonbase_farm1",
-				"processors": "minecraft:empty",
-				"projection": "rigid",
-				"element_type": "minecraft:single_pool_element"
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"location": "tfg:moon/moonbase/hub/moonbase_farm1",
+					"processors": "minecraft:empty",
+					"projection": "rigid"
+				},
+				"limit": 2
 			}
 		},
 		{
 			"weight": 100,
 			"element": {
-				"location": "tfg:moon/moonbase/hub/moonbase_beds",
-				"processors": "minecraft:empty",
-				"projection": "rigid",
-				"element_type": "minecraft:single_pool_element"
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"location": "tfg:moon/moonbase/hub/moonbase_beds",
+					"processors": "minecraft:empty",
+					"projection": "rigid"
+				},
+				"limit": 1
 			}
 		},
 		{
 			"weight": 100,
 			"element": {
-				"location": "tfg:moon/moonbase/hub/moonbase_library",
-				"processors": "minecraft:empty",
-				"projection": "rigid",
-				"element_type": "minecraft:single_pool_element"
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"location": "tfg:moon/moonbase/hub/moonbase_library",
+					"processors": "minecraft:empty",
+					"projection": "rigid"
+				},
+				"limit": 1
 			}
 		},
 		{
 			"weight": 100,
 			"element": {
-				"location": "tfg:moon/moonbase/hub/moonbase_pantry",
-				"processors": "minecraft:empty",
-				"projection": "rigid",
-				"element_type": "minecraft:single_pool_element"
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"location": "tfg:moon/moonbase/hub/moonbase_pantry",
+					"processors": "minecraft:empty",
+					"projection": "rigid"
+				},
+				"limit": 1
 			}
 		},
 		{
 			"weight": 100,
 			"element": {
-				"location": "tfg:moon/moonbase/hub/moonbase_workshop",
-				"processors": "minecraft:empty",
-				"projection": "rigid",
-				"element_type": "minecraft:single_pool_element"
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"location": "tfg:moon/moonbase/hub/moonbase_workshop",
+					"processors": "minecraft:empty",
+					"projection": "rigid"
+				},
+				"limit": 1
 			}
 		}
 	]
