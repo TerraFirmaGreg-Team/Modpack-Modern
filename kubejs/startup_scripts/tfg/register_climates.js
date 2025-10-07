@@ -34,7 +34,6 @@ function invLerp(x, y, a) {
  * allows runtime control of wind vector; called every tick
  * @returns {Object} singleton manager object
  */
-console.debug("defining mars climate controller!")
 global.getMarsClimateController = function() {
     if (!global._MARS_CLIMATE_CONTROLLER) {
         console.info("Initializing MARS_CLIMATE_CONTROLLER...");
@@ -64,7 +63,6 @@ global.getMarsClimateController = function() {
     }
     return global._MARS_CLIMATE_CONTROLLER;
 };
-console.debug("finished defining mars climate controller!")
 
 
 /**
@@ -181,7 +179,6 @@ TFCEvents.registerClimateModel(event => {
 	})
 
 	event.register('tfg:mars_climate', builder => {
-		console.debug("registering mars climate!")
 
 		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
 			if (OxygenAPI.hasOxygen(level, pos.above())) {
@@ -209,6 +206,7 @@ TFCEvents.registerClimateModel(event => {
 
 		builder.setAirFog((level, pos, calendarTicks) => 0)
 		builder.setWaterFog((level, pos, calendarTicks) => 0.1)
+
 		const controller = global.getMarsClimateController();
 		builder.setWindVector(controller.createCallbackForBuilder(builder));
 	})

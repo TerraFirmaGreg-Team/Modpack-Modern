@@ -329,22 +329,6 @@ const registerTFGBlocks = (event) => {
 
 	// #endregion
 
-	// #region Layer blocks
-
-	event.create('tfg:ash_pile', 'tfg:layer_block')
-		.mapColor('color_light_gray')
-
-	event.create('tfg:pile/black_sand', 'tfg:layer_block')
-	event.create('tfg:pile/brown_sand', 'tfg:layer_block')
-	event.create('tfg:pile/green_sand', 'tfg:layer_block')
-	event.create('tfg:pile/pink_sand', 'tfg:layer_block')
-	event.create('tfg:pile/red_sand', 'tfg:layer_block')
-	event.create('tfg:pile/white_sand', 'tfg:layer_block')
-	event.create('tfg:pile/yellow_sand', 'tfg:layer_block')
-	event.create('tfg:pile/moon_sand', 'tfg:layer_block')
-
-	// #endregion
-
 	// #region Reconstituted Stone
 
 	event.create(`tfg:rock/stone_wall`, 'wall')

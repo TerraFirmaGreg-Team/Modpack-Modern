@@ -1143,23 +1143,7 @@ const registerMinecraftRecipes = (event) => {
 
 	// #endregion
 
-
-	//#region Bundle
-	event.recipes.tfc.damage_inputs_shaped_crafting(
-		event.shaped('minecraft:bundle', [
-			' D ',
-			'ACA',
-			' B '
-		], {
-			A: 'waterflasks:leather_side',
-			B: '#forge:leather',
-			C: '#forge:string',
-			D: '#tfc:sewing_needles'
-		})
-	).id('tfg:shaped/bundle')
-	// #endregion
-
-    //#region Minecart w/ Furnace
+    // Minecart w/ Furnace
     event.shapeless('minecraft:furnace_minecart', ['minecraft:water_bucket', 'gtceu:hp_steam_solid_boiler', 'minecraft:minecart']);
 
     event.recipes.gtceu.assembler('minecraft:furnace_minecart')
@@ -1167,5 +1151,4 @@ const registerMinecraftRecipes = (event) => {
         .itemOutputs('minecraft:furnace_minecart')
         .duration(100)
         .EUt(4)
-	// #endregion
 }
