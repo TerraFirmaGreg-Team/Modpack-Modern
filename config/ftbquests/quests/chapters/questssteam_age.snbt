@@ -1653,15 +1653,15 @@
 		}
 		{
 			dependencies: ["32046292AA5B0E30"]
-			description: ["{quests.steam_age.water_wheel.desc}"]
+			description: ["{quests.steam_age.large_water_wheel.desc}"]
 			id: "56A068A5488CB273"
-			subtitle: "{quests.steam_age.water_wheel.subtitle}"
+			subtitle: "{quests.steam_age.large_water_wheel.subtitle}"
 			tasks: [{
 				id: "5772AD3BB700FD84"
 				item: "create:large_water_wheel"
 				type: "item"
 			}]
-			title: "{quests.steam_age.water_wheel.title}"
+			title: "{quests.steam_age.large_water_wheel.title}"
 			x: -3.5d
 			y: -2.0d
 		}
