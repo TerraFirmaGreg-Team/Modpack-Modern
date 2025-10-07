@@ -8,6 +8,7 @@
 					"min_radius": 2,
 					"max_radius": 3,
 					"height": 1,
+					"integrity": 0.75,
 					"states": [
 						{
 							"replace": "minecraft:red_sand",
