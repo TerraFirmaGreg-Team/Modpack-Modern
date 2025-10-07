@@ -19,7 +19,7 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('tfg:fuel_holder')
-		.itemInputs('gtceu:ev_machine_hull', '4x gtceu:uranium_triplatinum_single_wire', '4x gtceu:ev_robot_arm', '4x gtceu:titanium_gear', '2x #gtceu:circuits/ev')
+		.itemInputs('gtceu:ev_machine_hull', '4x gtceu:ev_robot_arm', '4x gtceu:titanium_gear', '2x #gtceu:circuits/ev')
 		.itemOutputs('deafission:fuel_holder')
 		.duration(20*30)
 		.circuit(1)
@@ -36,7 +36,7 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(GTValues.V[GTValues.HV])
 
 	event.recipes.gtceu.nuclear_fuel_factory('tfg:uranium_pellet')
-		.inputFluids(Fluid.of('gtceu:uranium_waste', 10000))
+		.inputFluids(Fluid.of('gtceu:radioactive_waste', 10000))
 		.itemInputs('16x #forge:rods/uranium_235', '32x #forge:rods/uranium', '32x #forge:rods/uranium', 
 			'32x #forge:rods/uranium', '32x #forge:rods/uranium', 'tfg:empty_rod')
 		.itemOutputs('tfg:uranium_rod')
@@ -122,7 +122,7 @@ function registerTFGNuclearRecipes(event) {
 	event.recipes.gtceu.gas_pressurizer('nuclear_residue')
 		.inputFluids(Fluid.of('gtceu:martian_sludge', 1000))
 		.inputFluids(Fluid.of('gtceu:formamide', 1000))
-		.inputFluids(Fluid.of('gtceu:radioactive_waste', 1000))
+		.inputFluids(Fluid.of('gtceu:uranium_waste', 1000))
 		.outputFluids(Fluid.of('gtceu:radon', 1000))
 		.itemOutputs('#forge:dusts/nuclear_residue')
 		.duration(20*10)
@@ -212,7 +212,7 @@ function registerTFGNuclearRecipes(event) {
 
     event.recipes.deafission.fission_reactor_fuel('tfg:thorium')
 		.itemInputs(Item.of('tfg:thorium_rod'))
-		.outputFluids(Fluid.of('gtceu:uranium_waste', 2500))
+		.outputFluids(Fluid.of('gtceu:radioactive_waste', 2500))
 		.itemOutputs(Item.of('tfg:empty_rod'))
 		.dimension('ad_astra:mars')
         .hideDuration(true);
@@ -239,7 +239,7 @@ function registerTFGNuclearRecipes(event) {
 
     event.recipes.deafission.fission_reactor_fuel('tfg:uranium')
 		.itemInputs(Item.of('tfg:uranium_rod'))
-		.outputFluids(Fluid.of('gtceu:radioactive_waste', 50000))
+		.outputFluids(Fluid.of('gtceu:uranium_waste', 50000))
 		.itemOutputs(Item.of('tfg:empty_rod'))
         .hideDuration(true);
     
@@ -264,7 +264,7 @@ function registerTFGNuclearRecipes(event) {
 
     event.recipes.deafission.fission_reactor_fuel('tfg:plutonium')
 		.itemInputs(Item.of('tfg:plutonium_rod'))
-		.outputFluids(Fluid.of('gtceu:tritiated_water', 5000))
+		.outputFluids(Fluid.of('gtceu:tritiated_water', 5184))
 		.itemOutputs(Item.of('tfg:empty_rod'))
         .hideDuration(true);
     
