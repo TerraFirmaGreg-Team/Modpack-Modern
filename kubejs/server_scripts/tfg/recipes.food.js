@@ -285,7 +285,7 @@ function registerTFGFoodRecipes(event) {
 		})
 
 	})
-
+	
 	// Milks 
 
 	processorRecipe(`white_chocolate_blend`, 300, 16, {
@@ -911,7 +911,6 @@ function registerTFGFoodRecipes(event) {
 		fluidInputs: [Fluid.of('gtceu:helium_3', 50)],
 		itemOutputs: ["species:birtday_cake"]
 	})
-
 
 	// These don't need the ISP handling, they're just here to keep all the food recipes together
 

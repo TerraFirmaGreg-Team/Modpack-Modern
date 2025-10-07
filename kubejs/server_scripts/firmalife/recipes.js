@@ -761,4 +761,28 @@ const registerFirmaLifeRecipes = (event) => {
 			Fluid.of('tfcchannelcasting:milk_chocolate', 100))
 		.outputItem(TFC.isp.of('firmalife:food/chocolate_ice_cream').copyFood())
 		.id('tfg:mixing_bowl/chocolate_ice_cream')
+
+	// Chocolate Melting
+	const setChocolateHeating = (variant) => {
+    const itemID = `firmalife:food/${variant}_chocolate`
+    const fluidID = `tfcchannelcasting:${variant}_chocolate`
+    const recipeID = `firmalife:heating/${variant}_chocolate`
+	const castingRecipeID = `tfcchannelcasting:casting/${variant}_chocolate`
+
+    event.remove({ id: recipeID })
+	event.remove({ id: castingRecipeID })
+	event.remove({ id: `${castingRecipeID}_fire_ingot` })
+    event.remove({ type: 'tfc:heating', ingredient: { item: itemID } })
+
+    event.recipes.tfc.heating(itemID, 200)
+        .resultFluid(Fluid.of(fluidID, 144))
+        .id(recipeID)
+
+	event.recipes.tfc.casting(`${itemID}`, 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient(`${fluidID}`, 144), 0)
+	event.recipes.tfc.casting(`${itemID}`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(`${fluidID}`, 144), 0)		
+	}
+
+	setChocolateHeating('white')
+	setChocolateHeating('milk')
+	setChocolateHeating('dark')		
 }
