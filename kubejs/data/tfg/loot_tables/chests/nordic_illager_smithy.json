@@ -342,22 +342,22 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:sentry_armor_trim_smithing_template",
-					"weight": 10
+					"weight": 7
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:vex_armor_trim_smithing_template",
-					"weight": 10
+					"weight": 7
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:wild_armor_trim_smithing_template",
-					"weight": 10
+					"weight": 7
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:coast_armor_trim_smithing_template",
-					"weight": 10
+					"weight": 7
 				},
 				{
 					"type": "minecraft:item",
@@ -367,8 +367,8 @@
 			],
 			"rolls": {
 				"type": "minecraft:uniform",
-				"max": 12,
-				"min": 8
+				"max": 10,
+				"min": 6
 			}
 		}
 	]

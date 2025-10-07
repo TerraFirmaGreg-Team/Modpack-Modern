@@ -67,7 +67,7 @@ function removeGreateRecipes(event) {
 	event.remove({ id: 'gtceu:extractor/extract_andesite_alloy_shaft' })
 
 	event.remove({ id: 'gtceu:extractor/extract_andesite_alloy' })
-	event.remove({ id: 'gtceu:extractor/extract_steel_alloy '})
+	event.remove({ id: 'gtceu:extractor/extract_steel_alloy'})
 	event.remove({ id: 'gtceu:extractor/extract_aluminium_alloy' })
 	event.remove({ id: 'gtceu:extractor/extract_stainless_steel_alloy' })
 	event.remove({ id: 'gtceu:extractor/extract_titanium_alloy' })

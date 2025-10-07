@@ -1,0 +1,7 @@
+{
+	"parent": "tfg:block/fission_component",
+	"textures": {
+		"infill": "tfg:block/glacian_wool_infill",
+		"frame": "tfg:block/empty_fission_frame"
+	}
+}

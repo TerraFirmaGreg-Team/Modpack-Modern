@@ -1,0 +1,7 @@
+{
+	"parent": "tfg:block/fission_component",
+	"textures": {
+		"infill": "tfg:block/fission/impure_moderate_core",
+		"frame": "tfg:block/empty_fission_frame"
+	}
+}

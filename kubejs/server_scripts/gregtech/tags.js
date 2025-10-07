@@ -111,4 +111,6 @@ function registerGTCEUFluidTags(event) {
     event.add("c:hidden_from_recipe_viewers", "gtceu:molten_blue_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:damascus_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:blaze");
+
+	event.add('firmalife:usable_in_mixing_bowl', 'gtceu:concrete')
 }

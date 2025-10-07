@@ -234,6 +234,13 @@ const registerTFCRecipes = (event) => {
 		.duration(160)
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	event.recipes.gtceu.gas_pressurizer('tfg:pure_nitrogen')
+		.itemInputs('#forge:wax')
+		.inputFluids(Fluid.of('gtceu:nitrogen', 1000))
+		.itemOutputs('16x tfc:pure_nitrogen')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
 	//Hide Sewing
 	const stages = [
 		'raw',

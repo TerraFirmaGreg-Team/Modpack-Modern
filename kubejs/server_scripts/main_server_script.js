@@ -22,6 +22,7 @@ ServerEvents.tags('item', event => {
 	registerCreateConnectedItemTags(event)
 	registerCreateDecoItemTags(event)
 	registerCreateFactoryLogisticsItemTags(event)
+	registerDeaFissionItemTags(event)
 	registerDomumOrnamentumItemTags(event)
 	registerDiggerHelmetItemTags(event)
 	registerEndermanOverhaulItemTags(event)
@@ -291,5 +292,3 @@ TaCZServerEvents.gunDataLoad((event) => {
 TaCZServerEvents.attachmentDataLoad((event) => {
 	attachmentDataLogic(event)
 })
-
-

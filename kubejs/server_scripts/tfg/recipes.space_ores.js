@@ -140,6 +140,8 @@ function registerTFGSpaceOres(event) {
 		.duration(20 * 45)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	//#region Mars Ores Line
+
 	// Ostrum Harvester
 
 	event.recipes.gtceu.ostrum_harvester(`tfg:ostrum_harvesting`)
@@ -155,7 +157,7 @@ function registerTFGSpaceOres(event) {
 	// Ostrum Linear Accelerator Recipes
 
 	event.recipes.gtceu.ostrum_linear_accelerator('tfg:ostrum_transformation')
-		.inputFluids('gtceu:residual_radioactive_concoction 1000')
+		.inputFluids('gtceu:residual_radioactive_concoction 100')
 		.itemInputs('32x #forge:dusts/ostrum')
 		.chancedFluidOutputLogic($ChanceLogic.XOR)
 		.chancedFluidOutput('gtceu:lightweight_ostrum_vapor', 6000, 0)
@@ -193,6 +195,7 @@ function registerTFGSpaceOres(event) {
 		.inputFluids(Fluid.of('gtceu:tritiated_water', 500))
 		.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/thorium'), 1, 10)
 		.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/uraninite'), 1, 10)
+		.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/hematite'), 1, 10)
 		.dimension('ad_astra:mars')
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.IV]);

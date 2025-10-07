@@ -115,6 +115,8 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:wax', 'tfg:paraffin_wax')
 	event.add('forge:wax', 'firmalife:beeswax')
 	event.add('forge:wax', 'tfg:conifer_rosin')
+	event.add('forge:wax', 'tfg:crimsene_gem')
+	event.add('forge:wax', 'tfg:warpane_gem')
 
 	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
 	// #endregion
@@ -773,7 +775,7 @@ const registerTFGItemTags = (event) => {
 	//Mars animal region
 	event.add('tfg:martian_eggs', 'tfg:sniffer_egg')
 	event.add('tfg:martian_eggs', 'tfg:wraptor_egg')
-	event.add('tfc:eggs', '#tfg:martian_eggs')
+	event.add('forge:eggs', '#tfg:martian_eggs')
 	
 	event.add('tfg:martian_animal_foods', 'betterend:amber_root_product')
 	event.add('tfg:martian_animal_foods', 'betterend:blossom_berry_product')
@@ -965,16 +967,22 @@ const registerTFGBlockTags = (event) => {
     var COMPONENTS = 'deafission:components';
     
 	// Max Heating
-    event.add(COMPONENTS, 'ad_astra:glacian_fur'); // Max Heat 2
+    event.add(COMPONENTS, 'tfg:glacian_wool_frame'); // Max Heat 2
 	event.add(COMPONENTS, 'minecraft:blue_ice'); // Max Heat 0.5
+    event.add(COMPONENTS, 'tfg:aes_insulation_frame'); // Max Heat 1
+	event.add(COMPONENTS, 'tfg:moderate_core_frame'); // Max Heat 10
+	event.add(COMPONENTS, 'tfg:impure_moderate_core_frame'); // Max Heat 5
+	//event.add(COMPONENTS, 'minecraft:blue_ice'); // Max Heat 0.5
 
 	event.add(COMPONENTS, 'minecraft:bedrock'); // Max Heat 10000 CREATIVE BLOCK
 
 	// Increase Throttle
-    event.add(COMPONENTS, 'minecraft:iron_block');
+    //event.add(COMPONENTS, 'minecraft:iron_block');
     
 	// Increase Effiency
-    event.add(COMPONENTS, 'minecraft:packed_ice');
+    //event.add(COMPONENTS, 'minecraft:packed_ice');
+
+	event.add('tfg:fission_coolant','deafission:components')
 
 	//#endregion
 
@@ -1024,9 +1032,18 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfc:grass', 'tfg:grass/amber_kaolin_mycelium')
 	event.add('tfc:grass', 'tfg:grass/rusticus_kaolin_mycelium')
 	event.add('tfc:grass', 'tfg:grass/sangnum_kaolin_mycelium')
+	event.add('tfc:kaolin_clay', 'tfg:grass/amber_kaolin_mycelium')
+	event.add('tfc:kaolin_clay', 'tfg:grass/rusticus_kaolin_mycelium')
+	event.add('tfc:kaolin_clay', 'tfg:grass/sangnum_kaolin_mycelium')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/amber_mycelium')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/rusticus_mycelium')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/sangnum_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/amber_clay_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/rusticus_clay_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/sangnum_clay_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/amber_kaolin_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/rusticus_kaolin_mycelium')
+	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/sangnum_kaolin_mycelium')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/mars_farmland')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/mars_path')
 	event.add('tfc:can_landslide', 'tfg:grass/mars_dirt')

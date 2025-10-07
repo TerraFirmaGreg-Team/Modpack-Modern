@@ -69,7 +69,12 @@
 		}
 	]
 	order_index: 3
-	quest_links: [ ]
+	quest_links: [{
+		id: "6845144F7EA1081D"
+		linked_quest: "24158DEE63DAEB41"
+		x: 5.0d
+		y: -4.5d
+	}]
 	quests: [
 		{
 			dependencies: ["00A2566109144D7F"]
@@ -1245,6 +1250,23 @@
 			}]
 			x: -0.5d
 			y: -10.5d
+		}
+		{
+			dependencies: [
+				"5187909B66DF2D43"
+				"24158DEE63DAEB41"
+			]
+			description: ["{quests.ae2.interplanetary_wireless.desc}"]
+			icon: "tfg:wireless_card"
+			id: "4B1F957EB41A5E9B"
+			subtitle: "{quests.ae2.interplanetary_wireless.subtitle}"
+			tasks: [{
+				id: "647F84B024E272BA"
+				item: "tfg:wireless_card"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.5d
 		}
 	]
 	subtitle: ["{quests.ae2.subtitle}"]

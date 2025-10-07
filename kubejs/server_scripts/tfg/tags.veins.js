@@ -70,6 +70,7 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_copper')
 	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_galena')
 	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_sapphire')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_graphite')
 	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_hematite')
 	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_lubricant')
 	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_neodynium')

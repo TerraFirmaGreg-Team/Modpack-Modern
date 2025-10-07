@@ -958,7 +958,7 @@ function registerGTCEuMachineRecipes(event) {
 	event.recipes.gtceu.assembler('steel_machine_casing')
 		.itemInputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 4))
 		.itemOutputs('gtceu:steel_machine_casing')
-		.circuit(4)
+		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(16)
 
@@ -966,7 +966,7 @@ function registerGTCEuMachineRecipes(event) {
 		.itemInputs('gtceu:clean_machine_casing', '4x gtceu:annealed_copper_double_wire')
 		.inputFluids(Fluid.of('gtceu:polyvinyl_chloride', 288))
 		.itemOutputs('tfg:casings/machine_casing_stainless_evaporation')
-		.circuit(4)
+		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -974,7 +974,7 @@ function registerGTCEuMachineRecipes(event) {
 		.itemInputs('gtceu:clean_machine_casing', '4x #forge:double_wires/kanthal')
 		.inputFluids(Fluid.of('gtceu:polybenzimidazole', 288))
 		.itemOutputs('tfg:casings/machine_casing_mars')
-		.circuit(4)
+		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -982,7 +982,7 @@ function registerGTCEuMachineRecipes(event) {
 		.itemInputs('4x #forge:dense_plates/lead', '2x #forge:plates/rtm_alloy', '#forge:frames/titanium')
 		.inputFluids(Fluid.of('gtceu:polyvinyl_butyral', 288))
 		.itemOutputs('2x gtceu:atomic_casing')
-		.circuit(4)
+		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -1185,19 +1185,17 @@ function registerGTCEuMachineRecipes(event) {
 
 	// Vacuum Intake
 
-	event.shaped(
-		'tfg:casings/machine_casing_vacuum_engine_intake',
-		['USU',
-			'WZW',
-			'UTU'],
-		{
-			S: '#forge:tools/hammers',
-			T: '#forge:tools/wrenches',
-			W: '#forge:rotors/ultimet',
-			U: 'gtceu:ultimet_normal_item_pipe',
-			Z: 'gtceu:inert_machine_casing'
-		}
-	).id('tfg:shaped/casing_machine_casing_vacuum_engine_intake')
+	event.shaped('tfg:casings/machine_casing_vacuum_engine_intake', [
+		'USU',
+		'WZW',
+		'UTU'
+	], {
+		S: '#forge:tools/hammers',
+		T: '#forge:tools/wrenches',
+		W: '#forge:rotors/ultimet',
+		U: 'gtceu:ultimet_normal_item_pipe',
+		Z: 'gtceu:inert_machine_casing'
+	}).id('tfg:shaped/casing_machine_casing_vacuum_engine_intake')
 
 	event.recipes.gtceu.assembler('tfg:casings/machine_casing_vacuum_engine_intake')
 		.itemInputs(
@@ -1209,24 +1207,18 @@ function registerGTCEuMachineRecipes(event) {
 		.EUt(GTValues.VH[GTValues.LV])
 		.circuit(2)
 
-	// Stainless Evaporation Tower - LOCKED UNTIL VENUS
+	// Stainless Evaporation Tower
 
-	/*
-
-	event.shaped(
-		'gtceu:evaporation_tower',
-		[	'TUT',
-			'WZW',
-			'TUT'],
-		{
-			T: '#gtceu:circuits/ev',
-			W: 'gtceu:hv_electric_pump',
-			U: '#forge:double_wires/kanthal',
-			Z: 'gtceu:hv_machine_hull'
-		}
-	).id('tfg:shaped/evaporation_tower')
-
-	*/
+	event.recipes.gtceu.shaped('tfg:evaporation_tower', [
+		'TUT',
+		'WZW',
+		'TUT'
+	], {
+		T: '#gtceu:circuits/iv',
+		W: 'gtceu:ev_electric_pump',
+		U: '#forge:double_wires/nichrome',
+		Z: 'gtceu:ev_machine_hull'
+	}).addMaterialInfo().id('tfg:shaped/evaporation_tower')
 
 	//#endregion
 
@@ -1269,5 +1261,17 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:ev_fluid_regulator'
 	}
 	).id('tfg:shaped/heat_exchanger')
+
+	event.shaped('tfg:nuclear_turbine', [
+		'CTC',
+		'TZT',
+		'BTB'
+	], {
+		T: '#forge:gears/magnalium',
+		Z: 'gtceu:ev_machine_hull',
+		B: 'gtceu:ultimet_large_item_pipe',
+		C: '#gtceu:circuits/ev'
+	}
+	).id('tfg:shaped/nuclear_turbine')
 
 }

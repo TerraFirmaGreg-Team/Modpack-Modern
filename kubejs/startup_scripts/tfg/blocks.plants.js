@@ -169,6 +169,7 @@ const registerTFGCrops = (event) => {
 		.tagBlock('minecraft:mineable/axe')
 		.tagBlock('minecraft:mineable/hoe')
 		.mapColor('color_red')
+		.lightLevel(0.85)
 		.requiresTool(false)
 		.fullBlock(false)
 		.opaque(false)
@@ -320,6 +321,7 @@ const registerTFGCrops = (event) => {
 		.growthDays(6)
 		.soundType('nether_wart')
 		.defaultCutout()
+		.noCollision()
 
 	event.create('tfg:saplings/warped', 'tfc:sapling')
 		.features('tfg:mars/tree/warped')
@@ -329,6 +331,7 @@ const registerTFGCrops = (event) => {
 		.growthDays(6)
 		.soundType('nether_wart')
 		.defaultCutout()
+		.noCollision()
 
 	event.create('tfg:saplings/alphacene', 'tfc:sapling')
 		.features('species:alphacene_mushroom')
@@ -338,24 +341,27 @@ const registerTFGCrops = (event) => {
 		.growthDays(3)
 		.soundType('nether_wart')
 		.defaultCutout()
+		.noCollision()
 
 	event.create('tfg:saplings/strophar', 'tfc:sapling')
-		.features('tfg:mars/tree/strophar')
+		.features('tfg:mars/tree/strophar_mini')
 		.tagBoth('minecraft:saplings')
 		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagBlock('tfc:can_be_snow_piled')
 		.growthDays(7)
 		.soundType('nether_wart')
 		.defaultCutout()
+		.noCollision()
 
 	event.create('tfg:saplings/aeronos', 'tfc:sapling')
-		.features('tfg:mars/tree/aeronos')
+		.features('tfg:mars/tree/aeronos_mini')
 		.tagBoth('minecraft:saplings')
 		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagBlock('tfc:can_be_snow_piled')
 		.growthDays(9)
 		.soundType('nether_wart')
 		.defaultCutout()
+		.noCollision()
 
 	event.create('tfg:saplings/glacian', 'tfc:sapling')
 		.features('tfg:mars/tree/glacian_mini')
@@ -365,6 +371,7 @@ const registerTFGCrops = (event) => {
 		.growthDays(9)
 		.soundType('nether_wart')
 		.defaultCutout()
+		.noCollision()
 
 	// Glacian tree stuff
 	event.create('tfg:glacian_leaves', 'tfc:leaves')

@@ -1,10 +1,4 @@
 {
 	"feature": "tfg:mars/tree/glacian",
-	"placement": [
-		{
-			"type": "tfc:flat_enough",
-			"flatness": 0.8,
-			"radius": 4
-		}
-	]
+	"placement": []
 }

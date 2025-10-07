@@ -452,7 +452,7 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			.itemInputs(`2x ${slab}`, '#forge:springs')
 			.itemOutputs(`2x ${pressure_plate}`)
 			.duration(50)
-			.circuit(0)
+			.circuit(3)
 			.EUt(GTValues.VA[GTValues.ULV])
 	}
 
@@ -516,7 +516,9 @@ function sterilizeItem(event, input, output, multiplier, cleanroom) {
 
 	let autoclave_recipe = event.recipes.gtceu.autoclave(`tfg:autoclave_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
 		.itemInputs(input)
-		.inputFluids(Fluid.of('gtceu:steam', 15360))
+		.perTick(true)
+		.inputFluids(Fluid.of('gtceu:steam', 100*recipe_multiplier))
+		.perTick(false)
 		.itemOutputs(output)
 		.duration(240*20*recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);

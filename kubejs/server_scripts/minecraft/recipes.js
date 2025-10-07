@@ -848,7 +848,7 @@ const registerMinecraftRecipes = (event) => {
 	event.recipes.gtceu.mixer('gtceu:lv_glowstone')
 		.itemInputs('gtceu:gold_dust', 'minecraft:redstone', 'gtceu:sulfur_dust')
 		.itemOutputs('2x minecraft:glowstone_dust')
-		.circuit(32)
+		.circuit(8)
 		.duration(1200)
 		.EUt(30)
 
@@ -1120,7 +1120,7 @@ const registerMinecraftRecipes = (event) => {
 		event.recipes.gtceu.assembler(`minecraft:${x.type}_pressure_plate`)
 			.itemInputs('#forge:small_springs', `2x ${x.material}`)
 			.itemOutputs(`minecraft:${x.type}_pressure_plate`)
-			.circuit(0)
+			.circuit(3)
 			.duration(50)
 			.EUt(2)
 	})
