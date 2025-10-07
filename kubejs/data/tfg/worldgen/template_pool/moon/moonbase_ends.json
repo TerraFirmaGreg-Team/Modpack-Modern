@@ -43,6 +43,7 @@
 			"element": {
 				"element_type": "lithostitched:limited",
 				"delegate": {
+					"element_type": "minecraft:single_pool_element",
 					"location": "tfg:moon/moonbase/end/moonbase_dish",
 					"processors": "minecraft:empty",
 					"projection": "rigid"
@@ -55,6 +56,7 @@
 			"element": {
 				"element_type": "lithostitched:limited",
 				"delegate": {
+					"element_type": "minecraft:single_pool_element",
 					"location": "tfg:moon/moonbase/end/moonbase_launch_pad",
 					"processors": "minecraft:empty",
 					"projection": "rigid"
@@ -67,6 +69,7 @@
 			"element": {
 				"element_type": "lithostitched:limited",
 				"delegate": {
+					"element_type": "minecraft:single_pool_element",
 					"location": "tfg:moon/moonbase/end/moonbase_solar",
 					"processors": "minecraft:empty",
 					"projection": "rigid"

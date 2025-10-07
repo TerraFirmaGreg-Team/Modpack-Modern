@@ -61,6 +61,7 @@
 			"element": {
 				"element_type": "lithostitched:limited",
 				"delegate": {
+					"element_type": "minecraft:single_pool_element",
 					"location": "tfg:moon/moonbase/hub/moonbase_farm1",
 					"processors": "minecraft:empty",
 					"projection": "rigid"
@@ -73,6 +74,7 @@
 			"element": {
 				"element_type": "lithostitched:limited",
 				"delegate": {
+					"element_type": "minecraft:single_pool_element",
 					"location": "tfg:moon/moonbase/hub/moonbase_beds",
 					"processors": "minecraft:empty",
 					"projection": "rigid"
@@ -85,6 +87,7 @@
 			"element": {
 				"element_type": "lithostitched:limited",
 				"delegate": {
+					"element_type": "minecraft:single_pool_element",
 					"location": "tfg:moon/moonbase/hub/moonbase_library",
 					"processors": "minecraft:empty",
 					"projection": "rigid"
@@ -97,6 +100,7 @@
 			"element": {
 				"element_type": "lithostitched:limited",
 				"delegate": {
+					"element_type": "minecraft:single_pool_element",
 					"location": "tfg:moon/moonbase/hub/moonbase_pantry",
 					"processors": "minecraft:empty",
 					"projection": "rigid"
@@ -109,6 +113,7 @@
 			"element": {
 				"element_type": "lithostitched:limited",
 				"delegate": {
+					"element_type": "minecraft:single_pool_element",
 					"location": "tfg:moon/moonbase/hub/moonbase_workshop",
 					"processors": "minecraft:empty",
 					"projection": "rigid"
