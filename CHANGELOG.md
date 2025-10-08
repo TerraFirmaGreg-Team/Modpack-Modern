@@ -34,6 +34,7 @@
 - Fixed not being able to put Bulbkin pie in a firmalife oven @Xaligal
 - Fixed missing heat data on baked potatoes @Xaligal
 - Fixed being able to nest backpacks and frame packs inside each other infinitely @Xaligal
+- Eaters are now actually hostile @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
