@@ -190,8 +190,8 @@
 			},
 			{
 				"type": "wan_ancient_beasts:surfer",
-				"maxCount": 3,
-				"minCount": 2,
+				"maxCount": 2,
+				"minCount": 1,
 				"weight": 100
 			}
 		]

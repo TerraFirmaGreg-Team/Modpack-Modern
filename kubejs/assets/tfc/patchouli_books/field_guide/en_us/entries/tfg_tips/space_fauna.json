@@ -149,7 +149,7 @@
 			"scale": 0.5,
 			"offset": 0.5,
 			"name": "Crusher",
-			"text": "$(thing)Crushers$() are wild animals found in herds in areas above -100°C. They can be killed for their meat and hard spikes."
+			"text": "$(thing)Crushers$() are semihostile animals found in herds in areas above -100°C. They can be killed for their meat and hard spikes."
 		},
 		{
 			"type": "patchouli:entity",
@@ -185,7 +185,7 @@
 			"entity": "species:stackatick",
 			"scale": 0.4,
 			"name": "Stackatick",
-			"text": "One of the few animals that can survive the Martian desert, $(thing)Stackaticks$() are passive animals. They cannot be eaten."
+			"text": "One of the few animals that can survive the Martian desert, $(thing)Stackaticks$() are passive prey animals. They cannot be eaten."
 		}
 	],
 	"read_by_default": true
