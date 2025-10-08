@@ -912,6 +912,112 @@ function registerTFGFoodRecipes(event) {
 		itemOutputs: ["species:birtday_cake"]
 	})
 
+	// Soup
+    processorRecipe("grain_soup", 300, 8, {
+        circuit: 20,
+        itemInputs: [
+            '3x #tfc:bowls',
+            '2x #tfc:foods/grains',
+            '3x #tfc:foods/usable_in_soup'
+        ],
+        fluidInputs: [Fluid.of('minecraft:water', 100)],
+        itemOutputs: ['3x tfc:food/grain_soup'],
+        itemOutputProvider: TFC.isp.of('3x tfc:food/grain_soup').meal(
+            (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
+            [
+                (portion) => portion
+                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
+                    .nutrientModifier(1)
+                    .saturationModifier(0.8)
+                    .waterModifier(0.8)
+            ]
+        )
+    })
+
+    processorRecipe("fruit_soup", 200, 8, {
+        circuit: 21,
+        itemInputs: [
+            '3x #tfc:bowls',
+            '2x #tfc:foods/fruits',
+            '3x #tfc:foods/usable_in_soup'
+        ],
+        fluidInputs: [Fluid.of('minecraft:water', 100)],
+        itemOutputs: ['3x tfc:food/fruit_soup'],
+        itemOutputProvider: TFC.isp.of('3x tfc:food/fruit_soup').meal(
+            (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
+            [
+                (portion) => portion
+                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
+                    .nutrientModifier(1)
+                    .saturationModifier(0.8)
+                    .waterModifier(0.8)
+            ]
+        )
+    })
+
+    processorRecipe("vegetables_soup", 200, 8, {
+        circuit: 22,
+        itemInputs: [
+            '3x #tfc:bowls',
+            '2x #tfc:foods/vegetables',
+            '3x #tfc:foods/usable_in_soup'
+        ],
+        fluidInputs: [Fluid.of('minecraft:water', 100)],
+        itemOutputs: ['3x tfc:food/vegetables_soup'],
+        itemOutputProvider: TFC.isp.of('3x tfc:food/vegetables_soup').meal(
+            (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
+            [
+                (portion) => portion
+                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
+                    .nutrientModifier(1)
+                    .saturationModifier(0.8)
+                    .waterModifier(0.8)
+            ]
+        )
+    })
+
+    processorRecipe("protein_soup", 200, 8, {
+        circuit: 23,
+        itemInputs: [
+            '3x #tfc:bowls',
+            '2x #tfc:foods/meats',
+            '3x #tfc:foods/usable_in_soup'
+        ],
+        fluidInputs: [Fluid.of('minecraft:water', 100)],
+        itemOutputs: ['3x tfc:food/protein_soup'],
+        itemOutputProvider: TFC.isp.of('3x tfc:food/protein_soup').meal(
+            (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
+            [
+                (portion) => portion
+                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
+                    .nutrientModifier(1)
+                    .saturationModifier(0.8)
+                    .waterModifier(0.8)
+            ]
+        )
+    })
+
+    processorRecipe("dairy_soup", 200, 8, {
+        circuit: 24,
+        itemInputs: [
+            '3x #tfc:bowls',
+            '2x #tfc:foods/dairy',
+            '3x #tfc:foods/usable_in_soup'
+        ],
+        fluidInputs: [Fluid.of('minecraft:water', 100)],
+        itemOutputs: ['3x tfc:food/dairy_soup'],
+        itemOutputProvider: TFC.isp.of('3x tfc:food/dairy_soup').meal(
+            (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
+            [
+                (portion) => portion
+                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
+                    .nutrientModifier(1)
+                    .saturationModifier(0.8)
+                    .waterModifier(0.8)
+            ]
+        )
+    })	
+
 	// These don't need the ISP handling, they're just here to keep all the food recipes together
 
 	event.recipes.gtceu.mixer('tfg:tfc/olive_oil_water')
