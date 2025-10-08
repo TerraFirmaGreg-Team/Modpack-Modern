@@ -3,9 +3,7 @@
 const registerEndermanOverhaulItemTags = (event) => {
 
 	const DISABLED_ITEMS = [
-		'endermanoverhaul:enderman_tooth',
 		'endermanoverhaul:corrupted_blade',
-		'endermanoverhaul:corrupted_shield',
 
 		'endermanoverhaul:savanna_hood',
 		'endermanoverhaul:snowy_hood',

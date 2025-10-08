@@ -9,6 +9,8 @@ const registerWABBlockTags = (event) => {
 	// don't put sand layers on these, otherwise they'll fall through
 	event.add('minecraft:snow_layer_cannot_survive_on', 'wan_ancient_beasts:quick_sand')
 	event.add('minecraft:snow_layer_cannot_survive_on', 'wan_ancient_beasts:quick_red_sand')
+	event.add('minecraft:mineable/shovel', 'wan_ancient_beasts:quick_sand')
+	event.add('minecraft:mineable/shovel', 'wan_ancient_beasts:quick_red_sand')
 }
 
 const registerWABItemTags = (event) => {

@@ -185,6 +185,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Beryllium.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.Thorium.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.Uraninite.addFlags(GENERATE_DUSTY_ORES);
+	GTMaterials.Hematite.addFlags(GENERATE_DUSTY_ORES);
 
 	//#endregion
 
@@ -273,7 +274,7 @@ const registerGTCEuMaterialModification = (event) => {
 
 	GTMaterials.Ultimet.addFlags(GENERATE_ROTOR)
 	
-	GTMaterials.HSLASteel.addFlags(GENERATE_BOLT_SCREW)
+	GTMaterials.HSLASteel.addFlags(GENERATE_BOLT_SCREW, GENERATE_DENSE)
 	
 	GTMaterials.Invar.addFlags(GENERATE_RING);
 	GTMaterials.Magnalium.addFlags(GENERATE_RING);

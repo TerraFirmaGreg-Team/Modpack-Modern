@@ -40,7 +40,7 @@ function registerTFGSupportRecipes(event) {
 			'AB ',
 			'AC ',
 			'AC '
-		],{
+		], {
 			A: 'gtceu:light_concrete',
 			B: '#tfc:chisels',
 			C: 'tfc:mortar'
@@ -59,7 +59,7 @@ function registerTFGSupportRecipes(event) {
 			'AB ',
 			'AC ',
 			'AC '
-		],{
+		], {
 			A: 'gtceu:dark_concrete',
 			B: '#tfc:chisels',
 			C: 'tfc:mortar'
@@ -80,7 +80,7 @@ function registerTFGSupportRecipes(event) {
 				'AB ',
 				'AC ',
 				'AC '
-			],{
+			], {
 				A: `tfc:rock/loose/${stone}`,
 				B: '#tfc:chisels',
 				C: 'tfc:mortar'
@@ -91,7 +91,7 @@ function registerTFGSupportRecipes(event) {
 				'AB ',
 				'AC ',
 				'AC '
-			],{
+			], {
 				A: `tfc:rock/mossy_loose/${stone}`,
 				B: '#tfc:chisels',
 				C: 'tfc:mortar'
@@ -113,22 +113,22 @@ function registerTFGSupportRecipes(event) {
 			.duration(40)
 			.EUt(GTValues.VA[GTValues.ULV])
 	})
-	
+
 	// REDO w/ table and loop
 	const EXO_STONE_SUPPORTS = [
-		{ loose: 'tfg:loose/deepslate',      support: 'tfg:migmatite_support'   },
-		{ loose: 'tfg:loose/blackstone',     support: 'tfg:pyroxenite_support'  },
-		{ loose: 'tfg:loose/dripstone',      support: 'tfg:travertine_support'  },
-		{ loose: 'tfg:loose/crackrack',      support: 'tfg:keratophyre_support' },
-		{ loose: 'tfg:loose/moon_stone',     support: 'tfg:anorthosite_support' },
-		{ loose: 'tfg:loose/moon_deepslate', support: 'tfg:norite_support'      },
-		{ loose: 'tfg:loose/mars_stone',     support: 'tfg:argillite_support'   },
-		{ loose: 'tfg:loose/venus_stone',    support: 'tfg:trachyte_support'    },
-		{ loose: 'tfg:loose/mercury_stone',  support: 'tfg:komatiite_support'   },
-		{ loose: 'tfg:loose/glacio_stone',   support: 'tfg:phonolite_support'   },
-		{ loose: 'tfg:loose/permafrost',     support: 'tfg:permafrost_support'  },
-		{ loose: 'tfg:loose/red_granite',    support: 'tfg:red_granite_support' },
-		{ loose: 'gtceu:stone_ingot',        support: 'tfg:stone_support'       }
+		{ loose: 'tfg:loose/deepslate',       support: 'tfg:migmatite_support' },
+		{ loose: 'beneath:blackstone_pebble', support: 'tfg:pyroxenite_support' },
+		{ loose: 'tfg:loose/dripstone',       support: 'tfg:travertine_support' },
+		{ loose: 'beneath:crackrack_rock',    support: 'tfg:keratophyre_support' },
+		{ loose: 'tfg:loose/moon_stone',      support: 'tfg:anorthosite_support' },
+		{ loose: 'tfg:loose/moon_deepslate',  support: 'tfg:norite_support' },
+		{ loose: 'tfg:loose/mars_stone',      support: 'tfg:argillite_support' },
+		{ loose: 'tfg:loose/venus_stone',     support: 'tfg:trachyte_support' },
+		{ loose: 'tfg:loose/mercury_stone',   support: 'tfg:komatiite_support' },
+		{ loose: 'tfg:loose/glacio_stone',    support: 'tfg:phonolite_support' },
+		{ loose: 'tfg:loose/permafrost',      support: 'tfg:permafrost_support' },
+		{ loose: 'tfg:loose/red_granite',     support: 'tfg:red_granite_support' },
+		{ loose: 'gtceu:stone_ingot',         support: 'tfg:stone_support' }
 	]
 
 	EXO_STONE_SUPPORTS.forEach(s => {
@@ -137,14 +137,14 @@ function registerTFGSupportRecipes(event) {
 				'AB ',
 				'AC ',
 				'AC '
-			],{
+			], {
 				A: s.loose,
 				B: '#tfc:chisels',
 				C: 'tfc:mortar'
-			}).id(`tfg:shaped/${s.support}`)
+			}).id(`tfg:shaped/${s.support.split(':')[1]}`)
 		)
 
-		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/${s.support}`)
+		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/${s.support.split(':')[1]}`)
 			.circuit(11)
 			.inputFluids(Fluid.of('gtceu:concrete', 36))
 			.itemOutputs(`8x ${s.support}`)
@@ -154,14 +154,14 @@ function registerTFGSupportRecipes(event) {
 	})
 
 	// Metal Supports
-		event.shaped('8x tfg:rebar_support', [
-			'BA ',
-			'AC '
-		],{
-			A: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 1),
-			B: ChemicalHelper.get(TagPrefix.wireFine, GTMaterials.Steel, 1),
-			C: '#forge:tools/wire_cutters'
-		}).id('tfg:shaped/rebar_support')
+	event.shaped('8x tfg:rebar_support', [
+		'BA ',
+		'AC '
+	], {
+		A: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 1),
+		B: ChemicalHelper.get(TagPrefix.wireFine, GTMaterials.Steel, 1),
+		C: '#forge:tools/wire_cutters'
+	}).id('tfg:shaped/rebar_support')
 
 	event.recipes.gtceu.assembler('tfg:gtceu/assembler/rebar_support')
 		.circuit(11)
@@ -170,15 +170,14 @@ function registerTFGSupportRecipes(event) {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-    event.recipes.tfc.anvil(
-        '1x tfg:steel_support',
-        '#forge:double_ingots/steel',
-        [
-            'upset_last',
-            'shrink_any'
-        ]
-    ).tier(4)
-	.id('tfg:anvil/steel_support')
+	event.recipes.tfc.anvil(
+		'1x tfg:steel_support',
+		'#forge:double_ingots/steel',
+		[
+			'upset_last',
+			'shrink_any'
+		]
+	).tier(4).id('tfg:anvil/steel_support')
 
 	event.recipes.gtceu.assembler('tfg:gtceu/assembler/steel_support')
 		.circuit(11)
@@ -186,12 +185,12 @@ function registerTFGSupportRecipes(event) {
 		.itemInputs('2x #forge:double_ingots/steel')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
-		
+
 	event.recipes.gtceu.macerator('tfg:macerator/recycling/steel_support')
 		.itemInputs('tfg:steel_support')
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Steel, 2)
-	)
+		)
 		.duration(GTMaterials.Steel.getMass() * 2)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])

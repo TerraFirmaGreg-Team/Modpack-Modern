@@ -15,4 +15,28 @@ function registerEndermanOverhaulRecipes(event) {
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.shaped('endermanoverhaul:corrupted_shield', [
+		'ABA',
+		'ECE',
+		'ADA'
+	], {
+		A: 'endermanoverhaul:enderman_tooth',
+		B: 'endermanoverhaul:corrupted_pearl',
+		C: 'tfc:metal/shield/blue_steel',
+		D: '#forge:plates/ender_pearl',
+		E: '#forge:plates/titanium'
+	}).id('tfg:shaped/corrupted_shield_blue')
+
+	event.shaped('endermanoverhaul:corrupted_shield', [
+		'ABA',
+		'ACA',
+		'ADA'
+	], {
+		A: 'endermanoverhaul:enderman_tooth',
+		B: 'endermanoverhaul:corrupted_pearl',
+		C: 'tfc:metal/shield/red_steel',
+		D: '#forge:plates/ender_pearl',
+		E: '#forge:plates/titanium'
+	}).id('tfg:shaped/corrupted_shield_red')
 }

@@ -24,6 +24,9 @@ function registerTFGHeatData(event) {
 	event.itemHeat("tfg:sunflower_product", 1, null, null);
 	event.itemHeat("tfg:roasted_sunflower_seeds", 1, null, null);
 	event.itemHeat("#tfc:powders", 1, null, null);
+
+	event.itemHeat('betterend:cave_pumpkin_pie_raw', 1.0, null, null);
+    event.itemHeat('betterend:cave_pumpkin_pie', 1.0, null, null);
 }
 
 /** @param {Internal.TFCDataEventJS} event */
@@ -551,11 +554,12 @@ function registerTFGFoodData(event) {
 	event.foodItem("betterend:cave_pumpkin_pie", (food) => {
 		food.hunger(4);
 		food.saturation(4);
-		food.decayModifier(2);
+		food.decayModifier(1.5);
 		food.water(5);
 		food.protein(1);
-		food.fruit(4);
-		food.grain(2);
+		food.fruit(5);
+		food.grain(4);
+		food.dairy(1);
 	});
 
 	event.foodItem("betterend:chorus_mushroom_product", (food) => {
@@ -879,6 +883,7 @@ function registerTFGFauna(event) {
 	event.fauna(
 		climate => {
 			climate.maxTemp(-108)
+			climate.fuzzy(false)
 		},
 		faunaData => {
 			faunaData.solidGround(true)

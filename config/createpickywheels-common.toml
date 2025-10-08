@@ -30,19 +30,19 @@
 	windmillPenalty = 1.0
 	#The minimum floor area required. Default: 1/4 of the max area [PI * 32 ^ 2].
 	#Range: > 1
-	windmillThreshold = 804
+	windmillThreshold = 1
 	#The minimum length of air current required.
 	#Range: > 1
-	windmillRequiredRange = 24
+	windmillRequiredRange = 1
 	#The minimum amount of points that must hit windmillRequiredRange.
 	#Range: > 1
-	windmillRequiredRangePoints = 128
+	windmillRequiredRangePoints = 1
 	#The maximum distance a waterwheel can consider air blocks from.
 	#Range: > 1
 	windmillMaxRange = 32
 	#The percentage of Generated Speed only given if windmills are raised enough.
 	#Range: 0.0 ~ 1.0
-	windmillAbovePenalty = 1.0
+	windmillAbovePenalty = 0.25
 	#The height required for the full benefit from windmillAbovePenalty.
 	#Range: > 1
 	windmillAbove = 3
