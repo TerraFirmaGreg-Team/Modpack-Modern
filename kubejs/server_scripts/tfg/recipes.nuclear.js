@@ -59,7 +59,7 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(GTValues.V[GTValues.IV])
 	*/
 	event.recipes.gtceu.lathe('tfg:empty_rod')
-		.itemInputs('gtceu:cobalt_large_restrictive_item_pipe', 'tfg:empty_rod')
+		.itemInputs('gtceu:cobalt_large_restrictive_item_pipe')
 		.itemOutputs('tfg:empty_rod')
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.HV])
@@ -293,8 +293,8 @@ function registerTFGNuclearRecipes(event) {
 	event.recipes.deafission.fission_reactor_processing('tfg:dry_ice')
 		.itemInputs('tfg:dry_ice')
         .blastFurnaceTemp(100)
-		.addData("heat_per_tick", 10)
-		.duration(20*1)
+		.addData("heat_per_tick", 5)
+		.duration(10)
 
 	event.recipes.deafission.fission_reactor_processing('tfg:refrigerant_pellet')
 		.itemInputs('tfg:refrigerant_pellet')
