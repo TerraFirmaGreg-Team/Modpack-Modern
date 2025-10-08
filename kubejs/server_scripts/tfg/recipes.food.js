@@ -285,7 +285,7 @@ function registerTFGFoodRecipes(event) {
 		})
 
 	})
-
+	
 	// Milks 
 
 	processorRecipe(`white_chocolate_blend`, 300, 16, {

@@ -1,6 +1,7 @@
 {
-	"type": "afc:trunkless_stacked_tree",
+	"type": "tfg:offset_stacked_tree",
 	"config": {
+		"y_offset": -5,
 		"layers": [
 			{
 				"templates": [
@@ -47,14 +48,6 @@
 				"max_count": 1
 			}
 		],
-		"trunk": {
-			"state": {
-				"Name": "tfg:glacian_wood"
-			},
-			"min_height": 0,
-			"max_height": 1,
-			"wide": true
-		},
 		"placement": {
 			"width": 1,
 			"height": 10,

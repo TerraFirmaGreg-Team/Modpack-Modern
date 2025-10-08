@@ -512,4 +512,11 @@ const registerTFGMaterials = (event) => {
 		.color(0xDD9DED)
 
 	// #endregion
+	
+	// #region conductor
+	event.create('tfg:thermally_conductive_fluid')
+		.liquid()
+		.flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+		.components('7x gallium', '2x tin', '1x zinc')
+		.color('0x34cfeb')
 }

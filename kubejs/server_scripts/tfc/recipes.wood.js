@@ -41,7 +41,7 @@ function registerTFCWoodRecipes(event) {
 
 		event.recipes.gtceu.assembler(`${wood}_pressure_plate`)
 			.itemInputs('#forge:small_springs', `2x tfc:wood/planks/${wood}_slab`)
-			.circuit(0)
+			.circuit(3)
 			.itemOutputs(`2x tfc:wood/planks/${wood}_pressure_plate`)
 			.duration(50)
 			.EUt(2)

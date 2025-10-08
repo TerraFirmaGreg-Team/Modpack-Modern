@@ -3,9 +3,16 @@
 ## [Unreleased]
 ### Changes
 - Buffed how many stainless steel jar lids you can get per ingot from 16 to 48 @Pyritie
+- Adjusted max HP of various moon and mars mobs @Pyritie
+- Added quest text for the mars section of the space survival chapter @Pyritie
+- Added field guide entry for mars crops @Pyritie
+- Changed the amount of open space windmills require to be extremely more lenient, so they should always work in tree farms @Pyritie
 ### Bug fixes
 - Fixed linux crash from recipe IDs (#1962) @Xaligal @Pyritie
 - Fixed missing texture for interplanetary wireless card (#1965, #1964) @Ko-lja
+- Fixed glacian trees floating above ground @Pyritie
+- Fixed tameable mars animals giving twice as much meat as they should @Pyritie
+- Fixed pyroxenite and keratophyre rocks in various recipes like stone supports @Pyritie
 
 ## [0.11.0] - 05-10-2025
 - WARNING! If you're upgrading your world from 0.10 to 0.11, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.10-to-0.11). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!

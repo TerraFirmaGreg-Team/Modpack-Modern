@@ -19,7 +19,7 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('tfg:fuel_holder')
-		.itemInputs('gtceu:ev_machine_hull', '4x gtceu:uranium_triplatinum_single_wire', '4x gtceu:ev_robot_arm', '4x gtceu:titanium_gear', '2x #gtceu:circuits/ev')
+		.itemInputs('gtceu:ev_machine_hull', '4x gtceu:ev_robot_arm', '4x gtceu:titanium_gear', '2x #gtceu:circuits/ev')
 		.itemOutputs('deafission:fuel_holder')
 		.duration(20*30)
 		.circuit(1)
@@ -36,7 +36,7 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(GTValues.V[GTValues.HV])
 
 	event.recipes.gtceu.nuclear_fuel_factory('tfg:uranium_pellet')
-		.inputFluids(Fluid.of('gtceu:uranium_waste', 10000))
+		.inputFluids(Fluid.of('gtceu:radioactive_waste', 10000))
 		.itemInputs('16x #forge:rods/uranium_235', '32x #forge:rods/uranium', '32x #forge:rods/uranium', 
 			'32x #forge:rods/uranium', '32x #forge:rods/uranium', 'tfg:empty_rod')
 		.itemOutputs('tfg:uranium_rod')
@@ -94,6 +94,12 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*9)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	event.recipes.gtceu.distillery('mars_semiheavy_water')
+		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
+		.outputFluids(Fluid.of('minecraft:water', 250))
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.MV])
+
 	// Martian Sludge
 
 	event.recipes.gtceu.chemical_bath('dirty_hexafluorosilicic_acid')
@@ -116,7 +122,7 @@ function registerTFGNuclearRecipes(event) {
 	event.recipes.gtceu.gas_pressurizer('nuclear_residue')
 		.inputFluids(Fluid.of('gtceu:martian_sludge', 1000))
 		.inputFluids(Fluid.of('gtceu:formamide', 1000))
-		.inputFluids(Fluid.of('gtceu:radioactive_waste', 1000))
+		.inputFluids(Fluid.of('gtceu:uranium_waste', 1000))
 		.outputFluids(Fluid.of('gtceu:radon', 1000))
 		.itemOutputs('#forge:dusts/nuclear_residue')
 		.duration(20*10)
@@ -206,7 +212,7 @@ function registerTFGNuclearRecipes(event) {
 
     event.recipes.deafission.fission_reactor_fuel('tfg:thorium')
 		.itemInputs(Item.of('tfg:thorium_rod'))
-		.outputFluids(Fluid.of('gtceu:uranium_waste', 2500))
+		.outputFluids(Fluid.of('gtceu:radioactive_waste', 2500))
 		.itemOutputs(Item.of('tfg:empty_rod'))
 		.dimension('ad_astra:mars')
         .hideDuration(true);
@@ -233,7 +239,7 @@ function registerTFGNuclearRecipes(event) {
 
     event.recipes.deafission.fission_reactor_fuel('tfg:uranium')
 		.itemInputs(Item.of('tfg:uranium_rod'))
-		.outputFluids(Fluid.of('gtceu:radioactive_waste', 50000))
+		.outputFluids(Fluid.of('gtceu:uranium_waste', 50000))
 		.itemOutputs(Item.of('tfg:empty_rod'))
         .hideDuration(true);
     
@@ -258,7 +264,7 @@ function registerTFGNuclearRecipes(event) {
 
     event.recipes.deafission.fission_reactor_fuel('tfg:plutonium')
 		.itemInputs(Item.of('tfg:plutonium_rod'))
-		.outputFluids(Fluid.of('gtceu:tritiated_water', 5000))
+		.outputFluids(Fluid.of('gtceu:tritiated_water', 5184))
 		.itemOutputs(Item.of('tfg:empty_rod'))
         .hideDuration(true);
     
@@ -427,6 +433,43 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(-(32))
 		.duration(20*1.5)
 
+	//#endregion
+	
+	//#region Cooling Tower
+	event.recipes.gtceu.assembler('tfg:ostrum_carbon_casing')
+		.itemInputs('2x #forge:plates/ostrum', '2x #forge:plates/titanium_carbide', '#forge:dense_plates/hsla_steel', '#forge:frames/black_steel')
+		.itemOutputs('2x tfg:casings/machine_casing_ostrum_carbon')
+		.circuit(6)
+		.duration(20 * (2.5))
+		.EUt(GTValues.VH[GTValues.LV])
+	
+	event.recipes.gtceu.mixer('tfg:thermally_conductive_fluid')
+		.itemInputs('7x #forge:dusts/gallium', '2x #forge:dusts/tin', '#forge:dusts/zinc')
+		.outputFluids(Fluid.of('tfg:thermally_conductive_fluid', 1000))
+		.circuit(2)
+		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20*20)
+	
+	event.recipes.gtceu.assembler('tfg:heat_pipe_casing')
+		.itemInputs('4x gtceu:copper_large_fluid_pipe', '4x gtceu:copper_normal_fluid_pipe', '4x #forge:plates/hsla_steel')
+		.inputFluids(Fluid.of('tfg:thermally_conductive_fluid', 1000))
+		.itemOutputs('tfg:casings/heat_pipe_casing')
+		.circuit(6)
+		.EUt(GTValues.VA[GTValues.IV] * 2)
+		.duration(20*4)
+		
+	event.shaped('tfg:cooling_tower', [
+		'ABA',
+		'CDC',
+		'EBE'
+	], {
+		A: 'gtceu:ostrum_normal_fluid_pipe',
+		B: 'gtceu:platinum_single_cable',
+		C: '#gtceu:circuits/iv',
+		D: 'gtceu:iv_machine_hull',
+		E: 'gtceu:iv_fluid_regulator'
+	}).id('tfg:shaped/cooling_tower')
+	
 	//#endregion
 
 	//#region FLiBe Line - SCRAP FROM MARS TO VENUS

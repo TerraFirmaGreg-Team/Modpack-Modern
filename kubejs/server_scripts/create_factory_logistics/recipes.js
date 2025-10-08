@@ -3,7 +3,12 @@
 
 function registerCreateFactoryLogisticsRecipes(event) {
 
-	event.remove({ mod: 'create_factory_logistics' })
+	event.remove({
+		not: [
+			{ id: 'create_factory_logistics:network_link_qualification_create_factory_abstractions_empty' },
+			{ id: 'create_factory_logistics:network_link_qualification_create_factory_abstractions_item' },
+			{ id: 'create_factory_logistics:network_link_qualification_create_factory_logistics_fluid' },
+		], mod: 'create_factory_logistics' })
 
 
 	event.recipes.createSequencedAssembly([
