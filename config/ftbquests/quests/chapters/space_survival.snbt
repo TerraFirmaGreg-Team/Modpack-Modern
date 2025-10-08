@@ -875,6 +875,7 @@
 		{
 			dependencies: ["5AC5AAB9B3758E30"]
 			description: ["{quests.space_survival.soarer.desc}"]
+			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 20"
 			icon: "wan_ancient_beasts:soarer_egg"
 			id: "2F711C064635EF2D"
 			optional: true
@@ -896,6 +897,7 @@
 		{
 			dependencies: ["5AC5AAB9B3758E30"]
 			description: ["{quests.space_survival.sniffer_or_wraptor.desc}"]
+			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 11"
 			id: "5F0D553D08A5985C"
 			subtitle: "{quests.space_survival.sniffer_or_wraptor.subtitle}"
 			tasks: [
@@ -925,6 +927,7 @@
 		{
 			dependencies: ["3768570EC6535DBB"]
 			description: ["{quests.space_survival.glacian_ram.desc}"]
+			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 15"
 			id: "00E2E32B33A65301"
 			subtitle: "{quests.space_survival.glacian_ram.subtitle}"
 			tasks: [{
@@ -1141,6 +1144,7 @@
 		{
 			dependencies: ["5AC5AAB9B3758E30"]
 			description: ["{quests.space_survival.surfer.desc}"]
+			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 17"
 			id: "43EBECA48E341C47"
 			optional: true
 			shape: "heart"
