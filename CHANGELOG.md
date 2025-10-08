@@ -5,7 +5,7 @@
 - Buffed how many stainless steel jar lids you can get per ingot from 16 to 48 @Pyritie
 - Adjusted max HP of various moon and mars mobs @Pyritie
 - Added quest text for the mars section of the space survival chapter @Pyritie
-- Added field guide entry for mars crops @Pyritie
+- Added field guide entries for mars crops and space animals @Pyritie
 - Changed the amount of open space windmills require to be extremely more lenient, so they should always work in tree farms @Pyritie
 - Soups are now craftable in the food processor (#1980) @Xaligal @Newlumberjack-sys
 - Chocolate now melts into 144mB to work better with the ingot molds (#1977) @Xaligal @Newlumberjack-sys
@@ -19,6 +19,7 @@
 - Axolotls can now be picked up and carried @Pyritie
 - Sniffer eggs can now be extracted for Cream @Pyritie
 - Adjusted the HP of various mars + moon animals/mobs @Pyritie
+- Reduced the fluorine cost of refrigerant pellets to 10% (#1983) @TomPlop
 ### Bug fixes
 - Fixed linux crash from recipe IDs (#1962) @Xaligal @Pyritie
 - Fixed Nuclear and Uranium Waste fluids being the wrong way around (#1978) @TomPlop
