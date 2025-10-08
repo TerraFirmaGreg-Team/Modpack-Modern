@@ -309,7 +309,7 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*36)
 
 	event.recipes.gtceu.vacuum_freezer('tfg:tetrafluoroethane_gem')
-		.inputFluids(Fluid.of('tfg:tetrafluoroethane', 1000))
+		.inputFluids(Fluid.of('tfg:tetrafluoroethane', 100))
 		.itemOutputs(Item.of('tfg:tetrafluoroethane_gem', 1))
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20*14)
