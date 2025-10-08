@@ -41,53 +41,32 @@
 			"text": "$(thing)Birts$() are a type of bird? They lay eggs in their nests, are passive unless attacked, and can be eaten. Their eggs can be thrown to stun targets."
 		},
 		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tree_tapping/tapping_kapok.png" ],
+			"border": true,
+			"title": "Sandworm (Mars)",
+			"text": "$(thing)Sandworms$() are alerted by player footsteps. They are the reason almost nothing else lives in the Martian desert."
+		},
+		{
 			"type": "patchouli:entity",
 			"entity": "tfg:sniffer{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
 			"scale": 0.7,
 			"name": "Sniffer (Mars)",
-			"text": "$(thing)Sniffers$() are domesticatable animals found between -30 and -102°C. They require a Large Nest to lay their eggs and can be shorn for $(item)Sniffer Tufts$()."
+			"text": "$(thing)Sniffers$() are domesticatable animals found between -30 and -102ï¿½C. They require a Large Nest to lay their eggs and can be shorn for $(item)Sniffer Tufts$()."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfg:wraptor{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
 			"scale": 1.0,
 			"name": "Wraptor (Mars)",
-			"text": "$(thing)Wraptors$() are domesticatable animals found between -15 and -100°C. They require a Large Nest to lay their eggs and can be shorn for $(item)Wraptor Feathers$()."
+			"text": "$(thing)Wraptors$() are domesticatable animals found between -15 and -100ï¿½C. They require a Large Nest to lay their eggs and can be shorn for $(item)Wraptor Feathers$()."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfg:glacian_ram{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
 			"scale": 1.2,
 			"name": "Glacian Sheep (Mars)",
-			"text": "Preferring extremely cold environments below -108°C, $(thing)Glacian Sheep$() are domesticatable animals. They can be shorn for $(item)Glacian Wool$()."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:crusher",
-			"scale": 0.9,
-			"name": "Crusher (Mars)",
-			"text": "$(thing)Crushers$() are wild animals found in herds in areas above -100°C. They can be killed for their meat and hard spikes."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "species:springling",
-			"scale": 1.2,
-			"name": "Springling (Mars)",
-			"text": "$(thing)Springlings$() are wild animals found above -108°C. Feeding them $(item)Saplings$() will let you ride them and extend their extremely long necks."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "species:goober",
-			"scale": 0.5,
-			"name": "Goober (Mars)",
-			"text": "$(thing)Goobers$() are lazy wild animals found above -109°C. They are passive and can be eaten."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:walker",
-			"scale": 0.1,
-			"name": "Walker (Mars)",
-			"text": "The gigantic $(thing)Walkers$() inhabit areas above -97°C. They are passive and can be eaten."
+			"text": "Preferring extremely cold environments below -108ï¿½C, $(thing)Glacian Sheep$() are domesticatable animals. They can be shorn for $(item)Glacian Wool$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -98,31 +77,66 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:toxlacanth",
-			"scale": 1.5,
-			"name": "Toxlacanth (Mars)",
-			"text": "$(thing)Toxlacanths$() are aquatic prey animals. It is recommended to kill them from a distance and cook their meat before eating."
-		},
-		{
-			"type": "patchouli:entity",
 			"entity": "wan_ancient_beasts:eater",
 			"scale": 0.4,
 			"name": "Eater (Mars)",
-			"text": "A top predator, $(thing)Eaters$() are hostile animals found above -109°C. If you can manage to take one down, they can be eaten."
+			"text": "A top predator, $(thing)Eaters$() are hostile animals found above -109ï¿½C. If you can manage to take one down, they can be eaten."
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:glider",
-			"scale": 0.5,
-			"name": "Glider (Mars)",
-			"text": "Despite their name, $(thing)Gliders$() cannot be tamed or ridden. They are passive and live in areas above -105°C. They enjoy music and can be eaten."
+			"entity": "species:cruncher",
+			"scale": 0.4,
+			"name": "Cruncher (Mars)",
+			"text": "$(thing)Crunchers$() are territorial $(item)miniboss$() predators. Feed them meat to stop their regeneration."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "wan_ancient_beasts:soarer",
 			"scale": 0.5,
 			"name": "Soarer (Mars)",
-			"text": "$(thing)Soarers$() are passive animals found above -106°C. You can tame them with $(item)Raw Fish$() to use them as a flying mount. They can also be eaten."
+			"text": "$(thing)Soarers$() are passive animals found above -106ï¿½C. You can tame them with $(item)Raw Fish$() to use them as a flying mount. They can also be eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:glider",
+			"scale": 0.5,
+			"name": "Glider (Mars)",
+			"text": "Despite their name, $(thing)Gliders$() cannot be tamed or ridden. They are passive and live in areas above -105ï¿½C. They enjoy music and can be eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:crusher",
+			"scale": 0.9,
+			"name": "Crusher (Mars)",
+			"text": "$(thing)Crushers$() are wild animals found in herds in areas above -100ï¿½C. They can be killed for their meat and hard spikes."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:springling",
+			"scale": 1.2,
+			"name": "Springling (Mars)",
+			"text": "$(thing)Springlings$() are wild animals found above -108ï¿½C. Feeding them $(item)Saplings$() will let you ride them and extend their extremely long necks."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:goober",
+			"scale": 0.5,
+			"name": "Goober (Mars)",
+			"text": "$(thing)Goobers$() are lazy wild animals found above -109ï¿½C. They are passive and can be eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:walker",
+			"scale": 0.1,
+			"name": "Walker (Mars)",
+			"text": "The gigantic $(thing)Walkers$() inhabit areas above -97ï¿½C. They are passive and can be eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:toxlacanth",
+			"scale": 1.5,
+			"name": "Toxlacanth (Mars)",
+			"text": "$(thing)Toxlacanths$() are aquatic prey animals. It is recommended to kill them from a distance and cook their meat before eating."
 		},
 		{
 			"type": "patchouli:entity",
