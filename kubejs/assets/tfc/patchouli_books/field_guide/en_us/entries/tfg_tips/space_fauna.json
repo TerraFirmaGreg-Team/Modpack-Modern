@@ -1,0 +1,136 @@
+{
+	"name": "Extraterrestrial Fauna",
+	"category": "tfc:tfg_tips",
+	"icon": "minecraft:textures/sniffer_egg.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Extraterrestrial Fauna",
+			"text": "Space is home to many other kinds of animals than those you'd find on Earth. A few animals are hostile and will attack the player, but most are passive. Only a few of them are $(l:mechanics/animal_husbandry)domesticatable$() like the livestock on Earth.$(br2)Animals you find on other worlds can be divided into two categories: $(item)hot$() and $(item)cold$(). Animals can only survive on planets that either have a similar climate to where they came from, or on $(thing)temperate$() planets like Earth."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Space animals do not require an oxygenated environment, but it will make the area count as \"temperate\" for their survival. For example, if you bring a cold-dwelling animal (like a Sniffer) to a hot planet (like Venus), it will catch on fire, unless it's inside an oxygenated environment.$(br)This makes Earth the ideal place to build a zoo, if you'd like.$(br)You can transport animals between planets using AE2's Spatial Storage system."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:moon_rabbit{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+			"scale": 1.2,
+			"name": "Moon Rabbit",
+			"text": "Besides their coloring, $(thing)Moon Rabbits$() have identical stats to Earth $(l:mechanics/animal_husbandry#rabbit)rabbits$(). They also eat Chorus Fruit."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:limpet",
+			"scale": 1.0,
+			"name": "Limpet (Moon)",
+			"text": "$(thing)Limpets$() are a type of snail with ore on their shell. You can obtain the ore with any mining tool. They are passive and can be eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "ad_astra:star_crawler",
+			"scale": 0.8,
+			"name": "Star Crawler (Moon)",
+			"text": "$(thing)Star Crawlers$() are a type of starfish. They are hostile and can be eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:birt",
+			"scale": 1.2,
+			"name": "Birt (Moon)",
+			"text": "$(thing)Birts$() are a type of bird? They lay eggs in their nests, are passive unless attacked, and can be eaten. Their eggs can be thrown to stun targets."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:sniffer{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+			"scale": 0.7,
+			"name": "Sniffer (Mars)",
+			"text": "$(thing)Sniffers$() are domesticatable animals found between -30 and -102°C. They require a Large Nest to lay their eggs and can be shorn for $(item)Sniffer Tufts$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:wraptor{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+			"scale": 1.0,
+			"name": "Wraptor (Mars)",
+			"text": "$(thing)Wraptors$() are domesticatable animals found between -15 and -100°C. They require a Large Nest to lay their eggs and can be shorn for $(item)Wraptor Feathers$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:glacian_ram{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+			"scale": 1.2,
+			"name": "Glacian Sheep (Mars)",
+			"text": "Preferring extremely cold environments below -108°C, $(thing)Glacian Sheep$() are domesticatable animals. They can be shorn for $(item)Glacian Wool$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:crusher",
+			"scale": 0.9,
+			"name": "Crusher (Mars)",
+			"text": "$(thing)Crushers$() are wild animals found in herds in areas above -100°C. They can be killed for their meat and hard spikes."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:springling",
+			"scale": 1.2,
+			"name": "Springling (Mars)",
+			"text": "$(thing)Springlings$() are wild animals found above -108°C. Feeding them $(item)Saplings$() will let you ride them and extend their extremely long necks."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:goober",
+			"scale": 0.5,
+			"name": "Goober (Mars)",
+			"text": "$(thing)Goobers$() are lazy wild animals found above -109°C. They are passive and can be eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:walker",
+			"scale": 0.1,
+			"name": "Walker (Mars)",
+			"text": "The gigantic $(thing)Walkers$() inhabit areas above -97°C. They are passive and can be eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:surfer",
+			"scale": 0.7,
+			"name": "Surfer (Mars)",
+			"text": "$(thing)Surfers$() are semiaquatic passive animals. You can tame them with $(item)Raw Fish$() to ride them underwater. They can also be eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:toxlacanth",
+			"scale": 1.5,
+			"name": "Toxlacanth (Mars)",
+			"text": "$(thing)Toxlacanths$() are aquatic prey animals. It is recommended to kill them from a distance and cook their meat before eating."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:eater",
+			"scale": 0.4,
+			"name": "Eater (Mars)",
+			"text": "A top predator, $(thing)Eaters$() are hostile animals found above -109°C. If you can manage to take one down, they can be eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:glider",
+			"scale": 0.5,
+			"name": "Glider (Mars)",
+			"text": "Despite their name, $(thing)Gliders$() cannot be tamed or ridden. They are passive and live in areas above -105°C. They enjoy music and can be eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:soarer",
+			"scale": 0.5,
+			"name": "Soarer (Mars)",
+			"text": "$(thing)Soarers$() are passive animals found above -106°C. You can tame them with $(item)Raw Fish$() to use them as a flying mount. They can also be eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:stackatick",
+			"scale": 1.0,
+			"name": "Stackatick (Mars)",
+			"text": "One of the few animals that can survive the Martian desert, $(thing)Stackaticks$() are passive animals. They cannot be eaten."
+		}
+	],
+	"read_by_default": true
+}
