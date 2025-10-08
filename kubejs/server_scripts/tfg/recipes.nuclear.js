@@ -224,7 +224,8 @@ function registerTFGNuclearRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:dense_steam', 2))
 		.perTick(false)
 		.dimension('ad_astra:mars')
-        .duration(1);
+        .addData("coolant_heat_per_tick", 1)
+		.duration(1);
 
 	// Recipe for Uranium Reactor Just keeping it in case we got mod issues
 /*	event.recipes.gtceu.fission_reactor('uranium_radioactive')
@@ -249,7 +250,8 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('tfg:heavy_water', 20))
 		.outputFluids(Fluid.of('gtceu:radioactive_steam', 10))
 		.perTick(false)
-        .duration(1);
+        .addData("coolant_heat_per_tick", 1)
+		.duration(1);
 
 	// Recipe for Plutonium Reactor Just keeping it in case we got mod issues
 /*	event.recipes.gtceu.fission_reactor('plutonium_irradiated')
@@ -274,7 +276,8 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('tfg:heavy_water', 25))
 		.outputFluids(Fluid.of('gtceu:irradiated_steam', 40))
 		.perTick(false)
-        .duration(1);
+        .addData("coolant_heat_per_tick", 1)
+		.duration(1);
 
 	// Fission Reactor for Energy Just keeping it in case we got mod issues
 /*
