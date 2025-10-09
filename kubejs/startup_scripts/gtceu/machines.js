@@ -296,7 +296,7 @@ const registerGTCEuMachines = (event) => {
 				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
 				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
 				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1))
-				.or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1)))
+				.or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setPreviewCount(1)))
 			.where('#', Predicates.air())
 			.where(' ', Predicates.any())
 			.build()
