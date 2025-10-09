@@ -2,8 +2,12 @@
 
 ## [Unreleased]
 ### Changes
+- Added a recipe for the ae2 auto craft card (#1997) @BlueBoat29
 ### Bug fixes
 - Fixed all tfc:heating recipes being removed (#1987) @BlueBoat29
+- Fixed the nuclear fuel factory multiblock not forming without a parallel hatch @TomPlop
+### Translation updates
+- Chinese (simplified) @jmecn
 
 ## [0.11.1] - 08-10-2025
 ### Changes
