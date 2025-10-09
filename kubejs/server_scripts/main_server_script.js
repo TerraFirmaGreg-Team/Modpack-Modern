@@ -271,6 +271,7 @@ ServerEvents.recipes(event => {
 	registerVintageImprovementsRecipes(event)
 	registerWaterFlasksRecipes(event)
 	registerWABRecipes(event)
+	registerFinalRecipes(event)
 })
 
 TaCZServerEvents.gunIndexLoad((event) => {
