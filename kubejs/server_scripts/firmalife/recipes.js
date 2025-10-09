@@ -772,7 +772,7 @@ const registerFirmaLifeRecipes = (event) => {
     event.remove({ id: recipeID })
 	event.remove({ id: castingRecipeID })
 	event.remove({ id: `${castingRecipeID}_fire_ingot` })
-    event.remove({ type: 'tfc:heating', ingredient: { item: itemID } })
+    event.remove({ id: `tfcchannelcasting:heating/food/${variant}_chocolate` })
 
     event.recipes.tfc.heating(itemID, 200)
         .resultFluid(Fluid.of(fluidID, 144))
