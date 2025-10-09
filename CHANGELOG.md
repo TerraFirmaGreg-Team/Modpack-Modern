@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Changes
 ### Bug fixes
+- Fixed all tfc:heating recipes being removed (#1987) @BlueBoat29
 
 ## [0.11.1] - 08-10-2025
 ### Changes
