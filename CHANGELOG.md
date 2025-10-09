@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 ### Changes
+### Bug fixes
+
+## [0.11.2] - 09-10-2025
+### Changes
 - Added a recipe for the ae2 auto craft card (#1997) @BlueBoat29
 ### Bug fixes
 - Fixed all tfc:heating recipes being removed (#1987) @BlueBoat29
