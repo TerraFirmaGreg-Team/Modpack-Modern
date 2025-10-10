@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 ### Changes
-- Added more meats for mars animals, and some new textures (#2001) @Redeix
+- Added meats for the surfer, cruncher, stackatick and primitive creatures mobs (#2001) @Redeix
 - Added a recipe for turning glass dust into lamp glass @Pyritie
 - Added more recipe unification for quartz, certus quartz, create's minerals, fixed wall chiseling recipes (#2005) @vidal-adrien
 ### Bug fixes

@@ -125,7 +125,7 @@
 			"entity": "species:cruncher",
 			"scale": 0.7,
 			"name": "Cruncher",
-			"text": "$(thing)Crunchers$() are territorial $(item)miniboss$() predators. Feed them meat to stop their regeneration."
+			"text": "$(thing)Crunchers$() are territorial $(item)miniboss$() predators. Feed them meat to stop their regeneration. They can also be eaten."
 		},
 		{
 			"type": "patchouli:entity",
@@ -156,7 +156,7 @@
 			"entity": "species:springling",
 			"scale": 0.9,
 			"name": "Springling",
-			"text": "$(thing)Springlings$() are wild animals found above -108°C. Feeding them $(item)Saplings$() will let you ride them and extend their extremely long necks."
+			"text": "$(thing)Springlings$() are wild animals found above -108°C. Feeding them $(item)Saplings$() will let you ride them and extend their extremely long necks. They can also be eaten."
 		},
 		{
 			"type": "patchouli:entity",
@@ -185,7 +185,7 @@
 			"entity": "species:stackatick",
 			"scale": 0.4,
 			"name": "Stackatick",
-			"text": "One of the few animals that can survive the Martian desert, $(thing)Stackaticks$() are passive prey animals. They cannot be eaten."
+			"text": "One of the few animals that can survive the Martian desert, $(thing)Stackaticks$() are passive prey animals. They can also be eaten."
 		}
 	],
 	"read_by_default": true
