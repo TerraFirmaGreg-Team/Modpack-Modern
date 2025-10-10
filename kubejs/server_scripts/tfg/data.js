@@ -396,16 +396,74 @@ function registerTFGFoodData(event) {
 		food.decayModifier(1.5);
 	});
 
-	event.foodItem("tfg:food/raw_springling_chops", (food) => {
+	event.foodItem("tfg:food/raw_springling_collar", (food) => {
 		food.hunger(2);
 		food.protein(1.5);
 		food.decayModifier(3);
 	});
 
-	event.foodItem("tfg:food/cooked_springling_chops", (food) => {
+	event.foodItem("tfg:food/cooked_springling_collar", (food) => {
 		food.hunger(4);
 		food.saturation(3);
 		food.protein(5);
+		food.decayModifier(1.5);
+	});
+
+	event.foodItem("tfg:food/raw_surfer_steak", (food) => {
+		food.hunger(2);
+		food.protein(1.5);
+		food.decayModifier(3);
+	});
+
+	event.foodItem("tfg:food/cooked_surfer_steak", (food) => {
+		food.hunger(6);
+		food.saturation(3);
+		food.protein(6);
+		food.decayModifier(1.5);
+	});
+
+	event.foodItem("tfg:food/raw_cruncher_ribs", (food) => {
+		food.hunger(3);
+		food.protein(2.0);
+		food.decayModifier(3);
+	});
+
+	event.foodItem("tfg:food/cooked_cruncher_ribs", (food) => {
+		food.hunger(6);
+		food.saturation(3);
+		food.protein(8);
+		food.decayModifier(1.4);
+	});
+
+	event.foodItem("tfg:food/raw_long_pig_filet", (food) => {
+		food.hunger(2);
+		food.protein(1.5);
+		food.decayModifier(3);
+	});
+
+	event.foodItem("tfg:food/cooked_long_pig_filet", (food) => {
+		food.hunger(6);
+		food.saturation(3);
+		food.protein(5);
+		food.decayModifier(1.5);
+	});
+
+	event.foodItem("tfg:food/raw_stackatick_chunks", (food) => {
+		food.hunger(2);
+		food.protein(1.2);
+		food.decayModifier(3);
+	});
+
+	event.foodItem("tfg:food/raw_stickastackatick", (food) => {
+		food.hunger(2);
+		food.protein(1.2);
+		food.decayModifier(3);
+	});
+
+	event.foodItem("tfg:food/cooked_stickastackatick", (food) => {
+		food.hunger(6);
+		food.saturation(3);
+		food.protein(4);
 		food.decayModifier(1.5);
 	});
 
@@ -465,6 +523,7 @@ function registerTFGFoodData(event) {
 		food.hunger(2);
 		food.protein(3.0);
 		food.decayModifier(3);
+		food.water(1);
 	});
 
 	event.foodItem("tfg:food/cooked_goober_meat", (food) => {
