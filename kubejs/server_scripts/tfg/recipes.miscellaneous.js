@@ -917,7 +917,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.outputFluids(Fluid.of('tfg:molten_aes', 200))
 		.circuit(4)
 		.duration(80)
-		.blastFurnaceTemp(3400)
+		.blastFurnaceTemp(3000)
 		.EUt(GTValues.VA[GTValues.EV])
 	event.recipes.gtceu.electric_blast_furnace('tfg:smelt_wraptor_wool')
 		.itemInputs('tfg:wraptor_wool')
@@ -925,7 +925,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.outputFluids(Fluid.of('tfg:molten_aes', 100))
 		.circuit(8)
 		.duration(60)
-		.blastFurnaceTemp(3400)
+		.blastFurnaceTemp(3000)
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
@@ -1402,15 +1402,10 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(100)
 		.EUt(4)
 
-	event.recipes.gtceu.assembler('tfg:ostrum_carbon_casing')
-		.itemInputs('2x #forge:plates/ostrum', '2x #forge:plates/titanium_carbide', '#forge:frames/black_steel')
-		.itemOutputs('2x tfg:casings/machine_casing_ostrum_carbon')
-		.circuit(6)
-		.duration(20 * (2.5))
-		.EUt(GTValues.VH[GTValues.LV])
+	
 
 	event.recipes.gtceu.assembler('tfg:titanium_concrete')
-		.itemInputs('2x #forge:rods/titanium', '4x #forge:dusts/kaolinite')
+		.itemInputs('2x #forge:rods/titanium', '#forge:dusts/kaolinite')
 		.inputFluids(Fluid.of('gtceu:concrete', 144 * 1.5))
 		.itemOutputs('tfg:titanium_concrete')
 		.circuit(2)

@@ -2,13 +2,55 @@
 
 ## [Unreleased]
 ### Changes
+- Added meats for the surfer, cruncher, stackatick and primitive creatures mobs. #2001 @Redeix
+### Bug fixes
+
+## [0.11.2] - 09-10-2025
+### Changes
+- Added a recipe for the ae2 auto craft card (#1997) @BlueBoat29
+### Bug fixes
+- Fixed all tfc:heating recipes being removed (#1987) @BlueBoat29
+- Fixed the nuclear fuel factory multiblock not forming without a parallel hatch @TomPlop
+### Translation updates
+- Chinese (simplified) @jmecn
+
+## [0.11.1] - 08-10-2025
+### Changes
 - Buffed how many stainless steel jar lids you can get per ingot from 16 to 48 @Pyritie
 - Adjusted max HP of various moon and mars mobs @Pyritie
+- Added quest text for the mars section of the space survival chapter @Pyritie
+- Added field guide entries for mars crops and space animals @Pyritie
+- Changed the amount of open space windmills require to be extremely more lenient, so they should always work in tree farms @Pyritie
+- Soups are now craftable in the food processor (#1980) @Xaligal @Newlumberjack-sys
+- Chocolate now melts into 144mB to work better with the ingot molds (#1977) @Xaligal @Newlumberjack-sys
+- Added more sand to the mars desert @Pyritie
+- Nerfed the hell out of mars quicksand @Pyritie
+- All pressure plate crafting recipes now use circuit #3 (#1970) @Nashy1232
+- Plutonium fuel rods now make exactly enough tritiated water for 9 nano wafers (#1978) @TomPlop
+- Nerfed dry ice in the fission reactor (#1982) @TomPlop
+- Added wind ambient sounds to mars @Pyritie
+- Changed the minimum requirements for windmills so now they should still work even in overgrown tree farms @Pyritie
+- Axolotls can now be picked up and carried @Pyritie
+- Sniffer eggs can now be extracted for Cream @Pyritie
+- Adjusted the HP of various mars + moon animals/mobs @Pyritie
+- Reduced the fluorine cost of refrigerant pellets to 10% (#1983) @TomPlop
 ### Bug fixes
 - Fixed linux crash from recipe IDs (#1962) @Xaligal @Pyritie
+- Fixed Nuclear and Uranium Waste fluids being the wrong way around (#1978) @TomPlop
 - Fixed missing texture for interplanetary wireless card (#1965, #1964) @Ko-lja
 - Fixed glacian trees floating above ground @Pyritie
 - Fixed tameable mars animals giving twice as much meat as they should @Pyritie
+- Fixed pyroxenite and keratophyre rocks in various recipes like stone supports @Pyritie
+- Fixed uncraftable nuclear fuel rods (#1982) @TomPlop
+- Fixed Ostrum Linear Accelerator's multiblock assembly requirements (#1978) @TomPlop
+- Fixed the pink bed glacian fur recipe so it now actually needs glacian fur @Pyritie
+- Fixed the krypton in the iodine line so it's properly looped
+- Fixed not being able to put Bulbkin pie in a firmalife oven @Xaligal
+- Fixed missing heat data on baked potatoes @Xaligal
+- Fixed being able to nest backpacks and frame packs inside each other infinitely @Xaligal
+- Eaters are now actually hostile @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
 
 ## [0.11.0] - 05-10-2025
 - WARNING! If you're upgrading your world from 0.10 to 0.11, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.10-to-0.11). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!

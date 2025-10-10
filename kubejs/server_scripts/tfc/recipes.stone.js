@@ -49,7 +49,7 @@ function registerTFCStoneRecipes(event) {
 
 		event.recipes.gtceu.assembler(`${stone}_raw_pressure_plate`)
 			.itemInputs('#forge:small_springs', `2x tfc:rock/raw/${stone}_slab`)
-			.circuit(0)
+			.circuit(3)
 			.itemOutputs(`2x tfc:rock/pressure_plate/${stone}`)
 			.duration(50)
 			.EUt(2)

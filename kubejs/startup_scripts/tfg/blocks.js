@@ -17,13 +17,14 @@ const registerTFGBlocks = (event) => {
 		.tagBlock('minecraft:mineable/wrench')
 		.mapColor('color_black')
 		.speedFactor(1.1)
-		.activeOffset(5, 1, 5)
-		.activeVelocity(0.0, 0.1, 0.0)
-		//.activeParticle('tfc:smoke_0')
-		.activeCount(50)
-		.activeForced(true)
+		.activeOffset(3.5, 2, 3.5)
+		.activeVelocity(0.0, 0.0, 0.0)
+		.activeParticle('tfg:cooling_steam')
+		.activeBase(0.0, 12.5, 0.0)
+		.activeCount(8)
+		.activeForced(false)
 		.hasTicker(true) 
-	
+ 
 	// #region Machine Casings
 
 	global.TFG_MACHINE_CASINGS.forEach(type => {
@@ -325,45 +326,6 @@ const registerTFGBlocks = (event) => {
 		.fullBlock(false)
 		.opaque(false)
 		.renderType('cutout')
-
-	// #endregion
-
-	// #region Layer blocks
-
-	event.create('tfg:ash_pile', 'tfg:layer_block')
-		.existingItem('tfc:powder/wood_ash')
-		.mapColor('color_light_gray')
-
-	event.create('tfg:pile/black_sand', 'tfg:layer_block')
-		.existingItem('tfc:sand/black')
-
-	event.create('tfg:pile/brown_sand', 'tfg:layer_block')
-		.existingItem('tfc:sand/brown')
-
-	event.create('tfg:pile/green_sand', 'tfg:layer_block')
-		.existingItem('tfc:sand/green')
-
-	event.create('tfg:pile/pink_sand', 'tfg:layer_block')
-		.existingItem('tfc:sand/pink')
-
-	event.create('tfg:pile/red_sand', 'tfg:layer_block')
-		.existingItem('tfc:sand/red')
-
-	event.create('tfg:pile/white_sand', 'tfg:layer_block')
-		.existingItem('tfc:sand/white')
-
-	event.create('tfg:pile/yellow_sand', 'tfg:layer_block')
-		.existingItem('tfc:sand/yellow')
-
-	event.create('tfg:pile/mars_sand', 'tfg:layer_block')
-		.existingItem('ad_astra:mars_sand')
-
-	event.create('tfg:pile/moon_sand', 'tfg:layer_block')
-		.existingItem('ad_astra:moon_sand')
-
-	event.create('tfg:pile/venus_sand', 'tfg:layer_block')
-		.existingItem('ad_astra:venus_sand')
-
 
 	// #endregion
 

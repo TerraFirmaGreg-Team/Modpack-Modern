@@ -229,8 +229,8 @@ const registerTFGCrops = (event) => {
 			dead.tagBlock('minecraft:mineable/hoe')
 		})
 
-	event.create('betterend:chorus_mushroom_wild', 'tfc:wild_crop')
-		.type('default')
+    event.create('betterend:chorus_mushroom_wild', 'tfc:wild_crop')
+        .type('default')
 		.box(2, 0, 2, 14, 4, 14)
 		.translationKey('block.betterend.chorus_mushroom_wild')
 		.soundType('nether_wart')
@@ -264,8 +264,8 @@ const registerTFGCrops = (event) => {
 			dead.box(2, 0, 2, 14, 3, 14)
 		})
 
-	event.create('betterend:shadow_berry_wild', 'tfc:wild_crop')
-		.type('default')
+    event.create('betterend:shadow_berry_wild', 'tfc:wild_crop')
+        .type('default')
 		.box(2, 0, 2, 14, 3, 14)
 		.soundType('crop')
 		.seeds('betterend:shadow_berry_seeds')
@@ -299,7 +299,7 @@ const registerTFGCrops = (event) => {
 			dead.box(2, 0, 2, 14, 5, 14)
 		})
 
-	event.create('betterend:bolux_mushroom_wild', 'tfc:wild_crop')
+    event.create('betterend:bolux_mushroom_wild', 'tfc:wild_crop')
 		.box(2, 0, 2, 14, 5, 14)
 		.type('default')
 		.soundType('nether_wart')

@@ -29,8 +29,6 @@ EntityEvents.spawned((event) => {
 
 	let { entity, entity: {type} } = event;
 
-	console.log(`entity: ${entity}, type: ${type}`)
-
 	let newHP = NEW_MOB_MAX_HP[type] ?? 0;
 	if (newHP === 0)
 		return;

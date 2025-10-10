@@ -195,6 +195,7 @@ function registerTFGSpaceOres(event) {
 		.inputFluids(Fluid.of('gtceu:tritiated_water', 500))
 		.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/thorium'), 1, 10)
 		.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/uraninite'), 1, 10)
+		.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/hematite'), 1, 10)
 		.dimension('ad_astra:mars')
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.IV]);
