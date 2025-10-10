@@ -908,22 +908,18 @@ global.TFC_MEAT_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfg:food/raw_glacian_mutton", output: "tfg:food/cooked_glacian_mutton", name: "cooked_glacian_mutton" },
     { input: "tfg:food/raw_sniffer_beef", output: "tfg:food/cooked_sniffer_beef", name: "cooked_sniffer_beef" },
     { input: "tfg:food/raw_wraptor", output: "tfg:food/cooked_wraptor", name: "cooked_wraptor" },
-    {
-        input: "wan_ancient_beasts:toxlacanth",
-        output: "wan_ancient_beasts:cooked_toxlacanth",
-        name: "cooked_toxlacanth",
-    },
-    {
-        input: "tfg:food/raw_springling_chops",
-        output: "tfg:food/cooked_springling_chops",
-        name: "cooked_springling_chops",
-    },
+    { input: "wan_ancient_beasts:toxlacanth", output: "wan_ancient_beasts:cooked_toxlacanth", name: "cooked_toxlacanth" },
+    { input: "tfg:food/raw_springling_collar", output: "tfg:food/cooked_springling_collar", name: "cooked_springling_collar" },
     { input: "tfg:food/raw_walker_steak", output: "tfg:food/cooked_walker_steak", name: "cooked_walker_steak" },
     { input: "tfg:food/raw_glider_wings", output: "tfg:food/cooked_glider_wings", name: "cooked_glider_wings" },
     { input: "tfg:food/raw_whole_soarer", output: "tfg:food/cooked_whole_soarer", name: "cooked_whole_soarer" },
     { input: "tfg:food/raw_crusher_meat", output: "tfg:food/cooked_crusher_meat", name: "cooked_crusher_meat" },
     { input: "tfg:food/raw_goober_meat", output: "tfg:food/cooked_goober_meat", name: "cooked_goober_meat" },
-    { input: "wan_ancient_beasts:raw_ancient_meat", output: "wan_ancient_beasts:cooked_ancient_meat", name: "cooked_eater_meat" }
+    { input: "wan_ancient_beasts:raw_ancient_meat", output: "wan_ancient_beasts:cooked_ancient_meat", name: "cooked_eater_meat" },
+    { input: "tfg:food/raw_surfer_steak", output: "tfg:food/cooked_surfer_steak", name: "cooked_surfer_steak" },
+    { input: "tfg:food/raw_long_pig_filet", output: "tfg:food/cooked_long_pig_filet", name: "cooked_long_pig_filet" },
+    { input: "tfg:food/raw_cruncher_ribs", output: "tfg:food/cooked_cruncher_ribs", name: "cooked_cruncher_ribs" },
+    { input: "tfg:food/raw_stickastackatick", output: "tfg:food/cooked_stickastackatick", name: "cooked_stickastackatick" },
 ]);
 
 global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = /** @type {const} */ ([

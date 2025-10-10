@@ -1139,9 +1139,9 @@ function registerTFGFoodRecipes(event) {
 	event.recipes.tfc.heating('tfg:food/raw_wraptor', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_wraptor').copyFood())
 	
-	event.recipes.tfc.heating('tfg:food/raw_springling_chops', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_springling_chops').copyFood())
-		
+	event.recipes.tfc.heating('tfg:food/raw_springling_collar', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_springling_collar').copyFood())
+
 	event.recipes.tfc.heating('tfg:food/raw_walker_steak', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_walker_steak').copyFood())
 	
@@ -1156,6 +1156,23 @@ function registerTFGFoodRecipes(event) {
 		
 	event.recipes.tfc.heating('tfg:food/raw_goober_meat', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_goober_meat').copyFood())
+
+	event.recipes.tfc.heating('tfg:food/raw_surfer_steak', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_surfer_steak').copyFood())
+
+	event.recipes.tfc.heating('tfg:food/raw_cruncher_ribs', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_cruncher_ribs').copyFood())
+
+	event.recipes.tfc.heating('tfg:food/raw_stickastackatick', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_stickastackatick').copyFood())
+
+	event.recipes.tfc.heating('tfg:food/raw_long_pig_filet', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_long_pig_filet').copyFood())
+		
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('tfg:food/raw_stickastackatick').copyFood(),
+		[TFC.ingredient.notRotten('tfg:food/raw_stackatick_chunks'), '#forge:rods/wood'], 'tfg:food/raw_stackatick_chunks')
+		.id(`tfg:crafting/raw_stickastackatick`)
 
 	event.recipes.tfc.advanced_shapeless_crafting(
 		TFC.itemStackProvider.of('4x betterend:cave_pumpkin_chunks').copyFood(),
