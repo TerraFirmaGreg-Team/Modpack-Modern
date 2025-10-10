@@ -2,7 +2,11 @@
 
 ## [Unreleased]
 ### Changes
+- Added more meats for mars animals, and some new textures (#2001) @Redeix
+- Added a recipe for turning glass dust into lamp glass @Pyritie
+- Added more recipe unification for quartz, certus quartz, create's minerals, fixed wall chiseling recipes (#2005) @vidal-adrien
 ### Bug fixes
+- Fixed a crash with the sandworm on servers (#2006) @BlueBoat29
 
 ## [0.11.2] - 09-10-2025
 ### Changes
