@@ -10,7 +10,7 @@
         {
             "pakku_id": "6k7DoFyO7bpHnhyk",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "aaa-particles",
                 "modrinth": "aaa-particles"
@@ -1503,6 +1503,7 @@
                 "curseforge": "1182657",
                 "modrinth": "Fqqapnbs"
             },
+            "export": false,
             "files": [
                 {
                     "type": "modrinth",
@@ -4143,7 +4144,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "create_hypertube-0.2.6-FORGE.jar",
+                    "file_name": "create_hypertube-0.2.6-hotfix-FORGE.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20.2",
@@ -4153,26 +4154,25 @@
                         "1.20.6"
                     ],
                     "loaders": [
-                        "forge",
-                        "neoforge"
+                        "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/ATDdrG1y/versions/yAdQmaBl/create_hypertube-0.2.6-FORGE.jar",
-                    "id": "yAdQmaBl",
+                    "url": "https://cdn.modrinth.com/data/ATDdrG1y/versions/iRjDdZIt/create_hypertube-0.2.6-hotfix-FORGE.jar",
+                    "id": "iRjDdZIt",
                     "parent_id": "ATDdrG1y",
                     "hashes": {
-                        "sha512": "09f242017ca09588de986dad57998d29dc957ff317665cd202bce2e23a930469713388f76922a49e607e82a1b5820fb852de14c5b261da2646e1bf5e638d8e82",
-                        "sha1": "5a72ee3a4ef80b18cb06c2601813aa0cdc8fb824"
+                        "sha512": "3883609379fed3cde7a046667cb1d04af5816d007bb9c875603d7fb4f3292926663dd22ecc660faa733743fb1adae52cde8dbf2667655846f6bb00af4825e748",
+                        "sha1": "83c1728344eef7669b933e36a42a1d0e4f529ea8"
                     },
                     "required_dependencies": [
                         "LNytGWDc"
                     ],
-                    "size": 351186,
-                    "date_published": "2025-10-06T00:00:47.194203Z"
+                    "size": 351225,
+                    "date_published": "2025-10-09T14:05:53.834301Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "create_hypertube-0.2.6-FORGE.jar",
+                    "file_name": "create_hypertube-0.2.6-hotfix-FORGE.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4181,18 +4181,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7071/930/create_hypertube-0.2.6-FORGE.jar",
-                    "id": "7071930",
+                    "url": "https://edge.forgecdn.net/files/7086/642/create_hypertube-0.2.6-hotfix-FORGE.jar",
+                    "id": "7086642",
                     "parent_id": "1281336",
                     "hashes": {
-                        "sha1": "5a72ee3a4ef80b18cb06c2601813aa0cdc8fb824",
-                        "md5": "f1d7fc83381bfb58bb0d0e342cf53fe2"
+                        "sha1": "83c1728344eef7669b933e36a42a1d0e4f529ea8",
+                        "md5": "3863248ebd60a41ebf7dac874cf6e0c0"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 351186,
-                    "date_published": "2025-10-05T23:58:59.537Z"
+                    "size": 351225,
+                    "date_published": "2025-10-09T14:00:11.063Z"
                 }
             ]
         },
@@ -5715,6 +5715,7 @@
             "id": {
                 "curseforge": "622737"
             },
+            "export": true,
             "files": [
                 {
                     "type": "curseforge",
@@ -5762,6 +5763,7 @@
             "id": {
                 "curseforge": "314906"
             },
+            "export": true,
             "files": [
                 {
                     "type": "curseforge",
@@ -5802,6 +5804,7 @@
             "id": {
                 "curseforge": "410811"
             },
+            "export": true,
             "files": [
                 {
                     "type": "curseforge",
@@ -5844,6 +5847,7 @@
             "id": {
                 "curseforge": "943925"
             },
+            "export": true,
             "files": [
                 {
                     "type": "curseforge",
@@ -5887,6 +5891,7 @@
             "id": {
                 "curseforge": "404465"
             },
+            "export": true,
             "files": [
                 {
                     "type": "curseforge",
@@ -5930,6 +5935,7 @@
             "id": {
                 "curseforge": "289412"
             },
+            "export": true,
             "files": [
                 {
                     "type": "curseforge",
@@ -5974,6 +5980,7 @@
             "id": {
                 "curseforge": "314905"
             },
+            "export": true,
             "files": [
                 {
                     "type": "curseforge",
@@ -6017,6 +6024,7 @@
             "id": {
                 "curseforge": "404468"
             },
+            "export": true,
             "files": [
                 {
                     "type": "curseforge",
@@ -6062,6 +6070,7 @@
             "id": {
                 "curseforge": "889915"
             },
+            "export": true,
             "files": [
                 {
                     "type": "curseforge",
