@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 ### Changes
+- Added meats for the surfer, cruncher, stackatick and primitive creatures mobs. #2001 @Redeix
 ### Bug fixes
 
 ## [0.11.2] - 09-10-2025
