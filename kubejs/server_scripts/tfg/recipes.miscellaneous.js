@@ -1458,4 +1458,14 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('tfg:wireless_card')
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.EV])
+	
+	Ingredient.of("#forge:impure_dusts").getItemIds().forEach(itemid => {
+		event.recipes.tfc.barrel_instant()
+			.inputItem(`1x ${itemid}`)
+			.inputFluid(Fluid.of("minecraft:water", 100))
+			.outputItem(`1x ${itemid.replace("impure_", "")}`)
+			.id(`tfg:tfc/barrel/${itemid.replace("gtceu:", "")}`)
+			
+	})
+	
 }
