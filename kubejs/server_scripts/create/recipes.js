@@ -1705,7 +1705,7 @@ const registerCreateRecipes = (event) => {
     event.recipes.gtceu.assembler('create:chain_conveyor')
         .itemInputs('2x #forge:large_cogwheels', 'create:andesite_casing', 'gtceu:treated_wood_plate')
         .itemOutputs('2x create:chain_conveyor')
-        .circuit(3)
+        .circuit(20)
         .duration(20 * 20)
         .EUt(20)
 
