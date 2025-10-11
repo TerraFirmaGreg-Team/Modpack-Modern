@@ -1702,6 +1702,12 @@ const registerCreateRecipes = (event) => {
 		E: '#forge:tools/hammers'
 	}).id('create:shaped/chain_conveyor')
 
+    event.recipes.gtceu.assembler('create:chain_conveyor')
+        .itemInputs('2x #forge:large_cogwheels', 'create:andesite_casing', 'gtceu:treated_wood_plate')
+        .itemOutputs('2x create:chain_conveyor')
+        .duration(20 * 20)
+        .EUt(20)
+
 	event.shaped('2x create:cardboard', [
 		'ABA',
 		'BAB',
