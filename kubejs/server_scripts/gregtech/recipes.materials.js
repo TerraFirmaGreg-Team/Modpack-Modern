@@ -653,6 +653,12 @@ function registerGTCEUMetalRecipes(event) {
 				],
 				result: pureOreItem.toJson()
 			}).id(`tfg:ae_transform/${material.getName()}_purified_ore`)
+
+			event.recipes.tfc.barrel_instant()
+				.inputItem(crushedOreItem)
+				.inputFluid(Fluid.of("minecraft:water", 100))
+				.outputItem(pureOreItem)
+				.id(`tfg:instant_barrel/${material.getName()}_purified_ore`)
 		}
 
 		if (crushedOreItem !== null && impureDustItem !== null) {
@@ -703,6 +709,12 @@ function registerGTCEUMetalRecipes(event) {
 			event.recipes.greate.splashing(dustItem, impureDustItem)
 				.id(`tfg:splashing/${material.getName()}_dust_from_impure`)
 
+			event.recipes.tfc.barrel_instant()
+				.inputItem(impureDustItem)
+				.inputFluid(Fluid.of("minecraft:water", 100))
+				.outputItem(dustItem)
+				.id(`tfg:instant_barrel/${material.getName()}_dust_from_impure`)
+
 			// Centrifuging
 			let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(0, material);
 			let byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1).toJson()
@@ -742,6 +754,12 @@ function registerGTCEUMetalRecipes(event) {
 			// Bulk washing
 			event.recipes.greate.splashing(dustItem, pureDust)
 				.id(`tfg:splashing/${material.getName()}_dust_from_pure`)
+
+			event.recipes.tfc.barrel_instant()
+				.inputItem(pureDust)
+				.inputFluid(Fluid.of("minecraft:water", 100))
+				.outputItem(dustItem)
+				.id(`tfg:instant_barrel/${material.getName()}_dust_from_pure`)
 
 			// Centrifuging
 			let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(1, material);

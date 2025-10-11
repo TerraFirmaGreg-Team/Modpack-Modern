@@ -1458,4 +1458,5 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('tfg:wireless_card')
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.EV])
+	
 }
