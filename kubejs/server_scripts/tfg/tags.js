@@ -392,6 +392,21 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:cannot_launch_in_railgun', 'gtceu:mv_super_chest')
 	event.add('tfg:cannot_launch_in_railgun', 'gtceu:hv_super_chest')
 	event.add('tfg:cannot_launch_in_railgun', 'gtceu:ev_super_chest')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:iv_quantum_chest')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:luv_quantum_chest')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:zpm_quantum_chest')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:uv_quantum_chest')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:uhv_quantum_chest')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:lv_super_tank')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:mv_super_tank')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:hv_super_tank')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:ev_super_tank')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:iv_quantum_tank')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:luv_quantum_tank')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:zpm_quantum_tank')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:uv_quantum_tank')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:uhv_quantum_tank')
+
 	//#endregion
 
 	const SHAPES =    ['stairs', 'slab', 'wall']
