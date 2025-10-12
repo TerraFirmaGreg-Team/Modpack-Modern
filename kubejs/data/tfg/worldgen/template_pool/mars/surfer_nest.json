@@ -1,0 +1,15 @@
+{
+	"name": "tfg:mars/surfer_nest",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"location": "tfg:dino_nests/surfer",
+				"projection": "terrain_matching",
+				"processors": "minecraft:empty",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

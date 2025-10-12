@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:jigsaw",
+	"biomes": "#tfg:has_structure/surfer_nest",
+	"max_distance_from_center": 1,
+	"project_start_to_heightmap": "OCEAN_FLOOR",
+	"size": 1,
+	"spawn_overrides": {},
+	"start_height": {
+		"absolute": 0
+	},
+	"start_pool": "tfg:mars/surfer_nest",
+	"step": "surface_structures",
+	"terrain_adaptation": "none",
+	"use_expansion_hack": false
+}
