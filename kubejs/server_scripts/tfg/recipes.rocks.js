@@ -36,7 +36,7 @@ function registerTFGRockRecipes(event) {
 		{ loose: 'tfg:loose/deepslate',           block: 'minecraft:cobbled_deepslate' },
 		{ loose: 'tfg:brick/deepslate',           block: '4x minecraft:deepslate_bricks' },
 
-		{ loose: 'beneath:blackstone_pebble',     block: 'minecraft:blackstone' },
+		{ loose: 'beneath:blackstone_pebble',     block: 'tfg:rock/cobble_blackstone' },
 
 		{ loose: 'tfg:loose/dripstone',           block: 'tfg:rock/cobble_dripstone' },
 		{ loose: 'tfg:brick/dripstone',           block: '4x create:cut_dripstone_bricks' },
@@ -87,6 +87,15 @@ function registerTFGRockRecipes(event) {
 			.circuit(2)
 			.duration(50)
 			.EUt(2)
+
+		if( x.loose.includes('loose') || x.loose.includes('pebble') ){
+			event.recipes.gtceu.packer(`tfc:gtceu/packer/unpacking_${x.block}`.replace(/[: ]/g, '_'))
+				.itemInputs(`1x ${x.block}`)
+				.itemOutputs(`4x ${x.loose}`)
+				.circuit(1)
+				.duration(20)
+				.EUt(GTValues.VA[GTValues.ULV])
+		}
 	})
 	// #endregion GLUEING_TOGETHER
 
