@@ -1242,4 +1242,21 @@ function registerTFGRockRecipes(event) {
 	})
 
 	//#endregion Magma Blocks
+
+	//gravel and cobble made in packer from rocks
+	Ingredient.of("#rnr:loose_rock_items").getItemIds().forEach(itemid => {
+		event.recipes.gtceu.packer(`tfg:gtceu/packer/${itemid.replace("tfc:rock/", "").replace("mossy_loose/", "mossy_").replace("loose/", "")}_rock_to_gravel`)
+			.itemInputs(`4x ${itemid}`)
+			.itemOutputs(`1x ${itemid.replace("mossy_loose", "gravel").replace("loose", "gravel")}`)
+			.circuit(2)
+			.duration(30)
+			.EUt(GTValues.VA[GTValues.LV])
+		event.recipes.gtceu.packer(`tfg:gtceu/packer/${itemid.replace("tfc:rock/", "").replace("mossy_loose/", "mossy_").replace("loose/", "")}_rock_to_cobble`)
+			.itemInputs(`4x ${itemid}`)
+			.itemOutputs(`1x ${itemid.replace("loose", "cobble")}`)
+			.circuit(1)
+			.duration(30)
+			.EUt(GTValues.VA[GTValues.LV])
+	})
+
 }
