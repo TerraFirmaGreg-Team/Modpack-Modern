@@ -400,8 +400,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Platinum.setMaterialSecondaryARGB(0x59563a)
 	GTMaterials.Nickel.setMaterialARGB(0xfff4ba)
 	GTMaterials.Nickel.setMaterialSecondaryARGB(0x8d8d71)
-	GTMaterials.Thorium.setMaterialARGB(0xf8a8c0)
-	GTMaterials.Thorium.setMaterialSecondaryARGB(0xcd8dbc)
+	GTMaterials.Thorium.setMaterialARGB(0xc898a0)
+	GTMaterials.Thorium.setMaterialSecondaryARGB(0xad6d9c)
 	GTMaterials.GraniteRed.setMaterialARGB(0x974B3C)
 	GTMaterials.GraniteRed.setMaterialSecondaryARGB(0x632117)
 

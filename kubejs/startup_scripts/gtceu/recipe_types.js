@@ -71,7 +71,7 @@ const registerGTCEuRecipeTypes = (event) => {
 	event.create('ostrum_linear_accelerator')
         .category('ostrum_linear_accelerator')
         .setEUIO('in')
-        .setMaxIOSize(1, 6, 3, 3)
+        .setMaxIOSize(1, 3, 3, 3)
 		.setSlotOverlay(false, false, GuiTextures.EXTRACTOR_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRACT, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH)
