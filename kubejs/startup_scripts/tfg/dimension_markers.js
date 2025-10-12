@@ -47,4 +47,14 @@ function registerTFGDimensionMarkers(event) {
         .iconSupplier(() => Item.of('tfg:marker/mercury_orbit').getItem())
         .tier(3)
         .overrideName('Mercury Orbit')
+
+    event.create('ad_astra:glacio')
+        .iconSupplier(() => Item.of('tfg:marker/glacio').getItem())
+        .tier(3)
+        .overrideName('Europa')
+
+    event.create('ad_astra:glacio_orbit')
+        .iconSupplier(() => Item.of('tfg:marker/glacio_orbit').getItem())
+        .tier(3)
+        .overrideName('Europa Orbit')
 }
