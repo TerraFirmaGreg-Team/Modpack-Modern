@@ -1,0 +1,17 @@
+{
+	"structures": [
+		{
+			"structure": "tfg:mars/surfer_nest",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "tfc:climate",
+		"salt": 25635345,
+		"spacing": 25,
+		"separation": 18,
+		"climate": {
+			"min_temperature": -105
+		}
+	}
+}
