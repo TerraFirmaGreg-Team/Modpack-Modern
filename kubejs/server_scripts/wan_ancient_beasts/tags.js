@@ -40,6 +40,14 @@ const registerWABItemTags = (event) => {
 
 	event.add('wan_ancient_beasts:surfer_food', '#firmalife:foods/raw_fish')
 	event.add('wan_ancient_beasts:eater_food', '#tfg:martian_animal_foods')
+
+	// Eggs
+	event.add('tfg:martian_eggs', 'wan_ancient_beasts:eater_egg')
+	event.add('tfg:martian_eggs', 'wan_ancient_beasts:walker_egg')
+	event.add('tfg:martian_eggs', 'wan_ancient_beasts:crusher_egg')
+	event.add('tfg:martian_eggs', 'wan_ancient_beasts:glider_egg')
+	event.add('tfg:martian_eggs', 'wan_ancient_beasts:soarer_egg')
+	event.add('tfg:martian_eggs', 'wan_ancient_beasts:surfer_egg')
 }
 
 const registerWABEntityTypeTags = (event) => {

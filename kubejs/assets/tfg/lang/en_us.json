@@ -3671,7 +3671,7 @@
   "quests.tfg_tips.digger_helmet.desc.2": "&l&3Important:&r&l The &dDigger Helmet&f itself works thanks to a specific setting of &cSodium Dynamic Lights&f, you'll have to toggle on &b\"Dynamic Entity Lighting\"&f for it to work properly",
   "quests.tfg_tips.grappling_hook.title": "Grappling Hook",
   "quests.tfg_tips.grappling_hook.subtitle": "This is going to end poorly",
-  "quests.tfg_tips.grappling_hook.desc": "By combining 4 pieces of &aRope Coil&r and a &bWrought Iron Pickaxe Head&r, you can create a &dGrappling Hook!&r An ideal tool for scaling big mountains, exploring large caves and traversing the world. It contains an &eupgrade system&r that allows you to combine and modify your &dHook&r to your leisure.",
+  "quests.tfg_tips.grappling_hook.desc": "By combining 2 pieces of &aRope Coil&r and a &bWrought Iron Pickaxe Head&r, you can create a &dGrappling Hook!&r An ideal tool for scaling big mountains, exploring large caves and traversing the world. It contains an &eupgrade system&r that allows you to combine and modify your &dHook&r to your leisure.",
   "quests.tfg_tips.grapple_repair.title": "Grappling Hook Warnings",
   "quests.tfg_tips.grapple_repair.subtitle": "READ ME, OR YOU MAY REGRET IT LATER!",
   "quests.tfg_tips.grapple_repair.desc": "All your &dGrappling Hook&r &aupgrades&r are stored as NBT Data inside the item. This means trying to repair your hook using &canother&r Grappling Hook &l&cWILL destroy all your upgrades!&r\n\nInstead, you should place your &dGrappling Hook&r and some &bWrought Iron Dust&r in a &3Workbench&r to repair it.\n\nAlso, don't use your Grappling Hook when traveling between the Overworld and Beneath, it's rather deadly.",

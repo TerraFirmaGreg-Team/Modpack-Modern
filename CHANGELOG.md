@@ -1,11 +1,13 @@
 # Changelog
 
 ## [Unreleased]
+
 ### Changes
 - Added meats for the surfer, cruncher, stackatick and primitive creatures mobs (#2001) @Redeix
 - Added a recipe for turning glass dust into lamp glass @Pyritie
 - Added more recipe unification for quartz, certus quartz, create's minerals, fixed wall chiseling recipes (#2005) @vidal-adrien
 - Added a recipe to turn loose rocks into gravel and cobble (#1884) @dimethylene
+- Added recipes to purify impure dusts in TFC Barrels @dimethylene
 ### Bug fixes
 - Fixed a crash with the sandworm on servers (#2006) @BlueBoat29
 

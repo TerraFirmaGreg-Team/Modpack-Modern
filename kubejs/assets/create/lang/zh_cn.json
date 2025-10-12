@@ -21,11 +21,11 @@
   "block.create.acacia_window_pane": "猴面包木窗户板",
   "block.create.andesite_bars": "金属栏杆",
   "block.create.andesite_belt_funnel": "金属传送带漏斗",
-  "block.create.andesite_casing": "金属外壳",
+  "block.create.andesite_casing": "金属机壳",
   "block.create.andesite_door": "金属门",
   "block.create.andesite_encased_cogwheel": "金属齿轮箱",
   "block.create.andesite_encased_large_cogwheel": "金属大齿轮箱",
-  "block.create.andesite_encased_shaft": "金属传动轴箱",
+  "block.create.andesite_encased_shaft": "金属传动杆箱",
   "block.create.andesite_funnel": "金属漏斗",
   "block.create.andesite_ladder": "金属梯子",
   "block.create.andesite_scaffolding": "金属脚手架",
@@ -104,5 +104,5 @@
   "create.ponder.belt_casing.text_1": "黄铜机壳或金属机壳可用于装饰机械传送带",
   "create.ponder.brass_funnel.text_1": "金属漏斗一次只能提取出一个物品",
   "create.ponder.cogwheel_casing.text_1": "黄铜机壳或金属机壳可用于装饰齿轮",
-  "create.ponder.shaft_casing.text_1": "黄铜机壳或金属机壳可用于装饰传动轴"
+  "create.ponder.shaft_casing.text_1": "黄铜机壳或金属机壳可用于装饰传动杆"
 }
