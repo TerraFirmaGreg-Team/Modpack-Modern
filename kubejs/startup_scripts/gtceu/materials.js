@@ -293,6 +293,7 @@ const registerGTCEuMaterialModification = (event) => {
 
 	// Hide ore processing tab for plutonium
 	GTMaterials.Plutonium239.addFlags(GENERATE_ROD, NO_ORE_PROCESSING_TAB, NO_ORE_SMELTING)
+	GTMaterials.Thorium.addFlags(NO_ORE_SMELTING)
 
 	GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 8, 1, [
 		GTToolType.AXE,

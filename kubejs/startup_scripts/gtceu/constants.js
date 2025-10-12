@@ -206,7 +206,15 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:crushed_plutonium_ore",
     "gtceu:impure_plutonium_dust",
     "gtceu:pure_plutonium_dust",
-    "gtceu:plutonium_surface_rock"
+    "gtceu:plutonium_surface_rock",
+
+    // (Normal) thorium bits
+    "gtceu:thorium_nugget",
+    "gtceu:thorium_ingot",
+    "gtceu:thorium_block",
+    "gtceu:thorium_plate",
+    "gtceu:double_thorium_plate",
+    "gtceu:thorium_rod"
 ]);
 //#endregion
 
