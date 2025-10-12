@@ -196,6 +196,13 @@ function registerTFCMachineRecipes(event) {
 		.duration(100)
 		.EUt(2)
 
+	event.recipes.gtceu.alloy_smelter(`tfg:tfc/lamp_glass_from_dust`)
+		.itemInputs('#forge:dusts/glass')
+		.notConsumable('#tfg:unfinished_lamps')
+		.itemOutputs('tfc:lamp_glass')
+		.duration(100)
+		.EUt(2)
+
 	// Empty Jar
 	event.recipes.gtceu.alloy_smelter('tfc:jar_alloying')
 		.itemInputs('#tfc:glass_batches_tier_2')

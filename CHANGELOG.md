@@ -2,8 +2,20 @@
 
 ## [Unreleased]
 ### Changes
-- Added meats for the surfer, cruncher, stackatick and primitive creatures mobs. #2001 @Redeix
+- Water wheels are now usable again in all (earth + beneath) biomes outside of rivers, *but* at a reduced efficiency @Pyritie
+- Added dinosaur nest structures to mars @Pyritie
+- Added meats for the surfer, cruncher, stackatick and primitive creatures mobs, reworked the textures of the others (#2001, #2014) @Redeix
+- Added a recipe for turning glass dust into lamp glass @Pyritie
+- Added more recipe unification for quartz, certus quartz, create's minerals, fixed wall chiseling recipes (#2005) @vidal-adrien
+- Added recipes to purify impure dusts in TFC Barrels (#2013) @dimethylene
+- Removed raw rubber ingots because they kept confusing people @Pyritie
+- Removed "raw" thorium metal items like ingots and plates - macerate them into dust before updating! @Pyritie
+- Adjusted the colors of thorium and its isotopes to be similar to other radioactive materials @Pyritie
+- Added lunch boxes and super chests/tanks to the railgun blacklist @Pyritie
+- Added an assembler recipe for the chain conveyor (#2007) @Nashy1232
 ### Bug fixes
+- Fixed a crash with the sandworm on servers (#2006) @BlueBoat29
+- Fixed some recipes using the wrong keratophyre loose rock @Pyritie
 
 ## [0.11.2] - 09-10-2025
 ### Changes

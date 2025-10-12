@@ -21,6 +21,9 @@ const registerSpeciesItemTags = (event) => {
 
 	event.add('forge:eggs', 'species:birt_egg')
 	event.add('firmalife:foods/raw_eggs', 'species:birt_egg')
+	event.add('tfg:martian_eggs', 'species:cruncher_egg')
+	event.add('tfg:martian_eggs', 'species:springling_egg')
+	event.add('tfg:martian_eggs', 'species:petrified_egg')
 	
 	event.add('species:goober_breed_items', '#forge:mushrooms')
 	event.add('species:cruncher_eats', '#tfc:foods/meat')
@@ -31,5 +34,5 @@ const registerSpeciesItemTags = (event) => {
 
 	event.add('minecraft:wart_blocks', 'species:alphacene_mushroom_block')
 
-	event.add('stackatick_tempt_items', 'tfc:sweetener')
+	event.add('species:stackatick_tempt_items', 'tfc:sweetener')
 }

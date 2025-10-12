@@ -372,6 +372,9 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:cannot_launch_in_railgun', 'sns:seed_pouch')
 	event.add('tfg:cannot_launch_in_railgun', 'sns:straw_basket')
 	event.add('tfg:cannot_launch_in_railgun', 'sns:frame_pack')
+	event.add('tfg:cannot_launch_in_railgun', 'tfclunchbox:lunchbox')
+	event.add('tfg:cannot_launch_in_railgun', 'tfclunchbox:cooling_lunchbox')
+	event.add('tfg:cannot_launch_in_railgun', 'tfclunchbox:electric_lunchbox')
 	event.add('tfg:cannot_launch_in_railgun', 'sophisticatedbackpacks:backpack')
 	event.add('tfg:cannot_launch_in_railgun', 'sophisticatedbackpacks:copper_backpack')
 	event.add('tfg:cannot_launch_in_railgun', 'sophisticatedbackpacks:iron_backpack')
@@ -392,6 +395,21 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:cannot_launch_in_railgun', 'gtceu:mv_super_chest')
 	event.add('tfg:cannot_launch_in_railgun', 'gtceu:hv_super_chest')
 	event.add('tfg:cannot_launch_in_railgun', 'gtceu:ev_super_chest')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:iv_quantum_chest')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:luv_quantum_chest')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:zpm_quantum_chest')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:uv_quantum_chest')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:uhv_quantum_chest')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:lv_super_tank')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:mv_super_tank')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:hv_super_tank')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:ev_super_tank')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:iv_quantum_tank')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:luv_quantum_tank')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:zpm_quantum_tank')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:uv_quantum_tank')
+	event.add('tfg:cannot_launch_in_railgun', 'gtceu:uhv_quantum_tank')
+
 	//#endregion
 
 	const SHAPES =    ['stairs', 'slab', 'wall']
@@ -776,6 +794,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:martian_eggs', 'tfg:sniffer_egg')
 	event.add('tfg:martian_eggs', 'tfg:wraptor_egg')
 	event.add('forge:eggs', '#tfg:martian_eggs')
+	event.add('firmalife:foods/raw_eggs', '#tfg:martian_eggs')
 	
 	event.add('tfg:martian_animal_foods', 'betterend:amber_root_product')
 	event.add('tfg:martian_animal_foods', 'betterend:blossom_berry_product')

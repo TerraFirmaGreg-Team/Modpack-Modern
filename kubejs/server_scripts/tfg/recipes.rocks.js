@@ -41,7 +41,7 @@ function registerTFGRockRecipes(event) {
 		{ loose: 'tfg:loose/dripstone',           block: 'tfg:rock/cobble_dripstone' },
 		{ loose: 'tfg:brick/dripstone',           block: '4x create:cut_dripstone_bricks' },
 
-		{ loose: 'beneath:crackrack_rock',           block: 'tfg:rock/cobble_crackrack' },
+		{ loose: 'tfg:loose/crackrack',           block: 'tfg:rock/cobble_crackrack' },
 
 		{ loose: 'tfg:loose/moon_stone',          block: 'ad_astra:moon_cobblestone' },
 		{ loose: 'tfg:brick/moon_stone',          block: '4x ad_astra:moon_stone_bricks' },
@@ -94,7 +94,7 @@ function registerTFGRockRecipes(event) {
 	const COBBLE_TO_LOOSE = [
 		{ cobble: 'minecraft:blackstone',           loose: 'beneath:blackstone_pebble' },
 		{ cobble: 'tfg:rock/cobble_dripstone',      loose: 'tfg:loose/dripstone' },
-		{ cobble: 'tfg:rock/cobble_crackrack',      loose: 'beneath:crackrack_rock' },
+		{ cobble: 'tfg:rock/cobble_crackrack',      loose: 'tfg:loose/crackrack' },
 		{ cobble: 'tfg:rock/cobble_moon_deepslate', loose: 'tfg:loose/moon_deepslate' },
 		{ cobble: 'gtceu:red_granite_cobblestone',  loose: 'tfg:brick/red_granite' },
 		{ cobble: 'tfg:rock/cobble_permafrost',     loose: 'tfg:loose/permafrost' },
@@ -111,7 +111,7 @@ function registerTFGRockRecipes(event) {
 		{ loose: 'tfg:loose/deepslate',       gravel: 'tfg:rock/gravel_deepslate' },
 		{ loose: 'beneath:blackstone_pebble', gravel: 'tfg:rock/gravel_blackstone' },
 		{ loose: 'tfg:loose/dripstone',       gravel: 'tfg:rock/gravel_dripstone' },
-		{ loose: 'beneath:crackrack_rock',    gravel: 'tfg:rock/gravel_crackrack' },
+		{ loose: 'tfg:loose/crackrack',       gravel: 'tfg:rock/gravel_crackrack' },
 		{ loose: 'tfg:loose/moon_stone',      gravel: 'tfg:rock/gravel_moon' },
 		{ loose: 'tfg:loose/moon_deepslate',  gravel: 'tfg:rock/gravel_moon_deepslate' },
 		{ loose: 'tfg:loose/glacio_stone',    gravel: 'tfg:rock/gravel_glacio' },
@@ -131,7 +131,7 @@ function registerTFGRockRecipes(event) {
 	const LOOSE_TO_BRICKS = [
 		{ loose: 'tfg:loose/deepslate',      brick: 'tfg:brick/deepslate' },
 		{ loose: 'tfg:loose/dripstone',      brick: 'tfg:brick/dripstone' },
-		{ loose: 'beneath:crackrack_rock',   brick: 'minecraft:nether_brick' },
+		{ loose: 'tfg:loose/crackrack',      brick: 'minecraft:nether_brick' },
 		{ loose: 'tfg:loose/moon_stone',     brick: 'tfg:brick/moon_stone' },
 		{ loose: 'tfg:loose/moon_deepslate', brick: 'tfg:brick/moon_deepslate' },
 		{ loose: 'tfg:loose/mars_stone',     brick: 'tfg:brick/mars_stone' },
