@@ -36,7 +36,7 @@ function registerTFGRockRecipes(event) {
 		{ loose: 'tfg:loose/deepslate',           block: 'minecraft:cobbled_deepslate' },
 		{ loose: 'tfg:brick/deepslate',           block: '4x minecraft:deepslate_bricks' },
 
-		{ loose: 'beneath:blackstone_pebble',     block: 'minecraft:blackstone' },
+		{ loose: 'beneath:blackstone_pebble',     block: 'tfg:rock/cobble_blackstone' },
 
 		{ loose: 'tfg:loose/dripstone',           block: 'tfg:rock/cobble_dripstone' },
 		{ loose: 'tfg:brick/dripstone',           block: '4x create:cut_dripstone_bricks' },
@@ -87,6 +87,15 @@ function registerTFGRockRecipes(event) {
 			.circuit(2)
 			.duration(50)
 			.EUt(2)
+
+		if( x.loose.includes('loose') || x.loose.includes('pebble') ){
+			event.recipes.gtceu.packer(`tfc:gtceu/packer/unpacking_${x.block}`.replace(/[: ]/g, '_'))
+				.itemInputs(`1x ${x.block}`)
+				.itemOutputs(`4x ${x.loose}`)
+				.circuit(1)
+				.duration(20)
+				.EUt(GTValues.VA[GTValues.ULV])
+		}
 	})
 	// #endregion GLUEING_TOGETHER
 
@@ -119,12 +128,22 @@ function registerTFGRockRecipes(event) {
 		{ loose: 'tfg:loose/venus_stone',     gravel: 'tfg:rock/gravel_venus' },
 		{ loose: 'tfg:loose/mercury_stone',   gravel: 'tfg:rock/gravel_mercury' },
 		{ loose: 'tfg:loose/permafrost',      gravel: 'tfg:rock/gravel_permafrost' },
-		{ loose: 'tfg:loose/red_granite',     gravel: 'tfg:rock/gravel_red_granite' },
+		{ loose: 'tfg:loose/red_granite',     gravel: 'tfg:rock/gravel_red_granite' }
 	]
 
 	LOOSE_TO_GRAVEL.forEach(x => {
 		event.shapeless(x.gravel, [`4x ${x.loose}`])
+		
 		event.shapeless(`16x ${x.loose}`, [`4x ${x.gravel}`])
+
+		var stone = x.gravel.replace('tfg:rock/gravel_', '')
+		event.recipes.gtceu.packer(`tfc:gtceu/packer/packing_loose_${stone}_to_gravel`)
+			.itemInputs(`4x ${x.loose}`)
+			.itemOutputs(x.gravel)
+			.circuit(2)
+			.duration(30)
+			.EUt(GTValues.VA[GTValues.LV])
+
 	})
 
 	// #region LOOSE_TO_BRICKS
@@ -1225,7 +1244,6 @@ function registerTFGRockRecipes(event) {
 	];
 
 	MAGMA_BLOCKS.forEach(block => {
-
 		event.recipes.gtceu.fluid_solidifier(`tfg:gtceu/fluid_solidifier/${block.magma}`.replace(/:/g, '/'))
 			.itemInputs(`1x ${block.rock}`)
 			.inputFluids(Fluid.of('minecraft:lava', 250))
