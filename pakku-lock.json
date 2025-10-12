@@ -2992,6 +2992,27 @@
             },
             "files": [
                 {
+                    "type": "modrinth",
+                    "file_name": "colorwheel_patcher-forge-1.0.2+mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/KPsw5jDu/versions/nT6yhtNM/colorwheel_patcher-forge-1.0.2+mc1.20.1.jar",
+                    "id": "nT6yhtNM",
+                    "parent_id": "KPsw5jDu",
+                    "hashes": {
+                        "sha512": "39996c5ee5f55e1384dd35bd2b82c43d240b825a1c17bc26399b5e43c1ae4e08707b16ff7c6dfb699b1ebeed737f1501dbb64dc2f7af31e95de55afc02291709",
+                        "sha1": "77b986d7459e99db7c1c5edafadfdec8a17578db"
+                    },
+                    "required_dependencies": [],
+                    "size": 186298,
+                    "date_published": "2025-10-11T09:22:29.394963Z"
+                },
+                {
                     "type": "curseforge",
                     "file_name": "colorwheel_patcher-forge-1.0.0+mc1.20.1.jar",
                     "mc_versions": [
@@ -3011,27 +3032,6 @@
                     "required_dependencies": [],
                     "size": 185868,
                     "date_published": "2025-09-21T20:10:20.750Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "colorwheel_patcher-forge-1.0.1+mc1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/KPsw5jDu/versions/wTDhQqca/colorwheel_patcher-forge-1.0.1+mc1.20.1.jar",
-                    "id": "wTDhQqca",
-                    "parent_id": "KPsw5jDu",
-                    "hashes": {
-                        "sha512": "96d07e76dc5e95d17799eb24bd8ebab1995c55514dabd6766e517619ded4108e89b630f02db19b259721112ce8d09f915d4d804d39259e370fb6ee1e50b247b8",
-                        "sha1": "06a4648774dcaf29cf88b23b8ef008f2e482dc20"
-                    },
-                    "required_dependencies": [],
-                    "size": 186293,
-                    "date_published": "2025-10-04T08:06:19.650070Z"
                 }
             ]
         },
@@ -3365,10 +3365,11 @@
             ]
         },
         {
-            "pakku_id": "tIc0aOMFiuJNztfY",
+            "pakku_id": "ehcMdQkqXGQSsV75",
             "pakku_links": [
-                "0DMPJ1AWW6qfYubI",
-                "tcGlxrXYONei6sfG"
+                "tcGlxrXYONei6sfG",
+                "CyISC0hDehFhsqVb",
+                "0DMPJ1AWW6qfYubI"
             ],
             "type": "MOD",
             "side": "SERVER",
@@ -3385,6 +3386,29 @@
                 "modrinth": "pJGcKPh1"
             },
             "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "corpsecurioscompat-1.20.1-Forge-3.1.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7088/113/corpsecurioscompat-1.20.1-Forge-3.1.3.jar",
+                    "id": "7088113",
+                    "parent_id": "1138130",
+                    "hashes": {
+                        "sha1": "3b36538ca8c6cc16982788c8e058cb726357a90c",
+                        "md5": "0bdc0b6b4a41df8dbfb9ab4621319547"
+                    },
+                    "required_dependencies": [
+                        "1264423"
+                    ],
+                    "size": 23655,
+                    "date_published": "2025-10-09T20:23:18.440Z"
+                },
                 {
                     "type": "modrinth",
                     "file_name": "corpsecurioscompat-1.20.1-Forge-3.1.2.jar",
@@ -3412,30 +3436,6 @@
                     ],
                     "size": 24680,
                     "date_published": "2025-08-19T16:40:42.144982Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "corpsecurioscompat-1.20.1-Forge-3.1.2.jar",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.1",
-                        "1.20.4"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6898/69/corpsecurioscompat-1.20.1-Forge-3.1.2.jar",
-                    "id": "6898069",
-                    "parent_id": "1138130",
-                    "hashes": {
-                        "sha1": "6bffb8fd1ce4b0c7e504dc67271a05848f7d33a9",
-                        "md5": "5e0ed6620f6576535e429ffe278442ef"
-                    },
-                    "required_dependencies": [],
-                    "size": 24680,
-                    "date_published": "2025-08-17T21:25:40.290Z"
                 }
             ]
         },
@@ -6805,7 +6805,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "fzzy_config-0.7.2+1.20.1+forge.jar",
+                    "file_name": "fzzy_config-0.7.3+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6814,18 +6814,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/eNoSkpjw/fzzy_config-0.7.2+1.20.1+forge.jar",
-                    "id": "eNoSkpjw",
+                    "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/17Wzgyxp/fzzy_config-0.7.3+1.20.1+forge.jar",
+                    "id": "17Wzgyxp",
                     "parent_id": "hYykXjDp",
                     "hashes": {
-                        "sha512": "49ac78bfc8d627bb0bb081f00a23a3a3baaf9e6fce831849a0a3872bfac7635507025af8f4debecfdedd544ccd634286648c48b31970492a26ede9d02ca6307c",
-                        "sha1": "a06d2ae66dbed25fd7f1d878254bce3a40680800"
+                        "sha512": "32d44d05790f9ac9fb4d04385beefbd2d59822d48288239068ae1cc0c10d3b60567b388a0bcd4b98b4bf8716bd94b6a934596c1766f31e8788aa069e76bb178c",
+                        "sha1": "e771e543e930bd7c733f803bdbc0d3f2ecfb46c4"
                     },
                     "required_dependencies": [
                         "ordsPcFz"
                     ],
-                    "size": 2275298,
-                    "date_published": "2025-08-03T16:35:52.253865Z"
+                    "size": 2312969,
+                    "date_published": "2025-10-09T02:39:22.899396Z"
                 },
                 {
                     "type": "curseforge",
@@ -7015,7 +7015,7 @@
             ]
         },
         {
-            "pakku_id": "g9pF49NG9dTJ3SkT",
+            "pakku_id": "Vpm0eEGkYMNehyA4",
             "type": "MOD",
             "slug": {
                 "curseforge": "grappling-hook-mod-reforged"
@@ -7029,7 +7029,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "grappling_hook_mod-1.20.1-1.20.1-v13.jar",
+                    "file_name": "grapplingHookMod-Reforged-1.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7037,16 +7037,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6028/357/grappling_hook_mod-1.20.1-1.20.1-v13.jar",
-                    "id": "6028357",
+                    "url": "https://edge.forgecdn.net/files/7087/90/grapplingHookMod-Reforged-1.2.jar",
+                    "id": "7087090",
                     "parent_id": "1166811",
                     "hashes": {
-                        "sha1": "dfb72e1482b432fa98afc97539a0daeb5f7d14e2",
-                        "md5": "82c433ef162dbc72c2aa0379bf594f49"
+                        "sha1": "aa53625ab5e145c6aa196645335b062b37ae82da",
+                        "md5": "9451ed5d3ec13e6d4d0b2ee8fed564d3"
                     },
                     "required_dependencies": [],
-                    "size": 543872,
-                    "date_published": "2024-12-27T20:54:54.927Z"
+                    "size": 545033,
+                    "date_published": "2025-10-09T16:12:43.810Z"
                 }
             ]
         },
@@ -12451,6 +12451,29 @@
             },
             "files": [
                 {
+                    "type": "modrinth",
+                    "file_name": "TFCBetterBlastFurnace-1.20.1-1.0.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/tr715LZ4/versions/MyOPcTS9/TFCBetterBlastFurnace-1.20.1-1.0.1.jar",
+                    "id": "MyOPcTS9",
+                    "parent_id": "tr715LZ4",
+                    "hashes": {
+                        "sha512": "ea85cde0e166c3e1561acf06330aaf3a07336ed02f6f87117689cab2575b1333e2d5ec43d1e44f7f828be3ab28fbc6be20055aa5417befed66ebaafe6b529417",
+                        "sha1": "2f0171f5cd2a2b2210425027ec5a29148cfee8b2"
+                    },
+                    "required_dependencies": [
+                        "JaCEZUhg"
+                    ],
+                    "size": 22675,
+                    "date_published": "2025-10-11T20:59:58.399976Z"
+                },
+                {
                     "type": "curseforge",
                     "file_name": "TFCBetterBlastFurnace-1.20.1-1.0.0.jar",
                     "mc_versions": [
@@ -12472,27 +12495,6 @@
                     ],
                     "size": 21088,
                     "date_published": "2024-06-23T02:44:03.777Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "TFCBetterBlastFurnace-1.20.1-1.0.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/tr715LZ4/versions/kXi8g4JA/TFCBetterBlastFurnace-1.20.1-1.0.0.jar",
-                    "id": "kXi8g4JA",
-                    "parent_id": "tr715LZ4",
-                    "hashes": {
-                        "sha512": "d4c9d5fab5bffd67c8a14acffd13e9defa6e6cfa4bdff44c1d8021dce660d814b2e7352f43361a8118349d24b753b74af7921c4d111d998495ffd1d5afa99bd8",
-                        "sha1": "91dbfe3c3e7e7fc9ffb126d879c1507e8c2f8b82"
-                    },
-                    "required_dependencies": [],
-                    "size": 21088,
-                    "date_published": "2025-08-17T17:27:17.212986Z"
                 }
             ]
         },
@@ -13953,6 +13955,29 @@
             },
             "files": [
                 {
+                    "type": "modrinth",
+                    "file_name": "toomanyrecipeviewers-0.6.4+mc.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/yFypjcfd/versions/8nQIjuFd/toomanyrecipeviewers-0.6.4+mc.20.1.jar",
+                    "id": "8nQIjuFd",
+                    "parent_id": "yFypjcfd",
+                    "hashes": {
+                        "sha512": "84bf6f926534687ccde30f926f687c1c9b9dd8608355d8ec8e5e90a217d49bf7141ca5969256ff091ccedadf4bb8f2d00e4810ca24431f467efc06b4643ab193",
+                        "sha1": "4209411389ebc078bdfcc0b54fe33163fc511ce5"
+                    },
+                    "required_dependencies": [
+                        "fRiHVvU7"
+                    ],
+                    "size": 1215706,
+                    "date_published": "2025-10-11T01:34:54.514399Z"
+                },
+                {
                     "type": "curseforge",
                     "file_name": "toomanyrecipeviewers-0.6.3+mc.20.1.jar",
                     "mc_versions": [
@@ -13974,29 +13999,6 @@
                     ],
                     "size": 1215669,
                     "date_published": "2025-08-06T16:58:05.390Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "toomanyrecipeviewers-0.6.3+mc.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/yFypjcfd/versions/911yYuqS/toomanyrecipeviewers-0.6.3+mc.20.1.jar",
-                    "id": "911yYuqS",
-                    "parent_id": "yFypjcfd",
-                    "hashes": {
-                        "sha512": "a503584ccc1aec6bab207a5a9353427bed61371a9dc3e01fa4c5698226fc02c08b193edf8e31d97af51a47af66440f12a9a9be65bf0118b575888a4969912664",
-                        "sha1": "38176b4ad936141c660d91d7a1d4a9d89fe89280"
-                    },
-                    "required_dependencies": [
-                        "fRiHVvU7"
-                    ],
-                    "size": 1215669,
-                    "date_published": "2025-08-06T16:58:10.036353Z"
                 }
             ]
         },
