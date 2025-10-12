@@ -9,7 +9,6 @@
 - Added a recipe for turning glass dust into lamp glass @Pyritie
 - Added more recipe unification for quartz, certus quartz, create's minerals, fixed wall chiseling recipes (#2005) @vidal-adrien
 - Added a recipe to turn loose rocks into gravel and cobble (#1884) @dimethylene
-- Added recipes to purify impure dusts in TFC Barrels @dimethylene
 - Added recipes to purify impure dusts in TFC Barrels (#2013) @dimethylene
 - Removed raw rubber ingots because they kept confusing people @Pyritie
 - Removed "raw" thorium metal items like ingots and plates - macerate them into dust before updating! @Pyritie
