@@ -1311,6 +1311,14 @@ function registerTFGMiscellaneousRecipes(event) {
 	//#endregion
 
 	//#region flax stuff
+
+	event.shapeless('1x tfg:flax_bundle', ['9x tfg:flax_product'])
+	event.recipes.gtceu.packer('tfg:packer/flax_bundle')
+		.itemInputs('9x tfg:flax_product')
+		.itemOutputs('tfg:flax_bundle')
+		.duration('100')
+		.EUt(GTValues.VA[GTValues.ULV])	
+
 	event.recipes.tfc.scraping(
 		'tfg:flax_waste',
 		'tfg:flax_product',
@@ -1320,6 +1328,14 @@ function registerTFGMiscellaneousRecipes(event) {
 	).id('tfg:scraping/flax_line')
 
 	event.recipes.tfc.scraping(
+		'9x tfg:flax_waste',
+		'tfg:flax_bundle',
+		'tfg:item/flax_waste',
+		'tfg:item/flax_bundle',
+		'18x tfg:flax_line'
+	).id('tfg:scraping/flax_line_from_bundle')	
+
+	event.recipes.tfc.scraping(
 		'tfc:groundcover/humus',
 		'tfg:flax_waste',
 		'tfc:item/groundcover/humus',
@@ -1327,16 +1343,36 @@ function registerTFGMiscellaneousRecipes(event) {
 		'tfg:flax_tow'
 	).id('tfg:scraping/flax_tow')
 
+	event.recipes.tfc.scraping(
+		'9x tfc:groundcover/humus',
+		'tfg:scraped_flax_pile',
+		'tfc:item/groundcover/humus',
+		'tfg:item/scraped_flax_pile',
+		'9x tfg:flax_tow'
+	).id('tfg:scraping/flax_tow_from_pile')
+
 	event.recipes.gtceu.cutter('tfg:flax_line_in_cutter')
 		.itemInputs('tfg:flax_product')
 		.itemOutputs('2x tfg:flax_line', 'tfg:flax_waste')
 		.duration(60)
 		.EUt(2)
 
+	event.recipes.gtceu.cutter('tfg:flax_line_from_bundle_in_cutter')
+		.itemInputs('tfg:flax_bundle')
+		.itemOutputs('18x tfg:flax_line', '9x tfg:flax_waste')
+		.duration(540)
+		.EUt(2)	
+
 	event.recipes.gtceu.cutter('tfg:flax_tow_in_cutter')
 		.itemInputs('tfg:flax_waste')
 		.itemOutputs('1x tfg:flax_tow', '1x tfc:groundcover/humus')
 		.duration(60)
+		.EUt(2)
+	
+	event.recipes.gtceu.cutter('tfg:flax_tow_from_pile_in_cutter')
+		.itemInputs('tfg:scraped_flax_pile')
+		.itemOutputs('9x tfg:flax_tow', '9x tfc:groundcover/humus')
+		.duration(540)
 		.EUt(2)
 
 	event.recipes.gtceu.centrifuge('tfg:flax_product')
@@ -1344,6 +1380,12 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('2x tfg:flax_line', 'tfg:flax_tow', 'tfc:groundcover/humus')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.centrifuge('tfg:flax_product_from_bundle')
+		.itemInputs('tfg:flax_bundle')
+		.itemOutputs('18x tfg:flax_line', '9x tfg:flax_tow', '9x tfc:groundcover/humus')
+		.duration(1800)
+		.EUt(GTValues.VA[GTValues.LV])	
 
 	event.custom({
 		type: 'vintageimprovements:centrifugation',
