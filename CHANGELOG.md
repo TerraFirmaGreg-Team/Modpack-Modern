@@ -18,6 +18,7 @@
 - Fixed a crash with the sandworm on servers (#2006) @BlueBoat29
 - Fixed some recipes using the wrong keratophyre loose rock @Pyritie
 - Fixed mechanical pumps grabbing tfc:river_water and not water (#1797) @BlueBoat29
+- Fixed some dusts having issues with AE2 recipes not completing successfully (#2032) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 

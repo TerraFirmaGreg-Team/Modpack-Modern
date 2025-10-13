@@ -23,7 +23,18 @@ function registerTFGHeatData(event) {
 
 	event.itemHeat("tfg:sunflower_product", 1, null, null);
 	event.itemHeat("tfg:roasted_sunflower_seeds", 1, null, null);
-	event.itemHeat("#tfc:powders", 1, null, null);
+	event.itemHeat("tfc:powder/native_copper", 1, null, null);
+	event.itemHeat("tfc:powder/native_silver", 1, null, null);
+	event.itemHeat("tfc:powder/native_gold", 1, null, null);
+	event.itemHeat("tfc:powder/hematite", 1, null, null);
+	event.itemHeat("tfc:powder/cassiterite", 1, null, null);
+	event.itemHeat("tfc:powder/bismuthinite", 1, null, null);
+	event.itemHeat("tfc:powder/garnierite", 1, null, null);
+	event.itemHeat("tfc:powder/malachite", 1, null, null);
+	event.itemHeat("tfc:powder/magnetite", 1, null, null);
+	event.itemHeat("tfc:powder/limonite", 1, null, null);
+	event.itemHeat("tfc:powder/sphalerite", 1, null, null);
+	event.itemHeat("tfc:powder/tetrahedrite", 1, null, null);
 
 	event.itemHeat('betterend:cave_pumpkin_pie_raw', 1.0, null, null);
     event.itemHeat('betterend:cave_pumpkin_pie', 1.0, null, null);
