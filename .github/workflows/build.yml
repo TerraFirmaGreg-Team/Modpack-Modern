@@ -17,7 +17,7 @@ env:
 jobs:    
   info:
     name: 🖥️ Project Info
-    uses: TerraFirmaGreg-Team/Actions-Workflows/.github/workflows/modpack/info.yml@main
+    uses: TerraFirmaGreg-Team/Actions/info@0.0.4
     with:
       stable_branch: main
       dev_branch: dev
