@@ -37,7 +37,6 @@ const registerCreateItemTags = (event) => {
 	event.add('minecraft:trimmable_armor', 'create:copper_diving_boots')
 
 	event.add('minecraft:trimmable_armor', 'create:netherite_diving_helmet')
-	event.add('minecraft:trimmable_armor', 'create:netherite_backtank')
 	event.add('minecraft:trimmable_armor', 'create:netherite_diving_boots')
 
 	event.add('create:blaze_burner_fuel/regular', "gtceu:poor_raw_coal")
