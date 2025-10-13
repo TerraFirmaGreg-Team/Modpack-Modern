@@ -16,6 +16,9 @@
 ### Bug fixes
 - Fixed a crash with the sandworm on servers (#2006) @BlueBoat29
 - Fixed some recipes using the wrong keratophyre loose rock @Pyritie
+- Fixed mechanical pumps grabbing tfc:river_water and not water (#1797) @BlueBoat29
+### Translation updates
+- Chinese (simplified) @jmecn
 
 ## [0.11.2] - 09-10-2025
 ### Changes
