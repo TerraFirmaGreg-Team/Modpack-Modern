@@ -21,6 +21,7 @@
 - Fixed some dusts having issues with AE2 recipes not completing successfully (#2032) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
+- Russian @Dl-GitH
 
 ## [0.11.2] - 09-10-2025
 ### Changes

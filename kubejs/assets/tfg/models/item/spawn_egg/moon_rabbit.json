@@ -1,6 +1,3 @@
 {
-	"parent": "minecraft:item/generated",
-	"textures": {
-		"layer0": "tfg:item/spawn_egg/moon_rabbit"
-	}
+	"parent": "minecraft:item/template_spawn_egg"
 }
