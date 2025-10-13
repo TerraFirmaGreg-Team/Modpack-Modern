@@ -108,7 +108,7 @@ const registerFirmaLifeRecipes = (event) => {
 		.duration(50)
 		.EUt(2)
 
-    // Pineapple fibre
+    // Pineapple fiber
     event.recipes.gtceu.cutter("firmalife:pineapple_fiber")
         .itemInputs('firmalife:food/pineapple')
         .itemOutputs('firmalife:pineapple_fiber')
