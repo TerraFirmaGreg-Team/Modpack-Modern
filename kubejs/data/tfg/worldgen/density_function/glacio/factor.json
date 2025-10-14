@@ -20,176 +20,76 @@
 							"points": [
 								{
 									"derivative": 0.0,
-									"location": -0.19,
-									"value": 6
-								},
-								{
-									"derivative": 0.0,
-									"location": -0.15,
+									"location": -0.6,
 									"value": {
-										"coordinate": "tfg:mars/erosion",
+										"coordinate": "tfg:mars/ridges",
 										"points": [
 											{
 												"derivative": 0.0,
-												"location": -0.6,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.2,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.2,
-															"value": 6.25
-														}
-													]
-												}
+												"location": -0.2,
+												"value": 1.3
 											},
 											{
 												"derivative": 0.0,
-												"location": -0.5,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.05,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.05,
-															"value": 2.67
-														}
-													]
-												}
+												"location": 0.2,
+												"value": 3.25
+											}
+										]
+									}
+								},
+								{
+									"derivative": 0.0,
+									"location": -0.5,
+									"value": {
+										"coordinate": "tfg:mars/ridges",
+										"points": [
+											{
+												"derivative": 0.0,
+												"location": -0.05,
+												"value": 3.3
 											},
 											{
 												"derivative": 0.0,
-												"location": -0.35,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.2,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.2,
-															"value": 6.25
-														}
-													]
-												}
+												"location": 0.05,
+												"value": 1.67
+											}
+										]
+									}
+								},
+								{
+									"derivative": 0.0,
+									"location": -0.35,
+									"value": {
+										"coordinate": "tfg:mars/ridges",
+										"points": [
+											{
+												"derivative": 0.0,
+												"location": -0.2,
+												"value": 1.3
 											},
 											{
 												"derivative": 0.0,
-												"location": -0.25,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.2,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.2,
-															"value": 6.25
-														}
-													]
-												}
+												"location": 0.2,
+												"value": 2.25
+											}
+										]
+									}
+								},
+								{
+									"derivative": 0.0,
+									"location": -0.25,
+									"value": {
+										"coordinate": "tfg:mars/ridges",
+										"points": [
+											{
+												"derivative": 0.0,
+												"location": -0.2,
+												"value": 2.3
 											},
 											{
 												"derivative": 0.0,
-												"location": -0.1,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.05,
-															"value": 2.67
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.05,
-															"value": 6.3
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.03,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.2,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.2,
-															"value": 6.25
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.35,
-												"value": 6.25
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.45,
-												"value": {
-													"coordinate": "tfg:mars/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.9,
-															"value": 6.25
-														},
-														{
-															"derivative": 0.0,
-															"location": -0.69,
-															"value": 6.0
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.55,
-												"value": {
-													"coordinate": "tfg:mars/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.9,
-															"value": 6.25
-														},
-														{
-															"derivative": 0.0,
-															"location": -0.69,
-															"value": 5.47
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.62,
-												"value": 6.25
+												"location": 0.2,
+												"value": 3.25
 											}
 										]
 									}
@@ -198,169 +98,17 @@
 									"derivative": 0.0,
 									"location": -0.1,
 									"value": {
-										"coordinate": "tfg:mars/erosion",
+										"coordinate": "tfg:mars/ridges",
 										"points": [
 											{
 												"derivative": 0.0,
-												"location": -0.6,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.2,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.2,
-															"value": 5.47
-														}
-													]
-												}
+												"location": -0.05,
+												"value": 2.67
 											},
 											{
 												"derivative": 0.0,
-												"location": -0.5,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.05,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.05,
-															"value": 2.67
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": -0.35,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.2,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.2,
-															"value": 5.47
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": -0.25,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.2,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.2,
-															"value": 5.47
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": -0.1,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.05,
-															"value": 2.67
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.05,
-															"value": 6.3
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.03,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.2,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.2,
-															"value": 5.47
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.35,
-												"value": 5.47
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.45,
-												"value": {
-													"coordinate": "tfg:mars/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.9,
-															"value": 5.47
-														},
-														{
-															"derivative": 0.0,
-															"location": -0.69,
-															"value": 4.47
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.55,
-												"value": {
-													"coordinate": "tfg:mars/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.9,
-															"value": 5.47
-														},
-														{
-															"derivative": 0.0,
-															"location": -0.69,
-															"value": 4.47
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.62,
-												"value": 5.47
+												"location": 0.05,
+												"value": 1.3
 											}
 										]
 									}
@@ -369,432 +117,68 @@
 									"derivative": 0.0,
 									"location": 0.03,
 									"value": {
-										"coordinate": "tfg:mars/erosion",
+										"coordinate": "tfg:mars/ridges",
 										"points": [
 											{
 												"derivative": 0.0,
-												"location": -0.6,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.2,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.2,
-															"value": 5.08
-														}
-													]
-												}
+												"location": -0.2,
+												"value": 1.2
 											},
 											{
 												"derivative": 0.0,
-												"location": -0.5,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.05,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.05,
-															"value": 2.67
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": -0.35,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.2,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.2,
-															"value": 5.08
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": -0.25,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.2,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.2,
-															"value": 5.08
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": -0.1,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.05,
-															"value": 2.67
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.05,
-															"value": 6.3
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.03,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.2,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.2,
-															"value": 5.08
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.35,
-												"value": 5.08
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.45,
-												"value": {
-													"coordinate": "tfg:mars/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.9,
-															"value": 5.08
-														},
-														{
-															"derivative": 0.0,
-															"location": -0.69,
-															"value": 4.08
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.55,
-												"value": {
-													"coordinate": "tfg:mars/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.9,
-															"value": 5.08
-														},
-														{
-															"derivative": 0.0,
-															"location": -0.69,
-															"value": 4.08
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.62,
-												"value": 5.08
+												"location": 0.2,
+												"value": 0.9
 											}
 										]
 									}
 								},
 								{
 									"derivative": 0.0,
-									"location": 0.06,
+									"location": 0.35,
+									"value": 1.25
+								},
+								{
+									"derivative": 0.0,
+									"location": 0.45,
 									"value": {
-										"coordinate": "tfg:mars/erosion",
+										"coordinate": "tfg:mars/ridges_folded",
 										"points": [
 											{
 												"derivative": 0.0,
-												"location": -0.6,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.2,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.2,
-															"value": 4.69
-														}
-													]
-												}
+												"location": -0.9,
+												"value": 2.25
 											},
 											{
 												"derivative": 0.0,
-												"location": -0.5,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.05,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.05,
-															"value": 2.67
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": -0.35,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.2,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.2,
-															"value": 4.69
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": -0.25,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.2,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.2,
-															"value": 4.69
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": -0.1,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.05,
-															"value": 2.67
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.05,
-															"value": 6.3
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.03,
-												"value": {
-													"coordinate": "tfg:mars/ridges",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.2,
-															"value": 6.3
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.2,
-															"value": 4.69
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.05,
-												"value": {
-													"coordinate": "tfg:mars/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": 0.45,
-															"value": {
-																"coordinate": "tfg:mars/ridges",
-																"points": [
-																	{
-																		"derivative": 0.0,
-																		"location": -0.2,
-																		"value": 6.3
-																	},
-																	{
-																		"derivative": 0.0,
-																		"location": 0.2,
-																		"value": 4.69
-																	}
-																]
-															}
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.7,
-															"value": 2.56
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.4,
-												"value": {
-													"coordinate": "tfg:mars/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": 0.45,
-															"value": {
-																"coordinate": "tfg:mars/ridges",
-																"points": [
-																	{
-																		"derivative": 0.0,
-																		"location": -0.2,
-																		"value": 6.3
-																	},
-																	{
-																		"derivative": 0.0,
-																		"location": 0.2,
-																		"value": 4.69
-																	}
-																]
-															}
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.7,
-															"value": 2.56
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.45,
-												"value": {
-													"coordinate": "tfg:mars/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.7,
-															"value": {
-																"coordinate": "tfg:mars/ridges",
-																"points": [
-																	{
-																		"derivative": 0.0,
-																		"location": -0.2,
-																		"value": 6.3
-																	},
-																	{
-																		"derivative": 0.0,
-																		"location": 0.2,
-																		"value": 4.69
-																	}
-																]
-															}
-														},
-														{
-															"derivative": 0.0,
-															"location": -0.15,
-															"value": 3.37
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.55,
-												"value": {
-													"coordinate": "tfg:mars/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -0.7,
-															"value": {
-																"coordinate": "tfg:mars/ridges",
-																"points": [
-																	{
-																		"derivative": 0.0,
-																		"location": -0.2,
-																		"value": 6.3
-																	},
-																	{
-																		"derivative": 0.0,
-																		"location": 0.2,
-																		"value": 4.69
-																	}
-																]
-															}
-														},
-														{
-															"derivative": 0.0,
-															"location": -0.15,
-															"value": 3.37
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.58,
-												"value": 4.69
+												"location": -0.69,
+												"value": 1.0
 											}
 										]
 									}
+								},
+								{
+									"derivative": 0.0,
+									"location": 0.55,
+									"value": {
+										"coordinate": "tfg:mars/ridges_folded",
+										"points": [
+											{
+												"derivative": 0.0,
+												"location": -0.9,
+												"value": 2.25
+											},
+											{
+												"derivative": 0.0,
+												"location": -0.69,
+												"value": 0.8
+											}
+										]
+									}
+								},
+								{
+									"derivative": 0.0,
+									"location": 0.62,
+									"value": 2.25
 								}
 							]
 						}
