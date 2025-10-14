@@ -1,0 +1,58 @@
+{
+	"type": "tfg:offset_stacked_tree",
+	"config": {
+		"y_offset": -5,
+		"layers": [
+			{
+				"templates": [
+					"tfg:trees/mossy_glowshroom_roots_1",
+					"tfg:trees/mossy_glowshroom_roots_2",
+					"tfg:trees/mossy_glowshroom_roots_3",
+					"tfg:trees/mossy_glowshroom_roots_4",
+					"tfg:trees/mossy_glowshroom_roots_5",
+					"tfg:trees/mossy_glowshroom_roots_6",
+					"tfg:trees/mossy_glowshroom_roots_7",
+					"tfg:trees/mossy_glowshroom_roots_8",
+					"tfg:trees/mossy_glowshroom_roots_9"
+				],
+				"min_count": 1,
+				"max_count": 1
+			},
+			{
+				"templates": [
+					"tfg:trees/mossy_glowshroom_stem_1",
+					"tfg:trees/mossy_glowshroom_stem_2",
+					"tfg:trees/mossy_glowshroom_stem_3",
+					"tfg:trees/mossy_glowshroom_stem_4",
+					"tfg:trees/mossy_glowshroom_stem_5",
+					"tfg:trees/mossy_glowshroom_stem_6",
+					"tfg:trees/mossy_glowshroom_stem_7",
+					"tfg:trees/mossy_glowshroom_stem_8",
+					"tfg:trees/mossy_glowshroom_stem_9"
+				],
+				"min_count": 1,
+				"max_count": 1
+			},
+			{
+				"templates": [
+					"tfg:trees/mossy_glowshroom_top_1",
+					"tfg:trees/mossy_glowshroom_top_2",
+					"tfg:trees/mossy_glowshroom_top_3",
+					"tfg:trees/mossy_glowshroom_top_4",
+					"tfg:trees/mossy_glowshroom_top_5",
+					"tfg:trees/mossy_glowshroom_top_6",
+					"tfg:trees/mossy_glowshroom_top_7",
+					"tfg:trees/mossy_glowshroom_top_8"
+				],
+				"min_count": 1,
+				"max_count": 1
+			}
+		],
+		"placement": {
+			"width": 1,
+			"height": 10,
+			"allow_submerged": false,
+			"allow_deeply_submerged": false
+		}
+	}
+}

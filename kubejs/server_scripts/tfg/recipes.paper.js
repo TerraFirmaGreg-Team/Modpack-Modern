@@ -42,13 +42,8 @@ function registerTFGPapermakingRecipes(event) {
 	event.remove({ id: 'gtceu:chemical_bath/paper_from_wood_dust_distilled' })
 
 	//Lathe - Replace regular logs tag with softwood tag
-	event.replaceInput({ id: 'gtceu:lathe/lathe_logs' }, '#minecraft:logs', '#tfg:softwood')
-	//Create identical lathe recipe for hardwood
-	event.recipes.gtceu.lathe('lathe_hardwood')
-		.itemInputs('#tfg:hardwood')
-		.itemOutputs('4x gtceu:long_wood_rod', '2x gtceu:hardwood_dust')
-		.duration(160)
-		.EUt(7)
+	event.remove({ id: 'gtceu:lathe/lathe_logs' })
+	event.remove({ id: 'gtceu:lathe/lathe_stripped_bamboo_log' })
 
 	removeMaceratorRecipe(event, 'macerate_logs')
 
@@ -104,7 +99,7 @@ function registerTFGPapermakingRecipes(event) {
 		.outputItem('tfg:soaked_hardwood_strip')
 		.id('tfg:barrel/soak_hardwood_strip')
 	event.recipes.gtceu.chemical_bath('tfg:chemical_bath/soak_hardwood_strips')
-		.inputFluids("#tfc:clean_water 100")
+		.inputFluids("#tfg:clean_water 100")
 		.itemInputs('tfg:hardwood_strip')
 		.itemOutputs('tfg:soaked_hardwood_strip')
 		.duration(200)

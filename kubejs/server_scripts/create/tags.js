@@ -21,6 +21,11 @@ const registerCreateItemTags = (event) => {
 	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_lead')
 	event.remove('c:hidden_from_recipe_viewers', 'create:powdered_obsidian')
 
+	// Create metal bars weren't metal bars :(
+	event.add('tfg:metal_bars', 'create:andesite_bars')
+	event.add('tfg:metal_bars', 'create:brass_bars')
+	event.add('tfg:metal_bars', 'create:copper_bars')
+
 	// Тэги для ручек и сидушек
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		event.add('tfg:colored_valve_handles', `create:${dye}_valve_handle`)
@@ -32,7 +37,6 @@ const registerCreateItemTags = (event) => {
 	event.add('minecraft:trimmable_armor', 'create:copper_diving_boots')
 
 	event.add('minecraft:trimmable_armor', 'create:netherite_diving_helmet')
-	event.add('minecraft:trimmable_armor', 'create:netherite_backtank')
 	event.add('minecraft:trimmable_armor', 'create:netherite_diving_boots')
 
 	event.add('create:blaze_burner_fuel/regular', "gtceu:poor_raw_coal")
@@ -59,10 +63,29 @@ const registerCreateItemTags = (event) => {
 	event.add('create:non_movable', 'gtceu:titanium_crate')
 	event.add('create:non_movable', 'gtceu:tungsten_steel_crate')
 	event.add('create:non_movable', '#create:toolboxes')
+	event.add('create:non_movable', 'gtceu:ulv_super_chest')
 	event.add('create:non_movable', 'gtceu:lv_super_chest')
 	event.add('create:non_movable', 'gtceu:mv_super_chest')
 	event.add('create:non_movable', 'gtceu:hv_super_chest')
 	event.add('create:non_movable', 'gtceu:ev_super_chest')
+	event.add('create:non_movable', 'gtceu:iv_quantum_chest')
+	event.add('create:non_movable', 'gtceu:luv_quantum_chest')
+	event.add('create:non_movable', 'gtceu:zpm_quantum_chest')
+	event.add('create:non_movable', 'gtceu:uv_quantum_chest')
+	event.add('create:non_movable', 'gtceu:uhv_quantum_chest')
+	event.add('create:non_movable', 'gtceu:ulv_super_tank')
+	event.add('create:non_movable', 'gtceu:lv_super_tank')
+	event.add('create:non_movable', 'gtceu:mv_super_tank')
+	event.add('create:non_movable', 'gtceu:hv_super_tank')
+	event.add('create:non_movable', 'gtceu:ev_super_tank')
+	event.add('create:non_movable', 'gtceu:iv_quantum_tank')
+	event.add('create:non_movable', 'gtceu:luv_quantum_tank')
+	event.add('create:non_movable', 'gtceu:zpm_quantum_tank')
+	event.add('create:non_movable', 'gtceu:uv_quantum_tank')
+	event.add('create:non_movable', 'gtceu:uhv_quantum_tank')
+	event.add('create:non_movable', 'tfg:spice')
+	event.add('create:non_movable', 'tfg:geyser_source')
+	event.add('create:non_movable', 'tfg:geyser_source_small')
 
 	event.add('c:hidden_from_recipe_viewers', 'create:cardboard_package_12x10')
 	event.add('c:hidden_from_recipe_viewers', 'create:cardboard_package_10x8')
@@ -100,14 +123,38 @@ const registerCreateBlockTags = (event) => {
 
 	event.add('create:chest_mounted_storage', '#forge:chests/wooden')
 	event.add('create:chest_mounted_storage', 'framedblocks:framed_chest')
+
+	event.removeAll('create:passive_boiler_heaters')
+
+	event.remove('create:windmill_sails', 'create:sail_frame')
+	
+	event.add('create:non_movable', 'gtceu:wood_crate')
+	event.add('create:non_movable', 'gtceu:bronze_crate')
+	event.add('create:non_movable', 'gtceu:black_bronze_crate')
+	event.add('create:non_movable', 'gtceu:bismuth_bronze_crate')
+	event.add('create:non_movable', 'gtceu:steel_crate')
+	event.add('create:non_movable', 'gtceu:aluminium_crate')
+	event.add('create:non_movable', 'gtceu:stainless_steel_crate')
+	event.add('create:non_movable', 'gtceu:titanium_crate')
+	event.add('create:non_movable', 'gtceu:tungsten_steel_crate')
+	event.add('create:non_movable', '#create:toolboxes')
+	event.add('create:non_movable', 'gtceu:lv_super_chest')
+	event.add('create:non_movable', 'gtceu:mv_super_chest')
+	event.add('create:non_movable', 'gtceu:hv_super_chest')
+	event.add('create:non_movable', 'gtceu:ev_super_chest')
+	event.add('create:non_movable', 'tfg:spice')
+	event.add('create:non_movable', 'tfg:geyser_source')
+	event.add('create:non_movable', 'tfg:geyser_source_small')
 }
 
 
 const registerCreateFluidTags = (event) => {
 
-	// Делаем воду из TFC бесконечной для помпы Create
+	//Hose Pulley Infinites
 	event.add('create:bottomless/allow', 'tfc:fresh_water')
 	event.add('create:bottomless/allow', 'tfc:salt_water')
+	event.add('create:bottomless/allow', 'tfg:semiheavy_ammoniacal_water')
+	event.remove('create:bottomless/allow', 'minecraft:lava')
 
 	// Добавляем тег для скрытия в EMI
 	event.add('c:hidden_from_recipe_viewers', 'create:chocolate')
@@ -124,8 +171,4 @@ const registerCreateFluidTags = (event) => {
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:salt_water')
 	event.add('create:fan_processing_catalysts/splashing', 'tfc:spring_water')
 	event.add('create:fan_processing_catalysts/splashing', 'tfg:semiheavy_ammoniacal_water')
-
-	//Hose Pulley Infinites
-	event.add('create:bottomless/allow', 'tfg:semiheavy_ammoniacal_water')
-	event.remove('create:bottomless/allow', 'minecraft:lava')
 }

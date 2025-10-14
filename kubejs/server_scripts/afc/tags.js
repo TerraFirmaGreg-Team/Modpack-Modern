@@ -22,6 +22,7 @@ const registerAFCItemTags = (event) => {
         event.add('firmalife:wine_shelves', `afc:wood/wine_shelf/${woodType}`)
         event.add('firmalife:stomping_barrels', `afc:wood/stomping_barrel/${woodType}`)
         event.add('firmalife:barrel_presses', `afc:wood/barrel_press/${woodType}`)
+		event.add('tfc:sewing_tables', `afc:wood/sewing_table/${woodType}`)
     })
 
 	//Hardwood Tags
@@ -119,6 +120,11 @@ const registerAFCBlockTags = (event) => {
 	event.add("afc:tappable_logs", "tfc:wood/log/douglas_fir")
 	event.add("afc:tappable_logs", "tfc:wood/log/ancient_spruce")
 	event.add("afc:tappable_logs", "tfc:wood/log/spruce")
+
+	event.add("afc:tappable_logs", "beneath:wood/log/crimson")
+	event.add("afc:tappable_logs", "beneath:wood/wood/crimson")
+	event.add("afc:tappable_logs", "beneath:wood/log/warped")
+	event.add("afc:tappable_logs", "beneath:wood/wood/warped")
 
     event.add("tfg:latex_logs", "#tfc:kapok_logs")
     event.add("tfg:latex_logs", "#afc:hevea_logs")

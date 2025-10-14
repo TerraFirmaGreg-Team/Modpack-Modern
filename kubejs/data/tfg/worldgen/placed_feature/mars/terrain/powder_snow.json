@@ -1,0 +1,23 @@
+{
+	"feature": "tfg:mars/terrain/powder_snow",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 15
+		},
+		{
+			"type": "tfc:climate",
+			"max_temperature": -107
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE_WG"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

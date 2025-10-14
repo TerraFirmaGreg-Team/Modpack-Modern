@@ -334,7 +334,7 @@
 				type: "item"
 			}]
 			title: "{quests.gregtech_energy.lst.title}"
-			x: -4.5d
+			x: -3.0d
 			y: -3.0d
 		}
 		{
@@ -541,7 +541,7 @@
 				}
 			]
 			title: "{quests.gregtech_energy.lgt_fuel.title}"
-			x: -11.0d
+			x: -10.0d
 			y: -3.0d
 		}
 		{
@@ -655,7 +655,7 @@
 				}
 			]
 			title: "{quests.gregtech_energy.lce_fuel.title}"
-			x: -10.0d
+			x: -9.0d
 			y: 1.0d
 		}
 		{
@@ -681,7 +681,7 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:lv_steam_turbine)item(gtceu:lv_combustion))"
 					}
 				}
-				title: "{quests.gregtech_energy.mv_generator.task}"
+				title: "{quests.gregtech_energy.lv_generator.task}"
 				type: "item"
 			}]
 			title: "{quests.gregtech_energy.lv_generator.title}"
@@ -766,7 +766,7 @@
 				type: "item"
 			}]
 			title: "{quests.gregtech_energy.hv_single_generator.title}"
-			x: -3.0d
+			x: -4.5d
 			y: -3.0d
 		}
 		{
@@ -800,7 +800,7 @@
 				}
 			]
 			title: "{quests.gregtech_energy.hv_fuel.title}"
-			x: -12.0d
+			x: -11.0d
 			y: -3.0d
 		}
 		{
@@ -947,7 +947,7 @@
 				item: "gtceu:benzene_bucket"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -10.0d
 			y: -5.0d
 		}
 		{
@@ -958,19 +958,45 @@
 				item: "gtceu:diesel_bucket"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.0d
 			y: -5.0d
 		}
 		{
-			dependencies: ["05E2F203DA46A5E8"]
+			dependencies: ["7AF726555D721DFC"]
+			description: [
+				"{quests.gregtech_energy.fission_reactor.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_reactor.desc.2}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_reactor.desc.3}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_reactor.desc.4}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_reactor.desc.5}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_reactor.desc.6}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_reactor.desc.7}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_reactor.desc.8}"
+			]
 			id: "4512E5DE7A84F809"
-			tasks: [{
-				id: "4BAECE3F4EC86920"
-				item: "gtceu:fission_reactor"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 1.0d
+			subtitle: "{quests.gregtech_energy.fission_reactor.subtitle}"
+			tasks: [
+				{
+					id: "4BAECE3F4EC86920"
+					item: "deafission:fission_reactor_mk1"
+					type: "item"
+				}
+				{
+					id: "73A11457C2E4230D"
+					item: "tfg:nuclear_turbine"
+					type: "item"
+				}
+			]
+			title: "{quests.gregtech_energy.fission_reactor.title}"
+			x: -7.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4C620105AAC49381"]
@@ -991,7 +1017,7 @@
 				item: "gtceu:cetane_boosted_diesel_bucket"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.0d
 			y: -3.0d
 		}
 		{
@@ -1002,7 +1028,7 @@
 				item: "gtceu:high_octane_gasoline_bucket"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.0d
 			y: -1.0d
 		}
 		{
@@ -1051,6 +1077,57 @@
 			}]
 			x: -6.0d
 			y: 3.0d
+		}
+		{
+			dependencies: [
+				"20DA81038C507C90"
+				"3467E14C8BB54214"
+				"634EAFA86B3D57A1"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{quests.gregtech_energy.rotor.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.rotor.desc.2}"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:turbine_rotor"
+				tag: {
+					GT.PartStats: {
+						Material: "gtceu:ultimet"
+					}
+				}
+			}
+			id: "44EDD02C1DD583DC"
+			subtitle: "{quests.gregtech_energy.rotor.subtitle}"
+			tasks: [
+				{
+					id: "389EECA7BAFCBF63"
+					item: {
+						Count: 1
+						id: "gtceu:turbine_rotor"
+						tag: {
+							GT.PartStats: {
+								Material: "gtceu:ultimet"
+							}
+						}
+					}
+					match_nbt: false
+					title: "{quests.gregtech_energy.rotor.task}"
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "255F57665D599573"
+					item: "create:mechanical_arm"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.gregtech_energy.rotor.title}"
+			x: -3.0d
+			y: -2.0d
 		}
 	]
 	subtitle: ["{quests.gregtech_energy.subtitle}"]

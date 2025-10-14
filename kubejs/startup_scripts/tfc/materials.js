@@ -86,6 +86,7 @@ const registerTFCMaterials = (event) => {
     GTMaterials.BismuthBronze.setMaterialIconSet(GTMaterialIconSet.BRIGHT)
     GTMaterials.Nickel.setMaterialIconSet(GTMaterialIconSet.BRIGHT)
     GTMaterials.BlackBronze.setMaterialIconSet(GTMaterialIconSet.SHINY)
+    GTMaterials.Potin.setMaterialIconSet(GTMaterialIconSet.SHINY)
     
     GTMaterials.Aluminium.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_silver'))
     GTMaterials.Asbestos.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_gold'))

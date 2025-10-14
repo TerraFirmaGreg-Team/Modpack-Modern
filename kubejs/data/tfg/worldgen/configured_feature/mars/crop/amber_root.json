@@ -8,7 +8,10 @@
 					"to_place": {
 						"type": "minecraft:simple_state_provider",
 						"state": {
-							"Name": "betterend:amber_root_wild"
+							"Name": "betterend:amber_root_wild",
+							"Properties": {
+								"mature": "true"
+							}
 						}
 					}
 				}
@@ -16,7 +19,7 @@
 			"placement": [
 				{
 					"type": "minecraft:heightmap",
-					"heightmap": "WORLD_SURFACE_WG"
+					"heightmap": "OCEAN_FLOOR_WG"
 				},
 				{
 					"type": "block_predicate_filter",
@@ -35,7 +38,7 @@
 				}
 			]
 		},
-		"tries": 16,
+		"tries": 12,
 		"xz_spread": 10,
 		"y_spread": 2
 	}

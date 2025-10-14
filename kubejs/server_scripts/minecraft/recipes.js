@@ -10,7 +10,7 @@ const registerMinecraftRecipes = (event) => {
 	removeMinecraftRecipes(event)
 	registerMinecraftDyeRecipes(event)
 
-	//#region Выход: Земля
+	//#region Выход: Земля, dirt
 
 	event.recipes.gtceu.macerator('dirt_from_bio_chaff')
 		.itemInputs('gtceu:bio_chaff')
@@ -20,7 +20,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Стекло
+	//#region Выход: Стекло, glass
 
 	event.recipes.gtceu.arc_furnace('glass_from_sand')
 		.itemInputs('#forge:sand')
@@ -30,12 +30,12 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Добавление
+	//#region Добавление, copper
 
 	for (let i = 0; i < global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS.length; i++) {
 		let element = global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS[i];
 
-		// Создание ржавчины
+		// Создание ржавчины, oxidation
 		if (i < global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS.length / 2 - 1) {
 
 			let element2 = global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS[i + 1]
@@ -113,7 +113,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Кремний
+	//#region Выход: Кремний, flint
 
 	event.shapeless('minecraft:flint', [
 		'#tfc:rock/gravel',
@@ -133,7 +133,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Шаблон баннера
+	//#region Выход: Шаблон баннера, banner template
 
 	event.shapeless('minecraft:flower_banner_pattern', [
 		'minecraft:paper',
@@ -142,25 +142,32 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Бумага
+	//#region Выход: Бумага, paper
 
 	event.recipes.gtceu.chemical_bath('paper_from_papyrus_distilled')
 		.itemInputs('tfc:papyrus')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 100))
-		.itemOutputs('minecraft:paper')
+		.itemOutputs('4x tfc:soaked_papyrus_strip')
 		.duration(100)
 		.EUt(7)
 
 	event.recipes.gtceu.chemical_bath('paper_from_papyrus')
 		.itemInputs('tfc:papyrus')
 		.inputFluids("#tfg:clean_water 100")
+		.itemOutputs('4x tfc:soaked_papyrus_strip')
+		.duration(100)
+		.EUt(7)
+
+	event.recipes.gtceu.assembler('papyrus_strips')
+		.itemInputs('4x tfc:soaked_papyrus_strip')
 		.itemOutputs('minecraft:paper')
+		.circuit(1)
 		.duration(100)
 		.EUt(7)
 
 	//#endregion
 
-	//#region Выход: Сахар
+	//#region Выход: Сахар, sugar
 
 	event.recipes.gtceu.centrifuge('sugar_from_sugarcane')
 		.itemInputs('tfc:food/sugarcane')
@@ -177,7 +184,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Блок сена
+	//#region Выход: Блок сена, hay block
 
 	event.recipes.gtceu.packer('hay_block')
 		.itemInputs('9x tfc:straw')
@@ -187,7 +194,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Светильник Джека
+	//#region Выход: Светильник Джека, jack o' lantern
 
 	event.recipes.gtceu.canner('jack_o_lantern')
 		.itemInputs('tfc:pumpkin')
@@ -197,7 +204,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Светящийся арбуз
+	//#region Выход: Светящийся арбуз, glistering melon
 
 	event.shaped('minecraft:glistering_melon_slice', [
 		'AAA',
@@ -222,7 +229,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Сухая губка
+	//#region Выход: Сухая губка, dry sponge
 
 	event.recipes.tfc.heating('minecraft:wet_sponge', 790)
 		.resultItem('minecraft:sponge')
@@ -239,7 +246,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Тонированное стекло
+	//#region Выход: Тонированное стекло, tinted glass
 
 	event.recipes.gtceu.alloy_smelter('tfg:minecraft/tinted_glass')
 		.itemInputs('minecraft:glass', 'tfc:powder/amethyst')
@@ -249,7 +256,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Пустая карта
+	//#region Выход: Пустая карта, maps
 
 	event.recipes.gtceu.assembler('map')
 		.itemInputs('8x minecraft:paper', 'firmaciv:firmaciv_compass')
@@ -259,7 +266,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Книга
+	//#region Выход: Книга, books
 
 	event.shapeless('minecraft:book', [
 		'#forge:paper', '#forge:paper', '#forge:paper', '#forge:leather', 'tfc:glue'
@@ -279,7 +286,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region
+	//#region Output: name tags
 
 	event.recipes.gtceu.assembler('tfg:assembler/name_tag')
 		.itemInputs('5x #forge:string', '#forge:paper')
@@ -288,35 +295,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Золотое яблоко
-
-	event.recipes.gtceu.chemical_reactor('golden_apple')
-		.itemInputs('tfc:food/green_apple', '8x #forge:ingots/gold')
-		.itemOutputs('minecraft:golden_apple')
-		.duration(50)
-		.EUt(30)
-
-	event.recipes.gtceu.large_chemical_reactor('golden_apple')
-		.itemInputs('tfc:food/green_apple', '8x #forge:ingots/gold')
-		.itemOutputs('minecraft:golden_apple')
-		.duration(50)
-		.EUt(30)
-
-	event.recipes.gtceu.chemical_reactor('golden_apple_1')
-		.itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
-		.itemOutputs('minecraft:golden_apple')
-		.duration(50)
-		.EUt(30)
-
-    event.recipes.gtceu.large_chemical_reactor('golden_apple_1')             
-        .itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
-        .itemOutputs('minecraft:golden_apple')
-        .duration(50)
-        .EUt(30)
-
-    //#endregion
-
-	//#region Выход: Компаратор
+	//#region Выход: Компаратор, comparator
 
 	// Компаратор
 	event.shaped('minecraft:comparator', [
@@ -349,6 +328,10 @@ const registerMinecraftRecipes = (event) => {
 		C: '#tfc:rock/smooth'
 	}).id('tfg:shaped/comparator_nether_quartz');
 
+	//#endregion
+
+	//#region Output: redstone lamp
+
 	event.replaceInput({ id: 'gtceu:shaped/redstone_lamp' }, 'minecraft:glass_pane', '#forge:glass_panes')
 	event.recipes.gtceu.assembler('redstone_lamp')
 		.itemInputs('1x #forge:glass', '1x minecraft:glowstone', '1x #forge:rods/red_alloy')
@@ -358,7 +341,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Рамка
+	//#region Выход: Рамка, item frame
 
 	event.recipes.gtceu.assembler('item_frame')
 		.itemInputs('8x #tfc:lumber', '#forge:leather')
@@ -368,7 +351,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Свето-рамка
+	//#region Выход: Свето-рамка, glowing item frame
 
 	event.shapeless('minecraft:glow_item_frame', [
 		'minecraft:item_frame',
@@ -383,7 +366,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Картина
+	//#region Выход: Картина, painting
 
 	event.recipes.gtceu.assembler('painting')
 		.itemInputs('#tfc:high_quality_cloth', '8x #forge:rods/wood')
@@ -394,11 +377,11 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Факел
+	//#region Выход: Факел, torch
 
-	//#region В Верстаке
+	//#region В Верстаке, workbench recipes
 
-	// Из серы
+	// Из серы, from sulfur
 	event.shaped('2x tfc:dead_torch', [
 		'A',
 		'B'
@@ -407,7 +390,7 @@ const registerMinecraftRecipes = (event) => {
 		B: '#tfc:can_be_lit_on_torch'
 	}).id('gtceu:shaped/torch_sulfur')
 
-	// Из фосфора
+	// Из фосфора, from phosphorous
 	event.shaped('6x tfc:dead_torch', [
 		'A',
 		'B'
@@ -416,7 +399,7 @@ const registerMinecraftRecipes = (event) => {
 		B: '#tfc:can_be_lit_on_torch'
 	}).id('gtceu:shaped/torch_phosphorus')
 
-	// Из пыли кокса
+	// Из пыли кокса, from coke dust
 	event.shaped('8x tfc:dead_torch', [
 		'A',
 		'B'
@@ -425,7 +408,7 @@ const registerMinecraftRecipes = (event) => {
 		B: '#tfc:can_be_lit_on_torch'
 	}).id('gtceu:shaped/torch_coke_dust')
 
-	// Из гема кокса
+	// Из гема кокса, from coke gems
 	event.shaped('8x tfc:dead_torch', [
 		'A',
 		'B'
@@ -434,7 +417,7 @@ const registerMinecraftRecipes = (event) => {
 		B: '#tfc:can_be_lit_on_torch'
 	}).id('gtceu:shaped/torch_coke')
 
-	// Из пыли угля
+	// Из пыли угля, from coal dust
 	event.shaped('4x tfc:dead_torch', [
 		'A',
 		'B'
@@ -443,7 +426,7 @@ const registerMinecraftRecipes = (event) => {
 		B: '#tfc:can_be_lit_on_torch'
 	}).id('gtceu:shaped/torch_coal_dust')
 
-	// Из гема угля
+	// Из гема угля, from coal
 	event.shaped('4x tfc:dead_torch', [
 		'A',
 		'B'
@@ -452,7 +435,7 @@ const registerMinecraftRecipes = (event) => {
 		B: '#tfc:can_be_lit_on_torch'
 	}).id('tfg:crafting/torch_coal')
 
-	// Из пыли древесного угля
+	// Из пыли древесного угля, from charcoal dust
 	event.shaped('4x tfc:dead_torch', [
 		'A',
 		'B'
@@ -461,7 +444,7 @@ const registerMinecraftRecipes = (event) => {
 		B: '#tfc:can_be_lit_on_torch'
 	}).id('gtceu:shaped/torch_charcoal_dust')
 
-	// Из гема древесного угля
+	// Из гема древесного угля, from charcoal
 	event.shaped('4x tfc:dead_torch', [
 		'A',
 		'B'
@@ -470,7 +453,7 @@ const registerMinecraftRecipes = (event) => {
 		B: '#tfc:can_be_lit_on_torch'
 	}).id('tfg:crafting/torch_charcoal')
 
-	// Из резины
+	// Из резины, from sticky resin
 	event.shaped('3x tfc:dead_torch', [
 		'A',
 		'B'
@@ -481,51 +464,51 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region В сборщике
+	//#region В сборщике, assembler recipes
 
-	// Из серы
+	// Из серы, from sulfur
 	event.recipes.gtceu.assembler('torch_sulfur')
 		.itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:sulfur_dust')
 		.itemOutputs('2x tfc:dead_torch')
 		.duration(100)
 		.EUt(1)
 
-	// Из фосфора
+	// Из фосфора, from phosphorous
 	event.recipes.gtceu.assembler('torch_phosphorus')
 		.itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:phosphorus_dust')
 		.itemOutputs('6x tfc:dead_torch')
 		.duration(100)
 		.EUt(1)
 
-	// Из гема кокса
+	// Из гема коксаm, from coke gems
 	event.recipes.gtceu.assembler('torch_coke_gem')
 		.itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:coke_gem')
 		.itemOutputs('8x tfc:dead_torch')
 		.duration(100)
 		.EUt(1)
 
-	// Из пыли кокса
+	// Из пыли коксаm, from coke dust
 	event.recipes.gtceu.assembler('torch_coke_dust')
 		.itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:coke_dust')
 		.itemOutputs('8x tfc:dead_torch')
 		.duration(100)
 		.EUt(1)
 
-	// Из гема ванильного угля
+	// Из гема ванильного угляm, from coal
 	event.recipes.gtceu.assembler('torch_coal')
 		.itemInputs('#tfc:can_be_lit_on_torch', 'minecraft:coal')
 		.itemOutputs('4x tfc:dead_torch')
 		.duration(100)
 		.EUt(1)
 
-	// Из пыли ванильного угля
+	// Из пыли ванильного угляm, from coal dust
 	event.recipes.gtceu.assembler('torch_coal_dust')
 		.itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:coal_dust')
 		.itemOutputs('4x tfc:dead_torch')
 		.duration(100)
 		.EUt(1)
 
-	// Из пыли древесного угля
+	// Из пыли древесного угляm, from charcoal dust
 	event.recipes.gtceu.assembler('torch_charcoal_dust')
 		.itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:charcoal_dust')
 		.itemOutputs('4x tfc:dead_torch')
@@ -535,13 +518,13 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	// Мертвый факел в обычный
+	// Мертвый факел в обычный, smelt dead torch
 	event.smelting('tfc:torch', 'tfc:dead_torch')
 		.id('tfg:smelting/dead_torch_to_torch')
 
 	//#endregion
 
-	//#region Выход: Ведро
+	//#region Выход: Ведро, buckets
 
 	event.recipes.tfc.welding('minecraft:bucket', 'tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 6)
 		.id('tfg:anvil/vanilla_bucket')
@@ -567,7 +550,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Тигель
+	//#region Выход: Тигель, cauldron
 
 	event.shaped('minecraft:cauldron', [
 		'A A',
@@ -587,7 +570,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Воронка
+	//#region Выход: Воронка, hopper
 
 	event.shaped('minecraft:hopper', [
 		'A A',
@@ -609,7 +592,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Поршень (Piston)
+	//#region Выход: Поршень, piston
 
 	event.recipes.gtceu.assembler('piston')
 		.itemInputs(ChemicalHelper.get(TagPrefix.rod, GTMaterials.WroughtIron, 1),ChemicalHelper.get(TagPrefix.gearSmall, GTMaterials.Brass, 1) , '3x #tfc:lumber', '4x #forge:cobblestone')
@@ -620,7 +603,7 @@ const registerMinecraftRecipes = (event) => {
 	//#endregion
 
 
-	//#region Выход: Шерсть
+	//#region Выход: Шерсть, wool
 
 	event.recipes.gtceu.assembler('wool_from_string')
 		.itemInputs('8x #forge:string')
@@ -636,7 +619,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Лук
+	//#region Выход: Лук, bow
 
 	event.recipes.gtceu.assembler('bow')
 		.itemInputs('3x #forge:string', '3x #forge:rods/wooden')
@@ -646,7 +629,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Наблюдатель
+	//#region Выход: Наблюдатель, observer
 
 	event.shaped('minecraft:observer', [
 		'AAA',
@@ -698,7 +681,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Раздатчик
+	//#region Выход: Раздатчик, dispenser
 
 	event.recipes.gtceu.assembler('dispenser')
 		.itemInputs('7x #forge:cobblestone', 'minecraft:redstone', 'minecraft:bow')
@@ -720,7 +703,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Выбрасыватель
+	//#region Выход: Выбрасыватель, dropper
 
 	event.recipes.gtceu.assembler('dropper')
 		.itemInputs('7x #forge:cobblestone', '2x minecraft:redstone')
@@ -741,7 +724,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Рельсы
+	//#region Выход: Рельсы, rail
 
 	event.recipes.gtceu.assembler('rail')
 		.itemInputs('6x #forge:rods/wrought_iron', '#forge:rods/wooden')
@@ -752,7 +735,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Заряженные рельсы
+	//#region Выход: Заряженные рельсы, powered rail
 
 	event.recipes.gtceu.assembler('powered_rail')
 		.itemInputs('6x #forge:rods/gold', '2x #forge:rods/wooden', '#forge:dusts/redstone')
@@ -763,7 +746,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Активаторные рельсы
+	//#region Выход: Активаторные рельсы, activator rail
 
 	event.recipes.gtceu.assembler('activator_rail')
 		.itemInputs('6x #forge:rods/wrought_iron', '#forge:rods/wooden', 'minecraft:redstone_torch')
@@ -774,7 +757,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Нажимные рельсы
+	//#region Выход: Нажимные рельсы, detector rail
 
 	event.recipes.gtceu.assembler('detector_rail')
 		.itemInputs('6x #forge:rods/wrought_iron', '#forge:rods/wooden', '#minecraft:stone_pressure_plates')
@@ -785,7 +768,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Веревка
+	//#region Выход: Веревка, lead
 
 	event.shaped('minecraft:lead', [
 		' AA',
@@ -801,13 +784,13 @@ const registerMinecraftRecipes = (event) => {
 		' BA',
 		'A  '
 	], {
-		A: 'tfc:jute_fiber',
+		A: '#tfg:burlap_fiber',
 		B: '#forge:rings'
 	}).id('tfc:crafting/lead')
 
 	//#endregion
 
-	//#region Выход: Кирпич
+	//#region Выход: Кирпич, bricks
 
 	event.shaped('4x minecraft:bricks', [
 		'BAB',
@@ -818,18 +801,11 @@ const registerMinecraftRecipes = (event) => {
 		B: 'minecraft:brick'
 	}).id('tfc:crafting/bricks')
 
-	event.recipes.gtceu.assembler('minecraft:bricks')
-		.itemInputs('5x minecraft:brick')
-		.inputFluids(Fluid.of('gtceu:concrete', 144))
-		.itemOutputs(`4x minecraft:bricks`)
-		.duration(50)
-		.EUt(7)
-
 	//#endregion
 
-	//#region Выход: Элитра
+	//#region Выход: Элитра, elytra
 
-	// Ну и херь я придумал
+	// Ну и херь я придумал, here's some bullshit i came up with
 	event.recipes.gtceu.assembler('tfg:minecraft/elytra')
 		.itemInputs('16x tfg:polycaprolactam_fabric', '16x #forge:foils/aluminium', '8x tfg:phantom_silk', '4x #forge:rings/aluminium', '2x #forge:rods/long/vanadium_steel', '2x #forge:small_springs/aluminium', '1x #forge:small_gears/aluminium')
 		.circuit(4)
@@ -872,15 +848,9 @@ const registerMinecraftRecipes = (event) => {
 	event.recipes.gtceu.mixer('gtceu:lv_glowstone')
 		.itemInputs('gtceu:gold_dust', 'minecraft:redstone', 'gtceu:sulfur_dust')
 		.itemOutputs('2x minecraft:glowstone_dust')
-		.circuit(32)
+		.circuit(8)
 		.duration(1200)
 		.EUt(30)
-
-	//#endregion
-
-	//#region Nether Brick
-
-	event.smelting('minecraft:nether_brick', 'minecraft:netherrack')
 
 	//#endregion
 
@@ -954,7 +924,7 @@ const registerMinecraftRecipes = (event) => {
 
 	// #endregion
 
-	//#region Кожа из кожаных предметов
+	//#region Кожа из кожаных предметов, leather recycling
 	event.recipes.gtceu.macerator('tfg:leather_from_saddle')
 		.itemInputs('minecraft:saddle')
 		.itemOutputs('minecraft:leather')
@@ -972,9 +942,9 @@ const registerMinecraftRecipes = (event) => {
 		'ABA',
 		'CDC'
 	], {
-		A: 'minecraft:blaze_rod',
-		B: 'minecraft:blaze_powder',
-		C: '#forge:ingots/blue_steel',
+		A: '#forge:rods/black_steel',
+		B: 'minecraft:lava_bucket',
+		C: '#minecraft:logs',
 		D: '#forge:storage_blocks/charcoal',
 	}).id('tfg:campfire_charcoal')
 
@@ -983,9 +953,9 @@ const registerMinecraftRecipes = (event) => {
 		'ABA',
 		'CDC'
 	], {
-		A: 'minecraft:blaze_rod',
-		B: 'minecraft:blaze_powder',
-		C: '#forge:ingots/blue_steel',
+		A: '#forge:rods/black_steel',
+		B: 'minecraft:lava_bucket',
+		C: '#minecraft:logs',
 		D: '#forge:storage_blocks/coal',
 	}).id('tfg:campfire_coal')
 	//#endregion
@@ -1009,11 +979,13 @@ const registerMinecraftRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 	//#endregion
 
-	// Slime
+	//#region Slime
 	event.smelting('tfc:glue', 'minecraft:slime_ball')
 		.id('tfg:smelting/slime_to_glue')
+	event.smelting('tfc:glue', 'minecraft:magma_cream')
+		.id('tfg:smelting/magma_cream_to_glue')
 
-	// Clay
+	//#region Clay
 	event.shaped('minecraft:clay', [
 		'AA',
 		'AA'
@@ -1025,7 +997,9 @@ const registerMinecraftRecipes = (event) => {
 	event.shapeless('4x minecraft:clay_ball', ['minecraft:clay'])
 		.id('tfg:shapeless/clay_block_to_balls')
 
-	// Mushrooms
+	//#endregion
+
+	//#region Mushrooms
 
 	event.shapeless('4x minecraft:red_mushroom', ['minecraft:red_mushroom_block', '#forge:tools/knives'])
 		.id('tfg:shapeless/cut_red_mushroom_block')
@@ -1059,8 +1033,9 @@ const registerMinecraftRecipes = (event) => {
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	//#endregion
 
-	// Stonecutter
+	//#region Stonecutter
 
 	event.shaped('minecraft:stonecutter',
 		[
@@ -1078,8 +1053,9 @@ const registerMinecraftRecipes = (event) => {
 
 	event.stonecutting('minecraft:smooth_quartz', 'minecraft:quartz_block')
 	event.stonecutting('create:cut_deepslate', 'minecraft:polished_deepslate')
+	//#endregion
 
-	//Glowing Ink Sacs
+	//#region Glowing Ink Sacs
 		
 	event.recipes.gtceu.chemical_bath('minecraft:glow_inc_sac4')
 		.itemInputs("gtceu:thorium_dust", "4x #forge:dyes/black")
@@ -1095,7 +1071,9 @@ const registerMinecraftRecipes = (event) => {
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.MV])
 
-	// Gunpowder
+	//#endregion
+
+	//#region Gunpowder
 
 	event.shapeless('4x minecraft:gunpowder',
 		['#forge:tools/mortars', '2x #forge:dusts/saltpeter', '#forge:dusts/sulfur', '3x #forge:dusts/charcoal'])
@@ -1117,7 +1095,10 @@ const registerMinecraftRecipes = (event) => {
 
 	event.replaceInput({ id: 'minecraft:writable_book' }, 'minecraft:ink_sac', '#forge:dyes/black')
 
-	//Pressure Plates
+	// #endregion
+
+	//#region Pressure Plates
+
 	const PRESSURE_PLATES = [
 		{type: 'bamboo', material: 'minecraft:bamboo_slab'},
 		{type: 'polished_blackstone', material: 'minecraft:polished_blackstone_slab'},
@@ -1139,8 +1120,35 @@ const registerMinecraftRecipes = (event) => {
 		event.recipes.gtceu.assembler(`minecraft:${x.type}_pressure_plate`)
 			.itemInputs('#forge:small_springs', `2x ${x.material}`)
 			.itemOutputs(`minecraft:${x.type}_pressure_plate`)
-			.circuit(0)
+			.circuit(3)
 			.duration(50)
 			.EUt(2)
 	})
+
+	// #endregion
+
+	//#region Greenhouse
+
+	generateGreenHouseRecipe(event, '8x minecraft:bamboo', '#tfc:any_fresh_water', 4000,
+		'64x minecraft:bamboo', 'bamboo', 'minecraft:overworld', 8, 
+		'8x minecraft:bamboo', GTValues.VA[GTValues.LV])
+
+	generateGreenHouseRecipe(event, '4x minecraft:red_mushroom', '#tfc:any_fresh_water', 4000,
+		'24x minecraft:red_mushroom', 'red_mushroom', 'minecraft:the_nether', 8, 
+		'4x minecraft:red_mushroom', GTValues.VA[GTValues.LV])
+
+	generateGreenHouseRecipe(event, '4x minecraft:brown_mushroom', '#tfc:any_fresh_water', 4000,
+		'24x minecraft:brown_mushroom', 'brown_mushroom', 'minecraft:the_nether', 8, 
+		'4x minecraft:brown_mushroom', GTValues.VA[GTValues.LV])
+
+	// #endregion
+
+    // Minecart w/ Furnace
+    event.shapeless('minecraft:furnace_minecart', ['minecraft:water_bucket', 'gtceu:hp_steam_solid_boiler', 'minecraft:minecart']);
+
+    event.recipes.gtceu.assembler('minecraft:furnace_minecart')
+        .itemInputs('minecraft:water_bucket', 'gtceu:hp_steam_solid_boiler', 'minecraft:minecart')
+        .itemOutputs('minecraft:furnace_minecart')
+        .duration(100)
+        .EUt(4)
 }

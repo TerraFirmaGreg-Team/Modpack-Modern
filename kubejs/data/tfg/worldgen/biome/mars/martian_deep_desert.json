@@ -1,6 +1,8 @@
 {
 	"carvers": {
-		"air": []
+		"air": [
+			"tfg:mars_desert_cave"
+		]
 	},
 	"downfall": 0.0,
 	"effects": {
@@ -10,12 +12,6 @@
 			"offset": 2.0,
 			"sound": "minecraft:ambient.cave",
 			"tick_delay": 6000
-		},
-		"particle": {
-			"options": {
-				"type": "minecraft:crimson_spore"
-			},
-			"probability": 0.014
 		},
 		"sky_color": 15117444,
 		"water_color": 4159204,
@@ -27,36 +23,75 @@
 		],
 		[],
 		[
-			"tfg:earth/geode/amethyst",
-			"tfg:earth/geode/barite",
-			"tfg:earth/geode/calcite",
-			"tfg:earth/geode/gypsum",
-			"tfg:earth/geode/opal",
-			"tfg:earth/geode/pyrite",
-			"tfg:earth/geode/quartzite"
+			"tfg:mars/terrain/spice_disc",
+			"tfg:mars/terrain/red_quicksand",
+			"tfg:mars/terrain/powder_snow"
 		],
 		[],
 		[],
 		[],
 		"#tfg:mars_veins",
-		[],
+		"#tfg:mars_underground_decoration",
+		[
+			"tfg:mars/surface/small_skull_and_bones",
+			"tfg:mars/surface/large_skull_and_bones",
+			"tfg:mars/surface/pile_hematitic_sand",
+			"tfg:mars/surface/pile_red_sand",
+			"tfg:mars/surface/pile_mars_sand"
+		],
 		[],
 		[
-
-		],
-		[]
+			"tfg:glow_lichen",
+			"tfg:mars/terrain/mars_poles"
+		]
 	],
 	"has_precipitation": false,
+	"creature_spawn_probability": 0.00003,
 	"spawn_costs": {
-		
+		"endermanoverhaul:cave_enderman": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"species:quake": {
+			"energy_budget": 0.2,
+			"charge": 0.7
+		},
+		"ad_astra:martian_raptor": {
+			"energy_budget": 0.2,
+			"charge": 0.7
+		}
 	},
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
-		"creature": [],
+		"creature": [
+			{
+				"type": "species:stackatick",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
 		"misc": [],
 		"monster": [
-		
+			{
+				"type": "endermanoverhaul:cave_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "ad_astra:martian_raptor",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:quake",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			}
 		],
 		"underground_water_creature": [],
 		"water_ambient": [],

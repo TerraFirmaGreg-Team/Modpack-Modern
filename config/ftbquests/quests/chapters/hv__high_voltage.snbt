@@ -16,8 +16,8 @@
 		{
 			id: "308E11BE764398A1"
 			linked_quest: "7C1FD81C5DCFB74E"
-			x: -7.5d
-			y: -6.5d
+			x: -8.0d
+			y: -7.5d
 		}
 		{
 			id: "33D3C2A9337335D2"
@@ -309,11 +309,19 @@
 			id: "727075AAF9F91FAE"
 			size: 1.0d
 			subtitle: "{quests.high_voltage.rutile_loop_2.subtitle}"
-			tasks: [{
-				id: "6B0E33342374C12E"
-				item: "gtceu:titanium_tetrachloride_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6B0E33342374C12E"
+					item: "gtceu:titanium_tetrachloride_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0C97C06E9C6A0277"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.high_voltage.rutile_loop_2.title}"
 			x: -5.0d
 			y: 3.0d
@@ -323,6 +331,8 @@
 			description: ["{quests.high_voltage.superconductors.desc}"]
 			icon: "gtceu:mercury_barium_calcium_cuprate_double_wire"
 			id: "45F9AAE4ABE32033"
+			optional: true
+			shape: "heart"
 			size: 1.0d
 			tasks: [{
 				id: "2C582DDA7BC36951"
@@ -330,7 +340,7 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.superconductors.title}"
-			x: -7.5d
+			x: -8.0d
 			y: -10.0d
 		}
 		{
@@ -395,7 +405,8 @@
 			description: ["{quests.high_voltage.mv_superconductors.desc}"]
 			icon: "gtceu:magnesium_diboride_double_wire"
 			id: "72F0DFAF5CC6D0FE"
-			shape: "square"
+			optional: true
+			shape: "heart"
 			size: 1.0d
 			tasks: [{
 				id: "4CCBDA5AC16CBB48"
@@ -413,6 +424,7 @@
 			id: "6B1595678ECB7AC8"
 			shape: "octagon"
 			size: 3.0d
+			subtitle: "{quests.high_voltage.circuit_assembler.subtitle}"
 			tasks: [{
 				id: "337D8EF42A7BD3A2"
 				item: "gtceu:hv_circuit_assembler"
@@ -440,22 +452,6 @@
 			title: "{quests.high_voltage.vitrified_pearl.title}"
 			x: 6.0d
 			y: 2.0d
-		}
-		{
-			dependencies: ["6A451F43F3D7A671"]
-			description: ["{quests.high_voltage.microprocessor_mainframe.desc}"]
-			icon: "gtceu:micro_processor_mainframe"
-			id: "14D277A164202FF8"
-			shape: "gear"
-			size: 3.0d
-			tasks: [{
-				id: "71E3128BA0CAC113"
-				item: "gtceu:micro_processor_mainframe"
-				type: "item"
-			}]
-			title: "{quests.high_voltage.microprocessor_mainframe.title}"
-			x: 0.0d
-			y: -10.5d
 		}
 		{
 			dependencies: ["52AD30F04DD5A812"]
@@ -525,11 +521,19 @@
 			id: "42FB276AB16258D9"
 			size: 1.0d
 			subtitle: "{quests.high_voltage.fluorine.subtitle}"
-			tasks: [{
-				id: "4EF4F33BEB714485"
-				item: "gtceu:fluorine_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4EF4F33BEB714485"
+					item: "gtceu:fluorine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7245625D6C687E3A"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.high_voltage.fluorine.title}"
 			x: 1.0d
 			y: 4.5d
@@ -568,14 +572,24 @@
 		{
 			dependencies: ["5BACED5AE350EAB1"]
 			description: ["{quests.high_voltage.nitrobenzene.desc}"]
+			icon: "gtceu:nitrobenzene_bucket"
 			id: "56E7A3A0CC690C8A"
+			optional: true
 			shape: "square"
 			size: 1.0d
-			tasks: [{
-				id: "33CF24B0A19D2F25"
-				item: "gtceu:nitrobenzene_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "33CF24B0A19D2F25"
+					item: "gtceu:nitrobenzene_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "70D29F223E0CC5CB"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.high_voltage.nitrobenzene.title}"
 			x: -1.0d
 			y: 9.5d
@@ -626,28 +640,18 @@
 			icon: "minecraft:tnt"
 			id: "2B7B214EDE0B45A2"
 			size: 1.0d
-			tasks: [
-				{
-					id: "04BF6A36E965C348"
-					item: "minecraft:tnt"
-					type: "item"
+			tasks: [{
+				id: "69AFBED9D1866F49"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(minecraft:tnt)item(gtceu:industrial_tnt)item(gtceu:powderbarrel)item(gtceu:dynamite))"
+					}
 				}
-				{
-					id: "162CDC2567F6D6A8"
-					item: "gtceu:industrial_tnt"
-					type: "item"
-				}
-				{
-					id: "4CFB597542DD0194"
-					item: "gtceu:dynamite"
-					type: "item"
-				}
-				{
-					id: "0BF4703D1DBAA5B7"
-					item: "gtceu:powderbarrel"
-					type: "item"
-				}
-			]
+				title: "{quests.high_voltage.tnt.task}"
+				type: "item"
+			}]
 			title: "{quests.high_voltage.tnt.title}"
 			x: 3.5d
 			y: 3.0d
@@ -668,12 +672,12 @@
 					disable_toast: true
 					id: "3DC62CA60F006A06"
 					item: "ae2:ender_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "20403A639228B809"
 					item: "minecraft:ender_pearl"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -733,11 +737,19 @@
 			id: "5BACED5AE350EAB1"
 			size: 1.0d
 			subtitle: "{quests.high_voltage.nitric_acid.subtitle}"
-			tasks: [{
-				id: "5F8F684990622DE1"
-				item: "gtceu:nitric_acid_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5F8F684990622DE1"
+					item: "gtceu:nitric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "24520333587F2436"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.high_voltage.nitric_acid.title}"
 			x: 0.0d
 			y: 9.5d
@@ -745,15 +757,25 @@
 		{
 			dependencies: ["5BACED5AE350EAB1"]
 			description: ["{quests.high_voltage.cetane_diesel.desc}"]
+			icon: "gtceu:cetane_boosted_diesel_bucket"
 			id: "04F6E968CEEC3D49"
+			optional: true
 			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.high_voltage.cetane_diesel.subtitle}"
-			tasks: [{
-				id: "51D904AA29256F8D"
-				item: "gtceu:cetane_boosted_diesel_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "51D904AA29256F8D"
+					item: "gtceu:cetane_boosted_diesel_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6BFCFA5257BE071F"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.high_voltage.cetane_diesel.title}"
 			x: 1.0d
 			y: 9.5d
@@ -841,11 +863,19 @@
 			icon: "gtceu:ammonia_bucket"
 			id: "4343746E706264E6"
 			size: 1.0d
-			tasks: [{
-				id: "1C3EBA2535471DB6"
-				item: "gtceu:ammonia_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1C3EBA2535471DB6"
+					item: "gtceu:ammonia_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6445F5DC9728583A"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.high_voltage.ammonia.title}"
 			x: -3.0d
 			y: 6.0d
@@ -887,8 +917,8 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.blue_alloy.title}"
-			x: -1.0d
-			y: -8.5d
+			x: 0.0d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -938,7 +968,6 @@
 			id: "7E755297E9685374"
 			subtitle: "{quests.high_voltage.nichrome.subtitle}"
 			tasks: [{
-				count: 128L
 				id: "7B963F86A90057FF"
 				item: "gtceu:nichrome_ingot"
 				type: "item"
@@ -983,6 +1012,8 @@
 				"{@pagebreak}"
 				"{quests.high_voltage.space_alloy.desc.2}"
 			]
+			hide_details_until_startable: false
+			icon: "gtceu:rocket_alloy_t1_ingot"
 			id: "56D337E264A4154F"
 			subtitle: "{quests.high_voltage.space_alloy.subtitle}"
 			tasks: [
@@ -1210,23 +1241,6 @@
 			y: 11.0d
 		}
 		{
-			dependencies: ["14D277A164202FF8"]
-			description: [
-				"{quests.high_voltage.bedrock_miner.desc.1}"
-				"{@pagebreak}"
-				"{quests.high_voltage.bedrock_miner.desc.2}"
-			]
-			id: "2878C147D273F774"
-			subtitle: "{quests.high_voltage.bedrock_miner.subtitle}"
-			tasks: [{
-				id: "55981710612D21D7"
-				item: "gtceu:mv_bedrock_ore_miner"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -10.5d
-		}
-		{
 			description: ["{quests.high_voltage.kaolinite_powder.desc}"]
 			disable_toast: true
 			hide_dependency_lines: true
@@ -1240,6 +1254,305 @@
 			title: "{quests.high_voltage.kaolinite_powder.title}"
 			x: 6.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["3FBDC8552F7D8008"]
+			description: ["{quests.high_voltage.gun.desc}"]
+			id: "74C6DD5F67B1731F"
+			optional: true
+			shape: "heart"
+			size: 1.5d
+			subtitle: "{quests.high_voltage.gun.subtitle}"
+			tasks: [
+				{
+					disable_toast: true
+					id: "00B3B5D0D419F8E9"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(tacz:modern_kinetic_gun)"
+						}
+					}
+					match_nbt: false
+					title: "{quests.high_voltage.gun.task1}"
+					type: "item"
+				}
+				{
+					id: "7485BE99651C8334"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfg:absorption_salvo)item(tfg:resistance_salvo)item(tfg:instant_health_salvo)item(tfg:regeneration_tablet)item(tfg:speed_tablet)item(tfcagedalcohol:bucket/aged_beer)item(tfcagedalcohol:bucket/aged_vodka)item(tfcagedalcohol:bucket/aged_sake)item(tfcagedalcohol:bucket/aged_rum))"
+						}
+					}
+					optional_task: true
+					title: "{quests.high_voltage.gun.task2}"
+					type: "item"
+				}
+				{
+					id: "2B1D15C7E99C9DDC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:food": {
+								creationDate: -2L
+								foodData: {
+									dairy: 0.0f
+									decay: 0.0f
+									food: 0
+									fruit: 0.0f
+									grain: 0.0f
+									meat: 0.0f
+									sat: 0.0f
+									veg: 0.0f
+									water: 0.0f
+								}
+								ingredients: [ ]
+								traits: [ ]
+							}
+						}
+						id: "tfg:food/meal_bag"
+					}
+					match_nbt: false
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.high_voltage.gun.title}"
+			x: 10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["00A2566109144D7F"]
+			description: ["{quests.high_voltage.space_survival.desc}"]
+			icon: "ad_astra:oxygen_distributor"
+			id: "08AAD91CE348A08B"
+			subtitle: "{quests.high_voltage.space_survival.subtitle}"
+			tasks: [{
+				id: "66E3342A47817498"
+				title: "{quests.high_voltage.space_survival.title}"
+				type: "checkmark"
+			}]
+			title: "{quests.high_voltage.space_survival.title}"
+			x: 13.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["00A2566109144D7F"]
+			description: ["{quests.high_voltage.moon_harvester.desc}"]
+			id: "6A21CCAEB1FDF38E"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.high_voltage.moon_harvester.subtitle}"
+			tasks: [{
+				id: "445320F445BA829F"
+				item: "gtceu:moon_dust_harvester"
+				type: "item"
+			}]
+			title: "{quests.high_voltage.moon_harvester.title}"
+			x: 16.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6A21CCAEB1FDF38E"]
+			description: ["{quests.high_voltage.regolith_vapor.desc}"]
+			icon: "gtceu:regolith_vapor_bucket"
+			id: "578ECB10B30A77C7"
+			subtitle: "{quests.high_voltage.regolith_vapor.subtitle}"
+			tasks: [
+				{
+					id: "0FF209271DB58067"
+					item: "gtceu:regolith_vapor_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "32E19F49E3A2D54B"
+					title: "{quests.high_voltage.regolith_vapor.task}"
+					type: "checkmark"
+				}
+			]
+			title: "{quests.high_voltage.regolith_vapor.title}"
+			x: 17.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6A21CCAEB1FDF38E"]
+			description: ["{quests.high_voltage.regolith_dust.desc}"]
+			id: "0527DF6A8567FED9"
+			subtitle: "{quests.high_voltage.regolith_dust.subtitle}"
+			tasks: [
+				{
+					id: "567BAEEB6120F6CE"
+					item: "tfg:certus_regolith_dust"
+					type: "item"
+				}
+				{
+					id: "5507A8B1561AC3C3"
+					item: "tfg:cassiterite_regolith_dust"
+					type: "item"
+				}
+				{
+					id: "13C520F021B2E085"
+					item: "tfg:bright_regolith_dust"
+					type: "item"
+				}
+				{
+					id: "3565544FF49B9F50"
+					item: "tfg:goethe_regolith_dust"
+					type: "item"
+				}
+			]
+			title: "{quests.high_voltage.regolith_dust.title}"
+			x: 17.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0527DF6A8567FED9"
+				"578ECB10B30A77C7"
+			]
+			description: ["{quests.high_voltage.dusty_ores.desc}"]
+			id: "5807400FD1F0998A"
+			subtitle: "{quests.high_voltage.dusty_ores.subtitle}"
+			tasks: [{
+				id: "131B1D5F37FAC1F3"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:dusty_raw_goethite)item(gtceu:dusty_raw_cassiterite)item(gtceu:dusty_raw_certus_quartz)item(gtceu:dusty_raw_gold)item(gtceu:dusty_raw_diamond))"
+					}
+				}
+				title: "{quests.high_voltage.dusty_ores.task}"
+				type: "item"
+			}]
+			title: "{quests.high_voltage.dusty_ores.title}"
+			x: 18.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5807400FD1F0998A"]
+			description: ["{quests.high_voltage.final_dust.desc}"]
+			id: "36FE3DDBCB535639"
+			subtitle: "{quests.high_voltage.final_dust.subtitle}"
+			tasks: [
+				{
+					id: "1ABCC8007A69EF81"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:iron_dust"
+					}
+					type: "item"
+				}
+				{
+					id: "3AB1A3B8E6EB4291"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:copper_dust"
+					}
+					type: "item"
+				}
+				{
+					id: "1D38FECBB23C3E24"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:tin_dust"
+					}
+					type: "item"
+				}
+				{
+					id: "6C9C5498495F330C"
+					item: "ae2:certus_quartz_dust"
+					type: "item"
+				}
+				{
+					id: "0AF375FA38D44C32"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:gold_dust"
+					}
+					type: "item"
+				}
+				{
+					id: "6896A082D722EECB"
+					item: "gtceu:diamond_dust"
+					type: "item"
+				}
+			]
+			title: "{quests.high_voltage.final_dust.title}"
+			x: 19.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["396E85A39FF414CF"]
+			description: ["{quests.high_voltage.wand.desc}"]
+			id: "22FD785F84E9D10D"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.high_voltage.wand.subtitle}"
+			tasks: [{
+				id: "525F329DD5F16E1F"
+				item: {
+					Count: 1
+					id: "constructionwand:infinity_wand"
+					tag: {
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.high_voltage.wand.title}"
+			x: 13.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["396E85A39FF414CF"]
+			description: ["{quests.high_voltage.hypertubes.desc}"]
+			id: "159A0DAEE55DCAC0"
+			optional: true
+			subtitle: "{quests.high_voltage.hypertubes.subtitle}"
+			tasks: [
+				{
+					id: "033B6A5EC2C17485"
+					item: "create_hypertube:hypertube_entrance"
+					type: "item"
+				}
+				{
+					id: "2EBA07A9A9B6D1EB"
+					item: "create_hypertube:hypertube"
+					type: "item"
+				}
+			]
+			title: "{quests.high_voltage.hypertubes.title}"
+			x: 11.5d
+			y: -7.5d
 		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]

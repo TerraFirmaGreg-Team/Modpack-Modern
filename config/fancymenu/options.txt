@@ -14,7 +14,6 @@ B:advanced_customization_mode = 'false';
 
 ##[loading]
 
-B:preload_animations = 'true';
 S:preload_resources = '[cubic_panorama]beneath%!source_end!%[slideshow]new_loading_screen%!source_end!%';
 S:custom_game_intro_skip_text = '';
 B:allow_game_intro_skip = 'true';
@@ -86,3 +85,9 @@ B:show_welcome_screen = 'false';
 ##[keyframe_editor]
 
 B:arrow_keys_move_preview = 'false';
+
+
+##[advanced]
+
+L:placeholder_caching_duration_ms = '30';
+L:requirement_caching_duration_ms = '0';

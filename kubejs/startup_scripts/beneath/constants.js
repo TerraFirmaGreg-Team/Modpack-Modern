@@ -3,6 +3,7 @@
 
 global.BENEATH_DISABLED_ITEMS = [
 	"beneath:cobblerack",
+	"beneath:crackrack_rock",
 	"beneath:lost_page",
 	"beneath:ore/slimed_netherrack",
 	"beneath:raw_slime",
@@ -47,10 +48,6 @@ global.BENEATH_DISABLED_ITEMS = [
 	"beneath:wood/windmill/warped",
 	"beneath:wood/boat/warped",
 	
-	"beneath:wood/leaves/crimson",
-	"beneath:wood/fallen_leaves/crimson",
 	"beneath:wood/sapling/crimson",
-	"beneath:wood/leaves/warped",
-	"beneath:wood/fallen_leaves/warped",
 	"beneath:wood/sapling/warped"
 ];

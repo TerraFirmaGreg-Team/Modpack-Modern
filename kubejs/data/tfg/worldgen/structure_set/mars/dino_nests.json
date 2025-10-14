@@ -1,0 +1,17 @@
+{
+	"structures": [
+		{
+			"structure": "tfg:mars/dino_nests",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "tfc:climate",
+		"salt": 25635345,
+		"spacing": 10,
+		"separation": 7,
+		"climate": {
+			"min_temperature": -105
+		}
+	}
+}

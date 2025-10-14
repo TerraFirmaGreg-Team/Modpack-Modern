@@ -1,0 +1,28 @@
+{
+	"feature": "tfg:mars/underground/ice_cave",
+	"placement": [
+		{
+			"type": "tfc:climate",
+			"max_temperature": -105
+		},
+		{
+			"type": "minecraft:count",
+			"count": 15
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "uniform",
+				"min_inclusive": {
+					"absolute": -16
+				},
+				"max_inclusive": {
+					"absolute": 95
+				}
+			}
+		}
+	]
+}

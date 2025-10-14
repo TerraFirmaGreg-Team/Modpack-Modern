@@ -319,9 +319,10 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			.EUt(GTValues.VA[GTValues.ULV])
 
 		event.custom({
-			type: 'vintageimprovements:turning',
+			type: 'vintageimprovements:polishing',
 			ingredients: [{ item: log }],
 			results: [{ item: stripped_log }],
+			speed_limits: 0,
 			processingTime: 50
 		}).id(`tfg:vi/lathe/stripping_${name}_log`)
 	}
@@ -451,7 +452,7 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			.itemInputs(`2x ${slab}`, '#forge:springs')
 			.itemOutputs(`2x ${pressure_plate}`)
 			.duration(50)
-			.circuit(0)
+			.circuit(3)
 			.EUt(GTValues.VA[GTValues.ULV])
 	}
 
@@ -463,4 +464,69 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			.EUt(GTValues.VA[GTValues.ULV])
 	}
 }
+//#endregion
+
+//#region Sterilization
+/**
+ * Creates recipes for sterilizing an item using chemicals or the autoclave.
+ *
+ * @param {*} event
+ * @param {string} input - The input item to be sterilized.
+ * @param {string} output - The output item after sterilization.
+ * @param {number} multiplier - Multiplies the fluid amounts and recipe duration. Default multiplier = 1.
+ * @param {string} [cleanroom] - For if a cleanroom is required. Can be null.
+ * 
+ * @throws {TypeError} Throws an error if input, output, or multiplier is invalid.
+ */
+function sterilizeItem(event, input, output, multiplier, cleanroom) {
+    // Collect errors.
+    const errors = [];
+
+	if (input === undefined || (Array.isArray(input) && input.length !== 1) || output === undefined || (Array.isArray(output) && output.length !== 1)) {
+		errors.push("input or output is undefined or not equal to one item");
+	};
+    if (multiplier <= 0) {
+        errors.push(`invalid multiplier (${multiplier})`);
+    };
+
+    // If there are any errors, log them all and throw once.
+    if (errors.length > 0) {
+        const message = "sterilizeItem errors:\n - " + errors.join("\n - ");
+        throw new TypeError(message);
+    };
+
+	// Set default multiplier.
+	let recipe_multiplier = 1;
+	if (multiplier !== undefined) recipe_multiplier = multiplier;
+
+	// Create recipes.
+	let ethanol_recipe = event.recipes.gtceu.chemical_bath(`tfg:ethanol_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+		.itemInputs(input)
+		.inputFluids(Fluid.of('gtceu:ethanol', 500*recipe_multiplier))
+		.itemOutputs(output)
+		.duration(10*20*recipe_multiplier)
+		.EUt(GTValues.VA[GTValues.MV]);
+
+	let hydrogen_peroxide_recipe = event.recipes.gtceu.chemical_bath(`tfg:hydrogen_peroxide_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+		.itemInputs(input)
+		.inputFluids(Fluid.of('gtceu:hydrogen_peroxide', 200*recipe_multiplier))
+		.itemOutputs(output)
+		.duration(10*20*recipe_multiplier)
+		.EUt(GTValues.VA[GTValues.MV]);
+
+	let autoclave_recipe = event.recipes.gtceu.autoclave(`tfg:autoclave_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+		.itemInputs(input)
+		.perTick(true)
+		.inputFluids(Fluid.of('gtceu:steam', 100*recipe_multiplier))
+		.perTick(false)
+		.itemOutputs(output)
+		.duration(240*20*recipe_multiplier)
+		.EUt(GTValues.VA[GTValues.MV]);
+
+	if (cleanroom) {
+		ethanol_recipe.cleanroom(cleanroom);
+		hydrogen_peroxide_recipe.cleanroom(cleanroom);
+		autoclave_recipe.cleanroom(cleanroom);
+	};
+};
 //#endregion

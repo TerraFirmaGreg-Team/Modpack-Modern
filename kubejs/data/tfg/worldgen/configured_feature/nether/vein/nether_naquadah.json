@@ -22,21 +22,13 @@
           {
             "block": "gtceu:raw_naquadah_block",
             "weight": 2
-          },
-          {
-            "block": "gtceu:pyroxenite_plutonium_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_plutonium_block",
-            "weight": 1
           }
         ]
       },
       {
         "replace": [
-          "minecraft:basalt",
-          "tfc:rock/raw/basalt"
+          "tfc:rock/raw/basalt",
+          "minecraft:basalt"
         ],
         "with": [
           {
@@ -46,14 +38,6 @@
           {
             "block": "gtceu:raw_naquadah_block",
             "weight": 2
-          },
-          {
-            "block": "gtceu:basalt_plutonium_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_plutonium_block",
-            "weight": 1
           }
         ]
       }
@@ -67,10 +51,6 @@
         {
           "block": "gtceu:naquadah_indicator",
           "weight": 75
-        },
-        {
-          "block": "gtceu:plutonium_indicator",
-          "weight": 25
         }
       ]
     }

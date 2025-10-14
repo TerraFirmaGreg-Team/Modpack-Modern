@@ -196,6 +196,13 @@ function registerTFCMachineRecipes(event) {
 		.duration(100)
 		.EUt(2)
 
+	event.recipes.gtceu.alloy_smelter(`tfg:tfc/lamp_glass_from_dust`)
+		.itemInputs('#forge:dusts/glass')
+		.notConsumable('#tfg:unfinished_lamps')
+		.itemOutputs('tfc:lamp_glass')
+		.duration(100)
+		.EUt(2)
+
 	// Empty Jar
 	event.recipes.gtceu.alloy_smelter('tfc:jar_alloying')
 		.itemInputs('#tfc:glass_batches_tier_2')
@@ -406,17 +413,27 @@ function registerTFCMachineRecipes(event) {
 			.EUt(2)
 
 		event.custom({
-			type: 'vintageimprovements:turning',
+			type: 'vintageimprovements:polishing',
 			ingredients: [{ item: `tfc:wood/log/${wood}` }],
 			results: [{ item: `tfc:wood/stripped_log/${wood}` }],
+			speed_limits: 0,
 			processingTime: 50
 		}).id(`tfg:vi/lathe/stripping_${wood}_log`)
 
 		event.custom({
-			type: 'vintageimprovements:turning',
+			type: 'vintageimprovements:polishing',
 			ingredients: [{ item: `tfc:wood/wood/${wood}` }],
 			results: [{ item: `tfc:wood/stripped_wood/${wood}` }],
+			speed_limits: 0,
 			processingTime: 50
 		}).id(`tfg:vi/lathe/stripping_${wood}_wood`)
 	})
+
+	
+	event.recipes.gtceu.extruder('tfg:wrought_iron_grill_electric_only')
+		.itemInputs('2x #forge:plates/wrought_iron')
+		.notConsumable('tfg:large_casing_extruder_mold')
+		.itemOutputs('tfc:wrought_iron_grill')
+		.duration(60)
+		.EUt(8)
 }

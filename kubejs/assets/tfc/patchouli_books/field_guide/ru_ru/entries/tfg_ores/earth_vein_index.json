@@ -14,22 +14,22 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_amethyst)Аметист и гранат$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_apatite)Апатит и Пирохлор$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_monazite)Бастнезит и Монацит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_olivine)Бентонит и Оливин$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_bismuthinite)Висмут (Обычный)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuthinite)Висмут (Поверхностный)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Вульфенит & Молибденит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Гарниерит и Кобальтит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_hematite)Гематит, Гётит, Рубин$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_limonite)Гётит и Малахит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)Гранатовый и Касситеритовый песок$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)Графит и Алмаз$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_gold)Золото (Глубокое)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_amethyst)Аметист и гранат$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_apatite)Апатит и Пирохлор$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_monazite)Бастнезит и Монацит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_olivine)Бентонит и Оливин$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_bismuthinite)Висмут (Обычный)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuthinite)Висмут (Поверхностный)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Вульфенит & Молибденит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Гарниерит и Кобальтит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_hematite)Гематит, Гётит, Рубин$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_limonite)Гётит и Малахит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gypsum)Гипс и Кальцит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)Гранатовый и Касситеритовый песок$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)Графит и Алмаз$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Золото, Лимонит и Гематит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_beryllium)Изумруд и Бериллий$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_cassiterite)Касситерит (Обычный)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cassiterite)Касситерит (Поверхностный)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Кварцы$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lapis)Лазурит, Лазурит 2 и Содалит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_limonite)Лимонит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_magnetite)Магнетит и Ванадий$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_manganese)Марганец и Тантал$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Медь и Халькопирит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_basaltic_sands)Минеральные пески$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)Мыльный камень, Тальк и Трона$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_oilsands)Нефтеносный песок$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)Опал и гранат$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_gold)Золото (Глубокое)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Золото, Лимонит и Гематит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_beryllium)Изумруд и Бериллий$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_cassiterite)Касситерит (Обычный)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cassiterite)Касситерит (Поверхностный)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Кварцы$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lapis)Лазурит, Лазурит 2 и Содалит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_limonite)Лимонит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_magnetite)Магнетит и Ванадий$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_manganese)Марганец и Тантал$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Медь и Халькопирит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_basaltic_sands)Минеральные пески$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)Мыльный камень, Тальк и Трона$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_oilsands)Нефтеносный песок$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)Редстоун, Киноварь и Рубин$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Сапфир и Альмандин$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)Селитра и Электротин$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)Сера и Пирит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_silver)Серебро, Галена и Свинец$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Соли и Бура$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Сподумен и Лепидолит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Сфалерит & Пирит$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Сфалерит и Сера$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)Тетраэдрит (обычный)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Тетраэдрит (Поверхностный)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Топаз и Халькозин$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Уголь$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)Уранинит и Уранит$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)Опал и гранат$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)Редстоун, Киноварь и Рубин$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Сапфир и Альмандин$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)Селитра и Электротин$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)Сера и Пирит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_silver)Серебро, Галена и Свинец$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Соли и Бура$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Сподумен и Лепидолит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Сфалерит & Пирит$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Сфалерит и Сера$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)Тетраэдрит (обычный)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Тетраэдрит (Поверхностный)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Топаз и Халькозин$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Уголь$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_copper)Халькопирит и Реальгар$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Хромит и Магнетит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Ционит, Слюда и Боксит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Шеелит и Вольфрамат$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sheldonite)Шелдонит и Борнит$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)Уранинит и Уранит$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_copper)Халькопирит и Реальгар$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Хромит и Магнетит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Ционит, Слюда и Боксит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Шеелит и Вольфрамат$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sheldonite)Шелдонит и Борнит$()$()",
       "type": "patchouli:text"
     },
     {
@@ -379,7 +379,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 80%$(br)$(thing)Плавится в$(): Висмут$(br)$(thing)Формула$(): Bi",
+      "text": "$(thing)Процент руды$(): 72%$(br)$(thing)Плавится в$(): Висмут$(br)$(thing)Формула$(): Bi",
       "type": "patchouli:multiblock"
     },
     {
@@ -399,7 +399,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 11%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): Pb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): Pb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородная Серебро",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 9%$(br)$(thing)Плавится в$(): Серебро$(br)$(thing)Формула$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -419,8 +439,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 9%$(br)$(thing)Хромит$(): Сера$(br)$(thing)Формула$(): S",
+      "text": "$(thing)Процент руды$(): 8%$(br)$(thing)Хромит$(): Сера$(br)$(thing)Формула$(): S",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -446,7 +471,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 90%$(br)$(thing)Плавится в$(): Висмут$(br)$(thing)Формула$(): Bi",
+      "text": "$(thing)Процент руды$(): 85%$(br)$(thing)Плавится в$(): Висмут$(br)$(thing)Формула$(): Bi",
       "type": "patchouli:multiblock"
     },
     {
@@ -471,6 +496,26 @@
     },
     {
       "Type": "patchouli:multiblock",
+      "name": "Самородная Серебро",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Серебро$(br)$(thing)Формула$(): Ag",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
       "name": "Сера",
       "multiblock": {
         "mapping": {
@@ -488,6 +533,11 @@
       "enable_visualize": false,
       "text": "$(thing)Процент руды$(): 3%$(br)$(thing)Хромит$(): Сера$(br)$(thing)Формула$(): S",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -947,6 +997,98 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 180$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): -32 — 60$(br)$(thing)Размер$(): 40$(br)$(thing)Высота$(): 9$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
+      "title": "Гипс и Кальцит",
+      "type": "patchouli:text",
+      "anchor": "normal_gypsum"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гипс",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gypsum"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Используется для$(): Алебастр (можно покрасить) и его кирпичи$(br)$(thing)Формула$(): CaS(H₂O)₂O₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кальцит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/calcite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Хромит$(): Кальций$(br)$(thing)Формула$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Бура",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/borax"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Хромит$(): Натрий, Бор$(br)$(thing)Формула$(): Na₂B₄(H₂O)₁₀O₇",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Смектическая глина",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/fullers_earth"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Хромит$(): Магний$(br)$(thing)Формула$(): MgSi₄H(H₂O)₄O₁₁",
       "type": "patchouli:multiblock"
     },
     {
@@ -1537,7 +1679,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 170$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): -60 — 10$(br)$(thing)Размер$(): 50$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
+      "text": "$(thing)Редкость$(): 170$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): -60 — 10$(br)$(thing)Размер$(): 40$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
       "title": "Лазурит, Лазурит 2 и Содалит",
       "type": "patchouli:text",
       "anchor": "normal_lapis"
@@ -2700,7 +2842,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 175$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): 30 — 70$(br)$(thing)Размер$(): 40$(br)$(thing)Высота$(): 4$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Аргиллит, Известняк, Сланец",
+      "text": "$(thing)Редкость$(): 175$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): 30 — 70$(br)$(thing)Размер$(): 40$(br)$(thing)Высота$(): 4$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Аргиллит, Известняк, Сланец",
       "title": "Соли и Бура",
       "type": "patchouli:text",
       "anchor": "normal_salt"
@@ -2792,7 +2934,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 180$(br)$(thing)Плотность$(): 0.375$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): 20 — 60$(br)$(thing)Размер$(): 35$(br)$(thing)Высота$(): 6$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Кварцит, Мрамор, Филлит, Шиферный сланец",
+      "text": "$(thing)Редкость$(): 180$(br)$(thing)Плотность$(): 0.375$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): 20 — 60$(br)$(thing)Размер$(): 35$(br)$(thing)Высота$(): 6$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Кварцит, Мрамор, Филлит, Шиферный сланец",
       "title": "Сподумен и Лепидолит",
       "type": "patchouli:text",
       "anchor": "normal_spodumene"
@@ -3271,7 +3413,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 220$(br)$(thing)Плотность$(): 0.45$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): -64 — -20$(br)$(thing)Размер$(): 24$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Кварцит, Мрамор, Филлит, Шиферный сланец",
+      "text": "$(thing)Редкость$(): 240$(br)$(thing)Плотность$(): 0.45$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): -64 — -20$(br)$(thing)Размер$(): 19$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Кварцит, Мрамор, Филлит, Шиферный сланец",
       "title": "Уранинит и Уранит",
       "type": "patchouli:text",
       "anchor": "deep_pitchblende"
@@ -3293,7 +3435,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 50%$(br)$(thing)Хромит$(): Уран, Торий, Свинец$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
+      "text": "$(thing)Процент руды$(): 62%$(br)$(thing)Хромит$(): Уран, Торий, Свинец$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -3313,13 +3455,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 50%$(br)$(thing)Хромит$(): Уран$(br)$(thing)Формула$(): UO₂$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
+      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Хромит$(): Уран$(br)$(thing)Формула$(): UO₂$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Вульфенит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/wulfenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 12%$(br)$(thing)Хромит$(): Свинец, Молибден$(br)$(thing)Формула$(): PbMoO₄",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
@@ -3522,7 +3679,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 190$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 210$(br)$(thing)Размер$(): 36$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Кварцит, Мрамор, Филлит, Шиферный сланец",
+      "text": "$(thing)Редкость$(): 190$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 210$(br)$(thing)Размер$(): 36$(br)$(thing)Индикатор Max Depth$(): 40$(br2)$(thing)Виды камней$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Кварцит, Мрамор, Филлит, Шиферный сланец",
       "title": "Ционит, Слюда и Боксит",
       "type": "patchouli:text",
       "anchor": "normal_mica"

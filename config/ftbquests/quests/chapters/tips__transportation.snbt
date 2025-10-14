@@ -13,7 +13,7 @@
 			rotation: 0.0d
 			width: 3.0d
 			x: 18.5d
-			y: -2.5d
+			y: -4.0d
 		}
 		{
 			alpha: 150
@@ -21,8 +21,8 @@
 			image: "minecraft:textures/particle/big_smoke_2.png"
 			rotation: 0.0d
 			width: 7.0d
-			x: 17.5d
-			y: -1.5d
+			x: 15.0d
+			y: -2.5d
 		}
 		{
 			alpha: 150
@@ -393,6 +393,15 @@
 			x: 8.5d
 			y: 0.5d
 		}
+		{
+			alpha: 150
+			height: 3.5d
+			image: "minecraft:textures/particle/big_smoke_3.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 19.5d
+			y: 0.0d
+		}
 	]
 	order_index: 2
 	quest_links: [{
@@ -407,7 +416,7 @@
 			description: ["{quests.tfg_tips.create_sloop.desc}"]
 			id: "78358ED2C6F6FCFD"
 			shape: "gear"
-			size: 4.0d
+			size: 3.0d
 			subtitle: "{quests.tfg_tips.create_sloop.subtitle}"
 			tasks: [{
 				icon: "firmaciv:sloop_icon_only"
@@ -427,7 +436,7 @@
 			description: ["{quests.tfg_tips.create_rowboat.desc}"]
 			icon: "firmaciv:rowboat_icon_only"
 			id: "4F9A15016C9F51A1"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "{quests.tfg_tips.create_rowboat.subtitle}"
 			tasks: [
 				{
@@ -455,7 +464,7 @@
 			description: ["{quests.tfg_tips.create_kayak.desc}"]
 			icon: "firmaciv:kayak"
 			id: "7B824CC8BD6E4E30"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "{quests.tfg_tips.create_kayak.subtitle}"
 			tasks: [
 				{
@@ -478,7 +487,7 @@
 			description: ["{quests.tfg_tips.create_canoe.desc}"]
 			icon: "firmaciv:canoe_icon_only"
 			id: "22DA27A8E2D11106"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "{quests.tfg_tips.create_canoe.subtitle}"
 			tasks: [
 				{
@@ -513,10 +522,10 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:saws)"
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/saws)"
 						}
 					}
-					title: "{quests.tasktype.item.any} #tfc:saws"
+					title: "{quests.tasktype.item.any} Saws"
 					type: "item"
 				}
 				{
@@ -528,7 +537,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:axes)"
 						}
 					}
-					title: "{quests.tasktype.item.any} #tfc:axes"
+					title: "{quests.tasktype.item.any} Axes"
 					type: "item"
 				}
 				{
@@ -829,7 +838,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.warfare.title}"
-			x: -2.5d
+			x: -4.0d
 			y: 0.0d
 		}
 		{
@@ -838,7 +847,6 @@
 			icon: "createdeco:decal_fire"
 			id: "252EB7FA56D1F88E"
 			shape: "diamond"
-			size: 2.0d
 			subtitle: "{quests.tfg_tips.beneathxfirmaciv.subtitle}"
 			tasks: [{
 				id: "6C19AB80033D5E24"
@@ -968,7 +976,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.supply_cart.title}"
-			x: 6.0d
+			x: 4.5d
 			y: -1.5d
 		}
 		{
@@ -999,7 +1007,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.equines.title}"
-			x: 5.0d
+			x: 6.5d
 			y: -1.5d
 		}
 		{
@@ -1020,7 +1028,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.animal_cart.title}"
-			x: 7.0d
+			x: 5.5d
 			y: -1.5d
 		}
 		{
@@ -1041,7 +1049,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.plow.title}"
-			x: 8.0d
+			x: 8.5d
 			y: -1.5d
 		}
 		{
@@ -1268,7 +1276,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.economy_plane.title}"
-			x: 17.5d
+			x: 18.0d
 			y: 2.0d
 		}
 		{
@@ -1282,7 +1290,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.biplane.title}"
-			x: 17.5d
+			x: 18.0d
 			y: 0.0d
 		}
 		{
@@ -1394,6 +1402,8 @@
 			dependencies: ["6E4754288899732B"]
 			description: ["{quests.tfg_tips.scarlet_biplane.desc}"]
 			id: "7B5AD6AD5E99449C"
+			shape: "gear"
+			size: 2.0d
 			subtitle: "{quests.tfg_tips.scarlet_biplane.subtitle}"
 			tasks: [{
 				id: "3E274FFB71007307"
@@ -1408,6 +1418,8 @@
 			dependencies: ["6E4754288899732B"]
 			description: ["{quests.tfg_tips.aluminium_hopper.desc}"]
 			id: "06D07F7991FAB2CB"
+			shape: "gear"
+			size: 2.0d
 			subtitle: "{quests.tfg_tips.aluminium_hopper.subtitle}"
 			tasks: [{
 				id: "62A13F1E58F54CDD"
@@ -1415,10 +1427,64 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.aluminium_hopper.title}"
-			x: 18.0d
+			x: 19.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["05528D09F7EE6E33"]
+			description: ["{quests.tfg_tips.horseshoes.desc}"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "sns:metal/horseshoes/steel"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "40566F6665A095C6"
+			subtitle: "{quests.tfg_tips.horseshoes.subtitle}"
+			tasks: [{
+				id: "75C43AA489BAE404"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(sns:metal/horseshoes/steel)item(sns:metal/horseshoes/black_steel)item(sns:metal/horseshoes/blue_steel)item(sns:metal/horseshoes/red_steel))"
+					}
+				}
+				title: "{quests.tfg_tips.horseshoes.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.horseshoes.title}"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			description: ["{quests.tfg_tips.hiking_boots.desc}"]
+			id: "598CA763D195C84E"
+			subtitle: "{quests.tfg_tips.hiking_boots.subtitle}"
+			tasks: [{
+				id: "0045E073FBF1F8CA"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(sns:hiking_boots)item(sns:steel_toe_hiking_boots)item(sns:black_steel_toe_hiking_boots)item(sns:blue_steel_toe_hiking_boots)item(sns:red_steel_toe_hiking_boots))"
+					}
+				}
+				title: "{quests.tfg_tips.hiking_boots.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.hiking_boots.title}"
+			x: 8.5d
+			y: 0.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.transportation_tips.subtitle}"]
-	title: "Tips - Transportation"
+	title: "{quests.tfg_tips.transportation_tips.title}"
 }

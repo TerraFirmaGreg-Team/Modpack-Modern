@@ -19,12 +19,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_garnierite)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_goethite)Goethita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)Grafite e Diamante$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet_tin)Granada e Areia Cassiterita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_hematite)Hematita e Limonita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Lápis-lazúri, Lazurita e Sodalita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Naquadah e Plutônio$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Nether Quartzo$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gold)Ouro e Hematita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Pedra-sabão, Talco e Trona$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Redstone, Cinábrio e Rubi$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Safira e Almandina$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_garnierite)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gypsum)Gipsita e Calcita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_goethite)Goethita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)Grafite e Diamante$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet_tin)Granada e Areia Cassiterita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_hematite)Hematita e Limonita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Lápis-lazúri, Lazurita e Sodalita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Naquadah e Plutônio$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Nether Quartzo$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gold)Ouro e Hematita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Pedra-sabão, Talco e Trona$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Redstone, Cinábrio e Rubi$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Salitre e Eletrotina$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_scheelite)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sylvite)Silvita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_tetrahedrite)Tetraedrita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_topaz)Topázio e Calcosita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_pitchblende)Uraninita e Pechblenda$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_molybdenum)Wulfenita e Molibdenita$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Safira e Almandina$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Salitre e Eletrotina$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_scheelite)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sylvite)Silvita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_tetrahedrite)Tetraedrita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_topaz)Topázio e Calcosita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_pitchblende)Uraninita e Pechblenda$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_molybdenum)Wulfenita e Molibdenita$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1209,6 +1209,98 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 180$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 40$(br)$(thing)Altura$(): 9$(br2)$(thing)Tipos de Pedra$(): Migmatito, Piroxenito, Travertino",
+      "title": "Gipsita e Calcita",
+      "type": "patchouli:text",
+      "anchor": "nether_gypsum"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Gipsita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gypsum"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Usado para$(): Tijolos de Alabastro (tingíveis)$(br)$(thing)Fórmula$(): CaS(H₂O)₂O₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Calcita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/calcite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 30%$(br)$(thing)Fonte de$(): Cálcio$(br)$(thing)Fórmula$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Bórax",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/borax"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Fonte de$(): Sódio, Boro$(br)$(thing)Fórmula$(): Na₂B₄(H₂O)₁₀O₇",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Terra de Fuller",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/fullers_earth"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Fonte de$(): Magnésio$(br)$(thing)Fórmula$(): MgSi₄H(H₂O)₄O₁₁",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)Raridade$(): 240$(br)$(thing)Densidade$(): 0.45$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 37$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
       "title": "Goethita",
       "type": "patchouli:text",
@@ -1773,33 +1865,8 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 75%$(br)$(thing)Fonte de$(): Naquadah, Tritânio$(br)$(thing)Fórmula$(): Nq",
+      "text": "$(thing)Porcentagem$(): 100%$(br)$(thing)Fonte de$(): Naquadah, Tritânio$(br)$(thing)Fórmula$(): Nq",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Plutônio",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/plutonium"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Fonte de$(): Plutônio$(br)$(thing)Fórmula$(): Pu²³⁹$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Carcinogênico (Qualquer Contato)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -2640,7 +2707,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 220$(br)$(thing)Densidade$(): 0.55$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 29$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
+      "text": "$(thing)Raridade$(): 250$(br)$(thing)Densidade$(): 0.55$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 24$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
       "title": "Uraninita e Pechblenda",
       "type": "patchouli:text",
       "anchor": "nether_pitchblende"
@@ -2662,7 +2729,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 50%$(br)$(thing)Fonte de$(): Urânio, Tório, Chumbo$(br)$(thing)Fórmula$(): (UO₂)₃ThPb$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Carcinogênico (Qualquer Contato)$(/t)$()",
+      "text": "$(thing)Porcentagem$(): 62%$(br)$(thing)Fonte de$(): Urânio, Tório, Chumbo$(br)$(thing)Fórmula$(): (UO₂)₃ThPb$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Carcinogênico (Qualquer Contato)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -2682,13 +2749,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 50%$(br)$(thing)Fonte de$(): Urânio$(br)$(thing)Fórmula$(): UO₂$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Carcinogênico (Qualquer Contato)$(/t)$()",
+      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Fonte de$(): Urânio$(br)$(thing)Fórmula$(): UO₂$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Carcinogênico (Qualquer Contato)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Wulfenita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/wulfenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 12%$(br)$(thing)Fonte de$(): Chumbo, Molibdênio$(br)$(thing)Fórmula$(): PbMoO₄",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",

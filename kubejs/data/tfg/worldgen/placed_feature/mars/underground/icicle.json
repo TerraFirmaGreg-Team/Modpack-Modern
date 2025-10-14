@@ -1,0 +1,28 @@
+{
+	"feature": "tfg:mars/underground/icicle",
+	"placement": [
+		{
+			"type": "tfc:climate",
+			"max_temperature": -60
+		},
+		{
+			"type": "minecraft:count",
+			"count": 10
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "biased_to_bottom",
+				"min_inclusive": {
+					"absolute": -20
+				},
+				"max_inclusive": {
+					"absolute": 100
+				}
+			}
+		}
+	]
+}

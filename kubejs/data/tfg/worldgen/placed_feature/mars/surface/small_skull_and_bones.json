@@ -1,0 +1,31 @@
+{
+	"feature": {
+		"type": "tfc:if_then",
+		"config": {
+			"if": {
+				"feature": "tfg:mars/surface/small_skull",
+				"placement": []
+			},
+			"then": {
+				"feature": "tfg:mars/surface/bone_patch",
+				"placement": []
+			}
+		}
+	},
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 80
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR"
+		}
+	]
+}

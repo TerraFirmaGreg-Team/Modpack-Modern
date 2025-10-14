@@ -1,0 +1,99 @@
+{
+	"type": "minecraft:tree",
+	"config": {
+		"decorators": [],
+		"dirt_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "ad_astra:aeronos_stem"
+			}
+		},
+		"foliage_placer": {
+			"type": "minecraft:blob_foliage_placer",
+			"offset": 4,
+			"height": 6,
+			"radius": 4
+		},
+		"foliage_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "ad_astra:aeronos_cap"
+			}
+		},
+		"force_dirt": false,
+		"ignore_vines": true,
+		"minimum_size": {
+			"type": "minecraft:two_layers_feature_size",
+			"limit": 1,
+			"lower_size": 0,
+			"upper_size": 0
+		},
+		"trunk_placer": {
+			"type": "minecraft:cherry_trunk_placer",
+			"base_height": 8,
+			"height_rand_a": 2,
+			"height_rand_b": 8,
+			"branch_count": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": 1,
+					"max_inclusive": 3
+				}
+			},
+			"branch_horizontal_length": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": 4,
+					"max_inclusive": 8
+				}
+			},
+			"branch_start_offset_from_top": {
+				"min_inclusive": -8,
+				"max_inclusive": -3
+			},
+			"branch_end_offset_from_top": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": 1,
+					"max_inclusive": 3
+				}
+			}
+		},
+		"trunk_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "ad_astra:aeronos_stem"
+			}
+		},
+		"root_placer": {
+			"type": "minecraft:mangrove_root_placer",
+			"trunk_offset_y": 1,
+			"mangrove_root_placement": {
+				"max_root_width": 1,
+				"max_root_length": 2,
+				"random_skew_chance": 0.3,
+				"can_grow_through": "#minecraft:mangrove_logs_can_grow_through",
+				"muddy_roots_in": [
+					"tfg:grass/mars_dirt",
+					"tfg:grass/amber_mycelium",
+					"tfg:grass/rusticus_mycelium",
+					"tfg:grass/sangnum_mycelium",
+					"ad_astra:mars_sand",
+					"ad_astra:venus_sand"
+				],
+				"muddy_roots_provider": {
+					"type": "minecraft:simple_state_provider",
+					"state": {
+						"Name": "ad_astra:aeronos_stem"
+					}
+				}
+			},
+			"root_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "ad_astra:aeronos_stem"
+				}
+			}
+		}
+	}
+}

@@ -2,7 +2,7 @@
 factoryGaugeCascadeRequest = true
 #Capacity of the jar in millibuckets
 #Range: 1 ~ 999999999
-jarCapacity = 1000
+jarCapacity = 8000
 #Whether jar packager (bottler) should pick output tanks over combined. Useful if you want to keep basin inputs intact
 jarPackagerPrefersOutputs = true
 

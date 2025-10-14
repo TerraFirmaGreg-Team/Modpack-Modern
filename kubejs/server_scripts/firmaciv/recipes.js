@@ -104,6 +104,8 @@ const registerFirmaCivRecipes = (event) => {
 	//#endregion
 
 	// #region More rope
+	event.replaceInput({ output: 'firmaciv:rope_coil'}, 'tfc:jute_fiber', '#tfg:burlap_fiber')
+
 	event.shaped('firmaciv:rope_coil', [
 		'A ',
 		'AB',

@@ -1,0 +1,38 @@
+{
+	"type": "tfc:soil_disc",
+	"config": {
+		"min_radius": 4,
+		"max_radius": 7,
+		"height": 2,
+		"states": [
+			{
+				"replace": "tfg:grass/mars_dirt",
+				"with": "ad_astra:venus_sand"
+			},
+			{
+				"replace": "tfg:grass/amber_mycelium",
+				"with": "ad_astra:venus_sand"
+			},
+			{
+				"replace": "tfg:grass/rusticus_mycelium",
+				"with": "ad_astra:venus_sand"
+			},
+			{
+				"replace": "tfg:grass/sangnum_mycelium",
+				"with": "ad_astra:venus_sand"
+			},
+			{
+				"replace": "gtceu:red_granite",
+				"with": "ad_astra:venus_sand"
+			},
+			{
+				"replace": "tfc:rock/raw/basalt",
+				"with": "ad_astra:venus_sand"
+			},
+			{
+				"replace": "tfc:rock/raw/gabbro",
+				"with": "ad_astra:venus_sand"
+			}
+		]
+	}
+}

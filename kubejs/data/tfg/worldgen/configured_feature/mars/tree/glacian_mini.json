@@ -1,0 +1,14 @@
+{
+	"type": "tfc:random_tree",
+	"config": {
+		"structures": [
+			"tfg:trees/mossy_glowshroom_mini_1"
+		],
+		"placement": {
+			"width": 3,
+			"height": 10,
+			"allow_submerged": false,
+			"allow_deeply_submerged": false
+		}
+	}
+}

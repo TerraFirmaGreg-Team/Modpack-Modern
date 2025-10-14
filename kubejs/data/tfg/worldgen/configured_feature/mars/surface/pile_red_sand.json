@@ -1,0 +1,55 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "minecraft:simple_block",
+				"config": {
+					"to_place": {
+						"type": "minecraft:randomized_int_state_provider",
+						"property": "layers",
+						"values": {
+							"type": "minecraft:biased_to_bottom",
+							"value": {
+								"min_inclusive": 1,
+								"max_inclusive": 2
+							}
+						},
+						"source": {
+							"type": "minecraft:simple_state_provider",
+							"state": {
+								"Name": "tfg:pile/red_sand"
+							}
+						}
+					}
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:heightmap",
+					"heightmap": "OCEAN_FLOOR"
+				},
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:all_of",
+						"predicates": [
+							{
+								"type": "minecraft:matching_blocks",
+								"blocks": "minecraft:air"
+							},
+							{
+								"type": "minecraft:matching_block_tag",
+								"offset": [ 0, -1, 0 ],
+								"tag": "forge:sand"
+							}
+						]
+					}
+				}
+			]
+		},
+		"tries": 8,
+		"xz_spread": 16,
+		"y_spread": 2
+	}
+}

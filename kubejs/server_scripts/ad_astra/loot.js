@@ -12,6 +12,10 @@ function registerAdAstraLoots(event) {
 		.addWeightedLoot([5, 8], ['tfg:food/raw_crawlermari'])
 
 	event.addEntityLootModifier('ad_astra:star_crawler')
-		.randomChanceWithEnchantment('minecraft:looting', [0, 0.3, 0.6, 1])
-		.addWeightedLoot([2, 4], ['tfc:food/raw_crawlermari'])
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([2, 4], ['tfg:food/raw_crawlermari'])
+
+	
+	event.addEntityLootModifier('ad_astra:martian_raptor')
+		.addWeightedLoot([2, 4], ['minecraft:bone'])
 }

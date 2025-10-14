@@ -1,0 +1,80 @@
+{
+	"name": "tfg:illagers/norse_village_living_buildings",
+	"fallback": "tfg:illagers/norse_village_living_paths",
+	"elements": [
+		{
+			"weight": 100,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:norse/baseline/norse_longhouse_base",
+					"processors": "tfg:illagers/norse_structures",
+					"projection": "rigid"
+				},
+				"limit": 2
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:norse/baseline/norse_smithy_base",
+					"processors": "tfg:illagers/norse_structures",
+					"projection": "rigid"
+				},
+				"limit": 1
+			}
+		},
+		{
+			"weight": 40,
+			"element": {
+				"element_type": "lithostitched:delegating",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:norse/baseline/norse_burial_base",
+					"processors": "tfg:illagers/norse_structures",
+					"projection": "terrain_matching"
+				},
+				"max_count": 2,
+				"override_terrain_adaptation": "bury"
+			}
+		},
+		{
+			"weight": 80,
+			"element": {
+				"location": "tfg:norse/baseline/norse_farmhousebig_base",
+				"processors": "tfg:illagers/norse_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:norse/baseline/norse_farmhouse_base",
+				"processors": "tfg:illagers/norse_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:norse/baseline/norse_mosshouse_base",
+				"processors": "tfg:illagers/norse_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"projection": "rigid",
+				"element_type": "minecraft:empty_pool_element"
+			}
+		}
+	]
+}

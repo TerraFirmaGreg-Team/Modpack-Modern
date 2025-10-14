@@ -1,0 +1,206 @@
+{
+  "variants": {
+    "facing=north,has_egg_type=0,nest_part=0": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_empty"
+    },
+	"facing=north,has_egg_type=0,nest_part=1": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_empty",
+	  "y": 90
+    },
+	"facing=north,has_egg_type=0,nest_part=2": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_empty",
+	  "y": 270
+    },
+	"facing=north,has_egg_type=0,nest_part=3": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_empty",
+	  "y": 180
+    },
+	
+	
+	"facing=south,has_egg_type=0,nest_part=0": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_empty",
+	  "y": 180
+    },
+	"facing=south,has_egg_type=0,nest_part=1": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_empty",
+	  "y": 270
+    },
+	"facing=south,has_egg_type=0,nest_part=2": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_empty",
+	  "y": 90
+    },
+	"facing=south,has_egg_type=0,nest_part=3": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_empty"
+    },
+	
+	
+	"facing=east,has_egg_type=0,nest_part=0": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_empty",
+	  "y": 90
+    },
+	"facing=east,has_egg_type=0,nest_part=1": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_empty",
+	  "y": 180
+    },
+	"facing=east,has_egg_type=0,nest_part=2": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_empty"
+    },
+	"facing=east,has_egg_type=0,nest_part=3": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_empty",
+	  "y": 270
+    },
+	
+	
+	"facing=west,has_egg_type=0,nest_part=0": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_empty",
+	  "y": 270
+    },
+	"facing=west,has_egg_type=0,nest_part=1": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_empty"
+	  
+    },
+	"facing=west,has_egg_type=0,nest_part=2": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_empty",
+	  "y": 180
+    },
+	"facing=west,has_egg_type=0,nest_part=3": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_empty",
+	  "y": 90
+	  
+    },
+	
+	
+	"facing=north,has_egg_type=1,nest_part=0": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_sniffer_0"
+    },
+	"facing=north,has_egg_type=1,nest_part=1": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_sniffer_1",
+	  "y": 90
+    },
+	"facing=north,has_egg_type=1,nest_part=2": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_sniffer_2",
+	  "y": 270
+    },
+	"facing=north,has_egg_type=1,nest_part=3": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_sniffer_3",
+	  "y": 180
+    },
+	
+	"facing=south,has_egg_type=1,nest_part=0": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_sniffer_0",
+	  "y": 180
+    },
+	"facing=south,has_egg_type=1,nest_part=1": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_sniffer_1",
+	  "y": 270
+    },
+	"facing=south,has_egg_type=1,nest_part=2": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_sniffer_2",
+	  "y": 90
+    },
+	"facing=south,has_egg_type=1,nest_part=3": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_sniffer_3"
+    },
+	
+	"facing=east,has_egg_type=1,nest_part=0": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_sniffer_0",
+	  "y": 90
+    },
+	"facing=east,has_egg_type=1,nest_part=1": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_sniffer_1",
+	  "y": 180
+    },
+	"facing=east,has_egg_type=1,nest_part=2": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_sniffer_2"
+    },
+	"facing=east,has_egg_type=1,nest_part=3": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_sniffer_3",
+	  "y": 270
+    },
+	
+	"facing=west,has_egg_type=1,nest_part=0": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_sniffer_0",
+	  "y": 270
+    },
+	"facing=west,has_egg_type=1,nest_part=1": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_sniffer_1"
+	  
+    },
+	"facing=west,has_egg_type=1,nest_part=2": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_sniffer_2",
+	  "y": 180
+    },
+	"facing=west,has_egg_type=1,nest_part=3": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_sniffer_3",
+	  "y": 90
+	  
+    },
+	
+	
+	"facing=north,has_egg_type=2,nest_part=0": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_wraptor_0"
+    },
+	"facing=north,has_egg_type=2,nest_part=1": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_wraptor_1",
+	  "y": 90
+    },
+	"facing=north,has_egg_type=2,nest_part=2": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_wraptor_2",
+	  "y": 270
+    },
+	"facing=north,has_egg_type=2,nest_part=3": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_wraptor_3",
+	  "y": 180
+    },
+	
+	"facing=south,has_egg_type=2,nest_part=0": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_wraptor_0",
+	  "y": 180
+    },
+	"facing=south,has_egg_type=2,nest_part=1": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_wraptor_1",
+	  "y": 270
+    },
+	"facing=south,has_egg_type=2,nest_part=2": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_wraptor_2",
+	  "y": 90
+    },
+	"facing=south,has_egg_type=2,nest_part=3": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_wraptor_3"
+    },
+	
+	"facing=east,has_egg_type=2,nest_part=0": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_wraptor_0",
+	  "y": 90
+    },
+	"facing=east,has_egg_type=2,nest_part=1": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_wraptor_1",
+	  "y": 180
+    },
+	"facing=east,has_egg_type=2,nest_part=2": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_wraptor_2"
+    },
+	"facing=east,has_egg_type=2,nest_part=3": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_wraptor_3",
+	  "y": 270
+    },
+	
+	"facing=west,has_egg_type=2,nest_part=0": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_wraptor_0",
+	  "y": 270
+    },
+	"facing=west,has_egg_type=2,nest_part=1": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_wraptor_1"
+	  
+    },
+	"facing=west,has_egg_type=2,nest_part=2": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_wraptor_2",
+	  "y": 180
+    },
+	"facing=west,has_egg_type=2,nest_part=3": {
+      "model": "tfg:block/large_nest_box/large_nest_box_warped_wraptor_3",
+	  "y": 90
+	  
+    }
+  }
+}

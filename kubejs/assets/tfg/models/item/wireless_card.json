@@ -1,0 +1,8 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "tfg:item/wireless_card/wireless_card_base",
+        "layer1": "tfg:item/wireless_card/wireless_card_layer1",
+        "layer2": "tfg:item/wireless_card/wireless_card_layer2"
+    }
+}

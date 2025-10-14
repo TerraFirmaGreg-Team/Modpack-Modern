@@ -1,0 +1,45 @@
+{
+	"type": "minecraft:ore",
+	"config": {
+		"discard_chance_on_air_exposure": 0.0,
+		"size": 40,
+		"targets": [
+			{
+				"state": {
+					"Name": "create:ochrum"
+				},
+				"target": {
+					"predicate_type": "minecraft:tag_match",
+					"tag": "forge:stone"
+				}
+			},
+			{
+				"state": {
+					"Name": "create:ochrum"
+				},
+				"target": {
+					"predicate_type": "minecraft:tag_match",
+					"tag": "forge:gravel"
+				}
+			},
+			{
+				"state": {
+					"Name": "create:ochrum"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "ad_astra:venus_sand"
+				}
+			},
+			{
+				"state": {
+					"Name": "create:ochrum"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "ad_astra:venus_sandstone"
+				}
+			}
+		]
+	}
+}

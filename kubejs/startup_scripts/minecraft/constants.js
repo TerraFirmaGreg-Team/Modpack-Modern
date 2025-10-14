@@ -16,31 +16,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:infested_chiseled_stone_bricks', 
     'minecraft:infested_deepslate',
 
-    // Каменные блоки
-    'minecraft:stone_stairs', 
-    'minecraft:stone_slab', 
-    'minecraft:stone_pressure_plate', 
-    'minecraft:stone_button', 
-    'minecraft:smooth_stone', 
-    'minecraft:smooth_stone_slab', 
-    'minecraft:cobblestone', 
-    'minecraft:cobblestone_stairs', 
-    'minecraft:cobblestone_slab', 
-    'minecraft:cobblestone_wall', 
-    'minecraft:stone_bricks', 
-    'minecraft:stone_brick_stairs', 
-    'minecraft:stone_brick_slab', 
-    'minecraft:stone_brick_wall', 
-    'minecraft:cracked_stone_bricks', 
-    'minecraft:chiseled_stone_bricks', 
-    'minecraft:mossy_stone_bricks', 
-    'minecraft:mossy_stone_brick_stairs', 
-    'minecraft:mossy_stone_brick_slab', 
-    'minecraft:mossy_stone_brick_wall', 
-    'minecraft:mossy_cobblestone', 
-    'minecraft:mossy_cobblestone_stairs', 
-    'minecraft:mossy_cobblestone_slab', 
-    'minecraft:mossy_cobblestone_wall',
+    // Stone
+    'minecraft:stone_pressure_plate',
+    'minecraft:stone_button',
 
     // Гранитовые блоки
     'minecraft:granite', 
@@ -84,11 +62,12 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:prismarine_shard',
 
     // Эндстоун
-    //'minecraft:end_stone', 
+    'minecraft:end_stone', 
     'minecraft:end_stone_bricks', 
     'minecraft:end_stone_brick_stairs',
     'minecraft:end_stone_brick_slab', 
     'minecraft:end_stone_brick_wall',
+    'minecraft:end_crystal',
 
     // Dripstone
     'minecraft:pointed_dripstone',
@@ -627,7 +606,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:azalea_leaves', 
     'minecraft:flowering_azalea_leaves', 
     'minecraft:dirt_path', 
-    //'minecraft:dragon_egg', 
+    'minecraft:dragon_egg', 
     'minecraft:end_portal_frame', 
     'minecraft:mushroom_stew', 
     'minecraft:structure_void',
@@ -638,8 +617,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:anvil', 
     'minecraft:chipped_anvil', 
     'minecraft:damaged_anvil', 
-    'minecraft:furnace', 
-    'minecraft:furnace_minecart',
+    'minecraft:furnace',
     'minecraft:amethyst_cluster',
     'minecraft:rabbit_hide',
     'minecraft:raw_iron',
@@ -652,7 +630,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:ender_eye',
 
     // Кримзон незер дерево
-    // TODO: Разблокировать после добавления ада
     'minecraft:crimson_stem', 
     'minecraft:crimson_hyphae', 
     'minecraft:stripped_crimson_stem', 
@@ -668,9 +645,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crimson_button',
     'minecraft:crimson_sign',
     'minecraft:crimson_hanging_sign',
+    'minecraft:crimson_fungus',
 
     // Варпед незер дерево
-    // TODO: Разблокировать после добавления ада
     'minecraft:warped_stem', 
     'minecraft:warped_hyphae', 
     'minecraft:stripped_warped_stem', 
@@ -686,20 +663,16 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:warped_button',
     'minecraft:warped_sign',
     'minecraft:warped_hanging_sign',
+    'minecraft:warped_fungus',
 
     // Куча незер блоков
-    //'minecraft:netherrack', 
-    //'minecraft:nether_bricks', 
-    'minecraft:cracked_nether_bricks',
-    'minecraft:nether_brick_stairs', 
-    'minecraft:nether_brick_slab', 
-    'minecraft:nether_brick_wall', 
-    'minecraft:nether_brick_fence', 
-    'minecraft:chiseled_nether_bricks', 
+    'minecraft:netherrack',
     'minecraft:red_nether_bricks', 
     'minecraft:red_nether_brick_stairs', 
     'minecraft:red_nether_brick_slab', 
     'minecraft:red_nether_brick_wall',
+    'minecraft:blaze_rod',
+    'minecraft:blaze_powder',
 
     // И еще куча незер блоков
     // TODO: Разблокировать после добавления ада
@@ -710,16 +683,10 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crying_obsidian',
     'minecraft:piglin_head', 
     'minecraft:zombie_head', 
-    'minecraft:skeleton_skull', 
-    'minecraft:nether_sprouts', 
-    'minecraft:warped_roots', 
     'minecraft:dragon_head', 
     'minecraft:dragon_breath', 
     'minecraft:creeper_head', 
     'minecraft:wither_skeleton_skull', 
-    'minecraft:weeping_vines', 
-    'minecraft:crimson_roots', 
-    //'minecraft:nether_brick', 
     'minecraft:nether_wart', 
     'minecraft:respawn_anchor',
     'minecraft:ghast_tear',
@@ -742,6 +709,9 @@ global.MINECRAFT_HIDED_ITEMS = [
     'minecraft:oxidized_cut_copper', 
     'minecraft:oxidized_cut_copper_stairs', 
     'minecraft:oxidized_cut_copper_slab',*/
+
+    'minecraft:crimson_fungus',
+    'minecraft:warped_fungus',
 
     "minecraft:raw_iron_block",
     "minecraft:raw_copper_block",

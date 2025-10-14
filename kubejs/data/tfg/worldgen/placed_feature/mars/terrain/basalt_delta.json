@@ -1,0 +1,28 @@
+{
+	"feature": "tfg:mars/terrain/basalt_delta",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 25
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR"
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_blocks",
+				"offset": [ 0, -1, 0 ],
+				"blocks": [
+					"tfc:rock/raw/basalt",
+					"tfc:rock/hardened/basalt",
+					"tfc:rock/gravel/basalt"
+				]
+			}
+		}
+	]
+}

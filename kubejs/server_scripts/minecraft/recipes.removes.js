@@ -867,7 +867,7 @@ function removeMinecraftRecipes(event) {
 
 	//#endregion
 
-	event.remove({ id: 'ae2:entropy/cool/grass_block_dirt' }) // TODO: Сделать с тфк землей
+	event.remove({ id: 'ae2:entropy/cool/grass_block_dirt' })
 
 	//#region Выход: Высохшая земля
 
@@ -2060,7 +2060,7 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'minecraft:raw_gold_block' })
 	event.remove({ id: 'minecraft:raw_gold' })
 
-	//#endregion
+	//#endregionw
 
 	//#region Исправление дерьма с железом (Однажды разраб GTCEu вспомнит, лучше бы забыл)
 
@@ -2081,4 +2081,6 @@ function removeMinecraftRecipes(event) {
 
 	event.remove({ id: 'minecraft:flower_banner_pattern' })
 	event.remove({ id: 'gtceu:assembler/lodestone' })
+
+	//#endregion
 }

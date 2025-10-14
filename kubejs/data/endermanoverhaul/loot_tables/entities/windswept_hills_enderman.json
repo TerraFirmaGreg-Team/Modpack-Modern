@@ -6,7 +6,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:ender_pearl"
+					"name": "endermanoverhaul:corrupted_pearl"
 				},
 				{
 					"type": "minecraft:item",
@@ -36,6 +36,5 @@
 			],
 			"rolls": 2.0
 		}
-	],
-	"random_sequence": "endermanoverhaul:entities/windswept_hills_enderman"
+	]
 }

@@ -24,6 +24,9 @@ const registerTFCHeats = (event) => {
 	event.itemHeat('tfc:groundcover/seaweed', 1.0, null, null)
 	event.itemHeat('tfc:plant/leafy_kelp', 1.0, null, null)
 	event.itemHeat('tfc:plant/winged_kelp', 1.0, null, null)
+	
+	// Baked Potato
+	event.itemHeat('tfc:food/baked_potato', 1.0, null, null)
 }
 
 
@@ -70,6 +73,7 @@ const registerTFCFertilizers = (event) => {
 
 const registerTFCKnappingTypes = (event) => {
 	event.knappingType('minecraft:flint', 1, 1, 'tfc:item.knapping.stone', true, false, true, 'minecraft:flint', 'tfg:flint')
+	event.knappingType('tfc:straw', 4, 4, 'tfc:item.knapping.leather', false, false, false, 'tfc:straw', 'tfg:straw')
 }
 
 

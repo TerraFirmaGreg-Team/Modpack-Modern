@@ -1,0 +1,23 @@
+{
+	"feature": "tfg:mars/terrain/clay_disc",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 35
+		},
+		{
+			"type": "tfc:climate",
+			"min_temperature": -100
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR_WG"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

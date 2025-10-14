@@ -20,8 +20,6 @@ const registerFirmaLifeItemTags = (event) => {
 
     // Удаление тегов у руд
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
-
-    
 }
 
 const registerFirmaLifeBlockTags = (event) => {

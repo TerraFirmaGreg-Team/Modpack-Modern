@@ -28,6 +28,8 @@ function registerFacadeWhitelistTags(event) {
 		'#simplylight:any_lamp_off',
 		'#minecraft:planks',
 		'#minecraft:logs',
+		'#forge:cobblestone',
+		'#railways:palettes/cycle_groups/base',
 
 		'#tfg:ad_astra_iron_blocks',
 		'#tfg:ad_astra_steel_blocks',
@@ -35,6 +37,7 @@ function registerFacadeWhitelistTags(event) {
 		'#tfg:ad_astra_ostrum_blocks',
 		'#tfg:ad_astra_calorite_blocks',
 		'#tfg:ad_astra_etrium_blocks',
+		'#tfg:titanium_concrete',
 	    
 		//rnr shingles
 		'rnr:ceramic_roof',
@@ -219,11 +222,12 @@ function registerFacadeWhitelistTags(event) {
 		event.add('tfg:whitelisted/facades', `gtceu:${  facade_material  }_windmill_b`)
 	});
 	
-	//gtceu misc colored blocks
+	//gtceu misc colored blocks + locometal
 	global.MINECRAFT_DYE_NAMES.forEach(facade_material => {
 		event.add('tfg:whitelisted/facades', `gtceu:${  facade_material  }_metal_sheet`)
 		event.add('tfg:whitelisted/facades', `gtceu:${  facade_material  }_large_metal_sheet`)
 		event.add('tfg:whitelisted/facades', `gtceu:${  facade_material  }_studs`)
+		event.add('tfg:whitelisted/facades', `#railways:palettes/cycle_groups/${  facade_material  }`)
 	});
 	
 	//create copper
@@ -264,6 +268,11 @@ function registerFacadeWhitelistTags(event) {
 		event.add('tfg:whitelisted/facades', `createdeco:cracked_${  facade_material}`)
 		event.add('tfg:whitelisted/facades', `createdeco:mossy_${  facade_material}`)
 	});
+
+	//createdeco catwalks
+	global.CREATE_DECO_CATWALK_TYPES.forEach(facade_material => {
+		event.add('tfg:whitelisted/facades', `createdeco:${  facade_material  }_catwalk`)
+	})
 	
 	//everycomp windows
 	global.TFC_WOOD_TYPES.forEach(facade_material => {

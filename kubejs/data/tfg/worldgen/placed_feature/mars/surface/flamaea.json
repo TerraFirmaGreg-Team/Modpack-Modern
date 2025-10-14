@@ -3,17 +3,17 @@
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 2
+			"chance": 3
 		},
 		{
 			"type": "minecraft:in_square"
 		},
 		{
-			"type": "minecraft:biome"
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING"
 		},
 		{
-			"type": "minecraft:heightmap",
-			"heightmap": "WORLD_SURFACE"
+			"type": "minecraft:biome"
 		}
 	]
 }

@@ -22,6 +22,8 @@ ServerEvents.tags('item', event => {
 	registerCreateConnectedItemTags(event)
 	registerCreateDecoItemTags(event)
 	registerCreateFactoryLogisticsItemTags(event)
+	registerDeaFissionItemTags(event)
+	registerDomumOrnamentumItemTags(event)
 	registerDiggerHelmetItemTags(event)
 	registerEndermanOverhaulItemTags(event)
 	registerEveryCompatItemTags(event)
@@ -43,6 +45,8 @@ ServerEvents.tags('item', event => {
 	registerRailWaysItemTags(event)
 	registerRnrItemTags(event)
 	registerSophisticatedBackpacksItemTags(event)
+	registerSoulboundItemTags(event)
+	registerSNSItemTags(event)
 	registerSpeciesItemTags(event)
 	registerTACZItemTags(event)
 	registerTFCAmbientalItemTags(event)
@@ -51,6 +55,7 @@ ServerEvents.tags('item', event => {
 	registerTFGItemTags(event)
     registerTFCLunchboxItemTags(event)
 	registerVintageImprovementsItemTags(event)
+	registerWABItemTags(event)
 })
 
 /**
@@ -85,6 +90,7 @@ ServerEvents.tags('block', event => {
 	registerTFCBlockTags(event)
 	registerTFGBlockTags(event)
 	registerVintageImprovementsBlockTags(event)
+	registerWABBlockTags(event)
 })
 
 /**
@@ -103,6 +109,10 @@ ServerEvents.tags('fluid', event => {
 	registerVintageImprovementsFluidTags(event)
 })
 
+ServerEvents.tags('worldgen/configured_feature', event => {
+	registerTFGConfiguredFeatures(event)
+})
+
 /**
  * Событие регистрации тегов структур.
  */
@@ -116,16 +126,15 @@ ServerEvents.tags('worldgen/placed_feature', event => {
 })
 
 ServerEvents.tags('worldgen/biome', event => {
+	registerAdAstraBiomeTags(event)
+	registerCreatePickyWheelsBiomeTags(event)
 	registerTFCBiomeTags(event)
 	registerTFGBiomeTags(event)
 })
 
-ServerEvents.tags('worldgen/biome', event => {
-	registerAdAstraBiomeTags(event)
-})
-
 ServerEvents.tags('entity_type', event => {
 	registerAdAstraEntityTypeTags(event)
+	registerWABEntityTypeTags(event)
 })
 
 /**
@@ -156,6 +165,8 @@ TFCEvents.data(event => {
 	registerTFCDataForTFCLunchbox(event)
 	registerTFCDataForTFG(event)
 	registerTFCDataForWaterFlasks(event)
+	registerWABData(event)
+	registerSpeciesData(event)
 })
 
 /**
@@ -170,6 +181,7 @@ LootJS.modifiers((event) => {
 	registerSpeciesLoots(event)
 	registerTFCLoots(event)
 	registerTFGLoots(event)
+	registerWansAncientBeastsLoots(event)
 });
 
 /**
@@ -178,10 +190,6 @@ LootJS.modifiers((event) => {
  */
 GTCEuServerEvents.oreVeins(event => {
 	event.removeAll()
-})
-
-GTCEuServerEvents.bedrockOreVeins(event => {
-	registerGTCEUBedrockOreVeins(event)
 })
 
 GTCEuServerEvents.fluidVeins(event => {
@@ -234,6 +242,7 @@ ServerEvents.recipes(event => {
 	registerHandGliderRecipes(event)
 	registerHotOrNotRecipes(event)
 	registerImmersiveAircraftRecipes(event)
+	registerMacawsForTFCRecipes(event)
 	registerMeasurementsRecipes(event)
 	registerMegaCellsRecipes(event)
 	registerMERequesterRecipes(event)
@@ -241,11 +250,13 @@ ServerEvents.recipes(event => {
 	registerModernMarkingRecipes(event)
 	registerMoreRedRecipes(event)
 	registerPrimitiveCreaturesRecipes(event)
-	registerProgrammedCircuitCardRecipes(event)
 	registerRailWaysRecipes(event)
 	registerRnrRecipes(event)
+	registerSandwormRecipes(event)
 	registerSophisticatedBackpacksRecipes(event)
+	registerSoulboundRecipes(event)
 	registerSimplylightRecipes(event)
+	registerSNSRecipes(event)
 	registerSpeciesRecipes(event)
 	registerTACZRecipes(event)
 	registerTFCRecipes(event)
@@ -259,6 +270,7 @@ ServerEvents.recipes(event => {
 	registerTreeTapRecipes(event)
 	registerVintageImprovementsRecipes(event)
 	registerWaterFlasksRecipes(event)
+	registerWABRecipes(event)
 })
 
 TaCZServerEvents.gunIndexLoad((event) => {
@@ -280,5 +292,3 @@ TaCZServerEvents.gunDataLoad((event) => {
 TaCZServerEvents.attachmentDataLoad((event) => {
 	attachmentDataLogic(event)
 })
-
-

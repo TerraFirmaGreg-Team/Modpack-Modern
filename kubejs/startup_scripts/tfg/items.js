@@ -7,14 +7,13 @@
  */
 const registerTFGItems = (event) => {
 
-	registerTFGDeprecatedItems(event)
 	registerTFGFoodItems(event)
-	registerTFGNuclearItems(event)
 
 	// #region Electronics
 	event.create('tfg:unfinished_electron_tube', 'create:sequenced_assembly')
 	event.create('tfg:unfinished_vacuum_tube', 'create:sequenced_assembly')
 	event.create('tfg:unfinished_basic_electronic_circuit', 'create:sequenced_assembly')
+	event.create('tfg:unfinished_good_electronic_circuit', 'create:sequenced_assembly')
 	event.create('tfg:unfinished_inscriber_accumulation_press')
 	event.create('tfg:vitrified_pearl')
 	event.create('tfg:cryo_fluix_pearl')
@@ -29,6 +28,7 @@ const registerTFGItems = (event) => {
 	event.create('tfg:marker/mars_orbit').tag('c:hidden_from_recipe_viewers')
 	event.create('tfg:marker/venus_orbit').tag('c:hidden_from_recipe_viewers')
 	event.create('tfg:marker/mercury_orbit').tag('c:hidden_from_recipe_viewers')
+	event.create('tfg:marker/glacio_orbit').tag('c:hidden_from_recipe_viewers')
 
 	global.AD_ASTRA_WOOD.forEach(wood => {
 		event.create(`tfg:wood/lumber/${wood.name}`)
@@ -46,22 +46,22 @@ const registerTFGItems = (event) => {
 
 	event.create('tfg:soaked_unrefined_paper')
 		.translationKey('item.tfg.soaked_unrefined_paper')
-	
+
 	event.create('tfg:terra_firma_greg')
 		.translationKey('item.tfg.terra_firma_greg')
 		.tag('c:hidden_from_recipe_viewers')
-	
+
 	//#region chalk creation
 	event.create('tfg:unfired_chalk')
 		.translationKey('item.tfg.unfired_chalk')
 
 	Color.DYE.forEach((dyeName, dye) => {
 		event.create(`tfg:wet_${dyeName}_chalk`)
-		.translationKey(`item.tfg.wet_${dyeName}_chalk`)
-		.textureJson({
-			layer0: 'tfg:item/unfired_chalk'
-		})
-		.color(0, dye.getHexJS());
+			.translationKey(`item.tfg.wet_${dyeName}_chalk`)
+			.textureJson({
+				layer0: 'tfg:item/unfired_chalk'
+			})
+			.color(0, dye.getHexJS());
 	});
 	//#endregion
 
@@ -74,19 +74,44 @@ const registerTFGItems = (event) => {
 
 	// #region Stone bricks and dusts
 	event.create('tfg:brick/deepslate')
+		.tag(`tfc:metamorphic_items`)
 		.translationKey('item.tfg.brick.deepslate')
+
+	event.create('tfg:brick/dripstone')
+		.tag(`tfc:sedimentary_items`)
+		.translationKey('item.tfg.brick.dripstone')	
+
 	event.create('tfg:brick/moon_stone')
+		.tag(`tfc:igneous_intrusive_items`)
 		.translationKey('item.tfg.brick.moon_stone')
+
+	event.create('tfg:brick/moon_deepslate')
+		.tag(`tfc:igneous_intrusive_items`)
+		.translationKey('item.tfg.moon_deepslate')
+
 	event.create('tfg:brick/mars_stone')
+		.tag(`tfc:sedimentary_items`)
 		.translationKey('item.tfg.brick.mars_stone')
+
 	event.create('tfg:brick/venus_stone')
+		.tag(`tfc:igneous_extrusive_items`)
 		.translationKey('item.tfg.brick.venus_stone')
+
 	event.create('tfg:brick/mercury_stone')
+		.tag(`tfc:igneous_intrusive_items`)
 		.translationKey('item.tfg.brick.mercury_stone')
+
 	event.create('tfg:brick/glacio_stone')
+		.tag(`tfc:igneous_extrusive_items`)	
 		.translationKey('item.tfg.brick.glacio_stone')
+
 	event.create('tfg:brick/permafrost')
 		.translationKey('item.tfg.brick.permafrost')
+
+	event.create('tfg:brick/red_granite')
+		.tag(`tfc:igneous_intrusive_items`)
+		.translationKey('item.tfg.red_granite')
+
 	// #endregion
 
 	// #region Primitive rubber gloves
@@ -138,7 +163,7 @@ const registerTFGItems = (event) => {
 
 	event.create(`tfg:antipoison_tablet`)
 		.translationKey(`item.tfg.antipoison_tablet`)
-		.tooltip(`§9Cures All Harmful Effects`)   
+		.tooltip(`§9Cures All Harmful Effects`)
 
 	//salvos
 
@@ -176,6 +201,21 @@ const registerTFGItems = (event) => {
 	event.create('tfg:foil_pack')
 	event.create('tfg:clean_foil_pack')
 	event.create('tfg:flint_club_head')
+	event.create('tfg:uv_led')
+	event.create('tfg:smd_uv_led')
+
+	event.create('tfg:twigs/strophar')
+		.tag('tfc:twigs')
+		.texture('tfg:item/wood/twig/strophar')
+	event.create('tfg:twigs/aeronos')
+		.tag('tfc:twigs')
+		.texture('tfg:item/wood/twig/aeronos')
+	event.create('tfg:twigs/glacian')
+		.tag('tfc:twigs')
+		.texture('tfg:item/wood/twig/glacian')
+	event.create('tfg:twigs/alphacene')
+		.tag('tfc:twigs')
+		.texture('tfg:item/wood/twig/alphacene')
 	//#endregion
 
 	//#region Cloth & String
@@ -214,6 +254,11 @@ const registerTFGItems = (event) => {
 		.translationKey('item.tfg.aluminium_harvest_basket')
 		.parentModel('tfg:item/aluminium_harvest_basket')
 		.unstackable()
+
+	event.create('tfg:stainless_steel_needle')
+		.translationKey('item.tfg.stainless_steel_needle')
+		.unstackable()
+		.maxDamage(9999)
 
 	//Fishing Nets
 	event.create('tfg:fishing_net/wood')
@@ -275,10 +320,10 @@ const registerTFGItems = (event) => {
 
 	event.create('tfg:airship_balloon')
 		.translationKey('item.tfg.airship_balloon')
-		
+
 	event.create('tfg:lv_aircraft_engine')
 		.translationKey('item.tfg.lv_aircraft_engine')
-	
+
 	event.create('tfg:hv_aircraft_engine')
 		.translationKey('item.tfg.hv_aircraft_engine')
 
@@ -314,14 +359,14 @@ const registerTFGItems = (event) => {
 
 	event.create('tfg:aluminium_hull_reinforcement')
 		.translationKey('item.tfg.aluminium_hull_reinforcement')
-		
+
 	event.create('tfg:stainless_steel_hull_reinforcement')
 		.translationKey('item.tfg.stainless_steel_hull_reinforcement')
 
 	event.create('tfg:titanium_hull_reinforcement')
 		.translationKey('item.tfg.titanium_hull_reinforcement')
 	//#endregion
-	
+
 	//Tacz Helper Region
 	event.create('tfg:flintlock_mechanism')
 		.translationKey('item.tfg.flintlock_mechanism')
@@ -339,7 +384,7 @@ const registerTFGItems = (event) => {
 	event.create('tfg:nitrocellulose')
 		.translationKey('tfg:nitrocellulose')
 	//endregion
-	
+
 	//Tier2 Insulation
 	event.create('tfg:aes_wool')
 		.translationKey('tfg:aes_wool')
@@ -350,25 +395,24 @@ const registerTFGItems = (event) => {
 	event.create('tfg:aes_insulation_roll')
 		.translationKey('tfg:aes_insulation_roll')
 	//endregion
-	
+
 	//Tier 2 Rocket Parts
 	event.create('tfg:rocket_fin_t2')
 	event.create('tfg:rocket_cone_t2')
 	//endregion
-	
+
 	//Tier 3 Insulation
 	event.create('tfg:aes_polyurethane')
 	event.create('tfg:mli_shielding')
 	event.create('tfg:silica_aerogel')
 	//endregion
-	
+
 	//Tier 3 Rocket Parts
 	event.create('tfg:rocket_fin_t3')
 	event.create('tfg:rocket_cone_t3')
 	event.create('tfg:elite_power_thruster')
-	
+
 	event.create('tfg:better_space_suit_fabric')
-	event.create('tfg:glacian_wool')
 	//endregion
 
 	//#region Universal compost items
@@ -389,4 +433,103 @@ const registerTFGItems = (event) => {
 	event.create('tfg:photo_cell_t1')
 		.translationKey("item.tfg.basic.photovoltaic.cell")
 		.texture('tfg:item/photo_cell_t1')
+	//#endregion
+
+	//#region Mars Animals
+	event.create('tfg:wraptor_sugar')
+		.tag('tfg:sugars')
+		.tag('tfg:haste_ingredients')
+		.tag('tfc:sweetener')
+	//#endregion
+
+	//#region Flax Stuff
+	event.create('tfg:flax_waste')
+		.tag('tfc:scrapable')
+	event.create('tfg:flax_tow')
+		.tag('tfg:burlap_fiber')
+		.tag('tfc:compost_browns')
+	event.create('tfg:flax_line')
+		.tag('tfc:compost_browns_low')
+	event.create('tfg:linen_thread')
+		.tag('forge:string')
+	event.create('tfg:linen_cloth')
+		.tag('forge:cloth')
+		.tag('tfc:sewing_light_cloth')
+
+	//#region Lab Equipment
+
+	global.LAB_EQUIPMENT_CONTAINERS.forEach((item) => {
+		event.create(`tfg:${item.type}`, 'tfc:glass_bottle')
+			.fluidTagAccept('tfc:usable_in_blue_steel_bucket')
+			.capacity(item.capacity)
+			.translationKey(`item.tfg.lab_equipment.${item.type}`)
+			.tag('tfg:lab_equipment_containers')
+			.tag('tfc:fluid_item_ingredient_empty_containers')
+			.tag('tfc:glass_bottles')
+	})
+
+	event.create('tfg:lab_equipment')
+		.translationKey('item.tfg.lab_equipment.lab_equipment')
+		.tooltip(Text.translatable('tfg.tooltip.lab_equipment.set'))
+
+	event.create('tfg:dirty_lab_equipment')
+		.translationKey('item.tfg.lab_equipment.dirty_lab_equipment')
+		.tooltip(Text.translatable('tfg.tooltip.lab_equipment.set_dirty'))
+	//#endregion
+
+	// Empty Fission Rod
+
+	event.create('tfg:empty_rod')
+		.translationKey('item.tfg.empty_road')
+		.texture('tfg:item/fuel_rod_empty')
+		.tag('tfg:fission_rods')
+
+	event.create('tfg:refrigerant_pellet')
+		.translationKey('item.tfg.refrigerant_pellet')
+		.texture('tfg:item/refrigerant_pellet')
+		.tag('tfg:fission_coolant')
+
+	// Moderator Line
+
+	event.create('tfg:graphite_compound')
+		.translationKey('item.tfg.graphite_compound')
+		.texture('tfg:item/graphite_line/graphite_compound')
+
+	event.create('tfg:raw_graphite_briquette')
+		.translationKey('item.tfg.raw_graphite_briquette')
+		.texture('tfg:item/graphite_line/raw_graphite_briquette')
+
+	event.create('tfg:faulty_graphite_briquette')
+		.translationKey('item.tfg.faulty_graphite_briquette')
+		.texture('tfg:item/graphite_line/faulty_graphite_briquette')
+
+	event.create('tfg:washed_graphite_briquette')
+		.translationKey('item.tfg.washed_graphite_briquette')
+
+	event.create('tfg:pure_graphite_rod')
+		.translationKey('item.tfg.pure_graphite_rod')
+		.texture('tfg:item/graphite_line/pure_graphite_rod')
+
+	event.create('tfg:impure_graphite_rod')
+		.translationKey('item.tfg.impure_graphite_rod')
+		.texture('tfg:item/graphite_line/impure_graphite_rod')
+
+	event.create('tfg:annealed_graphite_rod')
+		.translationKey('item.tfg.annealed_graphite_rod')
+
+	event.create('tfg:impure_annealed_graphite_rod')
+		.translationKey('item.tfg.impure_annealed_graphite_rod')
+
+	event.create('tfg:graphite_moderator')
+		.translationKey('item.tfg.graphite_moderator')
+		.texture('tfg:item/graphite_line/graphite_moderator')
+
+	event.create('tfg:impure_graphite_moderator')
+		.translationKey('item.tfg.impure_graphite_moderator')
+		.texture('tfg:item/graphite_line/impure_graphite_moderator')
+
+	event.create('tfg:advanced_polymer_binder')
+		.translationKey('item.tfg.advanced_polymer_binder')
+		.texture('tfg:item/graphite_line/advanced_polymer_binder')
+
 }

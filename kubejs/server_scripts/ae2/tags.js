@@ -10,6 +10,8 @@ const registerAE2ItemTags = (event) => {
 
     event.remove('forge:storage_blocks', 'ae2:quartz_block')
     event.remove('forge:storage_blocks/certus_quartz', 'ae2:quartz_block')
+
+    event.removeAll('ae2:p2p_attunements/fe_p2p_tunnel')
     
     event.add('tfg:certus_quartz_blocks', 'gtceu:certus_quartz_block')
     event.add('tfg:certus_quartz_blocks', 'ae2:quartz_block')
@@ -40,6 +42,8 @@ const registerAE2ItemTags = (event) => {
 }
 
 const registerAE2BlockTags = (event) => {
+    
+	registerAe2FacadeWhitelistTags(event)
     
     global.AE2_DISABLED_ITEMS.forEach(item => {
         event.removeAllTagsFrom(item)

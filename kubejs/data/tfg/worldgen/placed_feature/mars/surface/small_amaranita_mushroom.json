@@ -6,6 +6,10 @@
 			"chance": 2
 		},
 		{
+			"type": "tfc:climate",
+			"max_forest": "edge"
+		},
+		{
 			"type": "minecraft:in_square"
 		},
 		{
@@ -13,7 +17,7 @@
 		},
 		{
 			"type": "minecraft:heightmap",
-			"heightmap": "WORLD_SURFACE"
+			"heightmap": "OCEAN_FLOOR"
 		}
 	]
 }

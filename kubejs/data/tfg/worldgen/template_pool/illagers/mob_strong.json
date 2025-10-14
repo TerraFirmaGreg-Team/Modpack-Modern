@@ -1,0 +1,42 @@
+{
+	"name": "tfg:illagers/mob_strong",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:illager_generic/mobs/bonebreaker",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 80,
+			"element": {
+				"location": "tfg:illager_generic/mobs/warrior",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 40,
+			"element": {
+				"location": "tfg:illager_generic/mobs/ambusher",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 80,
+			"element": {
+				"location": "tfg:illager_generic/mobs/berserker",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

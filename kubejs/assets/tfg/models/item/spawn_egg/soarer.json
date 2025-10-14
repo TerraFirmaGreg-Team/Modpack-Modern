@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "wan_ancient_beasts:item/soarer_spawn_egg"
+	}
+}

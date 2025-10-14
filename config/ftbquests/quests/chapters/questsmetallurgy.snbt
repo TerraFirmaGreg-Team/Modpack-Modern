@@ -132,6 +132,7 @@
 		{
 			dependencies: ["0A92F5C4BB6AF972"]
 			description: ["{quests.metal_age.wrought_iron_anvil.desc}"]
+			guide_page: "tfc:field_guide tfc:tfg_tips/anvil_working_guide"
 			id: "174DA15847665CF8"
 			shape: "octagon"
 			size: 2.0d
@@ -149,6 +150,7 @@
 		{
 			dependencies: ["133DB645B6E0585A"]
 			description: ["{quests.metal_age.bronze_anvil.desc}"]
+			guide_page: "tfc:field_guide tfc:tfg_tips/anvil_working_guide"
 			id: "3C173357029AB649"
 			shape: "octagon"
 			size: 2.0d
@@ -229,6 +231,7 @@
 				"00B22730B33CB4DB"
 			]
 			description: ["{quests.metal_age.blast_furnace.desc}"]
+			guide_page: "tfc:field_guide tfc:tfg_tips/blast_furnace_tips"
 			icon: "tfc:blast_furnace"
 			id: "5996A3A0D475B8A6"
 			size: 2.0d
@@ -292,6 +295,7 @@
 			dependencies: ["5A936E9BCF30AA3D"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.kaolin_clay.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/surface_kaolin"
 			id: "72F1C122FC26229C"
 			shape: "octagon"
 			size: 2.0d
@@ -308,6 +312,7 @@
 					}
 					id: "tfc:kaolin_clay"
 				}
+				match_nbt: false
 				type: "item"
 				weak_nbt_match: true
 			}]
@@ -363,6 +368,7 @@
 				"31CE13462759950C"
 			]
 			description: ["{quests.metal_age.fire_clay.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/fire_clay"
 			id: "2C76EE197C14B0DC"
 			size: 2.0d
 			subtitle: "{quests.metal_age.fire_clay.subtitle}"
@@ -413,6 +419,7 @@
 		{
 			dependencies: ["3C173357029AB649"]
 			description: ["{quests.metal_age.mining.desc}"]
+			guide_page: "tfc:field_guide tfc:tfg_ores/ore_basics"
 			id: "234B68E86F72C29E"
 			subtitle: "{quests.metal_age.mining.subtitle}"
 			tasks: [{
@@ -630,11 +637,9 @@
 			id: "5792DDAA82895E67"
 			subtitle: "{quests.metal_age.red_blu.subtitle}"
 			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: "gtceu:overworld_marker"
-				id: "720D64916D1E3892"
-				title: "{quests.stone_age.temperature.task}"
-				type: "dimension"
+				id: "63890641DCD6659F"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
 			}]
 			title: "{quests.metal_age.red_blu.title}"
 			x: 24.0d
@@ -661,6 +666,7 @@
 				"5088768AAA28FCBA"
 				"6D04BAC5B215F90F"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.redblu_anvil.desc}"]
 			id: "56CA2EB7812529C5"
 			shape: "octagon"
@@ -967,7 +973,9 @@
 						}
 						id: "tfc:metal/ingot/weak_red_steel"
 					}
+					match_nbt: false
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "2A068958F7451FFB"
@@ -981,7 +989,9 @@
 						}
 						id: "tfc:metal/ingot/black_steel"
 					}
+					match_nbt: false
 					type: "item"
+					weak_nbt_match: true
 				}
 			]
 			title: "{quests.metal_age.highcarb_red_steel.title}"
@@ -1158,7 +1168,9 @@
 						}
 						id: "tfc:metal/ingot/weak_blue_steel"
 					}
+					match_nbt: false
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "2755C292E4E19530"
@@ -1172,7 +1184,9 @@
 						}
 						id: "tfc:metal/ingot/black_steel"
 					}
+					match_nbt: false
 					type: "item"
+					weak_nbt_match: true
 				}
 			]
 			title: "{quests.metal_age.highcarb_blu_steel.title}"

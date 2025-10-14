@@ -1,0 +1,9 @@
+{
+	"type": "tfc:fissure",
+	"config": {
+		"wall_state": "create:scorchia",
+		"fluid_state": "tfg:fluid/semiheavy_ammoniacal_water",
+		"count": 1,
+		"radius": 6
+	}
+}

@@ -31,6 +31,11 @@ global.FIRMALIFE_DISABLED_ITEMS = [
     'firmalife:copper_pipe',
     'firmalife:oxidized_copper_pipe',
     'firmalife:irrigation_tank',
+
+    // disabled so people use tongs instead
+    'firmalife:peel',
+
+    'firmalife:bucket/chocolate'
 ];
 
 global.FIRMALIFE_HIDED_ITEMS = [

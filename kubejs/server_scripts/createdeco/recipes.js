@@ -58,6 +58,12 @@ const registerCreatedecoRecipes = (event) => {
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/copper' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/steel' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/zinc' })
+	event.remove({ id: 'createdeco:andesite_sheet_metal' })
+	event.remove({ id: 'createdeco:brass_sheet_metal' })
+	event.remove({ id: 'createdeco:iron_sheet_metal' })
+	event.remove({ id: 'createdeco:copper_sheet_metal' })
+	event.remove({ id: 'createdeco:industrial_iron_sheet_metal' })
+	event.remove({ id: 'createdeco:zinc_sheet_metal' })
 	//#endregion
 
 	//#region Lamp Recipes
@@ -165,6 +171,7 @@ const registerCreatedecoRecipes = (event) => {
 			.itemInputs('5x minecraft:brick', powder)
 			.inputFluids(Fluid.of('gtceu:concrete', 144))
 			.itemOutputs(`4x createdeco:${type}_bricks`)
+			.circuit(3)
 			.duration(50)
 			.EUt(7)
 	});
@@ -464,6 +471,49 @@ const registerCreatedecoRecipes = (event) => {
 	], {
 		A: '#forge:rods/steel'
 	}).id('tfg:createdeco/shaped/industrial_iron_ladder')
+
+	// #endregion
+
+	// #region Shipping Containers
+
+	global.MINECRAFT_DYE_NAMES.forEach(color => {
+		event.remove({ id: `createdeco:${color}_shipping_container_from_dyeing_vaults` })
+
+		event.recipes.gtceu.chemical_bath(`createdeco:${color}_shipping_container`)
+			.itemInputs('create:item_vault')
+			.inputFluids(Fluid.of(`tfc:${color}_dye`, 144))
+			.itemOutputs(`createdeco:${color}_shipping_container`)
+			.duration(100)
+			.EUt(16)
+			.category(GTRecipeCategories.CHEM_DYES);
+
+		event.recipes.gtceu.chemical_bath(`createdeco:${color}_shipping_container_recolor`)
+			.itemInputs('#createdeco:shipping_containers')
+			.inputFluids(Fluid.of(`tfc:${color}_dye`, 144))
+			.itemOutputs(`createdeco:${color}_shipping_container`)
+			.duration(100)
+			.EUt(16)
+			.category(GTRecipeCategories.CHEM_DYES);
+	})
+
+	event.recipes.gtceu.chemical_bath(`createdeco:bleach_shipping_container`)
+		.itemInputs('#createdeco:shipping_containers')
+		.inputFluids(Fluid.of('gtceu:chlorine', 144))
+		.itemOutputs('create:item_vault')
+		.duration(100)
+		.EUt(16)
+		.category(GTRecipeCategories.CHEM_DYES);
+
+	// #endregion
+
+	// #region Sheet Metal
+
+	event.stonecutting('4x createdeco:andesite_sheet_metal', '#forge:plates/tin_alloy')
+	event.stonecutting('4x createdeco:brass_sheet_metal', '#forge:plates/brass')
+	event.stonecutting('4x createdeco:iron_sheet_metal', '#forge:plates/wrought_iron')
+	event.stonecutting('4x createdeco:copper_sheet_metal', '#forge:plates/copper')
+	event.stonecutting('4x createdeco:industrial_iron_sheet_metal', '#forge:plates/steel')
+	event.stonecutting('4x createdeco:zinc_sheet_metal', '#forge:plates/zinc')
 
 	// #endregion
 };

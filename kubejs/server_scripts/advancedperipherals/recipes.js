@@ -48,14 +48,6 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.duration(1200)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	//Redstone Integrator
-	event.recipes.gtceu.assembler('advancedperipherals:assembler/redstone_integrator')
-		.itemInputs('1x computercraft:wired_modem', '1x gtceu:mv_machine_casing', '10x vintageimprovements:redstone_module', '1x ae2:redstone_card', '2x gtceu:transistor', '1x gtceu:mv_emitter')
-		.circuit(4)
-		.itemOutputs('advancedperipherals:redstone_integrator')
-		.duration(1200)
-		.EUt(GTValues.VA[GTValues.MV])
-
 	//Block Reader
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/block_reader')
 		.itemInputs('1x computercraft:wired_modem', '1x gtceu:mv_machine_casing', '1x gtceu:lv_scanner', '1x gtceu:mv_sensor', '1x gtceu:mv_emitter', '1x #forge:lenses/amethyst')

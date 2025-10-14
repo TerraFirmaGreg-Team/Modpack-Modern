@@ -1,0 +1,28 @@
+{
+	"feature": "tfg:mars/surface/filalux_wings_top",
+	"placement": [
+		{
+			"type": "tfc:climate",
+			"min_forest": "edge"
+		},
+		{
+			"type": "minecraft:count",
+			"count": 2
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR"
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": 0,
+			"y_spread": 3
+		}
+	]
+}

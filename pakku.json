@@ -1,17 +1,18 @@
 {
     "name": "TerraFirmaGreg-Modern",
     "version": "DEV",
-    "release_type": "release",
+    "release_type": "alpha",
     "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
     "author": "Exception, Xikaro",
     "overrides": [
         "config",
         "defaultconfigs",
         "kubejs",
-		"tacz",
+        "tacz",
         "!kubejs/probe/**"
     ],
     "server_overrides": [
+        "!kubejs/assets",
         "forge-auto-install.txt",
         "generate_auto_installation_file.bat",
         "minecraft_server.jar",
@@ -19,8 +20,7 @@
         "server_starter.conf",
         "server-icon.png",
         "start_server.bat",
-        "README.md",
-        "!kubejs/assets/**"
+        "README.md"
     ],
     "client_overrides": [
         "resourcepacks"
@@ -158,9 +158,6 @@
         "first-person-model": {
             "side": "CLIENT"
         },
-        "flickerfix": {
-            "side": "CLIENT"
-        },
         "no-report-button": {
             "side": "CLIENT"
         },
@@ -209,10 +206,10 @@
         "fast-ip-ping": {
             "side": "CLIENT"
         },
-        "entityculling": {
+        "badoptimizations": {
             "side": "CLIENT"
         },
-        "pick-up-notifier": {
+        "entityculling": {
             "side": "CLIENT"
         },
         "resourceful-config": {
@@ -239,11 +236,11 @@
         "xaeros-minimap": {
             "side": "BOTH"
         },
-        "xaeros-world-map": {
-            "side": "BOTH"
-        },
         "particular-reforged": {
             "side": "BOTH"
+        },
+        "pick-up-notifier": {
+            "side": "CLIENT"
         },
         "inventory-tweaks-refoxed": {
             "side": "BOTH"
@@ -254,10 +251,41 @@
         "detected-setblock-be-gone": {
             "side": "BOTH"
         },
-        "ad-astra-auto-lander": {
-            "side": "CLIENT"
+        "autopack-director": {
+            "export": false
         },
+        "ftb-backups-2": {
+            "side": "BOTH",
+            "export": true
+        },
+        "ftb-chunks-forge": {
+            "export": true
+        },
+        "ftb-essentials": {
+            "export": true
+        },
+        "ftb-filter-system": {
+            "export": true
+        },
+        "ftb-library-forge": {
+            "export": true
+        },
+        "ftb-quests-forge": {
+            "export": true
+        },
+        "ftb-ranks-forge": {
+            "export": true
+        },
+        "ftb-teams-forge": {
+            "export": true
+        },
+        "ftb-xmod-compat": {
+            "export": true
+        },
+
+
         "probejs": {
+            "side": "CLIENT",
             "export": false
         }
     }

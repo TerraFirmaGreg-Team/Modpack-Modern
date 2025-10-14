@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:huge_fungus",
+	"config": {
+		"decor_state": {
+			"Name": "beneath:wood/leaves/crimson"
+		},
+		"hat_state": {
+			"Name": "minecraft:nether_wart_block"
+		},
+		"planted": false,
+		"replaceable_blocks": {
+			"type": "minecraft:replaceable"
+		},
+		"stem_state": {
+			"Name": "beneath:wood/log/crimson",
+			"Properties": {
+				"axis": "y",
+				"branch_direction": "down"
+			}
+		},
+		"valid_base_block": {
+			"Name": "tfg:grass/amber_mycelium"
+		}
+	}
+}

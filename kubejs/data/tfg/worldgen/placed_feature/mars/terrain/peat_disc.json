@@ -1,0 +1,24 @@
+{
+	"feature": "tfg:mars/terrain/peat_disc",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 200
+		},
+		{
+			"type": "tfc:climate",
+			"min_temperature": -85,
+			"min_forest": "edge"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR_WG"
+		}
+	]
+}

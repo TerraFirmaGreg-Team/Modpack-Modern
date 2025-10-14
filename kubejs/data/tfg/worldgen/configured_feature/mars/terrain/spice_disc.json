@@ -1,0 +1,74 @@
+{
+	"type": "tfc:if_then",
+	"config": {
+		"if": {
+			"feature": {
+				"type": "tfc:soil_disc",
+				"config": {
+					"min_radius": 2,
+					"max_radius": 3,
+					"height": 4,
+					"states": [
+						{
+							"replace": "minecraft:red_sand",
+							"with": "tfg:spice"
+						},
+						{
+							"replace": "ad_astra:mars_sand",
+							"with": "tfg:spice"
+						}
+					]
+				}
+			},
+			"placement": []
+		},
+		"then": {
+			"feature": {
+				"type": "minecraft:random_patch",
+				"config": {
+					"feature": {
+						"feature": {
+							"type": "minecraft:simple_block",
+							"config": {
+								"to_place": {
+									"type": "minecraft:simple_state_provider",
+									"state": {
+										"Name": "tfg:spice"
+									}
+								}
+							}
+						},
+						"placement": [
+							{
+								"type": "minecraft:block_predicate_filter",
+								"predicate": {
+									"type": "minecraft:any_of",
+									"predicates": [
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:red_sand"
+										},
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "ad_astra:mars_sand"
+										}
+									]
+								}
+							}
+						]
+					},
+					"tries": 32,
+					"xz_spread": 8,
+					"y_spread": 2
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:random_offset",
+					"xz_spread": 0,
+					"y_spread": -1
+				}
+			]
+		}
+	}
+}

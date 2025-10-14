@@ -14,13 +14,105 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_apatite)Apatita e Pirocloro$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_monazite)Bastnasita e Monazita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)Bauxita e Ilmenita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_mica)Cianita, Mica e Bauxita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sheldonite)Cooperita e Bornita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_magnetite)Cromita e Magnetita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_desh)Desh e Ilmenita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sphalerite)Esfalerita e Pirita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_beryllium)Esmeralda e Berílio$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnierite)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_graphite)Grafite e Diamante$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_manganese)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_lubricant)Pedra-sabão, Talco e Trona$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_pyrolusite)Pirolusita e Cobalto$()$()",
+      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_garnet)Ametista, Opala e Granada$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_apatite)Apatita e Pirocloro$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_monazite)Bastnasita e Monazita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)Bauxita e Ilmenita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_cassiterite)Cassiterita e Calcopirita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_mica)Cianita, Mica e Bauxita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sheldonite)Cooperita e Bornita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_magnetite)Cromita e Magnetita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_desh)Desh e Ilmenita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sphalerite)Esfalerita e Pirita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_beryllium)Esmeralda e Berílio$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnierite)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gypsum)Gipsita e Calcita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_graphite)Grafite e Diamante$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_silver)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_quartz)Quartzo Certus$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)Redstone, Cinábrio e Rubi$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sapphire)Safira e Almandina$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_saltpeter)Salitre e Eletrotina$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_scheelite)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_topaz)Topázio e Calcosita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)Wulfenita e Molibdenita$()$()",
+      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_manganese)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gold)Ouro e Magnetita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_lubricant)Pedra-sabão, Talco e Trona$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_pyrolusite)Pirolusita e Cobalto$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_silver)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_quartz)Quartzo Certus$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)Redstone, Cinábrio e Rubi$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sapphire)Safira e Almandina$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_saltpeter)Salitre e Eletrotina$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_scheelite)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_tetrahedrite)Tetraedrita e Calcocita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_topaz)Topázio e Calcosita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)Wulfenita e Molibdenita$()$()",
       "type": "patchouli:text"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 230$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 10 — 128$(br)$(thing)Tamanho$(): 35$(br)$(thing)Altura$(): 7$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Riolito",
+      "title": "Ametista, Opala e Granada",
+      "type": "patchouli:text",
+      "anchor": "moon_garnet"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Ametista",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/amethyst"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 38%$(br)$(thing)Fonte de$(): Ferro$(br)$(thing)Fórmula$(): (SiO₂)₄Fe",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Opala",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/opal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 38%$(br)$(thing)Fonte de$(): Silício, Oxigênio$(br)$(thing)Fórmula$(): (SiO₂)",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Granada Amarela",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/yellow_garnet"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 14%$(br)$(thing)Fonte de$(): Andradita, Glossulária, Uvarovita",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Granada Vermelha",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/red_garnet"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 9%$(br)$(thing)Fonte de$(): Piropo, Almandina, Espessartita",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:empty",
@@ -121,7 +213,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 310$(br)$(thing)Densidade$(): 0.2$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 50$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Andesito, Dacito, Fonolito, Riolito",
+      "text": "$(thing)Raridade$(): 310$(br)$(thing)Densidade$(): 0.2$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Andesito, Dacito, Fonolito, Riolito",
       "title": "Bastnasita e Monazita",
       "type": "patchouli:text",
       "anchor": "moon_monazite"
@@ -213,7 +305,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 200$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 80$(br)$(thing)Tamanho$(): 50$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Anortosito, Basalto, Diorito, Fonolito, Norito, Riolito",
+      "text": "$(thing)Raridade$(): 200$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 80$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Anortosito, Basalto, Diorito, Fonolito, Norito, Riolito",
       "title": "Bauxita e Ilmenita",
       "type": "patchouli:text",
       "anchor": "moon_bauxite"
@@ -277,6 +369,98 @@
       "enable_visualize": false,
       "text": "$(thing)Porcentagem$(): 21%$(br)$(thing)Fonte de$(): Magnésio, Rutilo, Titânio$(br)$(thing)Fórmula$(): (Mg,Fe)Ti₂O₅",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 210$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 10 — 128$(br)$(thing)Tamanho$(): 35$(br)$(thing)Profundidade Máxima do Indicador$(): 60$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Granito, Norito",
+      "title": "Cassiterita e Calcopirita",
+      "type": "patchouli:text",
+      "anchor": "moon_cassiterite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Cassiterita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cassiterite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 41%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): SnO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Calcopirita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcopyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Derrete em$(): Cobre$(br)$(thing)Fórmula$(): CuFeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Estanho",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tin"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 17%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): Sn",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Zeólita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/zeolite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Fonte de$(): Alumínio, Oxigênio$(br)$(thing)Fórmula$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -347,10 +531,10 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Polucita",
+      "name": "Alumínio",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/pollucite"
+          "0": "#forge:ores/aluminium"
         },
         "pattern": [
           [
@@ -362,7 +546,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 14%$(br)$(thing)Fonte de$(): Césio, Alumínio$(br)$(thing)Fórmula$(): Cs₂Al₂Si₄(H₂O)₂O₁₂",
+      "text": "$(thing)Porcentagem$(): 14%$(br)$(thing)Fonte de$(): Alumínio$(br)$(thing)Fórmula$(): Al",
       "type": "patchouli:multiblock"
     },
     {
@@ -479,7 +663,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 280$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 90$(br)$(thing)Tamanho$(): 70$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Anortosito, Diorito, Gabro, Norito",
+      "text": "$(thing)Raridade$(): 280$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 90$(br)$(thing)Tamanho$(): 50$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Anortosito, Diorito, Gabro, Norito",
       "title": "Cromita e Magnetita",
       "type": "patchouli:text",
       "anchor": "moon_magnetite"
@@ -586,30 +770,10 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 230$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 10 — 80$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Gabro",
+      "text": "$(thing)Raridade$(): 230$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 10 — 80$(br)$(thing)Tamanho$(): 30$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Gabro",
       "title": "Desh e Ilmenita",
       "type": "patchouli:text",
       "anchor": "moon_desh"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Desh",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/desh"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 40%$(br)$(thing)Fonte de$(): Ferro, Titânio, Nitrogênio$(br)$(thing)Fórmula$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
@@ -628,7 +792,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Fonte de$(): Ferro, Titânio$(br)$(thing)Fórmula$(): FeTiO₃",
+      "text": "$(thing)Porcentagem$(): 30%$(br)$(thing)Fonte de$(): Ferro, Titânio$(br)$(thing)Fórmula$(): FeTiO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Desh",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/desh"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Fonte de$(): Ferro, Titânio, Nitrogênio$(br)$(thing)Fórmula$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -648,7 +832,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Fonte de$(): Alumínio$(br)$(thing)Fórmula$(): Al",
+      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Fonte de$(): Alumínio$(br)$(thing)Fórmula$(): Al",
       "type": "patchouli:multiblock"
     },
     {
@@ -668,7 +852,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Fonte de$(): Magnésio, Rutilo, Titânio$(br)$(thing)Fórmula$(): (Mg,Fe)Ti₂O₅",
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Fonte de$(): Magnésio, Rutilo, Titânio$(br)$(thing)Fórmula$(): (Mg,Fe)Ti₂O₅",
       "type": "patchouli:multiblock"
     },
     {
@@ -678,7 +862,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 205$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 2 — 75$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 60$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Fonolito, Gabro",
+      "text": "$(thing)Raridade$(): 205$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 2 — 75$(br)$(thing)Tamanho$(): 35$(br)$(thing)Profundidade Máxima do Indicador$(): 60$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Fonolito, Gabro",
       "title": "Esfalerita e Pirita",
       "type": "patchouli:text",
       "anchor": "moon_sphalerite"
@@ -720,7 +904,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): FeS₂",
+      "text": "$(thing)Porcentagem$(): 40%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): FeS₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -740,12 +924,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Fonte de$(): Ferro, Titânio, Nitrogênio$(br)$(thing)Fórmula$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
+      "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Fonte de$(): Ferro, Titânio, Nitrogênio$(br)$(thing)Fórmula$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 260$(br)$(thing)Densidade$(): 0.45$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): 0 — 120$(br)$(thing)Altura$(): 70$(br)$(thing)Raio$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Anortosito, Basalto, Fonolito",
+      "text": "$(thing)Raridade$(): 260$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): 0 — 120$(br)$(thing)Altura$(): 70$(br)$(thing)Raio$(): 8$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Anortosito, Basalto, Fonolito",
       "title": "Esmeralda e Berílio",
       "type": "patchouli:text",
       "anchor": "moon_beryllium"
@@ -852,7 +1036,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 250$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 5 — 85$(br)$(thing)Tamanho$(): 55$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Riolito",
+      "text": "$(thing)Raridade$(): 250$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 5 — 85$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Riolito",
       "title": "Garnierita e Cobaltita",
       "type": "patchouli:text",
       "anchor": "moon_garnierite"
@@ -959,7 +1143,114 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 260$(br)$(thing)Densidade$(): 0.55$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): 0 — 120$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 12$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Anortosito, Basalto, Basalto, Fonolito, Gabro",
+      "text": "$(thing)Raridade$(): 180$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 10 — 100$(br)$(thing)Tamanho$(): 30$(br)$(thing)Altura$(): 9$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Anortosito, Fonolito, Norito",
+      "title": "Gipsita e Calcita",
+      "type": "patchouli:text",
+      "anchor": "moon_gypsum"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Gipsita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gypsum"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Usado para$(): Tijolos de Alabastro (tingíveis)$(br)$(thing)Fórmula$(): CaS(H₂O)₂O₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Calcita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/calcite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Fonte de$(): Cálcio$(br)$(thing)Fórmula$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Bórax",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/borax"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Fonte de$(): Sódio, Boro$(br)$(thing)Fórmula$(): Na₂B₄(H₂O)₁₀O₇",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Alunita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/alunite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Fonte de$(): Potássio, Alumínio$(br)$(thing)Fórmula$(): KAl₃Si₂H₆O₁₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Olivina",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/olivine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Fonte de$(): Magnésio, Ferro$(br)$(thing)Fórmula$(): Mg₂Fe(SiO₂)₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 260$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): 0 — 120$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 9$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Anortosito, Basalto, Basalto, Fonolito, Gabro",
       "title": "Grafite e Diamante",
       "type": "patchouli:text",
       "anchor": "moon_graphite"
@@ -1026,7 +1317,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 215$(br)$(thing)Densidade$(): 0.5$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 5 — 80$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Basalto, Dacito, Gabro, Norito",
+      "text": "$(thing)Raridade$(): 215$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 5 — 80$(br)$(thing)Tamanho$(): 30$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Basalto, Dacito, Gabro, Norito",
       "title": "Manganês e Tântalo",
       "type": "patchouli:text",
       "anchor": "moon_manganese"
@@ -1118,7 +1409,99 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 190$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 66$(br)$(thing)Tamanho$(): 36$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Anortosito, Basalto, Diorito, Gabro, Norito",
+      "text": "$(thing)Raridade$(): 170$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 10 — 80$(br)$(thing)Tamanho$(): 35$(br)$(thing)Altura$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 60$(br2)$(thing)Tipos de Pedra$(): Basalto, Diorito, Granito",
+      "title": "Ouro e Magnetita",
+      "type": "patchouli:text",
+      "anchor": "moon_gold"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Ouro Nativo",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gold"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 55%$(br)$(thing)Derrete em$(): Ouro$(br)$(thing)Fórmula$(): Au",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Bauxita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bauxite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Fonte de$(): Alumínio$(br)$(thing)Fórmula$(): Al₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Magnetita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/magnetite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₃O₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Safira Verde",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/green_sapphire"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Fonte de$(): Aluminium$(br)$(thing)Fórmula$(): Al₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 190$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 66$(br)$(thing)Tamanho$(): 30$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Anortosito, Basalto, Diorito, Gabro, Norito",
       "title": "Pedra-sabão, Talco e Trona",
       "type": "patchouli:text",
       "anchor": "moon_lubricant"
@@ -1225,7 +1608,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 210$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 20 — 80$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Andesito, Anortosito, Basalto, Gabro, Norito",
+      "text": "$(thing)Raridade$(): 210$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 20 — 80$(br)$(thing)Tamanho$(): 35$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Andesito, Anortosito, Basalto, Gabro, Norito",
       "title": "Pirolusita e Cobalto",
       "type": "patchouli:text",
       "anchor": "moon_pyrolusite"
@@ -1317,7 +1700,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 210$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 20 — 75$(br)$(thing)Tamanho$(): 30$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Anortosito, Dacito, Diorito, Norito, Riolito",
+      "text": "$(thing)Raridade$(): 210$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 20 — 75$(br)$(thing)Tamanho$(): 30$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Anortosito, Dacito, Diorito, Norito, Riolito",
       "title": "Prata, Galena e Chumbo",
       "type": "patchouli:text",
       "anchor": "moon_silver"
@@ -1409,7 +1792,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 230$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 10 — 100$(br)$(thing)Tamanho$(): 60$(br)$(thing)Profundidade Máxima do Indicador$(): 80$(br2)$(thing)Tipos de Pedra$(): Andesito, Anortosito, Basalto, Dacito, Diorito, Fonolito, Gabro, Norito, Riolito",
+      "text": "$(thing)Raridade$(): 230$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 10 — 100$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 80$(br2)$(thing)Tipos de Pedra$(): Andesito, Anortosito, Basalto, Dacito, Diorito, Fonolito, Gabro, Norito, Riolito",
       "title": "Quartzo Certus",
       "type": "patchouli:text",
       "anchor": "moon_quartz"
@@ -1501,7 +1884,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 250$(br)$(thing)Densidade$(): 0.2$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 20 — 100$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Andesito, Dacito, Fonolito",
+      "text": "$(thing)Raridade$(): 250$(br)$(thing)Densidade$(): 0.2$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 20 — 100$(br)$(thing)Tamanho$(): 35$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Andesito, Dacito, Fonolito",
       "title": "Redstone, Cinábrio e Rubi",
       "type": "patchouli:text",
       "anchor": "moon_redstone"
@@ -1700,7 +2083,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 210$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 90$(br)$(thing)Tamanho$(): 35$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Andesito, Dacito, Norito, Riolito",
+      "text": "$(thing)Raridade$(): 210$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 90$(br)$(thing)Tamanho$(): 30$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Andesito, Dacito, Norito, Riolito",
       "title": "Salitre e Eletrotina",
       "type": "patchouli:text",
       "anchor": "moon_saltpeter"
@@ -1792,7 +2175,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 200$(br)$(thing)Densidade$(): 0.45$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Fonolito, Gabro, Riolito",
+      "text": "$(thing)Raridade$(): 200$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Fonolito, Gabro, Riolito",
       "title": "Sheelita e Tungstato",
       "type": "patchouli:text",
       "anchor": "moon_scheelite"
@@ -1859,7 +2242,99 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 210$(br)$(thing)Densidade$(): 0.5$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 0 — 120$(br)$(thing)Tamanho$(): 64$(br)$(thing)Altura$(): 25$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Andesito, Anortosito, Basalto, Dacito, Diorito, Fonolito, Gabro, Norito, Riolito",
+      "text": "$(thing)Raridade$(): 190$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 50 — 128$(br)$(thing)Tamanho$(): 35$(br)$(thing)Profundidade Máxima do Indicador$(): 60$(br2)$(thing)Tipos de Pedra$(): Andesito, Dacito, Fonolito, Riolito",
+      "title": "Tetraedrita e Calcocita",
+      "type": "patchouli:text",
+      "anchor": "moon_tetrahedrite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Tetraedrita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tetrahedrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 40%$(br)$(thing)Derrete em$(): Cobre$(br)$(thing)Fórmula$(): Cu₃SbS₃Fe",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Calcocita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcocite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Fonte de$(): Cobre$(br)$(thing)Fórmula$(): Cu₂S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Estibnita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/stibnite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Derrete em$(): Antimônio$(br)$(thing)Fórmula$(): Sb₂S₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Cobre Nativo",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/copper"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Derrete em$(): Cobre$(br)$(thing)Fórmula$(): Cu",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 210$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 0 — 120$(br)$(thing)Tamanho$(): 45$(br)$(thing)Altura$(): 16$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Andesito, Anortosito, Basalto, Dacito, Diorito, Fonolito, Gabro, Norito, Riolito",
       "title": "Topázio e Calcosita",
       "type": "patchouli:text",
       "anchor": "moon_topaz"
@@ -1951,7 +2426,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 245$(br)$(thing)Densidade$(): 0.45$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 50$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Basalto, Dacito, Gabro, Norito",
+      "text": "$(thing)Raridade$(): 245$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 50$(br)$(thing)Tamanho$(): 35$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Basalto, Dacito, Gabro, Norito",
       "title": "Wulfenita e Molibdenita",
       "type": "patchouli:text",
       "anchor": "moon_molybdenum"

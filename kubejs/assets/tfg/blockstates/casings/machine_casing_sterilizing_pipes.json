@@ -1,0 +1,29 @@
+{
+  "variants": {
+    "active=false,facing=north": [
+      { "model": "tfg:block/casings/machine_casing_sterilizing_pipes" }
+    ],
+    "active=false,facing=south": [
+      { "model": "tfg:block/casings/machine_casing_sterilizing_pipes", "y": 180 }
+    ],
+    "active=false,facing=west": [
+      { "model": "tfg:block/casings/machine_casing_sterilizing_pipes", "y": 270 }
+    ],
+    "active=false,facing=east": [
+      { "model": "tfg:block/casings/machine_casing_sterilizing_pipes", "y": 90 }
+    ],
+
+    "active=true,facing=north": [
+      { "model": "tfg:block/casings/machine_casing_sterilizing_pipes_active" }
+    ],
+    "active=true,facing=south": [
+      { "model": "tfg:block/casings/machine_casing_sterilizing_pipes_active", "y": 180 }
+    ],
+    "active=true,facing=west": [
+      { "model": "tfg:block/casings/machine_casing_sterilizing_pipes_active", "y": 270 }
+    ],
+    "active=true,facing=east": [
+      { "model": "tfg:block/casings/machine_casing_sterilizing_pipes_active", "y": 90 }
+    ]
+  }
+}

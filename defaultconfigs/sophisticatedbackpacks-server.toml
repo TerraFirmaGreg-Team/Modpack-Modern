@@ -2,7 +2,7 @@
 #Server Settings
 [server]
 	#List of items that are not allowed to be put in backpacks - e.g. "minecraft:shulker_box"
-	disallowedItems = []
+	disallowedItems = ["sns:frame_pack", "sns:burlap_sack"]
 	#Determines if container items (those that override canFitInsideContainerItems to false) are able to fit in backpacks
 	containerItemsDisallowed = false
 	#List of blocks that inventory interaction upgrades can't interact with - e.g. "minecraft:shulker_box"
@@ -26,7 +26,7 @@
 	[server.leatherBackpack]
 		#Number of inventory slots in the backpack
 		#Range: 1 ~ 144
-		inventorySlotCount = 27
+		inventorySlotCount = 36
 		#Number of upgrade slots in the backpack
 		#Range: 0 ~ 10
 		upgradeSlotCount = 1

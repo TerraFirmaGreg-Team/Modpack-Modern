@@ -1,0 +1,76 @@
+
+#Sniffer Attributes
+[sniffer]
+	#Sniffer health [default: 75]
+	#Range: 1.0 ~ 1024.0
+	health = 80.0
+	#Sniffer armor [default: 3]
+	#Range: 0.0 ~ 30.0
+	armor = 3.0
+	#Sniffer armor toughness [default: 1]
+	#Range: 0.0 ~ 20.0
+	armorToughness = 1.0
+
+#Eater Attributes
+[eater]
+	#Eater health [default: 100]
+	#Range: 1.0 ~ 1024.0
+	health = 250.0
+	#Eater attack damage [default: 30]
+	#Range: 0.0 ~ 1024.0
+	damage = 30.0
+	#Eater armor [default: 5]
+	#Range: 0.0 ~ 30.0
+	armor = 8.0
+	#Eater armor toughness [default: 2]
+	#Range: 0.0 ~ 20.0
+	armorToughness = 3.0
+
+#Walker Attributes
+[walker]
+	#Walker health [default: 200]
+	#Range: 1.0 ~ 1024.0
+	health = 350.0
+	#Walker armor [default: 5]
+	#Range: 0.0 ~ 30.0
+	armor = 8.0
+	#Walker armor toughness [default: 4]
+	#Range: 0.0 ~ 20.0
+	armorToughness = 4.0
+
+#Crusher Attributes
+[crusher]
+	#Crusher health [default: 50]
+	#Range: 1.0 ~ 1024.0
+	health = 90.0
+	#Crusher attack damage [default: 10]
+	#Range: 0.0 ~ 1024.0
+	damage = 10.0
+	#Crusher armor [default: 20]
+	#Range: 0.0 ~ 30.0
+	armor = 20.0
+	#Crusher armor toughness [default: 4]
+	#Range: 0.0 ~ 20.0
+	armorToughness = 4.0
+
+#Glider Attributes
+[glider]
+	#Glider health [default: 25]
+	#Range: 1.0 ~ 1024.0
+	health = 80.0
+
+#Soarer Attributes
+[soarer]
+	#Soarer health [default: 40]
+	#Range: 1.0 ~ 1024.0
+	health = 110.0
+	#Soarer attack damage [default: 15]
+	#Range: 0.0 ~ 1024.0
+	damage = 25.0
+
+#Surfer Attributes
+[surfer]
+	#Surfer health [default: 30]
+	#Range: 1.0 ~ 1024.0
+	health = 80.0
+

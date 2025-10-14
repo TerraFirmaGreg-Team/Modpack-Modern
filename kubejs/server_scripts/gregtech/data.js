@@ -40,6 +40,11 @@ const registerGTCEUHeats = (event) => {
 			makeItemHeatByTagPrefix(TagPrefix.block, material, tfcProperty, 20)
 			makeItemHeatByTagPrefix(TagPrefix.rodLong, material, tfcProperty, 1.429)
 			makeItemHeatByTagPrefix(TagPrefix.gearSmall, material, tfcProperty, 1.429)
+			makeItemHeatByTagPrefix(TagPrefix.gear, material, tfcProperty, 2.875)
+			makeItemHeatByTagPrefix(TagPrefix.plate, material, tfcProperty, 2.875)
+			makeItemHeatByTagPrefix(TagPrefix.plateDouble, material, tfcProperty, 5.75)
+			makeItemHeatByTagPrefix(TagPrefix.springSmall, material, tfcProperty, 0.567)
+			makeItemHeatByTagPrefix(TagPrefix.spring, material, tfcProperty, 1.429)
 
 			makeItemHeatByTagPrefix(TagPrefix.ingot, material, tfcProperty, 1.429)
 			makeItemHeatByTagPrefix(TFGTagPrefix.ingotDouble, material, tfcProperty, 2.875)
@@ -82,6 +87,11 @@ const registerGTCEUHeats = (event) => {
 			makeItemHeatByToolType(GTToolType.BUTCHERY_KNIFE, material, tfcProperty, 2.875)
 			makeItemHeatByToolType(GTToolType.MINING_HAMMER, material, tfcProperty, 1.429)
 			makeItemHeatByToolType(GTToolType.SPADE, material, tfcProperty, 2.875)
+			makeItemHeatByToolType(GTToolType.WRENCH, material, tfcProperty, 2.875)
+			makeItemHeatByToolType(GTToolType.SCREWDRIVER, material, tfcProperty, 1.429)
+			makeItemHeatByToolType(GTToolType.MORTAR, material, tfcProperty, 1.429)
+			makeItemHeatByToolType(GTToolType.WIRE_CUTTER, material, tfcProperty, 1.429)
+			makeItemHeatByToolType(GTToolType.CROWBAR, material, tfcProperty, 1.429)
 		}
 	})
 
@@ -114,83 +124,12 @@ const registerGTCEUMetals = (event) => {
 	event.metal('gtceu:redstone', 460, 0.01729, null, null, null, 1, 'tfg:redstone')
 	event.metal('gtceu:red_alloy', 740, 0.01529, '#forge:ingots/red_alloy', '#forge:double_ingots/red_alloy', '#forge:plates/red_alloy', 2, 'tfg:red_alloy')
 	event.metal('gtceu:tin_alloy', 1250, 0.00829, '#forge:ingots/tin_alloy', '#forge:double_ingots/tin_alloy', '#forge:plates/tin_alloy', 3, 'tfg:tin_alloy')
-	event.metal('gtceu:lead', 330, 0.01729, '#forge:ingots/lead', '#forge:double_ingots/lead', '#forge:plates/lead', 2, 'tfg:lead')
+	event.metal('gtceu:lead', 330, 0.01729, '#forge:ingots/lead', '#forge:double_ingots/lead', '#forge:plates/lead', 1, 'tfg:lead')
 	event.metal('gtceu:invar', 1494, 0.00741, '#forge:ingots/invar', '#forge:double_ingots/invar', '#forge:plates/invar', 3, 'tfg:invar')
 	event.metal('gtceu:potin', 807, 0.0124, '#forge:ingots/potin', '#forge:double_ingots/potin', '#forge:plates/potin', 2, 'tfg:potin')
 	event.metal('gtceu:cobalt', 1495, 0.00857, '#forge:ingots/cobalt', '#forge:double_ingots/cobalt', '#forge:plates/cobalt', 3, 'tfg:cobalt')
 	event.metal('gtceu:cobalt_brass', 1060, 0.00857, '#forge:ingots/cobalt_brass', '#forge:double_ingots/cobalt_brass', '#forge:plates/cobalt_brass', 3, 'tfg:cobalt_brass')
-	event.metal('gtceu:aluminium_silicate', 1540, 0.00857, '#forge:ingots/aluminium_silicate', null, null, 1, 'tfg:aluminium_silicate')
-}
-
-
-const registerGTCEUBedrockOreVeins = (event) => {
-
-	// Tin, Magnesium
-	event.add('tfg:moon_tin', vein => {
-		vein.weight(75)
-			.size(2)
-			.yield(1, 4)
-			.material(GTMaterials.Cassiterite, 5)
-			.material(GTMaterials.Tin, 2)
-			.material(GTMaterials.Olivine, 1)
-			.dimensions('ad_astra:moon')
-	})
-
-	// Iron, Gold, Magnesium
-	event.add('tfg:moon_magnetite', vein => {
-		vein.weight(75)
-			.size(2)
-			.yield(1, 4)
-			.material(GTMaterials.Magnetite, 8)
-			.material(GTMaterials.Gold, 3)
-			.material(GTMaterials.Olivine, 1)
-			.dimensions('ad_astra:moon')
-	})
-
-	// Copper, Arsenic, Tin
-	event.add('tfg:moon_copper', vein => {
-		vein.weight(100)
-			.size(2)
-			.yield(1, 4)
-			.material(GTMaterials.Chalcopyrite, 10)
-			.material(GTMaterials.Zeolite, 4)
-			.material(GTMaterials.Cassiterite, 3)
-			.material(GTMaterials.Realgar, 2)
-			.dimensions('ad_astra:moon')
-	})
-
-	// Certus Quartz, Barium
-	event.add('tfg:moon_certus', vein => {
-		vein.weight(20)
-			.size(1)
-			.yield(1, 2)
-			.material(GTMaterials.CertusQuartz, 6)
-			.material(GTMaterials.Barite, 2)
-			.material(GTMaterials.Quartzite, 7)
-			.dimensions('ad_astra:moon')
-	})
-
-	// Asbestos, Tin, Calcium
-	event.add('tfg:moon_asbestos', vein => {
-		vein.weight(100)
-			.size(2)
-			.yield(1, 5)
-			.material(GTMaterials.Asbestos, 3)
-			.material(GTMaterials.CassiteriteSand, 4)
-			.material(GTMaterials.Diatomite, 1)
-			.dimensions('ad_astra:moon')
-	})
-
-	// Mica - Talc Silicon Aluminium Potassium Fluorine Caesium
-	event.add('tfg:moon_mica', vein => {
-		vein.weight(50)
-			.size(1)
-			.yield(1, 3)
-			.material(GTMaterials.Mica, 5)
-			.material(GTMaterials.Kyanite, 2)
-			.material(GTMaterials.Pollucite, 1)
-			.dimensions('ad_astra:moon')
-	})
+	event.metal('gtceu:aluminium_silicate', 1540, 0.00857, '#forge:ingots/aluminium_silicate', null, null, 3, 'tfg:aluminium_silicate')
 }
 
 function registerGTCEUBedrockFluidVeins(event) {
@@ -210,8 +149,8 @@ function registerGTCEUBedrockFluidVeins(event) {
 		vein.dimensions('ad_astra:moon')
 		vein.fluid(() => Fluid.of('gtceu:helium').fluid)
 		vein.weight(10)
-		vein.minimumYield(50)
-		vein.maximumYield(20)
+		vein.minimumYield(20)
+		vein.maximumYield(50)
 		vein.depletionAmount(1)
 		vein.depletionChance(1)
 		vein.depletedYield(50)
@@ -221,10 +160,77 @@ function registerGTCEUBedrockFluidVeins(event) {
 		vein.dimensions('ad_astra:moon')
 		vein.fluid(() => Fluid.of('gtceu:argon').fluid)
 		vein.weight(5)
-		vein.minimumYield(30)
-		vein.maximumYield(10)
+		vein.minimumYield(10)
+		vein.maximumYield(30)
 		vein.depletionAmount(1)
 		vein.depletionChance(1)
 		vein.depletedYield(10)
 	})
+
+	// Mars Fluid Vein - Credit to Monifactory
+
+	const Registries = Java.loadClass("net.minecraft.core.registries.Registries")
+	const ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey")
+	const martianAmberHillsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/amber_hills")
+	const martianAmberPlainsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/amber_plains")
+	const martianMountainsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/martian_mountains")
+	const martianRusticusHillsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/rusticus_hills")
+	const martianRusticusPlainsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/rusticus_plains")
+	const martianSangnumHillsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/sangnum_hills")
+	const martianSangnumPlainsResourceKey = ResourceKey.create(Registries.BIOME, "tfg:mars/sangnum_plains")
+
+	event.add('tfg:semiheavy_ammoniacal_water', vein => {
+		vein.dimensions('ad_astra:mars')
+		vein.fluid(() => Fluid.of('tfg:semiheavy_ammoniacal_water').fluid)
+		vein.weight(100)
+		vein.minimumYield(200)
+		vein.maximumYield(400)
+		vein.depletionAmount(1)
+		vein.depletionChance(20)
+		vein.depletedYield(15)
+	})
+
+	event.add('tfg:liquid_carbon_dioxide', vein => {
+		vein.dimensions('ad_astra:mars')
+		vein.fluid(() => Fluid.of('gtceu:liquid_carbon_dioxide').fluid)
+		vein.weight(30)
+		vein.minimumYield(20)
+		vein.maximumYield(350)
+		vein.depletionAmount(1)
+		vein.depletionChance(20)
+		vein.depletedYield(5)
+	})
+
+	event.add('tfg:liquid_ice', vein => {
+		vein.dimensions('ad_astra:mars')
+		vein.fluid(() => Fluid.of('gtceu:ice').fluid)
+		vein.weight(20)
+		vein.minimumYield(20)
+		vein.maximumYield(200)
+		vein.depletionAmount(1)
+		vein.depletionChance(20)
+		vein.depletedYield(5)
+	})
+
+	// Heavy Ammonical Water in Specific Biome Credit to Monifactory from https://github.com/ThePansmith/Monifactory/blob/main/kubejs/server_scripts/worldgen/fluidVeins.js
+
+	event.add('tfg:heavy_ammoniacal_water', vein => {
+		vein.dimensions('ad_astra:mars')
+		vein.fluid(() => Fluid.of('tfg:heavy_ammoniacal_water').fluid)
+		vein.biomes(20, martianAmberHillsResourceKey)
+		vein.biomes(20, martianAmberPlainsResourceKey)
+		vein.biomes(20, martianRusticusHillsResourceKey)
+		vein.biomes(20, martianRusticusPlainsResourceKey)
+		vein.biomes(20, martianSangnumHillsResourceKey)
+		vein.biomes(20, martianSangnumPlainsResourceKey)
+		// This one is exclusively far inland, so it's ok to buff it a bit in case the player has bad luck
+		vein.biomes(50, martianMountainsResourceKey)
+		vein.weight(0)
+		vein.minimumYield(100)
+		vein.maximumYield(650)
+		vein.depletionAmount(1)
+		vein.depletionChance(20)
+		vein.depletedYield(5)
+	})
+
 }

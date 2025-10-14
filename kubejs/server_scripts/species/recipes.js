@@ -66,5 +66,61 @@ function registerSpeciesRecipes(event) {
 		B: 'firmaciv:rope_coil'
 	}).id('tfg:shaped/harpoon')
 
-	// TODO: birtday cake
+	generateGreenHouseRecipe(event, '8x tfg:saplings/alphacene', 'tfg:semiheavy_ammoniacal_water', 16000,
+		'64x species:alphacene_mushroom_block', 'tfg:green_house/alphacene_mushroom', 'ad_astra:mars', 8,
+		'8x minecraft:mushroom_stem', GTValues.VA[GTValues.MV])
+	
+	event.shapeless('species:cracked_wraptor_egg', ['tfg:wraptor_egg', '#forge:tools/hammers']).id('tfg:shapeless/crack_egg')
+	event.shapeless('2x tfg:wraptor_sugar', ['species:cracked_wraptor_egg']).id('tfg:shapeless/juice_egg')
+	
+	event.recipes.gtceu.extractor('tfg:juice_wraptor_egg_mv')
+		.itemInputs('species:cracked_wraptor_egg')
+		.itemOutputs('4x tfg:wraptor_sugar')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.MV])
+	event.recipes.gtceu.extractor('tfg:juice_wraptor_egg_full')
+		.itemInputs('tfg:wraptor_egg')
+		.itemOutputs('4x tfg:wraptor_sugar')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.extractor('tfg:juice_sniffer_egg')
+		.itemInputs('tfg:sniffer_egg')
+		.outputFluids(Fluid.of('firmalife:cream', 1000))
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.shaped('species:ricoshield', [
+		'EBE',
+		'ACA',
+		'EDE'
+	], {
+		A: '#forge:springs/steel',
+		B: 'create:precision_mechanism',
+		C: 'tfc:metal/shield/blue_steel',
+		D: 'species:kinetic_core',
+		E: '#forge:plates/titanium'
+	}).id('tfg:shaped/ricoshield_blue')
+
+	event.shaped('species:ricoshield', [
+		'EBE',
+		'ACA',
+		'EDE'
+	], {
+		A: '#forge:springs/steel',
+		B: 'create:precision_mechanism',
+		C: 'tfc:metal/shield/red_steel',
+		D: 'species:kinetic_core',
+		E: '#forge:plates/titanium'
+	}).id('tfg:shaped/ricoshield_red')
+
+	event.shaped('species:deflector_dummy', [
+		'A',
+		'B',
+		'C'
+	], {
+		A: 'vintageimprovements:redstone_module',
+		B: 'species:kinetic_core',
+		C: 'tacz:target'
+	}).id('tfg:shaped/deflector_dummy')
 }
