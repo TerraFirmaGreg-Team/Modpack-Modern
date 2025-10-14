@@ -26,7 +26,7 @@
 #Creature Category
 [workers]
 	#Valid "Small" creatures
-	small_creatures = ["tfc:wolf", "tfc:dog", "tfc:pig", "tfc:sheep", "tfc:goat", "tfc:alpaca", "tfg:glacian_ram", "tfg:wraptor", "species:springaling", "wan_ancient_beasts:surfer"]
+	small_creatures = ["tfc:wolf", "tfc:dog", "tfc:pig", "tfc:sheep", "tfc:goat", "tfc:alpaca", "tfg:glacian_ram", "tfg:wraptor", "species:springaling", "tfg:surfer"]
 	#Valid "Medium" creatures
 	medium_creatures = ["tfc:cow", "tfc:donkey", "tfc:dolphin", "wan_ancient_beasts:glider", "wan_ancient_beasts:soarer"]
 	#Valid "Large" creatures
