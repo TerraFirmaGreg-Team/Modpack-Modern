@@ -1407,6 +1407,16 @@ const registerGTCEURecipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.cleanroom(CleanroomType.CLEANROOM)
+
+	event.remove({ id: 'gtceu:chemical_reactor/soda_ash_from_carbon_dioxide' })
+	event.remove({ id: 'gtceu:large_chemical_reactor/soda_ash_from_carbon_dioxide' })
+
+	event.recipes.gtceu.implosion_compressor('tfg:dense_lead_plate')
+		.itemInputs('16x #forge:ingots/lead', '16x #forge:ingots/lead', '6x #forge:ingots/lead')
+		.itemInputs('gtceu:industrial_tnt')
+		.itemOutputs('4x #forge:dense_plates/lead')
+		.duration(20 * 1)
+		.EUt(GTValues.VA[GTValues.LV])
 	
 	// Remove Plutonium from centrifuging Uranium dust
 	
