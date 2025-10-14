@@ -1,0 +1,182 @@
+{
+	"type": "lithostitched:select",
+	"config": {
+		"features": [
+			{
+				"predicate": {
+					"type": "minecraft:matching_blocks",
+					"offset": [ 0, -1, 0 ],
+					"blocks": "ad_astra:venus_sand"
+				},
+				"feature": {
+					"feature": {
+						"type": "lithostitched:structure_template",
+						"config": {
+							"template": "tfg:dino_nests/surfer",
+							"projection": "terrain_matching",
+							"processors": "minecraft:empty"
+						}
+					},
+					"placement": []
+				}
+			},
+			{
+				"predicate": {
+					"type": "minecraft:matching_block_tag",
+					"offset": [ 0, -1, 0 ],
+					"tag": "tfg:mars_soil"
+				},
+				"feature": {
+					"feature": {
+						"type": "lithostitched:weighted_selector",
+						"config": {
+							"features": [
+								{
+									"weight": 1,
+									"data": {
+										"feature": {
+											"type": "lithostitched:structure_template",
+											"config": {
+												"template": "tfg:dino_nests/cruncher",
+												"projection": "terrain_matching",
+												"processors": "minecraft:empty"
+											}
+										},
+										"placement": []
+									}
+								},
+								{
+									"weight": 1,
+									"data": {
+										"feature": {
+											"type": "lithostitched:structure_template",
+											"config": {
+												"template": "tfg:dino_nests/crusher",
+												"projection": "terrain_matching",
+												"processors": "minecraft:empty"
+											}
+										},
+										"placement": []
+									}
+								},
+								{
+									"weight": 1,
+									"data": {
+										"feature": {
+											"type": "lithostitched:structure_template",
+											"config": {
+												"template": "tfg:dino_nests/eater",
+												"projection": "terrain_matching",
+												"processors": "minecraft:empty"
+											}
+										},
+										"placement": []
+									}
+								},
+								{
+									"weight": 1,
+									"data": {
+										"feature": {
+											"type": "lithostitched:structure_template",
+											"config": {
+												"template": "tfg:dino_nests/glider",
+												"projection": "terrain_matching",
+												"processors": "minecraft:empty"
+											}
+										},
+										"placement": []
+									}
+								},
+								{
+									"weight": 1,
+									"data": {
+										"feature": {
+											"type": "lithostitched:structure_template",
+											"config": {
+												"template": "tfg:dino_nests/goober",
+												"projection": "terrain_matching",
+												"processors": "minecraft:empty"
+											}
+										},
+										"placement": []
+									}
+								},
+								{
+									"weight": 1,
+									"data": {
+										"feature": {
+											"type": "lithostitched:structure_template",
+											"config": {
+												"template": "tfg:dino_nests/sniffer",
+												"projection": "terrain_matching",
+												"processors": "minecraft:empty"
+											}
+										},
+										"placement": []
+									}
+								},
+								{
+									"weight": 1,
+									"data": {
+										"feature": {
+											"type": "lithostitched:structure_template",
+											"config": {
+												"template": "tfg:dino_nests/soarer",
+												"projection": "terrain_matching",
+												"processors": "minecraft:empty"
+											}
+										},
+										"placement": []
+									}
+								},
+								{
+									"weight": 1,
+									"data": {
+										"feature": {
+											"type": "lithostitched:structure_template",
+											"config": {
+												"template": "tfg:dino_nests/springling",
+												"projection": "terrain_matching",
+												"processors": "minecraft:empty"
+											}
+										},
+										"placement": []
+									}
+								},
+								{
+									"weight": 1,
+									"data": {
+										"feature": {
+											"type": "lithostitched:structure_template",
+											"config": {
+												"template": "tfg:dino_nests/walker",
+												"projection": "terrain_matching",
+												"processors": "minecraft:empty"
+											}
+										},
+										"placement": []
+									}
+								},
+								{
+									"weight": 1,
+									"data": {
+										"feature": {
+											"type": "lithostitched:structure_template",
+											"config": {
+												"template": "tfg:dino_nests/wraptor",
+												"projection": "terrain_matching",
+												"processors": "minecraft:empty"
+											}
+										},
+										"placement": []
+									}
+								}
+							]
+						}
+					},
+					"placement": []
+				}
+			}
+		]
+	}
+}
