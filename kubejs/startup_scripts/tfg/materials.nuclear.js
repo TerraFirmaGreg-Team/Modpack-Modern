@@ -209,7 +209,7 @@ const registerTFGNuclearMaterials = (event) => {
 
 	event.create("ostrum_iodide")
 		.ingot()
-		.components('8x ostrum', '4x iodine')
+		.components('2x ostrum', 'iodine')
 		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
 		.iconSet(GTMaterialIconSet.METALLIC)
 		.flags(GTMaterialFlags.GENERATE_GEAR)

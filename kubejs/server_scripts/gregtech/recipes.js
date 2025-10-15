@@ -1677,14 +1677,14 @@ const registerGTCEURecipes = (event) => {
 
 	// New Alloys
 
-	event.recipes.gtceu.mixer('tfg:tungsten_bismuth_oxide_composite')
+	event.recipes.gtceu.mixer('tfg:ostrum_iodide')
 		.itemInputs('1x #forge:dusts/iodine', '2x #forge:dusts/ostrum')
 		.itemOutputs('3x #forge:dusts/ostrum_iodide')
 		.duration(20 * 12)
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.EV])
 
-	event.recipes.gtceu.mixer('tfg:ostrum_iodide')
+	event.recipes.gtceu.mixer('tfg:tungsten_bismuth_oxide_composite')
 		.itemInputs('2x #forge:dusts/bismuth', 'gtceu:tungsten_dust')
 		.inputFluids(Fluid.of('gtceu:oxygen', 3000))
 		.itemOutputs('3x tfg:tungsten_bismuth_oxide_composite_dust')
