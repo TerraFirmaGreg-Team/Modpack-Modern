@@ -1,0 +1,83 @@
+{
+	"type": "ad_astra:glacio",
+	"generator": {
+		"type": "kubejs_tfc:wrapped",
+		"event_key": "glacio",
+		"settings": {
+			"flat_bedrock": false,
+			"spawn_distance": 0,
+			"spawn_center_x": 0,
+			"spawn_center_z": 0,
+			"temperature_scale": 2500,
+			"rainfall_scale": 2500,
+			"continentalness": -0.5,
+			"rock_layer_settings": {
+				"rocks": {
+					"glacio": {
+						"raw": "ad_astra:glacio_stone",
+						"hardened": "tfg:rock/hardened_glacio_stone",
+						"gravel": "tfg:rock/gravel_glacio",
+						"cobble": "ad_astra:glacio_cobblestone",
+						"sand": "tfc:sand/white",
+						"sandstone": "tfc:raw_sandstone/white",
+						"spike": "tfg:spike/glacio_stone_spike",
+						"mossy": "tfg:rock/mossy_cobble_glacio",
+						"loose": "tfg:loose/glacio_stone"
+					},
+					"gabbro": "tfc:gabbro"
+				},
+				"layers": [
+					{
+						"id": "middle",
+						"layers": {
+							"glacio": "bottom",
+							"gabbro": "bottom"
+						}
+					},
+					{
+						"id": "top",
+						"layers": {
+							"glacio": "middle"
+						}
+					}
+				],
+				"bottom": [
+					"gabbro"
+				],
+				"ocean_floor": [
+					"top"
+				],
+				"volcanic": [
+					"top"
+				],
+				"land": [
+					"top"
+				],
+				"uplift": [
+					"top"
+				]
+			}
+		},
+		"generator": {
+			"type": "minecraft:noise",
+			"settings": "tfg:glacio_noise",
+			"biome_source": {
+				"type": "minecraft:multi_noise",
+				"biomes": [
+					{
+						"biome": "tfg:glacio/placeholder_biome",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0,
+							"erosion": 0,
+							"weirdness": 0,
+							"depth": 0,
+							"offset": 0
+						}
+					}
+				]
+			}
+		}
+	}
+}

@@ -2,14 +2,14 @@
 	"ambient_light": 0.0,
 	"bed_works": true,
 	"coordinate_scale": 1.0,
-	"effects": "ad_astra:mars",
+	"effects": "ad_astra:glacio",
 	"has_ceiling": false,
 	"has_raids": false,
 	"has_skylight": true,
 	"height": 384,
 	"infiniburn": "#minecraft:infiniburn_overworld",
 	"logical_height": 384,
-	"min_y": -32,
+	"min_y": -64,
 	"monster_spawn_block_light_limit": 0,
 	"monster_spawn_light_level": {
 		"type": "minecraft:uniform",
@@ -19,7 +19,7 @@
 		}
 	},
 	"natural": true,
-	"piglin_safe": true,
+	"piglin_safe": false,
 	"respawn_anchor_works": false,
 	"ultrawarm": false
 }

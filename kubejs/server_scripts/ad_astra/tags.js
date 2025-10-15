@@ -535,11 +535,9 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_moon_sand')
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_white_sand')
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_black_sand')
-
 	//#endregion
 
 	//#region Mars
-
 	// Underground decoration
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/loose_rocks')
 	event.add('tfg:mars_underground_decoration', 'tfc:cave_spike')
@@ -659,5 +657,10 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_geyserite')
 	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_orange_sand')
 	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_yellow_sand')
+	//#endregion
+
+	//#region Glacio
+	event.add("tfg:glacio_top_layer_modification", "tfg:glow_lichen")
+	event.add("tfg:glacio_top_layer_modification", "tfc:surface_loose_rocks")
 	//#endregion
 }
