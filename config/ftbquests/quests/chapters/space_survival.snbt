@@ -1097,7 +1097,7 @@
 				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: 23118000L
+						creationDate: -9223372036854775808L
 						traits: [ ]
 					}
 					"tfc:item_heat": {
