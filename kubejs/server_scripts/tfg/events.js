@@ -2,7 +2,13 @@
 
 // TODO
 TFGServerEvents.dimensionalPowerConsumption(event => {
-	//event.add("ad_astra:earth_orbit", 50);
+	//event.add("minecraft:overworld", 10000);
+	//event.add("minecraft:the_nether", 20000);
+	//event.add("ad_astra:earth_orbit", 20000);
+	//event.add("ad_astra:moon", 50000);
+	//event.add("ad_astra:moon_orbit", 50000);
+	//event.add("ad_astra:mars", 100000);
+	//event.add("ad_astra:mars_orbit", 100000);
 });
 
 //#region Medicine

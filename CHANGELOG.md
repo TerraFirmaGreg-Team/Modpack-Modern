@@ -1,27 +1,49 @@
 # Changelog
-
 ## [Unreleased]
 ### Changes
+### Bug fixes
+### Translation updates
+
+## [0.11.3] - 15-10-2025
+### Major Changes
 - Water wheels are now usable again in all (earth + beneath) biomes outside of rivers, *but* at a reduced efficiency @Pyritie
+- Removed the soda ash recipe in the chemical reactor so you have to actually loop your tungsten line (#2037) @TomPlop
+- Removed "raw" thorium metal items like ingots and plates - macerate them into dust before updating! @Pyritie
+- Most fission line recipes are now locked to Mars @TomPlop
+- Graphite Moderators now only require an EV arc furnace instead of an IV one @TomPlop
+- Added an implosion compressor recipe to craft Dense Lead Plates much faster, albeit slightly less efficiently @TomPlop
+- Heat Exchanger now requires Ostrum Iodide (#2040) @TomPlop
+- Refrigerant Pellet now requires a little Radon @TomPlop
+- Soarers and Surfers now require TFC familiarity to tame. Surfers were also replaced with a new TFG mob with the same name (look at the mod name in Jade), so only those are affected (and the old ones no longer spawn) @Pyritie
+### Changes
+- Added more EV chapter quest descriptions (#2037) @TomPlop
 - Added dinosaur nest structures to mars @Pyritie
+- Added more egg 🥚🍳🦖🦕 @Pyritie 
 - Added ULV super tanks and super drums, and a 4A HV Dynamo Hatch for your Large Solar Array MK1 @Pyritie
 - Added meats for the surfer, cruncher, stackatick and primitive creatures mobs, reworked the textures of the others (#2001, #2014) @Redeix
 - Added a recipe for turning glass dust into lamp glass @Pyritie
 - Added more recipe unification for quartz, certus quartz, create's minerals, fixed wall chiseling recipes (#2005) @vidal-adrien
 - Added recipes to purify impure dusts in TFC Barrels (#2013) @dimethylene
 - Removed raw rubber ingots because they kept confusing people @Pyritie
-- Removed "raw" thorium metal items like ingots and plates - macerate them into dust before updating! @Pyritie
 - Adjusted the colors of thorium and its isotopes to be similar to other radioactive materials @Pyritie
 - Added lunch boxes and super chests/tanks to the railgun blacklist @Pyritie
 - Added an assembler recipe for the chain conveyor (#2007) @Nashy1232
+- Added Packer recipes for gravel to loose stone, adds shapeless cobble unpacking for non-TFC stone types (#2017) @vidal-adrien
+- Added food processor recipe for pineapple fiber (#2029) @Nashy1232
+- EV superconductors are no longer radioactive @Pyritie
 ### Bug fixes
+- Fixed the interplanetary wireless card, though at the moment it doesn't use extra power @ko-lja
 - Fixed a crash with the sandworm on servers (#2006) @BlueBoat29
 - Fixed some recipes using the wrong keratophyre loose rock @Pyritie
-- Fixed mechanical pumps grabbing tfc:river_water and not water (#1797) @BlueBoat29
+- Fixed mechanical pumps grabbing tfc:river_water and not water, boilers rejoice! (#1797) @BlueBoat29
 - Fixed some dusts having issues with AE2 recipes not completing successfully (#2032) @Pyritie
+- Fixed loose pyroxenite rocks crafting into raw pyroxenite (#2017) @vidal-adrien
+- Removed armor trimmable tag from the blue steel backtank @Pyritie
+- Fixed some recipes showing an invalid glacio dimension icon @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Dl-GitH
+- Ukranian @MetEnBouldry
 
 ## [0.11.2] - 09-10-2025
 ### Changes
