@@ -4,6 +4,7 @@
 ### Changes
 - Water wheels are now usable again in all (earth + beneath) biomes outside of rivers, *but* at a reduced efficiency @Pyritie
 - Added dinosaur nest structures to mars @Pyritie
+- Added ULV super tanks and super drums, and a 4A HV Dynamo Hatch for your Large Solar Array MK1 @Pyritie
 - Added meats for the surfer, cruncher, stackatick and primitive creatures mobs, reworked the textures of the others (#2001, #2014) @Redeix
 - Added a recipe for turning glass dust into lamp glass @Pyritie
 - Added more recipe unification for quartz, certus quartz, create's minerals, fixed wall chiseling recipes (#2005) @vidal-adrien
@@ -16,6 +17,11 @@
 ### Bug fixes
 - Fixed a crash with the sandworm on servers (#2006) @BlueBoat29
 - Fixed some recipes using the wrong keratophyre loose rock @Pyritie
+- Fixed mechanical pumps grabbing tfc:river_water and not water (#1797) @BlueBoat29
+- Fixed some dusts having issues with AE2 recipes not completing successfully (#2032) @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Russian @Dl-GitH
 
 ## [0.11.2] - 09-10-2025
 ### Changes

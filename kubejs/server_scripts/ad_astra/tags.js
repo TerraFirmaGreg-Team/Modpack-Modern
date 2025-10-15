@@ -414,14 +414,6 @@ const registerAdAstraBiomeTags = (event) => {
 	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_dunes')
 	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_deep_desert')
 
-	event.add('tfg:has_structure/dino_nests', 'tfg:mars/amber_plains')
-	event.add('tfg:has_structure/dino_nests', 'tfg:mars/rusticus_plains')
-	event.add('tfg:has_structure/dino_nests', 'tfg:mars/sangnum_plains')
-	event.add('tfg:has_structure/dino_nests', 'tfg:mars/amber_hills')
-	event.add('tfg:has_structure/dino_nests', 'tfg:mars/rusticus_hills')
-	event.add('tfg:has_structure/dino_nests', 'tfg:mars/sangnum_hills')
-	event.add('tfg:has_structure/surfer_nest', 'tfg:mars/martian_river')
-
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_dunes')
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_deep_desert')
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_mountains')
@@ -489,7 +481,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'wan_ancient_beasts:soarer',
 		'wan_ancient_beasts:glider',
 		'wan_ancient_beasts:toxlacanth',
-		'wan_ancient_beasts:surfer'
+		'tfg:surfer'
 	]
 
 	COLD_ENTITIES.forEach(entity => {
@@ -520,7 +512,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:soarer')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:glider')
 	// swimming mobs
-	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:surfer')
+	event.add('tfg:ignores_gravity', 'tfg:surfer')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:toxlacanth')
 }
 
