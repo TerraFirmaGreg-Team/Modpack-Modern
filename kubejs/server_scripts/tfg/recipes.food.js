@@ -247,6 +247,14 @@ function registerTFGFoodRecipes(event) {
 		cookingRecipe(item.name, item.input, item.output, undefined, true)
 	})
 
+    // Pineapple fiber
+    processorRecipe("firmalife:crafting/pineapple_fiber", 300, 16, {
+        circuit: 3,
+        itemInputs: ["firmalife:food/pineapple"],
+        fluidInputs: [Fluid.of('gtceu:nitrogen', 100)],
+        itemOutputs: ["firmalife:pineapple_fiber"]
+    })
+    
 	//#endregion
 	//#region ================= Dairy =================
 
