@@ -54,9 +54,7 @@
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
-		"creature": [
-		
-		],
+		"creature": [],
 		"misc": [],
 		"monster": [
 			{
@@ -78,9 +76,23 @@
 				"weight": 10
 			}
 		],
-		"underground_water_creature": [],
+		"underground_water_creature": [
+			{
+				"type": "species:deepfish",
+				"maxCount": 7,
+				"minCount": 4,
+				"weight": 50
+			}
+		],
 		"water_ambient": [],
-		"water_creature": []
+		"water_creature": [
+			{
+				"type": "species:leaf_hanger",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
+			}
+		]
 	},
 	"temperature": -0.5
 }

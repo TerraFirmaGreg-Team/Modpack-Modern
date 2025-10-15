@@ -481,7 +481,14 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'wan_ancient_beasts:soarer',
 		'wan_ancient_beasts:glider',
 		'wan_ancient_beasts:toxlacanth',
-		'tfg:surfer'
+		'tfg:surfer',
+		// europa
+		'endermanoverhaul:coral_enderman',
+		'endermanoverhaul:snowy_enderman',
+		'endermanoverhaul:ice_spikes_enderman',
+		'species:deepfish',
+		'species:leaf_hanger',
+		'species:cliff_hanger',
 	]
 
 	COLD_ENTITIES.forEach(entity => {
@@ -514,6 +521,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 	// swimming mobs
 	event.add('tfg:ignores_gravity', 'tfg:surfer')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:toxlacanth')
+	event.add('tfg:ignores_gravity', 'endermanoverhaul:coral_enderman')
 }
 
 const registerAdAstraPlacedFeatures = (event) => {
