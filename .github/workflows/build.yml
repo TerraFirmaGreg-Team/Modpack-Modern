@@ -94,13 +94,13 @@ jobs:
             echo "❌ Error: File pakku-lock-prev.json is empty or not created" && exit 1
           fi
         
-      - name: 📦 Download pakku.jar
-        id: download_pakku
-        if: steps.check_pakku_lock_prev.outputs.file_found
-        shell: bash
-        run: |
-          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
-          echo "✔️ Downloaded pakku.jar "
+      # - name: 📦 Download pakku.jar
+      #   id: download_pakku
+      #   if: steps.check_pakku_lock_prev.outputs.file_found
+      #   shell: bash
+      #   run: |
+      #     curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+      #     echo "✔️ Downloaded pakku.jar "
         
       - name: 🔄 Run pakku diff
         id: pakku_diff
@@ -326,7 +326,7 @@ jobs:
 
       - name: 📦 Export modpack
         run: |
-          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          # curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           java -jar pakku.jar fetch
           java -jar pakku.jar export
 
