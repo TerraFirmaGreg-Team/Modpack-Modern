@@ -18,6 +18,8 @@ global.MARS_MAX_AVG_TEMP = -15;
 global.MARS_MIN_AVG_RAIN = -25;
 global.MARS_MAX_AVG_RAIN = 13;
 
+global.GLACIO_PLANET_SIZE = 5000;
+
 function clamp(val, min, max) {
 	return Math.min(Math.max(val, min), max);
 }

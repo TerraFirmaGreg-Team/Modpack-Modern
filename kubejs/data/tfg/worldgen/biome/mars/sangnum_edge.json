@@ -165,7 +165,7 @@
 		"water_ambient": [],
 		"water_creature": [
 			{
-				"type": "wan_ancient_beasts:surfer",
+				"type": "tfg:surfer",
 				"maxCount": 3,
 				"minCount": 2,
 				"weight": 100

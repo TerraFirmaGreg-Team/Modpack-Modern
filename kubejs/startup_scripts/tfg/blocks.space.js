@@ -39,6 +39,15 @@ function registerTFGSpaceBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 
+	event.create('tfg:marker/glacio')
+		.stoneSoundType()
+		.item(item => {
+			item.modelJson({ parent: 'tfg:block/marker/glacio' })
+		})
+		.tagBlock('c:hidden_from_recipe_viewers')
+		.fullBlock(true)
+		.opaque(true)
+
 	// #endregion Dimension markers
 
 	const SHAPES = ['stairs', 'slab', 'wall']

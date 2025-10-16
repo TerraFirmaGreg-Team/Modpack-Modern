@@ -1,0 +1,42 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/cube",
+	"gui_light": "front",
+	"textures": {
+		"0": "ad_astra:block/globe/glacio_globe",
+		"particle": "#0"
+	},
+	"elements": [
+		{
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"north": {
+					"uv": [ 3.75, 3.75, 7.5, 7.5 ],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [ 0, 3.75, 3.75, 7.5 ],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [ 11.25, 3.75, 15, 7.5 ],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [ 7.5, 3.75, 11.25, 7.5 ],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [ 7.5, 3.75, 3.75, 0 ],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [ 3.75, 7.5, 0, 11.25 ],
+					"texture": "#0"
+				}
+			}
+		}
+	],
+	"display": {}
+}

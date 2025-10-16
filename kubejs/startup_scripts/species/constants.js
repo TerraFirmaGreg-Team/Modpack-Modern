@@ -13,7 +13,6 @@ global.SPECIES_DISABLED_BLOCKS = [
 global.SPECIES_DISABLED_ITEMS = [
 	'species:deepfish_bucket',
 	'species:ancient_pinecone',
-	'species:cruncher_egg',
 	'species:ichor_bottle',
 	'species:youth_potion',
 	'species:wraptor_egg',
@@ -33,7 +32,5 @@ global.SPECIES_DISABLED_ITEMS = [
 	'species:ghoul_tongue',
 	'species:broken_links',
 	'species:werefang',
-	'species:wicked_wax',
-	'species:springling_egg',
-	'species:petrified_egg'
+	'species:wicked_wax'
 ];

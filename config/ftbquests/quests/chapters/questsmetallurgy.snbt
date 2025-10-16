@@ -341,16 +341,7 @@
 			dependencies: ["5A936E9BCF30AA3D"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.graphite.desc}"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "tfc:powder/graphite"
-			}
+			icon: "tfc:powder/graphite"
 			id: "31CE13462759950C"
 			shape: "octagon"
 			size: 2.0d

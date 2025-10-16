@@ -10,7 +10,6 @@ const registerBeneathRecipes = (event) => {
 
 	event.remove({ id: 'beneath:collapse/basalt' })
 	event.remove({ id: 'beneath:collapse/nether_bricks' })
-	event.remove({ id: 'beneath:crafting/ancient_altar' })
 	event.remove({ id: 'beneath:crafting/blackstone' })
 	event.remove({ id: 'beneath:crafting/blackstone_uncraft' })
 	event.remove({ id: 'beneath:crafting/blackstone_bricks_from_soot' })

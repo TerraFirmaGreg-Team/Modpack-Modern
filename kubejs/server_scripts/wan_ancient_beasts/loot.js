@@ -57,12 +57,12 @@ function registerWansAncientBeastsLoots(event) {
 		.addWeightedLoot([5, 7], ['wan_ancient_beasts:raw_ancient_meat'])
 
 		
-	event.addEntityLootModifier('wan_ancient_beasts:surfer')
+	event.addEntityLootModifier('tfg:surfer')
 		.addLoot('tfc:medium_raw_hide')
 		.addWeightedLoot([1, 3], ['minecraft:bone'])
-		// TODO: meat
+		.addWeightedLoot([6, 8], ['tfg:food/raw_surfer_steak'])
 
-	//event.addEntityLootModifier('wan_ancient_beasts:surfer')
-	//	.matchMainHand('#forge:tools/butchery_knives')
-	//	.addWeightedLoot([1, 2], ['tfg:food/raw_whole_soarer'])
+	event.addEntityLootModifier('tfg:surfer')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([3, 4], ['tfg:food/raw_surfer_steak'])
 }

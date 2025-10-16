@@ -1097,7 +1097,7 @@
 				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: 23118000L
+						creationDate: -9223372036854775808L
 						traits: [ ]
 					}
 					"tfc:item_heat": {
@@ -1155,7 +1155,7 @@
 				observe_type: 5
 				timer: 0L
 				title: "{quests.space_survival.surfer.task}"
-				to_observe: "wan_ancient_beasts:surfer"
+				to_observe: "tfg:surfer"
 				type: "observation"
 			}]
 			title: "{quests.space_survival.surfer.title}"

@@ -29,7 +29,9 @@
 			"tfg:mars/terrain/venus_sand_disc"
 		],
 		[],
-		[],
+		[
+			"tfg:mars/terrain/dino_nests"
+		],
 		[],
 		"#tfg:mars_veins",
 		"#tfg:mars_underground_decoration",
@@ -190,7 +192,7 @@
 				"weight": 100
 			},
 			{
-				"type": "wan_ancient_beasts:surfer",
+				"type": "tfg:surfer",
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100

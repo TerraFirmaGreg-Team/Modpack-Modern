@@ -195,8 +195,8 @@ const registerTFGNuclearMaterials = (event) => {
 		.element(GTElements.get("thorium_230"))
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
 		.flags(GTMaterialFlags.GENERATE_ROD)
-		.color(0x3b2f37)
-		.secondaryColor(0xECECEC)
+		.color(0xf8a8c0)
+		.secondaryColor(0xcd8dbc)
 		.radioactiveHazard(1000000)
 
 	event.create("thorium_232")
@@ -205,8 +205,16 @@ const registerTFGNuclearMaterials = (event) => {
 		.iconSet(GTMaterialIconSet.METALLIC)
 		.flags(GTMaterialFlags.GENERATE_ROD)
 		.color(0x694c66)
-		.secondaryColor('0xFFFFFF')
 		.radioactiveHazard(1000)
+
+	event.create("ostrum_iodide")
+		.ingot()
+		.components('2x ostrum', 'iodine')
+		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
+		.iconSet(GTMaterialIconSet.METALLIC)
+		.flags(GTMaterialFlags.GENERATE_GEAR)
+		.color(0xc696f2)
+		.secondaryColor(0x9b99ff)
 
 	//#endregion
 

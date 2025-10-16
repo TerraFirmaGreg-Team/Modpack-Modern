@@ -163,7 +163,20 @@
 		],
 		"underground_water_creature": [],
 		"water_ambient": [],
-		"water_creature": []
+		"water_creature": [
+			{
+				"type": "wan_ancient_beasts:toxlacanth",
+				"maxCount": 5,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "tfg:surfer",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			}
+		]
 	},
 	"temperature": 0.8
 }

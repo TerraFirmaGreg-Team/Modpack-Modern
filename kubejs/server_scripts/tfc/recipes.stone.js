@@ -72,18 +72,33 @@ function registerTFCStoneRecipes(event) {
 			`4x tfc:rock/gravel/${stone}`
 		]).id(`tfc:shapeless/gravel_to_loose_${stone}`)
 
-		// Cobble Unpacking
-		event.recipes.gtceu.packer(`tfc:gtceu/packer/unpacking_mossy_${stone}_cobble_into_loose`)
-			.itemInputs(`1x tfc:rock/mossy_cobble/${stone}`)
+		// Gravel Packing
+		event.recipes.gtceu.packer(`tfc:gtceu/packer/packing_loose_${stone}_to_gravel`)
+			.itemInputs(`4x tfc:rock/loose/${stone}`)
+			.itemOutputs(`1x tfc:rock/gravel/${stone}`)
 			.circuit(1)
-			.itemOutputs(`4x tfc:rock/mossy_loose/${stone}`)
+			.duration(30)
+			.EUt(GTValues.VA[GTValues.LV])
+
+		event.recipes.gtceu.packer(`tfc:gtceu/packer/packing_mossy_loose_${stone}_to_gravel`)
+			.itemInputs(`4x tfc:rock/mossy_loose/${stone}`)
+			.itemOutputs(`1x tfc:rock/gravel/${stone}`)
+			.circuit(1)
+			.duration(30)
+			.EUt(GTValues.VA[GTValues.LV])
+
+		// Cobble Unpacking
+		event.recipes.gtceu.packer(`tfc:gtceu/packer/unpacking_${stone}_cobble_into_loose`)
+			.itemInputs(`1x tfc:rock/cobble/${stone}`)
+			.itemOutputs(`4x tfc:rock/loose/${stone}`)
+			.circuit(1)
 			.duration(20)
 			.EUt(GTValues.VA[GTValues.ULV])
 
-		event.recipes.gtceu.packer(`tfc:gtceu/packer/unpacking_${stone}_cobble_into_loose`)
-			.itemInputs(`1x tfc:rock/cobble/${stone}`)
+		event.recipes.gtceu.packer(`tfc:gtceu/packer/unpacking_mossy_${stone}_cobble_into_loose`)
+			.itemInputs(`1x tfc:rock/mossy_cobble/${stone}`)
+			.itemOutputs(`4x tfc:rock/mossy_loose/${stone}`)
 			.circuit(1)
-			.itemOutputs(`4x tfc:rock/loose/${stone}`)
 			.duration(20)
 			.EUt(GTValues.VA[GTValues.ULV])
 
@@ -126,29 +141,11 @@ function registerTFCStoneRecipes(event) {
 		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_bricks_slab` })
 		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_bricks_wall` })
 
-		//walls
-		event.remove({ id: `tfc:stonecutting/rock/${stone}_raw_wall` })
-		event.remove({ id: `tfc:stonecutting/rock/${stone}_cobble_wall` })
-		event.remove({ id: `tfc:stonecutting/rock/${stone}_mossy_cobble_wall` })
-		event.remove({ id: `tfc:stonecutting/rock/${stone}_smooth_wall` })
-		event.remove({ id: `tfc:stonecutting/rock/${stone}_bricks_wall` })
-		event.remove({ id: `tfc:stonecutting/rock/${stone}_cracked_bricks_wall` })
-		event.remove({ id: `tfc:stonecutting/rock/${stone}_mossy_bricks_wall` })
-
 		// Hardened -> Smooth
 		event.stonecutting(`tfc:rock/smooth/${stone}`, `tfc:rock/hardened/${stone}`).id(`hardened_${stone}_to_smooth`)
 
 		// Chiseled Brick -> Brick
 		event.stonecutting(`tfc:rock/chiseled/${stone}`, `tfc:rock/bricks/${stone}`).id(`chiseled_${stone}`)
-
-		//Walls
-		event.stonecutting(`2x tfc:rock/raw/${stone}_wall`, `tfc:rock/raw/${stone}`).id(`raw_to_${stone}_raw_wall`)
-		event.stonecutting(`2x tfc:rock/cobble/${stone}_wall`, `tfc:rock/cobble/${stone}`).id(`cobble_to_${stone}_cobble_wall`)
-		event.stonecutting(`2x tfc:rock/mossy_cobble/${stone}_wall`, `tfc:rock/mossy_cobble/${stone}`).id(`mossy_cobble_to_${stone}_mossy_cobble_wall`)
-		event.stonecutting(`2x tfc:rock/smooth/${stone}_wall`, `tfc:rock/smooth/${stone}`).id(`smooth_to_${stone}_smooth_wall`)
-		event.stonecutting(`2x tfc:rock/bricks/${stone}_wall`, `tfc:rock/bricks/${stone}`).id(`bricks_to_${stone}_bricks_wall`)
-		event.stonecutting(`2x tfc:rock/cracked_bricks/${stone}_wall`, `tfc:rock/cracked_bricks/${stone}`).id(`cracked_bricks_to_${stone}_cracked_bricks_wall`)
-		event.stonecutting(`2x tfc:rock/mossy_bricks/${stone}_wall`, `tfc:rock/mossy_bricks/${stone}`).id(`mossy_bricks_to_${stone}_mossy_bricks_wall`)
 
 		// #endregion
 
