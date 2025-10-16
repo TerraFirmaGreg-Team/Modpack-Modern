@@ -1736,4 +1736,9 @@ const registerGTCEURecipes = (event) => {
 		.id('tfg:barrel/reinforced_dark_concrete_support')
 
 	// Change
+
+	event.remove({ id: 'gtceu:large_boiler/minecraft_ladder' })
+	event.remove({ id: 'gtceu:steam_boiler/minecraft_ladder' })
+	event.remove({ id: 'gtceu:large_boiler/gtceu_wood_frame' })
+	event.remove({ id: 'gtceu:steam_boiler/gtceu_wood_frame' })
 }
