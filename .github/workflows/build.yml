@@ -326,7 +326,7 @@ jobs:
 
       - name: 📦 Export modpack
         run: |
-          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          # curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           java -jar pakku.jar fetch
           java -jar pakku.jar export
 
