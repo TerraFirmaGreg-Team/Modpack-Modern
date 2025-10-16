@@ -87,11 +87,6 @@ const registerCreateItemTags = (event) => {
 	event.add('create:non_movable', 'tfg:geyser_source')
 	event.add('create:non_movable', 'tfg:geyser_source_small')
 
-	event.add('c:hidden_from_recipe_viewers', 'create:cardboard_package_12x10')
-	event.add('c:hidden_from_recipe_viewers', 'create:cardboard_package_10x8')
-	event.add('c:hidden_from_recipe_viewers', 'create:cardboard_package_10x12')
-	event.add('c:hidden_from_recipe_viewers', 'create:cardboard_package_12x12')
-
 	event.remove('create:stone_types/deepslate', 'minecraft:deepslate')
 	event.remove('create:stone_types/dripstone', 'minecraft:dripstone_block')
 	event.remove('create:stone_types/blackstone', 'minecraft:blackstone')
