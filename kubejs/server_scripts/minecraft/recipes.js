@@ -898,7 +898,7 @@ const registerMinecraftRecipes = (event) => {
 
 	generateCutterRecipe(event, '#forge:double_plates/wrought_iron', 'minecraft:iron_door', 400, GTValues.VA[GTValues.LV], 'iron_door')
 
-	event.shaped('4x minecraft:ladder', [
+	event.shaped('8x minecraft:ladder', [
 		'A A',
 		'AAA',
 		'A A'
