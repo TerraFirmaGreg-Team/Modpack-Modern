@@ -2,7 +2,7 @@
 	"name": "Кельма",
 	"icon": "tfg:trowel",
 	"category": "tfc:mechanics",
-	"priority": true,
+	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:crafting",
