@@ -1,0 +1,28 @@
+{
+    "name": "灌溉",
+    "category": "tfc:firmalife",
+    "icon": "firmalife:sprinkler",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)喷洒器$() 是一种可向其下方 5×6×5 范围内均匀喷水的装置。当它开始滴落水粒子时，说明正在工作。朝上的喷洒器会灌溉其上方同样大小的区域。"
+        },
+        {
+            "type": "tfc:anvil_recipe",
+            "recipe": "firmalife:anvil/sprinkler",
+            "text": "喷洒器由一块 $(thing)铜板$() 制成。"
+        },
+        {
+            "title": "管道系统",
+            "item": "gtceu:copper_tiny_fluid_pipe",
+            "type": "patchouli:spotlight",
+            "text": "喷洒器必须连接到一套供水管道才能工作。这通过将一系列 $(thing)流体管道$() 连接到喷洒器实现。你可以用 $(thing)机械泵$() 向其中加水。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "你可以右键点击管道并使用格雷科技的框架（如 $(thing)铜框架$()）使其与墙面齐平，或使用温室接口。之后即可直接将喷洒器接在管道上！用扳手右键管道可调整方向，按住 Shift 并$(thing)空手$()右键可设置为单向流动。"
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 8
+}

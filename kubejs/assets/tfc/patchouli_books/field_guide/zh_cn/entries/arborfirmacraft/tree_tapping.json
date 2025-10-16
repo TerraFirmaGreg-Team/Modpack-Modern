@@ -1,0 +1,36 @@
+{
+    "name": "采集树木液汁",
+    "category": "tfc:arborfirmacraft",
+    "icon": "afc:tree_tap",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "某些类型的树木可以被 tapped 获取有用液体：有的产出富含糖分的 sap（可浓缩为糖浆），有的产出乳胶（可制橡胶），还有的产出树脂（可制松香，替代蜡）。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "采集枫树 sap",
+            "images": [
+                "afc:textures/gui/book/maple_tapping.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "采集树木液汁需三样东西：树本身、树 taps（需用铜锭打造并安装在至少三层高的树干上），以及一个放在 taps 正下方、朝上的桶。若条件合适，桶将立刻开始收集树液。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/tree_tapping/tapping_kapok.png"
+            ],
+            "text": "有效配置：用于从木棉树中提取乳胶",
+            "border": true
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 1,
+    "extra_recipe_mappings": {
+        "afc:tree_tap": 0
+    }
+}

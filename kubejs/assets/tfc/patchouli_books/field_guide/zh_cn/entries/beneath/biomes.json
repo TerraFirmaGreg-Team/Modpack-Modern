@@ -1,0 +1,75 @@
+{
+    "name": "地形类型",
+    "category": "tfc:beneath",
+    "icon": "minecraft:spyglass",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "底层有全新的地形类型等待探索！大多数分为两类：$(thing)上层$() 和 $(thing)下层$()。上层地形只出现在较高处，而下层则靠近岩浆区域。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "繁茂空谷",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/lush_hollow.png"
+            ],
+            "border": true,
+            "text": "湿润且植被茂盛！是地下基地最宜居的区域。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "腐化洞窟",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+            ],
+            "border": true,
+            "text": "大自然在此努力分解腐烂物质——这里是潮湿且充满腐殖质的地方。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "蛛网巢穴",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/webbed_lair.png"
+            ],
+            "border": true,
+            "text": "不用猜也知道住在这里的是什么生物！也包含巨大的 $(thing)石灰华$() 柱。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "灰烬森林",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/ash_forest.png"
+            ],
+            "border": true,
+            "text": "因高温引发频繁火灾后，茂密深渊残留下来的地貌。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "熔岩浮岛",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/lava_floes.png"
+            ],
+            "border": true,
+            "text": "富含矿产的 $(thing)辉长岩$() 地区，被岩浆河流分割。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "玄武岩三角洲",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+            ],
+            "border": true,
+            "text": "大家熟悉的下界地形回归了，仍然和以前一样危险。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "深层洞穴",
+            "images": [
+                "tfg:textures/gui/field_guide/nether/deep_caves.png"
+            ],
+            "border": true,
+            "text": "在其他地形之间，是更多平淡的区域，包括角闪岩、片麻岩、花岗岩、闪长岩和片岩。$(br)"
+        }
+    ],
+    "read_by_default": true
+}

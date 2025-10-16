@@ -1,0 +1,52 @@
+{
+    "name": "物品管理",
+    "category": "tfc:tfg_tips",
+    "icon": "minecraft:chest",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "物品管理",
+            "text": "你已经有几个 $(l:getting_started/pottery#vessel)容器$() 和一些 $(item)木制箱子$()，但还是堆满了你不知道怎么处理的物品。下一步该做什么？$(br2)一个 $(thing)背包$() 可以在基础等级时让你的随身物品栏翻倍，而后续升级还能进一步增加容量！"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfg:sophisticated_backpacks/shaped/backpack",
+            "text": "背包可以携带多个重型物品，也包括像原木堆这样大的物品，而不会让你被限制移动速度。$(br2)你甚至可以用 $(thing)合成升级模块$() 将一个工作台随身携带，走到哪用到哪。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "箱子",
+            "anchor": "crates",
+            "text": "用于存储，GregTech 提供了 $(item)箱子$()，它们能装下所有背包能放的东西，不同等级的箱子可以容纳更多物品。$(br2)你还可以给箱子安装 $(thing)物品过滤器$() 或 $(thing)标签过滤器$() 来搭建一个基础的分类系统。$(br2)但 $(thing)物品管道$() 不会自动吸入物品，你需要一个 $(thing)漏斗$() 或 $(thing)传送带$() 把东西推进去。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "gtceu:shaped/wooden_crate",
+            "recipe2": "gtceu:shaped/bronze_crate"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "油桶",
+            "anchor": "drums",
+            "text": "用于储存液体，GregTech 提供了 $(item)油桶$()。它们可以装大量单一类型的液体，不同等级的油桶容量递增，就如同箱子一样。$(br2)与箱子不同的是，油桶在被破坏时会保留其内部液体，非常适合搬运流体。$(br2)你可以用 $(thing)螺丝刀$() 右键点击油桶，让它自动从底部推出液体。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "gtceu:shaped/bronze_drum",
+            "text": "把油桶放在 crafting 网格中可清空其内容物。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:lv_super_chest,gtceu:lv_super_tank",
+            "title": "超级存储",
+            "text": "你是否正在大规模生产某样物品？GregTech 的 $(thing)超级箱子$() 和 $(thing)超级储罐$() 可以容纳海量单种物品，并且还能自动丢弃溢出的部分。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "应用能源 2",
+            "item": "ae2:drive",
+            "text": "在 $(thing)HV$() 阶段后解锁，AE2 能提供你想要的所有存储和物流解决方案。"
+        }
+    ]
+}

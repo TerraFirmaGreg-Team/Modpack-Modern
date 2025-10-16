@@ -1,0 +1,80 @@
+{
+    "__comment__": "此文件由 mcresources 自动生成",
+    "name": "石磨",
+    "category": "tfc:mechanics",
+    "icon": "tfc:quern",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)石磨$() 是一种用于研磨物品的装置。它可以粉碎原矿以用于 $(l:tfg_ores/ore_basics#processing)处理$()，还能制作粉末、$(l:mechanics/dye)染料$() 以及其他物品。石磨由一个 $(thing)底座$() 和一个 $(thing)手磨石$() 组成。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/quern",
+            "text": "石磨的底座可以用三块 $(thing)光滑石$() 和三块其他类型的 $(thing)石头$() 块制作。$(br2)石头可通过 $(l:getting_started/primitive_anvils#raw_rock)采集$() 获得，而光滑石头则需要用 $(l:mechanics/chisel)凿子$() 加工。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/handstone",
+            "text": "石磨需要一个 $(thing)手磨石$() 才能运作。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/quern_empty.png"
+            ],
+            "text": "将光标指向石磨方块顶部，然后按 $(item)$(k:key.use)$() 来放置手磨石。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/quern_add_item.png"
+            ],
+            "text": "在手磨石顶部使用 $(item)$(k:key.use)$() 来添加物品。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/quern_handle.png"
+            ],
+            "text": "按下 $(item)$(k:key.use)$() 操作把手，以转动手磨石。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/quern_result.png"
+            ],
+            "text": "输出物会出现在石磨底座上。点击 $(item)$(k:key.use)$() 任意位置即可取出结果。",
+            "border": true
+        },
+        {
+            "type": "tfc:quern_recipe",
+            "title": "碎矿",
+            "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
+            "text": "$(l:tfg_ores/ore_basics#processing)矿石$() 可通过研磨获得更多的金属。"
+        },
+        {
+            "type": "tfc:quern_recipe",
+            "title": "粉末",
+            "recipe": "tfg:quern/sulfur_powder",
+            "text": "石磨可用于将矿物粉尘（如 $(thing)硫磺$()）制成各种 $(thing)粉末$()。$(thing)宝石$() 也可被研磨成粉末。"
+        },
+        {
+            "type": "tfc:quern_recipe",
+            "title": "染料",
+            "recipe": "tfc:quern/red_dye",
+            "text": "$(l:mechanics/dye)染料$() 可从多种花朵中提取。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfc:foods/flour"
+            },
+            "text": "$(thing)农作物$() 可用刀具或石磨加工成 $(thing)谷物$()，进一步研磨可得到 $(thing)面粉$()。"
+        }
+    ],
+    "read_by_default": true
+}

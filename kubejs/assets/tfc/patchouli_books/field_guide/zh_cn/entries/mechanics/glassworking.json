@@ -1,0 +1,82 @@
+{
+    "__comment__": "This file was automatically created by mcresources",
+    "name": "玻璃工艺",
+    "category": "tfc:mechanics",
+    "icon": "tfc:silica_glass_bottle",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "玻璃工艺是将沙子转化为玻璃的过程。首先要制作一种 $(thing)玻璃批次$()，共有四种类型：$(br)$(br) 1. $(thing)石英型$()，来自白色沙子。$(br) 2. $(thing)赤铁矿型$()，来自黄色、红色或粉色沙子。$(br) 3. $(thing)橄榄石型$()，来自绿色或棕色沙子。$(br) 4. $(thing)火山型$()，来自黑色沙子。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "石英玻璃批次",
+            "recipe": "tfc:crafting/silica_glass_batch",
+            "text": "玻璃批次可通过上述任一颜色的沙子，加上 $(l:mechanics/glassworking#lime)石灰$() 和一种 $(l:mechanics/glassworking#potash)草碱$() 制成。"
+        },
+        {
+            "type": "patchouli:smelting",
+            "anchor": "lime",
+            "recipe": "tfg:smelting/lime",
+            "text": "$(thing)石灰$() 是制作玻璃批次所需的原料之一，通过 $(l:mechanics/heating)加热$() $(l:mechanics/flux)萤石$() 获得。"
+        },
+        {
+            "type": "patchouli:smelting",
+            "anchor": "potash",
+            "recipe": "tfg:smelting/dried_seaweed_to_soda",
+            "recipe2": "tfg:smelting/dried_kelp_to_soda",
+            "text": "另一种必需材料是 $(thing)草碱$() 或其替代品。$(thing)纯碱粉$() 由干燥的 $(thing)海带$() 或 $(thing)海藻$() 加热制成。$(l:tfg_ores/earth_vein_index#normal_saltpeter)硝石$() 也可作为替代品。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "玻璃工艺需从一个玻璃批次开始，随后完成一系列步骤。这些步骤可能需要特定工具：$(br)$(li)使用 $(l:mechanics/glassworking#blowpipe)吹管$() 进行 $(thing)吹制$() 和 $(thing)拉伸$()$(li)使用 $(l:mechanics/glassworking#paddle)压板$() 进行 $(thing)压平$()$(li)使用 $(l:mechanics/glassworking#jacks)夹钳$() 进行 $(thing)捏合$()$(li)使用 $(l:mechanics/glassworking#saw)宝石锯$() 进行 $(thing)切割$()",
+            "title": "必备工具"
+        },
+        {
+            "type": "tfc:knapping_recipe",
+            "anchor": "blowpipe",
+            "recipe": "tfc:clay_knapping/blowpipe",
+            "text": "最重要的工具是 $(thing)吹管$()。你可以从黏土中 $(thing)敲打$() 出来，再经煅烧得到 $(thing)陶制吹管$()。"
+        },
+        {
+            "type": "tfc:anvil_recipe",
+            "recipe": "tfc:anvil/blowpipe",
+            "text": "陶制吹管易碎，使用时有损坏风险。更坚固的版本可将 $(thing)黄铜棒$() 在铁砧上锻造而成。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "paddle",
+            "recipe": "tfc:crafting/paddle",
+            "text": "进行 $(thing)压平$() 操作需要 $(thing)压板$()，它由木材制作而成。"
+        },
+        {
+            "type": "tfc:welding_recipe",
+            "anchor": "jacks",
+            "recipe": "tfc:welding/jacks",
+            "text": "进行 $(thing)捏合$() 操作可用 $(thing)夹钳$()，它是通过焊接两根黄铜棒制成。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "saw",
+            "recipe": "tfc:crafting/gem_saw",
+            "text": "进行 $(thing)切割$() 操作需要 $(thing)宝石锯$()。这款锯子还能用来破碎 $(thing)玻璃块$() 和 $(thing)玻璃窗$()，从而回收它们。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "首先，吹管上的玻璃需加热到 $(4)$(bold)微红$()。此时双手配合操作：$(br)$(li)用右手持吹管，按住 $(item)$(k:key.use)$() 执行每一步操作。$(br)$(li)使用 $(item)$(k:key.swapOffhand)$() 可将热吹管放入副手。$(br2)$(bold)吹制$()$(br)面向前方时按住 $(k:key.use)$()$(br2)$(bold)拉伸$()$(br)面向下方时按住 $(k:key.use)$()",
+            "title": "如何吹玻璃"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)压平$()$(br)手持吹管的同时用主手握着 $(l:mechanics/glassworking#paddle)压板$()$(br2)$(bold)捏合$()$(br)持有 $(l:mechanics/glassworking#jacks)夹钳$()$(br2)$(bold)切割$()$(br)持有 $(l:mechanics/glassworking#saw)宝石锯$()$(br2)$(bold)滚动$()$(br)使用含有 $(l:mechanics/weaving#wool_cloth)羊毛布$() 的主手控制玻璃滚轮"
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "tfc:powder/lime": 2,
+        "tfc:powder/soda_ash": 3,
+        "tfc:paddle": 7,
+        "tfc:jacks": 8,
+        "tfc:gem_saw": 9
+    }
+}

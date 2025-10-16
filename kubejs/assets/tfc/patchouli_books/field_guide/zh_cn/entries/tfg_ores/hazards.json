@@ -1,0 +1,95 @@
+{
+    "name": "危险材料",
+    "icon": "createdeco:decal_skull",
+    "category": "tfc:tfg_ores",
+    "priority": true,
+    "sortnum": 1,
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "title": "危险材料",
+            "item": "gtceu:cobaltite_dust",
+            "text": "某些矿石和粉尘具有危险性，若存放在物品栏中可能会对你造成负面效果甚至致命伤害。$(br2)特定装备如$(thing)口罩$()、$(thing)手套$()以及后续的$(thing)防化服$()可用于抵御这些效果。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "口罩",
+            "recipe": "gtceu:shaped/face_mask",
+            "text": "$(thing)口罩$()能抵御所有$(item)吸入性$()危害，例如砷中毒。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:rubber_gloves",
+            "title": "橡胶手套",
+            "link_recipes": true,
+            "text": "橡胶手套可由$(l:mechanics/leather_making)皮革$()与$(l:arborfirmacraft/making_rubber)乳胶$()制作，或直接使用橡胶片合成。它们能防护所有$(item)皮肤接触$()类危害，例如铍中毒。"
+        },
+        {
+            "type": "tfc:knapping_recipe",
+            "recipe": "tfchotornot:leather_knapping/mittens",
+            "text": "首先，把皮革敲制成连指手套。"
+        },
+        {
+            "type": "tfc:sealed_barrel_recipe",
+            "recipe": "tfg:sealed_barrel/prepared_leather_gloves",
+            "text": "将连指手套浸入由水果与酒精混合而成的$(thing)醋$()中。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfg:latex_soaked_gloves",
+            "text": "将处理过的皮革手套与$(thing)硫化乳胶$()一同在$(thing)锅$()中加热，此时距制成橡胶手套仅一步之遥。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:rubber_gloves",
+            "text": "最后，将浸胶手套放入$(l:firmalife/oven)烤炉$()中加热定型。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "岩石策略",
+            "item": {
+                "tag": "tfc:rock_knapping"
+            },
+            "text": "避免危险物品进入物品栏的最简单方法就是根本不拾取它们。$(br)例如，用$(thing)石头$()填满物品栏后，你可以选择性拾取所需物品，留待之后统一处理危险物资。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "容器隔离",
+            "text": "危险材料仅当存放在$(thing)物品栏$()时才会造成伤害，其他容器则不受此影响！$(br)当危险材料存放在$(l:tfg_tips/inventory_management)背包$()或$(l:getting_started/pottery#vessel)大缸$()等容器中时不会造成伤害。手持大缸时$(thing)右键点击$()可直接与容器进行物品转移。",
+            "item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "温泉疗愈",
+            "item": "tfc:bucket/spring_water",
+            "text": "站立于$(thing)温泉$()中可获得缓慢的$(thing)生命恢复$()效果。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "陈酿酒",
+            "text": "$(thing)陈酿酒$()会提供药水增益效果，其中部分可能对你大有裨益。$(br2)你可以使用$(l:getting_started/pottery#jug)陶壶$()或$(l:waterflasks/recipes)水壶$()饮用它们。",
+            "item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "陈酿啤酒：伤害吸收 II (20:00)$(br2)陈酿苹果酒：速度 (5:20)$(br2)陈酿朗姆酒：速度 II (2:40)$(br2)陈酿清酒：抗性提升 (5:20)$(br2)陈酿伏特加：抗性提升 II (2:40)$(br2)陈酿玉米威士忌：急迫 (5:20)$(br2)陈酿黑麦威士忌：急迫 (5:20)$(br2)陈酿威士忌：急迫 II (2:40)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfc:foods"
+            },
+            "title": "营养均衡",
+            "text": "食用更高$(l:getting_started/food_and_water#nutrients)营养$()价值的优质食物可显著提升生命值上限。$(br2)$(l:mechanics/pot#soup)汤$()、$(l:mechanics/sandwiches)三明治$()与$(l:mechanics/salad)沙拉$()是绝佳选择。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "随身床铺",
+            "item": {
+                "tag": "minecraft:beds"
+            },
+            "text": "若所有防护措施均失效，随身携带床铺用于重生是个明智之举。$(br2)若无法获取$(thing)羊毛$()或$(thing)线$()，你也可以制作$(l:getting_started/a_place_to_sleep)茅草床$()。"
+        }
+    ]
+}

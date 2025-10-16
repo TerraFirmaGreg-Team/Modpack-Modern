@@ -1,0 +1,76 @@
+{
+    "name": "矿产与矿物",
+    "category": "tfc:beneath",
+    "icon": "beneath:ore/normal_nether_gold",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "你可以在底层找到的矿产大多与地表相似，但有一些改动。请参考 $(l:tfg_ores)TFG 中的矿石分类$() 获取详细信息。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "混合岩",
+            "item": {
+                "tag": "forge:ores_in_ground/deepslate"
+            },
+            "text": "最常见的岩石类型是混合岩。这种深层变质岩包含了你在地表其他岩石中常见的多种矿产。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "石灰华",
+            "item": {
+                "tag": "forge:ores_in_ground/dripstone"
+            },
+            "text": "在较湿地区，你可能发现 $(thing)石灰华$()。这是一种沉积岩，可含有与混合岩相似类型的矿藏。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "辉长岩",
+            "item": {
+                "tag": "forge:ores_in_ground/pyroxenite"
+            },
+            "text": "在底层最深处，不同岩性逐渐变为 $(thing)辉长岩$()。这种超镁铁质火成岩富含矿石，但也伴随着极端高温，做好准备再深入！"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "anchor": "cursecoal",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "beneath:ore/nether_cursecoal"
+                }
+            },
+            "name": "无烟煤",
+            "text": "无烟煤是一种强大的 $(l:beneath/hellforge)燃料$()。可在底层上半部分的混合岩中找到。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "anchor": "sylvite",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "beneath:ore/blackstone_sylvite"
+                }
+            },
+            "name": "钾盐",
+            "text": "钾盐是一种肥料，可在底层下半部分的辉长岩中找到。",
+            "enable_visualize": false
+        }
+    ],
+    "read_by_default": true
+}
