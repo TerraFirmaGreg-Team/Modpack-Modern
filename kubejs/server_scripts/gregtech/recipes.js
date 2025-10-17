@@ -1737,8 +1737,15 @@ const registerGTCEURecipes = (event) => {
 
 	// Change
 
-	event.remove({ id: 'gtceu:large_boiler/minecraft_ladder' })
-	event.remove({ id: 'gtceu:steam_boiler/minecraft_ladder' })
-	event.remove({ id: 'gtceu:large_boiler/gtceu_wood_frame' })
-	event.remove({ id: 'gtceu:steam_boiler/gtceu_wood_frame' })
+	// The 9x buff for large boiler recipes above does not apply to this for some reason, so it gets 3x duration for an effective 1/3 reduction instead
+
+	event.forEachRecipe({ id: /gtceu:large_boiler\/(minecraft_ladder|gtceu_wood_frame)/ }, recipe => {
+            var newDuration = recipe.get("duration")
+            recipe.set("duration", newDuration*3)
+        })
+
+	event.forEachRecipe({ id: /gtceu:steam_boiler\/(minecraft_ladder|gtceu_wood_frame)/ }, recipe => {
+            var newDuration = recipe.get("duration")
+            recipe.set("duration", newDuration/3)
+        })
 }
