@@ -5477,7 +5477,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "everycomp-1.20-2.9.7-forge.jar",
+                    "file_name": "everycomp-1.20-2.9.8-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5485,22 +5485,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/eiktJyw1/versions/HFNIbc5b/everycomp-1.20-2.9.7-forge.jar",
-                    "id": "HFNIbc5b",
+                    "url": "https://cdn.modrinth.com/data/eiktJyw1/versions/euwlwydU/everycomp-1.20-2.9.8-forge.jar",
+                    "id": "euwlwydU",
                     "parent_id": "eiktJyw1",
                     "hashes": {
-                        "sha512": "06e7163f9092627a521cdd64b876d9826355f81e4a10986d9d450fc49516dac3b6f662f58cee2092fa9571752833298f7bb37ab2d0c6473f32c4287fca4621a9",
-                        "sha1": "ae02d96e32bd3f70c8a75afb6ed16ab65ffc8da2"
+                        "sha512": "5960f52f0808161ad4326415d809c745fdc136b2cecf2d7d735dd61fa13eff3182a2f9fc53f957f35c349b77be2002e29cce6337b0ba61fa1f9f281c88850b38",
+                        "sha1": "9e54a66019e9d510ff4b08b79922a969d9add380"
                     },
                     "required_dependencies": [
                         "twkfQtEc"
                     ],
-                    "size": 2787242,
-                    "date_published": "2025-10-15T04:17:14.855937Z"
+                    "size": 2787368,
+                    "date_published": "2025-10-16T03:06:34.731902Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "everycomp-1.20-2.9.7-forge.jar",
+                    "file_name": "everycomp-1.20-2.9.8-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5508,18 +5508,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7108/490/everycomp-1.20-2.9.7-forge.jar",
-                    "id": "7108490",
+                    "url": "https://edge.forgecdn.net/files/7112/56/everycomp-1.20-2.9.8-forge.jar",
+                    "id": "7112056",
                     "parent_id": "628539",
                     "hashes": {
-                        "sha1": "ae02d96e32bd3f70c8a75afb6ed16ab65ffc8da2",
-                        "md5": "76273307950001630cc37c6c3eb98233"
+                        "sha1": "9e54a66019e9d510ff4b08b79922a969d9add380",
+                        "md5": "d0f21508079896c96f1052cc21edd392"
                     },
                     "required_dependencies": [
                         "499980"
                     ],
-                    "size": 2787242,
-                    "date_published": "2025-10-15T04:17:04.173Z"
+                    "size": 2787368,
+                    "date_published": "2025-10-16T03:06:22.227Z"
                 }
             ]
         },
@@ -7439,6 +7439,74 @@
                     "required_dependencies": [],
                     "size": 4821,
                     "date_published": "2024-10-01T16:22:52.525878Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "s6Jr0kJU14wGbx5U",
+            "pakku_links": [
+                "64uacGcEw697jVGs"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "ihearttfc",
+                "modrinth": "ihearttfc"
+            },
+            "name": {
+                "curseforge": "I ❤ TFC (I Heart TFC)",
+                "modrinth": "I ❤ TFC (I Heart TFC)"
+            },
+            "id": {
+                "curseforge": "1118578",
+                "modrinth": "XjM4YE3F"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ihearttfc-1.20.1-1.0.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5901/425/ihearttfc-1.20.1-1.0.2.jar",
+                    "id": "5901425",
+                    "parent_id": "1118578",
+                    "hashes": {
+                        "sha1": "bc2d8febd3ddb7f5a0da5c840544ad49eb6e8625",
+                        "md5": "efcf3b790437b54d1993aa064674354c"
+                    },
+                    "required_dependencies": [],
+                    "size": 103491,
+                    "date_published": "2024-11-14T01:23:08.710Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "ihearttfc-1.20.1-1.0.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/XjM4YE3F/versions/ZX9aSizu/ihearttfc-1.20.1-1.0.2.jar",
+                    "id": "ZX9aSizu",
+                    "parent_id": "XjM4YE3F",
+                    "hashes": {
+                        "sha512": "09747d4a3932970d765cebc4d981f518d8939a035078b45f28286241dfe7ed19246d12d0d48a2a8422f0d6ac0832f89efdfb5e861e74b665456fb84eb6713157",
+                        "sha1": "bc2d8febd3ddb7f5a0da5c840544ad49eb6e8625"
+                    },
+                    "required_dependencies": [
+                        "JaCEZUhg"
+                    ],
+                    "size": 103491,
+                    "date_published": "2024-11-14T01:25:07.688102Z"
                 }
             ]
         },
