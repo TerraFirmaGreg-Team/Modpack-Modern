@@ -1,7 +1,7 @@
 # Changelog
 ## [Unreleased]
 ### Changes
-- Normalized ladder crafting outputs, removed ladders as steam boiler fuel @oosyrag
+- Normalized ladder crafting outputs, reduced ladders and wood frame burn times @oosyrag
 ### Bug fixes
 ### Translation updates
 
