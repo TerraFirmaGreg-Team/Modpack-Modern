@@ -4,6 +4,7 @@
 - Normalized ladder crafting outputs, reduced ladders and wood frame burn times @oosyrag
 - Added beer battered dinosaur nuggets, made from real dinosaur and real beer @Pyritie
 - Added create packages/jars back to JEI so you can use them in filters, and added a tag for all jars (#2044) @Nashy1232
+- Slightly reduced spawn chance of illages and nerfed the amount of loot you get from them @Pyritie
 ### Bug fixes
 - Added circuit numbers to the Formic Acid and Ammonium Chloride chemical reactor recipes @Pyritie
 - Fixed inconsistent circuit numbers between CR and LCR for specific recipes. #2047 @Redeix
