@@ -9,7 +9,8 @@
 ### Bug fixes
 - Fixed the interplanetary wireless card so it doesn't use a huge amount of power when just having it open @ko-lja
 - Added circuit numbers to the Formic Acid and Ammonium Chloride chemical reactor recipes @Pyritie
-- Fixed inconsistent circuit numbers between CR and LCR for specific recipes. #2047 @Redeix
+- Fixed inconsistent circuit numbers between CR and LCR for specific recipes (#2047) @Redeix
+- Driverless rockets should now properly explode at world height limit instead of getting stuck @Pyritie
 ### Translation updates
 
 ## [0.11.3] - 15-10-2025
