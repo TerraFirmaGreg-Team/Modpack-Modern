@@ -454,8 +454,8 @@ function registerTFGFoodData(event) {
 
 	event.foodItem("tfg:food/cooked_long_pig_filet", (food) => {
 		food.hunger(6);
-		food.saturation(3);
-		food.protein(5);
+		food.saturation(2);
+		food.protein(2);
 		food.decayModifier(1.5);
 	});
 
@@ -675,6 +675,19 @@ function registerTFGFoodData(event) {
 		food.saturation(2.5);
 		food.decayModifier(1.5);
 		food.vegetables(2);
+	});
+
+	event.foodItem('tfg:food/raw_dino_nugget', (food) => {
+		food.type("dynamic");
+		food.hunger(1);
+		food.decayModifier(3);
+	});
+
+	event.foodItem('tfg:food/cooked_dino_nugget', (food) => {
+		food.type("dynamic");
+		food.hunger(3);
+		food.saturation(2);
+		food.decayModifier(1.5);
 	});
 
 	// misc

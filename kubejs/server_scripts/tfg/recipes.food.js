@@ -112,7 +112,7 @@ function registerTFGFoodRecipes(event) {
 			itemInputs: [input],
 			itemOutputs: [out],
 			fluidInputs: (fluid === undefined) ? [] : [fluid],
-			itemOutputProvider: (isFirmaDynamic) ? TFC.isp.of(out).firmaLifeCopyDynamicFood() : TFC.isp.of(out).copyFood().addTrait("firmalife:oven_baked")
+			itemOutputProvider: ((isFirmaDynamic) ? TFC.isp.of(out).firmaLifeCopyDynamicFood() : TFC.isp.of(out).copyFood()).addTrait("firmalife:oven_baked")
 		})
 	}
 
@@ -1176,12 +1176,16 @@ function registerTFGFoodRecipes(event) {
 
 	event.recipes.tfc.heating('tfg:food/raw_long_pig_filet', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_long_pig_filet').copyFood())
+
+	event.recipes.tfc.heating('tfg:food/raw_dino_nugget', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_dino_nugget').copyFood())
 		
 	event.recipes.tfc.advanced_shapeless_crafting(
 		TFC.itemStackProvider.of('tfg:food/raw_stickastackatick').copyFood(),
 		[TFC.ingredient.notRotten('tfg:food/raw_stackatick_chunks'), '#forge:rods/wood'], 'tfg:food/raw_stackatick_chunks')
 		.id(`tfg:crafting/raw_stickastackatick`)
 
+	// Bulbkin
 	event.recipes.tfc.advanced_shapeless_crafting(
 		TFC.itemStackProvider.of('4x betterend:cave_pumpkin_chunks').copyFood(),
 		[TFC.ingredient.notRotten('betterend:cave_pumpkin'), '#forge:tools/hammers'], 'betterend:cave_pumpkin')
@@ -1202,13 +1206,19 @@ function registerTFGFoodRecipes(event) {
 	processorRecipe("cave_pumpkin_pie_dough", 300, GTValues.VA[GTValues.HV], {
 		itemInputs: ['#tfg:martian_eggs', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', 'tfg:wraptor_sugar'],
 		fluidInputs: ['minecraft:water 1000'],
-		itemOutputs: ["betterend:cave_pumpkin_pie_dough"]
+		itemOutputs: ["betterend:cave_pumpkin_pie_dough"],
+		itemOutputProvider: TFC.isp.of("betterend:cave_pumpkin_pie_dough").copyOldestFood()
 	})
 
 	event.recipes.firmalife.mixing_bowl()
-		.ingredients(['#tfg:martian_eggs', 'betterend:cave_pumpkin_chunks', 'betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', 'tfg:wraptor_sugar'],
+		.ingredients([
+			TFC.ingredient.notRotten('#tfg:martian_eggs'), 
+			TFC.ingredient.notRotten('betterend:cave_pumpkin_chunks'), 
+			TFC.ingredient.notRotten('betterend:cave_pumpkin_chunks'), 
+			TFC.ingredient.notRotten('betterend:amber_root_product'),
+			'tfg:wraptor_sugar'],
 			Fluid.of('minecraft:water', 1000))
-		.outputItem('betterend:cave_pumpkin_pie_dough')
+		.outputItem(TFC.isp.of('betterend:cave_pumpkin_pie_dough').copyOldestFood())
 		.id('tfg:mixing_bowl/cave_pumpkin_pie_dough')
 
 	event.recipes.tfc.advanced_shapeless_crafting(
@@ -1221,6 +1231,30 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: [`betterend:cave_pumpkin_pie_dough`, "#firmalife:pie_pans"],
 		itemOutputs: ["betterend:cave_pumpkin_pie_raw"],
 		itemOutputProvider: TFC.isp.of("betterend:cave_pumpkin_pie_raw").copyFood()
+	})
+
+	// Dino nugs
+	registerFoodRecipe("food_oven", "raw_dino_nugget", 300, GTValues.VA[GTValues.LV], "", {
+		itemInputs: ["tfg:food/raw_dino_nugget"],
+		itemOutputs: ["tfg:food/cooked_dino_nugget"],
+		fluidInputs: [],
+		itemOutputProvider: TFC.isp.of("tfg:food/cooked_dino_nugget")
+			.firmaLifeCopyDynamicFood()
+			.addTrait("firmalife:oven_baked")
+			.meal(
+				(food) => food.hunger(3).saturation(2).decayModifier(1.5),
+				[(portion) => portion.nutrientModifier(2.0)])
+	})
+
+	processorRecipe("raw_dino_nuggets", 300, GTValues.VA[GTValues.HV], {
+		itemInputs: ['#tfg:raw_dinosaur_meat', '3x #tfc:foods/flour', 'tfc:powder/salt'],
+		fluidInputs: ['tfc:beer 200'],
+		itemOutputs: ['2x tfg:food/raw_dino_nugget'],
+		circuit: 1,
+		itemOutputProvider: TFC.isp.of("2x tfg:food/raw_dino_nugget").meal(
+			(food) => food.hunger(1).decayModifier(3).grain(0.4),
+			[(portion) => portion.nutrientModifier(0.5).waterModifier(0.4)]
+		)
 	})
 
 	//#endregion

@@ -2,6 +2,8 @@
 ## [Unreleased]
 ### Changes
 - Normalized ladder crafting outputs, reduced ladders and wood frame burn times @oosyrag
+- Added beer battered dinosaur nuggets, made from real dinosaur and real beer @Pyritie
+- Added create packages/jars back to JEI so you can use them in filters, and added a tag for all jars (#2044) @Nashy1232
 ### Bug fixes
 ### Translation updates
 

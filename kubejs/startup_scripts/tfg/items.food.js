@@ -72,6 +72,7 @@ function registerTFGFoodItems(event) {
 		.translationKey('item.tfg.roasted_sunflower_seeds')
 		.texture('tfg:item/roasted_sunflower_seeds')
 		.food(food => food.hunger(4).saturation(2))
+		.tag('tfc:foods')
 		.tag('tfc:foods/grains')
 		.tag('tfc:foods/usable_in_salad')
 
@@ -301,7 +302,7 @@ function registerTFGFoodItems(event) {
 	event.create('tfg:food/raw_long_pig_filet')
 		.translationKey('item.tfg.food.raw_long_pig_filet')
 		.texture('tfg:item/food/raw_long_pig_filet')
-		.food(food => food.hunger(2).saturation(2)
+		.food(food => food.hunger(2).saturation(1)
 			.effect('minecraft:hunger', 100, 0, 1))
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
@@ -309,10 +310,22 @@ function registerTFGFoodItems(event) {
 	event.create('tfg:food/cooked_long_pig_filet')
 		.translationKey('item.tfg.food.cooked_long_pig_filet')
 		.texture('tfg:item/food/cooked_long_pig_filet')
-		.food(food => food.hunger(7).saturation(8))
+		.food(food => food.hunger(4).saturation(2))
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
+	// Dino nuggies
+	event.create('tfg:food/raw_dino_nugget')
+		.texture('tfg:item/food/raw_dino_nugget')
+		.food(food => food.hunger(1).saturation(1))
+		.tag('tfc:foods')
+
+	event.create('tfg:food/cooked_dino_nugget')
+		.texture('tfg:item/food/cooked_dino_nugget')
+		.food(food => food.hunger(3).saturation(2))
+		.tag('tfc:foods')
+
+	// Ice soup (intentionally not tagged as food)
 	event.create('tfg:food/ice_soup')
 		.translationKey('item.tfg.food.ice_soup')
 		.texture('tfg:item/food/ice_soup')
@@ -322,5 +335,4 @@ function registerTFGFoodItems(event) {
 				ctx.player.give('tfc:ceramic/bowl')
 			})
 		})
-	// intentionally not tagged as food
 }

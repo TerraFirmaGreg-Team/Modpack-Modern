@@ -11,7 +11,6 @@ const registerTFGItemTags = (event) => {
 	event.add('tfc:seeds', 'tfg:sunflower_seeds')
 	event.add('tfc:seeds', 'tfg:rapeseed_seeds')
 	event.add('tfc:seeds', 'tfg:flax_seeds')
-	event.add('tfc:foods', 'tfg:roasted_sunflower_seeds')
 	event.add('tfc:compost_greens_high', 'tfg:rapeseed_product')
 	event.add('tfc:compost_greens_high', 'tfg:sunflower_product')
 	event.add('tfc:compost_greens_high', 'tfg:flax_product')
@@ -263,6 +262,18 @@ const registerTFGItemTags = (event) => {
 		event.add('tfc:foods/usable_in_jam_sandwich_2', item);
 	});
 
+	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_sniffer_beef')
+	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_wraptor')
+	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_springling_collar')
+	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_walker_steak')
+	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_glider_wings')
+	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_whole_soarer')
+	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_crusher_meat')
+	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_goober_meat')
+	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_cruncher_ribs')
+	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_surfer_steak')
+	event.add('tfg:raw_dinosaur_meat', 'wan_ancient_beasts:raw_ancient_meat')
+
 	//#region Meal Bag
 	/**
 	 * List of item tags and item IDs that are allowed to be used in a meal bag.
@@ -287,7 +298,8 @@ const registerTFGItemTags = (event) => {
 		'firmalife:food/cooked_pasta',
 		'firmalife:food/pasta_with_tomato_sauce',
 		'firmalife:food/cooked_rice_noodles',
-		'tfg:roasted_sunflower_seeds'
+		'tfg:roasted_sunflower_seeds',
+		'tfg:food/cooked_dino_nugget'
 	];
 	usable_in_meal_bag.forEach(item => {
 		event.add('tfg:foods/usable_in_meal_bag', item);
