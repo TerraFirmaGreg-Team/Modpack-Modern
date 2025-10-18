@@ -355,6 +355,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('1x gtceu:light_concrete')
 		.duration(98)
 		.EUt(7)
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.recipes.gtceu.chemical_bath('gtceu:chemical_bath/dark_concrete')
 		.inputFluids(Fluid.of('tfc:black_dye', 18))
@@ -1022,6 +1023,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('gtceu:rubber_gloves')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 
 	event.recipes.tfc.damage_inputs_shaped_crafting(
@@ -1734,6 +1736,14 @@ const registerGTCEURecipes = (event) => {
 		.inputFluid(Fluid.of('tfc:black_dye', 10))
 		.outputItem('tfg:reinforced_dark_concrete_support')
 		.id('tfg:barrel/reinforced_dark_concrete_support')
+
+	event.recipes.gtceu.alloy_smelter('glass_bottle')
+		.itemInputs('#forge:dusts/glass')
+		.itemOutputs('tfc:silica_glass_bottle')
+		.notConsumable('gtceu:bottle_casting_mold')
+		.EUt(2)
+		.duration(20 * 5)
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	// Change
 
