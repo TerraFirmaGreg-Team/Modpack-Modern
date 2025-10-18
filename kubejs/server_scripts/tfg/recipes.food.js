@@ -1257,6 +1257,17 @@ function registerTFGFoodRecipes(event) {
 		)
 	})
 
+	processorRecipe("raw_dino_nuggets_aged_beer", 300, GTValues.VA[GTValues.HV], {
+		itemInputs: ['#tfg:raw_dinosaur_meat', '3x #tfc:foods/flour', 'tfc:powder/salt'],
+		fluidInputs: ['tfcagedalcohol:aged_beer 200'],
+		itemOutputs: ['2x tfg:food/raw_dino_nugget'],
+		circuit: 1,
+		itemOutputProvider: TFC.isp.of("2x tfg:food/raw_dino_nugget").meal(
+			(food) => food.hunger(1).decayModifier(3).grain(0.6),
+			[(portion) => portion.nutrientModifier(0.5).waterModifier(0.4)]
+		)
+	})
+
 	//#endregion
 
 	// Food processing machine recipes
