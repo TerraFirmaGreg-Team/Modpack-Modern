@@ -315,22 +315,22 @@ function registerTFGFoodData(event) {
 	// meats
 
 	event.foodItem("tfg:food/raw_birt", (food) => {
-		food.hunger(4);
-		food.protein(1.5);
+		food.hunger(2);
+		food.protein(1.2);
 		food.decayModifier(3);
 	});
 
 	event.foodItem("tfg:food/cooked_birt", (food) => {
 		food.hunger(4);
 		food.saturation(2);
-		food.protein(2.5);
+		food.protein(2.2);
 		food.decayModifier(2.25);
 	});
 
 	event.foodItem("tfg:food/raw_crawlermari", (food) => {
-		food.hunger(4);
+		food.hunger(2);
 		food.water(5);
-		food.protein(1.1);
+		food.protein(1.2);
 		food.decayModifier(3);
 	});
 
@@ -342,69 +342,69 @@ function registerTFGFoodData(event) {
 	});
 
 	event.foodItem("tfg:food/raw_limpet", (food) => {
-		food.hunger(4);
+		food.hunger(2);
 		food.water(5);
 		food.protein(1.2);
 		food.decayModifier(3);
 	});
 
 	event.foodItem("tfg:food/cooked_limpet", (food) => {
-		food.hunger(5);
+		food.hunger(4);
 		food.saturation(2);
-		food.protein(2.4);
+		food.protein(2.2);
 		food.decayModifier(2.25);
 	});
 
 	event.foodItem("tfg:food/raw_moon_rabbit", (food) => {
-		food.hunger(3);
-		food.protein(2.0);
+		food.hunger(2);
+		food.protein(1.2);
 		food.decayModifier(3);
 	});
 
 	event.foodItem("tfg:food/cooked_moon_rabbit", (food) => {
-		food.hunger(6);
-		food.saturation(2.5);
-		food.protein(5);
+		food.hunger(4);
+		food.saturation(2);
+		food.protein(2.2);
 		food.decayModifier(2.25);
 	});
 
 	event.foodItem("tfg:food/raw_glacian_mutton", (food) => {
-		food.hunger(3);
-		food.protein(2.0);
+		food.hunger(2);
+		food.protein(1.5);
 		food.decayModifier(3);
 	});
 
 	event.foodItem("tfg:food/cooked_glacian_mutton", (food) => {
-		food.hunger(6);
-		food.saturation(3);
-		food.protein(5);
-		food.decayModifier(1.5);
+		food.hunger(4);
+		food.saturation(2);
+		food.protein(3);
+		food.decayModifier(2.25);
 	});
 
 	event.foodItem("tfg:food/raw_sniffer_beef", (food) => {
-		food.hunger(3);
-		food.protein(2.0);
+		food.hunger(2);
+		food.protein(1.5);
 		food.decayModifier(3);
 	});
 
 	event.foodItem("tfg:food/cooked_sniffer_beef", (food) => {
-		food.hunger(6);
-		food.saturation(4);
-		food.protein(7);
-		food.decayModifier(1.5);
+		food.hunger(4);
+		food.saturation(2);
+		food.protein(3);
+		food.decayModifier(2.25);
 	});
 
 	event.foodItem("tfg:food/raw_wraptor", (food) => {
-		food.hunger(3);
-		food.protein(2.0);
+		food.hunger(2);
+		food.protein(1.5);
 		food.decayModifier(3);
 	});
 
 	event.foodItem("tfg:food/cooked_wraptor", (food) => {
-		food.hunger(6);
-		food.saturation(4);
-		food.protein(5);
-		food.decayModifier(1.5);
+		food.hunger(4);
+		food.saturation(2);
+		food.protein(3);
+		food.decayModifier(2.25);
 	});
 
 	event.foodItem("tfg:food/raw_springling_collar", (food) => {
@@ -415,9 +415,9 @@ function registerTFGFoodData(event) {
 
 	event.foodItem("tfg:food/cooked_springling_collar", (food) => {
 		food.hunger(4);
-		food.saturation(3);
-		food.protein(5);
-		food.decayModifier(1.5);
+		food.saturation(2);
+		food.protein(3);
+		food.decayModifier(2.25);
 	});
 
 	event.foodItem("tfg:food/raw_surfer_steak", (food) => {
@@ -427,23 +427,23 @@ function registerTFGFoodData(event) {
 	});
 
 	event.foodItem("tfg:food/cooked_surfer_steak", (food) => {
-		food.hunger(6);
-		food.saturation(3);
-		food.protein(6);
-		food.decayModifier(1.5);
+		food.hunger(4);
+		food.saturation(2);
+		food.protein(3);
+		food.decayModifier(2.25);
 	});
 
 	event.foodItem("tfg:food/raw_cruncher_ribs", (food) => {
-		food.hunger(3);
+		food.hunger(2);
 		food.protein(2.0);
 		food.decayModifier(3);
 	});
 
 	event.foodItem("tfg:food/cooked_cruncher_ribs", (food) => {
-		food.hunger(6);
-		food.saturation(3);
-		food.protein(8);
-		food.decayModifier(1.4);
+		food.hunger(4);
+		food.saturation(2.2);
+		food.protein(4);
+		food.decayModifier(2.25);
 	});
 
 	event.foodItem("tfg:food/raw_long_pig_filet", (food) => {
@@ -453,10 +453,10 @@ function registerTFGFoodData(event) {
 	});
 
 	event.foodItem("tfg:food/cooked_long_pig_filet", (food) => {
-		food.hunger(6);
+		food.hunger(2);
 		food.saturation(2);
 		food.protein(2);
-		food.decayModifier(1.5);
+		food.decayModifier(2.25);
 	});
 
 	event.foodItem("tfg:food/raw_stackatick_chunks", (food) => {
@@ -472,76 +472,76 @@ function registerTFGFoodData(event) {
 	});
 
 	event.foodItem("tfg:food/cooked_stickastackatick", (food) => {
-		food.hunger(6);
-		food.saturation(3);
-		food.protein(4);
-		food.decayModifier(1.5);
+		food.hunger(4);
+		food.saturation(2);
+		food.protein(3);
+		food.decayModifier(2.25);
 	});
 
 	event.foodItem("tfg:food/raw_walker_steak", (food) => {
-		food.hunger(3);
+		food.hunger(2);
 		food.protein(2.0);
 		food.decayModifier(3);
 	});
 
 	event.foodItem("tfg:food/cooked_walker_steak", (food) => {
-		food.hunger(6);
-		food.saturation(3);
-		food.protein(8);
-		food.decayModifier(1.5);
+		food.hunger(4);
+		food.saturation(2.2);
+		food.protein(4);
+		food.decayModifier(2.25);
 	});
 
 	event.foodItem("tfg:food/raw_glider_wings", (food) => {
-		food.hunger(1);
+		food.hunger(2);
 		food.protein(1.5);
 		food.decayModifier(3);
 	});
 
 	event.foodItem("tfg:food/cooked_glider_wings", (food) => {
-		food.hunger(3);
-		food.saturation(3);
-		food.protein(3);
-		food.decayModifier(1.5);
+		food.hunger(4);
+		food.saturation(2);
+		food.protein(2.75);
+		food.decayModifier(2.25);
 	});
 
 	event.foodItem("tfg:food/raw_whole_soarer", (food) => {
-		food.hunger(3);
-		food.protein(2.0);
+		food.hunger(2);
+		food.protein(1.5);
 		food.decayModifier(3);
 	});
 
 	event.foodItem("tfg:food/cooked_whole_soarer", (food) => {
-		food.hunger(6);
-		food.saturation(6);
-		food.protein(4);
-		food.decayModifier(1.5);
+		food.hunger(4);
+		food.saturation(2);
+		food.protein(3.1);
+		food.decayModifier(2.25);
 	});
 
 	event.foodItem("tfg:food/raw_crusher_meat", (food) => {
-		food.hunger(3);
+		food.hunger(2);
 		food.protein(1.5);
 		food.decayModifier(3);
 	});
 
 	event.foodItem("tfg:food/cooked_crusher_meat", (food) => {
-		food.hunger(5);
-		food.saturation(6);
-		food.protein(4);
-		food.decayModifier(1.5);
+		food.hunger(4);
+		food.saturation(2);
+		food.protein(3);
+		food.decayModifier(2.25);
 	});
 
 	event.foodItem("tfg:food/raw_goober_meat", (food) => {
 		food.hunger(2);
-		food.protein(3.0);
+		food.protein(1.5);
 		food.decayModifier(3);
 		food.water(1);
 	});
 
 	event.foodItem("tfg:food/cooked_goober_meat", (food) => {
 		food.hunger(4);
-		food.saturation(3);
-		food.protein(6);
-		food.decayModifier(1.5);
+		food.saturation(2);
+		food.protein(3);
+		food.decayModifier(2.25);
 	});
 
 	// high-tech food
@@ -594,7 +594,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2);
 		food.saturation(1);
 		food.water(7.5);
-		food.fruit(1.5);
+		food.fruit(2.1);
 	});
 
 	event.foodItem("betterend:cave_pumpkin", (food) => {
@@ -623,7 +623,7 @@ function registerTFGFoodData(event) {
 
 	event.foodItem("betterend:cave_pumpkin_pie", (food) => {
 		food.hunger(4);
-		food.saturation(4);
+		food.saturation(2.8);
 		food.decayModifier(1.5);
 		food.water(5);
 		food.protein(1);
@@ -642,9 +642,9 @@ function registerTFGFoodData(event) {
 
 	event.foodItem("betterend:chorus_mushroom_cooked", (food) => {
 		food.hunger(2);
-		food.saturation(2.5);
+		food.saturation(2.1);
 		food.decayModifier(1.5);
-		food.vegetables(2);
+		food.vegetables(2.5);
 	});
 
 	event.foodItem("betterend:shadow_berry_product", (food) => {
@@ -652,14 +652,14 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2);
 		food.saturation(1);
 		food.water(5);
-		food.fruit(1.5);
+		food.fruit(1.9);
 	});
 
 	event.foodItem("betterend:shadow_berry_cooked", (food) => {
 		food.hunger(5);
 		food.decayModifier(1);
 		food.saturation(2);
-		food.fruit(2);
+		food.fruit(2.2);
 	});
 
 	event.foodItem("betterend:bolux_mushroom_product", (food) => {
@@ -672,9 +672,9 @@ function registerTFGFoodData(event) {
 
 	event.foodItem("betterend:bolux_mushroom_cooked", (food) => {
 		food.hunger(2);
-		food.saturation(2.5);
+		food.saturation(2);
 		food.decayModifier(1.5);
-		food.vegetables(2);
+		food.vegetables(2.4);
 	});
 
 	event.foodItem('tfg:food/raw_dino_nugget', (food) => {

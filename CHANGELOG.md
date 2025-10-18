@@ -5,6 +5,7 @@
 - Added beer battered dinosaur nuggets, made from real dinosaur and real beer @Pyritie
 - Added create packages/jars back to JEI so you can use them in filters, and added a tag for all jars (#2044) @Nashy1232
 - Slightly reduced spawn chance of illages and nerfed the amount of loot you get from them @Pyritie
+- Rebalanced some of the moon/mars food nutrition/saturation values @Pyritie
 ### Bug fixes
 - Fixed the interplanetary wireless card so it doesn't use a huge amount of power when just having it open @ko-lja
 - Added circuit numbers to the Formic Acid and Ammonium Chloride chemical reactor recipes @Pyritie
