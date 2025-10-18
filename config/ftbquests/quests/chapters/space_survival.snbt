@@ -783,6 +783,7 @@
 		{
 			dependencies: ["70F93982FC045A08"]
 			description: ["{quests.space_survival.sandworm.desc}"]
+			icon: "sandworm_mod:sandworm_tooth"
 			id: "62A5111836CB4D37"
 			optional: true
 			shape: "heart"

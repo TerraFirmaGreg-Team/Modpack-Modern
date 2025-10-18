@@ -868,8 +868,9 @@ function registerTFGFoodRecipes(event) {
 			itemInputs: [alcohol.ingredient],
 			fluidInputs: ['#tfg:clean_water 500', 'firmalife:yeast_starter 10'],
 			fluidOutputs: [Fluid.of(alcohol.id, 500)],
-			circuit: 11
-		}).notConsumable('#tfc:barrels')
+			circuit: 11,
+			notConsumable: ['#tfc:barrels']
+		})
 	})
 
 	// Cakes
@@ -1176,9 +1177,6 @@ function registerTFGFoodRecipes(event) {
 
 	event.recipes.tfc.heating('tfg:food/raw_long_pig_filet', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_long_pig_filet').copyFood())
-
-	event.recipes.tfc.heating('tfg:food/raw_dino_nugget', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_dino_nugget').copyFood())
 		
 	event.recipes.tfc.advanced_shapeless_crafting(
 		TFC.itemStackProvider.of('tfg:food/raw_stickastackatick').copyFood(),
@@ -1234,10 +1232,11 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	// Dino nugs
+
 	registerFoodRecipe("food_oven", "raw_dino_nugget", 300, GTValues.VA[GTValues.LV], "", {
 		itemInputs: ["tfg:food/raw_dino_nugget"],
 		itemOutputs: ["tfg:food/cooked_dino_nugget"],
-		fluidInputs: [],
+		fluidInputs: ['#firmalife:oils 100'],
 		itemOutputProvider: TFC.isp.of("tfg:food/cooked_dino_nugget")
 			.firmaLifeCopyDynamicFood()
 			.addTrait("firmalife:oven_baked")
@@ -1249,6 +1248,7 @@ function registerTFGFoodRecipes(event) {
 	processorRecipe("raw_dino_nuggets", 300, GTValues.VA[GTValues.HV], {
 		itemInputs: ['#tfg:raw_dinosaur_meat', '3x #tfc:foods/flour', 'tfc:powder/salt'],
 		fluidInputs: ['tfc:beer 200'],
+		notConsumable: ['gtceu:nugget_casting_mold'],
 		itemOutputs: ['2x tfg:food/raw_dino_nugget'],
 		circuit: 1,
 		itemOutputProvider: TFC.isp.of("2x tfg:food/raw_dino_nugget").meal(
@@ -1260,6 +1260,7 @@ function registerTFGFoodRecipes(event) {
 	processorRecipe("raw_dino_nuggets_aged_beer", 300, GTValues.VA[GTValues.HV], {
 		itemInputs: ['#tfg:raw_dinosaur_meat', '3x #tfc:foods/flour', 'tfc:powder/salt'],
 		fluidInputs: ['tfcagedalcohol:aged_beer 200'],
+		notConsumable: ['gtceu:nugget_casting_mold'],
 		itemOutputs: ['2x tfg:food/raw_dino_nugget'],
 		circuit: 1,
 		itemOutputProvider: TFC.isp.of("2x tfg:food/raw_dino_nugget").meal(
