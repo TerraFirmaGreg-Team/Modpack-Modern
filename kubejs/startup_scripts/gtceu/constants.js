@@ -380,6 +380,8 @@ global.ORE_BEARING_STONES = /** @type {const} */ ([
 global.ADD_CIRCUIT = /** @type {const} */ ([
     { recipeId: "gtceu:chemical_reactor/tetrafluoroethylene_from_chloroform", circuitNumber: 1 },
     { recipeId: "gtceu:chemical_reactor/hydrofluoric_acid_from_elements", circuitNumber: 2 },
+    { recipeId: "gtceu:chemical_reactor/formic_acid", circuitNumber: 1 },
+    { recipeId: "gtceu:chemical_reactor/sodium_bicarbonate_from_salt", circuitNumber: 2 }
 ]);
 //#endregion
 
