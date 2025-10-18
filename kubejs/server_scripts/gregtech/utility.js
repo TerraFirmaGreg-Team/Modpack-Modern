@@ -267,7 +267,7 @@ function addCircuitToRecipe(event, recipeId, circuitNumber) {
 
 	event.findRecipes({ id: recipeId }).forEach(recipe => {
 			const inputs = recipe.json.get("inputs");
-			const itemArray = inputs.has("item") ? Java.from(inputs.get("item")) : [];
+			const itemArray = Array.isArray(inputs.item) ? inputs.item.slice() : [];
 
 			itemArray.push({
 				content: {
