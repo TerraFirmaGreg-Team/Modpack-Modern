@@ -1577,8 +1577,11 @@ const registerGTCEURecipes = (event) => {
 	}).addMaterialInfo().id('gtceu:shaped/power_substation')
 
 	event.replaceInput({ id: 'gtceu:shaped/field_generator_hv' }, 'gtceu:quantum_eye', 'tfg:cryo_fluix_pearl')
+	event.replaceInput({ id: 'gtceu:assembler/field_generator_hv' }, 'gtceu:quantum_eye', 'tfg:cryo_fluix_pearl')
 	event.replaceInput({ id: 'gtceu:shaped/field_generator_ev' }, 'minecraft:nether_star', 'gtceu:quantum_eye')
+	event.replaceInput({ id: 'gtceu:assembler/field_generator_ev' }, 'minecraft:nether_star', 'gtceu:quantum_eye')
 	event.replaceInput({ id: 'gtceu:shaped/field_generator_iv' }, 'gtceu:quantum_star', 'minecraft:nether_star')
+	event.replaceInput({ id: 'gtceu:assembler/field_generator_iv' }, 'gtceu:quantum_star', 'minecraft:nether_star')
 
 	event.remove({ id: 'gtceu:chemical_bath/quantum_eye' })
 	event.recipes.gtceu.chemical_bath('tfg:quantum_eye')
