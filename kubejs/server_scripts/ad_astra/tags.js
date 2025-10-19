@@ -497,6 +497,8 @@ const registerAdAstraEntityTypeTags = (event) => {
 		event.add('ad_astra:lives_without_oxygen', entity)
 	})
 
+	event.add('ad_astra:can_survive_in_space', 'railways:conductor')
+
 	event.add('tfc:deals_crushing_damage', 'minecraft:enderman')
 	event.add('tfc:deals_crushing_damage', 'minecraft:stray')
 	event.add('tfc:deals_crushing_damage', 'endermanoverhaul:windswept_hills_enderman')
