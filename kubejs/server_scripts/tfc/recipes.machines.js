@@ -156,6 +156,7 @@ function registerTFCMachineRecipes(event) {
 			.itemOutputs(element.output)
 			.duration(100)
 			.EUt(2)
+			.category(GTRecipeCategories.INGOT_MOLDING)
 	})
 
 	//#endregion
@@ -210,6 +211,7 @@ function registerTFCMachineRecipes(event) {
 		.itemOutputs('tfc:empty_jar')
 		.duration(100)
 		.EUt(2)
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.recipes.gtceu.fluid_solidifier('tfc:jar_solidification')
 		.inputFluids(Fluid.of('gtceu:glass', 144))

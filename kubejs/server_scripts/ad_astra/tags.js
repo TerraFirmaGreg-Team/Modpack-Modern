@@ -414,14 +414,6 @@ const registerAdAstraBiomeTags = (event) => {
 	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_dunes')
 	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_deep_desert')
 
-	event.add('tfg:has_structure/dino_nests', 'tfg:mars/amber_plains')
-	event.add('tfg:has_structure/dino_nests', 'tfg:mars/rusticus_plains')
-	event.add('tfg:has_structure/dino_nests', 'tfg:mars/sangnum_plains')
-	event.add('tfg:has_structure/dino_nests', 'tfg:mars/amber_hills')
-	event.add('tfg:has_structure/dino_nests', 'tfg:mars/rusticus_hills')
-	event.add('tfg:has_structure/dino_nests', 'tfg:mars/sangnum_hills')
-	event.add('tfg:has_structure/surfer_nest', 'tfg:mars/martian_river')
-
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_dunes')
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_deep_desert')
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_mountains')
@@ -489,7 +481,14 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'wan_ancient_beasts:soarer',
 		'wan_ancient_beasts:glider',
 		'wan_ancient_beasts:toxlacanth',
-		'wan_ancient_beasts:surfer'
+		'tfg:surfer',
+		// europa
+		'endermanoverhaul:coral_enderman',
+		'endermanoverhaul:snowy_enderman',
+		'endermanoverhaul:ice_spikes_enderman',
+		'species:deepfish',
+		'species:leaf_hanger',
+		'species:cliff_hanger',
 	]
 
 	COLD_ENTITIES.forEach(entity => {
@@ -520,8 +519,9 @@ const registerAdAstraEntityTypeTags = (event) => {
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:soarer')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:glider')
 	// swimming mobs
-	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:surfer')
+	event.add('tfg:ignores_gravity', 'tfg:surfer')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:toxlacanth')
+	event.add('tfg:ignores_gravity', 'endermanoverhaul:coral_enderman')
 }
 
 const registerAdAstraPlacedFeatures = (event) => {
@@ -543,11 +543,9 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_moon_sand')
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_white_sand')
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_black_sand')
-
 	//#endregion
 
 	//#region Mars
-
 	// Underground decoration
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/loose_rocks')
 	event.add('tfg:mars_underground_decoration', 'tfc:cave_spike')
@@ -667,5 +665,10 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_geyserite')
 	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_orange_sand')
 	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_yellow_sand')
+	//#endregion
+
+	//#region Glacio
+	event.add("tfg:glacio_top_layer_modification", "tfg:glow_lichen")
+	event.add("tfg:glacio_top_layer_modification", "tfc:surface_loose_rocks")
 	//#endregion
 }

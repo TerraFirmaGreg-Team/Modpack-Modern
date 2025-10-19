@@ -343,6 +343,9 @@ const registerGTCEuMaterialModification = (event) => {
 	
 	// This contains hazardous elements so GT tags it as hazardous automatically
 	TFGHelpers.getMaterial('ostrum').getProperties().removeProperty(PropertyKey.HAZARD);
+	TFGHelpers.getMaterial('ostrum_iodide').getProperties().removeProperty(PropertyKey.HAZARD);
+	// Superconductors being radioactive at EV is a little evil
+	GTMaterials.UraniumTriplatinum.getProperties().removeProperty(PropertyKey.HAZARD);
 
 	// Make these the lowest tier of EBF instead
 	GTMaterials.BlackSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)

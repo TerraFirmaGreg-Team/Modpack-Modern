@@ -1252,13 +1252,14 @@ function registerGTCEuMachineRecipes(event) {
 	event.shaped('gtceu:heat_exchanger', [
 		'TUT',
 		'WZW',
-		'TBT'
+		'GBG'
 	], {
 		T: 'gtceu:high_temperature_smelting_casing',
 		W: '#gtceu:circuits/ev',
 		U: 'gtceu:ev_sensor',
 		Z: 'gtceu:ev_machine_hull',
-		B: 'gtceu:ev_fluid_regulator'
+		B: 'gtceu:ev_fluid_regulator',
+		G: '#forge:gears/ostrum_iodide'
 	}
 	).id('tfg:shaped/heat_exchanger')
 

@@ -421,8 +421,8 @@
 			],
 			"rolls": {
 				"type": "minecraft:uniform",
-				"max": 12,
-				"min": 9
+				"max": 15,
+				"min": 12
 			}
 		}
 	]
