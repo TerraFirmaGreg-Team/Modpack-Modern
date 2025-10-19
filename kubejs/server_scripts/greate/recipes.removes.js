@@ -103,4 +103,5 @@ function removeGreateRecipes(event) {
 	event.remove({ mod: 'greate', type: 'gtceu:assembler' });
 
 	event.remove({ id: 'greate:cutting/integration/create/cutting/runtime_generated/compat/minecraft/bamboo_planks_to_bamboo_button' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/fire_charge' })
 }
