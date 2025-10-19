@@ -109,8 +109,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
+								"max": 3,
+								"min": 1
 							},
 							"function": "minecraft:set_count"
 						}
@@ -141,8 +141,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 12,
-								"min": 6
+								"max": 9,
+								"min": 5
 							},
 							"function": "minecraft:set_count"
 						}
@@ -239,8 +239,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
+								"max": 6,
+								"min": 3
 							},
 							"function": "minecraft:set_count"
 						}
@@ -255,8 +255,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
+								"max": 6,
+								"min": 3
 							},
 							"function": "minecraft:set_count"
 						}
@@ -287,8 +287,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 6,
-								"min": 3
+								"max": 4,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -303,8 +303,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 6,
-								"min": 3
+								"max": 4,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -319,24 +319,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 6,
-								"min": 3
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:candle",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 6,
-								"min": 3
+								"max": 4,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -383,8 +367,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
+								"max": 5,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -393,50 +377,17 @@
 				{
 					"type": "minecraft:item",
 					"name": "firmalife:jar/compost",
-					"weight": 80,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					]
+					"weight": 80
 				},
 				{
 					"type": "minecraft:item",
 					"name": "firmalife:jar/guano",
-					"weight": 80,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					]
+					"weight": 80
 				},
 				{
 					"type": "minecraft:item",
 					"name": "firmalife:jar/honey",
-					"weight": 80,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					]
+					"weight": 80
 				},
 				{
 					"type": "minecraft:item",
@@ -463,8 +414,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
+								"max": 2,
+								"min": 1
 							},
 							"function": "minecraft:set_count"
 						}
@@ -495,8 +446,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
+								"max": 3,
+								"min": 1
 							},
 							"function": "minecraft:set_count"
 						}
@@ -511,8 +462,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
+								"max": 3,
+								"min": 1
 							},
 							"function": "minecraft:set_count"
 						}
@@ -527,8 +478,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
+								"max": 6,
+								"min": 3
 							},
 							"function": "minecraft:set_count"
 						}
@@ -543,8 +494,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
+								"max": 5,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -559,8 +510,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 7,
-								"min": 4
+								"max": 5,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -575,8 +526,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 6,
-								"min": 3
+								"max": 5,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -600,7 +551,7 @@
 			],
 			"rolls": {
 				"type": "minecraft:uniform",
-				"max": 10,
+				"max": 8,
 				"min": 6
 			}
 		}

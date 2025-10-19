@@ -1,18 +1,105 @@
 # Changelog
-
 ## [Unreleased]
+### Changes
+- Normalized ladder crafting outputs, reduced ladders and wood frame burn times @oosyrag
+- Added beer battered dinosaur nuggets, made from real dinosaur and real beer @Pyritie
+- Added create packages/jars back to JEI so you can use them in filters, and added a tag for all jars (#2044) @Nashy1232
+- Slightly reduced spawn chance of illages and nerfed the amount of loot you get from them @Pyritie
+- Rebalanced some of the moon/mars food nutrition/saturation values @Pyritie
+### Bug fixes
+- Fixed the interplanetary wireless card so it doesn't use a huge amount of power when just having it open @ko-lja
+- Added circuit numbers to the Formic Acid and Ammonium Chloride chemical reactor recipes @Pyritie
+- Fixed inconsistent circuit numbers between CR and LCR for specific recipes (#2047) @Redeix
+- Driverless rockets should now properly explode at world height limit instead of getting stuck @Pyritie
+### Translation updates
+
+## [0.11.3] - 15-10-2025
+### Major Changes
+- Water wheels are now usable again in all (earth + beneath) biomes outside of rivers, *but* at a reduced efficiency @Pyritie
+- Removed the soda ash recipe in the chemical reactor so you have to actually loop your tungsten line (#2037) @TomPlop
+- Removed "raw" thorium metal items like ingots and plates - macerate them into dust before updating! @Pyritie
+- Most fission line recipes are now locked to Mars @TomPlop
+- Graphite Moderators now only require an EV arc furnace instead of an IV one @TomPlop
+- Added an implosion compressor recipe to craft Dense Lead Plates much faster, albeit slightly less efficiently @TomPlop
+- Heat Exchanger now requires Ostrum Iodide (#2040) @TomPlop
+- Refrigerant Pellet now requires a little Radon @TomPlop
+- Soarers and Surfers now require TFC familiarity to tame. Surfers were also replaced with a new TFG mob with the same name (look at the mod name in Jade), so only those are affected (and the old ones no longer spawn) @Pyritie
+### Changes
+- Added more EV chapter quest descriptions (#2037) @TomPlop
+- Added dinosaur nest structures to mars @Pyritie
+- Added more egg 🥚🍳🦖🦕 @Pyritie 
+- Added ULV super tanks and super drums, and a 4A HV Dynamo Hatch for your Large Solar Array MK1 @Pyritie
+- Added meats for the surfer, cruncher, stackatick and primitive creatures mobs, reworked the textures of the others (#2001, #2014) @Redeix
+- Added a recipe for turning glass dust into lamp glass @Pyritie
+- Added more recipe unification for quartz, certus quartz, create's minerals, fixed wall chiseling recipes (#2005) @vidal-adrien
+- Added recipes to purify impure dusts in TFC Barrels (#2013) @dimethylene
+- Removed raw rubber ingots because they kept confusing people @Pyritie
+- Adjusted the colors of thorium and its isotopes to be similar to other radioactive materials @Pyritie
+- Added lunch boxes and super chests/tanks to the railgun blacklist @Pyritie
+- Added an assembler recipe for the chain conveyor (#2007) @Nashy1232
+- Added Packer recipes for gravel to loose stone, adds shapeless cobble unpacking for non-TFC stone types (#2017) @vidal-adrien
+- Added food processor recipe for pineapple fiber (#2029) @Nashy1232
+- EV superconductors are no longer radioactive @Pyritie
+### Bug fixes
+- Fixed the interplanetary wireless card, though at the moment it doesn't use extra power @ko-lja
+- Fixed a crash with the sandworm on servers (#2006) @BlueBoat29
+- Fixed some recipes using the wrong keratophyre loose rock @Pyritie
+- Fixed mechanical pumps grabbing tfc:river_water and not water, boilers rejoice! (#1797) @BlueBoat29
+- Fixed some dusts having issues with AE2 recipes not completing successfully (#2032) @Pyritie
+- Fixed loose pyroxenite rocks crafting into raw pyroxenite (#2017) @vidal-adrien
+- Removed armor trimmable tag from the blue steel backtank @Pyritie
+- Fixed some recipes showing an invalid glacio dimension icon @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Russian @Dl-GitH
+- Ukranian @MetEnBouldry
+
+## [0.11.2] - 09-10-2025
+### Changes
+- Added a recipe for the ae2 auto craft card (#1997) @BlueBoat29
+### Bug fixes
+- Fixed all tfc:heating recipes being removed (#1987) @BlueBoat29
+- Fixed the nuclear fuel factory multiblock not forming without a parallel hatch @TomPlop
+### Translation updates
+- Chinese (simplified) @jmecn
+
+## [0.11.1] - 08-10-2025
 ### Changes
 - Buffed how many stainless steel jar lids you can get per ingot from 16 to 48 @Pyritie
 - Adjusted max HP of various moon and mars mobs @Pyritie
 - Added quest text for the mars section of the space survival chapter @Pyritie
-- Added field guide entry for mars crops @Pyritie
+- Added field guide entries for mars crops and space animals @Pyritie
 - Changed the amount of open space windmills require to be extremely more lenient, so they should always work in tree farms @Pyritie
+- Soups are now craftable in the food processor (#1980) @Xaligal @Newlumberjack-sys
+- Chocolate now melts into 144mB to work better with the ingot molds (#1977) @Xaligal @Newlumberjack-sys
+- Added more sand to the mars desert @Pyritie
+- Nerfed the hell out of mars quicksand @Pyritie
+- All pressure plate crafting recipes now use circuit #3 (#1970) @Nashy1232
+- Plutonium fuel rods now make exactly enough tritiated water for 9 nano wafers (#1978) @TomPlop
+- Nerfed dry ice in the fission reactor (#1982) @TomPlop
+- Added wind ambient sounds to mars @Pyritie
+- Changed the minimum requirements for windmills so now they should still work even in overgrown tree farms @Pyritie
+- Axolotls can now be picked up and carried @Pyritie
+- Sniffer eggs can now be extracted for Cream @Pyritie
+- Adjusted the HP of various mars + moon animals/mobs @Pyritie
+- Reduced the fluorine cost of refrigerant pellets to 10% (#1983) @TomPlop
 ### Bug fixes
 - Fixed linux crash from recipe IDs (#1962) @Xaligal @Pyritie
+- Fixed Nuclear and Uranium Waste fluids being the wrong way around (#1978) @TomPlop
 - Fixed missing texture for interplanetary wireless card (#1965, #1964) @Ko-lja
 - Fixed glacian trees floating above ground @Pyritie
 - Fixed tameable mars animals giving twice as much meat as they should @Pyritie
 - Fixed pyroxenite and keratophyre rocks in various recipes like stone supports @Pyritie
+- Fixed uncraftable nuclear fuel rods (#1982) @TomPlop
+- Fixed Ostrum Linear Accelerator's multiblock assembly requirements (#1978) @TomPlop
+- Fixed the pink bed glacian fur recipe so it now actually needs glacian fur @Pyritie
+- Fixed the krypton in the iodine line so it's properly looped
+- Fixed not being able to put Bulbkin pie in a firmalife oven @Xaligal
+- Fixed missing heat data on baked potatoes @Xaligal
+- Fixed being able to nest backpacks and frame packs inside each other infinitely @Xaligal
+- Eaters are now actually hostile @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
 
 ## [0.11.0] - 05-10-2025
 - WARNING! If you're upgrading your world from 0.10 to 0.11, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.10-to-0.11). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!

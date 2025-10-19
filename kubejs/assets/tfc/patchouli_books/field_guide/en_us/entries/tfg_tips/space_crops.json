@@ -5,6 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"title": "Extraterrestrial Crops",
 			"text": "It turns out Earth isn't the only celestial body with life. During your travels, you may come across other kinds of edible fauna. These all use the same mechanics you're used to on Earth (with some exceptions), and can be grown either in normal Farmland, in a Firmalife $(l:firmalife/greenhouse)Greenhouse$(), or in a GregTech Electric Greenhouse depending on your needs."
 		},
 		{

@@ -72,6 +72,7 @@ function registerTFGFoodItems(event) {
 		.translationKey('item.tfg.roasted_sunflower_seeds')
 		.texture('tfg:item/roasted_sunflower_seeds')
 		.food(food => food.hunger(4).saturation(2))
+		.tag('tfc:foods')
 		.tag('tfc:foods/grains')
 		.tag('tfc:foods/usable_in_salad')
 
@@ -140,17 +141,17 @@ function registerTFGFoodItems(event) {
 		.tag('tfc:foods/cooked_meats')
 
 	//Springling
-	event.create('tfg:food/raw_springling_chops')
+	event.create('tfg:food/raw_springling_collar')
 		.translationKey('item.tfg.food.raw_springling_chops')
-		.texture('tfg:item/food/raw_springling_chops')
+		.texture('tfg:item/food/raw_springling_collar')
 		.food(food => food.hunger(2).saturation(2)
 			.effect('minecraft:hunger', 100, 0, 1))
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
 
-	event.create('tfg:food/cooked_springling_chops')
+	event.create('tfg:food/cooked_springling_collar')
 		.translationKey('item.tfg.food.cooked_springling_chops')
-		.texture('tfg:item/food/cooked_springling_chops')
+		.texture('tfg:item/food/cooked_springling_collar')
 		.food(food => food.hunger(4).saturation(4))
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
@@ -231,11 +232,100 @@ function registerTFGFoodItems(event) {
 	event.create('tfg:food/cooked_goober_meat')
 		.translationKey('item.tfg.food.cooked_goober_meat')
 		.texture('tfg:item/food/cooked_goober_meat')
-		.food(food => food.hunger(3).saturation(6))
+		.food(food => food.hunger(3).saturation(9))
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
+	//Stackatick
+	event.create('tfg:food/raw_stackatick_chunks')
+		.translationKey('item.tfg.food.raw_stackatick_chunks')
+		.texture('tfg:item/food/raw_stackatick_chunks')
+		.food(food => food.hunger(1).saturation(1)
+			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
 
+	event.create('tfg:food/raw_stickastackatick')
+		.translationKey('item.tfg.food.raw_stickastackatick')
+		.parentModel('tfg:item/food/raw_stickastackatick')
+		.food(food => food.hunger(1).saturation(1)
+			.effect('minecraft:hunger', 100, 0, 1)
+			.eaten(ctx => {
+				ctx.player.give('minecraft:stick')
+			}))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
+
+	event.create('tfg:food/cooked_stickastackatick')
+		.translationKey('item.tfg.food.cooked_stickastackatick')
+		.parentModel('tfg:item/food/cooked_stickastackatick')
+		.food(food => food.hunger(2).saturation(5)
+			.eaten(ctx => {
+				ctx.player.give('minecraft:stick')
+			}))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/cooked_meats')
+
+	//Cruncher
+	event.create('tfg:food/raw_cruncher_ribs')
+		.translationKey('item.tfg.food.raw_cruncher_ribs')
+		.texture('tfg:item/food/raw_cruncher_ribs')
+		.food(food => food.hunger(2).saturation(2)
+			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
+
+	event.create('tfg:food/cooked_cruncher_ribs')
+		.translationKey('item.tfg.food.cooked_cruncher_ribs')
+		.texture('tfg:item/food/cooked_cruncher_ribs')
+		.food(food => food.hunger(10).saturation(14))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/cooked_meats')
+
+	//Surfer
+	event.create('tfg:food/raw_surfer_steak')
+		.translationKey('item.tfg.food.raw_surfer_steak')
+		.texture('tfg:item/food/raw_surfer_steak')
+		.food(food => food.hunger(2).saturation(2)
+			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
+
+	event.create('tfg:food/cooked_surfer_steak')
+		.translationKey('item.tfg.food.cooked_surfer_steak')
+		.texture('tfg:item/food/cooked_surfer_steak')
+		.food(food => food.hunger(8).saturation(8))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/cooked_meats')
+
+	//Longpig
+	event.create('tfg:food/raw_long_pig_filet')
+		.translationKey('item.tfg.food.raw_long_pig_filet')
+		.texture('tfg:item/food/raw_long_pig_filet')
+		.food(food => food.hunger(2).saturation(1)
+			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
+
+	event.create('tfg:food/cooked_long_pig_filet')
+		.translationKey('item.tfg.food.cooked_long_pig_filet')
+		.texture('tfg:item/food/cooked_long_pig_filet')
+		.food(food => food.hunger(4).saturation(2))
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/cooked_meats')
+
+	// Dino nuggies
+	event.create('tfg:food/raw_dino_nugget')
+		.texture('tfg:item/food/raw_dino_nugget')
+		.food(food => food.hunger(1).saturation(1))
+		.tag('tfc:foods')
+
+	event.create('tfg:food/cooked_dino_nugget')
+		.texture('tfg:item/food/cooked_dino_nugget')
+		.food(food => food.hunger(3).saturation(2))
+		.tag('tfc:foods')
+
+	// Ice soup (intentionally not tagged as food)
 	event.create('tfg:food/ice_soup')
 		.translationKey('item.tfg.food.ice_soup')
 		.texture('tfg:item/food/ice_soup')
@@ -245,5 +335,4 @@ function registerTFGFoodItems(event) {
 				ctx.player.give('tfc:ceramic/bowl')
 			})
 		})
-	// intentionally not tagged as food
 }

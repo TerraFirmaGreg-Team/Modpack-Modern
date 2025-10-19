@@ -33,7 +33,8 @@ function registerTFGNuclearRecipes(event) {
 			'tfg:empty_rod')
 		.itemOutputs('tfg:thorium_rod')
 		.duration(20*200)
-		.EUt(GTValues.V[GTValues.HV])
+		.EUt(GTValues.VA[GTValues.HV])
+		.dimension('ad_astra:mars')
 
 	event.recipes.gtceu.nuclear_fuel_factory('tfg:uranium_pellet')
 		.inputFluids(Fluid.of('gtceu:radioactive_waste', 10000))
@@ -41,7 +42,8 @@ function registerTFGNuclearRecipes(event) {
 			'32x #forge:rods/uranium', '32x #forge:rods/uranium', 'tfg:empty_rod')
 		.itemOutputs('tfg:uranium_rod')
 		.duration(20*600)
-		.EUt(GTValues.V[GTValues.HV])
+		.EUt(GTValues.VA[GTValues.HV])
+		.dimension('ad_astra:mars')
 
 	event.recipes.gtceu.nuclear_fuel_factory('tfg:plutonium_pellet')
 		.itemInputs('32x #forge:rods/plutonium', '32x #forge:rods/plutonium', '32x #forge:rods/plutonium',
@@ -49,7 +51,9 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:radon', 100))
 		.itemOutputs('tfg:plutonium_rod')
 		.duration(20*600)
-		.EUt(GTValues.V[GTValues.EV])
+		.EUt(GTValues.VA[GTValues.EV])
+		.dimension('ad_astra:mars')
+
 	/* REMOVE FOR VENUS COMMENTED OUT
 	event.recipes.gtceu.nuclear_fuel_factory('tfg:tbu_232_rod')
 		.inputFluids(Fluid.of('gtceu:nuclear_waste', 32000))
@@ -59,7 +63,7 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(GTValues.V[GTValues.IV])
 	*/
 	event.recipes.gtceu.lathe('tfg:empty_rod')
-		.itemInputs('gtceu:cobalt_large_restrictive_item_pipe', 'tfg:empty_rod')
+		.itemInputs('gtceu:cobalt_large_restrictive_item_pipe')
 		.itemOutputs('tfg:empty_rod')
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.HV])
@@ -108,6 +112,7 @@ function registerTFGNuclearRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:dirty_hexafluorosilicic_acid', 1000))
 		.duration(20*8)
 		.EUt(GTValues.VA[GTValues.EV])
+		.dimension('ad_astra:mars')
 
 	event.recipes.gtceu.centrifuge('martian_sludge')
 		.inputFluids(Fluid.of('gtceu:dirty_hexafluorosilicic_acid', 1000))
@@ -116,6 +121,7 @@ function registerTFGNuclearRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:fluorine', 1000))
 		.duration(20*16)
 		.EUt(GTValues.VA[GTValues.IV])
+		.dimension('ad_astra:mars')
 
 	// Plutonium Process
 
@@ -127,6 +133,7 @@ function registerTFGNuclearRecipes(event) {
 		.itemOutputs('#forge:dusts/nuclear_residue')
 		.duration(20*10)
 		.EUt(GTValues.VA[GTValues.EV])
+		.dimension('ad_astra:mars')
 
 	event.recipes.gtceu.vacuum_freezer('oxidized_nuclear_residue')
 		.itemInputs('#forge:dusts/nuclear_residue')
@@ -135,6 +142,7 @@ function registerTFGNuclearRecipes(event) {
 		.itemOutputs('#forge:dusts/oxidized_nuclear_residue')
 		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.IV])
+		.dimension('ad_astra:mars')
 
 	event.recipes.gtceu.centrifuge('refined_nuclear_residue')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 1000))
@@ -144,6 +152,7 @@ function registerTFGNuclearRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:oxygen', 1000))
 		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.EV])
+		.dimension('ad_astra:mars')
 
 	event.recipes.gtceu.large_chemical_reactor('dioxygen_difluoride')
 		.inputFluids(Fluid.of('gtceu:oxygen', 2000))
@@ -151,6 +160,7 @@ function registerTFGNuclearRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:dioxygen_difluoride', 1000))
 		.duration(20*16)
 		.EUt(GTValues.VA[GTValues.IV])
+		.dimension('ad_astra:mars')
 
 	event.recipes.gtceu.large_chemical_reactor('plutonium_dust')
 		.itemInputs('#forge:dusts/refined_nuclear_residue')
@@ -159,6 +169,7 @@ function registerTFGNuclearRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:steam', 1000))
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.IV])
+		.dimension('ad_astra:mars')
 
 	//#endregion
 
@@ -174,6 +185,7 @@ function registerTFGNuclearRecipes(event) {
 		.perTick(false)
 		.duration(20*5)
 		.EUt(1)
+		.dimension('ad_astra:mars')
 
 	event.recipes.gtceu.heat_exchanger('plutonium_steam')
 		.perTick(true)
@@ -183,6 +195,7 @@ function registerTFGNuclearRecipes(event) {
 		.perTick(false)
 		.duration(20*5)
 		.EUt(1)
+		.dimension('ad_astra:mars')
 
 	// Heat Exchanger for Energy
 
@@ -215,7 +228,8 @@ function registerTFGNuclearRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:radioactive_waste', 2500))
 		.itemOutputs(Item.of('tfg:empty_rod'))
 		.dimension('ad_astra:mars')
-        .hideDuration(true);
+        .hideDuration(true)
+		.dimension('ad_astra:mars')
     
     event.recipes.deafission.fission_reactor_coolant('tfg:thorium_coolant')
 		.notConsumable(Item.of('tfg:thorium_rod'))
@@ -224,7 +238,8 @@ function registerTFGNuclearRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:dense_steam', 2))
 		.perTick(false)
 		.dimension('ad_astra:mars')
-        .duration(1);
+        .addData("coolant_heat_per_tick", 1)
+		.duration(1);
 
 	// Recipe for Uranium Reactor Just keeping it in case we got mod issues
 /*	event.recipes.gtceu.fission_reactor('uranium_radioactive')
@@ -241,7 +256,8 @@ function registerTFGNuclearRecipes(event) {
 		.itemInputs(Item.of('tfg:uranium_rod'))
 		.outputFluids(Fluid.of('gtceu:uranium_waste', 50000))
 		.itemOutputs(Item.of('tfg:empty_rod'))
-        .hideDuration(true);
+        .hideDuration(true)
+		.dimension('ad_astra:mars')
     
     event.recipes.deafission.fission_reactor_coolant('tfg:uranium_coolant')
 		.notConsumable(Item.of('tfg:uranium_rod'))
@@ -249,7 +265,9 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('tfg:heavy_water', 20))
 		.outputFluids(Fluid.of('gtceu:radioactive_steam', 10))
 		.perTick(false)
-        .duration(1);
+        .addData("coolant_heat_per_tick", 1)
+		.duration(1)
+		.dimension('ad_astra:mars')
 
 	// Recipe for Plutonium Reactor Just keeping it in case we got mod issues
 /*	event.recipes.gtceu.fission_reactor('plutonium_irradiated')
@@ -266,7 +284,8 @@ function registerTFGNuclearRecipes(event) {
 		.itemInputs(Item.of('tfg:plutonium_rod'))
 		.outputFluids(Fluid.of('gtceu:tritiated_water', 5184))
 		.itemOutputs(Item.of('tfg:empty_rod'))
-        .hideDuration(true);
+        .hideDuration(true)
+		.dimension('ad_astra:mars')
     
     event.recipes.deafission.fission_reactor_coolant('tfg:plutonium_coolant')
 		.notConsumable(Item.of('tfg:plutonium_rod'))
@@ -274,7 +293,9 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('tfg:heavy_water', 25))
 		.outputFluids(Fluid.of('gtceu:irradiated_steam', 40))
 		.perTick(false)
-        .duration(1);
+        .addData("coolant_heat_per_tick", 1)
+		.duration(1)
+		.dimension('ad_astra:mars')
 
 	// Fission Reactor for Energy Just keeping it in case we got mod issues
 /*
@@ -293,8 +314,8 @@ function registerTFGNuclearRecipes(event) {
 	event.recipes.deafission.fission_reactor_processing('tfg:dry_ice')
 		.itemInputs('tfg:dry_ice')
         .blastFurnaceTemp(100)
-		.addData("heat_per_tick", 10)
-		.duration(20*1)
+		.addData("heat_per_tick", 5)
+		.duration(10)
 
 	event.recipes.deafission.fission_reactor_processing('tfg:refrigerant_pellet')
 		.itemInputs('tfg:refrigerant_pellet')
@@ -309,7 +330,7 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*36)
 
 	event.recipes.gtceu.vacuum_freezer('tfg:tetrafluoroethane_gem')
-		.inputFluids(Fluid.of('tfg:tetrafluoroethane', 1000))
+		.inputFluids(Fluid.of('tfg:tetrafluoroethane', 100))
 		.itemOutputs(Item.of('tfg:tetrafluoroethane_gem', 1))
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20*14)
@@ -317,6 +338,7 @@ function registerTFGNuclearRecipes(event) {
 	event.recipes.gtceu.assembler('tfg:tetrafluoroethane_gem')
 		.itemInputs(Item.of('tfg:tetrafluoroethane_gem', 1))
 		.itemInputs(Item.of('tfg:polycaprolactam_fabric', 16))
+		.inputFluids(Fluid.of('gtceu:radon', 5))
 		.itemOutputs(Item.of('tfg:refrigerant_pellet', 1))
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20*17)
@@ -372,15 +394,15 @@ function registerTFGNuclearRecipes(event) {
 		.itemInputs(Item.of('tfg:pure_graphite_rod', 1))
 		.inputFluids(Fluid.of('gtceu:oxygen', 1000))
 		.itemOutputs(Item.of('tfg:annealed_graphite_rod', 1))
-		.EUt(GTValues.VA[GTValues.IV])
-		.duration(20*6)
+		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20*60)
 
 	event.recipes.gtceu.arc_furnace('tfg:impure_annealed_graphite_rod')
 		.itemInputs(Item.of('tfg:impure_graphite_rod', 1))
 		.inputFluids(Fluid.of('gtceu:oxygen', 1000))
 		.itemOutputs(Item.of('tfg:impure_annealed_graphite_rod', 1))
-		.EUt(GTValues.VA[GTValues.IV])
-		.duration(20*6)
+		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20*60)
 
 	event.recipes.gtceu.assembler('tfg:impure_moderate_core')
 		.itemInputs(Item.of('tfg:impure_annealed_graphite_rod', 1))

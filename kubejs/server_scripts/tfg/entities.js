@@ -20,7 +20,7 @@ const NEW_MOB_MAX_HP = {
 	"species:stackatick": 20,
 	"species:springling": 60,
 	"species:quake": 130,
-	"species:cruncher": 800
+	"species:cruncher": 1200
 }
 
 EntityEvents.spawned((event) => {

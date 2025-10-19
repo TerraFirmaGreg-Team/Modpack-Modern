@@ -28,6 +28,7 @@ const registerTFGItems = (event) => {
 	event.create('tfg:marker/mars_orbit').tag('c:hidden_from_recipe_viewers')
 	event.create('tfg:marker/venus_orbit').tag('c:hidden_from_recipe_viewers')
 	event.create('tfg:marker/mercury_orbit').tag('c:hidden_from_recipe_viewers')
+	event.create('tfg:marker/glacio_orbit').tag('c:hidden_from_recipe_viewers')
 
 	global.AD_ASTRA_WOOD.forEach(wood => {
 		event.create(`tfg:wood/lumber/${wood.name}`)
