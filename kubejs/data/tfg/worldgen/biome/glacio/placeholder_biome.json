@@ -1,0 +1,98 @@
+{
+	"carvers": {
+		"air": []
+	},
+	"downfall": 0.0,
+	"effects": {
+		"fog_color": 12638463,
+		"mood_sound": {
+			"block_search_extent": 8,
+			"offset": 2.0,
+			"sound": "minecraft:ambient.cave",
+			"tick_delay": 6000
+		},
+		"sky_color": 12638463,
+		"water_color": 4159204,
+		"water_fog_color": 329011
+	},
+	"features": [
+		[
+			"tfc:erosion"
+		],
+		[],
+		[
+
+		],
+		[],
+		[],
+		[],
+		"#tfg:glacio_veins",
+		"#tfg:glacio_underground_decoration",
+		[
+
+		],
+		[
+
+		],
+		"#tfg:glacio_top_layer_modification"
+	],
+	"has_precipitation": false,
+	"spawn_costs": {
+		"endermanoverhaul:ice_spikes_enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"endermanoverhaul:snowy_enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"endermanoverhaul:coral_enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		}
+	},
+	"spawners": {
+		"ambient": [],
+		"axolotls": [],
+		"creature": [],
+		"misc": [],
+		"monster": [
+			{
+				"type": "endermanoverhaul:ice_spikes_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "endermanoverhaul:snowy_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "endermanoverhaul:coral_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			}
+		],
+		"underground_water_creature": [
+			{
+				"type": "species:deepfish",
+				"maxCount": 7,
+				"minCount": 4,
+				"weight": 50
+			}
+		],
+		"water_ambient": [],
+		"water_creature": [
+			{
+				"type": "species:leaf_hanger",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
+			}
+		]
+	},
+	"temperature": -0.5
+}

@@ -119,7 +119,7 @@ function registerTFGSupportRecipes(event) {
 		{ loose: 'tfg:loose/deepslate',       support: 'tfg:migmatite_support' },
 		{ loose: 'beneath:blackstone_pebble', support: 'tfg:pyroxenite_support' },
 		{ loose: 'tfg:loose/dripstone',       support: 'tfg:travertine_support' },
-		{ loose: 'beneath:crackrack_rock',    support: 'tfg:keratophyre_support' },
+		{ loose: 'tfg:loose/crackrack',       support: 'tfg:keratophyre_support' },
 		{ loose: 'tfg:loose/moon_stone',      support: 'tfg:anorthosite_support' },
 		{ loose: 'tfg:loose/moon_deepslate',  support: 'tfg:norite_support' },
 		{ loose: 'tfg:loose/mars_stone',      support: 'tfg:argillite_support' },

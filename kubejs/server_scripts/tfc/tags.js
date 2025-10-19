@@ -255,6 +255,7 @@ function registerTFCItemTags(event) {
     event.add("tfc:corals", "tfc:coral/brain_dead_coral");
     event.add("tfc:corals", "tfc:coral/fire_dead_coral");
     event.add("tfc:corals", "tfc:coral/horn_dead_coral");
+    event.add("forge:corals", "#tfc:corals");
 
     // Теги для каменных ступенек тфк
     global.TFC_STONE_TYPES.forEach((stoneTypeName) => {
@@ -464,6 +465,9 @@ function registerTFCBlockTags(event) {
     });
 
     event.add('tfc:can_be_snow_piled', 'tfc:groundcover/feather');
+
+    event.add('tfcambiental:hot_stuff', 'tfc:pot');
+    event.add('tfcambiental:hot_stuff', 'tfc:grill');
 }
 
 /** @param {TagEvent.Fluid} event */

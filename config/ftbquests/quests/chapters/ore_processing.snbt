@@ -284,10 +284,10 @@
 		}
 		{
 			dependencies: ["0F0525A70047EEB2"]
-			description: ["{quests.ore_proc.sodium_persuflate.desc}"]
+			description: ["{quests.ore_proc.sodium_persulfate.desc}"]
 			icon: "gtceu:sodium_persulfate_bucket"
 			id: "3513778F204293CD"
-			subtitle: "{quests.ore_proc.sodium_persuflate.subtitle}"
+			subtitle: "{quests.ore_proc.sodium_persulfate.subtitle}"
 			tasks: [
 				{
 					disable_toast: true
@@ -303,7 +303,7 @@
 					type: "item"
 				}
 			]
-			title: "{quests.ore_proc.sodium_persuflate.title}"
+			title: "{quests.ore_proc.sodium_persulfate.title}"
 			x: -3.0d
 			y: -6.5d
 		}

@@ -160,6 +160,16 @@ const registerAE2Recipes = (event) => {
 		D: '#forge:gems/fluix'
 	}).id('tfg:crafting/speed_card')
 
+	//Auto Crafting Card
+	event.shaped('ae2:auto_complete_card', [
+		'AB',
+		'BC'
+	], {
+		A: 'ae2:advanced_card',
+		B: 'ae2:engineering_processor',
+		C: 'ae2:calculation_processor'
+	}).id('tfg:crafting/auto_complete_card')
+
 	// Void Card
 	event.shapeless('ae2:void_card', ['ae2:basic_card', 'ae2:calculation_processor'])
 		.id('tfg:crafting/void_card')

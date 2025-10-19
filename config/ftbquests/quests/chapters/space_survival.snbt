@@ -783,6 +783,7 @@
 		{
 			dependencies: ["70F93982FC045A08"]
 			description: ["{quests.space_survival.sandworm.desc}"]
+			icon: "sandworm_mod:sandworm_tooth"
 			id: "62A5111836CB4D37"
 			optional: true
 			shape: "heart"
@@ -875,6 +876,7 @@
 		{
 			dependencies: ["5AC5AAB9B3758E30"]
 			description: ["{quests.space_survival.soarer.desc}"]
+			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 20"
 			icon: "wan_ancient_beasts:soarer_egg"
 			id: "2F711C064635EF2D"
 			optional: true
@@ -896,6 +898,7 @@
 		{
 			dependencies: ["5AC5AAB9B3758E30"]
 			description: ["{quests.space_survival.sniffer_or_wraptor.desc}"]
+			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 11"
 			id: "5F0D553D08A5985C"
 			subtitle: "{quests.space_survival.sniffer_or_wraptor.subtitle}"
 			tasks: [
@@ -925,6 +928,7 @@
 		{
 			dependencies: ["3768570EC6535DBB"]
 			description: ["{quests.space_survival.glacian_ram.desc}"]
+			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 15"
 			id: "00E2E32B33A65301"
 			subtitle: "{quests.space_survival.glacian_ram.subtitle}"
 			tasks: [{
@@ -1094,7 +1098,7 @@
 				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: 23118000L
+						creationDate: 23862000L
 						traits: [ ]
 					}
 					"tfc:item_heat": {
@@ -1109,17 +1113,45 @@
 			shape: "heart"
 			size: 1.5d
 			subtitle: "{quests.space_survival.bulbkin_pie.subtitle}"
-			tasks: [{
-				id: "5F863BCE6DAA30D6"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(betterend:cave_pumpkin_pie))"
+			tasks: [
+				{
+					id: "5F863BCE6DAA30D6"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(betterend:cave_pumpkin_pie))"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "0B5E81AEEDFE0B7A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:food": {
+								creationDate: -2L
+								foodData: {
+									dairy: 0.0f
+									decay: 0.0f
+									food: 0
+									fruit: 0.0f
+									grain: 0.0f
+									meat: 0.0f
+									sat: 0.0f
+									veg: 0.0f
+									water: 0.0f
+								}
+								ingredients: [ ]
+								traits: [ ]
+							}
+						}
+						id: "tfg:food/cooked_dino_nugget"
+					}
+					type: "item"
+				}
+			]
 			title: "{quests.space_survival.bulbkin_pie.title}"
 			x: 13.5d
 			y: 0.0d
@@ -1141,6 +1173,7 @@
 		{
 			dependencies: ["5AC5AAB9B3758E30"]
 			description: ["{quests.space_survival.surfer.desc}"]
+			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 17"
 			id: "43EBECA48E341C47"
 			optional: true
 			shape: "heart"
@@ -1151,7 +1184,7 @@
 				observe_type: 5
 				timer: 0L
 				title: "{quests.space_survival.surfer.task}"
-				to_observe: "wan_ancient_beasts:surfer"
+				to_observe: "tfg:surfer"
 				type: "observation"
 			}]
 			title: "{quests.space_survival.surfer.title}"

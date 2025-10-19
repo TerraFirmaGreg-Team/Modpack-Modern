@@ -20,7 +20,7 @@ const NEW_MOB_MAX_HP = {
 	"species:stackatick": 20,
 	"species:springling": 60,
 	"species:quake": 130,
-	"species:cruncher": 800
+	"species:cruncher": 1200
 }
 
 EntityEvents.spawned((event) => {
@@ -28,8 +28,6 @@ EntityEvents.spawned((event) => {
 	// Easier to just keep all entities in here for balancing instead of spreading them around
 
 	let { entity, entity: {type} } = event;
-
-	console.log(`entity: ${entity}, type: ${type}`)
 
 	let newHP = NEW_MOB_MAX_HP[type] ?? 0;
 	if (newHP === 0)

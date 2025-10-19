@@ -9,6 +9,8 @@ const registerWABBlockTags = (event) => {
 	// don't put sand layers on these, otherwise they'll fall through
 	event.add('minecraft:snow_layer_cannot_survive_on', 'wan_ancient_beasts:quick_sand')
 	event.add('minecraft:snow_layer_cannot_survive_on', 'wan_ancient_beasts:quick_red_sand')
+	event.add('minecraft:mineable/shovel', 'wan_ancient_beasts:quick_sand')
+	event.add('minecraft:mineable/shovel', 'wan_ancient_beasts:quick_red_sand')
 }
 
 const registerWABItemTags = (event) => {
@@ -38,6 +40,14 @@ const registerWABItemTags = (event) => {
 
 	event.add('wan_ancient_beasts:surfer_food', '#firmalife:foods/raw_fish')
 	event.add('wan_ancient_beasts:eater_food', '#tfg:martian_animal_foods')
+
+	// Eggs
+	event.add('tfg:martian_eggs', 'wan_ancient_beasts:eater_egg')
+	event.add('tfg:martian_eggs', 'wan_ancient_beasts:walker_egg')
+	event.add('tfg:martian_eggs', 'wan_ancient_beasts:crusher_egg')
+	event.add('tfg:martian_eggs', 'wan_ancient_beasts:glider_egg')
+	event.add('tfg:martian_eggs', 'wan_ancient_beasts:soarer_egg')
+	event.add('tfg:martian_eggs', 'wan_ancient_beasts:surfer_egg')
 }
 
 const registerWABEntityTypeTags = (event) => {

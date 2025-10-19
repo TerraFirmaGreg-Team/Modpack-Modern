@@ -34,11 +34,12 @@
 		"#tfg:mars_underground_decoration",
 		[
 			"tfg:mars/surface/small_skull_and_bones",
-			"tfg:mars/surface/large_skull_and_bones"
+			"tfg:mars/surface/large_skull_and_bones",
+			"tfg:mars/surface/pile_hematitic_sand",
+			"tfg:mars/surface/pile_red_sand",
+			"tfg:mars/surface/pile_mars_sand"
 		],
-		[
-
-		],
+		[],
 		[
 			"tfg:glow_lichen",
 			"tfg:mars/terrain/mars_poles"

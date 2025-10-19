@@ -137,6 +137,14 @@
 		containerClass = "com.simibubi.create.content.equipment.toolbox.ToolboxMenu"
 		sortRange = ""
 
+	[[sorting.containerOverrides]]
+		containerClass = "mod.traister101.sns.client.screen.ContainerItemScreen"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "dev.thomas.tfclunchbox.client.screen.*"
+		sortRange = ""
+
 #Tweaks
 [tweaks]
 	#Enable auto-refill

@@ -58,24 +58,12 @@ let forestWeirdnessNoise = TFC.misc.newOpenSimplex2D(3210378120)
 	.map(i => 1.1 * Math.abs(i))
 	.clamped(0, 1)
 
-TFC.misc.register2DNoiseForInspection('temp', tempLayer)
-TFC.misc.register2DNoiseForInspection('rain', rainLayer)
-TFC.misc.register2DNoiseForInspection('forestType', forestDensityNoise)
-TFC.misc.register2DNoiseForInspection('forestWeirdness', forestWeirdnessNoise)
+//TFC.misc.register2DNoiseForInspection('temp', tempLayer)
+//TFC.misc.register2DNoiseForInspection('rain', rainLayer)
+//TFC.misc.register2DNoiseForInspection('forestType', forestDensityNoise)
+//TFC.misc.register2DNoiseForInspection('forestWeirdness', forestWeirdnessNoise)
 
 // Forest layer
-//const forestTypeLayer = TFC.misc.uniformLayeredArea(45245235242);
-//for (let i = 0; i < 3; i++) {
-//	forestTypeLayer.zoom(true, 19763144126).smooth(79784123632);
-//}
-//for (let i = 0; i < 6; i++) {
-//	forestTypeLayer.zoom(true, 451364589723);
-//}
-//forestTypeLayer
-//	.smooth(71214856214)
-//	.zoom(true, 854126548632)
-//	.smooth(145256147896)
-
 let forestLayerNoise = TFC.misc.newOpenSimplex2D(3210378120)
 	.octaves(2)
 	.spread(0.005)
@@ -121,7 +109,6 @@ TFCEvents.createChunkDataProvider('mars', event => {
 		data.generatePartial(
 			rain,
 			temp,
-			//floatToForestType(((forestTypeLayer.getAt(x, z) / 0x80000000) / 2.0) + 0.5),
 			floatToForestType(forestLayerNoise.noise(x, z)),
 			forestWeirdnessNoise.noise(x, z), // forest weirdness
 			forestDensityNoise.noise(x, z) // forest density
@@ -143,6 +130,52 @@ TFCEvents.createChunkDataProvider('mars', event => {
 	});
 })
 
+TFCEvents.createChunkDataProvider('glacio', event => {
+	event.partial((data, chunk) => {
+		let x = chunk.pos.minBlockX;
+		let z = chunk.pos.minBlockZ;
+
+		const avgTemp1 = calcAverage(z, global.GLACIO_PLANET_SIZE, 0, 100)
+		const avgTemp2 = calcAverage(z + 15, global.GLACIO_PLANET_SIZE, 0, 100)
+		const avgRain1 = calcAverage(x, global.GLACIO_PLANET_SIZE, 0, 100)
+		const avgRain2 = calcAverage(x + 15, global.GLACIO_PLANET_SIZE, 0, 100)
+
+		let rain = TFC.misc.lerpFloatLayer(
+			avgRain1 + rainLayer.noise(x, z),
+			avgRain1 + rainLayer.noise(x, z + 15),
+			avgRain2 + rainLayer.noise(x + 15, z),
+			avgRain2 + rainLayer.noise(x + 15, z + 15)
+		);
+		let temp = TFC.misc.lerpFloatLayer(
+			avgTemp1 + tempLayer.noise(x, z),
+			avgTemp1 + tempLayer.noise(x, z + 15),
+			avgTemp2 + tempLayer.noise(x + 15, z),
+			avgTemp2 + tempLayer.noise(x + 15, z + 15)
+		);
+
+		data.generatePartial(
+			rain,
+			temp,
+			floatToForestType(forestLayerNoise.noise(x, z)),
+			forestWeirdnessNoise.noise(x, z), // forest weirdness
+			forestDensityNoise.noise(x, z) // forest density
+		);
+	});
+
+	event.full((data, chunk) => {
+		let heights = [];
+		for (let z = 0; z < 16; z++) {
+			for (let x = 0; x < 16; x++) {
+				heights[x + 16 * z] = chunk.getHeight($HeightMap.Types.OCEAN_FLOOR_WG, x, z);
+			}
+		}
+		data.generateFull(heights, EMPTY_AQUIFER);
+	});
+
+	event.rocks((x, y, z, surfaceY, cache, rockSettings) => {
+		return rockSettings.sampleAtLayer(rockLayer.getAt(x, z), (surfaceY - y) / ROCK_LAYER_HEIGHT);
+	});
+})
 
 /**
  * @param {number} playerZ The current Z level of the player

@@ -112,7 +112,7 @@ function registerTFGFoodRecipes(event) {
 			itemInputs: [input],
 			itemOutputs: [out],
 			fluidInputs: (fluid === undefined) ? [] : [fluid],
-			itemOutputProvider: (isFirmaDynamic) ? TFC.isp.of(out).firmaLifeCopyDynamicFood() : TFC.isp.of(out).copyFood().addTrait("firmalife:oven_baked")
+			itemOutputProvider: ((isFirmaDynamic) ? TFC.isp.of(out).firmaLifeCopyDynamicFood() : TFC.isp.of(out).copyFood()).addTrait("firmalife:oven_baked")
 		})
 	}
 
@@ -247,6 +247,14 @@ function registerTFGFoodRecipes(event) {
 		cookingRecipe(item.name, item.input, item.output, undefined, true)
 	})
 
+    // Pineapple fiber
+    processorRecipe("firmalife:crafting/pineapple_fiber", 300, 16, {
+        circuit: 3,
+        itemInputs: ["firmalife:food/pineapple"],
+        fluidInputs: [Fluid.of('gtceu:nitrogen', 100)],
+        itemOutputs: ["firmalife:pineapple_fiber"]
+    })
+    
 	//#endregion
 	//#region ================= Dairy =================
 
@@ -285,7 +293,7 @@ function registerTFGFoodRecipes(event) {
 		})
 
 	})
-
+	
 	// Milks 
 
 	processorRecipe(`white_chocolate_blend`, 300, 16, {
@@ -860,8 +868,9 @@ function registerTFGFoodRecipes(event) {
 			itemInputs: [alcohol.ingredient],
 			fluidInputs: ['#tfg:clean_water 500', 'firmalife:yeast_starter 10'],
 			fluidOutputs: [Fluid.of(alcohol.id, 500)],
-			circuit: 11
-		}).notConsumable('#tfc:barrels')
+			circuit: 11,
+			notConsumable: ['#tfc:barrels']
+		})
 	})
 
 	// Cakes
@@ -912,6 +921,111 @@ function registerTFGFoodRecipes(event) {
 		itemOutputs: ["species:birtday_cake"]
 	})
 
+	// Soup
+    processorRecipe("grain_soup", 300, 8, {
+        circuit: 20,
+        itemInputs: [
+            '3x #tfc:bowls',
+            '2x #tfc:foods/grains',
+            '3x #tfc:foods/usable_in_soup'
+        ],
+        fluidInputs: [Fluid.of('minecraft:water', 100)],
+        itemOutputs: ['3x tfc:food/grain_soup'],
+        itemOutputProvider: TFC.isp.of('3x tfc:food/grain_soup').meal(
+            (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
+            [
+                (portion) => portion
+                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
+                    .nutrientModifier(1)
+                    .saturationModifier(0.8)
+                    .waterModifier(0.8)
+            ]
+        )
+    })
+
+    processorRecipe("fruit_soup", 200, 8, {
+        circuit: 21,
+        itemInputs: [
+            '3x #tfc:bowls',
+            '2x #tfc:foods/fruits',
+            '3x #tfc:foods/usable_in_soup'
+        ],
+        fluidInputs: [Fluid.of('minecraft:water', 100)],
+        itemOutputs: ['3x tfc:food/fruit_soup'],
+        itemOutputProvider: TFC.isp.of('3x tfc:food/fruit_soup').meal(
+            (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
+            [
+                (portion) => portion
+                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
+                    .nutrientModifier(1)
+                    .saturationModifier(0.8)
+                    .waterModifier(0.8)
+            ]
+        )
+    })
+
+    processorRecipe("vegetables_soup", 200, 8, {
+        circuit: 22,
+        itemInputs: [
+            '3x #tfc:bowls',
+            '2x #tfc:foods/vegetables',
+            '3x #tfc:foods/usable_in_soup'
+        ],
+        fluidInputs: [Fluid.of('minecraft:water', 100)],
+        itemOutputs: ['3x tfc:food/vegetables_soup'],
+        itemOutputProvider: TFC.isp.of('3x tfc:food/vegetables_soup').meal(
+            (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
+            [
+                (portion) => portion
+                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
+                    .nutrientModifier(1)
+                    .saturationModifier(0.8)
+                    .waterModifier(0.8)
+            ]
+        )
+    })
+
+    processorRecipe("protein_soup", 200, 8, {
+        circuit: 23,
+        itemInputs: [
+            '3x #tfc:bowls',
+            '2x #tfc:foods/meats',
+            '3x #tfc:foods/usable_in_soup'
+        ],
+        fluidInputs: [Fluid.of('minecraft:water', 100)],
+        itemOutputs: ['3x tfc:food/protein_soup'],
+        itemOutputProvider: TFC.isp.of('3x tfc:food/protein_soup').meal(
+            (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
+            [
+                (portion) => portion
+                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
+                    .nutrientModifier(1)
+                    .saturationModifier(0.8)
+                    .waterModifier(0.8)
+            ]
+        )
+    })
+
+    processorRecipe("dairy_soup", 200, 8, {
+        circuit: 24,
+        itemInputs: [
+            '3x #tfc:bowls',
+            '2x #tfc:foods/dairy',
+            '3x #tfc:foods/usable_in_soup'
+        ],
+        fluidInputs: [Fluid.of('minecraft:water', 100)],
+        itemOutputs: ['3x tfc:food/dairy_soup'],
+        itemOutputProvider: TFC.isp.of('3x tfc:food/dairy_soup').meal(
+            (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
+            [
+                (portion) => portion
+                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
+                    .nutrientModifier(1)
+                    .saturationModifier(0.8)
+                    .waterModifier(0.8)
+            ]
+        )
+    })	
 
 	// These don't need the ISP handling, they're just here to keep all the food recipes together
 
@@ -1034,9 +1148,9 @@ function registerTFGFoodRecipes(event) {
 	event.recipes.tfc.heating('tfg:food/raw_wraptor', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_wraptor').copyFood())
 	
-	event.recipes.tfc.heating('tfg:food/raw_springling_chops', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_springling_chops').copyFood())
-		
+	event.recipes.tfc.heating('tfg:food/raw_springling_collar', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_springling_collar').copyFood())
+
 	event.recipes.tfc.heating('tfg:food/raw_walker_steak', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_walker_steak').copyFood())
 	
@@ -1052,6 +1166,24 @@ function registerTFGFoodRecipes(event) {
 	event.recipes.tfc.heating('tfg:food/raw_goober_meat', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_goober_meat').copyFood())
 
+	event.recipes.tfc.heating('tfg:food/raw_surfer_steak', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_surfer_steak').copyFood())
+
+	event.recipes.tfc.heating('tfg:food/raw_cruncher_ribs', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_cruncher_ribs').copyFood())
+
+	event.recipes.tfc.heating('tfg:food/raw_stickastackatick', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_stickastackatick').copyFood())
+
+	event.recipes.tfc.heating('tfg:food/raw_long_pig_filet', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_long_pig_filet').copyFood())
+		
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('tfg:food/raw_stickastackatick').copyFood(),
+		[TFC.ingredient.notRotten('tfg:food/raw_stackatick_chunks'), '#forge:rods/wood'], 'tfg:food/raw_stackatick_chunks')
+		.id(`tfg:crafting/raw_stickastackatick`)
+
+	// Bulbkin
 	event.recipes.tfc.advanced_shapeless_crafting(
 		TFC.itemStackProvider.of('4x betterend:cave_pumpkin_chunks').copyFood(),
 		[TFC.ingredient.notRotten('betterend:cave_pumpkin'), '#forge:tools/hammers'], 'betterend:cave_pumpkin')
@@ -1072,13 +1204,19 @@ function registerTFGFoodRecipes(event) {
 	processorRecipe("cave_pumpkin_pie_dough", 300, GTValues.VA[GTValues.HV], {
 		itemInputs: ['#tfg:martian_eggs', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', 'tfg:wraptor_sugar'],
 		fluidInputs: ['minecraft:water 1000'],
-		itemOutputs: ["betterend:cave_pumpkin_pie_dough"]
+		itemOutputs: ["betterend:cave_pumpkin_pie_dough"],
+		itemOutputProvider: TFC.isp.of("betterend:cave_pumpkin_pie_dough").copyOldestFood()
 	})
 
 	event.recipes.firmalife.mixing_bowl()
-		.ingredients(['#tfg:martian_eggs', 'betterend:cave_pumpkin_chunks', 'betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', 'tfg:wraptor_sugar'],
+		.ingredients([
+			TFC.ingredient.notRotten('#tfg:martian_eggs'), 
+			TFC.ingredient.notRotten('betterend:cave_pumpkin_chunks'), 
+			TFC.ingredient.notRotten('betterend:cave_pumpkin_chunks'), 
+			TFC.ingredient.notRotten('betterend:amber_root_product'),
+			'tfg:wraptor_sugar'],
 			Fluid.of('minecraft:water', 1000))
-		.outputItem('betterend:cave_pumpkin_pie_dough')
+		.outputItem(TFC.isp.of('betterend:cave_pumpkin_pie_dough').copyOldestFood())
 		.id('tfg:mixing_bowl/cave_pumpkin_pie_dough')
 
 	event.recipes.tfc.advanced_shapeless_crafting(
@@ -1091,6 +1229,44 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: [`betterend:cave_pumpkin_pie_dough`, "#firmalife:pie_pans"],
 		itemOutputs: ["betterend:cave_pumpkin_pie_raw"],
 		itemOutputProvider: TFC.isp.of("betterend:cave_pumpkin_pie_raw").copyFood()
+	})
+
+	// Dino nugs
+
+	registerFoodRecipe("food_oven", "raw_dino_nugget", 300, GTValues.VA[GTValues.LV], "", {
+		itemInputs: ["tfg:food/raw_dino_nugget"],
+		itemOutputs: ["tfg:food/cooked_dino_nugget"],
+		fluidInputs: ['#firmalife:oils 100'],
+		itemOutputProvider: TFC.isp.of("tfg:food/cooked_dino_nugget")
+			.firmaLifeCopyDynamicFood()
+			.addTrait("firmalife:oven_baked")
+			.meal(
+				(food) => food.hunger(3).saturation(2).decayModifier(1.5),
+				[(portion) => portion.nutrientModifier(2.0)])
+	})
+
+	processorRecipe("raw_dino_nuggets", 300, GTValues.VA[GTValues.HV], {
+		itemInputs: ['#tfg:raw_dinosaur_meat', '3x #tfc:foods/flour', 'tfc:powder/salt'],
+		fluidInputs: ['tfc:beer 200'],
+		notConsumable: ['gtceu:nugget_casting_mold'],
+		itemOutputs: ['2x tfg:food/raw_dino_nugget'],
+		circuit: 1,
+		itemOutputProvider: TFC.isp.of("2x tfg:food/raw_dino_nugget").meal(
+			(food) => food.hunger(1).decayModifier(3).grain(0.4),
+			[(portion) => portion.nutrientModifier(0.5).waterModifier(0.4)]
+		)
+	})
+
+	processorRecipe("raw_dino_nuggets_aged_beer", 300, GTValues.VA[GTValues.HV], {
+		itemInputs: ['#tfg:raw_dinosaur_meat', '3x #tfc:foods/flour', 'tfc:powder/salt'],
+		fluidInputs: ['tfcagedalcohol:aged_beer 200'],
+		notConsumable: ['gtceu:nugget_casting_mold'],
+		itemOutputs: ['2x tfg:food/raw_dino_nugget'],
+		circuit: 1,
+		itemOutputProvider: TFC.isp.of("2x tfg:food/raw_dino_nugget").meal(
+			(food) => food.hunger(1).decayModifier(3).grain(0.6),
+			[(portion) => portion.nutrientModifier(0.5).waterModifier(0.4)]
+		)
 	})
 
 	//#endregion

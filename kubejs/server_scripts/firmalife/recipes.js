@@ -132,6 +132,7 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('firmalife:empty_olivine_wine_bottle')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.recipes.gtceu.alloy_smelter('firmalife:empty_volcanic_wine_bottle')
 		.itemInputs('tfc:volcanic_glass_batch')
@@ -139,6 +140,7 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('firmalife:empty_volcanic_wine_bottle')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.recipes.gtceu.alloy_smelter('firmalife:empty_hematitic_wine_bottle')
 		.itemInputs('tfc:hematitic_glass_batch')
@@ -146,6 +148,7 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('firmalife:empty_hematitic_wine_bottle')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.recipes.gtceu.alloy_smelter('firmalife:wine_glass')
 		.itemInputs('tfc:silica_glass_batch')
@@ -153,6 +156,7 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('2x firmalife:wine_glass')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.recipes.gtceu.assembler('firmalife:cork')
 		.itemInputs('firmalife:treated_lumber')
@@ -173,6 +177,7 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('6x firmalife:pie_pan')
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(100)
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.replaceInput({ id: 'firmalife:crafting/bottle_label' }, 'firmalife:beeswax', '#forge:wax')
 
@@ -572,8 +577,15 @@ const registerFirmaLifeRecipes = (event) => {
 			'firmalife:spoon',
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
 			'firmalife:tirage_mixture', 
+			'#tfc:bowls'
+		]).keepIngredient('#tfc:bowls').id(`tfg:shapeless/${grain}_dough`)
+
+		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`4x firmalife:food/${grain}_dough`).copyFood(), [
+			'firmalife:spoon',
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			'firmalife:tirage_mixture', 
 			'firmalife:mixing_bowl'
-		]).id(`tfg:shapeless/${grain}_dough`)
+		]).id(`tfg:shapeless/${grain}_dough_mixing`)
 
 		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`8x firmalife:food/${grain}_dough`).copyFood(), [
 			'firmalife:spoon', 
@@ -761,4 +773,28 @@ const registerFirmaLifeRecipes = (event) => {
 			Fluid.of('tfcchannelcasting:milk_chocolate', 100))
 		.outputItem(TFC.isp.of('firmalife:food/chocolate_ice_cream').copyFood())
 		.id('tfg:mixing_bowl/chocolate_ice_cream')
+
+	// Chocolate Melting
+	const setChocolateHeating = (variant) => {
+    const itemID = `firmalife:food/${variant}_chocolate`
+    const fluidID = `tfcchannelcasting:${variant}_chocolate`
+    const recipeID = `firmalife:heating/${variant}_chocolate`
+	const castingRecipeID = `tfcchannelcasting:casting/${variant}_chocolate`
+
+    event.remove({ id: recipeID })
+	event.remove({ id: castingRecipeID })
+	event.remove({ id: `${castingRecipeID}_fire_ingot` })
+    event.remove({ id: `tfcchannelcasting:heating/food/${variant}_chocolate` })
+
+    event.recipes.tfc.heating(itemID, 200)
+        .resultFluid(Fluid.of(fluidID, 144))
+        .id(recipeID)
+
+	event.recipes.tfc.casting(`${itemID}`, 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient(`${fluidID}`, 144), 0)
+	event.recipes.tfc.casting(`${itemID}`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(`${fluidID}`, 144), 0)		
+	}
+
+	setChocolateHeating('white')
+	setChocolateHeating('milk')
+	setChocolateHeating('dark')		
 }
