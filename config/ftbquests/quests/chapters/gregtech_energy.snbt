@@ -599,7 +599,7 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:bronze_large_boiler)item(gtceu:steel_large_boiler)item(gtceu:titanium_large_boiler)item(gtceu:tungstensteel_large_boiler))"
 						}
 					}
-					title: "{quests.gregtech_energy.lst_fuel.task.2}"
+					title: "{quests.gregtech_energy.lst_fuel.task}"
 					type: "item"
 				}
 			]
