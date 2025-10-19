@@ -1,0 +1,154 @@
+{
+  "name": "划艇",
+  "category": "tfc:firmaciv",
+  "icon": "firmaciv:rowboat_icon_only",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "那么，已经进入了铁器时代后，你想升级吗？好吧，划艇就是为你量身定制的。它有三个座位，可以容纳3名玩家，或者最多容纳2只动物，包括马！和往常一样，您也可以用一些容器更换座椅（驾驶员座椅除外）。您也可以在船尾放置另外两个容器。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "在划艇中，与其他船只不同，当你驾驶船只时，你会凡着做。这将能让你借力，以更方便的使用桨！当然，你可以用第一人称视角驾驶划艇，但你肯定会认为第三人称看着更舒服。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmaciv:crafting/watercraft_frame_angled",
+      "text": "要建造一艘划艇，你需要先造出造船厂的脚手架。脚手架可以让你在建造时将船的材料维持在原位而不掉下来。$(br2)然后，将它们面朝内放置在一个2乘3的区域中。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "   ",
+            "   ",
+            "   "
+          ],
+          [
+            " 12",
+            " 04",
+            " 56"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_right]",
+          "2": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_left]",
+          "0": "firmaciv:watercraft_frame_angled[facing=north,shape=straight]",
+          "4": "firmaciv:watercraft_frame_angled[facing=south,shape=straight]",
+          "5": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_left]",
+          "6": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_right]"
+        }
+      },
+      "name": "划艇脚手架",
+      "text": "造船者为建造划艇而设置的脚手架。",
+      "enable_visualize": true
+    },
+
+    {
+      "type": "patchouli:text",
+      "text": "下一步，你需要放上合适的结实的硬木木板:$(br2)金合欢木$(br)梣木$(br)山杨木$(br)桦木$(br)黑木$(br)栗木$(br)山胡桃木$(br)枫木$(br)橡木$(br)红木$(br)悬铃木"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "   ",
+            "   ",
+            "   "
+          ],
+          [
+            " 12",
+            " 04",
+            " 56"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_right,frame_processed=3]",
+          "2": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_left,frame_processed=3]",
+          "0": "firmaciv:wood/watercraft_frame/angled/hickory[facing=north,shape=straight,frame_processed=3]",
+          "4": "firmaciv:wood/watercraft_frame/angled/hickory[facing=south,shape=straight,frame_processed=3]",
+          "5": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_left,frame_processed=3]",
+          "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=3]"
+        }
+      },
+      "name": "搭建划艇的脚手架",
+      "text": "每个脚手架上放了四块木板。",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "   ",
+            "   ",
+            "   "
+          ],
+          [
+            " 12",
+            " 04",
+            " 56"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_right,frame_processed=7]",
+          "2": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_left,frame_processed=7]",
+          "0": "firmaciv:wood/watercraft_frame/angled/hickory[facing=north,shape=straight,frame_processed=7]",
+          "4": "firmaciv:wood/watercraft_frame/angled/hickory[facing=south,shape=straight,frame_processed=7]",
+          "5": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_left,frame_processed=7]",
+          "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=7]"
+        }
+      },
+      "name": "搭建划艇的脚手架",
+      "text": "在你的副手中拿一把锤子，在每个脚手架上打进四个铜螺栓。铜螺栓是用铜棒锻造而成的。",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "   ",
+            " LR",
+            "   "
+          ],
+          [
+            " 12",
+            " 04",
+            " 56"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_right,frame_processed=7]",
+          "2": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_left,frame_processed=7]",
+          "0": "firmaciv:wood/watercraft_frame/angled/hickory[facing=north,shape=straight,frame_processed=7]",
+          "4": "firmaciv:wood/watercraft_frame/angled/hickory[facing=south,shape=straight,frame_processed=7]",
+          "5": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_left,frame_processed=7]",
+          "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=7]",
+          "L": "alekiships:oarlock[facing=north]",
+          "R": "alekiships:oarlock[facing=south]"
+        }
+      },
+      "name": "搭建划艇的脚手架",
+      "text": "最后，在划艇的正中央放入桨架。",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe2": "firmaciv:crafting/oar",
+      "text": "现在，用$(item)$(k:key.use)$()把桨安装到划艇上，划艇就可以下水啦！"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "划艇",
+      "images": [
+        "firmaciv:textures/gui/book/rowboat_isometric.png"
+      ],
+      "text": "一只建造完成的划艇。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 3
+}
