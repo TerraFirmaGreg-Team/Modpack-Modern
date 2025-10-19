@@ -1934,6 +1934,7 @@
   "quests.gregtech_energy.lst_fuel.subtitle": "没什么选择余地",
   "quests.gregtech_energy.lst_fuel.desc": "蒸汽并不复杂——只需烧水。\n\n要高效地实现这一点，我们推荐使用&6大型锅炉&r。共有四种版本：分别对应&8ULV&r、&bMV&r、&5EV&r和&1IV&r阶段。每个等级都能显著提升蒸汽产量。\n\n但要注意：与其他发电方式相比，&d大型蒸汽涡轮机&r配合这些锅炉的扩展性并不理想。\n\n大多数玩家会跳过钛和钨钢锅炉——它们确实存在，但不值得建造。蒸汽系统的扩展能力确实有限！\n\n温馨提示：&e2mB&r蒸汽=&e1EU&r。",
   "quests.gregtech_energy.lst_fuel.task": "我会换用能量密度更高的燃料",
+  "quests.gregtech_energy.lst_fuel.task.1": "大型锅炉",
   "quests.gregtech_energy.lce_fuel.title": "液体燃料",
   "quests.gregtech_energy.lce_fuel.subtitle": "污染者的最爱",
   "quests.gregtech_energy.lce_fuel.desc.1": "所有这些燃料均用于&6内燃发电机&r——此处按效率从低到高排列。\n\n在&bMV&r阶段，我们建议从柴油或生物柴油起步。待发展到&6HV&r阶段后，可通过将柴油与氮气、氢气及氧气混合，升级使用&6高十六烷值柴油&r。",
