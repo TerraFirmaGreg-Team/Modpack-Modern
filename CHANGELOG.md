@@ -13,6 +13,13 @@
 - Added circuit numbers to the Formic Acid and Ammonium Chloride chemical reactor recipes @Pyritie
 - Fixed inconsistent circuit numbers between CR and LCR for specific recipes (#2047) @Redeix
 - Driverless rockets should now properly explode at world height limit instead of getting stuck @Pyritie
+- Fix emitter recipes (#2059) @SpicyNoodle5
+- Removed inventory sorting from all Sacks n Such containers and Lunchboxes because they were causing weird stack sizes or voiding (#2018) @Pyritie
+- Fixed train conductors suffocating on planets (#2055) @Pyritie
+- Fixed firepit with pot and grill not raising the ambient temperature (#2002) @Pyritie
+- Fixed a few recipes wanting missing items (#2012) @Pyritie
+- Fixed inconsistency between the belt sander and lathe (#2022) @Pyritie
+- Fixed double plates not stacking to 16 (#1952, #2051) @WIPocket
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @DI-GitH
