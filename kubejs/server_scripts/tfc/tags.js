@@ -62,6 +62,7 @@ function registerTFCItemTags(event) {
     event.add("tfc:usable_on_tool_rack", "waterflasks:red_steel_flask");
     event.add("tfc:usable_on_tool_rack", "tfc:wool_cloth");
     event.add("tfc:usable_on_tool_rack", "firmalife:mixing_bowl");
+    event.add("tfc:usable_on_tool_rack", "#gtceu:molds");
 
     // Ингредиенты для закваски
     event.add("tfg:ferments_to_rennet", "tfc:food/soybean");

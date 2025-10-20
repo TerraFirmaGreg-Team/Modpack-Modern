@@ -6,12 +6,17 @@
 - Added create packages/jars back to JEI so you can use them in filters, and added a tag for all jars (#2044) @Nashy1232
 - Slightly reduced spawn chance of illages and nerfed the amount of loot you get from them @Pyritie
 - Rebalanced some of the moon/mars food nutrition/saturation values @Pyritie
+- Added casting/extruder molds to tool racks @Pyritie
+- Added sandstorms to mars @Zippity
 ### Bug fixes
 - Fixed the interplanetary wireless card so it doesn't use a huge amount of power when just having it open @ko-lja
 - Added circuit numbers to the Formic Acid and Ammonium Chloride chemical reactor recipes @Pyritie
 - Fixed inconsistent circuit numbers between CR and LCR for specific recipes (#2047) @Redeix
 - Driverless rockets should now properly explode at world height limit instead of getting stuck @Pyritie
 ### Translation updates
+- Chinese (simplified) @jmecn
+- Russian @DI-GitH
+- French @Mattisso3500 
 
 ## [0.11.3] - 15-10-2025
 ### Major Changes
