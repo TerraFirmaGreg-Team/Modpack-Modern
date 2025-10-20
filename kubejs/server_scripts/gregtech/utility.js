@@ -449,7 +449,7 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 		}).id(`tfg:shaped/${name}_pressure_plate`)
 
 		event.recipes.gtceu.assembler(`tfg:assembler/${name}_pressure_plate`)
-			.itemInputs(`2x ${slab}`, '#forge:springs')
+			.itemInputs(`2x ${slab}`, '#forge:small_springs')
 			.itemOutputs(`2x ${pressure_plate}`)
 			.duration(50)
 			.circuit(3)
