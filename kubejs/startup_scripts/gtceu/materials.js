@@ -284,7 +284,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.IronMagnetic.addFlags(GENERATE_PLATE)
 
 	GTMaterials.Silicon.addFlags(GENERATE_DENSE);
-	GTMaterials.RTMAlloy.addFlags(GENERATE_DENSE);
+	GTMaterials.RTMAlloy.addFlags(GENERATE_DENSE, GENERATE_SPRING);
 	GTMaterials.Lead.addFlags(GENERATE_DENSE);
 
 	GTMaterials.Quartzite.addFlags(GENERATE_ROD);
