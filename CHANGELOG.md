@@ -6,12 +6,26 @@
 - Added create packages/jars back to JEI so you can use them in filters, and added a tag for all jars (#2044) @Nashy1232
 - Slightly reduced spawn chance of illages and nerfed the amount of loot you get from them @Pyritie
 - Rebalanced some of the moon/mars food nutrition/saturation values @Pyritie
+- Added casting/extruder molds to tool racks @Pyritie
+- Added sandstorms to mars @Zippity
 ### Bug fixes
 - Fixed the interplanetary wireless card so it doesn't use a huge amount of power when just having it open @ko-lja
 - Added circuit numbers to the Formic Acid and Ammonium Chloride chemical reactor recipes @Pyritie
 - Fixed inconsistent circuit numbers between CR and LCR for specific recipes (#2047) @Redeix
 - Driverless rockets should now properly explode at world height limit instead of getting stuck @Pyritie
+- Fix emitter recipes (#2059) @SpicyNoodle5
+- Removed inventory sorting from all Sacks n Such containers and Lunchboxes because they were causing weird stack sizes or voiding (#2018) @Pyritie
+- Fixed train conductors suffocating on planets (#2055) @Pyritie
+- Fixed firepit with pot and grill not raising the ambient temperature (#2002) @Pyritie
+- Fixed a few recipes wanting missing items (#2012) @Pyritie
+- Fixed inconsistency between the belt sander and lathe (#2022) @Pyritie
+- Fixed double plates not stacking to 16 (#1952, #2051) @WIPocket
+- Fixed some EV TACZ extended mags requiring the wrong kind of spring (#2065) @BlueBoat29
+- Fixed warped, crimson, and glacian pressure plates using the wrong spring @Pyritie
 ### Translation updates
+- Chinese (simplified) @jmecn
+- Russian @DI-GitH
+- French @Mattisso3500 
 
 ## [0.11.3] - 15-10-2025
 ### Major Changes
