@@ -20,6 +20,8 @@
 - Fixed a few recipes wanting missing items (#2012) @Pyritie
 - Fixed inconsistency between the belt sander and lathe (#2022) @Pyritie
 - Fixed double plates not stacking to 16 (#1952, #2051) @WIPocket
+- Fixed some EV TACZ extended mags requiring the wrong kind of spring (#2065) @BlueBoat29
+- Fixed warped, crimson, and glacian pressure plates using the wrong spring @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @DI-GitH
