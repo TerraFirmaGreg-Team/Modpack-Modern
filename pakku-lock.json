@@ -5349,7 +5349,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "entityculling-forge-1.9.1-mc1.20.1.jar",
+                    "file_name": "entityculling-forge-1.9.2-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5357,20 +5357,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/lQ7VoJbj/entityculling-forge-1.9.1-mc1.20.1.jar",
-                    "id": "lQ7VoJbj",
+                    "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/yzFoumoH/entityculling-forge-1.9.2-mc1.20.1.jar",
+                    "id": "yzFoumoH",
                     "parent_id": "NNAgCjsB",
                     "hashes": {
-                        "sha512": "8b343b2a5e560633e3ccfc4b3dd6dfc69f06d82c84c35c722814218833cc81d156583b5321fb23dc1841701974825cbea053efb08146ce57c9b60a73cdbc31c9",
-                        "sha1": "3f87b5f6c80f2e44793de375779fe7851eb02999"
+                        "sha512": "5c16156a6712d2234aa1933453398dee15ad2cce5f5aef62be764c502b166fbce468dc3418fead0e458ba8c914b37f4591b506a7eab4af1de6baa65dc370c994",
+                        "sha1": "760530a1db027bf2cdea5760a6138a045ad11242"
                     },
                     "required_dependencies": [],
-                    "size": 477585,
-                    "date_published": "2025-10-15T18:08:35.628450Z"
+                    "size": 477372,
+                    "date_published": "2025-10-19T13:25:36.590243Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "entityculling-forge-1.9.1-mc1.20.1.jar",
+                    "file_name": "entityculling-forge-1.9.2-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5378,16 +5378,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7110/590/entityculling-forge-1.9.1-mc1.20.1.jar",
-                    "id": "7110590",
+                    "url": "https://edge.forgecdn.net/files/7125/341/entityculling-forge-1.9.2-mc1.20.1.jar",
+                    "id": "7125341",
                     "parent_id": "448233",
                     "hashes": {
-                        "sha1": "3f87b5f6c80f2e44793de375779fe7851eb02999",
-                        "md5": "a61ff3b7137e622bfd6ba7d39912d626"
+                        "sha1": "760530a1db027bf2cdea5760a6138a045ad11242",
+                        "md5": "e756916c39c6cae945c321c3bb2ab0f9"
                     },
                     "required_dependencies": [],
-                    "size": 477585,
-                    "date_published": "2025-10-15T18:08:34.810Z"
+                    "size": 477372,
+                    "date_published": "2025-10-19T13:25:35.733Z"
                 }
             ]
         },
@@ -9431,7 +9431,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "moonlight-1.20-2.16.14-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.15-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9440,20 +9440,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/vtXrnGIc/moonlight-1.20-2.16.14-forge.jar",
-                    "id": "vtXrnGIc",
+                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/q6pVkPDR/moonlight-1.20-2.16.15-forge.jar",
+                    "id": "q6pVkPDR",
                     "parent_id": "twkfQtEc",
                     "hashes": {
-                        "sha512": "41ef25433a505e55515b3d12cf503c01d63a631717115b200e7abe2dd06a6b39f5f2e408c7f3149ea1e81f19ab749d571598026396036dd22bf040290581a820",
-                        "sha1": "d08b26bb219c2eeff5d3dfd30b38dbbc682c0348"
+                        "sha512": "9eba41fa2bef4558bfe7a3a31b0b3ae2484eba87a2f6feda6d4e0c18d9074b08bb0a5637446a9df2a87171a27bb84af703a716cfc0f49fab2882da4ffdf2a76c",
+                        "sha1": "5b87fafe107c93754765b0490fbf0250df520b6e"
                     },
                     "required_dependencies": [],
-                    "size": 1333892,
-                    "date_published": "2025-10-06T06:42:48.695016Z"
+                    "size": 1333278,
+                    "date_published": "2025-10-18T08:20:19.294910Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "moonlight-1.20-2.16.14-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.15-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9462,16 +9462,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7072/721/moonlight-1.20-2.16.14-forge.jar",
-                    "id": "7072721",
+                    "url": "https://edge.forgecdn.net/files/7119/907/moonlight-1.20-2.16.15-forge.jar",
+                    "id": "7119907",
                     "parent_id": "499980",
                     "hashes": {
-                        "sha1": "d08b26bb219c2eeff5d3dfd30b38dbbc682c0348",
-                        "md5": "db089c7230678965aa22cf7ba0049462"
+                        "sha1": "5b87fafe107c93754765b0490fbf0250df520b6e",
+                        "md5": "9530dafa3d58016165594559e8013eb0"
                     },
                     "required_dependencies": [],
-                    "size": 1333892,
-                    "date_published": "2025-10-06T06:42:33.847Z"
+                    "size": 1333278,
+                    "date_published": "2025-10-18T08:20:03.677Z"
                 }
             ]
         },
