@@ -1,4 +1,4 @@
-"use strict";
+/*"use strict";
 
 const $Vec2 = Java.loadClass("net.minecraft.world.phys.Vec2")
 
@@ -70,4 +70,4 @@ ItemEvents.firstRightClicked('gtceu:long_tin_rod', event => {
 
     climateManager.setWind({x: newX, z: newY});
     player.sendSystemMessage(`new angle: ${JavaMath.toDegrees(Math.atan2(newY, newX)).toFixed(1)}`);
-});
+});*/
