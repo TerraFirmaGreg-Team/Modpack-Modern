@@ -3,13 +3,10 @@
 const $Vec2 = Java.loadClass("net.minecraft.world.phys.Vec2")
 
 ItemEvents.firstLeftClicked('gtceu:long_copper_rod', event => {
-    //if (event.getItem().getHoverName().getString() !== "zippity") return;
-
     let player = event.player;
     player.sendSystemMessage(event.getItem().getHoverName());
     let biome = event.getLevel().getBiome(player.blockPosition());
 
-    // player.sendSystemMessage("debug stick of dooooom!");
     let currentWind = TFC.climate.getWindVector(player.level, player.blockPosition());
 
     let tags = Array(
@@ -17,7 +14,7 @@ ItemEvents.firstLeftClicked('gtceu:long_copper_rod', event => {
         ResourceLocation.tryParse("tfg:has_medium_sand_particles"), 
         ResourceLocation.tryParse("tfg:has_dark_sand_particles")
     )
-    // player.sendSystemMessage(`current biome tags are ${biome.getTagKeys().toString()}`);
+
     player.sendSystemMessage(biome.tags().map(tag => tag.location()).filter(element => tags.indexOf(element) > -1).toList());
     let text = `current wind vector is x: ${currentWind.x.toPrecision(2)} z: ${currentWind.y.toPrecision(2)}`;
     player.sendSystemMessage(text);
@@ -25,8 +22,7 @@ ItemEvents.firstLeftClicked('gtceu:long_copper_rod', event => {
 
 // scale wind up (down) on (crouch +) left click
 ItemEvents.firstLeftClicked('gtceu:long_tin_rod', event => {
-    //if (event.getItem().getHoverName().getString() !== "zippity") return;
-    const player = event.getPlayer()
+    const player = event.getPlayer();
 
     const climateManager = global.getMarsClimateController();
     const wind = climateManager.getWind();
@@ -40,22 +36,21 @@ ItemEvents.firstLeftClicked('gtceu:long_tin_rod', event => {
     let newY = 0.0;
 
     // i can't modify windVec's properties without rhino throwing a shitfit so here have some extra variables
-    newX = scaledVec.x
-    newY = scaledVec.y
+    newX = scaledVec.x;
+    newY = scaledVec.y;
     
     if (scaledVec.lengthSquared() >= 1.0) {
         newX = scaledVec.normalized().scale(0.99).x;
         newY = scaledVec.normalized().scale(0.99).y;
     }
-    newX = newX <= 0.1 ? 0.1 : newX
-    newY = newY <= 0.1 ? 0.1 : newY
+    newX = newX <= 0.1 ? 0.1 : newX;
+    newY = newY <= 0.1 ? 0.1 : newY;
     
-    climateManager.setWind({x: newX, z: newY})
+    climateManager.setWind({x: newX, z: newY});
     player.sendSystemMessage(`new x: ${newX.toFixed(1)}, z: ${newY.toFixed(1)}`);
 });
 
 ItemEvents.firstRightClicked('gtceu:long_tin_rod', event => {
-    //if (event.getItem().getHoverName().getString() !== "zippity") return;
     const player = event.getPlayer();
 
     const climateManager = global.getMarsClimateController();

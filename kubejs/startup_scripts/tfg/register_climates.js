@@ -36,34 +36,49 @@ function invLerp(x, y, a) {
  * allows runtime control of wind vector; called every tick
  * @returns {Object} singleton manager object
  */
-global.getMarsClimateController = function() {
-    if (!global._MARS_CLIMATE_CONTROLLER) {
-        console.info("Initializing MARS_CLIMATE_CONTROLLER...");
-        global._MARS_CLIMATE_CONTROLLER = {
-            windX: 0,
-            windZ: 0,
-            
-            getWind: function() {
-                return {x: this.windX, z: this.windZ};
-            },
-            
-            setWind: function(vector) {
-                const strength = Math.hypot(vector.x, vector.z);
-                // if (strength > 1.0) throw new RangeError("Vector length > 1");
-                this.windX = vector.x;
-                this.windZ = vector.z;
-            },
-            
-            createCallbackForBuilder: function(builder) {
-                var self = this;
-                return function() {
-                    const wind = self.getWind();
-                    return builder.vector(wind.x, wind.z);
-                };
-            }
-        };
-    }
-    return global._MARS_CLIMATE_CONTROLLER;
+global.getMarsClimateController = function () {
+	if (!global._MARS_CLIMATE_CONTROLLER) {
+		console.info("Initializing MARS_CLIMATE_CONTROLLER...");
+		global._MARS_CLIMATE_CONTROLLER = {
+			windX: 0,
+			windZ: 0,
+
+			getWind: function () {
+				return { x: this.windX, z: this.windZ };
+			},
+
+			setWind: function (vector) {
+				this.windX = vector.x;
+				this.windZ = vector.z;
+			},
+
+			createWindCallback: function (builder) {
+				var self = this;
+				return function (level, pos, calendarTicks) {
+					const strength = Max.max(0, (Math.sin(calendarTicks / 1000) -0.6) / 2);
+
+					const newX = Math.cos(calendarTicks / 24000) * strength;
+					const newZ = Math.sin(calendarTicks / 24000) * strength;
+
+					self.setWind({x: newX, z: newZ});
+					return builder.vector(newX, newZ);
+				};
+			},
+
+			createFogCallback: function (builder) {
+				var self = this;
+				return function (level, pos, calendarTicks) {
+					const wind = self.getWind();
+					const strength = Math.hypot(wind.x, wind.z);
+					if (strength < 0.2)
+						return 0;
+					else
+						return Math.max(0, strength);
+				}
+			}
+		};
+	}
+	return global._MARS_CLIMATE_CONTROLLER;
 };
 
 
@@ -98,7 +113,7 @@ function calcCurrentTemp(averageTemp, seaLevel, playerY, calendarTicks, tempRang
 		let depthPercent = 1 - (playerY / 20);
 
 		let bedrockTemp = lerp(averageTemp, coreTemp, coreTempMult);
-		
+
 		return lerp(bedrockTemp, averageTemp, depthPercent);
 	}
 }
@@ -150,7 +165,6 @@ TFCEvents.registerClimateModel(event => {
 	})
 
 	event.register('tfg:orbit_climate', builder => {
-
 		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
 			if (OxygenAPI.hasOxygen(level, pos.above())) {
 				return OXYGENATED_TEMP;
@@ -194,22 +208,20 @@ TFCEvents.registerClimateModel(event => {
 		})
 
 		builder.setAverageTemperatureCalculation((level, pos) => {
-
 			// Earth is 10k to each pole, and mars is about half as big as earth, so 5k to each pole sounds good
 			return calcAverage(pos.z, global.MARS_PLANET_SIZE, -110, -15);
 		})
 
 		builder.setAverageRainfallCalculation((level, pos) => {
-		
 			// irl mars' poles have a snowfall of 0.13mm but that's barely noticeable here.
 			// Use a negative rainfall to stop it snowing closer to the equator. TFC clamps negatives to zero so it's fine
 			return calcAverage(pos.x, global.MARS_PLANET_SIZE, -25, 13)
 		})
 
-		builder.setAirFog((level, pos, calendarTicks) => 0)
-		builder.setWaterFog((level, pos, calendarTicks) => 0.1)
+		builder.setWaterFog((level, pos, calendarTicks) => 0.02);
 
 		const controller = global.getMarsClimateController();
-		builder.setWindVector(controller.createCallbackForBuilder(builder));
+		builder.setAirFog(controller.createFogCallback(builder));
+		builder.setWindVector(controller.createWindCallback(builder));
 	})
 })
