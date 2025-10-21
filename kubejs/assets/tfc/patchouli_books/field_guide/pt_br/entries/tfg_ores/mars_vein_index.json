@@ -2293,46 +2293,6 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Talco",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/talc"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 28%$(br)$(thing)Fonte de$(): Magnésio$(br)$(thing)Fórmula$(): Mg₃Si₄H₂O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Areia Glauconita",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/glauconite_sand"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 21%$(br)$(thing)Fonte de$(): Magnésio, Alumínio$(br)$(thing)Fórmula$(): KMg₂Al₄H₂O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "Trona",
       "multiblock": {
         "mapping": {
@@ -2348,7 +2308,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 21%$(br)$(thing)Fonte de$(): Sódio$(br)$(thing)Fórmula$(): Na₃C₂H(H₂O)₂O₆",
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Fonte de$(): Sódio$(br)$(thing)Fórmula$(): Na₃C₂H(H₂O)₂O₆",
       "type": "patchouli:multiblock"
     },
     {
@@ -2368,7 +2328,47 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 14%$(br)$(thing)Fonte de$(): Magnésio$(br)$(thing)Fórmula$(): Mg₃Si₄H₂O₁₂",
+      "text": "$(thing)Porcentagem$(): 21%$(br)$(thing)Fonte de$(): Magnésio$(br)$(thing)Fórmula$(): Mg₃Si₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Talco",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/talc"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 21%$(br)$(thing)Fonte de$(): Magnésio$(br)$(thing)Fórmula$(): Mg₃Si₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Areia Glauconita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/glauconite_sand"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 7%$(br)$(thing)Fonte de$(): Magnésio, Alumínio$(br)$(thing)Fórmula$(): KMg₂Al₄H₂O₁₂",
       "type": "patchouli:multiblock"
     },
     {

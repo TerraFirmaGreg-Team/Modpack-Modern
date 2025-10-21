@@ -498,46 +498,6 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "滑石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/talc"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 28%$(br)$(thing)来源$(): 镁$(br)$(thing)化学式$(): Mg₃Si₄H₂O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "海绿石矿砂",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/glauconite_sand"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 21%$(br)$(thing)来源$(): 镁, 铝$(br)$(thing)化学式$(): KMg₂Al₄H₂O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "天然碱",
       "multiblock": {
         "mapping": {
@@ -553,7 +513,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 21%$(br)$(thing)来源$(): 钠$(br)$(thing)化学式$(): Na₃C₂H(H₂O)₂O₆",
+      "text": "$(thing)百分比$(): 35%$(br)$(thing)来源$(): 钠$(br)$(thing)化学式$(): Na₃C₂H(H₂O)₂O₆",
       "type": "patchouli:multiblock"
     },
     {
@@ -573,7 +533,47 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 14%$(br)$(thing)来源$(): 镁$(br)$(thing)化学式$(): Mg₃Si₄H₂O₁₂",
+      "text": "$(thing)百分比$(): 21%$(br)$(thing)来源$(): 镁$(br)$(thing)化学式$(): Mg₃Si₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "滑石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/talc"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 21%$(br)$(thing)来源$(): 镁$(br)$(thing)化学式$(): Mg₃Si₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "海绿石矿砂",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/glauconite_sand"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 7%$(br)$(thing)来源$(): 镁, 铝$(br)$(thing)化学式$(): KMg₂Al₄H₂O₁₂",
       "type": "patchouli:multiblock"
     },
     {
