@@ -1395,6 +1395,8 @@
   "tfg.tooltip.component.refrigerant_pellet": "Can be used as an input in the Fission Reactor to cool it down, requires a Material Holder",
   "tfg.tooltip.component.nuclear_turbine_1": "§eBase Production:§r 4096 EU/t",
   "tfg.tooltip.component.nuclear_turbine_2": "Each Rotor Holder above §5EV§r §7adds§r 10% efficiency and multiplies EU/t by 2.",
+  "tfg.gui.refrigerator.unify_dates.enabled": "Expiration Date Unification is: §aOn",
+  "tfg.gui.refrigerator.unify_dates.disabled": "Expiration Date Unification is: §cOff",
   "tfg.machine.food_refrigerator_power_usage": "§7Consumes§r %s EU/t §7while active to keep your food fresh.§r",
   "tfc.jei.flint_knapping": "Flint Knapping",
   "tfc.jei.straw_knapping": "Straw Knapping",
