@@ -4838,34 +4838,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "diggerhelmet-1.20.1-1.0.0.24.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7105/793/diggerhelmet-1.20.1-1.0.0.24.jar",
-                    "id": "7105793",
-                    "parent_id": "1243596",
-                    "hashes": {
-                        "sha1": "3faf8dcea2520a247d983dcb16ad43ab1e495bf4",
-                        "md5": "dd5c05ea45d18b0c23f5d85a07e062f3"
-                    },
-                    "required_dependencies": [
-                        "309927",
-                        "302973",
-                        "388172"
-                    ],
-                    "size": 211958,
-                    "date_published": "2025-10-14T09:46:25.713Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "diggerhelmet-1.20.1-1.0.0.23.jar",
+                    "file_name": "diggerhelmet-1.20.1-1.0.0.24.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4874,20 +4848,46 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/8Aatj9Zy/versions/rXiEoYbg/diggerhelmet-1.20.1-1.0.0.23.jar",
-                    "id": "rXiEoYbg",
+                    "url": "https://cdn.modrinth.com/data/8Aatj9Zy/versions/LOYb1iLX/diggerhelmet-1.20.1-1.0.0.24.jar",
+                    "id": "LOYb1iLX",
                     "parent_id": "8Aatj9Zy",
                     "hashes": {
-                        "sha512": "d75ed8121d4bd949590eb6daf8a732a7a91633b0038ea833b70ff1d898b0a380c866d90f09d2e6c74c7b9f07640f91b752297f5896c6ed09c3064872085690aa",
-                        "sha1": "550190f78b2e406719bd8ccb2f613f1a943597ff"
+                        "sha512": "042d2aaf48c2af72d401d1aaf961162545def9217b38e0fb52ff2d6879efd54af9320d499caa0cc1175ecc0442099486c1504d59337c10359feaed0960eb66c0",
+                        "sha1": "3faf8dcea2520a247d983dcb16ad43ab1e495bf4"
                     },
                     "required_dependencies": [
-                        "JaCEZUhg",
                         "vvuO3ImH",
-                        "8BmcQJ2H"
+                        "8BmcQJ2H",
+                        "JaCEZUhg"
                     ],
-                    "size": 200011,
-                    "date_published": "2025-08-07T12:54:30.060246Z"
+                    "size": 211958,
+                    "date_published": "2025-10-16T10:59:42.921213Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "diggerhelmet-1.20.1-1.0.0.25.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7132/920/diggerhelmet-1.20.1-1.0.0.25.jar",
+                    "id": "7132920",
+                    "parent_id": "1243596",
+                    "hashes": {
+                        "sha1": "8c49656e74daa66fd8e1c9170fab72493aaa21dd",
+                        "md5": "7209f67f6e71313209e12d76313efc22"
+                    },
+                    "required_dependencies": [
+                        "302973",
+                        "309927",
+                        "388172"
+                    ],
+                    "size": 232711,
+                    "date_published": "2025-10-21T12:56:28.140Z"
                 }
             ]
         },
@@ -13845,7 +13845,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.2.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13854,23 +13854,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/iL4y2eqh/TerraFirmaGreg-Core-Modern-0.8.2.jar",
-                    "id": "iL4y2eqh",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/v2solQge/TerraFirmaGreg-Core-Modern-0.8.3.jar",
+                    "id": "v2solQge",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "6e2f001ac5fc971680d05e60cecf69304655e5e090ee05dae2ba90c4f631ea4f214cccf71b0f85a817e86e93ca28cdc9ec8a54e736df0fd774630485e7f64f3c",
-                        "sha1": "b2746818571997aceb9f466066ea2ee209bbcf97"
+                        "sha512": "7261f8b8edc517aa3c31dd6bdd8e7b5a317665ff389b52d79dd40bd2f1981bb55c43b8d4f15ab11a7122118f29960596a6c89fa35aabb98991f96ccab45be4b6",
+                        "sha1": "47ec03173d7ef176c6af05e5d17c83b759dc8afa"
                     },
                     "required_dependencies": [
-                        "JaCEZUhg",
-                        "7tG215v7"
+                        "7tG215v7",
+                        "JaCEZUhg"
                     ],
-                    "size": 9210255,
-                    "date_published": "2025-10-15T19:34:27.214810Z"
+                    "size": 9238716,
+                    "date_published": "2025-10-21T15:27:44.415591Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.2.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13879,19 +13879,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7110/904/TerraFirmaGreg-Core-Modern-0.8.2.jar",
-                    "id": "7110904",
+                    "url": "https://edge.forgecdn.net/files/7133/366/TerraFirmaGreg-Core-Modern-0.8.3.jar",
+                    "id": "7133366",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "b2746818571997aceb9f466066ea2ee209bbcf97",
-                        "md5": "e55f15ff6956cd66ee4cfa7d9eb07cb6"
+                        "sha1": "47ec03173d7ef176c6af05e5d17c83b759dc8afa",
+                        "md5": "b4c80027149a69d7505b26925e07a3f2"
                     },
                     "required_dependencies": [
                         "302973",
                         "890405"
                     ],
-                    "size": 9210255,
-                    "date_published": "2025-10-15T19:34:22.360Z"
+                    "size": 9238716,
+                    "date_published": "2025-10-21T15:27:38.813Z"
                 }
             ]
         },
