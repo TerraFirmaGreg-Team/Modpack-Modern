@@ -1,3 +1,5 @@
+// This is all debug code! Uncomment it if you want to test stuff related to the mars sandstorms
+
 /*"use strict";
 
 const $Vec2 = Java.loadClass("net.minecraft.world.phys.Vec2")
