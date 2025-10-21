@@ -66,6 +66,9 @@ const registerCreateRecipes = (event) => {
 	event.remove({ type: 'minecraft:stonecutting', input: 'create:rose_quartz' })
 	event.remove({ type: 'minecraft:stonecutting', input: 'create:polished_rose_quartz' })
 	event.remove({ type: 'minecraft:stonecutting', input: 'minecraft:iron_ingot' })
+	event.remove({ type: 'create:spout_filling', id: 'create:potions' })
+	event.remove({ type: 'create:spout_filling', id: 'create:fill_minecraft_glass_bottle_with_gtceu_potion' })
+	event.remove({ type: 'create:draining', id: 'create:potions' })
 
 	// Train Station
 	event.shapeless('2x create:track_station', [
