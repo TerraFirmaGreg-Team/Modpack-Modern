@@ -1950,46 +1950,6 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "钙铝榴石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/grossular"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 37%$(br)$(thing)来源$(): 钙, 铝$(br)$(thing)化学式$(): Ca₃Al₂Si₃O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "锰铝榴石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/spessartine"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 25%$(br)$(thing)来源$(): 锰, 铝$(br)$(thing)化学式$(): Al₂Mn₃Si₃O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "软锰矿",
       "multiblock": {
         "mapping": {
@@ -2005,7 +1965,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 25%$(br)$(thing)来源$(): 锰$(br)$(thing)化学式$(): MnO₂",
+      "text": "$(thing)百分比$(): 42%$(br)$(thing)来源$(): 锰$(br)$(thing)化学式$(): MnO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -2025,7 +1985,47 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 12%$(br)$(thing)来源$(): 锰, 钽$(br)$(thing)化学式$(): MnTa₂O₆",
+      "text": "$(thing)百分比$(): 36%$(br)$(thing)来源$(): 锰, 钽$(br)$(thing)化学式$(): MnTa₂O₆",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "钙铝榴石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/grossular"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 10%$(br)$(thing)来源$(): 钙, 铝$(br)$(thing)化学式$(): Ca₃Al₂Si₃O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "锰铝榴石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/spessartine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 10%$(br)$(thing)来源$(): 锰, 铝$(br)$(thing)化学式$(): Al₂Mn₃Si₃O₁₂",
       "type": "patchouli:multiblock"
     },
     {

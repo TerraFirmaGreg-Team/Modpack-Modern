@@ -1781,46 +1781,6 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Гроссуляр",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/grossular"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 37%$(br)$(thing)Хромит$(): Кальций, Алюминий$(br)$(thing)Формула$(): Ca₃Al₂Si₃O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Спасерит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/spessartine"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Хромит$(): Марганец, Алюминий$(br)$(thing)Формула$(): Al₂Mn₃Si₃O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "Пиролюзит",
       "multiblock": {
         "mapping": {
@@ -1836,7 +1796,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Хромит$(): Марганец$(br)$(thing)Формула$(): MnO₂",
+      "text": "$(thing)Процент руды$(): 42%$(br)$(thing)Хромит$(): Марганец$(br)$(thing)Формула$(): MnO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1856,7 +1816,47 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 12%$(br)$(thing)Хромит$(): Марганец, Тантал$(br)$(thing)Формула$(): MnTa₂O₆",
+      "text": "$(thing)Процент руды$(): 36%$(br)$(thing)Хромит$(): Марганец, Тантал$(br)$(thing)Формула$(): MnTa₂O₆",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гроссуляр",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/grossular"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Хромит$(): Кальций, Алюминий$(br)$(thing)Формула$(): Ca₃Al₂Si₃O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Спасерит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/spessartine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Хромит$(): Марганец, Алюминий$(br)$(thing)Формула$(): Al₂Mn₃Si₃O₁₂",
       "type": "patchouli:multiblock"
     },
     {
