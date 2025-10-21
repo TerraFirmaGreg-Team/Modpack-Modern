@@ -7271,7 +7271,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "guideme-20.1.13.jar",
+                    "file_name": "guideme-20.1.14.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7279,20 +7279,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Ck4E7v7R/versions/SYp7t1xZ/guideme-20.1.13.jar",
-                    "id": "SYp7t1xZ",
+                    "url": "https://cdn.modrinth.com/data/Ck4E7v7R/versions/9YGnKYDF/guideme-20.1.14.jar",
+                    "id": "9YGnKYDF",
                     "parent_id": "Ck4E7v7R",
                     "hashes": {
-                        "sha512": "1983c44e7ab1110096929eb49f3e1eeeced97719140ff1b732fce5646744c2b0a971060a3d4289b79ff339ffc9d582f8f2afff5bd88e7cd61e43fb5a1ccc760d",
-                        "sha1": "fc66445539dbd7cd7d763297ea73af5e34c642db"
+                        "sha512": "15311cb0607205d2da3eb369499b8523bd0d8fa41e30c87c0b0e5756df5ea2123389262e6883f66e6c7b1d43d68e20cdfec73b31c202df8fbb99fa80d4fe7b1d",
+                        "sha1": "57d883148f04989128505a1bd8919629440f714f"
                     },
                     "required_dependencies": [],
-                    "size": 9413127,
-                    "date_published": "2025-09-20T00:30:31.979044Z"
+                    "size": 9413204,
+                    "date_published": "2025-10-19T22:32:07.928990Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "guideme-20.1.13.jar",
+                    "file_name": "guideme-20.1.14.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7300,16 +7300,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7013/686/guideme-20.1.13.jar",
-                    "id": "7013686",
+                    "url": "https://edge.forgecdn.net/files/7127/447/guideme-20.1.14.jar",
+                    "id": "7127447",
                     "parent_id": "1173950",
                     "hashes": {
-                        "sha1": "fc66445539dbd7cd7d763297ea73af5e34c642db",
-                        "md5": "a199ad6408eb99d710db01f4705a6e73"
+                        "sha1": "57d883148f04989128505a1bd8919629440f714f",
+                        "md5": "6425ddca1593d7f73c7160e54333cfef"
                     },
                     "required_dependencies": [],
-                    "size": 9413127,
-                    "date_published": "2025-09-20T00:30:27.060Z"
+                    "size": 9413204,
+                    "date_published": "2025-10-19T22:32:04.637Z"
                 }
             ]
         },
@@ -9989,7 +9989,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "notenoughanimations-forge-1.10.4.1-mc1.20.1.jar",
+                    "file_name": "notenoughanimations-forge-1.10.6-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9997,20 +9997,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/MPCX6s5C/versions/6prDAT8r/notenoughanimations-forge-1.10.4.1-mc1.20.1.jar",
-                    "id": "6prDAT8r",
+                    "url": "https://cdn.modrinth.com/data/MPCX6s5C/versions/7KhtEU40/notenoughanimations-forge-1.10.6-mc1.20.1.jar",
+                    "id": "7KhtEU40",
                     "parent_id": "MPCX6s5C",
                     "hashes": {
-                        "sha512": "8a0d26eb85f576b1b5ca2b45cf7219a243c98fb87ae1fef5d0c73bf5a93a5221c50a8f2590bd7f6285e17316d8a869a9ecfc207c96ae84573f81f36845af3837",
-                        "sha1": "624f60e2b90466ffff66608b3bc5c1caf05c4ef5"
+                        "sha512": "d6c3322b260fdf7ad5e06c5340593b84df601ee638b2195712e31834936c4d8a96b3afb4f9a673163bea20283a01c1ef6c186ebc6b5e3bb83b966bba79945b7a",
+                        "sha1": "408c8497c263c03edfe432549ef08dc48c6230ed"
                     },
                     "required_dependencies": [],
-                    "size": 838990,
-                    "date_published": "2025-10-12T19:49:37.520553Z"
+                    "size": 843250,
+                    "date_published": "2025-10-20T12:41:37.262065Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "notenoughanimations-forge-1.10.4.1-mc1.20.1.jar",
+                    "file_name": "notenoughanimations-forge-1.10.6-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10018,16 +10018,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7100/449/notenoughanimations-forge-1.10.4.1-mc1.20.1.jar",
-                    "id": "7100449",
+                    "url": "https://edge.forgecdn.net/files/7129/302/notenoughanimations-forge-1.10.6-mc1.20.1.jar",
+                    "id": "7129302",
                     "parent_id": "433760",
                     "hashes": {
-                        "sha1": "624f60e2b90466ffff66608b3bc5c1caf05c4ef5",
-                        "md5": "e66da7c883b6bd2e5c1c5db524878319"
+                        "sha1": "408c8497c263c03edfe432549ef08dc48c6230ed",
+                        "md5": "228f7b821bb9e475e1ec38868da56f65"
                     },
                     "required_dependencies": [],
-                    "size": 838990,
-                    "date_published": "2025-10-12T19:49:36.383Z"
+                    "size": 843250,
+                    "date_published": "2025-10-20T12:41:36.527Z"
                 }
             ]
         },
