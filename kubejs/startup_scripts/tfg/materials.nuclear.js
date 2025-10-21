@@ -92,8 +92,8 @@ const registerTFGNuclearMaterials = (event) => {
 		.fluid()
 		.components('2x oxygen', '2x fluorine')
 		.iconSet(GTMaterialIconSet.FINE)
-		.color(0xffa500)
-		.secondaryColor(0xffffff)
+		.color(0xfcb603)
+		.secondaryColor(0xfc5e03)
 
 	event.create('tritiated_water')
 		.fluid()
