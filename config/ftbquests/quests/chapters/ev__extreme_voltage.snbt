@@ -2139,42 +2139,25 @@
 		}
 		{
 			dependencies: ["5CF58F7CBE255585"]
-			description: [
-				"{quests.gregtech_energy.lgt.desc.1}"
-				"{@pagebreak}"
-				"{quests.gregtech_energy.lgt.desc.2}"
+			description: ["{quests.extreme_voltage.large_generators.desc}"]
+			disable_toast: true
+			id: "40CBACE41B71C011"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "229957FF419324F0"
+					item: "gtceu:large_combustion_engine"
+					type: "item"
+				}
+				{
+					id: "49B66E0C0E22403A"
+					item: "gtceu:gas_large_turbine"
+					type: "item"
+				}
 			]
-			id: "159FF1FF89EFE2F1"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.gregtech_energy.lgt.subtitle}"
-			tasks: [{
-				id: "3C8C80D102FD0F1C"
-				item: "gtceu:gas_large_turbine"
-				type: "item"
-			}]
-			title: "{quests.gregtech_energy.lgt.title}"
-			x: 1.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["5CF58F7CBE255585"]
-			description: [
-				"{quests.gregtech_energy.lce.desc.1}"
-				"{@pagebreak}"
-				"{quests.gregtech_energy.lce.desc.2}"
-			]
-			id: "6702EC54A3147268"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.gregtech_energy.lce.subtitle}"
-			tasks: [{
-				id: "52B3A43AF377542C"
-				item: "gtceu:large_combustion_engine"
-				type: "item"
-			}]
-			title: "{quests.gregtech_energy.lce.title}"
-			x: 1.5d
+			title: "{quests.extreme_voltage.large_generators.title}"
+			x: 2.0d
 			y: 4.5d
 		}
 	]
