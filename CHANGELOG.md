@@ -4,6 +4,9 @@
 ### Changes
 ### Bug fixes
 
+## [0.11.5] - 22-10-2025
+- Fixed missing ComputerCraft in single player modpack, due to a bug in the latest pakku version
+
 ## [0.11.4] - 22-10-2025
 ### Major Changes
 - Refrigerators now have a toggle for forcing food stacking, as a workaround for the food oven's output. It will stack everything down to the oldest expiring item, so be careful when using this! @Redeix
