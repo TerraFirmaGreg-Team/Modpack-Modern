@@ -1,5 +1,10 @@
 # Changelog
+
 ## [Unreleased]
+### Changes
+### Bug fixes
+
+## [0.11.4] - 22-10-2025
 ### Major Changes
 - Refrigerators now have a toggle for forcing food stacking, as a workaround for the food oven's output. It will stack everything down to the oldest expiring item, so be careful when using this! @Redeix
 - Refrigerators can now also be connected to AE2 and Create Logistics, so you can pull out your food remotely. AE2 doesn't understand the food traits, however, so all your food will show as it does in EMI @Redeix
@@ -36,6 +41,7 @@
 - Chinese (simplified) @jmecn
 - Russian @DI-GitH
 - French @Mattisso3500 
+- Japanese @sakura-gondra
 
 ## [0.11.3] - 15-10-2025
 ### Major Changes
