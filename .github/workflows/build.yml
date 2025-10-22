@@ -266,8 +266,11 @@ jobs:
 
       - name: 🔍 Check if milestone exists
         id: check_milestone
-        uses: actions/github-script@v6
+        uses: actions/github-script@v8.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          result-encoding: string
           script: |
             const version = '${{ steps.changelog.outputs.version }}';
             try {
@@ -283,7 +286,6 @@ jobs:
               console.log('Error checking milestones, assuming milestone does not exist');
               return false;
             }
-        result-encoding: string
 
       - name: 🔍 Create Pull Request if tag not found
         if: ${{ steps.check_existing_pr.outputs.exists == 'false' }}
