@@ -265,9 +265,9 @@ function registerGrapplingHookRecipes(event) {
     event.remove({mod: 'grapplemod'})
 
     event.recipes.kubejs.shaped('grapplemod:grapplinghook', [
-        'A',
-        'B',
-        'B'
+        'A ',
+        'B ',
+        'BB'
     ], {
         A: 'gtceu:wrought_iron_pickaxe_head',
         B: 'firmaciv:rope_coil'
