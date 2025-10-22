@@ -15,6 +15,8 @@
 - Massively buffed the density of Beneath naquadah veins until they get a proper home later @Pyritie
 - Increased amount of pyrolusite and tantalite on mars @Pyritie
 - Added new textures for the fission material holders, redstone ports, and fuel holders (#2073) @Redeix
+- Refrigerators now have more inventory space per tier @Redeix
+- Buffed the Tungsten Bismuth turbine rotor since it had worse stats than HSS-G which was available at a similar time (#2078) @TomPlop
 ### Bug fixes
 - Fixed the interplanetary wireless card so it doesn't use a huge amount of power when just having it open @ko-lja
 - Fixed Firmalife cellar shelves resetting food expiration @Redeix
