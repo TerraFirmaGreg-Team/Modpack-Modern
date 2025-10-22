@@ -5,7 +5,7 @@
 		condition: "always_active"
 		ftbranks.name_format: "&a{name}"
 		ftbchunks.max_claimed: 50
-		ftbchunks.max_force_loaded: 4
+		ftbchunks.max_force_loaded: 6
 		ftbchunks.chunk_load_offline: false
 		command.trashcan: true
 		command.enderchest: false
@@ -15,7 +15,7 @@
 		power: 50
 		ftbranks.name_format: "&e{name}"
 		ftbchunks.max_claimed: 200
-		ftbchunks.max_force_loaded: 6
+		ftbchunks.max_force_loaded: 8
 		ftbchunks.chunk_load_offline: true
 	}
 	moderator_girl: {
@@ -23,14 +23,14 @@
 		power: 51
 		ftbranks.name_format: "&d{name}"
 		ftbchunks.max_claimed: 200
-		ftbchunks.max_force_loaded: 6
+		ftbchunks.max_force_loaded: 8
 	}
 	moderator: {
 		name: "Moderator"
 		power: 51
 		ftbranks.name_format: "&b{name}"
 		ftbchunks.max_claimed: 200
-		ftbchunks.max_force_loaded: 6
+		ftbchunks.max_force_loaded: 8
 	}
 	admin: {
 		name: "Admin"
