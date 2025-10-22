@@ -750,7 +750,7 @@ familiarityDecayLimit = 0.3
 		# Setting this to zero will cause decay not to apply.
 		# Note that if you set this to zero **food items will lose their creation dates!!**. This is not reversible!
 		#Range: 0.0 ~ 1000.0
-		foodDecayModifier = 1.0
+		foodDecayModifier = 0.25
 		#
 		# Enables negative effects from carrying too many very heavy items, including potion effects.
 		enableOverburdening = true
@@ -810,7 +810,7 @@ familiarityDecayLimit = 0.3
 	[mechanics.fluids]
 		#
 		# If true, TFC buckets that naturally place sources (colored steel) will place sources. If false, this behavior is disabled. By default, colored steel buckets do not place sources.
-		enableBucketsPlacingSources1 = false
+		enableBucketsPlacingSources1 = true
 
 	[mechanics.vanillaChanges]
 		#
@@ -1311,4 +1311,5 @@ familiarityDecayLimit = 0.3
 
 [weird]
 	farmlandMakesTheBestRaceTracks = false
+
 
