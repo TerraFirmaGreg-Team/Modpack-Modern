@@ -1365,7 +1365,7 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.recipes.gtceu.cutter('tfg:flax_line_from_bundle_in_cutter')
 		.itemInputs('tfg:flax_bundle')
-		.itemOutputs('18x tfg:flax_line', 'tf:bundled_scraped_flax')
+		.itemOutputs('18x tfg:flax_line', 'tfg:bundled_scraped_flax')
 		.duration(540)
 		.EUt(2)	
 
