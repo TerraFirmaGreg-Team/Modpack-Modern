@@ -1259,6 +1259,7 @@
 			description: ["{quests.ae2.interplanetary_wireless.desc}"]
 			icon: "tfg:wireless_card"
 			id: "4B1F957EB41A5E9B"
+			shape: "hexagon"
 			subtitle: "{quests.ae2.interplanetary_wireless.subtitle}"
 			tasks: [{
 				id: "647F84B024E272BA"

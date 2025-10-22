@@ -38,6 +38,12 @@ const registerTFGItemTags = (event) => {
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/hematitic_sand_covering')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_snow_covering')
 
+	// Actually "piles", the kind that can hide plants inside them
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_sand_covering')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/venus_sand_covering')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/hematitic_sand_covering')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_snow_covering')
+
 	//Decorative Vases
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
 		event.add('c:hidden_from_recipe_viewers', `tfg:decorative_vase/generated/${color}`)

@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_garnierite)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gypsum)Gipsita e Calcita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_goethite)Goethita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)Grafite e Diamante$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet_tin)Granada e Areia Cassiterita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_hematite)Hematita e Limonita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Lápis-lazúri, Lazurita e Sodalita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Naquadah e Plutônio$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Nether Quartzo$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gold)Ouro e Hematita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Pedra-sabão, Talco e Trona$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Redstone, Cinábrio e Rubi$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_garnierite)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gypsum)Gipsita e Calcita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_goethite)Goethita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)Grafite e Diamante$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet_tin)Granada e Areia Cassiterita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_hematite)Hematita e Limonita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Lápis-lazúri, Lazurita e Sodalita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Naquadah$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Nether Quartzo$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gold)Ouro e Hematita$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Pedra-sabão, Talco e Trona$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Redstone, Cinábrio e Rubi$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1843,8 +1843,8 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 250$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 38$(br)$(thing)Tamanho$(): 32$(br2)$(thing)Tipos de Pedra$(): Basalto, Piroxenito",
-      "title": "Naquadah e Plutônio",
+      "text": "$(thing)Raridade$(): 200$(br)$(thing)Densidade$(): 0.7$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 38$(br)$(thing)Tamanho$(): 32$(br2)$(thing)Tipos de Pedra$(): Basalto, Piroxenito",
+      "title": "Naquadah",
       "type": "patchouli:text",
       "anchor": "nether_naquadah"
     },

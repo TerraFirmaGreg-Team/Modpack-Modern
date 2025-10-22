@@ -810,7 +810,7 @@ familiarityDecayLimit = 0.3
 	[mechanics.fluids]
 		#
 		# If true, TFC buckets that naturally place sources (colored steel) will place sources. If false, this behavior is disabled. By default, colored steel buckets do not place sources.
-		enableBucketsPlacingSources1 = false
+		enableBucketsPlacingSources1 = true
 
 	[mechanics.vanillaChanges]
 		#
