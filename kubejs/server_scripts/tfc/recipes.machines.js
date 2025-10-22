@@ -156,6 +156,7 @@ function registerTFCMachineRecipes(event) {
 			.itemOutputs(element.output)
 			.duration(100)
 			.EUt(2)
+			.category(GTRecipeCategories.INGOT_MOLDING)
 	})
 
 	//#endregion
@@ -196,6 +197,13 @@ function registerTFCMachineRecipes(event) {
 		.duration(100)
 		.EUt(2)
 
+	event.recipes.gtceu.alloy_smelter(`tfg:tfc/lamp_glass_from_dust`)
+		.itemInputs('#forge:dusts/glass')
+		.notConsumable('#tfg:unfinished_lamps')
+		.itemOutputs('tfc:lamp_glass')
+		.duration(100)
+		.EUt(2)
+
 	// Empty Jar
 	event.recipes.gtceu.alloy_smelter('tfc:jar_alloying')
 		.itemInputs('#tfc:glass_batches_tier_2')
@@ -203,6 +211,7 @@ function registerTFCMachineRecipes(event) {
 		.itemOutputs('tfc:empty_jar')
 		.duration(100)
 		.EUt(2)
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.recipes.gtceu.fluid_solidifier('tfc:jar_solidification')
 		.inputFluids(Fluid.of('gtceu:glass', 144))

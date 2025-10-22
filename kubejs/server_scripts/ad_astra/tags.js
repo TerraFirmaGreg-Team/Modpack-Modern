@@ -481,7 +481,15 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'wan_ancient_beasts:soarer',
 		'wan_ancient_beasts:glider',
 		'wan_ancient_beasts:toxlacanth',
-		'wan_ancient_beasts:surfer'
+		'wan_ancient_beasts:surfer',
+		'tfg:surfer',
+		// europa
+		'endermanoverhaul:coral_enderman',
+		'endermanoverhaul:snowy_enderman',
+		'endermanoverhaul:ice_spikes_enderman',
+		'species:deepfish',
+		'species:leaf_hanger',
+		'species:cliff_hanger',
 	]
 
 	COLD_ENTITIES.forEach(entity => {
@@ -489,6 +497,8 @@ const registerAdAstraEntityTypeTags = (event) => {
 		event.add('ad_astra:can_survive_extreme_cold', entity)
 		event.add('ad_astra:lives_without_oxygen', entity)
 	})
+
+	event.add('ad_astra:can_survive_in_space', 'railways:conductor')
 
 	event.add('tfc:deals_crushing_damage', 'minecraft:enderman')
 	event.add('tfc:deals_crushing_damage', 'minecraft:stray')
@@ -512,8 +522,9 @@ const registerAdAstraEntityTypeTags = (event) => {
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:soarer')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:glider')
 	// swimming mobs
-	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:surfer')
+	event.add('tfg:ignores_gravity', 'tfg:surfer')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:toxlacanth')
+	event.add('tfg:ignores_gravity', 'endermanoverhaul:coral_enderman')
 }
 
 const registerAdAstraPlacedFeatures = (event) => {
@@ -535,11 +546,9 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_moon_sand')
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_white_sand')
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_black_sand')
-
 	//#endregion
 
 	//#region Mars
-
 	// Underground decoration
 	event.add('tfg:mars_underground_decoration', 'tfg:mars/underground/loose_rocks')
 	event.add('tfg:mars_underground_decoration', 'tfc:cave_spike')
@@ -659,5 +668,10 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_geyserite')
 	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_orange_sand')
 	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_yellow_sand')
+	//#endregion
+
+	//#region Glacio
+	event.add("tfg:glacio_top_layer_modification", "tfg:glow_lichen")
+	event.add("tfg:glacio_top_layer_modification", "tfc:surface_loose_rocks")
 	//#endregion
 }

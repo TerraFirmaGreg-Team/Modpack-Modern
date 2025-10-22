@@ -13,10 +13,10 @@
 	waterwheelPenalty = 0.25
 	#The minimum amount of fluid blocks the waterwheel needs to find before rotation begins.
 	#Range: > 1
-	waterwheelThreshold = 512
+	waterwheelThreshold = 1
 	#The maximum distance a waterwheel can consider fluid blocks from.
 	#Range: > 1
-	waterwheelRange = 128
+	waterwheelRange = 2
 
 ##Windmill requirements
 [windmills]

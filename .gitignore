@@ -115,13 +115,13 @@ hei_bookmarks.ini
 icon.png
 
 # Server data
-.pakku/server-overrides/libraries
-.pakku/server-overrides/config
-.pakku/server-overrides/defaultconfigs
-.pakku/server-overrides/groovy
-.pakku/server-overrides/scripts
-.pakku/server-overrides/mods
-.pakku/server-overrides/user_jvm_args.txt
+# .pakku/server-overrides/libraries
+# .pakku/server-overrides/config
+# .pakku/server-overrides/defaultconfigs
+# .pakku/server-overrides/groovy
+# .pakku/server-overrides/scripts
+# .pakku/server-overrides/mods
+# .pakku/server-overrides/user_jvm_args.txt
 
 /tacz/tacz_default_gun
 EffekseerNativeForJava.dll

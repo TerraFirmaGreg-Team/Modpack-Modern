@@ -114,10 +114,10 @@ const registerAdAstraRecipes = (event) => {
 	event.remove({ mod: 'gtceu', input: 'gtceu:hot_rocket_alloy_t2_ingot' })
 
 	event.recipes.gtceu.mixer('tfg:rocket_alloy_t2')
-		.itemInputs('19x #forge:dusts/titanium', '3x #forge:small_dusts/chromium', '3x #forge:small_dusts/tin', '3x #forge:small_dusts/aluminium')
+		.itemInputs('19x #forge:dusts/titanium', '3x #forge:dusts/chromium', '3x #forge:dusts/tin', '3x #forge:dusts/aluminium')
 		.inputFluids(Fluid.of('gtceu:vanadium', 144 * 4))
-		.itemOutputs('25x #forge:dusts/rocket_alloy_t2')
-		.duration(580)
+		.itemOutputs('32x #forge:dusts/rocket_alloy_t2')
+		.duration(15 * 20)
 		.circuit(5)
 		.EUt(GTValues.VA[GTValues.EV])
 	

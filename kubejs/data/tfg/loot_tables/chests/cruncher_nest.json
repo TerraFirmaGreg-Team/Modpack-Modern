@@ -1,0 +1,429 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:aluminium_fluid_cell",
+					"weight": 30,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Fluid: {Amount: 1000, FluidName: \"gtceu:rocket_fuel\"}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ad_astra:gas_tank",
+					"weight": 30,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{BotariumData: {StoredFluids: [{Amount: 1000, Fluid: \"tfg:compressed_heliox_3\"}]}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:long_stainless_steel_rod",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:stainless_steel_plate",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 2,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:stainless_steel_tiny_fluid_pipe",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:long_titanium_rod",
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:titanium_plate",
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:titanium_screw",
+					"weight": 30,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:steel_plate",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:double_steel_plate",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:aluminium_double_wire",
+					"weight": 30,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:kanthal_double_wire",
+					"weight": 30,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:ev_vanadium_battery",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Charge: 1200000}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:ev_electric_pump",
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:ev_conveyor_module",
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:ev_electric_motor",
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:stainless_steel_ingot",
+					"weight": 65,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:aluminium_ingot",
+					"weight": 80,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 16,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:titanium_ingot",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:micro_processor_computer",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:micro_processor_assembly",
+					"weight": 20,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:micro_processor",
+					"weight": 20,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:uranium_ingot",
+					"weight": 20,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 6,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:uranium_235_ingot",
+					"weight": 10,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:thorium_232_rod",
+					"weight": 10,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 12,
+								"min": 7
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:thorium_230_rod",
+					"weight": 20,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 12,
+								"min": 7
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "species:music_disk_spawner",
+					"weight": 8
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:rich_raw_pitchblende",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:raw_pitchblende",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:poor_raw_pitchblende",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:rich_raw_thorium",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:poor_raw_thorium",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:raw_thorium",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				}
+			],
+			"rolls": {
+				"type": "minecraft:uniform",
+				"max": 15,
+				"min": 12
+			}
+		}
+	]
+}

@@ -16,23 +16,27 @@
         "with": [
           {
             "block": "gtceu:mars_stone_grossular_ore",
-            "weight": 30
-          },
-          {
-            "block": "gtceu:raw_grossular_block",
-            "weight": 1
+            "weight": 10
           },
           {
             "block": "gtceu:mars_stone_spessartine_ore",
-            "weight": 20
+            "weight": 10
           },
           {
             "block": "gtceu:mars_stone_pyrolusite_ore",
-            "weight": 20
+            "weight": 40
+          },
+          {
+            "block": "gtceu:raw_pyrolusite_block",
+            "weight": 1
           },
           {
             "block": "gtceu:mars_stone_tantalite_ore",
-            "weight": 10
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_tantalite_block",
+            "weight": 1
           }
         ]
       },
@@ -43,23 +47,27 @@
         "with": [
           {
             "block": "gtceu:venus_stone_grossular_ore",
-            "weight": 30
-          },
-          {
-            "block": "gtceu:raw_grossular_block",
-            "weight": 1
+            "weight": 10
           },
           {
             "block": "gtceu:venus_stone_spessartine_ore",
-            "weight": 20
+            "weight": 10
           },
           {
             "block": "gtceu:venus_stone_pyrolusite_ore",
-            "weight": 20
+            "weight": 40
+          },
+          {
+            "block": "gtceu:raw_pyrolusite_block",
+            "weight": 1
           },
           {
             "block": "gtceu:venus_stone_tantalite_ore",
-            "weight": 10
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_tantalite_block",
+            "weight": 1
           }
         ]
       },
@@ -70,23 +78,27 @@
         "with": [
           {
             "block": "gtceu:red_granite_grossular_ore",
-            "weight": 30
-          },
-          {
-            "block": "gtceu:raw_grossular_block",
-            "weight": 1
+            "weight": 10
           },
           {
             "block": "gtceu:red_granite_spessartine_ore",
-            "weight": 20
+            "weight": 10
           },
           {
             "block": "gtceu:red_granite_pyrolusite_ore",
-            "weight": 20
+            "weight": 40
+          },
+          {
+            "block": "gtceu:raw_pyrolusite_block",
+            "weight": 1
           },
           {
             "block": "gtceu:red_granite_tantalite_ore",
-            "weight": 10
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_tantalite_block",
+            "weight": 1
           }
         ]
       },
@@ -97,23 +109,27 @@
         "with": [
           {
             "block": "gtceu:gabbro_grossular_ore",
-            "weight": 30
-          },
-          {
-            "block": "gtceu:raw_grossular_block",
-            "weight": 1
+            "weight": 10
           },
           {
             "block": "gtceu:gabbro_spessartine_ore",
-            "weight": 20
+            "weight": 10
           },
           {
             "block": "gtceu:gabbro_pyrolusite_ore",
-            "weight": 20
+            "weight": 40
+          },
+          {
+            "block": "gtceu:raw_pyrolusite_block",
+            "weight": 1
           },
           {
             "block": "gtceu:gabbro_tantalite_ore",
-            "weight": 10
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_tantalite_block",
+            "weight": 1
           }
         ]
       },
@@ -124,23 +140,27 @@
         "with": [
           {
             "block": "gtceu:shale_grossular_ore",
-            "weight": 30
-          },
-          {
-            "block": "gtceu:raw_grossular_block",
-            "weight": 1
+            "weight": 10
           },
           {
             "block": "gtceu:shale_spessartine_ore",
-            "weight": 20
+            "weight": 10
           },
           {
             "block": "gtceu:shale_pyrolusite_ore",
-            "weight": 20
+            "weight": 40
+          },
+          {
+            "block": "gtceu:raw_pyrolusite_block",
+            "weight": 1
           },
           {
             "block": "gtceu:shale_tantalite_ore",
-            "weight": 10
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_tantalite_block",
+            "weight": 1
           }
         ]
       },
@@ -151,23 +171,27 @@
         "with": [
           {
             "block": "gtceu:claystone_grossular_ore",
-            "weight": 30
-          },
-          {
-            "block": "gtceu:raw_grossular_block",
-            "weight": 1
+            "weight": 10
           },
           {
             "block": "gtceu:claystone_spessartine_ore",
-            "weight": 20
+            "weight": 10
           },
           {
             "block": "gtceu:claystone_pyrolusite_ore",
-            "weight": 20
+            "weight": 40
+          },
+          {
+            "block": "gtceu:raw_pyrolusite_block",
+            "weight": 1
           },
           {
             "block": "gtceu:claystone_tantalite_ore",
-            "weight": 10
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_tantalite_block",
+            "weight": 1
           }
         ]
       },
@@ -178,23 +202,27 @@
         "with": [
           {
             "block": "gtceu:limestone_grossular_ore",
-            "weight": 30
-          },
-          {
-            "block": "gtceu:raw_grossular_block",
-            "weight": 1
+            "weight": 10
           },
           {
             "block": "gtceu:limestone_spessartine_ore",
-            "weight": 20
+            "weight": 10
           },
           {
             "block": "gtceu:limestone_pyrolusite_ore",
-            "weight": 20
+            "weight": 40
+          },
+          {
+            "block": "gtceu:raw_pyrolusite_block",
+            "weight": 1
           },
           {
             "block": "gtceu:limestone_tantalite_ore",
-            "weight": 10
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_tantalite_block",
+            "weight": 1
           }
         ]
       },
@@ -205,23 +233,27 @@
         "with": [
           {
             "block": "gtceu:chert_grossular_ore",
-            "weight": 30
-          },
-          {
-            "block": "gtceu:raw_grossular_block",
-            "weight": 1
+            "weight": 10
           },
           {
             "block": "gtceu:chert_spessartine_ore",
-            "weight": 20
+            "weight": 10
           },
           {
             "block": "gtceu:chert_pyrolusite_ore",
-            "weight": 20
+            "weight": 40
+          },
+          {
+            "block": "gtceu:raw_pyrolusite_block",
+            "weight": 1
           },
           {
             "block": "gtceu:chert_tantalite_ore",
-            "weight": 10
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_tantalite_block",
+            "weight": 1
           }
         ]
       },
@@ -232,23 +264,27 @@
         "with": [
           {
             "block": "gtceu:chalk_grossular_ore",
-            "weight": 30
-          },
-          {
-            "block": "gtceu:raw_grossular_block",
-            "weight": 1
+            "weight": 10
           },
           {
             "block": "gtceu:chalk_spessartine_ore",
-            "weight": 20
+            "weight": 10
           },
           {
             "block": "gtceu:chalk_pyrolusite_ore",
-            "weight": 20
+            "weight": 40
+          },
+          {
+            "block": "gtceu:raw_pyrolusite_block",
+            "weight": 1
           },
           {
             "block": "gtceu:chalk_tantalite_ore",
-            "weight": 10
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_tantalite_block",
+            "weight": 1
           }
         ]
       },
@@ -260,23 +296,27 @@
         "with": [
           {
             "block": "gtceu:basalt_grossular_ore",
-            "weight": 30
-          },
-          {
-            "block": "gtceu:raw_grossular_block",
-            "weight": 1
+            "weight": 10
           },
           {
             "block": "gtceu:basalt_spessartine_ore",
-            "weight": 20
+            "weight": 10
           },
           {
             "block": "gtceu:basalt_pyrolusite_ore",
-            "weight": 20
+            "weight": 40
+          },
+          {
+            "block": "gtceu:raw_pyrolusite_block",
+            "weight": 1
           },
           {
             "block": "gtceu:basalt_tantalite_ore",
-            "weight": 10
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_tantalite_block",
+            "weight": 1
           }
         ]
       }
@@ -289,19 +329,19 @@
       "blocks": [
         {
           "block": "gtceu:grossular_bud_indicator",
-          "weight": 30
+          "weight": 10
         },
         {
           "block": "gtceu:spessartine_bud_indicator",
-          "weight": 20
+          "weight": 10
         },
         {
           "block": "gtceu:pyrolusite_indicator",
-          "weight": 20
+          "weight": 40
         },
         {
           "block": "gtceu:tantalite_indicator",
-          "weight": 10
+          "weight": 35
         }
       ]
     }

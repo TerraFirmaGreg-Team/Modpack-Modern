@@ -365,7 +365,8 @@ function registerVintageImprovementsRecipes(event) {
 
 		// #region Lathe
 
-		if (material.hasFlag(MaterialFlags.GENERATE_ROD)) {
+		if (material.hasFlag(MaterialFlags.GENERATE_ROD) && !material.hasFlag(MaterialFlags.IS_MAGNETIC)) {
+
 			let latheInput = material.hasProperty(PropertyKey.GEM)
 				? ChemicalHelper.get(TagPrefix.gem, material, 1)
 				: ChemicalHelper.get(TagPrefix.ingot, material, 1)

@@ -3,7 +3,95 @@
 ## [Unreleased]
 ### Changes
 ### Bug fixes
+
+## [0.11.4] - 22-10-2025
+### Major Changes
+- Refrigerators now have a toggle for forcing food stacking, as a workaround for the food oven's output. It will stack everything down to the oldest expiring item, so be careful when using this! @Redeix
+- Refrigerators can now also be connected to AE2 and Create Logistics, so you can pull out your food remotely. AE2 doesn't understand the food traits, however, so all your food will show as it does in EMI @Redeix
+### Changes
+- Finished EV quest line (#2069) @TomPlop
+- Normalized ladder crafting outputs, reduced ladders and wood frame burn times @oosyrag
+- Added beer battered dinosaur nuggets, made from real dinosaur and real beer @Pyritie
+- Added create packages/jars back to JEI so you can use them in filters, and added a tag for all jars (#2044) @Nashy1232
+- Slightly reduced spawn chance of illages and nerfed the amount of loot you get from them @Pyritie
+- Rebalanced some of the moon/mars food nutrition/saturation values @Pyritie
+- Added casting/extruder molds to tool racks @Pyritie
+- Added sandstorms to mars @Zippity
+- Massively buffed the density of Beneath naquadah veins until they get a proper home later @Pyritie
+- Increased amount of pyrolusite and tantalite on mars @Pyritie
+- Added new textures for the fission material holders, redstone ports, and fuel holders (#2073) @Redeix
+- Refrigerators now have more inventory space per tier @Redeix
+- Buffed the Tungsten Bismuth turbine rotor since it had worse stats than HSS-G which was available at a similar time (#2078) @TomPlop
+### Bug fixes
+- Fixed the interplanetary wireless card so it doesn't use a huge amount of power when just having it open @ko-lja
+- Fixed Firmalife cellar shelves resetting food expiration @Redeix
+- Added circuit numbers to the Formic Acid and Ammonium Chloride chemical reactor recipes @Pyritie
+- Fixed inconsistent circuit numbers between CR and LCR for specific recipes (#2047) @Redeix
+- Driverless rockets should now properly explode at world height limit instead of getting stuck @Pyritie
+- Fix inconsistent emitter recipes (#2059) @SpicyNoodle5
+- Removed inventory sorting from all Sacks n Such containers and Lunchboxes because they were causing weird stack sizes or voiding (#2018) @Pyritie
+- Fixed train conductors suffocating on planets (#2055) @Pyritie
+- Fixed firepit with pot and grill not raising the ambient temperature (#2002) @Pyritie
+- Fixed a few recipes wanting missing items (#2012) @Pyritie
+- Fixed inconsistency between the belt sander and lathe (#2022) @Pyritie
+- Fixed double plates not stacking to 16 (#1952, #2051) @WIPocket
+- Fixed some EV TACZ extended mags requiring the wrong kind of spring (#2065) @BlueBoat29
+- Fixed warped, crimson, and glacian pressure plates using the wrong spring @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Russian @DI-GitH
+- French @Mattisso3500 
+- Japanese @sakura-gondra
+
+## [0.11.3] - 15-10-2025
+### Major Changes
+- Water wheels are now usable again in all (earth + beneath) biomes outside of rivers, *but* at a reduced efficiency @Pyritie
+- Removed the soda ash recipe in the chemical reactor so you have to actually loop your tungsten line (#2037) @TomPlop
+- Removed "raw" thorium metal items like ingots and plates - macerate them into dust before updating! @Pyritie
+- Most fission line recipes are now locked to Mars @TomPlop
+- Graphite Moderators now only require an EV arc furnace instead of an IV one @TomPlop
+- Added an implosion compressor recipe to craft Dense Lead Plates much faster, albeit slightly less efficiently @TomPlop
+- Heat Exchanger now requires Ostrum Iodide (#2040) @TomPlop
+- Refrigerant Pellet now requires a little Radon @TomPlop
+- Soarers and Surfers now require TFC familiarity to tame. Surfers were also replaced with a new TFG mob with the same name (look at the mod name in Jade), so only those are affected (and the old ones no longer spawn) @Pyritie
+### Changes
+- Added more EV chapter quest descriptions (#2037) @TomPlop
+- Added dinosaur nest structures to mars @Pyritie
+- Added more egg 🥚🍳🦖🦕 @Pyritie 
+- Added ULV super tanks and super drums, and a 4A HV Dynamo Hatch for your Large Solar Array MK1 @Pyritie
+- Added meats for the surfer, cruncher, stackatick and primitive creatures mobs, reworked the textures of the others (#2001, #2014) @Redeix
+- Added a recipe for turning glass dust into lamp glass @Pyritie
+- Added more recipe unification for quartz, certus quartz, create's minerals, fixed wall chiseling recipes (#2005) @vidal-adrien
+- Added recipes to purify impure dusts in TFC Barrels (#2013) @dimethylene
+- Removed raw rubber ingots because they kept confusing people @Pyritie
+- Adjusted the colors of thorium and its isotopes to be similar to other radioactive materials @Pyritie
+- Added lunch boxes and super chests/tanks to the railgun blacklist @Pyritie
+- Added an assembler recipe for the chain conveyor (#2007) @Nashy1232
+- Added Packer recipes for gravel to loose stone, adds shapeless cobble unpacking for non-TFC stone types (#2017) @vidal-adrien
+- Added food processor recipe for pineapple fiber (#2029) @Nashy1232
+- EV superconductors are no longer radioactive @Pyritie
+### Bug fixes
+- Fixed the interplanetary wireless card, though at the moment it doesn't use extra power @ko-lja
+- Fixed a crash with the sandworm on servers (#2006) @BlueBoat29
+- Fixed some recipes using the wrong keratophyre loose rock @Pyritie
+- Fixed mechanical pumps grabbing tfc:river_water and not water, boilers rejoice! (#1797) @BlueBoat29
+- Fixed some dusts having issues with AE2 recipes not completing successfully (#2032) @Pyritie
+- Fixed loose pyroxenite rocks crafting into raw pyroxenite (#2017) @vidal-adrien
+- Removed armor trimmable tag from the blue steel backtank @Pyritie
+- Fixed some recipes showing an invalid glacio dimension icon @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Russian @Dl-GitH
+- Ukranian @MetEnBouldry
+
+## [0.11.2] - 09-10-2025
+### Changes
+- Added a recipe for the ae2 auto craft card (#1997) @BlueBoat29
+### Bug fixes
 - Fixed all tfc:heating recipes being removed (#1987) @BlueBoat29
+- Fixed the nuclear fuel factory multiblock not forming without a parallel hatch @TomPlop
+### Translation updates
+- Chinese (simplified) @jmecn
 
 ## [0.11.1] - 08-10-2025
 ### Changes

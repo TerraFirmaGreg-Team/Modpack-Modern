@@ -461,7 +461,7 @@ const registerTFGMaterials = (event) => {
 		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
 		.ingot()
 		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
-		.rotorStats(205, 90, 2 ,620)
+		.rotorStats(250, 90, 2 ,620)
 		.flags(
 			GTMaterialFlags.DISABLE_DECOMPOSITION, 
 			GTMaterialFlags.GENERATE_PLATE,

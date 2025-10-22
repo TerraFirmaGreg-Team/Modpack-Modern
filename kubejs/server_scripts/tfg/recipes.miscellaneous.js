@@ -1115,7 +1115,6 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.IV])
 
-	addCircuitToRecipe(event, 'gtceu:chemical_reactor/acetic_acid_from_methanol', 1)
 	//endregion
 
 	//Aerogel
@@ -1507,4 +1506,5 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('tfg:wireless_card')
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.EV])
+	
 }

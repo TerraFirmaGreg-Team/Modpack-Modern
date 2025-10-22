@@ -66,6 +66,9 @@ const registerCreateRecipes = (event) => {
 	event.remove({ type: 'minecraft:stonecutting', input: 'create:rose_quartz' })
 	event.remove({ type: 'minecraft:stonecutting', input: 'create:polished_rose_quartz' })
 	event.remove({ type: 'minecraft:stonecutting', input: 'minecraft:iron_ingot' })
+	event.remove({ type: 'create:spout_filling', id: 'create:potions' })
+	event.remove({ type: 'create:spout_filling', id: 'create:fill_minecraft_glass_bottle_with_gtceu_potion' })
+	event.remove({ type: 'create:draining', id: 'create:potions' })
 
 	// Train Station
 	event.shapeless('2x create:track_station', [
@@ -1701,6 +1704,13 @@ const registerCreateRecipes = (event) => {
 		D: '#forge:tools/wrenches',
 		E: '#forge:tools/hammers'
 	}).id('create:shaped/chain_conveyor')
+
+    event.recipes.gtceu.assembler('create:chain_conveyor')
+        .itemInputs('2x #forge:large_cogwheels', 'create:andesite_casing', 'gtceu:treated_wood_plate')
+        .itemOutputs('2x create:chain_conveyor')
+        .circuit(20)
+        .duration(20 * 20)
+        .EUt(20)
 
 	event.shaped('2x create:cardboard', [
 		'ABA',

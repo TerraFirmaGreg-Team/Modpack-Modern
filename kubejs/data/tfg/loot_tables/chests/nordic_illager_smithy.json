@@ -13,8 +13,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 20,
-								"min": 12
+								"max": 10,
+								"min": 6
 							},
 							"function": "minecraft:set_count"
 						}
@@ -77,8 +77,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 14,
-								"min": 8
+								"max": 10,
+								"min": 6
 							},
 							"function": "minecraft:set_count"
 						}
@@ -93,8 +93,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 10,
-								"min": 6
+								"max": 7,
+								"min": 4
 							},
 							"function": "minecraft:set_count"
 						}
@@ -109,8 +109,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 6,
-								"min": 4
+								"max": 5,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -118,7 +118,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:cobalt_brass_ingot",
+					"name": "gtceu:cobalt_brass_nugget",
 					"weight": 40,
 					"functions": [
 						{
@@ -134,7 +134,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:cobalt_ingot",
+					"name": "gtceu:cobalt_nugget",
 					"weight": 50,
 					"functions": [
 						{
@@ -150,7 +150,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:copper_ingot",
+					"name": "create:copper_nugget",
 					"weight": 80,
 					"functions": [
 						{
@@ -166,7 +166,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "create:zinc_ingot",
+					"name": "create:zinc_nugget",
 					"weight": 40,
 					"functions": [
 						{
@@ -182,7 +182,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:lead_ingot",
+					"name": "gtceu:lead_nugget",
 					"weight": 40,
 					"functions": [
 						{
@@ -198,7 +198,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "create:brass_ingot",
+					"name": "create:brass_nugget",
 					"weight": 40,
 					"functions": [
 						{
@@ -214,7 +214,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:bismuth_ingot",
+					"name": "gtceu:bismuth_nugget",
 					"weight": 60,
 					"functions": [
 						{
@@ -367,7 +367,7 @@
 			],
 			"rolls": {
 				"type": "minecraft:uniform",
-				"max": 10,
+				"max": 8,
 				"min": 6
 			}
 		}
