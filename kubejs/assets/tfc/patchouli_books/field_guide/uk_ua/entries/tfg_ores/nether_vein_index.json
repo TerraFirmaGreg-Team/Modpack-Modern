@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Кварц Нижнього Світу$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_mica)Кіаніт, Слюда та Боксити$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Лапіс, Лазурит та Содаліт$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Марганець і Тантал$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Мідь та Халькопірит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)Мінеральні піски$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Наквадак і Плутоній$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Редстоун, Кіновар і Рубін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Сапфір і Альмадін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Селітра та Електротин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sylvite)Сильвін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Сірка та Пірит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)Смарагд і Берилій$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Срібло, Гален і Свинець$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Кварц Нижнього Світу$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_mica)Кіаніт, Слюда та Боксити$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Лапіс, Лазурит та Содаліт$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Марганець і Тантал$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Мідь та Халькопірит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)Мінеральні піски$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Наквадак$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Редстоун, Кіновар і Рубін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Сапфір і Альмадін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Селітра та Електротин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sylvite)Сильвін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Сірка та Пірит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)Смарагд і Берилій$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Срібло, Гален і Свинець$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1669,8 +1669,8 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 250$(br)$(thing)Щільність$(): 0.3$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 38$(br)$(thing)Розмір$(): 32$(br2)$(thing)Типи каменю$(): Базальт, Піроксеніти",
-      "title": "Наквадак і Плутоній",
+      "text": "$(thing)Рідкість$(): 200$(br)$(thing)Щільність$(): 0.7$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 38$(br)$(thing)Розмір$(): 32$(br2)$(thing)Типи каменю$(): Базальт, Піроксеніти",
+      "title": "Наквадак",
       "type": "patchouli:text",
       "anchor": "nether_naquadah"
     },

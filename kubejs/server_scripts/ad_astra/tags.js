@@ -481,6 +481,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'wan_ancient_beasts:soarer',
 		'wan_ancient_beasts:glider',
 		'wan_ancient_beasts:toxlacanth',
+		'wan_ancient_beasts:surfer',
 		'tfg:surfer',
 		// europa
 		'endermanoverhaul:coral_enderman',
@@ -496,6 +497,8 @@ const registerAdAstraEntityTypeTags = (event) => {
 		event.add('ad_astra:can_survive_extreme_cold', entity)
 		event.add('ad_astra:lives_without_oxygen', entity)
 	})
+
+	event.add('ad_astra:can_survive_in_space', 'railways:conductor')
 
 	event.add('tfc:deals_crushing_damage', 'minecraft:enderman')
 	event.add('tfc:deals_crushing_damage', 'minecraft:stray')

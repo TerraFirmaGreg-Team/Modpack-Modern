@@ -40,4 +40,10 @@ function registerMinecraftItemModifications(event) {
 	event.modify('minecraft:lava_bucket', item => {
 		item.burnTime = 0
 	})
+
+	// Ladder burn time
+
+	event.modify('minecraft:ladder', item => {
+		item.burnTime = 100
+	})
 }

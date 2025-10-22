@@ -783,6 +783,7 @@
 		{
 			dependencies: ["70F93982FC045A08"]
 			description: ["{quests.space_survival.sandworm.desc}"]
+			icon: "sandworm_mod:sandworm_tooth"
 			id: "62A5111836CB4D37"
 			optional: true
 			shape: "heart"
@@ -1097,7 +1098,7 @@
 				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: -9223372036854775808L
+						creationDate: 23862000L
 						traits: [ ]
 					}
 					"tfc:item_heat": {
@@ -1112,17 +1113,45 @@
 			shape: "heart"
 			size: 1.5d
 			subtitle: "{quests.space_survival.bulbkin_pie.subtitle}"
-			tasks: [{
-				id: "5F863BCE6DAA30D6"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(betterend:cave_pumpkin_pie))"
+			tasks: [
+				{
+					id: "5F863BCE6DAA30D6"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(betterend:cave_pumpkin_pie))"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "0B5E81AEEDFE0B7A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:food": {
+								creationDate: -2L
+								foodData: {
+									dairy: 0.0f
+									decay: 0.0f
+									food: 0
+									fruit: 0.0f
+									grain: 0.0f
+									meat: 0.0f
+									sat: 0.0f
+									veg: 0.0f
+									water: 0.0f
+								}
+								ingredients: [ ]
+								traits: [ ]
+							}
+						}
+						id: "tfg:food/cooked_dino_nugget"
+					}
+					type: "item"
+				}
+			]
 			title: "{quests.space_survival.bulbkin_pie.title}"
 			x: 13.5d
 			y: 0.0d

@@ -194,7 +194,7 @@ jobs:
       - name: 📄 Format diff
         id: format_diff
         if: ${{ steps.read_diff.outputs.diff != '' }}
-        uses: roamingowl/template-output-with-eta@v2.0.0
+        uses: roamingowl/template-output-with-eta@v2.1.0
         with:
           template: |
             ```markdown
@@ -266,7 +266,7 @@ jobs:
 
       - name: 🔍 Create Pull Request if tag not found
         if: ${{ steps.check_existing_pr.outputs.exists == 'false' }}
-        uses: devops-infra/action-pull-request@v0.6.1
+        uses: devops-infra/action-pull-request@v1.0.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_branch: dev
@@ -429,7 +429,7 @@ jobs:
       - name: 📄 Format diff
         id: format_diff
         if: ${{ needs.info.outputs.diff != '' }}
-        uses: roamingowl/template-output-with-eta@v2.0.0
+        uses: roamingowl/template-output-with-eta@v2.1.0
         with:
           template: |
             ```markdown
@@ -438,7 +438,7 @@ jobs:
 
       - name: 🚀 Create release
         id: release
-        uses: softprops/action-gh-release@v2.3.4
+        uses: softprops/action-gh-release@v2.4.1
         with:
           name: ${{ needs.info.outputs.project_version }}
           tag_name: ${{ needs.info.outputs.project_version }}

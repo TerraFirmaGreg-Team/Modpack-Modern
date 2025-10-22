@@ -355,6 +355,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('1x gtceu:light_concrete')
 		.duration(98)
 		.EUt(7)
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.recipes.gtceu.chemical_bath('gtceu:chemical_bath/dark_concrete')
 		.inputFluids(Fluid.of('tfc:black_dye', 18))
@@ -1022,6 +1023,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('gtceu:rubber_gloves')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 
 	event.recipes.tfc.damage_inputs_shaped_crafting(
@@ -1574,9 +1576,42 @@ const registerGTCEURecipes = (event) => {
 		D: 'gtceu:palladium_substation'
 	}).addMaterialInfo().id('gtceu:shaped/power_substation')
 
-	event.replaceInput({ id: 'gtceu:shaped/field_generator_hv' }, 'gtceu:quantum_eye', 'tfg:cryo_fluix_pearl')
-	event.replaceInput({ id: 'gtceu:shaped/field_generator_ev' }, 'minecraft:nether_star', 'gtceu:quantum_eye')
-	event.replaceInput({ id: 'gtceu:shaped/field_generator_iv' }, 'gtceu:quantum_star', 'minecraft:nether_star')
+	event.replaceInput({ id: 'gtceu:assembler/field_generator_hv' }, 'gtceu:quantum_eye', 'tfg:cryo_fluix_pearl')
+	event.replaceInput({ id: 'gtceu:assembler/field_generator_ev' }, 'minecraft:nether_star', 'gtceu:quantum_eye')
+	event.replaceInput({ id: 'gtceu:assembler/field_generator_iv' }, 'gtceu:quantum_star', 'minecraft:nether_star')
+
+	event.recipes.gtceu.shaped('gtceu:hv_field_generator', [
+		'ABA',
+		'CDC',
+		'ABA'
+	], {
+		A: ChemicalHelper.get(TagPrefix.wireGtQuadruple, GTMaterials.MercuryBariumCalciumCuprate , 1),
+		B: ChemicalHelper.get(TagPrefix.plate, GTMaterials.StainlessSteel, 1),
+		C: '#gtceu:circuits/hv',
+		D: 'tfg:cryo_fluix_pearl'
+	}).addMaterialInfo().id('gtceu:shaped/field_generator_hv')
+
+	event.recipes.gtceu.shaped('gtceu:ev_field_generator', [
+		'ABA',
+		'CDC',
+		'ABA'
+	], {
+		A: ChemicalHelper.get(TagPrefix.wireGtQuadruple, GTMaterials.UraniumTriplatinum , 1),
+		B: ChemicalHelper.get(TagPrefix.plateDouble, GTMaterials.Titanium, 1),
+		C: '#gtceu:circuits/ev',
+		D: 'gtceu:quantum_eye'
+	}).addMaterialInfo().id('gtceu:shaped/field_generator_ev')
+
+	event.recipes.gtceu.shaped('gtceu:iv_field_generator', [
+		'ABA',
+		'CDC',
+		'ABA'
+	], {
+		A: ChemicalHelper.get(TagPrefix.wireGtQuadruple, GTMaterials.SamariumIronArsenicOxide , 1),
+		B: ChemicalHelper.get(TagPrefix.plateDouble, GTMaterials.TungstenSteel, 1),
+		C: '#gtceu:circuits/iv',
+		D: 'minecraft:nether_star'
+	}).addMaterialInfo().id('gtceu:shaped/field_generator_iv')
 
 	event.remove({ id: 'gtceu:chemical_bath/quantum_eye' })
 	event.recipes.gtceu.chemical_bath('tfg:quantum_eye')
@@ -1735,5 +1770,25 @@ const registerGTCEURecipes = (event) => {
 		.outputItem('tfg:reinforced_dark_concrete_support')
 		.id('tfg:barrel/reinforced_dark_concrete_support')
 
+	event.recipes.gtceu.alloy_smelter('glass_bottle')
+		.itemInputs('#forge:dusts/glass')
+		.itemOutputs('tfc:silica_glass_bottle')
+		.notConsumable('gtceu:bottle_casting_mold')
+		.EUt(2)
+		.duration(20 * 5)
+		.category(GTRecipeCategories.INGOT_MOLDING)
+
 	// Change
+
+	// The 9x buff for large boiler recipes above does not apply to this for some reason, so it gets 3x duration for an effective 1/3 reduction instead
+
+	event.forEachRecipe({ id: /gtceu:large_boiler\/(minecraft_ladder|gtceu_wood_frame)/ }, recipe => {
+            var newDuration = recipe.get("duration")
+            recipe.set("duration", newDuration*3)
+        })
+
+	event.forEachRecipe({ id: /gtceu:steam_boiler\/(minecraft_ladder|gtceu_wood_frame)/ }, recipe => {
+            var newDuration = recipe.get("duration")
+            recipe.set("duration", newDuration/3)
+        })
 }

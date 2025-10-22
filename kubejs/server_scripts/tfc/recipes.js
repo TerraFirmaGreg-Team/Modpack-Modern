@@ -356,4 +356,12 @@ const registerTFCRecipes = (event) => {
 		ingredients: [{ item: 'tfc:torch' }],
 		result: { item: 'tfc:powder/wood_ash' }
 	}).id(`tfg:ae_transform/torch_to_wood_ash`)
+
+	event.shaped('8x minecraft:ladder', [
+		'A A',
+		'AAA',
+		'A A'
+	], {
+		A: '#tfc:lumber'
+	}).id('tfc:crafting/vanilla/ladder')
 }
