@@ -460,10 +460,10 @@ const registerTFGItems = (event) => {
 		.translationKey('item.tfg.flax_bundle')
 		.texture('tfg:item/flax_bundle')
 	
-	event.create('tfg:scraped_flax_pile')
+	event.create('tfg:bundled_scraped_flax')
 		.tag('tfc:scrapable')
-		.translationKey('item.tfg.flax_waste_pile')
-		.texture('tfg:item/scraped_flax_pile')	
+		.translationKey('item.tfg.bundled_scraped_flax')
+		.texture('tfg:item/bundled_scraped_flax')	
 
 	//#region Lab Equipment
 
