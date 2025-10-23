@@ -874,6 +874,7 @@
 						TorchPlacing: 1b
 					}
 					GT.Tool: {
+						DefaultEnchantments: [ ]
 						HarvestLevel: 2
 						MaxDamage: 5543
 						ToolSpeed: 6.0f
@@ -2762,6 +2763,20 @@
 			title: "{quests.tfg_tips.hiking.title}"
 			x: -3.0d
 			y: 10.0d
+		}
+		{
+			dependencies: ["72B3EA6588E18CCC"]
+			description: ["{quests.tfg_tips.lightning_rod.desc}"]
+			id: "674B27738ADA1830"
+			subtitle: "{quests.tfg_tips.lightning_rod.subtitle}"
+			tasks: [{
+				id: "0BADD52A3A4E3E98"
+				item: "minecraft:lightning_rod"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.lightning_rod.title}"
+			x: 2.5d
+			y: 0.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.tools_tips.subtitle}"]
