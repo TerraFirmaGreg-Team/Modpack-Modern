@@ -9,10 +9,10 @@
         "defaultconfigs",
         "kubejs",
         "tacz",
-        "!kubejs/probe/**"
+        "!kubejs/probe/**",
+        "!kubejs/assets/**"
     ],
     "server_overrides": [
-        "!kubejs/assets",
         "forge-auto-install.txt",
         "generate_auto_installation_file.bat",
         "minecraft_server.jar",
@@ -21,9 +21,11 @@
         "server-icon.png",
         "start_server.bat",
         "README.md"
+        
     ],
     "client_overrides": [
-        "resourcepacks"
+        "resourcepacks",
+        "kubejs/assets/**"
     ],
     "projects": {
         "ambient-environment": {

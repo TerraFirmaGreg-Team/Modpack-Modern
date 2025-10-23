@@ -264,6 +264,29 @@ jobs:
               core.setOutput('exists', true);
             }
 
+      - name: 🔍 Check if milestone exists
+        id: check_milestone
+        uses: actions/github-script@v8.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          result-encoding: string
+          script: |
+            const version = '${{ steps.changelog.outputs.version }}';
+            try {
+              const milestones = await github.rest.issues.listMilestones({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'all'
+              });
+              const milestoneExists = milestones.data.some(milestone => milestone.title === version);
+              console.log(`Milestone "${version}" exists: ${milestoneExists}`);
+              return milestoneExists;
+            } catch (error) {
+              console.log('Error checking milestones, assuming milestone does not exist');
+              return false;
+            }
+
       - name: 🔍 Create Pull Request if tag not found
         if: ${{ steps.check_existing_pr.outputs.exists == 'false' }}
         uses: devops-infra/action-pull-request@v1.0.2
@@ -271,7 +294,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_branch: dev
           target_branch: main
-          milestone: ${{ steps.changelog.outputs.version }}
+          milestone: ${{ steps.check_milestone.outputs.result == 'true' && steps.changelog.outputs.version || '' }}
           ignore_users: "dependabot"
           draft: true
           title: 'Release: ${{ steps.changelog.outputs.version }}'

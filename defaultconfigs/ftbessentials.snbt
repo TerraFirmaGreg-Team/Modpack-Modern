@@ -4,6 +4,18 @@
 {
 	# Admin commands for cheating and moderation
 	admin: {
+		# Allows admins to extinguish themselves or a player using a command
+		extinguish: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows admins to fully feed themselves or a player using a command
+		feed: {
+			# Default: true
+			enabled: true
+		}
+		
 		# Allows admins to toggle flying status using a command, without having to use Creative Mode
 		fly: {
 			# Default: true
@@ -16,7 +28,7 @@
 			enabled: true
 		}
 		
-		# Allows admins to heal themselves using a command
+		# Allows admins to fully heal (health, food, fire, potion effects) themselves or a player using a command
 		heal: {
 			# Default: true
 			enabled: true
@@ -28,8 +40,26 @@
 			enabled: true
 		}
 		
+		# Allows admins to configure kits of items that can be given to players.
+		kit: {
+			# Default: true
+			enabled: true
+		}
+		
 		# Allows admins to restrict players from chatting by using a command to mute (or unmute) them
 		mute: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows admins to change walk speed for themselves or a player
+		speed: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows admins to change the location of offline players.
+		tp_offline: {
 			# Default: true
 			enabled: true
 		}
@@ -37,6 +67,18 @@
 	
 	# Miscellaneous features and utilities
 	misc: {
+		# Allows users to access an Anvil GUI without needing an Anvil.
+		anvil: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows users to access a Crafting Table GUI without needing a Crafting Table.
+		crafting: {
+			# Default: true
+			enabled: true
+		}
+		
 		# Allows users to access their ender chest, as well as admins to manage other players' ender chests.
 		enderchest: {
 			# Default: true
@@ -46,7 +88,7 @@
 		# Allows users to set a custom hat as their head item by using a command
 		hat: {
 			# Default: true
-			enabled: false
+			enabled: true
 		}
 		
 		# Allows users to kick themselves from the server, for example if they are stuck or desynced
@@ -55,8 +97,14 @@
 			enabled: false
 		}
 		
-		# Allows users to view player leaderboard stats.
+		# Allows users to view leaderboard stats about everyone on the server.
 		leaderboard: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows users to list nearby players, sorted by distance
+		near: {
 			# Default: true
 			enabled: true
 		}
@@ -71,6 +119,18 @@
 		rec: {
 			# Default: true
 			enabled: false
+		}
+		
+		# Allows users to access a Smithing Table GUI without needing a Smithing Table.
+		smithing: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows users to access a Stonecutter GUI without needing a Stonecutter.
+		stonecutter: {
+			# Default: true
+			enabled: true
 		}
 		
 		# Enables usage of a trash can inventory, which can be used to void unneeded items
@@ -98,6 +158,10 @@
 			# Default: 10
 			# Range: 0 ~ 2147483647
 			max: 10
+			
+			# Should be the /back command only be used for returning to the last death point?
+			# Default: false
+			only_on_death: false
 			
 			# Warm-up time before /back command executes (in seconds)
 			# You can override this with FTB Ranks using ftbessentials.back.warmup
@@ -130,6 +194,12 @@
 			warmup: 0
 		}
 		
+		# Allows admins to jump (teleport) to the focused block
+		jump: {
+			# Default: true
+			enabled: true
+		}
+		
 		# Allows players to teleport to a random point in the Wilderness
 		# Note: This currently does not respect Claimed Chunks yet!
 		rtp: {
@@ -139,11 +209,21 @@
 			# Range: 0 ~ 604800
 			cooldown: 600
 			
+			# Blacklisted dimension ID's for /rtp (player *must not* be in any of these dimensions)
+			# Wildcarded dimensions (e.g. 'somemod:*') are supported
+			# Default: ["minecraft:the_end"]
+			dimension_blacklist: ["minecraft:the_end"]
+			
+			# Whitelisted dimension ID's for /rtp (if non-empty, player *must* be in one of these dimensions)
+			# Wildcarded dimensions (e.g. 'somemod:*') are supported
+			# Default: []
+			dimension_whitelist: [ ]
+			
 			# Default: true
 			enabled: false
 			
 			# /rtp max distance from spawn point
-			# Default: 100000
+			# Default: 25000
 			# Range: 0 ~ 30000000
 			max_distance: 100000
 			
@@ -153,7 +233,7 @@
 			max_tries: 100
 			
 			# /rtp min distance from spawn point
-			# Default: 1000
+			# Default: 500
 			# Range: 0 ~ 30000000
 			min_distance: 1000
 			
@@ -208,7 +288,7 @@
 		# Allows admins to teleport to dimension
 		tpx: {
 			# Default: true
-			enabled: false
+			enabled: true
 		}
 		
 		# Allows admins to create 'warps', which are fixed points in the world that users may teleport to using /warp
