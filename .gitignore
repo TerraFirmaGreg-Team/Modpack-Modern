@@ -56,6 +56,8 @@ config/stellarcore_stitcher_cache_vanilla.dat
 
 !config/defaultoptions/options.txt
 
+defaultconfigs/ftbranks/players.snbt
+
 # .minecraft
 !bansoukou/**.zip
 
