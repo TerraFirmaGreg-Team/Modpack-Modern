@@ -2763,6 +2763,24 @@
 			x: -3.0d
 			y: 10.0d
 		}
+		{
+			dependencies: ["72B3EA6588E18CCC"]
+			description: [
+				"As thunderstorms are way more active and violent in TerraFirmaCraft, you might find the frequency of lightnings rather annoying. To solve that problem completely, you can use a &dLightning Rod&r for the cheap price of 3 copper rods."
+				""
+				"The &dLightning Rod&r can redirect all lightning onto itself in a spherical radius of &3128 blocks&r. "
+				"Beware: It will still create fire in &33 blocks&r around itself, place it on an elevation from your flammables or on a non-flammable base."
+			]
+			id: "674B27738ADA1830"
+			subtitle: "Undesirable voltage"
+			tasks: [{
+				id: "0BADD52A3A4E3E98"
+				item: "minecraft:lightning_rod"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
 	]
 	subtitle: ["{quests.tfg_tips.tools_tips.subtitle}"]
 	title: "{quests.tfg_tips.tools_tips.title}"
