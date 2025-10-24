@@ -1,0 +1,574 @@
+{
+	"name": "Позаземні рослини",
+	"category": "tfc:tfg_tips",
+	"icon": "betterend:textures/item/blossom_berry.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Позаземні рослини",
+			"text": "Виявляється, Земля — не єдине небесне тіло з життям. Під час подорожей ви можете натрапити на інші види їстівної фауни. Усі вони використовують ті ж самі механіки, що й на Землі (з деякими винятками), і можуть вирощуватися як на звичайних ріллях, так і у теплиці Firmalife $(l:firmalife/greenhouse)Теплиці$(), або ж у електричній теплиці GregTech — залежно від ваших потреб."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Пристрій $(thing)Розподільник повітря$() також підтримуватиме в закритій області стабільну температуру 15 °C. Через технічні причини ця температура не може відображатися у підказці Jade на інших планетах, тож вам доведеться користуватися вкладкою «Клімат» у вашому інвентарі, щоб перевірити температуру.$(br2)Інша альтернатива — використати теплицю Firmalife, яка не дає такого великого виходу, але повністю ігнорує всі кліматичні умови."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Фрукт хоруса",
+			"text": "$(bold)Місце$(): Місяць$(br)$(bold)Біоми$(): Хорусний ліс, Хорусні хащі$(br2)Рослини хорусу ростуть високими формаціями. Ламання стебла нічого не дасть, тоді як ламання квітів угорі принесе плоди хорусу або квітку.$(br)Плоди хорусу можна їсти як $(thing)Фрукти$(), приготувати й з’їсти як $(item)Запечений плід хорусу$(), або ж перегнати у $(thing)Азот$().$(br)"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"Z  "
+					],
+					[
+						"V D"
+					],
+					[
+						"EXB"
+					],
+					[
+						" V "
+					],
+					[
+						" 0 "
+					]
+				],
+				"mapping": {
+					"0": "ad_astra:moon_sand",
+					"V": "tfg:lunar_chorus_plant[down=true,up=true]",
+					"E": "tfg:lunar_chorus_plant[south=true,up=true]",
+					"X": "tfg:lunar_chorus_plant[north=true,down=true,south=true]",
+					"B": "tfg:lunar_chorus_plant[north=true,up=true]",
+					"D": "tfg:lunar_chorus_flower[age=5]",
+					"Z": "tfg:lunar_chorus_flower[age=0]"
+				}
+			},
+			"text": "$(thing)Квіти хорусу$() також можна вирощувати вручну, висаджуючи їх на будь‑якому гравії чи піску.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Бурштиновий корінь",
+			"text": "$(bold)Місце$(): Марс$(br)$(bold)$(l:the_world/climate#temperature)Температура$(): -150 – 15 °C$(br)$(bold)$(l:mechanics/hydration)Зволоження$(): 0 – 40 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Бурштиновий корінь є одноблоковою культурою. Насіння бурштинового кореня можна висаджувати на ріллях, і вони даватимуть $(item)Пагони бурштинового кореня$(), які можна з’їсти як $(thing)Зерно$()."
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:amber_root[age=0]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:amber_root[age=1]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:amber_root[age=2]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:amber_root[age=3]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				}
+			],
+			"text": "$(thing)Дикий бурштиновий корінь$() росте в будь‑якому кліматі на бурштині та міцелію рустикуса.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)Місце$(): Марс$(br)$(bold)$(l:the_world/climate#temperature)Температура$(): -80 – 30 °C$(br)$(bold)$(l:mechanics/hydration)Зволоження$(): 70 – 100 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Квіткові ягоди є одноблоковою культурою. Насіння квіткових ягід можна висаджувати на ріллях, і вони даватимуть $(item)Квіткові ягоди$(), які можна з’їсти як $(thing)Фрукти$().",
+			"title": "Цвіт ягод"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:blossom_berry[age=0]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:blossom_berry[age=1]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:blossom_berry[age=2]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:blossom_berry[age=3]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				}
+			],
+			"text": "$(thing)Дика квіткова ягода$() росте в будь‑якому кліматі на бурштині, міцелії рустикуса або міцелії сангнуму."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)Місце$(): Марс$(br)$(bold)$(l:the_world/climate#temperature)Температура$(): -150 – 15 °C$(br)$(bold)$(l:mechanics/hydration)Зволоження$(): 0 – 40 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Гриби болукс є одноблоковою культурою. Спори грибів болукс можна висаджувати на ріллях, і вони даватимуть $(item)Гриби болукс$(), які можна з’їсти як $(thing)Овочі$().$(br2)Рекомендується $(item)приготувати$() гриби болукс перед вживанням.",
+			"title": "Гриб Болукс"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:bolux_mushroom[age=0]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:bolux_mushroom[age=1]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:bolux_mushroom[age=2]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:bolux_mushroom[age=3]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				}
+			],
+			"text": "$(thing)Дикі гриби болукс$() ростуть у будь‑якому кліматі на бурштині, міцелії рустикуса або міцелії сангнуму."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)Місце$(): Марс$(br)$(bold)$(l:the_world/climate#temperature)Температура$(): -100 – 30 °C$(br)$(bold)$(l:mechanics/hydration)Зволоження$(): 0 – 60 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Болбкіни є розповсюджуваною культурою. Насіння болбкіна можна висаджувати на грядках, і під час дозрівання вони розміщуватимуть до двох $(item)Блоків болбкіна$() на землі поруч. Якщо блоки болбкіна зібрати, а рослина знову дозріє, вона може виростити нові болбкіни. Болбкіни можна з’їсти як $(thing)Фрукти$() або переробити на $(thing)Світлокам’яний пил$().$(br)",
+			"title": "Балбкін"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"   ",
+							" C ",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfg:grass/mars_farmland",
+						"0": "tfg:grass/mars_farmland",
+						"C": "betterend:cave_pumpkin_plant[age=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" C ",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfg:grass/mars_farmland",
+						"0": "tfg:grass/mars_farmland",
+						"C": "betterend:cave_pumpkin_plant[age=1]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" C ",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfg:grass/mars_farmland",
+						"0": "tfg:grass/mars_farmland",
+						"C": "betterend:cave_pumpkin_plant[age=2]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" C ",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfg:grass/mars_farmland",
+						"0": "tfg:grass/mars_farmland",
+						"C": "betterend:cave_pumpkin_plant[age=3]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfg:grass/mars_farmland",
+						"0": "tfg:grass/mars_farmland",
+						"C": "betterend:cave_pumpkin_plant[age=3,south=true]",
+						"P": "betterend:cave_pumpkin"
+					}
+				}
+			],
+			"text": "$(thing)Дикі болбкіни$() ростуть у будь‑якому кліматі на бурштині або міцелії сангнуму."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Гриб Чалмі",
+			"text": "$(bold)Місце$(): Марс$(br)$(bold)$(l:the_world/climate#temperature)Температура$(): -150 – 15 °C$(br)$(bold)$(l:mechanics/hydration)Зволоження$(): 0 – 40 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Гриби чалмі є одноблоковою культурою. Спори грибів чалмі можна висаджувати на грядках, і вони даватимуть $(item)Гриби чалмі$(), які можна з’їсти як $(thing)Овочі$().$(br2)Рекомендується $(item)приготувати$() гриби чалмі перед вживанням."
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:chorus_mushroom[age=0]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:chorus_mushroom[age=1]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:chorus_mushroom[age=2]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:chorus_mushroom[age=3]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				}
+			],
+			"text": "$(thing)Дикі гриби чалмі$() ростуть у будь‑якому кліматі на бурштині, міцелії рустикуса та міцелії сангнуму."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Ягода Нокс",
+			"text": "$(bold)Місце$(): Марс$(br)$(bold)$(l:the_world/climate#temperature)Температура$(): -80 – 30 °C$(br)$(bold)$(l:mechanics/hydration)Зволоження$(): 50 – 100 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Ягоди нокс є одноблоковою культурою. Насіння ягід нокс можна висаджувати на ріллях, і вони даватимуть $(item)Ягоди нокс$(), які можна з’їсти як $(thing)Фрукти$().$(br2)Рекомендується $(item)приготувати$() ягоди нокс перед вживанням."
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:shadow_berry[age=0]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:shadow_berry[age=1]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:shadow_berry[age=2]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:shadow_berry[age=3]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				}
+			],
+			"text": "$(thing)Дикі ягоди нокс$() ростуть у будь‑якому кліматі на міцелії рустикуса та міцелії сангнуму."
+		}
+	],
+	"read_by_default": true,
+	"extra_recipe_mappings": {
+		"tfg:lunar_chorus_flower": 2,
+		"minecraft:chorus_fruit": 2,
+		"betterend:amber_root_seeds": 4,
+		"betterend:amber_root_product": 4,
+		"betterend:blossom_berry_seeds": 6,
+		"betterend:blossom_berry_product": 6,
+		"betterend:bolux_mushroom_seeds": 8,
+		"betterend:bolux_mushroom_product": 8,
+		"betterend:cave_pumpkin_seeds": 10,
+		"betterend:cave_pumpkin": 10,
+		"betterend:chorus_mushroom_seeds": 12,
+		"betterend:chorus_mushroom_product": 12,
+		"betterend:shadow_berry_seeds": 14,
+		"betterend:shadow_berry_product": 14
+	}
+}
