@@ -1,0 +1,23 @@
+{
+	"name": "Унікальні блоки",
+	"category": "tfc:beneath",
+	"icon": "beneath:blackstone_aqueduct",
+	"pages": [
+		{
+			"type": "patchouli:crafting",
+			"recipe": "beneath:crafting/blackstone_aqueduct",
+			"text": "Піроксенітовий акведук дозволяє проводити лаву на будь-яку відстань."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shapeless/hellbricks_from_soot",
+			"text": "Пекельні цеглини - це будівельні блоки, які також використовуються для Пекельної кузні."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "beneath:crafting/blackstone_brick",
+			"text": "Мігматитова та піроксенітова цегла виготовляється як звичайна цегла, і це включає необхідність створення цегляного виробу."
+		}
+	],
+	"read_by_default": true
+}

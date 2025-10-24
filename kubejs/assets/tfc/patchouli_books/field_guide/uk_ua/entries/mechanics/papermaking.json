@@ -1,0 +1,161 @@
+{
+    "name": "Виготовлення паперу",
+    "category": "tfc:mechanics",
+    "icon": "tfc:unrefined_paper",
+    "pages": [
+      {
+        "type": "patchouli:text",
+        "text": "$(thing)Папір$() виготовляється з оброблених стебел культури $(l:mechanics/crops#papyrus)папірусу$() або з $(l:mechanics/papermaking#parchment)тваринних шкур$(), або ж $(l:mechanics/papermaking#paperfromwood)шляхом тривалого процесу з використанням певних порід деревини$(). Папір корисний для створення письмових матеріалів, таких як $(thing)книги$() та $(thing)карти$()."
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/papyrus_strips",
+        "text": "Папірус спочатку потрібно розрізати на смужки за допомогою $(thing)Ножа$()"
+      },
+      {
+        "type": "tfc:sealed_barrel_recipe",
+        "recipe": "tfc:barrel/soaked_papyrus_strip",
+        "text": "Потім смужки папірусу вимочуються в $(l:mechanics/barrels)Бочці$() з $(thing)Водою$()."
+      },
+      {
+        "type": "tfc:loom_recipe",
+        "recipe": "tfc:loom/unrefined_paper",
+        "text": "Потім вимочені смужки папірусу зіткаються разом на ткацькому верстаті, утворюючи $(thing)неочищений папір$(). Нарешті, його потрібно покласти на колоду та $(l:mechanics/leather_making#scraping)вишкребти$(), щоб отримати $(thing)папір$()."
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/vanilla/map",
+        "recipe2": "tfc:crafting/vanilla/name_tag"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "minecraft:writable_book",
+        "recipe2": "minecraft:book"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/wood/pine_lectern",
+        "recipe2": "tfc:crafting/wood/kapok_bookshelf"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "Перегорніть на наступну сторінку, щоб дізнатися про виготовлення паперу за допомогою процесу пергаменту."
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "parchment",
+        "text": "$(thing)Пергаментний папір$() починається зі вишкребаної шкури. Перегляньте розділ $(l:mechanics/leather_making)виготовлення шкіри$(), щоб дізнатися, як її отримати. Для виготовлення пергаменту потрібна обробка кількома різними матеріалами. Спершу необхідна $(thing)пемза$(). Пемзу можна знайти на поверхні землі поблизу $(l:the_world/geology)вулканів$(), або отримати шляхом $(l:mechanics/sluices)промивання$() чи $(l:mechanics/panning)промивання в мисці$() рудних покладів, що містять андезит, ріоліт або дацит.",
+        "title": "Пергамент"
+      },
+      {
+        "type": "patchouli:multiblock",
+        "multiblock": {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:groundcover/pumice"
+          }
+        },
+        "name": "Пемза",
+        "text": "Камінь пемзи, розміщений на землі.",
+        "enable_visualize": false
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/large_treated_hide",
+        "text": "Створення пемзи, молота і зішкрябаної шкури дає секції $(thing)Обробленої Шкури$()."
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/parchment",
+        "text": "Оброблена шкіра, $(l:mechanics/glassworking#lime)вапняний порошок$(), борошно та свіже яйце завершать процес обробки та дадуть придатний до використання папір."
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "paperfromwood",
+        "text": "$(thing) Створення паперу з деревини$() — це давній процес, який вимагає обробки міцних порід деревини у листи, що потім подрібнюються до пульпи, після чого пресуються, висушуються та вишкрібаються для отримання паперу.$(br2)Зауважте, що м’які породи деревини не підходять для виготовлення паперу",
+        "title": "Папір із дерева"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "Спершу потрібно знайти тверду деревину:$(br2)Акацію$(br)Ясен$(br)Осику$(br)Березу$(br)Чорне дерево$(br)Каштан$(br)Гікорі$(br)Клен$(br)Дуб$(br)Палісандр$(br)Сикомору"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "title": "Очищена тверда деревина",
+        "item": {
+          "tag": "tfg:stripped_hardwood"
+        },
+        "text": "Процес починається зі зняття кори з $(thing)твердої деревини$(), щоб оголити внутрішні волокна колоди. Ви можете зняти кору, поклавши колоду на землю та клацнувши по ній ПКМ з сокирою"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": "Смуга Твердого Дерева",
+        "recipe": "tfg:crafting/strip_hardwood",
+        "text": "Далі очищену деревину стругають сокирою, щоб отримати $(item)Смужки твердої деревини$(). Це можна зробити за допомогою сокири або складніших методів"
+      },
+      {
+        "type": "tfc:sealed_barrel_recipe",
+        "title": "Просочена Смуга Твердого Дерева",
+        "recipe": "tfg:barrel/soak_hardwood_strip",
+        "text": "Потім окремі смужки вимочують у $(l:mechanics/barrels)діжці$() з $(thing)водою$(). Це $(thing)послаблює структурну цілісність$() $(thing)деревини$(), щоб її можна було $(thing)розкласти далі$()"
+      },
+      {
+        "type": "tfc:quern_recipe",
+        "recipe": "tfg:quern/soaked_hardwood_strip",
+        "title": "Листяна целюлоза",
+        "text": "Потім використайте $(l:mechanics/quern)жорна$(), щоб подрібнити вимочені смужки на $(item)пульпу з твердої деревини$()"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "gtceu:shaped/small_dust_assembling_hardwood",
+        "title": "Накопичення пульпи",
+        "text": "Хоча жорна дають вам невеликі купки пульпи, ви захочете об’єднати їх разом на $(thing)верстаку$(). Складніші методи подрібнення смужок дають більшу кількість пульпи"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "item": "gtceu:thermochemically_treated_hardwood_dust",
+        "title": "Розкладання пульпи",
+        "text": "Перш ніж пульпу можна буде далі переробляти на папір, її потрібно додатково розкласти шляхом $(thing)кип’ятіння з лугом$() у $(l:firmalife/oven_appliances#vat)чані$() або $(l:mechanics/pot)горщику$()."
+      },
+      {
+        "type": "patchouli:empty"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "item": "tfg:soaked_unrefined_paper",
+        "title": "Пресування пульпи",
+        "text": "Після розкладання шляхом кип’ятіння з лугом $(item)термохімічно оброблену пульпу з твердої деревини$() можна спресувати в аркуш $(item)вимоченого неочищеного паперу$()"
+      },
+      {
+        "type": "tfc:anvil_recipe",
+        "recipe": "tfg:anvil/soaked_unrefined_paper",
+        "text": "Ви можете використати $(l:mechanics/anvils)ковадло$(), щоб вибити пульпу в аркуш"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "title": "Топтання у бочці",
+        "item": {
+          "tag": "firmalife:stomping_barrels"
+        },
+        "text": "Альтернативно, ви можете втоптати термохімічно оброблену пульпу з твердої деревини у $(l:firmalife/wine)бочці для топтання$()"
+      },
+      {
+        "type": "tfc:drying_recipe",
+        "recipe": "tfg:drying/unrefined_paper",
+        "text": "Останнім кроком є $(l:firmalife/drying)сушіння$() $(item)вимоченого неочищеного паперу$() до $(item)неочищеного паперу$(), який потім можна вишкребти до $(item)паперу$(), як показано раніше."
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Скорочення етапів...?",
+        "text": "Рухаючись угору по технологічному дереву, ви зможете виготовляти папір з деревини з меншою кількістю кроків. Перегляньте $(thing)EMI$() для різних способів, які можна використати для створення паперу з деревини."
+      }
+    ],
+    "read_by_default": true
+}

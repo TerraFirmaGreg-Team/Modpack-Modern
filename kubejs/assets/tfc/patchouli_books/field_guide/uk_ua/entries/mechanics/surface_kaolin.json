@@ -1,0 +1,93 @@
+{
+    "name": "Каолінова глина",
+    "icon": "tfc:kaolin_clay",
+    "category": "tfc:mechanics",
+    "read_by_default": true,
+    "pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "kaolinite",
+			"text": "Каолінова глина потрібна для виготовлення $(l:mechanics/fire_clay)Вогнетривкої глини$(). Вона може з’являтися на висотах від Y=75 до Y=110 у плато, старих горах, пагорбистих рівнинах і високогір’ях, за $(l:the_world/climate#temperature)температури$() щонайменше 18 °C та $(l:the_world/climate#rainfall)річної кількості опадів$() від 300 мм. Квітка $(thing)Кривава лілія$() росте на каоліновій глині, яка може бути на глибині до 35 блоків."
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "Зазвичай, рухайтеся $(thing)Південний схід$(), щоб підвищити температуру та вологість.",
+			"multiblocks": [
+				{
+					"pattern": [
+					[
+					"X"
+					],
+					[
+					"Y"
+					],
+					[
+					"0"
+					]
+					],
+					"mapping": {
+					"X": "tfc:plant/blood_lily",
+					"Y": "tfc:kaolin_clay_grass"
+					}
+				},
+				{
+					"pattern": [
+					[
+					"X"
+					],
+					[
+					"Y"
+					],
+					[
+					"0"
+					]
+					],
+					"mapping": {
+					"X": "tfc:plant/blood_lily",
+					"Y": "tfc:red_kaolin_clay"
+					}
+				},
+				{
+					"pattern": [
+					[
+					"X"
+					],
+					[
+					"Y"
+					],
+					[
+					"0"
+					]
+					],
+					"mapping": {
+					"X": "tfc:plant/blood_lily",
+					"Y": "tfc:white_kaolin_clay"
+					}
+				},
+				{
+					"pattern": [
+					[
+					"X"
+					],
+					[
+					"Y"
+					],
+					[
+					"0"
+					]
+					],
+					"mapping": {
+					"X": "tfc:plant/blood_lily",
+					"Y": "tfc:pink_kaolin_clay"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfc:powder/kaolinite",
+			"anchor": "powder",
+			"text": "Лише $(thing)20%$() каолінової глини перетворюється на $(thing)Каолінітовий порошок$(), тому рекомендується випалювати її на місці за допомогою $(l:getting_started/pit_kiln)Ямних печей$(), щоб заощадити місце в інвентарі.$(br2)Також візьміть із собою близько 20 $(thing)Блоків$() каолінової глини для подальшого $(l:mechanics/glassworking_applications)Склодувного виробництва$()."
+		}
+    ]
+}
