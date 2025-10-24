@@ -79,7 +79,7 @@ const registerAE2WTLibRecipes = (event) => {
             '1x gtceu:ev_emitter',
             '2x #forge:plates/rhodium')
         .inputFluids(Fluid.of('gtceu:epoxy', 144))
-        .itemOutputs(Item.of('ae2wtlib:wireless_universal_terminal', '{crafting:1b, pattern_access:1b, pattern_encoding:1b}'))
+        .itemOutputs(Item.of('ae2wtlib:wireless_universal_terminal'))
         .duration(300)
         .EUt(GTValues.VA[GTValues.EV])
 }
