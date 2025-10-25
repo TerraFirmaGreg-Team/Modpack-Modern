@@ -13,7 +13,7 @@ export default defineConfig([
     }, 
 
     extends: ["js/recommended"], 
-    languageOptions: { globals: globals.node, ecmaVersion: 2015 },
+    languageOptions: { globals: globals.node, ecmaVersion: 2020 },
     rules: {
       "no-undef": "off",
       "no-unused-vars": "off",

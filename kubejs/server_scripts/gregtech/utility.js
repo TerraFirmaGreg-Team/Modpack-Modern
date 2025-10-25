@@ -256,6 +256,10 @@ function forEachMaterial(iterator) {
 //#region Add Circuit
 /**
  * Function for adding circuit numbers for existing recipes
+ * 1) Preserves existing `inputs.item` entries.
+ * 2) Adds a circuit entry to the `inputs.item` array.
+ * 3) If `inputs.item` is missing, create it.
+ * 4) If a circuit already exists, update its number.
  * 
  * Constants {@link global.ADD_CIRCUIT}
  *
@@ -265,23 +269,74 @@ function forEachMaterial(iterator) {
  */
 function addCircuitToRecipe(event, recipeId, circuitNumber) {
 
+	const JsonObject = Java.loadClass('com.google.gson.JsonObject');
+	const JsonArray = Java.loadClass('com.google.gson.JsonArray');
+	const JsonParser = Java.loadClass('com.google.gson.JsonParser');
+	const JsonElementClass = Java.loadClass('com.google.gson.JsonElement');
+
+	// Helper to call JsonArray.add(JsonElement) explicitly because "Rhino Moment".
+	const addJsonElement = (jsonArray, jsonElement) => {
+		jsonArray.getClass().getMethod("add", JsonElementClass).invoke(jsonArray, jsonElement);
+	};
+
 	event.findRecipes({ id: recipeId }).forEach(recipe => {
-			const inputs = recipe.json.get("inputs");
-			const itemArray = Array.isArray(inputs.item) ? inputs.item.slice() : [];
+		let inputsEl = recipe.json.get("inputs");
+		let inputsObj;
+		if (inputsEl === null || inputsEl.isJsonNull()) {
+			inputsObj = new JsonObject();
+		} else if (inputsEl.isJsonObject()) {
+			inputsObj = inputsEl.getAsJsonObject();
+		} else {
+			return;
+		}
 
-			itemArray.push({
-				content: {
-					type: "gtceu:circuit",
-					configuration: circuitNumber
-				},
-				chance: 0,
-				maxChance: 10000,
-				tierChanceBoost: 0
-			});
+		// Cache existing item inputs.
+		let itemEl = inputsObj.get("item");
+		let itemArray;
+		if (itemEl === null || itemEl === undefined || itemEl.isJsonNull()) {
+			itemArray = new JsonArray();
+		} else if (itemEl.isJsonArray()) {
+			itemArray = itemEl.getAsJsonArray();
+		} else if (itemEl.isJsonObject()) {
+			itemArray = new JsonArray();
+			addJsonElement(itemArray, JsonParser.parseString(itemEl.getAsJsonObject().toString()));
+		} else {
+			return;
+		}
 
-			inputs.add("item", itemArray);
-			recipe.json.add("inputs", inputs);
-		});
+		// Build circuit entry as a JsonElement using JsonParser.
+		const circuitElement = JsonParser.parseString(JSON.stringify({
+			content: { type: "gtceu:circuit", configuration: circuitNumber },
+			chance: 0,
+			maxChance: 10000,
+			tierChanceBoost: 0
+		}));
+
+		// Dont duplicate circuit if one already exists. 
+		// If it exists, just update it.
+		let hasCircuit = false;
+		for (let i = 0; i < itemArray.size(); i++) {
+			const el = itemArray.get(i);
+			if (!el.isJsonObject()) continue;
+			const obj = el.getAsJsonObject();
+			const content = obj.get("content");
+			if (content && content.isJsonObject()) {
+				const typeEl = content.getAsJsonObject().get("type");
+				if (typeEl && typeEl.isJsonPrimitive() && typeEl.getAsString() === "gtceu:circuit") {
+					hasCircuit = true;
+					content.getAsJsonObject().addProperty("configuration", circuitNumber);
+					break;
+				}
+			}
+		}
+
+		if (!hasCircuit) {
+			addJsonElement(itemArray, circuitElement);
+		}
+
+		inputsObj.add("item", itemArray);
+		recipe.json.add("inputs", inputsObj);
+	});
 }
 //#endregion
 

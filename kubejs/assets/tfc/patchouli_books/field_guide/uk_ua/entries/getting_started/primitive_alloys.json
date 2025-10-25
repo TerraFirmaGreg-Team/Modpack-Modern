@@ -1,0 +1,76 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "Примітивні сплави",
+	"category": "tfc:getting_started",
+	"icon": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"tfc:metal/bronze\"}}",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Сплави$() - це спосіб змішування двох або більше металів разом для створення нового, більш міцного матеріалу. На початку гри - мідь є корисним металом для створення інструменту. Наступний рівень металу є одним із трьох типів $(thing)бронзи$(). Сплав складається зі складових $(thing)металів$(), кожен з яких повинен задовольняти певний відсоток від загального цілого."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Один метод, за допомогою якого сплави можуть бути виготовлені під час ранньої гри, полягає в використанні $(thing)горщика$(). Процес дуже схожий на $(l:getting_started/finding_ores#casting)лиття$(). Однак замість того, щоб використовувати лише один метал, помісти достатню кількість шматків руди всередину горщика в правильному співвідношенні, щоб утворити суміш відомого сплаву."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Наприклад, щоб створити 1000 mB $(thing)Бронзи$() (показано праворуч), вам знадобиться від 880 до 920 mB $(thing)Міді$() та від 80 до 120 mB $(thing)Оловa$().$(br2)Наступні три сторінки показують рецепти трьох видів бронзи. Кожен тип бронзи можна використовувати для виготовлення інструментів, $(l:mechanics/armor)Броні$() та інших металевих предметів. Вони дещо відрізняються, тому готові інструменти матимуть різну міцність, ефективність і шкоду атаки."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:bronze_ingot",
+			"title": "Бронза",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)70 - 80 % : $(thing)Міді$()$(li)20 - 30 % : $(thing)Олова$()$(br2)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:bismuth_bronze_ingot",
+			"title": "Бісмутова Бронза",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)20 - 30 % : $(thing)Цинку$()$(li)50 - 65 % : $(thing)Міді$()$(li)10 - 20 % : $(thing)Вісмуту$()$(br2)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:black_bronze_ingot",
+			"title": "Чорна Бронза",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)50 - 70 % : $(thing)Міді$()$(li)10 - 25 % : $(thing)Срібла$()$(li)10 - 25 % : $(thing)Золота$()$(br2)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Інші сплави не підходять для створення інструментів. Це $(thing)Латунь$(), $(thing)Рожеве Золото$() та $(thing)Стерлінгове Срібло$().$(br2)$(thing)Латунь$() — корисний сплав для всіляких механізмів, зокрема $(l:mechanics/mechanical_power)Механічної Енергії$().$(br2)$(thing)Рожеве Золото$() та $(thing)Стерлінгове Срібло$() використовуються для створення $(l:mechanics/steel#red_steel)Червоної Сталі$() та $(l:mechanics/steel#blue_steel)Синьої Сталі$().",
+			"title": "Технічні Сплави"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "brass",
+			"item": "create:brass_ingot",
+			"title": "Латунь",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)70 - 80 % : $(thing)Міді$()$(li)20 - 30 % : $(thing)Цинку$()$(br2)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rose_gold_ingot",
+			"title": "Рожеве золото",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)15 - 30 % : $(thing)Міді$()$(li)70 - 85 % : $(thing)Золота$()$(br2)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:sterling_silver_ingot",
+			"title": "Стерлінське срібло",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)20 - 40 % : $(thing)Міді$()$(li)60 - 80 % : $(thing)Срібла$()$(br2)"
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 5,
+	"extra_recipe_mappings": {
+		"gtceu:bronze_ingot": 3,
+		"gtceu:bismuth_bronze_ingot": 4,
+		"gtceu:black_bronze_ingot": 5,
+		"gtceu:brass_ingot": 7
+	}
+}
