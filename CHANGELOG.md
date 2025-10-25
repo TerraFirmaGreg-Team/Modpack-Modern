@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 ### Changes
+- Changed TACZ ammo stack sizes to be more normal @BlueBoat29 
 ### Bug fixes
 
 ## [0.11.5] - 22-10-2025
