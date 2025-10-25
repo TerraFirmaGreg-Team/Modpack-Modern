@@ -18,6 +18,8 @@ function registerDeaFissionRecipes(event) {
 		});
 	};
 
+	// Examples: https://bitbucket.org/Vazde/minecraft-fission/src/master/mod/settings-run/kubejs/server_scripts/recipes.js
+
 	component("HEAT", "minecraft:blue_ice", 0.5)
 	component("HEAT", "tfg:glacian_wool_frame", 2);
 	component("HEAT", "tfg:aes_insulation_frame", 1);
