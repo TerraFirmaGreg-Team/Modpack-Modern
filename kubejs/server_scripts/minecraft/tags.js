@@ -186,6 +186,10 @@ const registerMinecraftBlockTags = (event) => {
 	event.add('tfc:forge_insulation', 'minecraft:smooth_basalt');
 
     event.add('minecraft:mineable/pickaxe', 'minecraft:lantern');
+
+    event.add('minecraft:mineable/pickaxe', 'minecraft:cobweb');
+    event.add('minecraft:mineable/hoe', 'minecraft:cobweb');
+    event.add('minecraft:mineable/shovel', 'minecraft:cobweb');
     
     //#region
 
