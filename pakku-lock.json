@@ -3435,7 +3435,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "CraftPresence-2.6.2+1.20.1-forge.jar",
+                    "file_name": "CraftPresence-2.7.0+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -3445,22 +3445,22 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/DFqQfIBR/versions/cDvgcIoe/CraftPresence-2.6.2+1.20.1-forge.jar",
-                    "id": "cDvgcIoe",
+                    "url": "https://cdn.modrinth.com/data/DFqQfIBR/versions/ft5Er26S/CraftPresence-2.7.0+1.20.1-forge.jar",
+                    "id": "ft5Er26S",
                     "parent_id": "DFqQfIBR",
                     "hashes": {
-                        "sha512": "b7d0d34974de639212a0dfb5961691a3af15d1e0e54bf1bb56f57a5f0f13e034f81d99fb14870cf12aab1ad0948cf3bfa677f568be3a72118bef4e522cdf1985",
-                        "sha1": "bd43b802ab6eb1bef27ea7e09dffa06437aa81c7"
+                        "sha512": "161aaede2fe5865c8f97c9a1baa02dd73f1804add2748e6265a45795fddfdd7b72e79170db5d71b2f921fe8c4c1a7bcaecd1d7dac908f135a260b7159f0bb401",
+                        "sha1": "e37dbe8efb670d3a9e079e095d59410658c7e3e9"
                     },
                     "required_dependencies": [
                         "nT86WUER"
                     ],
-                    "size": 2057600,
-                    "date_published": "2025-08-07T17:56:43.419374Z"
+                    "size": 2059525,
+                    "date_published": "2025-10-25T01:10:57.224854Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "CraftPresence-2.6.2+1.20.1-forge.jar",
+                    "file_name": "CraftPresence-2.7.0+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -3470,18 +3470,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6860/408/CraftPresence-2.6.2+1.20.1-forge.jar",
-                    "id": "6860408",
+                    "url": "https://edge.forgecdn.net/files/7146/452/CraftPresence-2.7.0+1.20.1-forge.jar",
+                    "id": "7146452",
                     "parent_id": "297038",
                     "hashes": {
-                        "sha1": "bd43b802ab6eb1bef27ea7e09dffa06437aa81c7",
-                        "md5": "669f5d92d6ae20a8a84cdb2759da5df5"
+                        "sha1": "e37dbe8efb670d3a9e079e095d59410658c7e3e9",
+                        "md5": "749ea480cb10ae2b56e90dae94ff1d04"
                     },
                     "required_dependencies": [
                         "1056812"
                     ],
-                    "size": 2057600,
-                    "date_published": "2025-08-07T17:56:23.240Z"
+                    "size": 2059525,
+                    "date_published": "2025-10-25T01:10:38.497Z"
                 }
             ]
         },
@@ -4480,7 +4480,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "deafission-1.20.1-0.11.2.jar",
+                    "file_name": "deafission-1.20.1-0.13.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4488,19 +4488,19 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7110/312/deafission-1.20.1-0.11.2.jar",
-                    "id": "7110312",
+                    "url": "https://edge.forgecdn.net/files/7141/816/deafission-1.20.1-0.13.0.jar",
+                    "id": "7141816",
                     "parent_id": "1354541",
                     "hashes": {
-                        "sha1": "ef5b43efb03ab16f7a98bb17e95ad57e9d577f0d",
-                        "md5": "343207f3b93a0234d9399c4fade5a2b8"
+                        "sha1": "2da535dd7c210c3cd259b4e58e6af09676f2c5fb",
+                        "md5": "cca2f339d5fefce5716cbb5f9b1d68bb"
                     },
                     "required_dependencies": [
                         "890405",
                         "238086"
                     ],
-                    "size": 183988,
-                    "date_published": "2025-10-15T16:50:38.327Z"
+                    "size": 287675,
+                    "date_published": "2025-10-23T17:48:17.073Z"
                 }
             ]
         },
@@ -5544,7 +5544,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ExtendedAE-1.20-1.4.7-forge.jar",
+                    "file_name": "ExtendedAE-1.20-1.4.8-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5553,20 +5553,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7064/210/ExtendedAE-1.20-1.4.7-forge.jar",
-                    "id": "7064210",
+                    "url": "https://edge.forgecdn.net/files/7144/417/ExtendedAE-1.20-1.4.8-forge.jar",
+                    "id": "7144417",
                     "parent_id": "892005",
                     "hashes": {
-                        "sha1": "b949c203cec77711d1468c5c3c262548894ee149",
-                        "md5": "b86bf3652433cb796f97bcdf6257d21e"
+                        "sha1": "a21a3d004276fac47a7d0c18424f3583e7fab3c4",
+                        "md5": "c8017c9e6e53c98c337cfc45d9a5153d"
                     },
                     "required_dependencies": [
                         "223794",
                         "1173950",
                         "957920"
                     ],
-                    "size": 2667217,
-                    "date_published": "2025-10-04T03:39:51.890Z"
+                    "size": 2667284,
+                    "date_published": "2025-10-24T14:19:14.703Z"
                 }
             ]
         },
@@ -14174,7 +14174,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "UniLib-1.1.1+1.20.1-forge.jar",
+                    "file_name": "UniLib-1.2.0+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -14184,20 +14184,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/nT86WUER/versions/5ocNvrC1/UniLib-1.1.1+1.20.1-forge.jar",
-                    "id": "5ocNvrC1",
+                    "url": "https://cdn.modrinth.com/data/nT86WUER/versions/uLIRXuoI/UniLib-1.2.0+1.20.1-forge.jar",
+                    "id": "uLIRXuoI",
                     "parent_id": "nT86WUER",
                     "hashes": {
-                        "sha512": "ac08ec284c268879bb48ccb91269edda58f0a808f03a2dbcdaa69c6fec9f30d3c9aa2446bd0f00cbee93141ef30dfc5dc9dc519a1b9d91b6e5e56cf39d4f232e",
-                        "sha1": "d4c0afcd8185dd3c5b293bccd962fdfe8c4439f6"
+                        "sha512": "e042981acde70741dda3e99fa2213d764183c912a4b8d5a4d13130202d10e67eb551fea3297b0442ad3ba7af68984e33191832f2901fb6e70496a16ebb672f24",
+                        "sha1": "b8348dbe2ac3226613332eaf65d0fdfa6e76d8c3"
                     },
                     "required_dependencies": [],
-                    "size": 1630451,
-                    "date_published": "2025-08-07T17:54:12.511535Z"
+                    "size": 1631104,
+                    "date_published": "2025-10-24T18:08:20.681953Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "UniLib-1.1.1+1.20.1-forge.jar",
+                    "file_name": "UniLib-1.2.0+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -14207,16 +14207,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6860/397/UniLib-1.1.1+1.20.1-forge.jar",
-                    "id": "6860397",
+                    "url": "https://edge.forgecdn.net/files/7145/192/UniLib-1.2.0+1.20.1-forge.jar",
+                    "id": "7145192",
                     "parent_id": "1056812",
                     "hashes": {
-                        "sha1": "d4c0afcd8185dd3c5b293bccd962fdfe8c4439f6",
-                        "md5": "07806cf703995fa27a64354cc95d0989"
+                        "sha1": "b8348dbe2ac3226613332eaf65d0fdfa6e76d8c3",
+                        "md5": "b45a2349802946baeb3f398142b29c08"
                     },
                     "required_dependencies": [],
-                    "size": 1630451,
-                    "date_published": "2025-08-07T17:53:53.637Z"
+                    "size": 1631104,
+                    "date_published": "2025-10-24T18:08:01.953Z"
                 }
             ]
         },
