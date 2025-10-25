@@ -1033,12 +1033,19 @@
 		}
 		{
 			dependencies: ["7AF726555D721DFC"]
+			description: [
+				"{quests.gregtech_energy.lce.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.lce.desc.2}"
+			]
 			id: "351AED1612D00EF8"
+			subtitle: "{quests.gregtech_energy.lce.subtitle}"
 			tasks: [{
 				id: "6A35D4E3C93A70FC"
 				item: "gtceu:large_combustion_engine"
 				type: "item"
 			}]
+			title: "{quests.gregtech_energy.lce.title}"
 			x: -4.5d
 			y: -1.0d
 		}

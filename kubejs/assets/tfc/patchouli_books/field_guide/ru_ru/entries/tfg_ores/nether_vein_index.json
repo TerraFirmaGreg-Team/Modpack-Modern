@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_cassiterite)Касситерит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Лазурит, Лазурит 2 и Содалит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Марганец и Тантал$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Медь и Халькопирит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)Минеральные пески$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Мыльный камень, Тальк и Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Наквада и Плутоний$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Незер-кварц$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Редстоун, Киноварь и Рубин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Сапфир и Альмандин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Селитра и Электротин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Сера и Пирит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Серебро, Галена и Свинец$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sylvite)Сильвин$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_cassiterite)Касситерит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Лазурит, Лазурит 2 и Содалит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Марганец и Тантал$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Медь и Халькопирит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)Минеральные пески$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Мыльный камень, Тальк и Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Наквада$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Незер-кварц$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Редстоун, Киноварь и Рубин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Сапфир и Альмандин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Селитра и Электротин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Сера и Пирит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Серебро, Галена и Свинец$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sylvite)Сильвин$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1734,8 +1734,8 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 250$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 38$(br)$(thing)Размер$(): 32$(br2)$(thing)Виды камней$(): Базальт, Пироксенит",
-      "title": "Наквада и Плутоний",
+      "text": "$(thing)Редкость$(): 200$(br)$(thing)Плотность$(): 0.7$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 38$(br)$(thing)Размер$(): 32$(br2)$(thing)Виды камней$(): Базальт, Пироксенит",
+      "title": "Наквада",
       "type": "patchouli:text",
       "anchor": "nether_naquadah"
     },

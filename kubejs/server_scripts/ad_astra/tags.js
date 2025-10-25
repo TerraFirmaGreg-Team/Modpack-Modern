@@ -481,6 +481,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'wan_ancient_beasts:soarer',
 		'wan_ancient_beasts:glider',
 		'wan_ancient_beasts:toxlacanth',
+		'wan_ancient_beasts:surfer',
 		'tfg:surfer',
 		// europa
 		'endermanoverhaul:coral_enderman',
