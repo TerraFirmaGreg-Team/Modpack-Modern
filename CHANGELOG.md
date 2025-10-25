@@ -6,7 +6,7 @@
 - Buffed how far each Soarer "flap" can glide for @Pyritie
 - Polycaprolactam string and phantom string now use circuit 3 in a wiremill instead of 0 (#2096) @SverhRazum-Nah
 - Added flax bundles for much faster scraping (#2080) @Xaligal
-- Added more mineable tags to cobwebs since swords don't want to work
+- Added more mineable tags to cobwebs since swords don't want to work @Pyritie
 ### Bug fixes
 - Fixed part of the tungsten processing loop giving way too much salt (#2095) @Redeix
 - Fixed basic super tanks so you can now left/right click with them in GUIs like you can with the others (#2100) @jurrejelle
@@ -14,7 +14,7 @@
 - Fixed some quest misinformation (#2097) @Pyritie, @jmecn
 - Fixed not being able to ride Soarers (#2082) @Pyritie
 - Fixed Soarer "flap" GUI overlapping with the minimap @Pyritie
-- Fixed aqeduct recipes (#2101) @vidal-adrien
+- Fixed aqueduct recipes (#2101) @vidal-adrien
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
