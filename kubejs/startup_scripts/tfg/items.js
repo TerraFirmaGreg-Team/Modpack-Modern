@@ -456,6 +456,16 @@ const registerTFGItems = (event) => {
 		.tag('forge:cloth')
 		.tag('tfc:sewing_light_cloth')
 
+	event.create('tfg:flax_bundle')
+		.tag('tfc:scrapable')
+		.translationKey('item.tfg.flax_bundle')
+		.texture('tfg:item/flax_bundle')
+	
+	event.create('tfg:bundled_scraped_flax')
+		.tag('tfc:scrapable')
+		.translationKey('item.tfg.bundled_scraped_flax')
+		.texture('tfg:item/bundled_scraped_flax')	
+
 	//#region Lab Equipment
 
 	global.LAB_EQUIPMENT_CONTAINERS.forEach((item) => {
