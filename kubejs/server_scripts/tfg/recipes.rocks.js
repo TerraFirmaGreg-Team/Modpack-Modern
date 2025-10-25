@@ -195,7 +195,7 @@ function registerTFGRockRecipes(event) {
 			'A A',
 			'BAB'
 		], {
-			A: x.loose,
+			A: x.brick,
 			B: 'tfc:mortar'
 		})
 	})
