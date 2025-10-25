@@ -6,9 +6,9 @@
 - Buffed how far each Soarer "flap" can glide for @Pyritie
 - Polycaprolactam string and phantom string now use circuit 3 in a wiremill instead of 0 (#2096) @SverhRazum-Nah
 - Added flax bundles for much faster scraping (#2080) @Xaligal
-- Added more mineable tags to cobwebs since swords don't want to work
+- Added more mineable tags to cobwebs since swords don't want to work @Pyritie
 - Added TACZ Ammo Boxes @BlueBoat29
-- Added TACZ Guns and Ammo Boxes to tool rack
+- Added TACZ Guns and Ammo Boxes to tool rack @BlueBoat29
 ### Bug fixes
 - Fixed part of the tungsten processing loop giving way too much salt (#2095) @Redeix
 - Fixed basic super tanks so you can now left/right click with them in GUIs like you can with the others (#2100) @jurrejelle
