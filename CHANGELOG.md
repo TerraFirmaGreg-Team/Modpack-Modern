@@ -3,7 +3,20 @@
 ## [Unreleased]
 ### Changes
 - Changed TACZ ammo stack sizes to be more normal @BlueBoat29 
+- Buffed how far each Soarer "flap" can glide for @Pyritie
+- Polycaprolactam string and phantom string now use circuit 3 in a wiremill instead of 0 (#2096) @SverhRazum-Nah
+- Added flax bundles for much faster scraping (#2080) @Xaligal
 ### Bug fixes
+- Fixed part of the tungsten processing loop giving way too much salt (#2095) @Redeix
+- Fixed basic super tanks so you can now left/right click with them in GUIs like you can with the others (#2100) @jurrejelle
+- Fixed sometimes crash on startup (#2098) @Pyritie
+- Fixed some quest misinformation (#2097) @Pyritie, @jmecn
+- Fixed not being able to ride Soarers (#2082) @Pyritie
+- Fixed Soarer "flap" GUI overlapping with the minimap @Pyritie
+- Fixed aqeduct recipes (#2101) @vidal-adrien
+### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry
 
 ## [0.11.5] - 22-10-2025
 - Fixed missing ComputerCraft in single player modpack, due to a bug in the latest pakku version
