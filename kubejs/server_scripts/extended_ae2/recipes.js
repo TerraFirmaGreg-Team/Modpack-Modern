@@ -480,7 +480,7 @@ const registerExtendedAE2Recipes = (event) => {
     event.recipes.gtceu.assembler('expatternprovider:active_formation_plane')
         .itemInputs(
             'ae2:formation_plane',
-            'expatternprovider:export_bus',
+            'ae2:export_bus',
             '2x ae2:engineering_processor')
         .itemOutputs('expatternprovider:active_formation_plane')
         .duration(100)
