@@ -527,6 +527,8 @@ const registerCreateRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(19)
 
+	TFGHelpers.registerMaterialInfo('create:mechanical_drill', { 'wood': 1, 'steel': 4, 'wrought_iron': 3 });
+
 	event.shaped('create:mechanical_roller', [
 		'GBG',
 		'ADA',
@@ -547,6 +549,8 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(20)
+
+	TFGHelpers.registerMaterialInfo('create:mechanical_roller', { 'wood': 1,'wrought_iron': 4 });
 
 	// Редстоуновый контакт
 	event.shaped('2x create:redstone_contact', [
@@ -590,6 +594,8 @@ const registerCreateRecipes = (event) => {
 		.duration(200)
 		.EUt(20)
 
+	TFGHelpers.registerMaterialInfo('create:mechanical_harvester', { 'wood': 1, 'wrought_iron': 3 });
+
 	// Механический плуг
 	event.shaped('create:mechanical_plough', [
 		'CDE',
@@ -610,6 +616,8 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:mechanical_plough')
 		.duration(200)
 		.EUt(20)
+
+	TFGHelpers.registerMaterialInfo('create:mechanical_plough', { 'wood': 1, 'wrought_iron': 3 });
 
 	// Create sail creation using custom sail items.
 
