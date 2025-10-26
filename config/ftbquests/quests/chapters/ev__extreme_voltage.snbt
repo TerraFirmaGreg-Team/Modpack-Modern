@@ -115,10 +115,10 @@
 			size: 2.0d
 			subtitle: "{quests.extreme_voltage.mars.subtitle}"
 			tasks: [{
-				dimension: "ad_astra:moon"
+				dimension: "ad_astra:mars"
 				icon: "ad_astra:mars_globe"
 				id: "18D9C6ACD5513680"
-				title: "I'm on the Moon"
+				title: "{quests.extreme_voltage.mars.task}"
 				type: "dimension"
 			}]
 			title: "{quests.extreme_voltage.mars.title}"

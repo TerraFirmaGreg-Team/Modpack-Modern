@@ -1,6 +1,9 @@
 # Changelog
 
 ## [Unreleased]
+### Mod updates
+- New GregTech patch, check the patch notes [here](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.2.1-1.20.1)
+- Changed to a different third-person mod that supports TACZ better
 ### Changes
 - Changed TACZ ammo stack sizes to be more normal @BlueBoat29 
 - Buffed how far each Soarer "flap" can glide for @Pyritie
@@ -9,6 +12,7 @@
 - Added more mineable tags to cobwebs since swords don't want to work @Pyritie
 - Added TACZ Ammo Boxes @BlueBoat29
 - Added TACZ Guns and Ammo Boxes to tool rack @BlueBoat29
+- Overhauled the recycling recipes and added many more (#1576) @Pyritie
 ### Bug fixes
 - Fixed part of the tungsten processing loop giving way too much salt (#2095) @Redeix
 - Fixed basic super tanks so you can now left/right click with them in GUIs like you can with the others (#2100) @jurrejelle

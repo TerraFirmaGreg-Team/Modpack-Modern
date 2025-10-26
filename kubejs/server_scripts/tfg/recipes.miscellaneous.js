@@ -809,6 +809,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(200)
 		.circuit(4)
 		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true)
 
 	//Rock-wool stuff
 	event.recipes.gtceu.mixer('tfg:aes_mix')

@@ -80,7 +80,7 @@ function registerTFGSpaceRecipes(event) {
 		.duration(2000)
 		.EUt(GTValues.VA[GTValues.EV])
 
-	// Aqueous accumulator
+	// Aqueous accumulator -- use adjacentFluids (plural) to avoid rhino ambiguous method issues
 	
 	let aaCircuit = 1;
 
@@ -88,14 +88,14 @@ function registerTFGSpaceRecipes(event) {
 		.circuit(aaCircuit++)
 		.duration(20)
 		.EUt(GTValues.VHA[GTValues.ULV])
-		['adjacentFluid(net.minecraft.world.level.material.Fluid[])']("minecraft:water")
+		.adjacentFluids(["minecraft:water"])
 		.outputFluids(Fluid.of("minecraft:water", 1000))
 		
 	event.recipes.gtceu.aqueous_accumulator('sea_water')
 		.circuit(aaCircuit++)
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])
-		['adjacentFluid(net.minecraft.world.level.material.Fluid[])']("tfc:salt_water")
+		.adjacentFluids(["tfc:salt_water"])
 		.outputFluids(Fluid.of("tfc:salt_water", 1000))
 		
 	event.recipes.gtceu.aqueous_accumulator('semiheavy_water_mars')
@@ -103,7 +103,7 @@ function registerTFGSpaceRecipes(event) {
 		.dimension('ad_astra:mars')
 		.duration(20)
 		.EUt(GTValues.VHA[GTValues.ULV])
-		['adjacentFluid(net.minecraft.world.level.material.Fluid[])']("tfg:semiheavy_ammoniacal_water")
+		.adjacentFluids(["tfg:semiheavy_ammoniacal_water"])
 		.outputFluids(Fluid.of("tfg:semiheavy_ammoniacal_water", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('lava_overworld')
@@ -111,7 +111,7 @@ function registerTFGSpaceRecipes(event) {
 		.dimension('minecraft:overworld')
 		.duration(20*15)
 		.EUt(GTValues.VHA[GTValues.HV])
-		['adjacentFluid(net.minecraft.world.level.material.Fluid[])']("minecraft:lava")
+		.adjacentFluids(["minecraft:lava"])
 		.outputFluids(Fluid.of("minecraft:lava", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('lava_nether')
@@ -119,7 +119,7 @@ function registerTFGSpaceRecipes(event) {
 		.dimension('minecraft:the_nether')
 		.duration(20*15)
 		.EUt(GTValues.VHA[GTValues.HV])
-		['adjacentFluid(net.minecraft.world.level.material.Fluid[])']("minecraft:lava")
+		.adjacentFluids(["minecraft:lava"])
 		.outputFluids(Fluid.of("minecraft:lava", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('spring_water')
@@ -127,14 +127,14 @@ function registerTFGSpaceRecipes(event) {
 		.dimension('minecraft:overworld')
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.LV])
-		['adjacentFluid(net.minecraft.world.level.material.Fluid[])']("tfc:spring_water")
+		.adjacentFluids(["tfc:spring_water"])
 		.outputFluids(Fluid.of("tfc:spring_water", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('more_water')
 		.circuit(aaCircuit++)
 		.duration(10)
 		.EUt(GTValues.VHA[GTValues.HV])
-		['adjacentFluid(net.minecraft.world.level.material.Fluid[])']("minecraft:water")
+		.adjacentFluids(["minecraft:water"])
 		.outputFluids(Fluid.of("minecraft:water", 20000))
 		
 
@@ -318,7 +318,7 @@ function registerTFGSpaceRecipes(event) {
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.MV])
 
-	event.shaped('tfg:railgun_ammo_loader', [
+	event.recipes.gtceu.shaped('tfg:railgun_ammo_loader', [
 		'RMR',
 		'MBM',
 		'CCC'
@@ -327,9 +327,9 @@ function registerTFGSpaceRecipes(event) {
 		R: 'gtceu:mv_robot_arm',
 		M: 'gtceu:mv_electric_motor',
 		C: '#forge:single_cables/annealed_copper'
-	}).id('tfg:shaped/railgun_ammo_loader')
+	}).addMaterialInfo().id('tfg:shaped/railgun_ammo_loader')
 
-	event.shaped('tfg:interplanetary_logistics_monitor', [
+	event.recipes.gtceu.shaped('tfg:interplanetary_logistics_monitor', [
 		'CDC',
 		'SHE',
 		'WCW'
@@ -340,9 +340,9 @@ function registerTFGSpaceRecipes(event) {
 		H: 'gtceu:hv_machine_hull',
 		E: 'gtceu:hv_emitter',
 		W: '#forge:single_cables/silver'
-	}).id('tfg:shaped/interplanetary_logistics_monitor')
+	}).addMaterialInfo().id('tfg:shaped/interplanetary_logistics_monitor')
 
-	event.shaped('tfg:interplanetary_item_launcher', [
+	event.recipes.gtceu.shaped('tfg:interplanetary_item_launcher', [
 		'NSN',
 		'CHC',
 		'NEN'
@@ -352,9 +352,9 @@ function registerTFGSpaceRecipes(event) {
 		E: 'gtceu:hv_emitter',
 		H: 'gtceu:ev_machine_hull',
 		N: '#forge:plates/hsla_steel'
-	}).id('tfg:shaped/interplanetary_item_launcher')
+	}).addMaterialInfo().id('tfg:shaped/interplanetary_item_launcher')
 
-	event.shaped('tfg:interplanetary_item_receiver', [
+	event.recipes.gtceu.shaped('tfg:interplanetary_item_receiver', [
 		'CSC',
 		'WHW',
 		'CSC'
@@ -363,7 +363,7 @@ function registerTFGSpaceRecipes(event) {
 		S: 'gtceu:mv_sensor',
 		W: '#forge:double_cables/copper',
 		H: 'gtceu:mv_machine_hull'
-	}).id('tfg:shaped/interplanetary_item_receiver')
+	}).addMaterialInfo().id('tfg:shaped/interplanetary_item_receiver')
 
 	// Mars tree tapping
 

@@ -101,6 +101,7 @@ const registerAFCRecipes = (event) => {
 		.itemOutputs('afc:tree_tap')
 		.duration(50)
 		.EUt(7)
+		.addMaterialInfo(true)
 
 	// TreeTap Heating
 	event.recipes.tfc.heating('afc:tree_tap', 1080)
@@ -415,5 +416,44 @@ const registerAFCRecipes = (event) => {
 			speed_limits: 0,
 			processingTime: 50
 		}).id(`tfg:vi/lathe/stripping_${wood}_wood`)
+	})
+
+	const MORE_STRIPPING = [
+		{ wood: 'black_oak', stripped: 'oak', stripped_mod: 'tfc' },
+		{ wood: 'rainbow_eucalyptus', stripped: 'eucalyptus', stripped_mod: 'afc' },
+		{ wood: 'gum_arabic', stripped: 'acacia', stripped_mod: 'tfc' },
+		{ wood: 'redcedar', stripped: 'cypress', stripped_mod: 'afc' },
+		{ wood: 'rubber_fig', stripped: 'fig', stripped_mod: 'afc' },
+		{ wood: 'poplar', stripped: 'aspen', stripped_mod: 'tfc' }
+	];
+
+	MORE_STRIPPING.forEach(x => {
+		event.recipes.gtceu.lathe(`tfg:stripping_${x.wood}_log`)
+			.itemInputs(`afc:wood/log/${x.wood}`)
+			.itemOutputs(`${x.stripped_mod}:wood/stripped_log/${x.stripped}`)
+			.duration(50)
+			.EUt(2)
+
+		event.recipes.gtceu.lathe(`tfg:stripping_${x.wood}_wood`)
+			.itemInputs(`afc:wood/wood/${x.wood}`)
+			.itemOutputs(`${x.stripped_mod}:wood/stripped_wood/${x.stripped}`)
+			.duration(50)
+			.EUt(2)
+
+		event.custom({
+			type: 'vintageimprovements:polishing',
+			ingredients: [{ item: `afc:wood/log/${x.wood}` }],
+			results: [{ item: `${x.stripped_mod}:wood/stripped_log/${x.stripped}` }],
+			speed_limits: 0,
+			processingTime: 50
+		}).id(`tfg:vi/lathe/stripping_${x.wood}_log`)
+
+		event.custom({
+			type: 'vintageimprovements:polishing',
+			ingredients: [{ item: `afc:wood/wood/${x.wood}` }],
+			results: [{ item: `${x.stripped_mod}:wood/stripped_wood/${x.stripped}` }],
+			speed_limits: 0,
+			processingTime: 50
+		}).id(`tfg:vi/lathe/stripping_${x.wood}_wood`)
 	})
 }
