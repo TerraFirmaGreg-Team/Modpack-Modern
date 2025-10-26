@@ -260,11 +260,13 @@ function registerTFGFoodRecipes(event) {
 
 	global.TFC_CURDS_AND_CHEESES.forEach(item => {
 
-		processorRecipe(`${item.curd}_curd`, 1200, 16, {
-			itemOutputs: [item.curd],
-			fluidInputs: [Fluid.of(item.input_fluid, 1000)],
-			itemOutputProvider: TFC.isp.of(item.curd).resetFood()
-		})
+		// TODO: curds in a food processor always come out rotten
+
+		//processorRecipe(`${item.curd}_curd`, 1200, 16, {
+		//	itemOutputs: [item.curd],
+		//	fluidInputs: [Fluid.of(item.input_fluid, 1000)],
+		//	itemOutputProvider: TFC.isp.of(item.curd).resetFood()
+		//})
 
 		processorRecipe(`${item.cheese1}_cheese_wheel_1`, 8000, 16, {
 			itemInputs: [`3x ${item.curd}`],
