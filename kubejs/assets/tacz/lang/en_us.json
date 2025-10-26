@@ -14,5 +14,10 @@
   "create_armorer.attachment.extended_mag_ca_1.name": "Invar Magazine",
   "create_armorer.attachment.extended_mag_ca_2.name": "Copper Plated Magazine",
   "create_armorer.attachment.extended_mag_ca_3.name": "Brass Plated Magazine",
-  "create_armorer.ammo.rbapb.name": "Rimmed Blunt Ammo"
+  "create_armorer.ammo.rbapb.name": "Rimmed Blunt Ammo",
+  
+  "item.tacz.ammo_box.iron": "Steel Ammo Box",
+  "item.tacz.ammo_box.gold": "§9Magnalium Ammo Box",
+  "item.tacz.ammo_box.diamond": "§6Desh Ammo Box"
+  
 }

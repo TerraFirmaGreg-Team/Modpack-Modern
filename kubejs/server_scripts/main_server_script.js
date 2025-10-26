@@ -87,6 +87,7 @@ ServerEvents.tags('block', event => {
 	registerRailWaysBlockTags(event)
 	registerSophisticatedBackpacksBlockTags(event)
 	registerSpeciesBlockTags(event)
+	registerTACZBlockTags(event)
 	registerTFCBlockTags(event)
 	registerTFGBlockTags(event)
 	registerVintageImprovementsBlockTags(event)

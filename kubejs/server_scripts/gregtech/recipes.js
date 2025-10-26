@@ -355,7 +355,6 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('1x gtceu:light_concrete')
 		.duration(98)
 		.EUt(7)
-		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.recipes.gtceu.chemical_bath('gtceu:chemical_bath/dark_concrete')
 		.inputFluids(Fluid.of('tfc:black_dye', 18))
