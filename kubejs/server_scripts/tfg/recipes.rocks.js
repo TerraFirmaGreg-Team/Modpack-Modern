@@ -1143,7 +1143,6 @@ function registerTFGRockRecipes(event) {
 	]
 
 	PILLARS_H.forEach(x => {
-		console.log(x.pillar)
 		event.shaped(`2x ${x.pillar}`, [
 			'AA'
 		], {
