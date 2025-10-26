@@ -80,7 +80,7 @@ function registerTFGSpaceRecipes(event) {
 		.duration(2000)
 		.EUt(GTValues.VA[GTValues.EV])
 
-	// Aqueous accumulator
+	// Aqueous accumulator -- use adjacentFluids (plural) to avoid rhino ambiguous method issues
 	
 	let aaCircuit = 1;
 
@@ -88,14 +88,14 @@ function registerTFGSpaceRecipes(event) {
 		.circuit(aaCircuit++)
 		.duration(20)
 		.EUt(GTValues.VHA[GTValues.ULV])
-		['adjacentFluid(net.minecraft.world.level.material.Fluid[])']("minecraft:water")
+		.adjacentFluids(["minecraft:water"])
 		.outputFluids(Fluid.of("minecraft:water", 1000))
 		
 	event.recipes.gtceu.aqueous_accumulator('sea_water')
 		.circuit(aaCircuit++)
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])
-		['adjacentFluid(net.minecraft.world.level.material.Fluid[])']("tfc:salt_water")
+		.adjacentFluids(["tfc:salt_water"])
 		.outputFluids(Fluid.of("tfc:salt_water", 1000))
 		
 	event.recipes.gtceu.aqueous_accumulator('semiheavy_water_mars')
@@ -103,7 +103,7 @@ function registerTFGSpaceRecipes(event) {
 		.dimension('ad_astra:mars')
 		.duration(20)
 		.EUt(GTValues.VHA[GTValues.ULV])
-		['adjacentFluid(net.minecraft.world.level.material.Fluid[])']("tfg:semiheavy_ammoniacal_water")
+		.adjacentFluids(["tfg:semiheavy_ammoniacal_water"])
 		.outputFluids(Fluid.of("tfg:semiheavy_ammoniacal_water", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('lava_overworld')
@@ -111,7 +111,7 @@ function registerTFGSpaceRecipes(event) {
 		.dimension('minecraft:overworld')
 		.duration(20*15)
 		.EUt(GTValues.VHA[GTValues.HV])
-		['adjacentFluid(net.minecraft.world.level.material.Fluid[])']("minecraft:lava")
+		.adjacentFluids(["minecraft:lava"])
 		.outputFluids(Fluid.of("minecraft:lava", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('lava_nether')
@@ -119,7 +119,7 @@ function registerTFGSpaceRecipes(event) {
 		.dimension('minecraft:the_nether')
 		.duration(20*15)
 		.EUt(GTValues.VHA[GTValues.HV])
-		['adjacentFluid(net.minecraft.world.level.material.Fluid[])']("minecraft:lava")
+		.adjacentFluids(["minecraft:lava"])
 		.outputFluids(Fluid.of("minecraft:lava", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('spring_water')
@@ -127,14 +127,14 @@ function registerTFGSpaceRecipes(event) {
 		.dimension('minecraft:overworld')
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.LV])
-		['adjacentFluid(net.minecraft.world.level.material.Fluid[])']("tfc:spring_water")
+		.adjacentFluids(["tfc:spring_water"])
 		.outputFluids(Fluid.of("tfc:spring_water", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('more_water')
 		.circuit(aaCircuit++)
 		.duration(10)
 		.EUt(GTValues.VHA[GTValues.HV])
-		['adjacentFluid(net.minecraft.world.level.material.Fluid[])']("minecraft:water")
+		.adjacentFluids(["minecraft:water"])
 		.outputFluids(Fluid.of("minecraft:water", 20000))
 		
 
