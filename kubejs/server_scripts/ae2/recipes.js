@@ -17,10 +17,10 @@ const registerAE2Recipes = (event) => {
 		], mod: 'ae2'
 	});
 
-	event.remove( { output: 'ae2:fe_p2p_tunnel' } )
+	event.remove({ output: 'ae2:fe_p2p_tunnel' })
 
 	// Cutting knives (for renaming things)
-	event.shaped('ae2:certus_quartz_cutting_knife', [
+	event.recipes.gtceu.shaped('ae2:certus_quartz_cutting_knife', [
 		'  A',
 		'BA ',
 		'CCB',
@@ -30,7 +30,7 @@ const registerAE2Recipes = (event) => {
 		C: '#forge:exquisite_gems/certus_quartz',
 	}).id('tfg:crafting/certus_quartz_cutting_knife')
 
-	event.shaped('ae2:nether_quartz_cutting_knife', [
+	event.recipes.gtceu.shaped('ae2:nether_quartz_cutting_knife', [
 		'  A',
 		'BA ',
 		'CCB',
@@ -41,7 +41,7 @@ const registerAE2Recipes = (event) => {
 	}).id('tfg:crafting/nether_quartz_cutting_knife')
 
 	// Network tool
-	event.shaped('ae2:network_tool', [
+	event.recipes.gtceu.shaped('ae2:network_tool', [
 		'AB',
 		'CD',
 	], {
@@ -52,7 +52,7 @@ const registerAE2Recipes = (event) => {
 	}).id('tfg:crafting/network_tool')
 
 	// Wireless Access Point
-	event.shaped('ae2:wireless_access_point', [
+	event.recipes.gtceu.shaped('ae2:wireless_access_point', [
 		'A',
 		'B',
 		'C'
@@ -60,10 +60,10 @@ const registerAE2Recipes = (event) => {
 		A: 'ae2:wireless_receiver',
 		B: 'ae2:calculation_processor',
 		C: '#ae2:glass_cable',
-	}).id('tfg:crafting/wireless_access_point')
+	}).addMaterialInfo().id('tfg:crafting/wireless_access_point')
 
 	// Wireless Receiver
-	event.shaped('ae2:wireless_receiver', [
+	event.recipes.gtceu.shaped('ae2:wireless_receiver', [
 		'ABA',
 		'CDC',
 		'AEA'
@@ -73,10 +73,10 @@ const registerAE2Recipes = (event) => {
 		C: 'gtceu:ev_sensor',
 		D: '#forge:rods/titanium',
 		E: '#gtceu:circuits/ev'
-	}).id('tfg:crafting/wireless_receiver')
+	}).addMaterialInfo().id('tfg:crafting/wireless_receiver')
 
 	// Illuminated Panel
-	event.shaped('ae2:semi_dark_monitor', [
+	event.recipes.gtceu.shaped('ae2:semi_dark_monitor', [
 		' AD',
 		'BCD',
 		' AD'
@@ -85,10 +85,10 @@ const registerAE2Recipes = (event) => {
 		B: '#forge:plates/aluminium',
 		C: '#forge:plates/red_alloy',
 		D: 'ae2:quartz_glass'
-	}).id('tfg:crafting/semi_dark_monitor')
+	}).addMaterialInfo().id('tfg:crafting/semi_dark_monitor')
 
 	// Toggle Bus
-	event.shaped('ae2:toggle_bus', [
+	event.recipes.gtceu.shaped('ae2:toggle_bus', [
 		' A ',
 		'BCB',
 		' A '
@@ -96,40 +96,40 @@ const registerAE2Recipes = (event) => {
 		A: '#forge:plates/red_alloy',
 		B: '#ae2:glass_cable',
 		C: 'minecraft:lever'
-	}).id('tfg:crafting/toggle_bus')
+	}).addMaterialInfo().id('tfg:crafting/toggle_bus')
 
 	// Capacity Card
-	event.shaped('ae2:capacity_card', [
+	event.recipes.gtceu.shaped('ae2:capacity_card', [
 		'AB',
 		'BC',
 	], {
 		A: 'ae2:basic_card',
 		B: 'ae2:cell_component_1k',
 		C: '#forge:gems/certus_quartz'
-	}).id('tfg:crafting/capacity_card')
+	}).addMaterialInfo().id('tfg:crafting/capacity_card')
 
 	// Crafting Card
-	event.shaped('ae2:crafting_card', [
+	event.recipes.gtceu.shaped('ae2:crafting_card', [
 		'AB',
 		'BC',
 	], {
 		A: 'ae2:basic_card',
 		B: 'ae2:cell_component_1k',
 		C: '#tfc:workbenches'
-	}).id('tfg:crafting/crafting_card')
+	}).addMaterialInfo().id('tfg:crafting/crafting_card')
 
 	// Redstone Card
-	event.shaped('ae2:redstone_card', [
+	event.recipes.gtceu.shaped('ae2:redstone_card', [
 		'AB',
 		'BC'
 	], {
 		A: 'ae2:basic_card',
 		B: 'minecraft:redstone_torch',
 		C: 'ae2:calculation_processor'
-	}).id('tfg:crafting/redstone_card')
+	}).addMaterialInfo().id('tfg:crafting/redstone_card')
 
 	// Fuzzy Card
-	event.shaped('ae2:fuzzy_card', [
+	event.recipes.gtceu.shaped('ae2:fuzzy_card', [
 		'AB',
 		'CD',
 	], {
@@ -137,20 +137,20 @@ const registerAE2Recipes = (event) => {
 		B: 'ae2:engineering_processor',
 		C: 'ae2:logic_processor',
 		D: 'ae2:calculation_processor'
-	}).id('tfg:crafting/fuzzy_card')
+	}).addMaterialInfo().id('tfg:crafting/fuzzy_card')
 
 	// Inverter Card
-	event.shaped('ae2:inverter_card', [
+	event.recipes.gtceu.shaped('ae2:inverter_card', [
 		'AB',
 		'BC',
 	], {
 		A: 'ae2:advanced_card',
 		B: 'ae2:inverted_toggle_bus',
 		C: 'ae2:calculation_processor'
-	}).id('tfg:crafting/inverter_card')
+	}).addMaterialInfo().id('tfg:crafting/inverter_card')
 
 	// Acceleration Card
-	event.shaped('ae2:speed_card', [
+	event.recipes.gtceu.shaped('ae2:speed_card', [
 		'AB',
 		'CD',
 	], {
@@ -158,17 +158,17 @@ const registerAE2Recipes = (event) => {
 		B: 'ae2:engineering_processor',
 		C: 'ae2:logic_processor',
 		D: '#forge:gems/fluix'
-	}).id('tfg:crafting/speed_card')
+	}).addMaterialInfo().id('tfg:crafting/speed_card')
 
 	//Auto Crafting Card
-	event.shaped('ae2:auto_complete_card', [
+	event.recipes.gtceu.shaped('ae2:auto_complete_card', [
 		'AB',
 		'BC'
 	], {
 		A: 'ae2:advanced_card',
 		B: 'ae2:engineering_processor',
 		C: 'ae2:calculation_processor'
-	}).id('tfg:crafting/auto_complete_card')
+	}).addMaterialInfo().id('tfg:crafting/auto_complete_card')
 
 	// Void Card
 	event.shapeless('ae2:void_card', ['ae2:basic_card', 'ae2:calculation_processor'])
@@ -195,7 +195,7 @@ const registerAE2Recipes = (event) => {
 	]).id('tfg:crafting/light_detector')
 
 	// Wireless Terminal
-	event.shaped('ae2:wireless_terminal', [
+	event.recipes.gtceu.shaped('ae2:wireless_terminal', [
 		'ABA',
 		'CDC',
 		'FEF'
@@ -206,10 +206,10 @@ const registerAE2Recipes = (event) => {
 		D: '#gtceu:circuits/hv',
 		E: '#gtceu:batteries/hv',
 		F: '#forge:plates/certus_quartz'
-	}).id('tfg:crafting/wireless_terminal')
+	}).addMaterialInfo().id('tfg:crafting/wireless_terminal')
 
 	// Basic Card
-	event.shaped('2x ae2:basic_card', [
+	event.recipes.gtceu.shaped('2x ae2:basic_card', [
 		'AB ',
 		'CDB',
 		'EB '
@@ -219,10 +219,10 @@ const registerAE2Recipes = (event) => {
 		C: 'ae2:calculation_processor',
 		D: '#gtceu:circuits/mv',
 		E: '#forge:fine_wires/gold'
-	}).id('tfg:crafting/basic_card')
+	}).addMaterialInfo().id('tfg:crafting/basic_card')
 
 	// Advanced Card
-	event.shaped('2x ae2:advanced_card', [
+	event.recipes.gtceu.shaped('2x ae2:advanced_card', [
 		'AB ',
 		'CDB',
 		'EB '
@@ -232,10 +232,10 @@ const registerAE2Recipes = (event) => {
 		C: 'ae2:calculation_processor',
 		D: '#gtceu:circuits/hv',
 		E: '#forge:fine_wires/silver'
-	}).id('tfg:crafting/advanced_card')
+	}).addMaterialInfo().id('tfg:crafting/advanced_card')
 
 	// Wireless Booster
-	event.shaped('ae2:wireless_booster', [
+	event.recipes.gtceu.shaped('ae2:wireless_booster', [
 		'ABC',
 		'DDD',
 	], {
@@ -243,20 +243,20 @@ const registerAE2Recipes = (event) => {
 		B: '#forge:gems/certus_quartz',
 		C: '#forge:plates/ender_pearl',
 		D: '#forge:plates/titanium',
-	}).id('tfg:crafting/wireless_booster')
+	}).addMaterialInfo().id('tfg:crafting/wireless_booster')
 
-    event.shaped('ae2:wireless_booster', [
-        'ABC',
-        'DDD',
-    ], {
-        A: '#forge:dusts/fluix',
-        B: '#forge:gems/certus_quartz',
-        C: '#forge:plates/ender_pearl',
-        D: 'minecraft:shulker_shell',
-    }).id('tfg:crafting/wireless_booster_shulker')
+	event.recipes.gtceu.shaped('ae2:wireless_booster', [
+		'ABC',
+		'DDD',
+	], {
+		A: '#forge:dusts/fluix',
+		B: '#forge:gems/certus_quartz',
+		C: '#forge:plates/ender_pearl',
+		D: 'minecraft:shulker_shell',
+	}).id('tfg:crafting/wireless_booster_shulker')
 
 	// Memory Card
-	event.shaped('ae2:memory_card', [
+	event.recipes.gtceu.shaped('ae2:memory_card', [
 		'ABB',
 		'CDC',
 	], {
@@ -264,10 +264,10 @@ const registerAE2Recipes = (event) => {
 		B: '#forge:plates/wrought_iron',
 		C: '#forge:plates/gold',
 		D: '#forge:plates/red_alloy',
-	}).id('tfg:crafting/memory_card')
+	}).addMaterialInfo().id('tfg:crafting/memory_card')
 
 	// Item Cell Housing
-	event.shaped('ae2:item_cell_housing', [
+	event.recipes.gtceu.shaped('ae2:item_cell_housing', [
 		'ABA',
 		'CDC',
 		'BBB'
@@ -276,10 +276,10 @@ const registerAE2Recipes = (event) => {
 		B: '#forge:plates/steel',
 		C: '#forge:fine_wires/red_alloy',
 		D: '#gtceu:circuits/lv',
-	}).id('tfg:crafting/item_cell_housing')
+	}).addMaterialInfo().id('tfg:crafting/item_cell_housing')
 
 	// Fluid Cell Housing
-	event.shaped('ae2:fluid_cell_housing', [
+	event.recipes.gtceu.shaped('ae2:fluid_cell_housing', [
 		'ABA',
 		'CDC',
 		'BBB'
@@ -288,10 +288,10 @@ const registerAE2Recipes = (event) => {
 		B: '#forge:plates/stainless_steel',
 		C: '#forge:fine_wires/red_alloy',
 		D: '#gtceu:circuits/lv',
-	}).id('tfg:crafting/fluid_cell_housing')
+	}).addMaterialInfo().id('tfg:crafting/fluid_cell_housing')
 
 	// Level Emitter
-	event.shaped('ae2:level_emitter', [
+	event.recipes.gtceu.shaped('ae2:level_emitter', [
 		'DA ',
 		'BCB',
 		' A '
@@ -300,10 +300,10 @@ const registerAE2Recipes = (event) => {
 		B: '#ae2:glass_cable',
 		C: 'minecraft:redstone_torch',
 		D: 'ae2:calculation_processor',
-	}).id('tfg:crafting/level_emitter')
+	}).addMaterialInfo().id('tfg:crafting/level_emitter')
 
 	// Energy Level Emitter
-	event.shaped('ae2:energy_level_emitter', [
+	event.recipes.gtceu.shaped('ae2:energy_level_emitter', [
 		'DAE',
 		'BCB',
 		' A '
@@ -313,10 +313,10 @@ const registerAE2Recipes = (event) => {
 		C: 'minecraft:redstone_torch',
 		D: 'ae2:calculation_processor',
 		E: 'ae2:charged_certus_quartz_crystal'
-	}).id('tfg:crafting/energy_level_emitter')
+	}).addMaterialInfo().id('tfg:crafting/energy_level_emitter')
 
 	// P2P Tunnel
-	event.shaped('2x ae2:me_p2p_tunnel', [
+	event.recipes.gtceu.shaped('2x ae2:me_p2p_tunnel', [
 		'ABA',
 		'BCB',
 		'DDD'
@@ -325,10 +325,10 @@ const registerAE2Recipes = (event) => {
 		B: '#forge:plates/aluminium',
 		C: '#ae2:illuminated_panel',
 		D: '#forge:gems/fluix',
-	}).id('tfg:crafting/me_p2p_tunnel')
+	}).addMaterialInfo().id('tfg:crafting/me_p2p_tunnel')
 
 	// ME Chest
-	event.shaped('ae2:chest', [
+	event.recipes.gtceu.shaped('ae2:chest', [
 		'AEA',
 		'CDC',
 		'ABA'
@@ -338,47 +338,47 @@ const registerAE2Recipes = (event) => {
 		C: '#ae2:glass_cable',
 		D: 'gtceu:aluminium_crate',
 		E: 'ae2:terminal'
-	}).id('tfg:crafting/me_chest')
+	}).addMaterialInfo().id('tfg:crafting/me_chest')
 
-    // ME Drive
-    event.shaped('ae2:drive', [
-        'ABA',
-        'CDC',
-        'EBE'
-    ], {
-        A: '#forge:plates/steel',
-        B: 'ae2:engineering_processor',
-        C: '#ae2:glass_cable',
-        D: '#gtceu:circuits/mv',
-        E: '#forge:plates/titanium'
-    }).id('tfg:crafting/drive')
+	// ME Drive
+	event.recipes.gtceu.shaped('ae2:drive', [
+		'ABA',
+		'CDC',
+		'EBE'
+	], {
+		A: '#forge:plates/steel',
+		B: 'ae2:engineering_processor',
+		C: '#ae2:glass_cable',
+		D: '#gtceu:circuits/mv',
+		E: '#forge:plates/titanium'
+	}).addMaterialInfo().id('tfg:crafting/drive')
 
-    event.shaped('ae2:drive', [
-        'ABA',
-        'CDC',
-        'EBE'
-    ], {
-        A: '#forge:plates/steel',
-        B: 'ae2:engineering_processor',
-        C: '#ae2:glass_cable',
-        D: '#gtceu:circuits/mv',
-        E: 'minecraft:shulker_shell'
-    }).id('tfg:crafting/drive_shulker')
+	event.recipes.gtceu.shaped('ae2:drive', [
+		'ABA',
+		'CDC',
+		'EBE'
+	], {
+		A: '#forge:plates/steel',
+		B: 'ae2:engineering_processor',
+		C: '#ae2:glass_cable',
+		D: '#gtceu:circuits/mv',
+		E: 'minecraft:shulker_shell'
+	}).id('tfg:crafting/drive_shulker')
 
-    // Spatial Pylon
-    event.shaped('ae2:spatial_pylon', [
-        'ABA',
-        'CDC',
-        'ABA'
-    ], {
-        A: '#forge:plates/glass',
-        B: '#ae2:glass_cable',
-        C: '#forge:dusts/fluix',
-        D: '#forge:gems/fluix',
-    }).id('tfg:crafting/spatial_pylon')
+	// Spatial Pylon
+	event.recipes.gtceu.shaped('ae2:spatial_pylon', [
+		'ABA',
+		'CDC',
+		'ABA'
+	], {
+		A: '#forge:plates/glass',
+		B: '#ae2:glass_cable',
+		C: '#forge:dusts/fluix',
+		D: '#forge:gems/fluix',
+	}).addMaterialInfo().id('tfg:crafting/spatial_pylon')
 
 	// IO Port
-	event.shaped('ae2:io_port', [
+	event.recipes.gtceu.shaped('ae2:io_port', [
 		'AAA',
 		'BCB',
 		'DED'
@@ -388,57 +388,57 @@ const registerAE2Recipes = (event) => {
 		C: '#ae2:glass_cable',
 		D: '#forge:plates/titanium',
 		E: 'ae2:engineering_processor'
-	}).id('tfg:crafting/io_port')
+	}).addMaterialInfo().id('tfg:crafting/io_port')
 
-    event.shaped('ae2:io_port', [
-        'AAA',
-        'BCB',
-        'DED'
-    ], {
-        A: '#forge:plates/glass',
-        B: 'ae2:drive',
-        C: '#ae2:glass_cable',
-        D: 'minecraft:shulker_shell',
-        E: 'ae2:engineering_processor'
-    }).id('tfg:crafting/io_port_shulker')
+	event.recipes.gtceu.shaped('ae2:io_port', [
+		'AAA',
+		'BCB',
+		'DED'
+	], {
+		A: '#forge:plates/glass',
+		B: 'ae2:drive',
+		C: '#ae2:glass_cable',
+		D: 'minecraft:shulker_shell',
+		E: 'ae2:engineering_processor'
+	}).id('tfg:crafting/io_port_shulker')
 
-    // Spatial IO Port
-    event.shaped('ae2:spatial_io_port', [
-        'AAA',
-        'BCB',
-        'DED'
-    ], {
-        A: '#forge:plates/glass',
-        B: '#ae2:glass_cable',
-        C: 'ae2:io_port',
-        D: '#forge:plates/titanium',
-        E: 'ae2:engineering_processor'
-    }).id('tfg:crafting/spatial_io_port')
+	// Spatial IO Port
+	event.recipes.gtceu.shaped('ae2:spatial_io_port', [
+		'AAA',
+		'BCB',
+		'DED'
+	], {
+		A: '#forge:plates/glass',
+		B: '#ae2:glass_cable',
+		C: 'ae2:io_port',
+		D: '#forge:plates/titanium',
+		E: 'ae2:engineering_processor'
+	}).addMaterialInfo().id('tfg:crafting/spatial_io_port')
 
-    event.shaped('ae2:spatial_io_port', [
-        'AAA',
-        'BCB',
-        'DED'
-    ], {
-        A: '#forge:plates/glass',
-        B: '#ae2:glass_cable',
-        C: 'ae2:io_port',
-        D: 'minecraft:shulker_shell',
-        E: 'ae2:engineering_processor'
-    }).id('tfg:crafting/spatial_io_port_shulker')
+	event.recipes.gtceu.shaped('ae2:spatial_io_port', [
+		'AAA',
+		'BCB',
+		'DED'
+	], {
+		A: '#forge:plates/glass',
+		B: '#ae2:glass_cable',
+		C: 'ae2:io_port',
+		D: 'minecraft:shulker_shell',
+		E: 'ae2:engineering_processor'
+	}).id('tfg:crafting/spatial_io_port_shulker')
 
-    // Monitors
-    event.shapeless('ae2:semi_dark_monitor', ['ae2:dark_monitor'])
-        .id('tfg:crafting/semi_dark_monitor_2')
-    
-    event.shapeless('ae2:dark_monitor', ['ae2:monitor'])
-        .id('tfg:crafting/dark_monitor')
-    
-    event.shapeless('ae2:monitor', ['ae2:semi_dark_monitor'])
-        .id('tfg:crafting/monitor')
+	// Monitors
+	event.shapeless('ae2:semi_dark_monitor', ['ae2:dark_monitor'])
+		.id('tfg:crafting/semi_dark_monitor_2')
+
+	event.shapeless('ae2:dark_monitor', ['ae2:monitor'])
+		.id('tfg:crafting/dark_monitor')
+
+	event.shapeless('ae2:monitor', ['ae2:semi_dark_monitor'])
+		.id('tfg:crafting/monitor')
 
 	// Cell Workbench
-	event.shaped('ae2:cell_workbench', [
+	event.recipes.gtceu.shaped('ae2:cell_workbench', [
 		'ABC',
 		'DED',
 		'DDD'
@@ -448,10 +448,10 @@ const registerAE2Recipes = (event) => {
 		C: 'gtceu:fluid_filter',
 		D: '#forge:plates/aluminium',
 		E: 'ae2:calculation_processor',
-	}).id('tfg:crafting/cell_workbench')
+	}).addMaterialInfo().id('tfg:crafting/cell_workbench')
 
 	// Matter Condenser
-	event.shaped('ae2:condenser', [
+	event.recipes.gtceu.shaped('ae2:condenser', [
 		'ABA',
 		'BCB',
 		'ABA'
@@ -459,7 +459,7 @@ const registerAE2Recipes = (event) => {
 		A: '#forge:plates/stainless_steel',
 		B: 'gtceu:hv_electric_piston',
 		C: '#gtceu:circuits/hv',
-	}).id('tfg:crafting/condenser')
+	}).addMaterialInfo().id('tfg:crafting/condenser')
 
 	// Toggle Bus
 	event.shapeless('ae2:toggle_bus', ['ae2:inverted_toggle_bus'])
@@ -469,27 +469,27 @@ const registerAE2Recipes = (event) => {
 		.id('tfg:crafting/inverted_toggle_bus')
 
 	// ME Annihilation Plane
-	event.shaped('ae2:annihilation_plane', [
+	event.recipes.gtceu.shaped('ae2:annihilation_plane', [
 		'AAA',
 		'CBC'
 	], {
 		A: '#forge:gems/fluix',
 		B: 'ae2:annihilation_core',
 		C: '#forge:plates/aluminium'
-	}).id('tfg:crafting/annihilation_plane')
+	}).addMaterialInfo().id('tfg:crafting/annihilation_plane')
 
 	// ME Formation Plane
-	event.shaped('ae2:formation_plane', [
+	event.recipes.gtceu.shaped('ae2:formation_plane', [
 		'AAA',
 		'CBC'
 	], {
 		A: '#forge:gems/fluix',
 		B: 'ae2:formation_core',
 		C: '#forge:plates/aluminium'
-	}).id('tfg:crafting/formation_plane')
+	}).addMaterialInfo().id('tfg:crafting/formation_plane')
 
 	// ME Terminal
-	event.shaped('ae2:terminal', [
+	event.recipes.gtceu.shaped('ae2:terminal', [
 		'ABC',
 		'DED',
 		'FGF'
@@ -503,19 +503,20 @@ const registerAE2Recipes = (event) => {
 		G: '#forge:screws/steel'
 	}).id('tfg:crafting/terminal')
 
-    event.recipes.gtceu.assembler('assembler:ae2_terminal')
-    .itemInputs(
-        '#ae2:illuminated_panel',
-        '2x #forge:rods/steel',
-        '#gtceu:circuits/hv',
-		'2x #forge:plates/steel',
-		'#forge:screws/steel')
-    .itemOutputs('ae2:terminal')
-    .duration(100)
-    .EUt(GTValues.VA[GTValues.LV])
+	event.recipes.gtceu.assembler('assembler:ae2_terminal')
+		.itemInputs(
+			'#ae2:illuminated_panel',
+			'2x #forge:rods/steel',
+			'#gtceu:circuits/hv',
+			'2x #forge:plates/steel',
+			'#forge:screws/steel')
+		.itemOutputs('ae2:terminal')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true)
 
 	// ME Crafting Terminal
-	event.shaped('ae2:crafting_terminal', [
+	event.recipes.gtceu.shaped('ae2:crafting_terminal', [
 		'ABC',
 		'DED',
 		'FGF'
@@ -529,19 +530,20 @@ const registerAE2Recipes = (event) => {
 		G: 'ae2:engineering_processor'
 	}).id('tfg:crafting/crafting_terminal')
 
-    event.recipes.gtceu.assembler('assembler:ae2_crafting_terminal')
-    .itemInputs(
-        'ae2:terminal',
-        '2x #forge:rods/steel',
-        'ae2:engineering_processor',
-		'2x #forge:plates/steel',
-		'#tfc:workbenches')
-    .itemOutputs('ae2:crafting_terminal')
-    .duration(100)
-    .EUt(GTValues.VA[GTValues.LV])
+	event.recipes.gtceu.assembler('assembler:ae2_crafting_terminal')
+		.itemInputs(
+			'ae2:terminal',
+			'2x #forge:rods/steel',
+			'ae2:engineering_processor',
+			'2x #forge:plates/steel',
+			'#tfc:workbenches')
+		.itemOutputs('ae2:crafting_terminal')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true)
 
 	// pattern access terminal
-	event.shaped('ae2:pattern_access_terminal', [
+	event.recipes.gtceu.shaped('ae2:pattern_access_terminal', [
 		'ABC',
 		'DED',
 		'FGF'
@@ -555,19 +557,20 @@ const registerAE2Recipes = (event) => {
 		G: 'ae2:engineering_processor'
 	}).id('tfg:crafting/pattern_access_terminal')
 
-    event.recipes.gtceu.assembler('assembler:ae2_pattern_access_terminal')
-    .itemInputs(
-        'ae2:terminal',
-        '2x #forge:rods/steel',
-        'ae2:engineering_processor',
-		'2x #forge:plates/steel',
-		'#ae2:pattern_provider')
-    .itemOutputs('ae2:pattern_access_terminal')
-    .duration(100)
-    .EUt(GTValues.VA[GTValues.LV])
+	event.recipes.gtceu.assembler('assembler:ae2_pattern_access_terminal')
+		.itemInputs(
+			'ae2:terminal',
+			'2x #forge:rods/steel',
+			'ae2:engineering_processor',
+			'2x #forge:plates/steel',
+			'#ae2:pattern_provider')
+		.itemOutputs('ae2:pattern_access_terminal')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true)
 
 	// ME Pattern Terminal
-	event.shaped('ae2:pattern_encoding_terminal', [
+	event.recipes.gtceu.shaped('ae2:pattern_encoding_terminal', [
 		'ABC',
 		'DED',
 		'FGF'
@@ -581,19 +584,20 @@ const registerAE2Recipes = (event) => {
 		G: 'ae2:engineering_processor'
 	}).id('tfg:crafting/pattern_encoding_terminal')
 
-    event.recipes.gtceu.assembler('assembler:ae2_pattern_encoding_terminal')
-    .itemInputs(
-        'ae2:terminal',
-        '2x #forge:rods/steel',
-        'ae2:engineering_processor',
-		'2x #forge:plates/steel',
-		'ae2:blank_pattern')
-    .itemOutputs('ae2:pattern_encoding_terminal')
-    .duration(100)
-    .EUt(GTValues.VA[GTValues.LV])
+	event.recipes.gtceu.assembler('assembler:ae2_pattern_encoding_terminal')
+		.itemInputs(
+			'ae2:terminal',
+			'2x #forge:rods/steel',
+			'ae2:engineering_processor',
+			'2x #forge:plates/steel',
+			'ae2:blank_pattern')
+		.itemOutputs('ae2:pattern_encoding_terminal')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true)
 
 	// Matter Cannon
-	event.shaped('ae2:matter_cannon', [
+	event.recipes.gtceu.shaped('ae2:matter_cannon', [
 		'AAB',
 		'CD ',
 		'A  '
@@ -602,10 +606,10 @@ const registerAE2Recipes = (event) => {
 		B: 'ae2:formation_core',
 		C: 'ae2:cell_component_4k',
 		D: 'gtceu:hv_lithium_battery'
-	}).id('tfg:crafting/matter_cannon')
+	}).addMaterialInfo().id('tfg:crafting/matter_cannon')
 
 	// Color Applicator
-	event.shaped('ae2:color_applicator', [
+	event.recipes.gtceu.shaped('ae2:color_applicator', [
 		'ABA',
 		'CDC',
 		' E '
@@ -615,7 +619,7 @@ const registerAE2Recipes = (event) => {
 		C: 'ae2:cell_component_4k',
 		D: 'gtceu:hv_lithium_battery',
 		E: '#forge:rods/steel',
-	}).id('tfg:crafting/color_applicator')
+	}).addMaterialInfo().id('tfg:crafting/color_applicator')
 
 	// Energy Cell
 	event.recipes.gtceu.assembler('tfg:ae2/energy_cell')
@@ -624,6 +628,7 @@ const registerAE2Recipes = (event) => {
 		.circuit(1)
 		.duration(960)
 		.EUt(256)
+		.addMaterialInfo(true)
 
 	// Dense Energy Cell
 	event.recipes.gtceu.assembler('tfg:ae2/dense_energy_cell')
@@ -632,6 +637,7 @@ const registerAE2Recipes = (event) => {
 		.circuit(1)
 		.duration(960)
 		.EUt(512)
+		.addMaterialInfo(true)
 
 	// Energy Acceptor
 	event.recipes.gtceu.assembler('tfg:ae2/energy_acceptor')
@@ -640,6 +646,7 @@ const registerAE2Recipes = (event) => {
 		.circuit(1)
 		.duration(520)
 		.EUt(128)
+		.addMaterialInfo(true)
 
 	// Glass Cable
 	event.recipes.gtceu.assembler('fluix_glass_cable')
@@ -652,6 +659,7 @@ const registerAE2Recipes = (event) => {
 		.circuit(1)
 		.duration(20)
 		.EUt(480)
+		.addMaterialInfo(true)
 
 	// Covered Cable
 	event.recipes.gtceu.assembler('fluix_covered_cable_rubber')
@@ -666,7 +674,7 @@ const registerAE2Recipes = (event) => {
 	event.recipes.gtceu.assembler('fluix_covered_cable_silicone_rubber')
 		.itemInputs(
 			'ae2:fluix_glass_cable')
-		.inputFluids(Fluid.of('gtceu:silicone_rubber', 144/2))
+		.inputFluids(Fluid.of('gtceu:silicone_rubber', 144 / 2))
 		.itemOutputs('ae2:fluix_covered_cable')
 		.circuit(2)
 		.duration(10)
@@ -675,7 +683,7 @@ const registerAE2Recipes = (event) => {
 	event.recipes.gtceu.assembler('fluix_covered_cable_styrene_butadiene_rubber')
 		.itemInputs(
 			'4x ae2:fluix_glass_cable')
-		.inputFluids(Fluid.of('gtceu:styrene_butadiene_rubber', 144/4))
+		.inputFluids(Fluid.of('gtceu:styrene_butadiene_rubber', 144 / 4))
 		.itemOutputs('4x ae2:fluix_covered_cable')
 		.circuit(2)
 		.duration(10)
@@ -689,7 +697,7 @@ const registerAE2Recipes = (event) => {
 			'#forge:fine_wires/borosilicate_glass',
 			'#forge:small_dusts/fluix',
 			'#forge:dusts/redstone')
-		.inputFluids(Fluid.of('gtceu:rubber', 144*4))
+		.inputFluids(Fluid.of('gtceu:rubber', 144 * 4))
 		.itemOutputs('4x ae2:fluix_smart_cable')
 		.circuit(2)
 		.duration(10)
@@ -702,7 +710,7 @@ const registerAE2Recipes = (event) => {
 			'#forge:fine_wires/borosilicate_glass',
 			'#forge:small_dusts/fluix',
 			'#forge:dusts/redstone')
-		.inputFluids(Fluid.of('gtceu:silicone_rubber', 144*2))
+		.inputFluids(Fluid.of('gtceu:silicone_rubber', 144 * 2))
 		.itemOutputs('4x ae2:fluix_smart_cable')
 		.circuit(2)
 		.duration(10)
@@ -723,32 +731,32 @@ const registerAE2Recipes = (event) => {
 
 	// Covered dense cable
 
-global.MINECRAFT_DYE_NAMES.forEach(dye => {
-        event.recipes.gtceu.packer(`${dye}_covered_pack`)
-            .itemInputs(`4x ae2:${dye}_covered_cable`)
-            .itemOutputs(`ae2:${dye}_covered_dense_cable`)
-            .duration(20)
-            .EUt(GTValues.VA[GTValues.LV])
+	global.MINECRAFT_DYE_NAMES.forEach(dye => {
+		event.recipes.gtceu.packer(`${dye}_covered_pack`)
+			.itemInputs(`4x ae2:${dye}_covered_cable`)
+			.itemOutputs(`ae2:${dye}_covered_dense_cable`)
+			.duration(20)
+			.EUt(GTValues.VA[GTValues.LV])
 
-        event.recipes.gtceu.packer(`${dye}_covered_unpack`)
-            .itemInputs(`ae2:${dye}_covered_dense_cable`)
-            .itemOutputs(`4x ae2:${dye}_covered_cable`)
-            .duration(20)
-            .EUt(GTValues.VA[GTValues.LV])
+		event.recipes.gtceu.packer(`${dye}_covered_unpack`)
+			.itemInputs(`ae2:${dye}_covered_dense_cable`)
+			.itemOutputs(`4x ae2:${dye}_covered_cable`)
+			.duration(20)
+			.EUt(GTValues.VA[GTValues.LV])
 
-        event.recipes.gtceu.packer(`${dye}_smart_pack`)
-            .itemInputs(`4x ae2:${dye}_smart_cable`)
-            .itemOutputs(`ae2:${dye}_smart_dense_cable`)
-            .duration(20)
-            .EUt(GTValues.VA[GTValues.LV])
+		event.recipes.gtceu.packer(`${dye}_smart_pack`)
+			.itemInputs(`4x ae2:${dye}_smart_cable`)
+			.itemOutputs(`ae2:${dye}_smart_dense_cable`)
+			.duration(20)
+			.EUt(GTValues.VA[GTValues.LV])
 
-        event.recipes.gtceu.packer(`${dye}_smart_unpack`)
-            .itemInputs(`ae2:${dye}_smart_dense_cable`)
-            .itemOutputs(`4x ae2:${dye}_smart_cable`)
-            .duration(20)
-            .EUt(GTValues.VA[GTValues.LV])
+		event.recipes.gtceu.packer(`${dye}_smart_unpack`)
+			.itemInputs(`ae2:${dye}_smart_dense_cable`)
+			.itemOutputs(`4x ae2:${dye}_smart_cable`)
+			.duration(20)
+			.EUt(GTValues.VA[GTValues.LV])
 
-		})
+	})
 
 	event.recipes.gtceu.packer('pack_fluix_covered_dense_cable')
 		.itemInputs('4x ae2:fluix_covered_cable')
@@ -819,7 +827,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 
 	// Pattern box
 
-	event.shaped('ae2:pattern_box', [
+	event.recipes.gtceu.shaped('ae2:pattern_box', [
 		'ABA',
 		'CAC'
 	], {
@@ -853,6 +861,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
+		.addMaterialInfo(true)
 
 	// Formation Core
 
@@ -866,7 +875,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.circuit(5)
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.MV])
-		.cleanroom(CleanroomType.CLEANROOM)	
+		.cleanroom(CleanroomType.CLEANROOM)
 
 	event.recipes.gtceu.assembler('ae2:formation_core_moon')
 		.itemInputs(
@@ -879,6 +888,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
+		.addMaterialInfo(true)
 
 	// Wireless Crafting Terminal
 	event.recipes.gtceu.assembler('ae2:wireless_crafting_terminal')
@@ -891,7 +901,8 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'ae2:crafting_terminal')
 		.itemOutputs('ae2:wireless_crafting_terminal')
 		.duration(300)
-        .EUt(GTValues.VA[GTValues.EV])
+		.EUt(GTValues.VA[GTValues.EV])
+		.addMaterialInfo(true)
 
 	//#region Storage Components
 
@@ -905,73 +916,73 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.inputFluids(Fluid.of('tfg:fluix', 288))
 		.itemOutputs('ae2:cell_component_1k')
 		.duration(200)
-        .EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.MV])
 
-    // 4k storage components
+	// 4k storage components
 
-    event.recipes.gtceu.assembler('ae2:cell_component_4k_1k')
-        .itemInputs(
- 			'2x #gtceu:circuits/ev',
+	event.recipes.gtceu.assembler('ae2:cell_component_4k_1k')
+		.itemInputs(
+			'2x #gtceu:circuits/ev',
 			'8x gtceu:cpu_chip',
 			'4x #forge:foils/polyethylene',
 			'4x ae2:logic_processor',
-            '3x ae2:cell_component_1k')
-        .inputFluids(Fluid.of('tfg:fluix', 288))
-        .itemOutputs('ae2:cell_component_4k')
-        .duration(400)
+			'3x ae2:cell_component_1k')
+		.inputFluids(Fluid.of('tfg:fluix', 288))
+		.itemOutputs('ae2:cell_component_4k')
+		.duration(400)
 		.circuit(2)
-        .EUt(GTValues.VA[GTValues.HV])
-        .cleanroom(CleanroomType.CLEANROOM)
+		.EUt(GTValues.VA[GTValues.HV])
+		.cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.assembler('ae2:cell_component_4k')
-        .itemInputs(
- 			'2x #gtceu:circuits/hv',
+	event.recipes.gtceu.assembler('ae2:cell_component_4k')
+		.itemInputs(
+			'2x #gtceu:circuits/hv',
 			'8x gtceu:cpu_chip',
 			'4x #forge:foils/polyethylene',
 			'4x ae2:logic_processor',
-            '2x ae2:cell_component_1k')
-        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 288))
-        .itemOutputs('ae2:cell_component_4k')
-        .duration(200)
+			'2x ae2:cell_component_1k')
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 288))
+		.itemOutputs('ae2:cell_component_4k')
+		.duration(200)
 		.circuit(1)
-        .EUt(GTValues.VA[GTValues.MV])
-        .dimension('ad_astra:moon')
+		.EUt(GTValues.VA[GTValues.MV])
+		.dimension('ad_astra:moon')
 
 	// 16k storage components
 
 	event.recipes.gtceu.assembler('ae2:cell_component_16k_4k')
 		.itemInputs(
- 			'2x #gtceu:circuits/iv',
+			'2x #gtceu:circuits/iv',
 			'16x gtceu:ram_chip',
 			'16x #forge:foils/polyvinyl_chloride',
 			'16x ae2:logic_processor',
-            '3x ae2:cell_component_4k')
+			'3x ae2:cell_component_4k')
 		.inputFluids(Fluid.of('tfg:fluix', 576))
 		.itemOutputs('ae2:cell_component_16k')
 		.duration(400)
 		.circuit(2)
-        .EUt(GTValues.VA[GTValues.EV])
+		.EUt(GTValues.VA[GTValues.EV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
 	event.recipes.gtceu.assembler('ae2:cell_component_16k')
 		.itemInputs(
- 			'2x #gtceu:circuits/ev',
+			'2x #gtceu:circuits/ev',
 			'16x gtceu:ram_chip',
 			'16x #forge:foils/polyvinyl_chloride',
 			'16x ae2:logic_processor',
-            '2x ae2:cell_component_4k')
+			'2x ae2:cell_component_4k')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 576))
 		.itemOutputs('ae2:cell_component_16k')
 		.duration(200)
 		.circuit(1)
-        .EUt(GTValues.VA[GTValues.HV])
+		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 
 	// 64k storage components
 
 	event.recipes.gtceu.assembler('ae2:cell_component_64k_16k')
 		.itemInputs(
- 			'2x #gtceu:circuits/luv',
+			'2x #gtceu:circuits/luv',
 			'8x gtceu:nano_cpu_chip',
 			'64x #forge:foils/polyvinyl_chloride',
 			'64x ae2:logic_processor',
@@ -980,28 +991,28 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemOutputs('ae2:cell_component_64k')
 		.duration(400)
 		.circuit(2)
-        .EUt(GTValues.VA[GTValues.IV])
+		.EUt(GTValues.VA[GTValues.IV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
 	event.recipes.gtceu.assembler('ae2:cell_component_64k')
 		.itemInputs(
- 			'2x #gtceu:circuits/iv',
+			'2x #gtceu:circuits/iv',
 			'8x gtceu:nano_cpu_chip',
 			'64x #forge:foils/polyvinyl_chloride',
 			'64x ae2:logic_processor',
-            '2x ae2:cell_component_16k')
+			'2x ae2:cell_component_16k')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 1152))
 		.itemOutputs('ae2:cell_component_64k')
 		.duration(200)
 		.circuit(1)
-        .EUt(GTValues.VA[GTValues.EV])
+		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 
 	// 256k storage components
 
 	event.recipes.gtceu.assembler('ae2:cell_component_256k_64k')
 		.itemInputs(
- 			'2x #gtceu:circuits/zpm',
+			'2x #gtceu:circuits/zpm',
 			'16x gtceu:qbit_cpu_chip',
 			'64x #forge:foils/polyphenylene_sulfide',
 			'64x #forge:foils/polyphenylene_sulfide',
@@ -1012,23 +1023,23 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemOutputs('ae2:cell_component_256k')
 		.duration(400)
 		.circuit(2)
-        .EUt(GTValues.VA[GTValues.LuV])
+		.EUt(GTValues.VA[GTValues.LuV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
 	event.recipes.gtceu.assembler('ae2:cell_component_256k')
 		.itemInputs(
- 			'2x #gtceu:circuits/luv',
+			'2x #gtceu:circuits/luv',
 			'16x gtceu:qbit_cpu_chip',
 			'64x #forge:foils/polyphenylene_sulfide',
 			'64x #forge:foils/polyphenylene_sulfide',
 			'64x ae2:logic_processor',
 			'64x ae2:logic_processor',
-            '2x ae2:cell_component_64k')
+			'2x ae2:cell_component_64k')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 2304))
 		.itemOutputs('ae2:cell_component_256k')
 		.duration(200)
 		.circuit(1)
-        .EUt(GTValues.VA[GTValues.IV])
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 
 	//#endregion
@@ -1106,6 +1117,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemOutputs('ae2:storage_monitor')
 		.duration(200)
 		.EUt(480)
+		.addMaterialInfo(true)
 
 	// Conversion Monitor
 	event.recipes.gtceu.assembler('ae2:conversion_monitor')
@@ -1117,6 +1129,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemOutputs('ae2:conversion_monitor')
 		.duration(200)
 		.EUt(480)
+		.addMaterialInfo(true)
 
 	// Level Emitter
 	event.recipes.gtceu.assembler('ae2:level_emitter')
@@ -1130,6 +1143,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.duration(20)
 		.EUt(480)
 		.cleanroom(CleanroomType.CLEANROOM)
+		.addMaterialInfo(true)
 
 	// Storage Bus
 	event.recipes.gtceu.assembler('ae2:storage_bus')
@@ -1142,6 +1156,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.circuit(1)
 		.duration(200)
 		.EUt(480)
+		.addMaterialInfo(true)
 
 	// Import Bus
 	event.recipes.gtceu.assembler('ae2:import_bus')
@@ -1155,6 +1170,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.circuit(2)
 		.duration(200)
 		.EUt(480)
+		.addMaterialInfo(true)
 
 	// Export Bus
 	event.recipes.gtceu.assembler('ae2:export_bus')
@@ -1168,6 +1184,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.circuit(3)
 		.duration(200)
 		.EUt(480)
+		.addMaterialInfo(true)
 
 	// CPU Crafting Unit
 	event.recipes.gtceu.assembler('ae2:crafting_unit')
@@ -1177,7 +1194,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'ae2:calculation_processor',
 			'#gtceu:circuits/ev',
 			'6x #forge:plates/stainless_steel')
-		.inputFluids(Fluid.of('tfg:fluix', 144*5))
+		.inputFluids(Fluid.of('tfg:fluix', 144 * 5))
 		.itemOutputs('ae2:crafting_unit')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.HV])
@@ -1190,11 +1207,12 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'ae2:calculation_processor',
 			'#gtceu:circuits/ev',
 			'6x #forge:plates/stainless_steel')
-		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*5))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 5))
 		.itemOutputs('2x ae2:crafting_unit')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
+		.addMaterialInfo(true)
 
 	//#region Molecular Assembler
 
@@ -1210,7 +1228,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('ae2:molecular_assembler')
 		.duration(200)
-        .EUt(GTValues.VA[GTValues.HV])
+		.EUt(GTValues.VA[GTValues.HV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
 	// EV Moon
@@ -1225,7 +1243,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('4x ae2:molecular_assembler')
 		.duration(200)
-        .EUt(GTValues.VA[GTValues.EV])
+		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 
 	// IV
@@ -1237,40 +1255,41 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'8x ae2:formation_core',
 			'2x gtceu:iv_robot_arm',
 			'6x #forge:plates/tungsten_steel')
-		.inputFluids(Fluid.of('tfg:fluix', 144*8))
+		.inputFluids(Fluid.of('tfg:fluix', 144 * 8))
 		.itemOutputs('8x ae2:molecular_assembler')
 		.duration(200)
-        .EUt(GTValues.VA[GTValues.IV])
+		.EUt(GTValues.VA[GTValues.IV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
 	//#endregion
 
 	// ME Контроллер
 	event.recipes.gtceu.assembler('ae2:controller')
-        .itemInputs(
-            '16x ae2:engineering_processor',
-            '2x #gtceu:circuits/hv',
-            '2x #forge:plates/titanium',
-            'ae2:fluix_block')
-        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
-        .itemOutputs('ae2:controller')
-        .duration(200)
-        .EUt(480)
-        .cleanroom(CleanroomType.CLEANROOM)
+		.itemInputs(
+			'16x ae2:engineering_processor',
+			'2x #gtceu:circuits/hv',
+			'2x #forge:plates/titanium',
+			'ae2:fluix_block')
+		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
+		.itemOutputs('ae2:controller')
+		.duration(200)
+		.EUt(480)
+		.cleanroom(CleanroomType.CLEANROOM)
+		.addMaterialInfo(true, true)
 
-    event.recipes.gtceu.assembler('ae2:controller_shulker')
-        .itemInputs(
-            '16x ae2:engineering_processor',
-            '2x #gtceu:circuits/hv',
-            '2x minecraft:shulker_shell',
-            'ae2:fluix_block')
-        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
-        .itemOutputs('ae2:controller')
-        .duration(200)
-        .EUt(480)
-        .cleanroom(CleanroomType.CLEANROOM)
-    
-    //#region ME Interfaces
+	event.recipes.gtceu.assembler('ae2:controller_shulker')
+		.itemInputs(
+			'16x ae2:engineering_processor',
+			'2x #gtceu:circuits/hv',
+			'2x minecraft:shulker_shell',
+			'ae2:fluix_block')
+		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
+		.itemOutputs('ae2:controller')
+		.duration(200)
+		.EUt(480)
+		.cleanroom(CleanroomType.CLEANROOM)
+
+	//#region ME Interfaces
 
 	// MV
 	event.recipes.gtceu.assembler('ae2:interface_mv')
@@ -1282,7 +1301,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'4x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('ae2:interface')
-		.duration(20*20)
+		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.MV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
@@ -1296,7 +1315,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'4x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('4x ae2:interface')
-		.duration(20*10)
+		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
 
@@ -1308,9 +1327,9 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'4x #forge:plates/tungsten_steel',
 			'16x ae2:annihilation_core',
 			'16x ae2:formation_core')
-		.inputFluids(Fluid.of('tfg:fluix', 144*8))
+		.inputFluids(Fluid.of('tfg:fluix', 144 * 8))
 		.itemOutputs('16x ae2:interface')
-		.duration(20*20)
+		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.IV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
@@ -1322,9 +1341,9 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'4x #forge:plates/tungsten_steel',
 			'16x ae2:annihilation_core',
 			'16x ae2:formation_core')
-		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*8))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8))
 		.itemOutputs('32x ae2:interface')
-		.duration(20*10)
+		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 
@@ -1343,7 +1362,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'4x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('ae2:pattern_provider')
-		.duration(20*20)
+		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.MV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
@@ -1357,7 +1376,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'4x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('4x ae2:pattern_provider')
-		.duration(20*10)
+		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
 
@@ -1369,9 +1388,9 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'4x #forge:plates/tungsten_steel',
 			'16x ae2:annihilation_core',
 			'16x ae2:formation_core')
-		.inputFluids(Fluid.of('tfg:fluix', 144*8))
+		.inputFluids(Fluid.of('tfg:fluix', 144 * 8))
 		.itemOutputs('16x ae2:pattern_provider')
-		.duration(20*20)
+		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.IV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
@@ -1383,9 +1402,9 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'4x #forge:plates/tungsten_steel',
 			'16x ae2:annihilation_core',
 			'16x ae2:formation_core')
-		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*8))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8))
 		.itemOutputs('32x ae2:pattern_provider')
-		.duration(20*10)
+		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 
@@ -1400,7 +1419,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemInputs(
 			'ae2:chest',
 			'ae2:cell_component_1k',
-			'gtceu:mv_sodium_battery',
+			'#gtceu:batteries/mv',
 			'ae2:item_cell_housing')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
 		.itemOutputs('ae2:portable_item_cell_1k')
@@ -1412,7 +1431,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemInputs(
 			'ae2:chest',
 			'ae2:cell_component_4k',
-			'gtceu:mv_sodium_battery',
+			'#gtceu:batteries/mv',
 			'ae2:item_cell_housing')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
 		.itemOutputs('ae2:portable_item_cell_4k')
@@ -1425,7 +1444,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemInputs(
 			'ae2:chest',
 			'ae2:cell_component_16k',
-			'gtceu:mv_sodium_battery',
+			'#gtceu:batteries/mv',
 			'ae2:item_cell_housing')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
 		.itemOutputs('ae2:portable_item_cell_16k')
@@ -1438,7 +1457,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemInputs(
 			'ae2:chest',
 			'ae2:cell_component_64k',
-			'gtceu:mv_sodium_battery',
+			'#gtceu:batteries/mv',
 			'ae2:item_cell_housing')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
 		.itemOutputs('ae2:portable_item_cell_64k')
@@ -1451,7 +1470,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemInputs(
 			'ae2:chest',
 			'ae2:cell_component_256k',
-			'gtceu:mv_sodium_battery',
+			'#gtceu:batteries/mv',
 			'ae2:item_cell_housing')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
 		.itemOutputs('ae2:portable_item_cell_256k')
@@ -1468,7 +1487,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemInputs(
 			'ae2:chest',
 			'ae2:cell_component_1k',
-			'gtceu:mv_sodium_battery',
+			'#gtceu:batteries/mv',
 			'ae2:fluid_cell_housing')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
 		.itemOutputs('ae2:portable_fluid_cell_1k')
@@ -1480,7 +1499,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemInputs(
 			'ae2:chest',
 			'ae2:cell_component_4k',
-			'gtceu:mv_sodium_battery',
+			'#gtceu:batteries/mv',
 			'ae2:fluid_cell_housing')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
 		.itemOutputs('ae2:portable_fluid_cell_4k')
@@ -1493,7 +1512,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemInputs(
 			'ae2:chest',
 			'ae2:cell_component_16k',
-			'gtceu:mv_sodium_battery',
+			'#gtceu:batteries/mv',
 			'ae2:fluid_cell_housing')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
 		.itemOutputs('ae2:portable_fluid_cell_16k')
@@ -1506,7 +1525,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemInputs(
 			'ae2:chest',
 			'ae2:cell_component_64k',
-			'gtceu:mv_sodium_battery',
+			'#gtceu:batteries/mv',
 			'ae2:fluid_cell_housing')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
 		.itemOutputs('ae2:portable_fluid_cell_64k')
@@ -1519,7 +1538,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemInputs(
 			'ae2:chest',
 			'ae2:cell_component_256k',
-			'gtceu:mv_sodium_battery',
+			'#gtceu:batteries/mv',
 			'ae2:fluid_cell_housing')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
 		.itemOutputs('ae2:portable_fluid_cell_256k')
@@ -1544,9 +1563,9 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('2x ae2:logic_processor')
-		.duration(20*5)
+		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.HV])
-		.cleanroom(CleanroomType.CLEANROOM)	
+		.cleanroom(CleanroomType.CLEANROOM)
 
 	event.recipes.gtceu.circuit_assembler('ae2:logic_processor')
 		.itemInputs(
@@ -1556,7 +1575,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('3x ae2:logic_processor')
-		.duration(20*5)
+		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 
@@ -1571,7 +1590,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('2x ae2:calculation_processor')
-		.duration(20*5)
+		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.HV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
@@ -1583,7 +1602,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('3x ae2:calculation_processor')
-		.duration(20*5)
+		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 
@@ -1598,7 +1617,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('2x ae2:engineering_processor')
-		.duration(20*5)
+		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.HV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
@@ -1610,7 +1629,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('3x ae2:engineering_processor')
-		.duration(20*5)
+		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 
@@ -1694,6 +1713,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.duration(8)
 		.EUt(480)
 		.category(GTRecipeCategories.CHEM_DYES)
+		.addMaterialInfo(true)
 
 	// Covered Cable
 	event.recipes.gtceu.chemical_bath('ae2:fluix_covered_cable')
@@ -1729,7 +1749,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 
 	// Cable Colorization
 	for (let i = 0; i < 16; i++) {
-		event.recipes.gtceu.chemical_bath(`${global.AE2_GLASS_CABLES[i]  }_dye`)
+		event.recipes.gtceu.chemical_bath(`${global.AE2_GLASS_CABLES[i]}_dye`)
 			.itemInputs('ae2:fluix_glass_cable')
 			.inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
 			.itemOutputs(global.AE2_GLASS_CABLES[i])
@@ -1737,7 +1757,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			.EUt(7)
 			.category(GTRecipeCategories.CHEM_DYES)
 
-		event.recipes.gtceu.chemical_bath(`${global.AE2_COVERED_CABLES[i]  }_dye`)
+		event.recipes.gtceu.chemical_bath(`${global.AE2_COVERED_CABLES[i]}_dye`)
 			.itemInputs('ae2:fluix_covered_cable')
 			.inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
 			.itemOutputs(global.AE2_COVERED_CABLES[i])
@@ -1745,7 +1765,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			.EUt(7)
 			.category(GTRecipeCategories.CHEM_DYES)
 
-		event.recipes.gtceu.chemical_bath(`${global.AE2_COVERED_DENSE_CABLES[i]  }_dye`)
+		event.recipes.gtceu.chemical_bath(`${global.AE2_COVERED_DENSE_CABLES[i]}_dye`)
 			.itemInputs('ae2:fluix_covered_dense_cable')
 			.inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
 			.itemOutputs(global.AE2_COVERED_DENSE_CABLES[i])
@@ -1753,7 +1773,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			.EUt(7)
 			.category(GTRecipeCategories.CHEM_DYES)
 
-		event.recipes.gtceu.chemical_bath(`${global.AE2_SMART_CABLES[i]  }_dye`)
+		event.recipes.gtceu.chemical_bath(`${global.AE2_SMART_CABLES[i]}_dye`)
 			.itemInputs('ae2:fluix_smart_cable')
 			.inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
 			.itemOutputs(global.AE2_SMART_CABLES[i])
@@ -1761,7 +1781,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			.EUt(7)
 			.category(GTRecipeCategories.CHEM_DYES)
 
-		event.recipes.gtceu.chemical_bath(`${global.AE2_SMART_DENSE_CABLES[i]  }_dye`)
+		event.recipes.gtceu.chemical_bath(`${global.AE2_SMART_DENSE_CABLES[i]}_dye`)
 			.itemInputs('ae2:fluix_smart_dense_cable')
 			.inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
 			.itemOutputs(global.AE2_SMART_DENSE_CABLES[i])
@@ -1770,7 +1790,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			.category(GTRecipeCategories.CHEM_DYES)
 
 		// Paint Balls
-		event.recipes.gtceu.chemical_bath(`${global.AE2_PAINTBALLS[i]  }_dye`)
+		event.recipes.gtceu.chemical_bath(`${global.AE2_PAINTBALLS[i]}_dye`)
 			.itemInputs('ae2:matter_ball')
 			.inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 36))
 			.itemOutputs(global.AE2_PAINTBALLS[i])
@@ -1779,7 +1799,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			.category(GTRecipeCategories.CHEM_DYES)
 
 		// Lumen Paint Ball
-		event.recipes.gtceu.chemical_bath(`${global.AE2_LUMEN_PAINTBALLS[i]  }_gtceu_dye`)
+		event.recipes.gtceu.chemical_bath(`${global.AE2_LUMEN_PAINTBALLS[i]}_gtceu_dye`)
 			.itemInputs(global.AE2_PAINTBALLS[i])
 			.inputFluids(Fluid.of('gtceu:glowstone', 125))
 			.itemOutputs(global.AE2_LUMEN_PAINTBALLS[i])
@@ -1788,37 +1808,37 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			.category(GTRecipeCategories.CHEM_DYES)
 	};
 
-    // Inscriber Silicon Press
-    event.recipes.gtceu.forming_press('ae2:silicon_press_stainless_steel')
-        .itemInputs('#forge:plates/stainless_steel')
-        .notConsumable('ae2:silicon_press')
-        .itemOutputs('ae2:silicon_press')
-        .duration(100)
-        .EUt(480)
+	// Inscriber Silicon Press
+	event.recipes.gtceu.forming_press('ae2:silicon_press_stainless_steel')
+		.itemInputs('#forge:plates/stainless_steel')
+		.notConsumable('ae2:silicon_press')
+		.itemOutputs('ae2:silicon_press')
+		.duration(100)
+		.EUt(480)
 
-    // Inscriber logic Press
-    event.recipes.gtceu.forming_press('ae2:logic_processor_press_stainless_steel')
-        .itemInputs('#forge:plates/stainless_steel')
-        .notConsumable('ae2:logic_processor_press')
-        .itemOutputs('ae2:logic_processor_press')
-        .duration(100)
-        .EUt(480)
+	// Inscriber logic Press
+	event.recipes.gtceu.forming_press('ae2:logic_processor_press_stainless_steel')
+		.itemInputs('#forge:plates/stainless_steel')
+		.notConsumable('ae2:logic_processor_press')
+		.itemOutputs('ae2:logic_processor_press')
+		.duration(100)
+		.EUt(480)
 
-    // Inscriber engineering Press
-    event.recipes.gtceu.forming_press('ae2:engineering_press_stainless_steel')
-        .itemInputs('#forge:plates/stainless_steel')
-        .notConsumable('ae2:engineering_processor_press')
-        .itemOutputs('ae2:engineering_processor_press')
-        .duration(100)
-        .EUt(480)
+	// Inscriber engineering Press
+	event.recipes.gtceu.forming_press('ae2:engineering_press_stainless_steel')
+		.itemInputs('#forge:plates/stainless_steel')
+		.notConsumable('ae2:engineering_processor_press')
+		.itemOutputs('ae2:engineering_processor_press')
+		.duration(100)
+		.EUt(480)
 
-    // Inscriber calculation Press
-    event.recipes.gtceu.forming_press('ae2:calculation_press_stainless_steel')
-        .itemInputs('#forge:plates/stainless_steel')
-        .notConsumable('ae2:calculation_processor_press')
-        .itemOutputs('ae2:calculation_processor_press')
-        .duration(100)
-        .EUt(480)
+	// Inscriber calculation Press
+	event.recipes.gtceu.forming_press('ae2:calculation_press_stainless_steel')
+		.itemInputs('#forge:plates/stainless_steel')
+		.notConsumable('ae2:calculation_processor_press')
+		.itemOutputs('ae2:calculation_processor_press')
+		.duration(100)
+		.EUt(480)
 
 	// Quartz Fiber
 	event.recipes.gtceu.wiremill('ae2:quartz_fiber_certus')
@@ -1839,6 +1859,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemOutputs('4x ae2:quartz_glass')
 		.duration(20)
 		.EUt(120)
+		.addMaterialInfo(true)
 
 	// Vibrant Quartz Glass
 	event.recipes.gtceu.alloy_smelter('ae2:quartz_vibrant_glass')
@@ -1846,6 +1867,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.itemOutputs('ae2:quartz_vibrant_glass')
 		.duration(20)
 		.EUt(480)
+		.addMaterialInfo(true)
 
 	// Charged Certus Quartz 1x
 	event.recipes.gtceu.polarizer('ae2:charged_certus_quartz_crystal_1x')
@@ -2173,8 +2195,8 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'8x ae2:engineering_processor',
 			'14x gtceu:iv_sensor',
 			'ae2:logic_processor')
-		.inputFluids(Fluid.of('tfg:fluix', 144*200))
-		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*150))
+		.inputFluids(Fluid.of('tfg:fluix', 144 * 200))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 150))
 		.itemOutputs('ae2:quantum_ring')
 		.duration(900)
 		.EUt(GTValues.VA[GTValues.ZPM])
@@ -2198,8 +2220,8 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 			'32x gtceu:uv_emitter',
 			'8x gtceu:uv_field_generator',
 			'gtceu:max_battery')
-		.inputFluids(Fluid.of('tfg:fluix', 144*2000))
-		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*1500))
+		.inputFluids(Fluid.of('tfg:fluix', 144 * 2000))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 1500))
 		.stationResearch(b => b.researchStack(Item.of('ae2:quartz_glass')).EUt(GTValues.VA[GTValues.UV]).CWUt(256))
 		.dimension('ad_astra:moon')
 		.itemOutputs('ae2:quantum_link')
@@ -2214,6 +2236,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.duration(200)
 		.EUt(480)
 		.cleanroom(CleanroomType.CLEANROOM)
+		.addMaterialInfo(true, true)
 
 	// Fluix crystal
 	event.recipes.gtceu.mixer('ae2:fluix_crystal')
@@ -2278,12 +2301,12 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		.inputFluids(Fluid.of('gtceu:helium_3', 1000))
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.outputFluids(Fluid.of('tfg:cryogenized_fluix', 576))
-		.duration(30*20)
+		.duration(30 * 20)
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
 
 	// Certus deco blocks
-	
+
 	event.stonecutting('ae2:quartz_block', '#tfg:certus_quartz_blocks')
 	event.stonecutting('ae2:cut_quartz_block', '#tfg:certus_quartz_blocks')
 	event.stonecutting('ae2:smooth_quartz_block', '#tfg:certus_quartz_blocks')
@@ -2325,7 +2348,7 @@ global.MINECRAFT_DYE_NAMES.forEach(dye => {
 
 	// other deco
 
-	event.shaped('ae2:not_so_mysterious_cube', [
+	event.recipes.gtceu.shaped('ae2:not_so_mysterious_cube', [
 		' A ',
 		'BCD',
 		' E '

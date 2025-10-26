@@ -10,6 +10,7 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*30)
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true)
 
 	event.recipes.gtceu.assembler('tfg:material_holder')
 		.itemInputs('gtceu:ev_input_bus', '4x gtceu:uranium_triplatinum_single_wire', '2x gtceu:ev_conveyor_module', '#gtceu:circuits/ev')
@@ -17,6 +18,7 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*30)
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true)
 
 	event.recipes.gtceu.assembler('tfg:fuel_holder')
 		.itemInputs('gtceu:ev_machine_hull', '4x gtceu:ev_robot_arm', '4x gtceu:titanium_gear', '2x #gtceu:circuits/ev')
@@ -24,6 +26,7 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*30)
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true)
 
 	//#region Nuclear Pellet
 
@@ -464,6 +467,7 @@ function registerTFGNuclearRecipes(event) {
 		.circuit(6)
 		.duration(20 * (2.5))
 		.EUt(GTValues.VH[GTValues.LV])
+		.addMaterialInfo(true)
 	
 	event.recipes.gtceu.mixer('tfg:thermally_conductive_fluid')
 		.itemInputs('7x #forge:dusts/gallium', '2x #forge:dusts/tin', '#forge:dusts/zinc')

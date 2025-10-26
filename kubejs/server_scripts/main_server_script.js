@@ -268,7 +268,6 @@ ServerEvents.recipes(event => {
 	registerTFGRecipes(event)
 	registerTFCTextileRecipes(event)
 	registerToolBeltRecipes(event)
-	registerTreeTapRecipes(event)
 	registerVintageImprovementsRecipes(event)
 	registerWaterFlasksRecipes(event)
 	registerWABRecipes(event)
