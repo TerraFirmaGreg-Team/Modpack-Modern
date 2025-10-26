@@ -1892,75 +1892,6 @@
             ]
         },
         {
-            "pakku_id": "DveZsZzrJgpoTvck",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "better-third-person",
-                "modrinth": "better-third-person"
-            },
-            "name": {
-                "curseforge": "Better Third Person",
-                "modrinth": "Better Third Person"
-            },
-            "id": {
-                "curseforge": "435044",
-                "modrinth": "G1s2WpNo"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "BetterThirdPerson-Forge-1.20-1.9.0.jar",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.1",
-                        "1.20",
-                        "1.20.4"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4596/768/BetterThirdPerson-Forge-1.20-1.9.0.jar",
-                    "id": "4596768",
-                    "parent_id": "435044",
-                    "hashes": {
-                        "sha1": "0b0a3ff3b244fa191b3f9580547071dee46f7276",
-                        "md5": "298625b2f4567069bcfbea3dceba294d"
-                    },
-                    "required_dependencies": [],
-                    "size": 61525,
-                    "date_published": "2023-06-19T13:23:09.423Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "BetterThirdPerson-Forge-1.20-1.9.0.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1",
-                        "1.20.2"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/G1s2WpNo/versions/XkYduFuv/BetterThirdPerson-Forge-1.20-1.9.0.jar",
-                    "id": "XkYduFuv",
-                    "parent_id": "G1s2WpNo",
-                    "hashes": {
-                        "sha512": "ae854893f17c3e42825e88119f4bd6be8948612494780194cb1c1cd5d65d571c91e7222c286cb734b3af363f927a6be8ad05347cd2c3fec6e1874b4aaac14c7b",
-                        "sha1": "0b0a3ff3b244fa191b3f9580547071dee46f7276"
-                    },
-                    "required_dependencies": [],
-                    "size": 61525,
-                    "date_published": "2023-09-25T17:49:19.507911Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "Yr24iolwXV9aFEWV",
             "type": "MOD",
             "side": "CLIENT",
@@ -7090,7 +7021,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "gtceu-1.20.1-7.2.0.jar",
+                    "file_name": "gtceu-1.20.1-7.2.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7098,20 +7029,20 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/7tG215v7/versions/Lnimev8q/gtceu-1.20.1-7.2.0.jar",
-                    "id": "Lnimev8q",
+                    "url": "https://cdn.modrinth.com/data/7tG215v7/versions/bf5ztbzI/gtceu-1.20.1-7.2.1.jar",
+                    "id": "bf5ztbzI",
                     "parent_id": "7tG215v7",
                     "hashes": {
-                        "sha512": "d683642ee0e85705f606abfcc3ee75da93e48d8326c0654d2b6917529230fb262f9f097a4b014d1f7b81aad0704d968b394eeb5f54f51f3a6da277e36f2363a6",
-                        "sha1": "d41938569195b8b6a971a24f950f7999dfeba852"
+                        "sha512": "2a5c670d0a581035aac0d1abdcaeef275567bed1a85d72fda260ed46c76d6f7bdc4f18f2a763839d33a710583fb15c8701000500b5cf201470832a2ffc78c01d",
+                        "sha1": "7f99b2e1f64696da30c829d38c0bab6f5f471c24"
                     },
                     "required_dependencies": [],
-                    "size": 17969208,
-                    "date_published": "2025-09-22T11:07:49.593489Z"
+                    "size": 17992116,
+                    "date_published": "2025-10-26T06:03:09.219616Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "gtceu-1.20.1-7.2.0.jar",
+                    "file_name": "gtceu-1.20.1-7.2.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7119,16 +7050,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7022/42/gtceu-1.20.1-7.2.0.jar",
-                    "id": "7022042",
+                    "url": "https://edge.forgecdn.net/files/7150/919/gtceu-1.20.1-7.2.1.jar",
+                    "id": "7150919",
                     "parent_id": "890405",
                     "hashes": {
-                        "sha1": "d41938569195b8b6a971a24f950f7999dfeba852",
-                        "md5": "a0d92a7b07cf8bdfe474e0f5f5463cbb"
+                        "sha1": "7f99b2e1f64696da30c829d38c0bab6f5f471c24",
+                        "md5": "7e0d9355ef6281a2ed6603b8ead98588"
                     },
                     "required_dependencies": [],
-                    "size": 17969208,
-                    "date_published": "2025-09-22T11:07:44.827Z"
+                    "size": 17992116,
+                    "date_published": "2025-10-26T06:02:29.950Z"
                 }
             ]
         },
@@ -11491,6 +11422,69 @@
             ]
         },
         {
+            "pakku_id": "z0O35G9R0QKhBCb9",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "shoulder-surfing-reloaded",
+                "modrinth": "shoulder-surfing-reloaded"
+            },
+            "name": {
+                "curseforge": "Shoulder Surfing Reloaded",
+                "modrinth": "Shoulder Surfing Reloaded"
+            },
+            "id": {
+                "curseforge": "243190",
+                "modrinth": "kepjj2sy"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.14.3.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6993/788/ShoulderSurfing-Forge-1.20.1-4.14.3.jar",
+                    "id": "6993788",
+                    "parent_id": "243190",
+                    "hashes": {
+                        "sha1": "d339a53fe242d8befc7af48cab26ea71c9cb18b9",
+                        "md5": "a3efd5821b0797dbcdfbeabebfcd0b95"
+                    },
+                    "required_dependencies": [],
+                    "size": 242896,
+                    "date_published": "2025-09-13T19:46:30.803Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.14.3.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/kepjj2sy/versions/J38UPdFA/ShoulderSurfing-Forge-1.20.1-4.14.3.jar",
+                    "id": "J38UPdFA",
+                    "parent_id": "kepjj2sy",
+                    "hashes": {
+                        "sha512": "a1eb9f397b459acdf8216f46c1b3605d501ad43923b8a48a0db4eb5ed992fa55fd582d199b2fe570299c29548fbb6ff0a90a4d0a74a45f6a0013ecc29d97bfe3",
+                        "sha1": "d339a53fe242d8befc7af48cab26ea71c9cb18b9"
+                    },
+                    "required_dependencies": [],
+                    "size": 242896,
+                    "date_published": "2025-09-13T19:46:21.874642Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "pLkDut7s59n6uQin",
             "type": "MOD",
             "side": "BOTH",
@@ -13887,6 +13881,43 @@
                     "required_dependencies": [],
                     "size": 615212,
                     "date_published": "2025-10-05T20:06:41.043Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "UUgCxePdwRd5MyWw",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "third-person-shooting"
+            },
+            "name": {
+                "curseforge": "Third Person Shooting: Zero"
+            },
+            "id": {
+                "curseforge": "969378"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "tp_shooting-1.20.1-5.1.1+tacz1.1.6-all.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7034/860/tp_shooting-1.20.1-5.1.1+tacz1.1.6-all.jar",
+                    "id": "7034860",
+                    "parent_id": "969378",
+                    "hashes": {
+                        "sha1": "43c627e23f7e72ee011085a94bdc1ba57b86a7ba",
+                        "md5": "8449f5e5f21eb75d2e4393c86d5b7a8e"
+                    },
+                    "required_dependencies": [],
+                    "size": 179476,
+                    "date_published": "2025-09-26T11:19:44.383Z"
                 }
             ]
         },
