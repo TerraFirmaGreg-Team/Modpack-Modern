@@ -13,6 +13,7 @@
 - Added TACZ Ammo Boxes @BlueBoat29
 - Added TACZ Guns and Ammo Boxes to tool rack @BlueBoat29
 - Overhauled the recycling recipes and added many more (#1576) @Pyritie
+- Added an earlier way to make dough using a normal tfc ceramic/wood bowl @Pyritie
 ### Bug fixes
 - Fixed part of the tungsten processing loop giving way too much salt (#2095) @Redeix
 - Fixed basic super tanks so you can now left/right click with them in GUIs like you can with the others (#2100) @jurrejelle
@@ -21,6 +22,7 @@
 - Fixed not being able to ride Soarers (#2082) @Pyritie
 - Fixed Soarer "flap" GUI overlapping with the minimap @Pyritie
 - Fixed aqueduct recipes (#2101) @vidal-adrien
+- Fixed some AFC logs not having stripping recipes @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
