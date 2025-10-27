@@ -226,6 +226,52 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/raw/dacite')
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/hardened/dacite')
 
+	// Venus
+	event.add('ad_astra:venus_stone_replaceables', 'ad_astra:venus_stone')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_venus_stone')
+	event.add('ad_astra:venus_stone_replaceables', 'gtceu:red_granite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_red_granite')
+	event.add('ad_astra:venus_stone_replaceables', 'ad_astra:moon_deepslate')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_moon_deepslate')
+	event.add('ad_astra:venus_stone_replaceables', 'minecraft:deepslate')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_deepslate')
+	event.add('ad_astra:venus_stone_replaceables', 'minecraft:dripstone_block')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_dripstone')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/raw/granite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/hardened/granite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/raw/diorite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/hardened/diorite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/raw/gabbro')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/hardened/gabbro')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/raw/basalt')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/hardened/basalt')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/raw/rhyolite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/hardened/andesite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/raw/dacite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/hardened/dacite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/raw/slate')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/hardened/slate')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/raw/schist')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/hardened/schist')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/raw/gneiss')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/hardened/gneiss')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/raw/phyllite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/hardened/phyllite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/raw/quartzite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/hardened/quartzite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:sand/fluorapatite/blue')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:sandstone/raw/fluorapatite/blue')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:sand/fluorapatite/green')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:sandstone/raw/fluorapatite/green')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:sand/fluorapatite/brown')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:sandstone/raw/fluorapatite/brown')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:sand/fluorapatite/orange')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:sandstone/raw/fluorapatite/orange')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:sand/fluorapatite/white')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:sandstone/raw/fluorapatite/white')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:sand/fluorapatite/yellow')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:sandstone/raw/fluorapatite/yellow')
+
 	// Mars
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/dacite')
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/dacite')
@@ -312,6 +358,7 @@ const registerAdAstraBlockTags = (event) => {
 	
 	event.add('tfc:can_carve', '#ad_astra:moon_stone_replaceables')
 	event.add('tfc:can_carve', '#ad_astra:mars_stone_replaceables')
+	event.add('tfc:can_carve', '#ad_astra:venus_stone_replaceables')
 
 	event.add('minecraft:rabbits_spawnable_on', '#ad_astra:moon_stone_replaceables')
 	event.add('species:limpet_spawnable_on', '#ad_astra:moon_stone_replaceables')
@@ -492,9 +539,21 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'species:cliff_hanger',
 	]
 
-	COLD_ENTITIES.forEach(entity => {
+	const HOT_ENTITIES = [
+		'minecraft:enderman',
+		"endermanoverhaul:desert_enderman",
+		"endermanoverhaul:savannah_enderman",
+		"endermanoverhaul:nether_wastes_enderman",
+		"ad_astra:sulfur_creeper"
+	]
 
+	COLD_ENTITIES.forEach(entity => {
 		event.add('ad_astra:can_survive_extreme_cold', entity)
+		event.add('ad_astra:lives_without_oxygen', entity)
+	})
+
+	COLD_ENTITIES.forEach(entity => {
+		event.add('ad_astra:can_survive_extreme_heat', entity)
 		event.add('ad_astra:lives_without_oxygen', entity)
 	})
 
@@ -668,6 +727,17 @@ const registerAdAstraPlacedFeatures = (event) => {
 	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_geyserite')
 	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_orange_sand')
 	event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lake_yellow_sand')
+
+	// Underground decoration
+	event.add("tfg:venus_underground_decoration", "tfg:glow_lichen")
+	event.add('tfg:venus_underground_decoration', 'tfg:venus/underground/loose_rocks')
+	event.add('tfg:venus_underground_decoration', 'tfc:cave_spike')
+	event.add('tfg:venus_underground_decoration', 'tfc:cave_column')
+	event.add('tfg:venus_underground_decoration', 'tfc:large_cave_spike')
+	event.add('tfg:venus_underground_decoration', 'tfg:venus/underground/noise_cave_stalagmite')
+	event.add('tfg:venus_underground_decoration', 'tfg:venus/underground/noise_cave_stalagtite')
+
+	event.add("tfg:venus_top_layer_modification", "tfc:surface_loose_rocks")
 	//#endregion
 
 	//#region Glacio

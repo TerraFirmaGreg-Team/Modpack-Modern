@@ -130,6 +130,53 @@ TFCEvents.createChunkDataProvider('mars', event => {
 	});
 })
 
+TFCEvents.createChunkDataProvider('venus', event => {
+	event.partial((data, chunk) => {
+		let x = chunk.pos.minBlockX;
+		let z = chunk.pos.minBlockZ;
+
+		const avgTemp1 = calcAverage(z, global.VENUS_PLANET_SIZE, 0, 100)
+		const avgTemp2 = calcAverage(z + 15, global.VENUS_PLANET_SIZE, 0, 100)
+		const avgRain1 = calcAverage(x, global.VENUS_PLANET_SIZE, 0, 100)
+		const avgRain2 = calcAverage(x + 15, global.VENUS_PLANET_SIZE, 0, 100)
+
+		let rain = TFC.misc.lerpFloatLayer(
+			avgRain1 + rainLayer.noise(x, z),
+			avgRain1 + rainLayer.noise(x, z + 15),
+			avgRain2 + rainLayer.noise(x + 15, z),
+			avgRain2 + rainLayer.noise(x + 15, z + 15)
+		);
+		let temp = TFC.misc.lerpFloatLayer(
+			avgTemp1 + tempLayer.noise(x, z),
+			avgTemp1 + tempLayer.noise(x, z + 15),
+			avgTemp2 + tempLayer.noise(x + 15, z),
+			avgTemp2 + tempLayer.noise(x + 15, z + 15)
+		);
+
+		data.generatePartial(
+			rain,
+			temp,
+			floatToForestType(forestLayerNoise.noise(x, z)),
+			forestWeirdnessNoise.noise(x, z), // forest weirdness
+			forestDensityNoise.noise(x, z) // forest density
+		);
+	});
+
+	event.full((data, chunk) => {
+		let heights = [];
+		for (let z = 0; z < 16; z++) {
+			for (let x = 0; x < 16; x++) {
+				heights[x + 16 * z] = chunk.getHeight($HeightMap.Types.OCEAN_FLOOR_WG, x, z);
+			}
+		}
+		data.generateFull(heights, EMPTY_AQUIFER);
+	});
+
+	event.rocks((x, y, z, surfaceY, cache, rockSettings) => {
+		return rockSettings.sampleAtLayer(rockLayer.getAt(x, z), (surfaceY - y) / ROCK_LAYER_HEIGHT);
+	});
+})
+
 TFCEvents.createChunkDataProvider('glacio', event => {
 	event.partial((data, chunk) => {
 		let x = chunk.pos.minBlockX;

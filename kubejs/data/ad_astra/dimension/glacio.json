@@ -1,5 +1,5 @@
 {
-	"type": "ad_astra:glacio",
+	"type": "tfg:glacio",
 	"generator": {
 		"type": "kubejs_tfc:wrapped",
 		"event_key": "glacio",

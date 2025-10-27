@@ -648,6 +648,13 @@ const registerTFGBlockTags = (event) => {
 	event.add('minecraft:mineable/shovel', 'tfg:pile/mars_sand_covering')
 	event.add('minecraft:mineable/shovel', 'tfg:pile/venus_sand_covering')
 	event.add('minecraft:mineable/shovel', 'tfg:pile/hematitic_sand_covering')
+
+	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/blue')
+	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/green')
+	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/brown')
+	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/orange')
+	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/white')
+	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/yellow')
 }
 //#endregion
 
