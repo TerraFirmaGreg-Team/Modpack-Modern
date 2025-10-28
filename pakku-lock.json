@@ -1034,34 +1034,8 @@
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "ae2wtlib-15.3.1-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pNabrMMw/versions/BLQZoB0F/ae2wtlib-15.3.1-forge.jar",
-                    "id": "BLQZoB0F",
-                    "parent_id": "pNabrMMw",
-                    "hashes": {
-                        "sha512": "57603754e9b51858678d0bbabea8c47050f56b810cdf06d528fdf97262cda4c26fa758830c997d2f0cdf7772142d70d99ea8e4be33fc9d20e54b7c43803ea109",
-                        "sha1": "2df257a66c16c30f4fcae2de0d6b387251b7f114"
-                    },
-                    "required_dependencies": [
-                        "XxWD5pD3",
-                        "vvuO3ImH",
-                        "9s6osm5g",
-                        "lhGA9TYQ"
-                    ],
-                    "size": 228960,
-                    "date_published": "2025-10-26T23:02:08.228212Z"
-                },
-                {
                     "type": "curseforge",
-                    "file_name": "ae2wtlib-15.3.1-forge.jar",
+                    "file_name": "ae2wtlib-15.3.0-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1069,21 +1043,47 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7154/316/ae2wtlib-15.3.1-forge.jar",
-                    "id": "7154316",
+                    "url": "https://edge.forgecdn.net/files/7014/805/ae2wtlib-15.3.0-forge.jar",
+                    "id": "7014805",
                     "parent_id": "459929",
                     "hashes": {
-                        "sha1": "2df257a66c16c30f4fcae2de0d6b387251b7f114",
-                        "md5": "91c10c49ecea8f771aef27de03da0dec"
+                        "sha1": "889fa4f0aa90d3541e45ab59d41a249af3c9dd20",
+                        "md5": "fded4f093acdc40d8d81d73baac29034"
                     },
                     "required_dependencies": [
-                        "223794",
                         "348521",
+                        "419699",
                         "309927",
-                        "419699"
+                        "223794"
                     ],
-                    "size": 228960,
-                    "date_published": "2025-10-26T23:02:05.480Z"
+                    "size": 227891,
+                    "date_published": "2025-09-20T11:05:18.890Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "ae2wtlib-15.3.0-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/pNabrMMw/versions/Gy5UgOq4/ae2wtlib-15.3.0-forge.jar",
+                    "id": "Gy5UgOq4",
+                    "parent_id": "pNabrMMw",
+                    "hashes": {
+                        "sha512": "9e26b25e180f4f2368415ef8c96fd59df7a8911516a4601ecaa37177db3e1042c92d7ec8a2c8e760f99b46498689f72164cdf69b6aeab6f20765b77d4ce0507b",
+                        "sha1": "889fa4f0aa90d3541e45ab59d41a249af3c9dd20"
+                    },
+                    "required_dependencies": [
+                        "9s6osm5g",
+                        "vvuO3ImH",
+                        "lhGA9TYQ",
+                        "XxWD5pD3"
+                    ],
+                    "size": 227891,
+                    "date_published": "2025-09-20T11:05:21.100923Z"
                 }
             ]
         },
