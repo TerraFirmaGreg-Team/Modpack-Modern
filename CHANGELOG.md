@@ -23,6 +23,7 @@
 - Fixed Soarer "flap" GUI overlapping with the minimap @Pyritie
 - Fixed aqueduct recipes (#2101) @vidal-adrien
 - Fixed some AFC logs not having stripping recipes @Pyritie
+- Fixed some issues related to AE2 blocking mode @ko-lja
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
