@@ -1025,7 +1025,7 @@
 													},
 													"then_run": {
 														"type": "minecraft:block",
-														"result_state": { "Name": "tfc:deposit/native_gold/chert" }
+														"result_state": { "Name": "minecraft:tuff" }
 													}
 												},
 												{
@@ -1067,7 +1067,7 @@
 													},
 													"then_run": {
 														"type": "minecraft:block",
-														"result_state": { "Name": "tfc:deposit/native_gold/chert" }
+														"result_state": { "Name": "minecraft:tuff" }
 													}
 												},
 												{
@@ -1137,7 +1137,7 @@
 													},
 													"then_run": {
 														"type": "minecraft:block",
-														"result_state": { "Name": "tfc:deposit/native_silver/chert" }
+														"result_state": { "Name": "create:scoria" }
 													}
 												},
 												{
@@ -1151,7 +1151,7 @@
 													},
 													"then_run": {
 														"type": "minecraft:block",
-														"result_state": { "Name": "tfc:deposit/native_silver/chert" }
+														"result_state": { "Name": "create:scoria" }
 													}
 												},
 												{
@@ -1165,7 +1165,7 @@
 													},
 													"then_run": {
 														"type": "minecraft:block",
-														"result_state": { "Name": "tfc:deposit/native_gold/chert" }
+														"result_state": { "Name": "minecraft:tuff" }
 													}
 												},
 												{
@@ -1207,7 +1207,7 @@
 													},
 													"then_run": {
 														"type": "minecraft:block",
-														"result_state": { "Name": "tfc:deposit/native_gold/chert" }
+														"result_state": { "Name": "minecraft:tuff" }
 													}
 												},
 												{
@@ -1263,7 +1263,7 @@
 													},
 													"then_run": {
 														"type": "minecraft:block",
-														"result_state": { "Name": "tfc:deposit/native_gold/chert" }
+														"result_state": { "Name": "minecraft:tuff" }
 													}
 												}
 											]
@@ -1403,7 +1403,7 @@
 													},
 													"then_run": {
 														"type": "minecraft:block",
-														"result_state": { "Name": "tfc:deposit/native_gold/chert" }
+														"result_state": { "Name": "minecraft:tuff" }
 													}
 												},
 												{
@@ -1490,7 +1490,7 @@
 										},
 										"then_run": {
 											"type": "minecraft:block",
-											"result_state": { "Name": "tfc:deposit/native_gold/chert" }
+											"result_state": { "Name": "minecraft:tuff" }
 										}
 									},
 									{

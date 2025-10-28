@@ -16,7 +16,7 @@
           "argument2": {
             "type": "minecraft:spline",
             "spline": {
-              "coordinate": "minecraft:overworld/continents",
+              "coordinate": "tfg:venus/continents",
               "points": [
                 {
                   "derivative": 0.0,
@@ -27,13 +27,13 @@
                   "derivative": 0.0,
                   "location": 0.03,
                   "value": {
-                    "coordinate": "minecraft:overworld/erosion",
+                    "coordinate": "tfg:venus/erosion",
                     "points": [
                       {
                         "derivative": 0.0,
                         "location": -1.0,
                         "value": {
-                          "coordinate": "minecraft:overworld/ridges_folded",
+                          "coordinate": "tfg:venus/ridges_folded",
                           "points": [
                             {
                               "derivative": 0.0,
@@ -49,7 +49,7 @@
                               "derivative": 0.0,
                               "location": 1.0,
                               "value": {
-                                "coordinate": "minecraft:overworld/ridges",
+                                "coordinate": "tfg:venus/ridges",
                                 "points": [
                                   {
                                     "derivative": 0.0,
@@ -71,7 +71,7 @@
                         "derivative": 0.0,
                         "location": -0.78,
                         "value": {
-                          "coordinate": "minecraft:overworld/ridges_folded",
+                          "coordinate": "tfg:venus/ridges_folded",
                           "points": [
                             {
                               "derivative": 0.0,
@@ -87,7 +87,7 @@
                               "derivative": 0.0,
                               "location": 1.0,
                               "value": {
-                                "coordinate": "minecraft:overworld/ridges",
+                                "coordinate": "tfg:venus/ridges",
                                 "points": [
                                   {
                                     "derivative": 0.0,
@@ -109,7 +109,7 @@
                         "derivative": 0.0,
                         "location": -0.5775,
                         "value": {
-                          "coordinate": "minecraft:overworld/ridges_folded",
+                          "coordinate": "tfg:venus/ridges_folded",
                           "points": [
                             {
                               "derivative": 0.0,
@@ -125,7 +125,7 @@
                               "derivative": 0.0,
                               "location": 1.0,
                               "value": {
-                                "coordinate": "minecraft:overworld/ridges",
+                                "coordinate": "tfg:venus/ridges",
                                 "points": [
                                   {
                                     "derivative": 0.0,
@@ -155,13 +155,13 @@
                   "derivative": 0.0,
                   "location": 0.65,
                   "value": {
-                    "coordinate": "minecraft:overworld/erosion",
+                    "coordinate": "tfg:venus/erosion",
                     "points": [
                       {
                         "derivative": 0.0,
                         "location": -1.0,
                         "value": {
-                          "coordinate": "minecraft:overworld/ridges_folded",
+                          "coordinate": "tfg:venus/ridges_folded",
                           "points": [
                             {
                               "derivative": 0.0,
@@ -172,7 +172,7 @@
                               "derivative": 0.0,
                               "location": 0.44999996,
                               "value": {
-                                "coordinate": "minecraft:overworld/ridges",
+                                "coordinate": "tfg:venus/ridges",
                                 "points": [
                                   {
                                     "derivative": 0.0,
@@ -191,7 +191,7 @@
                               "derivative": 0.0,
                               "location": 1.0,
                               "value": {
-                                "coordinate": "minecraft:overworld/ridges",
+                                "coordinate": "tfg:venus/ridges",
                                 "points": [
                                   {
                                     "derivative": 0.0,
@@ -213,7 +213,7 @@
                         "derivative": 0.0,
                         "location": -0.78,
                         "value": {
-                          "coordinate": "minecraft:overworld/ridges_folded",
+                          "coordinate": "tfg:venus/ridges_folded",
                           "points": [
                             {
                               "derivative": 0.0,
@@ -229,7 +229,7 @@
                               "derivative": 0.0,
                               "location": 1.0,
                               "value": {
-                                "coordinate": "minecraft:overworld/ridges",
+                                "coordinate": "tfg:venus/ridges",
                                 "points": [
                                   {
                                     "derivative": 0.0,
@@ -251,7 +251,7 @@
                         "derivative": 0.0,
                         "location": -0.5775,
                         "value": {
-                          "coordinate": "minecraft:overworld/ridges_folded",
+                          "coordinate": "tfg:venus/ridges_folded",
                           "points": [
                             {
                               "derivative": 0.0,
@@ -267,7 +267,7 @@
                               "derivative": 0.0,
                               "location": 1.0,
                               "value": {
-                                "coordinate": "minecraft:overworld/ridges",
+                                "coordinate": "tfg:venus/ridges",
                                 "points": [
                                   {
                                     "derivative": 0.0,

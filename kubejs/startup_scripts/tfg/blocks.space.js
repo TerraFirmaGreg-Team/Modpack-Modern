@@ -1491,6 +1491,8 @@ function registerTFGSpaceBlocks(event) {
 	//Fluorapatite
 	const fluorapatite_colors = ['blue', 'green', 'brown', 'orange', 'white', 'yellow'];
 	fluorapatite_colors.forEach(color => {
+		const mapColor = color === 'white' ? 'quartz' : `color_${color}`;
+
 		//Sand
 		event.create(`tfg:sand/fluorapatite/${color}`, 'falling')
 			.textureAll(`tfg:block/planets/venus/sand_fluorapatite_${color}`)
@@ -1499,7 +1501,7 @@ function registerTFGSpaceBlocks(event) {
 			.tagBoth('forge:sand')
 			.tagItem('forge:sand/fluorapatite')
 			.tagBlock('minecraft:mineable/shovel')
-			.mapColor(`color_${color}`)
+			.mapColor(mapColor)
 			.fullBlock(true)
 			.opaque(true)
 		//Raw Sandstone
@@ -1513,7 +1515,7 @@ function registerTFGSpaceBlocks(event) {
 			.tagBoth('forge:sandstone')
 			.tagItem('forge:sandstone/fluorapatite')
 			.tagBlock('minecraft:mineable/pickaxe')
-			.mapColor(`color_${color}`)
+			.mapColor(mapColor)
 			.fullBlock(true)
 			.opaque(true)
 		//Smooth Sandstone
@@ -1526,7 +1528,7 @@ function registerTFGSpaceBlocks(event) {
 			.tagBoth('forge:sandstone')
 			.tagItem('forge:sandstone/fluorapatite')
 			.tagBlock('minecraft:mineable/pickaxe')
-			.mapColor(`color_${color}`)
+			.mapColor(mapColor)
 			.fullBlock(true)
 			.opaque(true)
 		//Chiseled Sandstone
@@ -1541,7 +1543,7 @@ function registerTFGSpaceBlocks(event) {
 			.tagBoth('forge:sandstone')
 			.tagItem('forge:sandstone/fluorapatite')
 			.tagBlock('minecraft:mineable/pickaxe')
-			.mapColor(`color_${color}`)
+			.mapColor(mapColor)
 			.fullBlock(true)
 			.opaque(true)
 		//Sandstone
@@ -1556,7 +1558,7 @@ function registerTFGSpaceBlocks(event) {
 			.tagBoth('forge:sandstone')
 			.tagItem('forge:sandstone/fluorapatite')
 			.tagBlock('minecraft:mineable/pickaxe')
-			.mapColor(`color_${color}`)
+			.mapColor(mapColor)
 			.fullBlock(true)
 			.opaque(true)
 	})

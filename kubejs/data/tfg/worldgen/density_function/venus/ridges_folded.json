@@ -11,7 +11,7 @@
         "argument1": -0.6666666666666666,
         "argument2": {
           "type": "minecraft:abs",
-          "argument": "minecraft:overworld/ridges"
+          "argument": "tfg:venus/ridges"
         }
       }
     }

@@ -102,6 +102,14 @@ global.MARS_BIOMES = [
 ]
 
 /**
+ * @type {string[]} - Biome IDs
+ */
+global.VENUS_BIOMES = [
+	'tfg:venus/venus_delta',
+	'tfg:venus/venus_fractured_lands'
+]
+
+/**
  * @type {string[]} - Block Names
  */
 global.TFG_MACHINE_CASINGS = [

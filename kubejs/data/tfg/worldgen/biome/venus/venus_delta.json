@@ -62,7 +62,7 @@
 			"charge": 0.9
 		},
 		"ad_astra:sulfur_creeper": {
-			"energy_budget": 0.15,
+			"energy_budget": 0.2,
 			"charge": 0.7
 		}
 	},
@@ -98,7 +98,7 @@
 			},
 			{
 				"type": "ad_astra:sulfur_creeper",
-				"maxCount": 2,
+				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100
 			}
