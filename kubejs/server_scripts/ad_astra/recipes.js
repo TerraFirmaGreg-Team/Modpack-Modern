@@ -113,6 +113,31 @@ const registerAdAstraRecipes = (event) => {
 	
 	event.remove({ mod: 'gtceu', input: 'gtceu:hot_rocket_alloy_t2_ingot' })
 
+	event.recipes.gtceu.alloy_blast_smelter('gtceu:alloy_blast_smelter/rocket_alloy_t2')
+		.itemInputs('19x #forge:dusts/titanium', '3x #forge:dusts/chromium', '3x #forge:dusts/tin', '3x #forge:dusts/aluminium')
+		.inputFluids(Fluid.of('gtceu:vanadium', 144 * 4), Fluid.of('gtceu:distilled_water', 16000))
+		.outputFluids(Fluid.of('gtceu:molten_rocket_alloy_t2', 144 * 32))
+		.duration(1320 * 20)
+		.circuit(2)
+		.blastFurnaceTemp(3200)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.alloy_blast_smelter('gtceu:alloy_blast_smelter/rocket_alloy_t2_gas')
+		.itemInputs('19x #forge:dusts/titanium', '3x #forge:dusts/chromium', '3x #forge:dusts/tin', '3x #forge:dusts/aluminium')
+		.inputFluids(Fluid.of('gtceu:vanadium', 144 * 4), Fluid.of('gtceu:distilled_water', 16000), Fluid.of('gtceu:helium', 3200))
+		.outputFluids(Fluid.of('gtceu:molten_rocket_alloy_t2', 144 * 32))
+		.duration(17688)
+		.circuit(12)
+		.blastFurnaceTemp(3200)
+		.EUt(GTValues.VA[GTValues.EV])
+
+		event.recipes.gtceu.vacuum_freezer('tfg:vacuum_freezer/cool_molten_rocket_alloy_t2')
+		.notConsumable('gtceu:ingot_casting_mold')
+		.inputFluids(Fluid.of('gtceu:molten_rocket_alloy_t2', 144), Fluid.of('tfg:cryogenized_fluix', 288))
+		.itemOutputs('#forge:ingots/rocket_alloy_t2')
+		.duration(120)
+		.EUt(GTValues.VA[GTValues.MV])
+
 	event.recipes.gtceu.mixer('tfg:rocket_alloy_t2')
 		.itemInputs('19x #forge:dusts/titanium', '3x #forge:dusts/chromium', '3x #forge:dusts/tin', '3x #forge:dusts/aluminium')
 		.inputFluids(Fluid.of('gtceu:vanadium', 144 * 4))
