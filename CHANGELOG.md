@@ -4,6 +4,7 @@
 ### Mod updates
 - New GregTech patch, check the patch notes [here](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.2.1-1.20.1)
 - Changed to a different third-person mod that supports TACZ better
+- Aged Alcohols added their own effects for aged corn whiskey and rye whiskey (replacing our own), and now also has aged mead
 ### Changes
 - Changed TACZ ammo stack sizes to be more normal @BlueBoat29 
 - Buffed how far each Soarer "flap" can glide for @Pyritie

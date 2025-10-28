@@ -1034,34 +1034,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "ae2wtlib-15.3.0-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7014/805/ae2wtlib-15.3.0-forge.jar",
-                    "id": "7014805",
-                    "parent_id": "459929",
-                    "hashes": {
-                        "sha1": "889fa4f0aa90d3541e45ab59d41a249af3c9dd20",
-                        "md5": "fded4f093acdc40d8d81d73baac29034"
-                    },
-                    "required_dependencies": [
-                        "348521",
-                        "419699",
-                        "309927",
-                        "223794"
-                    ],
-                    "size": 227891,
-                    "date_published": "2025-09-20T11:05:18.890Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "ae2wtlib-15.3.0-forge.jar",
+                    "file_name": "ae2wtlib-15.3.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1069,21 +1043,47 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pNabrMMw/versions/Gy5UgOq4/ae2wtlib-15.3.0-forge.jar",
-                    "id": "Gy5UgOq4",
+                    "url": "https://cdn.modrinth.com/data/pNabrMMw/versions/BLQZoB0F/ae2wtlib-15.3.1-forge.jar",
+                    "id": "BLQZoB0F",
                     "parent_id": "pNabrMMw",
                     "hashes": {
-                        "sha512": "9e26b25e180f4f2368415ef8c96fd59df7a8911516a4601ecaa37177db3e1042c92d7ec8a2c8e760f99b46498689f72164cdf69b6aeab6f20765b77d4ce0507b",
-                        "sha1": "889fa4f0aa90d3541e45ab59d41a249af3c9dd20"
+                        "sha512": "57603754e9b51858678d0bbabea8c47050f56b810cdf06d528fdf97262cda4c26fa758830c997d2f0cdf7772142d70d99ea8e4be33fc9d20e54b7c43803ea109",
+                        "sha1": "2df257a66c16c30f4fcae2de0d6b387251b7f114"
                     },
                     "required_dependencies": [
-                        "9s6osm5g",
+                        "XxWD5pD3",
                         "vvuO3ImH",
-                        "lhGA9TYQ",
-                        "XxWD5pD3"
+                        "9s6osm5g",
+                        "lhGA9TYQ"
                     ],
-                    "size": 227891,
-                    "date_published": "2025-09-20T11:05:21.100923Z"
+                    "size": 228960,
+                    "date_published": "2025-10-26T23:02:08.228212Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "ae2wtlib-15.3.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7154/316/ae2wtlib-15.3.1-forge.jar",
+                    "id": "7154316",
+                    "parent_id": "459929",
+                    "hashes": {
+                        "sha1": "2df257a66c16c30f4fcae2de0d6b387251b7f114",
+                        "md5": "91c10c49ecea8f771aef27de03da0dec"
+                    },
+                    "required_dependencies": [
+                        "223794",
+                        "348521",
+                        "309927",
+                        "419699"
+                    ],
+                    "size": 228960,
+                    "date_published": "2025-10-26T23:02:05.480Z"
                 }
             ]
         },
@@ -5273,7 +5273,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "everycomp-1.20-2.9.8-forge.jar",
+                    "file_name": "everycomp-1.20-2.9.9-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5281,22 +5281,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/eiktJyw1/versions/euwlwydU/everycomp-1.20-2.9.8-forge.jar",
-                    "id": "euwlwydU",
+                    "url": "https://cdn.modrinth.com/data/eiktJyw1/versions/S6PhzmO8/everycomp-1.20-2.9.9-forge.jar",
+                    "id": "S6PhzmO8",
                     "parent_id": "eiktJyw1",
                     "hashes": {
-                        "sha512": "5960f52f0808161ad4326415d809c745fdc136b2cecf2d7d735dd61fa13eff3182a2f9fc53f957f35c349b77be2002e29cce6337b0ba61fa1f9f281c88850b38",
-                        "sha1": "9e54a66019e9d510ff4b08b79922a969d9add380"
+                        "sha512": "cc4b0ddd47f421b1d045e755912c1118f5db60f2c699266576c4302162e753bc11537d8c5c31416f95566d5df42de3edfd781704df1108ba286dc6e3e40d856c",
+                        "sha1": "666eb792088684bf576a71c20eb24f654abb51fa"
                     },
                     "required_dependencies": [
                         "twkfQtEc"
                     ],
-                    "size": 2787368,
-                    "date_published": "2025-10-16T03:06:34.731902Z"
+                    "size": 2792770,
+                    "date_published": "2025-10-26T21:32:31.262632Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "everycomp-1.20-2.9.8-forge.jar",
+                    "file_name": "everycomp-1.20-2.9.9-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5304,18 +5304,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7112/56/everycomp-1.20-2.9.8-forge.jar",
-                    "id": "7112056",
+                    "url": "https://edge.forgecdn.net/files/7153/995/everycomp-1.20-2.9.9-forge.jar",
+                    "id": "7153995",
                     "parent_id": "628539",
                     "hashes": {
-                        "sha1": "9e54a66019e9d510ff4b08b79922a969d9add380",
-                        "md5": "d0f21508079896c96f1052cc21edd392"
+                        "sha1": "666eb792088684bf576a71c20eb24f654abb51fa",
+                        "md5": "39370d9743ad8a57f7d6121efaa9d769"
                     },
                     "required_dependencies": [
                         "499980"
                     ],
-                    "size": 2787368,
-                    "date_published": "2025-10-16T03:06:22.227Z"
+                    "size": 2792770,
+                    "date_published": "2025-10-26T21:32:18.910Z"
                 }
             ]
         },
@@ -12256,7 +12256,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TFCAgedAlcohol-1.20.1-2.2.jar",
+                    "file_name": "TFCAgedAlcohol-1.20.1-2.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12265,16 +12265,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6299/84/TFCAgedAlcohol-1.20.1-2.2.jar",
-                    "id": "6299084",
+                    "url": "https://edge.forgecdn.net/files/7156/329/TFCAgedAlcohol-1.20.1-2.3.jar",
+                    "id": "7156329",
                     "parent_id": "880532",
                     "hashes": {
-                        "sha1": "0f9389d1fc476e8071bf342703dbb9211a310934",
-                        "md5": "92066762e266e7abacf6798fbe0de446"
+                        "sha1": "e37031fe92336c8fe3b06c7b232da857f360d938",
+                        "md5": "86af1c578b5cf908aefcf8a0ebcfa16d"
                     },
-                    "required_dependencies": [],
-                    "size": 43968,
-                    "date_published": "2025-03-13T08:07:55.920Z"
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 47036,
+                    "date_published": "2025-10-27T15:06:05.223Z"
                 }
             ]
         },
