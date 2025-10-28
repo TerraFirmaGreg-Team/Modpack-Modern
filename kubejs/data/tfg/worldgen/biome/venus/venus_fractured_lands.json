@@ -43,7 +43,7 @@
 			"energy_budget": 0.05,
 			"charge": 0.9
 		},
-		"endermanoverhaul:savannah_enderman": {
+		"endermanoverhaul:savanna_enderman": {
 			"energy_budget": 0.05,
 			"charge": 0.9
 		},
@@ -73,7 +73,7 @@
 				"weight": 100
 			},
 			{
-				"type": "endermanoverhaul:savannah_enderman",
+				"type": "endermanoverhaul:savanna_enderman",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 100
