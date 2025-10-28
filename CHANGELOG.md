@@ -17,11 +17,14 @@
 - Added ABS recipe for T2 Rocket Alloy @Xtrial-01
 - Changed the color of Rhodium Plated Palladium to be more unique @BlueBoat29
 - Changed the Ad Astra planet screen to reflect TFG @BlueBoat29 @Redeix
+- Added assembler recipes for railgun buses (#2119) @Xtrial-01
+- Changed Salvos to use Phenol instead of Aminophenol (#2119) @Xtrial-01
+- The teleporting between the Beneath and the Overworld should now only replace collapsible blocks with air (instead of everything), and will give 30 sec of slow fall and fire protection @Pyritie
 ### Bug fixes
 - Fixed part of the tungsten processing loop giving way too much salt (#2095) @Redeix
 - Fixed basic super tanks so you can now left/right click with them in GUIs like you can with the others (#2100) @jurrejelle
 - Fixed sometimes crash on startup (#2098) @Pyritie
-- Fixed some quest misinformation (#2097) @Pyritie, @jmecn
+- Fixed some quest misinformation (#2097, #2119) @Pyritie, @jmecn, @Xtrial-01
 - Fixed not being able to ride Soarers (#2082) @Pyritie
 - Fixed Soarer "flap" GUI overlapping with the minimap @Pyritie
 - Fixed aqueduct recipes (#2101) @vidal-adrien
@@ -30,6 +33,7 @@
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
+- Japanese @sakura-gondra
 
 ## [0.11.5] - 22-10-2025
 - Fixed missing ComputerCraft in single player modpack, due to a bug in the latest pakku version
