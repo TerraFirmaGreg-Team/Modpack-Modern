@@ -281,6 +281,26 @@ function registerTFGSpaceRecipes(event) {
 	// Railgun stuff
 	// (the railgun inputs and outputs are in tfg-core)
 
+
+	//item bus to railgun item bus conversion recipes
+	const GTTiers = ['ulv', 'lv', 'mv', 'hv', 'ev', 'iv', 'luv', 'zpm', 'uv', 'uhv']
+	GTTiers.forEach(x => {
+		event.recipes.gtceu.assembler(`tfg:${x}_input_to_${x}_railgun_input_assembler`)
+			.itemInputs(`gtceu:${x}_input_bus`)
+			.circuit(4)
+			.itemOutputs(`tfg:${x}_railgun_item_loader_in`)
+			.duration(20 * 5)
+			.EUt(GTValues.VA[GTValues.LV])
+		
+		event.recipes.gtceu.assembler(`tfg:${x}_output_to_${x}_railgun_output_assembler`)
+			.itemInputs(`gtceu:${x}_output_bus`)
+			.circuit(4)
+			.itemOutputs(`tfg:${x}_railgun_item_loader_out`)
+			.duration(20 * 5)
+			.EUt(GTValues.VA[GTValues.LV])
+	})
+
+	//Railgun ammo
 	event.recipes.gtceu.assembler('tfg:railgun_ammo_basic')
 		.itemInputs('#forge:double_plates/steel', '2x #forge:rods/magnetic_iron', '2x #forge:fine_wires/annealed_copper')
 		.inputFluids('gtceu:rocket_fuel 250')

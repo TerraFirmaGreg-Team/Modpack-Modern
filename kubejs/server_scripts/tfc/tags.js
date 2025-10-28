@@ -598,6 +598,7 @@ function registerTFCFluidTags(event) {
     event.add("tfc:alcohols", "tfcagedalcohol:aged_whiskey");
     event.add("tfc:alcohols", "tfcagedalcohol:aged_corn_whiskey");
     event.add("tfc:alcohols", "tfcagedalcohol:aged_rye_whiskey");
+    event.add("tfc:alcohols", "tfcagedalcohol:aged_mead");
 
     // Добавляем тег для скрытия в EMI
     event.add("c:hidden_from_recipe_viewers", "tfc:metal/bismuth");
