@@ -593,6 +593,7 @@ function transformBlockWithToolReturn(event, inputBlock, outputBlock, outputItem
 	} else {
 		if (block.id.toString() !== inputBlock) return;
 	}
+	if (!player.crouching) return;
 
 	if (toolId.startsWith('#')) {
 		if (item.isEmpty() || !player.mainHandItem.hasTag(toolId.substring(1))) return;
@@ -754,7 +755,7 @@ BlockEvents.rightClicked(event => {
 	transformBlockWithToolReturn(event, 'tfg:moderate_core_frame', 'gtceu:incoloy_ma_956_frame', 'tfg:graphite_moderator', 1, '#forge:tools/wire_cutters', true, 'minecraft:block.beehive.shear', 'minecraft:crit', true);
 
 	transformBlockWithItem(event, 'gtceu:incoloy_ma_956_frame', 'tfg:impure_moderate_core_frame', 'tfg:impure_graphite_moderator', true, 1, 'block.wool.place', 'minecraft:happy_villager', true);
-	transformBlockWithToolReturn(event, 'tfg:impure_moderate_core_frame', 'gtceu:incoloy_ma_956_frame', 'tfg:graphite_moderator', 1, '#forge:tools/wire_cutters', true, 'minecraft:block.beehive.shear', 'minecraft:crit', true);
+	transformBlockWithToolReturn(event, 'tfg:impure_moderate_core_frame', 'gtceu:incoloy_ma_956_frame', 'tfg:impure_graphite_moderator', 1, '#forge:tools/wire_cutters', true, 'minecraft:block.beehive.shear', 'minecraft:crit', true);
 
 });
 

@@ -22,6 +22,7 @@
 - Changed Salvos to use Phenol instead of Aminophenol (#2119) @Xtrial-01
 - The teleporting between the Beneath and the Overworld should now only replace collapsible blocks with air (instead of everything), and will give 30 sec of slow fall and fire protection @Pyritie
 - Added tortilla chips, tomato sauce, salsa, and shredded cheese to the meal bag tag @Pyritie
+- Glacian Rams now give more wool @BlueBoat29
 ### Bug fixes
 - Fixed part of the tungsten processing loop giving way too much salt (#2095) @Redeix
 - Fixed basic super tanks so you can now left/right click with them in GUIs like you can with the others (#2100) @jurrejelle
@@ -33,6 +34,7 @@
 - Fixed some AFC logs not having stripping recipes @Pyritie
 - Fixed some issues related to AE2 blocking mode @ko-lja
 - Fixed wild bulbkin plants not dropping bulbkin seeds @Pyritie
+- Fixed graphite moderator frame interactions @BlueBoat29
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
