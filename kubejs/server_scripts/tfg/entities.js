@@ -26,6 +26,7 @@ const NEW_MOB_MAX_HP = {
 	"endermanoverhaul:savanna_enderman": 65,
 	"endermanoverhaul:desert_enderman": 70,
 	"ad_astra:sulfur_creeper": 60,
+	"species:cliff_hanger": 75,
 
 	// europa mobs
 	"endermanoverhaul:ice_spikes_enderman": 85,
@@ -46,6 +47,7 @@ const NEW_MOB_ARMOR = {
 	"endermanoverhaul:desert_enderman": 4,
 	"endermanoverhaul:nether_wastes_enderman": 2,
 	"ad_astra:sulfur_creeper": 4,
+	"species:cliff_hanger": 2,
 };
 
 

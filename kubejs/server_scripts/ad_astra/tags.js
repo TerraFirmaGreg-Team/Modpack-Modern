@@ -546,8 +546,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'endermanoverhaul:snowy_enderman',
 		'endermanoverhaul:ice_spikes_enderman',
 		'species:deepfish',
-		'species:leaf_hanger',
-		'species:cliff_hanger',
+		'species:leaf_hanger'
 	]
 
 	const HOT_ENTITIES = [
@@ -556,7 +555,8 @@ const registerAdAstraEntityTypeTags = (event) => {
 		"endermanoverhaul:desert_enderman",
 		"endermanoverhaul:savanna_enderman",
 		"endermanoverhaul:nether_wastes_enderman",
-		"ad_astra:sulfur_creeper"
+		"ad_astra:sulfur_creeper",
+		'species:cliff_hanger',
 	]
 
 	COLD_ENTITIES.forEach(entity => {
