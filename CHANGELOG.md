@@ -1,6 +1,10 @@
 # Changelog
 
 ## [Unreleased]
+### Changes
+### Bug fixes
+
+## [0.11.6] - 29-10-2025
 ### Mod updates
 - New GregTech patch, check the patch notes [here](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.2.1-1.20.1)
 - Changed to a different third-person mod that supports TACZ better
@@ -23,6 +27,9 @@
 - The teleporting between the Beneath and the Overworld should now only replace collapsible blocks with air (instead of everything), and will give 30 sec of slow fall and fire protection @Pyritie
 - Added tortilla chips, tomato sauce, salsa, and shredded cheese to the meal bag tag @Pyritie
 - Glacian Rams now give more wool @BlueBoat29
+- Rotor Holders now require an Assembler of the appropriate tier to be crafted (#2123) @TomPlop
+- Lowered the craft time of Refrigerant Pellets until a better solution is finished (#2123) @TomPlop
+- Lowered the craft time of ammonium tungstate dust (#2123) @TomPlop
 ### Bug fixes
 - Fixed part of the tungsten processing loop giving way too much salt (#2095) @Redeix
 - Fixed basic super tanks so you can now left/right click with them in GUIs like you can with the others (#2100) @jurrejelle
@@ -35,6 +42,7 @@
 - Fixed some issues related to AE2 blocking mode @ko-lja
 - Fixed wild bulbkin plants not dropping bulbkin seeds @Pyritie
 - Fixed graphite moderator frame interactions @BlueBoat29
+- Fixed some casings not being mineable with a wrench (#2123) @TomPlop
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
