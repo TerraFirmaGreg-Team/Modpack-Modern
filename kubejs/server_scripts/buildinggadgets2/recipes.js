@@ -16,20 +16,7 @@ const registerBuildingGadgetsRecipes = (event) => {
 		.itemOutputs('buildinggadgets2:gadget_building')
 		.duration(160)
 		.EUt(2000)
-	
-	event.recipes.gtceu.arc_furnace('buildinggadgets2:arc_furnace/recycling/gadget_building')
-		.itemInputs('1x buildinggadgets2:gadget_building')
-		.itemOutputs('10x gtceu:titanium_ingot', '1x gtceu:lapotron_gem')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-
-	event.recipes.gtceu.macerator('buildinggadgets2:macerator/recycling/gadget_building')
-		.itemInputs('1x buildinggadgets2:gadget_building')
-		.itemOutputs('10x gtceu:titanium_dust', '15x gtceu:lapotron_dust')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+		.addMaterialInfo(true)
 
 	// Exchanging Gadget
 	event.recipes.gtceu.assembler('buildinggadgets2:/assembler/gadget_exchanging')
@@ -38,20 +25,7 @@ const registerBuildingGadgetsRecipes = (event) => {
 		.itemOutputs('buildinggadgets2:gadget_exchanging')
 		.duration(160)
 		.EUt(2000)
-	
-	event.recipes.gtceu.arc_furnace('buildinggadgets2:arc_furnace/recycling/gadget_exchanging')
-		.itemInputs('1x buildinggadgets2:gadget_exchanging')
-		.itemOutputs('10x gtceu:titanium_ingot', '1x gtceu:lapotron_gem')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-
-	event.recipes.gtceu.macerator('buildinggadgets2:macerator/recycling/gadget_exchanging')
-		.itemInputs('1x buildinggadgets2:gadget_exchanging')
-		.itemOutputs('10x gtceu:titanium_dust', '15x gtceu:lapotron_dust')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+		.addMaterialInfo(true)
 
 	// Copy Paste Gadget
 	event.recipes.gtceu.assembler('buildinggadgets2:/assembler/gadget_copy_paste')
@@ -60,20 +34,7 @@ const registerBuildingGadgetsRecipes = (event) => {
 		.itemOutputs('buildinggadgets2:gadget_copy_paste')
 		.duration(160)
 		.EUt(8100)
-	
-	event.recipes.gtceu.arc_furnace('buildinggadgets2:arc_furnace/recycling/gadget_copy_paste')
-		.itemInputs('1x buildinggadgets2:gadget_copy_paste')
-		.itemOutputs('10x gtceu:tungsten_steel_ingot', '1x gtceu:lapotron_gem')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-
-	event.recipes.gtceu.macerator('buildinggadgets2:macerator/recycling/gadget_copy_paste')
-		.itemInputs('1x buildinggadgets2:gadget_copy_paste')
-		.itemOutputs('10x gtceu:tungsten_steel_dust', '15x gtceu:lapotron_dust')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+		.addMaterialInfo(true)
 
 	// Dustruction Gadget
 	event.recipes.gtceu.assembler('buildinggadgets2:/assembler/gadget_destruction')
@@ -82,20 +43,7 @@ const registerBuildingGadgetsRecipes = (event) => {
 		.itemOutputs('buildinggadgets2:gadget_destruction')
 		.duration(160)
 		.EUt(2000)
-	
-	event.recipes.gtceu.arc_furnace('buildinggadgets2:arc_furnace/recycling/gadget_destruction')
-		.itemInputs('1x buildinggadgets2:gadget_destruction')
-		.itemOutputs('10x gtceu:titanium_ingot', '1x gtceu:energy_crystal')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-
-	event.recipes.gtceu.macerator('buildinggadgets2:macerator/recycling/gadget_destruction')
-		.itemInputs('1x buildinggadgets2:gadget_destruction')
-		.itemOutputs('10x gtceu:titanium_dust', '9x gtceu:energium_dust')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+		.addMaterialInfo(true)
 
 	// Cut Paste Gadget
 	event.recipes.gtceu.assembler('buildinggadgets2:/assembler/gadget_cut_paste')
@@ -104,20 +52,7 @@ const registerBuildingGadgetsRecipes = (event) => {
 		.itemOutputs('buildinggadgets2:gadget_cut_paste')
 		.duration(160)
 		.EUt(8100)
-	
-	event.recipes.gtceu.arc_furnace('buildinggadgets2:arc_furnace/recycling/gadget_cut_paste')
-		.itemInputs('1x buildinggadgets2:gadget_cut_paste')
-		.itemOutputs('10x gtceu:tungsten_steel_ingot', '1x gtceu:energy_crystal')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-
-	event.recipes.gtceu.macerator('buildinggadgets2:macerator/recycling/gadget_cut_paste')
-		.itemInputs('1x buildinggadgets2:gadget_cut_paste')
-		.itemOutputs('10x gtceu:tungsten_steel_dust', '9x gtceu:energium_dust')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+		.addMaterialInfo(true)
 
 	// Template Manager
 	event.recipes.gtceu.assembler('buildinggadgets2:/assembler/template_manager')
@@ -126,18 +61,5 @@ const registerBuildingGadgetsRecipes = (event) => {
 		.itemOutputs('buildinggadgets2:template_manager ')
 		.duration(160)
 		.EUt(2000)
-	
-	event.recipes.gtceu.arc_furnace('buildinggadgets2:arc_furnace/recycling/template_manager')
-		.itemInputs('1x buildinggadgets2:template_manager')
-		.itemOutputs('10x gtceu:tungsten_steel_ingot')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-
-	event.recipes.gtceu.macerator('buildinggadgets2:macerator/recycling/template_manager')
-		.itemInputs('1x buildinggadgets2:template_manager')
-		.itemOutputs('10x gtceu:tungsten_steel_dust')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+		.addMaterialInfo(true)
 }

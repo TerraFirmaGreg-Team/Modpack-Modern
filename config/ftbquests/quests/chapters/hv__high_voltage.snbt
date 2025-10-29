@@ -1127,7 +1127,7 @@
 				dimension: "ad_astra:moon"
 				icon: "ad_astra:moon_globe"
 				id: "39DDB5FE1449E38A"
-				title: "I'm on the Moon"
+				title: "{quests.high_voltage.welcome_moon.title}"
 				type: "dimension"
 			}]
 			title: "{quests.high_voltage.welcome_moon.title}"

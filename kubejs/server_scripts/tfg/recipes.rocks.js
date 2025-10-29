@@ -195,7 +195,7 @@ function registerTFGRockRecipes(event) {
 			'A A',
 			'BAB'
 		], {
-			A: x.loose,
+			A: x.brick,
 			B: 'tfc:mortar'
 		})
 	})
@@ -900,7 +900,6 @@ function registerTFGRockRecipes(event) {
 	])
 
 	CUT_GRIND.forEach(x => {
-		console.log(x.raw)
 		if (x.raw != null && x.dust != null ) {
 			try{
 				event.recipes.gtceu.macerator(x.raw.replace(/.*:/g, 'macerate_'))
@@ -992,32 +991,32 @@ function registerTFGRockRecipes(event) {
 	// #region MACERATOR
 	// For all the blocks not already handles bu the CUTTER loop.
 	const MACERATOR = [
-		{ block: 'tfg:rock/hardened_deepslate',      dust: 'gtceu:deepslate_dust'    },
-		{ block: 'minecraft:chiseled_deepslate',     dust: 'gtceu:deepslate_dust'    },
-		{ block: 'tfg:rock/hardened_blackstone',     dust: 'gtceu:blackstone_dust'   },
-		{ block: 'minecraft:chiseled_blackstone',    dust: 'gtceu:blackstone_dust'   },
-		{ block: 'tfg:rock/hardened_dripstone',      dust: 'tfg:dripstone_dust'      },
-		{ block: 'minecraft:chiseled_nether_bricks', dust: 'gtceu:netherrack_dust'   },		
-		{ block: 'tfg:rock/hardened_moon_stone',     dust: 'tfg:moon_stone_dust'     },
-		{ block: 'ad_astra:moon_pillar',             dust: 'tfg:moon_stone_dust'     },
-		{ block: 'tfg:rock/hardened_moon_deepslate', dust: 'tfg:moon_deepslate_dust' },
-		{ block: 'tfg:rock/pillar_moon_deepslate',   dust: 'tfg:moon_deepslate_dust' },
-		{ block: 'tfg:rock/hardened_mars_stone',     dust: 'tfg:mars_stone_dust'     },
-		{ block: 'ad_astra:mars_pillar',             dust: 'tfg:mars_stone_dust'     },
-		{ block: 'tfg:rock/hardened_venus_stone',    dust: 'tfg:venus_stone_dust'    },
-		{ block: 'ad_astra:venus_pillar',            dust: 'tfg:venus_stone_dust'    },
-		{ block: 'tfg:rock/hardened_mercury_stone',  dust: 'tfg:mercury_stone_dust'  },
-		{ block: 'ad_astra:mercury_pillar',          dust: 'tfg:mercury_stone_dust'  },
-		{ block: 'tfg:rock/hardened_glacio_stone',   dust: 'tfg:glacio_stone_dust'   },
-		{ block: 'ad_astra:glacio_pillar',           dust: 'tfg:glacio_stone_dust'   },		
-		{ block: 'tfg:rock/hardened_red_granite',    dust: 'gtceu:granite_red_dust'  },
-		{ block: 'gtceu:red_granite_tile',           dust: 'gtceu:granite_red_dust'  },
-		{ block: 'gtceu:square_red_granite_bricks',  dust: 'gtceu:granite_red_dust'  },
-		{ block: 'gtceu:red_granite_windmill_a',     dust: 'gtceu:granite_red_dust'  },
-		{ block: 'gtceu:red_granite_windmill_b',     dust: 'gtceu:granite_red_dust'  },
-		{ block: 'gtceu:small_red_granite_bricks',   dust: 'gtceu:granite_red_dust'  },
-		{ block: 'gtceu:red_granite_small_tile',     dust: 'gtceu:granite_red_dust'  },
-		{ block: 'gtceu:chiseled_red_granite',       dust: 'gtceu:granite_red_dust'  }		
+		{ block: 'tfg:rock/hardened_deepslate',            dust: 'gtceu:deepslate_dust'    },
+		{ block: 'minecraft:chiseled_deepslate',           dust: 'gtceu:deepslate_dust'    },
+		{ block: 'tfg:rock/hardened_blackstone',           dust: 'gtceu:blackstone_dust'   },
+		{ block: 'minecraft:chiseled_polished_blackstone', dust: 'gtceu:blackstone_dust'   },
+		{ block: 'tfg:rock/hardened_dripstone',            dust: 'tfg:dripstone_dust'      },
+		{ block: 'minecraft:chiseled_nether_bricks',       dust: 'gtceu:netherrack_dust'   },
+		{ block: 'tfg:rock/hardened_moon_stone',           dust: 'tfg:moon_stone_dust'     },
+		{ block: 'ad_astra:moon_pillar',                   dust: 'tfg:moon_stone_dust'     },
+		{ block: 'tfg:rock/hardened_moon_deepslate',       dust: 'tfg:moon_deepslate_dust' },
+		{ block: 'tfg:rock/pillar_moon_deepslate',         dust: 'tfg:moon_deepslate_dust' },
+		{ block: 'tfg:rock/hardened_mars_stone',           dust: 'tfg:mars_stone_dust'     },
+		{ block: 'ad_astra:mars_pillar',                   dust: 'tfg:mars_stone_dust'     },
+		{ block: 'tfg:rock/hardened_venus_stone',          dust: 'tfg:venus_stone_dust'    },
+		{ block: 'ad_astra:venus_pillar',                  dust: 'tfg:venus_stone_dust'    },
+		{ block: 'tfg:rock/hardened_mercury_stone',        dust: 'tfg:mercury_stone_dust'  },
+		{ block: 'ad_astra:mercury_pillar',                dust: 'tfg:mercury_stone_dust'  },
+		{ block: 'tfg:rock/hardened_glacio_stone',         dust: 'tfg:glacio_stone_dust'   },
+		{ block: 'ad_astra:glacio_pillar',                 dust: 'tfg:glacio_stone_dust'   },
+		{ block: 'tfg:rock/hardened_red_granite',          dust: 'gtceu:granite_red_dust'  },
+		{ block: 'gtceu:red_granite_tile',                 dust: 'gtceu:granite_red_dust'  },
+		{ block: 'gtceu:square_red_granite_bricks',        dust: 'gtceu:granite_red_dust'  },
+		{ block: 'gtceu:red_granite_windmill_a',           dust: 'gtceu:granite_red_dust'  },
+		{ block: 'gtceu:red_granite_windmill_b',           dust: 'gtceu:granite_red_dust'  },
+		{ block: 'gtceu:small_red_granite_bricks',         dust: 'gtceu:granite_red_dust'  },
+		{ block: 'gtceu:red_granite_small_tile',           dust: 'gtceu:granite_red_dust'  },
+		{ block: 'gtceu:chiseled_red_granite',             dust: 'gtceu:granite_red_dust'  }
 	]
 
 	MACERATOR.forEach(x => {
@@ -1144,7 +1143,6 @@ function registerTFGRockRecipes(event) {
 	]
 
 	PILLARS_H.forEach(x => {
-		console.log(x.pillar)
 		event.shaped(`2x ${x.pillar}`, [
 			'AA'
 		], {

@@ -1,0 +1,49 @@
+{
+	"name": "Регулювання температури",
+	"category": "tfc:beneath",
+	"icon": "minecraft:ice",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Безодня гаряча! Температура починається з 15°C на самому верху і лише стає гарячішою, коли ви спускаєтеся.$(br2)$(item)Мішковина$() та $(item)Шовк$() одяг можуть допомогти, але ось кілька інших способів залишатися в прохолоді!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:water_bucket",
+			"title": "Вода",
+			"text": "Вода зустрічається повсюди на верхніх рівнях Безодні. Швидке занурення може швидко вас охолодити!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Лід",
+			"item": "minecraft:packed_ice",
+			"text": "Візьміть із собою трохи $(thing)Льоду$()! Стояння поруч із ним знизить температуру навколишнього середовища. Лід можна добути на поверхні за допомогою $(item)Пили$(), а $(thing)Щільний$() та $(thing)Синій$() лід не тануть."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Обладунки зі Синьої Сталі",
+			"item": "create:netherite_diving_helmet,create:netherite_backtank,minecraft:netherite_leggings,create:netherite_diving_boots",
+			"text": "Шукаєте щось більш постійне? $(thing)Набір для занурення зі Синьої Сталі$() збереже вашу температуру на рівні 28°C і дозволить плавати в лаві!$(br2)$(item)Жаростійкі Шкури$() можна отримати від місцевих $(thing)Червоних Лосів$() або знайти в Бастіонах."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/netherite_diving_helmet",
+			"recipe2": "tfg:create/shaped/netherite_diving_helmet_upgrade"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/netherite_backtank",
+			"recipe2": "tfg:create/shaped/netherite_backtank_upgrade"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:minecraft/shaped/netherite_leggings"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/netherite_diving_boots",
+			"recipe2": "tfg:create/shaped/netherite_diving_boots_upgrade"
+		}
+	],
+	"read_by_default": true
+}

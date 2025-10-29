@@ -503,7 +503,7 @@ function registerTFGMedicineRecipes(event) {
 
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/salvo_invisibility`)
 		.circuit(4)
-		.inputFluids(Fluid.of('gtceu:aminophenol', 250))
+		.inputFluids(Fluid.of('gtceu:phenol', 250))
 		.itemOutputs('1x tfg:invisibility_salvo')
 		.itemInputs('gtceu:sticky_resin', '#tfg:invisibility_ingredients', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
 		.duration(200)
@@ -515,7 +515,7 @@ function registerTFGMedicineRecipes(event) {
 
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/salvo_fire_resistance`)
 		.circuit(4)
-		.inputFluids(Fluid.of('gtceu:aminophenol', 250))
+		.inputFluids(Fluid.of('gtceu:phenol', 250))
 		.itemOutputs('1x tfg:fire_resistance_salvo')
 		.itemInputs('gtceu:sticky_resin', '#tfg:fire_resistance_ingredients', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
 		.duration(200)
@@ -527,7 +527,7 @@ function registerTFGMedicineRecipes(event) {
 
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/salvo_resistance`)
 		.circuit(4)
-		.inputFluids(Fluid.of('gtceu:aminophenol', 250))
+		.inputFluids(Fluid.of('gtceu:phenol', 250))
 		.itemOutputs('1x tfg:resistance_salvo')
 		.itemInputs('gtceu:sticky_resin', '#tfg:resistance_ingredients', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
 		.duration(200)
@@ -539,7 +539,7 @@ function registerTFGMedicineRecipes(event) {
 	
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/salvo_instant_health`)
 		.circuit(4)
-		.inputFluids(Fluid.of('gtceu:aminophenol', 250))
+		.inputFluids(Fluid.of('gtceu:phenol', 250))
 		.itemOutputs('1x tfg:instant_health_salvo')
 		.itemInputs('gtceu:sticky_resin', '#tfg:instant_health_ingredients', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
 		.duration(200)
@@ -551,7 +551,7 @@ function registerTFGMedicineRecipes(event) {
 
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/salvo_absorption`)
 		.circuit(4)
-		.inputFluids(Fluid.of('gtceu:aminophenol', 250))
+		.inputFluids(Fluid.of('gtceu:phenol', 250))
 		.itemOutputs('1x tfg:absorption_salvo')
 		.itemInputs('gtceu:sticky_resin', '#tfg:absorption_ingredients', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
 		.duration(200)

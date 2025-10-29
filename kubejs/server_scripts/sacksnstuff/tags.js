@@ -40,5 +40,6 @@ function registerSNSItemTags(event) {
 	event.remove('sns:prevented_in_burlap_sack', '#tfc:small_ore_pieces')
 	event.remove('sns:prevented_in_leather_sack', '#tfc:small_ore_pieces')
 
-
+	// Remove this tag to avoid confusion with the other lunchbox
+	event.removeAll('sns:lunchbox_food')
 }

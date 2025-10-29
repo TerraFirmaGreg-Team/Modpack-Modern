@@ -341,28 +341,26 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemInputs('1x minecraft:phantom_membrane')
 		.itemOutputs('16x tfg:phantom_thread')
 		.duration(100)
-		.circuit(0)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.wiremill('tfg:wiremill/polycaprolactam_string')
 		.itemInputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Polycaprolactam, 1))
 		.itemOutputs('32x tfg:polycaprolactam_string')
 		.duration(100)
-		.circuit(0)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.assembler('tfg:assembler/phantom_silk')
 		.itemInputs('16x tfg:phantom_thread')
 		.itemOutputs('1x tfg:phantom_silk')
 		.duration(100)
-		.circuit(0)
+		.circuit(3)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.assembler('tfg:assembler/polycaprolactam_fabric')
 		.itemInputs('16x tfg:polycaprolactam_string')
 		.itemOutputs('1x tfg:polycaprolactam_fabric')
 		.duration(100)
-		.circuit(0)
+		.circuit(3)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_bath('tfg:chemical_bath/bleaching/polycaprolactam_string')
@@ -811,6 +809,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(200)
 		.circuit(4)
 		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true)
 
 	//Rock-wool stuff
 	event.recipes.gtceu.mixer('tfg:aes_mix')
@@ -1310,6 +1309,21 @@ function registerTFGMiscellaneousRecipes(event) {
 	//#endregion
 
 	//#region flax stuff
+
+	event.shapeless('1x tfg:flax_bundle', ['9x tfg:flax_product'])
+	event.recipes.gtceu.packer('tfg:packer/flax_bundle')
+		.itemInputs('9x tfg:flax_product')
+		.itemOutputs('tfg:flax_bundle')
+		.duration('100')
+		.EUt(GTValues.VA[GTValues.ULV])	
+
+	event.shapeless('1x tfg:bundled_scraped_flax', ['9x tfg:flax_waste'])
+	event.recipes.gtceu.packer('tfg:packer/bundled_scraped_flax')
+		.itemInputs('9x tfg:flax_waste')
+		.itemOutputs('tfg:bundled_scraped_flax')
+		.duration('100')
+		.EUt(GTValues.VA[GTValues.ULV])		
+
 	event.recipes.tfc.scraping(
 		'tfg:flax_waste',
 		'tfg:flax_product',
@@ -1319,6 +1333,14 @@ function registerTFGMiscellaneousRecipes(event) {
 	).id('tfg:scraping/flax_line')
 
 	event.recipes.tfc.scraping(
+		'tfg:bundled_scraped_flax',
+		'tfg:flax_bundle',
+		'tfg:item/bundled_scraped_flax',
+		'tfg:item/flax_bundle',
+		'18x tfg:flax_line'
+	).id('tfg:scraping/flax_line_from_bundle')	
+
+	event.recipes.tfc.scraping(
 		'tfc:groundcover/humus',
 		'tfg:flax_waste',
 		'tfc:item/groundcover/humus',
@@ -1326,16 +1348,36 @@ function registerTFGMiscellaneousRecipes(event) {
 		'tfg:flax_tow'
 	).id('tfg:scraping/flax_tow')
 
+	event.recipes.tfc.scraping(
+		'9x tfc:groundcover/humus',
+		'tfg:bundled_scraped_flax',
+		'tfc:item/groundcover/humus',
+		'tfg:item/bundled_scraped_flax',
+		'9x tfg:flax_tow'
+	).id('tfg:scraping/flax_tow_from_pile')
+
 	event.recipes.gtceu.cutter('tfg:flax_line_in_cutter')
 		.itemInputs('tfg:flax_product')
 		.itemOutputs('2x tfg:flax_line', 'tfg:flax_waste')
 		.duration(60)
 		.EUt(2)
 
+	event.recipes.gtceu.cutter('tfg:flax_line_from_bundle_in_cutter')
+		.itemInputs('tfg:flax_bundle')
+		.itemOutputs('18x tfg:flax_line', 'tfg:bundled_scraped_flax')
+		.duration(540)
+		.EUt(2)	
+
 	event.recipes.gtceu.cutter('tfg:flax_tow_in_cutter')
 		.itemInputs('tfg:flax_waste')
 		.itemOutputs('1x tfg:flax_tow', '1x tfc:groundcover/humus')
 		.duration(60)
+		.EUt(2)
+	
+	event.recipes.gtceu.cutter('tfg:flax_tow_from_bundle_in_cutter')
+		.itemInputs('tfg:bundled_scraped_flax')
+		.itemOutputs('9x tfg:flax_tow', '9x tfc:groundcover/humus')
+		.duration(540)
 		.EUt(2)
 
 	event.recipes.gtceu.centrifuge('tfg:flax_product')
@@ -1344,12 +1386,25 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	event.recipes.gtceu.centrifuge('tfg:flax_product_from_bundle')
+		.itemInputs('tfg:flax_bundle')
+		.itemOutputs('18x tfg:flax_line', '9x tfg:flax_tow', '9x tfc:groundcover/humus')
+		.duration(1800)
+		.EUt(GTValues.VA[GTValues.LV])	
+
 	event.custom({
 		type: 'vintageimprovements:centrifugation',
 		ingredients: [{ item: 'tfg:flax_product' }],
 		results: [{ item: 'tfg:flax_line', count: 2 }, { item: 'tfg:flax_tow' }, { item: 'tfc:groundcover/humus' }],
 		processingTime: 40 * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 	}).id('tfg:vi_seperate_flax')
+
+	event.custom({
+		type: 'vintageimprovements:centrifugation',
+		ingredients: [{ item: 'tfg:flax_bundle' }],
+		results: [{ item: 'tfg:flax_line', count: 18 }, { item: 'tfg:flax_tow', count: 9 }, { item: 'tfc:groundcover/humus', count: 9 }],
+		processingTime: 360 * 90 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id('tfg:vi_seperate_flax_from_bundle')
 
 	//#region flax line spining
 	event.recipes.tfc.damage_inputs_shapeless_crafting(

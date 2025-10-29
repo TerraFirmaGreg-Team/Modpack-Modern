@@ -55,7 +55,7 @@ global.getMarsClimateController = function () {
 			createWindCallback: function (builder) {
 				var self = this;
 				return function (level, pos, calendarTicks) {
-					const strength = Math.max(0, (Math.sin(calendarTicks / 10000) -0.6) / 1.5);
+					const strength = Math.max(0, Math.sin(calendarTicks / 10000) -0.6);
 
 					const newX = Math.cos(calendarTicks / 2400) * strength;
 					const newZ = Math.sin(calendarTicks / 2400) * strength;

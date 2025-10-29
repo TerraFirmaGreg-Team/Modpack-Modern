@@ -185,29 +185,5 @@ function registerTFGSupportRecipes(event) {
 		.itemInputs('2x #forge:double_ingots/steel')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.macerator('tfg:macerator/recycling/steel_support')
-		.itemInputs('tfg:steel_support')
-		.itemOutputs(
-			ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Steel, 2)
-		)
-		.duration(GTMaterials.Steel.getMass() * 2)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.arc_furnace('tfg:arc_furnace/recycling/steel_support')
-		.itemInputs('tfg:steel_support')
-		.itemOutputs(
-			ChemicalHelper.get(TagPrefix.nugget, GTMaterials.Steel, 4)
-		)
-		.duration(GTMaterials.Steel.getMass() * 4)
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-		.EUt(GTValues.VA[GTValues.LV])
-
-	event.recipes.gtceu.extractor('tfg:extractor/recycling/steel_support')
-		.itemInputs('tfg:steel_support')
-		.outputFluids(Fluid.of('gtceu:steel', 64))
-		.duration(GTMaterials.Steel.getMass() * 2)
-		.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.addMaterialInfo(true)
 }
