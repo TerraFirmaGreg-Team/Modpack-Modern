@@ -1620,6 +1620,51 @@ const registerGTCEURecipes = (event) => {
 		.duration(20 * 24)
 		.EUt(GTValues.VA[GTValues.HV])
 
+	// Modify Rotor Holder to require an Assembler
+
+	event.remove({ id: 'gtceu:shaped/rotor_holder_hv' })
+	event.remove({ id: 'gtceu:shaped/rotor_holder_ev' })
+	event.remove({ id: 'gtceu:shaped/rotor_holder_iv' })
+	event.remove({ id: 'gtceu:shaped/rotor_holder_luv' })
+	event.remove({ id: 'gtceu:shaped/rotor_holder_zpm' })
+	event.remove({ id: 'gtceu:shaped/rotor_holder_uv' })
+
+	event.recipes.gtceu.assembler('tfg:rotor_holder_hv')
+		.itemInputs('4x #forge:gears/black_steel', '4x #forge:small_gears/stainless_steel', 'gtceu:hv_machine_hull')
+		.itemOutputs('gtceu:hv_rotor_holder')
+		.duration(20 * 6)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.assembler('tfg:rotor_holder_ev')
+		.itemInputs('4x #forge:gears/ultimet', '4x #forge:small_gears/titanium', 'gtceu:ev_machine_hull')
+		.itemOutputs('gtceu:ev_rotor_holder')
+		.duration(20 * 6)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.assembler('tfg:rotor_holder_iv')
+		.itemInputs('4x #forge:gears/hssg', '4x #forge:small_gears/tungsten_steel', 'gtceu:iv_machine_hull')
+		.itemOutputs('gtceu:iv_rotor_holder')
+		.duration(20 * 6)
+		.EUt(GTValues.VA[GTValues.IV])
+
+	event.recipes.gtceu.assembler('tfg:rotor_holder_luv')
+		.itemInputs('4x #forge:gears/ruthenium', '4x #forge:small_gears/rhodium_plated_palladium', 'gtceu:luv_machine_hull')
+		.itemOutputs('gtceu:luv_rotor_holder')
+		.duration(20 * 6)
+		.EUt(GTValues.VA[GTValues.LuV])
+
+	event.recipes.gtceu.assembler('tfg:rotor_holder_zpm')
+		.itemInputs('4x #forge:gears/trinium', '4x #forge:small_gears/naquadah_alloy', 'gtceu:zpm_machine_hull')
+		.itemOutputs('gtceu:zpm_rotor_holder')
+		.duration(20 * 6)
+		.EUt(GTValues.VA[GTValues.ZPM])
+
+	event.recipes.gtceu.assembler('tfg:rotor_holder_uv')
+		.itemInputs('4x #forge:gears/tritanium', '4x #forge:small_gears/darmstadtium', 'gtceu:uv_machine_hull')
+		.itemOutputs('gtceu:uv_rotor_holder')
+		.duration(20 * 6)
+		.EUt(GTValues.VA[GTValues.UV])
+
 	//# Circuit Board
 
 	event.replaceInput({ id: 'gtceu:assembler/phenolic_board' }, '#tfg:wood_dusts', 'tfg:high_density_treated_fiberboard')
