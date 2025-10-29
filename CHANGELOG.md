@@ -33,6 +33,7 @@
 - Fixed some AFC logs not having stripping recipes @Pyritie
 - Fixed some issues related to AE2 blocking mode @ko-lja
 - Fixed wild bulbkin plants not dropping bulbkin seeds @Pyritie
+- Fixed graphite moderator frame interactions @BlueBoat29
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
