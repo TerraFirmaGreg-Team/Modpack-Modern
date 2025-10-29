@@ -1034,34 +1034,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "ae2wtlib-15.3.0-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7014/805/ae2wtlib-15.3.0-forge.jar",
-                    "id": "7014805",
-                    "parent_id": "459929",
-                    "hashes": {
-                        "sha1": "889fa4f0aa90d3541e45ab59d41a249af3c9dd20",
-                        "md5": "fded4f093acdc40d8d81d73baac29034"
-                    },
-                    "required_dependencies": [
-                        "348521",
-                        "419699",
-                        "309927",
-                        "223794"
-                    ],
-                    "size": 227891,
-                    "date_published": "2025-09-20T11:05:18.890Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "ae2wtlib-15.3.0-forge.jar",
+                    "file_name": "ae2wtlib-15.3.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1069,21 +1043,47 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pNabrMMw/versions/Gy5UgOq4/ae2wtlib-15.3.0-forge.jar",
-                    "id": "Gy5UgOq4",
+                    "url": "https://cdn.modrinth.com/data/pNabrMMw/versions/BLQZoB0F/ae2wtlib-15.3.1-forge.jar",
+                    "id": "BLQZoB0F",
                     "parent_id": "pNabrMMw",
                     "hashes": {
-                        "sha512": "9e26b25e180f4f2368415ef8c96fd59df7a8911516a4601ecaa37177db3e1042c92d7ec8a2c8e760f99b46498689f72164cdf69b6aeab6f20765b77d4ce0507b",
-                        "sha1": "889fa4f0aa90d3541e45ab59d41a249af3c9dd20"
+                        "sha512": "57603754e9b51858678d0bbabea8c47050f56b810cdf06d528fdf97262cda4c26fa758830c997d2f0cdf7772142d70d99ea8e4be33fc9d20e54b7c43803ea109",
+                        "sha1": "2df257a66c16c30f4fcae2de0d6b387251b7f114"
                     },
                     "required_dependencies": [
-                        "9s6osm5g",
                         "vvuO3ImH",
                         "lhGA9TYQ",
-                        "XxWD5pD3"
+                        "XxWD5pD3",
+                        "9s6osm5g"
                     ],
-                    "size": 227891,
-                    "date_published": "2025-09-20T11:05:21.100923Z"
+                    "size": 228960,
+                    "date_published": "2025-10-26T23:02:08.228212Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "ae2wtlib-15.3.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7154/316/ae2wtlib-15.3.1-forge.jar",
+                    "id": "7154316",
+                    "parent_id": "459929",
+                    "hashes": {
+                        "sha1": "2df257a66c16c30f4fcae2de0d6b387251b7f114",
+                        "md5": "91c10c49ecea8f771aef27de03da0dec"
+                    },
+                    "required_dependencies": [
+                        "223794",
+                        "348521",
+                        "309927",
+                        "419699"
+                    ],
+                    "size": 228960,
+                    "date_published": "2025-10-26T23:02:05.480Z"
                 }
             ]
         },
@@ -13706,7 +13706,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.4.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13715,23 +13715,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/wgIBPepP/TerraFirmaGreg-Core-Modern-0.8.4.jar",
-                    "id": "wgIBPepP",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/f95K1jmA/TerraFirmaGreg-Core-Modern-0.8.5.jar",
+                    "id": "f95K1jmA",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "adbdd9d2497fa02dd5211baaa1a638f9fb97ade92822e110c655225b6f431321694b13c15bef3180df8b1ed8b5b3bc387627bd741e3db36eb15f552c9b65566d",
-                        "sha1": "8715945743cdd4a2718b282cdb003951b906a508"
+                        "sha512": "222d5b1f39261ea051316a7ac68acf9761f41d815b84a0325887957784cb52ec9388146f9435cdbec6fc42f236cc4b6f3bfb6b7da1b59102f90f414ad7aa62fb",
+                        "sha1": "d4d7f1a4fa9690d45b09b17ca2d6f00097ac4d25"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "JaCEZUhg"
                     ],
-                    "size": 9240344,
-                    "date_published": "2025-10-22T13:14:44.481563Z"
+                    "size": 9246856,
+                    "date_published": "2025-10-29T13:26:55.488427Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.4.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13740,19 +13740,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7136/730/TerraFirmaGreg-Core-Modern-0.8.4.jar",
-                    "id": "7136730",
+                    "url": "https://edge.forgecdn.net/files/7163/303/TerraFirmaGreg-Core-Modern-0.8.5.jar",
+                    "id": "7163303",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "8715945743cdd4a2718b282cdb003951b906a508",
-                        "md5": "6f3797d049b294fc3bea2440c3a99c2d"
+                        "sha1": "d4d7f1a4fa9690d45b09b17ca2d6f00097ac4d25",
+                        "md5": "dd221274e0df33e3312defa69f416350"
                     },
                     "required_dependencies": [
                         "302973",
                         "890405"
                     ],
-                    "size": 9240344,
-                    "date_published": "2025-10-22T13:14:39.097Z"
+                    "size": 9246856,
+                    "date_published": "2025-10-29T13:26:50.930Z"
                 }
             ]
         },
