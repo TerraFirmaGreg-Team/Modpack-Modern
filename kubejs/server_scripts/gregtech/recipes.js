@@ -1674,14 +1674,14 @@ const registerGTCEURecipes = (event) => {
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
-		.duration(20*120)
+		.duration(20*90)
 		.EUt(GTValues.VHA[GTValues.HV])
 
 	event.recipes.gtceu.distillery('tfg:ammonium_tungstate_to_apt')
 		.itemInputs(Item.of('tfg:ammonium_tungstate_dust', 1))
 		.itemOutputs(Item.of('tfg:apt_gem', 1))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
-		.duration(20*120)
+		.duration(20*90)
 		.EUt(GTValues.VHA[GTValues.HV])
 
 	event.recipes.gtceu.pyrolyse_oven('tfg:apt')
