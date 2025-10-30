@@ -36,6 +36,7 @@ ServerEvents.tags('item', event => {
 	registerGrapplemodItemTags(event)
 	registerGreateItemTags(event)
 	registerGTCEUItemTags(event)
+	registerImmersiveAircraftItemTags(event)
 	registerMegaCellsItemTags(event)
 	registerMinecraftItemTags(event)
 	registerModernMarkingsItemTags(event)
