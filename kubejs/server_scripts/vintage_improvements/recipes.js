@@ -77,9 +77,6 @@ function registerVintageImprovementsRecipes(event) {
 		F: '#forge:springs/wrought_iron'
 	}).addMaterialInfo().id('tfg:vi/shaped/curving_press')
 
-	event.shapeless('vintageimprovements:curving_press', ['create:mechanical_press', '#forge:tools/files'])
-		.id('tfg:shapeless/mech_press_converting')
-
 	event.shaped('vintageimprovements:helve_hammer', [
 		'F A',
 		'BBE',
