@@ -2,9 +2,14 @@
 
 ## [Unreleased]
 ### Changes
+### Bug fixes
+
+## [0.11.7] - 30-10-2025
+### Changes
 - Wild canola and flax are now more rare (#2125) @BlueBoat29
 - Maple and birch syrup tapping is now more temperature tolerand and works any time of year (#2126) @theMegaTech
 ### Bug fixes
+- Fixed an issue with the fission reactor causing chunkbans @Vazde
 - Fixed an issue with the third-person-shooting mod not working correctly on servers sometimes @Xikaro
 - Fixed fission components not being registered properly @Pyritie
 
