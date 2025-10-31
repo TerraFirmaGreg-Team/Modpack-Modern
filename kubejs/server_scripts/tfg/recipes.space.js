@@ -135,7 +135,7 @@ function registerTFGSpaceRecipes(event) {
 		.duration(10)
 		.EUt(GTValues.VHA[GTValues.HV])
 		.adjacentFluids(["minecraft:water"])
-		.outputFluids(Fluid.of("minecraft:water", 20000))
+		.outputFluids(Fluid.of("minecraft:water", 16000))
 		
 
 	// Plants - Can't use the default builder here because fertiliser is much harder to get on the moon,
