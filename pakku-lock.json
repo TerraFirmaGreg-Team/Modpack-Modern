@@ -14519,6 +14519,77 @@
             ]
         },
         {
+            "pakku_id": "MpkpUO55EJhBt1az",
+            "pakku_links": [
+                "GXyDUWkiW0nLPTdo"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "tacz-applied-ammo-box",
+                "modrinth": "tacz-applied-ammo-box"
+            },
+            "name": {
+                "curseforge": "[TaCZ] Applied Ammo Box",
+                "modrinth": "[Tacz] Applied Ammo Box"
+            },
+            "id": {
+                "curseforge": "1338332",
+                "modrinth": "VQOi9K8E"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "applied_ammo_box-0.4.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7025/159/applied_ammo_box-0.4.0.jar",
+                    "id": "7025159",
+                    "parent_id": "1338332",
+                    "hashes": {
+                        "sha1": "7ed8caf15bd7662b10c0e0e327d595e9b5bcd924",
+                        "md5": "b0a7924ff04ea4fb3af53da11f221984"
+                    },
+                    "required_dependencies": [
+                        "1028108",
+                        "223794"
+                    ],
+                    "size": 67461,
+                    "date_published": "2025-09-23T10:29:35.687Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "applied_ammo_box-0.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/VQOi9K8E/versions/klC2PLr3/applied_ammo_box-0.3.0.jar",
+                    "id": "klC2PLr3",
+                    "parent_id": "VQOi9K8E",
+                    "hashes": {
+                        "sha512": "261cb1606709b34d6086501b6f0dcaaa87545d51397d130747a992fd8a97095817774c8723417b030bb0bd4d4eac16ae007a1860c239203c00cf8163758dfdc6",
+                        "sha1": "cad73c6a3e78233bed25f1d4255f12ffc6f97baf"
+                    },
+                    "required_dependencies": [
+                        "SzzJttH8",
+                        "XxWD5pD3"
+                    ],
+                    "size": 67381,
+                    "date_published": "2025-09-05T14:26:22.489897Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "GXyDUWkiW0nLPTdo",
             "type": "MOD",
             "side": "BOTH",
