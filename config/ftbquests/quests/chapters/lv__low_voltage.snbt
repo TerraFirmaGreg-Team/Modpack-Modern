@@ -205,7 +205,7 @@
 				"{@pagebreak}"
 				"{quests.low_voltage.cover_behaviour.desc.2}"
 			]
-			icon: "gtceu:crafting_table_cover"
+			icon: "gtceu:storage_cover"
 			id: "1C767009F505A813"
 			shape: "square"
 			size: 1.0d
@@ -511,6 +511,10 @@
 				"{quests.low_voltage.lv_ebf.desc.1}"
 				"{@pagebreak}"
 				"{quests.low_voltage.lv_ebf.desc.2}"
+				"{@pagebreak}"
+				"{image:tfg:textures/quests/ebf_power.png width:256 height:136 align:center}"
+				""
+				"{quests.low_voltage.lv_ebf.desc.3}"
 			]
 			id: "1E9BE8D3F8A602DC"
 			rewards: [{
