@@ -1034,34 +1034,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "ae2wtlib-15.3.0-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7014/805/ae2wtlib-15.3.0-forge.jar",
-                    "id": "7014805",
-                    "parent_id": "459929",
-                    "hashes": {
-                        "sha1": "889fa4f0aa90d3541e45ab59d41a249af3c9dd20",
-                        "md5": "fded4f093acdc40d8d81d73baac29034"
-                    },
-                    "required_dependencies": [
-                        "348521",
-                        "419699",
-                        "309927",
-                        "223794"
-                    ],
-                    "size": 227891,
-                    "date_published": "2025-09-20T11:05:18.890Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "ae2wtlib-15.3.0-forge.jar",
+                    "file_name": "ae2wtlib-15.3.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1069,21 +1043,47 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pNabrMMw/versions/Gy5UgOq4/ae2wtlib-15.3.0-forge.jar",
-                    "id": "Gy5UgOq4",
+                    "url": "https://cdn.modrinth.com/data/pNabrMMw/versions/BLQZoB0F/ae2wtlib-15.3.1-forge.jar",
+                    "id": "BLQZoB0F",
                     "parent_id": "pNabrMMw",
                     "hashes": {
-                        "sha512": "9e26b25e180f4f2368415ef8c96fd59df7a8911516a4601ecaa37177db3e1042c92d7ec8a2c8e760f99b46498689f72164cdf69b6aeab6f20765b77d4ce0507b",
-                        "sha1": "889fa4f0aa90d3541e45ab59d41a249af3c9dd20"
+                        "sha512": "57603754e9b51858678d0bbabea8c47050f56b810cdf06d528fdf97262cda4c26fa758830c997d2f0cdf7772142d70d99ea8e4be33fc9d20e54b7c43803ea109",
+                        "sha1": "2df257a66c16c30f4fcae2de0d6b387251b7f114"
                     },
                     "required_dependencies": [
-                        "9s6osm5g",
                         "vvuO3ImH",
                         "lhGA9TYQ",
-                        "XxWD5pD3"
+                        "XxWD5pD3",
+                        "9s6osm5g"
                     ],
-                    "size": 227891,
-                    "date_published": "2025-09-20T11:05:21.100923Z"
+                    "size": 228960,
+                    "date_published": "2025-10-26T23:02:08.228212Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "ae2wtlib-15.3.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7154/316/ae2wtlib-15.3.1-forge.jar",
+                    "id": "7154316",
+                    "parent_id": "459929",
+                    "hashes": {
+                        "sha1": "2df257a66c16c30f4fcae2de0d6b387251b7f114",
+                        "md5": "91c10c49ecea8f771aef27de03da0dec"
+                    },
+                    "required_dependencies": [
+                        "223794",
+                        "348521",
+                        "309927",
+                        "419699"
+                    ],
+                    "size": 228960,
+                    "date_published": "2025-10-26T23:02:05.480Z"
                 }
             ]
         },
@@ -2079,6 +2079,70 @@
                     "required_dependencies": [],
                     "size": 3079734,
                     "date_published": "2025-07-12T18:09:11.168688Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "wcBgG8cuCWF0fZzB",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "caelum",
+                "modrinth": "caelum"
+            },
+            "name": {
+                "curseforge": "Caelum",
+                "modrinth": "Caelum"
+            },
+            "id": {
+                "curseforge": "556708",
+                "modrinth": "Xkw3TXqP"
+            },
+            "export": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "caelum-1.20.1-2.0.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4674/619/caelum-1.20.1-2.0.0.0.jar",
+                    "id": "4674619",
+                    "parent_id": "556708",
+                    "hashes": {
+                        "sha1": "8b1980f2a91599aea95fecd646b8bc265df7786f",
+                        "md5": "dc2b023ca9c05dcde9ea8260d0dfee4c"
+                    },
+                    "required_dependencies": [],
+                    "size": 263769,
+                    "date_published": "2023-07-31T16:31:55.127Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "caelum-1.20.1-2.0.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/Xkw3TXqP/versions/7JGuqBG4/caelum-1.20.1-2.0.0.0.jar",
+                    "id": "7JGuqBG4",
+                    "parent_id": "Xkw3TXqP",
+                    "hashes": {
+                        "sha512": "0e22325ba35525201a278de0ec510c38e8c209796a5728ce625d4f57205e79bb726777915c4fe7e83664447849b5802868f213b9215ca491559af84b7e31b28e",
+                        "sha1": "8b1980f2a91599aea95fecd646b8bc265df7786f"
+                    },
+                    "required_dependencies": [],
+                    "size": 263769,
+                    "date_published": "2023-07-31T16:36:13.789465Z"
                 }
             ]
         },
@@ -4341,7 +4405,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "deafission-1.20.1-0.13.0.jar",
+                    "file_name": "deafission-1.20.1-0.13.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4349,19 +4413,19 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7141/816/deafission-1.20.1-0.13.0.jar",
-                    "id": "7141816",
+                    "url": "https://edge.forgecdn.net/files/7168/614/deafission-1.20.1-0.13.2.jar",
+                    "id": "7168614",
                     "parent_id": "1354541",
                     "hashes": {
-                        "sha1": "2da535dd7c210c3cd259b4e58e6af09676f2c5fb",
-                        "md5": "cca2f339d5fefce5716cbb5f9b1d68bb"
+                        "sha1": "5ff6d80290d59ab782b9aab2e00cbb90fc5ab641",
+                        "md5": "16e4d34e2eac7e920aa281c135c2175a"
                     },
                     "required_dependencies": [
                         "890405",
                         "238086"
                     ],
-                    "size": 287675,
-                    "date_published": "2025-10-23T17:48:17.073Z"
+                    "size": 287745,
+                    "date_published": "2025-10-30T23:06:07.040Z"
                 }
             ]
         },
@@ -5428,6 +5492,68 @@
                     ],
                     "size": 2667284,
                     "date_published": "2025-10-24T14:19:14.703Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "IDxgtsYQmisT5W9r",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "modrinth": "extreme_sound_muffler",
+                "curseforge": "extreme-sound-muffler"
+            },
+            "name": {
+                "modrinth": "Extreme sound muffler",
+                "curseforge": "Extreme sound muffler - (Neo)Forge"
+            },
+            "id": {
+                "modrinth": "5IIKsxiL",
+                "curseforge": "363363"
+            },
+            "export": false,
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "ExtremeSoundMuffler-3.49.1-forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/5IIKsxiL/versions/tTO5f5iv/ExtremeSoundMuffler-3.49.1-forge-1.20.1.jar",
+                    "id": "tTO5f5iv",
+                    "parent_id": "5IIKsxiL",
+                    "hashes": {
+                        "sha512": "2cd3be9ac975118f10d21c379db7ad1d5625c854ea45f7299da340abbd34b9d2863eda4a967ee1b57a1f78f1c08d8a86fb66b6ac4c9aadb9390071cf1c64e5d4",
+                        "sha1": "1c7a54e1727f2ae4b1f18e1d7feb94a38e87d00f"
+                    },
+                    "required_dependencies": [],
+                    "size": 267731,
+                    "date_published": "2025-05-13T17:40:33.392430Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "ExtremeSoundMuffler-3.49.1-forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6526/566/ExtremeSoundMuffler-3.49.1-forge-1.20.1.jar",
+                    "id": "6526566",
+                    "parent_id": "363363",
+                    "hashes": {
+                        "sha1": "1c7a54e1727f2ae4b1f18e1d7feb94a38e87d00f",
+                        "md5": "3727846f67248980ac39b92464c627f2"
+                    },
+                    "required_dependencies": [],
+                    "size": 267731,
+                    "date_published": "2025-05-13T17:40:31.427Z"
                 }
             ]
         },
@@ -12444,6 +12570,80 @@
             ]
         },
         {
+            "pakku_id": "b3PmHj38mOrThdF4",
+            "pakku_links": [
+                "wcBgG8cuCWF0fZzB",
+                "64uacGcEw697jVGs"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "tfc-caelum",
+                "modrinth": "tfc-caelum"
+            },
+            "name": {
+                "curseforge": "TFC Caelum",
+                "modrinth": "TFC Caelum"
+            },
+            "id": {
+                "curseforge": "999031",
+                "modrinth": "WYvV2Kci"
+            },
+            "export": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "TFCCaelum-1.20.1-1.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5307/466/TFCCaelum-1.20.1-1.2.jar",
+                    "id": "5307466",
+                    "parent_id": "999031",
+                    "hashes": {
+                        "sha1": "114e10e497503f5ff4cb13850a8dec9bb9f4d625",
+                        "md5": "34b54a06f4f45ccf54edc65cb48b6c89"
+                    },
+                    "required_dependencies": [
+                        "556708",
+                        "302973"
+                    ],
+                    "size": 414939,
+                    "date_published": "2024-05-01T15:13:08.827Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "TFCCaelum-1.20.1-1.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/WYvV2Kci/versions/wSasbQOH/TFCCaelum-1.20.1-1.2.jar",
+                    "id": "wSasbQOH",
+                    "parent_id": "WYvV2Kci",
+                    "hashes": {
+                        "sha512": "f1c7153fc07da59677183f9967ca16e189bcf38d961b03931f100b141e9a10ef684dd1d71a6cf8d27cd3d8ceef7670db25d3b6c398f835387ca8ee8936ea0303",
+                        "sha1": "114e10e497503f5ff4cb13850a8dec9bb9f4d625"
+                    },
+                    "required_dependencies": [
+                        "JaCEZUhg",
+                        "Xkw3TXqP"
+                    ],
+                    "size": 414939,
+                    "date_published": "2024-08-28T14:04:28.731777Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "CPaYKBv7ChV7n8m0",
             "pakku_links": [
                 "64uacGcEw697jVGs"
@@ -13706,7 +13906,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.4.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13715,23 +13915,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/wgIBPepP/TerraFirmaGreg-Core-Modern-0.8.4.jar",
-                    "id": "wgIBPepP",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/f95K1jmA/TerraFirmaGreg-Core-Modern-0.8.5.jar",
+                    "id": "f95K1jmA",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "adbdd9d2497fa02dd5211baaa1a638f9fb97ade92822e110c655225b6f431321694b13c15bef3180df8b1ed8b5b3bc387627bd741e3db36eb15f552c9b65566d",
-                        "sha1": "8715945743cdd4a2718b282cdb003951b906a508"
+                        "sha512": "222d5b1f39261ea051316a7ac68acf9761f41d815b84a0325887957784cb52ec9388146f9435cdbec6fc42f236cc4b6f3bfb6b7da1b59102f90f414ad7aa62fb",
+                        "sha1": "d4d7f1a4fa9690d45b09b17ca2d6f00097ac4d25"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "JaCEZUhg"
                     ],
-                    "size": 9240344,
-                    "date_published": "2025-10-22T13:14:44.481563Z"
+                    "size": 9246856,
+                    "date_published": "2025-10-29T13:26:55.488427Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.4.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13740,19 +13940,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7136/730/TerraFirmaGreg-Core-Modern-0.8.4.jar",
-                    "id": "7136730",
+                    "url": "https://edge.forgecdn.net/files/7163/303/TerraFirmaGreg-Core-Modern-0.8.5.jar",
+                    "id": "7163303",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "8715945743cdd4a2718b282cdb003951b906a508",
-                        "md5": "6f3797d049b294fc3bea2440c3a99c2d"
+                        "sha1": "d4d7f1a4fa9690d45b09b17ca2d6f00097ac4d25",
+                        "md5": "dd221274e0df33e3312defa69f416350"
                     },
                     "required_dependencies": [
                         "302973",
                         "890405"
                     ],
-                    "size": 9240344,
-                    "date_published": "2025-10-22T13:14:39.097Z"
+                    "size": 9246856,
+                    "date_published": "2025-10-29T13:26:50.930Z"
                 }
             ]
         },
@@ -13819,6 +14019,7 @@
         {
             "pakku_id": "UUgCxePdwRd5MyWw",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "third-person-shooting"
             },
@@ -14514,6 +14715,77 @@
                     "required_dependencies": [],
                     "size": 1105891,
                     "date_published": "2025-03-23T19:12:55.655767Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "MpkpUO55EJhBt1az",
+            "pakku_links": [
+                "GXyDUWkiW0nLPTdo"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "tacz-applied-ammo-box",
+                "modrinth": "tacz-applied-ammo-box"
+            },
+            "name": {
+                "curseforge": "[TaCZ] Applied Ammo Box",
+                "modrinth": "[Tacz] Applied Ammo Box"
+            },
+            "id": {
+                "curseforge": "1338332",
+                "modrinth": "VQOi9K8E"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "applied_ammo_box-0.4.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7025/159/applied_ammo_box-0.4.0.jar",
+                    "id": "7025159",
+                    "parent_id": "1338332",
+                    "hashes": {
+                        "sha1": "7ed8caf15bd7662b10c0e0e327d595e9b5bcd924",
+                        "md5": "b0a7924ff04ea4fb3af53da11f221984"
+                    },
+                    "required_dependencies": [
+                        "1028108",
+                        "223794"
+                    ],
+                    "size": 67461,
+                    "date_published": "2025-09-23T10:29:35.687Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "applied_ammo_box-0.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/VQOi9K8E/versions/klC2PLr3/applied_ammo_box-0.3.0.jar",
+                    "id": "klC2PLr3",
+                    "parent_id": "VQOi9K8E",
+                    "hashes": {
+                        "sha512": "261cb1606709b34d6086501b6f0dcaaa87545d51397d130747a992fd8a97095817774c8723417b030bb0bd4d4eac16ae007a1860c239203c00cf8163758dfdc6",
+                        "sha1": "cad73c6a3e78233bed25f1d4255f12ffc6f97baf"
+                    },
+                    "required_dependencies": [
+                        "SzzJttH8",
+                        "XxWD5pD3"
+                    ],
+                    "size": 67381,
+                    "date_published": "2025-09-05T14:26:22.489897Z"
                 }
             ]
         },

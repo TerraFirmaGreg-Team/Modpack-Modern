@@ -1,0 +1,12 @@
+{
+	"ingredient": "tfcagedalcohol:aged_rye_whiskey",
+	"thirst": 15,
+	"intoxication": 2000,
+	"effects": [
+		{
+			"type": "minecraft:haste",
+			"duration": 6400,
+			"amplifier": 0
+		}
+	]
+}

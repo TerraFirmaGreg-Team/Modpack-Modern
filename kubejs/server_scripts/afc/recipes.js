@@ -188,6 +188,24 @@ const registerAFCRecipes = (event) => {
 		.requiresNaturalLog(true)
 		.id("tfg:tree_tapping/ancient_douglas_fir_resin")
 
+	//Syrups
+	event.remove({ id: "afc:tree_tapping/maple_syrup" })
+	event.remove({ id: "afc:tree_tapping/birch_syrup" })
+
+	event.recipes.afc.tree_tapping(TFC.blockIngredient('tfc:wood/log/maple'))
+		.resultFluid(Fluid.of('afc:maple_sap', 5))
+		.minTemp(-15)
+		.maxTemp(5)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/maple_log")
+	
+		event.recipes.afc.tree_tapping(TFC.blockIngredient('tfc:wood/log/birch'))
+		.resultFluid(Fluid.of('afc:birch_sap', 5))
+		.minTemp(-15)
+		.maxTemp(5)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/birch_log")
+
 	// Mars stuff
 
 	event.recipes.afc.tree_tapping(TFC.blockIngredient('beneath:wood/log/crimson'))

@@ -60,6 +60,7 @@
 				""
 				"{image:tfc:textures/gui/book/gui/rock_knapping.png width:100 height:100 align:center fit:true}"
 			]
+			guide_page: "tfc:field_guide tfc:getting_started/introduction"
 			id: "78E3BF0BEB48635B"
 			size: 1.0d
 			subtitle: "{quests.stone_age.find_rock.subtitle}"
@@ -456,6 +457,7 @@
 				""
 				"{image:tfc:textures/gui/book/tutorial/pit_kiln_5.png width:100 height:100 align:center}"
 			]
+			guide_page: "tfc:field_guide tfc:getting_started/pit_kiln"
 			id: "3630ED3B85753BB2"
 			size: 2.0d
 			subtitle: "{quests.stone_age.pit_kiln.subtitle}"
@@ -517,6 +519,8 @@
 			]
 			description: ["{quests.stone_age.iron_flask.desc}"]
 			id: "11C45DBB20ED7647"
+			optional: true
+			shape: "heart"
 			subtitle: "{quests.stone_age.iron_flask.subtitle}"
 			tasks: [{
 				id: "6D628C84743356F0"
@@ -542,6 +546,7 @@
 		{
 			dependencies: ["3D7B0F3134C30364"]
 			description: ["{quests.stone_age.find_clay.desc}"]
+			guide_page: "tfc:field_guide tfc:getting_started/pottery"
 			hide_dependency_lines: true
 			id: "021921B4D2044B3B"
 			subtitle: "{quests.stone_age.find_clay.subtitle}"
@@ -572,6 +577,7 @@
 		{
 			dependencies: ["021921B4D2044B3B"]
 			description: ["{quests.stone_age.clay.desc}"]
+			guide_page: "tfc:field_guide tfc:getting_started/pottery 3"
 			id: "3687ACAD307EE7EF"
 			subtitle: "{quests.stone_age.clay.subtitle}"
 			tasks: [{
@@ -592,6 +598,7 @@
 				"{@pagebreak}"
 				"{quests.stone_age.native_ores.desc.2}"
 			]
+			guide_page: "tfc:field_guide tfc:getting_started/finding_ores"
 			hide_dependency_lines: true
 			id: "669F84C6A2A64145"
 			shape: "diamond"
@@ -623,6 +630,7 @@
 				"{quests.stone_age.firepit.desc.2}"
 				"{image:tfg:textures/quests/firepit.png width:100 height:100 align:center}"
 			]
+			guide_page: "tfc:field_guide tfc:getting_started/firepit"
 			icon: "tfc:pot"
 			id: "5301A38F7EA81140"
 			subtitle: "{quests.stone_age.firepit.subtitle}"
@@ -680,6 +688,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.stone_age.weld_copper_ingots.desc}"]
+			guide_page: "tfc:field_guide tfc:getting_started/primitive_anvils 6"
 			id: "45A09AD0043FF92B"
 			subtitle: "{quests.stone_age.weld_copper_ingots.subtitle}"
 			tasks: [{
@@ -697,6 +706,7 @@
 			dependencies: ["5E186CD5E83BFDF0"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.stone_age.flux.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/flux"
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -755,6 +765,7 @@
 		{
 			dependencies: ["193F214E9F154980"]
 			description: ["{quests.stone_age.rock_anvil.desc}"]
+			guide_page: "tfc:field_guide tfc:getting_started/primitive_anvils 3"
 			id: "706A1824B1487385"
 			subtitle: "{quests.stone_age.rock_anvil.subtitle}"
 			tasks: [
@@ -850,6 +861,7 @@
 		{
 			dependencies: ["78E3BF0BEB48635B"]
 			description: ["{quests.stone_age.rock_knapping.desc}"]
+			guide_page: "tfc:field_guide tfc:getting_started/introduction 2"
 			id: "4333D5794A37CF2D"
 			subtitle: "{quests.stone_age.rock_knapping.subtitle}"
 			tasks: [
@@ -1208,6 +1220,7 @@
 		{
 			dependencies: ["193F214E9F154980"]
 			description: ["{quests.stone_age.create_forge.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/charcoal_forge"
 			id: "4D1CD95482EE2CDD"
 			size: 2.0d
 			subtitle: "{quests.stone_age.create_forge.subtitle}"
@@ -1229,6 +1242,7 @@
 				"{quests.stone_age.get_raw_rock.desc}"
 				"{image:tfg:textures/quests/raw_rock.png width:100 height:100 align:center}"
 			]
+			guide_page: "tfc:field_guide tfc:getting_started/primitive_anvils 5"
 			hide_dependency_lines: false
 			id: "193F214E9F154980"
 			size: 1.5d
@@ -1284,6 +1298,7 @@
 				"{@pagebreak}"
 				"{quests.stone_age.mining_prep.desc.2}"
 			]
+			guide_page: "tfc:field_guide tfc:tfg_ores/ore_basics"
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -1300,6 +1315,7 @@
 						TorchPlacing: 1b
 					}
 					GT.Tool: {
+						DefaultEnchantments: [ ]
 						HarvestLevel: 2
 						MaxDamage: 791
 						ToolSpeed: 6.0f
@@ -1476,6 +1492,7 @@
 		{
 			dependencies: ["0FB8FD84B13F10C6"]
 			description: ["{quests.stone_age.nutrition.desc}"]
+			guide_page: "tfc:field_guide tfc:getting_started/food_and_water 5"
 			icon: "minecraft:apple"
 			id: "749B3C8698D34E91"
 			size: 1.5d
@@ -1611,6 +1628,7 @@
 		{
 			dependencies: ["4C444814F1C7B600"]
 			description: ["{quests.stone_age.barrels.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/barrels"
 			id: "3E8833E7CE591E6F"
 			subtitle: "{quests.stone_age.barrels.subtitle}"
 			tasks: [{
@@ -1632,6 +1650,7 @@
 		{
 			dependencies: ["3E8833E7CE591E6F"]
 			description: ["{quests.stone_age.leather.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/leather_making"
 			id: "560B17BFBE8D477D"
 			subtitle: "{quests.stone_age.leather.subtitle}"
 			tasks: [{
@@ -1705,6 +1724,7 @@
 			dependencies: ["560B17BFBE8D477D"]
 			description: ["{quests.stone_age.leather_armor.desc}"]
 			id: "04E900CFE39D6A6C"
+			optional: true
 			subtitle: "{quests.stone_age.leather_armor.subtitle}"
 			tasks: [
 				{
@@ -1820,12 +1840,12 @@
 		{
 			dependencies: ["1D40CAE675C4BB91"]
 			description: ["{quests.stone_age.water_bucket.desc}"]
+			icon: "minecraft:water_bucket"
 			id: "1F9321F1743A0B79"
 			subtitle: "{quests.stone_age.water_bucket.subtitle}"
 			tasks: [{
-				id: "17FFB1D3212BECEA"
-				item: "minecraft:water_bucket"
-				type: "item"
+				id: "64BE95016DF461FD"
+				type: "checkmark"
 			}]
 			title: "{quests.stone_age.water_bucket.title}"
 			x: 4.5d
@@ -1838,6 +1858,7 @@
 			]
 			description: ["{quests.stone_age.insulated_leather_clothes.desc}"]
 			id: "6D6270D9B2F1EC01"
+			optional: true
 			subtitle: "{quests.stone_age.insulated_leather_clothes.subtitle}"
 			tasks: [
 				{
@@ -1893,6 +1914,7 @@
 			dependencies: ["4521BB8892B386AF"]
 			description: ["{quests.stone_age.wool_clothes.desc}"]
 			id: "1E9033DF269C80DC"
+			optional: true
 			subtitle: "{quests.stone_age.wool_clothes.subtitle}"
 			tasks: [
 				{
@@ -1948,6 +1970,7 @@
 			dependencies: ["4521BB8892B386AF"]
 			description: ["{quests.stone_age.burlap_clothes.desc}"]
 			id: "1602438D9FCADA5E"
+			optional: true
 			subtitle: "{quests.stone_age.burlap_clothes.subtitle}"
 			tasks: [
 				{
@@ -2003,6 +2026,7 @@
 			dependencies: ["4521BB8892B386AF"]
 			description: ["{quests.stone_age.silk_clothes.desc}"]
 			id: "37108D618CF60730"
+			optional: true
 			subtitle: "{quests.stone_age.silk_clothes.subtitle}"
 			tasks: [
 				{

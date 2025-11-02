@@ -344,7 +344,7 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:radon', 5))
 		.itemOutputs(Item.of('tfg:refrigerant_pellet', 1))
 		.EUt(GTValues.VA[GTValues.EV])
-		.duration(20*17)
+		.duration(20*9)
 
 	// Graphite Moderator Line
 
