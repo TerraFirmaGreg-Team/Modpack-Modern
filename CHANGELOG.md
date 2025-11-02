@@ -2,7 +2,11 @@
 
 ## [Unreleased]
 ### Changes
+- Added a paving cart for automating RNR roads. (#2144) @Redeix
 ### Bug fixes
+- Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
+### Translation updates
+- Brazilian Portuguese @Redeix
 
 ## [0.11.7] - 30-10-2025
 ### Changes
