@@ -30,7 +30,6 @@
 - Added more mineable tags to cobwebs since swords don't want to work @Pyritie
 - Added TACZ Ammo Boxes @BlueBoat29
 - Added TACZ Guns and Ammo Boxes to tool rack @BlueBoat29
-
 - Overhauled the recycling recipes and added many more (#1576) @Pyritie
 - Added an earlier way to make dough using a normal tfc ceramic/wood bowl @Pyritie
 - Added ABS recipe for T2 Rocket Alloy @Xtrial-01
@@ -58,7 +57,6 @@
 - Fixed graphite moderator frame interactions @BlueBoat29
 - Fixed some casings not being mineable with a wrench (#2123) @TomPlop
 ### Translation updates
-- Brazilian Portuguese @Redeix
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
 - Japanese @sakura-gondra
