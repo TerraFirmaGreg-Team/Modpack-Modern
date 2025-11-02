@@ -579,8 +579,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_fluid_solidifier.title}"
-			x: -7.5d
-			y: 4.5d
+			x: -8.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -609,7 +609,10 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["6042514C8FC54334"]
+			dependencies: [
+				"6042514C8FC54334"
+				"5B2696206205CB2E"
+			]
 			description: ["{quests.low_voltage.cupronickel_coil.desc}"]
 			icon: {
 				Count: 1
@@ -679,8 +682,8 @@
 				}
 			]
 			title: "{quests.low_voltage.lv_chemical_reactor.title}"
-			x: -7.5d
-			y: 2.5d
+			x: -8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["10ECB471A77F5136"]
@@ -726,8 +729,8 @@
 				}
 			]
 			title: "{quests.low_voltage.mold_rotor.title}"
-			x: -8.5d
-			y: 4.5d
+			x: -9.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5B891BA4897FD73C"]
@@ -1352,8 +1355,8 @@
 				}
 			]
 			title: "{quests.low_voltage.mold_plate.title}"
-			x: -7.5d
-			y: 5.5d
+			x: -8.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3E6DC423FE4A99F7"]
@@ -1573,7 +1576,6 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["5B2696206205CB2E"]
 			description: ["{quests.low_voltage.cupronickel_ingot.desc}"]
 			id: "6042514C8FC54334"
 			subtitle: "{quests.low_voltage.cupronickel_ingot.subtitle}"
@@ -1583,7 +1585,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.cupronickel_ingot.title}"
-			x: -7.5d
+			x: -6.5d
 			y: 6.5d
 		}
 	]

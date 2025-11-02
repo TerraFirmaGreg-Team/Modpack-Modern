@@ -7,7 +7,7 @@ const registerCreateAdditionsRecipes = (event) => {
 	event.remove({ mod: 'createaddition' });
 
 	// Прокатный стан
-	event.shaped('createaddition:rolling_mill', [
+	event.recipes.gtceu.shaped('createaddition:rolling_mill', [
 		'ABA',
 		'CBC',
 		'DED'
@@ -17,10 +17,10 @@ const registerCreateAdditionsRecipes = (event) => {
 		C: '#forge:double_plates/black_steel',
 		D: '#gtceu:circuits/ulv',
 		E: 'gtceu:ulv_machine_hull'
-	}).id('tfg:create_additions/shaped/rolling_mill')
+	}).addMaterialInfo().id('tfg:create_additions/shaped/rolling_mill')
 
 	// Цифровой адаптер
-	event.shaped('createaddition:digital_adapter', [
+	event.recipes.gtceu.shaped('createaddition:digital_adapter', [
 		'ABA',
 		'BCB',
 		'ABA'
@@ -28,10 +28,10 @@ const registerCreateAdditionsRecipes = (event) => {
 		A: '#forge:plates/brass',
 		B: 'gtceu:red_alloy_single_wire',
 		C: 'computercraft:wired_modem',
-	}).id('tfg:create_additions/shaped/digital_adapter')
+	}).addMaterialInfo().id('tfg:create_additions/shaped/digital_adapter')
 
 	// Портативный энергетический интерфейс
-	event.shaped('createaddition:portable_energy_interface', [
+	event.recipes.gtceu.shaped('createaddition:portable_energy_interface', [
 		'ABC',
 		'DEC',
 		'ADC'
@@ -41,7 +41,7 @@ const registerCreateAdditionsRecipes = (event) => {
 		C: 'gtceu:copper_octal_wire',
 		D: 'gtceu:copper_single_cable',
 		E: 'create:brass_casing'
-	}).id('tfg:create_additions/shaped/portable_energy_interface')
+	}).addMaterialInfo().id('tfg:create_additions/shaped/portable_energy_interface')
 
 	// Батарейный блок
 	event.recipes.gtceu.assembler('create_additions/battery')
@@ -49,6 +49,7 @@ const registerCreateAdditionsRecipes = (event) => {
 		.itemOutputs('createaddition:modular_accumulator')
 		.duration(400)
 		.EUt(30)
+		.addMaterialInfo(true)
 
 	// Колючая проволка
 	event.shapeless('4x createaddition:barbed_wire', [
@@ -69,8 +70,9 @@ const registerCreateAdditionsRecipes = (event) => {
 		.itemOutputs('4x createaddition:barbed_wire')
 		.duration(200)
 		.EUt(20)
+		.addMaterialInfo(true)
 
-	event.shaped('createaddition:electric_motor', [
+	event.recipes.gtceu.shaped('createaddition:electric_motor', [
 		'CCC',
 		'BDA',
 		'CCC'
@@ -79,9 +81,9 @@ const registerCreateAdditionsRecipes = (event) => {
 		B: 'create:rotation_speed_controller',
 		C: 'gtceu:tin_single_cable',
 		D: 'gtceu:lv_electric_motor',
-	}).id('tfg:createadditions/shaped/electric_motor')
+	}).addMaterialInfo().id('tfg:createadditions/shaped/electric_motor')
 
-	event.shaped('createaddition:alternator', [
+	event.recipes.gtceu.shaped('createaddition:alternator', [
 		'ABA',
 		'CDC',
 		'EFE'
@@ -92,7 +94,7 @@ const registerCreateAdditionsRecipes = (event) => {
 		D: 'gtceu:ulv_machine_hull',
 		E: 'gtceu:tin_single_cable',
 		F: '#forge:shafts'
-	}).id('tfg:createadditions/shaped/alternator')
+	}).addMaterialInfo().id('tfg:createadditions/shaped/alternator')
 
 	
 	event.shapeless('createaddition:diamond_grit_sandpaper', ['minecraft:paper', 'tfc:glue', '#forge:dusts/diamond'])

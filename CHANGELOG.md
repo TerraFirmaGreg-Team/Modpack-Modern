@@ -2,6 +2,27 @@
 
 ## [Unreleased]
 ### Changes
+- Added a paving cart for automating RNR roads. (#2144) @Redeix
+### Bug fixes
+- Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
+### Translation updates
+- Brazilian Portuguese @Redeix
+
+## [0.11.7] - 30-10-2025
+### Changes
+- Wild canola and flax are now more rare (#2125) @BlueBoat29
+- Maple and birch syrup tapping is now more temperature tolerand and works any time of year (#2126) @theMegaTech
+### Bug fixes
+- Fixed an issue with the fission reactor causing chunkbans @Vazde
+- Fixed an issue with the third-person-shooting mod not working correctly on servers sometimes @Xikaro
+- Fixed fission components not being registered properly @Pyritie
+
+## [0.11.6] - 29-10-2025
+### Mod updates
+- New GregTech patch, check the patch notes [here](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.2.1-1.20.1)
+- Changed to a different third-person mod that supports TACZ better
+- Aged Alcohols added their own effects for aged corn whiskey and rye whiskey (replacing our own), and now also has aged mead
+### Changes
 - Changed TACZ ammo stack sizes to be more normal @BlueBoat29 
 - Buffed how far each Soarer "flap" can glide for @Pyritie
 - Polycaprolactam string and phantom string now use circuit 3 in a wiremill instead of 0 (#2096) @SverhRazum-Nah
@@ -9,20 +30,38 @@
 - Added more mineable tags to cobwebs since swords don't want to work @Pyritie
 - Added TACZ Ammo Boxes @BlueBoat29
 - Added TACZ Guns and Ammo Boxes to tool rack @BlueBoat29
-- Added a paving cart for automating RNR roads. (#2144) @Redeix
+
+- Overhauled the recycling recipes and added many more (#1576) @Pyritie
+- Added an earlier way to make dough using a normal tfc ceramic/wood bowl @Pyritie
+- Added ABS recipe for T2 Rocket Alloy @Xtrial-01
+- Changed the color of Rhodium Plated Palladium to be more unique @BlueBoat29
+- Changed the Ad Astra planet screen to reflect TFG @BlueBoat29 @Redeix
+- Added assembler recipes for railgun buses (#2119) @Xtrial-01
+- Changed Salvos to use Phenol instead of Aminophenol (#2119) @Xtrial-01
+- The teleporting between the Beneath and the Overworld should now only replace collapsible blocks with air (instead of everything), and will give 30 sec of slow fall and fire protection @Pyritie
+- Added tortilla chips, tomato sauce, salsa, and shredded cheese to the meal bag tag @Pyritie
+- Glacian Rams now give more wool @BlueBoat29
+- Rotor Holders now require an Assembler of the appropriate tier to be crafted (#2123) @TomPlop
+- Lowered the craft time of Refrigerant Pellets until a better solution is finished (#2123) @TomPlop
+- Lowered the craft time of ammonium tungstate dust (#2123) @TomPlop
 ### Bug fixes
 - Fixed part of the tungsten processing loop giving way too much salt (#2095) @Redeix
 - Fixed basic super tanks so you can now left/right click with them in GUIs like you can with the others (#2100) @jurrejelle
 - Fixed sometimes crash on startup (#2098) @Pyritie
-- Fixed some quest misinformation (#2097) @Pyritie, @jmecn
+- Fixed some quest misinformation (#2097, #2119) @Pyritie, @jmecn, @Xtrial-01
 - Fixed not being able to ride Soarers (#2082) @Pyritie
 - Fixed Soarer "flap" GUI overlapping with the minimap @Pyritie
 - Fixed aqueduct recipes (#2101) @vidal-adrien
-- Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
+- Fixed some AFC logs not having stripping recipes @Pyritie
+- Fixed some issues related to AE2 blocking mode @ko-lja
+- Fixed wild bulbkin plants not dropping bulbkin seeds @Pyritie
+- Fixed graphite moderator frame interactions @BlueBoat29
+- Fixed some casings not being mineable with a wrench (#2123) @TomPlop
 ### Translation updates
 - Brazilian Portuguese @Redeix
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
+- Japanese @sakura-gondra
 
 ## [0.11.5] - 22-10-2025
 - Fixed missing ComputerCraft in single player modpack, due to a bug in the latest pakku version

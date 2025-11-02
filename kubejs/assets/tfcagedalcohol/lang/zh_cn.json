@@ -24,6 +24,9 @@
   "block.tfcagedalcohol.fluid.aged_rye_whiskey": "陈酿黑麦威士忌",
   "item.tfcagedalcohol.bucket.aged_rye_whiskey": "陈酿黑麦威士忌桶",
   "fluid.tfcagedalcohol.aged_rye_whiskey": "陈酿黑麦威士忌",
+  "block.tfcagedalcohol.fluid.aged_mead": "陈酿蜂蜜酒",
+  "item.tfcagedalcohol.bucket.aged_mead": "陈酿蜂蜜酒桶",
+  "fluid.tfcagedalcohol.aged_mead": "陈酿蜂蜜酒",
   "tfc.recipe.barrel.tfcagedalcohol.barrel.aged_beer": "陈酿啤酒",
   "tfc.recipe.barrel.tfcagedalcohol.barrel.aged_cider": "陈酿苹果酒",
   "tfc.recipe.barrel.tfcagedalcohol.barrel.aged_rum": "陈酿朗姆酒",
@@ -32,5 +35,6 @@
   "tfc.recipe.barrel.tfcagedalcohol.barrel.aged_whiskey": "陈酿威士忌",
   "tfc.recipe.barrel.tfcagedalcohol.barrel.aged_corn_whiskey": "陈酿玉米威士忌",
   "tfc.recipe.barrel.tfcagedalcohol.barrel.aged_rye_whiskey": "陈酿黑麦威士忌",
+  "tfc.recipe.barrel.tfcagedalcohol.barrel.aged_mead": "陈酿蜂蜜酒",
   "tfcagedalcohol.creative_tab.main": "群峦传说：陈年佳酿"
 }

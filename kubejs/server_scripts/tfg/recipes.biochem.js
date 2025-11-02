@@ -157,7 +157,8 @@ function registerTFGBiochemRecipes(event) {
 		.itemOutputs('tfg:casings/machine_casing_ultraviolet')
 		.duration(8*20)
 		.circuit(6)
-		.EUt(GTValues.VA[GTValues.EV]);
+		.EUt(GTValues.VA[GTValues.EV])
+		.addMaterialInfo(true);
 
 	event.recipes.gtceu.assembler('tfg:bioculture_casing')
 		.itemInputs('gtceu:plascrete', '#forge:frames/desh')
@@ -165,7 +166,8 @@ function registerTFGBiochemRecipes(event) {
 		.itemOutputs('tfg:casings/machine_casing_bioculture')
 		.duration(8*20)
 		.circuit(6)
-		.EUt(GTValues.VA[GTValues.HV]);
+		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true);
 
 	event.recipes.gtceu.assembler('tfg:bioculture_glass')
 		.itemInputs('#forge:frames/desh', ChemicalHelper.get(TagPrefix.dust, GTMaterials.Iron, 1), ChemicalHelper.get(TagPrefix.dust, GTMaterials.Bismuth, 1))
@@ -173,9 +175,10 @@ function registerTFGBiochemRecipes(event) {
 		.itemOutputs('tfg:casings/machine_casing_bioculture_glass')
 		.duration(8*20)
 		.circuit(6)
-		.EUt(GTValues.VA[GTValues.HV]);
+		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true);
 
-	event.shaped('tfg:bioreactor', [
+	event.recipes.gtceu.shaped('tfg:bioreactor', [
 		'CBC',
 		'EAF',
 		'CDC'
@@ -186,9 +189,9 @@ function registerTFGBiochemRecipes(event) {
 		D: 'gtceu:aluminium_single_cable',
 		E: 'gtceu:ev_electric_pump',
 		F: 'gtceu:ev_electric_motor',
-	}).id('tfg:shaped/bioreactor');
+	}).addMaterialInfo().id('tfg:shaped/bioreactor');
 
-	event.shaped('tfg:casings/bioculture_rotor_primary', [
+	event.recipes.gtceu.shaped('tfg:casings/bioculture_rotor_primary', [
 		'CBC',
 		'DBD',
 		'CAC'
@@ -197,7 +200,7 @@ function registerTFGBiochemRecipes(event) {
 		B: 'gtceu:tungsten_steel_rotor',
 		C: 'gtceu:inert_machine_casing',
 		D: ChemicalHelper.get(TagPrefix.ring, GTMaterials.StyreneButadieneRubber, 1)
-	}).id('tfg:shaped/bioculture_rotor_primary');
+	}).addMaterialInfo().id('tfg:shaped/bioculture_rotor_primary');
 
 	event.shapeless('tfg:casings/bioculture_rotor_secondary', [
 		'tfg:casings/bioculture_rotor_primary'
@@ -212,7 +215,7 @@ function registerTFGBiochemRecipes(event) {
 		ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.StainlessSteel, 1)
 	]).id('tfg:shapeless/sample_rack');
 
-	event.shaped('tfg:growth_monitor', [
+	event.recipes.gtceu.shaped('tfg:growth_monitor', [
 		'CEC',
 		'DBD',
 		'CAC'
@@ -222,7 +225,7 @@ function registerTFGBiochemRecipes(event) {
 		C: ChemicalHelper.get(TagPrefix.plateDense, GTMaterials.TungstenSteel, 1),
 		D: '#gtceu:circuits/luv',
 		E: '#forge:lenses/amethyst'
-	}).id('tfg:shaped/growth_monitor');
+	}).addMaterialInfo().id('tfg:shaped/growth_monitor');
 
 	event.recipes.gtceu.assembler('tfg:casings/machine_casing_sterilizing_pipes')
 		.itemInputs(
@@ -234,7 +237,8 @@ function registerTFGBiochemRecipes(event) {
 		.itemOutputs(Item.of('tfg:casings/machine_casing_sterilizing_pipes').withCount(2))
 		.duration(8*20)
 		.circuit(6)
-		.EUt(GTValues.VA[GTValues.EV]);
+		.EUt(GTValues.VA[GTValues.EV])
+		.addMaterialInfo(true);
 
 	event.recipes.gtceu.assembler('tfg:single_itemstack_bus')
 		.itemInputs(
@@ -246,7 +250,8 @@ function registerTFGBiochemRecipes(event) {
 		.duration(15*20)
 		.circuit(6)
 		.EUt(GTValues.VA[GTValues.IV])
-		.cleanroom(CleanroomType.CLEANROOM);
+		.cleanroom(CleanroomType.CLEANROOM)
+		.addMaterialInfo(true);
 
 	event.recipes.gtceu.assembly_line('tfg:growth_chamber')
 		.itemInputs(
@@ -290,6 +295,7 @@ function registerTFGBiochemRecipes(event) {
 		.circuit(4)
 		.EUt(GTValues.VA[GTValues.EV])
 		.cleanroom(CleanroomType.CLEANROOM)
+		.addMaterialInfo(true)
 
 	event.shapeless('tfg:dirty_dna_syringe', [
 		'tfg:filled_dna_syringe'
@@ -306,7 +312,8 @@ function registerTFGBiochemRecipes(event) {
 		.itemOutputs(Item.of('tfg:lab_equipment').withCount(4))
 		.duration(10*20)
 		.EUt(GTValues.VA[GTValues.EV])
-		.cleanroom(CleanroomType.CLEANROOM);
+		.cleanroom(CleanroomType.CLEANROOM)
+		.addMaterialInfo(true);
 
 	event.remove({id: 'gtceu:fluid_solidifier/petri_dish_pbi'});
 	event.remove({id: 'gtceu:fluid_solidifier/petri_dish_ptfe'});

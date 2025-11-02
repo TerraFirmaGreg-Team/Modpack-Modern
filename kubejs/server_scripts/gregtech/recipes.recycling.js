@@ -140,54 +140,6 @@ function registerGTCEURecyclingRecipes(event) {
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	// Redstone lamp
-
-	event.recipes.gtceu.macerator('gtceu:macerate_redstone_lamp')
-		.itemInputs('minecraft:redstone_lamp')
-		.itemOutputs('2x #forge:small_dusts/red_alloy', '21x #forge:tiny_dusts/glass', '4x #forge:dusts/glowstone')
-		.duration(GTMaterials.RedAlloy.getMass() * 2)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.arc_furnace('gtceu:arc_redstone_lamp')
-		.itemInputs('minecraft:redstone_lamp')
-		.itemOutputs('4x #forge:nuggets/red_alloy')
-		.duration(GTMaterials.RedAlloy.getMass() * 2)
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-		.EUt(GTValues.VA[GTValues.LV])
-
-	// Dispenser
-
-	event.recipes.gtceu.macerator('gtceu:macerate_dispenser')
-		.itemInputs('minecraft:dispenser')
-		.itemOutputs('6x #forge:dusts/stone', '1x #forge:dusts/redstone', '1x #forge:dusts/brass')
-		.duration(GTMaterials.Brass.getMass() * 2)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.arc_furnace('gtceu:arc_dispenser')
-		.itemInputs('minecraft:dispenser')
-		.itemOutputs('1x #forge:ingots/brass')
-		.duration(GTMaterials.Brass.getMass() * 2)
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-		.EUt(GTValues.VA[GTValues.LV])
-
-	// Dropper
-
-	event.recipes.gtceu.macerator('gtceu:macerate_dropper')
-		.itemInputs('minecraft:dropper')
-		.itemOutputs('7x #forge:dusts/stone', '1x #forge:dusts/redstone', '1x #forge:dusts/brass')
-		.duration(GTMaterials.Brass.getMass() * 2)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.arc_furnace('gtceu:arc_dropper')
-		.itemInputs('minecraft:dropper')
-		.itemOutputs('1x #forge:ingots/brass')
-		.duration(GTMaterials.Brass.getMass() * 2)
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-		.EUt(GTValues.VA[GTValues.LV])
-
 
 	// Clean Foil pack
 	event.recipes.gtceu.macerator('gtceu:macerator/recycling/clean_foil_pack')

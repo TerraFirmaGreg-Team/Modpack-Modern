@@ -18,6 +18,7 @@ const registerAE2InsertExportCardRecipes = (event) => {
         .itemOutputs('ae2insertexportcard:insert_card')
         .duration(100)
         .EUt(1920)
+		.addMaterialInfo(true)
 
     // Export Card
     event.recipes.gtceu.assembler('ae2insertexportcard:export_card')
@@ -30,4 +31,5 @@ const registerAE2InsertExportCardRecipes = (event) => {
         .itemOutputs('ae2insertexportcard:export_card')
         .duration(100)
         .EUt(1920)
+		.addMaterialInfo(true)
 }

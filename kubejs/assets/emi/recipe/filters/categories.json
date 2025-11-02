@@ -79,6 +79,18 @@
             "id": "sophisticatedbackpacks:multiple_colors"
         },
         {
+            "id": "/.+wireless_ammo_box.*/"
+        },
+        {
+            "id": "toomanyrecipeviewers:/create/potions"
+        },
+        {
+            "id": "/gtceu.+potion_.+/"
+        },
+        {
+            "id": "/.+crafting/tipped_arrow/.+/"
+        },
+        {
             "category": "ae2:certus_growth"
         },
         {

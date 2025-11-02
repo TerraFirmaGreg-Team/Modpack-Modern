@@ -44,6 +44,8 @@ const registerTFGItemTags = (event) => {
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/hematitic_sand_covering')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_snow_covering')
 
+	event.add('c:hidden_from_recipe_viewers', 'tfg:mars_ice')
+
 	//Decorative Vases
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
 		event.add('c:hidden_from_recipe_viewers', `tfg:decorative_vase/generated/${color}`)
@@ -304,6 +306,10 @@ const registerTFGItemTags = (event) => {
 		'firmalife:food/cooked_pasta',
 		'firmalife:food/pasta_with_tomato_sauce',
 		'firmalife:food/cooked_rice_noodles',
+		'firmalife:food/tortilla_chips',
+		'firmalife:food/shredded_cheese',
+		'firmalife:food/salsa',
+		'firmalife:food/tomato_sauce',
 		'tfg:roasted_sunflower_seeds',
 		'tfg:food/cooked_dino_nugget'
 	];
