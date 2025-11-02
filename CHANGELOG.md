@@ -9,6 +9,7 @@
 - Added more mineable tags to cobwebs since swords don't want to work @Pyritie
 - Added TACZ Ammo Boxes @BlueBoat29
 - Added TACZ Guns and Ammo Boxes to tool rack @BlueBoat29
+- Added a paving cart for automating RNR roads. (#2144) @Redeix
 ### Bug fixes
 - Fixed part of the tungsten processing loop giving way too much salt (#2095) @Redeix
 - Fixed basic super tanks so you can now left/right click with them in GUIs like you can with the others (#2100) @jurrejelle
@@ -17,7 +18,9 @@
 - Fixed not being able to ride Soarers (#2082) @Pyritie
 - Fixed Soarer "flap" GUI overlapping with the minimap @Pyritie
 - Fixed aqueduct recipes (#2101) @vidal-adrien
+- Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
 ### Translation updates
+- Brazilian Portuguese @Redeix
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
 
