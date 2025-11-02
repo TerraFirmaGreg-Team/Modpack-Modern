@@ -216,6 +216,9 @@ const registerTFGItems = (event) => {
 	event.create('tfg:twigs/alphacene')
 		.tag('tfc:twigs')
 		.texture('tfg:item/wood/twig/alphacene')
+		
+	event.create('tfg:cobalt_brass_wheel')
+		.translationKey('item.tfg.cobalt_brass_wheel')
 	//#endregion
 
 	//#region Cloth & String
