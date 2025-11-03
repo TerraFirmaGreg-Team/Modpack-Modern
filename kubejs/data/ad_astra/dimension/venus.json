@@ -153,7 +153,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -1,
-							"erosion": -0.2,
+							"erosion": -0.05,
 							"weirdness": -0.2,
 							"depth": 0,
 							"offset": 0
@@ -165,7 +165,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -1,
-							"erosion": -0.2,
+							"erosion": -0.05,
 							"weirdness": 0,
 							"depth": 0,
 							"offset": 0
@@ -177,44 +177,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -1,
-							"erosion": -0.2,
-							"weirdness": 0.2,
-							"depth": 0,
-							"offset": 0
-						}
-					},
-
-					{
-						"biome": "tfg:venus/ocean",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -1,
-							"erosion": 0,
-							"weirdness": -0.2,
-							"depth": 0,
-							"offset": 0
-						}
-					},
-					{
-						"biome": "tfg:venus/ocean",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -1,
-							"erosion": 0,
-							"weirdness": 0,
-							"depth": 0,
-							"offset": 0
-						}
-					},
-					{
-						"biome": "tfg:venus/ocean",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -1,
-							"erosion": 0,
+							"erosion": -0.05,
 							"weirdness": 0.2,
 							"depth": 0,
 							"offset": 0
@@ -226,7 +189,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -1,
-							"erosion": 0.2,
+							"erosion": 0.05,
 							"weirdness": -0.2,
 							"depth": 0,
 							"offset": 0
@@ -238,7 +201,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -1,
-							"erosion": 0.2,
+							"erosion": 0.05,
 							"weirdness": 0,
 							"depth": 0,
 							"offset": 0
@@ -250,7 +213,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -1,
-							"erosion": 0.2,
+							"erosion": 0.05,
 							"weirdness": 0.2,
 							"depth": 0,
 							"offset": 0
@@ -264,7 +227,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -0.51,
-							"erosion": -0.2,
+							"erosion": -0.05,
 							"weirdness": -0.2,
 							"depth": 0,
 							"offset": 0
@@ -276,7 +239,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -0.51,
-							"erosion": -0.2,
+							"erosion": -0.05,
 							"weirdness": 0,
 							"depth": 0,
 							"offset": 0
@@ -288,7 +251,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -0.51,
-							"erosion": -0.2,
+							"erosion": -0.05,
 							"weirdness": 0.2,
 							"depth": 0,
 							"offset": 0
@@ -300,7 +263,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -0.51,
-							"erosion": 0,
+							"erosion": 0.05,
 							"weirdness": -0.2,
 							"depth": 0,
 							"offset": 0
@@ -312,7 +275,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -0.51,
-							"erosion": 0,
+							"erosion": 0.05,
 							"weirdness": 0,
 							"depth": 0,
 							"offset": 0
@@ -324,44 +287,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -0.51,
-							"erosion": 0,
-							"weirdness": 0.2,
-							"depth": 0,
-							"offset": 0
-						}
-					},
-
-					{
-						"biome": "tfg:venus/ocean",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -0.51,
-							"erosion": 0.2,
-							"weirdness": -0.2,
-							"depth": 0,
-							"offset": 0
-						}
-					},
-					{
-						"biome": "tfg:venus/ocean",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -0.51,
-							"erosion": 0.2,
-							"weirdness": 0,
-							"depth": 0,
-							"offset": 0
-						}
-					},
-					{
-						"biome": "tfg:venus/ocean",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -0.51,
-							"erosion": 0.2,
+							"erosion": 0.05,
 							"weirdness": 0.2,
 							"depth": 0,
 							"offset": 0
@@ -375,7 +301,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -0.50,
-							"erosion": -0.2,
+							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": -0.2,
 							"offset": 0
@@ -387,7 +313,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -0.50,
-							"erosion": -0.2,
+							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": 0,
 							"offset": 0
@@ -399,7 +325,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -0.50,
-							"erosion": -0.2,
+							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": 0.2,
 							"offset": 0
@@ -412,7 +338,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -0.50,
-							"erosion": 0,
+							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": -0.2,
 							"offset": 0
@@ -424,7 +350,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -0.50,
-							"erosion": 0,
+							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": 0,
 							"offset": 0
@@ -436,44 +362,7 @@
 							"temperature": 0,
 							"humidity": 0,
 							"continentalness": -0.50,
-							"erosion": 0,
-							"depth": 0,
-							"weirdness": 0.2,
-							"offset": 0
-						}
-					},
-
-					{
-						"biome": "tfg:venus/beach",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -0.50,
-							"erosion": 0.2,
-							"depth": 0,
-							"weirdness": -0.2,
-							"offset": 0
-						}
-					},
-					{
-						"biome": "tfg:venus/river",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -0.50,
-							"erosion": 0.2,
-							"depth": 0,
-							"weirdness": 0,
-							"offset": 0
-						}
-					},
-					{
-						"biome": "tfg:venus/beach",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -0.50,
-							"erosion": 0.2,
+							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": 0.2,
 							"offset": 0
@@ -486,8 +375,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.46,
-							"erosion": -0.2,
+							"continentalness": -0.44,
+							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": -0.2,
 							"offset": 0
@@ -498,8 +387,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.46,
-							"erosion": -0.2,
+							"continentalness": -0.44,
+							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": 0,
 							"offset": 0
@@ -510,8 +399,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.46,
-							"erosion": -0.2,
+							"continentalness": -0.44,
+							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": 0.2,
 							"offset": 0
@@ -523,8 +412,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.46,
-							"erosion": 0,
+							"continentalness": -0.41,
+							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": -0.2,
 							"offset": 0
@@ -535,8 +424,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.46,
-							"erosion": 0,
+							"continentalness": -0.41,
+							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": 0,
 							"offset": 0
@@ -547,45 +436,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.46,
-							"erosion": 0,
-							"depth": 0,
-							"weirdness": 0.2,
-							"offset": 0
-						}
-					},
-
-					{
-						"biome": "tfg:venus/beach",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -0.46,
-							"erosion": 0.2,
-							"depth": 0,
-							"weirdness": -0.2,
-							"offset": 0
-						}
-					},
-					{
-						"biome": "tfg:venus/river",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -0.46,
-							"erosion": 0.2,
-							"depth": 0,
-							"weirdness": 0,
-							"offset": 0
-						}
-					},
-					{
-						"biome": "tfg:venus/beach",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -0.46,
-							"erosion": 0.2,
+							"continentalness": -0.41,
+							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": 0.2,
 							"offset": 0
@@ -599,8 +451,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.44,
-							"erosion": 0.2,
+							"continentalness": -0.40,
+							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": -0.2,
 							"offset": 0.0
@@ -611,8 +463,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.44,
-							"erosion": 0.2,
+							"continentalness": -0.40,
+							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": 0,
 							"offset": 0.0
@@ -623,8 +475,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.44,
-							"erosion": 0.2,
+							"continentalness": -0.40,
+							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": 0.2,
 							"offset": 0.0
@@ -636,8 +488,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": 0.25,
-							"erosion": 0.2,
+							"continentalness": -0.1,
+							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": -0.2,
 							"offset": 0.0
@@ -648,8 +500,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": 0.25,
-							"erosion": 0.2,
+							"continentalness": -0.1,
+							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": 0,
 							"offset": 0.0
@@ -660,8 +512,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": 0.25,
-							"erosion": 0.2,
+							"continentalness": -0.1,
+							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": 0.2,
 							"offset": 0.0
@@ -675,8 +527,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.44,
-							"erosion": -0.2,
+							"continentalness": -0.40,
+							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": -0.2,
 							"offset": 0.0
@@ -687,8 +539,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.44,
-							"erosion": -0.2,
+							"continentalness": -0.40,
+							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": 0,
 							"offset": 0.0
@@ -699,8 +551,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.44,
-							"erosion": -0.2,
+							"continentalness": -0.40,
+							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": 0.2,
 							"offset": 0.0
@@ -712,8 +564,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": 0.25,
-							"erosion": -0.2,
+							"continentalness": -0.1,
+							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": -0.2,
 							"offset": 0.0
@@ -724,8 +576,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": 0.25,
-							"erosion": -0.2,
+							"continentalness": -0.1,
+							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": 0,
 							"offset": 0.0
@@ -736,8 +588,160 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": 0.25,
-							"erosion": -0.2,
+							"continentalness": -0.1,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+
+					{
+						"biome": "tfg:venus/pools",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.05,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/river",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.05,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/pools",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.05,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+					{
+						"biome": "tfg:venus/pools",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.35,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/river",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.35,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/pools",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.35,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+
+
+					{
+						"biome": "tfg:venus/geysers",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.05,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/river",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.05,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/geysers",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.05,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+
+					{
+						"biome": "tfg:venus/geysers",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.35,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/river",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.35,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/geysers",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.35,
+							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": 0.2,
 							"offset": 0.0
@@ -752,20 +756,20 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": 0.3,
-							"erosion": 0.2,
+							"continentalness": 0.4,
+							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": -0.2,
 							"offset": 0.0
 						}
 					},
 					{
-						"biome": "tfg:venus/river",
+						"biome": "tfg:venus/mesas",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": 0.3,
-							"erosion": 0.2,
+							"continentalness": 0.4,
+							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": 0,
 							"offset": 0.0
@@ -776,8 +780,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": 0.3,
-							"erosion": 0.2,
+							"continentalness": 0.4,
+							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": 0.2,
 							"offset": 0.0
@@ -790,20 +794,20 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": 0.3,
-							"erosion": -0.2,
+							"continentalness": 0.4,
+							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": -0.2,
 							"offset": 0.0
 						}
 					},
 					{
-						"biome": "tfg:venus/river",
+						"biome": "tfg:venus/volcanoes",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": 0.3,
-							"erosion": -0.2,
+							"continentalness": 0.4,
+							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": 0,
 							"offset": 0.0
@@ -814,8 +818,8 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": 0.3,
-							"erosion": -0.2,
+							"continentalness": 0.4,
+							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": 0.2,
 							"offset": 0.0
