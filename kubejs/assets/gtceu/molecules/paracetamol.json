@@ -38,16 +38,16 @@
 		},
 		{
 			"type": "atom",
-			"element": O,
-			"left": H,
+			"element": "O",
+			"left": "H",
 			"index": 6,
 			"x": 0.0,
 			"y": 0.0
 		},
 		{
 			"type": "atom",
-			"element": N,
-			"above": H,
+			"element": "N",
+			"above": "H",
 			"index": 7,
 			"x": 3.4641,
 			"y": 2.0
@@ -66,7 +66,7 @@
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"index": 10,
 			"x": 5.1962,
 			"y": 2.0

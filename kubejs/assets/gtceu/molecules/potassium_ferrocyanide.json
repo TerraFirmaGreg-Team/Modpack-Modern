@@ -2,7 +2,7 @@
 	"contents": [
 		{
 			"type": "atom",
-			"element": Fe,
+			"element": "Fe",
 			"index": 0,
 			"x": 2.95,
 			"y": 0.0
@@ -45,42 +45,42 @@
 		},
 		{
 			"type": "atom",
-			"element": N,
+			"element": "N",
 			"index": 7,
 			"x": 1.218,
 			"y": -1.0
 		},
 		{
 			"type": "atom",
-			"element": N,
+			"element": "N",
 			"index": 8,
 			"x": 4.6821,
 			"y": 1.0
 		},
 		{
 			"type": "atom",
-			"element": N,
+			"element": "N",
 			"index": 9,
 			"x": 2.95,
 			"y": 2.0
 		},
 		{
 			"type": "atom",
-			"element": N,
+			"element": "N",
 			"index": 10,
 			"x": 4.6821,
 			"y": -1.0
 		},
 		{
 			"type": "atom",
-			"element": N,
+			"element": "N",
 			"index": 11,
 			"x": 1.218,
 			"y": 1.0
 		},
 		{
 			"type": "atom",
-			"element": N,
+			"element": "N",
 			"index": 12,
 			"x": 2.95,
 			"y": -2.0
