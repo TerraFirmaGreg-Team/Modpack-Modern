@@ -105,8 +105,15 @@ global.MARS_BIOMES = [
  * @type {string[]} - Biome IDs
  */
 global.VENUS_BIOMES = [
-	'tfg:venus/venus_delta',
-	'tfg:venus/venus_fractured_lands'
+	'tfg:venus/arachnoids',
+	'tfg:venus/fractured_pools',
+	'tfg:venus/fumaroles',
+	'tfg:venus/geysers',
+	'tfg:venus/jagged_tablelands',
+	'tfg:venus/salt_flats',
+	'tfg:venus/stromatolite_beach',
+	'tfg:venus/sulfuric_ravine',
+	'tfg:venus/volcanic_mountains',
 ]
 
 /**
