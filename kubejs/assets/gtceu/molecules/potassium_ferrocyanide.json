@@ -1,0 +1,199 @@
+{
+	"contents": [
+		{
+			"type": "atom",
+			"element": Fe,
+			"index": 0,
+			"x": 2.95,
+			"y": 0.0
+		},
+		{
+			"type": "atom",
+			"index": 1,
+			"x": 2.084,
+			"y": 0.5
+		},
+		{
+			"type": "atom",
+			"index": 2,
+			"x": 2.084,
+			"y": -0.5
+		},
+		{
+			"type": "atom",
+			"index": 3,
+			"x": 2.95,
+			"y": 1.0
+		},
+		{
+			"type": "atom",
+			"index": 4,
+			"x": 2.95,
+			"y": -1.0
+		},
+		{
+			"type": "atom",
+			"index": 5,
+			"x": 3.816,
+			"y": 0.5
+		},
+		{
+			"type": "atom",
+			"index": 6,
+			"x": 3.816,
+			"y": -0.5
+		},
+		{
+			"type": "atom",
+			"element": N,
+			"index": 7,
+			"x": 1.218,
+			"y": -1.0
+		},
+		{
+			"type": "atom",
+			"element": N,
+			"index": 8,
+			"x": 4.6821,
+			"y": 1.0
+		},
+		{
+			"type": "atom",
+			"element": N,
+			"index": 9,
+			"x": 2.95,
+			"y": 2.0
+		},
+		{
+			"type": "atom",
+			"element": N,
+			"index": 10,
+			"x": 4.6821,
+			"y": -1.0
+		},
+		{
+			"type": "atom",
+			"element": N,
+			"index": 11,
+			"x": 1.218,
+			"y": 1.0
+		},
+		{
+			"type": "atom",
+			"element": N,
+			"index": 12,
+			"x": 2.95,
+			"y": -2.0
+		},
+		{
+		"sup": "4-",
+			"atoms": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			],
+			"type": "parens"
+		},
+		{
+			"type": "atom",
+			"element": {
+				"symbol": "K⁺",
+				"color": {
+					"color": -7388972,
+					"optional": true
+				},
+				"material": "gtceu:potassium"
+			},
+			"index": 13,
+			"x": 0.0,
+			"y": 0.0
+		},
+		{
+			"sub": "4",
+			"atoms": [ 13 ],
+			"type": "parens"
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 1,
+			"bond_type": "inward"
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 2,
+			"bond_type": "outward"
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 3,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 4,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 5,
+			"bond_type": "inward"
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 6,
+			"bond_type": "outward"
+		},
+		{
+			"type": "bond",
+			"a": 2,
+			"b": 7,
+			"bond_type": "triple"
+		},
+		{
+			"type": "bond",
+			"a": 5,
+			"b": 8,
+			"bond_type": "triple"
+		},
+		{
+			"type": "bond",
+			"a": 3,
+			"b": 9,
+			"bond_type": "triple"
+		},
+		{
+			"type": "bond",
+			"a": 6,
+			"b": 10,
+			"bond_type": "triple"
+		},
+		{
+			"type": "bond",
+			"a": 1,
+			"b": 11,
+			"bond_type": "triple"
+		},
+		{
+			"type": "bond",
+			"a": 4,
+			"b": 12,
+			"bond_type": "triple"
+		}
+	]
+}
