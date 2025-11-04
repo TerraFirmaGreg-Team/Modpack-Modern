@@ -1,0 +1,305 @@
+{
+	"contents": [
+		{
+			"type": "atom",
+			"element": O,
+			"index": 0,
+			"x": 1.8660000000000014,
+			"y": -1.5
+		},
+		{
+			"type": "atom",
+			"index": 1,
+			"x": 0.8660000000000014,
+			"y": -1.5
+		},
+		{
+			"type": "atom",
+			"index": 2,
+			"x": 0.36600000000000144,
+			"y": -2.3659999999999997
+		},
+		{
+			"type": "atom",
+			"index": 3,
+			"x": 0.8660000000000014,
+			"y": -3.2319999999999993
+		},
+		{
+			"type": "atom",
+			"index": 4,
+			"x": 1.8660000000000014,
+			"y": -3.2319999999999993
+		},
+		{
+			"type": "atom",
+			"index": 5,
+			"x": 2.3660000000000014,
+			"y": -2.3659999999999997
+		},
+		{
+			"type": "atom",
+			"element": O,
+			"left": "H",
+			"index": 6,
+			"x": 0.36600000000000144,
+			"y": -1.3659999999999997
+		},
+		{
+			"type": "atom",
+			"element": O,
+			"right": "H",
+			"index": 7,
+			"x": 0.8660000000000014,
+			"y": -2.2319999999999993
+		},
+		{
+			"type": "atom",
+			"element": O,
+			"right": "H",
+			"index": 8,
+			"x": 1.8660000000000014,
+			"y": -4.231999999999999
+		},
+		{
+			"type": "atom",
+			"element": O,
+			"index": 9,
+			"x": 2.3660000000000014,
+			"y": -1.3659999999999997
+		},
+		{
+			"type": "atom",
+			"index": 10,
+			"x": 2.3660000000000014,
+			"y": -0.36599999999999966
+		},
+		{
+			"type": "atom",
+			"index": 11,
+			"x": 0.8660000000000014,
+			"y": -0.5
+		},
+		{
+			"type": "atom",
+			"element": O,
+			"left": "H",
+			"index": 12,
+			"x": 0.0,
+			"y": 0.0
+		},
+		{
+			"type": "atom",
+			"index": 13,
+			"x": 2.8660000000000014,
+			"y": -1.2320000000000002
+		},
+		{
+			"type": "atom",
+			"index": 14,
+			"x": 3.8660000000000014,
+			"y": -1.2320000000000002
+		},
+		{
+			"type": "atom",
+			"index": 15,
+			"x": 4.366000000000001,
+			"y": -0.36599999999999966
+		},
+		{
+			"type": "atom",
+			"element": O,
+			"index": 16,
+			"x": 3.8660000000000014,
+			"y": 0.5
+		},
+		{
+			"type": "atom",
+			"index": 17,
+			"x": 2.8660000000000014,
+			"y": 0.5
+		},
+		{
+			"type": "atom",
+			"element": O,
+			"right": "H",
+			"index": 18,
+			"x": 2.8660000000000014,
+			"y": -0.2320000000000002
+		},
+		{
+			"type": "atom",
+			"element": O,
+			"right": "H",
+			"index": 19,
+			"x": 3.8660000000000014,
+			"y": -2.2319999999999993
+		},
+		{
+			"type": "atom",
+			"element": O,
+			"right": "H",
+			"index": 20,
+			"x": 4.366000000000001,
+			"y": 0.6340000000000003
+		},
+		{
+			"type": "atom",
+			"index": 21,
+			"x": 2.8660000000000014,
+			"y": 1.5
+		},
+		{
+			"type": "atom",
+			"element": O,
+			"left": "H",
+			"index": 22,
+			"x": 2.0,
+			"y": 2.0
+		},
+		{
+			"type": "bond",
+			"a": 5,
+			"b": 0,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 1,
+			"b": 2,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 2,
+			"b": 3,
+			"bond_type": "outward"
+		},
+		{
+			"type": "bond",
+			"a": 3,
+			"b": 4,
+			"bond_type": "thick"
+		},
+		{
+			"type": "bond",
+			"a": 5,
+			"b": 4,
+			"bond_type": "outward"
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 1,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 2,
+			"b": 6,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 3,
+			"b": 7,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 4,
+			"b": 8,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 5,
+			"b": 9,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 9,
+			"b": 10,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 1,
+			"b": 11,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 11,
+			"b": 12,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 17,
+			"b": 10,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 10,
+			"b": 13,
+			"bond_type": "outward"
+		},
+		{
+			"type": "bond",
+			"a": 13,
+			"b": 14,
+			"bond_type": "thick"
+		},
+		{
+			"type": "bond",
+			"a": 15,
+			"b": 14,
+			"bond_type": "outward"
+		},
+		{
+			"type": "bond",
+			"a": 15,
+			"b": 16,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 16,
+			"b": 17,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 13,
+			"b": 18,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 14,
+			"b": 19,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 15,
+			"b": 20,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 17,
+			"b": 21,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 21,
+			"b": 22,
+			"bond_type": "single"
+		}
+	]
+}

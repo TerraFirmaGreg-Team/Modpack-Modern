@@ -1,0 +1,108 @@
+{
+	"contents": [
+		{
+			"type": "atom",
+			"element": {
+				"symbol": "N⁺",
+				"material": "gtceu:nitrogen"
+		},
+			"index": 0,
+			"x": 0.0,
+			"y": 0.0
+		},
+		{
+			"type": "atom",
+			"element": {
+				"symbol": "B⁻",
+				"material": "gtceu:boron"
+        },
+			"index": 1,
+			"x": -0.8249,
+			"y": 0.0
+		},
+		{
+			"type": "atom",
+			"element": H,
+			"index": 2,
+			"x": 0.0,
+			"y": 0.825
+		},
+		{
+			"type": "atom",
+			"element": H,
+			"index": 3,
+			"x": -0.8249,
+			"y": 0.825
+		},
+		{
+			"type": "atom",
+			"element": H,
+			"index": 4,
+			"x": -1.6499,
+			"y": 0.0
+		},
+		{
+			"type": "atom",
+			"element": H,
+			"index": 5,
+			"x": 0.825,
+			"y": 0.0
+		},
+		{
+			"type": "atom",
+			"element": H,
+			"index": 6,
+			"x": -0.8249,
+			"y": -0.8249
+		},
+		{
+			"type": "atom",
+			"element": H,
+			"index": 7,
+			"x": 0.0,
+			"y": -0.8249
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 1,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 7,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 5,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 2,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 1,
+			"b": 3,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 1,
+			"b": 4,
+			"bond_type": "single"
+		},
+		{
+			"type": "bond",
+			"a": 1,
+			"b": 6,
+			"bond_type": "single"
+		}
+	]
+}

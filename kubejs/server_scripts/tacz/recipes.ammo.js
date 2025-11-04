@@ -20,8 +20,10 @@ function registerTACZAmmoRecipes(event){
 		.itemOutputs(Item.of('tacz:ammo_box', '{Level:2}'))
 		.EUt(GTValues.VA[GTValues.HV])
 		.duration(60)
-	
-	
+		
+	//event.remove({ mod: 'applied_ammo_box' })
+	event.remove({ type: 'applied_ammo_box:shaped_nbt' })
+
 	//Extruder Casing
 	event.recipes.gtceu.extruder('tfg_tacz:small_casing')
 		.itemInputs('#forge:ingots/brass')
