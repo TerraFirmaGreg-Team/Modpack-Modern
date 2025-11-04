@@ -1,5 +1,5 @@
 {
-	"sea_level": 60,
+	"sea_level": 58,
 	"disable_mob_generation": false,
 	"aquifers_enabled": true,
 	"ore_veins_enabled": false,
@@ -109,36 +109,18 @@
 																			}
 																		},
 																		"argument2": {
-																			"type": "minecraft:add",
-																			"argument1": {
-																				"type": "minecraft:clamp",
-																				"input": {
-																					"type": "minecraft:add",
-																					"argument1": 0.27,
-																					"argument2": {
-																						"type": "minecraft:noise",
-																						"noise": "minecraft:cave_cheese",
-																						"xz_scale": 1.0,
-																						"y_scale": 0.6666666666666666
-																					}
-																				},
-																				"max": 1.0,
-																				"min": -1.0
+																			"type": "minecraft:clamp",
+																			"input": {
+																				"type": "minecraft:add",
+																				"argument1": 1.5,
+																				"argument2": {
+																					"type": "minecraft:mul",
+																					"argument1": -0.64,
+																					"argument2": "tfg:venus/sloped_cheese"
+																				}
 																			},
-																			"argument2": {
-																				"type": "minecraft:clamp",
-																				"input": {
-																					"type": "minecraft:add",
-																					"argument1": 1.5,
-																					"argument2": {
-																						"type": "minecraft:mul",
-																						"argument1": -0.64,
-																						"argument2": "tfg:venus/sloped_cheese"
-																					}
-																				},
-																				"max": 0.5,
-																				"min": 0.0
-																			}
+																			"max": 0.5,
+																			"min": 0.0
 																		}
 																	},
 																	"argument2": "tfg:venus/caves/entrances"
@@ -296,7 +278,7 @@
 				"type": "minecraft:condition",
 				"if_true": {
 					"type": "minecraft:biome",
-					"biome_is": [ "tfg:venus/mesas" ]
+					"biome_is": [ "tfg:venus/jagged_tablelands" ]
 				},
 				"then_run": {
 					"type": "minecraft:block",
@@ -318,7 +300,7 @@
 				"type": "minecraft:condition",
 				"if_true": {
 					"type": "minecraft:biome",
-					"biome_is": [ "tfg:venus/volcanoes" ]
+					"biome_is": [ "tfg:venus/volcanic_mountains" ]
 				},
 				"then_run": {
 					"type": "minecraft:block",
@@ -340,17 +322,6 @@
 				"type": "minecraft:condition",
 				"if_true": {
 					"type": "minecraft:biome",
-					"biome_is": [ "tfg:venus/pools" ]
-				},
-				"then_run": {
-					"type": "minecraft:block",
-					"result_state": { "Name": "minecraft:lime_concrete" }
-				}
-			},
-			{
-				"type": "minecraft:condition",
-				"if_true": {
-					"type": "minecraft:biome",
 					"biome_is": [ "tfg:venus/geysers" ]
 				},
 				"then_run": {
@@ -362,7 +333,7 @@
 				"type": "minecraft:condition",
 				"if_true": {
 					"type": "minecraft:biome",
-					"biome_is": [ "tfg:venus/river" ]
+					"biome_is": [ "tfg:venus/sulfuric_ravine" ]
 				},
 				"then_run": {
 					"type": "minecraft:block",
@@ -373,18 +344,7 @@
 				"type": "minecraft:condition",
 				"if_true": {
 					"type": "minecraft:biome",
-					"biome_is": [ "tfg:venus/beach" ]
-				},
-				"then_run": {
-					"type": "minecraft:block",
-					"result_state": { "Name": "minecraft:blue_concrete" }
-				}
-			},
-			{
-				"type": "minecraft:condition",
-				"if_true": {
-					"type": "minecraft:biome",
-					"biome_is": [ "tfg:venus/ocean" ]
+					"biome_is": [ "tfg:venus/fumaroles" ]
 				},
 				"then_run": {
 					"type": "minecraft:block",
@@ -399,7 +359,7 @@
 				"type": "minecraft:condition",
 				"if_true": {
 					"type": "minecraft:biome",
-					"biome_is": [ "tfg:venus/venus_delta" ]
+					"biome_is": [ "tfg:venus/stromatolite_beach" ]
 				},
 				"then_run": {
 					"type": "minecraft:sequence",
@@ -1031,7 +991,7 @@
 				"type": "minecraft:condition",
 				"if_true": {
 					"type": "minecraft:biome",
-					"biome_is": [ "tfg:venus/venus_fractured_lands" ]
+					"biome_is": [ "tfg:venus/fractured_pools" ]
 				},
 				"then_run": {
 					"type": "minecraft:sequence",
