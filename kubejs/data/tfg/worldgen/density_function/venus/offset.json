@@ -48,220 +48,37 @@
 									"derivative": 0.0,
 									"location": -0.42,
 									"value": {
-										"coordinate": "tfg:venus/erosion",
+										"coordinate": "tfg:venus/ridges_folded",
 										"points": [
 											{
 												"derivative": 0.0,
-												"location": -0.85,
-												"value": {
-													"coordinate": "tfg:venus/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.38940096,
-															"location": -1.0,
-															"value": -0.05880186
-														},
-														{
-															"derivative": 0.38940096,
-															"location": 1.0,
-															"value": -0.069000006
-														}
-													]
-												}
+												"location": -1.0,
+												"value": -0.06
 											},
 											{
 												"derivative": 0.0,
-												"location": -0.7,
-												"value": {
-													"coordinate": "tfg:venus/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.37788022,
-															"location": -1.0,
-															"value": -0.065760356
-														},
-														{
-															"derivative": 0.37788022,
-															"location": 1.0,
-															"value": -0.0600001
-														}
-													]
-												}
+												"location": -0.75,
+												"value": -0.05
 											},
 											{
 												"derivative": 0.0,
-												"location": -0.4,
-												"value": {
-													"coordinate": "tfg:venus/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -1.0,
-															"value": -0.07222
-														},
-														{
-															"derivative": 0.0,
-															"location": -0.75,
-															"value": -0.07222
-														},
-														{
-															"derivative": 0.0,
-															"location": -0.65,
-															"value": -0.055
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.5954547,
-															"value": -0.06
-														},
-														{
-															"derivative": 0.2534563,
-															"location": 0.6054547,
-															"value": -0.052
-														},
-														{
-															"derivative": 0.2534563,
-															"location": 1.0,
-															"value": -0.057
-														}
-													]
-												}
+												"location": -0.65,
+												"value": -0.045
 											},
 											{
 												"derivative": 0.0,
-												"location": -0.35,
-												"value": {
-													"coordinate": "tfg:venus/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.5,
-															"location": -1.0,
-															"value": -0.07
-														},
-														{
-															"derivative": 0.0,
-															"location": -0.4,
-															"value": -0.06
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.0,
-															"value": -0.06
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.4,
-															"value": -0.06
-														},
-														{
-															"derivative": 0.007000001,
-															"location": 1.0,
-															"value": -0.07
-														}
-													]
-												}
+												"location": 0.5954547,
+												"value": -0.04
 											},
 											{
-												"derivative": 0.0,
-												"location": -0.1,
-												"value": {
-													"coordinate": "tfg:venus/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.5,
-															"location": -1.0,
-															"value": -0.05
-														},
-														{
-															"derivative": 0.0,
-															"location": -0.4,
-															"value": -0.056
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.0,
-															"value": -0.05
-														},
-														{
-															"derivative": 0.1,
-															"location": 0.4,
-															"value": -0.06
-														},
-														{
-															"derivative": 0.007000001,
-															"location": 1.0,
-															"value": -0.07
-														}
-													]
-												}
+												"derivative": 0.2534563,
+												"location": 0.6054547,
+												"value": -0.035
 											},
 											{
-												"derivative": 0.0,
-												"location": 0.2,
-												"value": {
-													"coordinate": "tfg:venus/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.5,
-															"location": -1.0,
-															"value": -0.06
-														},
-														{
-															"derivative": 0.0,
-															"location": -0.4,
-															"value": -0.05
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.0,
-															"value": -0.052
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.4,
-															"value": -0.05
-														},
-														{
-															"derivative": 0.0,
-															"location": 1.0,
-															"value": -0.057
-														}
-													]
-												}
-											},
-											{
-												"derivative": 0.0,
-												"location": 0.7,
-												"value": {
-													"coordinate": "tfg:venus/ridges_folded",
-													"points": [
-														{
-															"derivative": 0.0,
-															"location": -1.0,
-															"value": -0.051
-														},
-														{
-															"derivative": 0.0,
-															"location": -0.4,
-															"value": -0.057
-														},
-														{
-															"derivative": 0.0,
-															"location": 0.0,
-															"value": -0.052
-														},
-														{
-															"derivative": 0.06,
-															"location": 0.4,
-															"value": -0.058
-														},
-														{
-															"derivative": 0.0,
-															"location": 1.0,
-															"value": -0.06
-														}
-													]
-												}
+												"derivative": 0.2534563,
+												"location": 1.0,
+												"value": -0.03
 											}
 										]
 									}

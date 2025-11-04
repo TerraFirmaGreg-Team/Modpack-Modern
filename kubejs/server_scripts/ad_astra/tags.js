@@ -725,13 +725,13 @@ const registerAdAstraPlacedFeatures = (event) => {
 	//#endregion
 
 	//#region Venus
-	event.add('tfg:venus_delta_surface_features', 'tfg:venus/surface/geyser_source_patch')
-	event.add('tfg:venus_delta_surface_features', 'tfg:venus/surface/stromatolite_cluster_patch')
-	event.add('tfg:venus_delta_surface_features', 'tfg:venus/surface/stromatolite_tower')
+	event.add('tfg:venus_beach_surface_features', 'tfg:venus/surface/geyser_source_patch')
+	event.add('tfg:venus_beach_surface_features', 'tfg:venus/surface/stromatolite_cluster_patch')
+	event.add('tfg:venus_beach_surface_features', 'tfg:venus/surface/stromatolite_tower')
 
-	event.add('tfg:venus_delta_terrain_features', 'tfg:venus/terrain/hot_spring_delta')
-	event.add('tfg:venus_delta_terrain_features', 'tfg:venus/terrain/lava_delta')
-	event.add('tfg:venus_delta_terrain_features', 'tfg:venus/terrain/stromatolite_disk')
+	event.add('tfg:venus_beach_terrain_features', 'tfg:venus/terrain/hot_spring_delta')
+	//event.add('tfg:venus_beach_terrain_features', 'tfg:venus/terrain/lava_delta')
+	event.add('tfg:venus_beach_terrain_features', 'tfg:venus/terrain/stromatolite_disk')
 
 	//event.add('tfg:venus_fractured_lands_terrain_features', 'tfg:venus/terrain/lakes')
 

@@ -148,7 +148,7 @@
 				"type": "minecraft:multi_noise",
 				"biomes": [
 					{
-						"biome": "tfg:venus/ocean",
+						"biome": "tfg:venus/fumaroles",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -160,7 +160,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/ocean",
+						"biome": "tfg:venus/fumaroles",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -172,7 +172,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/ocean",
+						"biome": "tfg:venus/fumaroles",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -184,7 +184,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/ocean",
+						"biome": "tfg:venus/fumaroles",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -196,7 +196,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/ocean",
+						"biome": "tfg:venus/fumaroles",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -208,7 +208,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/ocean",
+						"biome": "tfg:venus/fumaroles",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -222,7 +222,7 @@
 
 
 					{
-						"biome": "tfg:venus/ocean",
+						"biome": "tfg:venus/fumaroles",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -234,7 +234,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/ocean",
+						"biome": "tfg:venus/fumaroles",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -246,7 +246,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/ocean",
+						"biome": "tfg:venus/fumaroles",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -258,7 +258,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/ocean",
+						"biome": "tfg:venus/fumaroles",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -270,7 +270,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/ocean",
+						"biome": "tfg:venus/fumaroles",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -282,7 +282,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/ocean",
+						"biome": "tfg:venus/fumaroles",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -296,7 +296,7 @@
 
 
 					{
-						"biome": "tfg:venus/beach",
+						"biome": "tfg:venus/stromatolite_beach",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -308,7 +308,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/beach",
+						"biome": "tfg:venus/stromatolite_beach",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -320,7 +320,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/beach",
+						"biome": "tfg:venus/stromatolite_beach",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -333,7 +333,7 @@
 					},
 
 					{
-						"biome": "tfg:venus/beach",
+						"biome": "tfg:venus/stromatolite_beach",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -345,7 +345,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/beach",
+						"biome": "tfg:venus/stromatolite_beach",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -357,7 +357,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/beach",
+						"biome": "tfg:venus/stromatolite_beach",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -371,7 +371,7 @@
 
 
 					{
-						"biome": "tfg:venus/beach",
+						"biome": "tfg:venus/stromatolite_beach",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -383,7 +383,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/beach",
+						"biome": "tfg:venus/stromatolite_beach",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -395,7 +395,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/beach",
+						"biome": "tfg:venus/stromatolite_beach",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -408,7 +408,7 @@
 					},
 
 					{
-						"biome": "tfg:venus/beach",
+						"biome": "tfg:venus/stromatolite_beach",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -420,7 +420,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/beach",
+						"biome": "tfg:venus/stromatolite_beach",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -432,7 +432,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/beach",
+						"biome": "tfg:venus/stromatolite_beach",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -459,7 +459,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/river",
+						"biome": "tfg:venus/sulfuric_ravine",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -496,7 +496,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/river",
+						"biome": "tfg:venus/sulfuric_ravine",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -535,7 +535,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/river",
+						"biome": "tfg:venus/sulfuric_ravine",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -572,7 +572,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/river",
+						"biome": "tfg:venus/sulfuric_ravine",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -598,7 +598,7 @@
 
 
 					{
-						"biome": "tfg:venus/pools",
+						"biome": "tfg:venus/fractured_pools",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -610,7 +610,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/river",
+						"biome": "tfg:venus/sulfuric_ravine",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -622,7 +622,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/pools",
+						"biome": "tfg:venus/fractured_pools",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -635,7 +635,7 @@
 					},
 
 					{
-						"biome": "tfg:venus/pools",
+						"biome": "tfg:venus/fractured_pools",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -647,7 +647,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/river",
+						"biome": "tfg:venus/sulfuric_ravine",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -659,7 +659,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/pools",
+						"biome": "tfg:venus/fractured_pools",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -686,7 +686,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/river",
+						"biome": "tfg:venus/sulfuric_ravine",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -724,7 +724,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/river",
+						"biome": "tfg:venus/sulfuric_ravine",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -752,7 +752,7 @@
 
 
 					{
-						"biome": "tfg:venus/mesas",
+						"biome": "tfg:venus/jagged_tablelands",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -764,7 +764,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/mesas",
+						"biome": "tfg:venus/jagged_tablelands",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -776,7 +776,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/mesas",
+						"biome": "tfg:venus/jagged_tablelands",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -790,7 +790,7 @@
 
 
 					{
-						"biome": "tfg:venus/volcanoes",
+						"biome": "tfg:venus/volcanic_mountains",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -802,7 +802,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/volcanoes",
+						"biome": "tfg:venus/volcanic_mountains",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
@@ -814,7 +814,7 @@
 						}
 					},
 					{
-						"biome": "tfg:venus/volcanoes",
+						"biome": "tfg:venus/volcanic_mountains",
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
