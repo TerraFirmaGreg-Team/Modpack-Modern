@@ -1,7 +1,13 @@
 {
 	"variants": {
-		"": {
-			"model": "tfg:block/rock/hardened_deepslate"
-		}
+		"": [
+			{
+				"model": "tfg:block/rock/hardened_deepslate"
+			},
+			{
+				"model": "tfg:block/rock/hardened_deepslate",
+				"y": 180
+			}
+		]
 	}
 }
