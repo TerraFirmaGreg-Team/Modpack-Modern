@@ -1,7 +1,21 @@
 {
 	"variants": {
-		"": {
-			"model": "tfg:block/rock/cobble_permafrost"
-		}
+		"": [
+			{
+				"model": "tfg:block/rock/cobble_permafrost"
+			},
+			{
+				"model": "tfg:block/rock/cobble_permafrost",
+				"y": 90
+			},
+			{
+				"model": "tfg:block/rock/cobble_permafrost",
+				"y": 180
+			},
+			{
+				"model": "tfg:block/rock/cobble_permafrost",
+				"y": 270
+			}
+		]
 	}
 }

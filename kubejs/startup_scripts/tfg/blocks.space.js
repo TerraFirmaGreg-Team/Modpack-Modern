@@ -1491,6 +1491,8 @@ function registerTFGSpaceBlocks(event) {
 	//Fluorapatite
 	const fluorapatite_colors = ['blue', 'green', 'brown', 'orange', 'white', 'yellow'];
 	fluorapatite_colors.forEach(color => {
+		const mapColor = color === 'white' ? 'quartz' : `color_${color}`;
+
 		//Sand
 		event.create(`tfg:sand/fluorapatite/${color}`, 'falling')
 			.textureAll(`tfg:block/planets/venus/sand_fluorapatite_${color}`)
@@ -1499,7 +1501,7 @@ function registerTFGSpaceBlocks(event) {
 			.tagBoth('forge:sand')
 			.tagItem('forge:sand/fluorapatite')
 			.tagBlock('minecraft:mineable/shovel')
-			.mapColor(`color_${color}`)
+			.mapColor(mapColor)
 			.fullBlock(true)
 			.opaque(true)
 		//Raw Sandstone
@@ -1513,7 +1515,7 @@ function registerTFGSpaceBlocks(event) {
 			.tagBoth('forge:sandstone')
 			.tagItem('forge:sandstone/fluorapatite')
 			.tagBlock('minecraft:mineable/pickaxe')
-			.mapColor(`color_${color}`)
+			.mapColor(mapColor)
 			.fullBlock(true)
 			.opaque(true)
 		//Smooth Sandstone
@@ -1526,7 +1528,7 @@ function registerTFGSpaceBlocks(event) {
 			.tagBoth('forge:sandstone')
 			.tagItem('forge:sandstone/fluorapatite')
 			.tagBlock('minecraft:mineable/pickaxe')
-			.mapColor(`color_${color}`)
+			.mapColor(mapColor)
 			.fullBlock(true)
 			.opaque(true)
 		//Chiseled Sandstone
@@ -1541,7 +1543,7 @@ function registerTFGSpaceBlocks(event) {
 			.tagBoth('forge:sandstone')
 			.tagItem('forge:sandstone/fluorapatite')
 			.tagBlock('minecraft:mineable/pickaxe')
-			.mapColor(`color_${color}`)
+			.mapColor(mapColor)
 			.fullBlock(true)
 			.opaque(true)
 		//Sandstone
@@ -1556,7 +1558,7 @@ function registerTFGSpaceBlocks(event) {
 			.tagBoth('forge:sandstone')
 			.tagItem('forge:sandstone/fluorapatite')
 			.tagBlock('minecraft:mineable/pickaxe')
-			.mapColor(`color_${color}`)
+			.mapColor(mapColor)
 			.fullBlock(true)
 			.opaque(true)
 	})
@@ -1590,6 +1592,7 @@ function registerTFGSpaceBlocks(event) {
 		.textureAll('tfg:block/planets/venus/geyserite')
 		.rockTypeTooltip(Text.translatable('tooltip.tfg.sedimentary'))
 		.naturallySupported(true)
+		.mapColor('quartz')
 		.sedimentary()
 		.soundType('dripstone_block')
 		.requiresTool(true)
@@ -1600,9 +1603,29 @@ function registerTFGSpaceBlocks(event) {
     event.create('tfg:rock/spike/geyserite', 'tfc:rock_spike')
 		.textureAll('tfg:block/planets/venus/geyserite')
 		.soundType('dripstone_block')
+		.mapColor('quartz')
 		.hardness(0.8)
 		.resistance(0.8)
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
 
+	// Halite
+	event.create('tfg:rock/halite')
+		.mapColor('quartz')
+		.soundType('deepslate')
+		.hardness(0.8)
+		.resistance(0.8)
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+	event.create('tfg:rock/halite2')
+		.mapColor('snow')
+		.soundType('deepslate')
+		.hardness(0.8)
+		.resistance(0.8)
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
 }

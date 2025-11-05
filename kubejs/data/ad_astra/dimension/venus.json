@@ -1,36 +1,832 @@
 {
 	"type": "tfg:venus",
 	"generator": {
-		"type": "minecraft:noise",
-		"settings": "tfg:venus_noise",
-		"biome_source": {
-			"type": "minecraft:multi_noise",
-			"biomes": [
-				{
-					"biome": "tfg:venus/venus_delta",
-					"parameters": {
-						"temperature": 1,
-						"humidity": 0,
-						"continentalness": 0.3,
-						"erosion": -0.5,
-						"weirdness": 0.5,
-						"depth": 0,
-						"offset": 0
-					}
+		"type": "kubejs_tfc:wrapped",
+		"event_key": "venus",
+		"settings": {
+			"flat_bedrock": false,
+			"spawn_distance": 0,
+			"spawn_center_x": 0,
+			"spawn_center_z": 0,
+			"temperature_scale": 10000,
+			"rainfall_scale": 10000,
+			"continentalness": 0,
+			"rock_layer_settings": {
+				"rocks": {
+					"venus": {
+						"raw": "ad_astra:venus_stone",
+						"hardened": "tfg:rock/hardened_venus_stone",
+						"gravel": "tfg:rock/gravel_venus",
+						"cobble": "ad_astra:venus_cobblestone",
+						"sand": "ad_astra:venus_sand",
+						"sandstone": "ad_astra:venus_sandstone",
+						"spike": "tfg:spike/venus_stone_spike",
+						"mossy": "tfg:rock/mossy_cobble_venus",
+						"loose": "tfg:loose/venus_stone"
+					},
+					"red_granite": {
+						"raw": "gtceu:red_granite",
+						"hardened": "tfg:rock/hardened_red_granite",
+						"gravel": "tfg:rock/gravel_red_granite",
+						"cobble": "gtceu:red_granite_cobblestone",
+						"sand": "tfc:sand/red",
+						"sandstone": "tfc:raw_sandstone/red",
+						"spike": "tfg:spike/red_granite_spike",
+						"loose": "tfg:loose/red_granite"
+					},
+					"norite": {
+						"raw": "ad_astra:moon_deepslate",
+						"hardened": "tfg:rock/hardened_moon_deepslate",
+						"gravel": "tfg:rock/gravel_moon_deepslate",
+						"cobble": "tfg:rock/cobble_moon_deepslate",
+						"sand": "tfc:sand/black",
+						"sandstone": "tfc:raw_sandstone/black",
+						"spike": "tfg:spike/moon_deepslate_spike",
+						"loose": "tfg:loose/moon_deepslate"
+					},
+					"deepslate": {
+						"raw": "minecraft:deepslate",
+						"hardened": "tfg:rock/hardened_deepslate",
+						"gravel": "tfg:rock/gravel_deepslate",
+						"cobble": "minecraft:cobbled_deepslate",
+						"sand": "tfc:sand/black",
+						"sandstone": "tfc:raw_sandstone/black",
+						"spike": "tfg:spike/deepslate_spike",
+						"loose": "tfg:loose/deepslate"
+					},
+					"dripstone": {
+						"raw": "minecraft:dripstone_block",
+						"hardened": "tfg:rock/hardened_dripstone",
+						"gravel": "tfg:rock/gravel_dripstone",
+						"cobble": "tfg:rock/cobble_dripstone",
+						"sand": "tfc:sand/brown",
+						"sandstone": "tfc:raw_sandstone/brown",
+						"spike": "tfg:spike/dripstone_spike",
+						"loose": "tfg:loose/dripstone"
+					},
+					"granite": "tfc:granite",
+					"diorite": "tfc:diorite",
+					"gabbro": "tfc:gabbro",
+					"basalt": "tfc:basalt",
+					"rhyolite": "tfc:rhyolite",
+					"andesite": "tfc:andesite",
+					"dacite": "tfc:dacite",
+					"slate": "tfc:slate",
+					"schist": "tfc:schist",
+					"gneiss": "tfc:gneiss",
+					"phyllite": "tfc:phyllite",
+					"quartzite": "tfc:quartzite"
 				},
-				{
-					"biome": "tfg:venus/venus_fractured_lands",
-					"parameters": {
-						"temperature": 0.5,
-						"humidity": 0.5,
-						"continentalness": 0,
-						"erosion": 1.0,
-						"depth": -0.5,
-						"weirdness": -0.5,
-						"offset": 0.0
+				"layers": [
+					{
+						"id": "schist_or_gneiss",
+						"layers": {
+							"schist": "bottom",
+							"gneiss": "bottom"
+						}
+					},
+					{
+						"id": "middle",
+						"layers": {
+							"gabbro": "bottom",
+							"granite": "bottom",
+							"slate": "schist_or_gneiss",
+							"phyllite": "schist_or_gneiss",
+							"basalt": "bottom",
+							"schist": "bottom",
+							"gneiss": "bottom",
+							"quartzite": "bottom"
+						}
+					},
+					{
+						"id": "metamorphic",
+						"layers": {
+							"slate": "schist_or_gneiss",
+							"phyllite": "schist_or_gneiss",
+							"schist": "bottom",
+							"gneiss": "bottom",
+							"quartzite": "bottom"
+						}
+					},
+					{
+						"id": "top",
+						"layers": {
+							"venus": "metamorphic",
+							"dripstone": "metamorphic",
+							"rhyolite": "middle",
+							"basalt": "middle",
+							"andesite": "middle",
+							"dacite": "middle"
+						}
 					}
-				}
-			]
+				],
+				"bottom": [
+					"red_granite",
+					"diorite",
+					"gabbro",
+					"norite",
+					"deepslate"
+				],
+				"ocean_floor": [
+					"top"
+				],
+				"volcanic": [
+					"top"
+				],
+				"land": [
+					"top"
+				],
+				"uplift": [
+					"top"
+				]
+			}
+		},
+		"generator": {
+			"type": "minecraft:noise",
+			"settings": "tfg:venus_noise",
+			"biome_source": {
+				"type": "minecraft:multi_noise",
+				"biomes": [
+					{
+						"biome": "tfg:venus/fumaroles",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -1,
+							"erosion": -0.05,
+							"weirdness": -0.2,
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/fumaroles",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -1,
+							"erosion": -0.05,
+							"weirdness": 0,
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/fumaroles",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -1,
+							"erosion": -0.05,
+							"weirdness": 0.2,
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/fumaroles",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -1,
+							"erosion": 0.05,
+							"weirdness": -0.2,
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/fumaroles",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -1,
+							"erosion": 0.05,
+							"weirdness": 0,
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/fumaroles",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -1,
+							"erosion": 0.05,
+							"weirdness": 0.2,
+							"depth": 0,
+							"offset": 0
+						}
+					},
+
+
+					{
+						"biome": "tfg:venus/fumaroles",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.47,
+							"erosion": -0.05,
+							"weirdness": -0.2,
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/fumaroles",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.47,
+							"erosion": -0.05,
+							"weirdness": 0,
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/fumaroles",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.47,
+							"erosion": -0.05,
+							"weirdness": 0.2,
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/fumaroles",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.47,
+							"erosion": 0.05,
+							"weirdness": -0.2,
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/fumaroles",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.47,
+							"erosion": 0.05,
+							"weirdness": 0,
+							"depth": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/fumaroles",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.47,
+							"erosion": 0.05,
+							"weirdness": 0.2,
+							"depth": 0,
+							"offset": 0
+						}
+					},
+
+
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.44,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.44,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.44,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0
+						}
+					},
+
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.44,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.44,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.44,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0
+						}
+					},
+
+
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0
+						}
+					},
+
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0
+						}
+					},
+
+
+
+					{
+						"biome": "tfg:venus/salt_flats",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.375,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/sulfuric_ravine",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.375,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/salt_flats",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.375,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+					{
+						"biome": "tfg:venus/salt_flats",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.1,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/sulfuric_ravine",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.1,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/salt_flats",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.1,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+
+
+					{
+						"biome": "tfg:venus/arachnoids",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.375,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/sulfuric_ravine",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.375,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/arachnoids",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.375,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+					{
+						"biome": "tfg:venus/arachnoids",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.1,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/sulfuric_ravine",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.1,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/arachnoids",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.1,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+
+					{
+						"biome": "tfg:venus/fractured_pools",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.05,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/sulfuric_ravine",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.05,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/fractured_pools",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.05,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+					{
+						"biome": "tfg:venus/fractured_pools",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.35,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/sulfuric_ravine",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.35,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/fractured_pools",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.35,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+
+
+					{
+						"biome": "tfg:venus/geysers",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.05,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/sulfuric_ravine",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.05,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/geysers",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.05,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+
+					{
+						"biome": "tfg:venus/geysers",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.35,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/sulfuric_ravine",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.35,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/geysers",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.35,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+
+
+
+					{
+						"biome": "tfg:venus/jagged_tablelands",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.4,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/jagged_tablelands",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.4,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/jagged_tablelands",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.4,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					},
+
+
+					{
+						"biome": "tfg:venus/volcanic_mountains",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.4,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/volcanic_mountains",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.4,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0.0
+						}
+					},
+					{
+						"biome": "tfg:venus/volcanic_mountains",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": 0.4,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0.0
+						}
+					}
+				]
+			}
 		}
 	}
 }

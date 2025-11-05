@@ -872,6 +872,21 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
+	//#region Netherite Boots (for the lavaproof diving set)
+
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('minecraft:netherite_boots').copyForgingBonus(), [
+			'ABA',
+			'CDC'
+		], {
+			A: '#forge:screws/blue_steel',
+			B: 'tfc:metal/boots/blue_steel',
+			C: '#forge:plates/blue_steel',
+			D: 'beneath:cursed_hide'
+		}, 0, 1).id('tfg:minecraft/shaped/netherite_boots')
+
+	//#endregion
+
 	//#region Scaffoldings
 	event.remove({ output: 'minecraft:scaffolding' })
 

@@ -3,10 +3,19 @@
 ## [Unreleased]
 ### Changes
 - Added a paving cart for automating RNR roads. (#2144) @Redeix
+- Non-TFC armors now have TFC resistances (#2157) @theMegaTech
+- Regular Blue Steel Boots now also count towards the lavaproof diving set (#2155) @theMegaTech
+- Added more field guide links to the stone age quest chapter (#2147) @FlightingFalcon
+- Added an AE2-linked TACZ ammo box @BlueBoat29
+- Buffed hiking boots durability by 250%, also changed horseshoe durability and stats to match @Pyritie
 ### Bug fixes
 - Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
+- Fixed the HV aqueous accumulator water recipe so the amount of water can actually fit in the HV machine @Pyritie
 ### Translation updates
 - Brazilian Portuguese @Redeix
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry
+- Japanese @sakura-gondra
 
 ## [0.11.7] - 30-10-2025
 ### Changes

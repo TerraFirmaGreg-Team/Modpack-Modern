@@ -395,7 +395,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     // Броня
     "minecraft:netherite_helmet",
     "minecraft:netherite_chestplate",
-    "minecraft:netherite_boots",
     "minecraft:golden_helmet",
     "minecraft:golden_chestplate",
     "minecraft:golden_leggings",
