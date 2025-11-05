@@ -20,7 +20,7 @@
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"index": 3,
 			"x": 1.8661,
 			"y": -1.5
@@ -39,7 +39,7 @@
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"index": 6,
 			"x": 4.3956,
 			"y": -1.7183
@@ -70,7 +70,7 @@
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"index": 11,
 			"x": 2.9721,
 			"y": -2.8761
@@ -83,24 +83,24 @@
 		},
 		{
 			"type": "atom",
-			"element": O,
-			"right": H,
+			"element": "O",
+			"right": "H",
 			"index": 13,
 			"x": 0.8661,
 			"y": -2.2321
 		},
 		{
 			"type": "atom",
-			"element": O,
-			"right": H,
+			"element": "O",
+			"right": "H",
 			"index": 14,
 			"x": 0.3661,
 			"y": -3.3661
 		},
 		{
 			"type": "atom",
-			"element": O,
-			"right": H,
+			"element": "O",
+			"right": "H",
 			"index": 15,
 			"x": 1.8661,
 			"y": -4.2321
@@ -113,32 +113,32 @@
 		},
 		{
 			"type": "atom",
-			"element": O,
-			"left": H,
+			"element": "O",
+			"left": "H",
 			"index": 17,
 			"x": 2.7205,
 			"y": -0.8061
 		},
 		{
 			"type": "atom",
-			"element": O,
-			"left": H,
+			"element": "O",
+			"left": "H",
 			"index": 18,
 			"x": 0.0,
 			"y": 0.0
 		},
 		{
 			"type": "atom",
-			"element": O,
-			"right": H,
+			"element": "O",
+			"right": "H",
 			"index": 19,
 			"x": 3.8956,
 			"y": -4.2572
 		},
 		{
 			"type": "atom",
-			"element": O,
-			"left": H,
+			"element": "O",
+			"left": "H",
 			"index": 20,
 			"x": 4.6555,
 			"y": -2.3972
@@ -151,8 +151,8 @@
 		},
 		{
 			"type": "atom",
-			"element": O,
-			"right": H,
+			"element": "O",
+			"right": "H",
 			"index": 22,
 			"x": 6.0706,
 			"y": -3.8061

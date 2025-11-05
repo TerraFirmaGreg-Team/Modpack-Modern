@@ -2,14 +2,14 @@
 	"contents": [
 		{
 			"type": "atom",
-			"element": B,
+			"element": "B",
 			"index": 0,
 			"x": 0.5,
 			"y": -0.866
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"right": "H",
 			"index": 1,
 			"x": 1.5,
@@ -17,7 +17,7 @@
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"left": "H",
 			"index": 2,
 			"x": 0.0,
@@ -25,7 +25,7 @@
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"left": "H",
 			"index": 3,
 			"x": 0.0,

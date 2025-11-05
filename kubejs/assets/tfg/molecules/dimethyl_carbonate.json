@@ -8,7 +8,7 @@
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"index": 1,
 			"x": -3.4873,
 			"y": -0.7749
@@ -21,7 +21,7 @@
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"index": 3,
 			"x": -2.0584,
 			"y": -0.7749
@@ -34,7 +34,7 @@
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"index": 5,
 			"x": -2.7728,
 			"y": 0.4625
@@ -67,7 +67,7 @@
 			"type": "bond",
 			"a": 2,
 			"b": 5,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		}
 	]
 }

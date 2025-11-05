@@ -4,43 +4,20 @@
 			"type": "atom",
 			"element": "N",
 			"index": 0,
-			"x": 2.13,
-			"y": 0.25
+			"x": 0.866,
+			"y": 0.5
 		},
 		{
 			"type": "atom",
 			"element": "O",
 			"index": 1,
-			"x": 2.996,
-			"y": -0.25
+			"x": 1.732,
+			"y": 0.0
 		},
 		{
 			"type": "atom",
 			"element": "O",
 			"index": 2,
-			"x": 1.264,
-			"y": -0.25
-		},
-		{
-			"sup": "-",
-			"atoms": [
-				0,
-				1,
-				2
-			],
-			"type": "parens"
-		},
-		{
-			"type": "atom",
-			"element": {
-				"symbol": "Na⁺",
-				"color": {
-					"color": -5546766,
-					"optional": true
-				},
-				"material": "gtceu:sodium"
-			},
-			"index": 3,
 			"x": 0.0,
 			"y": 0.0
 		},

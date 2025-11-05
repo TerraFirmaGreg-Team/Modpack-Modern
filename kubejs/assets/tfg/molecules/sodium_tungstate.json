@@ -2,21 +2,21 @@
 	"contents": [
 		{
 			"type": "atom",
-			"element": W,
+			"element": "W",
 			"index": 0,
 			"x": 0.0,
 			"y": 0.0
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"index": 1,
 			"x": 0.0,
 			"y": -0.825
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"index": 2,
 			"x": 0.0,
 			"y": 0.825
@@ -65,13 +65,13 @@
 			"type": "bond",
 			"a": 0,
 			"b": 1,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
 			"a": 0,
 			"b": 2,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",

@@ -2,28 +2,28 @@
 	"contents": [
 		{
 			"type": "atom",
-			"element": Ti,
+			"element": "Ti",
 			"index": 0,
 			"x": 0.866,
 			"y": -0.5
 		},
 		{
 			"type": "atom",
-			"element": F,
+			"element": "F",
 			"index": 1,
 			"x": 0.866,
 			"y": -1.5
 		},
 		{
 			"type": "atom",
-			"element": F,
+			"element": "F",
 			"index": 2,
 			"x": 0.0,
 			"y": 0.0
 		},
 		{
 			"type": "atom",
-			"element": F,
+			"element": "F",
 			"index": 3,
 			"x": 1.732,
 			"y": 0.0

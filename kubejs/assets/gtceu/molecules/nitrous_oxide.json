@@ -4,36 +4,35 @@
 			"type": "atom",
 			"element": "N",
 			"index": 0,
-			"x": 1.9999,
+			"x": 0.0,
 			"y": 0.0
 		},
 		{
 			"type": "atom",
-			"element": "C",
+			"element": {
+				"symbol": "N⁺",
+				"color": {
+					"color": -13610760,
+					"optional": true
+				},
+				"material": "gtceu:nitrogen"
+			},
 			"index": 1,
 			"x": 1.0,
 			"y": 0.0
 		},
 		{
-			"sup": "-",
-			"atoms": [
-				0,
-				1
-			],
-			"type": "parens"
-		},
-		{
 			"type": "atom",
 			"element": {
-				"symbol": "K⁺",
+				"symbol": "O⁻",
 				"color": {
-					"color": -7388972,
+					"color": -62195,
 					"optional": true
 				},
-				"material": "gtceu:potassium"
+				"material": "gtceu:oxygen"
 			},
 			"index": 2,
-			"x": 0.0,
+			"x": 2.0,
 			"y": 0.0
 		},
 		{
@@ -41,6 +40,12 @@
 			"a": 0,
 			"b": 1,
 			"bond_type": "triple"
+		},
+		{
+			"type": "bond",
+			"a": 1,
+			"b": 2,
+			"bond_type": "single"
 		}
 	]
 }

@@ -107,19 +107,19 @@
 		{
 			"type": "atom",
 			"element": {
-				"symbol": "K⁺",
+				"symbol": "Ca⁺",
 				"color": {
-					"color": -7388972,
+					"color": -12714240,
 					"optional": true
 				},
-				"material": "gtceu:potassium"
+				"material": "gtceu:calcium"
 			},
 			"index": 13,
 			"x": 0.0,
 			"y": 0.0
 		},
 		{
-			"sub": "4",
+			"sub": "2",
 			"atoms": [ 13 ],
 			"type": "parens"
 		},

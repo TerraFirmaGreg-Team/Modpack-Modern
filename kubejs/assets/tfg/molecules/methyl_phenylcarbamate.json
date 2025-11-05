@@ -2,21 +2,21 @@
 	"contents": [
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"index": 0,
 			"x": 1.6418,
 			"y": 0.5155
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"index": 1,
 			"x": 0.9273,
 			"y": -0.7218
 		},
 		{
 			"type": "atom",
-			"element": N,
+			"element": "N",
 			"index": 2,
 			"x": 0.2128,
 			"y": 0.5156
@@ -71,7 +71,7 @@
 		},
 		{
 			"type": "atom",
-			"element": H,
+			"element": "H",
 			"index": 11,
 			"x": 0.2129,
 			"y": 1.3406
@@ -92,7 +92,7 @@
 			"type": "bond",
 			"a": 1,
 			"b": 9,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
@@ -126,8 +126,8 @@
 		},
 		{
 			"type": "bond",
-			"a": 5,
-			"b": 7,
+			"a": 7,
+			"b": 5,
 			"bond_type": "double"
 		},
 		{

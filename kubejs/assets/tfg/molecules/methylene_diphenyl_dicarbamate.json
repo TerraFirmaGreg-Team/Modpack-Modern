@@ -80,14 +80,14 @@
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"index": 13,
 			"x": 1.732099999999999,
 			"y": 0
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"index": 14,
 			"x": 8.660300000000001,
 			"y": 0
@@ -100,14 +100,14 @@
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"index": 16,
 			"x": 0.8659999999999997,
 			"y": -1.4999999999999991
 		},
 		{
 			"type": "atom",
-			"element": N,
+			"element": "N",
 			"left": [
 				"H",
 				2
@@ -124,7 +124,7 @@
 		},
 		{
 			"type": "atom",
-			"element": N,
+			"element": "N",
 			"right": [
 				"H",
 				2
@@ -135,7 +135,7 @@
 		},
 		{
 			"type": "atom",
-			"element": O,
+			"element": "O",
 			"index": 20,
 			"x": 10.3924,
 			"y": 0.0
@@ -246,7 +246,7 @@
 			"type": "bond",
 			"a": 15,
 			"b": 16,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
@@ -270,7 +270,7 @@
 			"type": "bond",
 			"a": 18,
 			"b": 20,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		}
 	]
 }
