@@ -92,7 +92,7 @@
 			"type": "bond",
 			"a": 1,
 			"b": 9,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
@@ -126,8 +126,8 @@
 		},
 		{
 			"type": "bond",
-			"a": 5,
-			"b": 7,
+			"a": 7,
+			"b": 5,
 			"bond_type": "double"
 		},
 		{

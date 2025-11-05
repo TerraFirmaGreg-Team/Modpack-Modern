@@ -4,8 +4,12 @@
 			"type": "atom",
 			"element": {
 				"symbol": "N⁺",
+				"color": {
+					"color": -13610760,
+					"optional": true
+				},
 				"material": "gtceu:nitrogen"
-		},
+			},
 			"index": 0,
 			"x": 0.0,
 			"y": 0.0
@@ -14,8 +18,12 @@
 			"type": "atom",
 			"element": {
 				"symbol": "B⁻",
+				"color": {
+					"color": -19019,
+					"optional": true
+				},
 				"material": "gtceu:boron"
-        },
+			},
 			"index": 1,
 			"x": -0.8249,
 			"y": 0.0

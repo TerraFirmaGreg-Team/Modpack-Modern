@@ -401,7 +401,7 @@
 			"type": "bond",
 			"a": 0,
 			"b": 1,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
@@ -491,13 +491,13 @@
 			"type": "bond",
 			"a": 7,
 			"b": 12,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
 			"a": 7,
 			"b": 11,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
@@ -533,13 +533,13 @@
 			"type": "bond",
 			"a": 17,
 			"b": 20,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
 			"a": 17,
 			"b": 21,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
@@ -587,13 +587,13 @@
 			"type": "bond",
 			"a": 10,
 			"b": 26,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
 			"a": 10,
 			"b": 27,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
@@ -641,13 +641,13 @@
 			"type": "bond",
 			"a": 30,
 			"b": 32,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
 			"a": 30,
 			"b": 33,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
@@ -677,13 +677,13 @@
 			"type": "bond",
 			"a": 37,
 			"b": 39,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
 			"a": 37,
 			"b": 38,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
@@ -737,13 +737,13 @@
 			"type": "bond",
 			"a": 46,
 			"b": 48,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
 			"a": 46,
 			"b": 47,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
@@ -773,7 +773,7 @@
 			"type": "bond",
 			"a": 41,
 			"b": 42,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",

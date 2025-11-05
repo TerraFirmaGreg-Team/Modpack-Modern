@@ -246,7 +246,7 @@
 			"type": "bond",
 			"a": 15,
 			"b": 16,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
@@ -270,7 +270,7 @@
 			"type": "bond",
 			"a": 18,
 			"b": 20,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		}
 	]
 }

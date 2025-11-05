@@ -2,17 +2,17 @@
 	"contents": [
 		{
 			"type": "atom",
-			"element": "W",
+			"element": "N",
 			"index": 0,
 			"x": 0.866,
-			"y": -0.5
+			"y": 0.5
 		},
 		{
 			"type": "atom",
-			"element": "O",
+			"element": "Cl",
 			"index": 1,
-			"x": 0.866,
-			"y": -1.5
+			"x": 1.7321,
+			"y": 0.0
 		},
 		{
 			"type": "atom",
@@ -22,28 +22,15 @@
 			"y": 0.0
 		},
 		{
-			"type": "atom",
-			"element": "O",
-			"index": 3,
-			"x": 1.732,
-			"y": 0.0
-		},
-		{
 			"type": "bond",
 			"a": 0,
 			"b": 1,
-			"bond_type": "double_centered"
+			"bond_type": "single"
 		},
 		{
 			"type": "bond",
 			"a": 0,
 			"b": 2,
-			"bond_type": "double_centered"
-		},
-		{
-			"type": "bond",
-			"a": 0,
-			"b": 3,
 			"bond_type": "double_centered"
 		}
 	]

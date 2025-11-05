@@ -41,13 +41,13 @@
 			"type": "bond",
 			"a": 0,
 			"b": 1,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",
 			"a": 0,
 			"b": 2,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		},
 		{
 			"type": "bond",

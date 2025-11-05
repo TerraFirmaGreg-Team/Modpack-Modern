@@ -135,7 +135,7 @@
 			"type": "bond",
 			"a": 8,
 			"b": 10,
-			"bond_type": "double"
+			"bond_type": "double_centered"
 		}
 	]
 }
