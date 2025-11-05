@@ -1,0 +1,46 @@
+{
+	"contents": [
+		{
+			"type": "atom",
+			"element": N,
+			"index": 0,
+			"x": 1.9999,
+			"y": 0.0
+		},
+		{
+			"type": "atom",
+			"element": C,
+			"index": 1,
+			"x": 1.0,
+			"y": 0.0
+		},
+		{
+			"sup": "-",
+			"atoms": [
+				0,
+				1
+			],
+			"type": "parens"
+		},
+		{
+			"type": "atom",
+			"element": {
+				"symbol": "K⁺",
+				"color": {
+					"color": -7388972,
+					"optional": true
+				},
+				"material": "gtceu:potassium"
+			},
+			"index": 2,
+			"x": 0.0,
+			"y": 0.0
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 1,
+			"bond_type": "triple"
+		}
+	]
+}

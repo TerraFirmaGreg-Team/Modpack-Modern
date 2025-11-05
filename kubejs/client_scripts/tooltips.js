@@ -31,7 +31,7 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('tfg.tooltip.armor.copper_diving_suit_warmth')),
 		text.add(2, Text.translate('tfg.tooltip.armor.copper_diving_suit_insulation'))
 	})
-	event.addAdvanced(['create:netherite_diving_helmet', 'create:netherite_backtank', 'create:netherite_diving_boots', 'minecraft:netherite_leggings'], (item, advanced, text) => {
+	event.addAdvanced(['create:netherite_diving_helmet', 'create:netherite_backtank', 'create:netherite_diving_boots', 'minecraft:netherite_leggings', 'minecraft:netherite_boots'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.armor.netherite_diving_suit_warmth')),
 		text.add(2, Text.translate('tfg.tooltip.armor.netherite_diving_suit_insulation'))
 		text.add(3, Text.translate('tfg.tooltip.armor.netherite_diving_suit_set'))
