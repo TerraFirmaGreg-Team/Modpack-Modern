@@ -1164,7 +1164,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.shaped(Item.of('tfg:universal_compost_greens', 1), [
 		'AB'
 	], {
-		A: Ingredient.of(['#tfc:compost_greens_low']).subtract(['tfg:universal_compost_greens']),
+		A: '#tfc:compost_greens_low',
 		B: '#forge:tools/mortars'
 	}).id('tfg:shaped/universal_compost_greens_from_low')
 
@@ -1231,15 +1231,17 @@ function registerTFGMiscellaneousRecipes(event) {
 	//Browns
 	// Lows via crafting with mortar
 	event.shaped(Item.of('tfg:universal_compost_browns', 1), [
-		'BA'
+		'A',
+		'B'
 	], {
-		A: Ingredient.of(['#tfc:compost_browns_low']).subtract(['tfg:universal_compost_browns']),
+		A: '#tfc:compost_browns_low',
 		B: '#forge:tools/mortars'
 	}).id('tfg:shaped/universal_compost_browns_from_low')
 
 	// Mediums via crafting with mortar
 	event.shaped(Item.of('tfg:universal_compost_browns', 2), [
-		'BA'
+		'A',
+		'B'
 	], {
 		A: '#tfc:compost_browns',
 		B: '#forge:tools/mortars'
@@ -1247,7 +1249,8 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	// Highs via crafting with mortar
 	event.shaped(Item.of('tfg:universal_compost_browns', 4), [
-		'BA'
+		'A',
+		'B'
 	], {
 		A: '#tfc:compost_browns_high',
 		B: '#forge:tools/mortars'
