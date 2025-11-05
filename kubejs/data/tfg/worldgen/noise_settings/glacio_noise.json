@@ -42,7 +42,7 @@
 		"continents": "tfg:glacio/continents",
 		"ridges": "tfg:glacio/ridges",
 		"erosion": "tfg:glacio/erosion",
-		"depth": 0,
+		"depth": "tfg:glacio/depth",
 		"initial_density_without_jaggedness": {
 			"type": "minecraft:mul",
 			"argument1": 4,

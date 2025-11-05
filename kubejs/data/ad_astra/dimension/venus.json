@@ -226,7 +226,7 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.51,
+							"continentalness": -0.47,
 							"erosion": -0.05,
 							"weirdness": -0.2,
 							"depth": 0,
@@ -238,7 +238,7 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.51,
+							"continentalness": -0.47,
 							"erosion": -0.05,
 							"weirdness": 0,
 							"depth": 0,
@@ -250,7 +250,7 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.51,
+							"continentalness": -0.47,
 							"erosion": -0.05,
 							"weirdness": 0.2,
 							"depth": 0,
@@ -262,7 +262,7 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.51,
+							"continentalness": -0.47,
 							"erosion": 0.05,
 							"weirdness": -0.2,
 							"depth": 0,
@@ -274,7 +274,7 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.51,
+							"continentalness": -0.47,
 							"erosion": 0.05,
 							"weirdness": 0,
 							"depth": 0,
@@ -286,85 +286,10 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.51,
+							"continentalness": -0.47,
 							"erosion": 0.05,
 							"weirdness": 0.2,
 							"depth": 0,
-							"offset": 0
-						}
-					},
-
-
-					{
-						"biome": "tfg:venus/stromatolite_beach",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -0.50,
-							"erosion": -0.05,
-							"depth": 0,
-							"weirdness": -0.2,
-							"offset": 0
-						}
-					},
-					{
-						"biome": "tfg:venus/stromatolite_beach",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -0.50,
-							"erosion": -0.05,
-							"depth": 0,
-							"weirdness": 0,
-							"offset": 0
-						}
-					},
-					{
-						"biome": "tfg:venus/stromatolite_beach",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -0.50,
-							"erosion": -0.05,
-							"depth": 0,
-							"weirdness": 0.2,
-							"offset": 0
-						}
-					},
-
-					{
-						"biome": "tfg:venus/stromatolite_beach",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -0.50,
-							"erosion": 0.05,
-							"depth": 0,
-							"weirdness": -0.2,
-							"offset": 0
-						}
-					},
-					{
-						"biome": "tfg:venus/stromatolite_beach",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -0.50,
-							"erosion": 0.05,
-							"depth": 0,
-							"weirdness": 0,
-							"offset": 0
-						}
-					},
-					{
-						"biome": "tfg:venus/stromatolite_beach",
-						"parameters": {
-							"temperature": 0,
-							"humidity": 0,
-							"continentalness": -0.50,
-							"erosion": 0.05,
-							"depth": 0,
-							"weirdness": 0.2,
 							"offset": 0
 						}
 					},
@@ -412,7 +337,7 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.41,
+							"continentalness": -0.44,
 							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": -0.2,
@@ -424,7 +349,7 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.41,
+							"continentalness": -0.44,
 							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": 0,
@@ -436,7 +361,82 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.41,
+							"continentalness": -0.44,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0
+						}
+					},
+
+
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": -0.05,
+							"depth": 0,
+							"weirdness": 0.2,
+							"offset": 0
+						}
+					},
+
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": -0.2,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
+							"erosion": 0.05,
+							"depth": 0,
+							"weirdness": 0,
+							"offset": 0
+						}
+					},
+					{
+						"biome": "tfg:venus/stromatolite_beach",
+						"parameters": {
+							"temperature": 0,
+							"humidity": 0,
+							"continentalness": -0.39,
 							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": 0.2,
@@ -451,7 +451,7 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.40,
+							"continentalness": -0.375,
 							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": -0.2,
@@ -463,7 +463,7 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.40,
+							"continentalness": -0.375,
 							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": 0,
@@ -475,7 +475,7 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.40,
+							"continentalness": -0.375,
 							"erosion": 0.05,
 							"depth": 0,
 							"weirdness": 0.2,
@@ -527,7 +527,7 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.40,
+							"continentalness": -0.375,
 							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": -0.2,
@@ -539,7 +539,7 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.40,
+							"continentalness": -0.375,
 							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": 0,
@@ -551,7 +551,7 @@
 						"parameters": {
 							"temperature": 0,
 							"humidity": 0,
-							"continentalness": -0.40,
+							"continentalness": -0.375,
 							"erosion": -0.05,
 							"depth": 0,
 							"weirdness": 0.2,
