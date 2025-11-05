@@ -1,7 +1,21 @@
 {
 	"variants": {
-		"": {
-			"model": "tfg:block/rock/gravel_deepslate"
-		}
+		"": [
+			{
+				"model": "tfg:block/rock/gravel_deepslate"
+			},
+			{
+				"model": "tfg:block/rock/gravel_deepslate",
+				"y": 90
+			},
+			{
+				"model": "tfg:block/rock/gravel_deepslate",
+				"y": 180
+			},
+			{
+				"model": "tfg:block/rock/gravel_deepslate",
+				"y": 270
+			}
+		]
 	}
 }

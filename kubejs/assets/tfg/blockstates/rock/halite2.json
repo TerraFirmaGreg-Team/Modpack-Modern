@@ -1,0 +1,21 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "tfg:block/rock/halite2"
+			},
+			{
+				"model": "tfg:block/rock/halite2",
+				"y": 90
+			},
+			{
+				"model": "tfg:block/rock/halite2",
+				"y": 180
+			},
+			{
+				"model": "tfg:block/rock/halite2",
+				"y": 270
+			}
+		]
+	}
+}
