@@ -82,6 +82,7 @@ const registerFirmaLifeFluidTags = (event) => {
     event.add('firmalife:mixable', 'tfcchannelcasting:dark_chocolate')
     event.add('firmalife:mixable', 'afc:maple_syrup')
     event.add('firmalife:mixable', 'afc:birch_syrup')
+    event.add('firmalife:usable_in_mixing_bowl', 'gtceu:seed_oil')
 
     event.add('firmalife:oils', 'gtceu:seed_oil')
 }
