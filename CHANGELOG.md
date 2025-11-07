@@ -8,10 +8,17 @@
 - Added more field guide links to the stone age quest chapter (#2147) @FlightingFalcon
 - Added an AE2-linked TACZ ammo box @BlueBoat29
 - Buffed hiking boots durability by 250%, also changed horseshoe durability and stats to match @Pyritie
+- Added more automatable mud brick recipes, ensured all dirt types are renewable (#2169) @Pyritie
+- Added a sky stone block recipe to the rock breaker (#2159) @Pyritie
+- Improved the tag for cleanroom doors @Pyritie
+- The food oven and refrigerator now emit heat (for TFC ambiental) @Pyritie
 ### Bug fixes
 - Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
 - Fixed the HV aqueous accumulator water recipe so the amount of water can actually fit in the HV machine @Pyritie
+- Fixed not being able to make brown universal compost with a mortar if the item is both green and brown (#2091) @Pyritie
+- Fixed soup made in the food processor not returning bowls when eaten (#2053) @Pyritie
 ### Translation updates
+- Russian @DI-GitH + @nineex
 - Brazilian Portuguese @Redeix
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry

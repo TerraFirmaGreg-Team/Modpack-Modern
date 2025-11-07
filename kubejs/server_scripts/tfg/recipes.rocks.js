@@ -6,29 +6,6 @@
  */
 function registerTFGRockRecipes(event) {
 
-	// #region REMOVES
-	event.remove({ id: 'gtceu:shaped/stone_stair_saw' })
-	event.remove({ id: 'gtceu:shaped/stone_slab_saw' })
-	
-	event.remove({ id: 'gtceu:shaped/cobblestone_stair_saw' })
-	event.remove({ id: 'gtceu:shaped/cobblestone_slab_saw' })
-	event.remove({ id: 'gtceu:shaped/cobblestone_slab_wall' })
-
-	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_stair_saw' })
-	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_slab_saw' })
-	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_slab_wall' })
-
-	event.remove({ id: 'gtceu:shaped/red_sandstone_stair_saw' })
-	event.remove({ id: 'gtceu:shaped/red_sandstone_wall_saw' })
-	event.remove({ id: 'gtceu:shaped/red_sandstone_polish_hammer' })
-	
-	event.remove({ id: 'gtceu:shaped/smooth_red_sandstone_stair_saw' })
-	event.remove({ id: 'gtceu:shaped/smooth_red_sandstone_slab_saw' })
-
-	event.remove({ id: 'gtceu:shaped/cut_red_sandstone_slab_saw' })
-
-	removeMaceratorRecipe(event, 'macerate_nether_bricks')
-	removeMaceratorRecipe(event, 'macerate_chiseled_nether_bricks')
 
 	// #region GLUEING_TOGETHER
 	// loose rocks to cobble, bricks to brick blocks
@@ -67,7 +44,9 @@ function registerTFGRockRecipes(event) {
 		{ loose: 'tfg:loose/permafrost',          block: 'tfg:rock/cobble_permafrost' },
 		{ loose: 'tfg:brick/permafrost',          block: '4x ad_astra:permafrost_bricks' },
 
-		{ loose: 'minecraft:popped_chorus_fruit', block: '4x minecraft:purpur_block' }		
+		{ loose: 'minecraft:popped_chorus_fruit', block: '4x minecraft:purpur_block' },
+
+		{ loose: 'gtceu:stone_ingot',			  block: '4x minecraft:stone_bricks' }
 	]
 
 	GLUEING_TOGETHER.forEach(x => {
@@ -1170,6 +1149,7 @@ function registerTFGRockRecipes(event) {
 		{ block: 'ad_astra:glacio_stone',			dimension: 'ad_astra:moon'    },
 		{ block: 'ad_astra:glacio_cobblestone',		dimension: 'ad_astra:moon'    },
 		{ block: 'create:asurine',					dimension: 'ad_astra:moon'    },
+		{ block: 'ae2:sky_stone_block',				dimension: 'ad_astra:moon'    },
 		{ block: 'ad_astra:mars_stone',				dimension: 'ad_astra:mars'    },
 		{ block: 'ad_astra:mars_cobblestone',		dimension: 'ad_astra:mars'    },
 		{ block: 'ad_astra:venus_stone',			dimension: 'ad_astra:mars'    },
@@ -1182,7 +1162,7 @@ function registerTFGRockRecipes(event) {
 		{ block: 'ad_astra:mercury_stone',			dimension: 'ad_astra:mercury' },
 		{ block: 'ad_astra:mercury_cobblestone',	dimension: 'ad_astra:mercury' },
 		{ block: 'create:crimsite',					dimension: 'ad_astra:mercury' },
-		{ block: 'create:scorchia',					dimension: 'ad_astra:mercury' },
+		{ block: 'create:scorchia',					dimension: null },
 		{ block: 'ad_astra:permafrost',				dimension: 'ad_astra:glacio'  },
 		{ block: 'tfg:rock/cobble_permafrost',		dimension: 'ad_astra:glacio'  },
 		{ block: 'create:veridium',					dimension: 'ad_astra:glacio'  },
