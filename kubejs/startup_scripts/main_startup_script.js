@@ -58,7 +58,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 	registerGTCEuMaterials(event)
 	registerGreateMaterials(event)
 	registerTFGMaterials(event)
-	registerTFGNuclearMaterials(event)
 })
 
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {

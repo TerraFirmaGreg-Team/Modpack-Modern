@@ -545,4 +545,12 @@ const registerTFGItems = (event) => {
 		.translationKey('item.tfg.advanced_polymer_binder')
 		.texture('tfg:item/graphite_line/advanced_polymer_binder')
 
+	//#region Bioline
+
+	event.create('tfg:cellulose_matrix')
+	event.create('tfg:smooth_endoplasmic_reticula')
+	event.create('tfg:rough_endoplasmic_reticula')
+	event.create('tfg:alpha_keratin')
+
+	//#endregion
 }

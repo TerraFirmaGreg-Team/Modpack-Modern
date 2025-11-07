@@ -569,6 +569,13 @@ function sterilizeItem(event, input, output, multiplier, cleanroom) {
 		.duration(10*20*recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
+	let sodium_dodecyl_sulfate_recipe = event.recipes.gtceu.chemical_bath(`tfg:sodium_dodecyl_sulfate_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+		.itemInputs(input)
+		.inputFluids(Fluid.of('tfg:sodium_dodecyl_sulfate', 50*recipe_multiplier))
+		.itemOutputs(output)
+		.duration(10*20*recipe_multiplier)
+		.EUt(GTValues.VA[GTValues.MV]);
+
 	let autoclave_recipe = event.recipes.gtceu.autoclave(`tfg:autoclave_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
 		.itemInputs(input)
 		.perTick(true)
@@ -581,6 +588,7 @@ function sterilizeItem(event, input, output, multiplier, cleanroom) {
 	if (cleanroom) {
 		ethanol_recipe.cleanroom(cleanroom);
 		hydrogen_peroxide_recipe.cleanroom(cleanroom);
+		sodium_dodecyl_sulfate_recipe.cleanroom(cleanroom);
 		autoclave_recipe.cleanroom(cleanroom);
 	};
 };

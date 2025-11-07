@@ -3,11 +3,14 @@
 
 const registerTFGMaterials = (event) => {
 
+	registerTFGNuclearMaterials(event)
+	registerTFGBiolineMaterials(event)
+
 	event.create('unknown')
 		.color('0xFFFFFF')
 		.formula('?')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-	
+
 	event.create('hardwood')
 		.dust()
 		.flags(GTMaterialFlags.FLAMMABLE)
