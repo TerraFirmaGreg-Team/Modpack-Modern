@@ -2,45 +2,41 @@
 	"contents": [
 		{
 			"type": "atom",
-			"element": "Cl",
+			"element": "P",
 			"index": 0,
-			"x": 0.866,
-			"y": -0.5
-		},
-		{
-			"type": "atom",
-			"element": "F",
-			"index": 1,
-			"x": 0.866,
-			"y": -1.5
-		},
-		{
-			"type": "atom",
-			"element": "F",
-			"index": 2,
-			"x": 1.732,
+			"x": 1.0,
 			"y": 0.0
 		},
 		{
 			"type": "atom",
-			"element": "F",
+			"element": "O",
+			"right": "H",
+			"index": 1,
+			"x": 1.0,
+			"y": -1.0
+		},
+		{
+			"type": "atom",
+			"element": "O",
+			"right": "H",
+			"index": 2,
+			"x": 2.0,
+			"y": 0.0
+		},
+		{
+			"type": "atom",
+			"element": "O",
+			"left": "H",
 			"index": 3,
 			"x": 0.0,
 			"y": 0.0
 		},
 		{
 			"type": "atom",
-			"element": "F",
+			"element": "O",
 			"index": 4,
-			"x": 1.732,
-			"y": -1.0
-		},
-		{
-			"type": "atom",
-			"element": "F",
-			"index": 5,
-			"x": 0.0,
-			"y": -1.0
+			"x": 1.0,
+			"y": 1.0
 		},
 		{
 			"type": "bond",
@@ -55,7 +51,7 @@
 			"a": 0,
 			"b": 2,
 			"lines": [
-				"inward"
+				"solid"
 			]
 		},
 		{
@@ -63,7 +59,7 @@
 			"a": 0,
 			"b": 3,
 			"lines": [
-				"inward"
+				"solid"
 			]
 		},
 		{
@@ -71,16 +67,10 @@
 			"a": 0,
 			"b": 4,
 			"lines": [
-				"outward"
-			]
-		},
-		{
-			"type": "bond",
-			"a": 0,
-			"b": 5,
-			"lines": [
-				"outward"
-			]
+				"solid",
+				"solid"
+			],
+			"centered": true
 		}
 	]
 }

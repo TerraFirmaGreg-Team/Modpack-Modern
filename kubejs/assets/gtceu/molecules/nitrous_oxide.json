@@ -9,28 +9,14 @@
         },
         {
             "type": "atom",
-            "element": {
-                "symbol": "N⁺",
-                "color": {
-                    "color": -13610760,
-                    "optional": true
-                },
-                "material": "gtceu:nitrogen"
-            },
+            "element": "N",
             "index": 1,
             "x": 1.0,
             "y": 0.0
         },
         {
             "type": "atom",
-            "element": {
-                "symbol": "O⁻",
-                "color": {
-                    "color": -62195,
-                    "optional": true
-                },
-                "material": "gtceu:oxygen"
-            },
+            "element": "O",
             "index": 2,
             "x": 2.0,
             "y": 0.0
@@ -42,7 +28,7 @@
             "lines": [
                 "solid",
                 "solid",
-                "solid"
+                "dotted"
             ]
         },
         {
@@ -50,7 +36,8 @@
             "a": 1,
             "b": 2,
             "lines": [
-                "solid"
+                "solid",
+				"dotted"
             ]
         }
     ]

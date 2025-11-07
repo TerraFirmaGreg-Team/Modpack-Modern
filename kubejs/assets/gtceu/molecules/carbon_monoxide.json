@@ -1,0 +1,27 @@
+{
+	"contents": [
+		{
+			"type": "atom",
+			"index": 0,
+			"x": 0.0,
+			"y": 0.0
+		},
+		{
+			"type": "atom",
+			"element": "O",
+			"index": 1,
+			"x": 1.0,
+			"y": 0.0
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 1,
+			"lines": [
+				"solid",
+				"solid",
+				"solid"
+			]
+		}
+	]
+}
