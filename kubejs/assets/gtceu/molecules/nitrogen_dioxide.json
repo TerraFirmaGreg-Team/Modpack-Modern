@@ -23,21 +23,23 @@
         },
         {
             "type": "bond",
-            "a": 0,
-            "b": 1,
+            "a": 1,
+            "b": 0,
             "lines": [
-                "solid",
-                "dotted"
-            ]
+                "dotted",
+				"solid"
+            ],
+			"centered": true
         },
         {
             "type": "bond",
             "a": 0,
             "b": 2,
             "lines": [
-                "solid",
-                "dotted"
-            ]
+                "dotted",
+				"solid"
+            ],
+			"centered": true
         }
     ]
 }
