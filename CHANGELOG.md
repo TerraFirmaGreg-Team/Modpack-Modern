@@ -18,6 +18,7 @@
 - Fixed not being able to make brown universal compost with a mortar if the item is both green and brown (#2091) @Pyritie
 - Fixed soup made in the food processor not returning bowls when eaten (#2053) @Pyritie
 ### Translation updates
+- Russian @DI-GitH + @nineex
 - Brazilian Portuguese @Redeix
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
