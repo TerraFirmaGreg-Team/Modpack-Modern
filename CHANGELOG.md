@@ -12,6 +12,7 @@
 - Added a sky stone block recipe to the rock breaker (#2159) @Pyritie
 - Improved the tag for cleanroom doors @Pyritie
 - The food oven and refrigerator now emit heat (for TFC ambiental) @Pyritie
+- Dioxygen Difluoride is now cryogenic and acidic @Pyritie
 ### Bug fixes
 - Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
 - Fixed the HV aqueous accumulator water recipe so the amount of water can actually fit in the HV machine @Pyritie

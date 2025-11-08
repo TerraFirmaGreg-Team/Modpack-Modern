@@ -422,10 +422,7 @@ const registerGTCEuMaterialModification = (event) => {
 	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
 	rose_quartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
 	
-	GTMaterials.get('tfg:kaolinite').setFormula("Al2Si2O5(OH)4", true)
-	GTMaterials.get('tfg:vitrified_pearl').setFormula("(Al2Si2O5(OH)4)(BeK4N5)", true)
-	GTMaterials.get('tfg:tmos').setFormula("Si(OCH3)4", true)
-	GTMaterials.get('tfg:fluix').setFormula("?(?SiO2)(SiO2)", true)
-	GTMaterials.CertusQuartz.setFormula("?SiO2", true)
-	GTMaterials.GraniteRed.setFormula("?", true)
+	GTMaterials.CertusQuartz.setComponents('1x unknown', '1x silicon', '2x oxygen')
+	GTMaterials.GraniteRed.setComponents([])
+	GTMaterials.GraniteRed.setFormula("?")
 }
