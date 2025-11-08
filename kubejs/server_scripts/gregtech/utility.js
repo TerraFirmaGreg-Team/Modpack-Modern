@@ -546,7 +546,7 @@ function sterilizeItem(event, input, output, multiplier, cleanroom) {
 
     // If there are any errors, log them all and throw once.
     if (errors.length > 0) {
-        const message = "sterilizeItem errors:\n - " + errors.join("\n - ");
+        const message = `sterilizeItem errors:\n - ${  errors.join("\n - ")}`;
         throw new TypeError(message);
     };
 
