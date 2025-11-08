@@ -7138,7 +7138,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "gtmoldraw-2.0.1.jar",
+                    "file_name": "gtmoldraw-2.0.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7146,18 +7146,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7197/329/gtmoldraw-2.0.1.jar",
-                    "id": "7197329",
+                    "url": "https://edge.forgecdn.net/files/7197/380/gtmoldraw-2.0.2.jar",
+                    "id": "7197380",
                     "parent_id": "1348330",
                     "hashes": {
-                        "sha1": "701eb021adae14b1d1df909fa6fc8974aa01c8d6",
-                        "md5": "9236597f2d9001eb79ad0f5af589a2f9"
+                        "sha1": "b2d179a3508e192884a3e4c15ff9d9fe77985419",
+                        "md5": "a51eaf06a5d9d6f3228af3a1eb70946a"
                     },
                     "required_dependencies": [
                         "890405"
                     ],
-                    "size": 826741,
-                    "date_published": "2025-11-08T02:02:14.183Z"
+                    "size": 826760,
+                    "date_published": "2025-11-08T02:22:06.563Z"
                 }
             ]
         },
