@@ -13,6 +13,7 @@
 - Improved the tag for cleanroom doors @Pyritie
 - The food oven and refrigerator now emit heat (for TFC ambiental) @Pyritie
 - Dioxygen Difluoride is now cryogenic and acidic @Pyritie
+- Added tfc torches and lamps to Not Enough Animations' config, so now you hold them properly @Coopmore
 ### Bug fixes
 - Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
 - Fixed the HV aqueous accumulator water recipe so the amount of water can actually fit in the HV machine @Pyritie
