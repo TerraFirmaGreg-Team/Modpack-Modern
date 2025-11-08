@@ -7,7 +7,7 @@ const registerTFGMaterials = (event) => {
 		.color('0xFFFFFF')
 		.formula('?')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-	
+
 	event.create('hardwood')
 		.dust()
 		.flags(GTMaterialFlags.FLAMMABLE)

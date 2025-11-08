@@ -85,10 +85,12 @@ function generateGreenHouseRecipe(event, input, fluid, fluid_amount, output, id,
 		.duration(36000) // 30 mins
 		.EUt(EUt)
 
-	if (dimension !== null)
+	if (dimension !== null) {
 		r.dimension(dimension)
-	if (output_secondary !== null) 
+	}
+	if (output_secondary !== null) {
 		r.chancedOutput(output_secondary, 750, 0)
+	}
 	
 
 	// С удобрением (With fertilizer)
@@ -103,10 +105,12 @@ function generateGreenHouseRecipe(event, input, fluid, fluid_amount, output, id,
 		.duration(12000) // 10 mins
 		.EUt(EUt)
 
-	if (dimension !== null)
+	if (dimension !== null) {
 		r.dimension(dimension)
-	if (output_secondary !== null) 
+	}
+	if (output_secondary !== null) {
 		r.chancedOutput(output_secondary, 4000, 0)
+	}
 }
 //#endregion
 
@@ -137,21 +141,21 @@ const getFillingNBT = (material, amount) => {
  */
 function generatePlatedBlockRecipe(event, material) {
 	// firmaciv plated blocks don't have this property
-	let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
-	let outputMaterial = (tfcProperty === null || tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial()
+	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
+	const outputMaterial = (tfcProperty === null || tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial()
 
-	let plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
+	const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
 
-	let platedBlock = ChemicalHelper.get(TFGTagPrefix.blockPlated, material, 1);
-	let platedSlab = ChemicalHelper.get(TFGTagPrefix.slabPlated, material, 1);
-	let platedStair = ChemicalHelper.get(TFGTagPrefix.stairPlated, material, 1);
+	const platedBlock = ChemicalHelper.get(TFGTagPrefix.blockPlated, material, 1);
+	const platedSlab = ChemicalHelper.get(TFGTagPrefix.slabPlated, material, 1);
+	const platedStair = ChemicalHelper.get(TFGTagPrefix.stairPlated, material, 1);
 
-	if (platedBlock === null)
-		return
+	if (platedBlock === null) return;
 
 	let tfcMetalName = material.getName();
-	if (tfcMetalName === "iron")
+	if (tfcMetalName === "iron") {
 		tfcMetalName = "cast_iron";
+	}
 
 	event.shapeless(platedBlock, ['#forge:stone_bricks', plateItem, '#forge:tools/hammers'])
 		.id(`tfg:shapeless/${material.getName()}_plated_block`)
@@ -247,7 +251,7 @@ function generatePlatedBlockRecipe(event, material) {
  * @param {(material: com.gregtechceu.gtceu.api.data.chemical.material.Material_) => void} iterator 
  */
 function forEachMaterial(iterator) {
-	for (let material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
+	for (const material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
 		iterator(material)
 	}
 }
@@ -280,7 +284,7 @@ function addCircuitToRecipe(event, recipeId, circuitNumber) {
 	};
 
 	event.findRecipes({ id: recipeId }).forEach(recipe => {
-		let inputsEl = recipe.json.get("inputs");
+		const inputsEl = recipe.json.get("inputs");
 		let inputsObj;
 		if (inputsEl === null || inputsEl.isJsonNull()) {
 			inputsObj = new JsonObject();
@@ -291,7 +295,7 @@ function addCircuitToRecipe(event, recipeId, circuitNumber) {
 		}
 
 		// Cache existing item inputs.
-		let itemEl = inputsObj.get("item");
+		const itemEl = inputsObj.get("item");
 		let itemArray;
 		if (itemEl === null || itemEl === undefined || itemEl.isJsonNull()) {
 			itemArray = new JsonArray();
@@ -317,7 +321,7 @@ function addCircuitToRecipe(event, recipeId, circuitNumber) {
 		let hasCircuit = false;
 		for (let i = 0; i < itemArray.size(); i++) {
 			const el = itemArray.get(i);
-			if (!el.isJsonObject()) continue;
+			if (!el.isJsonObject()) {continue;}
 			const obj = el.getAsJsonObject();
 			const content = obj.get("content");
 			if (content && content.isJsonObject()) {
@@ -383,7 +387,7 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 	}
 
 	if (logs && lumber && name) {
-		event.shapeless(`8x ${lumber}`, 
+		event.shapeless(`8x ${lumber}`,
 			[logs, '#forge:tools/saws']
 		).id(`tfg:shapeless/${name}_lumber_from_log`)
 
@@ -391,7 +395,7 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 	}
 
 	if (plank && lumber && name) {
-		event.shapeless(`4x ${lumber}`, 
+		event.shapeless(`4x ${lumber}`,
 			[plank, '#forge:tools/saws']
 		).id(`tfg:shapeless/${name}_lumber_from_plank`)
 
@@ -401,15 +405,15 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			'AA',
 			'AA'
 		], {
-			A: lumber,
+			A: lumber
 		}).id(`tfg:shaped/${name}_plank_from_lumber`)
 	}
 
 	if (slab && lumber && name) {
-		event.shapeless(`2x ${lumber}`, 
+		event.shapeless(`2x ${lumber}`,
 			[slab, '#forge:tools/saws']
 		).id(`tfg:shapeless/${name}_lumber_from_slab`)
-		
+
 		generateCutterRecipe(event, slab, `2x ${lumber}`, 50, 7, `cutter_${name}_lumber_from_slab`)
 	}
 
@@ -417,12 +421,12 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 		event.shaped(`6x ${slab}`, [
 			'AAA'
 		], {
-			A: plank,
+			A: plank
 		}).id(`tfg:shaped/${name}_slab_from_plank`)
 	}
 
 	if (stair && lumber && name) {
-		event.shapeless(`3x ${lumber}`, 
+		event.shapeless(`3x ${lumber}`,
 			[stair, '#forge:tools/saws']
 		).id(`tfg:shapeless/${name}_lumber_from_stair`)
 
@@ -435,51 +439,51 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			'AA ',
 			'AAA'
 		], {
-			A: plank,
+			A: plank
 		}).id(`tfg:shaped/${name}_stair_from_plank`)
 	}
-	
+
 	if (door && lumber && name) {
 		event.shaped(`2x ${door}`, [
 			'AA',
 			'AA',
 			'AA'
 		], {
-			A: lumber,
+			A: lumber
 		}).id(`tfg:shaped/${name}_door_from_lumber`)
 	}
-	
+
 	if (trapdoor && lumber && name) {
 		event.shaped(`3x ${trapdoor}`, [
 			'AAA',
 			'AAA'
 		], {
-			A: lumber,
+			A: lumber
 		}).id(`tfg:shaped/${name}_trapdoor_from_lumber_and_plank`)
 	}
-	
+
 	if (fence && lumber && plank && name) {
 		event.shaped(`8x ${fence}`, [
 			'ABA',
 			'ABA'
 		], {
 			A: lumber,
-			B: plank,
+			B: plank
 		}).id(`tfg:shaped/${name}_fence_from_lumber_and_plank`)
 	}
-	
+
 	if (fence_gate && lumber && plank && name) {
 		event.shaped(`2x ${fence_gate}`, [
 			'ABA',
 			'ABA'
 		], {
 			A: plank,
-			B: lumber,
+			B: lumber
 		}).id(`tfg:shaped/${name}_fence_gate_from_lumber_and_plank`)
 	}
-	
+
 	if (support && logs && name) {
-		event.shapeless(`8x ${support}`, 
+		event.shapeless(`8x ${support}`,
 			[`2x ${logs}`, '#forge:tools/saws']
 		).id(`tfg:shapeless/${name}_support_from_logs`)
 
@@ -490,7 +494,7 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			.circuit(4)
 			.EUt(GTValues.VA[GTValues.ULV])
 	}
-	
+
 	if (pressure_plate && slab && name) {
 		event.shaped(pressure_plate, [
 			' B ',
@@ -500,7 +504,7 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			A: slab,
 			B: '#forge:tools/hammers',
 			C: '#forge:springs',
-			D: '#forge:tools/screwdrivers',
+			D: '#forge:tools/screwdrivers'
 		}).id(`tfg:shaped/${name}_pressure_plate`)
 
 		event.recipes.gtceu.assembler(`tfg:assembler/${name}_pressure_plate`)
@@ -546,30 +550,39 @@ function sterilizeItem(event, input, output, multiplier, cleanroom) {
 
     // If there are any errors, log them all and throw once.
     if (errors.length > 0) {
-        const message = "sterilizeItem errors:\n - " + errors.join("\n - ");
+        const message = `sterilizeItem errors:\n - ${ errors.join("\n - ")}`;
         throw new TypeError(message);
     };
 
 	// Set default multiplier.
 	let recipe_multiplier = 1;
-	if (multiplier !== undefined) recipe_multiplier = multiplier;
+	if (multiplier !== undefined) {
+		recipe_multiplier = multiplier;
+	}
 
 	// Create recipes.
-	let ethanol_recipe = event.recipes.gtceu.chemical_bath(`tfg:ethanol_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const ethanol_recipe = event.recipes.gtceu.chemical_bath(`tfg:ethanol_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
 		.itemInputs(input)
 		.inputFluids(Fluid.of('gtceu:ethanol', 500*recipe_multiplier))
 		.itemOutputs(output)
 		.duration(10*20*recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
-	let hydrogen_peroxide_recipe = event.recipes.gtceu.chemical_bath(`tfg:hydrogen_peroxide_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const hydrogen_peroxide_recipe = event.recipes.gtceu.chemical_bath(`tfg:hydrogen_peroxide_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
 		.itemInputs(input)
 		.inputFluids(Fluid.of('gtceu:hydrogen_peroxide', 200*recipe_multiplier))
 		.itemOutputs(output)
 		.duration(10*20*recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
-	let autoclave_recipe = event.recipes.gtceu.autoclave(`tfg:autoclave_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const sodium_dodecyl_sulfate_recipe = event.recipes.gtceu.chemical_bath(`tfg:sodium_dodecyl_sulfate_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+		.itemInputs(input)
+		.inputFluids(Fluid.of('tfg:sodium_dodecyl_sulfate', 50*recipe_multiplier))
+		.itemOutputs(output)
+		.duration(10*20*recipe_multiplier)
+		.EUt(GTValues.VA[GTValues.MV]);
+
+	const autoclave_recipe = event.recipes.gtceu.autoclave(`tfg:autoclave_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
 		.itemInputs(input)
 		.perTick(true)
 		.inputFluids(Fluid.of('gtceu:steam', 100*recipe_multiplier))
@@ -581,6 +594,7 @@ function sterilizeItem(event, input, output, multiplier, cleanroom) {
 	if (cleanroom) {
 		ethanol_recipe.cleanroom(cleanroom);
 		hydrogen_peroxide_recipe.cleanroom(cleanroom);
+		sodium_dodecyl_sulfate_recipe.cleanroom(cleanroom);
 		autoclave_recipe.cleanroom(cleanroom);
 	};
 };

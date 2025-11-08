@@ -12,6 +12,8 @@ function registerTFCDataForTFG(event) {
 	registerTFGFauna(event);
 }
 
+//#region Heat Data
+
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGHeatData(event) {
 	event.itemHeat("tfg:latex_soaked_gloves", 1, null, null);
@@ -39,6 +41,9 @@ function registerTFGHeatData(event) {
 	event.itemHeat('betterend:cave_pumpkin_pie_raw', 1.0, null, null);
     event.itemHeat('betterend:cave_pumpkin_pie', 1.0, null, null);
 }
+
+//#endregion
+//#region Item Size
 
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGItemSize(event) {
@@ -139,7 +144,7 @@ function registerTFGItemSize(event) {
 				"gtceu:red_granite",
 				"gtceu:light_concrete",
 				"gtceu:dark_concrete",
-				"create:cardboard_block",
+				"create:cardboard_block"
 			])
 		),
 		"large",
@@ -228,7 +233,7 @@ function registerTFGItemSize(event) {
 			"ae2:cable_anchor",
 			"ae2:level_emitter",
 			"ae2:energy_level_emitter",
-			"expatternprovider:threshold_level_emitter",
+			"expatternprovider:threshold_level_emitter"
 		]),
 		"tiny",
 		"very_light",
@@ -271,7 +276,7 @@ function registerTFGItemSize(event) {
 			"expatternprovider:precise_export_bus",
 			"expatternprovider:precise_storage_bus",
 			"expatternprovider:threshold_export_bus",
-			"expatternprovider:oversize_interface_part",
+			"expatternprovider:oversize_interface_part"
 		]),
 		"very_small",
 		"very_light",
@@ -288,6 +293,9 @@ function registerTFGItemSize(event) {
 	event.itemSize("tfg:flask", "normal", "medium", "tfg/flask");
 	event.itemSize("tfg:vial", "tiny", "light", "tfg/vial");
 }
+
+//#endregion
+//#region Support Data
 
 //up, down, horizontal
 /** @param {Internal.TFCDataEventJS} event */
@@ -310,6 +318,10 @@ function registerTFGSupportData(event) {
 		event.support(`tfg:${wood.name}_support_horizontal`, 2, 2, 4, `${wood.name}_support`);
 	});
 }
+
+//#endregion
+//#region Food Data
+
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGFoodData(event) {
 	// meats
@@ -705,7 +717,33 @@ function registerTFGFoodData(event) {
 			effect.duration(200);
 		});
 	});
+
+	event.foodItem("tfg:progenitor_cells", (food) => {
+		food.decayModifier(1);
+	});
+	event.foodItem("tfg:rough_endoplasmic_reticula", (food) => {
+		food.decayModifier(0.5);
+	});
+	event.foodItem("tfg:smooth_endoplasmic_reticula", (food) => {
+		food.decayModifier(0.5);
+	});
+
+	event.drinkable("tfg:proto_growth_medium", (data) => {
+		data.thirst(10);
+		data.food(food => {
+			food.dairy(5);
+			food.protein(1);
+		});
+		data.effect("minecraft:absorption", (effect) => {
+			effect.amplifier(2);
+			effect.chance(0.25);
+			effect.duration(1200);
+		});
+	});
 }
+
+//#endregion
+//#region Crop Data
 
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGCropRanges(event) {
@@ -793,6 +831,9 @@ function registerTFGCropRanges(event) {
 	}, "betterend:shadow_berry");
 }
 
+//#endregion
+//#region Planter Data
+
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGFLPlanters(event) {
 	event.firmalifePlantable(
@@ -808,7 +849,7 @@ function registerTFGFLPlanters(event) {
 			"tfg:block/crop/sunflower_greenhouse_0",
 			"tfg:block/crop/sunflower_greenhouse_1",
 			"tfg:block/crop/sunflower_greenhouse_2",
-			"tfg:block/crop/sunflower_greenhouse_3",
+			"tfg:block/crop/sunflower_greenhouse_3"
 		],
 		null
 	);
@@ -826,7 +867,7 @@ function registerTFGFLPlanters(event) {
 			"tfg:block/crop/rapeseed_greenhouse_0",
 			"tfg:block/crop/rapeseed_greenhouse_1",
 			"tfg:block/crop/rapeseed_greenhouse_2",
-			"tfg:block/crop/rapeseed_greenhouse_3",
+			"tfg:block/crop/rapeseed_greenhouse_3"
 		],
 		null
 	);
@@ -844,7 +885,7 @@ function registerTFGFLPlanters(event) {
 			"tfg:block/crop/flax_age_0",
 			"tfg:block/crop/flax_age_1",
 			"tfg:block/crop/flax_age_5_top",
-			"tfg:block/crop/flax_age_6_top",
+			"tfg:block/crop/flax_age_6_top"
 		],
 		null
 	);
@@ -862,7 +903,7 @@ function registerTFGFLPlanters(event) {
 			"betterend:block/amber_root_0",
 			"betterend:block/amber_root_1",
 			"betterend:block/amber_root_2",
-			"betterend:block/amber_root_3",
+			"betterend:block/amber_root_3"
 		],
 		null
 	);
@@ -880,7 +921,7 @@ function registerTFGFLPlanters(event) {
 			"betterend:block/blossom_berry_seed_0",
 			"betterend:block/blossom_berry_seed_1",
 			"betterend:block/blossom_berry_seed_2",
-			"betterend:block/blossom_berry_seed_3",
+			"betterend:block/blossom_berry_seed_3"
 		],
 		null
 	);
@@ -898,7 +939,7 @@ function registerTFGFLPlanters(event) {
 			"betterend:block/bolux_mushroom_greenhouse_0",
 			"betterend:block/bolux_mushroom_greenhouse_1",
 			"betterend:block/bolux_mushroom_greenhouse_2",
-			"betterend:block/bolux_mushroom_greenhouse_3",
+			"betterend:block/bolux_mushroom_greenhouse_3"
 		],
 		null
 	);
@@ -916,7 +957,7 @@ function registerTFGFLPlanters(event) {
 			"betterend:block/chorus_mushroom_0",
 			"betterend:block/chorus_mushroom_1",
 			"betterend:block/chorus_mushroom_2",
-			"betterend:block/chorus_mushroom_3",
+			"betterend:block/chorus_mushroom_3"
 		],
 		null
 	);
@@ -934,7 +975,7 @@ function registerTFGFLPlanters(event) {
 			"betterend:block/cave_pumpkin_greenhouse_0",
 			"betterend:block/cave_pumpkin_greenhouse_1",
 			"betterend:block/cave_pumpkin_greenhouse_2",
-			"betterend:block/cave_pumpkin_greenhouse_3",
+			"betterend:block/cave_pumpkin_greenhouse_3"
 		],
 		"betterend:block/cave_pumpkin_top"
 	);
@@ -952,12 +993,14 @@ function registerTFGFLPlanters(event) {
 			"betterend:block/shadow_berry_greenhouse_0",
 			"betterend:block/shadow_berry_greenhouse_1",
 			"betterend:block/shadow_berry_greenhouse_2",
-			"betterend:block/shadow_berry_greenhouse_3",
+			"betterend:block/shadow_berry_greenhouse_3"
 		],
 		null
 	);
 }
 
+//#endregion
+//#region Fauna Data
 
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGFauna(event) {
@@ -1064,3 +1107,5 @@ function registerTFGFauna(event) {
 		},
 		"wan_ancient_beasts:glider")
 }
+
+//#endregion
