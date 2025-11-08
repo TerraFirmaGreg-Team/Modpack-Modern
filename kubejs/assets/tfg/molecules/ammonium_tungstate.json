@@ -382,6 +382,10 @@
             "type": "atom",
             "element": {
                 "symbol": "⁺N",
+                "color": {
+                    "color": -13610760,
+                    "optional": true
+                },
                 "material": "gtceu:nitrogen"
             },
             "right": [
