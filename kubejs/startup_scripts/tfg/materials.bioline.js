@@ -102,6 +102,7 @@ const registerTFGBiolineMaterials = (event) => {
 
 	event.create('tfg:butyric_acid')
 		.liquid(new GTFluidBuilder().temperature(293).attribute(GTFluidAttributes.ACID))
+		.components('4x carbon', '8x hydrogen', '2x oxygen')
 		.formula('C3H7COOH')
 		.iconSet(GTMaterialIconSet.FINE)
 		.color(0x3F3E3E)

@@ -3,9 +3,6 @@
 
 const registerTFGMaterials = (event) => {
 
-	registerTFGNuclearMaterials(event)
-	registerTFGBiolineMaterials(event)
-
 	event.create('unknown')
 		.color('0xFFFFFF')
 		.formula('?')
