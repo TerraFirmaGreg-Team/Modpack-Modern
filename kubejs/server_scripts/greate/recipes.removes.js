@@ -101,6 +101,14 @@ function removeGreateRecipes(event) {
 	event.remove({ mod: 'greate', type: 'create:deploying' });
 	event.remove({ mod: 'greate', type: 'create:sequenced_assembly' });
 	event.remove({ mod: 'greate', type: 'gtceu:assembler' });
+	
+	event.remove({ id: 'gtceu:macerator/macerate_andesite_alloy_encased_fan' });
+	event.remove({ id: 'gtceu:arc_furnace/arc_andesite_alloy_encased_fan' });
+	event.remove({ id: 'gtceu:macerator/macerate_andesite_alloy_mechanical_mixer' });
+	event.remove({ id: 'gtceu:arc_furnace/arc_andesite_alloy_mechanical_mixer' });
+	event.remove({ id: 'gtceu:macerator/macerate_andesite_alloy_mechanical_pump' });
+	event.remove({ id: 'gtceu:arc_furnace/arc_andesite_alloy_mechanical_pump' });
 
 	event.remove({ id: 'greate:cutting/integration/create/cutting/runtime_generated/compat/minecraft/bamboo_planks_to_bamboo_button' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/fire_charge' })
 }

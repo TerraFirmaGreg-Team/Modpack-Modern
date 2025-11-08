@@ -402,6 +402,36 @@
 			x: 19.5d
 			y: 0.0d
 		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 8.5d
+			y: -3.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 4.5d
+			y: -3.5d
+		}
 	]
 	order_index: 2
 	quest_links: [{
@@ -1049,7 +1079,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.plow.title}"
-			x: 8.5d
+			x: 7.5d
 			y: -1.5d
 		}
 		{
@@ -1431,7 +1461,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["05528D09F7EE6E33"]
+			dependencies: ["1594C2564FC7982D"]
 			description: ["{quests.tfg_tips.horseshoes.desc}"]
 			icon: {
 				Count: 1
@@ -1461,8 +1491,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.horseshoes.title}"
-			x: 7.5d
-			y: -1.5d
+			x: 6.5196428571428555d
+			y: -2.6803571428571473d
 		}
 		{
 			description: ["{quests.tfg_tips.hiking_boots.desc}"]
@@ -1483,6 +1513,21 @@
 			title: "{quests.tfg_tips.hiking_boots.title}"
 			x: 8.5d
 			y: 0.5d
+		}
+		{
+			dependencies: ["05528D09F7EE6E33"]
+			description: ["{quests.tfg_tips.transportation_tips.rnr_plow.desc}"]
+			guide_page: "tfc:field_guide tfc:roadsandroofs/paving_cart 0"
+			id: "533F32CCAD9D5B51"
+			subtitle: "{quests.tfg_tips.transportation_tips.rnr_plow.subtitle}"
+			tasks: [{
+				id: "44773CB0898D2375"
+				item: "tfg:rnr_plow"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.transportation_tips.rnr_plow.title}"
+			x: 8.5d
+			y: -1.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.transportation_tips.subtitle}"]

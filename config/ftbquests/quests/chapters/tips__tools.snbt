@@ -36,6 +36,14 @@
 			x: 2.5d
 			y: 3.5d
 		}
+		{
+			id: "1BD87B2814DE73B7"
+			linked_quest: "533F32CCAD9D5B51"
+			shape: "heart"
+			size: 1.2d
+			x: -1.5d
+			y: -6.0d
+		}
 	]
 	quests: [
 		{
@@ -874,6 +882,7 @@
 						TorchPlacing: 1b
 					}
 					GT.Tool: {
+						DefaultEnchantments: [ ]
 						HarvestLevel: 2
 						MaxDamage: 5543
 						ToolSpeed: 6.0f
@@ -1510,7 +1519,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.blank_disc.title}"
-			x: -3.5d
+			x: -6.0d
 			y: -3.5d
 		}
 		{
@@ -1531,7 +1540,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.dye_discs.title}"
-			x: -2.5d
+			x: -5.0d
 			y: -5.0d
 		}
 		{
@@ -1550,7 +1559,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.amogus.title}"
-			x: -3.5d
+			x: -6.0d
 			y: -5.0d
 		}
 		{
@@ -1570,7 +1579,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.special_discs.title}"
-			x: -4.5d
+			x: -7.0d
 			y: -5.0d
 		}
 		{
@@ -1682,7 +1691,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.disc_collector.title}"
-			x: -3.5d
+			x: -6.0d
 			y: -6.5d
 		}
 		{
@@ -1715,7 +1724,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.label_album.title}"
-			x: -5.5d
+			x: -8.0d
 			y: -3.5d
 		}
 		{
@@ -1736,7 +1745,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.etching_disc.title}"
-			x: -7.0d
+			x: -9.5d
 			y: -3.5d
 		}
 		{
@@ -1757,7 +1766,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.disc_players.title}"
-			x: -8.0d
+			x: -10.5d
 			y: -2.5d
 		}
 		{
@@ -1771,7 +1780,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.radio.title}"
-			x: -4.5d
+			x: -7.0d
 			y: -2.0d
 		}
 		{
@@ -1803,7 +1812,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.DIGGY_DIGGY_HOLE.title}"
-			x: -8.0d
+			x: -10.5d
 			y: -4.5d
 		}
 		{
@@ -1819,7 +1828,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.camera.title}"
-			x: 4.0d
+			x: 6.0d
 			y: -3.5d
 		}
 		{
@@ -1840,7 +1849,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.film_rolls.title}"
-			x: 6.0d
+			x: 8.0d
 			y: -4.5d
 		}
 		{
@@ -1871,7 +1880,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.developing_film.title}"
-			x: 7.5d
+			x: 9.5d
 			y: -4.5d
 		}
 		{
@@ -1888,7 +1897,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.selfie.title}"
-			x: 6.0d
+			x: 8.0d
 			y: -3.0d
 		}
 		{
@@ -1902,7 +1911,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.photo.title}"
-			x: 9.0d
+			x: 11.0d
 			y: -4.5d
 		}
 		{
@@ -1916,7 +1925,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.photo_album.title}"
-			x: 10.0d
+			x: 12.0d
 			y: -3.5d
 		}
 		{
@@ -1930,7 +1939,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.photo_frame.title}"
-			x: 10.0d
+			x: 12.0d
 			y: -5.5d
 		}
 		{
@@ -1951,7 +1960,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.camera_attachments.title}"
-			x: 3.0d
+			x: 5.0d
 			y: -5.5d
 		}
 		{
@@ -1972,7 +1981,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.filters.title}"
-			x: 4.5d
+			x: 6.5d
 			y: -5.5d
 		}
 		{
@@ -1992,7 +2001,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.interplanar_projector.title}"
-			x: 4.5d
+			x: 6.5d
 			y: -7.0d
 		}
 		{
@@ -2574,7 +2583,7 @@
 			]
 			title: "{quests.tfg_tips.self_defense.title}"
 			x: -2.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7FA5B6354A49C396"]
@@ -2762,6 +2771,148 @@
 			title: "{quests.tfg_tips.hiking.title}"
 			x: -3.0d
 			y: 10.0d
+		}
+		{
+			dependencies: ["72B3EA6588E18CCC"]
+			description: ["{quests.tfg_tips.lightning_rod.desc}"]
+			id: "674B27738ADA1830"
+			subtitle: "{quests.tfg_tips.lightning_rod.subtitle}"
+			tasks: [{
+				id: "0BADD52A3A4E3E98"
+				item: "minecraft:lightning_rod"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.lightning_rod.title}"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["72B3EA6588E18CCC"]
+			description: ["{quests.tfg_tips.tools_tips.mattocks.desc}"]
+			guide_page: "tfc:field_guide tfc:roadsandroofs/making_a_road 0"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "rnr:metal/mattock/red_steel"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "379F434116632A89"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.tfg_tips.tools_tips.mattocks.subtitle}"
+			tasks: [
+				{
+					id: "7F1DF0B2C51609B9"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(rnr:mattocks)"
+						}
+					}
+					title: "{quests.tfg_tips.tools_tips.mattocks.task0}"
+					type: "item"
+				}
+				{
+					id: "2BF805FFBA137197"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(rnr:road_materials)"
+						}
+					}
+					optional_task: true
+					title: "{quests.tfg_tips.tools_tips.mattocks.task1}"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.tools_tips.mattocks.title}"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["379F434116632A89"]
+			id: "15277C12EEB517E1"
+			shape: "diamond"
+			subtitle: "{quests.tfg_tips.tools_tips.base_course.subtitle}"
+			tasks: [{
+				icon: "rnr:base_course"
+				id: "0F2DA5DD3F25DE7E"
+				observe_type: 0
+				timer: 0L
+				title: "{quests.tfg_tips.tools_tips.base_course.task}"
+				to_observe: "rnr:base_course"
+				type: "observation"
+			}]
+			title: "{quests.tfg_tips.tools_tips.base_course.title}"
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["15277C12EEB517E1"]
+			description: ["{quests.tfg_tips.tools_tips.concrete_roads.desc}"]
+			guide_page: "tfc:field_guide tfc:roadsandroofs/concrete_roads 0"
+			id: "191DB28DC6FF4538"
+			subtitle: "{quests.tfg_tips.tools_tips.concrete_roads.subtitle}"
+			tasks: [{
+				id: "0C8FBA664C0CE240"
+				item: "rnr:bucket/concrete"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.tools_tips.concrete_roads.title}"
+			x: 1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["15277C12EEB517E1"]
+			description: ["{quests.tfg_tips.tools_tips.brick_roads.desc}"]
+			guide_page: "tfc:field_guide tfc:roadsandroofs/stone_roads 0"
+			id: "345EB58B7064BF4A"
+			subtitle: "{quests.tfg_tips.tools_tips.brick_roads.subtitle}"
+			tasks: [{
+				id: "191AA0F89E28E686"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item_tag(rnr:brick_road_items)item_tag(rnr:cobble_road_items)item_tag(rnr:flagstone_road_items))"
+					}
+				}
+				title: "{quests.tfg_tips.tools_tips.brick_roads.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.tools_tips.brick_roads.title}"
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["15277C12EEB517E1"]
+			description: ["{quests.tfg_tips.tools_tips.gravel_roads.desc}"]
+			id: "7E46F50FEBEE9003"
+			subtitle: "{quests.tfg_tips.tools_tips.gravel_roads.subtitle}"
+			tasks: [{
+				id: "5F5F20DAE5CB99CC"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item_tag(rnr:gravel_road_items)item(rnr:hoggin_mix))"
+					}
+				}
+				title: "{quests.tfg_tips.tools_tips.gravel_roads.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.tools_tips.gravel_roads.title}"
+			x: -1.0d
+			y: -8.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.tools_tips.subtitle}"]

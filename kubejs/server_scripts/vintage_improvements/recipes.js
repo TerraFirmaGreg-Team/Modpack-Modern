@@ -7,7 +7,7 @@ function registerVintageImprovementsRecipes(event) {
 
 	// #region Machines
 
-	event.shaped('vintageimprovements:spring_coiling_machine', [
+	event.recipes.gtceu.shaped('vintageimprovements:spring_coiling_machine', [
 		'CDF',
 		'CAF',
 		'EBE'
@@ -18,9 +18,9 @@ function registerVintageImprovementsRecipes(event) {
 		D: '#forge:double_ingots/black_steel',
 		E: '#forge:small_gears/steel',
 		F: '#gtceu:circuits/ulv'
-	}).id('tfg:vi/shaped/spring_coiling_machine')
+	}).addMaterialInfo().id('tfg:vi/shaped/spring_coiling_machine')
 
-	event.shaped('vintageimprovements:vacuum_chamber', [
+	event.recipes.gtceu.shaped('vintageimprovements:vacuum_chamber', [
 		'EBE',
 		'DAG',
 		'FCF'
@@ -32,9 +32,9 @@ function registerVintageImprovementsRecipes(event) {
 		E: 'create:electron_tube',
 		F: '#forge:plates/black_steel',
 		G: 'create:precision_mechanism'
-	}).id('tfg:vi/shaped/vacuum_chamber')
+	}).addMaterialInfo().id('tfg:vi/shaped/vacuum_chamber')
 
-	event.shaped('vintageimprovements:vibrating_table', [
+	event.recipes.gtceu.shaped('vintageimprovements:vibrating_table', [
 		'BCB',
 		'DAD',
 		'BEB'
@@ -44,7 +44,7 @@ function registerVintageImprovementsRecipes(event) {
 		C: '#forge:plates/black_steel',
 		D: '#gtceu:circuits/ulv',
 		E: 'greate:steel_cogwheel'
-	}).id('tfg:vi/shaped/vibrating_table')
+	}).addMaterialInfo().id('tfg:vi/shaped/vibrating_table')
 
 	event.recipes.create.mechanical_crafting('vintageimprovements:centrifuge', [
 		'   A   ',
@@ -62,7 +62,9 @@ function registerVintageImprovementsRecipes(event) {
 		E: 'greate:steel_cogwheel'
 	}).id('tfg:vi/mechanical_crafting/centrifuge')
 
-	event.shaped('vintageimprovements:curving_press', [
+	TFGHelpers.registerMaterialInfo('vintageimprovements:centrifuge', { 'black_steel': 1, 'wrought_iron': 3 });
+
+	event.recipes.gtceu.shaped('vintageimprovements:curving_press', [
 		'DBD',
 		'FAF',
 		'CEC'
@@ -73,10 +75,7 @@ function registerVintageImprovementsRecipes(event) {
 		D: '#gtceu:circuits/ulv',
 		E: '#forge:plates/black_steel',
 		F: '#forge:springs/wrought_iron'
-	}).id('tfg:vi/shaped/curving_press')
-
-	event.shapeless('vintageimprovements:curving_press', ['create:mechanical_press', '#forge:tools/files'])
-		.id('tfg:shapeless/mech_press_converting')
+	}).addMaterialInfo().id('tfg:vi/shaped/curving_press')
 
 	event.shaped('vintageimprovements:helve_hammer', [
 		'F A',
@@ -91,6 +90,8 @@ function registerVintageImprovementsRecipes(event) {
 		F: '#forge:tools/hammers'
 	}).id('tfg:vi/shaped/helve_hammer')
 
+	TFGHelpers.registerMaterialInfo('vintageimprovements:helve_hammer', { 'iron': 2 });
+
 	event.shaped('vintageimprovements:grinder_belt', [
 		'AAA',
 		'CBC'
@@ -100,7 +101,7 @@ function registerVintageImprovementsRecipes(event) {
 		C: 'tfc:glue'
 	}).id('tfg:vi/shaped/grinder_belt')
 
-	event.shaped('vintageimprovements:belt_grinder', [
+	event.recipes.gtceu.shaped('vintageimprovements:belt_grinder', [
 		'GBG',
 		'EAF',
 		'DCD'
@@ -112,7 +113,7 @@ function registerVintageImprovementsRecipes(event) {
 		E: 'create:precision_mechanism',
 		F: 'minecraft:diamond',
 		G: '#forge:rods/black_steel'
-	}).id('tfg:vi/shaped/belt_grinder')
+	}).addMaterialInfo().id('tfg:vi/shaped/belt_grinder')
 
 	// #endregion
 
@@ -132,6 +133,7 @@ function registerVintageImprovementsRecipes(event) {
 		.itemOutputs('vintageimprovements:redstone_module')
 		.duration(20 * 20)
 		.EUt(20)
+		.addMaterialInfo(true)
 
 	event.shaped('vintageimprovements:helve_hammer_slot_cover', [
 		'B B',
@@ -365,7 +367,8 @@ function registerVintageImprovementsRecipes(event) {
 
 		// #region Lathe
 
-		if (material.hasFlag(MaterialFlags.GENERATE_ROD)) {
+		if (material.hasFlag(MaterialFlags.GENERATE_ROD) && !material.hasFlag(MaterialFlags.IS_MAGNETIC)) {
+
 			let latheInput = material.hasProperty(PropertyKey.GEM)
 				? ChemicalHelper.get(TagPrefix.gem, material, 1)
 				: ChemicalHelper.get(TagPrefix.ingot, material, 1)

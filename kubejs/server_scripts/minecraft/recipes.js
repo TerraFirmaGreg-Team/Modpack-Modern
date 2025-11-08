@@ -338,6 +338,7 @@ const registerMinecraftRecipes = (event) => {
 		.itemOutputs('minecraft:redstone_lamp')
 		.duration(50)
 		.EUt(7)
+		.addMaterialInfo(true)
 
 	//#endregion
 
@@ -684,18 +685,19 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Раздатчик, dispenser
 
 	event.recipes.gtceu.assembler('dispenser')
-		.itemInputs('7x #forge:cobblestone', 'minecraft:redstone', 'minecraft:bow')
+		.itemInputs('6x #forge:cobblestone', 'minecraft:redstone', 'minecraft:bow', '#forge:small_gears/brass')
 		.circuit(1)
 		.itemOutputs('minecraft:dispenser')
 		.duration(100)
 		.EUt(30)
+		.addMaterialInfo(true)
 
 	event.shaped('minecraft:dispenser', [
 		'ADA',
 		'ABA',
 		'ACA'
 	], {
-		A: '#forge:stone',
+		A: '#forge:cobblestone',
 		B: 'minecraft:bow',
 		C: 'minecraft:redstone',
 		D: '#forge:small_gears/brass'
@@ -706,18 +708,19 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Выбрасыватель, dropper
 
 	event.recipes.gtceu.assembler('dropper')
-		.itemInputs('7x #forge:cobblestone', '2x minecraft:redstone')
+		.itemInputs('7x #forge:cobblestone', 'minecraft:redstone', '#forge:small_gears/brass')
 		.circuit(2)
 		.itemOutputs('minecraft:dropper')
 		.duration(100)
 		.EUt(30)
+		.addMaterialInfo(true)
 
 	event.shaped('minecraft:dropper', [
 		'AAA',
 		'ADA',
 		'ACA'
 	], {
-		A: '#forge:stone',
+		A: '#forge:cobblestone',
 		C: 'minecraft:redstone',
 		D: '#forge:small_gears/brass'
 	}).id('gtceu:shaped/dropper')
@@ -866,6 +869,21 @@ const registerMinecraftRecipes = (event) => {
 			C: '#forge:plates/blue_steel',
 			D: 'beneath:cursed_hide'
 		}, 0, 1).id('tfg:minecraft/shaped/netherite_leggings')
+
+	//#endregion
+
+	//#region Netherite Boots (for the lavaproof diving set)
+
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('minecraft:netherite_boots').copyForgingBonus(), [
+			'ABA',
+			'CDC'
+		], {
+			A: '#forge:screws/blue_steel',
+			B: 'tfc:metal/boots/blue_steel',
+			C: '#forge:plates/blue_steel',
+			D: 'beneath:cursed_hide'
+		}, 0, 1).id('tfg:minecraft/shaped/netherite_boots')
 
 	//#endregion
 

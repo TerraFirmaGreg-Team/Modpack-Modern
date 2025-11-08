@@ -112,6 +112,13 @@ function registerTFGCollapseRecipes(event) {
 	event.recipes.tfc.landslide('tfc:red_kaolin_clay', 'tfg:grass/amber_kaolin_mycelium')
 	event.recipes.tfc.landslide('tfc:red_kaolin_clay', 'tfg:grass/rusticus_kaolin_mycelium')
 	event.recipes.tfc.landslide('tfc:red_kaolin_clay', 'tfg:grass/sangnum_kaolin_mycelium')
+
+	event.recipes.tfc.landslide('tfg:sand/fluorapatite/blue', 'tfg:sand/fluorapatite/blue')
+	event.recipes.tfc.landslide('tfg:sand/fluorapatite/green', 'tfg:sand/fluorapatite/green')
+	event.recipes.tfc.landslide('tfg:sand/fluorapatite/brown', 'tfg:sand/fluorapatite/brown')
+	event.recipes.tfc.landslide('tfg:sand/fluorapatite/orange', 'tfg:sand/fluorapatite/orange')
+	event.recipes.tfc.landslide('tfg:sand/fluorapatite/white', 'tfg:sand/fluorapatite/white')
+	event.recipes.tfc.landslide('tfg:sand/fluorapatite/yellow', 'tfg:sand/fluorapatite/yellow')
 	// #endregion
 
 	// #region Other

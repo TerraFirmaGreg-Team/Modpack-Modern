@@ -3,8 +3,8 @@
   "type": "tfc:cluster_vein",
   "config": {
     "size": 32,
-    "rarity": 250,
-    "density": 0.3,
+    "rarity": 200,
+    "density": 0.7,
     "min_y": 0,
     "max_y": 38,
     "random_name": "nether_naquadah",
@@ -46,7 +46,7 @@
       "rarity": 15,
       "depth": 1,
       "underground_rarity": 40,
-      "underground_count": 150,
+      "underground_count": 20,
       "blocks": [
         {
           "block": "gtceu:naquadah_indicator",

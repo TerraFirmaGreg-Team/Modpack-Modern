@@ -62,6 +62,7 @@ function registerTFCItemTags(event) {
     event.add("tfc:usable_on_tool_rack", "waterflasks:red_steel_flask");
     event.add("tfc:usable_on_tool_rack", "tfc:wool_cloth");
     event.add("tfc:usable_on_tool_rack", "firmalife:mixing_bowl");
+    event.add("tfc:usable_on_tool_rack", "#gtceu:molds");
 
     // Ингредиенты для закваски
     event.add("tfg:ferments_to_rennet", "tfc:food/soybean");
@@ -255,6 +256,7 @@ function registerTFCItemTags(event) {
     event.add("tfc:corals", "tfc:coral/brain_dead_coral");
     event.add("tfc:corals", "tfc:coral/fire_dead_coral");
     event.add("tfc:corals", "tfc:coral/horn_dead_coral");
+    event.add("forge:corals", "#tfc:corals");
 
     // Теги для каменных ступенек тфк
     global.TFC_STONE_TYPES.forEach((stoneTypeName) => {
@@ -464,6 +466,9 @@ function registerTFCBlockTags(event) {
     });
 
     event.add('tfc:can_be_snow_piled', 'tfc:groundcover/feather');
+
+    event.add('tfcambiental:hot_stuff', 'tfc:pot');
+    event.add('tfcambiental:hot_stuff', 'tfc:grill');
 }
 
 /** @param {TagEvent.Fluid} event */
@@ -593,6 +598,7 @@ function registerTFCFluidTags(event) {
     event.add("tfc:alcohols", "tfcagedalcohol:aged_whiskey");
     event.add("tfc:alcohols", "tfcagedalcohol:aged_corn_whiskey");
     event.add("tfc:alcohols", "tfcagedalcohol:aged_rye_whiskey");
+    event.add("tfc:alcohols", "tfcagedalcohol:aged_mead");
 
     // Добавляем тег для скрытия в EMI
     event.add("c:hidden_from_recipe_viewers", "tfc:metal/bismuth");

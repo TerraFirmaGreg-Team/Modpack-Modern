@@ -8,6 +8,7 @@ const registerGreateMaterialModification = (event) => {
 	GTMaterials.get("rose_quartz").addFlags(
 		GTMaterialFlags.GENERATE_LENS
 	);
-
-	GTMaterials.get('andesite_alloy').setFormula("?", true)
+	
+	GTMaterials.get('andesite_alloy').setComponents([])
+	GTMaterials.get('andesite_alloy').setFormula("?")
 }

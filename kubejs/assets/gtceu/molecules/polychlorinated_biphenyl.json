@@ -1,0 +1,242 @@
+{
+    "contents": [
+        {
+            "type": "atom",
+            "index": 0,
+            "x": 1.2472,
+            "y": -0.1295
+        },
+        {
+            "type": "atom",
+            "index": 1,
+            "x": 2.7472,
+            "y": -0.9955
+        },
+        {
+            "type": "atom",
+            "index": 2,
+            "x": 2.2472,
+            "y": -0.1295
+        },
+        {
+            "type": "atom",
+            "index": 3,
+            "x": 2.2472,
+            "y": -1.8616
+        },
+        {
+            "type": "atom",
+            "index": 4,
+            "x": 0.7472,
+            "y": -0.9955
+        },
+        {
+            "type": "atom",
+            "index": 5,
+            "x": 1.2472,
+            "y": -1.8616
+        },
+        {
+            "type": "atom",
+            "index": 6,
+            "x": 3.7472,
+            "y": -0.9955
+        },
+        {
+            "type": "atom",
+            "index": 7,
+            "x": 5.2472,
+            "y": -0.1295
+        },
+        {
+            "type": "atom",
+            "index": 8,
+            "x": 4.2472,
+            "y": -0.1295
+        },
+        {
+            "type": "atom",
+            "index": 9,
+            "x": 5.7472,
+            "y": -0.9955
+        },
+        {
+            "type": "atom",
+            "index": 10,
+            "x": 4.2472,
+            "y": -1.8616
+        },
+        {
+            "type": "atom",
+            "index": 11,
+            "x": 5.2472,
+            "y": -1.8616
+        },
+        {
+            "type": "atom",
+            "index": 12,
+            "x": 1.7472,
+            "y": -0.9955
+        },
+        {
+            "type": "atom",
+            "element": {
+                "symbol": "Clₘ",
+                "color": {
+                    "color": -14684129,
+                    "optional": true
+                },
+                "material": "gtceu:chlorine"
+            },
+            "index": 13,
+            "x": 0.0,
+            "y": 0.0
+        },
+        {
+            "type": "atom",
+            "index": 14,
+            "x": 4.7472,
+            "y": -0.9955
+        },
+        {
+            "type": "atom",
+            "element": {
+                "symbol": "Clₙ",
+                "color": {
+                    "color": -14684129,
+                    "optional": true
+                },
+                "material": "gtceu:chlorine"
+            },
+            "index": 15,
+            "x": 6.457,
+            "y": 0
+        },
+        {
+            "type": "bond",
+            "a": 2,
+            "b": 0,
+            "lines": [
+                "solid",
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 0,
+            "b": 4,
+            "lines": [
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 4,
+            "b": 5,
+            "lines": [
+                "solid",
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 5,
+            "b": 3,
+            "lines": [
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 3,
+            "b": 1,
+            "lines": [
+                "solid",
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 1,
+            "b": 2,
+            "lines": [
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 1,
+            "b": 6,
+            "lines": [
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 8,
+            "b": 6,
+            "lines": [
+                "solid",
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 6,
+            "b": 10,
+            "lines": [
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 10,
+            "b": 11,
+            "lines": [
+                "solid",
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 11,
+            "b": 9,
+            "lines": [
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 9,
+            "b": 7,
+            "lines": [
+                "solid",
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 7,
+            "b": 8,
+            "lines": [
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 13,
+            "b": 12,
+            "lines": [
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 14,
+            "b": 15,
+            "lines": [
+                "solid"
+            ]
+        }
+    ]
+}

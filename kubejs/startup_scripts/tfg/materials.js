@@ -3,6 +3,10 @@
 
 const registerTFGMaterials = (event) => {
 
+	event.create('unknown')
+		.color('0xFFFFFF')
+		.formula('?')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 	
 	event.create('hardwood')
 		.dust()
@@ -68,8 +72,9 @@ const registerTFGMaterials = (event) => {
 		.components('19x titanium', '4x vanadium', '3x aluminium', '3x chromium', '3x tin')
 		.color(0x3c253d)
 		.iconSet('metallic')
-		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR)
+		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.DISABLE_ALLOY_BLAST)
 		.blastTemp(3200, 'mid', 1024, 1100)
+		.liquid()
 	
 /*	event.create('rocket_alloy_t3')
 		.ingot()
@@ -142,7 +147,7 @@ const registerTFGMaterials = (event) => {
 	event.create('tfg:tetrafluoroethane')
 		.fluid()
 		.gem()
-		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES, GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.iconSet(GTMaterialIconSet.QUARTZ)
 		.components('2x carbon', '2x hydrogen', '4x fluorine')
 		.color(0x46702e)
@@ -154,6 +159,7 @@ const registerTFGMaterials = (event) => {
 		.components('2x aluminium', '2x silicon', '9x oxygen', '4x hydrogen')
 		.color(0xEEB9AD)
 		.secondaryColor(0xF6A797)
+		.formula("Al2Si2O5(OH)4")
 
 	event.create('tfg:vitrified_pearl')
 		.dust()
@@ -161,6 +167,7 @@ const registerTFGMaterials = (event) => {
 		.components('2x aluminium', '2x silicon', '9x oxygen', '4x hydrogen', '1x ender_pearl')
 		.color(0xFFFFFF)
 		.secondaryColor(0x67FFE6)
+		.formula("(Al2Si2O5(OH)4)(BeK4N5)")
 
 	//#region Solar Panel Chemicals
 
@@ -181,7 +188,8 @@ const registerTFGMaterials = (event) => {
 
 	event.create('tfg:solar_coolant_tier2')
         .gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(73))
-		.formula('(He³8O11H11)8(Ar)(?)')
+		.components('8x tfg:solar_coolant', '1x argon')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xfeff5d)
 
 	//#endregion
@@ -252,7 +260,7 @@ const registerTFGMaterials = (event) => {
 	event.create('tfg:dimethyl_carbonate')
 		.liquid()
 		.flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
-		.components('3x carbon','6x hydrogen', '3x oxygen')
+		.components('3x formaldehyde') // CH2O
 		.color(0xFFFFF2)
 	event.create('tfg:methyl_phenylcarbamate')
 		.liquid()
@@ -274,6 +282,7 @@ const registerTFGMaterials = (event) => {
 	//#region aerogel
 	event.create('tfg:tmos')
 		.liquid()
+		.formula("Si(OCH3)4")
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xC2C6CC)
 	event.create('tfg:silica_gel')
@@ -299,22 +308,26 @@ const registerTFGMaterials = (event) => {
     event.create('hot_chlorinated_brominated_brine')
         .liquid(320)
         .color(0xbf8d5a)
-		.formula('?Cl')
+		.components('1x unknown', '1x chlorine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('brominated_chlorine_vapor')
         .gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(320))
 		.color(0xbf8d5a)
-		.formula('ClBr(H2O)')
+		.components('1x chlorine', '1x bromine', '1x water')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('acidic_bromine_solution')
 		.liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))
 		.color(0xe7b989)
-		.formula('ClBr')
+		.components('1x chlorine', '1x bromine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('concentrated_bromine_solution')
 		.liquid()
 		.color(0x905d29)
-		.formula('Br2Cl')
+		.components('1x bromine', '1x chlorine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('debrominated_brine')
 		.liquid()
@@ -323,12 +336,14 @@ const registerTFGMaterials = (event) => {
     event.create('acidic_bromine_exhaust')
         .gas(new GTFluidBuilder().state(GTFluidState.GAS).attribute(GTFluidAttributes.ACID).temperature(293))
 		.color(0xec9c4a)
-		.formula('(H2O)3Cl')
+		.components('3x water', '1x chlorine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('hot_alkaline_debrominated_brine')
 		.liquid()
 		.color(0xcc6a06)
-		.formula('?2Cl')
+		.components('2x unknown', '1x chlorine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('hot_debrominated_brine')
 		.liquid(320)
@@ -337,7 +352,7 @@ const registerTFGMaterials = (event) => {
     event.create('hydrogen_iodide')
         .gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(293))
 		.color(0x82a6ce)
-		.formula('HI')
+		.components('1x hydrogen', '1x iodine')
 
 	//#endregion
 
@@ -345,19 +360,15 @@ const registerTFGMaterials = (event) => {
 
 	event.create('lightweight_ostrum_vapor')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(760))
-		.formula('(?)')
 
 	event.create('ostrum_vapor')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(815))
-		.formula('(?)')
 
 	event.create('dense_ostrum_vapor')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(930))
-		.formula('(?)')
 
 	event.create('residual_radioactive_concoction')
 		.liquid(new GTFluidBuilder().customStill().temperature(450))
-		.formula('(?)')
 
 	//#endregion
 
@@ -368,35 +379,35 @@ const registerTFGMaterials = (event) => {
 
 	event.create('tfg:certus_regolith')
 		.dust()
-		.flags(GTMaterialFlags.NO_UNIFICATION)
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
 		.iconSet(GTMaterialIconSet.CERTUS)
 		.color('0xc1e6e4')
 		.secondaryColor('0x7a5225')
 
 	event.create('tfg:goethe_regolith')
 		.dust()
-		.flags(GTMaterialFlags.NO_UNIFICATION)
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
 		.iconSet(GTMaterialIconSet.METALLIC)
 		.color('0xb0af5b')
 		.secondaryColor('0x7a5225')
 
 	event.create('tfg:bright_regolith')
 		.dust()
-		.flags(GTMaterialFlags.NO_UNIFICATION)
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
 		.iconSet(GTMaterialIconSet.SHINY)
 		.color('0xf0efe9')
 		.secondaryColor('0xffffff')
 
 	event.create('tfg:cassiterite_regolith')
 		.dust()
-		.flags(GTMaterialFlags.NO_UNIFICATION)
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
 		.iconSet(GTMaterialIconSet.METALLIC)
 		.color('0xbab6b7')
 		.secondaryColor('0x7a5225')
 
 	event.create('tfg:regolith_mush')
 		.dust()
-		.flags(GTMaterialFlags.NO_UNIFICATION)
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
 		.iconSet(GTMaterialIconSet.WOOD)
 		.color('0xa2cde0')
 		.secondaryColor('0x7a5225')
@@ -407,23 +418,27 @@ const registerTFGMaterials = (event) => {
 
 	event.create('tfg:sodium_tungstate')
 		.dust()
-		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES, GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.iconSet(GTMaterialIconSet.BRIGHT)
 		.components('2x sodium','1x tungsten', '4x oxygen')
 		.color('0xdcf6f7')
 
+	event.create('tfg:tungstate')
+		.components('2x hydrogen', '12x tungsten', '42x oxygen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
 	event.create('tfg:ammonium_tungstate')
 		.dust()
-		.flags(GTMaterialFlags.NO_UNIFICATION, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES, GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.iconSet(GTMaterialIconSet.DULL)
-		.formula('(NH4)10(H2W12O42)')
+		.components('10x ammonia', '1x tfg:tungstate')
 		.color('0xfafafa')
 
 	event.create('tfg:apt')
 		.gem()
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.iconSet(GTMaterialIconSet.FLINT)
-		.formula("(NH4)10(H2W12O42)(H2O)4")
+		.components('10x ammonia', '1x tfg:tungstate', '4x water')
 		.color('0xaabdf0')
 
 	event.create('tfg:tungsten_oxide')
@@ -461,7 +476,7 @@ const registerTFGMaterials = (event) => {
 		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
 		.ingot()
 		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
-		.rotorStats(205, 90, 2 ,620)
+		.rotorStats(250, 90, 2 ,620)
 		.flags(
 			GTMaterialFlags.DISABLE_DECOMPOSITION, 
 			GTMaterialFlags.GENERATE_PLATE,
@@ -479,7 +494,7 @@ const registerTFGMaterials = (event) => {
 		.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(220))
 		.gem()
 		.iconSet('lapis')
-		.flags(GTMaterialFlags.NO_UNIFICATION)
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
 		.color(0xB12727)
 		.secondaryColor(0x562C3E)
 
@@ -487,7 +502,7 @@ const registerTFGMaterials = (event) => {
 		.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(220))
 		.gem()
 		.iconSet('quartz')
-		.flags(GTMaterialFlags.NO_UNIFICATION)
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
 		.color(0x45ABA9)
 		.secondaryColor(0x562C3E)
 

@@ -1,17 +1,124 @@
 # Changelog
+
 ## [Unreleased]
 ### Changes
+- Added a paving cart for automating RNR roads. (#2144) @Redeix
+- Non-TFC armors now have TFC resistances (#2157) @theMegaTech
+- Regular Blue Steel Boots now also count towards the lavaproof diving set (#2155) @theMegaTech
+- Added more field guide links to the stone age quest chapter (#2147) @FlightingFalcon
+- Added an AE2-linked TACZ ammo box @BlueBoat29
+- Buffed hiking boots durability by 250%, also changed horseshoe durability and stats to match @Pyritie
+- Added more automatable mud brick recipes, ensured all dirt types are renewable (#2169) @Pyritie
+- Added a sky stone block recipe to the rock breaker (#2159) @Pyritie
+- Improved the tag for cleanroom doors @Pyritie
+- The food oven and refrigerator now emit heat (for TFC ambiental) @Pyritie
+- Dioxygen Difluoride is now cryogenic and acidic @Pyritie
+### Bug fixes
+- Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
+- Fixed the HV aqueous accumulator water recipe so the amount of water can actually fit in the HV machine @Pyritie
+- Fixed not being able to make brown universal compost with a mortar if the item is both green and brown (#2091) @Pyritie
+- Fixed soup made in the food processor not returning bowls when eaten (#2053) @Pyritie
+### Translation updates
+- Russian @DI-GitH + @nineex
+- Brazilian Portuguese @Redeix
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry
+- Japanese @sakura-gondra
+
+## [0.11.7] - 30-10-2025
+### Changes
+- Wild canola and flax are now more rare (#2125) @BlueBoat29
+- Maple and birch syrup tapping is now more temperature tolerand and works any time of year (#2126) @theMegaTech
+### Bug fixes
+- Fixed an issue with the fission reactor causing chunkbans @Vazde
+- Fixed an issue with the third-person-shooting mod not working correctly on servers sometimes @Xikaro
+- Fixed fission components not being registered properly @Pyritie
+
+## [0.11.6] - 29-10-2025
+### Mod updates
+- New GregTech patch, check the patch notes [here](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.2.1-1.20.1)
+- Changed to a different third-person mod that supports TACZ better
+- Aged Alcohols added their own effects for aged corn whiskey and rye whiskey (replacing our own), and now also has aged mead
+### Changes
+- Changed TACZ ammo stack sizes to be more normal @BlueBoat29 
+- Buffed how far each Soarer "flap" can glide for @Pyritie
+- Polycaprolactam string and phantom string now use circuit 3 in a wiremill instead of 0 (#2096) @SverhRazum-Nah
+- Added flax bundles for much faster scraping (#2080) @Xaligal
+- Added more mineable tags to cobwebs since swords don't want to work @Pyritie
+- Added TACZ Ammo Boxes @BlueBoat29
+- Added TACZ Guns and Ammo Boxes to tool rack @BlueBoat29
+- Overhauled the recycling recipes and added many more (#1576) @Pyritie
+- Added an earlier way to make dough using a normal tfc ceramic/wood bowl @Pyritie
+- Added ABS recipe for T2 Rocket Alloy @Xtrial-01
+- Changed the color of Rhodium Plated Palladium to be more unique @BlueBoat29
+- Changed the Ad Astra planet screen to reflect TFG @BlueBoat29 @Redeix
+- Added assembler recipes for railgun buses (#2119) @Xtrial-01
+- Changed Salvos to use Phenol instead of Aminophenol (#2119) @Xtrial-01
+- The teleporting between the Beneath and the Overworld should now only replace collapsible blocks with air (instead of everything), and will give 30 sec of slow fall and fire protection @Pyritie
+- Added tortilla chips, tomato sauce, salsa, and shredded cheese to the meal bag tag @Pyritie
+- Glacian Rams now give more wool @BlueBoat29
+- Rotor Holders now require an Assembler of the appropriate tier to be crafted (#2123) @TomPlop
+- Lowered the craft time of Refrigerant Pellets until a better solution is finished (#2123) @TomPlop
+- Lowered the craft time of ammonium tungstate dust (#2123) @TomPlop
+### Bug fixes
+- Fixed part of the tungsten processing loop giving way too much salt (#2095) @Redeix
+- Fixed basic super tanks so you can now left/right click with them in GUIs like you can with the others (#2100) @jurrejelle
+- Fixed sometimes crash on startup (#2098) @Pyritie
+- Fixed some quest misinformation (#2097, #2119) @Pyritie, @jmecn, @Xtrial-01
+- Fixed not being able to ride Soarers (#2082) @Pyritie
+- Fixed Soarer "flap" GUI overlapping with the minimap @Pyritie
+- Fixed aqueduct recipes (#2101) @vidal-adrien
+- Fixed some AFC logs not having stripping recipes @Pyritie
+- Fixed some issues related to AE2 blocking mode @ko-lja
+- Fixed wild bulbkin plants not dropping bulbkin seeds @Pyritie
+- Fixed graphite moderator frame interactions @BlueBoat29
+- Fixed some casings not being mineable with a wrench (#2123) @TomPlop
+### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry
+- Japanese @sakura-gondra
+
+## [0.11.5] - 22-10-2025
+- Fixed missing ComputerCraft in single player modpack, due to a bug in the latest pakku version
+
+## [0.11.4] - 22-10-2025
+### Major Changes
+- Refrigerators now have a toggle for forcing food stacking, as a workaround for the food oven's output. It will stack everything down to the oldest expiring item, so be careful when using this! @Redeix
+- Refrigerators can now also be connected to AE2 and Create Logistics, so you can pull out your food remotely. AE2 doesn't understand the food traits, however, so all your food will show as it does in EMI @Redeix
+### Changes
+- Finished EV quest line (#2069) @TomPlop
 - Normalized ladder crafting outputs, reduced ladders and wood frame burn times @oosyrag
 - Added beer battered dinosaur nuggets, made from real dinosaur and real beer @Pyritie
 - Added create packages/jars back to JEI so you can use them in filters, and added a tag for all jars (#2044) @Nashy1232
 - Slightly reduced spawn chance of illages and nerfed the amount of loot you get from them @Pyritie
 - Rebalanced some of the moon/mars food nutrition/saturation values @Pyritie
+- Added casting/extruder molds to tool racks @Pyritie
+- Added sandstorms to mars @Zippity
+- Massively buffed the density of Beneath naquadah veins until they get a proper home later @Pyritie
+- Increased amount of pyrolusite and tantalite on mars @Pyritie
+- Added new textures for the fission material holders, redstone ports, and fuel holders (#2073) @Redeix
+- Refrigerators now have more inventory space per tier @Redeix
+- Buffed the Tungsten Bismuth turbine rotor since it had worse stats than HSS-G which was available at a similar time (#2078) @TomPlop
 ### Bug fixes
 - Fixed the interplanetary wireless card so it doesn't use a huge amount of power when just having it open @ko-lja
+- Fixed Firmalife cellar shelves resetting food expiration @Redeix
 - Added circuit numbers to the Formic Acid and Ammonium Chloride chemical reactor recipes @Pyritie
 - Fixed inconsistent circuit numbers between CR and LCR for specific recipes (#2047) @Redeix
 - Driverless rockets should now properly explode at world height limit instead of getting stuck @Pyritie
+- Fix inconsistent emitter recipes (#2059) @SpicyNoodle5
+- Removed inventory sorting from all Sacks n Such containers and Lunchboxes because they were causing weird stack sizes or voiding (#2018) @Pyritie
+- Fixed train conductors suffocating on planets (#2055) @Pyritie
+- Fixed firepit with pot and grill not raising the ambient temperature (#2002) @Pyritie
+- Fixed a few recipes wanting missing items (#2012) @Pyritie
+- Fixed inconsistency between the belt sander and lathe (#2022) @Pyritie
+- Fixed double plates not stacking to 16 (#1952, #2051) @WIPocket
+- Fixed some EV TACZ extended mags requiring the wrong kind of spring (#2065) @BlueBoat29
+- Fixed warped, crimson, and glacian pressure plates using the wrong spring @Pyritie
 ### Translation updates
+- Chinese (simplified) @jmecn
+- Russian @DI-GitH
+- French @Mattisso3500 
+- Japanese @sakura-gondra
 
 ## [0.11.3] - 15-10-2025
 ### Major Changes

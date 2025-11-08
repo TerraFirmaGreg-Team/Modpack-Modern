@@ -1,7 +1,7 @@
 {
     "name": "TerraFirmaGreg-Modern",
     "version": "DEV",
-    "release_type": "alpha",
+    "release_type": "release",
     "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
     "author": "Exception, Xikaro",
     "overrides": [
@@ -9,10 +9,10 @@
         "defaultconfigs",
         "kubejs",
         "tacz",
-        "!kubejs/probe/**"
+        "!kubejs/probe/**",
+        "!kubejs/assets/**"
     ],
     "server_overrides": [
-        "!kubejs/assets",
         "forge-auto-install.txt",
         "generate_auto_installation_file.bat",
         "minecraft_server.jar",
@@ -21,9 +21,11 @@
         "server-icon.png",
         "start_server.bat",
         "README.md"
+        
     ],
     "client_overrides": [
-        "resourcepacks"
+        "resourcepacks",
+        "kubejs/assets/**"
     ],
     "projects": {
         "ambient-environment": {
@@ -242,6 +244,9 @@
         "pick-up-notifier": {
             "side": "CLIENT"
         },
+        "third-person-shooting": {
+            "side": "CLIENT"
+        },
         "inventory-tweaks-refoxed": {
             "side": "BOTH"
         },
@@ -254,6 +259,19 @@
         "autopack-director": {
             "export": false
         },
+        "tfc-caelum": {
+            "export": false
+        },
+        "caelum": {
+            "export": false
+        },
+        "extreme-sound-muffler": {
+            "export": false
+        },
+        "extreme_sound_muffler": {
+            "export": false
+        },
+
         "ftb-backups-2": {
             "side": "BOTH",
             "export": true

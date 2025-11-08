@@ -2,6 +2,35 @@
 
 function registerTACZAmmoRecipes(event){
 	
+	//Ammo Boxes
+	event.recipes.gtceu.assembler('tfg_tacz:steel_ab')
+		.itemInputs('4x #forge:double_plates/steel', '16x #forge:screws/steel', '4x #forge:rings/rubber')
+		.itemOutputs(Item.of('tacz:ammo_box', '{Level:0}'))
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(60)
+		
+	event.recipes.gtceu.assembler('tfg_tacz:magnalium_ab')
+		.itemInputs('4x #forge:double_plates/magnalium', '16x #forge:screws/aluminium', '4x #forge:rings/silicone_rubber')
+		.itemOutputs(Item.of('tacz:ammo_box', '{Level:1}'))
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(60)
+		
+	event.recipes.gtceu.assembler('tfg_tacz:desh_ab')
+		.itemInputs('4x #forge:double_plates/desh', '16x #forge:screws/stainless_steel', '4x #forge:rings/styrene_butadiene_rubber')
+		.itemOutputs(Item.of('tacz:ammo_box', '{Level:2}'))
+		.EUt(GTValues.VA[GTValues.HV])
+		.duration(60)
+		
+	//event.remove({ mod: 'applied_ammo_box' })
+	event.remove({ type: 'applied_ammo_box:shaped_nbt' })
+	
+	event.recipes.gtceu.assembler('tfg_tacz:wl_ammo_box')
+		.itemInputs('2x #gtceu:batteries/ev', 'ae2:wireless_terminal', '4x #forge:double_plates/ostrum',
+				'2x gtceu:ev_sensor', 'gtceu:ev_emitter', '2x #forge:rods/ultimet')
+		.itemOutputs('applied_ammo_box:ammo_box')
+		.EUt(GTValues.VA[GTValues.EV])
+		.duration(100)
+
 	//Extruder Casing
 	event.recipes.gtceu.extruder('tfg_tacz:small_casing')
 		.itemInputs('#forge:ingots/brass')

@@ -49,6 +49,12 @@
 			x: -14.5d
 			y: 13.0d
 		}
+		{
+			id: "65E0B13E245D2E5F"
+			linked_quest: "379F434116632A89"
+			x: -25.0d
+			y: 1.0d
+		}
 	]
 	quests: [
 		{
@@ -1140,7 +1146,7 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:copper_wrench)item(gtceu:bronze_wrench)item(gtceu:black_bronze_wrench)item(gtceu:bismuth_bronze_wrench)item(gtceu:wrought_iron_wrench)item(gtceu:steel_wrench))"
+							"ftbfiltersystem:filter": "or(item(gtceu:copper_wrench)item(gtceu:bronze_wrench)item(gtceu:black_bronze_wrench)item(gtceu:bismuth_bronze_wrench)item(gtceu:wrought_iron_wrench)item(gtceu:steel_wrench)item(gtceu:cobalt_brass_wrench))"
 						}
 					}
 					type: "item"
@@ -1315,7 +1321,11 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["1059288C22CB56BB"]
+			dependencies: [
+				"1059288C22CB56BB"
+				"379F434116632A89"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.steam_age.good_paths.desc}"]
 			id: "52A82511A64B0A5B"
 			optional: true

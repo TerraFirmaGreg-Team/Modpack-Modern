@@ -260,11 +260,13 @@ function registerTFGFoodRecipes(event) {
 
 	global.TFC_CURDS_AND_CHEESES.forEach(item => {
 
-		processorRecipe(`${item.curd}_curd`, 1200, 16, {
-			itemOutputs: [item.curd],
-			fluidInputs: [Fluid.of(item.input_fluid, 1000)],
-			itemOutputProvider: TFC.isp.of(item.curd).resetFood()
-		})
+		// TODO: curds in a food processor always come out rotten
+
+		//processorRecipe(`${item.curd}_curd`, 1200, 16, {
+		//	itemOutputs: [item.curd],
+		//	fluidInputs: [Fluid.of(item.input_fluid, 1000)],
+		//	itemOutputProvider: TFC.isp.of(item.curd).resetFood()
+		//})
 
 		processorRecipe(`${item.cheese1}_cheese_wheel_1`, 8000, 16, {
 			itemInputs: [`3x ${item.curd}`],
@@ -754,7 +756,7 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: ['tfc:powder/salt', '#tfc:foods/flour'],
 		fluidInputs: ['#tfg:clean_water 1000'],
 		itemOutputs: ['4x firmalife:food/hardtack_dough'],
-		itemOutputProvider: TFC.isp.of('4x firmalife:food/hardtack_dough').copyOldestFood()
+		itemOutputProvider: TFC.isp.of('4x firmalife:food/hardtack_dough').copyFood()
 	})
 
 	processorRecipe("yeast_starter", 1200, 8, {
@@ -780,13 +782,13 @@ function registerTFGFoodRecipes(event) {
 	processorRecipe("red_grapes", 50, 8, {
 		itemInputs: ["firmalife:food/red_grapes"],
 		itemOutputs: ["firmalife:food/smashed_red_grapes"],
-		itemOutputProvider: TFC.isp.of('firmalife:food/smashed_red_grapes').copyOldestFood()
+		itemOutputProvider: TFC.isp.of('firmalife:food/smashed_red_grapes').copyFood()
 	})
 
 	processorRecipe("white_grapes", 50, 8, {
 		itemInputs: ["firmalife:food/white_grapes"],
 		itemOutputs: ["firmalife:food/smashed_white_grapes"],
-		itemOutputProvider: TFC.isp.of('firmalife:food/smashed_white_grapes').copyOldestFood()
+		itemOutputProvider: TFC.isp.of('firmalife:food/smashed_white_grapes').copyFood()
 	})
 
 	processorRecipe("cured_maize", 300, 8, {
@@ -794,7 +796,7 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: ["tfc:food/maize_grain"],
 		inputFluids: [Fluid.of('tfc:limewater', 100)],
 		itemOutputs: ["firmalife:food/cured_maize"],
-		itemOutputProvider: TFC.isp.of('firmalife:food/cured_maize').copyOldestFood()
+		itemOutputProvider: TFC.isp.of('firmalife:food/cured_maize').copyFood()
 	})
 
 	processorRecipe("soy_mixture", 300, 8, {
@@ -802,7 +804,7 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: ["tfc:food/soybean", 'tfc:powder/salt'],
 		fluidInputs: ['#tfg:clean_water 50'],
 		itemOutputs: ["firmalife:food/soy_mixture"],
-		itemOutputProvider: TFC.isp.of('firmalife:food/soy_mixture').copyOldestFood()
+		itemOutputProvider: TFC.isp.of('firmalife:food/soy_mixture').copyFood()
 	})
 
 	processorRecipe("brown_mushroom", 100, 8, {
@@ -823,35 +825,35 @@ function registerTFGFoodRecipes(event) {
 		circuit: 30,
 		itemInputs: ["tfc:pumpkin"],
 		itemOutputs: ["4x tfc:food/pumpkin_chunks"],
-		itemOutputProvider: TFC.isp.of("4x tfc:food/pumpkin_chunks").copyOldestFood()
+		itemOutputProvider: TFC.isp.of("4x tfc:food/pumpkin_chunks").copyFood()
 	})
 
 	processorRecipe("cut_melon", 100, 8, {
 		circuit: 30,
 		itemInputs: ["tfc:melon"],
 		itemOutputs: ["4x tfc:food/melon_slice"],
-		itemOutputProvider: TFC.isp.of("4x tfc:food/melon_slice").copyOldestFood()
+		itemOutputProvider: TFC.isp.of("4x tfc:food/melon_slice").copyFood()
 	})
 
 	processorRecipe("salsa", 300, 8, {
 		circuit: 1,
 		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'firmalife:plant/cilantro'],
 		itemOutputs: ['5x firmalife:food/salsa'],
-		itemOutputProvider: TFC.isp.of('5x firmalife:food/salsa').copyOldestFood()
+		itemOutputProvider: TFC.isp.of('5x firmalife:food/salsa').copyFood()
 	})
 
 	processorRecipe("bacon", 300, 8, {
 		circuit: 1,
-		itemInputs: [/*TFC.ingredient.hasTrait(*/'tfc:food/pork'/*, 'firmalife:smoked')*/, 'tfc:powder/salt'],
+		itemInputs: ['tfc:food/pork', 'tfc:powder/salt'],
 		itemOutputs: ['4x firmalife:food/bacon'],
-		itemOutputProvider: TFC.isp.of('4x firmalife:food/bacon').copyOldestFood()
+		itemOutputProvider: TFC.isp.of('4x firmalife:food/bacon').copyFood()
 	})
 
 	processorRecipe("picked_egg", 1000, 8, {
 		circuit: 1,
 		itemInputs: ['minecraft:clay_ball', 'tfc:powder/wood_ash', 'tfc:powder/salt', 'tfc:food/boiled_egg'],
 		itemOutputs: ['firmalife:food/pickled_egg'],
-		itemOutputProvider: TFC.isp.of('firmalife:food/pickled_egg').copyOldestFood()
+		itemOutputProvider: TFC.isp.of('firmalife:food/pickled_egg').copyFood()
 	})
 
 	processorRecipe("garlic_bread", 300, 8, {
@@ -931,7 +933,7 @@ function registerTFGFoodRecipes(event) {
         ],
         fluidInputs: [Fluid.of('minecraft:water', 100)],
         itemOutputs: ['3x tfc:food/grain_soup'],
-        itemOutputProvider: TFC.isp.of('3x tfc:food/grain_soup').meal(
+        itemOutputProvider: TFC.isp.of('3x tfc:food/grain_soup').simpleModifier('tfg:add_bowl').meal(
             (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
             [
                 (portion) => portion
@@ -952,7 +954,7 @@ function registerTFGFoodRecipes(event) {
         ],
         fluidInputs: [Fluid.of('minecraft:water', 100)],
         itemOutputs: ['3x tfc:food/fruit_soup'],
-        itemOutputProvider: TFC.isp.of('3x tfc:food/fruit_soup').meal(
+        itemOutputProvider: TFC.isp.of('3x tfc:food/fruit_soup').simpleModifier('tfg:add_bowl').meal(
             (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
             [
                 (portion) => portion
@@ -973,7 +975,7 @@ function registerTFGFoodRecipes(event) {
         ],
         fluidInputs: [Fluid.of('minecraft:water', 100)],
         itemOutputs: ['3x tfc:food/vegetables_soup'],
-        itemOutputProvider: TFC.isp.of('3x tfc:food/vegetables_soup').meal(
+        itemOutputProvider: TFC.isp.of('3x tfc:food/vegetables_soup').simpleModifier('tfg:add_bowl').meal(
             (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
             [
                 (portion) => portion
@@ -994,7 +996,7 @@ function registerTFGFoodRecipes(event) {
         ],
         fluidInputs: [Fluid.of('minecraft:water', 100)],
         itemOutputs: ['3x tfc:food/protein_soup'],
-        itemOutputProvider: TFC.isp.of('3x tfc:food/protein_soup').meal(
+        itemOutputProvider: TFC.isp.of('3x tfc:food/protein_soup').simpleModifier('tfg:add_bowl').meal(
             (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
             [
                 (portion) => portion
@@ -1015,7 +1017,7 @@ function registerTFGFoodRecipes(event) {
         ],
         fluidInputs: [Fluid.of('minecraft:water', 100)],
         itemOutputs: ['3x tfc:food/dairy_soup'],
-        itemOutputProvider: TFC.isp.of('3x tfc:food/dairy_soup').meal(
+        itemOutputProvider: TFC.isp.of('3x tfc:food/dairy_soup').simpleModifier('tfg:add_bowl').meal(
             (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
             [
                 (portion) => portion
@@ -1083,10 +1085,18 @@ function registerTFGFoodRecipes(event) {
 	event.recipes.tfc.quern('gtceu:cocoa_dust', 'firmalife:food/roasted_cocoa_beans')
 		.id('tfg:quern/cocoa_dust');
 
-	event.recipes.tfc.pot(['#tfc:bowls', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings'],
+	// These don't seem to work with the set_bowl ISP modifier 
+	event.recipes.tfc.pot(['#tfc:bowls', 'firmalife:ice_shavings', 'firmalife:ice_shavings', 'firmalife:ice_shavings',  'firmalife:ice_shavings'],
 		Fluid.of('minecraft:water', 1000), 20, 10)
-		.itemOutput('tfg:food/ice_soup')
+		.itemOutput(TFC.isp.of('tfg:food/ice_soup'))
 		.id('tfg:pot/ice_soup')
+
+	event.recipes.gtceu.food_processor('ice_soup')
+		.itemInputs('#tfc:bowls', '4x firmalife:ice_shavings')
+		.inputFluids(Fluid.of('minecraft:water', 1000))
+		.itemOutputs('tfg:food/ice_soup')
+		.duration(60)
+		.EUt(16)
 
 	event.shaped('4x tfc:powder/salt', ['A', 'B'], {A: '#forge:dusts/salt', B: '#forge:tools/mortars'})
 		.id(`tfg:mortar/salt`)
@@ -1198,7 +1208,7 @@ function registerTFGFoodRecipes(event) {
 		circuit: 30,
 		itemInputs: ["betterend:cave_pumpkin"],
 		itemOutputs: ["4x betterend:cave_pumpkin_chunks"],
-		itemOutputProvider: TFC.isp.of("4x betterend:cave_pumpkin_chunks").copyOldestFood()
+		itemOutputProvider: TFC.isp.of("4x betterend:cave_pumpkin_chunks").copyFood()
 	})
 
 	processorRecipe("cave_pumpkin_pie_dough", 300, GTValues.VA[GTValues.HV], {

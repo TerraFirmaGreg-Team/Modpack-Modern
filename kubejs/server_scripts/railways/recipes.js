@@ -27,6 +27,7 @@ const registerRailWaysRecipes = (event) => {
 		.itemOutputs('railways:semaphore')
 		.duration(200)
 		.EUt(28)
+		.addMaterialInfo(true)
 
 	// Соединитель поездов
 	event.shaped('railways:track_coupler', [
@@ -47,6 +48,7 @@ const registerRailWaysRecipes = (event) => {
 		.itemOutputs('railways:track_coupler')
 		.duration(200)
 		.EUt(28)
+		.addMaterialInfo(true)
 
 	//#region Couplers and Buffers
 	event.recipes.gtceu.assembler(`tfg:railways/screwlink_coupler`)
@@ -55,6 +57,7 @@ const registerRailWaysRecipes = (event) => {
 		.itemOutputs(`railways:screwlink_coupler`)
 		.duration(200)
 		.EUt(28)
+		.addMaterialInfo(true)
 
 	event.recipes.gtceu.assembler(`tfg:railways/copycat_headstock_screwlink_coupler`)
 		.itemInputs(`railways:screwlink_coupler`, `create:copycat_panel`)
@@ -62,6 +65,7 @@ const registerRailWaysRecipes = (event) => {
 		.itemOutputs(`railways:copycat_headstock_screwlink_coupler`)
 		.duration(200)
 		.EUt(28)
+		.addMaterialInfo(true)
 
 	event.recipes.gtceu.assembler(`tfg:railways/buffer`)
 		.itemInputs(`6x #forge:rods/long/steel`, `2x railways:small_buffer`)
@@ -69,6 +73,7 @@ const registerRailWaysRecipes = (event) => {
 		.itemOutputs(`railways:buffer`)
 		.duration(200)
 		.EUt(28)
+		.addMaterialInfo(true)
 
 	event.recipes.gtceu.assembler(`tfg:railways/small_buffer`)
 		.itemInputs(`railways:screwlink_coupler`, `#forge:ingots/steel`)
@@ -76,6 +81,7 @@ const registerRailWaysRecipes = (event) => {
 		.itemOutputs(`railways:small_buffer`)
 		.duration(200)
 		.EUt(28)
+		.addMaterialInfo(true)
 
 	event.recipes.gtceu.assembler(`tfg:railways/big_buffer`)
 		.itemInputs(`railways:small_buffer`, `#forge:ingots/steel`)
@@ -83,6 +89,7 @@ const registerRailWaysRecipes = (event) => {
 		.itemOutputs(`railways:big_buffer`)
 		.duration(200)
 		.EUt(28)
+		.addMaterialInfo(true)
 
 	//#endregion
 

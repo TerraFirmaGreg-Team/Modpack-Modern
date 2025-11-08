@@ -355,7 +355,6 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('1x gtceu:light_concrete')
 		.duration(98)
 		.EUt(7)
-		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.recipes.gtceu.chemical_bath('gtceu:chemical_bath/dark_concrete')
 		.inputFluids(Fluid.of('tfc:black_dye', 18))
@@ -1576,9 +1575,42 @@ const registerGTCEURecipes = (event) => {
 		D: 'gtceu:palladium_substation'
 	}).addMaterialInfo().id('gtceu:shaped/power_substation')
 
-	event.replaceInput({ id: 'gtceu:shaped/field_generator_hv' }, 'gtceu:quantum_eye', 'tfg:cryo_fluix_pearl')
-	event.replaceInput({ id: 'gtceu:shaped/field_generator_ev' }, 'minecraft:nether_star', 'gtceu:quantum_eye')
-	event.replaceInput({ id: 'gtceu:shaped/field_generator_iv' }, 'gtceu:quantum_star', 'minecraft:nether_star')
+	event.replaceInput({ id: 'gtceu:assembler/field_generator_hv' }, 'gtceu:quantum_eye', 'tfg:cryo_fluix_pearl')
+	event.replaceInput({ id: 'gtceu:assembler/field_generator_ev' }, 'minecraft:nether_star', 'gtceu:quantum_eye')
+	event.replaceInput({ id: 'gtceu:assembler/field_generator_iv' }, 'gtceu:quantum_star', 'minecraft:nether_star')
+
+	event.recipes.gtceu.shaped('gtceu:hv_field_generator', [
+		'ABA',
+		'CDC',
+		'ABA'
+	], {
+		A: ChemicalHelper.get(TagPrefix.wireGtQuadruple, GTMaterials.MercuryBariumCalciumCuprate , 1),
+		B: ChemicalHelper.get(TagPrefix.plate, GTMaterials.StainlessSteel, 1),
+		C: '#gtceu:circuits/hv',
+		D: 'tfg:cryo_fluix_pearl'
+	}).addMaterialInfo().id('gtceu:shaped/field_generator_hv')
+
+	event.recipes.gtceu.shaped('gtceu:ev_field_generator', [
+		'ABA',
+		'CDC',
+		'ABA'
+	], {
+		A: ChemicalHelper.get(TagPrefix.wireGtQuadruple, GTMaterials.UraniumTriplatinum , 1),
+		B: ChemicalHelper.get(TagPrefix.plateDouble, GTMaterials.Titanium, 1),
+		C: '#gtceu:circuits/ev',
+		D: 'gtceu:quantum_eye'
+	}).addMaterialInfo().id('gtceu:shaped/field_generator_ev')
+
+	event.recipes.gtceu.shaped('gtceu:iv_field_generator', [
+		'ABA',
+		'CDC',
+		'ABA'
+	], {
+		A: ChemicalHelper.get(TagPrefix.wireGtQuadruple, GTMaterials.SamariumIronArsenicOxide , 1),
+		B: ChemicalHelper.get(TagPrefix.plateDouble, GTMaterials.TungstenSteel, 1),
+		C: '#gtceu:circuits/iv',
+		D: 'minecraft:nether_star'
+	}).addMaterialInfo().id('gtceu:shaped/field_generator_iv')
 
 	event.remove({ id: 'gtceu:chemical_bath/quantum_eye' })
 	event.recipes.gtceu.chemical_bath('tfg:quantum_eye')
@@ -1587,6 +1619,51 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('gtceu:quantum_eye')
 		.duration(20 * 24)
 		.EUt(GTValues.VA[GTValues.HV])
+
+	// Modify Rotor Holder to require an Assembler
+
+	event.remove({ id: 'gtceu:shaped/rotor_holder_hv' })
+	event.remove({ id: 'gtceu:shaped/rotor_holder_ev' })
+	event.remove({ id: 'gtceu:shaped/rotor_holder_iv' })
+	event.remove({ id: 'gtceu:shaped/rotor_holder_luv' })
+	event.remove({ id: 'gtceu:shaped/rotor_holder_zpm' })
+	event.remove({ id: 'gtceu:shaped/rotor_holder_uv' })
+
+	event.recipes.gtceu.assembler('tfg:rotor_holder_hv')
+		.itemInputs('4x #forge:gears/black_steel', '4x #forge:small_gears/stainless_steel', 'gtceu:hv_machine_hull')
+		.itemOutputs('gtceu:hv_rotor_holder')
+		.duration(20 * 6)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.assembler('tfg:rotor_holder_ev')
+		.itemInputs('4x #forge:gears/ultimet', '4x #forge:small_gears/titanium', 'gtceu:ev_machine_hull')
+		.itemOutputs('gtceu:ev_rotor_holder')
+		.duration(20 * 6)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.assembler('tfg:rotor_holder_iv')
+		.itemInputs('4x #forge:gears/hssg', '4x #forge:small_gears/tungsten_steel', 'gtceu:iv_machine_hull')
+		.itemOutputs('gtceu:iv_rotor_holder')
+		.duration(20 * 6)
+		.EUt(GTValues.VA[GTValues.IV])
+
+	event.recipes.gtceu.assembler('tfg:rotor_holder_luv')
+		.itemInputs('4x #forge:gears/ruthenium', '4x #forge:small_gears/rhodium_plated_palladium', 'gtceu:luv_machine_hull')
+		.itemOutputs('gtceu:luv_rotor_holder')
+		.duration(20 * 6)
+		.EUt(GTValues.VA[GTValues.LuV])
+
+	event.recipes.gtceu.assembler('tfg:rotor_holder_zpm')
+		.itemInputs('4x #forge:gears/trinium', '4x #forge:small_gears/naquadah_alloy', 'gtceu:zpm_machine_hull')
+		.itemOutputs('gtceu:zpm_rotor_holder')
+		.duration(20 * 6)
+		.EUt(GTValues.VA[GTValues.ZPM])
+
+	event.recipes.gtceu.assembler('tfg:rotor_holder_uv')
+		.itemInputs('4x #forge:gears/tritanium', '4x #forge:small_gears/darmstadtium', 'gtceu:uv_machine_hull')
+		.itemOutputs('gtceu:uv_rotor_holder')
+		.duration(20 * 6)
+		.EUt(GTValues.VA[GTValues.UV])
 
 	//# Circuit Board
 
@@ -1642,14 +1719,14 @@ const registerGTCEURecipes = (event) => {
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
-		.duration(20*120)
+		.duration(20*90)
 		.EUt(GTValues.VHA[GTValues.HV])
 
 	event.recipes.gtceu.distillery('tfg:ammonium_tungstate_to_apt')
 		.itemInputs(Item.of('tfg:ammonium_tungstate_dust', 1))
 		.itemOutputs(Item.of('tfg:apt_gem', 1))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
-		.duration(20*120)
+		.duration(20*90)
 		.EUt(GTValues.VHA[GTValues.HV])
 
 	event.recipes.gtceu.pyrolyse_oven('tfg:apt')

@@ -3,8 +3,6 @@
 
 const registerAdvancedPeripheralsRecipes = (event) => {
 
-	registerAdvancedPeripheralsRecyclingRecipes(event);
-
     event.remove({ mod: 'advancedperipherals' });
 
 	//Chat Box
@@ -14,6 +12,7 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.itemOutputs('advancedperipherals:chat_box')
 		.duration(1200)
 		.EUt(GTValues.VA[GTValues.MV])
+		.addMaterialInfo(true)
 
 	//Player Detector
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/player_detector')
@@ -22,6 +21,7 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.itemOutputs('advancedperipherals:player_detector')
 		.duration(1200)
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true)
 
 	//ME Bridge
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/me_bridge')
@@ -30,6 +30,7 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.itemOutputs('advancedperipherals:me_bridge')
 		.duration(1200)
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true)
 
 	//Environment Detector
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/environment_detector')
@@ -39,6 +40,7 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.itemOutputs('advancedperipherals:environment_detector')
 		.duration(1200)
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true)
 
 	//Inventory Manager
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/inventory_manager')
@@ -47,6 +49,7 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.itemOutputs('advancedperipherals:inventory_manager')
 		.duration(1200)
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true)
 
 	//Block Reader
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/block_reader')
@@ -55,6 +58,7 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.itemOutputs('advancedperipherals:block_reader')
 		.duration(1200)
 		.EUt(GTValues.VA[GTValues.MV])
+		.addMaterialInfo(true)
 
 	//Geo Scanner
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/geo_scanner')
@@ -63,6 +67,7 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.itemOutputs('advancedperipherals:geo_scanner')
 		.duration(1200)
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true)
 
 	//NBT Storage
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/nbt_storage')
@@ -71,6 +76,7 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.itemOutputs('advancedperipherals:nbt_storage')
 		.duration(1200)
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true)
 
 	//End Automata Core
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/end_automata_core')
@@ -87,6 +93,7 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.itemOutputs('advancedperipherals:husbandry_automata_core')
 		.duration(2400)
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true)
 
 	//Weak Automata Core
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/weak_automata_core')
@@ -95,6 +102,7 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.itemOutputs('advancedperipherals:weak_automata_core')
 		.duration(2400)
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true)
 
 	//Overpowered Husbandry Automata Core
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/overpowered_husbandry_automata_core')
@@ -103,6 +111,7 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.itemOutputs('advancedperipherals:overpowered_husbandry_automata_core')
 		.duration(2400)
 		.EUt(GTValues.VA[GTValues.IV])
+		.addMaterialInfo(true)
 
 	//Overpowered Weak Automata Core
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/overpowered_weak_automata_core')
@@ -111,9 +120,10 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.itemOutputs('advancedperipherals:overpowered_weak_automata_core')
 		.duration(2400)
 		.EUt(GTValues.VA[GTValues.IV])
+		.addMaterialInfo(true)
 
 	//Memory Card
-	event.shaped('advancedperipherals:memory_card', [
+	event.recipes.gtceu.shaped('advancedperipherals:memory_card', [
 		'A',
 		'B',
 		'C'
@@ -121,5 +131,5 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		A: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Polyethylene, 1),
 		B: 'computercraft:disk',
 		C: ChemicalHelper.get(TagPrefix.plateDouble, GTMaterials.Gold, 1)
-	}).id('advancedperipherals:shaped/memory_card')
+	}).addMaterialInfo().id('advancedperipherals:shaped/memory_card')
 }

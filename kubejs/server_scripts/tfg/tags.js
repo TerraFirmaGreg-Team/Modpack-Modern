@@ -38,6 +38,14 @@ const registerTFGItemTags = (event) => {
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/hematitic_sand_covering')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_snow_covering')
 
+	// Actually "piles", the kind that can hide plants inside them
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_sand_covering')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/venus_sand_covering')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/hematitic_sand_covering')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_snow_covering')
+
+	event.add('c:hidden_from_recipe_viewers', 'tfg:mars_ice')
+
 	//Decorative Vases
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
 		event.add('c:hidden_from_recipe_viewers', `tfg:decorative_vase/generated/${color}`)
@@ -298,6 +306,10 @@ const registerTFGItemTags = (event) => {
 		'firmalife:food/cooked_pasta',
 		'firmalife:food/pasta_with_tomato_sauce',
 		'firmalife:food/cooked_rice_noodles',
+		'firmalife:food/tortilla_chips',
+		'firmalife:food/shredded_cheese',
+		'firmalife:food/salsa',
+		'firmalife:food/tomato_sauce',
 		'tfg:roasted_sunflower_seeds',
 		'tfg:food/cooked_dino_nugget'
 	];
@@ -640,6 +652,13 @@ const registerTFGBlockTags = (event) => {
 	event.add('minecraft:mineable/shovel', 'tfg:pile/mars_sand_covering')
 	event.add('minecraft:mineable/shovel', 'tfg:pile/venus_sand_covering')
 	event.add('minecraft:mineable/shovel', 'tfg:pile/hematitic_sand_covering')
+
+	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/blue')
+	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/green')
+	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/brown')
+	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/orange')
+	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/white')
+	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/yellow')
 }
 //#endregion
 

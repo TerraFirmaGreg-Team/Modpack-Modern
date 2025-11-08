@@ -341,28 +341,26 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemInputs('1x minecraft:phantom_membrane')
 		.itemOutputs('16x tfg:phantom_thread')
 		.duration(100)
-		.circuit(0)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.wiremill('tfg:wiremill/polycaprolactam_string')
 		.itemInputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Polycaprolactam, 1))
 		.itemOutputs('32x tfg:polycaprolactam_string')
 		.duration(100)
-		.circuit(0)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.assembler('tfg:assembler/phantom_silk')
 		.itemInputs('16x tfg:phantom_thread')
 		.itemOutputs('1x tfg:phantom_silk')
 		.duration(100)
-		.circuit(0)
+		.circuit(3)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.assembler('tfg:assembler/polycaprolactam_fabric')
 		.itemInputs('16x tfg:polycaprolactam_string')
 		.itemOutputs('1x tfg:polycaprolactam_fabric')
 		.duration(100)
-		.circuit(0)
+		.circuit(3)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_bath('tfg:chemical_bath/bleaching/polycaprolactam_string')
@@ -811,6 +809,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(200)
 		.circuit(4)
 		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true)
 
 	//Rock-wool stuff
 	event.recipes.gtceu.mixer('tfg:aes_mix')
@@ -1165,7 +1164,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.shaped(Item.of('tfg:universal_compost_greens', 1), [
 		'AB'
 	], {
-		A: Ingredient.of(['#tfc:compost_greens_low']).subtract(['tfg:universal_compost_greens']),
+		A: '#tfc:compost_greens_low',
 		B: '#forge:tools/mortars'
 	}).id('tfg:shaped/universal_compost_greens_from_low')
 
@@ -1232,15 +1231,17 @@ function registerTFGMiscellaneousRecipes(event) {
 	//Browns
 	// Lows via crafting with mortar
 	event.shaped(Item.of('tfg:universal_compost_browns', 1), [
-		'BA'
+		'A',
+		'B'
 	], {
-		A: Ingredient.of(['#tfc:compost_browns_low']).subtract(['tfg:universal_compost_browns']),
+		A: '#tfc:compost_browns_low',
 		B: '#forge:tools/mortars'
 	}).id('tfg:shaped/universal_compost_browns_from_low')
 
 	// Mediums via crafting with mortar
 	event.shaped(Item.of('tfg:universal_compost_browns', 2), [
-		'BA'
+		'A',
+		'B'
 	], {
 		A: '#tfc:compost_browns',
 		B: '#forge:tools/mortars'
@@ -1248,7 +1249,8 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	// Highs via crafting with mortar
 	event.shaped(Item.of('tfg:universal_compost_browns', 4), [
-		'BA'
+		'A',
+		'B'
 	], {
 		A: '#tfc:compost_browns_high',
 		B: '#forge:tools/mortars'
@@ -1310,6 +1312,21 @@ function registerTFGMiscellaneousRecipes(event) {
 	//#endregion
 
 	//#region flax stuff
+
+	event.shapeless('1x tfg:flax_bundle', ['9x tfg:flax_product'])
+	event.recipes.gtceu.packer('tfg:packer/flax_bundle')
+		.itemInputs('9x tfg:flax_product')
+		.itemOutputs('tfg:flax_bundle')
+		.duration('100')
+		.EUt(GTValues.VA[GTValues.ULV])	
+
+	event.shapeless('1x tfg:bundled_scraped_flax', ['9x tfg:flax_waste'])
+	event.recipes.gtceu.packer('tfg:packer/bundled_scraped_flax')
+		.itemInputs('9x tfg:flax_waste')
+		.itemOutputs('tfg:bundled_scraped_flax')
+		.duration('100')
+		.EUt(GTValues.VA[GTValues.ULV])		
+
 	event.recipes.tfc.scraping(
 		'tfg:flax_waste',
 		'tfg:flax_product',
@@ -1319,6 +1336,14 @@ function registerTFGMiscellaneousRecipes(event) {
 	).id('tfg:scraping/flax_line')
 
 	event.recipes.tfc.scraping(
+		'tfg:bundled_scraped_flax',
+		'tfg:flax_bundle',
+		'tfg:item/bundled_scraped_flax',
+		'tfg:item/flax_bundle',
+		'18x tfg:flax_line'
+	).id('tfg:scraping/flax_line_from_bundle')	
+
+	event.recipes.tfc.scraping(
 		'tfc:groundcover/humus',
 		'tfg:flax_waste',
 		'tfc:item/groundcover/humus',
@@ -1326,16 +1351,36 @@ function registerTFGMiscellaneousRecipes(event) {
 		'tfg:flax_tow'
 	).id('tfg:scraping/flax_tow')
 
+	event.recipes.tfc.scraping(
+		'9x tfc:groundcover/humus',
+		'tfg:bundled_scraped_flax',
+		'tfc:item/groundcover/humus',
+		'tfg:item/bundled_scraped_flax',
+		'9x tfg:flax_tow'
+	).id('tfg:scraping/flax_tow_from_pile')
+
 	event.recipes.gtceu.cutter('tfg:flax_line_in_cutter')
 		.itemInputs('tfg:flax_product')
 		.itemOutputs('2x tfg:flax_line', 'tfg:flax_waste')
 		.duration(60)
 		.EUt(2)
 
+	event.recipes.gtceu.cutter('tfg:flax_line_from_bundle_in_cutter')
+		.itemInputs('tfg:flax_bundle')
+		.itemOutputs('18x tfg:flax_line', 'tfg:bundled_scraped_flax')
+		.duration(540)
+		.EUt(2)	
+
 	event.recipes.gtceu.cutter('tfg:flax_tow_in_cutter')
 		.itemInputs('tfg:flax_waste')
 		.itemOutputs('1x tfg:flax_tow', '1x tfc:groundcover/humus')
 		.duration(60)
+		.EUt(2)
+	
+	event.recipes.gtceu.cutter('tfg:flax_tow_from_bundle_in_cutter')
+		.itemInputs('tfg:bundled_scraped_flax')
+		.itemOutputs('9x tfg:flax_tow', '9x tfc:groundcover/humus')
+		.duration(540)
 		.EUt(2)
 
 	event.recipes.gtceu.centrifuge('tfg:flax_product')
@@ -1344,12 +1389,25 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	event.recipes.gtceu.centrifuge('tfg:flax_product_from_bundle')
+		.itemInputs('tfg:flax_bundle')
+		.itemOutputs('18x tfg:flax_line', '9x tfg:flax_tow', '9x tfc:groundcover/humus')
+		.duration(1800)
+		.EUt(GTValues.VA[GTValues.LV])	
+
 	event.custom({
 		type: 'vintageimprovements:centrifugation',
 		ingredients: [{ item: 'tfg:flax_product' }],
 		results: [{ item: 'tfg:flax_line', count: 2 }, { item: 'tfg:flax_tow' }, { item: 'tfc:groundcover/humus' }],
 		processingTime: 40 * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 	}).id('tfg:vi_seperate_flax')
+
+	event.custom({
+		type: 'vintageimprovements:centrifugation',
+		ingredients: [{ item: 'tfg:flax_bundle' }],
+		results: [{ item: 'tfg:flax_line', count: 18 }, { item: 'tfg:flax_tow', count: 9 }, { item: 'tfc:groundcover/humus', count: 9 }],
+		processingTime: 360 * 90 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id('tfg:vi_seperate_flax_from_bundle')
 
 	//#region flax line spining
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
@@ -1458,4 +1516,42 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.EV])
 	
+	//#region RNR Paving Cart
+	const rubber_types = [
+		{fluid:'styrene_butadiene_rubber', quantity: 144},
+		{fluid:'silicone_rubber', quantity: 288},
+		{fluid:'rubber', quantity: 576}
+	];
+	rubber_types.forEach((rubber) => {
+		event.recipes.gtceu.assembler(`tfg:cobalt_brass_wheel/${rubber.fluid}`)
+			.itemInputs(
+				ChemicalHelper.get(TagPrefix.rod, GTMaterials.CobaltBrass, 9),
+				Ingredient.of('firmaciv:rope_coil').withCount(2),
+				Ingredient.of('#forge:screws/any_bronze').withCount(4)
+			)
+			.inputFluids(Fluid.of(`gtceu:${rubber.fluid}`, rubber.quantity))
+			.itemOutputs('tfg:cobalt_brass_wheel')
+			.duration(20*10)
+			.EUt(GTValues.VA[GTValues.LV])
+	});
+	TFGHelpers.registerMaterialInfo('tfg:cobalt_brass_wheel', { 'rubber': 1, 'cobalt_brass': 4});
+
+	const mattock_types = ['red', 'blue'];
+	mattock_types.forEach((type) => {
+		event.recipes.gtceu.assembler(`tfg:rnr_plow/${type}_steel`)
+			.itemInputs(
+				ChemicalHelper.get(TagPrefix.rodLong, GTMaterials.CobaltBrass, 1),
+				ChemicalHelper.get(TagPrefix.rodLong, GTMaterials.TreatedWood, 2),
+				ChemicalHelper.get(TagPrefix.plate, GTMaterials.Invar, 4),
+				ChemicalHelper.get(TagPrefix.spring, GTMaterials.Steel, 2),
+				Ingredient.of('tfg:cobalt_brass_wheel').withCount(2),
+				Ingredient.of('create:chute').withCount(1),
+				Ingredient.of(`#forge:mattock_heads/${type}_steel`).withCount(3)
+			)
+			.itemOutputs('tfg:rnr_plow')
+			.duration(20*60)
+			.EUt(GTValues.VA[GTValues.LV])
+	});
+	TFGHelpers.registerMaterialInfo('tfg:rnr_plow', {'cobalt_brass': 5, 'invar': 2, 'steel': 2, 'wrought_iron': 2, 'rubber': 1, 'treated_wood': 1});
+	//#endregion
 }
