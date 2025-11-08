@@ -26,55 +26,49 @@ const registerTFGNuclearMaterials = (event) => {
 	event.create('dense_steam')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(3730))
 		.components('2x hydrogen', '1x oxygen')
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	event.create('radioactive_steam')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(3730))
-		.components('2x hydrogen', '1x oxygen')
-		.formula('H2O(?)')
+		.components('1x water', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	event.create('radioactive_waste')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(3730))
-		.formula("(?)")
+		.components('1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	event.create('irradiated_steam')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(4250))
-		.formula("(?)")
+		.components('1x water', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	event.create('tfg:heavy_water')
 		.liquid(new GTFluidBuilder().temperature(236))
 		.components('2x deuterium', '1x oxygen')
-		.iconSet(GTMaterialIconSet.FINE)
 		.color(0xB5B9FF)
 		.secondaryColor(0x81FFF9)
 
 	event.create('tfg:semiheavy_water')
 		.liquid(new GTFluidBuilder().temperature(213))
 		.components('1x deuterium', '1x hydrogen', '1x oxygen')
-		.iconSet(GTMaterialIconSet.FINE)
 		.color(0xb5ffff)
 		.secondaryColor(0x81FFF9)
 
 	event.create('uranium_waste')
 		.liquid(new GTFluidBuilder().customStill().temperature(3850))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.iconSet(GTMaterialIconSet.FINE)
 		.color(0xB5B9FF)
 		.secondaryColor(0x81FFF9)
 
 	event.create('nuclear_waste')
 		.liquid(new GTFluidBuilder().customStill().temperature(3850))
+		.components('1x thorium', '1x uranium', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.formula('ThU(?)')
 
 	event.create('dirty_hexafluorosilicic_acid')
 		.liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))
-		//.liquid(320)
-		.formula('H2SiF6(?)')
+		.components('2x hydrogen', '1x silicon', '6x fluorine', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xe6fafb)
 		.secondaryColor(0xb5fdff)
@@ -82,23 +76,21 @@ const registerTFGNuclearMaterials = (event) => {
 
 	event.create('martian_sludge')
 		.liquid(new GTFluidBuilder().temperature(4239))
-		.formula('(?)')
+		.components('1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xd86f27)
 		.secondaryColor(0xecd7c9)
 		.iconSet(GTMaterialIconSet.getByName('bullshit'))
 
 	event.create('dioxygen_difluoride')
-		.fluid()
+		.liquid(new GTFluidBuilder().temperature(110).attribute(GTFluidAttributes.ACID))
 		.components('2x oxygen', '2x fluorine')
-		.iconSet(GTMaterialIconSet.FINE)
 		.color(0xfcb603)
 		.secondaryColor(0xfc5e03)
 
 	event.create('tritiated_water')
 		.fluid()
 		.components('2x tritium', '1x oxygen')
-		.iconSet(GTMaterialIconSet.FINE)
 		.color(0xb2c3e7)
 
 	// FLiBe Line
@@ -108,26 +100,33 @@ const registerTFGNuclearMaterials = (event) => {
 
 	event.create('hot_iodine_brine')
 		.liquid(new GTFluidBuilder().customStill().temperature(293))
-		.formula('HIMgCl(?)')
+		.components('1x hydrogen', '1x iodine', '1x magnesium', '1x chlorine', '1x unknown')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	event.create('brominated_iodine_vapor')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(412))
-		.formula('HI(?)')
+		.components('1x hydrogen', '1x iodine', '1x unknown')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	event.create('basic_bromine_exhaust')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(406))
-
-	event.create('dirty_flibe')
-		.liquid(new GTFluidBuilder().customStill().temperature(293))
-		.formula('FLiBe(?)')
+		.components('1x bromine', '1x unknown')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	event.create('flibe')
 		.liquid(new GTFluidBuilder().customStill().temperature(293))
-		.formula('FLiBe')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.components('1x fluorine', '1x lithium', '1x beryllium')
+
+	event.create('dirty_flibe')
+		.liquid(new GTFluidBuilder().customStill().temperature(293))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.components('1x flibe', '1x unknown')
 
 	event.create('hot_flibe')
 		.liquid(new GTFluidBuilder().customStill().temperature(3293))
-		.formula('FLiBe')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.components('1x flibe')
 
 	//#endregion
 
@@ -135,7 +134,7 @@ const registerTFGNuclearMaterials = (event) => {
 
 	event.create('tfg:nuclear_residue')
 		.dust()
-		.formula('(?)')
+		.components('1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.iconSet(GTMaterialIconSet.SHINY)
 		.color(0x332816)
@@ -144,7 +143,7 @@ const registerTFGNuclearMaterials = (event) => {
 
 	event.create('tfg:oxidized_nuclear_residue')
 		.dust()
-		.formula('U?O?(?)')
+		.components('1x uranium', '1x oxygen', '2x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.iconSet(GTMaterialIconSet.SHINY)
 		.color(0x286529)
@@ -153,7 +152,7 @@ const registerTFGNuclearMaterials = (event) => {
 
 	event.create('tfg:refined_nuclear_residue')
 		.dust()
-		.formula('U?(?)')
+		.components('1x uranium', '2x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0x82c383)
 		.secondaryColor('0xffffff')
@@ -164,7 +163,6 @@ const registerTFGNuclearMaterials = (event) => {
 	event.create('lithium_carbonate')
 		.dust()
 		.components('2x lithium', '1x carbon', '3x oxygen')
-		.formula('Li2CO3')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xffffff)
 		.secondaryColor(0xb7b9bd)
@@ -173,7 +171,6 @@ const registerTFGNuclearMaterials = (event) => {
 	event.create('lithium_fluoride')
 		.gem()
 		.components('1x lithium', '1x fluorine')
-		.formula('LiF')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
 		.color(0xffffff)
 		.secondaryColor(0xb7b9bd)
@@ -182,7 +179,6 @@ const registerTFGNuclearMaterials = (event) => {
 	event.create('tetrafluoroberyllate')
 		.gem()
 		.components('1x beryllium', '4x fluorine')
-		.formula('BeF4')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
 		.color(0xdcdee1)
 		.secondaryColor(0xb7b9bd)

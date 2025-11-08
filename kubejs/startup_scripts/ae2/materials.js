@@ -11,7 +11,7 @@ const registerAE2Materials = (event) => {
             GTMaterialFlags.CRYSTALLIZABLE, 
             GTMaterialFlags.DISABLE_DECOMPOSITION
         )
-        .components('1x nether_quartz', '1x certus_quartz')
+        .components('1x unknown', '1x nether_quartz', '1x certus_quartz')
         .color(0x8f5ccb)
         .secondaryColor(0x252f5a)
 }
