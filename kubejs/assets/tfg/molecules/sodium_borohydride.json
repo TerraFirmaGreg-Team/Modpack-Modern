@@ -1,76 +1,84 @@
 {
-	"contents": [
-		{
-			"type": "atom",
-			"element": {
-				"symbol": "B⁻",
-				"material": "gtceu:boron"
-			},
-			"index": 0,
-			"x": 0.0,
-			"y": 0.0
-		},
-		{
-			"type": "atom",
-			"element": "H",
-			"index": 1,
-			"x": 0.8249,
-			"y": 0.0
-		},
-		{
-			"type": "atom",
-			"element": "H",
-			"index": 2,
-			"x": 0.0,
-			"y": -0.8249
-		},
-		{
-			"type": "atom",
-			"element": "H",
-			"index": 3,
-			"x": -0.8250000000000001,
-			"y": 0.0
-		},
-		{
-			"type": "atom",
-			"element": "H",
-			"index": 4,
-			"x": 0.0,
-			"y": 0.8250000000000001
-		},
-		{
-			"type": "atom",
-			"element": {
-				"symbol": "Na⁺",
-				"material": "gtceu:sodium"
-			},
-			"index": 5,
-			"x": -1.8527,
-			"y": 0.0
-		},
-		{
-			"type": "bond",
-			"a": 0,
-			"b": 1,
-			"bond_type": "single"
-		},
-		{
-			"type": "bond",
-			"a": 0,
-			"b": 4,
-			"bond_type": "single"
-		},
-		{
-			"type": "bond",
-			"a": 0,
-			"b": 3,
-			"bond_type": "single"
-		},
-		{
-			"type": "bond",
-			"a": 0,
-			"b": 2,
-			"bond_type": "single"
-		}
-	]
+    "contents": [
+        {
+            "type": "atom",
+            "element": {
+                "symbol": "B⁻",
+                "material": "gtceu:boron"
+            },
+            "index": 0,
+            "x": 0.0,
+            "y": 0.0
+        },
+        {
+            "type": "atom",
+            "element": "H",
+            "index": 1,
+            "x": 0.8249,
+            "y": 0.0
+        },
+        {
+            "type": "atom",
+            "element": "H",
+            "index": 2,
+            "x": 0.0,
+            "y": -0.8249
+        },
+        {
+            "type": "atom",
+            "element": "H",
+            "index": 3,
+            "x": -0.82500000000000007,
+            "y": 0.0
+        },
+        {
+            "type": "atom",
+            "element": "H",
+            "index": 4,
+            "x": 0.0,
+            "y": 0.82500000000000007
+        },
+        {
+            "type": "atom",
+            "element": {
+                "symbol": "Na⁺",
+                "material": "gtceu:sodium"
+            },
+            "index": 5,
+            "x": -1.8527,
+            "y": 0.0
+        },
+        {
+            "type": "bond",
+            "a": 0,
+            "b": 1,
+            "lines": [
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 0,
+            "b": 4,
+            "lines": [
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 0,
+            "b": 3,
+            "lines": [
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 0,
+            "b": 2,
+            "lines": [
+                "solid"
+            ]
+        }
+    ]
 }

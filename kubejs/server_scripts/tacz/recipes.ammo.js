@@ -23,6 +23,13 @@ function registerTACZAmmoRecipes(event){
 		
 	//event.remove({ mod: 'applied_ammo_box' })
 	event.remove({ type: 'applied_ammo_box:shaped_nbt' })
+	
+	event.recipes.gtceu.assembler('tfg_tacz:wl_ammo_box')
+		.itemInputs('2x #gtceu:batteries/ev', 'ae2:wireless_terminal', '4x #forge:double_plates/ostrum',
+				'2x gtceu:ev_sensor', 'gtceu:ev_emitter', '2x #forge:rods/ultimet')
+		.itemOutputs('applied_ammo_box:ammo_box')
+		.EUt(GTValues.VA[GTValues.EV])
+		.duration(100)
 
 	//Extruder Casing
 	event.recipes.gtceu.extruder('tfg_tacz:small_casing')
