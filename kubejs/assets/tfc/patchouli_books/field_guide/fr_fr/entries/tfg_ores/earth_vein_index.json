@@ -131,7 +131,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 220$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 60$(br)$(thing)Size$(): 34$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
+      "text": "$(thing)Rarity$(): 170$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 20 — 120$(br)$(thing)Size$(): 34$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
       "title": "Apatite & Pyrochlore",
       "type": "patchouli:text",
       "anchor": "normal_apatite"
@@ -379,7 +379,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 72%$(br)$(thing)Melts into$(): Bismuth$(br)$(thing)Formula$(): Bi",
+      "text": "$(thing)Percentage$(): 70%$(br)$(thing)Melts into$(): Bismuth$(br)$(thing)Formula$(): Bi",
       "type": "patchouli:multiblock"
     },
     {
@@ -399,7 +399,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 10%$(br)$(thing)Smelts into$(): Lead$(br)$(thing)Formula$(): Pb$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
+      "text": "$(thing)Percentage$(): 11%$(br)$(thing)Smelts into$(): Lead$(br)$(thing)Formula$(): Pb$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -419,7 +419,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 9%$(br)$(thing)Melts into$(): Silver$(br)$(thing)Formula$(): Ag",
+      "text": "$(thing)Percentage$(): 10%$(br)$(thing)Melts into$(): Silver$(br)$(thing)Formula$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -439,7 +439,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 8%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
+      "text": "$(thing)Percentage$(): 9%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
       "type": "patchouli:multiblock"
     },
     {
@@ -471,7 +471,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 85%$(br)$(thing)Melts into$(): Bismuth$(br)$(thing)Formula$(): Bi",
+      "text": "$(thing)Percentage$(): 80%$(br)$(thing)Melts into$(): Bismuth$(br)$(thing)Formula$(): Bi",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Native Silver",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 10%$(br)$(thing)Melts into$(): Silver$(br)$(thing)Formula$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -492,26 +512,6 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Percentage$(): 7%$(br)$(thing)Smelts into$(): Lead$(br)$(thing)Formula$(): Pb$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Native Silver",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/silver"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 5%$(br)$(thing)Melts into$(): Silver$(br)$(thing)Formula$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -737,7 +737,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 225$(br)$(thing)Density$(): 0.3$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -64 — 30$(br)$(thing)Size$(): 20$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Dolomite, Limestone, Shale",
+      "text": "$(thing)Rarity$(): 225$(br)$(thing)Density$(): 0.3$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -64 — 30$(br)$(thing)Size$(): 20$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Dolomite, Limestone, Marble, Shale",
       "title": "Chromite & Magnetite",
       "type": "patchouli:text",
       "anchor": "deep_magnetite"
@@ -2919,7 +2919,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 180$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): -64 — 26$(br)$(thing)Size$(): 28$(br)$(thing)Height$(): 8$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite",
+      "text": "$(thing)Rarity$(): 180$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): -64 — 32$(br)$(thing)Size$(): 28$(br)$(thing)Height$(): 8$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Diorite, Rhyolite",
       "title": "Sapphire & Almandine",
       "type": "patchouli:text",
       "anchor": "deep_sapphire"

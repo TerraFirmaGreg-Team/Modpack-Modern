@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)晶质铀矿, 沥青铀矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_monazite)氟碳镧铈矿, 独居石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_oilsands)油砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)煤炭$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)白钨矿, 钨酸锂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)皂石, 滑石, 天然碱$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)盐, 硼砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)石榴石, 锡石矿砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gypsum)石膏, 方解石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)石英$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)石墨, 钻石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_basaltic_sands)矿砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)硅镁镍矿, 辉钴矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)硝石, 电石$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)晶质铀矿, 沥青铀矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_monazite)氟碳镧铈矿, 独居石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_oilsands)油砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)煤炭$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)白钨矿, 钨酸锂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)皂石, 滑石, 天然碱$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)盐, 硼砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)石榴石, 锡石矿砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gypsum)石膏, 方解石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)石英$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)石墨, 钻石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_basaltic_sands)矿砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)硅镁镍矿, 辉钴矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)硝石, 蓝石$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1011,7 +1011,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)稀有度$(): 210$(br)$(thing)密度$(): 0.3$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -32 — 60$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩, 花岗岩, 辉长岩, 闪长岩",
-      "title": "硝石, 电石",
+      "title": "硝石, 蓝石",
       "type": "patchouli:text",
       "anchor": "normal_saltpeter"
     },
@@ -1057,7 +1057,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "电石",
+      "name": "蓝石",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/electrotine"
@@ -1328,7 +1328,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 220$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -32 — 60$(br)$(thing)尺寸$(): 34$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩, 花岗岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 170$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 20 — 120$(br)$(thing)尺寸$(): 34$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩, 花岗岩, 辉长岩, 闪长岩",
       "title": "磷灰石, 烧绿石",
       "type": "patchouli:text",
       "anchor": "normal_apatite"
@@ -1713,7 +1713,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 180$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): -64 — 26$(br)$(thing)尺寸$(): 28$(br)$(thing)高度$(): 8$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 英安岩",
+      "text": "$(thing)稀有度$(): 180$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): -64 — 32$(br)$(thing)尺寸$(): 28$(br)$(thing)高度$(): 8$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 英安岩, 闪长岩",
       "title": "蓝宝石, 铁铝榴石",
       "type": "patchouli:text",
       "anchor": "deep_sapphire"
@@ -2302,7 +2302,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 85%$(br)$(thing)熔化$(): 铋$(br)$(thing)化学式$(): Bi",
+      "text": "$(thing)百分比$(): 80%$(br)$(thing)熔化$(): 铋$(br)$(thing)化学式$(): Bi",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "原生银",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 10%$(br)$(thing)熔化$(): 银$(br)$(thing)化学式$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -2323,26 +2343,6 @@
       },
       "enable_visualize": false,
       "text": "$(thing)百分比$(): 7%$(br)$(thing)熔化$(): 铅$(br)$(thing)化学式$(): Pb$(br)$(thing)危害$(): $(c)$(t:需要面罩)弱毒性 (吸入)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "原生银",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/silver"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 5%$(br)$(thing)熔化$(): 银$(br)$(thing)化学式$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -2394,7 +2394,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 72%$(br)$(thing)熔化$(): 铋$(br)$(thing)化学式$(): Bi",
+      "text": "$(thing)百分比$(): 70%$(br)$(thing)熔化$(): 铋$(br)$(thing)化学式$(): Bi",
       "type": "patchouli:multiblock"
     },
     {
@@ -2414,7 +2414,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 10%$(br)$(thing)熔化$(): 铅$(br)$(thing)化学式$(): Pb$(br)$(thing)危害$(): $(c)$(t:需要面罩)弱毒性 (吸入)$(/t)$()",
+      "text": "$(thing)百分比$(): 11%$(br)$(thing)熔化$(): 铅$(br)$(thing)化学式$(): Pb$(br)$(thing)危害$(): $(c)$(t:需要面罩)弱毒性 (吸入)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -2434,7 +2434,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 9%$(br)$(thing)熔化$(): 银$(br)$(thing)化学式$(): Ag",
+      "text": "$(thing)百分比$(): 10%$(br)$(thing)熔化$(): 银$(br)$(thing)化学式$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -2454,7 +2454,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 8%$(br)$(thing)来源$(): 硫$(br)$(thing)化学式$(): S",
+      "text": "$(thing)百分比$(): 9%$(br)$(thing)来源$(): 硫$(br)$(thing)化学式$(): S",
       "type": "patchouli:multiblock"
     },
     {
@@ -2899,7 +2899,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 225$(br)$(thing)密度$(): 0.3$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -64 — 30$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 燧石, 白云岩, 白垩岩, 石灰岩, 砾岩, 粘土岩, 页岩",
+      "text": "$(thing)稀有度$(): 225$(br)$(thing)密度$(): 0.3$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -64 — 30$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 大理岩, 燧石, 白云岩, 白垩岩, 石灰岩, 砾岩, 粘土岩, 页岩",
       "title": "铬铁矿, 磁铁矿",
       "type": "patchouli:text",
       "anchor": "deep_magnetite"

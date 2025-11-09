@@ -131,7 +131,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 220$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): -32 — 60$(br)$(thing)Размер$(): 34$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Кварцит, Мрамор, Филлит, Шиферный сланец",
+      "text": "$(thing)Редкость$(): 170$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 20 — 120$(br)$(thing)Размер$(): 34$(br)$(thing)Индикатор Max Depth$(): 60$(br2)$(thing)Виды камней$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Кварцит, Мрамор, Филлит, Шиферный сланец",
       "title": "Апатит и Пирохлор",
       "type": "patchouli:text",
       "anchor": "normal_apatite"
@@ -379,7 +379,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 72%$(br)$(thing)Плавится в$(): Висмут$(br)$(thing)Формула$(): Bi",
+      "text": "$(thing)Процент руды$(): 70%$(br)$(thing)Плавится в$(): Висмут$(br)$(thing)Формула$(): Bi",
       "type": "patchouli:multiblock"
     },
     {
@@ -399,7 +399,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): Pb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
+      "text": "$(thing)Процент руды$(): 11%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): Pb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -419,7 +419,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 9%$(br)$(thing)Плавится в$(): Серебро$(br)$(thing)Формула$(): Ag",
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Плавится в$(): Серебро$(br)$(thing)Формула$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -439,7 +439,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 8%$(br)$(thing)Хромит$(): Сера$(br)$(thing)Формула$(): S",
+      "text": "$(thing)Процент руды$(): 9%$(br)$(thing)Хромит$(): Сера$(br)$(thing)Формула$(): S",
       "type": "patchouli:multiblock"
     },
     {
@@ -471,7 +471,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 85%$(br)$(thing)Плавится в$(): Висмут$(br)$(thing)Формула$(): Bi",
+      "text": "$(thing)Процент руды$(): 80%$(br)$(thing)Плавится в$(): Висмут$(br)$(thing)Формула$(): Bi",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородная Серебро",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Плавится в$(): Серебро$(br)$(thing)Формула$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -492,26 +512,6 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Процент руды$(): 7%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): Pb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Самородная Серебро",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/silver"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Серебро$(br)$(thing)Формула$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -2524,7 +2524,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 180$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): -64 — 26$(br)$(thing)Размер$(): 28$(br)$(thing)Высота$(): 8$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит",
+      "text": "$(thing)Редкость$(): 180$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): -64 — 32$(br)$(thing)Размер$(): 28$(br)$(thing)Высота$(): 8$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Диорит, Риолит",
       "title": "Сапфир и Альмандин",
       "type": "patchouli:text",
       "anchor": "deep_sapphire"
@@ -3572,7 +3572,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 225$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): -64 — 30$(br)$(thing)Размер$(): 20$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
+      "text": "$(thing)Редкость$(): 225$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): -64 — 30$(br)$(thing)Размер$(): 20$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Мрамор, Сланец",
       "title": "Хромит и Магнетит",
       "type": "patchouli:text",
       "anchor": "deep_magnetite"

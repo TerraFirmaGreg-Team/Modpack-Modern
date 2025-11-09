@@ -131,7 +131,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 220$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -32 — 60$(br)$(thing)Tamanho$(): 34$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Ardósia, Diorito, Filito, Gabro, Gnaisse, Granito, Mármore, Quartzito, Xisto",
+      "text": "$(thing)Raridade$(): 170$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 20 — 120$(br)$(thing)Tamanho$(): 34$(br)$(thing)Profundidade Máxima do Indicador$(): 60$(br2)$(thing)Tipos de Pedra$(): Ardósia, Diorito, Filito, Gabro, Gnaisse, Granito, Mármore, Quartzito, Xisto",
       "title": "Apatita e Pirocloro",
       "type": "patchouli:text",
       "anchor": "normal_apatite"
@@ -498,7 +498,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 72%$(br)$(thing)Derrete em$(): Bismuto$(br)$(thing)Fórmula$(): Bi",
+      "text": "$(thing)Porcentagem$(): 70%$(br)$(thing)Derrete em$(): Bismuto$(br)$(thing)Fórmula$(): Bi",
       "type": "patchouli:multiblock"
     },
     {
@@ -518,7 +518,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Derrete em$(): Chumbo$(br)$(thing)Fórmula$(): Pb$(br)$(thing)Perigo$(): $(c)$(t:Requer Máscara Facial)Pouco Venenoso (Inalação)$(/t)$()",
+      "text": "$(thing)Porcentagem$(): 11%$(br)$(thing)Derrete em$(): Chumbo$(br)$(thing)Fórmula$(): Pb$(br)$(thing)Perigo$(): $(c)$(t:Requer Máscara Facial)Pouco Venenoso (Inalação)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -538,7 +538,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 9%$(br)$(thing)Derrete em$(): Prata$(br)$(thing)Fórmula$(): Ag",
+      "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Derrete em$(): Prata$(br)$(thing)Fórmula$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -558,7 +558,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 8%$(br)$(thing)Fonte de$(): Enxofre$(br)$(thing)Fórmula$(): S",
+      "text": "$(thing)Porcentagem$(): 9%$(br)$(thing)Fonte de$(): Enxofre$(br)$(thing)Fórmula$(): S",
       "type": "patchouli:multiblock"
     },
     {
@@ -590,7 +590,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 85%$(br)$(thing)Derrete em$(): Bismuto$(br)$(thing)Fórmula$(): Bi",
+      "text": "$(thing)Porcentagem$(): 80%$(br)$(thing)Derrete em$(): Bismuto$(br)$(thing)Fórmula$(): Bi",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Prata Nativa",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Derrete em$(): Prata$(br)$(thing)Fórmula$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -611,26 +631,6 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Porcentagem$(): 7%$(br)$(thing)Derrete em$(): Chumbo$(br)$(thing)Fórmula$(): Pb$(br)$(thing)Perigo$(): $(c)$(t:Requer Máscara Facial)Pouco Venenoso (Inalação)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Prata Nativa",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/silver"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Derrete em$(): Prata$(br)$(thing)Fórmula$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -1134,7 +1134,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 225$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -64 — 30$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Giz",
+      "text": "$(thing)Raridade$(): 225$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -64 — 30$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Giz, Mármore",
       "title": "Cromita e Magnetita",
       "type": "patchouli:text",
       "anchor": "deep_magnetite"
@@ -3202,7 +3202,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 180$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): -64 — 26$(br)$(thing)Tamanho$(): 28$(br)$(thing)Altura$(): 8$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito",
+      "text": "$(thing)Raridade$(): 180$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): -64 — 32$(br)$(thing)Tamanho$(): 28$(br)$(thing)Altura$(): 8$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Diorito, Riolito",
       "title": "Safira e Almandina",
       "type": "patchouli:text",
       "anchor": "deep_sapphire"

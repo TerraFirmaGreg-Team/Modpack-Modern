@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)下界石英$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_anthracite)无烟煤$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_pitchblende)晶质铀矿, 沥青铀矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_monazite)氟碳镧铈矿, 独居石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_scheelite)白钨矿, 钨酸锂$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)皂石, 滑石, 天然碱$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet_tin)石榴石, 锡石矿砂$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gypsum)石膏, 方解石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)石墨, 钻石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)矿砂$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)硅岩$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnierite)硅镁镍矿, 辉钴矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)硝石, 电石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)硫, 黄铁矿$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)下界石英$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_anthracite)无烟煤$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_pitchblende)晶质铀矿, 沥青铀矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_monazite)氟碳镧铈矿, 独居石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_scheelite)白钨矿, 钨酸锂$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)皂石, 滑石, 天然碱$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet_tin)石榴石, 锡石矿砂$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gypsum)石膏, 方解石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)石墨, 钻石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)矿砂$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)硅岩$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnierite)硅镁镍矿, 辉钴矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)硝石, 蓝石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)硫, 黄铁矿$()$()",
       "type": "patchouli:text"
     },
     {
@@ -909,7 +909,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)稀有度$(): 210$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 50$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
-      "title": "硝石, 电石",
+      "title": "硝石, 蓝石",
       "type": "patchouli:text",
       "anchor": "nether_saltpeter"
     },
@@ -955,7 +955,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "电石",
+      "name": "蓝石",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/electrotine"
