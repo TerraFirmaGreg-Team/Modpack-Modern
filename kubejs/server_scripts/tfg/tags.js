@@ -480,7 +480,7 @@ const registerTFGBlockTags = (event) => {
 	event.add('ae2:blacklisted/spatial', 'tfg:geyser_source_small')
 
 	//#region Fision Components
-    var COMPONENTS = 'deafission:components';
+    let COMPONENTS = 'deafission:components';
     
 	// Max Heating
     event.add(COMPONENTS, 'tfg:glacian_wool_frame'); // Max Heat 2
@@ -665,43 +665,21 @@ const registerTFGBlockTags = (event) => {
 //#region Fluids
 const registerTFGFluidTags = (event) => {
 
-	event.add('tfc:usable_in_pot', 'tfg:latex')
-	event.add('tfc:usable_in_barrel', 'tfg:latex')
-	event.add('tfc:usable_in_wooden_bucket', 'tfg:latex')
-	event.add('tfc:usable_in_red_steel_bucket', 'tfg:latex')
-	event.add('tfc:usable_in_blue_steel_bucket', 'tfg:latex')
-
-	event.add('tfc:usable_in_pot', 'tfg:vulcanized_latex')
-	event.add('tfc:usable_in_barrel', 'tfg:vulcanized_latex')
-	event.add('tfc:usable_in_wooden_bucket', 'tfg:vulcanized_latex')
-	event.add('tfc:usable_in_red_steel_bucket', 'tfg:vulcanized_latex')
-	event.add('tfc:usable_in_blue_steel_bucket', 'tfg:vulcanized_latex')
-
-	event.add('tfc:usable_in_pot', 'tfg:conifer_pitch')
-	event.add('tfc:usable_in_barrel', 'tfg:conifer_pitch')
-	event.add('tfc:usable_in_wooden_bucket', 'tfg:conifer_pitch')
-	event.add('tfc:usable_in_red_steel_bucket', 'tfg:conifer_pitch')
-	event.add('tfc:usable_in_blue_steel_bucket', 'tfg:conifer_pitch')
-
 	event.add('tfg:clean_water', 'minecraft:water')
 	event.add('tfg:clean_water', 'tfc:river_water')
 	event.add('tfg:clean_water', 'tfc:spring_water')
 
-	event.add('tfc:usable_in_barrel', 'gtceu:seed_oil')
-	
-	event.add('forge:liquid', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:any_water', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:hydrating', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:drinkables', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:any_drinkables', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:ingredients', 'tfg:semiheavy_ammoniacal_water')
-	event.add('tfc:usable_in_pot', 'tfg:semiheavy_ammoniacal_water')
-	event.add('tfc:usable_in_wooden_bucket', 'tfg:semiheavy_ammoniacal_water')
-	event.add('tfc:usable_in_barrel', 'tfg:semiheavy_ammoniacal_water')
-	event.add('firmalife:usable_in_mixing_bowl', 'tfg:semiheavy_ammoniacal_water')
 	event.add('firmalife:mixable', 'tfg:semiheavy_ammoniacal_water')
 	event.add('firmalife:usable_in_vat', 'tfg:semiheavy_ammoniacal_water')
 	event.add('minecraft:water', 'tfg:semiheavy_ammoniacal_water')
+
+	event.add('tfc:drinkables', 'tfg:proto_growth_medium')
+	event.add('tfc:any_drinkables', 'tfg:proto_growth_medium')
 
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
