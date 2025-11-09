@@ -135,5 +135,4 @@ function registerGTCEUFluidTags(event) {
     event.add("c:hidden_from_recipe_viewers", "gtceu:blaze");
     event.add("c:hidden_from_recipe_viewers", "gtceu:thorium");
 
-	event.add('firmalife:usable_in_mixing_bowl', 'gtceu:concrete')
 }

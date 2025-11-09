@@ -132,7 +132,7 @@ const registerTFGItems = (event) => {
 		'slowness',
 		'speed',
 		'water_breathing',
-		'weakness',
+		'weakness'
 	]
 	const pill_names = [
 		'Haste',
@@ -142,7 +142,7 @@ const registerTFGItems = (event) => {
 		'Slowness',
 		'Speed',
 		'Water Breathing',
-		'Weakness',
+		'Weakness'
 	]
 
 	pill.forEach((pill_array, index) => {
@@ -172,14 +172,14 @@ const registerTFGItems = (event) => {
 		'fire_resistance',
 		'invisibility',
 		'luck',
-		'resistance',
+		'resistance'
 	]
 	const salvo_names = [
 		'Absorption',
 		'Fire Resistance',
 		'Invisibility',
 		'Luck',
-		'Resistance',
+		'Resistance'
 	]
 
 	salvo.forEach((salvo_array, index) => {
@@ -473,7 +473,7 @@ const registerTFGItems = (event) => {
 
 	global.LAB_EQUIPMENT_CONTAINERS.forEach((item) => {
 		event.create(`tfg:${item.type}`, 'tfc:glass_bottle')
-			.fluidTagAccept('tfc:usable_in_blue_steel_bucket')
+			.fluidTagAccept('tfg:not_solid')
 			.capacity(item.capacity)
 			.translationKey(`item.tfg.lab_equipment.${item.type}`)
 			.tag('tfg:lab_equipment_containers')
