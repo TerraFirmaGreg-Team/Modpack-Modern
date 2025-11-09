@@ -16,8 +16,8 @@ function registerTFCDataForCreateAddition(event) {
 		food.hunger(4)
 		food.saturation(1)
 		food.decayModifier(2)
-		food.dairy(2)
-		food.grain(2)
+		food.dairy(0.4)
+		food.grain(0.4)
 	})
 
 	event.foodItem('tfc:cake', food => {
