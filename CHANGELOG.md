@@ -17,6 +17,7 @@
 - Barrel Staves (for Kegs) now just use bronze screws instead of wrought iron plates @Pyritie
 - Mars sandstorms are now sandier
 - Added GTMolDraw with custom TFG compat @BlueBoat29 (special thanks to Maddie for her help)
+- Saplings and fruit bushes can now enter the seed pouch. (#2202) @Redeix
 ### Bug fixes
 - Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
 - Fixed the HV aqueous accumulator water recipe so the amount of water can actually fit in the HV machine @Pyritie
