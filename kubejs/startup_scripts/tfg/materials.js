@@ -534,4 +534,10 @@ const registerTFGMaterials = (event) => {
 		.flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
 		.components('7x gallium', '2x tin', '1x zinc')
 		.color('0x34cfeb')
+		
+	event.create('tfg:nitrocellulose')
+		.dust()
+		.components('6x carbon', '7x hydrogen', '3x nitrogen', '11x oxygen')
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
+		.color(0xFFFFFF)
 }
