@@ -26,10 +26,11 @@ const registerTFGBiolineMaterials = (event) => {
 
 	event.create('tfg:lauryl_alcohol')
 		.liquid(new GTFluidBuilder().temperature(293))
-		.components('12x carbon', '26x hydrogen', '1x oxygen')
+		.components('12x carbon', '26x hydrogen', '1x oxygen', 'unknown')
 		.iconSet(GTMaterialIconSet.FINE)
 		.color(0x9C734E)
 		.secondaryColor(0xA12727)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	event.create('tfg:chlorosulfuric_acid')
 		.liquid(new GTFluidBuilder().temperature(293).attribute(GTFluidAttributes.ACID))
@@ -44,6 +45,7 @@ const registerTFGBiolineMaterials = (event) => {
 		.iconSet(GTMaterialIconSet.FINE)
 		.color(0xCA9851)
 		.secondaryColor(0xF0D5CE)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	event.create('tfg:sodium_hypochlorite')
 		.liquid(new GTFluidBuilder().temperature(293))
