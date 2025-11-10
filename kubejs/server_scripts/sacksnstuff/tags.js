@@ -24,6 +24,9 @@ function registerSNSItemTags(event) {
 	event.add('sns:allowed_in_ore_sack', '#tfc:metamorphic_rock')
 	event.add('sns:allowed_in_ore_sack', '#tfc:igneous_intrusive_rock')
 	event.add('sns:allowed_in_ore_sack', '#tfc:igneous_extrusive_rock')
+
+	event.add('sns:allowed_in_seed_pouch', '#minecraft:saplings')
+	event.add('sns:allowed_in_seed_pouch', '#tfc:wild_fruits')
 	
 	event.add('sns:prevented_in_item_containers', '#tfc:fired_vessels')
 	

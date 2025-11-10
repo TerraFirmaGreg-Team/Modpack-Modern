@@ -444,6 +444,23 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:mineral_rich_wool', 'tfg:wraptor_wool')
 	event.add('tfg:mineral_rich_wool', 'tfg:sniffer_wool')
 	//#endregion
+	
+	//#region holder materials
+	event.remove('forge:dusts', 'tfg:nitrocellulose')
+	event.remove('forge:dusts/nitrocellulose', 'tfg:nitrocellulose')
+	
+	event.remove('forge:dusts', 'tfg:cellulose_matrix')
+	event.remove('forge:dusts/cellulose_matrix', 'tfg:cellulose_matrix')
+	
+	event.remove('balm:ingots', 'tfg:polycaprolactam_fabric')
+	event.remove('tfc:pileable_ingots', 'tfg:polycaprolactam_fabric')
+	event.remove('forge:ingots', 'tfg:polycaprolactam_fabric')
+	event.remove('forge:ingots/tfg_polycaprolactam', 'tfg:polycaprolactam_fabric')
+	
+	event.remove('balm:nuggets', 'tfg:polycaprolactam_string')
+	event.remove('forge:nuggets', 'tfg:polycaprolactam_string')	
+	event.remove('forge:nuggets/tfg_polycaprolactam', 'tfg:polycaprolactam_string')
+
 }
 
 //#region Blocks
@@ -776,4 +793,5 @@ const registerTFGPlacedFeatures = (event) => {
 	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/magma_blob')
 
 	// #endregion
+	
 }
