@@ -8,8 +8,8 @@ const registerTFGBlocks = (event) => {
 	registerTFGAqueductBlocks(event)
 	registerTFGCrops(event)
 		
-	event.create('tfg:exhaust_vent_particle', 'tfg:active_particle_emitter')
-		.textureAll('tfg:block/titanium_concrete')
+	event.create('tfg:titanium_exhaust_vent', 'tfg:active_particle_emitter')
+		.textureAll('tfg:block/titanium_exhaust_vent')
 		.soundType('metal')
 		.hardness(5)
 		.resistance(6)
