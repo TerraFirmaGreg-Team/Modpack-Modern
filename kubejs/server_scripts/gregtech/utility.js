@@ -598,4 +598,61 @@ function sterilizeItem(event, input, output, multiplier, cleanroom) {
 		autoclave_recipe.cleanroom(cleanroom);
 	};
 };
+
+//#endregion
+//#region Cleanroom Tool
+
+/**
+ * Ensures recipes have a cleanroom recipe condition set to the specified type.
+ *
+ * * For each recipe:
+ * * * If `recipeConditions` is an array, finds an object with `type` === `cleanroom`.
+ * * * If found, updates its `cleanroom` property to the given `cleanroomType`.
+ * * * If not found, appends a new condition object `{ type: "cleanroom", cleanroom: cleanroomType }` to the array.
+ * * * If `recipeConditions` is absent or not an array, creates a new JSON array containing the cleanroom condition.
+ * 
+ * @throws This function will not work with other recipe conditions present besides `CleanroomType`.
+ *
+ * @param {event} event
+ * @param {string} recipeId - recipe ID.
+ * @param {'cleanroom'|'sterile_cleanroom'} cleanroomType - Cleanroom type to be assigned.
+ */
+function addCleanroom(event, recipeId, cleanroomType) {
+	event.findRecipes({ id: recipeId }).forEach(recipe => {
+		// Ensure recipe has a cleanroom condition matching the cleanroomType string.
+		// Replace existing cleanroom condition or add new one if absent.
+		const desiredCleanroom = cleanroomType;
+		const conditions = recipe.json.get("recipeConditions");
+		const JsonObject = Java.loadClass("com.google.gson.JsonObject");
+		const JsonArray = Java.loadClass("com.google.gson.JsonArray");
+		const JsonElementClass = Java.loadClass("com.google.gson.JsonElement");
+		const addJsonElement = (jsonArray, jsonElement) => {
+			jsonArray.getClass().getMethod("add", JsonElementClass).invoke(jsonArray, jsonElement);
+		};
+		let conditionArray;
+		if (conditions && conditions.isJsonArray && conditions.isJsonArray()) {
+			conditionArray = conditions.getAsJsonArray();
+		} else {
+			conditionArray = new JsonArray();
+			recipe.json.add("recipeConditions", conditionArray);
+		}
+
+		let hasCleanroom = false;
+		for (let i = 0; i < conditionArray.size(); i++) {
+			let element = conditionArray.get(i).getAsJsonObject();
+			if (element.has("type") && element.get("type").getAsString() === "cleanroom") {
+				element.addProperty("cleanroom", desiredCleanroom);
+				hasCleanroom = true;
+				break;
+			}
+		}
+		if (!hasCleanroom) {
+			let cond = new JsonObject();
+			cond.addProperty("type", "cleanroom");
+			cond.addProperty("cleanroom", desiredCleanroom);
+			addJsonElement(conditionArray, cond);
+		}
+	});
+};
+
 //#endregion
