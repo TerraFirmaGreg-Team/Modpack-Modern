@@ -110,11 +110,4 @@ const registerTFGBiolineMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	//#endregion
-	
-	//#region holder materials
-	event.create('tfg:cellulose_matrix')
-		.dust()
-		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
-		.color(0xFFFFFF)
-	//#endregion
 }

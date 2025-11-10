@@ -442,12 +442,21 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:mineral_rich_wool', 'tfg:sniffer_wool')
 	//#endregion
 	
-	//#region celluloses
+	//#region holder materials
 	event.remove('forge:dusts', 'tfg:nitrocellulose')
 	event.remove('forge:dusts/nitrocellulose', 'tfg:nitrocellulose')
 	
 	event.remove('forge:dusts', 'tfg:cellulose_matrix')
 	event.remove('forge:dusts/cellulose_matrix', 'tfg:cellulose_matrix')
+	
+	event.remove('balm:ingots', 'tfg:polycaprolactam_fabric')
+	event.remove('tfc:pileable_ingots', 'tfg:polycaprolactam_fabric')
+	event.remove('forge:ingots', 'tfg:polycaprolactam_fabric')
+	event.remove('forge:ingots/tfg_polycaprolactam', 'tfg:polycaprolactam_fabric')
+	
+	event.remove('balm:nuggets', 'tfg:polycaprolactam_string')
+	event.remove('forge:nuggets', 'tfg:polycaprolactam_string')	
+	event.remove('forge:nuggets/tfg_polycaprolactam', 'tfg:polycaprolactam_string')
 
 }
 
