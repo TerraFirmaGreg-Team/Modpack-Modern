@@ -14,11 +14,14 @@
 - The food oven and refrigerator now emit heat (for TFC ambiental) @Pyritie
 - Dioxygen Difluoride is now cryogenic and acidic @Pyritie
 - Added tfc torches and lamps to Not Enough Animations' config, so now you hold them properly @Coopmore
+- Barrel Staves (for Kegs) now just use bronze screws instead of wrought iron plates @Pyritie
+- Mars sandstorms are now sandier
 ### Bug fixes
 - Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
 - Fixed the HV aqueous accumulator water recipe so the amount of water can actually fit in the HV machine @Pyritie
 - Fixed not being able to make brown universal compost with a mortar if the item is both green and brown (#2091) @Pyritie
 - Fixed soup made in the food processor not returning bowls when eaten (#2053) @Pyritie
+- Fixed missing helve hammer recipe for silver plates (#2183) @Pyritie
 ### Translation updates
 - Russian @DI-GitH + @nineex
 - Brazilian Portuguese @Redeix

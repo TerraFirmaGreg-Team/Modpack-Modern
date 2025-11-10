@@ -159,6 +159,7 @@ function registerVintageImprovementsRecipes(event) {
 		{ material: GTMaterials.Gold, blows: STARTING_BLOWS },
 		{ material: GTMaterials.Bismuth, blows: STARTING_BLOWS },
 		{ material: GTMaterials.RoseGold, blows: STARTING_BLOWS },
+		{ material: GTMaterials.Silver, blows: STARTING_BLOWS },
 		{ material: GTMaterials.SterlingSilver, blows: STARTING_BLOWS },
 		{ material: GTMaterials.Tin, blows: STARTING_BLOWS },
 		{ material: GTMaterials.Lead, blows: STARTING_BLOWS }

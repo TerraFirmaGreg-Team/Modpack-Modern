@@ -50,7 +50,9 @@ const registerFirmaLifeRecipes = (event) => {
 
 	//#endregion
 
-	event.replaceInput({ id: 'firmalife:mixing_bowl' }, 'firmalife:treated_lumber', '#tfc:lumber')
+	event.shapeless('firmalife:barrel_stave', ['2x firmalife:treated_lumber', '#forge:screws/any_bronze', '#forge:tools/hammers'])
+		.id('firmalife:crafting/barrel_stave')
+
 
 	// Декрафт Jag Lid
 	event.recipes.tfc.heating('tfc:jar_lid', 230)

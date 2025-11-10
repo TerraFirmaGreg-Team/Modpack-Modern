@@ -13958,6 +13958,43 @@
             ]
         },
         {
+            "pakku_id": "jn9KICtb32TaMbxc",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "timeoutfixes"
+            },
+            "name": {
+                "curseforge": "TimeoutFixes"
+            },
+            "id": {
+                "curseforge": "558010"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "timeout_fixes-1.20.1-1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4844/272/timeout_fixes-1.20.1-1.0.0.jar",
+                    "id": "4844272",
+                    "parent_id": "558010",
+                    "hashes": {
+                        "sha1": "1748e7fecde151d20eb96d62eecd7579858bb793",
+                        "md5": "a23bcbf8d525155000e592ddbb15521e"
+                    },
+                    "required_dependencies": [],
+                    "size": 10209,
+                    "date_published": "2023-11-06T02:11:33.063Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "oLp78y55xvS4lBnk",
             "type": "MOD",
             "side": "SERVER",
