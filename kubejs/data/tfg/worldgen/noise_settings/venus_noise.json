@@ -396,10 +396,199 @@
 					"biome_is": [ "tfg:venus/sulfuric_ravine" ]
 				},
 				"then_run": {
-					"type": "minecraft:block",
-					"result_state": { "Name": "minecraft:light_blue_concrete" }
+					"type": "minecraft:condition",
+					"if_true": {
+						"type": "minecraft:above_preliminary_surface"
+					},
+					"then_run": {
+						"type": "minecraft:sequence",
+						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:vertical_gradient",
+									"random_name": "sulfuric_ravine_sea_level",
+									"true_at_and_below": {
+										"absolute": 57
+									},
+									"false_at_and_above": {
+										"absolute": 59
+									}
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "create:scoria" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:powder_snow",
+									"min_threshold": 0.1,
+									"max_threshold": 0.2
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 1,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sand/fluorapatite/brown" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 3,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
+											}
+										}
+									]
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:powder_snow",
+									"min_threshold": -0.1,
+									"max_threshold": 0.4
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 1,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sand/fluorapatite/orange" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 3,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/orange" }
+											}
+										}
+									]
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:powder_snow",
+									"min_threshold": -0.4,
+									"max_threshold": 0.7
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 1,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sand/fluorapatite/yellow" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 3,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/yellow" }
+											}
+										}
+									]
+								}
+							},
+							{
+								"type": "minecraft:sequence",
+								"sequence": [
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:stone_depth",
+											"offset": 1,
+											"surface_type": "floor",
+											"add_surface_depth": false,
+											"secondary_depth_range": 0
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfc:sand/black"
+											}
+										}
+									},
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:stone_depth",
+											"offset": 3,
+											"surface_type": "floor",
+											"add_surface_depth": false,
+											"secondary_depth_range": 0
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfc:raw_sandstone/black"
+											}
+										}
+									}
+								]
+							}
+						]
+					}
 				}
 			},
+
+
 			{
 				"type": "minecraft:condition",
 				"if_true": {
@@ -407,14 +596,214 @@
 					"biome_is": [ "tfg:venus/fumaroles" ]
 				},
 				"then_run": {
-					"type": "minecraft:block",
-					"result_state": { "Name": "minecraft:purple_concrete" }
+					"type": "minecraft:condition",
+					"if_true": {
+						"type": "minecraft:above_preliminary_surface"
+					},
+					"then_run": {
+						"type": "minecraft:sequence",
+						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:powder_snow",
+									"min_threshold": 0.1,
+									"max_threshold": 0.2
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 1,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sand/fluorapatite/brown" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 3,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
+											}
+										}
+									]
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:powder_snow",
+									"min_threshold": 0.2,
+									"max_threshold": 0.4
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 1,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "kubejs_tfc:rock",
+												"rock_block": "sand",
+												"fallback_state": {
+													"Name": "ad_astra:venus_sand"
+												}
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 3,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "kubejs_tfc:rock",
+												"rock_block": "sandstone",
+												"fallback_state": {
+													"Name": "ad_astra:venus_sandstone"
+												}
+											}
+										}
+									]
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:powder_snow",
+									"min_threshold": 0.3,
+									"max_threshold": 0.5
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 1,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sand/fluorapatite/white" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 3,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+											}
+										}
+									]
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:powder_snow",
+									"min_threshold": -1.0,
+									"max_threshold": -0.8
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 1,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "kubejs_tfc:rock",
+												"rock_block": "sand",
+												"fallback_state": {
+													"Name": "ad_astra:venus_sand"
+												}
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 3,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "kubejs_tfc:rock",
+												"rock_block": "sandstone",
+												"fallback_state": {
+													"Name": "ad_astra:venus_sandstone"
+												}
+											}
+										}
+									]
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 3,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "kubejs_tfc:rock",
+									"rock_block": "gravel",
+									"fallback_state": {
+										"Name": "tfg:rock/gravel_venus"
+									}
+								}
+							}
+						]
+					}
 				}
 			},
-
-
-
-
 			{
 				"type": "minecraft:condition",
 				"if_true": {
@@ -422,631 +811,619 @@
 					"biome_is": [ "tfg:venus/stromatolite_beach" ]
 				},
 				"then_run": {
-					"type": "minecraft:sequence",
-					"sequence": [
-						{
-							"type": "minecraft:condition",
-							"if_true": {
-								"type": "minecraft:y_above",
-								"anchor": { "absolute": 52 },
-								"surface_depth_multiplier": 0,
-								"add_stone_depth": false
+					"type": "minecraft:condition",
+					"if_true": {
+						"type": "minecraft:above_preliminary_surface"
+					},
+					"then_run": {
+						"type": "minecraft:sequence",
+						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:powder_snow",
+									"min_threshold": 0.1,
+									"max_threshold": 0.2
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 0,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sand/fluorapatite/green" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 1,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sand/fluorapatite/green" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 2,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 3,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 4,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 5,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 6,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 7,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 8,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 0,
+												"surface_type": "ceiling",
+												"add_surface_depth": true,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+											}
+										}
+									]
+								}
 							},
-							"then_run": {
-								"type": "minecraft:sequence",
-								"sequence": [
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:noise_threshold",
-											"noise": "minecraft:powder_snow",
-											"min_threshold": 0.1,
-											"max_threshold": 0.2
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:powder_snow",
+									"min_threshold": 0.2,
+									"max_threshold": 0.4
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 0,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sand/fluorapatite/white" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:sequence",
-											"sequence": [
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 0,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sand/fluorapatite/green" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 1,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sand/fluorapatite/green" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 2,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 3,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 4,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 5,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 6,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 7,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 8,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 0,
-														"surface_type": "ceiling",
-														"add_surface_depth": true,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-													}
-												}
-											]
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:noise_threshold",
-											"noise": "minecraft:powder_snow",
-											"min_threshold": 0.2,
-											"max_threshold": 0.4
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 1,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sand/fluorapatite/white" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:sequence",
-											"sequence": [
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 0,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sand/fluorapatite/white" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 1,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sand/fluorapatite/white" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 2,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 3,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 4,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 5,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 6,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 7,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 8,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 0,
-														"surface_type": "ceiling",
-														"add_surface_depth": true,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
-													}
-												}
-											]
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:noise_threshold",
-											"noise": "minecraft:powder_snow",
-											"min_threshold": 0.3,
-											"max_threshold": 0.5
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 2,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:sequence",
-											"sequence": [
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 0,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sand/fluorapatite/blue" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 1,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sand/fluorapatite/blue" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 2,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 3,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 4,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 5,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 6,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 7,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 8,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 0,
-														"surface_type": "ceiling",
-														"add_surface_depth": true,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-													}
-												}
-											]
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 0,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 3,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sand/fluorapatite/brown" }
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 1,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 4,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sand/fluorapatite/brown" }
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 2,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 5,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 3,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 6,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 4,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 7,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 5,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 8,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 0,
+												"surface_type": "ceiling",
+												"add_surface_depth": true,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+											}
 										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 6,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+									]
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:powder_snow",
+									"min_threshold": 0.3,
+									"max_threshold": 0.5
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 0,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sand/fluorapatite/blue" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 7,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 1,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sand/fluorapatite/blue" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 8,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 2,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 0,
-											"surface_type": "ceiling",
-											"add_surface_depth": true,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 3,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 4,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 5,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 6,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 7,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 8,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 0,
+												"surface_type": "ceiling",
+												"add_surface_depth": true,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+											}
 										}
-									}
-								]
+									]
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sand/fluorapatite/brown" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 1,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sand/fluorapatite/brown" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 2,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 3,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 4,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 5,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 6,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 7,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 8,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "ceiling",
+									"add_surface_depth": true,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
+								}
 							}
-						}
-					]
+						]
+					}
 				}
 			},
-
-
-
-
 			{
 				"type": "minecraft:condition",
 				"if_true": {
@@ -1054,625 +1431,603 @@
 					"biome_is": [ "tfg:venus/fractured_pools" ]
 				},
 				"then_run": {
-					"type": "minecraft:sequence",
-					"sequence": [
-						{
-							"type": "minecraft:condition",
-							"if_true": {
-								"type": "minecraft:y_above",
-								"anchor": { "absolute": 52 },
-								"surface_depth_multiplier": 0,
-								"add_stone_depth": false
+					"type": "minecraft:condition",
+					"if_true": {
+						"type": "minecraft:above_preliminary_surface"
+					},
+					"then_run": {
+						"type": "minecraft:sequence",
+						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:powder_snow",
+									"min_threshold": 0.1,
+									"max_threshold": 0.2
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 0,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sand/fluorapatite/green" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 1,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sand/fluorapatite/green" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 2,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 3,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "minecraft:tuff" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 4,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 5,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 6,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "minecraft:tuff" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 7,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 8,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 0,
+												"surface_type": "ceiling",
+												"add_surface_depth": true,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+											}
+										}
+									]
+								}
 							},
-							"then_run": {
-								"type": "minecraft:sequence",
-								"sequence": [
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:noise_threshold",
-											"noise": "minecraft:powder_snow",
-											"min_threshold": 0.1,
-											"max_threshold": 0.2
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:powder_snow",
+									"min_threshold": 0.2,
+									"max_threshold": 0.4
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 1,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/brown" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:sequence",
-											"sequence": [
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 0,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sand/fluorapatite/green" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 1,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sand/fluorapatite/green" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 2,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 3,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "minecraft:tuff" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 4,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 5,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 6,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "minecraft:tuff" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 7,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 8,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 0,
-														"surface_type": "ceiling",
-														"add_surface_depth": true,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-													}
-												}
-											]
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:noise_threshold",
-											"noise": "minecraft:powder_snow",
-											"min_threshold": 0.2,
-											"max_threshold": 0.4
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 2,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "minecraft:tuff" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:sequence",
-											"sequence": [
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 0,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "create:scoria" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 1,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "create:scoria" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 2,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "minecraft:tuff" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 3,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 4,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 5,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "minecraft:tuff" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 6,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 7,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 8,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 0,
-														"surface_type": "ceiling",
-														"add_surface_depth": true,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "minecraft:tuff" }
-													}
-												}
-											]
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:noise_threshold",
-											"noise": "minecraft:powder_snow",
-											"min_threshold": 0.3,
-											"max_threshold": 0.5
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 3,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:sequence",
-											"sequence": [
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 0,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sand/fluorapatite/blue" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 1,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sand/fluorapatite/blue" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 2,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 3,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 4,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 5,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 6,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 7,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 8,
-														"surface_type": "floor",
-														"add_surface_depth": false,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "minecraft:tuff" }
-													}
-												},
-												{
-													"type": "minecraft:condition",
-													"if_true": {
-														"type": "minecraft:stone_depth",
-														"offset": 0,
-														"surface_type": "ceiling",
-														"add_surface_depth": true,
-														"secondary_depth_range": 0
-													},
-													"then_run": {
-														"type": "minecraft:block",
-														"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-													}
-												}
-											]
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 0,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 4,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sand/fluorapatite/white" }
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 1,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 5,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "minecraft:tuff" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sand/fluorapatite/white" }
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 2,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 6,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 3,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 7,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 4,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 8,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "minecraft:tuff" }
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 0,
+												"surface_type": "ceiling",
+												"add_surface_depth": true,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "minecraft:tuff" }
+											}
 										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 5,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+									]
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:powder_snow",
+									"min_threshold": 0.3,
+									"max_threshold": 0.5
+								},
+								"then_run": {
+									"type": "minecraft:sequence",
+									"sequence": [
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 0,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sand/fluorapatite/blue" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 6,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 1,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sand/fluorapatite/blue" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 7,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 2,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 8,
-											"surface_type": "floor",
-											"add_surface_depth": false,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 3,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
-										}
-									},
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "minecraft:stone_depth",
-											"offset": 0,
-											"surface_type": "ceiling",
-											"add_surface_depth": true,
-											"secondary_depth_range": 0
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 4,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+											}
 										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 5,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 6,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 7,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 8,
+												"surface_type": "floor",
+												"add_surface_depth": false,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "minecraft:tuff" }
+											}
+										},
+										{
+											"type": "minecraft:condition",
+											"if_true": {
+												"type": "minecraft:stone_depth",
+												"offset": 0,
+												"surface_type": "ceiling",
+												"add_surface_depth": true,
+												"secondary_depth_range": 0
+											},
+											"then_run": {
+												"type": "minecraft:block",
+												"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+											}
 										}
-									}
-								]
+									]
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sand/fluorapatite/white" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 1,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sand/fluorapatite/white" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 2,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 3,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 4,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "minecraft:tuff" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 5,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 6,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/blue" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 7,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 8,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/green" }
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "ceiling",
+									"add_surface_depth": true,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": { "Name": "tfg:sandstone/raw/fluorapatite/white" }
+								}
 							}
-						}
-					]
+						]
+					}
 				}
 			},
 
@@ -1680,11 +2035,7 @@
 			{
 				"type": "minecraft:condition",
 				"if_true": {
-					"type": "minecraft:stone_depth",
-					"offset": 12,
-					"surface_type": "floor",
-					"add_surface_depth": true,
-					"secondary_depth_range": 0
+					"type": "minecraft:above_preliminary_surface"
 				},
 				"then_run": {
 					"type": "kubejs_tfc:rock",
