@@ -15,6 +15,8 @@
 - Dioxygen Difluoride is now cryogenic and acidic @Pyritie
 - Added tfc torches and lamps to Not Enough Animations' config, so now you hold them properly @Coopmore
 - Barrel Staves (for Kegs) now just use bronze screws instead of wrought iron plates @Pyritie
+- Added GTMolDraw with custom TFG compat @BlueBoat29 (special thanks to Maddie for her help)
+- Saplings and fruit bushes can now enter the seed pouch. (#2202) @Redeix
 - Mars sandstorms are now sandier @Pyritie
 - Added an alternative recipe for item frames using cloth @Pyritie
 ### Bug fixes

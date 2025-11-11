@@ -534,4 +534,23 @@ const registerTFGMaterials = (event) => {
 		.flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
 		.components('7x gallium', '2x tin', '1x zinc')
 		.color('0x34cfeb')
+	
+	// #region holder materials
+	//     These allow us to give material components to non-material items
+	//	   Requires .setIgnored to be called in core
+	event.create('tfg:nitrocellulose')
+		.dust()
+		.components('6x carbon', '7x hydrogen', '3x nitrogen', '11x oxygen')
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
+		.color(0xFFFFFF)
+	event.create('tfg:cellulose_matrix')
+		.dust()
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
+		.color(0xFFFFFF)
+	event.create('tfg:tfg_polycaprolactam')
+		.ingot()
+		.components('6x carbon', '11x hydrogen', '1x nitrogen', '1x oxygen')
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES, GTMaterialFlags.EXPLOSIVE)
+		.macerateInto('gtceu:polycaprolactam')
+		.color(0x000000)
 }
