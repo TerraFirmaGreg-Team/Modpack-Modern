@@ -59,7 +59,7 @@ function registerImmersiveAircraftRecipes(event) {
 			//It should also set itself to annealed copper if the input is regular copper
 			//Ideally we should make sure the specified material has a specific TagPrefix before pushing it into the array, cant get it to work tho. I think the method TagPrefix.doGenerateItem() is ideal for this
 			*/
-				
+
 			outputsArcFurnace.push(ChemicalHelper.get(result.tagPrefixArcFurnace, arcFurnaceMaterial, result.count));
 			outputsMacerator.push(ChemicalHelper.get(result.tagPrefixMacerator, material, result.count));
 			duration += material.getMass() * result.count;
@@ -82,7 +82,7 @@ function registerImmersiveAircraftRecipes(event) {
 	 * @returns {tagPrefixMacerator: TagPrefix, tagPrefixArcFurnace: TagPrefix, count: number}
 	 */
 	let createMaterialsToResults = (tagPrefixMacerator, tagPrefixArcFurnace, count) => {
-		let result = 
+		let result =
 		{
 			tagPrefixMacerator: tagPrefixMacerator,
 			tagPrefixArcFurnace: tagPrefixArcFurnace,
@@ -92,23 +92,23 @@ function registerImmersiveAircraftRecipes(event) {
 	}
 	//#endregion
 
-	event.remove({mod: 'man_of_many_planes'});
-	event.remove({mod: 'immersive_aircraft'});
-	
-	event.shaped('immersive_aircraft:hull',[
+	event.remove({ mod: 'man_of_many_planes' });
+	event.remove({ mod: 'immersive_aircraft' });
+
+	event.shaped('immersive_aircraft:hull', [
 		'AAA',
 		'BCB',
 		'AAA'
-	],{
+	], {
 		A: '#minecraft:planks',
 		B: 'gtceu:wrought_iron_plate',
 		C: 'tfc:glue',
 	}).id('tfg:immersive_aircraft/shaped/hull');
 
-	event.shaped('immersive_aircraft:engine',[
+	event.shaped('immersive_aircraft:engine', [
 		'ABC',
 		'DED'
-	],{
+	], {
 		A: '#forge:tools/hammers',
 		B: 'gtceu:tin_alloy_small_fluid_pipe',
 		C: '#forge:tools/wrenches',
@@ -116,39 +116,39 @@ function registerImmersiveAircraftRecipes(event) {
 		E: 'create:andesite_casing'
 	}).id('tfg:immersive_aircraft/shaped/engine');
 
-	event.shaped('immersive_aircraft:sail',[
+	event.shaped('immersive_aircraft:sail', [
 		'ABA',
 		'BCB',
 		'ABA'
-	],{
+	], {
 		A: 'gtceu:wrought_iron_screw',
 		B: '#forge:cloth',
 		C: '#minecraft:trapdoors'
 	}).id('tfg:immersive_aircraft/shaped/sail');
 
-	event.shaped('immersive_aircraft:rotary_cannon',[
+	event.shaped('immersive_aircraft:rotary_cannon', [
 		'ABA',
 		'ACA',
 		' D '
-	],{
+	], {
 		A: 'create:copper_sheet',
 		B: 'minecraft:dispenser',
 		C: 'gtceu:wrought_iron_gear',
 		D: 'tfc:powderkeg'
 	}).id('tfg:immersive_aircraft/shaped/rotary_cannon');
 
-	event.shaped('immersive_aircraft:heavy_crossbow',[
+	event.shaped('immersive_aircraft:heavy_crossbow', [
 		'ABA',
 		'CDC',
 		' A '
-	],{
+	], {
 		A: '#minecraft:logs',
 		B: 'gtceu:long_steel_rod',
 		C: '#tfg:metal_chains',
 		D: 'minecraft:crossbow'
 	}).id('tfg:immersive_aircraft/shaped/heavy_crossbow');
 
-	event.shaped('immersive_aircraft:telescope',[
+	event.shaped('immersive_aircraft:telescope', [
 		'ABC',
 		' D ',
 		' E '
@@ -160,11 +160,11 @@ function registerImmersiveAircraftRecipes(event) {
 		E: 'gtceu:wrought_iron_plate'
 	}).id('tfg:immersive_aircraft/shaped/telescope');
 
-	event.shaped('immersive_aircraft:bomb_bay',[
+	event.shaped('immersive_aircraft:bomb_bay', [
 		'AAA',
 		'ABA',
 		'ACA'
-	],{
+	], {
 		A: 'gtceu:steel_plate',
 		B: 'tfc:powderkeg',
 		C: 'minecraft:dispenser'
@@ -172,21 +172,21 @@ function registerImmersiveAircraftRecipes(event) {
 
 	//#region Airplane Upgrades
 
-	event.shaped('immersive_aircraft:industrial_gears',[
+	event.shaped('immersive_aircraft:industrial_gears', [
 		'ABA',
 		'CAB',
 		'ACA'
-	],{
+	], {
 		A: 'gtceu:small_brass_gear',
 		B: 'gtceu:double_wrought_iron_plate',
 		C: 'gtceu:double_copper_plate'
 	}).id('tfg:immersive_aircraft/shaped/industrial_gears');
 
-	event.shaped('immersive_aircraft:sturdy_pipes',[
+	event.shaped('immersive_aircraft:sturdy_pipes', [
 		'EDA',
 		'BAC',
 		'AD '
-	],{
+	], {
 		A: '#forge:small_fluid_pipes',
 		B: 'gtceu:blue_steel_plate',
 		C: 'gtceu:red_steel_plate',
@@ -194,39 +194,67 @@ function registerImmersiveAircraftRecipes(event) {
 		E: '#forge:tools/screwdrivers',
 	}).id('tfg:immersive_aircraft/shaped/sturdy_pipes')
 
-	event.shaped('immersive_aircraft:gyroscope',[
+	event.shaped('immersive_aircraft:gyroscope', [
 		'ABC',
 		'DED',
 		'FDG'
-	],{
+	], {
 		A: '#forge:tools/wrenches',
-		B: 'minecraft:comparator',
+		B: 'create:precision_mechanism',
 		C: '#forge:gems/quartzite',
 		D: 'gtceu:small_brass_gear',
 		E: 'firmaciv:firmaciv_compass',
-		F: 'gtceu:aluminium_screw',
+		F: '#forge:screws/blue_steel',
 		G: '#forge:tools/screwdrivers'
 	}).id('tfg:immersive_aircraft/shaped/gyroscope')
 
-	event.shaped('tfg:black_steel_plated_airplane_propeller',[
+	event.shaped('immersive_aircraft:gyroscope_dials', [
+		'ABC',
+		'DED',
+		'FDG'
+	], {
+		A: '#forge:tools/wrenches',
+		B: '#gtceu:circuits/lv',
+		C: 'gtceu:lv_sensor',
+		D: 'gtceu:small_aluminium_gear',
+		E: 'immersive_aircraft:gyroscope',
+		F: '#forge:screws/vanadium_steel',
+		G: '#forge:tools/screwdrivers'
+	}).id('tfg:immersive_aircraft/shaped/gyroscope_dials')
+
+	event.shaped('immersive_aircraft:gyroscope_hud', [
+		'ABC',
+		'DED',
+		'FDG'
+	], {
+		A: '#forge:tools/wrenches',
+		B: 'gtceu:computer_monitor_cover',
+		C: 'gtceu:mv_sensor',
+		D: '#gtceu:circuits/mv',
+		E: 'immersive_aircraft:gyroscope_dials',
+		F: '#forge:screws/stainless_steel',
+		G: '#forge:tools/screwdrivers'
+	}).id('tfg:immersive_aircraft/shaped/gyroscope_hud')
+
+	event.shaped('tfg:black_steel_plated_airplane_propeller', [
 		'CA ',
 		'ABA',
 		' AD'
-	],{
+	], {
 		A: 'gtceu:black_steel_plate',
 		B: '#forge:rotors',
 		C: '#forge:tools/hammers',
 		D: '#forge:tools/wrenches'
 	}).id('tfg:shaped/black_steel_plated_airplane_propeller');
 
-	generateRecyclingRecipe('tfg:recycling/black_steel_plated_airplane_propeller', 
+	generateRecyclingRecipe('tfg:recycling/black_steel_plated_airplane_propeller',
 		createRecyclingRecipeArgs('tfg:black_steel_plated_airplane_propeller', [GTMaterials.BlackSteel], [createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 3)]))
-	
-	event.shaped('tfg:redblu_steel_plated_airplane_propeller',[
+
+	event.shaped('tfg:redblu_steel_plated_airplane_propeller', [
 		'ABC',
 		'DED',
 		'CBF'
-	],{
+	], {
 		A: '#forge:tools/hammers',
 		B: 'gtceu:red_steel_plate',
 		C: 'gtceu:red_alloy_dust',
@@ -236,64 +264,64 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:shaped/redblu_steel_plated_airplane_propeller');
 
 	generateRecyclingRecipe('tfg:recycling/redblu_steel_plated_airplane_propeller',
-		createRecyclingRecipeArgs('tfg:redblu_steel_plated_airplane_propeller',[
+		createRecyclingRecipeArgs('tfg:redblu_steel_plated_airplane_propeller', [
 			GTMaterials.RedSteel,
 			GTMaterials.BlueSteel,
 			GTMaterials.RedAlloy
-		],[
+		], [
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 1),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 1),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 1)
 		])
 	);
 
-	event.shaped('immersive_aircraft:enhanced_propeller',[
+	event.shaped('immersive_aircraft:enhanced_propeller', [
 		'CA ',
 		'ABA',
 		' AD'
-	],{
+	], {
 		A: 'vintageimprovements:aluminum_sheet',
 		B: '#forge:rotors',
 		C: '#forge:tools/hammers',
 		D: '#forge:tools/wrenches'
 	}).id('tfg:immersive_aircraft/shaped/enhanced_propeller');
 
-	generateRecyclingRecipe('immersive_aircraft:recycling/enhanced_propeller', 
+	generateRecyclingRecipe('immersive_aircraft:recycling/enhanced_propeller',
 		createRecyclingRecipeArgs('immersive_aircraft:enhanced_propeller', [GTMaterials.Aluminium], [createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 3)]))
 
-	event.shaped('tfg:stainless_steel_plated_airplane_propeller',[
+	event.shaped('tfg:stainless_steel_plated_airplane_propeller', [
 		'CA ',
 		'ABA',
 		' AD'
-	],{
+	], {
 		A: 'gtceu:stainless_steel_plate',
 		B: '#forge:rotors',
 		C: '#forge:tools/hammers',
 		D: '#forge:tools/wrenches'
 	}).id('tfg:shaped/stainless_steel_plated_airplane_propeller');
 
-	generateRecyclingRecipe('tfg:recycling/stainless_steel_plated_airplane_propeller', 
+	generateRecyclingRecipe('tfg:recycling/stainless_steel_plated_airplane_propeller',
 		createRecyclingRecipeArgs('tfg:stainless_steel_plated_airplane_propeller', [GTMaterials.StainlessSteel], [createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 3)]))
 
-	event.shaped('tfg:titanium_plated_airplane_propeller',[
+	event.shaped('tfg:titanium_plated_airplane_propeller', [
 		'CA ',
 		'ABA',
 		' AD'
-	],{
+	], {
 		A: 'gtceu:titanium_plate',
 		B: '#forge:rotors',
 		C: '#forge:tools/hammers',
 		D: '#forge:tools/wrenches'
 	}).id('tfg:shaped/titanium_plated_airplane_propeller');
 
-	generateRecyclingRecipe('tfg:recycling/titanium_plated_airplane_propeller', 
+	generateRecyclingRecipe('tfg:recycling/titanium_plated_airplane_propeller',
 		createRecyclingRecipeArgs('tfg:titanium_plated_airplane_propeller', [GTMaterials.Titanium], [createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 3)]))
 
-	event.shaped('immersive_aircraft:eco_engine',[
+	event.shaped('immersive_aircraft:eco_engine', [
 		'ABC',
 		'BDB',
 		'EEE'
-	],{
+	], {
 		A: '#forge:tools/hammers',
 		B: 'gtceu:double_rose_gold_plate',
 		C: '#forge:tools/screwdrivers',
@@ -301,11 +329,11 @@ function registerImmersiveAircraftRecipes(event) {
 		E: 'gtceu:double_sterling_silver_plate'
 	}).id('tfg:immersive_aircraft/shaped/eco_engine');
 
-	event.shaped('immersive_aircraft:steel_boiler',[
+	event.shaped('immersive_aircraft:steel_boiler', [
 		'ABA',
 		'ACA',
 		'DAD'
-	],{
+	], {
 		A: 'gtceu:steel_plate',
 		B: 'gtceu:black_steel_rod',
 		C: 'immersive_aircraft:engine',
@@ -313,12 +341,12 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:immersive_aircraft/shaped/steel_boiler');
 
 	generateRecyclingRecipe('immersive_aircraft:recycling/steel_boiler',
-		createRecyclingRecipeArgs('immersive_aircraft:steel_boiler',[
+		createRecyclingRecipeArgs('immersive_aircraft:steel_boiler', [
 			GTMaterials.Steel,
 			GTMaterials.TinAlloy,
 			GTMaterials.WroughtIron,
 			GTMaterials.BlackSteel
-		],[
+		], [
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 3),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 3),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 1),
@@ -326,11 +354,11 @@ function registerImmersiveAircraftRecipes(event) {
 		])
 	)
 
-	event.shaped('tfg:lv_aircraft_engine',[
+	event.shaped('tfg:lv_aircraft_engine', [
 		'ABC',
 		'DED',
 		'FGF'
-	],{
+	], {
 		A: 'gtceu:red_steel_plate',
 		B: 'gtceu:black_steel_plate',
 		C: 'gtceu:blue_steel_plate',
@@ -351,7 +379,7 @@ function registerImmersiveAircraftRecipes(event) {
 			GTMaterials.BlackSteel,
 			GTMaterials.RedAlloy,
 			GTMaterials.TinAlloy
-		],[
+		], [
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 10),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 7),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 4),
@@ -364,11 +392,11 @@ function registerImmersiveAircraftRecipes(event) {
 		])
 	)
 
-	event.shaped('immersive_aircraft:nether_engine',[
+	event.shaped('immersive_aircraft:nether_engine', [
 		'AAA',
 		'BCB',
 		'DED'
-	],{
+	], {
 		A: 'vintageimprovements:aluminum_sheet',
 		B: 'gtceu:mv_electric_piston',
 		C: 'immersive_aircraft:engine',
@@ -377,7 +405,7 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:immersive_aircraft/shaped/nether_engine')
 
 	generateRecyclingRecipe('immersive_aircraft:recycling/nether_engine',
-		createRecyclingRecipeArgs('immersive_aircraft:nether_engine',[
+		createRecyclingRecipeArgs('immersive_aircraft:nether_engine', [
 			GTMaterials.Aluminium,
 			GTMaterials.Cupronickel,
 			GTMaterials.AnnealedCopper,
@@ -385,7 +413,7 @@ function registerImmersiveAircraftRecipes(event) {
 			GTMaterials.Bronze,
 			GTMaterials.TinAlloy,
 			GTMaterials.WroughtIron
-		],[
+		], [
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 12),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 9),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 3),
@@ -396,11 +424,11 @@ function registerImmersiveAircraftRecipes(event) {
 		])
 	)
 
-	event.shaped('tfg:hv_aircraft_engine',[
+	event.shaped('tfg:hv_aircraft_engine', [
 		'AAA',
 		'BCB',
 		'DED'
-	],{
+	], {
 		A: 'gtceu:stainless_steel_plate',
 		B: 'gtceu:hv_electric_piston',
 		C: 'immersive_aircraft:engine',
@@ -409,7 +437,7 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:shaped/hv_aircraft_engine')
 
 	generateRecyclingRecipe('tfg:recycling/hv_aircraft_engine',
-		createRecyclingRecipeArgs('tfg:hv_aircraft_engine',[
+		createRecyclingRecipeArgs('tfg:hv_aircraft_engine', [
 			GTMaterials.StainlessSteel,
 			GTMaterials.Electrum,
 			GTMaterials.Silver,
@@ -428,11 +456,11 @@ function registerImmersiveAircraftRecipes(event) {
 		])
 	)
 
-	event.shaped('tfg:ev_aircraft_engine',[
+	event.shaped('tfg:ev_aircraft_engine', [
 		'AAA',
 		'BCB',
 		'DED'
-	],{
+	], {
 		A: 'gtceu:titanium_plate',
 		B: 'gtceu:ev_electric_piston',
 		C: 'immersive_aircraft:engine',
@@ -441,7 +469,7 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:shaped/ev_aircraft_engine')
 
 	generateRecyclingRecipe('tfg:recycling/ev_aircraft_engine',
-		createRecyclingRecipeArgs('tfg:ev_aircraft_engine',[
+		createRecyclingRecipeArgs('tfg:ev_aircraft_engine', [
 			GTMaterials.Titanium,
 			GTMaterials.Aluminium,
 			GTMaterials.Kanthal,
@@ -449,7 +477,7 @@ function registerImmersiveAircraftRecipes(event) {
 			GTMaterials.Neodymium,
 			GTMaterials.TinAlloy,
 			GTMaterials.WroughtIron
-		],[
+		], [
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 14),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 9),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 9),
@@ -460,11 +488,11 @@ function registerImmersiveAircraftRecipes(event) {
 		])
 	);
 
-	event.shaped('immersive_aircraft:hull_reinforcement',[
+	event.shaped('immersive_aircraft:hull_reinforcement', [
 		'AB ',
 		'BCB',
 		' BD'
-	],{
+	], {
 		A: '#forge:tools/hammers',
 		B: 'gtceu:black_steel_plate',
 		C: 'immersive_aircraft:hull',
@@ -472,7 +500,7 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:immersive_aircraft/shaped/hull_reinforcement');
 
 	generateRecyclingRecipe('immersive_aircraft:recycling/hull_reinforcement',
-		createRecyclingRecipeArgs('immersive_aircraft:hull_reinforcement',[
+		createRecyclingRecipeArgs('immersive_aircraft:hull_reinforcement', [
 			GTMaterials.BlackSteel,
 			GTMaterials.WroughtIron
 		], [
@@ -481,11 +509,11 @@ function registerImmersiveAircraftRecipes(event) {
 		])
 	)
 
-	event.shaped('tfg:redblu_steel_hull_reinforcement',[
+	event.shaped('tfg:redblu_steel_hull_reinforcement', [
 		'ABF',
 		'ECE',
 		'FBD'
-	],{
+	], {
 		A: '#forge:tools/hammers',
 		B: 'gtceu:red_steel_plate',
 		C: 'immersive_aircraft:hull',
@@ -495,12 +523,12 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:shaped/redblu_steel_hull_reinforcement');
 
 	generateRecyclingRecipe('tfg:recycling/redblu_steel_hull_reinforcement',
-		createRecyclingRecipeArgs('tfg:redblu_steel_hull_reinforcement',[
+		createRecyclingRecipeArgs('tfg:redblu_steel_hull_reinforcement', [
 			GTMaterials.BlueSteel,
 			GTMaterials.RedSteel,
 			GTMaterials.RedAlloy,
 			GTMaterials.WroughtIron
-		],[
+		], [
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 1),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 1),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 1),
@@ -508,11 +536,11 @@ function registerImmersiveAircraftRecipes(event) {
 		])
 	);
 
-	event.shaped('tfg:aluminium_hull_reinforcement',[
+	event.shaped('tfg:aluminium_hull_reinforcement', [
 		'AB ',
 		'BCB',
 		' BD'
-	],{
+	], {
 		A: '#forge:tools/hammers',
 		B: 'vintageimprovements:aluminum_sheet',
 		C: 'immersive_aircraft:hull',
@@ -520,7 +548,7 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:shaped/aluminium_hull_reinforcement');
 
 	generateRecyclingRecipe('tfg:recycling/aluminium_hull_reinforcement',
-		createRecyclingRecipeArgs('tfg:aluminium_hull_reinforcement',[
+		createRecyclingRecipeArgs('tfg:aluminium_hull_reinforcement', [
 			GTMaterials.Aluminium,
 			GTMaterials.WroughtIron
 		], [
@@ -529,11 +557,11 @@ function registerImmersiveAircraftRecipes(event) {
 		])
 	)
 
-	event.shaped('tfg:stainless_steel_hull_reinforcement',[
+	event.shaped('tfg:stainless_steel_hull_reinforcement', [
 		'AB ',
 		'BCB',
 		' BD'
-	],{
+	], {
 		A: '#forge:tools/hammers',
 		B: 'gtceu:stainless_steel_plate',
 		C: 'immersive_aircraft:hull',
@@ -541,7 +569,7 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:shaped/stainless_steel_hull_reinforcement');
 
 	generateRecyclingRecipe('tfg:recycling/stainless_steel_hull_reinforcement',
-		createRecyclingRecipeArgs('tfg:stainless_steel_hull_reinforcement',[
+		createRecyclingRecipeArgs('tfg:stainless_steel_hull_reinforcement', [
 			GTMaterials.StainlessSteel,
 			GTMaterials.WroughtIron
 		], [
@@ -550,11 +578,11 @@ function registerImmersiveAircraftRecipes(event) {
 		])
 	)
 
-	event.shaped('tfg:titanium_hull_reinforcement',[
+	event.shaped('tfg:titanium_hull_reinforcement', [
 		'AB ',
 		'BCB',
 		' BD'
-	],{
+	], {
 		A: '#forge:tools/hammers',
 		B: 'gtceu:titanium_plate',
 		C: 'immersive_aircraft:hull',
@@ -562,7 +590,7 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:shaped/titanium_hull_reinforcement');
 
 	generateRecyclingRecipe('tfg:recycling/titanium_hull_reinforcement',
-		createRecyclingRecipeArgs('tfg:titanium_hull_reinforcement',[
+		createRecyclingRecipeArgs('tfg:titanium_hull_reinforcement', [
 			GTMaterials.Titanium,
 			GTMaterials.WroughtIron
 		], [
@@ -571,11 +599,11 @@ function registerImmersiveAircraftRecipes(event) {
 		])
 	)
 
-	event.shaped('immersive_aircraft:improved_landing_gear',[
+	event.shaped('immersive_aircraft:improved_landing_gear', [
 		'ABC',
 		'DEB',
 		'DDF'
-	],{
+	], {
 		A: '#forge:tools/wrenches',
 		B: 'gtceu:black_steel_plate',
 		C: 'gtceu:black_steel_rod',
@@ -585,20 +613,20 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:immersive_aircraft/shaped/improved_landing_gear');
 
 	generateRecyclingRecipe('immersive_aircraft:recycling/improved_landing_gear',
-		createRecyclingRecipeArgs('immersive_aircraft:improved_landing_gear',[
+		createRecyclingRecipeArgs('immersive_aircraft:improved_landing_gear', [
 			GTMaterials.BlackSteel,
 			GTMaterials.Brass
-		],[
+		], [
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 2),
 			createMaterialsToResults(TagPrefix.dustTiny, TagPrefix.nugget, 7),
 		])
 	);
 
-	event.shaped('tfg:redblu_steel_landing_gear',[
+	event.shaped('tfg:redblu_steel_landing_gear', [
 		'ABC',
 		'DEB',
 		'DDF'
-	],{
+	], {
 		A: '#forge:tools/wrenches',
 		B: 'gtceu:red_steel_plate',
 		C: 'gtceu:blue_steel_rod',
@@ -608,22 +636,22 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:shaped/redblu_steel_landing_gear')
 
 	generateRecyclingRecipe('tfg:recycling/redblu_steel_landing_gear',
-		createRecyclingRecipeArgs('tfg:redblu_steel_landing_gear',[
+		createRecyclingRecipeArgs('tfg:redblu_steel_landing_gear', [
 			GTMaterials.RedSteel,
 			GTMaterials.BlueSteel,
 			GTMaterials.Brass,
-		],[
+		], [
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 2),
 			createMaterialsToResults(TagPrefix.dustTiny, TagPrefix.nugget, 3),
 			createMaterialsToResults(TagPrefix.dustTiny, TagPrefix.nugget, 7),
 		])
 	);
 
-	event.shaped('tfg:aluminium_landing_gear',[
+	event.shaped('tfg:aluminium_landing_gear', [
 		'ABC',
 		'DEB',
 		'DDF'
-	],{
+	], {
 		A: '#forge:tools/wrenches',
 		B: 'vintageimprovements:aluminum_sheet',
 		C: 'gtceu:aluminium_rod',
@@ -633,20 +661,20 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:shaped/aluminium_landing_gear')
 
 	generateRecyclingRecipe('tfg:recycling/aluminium_landing_gear',
-		createRecyclingRecipeArgs('tfg:aluminium_landing_gear',[
+		createRecyclingRecipeArgs('tfg:aluminium_landing_gear', [
 			GTMaterials.Aluminium,
 			GTMaterials.CobaltBrass
-		],[
+		], [
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 2),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 3),
 		])
 	);
-	
-	event.shaped('tfg:stainless_steel_landing_gear',[
+
+	event.shaped('tfg:stainless_steel_landing_gear', [
 		'ABC',
 		'DEB',
 		'DDF'
-	],{
+	], {
 		A: '#forge:tools/wrenches',
 		B: 'gtceu:stainless_steel_plate',
 		C: 'gtceu:stainless_steel_rod',
@@ -657,20 +685,20 @@ function registerImmersiveAircraftRecipes(event) {
 
 
 	generateRecyclingRecipe('tfg:recycling/stainless_steel_landing_gear',
-		createRecyclingRecipeArgs('tfg:stainless_steel_landing_gear',[
+		createRecyclingRecipeArgs('tfg:stainless_steel_landing_gear', [
 			GTMaterials.StainlessSteel,
 			GTMaterials.CobaltBrass
-		],[
+		], [
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 2),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 3),
 		])
 	);
 
-	event.shaped('tfg:titanium_landing_gear',[
+	event.shaped('tfg:titanium_landing_gear', [
 		'ABC',
 		'DEB',
 		'DDF'
-	],{
+	], {
 		A: '#forge:tools/wrenches',
 		B: 'gtceu:titanium_plate',
 		C: 'gtceu:titanium_rod',
@@ -680,10 +708,10 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:shaped/titanium_landing_gear');
 
 	generateRecyclingRecipe('tfg:recycling/titanium_landing_gear',
-		createRecyclingRecipeArgs('tfg:titanium_landing_gear',[
+		createRecyclingRecipeArgs('tfg:titanium_landing_gear', [
 			GTMaterials.Titanium,
 			GTMaterials.CobaltBrass
-		],[
+		], [
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 2),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 3),
 		])
@@ -692,11 +720,11 @@ function registerImmersiveAircraftRecipes(event) {
 
 	//#region Aircrafts
 
-	event.shaped('immersive_aircraft:quadrocopter',[
+	event.shaped('immersive_aircraft:quadrocopter', [
 		'ABA',
 		'CDC',
 		'AEA'
-	],{
+	], {
 		A: '#forge:rotors',
 		B: '#create:seats',
 		C: 'gtceu:long_wood_rod',
@@ -704,7 +732,7 @@ function registerImmersiveAircraftRecipes(event) {
 		E: 'immersive_aircraft:engine'
 	}).id('tfg:immersive_aircraft/shaped/quadrocopter');
 
-	event.shaped('immersive_aircraft:airship',[
+	event.shaped('immersive_aircraft:airship', [
 		'ABA',
 		'CDE',
 		'FGA'
@@ -718,7 +746,7 @@ function registerImmersiveAircraftRecipes(event) {
 		G: 'tfg:airship_hull'
 	}).id('tfg:immersive_aircraft/shaped/airship')
 
-	event.shaped('immersive_aircraft:cargo_airship',[
+	event.shaped('immersive_aircraft:cargo_airship', [
 		'ABA',
 		'CDC',
 		'EFE'
@@ -732,14 +760,14 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:immersive_aircraft/shaped/cargo_airship')
 
 	//WAAGH!
-	event.recipes.create.mechanical_crafting('immersive_aircraft:warship',[
+	event.recipes.create.mechanical_crafting('immersive_aircraft:warship', [
 		'ABCC ',
 		' DDD ',
 		' EEEF',
 		' EGEH',
 		' EEEF',
 		' DDD '
-	],{
+	], {
 		A: 'immersive_aircraft:enhanced_propeller',
 		B: 'immersive_aircraft:steel_boiler',
 		C: 'tfg:airship_balloon',
@@ -750,7 +778,7 @@ function registerImmersiveAircraftRecipes(event) {
 		H: '#create:seats'
 	}).id('tfg:immersive_aircraft/mechanical_crafter/warship')
 
-	event.recipes.create.mechanical_crafting('immersive_aircraft:gyrodyne',[
+	event.recipes.create.mechanical_crafting('immersive_aircraft:gyrodyne', [
 		'   A   ',
 		'   B   ',
 		'CCDDDCC',
@@ -758,7 +786,7 @@ function registerImmersiveAircraftRecipes(event) {
 		' FDDDF ',
 		'   B   ',
 		'   G   ',
-	],{
+	], {
 		A: 'immersive_aircraft:enhanced_propeller',
 		B: 'gtceu:long_wood_rod',
 		C: 'immersive_aircraft:sail',
@@ -768,7 +796,7 @@ function registerImmersiveAircraftRecipes(event) {
 		G: 'gtceu:wrought_iron_double_ingot'
 	}).id('tfg:immersive_aircraft/mechanical_crafter/gyrodyne')
 
-	event.recipes.create.mechanical_crafting('man_of_many_planes:economy_plane',[
+	event.recipes.create.mechanical_crafting('man_of_many_planes:economy_plane', [
 		' AABCBAA ',
 		'ADDBEBDDA',
 		' FGBHBGF ',
@@ -788,7 +816,7 @@ function registerImmersiveAircraftRecipes(event) {
 		H: 'create:steam_engine'
 	}).id('tfg:man_of_many_planes/mechanical_crafter/economy_plane');
 
-	event.recipes.create.mechanical_crafting('immersive_aircraft:biplane',[
+	event.recipes.create.mechanical_crafting('immersive_aircraft:biplane', [
 		'   A   ',
 		'BBBCBBB',
 		'  BDB  ',
@@ -797,7 +825,7 @@ function registerImmersiveAircraftRecipes(event) {
 		'   E   ',
 		'  BEB  ',
 		'   B   '
-	],{
+	], {
 		A: 'immersive_aircraft:enhanced_propeller',
 		B: 'immersive_aircraft:hull',
 		C: 'immersive_aircraft:steel_boiler',
@@ -805,7 +833,7 @@ function registerImmersiveAircraftRecipes(event) {
 		E: '#minecraft:logs'
 	}).id('tfg:immersive_aircraft/mechanical_crafter/biplane')
 
-	event.recipes.create.mechanical_crafting('man_of_many_planes:scarlet_biplane',[
+	event.recipes.create.mechanical_crafting('man_of_many_planes:scarlet_biplane', [
 		'    A    ',
 		'    B    ',
 		'CCCDEDCCC',
@@ -814,7 +842,7 @@ function registerImmersiveAircraftRecipes(event) {
 		'    H    ',
 		'   CHC   ',
 		'    C    '
-	],{
+	], {
 		A: 'immersive_aircraft:enhanced_propeller',
 		B: 'immersive_aircraft:nether_engine',
 		C: 'immersive_aircraft:hull',
@@ -825,7 +853,7 @@ function registerImmersiveAircraftRecipes(event) {
 		H: 'tfc:metal/ingot/red_steel'
 	}).id('tfg:man_of_many_planes/mechanical_crafter/scarlet_biplane')
 
-	event.recipes.create.mechanical_crafting('immersive_aircraft:bamboo_hopper',[
+	event.recipes.create.mechanical_crafting('immersive_aircraft:bamboo_hopper', [
 		'  A   A  ',
 		'BBCBBBCBB',
 		'  DEFED  ',
@@ -833,7 +861,7 @@ function registerImmersiveAircraftRecipes(event) {
 		'  D   D  ',
 		' BBBGBBB ',
 		'  B   B  '
-	],{
+	], {
 		A: 'immersive_aircraft:enhanced_propeller',
 		B: 'immersive_aircraft:hull',
 		C: 'immersive_aircraft:steel_boiler',
@@ -843,5 +871,5 @@ function registerImmersiveAircraftRecipes(event) {
 		G: 'gtceu:double_aluminium_plate'
 	}).id('tfg:immersive_aircraft/mechanical_crafter/bamboo_hopper')
 
-//#endregion
+	//#endregion
 }

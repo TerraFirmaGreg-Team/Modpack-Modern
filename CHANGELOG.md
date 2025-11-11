@@ -28,6 +28,7 @@
 - Fixed missing helve hammer recipe for silver plates (#2183) @Pyritie
 - Fixed some typos in gun/attachment names and descriptions @Jeuvke
 - Fixed ocean moai spawning underwater sometimes 🗿 @Pyritie
+- Added missing recipes for the Advanced and Electronic Gyroscope @Pyritie
 ### Translation updates
 - Russian @DI-GitH + @nineex
 - Brazilian Portuguese @Redeix
