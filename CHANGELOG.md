@@ -19,12 +19,15 @@
 - Saplings and fruit bushes can now enter the seed pouch. (#2202) @Redeix
 - Mars sandstorms are now sandier @Pyritie
 - Added an alternative recipe for item frames using cloth @Pyritie
+- Added a little more silver to surface bismuth veins, moved apatite veins closer to the surface and with deeper indicators, increased deep sapphire veins' max Y level and added a rock type, and also added a rock type to deep magnetite's veins (all overworld only) @Pyritie
 ### Bug fixes
 - Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
 - Fixed the HV aqueous accumulator water recipe so the amount of water can actually fit in the HV machine @Pyritie
 - Fixed not being able to make brown universal compost with a mortar if the item is both green and brown (#2091) @Pyritie
 - Fixed soup made in the food processor not returning bowls when eaten (#2053) @Pyritie
 - Fixed missing helve hammer recipe for silver plates (#2183) @Pyritie
+- Fixed some typos in gun/attachment names and descriptions @Jeuvke
+- Fixed ocean moai spawning underwater sometimes 🗿 @Pyritie
 ### Translation updates
 - Russian @DI-GitH + @nineex
 - Brazilian Portuguese @Redeix
