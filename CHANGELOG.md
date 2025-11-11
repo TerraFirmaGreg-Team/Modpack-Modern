@@ -20,6 +20,7 @@
 - Mars sandstorms are now sandier @Pyritie
 - Added an alternative recipe for item frames using cloth @Pyritie
 - Added a little more silver to surface bismuth veins, moved apatite veins closer to the surface and with deeper indicators, increased deep sapphire veins' max Y level and added a rock type, and also added a rock type to deep magnetite's veins (all overworld only) @Pyritie
+- Buffed the amount of roof tiles from clay knapping (#2178) @Pyritie
 ### Bug fixes
 - Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
 - Fixed the HV aqueous accumulator water recipe so the amount of water can actually fit in the HV machine @Pyritie
@@ -32,6 +33,7 @@
 - Fixed several quest typos and errors (#2151, #2176, #2177) @Pyritie
 - Fixed not being able to put Seed Oil in a Mixing Bowl (#2203) @slavek
 - Added missing items to the smooth stone slabs tag, cleaned up armor stand recipes (#2197) @Pyritie
+- Fixed milk curd recipes in food processor outputting rotten curds. (#2209) @Redeix
 ### Translation updates
 - Russian @DI-GitH + @nineex
 - Brazilian Portuguese @Redeix
