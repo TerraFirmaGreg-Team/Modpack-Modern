@@ -186,8 +186,8 @@ global.FOOD_FRUIT = [
 
 global.STONE_CHARACS = { // Sets of stone block properties used for block registry.
 	deepslate:      { sound: 'deepslate',       type: "metamorphic",       mapColor: 'terracotta_grey'       },
-	blackstone:     { sound: 'deepslate',       type: "igneous_intrusive", mapColor: 'color_black'           },
-	dripstone:      { sound: 'dripstone_block', type: "sedimentary",       mapColor: 'terracotta'            },
+	blackstone:     { sound: 'stone',           type: "igneous_intrusive", mapColor: 'color_black'           },
+	dripstone:      { sound: 'dripstone_block', type: "sedimentary",       mapColor: 'terracotta_brown'      },
 	crackrack:      { sound: 'netherrack',      type: "igneous_intrusive", mapColor: 'crimson_stem'          },
 	nether:         { sound: 'nether_bricks',   type: "igneous_intrusive", mapColor: 'nether'                },
 	moon:           { sound: 'stone',           type: "igneous_intrusive", mapColor: 'terracotta_cyan'       },

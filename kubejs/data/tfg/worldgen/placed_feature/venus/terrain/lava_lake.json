@@ -1,16 +1,16 @@
 {
-    "feature": "tfg:venus/terrain/hot_spring_delta",
+	"feature": "tfg:venus/terrain/lava_lake",
 	"placement": [
 		{
-			"type": "minecraft:count",
-			"count": 6
+			"type": "minecraft:rarity_filter",
+			"chance": 2
 		},
 		{
 			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:heightmap",
-			"heightmap": "WORLD_SURFACE"
+			"heightmap": "WORLD_SURFACE_WG"
 		},
 		{
 			"type": "minecraft:biome"

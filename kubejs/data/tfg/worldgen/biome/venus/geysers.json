@@ -28,13 +28,19 @@
 			"tfc:erosion"
 		],
 		[],
-		[],
+		[
+			"tfg:venus/terrain/hot_spring_delta"
+		],
 		[],
 		[],
 		[],
 		"#tfg:venus_veins",
 		"#tfg:venus_underground_decoration",
-		[],
+		[
+			"tfc:raw_boulder_small_patch",
+			"tfc:cobble_boulder_small_patch",
+			"tfg:venus/surface/geyser_source_patch"
+		],
 		[],
 		"#tfg:venus_top_layer_modification"
 	],

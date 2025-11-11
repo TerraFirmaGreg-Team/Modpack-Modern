@@ -20,14 +20,15 @@
 			"tfc:erosion"
 		],
 		[],
-		"#tfg:venus_fractured_lands_terrain_features",
+		[],
 		[],
 		[],
 		[],
 		"#tfg:venus_veins",
 		"#tfg:venus_underground_decoration",
 		[
-
+			"tfc:raw_boulder_small_patch",
+			"tfc:cobble_boulder_small_patch"
 		],
 		[
 
