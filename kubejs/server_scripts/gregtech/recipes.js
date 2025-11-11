@@ -335,8 +335,12 @@ const registerGTCEURecipes = (event) => {
 
 	//#region Выход: Цемент
 
-	generateMixerRecipe(event, ['2x #tfg:stone_dusts', 'gtceu:marble_dust', 'gtceu:gypsum_dust'],
-		"#tfg:clean_water 1000", [], null, 'gtceu:concrete 1152', 40, 16, 64, 'concrete_from_marble')
+	const recipe = event.recipes.gtceu.mixer('concrete_from_marble')
+		.itemInputs(Ingredient.of('#tfg:stone_dusts').subtract('gtceu:marble_dust').withCount(2), 'gtceu:marble_dust', 'gtceu:gypsum_dust')
+		.inputFluids("#tfg:clean_water 1000")
+		.outputFluids('gtceu:concrete 1152')
+		.duration(40)
+		.EUt(16)
 
 	generateMixerRecipe(event, ['3x #tfg:stone_dusts', 'gtceu:clay_dust'],
 		"#tfg:clean_water 500", [], null, 'gtceu:concrete 576', 20, 16, 64, 'concrete_from_clay')
