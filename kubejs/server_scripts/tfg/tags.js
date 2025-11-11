@@ -318,6 +318,9 @@ const registerTFGItemTags = (event) => {
 	});
 	event.add('tfg:foil_packs', 'tfg:foil_pack');
 	event.add('tfg:foil_packs', 'tfg:clean_foil_pack')
+
+	event.add('tfg:solid_fats', 'firmalife:food/butter')
+	event.add('tfg:solid_fats', 'tfc:blubber')
 	//#endregion
 	//#endregion
 
@@ -691,8 +694,6 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:drinkables', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:any_drinkables', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:ingredients', 'tfg:semiheavy_ammoniacal_water')
-	event.add('firmalife:mixable', 'tfg:semiheavy_ammoniacal_water')
-	event.add('firmalife:usable_in_vat', 'tfg:semiheavy_ammoniacal_water')
 	event.add('minecraft:water', 'tfg:semiheavy_ammoniacal_water')
 
 	event.add('tfc:drinkables', 'tfg:proto_growth_medium')
