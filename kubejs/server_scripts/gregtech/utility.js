@@ -1,6 +1,16 @@
 // priority: 0
 "use strict";
 
+const JsonObject = Java.loadClass('com.google.gson.JsonObject');
+const JsonArray = Java.loadClass('com.google.gson.JsonArray');
+const JsonParser = Java.loadClass('com.google.gson.JsonParser');
+const JsonElement = Java.loadClass('com.google.gson.JsonElement');
+
+// Helper to call `JsonArray.add(JsonElement)` explicitly because "Rhino Moment".
+const addJsonElement = (jsonArray, jsonElement) => {
+	jsonArray.getClass().getMethod("add", JsonElement).invoke(jsonArray, jsonElement);
+};
+
 //#region Mixer Recipes
 /**
  * Function for generating gtceu mixer recipes.
@@ -272,16 +282,6 @@ function forEachMaterial(iterator) {
  * @param {number} circuitNumber -0-32
  */
 function addCircuitToRecipe(event, recipeId, circuitNumber) {
-
-	const JsonObject = Java.loadClass('com.google.gson.JsonObject');
-	const JsonArray = Java.loadClass('com.google.gson.JsonArray');
-	const JsonParser = Java.loadClass('com.google.gson.JsonParser');
-	const JsonElementClass = Java.loadClass('com.google.gson.JsonElement');
-
-	// Helper to call JsonArray.add(JsonElement) explicitly because "Rhino Moment".
-	const addJsonElement = (jsonArray, jsonElement) => {
-		jsonArray.getClass().getMethod("add", JsonElementClass).invoke(jsonArray, jsonElement);
-	};
 
 	event.findRecipes({ id: recipeId }).forEach(recipe => {
 		const inputsEl = recipe.json.get("inputs");
@@ -623,12 +623,6 @@ function addCleanroom(event, recipeId, cleanroomType) {
 		// Replace existing cleanroom condition or add new one if absent.
 		const desiredCleanroom = cleanroomType;
 		const conditions = recipe.json.get("recipeConditions");
-		const JsonObject = Java.loadClass("com.google.gson.JsonObject");
-		const JsonArray = Java.loadClass("com.google.gson.JsonArray");
-		const JsonElementClass = Java.loadClass("com.google.gson.JsonElement");
-		const addJsonElement = (jsonArray, jsonElement) => {
-			jsonArray.getClass().getMethod("add", JsonElementClass).invoke(jsonArray, jsonElement);
-		};
 		let conditionArray;
 		if (conditions && conditions.isJsonArray && conditions.isJsonArray()) {
 			conditionArray = conditions.getAsJsonArray();
