@@ -21,6 +21,7 @@
 - Added an alternative recipe for item frames using cloth @Pyritie
 - Added a little more silver to surface bismuth veins, moved apatite veins closer to the surface and with deeper indicators, increased deep sapphire veins' max Y level and added a rock type, and also added a rock type to deep magnetite's veins (all overworld only) @Pyritie
 - Buffed the amount of roof tiles from clay knapping (#2178) @Pyritie
+- Added sugar cookies, toasts, jams, pickled eggs, and butter to the meal bag tag, removed banana splits (#2129) @Pyritie
 ### Bug fixes
 - Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
 - Fixed the HV aqueous accumulator water recipe so the amount of water can actually fit in the HV machine @Pyritie

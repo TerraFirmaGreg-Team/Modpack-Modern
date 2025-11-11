@@ -293,15 +293,17 @@ const registerTFGItemTags = (event) => {
 		'#tfc:foods/vegetables',
 		'#tfc:foods/fruits',
 		'#tfc:foods/dairy',
+		'#tfc:foods/preserves',
 		'#firmalife:foods/chocolate',
 		'#tfcchannelcasting:foods/chocolate_sweet',
+		'firmalife:food/sugar_cookie',
 		'firmalife:food/chocolate_chip_cookie',
 		'firmalife:food/vanilla_ice_cream',
 		'firmalife:food/strawberry_ice_cream',
 		'firmalife:food/chocolate_ice_cream',
-		'firmalife:food/banana_split',
 		'tfc:food/cooked_egg',
 		'tfc:food/boiled_egg',
+		'firmalife:food/pickled_egg',
 		'tfc:food/cooked_rice',
 		'firmalife:food/cooked_pasta',
 		'firmalife:food/pasta_with_tomato_sauce',
@@ -311,7 +313,11 @@ const registerTFGItemTags = (event) => {
 		'firmalife:food/salsa',
 		'firmalife:food/tomato_sauce',
 		'tfg:roasted_sunflower_seeds',
-		'tfg:food/cooked_dino_nugget'
+		'tfg:food/cooked_dino_nugget',
+		'firmalife:food/toast',
+		'firmalife:food/toast_with_butter',
+		'firmalife:food/toast_with_jam',
+		'firmalife:food/butter'
 	];
 	usable_in_meal_bag.forEach(item => {
 		event.add('tfg:foods/usable_in_meal_bag', item);
