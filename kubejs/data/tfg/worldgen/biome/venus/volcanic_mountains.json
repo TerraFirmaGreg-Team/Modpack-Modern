@@ -27,15 +27,29 @@
 		[
 			"tfc:erosion"
 		],
-		[],
+		[
+			"tfg:venus/terrain/lava_spring",
+			"tfg:venus/terrain/lava_delta",
+			"tfg:venus/terrain/lava_lake",
+			"tfg:venus/terrain/lava_fissure",
+			"tfg:venus/terrain/lava_rivulet",
+			"tfg:venus/terrain/magma_rivulet"
+		],
 		[],
 		[],
 		[],
 		[],
 		"#tfg:venus_veins",
 		"#tfg:venus_underground_decoration",
-		[],
-		[],
+		[
+			"tfc:raw_boulder",
+			"tfc:cobble_boulder",
+			"tfc:raw_boulder_small_patch",
+			"tfc:cobble_boulder_small_patch"
+		],
+		[
+			"tfg:venus/terrain/lava_fill"
+		],
 		"#tfg:venus_top_layer_modification"
 	],
 	"has_precipitation": true,
