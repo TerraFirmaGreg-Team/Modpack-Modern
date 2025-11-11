@@ -25,6 +25,7 @@
 - Fixed not being able to make brown universal compost with a mortar if the item is both green and brown (#2091) @Pyritie
 - Fixed soup made in the food processor not returning bowls when eaten (#2053) @Pyritie
 - Fixed missing helve hammer recipe for silver plates (#2183) @Pyritie
+- Fixed milk curd recipes in food processor outputting rotten curds. (#2209) @Redeix
 ### Translation updates
 - Russian @DI-GitH + @nineex
 - Brazilian Portuguese @Redeix
