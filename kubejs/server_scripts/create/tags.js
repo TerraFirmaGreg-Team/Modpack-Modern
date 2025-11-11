@@ -90,6 +90,21 @@ const registerCreateItemTags = (event) => {
 	event.remove('create:stone_types/deepslate', 'minecraft:deepslate')
 	event.remove('create:stone_types/dripstone', 'minecraft:dripstone_block')
 	event.remove('create:stone_types/blackstone', 'minecraft:blackstone')
+
+	event.add('forge:smooth_stone_slab', 'create:polished_cut_granite_slab')
+	event.add('forge:smooth_stone_slab', 'create:polished_cut_diorite_slab')
+	event.add('forge:smooth_stone_slab', 'create:polished_cut_andesite_slab')
+	event.add('forge:smooth_stone_slab', 'create:polished_cut_calcite_slab')
+	event.add('forge:smooth_stone_slab', 'create:polished_cut_dripstone_slab')
+	event.add('forge:smooth_stone_slab', 'create:polished_cut_deepslate_slab')
+	event.add('forge:smooth_stone_slab', 'create:polished_cut_tuff_slab')
+	event.add('forge:smooth_stone_slab', 'create:polished_cut_limestone_slab')
+	event.add('forge:smooth_stone_slab', 'create:polished_cut_asurine_slab')
+	event.add('forge:smooth_stone_slab', 'create:polished_cut_crimsite_slab')
+	event.add('forge:smooth_stone_slab', 'create:polished_cut_ochrum_slab')
+	event.add('forge:smooth_stone_slab', 'create:polished_cut_scoria_slab')
+	event.add('forge:smooth_stone_slab', 'create:polished_cut_scorchia_slab')
+	event.add('forge:smooth_stone_slab', 'create:polished_cut_veridium_slab')
 }
 
 const registerCreateBlockTags = (event) => {

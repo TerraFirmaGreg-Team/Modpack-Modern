@@ -2083,4 +2083,6 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'gtceu:assembler/lodestone' })
 
 	//#endregion
+
+	event.remove({ id: 'minecraft:armor_stand' })
 }

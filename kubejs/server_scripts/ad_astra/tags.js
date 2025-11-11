@@ -157,6 +157,12 @@ const registerAdAstraItemTags = (event) => {
 		}
 	})
 
+	event.add('forge:smooth_stone_slab', 'ad_astra:polished_moon_stone_slab')
+	event.add('forge:smooth_stone_slab', 'ad_astra:polished_mars_stone_slab')
+	event.add('forge:smooth_stone_slab', 'ad_astra:polished_venus_stone_slab')
+	event.add('forge:smooth_stone_slab', 'ad_astra:polished_mercury_stone_slab')
+	event.add('forge:smooth_stone_slab', 'ad_astra:polished_glacio_stone_slab')
+	event.add('forge:smooth_stone_slab', 'ad_astra:polished_permafrost_slab')
 }
 
 const registerAdAstraBlockTags = (event) => {

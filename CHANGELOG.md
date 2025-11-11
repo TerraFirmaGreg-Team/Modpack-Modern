@@ -9,7 +9,7 @@
 - Added an AE2-linked TACZ ammo box @BlueBoat29
 - Buffed hiking boots durability by 250%, also changed horseshoe durability and stats to match @Pyritie
 - Added more automatable mud brick recipes, ensured all dirt types are renewable (#2169) @Pyritie
-- Added a sky stone block recipe to the rock breaker (#2159) @Pyritie
+- Added a sky stone block duping recipe to the rock breaker (#2159) @Pyritie
 - Improved the tag for cleanroom doors @Pyritie
 - The food oven and refrigerator now emit heat (for TFC ambiental) @Pyritie
 - Dioxygen Difluoride is now cryogenic and acidic @Pyritie
@@ -29,6 +29,9 @@
 - Fixed some typos in gun/attachment names and descriptions @Jeuvke
 - Fixed ocean moai spawning underwater sometimes 🗿 @Pyritie
 - Added missing recipes for the Advanced and Electronic Gyroscope @Pyritie
+- Fixed several quest typos and errors (#2151, #2176, #2177) @Pyritie
+- Fixed not being able to put Seed Oil in a Mixing Bowl (#2203) @slavek
+- Added missing items to the smooth stone slabs tag, cleaned up armor stand recipes (#2197) @Pyritie
 ### Translation updates
 - Russian @DI-GitH + @nineex
 - Brazilian Portuguese @Redeix
