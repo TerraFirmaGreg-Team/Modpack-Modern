@@ -7,6 +7,7 @@
 function registerTFGBiochemRecipes(event) {
 	const $ISPRecipeLogic = Java.loadClass("su.terrafirmagreg.core.common.data.tfgt.machine.trait.ISPOutputRecipeLogic")
 	const $SizedIngredient = Java.loadClass("com.gregtechceu.gtceu.api.recipe.ingredient.SizedIngredient")
+	const Sized = (ing, amount) => $SizedIngredient.create(ing, amount)
 
 	/**
 	 * @typedef {Object} BioreactorRecipeData
@@ -54,11 +55,9 @@ function registerTFGBiochemRecipes(event) {
 					item = item.slice(match[0].length);
 				}
 				inputs.push($SizedIngredient.create(item, count))
-			} else if (Array.isArray(item)) {
+			} else {
 				gregInputs.push(item[0])
 				inputs.push(item[1])
-			} else {
-				inputs.push(Ingredient.of(item))
 			}
 		})
 
@@ -359,7 +358,7 @@ function registerTFGBiochemRecipes(event) {
 	//#region Decellularization
 
 	// Hydrogenation of fatty acids to produce lauryl alcohol.
-	event.recipes.gtceu.large_chemical_reactor('tfg:lauryl_alcohol')
+	event.recipes.gtceu.chemical_reactor('tfg:lauryl_alcohol')
 		.inputFluids(
 			'#firmalife:oils 1000',
 			Fluid.of('gtceu:hydrogen', 2000)
@@ -372,7 +371,7 @@ function registerTFGBiochemRecipes(event) {
 	// Direct synthesis of chlorosulfuric acid.
 	event.recipes.gtceu.chemical_reactor('tfg:chlorosulfuric_acid')
 		.inputFluids(
-			Fluid.of('gtceu:sulfuric_acid', 1000),
+			Fluid.of('gtceu:sulfur_trioxide', 1000),
 			Fluid.of('gtceu:hydrochloric_acid', 1000)
 		)
 		.outputFluids(Fluid.of('tfg:chlorosulfuric_acid', 1000))
@@ -380,7 +379,7 @@ function registerTFGBiochemRecipes(event) {
 		.EUt(GTValues.VA[GTValues.HV]);
 
 	// Synthesis of sodium dodecyl sulfate. Chemistry is not accurate since the organic group in lauryl alcohol is unknown here.
-	event.recipes.gtceu.large_chemical_reactor('tfg:sodium_dodecyl_sulfate')
+	event.recipes.gtceu.chemical_reactor('tfg:sodium_dodecyl_sulfate')
 		.inputFluids(
 			Fluid.of('tfg:lauryl_alcohol', 1000),
 			Fluid.of('tfg:chlorosulfuric_acid', 2000)
@@ -514,7 +513,7 @@ function registerTFGBiochemRecipes(event) {
 		'gtceu:acetone'
 	];
 	gramStainSolvents.forEach(solvent => {
-		event.recipes.gtceu.chemical_reactor(`tfg:gram_stain_solvent_${solvent.replace(':', '_')}`)
+		event.recipes.gtceu.large_chemical_reactor(`tfg:gram_stain_solvent_${solvent.replace(':', '_')}`)
 			.inputFluids(
 				Fluid.of('tfg:crystal_violet', 1000),
 				Fluid.of('tfc:red_dye', 1000),
@@ -525,14 +524,16 @@ function registerTFGBiochemRecipes(event) {
 			)
 			.outputFluids(Fluid.of('tfg:gram_stain', 4000))
 			.duration(8*20)
-			.EUt(GTValues.VA[GTValues.IV]);
+			.EUt(GTValues.VA[GTValues.IV])
+			.cleanroom(CleanroomType.CLEANROOM)
+			.dimension('ad_astra:venus');
 	});
 	
 	//#endregion
 	//#region Triglcerides
 
 	// Butyric acid synthesis.
-	event.recipes.gtceu.large_chemical_reactor('tfg:butyric_acid')
+	event.recipes.gtceu.chemical_reactor('tfg:butyric_acid')
 		.inputFluids(
 			Fluid.of('gtceu:propene', 2000),
 			Fluid.of('gtceu:carbon_monoxide', 6000),
@@ -542,6 +543,7 @@ function registerTFGBiochemRecipes(event) {
 			Fluid.of('tfg:butyric_acid', 3000)
 		)
 		.duration(10*20)
+		.circuit(4)
 		.EUt(GTValues.VA[GTValues.EV]);
 
 	// Triglycerides from fat.
@@ -563,53 +565,54 @@ function registerTFGBiochemRecipes(event) {
 		.EUt(GTValues.VA[GTValues.IV]);
 
 	// Triglycerides from cell factory.
-	bioreactorRecipe('tfg:triglyceride_oil_from_smooth_endoplasmic_reticula', 10*20, GTValues.VA[GTValues.EV], {
+	bioreactorRecipe('triglyceride_oil_from_smooth_endoplasmic_reticula', 10*20, 1920, {
 		fluidInputs: [
-			Fluid.of('gtceu:glycerol', 1000),
-			Fluid.of('tfg:butyric_acid', 1000)
+			'gtceu:glycerol 1000',
+			'tfg:butyric_acid 1000'
 		],
 		itemInputs: [
-			Ingredient.of('tfg:smooth_endoplasmic_reticula'),
-			Ingredient.of('tfg:lab_equipment')
+			'tfg:smooth_endoplasmic_reticula',
+			'tfg:lab_equipment'
 		],
 		fluidOutputs: [
 			Fluid.of('tfg:triglyceride_oil', 2000)
 		],
 		itemOutputs: [
-			Item.of('tfg:dirty_lab_equipment')
+			'tfg:dirty_lab_equipment'
 		],
 		cleanroom: CleanroomType.CLEANROOM
 	});
 
 	// Lactose from cell factory.
-	bioreactorRecipe('tfg:lactose_from_rough_endoplasmic_reticula', 10*20, GTValues.VA[GTValues.EV], {
+	bioreactorRecipe('lactose_from_rough_endoplasmic_reticula', 10*20, 1920, {
 		itemInputs: [
-			Ingredient.of('tfg:rough_endoplasmic_reticula'),
-			Ingredient.of('tfg:lab_equipment'),
-			ChemicalHelper.get(TagPrefix.dust, 'tfg:cholesterol', 3)
+			'tfg:rough_endoplasmic_reticula',
+			'tfg:lab_equipment',
+			'tfg:cholesterol_dust'
 		],
 		itemOutputs: [
-			ChemicalHelper.get(TagPrefix.dust, 'gtceu:lactose', 6),
-			Item.of('tfg:dirty_lab_equipment')
-			
+			'4x gtceu:lactose_dust',
+			'tfg:dirty_lab_equipment'
 		],
-		cleanroom: CleanroomType.CLEANROOM
+		cleanroom: CleanroomType.CLEANROOM,
+		itemOutputProvider: TFC.isp.of('4x gtceu:lactose_dust')
 	});
 
 	// Alpha keratin from cell factory.
-	bioreactorRecipe('tfg:alpha_keratin_from_rough_endoplasmic_reticula', 10*20, GTValues.VA[GTValues.EV], {
+	bioreactorRecipe('alpha_keratin_from_rough_endoplasmic_reticula', 10*20, 1920, {
 		itemInputs: [
-			Ingredient.of('tfg:rough_endoplasmic_reticula'),
-			Ingredient.of('tfg:lab_equipment')
+			'tfg:rough_endoplasmic_reticula',
+			'tfg:lab_equipment'
 		],
 		fluidInputs: [
-			Fluid.of('tfg:proto_growth_medium', 1000)
+			'tfg:proto_growth_medium 1000'
 		],
 		itemOutputs: [
-			Item.of('tfg:alpha_keratin').withCount(4),
-			Item.of('tfg:dirty_lab_equipment')
+			'4x tfg:alpha_keratin',
+			'tfg:dirty_lab_equipment'
 		],
-		cleanroom: CleanroomType.CLEANROOM
+		cleanroom: CleanroomType.CLEANROOM,
+		itemOutputProvider: TFC.isp.of('4x tfg:alpha_keratin')
 	});
 
 	//#endregion
@@ -675,45 +678,45 @@ function registerTFGBiochemRecipes(event) {
 	// Rough endoplasmic reticula synthesis.
 	bioreactorRecipe('tfg:rough_endoplasmic_reticula', 1*60*20, GTValues.VA[GTValues.EV], {
 		itemInputs: [
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Collagen, 1),
-			Ingredient.of('tfg:lab_equipment')
+			'gtceu:collagen_dust',
+			'tfg:lab_equipment'
 		],
 		fluidInputs: [
 			Fluid.of('firmalife:sugar_water', 1000),
 			Fluid.of('tfg:mutative_yeast', 1000)
 		],
 		itemOutputs: [
-			Item.of('tfg:rough_endoplasmic_reticula'),
-			Item.of('tfg:dirty_lab_equipment')
+			'tfg:rough_endoplasmic_reticula',
+			'tfg:dirty_lab_equipment'
 		],
 		notConsumable: [
-			Ingredient.of('tfg:filled_dna_syringe')
+			'tfg:filled_dna_syringe'
 		],
 		circuit: 2,
 		cleanroom: CleanroomType.CLEANROOM,
-		itemOutputProvider: TFC.isp.of(Item.of('tfg:rough_endoplasmic_reticula')).resetFood()
+		itemOutputProvider: TFC.isp.of('tfg:rough_endoplasmic_reticula').resetFood()
 	});
 
 	// Smooth endoplasmic reticula synthesis.
 	bioreactorRecipe('tfg:smooth_endoplasmic_reticula', 1*60*20, GTValues.VA[GTValues.EV], {
 		itemInputs: [
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Collagen, 1),
-			Ingredient.of('tfg:lab_equipment')
+			'gtceu:collagen_dust',
+			'tfg:lab_equipment'
 		],
 		fluidInputs: [
 			Fluid.of('firmalife:sugar_water', 1000),
 			Fluid.of('tfg:mutative_yeast', 1000)
 		],
 		itemOutputs: [
-			Item.of('tfg:smooth_endoplasmic_reticula'),
-			Item.of('tfg:dirty_lab_equipment')
+			'tfg:smooth_endoplasmic_reticula',
+			'tfg:dirty_lab_equipment'
 		],
 		notConsumable: [
-			Ingredient.of('tfg:filled_dna_syringe')
+			'tfg:filled_dna_syringe'
 		],
 		circuit: 3,
 		cleanroom: CleanroomType.CLEANROOM,
-		itemOutputProvider: TFC.isp.of(Item.of('tfg:smooth_endoplasmic_reticula')).resetFood()
+		itemOutputProvider: TFC.isp.of('tfg:smooth_endoplasmic_reticula').resetFood()
 	});
 
 	//#endregion
