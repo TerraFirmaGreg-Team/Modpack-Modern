@@ -565,17 +565,35 @@ function registerTFGBiochemRecipes(event) {
 		.EUt(GTValues.VA[GTValues.IV]);
 
 	// Triglycerides from cell factory.
-	bioreactorRecipe('triglyceride_oil_from_smooth_endoplasmic_reticula', 10*20, 1920, {
+	bioreactorRecipe('triglyceride_oil_from_smooth_er_byAcid', 10*20, 1920, {
 		fluidInputs: [
 			'gtceu:glycerol 1000',
-			'tfg:butyric_acid 1000'
+			'tfg:butyric_acid 3000'
 		],
 		itemInputs: [
 			'tfg:smooth_endoplasmic_reticula',
 			'tfg:lab_equipment'
 		],
 		fluidOutputs: [
-			Fluid.of('tfg:triglyceride_oil', 2000)
+			Fluid.of('tfg:triglyceride_oil', 3000)
+		],
+		itemOutputs: [
+			'tfg:dirty_lab_equipment'
+		],
+		cleanroom: CleanroomType.CLEANROOM
+	});
+	
+	bioreactorRecipe('triglyceride_oil_from_smooth_er_lnAcid', 10*20, 1920, {
+		fluidInputs: [
+			'gtceu:glycerol 1000',
+			'tfg:linolenic_acid 3000'
+		],
+		itemInputs: [
+			'tfg:smooth_endoplasmic_reticula',
+			'tfg:lab_equipment'
+		],
+		fluidOutputs: [
+			Fluid.of('tfg:triglyceride_oil', 3000)
 		],
 		itemOutputs: [
 			'tfg:dirty_lab_equipment'
