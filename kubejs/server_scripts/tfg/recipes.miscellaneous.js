@@ -1556,7 +1556,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	//#endregion
 	
 	//ok these need to be disillery recipes, granted idk what circuit
-	//but ratios can be kept as they are 
+	//but ratios can be kept as they are, or less
 	event.recipes.gtceu.extractor('tfg:linolenic_from_seed')
 		.inputFluids(Fluid.of('gtceu:seed_oil', 1000))
 		.outputFluids(Fluid.of('tfg:linolenic_acid', 100))
@@ -1573,7 +1573,6 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 		
-	
 	//region ochem
 	event.recipes.gtceu.chemical_reactor('tfg:sucrose_to_monos')
 		.itemInputs('8x #forge:dusts/sugar')
