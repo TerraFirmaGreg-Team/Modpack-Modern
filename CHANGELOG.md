@@ -36,7 +36,7 @@
 - Added missing items to the smooth stone slabs tag, cleaned up armor stand recipes (#2197) @Pyritie
 - Fixed milk curd recipes in food processor outputting rotten curds. (#2209) @Redeix
 ### Translation updates
-- Russian @DI-GitH + @nineex
+- Russian @DI-GitH + @nineex + @alexart2006
 - Brazilian Portuguese @Redeix
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
