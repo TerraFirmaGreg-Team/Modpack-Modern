@@ -1555,6 +1555,8 @@ function registerTFGMiscellaneousRecipes(event) {
 	TFGHelpers.registerMaterialInfo('tfg:rnr_plow', {'cobalt_brass': 5, 'invar': 2, 'steel': 2, 'wrought_iron': 2, 'rubber': 1, 'treated_wood': 1});
 	//#endregion
 	
+	//ok these need to be disillery recipes, granted idk what circuit
+	//but ratios can be kept as they are 
 	event.recipes.gtceu.extractor('tfg:linolenic_from_seed')
 		.inputFluids(Fluid.of('gtceu:seed_oil', 1000))
 		.outputFluids(Fluid.of('tfg:linolenic_acid', 100))
