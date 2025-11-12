@@ -43,6 +43,7 @@ const registerTFGMaterials = (event) => {
 	event.create('lactose')
 		.dust()
 		.iconSet(GTMaterialIconSet.FINE)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color('0xede8da')
 		.secondaryColor('0xeddcad')
 		.components('12x carbon', '22x hydrogen', '11x oxygen')
@@ -534,6 +535,49 @@ const registerTFGMaterials = (event) => {
 		.flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
 		.components('7x gallium', '2x tin', '1x zinc')
 		.color('0x34cfeb')
+	
+	// #endregion
+	
+	// #region ochem
+	
+	event.create('tfg:glucose')
+		.dust()
+		.components('6x carbon', '12x hydrogen', '6x oxygen')
+		.color(0xFFE9E3)
+	event.create('tfg:galactose')
+		.dust()
+		.components('6x carbon', '12x hydrogen', '6x oxygen')
+		.color(0xEBE3FF)
+	event.create('tfg:fructose')
+		.dust()
+		.components('6x carbon', '12x hydrogen', '6x oxygen')
+		.color(0xE6FFE3)
+	event.create('tfg:sorbitol')
+		.dust()
+		.components('6x carbon', '14x hydrogen', '6x oxygen')
+		.color(0xDEFEFF)
+	event.create('tfg:14_sorbitan')
+		.dust()
+		.components('6x carbon', '12x hydrogen', '5x oxygen')
+		.color(0xB1F1F2)
+	event.create('tfg:isosorbide')
+		.dust()
+		.components('6x carbon', '10x hydrogen', '4x oxygen')
+		.color(0x84D6DB)
+	event.create('tfg:linolenic_acid')
+		.liquid()
+		.components('18x carbon', '30x hydrogen', '2x oxygen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xF5D478)
+	event.create('tfg:isosorbide_ln')
+		.dust()
+		.components('42x carbon', '66x hydrogen', '6x oxygen')
+		.color(0xDB5178)
+	event.create('tfg:epox_isosorbide_ln')
+		.dust()
+		.components('42x carbon', '66x hydrogen', '12x oxygen')
+		.color(0xAB2748)
+	
 	
 	// #region holder materials
 	//     These allow us to give material components to non-material items
