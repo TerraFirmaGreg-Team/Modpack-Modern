@@ -41,6 +41,7 @@
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
 - Japanese @sakura-gondra
+- Turkish @MVG31
 
 ## [0.11.7] - 30-10-2025
 ### Changes
