@@ -77,7 +77,7 @@ const registerTFGMaterials = (event) => {
 		.blastTemp(3200, 'mid', 1024, 1100)
 		.liquid()
 	
-/*	event.create('rocket_alloy_t3')
+/*	event.create('tfg:rocket_alloy_t3')
 		.ingot()
 		.components('8x titanium', '9x tungsten_steel', '2x tantalum', '2x radon')
 		.color(0x6c678b)
@@ -280,10 +280,16 @@ const registerTFGMaterials = (event) => {
 		.color(0xFFFFBA)
 	//#endregion
 	
+	
+	
 	//#region aerogel
+	event.create('methoxy')
+		.components('1x oxygen', '1x carbon', '3x hydrogen')
+		.color(0xFFFFFF)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 	event.create('tfg:tmos')
 		.liquid()
-		.formula("Si(OCH3)4")
+		.components('1x silicon', '4x methoxy')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xC2C6CC)
 	event.create('tfg:silica_gel')
