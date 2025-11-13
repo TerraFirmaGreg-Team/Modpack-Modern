@@ -1557,21 +1557,24 @@ function registerTFGMiscellaneousRecipes(event) {
 	
 	//ok these need to be disillery recipes, granted idk what circuit
 	//but ratios can be kept as they are, or less
-	event.recipes.gtceu.extractor('tfg:linolenic_from_seed')
+	event.recipes.gtceu.distillery('tfg:linolenic_from_seed')
 		.inputFluids(Fluid.of('gtceu:seed_oil', 1000))
-		.outputFluids(Fluid.of('tfg:linolenic_acid', 100))
+		.outputFluids(Fluid.of('tfg:linolenic_acid', 10))
+		.circuit(2)
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
-	event.recipes.gtceu.extractor('tfg:linolenic_from_olive')
+		.EUt(GTValues.VA[GTValues.MV])
+	event.recipes.gtceu.distillery('tfg:linolenic_from_olive')
 		.inputFluids(Fluid.of('tfc:olive_oil', 1000))
-		.outputFluids(Fluid.of('tfg:linolenic_acid', 200))
+		.outputFluids(Fluid.of('tfg:linolenic_acid', 20))
+		.circuit(2)
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
-	event.recipes.gtceu.extractor('tfg:linolenic_from_soybean')
-		.inputFluids(Fluid.of('tfc:soybean_oil', 1000))
-		.outputFluids(Fluid.of('tfg:linolenic_acid', 500))
+		.EUt(GTValues.VA[GTValues.MV])
+	event.recipes.gtceu.distillery('tfg:linolenic_from_soybean')
+		.inputFluids(Fluid.of('firmalife:soybean_oil', 1000))
+		.outputFluids(Fluid.of('tfg:linolenic_acid', 50))
+		.circuit(2)
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VA[GTValues.MV])
 		
 	//region ochem
 	event.recipes.gtceu.chemical_reactor('tfg:sucrose_to_monos')
@@ -1616,7 +1619,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.IV])
 		
 	event.recipes.gtceu.large_chemical_reactor('tfg:lipid_attach_isosorbide')
-		.itemInputs('10x #forge:dusts/14_sorbitan')
+		.itemInputs('10x #forge:dusts/isosorbide')
 		.inputFluids(Fluid.of('tfg:linolenic_acid', 1000), Fluid.of('minecraft:water', 2000))
 		.notConsumableFluid(Fluid.of('gtceu:toulene', 1000))
 		.circuit(4)
