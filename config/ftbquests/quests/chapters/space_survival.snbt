@@ -288,8 +288,14 @@
 					type: "item"
 				}
 				{
-					id: "4E8C67A543FEB861"
-					item: "gtceu:mv_4a_energy_converter"
+					id: "6EC6D0FB6F9E452C"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:lv_1a_energy_converter)item(gtceu:lv_4a_energy_converter)item(gtceu:mv_1a_energy_converter)item(gtceu:mv_4a_energy_converter)item(gtceu:hv_1a_energy_converter)item(gtceu:lv_8a_energy_converter))"
+						}
+					}
 					optional_task: true
 					type: "item"
 				}

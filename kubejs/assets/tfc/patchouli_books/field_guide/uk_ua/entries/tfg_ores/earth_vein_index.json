@@ -131,7 +131,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 220$(br)$(thing)Щільність$(): 0.25$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): -32 — 60$(br)$(thing)Розмір$(): 34$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Кварцит, Мармур, Філіт, Шиферний сланець",
+      "text": "$(thing)Рідкість$(): 170$(br)$(thing)Щільність$(): 0.25$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 20 — 120$(br)$(thing)Розмір$(): 34$(br)$(thing)Індикатор Max Depth$(): 60$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Кварцит, Мармур, Філіт, Шиферний сланець",
       "title": "Апатит і Пірохлор",
       "type": "patchouli:text",
       "anchor": "normal_apatite"
@@ -379,7 +379,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 72%$(br)$(thing)Розплавляється в$(): Вісмут$(br)$(thing)Формула$(): Bi",
+      "text": "$(thing)Відсоток$(): 70%$(br)$(thing)Розплавляється в$(): Вісмут$(br)$(thing)Формула$(): Bi",
       "type": "patchouli:multiblock"
     },
     {
@@ -399,7 +399,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Розплавляється в$(): Свинець$(br)$(thing)Формула$(): Pb$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібна захисна маска)Слабка отруйність (інгаляція)$(/t)$()",
+      "text": "$(thing)Відсоток$(): 11%$(br)$(thing)Розплавляється в$(): Свинець$(br)$(thing)Формула$(): Pb$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібна захисна маска)Слабка отруйність (інгаляція)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -419,7 +419,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 9%$(br)$(thing)Розплавляється в$(): Срібло$(br)$(thing)Формула$(): Ag",
+      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Розплавляється в$(): Срібло$(br)$(thing)Формула$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -439,7 +439,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 8%$(br)$(thing)Джерело$(): Сірки$(br)$(thing)Формула$(): S",
+      "text": "$(thing)Відсоток$(): 9%$(br)$(thing)Джерело$(): Сірки$(br)$(thing)Формула$(): S",
       "type": "patchouli:multiblock"
     },
     {
@@ -471,7 +471,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 85%$(br)$(thing)Розплавляється в$(): Вісмут$(br)$(thing)Формула$(): Bi",
+      "text": "$(thing)Відсоток$(): 80%$(br)$(thing)Розплавляється в$(): Вісмут$(br)$(thing)Формула$(): Bi",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородна Срібла",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Розплавляється в$(): Срібло$(br)$(thing)Формула$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -492,26 +512,6 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Відсоток$(): 7%$(br)$(thing)Розплавляється в$(): Свинець$(br)$(thing)Формула$(): Pb$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібна захисна маска)Слабка отруйність (інгаляція)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Самородна Срібла",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/silver"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Розплавляється в$(): Срібло$(br)$(thing)Формула$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -2469,7 +2469,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 180$(br)$(thing)Щільність$(): 0.35$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): -64 — 26$(br)$(thing)Розмір$(): 28$(br)$(thing)Висота$(): 8$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ріоліт",
+      "text": "$(thing)Рідкість$(): 180$(br)$(thing)Щільність$(): 0.35$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): -64 — 32$(br)$(thing)Розмір$(): 28$(br)$(thing)Висота$(): 8$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Діорит, Ріоліт",
       "title": "Сапфір і Альмадін",
       "type": "patchouli:text",
       "anchor": "deep_sapphire"
@@ -3664,7 +3664,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 225$(br)$(thing)Щільність$(): 0.3$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): -64 — 30$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Аргиліт, Вапняк, Глинистий сланець, Доломіт, Конгломерат, Крейда, Кременистий сланець",
+      "text": "$(thing)Рідкість$(): 225$(br)$(thing)Щільність$(): 0.3$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): -64 — 30$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Аргиліт, Вапняк, Глинистий сланець, Доломіт, Конгломерат, Крейда, Кременистий сланець, Мармур",
       "title": "Хроміт і Магнетит",
       "type": "patchouli:text",
       "anchor": "deep_magnetite"

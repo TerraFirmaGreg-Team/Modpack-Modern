@@ -230,7 +230,7 @@ global.GTCEU_HIDED_ITEMS = /** @type {const} */ ([
 	  "gtceu:iv_damascus_steel_wrench",
 	  "gtceu:lv_damascus_steel_screwdriver",
 
-	  "gtceu:sus_record",
+	  "gtceu:sus_record"
 ]);
 //#endregion
 
@@ -250,7 +250,7 @@ global.GTCEU_ARMORS = /** @type {const} */ ([
     "gtceu:quarktech_leggings",
     "gtceu:quarktech_boots",
     "gtceu:quarktech_helmet",
-    "gtceu:advanced_quarktech_chestplate",
+    "gtceu:advanced_quarktech_chestplate"
 ]);
 //#endregion
 
@@ -313,7 +313,7 @@ global.TFG_CASTING_MOLDS = /** @type {const} */ ([
     "tfg:lamp_casting_mold",
     "tfg:trapdoor_casting_mold",
     "tfg:chain_casting_mold",
-    "tfg:bell_casting_mold",
+    "tfg:bell_casting_mold"
 ]);
 
 global.GTCEU_CASTING_MOLDS = /** @type {const} */ ([
@@ -334,7 +334,7 @@ global.GTCEU_CASTING_MOLDS = /** @type {const} */ ([
     "gtceu:small_pipe_casting_mold",
     "gtceu:normal_pipe_casting_mold",
     "gtceu:large_pipe_casting_mold",
-    "gtceu:huge_pipe_casting_mold",
+    "gtceu:huge_pipe_casting_mold"
 ]);
 //#endregion
 
@@ -371,7 +371,7 @@ global.ORE_BEARING_STONES = /** @type {const} */ ([
     "mars_stone",
     "venus_stone",
     "mercury_stone",
-    "glacio_stone",
+    "glacio_stone"
 ]);
 //#endregion
 
@@ -391,7 +391,10 @@ global.ADD_CIRCUIT = /** @type {const} */ ([
     { recipeId: "gtceu:large_chemical_reactor/sodium_bicarbonate_from_salt", circuitNumber: 2 },
     
     { recipeId: "gtceu:chemical_reactor/acetic_acid_from_methanol", circuitNumber: 1 },
-    { recipeId: "gtceu:large_chemical_reactor/acetic_acid_from_methanol", circuitNumber: 1 }
+    { recipeId: "gtceu:large_chemical_reactor/acetic_acid_from_methanol", circuitNumber: 1 },
+
+    { recipeId: "gtceu:chemical_reactor/butraldehyde", circuitNumber: 1 },
+    { recipeId: "gtceu:large_chemical_reactor/butraldehyde", circuitNumber: 1 }
 ]);
 //#endregion
 
@@ -406,6 +409,6 @@ global.GTCEU_SUPERCONDUCTORS = /** @type {const} */ ([
     { name: "indium_tin_barium_titanium_cuprate", materialId: "IndiumTinBariumTitaniumCuprate" },
     { name: "uranium_rhodium_dinaquadide", materialId: "UraniumRhodiumDinaquadide" },
     { name: "enriched_naquadah_trinium_europium_duranide", materialId: "EnrichedNaquadahTriniumEuropiumDuranide" },
-    { name: "ruthenium_trinium_americium_neutronate", materialId: "RutheniumTriniumAmericiumNeutronate" },
+    { name: "ruthenium_trinium_americium_neutronate", materialId: "RutheniumTriniumAmericiumNeutronate" }
 ]);
 //#endregion

@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)辉铋矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)金矿, 电石, 铝土矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)铁铝榴石, 蓝宝石$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)铜矿, 黄铜矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)银矿, 方铅矿, 铅矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)锡石矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)锰矿, 钽矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)闪锌矿, 方铅矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)闪锌矿, 黄铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)黝铜矿 (地表)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)黝铜矿 (普通)$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)辉铋矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)金矿, 蓝石, 铝土矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)铁铝榴石, 蓝宝石$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)铜矿, 黄铜矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)银矿, 方铅矿, 铅矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)锡石矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)锰矿, 钽矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)闪锌矿, 方铅矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)闪锌矿, 黄铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)黝铜矿 (地表)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)黝铜矿 (普通)$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1494,7 +1494,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)稀有度$(): 230$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 燧石, 白垩岩, 粘土岩, 花岗岩, 辉长岩, 闪长岩, 页岩",
-      "title": "金矿, 电石, 铝土矿",
+      "title": "金矿, 蓝石, 铝土矿",
       "type": "patchouli:text",
       "anchor": "mars_sapphire"
     },
@@ -1540,7 +1540,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "电石",
+      "name": "蓝石",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/electrotine"

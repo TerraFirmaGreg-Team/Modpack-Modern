@@ -451,8 +451,9 @@
 		}
 		{
 			dependencies: ["24ECDF70031B39C4"]
-			description: ["The &6Large Centrifugal Unit&r is a mandatory multiblock for your Fission Line.\\n\\nIt supports up to &52x EV Energy Hatches&r, allowing it to process &1IV-tier&r recipes using the same mechanic as the EBF, so it should feel familiar.\\n\\nThis machine can operate in two modes: &bCentrifuge&r and &6Thermal Centrifuge&r. You can easily switch between them directly in the controller interface.\\n\\nWith this upgrade, you can finally bring your &aore processing&r to a whole new level of speed."]
+			description: ["{quests.extreme_voltage.large_centrifuge.desc}"]
 			id: "10F870BCEC5D5C74"
+			subtitle: "{quests.extreme_voltage.large_centrifuge.subtitle}"
 			tasks: [{
 				id: "78C78EA1B0996FF9"
 				item: "gtceu:large_centrifuge"

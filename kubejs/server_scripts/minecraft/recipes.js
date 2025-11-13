@@ -350,6 +350,21 @@ const registerMinecraftRecipes = (event) => {
 		.duration(100)
 		.EUt(4)
 
+	event.shaped('2x minecraft:item_frame', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: '#tfc:lumber',
+		B: '#forge:cloth'
+	}).id('tfg:shaped/item_frame_from_cloth')
+
+	event.recipes.gtceu.assembler('item_frame_cloth')
+		.itemInputs('8x #tfc:lumber', '#forge:cloth')
+		.itemOutputs('4x minecraft:item_frame')
+		.duration(100)
+		.EUt(4)
+
 	//#endregion
 
 	//#region Выход: Свето-рамка, glowing item frame
