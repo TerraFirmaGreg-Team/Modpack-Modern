@@ -1161,7 +1161,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.IV])
 		
 	event.recipes.gtceu.mixer('tfg:chcl_urea_mixing')
-		.itemInputs('25x #forge:dusts/choline_chloride, 16x #forge:dusts/urea')
+		.itemInputs('25x #forge:dusts/choline_chloride', '16x #forge:dusts/urea')
 		.outputFluids(Fluid.of('tfg:chcl_urea', 3000))
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.EV])

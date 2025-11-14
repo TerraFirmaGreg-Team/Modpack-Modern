@@ -9,6 +9,10 @@
 		{
 			"type": "atom",
 			"element": "N",
+			"right": [
+				"H",
+				2
+			],
 			"index": 1,
 			"x": 5.132,
 			"y": 0.0667
