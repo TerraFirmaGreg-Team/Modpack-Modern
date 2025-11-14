@@ -1124,7 +1124,6 @@
   "material.tfg.triglyceride_oil": "Triglyceride Oil",
   "material.tfg.cholesterol": "Cholesterol",
   "material.tfg.butyric_acid": "Butyric Acid",
-  
   "material.tfg.glucose": "Glucose",
   "material.tfg.galactose": "Galactose",
   "material.tfg.fructose": "Fructose",
@@ -1134,7 +1133,13 @@
   "material.tfg.linolenic_acid": "α-Linolenic Acid",
   "material.tfg.isosorbide_ln": "Isosorbide Linolenate",
   "material.tfg.epox_isosorbide_ln": "Epoxidized Isosorbide Linolenate",
-  
+  "material.tfg.zircon": "Zircon",
+  "material.tfg.silicon_tetrachloride": "Silicon Tetrachloride",
+  "material.tfg.zirconium_tetrachloride": "Zirconium Tetrachloride",
+  "material.tfg.zirconium_oxide": "Zirconia",
+  "material.tfg.zirconium_bromide": "Zirconium(IV) Bromide",
+  "material.tfg.zirconium_diboride": "Zirconium Diboride",
+  "material.tfg.boron_carbide": "Boron Carbide",
   "ore_vein.tfg.deep_sheldonite": "Cooperite & Bornite",
   "ore_vein.tfg.deep_garnet_amethyst": "Amethyst & Garnet",
   "ore_vein.tfg.deep_garnet_opal": "Opal & Garnet",
