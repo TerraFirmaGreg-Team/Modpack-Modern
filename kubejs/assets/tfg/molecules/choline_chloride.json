@@ -1,0 +1,124 @@
+{
+	"contents": [
+		{
+			"type": "atom",
+			"element": "N",
+			"index": 0,
+			"x": 2.5684,
+			"y": 0.032
+		},
+		{
+			"type": "atom",
+			"index": 1,
+			"x": 3.4344,
+			"y": -0.468
+		},
+		{
+			"type": "atom",
+			"index": 2,
+			"x": 2.5684,
+			"y": 1.032
+		},
+		{
+			"type": "atom",
+			"index": 3,
+			"x": 1.7023,
+			"y": -0.468
+		},
+		{
+			"type": "atom",
+			"index": 4,
+			"x": 3.4344,
+			"y": 0.532
+		},
+		{
+			"type": "atom",
+			"index": 5,
+			"x": 4.3004,
+			"y": 0.032
+		},
+		{
+			"type": "atom",
+			"element": "O",
+			"right": "H",
+			"index": 6,
+			"x": 5.1664,
+			"y": 0.532
+		},
+		{
+			"sup": "+",
+			"atoms": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			],
+			"type": "parens"
+		},
+		{
+			"type": "atom",
+			"element": {
+				"symbol": "Cl⁻",
+				"color": {
+					"color": -14684129,
+					"optional": true
+				},
+				"material": "gtceu:chlorine"
+			},
+			"index": 7,
+			"x": 0.0,
+			"y": 0.0
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 1,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 2,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 3,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 4,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 4,
+			"b": 5,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 5,
+			"b": 6,
+			"lines": [
+				"solid"
+			]
+		}
+	]
+}

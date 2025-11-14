@@ -21,6 +21,14 @@ const registerTFGMaterials = (event) => {
 		.iconSet(GTMaterialIconSet.WOOD)
 		.color('0x52482c')
 		.secondaryColor('0x52482c')
+		
+	event.create('ammonium')
+		.components('1x nitrogen', '4x hydrogen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		
+	event.create('methoxy')
+		.components('1x oxygen', '1x carbon', '3x hydrogen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	// Important tags to add to fluids:
 	// tfc:usable_in_pot, tfc:usable_in_barrel, tfc:usable_in_wooden_bucket
@@ -280,13 +288,44 @@ const registerTFGMaterials = (event) => {
 		.color(0xFFFFBA)
 	//#endregion
 	
-	
+	//#region extract chitin
+	event.create('tfg:ammonium_carbamate')
+		.dust()
+		.components('1x ammonium', '2x oxygen', '1x carbon', '1x nitrogen', '2x hydrogen')
+		.color(0xEDE1A8)
+	event.create('tfg:urea')
+		.dust()
+		.components('1x oxygen', '1x carbon', '2x nitrogen', '4x hydrogen')
+		.color(0xFCEA7C)
+		
+	event.create('tfg:trimethylamine')
+		.gas()
+		.components('3x carbon', '9x hydrogen', '1x nitrogen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0x97F0D5)
+	event.create('tfg:ethylene_oxide')
+		.gas()
+		.components('2x carbon', '4x hydrogen', '1x oxygen')
+		.color(0xF5BFB3)
+	event.create('tfg:choline_chloride')
+		.dust()
+		.components('5x carbon', '14x hydrogen', '4x nitrogen', '1x oxygen', '1x chlorine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0x80E080)
+		
+	event.create('tfg:chcl_urea')
+		.liquid()
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0x71D194)
+	event.create('tfg:chitin')
+		.dust()
+		.components('16x carbon', '28x hydrogen', '2x nitrogen', '11x oxygen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xCFAE6B)
+	//#endregion
 	
 	//#region aerogel
-	event.create('methoxy')
-		.components('1x oxygen', '1x carbon', '3x hydrogen')
-		.color(0xFFFFFF)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+	
 	event.create('tfg:tmos')
 		.liquid()
 		.components('1x silicon', '4x methoxy')
@@ -422,7 +461,8 @@ const registerTFGMaterials = (event) => {
 	//#endregion
 
 	//#region Tungsten Line
-
+	
+		
 	event.create('tfg:sodium_tungstate')
 		.dust()
 		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES, GTMaterialFlags.DISABLE_DECOMPOSITION)
@@ -438,14 +478,14 @@ const registerTFGMaterials = (event) => {
 		.dust()
 		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES, GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.iconSet(GTMaterialIconSet.DULL)
-		.components('10x ammonia', '1x tfg:tungstate')
+		.components('10x ammonium', '1x tfg:tungstate')
 		.color('0xfafafa')
 
 	event.create('tfg:apt')
 		.gem()
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.iconSet(GTMaterialIconSet.FLINT)
-		.components('10x ammonia', '1x tfg:tungstate', '4x water')
+		.components('10x ammonium', '1x tfg:tungstate', '4x water')
 		.color('0xaabdf0')
 
 	event.create('tfg:tungsten_oxide')
@@ -544,7 +584,7 @@ const registerTFGMaterials = (event) => {
 	
 	// #endregion
 	
-	// #region ochem
+	// #region ochem that tom wants for something?
 	
 	event.create('tfg:glucose')
 		.dust()

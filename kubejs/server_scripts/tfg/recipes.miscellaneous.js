@@ -1044,7 +1044,7 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	//#endregion
 
-	//region ammonia borane
+	//#region ammonia borane
 	event.recipes.gtceu.chemical_reactor('tfg:sodium_hydride_synthesis')
 		.itemInputs('#forge:dusts/sodium')
 		.inputFluids(Fluid.of('gtceu:hydrogen', 1000))
@@ -1076,9 +1076,9 @@ function registerTFGMiscellaneousRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:hydrogen', 2000))
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.IV])
-	//endregion
+	//#endregion
 
-	//region polyurethane
+	//#region polyurethane
 	event.recipes.gtceu.chemical_reactor('tfg:aniline_synthesis')
 		.inputFluids(Fluid.of('gtceu:nitrobenzene', 1000), Fluid.of('gtceu:hydrogen', 6000))
 		.notConsumable('#forge:dusts/iron')
@@ -1114,9 +1114,60 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.IV])
 
-	//endregion
+	//#endregion
+	
+	//#region chitin extract
+	
+	event.recipes.gtceu.mixer('tfg:urea_mechanochem')
+		.inputFluids(Fluid.of('gtceu:ammonia', 2000), Fluid.of('gtceu:carbon_dioxide', 1000), Fluid.of('gtceu:distilled_water', 1000))
+		//.notConsumable('#forge:dusts/zirconium_oxide')
+		.outputFluids(Fluid.of('minecraft:water', 1000))
+		.itemOutputs('8x #forge:dusts/urea')
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.EV])
+	event.recipes.gtceu.chemical_reactor('tfg:ammonium_carbamate_synthesis')
+		.inputFluids(Fluid.of('gtceu:ammonia', 2000), Fluid.of('gtceu:carbon_dioxide', 1000))
+		.itemOutputs('11x #forge:dusts/ammonium_carbamate')
+		.circuit(1)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.HV])
+	event.recipes.gtceu.chemical_reactor('tfg:urea_from_carbamate')
+		.itemInputs('11x #forge:dusts/ammonium_carbamate')
+		.itemOutputs('8x #forge:dusts/urea')
+		.outputFluids(Fluid.of('minecraft:water', 1000))
+		.circuit(1)
+		.duration(160)
+		.EUt(GTValues.VA[GTValues.IV])
+	
+	//Give urea fertilizer recipes
+	
+	event.recipes.gtceu.chemical_reactor('tfg:trimethylamine_synthesis')
+		.inputFluids(Fluid.of('gtceu:ammonia', 1000), Fluid.of('gtceu:methanol', 3000))
+		.outputFluids(Fluid.of('minecraft:water', 3000), Fluid.of('tfg:trimethylamine', 1000))
+		.circuit(3)
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.MV])
+	event.recipes.gtceu.chemical_reactor('tfg:ethylene_oxide_synthesis')
+		.inputFluids(Fluid.of('gtceu:oxygen', 1000), Fluid.of('gtceu:ethylene', 1000))
+		.notConsumable('#forge:dusts/silver')
+		.outputFluids(Fluid.of('tfg:ethylene_oxide', 1000))
+		.circuit(4)
+		.duration(120)
+		.EUt(GTValues.VA[GTValues.EV])
+	event.recipes.gtceu.chemical_reactor('tfg:choline_chloride_synthesis')
+		.inputFluids(Fluid.of('tfg:trimethylamine', 1000), Fluid.of('tfg:ethylene_oxide', 1000), Fluid.of('gtceu:hydrochloric_acid', 1000))
+		.itemOutputs('25x #forge:dusts/choline_chloride')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.IV])
+		
+	event.recipes.gtceu.mixer('tfg:chcl_urea_mixing')
+		.itemInputs('25x #forge:dusts/choline_chloride, 16x #forge:dusts/urea')
+		.outputFluids(Fluid.of('tfg:chcl_urea', 3000))
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.EV])
+	//#endregion
 
-	//Aerogel
+	//#region Aerogel
 	event.recipes.gtceu.chemical_reactor('tfg:tmos_synthesis')
 		.inputFluids(Fluid.of('tfg:dimethyl_carbonate', 2000))
 		.itemInputs('#forge:dusts/silicon_dioxide')
