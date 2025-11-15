@@ -1015,4 +1015,21 @@ const registerFirmaLifeRecipes = (event) => {
 			},
 			"duration": 16000
 		}).id('tfg:barrel/shosha_wheel')
+	
+	// #region Oven heating recipes
+	
+	event.recipes.tfc.heating(`firmalife:oven_top`, 1399)
+			.resultItem(`firmalife:cured_oven_top`)
+			.id(`firmalife:oven_top`)
+	event.recipes.tfc.heating(`firmalife:oven_chimney`, 1399)
+			.resultItem(`firmalife:cured_oven_chimney`)
+			.id(`firmalife:oven_chimney`)
+	event.recipes.tfc.heating(`firmalife:oven_bottom`, 1399)
+			.resultItem(`firmalife:cured_oven_bottom`)
+			.id(`firmalife:oven_bottom`)
+	event.recipes.tfc.heating(`firmalife:oven_hopper`, 1399)
+			.resultItem(`firmalife:cured_oven_hopper`)
+			.id(`firmalife:oven_hopper`)
+
+	// #endregion
 }

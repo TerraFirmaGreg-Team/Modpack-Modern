@@ -850,13 +850,16 @@ global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_large_vessel", name: "large_vessel" },
     { input: "5x minecraft:clay_ball", output: "tfcchannelcasting:unfired_heart_mold", name: "heart_mold" },
     { input: "5x minecraft:clay_ball", output: "10x rnr:unfired_roof_tile", name: "roof_tile" },
+    { input: "5x minecraft:clay_ball", output: "firmalife:oven_top", name: "oven_top" },
+    { input: "5x minecraft:clay_ball", output: "firmalife:oven_chimney", name: "oven_chimney" },
+    { input: "5x minecraft:clay_ball", output: "firmalife:oven_bottom", name: "oven_bottom" },
+]);
+
+global.TFC_FIRE_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "5x tfc:fire_clay", output: "tfc:ceramic/unfired_fire_ingot_mold", name: "fire_ingot_mold" },
     { input: "5x tfc:fire_clay", output: "tfc:ceramic/unfired_crucible", name: "crucible" },
     { input: "5x tfc:fire_clay", output: "tfcchannelcasting:unfired_channel", name: "channel" },
     { input: "5x tfc:fire_clay", output: "tfcchannelcasting:unfired_mold_table", name: "mold_table" },
-    { input: "5x minecraft:clay_ball", output: "firmalife:oven_top", name: "oven_top" },
-    { input: "5x minecraft:clay_ball", output: "firmalife:oven_chimney", name: "oven_chimney" },
-    { input: "5x minecraft:clay_ball", output: "firmalife:oven_bottom", name: "oven_bottom" },
 ]);
 
 global.TFC_BATCH_TO_BOTTLE_ASSEMBLING_RECIPE_COMPONENTS = /** @type {const} */ ([
