@@ -1020,16 +1020,16 @@ const registerFirmaLifeRecipes = (event) => {
 	
 	event.recipes.tfc.heating(`firmalife:oven_top`, 1399)
 			.resultItem(`firmalife:cured_oven_top`)
-			.id(`firmalife:oven_top`)
+			.id(`tfg:heating/oven_top`)
 	event.recipes.tfc.heating(`firmalife:oven_chimney`, 1399)
 			.resultItem(`firmalife:cured_oven_chimney`)
-			.id(`firmalife:oven_chimney`)
+			.id(`tfg:heating/oven_chimney`)
 	event.recipes.tfc.heating(`firmalife:oven_bottom`, 1399)
 			.resultItem(`firmalife:cured_oven_bottom`)
-			.id(`firmalife:oven_bottom`)
+			.id(`tfg:heating/oven_bottom`)
 	event.recipes.tfc.heating(`firmalife:oven_hopper`, 1399)
 			.resultItem(`firmalife:cured_oven_hopper`)
-			.id(`firmalife:oven_hopper`)
+			.id(`tfg:heating/oven_hopper`)
 
 	// #endregion
 }
