@@ -78,7 +78,7 @@ function registerTFGItemSize(event) {
 
 	event.itemSize("tfg:trowel", "large", "medium", "trowel");
 
-	event.itemSize("tfg:railgun_ammo_shell", "large", "heavy", "trowel");
+	event.itemSize("tfg:railgun_ammo_shell", "large", "medium", "railgun_ammo_shell");
 
 	event.itemSize("tfg:harvest_basket", "large", "medium", "harvest_basket");
 	event.itemSize("tfg:aluminium_harvest_basket", "large", "medium", "aluminium_harvest_basket");
