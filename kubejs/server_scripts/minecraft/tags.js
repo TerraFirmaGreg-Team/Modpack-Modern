@@ -100,6 +100,8 @@ const registerMinecraftItemTags = (event) => {
 	event.add('forge:smooth_stone_slab', 'minecraft:polished_deepslate_slab')
 	event.add('forge:smooth_stone_slab', 'minecraft:polished_blackstone_slab')
     event.add('forge:smooth_stone_slab', 'minecraft:polished_blackstone_brick_slab')
+
+    event.add('tfc:rock/smooth', 'minecraft:smooth_stone')
 }
 
 const registerMinecraftBlockTags = (event) => {
