@@ -938,6 +938,22 @@ const registerGTCEURecipes = (event) => {
 	})
 	// #endregion
 
+	//#region support recycling
+	event.recipes.gtceu.macerator(`hardwood_support_to_dust`)
+		.itemInputs('#tfg:hardwood_supports')
+		.itemOutputs('gtceu:hardwood_dust')
+		.duration(150)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING);
+
+	event.recipes.gtceu.macerator(`softwood_support_to_dust`)
+		.itemInputs('#tfg:softwood_supports')
+		.itemOutputs('gtceu:wood_dust')
+		.duration(150)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING);
+	//#endregion
+
 	//#region Voiding covers
 
 	event.replaceInput({ id: 'gtceu:shaped/cover_fluid_voiding' },

@@ -151,6 +151,7 @@ function registerTFCItemTags(event) {
         event.add("tfg:hardwood", `#tfc:${woodType}_logs`);
         event.add("tfg:stripped_hardwood", `tfc:wood/stripped_log/${woodType}`);
         event.add("tfg:stripped_hardwood", `tfc:wood/stripped_wood/${woodType}`);
+        event.add("tfg:hardwood_supports", `tfc:wood/support/${woodType}`);
     });
 
     //Softwood Tags
@@ -158,6 +159,7 @@ function registerTFCItemTags(event) {
         event.add("tfg:softwood", `#tfc:${woodType}_logs`);
         event.add("tfg:stripped_softwood", `tfc:wood/stripped_log/${woodType}`);
         event.add("tfg:stripped_softwood", `tfc:wood/stripped_wood/${woodType}`);
+        event.add("tfg:softwood_supports", `tfc:wood/support/${woodType}`);
     });
 
     // Теги для сосудов по цветам
@@ -260,15 +262,19 @@ function registerTFCItemTags(event) {
 
     // Теги для каменных ступенек тфк
     global.TFC_STONE_TYPES.forEach((stoneTypeName) => {
+        
+        //Add to buttons
+        event.add("minecraft:stone_buttons", `tfc:rock/button/${stoneTypeName}`);
+        event.add("minecraft:buttons", `tfc:rock/button/${stoneTypeName}`);
+
+        //Add to rock slabs
         global.TFC_ROCK_SLAB_BLOCK_TYPES.forEach((slabType) => {
             event.add(`tfg:rock_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`);
             event.add(`tfg:rock_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`);
             event.add(`tfg:rock_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`);
         });
-    });
-
-    // Теги для кирпичных ступенек тфк
-    global.TFC_STONE_TYPES.forEach((stoneTypeName) => {
+        
+        //Add to brick slabs
         global.TFC_BRICK_SLAB_BLOCK_TYPES.forEach((slabType) => {
             event.add(`tfg:brick_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`);
             event.add(`tfg:brick_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`);
@@ -329,12 +335,6 @@ function registerTFCItemTags(event) {
 
     event.add("forge:mushrooms", "tfc:plant/artists_conk");
     event.add("forge:raw_materials/sylvite", "tfc:ore/sylvite");
-
-    global.TFC_STONE_TYPES.forEach((stone) => {
-        event.add("minecraft:stone_buttons", `tfc:rock/button/${stone}`);
-        event.add("minecraft:buttons", `tfc:rock/button/${stone}`);
-    });
-
     event.add("tfc:any_knapping", "#tfc:pit_kiln_straw");
     event.add("tfg:burlap_fiber", "tfc:jute_fiber");
 
