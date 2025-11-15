@@ -131,6 +131,17 @@ function registerTFCMachineRecipes(event) {
 			.EUt(2)
 	}
 
+	for (let i = 0; i < global.TFC_FIRE_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS.length; i++) {
+		let element = global.TFC_FIRE_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS[i];
+
+		event.recipes.gtceu.assembler(`tfg:tfc/${element.name}`)
+			.itemInputs(element.input)
+			.circuit(i)
+			.itemOutputs(element.output)
+			.duration(450)
+			.EUt(2)
+	}
+
 	event.recipes.gtceu.extruder('tfg:unfired_clay_brick')
 		.itemInputs('minecraft:clay_ball')
 		.notConsumable('gtceu:ingot_extruder_mold')
