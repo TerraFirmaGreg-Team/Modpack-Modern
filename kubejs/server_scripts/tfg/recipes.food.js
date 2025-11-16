@@ -108,7 +108,7 @@ function registerTFGFoodRecipes(event) {
 	 * @param {boolean?} isFirmaDynamic 
 	 */
 	function cookingRecipe(id, input, out, fluid, isFirmaDynamic) {
-		return registerFoodRecipe("food_oven", id, 300, GTValues.VA[GTValues.LV], "", {
+		return registerFoodRecipe("food_oven", id, 20 * 10, GTValues.VA[GTValues.LV], "", {
 			itemInputs: [input],
 			itemOutputs: [out],
 			fluidInputs: (fluid === undefined) ? [] : [fluid],
@@ -763,6 +763,7 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: ['tfc:powder/salt', '#tfc:foods/flour'],
 		fluidInputs: ['#tfg:clean_water 1000'],
 		itemOutputs: ['4x firmalife:food/hardtack_dough'],
+		circuit: 3,
 		itemOutputProvider: TFC.isp.of('4x firmalife:food/hardtack_dough').copyFood()
 	})
 
@@ -844,7 +845,7 @@ function registerTFGFoodRecipes(event) {
 
 	processorRecipe("salsa", 300, 8, {
 		circuit: 1,
-		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'firmalife:plant/cilantro'],
+		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'tfg:spice/cilantro_leaves'],
 		itemOutputs: ['5x firmalife:food/salsa'],
 		itemOutputProvider: TFC.isp.of('5x firmalife:food/salsa').copyFood()
 	})
@@ -1196,6 +1197,12 @@ function registerTFGFoodRecipes(event) {
 
 	event.recipes.tfc.heating('tfg:food/raw_long_pig_filet', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_long_pig_filet').copyFood())
+
+	event.recipes.tfc.heating('tfg:food/brioche_dough', 200)
+		.resultItem(TFC.isp.of('tfg:food/brioche_bun').copyFood());
+
+	event.recipes.tfc.heating('tfg:food/raw_burger_patty', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_burger_patty').copyFood());
 		
 	event.recipes.tfc.advanced_shapeless_crafting(
 		TFC.itemStackProvider.of('tfg:food/raw_stickastackatick').copyFood(),
@@ -1235,7 +1242,7 @@ function registerTFGFoodRecipes(event) {
 			TFC.ingredient.notRotten('betterend:amber_root_product'),
 			'tfg:wraptor_sugar'],
 			Fluid.of('minecraft:water', 1000))
-		.outputItem(TFC.isp.of('betterend:cave_pumpkin_pie_dough').copyOldestFood())
+		.outputItem('betterend:cave_pumpkin_pie_dough')
 		.id('tfg:mixing_bowl/cave_pumpkin_pie_dough')
 
 	event.recipes.tfc.advanced_shapeless_crafting(
@@ -1252,7 +1259,7 @@ function registerTFGFoodRecipes(event) {
 
 	// Dino nugs
 
-	registerFoodRecipe("food_oven", "raw_dino_nugget", 300, GTValues.VA[GTValues.LV], "", {
+	registerFoodRecipe("food_oven", "raw_dino_nugget", 300, GTValues.VA[GTValues.LV], 'tfg.food_recipe.deep_frying', {
 		itemInputs: ["tfg:food/raw_dino_nugget"],
 		itemOutputs: ["tfg:food/cooked_dino_nugget"],
 		fluidInputs: ['#firmalife:oils 100'],
@@ -1287,6 +1294,386 @@ function registerTFGFoodRecipes(event) {
 			[(portion) => portion.nutrientModifier(0.5).waterModifier(0.4)]
 		)
 	})
+
+	// Deep Frying
+	for (let i = 1; i <= 5; i++) {
+		// Fries
+		event.recipes.tfc.pot(
+			Array(i).fill('tfg:food/raw_fries'),
+			TFC.fluidStackIngredient('#firmalife:oils', 100 * i),
+			20*20,
+			200
+			)
+			.itemOutput(TFC.isp.of(`${i}x tfg:food/cooked_fries`).copyFood()
+		).id(`tfg:pot/cooked_fries_${i}`);
+
+		// Beer Battered Cheese Curds
+		event.recipes.tfc.pot(
+			Array(i).fill('tfg:food/raw_beer_battered_cheese_curds'),
+			TFC.fluidStackIngredient('#firmalife:oils', 100 * i),
+			20*20,
+			200
+			)
+			.itemOutput(TFC.isp.of(`${i}x tfg:food/cooked_beer_battered_cheese_curds`).copyFood()
+		).id(`tfg:pot/cooked_beer_battered_cheese_curds_${i}`);
+	};
+
+	// Fries
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('4x tfg:food/raw_fries').copyFood(),
+		[TFC.ingredient.notRotten('tfc:food/potato'), '#tfc:knives'], 
+		'tfc:food/potato'
+	).id(`tfg:crafting/raw_fries_knife`);
+
+	processorRecipe('raw_fries', 20*1, 8, {
+		itemInputs: ['tfc:food/potato'],
+		itemOutputs: ['4x tfg:food/raw_fries'],
+		circuit: 7,
+		itemOutputProvider: TFC.isp.of('4x tfg:food/raw_fries').copyFood()
+	});
+
+	registerFoodRecipe('food_oven', 'cooked_fries', 20*6, GTValues.VA[GTValues.ULV], 'tfg.food_recipe.deep_frying', {
+		itemInputs: ['tfg:food/raw_fries'],
+		itemOutputs: ['tfg:food/cooked_fries'],
+		fluidInputs: ['#firmalife:oils 100'],
+		itemOutputProvider: TFC.isp.of('tfg:food/cooked_fries').copyFood().addTrait('firmalife:oven_baked')
+	});
+
+	// Beer Battered Cheese Curds
+	registerFoodRecipe('food_oven', 'cooked_beer_battered_cheese_curds', 20*6, GTValues.VA[GTValues.ULV], 'tfg.food_recipe.deep_frying', {
+		itemInputs: ['tfg:food/raw_beer_battered_cheese_curds'],
+		itemOutputs: ['tfg:food/cooked_beer_battered_cheese_curds'],
+		fluidInputs: ['#firmalife:oils 100'],
+		itemOutputProvider: TFC.isp.of('tfg:food/cooked_beer_battered_cheese_curds').copyFood().addTrait('firmalife:oven_baked')
+	});
+
+	/**
+	 * @type {string[]} - Beer types for beer battered cheese curds.
+	 */
+	const beer = ['tfc:beer', 'tfcagedalcohol:aged_beer'];
+	beer.forEach(beerType => {
+		processorRecipe(`raw_beer_battered_cheese_curds/${beerType.replace(':', '_')}`, 20*5, GTValues.VA[GTValues.ULV], {
+			itemInputs: ['4x #tfg:foods/cheese_curds', '#tfc:foods/flour', 'tfc:powder/salt', '#forge:eggs'],
+			fluidInputs: [`${beerType} 100`],
+			itemOutputs: ['4x tfg:food/raw_beer_battered_cheese_curds'],
+			itemOutputProvider: TFC.isp.of('4x tfg:food/raw_beer_battered_cheese_curds').copyOldestFood()
+		});
+	});
+
+	// Hamburgers
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.isp.of('tfg:food/hamburger').meal(
+			(food) => food.hunger(4).decayModifier(1.3),
+			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.1)]
+		), 
+		[
+			'CA ',
+			'BBB',
+			' A '
+		], {
+			A: TFC.ingredient.notRotten('tfg:food/brioche_bun'),
+			B: TFC.ingredient.notRotten('#tfg:foods/usable_in_burgers'),
+			C: '#forge:tools/knives'
+		},
+		0,
+		0
+	).id('tfg:crafting/hamburger');
+
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.isp.of('tfg:food/cheeseburger').meal(
+			(food) => food.hunger(4).decayModifier(1.3),
+			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.1)]
+		), 
+		[
+			'CA ',
+			'BBD',
+			' A '
+		], {
+			A: TFC.ingredient.notRotten('tfg:food/brioche_bun'),
+			B: TFC.ingredient.notRotten('#tfg:foods/usable_in_burgers'),
+			C: '#forge:tools/knives',
+			D: TFC.ingredient.notRotten('#tfg:foods/cheeses')
+		},
+		0,
+		0
+	).id('tfg:crafting/cheeseburger');
+
+	// Prosessor burgers allow extra ingredients.
+	for (let i = 1; i <= 5; i++) {
+		processorRecipe(`hamburger_${i}`, 20*1, GTValues.VA[GTValues.ULV], {
+			itemInputs: [`${i}x #tfg:foods/usable_in_burgers`, '2x tfg:food/brioche_bun'],
+			itemOutputs: ['tfg:food/hamburger'],
+			circuit: i,
+			itemOutputProvider: TFC.isp.of('tfg:food/hamburger').meal(
+				(food) => food.hunger(4).decayModifier(1.3),
+				[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.1)]
+			)
+		});
+	};
+
+	for (let i = 1; i <= 4; i++) {
+		processorRecipe(`cheeseburger_${i}`, 20*1, GTValues.VA[GTValues.ULV], {
+			itemInputs: [`${i}x #tfg:foods/usable_in_burgers`, '2x tfg:food/brioche_bun', '#tfg:foods/cheeses'],
+			itemOutputs: ['tfg:food/cheeseburger'],
+			circuit: i,
+			itemOutputProvider: TFC.isp.of('tfg:food/cheeseburger').meal(
+				(food) => food.hunger(4).decayModifier(1.3),
+				[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.1)]
+			)
+		});
+	};
+
+	// Tirage Mixture
+	event.recipes.gtceu.food_processor('tfg:tirage_mixture')
+		.itemInputs('#tfc:sweetener')
+		.inputFluids(Fluid.of('firmalife:yeast_starter', 100))
+		.itemOutputs('firmalife:tirage_mixture')
+		.duration(10)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	// Brioche Dough
+	event.recipes.firmalife.mixing_bowl()
+		.itemIngredients([
+			TFC.ingredient.notRotten('#forge:eggs'),
+			TFC.ingredient.notRotten('#tfc:foods/flour'),
+			TFC.ingredient.notRotten('#tfc:foods/flour'),
+			'firmalife:tirage_mixture'
+		])
+		.fluidIngredient(TFC.fluidStackIngredient('#tfc:milks', 500))
+		.outputItem('6x tfg:food/brioche_dough')
+		.id('tfg:mixing_bowl/brioche_dough');
+	
+	processorRecipe('brioche_dough/tirage_mixture', 20*2, GTValues.VA[GTValues.ULV], {
+		itemInputs: ['2x #tfc:foods/flour', '#forge:eggs', 'firmalife:tirage_mixture'],
+		fluidInputs: ['#tfc:milks 500'],
+		itemOutputs: ['6x tfg:food/brioche_dough'],
+		circuit: 5,
+		itemOutputProvider: TFC.isp.of('6x tfg:food/brioche_dough').copyOldestFood()
+	});
+
+	processorRecipe('brioche_dough/yeast', 20*2, GTValues.VA[GTValues.ULV], {
+		itemInputs: ['2x #tfc:foods/flour', '#forge:eggs', '#tfc:sweetener'],
+		fluidInputs: ['#tfc:milks 500', 'firmalife:yeast_starter 100'],
+		itemOutputs: ['6x tfg:food/brioche_dough'],
+		circuit: 5,
+		itemOutputProvider: TFC.isp.of('6x tfg:food/brioche_dough').copyOldestFood()
+	});
+
+	cookingRecipe('brioche_bun', 'tfg:food/brioche_dough', 'tfg:food/brioche_bun');
+
+	// Burger Patty
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('tfg:food/raw_burger_patty').copyFood(),
+		[
+			TFC.ingredient.notRotten('#tfg:foods/burger_meats'),
+			'#forge:tools/mortars'
+		]
+	).id('tfg:crafting/raw_burger_patty');
+
+	processorRecipe('raw_burger_patty', 20*1, GTValues.VA[GTValues.ULV], {
+		itemInputs: ['#tfg:foods/burger_meats'],
+		itemOutputs: ['tfg:food/raw_burger_patty'],
+		notConsumable: ['gtceu:wire_extruder_mold'],
+		itemOutputProvider: TFC.isp.of('tfg:food/raw_burger_patty').copyFood()
+	});
+
+	// Rich Stock
+	event.recipes.tfc.pot(
+		[
+			'#tfg:foods/makes_rich_stock',
+			'#tfc:foods/vegetables',
+			'#forge:bones',
+			'tfc:powder/salt',
+			'tfg:spice/bay_leaf'
+		],
+		TFC.fluidStackIngredient('#tfg:clean_water', 1000),
+		20*15,
+		200
+		)
+		.fluidOutput(Fluid.of('tfg:rich_stock', 1000)
+	).id('tfg:pot/rich_stock');
+
+	processorRecipe('rich_stock', 20*5, GTValues.VA[GTValues.ULV], {
+		itemInputs: [
+			'#tfg:foods/makes_rich_stock',
+			'#tfc:foods/vegetables',
+			'#forge:bones',
+			'tfc:powder/salt',
+			'tfg:spice/bay_leaf'
+		],
+		fluidInputs: ['#tfg:clean_water 1000'],
+		fluidOutputs: [Fluid.of('tfg:rich_stock', 1000)]
+	});
+
+	// Light Stock
+	event.recipes.tfc.pot(
+		[
+			'#tfg:foods/makes_light_stock',
+			'#tfc:foods/vegetables',
+			'#forge:bones',
+			'tfc:powder/salt',
+			'firmalife:spice/basil_leaves'
+		],
+		TFC.fluidStackIngredient('#tfg:clean_water', 1000),
+		20*15,
+		200
+		)
+		.fluidOutput(Fluid.of('tfg:light_stock', 1000)
+	).id('tfg:pot/light_stock');
+
+	processorRecipe('light_stock', 20*5, GTValues.VA[GTValues.ULV], {
+		itemInputs: [
+			'#tfg:foods/makes_light_stock',
+			'#tfc:foods/vegetables',
+			'#forge:bones',
+			'tfc:powder/salt',
+			'firmalife:spice/basil_leaves'
+		],
+		fluidInputs: ['#tfg:clean_water 1000'],
+		fluidOutputs: [Fluid.of('tfg:light_stock', 1000)]
+	});
+
+	// Brown Gravy
+	processorRecipe('brown_gravy', 20*5, GTValues.VA[GTValues.ULV], {
+		itemInputs: [
+			'#tfc:foods/flour',
+			'firmalife:food/butter',
+			'tfg:spice/allspice'
+		],
+		fluidInputs: ['tfg:light_stock 1000', 'tfg:dark_stock 1000'],
+		fluidOutputs: [Fluid.of('tfg:brown_gravy', 2000)]
+	});
+
+	// Poutine
+	processorRecipe('poutine', 20*10, GTValues.VA[GTValues.LV], {
+		itemInputs: [
+			'4x tfg:food/cooked_fries',
+			'#tfg:foods/cheese_curds',
+			'2x #tfc:bowls'
+		],
+		fluidInputs: ['tfg:brown_gravy 500'],
+		itemOutputs: ['2x tfg:food/poutine'],
+		itemOutputProvider: TFC.isp.of('2x tfg:food/poutine').simpleModifier('tfg:add_bowl').meal(
+            (food) => food.hunger(5).water(5).saturation(1).decayModifier(1).grain(1).protein(0.5).dairy(1.5),
+			[(portion) => portion.nutrientModifier(0.8).saturationModifier(1)]
+		)
+	});
+
+	// Oatmeal
+	for (let i = 1; i <= 4; i++) {
+		processorRecipe(`oatmeal_${i}`, 20*15, GTValues.VA[GTValues.LV], {
+			itemInputs: [
+				'4x #tfc:bowls',
+				'tfc:food/oat_grain',
+				`${i}x #tfg:foods/usable_in_oatmeal`,
+				'#tfc:sweetener'
+			],
+			fluidInputs: ['#tfc:milks 1000'],
+			itemOutputs: ['4x tfg:food/oatmeal'],
+			circuit: i,
+			itemOutputProvider: TFC.isp.of('4x tfg:food/oatmeal').simpleModifier('tfg:add_bowl').meal(
+				(food) => food.hunger(5).water(5).saturation(1).decayModifier(1.4).dairy(1.5),
+				[(portion) => portion.nutrientModifier(0.7).saturationModifier(0.7)]
+			)
+		});
+	};
+
+	// Sodium Dihydrogen Citrate
+	event.recipes.gtceu.chemical_reactor('tfg:sodium_dihydrogen_citrate')
+		.itemInputs(
+			ChemicalHelper.get(TagPrefix.dust, 'tfg:citric_acid', 1),
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.SodiumBicarbonate, 1)
+		)
+		.itemOutputs('tfg:sodium_dihydrogen_citrate_dust')
+		.outputFluids(
+			Fluid.of('minecraft:water', 1000),
+			Fluid.of('gtceu:carbon_dioxide', 1000)
+		)
+		.duration(20*10)
+		.EUt(GTValues.VA[GTValues.HV]);
+
+	// Citric Acid
+	processorRecipe('citric_acid', 20*20, GTValues.VA[GTValues.HV], {
+		itemInputs: [
+			'#tfg:foods/citrus_fruits',
+			'gtceu:calcium_hydroxide_dust'
+		],
+		fluidInputs: ['gtceu:sulfuric_acid 100'],
+		itemOutputs: ['2x tfg:citric_acid_dust' ]
+	});
+
+	// Slice of "Cheese"
+	event.recipes.gtceu.food_processor('tfg:slice_of_cheese')
+		.itemInputs(
+			ChemicalHelper.get(TagPrefix.dust, 'gtceu:lactose', 1),
+			ChemicalHelper.get(TagPrefix.dust, 'tfg:cholesterol', 1),
+			ChemicalHelper.get(TagPrefix.dust, 'tfg:sodium_dihydrogen_citrate', 1),
+			ChemicalHelper.get(TagPrefix.foil, GTMaterials.Polyethylene, 8)
+		)
+		.inputFluids('#tfg:clean_water 1000')
+		.itemOutputs('8x tfg:food/slice_of_cheese')
+		.duration(20 * 20)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	// Instant Mac
+	processorRecipe('raw_instant_mac', 20 * 10, GTValues.VA[GTValues.LV], {
+		itemInputs: ['firmalife:food/raw_egg_noodles', '#tfg:foods/cheeses', 'create:cardboard'],
+		itemOutputs: ['2x tfg:food/raw_instant_mac'],
+		fluidInputs: ['gtceu:polyethylene 100'],
+		itemOutputProvider: TFC.isp.of('2x tfg:food/raw_instant_mac').copyFood()
+	});
+
+	registerFoodRecipe('food_oven', 'cooked_instant_mac', 20 * 1, GTValues.VA[GTValues.LV], '' ,{
+		itemInputs: ['tfg:food/raw_instant_mac'],
+		itemOutputs: ['tfg:food/cooked_instant_mac'],
+		fluidInputs: ['#tfc:milks 500'],
+		itemOutputProvider: TFC.isp.of('tfg:food/cooked_instant_mac').copyFood()
+	});
+
+	//#region Spices
+
+	// Skips the first two spices as they are already in Firmalife
+	global.SPICES.slice(2).forEach(spice => {
+		event.recipes.tfc.advanced_shapeless_crafting(
+			Item.of(spice.product).withCount(2),
+			[
+				spice.plant,
+				'#forge:tools/knives'
+			]
+		).id(`tfg:crafting/${spice.product.replace(':', '_')}`);
+
+		event.recipes.gtceu.food_processor(`tfg:${spice.product.replace(':', '_')}`)
+			.itemInputs(spice.plant)
+			.itemOutputs(Item.of(spice.product).withCount(2))
+			.duration(10)
+			.circuit(1)
+			.EUt(GTValues.VA[GTValues.ULV]);
+	});
+
+	// Replace input didnt work.
+	event.remove({id: 'firmalife:crafting/salsa'});
+	event.replaceInput({id: 'firmalife:crafting/lasagna'},'firmalife:plant/oregano','tfg:spice/oregano_leaves');
+
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('firmalife:food/salsa').copyFood(),
+		[
+			'tfg:spice/cilantro_leaves',
+			'tfc:food/tomato',
+			'tfc:powder/salt',
+			'#forge:tools/knives'
+		]
+	).id('tfg:crafting/salsa');
+
+	//#endregion
+
+	processorRecipe('nixtamal', 20*30, GTValues.VA[GTValues.ULV], {
+		itemInputs: ['firmalife:food/cured_maize'],
+		fluidInputs: ['#tfg:clean_water 100'],
+		itemOutputs: ['firmalife:food/nixtamal'],
+		circuit: 1,
+		itemOutputProvider: TFC.isp.of('firmalife:food/nixtamal').copyFood()
+	});
 
 	//#endregion
 	//#region Machine Recipes

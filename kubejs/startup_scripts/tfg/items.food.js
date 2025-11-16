@@ -335,4 +335,155 @@ function registerTFGFoodItems(event) {
 				ctx.player.give('tfc:ceramic/bowl')
 			})
 		})
+
+	// Fried Cheese Curds
+	event.create('tfg:food/raw_beer_battered_cheese_curds')
+		.translationKey('item.tfg.food.raw_beer_battered_cheese_curds')
+		.texture('tfg:item/food/raw_beer_battered_cheese_curds')
+		.food(food => food.hunger(1).saturation(1))
+		.tag('tfc:foods');
+
+	event.create('tfg:food/cooked_beer_battered_cheese_curds')
+		.translationKey('item.tfg.food.cooked_beer_battered_cheese_curds')
+		.texture('tfg:item/food/cooked_beer_battered_cheese_curds')
+		.food(food => food.hunger(3).saturation(2))
+		.tag('tfc:foods')
+		.tag('tfc:foods/usable_in_burgers');
+
+	// French Fries
+	event.create('tfg:food/raw_fries')
+		.translationKey('item.tfg.food.raw_fries')
+		.texture('tfg:item/food/raw_fries')
+		.food(food => food.hunger(1).saturation(1))
+		.tag('tfc:foods');
+
+	event.create('tfg:food/cooked_fries')
+		.translationKey('item.tfg.food.cooked_fries')
+		.texture('tfg:item/food/cooked_fries')
+		.food(food => food.hunger(3).saturation(2))
+		.tag('tfc:foods')
+		.tag('tfc:foods/usable_in_burgers');
+
+	// Poutine
+	event.create('tfg:food/poutine')
+		.translationKey('item.tfg.food.poutine')
+		.texture('tfg:item/food/poutine')
+		.food(food => food.hunger(8).saturation(6))
+		.tag('tfc:foods');
+
+	// Brioche Bun
+	event.create('tfg:food/brioche_dough')
+		.translationKey('item.tfg.food.brioche_dough')
+		.texture('tfg:item/food/brioche_dough')
+		.food(food => food.hunger(2).saturation(1))
+		.tag('tfc:foods');
+
+	event.create('tfg:food/brioche_bun')
+		.translationKey('item.tfg.food.brioche_bun')
+		.texture('tfg:item/food/brioche_bun')
+		.food(food => food.hunger(4).saturation(2))
+		.tag('tfc:foods');
+
+	// Burgers
+	event.create('tfg:food/raw_burger_patty')
+		.translationKey('item.tfg.food.raw_burger_patty')
+		.texture('tfg:item/food/raw_burger_patty')
+		.food(food => food.hunger(2).saturation(1)
+			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods')
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/raw_meats')
+		.tag('tfc:foods/can_be_salted');
+
+	event.create('tfg:food/cooked_burger_patty')
+		.translationKey('item.tfg.food.cooked_burger_patty')
+		.texture('tfg:item/food/cooked_burger_patty')
+		.food(food => food.hunger(5).saturation(4))
+		.tag('tfc:foods')
+		.tag('tfc:foods/meats')
+		.tag('tfc:foods/cooked_meats')
+		.tag('tfg:foods/usable_in_burgers');
+
+	event.create('tfg:food/hamburger')
+		.translationKey('item.tfg.food.hamburger')
+		.texture('tfg:item/food/hamburger')
+		.food(food => food.hunger(12).saturation(10))
+		.tag('tfc:foods');
+
+	event.create('tfg:food/cheeseburger')
+		.translationKey('item.tfg.food.cheeseburger')
+		.texture('tfg:item/food/cheeseburger')
+		.food(food => food.hunger(12).saturation(10))
+		.tag('tfc:foods');
+
+	// Slice of "Cheese" (intentionally not tagged as food)
+	event.create('tfg:food/slice_of_cheese')
+		.translationKey('item.tfg.food.slice_of_cheese')
+		.texture('tfg:item/food/slice_of_cheese')
+		.food(food => food.hunger(4).saturation(2)
+			.eaten(ctx => {
+				ctx.player.give(ChemicalHelper.get(TagPrefix.foil, GTMaterials.Polyethylene, 1))
+			}))
+		.tag('tfc:foods/usable_in_jam_sandwich')
+		.tag('tfc:foods/usable_in_jam_sandwich_2')
+		.tag('tfc:foods/usable_in_sandwich')
+		.tag('tfg:foods/usable_in_meal_bag')
+		.tag('tfc:foods/dairy');
+
+	// Oatmeal
+	event.create('tfg:food/oatmeal')
+		.translationKey('item.tfg.food.oatmeal')
+		.texture('tfg:item/food/oatmeal')
+		.food(food => food.hunger(8).saturation(8));
+
+	// Instant Mac
+	event.create('tfg:food/raw_instant_mac')
+		.translationKey('item.tfg.food.raw_instant_mac')
+		.texture('tfg:item/food/raw_instant_mac')
+		.food(food => food.hunger(2).saturation(2)
+			.eaten(ctx => {
+				ctx.player.give('create:cardboard')
+			}));
+
+	event.create('tfg:food/cooked_instant_mac')
+		.translationKey('item.tfg.food.cooked_instant_mac')
+		.texture('tfg:item/food/cooked_instant_mac')
+		.food(food => food.hunger(4).saturation(4)
+			.eaten(ctx => {
+				ctx.player.give('create:cardboard')
+			}));
+
+	//#region Spices
+
+	// Bay
+	event.create('tfg:spice/bay_leaf')
+		.translationKey('item.tfg.food.bay_leaf')
+		.texture('tfg:item/food/bay_leaf');
+
+	// Cardamom
+	event.create('tfg:spice/cardamom_pods')
+		.translationKey('item.tfg.food.cardamom_pods')
+		.texture('tfg:item/food/cardamom_pods');
+
+	// Cilantro
+	event.create('tfg:spice/cilantro_leaves')
+		.translationKey('item.tfg.food.cilantro_leaves')
+		.texture('tfg:item/food/cilantro_leaves');
+
+	// Cumin
+	event.create('tfg:spice/cumin_seeds')
+		.translationKey('item.tfg.food.cumin_seeds')
+		.texture('tfg:item/food/cumin_seeds');
+
+	// Oregano
+	event.create('tfg:spice/oregano_leaves')
+		.translationKey('item.tfg.food.oregano_leaves')
+		.texture('tfg:item/food/oregano_leaves');
+
+	// Allspice
+	event.create('tfg:spice/allspice')
+		.translationKey('item.tfg.food.allspice')
+		.texture('tfg:item/food/allspice');
+
+	//#endregion
 }

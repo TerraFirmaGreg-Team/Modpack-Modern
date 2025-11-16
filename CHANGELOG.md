@@ -22,6 +22,9 @@
 - Added a little more silver to surface bismuth veins, moved apatite veins closer to the surface and with deeper indicators, increased deep sapphire veins' max Y level and added a rock type, and also added a rock type to deep magnetite's veins (all overworld only) @Pyritie
 - Buffed the amount of roof tiles from clay knapping (#2178) @Pyritie
 - Added sugar cookies, toasts, jams, pickled eggs, and butter to the meal bag tag, removed banana splits (#2129) @Pyritie
+- Added lots of new food items including fries, burgers, oatmeal, mac and cheese, poutine, and more! @Redeix
+- Added processed spices for firmalife spice crops (except cinnamon). @Redeix
+- Reduced base food oven recipe time from 300 to 200 ticks @Redeix
 ### Bug fixes
 - Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
 - Fixed the HV aqueous accumulator water recipe so the amount of water can actually fit in the HV machine @Pyritie
@@ -35,6 +38,8 @@
 - Fixed not being able to put Seed Oil in a Mixing Bowl (#2203) @slavek
 - Added missing items to the smooth stone slabs tag, cleaned up armor stand recipes (#2197) @Pyritie
 - Fixed milk curd recipes in food processor outputting rotten curds. (#2209) @Redeix
+- Fixed missing nixtamal food processor recipes. @Redeix
+- Fixed missing lang string from loading screen. @Redeix
 ### Translation updates
 - Russian @DI-GitH + @nineex + @alexart2006
 - Brazilian Portuguese @Redeix

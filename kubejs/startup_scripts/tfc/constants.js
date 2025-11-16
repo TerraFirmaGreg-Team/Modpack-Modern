@@ -573,7 +573,7 @@ global.TFC_DISABLED_ITEMS = /** @type {const} */ ([
     "tfc:bucket/metal/steel",
     "tfc:bucket/metal/black_steel",
     "tfc:bucket/metal/blue_steel",
-    "tfc:bucket/metal/red_steel",
+    "tfc:bucket/metal/red_steel"
 ]);
 
 /** Items that need to be hidden, but you want to keep their tags.*/
@@ -600,7 +600,7 @@ global.TFC_HIDDEN_ITEMS = /** @type {const} */ ([
     "tfc:wild_crop/squash",
     "tfc:wild_crop/sugarcane",
     "tfc:wild_crop/tomato",
-    "tfc:wild_crop/jute",
+    "tfc:wild_crop/jute"
 ]);
 
 /**
@@ -626,7 +626,7 @@ global.TFC_STONE_TYPES = /** @type {const} */ ([
     "basalt", // Exists in GT
     "diorite", // Exists in GT
     "andesite", // Exists in GT
-    "granite", // Exists in GT
+    "granite" // Exists in GT
 ]);
 
 global.TFC_WOOD_TYPES = /** @type {const} */ ([
@@ -649,7 +649,7 @@ global.TFC_WOOD_TYPES = /** @type {const} */ ([
     "spruce",
     "sycamore",
     "white_cedar",
-    "willow",
+    "willow"
 ]);
 
 global.TFC_HARDWOOD_TYPES = /** @type {const} */ ([
@@ -663,7 +663,7 @@ global.TFC_HARDWOOD_TYPES = /** @type {const} */ ([
     "maple",
     "oak",
     "rosewood",
-    "sycamore",
+    "sycamore"
 ]);
 
 global.TFC_SOFTWOOD_TYPES = /** @type {const} */ ([
@@ -675,7 +675,7 @@ global.TFC_SOFTWOOD_TYPES = /** @type {const} */ ([
     "sequoia",
     "spruce",
     "white_cedar",
-    "willow",
+    "willow"
 ]);
 
 global.TFC_MUD_TYPES = /** @type {const} */ (["silt", "loam", "sandy_loam", "silty_loam"]);
@@ -712,7 +712,7 @@ global.TFC_WOOD_ITEM_TYPES_TO_WOOD_DUST = /** @type {const} */ ({
     "#tfcastikorcarts:animal_cart": { name: "animal_cart", output: ["2x gtceu:wood_dust"] },
     "#tfcastikorcarts:supply_cart": { name: "supply_cart", output: ["2x gtceu:wood_dust"] },
     "#firmalife:food_shelves": { name: "food_shelves", output: ["2x gtceu:wood_dust"] },
-    "#firmalife:hangers": { name: "hangers", output: ["1x gtceu:wood_dust"] },
+    "#firmalife:hangers": { name: "hangers", output: ["1x gtceu:wood_dust"] }
 });
 
 /**
@@ -750,7 +750,7 @@ global.TFC_SIMPLE_MATERIALS = /** @type {const} */ ([
     "emerald",
     "lapis_lazuli",
     "ruby",
-    "sapphire",
+    "sapphire"
 ]);
 
 global.TFC_ORE_TYPES = /** @type {const} */ (["poor", "normal", "rich"]);
@@ -767,40 +767,24 @@ global.TFC_ORE_MATERIALS = /** @type {const} */ ([
     "native_gold",
     "native_silver",
     "sphalerite",
-    "tetrahedrite",
+    "tetrahedrite"
 ]);
 
 global.TFC_FURNACE_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfc:ceramic/unfired_ingot_mold", output: "tfc:ceramic/ingot_mold", name: "ingot_mold" },
-    {
-        input: "tfc:ceramic/unfired_pickaxe_head_mold",
-        output: "tfc:ceramic/pickaxe_head_mold",
-        name: "pickaxe_head_mold",
-    },
-    {
-        input: "tfc:ceramic/unfired_propick_head_mold",
-        output: "tfc:ceramic/propick_head_mold",
-        name: "propick_head_mold",
-    },
+    { input: "tfc:ceramic/unfired_pickaxe_head_mold", output: "tfc:ceramic/pickaxe_head_mold", name: "pickaxe_head_mold" },
+    { input: "tfc:ceramic/unfired_propick_head_mold", output: "tfc:ceramic/propick_head_mold", name: "propick_head_mold" },
     { input: "tfc:ceramic/unfired_axe_head_mold", output: "tfc:ceramic/axe_head_mold", name: "axe_head_mold" },
     { input: "tfc:ceramic/unfired_shovel_head_mold", output: "tfc:ceramic/shovel_head_mold", name: "shovel_head_mold" },
     { input: "tfc:ceramic/unfired_hoe_head_mold", output: "tfc:ceramic/hoe_head_mold", name: "hoe_head_mold" },
     { input: "tfc:ceramic/unfired_chisel_head_mold", output: "tfc:ceramic/chisel_head_mold", name: "chisel_head_mold" },
     { input: "tfc:ceramic/unfired_hammer_head_mold", output: "tfc:ceramic/hammer_head_mold", name: "hammer_head_mold" },
     { input: "tfc:ceramic/unfired_saw_blade_mold", output: "tfc:ceramic/saw_blade_mold", name: "saw_blade_mold" },
-    {
-        input: "tfc:ceramic/unfired_javelin_head_mold",
-        output: "tfc:ceramic/javelin_head_mold",
-        name: "javelin_head_mold",
-    },
+    { input: "tfc:ceramic/unfired_javelin_head_mold", output: "tfc:ceramic/javelin_head_mold", name: "javelin_head_mold" },
     { input: "tfc:ceramic/unfired_sword_blade_mold", output: "tfc:ceramic/sword_blade_mold", name: "sword_blade_mold" },
     { input: "tfc:ceramic/unfired_mace_head_mold", output: "tfc:ceramic/mace_head_mold", name: "mace_head_mold" },
     { input: "tfc:ceramic/unfired_knife_blade_mold", output: "tfc:ceramic/knife_blade_mold", name: "knife_blade_mold" },
-    {
-        input: "tfc:ceramic/unfired_scythe_blade_mold",
-        output: "tfc:ceramic/scythe_blade_mold",
-        name: "scythe_blade_mold",
-    },
+    { input: "tfc:ceramic/unfired_scythe_blade_mold", output: "tfc:ceramic/scythe_blade_mold", name: "scythe_blade_mold" },
     { input: "tfc:ceramic/unfired_bell_mold", output: "tfc:ceramic/bell_mold", name: "bell_mold" },
     { input: "tfc:ceramic/unfired_fire_ingot_mold", output: "tfc:ceramic/fire_ingot_mold", name: "fire_ingot_mold" },
     { input: "tfc:ceramic/unfired_brick", output: "minecraft:brick", name: "brick" },
@@ -816,7 +800,7 @@ global.TFC_FURNACE_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfc:ceramic/unfired_vessel", output: "tfc:ceramic/vessel", name: "vessel" },
     { input: "tfc:ceramic/unfired_large_vessel", output: "tfc:ceramic/large_vessel", name: "large_vessel" },
     { input: "tfcchannelcasting:unfired_channel", output: "tfcchannelcasting:channel", name: "channel" },
-    { input: "tfcchannelcasting:unfired_mold_table", output: "tfcchannelcasting:mold_table", name: "mold_table" },
+    { input: "tfcchannelcasting:unfired_mold_table", output: "tfcchannelcasting:mold_table", name: "mold_table" }
 ]);
 
 global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
@@ -849,14 +833,14 @@ global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "5x tfc:fire_clay", output: "tfc:ceramic/unfired_fire_ingot_mold", name: "fire_ingot_mold" },
     { input: "5x tfc:fire_clay", output: "tfc:ceramic/unfired_crucible", name: "crucible" },
     { input: "5x tfc:fire_clay", output: "tfcchannelcasting:unfired_channel", name: "channel" },
-    { input: "5x tfc:fire_clay", output: "tfcchannelcasting:unfired_mold_table", name: "mold_table" },
+    { input: "5x tfc:fire_clay", output: "tfcchannelcasting:unfired_mold_table", name: "mold_table" }
 ]);
 
 global.TFC_BATCH_TO_BOTTLE_ASSEMBLING_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfc:silica_glass_batch", output: "tfc:silica_glass_bottle", name: "silica_glass_bottle" },
     { input: "tfc:hematitic_glass_batch", output: "tfc:hematitic_glass_bottle", name: "hematitic_glass_bottle" },
     { input: "tfc:olivine_glass_batch", output: "tfc:olivine_glass_bottle", name: "olivine_glass_bottle" },
-    { input: "tfc:volcanic_glass_batch", output: "tfc:volcanic_glass_bottle", name: "volcanic_glass_bottle" },
+    { input: "tfc:volcanic_glass_batch", output: "tfc:volcanic_glass_bottle", name: "volcanic_glass_bottle" }
 ]);
 
 global.TFC_MEAT_RECIPE_COMPONENTS = /** @type {const} */ ([
@@ -920,6 +904,8 @@ global.TFC_MEAT_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfg:food/raw_long_pig_filet", output: "tfg:food/cooked_long_pig_filet", name: "cooked_long_pig_filet" },
     { input: "tfg:food/raw_cruncher_ribs", output: "tfg:food/cooked_cruncher_ribs", name: "cooked_cruncher_ribs" },
     { input: "tfg:food/raw_stickastackatick", output: "tfg:food/cooked_stickastackatick", name: "cooked_stickastackatick" },
+    { input: "tfg:food/raw_burger_patty", output: "tfg:food/cooked_burger_patty", name: "cooked_burger_patty" }
+
 ]);
 
 global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = /** @type {const} */ ([
@@ -953,7 +939,7 @@ global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "#forge:dusts/borax", output: "4x tfc:powder/flux", name: "flux_powder" },
     { input: "#forge:dusts/soda_ash", output: "4x tfc:powder/soda_ash", name: "soda_ash" },
     { input: "gtceu:charcoal_dust", output: "2x tfc:powder/charcoal", name: "charcoal" },
-    { input: "tfc:ore/sylvite", output: "4x tfc:powder/sylvite", name: "sylvite" },
+    { input: "tfc:ore/sylvite", output: "4x tfc:powder/sylvite", name: "sylvite" }
 ]);
 
 global.TFC_GRAINS = /** @type {const} */ (["barley", "maize", "oat", "rye", "rice", "wheat"]);
@@ -980,7 +966,7 @@ global.TFC_JAMS = /** @type {const} */ ([
     "plum",
     "red_apple",
     "pumpkin_chunks",
-    "melon_slice",
+    "melon_slice"
 ]);
 
 global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = /** @type {const} */ ([
@@ -989,7 +975,7 @@ global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = /** @type {const} */ ([
         input: "tfc:plant/green_apple_sapling",
         fluid_amount: 8000,
         output: "32x tfc:food/green_apple",
-        name: "green_apple",
+        name: "green_apple"
     },
     { input: "tfc:plant/lemon_sapling", fluid_amount: 8000, output: "32x tfc:food/lemon", name: "lemon" },
     { input: "tfc:plant/olive_sapling", fluid_amount: 8000, output: "32x tfc:food/olive", name: "olive" },
@@ -997,7 +983,7 @@ global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfc:plant/peach_sapling", fluid_amount: 8000, output: "32x tfc:food/peach", name: "peach" },
     { input: "tfc:plant/plum_sapling", fluid_amount: 8000, output: "32x tfc:food/plum", name: "plum" },
     { input: "tfc:plant/red_apple_sapling", fluid_amount: 8000, output: "32x tfc:food/red_apple", name: "red_apple" },
-    { input: "tfc:plant/banana_sapling", fluid_amount: 8000, output: "32x tfc:food/banana", name: "banana" },
+    { input: "tfc:plant/banana_sapling", fluid_amount: 8000, output: "32x tfc:food/banana", name: "banana" }
 ]);
 
 global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS = /** @type {const} */ ([
@@ -1022,21 +1008,11 @@ global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "8x tfc:seeds/papyrus", fluid_amount: 4000, output: "24x tfc:papyrus", name: "papyrus" },
     { input: "8x tfc:seeds/pumpkin", fluid_amount: 4000, output: "24x tfc:pumpkin", name: "pumpkin" },
     { input: "8x tfc:seeds/melon", fluid_amount: 4000, output: "24x tfc:melon", name: "melon" },
-    {
-        input: "8x tfc:seeds/red_bell_pepper",
-        fluid_amount: 4000,
-        output: "24x tfc:food/red_bell_pepper",
-        name: "red_bell_pepper",
-    },
-    {
-        input: "8x tfc:seeds/yellow_bell_pepper",
-        fluid_amount: 4000,
-        output: "24x tfc:food/yellow_bell_pepper",
-        name: "yellow_bell_pepper",
-    },
+    { input: "8x tfc:seeds/red_bell_pepper", fluid_amount: 4000, output: "24x tfc:food/red_bell_pepper", name: "red_bell_pepper" },
+    { input: "8x tfc:seeds/yellow_bell_pepper", fluid_amount: 4000, output: "24x tfc:food/yellow_bell_pepper", name: "yellow_bell_pepper" },
     { input: "8x tfg:sunflower_seeds", fluid_amount: 4000, output: "24x tfg:sunflower_product", name: "sunflower" },
     { input: "8x tfg:rapeseed_seeds", fluid_amount: 4000, output: "24x tfg:rapeseed_product", name: "rapeseed" },
-    { input: "8x tfg:flax_seeds", fluid_amount: 4000, output: "24x tfg:flax_product", name: "flax" },
+    { input: "8x tfg:flax_seeds", fluid_amount: 4000, output: "24x tfg:flax_product", name: "flax" }
 ]);
 
 global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS = /** @type {const} */ ([
@@ -1045,63 +1021,40 @@ global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfc:plant/gooseberry_bush", fluid_amount: 6000, output: "3x tfc:food/gooseberry", name: "gooseberry" },
     { input: "tfc:plant/cloudberry_bush", fluid_amount: 6000, output: "3x tfc:food/cloudberry", name: "cloudberry" },
     { input: "tfc:plant/strawberry_bush", fluid_amount: 6000, output: "3x tfc:food/strawberry", name: "strawberry" },
-    {
-        input: "tfc:plant/wintergreen_berry_bush",
-        fluid_amount: 6000,
-        output: "3x tfc:food/wintergreen_berry",
-        name: "wintergreen_berry",
-    },
+    { input: "tfc:plant/wintergreen_berry_bush", fluid_amount: 6000, output: "3x tfc:food/wintergreen_berry", name: "wintergreen_berry" },
     { input: "tfc:plant/blackberry_bush", fluid_amount: 6000, output: "3x tfc:food/blackberry", name: "blackberry" },
     { input: "tfc:plant/raspberry_bush", fluid_amount: 6000, output: "3x tfc:food/raspberry", name: "raspberry" },
     { input: "tfc:plant/blueberry_bush", fluid_amount: 6000, output: "3x tfc:food/blueberry", name: "blueberry" },
     { input: "tfc:plant/elderberry_bush", fluid_amount: 6000, output: "3x tfc:food/elderberry", name: "elderberry" },
-    { input: "tfc:plant/cranberry_bush", fluid_amount: 6000, output: "3x tfc:food/cranberry", name: "cranberry" },
+    { input: "tfc:plant/cranberry_bush", fluid_amount: 6000, output: "3x tfc:food/cranberry", name: "cranberry" }
 ]);
 
 global.TFC_MILKS = /** @type {const} */ ([
     { id: "minecraft:milk" },
     { id: "firmalife:yak_milk" },
-    { id: "firmalife:goat_milk" },
+    { id: "firmalife:goat_milk" }
     // Uncomment this if firmalife ever makes this obtainable
     //{id: 'firmalife:coconut_milk'},
 ]);
 
 global.TFC_CURDS_AND_CHEESES = /** @type {const} */ ([
-    {
-        id: "milk",
-        input_fluid: "tfc:curdled_milk",
-        curd: "firmalife:food/milk_curd",
-        cheese1: "gouda",
-        cheese2: "cheddar",
-    },
-    {
-        id: "yak",
-        input_fluid: "firmalife:curdled_yak_milk",
-        curd: "firmalife:food/yak_curd",
-        cheese1: "shosha",
-        cheese2: "rajya_metok",
-    },
-    {
-        id: "goat",
-        input_fluid: "firmalife:curdled_goat_milk",
-        curd: "firmalife:food/goat_curd",
-        cheese1: "feta",
-        cheese2: "chevre",
-    },
+    { id: "milk", input_fluid: "tfc:curdled_milk", curd: "firmalife:food/milk_curd", cheese1: "gouda", cheese2: "cheddar"},
+    { id: "yak", input_fluid: "firmalife:curdled_yak_milk", curd: "firmalife:food/yak_curd", cheese1: "shosha", cheese2: "rajya_metok"},
+    { id: "goat", input_fluid: "firmalife:curdled_goat_milk", curd: "firmalife:food/goat_curd", cheese1: "feta", cheese2: "chevre"}
 ]);
 
 global.TFC_DRY_MUD_BRICKS = /** @type {const} */ ([
     "tfc:mud_brick/loam",
     "tfc:mud_brick/sandy_loam",
     "tfc:mud_brick/silt",
-    "tfc:mud_brick/silty_loam",
+    "tfc:mud_brick/silty_loam"
 ]);
 
 global.TFC_WET_MUD_BRICKS = /** @type {const} */ ([
     "tfc:drying_bricks/loam",
     "tfc:drying_bricks/sandy_loam",
     "tfc:drying_bricks/silt",
-    "tfc:drying_bricks/silty_loam",
+    "tfc:drying_bricks/silty_loam"
 ]);
 
 global.TFC_ALCOHOL = /** @type {const} */ ([
@@ -1113,7 +1066,7 @@ global.TFC_ALCOHOL = /** @type {const} */ ([
     { id: "tfc:whiskey", ingredient: "tfc:food/wheat_flour" },
     { id: "tfc:corn_whiskey", ingredient: "tfc:food/maize_flour" },
     { id: "tfc:rye_whiskey", ingredient: "tfc:food/rye_flour" },
-    { id: "firmalife:mead", ingredient: "firmalife:raw_honey" },
+    { id: "firmalife:mead", ingredient: "firmalife:raw_honey" }
 ]);
 
 global.TFC_MAGMA_BLOCKS = /** @type {const} */ ([
@@ -1123,7 +1076,7 @@ global.TFC_MAGMA_BLOCKS = /** @type {const} */ ([
     "tfc:rock/magma/rhyolite",
     "tfc:rock/magma/basalt",
     "tfc:rock/magma/andesite",
-    "tfc:rock/magma/dacite",
+    "tfc:rock/magma/dacite"
 ]);
 
 /**

@@ -561,7 +561,6 @@ function registerTFGBiochemRecipes(event) {
 			ChemicalHelper.get(TagPrefix.dust, 'tfg:cholesterol', 1)
 		)
 		.duration(20*20)
-		.dimension('ad_astra:venus')
 		.EUt(GTValues.VA[GTValues.IV]);
 
 	// Triglycerides from cell factory.
