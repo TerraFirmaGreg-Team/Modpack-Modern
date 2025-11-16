@@ -819,20 +819,38 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.electric_blast_furnace('tfg:molten_aes')
-		.itemInputs('2x tfg:aes_mix_dust')
-		.outputFluids(Fluid.of('tfg:molten_aes', 1000))
+		.itemInputs('#forge:dusts/aes_mix')
+		.outputFluids(Fluid.of('tfg:molten_aes', 500))
 		.chancedOutput('gtceu:ash_dust', 3000, 0)
 		.circuit(1)
-		.duration(400)
+		.duration(200)
 		.blastFurnaceTemp(3000)
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.electric_blast_furnace('tfg:molten_aes_he')
-		.itemInputs('2x tfg:aes_mix_dust')
-		.inputFluids(Fluid.of('gtceu:helium', 200))
-		.outputFluids(Fluid.of('tfg:molten_aes', 1000))
+		.itemInputs('#forge:dusts/aes_mix')
+		.inputFluids(Fluid.of('gtceu:helium', 100))
+		.outputFluids(Fluid.of('tfg:molten_aes', 500))
 		.circuit(2)
-		.duration(140)
+		.duration(70)
+		.blastFurnaceTemp(3000)
+		.EUt(GTValues.VA[GTValues.EV])
+		
+	event.recipes.gtceu.electric_blast_furnace('tfg:small_molten_aes')
+		.itemInputs('#forge:small_dusts/aes_mix')
+		.outputFluids(Fluid.of('tfg:molten_aes', 125))
+		.chancedOutput('gtceu:ash_dust', 1000, 0)
+		.circuit(1)
+		.duration(120)
+		.blastFurnaceTemp(3000)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.electric_blast_furnace('tfg:small_molten_aes_he')
+		.itemInputs('#forge:small_dusts/aes_mix')
+		.inputFluids(Fluid.of('gtceu:helium', 100))
+		.outputFluids(Fluid.of('tfg:molten_aes', 125))
+		.circuit(2)
+		.duration(40)
 		.blastFurnaceTemp(3000)
 		.EUt(GTValues.VA[GTValues.EV])
 
@@ -1044,7 +1062,7 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	//#endregion
 
-	//region ammonia borane
+	//#region ammonia borane
 	event.recipes.gtceu.chemical_reactor('tfg:sodium_hydride_synthesis')
 		.itemInputs('#forge:dusts/sodium')
 		.inputFluids(Fluid.of('gtceu:hydrogen', 1000))
@@ -1076,9 +1094,9 @@ function registerTFGMiscellaneousRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:hydrogen', 2000))
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.IV])
-	//endregion
+	//#endregion
 
-	//region polyurethane
+	//#region polyurethane
 	event.recipes.gtceu.chemical_reactor('tfg:aniline_synthesis')
 		.inputFluids(Fluid.of('gtceu:nitrobenzene', 1000), Fluid.of('gtceu:hydrogen', 6000))
 		.notConsumable('#forge:dusts/iron')
@@ -1114,9 +1132,90 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.IV])
 
-	//endregion
+	//#endregion
+	
+	//#region chitin extract
+	
+	event.recipes.gtceu.mixer('tfg:urea_mechanochem')
+		.inputFluids(Fluid.of('gtceu:ammonia', 2000), Fluid.of('gtceu:carbon_dioxide', 1000), Fluid.of('gtceu:distilled_water', 1000))
+		//.notConsumable('#forge:dusts/zirconium_oxide')
+		.outputFluids(Fluid.of('minecraft:water', 1000))
+		.itemOutputs('8x #forge:dusts/urea')
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.IV])
+	event.recipes.gtceu.chemical_reactor('tfg:ammonium_carbamate_synthesis')
+		.inputFluids(Fluid.of('gtceu:ammonia', 2000), Fluid.of('gtceu:carbon_dioxide', 1000))
+		.itemOutputs('11x #forge:dusts/ammonium_carbamate')
+		.circuit(1)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.HV])
+	event.recipes.gtceu.chemical_reactor('tfg:urea_from_carbamate')
+		.itemInputs('11x #forge:dusts/ammonium_carbamate')
+		.itemOutputs('8x #forge:dusts/urea')
+		.outputFluids(Fluid.of('minecraft:water', 1000))
+		.circuit(1)
+		.duration(160)
+		.EUt(GTValues.VA[GTValues.IV])
+	
+	//Give urea fertilizer recipes
+	
+	event.recipes.gtceu.chemical_reactor('tfg:trimethylamine_synthesis')
+		.inputFluids(Fluid.of('gtceu:ammonia', 1000), Fluid.of('gtceu:methanol', 3000))
+		.outputFluids(Fluid.of('minecraft:water', 3000), Fluid.of('tfg:trimethylamine', 1000))
+		.circuit(3)
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.MV])
+	event.recipes.gtceu.chemical_reactor('tfg:ethylene_oxide_synthesis')
+		.inputFluids(Fluid.of('gtceu:oxygen', 1000), Fluid.of('gtceu:ethylene', 1000))
+		.notConsumable('#forge:dusts/silver')
+		.outputFluids(Fluid.of('tfg:ethylene_oxide', 1000))
+		.circuit(4)
+		.duration(120)
+		.EUt(GTValues.VA[GTValues.EV])
+	event.recipes.gtceu.chemical_reactor('tfg:choline_chloride_synthesis')
+		.inputFluids(Fluid.of('tfg:trimethylamine', 1000), Fluid.of('tfg:ethylene_oxide', 1000), Fluid.of('gtceu:hydrochloric_acid', 1000))
+		.itemOutputs('25x #forge:dusts/choline_chloride')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.IV])
+		
+	event.recipes.gtceu.mixer('tfg:chcl_urea_mixing')
+		.itemInputs('25x #forge:dusts/choline_chloride', '16x #forge:dusts/urea')
+		.outputFluids(Fluid.of('tfg:chcl_urea', 3000))
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.EV])
+	
+	//Dissolve various chitin sources
+	event.recipes.gtceu.chemical_reactor('tfg:sniffer_wool_dissolve')
+		.itemInputs('tfg:sniffer_wool')
+		.inputFluids(Fluid.of('tfg:chcl_urea', 1000), Fluid.of('gtceu:distilled_water', 1000))
+		.itemOutputs('2x #forge:dusts/chitin')
+		.outputFluids(Fluid.of('tfg:dirty_eutectic_solvent', 2000), Fluid.of('tfg:dissolved_aes', 1000))
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.IV])
+	event.recipes.gtceu.chemical_reactor('tfg:wraptor_feathers_dissolve')
+		.itemInputs('tfg:wraptor_wool')
+		.inputFluids(Fluid.of('tfg:chcl_urea', 500), Fluid.of('gtceu:distilled_water', 500))
+		.itemOutputs('#forge:dusts/chitin')
+		.outputFluids(Fluid.of('tfg:dirty_eutectic_solvent', 1000), Fluid.of('tfg:dissolved_aes', 500))
+		.duration(60)
+		.EUt(GTValues.VA[GTValues.IV])	
+	
+	//Recycling of solvents
+	event.recipes.gtceu.centrifuge('tfg:separate_dirty_eutectic')
+		.inputFluids(Fluid.of('tfg:dirty_eutectic_solvent', 1000))
+		.outputFluids(Fluid.of('tfg:chcl_urea', 500), Fluid.of('gtceu:biomass', 500))
+		.duration(120)
+		.EUt(GTValues.VA[GTValues.EV])
+	event.recipes.gtceu.evaporation_tower('tfg:evaporate_aes')
+		.inputFluids(Fluid.of('tfg:dissolved_aes', 500))
+		.itemOutputs('#forge:small_dusts/aes_mix')
+		.outputFluids(Fluid.of('gtceu:distilled_water', 250))
+		.outputFluids(Fluid.of('gtceu:distilled_water', 250))
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.EV])
+	//#endregion
 
-	//Aerogel
+	//#region Aerogel
 	event.recipes.gtceu.chemical_reactor('tfg:tmos_synthesis')
 		.inputFluids(Fluid.of('tfg:dimethyl_carbonate', 2000))
 		.itemInputs('#forge:dusts/silicon_dioxide')
@@ -1554,4 +1653,86 @@ function registerTFGMiscellaneousRecipes(event) {
 	});
 	TFGHelpers.registerMaterialInfo('tfg:rnr_plow', {'cobalt_brass': 5, 'invar': 2, 'steel': 2, 'wrought_iron': 2, 'rubber': 1, 'treated_wood': 1});
 	//#endregion
+	
+	//ok these need to be disillery recipes, granted idk what circuit
+	//but ratios can be kept as they are, or less
+	event.recipes.gtceu.distillery('tfg:linolenic_from_seed')
+		.inputFluids(Fluid.of('gtceu:seed_oil', 1000))
+		.outputFluids(Fluid.of('tfg:linolenic_acid', 10))
+		.circuit(2)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.MV])
+	event.recipes.gtceu.distillery('tfg:linolenic_from_olive')
+		.inputFluids(Fluid.of('tfc:olive_oil', 1000))
+		.outputFluids(Fluid.of('tfg:linolenic_acid', 20))
+		.circuit(2)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.MV])
+	event.recipes.gtceu.distillery('tfg:linolenic_from_soybean')
+		.inputFluids(Fluid.of('firmalife:soybean_oil', 1000))
+		.outputFluids(Fluid.of('tfg:linolenic_acid', 50))
+		.circuit(2)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.MV])
+		
+	//region ochem
+	event.recipes.gtceu.chemical_reactor('tfg:sucrose_to_monos')
+		.itemInputs('8x #forge:dusts/sugar')
+		.inputFluids(Fluid.of('minecraft:water', 8000), Fluid.of('gtceu:sulfuric_acid', 200))
+		.circuit(2)
+		.itemOutputs('24x #forge:dusts/glucose', '24x #forge:dusts/fructose')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.IV])
+	event.recipes.gtceu.chemical_reactor('tfg:lactose_to_monos')
+		.itemInputs('8x #forge:dusts/lactose')
+		.inputFluids(Fluid.of('minecraft:water', 8000), Fluid.of('gtceu:sulfuric_acid', 200))
+		.circuit(2)
+		.itemOutputs('24x #forge:dusts/glucose', '24x #forge:dusts/galactose')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.IV])
+	
+	event.recipes.gtceu.chemical_reactor('tfg:glucose_to_sorbitol')
+		.itemInputs('12x #forge:dusts/glucose')
+		.inputFluids(Fluid.of('gtceu:hydrogen', 2000))
+		.notConsumable('#forge:dusts/ruthenium')
+		.circuit(2)
+		.itemOutputs('13x #forge:dusts/sorbitol')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.EV])
+	
+	event.recipes.gtceu.chemical_reactor('tfg:sorbitol_to_sorbitan')
+		.itemInputs('26x #forge:dusts/sorbitol')
+		.inputFluids(Fluid.of('tfg:dimethyl_carbonate', 1000))
+		.notConsumable('#forge:dusts/potassium_hydroxide')
+		.circuit(3)
+		.itemOutputs('23x #forge:dusts/14_sorbitan')
+		.duration(160)
+		.EUt(GTValues.VA[GTValues.IV])
+	event.recipes.gtceu.chemical_reactor('tfg:sorbitan_to_isosorbide')
+		.itemInputs('23x #forge:dusts/14_sorbitan')
+		.inputFluids(Fluid.of('tfg:dimethyl_carbonate', 1000))
+		.notConsumable('#forge:dusts/potassium_hydroxide')
+		.circuit(3)
+		.itemOutputs('20x #forge:dusts/isosorbide')
+		.duration(160)
+		.EUt(GTValues.VA[GTValues.IV])
+		
+	event.recipes.gtceu.large_chemical_reactor('tfg:lipid_attach_isosorbide')
+		.itemInputs('10x #forge:dusts/isosorbide')
+		.inputFluids(Fluid.of('tfg:linolenic_acid', 1000), Fluid.of('minecraft:water', 2000))
+		.notConsumableFluid(Fluid.of('gtceu:toulene', 1000))
+		.circuit(4)
+		.itemOutputs('57x #forge:dusts/isosorbide_ln')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.EV])
+	
+	event.recipes.gtceu.large_chemical_reactor('tfg:epoxidation_isosorbide_ln')
+		.itemInputs('57x #forge:dusts/isosorbide_ln')
+		.inputFluids(Fluid.of('gtceu:hydrogen_peroxide', 3000), Fluid.of('gtceu:sulfuric_acid', 200))
+		.notConsumableFluid(Fluid.of('gtceu:acetic_acid', 1000))
+		.circuit(4)
+		.itemOutputs('60x #forge:dusts/epox_isosorbide_ln')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.IV])
+	
 }
