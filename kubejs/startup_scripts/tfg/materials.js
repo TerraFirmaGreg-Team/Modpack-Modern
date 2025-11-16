@@ -322,6 +322,15 @@ const registerTFGMaterials = (event) => {
 		.components('16x carbon', '28x hydrogen', '2x nitrogen', '11x oxygen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xCFAE6B)
+		
+	event.create('tfg:dirty_eutectic_solvent')
+		.liquid()
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0x597D64)
+	event.create('tfg:dissolved_aes')
+		.liquid()
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xD5E89B)
 	//#endregion
 	
 	//#region aerogel
