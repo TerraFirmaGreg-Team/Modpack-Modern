@@ -25,6 +25,8 @@
 - Added lots of new food items including fries, burgers, oatmeal, mac and cheese, poutine, and more! @Redeix
 - Added processed spices for firmalife spice crops (except cinnamon). @Redeix
 - Reduced base food oven recipe time from 300 to 200 ticks @Redeix
+- Made Nitrocellulose less annoying to craft @BlueBoat29
+- Added tags to platinum group ores @Mqrius
 ### Bug fixes
 - Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
 - Fixed the HV aqueous accumulator water recipe so the amount of water can actually fit in the HV machine @Pyritie
