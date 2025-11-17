@@ -483,7 +483,7 @@ function registerTFGNuclearRecipes(event) {
 		.circuit(6)
 		.EUt(GTValues.VA[GTValues.IV] * 2)
 		.duration(20*4)
-		
+	/*
 	event.shaped('tfg:cooling_tower', [
 		'ABA',
 		'CDC',
@@ -495,7 +495,7 @@ function registerTFGNuclearRecipes(event) {
 		D: 'gtceu:iv_machine_hull',
 		E: 'gtceu:iv_fluid_regulator'
 	}).id('tfg:shaped/cooling_tower')
-	
+	*/
 	//#endregion
 
 	//#region FLiBe Line - SCRAP FROM MARS TO VENUS
