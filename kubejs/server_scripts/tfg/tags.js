@@ -69,6 +69,14 @@ const registerTFGItemTags = (event) => {
 	event.add('deafission:fuels', 'tfg:plutonium_rod')
 	event.add('tfg:fission_rods', '#deafission:fuels')
 
+	// Platline
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_pentlandite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_chalcopyrite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_tetrahedrite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_bornite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_cooperite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_chalcocite_ore')
+
 	//#region Tools & Armor
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/wood')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/brass')
@@ -880,6 +888,10 @@ const registerTFGFluidTags = (event) => {
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
 	})
+	
+	// Platline tags
+	event.add('tfg:sulfuric_metal_solution', 'gtceu:sulfuric_copper_solution')
+	event.add('tfg:sulfuric_metal_solution', 'gtceu:sulfuric_nickel_solution')
 }
 //#endregion
 
