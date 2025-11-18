@@ -27,6 +27,7 @@
 - Reduced base food oven recipe time from 300 to 200 ticks @Redeix
 - Made Nitrocellulose less annoying to craft @BlueBoat29
 - Added tags to platinum group ores @Mqrius
+- Moved the Flintlock from Steel --> Wrought Iron @BlueBoat29
 ### Bug fixes
 - Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
 - Fixed the HV aqueous accumulator water recipe so the amount of water can actually fit in the HV machine @Pyritie
