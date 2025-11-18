@@ -109,6 +109,17 @@ const gunDataLogic = (event) => {
 	const id = event.getId().toString();
 	const json = JSON.parse(event.getStdJson());
 	
+	if (id === "ulv_guns:flintlock_data"){
+		json.bullet.damage = 14;
+		json.bullet.extra_damage.damage_adjust = 
+		[
+			{"distance": 15, "damage": 14},
+			{"distance": 35, "damage": 12},
+			{"distance": 45, "damage": 10},
+			{"distance": "infinite", "damage": 8}
+		]
+	}
+	
 	if(id === "create_armorer:pistol_revolver_torque_data"){
 		json.bullet.extra_damage.armor_ignore = 0.25;
 	}
