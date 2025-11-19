@@ -28,6 +28,7 @@
 - Made Nitrocellulose less annoying to craft @BlueBoat29
 - Added tags to platinum group ores @Mqrius
 - Moved the Flintlock from Steel --> Wrought Iron @BlueBoat29
+- Added better tooltips for custom machines @Xtrial-01
 ### Bug fixes
 - Fixed TFC bug where paths and roads can collapse on themselves when creating a staircase shape. (#2144) @Redeix
 - Fixed the HV aqueous accumulator water recipe so the amount of water can actually fit in the HV machine @Pyritie
@@ -44,6 +45,8 @@
 - Fixed missing nixtamal food processor recipes. @Redeix
 - Fixed missing lang string from loading screen. @Redeix
 - Fixed some mismatched lang strings between ja_jp and en_us @BlueBoat29 @jmecn
+- Fixed Railgun Ammo size @TomPlop
+- Fixed bread and cheese ignoring being rotten @theMegaTech
 ### Translation updates
 - Russian @DI-GitH + @nineex + @alexart2006
 - Brazilian Portuguese @Redeix
