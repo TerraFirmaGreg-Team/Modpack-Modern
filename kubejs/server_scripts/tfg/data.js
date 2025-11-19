@@ -864,8 +864,8 @@ function registerTFGFoodData(event) {
 		});
 	});
 
-	// Dark Stock
-	event.drinkable('tfg:dark_stock', (data) => {
+	// Rich Stock
+	event.drinkable('tfg:rich_stock', (data) => {
 		data.thirst(4);
 		data.effect("tfc:thirst", (effect) => {
 			effect.chance(0.2);

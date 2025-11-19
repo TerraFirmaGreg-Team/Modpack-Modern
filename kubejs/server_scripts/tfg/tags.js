@@ -875,10 +875,10 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:drinkables', 'tfg:brown_gravy')
 	event.add('tfc:any_drinkables', 'tfg:brown_gravy')
 
-	event.add('minecraft:water', 'tfg:dark_stock')
-	event.add('tfc:any_water', 'tfg:dark_stock')
-	event.add('tfc:drinkables', 'tfg:dark_stock')
-	event.add('tfc:any_drinkables', 'tfg:dark_stock')
+	event.add('minecraft:water', 'tfg:rich_stock')
+	event.add('tfc:any_water', 'tfg:rich_stock')
+	event.add('tfc:drinkables', 'tfg:rich_stock')
+	event.add('tfc:any_drinkables', 'tfg:rich_stock')
 	
 	event.add('minecraft:water', 'tfg:light_stock')
 	event.add('tfc:any_water', 'tfg:light_stock')
