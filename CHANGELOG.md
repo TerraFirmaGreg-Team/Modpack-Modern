@@ -43,6 +43,7 @@
 - Fixed milk curd recipes in food processor outputting rotten curds. (#2209) @Redeix
 - Fixed missing nixtamal food processor recipes. @Redeix
 - Fixed missing lang string from loading screen. @Redeix
+- Fixed some mismatched lang strings between ja_jp and en_us @BlueBoat29 @jmecn
 ### Translation updates
 - Russian @DI-GitH + @nineex + @alexart2006
 - Brazilian Portuguese @Redeix
