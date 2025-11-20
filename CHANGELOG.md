@@ -2,6 +2,7 @@
 ## [Unreleased]
 ### Changes
 ### Bug fixes
+- Fixed brown gravy recipe @Redeix
 ### Translation updates
 
 ## [0.11.8] - 19-11-2025
