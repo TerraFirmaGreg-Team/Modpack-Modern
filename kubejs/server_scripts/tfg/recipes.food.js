@@ -1541,7 +1541,7 @@ function registerTFGFoodRecipes(event) {
 			'firmalife:food/butter',
 			'tfg:spice/allspice'
 		],
-		fluidInputs: ['tfg:light_stock 1000', 'tfg:dark_stock 1000'],
+		fluidInputs: ['tfg:light_stock 1000', 'tfg:rich_stock 1000'],
 		fluidOutputs: [Fluid.of('tfg:brown_gravy', 2000)]
 	});
 
