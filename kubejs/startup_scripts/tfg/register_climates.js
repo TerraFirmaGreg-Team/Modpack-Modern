@@ -18,6 +18,8 @@ global.MARS_MAX_AVG_TEMP = -15;
 global.MARS_MIN_AVG_RAIN = -25;
 global.MARS_MAX_AVG_RAIN = 13;
 
+global.VENUS_PLANET_SIZE = 20000;
+
 global.GLACIO_PLANET_SIZE = 5000;
 
 function clamp(val, min, max) {
@@ -55,7 +57,7 @@ global.getMarsClimateController = function () {
 			createWindCallback: function (builder) {
 				var self = this;
 				return function (level, pos, calendarTicks) {
-					const strength = Math.max(0, Math.sin(calendarTicks / 10000) -0.6);
+					const strength = Math.max(0, Math.sin(calendarTicks / 10000) - 0.4) * 1.2;
 
 					const newX = Math.cos(calendarTicks / 2400) * strength;
 					const newZ = Math.sin(calendarTicks / 2400) * strength;

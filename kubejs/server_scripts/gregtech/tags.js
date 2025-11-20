@@ -80,6 +80,28 @@ function registerGTCEUBlockTags(event) {
     event.add("tfc:can_trigger_collapse", "#forge:raw_ore_blocks");
     event.add("c:hidden_from_recipe_viewers", "#forge:raw_ore_blocks");
 
+    event.remove("gtceu:cleanroom_doors", "#minecraft:wooden_doors");
+    event.add("gtceu:cleanroom_doors", "firmalife:sealed_door");
+    event.add("gtceu:cleanroom_doors", "firmalife:iron_greenhouse_door");
+    event.add("gtceu:cleanroom_doors", "firmalife:copper_greenhouse_door");
+    event.add("gtceu:cleanroom_doors", "firmalife:stainless_steel_greenhouse_door");
+    event.add("gtceu:cleanroom_doors", "create:andesite_door");
+    event.add("gtceu:cleanroom_doors", "create:brass_door");
+    event.add("gtceu:cleanroom_doors", "create:copper_door");
+    event.add("gtceu:cleanroom_doors", "create:train_door");
+    event.add("gtceu:cleanroom_doors", "create:framed_glass_door");
+    event.add("gtceu:cleanroom_doors", "createdeco:andesite_door");
+    event.add("gtceu:cleanroom_doors", "createdeco:locked_andesite_door");
+    event.add("gtceu:cleanroom_doors", "createdeco:brass_door");
+    event.add("gtceu:cleanroom_doors", "createdeco:locked_brass_door");
+    event.add("gtceu:cleanroom_doors", "createdeco:copper_door");
+    event.add("gtceu:cleanroom_doors", "createdeco:locked_copper_door");
+    event.add("gtceu:cleanroom_doors", "createdeco:industrial_iron_door");
+    event.add("gtceu:cleanroom_doors", "createdeco:locked_industrial_iron_door");
+    event.add("gtceu:cleanroom_doors", "createdeco:zinc_door");
+    event.add("gtceu:cleanroom_doors", "createdeco:locked_zinc_door");
+    event.add("gtceu:cleanroom_doors", "ad_astra:steel_door");
+
     // Let GT indicators be covered by snow
     forEachMaterial((material) => {
         if (material.hasProperty(PropertyKey.ORE)) {
@@ -113,5 +135,4 @@ function registerGTCEUFluidTags(event) {
     event.add("c:hidden_from_recipe_viewers", "gtceu:blaze");
     event.add("c:hidden_from_recipe_viewers", "gtceu:thorium");
 
-	event.add('firmalife:usable_in_mixing_bowl', 'gtceu:concrete')
 }

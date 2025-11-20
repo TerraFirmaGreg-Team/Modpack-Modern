@@ -350,4 +350,7 @@ const registerTFCRecipes = (event) => {
 	], {
 		A: '#tfc:lumber'
 	}).id('tfc:crafting/vanilla/ladder')
+
+	event.replaceInput({ id: 'tfc:crafting/vanilla/armor_stand' }, '#minecraft:planks', '#tfc:lumber')
+	event.remove({ id: 'tfc:crafting/vanilla/armor_stand_bulk' })
 }

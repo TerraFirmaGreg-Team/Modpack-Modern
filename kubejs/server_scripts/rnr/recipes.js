@@ -51,6 +51,35 @@ const registerRnrRecipes = (event) => {
 		'1x rnr:ceramic_roof_tile',
 		'rnr:unfired_roof_tile'
 	).id('rnr:smelting/unfired_roof_tile')
+	
+	event.remove({id: 'rnr:clay_knapping/roof_tile_a'})
+	event.remove({id: 'rnr:clay_knapping/roof_tile_b'})
+	event.remove({id: 'rnr:clay_knapping/roof_tile_c'})
+
+	event.recipes.tfc.knapping('10x rnr:unfired_roof_tile', 'tfc:clay', [
+		'XXXXX',
+		'X   X',
+		'     ',
+		'XXXXX',
+		'X   X'
+	]).id('tfg:clay_knapping/roof_tile_a')
+
+	event.recipes.tfc.knapping('5x rnr:unfired_roof_tile', 'tfc:clay', [
+		'XXXXX',
+		'X   X',
+		'     ',
+		'     ',
+		'     '
+	]).id('tfg:clay_knapping/roof_tile_b')
+
+	event.recipes.tfc.knapping('5x rnr:unfired_roof_tile', 'tfc:clay', [
+		'     ',
+		'     ',
+		'     ',
+		'XXXXX',
+		'X   X'
+	]).id('tfg:clay_knapping/roof_tile_c')
+
 
 	event.recipes.gtceu.mixer('rnr:mixer/wet_concrete_mix')
 		.inputFluids('gtceu:concrete 192', "#tfg:clean_water 808")

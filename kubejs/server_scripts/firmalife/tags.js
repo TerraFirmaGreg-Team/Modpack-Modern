@@ -76,6 +76,7 @@ const registerFirmaLifeFluidTags = (event) => {
     event.add('c:hidden_from_recipe_viewers', 'firmalife:metal/chromium')
     event.add('c:hidden_from_recipe_viewers', 'firmalife:chocolate')
 
+    // Im going to leave these, but I dont think this tag does anything(?).
     event.add('firmalife:mixable', 'tfc:spring_water')
     event.add('firmalife:mixable', 'tfcchannelcasting:white_chocolate')
     event.add('firmalife:mixable', 'tfcchannelcasting:milk_chocolate')
@@ -84,4 +85,6 @@ const registerFirmaLifeFluidTags = (event) => {
     event.add('firmalife:mixable', 'afc:birch_syrup')
 
     event.add('firmalife:oils', 'gtceu:seed_oil')
+    event.add('firmalife:oils', 'gtceu:fish_oil')
+    event.add('firmalife:oils', 'tfg:triglyceride_oil')
 }

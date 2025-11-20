@@ -225,6 +225,37 @@
             "weight": 5
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:marble_magnetite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:marble_vanadium_magnetite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:marble_chromite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:raw_chromite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:marble_gold_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:marble_sapphire_ore",
+            "weight": 5
+          }
+        ]
       }
     ],
     "indicator": {

@@ -8,5 +8,11 @@
   "block.tfcgroomer.steel_grooming_station": "Кормушка (Сталь)",
   "block.tfcgroomer.black_steel_grooming_station": "Кормушка (Чёрная сталь)",
   "block.tfcgroomer.red_steel_grooming_station": "Кормушка (Красная сталь)",
-  "block.tfcgroomer.blue_steel_grooming_station": "Кормушка (Синяя сталь)"
+  "block.tfcgroomer.blue_steel_grooming_station": "Кормушка (Синяя сталь)",
+  "tfcgroomer.grooming_station.range": "Радиус: %s",
+  "gui.tfcgroomer.enable_breeding": "Разрешить размножение",
+  "tfcgroomer.tooltip.toggleBreeding": "Размножение",
+  "tfcgroomer.tooltip.breedDisabled": "Размножение запрещено",
+  "tfcgroomer.tooltip.breedEnabled": "Размножение разрешено",
+  "config.jade.plugin_tfcgroomer.grooming_station": "Grooming Station"
 }

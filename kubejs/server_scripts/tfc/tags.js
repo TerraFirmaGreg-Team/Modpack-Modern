@@ -151,6 +151,7 @@ function registerTFCItemTags(event) {
         event.add("tfg:hardwood", `#tfc:${woodType}_logs`);
         event.add("tfg:stripped_hardwood", `tfc:wood/stripped_log/${woodType}`);
         event.add("tfg:stripped_hardwood", `tfc:wood/stripped_wood/${woodType}`);
+        event.add("tfg:hardwood_supports", `tfc:wood/support/${woodType}`);
     });
 
     //Softwood Tags
@@ -158,6 +159,7 @@ function registerTFCItemTags(event) {
         event.add("tfg:softwood", `#tfc:${woodType}_logs`);
         event.add("tfg:stripped_softwood", `tfc:wood/stripped_log/${woodType}`);
         event.add("tfg:stripped_softwood", `tfc:wood/stripped_wood/${woodType}`);
+        event.add("tfg:softwood_supports", `tfc:wood/support/${woodType}`);
     });
 
     // Теги для сосудов по цветам
@@ -260,15 +262,19 @@ function registerTFCItemTags(event) {
 
     // Теги для каменных ступенек тфк
     global.TFC_STONE_TYPES.forEach((stoneTypeName) => {
+        
+        //Add to buttons
+        event.add("minecraft:stone_buttons", `tfc:rock/button/${stoneTypeName}`);
+        event.add("minecraft:buttons", `tfc:rock/button/${stoneTypeName}`);
+
+        //Add to rock slabs
         global.TFC_ROCK_SLAB_BLOCK_TYPES.forEach((slabType) => {
             event.add(`tfg:rock_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`);
             event.add(`tfg:rock_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`);
             event.add(`tfg:rock_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`);
         });
-    });
-
-    // Теги для кирпичных ступенек тфк
-    global.TFC_STONE_TYPES.forEach((stoneTypeName) => {
+        
+        //Add to brick slabs
         global.TFC_BRICK_SLAB_BLOCK_TYPES.forEach((slabType) => {
             event.add(`tfg:brick_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`);
             event.add(`tfg:brick_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`);
@@ -329,12 +335,6 @@ function registerTFCItemTags(event) {
 
     event.add("forge:mushrooms", "tfc:plant/artists_conk");
     event.add("forge:raw_materials/sylvite", "tfc:ore/sylvite");
-
-    global.TFC_STONE_TYPES.forEach((stone) => {
-        event.add("minecraft:stone_buttons", `tfc:rock/button/${stone}`);
-        event.add("minecraft:buttons", `tfc:rock/button/${stone}`);
-    });
-
     event.add("tfc:any_knapping", "#tfc:pit_kiln_straw");
     event.add("tfg:burlap_fiber", "tfc:jute_fiber");
 
@@ -537,57 +537,165 @@ function registerTFCFluidTags(event) {
     event.add("tfc:usable_in_tool_head_mold", "gtceu:black_bronze");
     event.add("tfc:usable_in_tool_head_mold", "gtceu:bronze");
 
+    /**********************************************************************************************************
+	* 
+	* Utility functions to classify fluids into tags based on temperature and properties.
+	* * * Seperates fluids into hot, cold, neutral, and acidic fluid tags.
+    * * * Uses these tags to determine usability in different containers.
+	*
+	***********************************************************************************************************/
+
     const $FluidState = Java.loadClass("com.gregtechceu.gtceu.api.fluids.FluidState")
     const $FluidAttribute = Java.loadClass("com.gregtechceu.gtceu.api.fluids.attribute.FluidAttributes")
+	const ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
+	const FluidStack = Java.loadClass('net.minecraftforge.fluids.FluidStack');
 
     forEachMaterial(material => {
         if (material.hasProperty(PropertyKey.FLUID)) {
             let fluid = material.getFluid();
-
-            // Ignore gases
             let fluidType = fluid.getFluidType();
-            if (fluidType.isLighterThanAir())
-                return;
-
-            // Check for acids
-            try {
-                // This is in a try catch because I don't know how to check if an object is of type 
-                // AttributedFluid or GTFluid here
-                if (fluid.getAttributes().contains($FluidAttribute.ACID))
-                    return;
-            }
-            catch (exception) {
-                return;
-            }
-
-            // Check for plasmas (and gases again in case the previous check didn't work)
-            let fluidState = fluid.getState();
-            if (fluidState === $FluidState.PLASMA || fluidState === $FluidState.GAS)
-                return;
-
             let fluidName = fluidType.toString();
-            let temperature = fluidType.getTemperature();
-
-            // 340 is the max temperature of wood pipes
-            // 120 is the cryogenic temperature threshold (see gtceu/FluidConstants)
-            if (temperature <= 340 && temperature >= 120) {
-                event.add("tfc:usable_in_barrel", fluidName);
-                event.add("tfc:usable_in_wooden_bucket", fluidName);
+            
+            // Tags acidic fluids.
+            try {
+                if (fluid.getAttributes().contains($FluidAttribute.ACID)) {
+                    event.add("forge:acidic", fluidName);
+                };
             }
-
-            // Red steel's max temperature, can do cryo
-            if (temperature <= 370) {
-                event.add("tfc:usable_in_red_steel_bucket", fluidName);
-            }
-
-            // Blue steel's max temp, can't do cryo
-            if (temperature <= 4618 && temperature >= 120) {
-                event.add("tfc:usable_in_blue_steel_bucket", fluidName);
-            }
+            catch (exception) { /* empty */ }
         }
     })
 
-    event.add("tfc:usable_in_pot", "gtceu:ice");
+	ForgeRegistries.FLUIDS.getValues().forEach(fluid => {
+
+		// Determine if fluid is hot or not. (pun intended)
+		const hotFluids = (fluid) => {
+
+			let temp = -1;
+			try {
+				temp = fluid.getFluidType().getTemperature();
+			} catch (e1) {
+				try {
+					temp = fluid.getFluidType().getTemperature(new FluidStack(fluid, 1000));
+				} catch (e2) {
+					temp = -1;
+				}
+			}
+
+			const id = ForgeRegistries.FLUIDS.getKey(fluid);
+            
+            if (!id) return;
+
+            // Return if fluid is hidden from recipe viewers.
+            const idString = id.toString();
+
+            let hiddenWrapper;
+            try { hiddenWrapper = event.get('c:hidden_from_recipe_viewers'); } catch (e) { /* ignore */ }
+
+            const wrapperHas = (wrapper) => {
+                if (!wrapper) return false;
+                try { return wrapper.getObjectIds().toArray().some(wid => String(wid) === idString); } catch (e) { return false; }
+            };
+
+            if (wrapperHas(hiddenWrapper)) return;
+            
+			const idStr = id.toString();
+
+            // Temp testing.
+            // Not extreme temps.
+            if (temp <= 340 && temp >= 120) {
+                event.add("tfg:moderate_temperature_fluids", idStr);
+            }
+            // Red steel: can't do heat, can do cryo.
+            if (temp <= 370) {
+                event.add("tfc:usable_in_red_steel_bucket", idStr);
+            }
+            // Burns ya.
+            if (temp >= 370) {
+                event.add("tfchotornot:hot_whitelist", idStr);
+            }
+            // Blue steel: can do heat, can't do cryo.
+            if (temp >= 120) {
+                event.add("tfc:usable_in_blue_steel_bucket", idStr);
+            }
+		};
+
+		// Determine if fluid is a gas or a plasma, and tag accordingly.
+		const liquidTag = (fluid) => {
+			const id = ForgeRegistries.FLUIDS.getKey(fluid);
+			if (!id) return;
+			const idString = id.toString();
+
+			// Check against tag wrappers for gas and plasma fluids.
+			let gaseousWrapper, plasmaticWrapper, hiddenWrapper;
+			try { gaseousWrapper = event.get('forge:gaseous'); } catch (e) { /* ignore */ }
+			try { plasmaticWrapper = event.get('forge:plasmatic'); } catch (e) { /* ignore */ }
+            try { hiddenWrapper = event.get('c:hidden_from_recipe_viewers'); } catch (e) { /* ignore */ }
+
+			const wrapperHas = (wrapper) => {
+				if (!wrapper) return false;
+				try { return wrapper.getObjectIds().toArray().some(wid => String(wid) === idString); } catch (e) { return false; }
+			};
+
+			const isGaseous = wrapperHas(gaseousWrapper);
+			const isPlasmatic = wrapperHas(plasmaticWrapper);
+            const isHidden = wrapperHas(hiddenWrapper);
+
+			if (isGaseous || isPlasmatic || isHidden) return;
+			event.add('forge:liquid', idString);
+		};
+
+        // Determine if fluid is neutral (not gas, plasma, acidic, or extreme temp), and tag accordingly.
+        const neutralTag = (fluid) => {
+            const id = ForgeRegistries.FLUIDS.getKey(fluid);
+            if (!id) return;
+            const idString = id.toString();
+
+            // Check against tag wrappers for gas, plasma, acidic, and normal temp fluids.
+            let acidicWrapper, moderateTemperatureWrapper, gaseousWrapper, plasmaticWrapper, hiddenWrapper;
+            try { acidicWrapper = event.get('forge:acidic'); } catch (e) { /* ignore */ }
+            try { moderateTemperatureWrapper = event.get('tfg:moderate_temperature_fluids'); } catch (e) { /* ignore */ }
+            try { gaseousWrapper = event.get('forge:gaseous'); } catch (e) { /* ignore */ }
+            try { plasmaticWrapper = event.get('forge:plasmatic'); } catch (e) { /* ignore */ }
+            try { hiddenWrapper = event.get('c:hidden_from_recipe_viewers'); } catch (e) { /* ignore */ }
+            
+            const wrapperHas = (wrapper) => {
+                if (!wrapper) return false;
+                try { return wrapper.getObjectIds().toArray().some(wid => String(wid) === idString); } catch (e) { return false; }
+            };
+
+            const isAcidic = wrapperHas(acidicWrapper);
+            const isExtreme = !wrapperHas(moderateTemperatureWrapper);
+            const isGaseous = wrapperHas(gaseousWrapper);
+            const isPlasmatic = wrapperHas(plasmaticWrapper);
+            const isHidden = wrapperHas(hiddenWrapper);
+
+            if (isGaseous || isPlasmatic || isAcidic || isExtreme || isHidden) return;
+            event.add('forge:neutral_fluids', idString);
+        };
+
+		// Execute tagging functions.
+		hotFluids(fluid);
+		liquidTag(fluid);
+		neutralTag(fluid);
+	});
+
+	// Can use any liquid.
+	event.add('tfc:usable_in_pot', '#forge:liquid')
+	event.add('firmalife:usable_in_vat', '#forge:liquid')
+
+    // Can use only neutral fluids.
+    event.add('tfc:usable_in_barrel', '#forge:neutral_fluids');
+    event.add('tfc:usable_in_wooden_bucket', '#forge:neutral_fluids');
+    event.add('firmalife:usable_in_mixing_bowl', '#forge:neutral_fluids');
+
+	// All fluids are given the '#tfg:not_solid' tag incase we have a use for them regardless of state.
+	event.add('tfg:not_solid', '#forge:liquid')
+	event.add('tfg:not_solid', '#forge:gaseous')
+	event.add('tfg:not_solid', '#forge:plasmatic')
+
+	/***********************************************************************************************************/
+
     event.add("tfc:ingredients", "tfc:spring_water");
 
     event.add("tfc:alcohols", "tfcagedalcohol:aged_beer");

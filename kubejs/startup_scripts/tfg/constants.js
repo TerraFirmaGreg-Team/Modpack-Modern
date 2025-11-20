@@ -102,6 +102,21 @@ global.MARS_BIOMES = [
 ]
 
 /**
+ * @type {string[]} - Biome IDs
+ */
+global.VENUS_BIOMES = [
+	'tfg:venus/arachnoids',
+	'tfg:venus/fractured_pools',
+	'tfg:venus/fumaroles',
+	'tfg:venus/geysers',
+	'tfg:venus/jagged_tablelands',
+	'tfg:venus/salt_flats',
+	'tfg:venus/stromatolite_beach',
+	'tfg:venus/sulfuric_ravine',
+	'tfg:venus/volcanic_mountains'
+]
+
+/**
  * @type {string[]} - Block Names
  */
 global.TFG_MACHINE_CASINGS = [
@@ -171,8 +186,8 @@ global.FOOD_FRUIT = [
 
 global.STONE_CHARACS = { // Sets of stone block properties used for block registry.
 	deepslate:      { sound: 'deepslate',       type: "metamorphic",       mapColor: 'terracotta_grey'       },
-	blackstone:     { sound: 'deepslate',       type: "igneous_intrusive", mapColor: 'color_black'           },
-	dripstone:      { sound: 'dripstone_block', type: "sedimentary",       mapColor: 'terracotta'            },
+	blackstone:     { sound: 'stone',           type: "igneous_intrusive", mapColor: 'color_black'           },
+	dripstone:      { sound: 'dripstone_block', type: "sedimentary",       mapColor: 'terracotta_brown'      },
 	crackrack:      { sound: 'netherrack',      type: "igneous_intrusive", mapColor: 'crimson_stem'          },
 	nether:         { sound: 'nether_bricks',   type: "igneous_intrusive", mapColor: 'nether'                },
 	moon:           { sound: 'stone',           type: "igneous_intrusive", mapColor: 'terracotta_cyan'       },
@@ -296,7 +311,8 @@ global.WARMING_FOODS = [
 	'tfc:food/fruit_soup',
 	'tfc:food/vegetables_soup',
 	'tfc:food/protein_soup',
-	'tfc:food/dairy_soup'
+	'tfc:food/dairy_soup',
+	'tfg:food/poutine'
 ];
 
 /**
@@ -310,4 +326,23 @@ global.LAB_EQUIPMENT_CONTAINERS = [
 	{type: 'beaker', capacity: 1296},
 	{type: 'flask', capacity: 144},
 	{type: 'vial', capacity: 16}
+];
+
+/**
+ * @typedef {Object} spices
+ * @property {string} plant - Spice Plant
+ * @property {string} product - Spice Product
+ */
+/** @type {spices[]} - Item IDs */
+global.SPICES = [
+	// Cinnamon is not obtainable so im not including it yet.
+	{ plant: 'firmalife:plant/basil', product: 'firmalife:spice/basil_leaves' },
+	{ plant: 'firmalife:plant/vanilla', product: 'firmalife:spice/vanilla' },
+	// New spices V
+	{ plant: 'firmalife:plant/bay_laurel', product: 'tfg:spice/bay_leaf' },
+	{ plant: 'firmalife:plant/cardamom', product: 'tfg:spice/cardamom_pods' },
+	{ plant: 'firmalife:plant/cilantro', product: 'tfg:spice/cilantro_leaves' },
+	{ plant: 'firmalife:plant/cumin', product: 'tfg:spice/cumin_seeds' },
+	{ plant: 'firmalife:plant/oregano', product: 'tfg:spice/oregano_leaves' },
+	{ plant: 'firmalife:plant/pimento', product: 'tfg:spice/allspice' }
 ];

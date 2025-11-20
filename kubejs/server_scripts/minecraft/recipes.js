@@ -350,6 +350,21 @@ const registerMinecraftRecipes = (event) => {
 		.duration(100)
 		.EUt(4)
 
+	event.shaped('2x minecraft:item_frame', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: '#tfc:lumber',
+		B: '#forge:cloth'
+	}).id('tfg:shaped/item_frame_from_cloth')
+
+	event.recipes.gtceu.assembler('item_frame_cloth')
+		.itemInputs('8x #tfc:lumber', '#forge:cloth')
+		.itemOutputs('4x minecraft:item_frame')
+		.duration(100)
+		.EUt(4)
+
 	//#endregion
 
 	//#region Выход: Свето-рамка, glowing item frame
@@ -869,6 +884,21 @@ const registerMinecraftRecipes = (event) => {
 			C: '#forge:plates/blue_steel',
 			D: 'beneath:cursed_hide'
 		}, 0, 1).id('tfg:minecraft/shaped/netherite_leggings')
+
+	//#endregion
+
+	//#region Netherite Boots (for the lavaproof diving set)
+
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('minecraft:netherite_boots').copyForgingBonus(), [
+			'ABA',
+			'CDC'
+		], {
+			A: '#forge:screws/blue_steel',
+			B: 'tfc:metal/boots/blue_steel',
+			C: '#forge:plates/blue_steel',
+			D: 'beneath:cursed_hide'
+		}, 0, 1).id('tfg:minecraft/shaped/netherite_boots')
 
 	//#endregion
 

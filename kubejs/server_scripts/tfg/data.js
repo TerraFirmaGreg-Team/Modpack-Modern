@@ -12,6 +12,8 @@ function registerTFCDataForTFG(event) {
 	registerTFGFauna(event);
 }
 
+//#region Heat Data
+
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGHeatData(event) {
 	event.itemHeat("tfg:latex_soaked_gloves", 1, null, null);
@@ -38,7 +40,19 @@ function registerTFGHeatData(event) {
 
 	event.itemHeat('betterend:cave_pumpkin_pie_raw', 1.0, null, null);
     event.itemHeat('betterend:cave_pumpkin_pie', 1.0, null, null);
+
+	event.itemHeat('tfg:food/raw_beer_battered_cheese_curds', 1.0, null, null);
+	event.itemHeat('tfg:food/cooked_beer_battered_cheese_curds', 1.0, null, null);
+	event.itemHeat('tfg:food/raw_fries', 1.0, null, null);
+	event.itemHeat('tfg:food/cooked_fries', 1.0, null, null);
+	event.itemHeat('tfg:food/brioche_dough', 1.0, null, null);
+	event.itemHeat('tfg:food/brioche_bun', 1.0, null, null);
+	event.itemHeat('tfg:food/raw_burger_patty', 1.0, null, null);
+	event.itemHeat('tfg:food/cooked_burger_patty', 1.0, null, null);
 }
+
+//#endregion
+//#region Item Size
 
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGItemSize(event) {
@@ -73,7 +87,7 @@ function registerTFGItemSize(event) {
 
 	event.itemSize("tfg:trowel", "large", "medium", "trowel");
 
-	event.itemSize("tfg:railgun_ammo_shell", "large", "heavy", "trowel");
+	event.itemSize("tfg:railgun_ammo_shell", "large", "medium", "railgun_ammo_shell");
 
 	event.itemSize("tfg:harvest_basket", "large", "medium", "harvest_basket");
 	event.itemSize("tfg:aluminium_harvest_basket", "large", "medium", "aluminium_harvest_basket");
@@ -139,7 +153,7 @@ function registerTFGItemSize(event) {
 				"gtceu:red_granite",
 				"gtceu:light_concrete",
 				"gtceu:dark_concrete",
-				"create:cardboard_block",
+				"create:cardboard_block"
 			])
 		),
 		"large",
@@ -228,7 +242,7 @@ function registerTFGItemSize(event) {
 			"ae2:cable_anchor",
 			"ae2:level_emitter",
 			"ae2:energy_level_emitter",
-			"expatternprovider:threshold_level_emitter",
+			"expatternprovider:threshold_level_emitter"
 		]),
 		"tiny",
 		"very_light",
@@ -271,7 +285,7 @@ function registerTFGItemSize(event) {
 			"expatternprovider:precise_export_bus",
 			"expatternprovider:precise_storage_bus",
 			"expatternprovider:threshold_export_bus",
-			"expatternprovider:oversize_interface_part",
+			"expatternprovider:oversize_interface_part"
 		]),
 		"very_small",
 		"very_light",
@@ -288,6 +302,9 @@ function registerTFGItemSize(event) {
 	event.itemSize("tfg:flask", "normal", "medium", "tfg/flask");
 	event.itemSize("tfg:vial", "tiny", "light", "tfg/vial");
 }
+
+//#endregion
+//#region Support Data
 
 //up, down, horizontal
 /** @param {Internal.TFCDataEventJS} event */
@@ -310,10 +327,14 @@ function registerTFGSupportData(event) {
 		event.support(`tfg:${wood.name}_support_horizontal`, 2, 2, 4, `${wood.name}_support`);
 	});
 }
+
+//#endregion
+//#region Food Data
+
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGFoodData(event) {
-	// meats
 
+	// Birt
 	event.foodItem("tfg:food/raw_birt", (food) => {
 		food.hunger(2);
 		food.protein(1.2);
@@ -327,6 +348,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Crawlermari
 	event.foodItem("tfg:food/raw_crawlermari", (food) => {
 		food.hunger(2);
 		food.water(5);
@@ -341,6 +363,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Limpet
 	event.foodItem("tfg:food/raw_limpet", (food) => {
 		food.hunger(2);
 		food.water(5);
@@ -355,6 +378,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Moon Rabbit
 	event.foodItem("tfg:food/raw_moon_rabbit", (food) => {
 		food.hunger(2);
 		food.protein(1.2);
@@ -368,6 +392,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Glacian Mutton
 	event.foodItem("tfg:food/raw_glacian_mutton", (food) => {
 		food.hunger(2);
 		food.protein(1.5);
@@ -381,6 +406,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Sniffer Beef
 	event.foodItem("tfg:food/raw_sniffer_beef", (food) => {
 		food.hunger(2);
 		food.protein(1.5);
@@ -394,6 +420,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Wraptor
 	event.foodItem("tfg:food/raw_wraptor", (food) => {
 		food.hunger(2);
 		food.protein(1.5);
@@ -407,6 +434,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Springling Collar
 	event.foodItem("tfg:food/raw_springling_collar", (food) => {
 		food.hunger(2);
 		food.protein(1.5);
@@ -420,6 +448,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Surfer Steak
 	event.foodItem("tfg:food/raw_surfer_steak", (food) => {
 		food.hunger(2);
 		food.protein(1.5);
@@ -433,6 +462,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Cruncher Ribs
 	event.foodItem("tfg:food/raw_cruncher_ribs", (food) => {
 		food.hunger(2);
 		food.protein(2.0);
@@ -446,6 +476,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Long Pig Filet
 	event.foodItem("tfg:food/raw_long_pig_filet", (food) => {
 		food.hunger(2);
 		food.protein(1.5);
@@ -459,6 +490,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Stackatick Chunks
 	event.foodItem("tfg:food/raw_stackatick_chunks", (food) => {
 		food.hunger(2);
 		food.protein(1.2);
@@ -478,6 +510,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Walker Steak
 	event.foodItem("tfg:food/raw_walker_steak", (food) => {
 		food.hunger(2);
 		food.protein(2.0);
@@ -491,6 +524,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Glider Wings
 	event.foodItem("tfg:food/raw_glider_wings", (food) => {
 		food.hunger(2);
 		food.protein(1.5);
@@ -504,6 +538,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Soarer
 	event.foodItem("tfg:food/raw_whole_soarer", (food) => {
 		food.hunger(2);
 		food.protein(1.5);
@@ -517,6 +552,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Crusher Meat
 	event.foodItem("tfg:food/raw_crusher_meat", (food) => {
 		food.hunger(2);
 		food.protein(1.5);
@@ -530,6 +566,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Goober Meat
 	event.foodItem("tfg:food/raw_goober_meat", (food) => {
 		food.hunger(2);
 		food.protein(1.5);
@@ -545,7 +582,6 @@ function registerTFGFoodData(event) {
 	});
 
 	// high-tech food
-
 	global.FOOD_FRUIT.forEach((fruit) => {
 		event.foodItem(`tfg:food/freeze_dried/${fruit.name}`, (food) => {
 			food.hunger(4);
@@ -569,8 +605,7 @@ function registerTFGFoodData(event) {
 		food.type("dynamic");
 	});
 
-	// crops
-
+	// Sunflower products
 	event.foodItem("tfg:roasted_sunflower_seeds", (food) => {
 		food.hunger(4);
 		food.decayModifier(0.5);
@@ -582,6 +617,7 @@ function registerTFGFoodData(event) {
 		food.decayModifier(0.5);
 	});
 
+	// Amber Roots
 	event.foodItem("betterend:amber_root_product", (food) => {
 		food.hunger(4);
 		food.decayModifier(1);
@@ -589,6 +625,7 @@ function registerTFGFoodData(event) {
 		food.grain(3);
 	});
 
+	// Blossom Berries
 	event.foodItem("betterend:blossom_berry_product", (food) => {
 		food.hunger(5);
 		food.decayModifier(2);
@@ -597,6 +634,7 @@ function registerTFGFoodData(event) {
 		food.fruit(2.1);
 	});
 
+	// Cave Pumpkin
 	event.foodItem("betterend:cave_pumpkin", (food) => {
 		food.hunger(4);
 		food.saturation(0);
@@ -632,6 +670,7 @@ function registerTFGFoodData(event) {
 		food.dairy(1);
 	});
 
+	// Chorus Mushroom
 	event.foodItem("betterend:chorus_mushroom_product", (food) => {
 		food.hunger(2);
 		food.saturation(1);
@@ -647,6 +686,7 @@ function registerTFGFoodData(event) {
 		food.vegetables(2.5);
 	});
 
+	// Shadow Berry
 	event.foodItem("betterend:shadow_berry_product", (food) => {
 		food.hunger(5);
 		food.decayModifier(2);
@@ -662,6 +702,7 @@ function registerTFGFoodData(event) {
 		food.fruit(2.2);
 	});
 
+	// Bolux Mushroom
 	event.foodItem("betterend:bolux_mushroom_product", (food) => {
 		food.hunger(2);
 		food.saturation(1);
@@ -677,6 +718,7 @@ function registerTFGFoodData(event) {
 		food.vegetables(2.4);
 	});
 
+	// Dino Nuggets
 	event.foodItem('tfg:food/raw_dino_nugget', (food) => {
 		food.type("dynamic");
 		food.hunger(1);
@@ -690,14 +732,130 @@ function registerTFGFoodData(event) {
 		food.decayModifier(1.5);
 	});
 
-	// misc
-
+	// Ice Soup
 	event.foodItem("tfg:food/ice_soup", (food) => {
 		food.hunger(1);
 		food.water(20);
 		food.decayModifier(0);
 	});
 
+	// Fries
+	event.foodItem('tfg:food/raw_fries', (food) => {
+		food.hunger(1);
+		food.decayModifier(3);
+		food.vegetables(0.25);
+	});
+
+	event.foodItem('tfg:food/cooked_fries', (food) => {
+		food.hunger(2);
+		food.decayModifier(1.5);
+		food.vegetables(0.6);
+		food.saturation(2);
+	});
+
+	// Cheese Curds
+	event.foodItem('tfg:food/raw_beer_battered_cheese_curds', (food) => {
+		food.hunger(1);
+		food.decayModifier(1.3);
+		food.dairy(1);
+		food.saturation(1);
+	});
+	
+	event.foodItem('tfg:food/cooked_beer_battered_cheese_curds', (food) => {
+		food.hunger(3);
+		food.decayModifier(0.8);
+		food.dairy(1.2);
+		food.saturation(2);
+		food.grain(0.5);
+	});
+
+	// Hamburgers
+	event.foodItem('tfg:food/raw_burger_patty', (food) => {
+		food.hunger(2);
+		food.decayModifier(2.3);
+		food.protein(2);
+	});
+	
+	event.foodItem('tfg:food/cooked_burger_patty', (food) => {
+		food.hunger(4);
+		food.decayModifier(2);
+		food.protein(2.5);
+		food.saturation(2);
+	});
+
+	event.foodItem('tfg:food/brioche_dough', (food) => {
+		food.hunger(1.5);
+		food.decayModifier(2.3);
+	});
+
+	event.foodItem('tfg:food/brioche_bun', (food) => {
+		food.hunger(3.5);
+		food.decayModifier(1.5);
+		food.grain(1.5);
+		food.dairy(0.5);
+		food.saturation(1);
+	});
+
+	event.foodItem('tfg:food/hamburger', (food) => {
+		food.type("dynamic");
+	});
+
+	event.foodItem('tfg:food/cheeseburger', (food) => {
+		food.type("dynamic");
+	});
+
+	// Poutine
+	event.foodItem('tfg:food/poutine', (food) => {
+		food.type("dynamic_bowl");
+	});
+
+	// Oatmeal
+	event.foodItem('tfg:food/oatmeal', (food) => {
+		food.type("dynamic_bowl");
+	});
+
+	// Biochem Items
+	event.foodItem("tfg:progenitor_cells", (food) => {
+		food.decayModifier(1);
+	});
+	event.foodItem("tfg:rough_endoplasmic_reticula", (food) => {
+		food.decayModifier(0.5);
+	});
+	event.foodItem("tfg:smooth_endoplasmic_reticula", (food) => {
+		food.decayModifier(0.5);
+	});
+
+	// Instant Mac
+	event.foodItem('tfg:food/raw_instant_mac', (food) => {
+		food.hunger(2);
+		food.decayModifier(0.2);
+	});
+
+	event.foodItem('tfg:food/cooked_instant_mac', (food) => {
+		food.hunger(3.5);
+		food.decayModifier(1.6);
+		food.grain(1.5);
+		food.dairy(2.5);
+		food.protein(0.8);
+		food.saturation(1.8);
+	});
+
+	//#region Drinkables
+	// Proto Growth Medium
+	event.drinkable("tfg:proto_growth_medium", (data) => {
+		data.thirst(10);
+		data.food(food => {
+			food.dairy(5);
+			food.protein(1);
+		});
+		data.effect("minecraft:absorption", (effect) => {
+			effect.amplifier(2);
+			effect.chance(0.25);
+			effect.duration(1200);
+		});
+	});
+
+	// Semiheavy Ammoniacal Water
 	event.drinkable("tfg:semiheavy_ammoniacal_water", (data) => {
 		data.thirst(10);
 		data.effect("minecraft:nausea", (effect) => {
@@ -705,7 +863,52 @@ function registerTFGFoodData(event) {
 			effect.duration(200);
 		});
 	});
+
+	// Rich Stock
+	event.drinkable('tfg:rich_stock', (data) => {
+		data.thirst(4);
+		data.effect("tfc:thirst", (effect) => {
+			effect.chance(0.2);
+			effect.duration(20*5);
+		});
+		data.food(food => {
+			food.protein(0.25);
+			food.vegetables(0.25);
+		});
+	});
+
+	// Light Stock
+	event.drinkable('tfg:light_stock', (data) => {
+		data.thirst(4);
+		data.effect("tfc:thirst", (effect) => {
+			effect.chance(0.2);
+			effect.duration(20*5);
+		});
+		data.food(food => {
+			food.protein(0.25);
+			food.vegetables(0.25);
+		});
+	});
+
+	// Brown Gravy
+	event.drinkable('tfg:brown_gravy', (data) => {
+		data.thirst(2);
+		data.effect("tfc:thirst", (effect) => {
+			effect.chance(0.3);
+			effect.duration(20*5);
+		});
+		data.food(food => {
+			food.protein(0.5);
+			food.vegetables(0.5);
+			food.grain(0.25);
+		});
+	});
+
+	//#endregion
 }
+
+//#endregion
+//#region Crop Data
 
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGCropRanges(event) {
@@ -793,6 +996,9 @@ function registerTFGCropRanges(event) {
 	}, "betterend:shadow_berry");
 }
 
+//#endregion
+//#region Planter Data
+
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGFLPlanters(event) {
 	event.firmalifePlantable(
@@ -808,7 +1014,7 @@ function registerTFGFLPlanters(event) {
 			"tfg:block/crop/sunflower_greenhouse_0",
 			"tfg:block/crop/sunflower_greenhouse_1",
 			"tfg:block/crop/sunflower_greenhouse_2",
-			"tfg:block/crop/sunflower_greenhouse_3",
+			"tfg:block/crop/sunflower_greenhouse_3"
 		],
 		null
 	);
@@ -826,7 +1032,7 @@ function registerTFGFLPlanters(event) {
 			"tfg:block/crop/rapeseed_greenhouse_0",
 			"tfg:block/crop/rapeseed_greenhouse_1",
 			"tfg:block/crop/rapeseed_greenhouse_2",
-			"tfg:block/crop/rapeseed_greenhouse_3",
+			"tfg:block/crop/rapeseed_greenhouse_3"
 		],
 		null
 	);
@@ -844,7 +1050,7 @@ function registerTFGFLPlanters(event) {
 			"tfg:block/crop/flax_age_0",
 			"tfg:block/crop/flax_age_1",
 			"tfg:block/crop/flax_age_5_top",
-			"tfg:block/crop/flax_age_6_top",
+			"tfg:block/crop/flax_age_6_top"
 		],
 		null
 	);
@@ -862,7 +1068,7 @@ function registerTFGFLPlanters(event) {
 			"betterend:block/amber_root_0",
 			"betterend:block/amber_root_1",
 			"betterend:block/amber_root_2",
-			"betterend:block/amber_root_3",
+			"betterend:block/amber_root_3"
 		],
 		null
 	);
@@ -880,7 +1086,7 @@ function registerTFGFLPlanters(event) {
 			"betterend:block/blossom_berry_seed_0",
 			"betterend:block/blossom_berry_seed_1",
 			"betterend:block/blossom_berry_seed_2",
-			"betterend:block/blossom_berry_seed_3",
+			"betterend:block/blossom_berry_seed_3"
 		],
 		null
 	);
@@ -898,7 +1104,7 @@ function registerTFGFLPlanters(event) {
 			"betterend:block/bolux_mushroom_greenhouse_0",
 			"betterend:block/bolux_mushroom_greenhouse_1",
 			"betterend:block/bolux_mushroom_greenhouse_2",
-			"betterend:block/bolux_mushroom_greenhouse_3",
+			"betterend:block/bolux_mushroom_greenhouse_3"
 		],
 		null
 	);
@@ -916,7 +1122,7 @@ function registerTFGFLPlanters(event) {
 			"betterend:block/chorus_mushroom_0",
 			"betterend:block/chorus_mushroom_1",
 			"betterend:block/chorus_mushroom_2",
-			"betterend:block/chorus_mushroom_3",
+			"betterend:block/chorus_mushroom_3"
 		],
 		null
 	);
@@ -934,7 +1140,7 @@ function registerTFGFLPlanters(event) {
 			"betterend:block/cave_pumpkin_greenhouse_0",
 			"betterend:block/cave_pumpkin_greenhouse_1",
 			"betterend:block/cave_pumpkin_greenhouse_2",
-			"betterend:block/cave_pumpkin_greenhouse_3",
+			"betterend:block/cave_pumpkin_greenhouse_3"
 		],
 		"betterend:block/cave_pumpkin_top"
 	);
@@ -952,12 +1158,14 @@ function registerTFGFLPlanters(event) {
 			"betterend:block/shadow_berry_greenhouse_0",
 			"betterend:block/shadow_berry_greenhouse_1",
 			"betterend:block/shadow_berry_greenhouse_2",
-			"betterend:block/shadow_berry_greenhouse_3",
+			"betterend:block/shadow_berry_greenhouse_3"
 		],
 		null
 	);
 }
 
+//#endregion
+//#region Fauna Data
 
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGFauna(event) {
@@ -1064,3 +1272,5 @@ function registerTFGFauna(event) {
 		},
 		"wan_ancient_beasts:glider")
 }
+
+//#endregion

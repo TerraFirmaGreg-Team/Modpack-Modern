@@ -6,7 +6,7 @@ function registerTFCDirtRecipes(event) {
 	// Loam + Silt -> Silty Loam (Миксер)
 	event.recipes.gtceu.mixer('silty_loam_dirt')
 		.itemInputs('tfc:dirt/loam', 'tfc:dirt/silt')
-		.itemOutputs('tfc:dirt/silty_loam')
+		.itemOutputs('2x tfc:dirt/silty_loam')
 		.duration(200)
 		.EUt(16)
 
@@ -15,6 +15,14 @@ function registerTFCDirtRecipes(event) {
 		.itemInputs('tfc:dirt/loam', '#forge:sand')
 		.circuit(3)
 		.itemOutputs('tfc:dirt/sandy_loam')
+		.duration(200)
+		.EUt(16)
+
+	// Loam + Salt -> Silt
+	event.recipes.gtceu.mixer('silty_dirt')
+		.itemInputs('tfc:dirt/loam', 'tfc:powder/salt')
+		.circuit(3)
+		.itemOutputs('tfc:dirt/silt')
 		.duration(200)
 		.EUt(16)
 
@@ -52,6 +60,20 @@ function registerTFCDirtRecipes(event) {
 		}).id(`tfg:ae_transform/${mud}_to_mud`)
 
 		// Mud bricks
+		event.recipes.gtceu.extruder(`tfc:mud_bricks/${mud}`)
+			.itemInputs(`tfc:mud/${mud}`)
+			.notConsumable('gtceu:ingot_extruder_mold')
+			.itemOutputs(`4x tfc:drying_bricks/${mud}`)
+			.duration(100)
+			.EUt(2)
+
+		event.custom({
+			type: 'vintageimprovements:curving',
+			ingredients: [{ item: `tfc:mud/${mud}` }],
+			itemAsHead: 'gtceu:ingot_extruder_mold',
+			results: [{ item: `tfc:drying_bricks/${mud}`, count: 4 }],
+			processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+		}).id(`tfg:vi/curving/${mud}_bricks`)
 
 		// Влажный кирпич -> Кирпич
 		event.smelting(`tfc:mud_brick/${mud}`, `tfc:drying_bricks/${mud}`)

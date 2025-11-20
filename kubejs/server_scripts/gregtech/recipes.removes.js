@@ -423,6 +423,8 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/nether_bricks_wall_saw' })
 	removeMaceratorRecipe(event, 'macerate_nether_brick_stairs')
 	removeMaceratorRecipe(event, 'macerate_nether_brick_slab')
+	removeMaceratorRecipe(event, 'macerate_nether_bricks')
+	removeMaceratorRecipe(event, 'macerate_chiseled_nether_bricks')
 
 	//#endregion
 
@@ -539,8 +541,31 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/purpur_polished_hammer' })
 	event.remove({ id: 'gtceu:shaped/red_sandstone_polished_hammer' })
 	event.remove({ id: 'gtceu:shaped/nether_bricks_polished_hammer' })
+	event.remove({ id: 'gtceu:shaped/stone_polish_hammer' })
+	event.remove({ id: 'gtceu:assembler/assemble_stone_into_polished' })
+	event.remove({ id: 'gtceu:forming_press/form_stone_brick_slab_into_pillar' })
   
 	event.remove({ id: 'gtceu:shaped_fluid_container/brick_from_water' })
+
+	event.remove({ id: 'gtceu:shaped/stone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/stone_slab_saw' })
+	
+	event.remove({ id: 'gtceu:shaped/cobblestone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/cobblestone_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/cobblestone_slab_wall' })
+
+	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_slab_wall' })
+
+	event.remove({ id: 'gtceu:shaped/red_sandstone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/red_sandstone_wall_saw' })
+	event.remove({ id: 'gtceu:shaped/red_sandstone_polish_hammer' })
+	
+	event.remove({ id: 'gtceu:shaped/smooth_red_sandstone_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/smooth_red_sandstone_slab_saw' })
+
+	event.remove({ id: 'gtceu:shaped/cut_red_sandstone_slab_saw' })
 
 	// Gears
 	event.remove({ id: 'gtceu:extruder/extrude_wood_ingot_to_small_gear' })

@@ -12,7 +12,7 @@ function registerTACZAttachRecipes(event){
 		B: 'tfc:lens',
 		C: 'gtceu:brass_small_item_pipe',
 		D: '#forge:tools/screwdrivers',
-		E: '#forge:screws/black_steel',
+		E: '#forge:screws',
 		F: '#forge:tools/files'
 		
 	}).id('tfg_tacz:trapdoor_scope');

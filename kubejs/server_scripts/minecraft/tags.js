@@ -96,6 +96,12 @@ const registerMinecraftItemTags = (event) => {
 	event.add('create:blaze_burner_fuel/regular', 'minecraft:charcoal')
 
     event.add('minecraft:wart_blocks', 'minecraft:mushroom_stem')
+
+	event.add('forge:smooth_stone_slab', 'minecraft:polished_deepslate_slab')
+	event.add('forge:smooth_stone_slab', 'minecraft:polished_blackstone_slab')
+    event.add('forge:smooth_stone_slab', 'minecraft:polished_blackstone_brick_slab')
+
+    event.add('tfc:rock/smooth', 'minecraft:smooth_stone')
 }
 
 const registerMinecraftBlockTags = (event) => {

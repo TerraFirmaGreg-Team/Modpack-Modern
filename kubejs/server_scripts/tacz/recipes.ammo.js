@@ -20,8 +20,17 @@ function registerTACZAmmoRecipes(event){
 		.itemOutputs(Item.of('tacz:ammo_box', '{Level:2}'))
 		.EUt(GTValues.VA[GTValues.HV])
 		.duration(60)
+		
+	//event.remove({ mod: 'applied_ammo_box' })
+	event.remove({ type: 'applied_ammo_box:shaped_nbt' })
 	
-	
+	event.recipes.gtceu.assembler('tfg_tacz:wl_ammo_box')
+		.itemInputs('2x #gtceu:batteries/ev', 'ae2:wireless_terminal', '4x #forge:double_plates/ostrum',
+				'2x gtceu:ev_sensor', 'gtceu:ev_emitter', '2x #forge:rods/ultimet')
+		.itemOutputs('applied_ammo_box:ammo_box')
+		.EUt(GTValues.VA[GTValues.EV])
+		.duration(100)
+
 	//Extruder Casing
 	event.recipes.gtceu.extruder('tfg_tacz:small_casing')
 		.itemInputs('#forge:ingots/brass')
@@ -45,15 +54,15 @@ function registerTACZAmmoRecipes(event){
 	//Additives
 	event.recipes.gtceu.chemical_reactor('tfg_tacz:nitrocellulose_from_wood')
 		.itemInputs('gtceu:thermochemically_treated_hardwood_dust')
-		.inputFluids(Fluid.of('gtceu:nitric_acid', 200), Fluid.of('gtceu:sulfuric_acid', 400), Fluid.of('minecraft:water', 600))
+		.inputFluids(Fluid.of('gtceu:nitration_mixture', 800), Fluid.of('minecraft:water', 600))
 		.itemOutputs('2x tfg:nitrocellulose')
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20)
 	event.recipes.gtceu.chemical_reactor('tfg_tacz:nitrocellulose_from_wood_dih20')
 		.itemInputs('gtceu:thermochemically_treated_hardwood_dust')
-		.inputFluids(Fluid.of('gtceu:nitric_acid', 200), Fluid.of('gtceu:sulfuric_acid', 400), Fluid.of('gtceu:distilled_water', 600))
+		.inputFluids(Fluid.of('gtceu:nitration_mixture', 800), Fluid.of('gtceu:distilled_water', 600))
 		.itemOutputs('4x tfg:nitrocellulose')
-		.outputFluids(Fluid.of('gtceu:nitration_mixture', 100))
+		.outputFluids(Fluid.of('gtceu:sulfuric_acid', 200))
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(40)
 	

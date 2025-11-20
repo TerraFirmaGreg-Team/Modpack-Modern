@@ -1,7 +1,10 @@
 {
 	"variants": {
-		"": {
-			"model": "tfg:block/rock/cobble_blackstone"
-		}
+		"": [
+			{ "model": "tfg:block/rock/cobble_blackstone" },
+			{ "model": "tfg:block/rock/cobble_blackstone", "y": 90 },
+			{ "model": "tfg:block/rock/cobble_blackstone", "y": 180 },
+			{ "model": "tfg:block/rock/cobble_blackstone", "y": 270 }
+		]
 	}
 }

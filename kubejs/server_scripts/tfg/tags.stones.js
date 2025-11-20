@@ -407,6 +407,11 @@ function registerTFGItemStoneTags(event) {
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:chiseled_red_granite')
 	event.add('tfc:rock/bricks', 'gtceu:chiseled_red_granite')
 	event.add('tfc:rock/chiseled_bricks', 'gtceu:chiseled_red_granite')
+
+	// Smooth stone slabs
+	event.add('forge:smooth_stone_slabs', 'tfg:rock/polished_crackrack_slab')
+	event.add('forge:smooth_stone_slabs', 'tfg:rock/polished_moon_deepslate_slab')
+	event.add('forge:smooth_stone_slabs', 'tfg:rock/polished_red_granite_slab')
 	
 	// Permafrost (???) [NA]
 	event.remove('tfc:metamorphic_rock', 'tfg:loose/permafrost')

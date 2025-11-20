@@ -1164,7 +1164,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.shaped(Item.of('tfg:universal_compost_greens', 1), [
 		'AB'
 	], {
-		A: Ingredient.of(['#tfc:compost_greens_low']).subtract(['tfg:universal_compost_greens']),
+		A: '#tfc:compost_greens_low',
 		B: '#forge:tools/mortars'
 	}).id('tfg:shaped/universal_compost_greens_from_low')
 
@@ -1231,15 +1231,17 @@ function registerTFGMiscellaneousRecipes(event) {
 	//Browns
 	// Lows via crafting with mortar
 	event.shaped(Item.of('tfg:universal_compost_browns', 1), [
-		'BA'
+		'A',
+		'B'
 	], {
-		A: Ingredient.of(['#tfc:compost_browns_low']).subtract(['tfg:universal_compost_browns']),
+		A: '#tfc:compost_browns_low',
 		B: '#forge:tools/mortars'
 	}).id('tfg:shaped/universal_compost_browns_from_low')
 
 	// Mediums via crafting with mortar
 	event.shaped(Item.of('tfg:universal_compost_browns', 2), [
-		'BA'
+		'A',
+		'B'
 	], {
 		A: '#tfc:compost_browns',
 		B: '#forge:tools/mortars'
@@ -1247,7 +1249,8 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	// Highs via crafting with mortar
 	event.shaped(Item.of('tfg:universal_compost_browns', 4), [
-		'BA'
+		'A',
+		'B'
 	], {
 		A: '#tfc:compost_browns_high',
 		B: '#forge:tools/mortars'
@@ -1513,4 +1516,42 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.EV])
 	
+	//#region RNR Paving Cart
+	const rubber_types = [
+		{fluid:'styrene_butadiene_rubber', quantity: 144},
+		{fluid:'silicone_rubber', quantity: 288},
+		{fluid:'rubber', quantity: 576}
+	];
+	rubber_types.forEach((rubber) => {
+		event.recipes.gtceu.assembler(`tfg:cobalt_brass_wheel/${rubber.fluid}`)
+			.itemInputs(
+				ChemicalHelper.get(TagPrefix.rod, GTMaterials.CobaltBrass, 9),
+				Ingredient.of('firmaciv:rope_coil').withCount(2),
+				Ingredient.of('#forge:screws/any_bronze').withCount(4)
+			)
+			.inputFluids(Fluid.of(`gtceu:${rubber.fluid}`, rubber.quantity))
+			.itemOutputs('tfg:cobalt_brass_wheel')
+			.duration(20*10)
+			.EUt(GTValues.VA[GTValues.LV])
+	});
+	TFGHelpers.registerMaterialInfo('tfg:cobalt_brass_wheel', { 'rubber': 1, 'cobalt_brass': 4});
+
+	const mattock_types = ['red', 'blue'];
+	mattock_types.forEach((type) => {
+		event.recipes.gtceu.assembler(`tfg:rnr_plow/${type}_steel`)
+			.itemInputs(
+				ChemicalHelper.get(TagPrefix.rodLong, GTMaterials.CobaltBrass, 1),
+				ChemicalHelper.get(TagPrefix.rodLong, GTMaterials.TreatedWood, 2),
+				ChemicalHelper.get(TagPrefix.plate, GTMaterials.Invar, 4),
+				ChemicalHelper.get(TagPrefix.spring, GTMaterials.Steel, 2),
+				Ingredient.of('tfg:cobalt_brass_wheel').withCount(2),
+				Ingredient.of('create:chute').withCount(1),
+				Ingredient.of(`#forge:mattock_heads/${type}_steel`).withCount(3)
+			)
+			.itemOutputs('tfg:rnr_plow')
+			.duration(20*60)
+			.EUt(GTValues.VA[GTValues.LV])
+	});
+	TFGHelpers.registerMaterialInfo('tfg:rnr_plow', {'cobalt_brass': 5, 'invar': 2, 'steel': 2, 'wrought_iron': 2, 'rubber': 1, 'treated_wood': 1});
+	//#endregion
 }

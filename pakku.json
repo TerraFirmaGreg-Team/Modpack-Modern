@@ -259,6 +259,19 @@
         "autopack-director": {
             "export": false
         },
+        "tfc-caelum": {
+            "export": false
+        },
+        "caelum": {
+            "export": false
+        },
+        "extreme-sound-muffler": {
+            "export": false
+        },
+        "extreme_sound_muffler": {
+            "export": false
+        },
+
         "ftb-backups-2": {
             "side": "BOTH",
             "export": true
