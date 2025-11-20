@@ -1,6 +1,10 @@
 # Changelog
-
 ## [Unreleased]
+### Changes
+### Bug fixes
+### Translation updates
+
+## [0.11.8] - 19-11-2025
 ### Changes
 - Added a paving cart for automating RNR roads. (#2144) @Redeix
 - Non-TFC armors now have TFC resistances (#2157) @theMegaTech
