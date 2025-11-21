@@ -594,7 +594,6 @@ const registerTFGMaterials = (event) => {
 		.secondaryColor(0x4FA883)
 		.iconSet('shiny')
 		.components('1x zirconium', '2x boron')
-		.blastTemp(4600, "high", GTValues.VA[GTValues.EV], 2700)
 		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL)
 
 	event.create('tfg:boron_carbide')
@@ -602,7 +601,7 @@ const registerTFGMaterials = (event) => {
 		.iconSet('dull')
 		.color(0x42705D)
 		.components('4x boron', '1x carbon')
-		.blastTemp(1941, "low", GTValues.VA[GTValues.HV], 1500)
+		.blastTemp(3041, "mid", GTValues.VA[GTValues.HV], 1500)
 		.flags(GTMaterialFlags.GENERATE_PLATE)
 
 	// #endregion
