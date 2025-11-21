@@ -377,6 +377,7 @@ function registerTFGFoodRecipes(event) {
 	//#region Food preservation
 
 	const smoking_meats = Ingredient.of('#tfc:foods/raw_meats').itemIds;
+	const smoking_cheese = Ingredient.of('#firmalife:foods/cheeses').itemIds;
 	const brining_veg = Ingredient.of('#firmalife:foods/pizza_ingredients').itemIds;
 	const drying_fruits = Ingredient.of('#tfc:foods/fruits').itemIds;
 	const drying_recipes = [
@@ -402,6 +403,16 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	smoking_meats.forEach(item => {
+		processorRecipeText(`${item.replace(/:/g, "/")}/smoking`, 200, 16, "tfg.food_recipe.smoking", {
+			circuit: 6,
+			itemInputs: [item],
+			itemOutputs: [item],
+			fluidInputs: [Fluid.of('gtceu:wood_gas', 5)],
+			itemOutputProvider: TFC.isp.copyInput().addTrait("firmalife:smoked")
+		})
+	})
+
+	smoking_cheese.forEach(item => {
 		processorRecipeText(`${item.replace(/:/g, "/")}/smoking`, 200, 16, "tfg.food_recipe.smoking", {
 			circuit: 6,
 			itemInputs: [item],
