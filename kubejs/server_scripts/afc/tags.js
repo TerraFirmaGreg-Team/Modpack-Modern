@@ -30,6 +30,7 @@ const registerAFCItemTags = (event) => {
 		event.add('tfg:hardwood', `#afc:${woodType}_logs`)
 		event.add('tfg:stripped_hardwood', `afc:wood/stripped_log/${woodType}`)
 		event.add('tfg:stripped_hardwood', `afc:wood/stripped_wood/${woodType}`)
+		event.add('tfg:hardwood_supports', `afc:wood/support/${woodType}`);
 	});
 
 	//Softwood Tags
@@ -37,6 +38,7 @@ const registerAFCItemTags = (event) => {
 		event.add('tfg:softwood', `#afc:${woodType}_logs`)
 		event.add('tfg:stripped_softwood', `afc:wood/stripped_log/${woodType}`)
 		event.add('tfg:stripped_softwood', `afc:wood/stripped_wood/${woodType}`)
+		event.add('tfg:softwood_supports', `afc:wood/support/${woodType}`);
 	})
 
 	// AFC saplings are missing the item tag for whatever reason

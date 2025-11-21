@@ -1,6 +1,10 @@
 ﻿// priority: 0
 "use strict";
 
+/**
+ * 
+ * @param {Internal.RecipesEventJS} event 
+ */
 function registerTFCStoneRecipes(event) {
 
 	global.TFC_STONE_TYPES.forEach(stone => {
@@ -560,6 +564,17 @@ function registerTFCStoneRecipes(event) {
 			.duration(150)
 			.EUt(2)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+		//#endregion
+
+		//#region Recycle beam
+		let dustSmall = ChemicalHelper.get(TagPrefix.dustSmall, stoneMaterial, 1);
+		event.recipes.gtceu.macerator(`${stone}_support_to_dust`)
+			.itemInputs(`tfg:${stone}_support`)
+			.itemOutputs(dustSmall)
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING);
 
 		//#endregion
 		//#endregion

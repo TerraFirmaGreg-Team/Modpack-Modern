@@ -68,12 +68,28 @@ function registerTACZMiscRecipes(event) {
 		B: '#forge:gems/flint',
 		C: '#forge:tools/files',
 		D: '#forge:springs',
+		E: '#forge:bolts/wrought_iron',
+		F: '#forge:double_plates/wrought_iron',
+		G: '#forge:tools/wire_cutters',
+		H: '#forge:gears/wrought_iron',
+		I: '#forge:tools/hammers'
+	}).id('tfg:shaped/flintlock_mechanism_iron');
+	
+	event.shaped('tfg:flintlock_mechanism', [
+		'ABC',
+		'DEF',
+		'GHI'
+	], {
+		A: '#forge:tools/screwdrivers',
+		B: '#forge:gems/flint',
+		C: '#forge:tools/files',
+		D: '#forge:springs',
 		E: '#forge:bolts/steel',
 		F: '#forge:plates/steel',
 		G: '#forge:tools/wire_cutters',
 		H: '#forge:small_gears/steel',
 		I: '#forge:tools/hammers'
-	}).id('tfg:shaped/flintlock_mechanism');
+	}).id('tfg:shaped/flintlock_mechanism_steel');
 	
 	event.recipes.gtceu.assembler('tfg:advanced_clockwork_mechanism')
 		.itemInputs('2x greate:aluminium_cogwheel', 'greate:silicone_rubber_belt_connector', '2x #forge:springs/aluminium', 

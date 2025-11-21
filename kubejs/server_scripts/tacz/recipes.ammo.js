@@ -54,15 +54,15 @@ function registerTACZAmmoRecipes(event){
 	//Additives
 	event.recipes.gtceu.chemical_reactor('tfg_tacz:nitrocellulose_from_wood')
 		.itemInputs('gtceu:thermochemically_treated_hardwood_dust')
-		.inputFluids(Fluid.of('gtceu:nitric_acid', 200), Fluid.of('gtceu:sulfuric_acid', 400), Fluid.of('minecraft:water', 600))
+		.inputFluids(Fluid.of('gtceu:nitration_mixture', 800), Fluid.of('minecraft:water', 600))
 		.itemOutputs('2x tfg:nitrocellulose')
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20)
 	event.recipes.gtceu.chemical_reactor('tfg_tacz:nitrocellulose_from_wood_dih20')
 		.itemInputs('gtceu:thermochemically_treated_hardwood_dust')
-		.inputFluids(Fluid.of('gtceu:nitric_acid', 200), Fluid.of('gtceu:sulfuric_acid', 400), Fluid.of('gtceu:distilled_water', 600))
+		.inputFluids(Fluid.of('gtceu:nitration_mixture', 800), Fluid.of('gtceu:distilled_water', 600))
 		.itemOutputs('4x tfg:nitrocellulose')
-		.outputFluids(Fluid.of('gtceu:nitration_mixture', 100))
+		.outputFluids(Fluid.of('gtceu:sulfuric_acid', 200))
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(40)
 	
