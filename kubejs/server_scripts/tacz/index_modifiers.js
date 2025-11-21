@@ -18,6 +18,7 @@ const ammoIndexLogic = (event) => {
 	switch(id) {
 		case "tacz:45_70": json.stack_size = 64; break;
 		case "tacz:12g": json.stack_size = 64; break;
+		case "tacz:30x06": json.stack_size = 64; break;
 
 		case "create_armorer:40mmhe": json.stack_size = 16; break;
 		case "create_armorer:rbapb": json.stack_size = 64; break;
@@ -109,6 +110,7 @@ const gunDataLogic = (event) => {
 	const id = event.getId().toString();
 	const json = JSON.parse(event.getStdJson());
 	
+	//Pistols
 	if (id === "ulv_guns:flintlock_data"){
 		json.bullet.damage = 14;
 		json.bullet.extra_damage.damage_adjust = 
@@ -121,9 +123,92 @@ const gunDataLogic = (event) => {
 	}
 	
 	if(id === "create_armorer:pistol_revolver_torque_data"){
+		json.ammo = "create_armorer:rbapb";
+		
+		json.bullet.pierce = 2;
+		json.bullet.damage = 12;
 		json.bullet.extra_damage.armor_ignore = 0.25;
+		json.bullet.extra_damage.head_shot_multiplier = 1.5;
+		json.bullet.extra_damage.damage_adjust = 
+		[
+			{"distance": 25, "damage": 12},
+			{"distance": 50, "damage": 11},
+			{"distance": 75, "damage": 9},
+			{"distance": "infinite", "damage": 7}
+		]
+		
 	}
 	
+	if(id === "create_armorer:pistol_auto_stress_data"){
+		json.ammo = "create_armorer:rbapb";
+		json.ammo_amount = 10;
+		json.extended_mag_ammo_amount = 
+		[
+			14,
+			18,
+			22
+		]
+		
+		json.fire_mode = 
+		[
+			"semi"
+		]
+		
+		json.bullet.damage = 8;
+		json.bullet.extra_damage.damage_adjust = 
+		[
+			{"distance": 32, "damage": 8},
+			{"distance": 64, "damage": 7},
+			{"distance": "infinite", "damage": 6}
+		]
+	}
+	
+	//Snipers
+	if(id === "tacz:springfield1873_data") {
+		json.bullet.damage = 25;
+		json.bullet.extra_damage.damage_adjust = 
+		[
+			{"distance": 40, "damage": 25},
+			{"distance": 70, "damage": 21},
+			{"distance": 100, "damage": 17},
+			{"distance": "infinite", "damage": 12}
+		]
+	}
+	
+	if(id === "tacz:m700_data"){
+		json.ammo_amount = 2;
+		json.extended_mag_ammo_amount = 
+		[
+			4,
+			6,
+			9
+		]
+		
+		json.bullet.damage = 32;
+		json.bullet.extra_damage.head_shot_multiplier = 1.75;
+		json.bullet.extra_damage.damage_adjust = 
+		[
+			{"distance": 48, "damage": 32},
+			{"distance": 96, "damage": 28},
+			{"distance": 128, "damage": 23},
+			{"distance": "infinite", "damage": 18}
+		]
+	}
+	
+	if(id === "applied_armorer:moritz_sniper_semi_k30_data") {
+		json.bullet.pierce = 4;
+		json.bullet.damage = 40;
+		json.bullet.extra_damage.armor_ignore = 0.45;
+		json.bullet.extra_damage.damage_adjust = 
+		[
+			{"distance": 100, "damage": 40},
+			{"distance": 200, "damage": 35},
+			{"distance": "infinite", "damage": 30}
+		]
+	}
+        
+	
+	//Rifles
 	if(id === "create_armorer:sniper_semi_clockwork_data"){
 		json.bullet.extra_damage.armor_ignore = 0.30;
 		json.bullet.damage = 22;
@@ -151,6 +236,7 @@ const gunDataLogic = (event) => {
 		
 	}
 	
+	//Shotguns
 	if(id === "tacz:db_long_data"){
 		json.bullet.extra_damage.armor_ignore = 0.22;
 	}
@@ -159,6 +245,16 @@ const gunDataLogic = (event) => {
 		json.bullet.extra_damage.armor_ignore = 0.22;
 	}
 	
+	//SMGs
+	if(id === "create_armorer:smg_auto_crank_data"){
+		json.ammo = "create_armorer:rbapb";
+	}
+	
+	if(id === "applied_armorer:niklas_smg_freedom_data"){
+		
+	}
+	
+	//Heavy
 	if(id === "create_armorer:cannon_40mm_salamander_data"){
 		json.bullet.damage = 50;
 		json.bullet.extra_damage.damage_adjust =
