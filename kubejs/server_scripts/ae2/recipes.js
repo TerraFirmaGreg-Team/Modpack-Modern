@@ -327,6 +327,17 @@ const registerAE2Recipes = (event) => {
 		D: '#forge:gems/fluix',
 	}).addMaterialInfo().id('tfg:crafting/me_p2p_tunnel')
 
+	event.shapeless('ae2:me_p2p_tunnel', ['ae2:me_p2p_tunnel'])
+		.id('tfg:shapeless/me_p2p_tunnel')
+	event.shapeless('ae2:redstone_p2p_tunnel', ['ae2:redstone_p2p_tunnel'])
+		.id('tfg:shapeless/redstone_p2p_tunnel')
+	event.shapeless('ae2:item_p2p_tunnel', ['ae2:item_p2p_tunnel'])
+		.id('tfg:shapeless/item_p2p_tunnel')
+	event.shapeless('ae2:fluid_p2p_tunnel', ['ae2:fluid_p2p_tunnel'])
+		.id('tfg:shapeless/fluid_p2p_tunnel')
+	event.shapeless('ae2:light_p2p_tunnel', ['ae2:light_p2p_tunnel'])
+		.id('tfg:shapeless/light_p2p_tunnel')
+
 	// ME Chest
 	event.recipes.gtceu.shaped('ae2:chest', [
 		'AEA',
