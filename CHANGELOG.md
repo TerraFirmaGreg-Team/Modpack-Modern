@@ -1,8 +1,14 @@
 # Changelog
 ## [Unreleased]
 ### Changes
+- Add shapeless p2p recipes (#2234) @SpicyNoodle5
+- Added assembler, smelting and heating recipes for firmalife ovens (#2220) @SpicyNoodle5
+- Raised burning fluid threshold from 370K to 1300K @Redeix
+- Added partial unification to the gtceu wax material @Redeix
 ### Bug fixes
 - Fixed brown gravy recipe @Redeix
+- Fixed instant mac recipe requiring less cardboard than it gives back @Redeix
+- Fixed Ad Astra moon cheese nutrition values being inconsistent @Redeix
 ### Translation updates
 
 ## [0.11.8] - 19-11-2025

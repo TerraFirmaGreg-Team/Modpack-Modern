@@ -156,11 +156,6 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:titanium_leggings",
     "gtceu:titanium_boots",
 
-    // Huh
-    "gtceu:wax_dust",
-    "gtceu:small_wax_dust",
-    "gtceu:tiny_wax_dust",
-
     // Sculk
     "gtceu:tiny_echo_shard_dust",
     "gtceu:small_echo_shard_dust",

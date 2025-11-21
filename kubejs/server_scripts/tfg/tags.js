@@ -90,7 +90,6 @@ const registerTFGItemTags = (event) => {
 	event.add('minecraft:piglin_loved', 'tfg:piglin_disguise')
 
 	event.add('forge:tools/trowels', 'tfg:trowel')
-	event.add('tfc:usable_on_tool_rack', 'tfg:trowel')
 
 	event.add('tfg:harvester', 'tfg:harvest_basket')
 	event.add('tfg:harvester', 'tfg:aluminium_harvest_basket')
