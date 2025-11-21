@@ -99,7 +99,7 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('tfg.tooltip.armor.nanomuscle_warmth')),
 		text.add(2, Text.translate('tfg.tooltip.armor.nanomuscle_insulation'))
 		text.add(3, Text.translate('tfg.tooltip.armor.nanomuscle_set'))
-		if (item == 'gtceu:nanomuscle_leggings') {
+		if (item === 'gtceu:nanomuscle_leggings') {
 			text.add(4, Text.translate('tfg.tooltip.armor.nanomuscle_legs_buff'))
 		}
 	})
@@ -255,6 +255,16 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("tfg.tooltip.component.nuclear_turbine_1"))
 		text.add(2, Text.translate("tfg.tooltip.component.nuclear_turbine_2"))
 	})
+
+	event.addAdvanced(['tfg:food/slice_of_cheese'], (item, advanced, text) => {
+		if (!event.isShift()) {
+			text.add(1, Text.translate("tfg.tooltip.fake_nutrition_info_listener"))
+		} else {
+			text.add(1, Text.translate("tfg.tooltip.fake_nutrition_info"))
+			text.add(2, Text.translate("tfg.tooltip.cheese_slice_microplastics"))
+		};
+	});
+	
 
 	// AE2
 	event.addAdvanced(['tfg:wireless_card'], (item, advanced, text) => {
