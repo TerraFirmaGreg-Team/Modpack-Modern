@@ -353,17 +353,17 @@ function registerTFGFoodRecipes(event) {
 
 	for (const ctype of chocolateType) {
 		for (const cshape of chocolateShape) {
-			event.recipes.gtceu.extractor(`${ctype}_${cshape}`)
-				.itemInputs(cshape == "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`)
-				.outputFluids(cshape == "" ? Fluid.of(`tfcchannelcasting:${ctype}`, 144) : Fluid.of(`tfcchannelcasting:${ctype}`, 100))
-				.duration(5 * 20)
-				.EUt(GTValues.VHA[GTValues.LV])
+			processorRecipe(`${ctype}_${cshape}_melting`, 100, 16, {
+				circuit: 1,
+				itemInputs:[cshape == "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`],
+				fluidOutputs:[cshape == "" ? Fluid.of(`tfcchannelcasting:${ctype}`, 144) : Fluid.of(`tfcchannelcasting:${ctype}`, 100)],
+			})
 		}
 	}
 
-	for (const ctype of chocolateType) {
+	for (const ctype of chocolateType) {	
 		for (const cshape of chocolateShape) {
-			processorRecipe(`${ctype}_${cshape}`, 5, 16, {
+			processorRecipe(`${ctype}_${cshape}_casting`, 100, 16, {
 				fluidInputs: [cshape == "" ? Fluid.of(`tfcchannelcasting:${ctype}`, 144) : Fluid.of(`tfcchannelcasting:${ctype}`, 100)],
 				itemOutputs: [cshape == "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`],
 				itemOutputProvider: TFC.isp.of(cshape == "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`).resetFood(),
