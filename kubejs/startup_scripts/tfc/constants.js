@@ -804,8 +804,7 @@ global.TFC_FURNACE_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "firmalife:oven_top", output: "firmalife:cured_oven_top", name: "oven_top" },
     { input: "firmalife:oven_chimney", output: "firmalife:cured_oven_chimney", name: "oven_chimney" },
     { input: "firmalife:oven_bottom", output: "firmalife:cured_oven_bottom", name: "oven_bottom" },
-    { input: "firmalife:oven_hopper", output: "firmalife:cured_oven_hopper", name: "oven_hopper" },
-    { input: "tfcchannelcasting:unfired_mold_table", output: "tfcchannelcasting:mold_table", name: "mold_table" }
+    { input: "firmalife:oven_hopper", output: "firmalife:cured_oven_hopper", name: "oven_hopper" }
 ]);
 
 global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
