@@ -155,6 +155,7 @@ const gunDataLogic = (event) => {
 		]
 		
 		json.bullet.damage = 8;
+		json.bullet.extra_damage.armor_ignore = 0.25;
 		json.bullet.extra_damage.damage_adjust = 
 		[
 			{"distance": 32, "damage": 8},
@@ -210,28 +211,59 @@ const gunDataLogic = (event) => {
 	
 	//Rifles
 	if(id === "create_armorer:sniper_semi_clockwork_data"){
+		json.ammo = "create_armorer:slap";
+		json.ammo_amount = 10;
+		json.extended_mag_ammo_amount = 
+		[
+			13,
+			16,
+			20
+		]
+		
+		
 		json.bullet.extra_damage.armor_ignore = 0.30;
 		json.bullet.damage = 22;
+		json.bullet.extra_damage.head_shot_multiplier = 1.50;
 		json.bullet.extra_damage.damage_adjust = 
 		[
 			{"distance": 60, "damage": 22},
 			{"distance": 120, "damage": 19},
 			{"distance": "infinite", "damage": 17}
 		]
+		
 		json.builtin_attachments = {};
 		json.builtin_attachments.scope = "create_armorer:sight_simple";
 	}
 	
+	if(id === "create_armorer:rifle_assult_crane_data"){
+		json.ammo_amount = 20;
+		json.extended_mag_ammo_amount = 
+		[
+			28,
+			36,
+			44
+		]
+	}
+	
 	if(id === "applied_armorer:moritz_rifle_ar77_data") {
 		json.ammo = "applied_armorer:hard_core_quartz_bullet";
-		json.bullet.damage = 13;
+		json.ammo_amount = 25;
+		json.extended_mag_ammo_amount = 
+		[
+			36,
+			45,
+			52
+		]
+		
+		
+		json.bullet.damage = 14;
 		json.bullet.extra_damage.armor_ignore = 0.35;
 		json.bullet.extra_damage.head_shot_multiplier = 1.75;
 		json.bullet.extra_damage.damage_adjust =
 		[
-			{"distance": 80, "damage": 13},
-			{"distance": 120, "damage": 11},
-			{"distance": "infinite", "damage": 9}
+			{"distance": 80, "damage": 14},
+			{"distance": 120, "damage": 12},
+			{"distance": "infinite", "damage": 10}
 		]
 		
 	}
@@ -255,6 +287,24 @@ const gunDataLogic = (event) => {
 	}
 	
 	//Heavy
+	if(id === "create_armorer:mg_platemag_flywheel_data") {
+		json.ammo_amount = 40;
+		json.extended_mag_ammo_amount = 
+		[
+			55,
+			80,
+			115
+		]
+		
+		json.bullet.damage = 12;
+		json.bullet.extra_damage.damage_adjust =
+		[
+			{"distance": 32, "damage": 12},
+			{"distance": 64, "damage": 11},
+			{"distance": "infinite", "damage": 10}
+		]
+	}
+	
 	if(id === "create_armorer:cannon_40mm_salamander_data"){
 		json.bullet.damage = 50;
 		json.bullet.extra_damage.damage_adjust =
@@ -262,6 +312,7 @@ const gunDataLogic = (event) => {
 			{"distance": 200, "damage": 50},
 			{"distance": "infinite", "damage": 45}
 		]
+		
 		json.builtin_attachments = {};
 		json.builtin_attachments.scope = "create_armorer:sight_simple";
 	}
