@@ -84,9 +84,8 @@ GTCEuStartupEvents.craftingComponents(event => {
 	registerTFGCraftingComponents(event)
 })
 
-StartupEvents.modifyCreativeTab('create:base', e => {
-  e.add('create:shadow_steel_casing')
-  e.add('create:refined_radiance_casing')
+StartupEvents.modifyCreativeTab(global.TAB_IDS.CREATE_BASE, event => {
+    modifyCreateCreativeTab(event)
 })
 
 Platform.mods.primitive_creatures.name = "Primitive Creatures";

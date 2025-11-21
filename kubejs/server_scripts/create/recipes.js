@@ -693,11 +693,11 @@ const registerCreateRecipes = (event) => {
         .addMaterialInfo(true)
 
     // Refined radiance casing
-    event.recipes.createItemApplication(['create:refined_radiance_casing'], ['#forge:stripped_logs', '#forge:plates/silver'])
+    event.recipes.createItemApplication(['create:refined_radiance_casing'], ['#forge:stripped_logs', 'gtceu:nether_star_plate'])
             .id('tfg:create/item_application/refined_radiance_casing')
 
     event.recipes.gtceu.assembler('tfg:create/refined_radiance_casing')
-        .itemInputs('#forge:stripped_logs', 'forge:plates/silver')
+        .itemInputs('#forge:stripped_logs', 'gtceu:nether_star_plate')
         .circuit(11)
         .itemOutputs('create:refined_radiance_casing')
         .duration(50)
