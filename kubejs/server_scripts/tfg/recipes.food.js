@@ -1618,7 +1618,7 @@ function registerTFGFoodRecipes(event) {
 
 	// Instant Mac
 	processorRecipe('raw_instant_mac', 20 * 10, GTValues.VA[GTValues.LV], {
-		itemInputs: ['firmalife:food/raw_egg_noodles', '#tfg:foods/cheeses', 'create:cardboard'],
+		itemInputs: ['firmalife:food/raw_egg_noodles', '#tfg:foods/cheeses', '2x create:cardboard'],
 		itemOutputs: ['2x tfg:food/raw_instant_mac'],
 		fluidInputs: ['gtceu:polyethylene 100'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/raw_instant_mac').copyFood()

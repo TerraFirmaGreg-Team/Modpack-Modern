@@ -57,6 +57,8 @@ function registerGTCEUItemTags(event) {
 
     // @ts-expect-error According to KJS docs adding tags to tags is supported.
     event.add("gtceu:molds", "#gtceu:casting_molds", "#gtceu:extruder_molds", "gtceu:empty_mold");
+
+    event.add('forge:wax', 'gtceu:wax_dust');
 }
 
 /** @param {TagEvent.Block} event  */
