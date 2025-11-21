@@ -13809,7 +13809,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.5.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13818,44 +13818,44 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/f95K1jmA/TerraFirmaGreg-Core-Modern-0.8.5.jar",
-                    "id": "f95K1jmA",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/w34zm4Xq/TerraFirmaGreg-Core-Modern-0.8.6.jar",
+                    "id": "w34zm4Xq",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "222d5b1f39261ea051316a7ac68acf9761f41d815b84a0325887957784cb52ec9388146f9435cdbec6fc42f236cc4b6f3bfb6b7da1b59102f90f414ad7aa62fb",
-                        "sha1": "d4d7f1a4fa9690d45b09b17ca2d6f00097ac4d25"
+                        "sha512": "677785f7b14208293f9a4ec2d1605339b47f3bd76e81daf5709fb9a19851f4a5149b590e9e2ad4a423839352946d3f976897089386da6508cfad5bd0f82e6499",
+                        "sha1": "8c37ab2de9e8a646395b49088d21abb692e54909"
                     },
                     "required_dependencies": [
-                        "7tG215v7",
-                        "JaCEZUhg"
+                        "JaCEZUhg",
+                        "7tG215v7"
                     ],
-                    "size": 9246856,
-                    "date_published": "2025-10-29T13:26:55.488427Z"
+                    "size": 9283735,
+                    "date_published": "2025-11-17T08:16:44.842196Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.5.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7163/303/TerraFirmaGreg-Core-Modern-0.8.5.jar",
-                    "id": "7163303",
+                    "url": "https://edge.forgecdn.net/files/7231/807/TerraFirmaGreg-Core-Modern-0.8.6.jar",
+                    "id": "7231807",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "d4d7f1a4fa9690d45b09b17ca2d6f00097ac4d25",
-                        "md5": "dd221274e0df33e3312defa69f416350"
+                        "sha1": "8c37ab2de9e8a646395b49088d21abb692e54909",
+                        "md5": "0fba8bdf94413edb751a97ed05943ca8"
                     },
                     "required_dependencies": [
                         "302973",
                         "890405"
                     ],
-                    "size": 9246856,
-                    "date_published": "2025-10-29T13:26:50.930Z"
+                    "size": 9283735,
+                    "date_published": "2025-11-17T08:16:39.213Z"
                 }
             ]
         },

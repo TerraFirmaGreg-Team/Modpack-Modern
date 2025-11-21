@@ -18,51 +18,70 @@ function registerTFCItemTags(event) {
         }
     });
 
-    event.add("tfc:usable_on_tool_rack", "#forge:tools/mining_hammers");
-    event.add("tfc:usable_on_tool_rack", "#forge:tools/spades");
-    event.add("tfc:usable_on_tool_rack", "#forge:tools/wrenches");
-    event.add("tfc:usable_on_tool_rack", "#forge:tools/files");
-    event.add("tfc:usable_on_tool_rack", "#forge:tools/crowbars");
-    event.add("tfc:usable_on_tool_rack", "#forge:tools/screwdrivers");
-    event.add("tfc:usable_on_tool_rack", "#forge:tools/wire_cutters");
-    event.add("tfc:usable_on_tool_rack", "#forge:tools/butchery_knives");
-    event.add("tfc:usable_on_tool_rack", "#forge:tools/plungers");
-    event.add("tfc:usable_on_tool_rack", "#forge:tools/mortars");
-    event.add("tfc:usable_on_tool_rack", "#forge:tools/mallets");
-
-    event.add("tfc:usable_on_tool_rack", "#forge:tools/chainsaws");
-    event.add("tfc:usable_on_tool_rack", "#forge:tools/buzzsaws");
-    event.add("tfc:usable_on_tool_rack", "#forge:tools/drills");
-
-    event.add("tfc:usable_on_tool_rack", "#forge:tools/fishing_nets");
-
-    event.add("tfc:usable_on_tool_rack", "#tfc:buckets");
-
-    event.add("tfc:usable_on_tool_rack", "buildinggadgets2:gadget_building");
-    event.add("tfc:usable_on_tool_rack", "buildinggadgets2:gadget_exchanging");
-    event.add("tfc:usable_on_tool_rack", "buildinggadgets2:gadget_copy_paste");
-    event.add("tfc:usable_on_tool_rack", "buildinggadgets2:gadget_cut_paste");
-    event.add("tfc:usable_on_tool_rack", "buildinggadgets2:gadget_destruction");
-    event.add("tfc:usable_on_tool_rack", "create:super_glue");
-    event.add("tfc:usable_on_tool_rack", "exposure:camera");
-    event.add("tfc:usable_on_tool_rack", "measurements:tape_measure");
-    event.add("tfc:usable_on_tool_rack", "#chalk:chalks");
-    event.add("tfc:usable_on_tool_rack", "chalk:chalk_box");
-    event.add("tfc:usable_on_tool_rack", "computercraft:pocket_computer_normal");
-    event.add("tfc:usable_on_tool_rack", "computercraft:pocket_computer_advanced");
-    event.add("tfc:usable_on_tool_rack", "grapplemod:grapplinghook");
-    event.add("tfc:usable_on_tool_rack", "grapplemod:launcheritem");
-    event.add("tfc:usable_on_tool_rack", "ae2:color_applicator");
-    event.add("tfc:usable_on_tool_rack", "ae2:matter_cannon");
-    event.add("tfc:usable_on_tool_rack", "ae2:network_tool");
-    event.add("tfc:usable_on_tool_rack", "ae2:wireless_terminal");
-    event.add("tfc:usable_on_tool_rack", "ae2:wireless_crafting_terminal");
-    event.add("tfc:usable_on_tool_rack", "waterflasks:leather_flask");
-    event.add("tfc:usable_on_tool_rack", "waterflasks:iron_flask");
-    event.add("tfc:usable_on_tool_rack", "waterflasks:red_steel_flask");
-    event.add("tfc:usable_on_tool_rack", "tfc:wool_cloth");
-    event.add("tfc:usable_on_tool_rack", "firmalife:mixing_bowl");
-    event.add("tfc:usable_on_tool_rack", "#gtceu:molds");
+    /**
+     * @type {string[]} - Item IDs and tags usable on tfc tool racks.
+     */
+    const usableOnToolRack = [
+        "#forge:tools/mining_hammers",
+        "#forge:tools/spades",
+        "#forge:tools/wrenches",
+        "#forge:tools/files",
+        "#forge:tools/crowbars",
+        "#forge:tools/screwdrivers",
+        "#forge:tools/wire_cutters",
+        "#forge:tools/butchery_knives",
+        "#forge:tools/plungers",
+        "#forge:tools/mortars",
+        "#forge:tools/mallets",
+        "#forge:tools/chainsaws",
+        "#forge:tools/buzzsaws",
+        "#forge:tools/drills",
+        "#forge:tools/fishing_nets",
+        "#tfc:buckets",
+        "buildinggadgets2:gadget_building",
+        "buildinggadgets2:gadget_exchanging",
+        "buildinggadgets2:gadget_copy_paste",
+        "buildinggadgets2:gadget_cut_paste",
+        "buildinggadgets2:gadget_destruction",
+        "create:super_glue",
+        "exposure:camera",
+        "measurements:tape_measure",
+        "#chalk:chalks",
+        "chalk:chalk_box",
+        "computercraft:pocket_computer_normal",
+        "computercraft:pocket_computer_advanced",
+        "grapplemod:grapplinghook",
+        "grapplemod:launcheritem",
+        "ae2:color_applicator",
+        "ae2:matter_cannon",
+        "ae2:network_tool",
+        "ae2:wireless_terminal",
+        "ae2:wireless_crafting_terminal",
+        "waterflasks:leather_flask",
+        "waterflasks:iron_flask",
+        "waterflasks:red_steel_flask",
+        "tfc:wool_cloth",
+        "firmalife:mixing_bowl",
+        "#gtceu:molds",
+        "#gtceu:molds",
+        "create:wrench",
+        "framedblocks:framed_screwdriver",
+        "framedblocks:framed_wrench",
+        "framedblocks:framed_hammer",
+        "framedblocks:framed_key",
+        "mcw_tfc_aio:roofing_hammer",
+        "tfclunchbox:lunchbox",
+        "tfclunchbox:cooling_lunchbox",
+        "tfclunchbox:electric_lunchbox",
+        "primitive_creatures:yhgi",
+        "primitive_creatures:reh",
+        "species:harpoon",
+        "species:crankbow",
+        "tfg:trowel"
+    ];
+    usableOnToolRack.forEach((entry) => {
+        event.add("tfc:usable_on_tool_rack", entry);
+    });
 
     // Ингредиенты для закваски
     event.add("tfg:ferments_to_rennet", "tfc:food/soybean");
@@ -151,6 +170,7 @@ function registerTFCItemTags(event) {
         event.add("tfg:hardwood", `#tfc:${woodType}_logs`);
         event.add("tfg:stripped_hardwood", `tfc:wood/stripped_log/${woodType}`);
         event.add("tfg:stripped_hardwood", `tfc:wood/stripped_wood/${woodType}`);
+        event.add("tfg:hardwood_supports", `tfc:wood/support/${woodType}`);
     });
 
     //Softwood Tags
@@ -158,6 +178,7 @@ function registerTFCItemTags(event) {
         event.add("tfg:softwood", `#tfc:${woodType}_logs`);
         event.add("tfg:stripped_softwood", `tfc:wood/stripped_log/${woodType}`);
         event.add("tfg:stripped_softwood", `tfc:wood/stripped_wood/${woodType}`);
+        event.add("tfg:softwood_supports", `tfc:wood/support/${woodType}`);
     });
 
     // Теги для сосудов по цветам
@@ -260,15 +281,19 @@ function registerTFCItemTags(event) {
 
     // Теги для каменных ступенек тфк
     global.TFC_STONE_TYPES.forEach((stoneTypeName) => {
+        
+        //Add to buttons
+        event.add("minecraft:stone_buttons", `tfc:rock/button/${stoneTypeName}`);
+        event.add("minecraft:buttons", `tfc:rock/button/${stoneTypeName}`);
+
+        //Add to rock slabs
         global.TFC_ROCK_SLAB_BLOCK_TYPES.forEach((slabType) => {
             event.add(`tfg:rock_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`);
             event.add(`tfg:rock_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`);
             event.add(`tfg:rock_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`);
         });
-    });
-
-    // Теги для кирпичных ступенек тфк
-    global.TFC_STONE_TYPES.forEach((stoneTypeName) => {
+        
+        //Add to brick slabs
         global.TFC_BRICK_SLAB_BLOCK_TYPES.forEach((slabType) => {
             event.add(`tfg:brick_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`);
             event.add(`tfg:brick_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`);
@@ -329,12 +354,6 @@ function registerTFCItemTags(event) {
 
     event.add("forge:mushrooms", "tfc:plant/artists_conk");
     event.add("forge:raw_materials/sylvite", "tfc:ore/sylvite");
-
-    global.TFC_STONE_TYPES.forEach((stone) => {
-        event.add("minecraft:stone_buttons", `tfc:rock/button/${stone}`);
-        event.add("minecraft:buttons", `tfc:rock/button/${stone}`);
-    });
-
     event.add("tfc:any_knapping", "#tfc:pit_kiln_straw");
     event.add("tfg:burlap_fiber", "tfc:jute_fiber");
 
@@ -611,7 +630,7 @@ function registerTFCFluidTags(event) {
                 event.add("tfc:usable_in_red_steel_bucket", idStr);
             }
             // Burns ya.
-            if (temp >= 370) {
+            if (temp >= 1300) {
                 event.add("tfchotornot:hot_whitelist", idStr);
             }
             // Blue steel: can do heat, can't do cryo.

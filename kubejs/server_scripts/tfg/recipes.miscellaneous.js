@@ -759,7 +759,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		A: 'tfg:soaked_hardwood_strip',
 		B: ChemicalHelper.get(TagPrefix.bolt, GTMaterials.SterlingSilver, 1),
 		C: 'tfc:glue',
-		D: ChemicalHelper.get(TagPrefix.rodLong, GTMaterials.TreatedWood, 1),
+		D: ChemicalHelper.get(TagPrefix.rodLong, GTMaterials.TreatedWood, 1)
 	}).id('tfg:shaped/harvest_basket_from_wood')
 
 	event.recipes.gtceu.assembler('tfg:assembler/harvest_basket_from_wood')
@@ -781,7 +781,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		A: 'tfc:soaked_papyrus_strip',
 		B: ChemicalHelper.get(TagPrefix.bolt, GTMaterials.SterlingSilver, 1),
 		C: 'tfc:glue',
-		D: ChemicalHelper.get(TagPrefix.rodLong, GTMaterials.TreatedWood, 1),
+		D: ChemicalHelper.get(TagPrefix.rodLong, GTMaterials.TreatedWood, 1)
 	}).id('tfg:shaped/harvest_basket_from_papyrus')
 
 	event.recipes.gtceu.assembler('tfg:assembler/harvest_basket_from_papyrus')
@@ -895,7 +895,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		'AAA',
 		'AAA'
 	], {
-		A: 'tfg:aes_insulation_sheet',
+		A: 'tfg:aes_insulation_sheet'
 	}).id('tfg:shaped/aes_insulation_roll')
 
 	event.recipes.gtceu.assembler('tfg:aes_insulation_sheet')
@@ -1652,6 +1652,37 @@ function registerTFGMiscellaneousRecipes(event) {
 			.EUt(GTValues.VA[GTValues.LV])
 	});
 	TFGHelpers.registerMaterialInfo('tfg:rnr_plow', {'cobalt_brass': 5, 'invar': 2, 'steel': 2, 'wrought_iron': 2, 'rubber': 1, 'treated_wood': 1});
+
+	//#endregion
+	//#region Wax Unification
+
+	// Recipe Removals
+	event.remove({id: 'gtceu:extractor/extract_honeycomb_block'});
+	event.remove({id: 'gtceu:extractor/extract_honeycomb'});
+	event.remove({id: 'gtceu:extractor/extract_wax_dust'});
+
+	// Extractor Recipe
+	event.recipes.gtceu.extractor('tfg:wax_melting')
+		.itemInputs(Ingredient.of('#forge:wax'))
+		.outputFluids(Fluid.of('gtceu:wax', 144))
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.LV])
+		.category(GTRecipeCategories.EXTRACTOR_RECYCLING);
+
+	event.recipes.gtceu.extractor('tfg:tiny_wax_dust_melting')
+		.itemInputs(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Wax, 1))
+		.outputFluids(Fluid.of('gtceu:wax', 16))
+		.duration(10)
+		.EUt(GTValues.VA[GTValues.LV])
+		.category(GTRecipeCategories.EXTRACTOR_RECYCLING);
+
+	event.recipes.gtceu.extractor('tfg:small_wax_dust_melting')
+		.itemInputs(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Wax, 1))
+		.outputFluids(Fluid.of('gtceu:wax', 36))
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.LV])
+		.category(GTRecipeCategories.EXTRACTOR_RECYCLING);
+
 	//#endregion
 	
 	//ok these need to be disillery recipes, granted idk what circuit
