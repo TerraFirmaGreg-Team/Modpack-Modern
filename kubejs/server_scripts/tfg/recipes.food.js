@@ -346,6 +346,34 @@ function registerTFGFoodRecipes(event) {
 
 	//#endregion
 
+	//#region Chocolate 
+	const chocolateType = ["white_chocolate", "milk_chocolate", "dark_chocolate"]
+	const chocolateShape = ["", "_heart", "_bell", "_knife"] //"" is firmalife chocolate bar
+	const chocolatemolds = ["tfc:ceramic/ingot_mold", "tfcchannelcasting:heart_mold", "tfc:ceramic/bell_mold", "tfc:ceramic/knife_blade_mold"]
+
+	for (const ctype of chocolateType) {
+		for (const cshape of chocolateShape) {
+			event.recipes.gtceu.extractor(`${ctype}_${cshape}`)
+				.itemInputs(cshape == "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`)
+				.outputFluids(cshape == "" ? Fluid.of(`tfcchannelcasting:${ctype}`, 144) : Fluid.of(`tfcchannelcasting:${ctype}`, 100))
+				.duration(5 * 20)
+				.EUt(GTValues.VHA[GTValues.LV])
+		}
+	}
+
+	for (const ctype of chocolateType) {
+		for (const cshape of chocolateShape) {
+			processorRecipe(`${ctype}_${cshape}`, 5, 16, {
+				fluidInputs: [cshape == "" ? Fluid.of(`tfcchannelcasting:${ctype}`, 144) : Fluid.of(`tfcchannelcasting:${ctype}`, 100)],
+				itemOutputs: [cshape == "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`],
+				itemOutputProvider: TFC.isp.of(cshape == "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`).resetFood(),
+				notConsumable: [chocolatemolds[chocolateShape.indexOf(cshape)]]
+			})
+		}
+	}
+
+	//#endregion
+
 	//#region Food preservation
 
 	const smoking_meats = Ingredient.of('#tfc:foods/raw_meats').itemIds;
