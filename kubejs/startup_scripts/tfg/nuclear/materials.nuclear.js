@@ -240,7 +240,10 @@ const $DepletedFuelCellItem = Java.loadClass("fi.dea.mc.deafission.common.data.i
 //$ReactorBaseStats.Smr1 = new $ComponentTotals(200, 0, 0);
 
 StartupEvents.registry("item", (event) => {
-  const fuel = function(id, durability, rods, heat) {
+  const fuel = function(id, durability, rods, heat, createDepleted) {
+
+    if (createDepleted === undefined) createDepleted = true;
+
     event.createCustom("tfg:" + id, () => {
       return new $FuelCellItem(
         durability,
@@ -249,15 +252,15 @@ StartupEvents.registry("item", (event) => {
       );
     });
 
-    event.createCustom("tfg:depleted_" + id, () => {
-      return new $DepletedFuelCellItem(
-      );
-    });
-  }
+    if (createDepleted) {
+      event.createCustom("tfg:depleted_" + id, () => {
+        return new $DepletedFuelCellItem();
+      });
+    }
+  };
 
-  fuel("thorium_rod", 5000, 1, 0.7);// Max Heat 139 - 1 Fuel
-  fuel("uranium_rod", 20000, 1, 2.2);// Max Heat 435 - 1 Fuel
-  fuel("plutonium_rod", 30000, 4, 3);// Max Heat 595 - 1 Fuel
+  fuel("thorium_rod", 5000, 1, 0.7, false);// Max Heat 139 - 1 Fuel
+  fuel("uranium_rod", 20000, 1, 2.2, false);// Max Heat 435 - 1 Fuel
+  fuel("plutonium_rod", 30000, 4, 3, false);// Max Heat 595 - 1 Fuel
   fuel("tbu_232_rod", 10000, 1, 2);
-
 });

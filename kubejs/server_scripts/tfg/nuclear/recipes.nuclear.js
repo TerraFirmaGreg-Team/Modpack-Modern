@@ -479,13 +479,17 @@ function registerTFGNuclearRecipes(event) {
 	*/
 
 	//#endregion
-	/*
+
+	//#region Heat Battery
+
     event.recipes.deafission.hb_import('tfg:dense_steam')
         .inputFluids(Fluid.of('gtceu:dense_steam', 100))
         .outputFluids(Fluid.of('minecraft:water', 10))
         .blastFurnaceTemp(4000)
         .addData("hb_energy", 100)
-	*/
+	
+	//#endregion
+
 	//#region FLiBe Line - SCRAP FROM MARS TO VENUS
 
 	/*
