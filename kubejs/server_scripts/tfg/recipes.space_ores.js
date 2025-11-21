@@ -229,9 +229,9 @@ function registerTFGSpaceOres(event) {
 	event.recipes.gtceu.electric_blast_furnace('tfg:zirconium')
 		.itemInputs('2x #forge:dusts/magnesium', '5x #forge:dusts/zirconium_tetrachloride')
 		.itemOutputs('#forge:hot_ingots/zirconium', '6x #forge:dusts/magnesium_chloride')
-		.duration(40 * 20)
-		.blastFurnaceTemp(2141)
-		.EUt(GTValues.VA[GTValues.HV])
+		.duration(55 * 20)
+		.blastFurnaceTemp(4241)
+		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:zirconium_bromide')
 		.itemInputs('#forge:dusts/zirconium', '2x #forge:dusts/carbon')
