@@ -10,13 +10,13 @@ function registerTACZGunRecipes(event){
 	], {
 		A: '#forge:tools/files',
 		B: 'tfg:flintlock_mechanism',
-		C: 'gtceu:steel_small_fluid_pipe',
+		C: 'gtceu:lead_small_fluid_pipe',
 		D: '#firmaciv:hard_wood',
 		E: '#forge:tools/saws',
 		F: '#forge:ingots/brass',
 		G: '#forge:tools/screwdrivers'
 		
-	}).id('tacz:flintlock_pistol');
+	}).id('tfg_tacz:flintlock_pistol');
 	/* NYI
 	event.shaped(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ulv_guns:blunderbuss",HasBulletInBarrel:1b}'), [
 		'ABC',
@@ -46,7 +46,7 @@ function registerTACZGunRecipes(event){
 		F: '#forge:ingots/black_steel',
 		G: '#forge:tools/screwdrivers'
 		
-	}).id('tacz:trapdoor_rifle');
+	}).id('tfg_tacz:trapdoor_rifle');
 	
 	//DB shotguns
 	event.recipes.gtceu.assembler('tfg_tacz:db_short')

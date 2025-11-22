@@ -69,6 +69,14 @@ const registerTFGItemTags = (event) => {
 	event.add('deafission:fuels', 'tfg:plutonium_rod')
 	event.add('tfg:fission_rods', '#deafission:fuels')
 
+	// Platline
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_pentlandite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_chalcopyrite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_tetrahedrite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_bornite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_cooperite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_chalcocite_ore')
+
 	//#region Tools & Armor
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/wood')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/brass')
@@ -82,7 +90,6 @@ const registerTFGItemTags = (event) => {
 	event.add('minecraft:piglin_loved', 'tfg:piglin_disguise')
 
 	event.add('forge:tools/trowels', 'tfg:trowel')
-	event.add('tfc:usable_on_tool_rack', 'tfg:trowel')
 
 	event.add('tfg:harvester', 'tfg:harvest_basket')
 	event.add('tfg:harvester', 'tfg:aluminium_harvest_basket')
@@ -282,7 +289,167 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_surfer_steak')
 	event.add('tfg:raw_dinosaur_meat', 'wan_ancient_beasts:raw_ancient_meat')
 
-	//#region Meal Bag
+	/**
+	 * List of items that can make light stock.
+	 * @type {string[]}
+	 */
+	const makesLightStock = [
+		'tfc:food/chicken',
+		'tfc:food/cooked_chicken',
+		'tfc:food/quail',
+		'tfc:food/cooked_quail',
+		'tfc:food/pheasant',
+		'tfc:food/cooked_pheasant',
+		'tfc:food/grouse',
+		'tfc:food/cooked_grouse',
+		'tfc:food/turkey',
+		'tfc:food/cooked_turkey',
+		'tfc:food/peafowl',
+		'tfc:food/cooked_peafowl',
+		'tfc:food/rabbit',
+		'tfc:food/cooked_rabbit',
+		'tfc:food/duck',
+		'tfc:food/cooked_duck',
+		'tfg:food/raw_birt',
+		'tfg:food/cooked_birt',
+		'tfg:food/raw_moon_rabbit',
+		'tfg:food/cooked_moon_rabbit',
+		'tfg:food/raw_wraptor',
+		'tfg:food/cooked_wraptor',
+		'tfg:food/raw_glider_wings',
+		'tfg:food/cooked_glider_wings',
+		'tfg:food/raw_whole_soarer',
+		'tfg:food/cooked_whole_soarer'
+	];
+	makesLightStock.forEach(item => {
+		event.add('tfg:foods/makes_light_stock', item);
+	});
+
+	/**
+	 * List of items that can make rich stock.
+	 * @type {string[]}
+	 */
+	const makesRichStock = [
+		'tfc:food/beef',
+		'tfc:food/cooked_beef',
+		'tfc:food/mutton',
+		'tfc:food/cooked_mutton',
+		'tfc:food/bear',
+		'tfc:food/cooked_bear',
+		'tfc:food/horse_meat',
+		'tfc:food/cooked_horse_meat',
+		'tfc:food/venison',
+		'tfc:food/cooked_venison',
+		'tfc:food/chevon',
+		'tfc:food/cooked_chevon',
+		'tfc:food/gran_feline',
+		'tfc:food/cooked_gran_feline',
+		'tfc:food/turtle',
+		'tfc:food/cooked_turtle',
+		'tfc:food/camelidae',
+		'tfc:food/cooked_camelidae',
+		'tfg:food/raw_glacian_mutton',
+		'tfg:food/cooked_glacian_mutton',
+		'tfg:food/raw_sniffer_beef',
+		'tfg:food/cooked_sniffer_beef',
+		'tfg:food/raw_walker_steak',
+		'tfg:food/cooked_walker_steak',
+		'tfg:food/raw_crusher_meat',
+		'tfg:food/cooked_crusher_meat',
+		'wan_ancient_beasts:raw_ancient_meat',
+		'wan_ancient_beasts:cooked_ancient_meat'
+	];
+	makesRichStock.forEach(item => {
+		event.add('tfg:foods/makes_rich_stock', item);
+	});
+
+	/**
+	 * @type {string[]} - List of cheese curd item IDs.
+	 */
+	const cheeseCurds = [
+		'firmalife:food/yak_curd',
+		'firmalife:food/goat_curd',
+		'firmalife:food/milk_curd'
+	];
+	cheeseCurds.forEach(item => {
+		event.add('tfg:foods/cheese_curds', item);
+	});
+
+	/**
+	 * @type {string[]} - List of item tags and item IDs that can be used on burgers.
+	 */
+	const usable_in_burgers = [
+		'#tfc:foods/vegetables',
+		'firmalife:food/cooked_bacon',
+		'tfc:food/cooked_egg',
+		'firmalife:food/tofu'
+	];
+	usable_in_burgers.forEach(item => {
+		event.add('tfg:foods/usable_in_burgers', item);
+	});
+
+	/**
+	 * @type {string[]} - List of cheese tags and item IDs that can be used on a cheeseburger.
+	 */
+	const cheeses = [
+		'#firmalife:foods/cheeses',
+		'tfg:food/slice_of_cheese',
+		'firmalife:food/shredded_cheese'
+	];
+	cheeses.forEach(item => {
+		event.add('tfg:foods/cheeses', item);
+	});
+
+	/**
+	 * @type {string[]} - List of item IDs that can be used as burger meats.
+	 */
+	const burgerMeats = [
+		'tfc:food/beef',
+		'tfc:food/turkey',
+		'tfc:food/venison',
+		'tfg:food/raw_sniffer_beef',
+		'tfg:food/raw_crusher_meat',
+		'wan_ancient_beasts:raw_ancient_meat'
+	];
+	burgerMeats.forEach(item => {
+		event.add('tfg:foods/burger_meats', item);
+	});
+
+	// Spice tags
+	global.SPICES.forEach(spice => {
+		event.add('tfg:foods/spices', spice.product);
+		event.add('tfg:foods/spice_plants', spice.plant);
+	});
+
+	/**
+	 * @type {string[]} - List of item tags and item IDs that are allowed to be used in oatmeal.
+	 */
+	const usable_in_oatmeal = [
+		'#tfc:foods/fruits',
+		'tfc:food/oat_grain',
+		'#firmalife:foods/chocolate'
+	];
+	usable_in_oatmeal.forEach(item => {
+		event.add('tfg:foods/usable_in_oatmeal', item);
+	});
+
+	/**
+	 * @type {string[]} - List of citrus fruit item IDs.
+	 */
+	const citrus_fruits = [
+		'tfc:food/orange',
+		'tfc:jar/orange_unsealed',
+		'tfg:food/freeze_dried/orange',
+		'tfc:food/lemon',
+		'tfc:jar/lemon_unsealed',
+		'tfg:food/freeze_dried/lemon',
+		'minecraft:glow_berries',
+		'tfg:food/freeze_dried/glow_berries'
+	];
+	citrus_fruits.forEach(item => {
+		event.add('tfg:foods/citrus_fruits', item);
+	});
+
 	/**
 	 * List of item tags and item IDs that are allowed to be used in a meal bag.
 	 * @type {string[]}
@@ -327,7 +494,6 @@ const registerTFGItemTags = (event) => {
 
 	event.add('tfg:solid_fats', 'firmalife:food/butter')
 	event.add('tfg:solid_fats', 'tfc:blubber')
-	//#endregion
 	//#endregion
 
 	//#region Blacklisted from the railgun
@@ -705,9 +871,26 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:drinkables', 'tfg:proto_growth_medium')
 	event.add('tfc:any_drinkables', 'tfg:proto_growth_medium')
 
+	event.add('tfc:drinkables', 'tfg:brown_gravy')
+	event.add('tfc:any_drinkables', 'tfg:brown_gravy')
+
+	event.add('minecraft:water', 'tfg:rich_stock')
+	event.add('tfc:any_water', 'tfg:rich_stock')
+	event.add('tfc:drinkables', 'tfg:rich_stock')
+	event.add('tfc:any_drinkables', 'tfg:rich_stock')
+	
+	event.add('minecraft:water', 'tfg:light_stock')
+	event.add('tfc:any_water', 'tfg:light_stock')
+	event.add('tfc:drinkables', 'tfg:light_stock')
+	event.add('tfc:any_drinkables', 'tfg:light_stock')
+
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
 	})
+	
+	// Platline tags
+	event.add('tfg:sulfuric_metal_solution', 'gtceu:sulfuric_copper_solution')
+	event.add('tfg:sulfuric_metal_solution', 'gtceu:sulfuric_nickel_solution')
 }
 //#endregion
 
