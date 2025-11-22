@@ -170,6 +170,22 @@ const gunDataLogic = (event) => {
 		]
 	}
 	
+	if(id === "applied_armorer:niklas_pistol_semi_pride_data"){
+		json.bullet.extra_damage.armor_ignore = 0.25;
+	}
+	
+	if(id === "applied_armorer:niklas_pistol_double_win_win_data"){
+		json.bullet.damage = 10;
+		json.bullet.extra_damage.armor_ignore = 0.25;
+		json.bullet.extra_damage.head_shot_multiplier = 1.5;
+		json.bullet.extra_damage.damage_adjust = 
+		[
+			{"distance": 15, "damage": 10},
+			{"distance": 35, "damage": 9},
+			{"distance": "infinite", "damage": 8}
+		]
+	}
+	
 	//Snipers
 	if(id === "tacz:springfield1873_data") {
 		json.bullet.damage = 25;
@@ -317,6 +333,7 @@ const gunDataLogic = (event) => {
 		]
 		
 		json.bullet.damage = 10;
+		json.bullet.extra_damage.armor_ignore = 0.25;		
 		json.bullet.extra_damage.damage_adjust =
 		[
 			{"distance": 24, "damage": 10},
