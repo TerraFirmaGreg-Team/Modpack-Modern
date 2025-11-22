@@ -1,0 +1,168 @@
+{
+    "__comment__": "This file was automatically created by mcresources",
+    "name": "第一天",
+    "category": "tfc:getting_started",
+    "icon": "tfc:rock/loose/granite",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在群峦传说中，你最初能获得的资源只有那些散落在地上的木棍、树枝、和小石子。几乎所有气候中都会有这些资源。你可以按$(item)$(k:key.use)$()，或打破它们来把它们捡起来。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "1    ",
+                        " 2  4",
+                        "  03 ",
+                        " 4   ",
+                        "    5"
+                    ],
+                    [
+                        "GGGGG",
+                        "GGGGG",
+                        "GGGGG",
+                        "GGGGG",
+                        "GGGGG"
+                    ]
+                ],
+                "mapping": {
+                    "G": "tfc:grass/sandy_loam",
+                    "1": "tfc:rock/loose/granite[count=1]",
+                    "2": "tfc:rock/loose/granite[count=2]",
+                    "3": "tfc:rock/loose/granite[count=3]",
+                    "4": "tfc:groundcover/stick",
+                    "5": "tfc:wood/twig/ash"
+                }
+            },
+            "name": "示例",
+            "text": "一些散落的木棍和石头。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "除了在地上收集木棍和小树枝外，还可以空手打碎树叶来获得木棍。在你收集了一些石头和木棍后，你就可以开始尝试$(thing)打制石器$()了。打制石器是将两块石子互相敲击以将其中一块凿成特定形状的过程。首先你的手中应至少握住两块石子，然后对着空气按下$(item)$(k:key.use)$()就能打开$(thing)打制界面$()。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/rock_knapping.png"
+            ],
+            "text": "打制界面。",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "想要打制特定的物品，就必须通过点击$(thing)打制界面$()上的正方形石片来凿去不要的部分，直到形成所需的图案。例如将石片凿成右侧显示的图案就能做成石刀刃。$(br2)与合成配方一样，所需图案的位置对输出并不重要，并且一些配方具有多个有效的图案。"
+        },
+        {
+            "type": "tfc:rock_knapping_recipe",
+            "anchor": "knife",
+            "recipes": [
+                "tfg:rock_knapping/stone_knife_head",
+                "tfg:rock_knapping/stone_knife_head_1",
+                "tfg:rock_knapping/stone_knife_head_2",
+                "tfg:rock_knapping/stone_knife_head_3"
+            ],
+            "text": "一把石刀刃，用各种不同的岩石都可以制作。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "gtceu:shaped/knife_stone",
+            "text": "使用木棍或小树枝可以把任意的石制工具头组装成完整的工具。$(br2)石刀可以破坏植物来收获$(thing)干草$()。"
+        },
+        {
+            "type": "tfc:rock_knapping_recipe",
+            "recipes": [
+                "tfg:rock_knapping/stone_axe_head"
+            ],
+            "text": "$(thing)斧$()可以砍倒整棵树，包括树干和树叶。但只有单独打碎树叶才能获得树苗和木棍。"
+        },
+        {
+            "type": "tfc:rock_knapping_recipe",
+            "recipes": [
+                "tfg:rock_knapping/stone_shovel_head"
+            ],
+            "text": "$(thing)铲$()可以用来挖类似土壤材质的方块。对$(thing)草方块$()或$(thing)泥土$(item)使用$()铲子也可以制造$(thing)土径$()。"
+        },
+        {
+            "type": "tfc:rock_knapping_recipe",
+            "recipes": [
+                "tfg:rock_knapping/stone_hoe_head",
+                "tfg:rock_knapping/stone_hoe_head_1",
+                "tfg:rock_knapping/stone_hoe_head_2"
+            ],
+            "text": "$(thing)锄$()是$(l:mechanics/crops)农耕$()不可或缺的工具。它也可以清理树叶或其他植物。"
+        },
+        {
+            "type": "tfc:rock_knapping_recipe",
+            "recipes": [
+                "tfg:rock_knapping/stone_hammer_head"
+            ],
+            "text": "$(thing)锤$()可以当作武器使用（造成$(l:mechanics/damage_types)打击伤害$()），但它最主要的用途还是在$(l:getting_started/primitive_anvils)冶金业$()中。"
+        },
+        {
+            "type": "tfc:rock_knapping_recipe",
+            "recipes": [
+                "tfc:rock_knapping/javelin_head_sedimentary",
+                "tfc:rock_knapping/javelin_head_metamorphic",
+                "tfc:rock_knapping/javelin_head_igneous_extrusive",
+                "tfc:rock_knapping/javelin_head_igneous_intrusive"
+            ],
+            "text": "最后，$(thing)标枪$()是一种原始的一次性远程武器，也可以当作近战武器使用（造成$(l:mechanics/damage_types)突刺伤害$()）。"
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 0,
+    "extra_recipe_mappings": {
+        "tfc:stone/knife_head/sedimentary": 5,
+        "tfc:stone/knife_head/metamorphic": 5,
+        "tfc:stone/knife_head/igneous_extrusive": 5,
+        "tfc:stone/knife_head/igneous_intrusive": 5,
+        "tfc:stone/knife/sedimentary": 5,
+        "tfc:stone/knife/metamorphic": 5,
+        "tfc:stone/knife/igneous_extrusive": 5,
+        "tfc:stone/knife/igneous_intrusive": 5,
+        "tfc:stone/axe_head/sedimentary": 7,
+        "tfc:stone/axe_head/metamorphic": 7,
+        "tfc:stone/axe_head/igneous_extrusive": 7,
+        "tfc:stone/axe_head/igneous_intrusive": 7,
+        "tfc:stone/axe/sedimentary": 7,
+        "tfc:stone/axe/metamorphic": 7,
+        "tfc:stone/axe/igneous_extrusive": 7,
+        "tfc:stone/axe/igneous_intrusive": 7,
+        "tfc:stone/shovel_head/sedimentary": 8,
+        "tfc:stone/shovel_head/metamorphic": 8,
+        "tfc:stone/shovel_head/igneous_extrusive": 8,
+        "tfc:stone/shovel_head/igneous_intrusive": 8,
+        "tfc:stone/shovel/sedimentary": 8,
+        "tfc:stone/shovel/metamorphic": 8,
+        "tfc:stone/shovel/igneous_extrusive": 8,
+        "tfc:stone/shovel/igneous_intrusive": 8,
+        "tfc:stone/hoe_head/sedimentary": 9,
+        "tfc:stone/hoe_head/metamorphic": 9,
+        "tfc:stone/hoe_head/igneous_extrusive": 9,
+        "tfc:stone/hoe_head/igneous_intrusive": 9,
+        "tfc:stone/hoe/sedimentary": 9,
+        "tfc:stone/hoe/metamorphic": 9,
+        "tfc:stone/hoe/igneous_extrusive": 9,
+        "tfc:stone/hoe/igneous_intrusive": 9,
+        "tfc:stone/hammer_head/sedimentary": 10,
+        "tfc:stone/hammer_head/metamorphic": 10,
+        "tfc:stone/hammer_head/igneous_extrusive": 10,
+        "tfc:stone/hammer_head/igneous_intrusive": 10,
+        "tfc:stone/hammer/sedimentary": 10,
+        "tfc:stone/hammer/metamorphic": 10,
+        "tfc:stone/hammer/igneous_extrusive": 10,
+        "tfc:stone/hammer/igneous_intrusive": 10,
+        "tfc:stone/javelin_head/sedimentary": 11,
+        "tfc:stone/javelin_head/metamorphic": 11,
+        "tfc:stone/javelin_head/igneous_extrusive": 11,
+        "tfc:stone/javelin_head/igneous_intrusive": 11,
+        "tfc:stone/javelin/sedimentary": 11,
+        "tfc:stone/javelin/metamorphic": 11,
+        "tfc:stone/javelin/igneous_extrusive": 11,
+        "tfc:stone/javelin/igneous_intrusive": 11
+    }
+}
