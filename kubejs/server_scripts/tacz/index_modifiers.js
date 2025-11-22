@@ -221,7 +221,7 @@ const gunDataLogic = (event) => {
 	if(id === "applied_armorer:moritz_sniper_semi_k30_data") {
 		json.bullet.pierce = 4;
 		json.bullet.damage = 40;
-		json.bullet.extra_damage.armor_ignore = 0.45;
+		json.bullet.extra_damage.armor_ignore = 0.55;
 		json.bullet.extra_damage.damage_adjust = 
 		[
 			{"distance": 100, "damage": 40},
