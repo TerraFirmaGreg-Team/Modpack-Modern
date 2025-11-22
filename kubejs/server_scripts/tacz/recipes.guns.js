@@ -70,53 +70,83 @@ function registerTACZGunRecipes(event){
 	
 	//Region clockwork era
 	event.recipes.gtceu.assembler('tfg_tacz:ca_torque_revo')
-		.itemInputs('gtceu:steel_small_fluid_pipe', '4x #forge:ingots/aluminium', '2x #forge:plates/brass',
+		.itemInputs('gtceu:steel_small_fluid_pipe', '4x #forge:ingots/black_steel', '2x #forge:plates/brass',
 					'6x #forge:rings/brass', '2x gtceu:treated_wood_planks', '8x #forge:screws/black_steel', 
-					'tfg:advanced_clockwork_mechanism')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+					'3x greate:steel_cogwheel')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 256))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"create_armorer:pistol_revolver_torque",HasBulletInBarrel:1b}'))
 		.circuit(1)
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(80)
+	event.recipes.gtceu.assembler('tfg_tacz:ca_stress_pistol')
+		.itemInputs('gtceu:steel_small_fluid_pipe', '4x #forge:ingots/black_steel', '2x #forge:ingots/aluminium', 
+					'3x #forge:plates/brass', 'gtceu:treated_wood_planks', '12x #forge:screws/black_steel', 
+					'4x #forge:screws/brass', 'tfg:advanced_clockwork_mechanism')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 468))
+		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
+			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"create_armorer:pistol_auto_stress",HasBulletInBarrel:1b}'))
+		.circuit(2)
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(80)
 	event.recipes.gtceu.assembler('tfg_tacz:ca_crane')
 		.itemInputs('gtceu:steel_small_fluid_pipe', '7x #forge:ingots/aluminium', '2x #forge:ingots/black_steel', 
 					'4x #forge:plates/brass','2x gtceu:copper_tiny_fluid_pipe', '2x gtceu:treated_wood_planks', 
 					'2x #forge:small_gears/steel', '14x #forge:screws/black_steel', 'tfg:advanced_clockwork_mechanism')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 540))
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 684))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"create_armorer:rifle_assult_crane",HasBulletInBarrel:1b}'))
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(100)
+	event.recipes.gtceu.assembler('tfg_tacz:ca_crank_smg')
+		.itemInputs('gtceu:steel_small_fluid_pipe', '5x #forge:ingots/aluminium', '5x #forge:plates/brass', 
+					'6x gtceu:steel_tiny_fluid_pipe', '2x gtceu:treated_wood_planks', '2x #forge:small_gears/steel',
+					'16x #forge:screws/black_steel', 'tfg:advanced_clockwork_mechanism')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 612))
+		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
+			'{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"create_armorer:smg_auto_crank",HasBulletInBarrel:1b}'))
+		.circuit(3)
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(100)
 	event.recipes.gtceu.assembler('tfg_tacz:ca_pump_bearing')
 		.itemInputs('2x gtceu:steel_small_fluid_pipe', '4x #forge:ingots/aluminium', '4x #forge:plates/brass',
 					'8x gtceu:treated_wood_planks', '#forge:small_gears/steel', '#forge:gears/steel', 
 					'16x #forge:screws/black_steel', 'tfg:advanced_clockwork_mechanism')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 432))
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 504))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"create_armorer:shotgun_pump_bearing",HasBulletInBarrel:0b}'))
 		.EUt(GTValues.VA[GTValues.MV])
-		.circuit(3)
+		.circuit(4)
 		.duration(100)
 	event.recipes.gtceu.assembler('tfg_tacz:ca_clockwork_sniper')
-		.itemInputs('gtceu:steel_normal_fluid_pipe', '7x #forge:ingots/aluminium', '7x #forge:ingots/black_steel', 
+		.itemInputs('gtceu:steel_normal_fluid_pipe', '6x #forge:ingots/aluminium', '3x #forge:ingots/black_steel', 
 					'4x #forge:plates/brass','6x gtceu:copper_tiny_fluid_pipe', '2x gtceu:treated_wood_planks',  
-					'14x #forge:screws/black_steel', 'tfg:advanced_clockwork_mechanism')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 792))
+					'12x #forge:screws/black_steel', 'tfg:advanced_clockwork_mechanism')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 684))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"create_armorer:sniper_semi_clockwork",HasBulletInBarrel:1b}'))
 		.EUt(GTValues.VA[GTValues.MV])
-		.circuit(4)
+		.circuit(5)
 		.duration(120)
 	event.recipes.gtceu.assembler('tfg_tacz:ca_flywheel_mg')
 		.itemInputs('gtceu:steel_normal_fluid_pipe', '10x #forge:ingots/aluminium', '6x #forge:ingots/black_steel', 
 					'6x #forge:plates/brass', 'create:steam_engine', '3x gtceu:steel_tiny_fluid_pipe', 
 					'2x gtceu:treated_wood_planks','20x #forge:screws/black_steel', '2x tfg:advanced_clockwork_mechanism')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 936))
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 1008))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"create_armorer:mg_platemag_flywheel",HasBulletInBarrel:1b}'))
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(160)
+	event.recipes.gtceu.assembler('tfg_tacz:tacz_m700')
+		.itemInputs('3x gtceu:steel_small_fluid_pipe', '4x #forge:ingots/aluminium', '2x #forge:plates/black_steel',
+					'#forge:ingots/brass', '16x gtceu:treated_wood_planks', '16x #forge:screws/black_steel', 
+					'tfg:advanced_clockwork_mechanism')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 768))
+		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
+			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:m700",HasBulletInBarrel:0b}'))
+		.EUt(GTValues.VA[GTValues.MV])
+		.circuit(6)
+		.duration(120)
 	
 	
 	//Region certus era

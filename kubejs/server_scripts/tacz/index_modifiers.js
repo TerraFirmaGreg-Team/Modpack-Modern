@@ -18,7 +18,7 @@ const ammoIndexLogic = (event) => {
 	switch(id) {
 		case "tacz:45_70": json.stack_size = 64; break;
 		case "tacz:12g": json.stack_size = 64; break;
-		case "tacz:30x06": json.stack_size = 64; break;
+		case "tacz:30_06": json.stack_size = 64; break;
 
 		case "create_armorer:40mmhe": json.stack_size = 16; break;
 		case "create_armorer:rbapb": json.stack_size = 64; break;
