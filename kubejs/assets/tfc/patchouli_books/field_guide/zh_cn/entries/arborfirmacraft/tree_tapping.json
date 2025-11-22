@@ -1,0 +1,36 @@
+{
+    "name": "树汁采集",
+    "category": "tfc:arborfirmacraft",
+    "icon": "afc:tree_tap",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "某些树木可以被采集以获取有用的流体。这些树木可产出含糖树液（可浓缩为糖浆用作甜味剂）、乳胶（可加工成橡胶）或树脂（可加工成松香作为蜡替代品）。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "获取枫树树汁",
+            "images": [
+                "afc:textures/gui/book/maple_tapping.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "采集树汁需要三样东西：树木本身、一只树汁导管（需用铜锭打造并安装在至少三格高树干的中部），以及一个桶（必须正对导管下方、朝上放置）。若条件合适，桶会立刻开始注满树汁。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/tree_tapping/tapping_kapok.png"
+            ],
+            "text": "一个有效的配置：用于从木棉树中提取乳胶",
+            "border": true
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 1,
+    "extra_recipe_mappings": {
+        "afc:tree_tap": 0
+    }
+}
