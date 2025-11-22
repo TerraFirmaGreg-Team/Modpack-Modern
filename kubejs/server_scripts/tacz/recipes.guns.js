@@ -138,9 +138,8 @@ function registerTACZGunRecipes(event){
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(160)
 	event.recipes.gtceu.assembler('tfg_tacz:tacz_m700')
-		.itemInputs('3x gtceu:steel_small_fluid_pipe', '4x #forge:ingots/aluminium', '2x #forge:plates/black_steel',
-					'#forge:ingots/brass', '16x gtceu:treated_wood_planks', '16x #forge:screws/black_steel', 
-					'tfg:advanced_clockwork_mechanism')
+		.itemInputs('3x gtceu:steel_small_fluid_pipe', '5x #forge:ingots/aluminium', '4x #forge:plates/black_steel',
+					'16x gtceu:treated_wood_planks', '16x #forge:screws/black_steel', 'tfg:advanced_clockwork_mechanism')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 768))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:m700",HasBulletInBarrel:0b}'))

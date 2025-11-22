@@ -100,6 +100,12 @@ const gunIndexLogic = (event) => {
 		
 		return event.removeGun();
 	}
+	
+	if (id === "create_armorer:sniper_semi_clockwork"){
+		const json = JSON.parse(event.getStdJson());
+		json.type = "rifle";
+		return event.setJson(JSON.stringify(json));
+	}
 }
 
 const attachmentDataLogic = (event) => {
@@ -280,10 +286,44 @@ const gunDataLogic = (event) => {
 	//SMGs
 	if(id === "create_armorer:smg_auto_crank_data"){
 		json.ammo = "create_armorer:rbapb";
+		
+		json.ammo_amount = 25;
+		json.extended_mag_ammo_amount = 
+		[
+			35,
+			45,
+			55
+		]
+		
+		json.bullet.damage = 8;
+		json.bullet.extra_damage.armor_ignore = 0.25;
+		json.bullet.extra_damage.head_shot_multiplier = 1.2;
+		json.bullet.extra_damage.damage_adjust =
+		[
+			{"distance": 24, "damage": 8},
+			{"distance": 48, "damage": 7},
+			{"distance": 72, "damage": 6},
+			{"distance": "infinite", "damage": 5}
+		]
 	}
 	
 	if(id === "applied_armorer:niklas_smg_freedom_data"){
+		json.ammo_amount = 35;
+		json.extended_mag_ammo_amount = 
+		[
+			45,
+			55,
+			65
+		]
 		
+		json.bullet.damage = 10;
+		json.bullet.extra_damage.damage_adjust =
+		[
+			{"distance": 24, "damage": 10},
+			{"distance": 48, "damage": 9},
+			{"distance": 72, "damage": 8},
+			{"distance": "infinite", "damage": 7}
+		]
 	}
 	
 	//Heavy
@@ -295,6 +335,8 @@ const gunDataLogic = (event) => {
 			80,
 			115
 		]
+		
+		json.rpm = 640;
 		
 		json.bullet.damage = 12;
 		json.bullet.extra_damage.damage_adjust =
