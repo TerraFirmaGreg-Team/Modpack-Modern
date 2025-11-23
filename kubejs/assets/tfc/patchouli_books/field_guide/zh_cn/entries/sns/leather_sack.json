@@ -1,0 +1,17 @@
+{
+  "name": "皮革袋",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:leather_sack",
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "sns:leather_sack",
+	  "text": "$(item)皮革袋$()是一种$(l:sns/item_containers)物品容器$()，与小缸相似但容量稍高。默认可容纳至多$(thing)普通$()物品"
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/leather_sack"
+	}
+  ],
+  "read_by_default": true
+}
