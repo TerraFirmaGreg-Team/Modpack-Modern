@@ -4340,27 +4340,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "deafission-1.20.1-0.14.0.jar",
+                    "file_name": "deafission-1.20.1-0.15.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7183/3/deafission-1.20.1-0.14.0.jar",
-                    "id": "7183003",
+                    "release_type": "alpha",
+                    "url": "https://edge.forgecdn.net/files/7249/402/deafission-1.20.1-0.15.0.jar",
+                    "id": "7249402",
                     "parent_id": "1354541",
                     "hashes": {
-                        "sha1": "be825bbade05cbb92d4036018ac2ed2afdd0c60e",
-                        "md5": "5c75e50c6375e902b55d1d5e8443d6b8"
+                        "sha1": "d5006dec153b97fb575562579d67facaa49bd7c1",
+                        "md5": "ee23ef29043242633e6966ce991e4bd1"
                     },
                     "required_dependencies": [
                         "890405",
                         "238086"
                     ],
-                    "size": 291509,
-                    "date_published": "2025-11-03T18:53:38.453Z"
+                    "size": 410648,
+                    "date_published": "2025-11-22T14:10:43.543Z"
                 }
             ]
         },
