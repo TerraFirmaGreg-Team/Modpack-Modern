@@ -800,7 +800,11 @@ global.TFC_FURNACE_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfc:ceramic/unfired_vessel", output: "tfc:ceramic/vessel", name: "vessel" },
     { input: "tfc:ceramic/unfired_large_vessel", output: "tfc:ceramic/large_vessel", name: "large_vessel" },
     { input: "tfcchannelcasting:unfired_channel", output: "tfcchannelcasting:channel", name: "channel" },
-    { input: "tfcchannelcasting:unfired_mold_table", output: "tfcchannelcasting:mold_table", name: "mold_table" }
+    { input: "tfcchannelcasting:unfired_mold_table", output: "tfcchannelcasting:mold_table", name: "mold_table" },
+    { input: "firmalife:oven_top", output: "firmalife:cured_oven_top", name: "oven_top" },
+    { input: "firmalife:oven_chimney", output: "firmalife:cured_oven_chimney", name: "oven_chimney" },
+    { input: "firmalife:oven_bottom", output: "firmalife:cured_oven_bottom", name: "oven_bottom" },
+    { input: "firmalife:oven_hopper", output: "firmalife:cured_oven_hopper", name: "oven_hopper" }
 ]);
 
 global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
@@ -830,6 +834,12 @@ global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_large_vessel", name: "large_vessel" },
     { input: "5x minecraft:clay_ball", output: "tfcchannelcasting:unfired_heart_mold", name: "heart_mold" },
     { input: "5x minecraft:clay_ball", output: "10x rnr:unfired_roof_tile", name: "roof_tile" },
+    { input: "5x minecraft:clay_ball", output: "firmalife:oven_top", name: "oven_top" },
+    { input: "5x minecraft:clay_ball", output: "firmalife:oven_chimney", name: "oven_chimney" },
+    { input: "5x minecraft:clay_ball", output: "firmalife:oven_bottom", name: "oven_bottom" },
+]);
+
+global.TFC_FIRE_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "5x tfc:fire_clay", output: "tfc:ceramic/unfired_fire_ingot_mold", name: "fire_ingot_mold" },
     { input: "5x tfc:fire_clay", output: "tfc:ceramic/unfired_crucible", name: "crucible" },
     { input: "5x tfc:fire_clay", output: "tfcchannelcasting:unfired_channel", name: "channel" },

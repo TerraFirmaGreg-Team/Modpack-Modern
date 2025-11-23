@@ -1,7 +1,20 @@
 # Changelog
 ## [Unreleased]
 ### Changes
+- Add shapeless p2p recipes (#2234) @SpicyNoodle5
+- Added assembler, smelting and heating recipes for firmalife ovens (#2220) @SpicyNoodle5
+- Raised player-burning fluid threshold from 370K to 1300K @Redeix
+- Added partial unification to the gtceu wax material @Redeix
+- Mars endermen can no longer pick up the wrong kind of warped/crimson sapling, and the correct kind has been added to their loot tables (#2240)
+- Cleanrooms now allow 9 door "blocks", so you can use the 3x3 Ad Astra doors (#2074) @ko-lja
+- Added recycling for astikor carts (#2227) @Pyritie
 ### Bug fixes
+- Fixed brown gravy recipe @Redeix
+- Fixed instant mac recipe requiring less cardboard than it gives back @Redeix
+- Fixed Ad Astra moon cheese nutrition values being inconsistent @Redeix
+- Fixed some quest typos @Pyritie
+- Fixed duplicate bed dyeing recipe (#2229) @Pyritie
+- Fixed Basic Hermetic Casing missing a mineable tag and loot table (#2221) @Pyritie
 ### Translation updates
 
 ## [0.11.8] - 19-11-2025

@@ -659,6 +659,8 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:assembler/assemble_purpur_into_stair' })
 	event.remove({ id: 'gtceu:assembler/stonecutter' })
 
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__blaze' })
+
 	event.remove({ id: 'gtceu:chemical_reactor/ghast_tear_separation' })
 	
 	event.remove({ id: 'gtceu:assembler/assemble_brick_into_stair' })
