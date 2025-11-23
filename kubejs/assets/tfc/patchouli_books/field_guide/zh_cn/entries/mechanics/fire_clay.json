@@ -6,34 +6,34 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "耐火黏土的用途虽然不多，但每一种都至关重要。它是比普通黏土更强的变种，具有更高的耐热性能。用于制作必须承受高温的物品！"
+            "text": "耐火黏土能做成的东西不多，但每个都是科技进步上不可或缺的要素！耐火黏土比普通黏土能承受更高的高温，因此某些高级设备只能用耐火黏土建造。"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/fire_clay",
-            "text": "耐火土由 $(l:tfg_ores/earth_vein_index#normal_graphite)石墨粉$() 和 $(l:tfg_ores/surface_kaolin#powder)高岭土粉$() 制成——前者需用 $(l:mechanics/quern)石磨$() 研磨。"
+            "text": "耐火黏土是通过$(l:the_world/ores_and_minerals#graphite)石墨粉$()和$(l:the_world/ores_and_minerals#kaolinite)高岭石粉$()合成得到的，前者需用 $(l:mechanics/quern)手推磨$() 研磨。"
         },
         {
             "type": "tfc:heat_recipe",
             "recipe": "tfc:heating/kaolin_clay",
-            "text": "$(thing)高岭土粉$() 是通过加热 $(l:mechanics/surface_kaolin)高岭土$() 得到的，但过程并不完美，仅约 20% 的高岭土能转化为粉末！"
+            "text": "高岭石粉是通过加热$(l:the_world/ores_and_minerals#kaolinite)高岭土$()得到的。然而现在这种工艺并不成熟，导致其产率只有20%左右。"
         },
         {
             "type": "tfc:knapping_recipe",
             "anchor": "crucible",
             "recipe": "tfc:fire_clay_knapping/crucible",
-            "text": "未烧制状态下的 $(l:mechanics/crucible)坩埚$() 就是由耐火土制成。"
+            "text": "用耐火黏土塑形成未烧制的$(l:mechanics/crucible)坩埚$()。"
         },
         {
             "type": "tfc:knapping_recipe",
             "anchor": "fire_bricks",
             "recipe": "tfc:fire_clay_knapping/brick",
-            "text": "$(l:mechanics/blast_furnace)高炉$() 只接受耐火砖作为绝缘材料。"
+            "text": "作为理想的隔热材料，耐火砖是建造$(l:mechanics/blast_furnace)高炉$()的必需品。"
         },
         {
             "type": "tfc:knapping_recipe",
             "recipe": "tfc:fire_clay_knapping/fire_ingot_mold",
-            "text": "$(thing)耐火锭模$() 是一种更坚固的 $(l:getting_started/pottery#mold)锭模$()，损坏概率为 1/100，远低于普通锭模的 1/10。"
+            "text": "$(thing)耐火铸锭模具$()是一种更强版本的$(l:getting_started/pottery#mold)铸锭模具$()。相比普通的铸锭模具，耐火铸锭模具仅有1%的概率会在使用时破碎，普通模具则是10%。"
         }
     ],
     "read_by_default": true

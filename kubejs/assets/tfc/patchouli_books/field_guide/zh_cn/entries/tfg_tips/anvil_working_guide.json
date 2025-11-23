@@ -153,7 +153,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Rod Target Value: $(bold)78$()$(br)Required Steps: Draw->Draw->Bend$(br)\"requiredWork\": (-15 x 2) + 7 = -23$(br)Derived Value: 78 + 23 = 101.$(br)Reaching the Value: (Shrink x 5)->(Bend x 3)$(br)Getting the Item: 101 - 15 - 15 + 7 = 78."
+            "text": "杆目标值：$(bold)78$()$(br)必需步骤：延展->延展->弯曲$(br)\"requiredWork\"： (-15 x 2) + 7 = -23$(br)中间值：78 + 23 = 101。$(br)达成中间值：(收缩 x 5)->(弯曲 x 3)$(br)完成物品：101 - 15 - 15 + 7 = 78。"
         },
         {
             "type": "patchouli:text",
