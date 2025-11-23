@@ -1,0 +1,30 @@
+{
+  "name": "马蹄铁",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:metal/horseshoe/steel",
+  "pages": [
+	{
+	  "type": "patchouli:text",
+	  "text": "$(item)马蹄铁$()需先单独锻造，再在工作台中组合。你难道不知道马有四只脚吗？$(br)$(br)顺带一提，给马穿高级马蹄铁时，最好把马拴好，普通的安全坑已经不管用了！"
+	},
+	{
+	  "type": "tfc:sns/better_anvil_recipe",
+	  "recipe": "sns:anvil/metal/horseshoe/steel",
+	  "recipe2": "sns:anvil/metal/horseshoe/black_steel",
+	  "recipe3": "sns:anvil/metal/horseshoe/blue_steel",
+	  "recipe4": "sns:anvil/metal/horseshoe/red_steel",
+	  "text4": "每匹马都该有双好鞋"
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/metal/horseshoes/steel",
+	  "recipe2": "sns:crafting/metal/horseshoes/black_steel"
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/metal/horseshoes/blue_steel",
+	  "recipe2": "sns:crafting/metal/horseshoes/red_steel"
+	}
+  ],
+  "read_by_default": true
+}
