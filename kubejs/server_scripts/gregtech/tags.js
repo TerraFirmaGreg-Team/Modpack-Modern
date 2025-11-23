@@ -57,6 +57,8 @@ function registerGTCEUItemTags(event) {
 
     // @ts-expect-error According to KJS docs adding tags to tags is supported.
     event.add("gtceu:molds", "#gtceu:casting_molds", "#gtceu:extruder_molds", "gtceu:empty_mold");
+
+    event.add('forge:wax', 'gtceu:wax_dust');
 }
 
 /** @param {TagEvent.Block} event  */
@@ -68,6 +70,8 @@ function registerGTCEUBlockTags(event) {
 
     event.add("minecraft:mineable/pickaxe", "#forge:ores");
     event.add("minecraft:needs_iron_tool", "#forge:ores");
+
+    event.add('gtceu:mineable/pickaxe_or_wrench', 'gtceu:ulv_hermetic_casing');
 
     // Collapse tags
     event.add("tfc:can_collapse", "#forge:ores");
@@ -131,6 +135,8 @@ function registerGTCEUFluidTags(event) {
     event.add("c:hidden_from_recipe_viewers", "gtceu:molten_black_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:molten_red_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:molten_blue_steel");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_black_bronze");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_bismuth_bronze");
     event.add("c:hidden_from_recipe_viewers", "gtceu:damascus_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:blaze");
     event.add("c:hidden_from_recipe_viewers", "gtceu:thorium");
