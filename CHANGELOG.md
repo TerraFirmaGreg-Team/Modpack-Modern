@@ -6,6 +6,7 @@
 - Raised player-burning fluid threshold from 370K to 1300K @Redeix
 - Added partial unification to the gtceu wax material @Redeix
 - Mars endermen can no longer pick up the wrong kind of warped/crimson sapling, and the correct kind has been added to their loot tables (#2240)
+- Cleanrooms now allow 9 door "blocks", so you can use the 3x3 Ad Astra doors (#2074) @ko-lja
 ### Bug fixes
 - Fixed brown gravy recipe @Redeix
 - Fixed instant mac recipe requiring less cardboard than it gives back @Redeix
