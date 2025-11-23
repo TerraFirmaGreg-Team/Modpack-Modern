@@ -18,7 +18,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "此外，点心可以做成$(thing)夹心$()以获得额外收益：夹$(thing)果酱$()会额外提供$(thing)水果$()营养，夹$(thing)酒精$()会给予正面药水效果。"
+      "text": "此外，点心可以做成$(thing)夹心$()以获得额外收益：夹心$(thing)果酱$()会额外提供$(thing)水果$()营养，夹心$(thing)酒精$()会给予正面药水效果。"
     },
     {
       "type": "tfc:sealed_barrel_recipe",
