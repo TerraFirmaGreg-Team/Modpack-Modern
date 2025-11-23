@@ -273,7 +273,7 @@ function registerTFGNuclearRecipes(event) {
 		.dimension('ad_astra:mars')
 
 	// TBU Fission
-
+/*
     event.recipes.deafission.fission_reactor_fuel('kubejs:fuelcell_custom_x1')
         .itemInputs('tfg:tbu_232_rod')
         .itemOutputs('minecraft:dirt')
@@ -289,7 +289,7 @@ function registerTFGNuclearRecipes(event) {
         .outputFluids(Fluid.of('gtceu:dense_steam', 100))
         .addData("coolant_heat_per_tick", 12.34)
         .duration(1000);
-
+*/
 	//#endregion
 
 	//#region Fission Recipes for cooling
@@ -441,6 +441,7 @@ function registerTFGNuclearRecipes(event) {
 	//#endregion
 	
 	//#region Cooling Tower
+	/*
 	event.recipes.gtceu.assembler('tfg:ostrum_carbon_casing')
 		.itemInputs('2x #forge:plates/ostrum', '2x #forge:plates/titanium_carbide', '#forge:dense_plates/hsla_steel', '#forge:frames/black_steel')
 		.itemOutputs('2x tfg:casings/machine_casing_ostrum_carbon')
@@ -463,6 +464,7 @@ function registerTFGNuclearRecipes(event) {
 		.circuit(6)
 		.EUt(GTValues.VA[GTValues.IV] * 2)
 		.duration(20*4)
+	*/
 
 	/*
 	event.shaped('tfg:cooling_tower', [
