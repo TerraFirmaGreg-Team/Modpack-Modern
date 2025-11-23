@@ -18,7 +18,7 @@
             "title": "枫树",
             "item": "tfc:wood/log/maple,tfc:wood/wood/maple,tfc:wood/leaves/maple,tfc:wood/sapling/maple",
             "link_recipe": false,
-            "text": "$(bold)气候数据$()$(br)$(thing)最低温度$(): -8.4°C$(br)$(thing)最高温度$(): 8°C$(br)$(thing)最低降雨量$(): 240$(br)$(thing)最高降雨量$(): 470$(br2)$(bold)采集数据$()$(br)$(thing)最低产出温度$(): -15°C$(br)$(thing)最高产出温度$(): 5°C$(br)$(thing)春季特有$(): 不是$(br)$(thing)流速$(): 5mb"
+            "text": "$(bold)气候数据$()$(br)$(thing)最低温度$(): -8.4°C$(br)$(thing)最高温度$(): 8°C$(br)$(thing)最低降雨量$(): 240$(br)$(thing)最高降雨量$(): 470$(br2)$(bold)采集数据$()$(br)$(thing)最低产出温度$(): -15°C$(br)$(thing)最高产出温度$(): 5°C$(br)$(thing)春季特有$(): 否$(br)$(thing)流速$(): 5mb"
         },
         {
             "type": "patchouli:image",
@@ -34,7 +34,7 @@
             "title": "白桦树",
             "item": "tfc:wood/log/birch,tfc:wood/wood/birch,tfc:wood/leaves/birch,tfc:wood/sapling/birch",
             "link_recipe": false,
-            "text": "$(bold)气候数据$()$(br)$(thing)最低温度$(): -12.1°C$(br)$(thing)最高温度$(): 6.1°C$(br)$(thing)最低降雨量$(): 125$(br)$(thing)最高降雨量$(): 310$(br2)$(bold)采集数据$()$(br)$(thing)最低产出温度$(): -15°C$(br)$(thing)最高产出温度$(): 5°C$(br)$(thing)春季特有$(): 不是$(br)$(thing)流速$(): 5mb"
+            "text": "$(bold)气候数据$()$(br)$(thing)最低温度$(): -12.1°C$(br)$(thing)最高温度$(): 6.1°C$(br)$(thing)最低降雨量$(): 125$(br)$(thing)最高降雨量$(): 310$(br2)$(bold)采集数据$()$(br)$(thing)最低产出温度$(): -15°C$(br)$(thing)最高产出温度$(): 5°C$(br)$(thing)春季特有$(): 否$(br)$(thing)流速$(): 5mb"
         },
         {
             "type": "patchouli:image",
