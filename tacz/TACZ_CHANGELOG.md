@@ -2,7 +2,7 @@
 ## TFG Version 0.11.9
 ## Additions
 
-### "Clutch" M700 Sniper Rifle
+### "Clutch" Sniper Rifle
 - True MV tier marksman Rifle
 - Uses new .30-06 SLAP Ammo
 - Stats 
@@ -113,6 +113,8 @@
 	- 160+: 9 -> 10
 	
 ## Machine Guns
+
+### "Flywheel" Machine Gun
 - Ammo Count:
 	- Base: 50 -> 40
 	- Extend 1: 65 -> 55
@@ -124,3 +126,8 @@
 	- 0-32: 13 -> 12
 	- 32-64: 12 -> 11
 	- 64+: 10 -> 10
+	
+## Ammo
+
+### SLAP Ammo
+- Lead Nuggets -> Lead Bolts
