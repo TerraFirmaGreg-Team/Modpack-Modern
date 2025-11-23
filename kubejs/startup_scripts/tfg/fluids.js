@@ -3,6 +3,16 @@
 
 const registerTFGFluids = (event) => {
 
+	//#region Tungsten Line
+
+	event.create('tfg:synthetic_water')
+		.thinTexture(0x036bfc)
+		.bucketColor(0x036bfc)
+		.temperature(300)
+		.noBlock()
+	
+	//#endregion
+
 	//#region Mars
 
 	event.create('tfg:heavy_ammoniacal_water')

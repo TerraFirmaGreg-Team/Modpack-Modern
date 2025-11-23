@@ -1694,8 +1694,9 @@ const registerGTCEURecipes = (event) => {
 	event.remove({ id: 'gtceu:chemical_bath/tungstic_acid_from_scheelite' })
 	event.remove({ id: 'gtceu:chemical_bath/tungstic_acid_from_tungstate' })
 	event.remove({ id: 'gtceu:electrolyzer/tungstic_acid_electrolysis' })
-	event.remove({ id: 'gtceu:chemical_reactor/sodium_bicarbonate_from_salt'})
-	event.remove({ id: 'gtceu:large_chemical_reactor/sodium_bicarbonate_from_salt'})
+	event.remove({ id: 'gtceu:chemical_reactor/sodium_bicarbonate_from_salt' })
+	event.remove({ id: 'gtceu:large_chemical_reactor/sodium_bicarbonate_from_salt' })
+	event.remove({ id: 'gtceu:electrolyzer/soda_ash_from_bicarbonate' })
 
 	// Transform Tungstate and Scheelite
 
@@ -1735,6 +1736,7 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.evaporation_tower('tfg:ammonium_tungstate_to_apt_h')
 		.itemInputs(Item.of('tfg:ammonium_tungstate_dust', 1))
 		.itemOutputs(Item.of('tfg:apt_gem', 1))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 6000))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
@@ -1747,7 +1749,7 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.distillery('tfg:ammonium_tungstate_to_apt')
 		.itemInputs(Item.of('tfg:ammonium_tungstate_dust', 1))
 		.itemOutputs(Item.of('tfg:apt_gem', 1))
-		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 6000))
 		.duration(20*90)
 		.EUt(GTValues.VHA[GTValues.HV])
 
@@ -1775,11 +1777,13 @@ const registerGTCEURecipes = (event) => {
 		.duration(20*2.8)
 		.EUt(GTValues.VA[GTValues.EV])
 
+	// Looping soda ash and synthetic water
+
 	event.recipes.gtceu.chemical_reactor('tfg:chemical_reactor/sodium_bicarbonate_from_salt')
 		.itemInputs(Item.of('gtceu:salt_dust', 2))
 		.inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
 		.inputFluids(Fluid.of('gtceu:ammonia', 1000))
-		.inputFluids(Fluid.of('minecraft:water', 1000))
+		.inputFluids(Fluid.of('tfg:synthetic_water', 1000))
 		.itemOutputs(Item.of('gtceu:ammonium_chloride_dust', 2))
 		.itemOutputs(Item.of('gtceu:sodium_bicarbonate_dust', 6))
 		.circuit(2)
@@ -1790,13 +1794,45 @@ const registerGTCEURecipes = (event) => {
 		.itemInputs(Item.of('gtceu:salt_dust', 2))
 		.inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
 		.inputFluids(Fluid.of('gtceu:ammonia', 1000))
-		.inputFluids(Fluid.of('minecraft:water', 1000))
+		.inputFluids(Fluid.of('tfg:synthetic_water', 1000))
 		.itemOutputs(Item.of('gtceu:ammonium_chloride_dust', 2))
 		.itemOutputs(Item.of('gtceu:sodium_bicarbonate_dust', 6))
 		.circuit(2)
 		.duration(20*20)
 		.EUt(GTValues.VA[GTValues.MV])
-		
+	
+	event.recipes.gtceu.electrolyzer('tfg:electrolyzer/sodium_bicarbonate')
+		.itemInputs(Item.of('gtceu:sodium_bicarbonate_dust', 12))
+		.itemOutputs(Item.of('gtceu:soda_ash_dust', 6))
+		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
+		.outputFluids(Fluid.of('tfg:synthetic_water', 1000))
+		.duration(20*10)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:chemical_reactor/synthetic_water')
+		.inputFluids(Fluid.of('gtceu:hydrogen', 2000))
+		.inputFluids(Fluid.of('gtceu:oxygen', 1000))
+		.outputFluids(Fluid.of('tfg:synthetic_water', 1000))
+		.circuit(2)
+		.duration(20*4)
+		.EUt(GTValues.VA[GTValues.MV])
+	
+	event.recipes.gtceu.large_chemical_reactor('tfg:large_chemical_reactor/synthetic_water')
+		.inputFluids(Fluid.of('gtceu:hydrogen', 2000))
+		.inputFluids(Fluid.of('gtceu:oxygen', 1000))
+		.outputFluids(Fluid.of('tfg:synthetic_water', 1000))
+		.circuit(2)
+		.duration(20*4)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.electrolyzer('tfg:electrolyzer/synthetic_water')
+		.inputFluids(Fluid.of('tfg:synthetic_water', 1000))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 2000))
+		.outputFluids(Fluid.of('gtceu:oxygen', 1000))
+		.duration(20*4)
+		.EUt(GTValues.VA[GTValues.MV])
+	
+	//#endregion
 
 	// New Alloys
 
