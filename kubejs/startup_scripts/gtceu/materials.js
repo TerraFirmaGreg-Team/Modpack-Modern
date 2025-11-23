@@ -211,6 +211,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Malachite.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Sphalerite.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Tetrahedrite.addFlags(HAS_SMALL_TFC_ORE);
+	GTMaterials.Chromite.addFlags(HAS_SMALL_TFC_ORE);
 	//
 	//        /* Имеют маленькие чистые куски руды TFC */
 	GTMaterials.Copper.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
