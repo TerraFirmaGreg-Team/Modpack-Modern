@@ -10,6 +10,8 @@ const registerGTCEuMaterialModification = (event) => {
 	//const TFGPropertyKey = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGPropertyKeys')
 	const $TFC_PROPERTY = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.properties.TFCProperty')
 	const $ORE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty')
+	const $INGOT_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty')
+	const $BLAST_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty')
 	const $ITEM_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.ItemPipeProperties')
 	const $FLUID_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties')
 	const $HAZARD_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.HazardProperty')
@@ -296,6 +298,10 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Plutonium239.addFlags(GENERATE_ROD, NO_ORE_PROCESSING_TAB, NO_ORE_SMELTING)
 	GTMaterials.Thorium.addFlags(NO_ORE_SMELTING)
 
+	GTMaterials.Zirconium.addFlags(GENERATE_FINE_WIRE, GENERATE_PLATE, NO_ORE_SMELTING);
+	GTMaterials.Zirconium.setProperty(PropertyKey.INGOT, new $INGOT_PROPERTY());
+	GTMaterials.Zirconium.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4200, 'mid', GTValues.VA[GTValues.EV], 1300, GTValues.VA[GTValues.HV], 14.7*20));
+
 	GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 8, 1, [
 		GTToolType.AXE,
 		GTToolType.HARD_HAMMER,
@@ -422,6 +428,9 @@ const registerGTCEuMaterialModification = (event) => {
 	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
 	rose_quartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
+
+	let zirconium_diboride = TFGHelpers.getMaterial('zirconium_diboride');
+	zirconium_diboride.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4500, "high", GTValues.VA[GTValues.EV], 2700, GTValues.VA[GTValues.HV], 12.5*20));
 	
 	GTMaterials.CertusQuartz.setComponents('1x unknown', '1x silicon', '2x oxygen')
 	GTMaterials.GraniteRed.setComponents([])
