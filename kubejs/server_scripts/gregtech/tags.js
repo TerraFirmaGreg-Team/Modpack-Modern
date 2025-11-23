@@ -71,6 +71,8 @@ function registerGTCEUBlockTags(event) {
     event.add("minecraft:mineable/pickaxe", "#forge:ores");
     event.add("minecraft:needs_iron_tool", "#forge:ores");
 
+    event.add('gtceu:mineable/pickaxe_or_wrench', 'gtceu:ulv_hermetic_casing');
+
     // Collapse tags
     event.add("tfc:can_collapse", "#forge:ores");
     event.add("tfc:can_start_collapse", "#forge:ores");

@@ -639,7 +639,6 @@ const registerTFGItemTags = (event) => {
 const registerTFGBlockTags = (event) => {
 
 	event.add('minecraft:mineable/shovel', 'tfg:ash_pile')
-	event.add('gtceu:ulv_hermetic_casing', 'gtceu:mineable/pickaxe_or_wrench');
 	//crop stuff
 	event.add('tfc:crops', 'tfg:rapeseed')
 	event.add('tfc:mineable_with_sharp_tool', 'tfg:rapeseed')
