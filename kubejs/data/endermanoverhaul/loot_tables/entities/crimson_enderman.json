@@ -16,6 +16,16 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
+					"name": "tfg:saplings/crimson"
+				}
+			],
+			"rolls": 1.0
+		},
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
 					"functions": [
 						{
 							"add": false,
