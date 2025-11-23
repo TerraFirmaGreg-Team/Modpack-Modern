@@ -235,7 +235,7 @@ const registerAdAstraRecipes = (event) => {
 		
 	event.recipes.gtceu.assembler('tfg:rocket_cone_t3')
 		.itemInputs('gtceu:iv_emitter', '#forge:dense_plates/rocket_alloy_t3', '#forge:double_plates/tungsten_steel', 
-					'#forge:double_plates/ostrum', 'gtceu:plutonium_nugget') //change this to the pellet
+					'#forge:double_plates/ostrum', 'tfg:plutonium_rod')
 		.itemOutputs('tfg:rocket_cone_t3')
 		.duration(1700)
 		.circuit(4)
@@ -297,7 +297,7 @@ const registerAdAstraRecipes = (event) => {
 	
 	//#endregion
 */
-	//#region space suits NETHERITE STUFF DISABLED UNTIL IV
+	//#region space suits
 
 	event.recipes.gtceu.forming_press('space_suit_fabric')
 		.itemInputs(
