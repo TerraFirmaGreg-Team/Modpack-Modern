@@ -1,0 +1,80 @@
+{
+    "__comment__": "This file was automatically created by mcresources",
+    "name": "锻铁炉",
+    "category": "tfc:mechanics",
+    "icon": "tfc:bloomery",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)炼铁炉$() 是一种用于将 $(thing)铁矿石$() 熔炼成 $(thing)铁块$() 的装置，这些铁块随后可加工为 $(thing)熟铁$()。铁矿石包括 $(l:the_world/ores_and_minerals#hematite)赤铁矿$()、$(l:the_world/ores_and_minerals#limonite)褐铁矿$() 和 $(l:the_world/ores_and_minerals#magnetite)磁铁矿$()。这些矿石熔化后会变成 $(thing)生铁$()，而非 $(thing)熟铁$()。所有含铁物品都会熔为生铁。要将其转变为可用铁质材料，必须使用炼铁炉。任何铁制物品（包括铁工具和生铁锭）都可以放入炼铁炉中！"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/bloomery",
+            "text": "炼铁炉由 8 块 $(thing)青铜双层片$() 制成。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock_id": "tfc:bloomery",
+            "name": "一座炼铁炉",
+            "text": "最小尺寸的炼铁炉。炼铁炉方块通过 $(item)$(k:key.use)$() 打开与关闭。",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "炼铁炉最多可容纳 48 个 $(thing)输入项$()，每层烟囱最多放 16 个项目。若想增加烟囱层数，只需堆叠两层石砖即可。$(br2)投递物品时，爬到顶部扔进即可。建议形成一堵灰色矿石塔。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/bloomery_hole.png"
+            ],
+            "text": "往炼铁炉中投放矿石。",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "炼铁炉消耗 $(thing)1 碳$() 和 $(thing)144 mB 生铁$() 来生产一块 $(thing)铁块$()。填满炼铁炉并加入一定比例的 $(thing)碳$() 和 $(thing)矿石$() 后，点燃它，等待约 15 小时完成冶炼。当炼铁炉关闭时，会留下一个 $(thing)铁块$() 方块，其中含有 $(thing)原始铁块$()。你可以用镐子反复挖掘此方块获取铁块。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:bloom[layers=8]"
+                }
+            },
+            "name": "铁块方块",
+            "text": "一大块 $(thing)铁块$()。",
+            "enable_visualize": false
+        },
+        {
+            "type": "tfc:anvil_recipe",
+            "recipe": "tfc:anvil/refined_iron_bloom",
+            "text": "$(thing)原始铁块$() 必须在 $(l:mechanics/anvils)铁砧$() 上锻造才能得到 $(thing)精炼铁块$()。"
+        },
+        {
+            "type": "tfc:anvil_recipe",
+            "recipe": "tfc:anvil/wrought_iron_from_bloom",
+            "text": "$(thing)精炼铁块$() 必须在 $(l:mechanics/anvils)铁砧$() 上锻造才能转化成 $(thing)熟铁锭$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)如果炼铁炉内的物品数量超过其烟囱容量，它会尝试把多余物品吐出前方。$()$(li)若要从未点燃的炼铁炉中取出物品，请勿破坏熔融塔块，而是拆掉炼铁炉方块本身。$()$(li)铁块只会熔化成生铁，不会直接变成熟铁；你需要进行锻造！$()",
+            "title": "匠人笔记"
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "tfc:bloom": 6,
+        "tfc:raw_iron_bloom": 7,
+        "tfc:refined_iron_bloom": 8
+    }
+}

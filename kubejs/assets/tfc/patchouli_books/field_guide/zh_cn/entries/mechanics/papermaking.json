@@ -1,0 +1,161 @@
+{
+    "name": "造纸术",
+    "category": "tfc:mechanics",
+    "icon": "tfc:unrefined_paper",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)纸张$() 由以下三种方式制成：$(l:mechanics/crops#papyrus)纸莎草秸秆$() 的加工品、$(l:mechanics/papermaking#parchment)动物皮革$()，或通过特定木材漫长处理得到的纸张。纸张可用于书写材料，如 $(thing)书籍$() 和 $(thing)地图$()。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/papyrus_strips",
+            "text": "首先需用 $(thing)刀具$() 将纸莎草切成条状。"
+        },
+        {
+            "type": "tfc:sealed_barrel_recipe",
+            "recipe": "tfc:barrel/soaked_papyrus_strip",
+            "text": "接着将纸莎草条放入盛满 $(thing)水$() 的 $(l:mechanics/barrels)桶$() 中浸泡。"
+        },
+        {
+            "type": "tfc:loom_recipe",
+            "recipe": "tfc:loom/unrefined_paper",
+            "text": "然后在织布机中把浸泡过的纸莎草条编织成 $(thing)未精炼纸$()。最后将其放置于原木上并 $(l:mechanics/leather_making#scraping)刮擦$()，即可获得成熟的 $(thing)纸张$()。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/vanilla/map",
+            "recipe2": "tfc:crafting/vanilla/name_tag"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "minecraft:writable_book",
+            "recipe2": "minecraft:book"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/wood/pine_lectern",
+            "recipe2": "tfc:crafting/wood/kapok_bookshelf"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "翻至下一页了解如何通过兽皮工艺制作纸张。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "parchment",
+            "text": "$(thing)羊皮纸$() 起始于已刮除的兽皮。参阅 $(l:mechanics/leather_making)皮革制作章节$() 学习如何制作它。羊皮纸需要多种处理步骤：首先是 $(thing)浮石$()（Pumice）。浮石常见于 $(l:the_world/geology)火山附近地表$()，也可通过 $(l:mechanics/sluices)淘洗$() 或 $(l:mechanics/panning)淘金$() 含有安山岩、流纹岩或英安岩的矿床获得。",
+            "title": "羊皮纸"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:groundcover/pumice"
+                }
+            },
+            "name": "浮石",
+            "text": "一块浮石放置在地面上即构成该多块结构。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/large_treated_hide",
+            "text": "将浮石、锤子与刮过的皮革组合，可获得 $(thing)处理过的皮革片段$()。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/parchment",
+            "text": "将处理过的皮革、$(l:mechanics/glassworking#lime)石灰粉$()、面粉及新鲜鸡蛋结合，完成整套处理过程，最终产出可用纸张。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "paperfromwood",
+            "text": "$(thing)从木材制造纸张$() 是一种古老工艺：需先将坚硬木材处理成薄片，再粉碎成浆，之后压平、干燥并刮平才能得到纸张。$(br2)注意：软质木材不适合用于造纸。",
+            "title": "木材造纸"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "首先你需要找到硬木：$(br2)金合欢木$(br)黑梣木$(br)山杨木$(br)白桦木$(br)黑檀木$(br)栗木$(br)山核桃木$(br)枫木$(br)橡木$(br)蔷薇木$(br)悬铃木"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "去皮硬木",
+            "item": {
+                "tag": "tfg:stripped_hardwood"
+            },
+            "text": "第一步是去除 $(thing)硬木$() 的外皮以显露内部纤维。你可以通过放置原木并右键点击它来实现此操作。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "硬木条",
+            "recipe": "tfg:crafting/strip_hardwood",
+            "text": "接着用手斧削刮已去皮的木材，得到 $(item)硬木条$()。这也可以使用更高级的方法完成。"
+        },
+        {
+            "type": "tfc:sealed_barrel_recipe",
+            "title": "浸泡硬木条",
+            "recipe": "tfg:barrel/soak_hardwood_strip",
+            "text": "随后将每根木条放入 $(l:mechanics/barrels)桶$() 中浸泡 $(thing)水$()，这项工序会削弱木材结构强度，使其更容易进一步分解。"
+        },
+        {
+            "type": "tfc:quern_recipe",
+            "recipe": "tfg:quern/soaked_hardwood_strip",
+            "title": "硬木浆料",
+            "text": "接下来用 $(l:mechanics/quern)石磨$() 将浸泡过的木条粉碎成 $(item)硬木浆料$()。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "gtceu:shaped/small_dust_assembling_hardwood",
+            "title": "堆叠浆料",
+            "text": "虽然石磨每次只产生少量浆料，但你需要在 $(thing)工作台$() 上将其合并为较大团块。越先进的碎解手段能产出更多浆料。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:thermochemically_treated_hardwood_dust",
+            "title": "进一步分解浆料",
+            "text": "要继续加工成纸张前，必须用 $(thing)碱液$() 在 $(l:firmalife/oven_appliances#vat)蒸煮罐$() 或 $(l:mechanics/pot)锅$() 中沸煮浆料。"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfg:soaked_unrefined_paper",
+            "title": "压榨浆料",
+            "text": "经过碱液处理后，$(item)热化学处理后的硬木浆料$() 可被压平为一张 $(item)浸泡未精炼纸$()。"
+        },
+        {
+            "type": "tfc:anvil_recipe",
+            "recipe": "tfg:anvil/soaked_unrefined_paper",
+            "text": "你可以使用 $(l:mechanics/anvils)铁砧$() 敲打这张湿纸，使其变成更紧密的纸板。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "酒窖踩踏",
+            "item": {
+                "tag": "firmalife:stomping_barrels"
+            },
+            "text": "替代方案是在 $(l:firmalife/wine)踩踏桶$() 中踩踏已处理过的硬木浆料。"
+        },
+        {
+            "type": "tfc:drying_recipe",
+            "recipe": "tfg:drying/unrefined_paper",
+            "text": "最后一步是 $(l:firmalife/drying)干燥$() 这张 $(item)浸泡未精炼纸$()，直到变成 $(item)未精炼纸$()，再如前所述进行刮擦即可得到成品纸张。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "切割步骤？",
+            "text": "随着科技树升级，你能用更少步骤从木材生产纸张——查看 $(thing)EMI$() 了解不同造纸路径的选择。"
+        }
+    ],
+    "read_by_default": true
+}

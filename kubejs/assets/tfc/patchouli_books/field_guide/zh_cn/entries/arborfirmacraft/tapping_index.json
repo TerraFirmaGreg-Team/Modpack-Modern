@@ -10,7 +10,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(l:arborfirmacraft/tapping_index#maple)$(li)枫树$()$(l:arborfirmacraft/tapping_index#birch)$(li)桦树$()$(l:arborfirmacraft/tapping_index#hevea)$(li)橡胶树$()$(l:arborfirmacraft/tapping_index#rubber_fig)$(li)橡胶榕$()$(l:arborfirmacraft/tapping_index#kapok)$(li)木棉树$()$(l:arborfirmacraft/tapping_index#aspen)$(li)白杨树$()$(l:arborfirmacraft/tapping_index#spruce)$(li)云杉$()$(l:arborfirmacraft/tapping_index#white_cedar)$(li)雪松$()$(l:arborfirmacraft/tapping_index#douglas_fir)$(li)花旗松$()"
+            "text": "$(l:arborfirmacraft/tapping_index#maple)$(li)枫树$()$(l:arborfirmacraft/tapping_index#birch)$(li)白桦树$()$(l:arborfirmacraft/tapping_index#hevea)$(li)三叶胶树$()$(l:arborfirmacraft/tapping_index#rubber_fig)$(li)橡胶无花果树$()$(l:arborfirmacraft/tapping_index#kapok)$(li)木棉树$()$(l:arborfirmacraft/tapping_index#aspen)$(li)山杨树$()$(l:arborfirmacraft/tapping_index#spruce)$(li)云杉树$()$(l:arborfirmacraft/tapping_index#white_cedar)$(li)白雪松树$()$(l:arborfirmacraft/tapping_index#douglas_fir)$(li)花旗松树$()"
         },
         {
             "type": "patchouli:spotlight",

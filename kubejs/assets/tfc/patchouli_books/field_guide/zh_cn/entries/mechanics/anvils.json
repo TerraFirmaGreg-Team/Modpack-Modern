@@ -1,0 +1,101 @@
+{
+    "__comment__": "This file was automatically created by mcresources",
+    "name": "砧",
+    "category": "tfc:mechanics",
+    "icon": "tfc:metal/anvil/copper",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "砧是开展冶金大业必不可少的工具。砧的主要作用是焊接金属锭，或将它们锻造成各种不同的工具和装备。$(br2)$(l:mechanics/anvils#working)锻造$()是指将一块金属锭打造成其他形状，以便于将其制成某些工具或装备的工艺。而$(l:mechanics/anvils#welding)焊接$()则是指将两块金属锭或其他金属部件粘连在一起物品的工艺。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:anvils"
+                }
+            },
+            "name": "",
+            "text": "所有类型的金属铁砧。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/metal/anvil/copper",
+            "text": "铁砧可以用其对应金属的$(thing)双倍锭$()制作。首次制作铁砧时，必须先在 $(l:getting_started/primitive_anvils)石制铁砧$() 上 $(l:getting_started/primitive_anvils#welding)焊接$()双倍锭。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tiers",
+            "text": "每个铁砧都有一个 $(thing)等级$()，决定了它可以处理和焊接哪些材料。铁砧能够锻造本级及以下等级的金属，但焊接只能比自身高一级的金属。$(br)$(li)$(bold)第零级$(): 石制铁砧$(li)$(bold)第一级$(): 铜$(li)$(bold)第二级$(): 铋青铜、黑青铜、青铜$(li)$(bold)第三级$(): 熟铁$(li)$(bold)第四级$(): 钢$(li)$(bold)第五级$(): 黑钢$(li)$(bold)第六级$(): 红钢、蓝钢"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "working",
+            "text": "要锻造物品，请使用铁砧打开界面（见右侧）。左侧有两个输入槽位——锻造时目标物品需放在右格。还需一把锤子，在铁砧右侧锤槽或主手中持有。锤子会随锻造逐渐损耗耐久。",
+            "title": "锻造"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/anvil_empty.png"
+            ],
+            "text": "铁砧界面。",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "接下来需要选择一个 $(thing)方案$()——该方案决定你要制造何种物品。用 $(item)$(k:key.attack)$()点击滚轮按钮，然后从选项中选取物品。界面返回后会显示已选方案，滚轮将展示你要锻造的目标，同时 $(thing)规则$() 和 $(thing)目标$() 也会填入信息。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/anvil_in_use.png"
+            ],
+            "text": "选择制造镐头后。",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "铁砧屏幕中间有一个带两个颜色指示器的进度条。$(2)绿色$()指针表示当前进度，$(4)红色$()指针表示目标。目标是让当前进度对齐至目标位置。$(br2)可通过 $(2)绿色$() 和 $(4)红色$() 动作按钮调整当前进度，移动幅度取决于所选动作。",
+            "title": "目标"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(2)绿色$()动作始终向右移动目标，$(4)红色$()动作始终向左移动进度。注意：如果移动目标超出进度条范围，则会过度锻造——你将失去金属锭。不过锻造过程中还需满足 $(thing)规则$()..."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)规则$() 是界面顶部显示的一个或两个图标，代表某一时刻必须执行特定操作才能成功锻造。例如一条规则可能写为 $(2)弯折倒数第二$()，意味着你倒数第二次操作必须是 $(2)弯折$() 动作。",
+            "title": "锻造规则"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "界面下方会显示你最近三次的操作记录。当某条规则满足时，其边框变为绿色。全部规则都被满足时即为成功。$(br2)最后，请务必留意物品的 $(l:mechanics/heating)温度$()。只有加热到提示“可锻造”的温度时才能进行锻造。你可以中途取出重新加热。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "锻造过程可能繁琐且步骤繁多，但效率高的锻造会有奖励。一些物品（如工具头）若在极少步数内完成锻造，会获得锻造加成（Forging Bonus），这个加成将赋予最终工具更强性能（比如提升耐久、采掘速度或战斗伤害），具体取决于工具类型。",
+            "title": "锻造加成"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:metal/pickaxe/wrought_iron{\"tfc:forging_bonus\":4}",
+            "title": "完美锻造",
+            "link_recipes": false,
+            "text": "锻造加成分为四个等级：$(li)低效锻造$(li)良好锻造$(li)精湛锻造$(li)完美锻造$(br2)这些加成增强你的工具性能——使其更耐用、挖更快、战斗伤害更高，具体效果视工具种类而定。"
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "tag:tfc:anvils": 0
+    }
+}
