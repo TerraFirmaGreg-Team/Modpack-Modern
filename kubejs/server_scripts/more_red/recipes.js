@@ -46,10 +46,10 @@ const registerMoreRedRecipes = (event) => {
 		.addMaterialInfo(true)
 
 	// Red Wire Post
-	event.recipes.gtceu.shaped('2x morered:redwire_post', ['A', 'B'], {
+	event.shaped('2x morered:redwire_post', ['A', 'B'], {
 		A: '#forge:rods/wrought_iron',
 		B: '#forge:fine_wires/red_alloy'
-	}).addMaterialInfo().id('tfg:crafting/red_wire_post')
+	}).id('tfg:crafting/red_wire_post')
 
 	// Red Wire Post Plate
 	event.recipes.gtceu.assembler('tfg/morered/red_wire_post_plate')

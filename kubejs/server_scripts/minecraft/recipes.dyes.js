@@ -25,14 +25,6 @@ function registerMinecraftDyeRecipes(event) {
 				.duration(300)
 				.EUt(4)
 				.category(GTRecipeCategories.CHEM_DYES)
-
-			event.recipes.gtceu.chemical_bath(`${dye}_bed`)
-					.itemInputs(`minecraft:white_bed`)
-					.inputFluids(Fluid.of(`tfc:${dye}_dye`, 216))
-					.itemOutputs(`minecraft:${dye}_bed`)
-					.duration(300)
-					.EUt(4)
-					.category(GTRecipeCategories.CHEM_DYES)
 		}
 
 		//#endregion

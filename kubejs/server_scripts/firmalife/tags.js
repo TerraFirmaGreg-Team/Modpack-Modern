@@ -74,7 +74,9 @@ const registerFirmaLifeFluidTags = (event) => {
     
     // Добавляем тег для скрытия в EMI
     event.add('c:hidden_from_recipe_viewers', 'firmalife:metal/chromium')
+    event.add('c:hidden_from_recipe_viewers', 'firmalife:metal/stainless_steel')
     event.add('c:hidden_from_recipe_viewers', 'firmalife:chocolate')
+    event.add('c:hidden_from_recipe_viewers', 'firmalife:fruity_fluid')
 
     // Im going to leave these, but I dont think this tag does anything(?).
     event.add('firmalife:mixable', 'tfc:spring_water')
