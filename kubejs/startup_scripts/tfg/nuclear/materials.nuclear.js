@@ -216,6 +216,8 @@ const registerTFGNuclearMaterials = (event) => {
 
 	//#endregion
 
+};
+
 	//#region Fuel Pellet
 
 	/*
@@ -230,38 +232,36 @@ const registerTFGNuclearMaterials = (event) => {
 	So purely passively it reaches 20000.0 heat.
 	*/
 
-}
-
 const $FuelCellItem = Java.loadClass("fi.dea.mc.deafission.common.data.items.FuelCellItem");
+const $DepletedFuelCellItem = Java.loadClass("fi.dea.mc.deafission.common.data.items.DepletedFuelCellItem");
+
+//const $ComponentTotals = Java.loadClass("fi.dea.mc.deafission.core.components.ComponentTotals");
+//const $ReactorBaseStats = Java.loadClass("fi.dea.mc.deafission.core.ReactorBaseStats");
+//$ReactorBaseStats.Smr1 = new $ComponentTotals(200, 0, 0);
 
 StartupEvents.registry("item", (event) => {
-	event.createCustom("tfg:thorium_rod", () => {
-		return new $FuelCellItem(
-			5000,
-			1,
-			0.7 // Max Heat 139 - 1 Fuel
-		);
-	})
-	event.createCustom("tfg:uranium_rod", () => {
-		return new $FuelCellItem(
-			20000,
-			1,
-			2.2 // Max Heat 435 - 1 Fuel
-		);
-	})
-	event.createCustom("tfg:plutonium_rod", () => {
-		return new $FuelCellItem(
-			30000,
-			1,
-			3.0 // Max Heat 595 - 1 Fuel
-		);
-	})
+  const fuel = function(id, durability, rods, heat, createDepleted) {
 
-	event.createCustom("tfg:tbu_232_rod", () => {
-		return new $FuelCellItem(
-			20000,
-			1,
-			2.0
-		);
-	})
+    if (createDepleted === undefined) createDepleted = true;
+
+    event.createCustom("tfg:" + id, () => {
+      return new $FuelCellItem(
+        durability,
+        rods,
+        heat
+      );
+    });
+
+    if (createDepleted) {
+      event.createCustom("tfg:depleted_" + id, () => {
+        return new $DepletedFuelCellItem();
+      });
+    }
+  };
+
+  fuel("thorium_rod", 5000, 1, 0.7, false);// Max Heat 139 - 1 Fuel
+  fuel("uranium_rod", 20000, 1, 2.2, false);// Max Heat 435 - 1 Fuel
+  fuel("plutonium_rod", 30000, 4, 3, false);// Max Heat 595 - 1 Fuel
+  fuel("tbu_232_rod", 10000, 1, 2);
+
 });

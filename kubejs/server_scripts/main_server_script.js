@@ -54,6 +54,7 @@ ServerEvents.tags('item', event => {
 	registerTFCItemTags(event)
 	registerTFCTextileItemTags(event)
 	registerTFGItemTags(event)
+	registerTFGItemTagsNuclear(event)
     registerTFCLunchboxItemTags(event)
 	registerVintageImprovementsItemTags(event)
 	registerWABItemTags(event)
@@ -91,6 +92,7 @@ ServerEvents.tags('block', event => {
 	registerTACZBlockTags(event)
 	registerTFCBlockTags(event)
 	registerTFGBlockTags(event)
+	registerTFGBlockTagsNuclear(event)
 	registerVintageImprovementsBlockTags(event)
 	registerWABBlockTags(event)
 })
@@ -108,6 +110,7 @@ ServerEvents.tags('fluid', event => {
 	registerFirmaLifeFluidTags(event)
 	registerTFCFluidTags(event)
 	registerTFGFluidTags(event)
+	registerTFGFluidTagsNuclear(event)
 	registerVintageImprovementsFluidTags(event)
 })
 
