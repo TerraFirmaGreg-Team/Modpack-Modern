@@ -179,13 +179,13 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         'CDE',
         'FGF'
     ], {
-        A: 'gtceu:lv_electric_motor',
+        A: '#forge:cogwheels',
         B: 'gtceu:item_filter',
-        C: 'gtceu:lv_conveyor_module',
+        C: '#greate:belts',
         D: 'sophisticatedbackpacks:upgrade_base',
-        E: 'gtceu:lv_robot_arm',
-        F: '#gtceu:circuits/lv',
-        G: '#gtceu:batteries/lv'
+        E: 'create:mechanical_arm',
+        F: '#gtceu:circuits/ulv',
+        G: 'create:electron_tube'
     }).id('tfg:sophisticated_backpacks/shaped/pickup_upgrade')
 
     event.shapeless('sophisticatedbackpacks:advanced_pickup_upgrade', [
@@ -218,13 +218,13 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         'CDE',
         'FGF'
     ], {
-        A: 'gtceu:mv_electric_motor',
-        B: 'gtceu:mv_item_magnet',
-        C: 'gtceu:mv_conveyor_module',
+        A: 'gtceu:lv_electric_motor',
+        B: 'gtceu:lv_item_magnet',
+        C: 'gtceu:lv_conveyor_module',
         D: 'sophisticatedbackpacks:pickup_upgrade',
-        E: 'gtceu:mv_robot_arm',
-        F: '#gtceu:circuits/mv',
-        G: '#gtceu:batteries/mv'
+        E: 'gtceu:lv_robot_arm',
+        F: '#gtceu:circuits/lv',
+        G: '#gtceu:batteries/lv'
     }).id('tfg:sophisticated_backpacks/shaped/magnet_upgrade')
 
 	event.shaped('sophisticatedbackpacks:advanced_magnet_upgrade', [
@@ -232,13 +232,13 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         'CDE',
         'FGF'
     ], {
-        A: 'gtceu:mv_electric_motor',
-        B: 'gtceu:mv_item_magnet',
-        C: 'gtceu:mv_conveyor_module',
+        A: 'gtceu:lv_electric_motor',
+        B: 'gtceu:lv_item_magnet',
+        C: 'gtceu:lv_conveyor_module',
         D: 'sophisticatedbackpacks:advanced_pickup_upgrade',
-        E: 'gtceu:mv_robot_arm',
-        F: '#gtceu:circuits/mv',
-        G: '#gtceu:batteries/mv'
+        E: 'gtceu:lv_robot_arm',
+        F: '#gtceu:circuits/lv',
+        G: '#gtceu:batteries/lv'
     }).id('tfg:sophisticated_backpacks/shaped/advanced_magnet_upgrade')
 
     event.shapeless('sophisticatedbackpacks:advanced_magnet_upgrade', [
