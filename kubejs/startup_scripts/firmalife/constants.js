@@ -35,7 +35,10 @@ global.FIRMALIFE_DISABLED_ITEMS = [
     // disabled so people use tongs instead
     'firmalife:peel',
 
-    'firmalife:bucket/chocolate'
+    'firmalife:bucket/chocolate',
+    'firmalife:bucket/fruity_fluid',
+    'firmalife:bucket/metal/chromium',
+    'firmalife:bucket/metal/stainless_steel'
 ];
 
 global.FIRMALIFE_HIDED_ITEMS = [
