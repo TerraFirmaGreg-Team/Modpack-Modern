@@ -1842,6 +1842,8 @@ const registerGTCEURecipes = (event) => {
 		.duration(20 * 5)
 		.category(GTRecipeCategories.INGOT_MOLDING)
 
+	event.replaceInput( {output: 'gtceu:nano_saber'}, 'gtceu:ruridit_plate', '#forge:plates/ostrum_iodide' )
+
 	// Change
 
 	// The 9x buff for large boiler recipes above does not apply to this for some reason, so it gets 3x duration for an effective 1/3 reduction instead
