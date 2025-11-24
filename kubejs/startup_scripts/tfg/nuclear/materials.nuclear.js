@@ -263,4 +263,8 @@ StartupEvents.registry("item", (event) => {
   fuel("uranium_rod", 20000, 1, 2.2, false);// Max Heat 435 - 1 Fuel
   fuel("plutonium_rod", 30000, 4, 3, false);// Max Heat 595 - 1 Fuel
   fuel("tbu_232_rod", 10000, 1, 2);
+
+  fuel("americium_241_rod", 1000000, 1, 0.5);
+  fuel("neptunium_237_rod", 50000, 1, 2);
+  fuel("californium_252_rod", 500000, 1, 4);
 });
