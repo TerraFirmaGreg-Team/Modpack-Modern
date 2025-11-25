@@ -8,6 +8,8 @@
 - Mars endermen can no longer pick up the wrong kind of warped/crimson sapling, and the correct kind has been added to their loot tables (#2240)
 - Cleanrooms now allow 9 door "blocks", so you can use the 3x3 Ad Astra doors (#2074) @ko-lja
 - Added recycling for astikor carts (#2227) @Pyritie
+- Moved Soph Backpack pickup to ULV, adv pickup to MV and magnet to MV @CrashAndSideburns
+- Many TACZ balance changes, found here https://github.com/TerraFirmaGreg-Team/Modpack-Modern/blob/dev/tacz/TACZ_CHANGELOG.md @BlueBoat29
 ### Bug fixes
 - Fixed brown gravy recipe @Redeix
 - Fixed instant mac recipe requiring less cardboard than it gives back @Redeix
