@@ -478,7 +478,28 @@ const registerTFGItemTags = (event) => {
 		'firmalife:food/toast',
 		'firmalife:food/toast_with_butter',
 		'firmalife:food/toast_with_jam',
-		'firmalife:food/butter'
+		'firmalife:food/butter',
+		'tfc_gurman:placinda',
+		'tfc_gurman:adjika',
+		'tfc_gurman:tzatziki',
+		'tfc_gurman:falafel',
+		'tfc_gurman:pelmeni',
+		'tfc_gurman:vareniki',
+		'tfc_gurman:oladyi',
+		'tfc_gurman:syrniki',
+		'tfc_gurman:mamaliga',
+		'tfc_gurman:hummus',
+		'tfc_gurman:sauerkraut',
+		'tfc_gurman:khachapuri',
+		'tfc_gurman:chebureki',
+		'tfc_gurman:croissants',
+		'tfc_gurman:crepes',
+		'tfc_gurman:bratwurst',
+		'tfc_gurman:tonkatsu',
+		'tfc_gurman:takoyaki',
+		'tfc_gurman:kimchi',
+		'tfc_gurman:bulgogi',
+		'tfc_gurman:tandoori_chicken'
 	];
 	usable_in_meal_bag.forEach(item => {
 		event.add('tfg:foods/usable_in_meal_bag', item);
