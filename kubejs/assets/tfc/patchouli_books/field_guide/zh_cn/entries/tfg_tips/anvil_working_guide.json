@@ -8,7 +8,7 @@
         {
             "type": "patchouli:text",
             "title": "砧具锻造",
-            "text": "在$(l:mechanics/anvils)砧具$()中$(l:mechanics/anvils#working)锻造$()是$(thing)群峦格雷$()整合包中的一个核心流程，你在迈向$(thing)蒸汽与机械时代$()过程中的大部分工作都需在$(l:mechanics/anvils)砧具$()上完成。$(br)本指南分为两部分：$(l:tfg_tips/anvil_working_guide#ui_explained)理解界面$()与$(l:tfg_tips/anvil_working_guide#how_to_perfectly_forge)如何完美锻造$()。$(br2)整合包配有名为$(l:https://www.urseforge.com/minecraft/texture-packs/tfc-anvil-helper)TFC Anvil Helper$()的自定义$(thing)资源包$()，请务必启用以确保本指南内容正常显示。$()"
+            "text": "在$(l:mechanics/anvils)砧具$()中$(l:mechanics/anvils#working)锻造$()是$(thing)群峦格雷$()整合包中的一个核心流程，你在迈向$(thing)蒸汽与机械时代$()过程中的大部分工作都需在$(l:mechanics/anvils)砧具$()上完成。$(br)本指南分为两部分：$(l:tfg_tips/anvil_working_guide#ui_explained)理解界面$()与$(l:tfg_tips/anvil_working_guide#how_to_perfectly_forge)如何完美锻造$()。$(br2)整合包配有名为$(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper)TFC Anvil Helper$()的自定义$(thing)资源包$()，请务必启用以确保本指南内容正常显示。$()"
         },
         {
             "type": "patchouli:image",
@@ -30,7 +30,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "\"$(#ff0000)1.$() 你在砧上选择制作的物品。每个物品都有特定的$(#be00ff)步骤序列$()和$(#ff6b00)目标加工量$()要求。$(br)$(#ff00c6)2.$() 你正在加工的输入物品。$(br)$(#be00ff)3.$() 物品完成前必须按顺序执行的步骤序列。共有4种序列类型（详见下页）："
+            "text": "$(#ff0000)1.$() 你在砧上选择制作的物品。每个物品都有特定的$(#be00ff)步骤序列$()和$(#ff6b00)目标加工量$()要求。$(br)$(#ff00c6)2.$() 你正在加工的输入物品。$(br)$(#be00ff)3.$() 物品完成前必须按顺序执行的步骤序列。共有4种序列类型（详见下页）："
         },
         {
             "type": "patchouli:image",
@@ -153,12 +153,12 @@
         },
         {
             "type": "patchouli:text",
-            "text": "杆目标值：$(bold)78$()$(br)必需步骤：延展->延展->弯曲$(br)\"requiredWork\"： (-15 x 2) + 7 = -23$(br)中间值：78 + 23 = 101。$(br)达成中间值：(收缩 x 5)->(弯曲 x 3)$(br)完成物品：101 - 15 - 15 + 7 = 78。"
+            "text": "杆目标值：$(bold)78$()$(br)必需步骤：延展->延展->弯曲$(br)\"必需加工值\"： (-15 x 2) + 7 = -23$(br)中间值：78 + 23 = 101。$(br)达成中间值：(收缩 x 5)->(弯曲 x 3)$(br)完成物品：101 - 15 - 15 + 7 = 78。"
         },
         {
             "type": "patchouli:text",
             "title": "其他提示",
-            "text": "如果某个必需步骤显示为空，则表示这是一个通配符，可以使用任何步骤。$(br2)如果计算失误，你可以随时将物品熔化成锭，这将移除物品的\\\"已加工\\\"标签，让你可以重新尝试完美锻造。"
+            "text": "如果某个必需步骤显示为空，则表示这是一个通配符，可以使用任何步骤。$(br2)如果计算失误，你可以随时将物品熔化成锭，这将移除物品的\"已加工\"标签，让你可以重新尝试完美锻造。"
         },
         {
             "type": "patchouli:empty"
