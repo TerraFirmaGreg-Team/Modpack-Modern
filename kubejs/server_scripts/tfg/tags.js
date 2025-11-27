@@ -363,7 +363,10 @@ const registerTFGItemTags = (event) => {
 	const cheeseCurds = [
 		'firmalife:food/yak_curd',
 		'firmalife:food/goat_curd',
-		'firmalife:food/milk_curd'
+		'firmalife:food/milk_curd',
+		'tfc_gurman:ox_curd',
+		'tfc_gurman:sheep_curd',
+		'tfc_gurman:alpaca_curd'
 	];
 	cheeseCurds.forEach(item => {
 		event.add('tfg:foods/cheese_curds', item);

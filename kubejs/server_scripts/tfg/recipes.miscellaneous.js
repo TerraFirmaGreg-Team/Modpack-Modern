@@ -133,6 +133,30 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	event.recipes.gtceu.mixer('lactose_milk_ox')
+		.circuit(1)
+		.inputFluids(Fluid.of('tfc_gurman:ox_milk', 1000), Fluid.of('gtceu:acetic_acid', 25))
+		.itemOutputs('1x gtceu:lactose_dust')
+		.outputFluids(Fluid.of('tfc_gurman:curdled_ox_milk', 1000))
+		.duration(300)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.mixer('lactose_milk_sheep')
+		.circuit(1)
+		.inputFluids(Fluid.of('tfc_gurman:sheep_milk', 1000), Fluid.of('gtceu:acetic_acid', 25))
+		.itemOutputs('1x gtceu:lactose_dust')
+		.outputFluids(Fluid.of('tfc_gurman:curdled_sheep_milk', 1000))
+		.duration(300)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.mixer('lactose_milk_alpaca')
+		.circuit(1)
+		.inputFluids(Fluid.of('tfc_gurman:alpaca_milk', 1000), Fluid.of('gtceu:acetic_acid', 25))
+		.itemOutputs('1x gtceu:lactose_dust')
+		.outputFluids(Fluid.of('tfc_gurman:curdled_alpaca_milk', 1000))
+		.duration(300)
+		.EUt(GTValues.VA[GTValues.LV])
+
 	//Scaffolding Frame
 	event.shaped('tfg:scaffolding_frame',
 		[
