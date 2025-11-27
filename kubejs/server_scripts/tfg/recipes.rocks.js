@@ -712,10 +712,10 @@ function registerTFGRockRecipes(event) {
 		
 		// Quartz
 		{ raw:  'minecraft:quartz_block',                       stair: 'minecraft:quartz_stairs',                        slab: 'minecraft:quartz_slab',                        wall: 'tfg:rock/quartz_wall',
-		  dust: null,                                           loose: null,                                             stonecutting: false  }, // Raw
+		  dust: 'gtceu:nether_quartz_dust',                     loose: null,                                             stonecutting: false  }, // Raw
 
 		{ raw:  'minecraft:smooth_quartz',                      stair: 'minecraft:smooth_quartz_stairs',                 slab: 'minecraft:quartz_slab',                        wall: 'tfg:rock/smooth_quartz_wall',
-		  dust: null,                                           loose: null,                                             stonecutting: false  }, // Smooth
+		  dust: 'gtceu:nether_quartz_dust',                     loose: null,                                             stonecutting: false  }, // Smooth
 		
 		// #endregion Vanilla Blocks
 	    // #region @Create Stones
@@ -760,16 +760,16 @@ function registerTFGRockRecipes(event) {
 
 		// @Create Diorite
 		{ raw:  'create:cut_diorite',                           stair: 'create:cut_diorite_stairs',                      slab: 'create:cut_diorite_slab',                      wall: 'create:cut_diorite_wall',
-		  dust: 'tfg:diorite_dust',                             loose: null,                                             stonecutting: false  }, // Raw
+		  dust: 'gtceu:diorite_dust',                           loose: null,                                             stonecutting: false  }, // Raw
 
 		{ raw:  'create:polished_cut_diorite',                  stair: 'create:polished_cut_diorite_stairs',             slab: 'create:polished_cut_diorite_slab',             wall: 'create:polished_cut_diorite_wall',
-		  dust: 'tfg:diorite_dust',                             loose: null,                                             stonecutting: false  }, // Smooth
+		  dust: 'gtceu:diorite_dust',                           loose: null,                                             stonecutting: false  }, // Smooth
 
 		{ raw:  'create:cut_diorite_bricks',                    stair: 'create:cut_diorite_brick_stairs',                slab: 'create:cut_diorite_brick_slab',                wall: 'create:cut_diorite_brick_wall',
-		  dust: 'tfg:diorite_dust',                             loose: null,                                             stonecutting: false  }, // Bricks
+		  dust: 'gtceu:diorite_dust',                           loose: null,                                             stonecutting: false  }, // Bricks
 
 		{ raw:  'create:small_diorite_bricks',                  stair: 'create:small_diorite_brick_stairs',              slab: 'create:small_diorite_brick_slab',              wall: 'create:small_diorite_brick_wall',
-		  dust: 'tfg:diorite_dust',                             loose: null,                                             stonecutting: false  }, // Bricks - Extra
+		  dust: 'gtceu:diorite_dust',                           loose: null,                                             stonecutting: false  }, // Bricks - Extra
 
 		// @Create Limestone
 		{ raw:  'create:cut_limestone',                         stair: 'create:cut_limestone_stairs',                    slab: 'create:cut_limestone_slab',                    wall: 'create:cut_limestone_wall',
