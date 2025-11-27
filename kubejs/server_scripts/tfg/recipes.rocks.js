@@ -721,16 +721,16 @@ function registerTFGRockRecipes(event) {
 	    // #region @Create Stones
 		// @Create Andesite
 		{ raw:  'create:cut_andesite',                          stair: 'create:cut_andesite_stairs',                     slab: 'create:cut_andesite_slab',                     wall: 'create:cut_andesite_wall',
-		  dust: 'tfg:andesite_dust',                            loose: null,                                             stonecutting: false  }, // Raw
+		  dust: 'gtceu:andesite_dust',                          loose: null,                                             stonecutting: false  }, // Raw
 
 		{ raw:  'create:polished_cut_andesite',                 stair: 'create:polished_cut_andesite_stairs',            slab: 'create:polished_cut_andesite_slab',            wall: 'create:polished_cut_andesite_wall',
-		  dust: 'tfg:andesite_dust',                            loose: null,                                             stonecutting: false  }, // Smooth
+		  dust: 'gtceu:andesite_dust',                          loose: null,                                             stonecutting: false  }, // Smooth
 
 		{ raw:  'create:cut_andesite_bricks',                   stair: 'create:cut_andesite_brick_stairs',               slab: 'create:cut_andesite_brick_slab',               wall: 'create:cut_andesite_brick_wall',
-		  dust: 'tfg:andesite_dust',                            loose: null,                                             stonecutting: false  }, // Bricks
+		  dust: 'gtceu:andesite_dust',                          loose: null,                                             stonecutting: false  }, // Bricks
 
 		{ raw:  'create:small_andesite_bricks',                 stair: 'create:small_andesite_brick_stairs',             slab: 'create:small_andesite_brick_slab',             wall: 'create:small_andesite_brick_wall',
-		  dust: 'tfg:andesite_dust',                            loose: null,                                             stonecutting: false  }, // Bricks - Extra
+		  dust: 'gtceu:andesite_dust',                          loose: null,                                             stonecutting: false  }, // Bricks - Extra
 
 		// @Create Calcite
 		{ raw:  'create:cut_calcite',                           stair: 'create:cut_calcite_stairs',                      slab: 'create:cut_calcite_slab',                      wall: 'create:cut_calcite_wall',
