@@ -712,10 +712,10 @@ function registerTFGRockRecipes(event) {
 		
 		// Quartz
 		{ raw:  'minecraft:quartz_block',                       stair: 'minecraft:quartz_stairs',                        slab: 'minecraft:quartz_slab',                        wall: 'tfg:rock/quartz_wall',
-		  dust: 'gtceu:nether_quartz_dust',                     loose: null,                                             stonecutting: false  }, // Raw
+		  dust: null,                                           loose: null,                                             stonecutting: false  }, // Raw
 
 		{ raw:  'minecraft:smooth_quartz',                      stair: 'minecraft:smooth_quartz_stairs',                 slab: 'minecraft:quartz_slab',                        wall: 'tfg:rock/smooth_quartz_wall',
-		  dust: 'gtceu:nether_quartz_dust',                     loose: null,                                             stonecutting: false  }, // Smooth
+		  dust: null,                                           loose: null,                                             stonecutting: false  }, // Smooth
 		
 		// #endregion Vanilla Blocks
 	    // #region @Create Stones
