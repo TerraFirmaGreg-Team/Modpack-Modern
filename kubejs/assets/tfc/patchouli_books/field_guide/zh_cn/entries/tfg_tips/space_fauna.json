@@ -1,0 +1,194 @@
+{
+    "name": "外星动物",
+    "category": "tfc:tfg_tips",
+    "icon": "minecraft:sniffer_egg",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "外星动物",
+            "text": "太空是许多其他动物的家园，你不会在地球上找到它们。少数动物是敌对的，会攻击玩家，但大多数是友好的。它们只有一小部分可以像地球上的牲畜一样$(l:mechanics/animal_husbandry)驯化$()。$(br)你在其他星球上发现的动物可以分为两类：$(item)热栖$()和$(item)冷栖$()。动物只能在气候与其母行星相似的行星上生存，或者在像地球这样的$(thing)温和$()的行星上生存。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "太空动物不需要含氧环境，但它们会将该区域视为对于其生存\"温和\"的。例如，如果你将冷栖动物（如嗅探兽）带到热行星（如金星），它会着火，除非它在含氧环境中。$(br)这使地球成为建造动物园的理想场所，如果你愿意的话。$(br)你可以使用$(thing)AE2$()的空间存储系统在行星之间运输动物。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfg:marker/moon",
+            "title": "月球动物",
+            "text": "$(item)月球$()可能相当荒凉，但它仍然有一些动物称其为家。$(br2)尽管温度波动相当极端，它被认为是$(thing)寒冷$()的星球。",
+            "anchor": "moon"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:moon_rabbit{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16,MoonRabbitType:5}",
+            "scale": 1.3,
+            "offset": -0.3,
+            "name": "月兔",
+            "text": "除了它们的颜色，$(thing)月兔$()与地球兔子有相同的属性。它们也吃紫颂果。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "species:limpet",
+            "scale": 0.8,
+            "name": "矿壳贝",
+            "text": "$(thing)矿壳贝$()是一种壳上有矿石的蜗牛。你可以用任何采矿工具获得矿石。它们是友好的，可以食用。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "ad_astra:star_crawler",
+            "scale": 0.4,
+            "name": "星际爬行者",
+            "text": "$(thing)星际爬行者$()是一种海星。它们是敌对的，可以食用。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "species:birt",
+            "scale": 0.9,
+            "name": "哔特",
+            "text": "$(thing)哔特$()是一种鸟类？它们在巢中产卵，除非被攻击否则是中立的，可以食用。它们的蛋可以投掷来使目标眩晕。"
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": true
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfg:marker/mars",
+            "title": "火星动物",
+            "text": "$(item)火星$()是环境最接近地球的行星，拥有各种各样的动物可以互动，以及可以喂养它们（和你自己）的作物……除了巨大的沙漠，那里几乎没有任何生命。$(br2)火星是一个$(thing)寒冷$()的行星。",
+            "anchor": "mars"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/sandworm.png"
+            ],
+            "border": true,
+            "title": "沙虫",
+            "text": "$(thing)沙虫$()会被玩家脚步声惊醒。它们是沙漠中几乎没有其他生命的原因。$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "嗅探兽",
+            "text": "$(thing)嗅探兽$()是在-30到-102°C之间发现的可驯化动物。它们需要大型巢穴来产卵，可以剪毛获得$(item)矿物富集绒毛$()。它们的蛋可以烹饪或提取奶油。它们吃任何火星作物。",
+            "anchor": "sniffer"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:sniffer{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.45,
+            "name": " ",
+            "text": "一头嗅探兽。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "诡恐鸟",
+            "text": "$(thing)诡恐鸟$()是在-15到-100°C之间发现的可驯化动物。它们需要大型巢穴来产卵，可以剪毛获得$(item)诡恐鸟羽毛$()。它们的蛋可以烹饪或提取诡恐鸟糖。它们吃任何火星作物。",
+            "anchor": "wraptor"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:wraptor{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.8,
+            "name": " ",
+            "text": "一只诡恐鸟。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "霜原羊",
+            "text": "偏好低于-108°C的极冷环境，$(thing)霜原羊$()是可驯化动物。它们可以剪毛获得$(item)霜原羊毛$()，一种绝佳的绝缘体。它们吃任何火星作物。",
+            "anchor": "glacian_sheep"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:glacian_ram{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.7,
+            "name": " ",
+            "text": "一只霜原公羊/母羊"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wan_ancient_beasts:surfer",
+            "scale": 0.35,
+            "offset": 0.2,
+            "name": "破浪兽",
+            "text": "$(thing)破浪兽$()是半水生友好动物。你可以用$(item)生鱼$()驯服它们来在水下骑乘。它们也可以食用。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wan_ancient_beasts:eater",
+            "scale": 0.5,
+            "name": "噬颚兽",
+            "text": "顶级捕食者，$(thing)噬颚兽$()是在-109°C以上发现的敌对动物。如果你能设法击败一只，它们可以食用。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "species:cruncher",
+            "scale": 0.7,
+            "name": "贪咀兽",
+            "text": "$(thing)贪咀兽$()是有领地范围的$(item)小boss$()捕食者。喂它们肉来阻止它们的回血。它们也可以食用。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wan_ancient_beasts:soarer",
+            "scale": 0.4,
+            "offset": 1.0,
+            "name": "翱翔鸟",
+            "text": "$(thing)翱翔鸟$()是在-106°C以上发现的友好动物。你可以用$(item)生鱼$()驯服它们作为飞行坐骑。它们也可以食用。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wan_ancient_beasts:glider",
+            "scale": 0.4,
+            "offset": 0.2,
+            "name": "滑翔鸟",
+            "text": "与它们的名字不同，$(thing)滑翔鸟$()不能被驯服或骑乘。它们是友好的，生活在-105°C以上的区域。它们喜欢音乐，可以食用。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wan_ancient_beasts:crusher",
+            "scale": 0.5,
+            "offset": 0.5,
+            "name": "碎岩兽",
+            "text": "$(thing)碎岩兽$()是在-100°C以上区域成群生成的半敌对动物。它们可以被杀死获得肉和硬刺。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "species:springling",
+            "scale": 0.9,
+            "name": "簧颈兽",
+            "text": "$(thing)簧颈兽$()是在-108°C以上发现的野生动物。喂它们$(item)树苗$()可以让你骑乘它们并伸展它们极长的脖子。它们也可以食用。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "species:goober",
+            "scale": 0.6,
+            "name": "黏涕兽",
+            "text": "$(thing)黏涕兽$()是在-109°C以上发现的懒惰野生动物。它们是友好的，可以食用。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wan_ancient_beasts:walker",
+            "scale": 0.6,
+            "offset": 2.2,
+            "name": "巨行兽",
+            "text": "巨大的$(thing)巨行兽$()栖息在-97°C以上的区域。它们是友好的，可以食用。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wan_ancient_beasts:toxlacanth",
+            "scale": 0.35,
+            "name": "毒棘鱼",
+            "text": "$(thing)毒棘鱼$()是水生猎食者。建议从远处杀死它们，并在食用前烹饪它们的肉。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "species:stackatick",
+            "scale": 0.4,
+            "name": "叠行虫",
+            "text": "少数能在火星沙漠中生存的动物之一，$(thing)叠行虫$()是中立猎食者。它们也可以食用。"
+        }
+    ],
+    "read_by_default": true
+}

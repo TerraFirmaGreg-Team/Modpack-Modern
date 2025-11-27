@@ -179,18 +179,18 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         'CDE',
         'FGF'
     ], {
-        A: 'gtceu:hv_electric_motor',
-        B: 'gtceu:mercury_barium_calcium_cuprate_single_wire',
-        C: 'gtceu:hv_conveyor_module',
+        A: '#forge:cogwheels',
+        B: 'gtceu:item_filter',
+        C: '#greate:belts',
         D: 'sophisticatedbackpacks:upgrade_base',
-        E: 'gtceu:hv_robot_arm',
-        F: '#gtceu:circuits/hv',
-        G: '#gtceu:batteries/hv'
+        E: 'create:mechanical_arm',
+        F: '#gtceu:circuits/ulv',
+        G: 'create:electron_tube'
     }).id('tfg:sophisticated_backpacks/shaped/pickup_upgrade')
 
     event.shapeless('sophisticatedbackpacks:advanced_pickup_upgrade', [
         'sophisticatedbackpacks:pickup_upgrade',
-        '#gtceu:circuits/ev'
+        'gtceu:item_smart_filter'
     ]).id('tfg:sophisticated_backpacks/shapeless/advanced_pickup_upgrade')
 
     event.shaped('sophisticatedbackpacks:filter_upgrade', [
@@ -213,23 +213,37 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         '#gtceu:circuits/mv'
     ]).id('tfg:sophisticated_backpacks/shapeless/advanced_filter_upgrade')
 
-    event.shaped('sophisticatedbackpacks:magnet_upgrade', [
+	event.shaped('sophisticatedbackpacks:magnet_upgrade', [
         'ABA',
-        'CDC',
-        'FEG'
+        'CDE',
+        'FGF'
     ], {
-        A: 'gtceu:lv_robot_arm',
-        B: 'gtceu:item_filter',
-        C: '#gtceu:circuits/lv',
-        D: 'sophisticatedbackpacks:upgrade_base',
-        E: 'gtceu:lv_item_magnet',
-        F: '#forge:tools/wrenches',
-        G: '#forge:tools/screwdrivers'
+        A: 'gtceu:lv_electric_motor',
+        B: 'gtceu:lv_item_magnet',
+        C: 'gtceu:lv_conveyor_module',
+        D: 'sophisticatedbackpacks:pickup_upgrade',
+        E: 'gtceu:lv_robot_arm',
+        F: '#gtceu:circuits/lv',
+        G: '#gtceu:batteries/lv'
     }).id('tfg:sophisticated_backpacks/shaped/magnet_upgrade')
+
+	event.shaped('sophisticatedbackpacks:advanced_magnet_upgrade', [
+        'ABA',
+        'CDE',
+        'FGF'
+    ], {
+        A: 'gtceu:lv_electric_motor',
+        B: 'gtceu:lv_item_magnet',
+        C: 'gtceu:lv_conveyor_module',
+        D: 'sophisticatedbackpacks:advanced_pickup_upgrade',
+        E: 'gtceu:lv_robot_arm',
+        F: '#gtceu:circuits/lv',
+        G: '#gtceu:batteries/lv'
+    }).id('tfg:sophisticated_backpacks/shaped/advanced_magnet_upgrade')
 
     event.shapeless('sophisticatedbackpacks:advanced_magnet_upgrade', [
         'sophisticatedbackpacks:magnet_upgrade',
-        'gtceu:hv_item_magnet'
+        'gtceu:item_smart_filter'
     ]).id('tfg:sophisticated_backpacks/shapeless/advanced_magnet_upgrade')
 
     event.shaped('sophisticatedbackpacks:void_upgrade', [

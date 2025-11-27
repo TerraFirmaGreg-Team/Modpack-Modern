@@ -1,0 +1,92 @@
+{
+    "__comment__": "This file was automatically created by mcresources",
+    "name": "勘探",
+    "category": "tfc:mechanics",
+    "icon": "tfc:metal/propick/wrought_iron",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "你还记得你是在哪里捡到那些$(l:getting_started/finding_ores)小矿粒$()的，对吧？寻找更多矿石需要花费大量精力来勘探和开采。现在，你应该已经通读$(l:tfg_ores/earth_ore_index)地球矿物索引$()这一章节。你应该明白，如果你在寻找特定的矿石，则必须先找到它生成的岩石类型——不论是就在你家门口，或是千里之外。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "当仅靠捡拾小矿粒不能满足你的发展需要时就应考虑开始勘矿了。$(br)$(li)小矿粒、表面芽、地表岩石只会在下方有矿脉时才会出现。当地表上有一片矿粒时，它们的几何中心的正下方很可能就有一支矿脉。$(li)有些时候，矿石也会暴露在断崖或水底，这种矿脉就很好发现了。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "propick",
+            "item": "tfc:metal/propick/copper",
+            "title": "勘矿镐",
+            "link_recipes": false,
+            "text": "若你正在寻找矿脉，且无法通过推测定位时，便是取出$(item)勘矿镐$()的时候了。若你熟悉原版$(thing)群峦传说$()中的基础勘矿镐，可能会惊讶地发现它们在$(thing)TFG$()整合包中的运作机制已彻底重构。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "在$(thing)TFG$()中右键使用勘矿镐时，会沿你视线方向投射一道探测射线。射线的宽度与深度取决于镐的等级（详见其工具提示）。不同等级的勘矿镐还能提供矿石数量统计，甚至可显示矿脉的$(thing)X射线$()透视指示器。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "使用勘矿镐时可能显示以下信息：$(br)$(li)在聊天框中显示矿脉的$(thing)总储量$()、$(thing)矿石成分$()及各类矿石的$(thing)具体数量$()$(li)$(thing)彩钢$()探矿镐还能在矿脉$(thing)中心$()显示大型X射线透视粒子，或为每个矿石方块生成$(thing)定位粒子$()"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "勘探者视角",
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
+            ],
+            "border": true,
+            "text": "使用勘矿镐时的效果如图所示。大型$(bold)\"!\"$()标识粒子为整矿脉透视模式，较小的粒子则为逐方块透视模式。"
+        },
+        {
+            "type": "tfc:knapping_recipe",
+            "recipe": "tfc:clay_knapping/propick_head_mold",
+            "text": "要制作勘矿镐，你可以用黏土按上图$(l:getting_started/pottery)捏制$()成一个未烧制的勘矿镐头模具。"
+        },
+        {
+            "type": "tfc:heat_recipe",
+            "recipe": "tfc:heating/propick_head_mold",
+            "text": "模具$(l:getting_started/pottery)捏制$()完之后还需要$(l:mechanics/heating)烧制$()。$(br2)将液态金属倒入到烧制好的模具中就能$(l:getting_started/finding_ores#casting)铸造$()出勘矿镐了。"
+        },
+        {
+            "type": "tfc:anvil_recipe",
+            "recipe": "tfc:anvil/copper_propick_head",
+            "text": "勘矿镐头也可以在$(l:mechanics/anvils)砧$()上使用任何可以制造工具的金属$(thing)锭$()$(l:mechanics/anvils#working)锻造$()而成。$(br2)最后用木棍和工具头在合成栏合成就能做出勘矿镐了。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "勘矿镐的大部分数据和特性都可以在你的服务器配置文件中进行调整。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "prospector",
+            "item": "gtceu:prospector.lv",
+            "title": "数字勘矿者的…",
+            "link_recipes": false,
+            "text": "科技时代已然来临！随之而来的是探寻矿脉的全新方式！$(br)$(item)探矿仪$()是$(thing)格雷科技$()提供的矿脉与流体矿藏勘探方案。其探测范围与功能由$(#ff1100)电压等级$()决定。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "探矿仪",
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
+            ],
+            "border": true,
+            "text": "这是你使用$(#e373ff)LuV 探矿仪$()时可能会看到的一个例子。"
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "tfc:metal/propick/bismuth_bronze": 2,
+        "tfc:metal/propick/black_bronze": 2,
+        "tfc:metal/propick/bronze": 2,
+        "tfc:metal/propick/copper": 2,
+        "tfc:metal/propick/wrought_iron": 2,
+        "tfc:metal/propick/steel": 2,
+        "tfc:metal/propick/black_steel": 2,
+        "tfc:metal/propick/blue_steel": 2,
+        "tfc:metal/propick/red_steel": 2,
+        "gtceu:prospector.lv": 10,
+        "gtceu:prospector.hv": 10,
+        "gtceu:prospector.luv": 10
+    }
+}

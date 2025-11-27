@@ -76,6 +76,16 @@
       "title": "Perfectly Forged",
       "link_recipes": false,
       "text": "There are four tiers of forging bonus:$(li)Poorly Forged$(li)Well Forged$(li)Expertly Forged$(li)Perfectly Forged$(br2)These bonuses increase the power of your tool - making it break less often, mine faster, and/or do more damage in combat, depending on the tool."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "welding",
+      "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:getting_started/primitive_anvils)Stone Anvil$() or a metal anvil.$(br2)First, you must place the two items you want to weld on the anvil. You can do this either by using the items on the anvil, or by opening the anvil interface and inserting them in the two leftmost slots.",
+      "title": "Welding"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "You also need to have at least one $(l:mechanics/flux)Flux$() in the anvil to aid the welding process. Then, while both items are $(l:mechanics/heating)hot enough$() to weld - the tooltip will say \"Can Weld\" - you must use any $(thing)Hammer$() on the anvil. You will hear a hammering sound and the items will be welded together. They can then be extracted by using $(item)$(k:key.use)$() on the anvil with an empty hand."
     }
   ],
   "read_by_default": true,

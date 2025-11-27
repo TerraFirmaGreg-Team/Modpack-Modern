@@ -1,0 +1,50 @@
+{
+    "name": "地狱熔炉",
+    "category": "tfc:beneath",
+    "icon": "beneath:cursecoal",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)地狱熔炉$() 是一个超大规模的炉子，具备高燃料容量、产物产能和加热效率。它由地狱砖、$(l:beneath/ores_and_minerals#cursecoal)无烟煤$() 和辉石岩引水桥构成。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "ZXXXZ",
+                        "XYYYX",
+                        "XY0YX",
+                        "XYYYX",
+                        "ZXXXZ"
+                    ],
+                    [
+                        "     ",
+                        " XXX ",
+                        " XXX ",
+                        " XXX ",
+                        "     "
+                    ]
+                ],
+                "mapping": {
+                    "Z": "beneath:blackstone_aqueduct[fluid=lava]",
+                    "Y": "beneath:hellforge_side",
+                    "0": "beneath:hellforge",
+                    "X": "beneath:hellbricks"
+                }
+            },
+            "name": "地狱熔炉",
+            "text": "",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "地狱熔炉需要在四个角的引水桥中流入岩浆，以及 21 块地狱砖。中间的 3x3 区域必须填满 $(l:beneath/ores_and_minerals#cursecoal)无烟煤堆$()，点火后即可启动熔炉。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "地狱熔炉的物品槽位可放置燃料或待冶炼的物品；没有区别。小心放错东西！还有熔炼槽，如同木炭炉一般使用。屏幕上的岩浆计量表表示温度（同时可通过物品在世界中的移动可视化）。"
+        }
+    ],
+    "read_by_default": true
+}

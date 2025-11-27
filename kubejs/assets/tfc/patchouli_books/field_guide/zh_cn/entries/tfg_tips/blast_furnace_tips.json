@@ -1,0 +1,42 @@
+{
+    "name": "高炉使用技巧",
+    "icon": "tfc:blast_furnace",
+    "category": "tfc:tfg_tips",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "群峦传说高炉技巧",
+            "text": "你终于找到$(item)高岭土$()了，是不是正在激动地准备建造一座五层$(thing)高炉$()了？在你大展身手前，这里有些实用建议！"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:compressed_fireclay",
+            "text": "在将耐火黏土全部用于制作20块耐火砖前，请注意：进入蒸汽时代后，你可通过$(item)压缩耐火黏土$()（需要蒸汽机器制备黏土粉）仅用黏土制作耐火砖。这能让你节省$(item)高岭土$()与$(item)石墨$()用于制作$(thing)铸造台$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "预热金属",
+            "item": "tfc:firepit",
+            "text": "要把铁转化为钢，高炉需将内部铁料加热至$(thing)亮白$()。首次运行时，金属会随高炉一同升温。但后续操作即使炉温已达标，仍需重新从冷态加热金属，因此耗时基本不变。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "若金属在加入高炉时已预热，则达到亮白色所需时间将缩短。建议将金属先在$(l:tfc:mechanics/charcoal_forge)木炭炉$()中加热，再投入已预热的高炉以节省时间——对于每次处理量较小的小型高炉尤为有效。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "自动化生产",
+            "item": "greate:steel_mechanical_pump",
+            "text": "你在$(thing)蒸汽时代$()与$(thing)低压时代$()将需要大量$(item)钢$()——非常大量的钢。$(thing)电力高炉$()尚遥遥无期，不妨考虑优化当前的炼钢产线。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "你可以使用机械动力的$(item)动力泵$()直接从高炉泵出液态金属。将其导入$(l:tfc:tfcchannelcasting/channel_casting)铸造台$()后，用漏斗或溜槽提取锭——轻松实现自动化！$(br2)还可使用$(item)机械手$()自动拉动风箱！但需注意：过度使用风箱会加速燃料消耗并加快$(thing)吹风管$()的损坏速度。$(br2)产出的$(item)生铁$()与$(item)高碳钢$()可通过$(thing)锻造锤$()进行加工。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "你可以用朝向高炉的漏斗自动替换破损的风管。"
+        }
+    ]
+}

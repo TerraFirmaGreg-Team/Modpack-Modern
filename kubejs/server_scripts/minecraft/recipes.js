@@ -1091,7 +1091,7 @@ const registerMinecraftRecipes = (event) => {
 	//#region Glowing Ink Sacs
 		
 	event.recipes.gtceu.chemical_bath('minecraft:glow_inc_sac4')
-		.itemInputs("gtceu:thorium_dust", "4x #forge:dyes/black")
+		.itemInputs("gtceu:thorium_dust")
 		.inputFluids(Fluid.of('gtceu:glowstone', 512))
 		.itemOutputs('16x minecraft:glow_ink_sac')
 		.duration(20)

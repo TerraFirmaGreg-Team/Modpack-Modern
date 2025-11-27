@@ -1,0 +1,22 @@
+{
+  "name": "钢头登山靴",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:steel_toe_hiking_boots",
+  "pages": [
+	{
+	  "type": "patchouli:text",
+	  "text": "和$(l:sns/hiking_boots)登山靴$()一样，不过因为拥有钢头而更安全。可惜还没有人发明安全帽。"
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/steel_toe_hiking_boots",
+	  "recipe2": "sns:crafting/black_steel_toe_hiking_boots"
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/blue_steel_toe_hiking_boots",
+	  "recipe2": "sns:crafting/red_steel_toe_hiking_boots"
+	}
+  ],
+  "read_by_default": true
+}
