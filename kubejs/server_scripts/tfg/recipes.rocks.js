@@ -573,19 +573,19 @@ function registerTFGRockRecipes(event) {
 		  dust: 'tfg:moon_deepslate_dust',                      loose: null,                                             stonecutting: true  }, // Cobble - Mossy
 
 		{ raw:  'tfg:rock/polished_moon_deepslate',             stair: 'tfg:rock/polished_moon_deepslate_stairs',        slab: 'tfg:rock/polished_moon_deepslate_slab',        wall: 'tfg:rock/polished_moon_deepslate_wall',
-		  dust: 'gtceu:moon_deepslate_dust',                    loose: null,                                             stonecutting: true  }, // Smooth
+		  dust: 'tfg:moon_deepslate_dust',                    loose: null,                                             stonecutting: true  }, // Smooth
 
 		{ raw:  'tfg:rock/bricks_moon_deepslate',               stair: 'tfg:rock/bricks_moon_deepslate_stairs',          slab: 'tfg:rock/bricks_moon_deepslate_slab',          wall: 'tfg:rock/bricks_moon_deepslate_wall',
-		  dust: 'gtceu:moon_deepslate_dust',                    loose: null,                                             stonecutting: true  }, // Bricks
+		  dust: 'tfg:moon_deepslate_dust',                    loose: null,                                             stonecutting: true  }, // Bricks
 
 		{ raw:  'tfg:rock/cracked_bricks_moon_deepslate',       stair: 'tfg:rock/cracked_bricks_moon_deepslate_stairs',  slab: 'tfg:rock/cracked_bricks_moon_deepslate_slab',  wall: 'tfg:rock/cracked_bricks_moon_deepslate_wall',
-		  dust: 'gtceu:moon_deepslate_dust',                    loose: null,                                             stonecutting: true  }, // Bricks - Cracked
+		  dust: 'tfg:moon_deepslate_dust',                    loose: null,                                             stonecutting: true  }, // Bricks - Cracked
 
 		{ raw:  'tfg:rock/mossy_bricks_moon_deepslate',         stair: 'tfg:rock/mossy_bricks_moon_deepslate_stairs'  ,  slab: 'tfg:rock/mossy_bricks_moon_deepslate_slab',    wall: 'tfg:rock/mossy_bricks_moon_deepslate_wall',
-		  dust: 'gtceu:moon_deepslate_dust',                    loose: null,                                             stonecutting: true  }, // Bricks - Mossy
+		  dust: 'tfg:moon_deepslate_dust',                    loose: null,                                             stonecutting: true  }, // Bricks - Mossy
 
 		{ raw:  'tfg:rock/chiseled_bricks_moon_deepslate',      stair: 'tfg:rock/chiseled_bricks_moon_deepslate_stairs', slab: 'tfg:rock/chiseled_bricks_moon_deepslate_slab', wall: 'tfg:rock/chiseled_bricks_moon_deepslate_wall',
-		  dust: 'gtceu:moon_deepslate_dust',                    loose: null,                                             stonecutting: true  }, // Bricks - Extra
+		  dust: 'tfg:moon_deepslate_dust',                    loose: null,                                             stonecutting: true  }, // Bricks - Extra
 
 		// Permafrost
 		{ raw:  'ad_astra:permafrost',                          stair: 'tfg:rock/permafrost_stairs',                     slab: 'tfg:rock/permafrost_slab',                     wall: 'tfg:rock/permafrost_wall',
