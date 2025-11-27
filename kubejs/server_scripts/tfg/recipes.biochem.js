@@ -403,7 +403,7 @@ function registerTFGBiochemRecipes(event) {
 			Fluid.of('tfg:sodium_hypochlorite', 1000),
 			Fluid.of('minecraft:water', 1000)
 		)
-		.itemOutputs(Item.of('gtceu:salt'))
+		.itemOutputs(Item.of('gtceu:salt_dust'))
 		.duration(10*20)
 		.EUt(GTValues.VA[GTValues.HV]);
 
@@ -488,7 +488,7 @@ function registerTFGBiochemRecipes(event) {
 		)
 		.outputFluids(
 			Fluid.of('tfg:crystal_violet', 1000),
-			Fluid.of('gtceu:water', 3000)
+			Fluid.of('gtceu:distilled_water', 3000)
 		)
 		.duration(20*20)
 		.EUt(GTValues.VA[GTValues.IV]);
