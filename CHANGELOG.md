@@ -17,6 +17,7 @@
 - Fixed some quest typos @Pyritie
 - Fixed duplicate bed dyeing recipe (#2229) @Pyritie
 - Fixed Basic Hermetic Casing missing a mineable tag and loot table (#2221) @Pyritie
+- Fixed some inconsistencies with gravel to sand recipe tiers (#2292) @Pyritie
 ### Translation updates
 
 ## [0.11.8] - 19-11-2025
