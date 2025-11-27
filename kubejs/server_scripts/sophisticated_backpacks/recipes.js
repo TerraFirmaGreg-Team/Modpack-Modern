@@ -190,7 +190,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
 
     event.shapeless('sophisticatedbackpacks:advanced_pickup_upgrade', [
         'sophisticatedbackpacks:pickup_upgrade',
-        'gtceu:smart_item_filter'
+        'gtceu:item_smart_filter'
     ]).id('tfg:sophisticated_backpacks/shapeless/advanced_pickup_upgrade')
 
     event.shaped('sophisticatedbackpacks:filter_upgrade', [
@@ -243,7 +243,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
 
     event.shapeless('sophisticatedbackpacks:advanced_magnet_upgrade', [
         'sophisticatedbackpacks:magnet_upgrade',
-        'gtceu:smart_item_filter'
+        'gtceu:item_smart_filter'
     ]).id('tfg:sophisticated_backpacks/shapeless/advanced_magnet_upgrade')
 
     event.shaped('sophisticatedbackpacks:void_upgrade', [
