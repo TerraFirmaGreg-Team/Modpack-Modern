@@ -1695,7 +1695,7 @@ function registerTFGFoodRecipes(event) {
 	event.replaceInput({id: 'firmalife:crafting/lasagna'},'firmalife:plant/oregano','tfg:spice/oregano_leaves');
 
 	event.recipes.tfc.advanced_shapeless_crafting(
-		TFC.itemStackProvider.of('firmalife:food/salsa').copyFood(),
+		TFC.itemStackProvider.of('5x firmalife:food/salsa').copyFood(),
 		[
 			'tfg:spice/cilantro_leaves',
 			'tfc:food/tomato',
