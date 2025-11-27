@@ -1243,13 +1243,13 @@ const registerGTCEURecipes = (event) => {
 	// This is a factor of 9x for solids, 8.64x for liquids
 	// Large boiler fuel burn time is multiplied by 9, resulting in less fuel used over time for the same amount of steam produced per tick
 
-	event.findRecipes({ id: /^gtceu:large_boiler\/.*/, type: "gtceu:large_boiler" }).forEach(large_boiler_recipe => {
+	//event.findRecipes({ id: /^gtceu:large_boiler\/.*/, type: "gtceu:large_boiler" }).forEach(large_boiler_recipe => {
 
-		let recipe_duration = large_boiler_recipe.json.getAsJsonPrimitive("duration").asInt
+	//	let recipe_duration = large_boiler_recipe.json.getAsJsonPrimitive("duration").asInt
 
-		large_boiler_recipe.json.remove("duration")
-		large_boiler_recipe.json.add("duration", recipe_duration * 9)
-	})
+	//	large_boiler_recipe.json.remove("duration")
+	//	large_boiler_recipe.json.add("duration", recipe_duration * 9)
+	//})
 
 	//#endregion
 
