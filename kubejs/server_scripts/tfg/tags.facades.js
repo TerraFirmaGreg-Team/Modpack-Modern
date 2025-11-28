@@ -42,6 +42,9 @@ function registerFacadeWhitelistTags(event) {
 		//reconstituted stone blocks
 		'minecraft:smooth_stone',
 		'minecraft:stone_bricks',
+		'minecraft:cracked_stone_bricks',
+		'minecraft:chiseled_stone_bricks',
+		'minecraft:mossy_stone_bricks',
 		
 		//rnr shingles
 		'rnr:ceramic_roof',
