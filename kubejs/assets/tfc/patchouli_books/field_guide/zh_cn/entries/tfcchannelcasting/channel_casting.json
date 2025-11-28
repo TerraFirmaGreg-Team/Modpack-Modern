@@ -1,0 +1,39 @@
+{
+  "name": "浇注道铸造",
+  "category": "tfc:tfcchannelcasting",
+  "icon": "tfcchannelcasting:channel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "你可以使用$(thing)浇注道$()与$(thing)模具台$()，从$(thing)坩埚$()同时向多个模具浇注金属。只需用$(thing)浇注道$()把$(thing)模具台$()与$(thing)坩埚$()连接，然后右键点击$(thing)坩埚$()旁边的$(thing)浇注道$()。手持$(l:getting_started/pottery#mold)模具$()对$(thing)模具台$()按住潜行并右键以放置或移除。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfcchannelcasting:fire_clay_knapping/unfired_channel_4",
+      "text": "捏制数个$(thing)未烧制的浇注道$()。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfcchannelcasting:fire_clay_knapping/unfired_mold_table",
+      "text": "捏制一个$(thing)未烧制的模具台$()。"
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "tfcchannelcasting:heating/channel",
+      "text": "浇注道与模具台捏制完成后，需要像任意陶器一样进行$(thing)烧制$()。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "tfcchannelcasting:example",
+      "name": "浇注铸造示例",
+      "text": "",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)对$(thing)模具台$()使用风箱可更快冷却金属。$()$(li)用红石脉冲激活$(thing)浇注道$()会开始倾倒金属。$()$(li)$(thing)模具台$()会输出比较器信号。",
+      "title": "自动化"
+    }
+  ],
+  "read_by_default": true
+}

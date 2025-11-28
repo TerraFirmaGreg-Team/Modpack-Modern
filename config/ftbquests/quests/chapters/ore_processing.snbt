@@ -178,8 +178,6 @@
 		{
 			id: "138C7D4A61E2A77D"
 			linked_quest: "6B10099F3F0931B9"
-			shape: "none"
-			size: 1.5d
 			x: 9.0d
 			y: -15.0d
 		}
@@ -947,15 +945,13 @@
 		{
 			dependencies: ["186CFAA5A444ECB3"]
 			description: ["{quests.stone_age.clean_dust.desc}"]
+			icon: "minecraft:water_bucket"
 			id: "6B10099F3F0931B9"
-			shape: "none"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "{quests.stone_age.clean_dust.subtitle}"
 			tasks: [{
-				amount: 1000L
-				fluid: "minecraft:water"
-				id: "0944FE2841D789D8"
-				type: "fluid"
+				id: "62EF9D1895CA3811"
+				type: "checkmark"
 			}]
 			title: "{quests.stone_age.clean_dust.title}"
 			x: 6.0d
