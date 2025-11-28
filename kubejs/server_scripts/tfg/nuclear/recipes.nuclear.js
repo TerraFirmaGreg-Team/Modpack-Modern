@@ -59,8 +59,8 @@ function registerTFGNuclearRecipes(event) {
 
 	event.recipes.gtceu.nuclear_fuel_factory('tfg:tbu_232_rod')
 		.inputFluids(Fluid.of('gtceu:nuclear_waste', 32000))
-		.itemInputs('#forge:ingots/thorium_232', 'tfg:empty_rod')
-		.itemOutputs('tfg:tbu-232_rod')
+		.itemInputs('2x #forge:rods/thorium_232', 'tfg:empty_rod')
+		.itemOutputs('tfg:tbu_232_rod')
 		.duration(20*300)
 		.EUt(GTValues.V[GTValues.IV])
 

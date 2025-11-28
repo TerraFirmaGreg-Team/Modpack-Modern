@@ -10,7 +10,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(l:arborfirmacraft/tapping_index#maple)$(li)枫树$()$(l:arborfirmacraft/tapping_index#birch)$(li)桦树$()$(l:arborfirmacraft/tapping_index#hevea)$(li)橡胶树$()$(l:arborfirmacraft/tapping_index#rubber_fig)$(li)橡胶榕$()$(l:arborfirmacraft/tapping_index#kapok)$(li)木棉树$()$(l:arborfirmacraft/tapping_index#aspen)$(li)白杨树$()$(l:arborfirmacraft/tapping_index#spruce)$(li)云杉$()$(l:arborfirmacraft/tapping_index#white_cedar)$(li)雪松$()$(l:arborfirmacraft/tapping_index#douglas_fir)$(li)花旗松$()"
+            "text": "$(l:arborfirmacraft/tapping_index#maple)$(li)枫树$()$(l:arborfirmacraft/tapping_index#birch)$(li)白桦树$()$(l:arborfirmacraft/tapping_index#hevea)$(li)三叶胶树$()$(l:arborfirmacraft/tapping_index#rubber_fig)$(li)橡胶无花果树$()$(l:arborfirmacraft/tapping_index#kapok)$(li)木棉树$()$(l:arborfirmacraft/tapping_index#aspen)$(li)山杨树$()$(l:arborfirmacraft/tapping_index#spruce)$(li)云杉树$()$(l:arborfirmacraft/tapping_index#white_cedar)$(li)白雪松树$()$(l:arborfirmacraft/tapping_index#douglas_fir)$(li)花旗松树$()"
         },
         {
             "type": "patchouli:spotlight",
@@ -18,7 +18,7 @@
             "title": "枫树",
             "item": "tfc:wood/log/maple,tfc:wood/wood/maple,tfc:wood/leaves/maple,tfc:wood/sapling/maple",
             "link_recipe": false,
-            "text": "$(bold)气候数据$()$(br)$(thing)最低温度$(): -8.4°C$(br)$(thing)最高温度$(): 8°C$(br)$(thing)最低降雨量$(): 240$(br)$(thing)最高降雨量$(): 470$(br2)$(bold)采集数据$()$(br)$(thing)最低产出温度$(): -15°C$(br)$(thing)最高产出温度$(): 5°C$(br)$(thing)春季特有$(): 不是$(br)$(thing)流速$(): 5mb"
+            "text": "$(bold)气候数据$()$(br)$(thing)最低温度$(): -8.4°C$(br)$(thing)最高温度$(): 8°C$(br)$(thing)最低降雨量$(): 240$(br)$(thing)最高降雨量$(): 470$(br2)$(bold)采集数据$()$(br)$(thing)最低产出温度$(): -15°C$(br)$(thing)最高产出温度$(): 5°C$(br)$(thing)春季特有$(): 否$(br)$(thing)流速$(): 5mb"
         },
         {
             "type": "patchouli:image",
@@ -34,7 +34,7 @@
             "title": "白桦树",
             "item": "tfc:wood/log/birch,tfc:wood/wood/birch,tfc:wood/leaves/birch,tfc:wood/sapling/birch",
             "link_recipe": false,
-            "text": "$(bold)气候数据$()$(br)$(thing)最低温度$(): -12.1°C$(br)$(thing)最高温度$(): 6.1°C$(br)$(thing)最低降雨量$(): 125$(br)$(thing)最高降雨量$(): 310$(br2)$(bold)采集数据$()$(br)$(thing)最低产出温度$(): -15°C$(br)$(thing)最高产出温度$(): 5°C$(br)$(thing)春季特有$(): 不是$(br)$(thing)流速$(): 5mb"
+            "text": "$(bold)气候数据$()$(br)$(thing)最低温度$(): -12.1°C$(br)$(thing)最高温度$(): 6.1°C$(br)$(thing)最低降雨量$(): 125$(br)$(thing)最高降雨量$(): 310$(br2)$(bold)采集数据$()$(br)$(thing)最低产出温度$(): -15°C$(br)$(thing)最高产出温度$(): 5°C$(br)$(thing)春季特有$(): 否$(br)$(thing)流速$(): 5mb"
         },
         {
             "type": "patchouli:image",
