@@ -267,6 +267,14 @@ function registerTFGFoodRecipes(event) {
 			.duration(2400)
 			.EUt(16)
 
+		event.recipes.gtceu.mixer(`lactose_milk_${item.id}`)
+			.circuit(1)
+			.inputFluids(Fluid.of(item.milk, 1000), Fluid.of('gtceu:acetic_acid', 25))
+			.itemOutputs('1x gtceu:lactose_dust')
+			.outputFluids(Fluid.of(item.curdled_fluid, 1000))
+			.duration(300)
+			.EUt(GTValues.VA[GTValues.LV])
+
 		processorRecipe(`${item.id}_curd`, 1200, 16, {
 			itemOutputs: [item.curd],
 			fluidInputs: [Fluid.of(item.curdled_fluid, 1000)],
