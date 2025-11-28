@@ -23,7 +23,6 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/logistics/content_observer' },
 			{ id: 'create:crafting/logistics/stockpile_switch' },
 			{ id: 'create:crafting/kinetics/nixie_tube' },
-			{ id: 'create:crafting/kinetics/analog_lever' },
 			{ id: 'create:crafting/kinetics/placard' },
 			{ id: 'create:crafting/logistics/pulse_repeater' },
 			{ id: 'create:crafting/logistics/pulse_extender' },
