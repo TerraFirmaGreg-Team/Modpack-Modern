@@ -1841,9 +1841,48 @@ const registerGTCEURecipes = (event) => {
 	// Allow oil in small boilers
 
 	event.remove({ id: "gtceu:large_boiler/gtceu_oil" })
+	event.remove({ id: "gtceu:large_boiler/gtceu_oil_heavy" })
+	event.remove({ id: "gtceu:large_boiler/gtceu_fish_oil" })
 	// This generates both a small boiler and large boiler recipe. Remove it above to avoid a duplicate
 	event.recipes.gtceu.steam_boiler('tfg:oil')
 		.inputFluids(Fluid.of('gtceu:oil', 200))
+		.duration(200)
+		.dimension('minecraft:overworld')
+
+	event.recipes.gtceu.steam_boiler('tfg:heavy_oil')
+		.inputFluids(Fluid.of('gtceu:oil_heavy', 32))
+		.duration(200)
+		.dimension('minecraft:overworld')
+
+	event.recipes.gtceu.steam_boiler('tfg:fish_oil')
+		.inputFluids(Fluid.of('gtceu:fish_oil', 160))
+		.duration(200)
+		.dimension('minecraft:overworld')
+
+	// These aren't in base GT, but they have the same stats as oil
+	event.recipes.gtceu.steam_boiler('tfg:raw_oil')
+		.inputFluids(Fluid.of('gtceu:oil_medium', 200))
+		.duration(200)
+		.dimension('minecraft:overworld')
+
+	event.recipes.gtceu.steam_boiler('tfg:light_oil')
+		.inputFluids(Fluid.of('gtceu:oil_light', 200))
+		.duration(200)
+		.dimension('minecraft:overworld')
+
+	// Same stats as fish oil
+	event.recipes.gtceu.steam_boiler('tfg:olive_oil')
+		.inputFluids(Fluid.of('tfc:olive_oil', 160))
+		.duration(200)
+		.dimension('minecraft:overworld')
+
+	event.recipes.gtceu.steam_boiler('tfg:seed_oil')
+		.inputFluids(Fluid.of('gtceu:seed_oil', 160))
+		.duration(200)
+		.dimension('minecraft:overworld')
+
+	event.recipes.gtceu.steam_boiler('tfg:soybean_oil')
+		.inputFluids(Fluid.of('firmalife:soybean_oil', 160))
 		.duration(200)
 		.dimension('minecraft:overworld')
 }

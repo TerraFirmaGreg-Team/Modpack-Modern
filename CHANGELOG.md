@@ -17,7 +17,8 @@ Added TFC Gurman, which adds even more food and drink
 - Cleanrooms now allow 9 door "blocks", so you can use a 3x3 Ad Astra door (#2074) @ko-lja
 - Added recycling for astikor carts (#2227) @Pyritie
 - Moved Soph Backpack pickup to ULV, adv pickup to MV and magnet to MV @CrashAndSideburns
-- Oilsands dust can now be centrifuged in the mechanical centrifuge, and oil can now be used to fuel small boilers as well @Pyritie
+- Oilsands dust can now be centrifuged in the mechanical centrifuge @Pyritie
+- All oils (both the petrochem kind and the cooking kind) can now be used to fuel small boilers as well @Pyritie
 ### Bug fixes
 - Fixed brown gravy recipe @Redeix
 - Fixed instant mac recipe requiring less cardboard than it gives back @Redeix
