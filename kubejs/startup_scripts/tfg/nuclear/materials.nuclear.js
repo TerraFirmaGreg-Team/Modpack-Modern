@@ -23,7 +23,14 @@ const registerTFGNuclearMaterials = (event) => {
 
 	//#region Fluid
 
+	// Steam
+
 	event.create('dense_steam')
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(3730))
+		.components('2x hydrogen', '1x oxygen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('critical_steam')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(3730))
 		.components('2x hydrogen', '1x oxygen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
@@ -43,6 +50,8 @@ const registerTFGNuclearMaterials = (event) => {
 		.components('1x water', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+	// Coolant
+
 	event.create('tfg:heavy_water')
 		.liquid(new GTFluidBuilder().temperature(236))
 		.components('2x deuterium', '1x oxygen')
@@ -55,6 +64,20 @@ const registerTFGNuclearMaterials = (event) => {
 		.color(0xb5ffff)
 		.secondaryColor(0x81FFF9)
 
+	event.create('tfg:boron_enriched_coolant')
+		.liquid(new GTFluidBuilder().temperature(213))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0x43D6E4)
+		.secondaryColor(0x2C9AAF)
+
+	event.create('tfg:hot_boron_enriched_coolant')
+		.liquid(new GTFluidBuilder().temperature(2000))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xFF715B)
+		.secondaryColor(0xFF9D6E)
+
+	// Fision Waste
+
 	event.create('uranium_waste')
 		.liquid(new GTFluidBuilder().customStill().temperature(3850))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
@@ -65,6 +88,8 @@ const registerTFGNuclearMaterials = (event) => {
 		.liquid(new GTFluidBuilder().customStill().temperature(3850))
 		.components('1x thorium', '1x uranium', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	// Plutonium Line
 
 	event.create('dirty_hexafluorosilicic_acid')
 		.liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))

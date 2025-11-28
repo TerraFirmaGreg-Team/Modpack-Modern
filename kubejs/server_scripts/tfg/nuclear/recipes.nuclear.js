@@ -288,6 +288,23 @@ function registerTFGNuclearRecipes(event) {
         .outputFluids(Fluid.of('gtceu:dense_steam', 100))
         .addData("coolant_heat_per_tick", 12.34)
         .duration(1000);
+
+		// Neptunium-237 Rod Fission
+    event.recipes.deafission.fission_reactor_fuel('tfg:neptunium_237')
+        .itemInputs('tfg:neptunium_237_rod')
+        .itemOutputs('tfg:depleted_neptunium_237_rod')
+        // Mandatory by GT; no real impact. Use this as a convention:
+        // durability / const / heatValue
+        .duration(50000 / 0.4 / 2);
+
+	event.recipes.deafission.fission_reactor_coolant('tfg:neptunium_237_coolant')
+        .itemInputs(Ingredient.of([
+            'tfg:neptunium_237_rod']))
+        .inputFluids(Fluid.of('tfg:boron_enriched_coolant', 20))
+        .outputFluids(Fluid.of('tfg:hot_boron_enriched_coolant', 20))
+        .addData("coolant_heat_per_tick", 1)
+        .duration(1);
+
 	//#endregion
 
 	//#region Fission Recipes for cooling
@@ -439,7 +456,7 @@ function registerTFGNuclearRecipes(event) {
 	//#endregion
 	
 	//#region Cooling Tower
-	/*
+
 	event.recipes.gtceu.assembler('tfg:ostrum_carbon_casing')
 		.itemInputs('2x #forge:plates/ostrum', '2x #forge:plates/titanium_carbide', '#forge:dense_plates/hsla_steel', '#forge:frames/black_steel')
 		.itemOutputs('2x tfg:casings/machine_casing_ostrum_carbon')
@@ -463,7 +480,6 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(GTValues.VA[GTValues.IV] * 2)
 		.duration(20*4)
 
-	/*
 	event.shaped('tfg:cooling_tower', [
 		'ABA',
 		'CDC',
@@ -475,31 +491,35 @@ function registerTFGNuclearRecipes(event) {
 		D: 'gtceu:iv_machine_hull',
 		E: 'gtceu:iv_fluid_regulator'
 	}).id('tfg:shaped/cooling_tower')
-	*/
 
 	//#endregion
 
 	//#region Heat Battery
 
-    event.recipes.deafission.hb_import('tfg:dense_steam')
-        .inputFluids(Fluid.of('gtceu:dense_steam', 100))
-        .outputFluids(Fluid.of('minecraft:water', 10))
-        .blastFurnaceTemp(4000)
-        .addData("hb_energy", 100)
+    event.recipes.deafission.hb_import('tfg:boron_coolant')
+        .inputFluids(Fluid.of('tfg:hot_boron_enriched_coolant', 20))
+        .outputFluids(Fluid.of('tfg:boron_enriched_coolant', 20))
+        .blastFurnaceTemp(2000)
+        .addData("hb_energy", 20)
+
+    event.recipes.deafission.hb_export('tfg:boron_coolant_to_dense_steam')
+        .inputFluids(Fluid.of('gtceu:distilled_water', 20))
+        .outputFluids(Fluid.of('gtceu:dense_steam', 20))
+        .blastFurnaceTemp(1000)
+        .addData("hb_energy", 20)
 	
 	//#endregion
 
 	//#endregion
-	/*
+
     event.recipes.deafission.hb_import('tfg:dense_steam')
-        .inputFluids(Fluid.of('gtceu:dense_steam', 100))
-        .outputFluids(Fluid.of('minecraft:water', 10))
-        .blastFurnaceTemp(4000)
-        .addData("hb_energy", 100)
-	*/
+        .inputFluids(Fluid.of('gtceu:dense_steam', 20))
+        .outputFluids(Fluid.of('minecraft:water', 20))
+        .blastFurnaceTemp(1000)
+        .addData("hb_energy", 20)
+
 	//#region FLiBe Line - SCRAP FROM MARS TO VENUS
 
-	/*
 
 	event.recipes.gtceu.evaporation_tower('raw_rich_brine_earth')
 		.inputFluids(Fluid.of('tfc:spring_water', 20000))
@@ -582,13 +602,9 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*36)
 		.EUt(GTValues.VA[GTValues.IV])
 
-	*/
-
 	//#endregion
 
 	//#region Bromine Line - SCRAP FROM MARS TO VENUS
-
-	/*
 
 	event.recipes.gtceu.evaporation_tower('evaporation_brine')
 		.inputFluids(Fluid.of('tfc:salt_water', 20000))
@@ -706,8 +722,6 @@ function registerTFGNuclearRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:bromine', 1000))
 		.duration(20*25)
 		.EUt(GTValues.VA[GTValues.HV])
-
-	*/
 
 		
 

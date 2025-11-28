@@ -25,4 +25,9 @@ const registerTFGElement = (event) => {
         .protons(98)
         .neutrons(252)
         .symbol("Ca²⁵²")
+
+    event.create("boron_10")
+        .protons(5)
+        .neutrons(5)
+        .symbol("B¹⁰")
 }
