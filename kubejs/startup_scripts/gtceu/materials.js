@@ -420,7 +420,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.GraniteRed.setMaterialARGB(0x974B3C)
 	GTMaterials.GraniteRed.setMaterialSecondaryARGB(0x632117)
 	GTMaterials.RhodiumPlatedPalladium.setMaterialARGB(0xFFC2EC)
-	GTMaterials.Rhenium.setMaterialARGB(0x9ccbd6)
+	GTMaterials.Rhenium.setMaterialSecondaryARGB(0x9ccbd6)
 
 	
 	global.MINECRAFT_DYE_NAMES.forEach(colorName => {
