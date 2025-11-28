@@ -10821,8 +10821,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "primitive creatures V2.2 1.20.1 .jar",
+                    "type": "modrinth",
+                    "file_name": "Primitive creatures 2.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10830,39 +10830,39 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7000/784/primitive creatures V2.2 1.20.1 .jar",
-                    "id": "7000784",
+                    "url": "https://cdn.modrinth.com/data/GfUwaZEm/versions/eqfW2BOb/Primitive creatures 2.6.jar",
+                    "id": "eqfW2BOb",
+                    "parent_id": "GfUwaZEm",
+                    "hashes": {
+                        "sha512": "9f72b7053820e30c2b932f1587417e5d023cc0f019f938e0870d6f4284925e58698e6c624cf999acf95757819294cb4398c6937bb373d7efbc355e7687a97dee",
+                        "sha1": "9a6f9e9c75363c7b14ec8d71e5641bbfd377f137"
+                    },
+                    "required_dependencies": [],
+                    "size": 529007,
+                    "date_published": "2025-11-28T00:42:21.156775Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "Primitive creatures 2.6forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7269/624/Primitive creatures 2.6forge.jar",
+                    "id": "7269624",
                     "parent_id": "1218288",
                     "hashes": {
-                        "sha1": "f76bde1ecf37c7111859ebb02cdef978ec370191",
-                        "md5": "9cc3392503d06d05fe2d5fe22a64e6cf"
+                        "sha1": "9a6f9e9c75363c7b14ec8d71e5641bbfd377f137",
+                        "md5": "3db0bd5100d722b6d959b7b37b07c725"
                     },
                     "required_dependencies": [
                         "388172"
                     ],
-                    "size": 525102,
-                    "date_published": "2025-09-15T19:44:19.663Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "primitive creatures V2.0.4 1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/GfUwaZEm/versions/WS4cl75O/primitive creatures V2.0.4 1.20.1.jar",
-                    "id": "WS4cl75O",
-                    "parent_id": "GfUwaZEm",
-                    "hashes": {
-                        "sha512": "24066d5ac2ce72e86a8bbf11d4e860d681cc67faec01621bb368160d636c1e2121803530c3f46e829a85b4419d16fc0a4715896d11c6101f5e8ffad5a664cd6a",
-                        "sha1": "939d37037cc19b15aa8581afa513a724268858b1"
-                    },
-                    "required_dependencies": [],
-                    "size": 501549,
-                    "date_published": "2025-08-22T19:33:48.426929Z"
+                    "size": 529007,
+                    "date_published": "2025-11-28T00:43:45.163Z"
                 }
             ]
         },
