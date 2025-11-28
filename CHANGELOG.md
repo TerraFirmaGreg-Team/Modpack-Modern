@@ -29,6 +29,8 @@ Added TFC Gurman, which adds even more food and drink
 - Fixed some inconsistencies with gravel to sand recipe tiers (#2292) @Pyritie
 - Fixed the thorium-based glowing ink recipe (#2294) @Pyritie
 - Fixes crafting table output amount for salsa compared to the food processor (#2295) @Pyritie
+- Added missing food processor recipe for cocoa butter @Pyritie
+- Fixed recipe conflict with Epichlorohydrin and Sodium Hypochlorite (#2287) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra
