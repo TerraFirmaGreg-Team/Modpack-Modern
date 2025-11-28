@@ -20,7 +20,6 @@ function registerFacadeWhitelistTags(event) {
 		'#forge:sandstone',
 		'#forge:storage_blocks',
 		'#forge:glass',
-		
 		'#minecraft:terracotta',
 		'#forge:concretes',
 		'#create:casing',
