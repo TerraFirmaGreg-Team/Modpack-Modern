@@ -19,6 +19,7 @@ Added TFC Gurman, which adds even more food and drink
 - Moved Soph Backpack pickup to ULV, adv pickup to MV and magnet to MV @CrashAndSideburns
 - Oilsands dust can now be centrifuged in the mechanical centrifuge @Pyritie
 - All oils (both the petrochem kind and the cooking kind) can now be used to fuel small boilers as well @Pyritie
+- Reduced the cost of the ME Ingredient Buffer @Pyritie
 ### Bug fixes
 - Fixed brown gravy recipe @Redeix
 - Fixed instant mac recipe requiring less cardboard than it gives back @Redeix
