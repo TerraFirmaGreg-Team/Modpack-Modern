@@ -29,7 +29,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)Tetraedrita (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetraedrita (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Topázio e Calcocita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)Uraninita e Pechblenda$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenita e Molibdenita$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarcianita e Areias Petrolíferas$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)Tetraedrita (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetraedrita (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Topázio e Calcocita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)Uraninita e Pechblenda$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenita e Molibdenita$()$()",
       "type": "patchouli:text"
     },
     {
@@ -3542,6 +3542,98 @@
       "enable_visualize": false,
       "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Fonte de$(): Lítio$(br)$(thing)Fórmula$(): Li",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 150$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): 20 — 120$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Andesito, Ardósia, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Filito, Folhelho, Gabro, Giz, Gnaisse, Granito, Mármore, Quartzito, Riolito, Xisto",
+      "title": "Tarcianita e Areias Petrolíferas",
+      "type": "patchouli:text",
+      "anchor": "normal_tarkianite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Areias Petrolíferas",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/oilsands"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Fonte de$(): Liberdade \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Tarcianita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tarkianite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Fonte de$(): Rênio, Molibdênio$(br)$(thing)Fórmula$(): CuFeRe₄Mo₄S₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Bórax",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/borax"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Fonte de$(): Sódio, Boro$(br)$(thing)Fórmula$(): Na₂B₄(H₂O)₁₀O₇",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Trona",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/trona"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Fonte de$(): Sódio$(br)$(thing)Fórmula$(): Na₃C₂H(H₂O)₂O₆",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",

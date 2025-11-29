@@ -304,8 +304,6 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Zirconium.setProperty(PropertyKey.INGOT, new $INGOT_PROPERTY());
 	GTMaterials.Zirconium.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4200, 'mid', GTValues.VA[GTValues.EV], 1300, GTValues.VA[GTValues.HV], 14.7*20));
 
-	GTMaterials.Rhenium.setProperty(PropertyKey.DUST, new $DustProperty());
-
 	// Tools
 	GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 8, 1, [
 		GTToolType.AXE,
@@ -420,6 +418,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.GraniteRed.setMaterialARGB(0x974B3C)
 	GTMaterials.GraniteRed.setMaterialSecondaryARGB(0x632117)
 	GTMaterials.RhodiumPlatedPalladium.setMaterialARGB(0xFFC2EC)
+	GTMaterials.Rhenium.setMaterialARGB(0x8cb07f)
 	GTMaterials.Rhenium.setMaterialSecondaryARGB(0x9ccbd6)
 
 	
