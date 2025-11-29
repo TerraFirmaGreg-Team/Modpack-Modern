@@ -31,6 +31,7 @@ Added TFC Gurman, which adds even more food and drink
 - Fixes crafting table output amount for salsa compared to the food processor (#2295) @Pyritie
 - Added missing food processor recipe for cocoa butter @Pyritie
 - Fixed recipe conflict with Epichlorohydrin and Sodium Hypochlorite (#2287) @Pyritie
+- Fixed summoned pet endermen not being able to survive in space or other planets @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra
