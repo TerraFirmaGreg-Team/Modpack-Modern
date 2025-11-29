@@ -723,6 +723,10 @@ function registerTFGNuclearRecipes(event) {
 
 	//#endregion
 
+	//#region Isotopic Solvent and degradated
+
+	
+
 	//#region Bromine Line - SCRAP FROM MARS TO VENUS
 
 	event.recipes.gtceu.evaporation_tower('evaporation_brine')

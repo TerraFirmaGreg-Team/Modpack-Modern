@@ -268,6 +268,126 @@ const registerTFGNuclearMaterials = (event) => {
 
 	//#endregion
 
+	//#region Isotopic Solvent
+
+	// Organic Stabilizer
+	event.create('tfg:organic_stabilizer')
+    	.dust()
+    	.components('49x carbon', '64x hydrogen', '6x oxygen', '1x nitrogen', '1x chlorine')
+    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    	.color(0xd8c9b5)
+    	.secondaryColor(0xb8a896)
+		.iconSet(GTMaterialIconSet.BRIGHT)
+
+	// Trace Catalyst Salt - E
+	event.create('tfg:trace_catalyst_salt_e')
+    	.dust()
+    	.components(
+        	'2x carbon',
+        	'9x hydrogen',
+        	'8x oxygen',
+        	'1x copper',
+        	'1x sodium',
+        	'1x chlorine',
+        	'1x magnesium',
+        	'1x fluorine',
+        	'1x sulfur')
+    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    	.color(0xcad4cf)
+    	.secondaryColor(0x9eb1a9)
+		.iconSet(GTMaterialIconSet.EMERALD)
+
+	// Sodium Fluoride
+	event.create('tfg:sodium_fluoride')
+    	.dust()
+    	.components('1x sodium', '1x fluorine')
+    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    	.color(0xffffff)
+    	.secondaryColor(0xb7b9bd)
+		.iconSet(GTMaterialIconSet.ROUGH)
+
+	// Copper Trace Catalyst Dust
+	event.create('tfg:copper_trace_catalyst_dust')
+    	.dust()
+    	.components('1x copper', '1x sodium', '1x chlorine', '1x magnesium', '1x fluorine', '1x sulfur', '6x oxygen', '1x hydrogen')
+    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    	.color(0x4a2e1a)
+    	.secondaryColor(0x7a5c47)
+		.iconSet(GTMaterialIconSet.FINE)
+
+	// Isotopic Solvent
+	event.create('tfg:isotopic_solvent')
+    	.liquid(new GTFluidBuilder().temperature(320))
+    	.components(
+        	'51x carbon',
+        	'75x hydrogen',
+        	'15x oxygen',
+        	'1x nitrogen',
+        	'2x chlorine',
+        	'2x sodium',
+        	'2x fluorine',
+        	'1x copper',
+        	'1x magnesium',
+        	'1x sulfur',
+        	'1x argon')
+    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    	.color(0xd4b464)
+    	.secondaryColor(0xa88e55)
+
+	// Degraded Solvent Stream
+	event.create('tfg:degraded_solvent_stream')
+		.liquid(new GTFluidBuilder().temperature(350))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0x8b4513)
+		.secondaryColor(0xd2b48c)
+
+	// Inert Dust Fraction
+	event.create('tfg:inert_dust_fraction')
+		.dust()
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xaaaaaa)
+		.secondaryColor(0x555555)
+		.iconSet(GTMaterialIconSet.RADIOACTIVE)
+		.radioactiveHazard(10000)
+
+	// Residual Sludge
+	event.create('tfg:residual_sludge')
+		.liquid(new GTFluidBuilder().temperature(300))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0x4b0082)
+		.secondaryColor(0x8a2be2)
+
+	// Gas Fraction
+	event.create('tfg:gas_fraction')
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(400))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xcccccc)
+		.secondaryColor(0x999999)
+
+	// Organic Degradation Slurry
+	event.create('tfg:organic_degradation_slurry')
+		.liquid(new GTFluidBuilder().temperature(300))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0x556b2f)
+		.secondaryColor(0x8fbc8f)
+
+	// Recovered Ionic Complex
+	event.create('tfg:recovered_ionic_complex')
+		.dust()
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xffff00)
+		.secondaryColor(0xffa500)
+		.iconSet(GTMaterialIconSet.SAND)
+
+	// Mixed Radioactive Fluid
+	event.create('tfg:mixed_radioactive_fluid')
+		.liquid(new GTFluidBuilder().temperature(300))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xff4500)
+		.secondaryColor(0xff6347)
+
+
+
 };
 
 	//#region Fuel Pellet
