@@ -429,6 +429,15 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20*16)
 
+	event.recipes.gtceu.coal_liquefaction_tower('tfg:first_aromatic')
+		.itemInputs(Item.of('minecraft:charcoal', 1))
+		.inputFluids(Fluid.of('gtceu:creosote', 1000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 1000))
+		.outputFluids(Fluid.of('tfg:syngas', 1000))
+		.outputFluids(Fluid.of('tfg:raw_aromatic_mix', 1000))
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(20*16)
+
 	//#endregion
 
 	//#region Power Generation

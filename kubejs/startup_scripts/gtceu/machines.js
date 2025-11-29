@@ -270,8 +270,8 @@ const registerGTCEuMachines = (event) => {
 		.recipeType('nuclear_fuel_factory')
         .recipeModifiers(
             [
-                GTRecipeModifiers.PARALLEL_HATCH,  
-                (machine, recipe) => GTRecipeModifiers.pyrolyseOvenOverclock(machine, recipe),
+                GTRecipeModifiers.PARALLEL_HATCH,
+				(machine, recipe) => GTRecipeModifiers.pyrolyseOvenOverclock(machine, recipe),
 				GTRecipeModifiers.BATCH_MODE
             ]
         )
@@ -501,5 +501,39 @@ const registerGTCEuMachines = (event) => {
 		.workableCasingModel(
 			'tfg:block/casings/machine_casing_mars',
 			'gtceu:block/machines/thermal_centrifuge')
+
+	//#region Power Rework
+
+	// Coal Liquefaction Tower
+
+	event.create('coal_liquefaction_tower', 'multiblock')
+		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('coal_liquefaction_tower')
+		.recipeModifiers([(machine, recipe) => GTRecipeModifiers.crackerOverclock(machine, recipe), GTRecipeModifiers.BATCH_MODE])
+		.appearanceBlock(() => Block.getBlock('gtceu:solid_machine_casing'))
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle('CCC', 'D D', 'D D', 'DED', 'DED', 'BBB')
+			.aisle('CCC', ' Y ', ' E ', 'E#E', 'EEE', 'BMB')
+			.aisle('CXC', 'D D', 'D D', 'DED', 'DED', 'BBB' )
+			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('A', Predicates.blocks('gtceu:secure_maceration_casing'))
+			.where('B', Predicates.blocks('gtceu:solid_machine_casing').setMinGlobalLimited(4)
+				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(2)))
+			.where('C', Predicates.blocks('gtceu:solid_machine_casing')
+				.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(2))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1).setMaxGlobalLimited(2).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1).setPreviewCount(1)))
+			.where('D', Predicates.blocks('create:metal_girder'))
+			.where('E', Predicates.blocks('gtceu:steam_machine_casing'))
+			.where('Y', Predicates.heatingCoils())
+			.where('M', Predicates.abilities(PartAbility.MUFFLER).setExactLimit(1))
+			.where('#', Predicates.air())
+			.where(' ', Predicates.any())
+			.build()
+		)
+		.workableCasingModel(
+			'gtceu:block/casings/solid/machine_casing_solid_steel',
+			'gtceu:block/multiblock/distillation_tower')
 
 }
