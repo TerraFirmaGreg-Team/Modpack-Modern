@@ -134,7 +134,7 @@ global.TACZ_AMMO_INDEX = [
 	'tacz:357mag',
 	'tacz:46x30',
 	'tacz:57x28',
-	'tacz:30x06',
+	'tacz:30_06',
 	'tacz:50ae',
 	'tacz:45_70',
 	'tacz:762x25',
@@ -346,12 +346,14 @@ global.TACZ_ENABLED_GUNS = [
 	//Pistol
 	'ulv_guns:flintlock',
 	'create_armorer:pistol_revolver_torque',
+	'create_armorer:pistol_auto_stress',
 	'applied_armorer:niklas_pistol_semi_right',
 	'applied_armorer:niklas_pistol_semi_pride',
 	'applied_armorer:niklas_pistol_double_win_win',
 	
 	//Sniper
 	'tacz:springfield1873',
+	'tacz:m700',
 	'create_armorer:sniper_semi_clockwork',
 	'applied_armorer:moritz_sniper_semi_k30',
 	
@@ -367,7 +369,8 @@ global.TACZ_ENABLED_GUNS = [
 	'tacz:db_long',
 	
 	//SMG
-	
+	'create_armorer:smg_auto_crank',
+	'applied_armorer:niklas_smg_freedom',
 	
 	//Heavy
 	'create_armorer:mg_platemag_flywheel',
@@ -380,6 +383,7 @@ global.TACZ_ENABLED_GUNS = [
 global.TACZ_ENABLED_AMMO = [
 	'tacz:12g',
 	'tacz:45_70',
+	'tacz:30_06',
 	'create_armorer:slap',
 	'create_armorer:rbapb',
 	'create_armorer:40mmhe',

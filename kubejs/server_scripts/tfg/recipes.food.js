@@ -346,9 +346,38 @@ function registerTFGFoodRecipes(event) {
 
 	//#endregion
 
+	//#region Chocolate 
+	const chocolateType = ["white_chocolate", "milk_chocolate", "dark_chocolate"]
+	const chocolateShape = ["", "_heart", "_bell", "_knife"] //"" is firmalife chocolate bar
+	const chocolatemolds = ["tfc:ceramic/ingot_mold", "tfcchannelcasting:heart_mold", "tfc:ceramic/bell_mold", "tfc:ceramic/knife_blade_mold"]
+
+	for (const ctype of chocolateType) {
+		for (const cshape of chocolateShape) {
+			processorRecipe(`${ctype}_${cshape}_melting`, 100, 16, {
+				circuit: 1,
+				itemInputs:[cshape == "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`],
+				fluidOutputs:[cshape == "" ? Fluid.of(`tfcchannelcasting:${ctype}`, 144) : Fluid.of(`tfcchannelcasting:${ctype}`, 100)],
+			})
+		}
+	}
+
+	for (const ctype of chocolateType) {	
+		for (const cshape of chocolateShape) {
+			processorRecipe(`${ctype}_${cshape}_casting`, 100, 16, {
+				fluidInputs: [cshape == "" ? Fluid.of(`tfcchannelcasting:${ctype}`, 144) : Fluid.of(`tfcchannelcasting:${ctype}`, 100)],
+				itemOutputs: [cshape == "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`],
+				itemOutputProvider: TFC.isp.of(cshape == "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`).resetFood(),
+				notConsumable: [chocolatemolds[chocolateShape.indexOf(cshape)]]
+			})
+		}
+	}
+
+	//#endregion
+
 	//#region Food preservation
 
 	const smoking_meats = Ingredient.of('#tfc:foods/raw_meats').itemIds;
+	const smoking_cheese = Ingredient.of('#firmalife:foods/cheeses').itemIds;
 	const brining_veg = Ingredient.of('#firmalife:foods/pizza_ingredients').itemIds;
 	const drying_fruits = Ingredient.of('#tfc:foods/fruits').itemIds;
 	const drying_recipes = [
@@ -374,6 +403,16 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	smoking_meats.forEach(item => {
+		processorRecipeText(`${item.replace(/:/g, "/")}/smoking`, 200, 16, "tfg.food_recipe.smoking", {
+			circuit: 6,
+			itemInputs: [item],
+			itemOutputs: [item],
+			fluidInputs: [Fluid.of('gtceu:wood_gas', 5)],
+			itemOutputProvider: TFC.isp.copyInput().addTrait("firmalife:smoked")
+		})
+	})
+
+	smoking_cheese.forEach(item => {
 		processorRecipeText(`${item.replace(/:/g, "/")}/smoking`, 200, 16, "tfg.food_recipe.smoking", {
 			circuit: 6,
 			itemInputs: [item],
@@ -782,9 +821,17 @@ function registerTFGFoodRecipes(event) {
 	})
 	
 	processorRecipe("cocoa_dust", 100, 4, {
+		circuit: 1,
 		itemInputs: ["firmalife:food/roasted_cocoa_beans"],
 		itemOutputs: ["gtceu:cocoa_dust"],
 		itemOutputProvider: TFC.isp.of("gtceu:cocoa_dust")
+	})
+
+	processorRecipe("cocoa_butter", 100, 4, {
+		circuit: 2,
+		itemInputs: ["firmalife:food/roasted_cocoa_beans"],
+		itemOutputs: ["firmalife:food/cocoa_butter"],
+		itemOutputProvider: TFC.isp.of("firmalife:food/cocoa_butter")
 	})
 
 	processorRecipe("red_grapes", 50, 8, {
@@ -1656,7 +1703,7 @@ function registerTFGFoodRecipes(event) {
 	event.replaceInput({id: 'firmalife:crafting/lasagna'},'firmalife:plant/oregano','tfg:spice/oregano_leaves');
 
 	event.recipes.tfc.advanced_shapeless_crafting(
-		TFC.itemStackProvider.of('firmalife:food/salsa').copyFood(),
+		TFC.itemStackProvider.of('5x firmalife:food/salsa').copyFood(),
 		[
 			'tfg:spice/cilantro_leaves',
 			'tfc:food/tomato',

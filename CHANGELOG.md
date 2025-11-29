@@ -1,15 +1,41 @@
 # Changelog
+
 ## [Unreleased]
+### Mod updates
+New GregTech updates, both [7.3.0](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.3.0-1.20.1) and [7.4.0](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.4.0-1.20.1). TL;DR:
+- You can use screwdrivers on drums again
+- Diluted hydrochloric acid distillation circuits have been swapped, so now it's consistent with diluted sulfuric acid
+- Large rebalancing of small and large boiler fuel. Generally speaking, small boilers are worse while large ones are better, and solid fuels are now better and liquids are worse, but if you're putting all your coke oven output into a large bronze boiler, your rates should be mostly the same as before. Blaze burner liquid fuels have been adjusted to these new values as well.
+Added TFC Gurman, which adds even more food and drink
 ### Changes
+- Many TACZ balance changes, found [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/blob/dev/tacz/TACZ_CHANGELOG.md) @BlueBoat29
 - Add shapeless p2p recipes (#2234) @SpicyNoodle5
 - Added assembler, smelting and heating recipes for firmalife ovens (#2220) @SpicyNoodle5
-- Raised burning fluid threshold from 370K to 1300K @Redeix
-- Added partial unification to the gtceu wax material @Redeix
+- Raised player-burning fluid threshold from 370K to 1300K @Redeix
+- Added partial unification to the gtceu Wax material @Redeix
+- Mars endermen can no longer pick up the wrong kind of warped/crimson sapling, and the correct kind has been added to their loot tables (#2240)
+- Cleanrooms now allow 9 door "blocks", so you can use a 3x3 Ad Astra door (#2074) @ko-lja
+- Added recycling for astikor carts (#2227) @Pyritie
+- Moved Soph Backpack pickup to ULV, adv pickup to MV and magnet to MV @CrashAndSideburns
+- Oilsands dust can now be centrifuged in the mechanical centrifuge @Pyritie
+- All oils (both the petrochem kind and the cooking kind) can now be used to fuel small boilers as well @Pyritie
+- Reduced the cost of the ME Ingredient Buffer @Pyritie
 ### Bug fixes
 - Fixed brown gravy recipe @Redeix
 - Fixed instant mac recipe requiring less cardboard than it gives back @Redeix
 - Fixed Ad Astra moon cheese nutrition values being inconsistent @Redeix
+- Fixed some quest typos @Pyritie
+- Fixed duplicate bed dyeing recipe (#2229) @Pyritie
+- Fixed Basic Hermetic Casing missing a mineable tag and loot table (#2221) @Pyritie
+- Fixed some inconsistencies with gravel to sand recipe tiers (#2292) @Pyritie
+- Fixed the thorium-based glowing ink recipe (#2294) @Pyritie
+- Fixes crafting table output amount for salsa compared to the food processor (#2295) @Pyritie
+- Added missing food processor recipe for cocoa butter @Pyritie
+- Fixed recipe conflict with Epichlorohydrin and Sodium Hypochlorite (#2287) @Pyritie
+- Fixed summoned pet endermen not being able to survive in space or other planets @Pyritie
 ### Translation updates
+- Chinese (simplified) @jmecn
+- Japanese @sakura-gondra
 
 ## [0.11.8] - 19-11-2025
 ### Changes

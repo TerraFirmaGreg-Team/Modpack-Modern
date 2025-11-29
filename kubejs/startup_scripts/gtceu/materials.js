@@ -10,6 +10,9 @@ const registerGTCEuMaterialModification = (event) => {
 	//const TFGPropertyKey = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGPropertyKeys')
 	const $TFC_PROPERTY = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.properties.TFCProperty')
 	const $ORE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty')
+	const $INGOT_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty')
+	const $DustProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.DustProperty');
+	const $BLAST_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty')
 	const $ITEM_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.ItemPipeProperties')
 	const $FLUID_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties')
 	const $HAZARD_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.HazardProperty')
@@ -211,6 +214,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Malachite.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Sphalerite.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Tetrahedrite.addFlags(HAS_SMALL_TFC_ORE);
+	GTMaterials.Chromite.addFlags(HAS_SMALL_TFC_ORE);
 	//
 	//        /* Имеют маленькие чистые куски руды TFC */
 	GTMaterials.Copper.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
@@ -295,6 +299,12 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Plutonium239.addFlags(GENERATE_ROD, NO_ORE_PROCESSING_TAB, NO_ORE_SMELTING)
 	GTMaterials.Thorium.addFlags(NO_ORE_SMELTING)
 
+	// Unhiding elements
+	GTMaterials.Zirconium.addFlags(GENERATE_FINE_WIRE, GENERATE_PLATE, NO_ORE_SMELTING);
+	GTMaterials.Zirconium.setProperty(PropertyKey.INGOT, new $INGOT_PROPERTY());
+	GTMaterials.Zirconium.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4200, 'mid', GTValues.VA[GTValues.EV], 1300, GTValues.VA[GTValues.HV], 14.7*20));
+
+	// Tools
 	GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 8, 1, [
 		GTToolType.AXE,
 		GTToolType.HARD_HAMMER,
@@ -408,6 +418,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.GraniteRed.setMaterialARGB(0x974B3C)
 	GTMaterials.GraniteRed.setMaterialSecondaryARGB(0x632117)
 	GTMaterials.RhodiumPlatedPalladium.setMaterialARGB(0xFFC2EC)
+	GTMaterials.Rhenium.setMaterialARGB(0x8cb07f)
+	GTMaterials.Rhenium.setMaterialSecondaryARGB(0x9ccbd6)
 
 	
 	global.MINECRAFT_DYE_NAMES.forEach(colorName => {
@@ -421,6 +433,9 @@ const registerGTCEuMaterialModification = (event) => {
 	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
 	rose_quartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
+
+	let zirconium_diboride = TFGHelpers.getMaterial('zirconium_diboride');
+	zirconium_diboride.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4500, "high", GTValues.VA[GTValues.EV], 2700, GTValues.VA[GTValues.HV], 12.5*20));
 	
 	GTMaterials.CertusQuartz.setComponents('1x unknown', '1x silicon', '2x oxygen')
 	GTMaterials.GraniteRed.setComponents([])

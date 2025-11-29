@@ -23,7 +23,6 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/logistics/content_observer' },
 			{ id: 'create:crafting/logistics/stockpile_switch' },
 			{ id: 'create:crafting/kinetics/nixie_tube' },
-			{ id: 'create:crafting/kinetics/analog_lever' },
 			{ id: 'create:crafting/kinetics/placard' },
 			{ id: 'create:crafting/logistics/pulse_repeater' },
 			{ id: 'create:crafting/logistics/pulse_extender' },
@@ -679,6 +678,30 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(4)
 		.addMaterialInfo(true)
+
+    // Shadow steel casing
+    event.recipes.createItemApplication(['create:shadow_steel_casing'], ['#forge:stripped_logs', '#forge:plates/black_steel'])
+    		.id('tfg:create/item_application/shadow_steel_casing')
+
+    event.recipes.gtceu.assembler('tfg:create/shadow_steel_casing')
+        .itemInputs('#forge:stripped_logs', '#forge:plates/black_steel')
+        .circuit(11)
+        .itemOutputs('create:shadow_steel_casing')
+        .duration(50)
+        .EUt(4)
+        .addMaterialInfo(true)
+
+    // Refined radiance casing
+    event.recipes.createItemApplication(['create:refined_radiance_casing'], ['#forge:stripped_logs', 'gtceu:glowstone_plate'])
+            .id('tfg:create/item_application/refined_radiance_casing')
+
+    event.recipes.gtceu.assembler('tfg:create/refined_radiance_casing')
+        .itemInputs('#forge:stripped_logs', 'gtceu:glowstone_plate')
+        .circuit(11)
+        .itemOutputs('create:refined_radiance_casing')
+        .duration(50)
+        .EUt(4)
+        .addMaterialInfo(true)
 
 	// Корпус поезда
 	event.recipes.createItemApplication(['create:railway_casing'], ['create:brass_casing', '#forge:plates/black_steel'])

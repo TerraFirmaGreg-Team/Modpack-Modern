@@ -1,0 +1,82 @@
+{
+    "__comment__": "This file was automatically created by mcresources",
+    "name": "玻璃工艺",
+    "category": "tfc:mechanics",
+    "icon": "tfc:silica_glass_bottle",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "玻璃工艺是把沙子变为玻璃的艺术。首先，你必须决定制作哪一种$(thing)玻璃原料$()：$(br)$(br) 1、$(thing)二氧化硅玻璃$()：由白沙制成。$(br) 2、$(thing)赤铁矿玻璃$()：由黄沙、红沙或粉红沙制成。$(br) 3、$(thing)橄榄岩玻璃$()：由绿沙或棕沙制成。$(br) 4、$(thing)火山岩玻璃$()：由黑沙制成。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "二氧化硅玻璃原料",
+            "recipe": "tfc:crafting/silica_glass_batch",
+            "text": "玻璃原料除了需要对应颜色的沙子以外，还需要准备$(l:mechanics/glassworking#lime)石灰粉$()和任意一种$(l:mechanics/glassworking#potash)钾盐添加物$()。"
+        },
+        {
+            "type": "patchouli:smelting",
+            "anchor": "lime",
+            "recipe": "tfg:smelting/lime",
+            "text": "$(thing)石灰粉$()是制作玻璃原料的必要原料之一，可以通过$(l:mechanics/heating)加热$()$(l:mechanics/flux)助焊剂$()获得。"
+        },
+        {
+            "type": "patchouli:smelting",
+            "anchor": "potash",
+            "recipe": "tfg:smelting/dried_seaweed_to_soda",
+            "recipe2": "tfg:smelting/dried_kelp_to_soda",
+            "text": "制作玻璃原料还需要加入一些$(thing)钾盐$()，可以选用$(thing)海草灰$()（通过加热$(thing)干海草$()或$(thing)海带$()获得）或$(l:the_world/ores_and_minerals#saltpeter)硝石$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "进行玻璃加工前，还需要准备多种工具：$(br)$(li)一支用来$(thing)吹气$()和$(thing)拉伸$()的$(l:mechanics/glassworking#blowpipe)吹风管$()；$(li)一支用来$(thing)平整$()的$(l:mechanics/glassworking#paddle)玻璃压板$()；$(li)一对用来$(thing)挤压$()的$(l:mechanics/glassworking#jacks)夹钳$()；$(li)和一把用来$(thing)锯割$()的$(l:mechanics/glassworking#saw)宝石锯$()。",
+            "title": "加工工具"
+        },
+        {
+            "type": "tfc:knapping_recipe",
+            "anchor": "blowpipe",
+            "recipe": "tfc:clay_knapping/blowpipe",
+            "text": "最重要的工具是$(thing)吹风管$()。通过黏土$(thing)捏制$()制作出模具后在烧制成$(thing)陶瓷吹风管$()即可。"
+        },
+        {
+            "type": "tfc:anvil_recipe",
+            "recipe": "tfc:anvil/blowpipe",
+            "text": "陶瓷吹风管易碎，使用时有概率破损。更可靠的选择是用$(thing)黄铜杆$()在砧上$(l:mechanics/anvils#working)锻造$()一支吹风管。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "paddle",
+            "recipe": "tfc:crafting/paddle",
+            "text": "$(thing)玻璃压板$()可以用来将玻璃$(thing)压平$()，可用木材制作。"
+        },
+        {
+            "type": "tfc:welding_recipe",
+            "anchor": "jacks",
+            "recipe": "tfc:welding/jacks",
+            "text": "$(thing)玻璃夹钳$()可进行$(thing)挤压$()，需要将两根黄铜杆焊接在一起。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "saw",
+            "recipe": "tfc:crafting/gem_saw",
+            "text": "$(thing)宝石锯$()是用来执行$(thing)锯割$()操作的。宝石锯还可以用来挖掘$(thing)玻璃块$()和$(thing)玻璃板$()而不使其损坏。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "首先，将装有玻璃原料的吹风管加热到至少$(4)$(bold)淡红$()。随后将吹管置于$(thing)副手$()，持续按住$(item)$(k:key.use)$()以执行每个步骤$()。$(br)使用$(item)$(k:key.swapOffhand)$()可将炽热吹管快速移至副手。$(br2)$(bold)吹气$()$(br)手持$(thing)吹管$()时保持正对前方视角使用。$(br2)$(bold)拉伸$()$(br)手持$(thing)吹管$()时保持朝向正下方视角使用。",
+            "title": "如何制作玻璃"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)平整$()$(br)副手持有$(l:mechanics/glassworking#paddle)玻璃压板$()时使用$(thing)吹风管$()。$(br2)$(bold)挤压$()$(br)副手持有$(l:mechanics/glassworking#jacks)玻璃夹钳$()时使用$(thing)吹风管$()。$(br2)$(bold)锯割$()$(br)副手持有$(l:mechanics/glassworking#saw)宝石锯$()时使用$(thing)吹风管$()。$(br2)$(bold)翻转$()$(br)副手持有$(l:mechanics/weaving#wool_cloth)羊毛布$()时使用$(thing)吹风管$()。"
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "tfc:powder/lime": 2,
+        "tfc:powder/soda_ash": 3,
+        "tfc:paddle": 7,
+        "tfc:jacks": 8,
+        "tfc:gem_saw": 9
+    }
+}

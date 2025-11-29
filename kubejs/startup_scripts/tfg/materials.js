@@ -38,6 +38,16 @@ const registerTFGMaterials = (event) => {
 		.color(0xfbdf82)
 		.secondaryColor(0xff9d2e)
 
+	// Ores
+
+	event.create('tarkianite')
+		.ore()
+		.components('1x copper', '1x iron', '4x rhenium', '4x molybdenum', '8x sulfur')
+		.color(0x8bb054)
+		.secondaryColor(0x3d8021)
+		.iconSet(GTMaterialIconSet.getByName('tfc_emerald'))
+		.addOreByproducts('sulfur', 'rhenium', 'molybdenum')
+
 	// Cooking
 
 	event.create('lactose')
@@ -192,7 +202,7 @@ const registerTFGMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xfeff5d)
 
-	//#endregion
+	
 	event.create('liquid_carbon_dioxide')
 		.liquid(100) //Not realistic but I want it to be cryogenic
 		.components('1x carbon', '2x oxygen')
@@ -534,6 +544,7 @@ const registerTFGMaterials = (event) => {
 		.flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
 		.components('7x gallium', '2x tin', '1x zinc')
 		.color('0x34cfeb')
+	// #endregion
 	
 	// #region holder materials
 	//     These allow us to give material components to non-material items
@@ -553,8 +564,58 @@ const registerTFGMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES, GTMaterialFlags.EXPLOSIVE)
 		.macerateInto('gtceu:polycaprolactam')
 		.color(0x000000)
+	// #endregion
 
-	//#endregion
+	// #region Zirconium
+	event.create('tfg:zircon')
+		.gem()
+		.color(0xF1B6B0)
+		.secondaryColor(0x4BABC6)
+		.iconSet('gem_horizontal')
+		.components('1x zirconium', '1x silicon', '4x oxygen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:zirconium_tetrachloride')
+		.dust()
+		.color(0xF1B6B0)
+		.secondaryColor(0x146946)
+		.iconSet('rough')
+		.components('1x zirconium', '4x chlorine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:silicon_tetrachloride')
+		.liquid()
+		.color(0x707078)
+		.secondaryColor(0x146946)
+		.components('1x silicon', '4x chlorine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:zirconium_bromide')
+		.dust()
+		.color(0xBA776F)
+		.secondaryColor(0x146985)
+		.iconSet('shiny')
+		.components('1x zirconium', '4x bromine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:zirconium_diboride')
+		.ingot()
+		.color(0xFADED2)
+		.secondaryColor(0x4FA883)
+		.iconSet('shiny')
+		.components('1x zirconium', '2x boron')
+		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL)
+
+	event.create('tfg:boron_carbide')
+		.ingot()
+		.iconSet('dull')
+		.color(0x42705D)
+		.components('4x boron', '1x carbon')
+		.blastTemp(3041, "mid", GTValues.VA[GTValues.HV], 1500)
+		.flags(GTMaterialFlags.GENERATE_PLATE)
+
+	// #endregion
+
 	//#region Food Materials(?)
 
 	event.create('tfg:sodium_dihydrogen_citrate')

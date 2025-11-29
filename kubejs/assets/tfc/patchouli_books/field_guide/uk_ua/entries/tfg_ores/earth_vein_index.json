@@ -24,12 +24,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)Опал і Гранат$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)Редстоун, Кіновар і Рубін$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Сапфір і Альмадін$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)Селітра та Електротин$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)Сірка та Пірит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_beryllium)Смарагд і Берилій$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Солі та Бура$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Сподумен та Лепідоліт$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_silver)Срібло, Гален і Свинець$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)Стеатит, Тальк і Трона$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Сфалерит і Пірит$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Сфалерит і Сірка$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)Тетраедрит (Звичайний)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Тетраедрит (Поверхня)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)Опал і Гранат$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)Редстоун, Кіновар і Рубін$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Сапфір і Альмадін$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)Селітра та Електротин$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)Сірка та Пірит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_beryllium)Смарагд і Берилій$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Солі та Бура$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Сподумен та Лепідоліт$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_silver)Срібло, Гален і Свинець$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)Стеатит, Тальк і Трона$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Сфалерит і Пірит$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Сфалерит і Сірка$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Таркіаніт та Нафтові піски$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)Тетраедрит (Звичайний)$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Топаз і Халькоцит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)Ураніт & Пітчбленд$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_copper)Халькопірит та Реальгар$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Хроміт і Магнетит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Шеєліт та Вольфрам$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sheldonite)Шелдоніт і Борніт$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Тетраедрит (Поверхня)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Топаз і Халькоцит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)Ураніт & Пітчбленд$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_copper)Халькопірит та Реальгар$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Хроміт і Магнетит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Шеєліт та Вольфрам$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sheldonite)Шелдоніт і Борніт$()$()",
       "type": "patchouli:text"
     },
     {
@@ -3276,6 +3276,98 @@
       "enable_visualize": false,
       "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Розплавляється в$(): Чавун$(br)$(thing)Формула$(): FeS₂",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Рідкість$(): 150$(br)$(thing)Щільність$(): 0.35$(br)$(thing)Тип$(): Трубна вена$(br)$(thing)Y$(): 20 — 120$(br)$(thing)Висота$(): 60$(br)$(thing)Радіус$(): 10$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Андезит, Аргиліт, Аспідний сланець, Базальт, Вапняк, Габро, Глинистий сланець, Гнейс, Граніт, Дацит, Діорит, Доломіт, Кварцит, Конгломерат, Крейда, Кременистий сланець, Мармур, Ріоліт, Філіт, Шиферний сланець",
+      "title": "Таркіаніт та Нафтові піски",
+      "type": "patchouli:text",
+      "anchor": "normal_tarkianite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Нафтові піски",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/oilsands"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Джерело$(): Свободи \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Таркіаніт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tarkianite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Джерело$(): Реній, Молібденум$(br)$(thing)Формула$(): CuFeRe₄Mo₄S₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Бура",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/borax"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Джерело$(): Натрію, Бору$(br)$(thing)Формула$(): Na₂B₄(H₂O)₁₀O₇",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Трона",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/trona"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Джерело$(): Натрію$(br)$(thing)Формула$(): Na₃C₂H(H₂O)₂O₆",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",

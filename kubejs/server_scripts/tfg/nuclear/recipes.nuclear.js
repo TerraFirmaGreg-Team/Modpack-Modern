@@ -57,19 +57,19 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:mars')
 
-	/* REMOVE FOR VENUS COMMENTED OUT
 	event.recipes.gtceu.nuclear_fuel_factory('tfg:tbu_232_rod')
 		.inputFluids(Fluid.of('gtceu:nuclear_waste', 32000))
-		.itemInputs('#forge:ingots/thorium_232', 'tfg:empty_rod')
-		.itemOutputs('tfg:tbu-232_rod')
+		.itemInputs('2x #forge:rods/thorium_232', 'tfg:empty_rod')
+		.itemOutputs('tfg:tbu_232_rod')
 		.duration(20*300)
 		.EUt(GTValues.V[GTValues.IV])
-	*/
-	event.recipes.gtceu.lathe('tfg:empty_rod')
-		.itemInputs('gtceu:cobalt_large_restrictive_item_pipe')
+
+	event.recipes.gtceu.assembler('tfg:empty_rod')
+		.itemInputs('3x gtceu:cobalt_large_restrictive_item_pipe', '3x gtceu:lead_huge_fluid_pipe')
 		.itemOutputs('tfg:empty_rod')
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true)
 
 	//#endregion
 
@@ -215,15 +215,6 @@ function registerTFGNuclearRecipes(event) {
 
 	//#region Fission Reactor
 
-	// Recipe for Thorium Reactor Just keeping it in case we got mod issues
-/*	event.recipes.gtceu.fission_reactor('thorium_uranium_waste')
-		.itemInputs('#forge:bolts/thorium_rod')
-		.inputFluids(Fluid.of('minecraft:water', 100))
-		.outputFluids(Fluid.of('gtceu:dense_steam', 100))
-		.outputFluids(Fluid.of('gtceu:uranium_waste', 20))
-		.duration(20*50)
-		.EUt(32)*/
-
 	// Thorium Fission
 
     event.recipes.deafission.fission_reactor_fuel('tfg:thorium')
@@ -244,15 +235,6 @@ function registerTFGNuclearRecipes(event) {
         .addData("coolant_heat_per_tick", 1)
 		.duration(1);
 
-	// Recipe for Uranium Reactor Just keeping it in case we got mod issues
-/*	event.recipes.gtceu.fission_reactor('uranium_radioactive')
-		.itemInputs('#forge:bolts/uranium_rod')
-		.inputFluids(Fluid.of('tfg:heavy_water', 75))
-		.outputFluids(Fluid.of('gtceu:radioactive_steam', 75))
-		.outputFluids(Fluid.of('gtceu:radioactive_waste', 50))
-		.duration(20*100)
-		.EUt(32)*/
-
 	// Uranium Fission
 
     event.recipes.deafission.fission_reactor_fuel('tfg:uranium')
@@ -271,15 +253,6 @@ function registerTFGNuclearRecipes(event) {
         .addData("coolant_heat_per_tick", 1)
 		.duration(1)
 		.dimension('ad_astra:mars')
-
-	// Recipe for Plutonium Reactor Just keeping it in case we got mod issues
-/*	event.recipes.gtceu.fission_reactor('plutonium_irradiated')
-		.itemInputs('#forge:bolts/plutonium_rod')
-		.inputFluids(Fluid.of('tfg:heavy_water', 2000))
-		.outputFluids(Fluid.of('gtceu:irradiated_steam', 2000))
-		.outputFluids(Fluid.of('gtceu:tritiated_water', 50))
-		.duration(20*100)
-		.EUt(32)*/
 
 	// Plutonium Fission
 
@@ -300,15 +273,23 @@ function registerTFGNuclearRecipes(event) {
 		.duration(1)
 		.dimension('ad_astra:mars')
 
-	// Fission Reactor for Energy Just keeping it in case we got mod issues
+	// TBU Fission
 /*
-	event.recipes.gtceu.fission_reactor('tbu_reactor')
-		.itemInputs('tfg:tbu_232_rod')
-		.inputFluids(Fluid.of('gtceu:flibe', 1000))
-		.outputFluids(Fluid.of('gtceu:hot_flibe', 1000))
-		.outputFluids(Fluid.of('gtceu:nuclear_waste', 500))
-		.duration(20*100)
-		.EUt(32)
+    event.recipes.deafission.fission_reactor_fuel('kubejs:fuelcell_custom_x1')
+        .itemInputs('tfg:tbu_232_rod')
+        .itemOutputs('minecraft:dirt')
+        // Mandatory by GT; no real impact. Use this as a convention:
+        // durability / const / heatValue
+        .duration(10000 / 0.4 / 2)
+		.dimension('ad_astra:mars');
+
+	event.recipes.deafission.fission_reactor_coolant('tfg:tbu_coolant')
+        .itemInputs(Ingredient.of([
+            'tfg:tbu_232_rod']))
+        .inputFluids(Fluid.of('tfg:heavy_water', 100))
+        .outputFluids(Fluid.of('gtceu:dense_steam', 100))
+        .addData("coolant_heat_per_tick", 12.34)
+        .duration(1000);
 */
 	//#endregion
 
@@ -346,7 +327,7 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20*9)
 
-	// Graphite Moderator Line
+	//#region Graphite Moderator Line
 
 	const $ChanceLogic = Java.loadClass('com.gregtechceu.gtceu.api.recipe.chance.logic.ChanceLogic')
 
@@ -461,6 +442,7 @@ function registerTFGNuclearRecipes(event) {
 	//#endregion
 	
 	//#region Cooling Tower
+	/*
 	event.recipes.gtceu.assembler('tfg:ostrum_carbon_casing')
 		.itemInputs('2x #forge:plates/ostrum', '2x #forge:plates/titanium_carbide', '#forge:dense_plates/hsla_steel', '#forge:frames/black_steel')
 		.itemOutputs('2x tfg:casings/machine_casing_ostrum_carbon')
@@ -483,6 +465,8 @@ function registerTFGNuclearRecipes(event) {
 		.circuit(6)
 		.EUt(GTValues.VA[GTValues.IV] * 2)
 		.duration(20*4)
+	*/
+
 	/*
 	event.shaped('tfg:cooling_tower', [
 		'ABA',
@@ -496,8 +480,15 @@ function registerTFGNuclearRecipes(event) {
 		E: 'gtceu:iv_fluid_regulator'
 	}).id('tfg:shaped/cooling_tower')
 	*/
-	//#endregion
 
+	//#endregion
+	/*
+    event.recipes.deafission.hb_import('tfg:dense_steam')
+        .inputFluids(Fluid.of('gtceu:dense_steam', 100))
+        .outputFluids(Fluid.of('minecraft:water', 10))
+        .blastFurnaceTemp(4000)
+        .addData("hb_energy", 100)
+	*/
 	//#region FLiBe Line - SCRAP FROM MARS TO VENUS
 
 	/*
@@ -709,5 +700,7 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(GTValues.VA[GTValues.HV])
 
 	*/
+
+		
 
 }
