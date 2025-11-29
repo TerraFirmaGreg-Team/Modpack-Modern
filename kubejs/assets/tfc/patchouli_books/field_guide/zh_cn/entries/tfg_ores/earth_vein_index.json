@@ -14,23 +14,115 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)晶质铀矿, 沥青铀矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_monazite)氟碳镧铈矿, 独居石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_oilsands)油砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)煤炭$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)白钨矿, 钨酸锂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)皂石, 滑石, 天然碱$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)盐, 硼砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)石榴石, 锡石矿砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gypsum)石膏, 方解石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)石英$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)石墨, 钻石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_basaltic_sands)矿砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)硅镁镍矿, 辉钴矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)硝石, 蓝石$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)塔基安石, 油砂$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)晶质铀矿, 沥青铀矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_monazite)氟碳镧铈矿, 独居石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_oilsands)油砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)煤炭$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)白钨矿, 钨酸锂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)皂石, 滑石, 天然碱$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)盐, 硼砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)石榴石, 锡石矿砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gypsum)石膏, 方解石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)石英$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)石墨, 钻石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_basaltic_sands)矿砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)硅镁镍矿, 辉钴矿$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)硫, 黄铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sheldonite)硫铂矿, 斑铜矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_magnetite)磁铁矿, 钒$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_apatite)磷灰石, 烧绿石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_amethyst)紫水晶, 石榴石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)红石, 朱砂, 红宝石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_beryllium)绿宝石, 铍矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_olivine)膨润土, 橄榄石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)蓝宝石, 铁铝榴石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)蓝晶石, 云母, 铝土矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)蛋白石, 石榴石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_limonite)褐铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_hematite)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_hematite)赤铁矿, 针铁矿, 红宝石$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)硝石, 蓝石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)硫, 黄铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sheldonite)硫铂矿, 斑铜矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_magnetite)磁铁矿, 钒$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_apatite)磷灰石, 烧绿石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_amethyst)紫水晶, 石榴石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)红石, 朱砂, 红宝石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_beryllium)绿宝石, 铍矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_olivine)膨润土, 橄榄石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)蓝宝石, 铁铝榴石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)蓝晶石, 云母, 铝土矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)蛋白石, 石榴石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_limonite)褐铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_hematite)赤铁矿, 褐铁矿$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_bismuthinite)辉铋矿 (地表)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_bismuthinite)辉铋矿 (普通)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_gold)金矿 (深层)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)金矿, 褐铁矿, 赤铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_limonite)针铁矿, 孔雀石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)钼铅矿, 辉钼矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)铜矿, 黄铜矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)铬铁矿, 磁铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_silver)银矿, 方铅矿, 铅矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)锂辉石, 锂云母$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cassiterite)锡石矿 (地表)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_cassiterite)锡石矿 (普通)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_manganese)锰矿, 钽矿$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)闪锌矿, 硫$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_hematite)赤铁矿, 针铁矿, 红宝石$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuthinite)辉铋矿 (地表)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_bismuthinite)辉铋矿 (普通)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_gold)金矿 (深层)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)金矿, 褐铁矿, 赤铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_limonite)针铁矿, 孔雀石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)钼铅矿, 辉钼矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)铜矿, 黄铜矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)铬铁矿, 磁铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_silver)银矿, 方铅矿, 铅矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)锂辉石, 锂云母$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cassiterite)锡石矿 (地表)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_cassiterite)锡石矿 (普通)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_manganese)锰矿, 钽矿$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)闪锌矿, 黄铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lapis)青金石, 蓝金石, 方钠石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)黄玉, 辉铜矿$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_copper)黄铜矿, 雄黄$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)黝铜矿 (地表)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)黝铜矿 (普通)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)闪锌矿, 硫$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)闪锌矿, 黄铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lapis)青金石, 蓝金石, 方钠石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)黄玉, 辉铜矿$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_copper)黄铜矿, 雄黄$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)黝铜矿 (地表)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)黝铜矿 (普通)$()$()",
       "type": "patchouli:text"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)稀有度$(): 150$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 20 — 120$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 10$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 安山岩, 板岩, 流纹岩, 燧石, 片岩, 片麻岩, 玄武岩, 白云岩, 白垩岩, 石灰岩, 石英岩, 砾岩, 粘土岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
+      "title": "塔基安石, 油砂",
+      "type": "patchouli:text",
+      "anchor": "normal_tarkianite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "油砂",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/oilsands"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 35%$(br)$(thing)来源$(): 自由 \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "塔基安石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tarkianite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 35%$(br)$(thing)来源$(): 铼, 钼$(br)$(thing)化学式$(): CuFeRe₄Mo₄S₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "硼砂",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/borax"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 20%$(br)$(thing)来源$(): 钠, 硼$(br)$(thing)化学式$(): Na₂B₄(H₂O)₁₀O₇",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "天然碱",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/trona"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 10%$(br)$(thing)来源$(): 钠$(br)$(thing)化学式$(): Na₃C₂H(H₂O)₂O₆",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:empty",

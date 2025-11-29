@@ -38,6 +38,16 @@ const registerTFGMaterials = (event) => {
 		.color(0xfbdf82)
 		.secondaryColor(0xff9d2e)
 
+	// Ores
+
+	event.create('tarkianite')
+		.ore()
+		.components('1x copper', '1x iron', '4x rhenium', '4x molybdenum', '8x sulfur')
+		.color(0x8bb054)
+		.secondaryColor(0x3d8021)
+		.iconSet(GTMaterialIconSet.getByName('tfc_emerald'))
+		.addOreByproducts('sulfur', 'rhenium', 'molybdenum')
+
 	// Cooking
 
 	event.create('lactose')
@@ -192,7 +202,7 @@ const registerTFGMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xfeff5d)
 
-	//#endregion
+	
 	event.create('liquid_carbon_dioxide')
 		.liquid(100) //Not realistic but I want it to be cryogenic
 		.components('1x carbon', '2x oxygen')

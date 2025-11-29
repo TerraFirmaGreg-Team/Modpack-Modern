@@ -2543,7 +2543,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 100%$(br)$(thing)Used for$(): Fertiliser$(br)$(thing)Formula$(): KCl",
+      "text": "$(thing)Percentage$(): 100%$(br)$(thing)Used for$(): Fertilizer$(br)$(thing)Formula$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
