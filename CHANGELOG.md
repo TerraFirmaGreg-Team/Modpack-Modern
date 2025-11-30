@@ -19,6 +19,8 @@ Added TFC Gurman, which adds even more food and drink
 - Moved Soph Backpack pickup to ULV, adv pickup to MV and magnet to MV @CrashAndSideburns
 - Oilsands dust can now be centrifuged in the mechanical centrifuge @Pyritie
 - All oils (both the petrochem kind and the cooking kind) can now be used to fuel small boilers as well @Pyritie
+- Reduced the cost of the ME Ingredient Buffer @Pyritie
+- Renamed Blubber to Animal Fat and added it to the drop tables of more animals (pigs drop a fair bit, orcas drop a ton). Renamed Fish Oil to Tallowate since you can turn animal fat into tallow into fish oil (now tallowate). From there you can turn it into biodiesel! @Pyritie
 ### Bug fixes
 - Fixed brown gravy recipe @Redeix
 - Fixed instant mac recipe requiring less cardboard than it gives back @Redeix
@@ -31,6 +33,7 @@ Added TFC Gurman, which adds even more food and drink
 - Fixes crafting table output amount for salsa compared to the food processor (#2295) @Pyritie
 - Added missing food processor recipe for cocoa butter @Pyritie
 - Fixed recipe conflict with Epichlorohydrin and Sodium Hypochlorite (#2287) @Pyritie
+- Fixed summoned pet endermen not being able to survive in space or other planets @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra

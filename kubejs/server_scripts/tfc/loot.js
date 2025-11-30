@@ -153,7 +153,9 @@ function registerTFCLoots(event) {
 	event.addEntityLootModifier('tfc:bongo')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([2, 4], ['tfc:food/venison'])
-
+		
+	event.addEntityLootModifier('tfc:caribou')
+		.addWeightedLoot([1, 3], ['tfc:blubber'])
 	event.addEntityLootModifier('tfc:caribou')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([3, 5], ['tfc:food/venison'])
@@ -169,6 +171,14 @@ function registerTFCLoots(event) {
 	event.addEntityLootModifier('tfc:deer')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([2, 4], ['tfc:food/venison'])
+		
+	event.addEntityLootModifier('tfc:dolphin')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addWeightedLoot([5, 12], ['tfc:blubber'])
+		.addWeightedLoot([1, 5], ['minecraft:bone'])
+	event.addEntityLootModifier('tfc:dolphin')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([2, 6], ['tfc:blubber'])
 
 	event.addEntityLootModifier('tfc:donkey')
 		.matchMainHand('#forge:tools/butchery_knives')
@@ -198,14 +208,25 @@ function registerTFCLoots(event) {
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([7, 10], ['tfc:food/horse_meat'])
 
+	event.addEntityLootModifier('tfc:manatee')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addWeightedLoot([5, 12], ['tfc:blubber'])
+		.addWeightedLoot([1, 5], ['minecraft:bone'])
+	event.addEntityLootModifier('tfc:manatee')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([2, 6], ['tfc:blubber'])
+
 	event.addEntityLootModifier('tfc:moose')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([5, 10], ['tfc:food/venison'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
 
 	event.addEntityLootModifier('tfc:mule')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([7, 10], ['tfc:food/horse_meat'])
-
+		
+	event.addEntityLootModifier('tfc:musk_ox')
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
 	event.addEntityLootModifier('tfc:musk_ox')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([7, 10], ['tfc:food/mutton'])
@@ -219,8 +240,19 @@ function registerTFCLoots(event) {
 		.addWeightedLoot([1, 2], ['tfc:food/pheasant'])
 
 	event.addEntityLootModifier('tfc:pig')
+		.addWeightedLoot([3, 6], ['tfc:blubber'])
+	event.addEntityLootModifier('tfc:pig')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([5, 7], ['tfc:food/pork'])
+		.addWeightedLoot([1, 3], ['tfc:blubber'])
+
+	event.addEntityLootModifier('tfc:orca')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addWeightedLoot([8, 20], ['tfc:blubber'])
+		.addWeightedLoot([3, 7], ['minecraft:bone'])
+	event.addEntityLootModifier('tfc:orca')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([4, 10], ['tfc:blubber'])
 
 	event.addEntityLootModifier('tfc:quail')
 		.matchMainHand('#forge:tools/butchery_knives')
