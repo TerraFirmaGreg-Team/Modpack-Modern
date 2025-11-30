@@ -623,7 +623,7 @@ function registerTFCMaterialsRecipes(event) {
 				}
 
 				// Nugget
-				let nuggetItem = ChemicalHelper.get(TagPrefix.nugget, material, 6)
+				let nuggetItem = ChemicalHelper.get(TagPrefix.nugget, material, 9)
 				if (!nuggetItem.isEmpty()) {
 
 					event.recipes.tfc.heating(`#forge:nuggets/${material.getName()}`, tfcProperty.getMeltTemp())

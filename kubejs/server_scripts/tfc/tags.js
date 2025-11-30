@@ -485,9 +485,6 @@ function registerTFCBlockTags(event) {
     });
 
     event.add('tfc:can_be_snow_piled', 'tfc:groundcover/feather');
-
-    event.add('tfcambiental:hot_stuff', 'tfc:pot');
-    event.add('tfcambiental:hot_stuff', 'tfc:grill');
 }
 
 /** @param {TagEvent.Fluid} event */
@@ -706,6 +703,8 @@ function registerTFCFluidTags(event) {
     // Can use only neutral fluids.
     event.add('tfc:usable_in_barrel', '#forge:neutral_fluids');
     event.add('tfc:usable_in_wooden_bucket', '#forge:neutral_fluids');
+    // Ceramic jugs and glass bottles
+    event.add('tfc:usable_in_jug', '#forge:neutral_fluids');
     event.add('firmalife:usable_in_mixing_bowl', '#forge:neutral_fluids');
 
 	// All fluids are given the '#tfg:not_solid' tag incase we have a use for them regardless of state.
@@ -788,4 +787,5 @@ function registerTFCPlacedFeatures(event) {
     // Other decoration
     event.add("tfc:in_biome/underground_decoration", "tfg:glow_lichen");
     event.add("tfc:in_biome/underground_decoration", "tfg:earth/sulfur_patch");
+    event.add("tfc:in_biome/underground_decoration", "tfg:earth/oil_spout");
 }

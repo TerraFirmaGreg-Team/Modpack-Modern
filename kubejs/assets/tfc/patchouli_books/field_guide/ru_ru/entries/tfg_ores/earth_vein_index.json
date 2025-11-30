@@ -3160,30 +3160,10 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 150$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): трубчатая жила$(br)$(thing)Y-уровень$(): 20 — 120$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 10$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец",
+      "text": "$(thing)Редкость$(): 140$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): трубчатая жила$(br)$(thing)Y-уровень$(): 20 — 120$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 10$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец",
       "title": "Таркианит и Нефтеносный песок",
       "type": "patchouli:text",
       "anchor": "normal_tarkianite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Нефтеносный песок",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/oilsands"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Хромит$(): топливо",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
@@ -3203,6 +3183,26 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Хромит$(): Рений, Молибден$(br)$(thing)Формула$(): CuFeRe₄Mo₄S₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Нефтеносный песок",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/oilsands"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Хромит$(): топливо",
       "type": "patchouli:multiblock"
     },
     {
