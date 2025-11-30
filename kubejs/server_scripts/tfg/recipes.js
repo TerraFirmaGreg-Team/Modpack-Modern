@@ -20,6 +20,7 @@ const registerTFGRecipes = (event) => {
 	registerTFGStoneDustRecipes(event)
 	registerTFGNuclearRecipes(event)
 	registerTFGNuclearComponentsRecipes(event)
+	registerTFGNOstrumRecipes(event)
 	registerTFGBiochemRecipes(event)
 	registerTFGSpaceOres(event)
 }

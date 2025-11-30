@@ -448,7 +448,7 @@ const registerGTCEuMachines = (event) => {
 			'gtceu:block/multiblock/distillation_tower')
 
 	// Extraterrestrial Ore Fabricator
-/*
+
 	event.create('ostrum_linear_accelerator', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('ostrum_linear_accelerator')
@@ -501,7 +501,7 @@ const registerGTCEuMachines = (event) => {
 		.workableCasingModel(
 			'tfg:block/casings/machine_casing_mars',
 			'gtceu:block/machines/thermal_centrifuge')
-*/
+
 	//#region Power Rework
 
 	// Coal Liquefaction Tower
@@ -519,7 +519,8 @@ const registerGTCEuMachines = (event) => {
 			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
 			.where('A', Predicates.blocks('gtceu:secure_maceration_casing'))
 			.where('B', Predicates.blocks('gtceu:solid_machine_casing').setMinGlobalLimited(4)
-				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(2)))
+				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(2))
+				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1)))
 			.where('C', Predicates.blocks('gtceu:solid_machine_casing')
 				.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(2))
 				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1).setMaxGlobalLimited(2).setPreviewCount(1))
