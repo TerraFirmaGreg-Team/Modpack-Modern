@@ -38,6 +38,7 @@ Added TFC Gurman, which adds even more food and drink
 - Fixed recipe conflict with Epichlorohydrin and Sodium Hypochlorite (#2287) @Pyritie
 - Fixed summoned pet endermen not being able to survive in space or other planets @Pyritie
 - Fixed some recipe imbalances with trimethyl borate and related recipes @Pyritie
+- Fixed not being able to feed meat to the Cruncher (#2305) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra
