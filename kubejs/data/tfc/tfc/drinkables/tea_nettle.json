@@ -1,9 +1,9 @@
 {
-	"ingredient": "tfc_gurman:rosehip_tea",
+	"ingredient": "tfc_gurman:tea_nettle",
 	"thirst": 15,
 	"effects": [
 		{
-			"type": "minecraft:absorption",
+			"type": "minecraft:slow_falling",
 			"duration": 600,
 			"amplifier": 0
 		},

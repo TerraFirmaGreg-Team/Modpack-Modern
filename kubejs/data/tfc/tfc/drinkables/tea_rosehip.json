@@ -1,9 +1,9 @@
 {
-	"ingredient": "tfc_gurman:chamomile_tea",
+	"ingredient": "tfc_gurman:tea_rosehip",
 	"thirst": 15,
 	"effects": [
 		{
-			"type": "minecraft:resistance",
+			"type": "minecraft:absorption",
 			"duration": 600,
 			"amplifier": 0
 		},

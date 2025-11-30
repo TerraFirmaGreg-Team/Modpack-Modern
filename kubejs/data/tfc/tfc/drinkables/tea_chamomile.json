@@ -1,9 +1,9 @@
 {
-	"ingredient": "tfc_gurman:nettle_tea",
+	"ingredient": "tfc_gurman:tea_chamomile",
 	"thirst": 15,
 	"effects": [
 		{
-			"type": "minecraft:slow_falling",
+			"type": "minecraft:resistance",
 			"duration": 600,
 			"amplifier": 0
 		},
