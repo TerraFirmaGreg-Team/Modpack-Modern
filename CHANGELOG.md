@@ -22,6 +22,8 @@ Added TFC Gurman, which adds even more food and drink
 - Reduced the cost of the ME Ingredient Buffer @Pyritie
 - Renamed Blubber to Animal Fat and added it to the drop tables of more animals (pigs drop a fair bit, orcas drop a ton). Renamed Fish Oil to Tallowate since you can turn animal fat into tallow into fish oil (now tallowate). From there you can turn it into biodiesel! @Pyritie
 - Removed black/red/blue arc furnace dust to ingot recipes, but changed the EBF recipes to MV (#2306) @applenper @Pyritie
+- Glass bottles and ceramic jugs can now hold the same fluids as wooden barrels, buckets, etc @Pyritie
+- Added fluid/item capacity tooltips to many fluid/item containers @Pyritie
 ### Bug fixes
 - Fixed brown gravy recipe @Redeix
 - Fixed instant mac recipe requiring less cardboard than it gives back @Redeix

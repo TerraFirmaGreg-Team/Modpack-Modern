@@ -703,6 +703,8 @@ function registerTFCFluidTags(event) {
     // Can use only neutral fluids.
     event.add('tfc:usable_in_barrel', '#forge:neutral_fluids');
     event.add('tfc:usable_in_wooden_bucket', '#forge:neutral_fluids');
+    // Ceramic jugs and glass bottles
+    event.add('tfc:usable_in_jug', '#forge:neutral_fluids');
     event.add('firmalife:usable_in_mixing_bowl', '#forge:neutral_fluids');
 
 	// All fluids are given the '#tfg:not_solid' tag incase we have a use for them regardless of state.
