@@ -3279,30 +3279,10 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 150$(br)$(thing)Щільність$(): 0.35$(br)$(thing)Тип$(): Трубна вена$(br)$(thing)Y$(): 20 — 120$(br)$(thing)Висота$(): 60$(br)$(thing)Радіус$(): 10$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Андезит, Аргиліт, Аспідний сланець, Базальт, Вапняк, Габро, Глинистий сланець, Гнейс, Граніт, Дацит, Діорит, Доломіт, Кварцит, Конгломерат, Крейда, Кременистий сланець, Мармур, Ріоліт, Філіт, Шиферний сланець",
+      "text": "$(thing)Рідкість$(): 140$(br)$(thing)Щільність$(): 0.35$(br)$(thing)Тип$(): Трубна вена$(br)$(thing)Y$(): 20 — 120$(br)$(thing)Висота$(): 60$(br)$(thing)Радіус$(): 10$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Андезит, Аргиліт, Аспідний сланець, Базальт, Вапняк, Габро, Глинистий сланець, Гнейс, Граніт, Дацит, Діорит, Доломіт, Кварцит, Конгломерат, Крейда, Кременистий сланець, Мармур, Ріоліт, Філіт, Шиферний сланець",
       "title": "Таркіаніт та Нафтові піски",
       "type": "patchouli:text",
       "anchor": "normal_tarkianite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Нафтові піски",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/oilsands"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Джерело$(): Свободи \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
@@ -3322,6 +3302,26 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Джерело$(): Реній, Молібденум$(br)$(thing)Формула$(): CuFeRe₄Mo₄S₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Нафтові піски",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/oilsands"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Джерело$(): Свободи \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
       "type": "patchouli:multiblock"
     },
     {
