@@ -3545,30 +3545,10 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 150$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Pipe Vein$(br)$(thing)Y$(): 20 — 120$(br)$(thing)Height$(): 60$(br)$(thing)Radius$(): 10$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Chalk, Chert, Claystone, Conglomerate, Dacite, Diorite, Dolomite, Gabbro, Gneiss, Granite, Limestone, Marble, Phyllite, Quartzite, Rhyolite, Schist, Shale, Slate$(br2)Only appears in hot deserts to the South-West.",
+      "text": "$(thing)Rarity$(): 140$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Pipe Vein$(br)$(thing)Y$(): 20 — 120$(br)$(thing)Height$(): 60$(br)$(thing)Radius$(): 10$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Chalk, Chert, Claystone, Conglomerate, Dacite, Diorite, Dolomite, Gabbro, Gneiss, Granite, Limestone, Marble, Phyllite, Quartzite, Rhyolite, Schist, Shale, Slate$(br2)Only appears in deserts to the $(thing)South-West$(), with a minimum temperature of 7°C and a maximum rainfall of 100mm.",
       "title": "Tarkianite & Oilsands",
       "type": "patchouli:text",
       "anchor": "normal_tarkianite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Oilsands",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/oilsands"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 35%$(br)$(thing)Source of$(): Freedom \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
@@ -3588,6 +3568,26 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Percentage$(): 35%$(br)$(thing)Source of$(): Rhenium, Molybdenum$(br)$(thing)Formula$(): CuFeRe₄Mo₄S₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Oilsands",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/oilsands"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 35%$(br)$(thing)Source of$(): Freedom \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
       "type": "patchouli:multiblock"
     },
     {

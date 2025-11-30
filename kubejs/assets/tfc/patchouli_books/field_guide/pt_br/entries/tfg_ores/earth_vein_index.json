@@ -3545,30 +3545,10 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 150$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): 20 — 120$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Andesito, Ardósia, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Filito, Folhelho, Gabro, Giz, Gnaisse, Granito, Mármore, Quartzito, Riolito, Xisto",
+      "text": "$(thing)Raridade$(): 140$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): 20 — 120$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Andesito, Ardósia, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Filito, Folhelho, Gabro, Giz, Gnaisse, Granito, Mármore, Quartzito, Riolito, Xisto",
       "title": "Tarcianita e Areias Petrolíferas",
       "type": "patchouli:text",
       "anchor": "normal_tarkianite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Areias Petrolíferas",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/oilsands"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Fonte de$(): Liberdade \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
@@ -3588,6 +3568,26 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Fonte de$(): Rênio, Molibdênio$(br)$(thing)Fórmula$(): CuFeRe₄Mo₄S₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Areias Petrolíferas",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/oilsands"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Fonte de$(): Liberdade \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
       "type": "patchouli:multiblock"
     },
     {
