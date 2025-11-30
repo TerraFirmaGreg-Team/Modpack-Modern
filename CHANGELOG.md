@@ -20,6 +20,7 @@ Added TFC Gurman, which adds even more food and drink
 - Oilsands dust can now be centrifuged in the mechanical centrifuge @Pyritie
 - All oils (both the petrochem kind and the cooking kind) can now be used to fuel small boilers as well @Pyritie
 - Reduced the cost of the ME Ingredient Buffer @Pyritie
+- Renamed Blubber to Animal Fat and added it to the drop tables of more animals (pigs drop a fair bit, orcas drop a ton). Renamed Fish Oil to Tallowate since you can turn animal fat into tallow into fish oil (now tallowate). From there you can turn it into biodiesel! @Pyritie
 ### Bug fixes
 - Fixed brown gravy recipe @Redeix
 - Fixed instant mac recipe requiring less cardboard than it gives back @Redeix
