@@ -327,7 +327,7 @@ const registerTooltips = (event) => {
 
 	// Drink effects
 	event.addAdvanced(['tfc_gurman:compote_bucket'], (item, advanced, text) => {
-		text.add(1, Text.of("Jump Boost (00:30)").blue());
+		text.add(1, Text.of("Jump Boost II (00:30)").blue());
 	})
 	event.addAdvanced(['tfc_gurman:kvass_bucket'], (item, advanced, text) => {
 		text.add(1, Text.of("Strength (01:20)").blue());
