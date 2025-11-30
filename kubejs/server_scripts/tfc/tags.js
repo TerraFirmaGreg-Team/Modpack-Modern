@@ -785,4 +785,5 @@ function registerTFCPlacedFeatures(event) {
     // Other decoration
     event.add("tfc:in_biome/underground_decoration", "tfg:glow_lichen");
     event.add("tfc:in_biome/underground_decoration", "tfg:earth/sulfur_patch");
+    event.add("tfc:in_biome/underground_decoration", "tfg:earth/oil_spout");
 }
