@@ -9,7 +9,7 @@
     "min_slant": 0,
     "max_slant": 4,
     "sign": 0,
-    "rarity": 150,
+    "rarity": 140,
     "density": 0.35,
     "min_y": 20,
     "max_y": 120,
@@ -21,11 +21,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:gabbro_oilsands_ore",
+            "block": "gtceu:gabbro_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:gabbro_tarkianite_ore",
+            "block": "gtceu:gabbro_oilsands_ore",
             "weight": 35
           },
           {
@@ -44,11 +44,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:granite_oilsands_ore",
+            "block": "gtceu:granite_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:granite_tarkianite_ore",
+            "block": "gtceu:granite_oilsands_ore",
             "weight": 35
           },
           {
@@ -67,11 +67,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:diorite_oilsands_ore",
+            "block": "gtceu:diorite_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:diorite_tarkianite_ore",
+            "block": "gtceu:diorite_oilsands_ore",
             "weight": 35
           },
           {
@@ -90,11 +90,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:schist_oilsands_ore",
+            "block": "gtceu:schist_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:schist_tarkianite_ore",
+            "block": "gtceu:schist_oilsands_ore",
             "weight": 35
           },
           {
@@ -113,11 +113,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:gneiss_oilsands_ore",
+            "block": "gtceu:gneiss_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:gneiss_tarkianite_ore",
+            "block": "gtceu:gneiss_oilsands_ore",
             "weight": 35
           },
           {
@@ -136,11 +136,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:quartzite_oilsands_ore",
+            "block": "gtceu:quartzite_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:quartzite_tarkianite_ore",
+            "block": "gtceu:quartzite_oilsands_ore",
             "weight": 35
           },
           {
@@ -159,11 +159,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:phyllite_oilsands_ore",
+            "block": "gtceu:phyllite_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:phyllite_tarkianite_ore",
+            "block": "gtceu:phyllite_oilsands_ore",
             "weight": 35
           },
           {
@@ -182,11 +182,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:slate_oilsands_ore",
+            "block": "gtceu:slate_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:slate_tarkianite_ore",
+            "block": "gtceu:slate_oilsands_ore",
             "weight": 35
           },
           {
@@ -205,11 +205,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:marble_oilsands_ore",
+            "block": "gtceu:marble_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:marble_tarkianite_ore",
+            "block": "gtceu:marble_oilsands_ore",
             "weight": 35
           },
           {
@@ -228,11 +228,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:dacite_oilsands_ore",
+            "block": "gtceu:dacite_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:dacite_tarkianite_ore",
+            "block": "gtceu:dacite_oilsands_ore",
             "weight": 35
           },
           {
@@ -251,11 +251,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:rhyolite_oilsands_ore",
+            "block": "gtceu:rhyolite_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:rhyolite_tarkianite_ore",
+            "block": "gtceu:rhyolite_oilsands_ore",
             "weight": 35
           },
           {
@@ -274,11 +274,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:andesite_oilsands_ore",
+            "block": "gtceu:andesite_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:andesite_tarkianite_ore",
+            "block": "gtceu:andesite_oilsands_ore",
             "weight": 35
           },
           {
@@ -298,11 +298,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:basalt_oilsands_ore",
+            "block": "gtceu:basalt_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:basalt_tarkianite_ore",
+            "block": "gtceu:basalt_oilsands_ore",
             "weight": 35
           },
           {
@@ -321,11 +321,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:shale_oilsands_ore",
+            "block": "gtceu:shale_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:shale_tarkianite_ore",
+            "block": "gtceu:shale_oilsands_ore",
             "weight": 35
           },
           {
@@ -344,11 +344,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:claystone_oilsands_ore",
+            "block": "gtceu:claystone_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:claystone_tarkianite_ore",
+            "block": "gtceu:claystone_oilsands_ore",
             "weight": 35
           },
           {
@@ -367,11 +367,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:limestone_oilsands_ore",
+            "block": "gtceu:limestone_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:limestone_tarkianite_ore",
+            "block": "gtceu:limestone_oilsands_ore",
             "weight": 35
           },
           {
@@ -390,11 +390,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:conglomerate_oilsands_ore",
+            "block": "gtceu:conglomerate_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:conglomerate_tarkianite_ore",
+            "block": "gtceu:conglomerate_oilsands_ore",
             "weight": 35
           },
           {
@@ -413,11 +413,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:dolomite_oilsands_ore",
+            "block": "gtceu:dolomite_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:dolomite_tarkianite_ore",
+            "block": "gtceu:dolomite_oilsands_ore",
             "weight": 35
           },
           {
@@ -436,11 +436,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:chert_oilsands_ore",
+            "block": "gtceu:chert_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:chert_tarkianite_ore",
+            "block": "gtceu:chert_oilsands_ore",
             "weight": 35
           },
           {
@@ -459,11 +459,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:chalk_oilsands_ore",
+            "block": "gtceu:chalk_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:chalk_tarkianite_ore",
+            "block": "gtceu:chalk_oilsands_ore",
             "weight": 35
           },
           {
@@ -484,11 +484,11 @@
       "underground_count": 200,
       "blocks": [
         {
-          "block": "gtceu:oilsands_indicator",
+          "block": "gtceu:tarkianite_indicator",
           "weight": 35
         },
         {
-          "block": "gtceu:tarkianite_indicator",
+          "block": "gtceu:oilsands_indicator",
           "weight": 35
         },
         {
