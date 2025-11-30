@@ -1,0 +1,21 @@
+{
+
+
+
+
+    "__credits__": "REVERT THIS FILE AFTER RUNNING ORES TO FIELD GUIDE. Otherwise it wipes the climate stuff.",
+
+
+
+
+
+    "feature": "tfg:earth/vein/normal_tarkianite",
+    "placement": [
+        {
+            "type": "tfc:climate",
+            "min_temperature": 7,
+            "min_rainfall": 0,
+            "max_rainfall": 100
+        }
+    ]
+}

@@ -839,9 +839,17 @@ function registerTFGFoodRecipes(event) {
 	})
 	
 	processorRecipe("cocoa_dust", 100, 4, {
+		circuit: 1,
 		itemInputs: ["firmalife:food/roasted_cocoa_beans"],
 		itemOutputs: ["gtceu:cocoa_dust"],
 		itemOutputProvider: TFC.isp.of("gtceu:cocoa_dust")
+	})
+
+	processorRecipe("cocoa_butter", 100, 4, {
+		circuit: 2,
+		itemInputs: ["firmalife:food/roasted_cocoa_beans"],
+		itemOutputs: ["firmalife:food/cocoa_butter"],
+		itemOutputProvider: TFC.isp.of("firmalife:food/cocoa_butter")
 	})
 
 	processorRecipe("red_grapes", 50, 8, {

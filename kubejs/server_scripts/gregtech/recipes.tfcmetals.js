@@ -5,35 +5,69 @@
  * @param {Internal.RecipesEventJS} event 
  */
 function registerGTCEuTFCMetalsRecipes(event) {
-	//#region LV hull
+
+	// #region Colored steels
 
 	event.replaceInput('gtceu:shaped/lv_machine_hull', '#forge:plates/wrought_iron', '#forge:plates/red_steel')
 
-	//#endregion
+	event.remove({id:'gtceu:electric_blast_furnace/blast_black_steel_gas'})
+	event.remove({id:'gtceu:electric_blast_furnace/blast_black_steel'})
+	event.remove({id:'gtceu:electric_blast_furnace/blast_red_steel_gas'})
+	event.remove({id:'gtceu:electric_blast_furnace/blast_red_steel'})
+	event.remove({id:'gtceu:electric_blast_furnace/blast_blue_steel_gas'})
+	event.remove({id:'gtceu:electric_blast_furnace/blast_blue_steel'})
 
-	//#region make colored steel a bit easier to compensate
-
-	event.recipes.gtceu.arc_furnace('tfg:black_steel_dust_to_ingot')
+	event.recipes.gtceu.electric_blast_furnace('blast_black_steel_gas_mv')
 		.itemInputs('gtceu:black_steel_dust')
 		.itemOutputs('tfc:metal/ingot/black_steel')
-		.inputFluids(Fluid.of('gtceu:oxygen', 72))
-		.duration(500)
-		.EUt(24)
+		.inputFluids(Fluid.of('gtceu:nitrogen', 1000))
+		.duration(469)
+		.circuit(2)
+		.EUt(GTValues.VA[GTValues.MV])
+		.blastFurnaceTemp(1000)
 
-	event.recipes.gtceu.arc_furnace('tfg:red_steel_dust_to_ingot')
+	event.recipes.gtceu.electric_blast_furnace('blast_black_steel_mv')
+		.itemInputs('gtceu:black_steel_dust')
+		.itemOutputs('tfc:metal/ingot/black_steel')
+		.duration(700)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.MV])
+		.blastFurnaceTemp(1000)
+
+	event.recipes.gtceu.electric_blast_furnace('blast_red_steel_gas_mv')
 		.itemInputs('gtceu:red_steel_dust')
 		.itemOutputs('tfc:metal/ingot/red_steel')
-		.inputFluids(Fluid.of('gtceu:oxygen', 72))
-		.duration(700)
-		.EUt(GTValues.VA[GTValues.LV])
+		.inputFluids(Fluid.of('gtceu:nitrogen', 1000))
+		.duration(670)
+		.circuit(2)
+		.EUt(GTValues.VA[GTValues.MV])
+		.blastFurnaceTemp(1000)
 
-	event.recipes.gtceu.arc_furnace('tfg:blue_steel_dust_to_ingot')
+	event.recipes.gtceu.electric_blast_furnace('blast_red_steel_mv')
+		.itemInputs('gtceu:red_steel_dust')
+		.itemOutputs('tfc:metal/ingot/red_steel')
+		.duration(1000)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.MV])
+		.blastFurnaceTemp(1000)
+
+	event.recipes.gtceu.electric_blast_furnace('blast_blue_steel_gas_mv')
 		.itemInputs('gtceu:blue_steel_dust')
 		.itemOutputs('tfc:metal/ingot/blue_steel')
-		.inputFluids(Fluid.of('gtceu:oxygen', 72))
-		.duration(700)
-		.EUt(GTValues.VA[GTValues.LV])
+		.inputFluids(Fluid.of('gtceu:nitrogen', 1000))
+		.duration(670)
+		.circuit(2)
+		.EUt(GTValues.VA[GTValues.MV])
+		.blastFurnaceTemp(1000)
 
+	event.recipes.gtceu.electric_blast_furnace('blast_blue_steel_mv')
+		.itemInputs('gtceu:blue_steel_dust')
+		.itemOutputs('tfc:metal/ingot/blue_steel')
+		.duration(1000)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.MV])
+		.blastFurnaceTemp(1000)
+		
 	//#endregion
 
 	//#region add regular furnace recipes for other tfc alloys

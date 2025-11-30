@@ -302,13 +302,13 @@ const registerGTCEURecipes = (event) => {
 
 	//#region Выход: Рыбье масло
 
-	event.recipes.gtceu.extractor(`tfg/fish_oil`)
+	event.recipes.gtceu.extractor(`tfg:fish_oil`)
 		.itemInputs('#minecraft:fishes')
 		.outputFluids(Fluid.of('gtceu:fish_oil', 200))
 		.duration(40)
 		.EUt(4)
 
-	event.recipes.gtceu.extractor(`tfg/tallow`)
+	event.recipes.gtceu.extractor(`tfg:tallow`)
 		.itemInputs('tfc:blubber')
 		.outputFluids(Fluid.of('tfc:tallow', 200))
 		.duration(40)
@@ -325,7 +325,7 @@ const registerGTCEURecipes = (event) => {
 
 	//#region Выход: Семянное масло
 
-	event.recipes.gtceu.extractor(`tfg/seed_oil`)
+	event.recipes.gtceu.extractor(`tfg:seed_oil`)
 		.itemInputs('#tfc:seeds')
 		.outputFluids(Fluid.of('gtceu:seed_oil', 50))
 		.duration(32)
@@ -1841,9 +1841,48 @@ const registerGTCEURecipes = (event) => {
 	// Allow oil in small boilers
 
 	event.remove({ id: "gtceu:large_boiler/gtceu_oil" })
+	event.remove({ id: "gtceu:large_boiler/gtceu_oil_heavy" })
+	event.remove({ id: "gtceu:large_boiler/gtceu_fish_oil" })
 	// This generates both a small boiler and large boiler recipe. Remove it above to avoid a duplicate
 	event.recipes.gtceu.steam_boiler('tfg:oil')
 		.inputFluids(Fluid.of('gtceu:oil', 200))
+		.duration(200)
+		.dimension('minecraft:overworld')
+
+	event.recipes.gtceu.steam_boiler('tfg:heavy_oil')
+		.inputFluids(Fluid.of('gtceu:oil_heavy', 32))
+		.duration(200)
+		.dimension('minecraft:overworld')
+
+	event.recipes.gtceu.steam_boiler('tfg:fish_oil')
+		.inputFluids(Fluid.of('gtceu:fish_oil', 160))
+		.duration(200)
+		.dimension('minecraft:overworld')
+
+	// These aren't in base GT, but they have the same stats as oil
+	event.recipes.gtceu.steam_boiler('tfg:raw_oil')
+		.inputFluids(Fluid.of('gtceu:oil_medium', 200))
+		.duration(200)
+		.dimension('minecraft:overworld')
+
+	event.recipes.gtceu.steam_boiler('tfg:light_oil')
+		.inputFluids(Fluid.of('gtceu:oil_light', 200))
+		.duration(200)
+		.dimension('minecraft:overworld')
+
+	// Same stats as fish oil
+	event.recipes.gtceu.steam_boiler('tfg:olive_oil')
+		.inputFluids(Fluid.of('tfc:olive_oil', 160))
+		.duration(200)
+		.dimension('minecraft:overworld')
+
+	event.recipes.gtceu.steam_boiler('tfg:seed_oil')
+		.inputFluids(Fluid.of('gtceu:seed_oil', 160))
+		.duration(200)
+		.dimension('minecraft:overworld')
+
+	event.recipes.gtceu.steam_boiler('tfg:soybean_oil')
+		.inputFluids(Fluid.of('firmalife:soybean_oil', 160))
 		.duration(200)
 		.dimension('minecraft:overworld')
 }

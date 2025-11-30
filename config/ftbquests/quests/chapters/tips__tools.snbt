@@ -84,7 +84,7 @@
 		{
 			dependencies: [
 				"125563A12EE5C296"
-				"5792DDAA82895E67"
+				"5088768AAA28FCBA"
 			]
 			description: ["{quests.tfg_tips.red_steel_backpack.desc}"]
 			id: "4B79026C8D2DACC4"
@@ -2859,6 +2859,7 @@
 		{
 			dependencies: ["15277C12EEB517E1"]
 			description: ["{quests.tfg_tips.tools_tips.concrete_roads.desc}"]
+			disable_toast: true
 			guide_page: "tfc:field_guide tfc:roadsandroofs/concrete_roads 0"
 			id: "191DB28DC6FF4538"
 			subtitle: "{quests.tfg_tips.tools_tips.concrete_roads.subtitle}"
@@ -2874,6 +2875,7 @@
 		{
 			dependencies: ["15277C12EEB517E1"]
 			description: ["{quests.tfg_tips.tools_tips.brick_roads.desc}"]
+			disable_toast: true
 			guide_page: "tfc:field_guide tfc:roadsandroofs/stone_roads 0"
 			id: "345EB58B7064BF4A"
 			subtitle: "{quests.tfg_tips.tools_tips.brick_roads.subtitle}"
@@ -2896,6 +2898,7 @@
 		{
 			dependencies: ["15277C12EEB517E1"]
 			description: ["{quests.tfg_tips.tools_tips.gravel_roads.desc}"]
+			disable_toast: true
 			id: "7E46F50FEBEE9003"
 			subtitle: "{quests.tfg_tips.tools_tips.gravel_roads.subtitle}"
 			tasks: [{

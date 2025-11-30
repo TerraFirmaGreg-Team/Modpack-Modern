@@ -41,14 +41,15 @@ function registerSpeciesLoots(event) {
 
 
 	event.addEntityLootModifier('species:cruncher')
-		.addLoot('tfc:large_raw_hide')
+		.addLoot('species:music_disk_spawner')
+		.addWeightedLoot([3, 4], ['tfc:large_raw_hide'])
 		.addWeightedLoot([10, 13], ['minecraft:bone'])
-		.addWeightedLoot([14, 24], ['tfg:food/raw_cruncher_ribs'])
+		.addWeightedLoot([24, 36], ['tfg:food/raw_cruncher_ribs'])
 		.addSequenceLoot(LootEntry.of('species:cruncher_egg').when(c => c.randomChance(0.5)))
 
 	event.addEntityLootModifier('species:cruncher')
 		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([7, 12], ['tfg:food/raw_cruncher_ribs'])
+		.addWeightedLoot([12, 18], ['tfg:food/raw_cruncher_ribs'])
 
 
 	event.addEntityLootModifier('species:stackatick')

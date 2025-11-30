@@ -758,15 +758,15 @@ function registerVintageImprovementsRecipes(event) {
 
 	// #region Centrifuging
 
-	event.custom({
-		type: 'vintageimprovements:centrifugation',
-		ingredients: [{ tag: 'forge:dusts/oilsands' }],
-		results: [
-			{ item: "tfc:sand/yellow", chance: 0.5 },
-			{ fluid: "gtceu:oil", amount: 2000 }
-		],
-		processingTime: 10 * 20 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-	}).id(`tfg:vi/centrifuge/oilsands`)
+	//event.custom({
+	//	type: 'vintageimprovements:centrifugation',
+	//	ingredients: [{ tag: 'forge:dusts/oilsands' }],
+	//	results: [
+	//		{ item: "tfc:sand/yellow", chance: 0.5 },
+	//		{ fluid: "gtceu:oil", amount: 2000 }
+	//	],
+	//	processingTime: 10 * 20 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	//}).id(`tfg:vi/centrifuge/oilsands`)
 
 	// #endregion
 }

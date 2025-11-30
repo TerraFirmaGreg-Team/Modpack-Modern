@@ -404,6 +404,7 @@ function registerTFGBiochemRecipes(event) {
 			Fluid.of('minecraft:water', 1000)
 		)
 		.itemOutputs(Item.of('gtceu:salt_dust'))
+		.circuit(1)
 		.duration(10*20)
 		.EUt(GTValues.VA[GTValues.HV]);
 

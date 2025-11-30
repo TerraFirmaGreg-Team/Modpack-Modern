@@ -693,13 +693,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.EUt(1920)
 
 	event.recipes.gtceu.assembler('expatternprovider:ingredient_buffer')
-		.itemInputs(
-			'gtceu:hv_machine_casing',
-			'2x ae2:quartz_vibrant_glass',
-			'gtceu:stainless_steel_drum',
-			'2x ae2:cell_component_1k',
-			'gtceu:hv_robot_arm',
-			'gtceu:hv_electric_pump')
+		.itemInputs('gtceu:hv_buffer', 'ae2:cell_component_1k')
 		.itemOutputs('expatternprovider:ingredient_buffer')
 		.duration(200)
 		.EUt(1920)

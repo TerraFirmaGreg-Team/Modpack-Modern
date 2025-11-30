@@ -221,10 +221,57 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
 	})
 
+	// Fluid + item containers
 	global.LAB_EQUIPMENT_CONTAINERS.forEach(container => {
 		event.addAdvanced([`tfg:${container.type}`], (item, advanced, text) => {
-			text.add(1, Text.translate('tfg.tooltip.lab_equipment.part').append(`§e${container.capacity.toString()}mB`))
+			text.add(1, Text.translate('gtceu.universal.tooltip.fluid_storage_capacity', `${container.capacity}`))
 		})
+	})
+	event.addAdvanced(['#firmalife:big_barrels'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "36"))
+		text.add(2, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "80,000"))
+	})
+	event.addAdvanced(['create:fluid_tank', 'create_connected:fluid_vessel'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "16,000"))
+	})
+	event.addAdvanced(['#tfc:barrels'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "10,000"))
+	})
+	event.addAdvanced(['tfc:crucible'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "4,032"))
+	})
+	event.addAdvanced(['waterflasks:red_steel_flask'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "2,000"))
+	})
+	event.addAdvanced(['waterflasks:iron_flask', 'tfc:wooden_bucket', 'firmalife:mixing_bowl'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "1,000"))
+	})
+	event.addAdvanced(['waterflasks:leather_flask'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "500"))
+	})
+	event.addAdvanced(['tfc:hematitic_glass_bottle', 'tfc:silica_glass_bottle', 'tfc:volcanic_glass_bottle', 'tfc:olivine_glass_bottle'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "400"))
+	})
+	event.addAdvanced(['#tfc:lamps'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "250"))
+	})
+	event.addAdvanced(['tfc:ceramic/jug', 'firmalife:hollow_shell'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "100"))
+	})
+	event.addAdvanced(['#tfcastikorcarts:supply_cart'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "54"))
+	})
+	event.addAdvanced(['framedblocks:framed_chest'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "27"))
+	})
+	event.addAdvanced(['create:item_vault', 'create_connected:item_silo'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "20"))
+	})
+	event.addAdvanced(['#forge:chests/wooden'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "18"))
+	})
+	event.addAdvanced(['#tfc:fired_large_vessels'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "9"))
 	})
 
 	//Nuclear Fission Tooltips

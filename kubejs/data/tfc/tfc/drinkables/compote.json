@@ -1,0 +1,11 @@
+{
+	"ingredient": "tfc_gurman:compote",
+	"thirst": 15,
+	"effects": [
+		{
+			"type": "minecraft:jump_boost",
+			"duration": 600,
+			"amplifier": 0
+		}
+	]
+}
