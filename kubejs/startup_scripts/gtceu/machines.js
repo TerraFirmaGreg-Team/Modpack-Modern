@@ -451,7 +451,7 @@ const registerGTCEuMachines = (event) => {
 
 	event.create('ostrum_linear_accelerator', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
-		.recipeType('ostrum_linear_accelerator')
+		.recipeType('dummy_recipe')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
 		.appearanceBlock(() => Block.getBlock('tfg:casings/machine_casing_mars'))
 		.pattern(definition => FactoryBlockPattern.start()

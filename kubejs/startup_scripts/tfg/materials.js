@@ -495,6 +495,7 @@ const registerTFGMaterials = (event) => {
 			GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES,
 			GTMaterialFlags.GENERATE_GEAR
 		)
+		.fluidPipeProperties(4250, 1700, true, false, false, false)
 
 	// #endregion
 
