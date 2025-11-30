@@ -26,7 +26,7 @@ const registerSpeciesItemTags = (event) => {
 	event.add('tfg:martian_eggs', 'species:petrified_egg')
 	
 	event.add('species:goober_breed_items', '#forge:mushrooms')
-	event.add('species:cruncher_eats', '#tfc:foods/meat')
+	event.add('species:cruncher_eats', '#tfc:foods/meats')
 	
 	event.add('tfc:compost_greens', 'species:alphacene_mushroom_block')
 	event.add('tfc:compost_greens_low', 'species:alphacene_mushroom_growth')
