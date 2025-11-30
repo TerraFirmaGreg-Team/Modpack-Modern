@@ -12403,47 +12403,48 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "tfcambiental-1.20.1-3.3.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5655/440/tfcambiental-1.20.1-3.3.1.jar",
-                    "id": "5655440",
-                    "parent_id": "940350",
-                    "hashes": {
-                        "sha1": "0837547febfc05c18e224fd8b3f9ed4eef8eb9de",
-                        "md5": "f057f8e13adacf35c50ae52cf312ee38"
-                    },
-                    "required_dependencies": [],
-                    "size": 640068,
-                    "date_published": "2024-08-23T09:41:25.543Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "tfcambiental-1.20.1-3.3.1.jar",
+                    "file_name": "tfcambiental-1.20.1-3.4.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/K7eNiRnX/versions/to7EBq2d/tfcambiental-1.20.1-3.3.1.jar",
-                    "id": "to7EBq2d",
+                    "url": "https://cdn.modrinth.com/data/K7eNiRnX/versions/dSotPtx8/tfcambiental-1.20.1-3.4.0.jar",
+                    "id": "dSotPtx8",
                     "parent_id": "K7eNiRnX",
                     "hashes": {
-                        "sha512": "ad600d3731080320a4d0a3134fbdbe8041f2671c395fef73d316e8d39d1bc2672f75f583817f6389aa11c456c0508e031ad5e3b9c876ca19b605c1e107a693cb",
-                        "sha1": "0837547febfc05c18e224fd8b3f9ed4eef8eb9de"
+                        "sha512": "1ac37c9c4777a596a2418ff31254e59e8421793329235a6f596271d0f634858d4ba11f2e062d8e6f3dd87388b9ce7c197f4eea438eed1a0afad7f51805c22c7a",
+                        "sha1": "4f506dcf9acd95c274225b6ea3dd7dd5cac996ab"
                     },
                     "required_dependencies": [],
-                    "size": 640068,
-                    "date_published": "2025-07-20T08:59:11.860074Z"
+                    "size": 646197,
+                    "date_published": "2025-11-30T08:26:10.111188Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "tfcambiental-1.20.1-3.4.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7277/343/tfcambiental-1.20.1-3.4.0.jar",
+                    "id": "7277343",
+                    "parent_id": "940350",
+                    "hashes": {
+                        "sha1": "4f506dcf9acd95c274225b6ea3dd7dd5cac996ab",
+                        "md5": "5dd04665c5c5c5386e5edc0159514bb2"
+                    },
+                    "required_dependencies": [],
+                    "size": 646197,
+                    "date_published": "2025-11-30T08:24:10.973Z"
                 }
             ]
         },

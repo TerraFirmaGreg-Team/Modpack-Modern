@@ -485,9 +485,6 @@ function registerTFCBlockTags(event) {
     });
 
     event.add('tfc:can_be_snow_piled', 'tfc:groundcover/feather');
-
-    event.add('tfcambiental:hot_stuff', 'tfc:pot');
-    event.add('tfcambiental:hot_stuff', 'tfc:grill');
 }
 
 /** @param {TagEvent.Fluid} event */
