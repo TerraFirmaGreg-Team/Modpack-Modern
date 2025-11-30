@@ -33,6 +33,12 @@
 			x: 13.0d
 			y: -6.0d
 		}
+		{
+			id: "4A902B3F8AE331AC"
+			linked_quest: "5D188F6C46EA9ED0"
+			x: -6.0d
+			y: -3.0d
+		}
 	]
 	quests: [
 		{
@@ -835,7 +841,6 @@
 				"{@pagebreak}"
 				"{quests.high_voltage.hv_macerator.desc.2}"
 			]
-			icon: "gtceu:hv_macerator"
 			id: "6B7762F672BAE76F"
 			shape: "octagon"
 			size: 1.5d
@@ -1529,14 +1534,15 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.wand.title}"
-			x: 13.0d
-			y: -8.0d
+			x: 14.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["396E85A39FF414CF"]
 			description: ["{quests.high_voltage.hypertubes.desc}"]
 			id: "159A0DAEE55DCAC0"
 			optional: true
+			shape: "heart"
 			subtitle: "{quests.high_voltage.hypertubes.subtitle}"
 			tasks: [
 				{
@@ -1553,6 +1559,63 @@
 			title: "{quests.high_voltage.hypertubes.title}"
 			x: 11.5d
 			y: -7.5d
+		}
+		{
+			dependencies: ["16B735F9C391D260"]
+			description: [
+				"{quests.medium_voltage.mv_long_pipe.desc.1}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.mv_long_pipe.desc.2}"
+			]
+			icon: "gtceu:long_distance_fluid_pipeline_endpoint"
+			id: "0015BD8AA5A517D1"
+			optional: true
+			shape: "heart"
+			size: 1.0d
+			subtitle: "{quests.medium_voltage.mv_long_pipe.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "7C8964FAF91C1529"
+					item: "gtceu:long_distance_fluid_pipeline_endpoint"
+					type: "item"
+				}
+				{
+					id: "48937E331D0184E7"
+					item: "gtceu:long_distance_fluid_pipeline"
+					type: "item"
+				}
+			]
+			title: "{quests.medium_voltage.mv_long_pipe.title}"
+			x: 5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7FA0ACB7F161F378"]
+			description: ["{quests.high_voltage.titanium_greate.desc}"]
+			id: "04799A40C5910B3F"
+			optional: true
+			shape: "heart"
+			tasks: [
+				{
+					id: "5B94BB35A8480214"
+					item: "greate:titanium_cogwheel"
+					type: "item"
+				}
+				{
+					id: "0C95EDF964B17ED6"
+					item: "greate:large_titanium_cogwheel"
+					type: "item"
+				}
+				{
+					id: "2E602B31550041B9"
+					item: "greate:titanium_shaft"
+					type: "item"
+				}
+			]
+			title: "{quests.high_voltage.titanium_greate.title}"
+			x: -6.0d
+			y: -1.0d
 		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]
