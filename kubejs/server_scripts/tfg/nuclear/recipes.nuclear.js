@@ -64,11 +64,12 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*300)
 		.EUt(GTValues.V[GTValues.IV])
 
-	event.recipes.gtceu.lathe('tfg:empty_rod')
-		.itemInputs('gtceu:cobalt_large_restrictive_item_pipe')
+	event.recipes.gtceu.assembler('tfg:empty_rod')
+		.itemInputs('3x gtceu:cobalt_large_restrictive_item_pipe', '3x gtceu:lead_huge_fluid_pipe')
 		.itemOutputs('tfg:empty_rod')
 		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true)
 
 	//#endregion
 

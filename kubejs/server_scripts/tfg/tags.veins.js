@@ -48,6 +48,7 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_sphalerite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_spodumene')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_sulfur')
+	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_tarkianite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_tetrahedrite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_bismuthinite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_cassiterite')

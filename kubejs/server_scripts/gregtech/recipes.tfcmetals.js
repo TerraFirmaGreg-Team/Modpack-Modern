@@ -34,6 +34,45 @@ function registerGTCEuTFCMetalsRecipes(event) {
 		.duration(700)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	event.remove({id:'gtceu:electric_blast_furnace/blast_red_steel_gas'})
+	event.remove({id:'gtceu:electric_blast_furnace/blast_red_steel'})
+	event.remove({id:'gtceu:electric_blast_furnace/blast_blue_steel_gas'})
+	event.remove({id:'gtceu:electric_blast_furnace/blast_blue_steel'})
+
+	event.recipes.gtceu.electric_blast_furnace('blast_red_steel_gas_mv')
+		.itemInputs('gtceu:red_steel_dust')
+		.itemOutputs('tfc:metal/ingot/red_steel')
+		.inputFluids(Fluid.of('gtceu:nitrogen', 1000))
+		.duration(670)
+		.circuit(2)
+		.EUt(GTValues.VA[GTValues.MV])
+		.blastFurnaceTemp(1000)
+
+	event.recipes.gtceu.electric_blast_furnace('blast_red_steel_mv')
+		.itemInputs('gtceu:red_steel_dust')
+		.itemOutputs('tfc:metal/ingot/red_steel')
+		.duration(1000)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.MV])
+		.blastFurnaceTemp(1000)
+
+	event.recipes.gtceu.electric_blast_furnace('blast_blue_steel_gas_mv')
+		.itemInputs('gtceu:blue_steel_dust')
+		.itemOutputs('tfc:metal/ingot/blue_steel')
+		.inputFluids(Fluid.of('gtceu:nitrogen', 1000))
+		.duration(670)
+		.circuit(2)
+		.EUt(GTValues.VA[GTValues.MV])
+		.blastFurnaceTemp(1000)
+
+	event.recipes.gtceu.electric_blast_furnace('blast_blue_steel_mv')
+		.itemInputs('gtceu:blue_steel_dust')
+		.itemOutputs('tfc:metal/ingot/blue_steel')
+		.duration(1000)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.MV])
+		.blastFurnaceTemp(1000)
+		
 	//#endregion
 
 	//#region add regular furnace recipes for other tfc alloys
