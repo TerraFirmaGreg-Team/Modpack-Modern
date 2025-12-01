@@ -1,11 +1,7 @@
-// priority: 0
 "use strict";
 
-/**
- * 
- * @param {Registry.Item} event 
- */
-function registerBetterEndItems(event) {
+function registerTFGMarsItems(event) {
+
 	event.create('betterend:bolux_mushroom_cooked')
 		.food(food => {
 			food.hunger(2)
@@ -35,4 +31,5 @@ function registerBetterEndItems(event) {
 			food.hunger(5)
 			food.saturation(2)
 		})
+
 }

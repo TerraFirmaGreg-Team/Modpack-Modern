@@ -1,60 +1,49 @@
 "use strict";
 
-function registerTFGSpaceBlocks(event) {
-	
-	// #region Dimension markers
-	event.create('tfg:marker/moon')
-		.stoneSoundType()
-		.item(item => {
-			item.modelJson({ parent: 'tfg:block/marker/moon' })
-		})
-		.tagBlock('c:hidden_from_recipe_viewers')
-		.fullBlock(true)
-		.opaque(true)
-
-	event.create('tfg:marker/mars')
-		.stoneSoundType()
-		.item(item => {
-			item.modelJson({ parent: 'tfg:block/marker/mars' })
-		})
-		.tagBlock('c:hidden_from_recipe_viewers')
-		.fullBlock(true)
-		.opaque(true)
-
-	event.create('tfg:marker/venus')
-		.stoneSoundType()
-		.item(item => {
-			item.modelJson({ parent: 'tfg:block/marker/venus' })
-		})
-		.tagBlock('c:hidden_from_recipe_viewers')
-		.fullBlock(true)
-		.opaque(true)
-
-	event.create('tfg:marker/mercury')
-		.stoneSoundType()
-		.item(item => {
-			item.modelJson({ parent: 'tfg:block/marker/mercury' })
-		})
-		.tagBlock('c:hidden_from_recipe_viewers')
-		.fullBlock(true)
-		.opaque(true)
-
-	event.create('tfg:marker/glacio')
-		.stoneSoundType()
-		.item(item => {
-			item.modelJson({ parent: 'tfg:block/marker/glacio' })
-		})
-		.tagBlock('c:hidden_from_recipe_viewers')
-		.fullBlock(true)
-		.opaque(true)
-
-	// #endregion Dimension markers
+function registerTFGRockBlocks(event) {
 
 	const SHAPES = ['stairs', 'slab', 'wall']
 	
 	const AA_REGULAR_STONES = ['moon', 'mars', 'venus', 'mercury', 'glacio']
 
 	// #region Raw Stones
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/deepslate_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.deepslate.sound)
+			.textureAll('minecraft:block/deepslate')
+			.tagBoth(`tfg:rock_${shape}s`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.deepslate.type}_items`)
+			.mapColor(global.STONE_CHARACS.deepslate.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/dripstone_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.dripstone.sound)
+			.textureAll('minecraft:block/dripstone_block')
+			.tagBoth(`tfg:rock_${shape}s`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.dripstone.type}_items`)
+			.mapColor(global.STONE_CHARACS.dripstone.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/crackrack_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.crackrack.sound)
+			.textureAll('beneath:block/crackrack')
+			.tagBoth(`tfg:rock_${shape}s`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.crackrack.type}_items`)
+			.mapColor(global.STONE_CHARACS.crackrack.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+	
 	event.create('tfg:rock/moon_stone_wall', 'wall')
 		.soundType(global.STONE_CHARACS.moon.sound)
 		.textureAll('ad_astra:block/moon_stone')
@@ -139,10 +128,57 @@ function registerTFGSpaceBlocks(event) {
 			.fullBlock(true)
 			.opaque(true)
 	})
-	
+
 	// #endregion Raw Stones
 	
 	// #region Hardened Stones
+	event.create('tfg:rock/hardened_deepslate')
+		.soundType(global.STONE_CHARACS.deepslate.sound)
+		.property(BlockProperties.AXIS)
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'minecraft:item/deepslate' })
+		})
+		.tagBlock('tfc:can_carve')
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/hardened')
+		.tagBoth(`tfc:${global.STONE_CHARACS.deepslate.type}_items`)
+		.mapColor(global.STONE_CHARACS.deepslate.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:rock/hardened_blackstone')
+		.soundType(global.STONE_CHARACS.blackstone.sound)
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'minecraft:item/blackstone' })
+		})
+		.tagBlock('tfc:can_carve')
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/hardened')
+		.tagBoth(`tfc:${global.STONE_CHARACS.blackstone.type}_items`)
+		.mapColor(global.STONE_CHARACS.blackstone.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:rock/hardened_dripstone')
+		.soundType(global.STONE_CHARACS.dripstone.sound)
+		.stoneSoundType()
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'minecraft:item/dripstone_block' })
+		})
+		.tagBlock('tfc:can_carve')
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/hardened')
+		.tagBoth(`tfc:${global.STONE_CHARACS.dripstone.type}_items`)
+		.mapColor(global.STONE_CHARACS.dripstone.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
 	event.create('tfg:rock/hardened_moon_stone')
 		.soundType(global.STONE_CHARACS.moon.sound)
 		.requiresTool(true)
@@ -251,6 +287,45 @@ function registerTFGSpaceBlocks(event) {
 	// #endregion Hardened Stones
 	
 	// #region Loose Stones
+	event.create('tfg:loose/deepslate', 'tfc:loose_rock')
+		.soundType(global.STONE_CHARACS.deepslate.sound)
+		.itemTexture('tfg:item/loose/deepslate')
+		.rockTypeModel(global.STONE_CHARACS.deepslate.type)
+		.translationKey("block.tfg.loose.deepslate")
+		.mapColor(global.STONE_CHARACS.deepslate.mapColor)
+		.tagBlock('tfc:loose_rocks')
+		.tagItem('tfc:any_knapping')
+		.tagItem('tfc:rock_knapping')
+		.tagItem(`tfc:${global.STONE_CHARACS.deepslate.type}_rock`)
+		.tagBoth(`tfc:${global.STONE_CHARACS.deepslate.type}_items`)
+		.tagItem("rnr:loose_rock_items")
+
+	event.create('tfg:loose/dripstone', 'tfc:loose_rock')
+		.soundType(global.STONE_CHARACS.dripstone.sound)
+		.itemTexture('tfg:item/loose/dripstone')
+		.rockTypeModel(global.STONE_CHARACS.dripstone.type)
+		.translationKey("block.tfg.loose.dripstone")
+		.mapColor(global.STONE_CHARACS.blackstone.mapColor)
+		.tagBlock('tfc:loose_rocks')
+		.tagItem('tfc:any_knapping')
+		.tagItem('tfc:rock_knapping')
+		.tagItem(`tfc:${global.STONE_CHARACS.dripstone.type}_rock`)
+		.tagBoth(`tfc:${global.STONE_CHARACS.dripstone.type}_items`)
+		.tagItem("rnr:loose_rock_items")
+
+	event.create('tfg:loose/crackrack', 'tfc:loose_rock')
+		.soundType(global.STONE_CHARACS.crackrack.sound)
+		.itemTexture('tfg:item/loose/crackrack')
+		.rockTypeModel(global.STONE_CHARACS.crackrack.type)
+		.translationKey("block.tfg.loose.crackrack")
+		.mapColor(global.STONE_CHARACS.crackrack.mapColor)
+		.tagBlock('tfc:loose_rocks')
+		.tagItem('tfc:any_knapping')
+		.tagItem('tfc:rock_knapping')
+		.tagItem(`tfc:${global.STONE_CHARACS.crackrack.type}_rock`)
+		.tagBoth(`tfc:${global.STONE_CHARACS.crackrack.type}_items`)
+		.tagItem("rnr:loose_rock_items")
+
 	event.create('tfg:loose/moon_stone', 'tfc:loose_rock')
 		.soundType(global.STONE_CHARACS.moon.sound)
 		.itemTexture('tfg:item/loose/moon_stone')
@@ -340,6 +415,37 @@ function registerTFGSpaceBlocks(event) {
 	// #endregion Loose stones
 	
 	// #region Spikes
+
+	event.create('tfg:spike/deepslate_spike', 'tfc:rock_spike')
+		.textureAll('minecraft:block/deepslate')
+		.soundType(global.STONE_CHARACS.deepslate.sound)
+		.tagBoth(`tfc:${global.STONE_CHARACS.deepslate.type}_items`)
+		.mapColor(global.STONE_CHARACS.deepslate.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.hardness(0.8)
+		.resistance(0.8)
+		.requiresTool(true)
+
+	event.create('tfg:spike/blackstone_spike', 'tfc:rock_spike')
+		.textureAll('minecraft:block/blackstone')
+		.soundType(global.STONE_CHARACS.blackstone.sound)
+		.tagBoth(`tfc:${global.STONE_CHARACS.blackstone.type}_items`)
+		.mapColor(global.STONE_CHARACS.blackstone.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.hardness(0.8)
+		.resistance(0.8)
+		.requiresTool(true)
+
+	event.create('tfg:spike/dripstone_spike', 'tfc:rock_spike')
+		.textureAll('minecraft:block/dripstone_block')
+		.soundType(global.STONE_CHARACS.dripstone.sound)
+		.tagBoth(`tfc:${global.STONE_CHARACS.dripstone.type}_items`)
+		.mapColor(global.STONE_CHARACS.dripstone.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.hardness(0.8)
+		.resistance(0.8)
+		.requiresTool(true)
+
 	event.create('tfg:spike/moon_stone_spike', 'tfc:rock_spike')
 		.textureAll('ad_astra:block/moon_stone')
 		.soundType(global.STONE_CHARACS.moon.sound)
@@ -407,6 +513,166 @@ function registerTFGSpaceBlocks(event) {
 	// #endregion Spikes
 	
 	// #region Cobblestones
+
+	// Deepslate
+	event.create('tfg:rock/mossy_cobble_deepslate')
+		.soundType(global.STONE_CHARACS.deepslate.sound)
+		.tagBoth('forge:cobblestone')
+		.tagBoth('forge:cobblestone/normal')
+		.tagBoth(`tfc:${global.STONE_CHARACS.deepslate.type}_items`)
+		.mapColor(global.STONE_CHARACS.deepslate.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfc:can_landslide')
+		.fullBlock(true)
+		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/mossy_cobble_deepslate_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.deepslate.sound)
+			.tagBoth(`tfg:rock_${shape}s`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.deepslate.type}_items`)
+			.mapColor(global.STONE_CHARACS.deepslate.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	// Blackstone
+	event.create('tfg:rock/cobble_blackstone')
+		.soundType(global.STONE_CHARACS.blackstone.sound)
+		.tagBoth('forge:cobblestone')
+		.tagBoth('forge:cobblestone/normal')
+		.tagBoth(`tfc:${global.STONE_CHARACS.blackstone.type}_items`)
+		.mapColor(global.STONE_CHARACS.blackstone.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfc:can_landslide')
+		.fullBlock(true)
+		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cobble_blackstone_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.blackstone.sound)
+			.textureAll('minecraft:block/blackstone_top')
+			.tagBoth(`tfg:rock_${shape}s`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.blackstone.type}_items`)
+			.mapColor(global.STONE_CHARACS.blackstone.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	event.create('tfg:rock/mossy_cobble_blackstone')
+		.soundType(global.STONE_CHARACS.blackstone.sound)
+		.tagBoth('forge:cobblestone')
+		.tagBoth('forge:cobblestone/normal')
+		.tagBoth(`tfc:${global.STONE_CHARACS.blackstone.type}_items`)
+		.mapColor(global.STONE_CHARACS.blackstone.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfc:can_landslide')
+		.fullBlock(true)
+		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/mossy_cobble_blackstone_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.blackstone.sound)
+			.tagBoth(`tfg:rock_${shape}s`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.blackstone.type}_items`)
+			.mapColor(global.STONE_CHARACS.blackstone.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	// Dripstone
+	event.create('tfg:rock/cobble_dripstone')
+		.soundType(global.STONE_CHARACS.dripstone.sound)
+		.tagBoth('forge:cobblestone')
+		.tagBoth('forge:cobblestone/normal')
+		.tagBoth(`tfc:${global.STONE_CHARACS.dripstone.type}_items`)
+		.mapColor(global.STONE_CHARACS.dripstone.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfc:can_landslide')
+		.fullBlock(true)
+		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cobble_dripstone_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.dripstone.sound)
+			.tagBoth(`tfg:rock_${shape}s`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.dripstone.type}_items`)
+			.mapColor(global.STONE_CHARACS.dripstone.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	event.create('tfg:rock/mossy_cobble_dripstone')
+		.soundType(global.STONE_CHARACS.dripstone.sound)
+		.tagBoth('forge:cobblestone')
+		.tagBoth('forge:cobblestone/normal')
+		.tagBoth(`tfc:${global.STONE_CHARACS.dripstone.type}_items`)
+		.mapColor(global.STONE_CHARACS.dripstone.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfc:can_landslide')
+		.fullBlock(true)
+		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/mossy_cobble_dripstone_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.dripstone.sound)
+			.tagBoth(`tfg:rock_${shape}s`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.dripstone.type}_items`)
+			.mapColor(global.STONE_CHARACS.dripstone.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	// Crackrack
+	event.create('tfg:rock/cobble_crackrack')
+		.soundType(global.STONE_CHARACS.crackrack.sound)
+		.tagBoth('forge:cobblestone')
+		.tagBoth('forge:cobblestone/normal')
+		.tagBoth(`tfc:${global.STONE_CHARACS.crackrack.type}_items`)
+		.mapColor(global.STONE_CHARACS.crackrack.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfc:can_landslide')
+		.fullBlock(true)
+		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cobble_crackrack_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.crackrack.sound)
+			.tagBoth(`tfg:rock_${shape}s`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.crackrack.type}_items`)
+			.mapColor(global.STONE_CHARACS.crackrack.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	event.create('tfg:rock/mossy_cobble_crackrack')
+		.soundType(global.STONE_CHARACS.crackrack.sound)
+		.tagBoth('forge:cobblestone')
+		.tagBoth('forge:cobblestone/normal')
+		.tagBoth(`tfc:${global.STONE_CHARACS.crackrack.type}_items`)
+		.mapColor(global.STONE_CHARACS.crackrack.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfc:can_landslide')
+		.fullBlock(true)
+		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/mossy_cobble_crackrack_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.crackrack.sound)
+			.tagBoth(`tfg:rock_${shape}s`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.crackrack.type}_items`)
+			.mapColor(global.STONE_CHARACS.crackrack.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
 	// Moon
 	event.create('tfg:rock/cobble_moon_wall', 'wall')
 		.soundType(global.STONE_CHARACS.moon.sound)
@@ -685,6 +951,50 @@ function registerTFGSpaceBlocks(event) {
 	// #endregion Cobblestones
 	
 	// #region Gravels
+	event.create('tfg:rock/gravel_deepslate')
+		.soundType('gravel')
+		.tagBoth('forge:gravel')
+		.tagBoth('tfc:rock/gravel')
+		.tagBoth(`tfc:${global.STONE_CHARACS.deepslate.type}_items`)
+		.mapColor(global.STONE_CHARACS.deepslate.mapColor)
+		.tagBlock('minecraft:mineable/shovel')
+		.tagBlock('tfc:can_landslide')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:rock/gravel_blackstone')
+		.soundType('gravel')
+		.tagBoth('forge:gravel')
+		.tagBoth('tfc:rock/gravel')
+		.tagBoth(`tfc:${global.STONE_CHARACS.blackstone.type}_items`)
+		.mapColor(global.STONE_CHARACS.blackstone.mapColor)
+		.tagBlock('minecraft:mineable/shovel')
+		.tagBlock('tfc:can_landslide')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:rock/gravel_dripstone')
+		.soundType('gravel')
+		.tagBoth('forge:gravel')
+		.tagBoth('tfc:rock/gravel')
+		.tagBoth(`tfc:${global.STONE_CHARACS.dripstone.type}_items`)
+		.mapColor(global.STONE_CHARACS.dripstone.mapColor)
+		.tagBlock('minecraft:mineable/shovel')
+		.tagBlock('tfc:can_landslide')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:rock/gravel_crackrack')
+		.soundType('gravel')
+		.tagBoth('forge:gravel')
+		.tagBoth('tfc:rock/gravel')
+		.tagBoth(`tfc:${global.STONE_CHARACS.crackrack.type}_items`)
+		.mapColor(global.STONE_CHARACS.crackrack.mapColor)
+		.tagBlock('minecraft:mineable/shovel')
+		.tagBlock('tfc:can_landslide')
+		.fullBlock(true)
+		.opaque(true)
+
 	event.create('tfg:rock/gravel_moon')
 		.soundType('gravel')
 		.tagBoth('forge:gravel')
@@ -775,6 +1085,28 @@ function registerTFGSpaceBlocks(event) {
 	// #endregion Gravels
 	
 	// #region Smooth (Polished/Cut) Stones
+
+	event.create('tfg:rock/polished_crackrack')
+		.soundType(global.STONE_CHARACS.crackrack.sound)
+		.tagBoth('forge:smooth_stone')
+		.tagBoth('tfc:igneous_intrusive_items')
+		.tagBoth('tfc:rock/smooth')
+		.mapColor('crimson_stem')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/polished_crackrack_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.crackrack.sound)
+			.tagBoth(`tfg:rock_${shape}s`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.crackrack.type}_items`)
+			.mapColor(global.STONE_CHARACS.crackrack.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
 	event.create('tfg:rock/polished_moon_wall', 'wall')
 		.soundType(global.STONE_CHARACS.moon.sound)
 		.textureAll('ad_astra:block/polished_moon_stone')
@@ -871,6 +1203,174 @@ function registerTFGSpaceBlocks(event) {
 	// #endregion Smooth (Polished/Cut) Stones
 	
 	// #region Bricks / Decorative
+
+	// Deepslate
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cracked_bricks_deepslate_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.deepslate.sound)
+			.textureAll('minecraft:block/cracked_deepslate_bricks')
+			.tagBoth(`tfg:brick_${shape}`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.deepslate.type}_items`)
+			.mapColor(global.STONE_CHARACS.deepslate.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cracked_tiles_deepslate_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.deepslate.sound)
+			.textureAll('minecraft:block/cracked_deepslate_tiles')
+			.tagBoth(`tfg:brick_${shape}`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.deepslate.type}_items`)
+			.mapColor(global.STONE_CHARACS.deepslate.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	event.create('tfg:rock/mossy_bricks_deepslate')
+		.soundType(global.STONE_CHARACS.deepslate.sound)
+		.tagBoth('minecraft:stone_bricks')
+		.tagBoth('forge:stone_bricks')
+		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
+		.tagBoth(`tfc:${global.STONE_CHARACS.deepslate.type}_items`)
+		.mapColor(global.STONE_CHARACS.deepslate.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/mossy_bricks_deepslate_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.deepslate.sound)
+			.tagBoth(`tfg:brick_${shape}`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.deepslate.type}_items`)
+			.mapColor(global.STONE_CHARACS.deepslate.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	// Blackstone
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cracked_bricks_blackstone_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.blackstone.sound)
+			.textureAll('minecraft:block/cracked_polished_blackstone_bricks')
+			.tagBoth(`tfg:brick_${shape}`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.blackstone.type}_items`)
+			.mapColor(global.STONE_CHARACS.blackstone.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	event.create('tfg:rock/mossy_bricks_blackstone')
+		.soundType(global.STONE_CHARACS.blackstone.sound)
+		.tagBoth('minecraft:stone_bricks')
+		.tagBoth('forge:stone_bricks')
+		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
+		.tagBoth(`tfc:${global.STONE_CHARACS.blackstone.type}_items`)
+		.mapColor(global.STONE_CHARACS.blackstone.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/mossy_bricks_blackstone_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.blackstone.sound)
+			.tagBoth(`tfg:brick_${shape}`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.blackstone.type}_items`)
+			.mapColor(global.STONE_CHARACS.blackstone.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	// Dripstone
+	event.create('tfg:rock/cracked_bricks_dripstone')
+		.soundType(global.STONE_CHARACS.dripstone.sound)
+		.tagBoth('minecraft:stone_bricks')
+		.tagBoth('forge:stone_bricks')
+		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
+		.tagBoth(`tfc:${global.STONE_CHARACS.dripstone.type}_items`)
+		.mapColor(global.STONE_CHARACS.dripstone.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cracked_bricks_dripstone_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.dripstone.sound)
+			.tagBoth(`tfg:brick_${shape}`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.dripstone.type}_items`)
+			.mapColor(global.STONE_CHARACS.dripstone.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	event.create('tfg:rock/mossy_bricks_dripstone')
+		.soundType(global.STONE_CHARACS.dripstone.sound)
+		.tagBoth('minecraft:stone_bricks')
+		.tagBoth('forge:stone_bricks')
+		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
+		.tagBoth(`tfc:${global.STONE_CHARACS.dripstone.type}_items`)
+		.mapColor(global.STONE_CHARACS.dripstone.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/mossy_bricks_dripstone_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.dripstone.sound)
+			.tagBoth(`tfg:brick_${shape}`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.dripstone.type}_items`)
+			.mapColor(global.STONE_CHARACS.dripstone.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	// Crackrack
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/cracked_bricks_nether_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.nether.sound)
+			.textureAll('minecraft:block/cracked_nether_bricks')
+			.tagBoth(`tfg:brick_${shape}`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.nether.type}_items`)
+			.mapColor(global.STONE_CHARACS.nether.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
+	event.create('tfg:rock/mossy_bricks_nether')
+		.soundType(global.STONE_CHARACS.nether.sound)
+		.tagBoth('minecraft:stone_bricks')
+		.tagBoth('forge:stone_bricks')
+		.tagBoth('tfc:rock/bricks')
+		.tagBoth('tfc:rock/mossy_bricks')
+		.tagBoth(`tfc:${global.STONE_CHARACS.nether.type}_items`)
+		.mapColor(global.STONE_CHARACS.nether.mapColor)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.fullBlock(true)
+		.opaque(true)
+
+	SHAPES.forEach(shape => {
+		event.create(`tfg:rock/mossy_bricks_nether_${shape}`, shape)
+			.soundType(global.STONE_CHARACS.nether.sound)
+			.tagBoth(`tfg:brick_${shape}`.replace(/ss/g, 's'))
+			.tagBoth(`tfc:${global.STONE_CHARACS.nether.type}_items`)
+			.mapColor(global.STONE_CHARACS.nether.mapColor)
+			.tagBlock('minecraft:mineable/pickaxe')
+			.fullBlock(true)
+			.opaque(true)
+	})
+
 	// Moon Stone
 	SHAPES.forEach(shape => {
 		event.create(`tfg:rock/cracked_bricks_moon_${shape}`, shape)
@@ -1332,300 +1832,4 @@ function registerTFGSpaceBlocks(event) {
 
 	// #endregion Sandstone
 
-	// #region Plants
-
-	/*
-	Custom TFG Builder information https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-TFG-Custom-Kubejs-Scripts
-	*/
-
-	event.create('tfg:lunar_roots', 'tfg:decorative_plant')
-		.soundType('nether_wart')
-		.lightLevel(0.4)
-		.tagItem('tfg:moon_plants')
-		.tagBlock('minecraft:replaceable')
-
-	event.create('tfg:lunar_sprouts', 'tfg:decorative_plant')
-		.soundType('nether_wart')
-		.tagItem('tfg:moon_plants')
-		.tagBlock('minecraft:replaceable')
-
-	event.create('tfg:corallium_arenicolus_0', 'tfg:tall_decorative_plant')
-		.height(2)
-		.soundType('nether_wart')
-		.tagItem('tfg:venus_plants')
-		.lightLevel(0.4)
-		.renderType('translucent')
-
-	event.create('tfg:corallium_arenicolus_1', 'tfg:decorative_plant')
-		.soundType('nether_wart')
-		.tagItem('tfg:venus_plants')
-		.box(3, 0, 3, 13, 14, 13)
-
-	event.create('tfg:corallium_arenicolus_2', 'tfg:decorative_plant')
-		.soundType('nether_wart')
-		.tagItem('tfg:venus_plants')
-		.renderType('translucent')
-		.box(0, 0, 0, 16, 4, 16)
-
-	event.create('tfg:corallium_arenicolus_3', 'tfg:decorative_plant')
-		.soundType('nether_wart')
-		.tagItem('tfg:venus_plants')
-		.box(3, 0, 3, 13, 14, 13)
-
-	event.create('tfg:corallium_arenicolus_4', 'tfg:decorative_plant')
-		.soundType('nether_wart')
-		.tagItem('tfg:venus_plants')
-		.box(3, 0, 3, 13, 14, 13)
-
-	event.create('tfg:corallium_arenicolus_5', 'tfg:decorative_plant')
-		.soundType('nether_wart')
-		.tagItem('tfg:venus_plants')
-		.box(3, 0, 3, 13, 14, 13)
-
-	event.create('tfg:geyser_source', 'tfg:particle_emitter_decoration')
-		.soundType('dripstone_block')
-		.mapColor('color_white')
-		.resistance(6)
-		.hardness(1.5)
-		.particleOffset(0.3, 1, 0.3)
-		.particleVelocity(0, 0.1, 0)
-		.particle('minecraft:campfire_signal_smoke')
-		.particleCount(5)
-		.particleForced(true)
-
-	event.create('tfg:geyser_source_small', 'tfg:particle_emitter_decoration')
-		.soundType('dripstone_block')
-		.mapColor('color_white')
-		.resistance(6)
-		.hardness(1.5)
-		.particleOffset(0.3, 1, 0.3)
-		.particleVelocity(0, 0.05, 0)
-		.particle('minecraft:campfire_cosy_smoke')
-		.particleCount(2)
-		.particleForced(false)
-
-	event.create('tfg:stromatolite_cluster_small', 'tfg:decorative_plant')
-		.soundType('dripstone_block')
-		.mapColor('color_brown')
-		.box(3, 0, 3, 13, 6, 13)
-
-	event.create('tfg:stromatolite_cluster_medium', 'tfg:decorative_plant')
-		.soundType('dripstone_block')
-		.mapColor('color_brown')
-		.box(3, 0, 3, 13, 14, 13)
-
-	// #endregion
-
-	// #region Mars Blocks
-
-	event.create('tfg:spice', 'tfg:particle_emitter')
-		.textureAll('tfg:block/sand_spice')
-		.soundType('sand')
-		.hardness(2)
-		.resistance(6)
-		// makes it invisible on xaeros, so people can't use it to find the deposits :)
-		.mapColor('none')
-		.particleOffset(0.3, 1.5, 0.3)
-		.particleVelocity(0, 0.05, 0)
-		.particle('electric_spark')
-		.particleCount(2)
-		.particleForced(false)
-		.fullBlock(true)
-		.opaque(true)
-
-	event.create('tfg:groundcover/glider_feather', 'tfc:ground_cover')
-		.box(4, 0, 4, 12, 2, 12)
-		.soundType('wool')
-		.groundCoverModelShape('feather')
-		.withPreexistingItem('wan_ancient_beasts:glider_feather')
-		.textureAll('wan_ancient_beasts:item/glider_feather')
-		.tagBlock('tfc:can_be_snow_piled')
-
-	event.create('tfg:groundcover/wraptor_feather', 'tfc:ground_cover')
-		.box(4, 0, 4, 12, 2, 12)
-		.soundType('wool')
-		.groundCoverModelShape('feather')
-		.withPreexistingItem('minecraft:feather')
-		.textureAll('tfg:item/wraptor_wool')
-		.tagBlock('tfc:can_be_snow_piled')
-
-	event.create('tfg:groundcover/aeronos_stick', 'tfc:ground_cover')
-		.box(3, 0, 3, 13, 3, 13)
-		.groundCoverModelShape('twig')
-		.withPreexistingItem('tfg:twigs/aeronos')
-		.tagBlock('tfc:can_be_snow_piled')
-		.texture('particle', 'ad_astra:block/aeronos_stem')
-		.texture('all', 'ad_astra:block/aeronos_stem')
-		.texture('top', 'ad_astra:block/aeronos_stem_inside')
-
-	event.create('tfg:groundcover/strophar_stick', 'tfc:ground_cover')
-		.box(3, 0, 3, 13, 3, 13)
-		.groundCoverModelShape('twig')
-		.withPreexistingItem('tfg:twigs/strophar')
-		.tagBlock('tfc:can_be_snow_piled')
-		.texture('particle', 'ad_astra:block/strophar_stem')
-		.texture('all', 'ad_astra:block/strophar_stem')
-		.texture('top', 'ad_astra:block/strophar_stem_inside')
-
-	event.create('tfg:groundcover/glacian_stick', 'tfc:ground_cover')
-		.box(3, 0, 3, 13, 3, 13)
-		.groundCoverModelShape('twig')
-		.withPreexistingItem('tfg:twigs/glacian')
-		.tagBlock('tfc:can_be_snow_piled')
-		.texture('particle', 'ad_astra:block/glacian_log')
-		.texture('all', 'ad_astra:block/glacian_log')
-		.texture('top', 'ad_astra:block/glacian_log_top')
-
-	event.create('tfg:groundcover/alphacene_stick', 'tfc:ground_cover')
-		.box(3, 0, 3, 13, 3, 13)
-		.groundCoverModelShape('twig')
-		.withPreexistingItem('tfg:twigs/alphacene')
-		.tagBlock('tfc:can_be_snow_piled')
-		.texture('particle', 'species:block/alphacene_mushroom_block')
-		.texture('all', 'species:block/alphacene_mushroom_block')
-		.texture('top', 'minecraft:block/mushroom_stem')
-
-	// #endregion
-
-	//#region Venus Blocks
-	//Fluorapatite
-	const fluorapatite_colors = ['blue', 'green', 'brown', 'orange', 'white', 'yellow'];
-	fluorapatite_colors.forEach(color => {
-		const mapColor = color === 'white' ? 'quartz' : `color_${color}`;
-
-		//Sand
-		event.create(`tfg:sand/fluorapatite/${color}`, 'falling')
-			.textureAll(`tfg:block/planets/venus/sand_fluorapatite_${color}`)
-			.soundType('sand')
-			.requiresTool(false)
-			.tagBoth('forge:sand')
-			.tagItem('forge:sand/fluorapatite')
-			.tagBlock('minecraft:mineable/shovel')
-			.mapColor(mapColor)
-			.fullBlock(true)
-			.opaque(true)
-		//Raw Sandstone
-		event.create(`tfg:sandstone/raw/fluorapatite/${color}`)
-			.textureAll(`tfg:block/planets/venus/sandstone_bottom_fluorapatite_${color}`)
-			.texture('up', `tfg:block/planets/venus/sandstone_top_fluorapatite_${color}`)
-			.hardness(0.8)
-			.resistance(0.8)
-			.soundType('stone')
-			.requiresTool(true)
-			.tagBoth('forge:sandstone')
-			.tagItem('forge:sandstone/fluorapatite')
-			.tagBlock('minecraft:mineable/pickaxe')
-			.mapColor(mapColor)
-			.fullBlock(true)
-			.opaque(true)
-		//Smooth Sandstone
-		event.create(`tfg:sandstone/smooth/fluorapatite/${color}`)
-			.textureAll(`tfg:block/planets/venus/sandstone_top_fluorapatite_${color}`)
-			.hardness(0.8)
-			.resistance(0.8)
-			.soundType('stone')
-			.requiresTool(true)
-			.tagBoth('forge:sandstone')
-			.tagItem('forge:sandstone/fluorapatite')
-			.tagBlock('minecraft:mineable/pickaxe')
-			.mapColor(mapColor)
-			.fullBlock(true)
-			.opaque(true)
-		//Chiseled Sandstone
-		event.create(`tfg:sandstone/smooth/chiseled/fluorapatite/${color}`)
-			.textureAll(`tfg:block/planets/venus/sandstone_chiseled_fluorapatite_${color}`)
-			.texture('up', `tfg:block/planets/venus/sandstone_top_fluorapatite_${color}`)
-			.texture('down', `tfg:block/planets/venus/sandstone_bottom_fluorapatite_${color}`)
-			.hardness(0.8)
-			.resistance(0.8)
-			.soundType('stone')
-			.requiresTool(true)
-			.tagBoth('forge:sandstone')
-			.tagItem('forge:sandstone/fluorapatite')
-			.tagBlock('minecraft:mineable/pickaxe')
-			.mapColor(mapColor)
-			.fullBlock(true)
-			.opaque(true)
-		//Sandstone
-		event.create(`tfg:sandstone/fluorapatite/${color}`)
-			.textureAll(`tfg:block/planets/venus/sandstone_fluorapatite_${color}`)
-			.texture('down', `tfg:block/planets/venus/sandstone_bottom_fluorapatite_${color}`)
-			.texture('up', `tfg:block/planets/venus/sandstone_top_fluorapatite_${color}`)
-			.hardness(0.8)
-			.resistance(0.8)
-			.soundType('stone')
-			.requiresTool(true)
-			.tagBoth('forge:sandstone')
-			.tagItem('forge:sandstone/fluorapatite')
-			.tagBlock('minecraft:mineable/pickaxe')
-			.mapColor(mapColor)
-			.fullBlock(true)
-			.opaque(true)
-	})
-
-	//#region Venus Stone
-
-	//Stromatolite
-	event.create('tfg:rock/raw/stromatolite', 'tfc:raw_rock')
-		.textureAll('tfg:block/planets/venus/stromatolite_spike')
-		.model('tfg:block/rock/stromatolite_block')
-		.rockTypeTooltip(Text.translatable('tooltip.tfg.sedimentary'))
-		.naturallySupported(true)
-		.sedimentary()
-		.renderType('cutout')
-		.soundType('dripstone_block')
-		.requiresTool(true)
-		.hardness(0.8)
-		.resistance(0.8)
-		.tagBlock('minecraft:mineable/pickaxe')
-
-    event.create('tfg:rock/spike/stromatolite', 'tfc:rock_spike')
-		.textureAll('tfg:block/planets/venus/stromatolite_spike')
-		.soundType('dripstone_block')
-		.hardness(0.8)
-		.resistance(0.8)
-		.requiresTool(true)
-		.tagBlock('minecraft:mineable/pickaxe')
-
-	//Geyserite
-	event.create('tfg:rock/raw/geyserite', 'tfc:raw_rock')
-		.textureAll('tfg:block/planets/venus/geyserite')
-		.rockTypeTooltip(Text.translatable('tooltip.tfg.sedimentary'))
-		.naturallySupported(true)
-		.mapColor('quartz')
-		.sedimentary()
-		.soundType('dripstone_block')
-		.requiresTool(true)
-		.hardness(0.8)
-		.resistance(0.8)
-		.tagBlock('minecraft:mineable/pickaxe')
-
-    event.create('tfg:rock/spike/geyserite', 'tfc:rock_spike')
-		.textureAll('tfg:block/planets/venus/geyserite')
-		.soundType('dripstone_block')
-		.mapColor('quartz')
-		.hardness(0.8)
-		.resistance(0.8)
-		.requiresTool(true)
-		.tagBlock('minecraft:mineable/pickaxe')
-
-	// Halite
-	event.create('tfg:rock/halite')
-		.mapColor('quartz')
-		.soundType('deepslate')
-		.hardness(0.8)
-		.resistance(0.8)
-		.requiresTool(true)
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
-	event.create('tfg:rock/halite2')
-		.mapColor('snow')
-		.soundType('deepslate')
-		.hardness(0.8)
-		.resistance(0.8)
-		.requiresTool(true)
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
 }

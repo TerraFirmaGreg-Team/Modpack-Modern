@@ -2,14 +2,11 @@
 "use strict";
 
 StartupEvents.registry('item', event => {
-	registerBetterEndItems(event)
-    registerGTCEuItems(event)
     registerTFGItems(event)
 })
 
 StartupEvents.registry('block', event => {
     registerTFGBlocks(event)
-	registerBetterEndBlocks(event)
 })
 
 StartupEvents.registry('entity_type', event => {
@@ -32,7 +29,6 @@ ItemEvents.modification(event => {
 
 StartupEvents.registry('fluid', event => {
 	registerTFGFluids(event)
-	registerAE2Fluids(event)
 })
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
@@ -51,26 +47,19 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
-	registerAdAstraMaterials(event)
 	registerAE2Materials(event)
 	registerCreateMaterials(event)
-	registerTFCMaterials(event)
-	registerGTCEuMaterials(event)
 	registerGreateMaterials(event)
 	registerTFGMaterials(event)
-	registerTFGNuclearMaterials(event)
-	registerTFGBiolineMaterials(event)
-	registerTFGPowerReworkMaterials(event)
 })
 
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
-	registerTFCIconSets(event)
+	registerTFGIconSets(event)
 })
 
 GTCEuStartupEvents.materialModification(event => {
 	registerGTCEuMaterialModification(event)
 	registerGreateMaterialModification(event)
-	registerAdAstraMaterialModification(event)
 })
 
 GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {

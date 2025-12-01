@@ -1,31 +1,6 @@
-// priority: 0
 "use strict";
 
-function registerBetterEndBlocks(event) {
-
-	// Moon
-
-	event.create('betterend:chorus_lily', 'tfc:ground_cover')
-		.soundType('cherry_wood')
-		.hardness(0.5)
-		.tagItem('tfg:moon_plants')
-		.tagBlock('minecraft:mineable/hoe')
-		.tagBlock('tfg:do_not_destroy_in_space')
-		.mapColor('terracotta_white')
-		.box(0, 0, 0, 16, 6, 16)
-		.fullBlock(false)
-		.opaque(false)
-		.notSolid()
-		.renderType('cutout')
-
-	// 1 block tall
-	createPlant(event, 'inflexia', 'moon')
-	createPlant(event, 'chorus_grass', 'moon')
-	createPlant(event, 'salteago', 'moon')
-	createPlant(event, 'vaiolush_fern', 'moon')
-
-
-	// Mars
+function registerTFGWorldGenMarsDecoBlocks(event) {
 
 	// 1 block tall
 	createPlant(event, 'aeridium', 'mars')
@@ -202,40 +177,74 @@ function registerBetterEndBlocks(event) {
 		.tagBlock('tfg:do_not_destroy_in_space')
 		.mapColor('color_orange')
 
-	// europa...?
+	// Ground cover
 
-	createPlant(event, 'crystal_grass', 'unused')
-		.box(3, 0, 3, 13, 12, 13)
-	createPlant(event, 'blooming_cooksonia', 'unused')
-		.box(3, 0, 3, 13, 12, 13)
-	createPlant(event, 'fracturn', 'unused')
-		.box(3, 0, 3, 13, 12, 13)
-	createPlant(event, 'jungle_grass', 'unused')
-		.box(3, 0, 3, 13, 12, 13)
-}
-
-/**
- * @param {any} event
- * @param {string} id
- * @param {string} planet
- */
-function createPlant(event, id, planet) {
-	return event.create(`betterend:${id}`, 'tfg:decorative_plant')
-		.tagItem(`tfg:${planet}_plants`)
-		.tagBlock('minecraft:replaceable')
-		.tagBlock('tfg:do_not_destroy_in_space')
+	event.create('tfg:groundcover/glider_feather', 'tfc:ground_cover')
+		.box(4, 0, 4, 12, 2, 12)
+		.soundType('wool')
+		.groundCoverModelShape('feather')
+		.withPreexistingItem('wan_ancient_beasts:glider_feather')
+		.textureAll('wan_ancient_beasts:item/glider_feather')
 		.tagBlock('tfc:can_be_snow_piled')
-}
 
-/**
- * @param {any} event
- * @param {string} id
- * @param {string} planet
- */
-function createWaterPlant(event, id, planet) {
-	return event.create(`betterend:${id}`, 'tfg:decorative_plant')
-		.tagItem(`tfg:${planet}_plants`)
-		.tagBlock('minecraft:replaceable')
-		.tagBlock('tfg:do_not_destroy_in_space')
-		.tagBlock('tfc:can_be_ice_piled')
+	event.create('tfg:groundcover/wraptor_feather', 'tfc:ground_cover')
+		.box(4, 0, 4, 12, 2, 12)
+		.soundType('wool')
+		.groundCoverModelShape('feather')
+		.withPreexistingItem('minecraft:feather')
+		.textureAll('tfg:item/wraptor_wool')
+		.tagBlock('tfc:can_be_snow_piled')
+
+	event.create('tfg:groundcover/aeronos_stick', 'tfc:ground_cover')
+		.box(3, 0, 3, 13, 3, 13)
+		.groundCoverModelShape('twig')
+		.withPreexistingItem('tfg:twigs/aeronos')
+		.tagBlock('tfc:can_be_snow_piled')
+		.texture('particle', 'ad_astra:block/aeronos_stem')
+		.texture('all', 'ad_astra:block/aeronos_stem')
+		.texture('top', 'ad_astra:block/aeronos_stem_inside')
+
+	event.create('tfg:groundcover/strophar_stick', 'tfc:ground_cover')
+		.box(3, 0, 3, 13, 3, 13)
+		.groundCoverModelShape('twig')
+		.withPreexistingItem('tfg:twigs/strophar')
+		.tagBlock('tfc:can_be_snow_piled')
+		.texture('particle', 'ad_astra:block/strophar_stem')
+		.texture('all', 'ad_astra:block/strophar_stem')
+		.texture('top', 'ad_astra:block/strophar_stem_inside')
+
+	event.create('tfg:groundcover/glacian_stick', 'tfc:ground_cover')
+		.box(3, 0, 3, 13, 3, 13)
+		.groundCoverModelShape('twig')
+		.withPreexistingItem('tfg:twigs/glacian')
+		.tagBlock('tfc:can_be_snow_piled')
+		.texture('particle', 'ad_astra:block/glacian_log')
+		.texture('all', 'ad_astra:block/glacian_log')
+		.texture('top', 'ad_astra:block/glacian_log_top')
+
+	event.create('tfg:groundcover/alphacene_stick', 'tfc:ground_cover')
+		.box(3, 0, 3, 13, 3, 13)
+		.groundCoverModelShape('twig')
+		.withPreexistingItem('tfg:twigs/alphacene')
+		.tagBlock('tfc:can_be_snow_piled')
+		.texture('particle', 'species:block/alphacene_mushroom_block')
+		.texture('all', 'species:block/alphacene_mushroom_block')
+		.texture('top', 'minecraft:block/mushroom_stem')
+		
+	// Misc
+
+	event.create('tfg:spice', 'tfg:particle_emitter')
+		.textureAll('tfg:block/sand_spice')
+		.soundType('sand')
+		.hardness(2)
+		.resistance(6)
+		// makes it invisible on xaeros, so people can't use it to find the deposits :)
+		.mapColor('none')
+		.particleOffset(0.3, 1.5, 0.3)
+		.particleVelocity(0, 0.05, 0)
+		.particle('electric_spark')
+		.particleCount(2)
+		.particleForced(false)
+		.fullBlock(true)
+		.opaque(true)
 }
