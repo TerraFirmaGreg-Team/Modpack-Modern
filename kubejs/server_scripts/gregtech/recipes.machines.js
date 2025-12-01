@@ -1119,7 +1119,7 @@ function registerGTCEuMachineRecipes(event) {
 
 	// Multiblock
 
-	event.shaped('gtceu:ostrum_linear_accelerator', [
+	event.shaped('tfg:ostrum_linear_accelerator', [
 		'USU',
 		'WZW',
 		'PTP'
@@ -1131,7 +1131,7 @@ function registerGTCEuMachineRecipes(event) {
 		T: '#forge:single_cables/platinum',
 		P: 'gtceu:iv_electric_pump'
 	}
-	).id('gtceu:shaped/ostrum_linear_accelerator')
+	).id('tfg:shaped/ostrum_linear_accelerator')
 
 	event.recipes.gtceu.assembler('tfg:ostrum_harvester')
 		.itemInputs(

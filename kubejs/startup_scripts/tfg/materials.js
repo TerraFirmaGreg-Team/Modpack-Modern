@@ -437,12 +437,12 @@ const registerTFGMaterials = (event) => {
 		.components('2x hydrogen', '12x tungsten', '42x oxygen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-	event.create('tfg:ammonium_tungstate')
-		.dust()
-		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES, GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.iconSet(GTMaterialIconSet.DULL)
-		.components('10x ammonia', '1x tfg:tungstate')
-		.color('0xfafafa')
+    event.create('tfg:ammonium_tungstate')
+        .dust()
+        .flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES, GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .iconSet(GTMaterialIconSet.DULL)
+        .components('10x ammonia', '2x hydrogen', '12x tungsten', '42x oxygen')
+        .color('0xfafafa')
 
 	event.create('tfg:apt')
 		.gem()
@@ -495,6 +495,7 @@ const registerTFGMaterials = (event) => {
 			GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES,
 			GTMaterialFlags.GENERATE_GEAR
 		)
+		.fluidPipeProperties(4250, 1700, true, false, false, false)
 
 	// #endregion
 

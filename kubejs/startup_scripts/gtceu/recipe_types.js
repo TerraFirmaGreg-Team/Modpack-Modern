@@ -39,10 +39,11 @@ const registerGTCEuRecipeTypes = (event) => {
 	event.create('heat_exchanger')
 		.category('heat_exchanger')
 		.setEUIO('in')
-		.setMaxIOSize(0, 0, 4, 4)
+		.setMaxIOSize(1, 0, 3, 3)
 		.setSlotOverlay(false, false, GuiTextures.ATOMIC_OVERLAY_1)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.TURBINE)
+
 /* Just keeping it in case we got mod issues
 	event.create('fission_reactor')
 		.category('fission_reactor')
@@ -68,12 +69,20 @@ const registerGTCEuRecipeTypes = (event) => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.TURBINE)
 
-	event.create('ostrum_linear_accelerator')
-        .category('ostrum_linear_accelerator')
+	event.create('dummy_recipe')
+        .category('dumme_recipe')
         .setEUIO('in')
         .setMaxIOSize(1, 3, 3, 3)
 		.setSlotOverlay(false, false, GuiTextures.EXTRACTOR_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRACT, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH)
+
+	event.create('coal_liquefaction_tower')
+        .category('coal_liquefaction_tower')
+        .setEUIO('in')
+        .setMaxIOSize(2, 0, 3, 3)
+		.setSlotOverlay(false, false, GuiTextures.HEATING_OVERLAY_1)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_DISTILLATION_TOWER, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COMBUSTION)
 
 }
