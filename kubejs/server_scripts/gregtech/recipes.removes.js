@@ -691,6 +691,8 @@ function removeGTCEURecipes(event) {
 	//event.remove({ id: 'gtceu:distillation_tower/distill_liquid_nether_air' })
 
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
+	event.remove({ id: 'gtceu:arc_furnace/arc_firebricks' })
+	event.remove({ id: 'gtceu:macerator/macerate_firebricks' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__ender_eye' })
 
 	event.remove({ id: 'gtceu:smelting/sticky_resin_from_slime' })
