@@ -40,6 +40,34 @@ function registerTFGEarlyPower(event) {
 		processingTime: 750
 	}).id('tfg:vi/vacuumizing/syngas_from_anthracite')
 
+	event.recipes.gtceu.brewery('tfg:syngas_from_charcoal')
+		.itemInputs('minecraft:charcoal')
+		.inputFluids('gtceu:creosote 250')
+		.outputFluids('tfg:syngas 100')
+		.duration(20*10)
+		.EUt(2)
+
+	event.recipes.gtceu.brewery('tfg:syngas_from_coal')
+		.itemInputs('minecraft:coal')
+		.inputFluids('gtceu:creosote 250')
+		.outputFluids('tfg:syngas 200')
+		.duration(20*10)
+		.EUt(2)
+
+	event.recipes.gtceu.brewery('tfg:syngas_from_coke')
+		.itemInputs('gtceu:coke_gem')
+		.inputFluids('gtceu:creosote 250')
+		.outputFluids('tfg:syngas 400')
+		.duration(20*10)
+		.EUt(2)
+
+	event.recipes.gtceu.brewery('tfg:syngas_from_anthracite')
+		.itemInputs('beneath:cursecoal')
+		.inputFluids('gtceu:creosote 250')
+		.outputFluids('tfg:syngas 400')
+		.duration(20*10)
+		.EUt(2)
+
 	//#region Reformate Gas
 
 	// Charcoal
