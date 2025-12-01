@@ -80,7 +80,7 @@ const registerGTCEuRecipeTypes = (event) => {
 	event.create('coal_liquefaction_tower')
         .category('coal_liquefaction_tower')
         .setEUIO('in')
-        .setMaxIOSize(0, 0, 4, 4)
+        .setMaxIOSize(2, 0, 3, 3)
 		.setSlotOverlay(false, false, GuiTextures.HEATING_OVERLAY_1)
         .setProgressBar(GuiTextures.PROGRESS_BAR_DISTILLATION_TOWER, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMBUSTION)
