@@ -1,4 +1,4 @@
-// priority: 0
+ // priority: 0
 "use strict";
 
 const registerTFGPowerReworkMaterials = (event) => {
