@@ -177,6 +177,8 @@
   "metaitem.crushed.tooltip.purify": "Бросьте в источник воды или нажмите ПКМ по котлу, для получения очищенной руды",
   "item.gtceu.tool.behavior.silk_ice": "§dSculptor:§r Silk harvests Packed Ice",
   "item.gtceu.tool.butchery_knife.tooltip": "§cButcher:§r Butchers animals for more meat",
+  "item.gtceu.tool.tooltip.repair_info": "",
+  "item.gtceu.tool.tooltip.repair_material": "",
   "gtceu.machine.lp_steam_extractor.tooltip": "§7Does not extract fluids",
   "gtceu.machine.hp_steam_extractor.tooltip": "§7Does not extract fluids",
   "gtceu.jei.bedrock_fluid.moon_helium": "Lunar Helium",
