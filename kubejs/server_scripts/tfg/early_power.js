@@ -71,6 +71,27 @@ function registerTFGEarlyPower(event) {
 		.circuit(2)
 		.EUt(GTValues.VHA[GTValues.LV])
 
+	// Anthracite
+
+	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_anthracite')
+		.itemInputs(Item.of('beneath:cursecoal', 5))
+		.inputFluids(Fluid.of('gtceu:creosote', 100))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 1000), Fluid.of('tfg:raw_aromatic_mix', 1000))
+		.duration(20*600)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.LV])
+	
+	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_anthracite_hydrogen')
+		.itemInputs(Item.of('beneath:cursecoal', 5))
+		.inputFluids(Fluid.of('gtceu:creosote', 1000))
+		.perTick(true)
+		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
+		.perTick(false)
+		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 1000), Fluid.of('tfg:raw_aromatic_mix', 1000))
+		.duration(20*200)
+		.circuit(2)
+		.EUt(GTValues.VHA[GTValues.LV])
+
 	// Aromatic Processing
 
 	event.recipes.gtceu.chemical_reactor('tfg:aromatic_feedstock')
