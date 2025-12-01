@@ -302,13 +302,13 @@ const registerGTCEURecipes = (event) => {
 
 	//#region Выход: Рыбье масло
 
-	event.recipes.gtceu.extractor(`tfg/fish_oil`)
+	event.recipes.gtceu.extractor(`tfg:fish_oil`)
 		.itemInputs('#minecraft:fishes')
 		.outputFluids(Fluid.of('gtceu:fish_oil', 200))
 		.duration(40)
 		.EUt(4)
 
-	event.recipes.gtceu.extractor(`tfg/tallow`)
+	event.recipes.gtceu.extractor(`tfg:tallow`)
 		.itemInputs('tfc:blubber')
 		.outputFluids(Fluid.of('tfc:tallow', 200))
 		.duration(40)
@@ -325,7 +325,7 @@ const registerGTCEURecipes = (event) => {
 
 	//#region Выход: Семянное масло
 
-	event.recipes.gtceu.extractor(`tfg/seed_oil`)
+	event.recipes.gtceu.extractor(`tfg:seed_oil`)
 		.itemInputs('#tfc:seeds')
 		.outputFluids(Fluid.of('gtceu:seed_oil', 50))
 		.duration(32)

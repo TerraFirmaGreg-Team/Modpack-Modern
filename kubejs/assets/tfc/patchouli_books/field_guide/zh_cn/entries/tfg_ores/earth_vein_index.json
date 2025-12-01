@@ -39,30 +39,10 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 150$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 20 — 120$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 10$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 安山岩, 板岩, 流纹岩, 燧石, 片岩, 片麻岩, 玄武岩, 白云岩, 白垩岩, 石灰岩, 石英岩, 砾岩, 粘土岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
+      "text": "$(thing)稀有度$(): 140$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 20 — 120$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 10$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 安山岩, 板岩, 流纹岩, 燧石, 片岩, 片麻岩, 玄武岩, 白云岩, 白垩岩, 石灰岩, 石英岩, 砾岩, 粘土岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
       "title": "塔基安石, 油砂",
       "type": "patchouli:text",
       "anchor": "normal_tarkianite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "油砂",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/oilsands"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 35%$(br)$(thing)来源$(): 自由 \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
@@ -82,6 +62,26 @@
       },
       "enable_visualize": false,
       "text": "$(thing)百分比$(): 35%$(br)$(thing)来源$(): 铼, 钼$(br)$(thing)化学式$(): CuFeRe₄Mo₄S₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "油砂",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/oilsands"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 35%$(br)$(thing)来源$(): 自由 \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
       "type": "patchouli:multiblock"
     },
     {

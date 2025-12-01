@@ -20,6 +20,10 @@ Added TFC Gurman, which adds even more food and drink
 - Oilsands dust can now be centrifuged in the mechanical centrifuge @Pyritie
 - All oils (both the petrochem kind and the cooking kind) can now be used to fuel small boilers as well @Pyritie
 - Reduced the cost of the ME Ingredient Buffer @Pyritie
+- Renamed Blubber to Animal Fat and added it to the drop tables of more animals (pigs drop a fair bit, orcas drop a ton). Renamed Fish Oil to Tallowate since you can turn animal fat into tallow into fish oil (now tallowate). From there you can turn it into biodiesel! @applenper @Pyritie
+- Removed black/red/blue arc furnace dust to ingot recipes, but changed the EBF recipes to MV (#2306) @applenper @Pyritie
+- Glass bottles and ceramic jugs can now hold the same fluids as wooden barrels, buckets, etc @Pyritie
+- Added fluid/item capacity tooltips to many fluid/item containers @Pyritie
 ### Bug fixes
 - Fixed brown gravy recipe @Redeix
 - Fixed instant mac recipe requiring less cardboard than it gives back @Redeix
@@ -33,6 +37,10 @@ Added TFC Gurman, which adds even more food and drink
 - Added missing food processor recipe for cocoa butter @Pyritie
 - Fixed recipe conflict with Epichlorohydrin and Sodium Hypochlorite (#2287) @Pyritie
 - Fixed summoned pet endermen not being able to survive in space or other planets @Pyritie
+- Fixed some recipe imbalances with trimethyl borate and related recipes @Pyritie
+- Fixed not being able to feed meat to the Cruncher (#2305) @Pyritie
+- Hopefully fixed rockets without a pilot getting stuck and not exploding? (#2137) @Pyritie
+- Fixed some missing blocks from the GT facade whitelist (#2299) @MoltonMontro
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra
