@@ -28,6 +28,7 @@
 - Added fluid/item capacity tooltips to many fluid/item containers @Pyritie
 - Spring water is now drinkable (it also heats you up a little) @Pyritie
 ### Bug fixes
+- Fixed the horse crank not working at all @Pyritie
 - Fixed brown gravy recipe @Redeix
 - Fixed instant mac recipe requiring less cardboard than it gives back @Redeix
 - Fixed Ad Astra moon cheese nutrition values being inconsistent @Redeix
