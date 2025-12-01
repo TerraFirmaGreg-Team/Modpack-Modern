@@ -45,6 +45,7 @@
 - Hopefully fixed rockets without a pilot getting stuck and not exploding? (#2137) @Pyritie
 - Fixed some missing blocks from the GT facade whitelist (#2299) @MoltonMontro
 - Changed the texture of the ME Stocking Input Bus + Hatch to match the hull used to craft them @Pyritie
+- Fixed warped/crimson trees only growing on mars mycelium and not mars dirt @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra
