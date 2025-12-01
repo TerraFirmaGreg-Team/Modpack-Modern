@@ -1680,15 +1680,15 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.large_chemical_reactor('tfg:scheelite_to_sodium_tungstate')
 		.itemInputs(Item.of('gtceu:scheelite_dust', 6))
 		.itemInputs(Item.of('gtceu:soda_ash_dust', 6))
-		.itemOutputs(Item.of('tfg:sodium_tungstate_dust', 6))
-		.itemOutputs(Item.of('gtceu:calcite_dust', 6))
+		.itemOutputs(Item.of('tfg:sodium_tungstate_dust', 7))
+		.itemOutputs(Item.of('gtceu:calcite_dust', 5))
 		.duration(20*12)
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.large_chemical_reactor('tfg:tungstate_to_sodium_tungstate')
-		.itemInputs(Item.of('gtceu:tungstate_dust', 6))
+		.itemInputs(Item.of('gtceu:tungstate_dust', 7))
 		.itemInputs(Item.of('gtceu:soda_ash_dust', 6))
-		.itemOutputs(Item.of('tfg:sodium_tungstate_dust', 6))
+		.itemOutputs(Item.of('tfg:sodium_tungstate_dust', 7))
 		.itemOutputs(Item.of('gtceu:lithium_dust', 2))
 		.itemOutputs(Item.of('gtceu:carbon_dust', 1))
 		.outputFluids(Fluid.of('gtceu:oxygen', 3000))
@@ -1696,16 +1696,16 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.chemical_bath('tfg:tungstate_to_tungsten_acid')
-		.inputFluids(Fluid.of('gtceu:hydrochloric_acid', 12000))
-		.itemInputs(Item.of('tfg:sodium_tungstate_dust', 6))
-		.itemOutputs(Item.of('gtceu:salt_dust', 48))
-		.itemOutputs(Item.of('gtceu:tungstic_acid_dust', 6))
+		.inputFluids(Fluid.of('gtceu:hydrochloric_acid', 2000))
+		.itemInputs(Item.of('tfg:sodium_tungstate_dust', 7))
+		.itemOutputs(Item.of('gtceu:salt_dust', 4))
+		.itemOutputs(Item.of('gtceu:tungstic_acid_dust', 7))
 		.duration(20*24)
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.chemical_bath('tfg:tungsten_acid_to_ammonium_tungstate')
 		.inputFluids(Fluid.of('gtceu:ammonia', 10000))
-		.itemInputs(Item.of('gtceu:tungstic_acid_dust', 12))
+		.itemInputs(Item.of('gtceu:tungstic_acid_dust', 7))
 		.itemOutputs(Item.of('tfg:ammonium_tungstate_dust', 1))
 		.duration(20*16)
 		.EUt(GTValues.VA[GTValues.EV])
@@ -1719,19 +1719,19 @@ const registerGTCEURecipes = (event) => {
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
-		.duration(20*90)
+		.duration(20*48)
 		.EUt(GTValues.VHA[GTValues.HV])
 
 	event.recipes.gtceu.distillery('tfg:ammonium_tungstate_to_apt')
 		.itemInputs(Item.of('tfg:ammonium_tungstate_dust', 1))
 		.itemOutputs(Item.of('tfg:apt_gem', 1))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
-		.duration(20*90)
+		.duration(20*48)
 		.EUt(GTValues.VHA[GTValues.HV])
-
+	
 	event.recipes.gtceu.pyrolyse_oven('tfg:apt')
 		.itemInputs(Item.of('tfg:apt_gem', 1))
-		.itemOutputs(Item.of('tfg:tungsten_oxide_dust', 3))
+		.itemOutputs(Item.of('tfg:tungsten_oxide_dust', 1))
 		.outputFluids(Fluid.of('gtceu:ammonia', 10000))
 		.duration(20*36)
 		.EUt(GTValues.VA[GTValues.EV])
@@ -1740,7 +1740,7 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.pyrolyse_oven('tfg:apt_nitrogen')
 		.itemInputs(Item.of('tfg:apt_gem', 1))
 		.inputFluids(Fluid.of('gtceu:nitrogen', 1000))
-		.itemOutputs(Item.of('tfg:tungsten_oxide_dust', 3))
+		.itemOutputs(Item.of('tfg:tungsten_oxide_dust', 1))
 		.outputFluids(Fluid.of('gtceu:ammonia', 10000))
 		.duration(20*18)
 		.EUt(GTValues.VA[GTValues.EV])
@@ -1748,10 +1748,12 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.gtceu.arc_furnace('tfg:tungsten_apt')
 		.itemInputs(Item.of('tfg:tungsten_oxide_dust', 1))
-		.inputFluids(Fluid.of('gtceu:hydrogen', 1000))
+		.inputFluids(Fluid.of('gtceu:hydrogen', 3000))
 		.itemOutputs(Item.of('gtceu:tungsten_dust', 1))
 		.duration(20*2.8)
 		.EUt(GTValues.VA[GTValues.EV])
+
+	//#endregion
 		
 
 	// New Alloys
