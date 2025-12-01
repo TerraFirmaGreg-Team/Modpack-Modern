@@ -108,31 +108,6 @@ function registerTFGMiscellaneousRecipes(event) {
 		.id('tfg:knapping/decorative_vase/unfired')
 
 
-	// lactose & curd
-	event.recipes.gtceu.mixer('lactose_milk_cow')
-		.circuit(1)
-		.inputFluids(Fluid.of('minecraft:milk', 1000), Fluid.of('gtceu:acetic_acid', 25))
-		.itemOutputs('1x gtceu:lactose_dust')
-		.outputFluids(Fluid.of('tfc:curdled_milk', 1000))
-		.duration(300)
-		.EUt(GTValues.VA[GTValues.LV])
-
-	event.recipes.gtceu.mixer('lactose_milk_yak')
-		.circuit(1)
-		.inputFluids(Fluid.of('firmalife:yak_milk', 1000), Fluid.of('gtceu:acetic_acid', 25))
-		.itemOutputs('1x gtceu:lactose_dust')
-		.outputFluids(Fluid.of('firmalife:curdled_yak_milk', 1000))
-		.duration(300)
-		.EUt(GTValues.VA[GTValues.LV])
-
-	event.recipes.gtceu.mixer('lactose_milk_goat')
-		.circuit(1)
-		.inputFluids(Fluid.of('firmalife:goat_milk', 1000), Fluid.of('gtceu:acetic_acid', 25))
-		.itemOutputs('1x gtceu:lactose_dust')
-		.outputFluids(Fluid.of('firmalife:curdled_goat_milk', 1000))
-		.duration(300)
-		.EUt(GTValues.VA[GTValues.LV])
-
 	//Scaffolding Frame
 	event.shaped('tfg:scaffolding_frame',
 		[

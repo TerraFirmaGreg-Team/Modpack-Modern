@@ -260,38 +260,55 @@ function registerTFGFoodRecipes(event) {
 
 	global.TFC_CURDS_AND_CHEESES.forEach(item => {
 
-		processorRecipe(`${item.curd}_curd`, 1200, 16, {
+		event.recipes.gtceu.fermenter(`tfg:curdled_${item.id}`)
+			.inputFluids(Fluid.of(item.milk, 2000))
+			.itemInputs('firmalife:rennet')
+			.outputFluids(Fluid.of(item.curdled_fluid, 2000))
+			.duration(2400)
+			.EUt(16)
+
+		event.recipes.gtceu.mixer(`lactose_milk_${item.id}`)
+			.circuit(1)
+			.inputFluids(Fluid.of(item.milk, 1000), Fluid.of('gtceu:acetic_acid', 25))
+			.itemOutputs('1x gtceu:lactose_dust')
+			.outputFluids(Fluid.of(item.curdled_fluid, 1000))
+			.duration(300)
+			.EUt(GTValues.VA[GTValues.LV])
+
+		processorRecipe(`${item.id}_curd`, 1200, 16, {
 			itemOutputs: [item.curd],
-			fluidInputs: [Fluid.of(item.input_fluid, 1000)],
+			fluidInputs: [Fluid.of(item.curdled_fluid, 1000)],
 			itemOutputProvider: TFC.isp.of(item.curd).resetFood()
 		})
 
-		processorRecipe(`${item.cheese1}_cheese_wheel_1`, 8000, 16, {
+		processorRecipe(`${item.id}_unsalted_cheese_wheel`, 8000, 16, {
 			itemInputs: [`3x ${item.curd}`],
-			itemOutputs: [`firmalife:${item.cheese1}_wheel`],
+			itemOutputs: [item.unsalted_wheel],
 			fluidInputs: [Fluid.of('tfc:salt_water', 750)],
-			itemOutputProvider: TFC.isp.of(`firmalife:${item.cheese1}_wheel`).copyOldestFood()
+			itemOutputProvider: TFC.isp.of(item.unsalted_wheel).copyOldestFood()
 		})
 
-		processorRecipe(`${item.cheese2}_cheese_wheel_2`, 1000, 16, {
+		processorRecipe(`${item.id}_unsalted_cheese_cutting`, 100, 8, {
+			itemInputs: [item.unsalted_wheel],
+			itemOutputs: [`4x ${item.unsalted_cheese}`],
+			itemOutputProvider: TFC.isp.of(`4x ${item.unsalted_cheese}`).copyOldestFood()
+		})
+
+		if (item.salted_wheel === null || item.salted_cheese === null)
+			return;
+
+		processorRecipe(`${item.id}_salted_cheese_wheel`, 1000, 16, {
 			circuit: 2,
 			itemInputs: [`3x ${item.curd}`, `6x tfc:powder/salt`],
-			itemOutputs: [`firmalife:${item.cheese2}_wheel`],
-			itemOutputProvider: TFC.isp.of(`firmalife:${item.cheese2}_wheel`).copyOldestFood()
+			itemOutputs: [item.salted_wheel],
+			itemOutputProvider: TFC.isp.of(item.salted_wheel).copyOldestFood()
 		})
 
-		processorRecipe(`${item.cheese1}_cheese_cutting_1`, 100, 8, {
-			itemInputs: [`firmalife:${item.cheese1}_wheel`],
-			itemOutputs: [`4x firmalife:food/${item.cheese1}`],
-			itemOutputProvider: TFC.isp.of(`4x firmalife:food/${item.cheese1}`).copyOldestFood()
+		processorRecipe(`${item.id}_salted_cheese_cutting`, 100, 8, {
+			itemInputs: [item.salted_wheel],
+			itemOutputs: [`4x ${item.salted_cheese}`],
+			itemOutputProvider: TFC.isp.of(`4x ${item.salted_cheese}`).copyOldestFood()
 		})
-
-		processorRecipe(`${item.cheese2}_cheese_cutting_2`, 100, 8, {
-			itemInputs: [`firmalife:${item.cheese2}_wheel`],
-			itemOutputs: [`4x firmalife:food/${item.cheese2}`],
-			itemOutputProvider: TFC.isp.of(`4x firmalife:food/${item.cheese2}`).copyOldestFood()
-		})
-
 	})
 	
 	// Milks 
@@ -670,6 +687,7 @@ function registerTFGFoodRecipes(event) {
 	//#region Pizza
 
 	processorRecipe("pizza_no_extra", 600, 16, {
+		circuit: 3,
 		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese"],
 		itemOutputs: ["firmalife:food/raw_pizza"],
 		itemOutputProvider: TFC.isp.of("firmalife:food/raw_pizza").meal(
@@ -678,7 +696,7 @@ function registerTFGFoodRecipes(event) {
 		)
 	})
 
-	processorRecipe("pizza_1_extra", 600, 16, {
+	processorRecipe("pizza_1_extra", 600, GTValues.VHA[GTValues.MV], {
 		circuit: 1,
 		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese", "#firmalife:foods/pizza_ingredients"],
 		itemOutputs: ["firmalife:food/raw_pizza"],
@@ -688,7 +706,7 @@ function registerTFGFoodRecipes(event) {
 		)
 	})
 
-	processorRecipe("pizza_2_extra", 600, 16, {
+	processorRecipe("pizza_2_extra", 600, GTValues.VHA[GTValues.MV], {
 		circuit: 2,
 		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese", "2x #firmalife:foods/pizza_ingredients"],
 		itemOutputs: ["firmalife:food/raw_pizza"],
@@ -1110,27 +1128,6 @@ function registerTFGFoodRecipes(event) {
 		.outputFluids(Fluid.of('firmalife:soybean_oil', 250))
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(600)
-
-	event.recipes.gtceu.fermenter('tfg:fermenter/curdled_milk')
-		.inputFluids(Fluid.of('minecraft:milk', 2000))
-		.itemInputs('firmalife:rennet')
-		.outputFluids(Fluid.of('tfc:curdled_milk', 2000))
-		.duration(2400)
-		.EUt(16)
-
-	event.recipes.gtceu.fermenter('tfg:fermenter/curdled_yak_milk')
-		.inputFluids(Fluid.of('firmalife:yak_milk', 2000))
-		.itemInputs('firmalife:rennet')
-		.outputFluids(Fluid.of('firmalife:curdled_yak_milk', 2000))
-		.duration(2400)
-		.EUt(16)
-
-	event.recipes.gtceu.fermenter('tfg:fermenter/curdled_goat_milk')
-		.inputFluids(Fluid.of('firmalife:goat_milk', 2000))
-		.itemInputs('firmalife:rennet')
-		.outputFluids(Fluid.of('firmalife:curdled_goat_milk', 2000))
-		.duration(2400)
-		.EUt(16)
 
 	// GT cocoa dust compat
 	event.recipes.gtceu.macerator('firmalife:food/cocoa_powder')
