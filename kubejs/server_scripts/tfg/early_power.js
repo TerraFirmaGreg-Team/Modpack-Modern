@@ -240,15 +240,25 @@ function registerTFGEarlyPower(event) {
 		.duration(200)
 		.dimension('minecraft:overworld')
 
-	//#region New Fuel Recipes
+	//#region New Power Generation
 	
 	// Add Syngas
 
-	event.recipes.gtceu.steam_boiler('tfg:syngas')
+	event.recipes.gtceu.steam_boiler('tfg:syngas') // Small Boiler and Large Boiler divided by 4
 		.inputFluids(Fluid.of('tfg:syngas', 100))
 		.duration(40*20*4)
 		.dimension('minecraft:overworld')
 
-	
+	event.recipes.gtceu.gas_turbine('tfg:syngas') // Gas Turbine
+		.inputFluids(Fluid.of('tfg:syngas', 1))
+		.EUt(-(32))
+		.duration(20*0.2)
+
+	// Reformate Gas
+
+	event.recipes.gtceu.gas_turbine('tfg:reformate_gas') // Gas Turbine
+		.inputFluids(Fluid.of('tfg:reformate_gas', 1))
+		.EUt(-(32))
+		.duration(20*1)
 
 }

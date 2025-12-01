@@ -56,14 +56,14 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*600)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:mars')
-
+/*
 	event.recipes.gtceu.nuclear_fuel_factory('tfg:tbu_232_rod')
 		.inputFluids(Fluid.of('gtceu:nuclear_waste', 32000))
 		.itemInputs('2x #forge:rods/thorium_232', 'tfg:empty_rod')
 		.itemOutputs('tfg:tbu_232_rod')
 		.duration(20*300)
 		.EUt(GTValues.V[GTValues.IV])
-
+*/
 	event.recipes.gtceu.assembler('tfg:empty_rod')
 		.itemInputs('3x gtceu:cobalt_large_restrictive_item_pipe', '3x gtceu:lead_huge_fluid_pipe')
 		.itemOutputs('tfg:empty_rod')
@@ -440,15 +440,6 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 1000))
 		.itemOutputs(Item.of('tfg:advanced_polymer_binder', 16))
 		.EUt(GTValues.VA[GTValues.EV])
-		.duration(20*16)
-
-	event.recipes.gtceu.coal_liquefaction_tower('tfg:first_aromatic')
-		.itemInputs(Item.of('minecraft:charcoal', 1))
-		.inputFluids(Fluid.of('gtceu:creosote', 1000))
-		.outputFluids(Fluid.of('gtceu:coal_tar', 1000))
-		.outputFluids(Fluid.of('tfg:syngas', 1000))
-		.outputFluids(Fluid.of('tfg:raw_aromatic_mix', 1000))
-		.EUt(GTValues.VA[GTValues.MV])
 		.duration(20*16)
 
 	//#endregion

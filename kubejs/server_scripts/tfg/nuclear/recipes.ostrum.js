@@ -9,7 +9,7 @@ function registerTFGNOstrumRecipes(event) {
     // Ostrum Linear Accelerator Recipes
 
     // .input($HeatRecipeCapability.CAP, new $HeatIngredient(X, Y)) where X is Minimal Temperature to run and where Y is HU consummed per craft
-
+/*
 	event.recipes.gtceu.ostrum_linear_accelerator('tfg:ostrum_transformation')
 		.inputFluids('gtceu:residual_radioactive_concoction 100')
 		.itemInputs('32x #forge:dusts/ostrum')
@@ -32,7 +32,7 @@ function registerTFGNOstrumRecipes(event) {
 		.itemOutputsRanged(Item.of('gtceu:dusty_raw_tricalcium_phosphate'), 1, 10)
         .itemOutputsRanged(Item.of('#forge:dusty_raw_materials/bauxite'), 1, 10)
         .itemOutputsRanged(Item.of('#forge:dusty_raw_materials/lead'), 1, 10)
-        .input($HeatRecipeCapability.CAP, new $HeatIngredient(100, 500))
+        //.input($HeatRecipeCapability.CAP, new $HeatIngredient(100, 500))
 		.dimension('ad_astra:mars')
 		.duration(20 * 20)
         .circuit(1);
@@ -51,7 +51,7 @@ function registerTFGNOstrumRecipes(event) {
         .itemOutputsRanged(Item.of('#forge:dusty_raw_materials/bauxite'), 1, 10)
         .itemOutputsRanged(Item.of('#forge:dusty_raw_materials/lead'), 1, 10)
         .itemOutputsRanged(Item.of('gtceu:dusty_raw_pitchblende'), 1, 10)
-        .input($HeatRecipeCapability.CAP, new $HeatIngredient(100, 500))
+        //.input($HeatRecipeCapability.CAP, new $HeatIngredient(100, 500))
 		.dimension('ad_astra:mars')
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.IV])
@@ -77,7 +77,7 @@ function registerTFGNOstrumRecipes(event) {
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.IV])
         .circuit(3);
-
+*/
 	//#endregion
 
 }
