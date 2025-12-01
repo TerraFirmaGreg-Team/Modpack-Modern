@@ -363,7 +363,10 @@ const registerTFGItemTags = (event) => {
 	const cheeseCurds = [
 		'firmalife:food/yak_curd',
 		'firmalife:food/goat_curd',
-		'firmalife:food/milk_curd'
+		'firmalife:food/milk_curd',
+		'tfc_gurman:ox_curd',
+		'tfc_gurman:sheep_curd',
+		'tfc_gurman:alpaca_curd'
 	];
 	cheeseCurds.forEach(item => {
 		event.add('tfg:foods/cheese_curds', item);
@@ -478,7 +481,13 @@ const registerTFGItemTags = (event) => {
 		'firmalife:food/toast',
 		'firmalife:food/toast_with_butter',
 		'firmalife:food/toast_with_jam',
-		'firmalife:food/butter'
+		'firmalife:food/butter',
+		'tfc_gurman:adjika',
+		'tfc_gurman:tzatziki',
+		'tfc_gurman:falafel',
+		'tfc_gurman:hummus',
+		'tfc_gurman:sauerkraut',
+		'tfc_gurman:bratwurst'
 	];
 	usable_in_meal_bag.forEach(item => {
 		event.add('tfg:foods/usable_in_meal_bag', item);
