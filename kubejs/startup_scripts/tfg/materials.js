@@ -433,10 +433,6 @@ const registerTFGMaterials = (event) => {
 		.components('2x sodium','1x tungsten', '4x oxygen')
 		.color('0xdcf6f7')
 
-	event.create('tfg:tungstate')
-		.components('2x hydrogen', '12x tungsten', '42x oxygen')
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
     event.create('tfg:ammonium_tungstate')
         .dust()
         .flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES, GTMaterialFlags.DISABLE_DECOMPOSITION)
@@ -448,7 +444,7 @@ const registerTFGMaterials = (event) => {
 		.gem()
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.iconSet(GTMaterialIconSet.FLINT)
-		.components('10x ammonia', '1x tfg:tungstate', '4x water')
+		.components('10x ammonia', '4x water', '2x hydrogen', '12x tungsten', '42x oxygen')
 		.color('0xaabdf0')
 
 	event.create('tfg:tungsten_oxide')

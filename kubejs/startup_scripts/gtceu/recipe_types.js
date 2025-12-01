@@ -69,20 +69,12 @@ const registerGTCEuRecipeTypes = (event) => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.TURBINE)
 
-	event.create('dummy_recipe')
-        .category('dumme_recipe')
-        .setEUIO('in')
-        .setMaxIOSize(1, 3, 3, 3)
-		.setSlotOverlay(false, false, GuiTextures.EXTRACTOR_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRACT, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.BATH)
-
 	event.create('coal_liquefaction_tower')
         .category('coal_liquefaction_tower')
         .setEUIO('in')
         .setMaxIOSize(2, 0, 3, 3)
 		.setSlotOverlay(false, false, GuiTextures.HEATING_OVERLAY_1)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_DISTILLATION_TOWER, FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARC_FURNACE, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMBUSTION)
 
 }

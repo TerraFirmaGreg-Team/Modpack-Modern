@@ -7,6 +7,11 @@ const registerTFGBlocks = (event) => {
 	registerTFGSupportBlocks(event)
 	registerTFGAqueductBlocks(event)
 	registerTFGCrops(event)
+
+	event.create('gtceu:ostrum_linear_accelerator')
+		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
+		.requiresTool(false)
+		.textureAll('tfg:item/deprecated')
 		
 	event.create('tfg:titanium_exhaust_vent', 'tfg:active_particle_emitter')
 		.textureAll('tfg:block/titanium_exhaust_vent')
