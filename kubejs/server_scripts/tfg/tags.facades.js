@@ -23,7 +23,7 @@ function registerFacadeWhitelistTags(event) {
 		'#minecraft:terracotta',
 		'#forge:concretes',
 		'#create:casing',
-		'#dormum_ornamentum:brick_items',
+		'#domum_ornamentum:brick_items',
 		'#simplylight:any_lamp_on',
 		'#simplylight:any_lamp_off',
 		'#minecraft:planks',
@@ -38,7 +38,14 @@ function registerFacadeWhitelistTags(event) {
 		'#tfg:ad_astra_calorite_blocks',
 		'#tfg:ad_astra_etrium_blocks',
 		'#tfg:titanium_concrete',
-	    
+
+		//reconstituted stone blocks
+		'minecraft:smooth_stone',
+		'minecraft:stone_bricks',
+		'minecraft:cracked_stone_bricks',
+		'minecraft:chiseled_stone_bricks',
+		'minecraft:mossy_stone_bricks',
+		
 		//rnr shingles
 		'rnr:ceramic_roof',
 		'rnr:terracotta_roof',

@@ -188,6 +188,8 @@
   "metaitem.crushed.tooltip.purify": "投入水中可获得纯净矿石",
   "item.gtceu.tool.behavior.silk_ice": "§d雕刻家:§r 可用精准采集获取浮冰",
   "item.gtceu.tool.butchery_knife.tooltip": "§屠夫:§r 屠宰动物可获得更多肉类",
+  "item.gtceu.tool.tooltip.repair_info": "",
+  "item.gtceu.tool.tooltip.repair_material": "",
   "gtceu.machine.lp_steam_extractor.tooltip": "§7不能提取流体",
   "gtceu.machine.hp_steam_extractor.tooltip": "§7不能提取流体",
   "gtceu.jei.bedrock_fluid.moon_helium": "月球氦气",

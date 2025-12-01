@@ -40,6 +40,7 @@ Added TFC Gurman, which adds even more food and drink
 - Fixed some recipe imbalances with trimethyl borate and related recipes @Pyritie
 - Fixed not being able to feed meat to the Cruncher (#2305) @Pyritie
 - Hopefully fixed rockets without a pilot getting stuck and not exploding? (#2137) @Pyritie
+- Fixed some missing blocks from the GT facade whitelist (#2299) @MoltonMontro
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra
