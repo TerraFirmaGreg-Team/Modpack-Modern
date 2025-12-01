@@ -1,13 +1,15 @@
 # Changelog
 
 ## [Unreleased]
+### Breaking Changes
+- The tungsten processing line has been updated to now properly loop and balance all of its intermediates. The actual processes haven't changed, just the numbers, so you shouldn't have to change your setup much. It now also outputs a little extra oxygen instead of sodium (#2267) @SpicyNoodle5 @TomPlop
 ### Mod updates
 New GregTech updates, both [7.3.0](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.3.0-1.20.1) and [7.4.0](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.4.0-1.20.1). TL;DR:
 - You can use screwdrivers on drums again
 - Diluted hydrochloric acid distillation circuits have been swapped, so now it's consistent with diluted sulfuric acid
 - Large rebalancing of small and large boiler fuel. Generally speaking, small boilers are worse while large ones are better, and solid fuels are now better and liquids are worse, but if you're putting all your coke oven output into a large bronze boiler, your rates should be mostly the same as before. Blaze burner liquid fuels have been adjusted to these new values as well.
 Added TFC Gurman, which adds even more food and drink
-### Changes
+### Other Changes
 - Many TACZ balance changes, found [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/blob/dev/tacz/TACZ_CHANGELOG.md) @BlueBoat29
 - Add shapeless p2p recipes (#2234) @SpicyNoodle5
 - Added assembler, smelting and heating recipes for firmalife ovens (#2220) @SpicyNoodle5
@@ -44,6 +46,7 @@ Added TFC Gurman, which adds even more food and drink
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra
+- Russian @Petr211071
 
 ## [0.11.8] - 19-11-2025
 ### Changes
