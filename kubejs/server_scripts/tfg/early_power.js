@@ -6,35 +6,48 @@ function registerTFGEarlyPower(event) {
 
 	// New Fuels
 
+	// Syngas
+
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'minecraft:charcoal' }, { fluid: 'gtceu:creosote', amount: 250 }],
+		results: [{ fluid: 'tfg:syngas', amount: 100 }],
+		heatRequirement: "heated",
+		processingTime: 750
+	}).id('tfg:vi/vacuumizing/syngas_from_charcoal')
+
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'minecraft:coal' }, { fluid: 'gtceu:creosote', amount: 250 }],
+		results: [{ fluid: 'tfg:syngas', amount: 200 }],
+		heatRequirement: "heated",
+		processingTime: 750
+	}).id('tfg:vi/vacuumizing/syngas_from_coal')
+
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'gtceu:coke_gem' }, { fluid: 'gtceu:creosote', amount: 250 }],
+		results: [{ fluid: 'tfg:syngas', amount: 400 }],
+		heatRequirement: "heated",
+		processingTime: 750
+	}).id('tfg:vi/vacuumizing/syngas_from_coke')
+
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'beneath:cursecoal' }, { fluid: 'gtceu:creosote', amount: 250 }],
+		results: [{ fluid: 'tfg:syngas', amount: 400 }],
+		heatRequirement: "heated",
+		processingTime: 750
+	}).id('tfg:vi/vacuumizing/syngas_from_anthracite')
+
 	//#region Reformate Gas
-
-	// Coal
-
-	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_coal')
-		.itemInputs(Item.of('minecraft:coal', 10))
-		.inputFluids(Fluid.of('gtceu:creosote', 1000))
-		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 1000), Fluid.of('tfg:raw_aromatic_mix', 1000))
-		.duration(20*600)
-		.circuit(1)
-		.EUt(GTValues.VA[GTValues.LV])
-
-	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_coal_hydrogen')
-		.itemInputs(Item.of('minecraft:coal', 10))
-		.inputFluids(Fluid.of('gtceu:creosote', 1000))
-		.perTick(true)
-		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
-		.perTick(false)
-		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 1000), Fluid.of('tfg:raw_aromatic_mix', 1000))
-		.duration(20*200)
-		.circuit(2)
-		.EUt(GTValues.VHA[GTValues.LV])
 
 	// Charcoal
 
 	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_charcoal')
 		.itemInputs(Item.of('minecraft:charcoal', 24))
 		.inputFluids(Fluid.of('gtceu:creosote', 1000))
-		.outputFluids(Fluid.of('gtceu:coal_tar', 500), Fluid.of('tfg:syngas', 1000), Fluid.of('tfg:raw_aromatic_mix', 1000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 500), Fluid.of('tfg:syngas', 3200), Fluid.of('tfg:raw_aromatic_mix', 1000))
 		.duration(20*600)
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -45,7 +58,28 @@ function registerTFGEarlyPower(event) {
 		.perTick(true)
 		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
 		.perTick(false)
-		.outputFluids(Fluid.of('gtceu:coal_tar', 500), Fluid.of('tfg:syngas', 1000), Fluid.of('tfg:raw_aromatic_mix', 1000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 500), Fluid.of('tfg:syngas', 3200), Fluid.of('tfg:raw_aromatic_mix', 1000))
+		.duration(20*200)
+		.circuit(2)
+		.EUt(GTValues.VHA[GTValues.LV])
+
+	// Coal
+
+	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_coal')
+		.itemInputs(Item.of('minecraft:coal', 10))
+		.inputFluids(Fluid.of('gtceu:creosote', 1000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 6400), Fluid.of('tfg:raw_aromatic_mix', 1000))
+		.duration(20*600)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_coal_hydrogen')
+		.itemInputs(Item.of('minecraft:coal', 10))
+		.inputFluids(Fluid.of('gtceu:creosote', 1000))
+		.perTick(true)
+		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
+		.perTick(false)
+		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 6400), Fluid.of('tfg:raw_aromatic_mix', 1000))
 		.duration(20*200)
 		.circuit(2)
 		.EUt(GTValues.VHA[GTValues.LV])
@@ -54,8 +88,8 @@ function registerTFGEarlyPower(event) {
 
 	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_coke')
 		.itemInputs(Item.of('gtceu:coke_gem', 5))
-		.inputFluids(Fluid.of('gtceu:creosote', 100))
-		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 1000), Fluid.of('tfg:raw_aromatic_mix', 1000))
+		.inputFluids(Fluid.of('gtceu:creosote', 1000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 12800), Fluid.of('tfg:raw_aromatic_mix', 1000))
 		.duration(20*600)
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -66,7 +100,7 @@ function registerTFGEarlyPower(event) {
 		.perTick(true)
 		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
 		.perTick(false)
-		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 1000), Fluid.of('tfg:raw_aromatic_mix', 1000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 12800), Fluid.of('tfg:raw_aromatic_mix', 1000))
 		.duration(20*200)
 		.circuit(2)
 		.EUt(GTValues.VHA[GTValues.LV])
@@ -75,8 +109,8 @@ function registerTFGEarlyPower(event) {
 
 	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_anthracite')
 		.itemInputs(Item.of('beneath:cursecoal', 5))
-		.inputFluids(Fluid.of('gtceu:creosote', 100))
-		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 1000), Fluid.of('tfg:raw_aromatic_mix', 1000))
+		.inputFluids(Fluid.of('gtceu:creosote', 1000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 12800), Fluid.of('tfg:raw_aromatic_mix', 1000))
 		.duration(20*600)
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -87,7 +121,7 @@ function registerTFGEarlyPower(event) {
 		.perTick(true)
 		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
 		.perTick(false)
-		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 1000), Fluid.of('tfg:raw_aromatic_mix', 1000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 12800), Fluid.of('tfg:raw_aromatic_mix', 1000))
 		.duration(20*200)
 		.circuit(2)
 		.EUt(GTValues.VHA[GTValues.LV])
@@ -205,5 +239,16 @@ function registerTFGEarlyPower(event) {
 		.inputFluids(Fluid.of('firmalife:soybean_oil', 160))
 		.duration(200)
 		.dimension('minecraft:overworld')
+
+	//#region New Fuel Recipes
+	
+	// Add Syngas
+
+	event.recipes.gtceu.steam_boiler('tfg:syngas')
+		.inputFluids(Fluid.of('tfg:syngas', 100))
+		.duration(40*20*4)
+		.dimension('minecraft:overworld')
+
+	
 
 }
