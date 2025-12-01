@@ -211,7 +211,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)Location$(): 火星$(br)$(bold)$(l:the_world/climate#temperature)温度$(): -150 - 15 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 0 - 40 %$(br)$(bold)营养物质$(): 磷$(br2)波鲁克斯菌 是单方块作物。波鲁克斯菌孢子可以种植在农田上，会产出$(item)波鲁克斯菌$()，可以作为$(thing)蔬菜$()食用。$(br2)建议在食用前$(item)烹饪$() 波鲁克斯菌。",
+            "text": "$(bold)位置$(): 火星$(br)$(bold)$(l:the_world/climate#temperature)温度$(): -150 - 15 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 0 - 40 %$(br)$(bold)营养物质$(): 磷$(br2)波鲁克斯菌 是单方块作物。波鲁克斯菌孢子可以种植在农田上，会产出$(item)波鲁克斯菌$()，可以作为$(thing)蔬菜$()食用。$(br2)建议在食用前$(item)烹饪$() 波鲁克斯菌。",
             "title": "波鲁克斯菌"
         },
         {
@@ -290,7 +290,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)Location$(): 火星$(br)$(bold)$(l:the_world/climate#temperature)温度$(): -100 - 30 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 0 - 60 %$(br)$(bold)营养物质$(): 氮$(br2)球茎南瓜 是会伸展的作物。球茎南瓜种子可以种植在农田上，并且当它成熟时，会在它旁边的地上放置最多两个$(item)球茎南瓜方块$()。如果球茎南瓜方块被收获，并且球茎藤重新成熟，它可以长出更多球茎南瓜。球茎南瓜可以作为$(thing)水果$()食用，或者用来生产萤石粉。",
+            "text": "$(bold)位置$(): 火星$(br)$(bold)$(l:the_world/climate#temperature)温度$(): -100 - 30 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 0 - 60 %$(br)$(bold)营养物质$(): 氮$(br2)球茎南瓜 是会伸展的作物。球茎南瓜种子可以种植在农田上，并且当它成熟时，会在它旁边的地上放置最多两个$(item)球茎南瓜方块$()。如果球茎南瓜方块被收获，并且球茎藤重新成熟，它可以长出更多球茎南瓜。球茎南瓜可以作为$(thing)水果$()食用，或者用来生产萤石粉。",
             "title": "球茎南瓜"
         },
         {
@@ -398,7 +398,7 @@
         {
             "type": "patchouli:text",
             "title": "查尔米菌丛",
-            "text": "$(bold)Location$(): 火星$(br)$(bold)$(l:the_world/climate#temperature)温度$(): -150 - 15 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 0 - 40 %$(br)$(bold)营养物质$(): 磷$(br2)查尔米菌丛是单方块作物。查尔米菌孢子可以种植在农田上，会产出$(item)查尔米菌$()，可以作为$(thing)蔬菜$()食用。$(br2)建议在食用前$(item)烹饪$() 波鲁克斯菌。"
+            "text": "$(bold)位置$(): 火星$(br)$(bold)$(l:the_world/climate#temperature)温度$(): -150 - 15 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 0 - 40 %$(br)$(bold)营养物质$(): 磷$(br2)查尔米菌丛是单方块作物。查尔米菌孢子可以种植在农田上，会产出$(item)查尔米菌$()，可以作为$(thing)蔬菜$()食用。$(br2)建议在食用前$(item)烹饪$() 波鲁克斯菌。"
         },
         {
             "type": "tfc:multimultiblock",
@@ -477,7 +477,7 @@
         {
             "type": "patchouli:text",
             "title": "夜影浆果",
-            "text": "$(bold)Location$(): 火星$(br)$(bold)$(l:the_world/climate#temperature)温度$(): -80 - 30 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 50 - 100 %$(br)$(bold)营养物质$(): 磷$(br2)夜影浆果是单方块作物。夜影浆果种子可以种植在农田上，会产出$(item)夜影浆果$()，可以作为$(thing)水果$()食用。$(br2)建议在食用前$(item)烹饪$() 夜影浆果。"
+            "text": "$(bold)位置$(): 火星$(br)$(bold)$(l:the_world/climate#temperature)温度$(): -80 - 30 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 50 - 100 %$(br)$(bold)营养物质$(): 磷$(br2)夜影浆果是单方块作物。夜影浆果种子可以种植在农田上，会产出$(item)夜影浆果$()，可以作为$(thing)水果$()食用。$(br2)建议在食用前$(item)烹饪$() 夜影浆果。"
         },
         {
             "type": "tfc:multimultiblock",
