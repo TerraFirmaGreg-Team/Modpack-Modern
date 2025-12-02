@@ -56,14 +56,14 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*600)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:mars')
-/*
+
 	event.recipes.gtceu.nuclear_fuel_factory('tfg:tbu_232_rod')
 		.inputFluids(Fluid.of('gtceu:nuclear_waste', 32000))
 		.itemInputs('2x #forge:rods/thorium_232', 'tfg:empty_rod')
 		.itemOutputs('tfg:tbu_232_rod')
 		.duration(20*300)
 		.EUt(GTValues.V[GTValues.IV])
-*/
+
 	event.recipes.gtceu.assembler('tfg:empty_rod')
 		.itemInputs('3x gtceu:cobalt_large_restrictive_item_pipe', '3x gtceu:lead_huge_fluid_pipe')
 		.itemOutputs('tfg:empty_rod')
@@ -264,23 +264,49 @@ function registerTFGNuclearRecipes(event) {
 		.dimension('ad_astra:mars')
 
 	// TBU Fission
-/*
     event.recipes.deafission.fission_reactor_fuel('kubejs:fuelcell_custom_x1')
         .itemInputs('tfg:tbu_232_rod')
-        .itemOutputs('minecraft:dirt')
+        .itemOutputs('tfg:depleted_tbu_232_rod')
         // Mandatory by GT; no real impact. Use this as a convention:
         // durability / const / heatValue
         .duration(10000 / 0.4 / 2)
 		.dimension('ad_astra:mars');
-
+/*
 	event.recipes.deafission.fission_reactor_coolant('tfg:tbu_coolant')
         .itemInputs(Ingredient.of([
             'tfg:tbu_232_rod']))
         .inputFluids(Fluid.of('tfg:heavy_water', 100))
         .outputFluids(Fluid.of('gtceu:dense_steam', 100))
         .addData("coolant_heat_per_tick", 12.34)
-        .duration(1000);
-*/
+        .duration(1000);*/
+
+    event.recipes.deafission.fission_reactor_coolant('tfg:tbu_coolant')
+        .itemInputs(Ingredient.of([
+            'tfg:tbu_232_rod']))
+		.perTick(true)
+		.inputFluids(Fluid.of('tfg:heavy_water', 20))
+		.outputFluids(Fluid.of('gtceu:dense_steam', 20))
+		.perTick(false)
+        .addData("coolant_heat_per_tick", 1)
+		.duration(1)
+		.dimension('ad_astra:mars')
+
+		// Neptunium-237 Rod Fission
+    event.recipes.deafission.fission_reactor_fuel('tfg:neptunium_237')
+        .itemInputs('tfg:neptunium_237_rod')
+        .itemOutputs('tfg:depleted_neptunium_237_rod')
+        // Mandatory by GT; no real impact. Use this as a convention:
+        // durability / const / heatValue
+        .duration(50000 / 0.4 / 2);
+
+	event.recipes.deafission.fission_reactor_coolant('tfg:neptunium_237_coolant')
+        .itemInputs(Ingredient.of([
+            'tfg:neptunium_237_rod']))
+        .inputFluids(Fluid.of('tfg:boron_enriched_coolant', 20))
+        .outputFluids(Fluid.of('tfg:hot_boron_enriched_coolant', 20))
+        .addData("coolant_heat_per_tick", 1)
+        .duration(1);
+
 	//#endregion
 
 	//#region Fission Recipes for cooling
@@ -432,7 +458,7 @@ function registerTFGNuclearRecipes(event) {
 	//#endregion
 	
 	//#region Cooling Tower
-	/*
+
 	event.recipes.gtceu.assembler('tfg:ostrum_carbon_casing')
 		.itemInputs('2x #forge:plates/ostrum', '2x #forge:plates/titanium_carbide', '#forge:dense_plates/hsla_steel', '#forge:frames/black_steel')
 		.itemOutputs('2x tfg:casings/machine_casing_ostrum_carbon')
@@ -455,9 +481,7 @@ function registerTFGNuclearRecipes(event) {
 		.circuit(6)
 		.EUt(GTValues.VA[GTValues.IV] * 2)
 		.duration(20*4)
-	*/
 
-	/*
 	event.shaped('tfg:cooling_tower', [
 		'ABA',
 		'CDC',
@@ -469,19 +493,143 @@ function registerTFGNuclearRecipes(event) {
 		D: 'gtceu:iv_machine_hull',
 		E: 'gtceu:iv_fluid_regulator'
 	}).id('tfg:shaped/cooling_tower')
-	*/
 
 	//#endregion
-	/*
+
+	//#region Heat Battery
+
+    event.recipes.deafission.hb_import('tfg:boron_coolant')
+        .inputFluids(Fluid.of('tfg:hot_boron_enriched_coolant', 20))
+        .outputFluids(Fluid.of('tfg:boron_enriched_coolant', 20))
+        .blastFurnaceTemp(2000)
+        .addData("hb_energy", 20)
+
+    event.recipes.deafission.hb_export('tfg:boron_coolant_to_dense_steam')
+        .inputFluids(Fluid.of('gtceu:distilled_water', 20))
+        .outputFluids(Fluid.of('gtceu:dense_steam', 20))
+        .blastFurnaceTemp(1000)
+        .addData("hb_energy", 20)
+
     event.recipes.deafission.hb_import('tfg:dense_steam')
-        .inputFluids(Fluid.of('gtceu:dense_steam', 100))
-        .outputFluids(Fluid.of('minecraft:water', 10))
-        .blastFurnaceTemp(4000)
-        .addData("hb_energy", 100)
-	*/
+        .inputFluids(Fluid.of('gtceu:dense_steam', 20))
+        .outputFluids(Fluid.of('minecraft:water', 20))
+        .blastFurnaceTemp(1000)
+        .addData("hb_energy", 20)
+	
+	//#endregion
+
+	//#region Processing Depleted TBU
+
+    event.recipes.gtceu.centrifuge('tfg:americium_300_t1')
+        .inputItemNbtPredicate('tfg:depleted_tbu_232_rod', 
+            NBTPredicates.all([
+                NBTPredicates.gte("avgHeat", 0),
+                NBTPredicates.lte("avgHeat", 100)
+            ]))
+        .chancedItemOutputLogic($ChanceLogic.OR)
+		.chancedOutput(Item.of('1x gtceu:tiny_americium_241_dust'), 2500, 0)
+		.chancedOutput(Item.of('2x gtceu:tiny_americium_241_dust'), 7500, 0)
+        .duration(20*3)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.centrifuge('tfg:americium_300_t2')
+        .inputItemNbtPredicate('tfg:depleted_tbu_232_rod', 
+            NBTPredicates.all([
+                NBTPredicates.gte("avgHeat", 101),
+                NBTPredicates.lte("avgHeat", 200)
+            ]))
+        .chancedItemOutputLogic($ChanceLogic.OR)
+		.chancedOutput(Item.of('4x gtceu:tiny_americium_241_dust'), 2500, 0)
+		.chancedOutput(Item.of('8x gtceu:tiny_americium_241_dust'), 7500, 0)
+        .duration(20*3)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.centrifuge('tfg:americium_30_t3')
+        .inputItemNbtPredicate('tfg:depleted_tbu_232_rod', 
+            NBTPredicates.all([
+                NBTPredicates.gte("avgHeat", 201),
+                NBTPredicates.lte("avgHeat", 300)
+            ]))
+        .chancedItemOutputLogic($ChanceLogic.OR)
+		.chancedOutput(Item.of('12x gtceu:tiny_americium_241_dust'), 2500, 0)
+		.chancedOutput(Item.of('16x gtceu:tiny_americium_241_dust'), 7500, 0)
+        .duration(20*3)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.centrifuge('tfg:neptunium_t1')
+        .inputItemNbtPredicate('tfg:depleted_tbu_232_rod', 
+            NBTPredicates.all([
+                NBTPredicates.gte("avgHeat", 301),
+                NBTPredicates.lte("avgHeat", 400)
+            ]))
+        .chancedItemOutputLogic($ChanceLogic.OR)
+		.chancedOutput(Item.of('1x gtceu:tiny_neptunium_237_dust'), 2500, 0)
+		.chancedOutput(Item.of('2x gtceu:tiny_neptunium_237_dust'), 7500, 0)
+        .duration(20*3)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.centrifuge('tfg:neptunium_t2')
+        .inputItemNbtPredicate('tfg:depleted_tbu_232_rod', 
+            NBTPredicates.all([
+                NBTPredicates.gte("avgHeat", 401),
+                NBTPredicates.lte("avgHeat", 500)
+            ]))
+        .chancedItemOutputLogic($ChanceLogic.OR)
+		.chancedOutput(Item.of('4x gtceu:tiny_neptunium_237_dust'), 2500, 0)
+		.chancedOutput(Item.of('8x gtceu:tiny_neptunium_237_dust'), 7500, 0)
+        .duration(20*3)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.centrifuge('tfg:neptunium_t3')
+        .inputItemNbtPredicate('tfg:depleted_tbu_232_rod', 
+            NBTPredicates.all([
+                NBTPredicates.gte("avgHeat", 501),
+                NBTPredicates.lte("avgHeat", 599)
+            ]))
+        .chancedItemOutputLogic($ChanceLogic.OR)
+		.chancedOutput(Item.of('12x gtceu:tiny_neptunium_237_dust'), 2500, 0)
+		.chancedOutput(Item.of('16x gtceu:tiny_neptunium_237_dust'), 7500, 0)
+        .duration(20*3)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.centrifuge('tfg:californium_t1')
+        .inputItemNbtPredicate('tfg:depleted_tbu_232_rod',
+            NBTPredicates.all([
+                NBTPredicates.gte("avgHeat", 600),
+                NBTPredicates.lte("avgHeat", 699)
+            ]))
+        .chancedItemOutputLogic($ChanceLogic.OR)
+		.chancedOutput(Item.of('gtceu:tiny_californium_252_dust'), 2500, 0)
+		.chancedOutput(Item.of('2x gtceu:tiny_californium_252_dust'), 7500, 0)
+        .duration(20*3)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.centrifuge('tfg:californium_t2')
+        .inputItemNbtPredicate('tfg:depleted_tbu_232_rod',
+            NBTPredicates.all([
+                NBTPredicates.gte("avgHeat", 700),
+                NBTPredicates.lte("avgHeat", 799)
+            ]))
+        .chancedItemOutputLogic($ChanceLogic.OR)
+		.chancedOutput(Item.of('4x gtceu:tiny_californium_252_dust'), 2500, 0)
+		.chancedOutput(Item.of('8x gtceu:tiny_californium_252_dust'), 7500, 0)
+        .duration(20*3)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.centrifuge('tfg:californium_t3')
+        .inputItemNbtPredicate('tfg:depleted_tbu_232_rod',
+            NBTPredicates.all([
+                NBTPredicates.gte("avgHeat", 800),
+                NBTPredicates.lte("avgHeat", 1200)
+            ]))
+        .chancedItemOutputLogic($ChanceLogic.OR)
+		.chancedOutput(Item.of('12x gtceu:tiny_californium_252_dust'), 2500, 0)
+		.chancedOutput(Item.of('16x gtceu:tiny_californium_252_dust'), 7500, 0)
+        .duration(20*3)
+        .EUt(GTValues.VA[GTValues.IV])
+
 	//#region FLiBe Line - SCRAP FROM MARS TO VENUS
 
-	/*
 
 	event.recipes.gtceu.evaporation_tower('raw_rich_brine_earth')
 		.inputFluids(Fluid.of('tfc:spring_water', 20000))
@@ -564,10 +712,10 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*36)
 		.EUt(GTValues.VA[GTValues.IV])
 
-	*/
-
 	//#endregion
 
-		
+	//#region Isotopic Solvent and degradated
 
+
+	
 }
