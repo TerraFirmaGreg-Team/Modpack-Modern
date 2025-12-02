@@ -11,17 +11,17 @@ function registerTFGEarlyGasRecipes(event) {
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ item: 'minecraft:charcoal' }, { fluid: 'gtceu:creosote', amount: 250 }],
-		results: [{ fluid: 'tfg:syngas', amount: 100 }],
+		results: [{ fluid: 'tfg:syngas', amount: 50 }],
 		heatRequirement: "heated",
-		processingTime: 750
+		processingTime: 1000
 	}).id('tfg:vi/vacuumizing/syngas_from_charcoal')
 
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ item: 'minecraft:coal' }, { fluid: 'gtceu:creosote', amount: 250 }],
-		results: [{ fluid: 'tfg:syngas', amount: 200 }],
+		results: [{ fluid: 'tfg:syngas', amount: 100 }],
 		heatRequirement: "heated",
-		processingTime: 750
+		processingTime: 1000
 	}).id('tfg:vi/vacuumizing/syngas_from_coal')
 
 	event.custom({
@@ -29,7 +29,7 @@ function registerTFGEarlyGasRecipes(event) {
 		ingredients: [{ item: 'gtceu:coke_gem' }, { fluid: 'gtceu:creosote', amount: 250 }],
 		results: [{ fluid: 'tfg:syngas', amount: 400 }],
 		heatRequirement: "heated",
-		processingTime: 750
+		processingTime: 1000
 	}).id('tfg:vi/vacuumizing/syngas_from_coke')
 
 	event.custom({
@@ -37,36 +37,36 @@ function registerTFGEarlyGasRecipes(event) {
 		ingredients: [{ item: 'beneath:cursecoal' }, { fluid: 'gtceu:creosote', amount: 250 }],
 		results: [{ fluid: 'tfg:syngas', amount: 400 }],
 		heatRequirement: "heated",
-		processingTime: 750
+		processingTime: 1000
 	}).id('tfg:vi/vacuumizing/syngas_from_anthracite')
 
 	event.recipes.gtceu.brewery('tfg:syngas_from_charcoal')
 		.itemInputs('minecraft:charcoal')
 		.inputFluids('gtceu:creosote 250')
 		.outputFluids('tfg:syngas 100')
-		.duration(20*10)
-		.EUt(2)
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.brewery('tfg:syngas_from_coal')
 		.itemInputs('minecraft:coal')
 		.inputFluids('gtceu:creosote 250')
 		.outputFluids('tfg:syngas 200')
-		.duration(20*10)
-		.EUt(2)
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.brewery('tfg:syngas_from_coke')
 		.itemInputs('gtceu:coke_gem')
 		.inputFluids('gtceu:creosote 250')
 		.outputFluids('tfg:syngas 400')
-		.duration(20*10)
-		.EUt(2)
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.brewery('tfg:syngas_from_anthracite')
 		.itemInputs('beneath:cursecoal')
 		.inputFluids('gtceu:creosote 250')
 		.outputFluids('tfg:syngas 400')
-		.duration(20*10)
-		.EUt(2)
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	//#region Reformate Gas
 
@@ -78,7 +78,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:coal_tar', 500), Fluid.of('tfg:syngas', 3200), Fluid.of('tfg:raw_aromatic_mix', 1000))
 		.duration(20*600)
 		.circuit(1)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.MV])
 
 	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_charcoal_hydrogen')
 		.itemInputs(Item.of('minecraft:charcoal', 24))
@@ -204,8 +204,17 @@ function registerTFGEarlyGasRecipes(event) {
 
 	//#endregion
 
+	//#region Rebalance Fuel
 
+	// Increase Pyrolyse Oven duration
 
+	event.forEachRecipe({ id: /gtceu:pyrolyse_oven\/(log_to_creosote|log_to_creosote_nitrogen)/ }, recipe => {
+        var newDuration = recipe.get("duration")
+        recipe.set("duration", newDuration*4)
+	})
+
+	//#region New Power Generation
+	
 	// Add Syngas
 
 	event.recipes.gtceu.steam_boiler('tfg:syngas') // Small Boiler and Large Boiler divided by 4
