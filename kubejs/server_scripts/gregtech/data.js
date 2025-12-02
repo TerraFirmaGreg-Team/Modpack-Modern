@@ -153,7 +153,7 @@ function registerGTCEUBedrockFluidVeins(event) {
 		vein.maximumYield(50)
 		vein.depletionAmount(1)
 		vein.depletionChance(1)
-		vein.depletedYield(50)
+		vein.depletedYield(20)
 	})
 
 	event.add('tfg:moon_argon', vein => {
