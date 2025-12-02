@@ -18,6 +18,10 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:water_breathing_ingredients', 'tfg:rapeseed_product')
 	event.add('tfg:night_vision_ingredients', 'tfg:sunflower_product')
 
+    event.add("tfg:sugars", "minecraft:sugar");
+    event.add("tfg:sugars", "afc:birch_sugar");
+    event.add("tfg:sugars", "afc:maple_sugar");
+
 	// Actually "layers", can't rename them without screwing with peoples' worlds
 	event.add('c:hidden_from_recipe_viewers', 'tfg:ash_pile')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/black_sand')
@@ -627,12 +631,10 @@ const registerTFGItemTags = (event) => {
 	event.remove('forge:dusts', 'tfg:cellulose_matrix')
 	event.remove('forge:dusts/cellulose_matrix', 'tfg:cellulose_matrix')
 	
-	event.remove('balm:ingots', 'tfg:polycaprolactam_fabric')
 	event.remove('tfc:pileable_ingots', 'tfg:polycaprolactam_fabric')
 	event.remove('forge:ingots', 'tfg:polycaprolactam_fabric')
 	event.remove('forge:ingots/tfg_polycaprolactam', 'tfg:polycaprolactam_fabric')
 	
-	event.remove('balm:nuggets', 'tfg:polycaprolactam_string')
 	event.remove('forge:nuggets', 'tfg:polycaprolactam_string')	
 	event.remove('forge:nuggets/tfg_polycaprolactam', 'tfg:polycaprolactam_string')
 

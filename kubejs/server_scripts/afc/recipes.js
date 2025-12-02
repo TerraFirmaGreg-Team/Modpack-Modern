@@ -361,7 +361,7 @@ const registerAFCRecipes = (event) => {
 
 	//#endregion
 
-	//region gt sap processing
+	//#region GT sap processing
 
 	event.recipes.gtceu.fluid_heater('maple_sap_condense')
 		.inputFluids(Fluid.of('afc:maple_sap', 1000))
@@ -375,8 +375,6 @@ const registerAFCRecipes = (event) => {
 		.duration(20*35)
 		.EUt(GTValues.VA[GTValues.ULV])
 	
-	
-	//endregion
 
 	event.recipes.gtceu.fluid_solidifier('maple_syrup')
 		.inputFluids(Fluid.of('afc:maple_syrup', 100))
@@ -389,6 +387,8 @@ const registerAFCRecipes = (event) => {
 		.itemOutputs('afc:birch_sugar')
 		.duration(20*12)
 		.EUt(GTValues.VHA[GTValues.ULV])
+	
+	//#endregion
 
 
 	// Syrup into sugar

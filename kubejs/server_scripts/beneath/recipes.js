@@ -67,12 +67,6 @@ const registerBeneathRecipes = (event) => {
 
 	event.recipes.tfc.landslide('beneath:soul_clay', 'beneath:soul_clay')
 
-	generateGreenHouseRecipe(event, '8x tfg:saplings/warped', 'tfg:semiheavy_ammoniacal_water', 16000,
-		'64x beneath:wood/log/warped', 'tfg:green_house/warped_fungus', 'ad_astra:mars', 8, 
-		'32x minecraft:warped_wart_block', GTValues.VA[GTValues.MV])
-	generateGreenHouseRecipe(event, '8x tfg:saplings/crimson', 'tfg:semiheavy_ammoniacal_water', 16000,
-		'64x beneath:wood/log/crimson', 'tfg:green_house/crimson_fungus', 'ad_astra:mars', 8,
-		'32x minecraft:nether_wart_block', GTValues.VA[GTValues.MV])
 
 	Ingredient.of('#beneath:mushrooms').stacks.forEach(element => {
 		const itemId = element.id;
@@ -81,26 +75,6 @@ const registerBeneathRecipes = (event) => {
 		generateGreenHouseRecipe(event, element.withCount(4), '#tfc:any_fresh_water', 8000, element.withCount(24),
 			recipeId, 'minecraft:the_nether', 8, element.withCount(4), GTValues.VH[GTValues.LV]);
 	});
-
-	// don't pass in the items like doors, trapdoors etc because beneath already has good recipes for those
-	woodBuilder(event, 'crimson', 'beneath:wood/lumber/crimson', '#tfc:crimson_logs', 'beneath:wood/log/crimson',
-		'beneath:wood/stripped_log/crimson', 'beneath:wood/planks/crimson', null,
-		'beneath:wood/planks/crimson_slab', null, null, null, null, null, 'beneath:wood/planks/crimson_pressure_plate',
-		'beneath:wood/planks/crimson_button')
-
-	event.recipes.gtceu.lathe(`tfg:cutter/crimson_stripped_wood_from_wood`)
-		.itemInputs('beneath:wood/wood/crimson')
-		.itemOutputs('beneath:wood/stripped_wood/crimson')
-		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.custom({
-		type: 'vintageimprovements:polishing',
-		ingredients: [{ item: 'beneath:wood/wood/crimson' }],
-		results: [{ item: 'beneath:wood/stripped_wood/crimson' }],
-		speed_limits: 0,
-		processingTime: 50
-	}).id(`tfg:vi/lathe/stripping_crimson_wood`)
 
 	event.shaped('beneath:wood/sewing_table/crimson', [
 		' AB',
@@ -112,26 +86,6 @@ const registerBeneathRecipes = (event) => {
 		C: 'beneath:wood/planks/crimson',
 		D: 'beneath:wood/log/crimson'
 	}).id('tfg:shaped/crimson_sewing_table')
-
-
-	woodBuilder(event, 'warped', 'beneath:wood/lumber/warped', '#tfc:warped_logs', 'beneath:wood/log/warped',
-		'beneath:wood/stripped_log/warped', 'beneath:wood/planks/warped', null,
-		'beneath:wood/planks/warped_slab', null, null, null, null, null, 'beneath:wood/planks/warped_pressure_plate',
-		'beneath:wood/planks/warped_button')
-
-	event.recipes.gtceu.lathe(`tfg:cutter/warped_stripped_wood_from_wood`)
-		.itemInputs('beneath:wood/wood/warped')
-		.itemOutputs('beneath:wood/stripped_wood/warped')
-		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.custom({
-		type: 'vintageimprovements:polishing',
-		ingredients: [{ item: 'beneath:wood/wood/warped' }],
-		results: [{ item: 'beneath:wood/stripped_wood/warped' }],
-		speed_limits: 0,
-		processingTime: 50
-	}).id(`tfg:vi/lathe/stripping_warped_wood`)
 
 	event.shaped('beneath:wood/sewing_table/warped', [
 		' AB',

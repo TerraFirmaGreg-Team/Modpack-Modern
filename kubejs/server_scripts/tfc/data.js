@@ -7,8 +7,6 @@ const registerTFCDataForTFC = (event) => {
 	registerTFCLampFuels(event)
 	registerTFCFertilizers(event)
 	registerTFCKnappingTypes(event)
-	registerTFCItemSize(event)
-	registerTFCFoodData(event)
 	registerTFCArmourResistances(event)
 }
 
@@ -75,27 +73,6 @@ const registerTFCFertilizers = (event) => {
 const registerTFCKnappingTypes = (event) => {
 	event.knappingType('minecraft:flint', 1, 1, 'tfc:item.knapping.stone', true, false, true, 'minecraft:flint', 'tfg:flint')
 	event.knappingType('tfc:straw', 4, 4, 'tfc:item.knapping.leather', false, false, false, 'tfc:straw', 'tfg:straw')
-}
-
-
-const registerTFCItemSize = (event) => {
-	event.itemSize('#tfc:ore_pieces', 'very_small', 'very_light', 'tfc_ores')
-
-	event.itemSize('#tfc:foods/sealed_preserves', 'tiny', 'medium', 'sealed_preserves')
-	event.itemSize('#tfc:foods/preserves', 'tiny', 'medium', 'preserves')
-
-	event.itemSize('#forge:tools/wrenches', 'very_large', 'very_heavy', 'wrenches')
-	event.itemSize('#forge:tools/mining_hammers', 'very_large', 'very_heavy', 'mining_hammers')
-	event.itemSize('#forge:tools/spades', 'very_large', 'very_heavy', 'spades')
-}
-
-
-const registerTFCFoodData = (event) => {
-	
-	event.foodItem('firmalife:ice_shavings', food => {
-		food.water(5)
-		food.decayModifier(0)
-	})
 }
 
 const registerTFCArmourResistances = (event) => {

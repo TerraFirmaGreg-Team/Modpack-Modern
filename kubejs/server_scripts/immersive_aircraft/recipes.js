@@ -872,4 +872,52 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:immersive_aircraft/mechanical_crafter/bamboo_hopper')
 
 	//#endregion
+
+	// Custom stuff
+
+	//Scaffolding Frame
+	event.shaped('tfg:scaffolding_frame',
+		[
+			' A ',
+			'ABA',
+			' A '
+		],
+		{
+			A: '#forge:rods/wood',
+			B: '#forge:cloth'
+		}).id('tfg:shaped/scaffolding_frame');
+
+	//Airship Hull
+	event.shaped('tfg:airship_hull', [
+		'A B',
+		'C C',
+		'CCC'
+	], {
+		A: '#forge:tools/screwdrivers',
+		B: '#forge:tools/hammers',
+		C: 'immersive_aircraft:hull'
+	}).id('tfg:shaped/airship_hull');
+	event.recipes.gtceu.assembler('tfg:assembler/airship_hull')
+		.itemInputs('5x immersive_aircraft:hull')
+		.itemOutputs('tfg:airship_hull')
+		.duration(40)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.ULV]);
+
+	//Airship Balloon
+	event.shaped('tfg:airship_balloon', [
+		'ABA',
+		'BAB',
+		'ABA'
+	], {
+		A: '#forge:string',
+		B: 'immersive_aircraft:sail'
+	}).id('tfg:shaped/airship_balloon')
+
+	event.recipes.gtceu.assembler('tfg:assembler/airship_balloon')
+		.itemInputs('4x immersive_aircraft:sail', '4x #forge:string')
+		.itemOutputs('tfg:airship_balloon')
+		.duration(40)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.ULV])
 }

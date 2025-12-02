@@ -180,7 +180,7 @@ TFCEvents.data(event => {
  */
 LootJS.modifiers((event) => {
 	registerAdAstraLoots(event)
-	registerGTCEULoots(event)
+	registerTFGOreLoots(event)
 	registerLootrLoots(event)
 	registerPrimitiveCreaturesLoots(event)
 	registerSpeciesLoots(event)
