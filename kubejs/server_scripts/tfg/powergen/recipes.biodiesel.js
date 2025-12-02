@@ -91,26 +91,4 @@ function registerTFGBiodieselRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:glycerol'), Fluid.of('gtceu:bio_diesel', 6000))
 		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.LV])
-
-	event.recipes.gtceu.extractor(`rapeseed_oil`)
-		.itemInputs('tfg:rapeseed_product')
-		.outputFluids(Fluid.of('gtceu:seed_oil', 600))
-		.duration(20 * 5)
-		.EUt(GTValues.VHA[GTValues.ULV])
-
-	event.recipes.gtceu.extractor(`sunflower_oil`)
-		.itemInputs('tfg:sunflower_product')
-		.outputFluids(Fluid.of('gtceu:seed_oil', 350))
-		.duration(20 * 5)
-		.EUt(GTValues.VHA[GTValues.ULV])
-
-	event.recipes.tfc.barrel_sealed(1000)
-		.inputs('tfg:rapeseed_product', Fluid.of('minecraft:water', 100))
-		.outputFluid(Fluid.of('gtceu:seed_oil', 250))
-		.id('tfg:barrel/rapeseed_to_oil')
-
-	event.recipes.tfc.barrel_sealed(1000)
-		.inputs('tfg:sunflower_product', Fluid.of('minecraft:water', 100))
-		.outputFluid(Fluid.of('gtceu:seed_oil', 120))
-		.id('tfg:barrel/sunflower_to_oil')
 }
