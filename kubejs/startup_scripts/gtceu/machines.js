@@ -270,8 +270,8 @@ const registerGTCEuMachines = (event) => {
 		.recipeType('nuclear_fuel_factory')
         .recipeModifiers(
             [
-                GTRecipeModifiers.PARALLEL_HATCH,  
-                (machine, recipe) => GTRecipeModifiers.pyrolyseOvenOverclock(machine, recipe),
+                GTRecipeModifiers.PARALLEL_HATCH,
+				(machine, recipe) => GTRecipeModifiers.pyrolyseOvenOverclock(machine, recipe),
 				GTRecipeModifiers.BATCH_MODE
             ]
         )
@@ -447,59 +447,39 @@ const registerGTCEuMachines = (event) => {
 			'gtceu:block/casings/gcym/nonconducting_casing',
 			'gtceu:block/multiblock/distillation_tower')
 
-	// Extraterrestrial Ore Fabricator
 
-	event.create('ostrum_linear_accelerator', 'multiblock')
+	//#region Power Rework
+
+	// Coal Liquefaction Tower
+
+	event.create('coal_liquefaction_tower', 'multiblock')
+		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.rotationState(RotationState.NON_Y_AXIS)
-		.recipeType('ostrum_linear_accelerator')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
-		.appearanceBlock(() => Block.getBlock('tfg:casings/machine_casing_mars'))
+		.recipeType('coal_liquefaction_tower')
+		.recipeModifiers([(machine, recipe) => GTRecipeModifiers.crackerOverclock(machine, recipe), GTRecipeModifiers.BATCH_MODE])
+		.appearanceBlock(() => Block.getBlock('gtceu:solid_machine_casing'))
 		.pattern(definition => FactoryBlockPattern.start()
-			.aisle('AAAAAAAAA', 'AAAAAAAAA', 'AAAAAAAAA', '         ', '         ' )
-			.aisle('BAAAAAAAA', 'B#######D', 'BBBBBBBAA', ' BCCCB   ', ' BBBBB   ' )
-			.aisle('AAAAAAAAA', 'A#######D', 'BB###BBAA', ' C###C   ', ' BHHHB   ' )
-			.aisle('BEBEBEAAA', 'BEBEBEA#D', 'BBBBBBBAA', ' BCCCB   ', ' BBBBB   ' )
-			.aisle('A     AFA', 'A     AXA', 'AAAAAAAFA', '         ', '         ' )
+			.aisle('CCC', 'D D', 'D D', 'DED', 'DED', 'BBB')
+			.aisle('CCC', ' Y ', ' E ', 'E#E', 'EEE', 'BMB')
+			.aisle('CXC', 'D D', 'D D', 'DED', 'DED', 'BBB' )
 			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
-			.where('A', Predicates.blocks('tfg:casings/machine_casing_mars')
-				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1).setMaxGlobalLimited(2)))
-			.where('B', Predicates.blocks('tfg:casings/machine_casing_ostrum_carbon'))
-			.where('C', Predicates.blocks('tfg:casings/machine_casing_vacuum_engine_intake'))
-			.where('D', Predicates.blocks('gtceu:heat_vent'))
-			.where('E', Predicates.blocks('tfg:casings/machine_casing_mars')
-				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(6))
-				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(6)))
-			.where('F', Predicates.blocks('tfg:casings/machine_casing_mars')
-				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
-			.where('H', Predicates.blocks('tfg:casings/machine_casing_mars')
-				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
-				.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS)))
+			.where('B', Predicates.blocks('gtceu:solid_machine_casing').setMinGlobalLimited(4)
+				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(2))
+				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1)))
+			.where('C', Predicates.blocks('gtceu:solid_machine_casing')
+				.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(2))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1).setMaxGlobalLimited(2).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1).setPreviewCount(1)))
+			.where('D', Predicates.blocks('create:metal_girder'))
+			.where('E', Predicates.blocks('gtceu:steam_machine_casing'))
+			.where('Y', Predicates.heatingCoils())
+			.where('M', Predicates.abilities(PartAbility.MUFFLER).setExactLimit(1))
 			.where('#', Predicates.air())
 			.where(' ', Predicates.any())
 			.build()
 		)
-		.shapeInfo(controller => MultiblockShapeInfo.builder()
-			.aisle('KKAAAAAAA', 'AAAAAAAAA', 'AAAAAAAAA', '         ', '         ' )
-			.aisle('BAAAAAAAA', 'B       D', 'BBBBBBBAA', ' BCCCB   ', ' BBBBB   ' )
-			.aisle('AAAAAAAAA', 'A       D', 'BB   BBAA', ' C   C   ', ' BIAHB   ' )
-			.aisle('BEBEBEAAA', 'BEBFBEA#D', 'BBBBBBBAA', ' BCCCB   ', ' BBBBB   ' )
-			.aisle('A     AMA', 'A     AXA', 'AAAAAAAAA', '         ', '         ' )
-			.where('X', controller, Direction.SOUTH)
-			.where('A', Block.getBlock('tfg:casings/machine_casing_mars'))
-			.where('B', Block.getBlock('tfg:casings/machine_casing_ostrum_carbon'))
-			.where('C', Block.getBlock('tfg:casings/machine_casing_vacuum_engine_intake'))
-			.where('D', Block.getBlock('gtceu:heat_vent'))
-			.where('E', GTMachines.FLUID_IMPORT_HATCH[GTValues.EV], Direction.SOUTH)
-			.where('F', GTMachines.ITEM_IMPORT_BUS[GTValues.EV], Direction.SOUTH)
-			.where('H', GTMachines.ITEM_EXPORT_BUS[GTValues.EV], Direction.UP)
-			.where('I', GTMachines.FLUID_EXPORT_HATCH[GTValues.EV], Direction.UP)
-			.where('M', GTMachines.AUTO_MAINTENANCE_HATCH, Direction.SOUTH)
-			.where('K', GTMachines.ENERGY_INPUT_HATCH[GTValues.HV], Direction.NORTH)
-			.where(' ', Block.getBlock('minecraft:air'))
-			.build()
-		)
 		.workableCasingModel(
-			'tfg:block/casings/machine_casing_mars',
-			'gtceu:block/machines/thermal_centrifuge')
+			'gtceu:block/casings/solid/machine_casing_solid_steel',
+			'gtceu:block/multiblock/distillation_tower')
 
 }

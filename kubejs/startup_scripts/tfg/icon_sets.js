@@ -1,45 +1,45 @@
 // priority: 0
 "use strict";
 
-const registerTFCMaterials = (event) => {
-    const registerStoneMaterial = (rockType, color) => 
-        event.create(`tfg:${rockType}`)
-            .dust()
-            .color(color)
-            .iconSet(GTMaterialIconSet.ROUGH)
-            .flags(
-                GTMaterialFlags.MORTAR_GRINDABLE, 
-                GTMaterialFlags.NO_SMASHING, 
-                GTMaterialFlags.NO_SMELTING
-            )
+function registerTFGIconSets(event) {
 
-    /* TFC Stone Types Materials */
-    registerStoneMaterial('gabbro', 0x7F8081)
-    registerStoneMaterial('shale', 0x686567)
-    registerStoneMaterial('claystone', 0xAF9377)
-    registerStoneMaterial('limestone', 0xA09885)
-    registerStoneMaterial('conglomerate', 0xA3977F)
-    registerStoneMaterial('dolomite', 0x515155)
-    registerStoneMaterial('chert', 0x7A6756)
-    registerStoneMaterial('chalk', 0xA4A39F)
-    registerStoneMaterial('rhyolite', 0x726D69)
-    registerStoneMaterial('dacite', 0x979797)
-    registerStoneMaterial('slate', 0x989287)
-    registerStoneMaterial('phyllite', 0x706B61)
-    registerStoneMaterial('schist', 0x6E735C)
-    registerStoneMaterial('gneiss', 0x6A6D60)
+	event.create('tfc_borax').parent('rough')
+	event.create('tfc_gypsum').parent('rough')
+	event.create('tfc_graphite').parent('rough')
+	event.create('tfc_saltpeter').parent('fine')
+	event.create('tfc_sulfur').parent('fine')
 
-    registerStoneMaterial('dripstone', 0x927965)
+	event.create('tfc_amethyst').parent('ruby')
+	event.create('tfc_redstone').parent('fine')
+	event.create('tfc_diamond').parent('diamond')
+	event.create('tfc_emerald').parent('emerald')
+	event.create('tfc_lapis').parent('lapis')
+	event.create('tfc_opal').parent('opal')
+	event.create('tfc_pyrite').parent('bright')
+	event.create('tfc_ruby').parent('ruby')
+	event.create('tfc_sapphire').parent('gem_horizontal')
+	event.create('tfc_topaz').parent('gem_vertical')
+	event.create('tfc_realgar').parent('emerald')
+		
+	event.create('tfc_bismuth').parent('bright')
+	event.create('tfc_cassiterite').parent('bright')
+	event.create('tfc_garnierite').parent('bright')
+	event.create('tfc_hematite').parent('metallic')
+	event.create('tfc_limonite').parent('metallic')
+	event.create('tfc_magnetite').parent('dull')
+	event.create('tfc_malachite').parent('shiny')
+	event.create('tfc_copper').parent('bright')
+	event.create('tfc_gold').parent('shiny')
+	event.create('tfc_silver').parent('shiny')
+	event.create('tfc_sphalerite').parent('dull')
+	event.create('tfc_tetrahedrite').parent('dull')
+	event.create('tfc_chromite').parent('dull')
+		
+	event.create('nether_quartz').parent('quartz')
+}
 
-    registerStoneMaterial('moon_stone', 0x506869)
-    registerStoneMaterial('moon_deepslate', 0x45474D)
-    registerStoneMaterial('mars_stone', 0xD08957)
-    registerStoneMaterial('venus_stone', 0xD5A664)
-    registerStoneMaterial('mercury_stone', 0x723E49)
-    registerStoneMaterial('glacio_stone', 0x9897BF)
-
-    // Specialized icon sets for TFC's own
-
+function modifyTFGIconSets(event) {
+	
     GTMaterials.Coal.setMaterialIconSet(GTMaterialIconSet.LIGNITE)
     GTMaterials.Borax.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_borax'))
     GTMaterials.Gypsum.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_gypsum'))

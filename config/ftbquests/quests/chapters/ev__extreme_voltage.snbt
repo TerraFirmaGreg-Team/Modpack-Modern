@@ -1577,7 +1577,7 @@
 			subtitle: "{quests.extreme_voltage.ostrum_linear.subtitle}"
 			tasks: [{
 				id: "130FE3E2CE8735F8"
-				item: "gtceu:ostrum_linear_accelerator"
+				item: "tfg:ostrum_linear_accelerator"
 				type: "item"
 			}]
 			x: 20.0d

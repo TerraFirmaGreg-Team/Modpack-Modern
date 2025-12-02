@@ -19,70 +19,76 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('tfg.tooltip.blaze_burner'))
 	})
 	event.addAdvanced(['tfg:electric_greenhouse'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.machine.electric_greenhouse_1')),
-			text.add(2, Text.translate('tfg.tooltip.machine.electric_greenhouse_2')),
-			text.add(3, Text.translate('tfg.tooltip.machine.perfect_overclock')),
-			text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches')),
-			text.add(5, Text.translate('tfg.tooltip.machine.customize_interior'))
+		text.add(1, Text.translate('tfg.tooltip.machine.electric_greenhouse_1'));
+		text.add(2, Text.translate('tfg.tooltip.machine.electric_greenhouse_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.perfect_overclock'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
+		text.add(5, Text.translate('tfg.tooltip.machine.customize_interior'));
 	})
 	event.addAdvanced(['tfg:growth_chamber'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.machine.growth_chamber_1')),
-			text.add(2, Text.translate('tfg.tooltip.machine.growth_chamber_2')),
-			text.add(5, Text.translate('tfg.tooltip.machine.two_energy_hatches'))
+		text.add(1, Text.translate('tfg.tooltip.machine.growth_chamber_1'));
+		text.add(2, Text.translate('tfg.tooltip.machine.growth_chamber_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
 	})
 	event.addAdvanced(['tfg:evaporation_tower'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.machine.evaporation_tower_1')),
-			text.add(2, Text.translate('tfg.tooltip.machine.evaporation_tower_2')),
-			text.add(3, Text.translate('tfg.tooltip.machine.two_energy_hatches'))
+		text.add(1, Text.translate('tfg.tooltip.machine.evaporation_tower_1'));
+		text.add(2, Text.translate('tfg.tooltip.machine.evaporation_tower_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
 	})
 	event.addAdvanced(['tfg:bioreactor'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.machine.bioreactor_1')),
-			text.add(2, Text.translate('tfg.tooltip.machine.bioreactor_2')),
-			text.add(3, Text.translate('tfg.tooltip.machine.two_energy_hatches'))
+		text.add(1, Text.translate('tfg.tooltip.machine.bioreactor_1'));
+		text.add(2, Text.translate('tfg.tooltip.machine.bioreactor_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
 	})
 	event.addAdvanced(['tfg:cooling_tower'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.machine.cooling_tower_1')),
-			text.add(2, Text.translate('tfg.tooltip.machine.cooling_tower_2')),
-			text.add(3, Text.translate('tfg.tooltip.machine.perfect_overclock')),
-			text.add(4, Text.translate('tfg.tooltip.machine.subtick')),
-			text.add(5, Text.translate('tfg.tooltip.machine.one_energy_hatch'))
+		text.add(1, Text.translate('tfg.tooltip.machine.cooling_tower_1'));
+		text.add(2, Text.translate('tfg.tooltip.machine.cooling_tower_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.perfect_overclock'));
+		text.add(4, Text.translate('tfg.tooltip.machine.subtick'));
+		text.add(5, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
 	})
 	event.addAdvanced(['gtceu:moon_dust_harvester'], (item, advanced, text) => {
-		text.add(1, Text.translate('gtceu.tooltip.machine.moon_dust_harvester_1')),
-			text.add(2, Text.translate('gtceu.tooltip.machine.moon_dust_harvester_2')),
-			text.add(3, Text.translate('tfg.tooltip.machine.coil_energy_discount')),
-			text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'))
+		text.add(1, Text.translate('gtceu.tooltip.machine.moon_dust_harvester_1'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.moon_dust_harvester_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.coil_energy_discount'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
 	})
 	event.addAdvanced(['gtceu:ostrum_harvester'], (item, advanced, text) => {
-		text.add(1, Text.translate('gtceu.tooltip.machine.ostrum_harvester_1')),
-			text.add(2, Text.translate('gtceu.tooltip.machine.ostrum_harvester_2')),
-			text.add(3, Text.translate('tfg.tooltip.machine.coil_energy_discount')),
-			text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'))
+		text.add(1, Text.translate('gtceu.tooltip.machine.ostrum_harvester_1'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.ostrum_harvester_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.coil_energy_discount'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
 	})
-	event.addAdvanced(['gtceu:ostrum_linear_accelerator'], (item, advanced, text) => {
-		text.add(1, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_1')),
-			text.add(2, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_2')),
-			text.add(3, Text.translate('tfg.tooltip.machine.two_energy_hatches'))
+	event.addAdvanced(['tfg:ostrum_linear_accelerator'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_1'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
 	})
 	event.addAdvanced(['gtceu:heat_exchanger'], (item, advanced, text) => {
-		text.add(1, Text.translate('gtceu.tooltip.machine.heat_exchanger_1')),
-			text.add(2, Text.translate('gtceu.tooltip.machine.heat_exchanger_2')),
-			text.add(3, Text.translate('tfg.tooltip.machine.perfect_overclock')),
-			text.add(4, Text.translate('tfg.tooltip.machine.subtick')),
-			text.add(5, Text.translate('tfg.tooltip.machine.one_energy_hatch'))
+		text.add(1, Text.translate('gtceu.tooltip.machine.heat_exchanger_1'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.heat_exchanger_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.perfect_overclock'));
+		text.add(4, Text.translate('tfg.tooltip.machine.subtick'));
+		text.add(5, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
 	})
 	event.addAdvanced(['gtceu:nuclear_fuel_factory'], (item, advanced, text) => {
-		text.add(1, Text.translate('gtceu.tooltip.machine.nuclear_fuel_factory_1')),
-			text.add(2, Text.translate('gtceu.tooltip.machine.nuclear_fuel_factory_2')),
-			text.add(3, Text.translate('tfg.tooltip.machine.one_energy_hatch'))
+		text.add(1, Text.translate('gtceu.tooltip.machine.nuclear_fuel_factory_1'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.nuclear_fuel_factory_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
 	})
 	event.addAdvanced(['gtceu:steam_bloomery'], (item, advanced, text) => {
-		text.add(1, Text.translate('gtceu.tooltip.machine.steam_bloomery_1')),
-			text.add(2, Text.translate('gtceu.tooltip.machine.steam_bloomery_2'))
+		text.add(1, Text.translate('gtceu.tooltip.machine.steam_bloomery_1'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.steam_bloomery_2'));
 	})
 	event.addAdvanced(['gtceu:large_chemical_reactor'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.machine.perfect_overclock')),
-			text.add(2, Text.translate('tfg.tooltip.machine.subtick'))
+		text.add(1, Text.translate('tfg.tooltip.machine.perfect_overclock'));
+		text.add(2, Text.translate('tfg.tooltip.machine.subtick'));
+	})
+	event.addAdvanced(['gtceu:coal_liquefaction_tower'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_1'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.coil_energy_discount'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
 	})
 
 	// Insulation
@@ -364,5 +370,8 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfc_gurman:nalivka_bucket'], (item, advanced, text) => {
 		text.add(1, Text.of("Strength (02:40)").blue());
 		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
+	})
+	event.addAdvanced(['tfc:bucket/spring_water'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 }

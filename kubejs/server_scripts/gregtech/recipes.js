@@ -1680,15 +1680,15 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.large_chemical_reactor('tfg:scheelite_to_sodium_tungstate')
 		.itemInputs(Item.of('gtceu:scheelite_dust', 6))
 		.itemInputs(Item.of('gtceu:soda_ash_dust', 6))
-		.itemOutputs(Item.of('tfg:sodium_tungstate_dust', 6))
-		.itemOutputs(Item.of('gtceu:calcite_dust', 6))
+		.itemOutputs(Item.of('tfg:sodium_tungstate_dust', 7))
+		.itemOutputs(Item.of('gtceu:calcite_dust', 5))
 		.duration(20*12)
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.large_chemical_reactor('tfg:tungstate_to_sodium_tungstate')
-		.itemInputs(Item.of('gtceu:tungstate_dust', 6))
+		.itemInputs(Item.of('gtceu:tungstate_dust', 7))
 		.itemInputs(Item.of('gtceu:soda_ash_dust', 6))
-		.itemOutputs(Item.of('tfg:sodium_tungstate_dust', 6))
+		.itemOutputs(Item.of('tfg:sodium_tungstate_dust', 7))
 		.itemOutputs(Item.of('gtceu:lithium_dust', 2))
 		.itemOutputs(Item.of('gtceu:carbon_dust', 1))
 		.outputFluids(Fluid.of('gtceu:oxygen', 3000))
@@ -1696,16 +1696,16 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.chemical_bath('tfg:tungstate_to_tungsten_acid')
-		.inputFluids(Fluid.of('gtceu:hydrochloric_acid', 12000))
-		.itemInputs(Item.of('tfg:sodium_tungstate_dust', 6))
-		.itemOutputs(Item.of('gtceu:salt_dust', 48))
-		.itemOutputs(Item.of('gtceu:tungstic_acid_dust', 6))
+		.inputFluids(Fluid.of('gtceu:hydrochloric_acid', 2000))
+		.itemInputs(Item.of('tfg:sodium_tungstate_dust', 7))
+		.itemOutputs(Item.of('gtceu:salt_dust', 4))
+		.itemOutputs(Item.of('gtceu:tungstic_acid_dust', 7))
 		.duration(20*24)
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.chemical_bath('tfg:tungsten_acid_to_ammonium_tungstate')
 		.inputFluids(Fluid.of('gtceu:ammonia', 10000))
-		.itemInputs(Item.of('gtceu:tungstic_acid_dust', 12))
+		.itemInputs(Item.of('gtceu:tungstic_acid_dust', 7))
 		.itemOutputs(Item.of('tfg:ammonium_tungstate_dust', 1))
 		.duration(20*16)
 		.EUt(GTValues.VA[GTValues.EV])
@@ -1719,19 +1719,19 @@ const registerGTCEURecipes = (event) => {
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
-		.duration(20*90)
+		.duration(20*48)
 		.EUt(GTValues.VHA[GTValues.HV])
 
 	event.recipes.gtceu.distillery('tfg:ammonium_tungstate_to_apt')
 		.itemInputs(Item.of('tfg:ammonium_tungstate_dust', 1))
 		.itemOutputs(Item.of('tfg:apt_gem', 1))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 500))
-		.duration(20*90)
+		.duration(20*48)
 		.EUt(GTValues.VHA[GTValues.HV])
-
+	
 	event.recipes.gtceu.pyrolyse_oven('tfg:apt')
 		.itemInputs(Item.of('tfg:apt_gem', 1))
-		.itemOutputs(Item.of('tfg:tungsten_oxide_dust', 3))
+		.itemOutputs(Item.of('tfg:tungsten_oxide_dust', 1))
 		.outputFluids(Fluid.of('gtceu:ammonia', 10000))
 		.duration(20*36)
 		.EUt(GTValues.VA[GTValues.EV])
@@ -1740,7 +1740,7 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.pyrolyse_oven('tfg:apt_nitrogen')
 		.itemInputs(Item.of('tfg:apt_gem', 1))
 		.inputFluids(Fluid.of('gtceu:nitrogen', 1000))
-		.itemOutputs(Item.of('tfg:tungsten_oxide_dust', 3))
+		.itemOutputs(Item.of('tfg:tungsten_oxide_dust', 1))
 		.outputFluids(Fluid.of('gtceu:ammonia', 10000))
 		.duration(20*18)
 		.EUt(GTValues.VA[GTValues.EV])
@@ -1748,10 +1748,12 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.gtceu.arc_furnace('tfg:tungsten_apt')
 		.itemInputs(Item.of('tfg:tungsten_oxide_dust', 1))
-		.inputFluids(Fluid.of('gtceu:hydrogen', 1000))
+		.inputFluids(Fluid.of('gtceu:hydrogen', 3000))
 		.itemOutputs(Item.of('gtceu:tungsten_dust', 1))
 		.duration(20*2.8)
 		.EUt(GTValues.VA[GTValues.EV])
+
+	//#endregion
 		
 
 	// New Alloys
@@ -1824,65 +1826,4 @@ const registerGTCEURecipes = (event) => {
 
 	event.replaceInput( {output: 'gtceu:nano_saber'}, 'gtceu:ruridit_plate', '#forge:plates/ostrum_iodide' )
 
-	// Change
-
-	// The 9x buff for large boiler recipes above does not apply to this for some reason, so it gets 3x duration for an effective 1/3 reduction instead
-
-	event.forEachRecipe({ id: /gtceu:large_boiler\/(minecraft_ladder|gtceu_wood_frame)/ }, recipe => {
-        var newDuration = recipe.get("duration")
-        recipe.set("duration", newDuration*3)
-    })
-
-	event.forEachRecipe({ id: /gtceu:steam_boiler\/(minecraft_ladder|gtceu_wood_frame)/ }, recipe => {
-        var newDuration = recipe.get("duration")
-        recipe.set("duration", newDuration/3)
-	})
-
-	// Allow oil in small boilers
-
-	event.remove({ id: "gtceu:large_boiler/gtceu_oil" })
-	event.remove({ id: "gtceu:large_boiler/gtceu_oil_heavy" })
-	event.remove({ id: "gtceu:large_boiler/gtceu_fish_oil" })
-	// This generates both a small boiler and large boiler recipe. Remove it above to avoid a duplicate
-	event.recipes.gtceu.steam_boiler('tfg:oil')
-		.inputFluids(Fluid.of('gtceu:oil', 200))
-		.duration(200)
-		.dimension('minecraft:overworld')
-
-	event.recipes.gtceu.steam_boiler('tfg:heavy_oil')
-		.inputFluids(Fluid.of('gtceu:oil_heavy', 32))
-		.duration(200)
-		.dimension('minecraft:overworld')
-
-	event.recipes.gtceu.steam_boiler('tfg:fish_oil')
-		.inputFluids(Fluid.of('gtceu:fish_oil', 160))
-		.duration(200)
-		.dimension('minecraft:overworld')
-
-	// These aren't in base GT, but they have the same stats as oil
-	event.recipes.gtceu.steam_boiler('tfg:raw_oil')
-		.inputFluids(Fluid.of('gtceu:oil_medium', 200))
-		.duration(200)
-		.dimension('minecraft:overworld')
-
-	event.recipes.gtceu.steam_boiler('tfg:light_oil')
-		.inputFluids(Fluid.of('gtceu:oil_light', 200))
-		.duration(200)
-		.dimension('minecraft:overworld')
-
-	// Same stats as fish oil
-	event.recipes.gtceu.steam_boiler('tfg:olive_oil')
-		.inputFluids(Fluid.of('tfc:olive_oil', 160))
-		.duration(200)
-		.dimension('minecraft:overworld')
-
-	event.recipes.gtceu.steam_boiler('tfg:seed_oil')
-		.inputFluids(Fluid.of('gtceu:seed_oil', 160))
-		.duration(200)
-		.dimension('minecraft:overworld')
-
-	event.recipes.gtceu.steam_boiler('tfg:soybean_oil')
-		.inputFluids(Fluid.of('firmalife:soybean_oil', 160))
-		.duration(200)
-		.dimension('minecraft:overworld')
 }

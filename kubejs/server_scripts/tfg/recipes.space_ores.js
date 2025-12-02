@@ -153,7 +153,6 @@ function registerTFGSpaceOres(event) {
 		.duration(20 * 30)
 		.EUt(GTValues.VA[GTValues.LV]);
 
-
 	// Ostrum Linear Accelerator Recipes
 
 	event.recipes.gtceu.ostrum_linear_accelerator('tfg:ostrum_transformation')
@@ -200,7 +199,6 @@ function registerTFGSpaceOres(event) {
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.IV]);
 
-	//#endregion
 
 	// #region Zirconium
 

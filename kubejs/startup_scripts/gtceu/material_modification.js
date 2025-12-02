@@ -1,10 +1,6 @@
 ﻿// priority: 0
 "use strict";
 
-const registerGTCEuMaterials = (event) => {
-
-}
-
 const registerGTCEuMaterialModification = (event) => {
 
 	//const TFGPropertyKey = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGPropertyKeys')
@@ -343,6 +339,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RedSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(370, 75, true, false, true, false));
 	// Blue steel fluid pipe - same flow rate as aluminium, same temp tolerance as tungsten
 	GTMaterials.BlueSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(4618, 75, true, false, false, false));
+	// Ostrum fluid pipe - same flow rate as titanium, higher temp range
+	TFGHelpers.getMaterial('ostrum').setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(3700, 150, true, false, true, false));
 
 	// Add some hazards back
 	GTMaterials.Realgar.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
