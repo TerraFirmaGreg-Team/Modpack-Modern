@@ -107,4 +107,18 @@ function registerTFGBiodieselRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:glycerol'), Fluid.of('gtceu:bio_diesel', 6000))
 		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.LV])
+
+	event.recipes.gtceu.chemical_reactor(`tallow_methanol_biodiesel`)
+		.inputFluids(Fluid.of('tfc:tallow', 6000), Fluid.of('gtceu:methanol', 1000))
+		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
+		.outputFluids(Fluid.of('gtceu:glycerol'), Fluid.of('gtceu:bio_diesel', 6000))
+		.duration(20 * 10)
+		.EUt(GTValues.VHA[GTValues.LV])
+
+	event.recipes.gtceu.chemical_reactor(`tallow_ethanol_biodiesel`)
+		.inputFluids(Fluid.of('tfc:tallow', 6000), Fluid.of('gtceu:ethanol', 1000))
+		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
+		.outputFluids(Fluid.of('gtceu:glycerol'), Fluid.of('gtceu:bio_diesel', 6000))
+		.duration(20 * 10)
+		.EUt(GTValues.VHA[GTValues.LV])
 }
