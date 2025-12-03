@@ -173,8 +173,8 @@ function registerTFGEarlyGasRecipes(event) {
 
 	event.recipes.gtceu.cracker('tfg:reformate_gas_cracker')
 		.inputFluids(Fluid.of('tfg:reformed_aromatic_feedstock', 1000), Fluid.of('gtceu:steam', 4000))
-		.outputFluids(Fluid.of('tfg:reformate_gas', 2000))
-		.outputFluids(Fluid.of('tfg:cracker_off_gas', 4000))
+		.outputFluids(Fluid.of('tfg:reformate_gas', 4000))
+		.outputFluids(Fluid.of('tfg:cracker_off_gas', 1000))
 		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.MV])
 
