@@ -218,13 +218,6 @@
 					id: "432E105A84AEA630"
 					type: "checkmark"
 				}
-				{
-					dimension: "ad_astra:moon"
-					disable_toast: true
-					icon: "tfg:marker/moon"
-					id: "6A4F5147475443C5"
-					type: "dimension"
-				}
 			]
 			title: "{quests.ae2.fluix_liquid.title}"
 			x: -3.5d
