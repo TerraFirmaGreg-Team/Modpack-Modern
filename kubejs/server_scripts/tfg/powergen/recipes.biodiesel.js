@@ -56,9 +56,25 @@ function registerTFGBiodieselRecipes(event) {
 		.duration(20 * 10)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
+	event.recipes.gtceu.chemical_reactor(`tallow_alcohol_biodiesel`)
+		.inputFluids("#tfc:alcohols 1000", Fluid.of('tfc:tallow', 6000))
+		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
+		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
+		.duration(20 * 10)
+		.EUt(GTValues.VHA[GTValues.ULV])
+
+
 	// So you can craft Biodiesel without Chemical Reactor
 	event.recipes.gtceu.mixer(`tfg:fish_oil_alcohol_biodiesel`)
 		.inputFluids("#tfc:alcohols 1000", Fluid.of('gtceu:fish_oil', 1000))
+		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
+		.outputFluids(Fluid.of('gtceu:bio_diesel', 500))
+		.duration(20 * 10)
+		.EUt(GTValues.VHA[GTValues.ULV])
+
+
+	event.recipes.gtceu.mixer(`tfg:tallow_alcohol_biodiesel`)
+		.inputFluids("#tfc:alcohols 1000", Fluid.of('tfc:tallow', 1000))
 		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
 		.outputFluids(Fluid.of('gtceu:bio_diesel', 500))
 		.duration(20 * 10)
