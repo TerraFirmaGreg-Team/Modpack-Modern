@@ -62,24 +62,22 @@ function registerTFGBoilerRecipes(event) {
 		.duration(200)
 		.dimension('minecraft:overworld')
 
-	// fish oil (aka tallowate) extraction
+	event.recipes.gtceu.steam_boiler('tfg:tallow')
+		.inputFluids(Fluid.of('tfc:tallow', 160))
+		.duration(200)
+		.dimension('minecraft:overworld')
+
+	// fish oil extraction
 	event.recipes.gtceu.extractor(`tfg:fish_oil`)
 		.itemInputs('#minecraft:fishes')
-		.outputFluids(Fluid.of('gtceu:fish_oil', 200))
+		.outputFluids(Fluid.of('gtceu:fish_oil', 400))
 		.duration(40)
 		.EUt(4)
 
 	event.recipes.gtceu.extractor(`tfg:tallow`)
 		.itemInputs('tfc:blubber')
-		.outputFluids(Fluid.of('tfc:tallow', 200))
+		.outputFluids(Fluid.of('tfc:tallow', 400))
 		.duration(40)
-		.EUt(4)
-
-	// you get tallow from killing things like orcas, so this seems close enough
-	event.recipes.gtceu.mixer('tallow_to_fish_oil')
-		.inputFluids('tfc:tallow 100', 'tfc:lye 100')
-		.outputFluids('gtceu:fish_oil 200')
-		.duration(100)
 		.EUt(4)
 
 	// Seed oil
