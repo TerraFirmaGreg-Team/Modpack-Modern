@@ -3,17 +3,21 @@
 
 const registerTFGFluids = (event) => {
 
-	//#region Mars
+	// Moon
+	event.create('tfg:cryogenized_fluix')
+		.thickTexture(0xde8cfb)
+		.bucketColor(0xde8cfb)
+		.luminosity(14)
+		.temperature(10)
 
+	// Mars
 	event.create('tfg:heavy_ammoniacal_water')
 		.thinTexture(0x08733f)
 		.bucketColor(0x08733f)
 		.temperature(236)
 		.noBlock()
 
-	//#endregion
-
-	//#region Venus
+	// Venus
     event.create('tfg:sulfur_fumes')
         .stillTexture('tfg:block/planets/venus/sulfur_fumes_still') 
         .flowingTexture('tfg:block/planets/venus/sulfur_fumes_flow')
@@ -29,6 +33,5 @@ const registerTFGFluids = (event) => {
         .bucketColor(0xc4d984)
 		.temperature(1000)
 		.renderType('translucent')
-	//#endregion
 
 }

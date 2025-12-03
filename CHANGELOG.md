@@ -26,7 +26,9 @@
 - Removed black/red/blue arc furnace dust to ingot recipes, but changed the EBF recipes to MV (#2306) @applenper @Pyritie
 - Glass bottles and ceramic jugs can now hold the same fluids as wooden barrels, buckets, etc @Pyritie
 - Added fluid/item capacity tooltips to many fluid/item containers @Pyritie
+- Spring water is now drinkable (it also heats you up a little) @Pyritie
 ### Bug fixes
+- Fixed the horse crank not working at all @Pyritie
 - Fixed brown gravy recipe @Redeix
 - Fixed instant mac recipe requiring less cardboard than it gives back @Redeix
 - Fixed Ad Astra moon cheese nutrition values being inconsistent @Redeix
@@ -43,6 +45,8 @@
 - Fixed not being able to feed meat to the Cruncher (#2305) @Pyritie
 - Hopefully fixed rockets without a pilot getting stuck and not exploding? (#2137) @Pyritie
 - Fixed some missing blocks from the GT facade whitelist (#2299) @MoltonMontro
+- Changed the texture of the ME Stocking Input Bus + Hatch to match the hull used to craft them @Pyritie
+- Fixed warped/crimson trees only growing on mars mycelium and not mars dirt @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra

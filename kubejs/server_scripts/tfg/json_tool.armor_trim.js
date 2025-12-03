@@ -69,7 +69,7 @@ const materials = [
 
 // #region Tags
 // Assigns trim_materials tag to items registered above
-function registerTFGTrimTags(event) { 
+function registerTFGTrimItemTags(event) { 
   event.removeAll('minecraft:trim_materials')
   materials.forEach(material => {
     event.add('minecraft:trim_materials', material.itemName)

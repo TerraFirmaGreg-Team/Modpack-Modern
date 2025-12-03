@@ -691,6 +691,8 @@ function removeGTCEURecipes(event) {
 	//event.remove({ id: 'gtceu:distillation_tower/distill_liquid_nether_air' })
 
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
+	event.remove({ id: 'gtceu:arc_furnace/arc_firebricks' })
+	event.remove({ id: 'gtceu:macerator/macerate_firebricks' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__ender_eye' })
 
 	event.remove({ id: 'gtceu:smelting/sticky_resin_from_slime' })
@@ -815,6 +817,13 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:ore_washer/wash_plutonium_pure_dust_to_dust' })
 	event.remove({ id: 'gtceu:ore_washer/wash_plutonium_dirty_dust_to_dust' })
 	event.remove({ id: 'gtceu:forge_hammer/hammer_plutonium_refined_ore_to_dust' })
+
+	
+	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound' });
+
+
+	event.remove({ id: 'gtceu:chemical_reactor/soda_ash_from_carbon_dioxide' })
+	event.remove({ id: 'gtceu:large_chemical_reactor/soda_ash_from_carbon_dioxide' })
 }
 
 function removeMaceratorRecipe(event, id) {

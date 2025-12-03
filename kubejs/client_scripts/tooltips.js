@@ -371,4 +371,7 @@ const registerTooltips = (event) => {
 		text.add(1, Text.of("Strength (02:40)").blue());
 		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
 	})
+	event.addAdvanced(['tfc:bucket/spring_water'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
+	})
 }
