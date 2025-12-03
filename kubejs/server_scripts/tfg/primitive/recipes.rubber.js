@@ -2,6 +2,59 @@
 
 function registerTFGRubberRecipes(event) {
 
+	// Tapping
+	event.recipes.afc.tree_tapping(TFC.blockIngredient("afc:wood/log/rubber_fig"))
+		.resultFluid(Fluid.of("tfg:latex", 2))
+		.minTemp(4)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/latex/rubber_fig")
+	event.recipes.afc.tree_tapping(TFC.blockIngredient("afc:wood/log/ancient_rubber_fig"))
+		.resultFluid(Fluid.of("tfg:latex", 2))
+		.minTemp(4)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/latex/ancient_rubber_fig")
+
+	event.recipes.afc.tree_tapping(TFC.blockIngredient("afc:wood/log/hevea"))
+		.resultFluid(Fluid.of("tfg:latex", 3))
+		.minTemp(8)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/latex/hevea")
+	event.recipes.afc.tree_tapping(TFC.blockIngredient("afc:wood/log/ancient_hevea"))
+		.resultFluid(Fluid.of("tfg:latex", 3))
+		.minTemp(8)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/latex/ancient_hevea")
+
+	event.recipes.afc.tree_tapping(TFC.blockIngredient("tfc:wood/log/kapok"))
+		.resultFluid(Fluid.of("tfg:latex", 4))
+		.minTemp(12)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/kapok_latex")
+	event.recipes.afc.tree_tapping(TFC.blockIngredient("afc:wood/log/ancient_kapok"))
+		.resultFluid(Fluid.of("tfg:latex", 4))
+		.minTemp(12)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/ancient_kapok_latex")
+
+	// Latex
+	event.recipes.gtceu.extractor('latex_from_log')
+		.itemInputs('#tfg:latex_logs')
+		.outputFluids(Fluid.of('tfg:latex', 250))
+		.duration(600)
+		.EUt(20)
+
+	event.recipes.gtceu.extractor('latex_from_sapling')
+		.itemInputs('#tfg:rubber_saplings')
+		.outputFluids(Fluid.of('tfg:latex', 100))
+		.duration(750)
+		.EUt(20)
+
+	event.recipes.gtceu.extractor('latex_from_leaves')
+		.itemInputs('#tfg:rubber_leaves')
+		.outputFluids(Fluid.of('tfg:latex', 50))
+		.duration(750)
+		.EUt(20)
+
 	// Sticky resin
 	event.recipes.tfc.pot('tfc:powder/wood_ash', Fluid.of('tfg:latex', 1000), 1200, 300)
 		.itemOutput('gtceu:sticky_resin')
@@ -80,54 +133,13 @@ function registerTFGRubberRecipes(event) {
 		.duration(200)
 		.EUt(20)
 
-
-	// #region Primitive protection
-
-	event.recipes.tfc.barrel_sealed(2000)
-		.outputItem('tfg:prepared_leather_gloves')
-		.inputs('tfchotornot:mittens', Fluid.of('tfc:vinegar', 1000))
-		.id('tfg:sealed_barrel/prepared_leather_gloves')
-
-	event.recipes.firmalife.vat()
-		.outputItem('tfg:latex_soaked_gloves')
-		.inputs('tfg:prepared_leather_gloves', Fluid.of('tfg:vulcanized_latex', 1000))
-		.length(300)
-		.temperature(200)
-		.id('tfg:vat/latex_soaked_gloves')
-
-	event.recipes.firmalife.oven('tfg:latex_soaked_gloves', 120, 1200, 'gtceu:rubber_gloves')
-		.id('tfg:oven/rubber_gloves')
-
-	event.remove({ id: 'gtceu:shaped/rubber_gloves' })
-
-	event.recipes.gtceu.alloy_smelter('rubber_gloves_alloy_smelter')
-		.itemInputs('2x #forge:plates/rubber')
-		.notConsumable('create:brass_hand')
-		.itemOutputs('gtceu:rubber_gloves')
-		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
-		.category(GTRecipeCategories.INGOT_MOLDING)
-
-
-	event.recipes.tfc.damage_inputs_shaped_crafting(
-		event.shaped('gtceu:face_mask', [
-			'ACA',
-			'ABA',
-			' D '
-		], {
-			A: '#forge:string',
-			B: '#forge:cloth',
-			C: 'minecraft:paper',
-			D: '#tfc:sewing_needles'
-		})
-	).id('gtceu:shaped/face_mask')
-
-	event.recipes.gtceu.assembler('assemble_face_mask')
-		.itemInputs('4x #forge:string', '#forge:cloth', 'minecraft:paper')
-		.itemOutputs('gtceu:face_mask')
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
-		.circuit(7)
-
-	// #endregion
+	event.recipes.gtceu.centrifuge('rubber_log_separation')
+		.itemInputs('#tfg:latex_logs')
+		.chancedOutput('gtceu:raw_rubber_dust', 5000, 0)
+		.chancedOutput('gtceu:plant_ball', 3750, 0)
+		.chancedOutput('gtceu:sticky_resin', 2500, 0)
+		.chancedOutput('gtceu:wood_dust', 2500, 0)
+		.outputFluids(Fluid.of('gtceu:methane', 60))
+		.duration(20 * 20)
+		.EUt(GTValues.VA[GTValues.MV])
 }
