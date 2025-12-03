@@ -19,7 +19,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ item: 'minecraft:coal' }, { fluid: 'gtceu:creosote', amount: 250 }],
-		results: [{ fluid: 'tfg:syngas', amount: 100 }],
+		results: [{ fluid: 'tfg:syngas', amount: 200 }],
 		heatRequirement: "heated",
 		processingTime: 4000
 	}).id('tfg:vi/vacuumizing/syngas_from_coal')
