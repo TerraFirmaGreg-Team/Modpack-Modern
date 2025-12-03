@@ -14,10 +14,6 @@ const registerFirmaLifeItemTags = (event) => {
         event.add('c:hidden_from_recipe_viewers', item)
     })
 
-    event.add('minecraft:trimmable_armor', '#firmalife:beekeeper_armor')
-    
-    event.add('tfc:foods/usable_in_salad', 'firmalife:food/pickled_egg')
-
     // Удаление тегов у руд
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
 }

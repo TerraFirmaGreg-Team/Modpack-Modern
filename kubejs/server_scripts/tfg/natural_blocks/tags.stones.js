@@ -1,6 +1,6 @@
 // priority: 0
 
-function registerTFGItemStoneTags(event) {
+function registerTFGStoneItemTags(event) {
 
 	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
 	

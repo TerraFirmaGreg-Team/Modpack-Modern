@@ -3,7 +3,7 @@
 function registerTFGSteamBloomeryRecipes(event) {
 
 	event.recipes.gtceu.steam_bloomery('steam_raw_iron_bloom_coal')
-		.itemInputs('#forge:ingots/iron', '#tfc:steam_bloomery_basic_fuels')
+		.itemInputs('#forge:ingots/iron', '#tfg:steam_bloomery_basic_fuels')
 		.itemOutputs('tfc:raw_iron_bloom')
 		.duration(2400)
 		.EUt(2)
@@ -23,7 +23,7 @@ function registerTFGSteamBloomeryRecipes(event) {
 		const outputMaterial = tfcProperty.getOutputMaterial() === null ? material : tfcProperty.getOutputMaterial()
 		if (outputMaterial === GTMaterials.Iron) {
 			event.recipes.gtceu.steam_bloomery(`steam_raw_iron_bloom_coal_${material.getName()}`)
-				.itemInputs(ChemicalHelper.get(TagPrefix.dust, material, 1), '#tfc:steam_bloomery_basic_fuels')
+				.itemInputs(ChemicalHelper.get(TagPrefix.dust, material, 1), '#tfg:steam_bloomery_basic_fuels')
 				.itemOutputs('tfc:raw_iron_bloom')
 				.duration(2400)
 				.EUt(2)

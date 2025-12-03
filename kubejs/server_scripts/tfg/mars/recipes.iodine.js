@@ -4,6 +4,34 @@ function registerTFGMarsIodineRecipes(event) {
 
 	// This file is specifically for the crappy mars-based iodine recipe chain.
 	// The "proper" venus one is elsewhere
+	
+	event.recipes.afc.tree_tapping(TFC.blockIngredient('beneath:wood/log/crimson'))
+		.resultFluid(Fluid.of('tfg:crimsene', 1))
+		.minTemp(-110)
+		.maxTemp(-15)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/crimson_log")
+
+	event.recipes.afc.tree_tapping(TFC.blockIngredient('beneath:wood/wood/crimson'))
+		.resultFluid(Fluid.of('tfg:crimsene', 1))
+		.minTemp(-110)
+		.maxTemp(-15)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/crimson_wood")
+
+	event.recipes.afc.tree_tapping(TFC.blockIngredient('beneath:wood/log/warped'))
+		.resultFluid(Fluid.of('tfg:warpane', 1))
+		.minTemp(-110)
+		.maxTemp(-15)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/warped_log")
+
+	event.recipes.afc.tree_tapping(TFC.blockIngredient('beneath:wood/wood/warped'))
+		.resultFluid(Fluid.of('tfg:warpane', 1))
+		.minTemp(-110)
+		.maxTemp(-15)
+		.requiresNaturalLog(true)
+		.id("tfg:tree_tapping/warped_wood")
 
 	event.recipes.gtceu.autoclave('tfg:crimsene')
 		.inputFluids(Fluid.of('tfg:crimsene', 144), Fluid.of('gtceu:liquid_carbon_dioxide', 1000))
