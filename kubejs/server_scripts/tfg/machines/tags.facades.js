@@ -1,7 +1,7 @@
 // priority: 0
 "use strict";
 
-function registerFacadeWhitelistTags(event) {
+function registerTFGFacadeWhitelistItemTags(event) {
     
     const facade_materials = [
 		//tags

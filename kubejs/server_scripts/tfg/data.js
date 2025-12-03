@@ -10,6 +10,7 @@ function registerTFCDataForTFG(event) {
 	registerTFGCropRanges(event);
 	registerTFGFLPlanters(event);
 	registerTFGFauna(event);
+	registerTFGEquipmentData(event);
 }
 
 //#region Heat Data
