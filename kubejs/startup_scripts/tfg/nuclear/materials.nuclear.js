@@ -103,6 +103,14 @@ const registerTFGNuclearMaterials = (event) => {
 		.components('2x tritium', '1x oxygen')
 		.color(0xb2c3e7)
 
+	event.create('tfg:booster_t3')
+		.fluid()
+		.color(0xb2c3e7)
+
+	event.create('tfg:polyalkylene_lubricant')
+		.fluid()
+		.color(0xb2c3e7)
+
 	// FLiBe Line
 
 	event.create('raw_rich_brine')

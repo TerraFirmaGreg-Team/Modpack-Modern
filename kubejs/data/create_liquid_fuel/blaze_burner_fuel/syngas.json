@@ -1,0 +1,6 @@
+{
+  "fluid": "tfg:syngas",
+  "burnTime": 3200,
+  "superHeat": false,
+  "amountConsumedPerTick" : 100
+}
