@@ -464,7 +464,7 @@ function registerTFGFoodRecipes(event) {
 			circuit: 7,
 			itemInputs: [fruit.id, 'tfg:foil_pack', 'tfg:dry_ice'],
 			itemOutputs: [`tfg:food/freeze_dried/${fruit.name}`],
-			itemOutputProvider: TFC.isp.of(`tfg:food/freeze_dried/${fruit.name}`).copyOldestFood().removeTrait('firmalife:dried').addTrait('tfg:freeze_dried').meal((food) => food, [(portion) => portion.waterModifier(0)])
+			itemOutputProvider: TFC.isp.of(`tfg:food/freeze_dried/${fruit.name}`).copyOldestFood().removeTrait('firmalife:dried').addTrait('tfg:freeze_dried')
 		})
 	})
 
