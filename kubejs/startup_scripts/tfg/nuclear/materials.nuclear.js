@@ -118,6 +118,14 @@ const registerTFGNuclearMaterials = (event) => {
 		.components('2x tritium', '1x oxygen')
 		.color(0xb2c3e7)
 
+	event.create('tfg:tetrafluoroethane')
+		.fluid()
+		.gem()
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.iconSet(GTMaterialIconSet.QUARTZ)
+		.components('2x carbon', '2x hydrogen', '4x fluorine')
+		.color(0x46702e)
+
 	event.create('tfg:booster_t3')
 		.fluid()
 		.color(0xb2c3e7)
@@ -264,15 +272,6 @@ const registerTFGNuclearMaterials = (event) => {
 		.color(0xffba00)
 		.secondaryColor(0xdfffff)
 		.radioactiveHazard(10000000)
-
-	event.create("ostrum_iodide")
-		.ingot()
-		.components('2x ostrum', 'iodine')
-		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
-		.iconSet(GTMaterialIconSet.BRIGHT)
-		.flags(GTMaterialFlags.GENERATE_GEAR)
-		.color(0xc696f2)
-		.secondaryColor(0x9b99ff)
 
 	//#endregion
 

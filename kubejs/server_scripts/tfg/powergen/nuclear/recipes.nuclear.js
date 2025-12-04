@@ -307,6 +307,22 @@ function registerTFGNuclearRecipes(event) {
         .addData("coolant_heat_per_tick", 1)
         .duration(1);
 
+		// Americium-241 Rod Fission
+    event.recipes.deafission.fission_reactor_fuel('tfg:americium_241')
+        .itemInputs('tfg:americium_241_rod')
+        .itemOutputs('tfg:depleted_americium_241_rod')
+        // Mandatory by GT; no real impact. Use this as a convention:
+        // durability / const / heatValue
+        .duration(1000000 / 0.4 / 0.5);
+
+	event.recipes.deafission.fission_reactor_coolant('tfg:americium_241_coolant')
+        .itemInputs(Ingredient.of([
+            'tfg:americium_241_rod']))
+        .inputFluids(Fluid.of('tfg:boron_enriched_coolant', 10*64))
+        .outputFluids(Fluid.of('tfg:hot_boron_enriched_coolant', 10*64))
+        .addData("coolant_heat_per_tick", 1)
+        .duration(1);
+
 	//#endregion
 
 	//#region Fission Recipes for cooling
@@ -454,6 +470,12 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:dense_steam', 160))
 		.EUt(-(32))
 		.duration(20*1.5)
+
+	event.recipes.gtceu.smr_generator('tfg:boron_smr')
+		.inputFluids(Fluid.of('tfg:hot_boron_enriched_coolant', 10))
+		.outputFluids(Fluid.of('tfg:boron_enriched_coolant', 10))
+		.EUt(-(32))
+		.duration(20)
 
 	//#endregion
 	
