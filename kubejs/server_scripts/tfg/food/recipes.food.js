@@ -464,7 +464,7 @@ function registerTFGFoodRecipes(event) {
 			circuit: 7,
 			itemInputs: [fruit.id, 'tfg:foil_pack', 'tfg:dry_ice'],
 			itemOutputs: [`tfg:food/freeze_dried/${fruit.name}`],
-			itemOutputProvider: TFC.isp.of(`tfg:food/freeze_dried/${fruit.name}`).copyOldestFood().removeTrait('firmalife:dried').addTrait('tfg:freeze_dried')
+			itemOutputProvider: TFC.isp.of(`tfg:food/freeze_dried/${fruit.name}`).copyOldestFood().removeTrait('firmalife:dried').addTrait('tfg:freeze_dried').meal((food) => food, [(portion) => portion.waterModifier(0)])
 		})
 	})
 
@@ -478,7 +478,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputs: ['2x tfg:food/meal_bag'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
 			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
-			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0.8)
+			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0)
 		]).addTrait('tfg:freeze_dried')
 	})
 
@@ -489,7 +489,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputs: ['2x tfg:food/meal_bag'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
 			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
-			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0.8)
+			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0)
 		]).addTrait('tfg:freeze_dried')
 	})
 
@@ -500,7 +500,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputs: ['2x tfg:food/meal_bag'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
 			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
-			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0.8)
+			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0)
 		]).addTrait('tfg:freeze_dried')
 	})
 
@@ -511,7 +511,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputs: ['2x tfg:food/meal_bag'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
 			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
-			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0.8)
+			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0)
 		]).addTrait('tfg:freeze_dried')
 	})
 
@@ -522,7 +522,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputs: ['2x tfg:food/meal_bag'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
 			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
-			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0.8)
+			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0)
 		]).addTrait('tfg:freeze_dried')
 	})
 
