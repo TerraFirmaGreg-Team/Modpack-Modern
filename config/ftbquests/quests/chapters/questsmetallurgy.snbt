@@ -50,6 +50,7 @@
 		{
 			id: "19CF6D922179DFF9"
 			linked_quest: "11C45DBB20ED7647"
+			shape: "heart"
 			x: 9.0d
 			y: -34.0d
 		}
@@ -1203,6 +1204,8 @@
 			dependencies: ["3C173357029AB649"]
 			description: ["{quests.metal_age.copper_diving.desc}"]
 			id: "70FE6706B43FC5FC"
+			optional: true
+			shape: "heart"
 			subtitle: "{quests.metal_age.copper_diving.subtitle}"
 			tasks: [
 				{

@@ -9,10 +9,6 @@ StartupEvents.registry('block', event => {
     registerTFGBlocks(event)
 })
 
-StartupEvents.registry('entity_type', event => {
-	registerTFGEntityTypes(event)
-})
-
 BlockEvents.modification(event => {
 	registerAdAstraBlockModifications(event)
 	registerSpeciesBlockModifications(event)

@@ -28,13 +28,17 @@ global.AIRCRAFT_UPGRADES = [
  * @type {string[]} - Item IDs
  */
 global.EXTRATERRESTRIAL_RAW_ROCKS = [
+	'minecraft:deepslate',
+	'minecraft:blackstone',
+	'minecraft:dripstone_block',
 	'ad_astra:moon_stone',
 	'ad_astra:moon_deepslate',
 	'ad_astra:mars_stone',
 	'ad_astra:venus_stone',
 	'ad_astra:mercury_stone',
 	'ad_astra:glacio_stone',
-	'gtceu:red_granite'
+	'gtceu:red_granite',
+	'beneath:crackrack'
 ]
 
 /**
@@ -47,7 +51,11 @@ global.EXTRATERRESTRIAL_HARDENED_ROCKS = [
 	'tfg:rock/hardened_venus_stone',
 	'tfg:rock/hardened_mercury_stone',
 	'tfg:rock/hardened_glacio_stone',
-	'tfg:rock/hardened_red_granite'
+	'tfg:rock/hardened_red_granite',
+	'tfg:rock/hardened_deepslate',
+	'tfg:rock/hardened_blackstone',
+	'tfg:rock/hardened_dripstone',
+	'tfg:rock/hardened_crackrack'
 ]
 
 /**

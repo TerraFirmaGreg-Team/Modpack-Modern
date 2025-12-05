@@ -577,6 +577,8 @@
 			description: ["{quests.steam_age.steam_bloomery.desc}"]
 			icon: "gtceu:steam_bloomery"
 			id: "0805CCABC8E7F6CF"
+			optional: true
+			shape: "heart"
 			size: 1.5d
 			subtitle: "{quests.steam_age.steam_bloomery.subtitle}"
 			tasks: [

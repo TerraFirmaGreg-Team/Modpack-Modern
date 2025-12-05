@@ -2306,16 +2306,6 @@ const registerAE2Recipes = (event) => {
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	// Cryogenized Fluix
-
-	event.recipes.gtceu.vacuum_freezer('gtceu:cryo_fluix')
-		.inputFluids(Fluid.of('gtceu:helium_3', 1000))
-		.inputFluids(Fluid.of('tfg:fluix', 144))
-		.outputFluids(Fluid.of('tfg:cryogenized_fluix', 576))
-		.duration(30 * 20)
-		.EUt(GTValues.VA[GTValues.MV])
-		.dimension('ad_astra:moon')
-
 	// Certus deco blocks
 
 	event.stonecutting('ae2:quartz_block', '#tfg:certus_quartz_blocks')

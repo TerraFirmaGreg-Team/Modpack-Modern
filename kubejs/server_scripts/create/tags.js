@@ -33,11 +33,6 @@ const registerCreateItemTags = (event) => {
 		if (dye !== 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
 	})
 
-	event.add('minecraft:trimmable_armor', 'create:copper_diving_helmet')
-	event.add('minecraft:trimmable_armor', 'create:copper_diving_boots')
-
-	event.add('minecraft:trimmable_armor', 'create:netherite_diving_helmet')
-	event.add('minecraft:trimmable_armor', 'create:netherite_diving_boots')
 
 	event.add('create:blaze_burner_fuel/regular', "gtceu:poor_raw_coal")
 	event.add('create:blaze_burner_fuel/regular', "gtceu:coal_dust")

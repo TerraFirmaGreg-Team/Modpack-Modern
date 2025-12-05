@@ -14,10 +14,6 @@ const registerFirmaLifeItemTags = (event) => {
         event.add('c:hidden_from_recipe_viewers', item)
     })
 
-    event.add('minecraft:trimmable_armor', '#firmalife:beekeeper_armor')
-    
-    event.add('tfc:foods/usable_in_salad', 'firmalife:food/pickled_egg')
-
     // Удаление тегов у руд
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
 }
@@ -86,6 +82,7 @@ const registerFirmaLifeFluidTags = (event) => {
     event.add('firmalife:mixable', 'afc:maple_syrup')
     event.add('firmalife:mixable', 'afc:birch_syrup')
 
+    event.add('firmalife:oils', 'tfc:tallow')
     event.add('firmalife:oils', 'gtceu:seed_oil')
     event.add('firmalife:oils', 'gtceu:fish_oil')
     event.add('firmalife:oils', 'tfg:triglyceride_oil')

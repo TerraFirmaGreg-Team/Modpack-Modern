@@ -153,7 +153,7 @@ const registerTFGNuclearMaterials = (event) => {
 
 	event.create('tfg:oxidized_nuclear_residue')
 		.dust()
-		.components('1x uranium', '1x oxygen', '2x unknown')
+		.components('1x plutonium', '2x fluorine', '1x oxygen', '2x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.iconSet(GTMaterialIconSet.SHINY)
 		.color(0x286529)
@@ -162,7 +162,7 @@ const registerTFGNuclearMaterials = (event) => {
 
 	event.create('tfg:refined_nuclear_residue')
 		.dust()
-		.components('1x uranium', '2x unknown')
+		.components('1x plutonium', '2x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0x82c383)
 		.secondaryColor('0xffffff')
