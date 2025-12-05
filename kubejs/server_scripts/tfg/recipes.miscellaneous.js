@@ -95,7 +95,11 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('tfg:wireless_card')
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.EV])
-	
+
+	// Replace bronze drums & crates with a tag containing the 3 different bronzes
+	event.replaceInput({}, 'gtceu:bronze_crate', '#tfg:any_bronze_crate')
+	event.replaceInput({}, 'gtceu:bronze_drum', '#tfg:any_bronze_drum')
+
 	//#region RNR Paving Cart
 	const rubber_types = [
 		{fluid:'styrene_butadiene_rubber', quantity: 144},
