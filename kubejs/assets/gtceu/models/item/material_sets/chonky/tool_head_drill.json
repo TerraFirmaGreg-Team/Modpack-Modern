@@ -1,0 +1,8 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "gtceu:item/material_sets/chonky/tool_head_drill",
+        "layer1": "gtceu:item/material_sets/chonky/tool_head_drill_secondary",
+        "layer2": "gtceu:item/material_sets/chonky/tool_head_drill_overlay"
+    }
+}

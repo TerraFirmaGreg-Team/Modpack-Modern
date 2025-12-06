@@ -236,7 +236,7 @@ function registerTFGMarsRecipes(event) {
 		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
 
 		generateGreenHouseRecipe(event, itemId, 'tfg:semiheavy_ammoniacal_water', 8000, `8x ${itemId}`,
-			recipeId, 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV]);
+			recipeId, 'ad_astra:mars', 8, itemId, GTValues.VA[GTValues.LV]);
 	});
 
 	generateGreenHouseRecipe(event, '8x betterend:amber_root_seeds', 'tfg:semiheavy_ammoniacal_water', 8000, 

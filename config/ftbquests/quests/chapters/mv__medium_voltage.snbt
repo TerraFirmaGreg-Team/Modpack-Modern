@@ -39,6 +39,7 @@
 				"53DC6E32C41C94C3"
 				"1A29EFBCEA017F99"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.medium_voltage.mv_biomass.desc.1}"
 				"{@pagebreak}"
@@ -777,24 +778,6 @@
 		}
 		{
 			dependencies: ["10FB27DD3C7BEC2F"]
-			description: ["{quests.medium_voltage.mv_tank.desc}"]
-			icon: "gtceu:lv_super_tank"
-			id: "6C53B01A05FFF1DC"
-			optional: true
-			shape: "heart"
-			size: 2.0d
-			subtitle: "{quests.medium_voltage.mv_tank.subtitle}"
-			tasks: [{
-				id: "47EA273D728C158F"
-				item: "gtceu:lv_super_tank"
-				type: "item"
-			}]
-			title: "{quests.medium_voltage.mv_tank.title}"
-			x: -14.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["10FB27DD3C7BEC2F"]
 			description: ["{quests.medium_voltage.mv_pvc.desc}"]
 			icon: "gtceu:polyvinyl_chloride_plate"
 			id: "40408FFD02134148"
@@ -1437,6 +1420,7 @@
 			description: ["{quests.medium_voltage.mv_seawater.desc}"]
 			id: "45449ECE4F8128E7"
 			optional: true
+			shape: "diamond"
 			subtitle: "{quests.medium_voltage.mv_seawater.subtitle}"
 			tasks: [{
 				id: "77395198DC98E3A5"

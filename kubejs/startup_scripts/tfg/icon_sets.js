@@ -36,6 +36,9 @@ function registerTFGIconSets(event) {
 	event.create('tfc_chromite').parent('dull')
 		
 	event.create('nether_quartz').parent('quartz')
+
+    // Credits to Flare from the Cosmic Frontiers team
+    event.create('chonky').parent('shiny')
 }
 
 function modifyTFGIconSets(event) {
@@ -88,7 +91,6 @@ function modifyTFGIconSets(event) {
     GTMaterials.BlackBronze.setMaterialIconSet(GTMaterialIconSet.SHINY)
     GTMaterials.Potin.setMaterialIconSet(GTMaterialIconSet.SHINY)
     GTMaterials.Cupronickel.setMaterialIconSet(GTMaterialIconSet.SHINY)
-    GTMaterials.Zirconium.setMaterialIconSet(GTMaterialIconSet.SHINY)
     
     GTMaterials.Aluminium.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_silver'))
     GTMaterials.Asbestos.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_gold'))
@@ -103,10 +105,9 @@ function modifyTFGIconSets(event) {
     GTMaterials.Galena.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_copper'))
     GTMaterials.Grossular.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_sapphire'))
     GTMaterials.Neodymium.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_limonite'))
-    GTMaterials.Palladium.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_pyrite'))
+    GTMaterials.Palladium.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_gold'))
     GTMaterials.Platinum.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_gold'))
     GTMaterials.Thorium.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_hematite'))
-    GTMaterials.Naquadah.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_malachite'))
     GTMaterials.Goethite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_silver'))
     GTMaterials.Calcite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_borax'))
     GTMaterials.Cooperite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_gold'))
@@ -136,4 +137,15 @@ function modifyTFGIconSets(event) {
     GTMaterials.Zeolite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_copper'))
     GTMaterials.Electrotine.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_garnierite'))
     GTMaterials.Bauxite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_borax'))
+
+    GTMaterials.Naquadah.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
+    GTMaterials.NaquadahEnriched.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
+    GTMaterials.Naquadria.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
+    GTMaterials.UraniumRhodiumDinaquadide.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
+    GTMaterials.EnrichedNaquadahTriniumEuropiumDuranide.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
+    GTMaterials.NaquadahAlloy.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
+    GTMaterials.Neutronium.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
+    GTMaterials.RutheniumTriniumAmericiumNeutronate.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
+
+    GTMaterials.Zirconium.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
 }

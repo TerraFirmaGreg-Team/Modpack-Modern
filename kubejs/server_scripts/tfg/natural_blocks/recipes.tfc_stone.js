@@ -290,7 +290,7 @@ function registerTFCStoneRecipes(event) {
 
 		event.recipes.gtceu.assembler(`aqueduct_${stone}`)
 			.itemInputs(`3x tfc:brick/${stone}`)
-			.circuit(0)
+			.circuit(3)
 			.inputFluids(Fluid.of('gtceu:concrete', 16))
 			.itemOutputs(`tfc:rock/aqueduct/${stone}`)
 			.duration(50)
