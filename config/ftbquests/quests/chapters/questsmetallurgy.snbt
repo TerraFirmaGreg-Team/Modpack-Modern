@@ -287,7 +287,6 @@
 			description: ["{quests.metal_age.bellows.desc}"]
 			hide_dependency_lines: true
 			id: "021D3DEEB15A3D17"
-			shape: "rsquare"
 			subtitle: "{quests.metal_age.bellows.subtitle}"
 			tasks: [{
 				id: "588EB07E980386F9"

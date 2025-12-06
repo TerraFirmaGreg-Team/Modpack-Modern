@@ -1597,6 +1597,7 @@
 		{
 			description: ["{quests.low_voltage.cupronickel_ingot.desc}"]
 			id: "6042514C8FC54334"
+			shape: "diamond"
 			subtitle: "{quests.low_voltage.cupronickel_ingot.subtitle}"
 			tasks: [{
 				id: "701DEB748320107C"
