@@ -1,0 +1,8 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "gtceu:item/material_sets/chonky/nugget",
+        "layer1": "gtceu:item/material_sets/chonky/nugget_secondary",
+        "layer2": "gtceu:item/material_sets/chonky/nugget_overlay"
+    }
+}

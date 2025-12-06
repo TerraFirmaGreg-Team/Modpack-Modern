@@ -8,15 +8,7 @@
 	images: [
 		{
 			height: 1.0d
-			image: "tfc:item/grass_block_top"
-			rotation: 0.0d
-			width: 1.0d
-			x: -3.0d
-			y: 10.5d
-		}
-		{
-			height: 1.0d
-			image: "minecraft:block/blue_ice"
+			image: "ad_astra:textures/gui/sprites/snowflake.png"
 			rotation: 0.0d
 			width: 1.0d
 			x: -6.0d
@@ -24,36 +16,33 @@
 		}
 		{
 			height: 1.0d
-			image: "minecraft:block/lava_still"
+			image: "ad_astra:textures/gui/sprites/fire.png"
 			rotation: 0.0d
 			width: 1.0d
 			x: 0.0d
 			y: 10.5d
 		}
+		{
+			height: 1.0d
+			image: "tfc:textures/gui/book/icons/thermometer.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.0d
+			y: 10.5d
+		}
 	]
 	order_index: 0
-	quest_links: [
-		{
-			id: "409385C6F6640BEA"
-			linked_quest: "427814F6E9386772"
-			shape: "gear"
-			size: 4.0d
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			disable_toast: true
-			id: "40D0029A2097C68F"
-			linked_quest: "3D7B0F3134C30364"
-			shape: "octagon"
-			size: 3.0d
-			x: 4.5d
-			y: 0.0d
-		}
-	]
+	quest_links: [{
+		id: "409385C6F6640BEA"
+		linked_quest: "427814F6E9386772"
+		shape: "gear"
+		size: 4.0d
+		x: 4.0d
+		y: 0.0d
+	}]
 	quests: [
 		{
-			dependencies: ["3D7B0F3134C30364"]
+			dependencies: ["427814F6E9386772"]
 			description: [
 				"{quests.stone_age.find_rock.desc}"
 				"{@pagebreak}"
@@ -82,10 +71,11 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3D7B0F3134C30364"]
+			dependencies: ["427814F6E9386772"]
 			description: ["{quests.stone_age.find_potable_water.desc}"]
 			icon: "createdeco:decal_fluid"
 			id: "1D40CAE675C4BB91"
+			shape: "circle"
 			size: 1.0d
 			subtitle: "{quests.stone_age.find_potable_water.subtitle}"
 			tasks: [{
@@ -96,7 +86,7 @@
 				type: "gamestage"
 			}]
 			title: "{quests.stone_age.find_potable_water.title}"
-			x: 4.5d
+			x: 4.0d
 			y: 6.0d
 		}
 		{
@@ -434,7 +424,7 @@
 				type: "item"
 			}]
 			title: "{quests.stone_age.water_jug.title}"
-			x: 7.0d
+			x: 6.5d
 			y: 6.0d
 		}
 		{
@@ -509,7 +499,7 @@
 				type: "item"
 			}]
 			title: "{quests.stone_age.leather_flask.title}"
-			x: 1.5d
+			x: 1.0d
 			y: 6.0d
 		}
 		{
@@ -540,7 +530,7 @@
 				type: "item"
 			}]
 			title: "{quests.stone_age.iron_flask.title}"
-			x: 2.5d
+			x: 2.0d
 			y: 8.0d
 		}
 		{
@@ -549,6 +539,7 @@
 			guide_page: "tfc:field_guide tfc:getting_started/pottery"
 			hide_dependency_lines: true
 			id: "021921B4D2044B3B"
+			shape: "diamond"
 			subtitle: "{quests.stone_age.find_clay.subtitle}"
 			tasks: [
 				{
@@ -601,7 +592,6 @@
 			guide_page: "tfc:field_guide tfc:getting_started/finding_ores"
 			hide_dependency_lines: true
 			id: "669F84C6A2A64145"
-			shape: "diamond"
 			subtitle: "{quests.stone_age.native_ores.subtitle}"
 			tasks: [{
 				id: "0B70FD35D2C27E4C"
@@ -1386,7 +1376,7 @@
 			guide_page: "tfc:field_guide tfc:mechanics/support_beams"
 			icon: "createdeco:decal_warning"
 			id: "618090A6D0D3B2F1"
-			shape: "diamond"
+			shape: "circle"
 			size: 1.0d
 			subtitle: "{quests.stone_age.hazards.subtitle}"
 			tasks: [{
@@ -1399,7 +1389,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["3D7B0F3134C30364"]
+			dependencies: ["427814F6E9386772"]
 			description: ["{quests.stone_age.foods.desc}"]
 			id: "0FB8FD84B13F10C6"
 			subtitle: "{quests.stone_age.foods.subtitle}"
@@ -1416,7 +1406,7 @@
 				type: "item"
 			}]
 			title: "{quests.stone_age.foods.title}"
-			x: 4.5d
+			x: 4.0d
 			y: -5.0d
 		}
 		{
@@ -1495,6 +1485,7 @@
 			guide_page: "tfc:field_guide tfc:getting_started/food_and_water 5"
 			icon: "minecraft:apple"
 			id: "749B3C8698D34E91"
+			shape: "circle"
 			size: 1.5d
 			subtitle: "{quests.stone_age.nutrition.subtitle}"
 			tasks: [{
@@ -1502,7 +1493,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.stone_age.nutrition.title}"
-			x: 3.0d
+			x: 2.5d
 			y: -5.0d
 		}
 		{
@@ -1666,7 +1657,7 @@
 				type: "item"
 			}]
 			title: "{quests.stone_age.leather.title}"
-			x: 1.5d
+			x: 1.0d
 			y: 13.5d
 		}
 		{
@@ -1688,28 +1679,37 @@
 				type: "checkmark"
 			}]
 			title: "{quests.stone_age.hydration.title}"
-			x: 6.0d
+			x: 5.5d
 			y: 4.5d
 		}
 		{
-			dependencies: ["3D7B0F3134C30364"]
+			dependencies: ["427814F6E9386772"]
 			description: ["{quests.stone_age.temperature.desc}"]
 			icon: "minecraft:sunflower"
 			id: "38839D3E049215CE"
+			shape: "circle"
 			subtitle: "{quests.stone_age.temperature.subtitle}"
 			tasks: [{
 				id: "5EF087A092F21202"
 				type: "checkmark"
 			}]
 			title: "{quests.stone_age.temperature.title}"
-			x: 1.0d
+			x: 0.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["38839D3E049215CE"]
 			description: ["{quests.stone_age.insulation.desc}"]
+			icon: {
+				Count: 1
+				id: "tfcambiental:straw_hat"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "4521BB8892B386AF"
-			size: 2.0d
+			shape: "circle"
+			size: 1.5d
 			subtitle: "{quests.stone_age.insulation.subtitle}"
 			tasks: [{
 				id: "139FA72AB6F06E57"
@@ -1834,7 +1834,7 @@
 				type: "item"
 			}]
 			title: "{quests.stone_age.glass_bottles.title}"
-			x: 6.5d
+			x: 6.0d
 			y: 8.0d
 		}
 		{
@@ -1848,7 +1848,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.stone_age.water_bucket.title}"
-			x: 4.5d
+			x: 4.0d
 			y: 9.0d
 		}
 		{

@@ -97,6 +97,7 @@ function registerTFGMoonPlantRecipes(event) {
 			.itemOutputs(`8x ${element.id}`)
 			.chancedOutput(element.id, 750, 0)
 			.chancedOutput(element.id, 500, 0)
+			.chancedOutput(element.id, 750, 0)
 			.duration(36000) // 30 mins
 			.circuit(1)
 			.EUt(GTValues.VA[GTValues.MV])
@@ -108,6 +109,7 @@ function registerTFGMoonPlantRecipes(event) {
 			.itemOutputs(`8x ${element.id}`)
 			.chancedOutput(element.id, 4000, 0)
 			.chancedOutput(element.id, 3000, 0)
+			.chancedOutput(element.id, 4000, 0)
 			.duration(12000) // 30 mins
 			.circuit(2)
 			.EUt(GTValues.VA[GTValues.MV])

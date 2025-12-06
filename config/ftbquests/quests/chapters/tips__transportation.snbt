@@ -1124,7 +1124,6 @@
 		{
 			dependencies: ["7EE13BE102F323F3"]
 			description: ["{quests.tfg_tips.reinforced_glider.desc}"]
-			hide_until_deps_complete: true
 			id: "472D1C507490CC8A"
 			optional: true
 			shape: "heart"

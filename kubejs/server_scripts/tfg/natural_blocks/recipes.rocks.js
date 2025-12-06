@@ -14,11 +14,13 @@ function registerTFGRockRecipes(event) {
 		{ loose: 'tfg:brick/deepslate',           block: '4x minecraft:deepslate_bricks' },
 
 		{ loose: 'beneath:blackstone_pebble',     block: 'tfg:rock/cobble_blackstone' },
+		{ loose: 'beneath:blackstone_brick',      block: 'minecraft:polished_blackstone_bricks' },
 
 		{ loose: 'tfg:loose/dripstone',           block: 'tfg:rock/cobble_dripstone' },
 		{ loose: 'tfg:brick/dripstone',           block: '4x create:cut_dripstone_bricks' },
 
 		{ loose: 'tfg:loose/crackrack',           block: 'tfg:rock/cobble_crackrack' },
+		{ loose: 'minecraft:nether_brick',        block: 'minecraft:nether_bricks' },
 
 		{ loose: 'tfg:loose/moon_stone',          block: 'ad_astra:moon_cobblestone' },
 		{ loose: 'tfg:brick/moon_stone',          block: '4x ad_astra:moon_stone_bricks' },
@@ -63,7 +65,7 @@ function registerTFGRockRecipes(event) {
 			.itemInputs(`5x ${x.loose}`)
 			.inputFluids(Fluid.of('gtceu:concrete', 72))
 			.itemOutputs(x.block)
-			.circuit(2)
+			.circuit(1)
 			.duration(50)
 			.EUt(2)
 
@@ -157,6 +159,7 @@ function registerTFGRockRecipes(event) {
 	// #region AQUEDUCTS
 	const AQUEDUCTS = [
 		{ brick: 'tfg:brick/deepslate',       aqueduct: 'tfg:rock/aqueduct_deepslate'      },
+		{ brick: 'beneath:blackstone_brick',  aqueduct: 'beneath:blackstone_aqueduct'      },
 		{ brick: 'tfg:brick/dripstone',       aqueduct: 'tfg:rock/aqueduct_dripstone'      },
 		{ brick: 'minecraft:nether_brick',    aqueduct: 'tfg:rock/aqueduct_nether'         },
 		{ brick: 'tfg:brick/moon_stone',      aqueduct: 'tfg:rock/aqueduct_moon_stone'     },
@@ -166,7 +169,8 @@ function registerTFGRockRecipes(event) {
 		{ brick: 'tfg:brick/mercury_stone',   aqueduct: 'tfg:rock/aqueduct_mercury_stone'  },
 		{ brick: 'tfg:brick/glacio_stone',    aqueduct: 'tfg:rock/aqueduct_glacio_stone'   },
 		{ brick: 'tfg:brick/permafrost',      aqueduct: 'tfg:rock/aqueduct_permafrost'     },
-		{ brick: 'tfg:brick/red_granite',     aqueduct: 'tfg:rock/aqueduct_red_granite'    }
+		{ brick: 'tfg:brick/red_granite',     aqueduct: 'tfg:rock/aqueduct_red_granite'    },
+		{ brick: 'gtceu:stone_ingot',         aqueduct: 'tfg:rock/aqueduct_stone'          }
 	]
 
 	AQUEDUCTS.forEach(x => {
@@ -177,15 +181,14 @@ function registerTFGRockRecipes(event) {
 			A: x.brick,
 			B: 'tfc:mortar'
 		})
-	})
 
-	event.shaped('tfg:rock/aqueduct_stone', [
-		'ABA',
-		'ABA',
-		'AAA'
-	], {
-		A: 'gtceu:stone_ingot',
-		B: 'tfc:mortar'
+		event.recipes.gtceu.assembler(`${x.brick}_to_${x.aqueduct}`.replace(/:/g, '_'))
+			.itemInputs(`3x ${x.brick}`)
+			.circuit(3)
+			.inputFluids(Fluid.of('gtceu:concrete', 16))
+			.itemOutputs(x.aqueduct)
+			.duration(50)
+			.EUt(2)
 	})
 	
 	
@@ -573,19 +576,19 @@ function registerTFGRockRecipes(event) {
 		  dust: 'tfg:moon_deepslate_dust',                      loose: null,                                             stonecutting: true  }, // Cobble - Mossy
 
 		{ raw:  'tfg:rock/polished_moon_deepslate',             stair: 'tfg:rock/polished_moon_deepslate_stairs',        slab: 'tfg:rock/polished_moon_deepslate_slab',        wall: 'tfg:rock/polished_moon_deepslate_wall',
-		  dust: 'tfg:moon_deepslate_dust',                    loose: null,                                             stonecutting: true  }, // Smooth
+		  dust: 'tfg:moon_deepslate_dust',                      loose: null,                                             stonecutting: true  }, // Smooth
 
 		{ raw:  'tfg:rock/bricks_moon_deepslate',               stair: 'tfg:rock/bricks_moon_deepslate_stairs',          slab: 'tfg:rock/bricks_moon_deepslate_slab',          wall: 'tfg:rock/bricks_moon_deepslate_wall',
-		  dust: 'tfg:moon_deepslate_dust',                    loose: null,                                             stonecutting: true  }, // Bricks
+		  dust: 'tfg:moon_deepslate_dust',                      loose: null,                                             stonecutting: true  }, // Bricks
 
 		{ raw:  'tfg:rock/cracked_bricks_moon_deepslate',       stair: 'tfg:rock/cracked_bricks_moon_deepslate_stairs',  slab: 'tfg:rock/cracked_bricks_moon_deepslate_slab',  wall: 'tfg:rock/cracked_bricks_moon_deepslate_wall',
-		  dust: 'tfg:moon_deepslate_dust',                    loose: null,                                             stonecutting: true  }, // Bricks - Cracked
+		  dust: 'tfg:moon_deepslate_dust',                      loose: null,                                             stonecutting: true  }, // Bricks - Cracked
 
 		{ raw:  'tfg:rock/mossy_bricks_moon_deepslate',         stair: 'tfg:rock/mossy_bricks_moon_deepslate_stairs'  ,  slab: 'tfg:rock/mossy_bricks_moon_deepslate_slab',    wall: 'tfg:rock/mossy_bricks_moon_deepslate_wall',
-		  dust: 'tfg:moon_deepslate_dust',                    loose: null,                                             stonecutting: true  }, // Bricks - Mossy
+		  dust: 'tfg:moon_deepslate_dust',                      loose: null,                                             stonecutting: true  }, // Bricks - Mossy
 
 		{ raw:  'tfg:rock/chiseled_bricks_moon_deepslate',      stair: 'tfg:rock/chiseled_bricks_moon_deepslate_stairs', slab: 'tfg:rock/chiseled_bricks_moon_deepslate_slab', wall: 'tfg:rock/chiseled_bricks_moon_deepslate_wall',
-		  dust: 'tfg:moon_deepslate_dust',                    loose: null,                                             stonecutting: true  }, // Bricks - Extra
+		  dust: 'tfg:moon_deepslate_dust',                      loose: null,                                             stonecutting: true  }, // Bricks - Extra
 
 		// Permafrost
 		{ raw:  'ad_astra:permafrost',                          stair: 'tfg:rock/permafrost_stairs',                     slab: 'tfg:rock/permafrost_slab',                     wall: 'tfg:rock/permafrost_wall',
