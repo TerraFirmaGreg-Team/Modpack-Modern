@@ -36,6 +36,13 @@
 			x: -2.0d
 			y: 12.5d
 		}
+		{
+			id: "5A47760FCD164E74"
+			linked_quest: "61F58B402F1AE40B"
+			shape: "heart"
+			x: -7.5d
+			y: 4.5d
+		}
 	]
 	quests: [
 		{
@@ -1597,6 +1604,7 @@
 		{
 			description: ["{quests.low_voltage.cupronickel_ingot.desc}"]
 			id: "6042514C8FC54334"
+			shape: "diamond"
 			subtitle: "{quests.low_voltage.cupronickel_ingot.subtitle}"
 			tasks: [{
 				id: "701DEB748320107C"

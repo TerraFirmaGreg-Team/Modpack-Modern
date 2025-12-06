@@ -172,7 +172,7 @@ const registerTFGMaterials = (event) => {
 		.ingot()
 		.color(0xFADED2)
 		.secondaryColor(0x4FA883)
-		.iconSet('shiny')
+		.iconSet('chonky')
 		.components('1x zirconium', '2x boron')
 		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL)
 
