@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Breaking Changes
 - The tungsten processing line has been updated to now properly loop and balance all of its intermediates. The actual processes haven't changed, just the numbers, so you shouldn't have to change your setup much. It now also outputs a little extra oxygen instead of sodium (#2267) @SpicyNoodle5 @TomPlop
+- Removed black/red/blue arc furnace dust to ingot recipes, but changed the EBF recipes to MV (#2306) @applenper @Pyritie
 ### Mod updates
 - Added TFC Gurman, which adds even more food and drink
 - New GregTech updates, both [7.3.0](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.3.0-1.20.1) and [7.4.0](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.4.0-1.20.1). TL;DR:
@@ -22,17 +23,19 @@
 - Oilsands dust can now be centrifuged in the mechanical centrifuge @Pyritie
 - All oils (both the petrochem kind and the cooking kind) can now be used to fuel small boilers as well @Pyritie
 - Reduced the cost of the ME Ingredient Buffer @Pyritie
-- Renamed Blubber to Animal Fat and added it to the drop tables of more animals (pigs drop a fair bit, orcas drop a ton). Renamed Fish Oil to Tallowate since you can turn animal fat into tallow into fish oil (now tallowate). From there you can turn it into biodiesel! @applenper @Pyritie
-- Removed black/red/blue arc furnace dust to ingot recipes, but changed the EBF recipes to MV (#2306) @applenper @Pyritie
+- Renamed Blubber to Animal Fat and added it to the drop tables of more animals (pigs drop a fair bit, orcas drop a ton). You can extract it into Tallow and now also use it for biodiesel! @applenper @Pyritie
 - Glass bottles and ceramic jugs can now hold the same fluids as wooden barrels, buckets, etc @Pyritie
 - Added fluid/item capacity tooltips to many fluid/item containers @Pyritie
 - Spring water is now drinkable (it also heats you up a little) @Pyritie
+- The reinforced hang glider has been buffed, is now craftable as soon as you get aluminium, and is also much cheaper to repair (#2314) @jeuvke
+- You can now also use bismuth bronze and black bronze crates in recipes that previously required a normal bronze crate (#2328) @jeuvke
+- Freeze dried food no longer has any hydration (#2325) @mqrius
 ### Bug fixes
 - Fixed the horse crank not working at all @Pyritie
 - Fixed brown gravy recipe @Redeix
 - Fixed instant mac recipe requiring less cardboard than it gives back @Redeix
 - Fixed Ad Astra moon cheese nutrition values being inconsistent @Redeix
-- Fixed some quest typos @Pyritie
+- Fixed some quest typos @Pyritie @mqrius
 - Fixed duplicate bed dyeing recipe (#2229) @Pyritie
 - Fixed Basic Hermetic Casing missing a mineable tag and loot table (#2221) @Pyritie
 - Fixed some inconsistencies with gravel to sand recipe tiers (#2292) @Pyritie
@@ -47,6 +50,8 @@
 - Fixed some missing blocks from the GT facade whitelist (#2299) @MoltonMontro
 - Changed the texture of the ME Stocking Input Bus + Hatch to match the hull used to craft them @Pyritie
 - Fixed warped/crimson trees only growing on mars mycelium and not mars dirt @Pyritie
+- Fixed a few missing crafting recipes for bricks in the assembler (#2333) @Pyritie
+- Fixed a recycling dupe with the maintenace hatch (#2321) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra
