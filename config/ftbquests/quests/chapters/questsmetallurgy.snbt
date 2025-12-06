@@ -57,7 +57,7 @@
 		{
 			id: "3249AB9EB552BB77"
 			linked_quest: "4B79026C8D2DACC4"
-			x: 20.5d
+			x: 17.5d
 			y: -28.0d
 		}
 	]
@@ -287,7 +287,6 @@
 			description: ["{quests.metal_age.bellows.desc}"]
 			hide_dependency_lines: true
 			id: "021D3DEEB15A3D17"
-			shape: "rsquare"
 			subtitle: "{quests.metal_age.bellows.subtitle}"
 			tasks: [{
 				id: "588EB07E980386F9"
