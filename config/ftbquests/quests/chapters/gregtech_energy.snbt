@@ -6,6 +6,32 @@
 	group: "31B01EAD21CA863A"
 	icon: "gtceu:max_battery"
 	id: "6540429F3CA4DA1B"
+	images: [
+		{
+			height: 2.0d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			height: 2.0d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.0d
+			x: -3.0d
+			y: -7.0d
+		}
+		{
+			height: 2.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.5d
+			x: -10.5d
+			y: -9.5d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -14,7 +40,7 @@
 			icon: "gtceu:uhv_ultimate_battery"
 			id: "06B2E38F7DCF2678"
 			shape: "gear"
-			size: 1.0d
+			size: 3.0d
 			subtitle: "{quests.gregtech_energy.start.subtitle}"
 			tasks: [{
 				id: "07E1FA6A1BB796D4"
@@ -23,13 +49,15 @@
 			}]
 			title: "{quests.gregtech_energy.start.title}"
 			x: 0.0d
-			y: -8.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["4C620105AAC49381"]
 			description: ["{quests.gregtech_energy.moving.desc}"]
 			icon: "gtceu:luv_field_generator"
 			id: "60FF9249376DF9BD"
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "{quests.gregtech_energy.moving.subtitle}"
 			tasks: [{
 				id: "4C6524EFB1A21E6E"
@@ -45,6 +73,8 @@
 			description: ["{quests.gregtech_energy.storage.desc}"]
 			icon: "gtceu:uv_field_generator"
 			id: "08C160A0E7BBF39D"
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "{quests.gregtech_energy.storage.subtitle}"
 			tasks: [{
 				id: "2E561EE13A2AE934"
@@ -64,6 +94,8 @@
 			description: ["{quests.gregtech_energy.produce_energy.desc}"]
 			icon: "gtceu:lv_field_generator"
 			id: "2CDB9778C7A30044"
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "{quests.gregtech_energy.produce_energy.subtitle}"
 			tasks: [{
 				id: "0772AE56AC1CCBAC"
@@ -71,8 +103,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.gregtech_energy.produce_energy.title}"
-			x: -1.0d
-			y: -8.5d
+			x: -10.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["4C620105AAC49381"]
@@ -87,6 +119,8 @@
 			]
 			icon: "gtceu:hv_field_generator"
 			id: "2E57B2B963717893"
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "{quests.gregtech_energy.spending_energy.subtitle}"
 			tasks: [{
 				id: "28965A2A91DF08E5"
@@ -168,7 +202,7 @@
 		{
 			dependencies: [
 				"60FF9249376DF9BD"
-				"1DB543EFEEB67238"
+				"05E2F203DA46A5E8"
 			]
 			description: ["{quests.gregtech_energy.transformer.desc}"]
 			icon: "gtceu:active_transformer"
@@ -200,7 +234,7 @@
 			]
 			title: "{quests.gregtech_energy.transformer.title}"
 			x: 6.0d
-			y: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["08C160A0E7BBF39D"]
@@ -506,7 +540,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["4D0ADC66D2CF09B1"]
+			dependencies: ["2CDB9778C7A30044"]
 			description: [
 				"{quests.gregtech_energy.lgt_fuel.desc.1}"
 				"{@pagebreak}"
@@ -541,8 +575,8 @@
 				}
 			]
 			title: "{quests.gregtech_energy.lgt_fuel.title}"
-			x: -10.0d
-			y: -3.0d
+			x: -10.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["634EAFA86B3D57A1"]
@@ -574,11 +608,11 @@
 				}
 			]
 			title: "{quests.gregtech_energy.lpt_fuel.title}"
-			x: -9.0d
+			x: -12.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["4C620105AAC49381"]
+			dependencies: ["2CDB9778C7A30044"]
 			description: ["{quests.gregtech_energy.lst_fuel.desc}"]
 			icon: "gtceu:steam_bucket"
 			id: "7D5CA47D0E147922"
@@ -604,11 +638,11 @@
 				}
 			]
 			title: "{quests.gregtech_energy.lst_fuel.title}"
-			x: -9.0d
-			y: -7.0d
+			x: -12.0d
+			y: -8.0d
 		}
 		{
-			dependencies: ["4AC4D681124751EE"]
+			dependencies: ["2CDB9778C7A30044"]
 			description: [
 				"{quests.gregtech_energy.lce_fuel.desc.1}"
 				"{@pagebreak}"
@@ -656,7 +690,7 @@
 			]
 			title: "{quests.gregtech_energy.lce_fuel.title}"
 			x: -9.0d
-			y: 1.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["4C620105AAC49381"]
@@ -728,7 +762,6 @@
 			dependencies: [
 				"109C57B63EE95E35"
 				"5826EC76931359B8"
-				"7AF726555D721DFC"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -746,7 +779,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4D0ADC66D2CF09B1"]
@@ -766,44 +799,11 @@
 				type: "item"
 			}]
 			title: "{quests.gregtech_energy.hv_single_generator.title}"
-			x: -4.5d
+			x: -1.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["1A0672F4FA88DF74"]
-			description: ["{quests.gregtech_energy.hv_fuel.desc}"]
-			id: "42CF00F2C602EF77"
-			subtitle: "{quests.gregtech_energy.hv_fuel.subtitle}"
-			tasks: [
-				{
-					id: "50AA063D324C5D25"
-					item: "gtceu:cetane_boosted_diesel_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "60BED708F72701C8"
-					item: "gtceu:steam_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "2C80389B193E48CE"
-					item: "gtceu:nitrobenzene_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "33FC3878BFB14AE1"
-					title: "{quests.gregtech_energy.hv_fuel.task}"
-					type: "checkmark"
-				}
-			]
-			title: "{quests.gregtech_energy.hv_fuel.title}"
-			x: -11.0d
-			y: -3.0d
-		}
-		{
+			dependencies: ["06B2E38F7DCF2678"]
 			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:lv_universal_circuit"
@@ -821,6 +821,7 @@
 			y: -7.0d
 		}
 		{
+			dependencies: ["4C620105AAC49381"]
 			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:mv_universal_circuit"
@@ -838,6 +839,7 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["0AF286AA540A82E6"]
 			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:hv_universal_circuit"
@@ -855,6 +857,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["4D0ADC66D2CF09B1"]
 			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:ev_universal_circuit"
@@ -872,6 +875,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["7AF726555D721DFC"]
 			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:iv_universal_circuit"
@@ -889,6 +893,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["05E2F203DA46A5E8"]
 			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:luv_universal_circuit"
@@ -906,6 +911,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["1DB543EFEEB67238"]
 			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:zpm_universal_circuit"
@@ -923,6 +929,7 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["39019EF278D09DF7"]
 			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:uv_universal_circuit"
@@ -940,18 +947,24 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["0AF286AA540A82E6"]
+			dependencies: [
+				"0AF286AA540A82E6"
+				"75DAF94D46BA4164"
+			]
 			id: "3630849A7B0818C8"
 			tasks: [{
 				id: "0CF9D6042C16265A"
-				item: "gtceu:benzene_bucket"
+				item: "tfg:reformate_gas_bucket"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -10.5d
 			y: -5.0d
 		}
 		{
-			dependencies: ["0AF286AA540A82E6"]
+			dependencies: [
+				"0AF286AA540A82E6"
+				"0C718329245D9619"
+			]
 			id: "79AA7691F398A8C7"
 			tasks: [{
 				id: "36219BC854303490"
@@ -980,6 +993,7 @@
 				"{@pagebreak}"
 				"{quests.gregtech_energy.fission_reactor.desc.8}"
 			]
+			icon: "deafission:fission_reactor_mk1"
 			id: "4512E5DE7A84F809"
 			subtitle: "{quests.gregtech_energy.fission_reactor.subtitle}"
 			tasks: [
@@ -999,18 +1013,24 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["4C620105AAC49381"]
+			dependencies: [
+				"4C620105AAC49381"
+				"0C718329245D9619"
+			]
 			id: "139C7DF629329753"
 			tasks: [{
 				id: "7BA9FDD1F45B53F6"
 				item: "gtceu:bio_diesel_bucket"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.0d
 			y: -7.0d
 		}
 		{
-			dependencies: ["4D0ADC66D2CF09B1"]
+			dependencies: [
+				"4D0ADC66D2CF09B1"
+				"0C718329245D9619"
+			]
 			id: "376BFF92714C5012"
 			tasks: [{
 				id: "22F9A3ED193CB252"
@@ -1021,7 +1041,10 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["7AF726555D721DFC"]
+			dependencies: [
+				"351AED1612D00EF8"
+				"0C718329245D9619"
+			]
 			id: "7134DB013B34593E"
 			tasks: [{
 				id: "008341509483BB23"
@@ -1135,6 +1158,51 @@
 			title: "{quests.gregtech_energy.rotor.title}"
 			x: -3.0d
 			y: -2.0d
+		}
+		{
+			dependencies: [
+				"05E2F203DA46A5E8"
+				"0ABD326DC2551CBD"
+			]
+			id: "4659447C85CDC058"
+			tasks: [{
+				id: "1D02468DD9869C72"
+				item: "deafission:fission_reactor_smr1"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"4C620105AAC49381"
+				"75DAF94D46BA4164"
+			]
+			id: "27FEF27219CDF5AD"
+			tasks: [{
+				id: "7BA53E107C8E8917"
+				item: "tfg:syngas_bucket"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4512E5DE7A84F809"]
+			id: "0ABD326DC2551CBD"
+			tasks: [{
+				id: "68E3EE04F4931EFE"
+				item: {
+					Count: 1
+					id: "tfg:tbu_232_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.0d
 		}
 	]
 	subtitle: ["{quests.gregtech_energy.subtitle}"]
