@@ -45,6 +45,16 @@ function registerTFGArrowRecipes(event) {
 		C: 'tfg:fletching'
 	}).id('tfg:shaped/arrow')
 
+	event.shaped('4x minecraft:arrow', [
+		' A ',
+		' B ',
+		' C '
+	], {
+		A: 'primitive_creatures:tt_5',
+		B: '#forge:rods/wooden',
+		C: 'tfg:fletching'
+	}).id('tfg:shaped/arrow')
+
 	// Wraptor feathers
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
 		event.shapeless('4x tfg:fletching', [
