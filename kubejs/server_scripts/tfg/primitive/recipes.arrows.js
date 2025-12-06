@@ -15,11 +15,10 @@ function registerTFGArrowRecipes(event) {
 	).outsideSlotRequired(false)
 		.id('tfg:knapping/flint_arrow_head')
 
-	event.recipes.gtceu.assembler('tfg:assembler/flint_arrow_head')
+	event.recipes.gtceu.cutter('tfg:assembler/flint_arrow_head')
 		.itemInputs('1x minecraft:flint')
 		.itemOutputs('4x tfg:flint_arrow_head')
 		.duration(20)
-		.circuit(4)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
@@ -35,7 +34,7 @@ function registerTFGArrowRecipes(event) {
 		.circuit(4)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.shaped('4x minecraft:arrow', [
+	event.shaped('minecraft:arrow', [
 		' A ',
 		' B ',
 		' C '
@@ -45,7 +44,7 @@ function registerTFGArrowRecipes(event) {
 		C: 'tfg:fletching'
 	}).id('tfg:shaped/arrow')
 
-	event.shaped('4x minecraft:arrow', [
+	event.shaped('minecraft:arrow', [
 		' A ',
 		' B ',
 		' C '
@@ -53,7 +52,7 @@ function registerTFGArrowRecipes(event) {
 		A: 'primitive_creatures:tt_5',
 		B: '#forge:rods/wooden',
 		C: 'tfg:fletching'
-	}).id('tfg:shaped/arrow')
+	}).id('tfg:shaped/arrow_shard')
 
 	// Wraptor feathers
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
