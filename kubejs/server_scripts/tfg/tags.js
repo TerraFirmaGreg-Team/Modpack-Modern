@@ -30,6 +30,14 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:platinum_ore_group', 'gtceu:purified_cooperite_ore')
 	event.add('tfg:platinum_ore_group', 'gtceu:purified_chalcocite_ore')
 
+	//Bronze Crates & Drums
+	event.add('tfg:any_bronze_crate', 'gtceu:bronze_crate')
+	event.add('tfg:any_bronze_crate', 'gtceu:black_bronze_crate')
+	event.add('tfg:any_bronze_crate', 'gtceu:bismuth_bronze_crate')
+	event.add('tfg:any_bronze_drum', 'gtceu:bronze_drum')
+	event.add('tfg:any_bronze_drum', 'gtceu:black_bronze_drum')
+	event.add('tfg:any_bronze_drum', 'gtceu:bismuth_bronze_drum')
+
 	//#region Tools
 	event.add('tfg:empty_dna_syringes', 'tfg:empty_dna_syringe')
 	event.add('tfg:empty_dna_syringes', 'tfg:clean_dna_syringe')
