@@ -642,7 +642,7 @@ function registerTFCMaterialsRecipes(event) {
 
 				if (tfcProperty.getMeltTemp() <= 1540) {
 					event.recipes.tfc.heating(`gtceu:small_${material.getName()}_gear`, tfcProperty.getMeltTemp())
-					.resultFluid(Fluid.of(`gtceu:${material.getName()}`, 144))
+					.resultFluid(Fluid.of(outputMaterial, 144))
 					.id(`tfc:heating/small_${material.getName()}_gear`)
 				}
 

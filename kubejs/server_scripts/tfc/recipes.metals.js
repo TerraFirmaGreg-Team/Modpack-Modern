@@ -200,39 +200,6 @@ function registerTFCMetalsRecipes(event) {
 		.duration(700)
 		.EUt(4)
 
-	// Rose Gold + Sterling Silver
-	const copper_types = [
-		"#forge:ingots/copper",
-		"#forge:dusts/copper",
-		"#forge:ingots/annealed_copper",
-		"#forge:dusts/annealed_copper"
-	];
-	const gold_types = [
-		"#forge:ingots/gold",
-		"#forge:dusts/gold"
-	];
-	const silver_types = [
-		"#forge:ingots/silver",
-		"#forge:dusts/silver"
-	];
-
-	copper_types.forEach(copper_types_array => {
-		gold_types.forEach(gold_types_array => {
-			event.recipes.gtceu.alloy_smelter(`rose_gold_from_${copper_types_array.replace(/:/g, "/").replace(/#/g, "")}_and_${gold_types_array.replace(/:/g, "/").replace(/#/g, "")}`)
-				.itemInputs(Ingredient.of(copper_types_array).withCount(1), Ingredient.of(gold_types_array).withCount(4))
-				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.RoseGold, 5))
-				.duration(20*10)
-				.EUt(GTValues.VA[GTValues.LV])
-		});
-		silver_types.forEach(silver_types_array => {
-			event.recipes.gtceu.alloy_smelter(`sterling_silver_from_${copper_types_array.replace(/:/g, "/").replace(/#/g, "")}_and_${silver_types_array.replace(/:/g, "/").replace(/#/g, "")}`)
-				.itemInputs(Ingredient.of(copper_types_array).withCount(1), Ingredient.of(silver_types_array).withCount(4))
-				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.SterlingSilver, 5))
-				.duration(20*10)
-				.EUt(GTValues.VA[GTValues.LV])
-		});
-	});
-
 
 	const TFC_INTERMEDIATE_METALS =
 		[
@@ -400,6 +367,10 @@ function registerTFCMetalsRecipes(event) {
 		})
 	})
 	//#endregion
+
+	event.smelting('minecraft:iron_ingot', '#forge:ingots/wrought_iron')
+		.id('tfg:revert_wrought_iron_ingot')
+
 
 	// Melting powders
 

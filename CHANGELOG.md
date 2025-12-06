@@ -28,6 +28,7 @@
 - Added fluid/item capacity tooltips to many fluid/item containers @Pyritie
 - Spring water is now drinkable (it also heats you up a little) @Pyritie
 ### Bug fixes
+- Fixed the horse crank not working at all @Pyritie
 - Fixed brown gravy recipe @Redeix
 - Fixed instant mac recipe requiring less cardboard than it gives back @Redeix
 - Fixed Ad Astra moon cheese nutrition values being inconsistent @Redeix
@@ -45,6 +46,7 @@
 - Hopefully fixed rockets without a pilot getting stuck and not exploding? (#2137) @Pyritie
 - Fixed some missing blocks from the GT facade whitelist (#2299) @MoltonMontro
 - Changed the texture of the ME Stocking Input Bus + Hatch to match the hull used to craft them @Pyritie
+- Fixed warped/crimson trees only growing on mars mycelium and not mars dirt @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra

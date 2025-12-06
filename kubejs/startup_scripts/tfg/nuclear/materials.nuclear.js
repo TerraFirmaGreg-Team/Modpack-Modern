@@ -3,6 +3,16 @@
 
 const registerTFGNuclearMaterials = (event) => {
 
+	// Fission Component
+
+	event.create('tfg:tetrafluoroethane')
+		.fluid()
+		.gem()
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES, GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.iconSet(GTMaterialIconSet.QUARTZ)
+		.components('2x carbon', '2x hydrogen', '4x fluorine')
+		.color(0x46702e)
+
 	/*    event.create('mysterious_ooze')
 			.fluid()
 			.color(0x500bbf)
@@ -143,7 +153,7 @@ const registerTFGNuclearMaterials = (event) => {
 
 	event.create('tfg:oxidized_nuclear_residue')
 		.dust()
-		.components('1x uranium', '1x oxygen', '2x unknown')
+		.components('1x plutonium', '2x fluorine', '1x oxygen', '2x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.iconSet(GTMaterialIconSet.SHINY)
 		.color(0x286529)
@@ -152,7 +162,7 @@ const registerTFGNuclearMaterials = (event) => {
 
 	event.create('tfg:refined_nuclear_residue')
 		.dust()
-		.components('1x uranium', '2x unknown')
+		.components('1x plutonium', '2x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0x82c383)
 		.secondaryColor('0xffffff')
@@ -204,15 +214,6 @@ const registerTFGNuclearMaterials = (event) => {
 		.flags(GTMaterialFlags.GENERATE_ROD)
 		.color(0x694c66)
 		.radioactiveHazard(1000)
-
-	event.create("ostrum_iodide")
-		.ingot()
-		.components('2x ostrum', 'iodine')
-		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
-		.iconSet(GTMaterialIconSet.BRIGHT)
-		.flags(GTMaterialFlags.GENERATE_GEAR)
-		.color(0xc696f2)
-		.secondaryColor(0x9b99ff)
 
 	//#endregion
 
