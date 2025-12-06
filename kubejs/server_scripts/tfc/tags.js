@@ -431,6 +431,14 @@ function registerTFCBlockTags(event) {
     });
 
     event.add('tfc:can_be_snow_piled', 'tfc:groundcover/feather');
+
+    event.add('minecraft:infiniburn_overworld', 'tfc:rock/magma/granite')
+    event.add('minecraft:infiniburn_overworld', 'tfc:rock/magma/diorite')
+    event.add('minecraft:infiniburn_overworld', 'tfc:rock/magma/gabbro')
+    event.add('minecraft:infiniburn_overworld', 'tfc:rock/magma/rhyolite')
+    event.add('minecraft:infiniburn_overworld', 'tfc:rock/magma/basalt')
+    event.add('minecraft:infiniburn_overworld', 'tfc:rock/magma/andesite')
+    event.add('minecraft:infiniburn_overworld', 'tfc:rock/magma/dacite')
 }
 
 /** @param {TagEvent.Fluid} event */
