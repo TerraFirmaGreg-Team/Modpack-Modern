@@ -778,24 +778,6 @@
 		}
 		{
 			dependencies: ["10FB27DD3C7BEC2F"]
-			description: ["{quests.medium_voltage.mv_tank.desc}"]
-			icon: "gtceu:lv_super_tank"
-			id: "6C53B01A05FFF1DC"
-			optional: true
-			shape: "heart"
-			size: 1.0d
-			subtitle: "{quests.medium_voltage.mv_tank.subtitle}"
-			tasks: [{
-				id: "47EA273D728C158F"
-				item: "gtceu:lv_super_tank"
-				type: "item"
-			}]
-			title: "{quests.medium_voltage.mv_tank.title}"
-			x: -12.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["10FB27DD3C7BEC2F"]
 			description: ["{quests.medium_voltage.mv_pvc.desc}"]
 			icon: "gtceu:polyvinyl_chloride_plate"
 			id: "40408FFD02134148"
