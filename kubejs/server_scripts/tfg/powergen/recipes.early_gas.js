@@ -236,4 +236,10 @@ function registerTFGEarlyGasRecipes(event) {
 		.EUt(-(32))
 		.duration(20*0.6)
 
+	//#endregion
+
+	// Process Syngas
+
+	
+
 }
