@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+### Changes
+- Added recipes for create's shadow and radiant casings (#2256) @Ujhik
+### Bug fixes
+
 ## [0.11.9] - 7-12-2025
 ### Breaking Changes
 #### Beginning of the Power Update
