@@ -861,4 +861,5 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#gtceu:circuits/ev',
 		D: 'gtceu:palladium_substation'
 	}).addMaterialInfo().id('gtceu:shaped/power_substation')
+
 }
