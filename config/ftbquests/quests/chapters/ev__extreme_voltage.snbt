@@ -195,7 +195,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["4EA8888B12D75BF1"]
+			dependencies: [
+				"4EA8888B12D75BF1"
+				"6A451F43F3D7A671"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.extreme_voltage.distillation_tower.desc.1}"
 				"{@pagebreak}"

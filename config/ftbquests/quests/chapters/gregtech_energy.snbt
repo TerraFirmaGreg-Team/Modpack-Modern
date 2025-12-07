@@ -551,25 +551,43 @@
 			subtitle: "{quests.gregtech_energy.lgt_fuel.subtitle}"
 			tasks: [
 				{
-					id: "2A3155363C7C56A7"
-					item: "gtceu:nitrobenzene_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "6D22AF719926DC1C"
-					item: "gtceu:benzene_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "532915D09934F836"
+					id: "3BC6583DCF48D475"
 					item: "gtceu:methane_bucket"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "75DE64829622C96D"
+					id: "08E4B7F67EA2769B"
+					item: "tfg:syngas_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "067CB52470E7A72E"
+					item: "gtceu:refinery_gas_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "20F5E6847D132420"
+					item: "gtceu:lpg_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "733F33DC314A646C"
+					item: "tfg:reformate_gas_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "29E24DFADB670971"
+					item: "tfg:btx_fuel_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3DA67694B1764AE0"
 					title: "{quests.gregtech_energy.lgt_fuel.task}"
 					type: "checkmark"
 				}
@@ -702,6 +720,8 @@
 				"{quests.gregtech_energy.lv_generator.desc.3}"
 				"{@pagebreak}"
 				"{quests.gregtech_energy.lv_generator.desc.4}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.lv_generator.desc.5}"
 			]
 			id: "7F92FDAB9A04C58B"
 			subtitle: "{quests.gregtech_energy.lv_generator.subtitle}"
@@ -712,7 +732,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:lv_steam_turbine)item(gtceu:lv_combustion))"
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_combustion)item(gtceu:lv_steam_turbine)item(gtceu:lv_gas_turbine))"
 					}
 				}
 				title: "{quests.gregtech_energy.lv_generator.task}"
@@ -951,12 +971,19 @@
 				"0AF286AA540A82E6"
 				"75DAF94D46BA4164"
 			]
+			description: [
+				"{quests.gregtech_energy.reformate_gas.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.reformate_gas.desc.2}"
+			]
 			id: "3630849A7B0818C8"
+			subtitle: "{quests.gregtech_energy.reformate_gas.subtitle}"
 			tasks: [{
 				id: "0CF9D6042C16265A"
 				item: "tfg:reformate_gas_bucket"
 				type: "item"
 			}]
+			title: "{quests.gregtech_energy.reformate_gas.title}"
 			x: -10.5d
 			y: -5.0d
 		}
@@ -965,12 +992,21 @@
 				"0AF286AA540A82E6"
 				"0C718329245D9619"
 			]
+			description: [
+				"{quests.medium_voltage.mv_diesel.desc.1}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.mv_diesel.desc.2}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.mv_diesel.desc.3}"
+			]
 			id: "79AA7691F398A8C7"
+			subtitle: "{quests.medium_voltage.mv_diesel.subtitle}"
 			tasks: [{
 				id: "36219BC854303490"
 				item: "gtceu:diesel_bucket"
 				type: "item"
 			}]
+			title: "{quests.medium_voltage.mv_diesel.title}"
 			x: -9.0d
 			y: -5.0d
 		}
@@ -1031,28 +1067,34 @@
 				"4D0ADC66D2CF09B1"
 				"0C718329245D9619"
 			]
+			description: ["{quests.high_voltage.cetane_diesel.desc}"]
 			id: "376BFF92714C5012"
+			subtitle: "{quests.high_voltage.cetane_diesel.subtitle}"
 			tasks: [{
 				id: "22F9A3ED193CB252"
 				item: "gtceu:cetane_boosted_diesel_bucket"
 				type: "item"
 			}]
+			title: "{quests.high_voltage.cetane_diesel.title}"
 			x: -9.0d
 			y: -3.0d
 		}
 		{
 			dependencies: [
-				"351AED1612D00EF8"
 				"0C718329245D9619"
+				"05E2F203DA46A5E8"
 			]
+			description: ["{quests.gregtech_energy.high_gasoline.desc}"]
 			id: "7134DB013B34593E"
+			subtitle: "{quests.gregtech_energy.high_gasoline.subtitle}"
 			tasks: [{
 				id: "008341509483BB23"
 				item: "gtceu:high_octane_gasoline_bucket"
 				type: "item"
 			}]
+			title: "{quests.gregtech_energy.high_gasoline.title}"
 			x: -9.0d
-			y: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7AF726555D721DFC"]
@@ -1164,12 +1206,15 @@
 				"05E2F203DA46A5E8"
 				"0ABD326DC2551CBD"
 			]
+			description: ["{quests.gregtech_energy.smr.desc.1}"]
 			id: "4659447C85CDC058"
+			subtitle: "{quests.gregtech_energy.smr.subtitle}"
 			tasks: [{
 				id: "1D02468DD9869C72"
 				item: "deafission:fission_reactor_smr1"
 				type: "item"
 			}]
+			title: "{quests.gregtech_energy.smr.title}"
 			x: -7.5d
 			y: 1.0d
 		}
@@ -1178,18 +1223,23 @@
 				"4C620105AAC49381"
 				"75DAF94D46BA4164"
 			]
+			description: ["{quests.gregtech_energy.syngas.desc}"]
 			id: "27FEF27219CDF5AD"
+			subtitle: "{quests.gregtech_energy.syngas.subtitle}"
 			tasks: [{
 				id: "7BA53E107C8E8917"
 				item: "tfg:syngas_bucket"
 				type: "item"
 			}]
+			title: "{quests.gregtech_energy.syngas.title}"
 			x: -10.5d
 			y: -7.0d
 		}
 		{
 			dependencies: ["4512E5DE7A84F809"]
+			description: ["{quests.gregtech_energy.fission_rod.desc.1}"]
 			id: "0ABD326DC2551CBD"
+			subtitle: "{quests.gregtech_energy.fission_rod.subtitle}"
 			tasks: [{
 				id: "68E3EE04F4931EFE"
 				item: {
@@ -1201,8 +1251,41 @@
 				}
 				type: "item"
 			}]
+			title: "{quests.gregtech_energy.fission_rod.title}"
 			x: -7.5d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3630849A7B0818C8"
+				"7AF726555D721DFC"
+			]
+			dependency_requirement: "one_completed"
+			id: "35E113FF0C1645CC"
+			tasks: [{
+				id: "2C766A3391285E33"
+				item: "tfg:btx_fuel_bucket"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"0C718329245D9619"
+				"7AF726555D721DFC"
+			]
+			description: ["{quests.gregtech_energy.gasoline.desc}"]
+			id: "27E9DAF9F578A3E8"
+			subtitle: "{quests.gregtech_energy.gasoline.subtitle}"
+			tasks: [{
+				id: "34695995678F09C6"
+				item: "gtceu:gasoline_bucket"
+				type: "item"
+			}]
+			title: "{quests.gregtech_energy.gasoline.title}"
+			x: -9.0d
+			y: -1.0d
 		}
 	]
 	subtitle: ["{quests.gregtech_energy.subtitle}"]
