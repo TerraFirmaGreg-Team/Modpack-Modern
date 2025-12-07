@@ -6,7 +6,7 @@ function registerTFGEarlyGasRecipes(event) {
 
 	// New Fuels
 
-	// Syngas
+	//#region Syngas
 
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
@@ -19,7 +19,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ item: 'minecraft:coal' }, { fluid: 'gtceu:creosote', amount: 250 }],
-		results: [{ fluid: 'tfg:syngas', amount: 100 }],
+		results: [{ fluid: 'tfg:syngas', amount: 200 }],
 		heatRequirement: "heated",
 		processingTime: 4000
 	}).id('tfg:vi/vacuumizing/syngas_from_coal')
@@ -45,28 +45,30 @@ function registerTFGEarlyGasRecipes(event) {
 		.inputFluids('gtceu:creosote 250')
 		.outputFluids('tfg:syngas 100')
 		.duration(20*15)
-		.EUt(10)
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.brewery('tfg:syngas_from_coal')
 		.itemInputs('minecraft:coal')
 		.inputFluids('gtceu:creosote 250')
 		.outputFluids('tfg:syngas 200')
 		.duration(20*15)
-		.EUt(10)
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.brewery('tfg:syngas_from_coke')
 		.itemInputs('gtceu:coke_gem')
 		.inputFluids('gtceu:creosote 250')
 		.outputFluids('tfg:syngas 400')
 		.duration(20*15)
-		.EUt(10)
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.brewery('tfg:syngas_from_anthracite')
 		.itemInputs('beneath:cursecoal')
 		.inputFluids('gtceu:creosote 250')
 		.outputFluids('tfg:syngas 400')
 		.duration(20*15)
-		.EUt(10)
+		.EUt(GTValues.VHA[GTValues.LV])
+
+	//#endregion
 
 	//#region Reformate Gas
 
@@ -75,7 +77,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_charcoal')
 		.itemInputs(Item.of('minecraft:charcoal', 40))
 		.inputFluids(Fluid.of('gtceu:creosote', 4000))
-		.outputFluids(Fluid.of('gtceu:coal_tar', 500), Fluid.of('tfg:syngas', 4400), Fluid.of('tfg:raw_aromatic_mix', 2000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 500), Fluid.of('tfg:syngas', 4400), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*150)
 		.circuit(1)
 		.EUt(GTValues.VHA[GTValues.MV])
@@ -86,7 +88,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.perTick(true)
 		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
 		.perTick(false)
-		.outputFluids(Fluid.of('gtceu:coal_tar', 500), Fluid.of('tfg:syngas', 4400), Fluid.of('tfg:raw_aromatic_mix', 2000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 500), Fluid.of('tfg:syngas', 4400), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*50)
 		.circuit(2)
 		.EUt(GTValues.VHA[GTValues.MV])
@@ -96,7 +98,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_coal')
 		.itemInputs(Item.of('minecraft:coal', 10))
 		.inputFluids(Fluid.of('gtceu:creosote', 4000))
-		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 6400), Fluid.of('tfg:raw_aromatic_mix', 2000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 6400), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*150)
 		.circuit(1)
 		.EUt(GTValues.VHA[GTValues.MV])
@@ -107,7 +109,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.perTick(true)
 		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
 		.perTick(false)
-		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 6400), Fluid.of('tfg:raw_aromatic_mix', 2000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 6400), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*50)
 		.circuit(2)
 		.EUt(GTValues.VHA[GTValues.MV])
@@ -117,7 +119,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_coke')
 		.itemInputs(Item.of('gtceu:coke_gem', 8))
 		.inputFluids(Fluid.of('gtceu:creosote', 4000))
-		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 12800), Fluid.of('tfg:raw_aromatic_mix', 2000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 12800), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*150)
 		.circuit(1)
 		.EUt(GTValues.VHA[GTValues.MV])
@@ -128,7 +130,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.perTick(true)
 		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
 		.perTick(false)
-		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 12800), Fluid.of('tfg:raw_aromatic_mix', 2000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 12800), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*50)
 		.circuit(2)
 		.EUt(GTValues.VHA[GTValues.MV])
@@ -138,7 +140,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_anthracite')
 		.itemInputs(Item.of('beneath:cursecoal', 5))
 		.inputFluids(Fluid.of('gtceu:creosote', 4000))
-		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 12800), Fluid.of('tfg:raw_aromatic_mix', 2000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 12800), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*150)
 		.circuit(1)
 		.EUt(GTValues.VHA[GTValues.MV])
@@ -149,7 +151,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.perTick(true)
 		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
 		.perTick(false)
-		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 12800), Fluid.of('tfg:raw_aromatic_mix', 2000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 2000), Fluid.of('tfg:syngas', 12800), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*50)
 		.circuit(2)
 		.EUt(GTValues.VHA[GTValues.MV])
@@ -157,30 +159,30 @@ function registerTFGEarlyGasRecipes(event) {
 	// Aromatic Processing
 
 	event.recipes.gtceu.chemical_reactor('tfg:aromatic_feedstock')
-		.inputFluids(Fluid.of('tfg:raw_aromatic_mix', 2000), Fluid.of('gtceu:benzene', 525), Fluid.of('gtceu:steam', 1000))
-		.outputFluids(Fluid.of('tfg:aromatic_feedstock', 1000))
+		.inputFluids(Fluid.of('tfg:raw_aromatic_mix', 4000), Fluid.of('gtceu:benzene', 525), Fluid.of('gtceu:steam', 1000))
+		.outputFluids(Fluid.of('tfg:aromatic_feedstock', 2000))
 		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:reformed_aromatic_feedstock')
 		.chancedInput(Item.of('gtceu:tiny_rhenium_dust'), 1000, 0) // 10% chance
-		.inputFluids(Fluid.of('tfg:aromatic_feedstock', 1000))
-		.outputFluids(Fluid.of('tfg:reformed_aromatic_feedstock', 1000))
+		.inputFluids(Fluid.of('tfg:aromatic_feedstock', 2000))
+		.outputFluids(Fluid.of('tfg:reformed_aromatic_feedstock', 2000))
 		.duration(20*18)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	// Reformate Gas Alternative Step
 
 	event.recipes.gtceu.cracker('tfg:reformate_gas_cracker')
-		.inputFluids(Fluid.of('tfg:reformed_aromatic_feedstock', 1000), Fluid.of('gtceu:steam', 4000))
-		.outputFluids(Fluid.of('tfg:reformate_gas', 2000))
-		.outputFluids(Fluid.of('tfg:cracker_off_gas', 4000))
+		.inputFluids(Fluid.of('tfg:reformed_aromatic_feedstock', 2000), Fluid.of('gtceu:steam', 4000))
+		.outputFluids(Fluid.of('tfg:reformate_gas', 8000))
+		.outputFluids(Fluid.of('tfg:cracker_off_gas', 1000))
 		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:reformate_gas')
-		.inputFluids(Fluid.of('tfg:reformed_aromatic_feedstock', 1000), Fluid.of('gtceu:steam', 1000))
-		.outputFluids(Fluid.of('tfg:reformate_gas', 2000))
+		.inputFluids(Fluid.of('tfg:reformed_aromatic_feedstock', 2000), Fluid.of('gtceu:steam', 1000))
+		.outputFluids(Fluid.of('tfg:reformate_gas', 3000))
 		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.MV])
 
@@ -222,11 +224,6 @@ function registerTFGEarlyGasRecipes(event) {
 	
 	// Add Syngas
 
-	event.recipes.gtceu.steam_boiler('tfg:syngas') // Small Boiler and Large Boiler divided by 4
-		.inputFluids(Fluid.of('tfg:syngas', 100))
-		.duration(40*20*4)
-		.dimension('minecraft:overworld')
-
 	event.recipes.gtceu.gas_turbine('tfg:syngas') // Gas Turbine
 		.inputFluids(Fluid.of('tfg:syngas', 1))
 		.EUt(-(32))
@@ -237,6 +234,12 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.gas_turbine('tfg:reformate_gas') // Gas Turbine
 		.inputFluids(Fluid.of('tfg:reformate_gas', 1))
 		.EUt(-(32))
-		.duration(20*0.65)
+		.duration(20*0.6)
+
+	//#endregion
+
+	// Process Syngas
+
+	
 
 }
