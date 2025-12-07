@@ -1503,8 +1503,9 @@
 		{
 			dependencies: [
 				"05528D09F7EE6E33"
-				"63CD0236B337EAAD"
+				"5917B0D4708BF534"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.transportation_tips.rnr_plow.desc}"]
 			guide_page: "tfc:field_guide tfc:roadsandroofs/paving_cart 0"
 			id: "533F32CCAD9D5B51"

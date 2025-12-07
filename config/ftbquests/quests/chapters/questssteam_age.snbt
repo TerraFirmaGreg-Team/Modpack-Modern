@@ -63,6 +63,13 @@
 			x: -14.0d
 			y: 13.0d
 		}
+		{
+			id: "38ECA3FEC2B6A6A6"
+			linked_quest: "533F32CCAD9D5B51"
+			shape: "heart"
+			x: -19.5d
+			y: 11.5d
+		}
 	]
 	quests: [
 		{
@@ -414,6 +421,7 @@
 			description: ["{quests.steam_age.crushing_wheel.desc}"]
 			id: "4F3D0D746D26B59F"
 			optional: true
+			shape: "heart"
 			subtitle: "{quests.steam_age.crushing_wheel.subtitle}"
 			tasks: [{
 				count: 2L
@@ -423,7 +431,7 @@
 			}]
 			title: "{quests.steam_age.crushing_wheel.title}"
 			x: -21.5d
-			y: 10.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["7DB7AB5349218605"]
@@ -448,8 +456,8 @@
 				}
 			]
 			title: "{quests.steam_age.treated_planks.title}"
-			x: -19.5d
-			y: 10.5d
+			x: -20.5d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -545,8 +553,6 @@
 			description: ["{quests.steam_age.molding.desc}"]
 			icon: "gtceu:ball_casting_mold"
 			id: "09E12A399EE0A628"
-			optional: true
-			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.steam_age.molding.subtitle}"
 			tasks: [
@@ -851,6 +857,7 @@
 			description: ["{quests.steam_age.centrifuge.desc}"]
 			id: "19A1D52A7F550478"
 			optional: true
+			shape: "heart"
 			subtitle: "{quests.steam_age.centrifuge.subtitle}"
 			tasks: [{
 				id: "69668479444FF064"
@@ -859,7 +866,7 @@
 			}]
 			title: "{quests.steam_age.centrifuge.title}"
 			x: -20.5d
-			y: 10.5d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -1047,7 +1054,7 @@
 			]
 			title: "{quests.steam_age.red_alloy.title}"
 			x: -22.5d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["51CBF7378FFAD514"]
