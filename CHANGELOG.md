@@ -6,6 +6,7 @@
 - Removed black/red/blue arc furnace dust to ingot recipes, but changed the EBF recipes to MV (#2306) @applenper @Pyritie
 ### Mod updates
 - Added TFC Gurman, which adds even more food and drink
+- Primitive Creatures has fixed its spawning of Huntmasters
 - New GregTech updates, both [7.3.0](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.3.0-1.20.1) and [7.4.0](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.4.0-1.20.1). TL;DR:
   - You can use screwdrivers on drums again
   - Diluted hydrochloric acid distillation circuits have been swapped, so now it's consistent with diluted sulfuric acid
