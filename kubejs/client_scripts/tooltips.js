@@ -88,7 +88,7 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_1'));
 		text.add(2, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_2'));
 		text.add(3, Text.translate('tfg.tooltip.machine.coil_energy_discount'));
-		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
+		text.add(3, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
 	})
 
 	// Insulation
