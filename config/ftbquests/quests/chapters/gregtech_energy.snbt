@@ -1287,12 +1287,15 @@
 				"7AF726555D721DFC"
 			]
 			dependency_requirement: "one_completed"
+			description: ["{quests.gregtech_energy.btx.desc}"]
 			id: "35E113FF0C1645CC"
+			subtitle: "{quests.gregtech_energy.btx.subtitle}"
 			tasks: [{
 				id: "2C766A3391285E33"
 				item: "tfg:btx_fuel_bucket"
 				type: "item"
 			}]
+			title: "{quests.gregtech_energy.btx.title}"
 			x: -10.5d
 			y: -1.0d
 		}
