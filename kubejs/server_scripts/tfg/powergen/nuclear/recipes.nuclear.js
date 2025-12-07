@@ -315,7 +315,7 @@ function registerTFGNuclearRecipes(event) {
         // durability / const / heatValue
         .duration(1000000 / 0.4 / 0.5);
 
-	event.recipes.deafission.fission_reactor_coolant('tfg:americium_241_coolant')
+	event.recipes.deafission.fission_reactor_coolant_smr('tfg:americium_241_coolant')
         .itemInputs(Ingredient.of([
             'tfg:americium_241_rod']))
         .inputFluids(Fluid.of('tfg:boron_enriched_coolant', 10*64))
