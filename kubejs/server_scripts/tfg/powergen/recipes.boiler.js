@@ -14,6 +14,13 @@ function registerTFGBoilerRecipes(event) {
         recipe.set("duration", newDuration/3)
 	})
 
+	// Small nerf to charcoal
+
+	event.forEachRecipe({ id: /gtceu:(steam_boiler|large_boiler)\/minecraft_charcoal/ }, recipe => {
+        var newDuration = recipe.get("duration")
+        recipe.set("duration", newDuration/4*3)
+	})
+
 	// Allow oil in small boilers
 
 	event.remove({ id: "gtceu:large_boiler/gtceu_oil" })
