@@ -8,7 +8,7 @@
 function registerTFGMiscellaneousRecipes(event) {
 
 	//Moss
-	event.replaceInput({input: 'minecraft:vine'}, 'minecraft:vine', '#tfc:moss')
+	event.replaceInput({ input: 'minecraft:vine' }, 'minecraft:vine', '#tfc:moss')
 
 	event.shapeless('1x minecraft:moss_block', [
 		'#tfc:dirt',
@@ -98,28 +98,42 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	// Replace bronze drums & crates with a tag containing the 3 different bronzes
 	// NOTE: A better way to do this would be to overwrite GTCraftingComponents.CRATE and GTCraftingComponents.DRUM in crafting_components.js, but tags seem to get populated after the recipes get registed, so...
-	event.replaceInput({input: 'gtceu:bronze_crate'}, 'gtceu:bronze_crate', '#tfg:any_bronze_crate')
-	event.replaceInput({input: 'gtceu:bronze_drum'}, 'gtceu:bronze_drum', '#tfg:any_bronze_drum')
+	event.replaceInput({ input: 'gtceu:bronze_crate' }, 'gtceu:bronze_crate', '#tfg:any_bronze_crate')
+	event.replaceInput({ input: 'gtceu:bronze_drum' }, 'gtceu:bronze_drum', '#tfg:any_bronze_drum')
 
 	//#region RNR Paving Cart
 	const rubber_types = [
-		{fluid:'styrene_butadiene_rubber', quantity: 144},
-		{fluid:'silicone_rubber', quantity: 288},
-		{fluid:'rubber', quantity: 576}
+		{ fluid: 'styrene_butadiene_rubber', quantity: 144 },
+		{ fluid: 'silicone_rubber', quantity: 288 },
+		{ fluid: 'rubber', quantity: 576 }
 	];
 	rubber_types.forEach((rubber) => {
 		event.recipes.gtceu.assembler(`tfg:cobalt_brass_wheel/${rubber.fluid}`)
 			.itemInputs(
-				ChemicalHelper.get(TagPrefix.rod, GTMaterials.CobaltBrass, 9),
-				Ingredient.of('firmaciv:rope_coil').withCount(2),
+				ChemicalHelper.get(TagPrefix.rod, GTMaterials.CobaltBrass, 8),
+				Ingredient.of('firmaciv:rope_coil'),
 				Ingredient.of('#forge:screws/any_bronze').withCount(4)
 			)
 			.inputFluids(Fluid.of(`gtceu:${rubber.fluid}`, rubber.quantity))
 			.itemOutputs('tfg:cobalt_brass_wheel')
-			.duration(20*10)
+			.duration(20 * 10)
 			.EUt(GTValues.VA[GTValues.LV])
 	});
-	TFGHelpers.registerMaterialInfo('tfg:cobalt_brass_wheel', { 'rubber': 1, 'cobalt_brass': 4});
+	TFGHelpers.registerMaterialInfo('tfg:cobalt_brass_wheel', { 'rubber': 1, 'cobalt_brass': 4 });
+
+	event.recipes.create.mechanical_crafting('tfg:cobalt_brass_wheel', [
+		'  D  ',
+		'CAAAC',
+		'DABAD',
+		'CAAAC',
+		'  D  '
+
+	], {
+		A: '#forge:rods/cobalt_brass',
+		B: 'firmaciv:rope_coil',
+		C: '#forge:screws/any_bronze',
+		D: '#forge:plates/rubber'
+	}).id('tfg:mechanical_crafter/cobalt_brass_wheel')
 
 	const mattock_types = ['red', 'blue'];
 	mattock_types.forEach((type) => {
@@ -134,10 +148,25 @@ function registerTFGMiscellaneousRecipes(event) {
 				Ingredient.of(`#forge:mattock_heads/${type}_steel`).withCount(3)
 			)
 			.itemOutputs('tfg:rnr_plow')
-			.duration(20*60)
+			.duration(20 * 60)
 			.EUt(GTValues.VA[GTValues.LV])
+
+		event.recipes.create.mechanical_crafting('tfg:rnr_plow', [
+			' B B ',
+			'ECACE',
+			'DCFCD',
+			' GGG '
+		], {
+			A: '#forge:rods/long/cobalt_brass',
+			B: '#forge:rods/long/treated_wood',
+			C: '#forge:plates/invar',
+			D: '#forge:springs/steel',
+			E: 'tfg:cobalt_brass_wheel',
+			F: 'create:chute',
+			G: `#forge:mattock_heads/${type}_steel`
+		}).id(`tfg:mechanical_crafter/rnr_plow/${type}_steel`)
 	});
-	TFGHelpers.registerMaterialInfo('tfg:rnr_plow', {'cobalt_brass': 5, 'invar': 2, 'steel': 2, 'wrought_iron': 2, 'rubber': 1, 'treated_wood': 1});
+	TFGHelpers.registerMaterialInfo('tfg:rnr_plow', { 'cobalt_brass': 9, 'invar': 4, 'steel': 2, 'wrought_iron': 3, 'treated_wood': 2 });
 
 	//#endregion
 }
