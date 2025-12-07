@@ -1652,7 +1652,11 @@
 		}
 		{
 			dependencies: ["00E1A728E6F6D6A0"]
-			description: ["{quests.medium_voltage.coal_tower.desc.1}"]
+			description: [
+				"{quests.medium_voltage.coal_tower.desc.1}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.coal_tower.desc.2}"
+			]
 			id: "54A255C1C6E33165"
 			optional: true
 			shape: "heart"
