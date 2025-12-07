@@ -84,7 +84,7 @@
 		{
 			dependencies: [
 				"125563A12EE5C296"
-				"5792DDAA82895E67"
+				"56CA2EB7812529C5"
 			]
 			description: ["{quests.tfg_tips.red_steel_backpack.desc}"]
 			id: "4B79026C8D2DACC4"
@@ -1170,6 +1170,7 @@
 			dependencies: ["037CDA933FBE2CBE"]
 			description: ["{quests.tfg_tips.olive_oil.desc}"]
 			id: "13FC17F88DFEB8A8"
+			optional: true
 			size: 1.5d
 			subtitle: "{quests.tfg_tips.olive_oil.subtitle}"
 			tasks: [{
@@ -1231,9 +1232,13 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["037CDA933FBE2CBE"]
+			dependencies: [
+				"037CDA933FBE2CBE"
+				"5B2696206205CB2E"
+			]
 			description: ["{quests.tfg_tips.glowstone_lamp.desc}"]
 			id: "61F58B402F1AE40B"
+			optional: true
 			shape: "heart"
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.glowstone_lamp.subtitle}"
@@ -1256,6 +1261,7 @@
 			dependencies: ["037CDA933FBE2CBE"]
 			description: ["{quests.tfg_tips.tallow.desc}"]
 			id: "54E6994D5CC693A7"
+			optional: true
 			size: 1.15d
 			subtitle: "{quests.tfg_tips.tallow.subtitle}"
 			tasks: [{
@@ -1278,6 +1284,7 @@
 			dependencies: ["037CDA933FBE2CBE"]
 			description: ["{quests.tfg_tips.creosote.desc}"]
 			id: "72C1E430FF6D2DD8"
+			optional: true
 			size: 1.0d
 			subtitle: "{quests.tfg_tips.creosote.subtitle}"
 			tasks: [{
@@ -1304,6 +1311,7 @@
 			description: ["{quests.tfg_tips.lava_lamp.desc}"]
 			icon: "minecraft:lava_bucket"
 			id: "4EBABACAB444244D"
+			optional: true
 			shape: "square"
 			size: 1.75d
 			subtitle: "{quests.tfg_tips.lava_lamp.subtitle}"
@@ -2447,6 +2455,7 @@
 			dependencies: ["037CDA933FBE2CBE"]
 			description: ["{quests.tfg_tips.tools_tips.seed_oil.desc}"]
 			id: "30B9137740247627"
+			optional: true
 			size: 1.25d
 			subtitle: "{quests.tfg_tips.tools_tips.seed_oil.subtitle}"
 			tasks: [{
@@ -2469,6 +2478,7 @@
 			dependencies: ["037CDA933FBE2CBE"]
 			description: ["{quests.tfg_tips.tools_tips.soybean_oil.desc}"]
 			id: "6C0A087006DF8679"
+			optional: true
 			size: 1.25d
 			subtitle: "{quests.tfg_tips.tools_tips.soybean_oil.subtitle}"
 			tasks: [{
@@ -2859,6 +2869,7 @@
 		{
 			dependencies: ["15277C12EEB517E1"]
 			description: ["{quests.tfg_tips.tools_tips.concrete_roads.desc}"]
+			disable_toast: true
 			guide_page: "tfc:field_guide tfc:roadsandroofs/concrete_roads 0"
 			id: "191DB28DC6FF4538"
 			subtitle: "{quests.tfg_tips.tools_tips.concrete_roads.subtitle}"
@@ -2874,6 +2885,7 @@
 		{
 			dependencies: ["15277C12EEB517E1"]
 			description: ["{quests.tfg_tips.tools_tips.brick_roads.desc}"]
+			disable_toast: true
 			guide_page: "tfc:field_guide tfc:roadsandroofs/stone_roads 0"
 			id: "345EB58B7064BF4A"
 			subtitle: "{quests.tfg_tips.tools_tips.brick_roads.subtitle}"
@@ -2896,6 +2908,7 @@
 		{
 			dependencies: ["15277C12EEB517E1"]
 			description: ["{quests.tfg_tips.tools_tips.gravel_roads.desc}"]
+			disable_toast: true
 			id: "7E46F50FEBEE9003"
 			subtitle: "{quests.tfg_tips.tools_tips.gravel_roads.subtitle}"
 			tasks: [{

@@ -55,6 +55,12 @@
 			x: 4.5d
 			y: 5.5d
 		}
+		{
+			id: "7B380A243C2C39FA"
+			linked_quest: "13F2929C1C303A0B"
+			x: 0.5d
+			y: -3.0d
+		}
 	]
 	quests: [
 		{
@@ -189,7 +195,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["4EA8888B12D75BF1"]
+			dependencies: [
+				"4EA8888B12D75BF1"
+				"6A451F43F3D7A671"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.extreme_voltage.distillation_tower.desc.1}"
 				"{@pagebreak}"
@@ -1571,7 +1581,7 @@
 			subtitle: "{quests.extreme_voltage.ostrum_linear.subtitle}"
 			tasks: [{
 				id: "130FE3E2CE8735F8"
-				item: "gtceu:ostrum_linear_accelerator"
+				item: "tfg:ostrum_linear_accelerator"
 				type: "item"
 			}]
 			x: 20.0d

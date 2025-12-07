@@ -327,6 +327,17 @@ const registerAE2Recipes = (event) => {
 		D: '#forge:gems/fluix',
 	}).addMaterialInfo().id('tfg:crafting/me_p2p_tunnel')
 
+	event.shapeless('ae2:me_p2p_tunnel', ['ae2:me_p2p_tunnel'])
+		.id('tfg:shapeless/me_p2p_tunnel')
+	event.shapeless('ae2:redstone_p2p_tunnel', ['ae2:redstone_p2p_tunnel'])
+		.id('tfg:shapeless/redstone_p2p_tunnel')
+	event.shapeless('ae2:item_p2p_tunnel', ['ae2:item_p2p_tunnel'])
+		.id('tfg:shapeless/item_p2p_tunnel')
+	event.shapeless('ae2:fluid_p2p_tunnel', ['ae2:fluid_p2p_tunnel'])
+		.id('tfg:shapeless/fluid_p2p_tunnel')
+	event.shapeless('ae2:light_p2p_tunnel', ['ae2:light_p2p_tunnel'])
+		.id('tfg:shapeless/light_p2p_tunnel')
+
 	// ME Chest
 	event.recipes.gtceu.shaped('ae2:chest', [
 		'AEA',
@@ -2294,16 +2305,6 @@ const registerAE2Recipes = (event) => {
 		.duration(100)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
-
-	// Cryogenized Fluix
-
-	event.recipes.gtceu.vacuum_freezer('gtceu:cryo_fluix')
-		.inputFluids(Fluid.of('gtceu:helium_3', 1000))
-		.inputFluids(Fluid.of('tfg:fluix', 144))
-		.outputFluids(Fluid.of('tfg:cryogenized_fluix', 576))
-		.duration(30 * 20)
-		.EUt(GTValues.VA[GTValues.MV])
-		.dimension('ad_astra:moon')
 
 	// Certus deco blocks
 

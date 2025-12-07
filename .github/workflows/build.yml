@@ -34,7 +34,7 @@ jobs:
     
     steps:
       - name: 📦 Checkout
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6.0.0
         with:
           fetch-depth: 0
         
@@ -194,7 +194,7 @@ jobs:
       - name: 📄 Format diff
         id: format_diff
         if: ${{ steps.read_diff.outputs.diff != '' }}
-        uses: roamingowl/template-output-with-eta@v2.1.0
+        uses: roamingowl/template-output-with-eta@v2.2.0
         with:
           template: |
             ```markdown
@@ -229,7 +229,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6.0.0
         with:
           fetch-depth: 0
 
@@ -313,7 +313,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6.0.0
 
       - name: 🔄 Replace strings
         shell: bash
@@ -424,7 +424,7 @@ jobs:
 
     steps:
       - name: 📦 Checkout
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6.0.0
 
       - name: 📦 Download artifact
         uses: actions/download-artifact@v6.0.0
@@ -452,7 +452,7 @@ jobs:
       - name: 📄 Format diff
         id: format_diff
         if: ${{ needs.info.outputs.diff != '' }}
-        uses: roamingowl/template-output-with-eta@v2.1.0
+        uses: roamingowl/template-output-with-eta@v2.2.0
         with:
           template: |
             ```markdown
@@ -461,7 +461,7 @@ jobs:
 
       - name: 🚀 Create release
         id: release
-        uses: softprops/action-gh-release@v2.4.2
+        uses: softprops/action-gh-release@v2.5.0
         with:
           name: ${{ needs.info.outputs.project_version }}
           tag_name: ${{ needs.info.outputs.project_version }}

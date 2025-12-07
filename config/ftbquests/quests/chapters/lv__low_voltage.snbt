@@ -5,23 +5,30 @@
 	group: "44D0F3E5067B5AB8"
 	icon: "tfg:lv_universal_circuit"
 	id: "7D50771C3FE033D7"
-	images: [{
-		height: 2.0d
-		image: "createdeco:block/palettes/decal/yellow_decal"
-		rotation: 0.0d
-		width: 2.0d
-		x: 8.0d
-		y: 7.0d
-	}]
 	order_index: 0
-	quest_links: [{
-		id: "13EDC87034A162DE"
-		linked_quest: "2CDB9778C7A30044"
-		shape: "octagon"
-		size: 2.0d
-		x: 4.0d
-		y: 7.0d
-	}]
+	quest_links: [
+		{
+			id: "13EDC87034A162DE"
+			linked_quest: "2CDB9778C7A30044"
+			shape: "octagon"
+			size: 2.0d
+			x: 5.5d
+			y: 8.5d
+		}
+		{
+			id: "0EA7766FE6845121"
+			linked_quest: "0FFBB6177DEB0A23"
+			x: -8.5d
+			y: 10.5d
+		}
+		{
+			id: "5A47760FCD164E74"
+			linked_quest: "61F58B402F1AE40B"
+			shape: "heart"
+			x: -7.5d
+			y: 4.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["2F7617C0C4B330DE"]
@@ -116,6 +123,7 @@
 			]
 			id: "6E186F9C57155BFA"
 			optional: true
+			shape: "hexagon"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_steam_turbine.subtitle}"
 			tasks: [{
@@ -124,8 +132,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_steam_turbine.title}"
-			x: 5.5d
-			y: 7.0d
+			x: 7.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6431381FBE07D6EF"]
@@ -160,7 +168,7 @@
 			}]
 			title: "{quests.low_voltage.aluminium_ingot.title}"
 			x: -10.0d
-			y: 9.75d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -242,7 +250,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.low_voltage.machine_auto_output_behaviour.title}"
-			x: -4.0d
+			x: -3.5d
 			y: 1.5d
 		}
 		{
@@ -271,7 +279,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_wiremill.title}"
-			x: -3.0d
+			x: -2.5d
 			y: 0.5d
 		}
 		{
@@ -296,7 +304,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_bender.title}"
-			x: -3.0d
+			x: -2.5d
 			y: 2.5d
 		}
 		{
@@ -322,7 +330,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_lathe.title}"
-			x: -3.0d
+			x: -2.5d
 			y: 1.5d
 		}
 		{
@@ -338,7 +346,7 @@
 			}]
 			title: "{quests.low_voltage.lv_polariser.title}"
 			x: 4.5d
-			y: 1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6E186F9C57155BFA"]
@@ -360,8 +368,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lbb.title}"
-			x: 6.5d
-			y: 7.0d
+			x: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
@@ -381,8 +389,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_superconductor.title}"
-			x: -12.0d
-			y: 6.5d
+			x: -11.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["701BCADAE5CF6CA5"]
@@ -428,7 +436,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.low_voltage.programmed_circuits.title}"
-			x: -5.0d
+			x: -4.5d
 			y: 1.5d
 		}
 		{
@@ -532,7 +540,7 @@
 			}]
 			title: "{quests.low_voltage.lv_ebf.title}"
 			x: -10.0d
-			y: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
@@ -583,8 +591,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_fluid_solidifier.title}"
-			x: -8.0d
-			y: 4.0d
+			x: -7.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -636,7 +644,7 @@
 			}]
 			title: "{quests.low_voltage.cupronickel_coil.title}"
 			x: -8.5d
-			y: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
@@ -663,8 +671,7 @@
 			]
 			icon: "gtceu:lv_chemical_reactor"
 			id: "3D98819A799D2E64"
-			shape: "octagon"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_chemical_reactor.subtitle}"
 			tasks: [
 				{
@@ -686,8 +693,8 @@
 				}
 			]
 			title: "{quests.low_voltage.lv_chemical_reactor.title}"
-			x: -8.0d
-			y: 2.0d
+			x: -6.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["10ECB471A77F5136"]
@@ -708,7 +715,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.universal_cell.title}"
-			x: -4.0d
+			x: -3.5d
 			y: 2.5d
 		}
 		{
@@ -733,14 +740,14 @@
 				}
 			]
 			title: "{quests.low_voltage.mold_rotor.title}"
-			x: -9.0d
-			y: 4.0d
+			x: -8.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["5B891BA4897FD73C"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.soldering_alloy.desc}"]
-			icon: "gtceu:soldering_alloy_ingot"
+			icon: "gtceu:soldering_alloy_dust"
 			id: "713C8D6A20BF3A0E"
 			shape: "square"
 			size: 1.0d
@@ -751,7 +758,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.soldering_alloy.title}"
-			x: 4.0d
+			x: 3.0d
 			y: 10.5d
 		}
 		{
@@ -799,7 +806,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_cutter.title}"
-			x: -3.0d
+			x: -2.5d
 			y: -0.5d
 		}
 		{
@@ -839,8 +846,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_sprayer.title}"
-			x: 5.75d
-			y: -0.5d
+			x: 5.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
@@ -870,8 +877,7 @@
 				"{quests.low_voltage.lv_extractor.desc.2}"
 			]
 			id: "5B2696206205CB2E"
-			shape: "octagon"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_extractor.subtitle}"
 			tasks: [{
 				id: "5CD363C839475426"
@@ -879,7 +885,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_extractor.title}"
-			x: -5.5d
+			x: -6.5d
 			y: 4.5d
 		}
 		{
@@ -910,8 +916,7 @@
 				"{quests.low_voltage.lv_arc_furnace.desc.2}"
 			]
 			id: "63256ED95F17B242"
-			shape: "octagon"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_arc_furnace.subtitle}"
 			tasks: [{
 				id: "2374C06C5E1EFC24"
@@ -920,7 +925,7 @@
 			}]
 			title: "{quests.low_voltage.lv_arc_furnace.title}"
 			x: -4.0d
-			y: 12.5d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -1082,7 +1087,7 @@
 			}]
 			title: "{quests.low_voltage.aluminium_dust.title}"
 			x: -10.0d
-			y: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
@@ -1154,7 +1159,7 @@
 			]
 			title: "{quests.low_voltage.multiblock_tech.title}"
 			x: -10.0d
-			y: 4.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
@@ -1189,7 +1194,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["22510C5F2386B453"]
+			dependencies: ["3E6DC423FE4A99F7"]
 			description: ["{quests.low_voltage.lv_turbo_charge.desc}"]
 			icon: "gtceu:lv_charger_4x"
 			id: "2DB259568F347C0E"
@@ -1213,8 +1218,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_turbo_charge.title}"
-			x: 4.5d
-			y: 2.5d
+			x: 8.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
@@ -1242,7 +1247,7 @@
 			}]
 			title: "{quests.low_voltage.lv_fisher.title}"
 			x: 4.5d
-			y: -0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
@@ -1359,8 +1364,8 @@
 				}
 			]
 			title: "{quests.low_voltage.mold_plate.title}"
-			x: -8.0d
-			y: 5.0d
+			x: -7.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3E6DC423FE4A99F7"]
@@ -1384,6 +1389,7 @@
 			description: ["{quests.steam_age.alternator.desc.1}"]
 			id: "2DC24661CAD557B0"
 			optional: true
+			shape: "hexagon"
 			subtitle: "{quests.steam_age.alternator.subtitle}"
 			tasks: [
 				{
@@ -1407,8 +1413,8 @@
 				}
 			]
 			title: "{quests.steam_age.alternator.title}"
-			x: 5.5d
-			y: 6.0d
+			x: 7.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["7567E885B7166603"]
@@ -1498,10 +1504,13 @@
 			dependencies: [
 				"2CDB9778C7A30044"
 				"522E08B1592136D5"
+				"36FED1B6CFF7C60A"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.lv_combuston_gen.desc}"]
 			id: "170B544373A16112"
 			optional: true
+			shape: "hexagon"
 			subtitle: "{quests.low_voltage.lv_combuston_gen.subtitle}"
 			tasks: [{
 				id: "2B36CA88F25D5449"
@@ -1509,29 +1518,35 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_combuston_gen.title}"
-			x: 5.5d
-			y: 8.0d
+			x: 7.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["2CDB9778C7A30044"]
-			description: ["{ \"text\": \"{quests.low_voltage.link_chapter.desc}\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CDB9778C7A30044\" } }"]
+			description: [
+				"{quests.low_voltage.link_chapter.desc}:"
+				"{ \"text\": \"▶▶▶▶▶▶▶\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CDB9778C7A30044\" } }"
+			]
+			icon: "createdeco:decal_electrical"
 			id: "7FA1525D681C4B4A"
 			shape: "none"
+			size: 2.0d
 			subtitle: "{quests.low_voltage.link_chapter.subtitle}"
 			tasks: [{
 				id: "346E50625B8B1133"
-				title: "I read it"
+				title: "{quests.low_voltage.link_chapter.task}"
 				type: "checkmark"
 			}]
 			title: "{quests.low_voltage.link_chapter.title}"
-			x: 4.0d
-			y: 8.5d
+			x: 5.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["5F3063C539C9CBBF"]
 			description: ["{quests.low_voltage.lv_seeds.desc}"]
 			id: "55213ACBF5F5D398"
 			optional: true
+			shape: "heart"
 			subtitle: "{quests.low_voltage.lv_seeds.subtitle}"
 			tasks: [{
 				id: "0910468BF66597DE"
@@ -1547,13 +1562,14 @@
 			}]
 			title: "{quests.low_voltage.lv_seeds.title}"
 			x: 7.5d
-			y: 9.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["55213ACBF5F5D398"]
 			description: ["{quests.low_voltage.lv_seed_oil.desc}"]
 			id: "1D979CB5862BD480"
 			optional: true
+			shape: "heart"
 			subtitle: "{quests.low_voltage.lv_seed_oil.subtitle}"
 			tasks: [{
 				id: "357702717137F483"
@@ -1561,14 +1577,15 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_seed_oil.title}"
-			x: 6.5d
-			y: 9.0d
+			x: 7.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1D979CB5862BD480"]
 			description: ["{quests.low_voltage.lv_biodiesel.desc}"]
 			id: "522E08B1592136D5"
 			optional: true
+			shape: "heart"
 			subtitle: "{quests.low_voltage.lv_biodiesel.subtitle}"
 			tasks: [{
 				id: "10503AD87AB3886A"
@@ -1576,12 +1593,15 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_biodiesel.title}"
-			x: 5.5d
-			y: 9.0d
+			x: 7.5d
+			y: 11.0d
 		}
 		{
+			dependencies: ["1912758422EEB006"]
+			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.cupronickel_ingot.desc}"]
 			id: "6042514C8FC54334"
+			shape: "diamond"
 			subtitle: "{quests.low_voltage.cupronickel_ingot.subtitle}"
 			tasks: [{
 				id: "701DEB748320107C"
@@ -1589,8 +1609,125 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.cupronickel_ingot.title}"
-			x: -6.5d
-			y: 6.5d
+			x: -8.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7567E885B7166603"]
+			description: ["{quests.low_voltage.aluminium_greate.desc}"]
+			id: "1354904154948913"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.low_voltage.aluminium_greate.subtitle}"
+			tasks: [
+				{
+					id: "1483488F0E301BCC"
+					item: "greate:aluminium_cogwheel"
+					type: "item"
+				}
+				{
+					id: "2E64EF18DC263002"
+					item: "greate:large_aluminium_cogwheel"
+					type: "item"
+				}
+				{
+					id: "32C96E141753187B"
+					item: "greate:aluminium_shaft"
+					type: "item"
+				}
+			]
+			title: "{quests.low_voltage.aluminium_greate.title}"
+			x: -11.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"5263F866638D875C"
+				"3D98819A799D2E64"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.low_voltage.oil.desc}"]
+			hide_dependency_lines: true
+			icon: "gtceu:oil_bucket"
+			id: "2CEE3C0972650C81"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.low_voltage.oil.subtitle}"
+			tasks: [{
+				id: "338E66338DF533D0"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.low_voltage.oil.title}"
+			x: 6.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"2CDB9778C7A30044"
+				"0404FBCC34011053"
+			]
+			description: ["{quests.low_voltage.lv_gas_turbine.desc}"]
+			id: "1AD51E2B66EA7F67"
+			optional: true
+			shape: "hexagon"
+			subtitle: "{quests.low_voltage.lv_gas_turbine.subtitle}"
+			tasks: [{
+				id: "295425BB3FED8220"
+				item: "gtceu:lv_gas_turbine"
+				type: "item"
+			}]
+			title: "{quests.low_voltage.lv_gas_turbine.title}"
+			x: 7.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2CEE3C0972650C81"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.low_voltage.lv_naphtha_light.desc}"]
+			icon: "gtceu:naphtha_bucket"
+			id: "36FED1B6CFF7C60A"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.low_voltage.lv_naphtha_light.subtitle}"
+			tasks: [
+				{
+					id: "096D9365D8C561AA"
+					item: "gtceu:naphtha_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "34153032225B76BB"
+					item: "gtceu:light_fuel_bucket"
+					type: "item"
+				}
+				{
+					id: "3F575DDDA6C15539"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
+			title: "{quests.low_voltage.lv_naphtha_light.title}"
+			x: 6.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5F3063C539C9CBBF"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.low_voltage.lv_gas_syngas.desc}"]
+			id: "0404FBCC34011053"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.low_voltage.lv_gas_syngas.subtitle}"
+			tasks: [{
+				id: "2733E2B8129C0806"
+				item: "tfg:syngas_bucket"
+				type: "item"
+			}]
+			title: "{quests.low_voltage.lv_gas_syngas.title}"
+			x: 7.0d
+			y: 6.0d
 		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]

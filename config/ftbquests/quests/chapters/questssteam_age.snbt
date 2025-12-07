@@ -46,7 +46,8 @@
 		{
 			id: "7C03FE015586C652"
 			linked_quest: "55213ACBF5F5D398"
-			x: -14.5d
+			shape: "heart"
+			x: -15.0d
 			y: 13.0d
 		}
 		{
@@ -54,6 +55,20 @@
 			linked_quest: "379F434116632A89"
 			x: -25.0d
 			y: 1.0d
+		}
+		{
+			id: "68F5E521F2DB0A86"
+			linked_quest: "0404FBCC34011053"
+			shape: "heart"
+			x: -14.0d
+			y: 13.0d
+		}
+		{
+			id: "38ECA3FEC2B6A6A6"
+			linked_quest: "533F32CCAD9D5B51"
+			shape: "heart"
+			x: -19.5d
+			y: 11.5d
 		}
 	]
 	quests: [
@@ -406,6 +421,7 @@
 			description: ["{quests.steam_age.crushing_wheel.desc}"]
 			id: "4F3D0D746D26B59F"
 			optional: true
+			shape: "heart"
 			subtitle: "{quests.steam_age.crushing_wheel.subtitle}"
 			tasks: [{
 				count: 2L
@@ -415,7 +431,7 @@
 			}]
 			title: "{quests.steam_age.crushing_wheel.title}"
 			x: -21.5d
-			y: 10.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["7DB7AB5349218605"]
@@ -440,8 +456,8 @@
 				}
 			]
 			title: "{quests.steam_age.treated_planks.title}"
-			x: -19.5d
-			y: 10.5d
+			x: -20.5d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -487,8 +503,8 @@
 				}
 			]
 			title: "{quests.steam_age.miner.title}"
-			x: -7.0d
-			y: 14.0d
+			x: -12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -537,8 +553,6 @@
 			description: ["{quests.steam_age.molding.desc}"]
 			icon: "gtceu:ball_casting_mold"
 			id: "09E12A399EE0A628"
-			optional: true
-			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.steam_age.molding.subtitle}"
 			tasks: [
@@ -577,6 +591,8 @@
 			description: ["{quests.steam_age.steam_bloomery.desc}"]
 			icon: "gtceu:steam_bloomery"
 			id: "0805CCABC8E7F6CF"
+			optional: true
+			shape: "heart"
 			size: 1.5d
 			subtitle: "{quests.steam_age.steam_bloomery.subtitle}"
 			tasks: [
@@ -790,6 +806,7 @@
 			description: ["{quests.steam_age.coiling_machine.desc}"]
 			id: "072F6E48A1C5ECE9"
 			optional: true
+			size: 1.25d
 			subtitle: "{quests.steam_age.coiling_machine.subtitle}"
 			tasks: [{
 				id: "07B7D41ACDCD1DEA"
@@ -797,8 +814,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.coiling_machine.title}"
-			x: -12.0d
-			y: 15.0d
+			x: -7.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
@@ -840,6 +857,7 @@
 			description: ["{quests.steam_age.centrifuge.desc}"]
 			id: "19A1D52A7F550478"
 			optional: true
+			shape: "heart"
 			subtitle: "{quests.steam_age.centrifuge.subtitle}"
 			tasks: [{
 				id: "69668479444FF064"
@@ -848,7 +866,7 @@
 			}]
 			title: "{quests.steam_age.centrifuge.title}"
 			x: -20.5d
-			y: 10.5d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -1036,7 +1054,7 @@
 			]
 			title: "{quests.steam_age.red_alloy.title}"
 			x: -22.5d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["51CBF7378FFAD514"]
@@ -1652,6 +1670,7 @@
 			description: ["{quests.steam_age.fuel_sources.desc}"]
 			icon: "createdeco:decal_fire"
 			id: "753A53733C6DFA04"
+			shape: "circle"
 			subtitle: "{quests.steam_age.fuel_sources.subtitle}"
 			tasks: [{
 				id: "38A3F9A1D2F11EE3"
@@ -1674,6 +1693,30 @@
 			title: "{quests.steam_age.large_water_wheel.title}"
 			x: -3.5d
 			y: -2.0d
+		}
+		{
+			dependencies: ["2C35D4E01AEC02AA"]
+			description: ["{quests.steam_age.supers.desc}"]
+			icon: "gtceu:ulv_super_chest"
+			id: "671405A9F3A8DFDB"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.steam_age.supers.subtitle}"
+			tasks: [{
+				id: "5F5A6967B674C05A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:ulv_super_chest)item(gtceu:lv_super_chest)item(gtceu:mv_super_chest)item(gtceu:hv_super_chest)item(gtceu:ev_super_chest)item(gtceu:iv_quantum_chest)item(gtceu:luv_quantum_chest)item(gtceu:zpm_quantum_chest)item(gtceu:uv_quantum_chest)item(gtceu:uhv_quantum_chest)item(gtceu:ulv_super_tank)item(gtceu:lv_super_tank)item(gtceu:mv_super_tank)item(gtceu:hv_super_tank)item(gtceu:ev_super_tank)item(gtceu:iv_quantum_tank)item(gtceu:luv_quantum_tank)item(gtceu:zpm_quantum_tank)item(gtceu:uv_quantum_tank)item(gtceu:uhv_quantum_tank))"
+					}
+				}
+				title: "{quests.steam_age.supers.task}"
+				type: "item"
+			}]
+			title: "{quests.steam_age.supers.title}"
+			x: -12.0d
+			y: 13.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

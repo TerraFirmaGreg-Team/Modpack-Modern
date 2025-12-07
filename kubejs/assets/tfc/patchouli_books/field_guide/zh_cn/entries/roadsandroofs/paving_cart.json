@@ -1,0 +1,58 @@
+{
+    "name": "铺路车",
+    "category": "tfc:roadsandroofs",
+    "icon": "tfg:rnr_plow",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)铺路车$()是一种用于快速高效铺设路面的专用推车。可填入路面材料与$(thing)碎石基层$()来修筑道路。该推车还能为现有基层方块完成填料作业。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "铺路车",
+            "images": [
+                "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "title": "宽度调节滑块",
+            "images": [
+                "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
+            ],
+            "border": true,
+            "text": "通过操作界面中的滑块可调整铺设路径的宽度"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "可变宽度路径",
+            "images": [
+                "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "title": "随机模式按钮",
+            "images": [
+                "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
+            ],
+            "border": true,
+            "text": "这辆推车有一种模式，可以以随机模式铺设材料。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "随机材料路径",
+            "images": [
+                "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
+            ],
+            "border": true
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "tfg:rnr_plow": 0
+    },
+    "sortnum": 20
+}

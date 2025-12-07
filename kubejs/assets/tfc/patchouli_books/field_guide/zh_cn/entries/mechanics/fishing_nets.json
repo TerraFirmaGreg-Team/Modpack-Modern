@@ -1,0 +1,22 @@
+{
+    "name": "渔网",
+    "icon": "tfg:fishing_net/brass",
+    "category": "tfc:mechanics",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "title": "渔网",
+            "item": {
+                "tag": "forge:tools/fishing_nets"
+            },
+            "text": "厌倦了用鱼叉捕鱼？或者在 $(l:mechanics/fishing)钓鱼$() 时总是丢了鱼？制作一个 $(thing)渔网$() 来轻松捞起你的晚餐。$(br)使用渔网时，右键点击鱼即可将其收入背包。不同等级的渔网效果相同，但耐久不同。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "木制渔网",
+            "recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
+            "text": "一款基础的 $(item)木制渔网$()。"
+        }
+    ]
+}

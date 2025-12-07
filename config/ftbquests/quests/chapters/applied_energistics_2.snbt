@@ -218,13 +218,6 @@
 					id: "432E105A84AEA630"
 					type: "checkmark"
 				}
-				{
-					dimension: "ad_astra:moon"
-					disable_toast: true
-					icon: "tfg:marker/moon"
-					id: "6A4F5147475443C5"
-					type: "dimension"
-				}
 			]
 			title: "{quests.ae2.fluix_liquid.title}"
 			x: -3.5d
@@ -234,6 +227,7 @@
 			can_repeat: true
 			dependencies: ["0C0B09D66D0CFFBA"]
 			description: ["{quests.ae2.ae_guide.desc}"]
+			icon: "ae2:guide"
 			id: "6CF08AFB924905F0"
 			rewards: [{
 				id: "34825A998EA88DB4"
@@ -538,13 +532,13 @@
 		{
 			dependencies: ["6CF08AFB924905F0"]
 			description: ["{quests.ae2.iv.desc}"]
+			icon: "tfg:iv_universal_circuit"
 			icon_scale: 2.0d
 			id: "0F1104DEEB22EF86"
 			size: 1.0d
 			tasks: [{
-				id: "0D58947010553DE2"
-				item: "tfg:iv_universal_circuit"
-				type: "item"
+				id: "6D9B9EAFE680B768"
+				type: "checkmark"
 			}]
 			title: "{quests.ae2.iv.title}"
 			x: 3.0d
@@ -638,13 +632,13 @@
 		{
 			dependencies: ["6CF08AFB924905F0"]
 			description: ["{quests.ae2.luv.desc}"]
+			icon: "tfg:luv_universal_circuit"
 			icon_scale: 2.0d
 			id: "1F3621FABA32DC6B"
 			size: 1.0d
 			tasks: [{
-				id: "54E60091BA319CB6"
-				item: "tfg:luv_universal_circuit"
-				type: "item"
+				id: "4CE3EF0D1FAC1B6C"
+				type: "checkmark"
 			}]
 			title: "{quests.ae2.luv.title}"
 			x: 0.5d
@@ -705,13 +699,13 @@
 		{
 			dependencies: ["6CF08AFB924905F0"]
 			description: ["{quests.ae2.hv.desc}"]
+			icon: "tfg:hv_universal_circuit"
 			icon_scale: 2.0d
 			id: "3C3C21482E31267B"
 			size: 1.0d
 			tasks: [{
-				id: "59184C16CD8F51C6"
-				item: "tfg:hv_universal_circuit"
-				type: "item"
+				id: "1D4A01B75676146B"
+				type: "checkmark"
 			}]
 			title: "{quests.ae2.hv.title}"
 			x: 0.5d

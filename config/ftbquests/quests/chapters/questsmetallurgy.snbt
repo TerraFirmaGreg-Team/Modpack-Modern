@@ -50,8 +50,15 @@
 		{
 			id: "19CF6D922179DFF9"
 			linked_quest: "11C45DBB20ED7647"
+			shape: "heart"
 			x: 9.0d
 			y: -34.0d
+		}
+		{
+			id: "3249AB9EB552BB77"
+			linked_quest: "4B79026C8D2DACC4"
+			x: 17.5d
+			y: -28.0d
 		}
 	]
 	quests: [
@@ -280,7 +287,6 @@
 			description: ["{quests.metal_age.bellows.desc}"]
 			hide_dependency_lines: true
 			id: "021D3DEEB15A3D17"
-			shape: "rsquare"
 			subtitle: "{quests.metal_age.bellows.subtitle}"
 			tasks: [{
 				id: "588EB07E980386F9"
@@ -1197,6 +1203,8 @@
 			dependencies: ["3C173357029AB649"]
 			description: ["{quests.metal_age.copper_diving.desc}"]
 			id: "70FE6706B43FC5FC"
+			optional: true
+			shape: "heart"
 			subtitle: "{quests.metal_age.copper_diving.subtitle}"
 			tasks: [
 				{

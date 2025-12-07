@@ -1,0 +1,33 @@
+{
+	"feature": "gtceu:raw_oil_sprout",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 128
+		},
+		{
+			"type": "tfc:climate",
+			"min_temperature": 0,
+			"min_rainfall": 0,
+			"max_rainfall": 100
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 40
+				},
+				"min_inclusive": {
+					"absolute": 10
+				}
+			}
+		}
+	]
+}

@@ -13,7 +13,6 @@ ServerEvents.tags('item', event => {
 	registerAlekishipsItemTags(event)
 	registerAsticorCartsItemTags(event)
 	registerBeneathItemTags(event)
-	registerBetterEndItemTags(event)
 	registerChalkItemTags(event);
 	registerComputerCraftItemTags(event)
 	registerConstructionWandItemTags(event)
@@ -50,10 +49,10 @@ ServerEvents.tags('item', event => {
 	registerSNSItemTags(event)
 	registerSpeciesItemTags(event)
 	registerTACZItemTags(event)
-	registerTFCAmbientalItemTags(event)
 	registerTFCItemTags(event)
 	registerTFCTextileItemTags(event)
 	registerTFGItemTags(event)
+	registerTFGItemTagsNuclear(event)
     registerTFCLunchboxItemTags(event)
 	registerVintageImprovementsItemTags(event)
 	registerWABItemTags(event)
@@ -91,6 +90,7 @@ ServerEvents.tags('block', event => {
 	registerTACZBlockTags(event)
 	registerTFCBlockTags(event)
 	registerTFGBlockTags(event)
+	registerTFGBlockTagsNuclear(event)
 	registerVintageImprovementsBlockTags(event)
 	registerWABBlockTags(event)
 })
@@ -108,6 +108,7 @@ ServerEvents.tags('fluid', event => {
 	registerFirmaLifeFluidTags(event)
 	registerTFCFluidTags(event)
 	registerTFGFluidTags(event)
+	registerTFGFluidTagsNuclear(event)
 	registerVintageImprovementsFluidTags(event)
 })
 
@@ -122,20 +123,17 @@ ServerEvents.tags('worldgen/placed_feature', event => {
 	// Remove default veins
 	event.removeAll('tfc:in_biome/veins')
 
-	registerAdAstraPlacedFeatures(event)
-	registerTFCPlacedFeatures(event)
 	registerTFGPlacedFeatures(event)
 })
 
 ServerEvents.tags('worldgen/biome', event => {
 	registerAdAstraBiomeTags(event)
 	registerCreatePickyWheelsBiomeTags(event)
-	registerTFCBiomeTags(event)
 	registerTFGBiomeTags(event)
 })
 
 ServerEvents.tags('entity_type', event => {
-	registerAdAstraEntityTypeTags(event)
+	registerTFGEntityTypeTags(event)
 	registerWABEntityTypeTags(event)
 })
 
@@ -177,7 +175,7 @@ TFCEvents.data(event => {
  */
 LootJS.modifiers((event) => {
 	registerAdAstraLoots(event)
-	registerGTCEULoots(event)
+	registerTFGOreLoots(event)
 	registerLootrLoots(event)
 	registerPrimitiveCreaturesLoots(event)
 	registerSpeciesLoots(event)
@@ -213,7 +211,6 @@ ServerEvents.recipes(event => {
 	registerAE2NetworkAnalyzerRecipes(event)
 	registerAE2WTLibRecipes(event)
 	registerBeneathRecipes(event)
-	registerBetterEndRecipes(event)
 	registerBuildingGadgetsRecipes(event)
 	registerChalkRecipes(event);
 	registerComfortsRecipes(event);
@@ -267,6 +264,7 @@ ServerEvents.recipes(event => {
 	registerTFCBetterBFRecipes(event)
 	registerTFCLunchBoxRecipes(event)
 	registerTFCGroomingStationRecipes(event)
+	registerTFCGurmanRecipes(event)
 	registerTFGRecipes(event)
 	registerTFCTextileRecipes(event)
 	registerToolBeltRecipes(event)

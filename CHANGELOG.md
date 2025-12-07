@@ -1,8 +1,75 @@
 # Changelog
-## [Unreleased]
-### Changes
+
+## [0.11.9] - 7-12-2025
+### Breaking Changes
+#### Beginning of the Power Update
+- Syngas is now available as a ULV/LV gas fuel - can be crafted from Charcoal and Creosote in a Brewery or Vacuum Chamber.
+- The Coal Liquefaction Tower is a new multiblock (craftable at MV) that you can use to make Reformate Gas. It has the same coildiscounts as the Cracker, and can be boosted with hydrogen.
+- Reformate Gas is the new gas Fuel starting at MV, with better yields and recipe loops at HV.
+- Many quests were updated to explain these changes.
+#### Update on Fission
+- The Nuclear Steam Turbine has now a baseline power production of 8192 EU/t. What this means is that you now need half as many turbines as before.
+- Thorium Fuel Rods got a boost of 50% steam production, so early Mars should be a bit easier.
+- Heat Exchanger can now run Radioactive Steam without Ammonium Formate. If you crave for power and don’t mind losing some materials for the Nano Circuit, this is a good deal
+- Massive change for steam yield. You now produce 160x more steam, but its yield is 160x less good (so nothing changes power-wise, but now you have to deal with pipe throughput)
+#### Other
+- All dynamo hatches on Large Turbines now void power when they are full. Be sure to control your turbines with some redstone when your batteries are full!
+- The tungsten processing line has been updated to now properly loop and balance all of its intermediates. The actual processes haven't changed, just the numbers, so you shouldn't have to change your setup much. It now also outputs a little extra oxygen instead of sodium (#2267) @SpicyNoodle5 @TomPlop
+- Removed black/red/blue arc furnace dust to ingot recipes, but changed the EBF recipes to MV (#2306) @applenper @Pyritie
+### Mod updates
+- Added TFC Gurman, which adds even more food and drink
+- Primitive Creatures has fixed its spawning of Huntmasters
+- New GregTech updates, both [7.3.0](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.3.0-1.20.1) and [7.4.0](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.4.0-1.20.1). TL;DR:
+    - You can use screwdrivers on drums again
+    - Diluted hydrochloric acid distillation circuits have been swapped, so now it's consistent with diluted sulfuric acid
+    - Large rebalancing of small and large boiler fuel. Generally speaking, small boilers are worse while large ones are better, and solid fuels are now better and liquids are worse, but if you're putting all your coke oven output into a large bronze boiler, your rates should be mostly the same as before. Blaze burner liquid fuels have been adjusted to these new values as well.
+### Other Changes
+- Many TACZ balance changes, found [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/blob/dev/tacz/TACZ_CHANGELOG.md) @BlueBoat29
+- Add shapeless recipes for ae2 p2p clearing (#2234) @SpicyNoodle5
+- Added assembler, smelting and heating recipes for firmalife ovens (#2220) @SpicyNoodle5
+- Raised player-burning fluid threshold from 370K to 1300K @Redeix
+- Added partial unification to the gtceu Wax material @Redeix
+- Mars endermen can no longer pick up the wrong kind of warped/crimson sapling, and the correct kind has been added to their loot tables (#2240)
+- Cleanrooms now allow 9 door "blocks", so you can use a 3x3 Ad Astra door (#2074) @ko-lja
+- Added recycling for astikor carts (#2227) @Pyritie
+- Moved Soph Backpack pickup to ULV, adv pickup to MV and magnet to MV @CrashAndSideburns
+- Oilsands dust can now be centrifuged in the mechanical centrifuge @Pyritie
+- All oils (both the petrochem kind and the cooking kind) can now be used to fuel small boilers as well @Pyritie
+- Reduced the cost of the ME Ingredient Buffer @Pyritie
+- Renamed Blubber to Animal Fat and added it to the drop tables of more animals (pigs drop a fair bit, orcas drop a ton). You can extract it into Tallow and now also use it for biodiesel! @applenper @Pyritie
+- Glass bottles and ceramic jugs can now hold the same fluids as wooden barrels, buckets, etc @Pyritie
+- Added fluid/item capacity tooltips to many fluid/item containers @Pyritie
+- Spring water is now drinkable (it also heats you up a little) @Pyritie
+- The reinforced hang glider has been buffed, is now craftable as soon as you get aluminium, and is also much cheaper to repair (#2314) @jeuvke
+- You can now also use bismuth bronze and black bronze crates in recipes that previously required a normal bronze crate (#2328) @jeuvke
+- Freeze dried food no longer has any hydration (#2325) @mqrius
+- Added a mechanical crafting recipe for the Paving Cart @Pyritie
 ### Bug fixes
+- Fixed the horse crank not working at all @Pyritie
+- Fixed brown gravy recipe @Redeix
+- Fixed instant mac recipe requiring less cardboard than it gives back @Redeix
+- Fixed Ad Astra moon cheese nutrition values being inconsistent @Redeix
+- Fixed some quest typos @Pyritie @mqrius
+- Fixed duplicate bed dyeing recipe (#2229) @Pyritie
+- Fixed Basic Hermetic Casing missing a mineable tag and loot table (#2221) @Pyritie
+- Fixed some inconsistencies with gravel to sand recipe tiers (#2292) @Pyritie
+- Fixed the thorium-based glowing ink recipe (#2294) @Pyritie
+- Fixes crafting table output amount for salsa compared to the food processor (#2295) @Pyritie
+- Added missing food processor recipe for cocoa butter @Pyritie
+- Fixed recipe conflict with Epichlorohydrin and Sodium Hypochlorite (#2287) @Pyritie
+- Fixed summoned pet endermen not being able to survive in space or other planets @Pyritie
+- Fixed some recipe imbalances with trimethyl borate and related recipes @Pyritie
+- Fixed not being able to feed meat to the Cruncher (#2305) @Pyritie
+- Hopefully fixed rockets without a pilot getting stuck and not exploding? (#2137) @Pyritie
+- Fixed some missing blocks from the GT facade whitelist (#2299) @MoltonMontro
+- Changed the texture of the ME Stocking Input Bus + Hatch to match the hull used to craft them @Pyritie
+- Fixed warped/crimson trees only growing on mars mycelium and not mars dirt @Pyritie
+- Fixed a few missing crafting recipes for bricks in the assembler (#2333) @Pyritie
+- Fixed a recycling dupe with the maintenace hatch (#2321) @Pyritie
 ### Translation updates
+- Chinese (simplified) @jmecn
+- Japanese @sakura-gondra
+- Russian @Petr211071
 
 ## [0.11.8] - 19-11-2025
 ### Changes

@@ -822,6 +822,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.space_survival.spice.desc}"]
+			icon: "tfg:spice"
 			id: "0CA5B715B76E4A5B"
 			shape: "hexagon"
 			size: 1.5d
@@ -1108,15 +1109,23 @@
 				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: -9223372036854775808L
+						creationDate: -2L
+						foodData: {
+							dairy: 0.0f
+							decay: 0.0f
+							food: 0
+							fruit: 0.0f
+							grain: 0.0f
+							meat: 0.0f
+							sat: 0.0f
+							veg: 0.0f
+							water: 0.0f
+						}
+						ingredients: [ ]
 						traits: [ ]
 					}
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
 				}
-				id: "betterend:cave_pumpkin_pie"
+				id: "tfg:food/cooked_dino_nugget"
 			}
 			id: "1AC201876984D248"
 			optional: true

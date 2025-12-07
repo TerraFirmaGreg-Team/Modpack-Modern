@@ -1,0 +1,47 @@
+{
+    "name": "常见问题解答",
+    "icon": "minecraft:spyglass",
+    "category": "tfc:tfg_tips",
+    "read_by_default": true,
+    "priority": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "FAQs",
+            "text": "卡住了？请先查阅本书与任务说明，若仍未解决，欢迎在我们的$(l:https://discord.com/invite/AEaCzCTUwQ)Discord$()或$(l:https://www.reddit.com/r/TerraFirmaGreg)Subreddit$()提问！"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:tfg_tips/faqs#boats)我的船为什么会沉？$()$(li)$(l:tfg_tips/faqs#dried_fruit)如何制作酵母起子？$()$(li)$(l:tfg_tips/faqs#dried_fruit)如何制作菠萝纤维？$()$(li)$(l:tfg_tips/faqs#jam)如何制作果酱？$()$(li)$(l:tfg_tips/faqs#resin)如何制作橡胶？$()$(li)$(l:tfg_tips/faqs#chunks)如何强制加载区块或提升加载上限？$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "boats",
+            "text": "$(italic)我的船为什么会沉？$()$(br2)请在陆地上建造船只，随后推动或使用$(item)拴绳$()将其送入水域。若船只已沉没，节哀顺变——重造一艘吧。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dried_fruit",
+            "text": "$(italic)如何制作酵母起子或菠萝纤维？$()$(br2)请先使用$(item)干燥垫$()将水果晒干，随后按照$(l:firmalife/bread)面包$()或$(l:firmalife/berry_bushes)菠萝布$()章节的步骤操作。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "jam",
+            "text": "$(italic)如何制作果酱？$()$(br2)使用$(l:firmalife/oven_appliances#vat)锅$()最为便捷。参照该章节流程操作时请注意：除非需要自动化生产，否则无需制作$(thing)装罐台$()或$(thing)罐盖$()。直接手持空罐右键点击盛有$(thing)果汁液体$()的锅，再次右键即可取得封装完成的果酱。$(br2)务必使用$(item)$(k:sneak)$() + $(item)$(k:use)$()为锅$(bold)盖上盖子$()！"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chunks",
+            "text": "$(italic)如何强制加载区块？$()$(br2)按下$(item)$(k:key.ftbchunks.claim_manager)$()打开地图，按住Shift左键点击区块即可申领。Shift右键点击取消申领。$(br2)若需提升强制加载上限，使用指令$(item)/ftbchunks admin extra_force_load_chunks @p set X$()，其中X为新上限值。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "resin",
+            "text": "$(italic)如何制作橡胶？$()$(br2)黏性树脂不再是你的目标！请先种植若干产$(thing)乳胶$()的树木并制作$(thing)树汁导管$()。将树汁导管安装在树干上（单棵树安装多个树汁导管只会分流产量）。通过$(tfc:mechanics/barrels)木桶$()收集渗出的乳胶。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "最快的方式是在$(l:firmalife/oven_appliances#vat)锅$()中烹炼乳胶：将乳胶与$(item)硫磺粉$()（将格雷科技硫粉放入手推磨获取）放入锅中，加热后使用$(item)$(k:sneak)$() + $(item)$(k:use)$()$(bold)盖上锅盖$()。得到$(thing)硫化乳胶$()后，放入$(thing)真空腔室$()处理即可获得期盼已久的橡胶！$(br2)后续阶段，$(thing)LV离心机$()可直接从产乳胶树木的原木中提取$(thing)生橡胶末$()。"
+        }
+    ]
+}

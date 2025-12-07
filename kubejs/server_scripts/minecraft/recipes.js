@@ -10,26 +10,6 @@ const registerMinecraftRecipes = (event) => {
 	removeMinecraftRecipes(event)
 	registerMinecraftDyeRecipes(event)
 
-	//#region Выход: Земля, dirt
-
-	event.recipes.gtceu.macerator('dirt_from_bio_chaff')
-		.itemInputs('gtceu:bio_chaff')
-		.itemOutputs('tfc:dirt/loam')
-		.duration(300)
-		.EUt(4)
-
-	//#endregion
-
-	//#region Выход: Стекло, glass
-
-	event.recipes.gtceu.arc_furnace('glass_from_sand')
-		.itemInputs('#forge:sand')
-		.itemOutputs('2x minecraft:glass')
-		.duration(20)
-		.EUt(30)
-
-	//#endregion
-
 	//#region Добавление, copper
 
 	for (let i = 0; i < global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS.length; i++) {
@@ -139,48 +119,6 @@ const registerMinecraftRecipes = (event) => {
 		'minecraft:paper',
 		'#forge:dyes/white'
 	]).id('minecraft:flower_banner_pattern')
-
-	//#endregion
-
-	//#region Выход: Бумага, paper
-
-	event.recipes.gtceu.chemical_bath('paper_from_papyrus_distilled')
-		.itemInputs('tfc:papyrus')
-		.inputFluids(Fluid.of('gtceu:distilled_water', 100))
-		.itemOutputs('4x tfc:soaked_papyrus_strip')
-		.duration(100)
-		.EUt(7)
-
-	event.recipes.gtceu.chemical_bath('paper_from_papyrus')
-		.itemInputs('tfc:papyrus')
-		.inputFluids("#tfg:clean_water 100")
-		.itemOutputs('4x tfc:soaked_papyrus_strip')
-		.duration(100)
-		.EUt(7)
-
-	event.recipes.gtceu.assembler('papyrus_strips')
-		.itemInputs('4x tfc:soaked_papyrus_strip')
-		.itemOutputs('minecraft:paper')
-		.circuit(1)
-		.duration(100)
-		.EUt(7)
-
-	//#endregion
-
-	//#region Выход: Сахар, sugar
-
-	event.recipes.gtceu.centrifuge('sugar_from_sugarcane')
-		.itemInputs('tfc:food/sugarcane')
-		.inputFluids("#tfg:clean_water 600")
-		.itemOutputs('minecraft:sugar', 'gtceu:plant_ball')
-		.duration(800)
-		.EUt(6)
-
-	event.recipes.gtceu.centrifuge('sugar_from_honey')
-		.itemInputs('firmalife:raw_honey')
-		.itemOutputs('minecraft:sugar')
-		.duration(400)
-		.EUt(6)
 
 	//#endregion
 
@@ -823,7 +761,6 @@ const registerMinecraftRecipes = (event) => {
 
 	//#region Выход: Элитра, elytra
 
-	// Ну и херь я придумал, here's some bullshit i came up with
 	event.recipes.gtceu.assembler('tfg:minecraft/elytra')
 		.itemInputs('16x tfg:polycaprolactam_fabric', '16x #forge:foils/aluminium', '8x tfg:phantom_silk', '4x #forge:rings/aluminium', '2x #forge:rods/long/vanadium_steel', '2x #forge:small_springs/aluminium', '1x #forge:small_gears/aluminium')
 		.circuit(4)
@@ -861,16 +798,6 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Glowstone
-
-	event.recipes.gtceu.mixer('gtceu:lv_glowstone')
-		.itemInputs('gtceu:gold_dust', 'minecraft:redstone', 'gtceu:sulfur_dust')
-		.itemOutputs('2x minecraft:glowstone_dust')
-		.circuit(8)
-		.duration(1200)
-		.EUt(30)
-
-	//#endregion
 
 	//#region Netherite leggings (for the lavaproof diving set)
 
@@ -930,14 +857,6 @@ const registerMinecraftRecipes = (event) => {
 		.id('tfg:shapeless/lever')
 
 	generateCutterRecipe(event, '#forge:double_plates/wrought_iron', 'minecraft:iron_door', 400, GTValues.VA[GTValues.LV], 'iron_door')
-
-	event.shaped('8x minecraft:ladder', [
-		'A A',
-		'AAA',
-		'A A'
-	], {
-		A: '#forge:rods/wooden'
-	}).id('gtceu:shaped/ladder')
 
 	// #endregion
 
@@ -1018,19 +937,6 @@ const registerMinecraftRecipes = (event) => {
 	event.smelting('tfc:glue', 'minecraft:magma_cream')
 		.id('tfg:smelting/magma_cream_to_glue')
 
-	//#region Clay
-	event.shaped('minecraft:clay', [
-		'AA',
-		'AA'
-	], {
-		A: 'minecraft:clay_ball'
-	})
-	.id('tfg:shaped/clay_balls_to_block')
-
-	event.shapeless('4x minecraft:clay_ball', ['minecraft:clay'])
-		.id('tfg:shapeless/clay_block_to_balls')
-
-	//#endregion
 
 	//#region Mushrooms
 
@@ -1091,7 +997,7 @@ const registerMinecraftRecipes = (event) => {
 	//#region Glowing Ink Sacs
 		
 	event.recipes.gtceu.chemical_bath('minecraft:glow_inc_sac4')
-		.itemInputs("gtceu:thorium_dust", "4x #forge:dyes/black")
+		.itemInputs("gtceu:thorium_dust")
 		.inputFluids(Fluid.of('gtceu:glowstone', 512))
 		.itemOutputs('16x minecraft:glow_ink_sac')
 		.duration(20)

@@ -30,4 +30,8 @@ function registerPrimitiveCreaturesItemTags(event) {
 	event.add('primitive_creatures:mercenary_payment', 'minecraft:spider_eye')
 	event.add('primitive_creatures:mercenary_payment', 'minecraft:flint')
 	event.add('primitive_creatures:mercenary_payment', 'minecraft:emerald')
+
+	// Flint clubs
+	event.add('tfc:usable_on_tool_rack', 'primitive_creatures:yhgi')
+	event.add('tfc:usable_on_tool_rack', 'primitive_creatures:reh')
 }

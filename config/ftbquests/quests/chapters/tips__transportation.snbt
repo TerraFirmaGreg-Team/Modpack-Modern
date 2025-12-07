@@ -1124,7 +1124,6 @@
 		{
 			dependencies: ["7EE13BE102F323F3"]
 			description: ["{quests.tfg_tips.reinforced_glider.desc}"]
-			hide_until_deps_complete: true
 			id: "472D1C507490CC8A"
 			optional: true
 			shape: "heart"
@@ -1463,19 +1462,6 @@
 		{
 			dependencies: ["1594C2564FC7982D"]
 			description: ["{quests.tfg_tips.horseshoes.desc}"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "sns:metal/horseshoes/steel"
-				tag: {
-					Damage: 0
-				}
-			}
 			id: "40566F6665A095C6"
 			subtitle: "{quests.tfg_tips.horseshoes.subtitle}"
 			tasks: [{
@@ -1515,7 +1501,11 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["05528D09F7EE6E33"]
+			dependencies: [
+				"05528D09F7EE6E33"
+				"5917B0D4708BF534"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.transportation_tips.rnr_plow.desc}"]
 			guide_page: "tfc:field_guide tfc:roadsandroofs/paving_cart 0"
 			id: "533F32CCAD9D5B51"
