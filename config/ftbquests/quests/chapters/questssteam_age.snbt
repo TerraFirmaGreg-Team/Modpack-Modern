@@ -46,7 +46,8 @@
 		{
 			id: "7C03FE015586C652"
 			linked_quest: "55213ACBF5F5D398"
-			x: -14.5d
+			shape: "heart"
+			x: -15.0d
 			y: 13.0d
 		}
 		{
@@ -54,6 +55,13 @@
 			linked_quest: "379F434116632A89"
 			x: -25.0d
 			y: 1.0d
+		}
+		{
+			id: "68F5E521F2DB0A86"
+			linked_quest: "0404FBCC34011053"
+			shape: "heart"
+			x: -14.0d
+			y: 13.0d
 		}
 	]
 	quests: [

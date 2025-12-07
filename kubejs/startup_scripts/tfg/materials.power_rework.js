@@ -8,8 +8,6 @@ const registerTFGPowerReworkMaterials = (event) => {
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(650))
 		.components('11x carbon', '20x hydrogen', '12x oxygen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.color(0x7da6c2)
-		.secondaryColor(0xcfe3ee)
 
 	// Raw Aromatic Mix
 	event.create('tfg:raw_aromatic_mix')
@@ -40,8 +38,6 @@ const registerTFGPowerReworkMaterials = (event) => {
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(540))
 		.components('13x carbon', '63x hydrogen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.color(0x6c7f4e)
-		.secondaryColor(0xc7d8b1)
 
 	// Cracker Off-Gas
 	event.create('tfg:cracker_off_gas')
@@ -50,5 +46,10 @@ const registerTFGPowerReworkMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xa36f2a)
 		.secondaryColor(0xecd8ae)
+
+	// Reformate Gas
+	event.create('tfg:btx_fuel')
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(540))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 }

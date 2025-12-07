@@ -39,6 +39,18 @@
 			x: -6.0d
 			y: -3.0d
 		}
+		{
+			id: "513464FBE4A87CB7"
+			linked_quest: "3A2E442E4D84C891"
+			x: 2.5d
+			y: -10.0d
+		}
+		{
+			id: "1B29194F9C306CFE"
+			linked_quest: "36B9B5024356C53C"
+			x: 3.5d
+			y: -10.0d
+		}
 	]
 	quests: [
 		{
@@ -563,11 +575,13 @@
 				{
 					id: "54D65A0A939DAD54"
 					item: "gtceu:hydrofluoric_acid_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "3E6E6F21B34F86B4"
 					item: "gtceu:chloroform_bucket"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -583,6 +597,7 @@
 			optional: true
 			shape: "square"
 			size: 1.0d
+			subtitle: "{quests.high_voltage.nitrobenzene.subtitle}"
 			tasks: [
 				{
 					id: "33CF24B0A19D2F25"
@@ -766,7 +781,7 @@
 			icon: "gtceu:cetane_boosted_diesel_bucket"
 			id: "04F6E968CEEC3D49"
 			optional: true
-			shape: "square"
+			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.high_voltage.cetane_diesel.subtitle}"
 			tasks: [
@@ -1233,7 +1248,11 @@
 				"04F6E968CEEC3D49"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ \"text\": \"{quests.high_voltage.linked_quest_energy.desc}\", \"bold\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CDB9778C7A30044\" } }"]
+			description: [
+				"{quests.high_voltage.linked_quest_energy.desc}"
+				""
+				"{ \"text\": \"▶▶▶▶▶▶▶\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CDB9778C7A30044\" } }"
+			]
 			id: "595C5A01358B9550"
 			subtitle: "{quests.high_voltage.linked_quest_energy.subtitle}"
 			tasks: [{
@@ -1616,6 +1635,25 @@
 			title: "{quests.high_voltage.titanium_greate.title}"
 			x: -6.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["36B9B5024356C53C"]
+			description: [
+				"{quests.gregtech_energy.reformate_gas.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.reformate_gas.desc.2}"
+			]
+			id: "3E4E63D5B8CB6860"
+			shape: "heart"
+			subtitle: "{quests.gregtech_energy.reformate_gas.subtitle}"
+			tasks: [{
+				id: "575518211DA29A4E"
+				item: "tfg:reformate_gas_bucket"
+				type: "item"
+			}]
+			title: "{quests.gregtech_energy.reformate_gas.title}"
+			x: 5.0d
+			y: -10.0d
 		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]

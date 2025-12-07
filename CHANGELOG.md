@@ -2,10 +2,21 @@
 
 ## [Unreleased]
 ### Breaking Changes
+- Beginning of the Power Update:
+    - Syngas is now available as a ULV/LV gas fuel - can be craft in from Charcoal and Creosote in a Brewery
+    - The Coal Liquefaction Tower is a new multiblock craftable at MV that you can use to make Reformate Gas. Uses the Cracker coils property and can be boost with hydrogen
+    - Reformate Gas is the new Fuel starting at MV, with better yield and loop at HV
+    - Many quests got updated to take into consideration these changes
+- Update on Fission:
+    - The Nuclear Steam Turbine has now a baseline power production of 8192 EU/t. What this means is that when you needed 2 turbines you now need one.
+    - Thorium Reactor got a boost of 50% steam production, early Mars should be a bit easier
+    - Heat Exchanger can now run Radioactive Steam without Ammonium Formate. If you crave for power and don’t mind losing some materials for Nano Circuit, this is a good deal
+    - Massive change for steam yield. You now produce 160 more steam, but its yield is 160 less good (so nothing powerwise just be wary of flowing rate)
 - The tungsten processing line has been updated to now properly loop and balance all of its intermediates. The actual processes haven't changed, just the numbers, so you shouldn't have to change your setup much. It now also outputs a little extra oxygen instead of sodium (#2267) @SpicyNoodle5 @TomPlop
 - Removed black/red/blue arc furnace dust to ingot recipes, but changed the EBF recipes to MV (#2306) @applenper @Pyritie
 ### Mod updates
 - Added TFC Gurman, which adds even more food and drink
+- Primitive Creatures has fixed its spawning of Huntmasters
 - New GregTech updates, both [7.3.0](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.3.0-1.20.1) and [7.4.0](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.4.0-1.20.1). TL;DR:
   - You can use screwdrivers on drums again
   - Diluted hydrochloric acid distillation circuits have been swapped, so now it's consistent with diluted sulfuric acid
