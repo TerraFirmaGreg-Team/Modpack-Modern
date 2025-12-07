@@ -3,26 +3,27 @@
 ## [Unreleased]
 ### Breaking Changes
 - Beginning of the Power Update:
-    - Syngas is now available as a ULV/LV gas fuel - can be craft in from Charcoal and Creosote in a Brewery
-    - The Coal Liquefaction Tower is a new multiblock craftable at MV that you can use to make Reformate Gas. Uses the Cracker coils property and can be boost with hydrogen
-    - Reformate Gas is the new Fuel starting at MV, with better yield and loop at HV
-    - Many quests got updated to take into consideration these changes
+    - Syngas is now available as a ULV/LV gas fuel - can be crafted from Charcoal and Creosote in a Brewery or Vacuum Chamber.
+    - The Coal Liquefaction Tower is a new multiblock (craftable at MV) that you can use to make Reformate Gas. It has the same coil discounts as the Cracker, and can be boosted with hydrogen.
+    - Reformate Gas is the new gas Fuel starting at MV, with better yields and recipe loops at HV.
+    - Many quests were updated to explain these changes.
 - Update on Fission:
-    - The Nuclear Steam Turbine has now a baseline power production of 8192 EU/t. What this means is that when you needed 2 turbines you now need one.
-    - Thorium Reactor got a boost of 50% steam production, early Mars should be a bit easier
-    - Heat Exchanger can now run Radioactive Steam without Ammonium Formate. If you crave for power and don’t mind losing some materials for Nano Circuit, this is a good deal
-    - Massive change for steam yield. You now produce 160 more steam, but its yield is 160 less good (so nothing powerwise just be wary of flowing rate)
+    - The Nuclear Steam Turbine has now a baseline power production of 8192 EU/t. What this means is that you now need half as many turbines as before.
+    - Thorium Fuel Rods got a boost of 50% steam production, so early Mars should be a bit easier.
+    - Heat Exchanger can now run Radioactive Steam without Ammonium Formate. If you crave for power and don’t mind losing some materials for the Nano Circuit, this is a good deal
+    - Massive change for steam yield. You now produce 160x more steam, but its yield is 160x less good (so nothing changes power-wise, but now you have to deal with pipe throughput)
 - The tungsten processing line has been updated to now properly loop and balance all of its intermediates. The actual processes haven't changed, just the numbers, so you shouldn't have to change your setup much. It now also outputs a little extra oxygen instead of sodium (#2267) @SpicyNoodle5 @TomPlop
 - Removed black/red/blue arc furnace dust to ingot recipes, but changed the EBF recipes to MV (#2306) @applenper @Pyritie
 ### Mod updates
 - Added TFC Gurman, which adds even more food and drink
+- Primitive Creatures has fixed its spawning of Huntmasters
 - New GregTech updates, both [7.3.0](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.3.0-1.20.1) and [7.4.0](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.4.0-1.20.1). TL;DR:
-  - You can use screwdrivers on drums again
-  - Diluted hydrochloric acid distillation circuits have been swapped, so now it's consistent with diluted sulfuric acid
-  - Large rebalancing of small and large boiler fuel. Generally speaking, small boilers are worse while large ones are better, and solid fuels are now better and liquids are worse, but if you're putting all your coke oven output into a large bronze boiler, your rates should be mostly the same as before. Blaze burner liquid fuels have been adjusted to these new values as well.
+    - You can use screwdrivers on drums again
+    - Diluted hydrochloric acid distillation circuits have been swapped, so now it's consistent with diluted sulfuric acid
+    - Large rebalancing of small and large boiler fuel. Generally speaking, small boilers are worse while large ones are better, and solid fuels are now better and liquids are worse, but if you're putting all your coke oven output into a large bronze boiler, your rates should be mostly the same as before. Blaze burner liquid fuels have been adjusted to these new values as well.
 ### Other Changes
 - Many TACZ balance changes, found [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/blob/dev/tacz/TACZ_CHANGELOG.md) @BlueBoat29
-- Add shapeless p2p recipes (#2234) @SpicyNoodle5
+- Add shapeless recipes for ae2 p2p clearing (#2234) @SpicyNoodle5
 - Added assembler, smelting and heating recipes for firmalife ovens (#2220) @SpicyNoodle5
 - Raised player-burning fluid threshold from 370K to 1300K @Redeix
 - Added partial unification to the gtceu Wax material @Redeix
@@ -40,6 +41,7 @@
 - The reinforced hang glider has been buffed, is now craftable as soon as you get aluminium, and is also much cheaper to repair (#2314) @jeuvke
 - You can now also use bismuth bronze and black bronze crates in recipes that previously required a normal bronze crate (#2328) @jeuvke
 - Freeze dried food no longer has any hydration (#2325) @mqrius
+- Added a mechanical crafting recipe for the Paving Cart @Pyritie
 ### Bug fixes
 - Fixed the horse crank not working at all @Pyritie
 - Fixed brown gravy recipe @Redeix

@@ -862,16 +862,4 @@ function registerGTCEuMachineRecipes(event) {
 		D: 'gtceu:palladium_substation'
 	}).addMaterialInfo().id('gtceu:shaped/power_substation')
 
-	event.recipes.gtceu.shaped('gtceu:coal_liquefaction_tower', [
-		'ABA',
-		'CDC',
-		'EFE'
-	], {
-		A: '#forge:double_wires/cupronickel',
-		B: 'gtceu:aluminium_drum',
-		C: '#gtceu:circuits/mv',
-		D: 'gtceu:mv_machine_hull',
-		E: 'gtceu:solid_machine_casing',
-		F: 'gtceu:mv_electric_piston'
-	}).addMaterialInfo().id('gtceu:shaped/coal_liquefaction_tower')
 }

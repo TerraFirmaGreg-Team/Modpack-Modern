@@ -1638,6 +1638,7 @@
 			dependencies: ["54A255C1C6E33165"]
 			description: ["{quests.medium_voltage.reformate_gas.desc}"]
 			id: "10292F9B1DD743EB"
+			optional: true
 			shape: "heart"
 			subtitle: "{quests.medium_voltage.reformate_gas.subtitle}"
 			tasks: [{
@@ -1653,6 +1654,8 @@
 			dependencies: ["00E1A728E6F6D6A0"]
 			description: ["{quests.medium_voltage.coal_tower.desc.1}"]
 			id: "54A255C1C6E33165"
+			optional: true
+			shape: "heart"
 			subtitle: "{quests.medium_voltage.coal_tower.subtitle}"
 			tasks: [{
 				id: "348CD63DC537BB9A"

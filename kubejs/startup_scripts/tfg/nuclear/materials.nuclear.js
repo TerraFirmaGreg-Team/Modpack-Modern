@@ -246,7 +246,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.color(0x694c66)
 		.radioactiveHazard(1000)
 
-	event.create('americium_241')
+	event.create('tfg:americium_241')
 		.ingot()
 		.element(GTElements.get("americium_241"))
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
@@ -255,7 +255,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.secondaryColor(0x1b1d36)
 		.radioactiveHazard(1000000)
 
-	event.create('neptunium_237')
+	event.create('tfg:neptunium_237')
 		.ingot()
 		.element(GTElements.get("neptunium_237"))
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
@@ -264,7 +264,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.secondaryColor(0xffffff)
 		.radioactiveHazard(5000000)
 
-	event.create('californium_252')
+	event.create('tfg:californium_252')
 		.ingot()
 		.element(GTElements.get("californium_252"))
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)

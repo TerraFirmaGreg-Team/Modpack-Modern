@@ -31,6 +31,38 @@
 			x: -10.5d
 			y: -9.5d
 		}
+		{
+			height: 2.5d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.5d
+			x: 6.0d
+			y: -7.0d
+		}
+		{
+			height: 2.0d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.0d
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			height: 2.0d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.0d
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			height: 2.25d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.25d
+			x: 3.0d
+			y: -7.0d
+		}
 	]
 	order_index: 2
 	quest_links: [ ]
@@ -326,8 +358,8 @@
 				type: "item"
 			}]
 			title: "{quests.gregtech_energy.tank.title}"
-			x: 8.0d
-			y: -6.0d
+			x: 10.0d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -824,7 +856,6 @@
 		}
 		{
 			dependencies: ["06B2E38F7DCF2678"]
-			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:lv_universal_circuit"
 			id: "4C620105AAC49381"
@@ -842,7 +873,6 @@
 		}
 		{
 			dependencies: ["4C620105AAC49381"]
-			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:mv_universal_circuit"
 			id: "0AF286AA540A82E6"
@@ -860,7 +890,6 @@
 		}
 		{
 			dependencies: ["0AF286AA540A82E6"]
-			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:hv_universal_circuit"
 			id: "4D0ADC66D2CF09B1"
@@ -878,7 +907,6 @@
 		}
 		{
 			dependencies: ["4D0ADC66D2CF09B1"]
-			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:ev_universal_circuit"
 			id: "7AF726555D721DFC"
@@ -896,7 +924,6 @@
 		}
 		{
 			dependencies: ["7AF726555D721DFC"]
-			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:iv_universal_circuit"
 			id: "05E2F203DA46A5E8"
@@ -914,7 +941,6 @@
 		}
 		{
 			dependencies: ["05E2F203DA46A5E8"]
-			description: ["TODO"]
 			disable_toast: true
 			icon: "tfg:luv_universal_circuit"
 			id: "1DB543EFEEB67238"

@@ -5,14 +5,6 @@
 	group: "44D0F3E5067B5AB8"
 	icon: "tfg:lv_universal_circuit"
 	id: "7D50771C3FE033D7"
-	images: [{
-		height: 2.0d
-		image: "createdeco:block/palettes/decal/yellow_decal"
-		rotation: 0.0d
-		width: 2.0d
-		x: 8.0d
-		y: 7.0d
-	}]
 	order_index: 0
 	quest_links: [
 		{
@@ -20,21 +12,14 @@
 			linked_quest: "2CDB9778C7A30044"
 			shape: "octagon"
 			size: 2.0d
-			x: 4.0d
-			y: 7.0d
+			x: 5.5d
+			y: 8.5d
 		}
 		{
 			id: "0EA7766FE6845121"
 			linked_quest: "0FFBB6177DEB0A23"
 			x: -8.5d
 			y: 10.5d
-		}
-		{
-			id: "4709FD64C07461C1"
-			linked_quest: "533F32CCAD9D5B51"
-			shape: "heart"
-			x: -2.0d
-			y: 12.5d
 		}
 		{
 			id: "5A47760FCD164E74"
@@ -147,8 +132,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_steam_turbine.title}"
-			x: 5.5d
-			y: 7.0d
+			x: 7.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6431381FBE07D6EF"]
@@ -383,8 +368,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lbb.title}"
-			x: 6.5d
-			y: 7.0d
+			x: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
@@ -1404,6 +1389,7 @@
 			description: ["{quests.steam_age.alternator.desc.1}"]
 			id: "2DC24661CAD557B0"
 			optional: true
+			shape: "hexagon"
 			subtitle: "{quests.steam_age.alternator.subtitle}"
 			tasks: [
 				{
@@ -1427,8 +1413,8 @@
 				}
 			]
 			title: "{quests.steam_age.alternator.title}"
-			x: 4.0d
-			y: 5.5d
+			x: 7.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["7567E885B7166603"]
@@ -1524,7 +1510,7 @@
 			description: ["{quests.low_voltage.lv_combuston_gen.desc}"]
 			id: "170B544373A16112"
 			optional: true
-			shape: "octagon"
+			shape: "hexagon"
 			subtitle: "{quests.low_voltage.lv_combuston_gen.subtitle}"
 			tasks: [{
 				id: "2B36CA88F25D5449"
@@ -1532,8 +1518,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_combuston_gen.title}"
-			x: 5.5d
-			y: 8.0d
+			x: 7.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["2CDB9778C7A30044"]
@@ -1541,8 +1527,10 @@
 				"{quests.low_voltage.link_chapter.desc}:"
 				"{ \"text\": \"▶▶▶▶▶▶▶\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CDB9778C7A30044\" } }"
 			]
+			icon: "createdeco:decal_electrical"
 			id: "7FA1525D681C4B4A"
 			shape: "none"
+			size: 2.0d
 			subtitle: "{quests.low_voltage.link_chapter.subtitle}"
 			tasks: [{
 				id: "346E50625B8B1133"
@@ -1550,8 +1538,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.low_voltage.link_chapter.title}"
-			x: 4.0d
-			y: 8.5d
+			x: 5.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["5F3063C539C9CBBF"]
@@ -1573,8 +1561,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_seeds.title}"
-			x: 6.5d
-			y: 10.0d
+			x: 7.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["55213ACBF5F5D398"]
@@ -1589,8 +1577,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_seed_oil.title}"
-			x: 6.5d
-			y: 9.0d
+			x: 7.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1D979CB5862BD480"]
@@ -1605,8 +1593,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_biodiesel.title}"
-			x: 6.5d
-			y: 8.0d
+			x: 7.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["1912758422EEB006"]
@@ -1671,8 +1659,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.low_voltage.oil.title}"
-			x: 5.5d
-			y: 10.0d
+			x: 6.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1690,8 +1678,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_gas_turbine.title}"
-			x: 5.5d
-			y: 6.0d
+			x: 7.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["2CEE3C0972650C81"]
@@ -1721,8 +1709,8 @@
 				}
 			]
 			title: "{quests.low_voltage.lv_naphtha_light.title}"
-			x: 5.5d
-			y: 9.0d
+			x: 6.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["5F3063C539C9CBBF"]
@@ -1738,7 +1726,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_gas_syngas.title}"
-			x: 6.5d
+			x: 7.0d
 			y: 6.0d
 		}
 	]
