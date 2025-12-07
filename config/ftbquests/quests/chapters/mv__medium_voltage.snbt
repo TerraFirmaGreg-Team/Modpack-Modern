@@ -62,7 +62,11 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["22E462070F8B027A"]
+			dependencies: [
+				"22E462070F8B027A"
+				"499CACFF0350B3CA"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.medium_voltage.mv_brewery.desc.1}"
 				"{@pagebreak}"
@@ -1037,6 +1041,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["648BCF486E16CCB2"]
 			description: ["{quests.medium_voltage.mv_oilsands.desc}"]
 			id: "575B07D390D9D079"
 			optional: true
@@ -1138,6 +1143,8 @@
 				"{quests.medium_voltage.mv_benzene.desc.1}"
 				"{@pagebreak}"
 				"{quests.medium_voltage.mv_benzene.desc.2}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.mv_benzene.desc.3}"
 			]
 			icon: "gtceu:benzene_bucket"
 			id: "00E1A728E6F6D6A0"
@@ -1179,29 +1186,6 @@
 			title: "{quests.medium_voltage.mv_light_fuel.title}"
 			x: -6.0d
 			y: 2.5d
-		}
-		{
-			dependencies: ["61972B16805FC9EE"]
-			description: [
-				"{quests.medium_voltage.mv_diesel.desc.1}"
-				"{@pagebreak}"
-				"{quests.medium_voltage.mv_diesel.desc.2}"
-				"{@pagebreak}"
-				"{quests.medium_voltage.mv_diesel.desc.3}"
-			]
-			icon: "gtceu:diesel_bucket"
-			id: "45769156F4253C86"
-			optional: true
-			size: 1.0d
-			subtitle: "{quests.medium_voltage.mv_diesel.subtitle}"
-			tasks: [{
-				id: "10BAA54947D975AF"
-				item: "gtceu:diesel_bucket"
-				type: "item"
-			}]
-			title: "{quests.medium_voltage.mv_diesel.title}"
-			x: -6.0d
-			y: 3.5d
 		}
 		{
 			dependency_requirement: "one_started"
@@ -1649,6 +1633,58 @@
 			title: "{quests.medium_voltage.stainless_greate.title}"
 			x: 0.5d
 			y: 6.75d
+		}
+		{
+			dependencies: ["54A255C1C6E33165"]
+			description: ["{quests.medium_voltage.reformate_gas.desc}"]
+			id: "10292F9B1DD743EB"
+			shape: "heart"
+			subtitle: "{quests.medium_voltage.reformate_gas.subtitle}"
+			tasks: [{
+				id: "717ABF30F29D12CD"
+				item: "tfg:reformate_gas_bucket"
+				type: "item"
+			}]
+			title: "{quests.medium_voltage.reformate_gas.title}"
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["00E1A728E6F6D6A0"]
+			description: ["{quests.medium_voltage.coal_tower.desc.1}"]
+			id: "54A255C1C6E33165"
+			subtitle: "{quests.medium_voltage.coal_tower.subtitle}"
+			tasks: [{
+				id: "348CD63DC537BB9A"
+				item: "gtceu:coal_liquefaction_tower"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["61972B16805FC9EE"]
+			description: [
+				"{quests.medium_voltage.mv_diesel.desc.1}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.mv_diesel.desc.2}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.mv_diesel.desc.3}"
+			]
+			icon: "gtceu:diesel_bucket"
+			id: "45769156F4253C86"
+			optional: true
+			shape: "heart"
+			size: 1.0d
+			subtitle: "{quests.medium_voltage.mv_diesel.subtitle}"
+			tasks: [{
+				id: "10BAA54947D975AF"
+				item: "gtceu:diesel_bucket"
+				type: "item"
+			}]
+			title: "{quests.medium_voltage.mv_diesel.title}"
+			x: -6.0d
+			y: 3.5d
 		}
 	]
 	subtitle: ["{quests.medium_voltage.subtitle}"]
