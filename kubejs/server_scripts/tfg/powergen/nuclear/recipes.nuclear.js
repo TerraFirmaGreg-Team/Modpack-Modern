@@ -591,7 +591,7 @@ function registerTFGNuclearRecipes(event) {
 
 	//These two might not fit here but eh
 	event.recipes.gtceu.chemical_reactor('tfg:sucrose_to_monos')
-		.itemInputs('8x #forge:dusts/sugar')
+		.itemInputs('8x #tfg:sugars')
 		.inputFluids(Fluid.of('minecraft:water', 8000), Fluid.of('gtceu:sulfuric_acid', 200))
 		.circuit(2)
 		.itemOutputs('24x #forge:dusts/glucose', '24x #forge:dusts/fructose')
