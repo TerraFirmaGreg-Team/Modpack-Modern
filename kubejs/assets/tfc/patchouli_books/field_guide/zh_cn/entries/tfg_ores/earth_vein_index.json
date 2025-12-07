@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)塔基安石, 油砂$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)晶质铀矿, 沥青铀矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_monazite)氟碳镧铈矿, 独居石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_oilsands)油砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)煤炭$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)白钨矿, 钨酸锂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)皂石, 滑石, 天然碱$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)盐, 硼砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)石榴石, 锡石矿砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gypsum)石膏, 方解石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)石英$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)石墨, 钻石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_basaltic_sands)矿砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)硅镁镍矿, 辉钴矿$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)塔基安矿, 油砂$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)晶质铀矿, 沥青铀矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_monazite)氟碳镧铈矿, 独居石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_oilsands)油砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)煤炭$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)白钨矿, 钨酸锂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)皂石, 滑石, 天然碱$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)盐, 硼砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)石榴石, 锡石矿砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gypsum)石膏, 方解石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)石英$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)石墨, 钻石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_basaltic_sands)矿砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)硅镁镍矿, 辉钴矿$()$()",
       "type": "patchouli:text"
     },
     {
@@ -40,13 +40,13 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)稀有度$(): 140$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 20 — 120$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 10$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 安山岩, 板岩, 流纹岩, 燧石, 片岩, 片麻岩, 玄武岩, 白云岩, 白垩岩, 石灰岩, 石英岩, 砾岩, 粘土岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
-      "title": "塔基安石, 油砂",
+      "title": "塔基安矿, 油砂",
       "type": "patchouli:text",
       "anchor": "normal_tarkianite"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "塔基安石",
+      "name": "塔基安矿",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/tarkianite"
@@ -1897,7 +1897,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 190$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 210$(br)$(thing)尺寸$(): 36$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩, 花岗岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 190$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 210$(br)$(thing)尺寸$(): 36$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩, 花岗岩, 辉长岩, 闪长岩",
       "title": "蓝晶石, 云母, 铝土矿",
       "type": "patchouli:text",
       "anchor": "normal_mica"
