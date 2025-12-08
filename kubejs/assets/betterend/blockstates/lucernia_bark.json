@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+			{ "model": "betterend:block/lucernia_bark", "weight": 6 },
+			{ "model": "betterend:block/lucernia_bark_2" },
+			{ "model": "betterend:block/lucernia_bark_3", "weight": 6 },
+			{ "model": "betterend:block/lucernia_bark_4" }
+		]
+    }
+}

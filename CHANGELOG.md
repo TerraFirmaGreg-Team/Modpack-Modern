@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+### Breaking Changes
+- Butyraldehyde in a chemical reactor now uses circuit 5 instead of 1 to avoid a conflict with Methanol @Pyritie
+### Other Changes
+- Added recipes for create's shadow and radiant casings (#2256) @Ujhik
+### Bug fixes
+- Fixed missing cleanroom tags for the ad astra 3x3 doors, so now you can *actually* use them in a cleanroom @Pyritie
+- Fixed aged sake, vodka, and whiskey losing their buff effects @Pyritie
+
 ## [0.11.9] - 7-12-2025
 ### Breaking Changes
 #### Beginning of the Power Update

@@ -76,6 +76,12 @@ function registerGTCEUBlockTags(event) {
     event.add("gtceu:cleanroom_doors", "createdeco:zinc_door");
     event.add("gtceu:cleanroom_doors", "createdeco:locked_zinc_door");
     event.add("gtceu:cleanroom_doors", "ad_astra:steel_door");
+    event.add("gtceu:cleanroom_doors", "ad_astra:iron_sliding_door");
+    event.add("gtceu:cleanroom_doors", "ad_astra:steel_sliding_door");
+    event.add("gtceu:cleanroom_doors", "ad_astra:reinforced_door");
+    event.add("gtceu:cleanroom_doors", "ad_astra:desh_sliding_door");
+    event.add("gtceu:cleanroom_doors", "ad_astra:ostrum_sliding_door");
+    event.add("gtceu:cleanroom_doors", "ad_astra:calorite_sliding_door");
 }
 
 /** @param {TagEvent.Fluid} event  */
