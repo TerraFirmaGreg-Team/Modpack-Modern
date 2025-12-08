@@ -36,7 +36,7 @@ function registerTFGTemporaryRecipes(event) {
 	]
 	broken_pipes.forEach(material => {
 		if (material.hasProperty(PropertyKey.FLUID_PIPE)) {
-			event.shaped(ChemicalHelper.get(TagPrefix.pipeTinyFluid, material, 1), [
+			event.shaped(ChemicalHelper.get(TagPrefix.pipeTinyFluid, material, 2), [
 				' S ',
 				'HPW'
 			], {
