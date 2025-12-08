@@ -61,12 +61,11 @@ const registerBeneathRecipes = (event) => {
 		'tfc:powder/wood_ash'
 	]).id('tfg:shapeless/hellbricks_from_wood_ash')
 
-	event.recipes.gtceu.assembler("loose_blackstone_to_bricks")
+	event.recipes.gtceu.cutter("loose_blackstone_to_bricks")
 		.itemInputs('beneath:blackstone_pebble')
 		.itemOutputs('beneath:blackstone_brick')
-		.circuit(1)
-		.duration(40)
-		.EUt(8)
+		.duration(10)
+		.EUt(2)
 
 	event.recipes.tfc.landslide('beneath:soul_clay', 'beneath:soul_clay')
 
