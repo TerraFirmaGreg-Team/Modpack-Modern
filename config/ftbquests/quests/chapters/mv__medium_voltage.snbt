@@ -6,7 +6,12 @@
 	icon: "tfg:mv_universal_circuit"
 	id: "43E779CEEB25D55B"
 	order_index: 1
-	quest_links: [ ]
+	quest_links: [{
+		id: "4EEC4E3BE1B3D3B1"
+		linked_quest: "222295CD03AF00DC"
+		x: -1.5d
+		y: -5.5d
+	}]
 	quests: [
 		{
 			dependencies: ["22E462070F8B027A"]
