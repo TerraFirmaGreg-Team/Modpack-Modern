@@ -4,7 +4,7 @@
         "1.20.1"
     ],
     "loaders": {
-        "forge": "47.4.6"
+        "forge": "47.4.13"
     },
     "projects": [
         {
@@ -4342,27 +4342,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "deafission-1.20.1-0.15.2.jar",
+                    "file_name": "deafission-1.20.1-0.15.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/7258/440/deafission-1.20.1-0.15.2.jar",
-                    "id": "7258440",
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7305/261/deafission-1.20.1-0.15.4.jar",
+                    "id": "7305261",
                     "parent_id": "1354541",
                     "hashes": {
-                        "sha1": "4e49e3f128148964188983d7819d9e84c1778ff6",
-                        "md5": "1517307eacc842d3302fa2afc3aabfbe"
+                        "sha1": "5b814421715f3f15606a4b2ecc23816432c6911c",
+                        "md5": "64b8f3da2f95649bbef00af310fdc102"
                     },
                     "required_dependencies": [
                         "890405",
                         "238086"
                     ],
-                    "size": 413422,
-                    "date_published": "2025-11-24T19:13:06.897Z"
+                    "size": 415411,
+                    "date_published": "2025-12-07T18:28:09.053Z"
                 }
             ]
         },
@@ -9807,71 +9807,6 @@
             ]
         },
         {
-            "pakku_id": "srNw1bVsXfQKp9OA",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "curseforge": "noisium",
-                "modrinth": "noisium"
-            },
-            "name": {
-                "curseforge": "Noisium",
-                "modrinth": "Noisium"
-            },
-            "id": {
-                "curseforge": "930207",
-                "modrinth": "KuNKN7d2"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "noisium-forge-2.3.0+mc1.20-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5650/506/noisium-forge-2.3.0+mc1.20-1.20.1.jar",
-                    "id": "5650506",
-                    "parent_id": "930207",
-                    "hashes": {
-                        "sha1": "7da1cdf00c0ae5cad31e17f765f6ea021c8ac808",
-                        "md5": "3a8e9a24408c991b3fb97685884f2cce"
-                    },
-                    "required_dependencies": [],
-                    "size": 218152,
-                    "date_published": "2024-08-21T17:24:11.600Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "noisium-forge-2.3.0+mc1.20-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/KuNKN7d2/versions/gbYUKrDP/noisium-forge-2.3.0+mc1.20-1.20.1.jar",
-                    "id": "gbYUKrDP",
-                    "parent_id": "KuNKN7d2",
-                    "hashes": {
-                        "sha512": "5bc43bc1b748edcd63d074a8bb14d393d986c51e1933e1f38cd7a2dd2fd70dba5a46a6415f46d4a52c68e7e1e9ce101e54376ad04273df958608e2fdb43db502",
-                        "sha1": "7da1cdf00c0ae5cad31e17f765f6ea021c8ac808"
-                    },
-                    "required_dependencies": [],
-                    "size": 218152,
-                    "date_published": "2024-08-21T17:24:14.967570Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "rZMUz1QjgqD53x3s",
             "type": "MOD",
             "side": "CLIENT",
@@ -11475,7 +11410,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.16.2.jar",
+                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.17.0.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -11484,20 +11419,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/kepjj2sy/versions/wnRqDILe/ShoulderSurfing-Forge-1.20.1-4.16.2.jar",
-                    "id": "wnRqDILe",
+                    "url": "https://cdn.modrinth.com/data/kepjj2sy/versions/EAmVtA50/ShoulderSurfing-Forge-1.20.1-4.17.0.jar",
+                    "id": "EAmVtA50",
                     "parent_id": "kepjj2sy",
                     "hashes": {
-                        "sha512": "1c00c98ebdf45aed5946b45a5c94b46ad191376112ee9f98464df25eb1562415fa6a77e5fde7fca3431b8a43efb4bb847abdd1522dcdbc031fdc586723e71b4c",
-                        "sha1": "6e17da80a59372ef96ffe75ed15f2a71ff6fc722"
+                        "sha512": "67d14cc08a9e2c26e1df2a72283cf564b89c8235b1fc7489f2eac0665653d525f3265d9231b8e73e7de86d29359819a9089000fb24c3cb857c85579ecac8e4f5",
+                        "sha1": "77741047e50205980a6eb518aec2514784584c09"
                     },
                     "required_dependencies": [],
-                    "size": 255775,
-                    "date_published": "2025-11-30T22:40:18.587608Z"
+                    "size": 263677,
+                    "date_published": "2025-12-07T19:55:42.391935Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.16.2.jar",
+                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.17.0.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -11506,16 +11441,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7279/952/ShoulderSurfing-Forge-1.20.1-4.16.2.jar",
-                    "id": "7279952",
+                    "url": "https://edge.forgecdn.net/files/7305/583/ShoulderSurfing-Forge-1.20.1-4.17.0.jar",
+                    "id": "7305583",
                     "parent_id": "243190",
                     "hashes": {
-                        "sha1": "6e17da80a59372ef96ffe75ed15f2a71ff6fc722",
-                        "md5": "5f28f3ac688565db38d7b6bfe41e0ee9"
+                        "sha1": "77741047e50205980a6eb518aec2514784584c09",
+                        "md5": "906de79806f24c12d188126b47afa35f"
                     },
                     "required_dependencies": [],
-                    "size": 255775,
-                    "date_published": "2025-11-30T22:40:16.337Z"
+                    "size": 263677,
+                    "date_published": "2025-12-07T19:55:42.833Z"
                 }
             ]
         },
@@ -13880,7 +13815,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.6.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.7.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13889,23 +13824,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/w34zm4Xq/TerraFirmaGreg-Core-Modern-0.8.6.jar",
-                    "id": "w34zm4Xq",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/bROqTVck/TerraFirmaGreg-Core-Modern-0.8.7.jar",
+                    "id": "bROqTVck",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "677785f7b14208293f9a4ec2d1605339b47f3bd76e81daf5709fb9a19851f4a5149b590e9e2ad4a423839352946d3f976897089386da6508cfad5bd0f82e6499",
-                        "sha1": "8c37ab2de9e8a646395b49088d21abb692e54909"
+                        "sha512": "136f0851e89bdb911d319ed12aac0f2803d0b7d74ca18ad2fb6330ebc5965e0fee82862ea87f49901aa41783cea98a4968786b8ff2fb1503f90e3e828e79ee44",
+                        "sha1": "c0c1a2c44998b630ad56be665017896287cf685c"
                     },
                     "required_dependencies": [
-                        "JaCEZUhg",
-                        "7tG215v7"
+                        "7tG215v7",
+                        "JaCEZUhg"
                     ],
-                    "size": 9283735,
-                    "date_published": "2025-11-17T08:16:44.842196Z"
+                    "size": 9315464,
+                    "date_published": "2025-12-07T21:45:07.908480Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.6.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.7.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13914,19 +13849,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7231/807/TerraFirmaGreg-Core-Modern-0.8.6.jar",
-                    "id": "7231807",
+                    "url": "https://edge.forgecdn.net/files/7305/932/TerraFirmaGreg-Core-Modern-0.8.7.jar",
+                    "id": "7305932",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "8c37ab2de9e8a646395b49088d21abb692e54909",
-                        "md5": "0fba8bdf94413edb751a97ed05943ca8"
+                        "sha1": "c0c1a2c44998b630ad56be665017896287cf685c",
+                        "md5": "e4dcd7222073266fe1188fe52ca35d5f"
                     },
                     "required_dependencies": [
                         "302973",
                         "890405"
                     ],
-                    "size": 9283735,
-                    "date_published": "2025-11-17T08:16:39.213Z"
+                    "size": 9315464,
+                    "date_published": "2025-12-07T21:45:02.070Z"
                 }
             ]
         },

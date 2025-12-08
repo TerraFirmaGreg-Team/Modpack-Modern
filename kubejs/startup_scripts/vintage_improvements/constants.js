@@ -16,7 +16,6 @@ global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 	'vintageimprovements:laser_item',
 	'vintageimprovements:sulfur_chunk',
 	'vintageimprovements:sulfur',
-	'vintageimprovements:sulfur_block',
 	'vintageimprovements:sulfuric_acid_bucket',
 	'vintageimprovements:copper_sulfate',
 	'vintageimprovements:incomplete_redstone_module',

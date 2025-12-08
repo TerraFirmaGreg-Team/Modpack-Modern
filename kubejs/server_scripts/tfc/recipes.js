@@ -179,7 +179,6 @@ const registerTFCRecipes = (event) => {
 		.EUt(2)
 
 	// Brass Mechanism
-	event.recipes.shapeless('gtceu:small_brass_gear', ['tfc:brass_mechanisms']).id('tfg:replace_brass_mechanisms')
 	event.replaceInput({ input: 'tfc:brass_mechanisms' }, 'tfc:brass_mechanisms', 'gtceu:small_brass_gear')	
 
 	// Rennet

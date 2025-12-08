@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"": [
+			{ "model": "betterend:block/brimstone_active" },
+			{ "model": "betterend:block/brimstone_active", "y": 180 },
+			{ "model": "betterend:block/brimstone_normal" },
+			{ "model": "betterend:block/brimstone_normal", "y": 180 }
+		]
+	}
+}
