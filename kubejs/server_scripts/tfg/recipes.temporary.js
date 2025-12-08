@@ -100,5 +100,6 @@ function registerTFGTemporaryRecipes(event) {
 				H: '#forge:tools/hammers',
 				W: '#forge:tools/wrenches'
 			}).id(`tfg:temp/large_item_pipe_${material.getName()}`)
+		}
 	})
 }
