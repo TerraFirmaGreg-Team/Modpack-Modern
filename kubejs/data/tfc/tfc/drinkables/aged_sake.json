@@ -1,0 +1,12 @@
+{
+	"ingredient": "tfcagedalcohol:aged_sake",
+	"thirst": 15,
+	"intoxication": 2000,
+	"effects": [
+		{
+			"type": "minecraft:resistance",
+			"duration": 6400,
+			"amplifier": 0
+		}
+	]
+}
