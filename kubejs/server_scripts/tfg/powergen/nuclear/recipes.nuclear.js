@@ -568,6 +568,87 @@ function registerTFGNuclearRecipes(event) {
 
 	//#endregion
 
-		
+	//#region Epoxidized Isosorbide Linolenate
+
+	event.recipes.gtceu.distillery('tfg:linolenic_from_seed')
+		.inputFluids(Fluid.of('gtceu:seed_oil', 1000))
+		.outputFluids(Fluid.of('tfg:linolenic_acid', 10))
+		.circuit(2)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.MV])
+	event.recipes.gtceu.distillery('tfg:linolenic_from_olive')
+		.inputFluids(Fluid.of('tfc:olive_oil', 1000))
+		.outputFluids(Fluid.of('tfg:linolenic_acid', 20))
+		.circuit(2)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.MV])
+	event.recipes.gtceu.distillery('tfg:linolenic_from_soybean')
+		.inputFluids(Fluid.of('firmalife:soybean_oil', 1000))
+		.outputFluids(Fluid.of('tfg:linolenic_acid', 50))
+		.circuit(2)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	//These two might not fit here but eh
+	event.recipes.gtceu.chemical_reactor('tfg:sucrose_to_monos')
+		.itemInputs('8x #tfg:sugars')
+		.inputFluids(Fluid.of('minecraft:water', 8000), Fluid.of('gtceu:sulfuric_acid', 200))
+		.circuit(2)
+		.itemOutputs('24x #forge:dusts/glucose', '24x #forge:dusts/fructose')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.IV])
+	event.recipes.gtceu.chemical_reactor('tfg:lactose_to_monos')
+		.itemInputs('8x #forge:dusts/lactose')
+		.inputFluids(Fluid.of('minecraft:water', 8000), Fluid.of('gtceu:sulfuric_acid', 200))
+		.circuit(2)
+		.itemOutputs('24x #forge:dusts/glucose', '24x #forge:dusts/galactose')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.IV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:glucose_to_sorbitol')
+		.itemInputs('12x #forge:dusts/glucose')
+		.inputFluids(Fluid.of('gtceu:hydrogen', 2000))
+		.notConsumable('#forge:dusts/ruthenium')
+		.circuit(2)
+		.itemOutputs('13x #forge:dusts/sorbitol')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:sorbitol_to_sorbitan')
+		.itemInputs('26x #forge:dusts/sorbitol')
+		.inputFluids(Fluid.of('tfg:dimethyl_carbonate', 1000))
+		.notConsumable('#forge:dusts/potassium_hydroxide')
+		.circuit(3)
+		.itemOutputs('23x #forge:dusts/14_sorbitan')
+		.duration(160)
+		.EUt(GTValues.VA[GTValues.IV])
+	event.recipes.gtceu.chemical_reactor('tfg:sorbitan_to_isosorbide')
+		.itemInputs('23x #forge:dusts/14_sorbitan')
+		.inputFluids(Fluid.of('tfg:dimethyl_carbonate', 1000))
+		.notConsumable('#forge:dusts/potassium_hydroxide')
+		.circuit(3)
+		.itemOutputs('20x #forge:dusts/isosorbide')
+		.duration(160)
+		.EUt(GTValues.VA[GTValues.IV])
+
+	event.recipes.gtceu.large_chemical_reactor('tfg:lipid_attach_isosorbide')
+		.itemInputs('10x #forge:dusts/isosorbide')
+		.inputFluids(Fluid.of('tfg:linolenic_acid', 1000), Fluid.of('minecraft:water', 2000))
+		.notConsumableFluid(Fluid.of('gtceu:toluene', 1000))
+		.circuit(4)
+		.outputFluids(Fluid.of('tfg:isosorbide_ln', 1000))
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.large_chemical_reactor('tfg:epoxidation_isosorbide_ln')
+		.inputFluids(Fluid.of('tfg:isosorbide_ln', 1000), Fluid.of('gtceu:hydrogen_peroxide', 3000), Fluid.of('gtceu:sulfuric_acid', 200))
+		.notConsumableFluid(Fluid.of('gtceu:acetic_acid', 1000))
+		.circuit(4)
+		.outputFluids(Fluid.of('tfg:epox_isosorbide_ln', 1000))
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.IV])
+
+
+	//#endregion
 
 }
