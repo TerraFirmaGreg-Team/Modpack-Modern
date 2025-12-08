@@ -79,5 +79,6 @@ const registerTFGRecipes = (event) => {
 	registerTFGMarsIodineRecipes(event)
 	registerTFGMarsOstrumRecipes(event)
 
+	registerTFGVenusRecipes(event)
 	registerTFGBiochemRecipes(event)
 }

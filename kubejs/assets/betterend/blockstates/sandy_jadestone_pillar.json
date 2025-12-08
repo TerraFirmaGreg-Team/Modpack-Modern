@@ -1,0 +1,16 @@
+{
+	"variants": {
+		"axis=y": {
+			"model": "betterend:block/sandy_jadestone_pillar"
+		},
+		"axis=z": {
+			"model": "betterend:block/sandy_jadestone_pillar",
+			"x": 90
+		},
+		"axis=x": {
+			"model": "betterend:block/sandy_jadestone_pillar",
+			"x": 90,
+			"y": 90
+		}
+	}
+}

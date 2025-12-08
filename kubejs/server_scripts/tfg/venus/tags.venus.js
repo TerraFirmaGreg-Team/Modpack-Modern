@@ -1,7 +1,23 @@
 "use strict";
 
 function registerTFGVenusItemTags(event) {
+	event.add('tfg:leucitite_blocks', 'betterend:flavolite')
+	event.add('tfg:leucitite_blocks', 'betterend:flavolite_bricks')
+	event.add('tfg:leucitite_blocks', 'betterend:flavolite_pillar')
+	event.add('tfg:leucitite_blocks', 'betterend:flavolite_polished')
+	event.add('tfg:leucitite_blocks', 'betterend:flavolite_tiles')
 
+	event.add('tfg:lamproite_blocks', 'betterend:sandy_jadestone')
+	event.add('tfg:lamproite_blocks', 'betterend:sandy_jadestone_bricks')
+	event.add('tfg:lamproite_blocks', 'betterend:sandy_jadestone_pillar')
+	event.add('tfg:lamproite_blocks', 'betterend:sandy_jadestone_polished')
+	event.add('tfg:lamproite_blocks', 'betterend:sandy_jadestone_tiles')
+
+	event.add('tfg:ignimbrite_blocks', 'betterend:sulphuric_rock')
+	event.add('tfg:ignimbrite_blocks', 'betterend:sulphuric_rock_bricks')
+	event.add('tfg:ignimbrite_blocks', 'betterend:sulphuric_rock_pillar')
+	event.add('tfg:ignimbrite_blocks', 'betterend:sulphuric_rock_polished')
+	event.add('tfg:ignimbrite_blocks', 'betterend:sulphuric_rock_tiles')
 }
 
 
@@ -63,6 +79,13 @@ function registerTFGVenusBlockTags(event) {
 	event.add('ad_astra:venus_stone_replaceables', 'create:scoria')
 	event.add('ad_astra:venus_stone_replaceables', 'create:scorchia')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:tuff')
+	event.add('ad_astra:venus_stone_replaceables', 'betterend:brimstone')
+	event.add('ad_astra:venus_stone_replaceables', 'betterend:flavolite')
+	event.add('ad_astra:venus_stone_replaceables', 'betterend:sandy_jadestone')
+	event.add('ad_astra:venus_stone_replaceables', 'betterend:sulphuric_rock')
+	event.add('ad_astra:venus_stone_replaceables', 'betterend:flavolite')
+	event.add('ad_astra:venus_stone_replaceables', 'betterend:lacugrove_bark')
+	event.add('ad_astra:venus_stone_replaceables', 'betterend:lucernia_bark')
 
 	event.add('tfc:can_carve', '#ad_astra:venus_stone_replaceables')
 
@@ -72,6 +95,8 @@ function registerTFGVenusBlockTags(event) {
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/orange')
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/white')
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/yellow')
+
+	event.add('tfg:decorative_plant_attachable', 'betterend:sulphuric_rock')
 }
 
 function registerTFGVenusBiomeTags(event) {
