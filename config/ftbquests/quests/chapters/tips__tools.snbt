@@ -867,7 +867,7 @@
 		{
 			dependencies: ["02FDECC931B5E8EF"]
 			description: ["{quests.tfg_tips.hazard_materials.desc}"]
-			icon: "createdeco:decal_warning"
+			icon: "createdeco:decal_skull"
 			id: "57FE828BAA8F6276"
 			subtitle: "{quests.tfg_tips.hazard_materials.subtitle}"
 			tasks: [{
@@ -947,6 +947,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.tfg_tips.hazmat.title}"
 			x: 9.5d
 			y: 15.0d
 		}
