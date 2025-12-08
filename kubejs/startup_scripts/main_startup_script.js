@@ -70,7 +70,7 @@ GTCEuStartupEvents.craftingComponents(event => {
 	registerTFGCraftingComponents(event)
 })
 
-StartupEvents.modifyCreativeTab(global.TAB_IDS.CREATE_BASE, event => {
+StartupEvents.modifyCreativeTab('create:base', event => {
     modifyCreateCreativeTab(event)
 })
 
