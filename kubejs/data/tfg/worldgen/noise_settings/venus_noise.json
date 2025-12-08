@@ -8,7 +8,7 @@
 		"Name": "ad_astra:venus_stone"
 	},
 	"default_fluid": {
-		"Name": "tfg:sulfur_fumes"
+		"Name": "tfg:fluid/sulfur_fumes"
 	},
 	"noise": {
 		"min_y": -64,
