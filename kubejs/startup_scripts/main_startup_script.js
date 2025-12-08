@@ -1,4 +1,5 @@
 // priority: 0
+// requires: constants
 "use strict";
 
 StartupEvents.registry('item', event => {
