@@ -6,6 +6,7 @@
 ### Other Changes
 - Added recipes for create's shadow and radiant casings (#2256) @Ujhik
 ### Bug fixes
+- Fixed missing recipes for many fluid and item pipes @Pyritie
 - Fixed missing cleanroom tags for the ad astra 3x3 doors, so now you can *actually* use them in a cleanroom @Pyritie
 - Fixed aged sake, vodka, and whiskey losing their buff effects @Pyritie
 
