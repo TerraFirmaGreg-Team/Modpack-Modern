@@ -59,7 +59,7 @@
 			subtitle: "{quests.tfg.capture_territory.subtitle}"
 			tasks: [{
 				id: "5EB438DED5A994C4"
-				title: "{quests.tasktypes.checkmark}"
+				title: "{quests.tasktype.checkmark}"
 				type: "checkmark"
 			}]
 			title: "{quests.tfg.capture_territory.title}"
@@ -119,6 +119,7 @@
 				}
 			}
 			id: "590CE4F4FA385701"
+			optional: true
 			rewards: [
 				{
 					id: "58D1E7EFD006D7F7"
@@ -145,6 +146,29 @@
 			title: "{quests.tfg.books_again.title}"
 			x: 0.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["0B42D4AE2AC67F93"]
+			description: ["{quests.tfg.chunk_limit.desc}"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 18000L
+						traits: [ ]
+					}
+				}
+				id: "tfc:food/cherry"
+			}
+			id: "12BCC8F968904105"
+			tasks: [{
+				id: "6A9ABF4B83F7FC3E"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg.chunk_limit.title}"
+			x: -2.5d
+			y: 3.5d
 		}
 	]
 	subtitle: ["{quests.tfg.subtitle}"]

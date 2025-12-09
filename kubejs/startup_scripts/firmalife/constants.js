@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 /**
@@ -102,12 +102,12 @@ global.FIRMALIFE_JAMS = [
 
 global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = [
     { input: 'firmalife:plant/cocoa_sapling', fluid_amount: 8000, output: '3x firmalife:food/cocoa_beans', name: 'cocoa_beans' },
-    { input: 'firmalife:plant/fig_sapling', fluid_amount: 8000, output: '3x firmalife:food/fig', name: 'fig' },
+    { input: 'firmalife:plant/fig_sapling', fluid_amount: 8000, output: '3x firmalife:food/fig', name: 'fig' }
 ];
 
 global.FIRMALIFE_GREENHOUSE_BERRY_RECIPE_COMPONENTS = [
     { input: 'firmalife:plant/pineapple_bush', fluid_amount: 6000, output: '3x firmalife:food/pineapple', name: 'pineapple' },
-    { input: 'firmalife:plant/nightshade_bush', fluid_amount: 6000, output: '3x firmalife:food/nightshade_berry', name: 'nightshade' },
+    { input: 'firmalife:plant/nightshade_bush', fluid_amount: 6000, output: '3x firmalife:food/nightshade_berry', name: 'nightshade' }
 ];
 
 global.FIRMALIFE_COOKING_RECIPE_COMPONENTS = [

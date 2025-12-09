@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 /** @global */
@@ -9,7 +9,7 @@ global.CREATEDECO_DISABLED_ITEMS = /** @type {const} */ ([
     "createdeco:industrial_iron_sheet",
     "createdeco:netherite_nugget",
     "createdeco:industrial_iron_nugget",
-    "createdeco:industrial_iron_ingot",
+    "createdeco:industrial_iron_ingot"
 ]);
 
 /** @global */
@@ -21,7 +21,7 @@ global.CREATE_DECO_BRICK_TYPES = /** @type {const} */ ([
     "blue",
     "pearl",
     "dean",
-    "red",
+    "red"
 ]);
 
 global.CREATE_DECO_GLASS_PANES = /** @type {const} */ ([
@@ -30,7 +30,7 @@ global.CREATE_DECO_GLASS_PANES = /** @type {const} */ ([
     "createdeco:iron_window_pane",
     "createdeco:industrial_iron_window_pane",
     "createdeco:brass_window_pane",
-    "createdeco:zinc_window_pane",
+    "createdeco:zinc_window_pane"
 ]);
 
 global.CREATE_DECO_CATWALK_TYPES = /** @type {const} */ ([
@@ -39,5 +39,5 @@ global.CREATE_DECO_CATWALK_TYPES = /** @type {const} */ ([
 	"iron",
 	"copper",
 	"industrial_iron",
-	"zinc",
+	"zinc"
 ]);

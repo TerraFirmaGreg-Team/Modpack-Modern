@@ -129,18 +129,18 @@ function registerTFGRockRecipes(event) {
 
 	// #region LOOSE_TO_BRICKS
 	const LOOSE_TO_BRICKS = [
-		{ loose: 'tfg:loose/deepslate',      brick: 'tfg:brick/deepslate' },
-		{ loose: 'tfg:loose/dripstone',      brick: 'tfg:brick/dripstone' },
-		{ loose: 'tfg:loose/crackrack',      brick: 'minecraft:nether_brick' },
-		{ loose: 'tfg:loose/moon_stone',     brick: 'tfg:brick/moon_stone' },
-		{ loose: 'tfg:loose/moon_deepslate', brick: 'tfg:brick/moon_deepslate' },
-		{ loose: 'tfg:loose/mars_stone',     brick: 'tfg:brick/mars_stone' },
-		{ loose: 'tfg:loose/venus_stone',    brick: 'tfg:brick/venus_stone' },
-		{ loose: 'tfg:loose/mercury_stone',  brick: 'tfg:brick/mercury_stone' },
-		{ loose: 'tfg:loose/glacio_stone',   brick: 'tfg:brick/glacio_stone' },
-		{ loose: 'tfg:loose/permafrost',     brick: 'tfg:brick/permafrost' },
-		{ loose: 'tfg:loose/red_granite',    brick: 'tfg:brick/red_granite' },
-		
+		{ loose: 'tfg:loose/deepslate',       brick: 'tfg:brick/deepslate' },
+		{ loose: 'tfg:loose/dripstone',       brick: 'tfg:brick/dripstone' },
+		{ loose: 'tfg:loose/crackrack',       brick: 'minecraft:nether_brick' },
+		{ loose: 'tfg:loose/moon_stone',      brick: 'tfg:brick/moon_stone' },
+		{ loose: 'tfg:loose/moon_deepslate',  brick: 'tfg:brick/moon_deepslate' },
+		{ loose: 'tfg:loose/mars_stone',      brick: 'tfg:brick/mars_stone' },
+		{ loose: 'tfg:loose/venus_stone',     brick: 'tfg:brick/venus_stone' },
+		{ loose: 'tfg:loose/mercury_stone',   brick: 'tfg:brick/mercury_stone' },
+		{ loose: 'tfg:loose/glacio_stone',    brick: 'tfg:brick/glacio_stone' },
+		{ loose: 'tfg:loose/permafrost',      brick: 'tfg:brick/permafrost' },
+		{ loose: 'tfg:loose/red_granite',     brick: 'tfg:brick/red_granite' },
+		{ loose: 'beneath:blackstone_pebble', brick: 'beneath:blackstone_brick' }
 	]
 
 	LOOSE_TO_BRICKS.forEach(x => {
@@ -151,8 +151,8 @@ function registerTFGRockRecipes(event) {
 		event.recipes.gtceu.cutter(`${x.loose}_to_${x.brick}`.replace(/:/g, '_'))
 			.itemInputs(x.loose)
 			.itemOutputs(x.brick)
-			.duration(40)
-			.EUt(8)
+			.duration(10)
+			.EUt(2)
 	})
 	// #endregion LOOSE_TO_BRICKS
 
@@ -1162,6 +1162,10 @@ function registerTFGRockRecipes(event) {
 		{ block: 'create:ochrum',					dimension: 'ad_astra:mars'    },
 		{ block: 'create:scoria',					dimension: 'ad_astra:venus'   },
 		{ block: 'minecraft:tuff',					dimension: 'ad_astra:venus'   },
+		{ block: 'betterend:flavolite',             dimension: 'ad_astra:venus'   },
+		{ block: 'betterend:sandy_jadestone',       dimension: 'ad_astra:venus'   },
+		{ block: 'betterend:sulphuric_rock',        dimension: 'ad_astra:venus'   },
+		{ block: 'betterend:brimstone',             dimension: 'ad_astra:venus'   },
 		{ block: 'ad_astra:mercury_stone',			dimension: 'ad_astra:mercury' },
 		{ block: 'ad_astra:mercury_cobblestone',	dimension: 'ad_astra:mercury' },
 		{ block: 'create:crimsite',					dimension: 'ad_astra:mercury' },

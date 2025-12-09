@@ -557,33 +557,28 @@
 			y: 2.0357142857142847d
 		}
 		{
-			dependencies: ["74AE7DB845B88CF3"]
+			dependencies: [
+				"74AE7DB845B88CF3"
+				"0EFEE489906256AA"
+			]
+			dependency_requirement: "one_completed"
 			description: [
-				"In this quest, we'll bestow upon you &5cursed wisdom&r... the ability to easily automate the Electrolyzer."
-				""
-				"The &9Smart Item Filter&r is a filter that recognises Recipe Maps. When placed on the side of a machine, you can set it to \"&3Electrolyzer&r\" to allow insertion of electrolyzable items specifically. You heard that right - no need to filter manually!"
-				""
-				"Oh, and it only gets &abetter&r. If you combine this bad boy with a &aRobot Arm&r, it'll only supply the &6exact amount&r of items required for a successful recipe to the machine."
+				"{quests.tfg_tips.smart_item_filter.desc.1}"
 				"{@pagebreak}"
-				"Place the &aRobot Arm&r on your Electrolyzer, open its GUI, then place the &9Smart Filter&r inside. Ensure that the Smart Filter is set to Electrolyzer."
-				""
-				"Next, configure it to &d&lImport&r and &d&lSupply Exact&r. Finally, attach any inventory &7(a chest will do)&r onto the side where you placed the &aRobot Arm&r. Ta-dah! You've figured out how to handle &6all&r Electrolyzer recipes!"
-				""
-				"What about the output of the &3Electrolyzer&r? You may want to route the Fluids to several Tanks - or even &3Super Tanks&r if you've gotten that far. We highly recommend that you avoid any methods involving voiding Fluids.&7.&8. except for Water for obvious reasons."
+				"{quests.tfg_tips.smart_item_filter.desc.2}"
 				"{@pagebreak}"
-				"&9Note:&r The Robot Arm has to facilitate the item transfer for its filtering functionality to work! Inserting directly into the machine &7(for instance, pushing with a Hopper!)&r will ignore the Robot Arm's &dSupply Exact&r setting."
+				"{quests.tfg_tips.smart_item_filter.desc.3}"
 			]
 			icon: "gtceu:item_smart_filter"
 			id: "222295CD03AF00DC"
 			shape: "square"
 			size: 1.0d
-			subtitle: "Knock, knock - who's that? It's MENSA!"
+			subtitle: "{quests.tfg_tips.smart_item_filter.subtitle}"
 			tasks: [{
 				id: "11EC9A6D9E2C4B7E"
 				item: "gtceu:item_smart_filter"
 				type: "item"
 			}]
-			title: "200IQ"
 			x: 10.0d
 			y: 8.0d
 		}
@@ -621,18 +616,12 @@
 		}
 		{
 			dependencies: ["02FDECC931B5E8EF"]
-			description: [
-				"In theory, Crates are flat upgrades to Chests. A single block space that stores more items - what more could you ask for?"
-				""
-				"Unfortunately, there's a small downside - Crates do not support item movement shortcuts well. We plan on fixing this in the long-term."
-				""
-				"Where they shine however is the fact that they &6accept Covers&r, making them perfect candidates for buffers in automation."
-			]
+			description: ["{quests.tfg_tips.crates.desc}"]
 			icon: "gtceu:bronze_crate"
 			id: "6702D52922D85C0D"
 			shape: "square"
 			size: 1.0d
-			subtitle: "Earlygame buffering"
+			subtitle: "{quests.tfg_tips.crates.subtitle}"
 			tasks: [{
 				id: "2F8D9ACDF8EB5B8D"
 				item: {
@@ -644,38 +633,37 @@
 				}
 				type: "item"
 			}]
-			title: "GregTech Storage"
+			title: "{quests.tfg_tips.crates.title}"
 			x: 7.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["6702D52922D85C0D"]
-			description: ["With that tape you wil be able to move around the crate. The main advantage? You can put anything in a crate, weight won't be an issue here."]
+			description: ["{quests.tfg_tips.tape.desc}"]
 			icon: "gtceu:basic_tape"
 			id: "36B64597F76625ED"
 			shape: "square"
 			size: 1.0d
-			subtitle: "Moving stuff around"
+			subtitle: "{quests.tfg_tips.tape.subtitle}"
 			tasks: [{
 				id: "1257FC299E957859"
 				item: "gtceu:basic_tape"
 				type: "item"
 			}]
-			title: "Tape for Crate"
+			title: "{quests.tfg_tips.tape.title}"
 			x: 7.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["02FDECC931B5E8EF"]
-			description: ["With &5GregTech&r, you get access to various &6filters&r that help you ease into &aautomation&r. All of them are compatible with different &dCovers&r, which you'll learn more about during the &7LV&r Chapter.\\n\\nHere, we're introducing two more specific filters that you might find &bhandy&r in certain situations.\\n\\nTo use a filter, simply apply it as a &dCover&r on any &5GT Machine&r or &6pipe&r."]
+			description: ["{quests.tfg_tips.gt_filters.desc}"]
 			icon: "gtceu:item_filter"
 			id: "74AE7DB845B88CF3"
-			subtitle: "filters"
 			tasks: [{
 				id: "268110D7B7999A7B"
-				title: "Filters"
 				type: "checkmark"
 			}]
+			title: "{quests.tfg_tips.gt_filters.title}"
 			x: 9.0d
 			y: 8.5d
 		}
@@ -690,8 +678,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.nano_saber.title}"
-			x: 12.5d
-			y: 10.0d
+			x: 11.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["2D2CB8104E40E808"]
@@ -710,12 +698,12 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.magnets.title}"
-			x: 12.5d
+			x: 11.5d
 			y: 12.0d
 		}
 		{
 			dependencies: ["57FE828BAA8F6276"]
-			description: ["The &6Face Mask&r will protect you from &cinhaling dangerous dust&r. It’s quite &aeasy to craft&r and should prevent issues when working with &5arsenic&r."]
+			description: ["{quests.tfg_tips.face_mask.desc}"]
 			id: "361AC06D62D9BCCF"
 			tasks: [{
 				id: "7AC3F8AF754C76E2"
@@ -728,104 +716,72 @@
 				}
 				type: "item"
 			}]
-			x: 9.5d
-			y: 15.0d
-		}
-		{
-			dependencies: ["7516BF9C12015DF3"]
-			id: "103025F1C35CF578"
-			tasks: [{
-				id: "05DA89E5871EE93D"
-				item: {
-					Count: 1
-					id: "gtceu:nanomuscle_helmet"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 4.5d
-			y: 13.0d
+			x: 8.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["7516BF9C12015DF3"]
 			id: "38FF003C9349C0F2"
-			tasks: [{
-				id: "78123F2C1E8B08F5"
-				item: "gtceu:nanomuscle_chestplate"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 14.0d
-		}
-		{
-			dependencies: ["7516BF9C12015DF3"]
-			id: "4497F39E06A14406"
-			tasks: [{
-				id: "430BB68AD2F334C3"
-				item: "gtceu:nanomuscle_leggings"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 15.0d
-		}
-		{
-			dependencies: ["7516BF9C12015DF3"]
-			id: "61E1244FF797F11F"
-			tasks: [{
-				id: "1C5E79A87E343C64"
-				item: "gtceu:nanomuscle_boots"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 16.0d
-		}
-		{
-			dependencies: ["7516BF9C12015DF3"]
-			id: "20565B5D56786A6E"
-			tasks: [{
-				id: "51DBD71B96BB2673"
-				item: {
-					Count: 1
-					id: "gtceu:quarktech_helmet"
-					tag: { }
+			tasks: [
+				{
+					id: "7C3E295B35639EC9"
+					item: {
+						Count: 1
+						id: "gtceu:nanomuscle_helmet"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
-			x: 6.5d
-			y: 13.0d
+				{
+					id: "5A6F7D3FBD64E383"
+					item: "gtceu:nanomuscle_chestplate"
+					type: "item"
+				}
+				{
+					id: "71FC38DE4929E578"
+					item: "gtceu:nanomuscle_leggings"
+					type: "item"
+				}
+				{
+					id: "275CF158B69FF055"
+					item: "gtceu:nanomuscle_boots"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["7516BF9C12015DF3"]
 			id: "4D5B75F5270CCBD3"
-			tasks: [{
-				id: "6624FAF8B9BBD4CA"
-				item: "gtceu:quarktech_chestplate"
-				type: "item"
-			}]
-			x: 6.5d
+			tasks: [
+				{
+					id: "4DFF8E5F32E7AFC3"
+					item: {
+						Count: 1
+						id: "gtceu:quarktech_helmet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "3AA49E7CEA246A9B"
+					item: "gtceu:quarktech_chestplate"
+					type: "item"
+				}
+				{
+					id: "573F87C0CFC826DA"
+					item: "gtceu:quarktech_leggings"
+					type: "item"
+				}
+				{
+					id: "0452DFF0948B9B3E"
+					item: "gtceu:quarktech_boots"
+					type: "item"
+				}
+			]
+			x: 6.0d
 			y: 14.0d
-		}
-		{
-			dependencies: ["7516BF9C12015DF3"]
-			id: "31CE775295A1BBF1"
-			tasks: [{
-				id: "6EAB7217D35DDF42"
-				item: "gtceu:quarktech_leggings"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 15.0d
-		}
-		{
-			dependencies: ["7516BF9C12015DF3"]
-			id: "2613FA0502BB5F12"
-			tasks: [{
-				id: "6A740FDB1D788187"
-				item: "gtceu:quarktech_boots"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 16.0d
 		}
 		{
 			dependencies: ["4D5B75F5270CCBD3"]
@@ -839,32 +795,16 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 14.0d
-		}
-		{
-			dependencies: ["2D2CB8104E40E808"]
-			description: ["{quests.tfg_tips.gt_tools.desc}"]
-			id: "2CA86664C6E0C888"
-			subtitle: "{quests.tfg_tips.gt_tools.subtitle}"
-			tasks: [{
-				id: "153D23778A26C74F"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:lv_power_unit)item(gtceu:mv_power_unit)item(gtceu:hv_power_unit)item(gtceu:ev_power_unit)item(gtceu:iv_power_unit))"
-					}
-				}
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.gt_tools.title}"
-			x: 12.5d
-			y: 11.0d
+			x: 6.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["02FDECC931B5E8EF"]
-			description: ["As with any good tech mod, &5GregTech&r comes with a wide variety of &6tools&r you can use. To operate them, you'll need to &acharge them with energy&r — and there are several ways to do that: place the tool in a &6Battery Buffer&r, in an &denergy slot&r of a machine, or even better, use a &eTurbo Charger&r.\\n\\nJust remember: you can only charge an item using a power source of &7equal&r or &ahigher tier&r. &cLower-tier sources&r won’t work on higher-tier tools — but don’t worry, &cnothing should explode&r. Probably."]
+			description: [
+				"{quests.tfg_tips.gt_power_tools.desc.1}"
+				"{@pagebreak}"
+				"{quests.tfg_tips.gt_power_tools.desc.2}"
+			]
 			icon: {
 				Count: 1
 				id: "gtceu:iv_copper_drill"
@@ -892,6 +832,7 @@
 				}
 			}
 			id: "2D2CB8104E40E808"
+			subtitle: "{quests.tfg_tips.gt_power_tools.subtitle}"
 			tasks: [
 				{
 					id: "5DA224C235E227E3"
@@ -905,12 +846,13 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
-			y: 11.0d
+			title: "{quests.tfg_tips.gt_power_tools.title}"
+			x: 10.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["02FDECC931B5E8EF"]
-			description: ["With &5GregTech&r comes its own line of armor. Sure, it was cool to wear &7metal plates&r, but now that you're an &bindustrial maniac&r, maybe it's time to check out some &atechnological armor&r.\\n\\n&5GregTech&r provides two models. The first one becomes available around &6HV&r and offers better protection than anything you've worn before. It's equipped with &estrong insulation&r to withstand Earth's harsh climate, and it may even be upgraded with a &dJetpack&r.\\n\\nThe second model won't be available until much later — around &1IV&r and &dLuV&r. This one will allow you to &9breathe in space&r using &3oxygen&r."]
+			description: ["{quests.tfg_tips.armor.desc}"]
 			icon: "gtceu:advanced_integrated_circuit"
 			id: "7516BF9C12015DF3"
 			tasks: [{
@@ -918,25 +860,28 @@
 				title: "Armor"
 				type: "checkmark"
 			}]
+			title: "{quests.tfg_tips.armor.title}"
 			x: 5.5d
 			y: 13.0d
 		}
 		{
 			dependencies: ["02FDECC931B5E8EF"]
-			description: ["With the new version of &5Gregtech&r, a &chazard system&r has been introduced. By holding &dShift&r while hovering over &cHazardous Materials&r, you can see how they might affect you.\\n\\nWe strongly advise using proper &6protective equipment&r to keep your &corgans intact&r."]
-			icon: "gtceu:generic_hazard_sign_block"
+			description: ["{quests.tfg_tips.hazard_materials.desc}"]
+			icon: "createdeco:decal_skull"
 			id: "57FE828BAA8F6276"
+			subtitle: "{quests.tfg_tips.hazard_materials.subtitle}"
 			tasks: [{
 				id: "2BB4EAF68B305732"
 				title: "Hazard"
 				type: "checkmark"
 			}]
+			title: "{quests.tfg_tips.hazard_materials.title}"
 			x: 9.5d
 			y: 14.0d
 		}
 		{
 			dependencies: ["57FE828BAA8F6276"]
-			description: ["The &6Gloves&r will obviously protect you from &cskin contact hazards&r. You have two ways to make them: a &7longer and more involved path&r through &2TerrafirmaCraft&r, or a much &aeasier method&r using the &6High Pressure Steam Alloy Smelter&r."]
+			description: ["{quests.tfg_tips.rubber_gloves.desc}"]
 			id: "3DB4AD491EF28CBE"
 			tasks: [{
 				id: "32F0E30B11FE80E4"
@@ -954,7 +899,7 @@
 		}
 		{
 			dependencies: ["57FE828BAA8F6276"]
-			description: ["The &6Hazardous Materials Suit&r is the best way to protect yourself from &cany kind of harm&r. You’ll be able to craft it once you reach &bMV&r, and &ayou should definitely take the time to do so&r."]
+			description: ["{quests.tfg_tips.hazmat.desc}"]
 			id: "784A0743B257EAEB"
 			tasks: [
 				{
@@ -1002,26 +947,18 @@
 					type: "item"
 				}
 			]
-			x: 10.5d
+			title: "{quests.tfg_tips.hazmat.title}"
+			x: 9.5d
 			y: 15.0d
 		}
 		{
 			dependencies: ["02FDECC931B5E8EF"]
-			description: [
-				"&3Long-Distance Fluid Pipes&r can be used to send fluids across great distances. Place one endpoint at each end, and connect them with pipeline blocks."
-				""
-				"These pipes instantly transfer from the input side to the output side."
-				""
-				"They also have a minimum distance between pipe endpoints, so you can't use these for short-range operations."
-				"{@pagebreak}"
-				"These pipes have a reputation of being &4buggy&r to set up. If they don't seem to work at first, try rotating the endpoints with a &eWrench&r."
-			]
+			description: ["{quests.tfg_tips.long_distance_fluids.desc}"]
 			icon: "gtceu:long_distance_fluid_pipeline_endpoint"
 			id: "0B1AA0D4CEBD06A8"
-			optional: true
 			shape: "square"
 			size: 1.0d
-			subtitle: "Wondering how to move that oil around?"
+			subtitle: "{quests.tfg_tips.long_distance_fluids.subtitle}"
 			tasks: [
 				{
 					count: 2L
@@ -1035,24 +972,18 @@
 					type: "item"
 				}
 			]
-			title: "Long-Distance Pipeline"
+			title: "{quests.tfg_tips.long_distance_fluids.title}"
 			x: 6.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["02FDECC931B5E8EF"]
-			description: [
-				"&3Long-Distance Item Pipes&r can be used to send items across great distances. Place one endpoint at each end, and connect them with pipeline blocks."
-				""
-				"These pipes instantly transfer from the input side to the output side."
-				""
-				"They also have a minimum distance between pipe endpoints, so you can't use these for short-range operations."
-			]
+			description: ["{quests.tfg_tips.long_distance_items.desc}"]
 			icon: "gtceu:long_distance_item_pipeline_endpoint"
 			id: "22B0E30FF38145E7"
 			shape: "square"
 			size: 1.0d
-			subtitle: "Wondering how to move those ores around?"
+			subtitle: "{quests.tfg_tips.long_distance_items.subtitle}"
 			tasks: [
 				{
 					count: 2L
@@ -1066,7 +997,7 @@
 					type: "item"
 				}
 			]
-			title: "Long-Distance Items"
+			title: "{quests.tfg_tips.long_distance_items.title}"
 			x: 5.0d
 			y: 6.0d
 		}
@@ -1092,8 +1023,9 @@
 		}
 		{
 			dependencies: ["02FDECC931B5E8EF"]
-			description: ["You may have realized that most &eMultiblocks&r require a &6Maintenance Hatch&r. Until &6HV&r, where you can get an &aAutomatic Maintenance Hatch&r, you can use this item to fix the hatch without needing to use all of your maintenance tools.\\n\\nIt can be really useful if you don't want to invest in an &aAuto Maintenance Hatch&r yet, or if you're simply &cnot there yet&r."]
+			description: ["{quests.tfg_tips.duct_tape.desc}"]
 			id: "179E89C50E900DC0"
+			subtitle: "{quests.tfg_tips.duct_tape.subtitle}"
 			tasks: [{
 				id: "7D2E6F5F843864DE"
 				item: "gtceu:duct_tape"
@@ -1106,18 +1038,14 @@
 			dependencies: ["02FDECC931B5E8EF"]
 			dependency_requirement: "one_completed"
 			description: [
-				"The &aPortable Scanner&r, or &aTricorder&r, is GTCEu's debug tool."
-				""
-				"Using it will show you a block's details, the details of the energy network, its current status and contents, and its impact on performance."
-				""
-				"It'll also display a percentage of fluid remaining in the fluid vein for the &3Fluid Rigs&r."
+				"{quests.tfg_tips.portable_scanner.desc.1}"
 				"{@pagebreak}"
-				"&l&3Lore:&r&o This little useful device comes from GregTech 5. It was extremely useful in the early days, because very little information (basically nothing) was given by GUIs or WAILA."
+				"{quests.tfg_tips.portable_scanner.desc.2}"
 			]
 			id: "58D40A430654C997"
 			shape: "square"
 			size: 1.0d
-			subtitle: "For the nosiest GregTech players"
+			subtitle: "{quests.tfg_tips.portable_scanner.subtitle}"
 			tasks: [{
 				id: "1E2E112D32893B8D"
 				item: "gtceu:portable_scanner"
@@ -1129,8 +1057,9 @@
 		}
 		{
 			dependencies: ["02FDECC931B5E8EF"]
-			description: ["When you try to &aparallelize your setup&r with more machines, it can be a &cbother&r to set all the &einputs&r and &eoutputs&r for each one. Yeah, we're thinking of you, &dSuper Chests&r and &dTanks&r.\\n\\nIf you ever find yourself needing this &blittle tool&r, &adon't hesitate to use it&r."]
+			description: ["{quests.tfg_tips.memory_card.desc}"]
 			id: "7D5E9CFBE5990DFF"
+			subtitle: "{quests.tfg_tips.memory_card.subtitle}"
 			tasks: [{
 				id: "39E0696844506874"
 				item: "gtceu:machine_memory_card"
@@ -1141,8 +1070,9 @@
 		}
 		{
 			dependencies: ["02FDECC931B5E8EF"]
-			description: ["&bThe Terminal&r has one main purpose, and &awe highly encourage you to craft it&r.\\n\\nBuilding all these &eMultiblocks&r can be a bit &cintimidating&r, right? Well, here's a tip: use &dShift + Right-Click&r on any &6Multiblock Controller&r to &aautomatically assemble the entire structure&r!\\n\\nYou might need to &emove around some buses and hatches&r to suit your setup, but overall, this feature will save you a &alot of time&r."]
+			description: ["{quests.tfg_tips.terminal.desc}"]
 			id: "2F6C9A987865B966"
+			subtitle: "{quests.tfg_tips.terminal.subtitle}"
 			tasks: [{
 				id: "6A86F6C3566828BF"
 				item: "gtceu:terminal"
@@ -1163,8 +1093,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.5d
-			y: 14.0d
+			x: 5.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["037CDA933FBE2CBE"]
@@ -2926,6 +2856,27 @@
 			title: "{quests.tfg_tips.tools_tips.gravel_roads.title}"
 			x: -1.0d
 			y: -8.5d
+		}
+		{
+			dependencies: ["150B7C5CD152E1BA"]
+			description: ["{quests.tfg_tips.feeding_troughs.desc}"]
+			id: "343A712E8869482A"
+			subtitle: "{quests.tfg_tips.feeding_troughs.subtitle}"
+			tasks: [{
+				id: "3F76A6864626C87F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfcgroomer:copper_grooming_station)item(tfcgroomer:bronze_grooming_station)item(tfcgroomer:bismuth_bronze_grooming_station)item(tfcgroomer:black_bronze_grooming_station)item(tfcgroomer:wrought_iron_grooming_station)item(tfcgroomer:steel_grooming_station)item(tfcgroomer:black_steel_grooming_station)item(tfcgroomer:blue_steel_grooming_station)item(tfcgroomer:red_steel_grooming_station))"
+					}
+				}
+				title: "{quests.tfg_tips.feeding_troughs.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.feeding_troughs.title}"
+			x: -4.5d
+			y: 6.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.tools_tips.subtitle}"]
