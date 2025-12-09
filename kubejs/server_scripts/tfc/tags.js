@@ -584,6 +584,10 @@ function registerTFCFluidTags(event) {
             if (temp >= 1300) {
                 event.add("tfchotornot:hot_whitelist", idStr);
             }
+            // Frostburns ya.
+            if (temp < 223) {
+                event.add("tfchotornot:cold_whitelist", idStr);
+            }
             // Blue steel: can do heat, can't do cryo.
             if (temp >= 120) {
                 event.add("tfc:usable_in_blue_steel_bucket", idStr);
@@ -611,7 +615,9 @@ function registerTFCFluidTags(event) {
 			const isPlasmatic = wrapperHas(plasmaticWrapper);
             const isHidden = wrapperHas(hiddenWrapper);
 
-			if (isGaseous || isPlasmatic || isHidden) return;
+            if (isGaseous || isPlasmatic || isHidden)
+                return;
+
 			event.add('forge:liquid', idString);
 		};
 

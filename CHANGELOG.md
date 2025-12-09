@@ -4,6 +4,7 @@
 ### Changes
 - Doubled the durability of all space suits @Pyritie
 ### Bug fixes
+- Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie
 ### Translation updates
 
 ## [0.11.10] - 9-12-2025
