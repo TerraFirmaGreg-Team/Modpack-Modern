@@ -9,6 +9,7 @@
 - Fixed missing recipes for many fluid and item pipes @Pyritie
 - Fixed missing cleanroom tags for the ad astra 3x3 doors, so now you can *actually* use them in a cleanroom @Pyritie
 - Fixed aged sake, vodka, and whiskey losing their buff effects @Pyritie
+- Fixed some inconsistencies with loose rocks into bricks (#2353) @Pyritie
 
 ## [0.11.9] - 7-12-2025
 ### Breaking Changes
