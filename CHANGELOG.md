@@ -2,6 +2,7 @@
 
 ## Unreleased
 ### Changes
+- Doubled the durability of all space suits @Pyritie
 ### Bug fixes
 ### Translation updates
 
