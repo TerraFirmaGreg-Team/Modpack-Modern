@@ -12,6 +12,8 @@ const registerHotOrNotItemTags = (event) => {
     event.add('tfchotornot:hot_whitelist', '#forge:hot_ingots')
 
     event.add('firmalife:usable_on_oven', '#tfchotornot:insulating')
+
+    event.add('tfg:insulating_container', 'gtceu:ulv_super_tank')
 }
 
 const registerHotOrNotBlockTags = (event) => {
