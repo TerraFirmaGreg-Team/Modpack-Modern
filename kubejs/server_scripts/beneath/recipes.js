@@ -10,12 +10,15 @@ const registerBeneathRecipes = (event) => {
 
 	event.remove({ id: 'beneath:collapse/basalt' })
 	event.remove({ id: 'beneath:collapse/nether_bricks' })
+	event.remove({ id: 'beneath:crafting/nether_bricks' })
 	event.remove({ id: 'beneath:crafting/blackstone' })
 	event.remove({ id: 'beneath:crafting/blackstone_uncraft' })
+	event.remove({ id: 'beneath:crafting/blackstone_bricks' })
 	event.remove({ id: 'beneath:crafting/blackstone_bricks_from_soot' })
 	event.remove({ id: 'beneath:crafting/blackstone_from_soot' })
 	event.remove({ id: 'beneath:crafting/blackstone_plate' })
 	event.remove({ id: 'beneath:crafting/blackstone_button' })
+	event.remove({ id: 'beneath:crafting/blackstone_aqueduct' })
 	event.remove({ id: 'beneath:crafting/hellbricks' })
 	event.remove({ id: 'beneath:crafting/nether_brick' })
 	event.remove({ id: 'beneath:quern/slime' })
@@ -57,13 +60,6 @@ const registerBeneathRecipes = (event) => {
 		'tfc:powder/sulfur',
 		'tfc:powder/wood_ash'
 	]).id('tfg:shapeless/hellbricks_from_wood_ash')
-
-	event.recipes.gtceu.assembler("loose_blackstone_to_bricks")
-		.itemInputs('beneath:blackstone_pebble')
-		.itemOutputs('beneath:blackstone_brick')
-		.circuit(1)
-		.duration(40)
-		.EUt(8)
 
 	event.recipes.tfc.landslide('beneath:soul_clay', 'beneath:soul_clay')
 

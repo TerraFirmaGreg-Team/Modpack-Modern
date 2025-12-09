@@ -1,0 +1,188 @@
+{
+	"contents": [
+		{
+			"type": "atom",
+			"element": "O",
+			"index": 0,
+			"x": 2.0691,
+			"y": 1.2298
+		},
+		{
+			"type": "atom",
+			"index": 1,
+			"x": 1.7601,
+			"y": 0.2788
+		},
+		{
+			"type": "atom",
+			"index": 2,
+			"x": 2.5691,
+			"y": -0.309
+		},
+		{
+			"type": "atom",
+			"index": 3,
+			"x": 3.3781,
+			"y": 0.2788
+		},
+		{
+			"type": "atom",
+			"index": 4,
+			"x": 3.0691,
+			"y": 1.2298
+		},
+		{
+			"type": "atom",
+			"index": 5,
+			"x": 0.9511,
+			"y": -0.309
+		},
+		{
+			"type": "atom",
+			"index": 6,
+			"x": 1.2601,
+			"y": -1.26
+		},
+		{
+			"type": "atom",
+			"element": "O",
+			"index": 7,
+			"x": 2.2601,
+			"y": -1.26
+		},
+		{
+			"type": "atom",
+			"element": "H",
+			"index": 8,
+			"x": 3.3781,
+			"y": -0.8968
+		},
+		{
+			"type": "atom",
+			"element": "H",
+			"index": 9,
+			"x": 0.9511,
+			"y": 0.8666
+		},
+		{
+			"type": "atom",
+			"element": "O",
+			"left": "H",
+			"index": 10,
+			"x": 0.0,
+			"y": 0.0
+		},
+		{
+			"type": "atom",
+			"element": "O",
+			"right": "H",
+			"index": 11,
+			"x": 4.3292,
+			"y": -0.0302
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 4,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 4,
+			"b": 3,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 3,
+			"b": 2,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 2,
+			"b": 1,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 1,
+			"b": 0,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 2,
+			"b": 7,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 7,
+			"b": 6,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 6,
+			"b": 5,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 5,
+			"b": 1,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 2,
+			"b": 8,
+			"lines": [
+				"inward"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 1,
+			"b": 9,
+			"lines": [
+				"inward"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 5,
+			"b": 10,
+			"lines": [
+				"inward"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 3,
+			"b": 11,
+			"lines": [
+				"outward"
+			]
+		}
+	]
+}

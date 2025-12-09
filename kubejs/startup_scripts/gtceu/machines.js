@@ -468,7 +468,7 @@ const registerGTCEuMachines = (event) => {
 				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1)))
 			.where('C', Predicates.blocks('gtceu:solid_machine_casing')
 				.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(2))
-				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1).setMaxGlobalLimited(2).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1).setPreviewCount(1))
 				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1).setPreviewCount(1)))
 			.where('D', Predicates.blocks('create:metal_girder'))
 			.where('E', Predicates.blocks('gtceu:steam_machine_casing'))

@@ -8,7 +8,7 @@ const registerTFGRecipes = (event) => {
 	
 	registerTFGMoldRecipes(event)
 	registerTFGMiscellaneousRecipes(event)
-	registerTFGConvertingRecipes(event)
+	registerTFGTemporaryRecipes(event)
 
 	registerTFGFoodRecipes(event)
 	registerTFGRefrigeratorRecipes(event)
@@ -79,5 +79,6 @@ const registerTFGRecipes = (event) => {
 	registerTFGMarsIodineRecipes(event)
 	registerTFGMarsOstrumRecipes(event)
 
+	registerTFGVenusRecipes(event)
 	registerTFGBiochemRecipes(event)
 }

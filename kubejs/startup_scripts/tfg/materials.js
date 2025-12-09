@@ -3,11 +3,21 @@
 
 const registerTFGMaterials = (event) => {
 
+	//#region placeholder materials
 	event.create('unknown')
 		.color('0xFFFFFF')
 		.formula('?')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		
+	event.create('ammonium')
+		.components('1x nitrogen', '4x hydrogen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('methoxy')
+		.components('1x oxygen', '1x carbon', '3x hydrogen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+	//#endregion	
+	
 	registerTFGPowerReworkMaterials(event);
 	registerTFGNuclearMaterials(event);
 	registerTFGBiolineMaterials(event);
@@ -172,7 +182,7 @@ const registerTFGMaterials = (event) => {
 		.ingot()
 		.color(0xFADED2)
 		.secondaryColor(0x4FA883)
-		.iconSet('shiny')
+		.iconSet('chonky')
 		.components('1x zirconium', '2x boron')
 		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL)
 
