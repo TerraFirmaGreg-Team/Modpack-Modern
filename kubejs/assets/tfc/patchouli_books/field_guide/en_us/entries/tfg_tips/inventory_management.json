@@ -29,7 +29,7 @@
 			"type": "patchouli:text",
 			"title": "Drums",
 			"anchor": "drums",
-			"text": "For storing fluids, GregTech has $(item)Drums$(). These can hold a large amount of a single fluid type, and different tiers hold more, just like with crates.$(br2)Unlike crates, drums will retain their fluid when broken, making them ideal for moving fluids around.$(br2)Drums can automatically push their fluid out of their bottom face by right-clicking them with a $(thing)Soft Mallet$()."
+			"text": "For storing fluids, GregTech has $(item)Drums$(). These can hold a large amount of a single fluid type, and different tiers hold more, just like with crates.$(br2)Unlike crates, drums will retain their fluid when broken, making them ideal for moving fluids around.$(br2)Drums can automatically push their fluid out of their bottom face by right-clicking them with a $(thing)Soft Mallet$() or $(thing)Screwdriver$()."
 		},
 		{
 			"type": "patchouli:crafting",
