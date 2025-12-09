@@ -274,6 +274,53 @@ const registerTFGNuclearMaterials = (event) => {
 		.radioactiveHazard(10000000)
 
 	//#endregion
+	
+	//#region Epoxidized Isosorbide Linolenate
+	event.create('tfg:glucose')
+		.dust()
+		.components('6x carbon', '12x hydrogen', '6x oxygen')
+		.color(0xFFE9E3)
+	event.create('tfg:galactose')
+		.dust()
+		.components('6x carbon', '12x hydrogen', '6x oxygen')
+		.color(0xEBE3FF)
+	event.create('tfg:fructose')
+		.dust()
+		.components('6x carbon', '12x hydrogen', '6x oxygen')
+		.iconSet(GTMaterialIconSet.SHINY)
+		.color(0xE6FFE3)
+	event.create('tfg:sorbitol')
+		.dust()
+		.components('6x carbon', '14x hydrogen', '6x oxygen')
+		.iconSet(GTMaterialIconSet.FINE)
+		.color(0xDEFEFF)
+	event.create('tfg:14_sorbitan')
+		.dust()
+		.components('6x carbon', '12x hydrogen', '5x oxygen')
+		.iconSet(GTMaterialIconSet.FINE)
+		.color(0xB1F1F2)
+	event.create('tfg:isosorbide')
+		.dust()
+		.components('6x carbon', '10x hydrogen', '4x oxygen')
+		.iconSet(GTMaterialIconSet.FINE)
+		.color(0x84D6DB)
+	event.create('tfg:linolenic_acid')
+		.liquid()
+		.components('18x carbon', '30x hydrogen', '2x oxygen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xF5D478)
+	event.create('tfg:isosorbide_ln')
+		.liquid()
+		.components('42x carbon', '66x hydrogen', '6x oxygen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xDB5178)
+	event.create('tfg:epox_isosorbide_ln')
+		.liquid()
+		.components('42x carbon', '66x hydrogen', '12x oxygen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xAB2748)
+	
+	//#endregion
 
 	//#region Isotopic Solvent
 

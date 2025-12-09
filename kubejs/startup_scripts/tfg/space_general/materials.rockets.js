@@ -120,7 +120,7 @@ function registerTFGRocketMaterials(event) {
 	//#region aerogel
 	event.create('tfg:tmos')
 		.liquid()
-		.formula("Si(OCH3)4")
+		.components('1x silicon', '4x methoxy')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xC2C6CC)
 	event.create('tfg:silica_gel')
