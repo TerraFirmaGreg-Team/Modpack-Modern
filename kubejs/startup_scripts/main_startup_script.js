@@ -1,5 +1,5 @@
 // priority: 0
-// requires: constants
+// requires: common
 "use strict";
 
 StartupEvents.registry('item', event => {
@@ -71,7 +71,7 @@ GTCEuStartupEvents.craftingComponents(event => {
 	registerTFGCraftingComponents(event)
 })
 
-StartupEvents.modifyCreativeTab('create:base', event => {
+StartupEvents.modifyCreativeTab(global.TAB_IDS.CREATE_BASE, event => {
     modifyCreateCreativeTab(event)
 })
 
