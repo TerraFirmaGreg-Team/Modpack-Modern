@@ -9210,7 +9210,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "modernfix-forge-5.25.1+mc1.20.1.jar",
+                    "file_name": "modernfix-forge-5.25.2+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9218,20 +9218,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/PbIMs8a8/modernfix-forge-5.25.1+mc1.20.1.jar",
-                    "id": "PbIMs8a8",
+                    "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/scXW7F8Q/modernfix-forge-5.25.2+mc1.20.1.jar",
+                    "id": "scXW7F8Q",
                     "parent_id": "nmDcB62a",
                     "hashes": {
-                        "sha512": "16ed32ed2e9e153cd6adad6d5d32280f33ce79b5b9829576f26bab9c8f37e1c415a49c86d11839de9527ab1c5222e32946792b5819d9f6a76daffeea305a3848",
-                        "sha1": "124ea5db8c3b7dc00166806ef0fc412177882fda"
+                        "sha512": "016940bd76b36865f507c07fc7834ea7dc6f7a6c0016aebf6375ee05a9405f2730e07c555ab8ce920775fce3b5a29ff5b638b67f29c03458074650478d37242a",
+                        "sha1": "4069534174e618393f0c14d9dc61ac27a04bb992"
                     },
                     "required_dependencies": [],
-                    "size": 895267,
-                    "date_published": "2025-11-08T20:05:06.924760Z"
+                    "size": 895444,
+                    "date_published": "2025-12-08T02:42:23.149141Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "modernfix-forge-5.25.1+mc1.20.1.jar",
+                    "file_name": "modernfix-forge-5.25.2+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9239,16 +9239,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7200/213/modernfix-forge-5.25.1+mc1.20.1.jar",
-                    "id": "7200213",
+                    "url": "https://edge.forgecdn.net/files/7306/749/modernfix-forge-5.25.2+mc1.20.1.jar",
+                    "id": "7306749",
                     "parent_id": "790626",
                     "hashes": {
-                        "sha1": "124ea5db8c3b7dc00166806ef0fc412177882fda",
-                        "md5": "3e7c495f3e3b9057c5e6227119e5b614"
+                        "sha1": "4069534174e618393f0c14d9dc61ac27a04bb992",
+                        "md5": "893b2aba13f35bd7ed3fdad2ca15a4d4"
                     },
                     "required_dependencies": [],
-                    "size": 895267,
-                    "date_published": "2025-11-08T20:05:01.880Z"
+                    "size": 895444,
+                    "date_published": "2025-12-08T02:42:18.980Z"
                 }
             ]
         },
@@ -13815,7 +13815,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.7.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13824,23 +13824,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/bROqTVck/TerraFirmaGreg-Core-Modern-0.8.7.jar",
-                    "id": "bROqTVck",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/6FdOjis1/TerraFirmaGreg-Core-Modern-0.8.8.jar",
+                    "id": "6FdOjis1",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "136f0851e89bdb911d319ed12aac0f2803d0b7d74ca18ad2fb6330ebc5965e0fee82862ea87f49901aa41783cea98a4968786b8ff2fb1503f90e3e828e79ee44",
-                        "sha1": "c0c1a2c44998b630ad56be665017896287cf685c"
+                        "sha512": "ebc09725e0662ff8059a605397f12fb49c300807aacd27742c858ac436e8730350516ed7697925047686a838932371812f58bee49e11802a387cbe9d315121f0",
+                        "sha1": "75551167d5d6c8c61ae7ae713b3a767bf1bcb321"
                     },
                     "required_dependencies": [
-                        "7tG215v7",
-                        "JaCEZUhg"
+                        "JaCEZUhg",
+                        "7tG215v7"
                     ],
-                    "size": 9315464,
-                    "date_published": "2025-12-07T21:45:07.908480Z"
+                    "size": 9321318,
+                    "date_published": "2025-12-09T11:16:17.379839Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.7.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13849,19 +13849,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7305/932/TerraFirmaGreg-Core-Modern-0.8.7.jar",
-                    "id": "7305932",
+                    "url": "https://edge.forgecdn.net/files/7311/305/TerraFirmaGreg-Core-Modern-0.8.8.jar",
+                    "id": "7311305",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "c0c1a2c44998b630ad56be665017896287cf685c",
-                        "md5": "e4dcd7222073266fe1188fe52ca35d5f"
+                        "sha1": "75551167d5d6c8c61ae7ae713b3a767bf1bcb321",
+                        "md5": "5f9e1df5cbe3f1421d23e1c15b712aca"
                     },
                     "required_dependencies": [
-                        "302973",
-                        "890405"
+                        "890405",
+                        "302973"
                     ],
-                    "size": 9315464,
-                    "date_published": "2025-12-07T21:45:02.070Z"
+                    "size": 9321318,
+                    "date_published": "2025-12-09T11:16:13.343Z"
                 }
             ]
         },

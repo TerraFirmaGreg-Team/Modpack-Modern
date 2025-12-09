@@ -1,15 +1,27 @@
 # Changelog
 
 ## Unreleased
+### Changes
+### Bug fixes
+### Translation updates
+
+## [0.11.10] - 9-12-2025
 ### Breaking Changes
 - Butyraldehyde in a chemical reactor now uses circuit 5 instead of 1 to avoid a conflict with Methanol @Pyritie
 ### Other Changes
 - Added recipes for create's shadow and radiant casings (#2256) @Ujhik
+- Some small quest and field guide additions and fixes (#2348, #2356) @Pyritie @jmecn
+- Adjusted the spawn weights of primitive illagers @Pyritie
 ### Bug fixes
-- Fixed missing recipes for many fluid and item pipes @Pyritie
+- Fixed a crash on boot on some linux systems (#2347, #2355) @Redeix @mgsmyrk
+- Fixed missing recipes for many fluid and item pipes (#2359) @Pyritie
 - Fixed missing cleanroom tags for the ad astra 3x3 doors, so now you can *actually* use them in a cleanroom @Pyritie
 - Fixed aged sake, vodka, and whiskey losing their buff effects @Pyritie
 - Fixed some inconsistencies with loose rocks into bricks (#2353) @Pyritie
+- Fixed a tag issue with some purified ores and Create's crushed ore tag (#2339) @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Japanese @sakura-gondra
 
 ## [0.11.9] - 7-12-2025
 ### Breaking Changes

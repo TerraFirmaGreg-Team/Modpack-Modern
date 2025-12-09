@@ -30,7 +30,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.components('2x hydrogen', '1x oxygen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-	event.create('critical_steam')
+	event.create('tfg:critical_steam')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(3730))
 		.components('2x hydrogen', '1x oxygen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
