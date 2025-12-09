@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 global.RAIL_WAYS_DISABLED_ITEMS = [

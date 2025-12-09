@@ -1,3 +1,4 @@
+// priority: -100
 "use strict";
 
 global.ALEKISHIPS_DISABLED_ITEMS = [
