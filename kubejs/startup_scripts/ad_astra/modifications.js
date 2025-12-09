@@ -31,7 +31,10 @@ function registerAdAstraBlockModifications(event) {
 	event.modify('ad_astra:aeronos_cap', block => {
 		block.lightEmission = 0
 	})
+}
 
+function registerAdAstraItemModifications(event) {
+	
 	const space_suits = [
 		'ad_astra:space_helmet',
 		'ad_astra:space_suit',
