@@ -116,6 +116,10 @@ function registerTFGCasingBlocks(event) {
 		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
 		.mapColor('color_brown')
 
+	event.create('tfg:casings/test_casing')
+		.soundType('copper')
+		.hardness(5)
+		.resistance(6)
+		.tagBoth('c:hidden_from_recipe_viewers')
 
-	
 }
