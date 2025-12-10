@@ -36,6 +36,8 @@ const registerHotOrNotItemTags = (event) => {
 
     event.add('tfg:prevents_gas_floating', 'create:copper_diving_boots')
     event.add('tfg:prevents_gas_floating', 'create:netherite_diving_boots')
+    event.add('tfg:prevents_gas_floating', 'ad_astra:space_boots')
+    event.add('tfg:prevents_gas_floating', 'ad_astra:netherite_space_boots')
 }
 
 const registerHotOrNotFluidTags = (event) => {
