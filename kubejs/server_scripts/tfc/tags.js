@@ -584,8 +584,8 @@ function registerTFCFluidTags(event) {
             if (temp >= 1300) {
                 event.add("tfchotornot:hot_whitelist", idStr);
             }
-            // Frostburns ya.
-            if (temp < 223) {
+            // Frostburns ya. (The zero check is to stop 'invalid' fluids from counting as too cold)
+            if (temp < 223 && temp > 0) {
                 event.add("tfchotornot:cold_whitelist", idStr);
             }
             // Blue steel: can do heat, can't do cryo.

@@ -283,8 +283,21 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "9"))
 	})
 
-	//Nuclear Fission Tooltips
+	// Hot or not containers
+	event.addAdvanced(['#tfg:insulating_container'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.hotornot_container"))
+	})
+	event.addAdvanced(['#tfg:hot_protection_equipment'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.hotornot_hot_equipment"))
+	})
+	event.addAdvanced(['#tfg:cold_protection_equipment'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.hotornot_cold_equipment"))
+	})
+	event.addAdvanced(['#tfg:floating_protection_equipment'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.hotornot_floating_equipment"))
+	})
 
+	//Nuclear Fission Tooltips
 	event.addAdvanced(['minecraft:blue_ice'], (item, advanced, text) => {
 		text.add(1, Text.translate("tfg.tooltip.component.blue_ice"))
 	})

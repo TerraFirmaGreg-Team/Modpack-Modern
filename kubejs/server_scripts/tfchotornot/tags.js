@@ -25,7 +25,7 @@ const registerHotOrNotItemTags = (event) => {
     event.add('tfg:insulating_container', 'gtceu:zpm_quantum_tank')
     event.add('tfg:insulating_container', 'gtceu:uv_quantum_tank')
     event.add('tfg:insulating_container', 'gtceu:uhv_quantum_tank')
-    event.add('tfg:insulating_container', '#tfc:barrels')
+    event.add('tfg:insulating_container', 'gtceu:glass_vial')
     event.add('tfg:insulating_container', 'gtceu:fluid_cell')
     event.add('tfg:insulating_container', 'gtceu:universal_fluid_cell')
     event.add('tfg:insulating_container', 'gtceu:steel_fluid_cell')
@@ -34,10 +34,23 @@ const registerHotOrNotItemTags = (event) => {
     event.add('tfg:insulating_container', 'gtceu:titanium_fluid_cell')
     event.add('tfg:insulating_container', 'gtceu:tungsten_steel_fluid_cell')
 
-    event.add('tfg:prevents_gas_floating', 'create:copper_diving_boots')
-    event.add('tfg:prevents_gas_floating', 'create:netherite_diving_boots')
-    event.add('tfg:prevents_gas_floating', 'ad_astra:space_boots')
-    event.add('tfg:prevents_gas_floating', 'ad_astra:netherite_space_boots')
+    event.add('tfg:hot_protection_equipment', 'tfc:metal/chestplate/blue_steel')
+    event.add('tfg:hot_protection_equipment', 'create:netherite_backtank')
+    event.add('tfg:hot_protection_equipment', 'ad_astra:netherite_space_suit')
+    event.add('tfg:hot_protection_equipment', 'gtceu:quarktech_chestplate')
+    event.add('tfg:hot_protection_equipment', 'gtceu:advanced_quarktech_chestplate')
+
+    event.add('tfg:cold_protection_equipment', 'tfc:metal/chestplate/red_steel')
+    event.add('tfg:cold_protection_equipment', 'ad_astra:space_suit')
+    event.add('tfg:cold_protection_equipment', 'ad_astra:netherite_space_suit')
+    event.add('tfg:cold_protection_equipment', 'gtceu:quarktech_chestplate')
+    event.add('tfg:cold_protection_equipment', 'gtceu:advanced_quarktech_chestplate')
+
+    event.add('tfg:floating_protection_equipment', 'create:copper_diving_boots')
+    event.add('tfg:floating_protection_equipment', 'create:netherite_diving_boots')
+    event.add('tfg:floating_protection_equipment', 'ad_astra:space_boots')
+    event.add('tfg:floating_protection_equipment', 'ad_astra:netherite_space_boots')
+	event.add('tfg:floating_protection_equipment', 'gtceu:quarktech_boots')
 }
 
 const registerHotOrNotFluidTags = (event) => {
