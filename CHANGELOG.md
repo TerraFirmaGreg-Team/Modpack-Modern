@@ -3,6 +3,8 @@
 ## Unreleased
 ### Changes
 - Doubled the durability of all space suits @Pyritie
+- Added "too cold to handle" and "too light to handle" for cold things and lighter-than-air things. Uses the same mechanic as tongs. Lighter-than-air things can also be negated with diving suit boots or carrying something Very Heavy in your inventory, and all effects (including "too hot to handle") are negated by super tanks/chests, cells, and space suits, but *not* drums or buckets. @Pyritie
+- Added debuff effects for all medical conditions, so you're immediately notified when carrying something hazardous instead of wondering why you have Hunger II. @Pyritie
 ### Bug fixes
 - Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie
 - Fixed fries and cheese curds not being able to be put on burgers. @Redeix
