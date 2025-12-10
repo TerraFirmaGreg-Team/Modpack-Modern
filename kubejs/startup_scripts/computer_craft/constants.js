@@ -17,5 +17,5 @@ global.COMPUTER_CRAFT_DISCS = [
     '{Color:8349260}',
     '{Color:5744206}',
     '{Color:13388876}',
-    '{Color:1118481}',
+    '{Color:1118481}'
 ]
