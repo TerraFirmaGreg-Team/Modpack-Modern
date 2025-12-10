@@ -5,6 +5,8 @@
 - Doubled the durability of all space suits @Pyritie
 ### Bug fixes
 - Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie
+- Fixed fries and cheese curds not being able to be put on burgers. @Redeix
+- Fixed sliced brinza missing the proper cheese tags. @Redeix
 ### Translation updates
 
 ## [0.11.10] - 9-12-2025
