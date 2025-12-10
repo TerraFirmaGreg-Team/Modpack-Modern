@@ -20,7 +20,7 @@ function registerTFGRockRecipes(event) {
 		{ loose: 'tfg:brick/dripstone',           block: '4x create:cut_dripstone_bricks' },
 
 		{ loose: 'tfg:loose/crackrack',           block: 'tfg:rock/cobble_crackrack' },
-		{ loose: 'minecraft:nether_brick',        block: 'minecraft:nether_bricks' },
+		{ loose: 'minecraft:nether_brick',        block: '4x minecraft:nether_bricks' },
 
 		{ loose: 'tfg:loose/moon_stone',          block: 'ad_astra:moon_cobblestone' },
 		{ loose: 'tfg:brick/moon_stone',          block: '4x ad_astra:moon_stone_bricks' },
