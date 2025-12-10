@@ -14,7 +14,7 @@ function registerTFGRockRecipes(event) {
 		{ loose: 'tfg:brick/deepslate',           block: '4x minecraft:deepslate_bricks' },
 
 		{ loose: 'beneath:blackstone_pebble',     block: 'tfg:rock/cobble_blackstone' },
-		{ loose: 'beneath:blackstone_brick',      block: 'minecraft:polished_blackstone_bricks' },
+		{ loose: 'beneath:blackstone_brick',      block: '4x minecraft:polished_blackstone_bricks' },
 
 		{ loose: 'tfg:loose/dripstone',           block: 'tfg:rock/cobble_dripstone' },
 		{ loose: 'tfg:brick/dripstone',           block: '4x create:cut_dripstone_bricks' },
