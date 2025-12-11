@@ -1623,6 +1623,7 @@
 				{
 					id: "1483488F0E301BCC"
 					item: "greate:aluminium_cogwheel"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1633,6 +1634,7 @@
 				{
 					id: "32C96E141753187B"
 					item: "greate:aluminium_shaft"
+					optional_task: true
 					type: "item"
 				}
 			]
