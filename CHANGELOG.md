@@ -2,7 +2,7 @@
 
 ## Unreleased
 ### Changes
-- Added "too cold to handle" and "too light to handle" for cold things and lighter-than-air things. Uses the same mechanic as tongs. Lighter-than-air things can also be negated with something Very Heavy in your inventory, and all effects (including "too hot to handle") are negated by super tanks/chests and cells, but *not* drums or buckets. Check the `tfg:hot_protection_equipment`, `tfg:cold_protection_equipment`, and `tfg:floating_protection_equipment` tags for equipment that makes you immune to these effects. @Pyritie
+- Added "too cold to handle" and "too light to handle" for cold things and lighter-than-air things. Uses the same mechanic as tongs. Lighter-than-air things can also be negated with something Very Heavy in your inventory, and all effects (including "too hot to handle") are negated by super tanks/chests and cells, but *not* drums or buckets. Check the `tfg:hot_protection_equipment`, `tfg:cold_protection_equipment`, and `tfg:floating_protection_equipment` tags for equipment that makes you immune to these effects. The equipment also protects against pipes! @Pyritie
 - GregTech hot ingots are also now properly included in the "too hot to handle" system so the same protection applies @Pyritie
 - Added debuff effects for all medical conditions, so you're immediately notified when carrying something hazardous instead of wondering why you have Hunger II. @Pyritie
 - The hazard effect that previously instantly killed you (which did not spawn a corpse) now gives you Wither III instead. @Pyritie
