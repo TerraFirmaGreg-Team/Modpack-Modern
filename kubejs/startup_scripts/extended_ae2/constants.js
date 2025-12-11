@@ -1,3 +1,4 @@
+// priority: -100
 "use strict";
 
 global.EXTENDED_AE2_DISABLED_ITEMS = [
@@ -15,7 +16,7 @@ global.EXTENDED_AE2_DISABLED_ITEMS = [
     'expatternprovider:ex_charger',
     'expatternprovider:caner',
     'expatternprovider:circuit_cutter',
-    'expatternprovider:silicon_block',
+    'expatternprovider:silicon_block'
 
 
     //в будущем будет крафт

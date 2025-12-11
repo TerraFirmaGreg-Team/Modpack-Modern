@@ -358,7 +358,7 @@ function registerTFGFoodItems(event) {
 		.texture('tfg:item/food/cooked_beer_battered_cheese_curds')
 		.food(food => food.hunger(3).saturation(2))
 		.tag('tfc:foods')
-		.tag('tfc:foods/usable_in_burgers');
+		.tag('tfg:foods/usable_in_burgers');
 
 	// French Fries
 	event.create('tfg:food/raw_fries')
@@ -372,7 +372,7 @@ function registerTFGFoodItems(event) {
 		.texture('tfg:item/food/cooked_fries')
 		.food(food => food.hunger(3).saturation(2))
 		.tag('tfc:foods')
-		.tag('tfc:foods/usable_in_burgers');
+		.tag('tfg:foods/usable_in_burgers');
 
 	// Poutine
 	event.create('tfg:food/poutine')

@@ -259,6 +259,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.BismuthBronze.addFlags(GENERATE_SMALL_GEAR);
 	
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
+	GTMaterials.Zinc.addFlags(GENERATE_LONG_ROD);
 	GTMaterials.BlackSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
 	GTMaterials.BlueSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
 	GTMaterials.RedSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW, GENERATE_FOIL);

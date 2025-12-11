@@ -89,7 +89,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"MaxAoEColumn\":5, \"MaxAoERow\":5, \"MaxAoELayer\":3}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"MaxAoEColumn\":2, \"MaxAoERow\":2, \"MaxAoELayer\":3}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},

@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 global.ADVANCED_PERIPHERALS_DISABLED_ITEMS = [

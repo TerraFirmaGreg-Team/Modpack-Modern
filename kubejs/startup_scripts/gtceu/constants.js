@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 //#region Disabled Items
@@ -141,6 +141,9 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:lv_damascus_steel_chainsaw",
     "gtceu:damascus_steel_buzzsaw",
     "gtceu:damascus_steel_bucket",
+
+    "gtceu:molten_black_bronze_bucket",
+    "gtceu:molten_bismuth_bronze_bucket",
 
     //armor
     "gtceu:bronze_helmet",

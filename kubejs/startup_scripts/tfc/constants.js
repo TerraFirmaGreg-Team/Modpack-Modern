@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 /**
@@ -836,7 +836,7 @@ global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "5x minecraft:clay_ball", output: "10x rnr:unfired_roof_tile", name: "roof_tile" },
     { input: "5x minecraft:clay_ball", output: "firmalife:oven_top", name: "oven_top" },
     { input: "5x minecraft:clay_ball", output: "firmalife:oven_chimney", name: "oven_chimney" },
-    { input: "5x minecraft:clay_ball", output: "firmalife:oven_bottom", name: "oven_bottom" },
+    { input: "5x minecraft:clay_ball", output: "firmalife:oven_bottom", name: "oven_bottom" }
 ]);
 
 global.TFC_FIRE_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([

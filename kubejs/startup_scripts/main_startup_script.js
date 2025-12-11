@@ -1,4 +1,4 @@
-// priority: 0
+// priority: 100
 "use strict";
 
 StartupEvents.registry('item', event => {
@@ -15,6 +15,7 @@ BlockEvents.modification(event => {
 })
 
 ItemEvents.modification(event => {
+	registerAdAstraItemModifications(event)
 	registerBeneathItemModifications(event)
 	registerCreateItemModifications(event)
 	registerFirmalifeItemModifications(event)
@@ -68,10 +69,6 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
 
 GTCEuStartupEvents.craftingComponents(event => {
 	registerTFGCraftingComponents(event)
-})
-
-StartupEvents.modifyCreativeTab(global.TAB_IDS.CREATE_BASE, event => {
-    modifyCreateCreativeTab(event)
 })
 
 Platform.mods.primitive_creatures.name = "Primitive Creatures";
