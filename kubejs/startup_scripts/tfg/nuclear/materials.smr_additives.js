@@ -23,6 +23,6 @@ const registerTFGSMRAdditiveMaterials = (event) => {
 		.liquid()
 		.components('6x carbon', '12x hydrogen', '4x oxygen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.color(0xE0974C)
+		.color(0xBC8E63)
 	
 }
