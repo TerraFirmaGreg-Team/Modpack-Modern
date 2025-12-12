@@ -1636,6 +1636,7 @@
 				{
 					id: "53919EE5BCCA618A"
 					item: "greate:stainless_steel_cogwheel"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1646,6 +1647,7 @@
 				{
 					id: "6DF7F28AABF6785F"
 					item: "greate:stainless_steel_shaft"
+					optional_task: true
 					type: "item"
 				}
 			]
