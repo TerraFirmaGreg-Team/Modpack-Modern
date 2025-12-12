@@ -444,7 +444,8 @@ function registerTFGFoodItems(event) {
 	event.create('tfg:food/oatmeal')
 		.translationKey('item.tfg.food.oatmeal')
 		.texture('tfg:item/food/oatmeal')
-		.food(food => food.hunger(8).saturation(8));
+		.food(food => food.hunger(8).saturation(8))
+	    .tag('tfc:foods');
 
 	// Instant Mac
 	event.create('tfg:food/raw_instant_mac')
@@ -453,7 +454,8 @@ function registerTFGFoodItems(event) {
 		.food(food => food.hunger(2).saturation(2)
 			.eaten(ctx => {
 				ctx.player.give('create:cardboard')
-			}));
+			}))
+	    .tag('tfc:foods');
 
 	event.create('tfg:food/cooked_instant_mac')
 		.translationKey('item.tfg.food.cooked_instant_mac')
@@ -461,7 +463,8 @@ function registerTFGFoodItems(event) {
 		.food(food => food.hunger(4).saturation(4)
 			.eaten(ctx => {
 				ctx.player.give('create:cardboard')
-			}));
+			}))
+	    .tag('tfc:foods');
 
 	//#region Spices
 

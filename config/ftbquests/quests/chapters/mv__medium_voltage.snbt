@@ -1221,7 +1221,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:aluminium_quadruple_fluid_pipe)item(gtceu:blue_steel_quadruple_fluid_pipe)item(gtceu:steel_quadruple_fluid_pipe))"
+						"ftbfiltersystem:filter": "or(item_tag(forge:quadruple_fluid_pipes)item_tag(forge:nonuple_fluid_pipes))"
 					}
 				}
 				title: "Multiple Channel Potin Pipes, please"
