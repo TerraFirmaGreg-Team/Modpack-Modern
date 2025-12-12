@@ -496,15 +496,15 @@
 					type: "item"
 				}
 				{
-					count: 40L
 					id: "18AECBFB42064D4E"
 					item: "gtceu:plascrete"
+					optional_task: true
 					type: "item"
 				}
 				{
-					count: 10L
 					id: "4DA87A845076183A"
 					item: "gtceu:cleanroom_glass"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1619,6 +1619,7 @@
 				{
 					id: "5B94BB35A8480214"
 					item: "greate:titanium_cogwheel"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1629,6 +1630,7 @@
 				{
 					id: "2E602B31550041B9"
 					item: "greate:titanium_shaft"
+					optional_task: true
 					type: "item"
 				}
 			]

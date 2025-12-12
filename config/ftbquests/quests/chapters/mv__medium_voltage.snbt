@@ -777,8 +777,15 @@
 			size: 3.0d
 			subtitle: "{quests.medium_voltage.mv_polyethylene.subtitle}"
 			tasks: [{
-				id: "15E5F008339B8964"
-				item: "gtceu:polyethylene_plate"
+				id: "1605293EDC9EAFCB"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:polyethylene\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:polyethylene\"}})item(gtceu:polyethylene_bucket))"
+					}
+				}
+				title: "{material.gtceu.polyethylene}"
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_polyethylene.title}"
@@ -794,8 +801,15 @@
 			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_pvc.subtitle}"
 			tasks: [{
-				id: "72696AD2B77F805B"
-				item: "gtceu:polyvinyl_chloride_plate"
+				id: "1EDAC09CA0F55A2B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:polyvinyl_chloride\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:polyvinyl_chloride\"}})item(gtceu:polyvinyl_chloride_bucket))"
+					}
+				}
+				title: "{material.gtceu.polyvinyl_chloride}"
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_pvc.title}"
@@ -1207,7 +1221,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:aluminium_quadruple_fluid_pipe)item(gtceu:blue_steel_quadruple_fluid_pipe)item(gtceu:steel_quadruple_fluid_pipe))"
+						"ftbfiltersystem:filter": "or(item_tag(forge:quadruple_fluid_pipes)item_tag(forge:nonuple_fluid_pipes))"
 					}
 				}
 				title: "Multiple Channel Potin Pipes, please"
@@ -1622,6 +1636,7 @@
 				{
 					id: "53919EE5BCCA618A"
 					item: "greate:stainless_steel_cogwheel"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1632,6 +1647,7 @@
 				{
 					id: "6DF7F28AABF6785F"
 					item: "greate:stainless_steel_shaft"
+					optional_task: true
 					type: "item"
 				}
 			]

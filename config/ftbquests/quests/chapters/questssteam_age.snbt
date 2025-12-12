@@ -378,11 +378,13 @@
 				{
 					id: "23DE370285589CB4"
 					item: "greate:steel_shaft"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "4FDD99090C920E21"
 					item: "greate:steel_cogwheel"
+					optional_task: true
 					type: "item"
 				}
 				{

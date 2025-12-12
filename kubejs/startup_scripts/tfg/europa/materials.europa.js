@@ -7,7 +7,6 @@ function registerTFGEuropaMaterials(event) {
 		.color(0x7BFCD7)
 		.secondaryColor(0x3582D2)
 		.iconSet(GTMaterialIconSet.getByName('tfc_silver'))
-		.ore()
 		.ingot()
 		.flags(
 			GTMaterialFlags.FORCE_GENERATE_BLOCK,
