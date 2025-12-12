@@ -244,7 +244,7 @@ const registerTFCRecipes = (event) => {
 
 	//Jigabit's stupid acetic acid to vinegar conversion
 
-		event.recipes.gtceu.chemical_reactor('vinegar_from_acetic_acid')
+		event.recipes.gtceu.mixer('vinegar_from_acetic_acid')
         		.inputFluids(
                             Fluid.of('minecraft:water', 950),
                             Fluid.of('gtceu:acetic_acid', 50)
@@ -254,7 +254,7 @@ const registerTFCRecipes = (event) => {
                 )
 			    .circuit(1)
         		.duration(30)
-        		.EUt(GTValues.VA[GTValues.HV])
+        		.EUt(GTValues.VA[GTValues.MV])
 
        event.recipes.gtceu.distillery('acetic_acid_from_vinegar')
                		.inputFluids(
