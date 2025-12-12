@@ -93,7 +93,6 @@ function registerGreateRecipes(event) {
 		.circuit(5)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
-		.removePreviousMaterialInfo()
 
 	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_gearbox', { 'wood': 1, 'wrought_iron': 1 });
 	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_vertical_gearbox', { 'wood': 1, 'wrought_iron': 1 });
@@ -104,8 +103,6 @@ function registerGreateRecipes(event) {
 		.circuit(5)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
-		.removePreviousMaterialInfo()
-		.addMaterialInfo(true)
 
 	TFGHelpers.registerMaterialInfo('greate:steel_gearbox', { 'wood': 1, 'wrought_iron': 1, 'steel': 4/9 });
 	TFGHelpers.registerMaterialInfo('greate:steel_vertical_gearbox', { 'wood': 1, 'wrought_iron': 1, 'steel': 4/9 });
@@ -116,8 +113,6 @@ function registerGreateRecipes(event) {
 		.circuit(5)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
-		.removePreviousMaterialInfo()
-		.addMaterialInfo(true)
 
 	TFGHelpers.registerMaterialInfo('greate:aluminium_gearbox', { 'wood': 1, 'wrought_iron': 1, 'aluminium': 4/9 });
 	TFGHelpers.registerMaterialInfo('greate:aluminium_vertical_gearbox', { 'wood': 1, 'wrought_iron': 1, 'aluminium': 4/9 });
@@ -128,8 +123,6 @@ function registerGreateRecipes(event) {
 		.circuit(5)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
-		.removePreviousMaterialInfo()
-		.addMaterialInfo(true)
 
 	TFGHelpers.registerMaterialInfo('greate:stainless_steel_gearbox', { 'wood': 1, 'wrought_iron': 1, 'stainless_steel': 4/9 });
 	TFGHelpers.registerMaterialInfo('greate:stainless_steel_vertical_gearbox', { 'wood': 1, 'wrought_iron': 1, 'stainless_steel': 4/9 });
@@ -140,8 +133,6 @@ function registerGreateRecipes(event) {
 		.circuit(5)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
-		.removePreviousMaterialInfo()
-		.addMaterialInfo(true)
 
 	TFGHelpers.registerMaterialInfo('greate:titanium_gearbox', { 'wood': 1, 'wrought_iron': 1, 'titanium': 4/9 });
 	TFGHelpers.registerMaterialInfo('greate:titanium_vertical_gearbox', { 'wood': 1, 'wrought_iron': 1, 'titanium': 4/9 });

@@ -1,17 +1,52 @@
 # Changelog
 
-## [Unreleased]
+## Unreleased
+### Changes
+- Added "too cold to handle" and "too light to handle" for cold things and lighter-than-air things. Uses the same mechanic as tongs. Lighter-than-air things can also be negated with something Very Heavy in your inventory, and all effects (including "too hot to handle") are negated by super tanks/chests and cells, but *not* drums or buckets. Check the `tfg:hot_protection_equipment`, `tfg:cold_protection_equipment`, and `tfg:floating_protection_equipment` tags for equipment that makes you immune to these effects. The equipment also protects against pipes! @Pyritie
+- GregTech hot ingots are also now properly included in the "too hot to handle" system so the same protection applies @Pyritie
+- Added debuff effects for all medical conditions, so you're immediately notified when carrying something hazardous instead of wondering why you have Hunger II. @Pyritie
+- The hazard effect that previously instantly killed you (which did not spawn a corpse) now gives you Wither III instead. @Pyritie
+- Added machine recipes for crafting tongs @Pyritie
+- Doubled the durability of all space suits @Pyritie
+### Bug fixes
+- Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie
+- Fixed fries and cheese curds not being able to be put on burgers. @Redeix
+- Fixed sliced brinza missing the proper cheese tags. @Redeix
+- Fixed pyroxenite and keratophyre bricks crafting 1 instead of 4 (#2373) @Pyritie
+### Translation updates
+
+## [0.11.10] - 9-12-2025
 ### Breaking Changes
-- Beginning of the Power Update:
-    - Syngas is now available as a ULV/LV gas fuel - can be crafted from Charcoal and Creosote in a Brewery or Vacuum Chamber.
-    - The Coal Liquefaction Tower is a new multiblock (craftable at MV) that you can use to make Reformate Gas. It has the same coil discounts as the Cracker, and can be boosted with hydrogen.
-    - Reformate Gas is the new gas Fuel starting at MV, with better yields and recipe loops at HV.
-    - Many quests were updated to explain these changes.
-- Update on Fission:
-    - The Nuclear Steam Turbine has now a baseline power production of 8192 EU/t. What this means is that you now need half as many turbines as before.
-    - Thorium Fuel Rods got a boost of 50% steam production, so early Mars should be a bit easier.
-    - Heat Exchanger can now run Radioactive Steam without Ammonium Formate. If you crave for power and don’t mind losing some materials for the Nano Circuit, this is a good deal
-    - Massive change for steam yield. You now produce 160x more steam, but its yield is 160x less good (so nothing changes power-wise, but now you have to deal with pipe throughput)
+- Butyraldehyde in a chemical reactor now uses circuit 5 instead of 1 to avoid a conflict with Methanol @Pyritie
+### Other Changes
+- Added recipes for create's shadow and radiant casings (#2256) @Ujhik
+- Some small quest and field guide additions and fixes (#2348, #2356) @Pyritie @jmecn
+- Adjusted the spawn weights of primitive illagers @Pyritie
+### Bug fixes
+- Fixed a crash on boot on some linux systems (#2347, #2355) @Redeix @mgsmyrk
+- Fixed missing recipes for many fluid and item pipes (#2359) @Pyritie
+- Fixed missing cleanroom tags for the ad astra 3x3 doors, so now you can *actually* use them in a cleanroom @Pyritie
+- Fixed aged sake, vodka, and whiskey losing their buff effects @Pyritie
+- Fixed some inconsistencies with loose rocks into bricks (#2353) @Pyritie
+- Fixed a tag issue with some purified ores and Create's crushed ore tag (#2339) @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Japanese @sakura-gondra
+
+## [0.11.9] - 7-12-2025
+### Breaking Changes
+#### Beginning of the Power Update
+- Syngas is now available as a ULV/LV gas fuel - can be crafted from Charcoal and Creosote in a Brewery or Vacuum Chamber.
+- The Coal Liquefaction Tower is a new multiblock (craftable at MV) that you can use to make Reformate Gas. It has the same coildiscounts as the Cracker, and can be boosted with hydrogen.
+- Reformate Gas is the new gas Fuel starting at MV, with better yields and recipe loops at HV.
+- Many quests were updated to explain these changes.
+#### Update on Fission
+- The Nuclear Steam Turbine has now a baseline power production of 8192 EU/t. What this means is that you now need half as many turbines as before.
+- Thorium Fuel Rods got a boost of 50% steam production, so early Mars should be a bit easier.
+- Heat Exchanger can now run Radioactive Steam without Ammonium Formate. If you crave for power and don’t mind losing some materials for the Nano Circuit, this is a good deal
+- Massive change for steam yield. You now produce 160x more steam, but its yield is 160x less good (so nothing changes power-wise, but now you have to deal with pipe throughput)
+#### Other
+- All dynamo hatches on Large Turbines now void power when they are full. Be sure to control your turbines with some redstone when your batteries are full!
 - The tungsten processing line has been updated to now properly loop and balance all of its intermediates. The actual processes haven't changed, just the numbers, so you shouldn't have to change your setup much. It now also outputs a little extra oxygen instead of sodium (#2267) @SpicyNoodle5 @TomPlop
 - Removed black/red/blue arc furnace dust to ingot recipes, but changed the EBF recipes to MV (#2306) @applenper @Pyritie
 ### Mod updates

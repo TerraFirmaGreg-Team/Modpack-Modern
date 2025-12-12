@@ -91,6 +91,9 @@ function modifyTFGIconSets(event) {
     GTMaterials.BlackBronze.setMaterialIconSet(GTMaterialIconSet.SHINY)
     GTMaterials.Potin.setMaterialIconSet(GTMaterialIconSet.SHINY)
     GTMaterials.Cupronickel.setMaterialIconSet(GTMaterialIconSet.SHINY)
+    GTMaterials.ManganesePhosphide.setMaterialIconSet(GTMaterialIconSet.DULL)
+    GTMaterials.Osmium.setMaterialIconSet(GTMaterialIconSet.DULL)
+    GTMaterials.Invar.setMaterialIconSet(GTMaterialIconSet.DULL)
     
     GTMaterials.Aluminium.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_silver'))
     GTMaterials.Asbestos.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_gold'))

@@ -1,3 +1,20 @@
 {
-	"type": "forge:none"
+	"type": "forge:add_spawns",
+	"biomes": [
+		"tfc:highlands",
+		"tfc:hills",
+		"tfc:lowlands",
+		"tfc:plains",
+		"tfc:plateau",
+		"tfc:rolling_hills",
+		"tfc:salt_marsh",
+		"tfc:shore",
+		"tfc:tidal_flats"
+	],
+	"spawners": {
+		"type": "primitive_creatures:iloger_2",
+		"weight": 1,
+		"minCount": 2,
+		"maxCount": 3
+	}
 }

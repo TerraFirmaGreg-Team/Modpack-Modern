@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+			{ "model": "betterend:block/lacugrove_bark", "weight": 5 },
+			{ "model": "betterend:block/lacugrove_bark_2", "weight": 5 },
+			{ "model": "betterend:block/lacugrove_bark_3" },
+			{ "model": "betterend:block/lacugrove_bark_4" }
+		]
+    }
+}

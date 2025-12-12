@@ -33,6 +33,7 @@ const registerCreateItemTags = (event) => {
 		if (dye !== 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
 	})
 
+	event.removeAll('create:crushed_raw_materials')
 
 	event.add('create:blaze_burner_fuel/regular', "gtceu:poor_raw_coal")
 	event.add('create:blaze_burner_fuel/regular', "gtceu:coal_dust")

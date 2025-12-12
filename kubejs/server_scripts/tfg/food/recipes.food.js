@@ -680,7 +680,7 @@ function registerTFGFoodRecipes(event) {
 	processorRecipe('vinegar_alcohol', 600, GTValues.VA[GTValues.LV], {
 		circuit: 5,
 		itemInputs: ['#tfc:foods/fruits'],
-		fluidInputs: ['#tfc:alcohols 250'],
+		fluidInputs: ['#tfg:alcohols 250'],
 		fluidOutputs: [Fluid.of('tfc:vinegar', 250)]
 	})
 

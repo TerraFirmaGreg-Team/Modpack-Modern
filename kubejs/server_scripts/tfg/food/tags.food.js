@@ -175,7 +175,8 @@ function registerTFGFoodItemTags(event) {
 	const cheeses = [
 		'#firmalife:foods/cheeses',
 		'tfg:food/slice_of_cheese',
-		'firmalife:food/shredded_cheese'
+		'firmalife:food/shredded_cheese',
+		'#tfc_gurman:foods/brinza'
 	];
 	cheeses.forEach(item => {
 		event.add('tfg:foods/cheeses', item);

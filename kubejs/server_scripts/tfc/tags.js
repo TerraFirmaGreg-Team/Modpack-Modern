@@ -584,6 +584,10 @@ function registerTFCFluidTags(event) {
             if (temp >= 1300) {
                 event.add("tfchotornot:hot_whitelist", idStr);
             }
+            // Frostburns ya. (The zero check is to stop 'invalid' fluids from counting as too cold)
+            if (temp < 223 && temp > 0) {
+                event.add("tfchotornot:cold_whitelist", idStr);
+            }
             // Blue steel: can do heat, can't do cryo.
             if (temp >= 120) {
                 event.add("tfc:usable_in_blue_steel_bucket", idStr);
@@ -611,7 +615,9 @@ function registerTFCFluidTags(event) {
 			const isPlasmatic = wrapperHas(plasmaticWrapper);
             const isHidden = wrapperHas(hiddenWrapper);
 
-			if (isGaseous || isPlasmatic || isHidden) return;
+            if (isGaseous || isPlasmatic || isHidden)
+                return;
+
 			event.add('forge:liquid', idString);
 		};
 
@@ -671,16 +677,17 @@ function registerTFCFluidTags(event) {
     event.add("tfc:ingredients", "tfc:spring_water");
 	event.add('tfc:drinkables', 'tfc:spring_water')
 
-    event.add("tfc:alcohols", "tfcagedalcohol:aged_beer");
-    event.add("tfc:alcohols", "tfcagedalcohol:aged_cider");
-    event.add("tfc:alcohols", "tfcagedalcohol:aged_rum");
-    event.add("tfc:alcohols", "tfcagedalcohol:aged_sake");
-    event.add("tfc:alcohols", "tfcagedalcohol:aged_vodka");
-    event.add("tfc:alcohols", "tfcagedalcohol:aged_whiskey");
-    event.add("tfc:alcohols", "tfcagedalcohol:aged_corn_whiskey");
-    event.add("tfc:alcohols", "tfcagedalcohol:aged_rye_whiskey");
-    event.add("tfc:alcohols", "tfcagedalcohol:aged_mead");
-    event.add("tfc:alcohols", "tfc_gurman:nalivka");
+    event.add('tfg:alcohols', '#tfc:alcohols')
+    event.add("tfg:alcohols", "tfcagedalcohol:aged_beer");
+    event.add("tfg:alcohols", "tfcagedalcohol:aged_cider");
+    event.add("tfg:alcohols", "tfcagedalcohol:aged_rum");
+    event.add("tfg:alcohols", "tfcagedalcohol:aged_sake");
+    event.add("tfg:alcohols", "tfcagedalcohol:aged_vodka");
+    event.add("tfg:alcohols", "tfcagedalcohol:aged_whiskey");
+    event.add("tfg:alcohols", "tfcagedalcohol:aged_corn_whiskey");
+    event.add("tfg:alcohols", "tfcagedalcohol:aged_rye_whiskey");
+    event.add("tfg:alcohols", "tfcagedalcohol:aged_mead");
+    event.add("tfg:alcohols", "tfc_gurman:nalivka");
 
     // Добавляем тег для скрытия в EMI
     event.add("c:hidden_from_recipe_viewers", "tfc:metal/bismuth");
