@@ -387,6 +387,9 @@ global.ADD_CIRCUIT = /** @type {const} */ ([
 
     { recipeId: "gtceu:chemical_reactor/sodium_bicarbonate_from_salt", circuitNumber: 2 },
     { recipeId: "gtceu:large_chemical_reactor/sodium_bicarbonate_from_salt", circuitNumber: 2 },
+
+    { recipeId: "gtceu:chemical_reactor/carbon_monoxide_from_dioxide", circuitNumber: 1 },
+    { recipeId: "gtceu:large_chemical_reactor/carbon_monoxide_from_dioxide", circuitNumber: 1 },
     
     { recipeId: "gtceu:chemical_reactor/acetic_acid_from_methanol", circuitNumber: 1 },
     { recipeId: "gtceu:large_chemical_reactor/acetic_acid_from_methanol", circuitNumber: 1 },
