@@ -252,6 +252,7 @@ const registerTFCRecipes = (event) => {
         		.outputFluids(
                 			Fluid.of('tfc:vinegar', 1000)
                 )
+			    .circuit(1)
         		.duration(30)
         		.EUt(GTValues.VA[GTValues.HV])
 
