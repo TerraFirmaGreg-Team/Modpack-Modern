@@ -11,8 +11,7 @@
         "parent": "gtceu:block/machine/template/cube_all/sided",
         "textures": {
           "all": "tfg:block/casings/machine_casing_power_casing",
-          "overlay_front": "gtceu:block/multiblock/data_bank/overlay_front",
-          "overlay_front_emissive": "gtceu:block/multiblock/data_bank/overlay_front_emissive"
+          "overlay_front": "gtceu:block/multiblock/power_substation/overlay_front"
         }
       }
     },
@@ -21,8 +20,7 @@
         "parent": "gtceu:block/machine/template/cube_all/sided",
         "textures": {
           "all": "tfg:block/casings/machine_casing_power_casing",
-          "overlay_front": "gtceu:block/multiblock/data_bank/overlay_front",
-          "overlay_front_emissive": "gtceu:block/multiblock/data_bank/overlay_front_emissive"
+          "overlay_front": "gtceu:block/multiblock/power_substation/overlay_front"
         }
       }
     },
@@ -31,8 +29,8 @@
         "parent": "gtceu:block/machine/template/cube_all/sided",
         "textures": {
           "all": "tfg:block/casings/machine_casing_power_casing",
-          "overlay_front": "gtceu:block/multiblock/data_bank/overlay_front_active",
-          "overlay_front_emissive": "gtceu:block/multiblock/data_bank/overlay_front_active_emissive"
+          "overlay_front": "gtceu:block/multiblock/power_substation/overlay_front_active",
+          "overlay_front_emissive": "gtceu:block/multiblock/power_substation/overlay_front_active_emissive"
         }
       }
     },
@@ -41,8 +39,8 @@
         "parent": "gtceu:block/machine/template/cube_all/sided",
         "textures": {
           "all": "tfg:block/casings/machine_casing_power_casing",
-          "overlay_front": "gtceu:block/multiblock/data_bank/overlay_front_active",
-          "overlay_front_emissive": "gtceu:block/multiblock/data_bank/overlay_front_active_emissive"
+          "overlay_front": "gtceu:block/multiblock/power_substation/overlay_front_active",
+          "overlay_front_emissive": "gtceu:block/multiblock/power_substation/overlay_front_active_emissive"
         }
       }
     },
@@ -51,8 +49,7 @@
         "parent": "gtceu:block/machine/template/cube_all/sided",
         "textures": {
           "all": "tfg:block/casings/machine_casing_power_casing",
-          "overlay_front": "gtceu:block/multiblock/data_bank/overlay_front",
-          "overlay_front_emissive": "gtceu:block/multiblock/data_bank/overlay_front_emissive"
+          "overlay_front": "gtceu:block/multiblock/power_substation/overlay_front"
         }
       }
     },
@@ -61,8 +58,7 @@
         "parent": "gtceu:block/machine/template/cube_all/sided",
         "textures": {
           "all": "tfg:block/casings/machine_casing_power_casing",
-          "overlay_front": "gtceu:block/multiblock/data_bank/overlay_front",
-          "overlay_front_emissive": "gtceu:block/multiblock/data_bank/overlay_front_emissive"
+          "overlay_front": "gtceu:block/multiblock/power_substation/overlay_front"
         }
       }
     },
@@ -71,8 +67,8 @@
         "parent": "gtceu:block/machine/template/cube_all/sided",
         "textures": {
           "all": "tfg:block/casings/machine_casing_power_casing",
-          "overlay_front": "gtceu:block/multiblock/data_bank/overlay_front_active",
-          "overlay_front_emissive": "gtceu:block/multiblock/data_bank/overlay_front_active_emissive"
+          "overlay_front": "gtceu:block/multiblock/power_substation/overlay_front_active",
+          "overlay_front_emissive": "gtceu:block/multiblock/power_substation/overlay_front_active_emissive"
         }
       }
     },
@@ -81,8 +77,8 @@
         "parent": "gtceu:block/machine/template/cube_all/sided",
         "textures": {
           "all": "tfg:block/casings/machine_casing_power_casing",
-          "overlay_front": "gtceu:block/multiblock/data_bank/overlay_front_active",
-          "overlay_front_emissive": "gtceu:block/multiblock/data_bank/overlay_front_active_emissive"
+          "overlay_front": "gtceu:block/multiblock/power_substation/overlay_front_active",
+          "overlay_front_emissive": "gtceu:block/multiblock/power_substation/overlay_front_active_emissive"
         }
       }
     }
