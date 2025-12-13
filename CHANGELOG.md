@@ -1,19 +1,27 @@
 # Changelog
 
 ## Unreleased
+### Breaking Changes
+- The previous silicone rubber styrene butadiene rubber belts have been changed to a different item, so please break and recycle them before updating if you're using any.
+- Cleaning meal bag foil packs is now done in the chem bath instead of the ore washer. @Pyritie
 ### Changes
+#### Hot or Not
 - Added "too cold to handle" and "too light to handle" for cold things and lighter-than-air things. Uses the same mechanic as tongs. Lighter-than-air things can also be negated with something Very Heavy in your inventory, and all effects (including "too hot to handle") are negated by super tanks/chests and cells, but *not* drums or buckets. Check the `tfg:hot_protection_equipment`, `tfg:cold_protection_equipment`, and `tfg:floating_protection_equipment` tags for equipment that makes you immune to these effects. The equipment also protects against pipes! @Pyritie
 - GregTech hot ingots are also now properly included in the "too hot to handle" system so the same protection applies @Pyritie
+- Added machine recipes for crafting tongs @Pyritie
+#### Medical Hazards
 - Added debuff effects for all medical conditions, so you're immediately notified when carrying something hazardous instead of wondering why you have Hunger II. @Pyritie
 - The hazard effect that previously instantly killed you (which did not spawn a corpse) now gives you Wither III instead. @Pyritie
-- Added machine recipes for crafting tongs @Pyritie
+#### Other
 - Added two more early game mechanical belts, and rubber+ belts are also now more expensive. @Pyritie
 - Doubled the durability of all space suits @Pyritie
+- Added a way to convert between vinegar and acetic acid (#2386) @Epicificator
 ### Bug fixes
 - Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie
 - Fixed fries and cheese curds not being able to be put on burgers. @Redeix
 - Fixed sliced brinza missing the proper cheese tags. @Redeix
 - Fixed pyroxenite and keratophyre bricks crafting 1 instead of 4 (#2373) @Pyritie
+- Fixed some issues with quest items (#2384, #2386) @Mqrius
 ### Translation updates
 
 ## [0.11.10] - 9-12-2025
