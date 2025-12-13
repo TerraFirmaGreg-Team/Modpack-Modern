@@ -342,7 +342,7 @@ const registerGTCEuMaterialModification = (event) => {
 	// Blue steel fluid pipe - same flow rate as aluminium, same temp tolerance as tungsten
 	GTMaterials.BlueSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(4618, 75, true, false, false, false));
 	// Ostrum fluid pipe - same flow rate as titanium, higher temp range
-	TFGHelpers.getMaterial('ostrum').setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(3700, 150, true, false, true, false));
+	GTMaterials.get('ostrum').setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(3700, 150, true, false, true, false));
 
 	// Add some hazards back
 	GTMaterials.Realgar.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
@@ -352,8 +352,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Thorium.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.ANY, GTMedicalConditions.CARCINOGEN, 1, true));
 	
 	// This contains hazardous elements so GT tags it as hazardous automatically
-	TFGHelpers.getMaterial('ostrum').getProperties().removeProperty(PropertyKey.HAZARD);
-	TFGHelpers.getMaterial('ostrum_iodide').getProperties().removeProperty(PropertyKey.HAZARD);
+	GTMaterials.get('ostrum').getProperties().removeProperty(PropertyKey.HAZARD);
+	GTMaterials.get('ostrum_iodide').getProperties().removeProperty(PropertyKey.HAZARD);
 	// Superconductors being radioactive at EV is a little evil
 	GTMaterials.UraniumTriplatinum.getProperties().removeProperty(PropertyKey.HAZARD);
 
