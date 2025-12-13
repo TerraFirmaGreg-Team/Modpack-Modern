@@ -74,13 +74,5 @@ function registerGreateRecyclingRecipes(event) {
 		.duration(GTMaterials.SiliconeRubber.getMass() * 3)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.macerator('greate:polyethylene_belt_connector')
-		.itemInputs('greate:polyethylene_belt_connector')
-		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.StyreneButadieneRubber, 1))
-		.duration(GTMaterials.StyreneButadieneRubber.getMass() * 3)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-
 	// #region
 }

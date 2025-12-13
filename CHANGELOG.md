@@ -7,6 +7,7 @@
 - Added debuff effects for all medical conditions, so you're immediately notified when carrying something hazardous instead of wondering why you have Hunger II. @Pyritie
 - The hazard effect that previously instantly killed you (which did not spawn a corpse) now gives you Wither III instead. @Pyritie
 - Added machine recipes for crafting tongs @Pyritie
+- Added two more early game mechanical belts, and rubber+ belts are also now more expensive. @Pyritie
 - Doubled the durability of all space suits @Pyritie
 ### Bug fixes
 - Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie

@@ -636,69 +636,119 @@ function registerGreateRecipes(event) {
 
 	// #region Belt Connector
 
-	removeMaceratorRecipe(event, 'macerate_rubber_belt_connector')
-	removeMaceratorRecipe(event, 'macerate_silicone_rubber_belt_connector')
-	removeMaceratorRecipe(event, 'macerate_polyethylene_belt_connector')
-	event.remove({ id: 'gtceu:extractor/extract_rubber_belt_connector' })
-	event.remove({ id: 'gtceu:extractor/extract_silicone_rubber_belt_connector' })
-	event.remove({ id: 'gtceu:extractor/extract_polyethylene_belt_connector' })
-
-	event.shaped('3x greate:rubber_belt_connector', [
-		'C  ',
+	// Wood
+	event.shaped('greate:andesite_alloy_belt_connector', [
 		'AAA',
-		'B  '
+		'CBC',
+		'AAA'
+	], {
+		A: '#tfc:lumber',
+		B: '#forge:tools/hammers',
+		C: '#tfg:metal_chains'
+	}).id('tfg:shaped/wood_belt_connector')
+
+	removeMaceratorRecipe(event, 'macerate_andesite_alloy_belt_connector')
+	event.remove({ id: 'gtceu:shaped/andesite_alloy_belt_connector' })
+	event.remove({ id: 'gtceu:extractor/extract_andesite_alloy_belt_connector' })
+	event.remove({ id: 'gtceu:arc_furnace/arc_andesite_alloy_belt_connector' })
+
+	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_belt_connector', { 'wood': 1 });
+
+	// Leather
+	event.recipes.tfc.damage_inputs_shaped_crafting(
+		event.shaped('greate:stone_belt_connector', [
+			'AAA',
+			'CBC'
+		], {
+			A: '#forge:leather',
+			B: '#tfc:sewing_needles',
+			C: '#forge:string',
+		})).id('tfg:shaped/leather_belt_connector')
+
+	event.recipes.gtceu.assembler('leather_belt_connector')
+		.itemInputs('3x #forge:leather', '2x #forge:string')
+		.itemOutputs('greate:stone_belt_connector')
+		.circuit(11)
+		.duration(50)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	removeMaceratorRecipe(event, 'macerate_stone_belt_connector')
+	event.remove({ id: 'gtceu:shaped/stone_belt_connector' })
+
+	TFGHelpers.registerMaterialInfo('greate:stone_belt_connector', { 'air': 1 });
+
+	// Rubber
+	event.shaped('greate:rubber_belt_connector', [
+		'AAA',
+		'B C'
 	], {
 		A: '#forge:plates/rubber',
-		B: '#forge:tools/knives',
-		C: '#forge:tools/hammers',
-	}).id('gtceu:shaped/rubber_belt_connector')
+		B: '#forge:tools/hammers',
+		C: '#forge:tools/wrenches',
+	}).id('tfg:shaped/rubber_belt_connector')
 
 	event.recipes.gtceu.assembler('rubber_belt_connector')
-		.itemInputs('gtceu:rubber_plate')
+		.itemInputs('3x gtceu:rubber_plate')
 		.itemOutputs('greate:rubber_belt_connector')
 		.circuit(11)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
-		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
-	event.shaped('3x greate:silicone_rubber_belt_connector', [
-		'C  ',
+	event.remove({ id: 'gtceu:shaped/rubber_belt_connector' })
+	removeMaceratorRecipe(event, 'rubber_belt_connector')
+	removeMaceratorRecipe(event, 'macerate_rubber_belt_connector')
+	event.remove({ id: 'gtceu:extractor/extract_rubber_belt_connector' })
+	
+	TFGHelpers.registerMaterialInfo('greate:rubber_belt_connector', { 'rubber': 3 });
+
+	// Silicone rubber
+	event.shaped('greate:silicone_rubber_belt_connector', [
 		'AAA',
-		'B  '
+		'B C'
 	], {
 		A: '#forge:plates/silicone_rubber',
-		B: '#forge:tools/knives',
-		C: '#forge:tools/hammers',
-	}).id('gtceu:shaped/silicone_rubber_belt_connector')
+		B: '#forge:tools/hammers',
+		C: '#forge:tools/wrenches',
+	}).id('tfg:shaped/silicone_rubber_belt_connector')
 
 	event.recipes.gtceu.assembler('silicone_rubber_belt_connector')
-		.itemInputs('gtceu:silicone_rubber_plate')
+		.itemInputs('3x gtceu:silicone_rubber_plate')
 		.itemOutputs('greate:silicone_rubber_belt_connector')
 		.circuit(11)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
-		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
-	event.shaped('3x greate:polyethylene_belt_connector', [
-		'C  ',
+	event.remove({ id: 'gtceu:shaped/silicone_rubber_belt_connector' })
+	removeMaceratorRecipe(event, 'macerate_silicone_rubber_belt_connector')
+	event.remove({ id: 'gtceu:extractor/extract_silicone_rubber_belt_connector' })
+
+	TFGHelpers.registerMaterialInfo('greate:silicone_rubber_belt_connector', { 'silicone_rubber': 3 });
+
+	// SBR rubber
+	event.shaped('greate:styrene_butadiene_rubber_belt_connector', [
 		'AAA',
-		'B  '
+		'B C'
 	], {
 		A: '#forge:plates/styrene_butadiene_rubber',
-		B: '#forge:tools/knives',
-		C: '#forge:tools/hammers',
-	}).id('gtceu:shaped/polyethylene_belt_connector')
+		B: '#forge:tools/hammers',
+		C: '#forge:tools/wrenches',
+	}).id('tfg:shaped/styrene_butadiene_rubber_belt_connector')
 
-	event.recipes.gtceu.assembler('polyethylene_belt_connector')
-		.itemInputs('gtceu:styrene_butadiene_rubber_plate')
-		.itemOutputs('greate:polyethylene_belt_connector')
+	event.recipes.gtceu.assembler('styrene_butadiene_rubber_belt_connector')
+		.itemInputs('3x gtceu:styrene_butadiene_rubber_plate')
+		.itemOutputs('greate:styrene_butadiene_rubber_belt_connector')
 		.circuit(11)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
-		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
+
+	event.remove({ id: 'gtceu:shaped/styrene_butadiene_rubber_belt_connector' })
+	removeMaceratorRecipe(event, 'macerate_styrene_butadiene_rubber_belt_connector')
+	event.remove({ id: 'gtceu:extractor/extract_styrene_butadiene_rubber_belt_connector' })
+
+	TFGHelpers.registerMaterialInfo('greate:styrene_butadiene_rubber_belt_connector', { 'styrene_butadiene_rubber': 3 });
 
 	// #endregion
 
