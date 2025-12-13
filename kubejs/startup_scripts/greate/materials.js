@@ -3,6 +3,7 @@
 
 const registerGreateMaterials = (event) => {
 	// Belt materials should already have an ingot and plate item already
+	/*
 	const $BeltProperty = Java.loadClass("electrolyte.greate.content.gtceu.material.BeltProperty")
 
 	// Wood belt
@@ -24,6 +25,7 @@ const registerGreateMaterials = (event) => {
 	GTMaterials.SiliconeRubber.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([GTMaterials.StainlessSteel, GTMaterials.Aluminium], 25))
 	
 	GTMaterials.StyreneButadieneRubber.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([GTMaterials.Titanium, GTMaterials.StainlessSteel], 30))
+	*/
 }
 
 const registerGreateMaterialModification = (event) => {
