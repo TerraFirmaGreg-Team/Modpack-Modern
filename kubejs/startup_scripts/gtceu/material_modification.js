@@ -344,13 +344,14 @@ const registerGTCEuMaterialModification = (event) => {
 	// Ostrum fluid pipe - same flow rate as titanium, higher temp range
 	GTMaterials.get('ostrum').setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(3700, 150, true, false, true, false));
 
-	// Add some hazards back
+	// int is how fast the condition progresses (default 1.0)
+	// bool is whether or not the condition applies to anything made with the material, other than dusts (default false) 
 	GTMaterials.Realgar.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
 	GTMaterials.Cobaltite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
 	GTMaterials.Galena.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.WEAK_POISON, 1, false));
 	GTMaterials.Chromite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.IRRITANT, 1, false));
 	GTMaterials.Thorium.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.ANY, GTMedicalConditions.CARCINOGEN, 1, true));
-	
+
 	// This contains hazardous elements so GT tags it as hazardous automatically
 	GTMaterials.get('ostrum').getProperties().removeProperty(PropertyKey.HAZARD);
 	GTMaterials.get('ostrum_iodide').getProperties().removeProperty(PropertyKey.HAZARD);
