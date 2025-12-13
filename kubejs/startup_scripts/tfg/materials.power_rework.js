@@ -52,4 +52,95 @@ const registerTFGPowerReworkMaterials = (event) => {
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(540))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+	//#region Materials for BTX
+
+	// Propylene
+	event.create('tfg:propylene')
+    	.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(350))
+    	.components('3x carbon', '6x hydrogen')
+    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    	.color(0xffb347)
+    	.secondaryColor(0xffe0b2)
+
+	// Crude Mixed Gas
+	event.create('tfg:crude_mixed_gas')
+    	.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(500))
+    	.components('17x carbon', '52x hydrogen')
+    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    	.color(0x9bb6c9)
+    	.secondaryColor(0xd7e7ef)
+
+	// Sodium Silicate
+	event.create('tfg:sodium_silicate')
+    	.liquid(new GTFluidBuilder().temperature(293))
+    	.components('2x sodium', '1x silicon', '3x oxygen')
+    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    	.color(0xcce0f0)
+    	.secondaryColor(0xa9c6db)
+
+	// Sodium Aluminium
+	event.create('tfg:sodium_aluminium')
+    	.dust()
+    	.components('1x sodium', '1x aluminum', '2x oxygen')
+    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    	.iconSet(GTMaterialIconSet.FLINT)
+    	.color(0xf0e68c)
+    	.secondaryColor(0xded7a8)
+
+	// TPAOH
+	event.create('tfg:tpaoh')
+    	.liquid(new GTFluidBuilder().temperature(293))
+    	.components('12x carbon', '29x hydrogen', '1x nitrogen', '1x oxygen')
+    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    	.color(0xffd8b1)
+    	.secondaryColor(0xe6b88f)
+
+	// ZSM-5 Gel
+	event.create('tfg:zsm5_gel')
+    	.liquid(new GTFluidBuilder().temperature(323))
+    	.components('12x carbon', '49x hydrogen', '1x nitrogen', '25x silicon', '1x aluminum', '66x oxygen')
+    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    	.color(0xf2e8d6)
+    	.secondaryColor(0xd0c4b0)
+
+	// Catalyser Powder
+	event.create('tfg:catalyser_powder')
+	    .dust()
+    	.components('1x nickel', '2x aluminum', '4x oxygen')
+    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    	.iconSet(GTMaterialIconSet.FLINT)
+    	.color(0x7f7f7f)
+    	.secondaryColor(0xcfcfcf)
+
+	// Clean Powder
+	event.create('tfg:clean_powder')
+    	.dust()
+    	.components('2x sodium', '1x carbon', '3x oxygen')
+    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    	.iconSet(GTMaterialIconSet.FLINT)
+    	.color(0xffffff)
+    	.secondaryColor(0xdfe6e6)
+
+	// Leachate
+	event.create('tfg:leachate')
+    	.liquid(new GTFluidBuilder().temperature(298))
+    	.components('1x copper', '1x iron', '1x sodium', '1x chlorine', '10x hydrogen', '5x oxygen')
+    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    	.color(0xbfd6d0)
+    	.secondaryColor(0x8fbdb0)
+
+	// Metal Rich Solution
+	event.create('tfg:metal_rich_solution')
+    	.liquid(new GTFluidBuilder().temperature(298))
+    	.components('2x copper', '1x iron', '1x sodium', '2x chlorine', '10x hydrogen', '5x oxygen')
+    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    	.color(0xb56f5a)
+    	.secondaryColor(0xd9b0a3)
+
+	// Aciditic Waste
+    event.create('tfg:aciditic_waste')
+		.liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))
+		.color(0x9df2b4)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
 }

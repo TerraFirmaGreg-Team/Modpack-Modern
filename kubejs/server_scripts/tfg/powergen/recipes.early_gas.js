@@ -240,6 +240,124 @@ function registerTFGEarlyGasRecipes(event) {
 
 	// Process Syngas
 
+	//#region BTX Fuel
+
+	// ZSM - 5
+
+	event.recipes.gtceu.chemical_reactor('tfg:sodium_silicate')
+		.itemInputs(Item.of('#forge:dusts/nether_quartz'))
+		.inputFluids(Fluid.of('tfc:lye', 1000))
+		.outputFluids(Fluid.of('tfg:sodium_silicate', 1000))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:sodium_aluminum')
+		.itemInputs(Item.of('#forge:dusts/aluminium'))
+		.inputFluids(Fluid.of('tfc:lye', 1000))
+		.itemOutputs(Item.of('#forge:dusts/sodium_aluminium', 1))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:tpaoh')
+		.itemInputs(Item.of('#forge:dusts/sodium'))
+		.inputFluids(Fluid.of('gtceu:ammonia', 1000), Fluid.of('gtceu:ethanol', 1000))
+		.outputFluids(Fluid.of('tfg:tpaoh', 1000))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:zsm_5_gel')
+		.itemInputs(Item.of('#forge:dusts/sodium_aluminium'))
+		.inputFluids(Fluid.of('tfg:tpaoh', 1000))
+		.inputFluids(Fluid.of('tfg:sodium_silicate', 1000))
+		.outputFluids(Fluid.of('tfg:zsm5_gel', 1000))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:catalyser_zsm')
+		.itemInputs(Item.of('#forge:dusts/platinum'), Item.of('#forge:dusts/rhenium'))
+		.inputFluids(Fluid.of('gtceu:hydrogen', 1000))
+		.inputFluids(Fluid.of('tfg:zsm5_gel', 1000))
+		.itemOutputs(Item.of('tfg:catalyser_tt_re_zsm', 1))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	// BTX
+
+	event.recipes.gtceu.distillation_tower('tfg:methanol_distil_propylene')
+		.inputFluids(Fluid.of('gtceu:methanol', 6000))
+		.outputFluids(Fluid.of('gtceu:hydrogen', 10000), Fluid.of('gtceu:oxygen', 6000), Fluid.of('gtceu:methane', 1000), Fluid.of('gtceu:ethylene', 1000), Fluid.of('tfg:propylene', 1000))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.cracker('tfg:crude_mixed_gas')
+		.itemInputs(Item.of('tfg:catalyser_tt_re_zsm'))
+		.inputFluids(Fluid.of('tfg:reformate_gas', 1000))
+		.inputFluids(Fluid.of('tfg:propylene', 1000))
+		.outputFluids(Fluid.of('tfg:crude_mixed_gas', 1000))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.large_chemical_reactor('tfg:btx_fuel')
+		.inputFluids(Fluid.of('tfg:crude_mixed_gas', 1000))
+		.inputFluids(Fluid.of('gtceu:benzene', 1000))
+		.inputFluids(Fluid.of('gtceu:toluene', 1000))
+		.inputFluids(Fluid.of('gtceu:dimethylbenzene', 1000))
+		.itemOutputs(Item.of('tfg:used_catalyser', 1))
+		.outputFluids(Fluid.of('tfg:btx_fuel', 1000))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	// Loop
+
+	event.recipes.gtceu.macerator('tfg:catalyser_power')
+		.itemInputs(Item.of('tfg:used_catalyser', 1))
+		.itemOutputs(Item.of('tfg:catalyser_powder_dust', 1), Item.of("gtceu:platinum_dust", 1))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:clean_powder')
+		.itemInputs(Item.of('tfg:catalyser_powder_dust', 1))
+		.inputFluids(Fluid.of('gtceu:hydrogen_peroxide', 1000))
+		.itemOutputs(Item.of('tfg:clean_powder_dust', 1), Item.of('gtceu:sodium_dust', 1))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.coal_liquefaction_tower('tfg:leachate')
+		.itemInputs(Item.of('tfg:clean_powder_dust', 1))
+		.inputFluids(Fluid.of('gtceu:diluted_hydrochloric_acid', 1000))
+		.outputFluids(Fluid.of('tfg:leachate', 1000))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.centrifuge('tfg:metal_rich_solution')
+		.inputFluids(Fluid.of('tfg:leachate', 1000))
+		.itemOutputs(Item.of('gtceu:nether_quartz_dust', 1), Item.of('gtceu:aluminium_dust', 1))
+		.outputFluids(Fluid.of('tfg:metal_rich_solution', 1000))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.mixer('tfg:aciditic_waste')
+		.inputFluids(Fluid.of('tfg:metal_rich_solution', 1000))
+		.outputFluids(Fluid.of('tfg:aciditic_waste', 1000))
+		.itemOutputs(Item.of('tfg:loaded_resin', 1))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.distillery('tfg:rhenium_dust')
+		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 1000))
+		.itemInputs(Item.of('tfg:loaded_resin', 1))
+		.itemOutputs(Item.of('gtceu:rhenium_dust', 1))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.electrolyzer('tfg:aciditic_waste_electrolyzing')
+		.inputFluids(Fluid.of('tfg:aciditic_waste', 1000))
+		.outputFluids(Fluid.of('gtceu:ammonia', 1000))
+		.outputFluids(Fluid.of('gtceu:ethanol', 1000))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+
 	
 
 }
