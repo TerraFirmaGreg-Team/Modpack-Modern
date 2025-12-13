@@ -3380,7 +3380,7 @@
   "quests.steam_age.horse_crank.title": "最初の動力源",
   "quests.steam_age.horse_crank.subtitle": "24時間働けますか？",
   "quests.steam_age.horse_crank.desc.1": "&3アニマルクランク&rは、最初に利用できる動力源です。使用するには、7x7の整地されたエリアの中央に設置し、動物をリードでつなぎます。\n動物の種類によって出力される応力の大きさが異なり、下のブロックによって回転速度が向上します。それぞれのクランク同士の領域は重なっていても問題ありません。\n\n注意:動物を取り付けるには、リードを2本持っている必要がある場合があります。",
-  "quests.steam_age.horse_crank.desc.2": "&3小型動物(4 SU):&r\nオオカミ、犬、豚、羊、ヤギ、アルパカ\n\n&3中型動物(6 SU):&r\n牛、ロバ\n\n&3大きな動物(8 SU):&r\n馬、ラバ、ジャコウウシ、ヤク",
+  "quests.steam_age.horse_crank.desc.2": "&3小型動物(8 SU):&r\nオオカミ、犬、豚、羊、ヤギ、アルパカ\n\n&3中型動物(12 SU):&r\n牛、ロバ\n\n&3大きな動物(16 SU):&r\n馬、ラバ、ジャコウウシ、ヤク",
   "quests.steam_age.poor_paths.title": "貧弱な道",
   "quests.steam_age.poor_paths.subtitle": "奴隷労働",
   "quests.steam_age.poor_paths.desc": "これは使用できる中で最悪の道路です。アニマルクランクは2RPMで動作します。",
