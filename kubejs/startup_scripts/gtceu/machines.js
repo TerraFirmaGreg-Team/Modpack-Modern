@@ -489,8 +489,7 @@ const registerGTCEuMachines = (event) => {
 	event.create('large_kitchen_array', 'multiblock')
 		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.rotationState(RotationState.NON_Y_AXIS)
- 		// .recipeType('food_oven', 'food_processor')
-		.recipeTypes(['food_oven'])
+		.recipeTypes(['food_oven', 'food_processor'])
 		.appearanceBlock(() => Block.getBlock('gtceu:high_temperature_smelting_casing'))
         .recipeModifiers(
             [
