@@ -58,21 +58,4 @@ function registerGreateRecyclingRecipes(event) {
 		event.shapeless('create:andesite_casing', ['greate:titanium_gearbox', '#forge:tools/hammers']))
 
 	// #endregion
-
-	// #region Belts
-
-	event.recipes.gtceu.macerator('greate:rubber_belt_connector')
-		.itemInputs('greate:rubber_belt_connector')
-		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Rubber, 1))
-		.duration(GTMaterials.Rubber.getMass() * 3)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.macerator('greate:silicone_rubber_belt_connector')
-		.itemInputs('greate:silicone_rubber_belt_connector')
-		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.SiliconeRubber, 1))
-		.duration(GTMaterials.SiliconeRubber.getMass() * 3)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-	// #region
 }

@@ -696,7 +696,6 @@ function registerGreateRecipes(event) {
 		.addMaterialInfo(true)
 
 	event.remove({ id: 'gtceu:shaped/rubber_belt_connector' })
-	removeMaceratorRecipe(event, 'rubber_belt_connector')
 	removeMaceratorRecipe(event, 'macerate_rubber_belt_connector')
 	event.remove({ id: 'gtceu:extractor/extract_rubber_belt_connector' })
 	
