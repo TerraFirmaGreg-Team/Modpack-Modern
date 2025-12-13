@@ -187,4 +187,17 @@ function registerTFGMultiblockRecipes(event) {
 		F: 'gtceu:mv_electric_piston'
 	}).addMaterialInfo().id('gtceu:shaped/coal_liquefaction_tower')
 
+	event.recipes.gtceu.shaped('gtceu:large_kitchen_array', [
+		'WCW',
+		'OPF',
+		'WCW'
+	], {
+		W: 'gtceu:steel_whisk',
+		C: '#gtceu:circuits/ev',
+		F: 'tfg:ev_food_processor',
+		C: 'tfg:ev_universal_circuit',
+		O: 'tfg:ev_food_oven'
+	}
+	).id('tfg:shaped/large_kitchen_array')
+
 }
