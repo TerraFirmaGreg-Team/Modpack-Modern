@@ -72,7 +72,7 @@ function registerTFGFacadeWhitelistItemTags(event) {
 		'gtceu:laminated_glass',
 		'gtceu:plascrete',
 		'gtceu:cleanroom_glass',
-		'gtceu:cleanroom_glass',
+		'gtceu:treated_wood_planks',
 		
 		//gtceu casing
 		'gtceu:steam_machine_casing',
