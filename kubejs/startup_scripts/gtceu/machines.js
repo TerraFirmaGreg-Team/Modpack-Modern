@@ -482,4 +482,50 @@ const registerGTCEuMachines = (event) => {
 			'gtceu:block/casings/solid/machine_casing_solid_steel',
 			'gtceu:block/multiblock/distillation_tower')
 
+
+	//#region Other
+
+	// Large Kitchen Array
+	event.create('large_kitchen_array', 'multiblock')
+		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+		.rotationState(RotationState.NON_Y_AXIS)
+ 		// .recipeType('food_oven', 'food_processor')
+		.recipeTypes(['food_oven'])
+		.appearanceBlock(() => Block.getBlock('gtceu:high_temperature_smelting_casing'))
+        .recipeModifiers(
+            [
+                GTRecipeModifiers.PARALLEL_HATCH,
+				(machine, recipe) => GTRecipeModifiers.pyrolyseOvenOverclock(machine, recipe),
+				GTRecipeModifiers.BATCH_MODE
+            ]
+        )
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle('CCCCCCCCC', 'CCCYYYYYC', 'CCCCCCCCC')
+			.aisle('CCCCCCCCC', 'CGCPPPPPC', 'CCCVVVVVC')
+			.aisle('CCCCCCCCC', 'C#CFFFFFC', 'CCCVVVVVC')
+			.aisle('CCCCCCCCC', 'CGCLLLLLC', 'CCCCCCCCC')
+			.aisle('CCC      ', 'CXC      ', 'CCC      ')
+			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('C', Predicates.blocks('gtceu:high_temperature_smelting_casing')
+				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setPreviewCount(1).setMaxGlobalLimited(2).setMinGlobalLimited(1))
+				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1).setPreviewCount(1)))
+			.where('G', Predicates.blocks('gtceu:steel_gearbox'))
+			.where('P', Predicates.blocks('gtceu:steel_pipe_casing'))
+			.where('F', Predicates.blocks('gtceu:steel_firebox_casing'))
+			.where('V', Predicates.blocks('gtceu:heat_vent'))
+			.where('L', Predicates.blocks('gtceu:laminated_glass'))
+			.where('Y', Predicates.heatingCoils())
+			.where('#', Predicates.air())
+			.where(' ', Predicates.any())
+			.build()
+	)
+	.workableCasingModel(
+		'gtceu:block/casings/gcym/high_temperature_smelting_casing',
+		'tfg:block/machines/food_processor')
+
 }
