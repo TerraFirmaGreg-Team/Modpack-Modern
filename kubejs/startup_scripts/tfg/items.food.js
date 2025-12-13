@@ -92,6 +92,7 @@ function registerTFGFoodItems(event) {
 		.texture('tfg:item/food/raw_moon_rabbit')
 		.food(food => food.hunger(2).saturation(2)
 			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
 
@@ -99,6 +100,7 @@ function registerTFGFoodItems(event) {
 		.translationKey('item.tfg.food.cooked_moon_rabbit')
 		.texture('tfg:item/food/cooked_moon_rabbit')
 		.food(food => food.hunger(4).saturation(8))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
@@ -108,6 +110,7 @@ function registerTFGFoodItems(event) {
 		.texture('tfg:item/food/raw_glacian_mutton')
 		.food(food => food.hunger(2).saturation(2)
 			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
 
@@ -115,6 +118,7 @@ function registerTFGFoodItems(event) {
 		.translationKey('item.tfg.food.cooked_glacian_mutton')
 		.texture('tfg:item/food/cooked_glacian_mutton')
 		.food(food => food.hunger(5).saturation(8))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
@@ -124,6 +128,7 @@ function registerTFGFoodItems(event) {
 		.texture('tfg:item/food/raw_sniffer_beef')
 		.food(food => food.hunger(3).saturation(2)
 			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
 
@@ -131,6 +136,7 @@ function registerTFGFoodItems(event) {
 		.translationKey('item.tfg.food.cooked_sniffer_beef')
 		.texture('tfg:item/food/cooked_sniffer_beef')
 		.food(food => food.hunger(8).saturation(9))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
@@ -140,6 +146,7 @@ function registerTFGFoodItems(event) {
 		.texture('tfg:item/food/raw_wraptor')
 		.food(food => food.hunger(3).saturation(2)
 			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
 
@@ -147,6 +154,7 @@ function registerTFGFoodItems(event) {
 		.translationKey('item.tfg.food.cooked_wraptor')
 		.texture('tfg:item/food/cooked_wraptor')
 		.food(food => food.hunger(6).saturation(8))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
@@ -156,6 +164,7 @@ function registerTFGFoodItems(event) {
 		.texture('tfg:item/food/raw_springling_collar')
 		.food(food => food.hunger(2).saturation(2)
 			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
 
@@ -163,6 +172,7 @@ function registerTFGFoodItems(event) {
 		.translationKey('item.tfg.food.cooked_springling_chops')
 		.texture('tfg:item/food/cooked_springling_collar')
 		.food(food => food.hunger(4).saturation(4))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
@@ -172,6 +182,7 @@ function registerTFGFoodItems(event) {
 		.texture('tfg:item/food/raw_walker_steak')
 		.food(food => food.hunger(3).saturation(2)
 			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
 
@@ -179,6 +190,7 @@ function registerTFGFoodItems(event) {
 		.translationKey('item.tfg.food.cooked_walker_steak')
 		.texture('tfg:item/food/cooked_walker_steak')
 		.food(food => food.hunger(8).saturation(10))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
@@ -188,6 +200,7 @@ function registerTFGFoodItems(event) {
 		.texture('tfg:item/food/raw_glider_wings')
 		.food(food => food.hunger(1).saturation(1)
 			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
 
@@ -195,6 +208,7 @@ function registerTFGFoodItems(event) {
 		.translationKey('item.tfg.food.cooked_glider_wings')
 		.texture('tfg:item/food/cooked_glider_wings')
 		.food(food => food.hunger(2).saturation(3))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
@@ -204,6 +218,7 @@ function registerTFGFoodItems(event) {
 		.texture('tfg:item/food/raw_whole_soarer')
 		.food(food => food.hunger(2).saturation(2)
 			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
 
@@ -211,6 +226,7 @@ function registerTFGFoodItems(event) {
 		.translationKey('item.tfg.food.cooked_whole_soarer')
 		.texture('tfg:item/food/cooked_whole_soarer')
 		.food(food => food.hunger(6).saturation(6))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
@@ -220,6 +236,7 @@ function registerTFGFoodItems(event) {
 		.texture('tfg:item/food/raw_crusher_meat')
 		.food(food => food.hunger(3).saturation(2)
 			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
 
@@ -227,6 +244,7 @@ function registerTFGFoodItems(event) {
 		.translationKey('item.tfg.food.cooked_crusher_meat')
 		.texture('tfg:item/food/cooked_crusher_meat')
 		.food(food => food.hunger(5).saturation(6))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
@@ -236,6 +254,7 @@ function registerTFGFoodItems(event) {
 		.texture('tfg:item/food/raw_goober_meat')
 		.food(food => food.hunger(1).saturation(2)
 			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
 
@@ -243,6 +262,7 @@ function registerTFGFoodItems(event) {
 		.translationKey('item.tfg.food.cooked_goober_meat')
 		.texture('tfg:item/food/cooked_goober_meat')
 		.food(food => food.hunger(3).saturation(9))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
@@ -252,6 +272,7 @@ function registerTFGFoodItems(event) {
 		.texture('tfg:item/food/raw_stackatick_chunks')
 		.food(food => food.hunger(1).saturation(1)
 			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
 
@@ -263,6 +284,7 @@ function registerTFGFoodItems(event) {
 			.eaten(ctx => {
 				ctx.player.give('minecraft:stick')
 			}))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
 
@@ -273,6 +295,7 @@ function registerTFGFoodItems(event) {
 			.eaten(ctx => {
 				ctx.player.give('minecraft:stick')
 			}))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
@@ -282,6 +305,7 @@ function registerTFGFoodItems(event) {
 		.texture('tfg:item/food/raw_cruncher_ribs')
 		.food(food => food.hunger(2).saturation(2)
 			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
 
@@ -289,6 +313,7 @@ function registerTFGFoodItems(event) {
 		.translationKey('item.tfg.food.cooked_cruncher_ribs')
 		.texture('tfg:item/food/cooked_cruncher_ribs')
 		.food(food => food.hunger(10).saturation(14))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
@@ -298,6 +323,7 @@ function registerTFGFoodItems(event) {
 		.texture('tfg:item/food/raw_surfer_steak')
 		.food(food => food.hunger(2).saturation(2)
 			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
 
@@ -305,6 +331,7 @@ function registerTFGFoodItems(event) {
 		.translationKey('item.tfg.food.cooked_surfer_steak')
 		.texture('tfg:item/food/cooked_surfer_steak')
 		.food(food => food.hunger(8).saturation(8))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
@@ -314,6 +341,7 @@ function registerTFGFoodItems(event) {
 		.texture('tfg:item/food/raw_long_pig_filet')
 		.food(food => food.hunger(2).saturation(1)
 			.effect('minecraft:hunger', 100, 0, 1))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/raw_meats')
 
@@ -321,6 +349,7 @@ function registerTFGFoodItems(event) {
 		.translationKey('item.tfg.food.cooked_long_pig_filet')
 		.texture('tfg:item/food/cooked_long_pig_filet')
 		.food(food => food.hunger(4).saturation(2))
+		.tag('tfc:foods')
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
@@ -439,6 +468,7 @@ function registerTFGFoodItems(event) {
 		.tag('tfc:foods/usable_in_sandwich')
 		.tag('tfg:foods/usable_in_meal_bag')
 		.tag('tfc:foods/dairy');
+		.tag(tfc:pig_food)
 
 	// Oatmeal
 	event.create('tfg:food/oatmeal')
