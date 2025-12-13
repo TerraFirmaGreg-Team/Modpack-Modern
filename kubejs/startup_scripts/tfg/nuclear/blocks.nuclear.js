@@ -55,9 +55,10 @@ function registerTFGNuclearBlocks(event) {
 		.activeVelocity(0.0, 0.0, 0.0)
 		.activeParticle('tfg:cooling_steam')
 		.activeBase(0.0, 12.5, 0.0)
-		.activeCount(8)
+		.activeCount(2)
 		.activeForced(false)
-		.hasTicker(true) 
+		.hasTicker(true)
+		.emitDelay(4);
 
 	event.create('tfg:titanium_concrete')
 		.translationKey('block.tfg.titanium_concrete')
