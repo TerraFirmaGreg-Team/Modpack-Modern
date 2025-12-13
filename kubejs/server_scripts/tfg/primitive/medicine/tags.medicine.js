@@ -2,6 +2,33 @@
 
 function registerTFGMedicineItemTags(event) {
 
+	event.add('tfg:medicine', 'tfg:antipoison_pill')
+	event.add('tfg:medicine', 'tfg:antipoison_tablet')
+	event.add('tfg:medicine', 'tfg:haste_pill')
+	event.add('tfg:medicine', 'tfg:haste_tablet')
+	event.add('tfg:medicine', 'tfg:night_vision_pill')
+	event.add('tfg:medicine', 'tfg:night_vision_tablet')
+	event.add('tfg:medicine', 'tfg:poison_pill')
+	event.add('tfg:medicine', 'tfg:poison_tablet')
+	event.add('tfg:medicine', 'tfg:regeneration_pill')
+	event.add('tfg:medicine', 'tfg:regeneration_tablet')
+	event.add('tfg:medicine', 'tfg:slowness_pill')
+	event.add('tfg:medicine', 'tfg:slowness_tablet')
+	event.add('tfg:medicine', 'tfg:speed_pill')
+	event.add('tfg:medicine', 'tfg:speed_tablet')
+	event.add('tfg:medicine', 'tfg:water_breathing_pill')
+	event.add('tfg:medicine', 'tfg:water_breathing_tablet')
+	event.add('tfg:medicine', 'tfg:weakness_pill')
+	event.add('tfg:medicine', 'tfg:weakness_tablet')
+	event.add('tfg:medicine', 'tfg:absorption_salvo')
+	event.add('tfg:medicine', 'tfg:fire_resistance_salvo')
+	event.add('tfg:medicine', 'tfg:invisibility_salvo')
+	event.add('tfg:medicine', 'tfg:luck_salvo')
+	event.add('tfg:medicine', 'tfg:resistance_salvo')
+	event.add('tfg:medicine', 'tfg:instant_health_salvo')
+	event.add('tfg:medicine', 'gtceu:paracetamol_pill')
+	event.add('tfg:medicine', 'gtceu:rad_away_pill')
+
 	event.add('tfg:antipoison_ingredients', 'tfc:plant/blood_lily')
 	event.add('tfg:antipoison_ingredients', 'tfc:plant/pistia')
 	event.add('tfg:antipoison_ingredients', 'tfc:powder/bismuthinite')
@@ -46,6 +73,9 @@ function registerTFGMedicineItemTags(event) {
 	event.add('tfg:night_vision_ingredients', 'tfg:sunflower_product')
 
 	event.add('tfg:invisibility_ingredients', 'tfc:plant/calendula')
+	event.add('tfg:invisibility_ingredients', 'tfc:plant/snapdragon_pink')
+	
+	event.add('tfg:absorption_ingredients', 'tfc:plant/poppy')
 	event.add('tfg:absorption_ingredients', 'beneath:burpflower')
 
 	event.add('tfg:fire_resistance_ingredients', 'tfc:plant/cattail')
@@ -58,9 +88,6 @@ function registerTFGMedicineItemTags(event) {
 
 	event.add('tfg:instant_health_ingredients', 'tfc:plant/foxglove')
 	event.add('tfg:instant_health_ingredients', 'tfc:plant/artists_conk')
-
-	event.add('tfg:absorption_ingredients', 'tfc:plant/poppy')
-	event.add('tfg:invisibility_ingredients', 'tfc:plant/snapdragon_pink')
 
 	event.add('tfg:luck_ingredients', 'tfc:plant/goldenrod')
 	event.add('tfg:luck_ingredients', 'tfc:plant/heather')

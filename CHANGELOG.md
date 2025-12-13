@@ -12,10 +12,12 @@
 #### Medical Hazards
 - Added debuff effects for all medical conditions, so you're immediately notified when carrying something hazardous instead of wondering why you have Hunger II. @Pyritie
 - The hazard effect that previously instantly killed you (which did not spawn a corpse) now gives you Wither III instead. @Pyritie
+- Early medicines can now also cure medical conditions! Did you think they wouldn't come with side effects?
 #### Other
 - Added two more early game mechanical belts, and rubber+ belts are also now more expensive. @Pyritie
 - Doubled the durability of all space suits @Pyritie
 - Added a way to convert between vinegar and acetic acid (#2386) @Epicificator
+- Added a renderer to the electric greenhouse, so now you can visually see your crops grow! @RubenVerg
 ### Bug fixes
 - Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie
 - Fixed fries and cheese curds not being able to be put on burgers. @Redeix

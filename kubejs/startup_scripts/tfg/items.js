@@ -11,7 +11,6 @@ const registerTFGItems = (event) => {
 	registerTFGPrimitiveItems(event);
 	registerTFGNuclearItems(event);
 	registerTFGWoodItems(event);
-	registerTFGMedicineItems(event);
 	registerTFGAircraftItems(event);
 	registerTFGSpaceItems(event);
 	registerTFGMarsItems(event);
