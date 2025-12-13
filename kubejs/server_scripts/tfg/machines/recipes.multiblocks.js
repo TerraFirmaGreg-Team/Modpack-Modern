@@ -187,4 +187,20 @@ function registerTFGMultiblockRecipes(event) {
 		F: 'gtceu:mv_electric_piston'
 	}).addMaterialInfo().id('gtceu:shaped/coal_liquefaction_tower')
 
+	event.recipes.gtceu.shaped('gtceu:large_kitchen_array', [
+		'ARF',
+		'PCO',
+		'HEH'
+	], {
+		A: 'gtceu:ev_robot_arm',
+		R: 'gtceu:titanium_rotor',
+		F: 'gtceu:ev_fluid_regulator',
+		P: 'tfg:ev_food_processor',
+		C: 'tfg:ev_universal_circuit',
+		O: 'tfg:ev_food_oven',
+		H: 'gtceu:nichrome_quadruple_wire',
+		E: 'gtceu:aluminium_single_cable'
+	}
+	).id('tfg:shaped/large_kitchen_array')
+
 }

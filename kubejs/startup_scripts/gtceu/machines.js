@@ -48,7 +48,7 @@ const registerGTCEuMachines = (event) => {
 
 	//#region Large Solar Panels
 	//Tier 1
-		event.create('large_solar_panel', 'multiblock')
+	event.create('large_solar_panel', 'multiblock')
 		.regressWhenWaiting(false)
 		.rotationState(RotationState.NON_Y_AXIS)
 		.generator(true)
@@ -93,7 +93,7 @@ const registerGTCEuMachines = (event) => {
 		.workableCasingModel('tfg:block/casings/machine_casing_iron_desh', 'gtceu:block/multiblock/hpca')
 
 	//Tier 2
-		event.create('large_solar_panel_tier2', 'multiblock')
+	event.create('large_solar_panel_tier2', 'multiblock')
 		.regressWhenWaiting(false)
 		.rotationState(RotationState.NON_Y_AXIS)
 		.generator(true)
@@ -171,7 +171,7 @@ const registerGTCEuMachines = (event) => {
 		.workableCasingModel('tfg:block/casings/machine_casing_iron_desh', 'gtceu:block/multiblock/hpca')
 
 	//Tier 3
-		event.create('large_solar_panel_tier3', 'multiblock')
+	event.create('large_solar_panel_tier3', 'multiblock')
 		.regressWhenWaiting(false)
 		.rotationState(RotationState.NON_Y_AXIS)
 		.generator(true)
@@ -268,13 +268,13 @@ const registerGTCEuMachines = (event) => {
 		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('nuclear_fuel_factory')
-        .recipeModifiers(
-            [
-                GTRecipeModifiers.PARALLEL_HATCH,
+		.recipeModifiers(
+			[
+				GTRecipeModifiers.PARALLEL_HATCH,
 				(machine, recipe) => GTRecipeModifiers.pyrolyseOvenOverclock(machine, recipe),
 				GTRecipeModifiers.BATCH_MODE
-            ]
-        )
+			]
+		)
 		.appearanceBlock(() => Block.getBlock('gtceu:atomic_casing'))
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle('RLLLR', 'I   I', 'I   I', 'I   I', 'RLLLR')
@@ -310,14 +310,14 @@ const registerGTCEuMachines = (event) => {
 	event.create('heat_exchanger', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('heat_exchanger')
-        .recipeModifiers([GTRecipeModifiers.OC_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
+		.recipeModifiers([GTRecipeModifiers.OC_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
 		.appearanceBlock(() => Block.getBlock('gtceu:high_temperature_smelting_casing'))
 		.pattern(definition => FactoryBlockPattern.start()
-			.aisle('       ','BBBBBBB','BCCCCCB','BBBBBBB','       ')
-			.aisle('AAAAAAA','A#####A','BDDDDDB','A#####A','AAAAAAA')
-			.aisle('AFFFFFA','B#####B','LEEEEEL','B#####B','AFFFFFA')
-			.aisle('AAAAAAA','A#####A','BDDDDDB','A#####A','AAAAAAA')
-			.aisle('       ','BBBXBBB','BCCCCCB','BBBMBBB','       ')
+			.aisle('       ', 'BBBBBBB', 'BCCCCCB', 'BBBBBBB', '       ')
+			.aisle('AAAAAAA', 'A#####A', 'BDDDDDB', 'A#####A', 'AAAAAAA')
+			.aisle('AFFFFFA', 'B#####B', 'LEEEEEL', 'B#####B', 'AFFFFFA')
+			.aisle('AAAAAAA', 'A#####A', 'BDDDDDB', 'A#####A', 'AAAAAAA')
+			.aisle('       ', 'BBBXBBB', 'BCCCCCB', 'BBBMBBB', '       ')
 			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
 			.where('A', Predicates.blocks('gtceu:atomic_casing'))
 			.where('B', Predicates.blocks('gtceu:high_temperature_smelting_casing')
@@ -340,41 +340,41 @@ const registerGTCEuMachines = (event) => {
 			"gtceu:block/machines/fluid_heater")
 
 	// Nuclear Fission Reactor - Just keeping it in case we got mod issues
-/*
-	event.create('fission_reactor', 'multiblock')
-		.rotationState(RotationState.NON_Y_AXIS)
-		.recipeType('fission_reactor')
-        .recipeModifiers([GTRecipeModifiers.OC_PERFECT_SUBTICK])
-		.appearanceBlock(() => Block.getBlock('gtceu:atomic_casing'))
-		.pattern(definition => FactoryBlockPattern.start()
-			.aisle('LLLLL','ABCBA','ABCBA','ABCBA','ABCBA','ABCBA','LLLLL')
-			.aisle('LAAAL','BE#EB','BE#EB','BE#EB','BE#EB','BE#EB','LAAAL')
-			.aisle('LAAAL','C#D#C','C#D#C','C#D#C','C#D#C','C#D#C','LAAAL')
-			.aisle('LAAAL','BE#EB','BE#EB','BE#EB','BE#EB','BE#EB','LAAAL')
-			.aisle('LLXLL','ABCBA','ABCBA','ABCBA','ABCBA','ABCBA','LLLLL')
-			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
-			.where('A', Predicates.blocks('gtceu:high_temperature_smelting_casing'))
-			.where('B', Predicates.blocks('gtceu:atomic_casing'))
-			.where('C', Predicates.blocks('gtceu:laminated_glass'))
-			.where('D', Predicates.blocks(GTBlocks.FIREBOX_TITANIUM.get()))
-			.where('E', Predicates.blocks('gtceu:titanium_frame'))
-			.where('F', Predicates.blocks(GTBlocks.CASING_ENGINE_INTAKE.get()))
-			.where('L', Predicates.blocks('gtceu:atomic_casing').setMinGlobalLimited(10)
-				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
-				.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
-				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
-				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1))
-				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
-			.where('#', Predicates.air())
-			.where(' ', Predicates.any())
-			.build()
-		)
-		.workableCasingModel(
-			"gtceu:block/casings/gcym/atomic_casing",
-			"gtceu:block/machines/electromagnetic_separator")
-*/
+	/*
+		event.create('fission_reactor', 'multiblock')
+			.rotationState(RotationState.NON_Y_AXIS)
+			.recipeType('fission_reactor')
+			.recipeModifiers([GTRecipeModifiers.OC_PERFECT_SUBTICK])
+			.appearanceBlock(() => Block.getBlock('gtceu:atomic_casing'))
+			.pattern(definition => FactoryBlockPattern.start()
+				.aisle('LLLLL','ABCBA','ABCBA','ABCBA','ABCBA','ABCBA','LLLLL')
+				.aisle('LAAAL','BE#EB','BE#EB','BE#EB','BE#EB','BE#EB','LAAAL')
+				.aisle('LAAAL','C#D#C','C#D#C','C#D#C','C#D#C','C#D#C','LAAAL')
+				.aisle('LAAAL','BE#EB','BE#EB','BE#EB','BE#EB','BE#EB','LAAAL')
+				.aisle('LLXLL','ABCBA','ABCBA','ABCBA','ABCBA','ABCBA','LLLLL')
+				.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+				.where('A', Predicates.blocks('gtceu:high_temperature_smelting_casing'))
+				.where('B', Predicates.blocks('gtceu:atomic_casing'))
+				.where('C', Predicates.blocks('gtceu:laminated_glass'))
+				.where('D', Predicates.blocks(GTBlocks.FIREBOX_TITANIUM.get()))
+				.where('E', Predicates.blocks('gtceu:titanium_frame'))
+				.where('F', Predicates.blocks(GTBlocks.CASING_ENGINE_INTAKE.get()))
+				.where('L', Predicates.blocks('gtceu:atomic_casing').setMinGlobalLimited(10)
+					.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+					.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+					.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
+					.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1))
+					.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+				.where('#', Predicates.air())
+				.where(' ', Predicates.any())
+				.build()
+			)
+			.workableCasingModel(
+				"gtceu:block/casings/gcym/atomic_casing",
+				"gtceu:block/machines/electromagnetic_separator")
+	*/
 	//#endregion
-		
+
 	//#region Ore Line
 
 	// Ostrum Harvester
@@ -386,13 +386,13 @@ const registerGTCEuMachines = (event) => {
 		.recipeModifiers([(machine, recipe) => GTRecipeModifiers.crackerOverclock(machine, recipe), GTRecipeModifiers.BATCH_MODE])
 		.appearanceBlock(() => Block.getBlock('gtceu:nonconducting_casing'))
 		.pattern(definition => FactoryBlockPattern.start()
-			.aisle('     ' ,'A   A', 'AAAAA', 'ACCCA', 'AACAA', ' AAA ')
-			.aisle('  G  ' ,'     ', 'BBBBB', 'B###B', 'BB#BB', ' BFB ')
-			.aisle(' GGG ' ,'     ', 'ADDDA', 'D###D', 'A###A', ' BFB ')
-			.aisle('GGGGG' ,'     ', 'ADDDA', 'D###D', 'A###A', ' BFB ')
-			.aisle(' GGG ' ,'     ', 'ADDDA', 'D###D', 'A###A', ' BFB ')
-			.aisle('  G  ' ,'     ', 'BBBBB', 'B###B', 'BB#BB', ' BFB ')
-			.aisle('     ' ,'A   A', 'AAAAA', 'ACXCA', 'AACAA', ' AAA ')
+			.aisle('     ', 'A   A', 'AAAAA', 'ACCCA', 'AACAA', ' AAA ')
+			.aisle('  G  ', '     ', 'BBBBB', 'B###B', 'BB#BB', ' BFB ')
+			.aisle(' GGG ', '     ', 'ADDDA', 'D###D', 'A###A', ' BFB ')
+			.aisle('GGGGG', '     ', 'ADDDA', 'D###D', 'A###A', ' BFB ')
+			.aisle(' GGG ', '     ', 'ADDDA', 'D###D', 'A###A', ' BFB ')
+			.aisle('  G  ', '     ', 'BBBBB', 'B###B', 'BB#BB', ' BFB ')
+			.aisle('     ', 'A   A', 'AAAAA', 'ACXCA', 'AACAA', ' AAA ')
 			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
 			.where('A', Predicates.blocks('gtceu:secure_maceration_casing'))
 			.where('B', Predicates.blocks('gtceu:nonconducting_casing'))
@@ -461,7 +461,7 @@ const registerGTCEuMachines = (event) => {
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle('CCC', 'D D', 'D D', 'DED', 'DED', 'BBB')
 			.aisle('CCC', ' Y ', ' E ', 'E#E', 'EEE', 'BMB')
-			.aisle('CXC', 'D D', 'D D', 'DED', 'DED', 'BBB' )
+			.aisle('CXC', 'D D', 'D D', 'DED', 'DED', 'BBB')
 			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
 			.where('B', Predicates.blocks('gtceu:solid_machine_casing').setMinGlobalLimited(4)
 				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(2))
@@ -481,5 +481,48 @@ const registerGTCEuMachines = (event) => {
 		.workableCasingModel(
 			'gtceu:block/casings/solid/machine_casing_solid_steel',
 			'gtceu:block/multiblock/distillation_tower')
+
+	//#region GCYM Multiblocks
+
+	// Large Kitchen Array
+	event.create('large_kitchen_array', 'multiblock')
+		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeTypes(['food_oven', 'food_processor'])
+		.appearanceBlock(() => Block.getBlock('gtceu:reaction_safe_mixing_casing'))
+		.recipeModifiers(
+			[
+				GTRecipeModifiers.PARALLEL_HATCH,
+				(machine, recipe) => GTRecipeModifiers.pyrolyseOvenOverclock(machine, recipe),
+				GTRecipeModifiers.BATCH_MODE
+			]
+		)
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle('CCCCCCCC', 'CCCYYYYC', 'CCCCCCCC')
+			.aisle('CCCCCCCC', 'CGGPPPPC', 'CCCVVVVC')
+			.aisle('CCCWWWWC', 'CGC####C', 'CCCVVVVC')
+			.aisle('CCCCCCCC', 'CXCLLLLC', 'CCCCCCCC')
+			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('C', Predicates.blocks('gtceu:reaction_safe_mixing_casing').setMinGlobalLimited(40)
+				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setPreviewCount(1).setMaxGlobalLimited(2).setMinGlobalLimited(1))
+				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1).setPreviewCount(1)))
+			.where('G', Predicates.blocks('gtceu:stainless_steel_gearbox'))
+			.where('P', Predicates.blocks('gtceu:ptfe_pipe_casing'))
+			.where('W', Predicates.blocks('gtceu:crushing_wheels'))
+			.where('V', Predicates.blocks('gtceu:heat_vent'))
+			.where('L', Predicates.blocks('gtceu:laminated_glass'))
+			.where('Y', Predicates.heatingCoils())
+			.where('#', Predicates.air())
+			.where(' ', Predicates.any())
+			.build()
+		)
+		.workableCasingModel(
+			'gtceu:block/casings/gcym/reaction_safe_mixing_casing',
+			'tfg:block/machines/food_processor')
 
 }
