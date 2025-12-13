@@ -6,13 +6,13 @@ function registerPrimitiveCreaturesLoots(event) {
 	// kaolin klayze
 	event.addEntityLootModifier('primitive_creatures:tfc')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([12,16], ['tfc:kaolin_clay', 'minecraft:clay_ball'])
+		.addWeightedLoot([12, 16], ['tfc:kaolin_clay', 'minecraft:clay_ball'])
 		.addLoot('tfc:plant/blood_lily')
 
 	// graphite glayze
 	event.addEntityLootModifier('primitive_creatures:golem_2')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([2,4], ['gtceu:rich_raw_graphite'])
+		.addWeightedLoot([2, 4], ['gtceu:rich_raw_graphite'])
 
 
 	const CLOTHING_DROP_RATE = 0.1
@@ -20,7 +20,7 @@ function registerPrimitiveCreaturesLoots(event) {
 	// forager - light tan clothes, holds a stone axe
 	event.addEntityLootModifier('primitive_creatures:iloger_1')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([5, 8], ['tfg:food/raw_long_pig_filet'])
+		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addWeightedLoot([
 			// the illusion of randomness
 			Item.of('tfc:food/bunchberry', 3),
@@ -54,8 +54,8 @@ function registerPrimitiveCreaturesLoots(event) {
 	// herbalist - brown clothes with a mask that looks like a Creaking
 	event.addEntityLootModifier('primitive_creatures:iloger_2')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([5, 8], ['tfg:food/raw_long_pig_filet'])
-		.addWeightedLoot([3,4], ['gtceu:tricalcium_phosphate_dust'])
+		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
+		.addWeightedLoot([3, 4], ['gtceu:tricalcium_phosphate_dust'])
 		.addAlternativesLoot(
 			LootEntry.of('gtceu:cobalt_brass_mortar').damage([0.3, 0.9]).when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.05)),
@@ -75,9 +75,9 @@ function registerPrimitiveCreaturesLoots(event) {
 	// bonebreaker - skull helmet, bone armor? hits harder, has knockback
 	event.addEntityLootModifier('primitive_creatures:iloger_3')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([5, 8], ['tfg:food/raw_long_pig_filet'])
-		.addWeightedLoot([0,2], ['minecraft:flint'])
-		.addWeightedLoot([1,3], ['minecraft:bone'])
+		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
+		.addWeightedLoot([0, 2], ['minecraft:flint'])
+		.addWeightedLoot([1, 3], ['minecraft:bone'])
 		.addAlternativesLoot(
 			LootEntry.of('gtceu:cobalt_brass_shovel').damage([0.3, 0.9]).when(c => c.randomChance(0.5)),
 			LootEntry.of('minecraft:skeleton_skull').when(c => c.randomChance(0.3)),
@@ -96,9 +96,9 @@ function registerPrimitiveCreaturesLoots(event) {
 	// ambusher - leaf on head, leafy clothes (like the swamp vanilla villager type), ranged with poison
 	event.addEntityLootModifier('primitive_creatures:iloger_4')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([8,12], LootEntry.of('minecraft:tipped_arrow')).addPotion("poison")
-		.addWeightedLoot([4,8], ['firmalife:food/nightshade_berry'])
-		.addWeightedLoot([5, 8], ['tfg:food/raw_long_pig_filet'])
+		.addWeightedLoot([8, 12], LootEntry.of('minecraft:tipped_arrow')).addPotion("poison")
+		.addWeightedLoot([4, 8], ['firmalife:food/nightshade_berry'])
+		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addAlternativesLoot(
 			LootEntry.of('minecraft:bow').damage([0.3, 0.9]).when(c => c.randomChance(0.5)),
 			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.05)),
@@ -118,8 +118,8 @@ function registerPrimitiveCreaturesLoots(event) {
 	// hunter - wears brown and white fur, briefly disappears when hit, ranged with weakness
 	event.addEntityLootModifier('primitive_creatures:iloger_5')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([8,12], LootEntry.of('minecraft:tipped_arrow')).addPotion("weakness")
-		.addWeightedLoot([5, 8], ['tfg:food/raw_long_pig_filet'])
+		.addWeightedLoot([8, 12], LootEntry.of('minecraft:tipped_arrow')).addPotion("weakness")
+		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addAlternativesLoot(
 			// placeholder for a blowpipe
 			LootEntry.of('minecraft:bamboo').when(c => c.randomChance(0.5)),
@@ -140,9 +140,9 @@ function registerPrimitiveCreaturesLoots(event) {
 	// shaman - yellow clothes, throws fireballs
 	event.addEntityLootModifier('primitive_creatures:iloger_6')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([5, 8], ['tfg:food/raw_long_pig_filet'])
-		.addWeightedLoot([1,2], ['primitive_creatures:f_1']) // primitive explosives
-		.addWeightedLoot([1,3], ['minecraft:gunpowder'])
+		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
+		.addWeightedLoot([1, 2], ['primitive_creatures:f_1']) // primitive explosives
+		.addWeightedLoot([2, 4], ['minecraft:gunpowder'])
 		.addAlternativesLoot(
 			LootEntry.of('gtceu:cobalt_brass_mortar').damage([0.5, 0.9]).when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:totem_2').when(c => c.randomChance(0.05)),
@@ -162,8 +162,8 @@ function registerPrimitiveCreaturesLoots(event) {
 	// beast tamer - wears tiger fur, holds vanilla sugarcane? fucking summons ravagers
 	event.addEntityLootModifier('primitive_creatures:wiloger')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([5, 8], ['tfg:food/raw_long_pig_filet'])
-		.addWeightedLoot([0,2], ['primitive_creatures:grh']) // battered wool
+		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
+		.addWeightedLoot([0, 2], ['primitive_creatures:grh']) // battered wool
 		.addAlternativesLoot(
 			LootEntry.of('gtceu:cobalt_brass_butchery_knife').damage([0.3, 0.9]).when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.05)),
@@ -183,7 +183,7 @@ function registerPrimitiveCreaturesLoots(event) {
 	// warrior - lion fur, holds flint club - stuns you in place when hit
 	event.addEntityLootModifier('primitive_creatures:piloger_9')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([5, 8], ['tfg:food/raw_long_pig_filet'])
+		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addAlternativesLoot(
 			LootEntry.of('primitive_creatures:yhgi').when(c => c.randomChance(0.8)), // flint club
 			LootEntry.of('tfc:small_raw_hide').when(c => c.randomChance(0.4)),
@@ -202,8 +202,8 @@ function registerPrimitiveCreaturesLoots(event) {
 	// mercenary
 	event.addEntityLootModifier('primitive_creatures:viloger_10')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([5, 8], ['tfg:food/raw_long_pig_filet'])
-		.addWeightedLoot([1,2], ['minecraft:emerald'])
+		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
+		.addWeightedLoot([1, 2], ['minecraft:emerald'])
 		.addAlternativesLoot(
 			LootEntry.of('gtceu:cobalt_brass_knife').damage([0.3, 0.7]).when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:totem_2').when(c => c.randomChance(0.05)),
@@ -223,12 +223,12 @@ function registerPrimitiveCreaturesLoots(event) {
 	// huntmaster - miniboss
 	event.addEntityLootModifier('primitive_creatures:nahida')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([5, 8], ['tfg:food/raw_long_pig_filet'])
+		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addWeightedLoot([
-			LootEntry.of('gtceu:cobalt_brass_spade').damage([0.85, 1]),
-			LootEntry.of('gtceu:cobalt_brass_sickle').damage([0.85, 1]),
-			LootEntry.of('gtceu:cobalt_brass_mining_hammer').damage([0.85, 1]),
-			LootEntry.of('gtceu:cobalt_brass_sword').damage([0.85, 1])])
+			Item.of('gtceu:cobalt_brass_spade', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{AoEColumn:1,AoELayer:0,AoERow:1,MaxAoEColumn:1,MaxAoELayer:0,MaxAoERow:1},GT.Tool:{AttackDamage:3.5f,AttackSpeed:-3.4f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:18431,ToolSpeed:5.0f},HideFlags:2}'),
+			Item.of('gtceu:cobalt_brass_scythe', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{AoEColumn:2,AoELayer:2,AoERow:2,MaxAoEColumn:2,MaxAoELayer:2,MaxAoERow:2},GT.Tool:{AttackDamage:7.0f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:18431,ToolSpeed:6.5f},HideFlags:2}'),
+			Item.of('gtceu:cobalt_brass_mining_hammer', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{AoEColumn:1,AoELayer:0,AoERow:1,MaxAoEColumn:1,MaxAoELayer:0,MaxAoERow:1,TorchPlacing:1b},GT.Tool:{AttackDamage:3.5f,AttackSpeed:-3.4f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:18431,ToolSpeed:5.0f},HideFlags:2}'),
+			Item.of('gtceu:cobalt_brass_sword')])
 	event.addEntityLootModifier('primitive_creatures:nahida')
 		.addWeightedLoot([
 			Item.of('sns:leather_sack'),
@@ -253,9 +253,10 @@ function registerPrimitiveCreaturesLoots(event) {
 	// berserker - guy with celtic blue face paint
 	event.addEntityLootModifier('primitive_creatures:iloger_10')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([5, 8], ['tfg:food/raw_long_pig_filet'])
+		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addWeightedLoot([
-			LootEntry.of('gtceu:cobalt_brass_sword').damage([0.85, 1]),
+			Item.of('gtceu:cobalt_brass_sword'),
+			Item.of('gtceu:cobalt_brass_axe', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{DisableShields:1b,TreeFelling:1b},GT.Tool:{AttackDamage:7.0f,AttackSpeed:-3.4f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:6143,ToolSpeed:4.5f},HideFlags:2}'),
 			LootEntry.of('sns:burlap_sack'),
 			LootEntry.of('sns:seed_pouch'),
 			LootEntry.of('sns:ore_sack')])
@@ -273,11 +274,11 @@ function registerPrimitiveCreaturesLoots(event) {
 	// mistah beeeaaaasssstt
 	event.addEntityLootModifier('primitive_creatures:beast')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([20, 30], ['tfg:food/raw_long_pig_filet'])
-		.addWeightedLoot([12,16], ['minecraft:bone'])
-		.addWeightedLoot([2,3], ['tfc:large_raw_hide'])
-		.addWeightedLoot([4,6], ['tfc:blubber'])
+		.addWeightedLoot([5, 8], ['tfg:food/raw_long_pig_filet'])
+		.addWeightedLoot([12, 16], ['minecraft:bone'])
+		.addWeightedLoot([2, 3], ['tfc:large_raw_hide'])
+		.addWeightedLoot([4, 6], ['tfc:blubber'])
 	event.addEntityLootModifier('primitive_creatures:beast')
 		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([10, 15], ['tfg:food/raw_long_pig_filet'])
+		.addWeightedLoot([4, 8], ['tfg:food/raw_long_pig_filet'])
 }
