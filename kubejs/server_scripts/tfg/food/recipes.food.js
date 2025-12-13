@@ -575,7 +575,13 @@ function registerTFGFoodRecipes(event) {
 
 	cookingRecipe("baked_potato", "tfc:food/potato", "tfc:food/baked_potato")
 
-	cookingRecipe("boiled_egg", "#firmalife:foods/raw_eggs", "tfc:food/boiled_egg", "#tfg:clean_water 200")
+	processorRecipe("boiled_egg", 200, 16, {
+		circuit: 1,
+		itemInputs: ["#firmalife:foods/raw_eggs"],
+		fluidInputs: ["#tfg:clean_water 200"],
+		itemOutputs: ["tfc:food/boiled_egg"],
+		itemOutputProvider: TFC.isp.of("tfc:food/boiled_egg").copyFood()
+	})
 
 	cookingRecipe("cooked_rice", "tfc:food/rice_grain", "tfc:food/cooked_rice", "#tfg:clean_water 200")
 
