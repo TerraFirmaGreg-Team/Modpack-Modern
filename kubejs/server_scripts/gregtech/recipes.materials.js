@@ -1178,7 +1178,8 @@ function registerGTCEUMetalRecipes(event) {
 			|| material === $GreateMaterials.RefinedRadiance
 			|| material === $GreateMaterials.ShadowSteel
 			|| material === $GreateMaterials.ChromaticCompound
-			|| material === GTMaterials.DamascusSteel)
+			|| material === GTMaterials.DamascusSteel
+			|| material === GTMaterials.get("rhodium_plated_palladium"))
 		{ return; }
 
 		const toolProperty = material.getProperty(PropertyKey.TOOL)

@@ -953,27 +953,27 @@ function registerGreateRecipes(event) {
 
 	event.remove({ id: 'gtceu:extractor/extract_tungsten_steel_whisk' })
 		
-	event.shaped('gtceu:rhodium_plated_palladium_whisk', [
+	event.shaped('gtceu:palladium_whisk', [
 		'ABC',
 		'D D',
 		'D D'
 	], {
 		A: '#forge:tools/hammers',
-		B: '#forge:rings/rhodium_plated_palladium',
+		B: '#forge:rings/palladium',
 		C: '#forge:tools/wrenches',
-		D: '#forge:rods/long/rhodium_plated_palladium'
-	}).id('gtceu:shaped/rhodium_plated_palladium_whisk')
+		D: '#forge:rods/long/palladium'
+	}).id('gtceu:shaped/palladium_whisk')
 
-	event.recipes.gtceu.extruder('gtceu:rhodium_plated_palladium_whisk')
-		.itemInputs('4x #forge:ingots/rhodium_plated_palladium')
+	event.recipes.gtceu.extruder('gtceu:palladium_whisk')
+		.itemInputs('4x #forge:ingots/palladium')
 		.notConsumable('tfg:whisk_extruder_mold')
-		.itemOutputs('gtceu:rhodium_plated_palladium_whisk')
-		.duration(GTMaterials.RhodiumPlatedPalladium.getMass() * 4)
+		.itemOutputs('gtceu:palladium_whisk')
+		.duration(GTMaterials.Palladium.getMass() * 4)
 		.EUt(GTValues.VA[GTValues.MV])
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
-	event.remove({ id: 'gtceu:extractor/extract_rhodium_plated_palladium_whisk' })
+	event.remove({ id: 'gtceu:extractor/extract_palladium_whisk' })
 		
 	event.shaped('gtceu:naquadah_alloy_whisk', [
 		'ABC',
