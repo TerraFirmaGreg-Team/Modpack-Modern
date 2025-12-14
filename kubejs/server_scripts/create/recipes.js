@@ -2078,7 +2078,8 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(17)
-		.addMaterialInfo(true)
+		
+	TFGHelpers.registerMaterialInfo('create:redstone_link', { 'wrought_iron': 3 });
 
 	event.shaped('create:display_link', [
 		'FED',
