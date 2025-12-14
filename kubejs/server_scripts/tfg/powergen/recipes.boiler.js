@@ -2,17 +2,64 @@
 
 function registerTFGBoilerRecipes(event) {
 	
-	// The 9x buff for large boiler recipes above does not apply to this for some reason, so it gets 3x duration for an effective 1/3 reduction instead
+	//Remove boiler recipes that are unlikely to be used and pollute the recipe tab (most everything excluding coke/charcoal)
+	event.remove({ id: /gtceu:....._boiler\/mcw.+/ })
+	event.remove({ id: /gtceu:....._boiler\/.*button.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*trapdoor.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*banner.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*wool.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*fence.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*treated.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*cardboard.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*pressure_plate.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*carpet.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*stairs.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*sign.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*door.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*planks.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*slab.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*biomass.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*bio_chaff.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*chest.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*bundle.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*lectern.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*cartography.*/})
+	event.remove({ id: /gtceu:....._boiler\/.*bundle.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*ladder.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*crossbow.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*jukebox.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*resin.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*daylight_detector.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*bow.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*scaffolding.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*loom.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*bowl.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*sticky_resin.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*plant_ball*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*note_block*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*smithing_table*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*fiberboard*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*wood*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*sapling*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*log*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*stem*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*mosaic*/ })
 
-	event.forEachRecipe({ id: /gtceu:large_boiler\/(minecraft_ladder|gtceu_wood_frame)/ }, recipe => {
-        var newDuration = recipe.get("duration")
-        recipe.set("duration", newDuration*3)
-    })
+	//Re-add some recipes to the boiler under tags
+	event.recipes.gtceu.steam_boiler('tfg:logs')
+		.itemInputs('#minecraft:logs')
+		.duration(300)
+		.dimension('minecraft:overworld')
 
-	event.forEachRecipe({ id: /gtceu:steam_boiler\/(minecraft_ladder|gtceu_wood_frame)/ }, recipe => {
-        var newDuration = recipe.get("duration")
-        recipe.set("duration", newDuration/3)
-	})
+	event.recipes.gtceu.steam_boiler('tfg:saplings')
+		.itemInputs('#minecraft:saplings')
+		.duration(100)
+		.dimension('minecraft:overworld')
+
+	event.recipes.gtceu.steam_boiler('tfg:planks')
+		.itemInputs('#minecraft:planks')
+		.duration(75)
+		.dimension('minecraft:overworld')
 
 	// Small nerf to charcoal
 
