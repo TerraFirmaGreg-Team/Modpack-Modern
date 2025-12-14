@@ -47,9 +47,6 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('tfc_textile:raw_shirt'),
 			Item.of('tfc_textile:raw_pants'),
 			Item.of('tfc_textile:raw_socks')])
-	event.addEntityLootModifier('primitive_creatures:iloger_1')
-		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([2, 4], ['tfg:food/raw_long_pig_filet'])
 
 	// herbalist - brown clothes with a mask that looks like a Creaking
 	event.addEntityLootModifier('primitive_creatures:iloger_2')
@@ -68,9 +65,6 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('tfc_textile:grizzly_bear_shirt'),
 			Item.of('tfc_textile:grizzly_bear_pants'),
 			Item.of('tfc_textile:grizzly_bear_boots')])
-	event.addEntityLootModifier('primitive_creatures:iloger_2')
-		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([2, 4], ['tfg:food/raw_long_pig_filet'])
 
 	// bonebreaker - skull helmet, bone armor? hits harder, has knockback
 	event.addEntityLootModifier('primitive_creatures:iloger_3')
@@ -89,9 +83,6 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('tfc_textile:direwolf_shirt'),
 			Item.of('tfc_textile:direwolf_pants'),
 			Item.of('tfc_textile:direwolf_boots')])
-	event.addEntityLootModifier('primitive_creatures:iloger_3')
-		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([2, 4], ['tfg:food/raw_long_pig_filet'])
 
 	// ambusher - leaf on head, leafy clothes (like the swamp vanilla villager type), ranged with poison
 	event.addEntityLootModifier('primitive_creatures:iloger_4')
@@ -111,9 +102,6 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('tfc_textile:crocodile_shirt'),
 			Item.of('tfc_textile:crocodile_pants'),
 			Item.of('tfc_textile:crocodile_boots')])
-	event.addEntityLootModifier('primitive_creatures:iloger_4')
-		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([2, 4], ['tfg:food/raw_long_pig_filet'])
 
 	// hunter - wears brown and white fur, briefly disappears when hit, ranged with weakness
 	event.addEntityLootModifier('primitive_creatures:iloger_5')
@@ -133,9 +121,6 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('tfc_textile:sabertooth_shirt'),
 			Item.of('tfc_textile:sabertooth_pants'),
 			Item.of('tfc_textile:sabertooth_boots')])
-	event.addEntityLootModifier('primitive_creatures:iloger_5')
-		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([2, 4], ['tfg:food/raw_long_pig_filet'])
 
 	// shaman - yellow clothes, throws fireballs
 	event.addEntityLootModifier('primitive_creatures:iloger_6')
@@ -155,9 +140,6 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('tfc_textile:cougar_shirt'),
 			Item.of('tfc_textile:cougar_pants'),
 			Item.of('tfc_textile:cougar_boots')])
-	event.addEntityLootModifier('primitive_creatures:iloger_6')
-		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([2, 4], ['tfg:food/raw_long_pig_filet'])
 
 	// beast tamer - wears tiger fur, holds vanilla sugarcane? fucking summons ravagers
 	event.addEntityLootModifier('primitive_creatures:wiloger')
@@ -176,9 +158,6 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('tfc_textile:tiger_shirt'),
 			Item.of('tfc_textile:tiger_pants'),
 			Item.of('tfc_textile:tiger_boots')])
-	event.addEntityLootModifier('primitive_creatures:wiloger')
-		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([2, 4], ['tfg:food/raw_long_pig_filet'])
 
 	// warrior - lion fur, holds flint club - stuns you in place when hit
 	event.addEntityLootModifier('primitive_creatures:piloger_9')
@@ -195,15 +174,12 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('tfc_textile:lion_shirt'),
 			Item.of('tfc_textile:lion_pants'),
 			Item.of('tfc_textile:lion_boots')])
-	event.addEntityLootModifier('primitive_creatures:piloger_9')
-		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([2, 4], ['tfg:food/raw_long_pig_filet'])
 
 	// mercenary
 	event.addEntityLootModifier('primitive_creatures:viloger_10')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
-		.addWeightedLoot([1, 2], ['minecraft:emerald'])
+		.addWeightedLoot([2, 4], ['minecraft:emerald'])
 		.addAlternativesLoot(
 			LootEntry.of('gtceu:cobalt_brass_knife').damage([0.3, 0.7]).when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:totem_2').when(c => c.randomChance(0.05)),
@@ -216,9 +192,6 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('tfc_textile:raw_shirt'),
 			Item.of('tfc_textile:raw_pants'),
 			Item.of('tfc_textile:raw_socks')])
-	event.addEntityLootModifier('primitive_creatures:viloger_10')
-		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([2, 4], ['tfg:food/raw_long_pig_filet'])
 
 	// huntmaster - miniboss
 	event.addEntityLootModifier('primitive_creatures:nahida')
@@ -246,9 +219,6 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('tfc_textile:panther_shirt'),
 			Item.of('tfc_textile:panther_pants'),
 			Item.of('tfc_textile:panther_boots')])
-	event.addEntityLootModifier('primitive_creatures:nahida')
-		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([2, 4], ['tfg:food/raw_long_pig_filet'])
 
 	// berserker - guy with celtic blue face paint
 	event.addEntityLootModifier('primitive_creatures:iloger_10')
@@ -267,9 +237,6 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('tfc_textile:sabertooth_shirt'),
 			Item.of('tfc_textile:sabertooth_pants'),
 			Item.of('tfc_textile:sabertooth_boots')])
-	event.addEntityLootModifier('primitive_creatures:iloger_10')
-		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([2, 4], ['tfg:food/raw_long_pig_filet'])
 
 	// mistah beeeaaaasssstt
 	event.addEntityLootModifier('primitive_creatures:beast')
