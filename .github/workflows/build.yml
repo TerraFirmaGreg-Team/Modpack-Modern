@@ -387,9 +387,11 @@ jobs:
 
           mv -vf .pakku/multimc-overrides ./build/multimc
 
-          cp -vf ./build/.cache/curseforge/manifest.json ./build/multimc/flame/manifest.json
-
+          
           cp -rf ./build/.cache/curseforge/overrides ./build/multimc/.minecraft
+
+          cp -vf ./build/.cache/curseforge/manifest.json ./build/multimc/flame/manifest.json
+          cp -vf ./config/fancymenu/assets/icons/icon128x128.png ./build/multimc/.minecraft/icon.png
           cp -rf ./mods ./build/multimc/.minecraft/
 
           cd ./build/multimc/
