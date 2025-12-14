@@ -52,6 +52,7 @@
 			dependencies: ["173F6FA60A5B280B"]
 			description: ["{quests.tfg_tips.arborfirmacraft.desc}"]
 			disable_toast: true
+			guide_page: "tfc:field_guide tfc:arborfirmacraft/tapping_index"
 			icon: "afc:wood/sapling/weeping_maple"
 			id: "1469936B5DE3AC28"
 			shape: "octagon"
@@ -72,7 +73,8 @@
 			dependencies: ["173F6FA60A5B280B"]
 			description: ["{quests.tfg_tips.beneath.desc}"]
 			disable_toast: true
-			icon: "minecraft:netherrack"
+			guide_page: "tfc:field_guide tfc:beneath/beneath"
+			icon: "minecraft:deepslate"
 			id: "4AA0EBFBA5D8788C"
 			shape: "octagon"
 			size: 2.0d
@@ -120,6 +122,7 @@
 		{
 			dependencies: ["1469936B5DE3AC28"]
 			description: ["{quests.tfg_tips.treetap.desc}"]
+			guide_page: "tfc:field_guide tfc:arborfirmacraft/tree_tapping"
 			id: "128483FFDC8277A0"
 			subtitle: "{quests.tfg_tips.treetap.subtitle}"
 			tasks: [{
@@ -173,6 +176,7 @@
 		{
 			dependencies: ["128483FFDC8277A0"]
 			description: ["{quests.tfg_tips.find_latex_tree.desc}"]
+			guide_page: "tfc:field_guide tfc:arborfirmacraft/making_rubber"
 			id: "4891E995D3EC2BD1"
 			subtitle: "{quests.tfg_tips.find_latex_tree.subtitle}"
 			tasks: [{
@@ -194,6 +198,7 @@
 		{
 			dependencies: ["128483FFDC8277A0"]
 			description: ["{quests.tfg_tips.find_syrup_tree.desc}"]
+			guide_page: "tfc:field_guide tfc:arborfirmacraft/making_syrups"
 			id: "308BB7D9D210C8DA"
 			subtitle: "{quests.tfg_tips.find_syrup_tree.subtitle}"
 			tasks: [{
@@ -254,6 +259,7 @@
 		{
 			dependencies: ["2EFB241490502DB3"]
 			description: ["{quests.tfg_tips.beekeeping.desc}"]
+			guide_page: "tfc:field_guide tfc:firmalife/beekeeping"
 			icon: "firmalife:beeswax"
 			id: "1071B804483BB882"
 			subtitle: "{quests.tfg_tips.beekeeping.subtitle}"
@@ -409,6 +415,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.cellar.desc}"]
+			guide_page: "tfc:field_guide tfc:firmalife/cellar"
 			id: "3D1FF501DE2E56FE"
 			size: 1.5d
 			subtitle: "{quests.tfg_tips.cellar.subtitle}"
@@ -439,6 +446,7 @@
 		{
 			dependencies: ["3D1FF501DE2E56FE"]
 			description: ["{quests.tfg_tips.cellar_blocks.desc}"]
+			guide_page: "tfc:field_guide tfc:firmalife/food_shelves"
 			id: "32CD6D2EADA0DCA3"
 			subtitle: "{quests.tfg_tips.cellar_blocks.subtitle}"
 			tasks: [{
@@ -460,6 +468,7 @@
 		{
 			dependencies: ["2EFB241490502DB3"]
 			description: ["{quests.tfg_tips.oven.desc}"]
+			guide_page: "tfc:field_guide tfc:firmalife/ovens"
 			id: "029264BCA5477837"
 			subtitle: "{quests.tfg_tips.oven.subtitle}"
 			tasks: [
@@ -513,6 +522,7 @@
 		{
 			dependencies: ["029264BCA5477837"]
 			description: ["{quests.tfg_tips.oven_appliances.desc}"]
+			guide_page: "tfc:field_guide tfc:firmalife/oven_appliances"
 			id: "73D5ED4099F99A47"
 			subtitle: "{quests.tfg_tips.oven_appliances.subtitle}"
 			tasks: [
@@ -585,6 +595,7 @@
 		{
 			dependencies: ["73D5ED4099F99A47"]
 			description: ["{quests.tfg_tips.jam.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/jarring"
 			id: "5D373432F0C22C93"
 			subtitle: "{quests.tfg_tips.jam.subtitle}"
 			tasks: [
@@ -613,6 +624,7 @@
 		{
 			dependencies: ["2EFB241490502DB3"]
 			description: ["{quests.tfg_tips.preservation.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/decay"
 			icon: "minecraft:clock"
 			id: "4047EE998BC4CD03"
 			subtitle: "{quests.tfg_tips.preservation.subtitle}"
@@ -937,6 +949,7 @@
 		{
 			dependencies: ["52D944ADA884EFEF"]
 			description: ["{quests.tfg_tips.dry_fruit.desc}"]
+			guide_page: "tfc:field_guide tfc:firmalife/drying"
 			id: "4417A395801DC4E5"
 			subtitle: "{quests.tfg_tips.dry_fruit.subtitle}"
 			tasks: [
@@ -1028,6 +1041,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.smoke_meat.desc}"]
+			guide_page: "tfc:field_guide tfc:firmalife/smoking"
 			id: "1FC019B45383695E"
 			subtitle: "{quests.tfg_tips.smoke_meat.subtitle}"
 			tasks: [
@@ -1113,6 +1127,7 @@
 		{
 			dependencies: ["3C7F170E065B60E1"]
 			description: ["{quests.tfg_tips.create_cheese.desc}"]
+			guide_page: "tfc:field_guide tfc:firmalife/cheese"
 			id: "0FCB88A64D3FBF0F"
 			subtitle: "{quests.tfg_tips.create_cheese.subtitle}"
 			tasks: [{
@@ -1193,6 +1208,7 @@
 		{
 			dependencies: ["2EFB241490502DB3"]
 			description: ["{quests.tfg_tips.greenhouse.desc}"]
+			guide_page: "tfc:field_guide tfc:firmalife/greenhouse"
 			icon: "firmalife:large_planter"
 			id: "07FBA022050DA24A"
 			subtitle: "{quests.tfg_tips.greenhouse.subtitle}"
@@ -1223,6 +1239,7 @@
 				"{@pagebreak}"
 				"{quests.tfg_tips.charcoal_pile.desc.4}"
 			]
+			guide_page: "tfc:field_guide tfc:mechanics/charcoal_pit"
 			id: "7B2068B200631D5C"
 			subtitle: "{quests.tfg_tips.charcoal_pile.subtitle}"
 			tasks: [
@@ -1249,6 +1266,7 @@
 		{
 			dependencies: ["150B7C5CD152E1BA"]
 			description: ["{quests.tfg_tips.thatch_bed.desc}"]
+			guide_page: "tfc:field_guide tfc:getting_started/a_place_to_sleep"
 			id: "4D11F11CE0E9F379"
 			subtitle: "{quests.tfg_tips.thatch_bed.subtitle}"
 			tasks: [
@@ -1312,6 +1330,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.loom.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/weaving"
 			id: "1766C916084261AA"
 			subtitle: "{quests.tfg_tips.loom.subtitle}"
 			tasks: [{
@@ -1389,6 +1408,7 @@
 		{
 			dependencies: ["1766C916084261AA"]
 			description: ["{quests.tfg_tips.unrefined_paper.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/papermaking"
 			id: "4CD3F04793CE47A2"
 			subtitle: "{quests.tfg_tips.unrefined_paper.subtitle}"
 			tasks: [{
@@ -1406,6 +1426,7 @@
 				"{quests.tfg_tips.panning.desc}"
 				"{image:tfg:textures/quests/ore_deposit.png width:100 height:100 align:center}"
 			]
+			guide_page: "tfc:field_guide tfc:mechanics/panning"
 			id: "082310DF9BEA92CE"
 			subtitle: "{quests.tfg_tips.panning.subtitle}"
 			tasks: [
@@ -1437,6 +1458,7 @@
 				"{quests.tfg_tips.sluice.desc}"
 				"{image:tfg:textures/quests/sluice.png width:100 height:100 align:center}"
 			]
+			guide_page: "tfc:field_guide tfc:mechanics/sluices"
 			id: "5261ECBE3438B05E"
 			subtitle: "{quests.tfg_tips.sluice.subtitle}"
 			tasks: [{
@@ -1458,6 +1480,7 @@
 		{
 			dependencies: ["79FA776C414AE8E5"]
 			description: ["{quests.tfg_tips.candles.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/lighting"
 			id: "368E3C94EEDC11BB"
 			subtitle: "{quests.tfg_tips.candles.subtitle}"
 			tasks: [{
@@ -1720,6 +1743,7 @@
 		{
 			dependencies: ["4A8910950F638BB5"]
 			description: ["{quests.tfg_tips.beneath_temp_management.desc}"]
+			guide_page: "tfc:field_guide tfc:beneath/cooling"
 			id: "39C21134FD02F94B"
 			subtitle: "{quests.tfg_tips.beneath_temp_management.subtitle}"
 			tasks: [
@@ -1798,6 +1822,7 @@
 		{
 			dependencies: ["4A8910950F638BB5"]
 			description: ["{quests.tfg_tips.beneath_clothes.desc}"]
+			guide_page: "tfc:field_guide tfc:beneath/cooling"
 			icon: {
 				Count: 1
 				id: "tfcambiental:silk_shirt"
@@ -1819,6 +1844,7 @@
 		{
 			dependencies: ["4A8910950F638BB5"]
 			description: ["{quests.tfg_tips.juicer.desc}"]
+			guide_page: "tfc:field_guide tfc:beneath:water"
 			id: "3D845616A2F7083F"
 			subtitle: "{quests.tfg_tips.juicer.subtitle}"
 			tasks: [{
@@ -1847,12 +1873,13 @@
 		{
 			dependencies: ["5E2E37673AD87A4B"]
 			description: ["{quests.tfg_tips.reach_the_beneath.desc}"]
+			guide_page: "tfc:field_guide tfc:beneath:biomes"
 			id: "70DA01DFDAE54224"
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.reach_the_beneath.subtitle}"
 			tasks: [{
 				dimension: "minecraft:the_nether"
-				icon: "minecraft:netherrack"
+				icon: "minecraft:gilded_blackstone"
 				id: "253320A57FAE6D0A"
 				title: "{quests.tfg_tips.reach_the_beneath.task}"
 				type: "dimension"
@@ -1864,6 +1891,7 @@
 		{
 			dependencies: ["70DA01DFDAE54224"]
 			description: ["{quests.tfg_tips.piglin_bartering.desc}"]
+			guide_page: "tfc:field_guide tfc:beneath/piglins"
 			id: "3D5C898F953FECFC"
 			subtitle: "{quests.tfg_tips.piglin_bartering.subtitle}"
 			tasks: [{
@@ -2080,6 +2108,7 @@
 		{
 			dependencies: ["07FBA022050DA24A"]
 			description: ["{quests.tfg_tips.greenhouse_automation.desc}"]
+			guide_page: "tfc:field_guide tfc:firmalife/planters"
 			id: "30DD0DDF86C96926"
 			optional: true
 			shape: "gear"

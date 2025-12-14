@@ -177,7 +177,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\": 4, \"GT.Behaviours\":{\"HarvestIce\":1}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},
