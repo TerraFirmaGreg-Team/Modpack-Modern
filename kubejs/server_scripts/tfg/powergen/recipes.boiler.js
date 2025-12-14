@@ -24,7 +24,6 @@ function registerTFGBoilerRecipes(event) {
 	event.remove({ id: /gtceu:....._boiler\/.*bundle.*/ })
 	event.remove({ id: /gtceu:....._boiler\/.*lectern.*/ })
 	event.remove({ id: /gtceu:....._boiler\/.*cartography.*/})
-	event.remove({ id: /gtceu:....._boiler\/.*bundle.*/ })
 	event.remove({ id: /gtceu:....._boiler\/.*ladder.*/ })
 	event.remove({ id: /gtceu:....._boiler\/.*crossbow.*/ })
 	event.remove({ id: /gtceu:....._boiler\/.*jukebox.*/ })
