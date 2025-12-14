@@ -4,6 +4,7 @@
 ### Breaking Changes
 - The previous silicone rubber styrene butadiene rubber belts have been changed to a different item, so please break and recycle them before updating if you're using any.
 - Cleaning meal bag foil packs is now done in the chem bath instead of the ore washer. @Pyritie
+- Syngas crafting in the Vacuum Chamber will now output into the chamber itself instead of the Basin, so it won't get mixed up with the creosote (#2378)
 ### Changes
 #### Hot or Not
 - Added "too cold to handle" and "too light to handle" for cold things and lighter-than-air things. Uses the same mechanic as tongs. Lighter-than-air things can also be negated with something Very Heavy in your inventory, and all effects (including "too hot to handle") are negated by super tanks/chests and cells, but *not* drums or buckets. Check the `#tfg:hot_protection_equipment`, `#tfg:cold_protection_equipment`, and `#tfg:floating_protection_equipment` tags for equipment that makes you immune to these effects. The equipment also protects against pipes! @Pyritie
