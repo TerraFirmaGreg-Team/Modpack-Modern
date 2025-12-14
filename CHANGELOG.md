@@ -4,7 +4,8 @@
 ### Breaking Changes
 - The previous silicone rubber styrene butadiene rubber belts have been changed to a different item, so please break and recycle them before updating if you're using any.
 - Cleaning meal bag foil packs is now done in the chem bath instead of the ore washer. @Pyritie
-- Syngas crafting in the Vacuum Chamber will now output into the chamber itself instead of the Basin, so it won't get mixed up with the creosote (#2378)
+- Turning honey into sugar is now done in the extractor instead of the centrifuge. @Pyritie
+- Syngas crafting in the Vacuum Chamber will now output into the chamber itself instead of the Basin, so it won't get mixed up with the creosote (#2378) @Pyritie
 ### Changes
 #### Hot or Not
 - Added "too cold to handle" and "too light to handle" for cold things and lighter-than-air things. Uses the same mechanic as tongs. Lighter-than-air things can also be negated with something Very Heavy in your inventory, and all effects (including "too hot to handle") are negated by super tanks/chests and cells, but *not* drums or buckets. Check the `#tfg:hot_protection_equipment`, `#tfg:cold_protection_equipment`, and `#tfg:floating_protection_equipment` tags for equipment that makes you immune to these effects. The equipment also protects against pipes! @Pyritie
@@ -23,6 +24,7 @@
 - Added a renderer to the electric greenhouse, so now you can visually see your crops grow! @RubenVerg
 - Added some distant horizons config options, for those who want to use it (#2406) @Mqrius
 - More animals now drop animal fat (#2367) @Pyritie
+- Nerfed how much biomass and plant balls are produced from certain vanilla plants (#2361) @Pyritie
 ### Bug fixes
 - Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie
 - Fixed fries and cheese curds not being able to be put on burgers. @Redeix
