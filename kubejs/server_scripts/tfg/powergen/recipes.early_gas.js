@@ -239,7 +239,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.gas_turbine('tfg:btx_fuel') // Gas Turbine
 		.inputFluids(Fluid.of('tfg:btx_fuel', 1))
 		.EUt(-(32))
-		.duration(20*0.6)
+		.duration(20*2.6)
 
 	//#endregion
 
