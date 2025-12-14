@@ -2300,13 +2300,18 @@
 			id: "00117AD40FACB89D"
 			rewards: [
 				{
-					id: "41B4EBE6FBC8DCAE"
-					item: "gtceu:paracetamol_pill"
+					id: "260BA8E2AB90DDF7"
+					item: "tfg:poison_pill"
 					type: "item"
 				}
 				{
-					id: "260BA8E2AB90DDF7"
-					item: "tfg:poison_pill"
+					id: "6402410E15263863"
+					item: "tfg:regeneration_pill"
+					type: "item"
+				}
+				{
+					id: "2135759D738A8AA1"
+					item: "tfg:antipoison_tablet"
 					type: "item"
 				}
 			]
