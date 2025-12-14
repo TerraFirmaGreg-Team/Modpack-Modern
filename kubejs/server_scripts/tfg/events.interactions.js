@@ -503,18 +503,19 @@ BlockEvents.rightClicked(event => {
 });
 
 // Makes scythes, hoes, and knives take damage when cutting grass
-BlockEvents.broken('tfc:mineable_with_sharp_tool', event => {
-	let player = event.player;
-	let toolUsed = player.mainHandItem;
+BlockEvents.broken(event => {
+	const { server, item, player, block } = event;
 
-	if (!toolUsed.hasTag('tfc:sharp_tools')) {
+	if (!block.hasTag('tfc:mineable_with_sharp_tool') || !toolUsed.hasTag('tfc:sharp_tools')) {
 		return;
 	}
+	
+	let toolUsed = player.mainHandItem;
 
 	if (!player.isCreative()) {
 		toolUsed.damageValue++;
 		if (toolUsed.damageValue >= toolUsed.maxDamage) {
-			event.server.runCommandSilent(`playsound minecraft:item.shield.break player ${player.username} ${player.x} ${player.y} ${player.z} 1 1 1`);
+			server.runCommandSilent(`playsound minecraft:item.shield.break player ${player.username} ${player.x} ${player.y} ${player.z} 1 1 1`);
 			toolUsed.count--;
 		}
 	}
