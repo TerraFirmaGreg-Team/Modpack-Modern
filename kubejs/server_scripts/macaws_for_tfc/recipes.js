@@ -6,11 +6,14 @@
  * @param {Internal.RecipesEventJS} event 
  */
 function registerMacawsForTFCRecipes(event) {
-
+	
+	event.add(mcw_tfc_aio)
 	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'minecraft:stick', '#forge:rods/wooden')
 	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'minecraft:string', '#forge:string')
 	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'minecraft:glass', '#forge:glass')
 	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'minecraft:glass_pane', '#forge:glass_panes')
+	event.remove({ input: '@mcw_tfc_aio', type: 'gtceu:steam_boiler' })
+	event.remove({ input: '@mcw_tfc_aio', type: 'gtceu:large_boiler' })
 
 	global.TFC_WOOD_TYPES.forEach(wood => {
 		event.shaped(`8x mcw_tfc_aio:fences/${wood}_fences/${wood}_wired_fence`, [
