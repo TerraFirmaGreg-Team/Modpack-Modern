@@ -961,32 +961,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "AmbientSounds_FORGE_v6.1.11_mc1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6570/130/AmbientSounds_FORGE_v6.1.11_mc1.20.1.jar",
-                    "id": "6570130",
-                    "parent_id": "254284",
-                    "hashes": {
-                        "sha1": "af412170c07febfb5c611b7237d806230dc83584",
-                        "md5": "78270b771d833d9f2936a2bd95a7ec21"
-                    },
-                    "required_dependencies": [
-                        "257814"
-                    ],
-                    "size": 51722248,
-                    "date_published": "2025-05-26T09:57:49.020Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "AmbientSounds_FORGE_v6.1.11_mc1.20.1.jar",
+                    "file_name": "AmbientSounds_FORGE_v6.3.1_mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -995,18 +971,42 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/fM515JnW/versions/lDrRWaFm/AmbientSounds_FORGE_v6.1.11_mc1.20.1.jar",
-                    "id": "lDrRWaFm",
+                    "url": "https://cdn.modrinth.com/data/fM515JnW/versions/5b052xpX/AmbientSounds_FORGE_v6.3.1_mc1.20.1.jar",
+                    "id": "5b052xpX",
                     "parent_id": "fM515JnW",
                     "hashes": {
-                        "sha512": "0754b6afd97f0b3d2a991303e9f1d70512dabe5f490a6b86de99602f4d787da17222c3aa6ffff74633e4b40472e1ccaab5b5a1d7a967c788b89334749d475ad9",
-                        "sha1": "af412170c07febfb5c611b7237d806230dc83584"
+                        "sha512": "c453e9a79725d54db8a754a0ed9f94c51b5cbe448dae46af2fa7de39dc109ce9d3d28ab448127271fa75fb5d6156534e36d9b6a9efd6bb85bd4022cc173935ac",
+                        "sha1": "b6c676fbe4e586de6c266190943c069a0a49104d"
                     },
                     "required_dependencies": [
                         "OsZiaDHq"
                     ],
-                    "size": 51722248,
-                    "date_published": "2025-05-26T09:58:10.235049Z"
+                    "size": 52449474,
+                    "date_published": "2025-12-11T19:02:45.759230Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "AmbientSounds_FORGE_v6.3.1_mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7321/586/AmbientSounds_FORGE_v6.3.1_mc1.20.1.jar",
+                    "id": "7321586",
+                    "parent_id": "254284",
+                    "hashes": {
+                        "sha1": "b6c676fbe4e586de6c266190943c069a0a49104d",
+                        "md5": "ce88224be844787f70b3e2d0ea40ffac"
+                    },
+                    "required_dependencies": [
+                        "257814"
+                    ],
+                    "size": 52449474,
+                    "date_published": "2025-12-11T19:02:20.783Z"
                 }
             ]
         },
@@ -5147,7 +5147,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "entityculling-forge-1.9.3-mc1.20.1.jar",
+                    "file_name": "entityculling-forge-1.9.4-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5155,20 +5155,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/H7zaVcD6/entityculling-forge-1.9.3-mc1.20.1.jar",
-                    "id": "H7zaVcD6",
+                    "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/GpUlMGON/entityculling-forge-1.9.4-mc1.20.1.jar",
+                    "id": "GpUlMGON",
                     "parent_id": "NNAgCjsB",
                     "hashes": {
-                        "sha512": "62429153a72f509877bae38c6e3e651ff241114c3608fdf6f2e412a6df0acec1da318e50a8dd3a2468fbddcc16c3e412910e0e09b9d1f94d6b0312bfe8b07e9d",
-                        "sha1": "8faea4818faab6b870ee370b52434b016542b519"
+                        "sha512": "f8f9ce531f7f878443a29cb12eed5dd40b25faf83d8fab8fef99b2e6058c5e6ac3d3fb6602abb4669e79b294dc8a9ecec324f632e0a637f70b09a5b6f402b70e",
+                        "sha1": "2b19c5c38f88285aed2aad6a61eb622003540ee5"
                     },
                     "required_dependencies": [],
-                    "size": 477884,
-                    "date_published": "2025-10-30T19:05:52.890832Z"
+                    "size": 1568324,
+                    "date_published": "2025-12-09T21:09:58.011151Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "entityculling-forge-1.9.3-mc1.20.1.jar",
+                    "file_name": "entityculling-forge-1.9.4-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5176,16 +5176,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7167/800/entityculling-forge-1.9.3-mc1.20.1.jar",
-                    "id": "7167800",
+                    "url": "https://edge.forgecdn.net/files/7313/354/entityculling-forge-1.9.4-mc1.20.1.jar",
+                    "id": "7313354",
                     "parent_id": "448233",
                     "hashes": {
-                        "sha1": "8faea4818faab6b870ee370b52434b016542b519",
-                        "md5": "ae4f74f187b64f3b107e97b949e4a9e8"
+                        "sha1": "2b19c5c38f88285aed2aad6a61eb622003540ee5",
+                        "md5": "fdc791c2247535f6602650a3cc6f8f36"
                     },
                     "required_dependencies": [],
-                    "size": 477884,
-                    "date_published": "2025-10-30T19:05:50.793Z"
+                    "size": 1568324,
+                    "date_published": "2025-12-09T21:09:55.243Z"
                 }
             ]
         },
@@ -6050,33 +6050,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "fast-ip-ping-v1.0.7-mc1.20.4-forge.jar",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.1",
-                        "1.20",
-                        "1.20.4"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6666/671/fast-ip-ping-v1.0.7-mc1.20.4-forge.jar",
-                    "id": "6666671",
-                    "parent_id": "904356",
-                    "hashes": {
-                        "sha1": "253d21fd87657e6dc1e451c9758f5daaa71b86c8",
-                        "md5": "d1e81c87cc785a956f5972a3b0d2e7f2"
-                    },
-                    "required_dependencies": [],
-                    "size": 10557,
-                    "date_published": "2025-06-18T15:25:05.557Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "fast-ip-ping-v1.0.7-mc1.20.4-forge.jar",
+                    "file_name": "fast-ip-ping-v1.0.8-mc1.20.4-forge.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1",
@@ -6088,16 +6063,41 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/9mtu0sUO/versions/W1Wnmkqh/fast-ip-ping-v1.0.7-mc1.20.4-forge.jar",
-                    "id": "W1Wnmkqh",
+                    "url": "https://cdn.modrinth.com/data/9mtu0sUO/versions/1Psj7GtQ/fast-ip-ping-v1.0.8-mc1.20.4-forge.jar",
+                    "id": "1Psj7GtQ",
                     "parent_id": "9mtu0sUO",
                     "hashes": {
-                        "sha512": "5223cd922b4f32faf8e6263976d39ead51e12dc332a16eacfddd11196872609b1d905673ab707f38d62f5d3f9c243dc51bb62bf3f8179d15a006c616feb48be8",
-                        "sha1": "253d21fd87657e6dc1e451c9758f5daaa71b86c8"
+                        "sha512": "4c016afaf112b8664529a419f1188d2a4211d41a8a4fe1420d6b679eb134d5c1085e53e06f83ec7a0686c8faf5f59c2c3c0d7c321ed868f075731d7681cfb313",
+                        "sha1": "ceeeae222c51ae100e5126c4a5a7a05f4f3f4712"
                     },
                     "required_dependencies": [],
-                    "size": 10557,
-                    "date_published": "2025-06-18T15:27:06.998981Z"
+                    "size": 10331,
+                    "date_published": "2025-12-10T19:52:27.401005Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "fast-ip-ping-v1.0.8-mc1.20.4-forge.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.4",
+                        "1.20.3"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7317/271/fast-ip-ping-v1.0.8-mc1.20.4-forge.jar",
+                    "id": "7317271",
+                    "parent_id": "904356",
+                    "hashes": {
+                        "sha1": "ceeeae222c51ae100e5126c4a5a7a05f4f3f4712",
+                        "md5": "cc7cb94b42e4da21a1010f906d0e149a"
+                    },
+                    "required_dependencies": [],
+                    "size": 10331,
+                    "date_published": "2025-12-10T19:52:26.030Z"
                 }
             ]
         },
@@ -7489,7 +7489,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "ImmediatelyFast-Forge-1.5.2+1.20.4.jar",
+                    "file_name": "ImmediatelyFast-Forge-1.5.3+1.20.4.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1",
@@ -7501,41 +7501,41 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/5ZwdcRci/versions/aFMmx5Ig/ImmediatelyFast-Forge-1.5.2+1.20.4.jar",
-                    "id": "aFMmx5Ig",
+                    "url": "https://cdn.modrinth.com/data/5ZwdcRci/versions/a4stvpj6/ImmediatelyFast-Forge-1.5.3+1.20.4.jar",
+                    "id": "a4stvpj6",
                     "parent_id": "5ZwdcRci",
                     "hashes": {
-                        "sha512": "648cd5c451f8e5b4c7404179b75d4044aa14501c832a38e09877de74902e2ce3156af1cb936c91b48cd6210d1e576f0808142ca24a0d291990fdf245ff2da993",
-                        "sha1": "2eeca5deb063ed49bb9c6be8b162ca6270202239"
+                        "sha512": "ef57ecc7aa7138c1b06fac6d6b49707d6ef324b6220cd604f567cfdbabd5b9ca0e76a2a4ed354d08029976c773f40c65b7692372a3f70637d7ae446be2b3ace0",
+                        "sha1": "d4695d013e9da7089e2906db3f56bc5398e478e2"
                     },
                     "required_dependencies": [],
-                    "size": 425140,
-                    "date_published": "2025-09-14T19:20:09.156785Z"
+                    "size": 426980,
+                    "date_published": "2025-12-09T20:19:33.206344Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "ImmediatelyFast-Forge-1.5.2+1.20.4.jar",
+                    "file_name": "ImmediatelyFast-Forge-1.5.3+1.20.4.jar",
                     "mc_versions": [
                         "1.20.2",
-                        "1.20.3",
                         "1.20.1",
                         "1.20",
-                        "1.20.4"
+                        "1.20.4",
+                        "1.20.3"
                     ],
                     "loaders": [
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6997/261/ImmediatelyFast-Forge-1.5.2+1.20.4.jar",
-                    "id": "6997261",
+                    "url": "https://edge.forgecdn.net/files/7313/94/ImmediatelyFast-Forge-1.5.3+1.20.4.jar",
+                    "id": "7313094",
                     "parent_id": "686911",
                     "hashes": {
-                        "sha1": "2eeca5deb063ed49bb9c6be8b162ca6270202239",
-                        "md5": "a9497bda5f3fd160c248d4a8d4499e15"
+                        "sha1": "d4695d013e9da7089e2906db3f56bc5398e478e2",
+                        "md5": "1e5278b2585bab1db76d4b1ab61e82c1"
                     },
                     "required_dependencies": [],
-                    "size": 425140,
-                    "date_published": "2025-09-14T19:20:08.770Z"
+                    "size": 426980,
+                    "date_published": "2025-12-09T20:19:33.393Z"
                 }
             ]
         },
@@ -9825,7 +9825,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "notenoughanimations-forge-1.10.6-mc1.20.1.jar",
+                    "file_name": "notenoughanimations-forge-1.11.1-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9833,20 +9833,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/MPCX6s5C/versions/7KhtEU40/notenoughanimations-forge-1.10.6-mc1.20.1.jar",
-                    "id": "7KhtEU40",
+                    "url": "https://cdn.modrinth.com/data/MPCX6s5C/versions/cfiRPrQF/notenoughanimations-forge-1.11.1-mc1.20.1.jar",
+                    "id": "cfiRPrQF",
                     "parent_id": "MPCX6s5C",
                     "hashes": {
-                        "sha512": "d6c3322b260fdf7ad5e06c5340593b84df601ee638b2195712e31834936c4d8a96b3afb4f9a673163bea20283a01c1ef6c186ebc6b5e3bb83b966bba79945b7a",
-                        "sha1": "408c8497c263c03edfe432549ef08dc48c6230ed"
+                        "sha512": "9335ace46a9f6477df026f19cab08c656fc7c0a7f1069eedfdadbba01bfd2ad43f9e90a0bb5ef8e867d51608dddcf85fa9653eb178f4a0e6e6bcfb45d0959270",
+                        "sha1": "9aa8917d7c0a5311dc495da3c720434de49e0e24"
                     },
                     "required_dependencies": [],
-                    "size": 843250,
-                    "date_published": "2025-10-20T12:41:37.262065Z"
+                    "size": 1933839,
+                    "date_published": "2025-12-12T19:11:52.494096Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "notenoughanimations-forge-1.10.6-mc1.20.1.jar",
+                    "file_name": "notenoughanimations-forge-1.11.1-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9854,16 +9854,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7129/302/notenoughanimations-forge-1.10.6-mc1.20.1.jar",
-                    "id": "7129302",
+                    "url": "https://edge.forgecdn.net/files/7325/366/notenoughanimations-forge-1.11.1-mc1.20.1.jar",
+                    "id": "7325366",
                     "parent_id": "433760",
                     "hashes": {
-                        "sha1": "408c8497c263c03edfe432549ef08dc48c6230ed",
-                        "md5": "228f7b821bb9e475e1ec38868da56f65"
+                        "sha1": "9aa8917d7c0a5311dc495da3c720434de49e0e24",
+                        "md5": "34fd79756da8b5278a5b0905d98ffeca"
                     },
                     "required_dependencies": [],
-                    "size": 843250,
-                    "date_published": "2025-10-20T12:41:36.527Z"
+                    "size": 1933839,
+                    "date_published": "2025-12-12T19:11:51.067Z"
                 }
             ]
         },

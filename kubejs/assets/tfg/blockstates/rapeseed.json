@@ -21,6 +21,9 @@
 		"age=6,part=bottom": {
 			"model": "tfg:block/crop/rapeseed_age_5_bottom"
 		},
+		"age=7,part=bottom": {
+			"model": "tfg:block/crop/rapeseed_age_5_bottom"
+		},
 		"age=3,part=top": {
 			"model": "tfg:block/crop/rapeseed_age_3_top"
 		},
@@ -31,6 +34,9 @@
 			"model": "tfg:block/crop/rapeseed_age_5_top"
 		},
 		"age=6,part=top": {
+			"model": "tfg:block/crop/rapeseed_age_5_top"
+		},
+		"age=7,part=top": {
 			"model": "tfg:block/crop/rapeseed_age_5_top"
 		}
 	}
