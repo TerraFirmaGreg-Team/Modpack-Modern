@@ -1424,39 +1424,15 @@
             "type": "MOD",
             "side": "SERVER",
             "slug": {
-                "curseforge": "baguettelib",
-                "modrinth": "baguettelib"
+                "curseforge": "baguettelib"
             },
             "name": {
-                "curseforge": "BaguetteLib",
-                "modrinth": "BaguetteLib"
+                "curseforge": "BaguetteLib"
             },
             "id": {
-                "curseforge": "1264423",
-                "modrinth": "OfKzpbRU"
+                "curseforge": "1264423"
             },
             "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "baguettelib-1.20.1-Forge-1.1.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/OfKzpbRU/versions/zcwsIJEa/baguettelib-1.20.1-Forge-1.1.1.jar",
-                    "id": "zcwsIJEa",
-                    "parent_id": "OfKzpbRU",
-                    "hashes": {
-                        "sha512": "0e9f34e0e8d8703269fd6d26a3635268d8f01d79c17355a85f07cd3cf382e84d23635c9715522e3839091caed6db723984b4df569fd06b042557fcf7f46f0f08",
-                        "sha1": "eb060d8ed625c2ed9182db62e60154bb94c69046"
-                    },
-                    "required_dependencies": [],
-                    "size": 30312,
-                    "date_published": "2025-09-27T08:33:58.185785Z"
-                },
                 {
                     "type": "curseforge",
                     "file_name": "baguettelib-1.20.1-Forge-1.1.5.jar",
@@ -6946,7 +6922,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "greate-0.0.57.jar",
+                    "file_name": "greate-0.0.58.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6955,23 +6931,23 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/D1FDmRDa/greate-0.0.57.jar",
-                    "id": "D1FDmRDa",
+                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/TT9ck8vt/greate-0.0.58.jar",
+                    "id": "TT9ck8vt",
                     "parent_id": "8wDcQuht",
                     "hashes": {
-                        "sha512": "47b814782e431dc9dc8f17cc6591c6fc8874f094d80b311065e3b6bebed8d8559313d7de3b8613b17c66bf6f2c1311141995e65a34bced89ff862d0d2a0696c6",
-                        "sha1": "de882a9d6be660e27834823ce33caaaca834d24c"
+                        "sha512": "646589a6f6278e42af03860a85dfd864fd620f1b4825f340781285736417307f4803c32ec5615045c207fd75d64a137268bff661432f35f4431f339a1905a82f",
+                        "sha1": "52e244f91ecb56a69bcdec6d22a83047475eeb34"
                     },
                     "required_dependencies": [
-                        "LNytGWDc",
-                        "7tG215v7"
+                        "7tG215v7",
+                        "LNytGWDc"
                     ],
-                    "size": 1518380,
-                    "date_published": "2025-11-25T19:56:33.474491Z"
+                    "size": 1466358,
+                    "date_published": "2025-12-14T02:44:12.871560Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "greate-0.0.57.jar",
+                    "file_name": "greate-0.0.58.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6980,19 +6956,19 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/7262/33/greate-0.0.57.jar",
-                    "id": "7262033",
+                    "url": "https://edge.forgecdn.net/files/7330/800/greate-0.0.58.jar",
+                    "id": "7330800",
                     "parent_id": "901996",
                     "hashes": {
-                        "sha1": "de882a9d6be660e27834823ce33caaaca834d24c",
-                        "md5": "2a74c594a5e559ca63ef375f1286afda"
+                        "sha1": "52e244f91ecb56a69bcdec6d22a83047475eeb34",
+                        "md5": "137b5a28b5ec63caaeb004f2520a7b9c"
                     },
                     "required_dependencies": [
                         "328085",
                         "890405"
                     ],
-                    "size": 1518380,
-                    "date_published": "2025-11-25T19:56:30.993Z"
+                    "size": 1466358,
+                    "date_published": "2025-12-14T02:44:10.940Z"
                 }
             ]
         },
@@ -14368,6 +14344,81 @@
                     ],
                     "size": 1381831,
                     "date_published": "2025-10-26T04:56:43.770Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "X1DT7EtiEggkatMR",
+            "pakku_links": [
+                "i4wWe6A2zvX01n9S",
+                "bf2svog06ajj5JHE",
+                "Y6Da87s1FKPYq0UK",
+                "Nw8xTCQngHA15ilh"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "vintage-kubejs",
+                "modrinth": "vintage-kubejs"
+            },
+            "name": {
+                "curseforge": "Vintage KubeJS",
+                "modrinth": "Vintage KubeJS"
+            },
+            "id": {
+                "curseforge": "1077532",
+                "modrinth": "u2r2GYRW"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "vintage_kubejs-1.20.1-1.0.0rc-2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/5607/145/vintage_kubejs-1.20.1-1.0.0rc-2.jar",
+                    "id": "5607145",
+                    "parent_id": "1077532",
+                    "hashes": {
+                        "sha1": "ca49a4163794cc0f94a31a17f6956be11979db53",
+                        "md5": "23321f4db3ec489d8605f54efecf813e"
+                    },
+                    "required_dependencies": [
+                        "238086",
+                        "429371",
+                        "328085"
+                    ],
+                    "size": 53779,
+                    "date_published": "2024-08-08T08:54:11.013Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "vintage_kubejs-1.20.1-1.0.0rc-2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/u2r2GYRW/versions/TUKYnKui/vintage_kubejs-1.20.1-1.0.0rc-2.jar",
+                    "id": "TUKYnKui",
+                    "parent_id": "u2r2GYRW",
+                    "hashes": {
+                        "sha512": "d1bab6515b6353294adc98f0bd44e184ecb08d4091b5654d86edef1735c4a8260e46300acb5431bced3a1994e8326f5fdee33effb81e438176a3685900f20d20",
+                        "sha1": "ca49a4163794cc0f94a31a17f6956be11979db53"
+                    },
+                    "required_dependencies": [
+                        "umyGl7zF",
+                        "T38eAZQC",
+                        "LNytGWDc"
+                    ],
+                    "size": 53779,
+                    "date_published": "2024-08-08T08:56:55.124370Z"
                 }
             ]
         },

@@ -799,8 +799,10 @@ function registerGTCEUMetalRecipes(event) {
 		let chipped = ChemicalHelper.get(TagPrefix.gemChipped, material, 1)
 		let smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
 
+		let namespace = material === $GreateMaterials.RoseQuartz ? 'greate' : 'gtceu';
+
 		event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(
-			`gtceu:${material.getName()}_bud_indicator`, [gem, '#tfc:chisels']))
+			`${namespace}:${material.getName()}_bud_indicator`, [gem, '#tfc:chisels']))
 			.id(`shapeless/${material.getName()}_bud_indicator`)
 
 		event.shaped(smallDust,
@@ -1184,13 +1186,15 @@ function registerGTCEUMetalRecipes(event) {
 		removeMaceratorRecipe(event, `macerate_iv_${material.getName()}_wirecutter`)
 		event.remove({ id: `gtceu:arc_furnace/arc_iv_${material.getName()}_wirecutter` })
 	}
+	
+	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
 
 	forEachMaterial(material => {
 		// greate moment
-		if (material === GTMaterials.get("andesite_alloy")
-			|| material === GTMaterials.get("refined_radiance")
-			|| material === GTMaterials.get("shadow_steel")
-			|| material === GTMaterials.get("chromatic_compound")
+		if (material === $GreateMaterials.AndesiteAlloy
+			|| material === $GreateMaterials.RefinedRadiance
+			|| material === $GreateMaterials.ShadowSteel
+			|| material === $GreateMaterials.ChromaticCompound
 			|| material === GTMaterials.DamascusSteel)
 		{ return; }
 

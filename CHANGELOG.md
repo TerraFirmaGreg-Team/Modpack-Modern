@@ -2,6 +2,7 @@
 
 ## Unreleased
 ### Breaking Changes
+- Rose Quartz moved namespaces, so you'll have to convert all your old rose quartz items into the new ones. You'll need to explore new chunks to find new geodes with the correct ore blocks.
 - The previous silicone rubber styrene butadiene rubber belts have been changed to a different item, so please break and recycle them before updating if you're using any.
 - Cleaning meal bag foil packs is now done in the chem bath instead of the ore washer. @Pyritie
 - Turning honey into sugar is now done in the extractor instead of the centrifuge. @Pyritie
