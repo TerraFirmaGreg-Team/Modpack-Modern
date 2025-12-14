@@ -181,7 +181,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
     ], {
         A: '#forge:cogwheels',
         B: 'gtceu:item_filter',
-        C: '#greate:belts',
+        C: '#forge:belt_connectors',
         D: 'sophisticatedbackpacks:upgrade_base',
         E: 'create:mechanical_arm',
         F: '#gtceu:circuits/ulv',

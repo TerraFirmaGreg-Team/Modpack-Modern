@@ -13,10 +13,11 @@ const registerGTCEuMaterialModification = (event) => {
 	const $FLUID_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties')
 	const $HAZARD_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.HazardProperty')
 
-
 	const $MATERIAL_FLAGS = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
 
 	const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys')
+
+	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
 
 	const {
 		HAS_TFC_TOOL, // used to generate new TFC items like javelins
@@ -342,18 +343,19 @@ const registerGTCEuMaterialModification = (event) => {
 	// Blue steel fluid pipe - same flow rate as aluminium, same temp tolerance as tungsten
 	GTMaterials.BlueSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(4618, 75, true, false, false, false));
 	// Ostrum fluid pipe - same flow rate as titanium, higher temp range
-	TFGHelpers.getMaterial('ostrum').setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(3700, 150, true, false, true, false));
+	GTMaterials.get('ostrum').setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(3700, 150, true, false, true, false));
 
-	// Add some hazards back
+	// int is how fast the condition progresses (default 1.0)
+	// bool is whether or not the condition applies to anything made with the material, other than dusts (default false) 
 	GTMaterials.Realgar.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
 	GTMaterials.Cobaltite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
 	GTMaterials.Galena.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.WEAK_POISON, 1, false));
 	GTMaterials.Chromite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.IRRITANT, 1, false));
 	GTMaterials.Thorium.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.ANY, GTMedicalConditions.CARCINOGEN, 1, true));
-	
+
 	// This contains hazardous elements so GT tags it as hazardous automatically
-	TFGHelpers.getMaterial('ostrum').getProperties().removeProperty(PropertyKey.HAZARD);
-	TFGHelpers.getMaterial('ostrum_iodide').getProperties().removeProperty(PropertyKey.HAZARD);
+	GTMaterials.get('ostrum').getProperties().removeProperty(PropertyKey.HAZARD);
+	GTMaterials.get('ostrum_iodide').getProperties().removeProperty(PropertyKey.HAZARD);
 	// Superconductors being radioactive at EV is a little evil
 	GTMaterials.UraniumTriplatinum.getProperties().removeProperty(PropertyKey.HAZARD);
 
@@ -429,7 +431,7 @@ const registerGTCEuMaterialModification = (event) => {
 	});
 
 
-	let rose_quartz = GTMaterials.get('greate:rose_quartz');
+	let rose_quartz = $GreateMaterials.RoseQuartz;
 	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
 	rose_quartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))

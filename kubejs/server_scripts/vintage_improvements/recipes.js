@@ -258,9 +258,9 @@ function registerVintageImprovementsRecipes(event) {
 	})
 	// #endregion
 
-
+	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
 	forEachMaterial(material => {
-		if (material == GTMaterials.get("andesite_alloy"))
+		if (material == $GreateMaterials.AndesiteAlloy)
 			return;
 
 		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
@@ -330,38 +330,18 @@ function registerVintageImprovementsRecipes(event) {
 
 			let highYield = material.hasFlag(MaterialFlags.HIGH_SIFTER_OUTPUT)
 
-			// aaaaargh I hate these custom type recipes
-			let gem = `gtceu:${material.getName()}_gem`;
-			if (material === GTMaterials.Coal)
-				gem = 'minecraft:coal'
-			else if (material === GTMaterials.Diamond)
-				gem = 'minecraft:diamond'
-			else if (material === GTMaterials.Emerald)
-				gem = 'minecraft:emerald'
-			else if (material === GTMaterials.Lapis)
-				gem = 'minecraft:lapis_lazuli'
-			else if (material === GTMaterials.NetherQuartz)
-				gem = 'minecraft:quartz'
-			else if (material === GTMaterials.Amethyst)
-				gem = 'minecraft:amethyst_shard'
-			else if (material === GTMaterials.CertusQuartz)
-				gem = 'ae2:certus_quartz_crystal'
-			else if (material === TFGHelpers.getMaterial('rose_quartz'))
-				gem = 'create:rose_quartz'
-
-			event.custom({
-				type: 'vintageimprovements:vibrating',
-				ingredients: [{ item: `gtceu:purified_${material.getName()}_ore` }],
-				results: [
-					{ item: `gtceu:exquisite_${material.getName()}_gem`, chance: highYield ? 0.05 : 0.03 },
-					{ item: `gtceu:flawless_${material.getName()}_gem`, chance: highYield ? 0.15 : 0.10 },
-					{ item: gem, chance: highYield ? 0.50 : 0.35 },
-					{ item: `gtceu:pure_${material.getName()}_dust`, chance: highYield ? 0.25 : 0.50 },
-					{ item: `gtceu:flawed_${material.getName()}_gem`, chance: highYield ? 0.20 : 0.25 },
-					{ item: `gtceu:chipped_${material.getName()}_gem`, chance: highYield ? 0.30 : 0.35 }
-				],
-				processingTime: 200 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/vibrating/${material.getName()}`)
+			event.recipes.vintageimprovements.vibrating(
+				[
+					Item.of(ChemicalHelper.get(TagPrefix.gemExquisite, material, 1)).withChance(highYield ? 0.05 : 0.03),
+					Item.of(ChemicalHelper.get(TagPrefix.gemFlawless, material, 1)).withChance(highYield ? 0.15 : 0.10),
+					Item.of(ChemicalHelper.get(TagPrefix.gem, material, 1)).withChance(highYield ? 0.50 : 0.35),
+					Item.of(ChemicalHelper.get(TagPrefix.dustPure, material, 1)).withChance(highYield ? 0.25 : 0.50),
+					Item.of(ChemicalHelper.get(TagPrefix.gemFlawed, material, 1)).withChance(highYield ? 0.20 : 0.25),
+					Item.of(ChemicalHelper.get(TagPrefix.gemChipped, material, 1)).withChance(highYield ? 0.30 : 0.35)
+				], 
+				ChemicalHelper.get(TagPrefix.crushedPurified, material, 1))
+				.processingTime(200 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+				.id(`tfg:vi/vibrating/${material.getName()}`)
 		}
 
 		// #endregion
@@ -465,7 +445,7 @@ function registerVintageImprovementsRecipes(event) {
 	event.custom({
 		type: 'vintageimprovements:polishing',
 		ingredients: [{ tag: 'forge:exquisite_gems/rose_quartz' }],
-		results: [{ item: 'gtceu:rose_quartz_lens' }, { item: 'gtceu:rose_quartz_dust', count: 2 }],
+		results: [ChemicalHelper.get(TagPrefix.lens, $GreateMaterials.RoseQuartz, 1), ChemicalHelper.get(TagPrefix.dust, $GreateMaterials.RoseQuartz, 2)],
 		speed_limits: 1,
 		processingTime: 100
 	}).id(`tfg:vi/lathe/rose_quartz_lens`)
@@ -473,7 +453,7 @@ function registerVintageImprovementsRecipes(event) {
 	event.custom({
 		type: 'vintageimprovements:polishing',
 		ingredients: [{ tag: 'forge:exquisite_gems/diamond' }],
-		results: [{ item: 'gtceu:diamond_lens' }, { item: 'gtceu:diamond_dust', count: 2 }],
+		results: [ChemicalHelper.get(TagPrefix.lens, GTMaterials.Diamond, 1), ChemicalHelper.get(TagPrefix.dust, GTMaterials.Diamond, 2)],
 		speed_limits: 1,
 		processingTime: 100
 	}).id(`tfg:vi/lathe/diamond_lens`)
@@ -481,7 +461,7 @@ function registerVintageImprovementsRecipes(event) {
 	event.custom({
 		type: 'vintageimprovements:polishing',
 		ingredients: [{ tag: 'forge:exquisite_gems/emerald' }],
-		results: [{ item: 'gtceu:emerald_lens' }, { item: 'gtceu:emerald_dust', count: 2 }],
+		results: [ChemicalHelper.get(TagPrefix.lens, GTMaterials.Emerald, 1), ChemicalHelper.get(TagPrefix.dust, GTMaterials.Emerald, 2)],
 		speed_limits: 1,
 		processingTime: 100
 	}).id(`tfg:vi/lathe/emerald_lens`)
@@ -489,7 +469,7 @@ function registerVintageImprovementsRecipes(event) {
 	event.custom({
 		type: 'vintageimprovements:polishing',
 		ingredients: [{ tag: 'forge:exquisite_gems/ruby' }],
-		results: [{ item: 'gtceu:ruby_lens' }, { item: 'gtceu:ruby_dust', count: 2 }],
+		results: [ChemicalHelper.get(TagPrefix.lens, GTMaterials.Ruby, 1), ChemicalHelper.get(TagPrefix.dust, GTMaterials.Ruby, 2)],
 		speed_limits: 1,
 		processingTime: 100
 	}).id(`tfg:vi/lathe/ruby_lens`)
@@ -497,7 +477,7 @@ function registerVintageImprovementsRecipes(event) {
 	event.custom({
 		type: 'vintageimprovements:polishing',
 		ingredients: [{ tag: 'forge:exquisite_gems/sapphire' }],
-		results: [{ item: 'gtceu:sapphire_lens' }, { item: 'gtceu:sapphire_dust', count: 2 }],
+		results: [ChemicalHelper.get(TagPrefix.lens, GTMaterials.Sapphire, 1), ChemicalHelper.get(TagPrefix.dust, GTMaterials.Sapphire, 2)],
 		speed_limits: 1,
 		processingTime: 100
 	}).id(`tfg:vi/lathe/sapphire_lens`)
@@ -505,7 +485,7 @@ function registerVintageImprovementsRecipes(event) {
 	event.custom({
 		type: 'vintageimprovements:polishing',
 		ingredients: [{ tag: 'forge:exquisite_gems/amethyst' }],
-		results: [{ item: 'gtceu:amethyst_lens' }, { item: 'gtceu:amethyst_dust', count: 2 }],
+		results: [ChemicalHelper.get(TagPrefix.lens, GTMaterials.Amethyst, 1), ChemicalHelper.get(TagPrefix.dust, GTMaterials.Amethyst, 2)],
 		speed_limits: 1,
 		processingTime: 100
 	}).id(`tfg:vi/lathe/amethyst_lens`)

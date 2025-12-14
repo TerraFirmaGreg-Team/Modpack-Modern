@@ -13,20 +13,20 @@ function registerTFGSupportRecipes(event) {
 		.itemInputs('1x tfg:rebar_support')
 		.duration(60)
 		.EUt(GTValues.VA[GTValues.ULV])
-		
-		event.recipes.gtceu.assembler('tfg:gtceu/assembler/reinforced_light_concrete_support')
+
+	event.recipes.gtceu.assembler('tfg:gtceu/assembler/reinforced_light_concrete_support')
 		.inputFluids(Fluid.of('gtceu:concrete', 96))
 		.itemOutputs('1x tfg:reinforced_light_concrete_support')
 		.itemInputs('1x tfg:rebar_support')
 		.duration(120)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-		event.recipes.gtceu.macerator(`reinforced_light_concrete_support_to_dust`)
-			.itemInputs('tfg:reinforced_light_concrete_support')
-			.itemOutputs('gtceu:tiny_steel_dust')
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING);
+	event.recipes.gtceu.macerator(`reinforced_light_concrete_support_to_dust`)
+		.itemInputs('tfg:reinforced_light_concrete_support')
+		.itemOutputs('gtceu:tiny_steel_dust')
+		.duration(150)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING);
 
 	event.recipes.gtceu.chemical_bath('tfg:gtceu/chemical_bath/reinforced_dark_concrete_support')
 		.inputFluids(Fluid.of('tfc:black_dye', 10))
@@ -130,19 +130,19 @@ function registerTFGSupportRecipes(event) {
 
 	// REDO w/ table and loop
 	const EXO_STONE_SUPPORTS = [
-		{ loose: 'tfg:loose/deepslate',       support: 'tfg:migmatite_support',   material: 'deepslate' },
-		{ loose: 'beneath:blackstone_pebble', support: 'tfg:pyroxenite_support',  material: 'blackstone', },
-		{ loose: 'tfg:loose/dripstone',       support: 'tfg:travertine_support',  material: 'dripstone' },
-		{ loose: 'tfg:loose/crackrack',       support: 'tfg:keratophyre_support', material: 'netherrack'},
-		{ loose: 'tfg:loose/moon_stone',      support: 'tfg:anorthosite_support', material: 'moon_stone' },
-		{ loose: 'tfg:loose/moon_deepslate',  support: 'tfg:norite_support',      material: 'moon_deepslate' },
-		{ loose: 'tfg:loose/mars_stone',      support: 'tfg:argillite_support',   material: 'mars_stone' },
-		{ loose: 'tfg:loose/venus_stone',     support: 'tfg:trachyte_support',    material: 'venus_stone', },
-		{ loose: 'tfg:loose/mercury_stone',   support: 'tfg:komatiite_support',   material: 'mercury_stone' },
-		{ loose: 'tfg:loose/glacio_stone',    support: 'tfg:phonolite_support',   material: 'glacio_stone' },
-		{ loose: 'tfg:loose/permafrost',      support: 'tfg:permafrost_support',  material: 'ice' },
-		{ loose: 'tfg:loose/red_granite',     support: 'tfg:red_granite_support', material: 'granite_red' },
-		{ loose: 'gtceu:stone_ingot',         support: 'tfg:stone_support',       material: 'stone' }
+		{ loose: 'tfg:loose/deepslate', support: 'tfg:migmatite_support', material: 'deepslate' },
+		{ loose: 'beneath:blackstone_pebble', support: 'tfg:pyroxenite_support', material: 'blackstone', },
+		{ loose: 'tfg:loose/dripstone', support: 'tfg:travertine_support', material: 'dripstone' },
+		{ loose: 'tfg:loose/crackrack', support: 'tfg:keratophyre_support', material: 'netherrack' },
+		{ loose: 'tfg:loose/moon_stone', support: 'tfg:anorthosite_support', material: 'moon_stone' },
+		{ loose: 'tfg:loose/moon_deepslate', support: 'tfg:norite_support', material: 'moon_deepslate' },
+		{ loose: 'tfg:loose/mars_stone', support: 'tfg:argillite_support', material: 'mars_stone' },
+		{ loose: 'tfg:loose/venus_stone', support: 'tfg:trachyte_support', material: 'venus_stone', },
+		{ loose: 'tfg:loose/mercury_stone', support: 'tfg:komatiite_support', material: 'mercury_stone' },
+		{ loose: 'tfg:loose/glacio_stone', support: 'tfg:phonolite_support', material: 'glacio_stone' },
+		{ loose: 'tfg:loose/permafrost', support: 'tfg:permafrost_support', material: 'ice' },
+		{ loose: 'tfg:loose/red_granite', support: 'tfg:red_granite_support', material: 'granite_red' },
+		{ loose: 'gtceu:stone_ingot', support: 'tfg:stone_support', material: 'stone' }
 	]
 
 	EXO_STONE_SUPPORTS.forEach(s => {
@@ -166,7 +166,6 @@ function registerTFGSupportRecipes(event) {
 			.duration(40)
 			.EUt(GTValues.VA[GTValues.ULV])
 
-		console.log(s.material);
 		let regexMatch = s.support.match(/tfg:(.*?)_support/);
 		let supportName = regexMatch[1];
 		let stoneMaterial = TFGHelpers.getMaterial(s.material);

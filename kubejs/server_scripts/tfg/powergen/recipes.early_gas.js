@@ -12,6 +12,7 @@ function registerTFGEarlyGasRecipes(event) {
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ item: 'minecraft:charcoal' }, { fluid: 'gtceu:creosote', amount: 250 }],
 		results: [{ fluid: 'tfg:syngas', amount: 100 }],
+		secondaryFluidOutput: 0,
 		heatRequirement: "heated",
 		processingTime: 4000
 	}).id('tfg:vi/vacuumizing/syngas_from_charcoal')
@@ -20,6 +21,7 @@ function registerTFGEarlyGasRecipes(event) {
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ item: 'minecraft:coal' }, { fluid: 'gtceu:creosote', amount: 250 }],
 		results: [{ fluid: 'tfg:syngas', amount: 200 }],
+		secondaryFluidOutput: 0,
 		heatRequirement: "heated",
 		processingTime: 4000
 	}).id('tfg:vi/vacuumizing/syngas_from_coal')
@@ -28,6 +30,7 @@ function registerTFGEarlyGasRecipes(event) {
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ item: 'gtceu:coke_gem' }, { fluid: 'gtceu:creosote', amount: 250 }],
 		results: [{ fluid: 'tfg:syngas', amount: 400 }],
+		secondaryFluidOutput: 0,
 		heatRequirement: "heated",
 		processingTime: 4000
 	}).id('tfg:vi/vacuumizing/syngas_from_coke')
@@ -36,6 +39,7 @@ function registerTFGEarlyGasRecipes(event) {
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ item: 'beneath:cursecoal' }, { fluid: 'gtceu:creosote', amount: 250 }],
 		results: [{ fluid: 'tfg:syngas', amount: 400 }],
+		secondaryFluidOutput: 0,
 		heatRequirement: "heated",
 		processingTime: 4000
 	}).id('tfg:vi/vacuumizing/syngas_from_anthracite')

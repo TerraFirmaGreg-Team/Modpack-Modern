@@ -14,8 +14,9 @@ global.GREATE_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:neutronium_alloy",
 
     "gtceu:neutronium_whisk",
-    "greate:polybenzimidazole_belt_connector",
+    "greate:polyethylene_belt_connector",
     "greate:polytetrafluoroethylene_belt_connector",
+    "greate:polybenzimidazole_belt_connector",
 
     "greate:andesite_alloy_crushing_wheel",
     "greate:andesite_alloy_encased_fan",
