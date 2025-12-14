@@ -13,10 +13,11 @@ const registerGTCEuMaterialModification = (event) => {
 	const $FLUID_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties')
 	const $HAZARD_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.HazardProperty')
 
-
 	const $MATERIAL_FLAGS = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
 
 	const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys')
+
+	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
 
 	const {
 		HAS_TFC_TOOL, // used to generate new TFC items like javelins
@@ -430,7 +431,7 @@ const registerGTCEuMaterialModification = (event) => {
 	});
 
 
-	let rose_quartz = GTMaterials.get('greate:rose_quartz');
+	let rose_quartz = $GreateMaterials.RoseQuartz;
 	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
 	rose_quartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))

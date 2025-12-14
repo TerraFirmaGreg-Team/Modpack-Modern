@@ -1929,14 +1929,6 @@ const registerCreateRecipes = (event) => {
 			.duration(32)
 			.EUt(GTValues.VA[GTValues.ULV])
 
-		//event.custom({
-		//	type: 'vintageimprovements:laser_cutting',
-		//	ingredients: [{ item: x.base }],
-		//	results: [{item: x.cut }],
-		//	energy: GTValues.VA[GTValues.ULV] * 32 * 4,
-		//	maxChargeRate: GTValues.VA[GTValues.ULV] * 4
-		//}).id(`tfg:vi/laser/create/${x.cut.split(':')[1]}`)
-
 		event.shaped(`2x create:layered_${x.cut.split('_')[1]}`, [
 			'AA'
 		], {
