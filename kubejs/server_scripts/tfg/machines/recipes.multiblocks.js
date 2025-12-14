@@ -188,9 +188,8 @@ function registerTFGMultiblockRecipes(event) {
 	}).addMaterialInfo().id('gtceu:shaped/coal_liquefaction_tower')
 
 	event.recipes.gtceu.assembler('tfg:active_power_transformer')
-		.itemInputs(
-			'1x gtceu:iv_transformer_1a', '1x #gtceu:circuits/iv', '8x gtceu:uranium_triplatinum_single_wire',
-			'2x gtceu:hpic_chip')
+		.itemInputs('1x gtceu:iv_transformer_1a', '1x #gtceu:circuits/iv', '8x gtceu:uranium_triplatinum_single_wire',
+					'2x gtceu:hpic_chip')
 		.inputFluids(Fluid.of('gtceu:ostrum_iodide', 288))
 		.itemOutputs('tfg:active_power_transformer')
 		.duration(300)
