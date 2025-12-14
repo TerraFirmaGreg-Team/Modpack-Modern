@@ -24,6 +24,7 @@ const registerTFGMaterials = (event) => {
 	registerTFGBiolineMaterials(event);
 	registerTFGPrimitiveMaterials(event);
 	registerTFGRockMaterials(event);
+	registerTFGRPPMaterials(event);
 
 	registerTFGRocketMaterials(event);
 	registerTFGMoonMaterials(event);

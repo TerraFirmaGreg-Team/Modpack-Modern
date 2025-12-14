@@ -288,6 +288,10 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Silicon.addFlags(GENERATE_DENSE);
 	GTMaterials.RTMAlloy.addFlags(GENERATE_DENSE, GENERATE_SPRING);
 	GTMaterials.Lead.addFlags(GENERATE_DENSE);
+	
+	GTMaterials.Palladium.addFlags(GENERATE_LONG_ROD, GENERATE_DENSE, GENERATE_SMALL_GEAR, GENERATE_RING, GENERATE_ROTOR, GENERATE_BOLT_SCREW, GreateMaterialFlags.GENERATE_WHISK);
+	//No way to generate just a blade
+	GTMaterials.Palladium.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 1.0, 20, 2, [GTToolType.BUZZSAW]).build());
 
 	GTMaterials.Quartzite.addFlags(GENERATE_ROD);
 	

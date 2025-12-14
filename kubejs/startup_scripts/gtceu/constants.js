@@ -142,6 +142,8 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:damascus_steel_buzzsaw",
     "gtceu:damascus_steel_bucket",
 
+    "gtceu:palladium_buzzsaw",
+
     "gtceu:molten_black_bronze_bucket",
     "gtceu:molten_bismuth_bronze_bucket",
 
