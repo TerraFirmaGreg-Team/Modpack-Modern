@@ -122,6 +122,7 @@
 		{
 			dependencies: ["5996A3A0D475B8A6"]
 			description: ["{quests.metal_age.steel_anvil.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/steel"
 			id: "04DE7C58F20B535A"
 			shape: "octagon"
 			size: 2.0d
@@ -205,6 +206,7 @@
 				"7B2068B200631D5C"
 			]
 			description: ["{quests.metal_age.bloomery.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/bloomery"
 			id: "0A92F5C4BB6AF972"
 			size: 2.0d
 			subtitle: "{quests.metal_age.bloomery.subtitle}"
@@ -285,6 +287,7 @@
 		}
 		{
 			description: ["{quests.metal_age.bellows.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/bellows"
 			hide_dependency_lines: true
 			id: "021D3DEEB15A3D17"
 			subtitle: "{quests.metal_age.bellows.subtitle}"
@@ -392,6 +395,7 @@
 		{
 			dependencies: ["2C76EE197C14B0DC"]
 			description: ["{quests.metal_age.crucible.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/crucible"
 			icon: "tfc:crucible"
 			id: "12CB3B9ADC586521"
 			shape: "octagon"
@@ -484,6 +488,7 @@
 			dependencies: ["2C76EE197C14B0DC"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.fire_bricks.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/blast_furnace_insulation"
 			icon: "tfc:fire_bricks"
 			id: "7CD2922D9F6FA6C5"
 			shape: "octagon"

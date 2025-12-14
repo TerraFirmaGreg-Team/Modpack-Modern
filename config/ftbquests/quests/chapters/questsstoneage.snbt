@@ -485,6 +485,7 @@
 				"1D40CAE675C4BB91"
 			]
 			description: ["{quests.stone_age.leather_flask.desc}"]
+			guide_page: "tfc:field_guide tfc:waterflasks/bladders"
 			id: "62BD1E75FD629161"
 			subtitle: "{quests.stone_age.leather_flask.subtitle}"
 			tasks: [{
@@ -508,6 +509,7 @@
 				"174DA15847665CF8"
 			]
 			description: ["{quests.stone_age.iron_flask.desc}"]
+			guide_page: "tfc:field_guide tfc:waterflasks/recipes"
 			id: "11C45DBB20ED7647"
 			optional: true
 			shape: "heart"
@@ -1663,6 +1665,7 @@
 		{
 			dependencies: ["1D40CAE675C4BB91"]
 			description: ["{quests.stone_age.hydration.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/hydration"
 			icon: {
 				Count: 1
 				id: "minecraft:potion"
@@ -1723,6 +1726,7 @@
 		{
 			dependencies: ["560B17BFBE8D477D"]
 			description: ["{quests.stone_age.leather_armor.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/armor"
 			id: "04E900CFE39D6A6C"
 			optional: true
 			subtitle: "{quests.stone_age.leather_armor.subtitle}"
@@ -1819,6 +1823,7 @@
 		{
 			dependencies: ["1D40CAE675C4BB91"]
 			description: ["{quests.stone_age.glass_bottles.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/glassworking"
 			id: "4F7B5C34B7CD27F2"
 			subtitle: "{quests.stone_age.glass_bottles.subtitle}"
 			tasks: [{
@@ -2283,6 +2288,38 @@
 			title: "{quests.stone_age.furs.title}"
 			x: -1.0d
 			y: 8.0d
+		}
+		{
+			dependencies: ["669F84C6A2A64145"]
+			description: [
+				"{quests.stone_age.medical_conditions.desc.1}"
+				"{@pagebreak}"
+				"{quests.stone_age.medical_conditions.desc.2}"
+			]
+			icon: "createdeco:decal_skull"
+			id: "00117AD40FACB89D"
+			rewards: [
+				{
+					id: "41B4EBE6FBC8DCAE"
+					item: "gtceu:paracetamol_pill"
+					type: "item"
+				}
+				{
+					id: "260BA8E2AB90DDF7"
+					item: "tfg:poison_pill"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			subtitle: "{quests.stone_age.medical_conditions.subtitle}"
+			tasks: [{
+				id: "400064E41CACA499"
+				title: "{quests.stone_age.medical_conditions.task}"
+				type: "checkmark"
+			}]
+			title: "{quests.stone_age.medical_conditions.title}"
+			x: 14.0d
+			y: 7.0d
 		}
 	]
 	subtitle: ["{quests.stone_age.subtitle}"]
