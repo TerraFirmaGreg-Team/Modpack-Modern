@@ -97,7 +97,7 @@ const registerTFGPowerReworkMaterials = (event) => {
 	// ZSM-5 Gel
 	event.create('tfg:zsm5_gel')
     	.liquid(new GTFluidBuilder().temperature(323))
-    	.components('2x carbon', '29x hydrogen', '1x nitrogen', '5x silicon', '1x aluminium', '23x oxygen', '9x sodium')
+    	.components('24x carbon', '128x hydrogen', '12x nitrogen', '5x silicon', '1x aluminium', '34x oxygen', '31x sodium')
     	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
     	.color(0xf2e8d6)
     	.secondaryColor(0xd0c4b0)
