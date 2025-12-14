@@ -22,6 +22,7 @@
 - Added a way to convert between vinegar and acetic acid (#2386) @Epicificator
 - Added a renderer to the electric greenhouse, so now you can visually see your crops grow! @RubenVerg
 - Added some distant horizons config options, for those who want to use it (#2406) @Mqrius
+- More animals now drop animal fat (#2367) @Pyritie
 ### Bug fixes
 - Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie
 - Fixed fries and cheese curds not being able to be put on burgers. @Redeix

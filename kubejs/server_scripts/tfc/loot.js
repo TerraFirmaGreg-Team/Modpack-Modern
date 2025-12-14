@@ -6,6 +6,8 @@ function registerTFCLoots(event) {
 
 	event.addEntityLootModifier('tfc:black_bear')
 		.addWeightedLoot([8, 12], ['tfc:food/bear'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
+
 	event.addEntityLootModifier('tfc:black_bear')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([4, 6], ['tfc:food/bear'])
@@ -13,6 +15,7 @@ function registerTFCLoots(event) {
 
 	event.addEntityLootModifier('tfc:grizzly_bear')
 		.addWeightedLoot([10, 16], ['tfc:food/bear'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
 
 	event.addEntityLootModifier('tfc:grizzly_bear')
 		.matchMainHand('#forge:tools/butchery_knives')
@@ -21,11 +24,12 @@ function registerTFCLoots(event) {
 
 	event.addEntityLootModifier('tfc:polar_bear')
 		.addWeightedLoot([14, 20], ['tfc:food/bear'])
-		.addWeightedLoot([2, 5], ['tfc:blubber'])
+		.addWeightedLoot([6, 12], ['tfc:blubber'])
 
 	event.addEntityLootModifier('tfc:polar_bear')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([7, 10], ['tfc:food/bear'])
+		.addWeightedLoot([3, 6], ['tfc:blubber'])
 
 
 	event.addEntityLootModifier('tfc:cougar')
@@ -46,8 +50,9 @@ function registerTFCLoots(event) {
 
 	event.addEntityLootModifier('tfc:sabertooth')
 		.addWeightedLoot([9, 14], ['tfc:food/gran_feline'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
 
-		event.addEntityLootModifier('tfc:sabertooth')
+	event.addEntityLootModifier('tfc:sabertooth')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([4, 7], ['tfc:food/gran_feline'])
 
@@ -94,6 +99,7 @@ function registerTFCLoots(event) {
 
 	event.addEntityLootModifier('tfc:dog')
 		.addWeightedLoot([5, 8], ['tfc:food/wolf'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
 
 	event.addEntityLootModifier('tfc:dog')
 		.matchMainHand('#forge:tools/butchery_knives')
@@ -140,147 +146,197 @@ function registerTFCLoots(event) {
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([2, 5], ['tfc:food/bluegill', 'tfc:food/crappie', 'tfc:food/lake_trout', 'tfc:food/rainbow_trout', 'tfc:food/frog_legs'])
 
+
 	// Passive animals
 
 	event.addEntityLootModifier('tfc:alpaca')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([5, 10], ['tfc:food/camelidae'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
+
 
 	event.addEntityLootModifier('tfc:boar')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([2, 4], ['tfc:food/pork'])
+		.addWeightedLoot([3, 5], ['tfc:blubber'])
+
 
 	event.addEntityLootModifier('tfc:bongo')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([2, 4], ['tfc:food/venison'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
 		
+
 	event.addEntityLootModifier('tfc:caribou')
-		.addWeightedLoot([1, 3], ['tfc:blubber'])
+		.addWeightedLoot([3, 6], ['tfc:blubber'])
+
 	event.addEntityLootModifier('tfc:caribou')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([3, 5], ['tfc:food/venison'])
+
 
 	event.addEntityLootModifier('tfc:chicken')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([1, 3], ['tfc:food/chicken'])
 
+
 	event.addEntityLootModifier('tfc:cow')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([8, 12], ['tfc:food/beef'])
+		.addWeightedLoot([2, 4], ['tfc:blubber'])
+
 
 	event.addEntityLootModifier('tfc:deer')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([2, 4], ['tfc:food/venison'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
 		
+
 	event.addEntityLootModifier('tfc:dolphin')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([5, 12], ['tfc:blubber'])
-		.addWeightedLoot([1, 5], ['minecraft:bone'])
+		.addWeightedLoot([6, 12], ['tfc:blubber'])
+		.addWeightedLoot([3, 5], ['minecraft:bone'])
+
 	event.addEntityLootModifier('tfc:dolphin')
 		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([2, 6], ['tfc:blubber'])
+		.addWeightedLoot([3, 6], ['tfc:blubber'])
+
 
 	event.addEntityLootModifier('tfc:donkey')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([7, 10], ['tfc:food/horse_meat'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
+
 
 	event.addEntityLootModifier('tfc:duck')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([1, 3], ['tfc:food/duck'])
 
+
 	event.addEntityLootModifier('tfc:frog')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([1, 2], ['tfc:food/frog_legs'])
 
+
 	event.addEntityLootModifier('tfc:gazelle')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([2, 4], ['tfc:food/venison'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
+
 
 	event.addEntityLootModifier('tfc:goat')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([4, 6], ['tfc:food/chevon'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
+
 
 	event.addEntityLootModifier('tfc:grouse')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([1, 2], ['tfc:food/grouse'])
 
+
 	event.addEntityLootModifier('tfc:horse')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([7, 10], ['tfc:food/horse_meat'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
+
 
 	event.addEntityLootModifier('tfc:manatee')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([5, 12], ['tfc:blubber'])
 		.addWeightedLoot([1, 5], ['minecraft:bone'])
+
 	event.addEntityLootModifier('tfc:manatee')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([2, 6], ['tfc:blubber'])
 
+
 	event.addEntityLootModifier('tfc:moose')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([5, 10], ['tfc:food/venison'])
-		.addWeightedLoot([1, 2], ['tfc:blubber'])
+		.addWeightedLoot([3, 6], ['tfc:blubber'])
+
 
 	event.addEntityLootModifier('tfc:mule')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([7, 10], ['tfc:food/horse_meat'])
-		
-	event.addEntityLootModifier('tfc:musk_ox')
 		.addWeightedLoot([1, 2], ['tfc:blubber'])
+		
+
+	event.addEntityLootModifier('tfc:musk_ox')
+		.addWeightedLoot([2, 4], ['tfc:blubber'])
+
 	event.addEntityLootModifier('tfc:musk_ox')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([7, 10], ['tfc:food/mutton'])
+
 
 	event.addEntityLootModifier('tfc:peafowl')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([1, 2], ['tfc:food/peafowl'])
 
+
 	event.addEntityLootModifier('tfc:pheasant')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([1, 2], ['tfc:food/pheasant'])
 
+
 	event.addEntityLootModifier('tfc:pig')
-		.addWeightedLoot([3, 6], ['tfc:blubber'])
+		.addWeightedLoot([4, 6], ['tfc:blubber'])
+
 	event.addEntityLootModifier('tfc:pig')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([5, 7], ['tfc:food/pork'])
-		.addWeightedLoot([1, 3], ['tfc:blubber'])
+		.addWeightedLoot([2, 3], ['tfc:blubber'])
+
 
 	event.addEntityLootModifier('tfc:orca')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([8, 20], ['tfc:blubber'])
+		.addWeightedLoot([12, 20], ['tfc:blubber'])
 		.addWeightedLoot([3, 7], ['minecraft:bone'])
+
 	event.addEntityLootModifier('tfc:orca')
 		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([4, 10], ['tfc:blubber'])
+		.addWeightedLoot([6, 10], ['tfc:blubber'])
+
 
 	event.addEntityLootModifier('tfc:quail')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([1, 3], ['tfc:food/quail'])
 
+
 	event.addEntityLootModifier('tfc:rabbit')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addLoot('tfc:food/rabbit')
+		.addWeightedLoot([0, 1], ['tfc:blubber'])
+
 
 	event.addEntityLootModifier('tfc:sheep')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([6, 9], ['tfc:food/mutton'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
+
 
 	event.addEntityLootModifier('tfc:turkey')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([1, 2], ['tfc:food/turkey'])
 
+
 	event.addEntityLootModifier('tfc:turtle')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addLoot('tfc:food/turtle')
 
+
 	event.addEntityLootModifier('tfc:wildebeest')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([4, 7], ['tfc:food/beef'])
+		.addWeightedLoot([2, 3], ['tfc:blubber'])
+
 
 	event.addEntityLootModifier('tfc:yak')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([7, 10], ['tfc:food/chevon'])
+		.addWeightedLoot([3, 6], ['tfc:blubber'])
 
 
 	// Blocks
