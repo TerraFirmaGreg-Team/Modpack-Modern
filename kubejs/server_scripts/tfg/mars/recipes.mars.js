@@ -119,13 +119,10 @@ function registerTFGMarsRecipes(event) {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.custom({
-		type: 'vintageimprovements:polishing',
-		ingredients: [{ item: 'beneath:wood/wood/crimson' }],
-		results: [{ item: 'beneath:wood/stripped_wood/crimson' }],
-		speed_limits: 0,
-		processingTime: 50
-	}).id(`tfg:vi/lathe/stripping_crimson_wood`)
+	event.recipes.vintageimprovements.polishing('beneath:wood/stripped_wood/crimson', 'beneath:wood/wood/crimson')
+		.speedLimits(0)
+		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id(`tfg:vi/lathe/stripping_crimson_wood`)
 
 	woodBuilder(event, 'warped', 'beneath:wood/lumber/warped', '#tfc:warped_logs', 'beneath:wood/log/warped',
 		'beneath:wood/stripped_log/warped', 'beneath:wood/planks/warped', null,
@@ -138,13 +135,10 @@ function registerTFGMarsRecipes(event) {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.custom({
-		type: 'vintageimprovements:polishing',
-		ingredients: [{ item: 'beneath:wood/wood/warped' }],
-		results: [{ item: 'beneath:wood/stripped_wood/warped' }],
-		speed_limits: 0,
-		processingTime: 50
-	}).id(`tfg:vi/lathe/stripping_warped_wood`)
+	event.recipes.vintageimprovements.polishing('beneath:wood/stripped_wood/warped', 'beneath:wood/wood/warped')
+		.speedLimits(0)
+		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id(`tfg:vi/lathe/stripping_warped_wood`)
 
 	// Alphacene
 

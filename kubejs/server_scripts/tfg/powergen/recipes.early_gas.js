@@ -8,41 +8,29 @@ function registerTFGEarlyGasRecipes(event) {
 
 	//#region Syngas
 
-	event.custom({
-		type: 'vintageimprovements:vacuumizing',
-		ingredients: [{ item: 'minecraft:charcoal' }, { fluid: 'gtceu:creosote', amount: 250 }],
-		results: [{ fluid: 'tfg:syngas', amount: 100 }],
-		secondaryFluidOutput: 0,
-		heatRequirement: "heated",
-		processingTime: 4000
-	}).id('tfg:vi/vacuumizing/syngas_from_charcoal')
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:syngas', 100), ['minecraft:charcoal', Fluid.of('gtceu:creosote', 250)])
+		.secondaryFluidOutput(0)
+		.processingTime(4000)
+		.heated()
+		.id('tfg:vi/vacuumizing/syngas_from_charcoal')
 
-	event.custom({
-		type: 'vintageimprovements:vacuumizing',
-		ingredients: [{ item: 'minecraft:coal' }, { fluid: 'gtceu:creosote', amount: 250 }],
-		results: [{ fluid: 'tfg:syngas', amount: 200 }],
-		secondaryFluidOutput: 0,
-		heatRequirement: "heated",
-		processingTime: 4000
-	}).id('tfg:vi/vacuumizing/syngas_from_coal')
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:syngas', 200), ['minecraft:coal', Fluid.of('gtceu:creosote', 250)])
+		.secondaryFluidOutput(0)
+		.processingTime(4000)
+		.heated()
+		.id('tfg:vi/vacuumizing/syngas_from_coal')
+	
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:syngas', 400), ['gtceu:coke_gem', Fluid.of('gtceu:creosote', 250)])
+		.secondaryFluidOutput(0)
+		.processingTime(4000)
+		.heated()
+		.id('tfg:vi/vacuumizing/syngas_from_coke')
 
-	event.custom({
-		type: 'vintageimprovements:vacuumizing',
-		ingredients: [{ item: 'gtceu:coke_gem' }, { fluid: 'gtceu:creosote', amount: 250 }],
-		results: [{ fluid: 'tfg:syngas', amount: 400 }],
-		secondaryFluidOutput: 0,
-		heatRequirement: "heated",
-		processingTime: 4000
-	}).id('tfg:vi/vacuumizing/syngas_from_coke')
-
-	event.custom({
-		type: 'vintageimprovements:vacuumizing',
-		ingredients: [{ item: 'beneath:cursecoal' }, { fluid: 'gtceu:creosote', amount: 250 }],
-		results: [{ fluid: 'tfg:syngas', amount: 400 }],
-		secondaryFluidOutput: 0,
-		heatRequirement: "heated",
-		processingTime: 4000
-	}).id('tfg:vi/vacuumizing/syngas_from_anthracite')
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:syngas', 400), ['beneath:cursecoal', Fluid.of('gtceu:creosote', 250)])
+		.secondaryFluidOutput(0)
+		.processingTime(4000)
+		.heated()
+		.id('tfg:vi/vacuumizing/syngas_from_anthracite')
 
 	event.recipes.gtceu.brewery('tfg:syngas_from_charcoal')
 		.itemInputs('minecraft:charcoal')
