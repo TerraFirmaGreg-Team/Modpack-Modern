@@ -10,6 +10,7 @@
 - Added "too cold to handle" and "too light to handle" for cold things and lighter-than-air things. Uses the same mechanic as tongs. Lighter-than-air things can also be negated with something Very Heavy in your inventory, and all effects (including "too hot to handle") are negated by super tanks/chests and cells, but *not* drums or buckets. Check the `#tfg:hot_protection_equipment`, `#tfg:cold_protection_equipment`, and `#tfg:floating_protection_equipment` tags for equipment that makes you immune to these effects. The equipment also protects against pipes! @Pyritie
 - GregTech hot ingots are also now properly included in the "too hot to handle" system so the same protection applies @Pyritie
 - Added machine recipes for crafting tongs @Pyritie
+- All baby animals and more "medium" size animals can now be picked up (#2398) @Pyritie
 #### Medical Hazards
 - Added visual debuff effects for all medical conditions, so you're immediately notified when carrying something hazardous instead of wondering why you have Hunger II. They don't do anything by themselves, they're just a much more visible way of checking your conditions. @Pyritie
 - Early `#tfg:medicines` can now also cure medical conditions! Did you think they wouldn't come with side effects? @Pyritie
@@ -31,6 +32,7 @@
 - Fixed treated wooden planks from being excluded in the Domum Ornamentum and Facade whitelists (#2404) @thederpysockdude123
 - Fixed a recipe conflict for boiled and fried eggs (#2407) @Mqrius
 - Fixed a recipe conflict blocking the crafting of silicone rubber (#2387) @Mqrius
+- Fixed the backpack and QuarkTech helmet auto-feeding from feeding you while you're downed @Mqrius
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra
