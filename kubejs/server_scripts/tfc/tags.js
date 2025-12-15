@@ -39,7 +39,7 @@ function registerTFCItemTags(event) {
         "#forge:tools/drills",
         "#forge:tools/fishing_nets",
         "#tfc:buckets",
-		"#tfc:lens"
+		"tfc:lens"
         "buildinggadgets2:gadget_building",
         "buildinggadgets2:gadget_exchanging",
         "buildinggadgets2:gadget_copy_paste",
