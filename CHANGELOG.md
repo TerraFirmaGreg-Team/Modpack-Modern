@@ -40,6 +40,7 @@
 - Fixed a recipe conflict for boiled and fried eggs (#2407) @Mqrius
 - Fixed a recipe conflict blocking the crafting of silicone rubber (#2387) @Mqrius
 - Fixed the backpack and QuarkTech helmet auto-feeding from feeding you while you're downed @Mqrius
+- Fixed Ostrum Casing not having a recipe (#2363) @FlightingFalcon
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra
