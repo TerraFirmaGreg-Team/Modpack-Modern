@@ -496,15 +496,28 @@
 					type: "item"
 				}
 				{
+					count: 75L
 					id: "18AECBFB42064D4E"
 					item: "gtceu:plascrete"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "4DA87A845076183A"
+					item: "gtceu:cleanroom_glass"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "4DA87A845076183A"
-					item: "gtceu:cleanroom_glass"
-					optional_task: true
+					id: "0B8D91BE431AEB56"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:auto_maintenance_hatch)item(gtceu:maintenance_hatch))"
+						}
+					}
+					title: "Maintenance Hatch or Auto Maintenance Hatch"
 					type: "item"
 				}
 			]
