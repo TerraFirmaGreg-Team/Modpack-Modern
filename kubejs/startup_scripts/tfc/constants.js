@@ -306,7 +306,7 @@ global.TFC_DISABLED_ITEMS = /** @type {const} */ ([
     "tfc:ore/ruby",
     "tfc:ore/sapphire",
     "tfc:ore/topaz",
-
+    "tfc:ore/gypsum",
     "tfc:ore/graphite",
     "tfc:ore/sulfur",
     "tfc:ore/cinnabar",
@@ -315,7 +315,6 @@ global.TFC_DISABLED_ITEMS = /** @type {const} */ ([
     "tfc:ore/borax",
     "tfc:ore/bituminous_coal",
     "tfc:ore/lignite",
-    "tfc:ore/halite",
 
     // Axles
     "tfc:wood/axle/acacia",
