@@ -518,6 +518,7 @@
 					title: "Maintenance Hatch or Auto Maintenance Hatch"
 					type: "item"
 				}
+				{quests.high_voltage.cleanroom.task}
 			]
 			title: "{quests.high_voltage.cleanroom.title}"
 			x: 0.0d
