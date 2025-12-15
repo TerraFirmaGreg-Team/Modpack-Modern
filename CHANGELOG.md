@@ -2,6 +2,7 @@
 
 ## Unreleased
 ### Breaking Changes
+- Rose Quartz moved namespaces, so you'll have to convert all your old rose quartz items into the new ones. You'll need to explore new chunks to find new geodes with the correct ore blocks.
 - The previous silicone rubber styrene butadiene rubber belts have been changed to a different item, so please break and recycle them before updating if you're using any.
 - Cleaning meal bag foil packs is now done in the chem bath instead of the ore washer. @Pyritie
 - Turning honey into sugar is now done in the extractor instead of the centrifuge. @Pyritie
@@ -18,13 +19,16 @@
 - The medicines have also been rebalanced, so some of the stronger ones come with a downside, while the weaker ones have a stronger cure effect.
 - The medical condition effect that previously instantly killed you (which did not spawn a corpse) now gives you Wither III instead. @Pyritie
 #### Other
-- Added two more early game mechanical belts, and rubber+ belts are also now more expensive. @Pyritie
+- Added two more early game mechanical belts, and rubber+ belts are also now more expensive. @Pyritie @Epicificator
+- Primitive illagers will no longer endlessly respawn. Instead, now they only spawn as "structures", so once you kill them they will never return. @Pyritie
 - Doubled the durability of all space suits @Pyritie
 - Added a way to convert between vinegar and acetic acid (#2386) @Epicificator
 - Added a renderer to the electric greenhouse, so now you can visually see your crops grow! @RubenVerg
 - Added some distant horizons config options, for those who want to use it (#2406) @Mqrius
 - More animals now drop animal fat (#2367) @Pyritie
 - Nerfed how much biomass and plant balls are produced from certain vanilla plants (#2361) @Pyritie
+- Added some more ruined structures with a small bit of loot.
+- Added some resource packs for TFC, disabled by default
 ### Bug fixes
 - Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie
 - Fixed fries and cheese curds not being able to be put on burgers. @Redeix
@@ -36,6 +40,7 @@
 - Fixed a recipe conflict for boiled and fried eggs (#2407) @Mqrius
 - Fixed a recipe conflict blocking the crafting of silicone rubber (#2387) @Mqrius
 - Fixed the backpack and QuarkTech helmet auto-feeding from feeding you while you're downed @Mqrius
+- Fixed Ostrum Casing not having a recipe (#2363) @FlightingFalcon
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra

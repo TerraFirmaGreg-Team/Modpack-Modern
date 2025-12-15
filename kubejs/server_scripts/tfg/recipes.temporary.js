@@ -10,6 +10,24 @@ function registerTFGTemporaryRecipes(event) {
 
 	event.shapeless('tfg:ostrum_linear_accelerator', 'gtceu:ostrum_linear_accelerator')
 
+	event.shapeless('greate:rose_quartz_dust', 'gtceu:rose_quartz_dust')
+	event.shapeless('greate:tiny_rose_quartz_dust', 'gtceu:tiny_rose_quartz_dust')
+	event.shapeless('greate:small_rose_quartz_dust', 'gtceu:small_rose_quartz_dust')
+	event.shapeless('greate:poor_raw_rose_quartz', 'gtceu:poor_raw_rose_quartz')
+	event.shapeless('greate:raw_rose_quartz', 'gtceu:raw_rose_quartz')
+	event.shapeless('greate:rich_raw_rose_quartz', 'gtceu:rich_raw_rose_quartz')
+	event.shapeless('greate:chipped_rose_quartz_gem', 'gtceu:chipped_rose_quartz_gem')
+	event.shapeless('greate:flawed_rose_quartz_gem', 'gtceu:flawed_rose_quartz_gem')
+	event.shapeless('greate:flawless_rose_quartz_gem', 'gtceu:flawless_rose_quartz_gem')
+	event.shapeless('greate:exquisite_rose_quartz_gem', 'gtceu:exquisite_rose_quartz_gem')
+	event.shapeless('greate:pure_rose_quartz_dust', 'gtceu:pure_rose_quartz_dust')
+	event.shapeless('greate:impure_rose_quartz_dust', 'gtceu:impure_rose_quartz_dust')
+	event.shapeless('greate:purified_rose_quartz_ore', 'gtceu:purified_rose_quartz_ore')
+	event.shapeless('greate:crushed_rose_quartz_ore', 'gtceu:crushed_rose_quartz_ore')
+	event.shapeless('greate:refined_rose_quartz_ore', 'gtceu:refined_rose_quartz_ore')
+	event.shapeless('greate:rose_quartz_lens', 'gtceu:rose_quartz_lens')
+	event.shapeless('greate:rose_quartz_plate', 'gtceu:rose_quartz_plate')
+
 	// TODO: remove nether/ender air in 0.12
 
 

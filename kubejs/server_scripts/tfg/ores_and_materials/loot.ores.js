@@ -34,8 +34,7 @@ const STONE_TYPES_TO_COBBLE = {
 	permafrost: 'gtceu:ice_dust'
 }
 
-const registerTFGOreLoots = (event) => {
-
+const registerTFGOreLoots = (event) => {	
 	// Have to define these here because normal loot table jsons don't support checking for hammers
 
 	// Crush raw rock into cobble
@@ -61,8 +60,10 @@ const registerTFGOreLoots = (event) => {
 			LootEntry.of('tfg:rock/cobble_blackstone'),
 			LootEntry.of('tfc:powder/native_gold')
 		)
-	
+
 	// Go through all materials
+	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
+
 	forEachMaterial(material => {
 		if (material.hasProperty(PropertyKey.ORE)) {
 
@@ -72,6 +73,9 @@ const registerTFGOreLoots = (event) => {
 				let sawDrop = ChemicalHelper.get(TagPrefix.gem, material, 1)
 
 				let bud = `gtceu:${material.getName()}_bud_indicator`;
+				if (material === $GreateMaterials.RoseQuartz) {
+					bud = 'greate:rose_quartz_bud_indicator';
+				}
 
 				event.addBlockLootModifier(bud)
 					.matchMainHand("tfc:gem_saw")
@@ -89,23 +93,25 @@ const registerTFGOreLoots = (event) => {
 			// I LOVE LOOTJS I LOVE LOOTJS I LOVE LOOTJS
 			let rawOreBlock = `:${ChemicalHelper.get(TagPrefix.rawOreBlock, material, 1).getItem()}`;
 			if (material === GTMaterials.Copper || material === GTMaterials.Gold || material === GTMaterials.Iron) {
-				rawOreBlock = `minecraft${  rawOreBlock}`;
+				rawOreBlock = `minecraft${rawOreBlock}`;
 			} else if (material === TFGHelpers.getMaterial('desh')
 				|| material === TFGHelpers.getMaterial('ostrum')
 				|| material === TFGHelpers.getMaterial('calorite')) {
-				rawOreBlock = `ad_astra${  rawOreBlock}`;
+				rawOreBlock = `ad_astra${rawOreBlock}`;
+			} else if (material === $GreateMaterials.RoseQuartz) {
+				rawOreBlock = `greate${rawOreBlock}`;
 			} else {
-				rawOreBlock = `gtceu${  rawOreBlock}`;
+				rawOreBlock = `gtceu${rawOreBlock}`;
 			}
 
 			event.addBlockLootModifier(rawOreBlock)
 				.removeLoot(ItemFilter.ALWAYS_TRUE)
 				.addWeightedLoot([4, 6],
-				[
-					richRawOre.withChance(0.2),
-					normalRawOre.withChance(0.6),
-					poorRawOre.withChance(0.2)
-				]);
+					[
+						richRawOre.withChance(0.2),
+						normalRawOre.withChance(0.6),
+						poorRawOre.withChance(0.2)
+					]);
 
 			// Stone ores
 			global.ORE_BEARING_STONES.forEach(stoneType => {
@@ -121,9 +127,10 @@ const registerTFGOreLoots = (event) => {
 				}
 
 				let stoneTypeDust = ChemicalHelper.get(TagPrefix.dust, stoneTypeMaterial, 1)
+				let namespace = material === $GreateMaterials.RoseQuartz ? 'greate' : 'gtceu';
 
 				// break with pickaxe/mining hammer/drill/mining machine
-				event.addBlockLootModifier(`gtceu:${stoneType}_${material.getName()}_ore`)
+				event.addBlockLootModifier(`${namespace}:${stoneType}_${material.getName()}_ore`)
 					.removeLoot(ItemFilter.ALWAYS_TRUE)
 					.addWeightedLoot([
 						richRawOre.withChance(0.2),
@@ -135,7 +142,7 @@ const registerTFGOreLoots = (event) => {
 					)
 
 				// break with hammer
-				event.addBlockLootModifier(`gtceu:${stoneType}_${material.getName()}_ore`)
+				event.addBlockLootModifier(`${namespace}:${stoneType}_${material.getName()}_ore`)
 					.matchMainHand('#forge:tools/hammers')
 					.addLoot(STONE_TYPES_TO_COBBLE[stoneType]);
 			})

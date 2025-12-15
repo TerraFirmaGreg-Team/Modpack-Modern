@@ -1,0 +1,82 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "gtceu:machine",
+  "machine": "gtceu:active_transformer",
+  "texture_overrides": {
+    "all": "tfg:item/deprecated"
+  },
+  "variants": {
+    "is_formed=false,recipe_logic_status=idle": {
+      "model": {
+        "parent": "gtceu:block/machine/template/cube_all/sided",
+        "textures": {
+          "all": "tfg:item/deprecated",
+          "overlay_front": "tfg:item/deprecated"
+        }
+      }
+    },
+    "is_formed=false,recipe_logic_status=suspend": {
+      "model": {
+        "parent": "gtceu:block/machine/template/cube_all/sided",
+        "textures": {
+          "all": "tfg:item/deprecated",
+          "overlay_front": "tfg:item/deprecated"
+        }
+      }
+    },
+    "is_formed=false,recipe_logic_status=waiting": {
+      "model": {
+        "parent": "gtceu:block/machine/template/cube_all/sided",
+        "textures": {
+          "all": "tfg:item/deprecated",
+          "overlay_front": "tfg:item/deprecated_active"
+        }
+      }
+    },
+    "is_formed=false,recipe_logic_status=working": {
+      "model": {
+        "parent": "gtceu:block/machine/template/cube_all/sided",
+        "textures": {
+          "all": "tfg:item/deprecated",
+          "overlay_front": "tfg:item/deprecated_active"
+        }
+      }
+    },
+    "is_formed=true,recipe_logic_status=idle": {
+      "model": {
+        "parent": "gtceu:block/machine/template/cube_all/sided",
+        "textures": {
+          "all": "tfg:item/deprecated",
+          "overlay_front": "tfg:item/deprecated"
+        }
+      }
+    },
+    "is_formed=true,recipe_logic_status=suspend": {
+      "model": {
+        "parent": "gtceu:block/machine/template/cube_all/sided",
+        "textures": {
+          "all": "tfg:item/deprecated",
+          "overlay_front": "tfg:item/deprecated"
+        }
+      }
+    },
+    "is_formed=true,recipe_logic_status=waiting": {
+      "model": {
+        "parent": "gtceu:block/machine/template/cube_all/sided",
+        "textures": {
+          "all": "tfg:item/deprecated",
+          "overlay_front": "tfg:item/deprecated_active"
+        }
+      }
+    },
+    "is_formed=true,recipe_logic_status=working": {
+      "model": {
+        "parent": "gtceu:block/machine/template/cube_all/sided",
+        "textures": {
+          "all": "tfg:item/deprecated",
+          "overlay_front": "tfg:item/deprecated_active"
+        }
+      }
+    }
+  }
+}

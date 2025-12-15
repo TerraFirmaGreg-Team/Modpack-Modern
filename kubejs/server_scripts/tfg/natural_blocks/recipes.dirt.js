@@ -74,13 +74,9 @@ function registerTFGDirtRecipes(event) {
 			.duration(100)
 			.EUt(2)
 
-		event.custom({
-			type: 'vintageimprovements:curving',
-			ingredients: [{ item: `tfc:mud/${mud}` }],
-			itemAsHead: 'gtceu:ingot_extruder_mold',
-			results: [{ item: `tfc:drying_bricks/${mud}`, count: 4 }],
-			processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-		}).id(`tfg:vi/curving/${mud}_bricks`)
+		event.recipes.vintageimprovements.curving(`4x tfc:drying_bricks/${mud}`, `tfc:mud/${mud}`)
+			.head('gtceu:ingot_extruder_mold')
+			.id(`tfg:vi/curving/${mud}_bricks`)
 
 		// Влажный кирпич -> Кирпич
 		event.smelting(`tfc:mud_brick/${mud}`, `tfc:drying_bricks/${mud}`)
