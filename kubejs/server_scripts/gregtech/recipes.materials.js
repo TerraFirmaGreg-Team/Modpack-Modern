@@ -179,6 +179,7 @@ function registerGTCEUMetalRecipes(event) {
 		if (material.hasFlag(MaterialFlags.GENERATE_PLATE)
 			&& material !== GTMaterials.Wood
 			&& material !== GTMaterials.TreatedWood
+			&& material !== GTMaterials.Stone
 			&& !material.hasProperty(PropertyKey.POLYMER))
 		{
 			const plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)

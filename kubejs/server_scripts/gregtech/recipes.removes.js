@@ -51,6 +51,9 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_cobblestone')
 	removeMaceratorRecipe(event, 'gravel_to_flint')
 	removeMaceratorRecipe(event, 'macerate_furnace')
+	removeCutterRecipe(event, 'cut_stone_block_to_plate')
+	removeCutterRecipe(event, 'cut_stone_block_to_plate_water')
+	removeCutterRecipe(event, 'cut_stone_block_to_plate_distilled_water')
 
 	//#endregion
 
