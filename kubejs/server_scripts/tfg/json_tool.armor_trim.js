@@ -29,7 +29,7 @@ const materials = [
     {materialName: 'salt_tfc', nameColor: '#bebec2', itemName: 'gtceu:exquisite_salt_gem', indexNumber: 0.196},
     {materialName: 'sapphire_tfc', nameColor: '#2628b0', itemName: 'gtceu:exquisite_sapphire_gem', indexNumber: 0.197},
     {materialName: 'sodalite_tfc', nameColor: '#2e40c6', itemName: 'gtceu:exquisite_sodalite_gem', indexNumber: 0.198},
-    {materialName: 'coke_tfc', nameColor: '#424847', itemName: 'gtceu:exquisite_coke_gem', indexNumber: 0.199},
+    {materialName: 'armalcolite_tfc', nameColor: '#424847', itemName: 'gtceu:exquisite_armalcolite_gem', indexNumber: 0.199},
     {materialName: 'spessartine_tfc', nameColor: '#c28017', itemName: 'gtceu:exquisite_spessartine_gem', indexNumber: 0.181},
     {materialName: 'topaz_tfc', nameColor: '#b1a42d', itemName: 'gtceu:exquisite_topaz_gem', indexNumber: 0.182},
     {materialName: 'uvarovite_tfc', nameColor: '#22b43b', itemName: 'gtceu:exquisite_uvarovite_gem', indexNumber: 0.183},
