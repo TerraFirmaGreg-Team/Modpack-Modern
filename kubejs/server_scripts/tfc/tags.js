@@ -27,6 +27,7 @@ function registerTFCItemTags(event) {
         "#forge:tools/wrenches",
         "#forge:tools/files",
         "#forge:tools/crowbars",
+		"#forge:lenses"
         "#forge:tools/screwdrivers",
         "#forge:tools/wire_cutters",
         "#forge:tools/butchery_knives",
@@ -38,6 +39,7 @@ function registerTFCItemTags(event) {
         "#forge:tools/drills",
         "#forge:tools/fishing_nets",
         "#tfc:buckets",
+		"#tfc:lens"
         "buildinggadgets2:gadget_building",
         "buildinggadgets2:gadget_exchanging",
         "buildinggadgets2:gadget_copy_paste",
