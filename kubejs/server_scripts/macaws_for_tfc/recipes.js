@@ -6,8 +6,6 @@
  * @param {Internal.RecipesEventJS} event 
  */
 function registerMacawsForTFCRecipes(event) {
-	
-	event.add(mcw_tfc_aio)
 	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'minecraft:stick', '#forge:rods/wooden')
 	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'minecraft:string', '#forge:string')
 	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'minecraft:glass', '#forge:glass')
