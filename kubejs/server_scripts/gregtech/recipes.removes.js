@@ -824,9 +824,14 @@ function removeGTCEURecipes(event) {
 	
 	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound' });
 
-
 	event.remove({ id: 'gtceu:chemical_reactor/soda_ash_from_carbon_dioxide' })
 	event.remove({ id: 'gtceu:large_chemical_reactor/soda_ash_from_carbon_dioxide' })
+
+	event.remove({ id: 'gtceu:macerator/macerate_chiseled_sandstone' })
+	event.remove({ id: 'gtceu:macerator/macerate_sandstone_wall' })
+	event.remove({ id: 'gtceu:macerator/macerate_smooth_sandstone' })
+	event.remove({ id: 'gtceu:macerator/macerate_sandstone' })
+	event.remove({ id: 'gtceu:macerator/macerate_cut_sandstone' })
 }
 
 function removeMaceratorRecipe(event, id) {
