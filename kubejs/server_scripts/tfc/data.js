@@ -34,11 +34,27 @@ const registerTFCFuels = (event) => {
 
 	event.fuel('beneath:cursecoal', 1540, 2200, 1.0)
 
-	event.fuel('minecraft:coal', 1415, 2200, 1.0)
+	event.fuel('minecraft:charcoal_block', 1350, 1800 * 9, 1.0)
+	event.fuel('gtceu:charcoal_dust', 1350, 600, 1.0)
+
+	event.fuel('minecraft:coal', 1415, 1900, 1.0)
+	event.fuel('minecraft:coal_block', 1415, 1900 * 9, 1.0)
+	event.fuel('gtceu:flawless_coal_gem', 1415, 1900 * 2, 1.0)
+	event.fuel('gtceu:exquisite_coal_gem', 1415, 1900 * 4, 1.0)
+	event.fuel('gtceu:flawed_coal_gem', 1415, 1900 / 2, 1.0)
+	event.fuel('gtceu:chipped_coal_gem', 1415, 1900 / 4, 1.0)
+
+	event.fuel('gtceu:crushed_coal_ore', 1415, 1000, 0.8)
+	event.fuel('gtceu:purified_coal_ore', 1415, 1000, 1.0)
+	event.fuel('gtceu:refined_coal_ore', 1415, 1000, 1.0)
+	event.fuel('gtceu:impure_coal_dust', 1415, 500, 0.8)
+
 	event.fuel('gtceu:rich_raw_coal', 1415, 2200, 0.95)
 	event.fuel('gtceu:raw_coal', 1415, 1900, 0.95)
 	event.fuel('gtceu:poor_raw_coal', 1415, 1600, 0.95)
-	event.fuel('gtceu:coal_dust', 1415, 600, 0.95)
+	event.fuel('gtceu:coal_dust', 1415, 600, 0.85)
+	event.fuel('gtceu:small_coal_dust', 1415, 600 / 4, 0.85)
+	event.fuel('gtceu:tiny_coal_dust', 1415, 600 / 9, 0.85)
 }
 
 
