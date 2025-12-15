@@ -141,4 +141,15 @@ function registerTFGClayRecipes(event) {
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.duration(20)
 		.EUt(2)
+
+	// Renewable clay
+	
+	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_clay' })
+
+	event.recipes.gtceu.rock_breaker("clay_duping")
+		.notConsumable('minecraft:clay')
+		.itemOutputs('minecraft:clay')
+		.adjacentFluids(["tfc:salt_water", "tfc:spring_water"])
+		.duration(50)
+		.EUt(GTValues.VHA[GTValues.MV])
 }

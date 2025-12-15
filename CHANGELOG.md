@@ -7,6 +7,8 @@
 - Cleaning meal bag foil packs is now done in the chem bath instead of the ore washer. @Pyritie
 - Turning honey into sugar is now done in the extractor instead of the centrifuge. @Pyritie
 - Syngas crafting in the Vacuum Chamber will now output into the chamber itself instead of the Basin, so it won't get mixed up with the creosote (#2378) @Pyritie
+- Cleaned up the EMI pages for small and large boilers so they aren't flooded with furniture and other things. If you were using something "non-standard" to fuel your boilers, check if they're still valid. (#2421, #2415) @thederpysockdude123 @applenper
+- Clay dust is no longer electrolyzable, but now you can get infinite clay blocks from a rock breaker @Pyritie
 ### Changes
 #### Hot or Not
 - Added "too cold to handle" and "too light to handle" for cold things and lighter-than-air things. Uses the same mechanic as tongs. Lighter-than-air things can also be negated with something Very Heavy in your inventory, and all effects (including "too hot to handle") are negated by super tanks/chests and cells, but *not* drums or buckets. Check the `#tfg:hot_protection_equipment`, `#tfg:cold_protection_equipment`, and `#tfg:floating_protection_equipment` tags for equipment that makes you immune to these effects. The equipment also protects against pipes! @Pyritie
@@ -30,6 +32,7 @@
 - Added some more ruined structures with a small bit of loot.
 - Added some resource packs for TFC, disabled by default
 - Lenses are now allowed on tool racks (#2434) @thederpysockdude123
+- The Active Transformer multiblock is now craftable at EV, with a new texture and casings. (#2424) @BlueBoat29
 ### Bug fixes
 - Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie
 - Fixed fries and cheese curds not being able to be put on burgers. @Redeix
@@ -41,8 +44,10 @@
 - Fixed a recipe conflict for boiled and fried eggs (#2407) @Mqrius
 - Fixed a recipe conflict blocking the crafting of silicone rubber (#2387) @Mqrius
 - Fixed the backpack and QuarkTech helmet auto-feeding from feeding you while you're downed @Mqrius
+- Fixed drills taking way more damage when mining than intended (#2419, #2428) @Mqrius
 - Fixed Ostrum Casing not having a recipe (#2363) @FlightingFalcon
 - Fixed warped trees not growing on normal mars dirt @Pyritie
+- Fixed missing block names for some of the variations of non-earth stones @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra
