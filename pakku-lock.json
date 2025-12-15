@@ -12360,6 +12360,67 @@
             ]
         },
         {
+            "pakku_id": "oO0Fr45i8SO2Lg2x",
+            "type": "RESOURCE_PACK",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "tfc-ambiental-refreshed",
+                "modrinth": "tfc-ambiental-refreshed"
+            },
+            "name": {
+                "curseforge": "TFC Ambiental Refreshed",
+                "modrinth": "TFC Ambiental Refreshed"
+            },
+            "id": {
+                "curseforge": "1379694",
+                "modrinth": "RVuHApuv"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "TFC_Ambiental_Refreshed_1.18-1.21.1.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7223/628/TFC_Ambiental_Refreshed_1.18-1.21.1.zip",
+                    "id": "7223628",
+                    "parent_id": "1379694",
+                    "hashes": {
+                        "sha1": "73561b96df5b4ead380bdca8f01db3ae11f63daf",
+                        "md5": "df3d1a50ea8f109f29939a722fb084a3"
+                    },
+                    "required_dependencies": [],
+                    "size": 458406,
+                    "date_published": "2025-11-15T06:25:33.587Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "TFC_Ambiental_Refreshed_1.18-1.21.1.zip",
+                    "mc_versions": [
+                        "1.18.2",
+                        "1.20.1",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "minecraft"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/RVuHApuv/versions/SAxnWzwK/TFC_Ambiental_Refreshed_1.18-1.21.1.zip",
+                    "id": "SAxnWzwK",
+                    "parent_id": "RVuHApuv",
+                    "hashes": {
+                        "sha512": "f272ba3bc3c97bc0156b61a3a44d36b7e0bcbd2d85479fa4182fb85c858745737266ca63215490198c125a6e5b626baf449c07eb9d1d5e0bb2a72ab60e209fb9",
+                        "sha1": "73561b96df5b4ead380bdca8f01db3ae11f63daf"
+                    },
+                    "required_dependencies": [],
+                    "size": 458406,
+                    "date_published": "2025-11-15T06:27:57.385Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "73uV6QykaOBW9DSj",
             "type": "RESOURCE_PACK",
             "slug": {
@@ -12984,6 +13045,75 @@
                     ],
                     "size": 34133,
                     "date_published": "2025-07-15T13:40:22.577013Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "ajFTZODDe9JA6OiW",
+            "pakku_links": [
+                "64uacGcEw697jVGs"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "tfc-ruins",
+                "modrinth": "tfc-ruins"
+            },
+            "name": {
+                "curseforge": "TFC Ruins - Structures for TerraFirmaCraft",
+                "modrinth": "TFC Ruins"
+            },
+            "id": {
+                "curseforge": "1383031",
+                "modrinth": "2JRpLCvK"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "tfc_ruins-1.0.1-forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7270/344/tfc_ruins-1.0.1-forge-1.20.1.jar",
+                    "id": "7270344",
+                    "parent_id": "1383031",
+                    "hashes": {
+                        "sha1": "a3759bcb6545195e680121c145608eeefc70a18a",
+                        "md5": "008d9c033ab830c67a77576a64277232"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 62230,
+                    "date_published": "2025-11-28T08:18:23.587Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "tfc_ruins-1.0.1-forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/2JRpLCvK/versions/upy38bFL/tfc_ruins-1.0.1-forge-1.20.1.jar",
+                    "id": "upy38bFL",
+                    "parent_id": "2JRpLCvK",
+                    "hashes": {
+                        "sha512": "d2d7d1426215e6252281a53daf56127f66a27da20f7c5160d7275a1326197961998f1df05d1917beb6f792ff211108ec845f624b2bc2ad78f2901a3b70426b2b",
+                        "sha1": "a3759bcb6545195e680121c145608eeefc70a18a"
+                    },
+                    "required_dependencies": [
+                        "JaCEZUhg"
+                    ],
+                    "size": 62230,
+                    "date_published": "2025-11-28T08:17:29.408127Z"
                 }
             ]
         },
@@ -14303,6 +14433,43 @@
                     "required_dependencies": [],
                     "size": 1631104,
                     "date_published": "2025-10-24T18:08:01.953Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Z3KE8gJoOsh7EQNZ",
+            "type": "RESOURCE_PACK",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "terrafirmacraft-vexxed-visuals",
+                "modrinth": "vexxed-visuals-terrafirmacraft"
+            },
+            "name": {
+                "curseforge": "Vexxed Visuals: TerraFirmaCraft",
+                "modrinth": "Vexxed Visuals: TerraFirmaCraft"
+            },
+            "id": {
+                "curseforge": "664832",
+                "modrinth": "TAEibNyf"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Vexxed_Visuals_TFC_v1.2.7.1.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5538/604/Vexxed_Visuals_TFC_v1.2.7.1.zip",
+                    "id": "5538604",
+                    "parent_id": "664832",
+                    "hashes": {
+                        "sha1": "d0ff9540d2980b59664feacfa451b3f928416fcf",
+                        "md5": "d05b7f0c083e73019634a6e914666db9"
+                    },
+                    "required_dependencies": [],
+                    "size": 29693735,
+                    "date_published": "2024-07-16T20:02:30.937Z"
                 }
             ]
         },
