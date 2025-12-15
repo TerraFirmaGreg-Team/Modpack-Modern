@@ -676,7 +676,7 @@ function registerGreateRecipes(event) {
 	event.remove({ id: 'gtceu:shaped/stone_belt_connector' })
 
 	TFGHelpers.registerMaterialInfo('greate:stone_belt_connector', { 'air': 1 });
-
+	
 	// Rubber
 	event.shaped('greate:rubber_belt_connector', [
 		'AAA',
@@ -748,7 +748,6 @@ function registerGreateRecipes(event) {
 	event.remove({ id: 'gtceu:extractor/extract_styrene_butadiene_rubber_belt_connector' })
 
 	TFGHelpers.registerMaterialInfo('greate:styrene_butadiene_rubber_belt_connector', { 'styrene_butadiene_rubber': 3 });
-
 	// #endregion
 
 	// #region Mixer

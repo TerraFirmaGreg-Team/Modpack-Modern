@@ -70,6 +70,7 @@ function registerTFCItemTags(event) {
         "framedblocks:framed_hammer",
         "framedblocks:framed_key",
         "mcw_tfc_aio:roofing_hammer",
+        "mcw_tfc_aio:pliers",
         "tfclunchbox:lunchbox",
         "tfclunchbox:cooling_lunchbox",
         "tfclunchbox:electric_lunchbox",

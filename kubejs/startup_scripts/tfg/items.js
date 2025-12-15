@@ -11,7 +11,6 @@ const registerTFGItems = (event) => {
 	registerTFGPrimitiveItems(event);
 	registerTFGNuclearItems(event);
 	registerTFGWoodItems(event);
-	registerTFGMedicineItems(event);
 	registerTFGAircraftItems(event);
 	registerTFGSpaceItems(event);
 	registerTFGMarsItems(event);
@@ -49,4 +48,24 @@ const registerTFGItems = (event) => {
     event.create('tfg:zpm_universal_circuit')
     event.create('tfg:uv_universal_circuit')
     event.create('tfg:uhv_universal_circuit')
+
+
+	// Temporary
+	event.create('gtceu:rose_quartz_dust').texture('tfg:item/deprecated')
+	event.create('gtceu:tiny_rose_quartz_dust').texture('tfg:item/deprecated')
+	event.create('gtceu:small_rose_quartz_dust').texture('tfg:item/deprecated')
+	event.create('gtceu:poor_raw_rose_quartz').texture('tfg:item/deprecated')
+	event.create('gtceu:raw_rose_quartz').texture('tfg:item/deprecated')
+	event.create('gtceu:rich_raw_rose_quartz').texture('tfg:item/deprecated')
+	event.create('gtceu:chipped_rose_quartz_gem').texture('tfg:item/deprecated')
+	event.create('gtceu:flawed_rose_quartz_gem').texture('tfg:item/deprecated')
+	event.create('gtceu:flawless_rose_quartz_gem').texture('tfg:item/deprecated')
+	event.create('gtceu:exquisite_rose_quartz_gem').texture('tfg:item/deprecated')
+	event.create('gtceu:pure_rose_quartz_dust').texture('tfg:item/deprecated')
+	event.create('gtceu:impure_rose_quartz_dust').texture('tfg:item/deprecated')
+	event.create('gtceu:purified_rose_quartz_ore').texture('tfg:item/deprecated')
+	event.create('gtceu:crushed_rose_quartz_ore').texture('tfg:item/deprecated')
+	event.create('gtceu:refined_rose_quartz_ore').texture('tfg:item/deprecated')
+	event.create('gtceu:rose_quartz_lens').texture('tfg:item/deprecated')
+	event.create('gtceu:rose_quartz_plate').texture('tfg:item/deprecated')
 }

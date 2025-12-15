@@ -70,14 +70,14 @@ function registerTFGBiomassRecipes(event) {
 	event.recipes.gtceu.brewery('biomass_from_minecraft_plants')
 		.itemInputs('#createaddition:plants')
 		.inputFluids("#tfc:any_water 20")
-		.outputFluids(Fluid.of('gtceu:biomass', 100))
+		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(100)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_wart_blocks')
 		.itemInputs('#minecraft:wart_blocks')
 		.inputFluids("#tfc:any_water 20")
-		.outputFluids(Fluid.of('gtceu:biomass', 50))
+		.outputFluids(Fluid.of('gtceu:biomass', 100))
 		.duration(100)
 		.EUt(3)
 
@@ -131,7 +131,7 @@ function registerTFGBiomassRecipes(event) {
 		.EUt(2)
 
 	event.recipes.gtceu.compressor('plant_ball_from_misc_plants')
-		.itemInputs('4x #createaddition:plants')
+		.itemInputs('10x #createaddition:plants')
 		.itemOutputs('gtceu:plant_ball')
 		.duration(300)
 		.EUt(2)
@@ -152,7 +152,7 @@ function registerTFGBiomassRecipes(event) {
 		.duration(800)
 		.EUt(6)
 
-	event.recipes.gtceu.centrifuge('sugar_from_honey')
+	event.recipes.gtceu.extractor('sugar_from_honey')
 		.itemInputs('firmalife:raw_honey')
 		.itemOutputs('minecraft:sugar')
 		.duration(400)

@@ -9,6 +9,7 @@ function registerTFGZirconiumRecipes(event) {
 		.inputFluids('gtceu:chlorine 4000')
 		.outputFluids('tfg:silicon_tetrachloride 1000')
 		.duration(20 * 20)
+		.circuit(1)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:silicon_tetrachloride_decomp')
