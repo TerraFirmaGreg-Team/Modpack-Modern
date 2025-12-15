@@ -281,7 +281,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.itemInputs(Item.of('#forge:dusts/platinum'), Item.of('10x #forge:dusts/rhenium'))
 		.inputFluids(Fluid.of('gtceu:hydrogen', 1000))
 		.inputFluids(Fluid.of('tfg:zsm5_gel', 1000))
-		.itemOutputs(Item.of('tfg:catalyser_tt_re_zsm', 1))
+		.itemOutputs(Item.of('tfg:catalyser_pt_re_zsm', 1))
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -294,7 +294,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.cracker('tfg:crude_mixed_gas')
-		.itemInputs(Item.of('tfg:catalyser_tt_re_zsm'))
+		.itemInputs(Item.of('tfg:catalyser_pt_re_zsm'))
 		.inputFluids(Fluid.of('tfg:reformate_gas', 8000))
 		.inputFluids(Fluid.of('tfg:propylene', 2000))
 		.outputFluids(Fluid.of('tfg:crude_mixed_gas', 10000))
