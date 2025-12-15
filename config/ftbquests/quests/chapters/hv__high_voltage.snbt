@@ -484,7 +484,7 @@
 			size: 2.0d
 			subtitle: "{quests.high_voltage.cleanroom.subtitle}"
 			tasks: [
-				{
+		{
 					id: "563BFE52E8A51D9F"
 					item: "gtceu:cleanroom"
 					type: "item"
@@ -496,13 +496,11 @@
 					type: "item"
 				}
 				{
-					count: 75L
 					id: "18AECBFB42064D4E"
 					item: "gtceu:plascrete"
 					type: "item"
 				}
 				{
-					count: 6L
 					id: "4DA87A845076183A"
 					item: "gtceu:cleanroom_glass"
 					optional_task: true
