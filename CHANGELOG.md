@@ -29,6 +29,7 @@
 - Nerfed how much biomass and plant balls are produced from certain vanilla plants (#2361) @Pyritie
 - Added some more ruined structures with a small bit of loot.
 - Added some resource packs for TFC, disabled by default
+- Lenses are now allowed on tool racks (#2434) @thederpysockdude123
 ### Bug fixes
 - Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie
 - Fixed fries and cheese curds not being able to be put on burgers. @Redeix
@@ -41,6 +42,7 @@
 - Fixed a recipe conflict blocking the crafting of silicone rubber (#2387) @Mqrius
 - Fixed the backpack and QuarkTech helmet auto-feeding from feeding you while you're downed @Mqrius
 - Fixed Ostrum Casing not having a recipe (#2363) @FlightingFalcon
+- Fixed warped trees not growing on normal mars dirt @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra
