@@ -432,7 +432,7 @@ function registerTFGNuclearRecipes(event) {
 	//#endregion
 	
 	//#region Cooling Tower
-	/*
+	
 	event.recipes.gtceu.assembler('tfg:ostrum_carbon_casing')
 		.itemInputs('2x #forge:plates/ostrum', '2x #forge:plates/titanium_carbide', '#forge:dense_plates/hsla_steel', '#forge:frames/black_steel')
 		.itemOutputs('2x tfg:casings/machine_casing_ostrum_carbon')
@@ -440,6 +440,7 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20 * (2.5))
 		.EUt(GTValues.VH[GTValues.LV])
 		.addMaterialInfo(true)
+	/*
 	
 	event.recipes.gtceu.mixer('tfg:thermally_conductive_fluid')
 		.itemInputs('7x #forge:dusts/gallium', '2x #forge:dusts/tin', '#forge:dusts/zinc')
