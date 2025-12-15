@@ -8,7 +8,6 @@
 const registerMinecraftRecipes = (event) => {
 
 	removeMinecraftRecipes(event)
-	registerMinecraftDyeRecipes(event)
 
 	//#region Добавление, copper
 

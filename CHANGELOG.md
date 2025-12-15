@@ -33,6 +33,8 @@
 - Added some resource packs for TFC, disabled by default
 - Lenses are now allowed on tool racks (#2434) @thederpysockdude123
 - The Active Transformer multiblock is now craftable at EV, with a new texture and casings. (#2424) @BlueBoat29
+- Renamed AE2 Sky Stone to Suevite @Pyritie
+- Removed the shapeless crafting recipe for colored concrete powder, added an instant barrel recipe to turn it into solid concrete @Pyritie
 ### Bug fixes
 - Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie
 - Fixed fries and cheese curds not being able to be put on burgers. @Redeix
