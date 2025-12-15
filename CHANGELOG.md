@@ -19,7 +19,7 @@
 - The medicines have also been rebalanced, so some of the stronger ones come with a downside, while the weaker ones have a stronger cure effect.
 - The medical condition effect that previously instantly killed you (which did not spawn a corpse) now gives you Wither III instead. @Pyritie
 #### Other
-- Added two more early game mechanical belts, and rubber+ belts are also now more expensive. @Pyritie
+- Added two more early game mechanical belts, and rubber+ belts are also now more expensive. @Pyritie @Epicificator
 - Primitive illagers will no longer endlessly respawn. Instead, now they only spawn as "structures", so once you kill them they will never return. @Pyritie
 - Doubled the durability of all space suits @Pyritie
 - Added a way to convert between vinegar and acetic acid (#2386) @Epicificator
@@ -28,6 +28,7 @@
 - More animals now drop animal fat (#2367) @Pyritie
 - Nerfed how much biomass and plant balls are produced from certain vanilla plants (#2361) @Pyritie
 - Added some more ruined structures with a small bit of loot.
+- Added some resource packs for TFC, disabled by default
 ### Bug fixes
 - Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie
 - Fixed fries and cheese curds not being able to be put on burgers. @Redeix
