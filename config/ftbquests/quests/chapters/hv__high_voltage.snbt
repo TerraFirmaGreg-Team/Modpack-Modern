@@ -515,7 +515,7 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:auto_maintenance_hatch)item(gtceu:maintenance_hatch))"
 						}
 					}
-					title: "{quests.high_voltage.cleanroom.task}Maintenance Hatch or Auto Maintenance Hatch"
+					title: "{quests.high_voltage.cleanroom.task}"
 					type: "item"
 				}
 			]
