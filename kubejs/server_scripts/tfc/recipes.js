@@ -241,4 +241,52 @@ const registerTFCRecipes = (event) => {
 		.itemOutputs('tfc:wrought_iron_grill')
 		.duration(60)
 		.EUt(8)
+
+	//Jigabit's stupid acetic acid to vinegar conversion
+
+		event.recipes.gtceu.mixer('vinegar_from_acetic_acid')
+        		.inputFluids(
+                            Fluid.of('minecraft:water', 950),
+                            Fluid.of('gtceu:acetic_acid', 50)
+                )
+        		.outputFluids(
+                			Fluid.of('tfc:vinegar', 1000)
+                )
+			    .circuit(1)
+        		.duration(30)
+        		.EUt(GTValues.VA[GTValues.MV])
+
+       event.recipes.gtceu.distillery('acetic_acid_from_vinegar')
+               		.inputFluids(
+                                   Fluid.of('tfc:vinegar', 1000)
+                       )
+               		.outputFluids(
+                       			Fluid.of('gtceu:acetic_acid', 50)
+                       )
+                    .circuit(1)
+               		.duration(50)
+               		.EUt(GTValues.VA[GTValues.MV])
+
+       event.recipes.gtceu.distillery('water_from_vinegar')
+               		.inputFluids(
+                                   Fluid.of('tfc:vinegar', 1000)
+                       )
+               		.outputFluids(
+                       			Fluid.of('minecraft:water', 950)
+                       )
+                    .circuit(2)
+               		.duration(50)
+               		.EUt(GTValues.VA[GTValues.MV])
+        	
+       event.recipes.gtceu.distillation_tower('vinegar_distillation')
+               		.inputFluids(
+                                   Fluid.of('tfc:vinegar', 1000)
+                       )
+               		.outputFluids(
+                       			Fluid.of('gtceu:acetic_acid', 50),
+                       			Fluid.of('minecraft:water', 950)
+                       )
+               		.duration(80)
+               		.EUt(GTValues.VA[GTValues.MV])
+	
 }

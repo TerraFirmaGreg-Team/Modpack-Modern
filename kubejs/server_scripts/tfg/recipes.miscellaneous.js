@@ -99,7 +99,7 @@ function registerTFGMiscellaneousRecipes(event) {
 	// Replace bronze drums & crates with a tag containing the 3 different bronzes
 	// NOTE: A better way to do this would be to overwrite GTCraftingComponents.CRATE and GTCraftingComponents.DRUM in crafting_components.js, but tags seem to get populated after the recipes get registed, so...
 	event.replaceInput({ input: 'gtceu:bronze_crate' }, 'gtceu:bronze_crate', '#tfg:any_bronze_crate')
-	event.replaceInput({ input: 'gtceu:bronze_drum' }, 'gtceu:bronze_drum', '#tfg:any_bronze_drum')
+	event.replaceInput({ input: 'gtceu:bronze_drum' , not: { id: 'gtceu:shapeless/drum_nbt_bronze' }}, 'gtceu:bronze_drum', '#tfg:any_bronze_drum')
 
 	//#region RNR Paving Cart
 	const rubber_types = [

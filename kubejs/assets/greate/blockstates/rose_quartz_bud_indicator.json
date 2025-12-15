@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"": [
+			{ "model": "greate:block/rose_quartz_bud_indicator" },
+			{ "model": "greate:block/rose_quartz_bud_indicator", "y": 90 },
+			{ "model": "greate:block/rose_quartz_bud_indicator", "y": 180 },
+			{ "model": "greate:block/rose_quartz_bud_indicator", "y": 270 }
+		]
+	}
+}

@@ -123,6 +123,7 @@ const registerTFGBlockTags = (event) => {
 	event.add('forge:mineable/wrench', 'tfg:electromagnetic_accelerator')
 	event.add('forge:mineable/wrench', 'tfg:reflector')
 	event.add('forge:mineable/wrench', 'tfg:machine_casing_aluminium_plated_steel')
+	event.add('forge:mineable/wrench', 'tfg:machine_casing_power_casing')
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
 	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')

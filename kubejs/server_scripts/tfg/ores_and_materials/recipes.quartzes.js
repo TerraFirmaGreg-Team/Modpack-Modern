@@ -6,8 +6,8 @@ function registerTFGQuartzRecipes(event) {
 	event.remove({ id: 'gtceu:autoclave/autoclave_dust_rose_quartz_water' })
 	event.remove({ id: 'gtceu:autoclave/autoclave_dust_rose_quartz_distilled' })
 
-	generateMixerRecipe(event, ['gtceu:nether_quartz_dust', '8x minecraft:redstone'], [], '9x gtceu:rose_quartz_dust', 2, [], 180, 60, 64, 'rose_quartz_dust_mixing')
-	generateMixerRecipe(event, ['gtceu:tiny_nether_quartz_dust', '8x gtceu:tiny_redstone_dust'], [], 'gtceu:rose_quartz_dust', 2, [], 20, 60, 64, 'tiny_rose_quartz_dust_mixing')
+	generateMixerRecipe(event, ['gtceu:nether_quartz_dust', '8x minecraft:redstone'], [], '9x #forge:dusts/rose_quartz', 2, [], 180, 60, 64, 'rose_quartz_dust_mixing')
+	generateMixerRecipe(event, ['gtceu:tiny_nether_quartz_dust', '8x gtceu:tiny_redstone_dust'], [], '#forge:dusts/rose_quartz', 2, [], 20, 60, 64, 'tiny_rose_quartz_dust_mixing')
 
 	event.recipes.gtceu.autoclave("autoclave_dust_rose_quartz_ice")
 		.itemInputs('#forge:dusts/rose_quartz')
@@ -17,8 +17,8 @@ function registerTFGQuartzRecipes(event) {
 		.EUt(120)
 
 	event.recipes.gtceu.electrolyzer('electrolyze_rose_quartz_dust')
-		.itemInputs('9x gtceu:rose_quartz_dust')
-		.itemOutputs('1x gtceu:nether_quartz_dust', '8x minecraft:redstone')
+		.itemInputs('9x #forge:dusts/rose_quartz')
+		.itemOutputs('1x #forge:dusts/nether_quartz', '8x minecraft:redstone')
 		.duration(7 * 20)
 		.EUt(60)
 	//#endregion
