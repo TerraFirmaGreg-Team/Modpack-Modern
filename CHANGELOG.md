@@ -27,6 +27,7 @@
 - Added some distant horizons config options, for those who want to use it (#2406) @Mqrius
 - More animals now drop animal fat (#2367) @Pyritie
 - Nerfed how much biomass and plant balls are produced from certain vanilla plants (#2361) @Pyritie
+- Added some more ruined structures with a small bit of loot.
 ### Bug fixes
 - Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie
 - Fixed fries and cheese curds not being able to be put on burgers. @Redeix
