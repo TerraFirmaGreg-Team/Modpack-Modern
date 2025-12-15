@@ -116,14 +116,14 @@ function registerTFGClothRecipes(event) {
 	event.recipes.gtceu.packer('tfg:packer/flax_bundle')
 		.itemInputs('9x tfg:flax_product')
 		.itemOutputs('tfg:flax_bundle')
-		.duration('100')
+		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.shapeless('1x tfg:bundled_scraped_flax', ['9x tfg:flax_waste'])
 	event.recipes.gtceu.packer('tfg:packer/bundled_scraped_flax')
 		.itemInputs('9x tfg:flax_waste')
 		.itemOutputs('tfg:bundled_scraped_flax')
-		.duration('100')
+		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.tfc.scraping(
