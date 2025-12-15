@@ -1,7 +1,9 @@
 {
 	"type": "lithostitched:set_structure_spawn_condition",
 	"structures": [
-		"tfg:temperate/plains_temperate_house_0"
+		"tfg:temperate/plains_temperate_house_0",
+		"tfg:illagers/camps",
+		"tfg:illagers/forest_roaming"
 	],
 	"spawn_condition": {
 		"type": "lithostitched:grid",

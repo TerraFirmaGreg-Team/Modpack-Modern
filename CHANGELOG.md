@@ -20,6 +20,7 @@
 - The medical condition effect that previously instantly killed you (which did not spawn a corpse) now gives you Wither III instead. @Pyritie
 #### Other
 - Added two more early game mechanical belts, and rubber+ belts are also now more expensive. @Pyritie
+- Primitive illagers will no longer endlessly respawn. Instead, now they only spawn as "structures", so once you kill them they will never return. @Pyritie
 - Doubled the durability of all space suits @Pyritie
 - Added a way to convert between vinegar and acetic acid (#2386) @Epicificator
 - Added a renderer to the electric greenhouse, so now you can visually see your crops grow! @RubenVerg
