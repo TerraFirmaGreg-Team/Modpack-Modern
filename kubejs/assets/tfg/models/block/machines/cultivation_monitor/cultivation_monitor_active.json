@@ -41,6 +41,7 @@
 			"name": "screen",
 			"from": [-8, -9, 12.00896],
 			"to": [24, 23, 12.00896],
+            "forge_data": { "block_light": 13, "sky_light": 13 },
 			"shade": false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [14.5, 11.06147, 15.10896]},
 			"faces": {
@@ -79,16 +80,16 @@
 			"scale": [0.2, 0.2, 0.2]
 		},
 		"gui": {
-			"rotation": [27, 136, 0],
-			"translation": [-1.25, 0, 0],
-			"scale": [0.35, 0.35, 0.35]
+			"rotation": [27, 141, 0],
+			"translation": [0.5, 1, 0],
+			"scale": [0.3, 0.3, 0.3]
 		},
 		"head": {
-			"translation": [0, 0, -9.75],
+			"translation": [0, 0, -2.5],
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"fixed": {
-			"translation": [0, 0, -2],
+			"translation": [0, 0, 2.5],
 			"scale": [0.4, 0.4, 0.4]
 		}
 	}

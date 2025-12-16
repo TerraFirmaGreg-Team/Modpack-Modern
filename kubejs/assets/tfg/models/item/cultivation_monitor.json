@@ -62,16 +62,16 @@
 			"scale": [0.2, 0.2, 0.2]
 		},
 		"gui": {
-			"rotation": [27, 136, 0],
-			"translation": [-1.25, 0, 0],
-			"scale": [0.35, 0.35, 0.35]
+			"rotation": [27, 141, 0],
+			"translation": [0.5, 1, 0],
+			"scale": [0.3, 0.3, 0.3]
 		},
 		"head": {
-			"translation": [0, 0, -9.75],
+			"translation": [0, 0, -2.5],
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"fixed": {
-			"translation": [0, 0, -2],
+			"translation": [0, 0, 2.5],
 			"scale": [0.4, 0.4, 0.4]
 		}
 	}
