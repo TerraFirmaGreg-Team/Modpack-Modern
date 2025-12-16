@@ -7,8 +7,31 @@
 		ftbchunks.max_claimed: 50
 		ftbchunks.max_force_loaded: 6
 		ftbchunks.chunk_load_offline: false
+        
+       	command.enderchest: false
+        command.ldlib: false
+        command.compass_server: false
+        command.chunky: false
+        command.catnip: false
+        command.bookshelf: false
+        command.aptweaks: false
+        command.afc: false
+        command.advancement: false
+        command.bossbar: false
+        command.clone: false
+        command.cucumber: false
+        command.gamemode: false
+        command.give: false
+        command.guideme: false 
+        command.kubejs: false
+        command.kubejs_tfc: false
+        command.letmedespawn: false
+        command.locate: false
+        command.lode: false
+		command.octolib: false
+        
 		command.trashcan: true
-		command.enderchest: false
+
 	}
 	vip: {
 		name: "VIP"
