@@ -29,6 +29,16 @@
         command.locate: false
         command.lode: false
 		command.octolib: false
+		command.worldborder: false
+		command.whitelist: false
+		command.uteamcore: false
+		command.tpx: false
+		command.tp_offline: false
+		command.tpa: false
+		command.tpaccept: false
+		command.tpahere: false
+		command.tpdeny: false
+		command.tpx: false
         
 		command.trashcan: true
 
@@ -40,13 +50,6 @@
 		ftbchunks.max_claimed: 200
 		ftbchunks.max_force_loaded: 8
 		ftbchunks.chunk_load_offline: true
-	}
-	moderator_girl: {
-		name: "Moderator"
-		power: 51
-		ftbranks.name_format: "&d{name}"
-		ftbchunks.max_claimed: 200
-		ftbchunks.max_force_loaded: 8
 	}
 	moderator: {
 		name: "Moderator"
