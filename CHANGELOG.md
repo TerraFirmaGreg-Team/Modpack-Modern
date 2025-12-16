@@ -54,9 +54,12 @@
 - Fixed missing block names for some of the variations of non-earth stones @Pyritie
 - Fixed being able to turn bismuth and black bronze drums into regular bronze drums (#2436) @Jeuvke
 - Fixed a recipe conflict with stone plates (#2433) @Pyritie
+- Fixed concrete pouring consuming your fluid container if you use anything other than a bucket to pour @Mqrius
+- Fixed large amounts of TPS lag when pouring huge areas of concrete at once @Therighthon
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra
+- Russian @Petr211071
 
 ## [0.11.10] - 9-12-2025
 ### Breaking Changes

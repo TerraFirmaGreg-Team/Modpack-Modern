@@ -6653,32 +6653,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "fzzy_config-0.7.3+1.20.1+forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7085/17/fzzy_config-0.7.3+1.20.1+forge.jar",
-                    "id": "7085017",
-                    "parent_id": "1005914",
-                    "hashes": {
-                        "sha1": "e771e543e930bd7c733f803bdbc0d3f2ecfb46c4",
-                        "md5": "bcbfb7e94f16a15ad5d13fb4999a5b78"
-                    },
-                    "required_dependencies": [
-                        "351264"
-                    ],
-                    "size": 2312969,
-                    "date_published": "2025-10-09T02:39:14.310Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "fzzy_config-0.7.3+1.20.1+forge.jar",
+                    "file_name": "fzzy_config-0.7.4+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6687,18 +6663,42 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/17Wzgyxp/fzzy_config-0.7.3+1.20.1+forge.jar",
-                    "id": "17Wzgyxp",
+                    "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/wnhd0CI1/fzzy_config-0.7.4+1.20.1+forge.jar",
+                    "id": "wnhd0CI1",
                     "parent_id": "hYykXjDp",
                     "hashes": {
-                        "sha512": "32d44d05790f9ac9fb4d04385beefbd2d59822d48288239068ae1cc0c10d3b60567b388a0bcd4b98b4bf8716bd94b6a934596c1766f31e8788aa069e76bb178c",
-                        "sha1": "e771e543e930bd7c733f803bdbc0d3f2ecfb46c4"
+                        "sha512": "108f00ce546fd87ae2be853233bfe8f4deeb6abad6a61769a4ddf2735db098fd42d9b0a6ab1f98974717235e9fdf122767bdff82c042cd972cdbc14add039ebf",
+                        "sha1": "b0213984f7591c3d1ec4ab5eebd87c605728d451"
                     },
                     "required_dependencies": [
                         "ordsPcFz"
                     ],
-                    "size": 2312969,
-                    "date_published": "2025-10-09T02:39:22.899396Z"
+                    "size": 2353402,
+                    "date_published": "2025-12-14T05:56:34.040088Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "fzzy_config-0.7.4+1.20.1+forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7331/237/fzzy_config-0.7.4+1.20.1+forge.jar",
+                    "id": "7331237",
+                    "parent_id": "1005914",
+                    "hashes": {
+                        "sha1": "b0213984f7591c3d1ec4ab5eebd87c605728d451",
+                        "md5": "b6bcf0a1abc530257fcaa054157a8a16"
+                    },
+                    "required_dependencies": [
+                        "351264"
+                    ],
+                    "size": 2353402,
+                    "date_published": "2025-12-14T05:56:25.963Z"
                 }
             ]
         },
@@ -9246,27 +9246,6 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "ags_modernmarkings-0.4.3-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6768/454/ags_modernmarkings-0.4.3-1.20.1.jar",
-                    "id": "6768454",
-                    "parent_id": "1267477",
-                    "hashes": {
-                        "sha1": "45d788e6a37c3bdcf5a235caa6a43694cb09e8b4",
-                        "md5": "04d0df2ac6d6ccda0683771c8112256f"
-                    },
-                    "required_dependencies": [],
-                    "size": 305660,
-                    "date_published": "2025-07-14T16:27:45.340Z"
-                },
-                {
                     "type": "modrinth",
                     "file_name": "ags_modernmarkings-0.4.3-1.20.1.jar",
                     "mc_versions": [
@@ -9286,6 +9265,27 @@
                     "required_dependencies": [],
                     "size": 305660,
                     "date_published": "2025-07-14T16:28:57.389265Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "ags_modernmarkings-0.4.4-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7339/889/ags_modernmarkings-0.4.4-1.20.1.jar",
+                    "id": "7339889",
+                    "parent_id": "1267477",
+                    "hashes": {
+                        "sha1": "8102920535de97d06c4c7b05a39f44dd237a13f3",
+                        "md5": "0f577579897a88bb2244634dc64a8e7d"
+                    },
+                    "required_dependencies": [],
+                    "size": 307489,
+                    "date_published": "2025-12-16T10:02:13.160Z"
                 }
             ]
         },
@@ -11123,33 +11123,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "rnr-0.2.1-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5852/507/rnr-0.2.1-1.20.1.jar",
-                    "id": "5852507",
-                    "parent_id": "1048212",
-                    "hashes": {
-                        "sha1": "046e086b2d4861fbc74bbeb18031102d09622197",
-                        "md5": "451fe8a1c496f44d20d73bfb4cb51a57"
-                    },
-                    "required_dependencies": [
-                        "306770",
-                        "302973"
-                    ],
-                    "size": 3557362,
-                    "date_published": "2024-10-27T23:10:58.567Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "rnr-0.2.1-1.20.1.jar",
+                    "file_name": "rnr-0.2.2-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11158,19 +11133,45 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ca9X1Phr/versions/msv0XMkD/rnr-0.2.1-1.20.1.jar",
-                    "id": "msv0XMkD",
+                    "url": "https://cdn.modrinth.com/data/ca9X1Phr/versions/quVtWEPo/rnr-0.2.2-1.20.1.jar",
+                    "id": "quVtWEPo",
                     "parent_id": "ca9X1Phr",
                     "hashes": {
-                        "sha512": "e0f7b50c0da47f449fe03427859a1a33d0b8bef59a676b7ac88f518c99a0a6f02b255b576716c0d5d3a7810bd48e8cc9d74d4f9ed8e519485949c6e2ff8e469a",
-                        "sha1": "046e086b2d4861fbc74bbeb18031102d09622197"
+                        "sha512": "abf0dfbf5bc201c75a688bdcd6232e038fc5d5c9f540ec7057b0ea42455655233059c91ce5e63fc17a7a0422960740abcc02079f181e27e39a5b4dee16e72c91",
+                        "sha1": "ab28d720eb0094bd40c37726199831f4f60b4299"
                     },
                     "required_dependencies": [
-                        "nU0bVIaL",
-                        "JaCEZUhg"
+                        "JaCEZUhg",
+                        "1VSGxqkt",
+                        "nU0bVIaL"
                     ],
-                    "size": 3557362,
-                    "date_published": "2024-10-27T23:13:57.176874Z"
+                    "size": 3568839,
+                    "date_published": "2025-12-16T05:13:25.666668Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "rnr-0.2.2-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7339/318/rnr-0.2.2-1.20.1.jar",
+                    "id": "7339318",
+                    "parent_id": "1048212",
+                    "hashes": {
+                        "sha1": "ab28d720eb0094bd40c37726199831f4f60b4299",
+                        "md5": "82c946ea6261a82d60290f93d91a12cd"
+                    },
+                    "required_dependencies": [
+                        "302973",
+                        "306770"
+                    ],
+                    "size": 3568839,
+                    "date_published": "2025-12-16T05:14:29.893Z"
                 }
             ]
         },
