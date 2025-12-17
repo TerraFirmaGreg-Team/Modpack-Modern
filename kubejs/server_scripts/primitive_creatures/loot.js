@@ -241,11 +241,10 @@ function registerPrimitiveCreaturesLoots(event) {
 	// mistah beeeaaaasssstt
 	event.addEntityLootModifier('primitive_creatures:beast')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addWeightedLoot([5, 8], ['tfg:food/raw_long_pig_filet'])
-		.addWeightedLoot([12, 16], ['minecraft:bone'])
-		.addWeightedLoot([2, 3], ['tfc:large_raw_hide'])
-		.addWeightedLoot([4, 6], ['tfc:blubber'])
+		.addWeightedLoot([4, 6], ['tfg:food/raw_long_pig_filet'])
+		.addWeightedLoot([6, 9], ['minecraft:bone'])
+		.addWeightedLoot([1, 2], ['tfc:large_raw_hide'])
 	event.addEntityLootModifier('primitive_creatures:beast')
 		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([4, 8], ['tfg:food/raw_long_pig_filet'])
+		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 }
