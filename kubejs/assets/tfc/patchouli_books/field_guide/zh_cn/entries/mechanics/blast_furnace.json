@@ -15,7 +15,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "接下来就可以开始搭建高炉的$(thing)烟囱$()了。烟囱必须用足以承受炼钢高温的$(l:mechanics/fire_clay#fire_bricks)强化耐火砖$()搭建。强化砖可通过手持铸铁板或锻铁板，对耐火砖块用$(item)$(k:key.sneak)$()+$(item)$(k:key.use)$()点击各个外露面进行包覆，或直接合成$(l:mechanics/blast_furnace_insulation)高炉保温板$()。"
+            "text": "接下来就可以开始搭建高炉的$(thing)烟囱$()了。烟囱必须用足以承受炼钢高温的$(l:mechanics/fire_clay#fire_bricks)强化耐火砖$()搭建。强化砖可通过手持铸铁板或锻铁板，对耐火砖块用$(item)$(k:key.sneak)$()+$(item)$(k:key.use)$()点击各个外露面进行包覆，或直接合成$(l:mechanics/blast_furnace_insulation)高炉隔热板$()。"
         },
         {
             "type": "patchouli:multiblock",
