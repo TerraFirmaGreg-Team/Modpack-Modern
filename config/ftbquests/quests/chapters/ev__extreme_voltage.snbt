@@ -288,7 +288,7 @@
 				type: "item"
 			}]
 			title: "{quests.extreme_voltage.wood_distillation.title}"
-			x: -6.0d
+			x: -5.5d
 			y: -2.5d
 		}
 		{
@@ -495,7 +495,7 @@
 				}
 			]
 			title: "{quests.extreme_voltage.tungsten_steel.title}"
-			x: 0.5d
+			x: 1.5d
 			y: -2.0d
 		}
 		{
@@ -1272,14 +1272,24 @@
 		{
 			dependencies: ["2DEC7AF917AAE4EC"]
 			description: ["{quests.extreme_voltage.gasoline.desc}"]
+			icon: "gtceu:gasoline_bucket"
 			id: "397546E863E9835E"
+			optional: true
 			shape: "octagon"
 			size: 1.5d
-			tasks: [{
-				id: "3F040C1D8A8D6676"
-				item: "gtceu:gasoline_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3F040C1D8A8D6676"
+					item: "gtceu:gasoline_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4BE81C925AD3FB91"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.extreme_voltage.gasoline.title}"
 			x: -7.0d
 			y: -4.5d
@@ -2170,6 +2180,68 @@
 			title: "{quests.extreme_voltage.large_generators.title}"
 			x: 2.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["43BBB9074608F9B1"]
+			description: [
+				"{quests.extreme_voltage.btx.desc.1}"
+				"{@pagebreak}"
+				"{quests.extreme_voltage.btx.desc.2}"
+			]
+			icon: "tfg:btx_fuel_bucket"
+			id: "601B05D5F3888C74"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "{quests.extreme_voltage.btx.subtitle}"
+			tasks: [
+				{
+					id: "1EC8E5CE7DD21191"
+					item: "tfg:btx_fuel_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2A71DF31AAA0CD3D"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
+			title: "{quests.extreme_voltage.btx.title}"
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["601B05D5F3888C74"]
+			description: ["{quests.extreme_voltage.btx_catalyser.desc}"]
+			id: "3EC1D337D9FC3F1B"
+			optional: true
+			subtitle: "{quests.extreme_voltage.btx_catalyser.subtitle}"
+			tasks: [{
+				id: "55930B83D1BA6672"
+				item: "tfg:catalyser_tt_re_zsm"
+				type: "item"
+			}]
+			title: "{quests.extreme_voltage.btx_catalyser.title}"
+			x: -3.75d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3EC1D337D9FC3F1B"]
+			description: [
+				"{quests.extreme_voltage.btx_loop.desc.1}"
+				"{@pagebreak}"
+				"{quests.extreme_voltage.btx_loop.desc.2}"
+			]
+			id: "38184C7BA01A9B5B"
+			optional: true
+			tasks: [{
+				id: "39568ED5E30CDC88"
+				item: "gtceu:rhenium_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -6.25d
 		}
 	]
 	subtitle: ["{quests.extreme_voltage.subtitle}"]
