@@ -151,5 +151,5 @@ function registerTFGClayRecipes(event) {
 		.itemOutputs('minecraft:clay')
 		.adjacentFluids(["tfc:salt_water", "tfc:spring_water"])
 		.duration(50)
-		.EUt(GTValues.VHA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
 }
