@@ -235,15 +235,18 @@
 			dependencies: [
 				"60FF9249376DF9BD"
 				"05E2F203DA46A5E8"
+				"3EC8D58DB73CEFE5"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.gregtech_energy.transformer.desc}"]
-			icon: "gtceu:active_transformer"
+			icon: "tfg:active_power_transformer"
 			id: "6ECAD339C91EF194"
 			subtitle: "{quests.gregtech_energy.transformer.subtitle}"
 			tasks: [
 				{
 					id: "098424C2B55ABA69"
 					item: "gtceu:normal_laser_pipe"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -260,7 +263,7 @@
 				}
 				{
 					id: "3402A41D0F9CAD37"
-					item: "gtceu:active_transformer"
+					item: "tfg:active_power_transformer"
 					type: "item"
 				}
 			]

@@ -244,7 +244,7 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.ulv_circuits.title}"
-			x: -3.0d
+			x: -3.5d
 			y: 1.5d
 		}
 		{
@@ -564,7 +564,7 @@
 				}
 			]
 			title: "{quests.high_voltage.fluorine.title}"
-			x: 1.0d
+			x: 1.5d
 			y: 4.5d
 		}
 		{
@@ -623,8 +623,8 @@
 				}
 			]
 			title: "{quests.high_voltage.nitrobenzene.title}"
-			x: -1.0d
-			y: 9.5d
+			x: -3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["7CC79617A4965F25"]
@@ -638,7 +638,7 @@
 			icon: "gtceu:large_chemical_reactor"
 			id: "528CE69DA4358B2E"
 			shape: "octagon"
-			size: 3.0d
+			size: 2.0d
 			tasks: [
 				{
 					id: "4738F666E22B212B"
@@ -659,7 +659,7 @@
 			]
 			title: "{quests.high_voltage.lcr.title}"
 			x: 0.0d
-			y: 7.0d
+			y: 6.0d
 		}
 		{
 			description: [
@@ -686,7 +686,7 @@
 			}]
 			title: "{quests.high_voltage.tnt.title}"
 			x: 3.5d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -751,7 +751,7 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.implosion_compressor.title}"
-			x: 2.5d
+			x: 2.0d
 			y: 2.0d
 		}
 		{
@@ -783,8 +783,8 @@
 				}
 			]
 			title: "{quests.high_voltage.nitric_acid.title}"
-			x: 0.0d
-			y: 9.5d
+			x: -1.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5BACED5AE350EAB1"]
@@ -809,8 +809,8 @@
 				}
 			]
 			title: "{quests.high_voltage.cetane_diesel.title}"
-			x: 1.0d
-			y: 9.5d
+			x: -3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["16B735F9C391D260"]
@@ -908,8 +908,8 @@
 				}
 			]
 			title: "{quests.high_voltage.ammonia.title}"
-			x: -3.0d
-			y: 6.0d
+			x: -1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["52AD30F04DD5A812"]
@@ -939,7 +939,7 @@
 			description: ["{quests.high_voltage.blue_alloy.desc}"]
 			icon: "gtceu:blue_alloy_ingot"
 			id: "073F59194B479AA3"
-			shape: "square"
+			shape: "diamond"
 			size: 1.0d
 			subtitle: "{quests.high_voltage.blue_alloy.subtitle}"
 			tasks: [{
@@ -949,7 +949,7 @@
 			}]
 			title: "{quests.high_voltage.blue_alloy.title}"
 			x: 0.0d
-			y: -10.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -1264,6 +1264,7 @@
 				""
 				"{ \"text\": \"▶▶▶▶▶▶▶\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CDB9778C7A30044\" } }"
 			]
+			icon: "gtceu:ev_vanadium_battery"
 			id: "595C5A01358B9550"
 			subtitle: "{quests.high_voltage.linked_quest_energy.subtitle}"
 			tasks: [{
@@ -1272,8 +1273,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.high_voltage.linked_quest_energy.title}"
-			x: 0.0d
-			y: 11.0d
+			x: -4.5d
+			y: 6.0d
 		}
 		{
 			description: ["{quests.high_voltage.kaolinite_powder.desc}"]
