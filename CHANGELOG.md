@@ -1,6 +1,10 @@
 # Changelog
 
 ## Unreleased
+### Changes
+### Bug fixes
+
+## [0.11.11] - 18-12-2025
 ### Breaking Changes
 - Rose Quartz moved namespaces, so you'll have to convert all your old rose quartz items into the new ones. You'll need to explore new chunks to find new geodes with the correct ore blocks.
 - The previous silicone rubber styrene butadiene rubber belts have been changed to a different item, so please break and recycle them before updating if you're using any.

@@ -13922,7 +13922,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.8.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.10.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13931,23 +13931,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/6FdOjis1/TerraFirmaGreg-Core-Modern-0.8.8.jar",
-                    "id": "6FdOjis1",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/EY4KluIB/TerraFirmaGreg-Core-Modern-0.8.10.jar",
+                    "id": "EY4KluIB",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "ebc09725e0662ff8059a605397f12fb49c300807aacd27742c858ac436e8730350516ed7697925047686a838932371812f58bee49e11802a387cbe9d315121f0",
-                        "sha1": "75551167d5d6c8c61ae7ae713b3a767bf1bcb321"
+                        "sha512": "f9b39b905a066ef4d0a131080d076c007d348ad700cb56a8ee52e607046f1564d28993ebd3ae8f0d48ee874770b7ab1cab9fdfe4e36c918b05d6fc697bee402b",
+                        "sha1": "eb6603cfaa8d84cf6fe747732f97d7b3b10bb274"
                     },
                     "required_dependencies": [
-                        "JaCEZUhg",
-                        "7tG215v7"
+                        "7tG215v7",
+                        "JaCEZUhg"
                     ],
-                    "size": 9321318,
-                    "date_published": "2025-12-09T11:16:17.379839Z"
+                    "size": 9347264,
+                    "date_published": "2025-12-18T21:55:26.799768Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.8.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.9.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13956,19 +13956,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7311/305/TerraFirmaGreg-Core-Modern-0.8.8.jar",
-                    "id": "7311305",
+                    "url": "https://edge.forgecdn.net/files/7351/217/TerraFirmaGreg-Core-Modern-0.8.9.jar",
+                    "id": "7351217",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "75551167d5d6c8c61ae7ae713b3a767bf1bcb321",
-                        "md5": "5f9e1df5cbe3f1421d23e1c15b712aca"
+                        "sha1": "40b2d01116d9f879d8b49d78e09657c4277f02b7",
+                        "md5": "e032d7fb422eaf1e3793250f67ef5d62"
                     },
                     "required_dependencies": [
-                        "890405",
-                        "302973"
+                        "302973",
+                        "890405"
                     ],
-                    "size": 9321318,
-                    "date_published": "2025-12-09T11:16:13.343Z"
+                    "size": 9347264,
+                    "date_published": "2025-12-18T20:54:23.127Z"
                 }
             ]
         },
