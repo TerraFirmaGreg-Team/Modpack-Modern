@@ -97,7 +97,9 @@
             "onlyFallWithRequiredTool": false,
             "allowedToolFilter": {
                 "whitelistedTags": [],
-                "whitelist": [],
+                "whitelist": [
+                    "tfg:charred_log"
+                ],
                 "blacklist": []
             }
         },

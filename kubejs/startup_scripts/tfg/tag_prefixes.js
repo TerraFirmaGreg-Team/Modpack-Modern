@@ -7,6 +7,7 @@ function registerTFGTagPrefixes(event) {
 	excludeAllGemsButNormal(TFGHelpers.getMaterial('tfg:tetrafluoroethane'));
 	excludeAllGemsButNormal(TFGHelpers.getMaterial('tfg:crimsene'));
 	excludeAllGemsButNormal(TFGHelpers.getMaterial('tfg:warpane'));
+	excludeAllGemsButNormal(GTMaterials.Coke)
 	
 	TagPrefix.nugget.setIgnored(GTMaterials.RawRubber);
 	TagPrefix.ingot.setIgnored(GTMaterials.RawRubber);

@@ -306,7 +306,7 @@ global.TFC_DISABLED_ITEMS = /** @type {const} */ ([
     "tfc:ore/ruby",
     "tfc:ore/sapphire",
     "tfc:ore/topaz",
-
+    "tfc:ore/gypsum",
     "tfc:ore/graphite",
     "tfc:ore/sulfur",
     "tfc:ore/cinnabar",
@@ -315,7 +315,6 @@ global.TFC_DISABLED_ITEMS = /** @type {const} */ ([
     "tfc:ore/borax",
     "tfc:ore/bituminous_coal",
     "tfc:ore/lignite",
-    "tfc:ore/halite",
 
     // Axles
     "tfc:wood/axle/acacia",
@@ -836,7 +835,7 @@ global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "5x minecraft:clay_ball", output: "10x rnr:unfired_roof_tile", name: "roof_tile" },
     { input: "5x minecraft:clay_ball", output: "firmalife:oven_top", name: "oven_top" },
     { input: "5x minecraft:clay_ball", output: "firmalife:oven_chimney", name: "oven_chimney" },
-    { input: "5x minecraft:clay_ball", output: "firmalife:oven_bottom", name: "oven_bottom" },
+    { input: "5x minecraft:clay_ball", output: "firmalife:oven_bottom", name: "oven_bottom" }
 ]);
 
 global.TFC_FIRE_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([

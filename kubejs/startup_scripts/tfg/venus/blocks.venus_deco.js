@@ -56,15 +56,6 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.tagBlock('minecraft:mineable/pickaxe')
 		.fullBlock(true)
 		.opaque(true)
-	event.create('tfg:rock/halite2')
-		.mapColor('snow')
-		.soundType('deepslate')
-		.hardness(0.8)
-		.resistance(0.8)
-		.requiresTool(true)
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
 
 	//Stromatolite
 	event.create('tfg:rock/raw/stromatolite', 'tfc:raw_rock')

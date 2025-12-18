@@ -575,8 +575,6 @@ function registerTFGFoodRecipes(event) {
 
 	cookingRecipe("baked_potato", "tfc:food/potato", "tfc:food/baked_potato")
 
-	cookingRecipe("boiled_egg", "#firmalife:foods/raw_eggs", "tfc:food/boiled_egg", "#tfg:clean_water 200")
-
 	cookingRecipe("cooked_rice", "tfc:food/rice_grain", "tfc:food/cooked_rice", "#tfg:clean_water 200")
 
 	processorRecipe("pasta_tomato_sauce", 60, 8, {
@@ -667,6 +665,14 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('tfg:food/calorie_paste').copyOldestFood().addTrait('tfg:freeze_dried')
 	})
 
+	processorRecipe("boiled_egg", 200, 16, {
+		circuit: 1,
+		itemInputs: ["#firmalife:foods/raw_eggs"],
+		fluidInputs: ["#tfg:clean_water 200"],
+		itemOutputs: ["tfc:food/boiled_egg"],
+		itemOutputProvider: TFC.isp.of("tfc:food/boiled_egg").copyFood()
+	})
+
 	//Kelp
 	cookingRecipe("dried_kelp_a", "tfc:plant/winged_kelp", "tfc:food/dried_kelp")
 	cookingRecipe("dried_kelp_b", "tfc:plant/leafy_kelp", "tfc:food/dried_kelp")
@@ -680,7 +686,7 @@ function registerTFGFoodRecipes(event) {
 	processorRecipe('vinegar_alcohol', 600, GTValues.VA[GTValues.LV], {
 		circuit: 5,
 		itemInputs: ['#tfc:foods/fruits'],
-		fluidInputs: ['#tfc:alcohols 250'],
+		fluidInputs: ['#tfg:alcohols 250'],
 		fluidOutputs: [Fluid.of('tfc:vinegar', 250)]
 	})
 
@@ -922,7 +928,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('4x firmalife:food/bacon').copyFood()
 	})
 
-	processorRecipe("picked_egg", 1000, 8, {
+	processorRecipe("pickled_egg", 1000, 8, {
 		circuit: 1,
 		itemInputs: ['minecraft:clay_ball', 'tfc:powder/wood_ash', 'tfc:powder/salt', 'tfc:food/boiled_egg'],
 		itemOutputs: ['firmalife:food/pickled_egg'],

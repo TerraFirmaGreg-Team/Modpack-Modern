@@ -15,6 +15,7 @@ BlockEvents.modification(event => {
 })
 
 ItemEvents.modification(event => {
+	registerAdAstraItemModifications(event)
 	registerBeneathItemModifications(event)
 	registerCreateItemModifications(event)
 	registerFirmalifeItemModifications(event)

@@ -2,18 +2,37 @@
 	"variants": {
 		"": [
 			{
-				"model": "tfg:block/rock/halite"
+				"model": "tfg:block/rock/halite",
+				"weight": 6
 			},
 			{
 				"model": "tfg:block/rock/halite",
+				"weight": 6,
 				"y": 90
 			},
 			{
 				"model": "tfg:block/rock/halite",
+				"weight": 6,
 				"y": 180
 			},
 			{
 				"model": "tfg:block/rock/halite",
+				"weight": 6,
+				"y": 270
+			},
+			{
+				"model": "tfg:block/rock/halite2"
+			},
+			{
+				"model": "tfg:block/rock/halite2",
+				"y": 90
+			},
+			{
+				"model": "tfg:block/rock/halite2",
+				"y": 180
+			},
+			{
+				"model": "tfg:block/rock/halite2",
 				"y": 270
 			}
 		]

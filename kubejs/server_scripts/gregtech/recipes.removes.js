@@ -51,6 +51,9 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_cobblestone')
 	removeMaceratorRecipe(event, 'gravel_to_flint')
 	removeMaceratorRecipe(event, 'macerate_furnace')
+	removeCutterRecipe(event, 'cut_stone_block_to_plate')
+	removeCutterRecipe(event, 'cut_stone_block_to_plate_water')
+	removeCutterRecipe(event, 'cut_stone_block_to_plate_distilled_water')
 
 	//#endregion
 
@@ -821,9 +824,14 @@ function removeGTCEURecipes(event) {
 	
 	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound' });
 
-
 	event.remove({ id: 'gtceu:chemical_reactor/soda_ash_from_carbon_dioxide' })
 	event.remove({ id: 'gtceu:large_chemical_reactor/soda_ash_from_carbon_dioxide' })
+
+	event.remove({ id: 'gtceu:macerator/macerate_chiseled_sandstone' })
+	event.remove({ id: 'gtceu:macerator/macerate_sandstone_wall' })
+	event.remove({ id: 'gtceu:macerator/macerate_smooth_sandstone' })
+	event.remove({ id: 'gtceu:macerator/macerate_sandstone' })
+	event.remove({ id: 'gtceu:macerator/macerate_cut_sandstone' })
 }
 
 function removeMaceratorRecipe(event, id) {

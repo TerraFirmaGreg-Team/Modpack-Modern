@@ -1,29 +1,3 @@
 {
-	"type": "forge:add_spawns",
-	"biomes": [
-		"tfc:badlands",
-		"tfc:canyons",
-		"tfc:highlands",
-		"tfc:hills",
-		"tfc:inverted_badlands",
-		"tfc:low_canyons",
-		"tfc:lowlands",
-		"tfc:mountains",
-		"tfc:oceanic_mountains",
-		"tfc:old_mountains",
-		"tfc:plains",
-		"tfc:plateau",
-		"tfc:rolling_hills",
-		"tfc:salt_marsh",
-		"tfc:shore",
-		"tfc:tidal_flats",
-		"tfc:volcanic_mountains",
-		"tfc:volcanic_oceanic_mountains"
-	],
-	"spawners": {
-		"type": "primitive_creatures:nahida",
-		"weight": 1,
-		"minCount": 1,
-		"maxCount": 1
-	}
+	"type": "forge:none"
 }

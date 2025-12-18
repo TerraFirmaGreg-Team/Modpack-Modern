@@ -18,6 +18,12 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['create:blaze_burner'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.blaze_burner'))
 	})
+	event.addAdvanced(['tfg:antipoison_pill'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.antipoison_pill'))
+	})
+	event.addAdvanced(['tfg:antipoison_tablet'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.antipoison_tablet'))
+	})
 	event.addAdvanced(['tfg:electric_greenhouse'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.electric_greenhouse_1'));
 		text.add(2, Text.translate('tfg.tooltip.machine.electric_greenhouse_2'));
@@ -94,37 +100,52 @@ const registerTooltips = (event) => {
 		text.add(3, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
 	})
 
+	// Hot or not containers
+	event.addAdvanced(['#tfg:insulating_container'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.hotornot_container"))
+	})
+	// Do these in reverse order so the hot one appears on top
+	event.addAdvanced(['#tfg:floating_protection_equipment'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.hotornot_floating_equipment"))
+	})
+	event.addAdvanced(['#tfg:cold_protection_equipment'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.hotornot_cold_equipment"))
+	})
+	event.addAdvanced(['#tfg:hot_protection_equipment'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.hotornot_hot_equipment"))
+	})
+
 	// Insulation
 	event.addAdvanced(['create:copper_diving_helmet', 'create:copper_backtank', 'create:copper_diving_boots'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.copper_diving_suit_warmth')),
-			text.add(2, Text.translate('tfg.tooltip.armor.copper_diving_suit_insulation'))
+		text.add(1, Text.translate('tfg.tooltip.armor.copper_diving_suit_warmth'));
+			text.add(2, Text.translate('tfg.tooltip.armor.copper_diving_suit_insulation'));
 	})
 	event.addAdvanced(['create:netherite_diving_helmet', 'create:netherite_backtank', 'create:netherite_diving_boots', 'minecraft:netherite_leggings', 'minecraft:netherite_boots'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.netherite_diving_suit_warmth')),
-			text.add(2, Text.translate('tfg.tooltip.armor.netherite_diving_suit_insulation'))
-		text.add(3, Text.translate('tfg.tooltip.armor.netherite_diving_suit_set'))
+		text.add(1, Text.translate('tfg.tooltip.armor.netherite_diving_suit_warmth'));
+			text.add(2, Text.translate('tfg.tooltip.armor.netherite_diving_suit_insulation'));
+		text.add(3, Text.translate('tfg.tooltip.armor.netherite_diving_suit_set'));
 	})
 	event.addAdvanced(['gtceu:nanomuscle_helmet', 'gtceu:nanomuscle_chestplate', 'gtceu:nanomuscle_leggings', 'gtceu:nanomuscle_boots', 'gtceu:advanced_nanomuscle_chestplate'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.nanomuscle_warmth')),
-			text.add(2, Text.translate('tfg.tooltip.armor.nanomuscle_insulation'))
-		text.add(3, Text.translate('tfg.tooltip.armor.nanomuscle_set'))
+		text.add(1, Text.translate('tfg.tooltip.armor.nanomuscle_warmth'));
+			text.add(2, Text.translate('tfg.tooltip.armor.nanomuscle_insulation'));
+		text.add(3, Text.translate('tfg.tooltip.armor.nanomuscle_set'));
 		if (item === 'gtceu:nanomuscle_leggings') {
-			text.add(4, Text.translate('tfg.tooltip.armor.nanomuscle_legs_buff'))
+			text.add(4, Text.translate('tfg.tooltip.armor.nanomuscle_legs_buff'));
 		}
 	})
 	event.addAdvanced(['gtceu:quarktech_helmet', 'gtceu:quarktech_chestplate', 'gtceu:quarktech_leggings', 'gtceu:quarktech_boots', 'gtceu:advanced_quarktech_chestplate'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.quarktech_warmth')),
-			text.add(2, Text.translate('tfg.tooltip.armor.quarktech_insulation'))
-		text.add(3, Text.translate('tfg.tooltip.armor.quarktech_set'))
+		text.add(1, Text.translate('tfg.tooltip.armor.quarktech_warmth'));
+			text.add(2, Text.translate('tfg.tooltip.armor.quarktech_insulation'));
+		text.add(3, Text.translate('tfg.tooltip.armor.quarktech_set'));
 	})
 	event.addAdvanced([
 		'ad_astra:space_helmet', 'ad_astra:space_suit', 'ad_astra:space_pants', 'ad_astra:space_boots',
 		'ad_astra:netherite_space_helmet', 'ad_astra:netherite_space_suit', 'ad_astra:netherite_space_pants', 'ad_astra:netherite_space_boots',
 		'ad_astra:jet_suit_helmet', 'ad_astra:jet_suit', 'ad_astra:jet_suit_pants', 'ad_astra:jet_suit_boots'
 	], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.space_suit_warmth')),
-			text.add(2, Text.translate('tfg.tooltip.armor.space_suit_insulation'))
-		text.add(3, Text.translate('tfg.tooltip.armor.space_suit_set'))
+		text.add(1, Text.translate('tfg.tooltip.armor.space_suit_warmth'));
+			text.add(2, Text.translate('tfg.tooltip.armor.space_suit_insulation'));
+		text.add(3, Text.translate('tfg.tooltip.armor.space_suit_set'));
 	})
 
 	// Supports
@@ -178,7 +199,7 @@ const registerTooltips = (event) => {
 	})
 
 	event.addAdvanced(['gtceu:large_solar_panel_tier3'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.solar_panel.large_tier3'))
+		text.add(1, Text.translate('tfg.tooltip.solar_panel.large_tier3'));
 		text.add(2, Text.translate('tfg.tooltip.machine.parallel'))
 	})
 
@@ -188,12 +209,12 @@ const registerTooltips = (event) => {
 	})
 
 	event.addAdvanced(['tfg:sniffer_egg'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.attribution.sniffer')),
+		text.add(1, Text.translate('tfg.tooltip.attribution.sniffer'));
 			text.add(2, Text.translate('tfg.tooltip.large_egg'))
 	})
 
 	event.addAdvanced(['tfg:wraptor_egg'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.attribution.wraptor')),
+		text.add(1, Text.translate('tfg.tooltip.attribution.wraptor'));
 			text.add(2, Text.translate('tfg.tooltip.large_egg'))
 	})
 
@@ -284,7 +305,6 @@ const registerTooltips = (event) => {
 	})
 
 	//Nuclear Fission Tooltips
-
 	event.addAdvanced(['minecraft:blue_ice'], (item, advanced, text) => {
 		text.add(1, Text.translate("tfg.tooltip.component.blue_ice"))
 	})
@@ -308,15 +328,15 @@ const registerTooltips = (event) => {
 	})
 
 	event.addAdvanced(['tfg:nuclear_turbine'], (item, advanced, text) => {
-		text.add(1, Text.translate("tfg.tooltip.component.nuclear_turbine_1"))
-		text.add(2, Text.translate("tfg.tooltip.component.nuclear_turbine_2"))
+		text.add(1, Text.translate("tfg.tooltip.component.nuclear_turbine_1"));
+		text.add(2, Text.translate("tfg.tooltip.component.nuclear_turbine_2"));
 	})
 
 	event.addAdvanced(['tfg:food/slice_of_cheese'], (item, advanced, text) => {
 		if (!event.isShift()) {
 			text.add(1, Text.translate("tfg.tooltip.fake_nutrition_info_listener"))
 		} else {
-			text.add(1, Text.translate("tfg.tooltip.fake_nutrition_info"))
+			text.add(1, Text.translate("tfg.tooltip.fake_nutrition_info"));
 			text.add(2, Text.translate("tfg.tooltip.cheese_slice_microplastics"))
 		};
 	});
@@ -324,9 +344,9 @@ const registerTooltips = (event) => {
 
 	// AE2
 	event.addAdvanced(['tfg:wireless_card'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.wireless_card_1'))
-		text.add(2, Text.translate('tfg.tooltip.wireless_card_2'))
-		text.add(3, Text.translate('tfg.tooltip.wireless_card_3'))
+		text.add(1, Text.translate('tfg.tooltip.wireless_card_1'));
+		text.add(2, Text.translate('tfg.tooltip.wireless_card_2'));
+		text.add(3, Text.translate('tfg.tooltip.wireless_card_3'));
 	})
 
 	// Deprecated Items

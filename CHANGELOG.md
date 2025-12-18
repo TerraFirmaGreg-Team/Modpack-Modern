@@ -3,7 +3,67 @@
 ## Unreleased
 ### Changes
 ### Bug fixes
+
+## [0.11.11] - 18-12-2025
+### Breaking Changes
+- Rose Quartz moved namespaces, so you'll have to convert all your old rose quartz items into the new ones. You'll need to explore new chunks to find new geodes with the correct ore blocks.
+- The previous silicone rubber styrene butadiene rubber belts have been changed to a different item, so please break and recycle them before updating if you're using any.
+- Cleaning meal bag foil packs is now done in the chem bath instead of the ore washer. @Pyritie
+- Turning honey into sugar is now done in the extractor instead of the centrifuge. @Pyritie
+- Syngas crafting in the Vacuum Chamber will now output into the chamber itself instead of the Basin, so it won't get mixed up with the creosote (#2378) @Pyritie
+- Cleaned up the EMI pages for small and large boilers so they aren't flooded with furniture and other things. If you were using something "non-standard" to fuel your boilers, check if they're still valid. (#2421, #2415) @thederpysockdude123 @applenper
+- Clay dust is no longer electrolyzable, but now you can get infinite clay blocks from a rock breaker @Pyritie
+### Changes
+- Added BTX fuel, a new EV-tier gas fuel to replace nitrobenzene. (#2416) @TomPlop
+- Primitive illagers will no longer endlessly respawn. Instead, now they only spawn as "structures", so once you kill them they will never return. @Pyritie
+#### Hot or Not
+- Added "too cold to handle" and "too light to handle" for cold things and lighter-than-air things. Uses the same mechanic as tongs. Lighter-than-air things can also be negated with something Very Heavy in your inventory, and all effects (including "too hot to handle") are negated by super tanks/chests and cells, but *not* drums or buckets. Check the `#tfg:hot_protection_equipment`, `#tfg:cold_protection_equipment`, and `#tfg:floating_protection_equipment` tags for equipment that makes you immune to these effects. The equipment also protects against pipes! @Pyritie
+- GregTech hot ingots are also now properly included in the "too hot to handle" system so the same protection applies @Pyritie
+- Added machine recipes for crafting tongs @Pyritie
+- All baby animals and more "medium" size animals can now be picked up (#2398) @Pyritie
+#### Medical Hazards
+- Added visual debuff effects for all medical conditions, so you're immediately notified when carrying something hazardous instead of wondering why you have Hunger II. They don't do anything by themselves, they're just a much more visible way of checking your conditions. @Pyritie
+- Early `#tfg:medicines` can now also cure medical conditions! Did you think they wouldn't come with side effects? @Pyritie
+- The medicines have also been rebalanced, so some of the stronger ones come with a downside, while the weaker ones have a stronger cure effect.
+- The medical condition effect that previously instantly killed you (which did not spawn a corpse) now gives you Wither III instead. @Pyritie
+#### Other
+- Added two more early game mechanical belts, and rubber+ belts are also now more expensive. @Pyritie @Epicificator
+- Doubled the durability of all space suits @Pyritie
+- Added a way to convert between vinegar and acetic acid (#2386) @Epicificator
+- Added a renderer to the electric greenhouse, so now you can visually see your crops grow! @RubenVerg
+- Added some distant horizons config options, for those who want to use it (#2406) @Mqrius
+- More animals now drop animal fat (#2367) @Pyritie
+- Nerfed how much biomass and plant balls are produced from certain vanilla plants (#2361) @Pyritie
+- Added some more ruined structures with a small bit of loot.
+- Added some resource packs for TFC, disabled by default
+- Lenses are now allowed on tool racks (#2434) @thederpysockdude123
+- The Active Transformer multiblock is now craftable at EV, with a new texture and casings. (#2424) @BlueBoat29
+- Renamed AE2 Sky Stone to Suevite @Pyritie
+- Removed the shapeless crafting recipe for colored concrete powder, added an instant barrel recipe to turn it into solid concrete @Pyritie
+- GregTech mining machines now replace mined ores with the correct type of cobble, instead of rhyolite or vanilla cobble @Pyritie
+### Bug fixes
+- Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie
+- Fixed fries and cheese curds not being able to be put on burgers. @Redeix
+- Fixed sliced brinza missing the proper cheese tags. @Redeix
+- Fixed pyroxenite and keratophyre bricks crafting 1 instead of 4 (#2373) @Pyritie
+- Fixed some issues with quest text and items (#2384, #2386, #2435) @Mqrius @thederpysockdude123
+- Fixed some tag issues with foods (#2405) @thederpysockdude123
+- Fixed treated wooden planks from being excluded in the Domum Ornamentum and Facade whitelists (#2404) @thederpysockdude123
+- Fixed a recipe conflict for boiled and fried eggs (#2407) @Mqrius
+- Fixed a recipe conflict blocking the crafting of silicone rubber (#2387) @Mqrius
+- Fixed the backpack and QuarkTech helmet auto-feeding from feeding you while you're downed @Mqrius
+- Fixed drills taking way more damage when mining than intended (#2419, #2428) @Mqrius
+- Fixed Ostrum Casing not having a recipe (#2363) @FlightingFalcon
+- Fixed warped trees not growing on normal mars dirt @Pyritie
+- Fixed missing block names for some of the variations of non-earth stones @Pyritie
+- Fixed being able to turn bismuth and black bronze drums into regular bronze drums (#2436) @Jeuvke
+- Fixed a recipe conflict with stone plates (#2433) @Pyritie
+- Fixed concrete pouring consuming your fluid container if you use anything other than a bucket to pour @Mqrius
+- Fixed large amounts of TPS lag when pouring huge areas of concrete at once @Therighthon
 ### Translation updates
+- Chinese (simplified) @jmecn
+- Japanese @sakura-gondra
+- Russian @Petr211071
 
 ## [0.11.10] - 9-12-2025
 ### Breaking Changes

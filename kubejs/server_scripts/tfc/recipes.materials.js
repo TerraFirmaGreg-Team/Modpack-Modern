@@ -240,15 +240,9 @@ function registerTFCMaterialsRecipes(event) {
 
 							// These aren't TFC recipes but they go here since they don't have a tag prefix
 							// and I'm too lazy to make them one
-							event.custom({
-								type: 'vintageimprovements:curving',
-								ingredients: [doublePlateItem],
-								// tuyeres are roughly bottle shaped, right?
-								// (there's no other mold that wouldn't conflict and this seems close enough)
-								itemAsHead: 'gtceu:bottle_extruder_mold',
-								results: [{ item: `tfc:metal/tuyere/${material.getName()}` }],
-								processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-							}).id(`tfg:vi/curving/${material.getName()}_tuyere`)
+							event.recipes.vintageimprovements.curving(`tfc:metal/tuyere/${material.getName()}`, doublePlateItem)
+								.head('gtceu:bottle_extruder_mold')
+								.id(`tfg:vi/curving/${material.getName()}_tuyere`)
 
 							event.recipes.gtceu.extruder(`tfg:${material.getName()}_tuyere`)
 								.itemInputs(doublePlateItem)
@@ -271,13 +265,9 @@ function registerTFCMaterialsRecipes(event) {
 								.tier(tfcProperty.getTier())
 								.id(`tfc:anvil/${material.getName()}_shield`)
 
-							event.custom({
-								type: 'vintageimprovements:curving',
-								ingredients: [doublePlateItem],
-								itemAsHead: 'gtceu:plate_extruder_mold',
-								results: [{ item: `tfc:metal/shield/${material.getName()}` }],
-								processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-							}).id(`tfg:vi/curving/${material.getName()}_shield`)
+							event.recipes.vintageimprovements.curving(`tfc:metal/shield/${material.getName()}`, doublePlateItem)
+								.head('gtceu:plate_extruder_mold')
+								.id(`tfg:vi/curving/${material.getName()}_shield`)
 
 							event.recipes.gtceu.extruder(`tfg:${material.getName()}_shield`)
 								.itemInputs(doublePlateItem)
@@ -1324,22 +1314,40 @@ function registerTFCMaterialsRecipes(event) {
 		let tongPartStack = Item.of(`tfchotornot:tong_part/${material.getName()}`)
 
 		if (!tongsStack.isEmpty() && !tongPartStack.isEmpty() && material !== GTMaterials.Iron) {
+			// tong parts
+			event.recipes.vintageimprovements.curving(tongPartStack, `#forge:rods/long/${material.getName()}`)
+				.head('gtceu:rod_extruder_mold')
+				.id(`tfg:vi/curving/${material.getName()}_tong`)
+
+			event.recipes.gtceu.extruder(`tfg:${material.getName()}_tong`)
+				.itemInputs(`#forge:rods/long/${material.getName()}`)
+				.notConsumable('gtceu:rod_extruder_mold')
+				.itemOutputs(tongPartStack)
+				.duration(material.getMass())
+				.EUt(GTValues.VA[GTValues.LV])
+
+			// tongs
 			event.recipes.tfc.advanced_shaped_crafting(
 				TFC.isp.of(tongsStack).copyForgingBonus(), [
 					'AA',
 					'BC'
 				], {
 					A: tongPartStack,
-					B: '#forge:bolts',
+					B: Ingredient.of('#forge:bolts').subtract('gtceu:wood_bolt'),
 					C: '#forge:tools/hammers'
 				}, 0, 0).id(`tfchotornot:crafting/tongs/${material.getName()}`)
 
-			// tong parts
+			event.recipes.gtceu.forge_hammer(`tfg:${material.getName()}_tong`)
+				.itemInputs(tongPartStack.withCount(2))
+				.itemOutputs(tongsStack)
+				.duration(material.getMass())
+				.EUt(GTValues.VA[GTValues.ULV])
+
+			// tong heating
 			event.recipes.tfc.heating(tongPartStack, tfcProperty.getMeltTemp())
 				.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
 				.id(`tfchotornot:heating/tong_part/${material.getName()}`)
 
-			// tong heating
 			event.recipes.tfc.heating(tongsStack, tfcProperty.getMeltTemp())
 				.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
 				.useDurability(true)

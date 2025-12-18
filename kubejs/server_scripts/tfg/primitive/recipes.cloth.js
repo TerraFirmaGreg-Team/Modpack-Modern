@@ -116,14 +116,14 @@ function registerTFGClothRecipes(event) {
 	event.recipes.gtceu.packer('tfg:packer/flax_bundle')
 		.itemInputs('9x tfg:flax_product')
 		.itemOutputs('tfg:flax_bundle')
-		.duration('100')
+		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.shapeless('1x tfg:bundled_scraped_flax', ['9x tfg:flax_waste'])
 	event.recipes.gtceu.packer('tfg:packer/bundled_scraped_flax')
 		.itemInputs('9x tfg:flax_waste')
 		.itemOutputs('tfg:bundled_scraped_flax')
-		.duration('100')
+		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.tfc.scraping(
@@ -194,19 +194,13 @@ function registerTFGClothRecipes(event) {
 		.duration(1800)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.custom({
-		type: 'vintageimprovements:centrifugation',
-		ingredients: [{ item: 'tfg:flax_product' }],
-		results: [{ item: 'tfg:flax_line', count: 2 }, { item: 'tfg:flax_tow' }, { item: 'tfc:groundcover/humus' }],
-		processingTime: 40 * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-	}).id('tfg:vi_seperate_flax')
-
-	event.custom({
-		type: 'vintageimprovements:centrifugation',
-		ingredients: [{ item: 'tfg:flax_bundle' }],
-		results: [{ item: 'tfg:flax_line', count: 18 }, { item: 'tfg:flax_tow', count: 9 }, { item: 'tfc:groundcover/humus', count: 9 }],
-		processingTime: 360 * 90 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-	}).id('tfg:vi_seperate_flax_from_bundle')
+	event.recipes.vintageimprovements.centrifugation(['2x tfg:flax_line', 'tfg:flax_tow', 'tfc:groundcover/humus'], 'tfg:flax_product')
+		.processingTime(200 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi_seperate_flax')
+		
+	event.recipes.vintageimprovements.centrifugation(['18x tfg:flax_line', '9x tfg:flax_tow', '9x tfc:groundcover/humus'], 'tfg:flax_bundle')
+		.processingTime(1500 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi_seperate_flax_from_bundle')
 
 	// #endregion
 
@@ -218,12 +212,10 @@ function registerTFGClothRecipes(event) {
 		]).id('tfg:shapeless/linen_thread')
 	)
 
-	event.custom({
-		type: 'vintageimprovements:coiling',
-		ingredients: [{ item: 'tfg:flax_line' }],
-		results: [{ item: 'tfg:linen_thread', count: 4 }],
-		processingTime: 2 * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-	}).id('tfg:vi_spin_flax_line')
+	event.recipes.vintageimprovements.coiling('4x tfg:linen_thread', 'tfg:flax_line')
+		.processingTime(20 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.springColor('F6E6B5')
+		.id('tfg:vi_spin_flax_line')
 
 	event.recipes.gtceu.wiremill('tfg:spin_flax_line')
 		.itemInputs('tfg:flax_line')

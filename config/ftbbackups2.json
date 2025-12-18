@@ -65,7 +65,7 @@
 	   *path/ends/with.txt             Any files who's path ends with
 	   *path/contains*                 Any files who's path contains
 	*/
-	"excluded": [],
+	"excluded": ["DistantHorizons.sqlite"],
 	// The dimension used when creating backup preview image, specify "all" to enable automatic detection of primary dimension (can be very slow)
 	"preview_dimension": "minecraft:overworld"
 }

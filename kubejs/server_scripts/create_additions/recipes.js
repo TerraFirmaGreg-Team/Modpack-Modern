@@ -30,27 +30,6 @@ const registerCreateAdditionsRecipes = (event) => {
 		C: 'computercraft:wired_modem',
 	}).addMaterialInfo().id('tfg:create_additions/shaped/digital_adapter')
 
-	// Портативный энергетический интерфейс
-	event.recipes.gtceu.shaped('createaddition:portable_energy_interface', [
-		'ABC',
-		'DEC',
-		'ADC'
-	], {
-		A: '#forge:plates/brass',
-		B: 'create:chute',
-		C: 'gtceu:copper_octal_wire',
-		D: 'gtceu:copper_single_cable',
-		E: 'create:brass_casing'
-	}).addMaterialInfo().id('tfg:create_additions/shaped/portable_energy_interface')
-
-	// Батарейный блок
-	event.recipes.gtceu.assembler('create_additions/battery')
-		.itemInputs('gtceu:bronze_frame', '4x #forge:plates/brass', '8x #forge:screws/bronze', '#gtceu:batteries/hv')
-		.itemOutputs('createaddition:modular_accumulator')
-		.duration(400)
-		.EUt(30)
-		.addMaterialInfo(true)
-
 	// Колючая проволка
 	event.shapeless('4x createaddition:barbed_wire', [
 		'#forge:rods/wrought_iron',
