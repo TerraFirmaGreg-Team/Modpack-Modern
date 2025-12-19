@@ -14,7 +14,7 @@ function registerTFGClayRecipes(event) {
 	event.shapeless('4x minecraft:clay_ball', ['minecraft:clay'])
 		.id('tfg:shapeless/clay_block_to_balls')
 
-	TFC_FURNACE_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
+	const TFC_FURNACE_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
 		{ input: "tfc:ceramic/unfired_ingot_mold", output: "tfc:ceramic/ingot_mold", name: "ingot_mold" },
 		{ input: "tfc:ceramic/unfired_pickaxe_head_mold", output: "tfc:ceramic/pickaxe_head_mold", name: "pickaxe_head_mold" },
 		{ input: "tfc:ceramic/unfired_propick_head_mold", output: "tfc:ceramic/propick_head_mold", name: "propick_head_mold" },
@@ -49,7 +49,6 @@ function registerTFGClayRecipes(event) {
 		{ input: "firmalife:oven_chimney", output: "firmalife:cured_oven_chimney", name: "oven_chimney" },
 		{ input: "firmalife:oven_bottom", output: "firmalife:cured_oven_bottom", name: "oven_bottom" },
 		{ input: "firmalife:oven_hopper", output: "firmalife:cured_oven_hopper", name: "oven_hopper" },
-		{ input: "firmalife:oven_hopper", output: "firmalife:cured_oven_hopper", name: "oven_hopper" },
 		{ input: "tfg:unfired_rod_mold", output: "tfg:rod_mold", name: "rod_mold" },
 		{ input: "tfg:unfired_small_gear_mold", output: "tfg:small_gear_mold", name: "small_gear_mold" },
 		{ input: "tfg:unfired_nugget_mold", output: "tfg:nugget_mold", name: "nugget_mold" }
@@ -68,7 +67,7 @@ function registerTFGClayRecipes(event) {
 			.id(`tfg:smelting/${dye}_large_vessel`)
 	})
 
-	TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
+	const TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
 		{ input: "5x minecraft:clay_ball", output: "2x tfc:ceramic/unfired_flower_pot", name: "flower_pot" },
 		{ input: "5x minecraft:clay_ball", output: "4x tfc:ceramic/unfired_bowl", name: "bowl" },
 		{ input: "5x minecraft:clay_ball", output: "10x rnr:unfired_roof_tile", name: "roof_tile" },
@@ -88,7 +87,7 @@ function registerTFGClayRecipes(event) {
 			.EUt(2)
 	}
 
-	TFC_FIRE_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
+	const TFC_FIRE_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
 		{ input: "5x tfc:fire_clay", output: "tfc:ceramic/unfired_crucible", name: "crucible" }
 	]);
 

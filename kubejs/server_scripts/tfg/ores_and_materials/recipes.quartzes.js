@@ -31,7 +31,7 @@ function registerTFGQuartzRecipes(event) {
 		.duration(20)
 		.EUt(30)
 
-	TFC_BATCH_TO_BOTTLE_ASSEMBLING_RECIPE_COMPONENTS = /** @type {const} */ ([
+	const TFC_BATCH_TO_BOTTLE_ASSEMBLING_RECIPE_COMPONENTS = /** @type {const} */ ([
 		{ input: "tfc:silica_glass_batch", output: "tfc:silica_glass_bottle", name: "silica_glass_bottle" },
 		{ input: "tfc:hematitic_glass_batch", output: "tfc:hematitic_glass_bottle", name: "hematitic_glass_bottle" },
 		{ input: "tfc:olivine_glass_batch", output: "tfc:olivine_glass_bottle", name: "olivine_glass_bottle" },
