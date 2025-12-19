@@ -238,7 +238,6 @@ function registerTFGKnappingRecipes(event) {
 		"XXXXX"
 		
 	])
-		//.ingredient('5x tfc:clay')
 		.id('tfg:clay_knapping/unfired_rod_mold')
 	
 	event.recipes.tfc.knapping('tfg:unfired_small_gear_mold', 'tfc:clay', [
@@ -249,7 +248,6 @@ function registerTFGKnappingRecipes(event) {
 		"XX XX"
 		
 	])
-		//.ingredient('5x tfc:clay')
 		.id('tfg:clay_knapping/unfired_small_gear_mold')
 	
 	event.recipes.tfc.knapping('tfg:unfired_nugget_mold', 'tfc:clay', [
@@ -260,7 +258,6 @@ function registerTFGKnappingRecipes(event) {
 		"XXXXX"
 		
 	])
-		//.ingredient('5x tfc:clay')
 		.id('tfg:clay_knapping/unfired_nugget_mold')
 
 }
