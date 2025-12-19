@@ -14,6 +14,7 @@
 - Fixed vulcanized latex to raw rubber vacuumizer recipe being the wrong way around (#2464) @Mqrius
 - Fixed a crash when loading a chunk that had an old blaze burner with a straw @Pyritie
 - Fixed incorrect coil tooltips on the nuclear fuel factory and liquefaction tower @Pyritie
+- Fixed new rose quartz lens not being in the pink lens tag @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 
