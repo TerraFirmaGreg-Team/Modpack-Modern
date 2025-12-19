@@ -230,7 +230,7 @@ function registerTFGKnappingRecipes(event) {
 		.id('sns:straw_knapping/straw_hat')
 	
 	// Molds
-	event.recipes.tfc.knapping('tfg:unfired_rod_mold', 'tfc:clay', [
+	event.recipes.tfc.knapping('tfg:unfired_rod_mold', 'tfc:fire_clay', [
 		"XXXXX",
 		"XXX X",
 		"XX XX",
@@ -238,7 +238,7 @@ function registerTFGKnappingRecipes(event) {
 		"XXXXX"
 		
 	])
-		.id('tfg:clay_knapping/unfired_rod_mold')
+		.id('tfg:fire_clay_knapping/unfired_rod_mold')
 	
 	event.recipes.tfc.knapping('tfg:unfired_small_gear_mold', 'tfc:fire_clay', [
 		"XX XX",
@@ -248,9 +248,9 @@ function registerTFGKnappingRecipes(event) {
 		"XX XX"
 		
 	])
-		.id('tfg:clay_knapping/unfired_small_gear_mold')
+		.id('tfg:fire_clay_knapping/unfired_small_gear_mold')
 	
-	event.recipes.tfc.knapping('tfg:unfired_nugget_mold', 'tfc:clay', [
+	event.recipes.tfc.knapping('tfg:unfired_nugget_mold', 'tfc:fire_clay', [
 		"XXXXX",
 		"X X X",
 		"XXXXX",
@@ -258,6 +258,6 @@ function registerTFGKnappingRecipes(event) {
 		"XXXXX"
 		
 	])
-		.id('tfg:clay_knapping/unfired_nugget_mold')
+		.id('tfg:fire_clay_knapping/unfired_nugget_mold')
 
 }

@@ -849,7 +849,7 @@ global.TFC_FIRE_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "5x tfc:fire_clay", output: "tfc:ceramic/unfired_crucible", name: "crucible" },
     { input: "5x tfc:fire_clay", output: "tfcchannelcasting:unfired_channel", name: "channel" },
     { input: "5x tfc:fire_clay", output: "tfcchannelcasting:unfired_mold_table", name: "mold_table" },
-    { input: "5x minecraft:clay_ball", output: "tfg:unfired_small_gear_mold", name: "small_gear_mold" }
+    { input: "5x tfc:fire_clay", output: "tfg:unfired_small_gear_mold", name: "small_gear_mold" }
 ]);
 
 global.TFC_BATCH_TO_BOTTLE_ASSEMBLING_RECIPE_COMPONENTS = /** @type {const} */ ([
