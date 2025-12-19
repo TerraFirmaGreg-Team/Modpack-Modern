@@ -34,15 +34,15 @@ function registerTFGBoilerRecipes(event) {
 	event.remove({ id: /gtceu:....._boiler\/.*loom.*/ })
 	event.remove({ id: /gtceu:....._boiler\/.*bowl.*/ })
 	event.remove({ id: /gtceu:....._boiler\/.*sticky_resin.*/ })
-	event.remove({ id: /gtceu:....._boiler\/.*plant_ball*/ })
-	event.remove({ id: /gtceu:....._boiler\/.*note_block*/ })
-	event.remove({ id: /gtceu:....._boiler\/.*smithing_table*/ })
-	event.remove({ id: /gtceu:....._boiler\/.*fiberboard*/ })
-	event.remove({ id: /gtceu:....._boiler\/.*wood*/ })
-	event.remove({ id: /gtceu:....._boiler\/.*sapling*/ })
-	event.remove({ id: /gtceu:....._boiler\/.*log*/ })
-	event.remove({ id: /gtceu:....._boiler\/.*stem*/ })
-	event.remove({ id: /gtceu:....._boiler\/.*mosaic*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*plant_ball.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*note_block.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*smithing_table.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*fiberboard.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*wood.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*sapling.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*log.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*stem.*/ })
+	event.remove({ id: /gtceu:....._boiler\/.*mosaic.*/ })
 
 	//Re-add some recipes to the boiler under tags
 	event.recipes.gtceu.steam_boiler('tfg:logs')
@@ -62,7 +62,7 @@ function registerTFGBoilerRecipes(event) {
 
 	// Small nerf to charcoal
 
-	event.forEachRecipe({ id: /gtceu:(steam_boiler|large_boiler)\/minecraft_charcoal/ }, recipe => {
+	event.forEachRecipe({ id: /gtceu:(steam_boiler|large_boiler)\/.*charcoal.*/ }, recipe => {
         var newDuration = recipe.get("duration")
         recipe.set("duration", newDuration/4*3)
 	})
