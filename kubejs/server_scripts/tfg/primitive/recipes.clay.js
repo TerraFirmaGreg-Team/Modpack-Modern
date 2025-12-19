@@ -158,4 +158,12 @@ function registerTFGClayRecipes(event) {
 		.adjacentFluids(["tfc:salt_water", "tfc:spring_water"])
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.LV])
+	
+	// heating
+	event.recipes.tfc.heating('tfg:unfired_rod_mold', 1399)
+        .resultItem('tfg:rod_mold')
+	event.recipes.tfc.heating('tfg:unfired_small_gear_mold', 1399)
+		.resultItem('tfg:small_gear_mold')
+	event.recipes.tfc.heating('tfg:unfired_nugget_mold', 1399)
+		.resultItem('tfg:nugget_mold')
 }

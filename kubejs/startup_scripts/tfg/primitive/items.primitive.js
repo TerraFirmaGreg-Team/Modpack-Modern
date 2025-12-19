@@ -136,4 +136,96 @@ function registerTFGPrimitiveItems(event) {
 	event.create('tfg:bundled_scraped_flax')
 		.tag('tfc:scrapable')
 		.texture('tfg:item/bundled_scraped_flax')	
+
+		// Molds
+	event.create('tfg:rod_mold', 'tfc:mold')
+        .capacity(72)
+		.texture("base", "tfg:item/mold/fired/rod_mold_empty")
+		.texture("fluid", "tfg:item/mold/fired/rod_mold_overlay")
+		.tag('tfc:fired_molds')
+		.tag('tfc:molds')
+		.tfcccAllowedInMoldTable([
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXX  XX",
+			"XXXXXXXXX   XX",
+			"XXXXXXXX   XXX",
+			"XXXXXXX   XXXX",
+			"XXXXXX   XXXXX",
+			"XXXXX   XXXXXX",
+			"XXXX   XXXXXXX",
+			"XXX   XXXXXXXX",
+			"XX   XXXXXXXXX",
+			"XX  XXXXXXXXXX",
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXXXXXX"
+		])
+
+	event.create('tfg:small_gear_mold', 'tfc:mold')
+        .capacity(288)
+		.texture("base", "tfg:item/mold/fired/small_gear_mold_empty")
+		.texture("fluid", "tfg:item/mold/fired/small_gear_mold_overlay")
+		.tag('tfc:fired_molds')
+		.tag('tfc:molds')
+		.tfcccAllowedInMoldTable([
+			"XXXXXXXXXXXXXX",
+			"XXXXXXX   XXXX",
+			"XX   X    XXXX",
+			"XX        XXXX",
+			"XX           X",
+			"XXX          X",
+			"XX    XX     X",
+			"X     XX    XX",
+			"X          XXX",
+			"X           XX",
+			"XXXX        XX",
+			"XXX    X    XX",
+			"XXX   XXXXXXXX",
+			"XXXXXXXXXXXXXX"
+		])
+	
+	event.create('tfg:nugget_mold', 'tfc:mold')
+        .capacity(64)
+		.texture("base", "tfg:item/mold/fired/nugget_mold_empty")
+		.texture("fluid", "tfg:item/mold/fired/nugget_mold_overlay")
+		.tag('tfc:fired_molds')
+		.tag('tfc:molds')
+		.tfcccAllowedInMoldTable([
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXXXXXX",
+			"XXX  XXXXX XXX",
+			"XX    XXX   XX",
+			"XX    XX    XX",
+			"XXX XXXXX  XXX",
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXXXXXX",
+			"XXX  XXXX  XXX",
+			"XX    XXX   XX",
+			"XX   XXX    XX",
+			"XXX XXXXX  XXX",
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXXXXXX"
+		])
+	
+	// Unfired Molds
+	event.create('tfg:unfired_rod_mold')
+		.texture("tfg:item/mold/unfired/unfired_rod_mold")
+		.tag('tfc:unfired_molds')
+		.tag('tfc:fire_clay_recycle_5')
+		.tag('tfc:molds')
+		.tag('tfc:unfired_pottery')
+	
+	event.create('tfg:unfired_small_gear_mold')
+		.texture("tfg:item/mold/unfired/unfired_small_gear_mold")
+		.tag('tfc:unfired_molds')
+		.tag('tfc:fire_clay_recycle_5')
+		.tag('tfc:molds')
+		.tag('tfc:unfired_pottery')
+	
+	event.create('tfg:unfired_nugget_mold')
+		.texture("tfg:item/mold/unfired/unfired_nugget_mold")
+		.tag('tfc:unfired_molds')
+		.tag('tfc:clay_recycle_5')
+		.tag('tfc:molds')
+		.tag('tfc:unfired_pottery')
 }
