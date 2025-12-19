@@ -518,7 +518,7 @@ function registerTFCMaterialsRecipes(event) {
 					.tier(tfcProperty.getTier())
 					.id(`tfc:anvil/${material.getName()}_rod`)
 				if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-			    	event.recipes.tfc.casting(rodItem.withCount(1), 'tfg:rod_mold', Fluid.of(outputMaterial.getFluid(), 72), 0)
+			    	event.recipes.tfc.casting(rodItem.withCount(1), 'tfg:rod_mold', Fluid.of(outputMaterial.getFluid(), 72), 0.05)
 						.id(`tfc:casting/${material.getName()}_rod`)
 				}
 
@@ -628,7 +628,7 @@ function registerTFCMaterialsRecipes(event) {
 						.tier(tfcProperty.getTier())
 						.id(`tfc:anvil/${material.getName()}_nugget`)
 					if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-			    		event.recipes.tfc.casting(nuggetItem.withCount(4), 'tfg:nugget_mold', Fluid.of(outputMaterial.getFluid(), 64), 0)
+			    		event.recipes.tfc.casting(nuggetItem.withCount(4), 'tfg:nugget_mold', Fluid.of(outputMaterial.getFluid(), 64), 0.05)
 						.id(`tfc:casting/${material.getName()}_nugget`)
 					}
 				}
@@ -649,7 +649,7 @@ function registerTFCMaterialsRecipes(event) {
 					.tier(tfcProperty.getTier())
 					.id(`tfc:anvil/small_${material.getName()}_gear`)
 					if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-			    		event.recipes.tfc.casting(smallGearItem.withCount(1), 'tfg:small_gear_mold', Fluid.of(outputMaterial.getFluid(), 288), 0)
+			    		event.recipes.tfc.casting(smallGearItem.withCount(1), 'tfg:small_gear_mold', Fluid.of(outputMaterial.getFluid(), 288), 0.05)
 							.id(`tfc:casting/small_${material.getName()}_gear`)
 					}
 				}
