@@ -193,36 +193,39 @@ function registerTFGPrimitiveItems(event) {
 		.tfcccAllowedInMoldTable([
 			"XXXXXXXXXXXXXX",
 			"XXXXXXXXXXXXXX",
-			"XXX  XXXX  XXX",
+			"XXX  XXXXX XXX",
+			"XX    XXX   XX",
 			"XX    XX    XX",
-			"XX   XXX   XXX",
-			"XXX XXXXX XXXX",
+			"XXX XXXXX  XXX",
 			"XXXXXXXXXXXXXX",
 			"XXXXXXXXXXXXXX",
 			"XXX  XXXX  XXX",
-			"XX    XX    XX",
-			"XX   XXX   XXX",
-			"XXX XXXXX XXXX",
+			"XX    XXX   XX",
+			"XX   XXX    XX",
+			"XXX XXXXX  XXX",
 			"XXXXXXXXXXXXXX",
 			"XXXXXXXXXXXXXX"
 		])
+	
 	// Unfired Molds
 	event.create('tfg:unfired_rod_mold')
 		.texture("tfg:item/mold/unfired/unfired_rod_mold")
 		.tag('tfc:unfired_molds')
-		.tag('tfc:fire_clay_recycle_1')
+		.tag('tfc:fire_clay_recycle_5')
 		.tag('tfc:molds')
 		.tag('tfc:unfired_pottery')
+	
 	event.create('tfg:unfired_small_gear_mold')
 		.texture("tfg:item/mold/unfired/unfired_small_gear_mold")
 		.tag('tfc:unfired_molds')
-		.tag('tfc:fire_clay_recycle_1')
+		.tag('tfc:fire_clay_recycle_5')
 		.tag('tfc:molds')
 		.tag('tfc:unfired_pottery')
+	
 	event.create('tfg:unfired_nugget_mold')
 		.texture("tfg:item/mold/unfired/unfired_nugget_mold")
 		.tag('tfc:unfired_molds')
-		.tag('tfc:fire_clay_recycle_1')
+		.tag('tfc:clay_recycle_5')
 		.tag('tfc:molds')
 		.tag('tfc:unfired_pottery')
 }
