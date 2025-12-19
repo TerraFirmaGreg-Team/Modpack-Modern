@@ -232,9 +232,9 @@ function registerTFGKnappingRecipes(event) {
 	// Molds
 	event.recipes.tfc.knapping('tfg:unfired_rod_mold', 'tfc:clay', [
 		"XXXXX",
+		"XXX X",
 		"XX XX",
-		"XX XX",
-		"XX XX",
+		"X XXX",
 		"XXXXX"
 		
 	])
