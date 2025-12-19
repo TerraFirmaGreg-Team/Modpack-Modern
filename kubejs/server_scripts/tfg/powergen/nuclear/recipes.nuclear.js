@@ -488,6 +488,7 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20 * (2.5))
 		.EUt(GTValues.VH[GTValues.LV])
 		.addMaterialInfo(true)
+	/*
 	
 	event.recipes.gtceu.mixer('tfg:thermally_conductive_fluid')
 		.itemInputs('7x #forge:dusts/gallium', '2x #forge:dusts/tin', '#forge:dusts/zinc')

@@ -20,6 +20,7 @@ const registerTFGMaterials = (event) => {
 	
 	registerTFGPowerReworkMaterials(event);
 	registerTFGNuclearMaterials(event);
+	registerTFGSMRAdditiveMaterials(event)
 	registerTFGBiolineMaterials(event);
 	registerTFGPrimitiveMaterials(event);
 	registerTFGRockMaterials(event);
@@ -112,7 +113,8 @@ const registerTFGMaterials = (event) => {
 			GTMaterialFlags.GENERATE_ROD,
 			GTMaterialFlags.GENERATE_BOLT_SCREW,
 			GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES,
-			GTMaterialFlags.GENERATE_GEAR
+			GTMaterialFlags.GENERATE_FOIL,
+			GTMaterialFlags.GENERATE_FINE_WIRE
 		)
 		.fluidPipeProperties(4250, 1700, true, false, false, false)
 

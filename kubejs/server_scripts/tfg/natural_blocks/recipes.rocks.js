@@ -346,14 +346,6 @@ function registerTFGRockRecipes(event) {
 			.notConsumable('tfc:lens')
 			.duration(30)
 			.EUt(GTValues.VA[GTValues.ULV])
-
-		//event.custom({
-		//	type: 'vintageimprovements:laser_cutting',
-		//	ingredients: [{ item: x.raw }],
-		//	results: [{item: x.polished }],
-		//	energy: GTValues.VA[GTValues.ULV] * 30 * 4,
-		//	maxChargeRate: GTValues.VA[GTValues.ULV] * 4
-		//}).id(`tfg:vi/laser/tfg/${x.raw.replace(/:/g, '_')}_to_${x.polished.replace(/:/g, '_')}`)
 	})
 
 	// #endregion RAW_TO_POLISHED
@@ -1145,6 +1137,7 @@ function registerTFGRockRecipes(event) {
 		{ block: 'beneath:crackrack',				dimension: null               },
 		{ block: 'tfg:rock/cobble_crackrack',		dimension: null               },
 		{ block: 'minecraft:basalt',				dimension: null               },
+		{ block: 'minecraft:calcite',               dimension: null               },
 		{ block: 'ad_astra:moon_stone',				dimension: 'ad_astra:moon'    },
 		{ block: 'ad_astra:moon_cobblestone',		dimension: 'ad_astra:moon'    },
 		{ block: 'ad_astra:moon_deepslate',			dimension: 'ad_astra:moon'    },
@@ -1270,4 +1263,11 @@ function registerTFGRockRecipes(event) {
 		.itemOutputs('6x minecraft:polished_blackstone_button')
 		.EUt(7)
 		.duration(100)
+
+	// Misc
+	event.recipes.gtceu.cutter('tfg:vanilla_stone_slab_to_plate')
+		.itemInputs('minecraft:stone_slab')
+		.itemOutputs('#forge:plates/stone')
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.LV])
 }

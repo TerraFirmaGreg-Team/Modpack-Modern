@@ -6,13 +6,6 @@
  */
 function registerTFGStoneDustRecipes(event) {
 
-	event.recipes.gtceu.electrolyzer('gtceu:decomposition_electrolyzing_clay')
-		.itemInputs('13x #forge:dusts/clay')
-		.itemOutputs('2x #forge:dusts/sodium', '1x #forge:dusts/lithium', '2x #forge:dusts/aluminium', '2x #forge:dusts/silicon')
-		.outputFluids(Fluid.of('minecraft:water', 6000))
-		.duration(GTMaterials.Clay.getMass() * 13)
-		.EUt(GTValues.VA[GTValues.HV])
-
 	event.recipes.gtceu.centrifuge('gtceu:stone_dust_separation')
 		.itemInputs('gtceu:stone_dust')
 		.chancedOutput('#forge:small_dusts/quartzite', 2500, 0)

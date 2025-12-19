@@ -49,7 +49,7 @@ function registerTFGMealBagRecipes(event) {
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.recipes.gtceu.ore_washer('tfg:ore_washer/distilled/clean_foil_pack')
+	event.recipes.gtceu.chemical_bath('tfg:ore_washer/distilled/clean_foil_pack')
 		.itemInputs('1x tfg:used_foil_pack')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 10))
 		.itemOutputs('1x tfg:clean_foil_pack')

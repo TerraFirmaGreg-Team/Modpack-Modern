@@ -95,6 +95,7 @@ function registerDomumOrnamentumBlockTags(event) {
         "gtceu:dark_concrete_windmill_b",
         "gtceu:small_dark_concrete_bricks",
         "gtceu:square_dark_concrete_bricks",
+        "gtceu:treated_wood_planks",
         //createdeco blocks
         "createdeco:dean_bricks",
         "createdeco:short_dean_bricks",

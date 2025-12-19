@@ -5,13 +5,13 @@
 			"filling_provider": {
 				"type": "minecraft:simple_state_provider",
 				"state": {
-					"Name": "gtceu:raw_rose_quartz_block"
+					"Name": "greate:raw_rose_quartz_block"
 				}
 			},
 			"inner_layer_provider": {
 				"type": "minecraft:simple_state_provider",
 				"state": {
-					"Name": "gtceu:quartzite_rose_quartz_ore"
+					"Name": "greate:quartzite_rose_quartz_ore"
 				}
 			},
 			"alternate_inner_layer_provider": {
@@ -34,7 +34,7 @@
 			},
 			"inner_placements": [
 				{
-					"Name": "gtceu:quartzite_rose_quartz_ore"
+					"Name": "greate:quartzite_rose_quartz_ore"
 				}
 			],
 			"cannot_replace": "#minecraft:features_cannot_replace",

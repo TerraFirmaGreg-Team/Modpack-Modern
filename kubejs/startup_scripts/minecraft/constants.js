@@ -620,6 +620,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:furnace',
     'minecraft:amethyst_cluster',
     'minecraft:rabbit_hide',
+    'minecraft:raw_copper',
     'minecraft:raw_iron',
     'minecraft:raw_gold',
     'minecraft:compass',
