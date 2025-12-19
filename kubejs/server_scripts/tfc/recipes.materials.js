@@ -517,6 +517,10 @@ function registerTFCMaterialsRecipes(event) {
 				event.recipes.tfc.anvil(rodItem.withCount(2), ingotItem, ['draw_last'])
 					.tier(tfcProperty.getTier())
 					.id(`tfc:anvil/${material.getName()}_rod`)
+				if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+			    	event.recipes.tfc.casting(rodItem.withCount(1), 'tfg:rod_mold', Fluid.of(outputMaterial.getFluid(), 72), 0)
+						.id(`tfc:casting/${material.getName()}_rod`)
+				}
 
 				// Long Rods
 				let longRodItem = ChemicalHelper.get(TagPrefix.rodLong, material, 1)
@@ -623,6 +627,10 @@ function registerTFCMaterialsRecipes(event) {
 					event.recipes.tfc.anvil(nuggetItem, ingotItem, ['punch_last', 'hit_second_last', 'punch_third_last'])
 						.tier(tfcProperty.getTier())
 						.id(`tfc:anvil/${material.getName()}_nugget`)
+					if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+			    		event.recipes.tfc.casting(nuggetItem.withCount(4), 'tfg:nugget_mold', Fluid.of(outputMaterial.getFluid(), 64), 0)
+						.id(`tfc:casting/${material.getName()}_nugget`)
+					}
 				}
 			}
 
@@ -640,6 +648,10 @@ function registerTFCMaterialsRecipes(event) {
 					event.recipes.tfc.anvil(`gtceu:small_${material.getName()}_gear`, `#forge:ingots/${material.getName()}`, ['hit_last', 'shrink_second_last', 'draw_third_last'])
 					.tier(tfcProperty.getTier())
 					.id(`tfc:anvil/small_${material.getName()}_gear`)
+					if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+			    		event.recipes.tfc.casting(smallGearItem.withCount(1), 'tfg:small_gear_mold', Fluid.of(outputMaterial.getFluid(), 288), 0)
+							.id(`tfc:casting/small_${material.getName()}_gear`)
+					}
 				}
 			}
 

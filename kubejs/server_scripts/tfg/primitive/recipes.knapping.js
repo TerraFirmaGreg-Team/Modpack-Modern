@@ -228,5 +228,39 @@ function registerTFGKnappingRecipes(event) {
 		.ingredient('tfc:straw')
 		.outsideSlotRequired(false)
 		.id('sns:straw_knapping/straw_hat')
+	
+	// Molds
+	event.recipes.tfc.knapping('tfg:unfired_rod_mold', 'tfc:clay', [
+		"XXXXX",
+		"XX XX",
+		"XX XX",
+		"XX XX",
+		"XXXXX"
+		
+	])
+		//.ingredient('5x tfc:clay')
+		.id('tfg:clay_knapping/unfired_rod_mold')
+	
+	event.recipes.tfc.knapping('tfg:unfired_small_gear_mold', 'tfc:clay', [
+		"XX XX",
+		"X   X",
+		"  X  ",
+		"X   X",
+		"XX XX"
+		
+	])
+		//.ingredient('5x tfc:clay')
+		.id('tfg:clay_knapping/unfired_small_gear_mold')
+	
+	event.recipes.tfc.knapping('tfg:unfired_nugget_mold', 'tfc:clay', [
+		"XXXXX",
+		"X X X",
+		"XXXXX",
+		"X X X",
+		"XXXXX"
+		
+	])
+		//.ingredient('5x tfc:clay')
+		.id('tfg:clay_knapping/unfired_nugget_mold')
 
 }

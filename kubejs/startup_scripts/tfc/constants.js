@@ -803,7 +803,11 @@ global.TFC_FURNACE_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "firmalife:oven_top", output: "firmalife:cured_oven_top", name: "oven_top" },
     { input: "firmalife:oven_chimney", output: "firmalife:cured_oven_chimney", name: "oven_chimney" },
     { input: "firmalife:oven_bottom", output: "firmalife:cured_oven_bottom", name: "oven_bottom" },
-    { input: "firmalife:oven_hopper", output: "firmalife:cured_oven_hopper", name: "oven_hopper" }
+    { input: "firmalife:oven_hopper", output: "firmalife:cured_oven_hopper", name: "oven_hopper" },
+    { input: "firmalife:oven_hopper", output: "firmalife:cured_oven_hopper", name: "oven_hopper" },
+    { input: "tfg:unfired_rod_mold", output: "tfg:rod_mold", name: "rod_mold" },
+    { input: "tfg:unfired_small_gear_mold", output: "tfg:small_gear_mold", name: "small_gear_mold" },
+    { input: "tfg:unfired_nugget_mold", output: "tfg:nugget_mold", name: "nugget_mold" }
 ]);
 
 global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
@@ -835,7 +839,10 @@ global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "5x minecraft:clay_ball", output: "10x rnr:unfired_roof_tile", name: "roof_tile" },
     { input: "5x minecraft:clay_ball", output: "firmalife:oven_top", name: "oven_top" },
     { input: "5x minecraft:clay_ball", output: "firmalife:oven_chimney", name: "oven_chimney" },
-    { input: "5x minecraft:clay_ball", output: "firmalife:oven_bottom", name: "oven_bottom" }
+    { input: "5x minecraft:clay_ball", output: "firmalife:oven_bottom", name: "oven_bottom" },
+    { input: "5x minecraft:clay_ball", output: "tfg:unfired_rod_mold", name: "rod_mold" },
+    { input: "5x minecraft:clay_ball", output: "tfg:unfired_small_gear_mold", name: "small_gear_mold" },
+    { input: "5x minecraft:clay_ball", output: "tfg:unfired_nugget_mold", name: "nugget_mold" }
 ]);
 
 global.TFC_FIRE_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
