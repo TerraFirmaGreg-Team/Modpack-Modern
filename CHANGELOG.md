@@ -3,6 +3,7 @@
 ## Unreleased
 ### Changes
 ### Bug fixes
+- Fixed missing blocks of coke
 
 ## [0.11.11] - 18-12-2025
 ### Breaking Changes
