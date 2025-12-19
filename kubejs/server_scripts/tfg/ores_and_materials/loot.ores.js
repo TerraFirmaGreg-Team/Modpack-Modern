@@ -71,11 +71,7 @@ const registerTFGOreLoots = (event) => {
 			if (material.hasProperty(PropertyKey.GEM)) {
 				let normalDrop = ChemicalHelper.get(TagPrefix.gemChipped, material, 1)
 				let sawDrop = ChemicalHelper.get(TagPrefix.gem, material, 1)
-
-				let bud = `gtceu:${material.getName()}_bud_indicator`;
-				if (material === $GreateMaterials.RoseQuartz) {
-					bud = 'greate:rose_quartz_bud_indicator';
-				}
+				let bud = ChemicalHelper.get(TagPrefix.surfaceRock, material, 1)
 
 				event.addBlockLootModifier(bud)
 					.matchMainHand("tfc:gem_saw")

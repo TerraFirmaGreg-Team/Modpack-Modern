@@ -1,7 +1,7 @@
 ﻿// priority: 0
 "use strict";
 
-function registerMinecraftDyeRecipes(event) {
+function registerTFGDyeRecipes(event) {
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		event.remove({ id: `minecraft:dye_${dye}_wool` })
@@ -9,8 +9,7 @@ function registerMinecraftDyeRecipes(event) {
 		event.remove({ id: `minecraft:dye_${dye}_carpet` })
 		event.remove({ id: `minecraft:${dye}_bed` })
 		event.remove({ id: `minecraft:dye_${dye}_bed` })
-
-		//#region Выход: Ковры, Кровати
+		event.remove({ id: `tfc:crafting/vanilla/color/${dye}_concrete_powder` })
 
 		event.shapeless(`2x minecraft:${dye}_carpet`, [
 			'#tfc:saws',
@@ -27,7 +26,10 @@ function registerMinecraftDyeRecipes(event) {
 				.category(GTRecipeCategories.CHEM_DYES)
 		}
 
-		//#endregion
+		event.recipes.tfc.barrel_instant()
+			.inputs(`minecraft:${dye}_concrete_powder`, TFC.fluidStackIngredient('minecraft:water', 100))
+			.outputItem(`minecraft:${dye}_concrete`)
+			.id(`tfg:barrel/dye/${dye}_concrete`);
 	})
 
 	// White

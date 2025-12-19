@@ -179,6 +179,7 @@ function registerGTCEUMetalRecipes(event) {
 		if (material.hasFlag(MaterialFlags.GENERATE_PLATE)
 			&& material !== GTMaterials.Wood
 			&& material !== GTMaterials.TreatedWood
+			&& material !== GTMaterials.Stone
 			&& !material.hasProperty(PropertyKey.POLYMER))
 		{
 			const plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
@@ -785,10 +786,8 @@ function registerGTCEUMetalRecipes(event) {
 		let chipped = ChemicalHelper.get(TagPrefix.gemChipped, material, 1)
 		let smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
 
-		let namespace = material === $GreateMaterials.RoseQuartz ? 'greate' : 'gtceu';
-
 		event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(
-			`${namespace}:${material.getName()}_bud_indicator`, [gem, '#tfc:chisels']))
+			ChemicalHelper.get(TagPrefix.surfaceRock, material, 1), [gem, '#tfc:chisels']))
 			.id(`shapeless/${material.getName()}_bud_indicator`)
 
 		event.shaped(smallDust,

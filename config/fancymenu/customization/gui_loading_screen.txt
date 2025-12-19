@@ -91,7 +91,7 @@ element {
 
 element {
   interactable = false
-  source = {"placeholder":"local","values":{"key":"tfg.gui.menu.field_guide_splash_text"}}
+  source = Tip: Read the field guide!!!
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -158,7 +158,7 @@ element {
 
 element {
   interactable = false
-  source = {"placeholder":"local","values":{"key":"tfg.gui.menu.ram_usage"}} {"placeholder":"usedram"}MB/ {"placeholder":"maxram"}MB
+  source = RAM: {"placeholder":"usedram"}MB/ {"placeholder":"maxram"}MB
   source_mode = direct
   shadow = true
   scale = 0.8
@@ -225,7 +225,7 @@ element {
 
 element {
   interactable = false
-  source = {"placeholder":"local","values":{"key":"tfg.gui.menu.fps_count"}} {"placeholder":"fps"}
+  source = FPS: {"placeholder":"fps"}
   source_mode = direct
   shadow = true
   scale = 0.8

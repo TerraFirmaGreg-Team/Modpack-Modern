@@ -463,86 +463,13 @@
 					id: "1F185450C1FF7379"
 					item: {
 						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:platinum_ore_group)"
 						}
-						id: "gtceu:purified_chalcocite_ore"
 					}
 					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "6140EA15476B4A16"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:purified_chalcopyrite_ore"
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "6F239C59DC002095"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:purified_bornite_ore"
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "29D38459E25A0D3E"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:purified_pentlandite_ore"
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "22DF4DB3FF6976EA"
-					item: "gtceu:purified_cooperite_ore"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "1A8C5E755FE82C59"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:purified_tetrahedrite_ore"
-					}
-					optional_task: true
+					title: "Any #tfg:platinum_ore_group"
 					type: "item"
 				}
 			]

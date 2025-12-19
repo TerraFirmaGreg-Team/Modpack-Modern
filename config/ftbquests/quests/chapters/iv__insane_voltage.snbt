@@ -6,7 +6,13 @@
 	icon: "tfg:iv_universal_circuit"
 	id: "32EF20533F323E02"
 	order_index: 1
-	quest_links: [ ]
+	quest_links: [{
+		id: "0D1F45B8DE565153"
+		linked_quest: "6ECAD339C91EF194"
+		size: 0.75d
+		x: 1.5d
+		y: 4.875d
+	}]
 	quests: [
 		{
 			dependencies: [
@@ -283,7 +289,7 @@
 			icon: "gtceu:tungstensteel_large_boiler"
 			id: "328CFD483C26EA44"
 			shape: "rsquare"
-			size: 0.66d
+			size: 0.75d
 			subtitle: "Good luck fueling this, lmao"
 			tasks: [
 				{
@@ -404,7 +410,7 @@
 			icon: "gtceu:iv_electric_motor"
 			id: "01AB252C72B565FE"
 			shape: "rsquare"
-			size: 0.66d
+			size: 0.75d
 			tasks: [
 				{
 					id: "382B9759383E1AC3"
@@ -444,48 +450,7 @@
 			]
 			title: "There is no limit to \"Fun\""
 			x: 0.375d
-			y: 6.0d
-		}
-		{
-			dependencies: ["7CC79617A4965F25"]
-			description: [
-				"Better Ore Processing for &6chanced Byproducts&r, only at the cost of this &3Macerator&r! A must have."
-				""
-				"And now, it's finally time for mass ore processing automation."
-				""
-				"The next Quest will kick things off!"
-			]
-			id: "05003665368F5A57"
-			size: 0.75d
-			tasks: [{
-				id: "4043CFB3C4E0DB90"
-				item: "gtceu:iv_macerator"
-				type: "item"
-			}]
-			title: "Shredding your Ores with further more Byproducts"
-			x: 1.5d
 			y: 4.875d
-		}
-		{
-			dependencies: ["05003665368F5A57"]
-			description: [
-				"Welcome to the age of automation!"
-				""
-				"Ore Processing is now at your fingertips."
-				""
-				"&6This quest unlocks a definitive tutorial on Ore Processing in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
-			]
-			icon: "gtceu:refined_almandine_ore"
-			id: "724FB950CC472BB4"
-			shape: "circle"
-			size: 0.66d
-			tasks: [{
-				id: "496C00BA0D8F5445"
-				type: "checkmark"
-			}]
-			title: "Setting up Ore Processing"
-			x: 1.5d
-			y: 6.0d
 		}
 		{
 			dependencies: [
