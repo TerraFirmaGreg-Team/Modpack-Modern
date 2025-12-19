@@ -81,7 +81,8 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['gtceu:nuclear_fuel_factory'], (item, advanced, text) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.nuclear_fuel_factory_1'));
 		text.add(2, Text.translate('gtceu.tooltip.machine.nuclear_fuel_factory_2'));
-		text.add(3, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
+		text.add(3, Text.translate('tfg.tooltip.machine.coil_speed_discount'));
+		text.add(4, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
 	})
 	event.addAdvanced(['gtceu:steam_bloomery'], (item, advanced, text) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.steam_bloomery_1'));
@@ -96,7 +97,7 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['gtceu:coal_liquefaction_tower'], (item, advanced, text) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_1'));
 		text.add(2, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_2'));
-		text.add(3, Text.translate('tfg.tooltip.machine.coil_energy_discount'));
+		text.add(3, Text.translate('tfg.tooltip.machine.coil_speed_discount'));
 		text.add(3, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
 	})
 
