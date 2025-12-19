@@ -13922,7 +13922,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.10.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.11.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13931,23 +13931,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/EY4KluIB/TerraFirmaGreg-Core-Modern-0.8.10.jar",
-                    "id": "EY4KluIB",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/LlHAk3em/TerraFirmaGreg-Core-Modern-0.8.11.jar",
+                    "id": "LlHAk3em",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "f9b39b905a066ef4d0a131080d076c007d348ad700cb56a8ee52e607046f1564d28993ebd3ae8f0d48ee874770b7ab1cab9fdfe4e36c918b05d6fc697bee402b",
-                        "sha1": "eb6603cfaa8d84cf6fe747732f97d7b3b10bb274"
+                        "sha512": "0ca79125debccf02c2f65bdf60be78ad6a80383ca250c2505f912b53364bb9de323214c40a4d74453e696ed382a21c21a002866e330226fa53436772f3f98b7c",
+                        "sha1": "0590a2fd0a2a6730def92f60df285adb838b2162"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "JaCEZUhg"
                     ],
-                    "size": 9347264,
-                    "date_published": "2025-12-18T21:55:26.799768Z"
+                    "size": 9344637,
+                    "date_published": "2025-12-19T11:54:06.090471Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.9.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.11.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13956,19 +13956,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7351/217/TerraFirmaGreg-Core-Modern-0.8.9.jar",
-                    "id": "7351217",
+                    "url": "https://edge.forgecdn.net/files/7353/303/TerraFirmaGreg-Core-Modern-0.8.11.jar",
+                    "id": "7353303",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "40b2d01116d9f879d8b49d78e09657c4277f02b7",
-                        "md5": "e032d7fb422eaf1e3793250f67ef5d62"
+                        "sha1": "0590a2fd0a2a6730def92f60df285adb838b2162",
+                        "md5": "fd7a169dc0a1a25da9877b8bb1b2cb41"
                     },
                     "required_dependencies": [
-                        "302973",
-                        "890405"
+                        "890405",
+                        "302973"
                     ],
-                    "size": 9347264,
-                    "date_published": "2025-12-18T20:54:23.127Z"
+                    "size": 9344637,
+                    "date_published": "2025-12-19T11:54:01.770Z"
                 }
             ]
         },
@@ -14922,15 +14922,15 @@
                         "sha1": "cad73c6a3e78233bed25f1d4255f12ffc6f97baf"
                     },
                     "required_dependencies": [
-                        "XxWD5pD3",
-                        "SzzJttH8"
+                        "SzzJttH8",
+                        "XxWD5pD3"
                     ],
                     "size": 67381,
                     "date_published": "2025-09-05T14:26:22.489897Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "applied_ammo_box-0.4.1.jar",
+                    "file_name": "applied_ammo_box-1.0.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14938,19 +14938,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7344/136/applied_ammo_box-0.4.1.jar",
-                    "id": "7344136",
+                    "url": "https://edge.forgecdn.net/files/7353/104/applied_ammo_box-1.0.0.jar",
+                    "id": "7353104",
                     "parent_id": "1338332",
                     "hashes": {
-                        "sha1": "0e8adc7538611a1ffc964b739f50d8ef0fa0fcb3",
-                        "md5": "62dfb0ed8cdafaf5985897d6fc6bfa09"
+                        "sha1": "3fc67723dc70b544b57ab0d0a34e2be991d285f9",
+                        "md5": "a6f67bd0ced376be1ef8dbf41e09fa51"
                     },
                     "required_dependencies": [
-                        "223794",
-                        "1028108"
+                        "1028108",
+                        "223794"
                     ],
-                    "size": 67748,
-                    "date_published": "2025-12-17T14:13:03.837Z"
+                    "size": 70111,
+                    "date_published": "2025-12-19T10:36:12.707Z"
                 }
             ]
         },

@@ -49,6 +49,12 @@ function registerTFGClayRecipes(event) {
 			.EUt(2)
 	}
 
+	event.shapeless('3x tfc:ceramic/unfired_brick', ['4x minecraft:clay_ball', 'gtceu:brick_wooden_form', 'minecraft:clay_ball'])
+		.id('tfg:shapeless/unfired_brick_via_wooden_form')
+
+	event.shapeless('3x tfc:ceramic/unfired_fire_brick', ['4x tfc:fire_clay', 'gtceu:brick_wooden_form', 'tfc:fire_clay'])
+		.id('tfg:shapeless/unfired_fire_brick_via_wooden_form')
+
 	event.recipes.gtceu.extruder('tfg:unfired_clay_brick')
 		.itemInputs('minecraft:clay_ball')
 		.notConsumable('gtceu:ingot_extruder_mold')

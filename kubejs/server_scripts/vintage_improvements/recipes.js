@@ -546,7 +546,7 @@ function registerVintageImprovementsRecipes(event) {
 		.id('tfg:vi/vacuumizing/latex_from_rubber_plants')
 
 	// Vulc. latex to raw rubber pulp
-	event.recipes.vintageimprovements.pressurizing(Fluid.of('tfg:vulcanized_latex', 250), '#forge:dusts/raw_rubber')
+	event.recipes.vintageimprovements.pressurizing('#forge:dusts/raw_rubber', Fluid.of('tfg:vulcanized_latex', 250))
 		.heated()
 		.processingTime(60 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id('tfg:vi/pressurizing/vulcanized_latex_to_raw_rubber')
