@@ -14906,7 +14906,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "applied_ammo_box-0.3.0.jar",
+                    "file_name": "applied_ammo_box-1.0.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14914,19 +14914,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/VQOi9K8E/versions/klC2PLr3/applied_ammo_box-0.3.0.jar",
-                    "id": "klC2PLr3",
+                    "url": "https://cdn.modrinth.com/data/VQOi9K8E/versions/AluWzzYV/applied_ammo_box-1.0.0.jar",
+                    "id": "AluWzzYV",
                     "parent_id": "VQOi9K8E",
                     "hashes": {
-                        "sha512": "261cb1606709b34d6086501b6f0dcaaa87545d51397d130747a992fd8a97095817774c8723417b030bb0bd4d4eac16ae007a1860c239203c00cf8163758dfdc6",
-                        "sha1": "cad73c6a3e78233bed25f1d4255f12ffc6f97baf"
+                        "sha512": "496d8d6fd91260346730fb4b986b16b5ddb42b53e41f4581929ffc08a75365a2edd05266c0e11c5f272dbe0899c5bdfd2d0144e01c59735131a4990d37eac040",
+                        "sha1": "3fc67723dc70b544b57ab0d0a34e2be991d285f9"
                     },
                     "required_dependencies": [
                         "SzzJttH8",
                         "XxWD5pD3"
                     ],
-                    "size": 67381,
-                    "date_published": "2025-09-05T14:26:22.489897Z"
+                    "size": 70111,
+                    "date_published": "2025-12-19T14:14:18.551065Z"
                 },
                 {
                     "type": "curseforge",
