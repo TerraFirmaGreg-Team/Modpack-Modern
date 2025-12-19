@@ -1420,17 +1420,20 @@
             ]
         },
         {
-            "pakku_id": "tcGlxrXYONei6sfG",
+            "pakku_id": "7Vq00IB6FTxaWTvr",
             "type": "MOD",
             "side": "SERVER",
             "slug": {
-                "curseforge": "baguettelib"
+                "curseforge": "baguettelib",
+                "modrinth": "baguettelib"
             },
             "name": {
-                "curseforge": "BaguetteLib"
+                "curseforge": "BaguetteLib",
+                "modrinth": "BaguetteLib"
             },
             "id": {
-                "curseforge": "1264423"
+                "curseforge": "1264423",
+                "modrinth": "OfKzpbRU"
             },
             "files": [
                 {
@@ -1453,6 +1456,27 @@
                     "required_dependencies": [],
                     "size": 31868,
                     "date_published": "2025-12-02T22:51:20.803Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "baguettelib-1.20.1-Forge-1.1.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/OfKzpbRU/versions/lFRf3UUH/baguettelib-1.20.1-Forge-1.1.5.jar",
+                    "id": "lFRf3UUH",
+                    "parent_id": "OfKzpbRU",
+                    "hashes": {
+                        "sha512": "e5de5fea569e3ef00230b7f1638885424c00d7f3b9ac471682ceb667ee0f22776c05bce0b25c592a350e787861077e67ebcc067d4104f4b993d886aa4f31a6ed",
+                        "sha1": "7aaab6216e7fc72e1606b1e35f1f56a18f01153f"
+                    },
+                    "required_dependencies": [],
+                    "size": 31868,
+                    "date_published": "2025-12-19T20:09:42.978615Z"
                 }
             ]
         },
@@ -3141,9 +3165,9 @@
         {
             "pakku_id": "jhQHIzkaO8paPfEL",
             "pakku_links": [
-                "tcGlxrXYONei6sfG",
                 "CyISC0hDehFhsqVb",
-                "0DMPJ1AWW6qfYubI"
+                "0DMPJ1AWW6qfYubI",
+                "7Vq00IB6FTxaWTvr"
             ],
             "type": "MOD",
             "side": "SERVER",
