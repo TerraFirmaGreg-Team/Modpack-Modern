@@ -13,7 +13,41 @@ const registerTFCRecipes = (event) => {
 	registerTFCDyeRecipes(event)
 
 	// Добавление рецептов
-	global.TFC_QUERN_POWDER_RECIPE_COMPONENTS.forEach(element => {
+	TFC_QUERN_POWDER_RECIPE_COMPONENTS = /** @type {const} */ ([
+		{ input: "#forge:dusts/coke", output: "4x tfc:powder/coke", name: "coke_powder" },
+		{ input: "#forge:dusts/amethyst", output: "4x tfc:powder/amethyst", name: "amethyst_powder" },
+		{ input: "#forge:dusts/diamond", output: "4x tfc:powder/diamond", name: "diamond_powder" },
+		{ input: "#forge:dusts/emerald", output: "4x tfc:powder/emerald", name: "emerald_powder" },
+		{ input: "#forge:dusts/lapis", output: "4x tfc:powder/lapis_lazuli", name: "lapis_powder" },
+		{ input: "#forge:dusts/opal", output: "4x tfc:powder/opal", name: "opal_powder" },
+		{ input: "#forge:dusts/pyrite", output: "4x tfc:powder/pyrite", name: "pyrite_powder" },
+		{ input: "#forge:dusts/ruby", output: "4x tfc:powder/ruby", name: "ruby_powder" },
+		{ input: "#forge:dusts/sapphire", output: "4x tfc:powder/sapphire", name: "sapphire_powder" },
+		{ input: "#forge:dusts/topaz", output: "4x tfc:powder/topaz", name: "topaz_powder" },
+		{ input: "#forge:dusts/gold", output: "4x tfc:powder/native_gold", name: "gold_powder" },
+		{ input: "#forge:dusts/silver", output: "4x tfc:powder/native_silver", name: "silver_powder" },
+		{ input: "#forge:dusts/copper", output: "4x tfc:powder/native_copper", name: "copper_powder" },
+		{ input: "#forge:dusts/cassiterite", output: "4x tfc:powder/cassiterite", name: "cassiterite_powder" },
+		{ input: "#forge:dusts/bismuth", output: "4x tfc:powder/bismuthinite", name: "bismuth_powder" },
+		{ input: "#forge:dusts/garnierite", output: "4x tfc:powder/garnierite", name: "garnierite_powder" },
+		{ input: "#forge:dusts/nickel", output: "4x tfc:powder/garnierite", name: "nickel_powder" },
+		{ input: "#forge:dusts/sphalerite", output: "4x tfc:powder/sphalerite", name: "sphalerite_powder" },
+		{ input: "#forge:dusts/magnetite", output: "4x tfc:powder/magnetite", name: "magnetite_powder" },
+		{ input: "#forge:dusts/tetrahedrite", output: "4x tfc:powder/tetrahedrite", name: "tetrahedrite_powder" },
+		{ input: "#forge:dusts/malachite", output: "4x tfc:powder/malachite", name: "malachite_powder" },
+		{ input: "#forge:dusts/yellow_limonite", output: "4x tfc:powder/limonite", name: "limonite_powder" },
+		{ input: "#forge:dusts/hematite", output: "4x tfc:powder/hematite", name: "hematite_powder" },
+		{ input: "#forge:dusts/sulfur", output: "4x tfc:powder/sulfur", name: "sulfur_powder" },
+		{ input: "#forge:dusts/saltpeter", output: "4x tfc:powder/saltpeter", name: "saltpeter_powder" },
+		{ input: "#forge:dusts/salt", output: "4x tfc:powder/salt", name: "salt_powder" },
+		{ input: "#forge:dusts/graphite", output: "4x tfc:powder/graphite", name: "graphite_powder" },
+		{ input: "#forge:dusts/borax", output: "4x tfc:powder/flux", name: "flux_powder" },
+		{ input: "#forge:dusts/soda_ash", output: "4x tfc:powder/soda_ash", name: "soda_ash" },
+		{ input: "gtceu:charcoal_dust", output: "2x tfc:powder/charcoal", name: "charcoal" },
+		{ input: "tfc:ore/sylvite", output: "4x tfc:powder/sylvite", name: "sylvite" }
+	]);
+
+	TFC_QUERN_POWDER_RECIPE_COMPONENTS.forEach(element => {
 		event.recipes.gtceu.macerator(`tfg:${element.name}`)
 			.itemInputs(element.input)
 			.itemOutputs(element.output)
