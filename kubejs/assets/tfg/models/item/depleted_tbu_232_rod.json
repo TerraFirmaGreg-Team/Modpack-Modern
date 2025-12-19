@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "tfg:item/depleted_tbu_232_rod"
+    "layer0": "tfg:item/fission_rod/tbu_rod_depleted"
   }
 }

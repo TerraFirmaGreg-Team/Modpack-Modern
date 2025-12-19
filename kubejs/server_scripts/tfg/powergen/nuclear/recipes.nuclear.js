@@ -488,7 +488,6 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20 * (2.5))
 		.EUt(GTValues.VH[GTValues.LV])
 		.addMaterialInfo(true)
-	/*
 	
 	event.recipes.gtceu.mixer('tfg:thermally_conductive_fluid')
 		.itemInputs('7x #forge:dusts/gallium', '2x #forge:dusts/tin', '#forge:dusts/zinc')
@@ -652,7 +651,6 @@ function registerTFGNuclearRecipes(event) {
         .EUt(GTValues.VA[GTValues.IV])
 
 	//#region FLiBe Line - SCRAP FROM MARS TO VENUS
-
 
 	event.recipes.gtceu.evaporation_tower('raw_rich_brine_earth')
 		.inputFluids(Fluid.of('tfc:spring_water', 20000))
@@ -834,7 +832,7 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.IV])
 
-		//#region Epoxidized Isosorbide Linolenate
+	//#region Epoxidized Isosorbide Linolenate
 
 	event.recipes.gtceu.distillery('tfg:linolenic_from_seed')
 		.inputFluids(Fluid.of('gtceu:seed_oil', 1000))
@@ -916,5 +914,4 @@ function registerTFGNuclearRecipes(event) {
 
 
 	//#endregion
-
 }

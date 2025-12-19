@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "tfg:item/neptunium_237_rod"
+    "layer0": "tfg:item/fission_rod/neptunium_237_rod"
   }
 }
