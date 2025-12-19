@@ -2,6 +2,11 @@
 
 ## Unreleased
 ### Changes
+### Bug fixes
+### Translation updates
+
+## [0.11.12] - 19-12-2025
+### Changes
 - Brick Wooden Form can now be used to make unfired clay and fire clay bricks at the same rate as knapping (#2461) @Pyritie
 ### Bug fixes
 - Fixed missing blocks of coke @Pyritie
