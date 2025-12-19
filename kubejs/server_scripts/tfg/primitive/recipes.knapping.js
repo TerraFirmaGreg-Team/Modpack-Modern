@@ -240,7 +240,7 @@ function registerTFGKnappingRecipes(event) {
 	])
 		.id('tfg:clay_knapping/unfired_rod_mold')
 	
-	event.recipes.tfc.knapping('tfg:unfired_small_gear_mold', 'tfc:clay', [
+	event.recipes.tfc.knapping('tfg:unfired_small_gear_mold', 'tfc:fire_clay', [
 		"XX XX",
 		"X   X",
 		"  X  ",
