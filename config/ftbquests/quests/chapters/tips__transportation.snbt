@@ -543,6 +543,7 @@
 			dependencies: ["2B84F34BFA37C828"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.canoe_materials.desc}"]
+			guide_page: "tfc:field_guide tfc:firmaciv/canoe"
 			id: "32C854110D49A77D"
 			subtitle: "{quests.tfg_tips.canoe_materials.subtitle}"
 			tasks: [
@@ -603,6 +604,7 @@
 		{
 			dependencies: ["2B84F34BFA37C828"]
 			description: ["{quests.tfg_tips.kayak_materials.desc}"]
+			guide_page: "tfc:field_guide tfc:firmaciv/kayak"
 			id: "03696C9BBC53AB26"
 			subtitle: "{quests.tfg_tips.kayak_materials.subtitle}"
 			tasks: [
@@ -649,6 +651,7 @@
 				"2B84F34BFA37C828"
 			]
 			description: ["{quests.tfg_tips.rowboat_materials.desc}"]
+			guide_page: "tfc:field_guide tfc:firmaciv/rowboat"
 			id: "3DF4F4848B231980"
 			subtitle: "{quests.tfg_tips.rowboat_materials.subtitle}"
 			tasks: [
@@ -722,6 +725,7 @@
 			dependencies: ["2B84F34BFA37C828"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.sloop_under_construction_materials.desc}"]
+			guide_page: "tfc:field_guide tfc:firmaciv/sloop"
 			id: "2746958D3D4A0885"
 			subtitle: "{quests.tfg_tips.sloop_under_construction_materials.subtitle}"
 			tasks: [
@@ -844,6 +848,7 @@
 		{
 			dependencies: ["78358ED2C6F6FCFD"]
 			description: ["{quests.tfg_tips.warfare.desc}"]
+			guide_page: "tfc:field_guide tfc:firmaciv/cannon"
 			id: "66FDACC7E7F9180C"
 			subtitle: "{quests.tfg_tips.warfare.subtitle}"
 			tasks: [
@@ -890,6 +895,7 @@
 		{
 			dependencies: ["60497014785301EB"]
 			description: ["{quests.tfg_tips.firmaciv.desc}"]
+			guide_page: "tfc:field_guide tfc:firmaciv/watercraft"
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -916,6 +922,7 @@
 		{
 			dependencies: ["2B84F34BFA37C828"]
 			description: ["{quests.tfg_tips.firmaciv_info.desc}"]
+			guide_page: "tfc:field_guide tfc:firmaciv/navigation"
 			id: "5EDE435F876349CD"
 			optional: true
 			shape: "heart"
@@ -1462,6 +1469,7 @@
 		{
 			dependencies: ["1594C2564FC7982D"]
 			description: ["{quests.tfg_tips.horseshoes.desc}"]
+			guide_page: "tfc:field_guide tfc:sns/horseshoes"
 			id: "40566F6665A095C6"
 			subtitle: "{quests.tfg_tips.horseshoes.subtitle}"
 			tasks: [{
@@ -1482,6 +1490,7 @@
 		}
 		{
 			description: ["{quests.tfg_tips.hiking_boots.desc}"]
+			guide_page: "tfc:field_guide tfc:sns/safety_toe_hiking_boots"
 			id: "598CA763D195C84E"
 			subtitle: "{quests.tfg_tips.hiking_boots.subtitle}"
 			tasks: [{

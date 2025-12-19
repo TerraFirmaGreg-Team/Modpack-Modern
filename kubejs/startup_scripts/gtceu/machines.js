@@ -456,7 +456,7 @@ const registerGTCEuMachines = (event) => {
 		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('coal_liquefaction_tower')
-		.recipeModifiers([(machine, recipe) => GTRecipeModifiers.crackerOverclock(machine, recipe), GTRecipeModifiers.BATCH_MODE])
+		.recipeModifiers([(machine, recipe) => GTRecipeModifiers.pyrolyseOvenOverclock(machine, recipe), GTRecipeModifiers.BATCH_MODE])
 		.appearanceBlock(() => Block.getBlock('gtceu:solid_machine_casing'))
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle('CCC', 'D D', 'D D', 'DED', 'DED', 'BBB')

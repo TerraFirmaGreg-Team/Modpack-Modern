@@ -44,7 +44,7 @@
 			id: "227B6C88FFE99435"
 			linked_quest: "4EBABACAB444244D"
 			shape: "heart"
-			x: 16.5d
+			x: 17.0d
 			y: -24.5d
 		}
 		{
@@ -57,7 +57,7 @@
 		{
 			id: "3249AB9EB552BB77"
 			linked_quest: "4B79026C8D2DACC4"
-			x: 17.5d
+			x: 18.5d
 			y: -28.0d
 		}
 	]
@@ -122,6 +122,7 @@
 		{
 			dependencies: ["5996A3A0D475B8A6"]
 			description: ["{quests.metal_age.steel_anvil.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/steel"
 			id: "04DE7C58F20B535A"
 			shape: "octagon"
 			size: 2.0d
@@ -205,6 +206,7 @@
 				"7B2068B200631D5C"
 			]
 			description: ["{quests.metal_age.bloomery.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/bloomery"
 			id: "0A92F5C4BB6AF972"
 			size: 2.0d
 			subtitle: "{quests.metal_age.bloomery.subtitle}"
@@ -285,6 +287,7 @@
 		}
 		{
 			description: ["{quests.metal_age.bellows.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/bellows"
 			hide_dependency_lines: true
 			id: "021D3DEEB15A3D17"
 			subtitle: "{quests.metal_age.bellows.subtitle}"
@@ -392,6 +395,7 @@
 		{
 			dependencies: ["2C76EE197C14B0DC"]
 			description: ["{quests.metal_age.crucible.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/crucible"
 			icon: "tfc:crucible"
 			id: "12CB3B9ADC586521"
 			shape: "octagon"
@@ -484,6 +488,7 @@
 			dependencies: ["2C76EE197C14B0DC"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.fire_bricks.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/blast_furnace_insulation"
 			icon: "tfc:fire_bricks"
 			id: "7CD2922D9F6FA6C5"
 			shape: "octagon"
@@ -664,7 +669,7 @@
 				type: "item"
 			}]
 			title: "{quests.metal_age.red_steel_flask.title}"
-			x: 16.5d
+			x: 17.0d
 			y: -27.5d
 		}
 		{
@@ -1270,6 +1275,27 @@
 			title: "{quests.steam_age.organization.title}"
 			x: 17.0d
 			y: -29.5d
+		}
+		{
+			dependencies: ["56CA2EB7812529C5"]
+			description: ["{quests.metal_age.temperature_protection.desc}"]
+			id: "310D96268266D787"
+			subtitle: "{quests.metal_age.temperature_protection.subtitle}"
+			tasks: [{
+				id: "334F07058A050458"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfc:metal/boots/red_steel)item(sns:red_steel_toe_hiking_boots)item(tfc:metal/chestplate/red_steel)item(tfc:metal/boots/blue_steel)item(sns:blue_steel_toe_hiking_boots)item(minecraft:netherite_boots)item(create:netherite_diving_boots)item(tfc:metal/chestplate/blue_steel)item(create:netherite_backtank))"
+					}
+				}
+				title: "{quests.metal_age.temperature_protection.task}"
+				type: "item"
+			}]
+			title: "{quests.metal_age.temperature_protection.title}"
+			x: 18.5d
+			y: -24.0d
 		}
 	]
 	subtitle: ["{quests.metal_age.subtitle}"]

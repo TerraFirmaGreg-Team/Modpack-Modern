@@ -18,6 +18,12 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['create:blaze_burner'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.blaze_burner'))
 	})
+	event.addAdvanced(['tfg:antipoison_pill'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.antipoison_pill'))
+	})
+	event.addAdvanced(['tfg:antipoison_tablet'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.antipoison_tablet'))
+	})
 	event.addAdvanced(['tfg:electric_greenhouse'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.electric_greenhouse_1'));
 		text.add(2, Text.translate('tfg.tooltip.machine.electric_greenhouse_2'));

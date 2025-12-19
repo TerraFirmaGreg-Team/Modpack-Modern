@@ -217,20 +217,14 @@ function registerTFGWoodRecipes(event) {
 			.duration(50)
 			.EUt(2)
 
-		event.custom({
-			type: 'vintageimprovements:polishing',
-			ingredients: [{ item: `tfc:wood/log/${wood}` }],
-			results: [{ item: `tfc:wood/stripped_log/${wood}` }],
-			speed_limits: 0,
-			processingTime: 50
-		}).id(`tfg:vi/lathe/stripping_${wood}_log`)
+		event.recipes.vintageimprovements.polishing(`tfc:wood/stripped_log/${wood}`, `tfc:wood/log/${wood}`)
+			.speedLimits(0)
+			.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+			.id(`tfg:vi/lathe/stripping_${wood}_log`)
 
-		event.custom({
-			type: 'vintageimprovements:polishing',
-			ingredients: [{ item: `tfc:wood/wood/${wood}` }],
-			results: [{ item: `tfc:wood/stripped_wood/${wood}` }],
-			speed_limits: 0,
-			processingTime: 50
-		}).id(`tfg:vi/lathe/stripping_${wood}_wood`)
+		event.recipes.vintageimprovements.polishing(`tfc:wood/stripped_wood/${wood}`, `tfc:wood/wood/${wood}`)
+			.speedLimits(0)
+			.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+			.id(`tfg:vi/lathe/stripping_${wood}_wood`)
 	})
 }

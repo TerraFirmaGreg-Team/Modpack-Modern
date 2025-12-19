@@ -1,0 +1,19 @@
+{
+	"structures": [
+		{
+			"structure": "tfg:illagers/forest_roaming",
+			"weight": 100
+		}
+	],
+	"placement": {
+		"type": "tfc:climate",
+		"salt": 74256242524,
+		"spacing": 35,
+		"separation": 25,
+		"climate": {
+			"min_temperature": -12,
+			"max_temperature": 25,
+			"min_forest": "edge"
+		}
+	}
+}

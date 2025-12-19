@@ -1122,6 +1122,7 @@
 		{
 			dependencies: ["2D959136A5FC5F46"]
 			description: ["{quests.tfg_tips.lamps.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/lamps"
 			id: "037CDA933FBE2CBE"
 			subtitle: "{quests.tfg_tips.lamps.subtitle}"
 			tasks: [
@@ -1273,6 +1274,7 @@
 		{
 			dependencies: ["2D959136A5FC5F46"]
 			description: ["{quests.tfg_tips.glass_blocks.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/glassworking_applications"
 			id: "382FC8824F311665"
 			subtitle: "{quests.tfg_tips.glass_blocks.subtitle}"
 			tasks: [
@@ -1329,6 +1331,7 @@
 		{
 			dependencies: ["150B7C5CD152E1BA"]
 			description: ["{quests.tfg_tips.glassblowing.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/glassworking"
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -1385,6 +1388,7 @@
 		{
 			dependencies: ["150B7C5CD152E1BA"]
 			description: ["{quests.tfg_tips.trowel.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/trowel"
 			id: "26DFC32AD5DED4E9"
 			subtitle: "{quests.tfg_tips.trowel.subtitle}"
 			tasks: [{
@@ -1405,6 +1409,7 @@
 		{
 			dependencies: ["150B7C5CD152E1BA"]
 			description: ["{quests.tfg_tips.fishing_net.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/fishing_nets"
 			id: "2A57C41D681E4611"
 			subtitle: "{quests.tfg_tips.fishing_net.subtitle}"
 			tasks: [{
@@ -2452,6 +2457,7 @@
 		{
 			dependencies: ["150B7C5CD152E1BA"]
 			description: ["{quests.tfg_tips.tools_tips.harvest_basket.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/harvest_baskets"
 			id: "5B0A9757F1EF1B9E"
 			subtitle: "{quests.tfg_tips.tools_tips.harvest_basket.subtitle}"
 			tasks: [{
@@ -2528,6 +2534,7 @@
 		{
 			dependencies: ["7FA5B6354A49C396"]
 			description: ["{quests.tfg_tips.first_sacks.desc}"]
+			guide_page: "tfc:field_guide tfc:sns/leather_sack"
 			id: "509C064AA92FD78F"
 			subtitle: "{quests.tfg_tips.first_sacks.subtitle}"
 			tasks: [
@@ -2571,6 +2578,7 @@
 		{
 			dependencies: ["7178843BCD50A012"]
 			description: ["{quests.tfg_tips.frame_pack.desc}"]
+			guide_page: "tfc:field_guide tfc:sns/frame_pack"
 			id: "5443F4F5AE53B91A"
 			shape: "octagon"
 			size: 2.0d
@@ -2597,6 +2605,7 @@
 		{
 			dependencies: ["509C064AA92FD78F"]
 			description: ["{quests.tfg_tips.special_sacks.desc}"]
+			guide_page: "tfc:field_guide tfc:sns/ore_sack"
 			id: "21C58B2541BFA2EE"
 			shape: "heart"
 			subtitle: "{quests.tfg_tips.special_sacks.subtitle}"
@@ -2663,6 +2672,7 @@
 		{
 			dependencies: ["7FA5B6354A49C396"]
 			description: ["{quests.tfg_tips.straw_basket.desc}"]
+			guide_page: "tfc:field_guide tfc:sns/straw_basket"
 			id: "67F40A90844EC0FC"
 			subtitle: "{quests.tfg_tips.straw_basket.subtitle}"
 			tasks: [{
@@ -2687,6 +2697,7 @@
 		{
 			dependencies: ["150B7C5CD152E1BA"]
 			description: ["{quests.tfg_tips.hiking.desc}"]
+			guide_page: "tfc:field_guide tfc:sns/hiking_boots"
 			icon: {
 				Count: 1
 				id: "sns:hiking_boots"
@@ -2780,6 +2791,7 @@
 		}
 		{
 			dependencies: ["379F434116632A89"]
+			guide_page: "tfc:field_guide tfc:roadsandroofs/making_a_road"
 			id: "15277C12EEB517E1"
 			shape: "diamond"
 			subtitle: "{quests.tfg_tips.tools_tips.base_course.subtitle}"
@@ -2839,6 +2851,7 @@
 			dependencies: ["15277C12EEB517E1"]
 			description: ["{quests.tfg_tips.tools_tips.gravel_roads.desc}"]
 			disable_toast: true
+			guide_page: "tfc:field_guide tfc:roadsandroofs/gravel_roads"
 			id: "7E46F50FEBEE9003"
 			subtitle: "{quests.tfg_tips.tools_tips.gravel_roads.subtitle}"
 			tasks: [{

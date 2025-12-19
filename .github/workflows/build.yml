@@ -34,7 +34,7 @@ jobs:
     
     steps:
       - name: 📦 Checkout
-        uses: actions/checkout@v6.0.0
+        uses: actions/checkout@v6.0.1
         with:
           fetch-depth: 0
         
@@ -156,7 +156,7 @@ jobs:
         continue-on-error: true
 
       - name: 🔍 Check if tag exists
-        uses: mukunku/tag-exists-action@v1.6.0
+        uses: mukunku/tag-exists-action@v1.7.0
         id: check_tag
         with:
           tag: ${{ steps.changelog.outputs.version }}
@@ -229,7 +229,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v6.0.0
+        uses: actions/checkout@v6.0.1
         with:
           fetch-depth: 0
 
@@ -313,7 +313,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6.0.0
+        uses: actions/checkout@v6.0.1
 
       - name: 🔄 Replace strings
         shell: bash
@@ -340,7 +340,7 @@ jobs:
           sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
 
       - name: 📝 Cache pakku
-        uses: actions/cache@v4.3.0
+        uses: actions/cache@v5.0.1
         id: cache
         with:
           path: build/.cache
@@ -362,7 +362,7 @@ jobs:
           mv *.zip $(basename -s .zip *.zip)-curseforge.zip
           
       - name: 🚀 Upload artifact CurseForge
-        uses: actions/upload-artifact@v5.0.0
+        uses: actions/upload-artifact@v6.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-curseforge
           path: ./build/curseforge/${{ needs.info.outputs.project_full_name }}-curseforge.zip
@@ -374,7 +374,7 @@ jobs:
           mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
 
       - name: 🚀 Upload artifact modrinth
-        uses: actions/upload-artifact@v5.0.0
+        uses: actions/upload-artifact@v6.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-modrinth
           path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
@@ -387,16 +387,18 @@ jobs:
 
           mv -vf .pakku/multimc-overrides ./build/multimc
 
-          cp -vf ./build/.cache/curseforge/manifest.json ./build/multimc/flame/manifest.json
-
+          
           cp -rf ./build/.cache/curseforge/overrides ./build/multimc/.minecraft
+
+          cp -vf ./build/.cache/curseforge/manifest.json ./build/multimc/flame/manifest.json
+          cp -vf ./config/fancymenu/assets/icons/icon128x128.png ./build/multimc/.minecraft/icon.png
           cp -rf ./mods ./build/multimc/.minecraft/
 
           cd ./build/multimc/
           zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
       - name: 🚀 Upload artifact multimc
-        uses: actions/upload-artifact@v5.0.0
+        uses: actions/upload-artifact@v6.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-multimc
           path: ./build/multimc/${{ needs.info.outputs.project_full_name }}-multimc.zip
@@ -408,7 +410,7 @@ jobs:
           mv *.zip $(basename -s .zip *.zip)-serverpack.zip
 
       - name: 🚀 Upload artifact server
-        uses: actions/upload-artifact@v5.0.0
+        uses: actions/upload-artifact@v6.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-serverpack
           path: ./build/serverpack/${{ needs.info.outputs.project_full_name }}-serverpack.zip
@@ -424,10 +426,10 @@ jobs:
 
     steps:
       - name: 📦 Checkout
-        uses: actions/checkout@v6.0.0
+        uses: actions/checkout@v6.0.1
 
       - name: 📦 Download artifact
-        uses: actions/download-artifact@v6.0.0
+        uses: actions/download-artifact@v7.0.0
         with:
           merge-multiple: true
 
@@ -495,7 +497,7 @@ jobs:
           fi  
 
       - name: 📦 Download artifact
-        uses: actions/download-artifact@v6.0.0
+        uses: actions/download-artifact@v7.0.0
         with:
           merge-multiple: true
 
@@ -545,7 +547,7 @@ jobs:
             fi  
     
         - name: 📦 Download artifact
-          uses: actions/download-artifact@v6.0.0
+          uses: actions/download-artifact@v7.0.0
           with:
             merge-multiple: true
 
