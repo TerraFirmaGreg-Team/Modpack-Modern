@@ -62,7 +62,7 @@ function registerTFGBoilerRecipes(event) {
 
 	// Small nerf to charcoal
 
-	event.forEachRecipe({ id: /gtceu:(steam_boiler|large_boiler)\/minecraft_charcoal/ }, recipe => {
+	event.forEachRecipe({ id: /gtceu:(steam_boiler|large_boiler)\/.*charcoal.*/ }, recipe => {
         var newDuration = recipe.get("duration")
         recipe.set("duration", newDuration/4*3)
 	})
