@@ -246,7 +246,8 @@ global.GTCEU_HIDED_ITEMS = /** @type {const} */ ([
 	  "gtceu:iv_damascus_steel_wrench",
 	  "gtceu:lv_damascus_steel_screwdriver",
 
-	  "gtceu:sus_record"
+	  "gtceu:sus_record",
+      "expatternprovider:fishbig"
 ]);
 //#endregion
 
