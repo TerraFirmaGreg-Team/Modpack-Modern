@@ -3,6 +3,7 @@
 ## Unreleased
 ### Changes
 ### Bug fixes
+- Fixes some curving press tool head recipes being cheaper than intended (#2478) @Pyritie
 ### Translation updates
 
 ## [0.11.12] - 19-12-2025
