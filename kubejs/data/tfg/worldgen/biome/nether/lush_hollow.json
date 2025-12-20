@@ -46,7 +46,9 @@
 		[],
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
-		[],
+		[
+			"tfg:nether/terrain/mossy_cobble"
+		],
 		[
 			"beneath:blackstone_boulders",
 			"tfg:nether/surface/loose_deepslate",
