@@ -48,7 +48,18 @@ function registerTFGRockRecipes(event) {
 
 		{ loose: 'minecraft:popped_chorus_fruit', block: '4x minecraft:purpur_block' },
 
-		{ loose: 'gtceu:stone_ingot',			  block: '4x minecraft:stone_bricks' }
+		{ loose: 'gtceu:stone_ingot',			  block: '4x minecraft:stone_bricks' },
+
+		{ loose: 'minecraft:deepslate',		      block: '2x tfg:rock/hardened_deepslate' },
+		{ loose: 'minecraft:blackstone',		  block: '2x tfg:rock/hardened_blackstone' },
+		{ loose: 'minecraft:dripstone_block',	  block: '2x tfg:rock/hardened_dripstone' },
+		{ loose: 'ad_astra:moon_stone',		      block: '2x tfg:rock/hardened_moon_stone' },
+		{ loose: 'ad_astra:moon_deepslate',		  block: '2x tfg:rock/hardened_moon_deepslate'},
+		{ loose: 'ad_astra:mars_stone',			  block: '2x tfg:rock/hardened_mars_stone'},
+		{ loose: 'ad_astra:venus_stone',		  block: '2x tfg:rock/hardened_venus_stone'},
+		{ loose: 'ad_astra:mercury_stone',		  block: '2x tfg:rock/hardened_mercury_stone'},
+		{ loose: 'ad_astra:glacio_stone',	      block: '2x tfg:rock/hardened_glacio_stone'},
+		{ loose: 'gtceu:red_granite',			  block: '2x tfg:rock/hardened_red_granite'}
 	]
 
 	GLUEING_TOGETHER.forEach(x => {
