@@ -2,6 +2,7 @@
 
 ## Unreleased
 ### Changes
+- Added some new illages to the hot and dry climates of the world! @MVG31
 ### Bug fixes
 - Fixes some curving press tool head recipes being cheaper than intended (#2478) @Pyritie
 ### Translation updates
