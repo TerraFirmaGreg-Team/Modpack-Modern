@@ -27,15 +27,15 @@ const registerGTCEuRecipeTypes = (event) => {
 		.setMaxIOSize(2, 0, 2, 1)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.COOLING)
-
+/*
 	event.create('nuclear_fuel_factory')
 		.category('nuclear_fuel_factory')
 		.setEUIO('in')
-		.setMaxIOSize(6, 1, 1, 0)
+		.setMaxIOSize(6, 1, 1, 1)
 		.setSlotOverlay(false, false, GuiTextures.ATOMIC_OVERLAY_1)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_LATHE, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.CUT)
-
+*/
 	event.create('heat_exchanger')
 		.category('heat_exchanger')
 		.setEUIO('in')
