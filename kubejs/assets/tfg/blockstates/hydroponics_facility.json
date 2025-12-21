@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "tfg:block/machines/hydroponics_facility",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tfg:block/machines/hydroponics_facility"
+    },
+    "facing=south": {
+      "model": "tfg:block/machines/hydroponics_facility",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tfg:block/machines/hydroponics_facility",
+      "y": 270
+    }
+  }
+}
