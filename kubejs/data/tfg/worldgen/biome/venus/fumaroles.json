@@ -4,8 +4,8 @@
 	},
 	"downfall": 0,
 	"effects": {
-		"sky_color": 10465603,
-		"fog_color": 9938052,
+		"sky_color": 11644227,
+		"fog_color": 10788996,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
 		"grass_color": 13758586,
@@ -20,7 +20,7 @@
 			"options": {
 				"type": "minecraft:ash"
 			},
-			"probability": 0.1
+			"probability": 0.03
 		}
 	},
 	"features": [
@@ -38,9 +38,12 @@
 			"tfc:raw_boulder",
 			"tfc:cobble_boulder",
 			"tfc:raw_boulder_small_patch",
-			"tfc:cobble_boulder_small_patch"
+			"tfc:cobble_boulder_small_patch",
+			"tfg:venus/terrain/thermal_vent_rare"
 		],
-		[],
+		[
+			"tfg:venus/surface/sulfur_patch"
+		],
 		"#tfg:venus_top_layer_modification"
 	],
 	"has_precipitation": true,

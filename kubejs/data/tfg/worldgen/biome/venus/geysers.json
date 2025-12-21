@@ -39,7 +39,8 @@
 		[
 			"tfc:raw_boulder_small_patch",
 			"tfc:cobble_boulder_small_patch",
-			"tfg:venus/surface/geyser_source_patch"
+			"tfg:venus/surface/geyser_source_patch",
+			"tfg:venus/terrain/thermal_vent_rare"
 		],
 		[],
 		"#tfg:venus_top_layer_modification"

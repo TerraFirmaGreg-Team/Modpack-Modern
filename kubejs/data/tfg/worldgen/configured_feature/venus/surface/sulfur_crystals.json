@@ -1,0 +1,42 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "minecraft:simple_block",
+				"config": {
+					"to_place": {
+						"type": "minecraft:simple_state_provider",
+						"state": {
+							"Name": "betterend:sulphur_crystal"
+						}
+					}
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:heightmap",
+					"heightmap": "OCEAN_FLOOR_WG"
+				},
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:all_of",
+						"predicates": [
+							{
+								"type": "minecraft:matching_blocks",
+								"blocks": [
+									"minecraft:air",
+									"tfg:fluid/sulfur_fumes"
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		"tries": 24,
+		"xz_spread": 3,
+		"y_spread": 0
+	}
+}

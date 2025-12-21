@@ -185,7 +185,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.particleOffset(0.3, 1, 0.3)
 		.particleVelocity(0, 0.1, 0)
 		.particle('minecraft:large_smoke')
-		.particleCount(5)
+		.particleCount(2)
 		.particleForced(true)
 
 	event.create('betterend:tube_worm', 'tfg:attached_decorative_plant')
