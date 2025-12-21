@@ -146,6 +146,8 @@ function registerTFGCasingBlocks(event) {
 		.activeCount(1)
 		.activeParticle('minecraft:dripping_water')
 		.activeForced(false)
+		.hasTicker(true)
+		.emitDelay(200)
 		.tagBlock('tfc:tree_grows_on')
 		.tagBlock('tfc:bush_plantable_on')
 		.tagBlock('tfc:wild_crop_grows_on')
