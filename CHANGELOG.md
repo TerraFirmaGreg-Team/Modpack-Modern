@@ -7,6 +7,7 @@
 - Added some mossy cobblestone to the beneath @Pyritie
 - Hardened non-TFC rocks are now craftable (#2447) @glitchplaysgames714
 - Magma blocks are now hot to hold @Pyritie
+- Added a recipe to craft old gregtech facades into ones with a new texture @Pyritie
 ### Bug fixes
 - Fixed some curving press tool head recipes being cheaper than intended (#2478) @Pyritie
 - Fixed some bastion chests being empty @Pyritie
