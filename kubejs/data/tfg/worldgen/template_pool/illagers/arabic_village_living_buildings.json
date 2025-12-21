@@ -60,6 +60,24 @@
 			}
 		},
 		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:arabic/baseline/house3",
+				"processors": "tfg:illagers/arabic_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:arabic/baseline/house4",
+				"processors": "tfg:illagers/arabic_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
 			"weight": 30,
 			"element": {
 				"element_type": "lithostitched:limited",
