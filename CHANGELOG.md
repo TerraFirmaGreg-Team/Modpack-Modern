@@ -6,11 +6,13 @@
 - Added some new illages to the hot and dry climates of the world! @MVG31
 - Added some mossy cobblestone to the beneath @Pyritie
 - Hardened non-TFC rocks are now craftable (#2447) @glitchplaysgames714
+- Magma blocks are now hot to hold @Pyritie
 ### Bug fixes
 - Fixed some curving press tool head recipes being cheaper than intended (#2478) @Pyritie
 - Fixed some bastion chests being empty @Pyritie
 - Fixed overlapping durability numbers on the curio HUD (#2484) @glitchplaysgames714
 ### Translation updates
+- Chinese (simplified) @jmecn
 
 ## [0.11.12] - 19-12-2025
 ### Changes
