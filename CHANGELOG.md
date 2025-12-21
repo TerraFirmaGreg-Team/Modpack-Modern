@@ -3,7 +3,7 @@
 ## Unreleased
 ### Changes
 - Added casting molds for small gears, nuggets, and rods (#2470) @glitchplaysgames714
-- Added some new illages to the hot and dry climates of the world! @MVG31
+- Added some new illages to the hot and dry, and cold and dry climates of the world! @MVG31
 - Added some mossy cobblestone to the beneath @Pyritie
 - Hardened non-TFC rocks are now craftable (#2447) @glitchplaysgames714
 - Magma blocks are now hot to hold @Pyritie

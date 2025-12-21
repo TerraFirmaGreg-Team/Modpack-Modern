@@ -1,0 +1,21 @@
+{
+	"structures": [
+		{
+			"structure": "tfg:illagers/yurts_village_living",
+			"weight": 100
+		}
+	],
+	"placement": {
+		"type": "tfc:climate",
+		"salt": 26256356324,
+		"spacing": 40,
+		"separation": 30,
+		"climate": {
+			"min_temperature": -12,
+			"max_temperature": 8,
+			"min_rainfall": 100,
+			"max_rainfall": 250,
+			"max_forest": "edge"
+		}
+	}
+}
