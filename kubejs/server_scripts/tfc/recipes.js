@@ -13,7 +13,7 @@ const registerTFCRecipes = (event) => {
 	registerTFCDyeRecipes(event)
 
 	// Добавление рецептов
-	TFC_QUERN_POWDER_RECIPE_COMPONENTS = /** @type {const} */ ([
+	const TFC_QUERN_POWDER_RECIPE_COMPONENTS = /** @type {const} */ ([
 		{ input: "#forge:dusts/coke", output: "4x tfc:powder/coke", name: "coke_powder" },
 		{ input: "#forge:dusts/amethyst", output: "4x tfc:powder/amethyst", name: "amethyst_powder" },
 		{ input: "#forge:dusts/diamond", output: "4x tfc:powder/diamond", name: "diamond_powder" },

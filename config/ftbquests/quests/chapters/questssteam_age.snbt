@@ -19,7 +19,7 @@
 		{
 			id: "39027CF4DC307D33"
 			linked_quest: "5E186CD5E83BFDF0"
-			x: -29.0d
+			x: -28.5d
 			y: 2.0d
 		}
 		{
@@ -40,7 +40,7 @@
 			linked_quest: "48A8E3210B2BAE1C"
 			shape: "octagon"
 			size: 2.0d
-			x: -29.0d
+			x: -28.5d
 			y: 0.0d
 		}
 		{
@@ -53,7 +53,7 @@
 		{
 			id: "65E0B13E245D2E5F"
 			linked_quest: "379F434116632A89"
-			x: -25.0d
+			x: -26.0d
 			y: 1.0d
 		}
 		{
@@ -79,7 +79,7 @@
 			]
 			description: ["{quests.steam_age.basic_millstone.desc}"]
 			id: "48C1E980F7D64317"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "{quests.steam_age.basic_millstone.subtitle}"
 			tasks: [{
 				id: "486DE7D228F3589B"
@@ -87,7 +87,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.basic_millstone.title}"
-			x: -19.5d
+			x: -20.5d
 			y: 0.0d
 		}
 		{
@@ -105,12 +105,16 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.horse_crank.title}"
-			x: -23.5d
+			x: -24.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["7B045998769930F0"]
-			description: ["{quests.steam_age.helve_hammer.desc}"]
+			description: [
+				"{quests.steam_age.helve_hammer.desc.1}"
+				"{@pagebreak}"
+				"{quests.steam_age.helve_hammer.desc.2}"
+			]
 			id: "611EB6284CA7119C"
 			size: 1.0d
 			subtitle: "{quests.steam_age.helve_hammer.subtitle}"
@@ -120,7 +124,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.helve_hammer.title}"
-			x: -19.5d
+			x: -20.5d
 			y: -4.0d
 		}
 		{
@@ -148,7 +152,7 @@
 				}
 			]
 			title: "{quests.steam_age.basic_greate.title}"
-			x: -19.5d
+			x: -20.5d
 			y: -2.0d
 		}
 		{
@@ -1173,7 +1177,7 @@
 				}
 			]
 			title: "{quests.steam_age.create_tools.title}"
-			x: -21.5d
+			x: -22.5d
 			y: -4.0d
 		}
 		{
@@ -1247,6 +1251,7 @@
 			dependencies: ["1059288C22CB56BB"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.steam_age.poor_paths.desc}"]
+			icon: "tfc:dirt/loam"
 			id: "6356072A435EFE81"
 			optional: true
 			shape: "diamond"
@@ -1286,13 +1291,14 @@
 				}
 			]
 			title: "{quests.steam_age.poor_paths.title}"
-			x: -25.0d
+			x: -26.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["1059288C22CB56BB"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.steam_age.normal_paths.desc}"]
+			icon: "tfc:grass_path/silty_loam"
 			id: "494E81202B0F36A7"
 			optional: true
 			shape: "diamond"
@@ -1337,7 +1343,7 @@
 				}
 			]
 			title: "{quests.steam_age.normal_paths.title}"
-			x: -25.5d
+			x: -26.5d
 			y: -2.0d
 		}
 		{
@@ -1347,6 +1353,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.steam_age.good_paths.desc}"]
+			icon: "rnr:rock/sett_road/granite"
 			id: "52A82511A64B0A5B"
 			optional: true
 			shape: "diamond"
@@ -1394,7 +1401,7 @@
 				}
 			]
 			title: "{quests.steam_age.good_paths.title}"
-			x: -25.0d
+			x: -26.0d
 			y: -0.5d
 		}
 		{
@@ -1454,7 +1461,7 @@
 				type: "item"
 			}]
 			title: "{quests.metal_age.bronze_goodies.title}"
-			x: -21.5d
+			x: -22.5d
 			y: -2.0d
 		}
 		{
@@ -1641,7 +1648,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.basic_mech_press.title}"
-			x: -17.5d
+			x: -18.5d
 			y: -2.0d
 		}
 		{
@@ -1717,6 +1724,36 @@
 			title: "{quests.steam_age.supers.title}"
 			x: -12.0d
 			y: 13.0d
+		}
+		{
+			dependencies: ["0D0D461AE3A3F7BF"]
+			description: ["{quests.steam_age.multiblock_tank.desc}"]
+			icon: "gtceu:wooden_multiblock_tank"
+			id: "636B13A7B9755F2A"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.steam_age.multiblock_tank.subtitle}"
+			tasks: [
+				{
+					id: "0522DC5B9C4560B3"
+					item: "gtceu:wooden_multiblock_tank"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "6AE2B07A7FEA130F"
+					item: { Count: 24, id: "gtceu:wood_wall" }
+					type: "item"
+				}
+				{
+					id: "1580633542EB6DFB"
+					item: "gtceu:wooden_tank_valve"
+					type: "item"
+				}
+			]
+			title: "{quests.steam_age.multiblock_tank.title}"
+			x: -16.5d
+			y: -2.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

@@ -77,11 +77,11 @@ function registerGTCEUMetalRecipes(event) {
 		event.remove({ mod: 'gtceu', type: 'minecraft:crafting_shaped', output: toolHeadItem })
 
 		if (material.hasProperty(PropertyKey.INGOT)) {
-			const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+			const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
 			if (ingotItem.isEmpty() || ingotItem.hasTag('c:hidden_from_recipe_viewers'))
 				return
 
-			const materialAmount = Math.floor(headTagPrefix.materialAmount() / GTValues.M) === 1 ? 1 : 2;
+			const materialAmount = Math.floor(headTagPrefix.materialAmount() / GTValues.M);
 
 			event.recipes.gtceu.extruder(`tfg:extrude_${material.getName()}_ingot_to_${tagPrefixName}`)
 				.itemInputs(ingotItem.copyWithCount(materialAmount))
@@ -90,7 +90,12 @@ function registerGTCEUMetalRecipes(event) {
 				.duration(material.getMass() * 6)
 				.EUt(GTValues.VA[GTValues.LV])
 
-			event.recipes.vintageimprovements.curving(toolHeadItem, ingotItem.copyWithCount(materialAmount))
+			let input_array = [];
+			for (let i = 0; i < materialAmount; i++) {
+				input_array.push(ingotItem);
+			}
+
+			event.recipes.vintageimprovements.curving(toolHeadItem, input_array)
 				.head(extruderMold)
 				.id(`tfg:vi/curving/${material.getName()}_ingot_to_${tagPrefixName}`)
 			
@@ -120,12 +125,12 @@ function registerGTCEUMetalRecipes(event) {
 
 		} else if (material.hasProperty(PropertyKey.GEM)) {
 
-			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, 1)
+			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, Math.floor(headTagPrefix.materialAmount() / GTValues.M))
 			if (gemItem.isEmpty())
 				return
 
 			event.recipes.gtceu.laser_engraver(`tfg:engrave_${material.getName()}_gem_to_${tagPrefixName}`)
-				.itemInputs(gemItem.copyWithCount(Math.floor(headTagPrefix.materialAmount() / GTValues.M)))
+				.itemInputs(gemItem)
 				.notConsumable(ChemicalHelper.get(TagPrefix.lens, GTMaterials.Glass, 1))
 				.circuit(circuitMeta)
 				.itemOutputs(toolHeadItem)
