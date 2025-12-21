@@ -656,8 +656,8 @@ function registerTFCFluidTags(event) {
 	});
 
 	// Can use any liquid.
-	event.add('tfc:usable_in_pot', '#forge:liquid')
-	event.add('firmalife:usable_in_vat', '#forge:liquid')
+	event.add('tfc:usable_in_pot', '#forge:moderate_temperature_fluids')
+	event.add('firmalife:usable_in_vat', '#forge:moderate_temperature_fluids')
 
     // Can use only neutral fluids.
     event.add('tfc:usable_in_barrel', '#forge:neutral_fluids');
