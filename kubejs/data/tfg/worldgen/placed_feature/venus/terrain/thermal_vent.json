@@ -1,0 +1,46 @@
+{
+	"feature": {
+		"type": "tfc:multiple",
+		"config": {
+			"features": [
+				{
+					"feature": "tfg:venus/terrain/ignimbrite_disk",
+					"placement": []
+				},
+				{
+					"feature": "tfg:venus/terrain/ignimbrite_columns",
+					"placement": []
+				},
+				{
+					"feature": "tfg:venus/terrain/ignimbrite_vents",
+					"placement": []
+				},
+				{
+					"feature": "tfg:venus/terrain/ignimbrite_tube_worms",
+					"placement": []
+				}
+			]
+		}
+	},
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 1
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR_WG"
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": 0,
+			"y_spread": -1
+		}
+	]
+}

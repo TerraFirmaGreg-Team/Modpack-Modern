@@ -4,8 +4,12 @@
 	},
 	"downfall": 0,
 	"effects": {
-		"sky_color": 10465603,
-		"fog_color": 9938052,
+		"additions_sound": {
+			"sound": "minecraft:ambient.basalt_deltas.additions",
+			"tick_chance": 0.0111
+		},
+		"sky_color": 11644227,
+		"fog_color": 10788996,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
 		"grass_color": 13758586,
@@ -13,14 +17,14 @@
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
-			"sound": "minecraft:ambient.cave",
+			"sound": "minecraft:ambient.basalt_deltas.mood",
 			"tick_delay": 6000
 		},
 		"particle": {
 			"options": {
-				"type": "minecraft:ash"
+				"type": "minecraft:white_ash"
 			},
-			"probability": 0.1
+			"probability": 0.05
 		}
 	},
 	"features": [
@@ -37,10 +41,11 @@
 		"#tfg:venus_veins",
 		"#tfg:venus_underground_decoration",
 		[
-			"tfg:venus/surface/stromatolite_cluster_patch"
+			"tfg:venus/surface/stromatolite_cluster_patch",
+			"tfg:venus/terrain/thermal_vent_rare"
 		],
 		[
-
+			"tfg:venus/surface/sulfur_patch"
 		],
 		"#tfg:venus_top_layer_modification"
 	],

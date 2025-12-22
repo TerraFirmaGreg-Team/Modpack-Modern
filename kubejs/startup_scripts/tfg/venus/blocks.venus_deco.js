@@ -185,7 +185,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.particleOffset(0.3, 1, 0.3)
 		.particleVelocity(0, 0.1, 0)
 		.particle('minecraft:large_smoke')
-		.particleCount(5)
+		.particleCount(2)
 		.particleForced(true)
 
 	event.create('betterend:tube_worm', 'tfg:attached_decorative_plant')
@@ -261,4 +261,28 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.mapColor('terracotta_light_gray')
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
+
+	// Plants
+
+	event.create('betterend:hydralux_sapling', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.mapColor('green_terracotta')
+		.box(2, 0, 2, 14, 13, 14)
+		.tagBlock('tfg:do_not_destroy_in_space')
+
+	event.create('betterend:hydralux_small', 'tfg:tall_decorative_plant')
+		.height(4)
+		.soundType('nether_wart')
+		.mapColor('green_terracotta')
+		.box(3, 0, 3, 13, 16, 13)
+		.tagItem('tfg:venus_plants')
+		.tagBlock('tfg:do_not_destroy_in_space')
+
+	event.create('betterend:hydralux_large', 'tfg:tall_decorative_plant')
+		.height(4)
+		.soundType('nether_wart')
+		.mapColor('green_terracotta')
+		.box(3, 0, 3, 13, 16, 13)
+		.tagItem('tfg:venus_plants')
+		.tagBlock('tfg:do_not_destroy_in_space')
 }

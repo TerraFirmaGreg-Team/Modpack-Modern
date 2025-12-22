@@ -1,0 +1,31 @@
+{
+	"feature": {
+		"type": "tfc:if_then",
+		"config": {
+			"if": {
+				"feature": "tfg:venus/terrain/sulfur_blob",
+				"placement": []
+			},
+			"then": {
+				"feature": "tfg:venus/surface/sulfur_crystals",
+				"placement": []
+			}
+		}
+	},
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 1
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR_WG"
+		}
+	]
+}

@@ -190,6 +190,15 @@ const registerGTCEURecipes = (event) => {
 			return result;
 		}).id('gtceu:facade_cover32');
 
+	event.shapeless(Item.of('gtceu:facade_cover', 8, '{Facade: {Count:1b,id:"minecraft:stone"}}'), ['4x gtceu:facade_cover', "#tfg:whitelisted/facades", '4x gtceu:facade_cover'])
+		.modifyResult((craftingGrid, result) => {
+			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
+
+			let facadeNBT = `{Facade: {Count:1b,id:` + `'${blockID}'` + `}}`
+			result.nbt = facadeNBT
+			return result;
+		}).id('gtceu:facade_cover_recycle');
+
 	// Diamond gear
 	event.recipes.gtceu.laser_engraver('tfg:diamond_gear')
 		.itemInputs('4x #forge:plates/diamond')

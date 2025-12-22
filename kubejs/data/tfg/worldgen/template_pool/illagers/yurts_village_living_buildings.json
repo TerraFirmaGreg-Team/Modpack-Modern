@@ -1,0 +1,118 @@
+{
+	"name": "tfg:illagers/yurts_village_living_buildings",
+	"fallback": "tfg:illagers/yurts_village_living_paths",
+	"elements": [
+		{
+			"weight": 100,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:yurts/baseline/larder",
+					"processors": "tfg:illagers/yurts_structures",
+					"projection": "rigid"
+				},
+				"limit": 1
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:yurts/baseline/workshop",
+					"processors": "tfg:illagers/yurts_structures",
+					"projection": "rigid"
+				},
+				"limit": 1
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:yurts/baseline/tower",
+					"processors": "tfg:illagers/yurts_structures",
+					"projection": "rigid"
+				},
+				"limit": 2
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:yurts/baseline/house1",
+				"processors": "tfg:illagers/yurts_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:yurts/baseline/house2",
+				"processors": "tfg:illagers/yurts_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:yurts/baseline/house3",
+				"processors": "tfg:illagers/yurts_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:yurts/baseline/stable",
+					"processors": "tfg:illagers/yurts_structures",
+					"projection": "rigid"
+				},
+				"limit": 2
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:yurts/baseline/shooting_range",
+					"processors": "tfg:illagers/yurts_structures",
+					"projection": "rigid"
+				},
+				"limit": 1
+			}
+		},
+		{
+			"weight": 50,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:yurts/baseline/monument",
+					"processors": "tfg:illagers/yurts_paths",
+					"projection": "rigid"
+				},
+				"limit": 1
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"projection": "rigid",
+				"element_type": "minecraft:empty_pool_element"
+			}
+		}
+	]
+}

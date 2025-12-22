@@ -1,0 +1,94 @@
+{
+	"name": "tfg:illagers/yurts_village_living_paths",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:yurts/baseline/straight_short",
+				"processors": "tfg:illagers/yurts_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:yurts/baseline/straight_medium",
+				"processors": "tfg:illagers/yurts_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:yurts/baseline/straight_long",
+				"processors": "tfg:illagers/yurts_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:yurts/baseline/bend_left",
+				"processors": "tfg:illagers/yurts_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:yurts/baseline/bend_right",
+				"processors": "tfg:illagers/yurts_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:yurts/baseline/t_junction",
+				"processors": "tfg:illagers/yurts_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:yurts/baseline/fork_left",
+				"processors": "tfg:illagers/yurts_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:yurts/baseline/fork_right",
+				"processors": "tfg:illagers/yurts_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 80,
+			"element": {
+				"location": "tfg:yurts/baseline/cross",
+				"processors": "tfg:illagers/yurts_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"projection": "rigid",
+				"element_type": "minecraft:empty_pool_element"
+			}
+		}
+	]
+}
