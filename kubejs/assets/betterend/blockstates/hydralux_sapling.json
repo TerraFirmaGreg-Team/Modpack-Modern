@@ -1,8 +1,10 @@
 {
     "variants": {
-        "age=0":    { "model": "betterend:block/hydralux_sapling_1" },
-        "age=1":    { "model": "betterend:block/hydralux_sapling_2" },
-        "age=2":    { "model": "betterend:block/hydralux_sapling_3" },
-        "age=3":    { "model": "betterend:block/hydralux_sapling_4" }
+        "": [
+            { "model": "betterend:block/hydralux_sapling_1" },
+            { "model": "betterend:block/hydralux_sapling_2" },
+            { "model": "betterend:block/hydralux_sapling_3" },
+            { "model": "betterend:block/hydralux_sapling_4" }
+        ]
     }
 }

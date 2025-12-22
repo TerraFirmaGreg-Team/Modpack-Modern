@@ -4,21 +4,26 @@
 	},
 	"downfall": 0,
 	"effects": {
+		"additions_sound": {
+			"sound": "minecraft:ambient.basalt_deltas.additions",
+			"tick_chance": 0.0111
+		},
 		"sky_color": 10465603,
 		"fog_color": 12237498,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
 		"grass_color": 13758586,
 		"foliage_color": 11653213,
+		"ambient_sound": "minecraft:ambient.basalt_deltas.loop",
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
-			"sound": "minecraft:ambient.cave",
+			"sound": "minecraft:ambient.basalt_deltas.mood",
 			"tick_delay": 6000
 		},
 		"particle": {
 			"options": {
-				"type": "minecraft:ash"
+				"type": "minecraft:white_ash"
 			},
 			"probability": 0.02
 		}

@@ -3,20 +3,19 @@
 	"config": {
 		"feature": {
 			"feature": {
-				"type": "minecraft:simple_block",
+				"type": "tfg:tall_decorative_plant",
 				"config": {
-					"to_place": {
-						"type": "minecraft:simple_state_provider",
-						"state": {
-							"Name": "betterend:hydrothermal_vent"
-						}
-					}
+					"block": "betterend:hydralux_large",
+					"plantHeight": 4,
+					"minHeight": 5,
+					"maxHeight": 9,
+					"middle": 1
 				}
 			},
 			"placement": [
 				{
 					"type": "minecraft:heightmap",
-					"heightmap": "OCEAN_FLOOR"
+					"heightmap": "OCEAN_FLOOR_WG"
 				},
 				{
 					"type": "minecraft:block_predicate_filter",
@@ -25,23 +24,20 @@
 						"predicates": [
 							{
 								"type": "minecraft:matching_blocks",
-								"blocks": [
-									"minecraft:air",
-									"tfg:fluid/sulfur_fumes"
-								]
+								"blocks": "tfg:fluid/sulfur_fumes"
 							},
 							{
-								"type": "minecraft:matching_blocks",
+								"type": "minecraft:matching_block_tag",
 								"offset": [ 0, -1, 0 ],
-								"blocks": "betterend:sulphuric_rock"
-							}							
+								"tag": "ad_astra:venus_stone_replaceables"
+							}
 						]
 					}
 				}
 			]
 		},
-		"tries": 32,
-		"xz_spread": 3,
+		"tries": 4,
+		"xz_spread": 10,
 		"y_spread": 0
 	}
 }

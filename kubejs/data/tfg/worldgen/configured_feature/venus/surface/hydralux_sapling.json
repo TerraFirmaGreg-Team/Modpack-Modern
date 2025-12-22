@@ -8,7 +8,10 @@
 					"to_place": {
 						"type": "minecraft:simple_state_provider",
 						"state": {
-							"Name": "betterend:hydrothermal_vent"
+							"Name": "betterend:hydralux_sapling",
+							"Properties": {
+								"fluid": "sulfur_fumes"
+							}
 						}
 					}
 				}
@@ -16,7 +19,7 @@
 			"placement": [
 				{
 					"type": "minecraft:heightmap",
-					"heightmap": "OCEAN_FLOOR"
+					"heightmap": "OCEAN_FLOOR_WG"
 				},
 				{
 					"type": "minecraft:block_predicate_filter",
@@ -25,23 +28,20 @@
 						"predicates": [
 							{
 								"type": "minecraft:matching_blocks",
-								"blocks": [
-									"minecraft:air",
-									"tfg:fluid/sulfur_fumes"
-								]
+								"blocks": "tfg:fluid/sulfur_fumes"
 							},
 							{
-								"type": "minecraft:matching_blocks",
+								"type": "minecraft:matching_block_tag",
 								"offset": [ 0, -1, 0 ],
-								"blocks": "betterend:sulphuric_rock"
-							}							
+								"tag": "ad_astra:venus_stone_replaceables"
+							}
 						]
 					}
 				}
 			]
 		},
-		"tries": 32,
-		"xz_spread": 3,
+		"tries": 18,
+		"xz_spread": 16,
 		"y_spread": 0
 	}
 }
