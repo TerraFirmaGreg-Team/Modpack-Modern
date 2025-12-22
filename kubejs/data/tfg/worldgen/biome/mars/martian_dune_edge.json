@@ -7,6 +7,7 @@
 	"downfall": 0.0,
 	"effects": {
 		"fog_color": 15117444,
+		"ambient_sound": "minecraft:ambient.soul_sand_valley.loop",
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2.0,
