@@ -6,14 +6,14 @@
 	"effects": {
 		"fog_color": 7175789,
 		"additions_sound": {
-			"sound": "minecraft:ambient.crimson_forest.additions",
+			"sound": "tfg:ambient.upper_nether.additions",
 			"tick_chance": 0.0111
 		},
-		"ambient_sound": "minecraft:ambient.crimson_forest.loop",
+		"ambient_sound": "tfg:ambient.upper_nether.loop",
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
-			"sound": "minecraft:ambient.crimson_forest.mood",
+			"sound": "tfg:ambient.upper_nether.mood",
 			"tick_delay": 6000
 		},
 		"music": {

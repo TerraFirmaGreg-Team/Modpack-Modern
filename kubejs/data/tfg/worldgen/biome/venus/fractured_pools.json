@@ -5,15 +5,15 @@
 	"downfall": 0,
 	"effects": {
 		"additions_sound": {
-			"sound": "minecraft:ambient.basalt_deltas.additions",
+			"sound": "tfg:ambient.venus.additions",
 			"tick_chance": 0.0111
 		},
 		"fog_color": 9938052,
-		"ambient_sound": "minecraft:ambient.basalt_deltas.loop",
+		"ambient_sound": "tfg:ambient.venus.loop",
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2.0,
-			"sound": "minecraft:ambient.basalt_deltas.mood",
+			"sound": "tfg:ambient.venus.mood",
 			"tick_delay": 6000
 		},
 		"sky_color": 10465603,
