@@ -85,6 +85,28 @@ function registerTFCItemTags(event) {
     usableOnToolRack.forEach((entry) => {
         event.add("tfc:usable_on_tool_rack", entry);
     });
+	
+	//liquid non placeable
+    event.add("tfc:nonplaceable", "tfc:bucket/beer")
+    event.add("tfc:nonplaceable", "tfc:bucket/cider")
+    event.add("tfc:nonplaceable", "tfc:bucket/rum")
+    event.add("tfc:nonplaceable", "tfc:bucket/sake")
+    event.add("tfc:nonplaceable", "tfc:bucket/vodka")
+    event.add("tfc:nonplaceable", "tfc:bucket/whiskey")
+    event.add("tfc:nonplaceable", "tfc:bucket/corn_whiskey")
+    event.add("tfc:nonplaceable", "tfc:bucket/rye_whiskey")
+
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_beer")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_cider")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_rum")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_sake")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_vodka")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_whiskey")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_corn_whiskey")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_rye_whiskey")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_mead")
+
+    event.add("tfc:nonplaceable", "tfc_gurman:nalivka_bucket")
 
     // Ингредиенты для закваски
     event.add("tfg:ferments_to_rennet", "tfc:food/soybean");
