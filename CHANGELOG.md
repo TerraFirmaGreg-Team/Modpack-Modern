@@ -8,10 +8,14 @@
 - Hardened non-TFC rocks are now craftable (#2447) @glitchplaysgames714
 - Magma blocks are now hot to hold @Pyritie
 - Added a recipe to craft old gregtech facades into ones with a new texture @Pyritie
+- Fluid sources of alcohol and milks are no longer placeable, so you can't drink from them infinitely any more @bigtho80
 ### Bug fixes
+- Fix for food stacking everywhere! @Mqrius
 - Fixed some curving press tool head recipes being cheaper than intended (#2478) @Pyritie
 - Fixed some bastion chests being empty @Pyritie
 - Fixed overlapping durability numbers on the curio HUD (#2484) @glitchplaysgames714
+- Fixed a potential crash involving the refrigerator @Redeix
+- Fixed the evaporation tower requiring an input hatch even for recipes that don't have a fluid input @glitchplaysgames714
 ### Translation updates
 - Chinese (simplified) @jmecn
 
