@@ -14057,6 +14057,47 @@
             ]
         },
         {
+            "pakku_id": "HmuVmQIxSjcXXYFw",
+            "pakku_links": [
+                "64uacGcEw697jVGs"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tfc-scraping-knives"
+            },
+            "name": {
+                "curseforge": "Tfc Scraping Knives"
+            },
+            "id": {
+                "curseforge": "1172700"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "tfcscraping-1.0.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6133/109/tfcscraping-1.0.2.jar",
+                    "id": "6133109",
+                    "parent_id": "1172700",
+                    "hashes": {
+                        "sha1": "a28cf46a637287b308058abb678fbf382198f3fe",
+                        "md5": "ecfc30b2ba305d939c16099881b0a779"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 177967,
+                    "date_published": "2025-01-28T09:39:35.493Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "UUgCxePdwRd5MyWw",
             "type": "MOD",
             "side": "CLIENT",
