@@ -18,6 +18,7 @@
 - Fixed the evaporation tower requiring an input hatch even for recipes that don't have a fluid input @glitchplaysgames714
 ### Translation updates
 - Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry
 
 ## [0.11.12] - 19-12-2025
 ### Changes
