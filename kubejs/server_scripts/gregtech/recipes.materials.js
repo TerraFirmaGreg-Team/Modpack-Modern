@@ -792,7 +792,7 @@ function registerGTCEUMetalRecipes(event) {
 		let smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
 
 		event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(
-			ChemicalHelper.get(TagPrefix.surfaceRock, material, 1), [gem, '#tfc:chisels']))
+			ChemicalHelper.get(TFGTagPrefix.budIndicator, material, 1), [gem, '#tfc:chisels']))
 			.id(`shapeless/${material.getName()}_bud_indicator`)
 
 		event.shaped(smallDust,

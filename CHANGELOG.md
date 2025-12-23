@@ -16,6 +16,7 @@
 - Fixed overlapping durability numbers on the curio HUD (#2484) @glitchplaysgames714
 - Fixed a potential crash involving the refrigerator @Redeix
 - Fixed the evaporation tower requiring an input hatch even for recipes that don't have a fluid input @glitchplaysgames714
+- Fixed loot tables for ore indicator buds @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
