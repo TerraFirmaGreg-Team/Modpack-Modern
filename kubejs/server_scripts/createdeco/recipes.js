@@ -228,12 +228,12 @@ const registerCreatedecoRecipes = (event) => {
 	// #region Bars + Doors
 
 	const metalThings = [
-		{ metal: 'andesite', material: 'tin_alloy', tier: 3 },
-		{ metal: 'brass', material: 'brass', tier: 2 },
-		{ metal: 'iron', material: 'wrought_iron', tier: 3 },
-		{ metal: 'copper', material: 'copper', tier: 1 },
-		{ metal: 'industrial_iron', material: 'steel', tier: 4 },
-		{ metal: 'zinc', material: 'zinc', tier: 1 }
+		{ metal: 'andesite', material: 'tin_alloy'},
+		{ metal: 'brass', material: 'brass'},
+		{ metal: 'iron', material: 'wrought_iron'},
+		{ metal: 'copper', material: 'copper'},
+		{ metal: 'industrial_iron', material: 'steel'},
+		{ metal: 'zinc', material: 'zinc'}
 	];
 
 	metalThings.forEach(bar => {
@@ -243,18 +243,7 @@ const registerCreatedecoRecipes = (event) => {
 		if (bar.metal !== 'iron') {
 			event.remove({ type: 'minecraft:stonecutting', output: `createdeco:${bar.metal}_bars` })
 
-			event.recipes.tfc.anvil(`4x createdeco:${bar.metal}_bars`, `#forge:ingots/${bar.material}`, ['shrink_last', 'punch_second_last', 'punch_third_last'])
-				.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_bars`)
-
-			event.recipes.gtceu.assembler(`tfg:${bar.material}_create_deco_bars`)
-				.itemInputs(`2x #forge:rods/${bar.material}`)
-				.itemOutputs(`4x createdeco:${bar.metal}_bars`)
-				.duration(100)
-				.EUt(GTValues.VA[GTValues.LV])
-				.circuit(12)
-
-			event.recipes.tfc.anvil(`createdeco:${bar.metal}_door`, `#forge:double_plates/${bar.material}`, ['draw_last', 'draw_second_last', 'punch_third_last'])
-				.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_door`)
+			event.stonecutting(`2x createdeco:${bar.metal}_bars`, `#forge:ingots/${bar.material}`)
 
 			event.recipes.gtceu.cutter(`tfg:${bar.material}_create_deco_door`)
 				.itemInputs(`#forge:double_plates/${bar.material}`)
@@ -265,15 +254,7 @@ const registerCreatedecoRecipes = (event) => {
 
 		event.remove({ type: 'minecraft:stonecutting', output: `createdeco:${bar.metal}_bars_overlay` })
 
-		event.recipes.tfc.anvil(`2x createdeco:${bar.metal}_bars_overlay`, `#forge:ingots/${bar.material}`, ['draw_last', 'punch_second_last', 'punch_third_last'])
-			.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_bars_overlay`)
-
-		event.recipes.gtceu.assembler(`tfg:${bar.material}_create_deco_bars_overlay`)
-			.itemInputs(`1x #forge:rods/${bar.material}`, `1x #forge:plates/${bar.material}`)
-			.itemOutputs(`4x createdeco:${bar.metal}_bars_overlay`)
-			.duration(100)
-			.EUt(GTValues.VA[GTValues.LV])
-			.circuit(13)
+		event.stonecutting(`createdeco:${bar.metal}_bars_overlay`, `#forge:ingots/${bar.material}`)
 
 		event.shaped(`4x createdeco:${bar.metal}_facade`, [
 			' A ',

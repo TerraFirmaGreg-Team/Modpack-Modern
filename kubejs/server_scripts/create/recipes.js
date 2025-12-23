@@ -2290,6 +2290,10 @@ const registerCreateRecipes = (event) => {
 	event.stonecutting('2x create:andesite_scaffolding', '#forge:ingots/tin_alloy')
 	event.stonecutting('2x create:andesite_ladder', '#forge:ingots/tin_alloy')
 	event.stonecutting('2x create:andesite_bars', '#forge:ingots/tin_alloy')
+	event.remove({output: 'create:copper_bars'})
+	event.remove({output: 'create:brass_bars'})
+	event.stonecutting('2x create:brass_bars', '#forge:ingots/brass')
+	event.stonecutting('2x create:copper_bars', '#forge:ingots/copper')
 
 	// Industrial Iron stuff
 	
@@ -2368,26 +2372,6 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('4x create:small_rose_quartz_tiles')
 		.notConsumable('tfc:lens')
 		.circuit(2)
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
-
-	// Bars
-
-	event.recipes.gtceu.cutter('tfg:create_andesite_bars')
-		.itemInputs('#forge:plates/tin_alloy')
-		.itemOutputs('create:andesite_bars')
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
-
-	event.recipes.gtceu.cutter('tfg:create_copper_bars')
-		.itemInputs('#forge:plates/copper')
-		.itemOutputs('create:copper_bars')
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
-
-	event.recipes.gtceu.cutter('tfg:create_brass_bars')
-		.itemInputs('#forge:plates/brass')
-		.itemOutputs('create:brass_bars')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 

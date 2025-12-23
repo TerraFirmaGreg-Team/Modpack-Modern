@@ -1296,19 +1296,10 @@ function registerTFCMaterialsRecipes(event) {
 			event.recipes.tfc.heating(`tfc:metal/bars/${material.getName()}`, tfcProperty.getMeltTemp())
 				.resultFluid(Fluid.of(outputMaterial.getFluid(), 18))
 				.id(`tfc:heating/metal/${material.getName()}_bars`)
+			event.remove({ output: `tfc:metal/bars/${material.getName()}`})
+			event.stonecutting(`2x tfc:metal/bars/${material.getName()}`, `#forge:ingots/${material.getName()}`)
 
-			// 8x Решетка
-			event.recipes.tfc.anvil(`4x tfc:metal/bars/${material.getName()}`, ingotItem,
-				['upset_last', 'punch_second_last', 'punch_third_last'])
-				.tier(tfcProperty.getTier())
-				.id(`tfc:anvil/${material.getName()}_bars`)
-
-			// 16x Решетка
-			event.recipes.tfc.anvil(`8x tfc:metal/bars/${material.getName()}`, ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1),
-				['upset_last', 'punch_second_last', 'punch_third_last'])
-				.tier(tfcProperty.getTier())
-				.id(`tfc:anvil/${material.getName()}_bars_double`)
-
+			
 			// Декрафт цепи в жидкость
 			event.recipes.tfc.heating(`tfc:metal/chain/${material.getName()}`, tfcProperty.getMeltTemp())
 				.resultFluid(Fluid.of(outputMaterial.getFluid(), 9))
