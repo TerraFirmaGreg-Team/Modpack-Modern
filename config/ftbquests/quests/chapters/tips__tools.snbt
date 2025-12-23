@@ -1404,7 +1404,7 @@
 			}]
 			title: "{quests.tfg_tips.trowel.title}"
 			x: -6.5d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -1425,8 +1425,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.fishing_net.title}"
-			x: -3.0d
-			y: 7.0d
+			x: -2.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -1447,7 +1447,7 @@
 			}]
 			title: "{quests.tfg_tips.cane.title}"
 			x: -2.5d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["72B3EA6588E18CCC"]
@@ -2289,8 +2289,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.digger_helmet.title}"
-			x: -6.0d
-			y: 7.0d
+			x: -6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["72B3EA6588E18CCC"]
@@ -2888,7 +2888,28 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.feeding_troughs.title}"
-			x: -4.5d
+			x: -5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["150B7C5CD152E1BA"]
+			description: ["{quests.tfg_tips.scraping_knives.desc}"]
+			id: "2301E2248A3560C8"
+			subtitle: "{quests.tfg_tips.scraping_knives.subtitle}"
+			tasks: [{
+				id: "193C47D8A2AD2265"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item_tag(tfcscraping:scraping_knives))"
+					}
+				}
+				title: "{quests.tfg_tips.scraping_knives.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.scraping_knives.title}"
+			x: -3.5d
 			y: 6.5d
 		}
 	]
