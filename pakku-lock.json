@@ -2232,29 +2232,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "chalk-1.20.1-1.6.6.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6661/590/chalk-1.20.1-1.6.6.jar",
-                    "id": "6661590",
-                    "parent_id": "533748",
-                    "hashes": {
-                        "sha1": "4476abc4a3f707c2e82d91038972644d92752df5",
-                        "md5": "dd6d469c96e448da033e28e0bcc3a116"
-                    },
-                    "required_dependencies": [],
-                    "size": 320854,
-                    "date_published": "2025-06-17T15:51:12.797Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "chalk-1.20.1-1.6.6.jar",
+                    "file_name": "chalk-1.20.1-1.6.7.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2262,16 +2241,37 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/YWGP4Y1d/versions/tRKPNWEg/chalk-1.20.1-1.6.6.jar",
-                    "id": "tRKPNWEg",
+                    "url": "https://cdn.modrinth.com/data/YWGP4Y1d/versions/egCIyHFr/chalk-1.20.1-1.6.7.jar",
+                    "id": "egCIyHFr",
                     "parent_id": "YWGP4Y1d",
                     "hashes": {
-                        "sha512": "c2c485321015847087c4724c768f5be7dffd24b1cb10be1e8e44f4dfcd42490dd6be82770c83ecba3344f93b4d66651c7bbc811f95ee300d889d11edf51b22f6",
-                        "sha1": "4476abc4a3f707c2e82d91038972644d92752df5"
+                        "sha512": "c983555fb6e26f1c70a8d24a5b80e369ec6884d413ff228ce4f0a03b46777f281e667df97badc3092cdbdfe7bae3c735a52c3dfd7d8312e065192e093d04343a",
+                        "sha1": "42f34947910ca428497fac0bf2566a45959a51a5"
                     },
                     "required_dependencies": [],
-                    "size": 320854,
-                    "date_published": "2025-06-17T15:50:40.420367Z"
+                    "size": 322379,
+                    "date_published": "2025-12-23T19:45:52.435072Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "chalk-1.20.1-1.6.7.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7370/654/chalk-1.20.1-1.6.7.jar",
+                    "id": "7370654",
+                    "parent_id": "533748",
+                    "hashes": {
+                        "sha1": "42f34947910ca428497fac0bf2566a45959a51a5",
+                        "md5": "0f916c5dc990ba5fd942824f2b6d45f9"
+                    },
+                    "required_dependencies": [],
+                    "size": 322379,
+                    "date_published": "2025-12-23T19:44:45.250Z"
                 }
             ]
         },
@@ -2529,7 +2529,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "clienttweaks-forge-1.20.1-11.1.5.jar",
+                    "file_name": "clienttweaks-forge-1.20.1-11.1.6.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -2538,22 +2538,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/vPNqo58Q/versions/H8SeAE8l/clienttweaks-forge-1.20.1-11.1.5.jar",
-                    "id": "H8SeAE8l",
+                    "url": "https://cdn.modrinth.com/data/vPNqo58Q/versions/Febi39qw/clienttweaks-forge-1.20.1-11.1.6.jar",
+                    "id": "Febi39qw",
                     "parent_id": "vPNqo58Q",
                     "hashes": {
-                        "sha512": "83b3fd505453298e1b29483e4f30c096988479c909d0d6e79cda40bd310db6d3ba658d5a5a18c2625e74c4c71ea563646e75e7135e334cf51c14b5f925b4c19e",
-                        "sha1": "14a951b96c22ed76057c1da4415f8234bcbc8dbc"
+                        "sha512": "1b8ddf7ccb8fb5cd2248365534b80af10023821ec4d2786821edd744ae6ce01dc888ddf61f16e1a2a9f4f88041d06fc1a219aa9088625882f5b5739f68f29a1b",
+                        "sha1": "94f11a58c3b971ea95971f297b7866ca27b73270"
                     },
                     "required_dependencies": [
                         "MBAkmtvl"
                     ],
-                    "size": 137930,
-                    "date_published": "2025-09-30T07:22:37.019245Z"
+                    "size": 138121,
+                    "date_published": "2025-12-22T08:28:32.495908Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "clienttweaks-forge-1.20.1-11.1.5.jar",
+                    "file_name": "clienttweaks-forge-1.20.1-11.1.6.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -2562,18 +2562,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7047/908/clienttweaks-forge-1.20.1-11.1.5.jar",
-                    "id": "7047908",
+                    "url": "https://edge.forgecdn.net/files/7364/655/clienttweaks-forge-1.20.1-11.1.6.jar",
+                    "id": "7364655",
                     "parent_id": "251407",
                     "hashes": {
-                        "sha1": "dd42a485ccb028b04425ed6bac050d547266dfd7",
-                        "md5": "c2f2bfe44ae97b97dfd9751f3b771820"
+                        "sha1": "7e65ea212c78629170ab97c7159cee1cf2ca89b0",
+                        "md5": "7bd8201231121cbc56a3915aeafbf755"
                     },
                     "required_dependencies": [
                         "531761"
                     ],
-                    "size": 137930,
-                    "date_published": "2025-09-30T07:22:41.783Z"
+                    "size": 138121,
+                    "date_published": "2025-12-22T08:27:56.817Z"
                 }
             ]
         },
@@ -8607,7 +8607,7 @@
             ]
         },
         {
-            "pakku_id": "OcjL6nfubOOv2SoV",
+            "pakku_id": "JAFcKq70FbrHc0oK",
             "type": "MOD",
             "side": "SERVER",
             "slug": {
