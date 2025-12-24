@@ -2511,7 +2511,10 @@
             ]
         },
         {
-            "pakku_id": "09bmfAq7PxUxWfZP",
+            "pakku_id": "Zx4piwuLwghFhuAX",
+            "pakku_links": [
+                "vcmbP1ZpBZtFq3zT"
+            ],
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
@@ -2527,30 +2530,6 @@
                 "modrinth": "vPNqo58Q"
             },
             "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "clienttweaks-forge-1.20.1-11.1.6.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/vPNqo58Q/versions/Febi39qw/clienttweaks-forge-1.20.1-11.1.6.jar",
-                    "id": "Febi39qw",
-                    "parent_id": "vPNqo58Q",
-                    "hashes": {
-                        "sha512": "1b8ddf7ccb8fb5cd2248365534b80af10023821ec4d2786821edd744ae6ce01dc888ddf61f16e1a2a9f4f88041d06fc1a219aa9088625882f5b5739f68f29a1b",
-                        "sha1": "94f11a58c3b971ea95971f297b7866ca27b73270"
-                    },
-                    "required_dependencies": [
-                        "MBAkmtvl"
-                    ],
-                    "size": 138121,
-                    "date_published": "2025-12-22T08:28:32.495908Z"
-                },
                 {
                     "type": "curseforge",
                     "file_name": "clienttweaks-forge-1.20.1-11.1.6.jar",
@@ -2574,6 +2553,30 @@
                     ],
                     "size": 138121,
                     "date_published": "2025-12-22T08:27:56.817Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "clienttweaks-forge-1.20.1-11.1.6.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/vPNqo58Q/versions/Febi39qw/clienttweaks-forge-1.20.1-11.1.6.jar",
+                    "id": "Febi39qw",
+                    "parent_id": "vPNqo58Q",
+                    "hashes": {
+                        "sha512": "1b8ddf7ccb8fb5cd2248365534b80af10023821ec4d2786821edd744ae6ce01dc888ddf61f16e1a2a9f4f88041d06fc1a219aa9088625882f5b5739f68f29a1b",
+                        "sha1": "94f11a58c3b971ea95971f297b7866ca27b73270"
+                    },
+                    "required_dependencies": [
+                        "MBAkmtvl"
+                    ],
+                    "size": 138121,
+                    "date_published": "2025-12-22T08:28:32.495908Z"
                 }
             ]
         },
@@ -3409,6 +3412,76 @@
                     ],
                     "size": 230973,
                     "date_published": "2025-07-18T18:08:51.337Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "lePQHTl9cI4dUuqu",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "crash-assistant",
+                "modrinth": "crash-assistant"
+            },
+            "name": {
+                "curseforge": "Crash Assistant",
+                "modrinth": "Crash Assistant"
+            },
+            "id": {
+                "curseforge": "1154099",
+                "modrinth": "ix1qq8Ux"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "CrashAssistant-forge-1.19-1.20.1-1.10.27.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7330/477/CrashAssistant-forge-1.19-1.20.1-1.10.27.jar",
+                    "id": "7330477",
+                    "parent_id": "1154099",
+                    "hashes": {
+                        "sha1": "4cc9d9e8cb0e615258acc7e81d27be10d34ae840",
+                        "md5": "7d089103d00b7fb5afd7096afe317f81"
+                    },
+                    "required_dependencies": [],
+                    "size": 1230345,
+                    "date_published": "2025-12-14T00:18:54.663Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "CrashAssistant-forge-1.19-1.20.1-1.10.27.jar",
+                    "mc_versions": [
+                        "1.19",
+                        "1.19.1",
+                        "1.19.2",
+                        "1.19.3",
+                        "1.19.4",
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/ix1qq8Ux/versions/uTKUXsEa/CrashAssistant-forge-1.19-1.20.1-1.10.27.jar",
+                    "id": "uTKUXsEa",
+                    "parent_id": "ix1qq8Ux",
+                    "hashes": {
+                        "sha512": "4224e75cb3dd86ca40d7d28eb016ada18baf27e102137af2fc76b83efceaaa6a8d7979b3b5d369ecd864ad1bf4c27a20dd182e31cb19c05f1c7eb4939e73107e",
+                        "sha1": "4cc9d9e8cb0e615258acc7e81d27be10d34ae840"
+                    },
+                    "required_dependencies": [],
+                    "size": 1230345,
+                    "date_published": "2025-12-14T00:18:58.159121Z"
                 }
             ]
         },
@@ -5453,7 +5526,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "ExtremeSoundMuffler-3.49.1-forge-1.20.1.jar",
+                    "file_name": "ExtremeSoundMuffler-3.49.2-forge-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5461,20 +5534,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/5IIKsxiL/versions/tTO5f5iv/ExtremeSoundMuffler-3.49.1-forge-1.20.1.jar",
-                    "id": "tTO5f5iv",
+                    "url": "https://cdn.modrinth.com/data/5IIKsxiL/versions/7daeCqUP/ExtremeSoundMuffler-3.49.2-forge-1.20.1.jar",
+                    "id": "7daeCqUP",
                     "parent_id": "5IIKsxiL",
                     "hashes": {
-                        "sha512": "2cd3be9ac975118f10d21c379db7ad1d5625c854ea45f7299da340abbd34b9d2863eda4a967ee1b57a1f78f1c08d8a86fb66b6ac4c9aadb9390071cf1c64e5d4",
-                        "sha1": "1c7a54e1727f2ae4b1f18e1d7feb94a38e87d00f"
+                        "sha512": "5fb4ef6bdcf344dae3af9f39a8ce510ebb3fe5d928ce17ba3067bb1e034e3eeb953c0fd905fa4462c1eb6b0d075d84f9fbf734dfc3b31423a75054b30281518a",
+                        "sha1": "3b73ae534ff7e4f9c65e78c1f868655a23ab90c7"
                     },
                     "required_dependencies": [],
-                    "size": 267731,
-                    "date_published": "2025-05-13T17:40:33.392430Z"
+                    "size": 267751,
+                    "date_published": "2025-12-23T21:58:19.811834Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "ExtremeSoundMuffler-3.49.1-forge-1.20.1.jar",
+                    "file_name": "ExtremeSoundMuffler-3.49.2-forge-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5482,16 +5555,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6526/566/ExtremeSoundMuffler-3.49.1-forge-1.20.1.jar",
-                    "id": "6526566",
+                    "url": "https://edge.forgecdn.net/files/7371/8/ExtremeSoundMuffler-3.49.2-forge-1.20.1.jar",
+                    "id": "7371008",
                     "parent_id": "363363",
                     "hashes": {
-                        "sha1": "1c7a54e1727f2ae4b1f18e1d7feb94a38e87d00f",
-                        "md5": "3727846f67248980ac39b92464c627f2"
+                        "sha1": "3b73ae534ff7e4f9c65e78c1f868655a23ab90c7",
+                        "md5": "d03d1852c5a1701657af88f690ac5bb2"
                     },
                     "required_dependencies": [],
-                    "size": 267731,
-                    "date_published": "2025-05-13T17:40:31.427Z"
+                    "size": 267751,
+                    "date_published": "2025-12-23T21:58:17.897Z"
                 }
             ]
         },
@@ -5652,6 +5725,49 @@
                     ],
                     "size": 1158842,
                     "date_published": "2025-04-17T08:07:07.033Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "iIWwbh74g7lpTP7d",
+            "pakku_links": [
+                "MxMrrOyyu2PvCSN8",
+                "tdBDW3xpPBc3E2mt"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftbxaerocompat"
+            },
+            "name": {
+                "curseforge": "FTB Chunks x Xaero's Compat"
+            },
+            "id": {
+                "curseforge": "1357724"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ftbxaerocompat-forge-1.1.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7365/97/ftbxaerocompat-forge-1.1.0.jar",
+                    "id": "7365097",
+                    "parent_id": "1357724",
+                    "hashes": {
+                        "sha1": "1891f5e557bd90307f2499c9a6ba077915222ad3",
+                        "md5": "966a28493e055a0f199e559b701e5274"
+                    },
+                    "required_dependencies": [
+                        "314906",
+                        "317780"
+                    ],
+                    "size": 735934,
+                    "date_published": "2025-12-22T12:04:11.870Z"
                 }
             ]
         },

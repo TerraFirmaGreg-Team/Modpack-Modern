@@ -25,9 +25,11 @@
 - Fixed the evaporation tower requiring an input hatch even for recipes that don't have a fluid input @glitchplaysgames714
 - Fixed loot tables for ore indicator buds @Pyritie
 - Fixed the new gas fuels being usable on other planets (#2515) @TomPlop
+- Fixed hot ingots melting packed ice into water sources @Mqrius
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
+- Spanish @NikoNeko17
 
 ## [0.11.12] - 19-12-2025
 ### Changes
