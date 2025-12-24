@@ -807,6 +807,9 @@ function registerGTCEUMetalRecipes(event) {
 		event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, amount), ChemicalHelper.get(TagPrefix.block, material, 1))
 			.recipeTier(0)
 			.id(`greate:pressing/unpacking_${material.getName()}_block`)
+
+		event.recipes.tfc.quern(ChemicalHelper.get(TagPrefix.dust, material, 1), ChemicalHelper.get(TagPrefix.gem, material, 1))
+			.id(`tfg:quern/${material.getName()}_gem_to_dust`)
 	}
 
 	/**

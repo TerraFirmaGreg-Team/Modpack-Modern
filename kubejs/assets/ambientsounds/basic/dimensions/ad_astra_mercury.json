@@ -1,11 +1,10 @@
 {
-    "name": "end",
+    "name": "ad_astra_orbit",
     "dimension-names": [
-        "orbit"
+        "mercury"
     ],
     "rain": false,
     "storm": false,
-    "average-height": 0,
     "biome-selector": {
         "always": false
     },
