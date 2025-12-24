@@ -1117,7 +1117,6 @@
 							"ftbfiltersystem:filter": "or(item(tfc:wrought_iron_grill)item(firmalife:cured_oven_top))"
 						}
 					}
-					optional_task: true
 					title: "{quests.tfg_tips.cook_meat.task.2}"
 					type: "item"
 				}
