@@ -1,0 +1,21 @@
+{
+    "name": "end",
+    "dimension-names": [
+        "orbit"
+    ],
+    "rain": false,
+    "storm": false,
+    "average-height": 0,
+    "biome-selector": {
+        "always": false
+    },
+    "regions": [
+        {
+            "name": "unknown",
+            "volume": 0.3,
+            "sound-collections": [
+                "suspense"
+            ]
+        }
+    ]
+}

@@ -383,7 +383,7 @@
 	"ambient.mars_desert.loop": {
 		"sounds": [
 			{
-				"name": "ambientsounds:wind/light-wind3",
+				"name": "ambientsounds:wind/howling-wind",
 				"stream": true,
 				"volume": 0.50
 			}
@@ -445,50 +445,6 @@
 				"name": "minecraft:ambient/nether/soulsand_valley/sand3",
 				"volume": 0.4,
 				"weight": 2
-			},
-			{
-				"name": "minecraft:ambient/nether/soulsand_valley/wind1",
-				"volume": 0.3,
-				"weight": 25
-			},
-			{
-				"name": "minecraft:ambient/nether/soulsand_valley/wind1",
-				"pitch": 0.75,
-				"volume": 0.3,
-				"weight": 25
-			},
-			{
-				"name": "minecraft:ambient/nether/soulsand_valley/wind2",
-				"volume": 0.25,
-				"weight": 25
-			},
-			{
-				"name": "minecraft:ambient/nether/soulsand_valley/wind2",
-				"pitch": 0.75,
-				"volume": 0.3,
-				"weight": 25
-			},
-			{
-				"name": "minecraft:ambient/nether/soulsand_valley/wind3",
-				"volume": 0.25,
-				"weight": 25
-			},
-			{
-				"name": "minecraft:ambient/nether/soulsand_valley/wind3",
-				"pitch": 0.75,
-				"volume": 0.3,
-				"weight": 25
-			},
-			{
-				"name": "minecraft:ambient/nether/soulsand_valley/wind4",
-				"volume": 0.3,
-				"weight": 25
-			},
-			{
-				"name": "minecraft:ambient/nether/soulsand_valley/wind4",
-				"pitch": 0.75,
-				"volume": 0.3,
-				"weight": 25
 			}
 		]
 	},
@@ -504,7 +460,7 @@
 	"ambient.mars_land.loop": {
 		"sounds": [
 			{
-				"name": "ambientsounds:wind/light-wind2",
+				"name": "ambientsounds:animals/cicadas/cicadas-mushroom-fields",
 				"stream": true,
 				"volume": 0.50
 			}
@@ -529,27 +485,27 @@
 			},
 			{
 				"name": "minecraft:ambient/nether/basalt_deltas/click4",
-				"volume": 0.25,
+				"volume": 0.19,
 				"weight": 20
 			},
 			{
 				"name": "minecraft:ambient/nether/basalt_deltas/click5",
-				"volume": 0.25,
+				"volume": 0.19,
 				"weight": 20
 			},
 			{
 				"name": "minecraft:ambient/nether/basalt_deltas/click6",
-				"volume": 0.01,
+				"volume": 0.19,
 				"weight": 20
 			},
 			{
 				"name": "minecraft:ambient/nether/basalt_deltas/click7",
-				"volume": 0.01,
+				"volume": 0.19,
 				"weight": 25
 			},
 			{
 				"name": "minecraft:ambient/nether/basalt_deltas/click8",
-				"volume": 0.01,
+				"volume": 0.19,
 				"weight": 25
 			},
 			{
@@ -608,48 +564,9 @@
 				"weight": 3
 			},
 			{
-				"name": "minecraft:ambient/nether/soulsand_valley/wind1",
-				"volume": 0.3,
-				"weight": 5
-			},
-			{
-				"name": "minecraft:ambient/nether/soulsand_valley/wind1",
-				"pitch": 0.75,
-				"volume": 0.3,
-				"weight": 5
-			},
-			{
-				"name": "minecraft:ambient/nether/soulsand_valley/wind2",
-				"volume": 0.25,
-				"weight": 5
-			},
-			{
-				"name": "minecraft:ambient/nether/soulsand_valley/wind2",
-				"pitch": 0.75,
-				"volume": 0.3,
-				"weight": 5
-			},
-			{
-				"name": "minecraft:ambient/nether/soulsand_valley/wind3",
-				"volume": 0.25,
-				"weight": 5
-			},
-			{
-				"name": "minecraft:ambient/nether/soulsand_valley/wind3",
-				"pitch": 0.75,
-				"volume": 0.3,
-				"weight": 5
-			},
-			{
-				"name": "minecraft:ambient/nether/soulsand_valley/wind4",
-				"volume": 0.3,
-				"weight": 5
-			},
-			{
-				"name": "minecraft:ambient/nether/soulsand_valley/wind4",
-				"pitch": 0.75,
-				"volume": 0.3,
-				"weight": 5
+				"name": "ambientsounds:animals/special/special-mushroom-fields",
+				"volume": 0.4,
+				"weight": 20
 			}
 		]
 	},

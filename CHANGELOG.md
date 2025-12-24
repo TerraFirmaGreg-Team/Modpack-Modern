@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+### Breaking Changes
+- The LCR recipe for BTX fuel now requires circuit 24, to fix a recipe conflict (#2515) @TomPlop
 ### Changes
 - Added casting molds for small gears, nuggets, and rods (#2470) @glitchplaysgames714
 - Added some new illages to the hot and dry, and cold and dry climates of the world! @MVG31
@@ -9,16 +11,20 @@
 - Magma blocks are now hot to hold @Pyritie
 - Added a recipe to craft old gregtech facades into ones with a new texture @Pyritie
 - Fluid sources of alcohol and milks are no longer placeable, so you can't drink from them infinitely any more @bigtho80
+- Added TFC scraping knives (#2494) @glitchplaysgames714
 - Changed the ambient sounds in the Beneath, added some to the moon and mars @Pyritie
 - Tweaked the ambient sounds in the overworld @Pyritie
+- Apatite, Tricalcium phosphate, rock salt, potassium sulfate, and ammonium chloride dusts now count as crop fertiliser (#2501) @Xtrial-01
 ### Bug fixes
 - Fix for food stacking everywhere! @Mqrius
+- Fixed the grappling hook crashing and sending you to the void if you use it while travelling between dimensions (#2514) @Mqrius
 - Fixed some curving press tool head recipes being cheaper than intended (#2478) @Pyritie
 - Fixed some bastion chests being empty @Pyritie
 - Fixed overlapping durability numbers on the curio HUD (#2484) @glitchplaysgames714
 - Fixed a potential crash involving the refrigerator @Redeix
 - Fixed the evaporation tower requiring an input hatch even for recipes that don't have a fluid input @glitchplaysgames714
 - Fixed loot tables for ore indicator buds @Pyritie
+- Fixed the new gas fuels being usable on other planets (#2515) @TomPlop
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry

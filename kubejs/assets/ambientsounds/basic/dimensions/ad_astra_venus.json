@@ -1,0 +1,13 @@
+{
+    "name": "ad_astra_venus",
+    "dimension-names": [
+        "venus"
+    ],
+    "rain": true,
+    "storm": true,
+    "biome-selector": {
+        "always": false
+    },
+    "regions": [
+    ]
+}
