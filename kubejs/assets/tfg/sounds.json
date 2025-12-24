@@ -471,42 +471,42 @@
 			{
 				"name": "minecraft:ambient/nether/basalt_deltas/click1",
 				"volume": 0.19,
-				"weight": 20
+				"weight": 10
 			},
 			{
 				"name": "minecraft:ambient/nether/basalt_deltas/click2",
 				"volume": 0.19,
-				"weight": 20
+				"weight": 10
 			},
 			{
 				"name": "minecraft:ambient/nether/basalt_deltas/click3",
 				"volume": 0.19,
-				"weight": 20
+				"weight": 10
 			},
 			{
 				"name": "minecraft:ambient/nether/basalt_deltas/click4",
 				"volume": 0.19,
-				"weight": 20
+				"weight": 10
 			},
 			{
 				"name": "minecraft:ambient/nether/basalt_deltas/click5",
 				"volume": 0.19,
-				"weight": 20
+				"weight": 10
 			},
 			{
 				"name": "minecraft:ambient/nether/basalt_deltas/click6",
 				"volume": 0.19,
-				"weight": 20
+				"weight": 10
 			},
 			{
 				"name": "minecraft:ambient/nether/basalt_deltas/click7",
 				"volume": 0.19,
-				"weight": 25
+				"weight": 10
 			},
 			{
 				"name": "minecraft:ambient/nether/basalt_deltas/click8",
 				"volume": 0.19,
-				"weight": 25
+				"weight": 10
 			},
 			{
 				"name": "minecraft:ambient/nether/soulsand_valley/sand1",
@@ -521,27 +521,27 @@
 			{
 				"name": "minecraft:ambient/nether/soulsand_valley/sand3",
 				"volume": 0.4,
-				"weight": 2
+				"weight": 25
 			},
 			{
 				"name": "minecraft:ambient/nether/crimson_forest/shroom1",
 				"volume": 0.25,
-				"weight": 2
+				"weight": 4
 			},
 			{
 				"name": "minecraft:ambient/nether/crimson_forest/shroom2",
 				"volume": 0.25,
-				"weight": 2
+				"weight": 4
 			},
 			{
 				"name": "minecraft:ambient/nether/crimson_forest/shroom3",
 				"volume": 0.25,
-				"weight": 2
+				"weight": 4
 			},
 			{
 				"name": "minecraft:ambient/nether/crimson_forest/twang1",
 				"volume": 0.25,
-				"weight": 2
+				"weight": 3
 			},
 			{
 				"name": "minecraft:ambient/nether/crimson_forest/particles1",
@@ -561,7 +561,7 @@
 			{
 				"name": "minecraft:ambient/nether/crimson_forest/addition1",
 				"volume": 0.4,
-				"weight": 3
+				"weight": 5
 			},
 			{
 				"name": "ambientsounds:animals/special/special-mushroom-fields",
