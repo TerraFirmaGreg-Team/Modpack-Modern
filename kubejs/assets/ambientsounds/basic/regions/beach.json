@@ -1,0 +1,50 @@
+{
+	"name": "beach",
+	"biomes": [
+		"shore",
+		"tidal_flats"
+	],
+	"sounds": [
+		{
+			"name": "beach",
+			"files": [
+				"ambientsounds:water.beach"
+			],
+			"volume": 0.1
+		},
+		{
+			"name": "seagull",
+			"category": "bird_day",
+			"files": [
+				"ambientsounds:animals.seagull"
+			],
+			"volume": 0.4,
+			"pause": {
+				"min": 750,
+				"max": 1000
+			}
+		},
+		{
+			"name": "seagull-long",
+			"category": "bird_day",
+			"files": [
+				"ambientsounds:animals.seagull-long"
+			],
+			"length": {
+				"min": 30,
+				"max": 600
+			},
+			"pause": {
+				"min": 750,
+				"max": 1000
+			}
+		},
+		{
+			"name": "ocean",
+			"files": [
+				"ambientsounds:water.ocean"
+			],
+			"volume": 0.2
+		}
+	]
+}

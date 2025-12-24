@@ -18,6 +18,10 @@ function registerTFGSounds(event) {
     event.create('tfg:ambient.mars_desert.additions')
     event.create('tfg:ambient.mars_desert.mood')
 
+    event.create('tfg:ambient.mars_land.loop')
+    event.create('tfg:ambient.mars_land.additions')
+    event.create('tfg:ambient.mars_land.mood')
+
     event.create('tfg:ambient.venus_surface.loop')
     event.create('tfg:ambient.venus_surface.additions')
     event.create('tfg:ambient.venus_surface.mood')

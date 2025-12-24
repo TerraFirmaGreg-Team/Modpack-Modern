@@ -9,6 +9,8 @@
 - Magma blocks are now hot to hold @Pyritie
 - Added a recipe to craft old gregtech facades into ones with a new texture @Pyritie
 - Fluid sources of alcohol and milks are no longer placeable, so you can't drink from them infinitely any more @bigtho80
+- Changed the ambient sounds in the Beneath, added some to the moon and mars @Pyritie
+- Tweaked the ambient sounds in the overworld @Pyritie
 ### Bug fixes
 - Fix for food stacking everywhere! @Mqrius
 - Fixed some curving press tool head recipes being cheaper than intended (#2478) @Pyritie

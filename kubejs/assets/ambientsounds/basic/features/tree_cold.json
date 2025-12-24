@@ -1,0 +1,19 @@
+{
+    "name": "tree",
+    "and": [
+        {
+            "groups": [
+                "leave"
+            ],
+            "low-count": 5,
+            "high-count": 30
+        },
+        {
+            "groups": [
+                "log_cold"
+            ],
+            "low-count": 3,
+            "high-count": 10
+        }
+    ]
+}

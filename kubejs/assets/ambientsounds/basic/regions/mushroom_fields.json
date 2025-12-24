@@ -1,0 +1,48 @@
+{
+    "name": "mushroom_fields",
+    "biomes": [
+        "amber_hills",
+        "amber_plains",
+        "amber_edge",
+        "rusticus_hills",
+        "rusticus_plains",
+        "rusticus_edge",
+        "sangnum_hills",
+        "sangnum_plains",
+        "sangnum_edge"
+    ],
+    "sounds": [
+        {
+            "name": "cicadas-mushroom-fields",
+            "category": "cicadas",
+            "files": [
+                "ambientsounds:animals.cicadas-mushroom-fields"
+            ],
+            "volume": 0.5,
+            "day": 1,
+            "time": [
+                "day",
+                "night"
+            ],
+            "night": "0.1"
+        },
+        {
+            "name": "special-mushroom-fields",
+            "category": "animal",
+            "files": [
+                "ambientsounds:animals.special-mushroom-fields"
+            ],
+            "volume": 0.5,
+            "day": 1,
+            "night": "0.2",
+            "length": {
+                "min": 40,
+                "max": 120
+            },
+            "pause": {
+                "min": 500,
+                "max": 2200
+            }
+        }
+    ]
+}
