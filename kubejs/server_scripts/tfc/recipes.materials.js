@@ -1303,6 +1303,12 @@ function registerTFCMaterialsRecipes(event) {
 				.tier(tfcProperty.getTier())
 				.id(`tfc:anvil/${material.getName()}_bars`)
 
+			event.stonecutting(`4x tfc:metal/bars/${material.getName()}`, ingotItem);
+
+			let quarterMap = {};
+			quarterMap[material.getName()] = 0.25;
+			TFGHelpers.registerMaterialInfo(`tfc:metal/bars/${material.getName()}`, quarterMap)
+
 			// 16x Решетка
 			event.recipes.tfc.anvil(`8x tfc:metal/bars/${material.getName()}`, ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1),
 				['upset_last', 'punch_second_last', 'punch_third_last'])

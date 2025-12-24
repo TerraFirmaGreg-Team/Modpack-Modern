@@ -1078,21 +1078,6 @@ function registerGTCEUMetalRecipes(event) {
 	/**
 	 * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
 	*/
-	const processBars = (material) => {
-		const barsStack = ChemicalHelper.get(TFGTagPrefix.bars, material, 4)
-		const ingotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-		if (barsStack === null) return;
-
-		event.recipes.gtceu.cutter(`tfg:${material.getName()}_bars`)
-			.itemInputs(ingotStack)
-			.itemOutputs(barsStack)
-			.duration(100)
-			.EUt(GTValues.VA[GTValues.LV])
-	}
-
-	/**
-	 * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
-	*/
 	const processBuzzsawBlade = (material) => {
 		const buzzsawBladeItem = ChemicalHelper.get(TagPrefix.toolHeadBuzzSaw, material, 1)
 		const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
@@ -1234,7 +1219,6 @@ function registerGTCEUMetalRecipes(event) {
 			processTrapdoor(material)
 			processChain(material)
 			processBell(material)
-			processBars(material)
 			processBuzzsawBlade(material)
 
 			event.remove({ id: `gtceu:shaped/spring_${material.getName()}` })
