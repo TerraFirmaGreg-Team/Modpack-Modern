@@ -2,9 +2,39 @@
 	"ambient.upper_nether.loop": {
 		"sounds": [
 			{
-				"name": "minecraft:ambient/nether/crimson_forest/ambience",
+				"name": "ambientsounds:cave/cave_lush",
 				"stream": true,
-				"volume": 0.74
+				"volume": 1
+			},
+			{
+				"name": "ambientsounds:animals/frog/frog-cave1",
+				"stream": true,
+				"volume": 1
+			},
+			{
+				"name": "ambientsounds:cave/cave-water1",
+				"stream": true,
+				"volume": 1
+			},
+			{
+				"name": "ambientsounds:cave/cave-water2",
+				"stream": true,
+				"volume": 1
+			},
+			{
+				"name": "ambientsounds:cave/cave-water3",
+				"stream": true,
+				"volume": 1
+			},
+			{
+				"name": "ambientsounds:cave/cave-water4",
+				"stream": true,
+				"volume": 1
+			},
+			{
+				"name": "ambientsounds:cave/cave-water5",
+				"stream": true,
+				"volume": 1
 			}
 		]
 	},
@@ -181,18 +211,14 @@
 	},
 	"ambient.upper_nether.mood": {
 		"sounds": [
-			"ambient/nether/crimson_forest/mood1",
-			"ambient/nether/crimson_forest/mood2",
-			"ambient/nether/crimson_forest/mood3",
-			"ambient/nether/warped_forest/creak1",
-			"ambient/nether/warped_forest/creak2",
-			"ambient/nether/warped_forest/creak3",
-			"ambient/nether/warped_forest/creak4",
-			"ambient/nether/warped_forest/creak5",
-			"ambient/cave/cave4",
-			"ambient/cave/cave7",
-			"ambient/cave/cave8",
-			"ambient/cave/cave9"
+			"minecraft:ambient/nether/crimson_forest/mood1",
+			"minecraft:ambient/nether/crimson_forest/mood2",
+			"minecraft:ambient/nether/crimson_forest/mood3",
+			"minecraft:ambient/nether/warped_forest/creak1",
+			"minecraft:ambient/nether/warped_forest/creak2",
+			"minecraft:ambient/nether/warped_forest/creak3",
+			"minecraft:ambient/nether/warped_forest/creak4",
+			"minecraft:ambient/nether/warped_forest/creak5"
 		]
 	},
 	"ambient.lower_nether.loop": {
@@ -281,11 +307,11 @@
 	},
 	"ambient.lower_nether.mood": {
 		"sounds": [
-			"ambient/nether/nether_wastes/mood1",
-			"ambient/nether/nether_wastes/mood2",
-			"ambient/nether/nether_wastes/mood3",
-			"ambient/nether/nether_wastes/mood4",
-			"ambient/nether/nether_wastes/mood5"
+			"minecraft:ambient/nether/nether_wastes/mood1",
+			"minecraft:ambient/nether/nether_wastes/mood2",
+			"minecraft:ambient/nether/nether_wastes/mood3",
+			"minecraft:ambient/nether/nether_wastes/mood4",
+			"minecraft:ambient/nether/nether_wastes/mood5"
 		]
 	},
 	"ambient.moon.additions": {
@@ -339,35 +365,27 @@
 				"pitch": 0.2,
 				"volume": 0.07,
 				"weight": 6
-			},
-			{
-				"name": "minecraft:ambient/nether/warped_forest/help1",
-				"volume": 0.2
-			},
-			{
-				"name": "minecraft:ambient/nether/warped_forest/help2",
-				"volume": 0.2
 			}
 		]
 	},
 	"ambient.moon.mood": {
 		"sounds": [
-			"ambient/nether/warped_forest/mood1",
-			"ambient/nether/warped_forest/mood2",
-			"ambient/nether/warped_forest/mood3",
-			"ambient/nether/warped_forest/mood4",
-			"ambient/nether/warped_forest/mood5",
-			"ambient/nether/warped_forest/mood6",
-			"ambient/nether/warped_forest/mood7",
-			"ambient/nether/warped_forest/mood8"
+			"minecraft:ambient/nether/warped_forest/mood1",
+			"minecraft:ambient/nether/warped_forest/mood2",
+			"minecraft:ambient/nether/warped_forest/mood3",
+			"minecraft:ambient/nether/warped_forest/mood4",
+			"minecraft:ambient/nether/warped_forest/mood5",
+			"minecraft:ambient/nether/warped_forest/mood6",
+			"minecraft:ambient/nether/warped_forest/mood7",
+			"minecraft:ambient/nether/warped_forest/mood8"
 		]
 	},
 	"ambient.mars_desert.loop": {
 		"sounds": [
 			{
-				"name": "minecraft:ambient/nether/soulsand_valley/ambience",
+				"name": "ambientsounds:wind/light-wind3",
 				"stream": true,
-				"volume": 0.85
+				"volume": 0.50
 			}
 		]
 	},
@@ -476,19 +494,19 @@
 	},
 	"ambient.mars_desert.mood": {
 		"sounds": [
-			"ambient/nether/crimson_forest/voom1",
-			"ambient/nether/crimson_forest/voom2",
-			"ambient/nether/soulsand_valley/mood2",
-			"ambient/nether/nether_wastes/addition4",
-			"ambient/nether/nether_wastes/addition8"
+			"minecraft:ambient/nether/crimson_forest/voom1",
+			"minecraft:ambient/nether/crimson_forest/voom2",
+			"minecraft:ambient/nether/soulsand_valley/mood2",
+			"minecraft:ambient/nether/nether_wastes/addition4",
+			"minecraft:ambient/nether/nether_wastes/addition8"
 		]
 	},
 	"ambient.mars_land.loop": {
 		"sounds": [
 			{
-				"name": "minecraft:ambient/nether/soulsand_valley/ambience",
+				"name": "ambientsounds:wind/light-wind2",
 				"stream": true,
-				"volume": 0.85
+				"volume": 0.50
 			}
 		]
 	},
@@ -637,21 +655,21 @@
 	},
 	"ambient.mars_land.mood": {
 		"sounds": [
-			"ambient/nether/crimson_forest/voom1",
-			"ambient/nether/crimson_forest/voom2",
-			"ambient/nether/soulsand_valley/mood2",
-			"ambient/nether/basalt_deltas/heavy_click1",
-			"ambient/nether/basalt_deltas/heavy_click2",
-			"ambient/nether/nether_wastes/addition4",
-			"ambient/nether/nether_wastes/addition8",
-			"ambient/nether/warped_forest/creak1",
-			"ambient/nether/warped_forest/creak2",
-			"ambient/nether/warped_forest/creak3",
-			"ambient/nether/warped_forest/creak4",
-			"ambient/nether/warped_forest/creak5"
+			"minecraft:ambient/nether/crimson_forest/voom1",
+			"minecraft:ambient/nether/crimson_forest/voom2",
+			"minecraft:ambient/nether/soulsand_valley/mood2",
+			"minecraft:ambient/nether/basalt_deltas/heavy_click1",
+			"minecraft:ambient/nether/basalt_deltas/heavy_click2",
+			"minecraft:ambient/nether/nether_wastes/addition4",
+			"minecraft:ambient/nether/nether_wastes/addition8",
+			"minecraft:ambient/nether/warped_forest/creak1",
+			"minecraft:ambient/nether/warped_forest/creak2",
+			"minecraft:ambient/nether/warped_forest/creak3",
+			"minecraft:ambient/nether/warped_forest/creak4",
+			"minecraft:ambient/nether/warped_forest/creak5"
 		]
 	},
-	"ambient.venus.loop": {
+	"ambient.venus_surface.loop": {
 		"sounds": [
 			{
 				"name": "minecraft:ambient/nether/basalt_deltas/ambience",
@@ -660,7 +678,7 @@
 			}
 		]
 	},
-	"ambient.venus.additions": {
+	"ambient.venus_surface.additions": {
 		"sounds": [
 			{
 				"name": "minecraft:ambient/nether/soulsand_valley/sand1",
@@ -811,16 +829,16 @@
 			}
 		]
 	},
-	"ambient.venus.mood": {
+	"ambient.venus_surface.mood": {
 		"sounds": [
-			"ambient/nether/nether_wastes/mood1",
-			"ambient/nether/nether_wastes/mood2",
-			"ambient/nether/nether_wastes/mood4",
-			"ambient/nether/nether_wastes/mood5",
-			"ambient/nether/crimson_forest/addition1",
-			"ambient/nether/crimson_forest/shine1",
-			"ambient/nether/crimson_forest/shine2",
-			"ambient/nether/crimson_forest/shine3"
+			"minecraft:ambient/nether/nether_wastes/mood1",
+			"minecraft:ambient/nether/nether_wastes/mood2",
+			"minecraft:ambient/nether/nether_wastes/mood4",
+			"minecraft:ambient/nether/nether_wastes/mood5",
+			"minecraft:ambient/nether/crimson_forest/addition1",
+			"minecraft:ambient/nether/crimson_forest/shine1",
+			"minecraft:ambient/nether/crimson_forest/shine2",
+			"minecraft:ambient/nether/crimson_forest/shine3"
 		]
 	}
 }

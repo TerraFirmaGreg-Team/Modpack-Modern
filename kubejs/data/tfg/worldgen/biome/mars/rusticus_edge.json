@@ -16,6 +16,12 @@
 			"sound": "tfg:ambient.mars_desert.mood",
 			"tick_delay": 6000
 		},
+		"music": {
+			"max_delay": 24000,
+			"min_delay": 12000,
+			"replace_current_music": false,
+			"sound": "minecraft:music.overworld.desert"
+		},
 		"sky_color": 15117444,
 		"water_color": 4159204,
 		"water_fog_color": 1069623

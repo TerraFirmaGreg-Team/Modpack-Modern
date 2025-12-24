@@ -5,7 +5,7 @@
 	"downfall": 0,
 	"effects": {
 		"additions_sound": {
-			"sound": "tfg:ambient.venus.additions",
+			"sound": "tfg:ambient.venus_surface.additions",
 			"tick_chance": 0.0111
 		},
 		"sky_color": 11644227,
@@ -14,11 +14,11 @@
 		"water_fog_color": 10866612,
 		"grass_color": 13758586,
 		"foliage_color": 11653213,
-		"ambient_sound": "tfg:ambient.venus.loop",
+		"ambient_sound": "tfg:ambient.venus_surface.loop",
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
-			"sound": "tfg:ambient.venus.mood",
+			"sound": "tfg:ambient.venus_surface.mood",
 			"tick_delay": 6000
 		},
 		"particle": {
