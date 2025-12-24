@@ -489,7 +489,7 @@
 	#.
 	#Maximum length of track that can be placed as one batch or turn.
 	#Range: 16 ~ 128
-	maxTrackPlacementLength = 32
+	maxTrackPlacementLength = 128
 	#.
 	#Maximum length of a Train Stations' assembly track.
 	#Range: > 5
