@@ -32,6 +32,7 @@
 - Fixed inconsistent recipes for metal bars, now they all use the anvil or stonecutter. Also added recycling for them all @Pyritie
 - Various quest fixes and improvements @thederpysockdude123
 - Added a missing dependency that fixes the rnr roads' crazy acceleration @Pyritie
+- Fixed not being able to use aged alcohols to make vinegar (#2519) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
