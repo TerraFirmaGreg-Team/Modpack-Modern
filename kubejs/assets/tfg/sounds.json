@@ -1,5 +1,5 @@
 {
-	"ambient.upper_nether.loop": {
+	"ambient.upper_nether_lush.loop": {
 		"sounds": [
 			{
 				"name": "ambientsounds:cave/cave_lush",
@@ -11,6 +11,35 @@
 				"stream": true,
 				"volume": 1
 			},
+			{
+				"name": "ambientsounds:cave/cave-water1",
+				"stream": true,
+				"volume": 1
+			},
+			{
+				"name": "ambientsounds:cave/cave-water2",
+				"stream": true,
+				"volume": 1
+			},
+			{
+				"name": "ambientsounds:cave/cave-water3",
+				"stream": true,
+				"volume": 1
+			},
+			{
+				"name": "ambientsounds:cave/cave-water4",
+				"stream": true,
+				"volume": 1
+			},
+			{
+				"name": "ambientsounds:cave/cave-water5",
+				"stream": true,
+				"volume": 1
+			}
+		]
+	},
+	"ambient.upper_nether_cave.loop": {
+		"sounds": [
 			{
 				"name": "ambientsounds:cave/cave-water1",
 				"stream": true,

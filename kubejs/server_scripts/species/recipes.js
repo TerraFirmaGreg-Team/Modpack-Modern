@@ -105,11 +105,11 @@ function registerSpeciesRecipes(event) {
 
 	event.recipes.tfc.sewing('species:wicked_mask',
 		[
-			1, 0, 0, 1, 0, 0, 1,
-			1, 0, 0, 1, 0, 0, 1,
-			1, 0, 0, 1, 0, 0, 1,
-			0, 0, 0, 1, 0, 0, 1,
-			0, 0, 0, 1, 0, 0, 1
+			1, 0, 0, 0, 1, 0, 0, 0, 1,
+			1, 0, 0, 0, 1, 0, 0, 0, 1,
+			1, 0, 0, 0, 1, 0, 0, 0, 1,
+			0, 0, 0, 0, 1, 0, 0, 0, 0,
+			0, 0, 0, 0, 0, 0, 0, 0, 0
 		],
 		[
 			1,  1,  1,  1,  0,  0,  0,  0,
@@ -135,7 +135,7 @@ function registerSpeciesRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(200)
 
-	event.shaped('species:smoke_bomb', [
+	event.shaped('2x species:smoke_bomb', [
 		' A ',
 		'BCB',
 		'EDE'
@@ -144,10 +144,10 @@ function registerSpeciesRecipes(event) {
 		B: 'minecraft:paper',
 		C: '#tfg:invisibility_ingredients',
 		D: 'gtceu:sticky_resin',
-		E: '#tfc:powders'
+		E: 'minecraft:gunpowder'
 	}).id('tfg:shaped/smoke_bomb_paper')
 
-	event.shaped('species:smoke_bomb', [
+	event.shaped('2x species:smoke_bomb', [
 		' A ',
 		'BC ',
 		'EDE'
@@ -156,17 +156,6 @@ function registerSpeciesRecipes(event) {
 		B: '#tfc:fired_vessels',
 		C: '#tfg:invisibility_ingredients',
 		D: 'gtceu:sticky_resin',
-		E: '#tfc:powders'
+		E: 'minecraft:gunpowder'
 	}).id('tfg:shaped/smoke_bomb_vessel')
-
-	event.shaped('2x species:smoke_bomb', [
-		' B ',
-		'BCB',
-		' D '
-	], {
-		A: '#forge:string',
-		B: 'minecraft:paper',
-		C: '#tfg:invisibility_ingredients',
-		D: 'tfg:dry_ice',
-	}).id('tfg:shaped/smoke_bomb_dry_ice')
 }

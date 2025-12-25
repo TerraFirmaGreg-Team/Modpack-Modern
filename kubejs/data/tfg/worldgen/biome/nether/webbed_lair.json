@@ -18,10 +18,10 @@
 			"sound": "minecraft:music.overworld.dripstone_caves"
 		},
 		"additions_sound": {
-			"sound": "tfg:ambient.upper_nether.additions",
+			"sound": "tfg:ambient.upper_nether_cave.additions",
 			"tick_chance": 0.0111
 		},
-		"ambient_sound": "tfg:ambient.upper_nether.loop",
+		"ambient_sound": "tfg:ambient.upper_nether_cave.loop",
 		"sky_color": 5799235,
 		"water_color": 7255466,
 		"water_fog_color": 3169873,
@@ -103,16 +103,16 @@
 		],
 		"creature": [
 			{
-				"type": "minecraft:frog",
-				"maxCount": 4,
+				"type": "species:trooper",
+				"maxCount": 3,
 				"minCount": 2,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "beneath:red_elk",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 50
+				"weight": 100
 			}
 		],
 		"misc": [],

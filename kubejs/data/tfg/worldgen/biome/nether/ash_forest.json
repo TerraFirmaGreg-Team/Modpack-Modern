@@ -102,10 +102,10 @@
 		],
 		"creature": [
 			{
-				"type": "minecraft:frog",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 10
+				"type": "species:trooper",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 50
 			},
 			{
 				"type": "beneath:red_elk",

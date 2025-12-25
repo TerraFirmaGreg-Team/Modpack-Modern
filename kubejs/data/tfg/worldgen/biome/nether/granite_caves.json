@@ -9,7 +9,7 @@
 			"sound": "tfg:ambient.upper_nether.additions",
 			"tick_chance": 0.0111
 		},
-		"ambient_sound": "tfg:ambient.upper_nether.loop",
+		"ambient_sound": "tfg:ambient.upper_nether_cave.loop",
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
@@ -101,8 +101,8 @@
 		],
 		"creature": [
 			{
-				"type": "minecraft:frog",
-				"maxCount": 4,
+				"type": "species:trooper",
+				"maxCount": 3,
 				"minCount": 2,
 				"weight": 50
 			},
