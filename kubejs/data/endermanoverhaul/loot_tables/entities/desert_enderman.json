@@ -6,7 +6,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "ae2:ender_dust"
+					"name": "endermanoverhaul:ancient_pearl"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "endermanoverhaul:soul_pearl"
 				},
 				{
 					"type": "minecraft:item",
@@ -35,37 +39,7 @@
 							"function": "minecraft:set_count"
 						}
 					],
-					"name": "minecraft:glow_berries"
-				},
-				{
-					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4.0,
-								"min": 2.0
-							},
-							"function": "minecraft:set_count"
-						}
-					],
-					"name": "minecraft:moss_block"
-				},
-				{
-					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2.0,
-								"min": 1.0
-							},
-							"function": "minecraft:set_count"
-						}
-					],
-					"name": "tfc:wood/sapling/mangrove"
+					"name": "minecraft:chorus_fruit"
 				}
 			],
 			"rolls": 2.0

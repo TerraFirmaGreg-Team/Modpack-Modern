@@ -15,6 +15,10 @@
 				{
 					"type": "minecraft:item",
 					"name": "endermanoverhaul:summoner_pearl"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "species:wicked_swapper"
 				}
 			],
 			"rolls": 1.0
@@ -28,7 +32,7 @@
 					"conditions": [
 						{
 							"condition": "minecraft:random_chance",
-							"chance": 0.1
+							"chance": 0.25
 						}
 					]
 				}
