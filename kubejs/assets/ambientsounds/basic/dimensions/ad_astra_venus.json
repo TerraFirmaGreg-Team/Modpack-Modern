@@ -3,8 +3,6 @@
     "dimension-names": [
         "venus"
     ],
-    "rain": true,
-    "storm": true,
     "biome-selector": {
         "always": true
     },
