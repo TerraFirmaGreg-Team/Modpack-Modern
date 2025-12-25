@@ -16,11 +16,15 @@
         "with": [
           {
             "block": "gtceu:granite_cassiterite_ore",
-            "weight": 60
+            "weight": 55
           },
           {
             "block": "gtceu:granite_tin_ore",
-            "weight": 40
+            "weight": 35
+          },
+          {
+            "block": "gtceu:granite_saltpeter_ore",
+            "weight": 10
           }
         ]
       },
@@ -31,11 +35,15 @@
         "with": [
           {
             "block": "gtceu:diorite_cassiterite_ore",
-            "weight": 60
+            "weight": 55
           },
           {
             "block": "gtceu:diorite_tin_ore",
-            "weight": 40
+            "weight": 35
+          },
+          {
+            "block": "gtceu:diorite_saltpeter_ore",
+            "weight": 10
           }
         ]
       },
@@ -46,11 +54,15 @@
         "with": [
           {
             "block": "gtceu:gabbro_cassiterite_ore",
-            "weight": 60
+            "weight": 55
           },
           {
             "block": "gtceu:gabbro_tin_ore",
-            "weight": 40
+            "weight": 35
+          },
+          {
+            "block": "gtceu:gabbro_saltpeter_ore",
+            "weight": 10
           }
         ]
       }
@@ -58,12 +70,16 @@
     "indicator": {
       "rarity": 12,
       "depth": 60,
-      "underground_rarity": 1,
-      "underground_count": 1,
+      "underground_rarity": 40,
+      "underground_count": 200,
       "blocks": [
         {
           "block": "tfc:ore/small_cassiterite",
-          "weight": 100
+          "weight": 90
+        },
+        {
+          "block": "gtceu:saltpeter_indicator",
+          "weight": 10
         }
       ]
     }
