@@ -134,6 +134,7 @@ function registerTFGVenusEntityTypeTags(event) {
 		"endermanoverhaul:nether_wastes_enderman",
 		"ad_astra:sulfur_creeper",
 		'species:cliff_hanger',
+		'species:trooper'
 	]
 
 	ENTITIES.forEach(entity => {

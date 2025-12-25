@@ -100,12 +100,6 @@
 		],
 		"creature": [
 			{
-				"type": "species:trooper",
-				"maxCount": 3,
-				"minCount": 2,
-				"weight": 50
-			},
-			{
 				"type": "beneath:red_elk",
 				"maxCount": 8,
 				"minCount": 4,

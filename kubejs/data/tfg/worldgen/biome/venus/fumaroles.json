@@ -83,7 +83,14 @@
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
-		"creature": [],
+		"creature": [
+			{
+				"type": "species:trooper",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 50
+			}
+		],
 		"misc": [],
 		"monster": [
 			{
