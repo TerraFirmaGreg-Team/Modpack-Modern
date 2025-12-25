@@ -13,6 +13,9 @@ function registerSpeciesRecipes(event) {
 	event.shapeless('species:music_disc_lapidarian', ['etched:blank_music_disc', 'tfc:rock/raw/basalt_slab'])
 	event.shapeless('species:music_disk_spawner', ['etched:blank_music_disc', 'computercraft:disk'])
 
+
+	// TODO: add recipes for its enchants? Quick Crank, Scattershot, Capacity, and Sparing
+
 	event.shaped('species:cranktrap', [
 		'ABA',
 		'CDC',
@@ -29,10 +32,10 @@ function registerSpeciesRecipes(event) {
 		'CBC',
 		'DED'
 	], {
-		A: '#forge:rods/black_steel',
+		A: '#forge:rods/steel',
 		B: 'minecraft:crossbow',
-		C: '#forge:small_gears/steel',
-		D: 'tfc:metal/chain/black_steel',
+		C: '#forge:small_gears/wrought_iron',
+		D: 'tfc:metal/chain/steel',
 		E: 'create:hand_crank'
 	}).id('tfg:shaped/crankbow')
 
@@ -142,7 +145,19 @@ function registerSpeciesRecipes(event) {
 		C: '#tfg:invisibility_ingredients',
 		D: 'gtceu:sticky_resin',
 		E: '#tfc:powders'
-	}).id('tfg:shaped/smoke_bomb')
+	}).id('tfg:shaped/smoke_bomb_paper')
+
+	event.shaped('species:smoke_bomb', [
+		' A ',
+		'BC ',
+		'EDE'
+	], {
+		A: '#forge:string',
+		B: '#tfc:fired_vessels',
+		C: '#tfg:invisibility_ingredients',
+		D: 'gtceu:sticky_resin',
+		E: '#tfc:powders'
+	}).id('tfg:shaped/smoke_bomb_vessel')
 
 	event.shaped('2x species:smoke_bomb', [
 		' B ',
