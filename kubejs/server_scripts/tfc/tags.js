@@ -369,6 +369,12 @@ function registerTFCItemTags(event) {
     global.TFC_DRY_MUD_BRICKS.forEach((dryMudBrick) => {
         event.add("tfc:dry_mud_bricks", dryMudBrick);
     });
+
+    // Workaround for some of the ruin structures having tfc knives
+    event.add('tfc:knives', 'tfc:stone/knife/sedimentary')
+    event.add('tfc:knives', 'tfc:stone/knife/metamorphic')
+    event.add('tfc:knives', 'tfc:stone/knife/igneous_intrusive')
+    event.add('tfc:knives', 'tfc:stone/knife/igneous_extrusive')
 }
 
 /** @param {TagEvent.Block} event */
