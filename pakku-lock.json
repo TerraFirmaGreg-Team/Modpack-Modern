@@ -1821,6 +1821,74 @@
             ]
         },
         {
+            "pakku_id": "8jcmjuoMhFDsALTg",
+            "pakku_links": [
+                "3Hn4sTVbBvKyQJJS"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "block-runner",
+                "modrinth": "block-runner"
+            },
+            "name": {
+                "curseforge": "Block Runner",
+                "modrinth": "Block Runner"
+            },
+            "id": {
+                "curseforge": "442842",
+                "modrinth": "1VSGxqkt"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "BlockRunner-v8.0.4-1.20.1-Forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5157/20/BlockRunner-v8.0.4-1.20.1-Forge.jar",
+                    "id": "5157020",
+                    "parent_id": "442842",
+                    "hashes": {
+                        "sha1": "71fc6fe4b99dc495528edbb0be12b126eab64b6f",
+                        "md5": "599fa317751adc86fafeef00fa9eb753"
+                    },
+                    "required_dependencies": [
+                        "495476"
+                    ],
+                    "size": 76565,
+                    "date_published": "2024-03-04T12:26:25.207Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "BlockRunner-v8.0.4-1.20.1-Forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/1VSGxqkt/versions/JCUr7it5/BlockRunner-v8.0.4-1.20.1-Forge.jar",
+                    "id": "JCUr7it5",
+                    "parent_id": "1VSGxqkt",
+                    "hashes": {
+                        "sha512": "d13dbe6d30092800f47006dc90754f2fd09422158b3d95f634325a1e82cb00c7898fde65d7bbdd6d95a6d004272227821b5bfb58be8c64af781d6b562e7ac48b",
+                        "sha1": "71fc6fe4b99dc495528edbb0be12b126eab64b6f"
+                    },
+                    "required_dependencies": [
+                        "QAGBst4M"
+                    ],
+                    "size": 76565,
+                    "date_published": "2024-03-04T12:26:29.116774Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Yr24iolwXV9aFEWV",
             "type": "MOD",
             "side": "CLIENT",
@@ -11245,7 +11313,8 @@
         {
             "pakku_id": "Onv7E6XLSsx0NE2o",
             "pakku_links": [
-                "64uacGcEw697jVGs"
+                "64uacGcEw697jVGs",
+                "8jcmjuoMhFDsALTg"
             ],
             "type": "MOD",
             "side": "BOTH",
