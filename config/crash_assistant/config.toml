@@ -195,7 +195,7 @@
 [greeting]
 	#You don't need to touch this option.
 	#On first world join of modpack creator if set to false shows greeting, then self enables.
-	shown_greeting = false
+	shown_greeting = true
 
 #You can customise GUI with this options.
 [gui_customisation]
@@ -229,7 +229,7 @@
 	auto_fix_button_foreground_color = "0_178_0"
 	#Path to a modpack logo to display in the top of the GUI.
 	#Path is relative to the Minecraft instance folder. Leave empty to disable.
-	modpack_logo_path = "kubejs\assets\tfg\textures\gui\tfg_logo_icon_outline_white_sr_456p.gif"
+	modpack_logo_path = "kubejs/assets/tfg/textures/gui/tfg_logo_icon_outline_white_sr_456p.gif"
 	#If true, the logo will be larger, Replacing a some of `don't send screenshot` notice.
 	#If false, it will be smaller and logo will be end right where the `don't send screenshot` notice starts.
 	#You should try both, but most likely:
