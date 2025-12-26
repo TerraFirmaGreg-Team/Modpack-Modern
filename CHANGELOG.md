@@ -3,6 +3,7 @@
 ## Unreleased
 ### Breaking Changes
 - The LCR recipe for BTX fuel now requires circuit 24, to fix a recipe conflict (#2515) @TomPlop
+- Loose stones now compress into cobblestone (without any mortar) and vice versa. So if you're currently using gravel to store your loose stones, uncraft them before updating. (#809) @Pyritie
 ### Changes
 - Added casting molds for small gears, nuggets, and rods (#2470) @glitchplaysgames714
 - Added some new illages to the hot and dry, and cold and dry climates of the world! @MVG31

@@ -8,46 +8,21 @@ function registerTFGRockRecipes(event) {
 
 
 	// #region GLUEING_TOGETHER
-	// loose rocks to cobble, bricks to brick blocks
+	// raw rock to hardened, bricks to brick blocks
 	const GLUEING_TOGETHER = [
-		{ loose: 'tfg:loose/deepslate',           block: 'minecraft:cobbled_deepslate' },
 		{ loose: 'tfg:brick/deepslate',           block: '4x minecraft:deepslate_bricks' },
-
-		{ loose: 'beneath:blackstone_pebble',     block: 'tfg:rock/cobble_blackstone' },
 		{ loose: 'beneath:blackstone_brick',      block: '4x minecraft:polished_blackstone_bricks' },
-
-		{ loose: 'tfg:loose/dripstone',           block: 'tfg:rock/cobble_dripstone' },
 		{ loose: 'tfg:brick/dripstone',           block: '4x create:cut_dripstone_bricks' },
-
-		{ loose: 'tfg:loose/crackrack',           block: 'tfg:rock/cobble_crackrack' },
 		{ loose: 'minecraft:nether_brick',        block: '4x minecraft:nether_bricks' },
-
-		{ loose: 'tfg:loose/moon_stone',          block: 'ad_astra:moon_cobblestone' },
 		{ loose: 'tfg:brick/moon_stone',          block: '4x ad_astra:moon_stone_bricks' },
-
-		{ loose: 'tfg:loose/moon_deepslate',      block: 'tfg:rock/cobble_moon_deepslate' },
 		{ loose: 'tfg:brick/moon_deepslate',      block: '4x tfg:rock/bricks_moon_deepslate' },
-
-		{ loose: 'tfg:loose/mars_stone',          block: 'ad_astra:mars_cobblestone' },
 		{ loose: 'tfg:brick/mars_stone',          block: '4x ad_astra:mars_stone_bricks' },
-
-		{ loose: 'tfg:loose/venus_stone',         block: 'ad_astra:venus_cobblestone' },
 		{ loose: 'tfg:brick/venus_stone',         block: '4x ad_astra:venus_stone_bricks' },
-
-		{ loose: 'tfg:loose/red_granite',         block: 'gtceu:red_granite_cobblestone' },
 		{ loose: 'tfg:brick/red_granite',         block: '4x gtceu:red_granite_bricks' },
-
-		{ loose: 'tfg:loose/mercury_stone',       block: 'ad_astra:mercury_cobblestone' },
 		{ loose: 'tfg:brick/mercury_stone',       block: '4x ad_astra:mercury_stone_bricks' },
-
-		{ loose: 'tfg:loose/glacio_stone',        block: 'ad_astra:glacio_cobblestone' },
 		{ loose: 'tfg:brick/glacio_stone',        block: '4x ad_astra:glacio_stone_bricks' },
-
-		{ loose: 'tfg:loose/permafrost',          block: 'tfg:rock/cobble_permafrost' },
 		{ loose: 'tfg:brick/permafrost',          block: '4x ad_astra:permafrost_bricks' },
-
 		{ loose: 'minecraft:popped_chorus_fruit', block: '4x minecraft:purpur_block' },
-
 		{ loose: 'gtceu:stone_ingot',			  block: '4x minecraft:stone_bricks' },
 
 		{ loose: 'minecraft:deepslate',		      block: '2x tfg:rock/hardened_deepslate' },
@@ -79,64 +54,50 @@ function registerTFGRockRecipes(event) {
 			.circuit(1)
 			.duration(50)
 			.EUt(2)
-
-		if( x.loose.includes('loose') || x.loose.includes('pebble') ){
-			event.recipes.gtceu.packer(`tfc:gtceu/packer/unpacking_${x.block}`.replace(/[: ]/g, '_'))
-				.itemInputs(`1x ${x.block}`)
-				.itemOutputs(`4x ${x.loose}`)
-				.circuit(1)
-				.duration(20)
-				.EUt(GTValues.VA[GTValues.ULV])
-		}
 	})
 	// #endregion GLUEING_TOGETHER
 
 	// #region COBBLE_TO_LOOSE
 	const COBBLE_TO_LOOSE = [
-		{ cobble: 'minecraft:blackstone',           loose: 'beneath:blackstone_pebble' },
+		{ cobble: 'tfg:rock/cobble_blackstone',     loose: 'beneath:blackstone_pebble' },
+		{ cobble: 'minecraft:cobbled_deepslate',    loose: 'tfg:loose/deepslate' },
 		{ cobble: 'tfg:rock/cobble_dripstone',      loose: 'tfg:loose/dripstone' },
 		{ cobble: 'tfg:rock/cobble_crackrack',      loose: 'tfg:loose/crackrack' },
+		{ cobble: 'ad_astra:moon_cobblestone',      loose: 'tfg:loose/moon_stone' },
 		{ cobble: 'tfg:rock/cobble_moon_deepslate', loose: 'tfg:loose/moon_deepslate' },
-		{ cobble: 'gtceu:red_granite_cobblestone',  loose: 'tfg:brick/red_granite' },
-		{ cobble: 'tfg:rock/cobble_permafrost',     loose: 'tfg:loose/permafrost' },
-		{ cobble: 'gtceu:red_granite_cobblestone',  loose: 'tfg:loose/red_granite' }
+		{ cobble: 'ad_astra:mars_cobblestone',      loose: 'tfg:loose/mars_stone' },
+		{ cobble: 'ad_astra:venus_cobblestone',     loose: 'tfg:loose/venus_stone' },
+		{ cobble: 'ad_astra:mercury_cobblestone',   loose: 'tfg:loose/mercury_stone' },
+		{ cobble: 'ad_astra:glacio_cobblestone',    loose: 'tfg:loose/glacio_stone' },
+		{ cobble: 'gtceu:red_granite_cobblestone',  loose: 'tfg:loose/red_granite' },
+		{ cobble: 'tfg:rock/cobble_permafrost',     loose: 'tfg:loose/permafrost' }
 	]
 
 	COBBLE_TO_LOOSE.forEach(x => {
-		event.shapeless(`4x ${x.loose}`, [x.cobble])		
+		event.shapeless(`4x ${x.loose}`, [x.cobble]);
+
+		event.shaped(x.cobble, [
+			'AA',
+			'AA'
+		], {
+			A: x.loose
+		});
+
+		event.recipes.gtceu.packer(`tfc:gtceu/packer/unpacking_${x.cobble}`.replace(/[: ]/g, '_'))
+			.itemInputs(`1x ${x.cobble}`)
+			.itemOutputs(`4x ${x.loose}`)
+			.circuit(1)
+			.duration(20)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.packer(`tfc:gtceu/packer/packing_${x.cobble}`.replace(/[: ]/g, '_'))
+			.itemInputs(`4x ${x.loose}`)
+			.itemOutputs(`1x ${x.cobble}`)
+			.circuit(1)
+			.duration(20)
+			.EUt(GTValues.VA[GTValues.ULV])
 	})
 	// #endregion COBBLE_TO_LOOSE
-
-	// #region LOOSE_TO_GRAVEL
-	const LOOSE_TO_GRAVEL = [
-		{ loose: 'tfg:loose/deepslate',       gravel: 'tfg:rock/gravel_deepslate' },
-		{ loose: 'beneath:blackstone_pebble', gravel: 'tfg:rock/gravel_blackstone' },
-		{ loose: 'tfg:loose/dripstone',       gravel: 'tfg:rock/gravel_dripstone' },
-		{ loose: 'tfg:loose/crackrack',       gravel: 'tfg:rock/gravel_crackrack' },
-		{ loose: 'tfg:loose/moon_stone',      gravel: 'tfg:rock/gravel_moon' },
-		{ loose: 'tfg:loose/moon_deepslate',  gravel: 'tfg:rock/gravel_moon_deepslate' },
-		{ loose: 'tfg:loose/glacio_stone',    gravel: 'tfg:rock/gravel_glacio' },
-		{ loose: 'tfg:loose/mars_stone',      gravel: 'tfg:rock/gravel_mars' },
-		{ loose: 'tfg:loose/venus_stone',     gravel: 'tfg:rock/gravel_venus' },
-		{ loose: 'tfg:loose/mercury_stone',   gravel: 'tfg:rock/gravel_mercury' },
-		{ loose: 'tfg:loose/permafrost',      gravel: 'tfg:rock/gravel_permafrost' },
-		{ loose: 'tfg:loose/red_granite',     gravel: 'tfg:rock/gravel_red_granite' }
-	]
-
-	LOOSE_TO_GRAVEL.forEach(x => {
-		event.shapeless(x.gravel, [`4x ${x.loose}`])
-		
-		event.shapeless(`16x ${x.loose}`, [`4x ${x.gravel}`])
-
-		var stone = x.gravel.replace('tfg:rock/gravel_', '')
-		event.recipes.gtceu.packer(`tfc:gtceu/packer/packing_loose_${stone}_to_gravel`)
-			.itemInputs(`4x ${x.loose}`)
-			.itemOutputs(x.gravel)
-			.circuit(2)
-			.duration(30)
-			.EUt(GTValues.VA[GTValues.LV])
-
-	})
 
 	// #region LOOSE_TO_BRICKS
 	const LOOSE_TO_BRICKS = [
@@ -200,11 +161,41 @@ function registerTFGRockRecipes(event) {
 			.itemOutputs(x.aqueduct)
 			.duration(50)
 			.EUt(2)
-	})
-	
-	
+	})	
 	// #endregion AQUEDUCT
 
+	// #region COBBLE TO MOSSY COBBLE
+
+	const COBBLE_TO_MOSSY = [
+		{ cobble: 'minecraft:cobblestone',             mossy: 'minecraft:mossy_cobblestone' },
+		{ cobble: 'tfg:rock/cobble_blackstone',        mossy: 'tfg:rock/mossy_cobble_blackstone' },
+		{ cobble: 'minecraft:cobbled_deepslate',       mossy: 'tfg:rock/mossy_cobble_deepslate' },
+		{ cobble: 'tfg:rock/cobble_dripstone',         mossy: 'tfg:rock/mossy_cobble_dripstone' },
+		{ cobble: 'tfg:rock/cobble_crackrack',         mossy: 'tfg:rock/mossy_cobble_crackrack' },
+		{ cobble: 'ad_astra:moon_cobblestone',         mossy: 'tfg:rock/mossy_cobble_moon' },
+		{ cobble: 'tfg:rock/cobble_moon_deepslate',    mossy: 'tfg:rock/mossy_cobble_moon_deepslate' },
+		{ cobble: 'ad_astra:mars_cobblestone',         mossy: 'tfg:rock/mossy_cobble_mars' },
+		{ cobble: 'ad_astra:venus_cobblestone',        mossy: 'tfg:rock/mossy_cobble_venus' },
+		{ cobble: 'ad_astra:mercury_cobblestone',      mossy: 'tfg:rock/mossy_cobble_mercury' },
+		{ cobble: 'ad_astra:glacio_cobblestone',       mossy: 'tfg:rock/mossy_cobble_glacio' },
+		{ cobble: 'tfg:rock/cobble_permafrost',        mossy: 'tfg:rock/mossy_cobble_permafrost' },
+		{ cobble: 'gtceu:red_granite_cobblestone',     mossy: 'gtceu:mossy_red_granite_cobblestone' },
+		{ cobble: 'gtceu:light_concrete_cobblestone',  mossy: 'gtceu:mossy_light_concrete_cobblestone' },
+		{ cobble: 'gtceu:dark_concrete_cobblestone',   mossy: 'gtceu:mossy_dark_concrete_cobblestone' }
+	];
+
+	COBBLE_TO_MOSSY.forEach(x => {
+
+		event.recipes.gtceu.assembler(`${x.mossy}_cobble_rocks_to_mossy_cobble`.replace(/: /g, '_'))
+			.itemInputs(x.cobble, '#tfc:compost_greens_low')
+			.circuit(0)
+			.inputFluids("#tfg:clean_water 144")
+			.itemOutputs(x.mossy)
+			.duration(50)
+			.EUt(2)
+	})
+
+	// #endregion
 
 	// #region RAW_TO_POLISHED
 	const RAW_TO_POLISHED = [
@@ -390,7 +381,7 @@ function registerTFGRockRecipes(event) {
 			.EUt(8)
 
 		event.recipes.greate.pressing(x.cracked, x.raw)
-			.recipeTier(1)
+			.recipeTier(0)
 			.id(`greate:pressing/${x.raw}_to_${x.cracked}`.replace(/:/g, '_'))
 	})
 	// #endregion CRACKING
@@ -885,7 +876,7 @@ function registerTFGRockRecipes(event) {
 	])
 
 	CUT_GRIND.forEach(x => {
-		if (x.raw != null && x.dust != null ) {
+		if (x.raw != null && x.dust != null) {
 			try{
 				event.recipes.gtceu.macerator(x.raw.replace(/.*:/g, 'macerate_'))
 					.itemInputs(x.raw)
@@ -940,7 +931,7 @@ function registerTFGRockRecipes(event) {
 			}
 		}
 		if (x.wall != null) {
-			if (x.raw != null) {				
+			if (x.raw != null) {
 				if (x.stonecutting) {
 					event.stonecutting(x.wall, x.raw).id(`${x.raw}_to_${x.wall}`.replace(/:/g, '_'))
 				}
@@ -957,10 +948,9 @@ function registerTFGRockRecipes(event) {
 					.EUt(2)
 					.category(GTRecipeCategories.MACERATOR_RECYCLING)
 			}
-		}
-
-		if (x.loose != null && x.raw != null) {
-			event.shapeless(`4x ${x.loose}`, [x.raw])
+			if (x.loose != null) {
+				event.shapeless(`2x ${x.loose}`, [x.wall])
+			}
 		}
 	})
 
