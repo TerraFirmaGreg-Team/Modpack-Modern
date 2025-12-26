@@ -82,6 +82,7 @@ const registerCreateItemTags = (event) => {
 	event.add('create:non_movable', 'tfg:spice')
 	event.add('create:non_movable', 'tfg:geyser_source')
 	event.add('create:non_movable', 'tfg:geyser_source_small')
+	event.add('create:non_movable', '#tfc:can_landslide')
 
 	event.remove('create:stone_types/deepslate', 'minecraft:deepslate')
 	event.remove('create:stone_types/dripstone', 'minecraft:dripstone_block')

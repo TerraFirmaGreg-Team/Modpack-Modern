@@ -40,7 +40,9 @@
 		"#tfg:venus_veins",
 		"#tfg:venus_underground_decoration",
 		[],
-		[],
+		[
+			"tfg:venus/surface/salt_lick_patch"
+		],
 		[]
 	],
 	"has_precipitation": true,

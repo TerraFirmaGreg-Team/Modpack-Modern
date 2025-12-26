@@ -67,7 +67,7 @@
 	#For example this placeHolder used in: "Request help in the $CONFIG.text.support_name$"
 	support_name = "TFG Github"
 	#$CONFIG.text.support_place$ in lang files will be replaced with this value.
-	support_place = "New Issue button"
+	support_place = "the text boxes after pressing the green New Issue button"
 	#$CONFIG.text.modpack_name$ in lang files will be replaced with this value.
 	#For example this placeHolder used in: "Oops, $CONFIG.text.modpack_name$ crashed!"
 	#Supports Better Compatibility Checker integration. You can use $BCC.modpackName$, $BCC.modpackVersion$, etc and it will be replaced with value from BCC config.
