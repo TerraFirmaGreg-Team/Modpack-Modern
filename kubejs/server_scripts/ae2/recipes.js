@@ -1153,7 +1153,6 @@ const registerAE2Recipes = (event) => {
 		.circuit(1)
 		.duration(20)
 		.EUt(480)
-		.cleanroom(CleanroomType.CLEANROOM)
 		.addMaterialInfo(true)
 
 	// Storage Bus
