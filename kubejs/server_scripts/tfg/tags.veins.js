@@ -48,7 +48,6 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_sphalerite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_spodumene')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_sulfur')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_tarkianite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_tetrahedrite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_bismuthinite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_cassiterite')
@@ -163,6 +162,12 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sylvite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_tetrahedrite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_topaz')
+
+	// #endregion
+
+
+	// #region venus ores
+
 
 	// #endregion
 
