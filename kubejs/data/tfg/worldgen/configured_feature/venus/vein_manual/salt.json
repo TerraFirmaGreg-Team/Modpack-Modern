@@ -175,6 +175,8 @@
 		"indicator": {
 			"rarity": 20,
 			"depth": 30,
+			"underground_rarity": 40,
+			"underground_count": 150,
 			"blocks": [
 				{
 					"block": "gtceu:rock_salt_indicator",

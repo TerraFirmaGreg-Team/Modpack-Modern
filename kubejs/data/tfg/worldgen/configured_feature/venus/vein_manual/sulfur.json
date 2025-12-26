@@ -199,6 +199,8 @@
 		"indicator": {
 			"rarity": 20,
 			"depth": 30,
+			"underground_rarity": 40,
+			"underground_count": 150,
 			"blocks": [
 				{
 					"block": "gtceu:sulfur_indicator",
