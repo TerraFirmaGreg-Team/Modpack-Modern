@@ -150,7 +150,7 @@ function registerTFGClayRecipes(event) {
 		'BBB'
 	], {
 		A: 'minecraft:clay_ball',
-		B: '#minecraft:sand',
+		B: '#forge:sand',
 		C: 'gtceu:brick_wooden_form'
 	}).replaceIngredient('gtceu:brick_wooden_form', 'gtceu:brick_wooden_form').id('gtceu:shaped/compressed_coke_clay')
 
@@ -160,7 +160,7 @@ function registerTFGClayRecipes(event) {
 		.id('tfg:heating/coke_oven_bricks')
 
 	event.recipes.gtceu.alloy_smelter('gtceu:coke_oven_brick')
-		.itemInputs('3x #minecraft:sand', '2x minecraft:clay_ball')
+		.itemInputs('3x #forge:sand', '2x minecraft:clay_ball')
 		.itemOutputs('gtceu:coke_oven_brick')
 		.duration(7.5 * 20)
 		.EUt(GTValues.VA[GTValues.ULV])
