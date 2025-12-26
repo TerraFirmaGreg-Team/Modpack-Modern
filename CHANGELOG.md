@@ -34,6 +34,7 @@
 - Various quest fixes and improvements @thederpysockdude123
 - Added a missing dependency that fixes the rnr roads' crazy acceleration @Pyritie
 - Fixed not being able to use aged alcohols to make vinegar (#2519) @Pyritie
+- Fix some forge fuels not having the right tag to actually be used as forge fuels @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry

@@ -154,13 +154,30 @@ function registerTFCItemTags(event) {
 
     // Тэги для возможности использования разных углей в кузне
     event.add("tfc:forge_fuel", "minecraft:coal");
-    event.add("tfc:forge_fuel", "beneath:cursecoal");
-    event.add("tfc:forge_fuel", "gtceu:coke_gem");
+    event.add("tfc:forge_fuel", "minecraft:coal_block");
+    event.add("tfc:forge_fuel", 'gtceu:flawless_coal_gem');
+    event.add("tfc:forge_fuel", 'gtceu:exquisite_coal_gem');
+    event.add("tfc:forge_fuel", 'gtceu:flawed_coal_gem');
+    event.add("tfc:forge_fuel", 'gtceu:chipped_coal_gem');
+    event.add("tfc:forge_fuel", 'gtceu:crushed_coal_ore');
+    event.add("tfc:forge_fuel", 'gtceu:purified_coal_ore');
+    event.add("tfc:forge_fuel", 'gtceu:refined_coal_ore');
+    event.add("tfc:forge_fuel", 'gtceu:impure_coal_dust');
+
     event.add("tfc:forge_fuel", "gtceu:rich_raw_coal");
     event.add("tfc:forge_fuel", "gtceu:raw_coal");
     event.add("tfc:forge_fuel", "gtceu:poor_raw_coal");
     event.add("tfc:forge_fuel", "gtceu:coal_dust");
+    event.add("tfc:forge_fuel", "gtceu:small_coal_dust");
+    event.add("tfc:forge_fuel", "gtceu:tiny_coal_dust");
+
+    event.add("tfc:forge_fuel", "beneath:cursecoal");
+
+    event.add("tfc:forge_fuel", "gtceu:coke_gem");
+    event.add("tfc:forge_fuel", "gtceu:coke_dust");
+
     event.add("tfc:forge_fuel", "gtceu:charcoal_dust");
+    event.add("tfc:forge_fuel", "gtceu:charcoal_block");
 
     // Change blast furnace to use coke
     event.remove("tfc:blast_furnace_fuel", "minecraft:coal");
