@@ -66,6 +66,7 @@ const registerTFGRecipes = (event) => {
 	registerTFGTungstenRecipes(event)
 	registerTFGAlloyingRecipes(event)
 	registerTFGQuartzRecipes(event)
+	registerTFGRPPRecipes(event)
 
 	registerTFGSpaceRecipes(event)
 	registerTFGRailgunRecipes(event)

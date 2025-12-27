@@ -260,7 +260,8 @@ function registerVintageImprovementsRecipes(event) {
 
 	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
 	forEachMaterial(material => {
-		if (material == $GreateMaterials.AndesiteAlloy)
+		if (material == $GreateMaterials.AndesiteAlloy
+			|| material === GTMaterials.get("rhodium_plated_palladium"))
 			return;
 
 		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
