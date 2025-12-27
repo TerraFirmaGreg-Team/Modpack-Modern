@@ -1,21 +1,10 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "space_survival"
-	group: "19428C6E7A36D463"
-	icon: {
-		Count: 1
-		id: "ad_astra:tier_1_rocket"
-		tag: {
-			BotariumData: {
-				StoredFluids: [{
-					Amount: 0L
-					Fluid: "minecraft:empty"
-				}]
-			}
-		}
-	}
-	id: "671B872DCEFCA5DD"
+	filename: "moon"
+	group: "21D975CEBDE06BA9"
+	icon: "ad_astra:moon_globe"
+	id: "5AB29618BD995CF0"
 	images: [
 		{
 			alpha: 150
@@ -115,10 +104,10 @@
 			y: -8.0d
 		}
 	]
-	order_index: 4
+	order_index: 0
 	quest_links: [
 		{
-			id: "62E455D8BAA50151"
+			id: "7372A22303CF751A"
 			linked_quest: "00A2566109144D7F"
 			shape: "octagon"
 			size: 3.0d
@@ -126,13 +115,13 @@
 			y: -3.0d
 		}
 		{
-			id: "168AECC70E7A9302"
+			id: "440BBB64384A9ECD"
 			linked_quest: "038B204DAC9C863D"
 			x: -4.0d
 			y: -5.5d
 		}
 		{
-			id: "652DC031E6BEF58B"
+			id: "17C857D222995604"
 			linked_quest: "3FBDC8552F7D8008"
 			shape: "none"
 			size: 2.0d
@@ -140,25 +129,25 @@
 			y: -8.0d
 		}
 		{
-			id: "57EEF4CC674B1C3B"
+			id: "2A631E133FEB54A9"
 			linked_quest: "6752CC523D38A214"
 			x: -5.5d
 			y: -5.5d
 		}
 		{
-			id: "52ABE7722ABB3281"
+			id: "25F53D39F1EEAC02"
 			linked_quest: "0585527D1854628B"
 			x: -1.0d
 			y: 1.0d
 		}
 		{
-			id: "44E5362EDCDE6A5C"
+			id: "6032382FF4E3A440"
 			linked_quest: "3AEAB1930F4CC034"
 			x: -1.0d
 			y: 2.0d
 		}
 		{
-			id: "1EABB6DEF6179357"
+			id: "1E65B1AC5F11948C"
 			linked_quest: "7CA3A5EFE3D5B688"
 			x: -1.0d
 			y: 3.0d
@@ -721,577 +710,7 @@
 			x: 3.0d
 			y: -4.0d
 		}
-		{
-			description: [
-				"{quests.extreme_voltage.mars.desc.1}"
-				"{@pagebreak}"
-				"{quests.extreme_voltage.mars.desc.2}"
-				"{@pagebreak}"
-				"{quests.extreme_voltage.mars.desc.3}"
-			]
-			id: "1777E6C81C8353D5"
-			shape: "octagon"
-			size: 3.0d
-			subtitle: "{quests.extreme_voltage.mars.subtitle}"
-			tasks: [{
-				dimension: "ad_astra:mars"
-				icon: "ad_astra:mars_globe"
-				id: "4A794ADEE7A89594"
-				title: "{quests.extreme_voltage.mars.task}"
-				type: "dimension"
-			}]
-			title: "{quests.extreme_voltage.mars.title}"
-			x: 13.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["1777E6C81C8353D5"]
-			dependency_requirement: "one_completed"
-			description: ["{quests.space_survival.semiheavy_ammoniacal_water.desc}"]
-			icon: "tfg:semiheavy_ammoniacal_water_bucket"
-			id: "4259CD4F819806AB"
-			subtitle: "{quests.space_survival.semiheavy_ammoniacal_water.subtitle}"
-			tasks: [{
-				id: "1221D18D1C6690BD"
-				item: "tfg:semiheavy_ammoniacal_water_bucket"
-				type: "item"
-			}]
-			title: "{quests.space_survival.semiheavy_ammoniacal_water.title}"
-			x: 15.0d
-			y: -6.5d
-		}
-		{
-			dependencies: ["1777E6C81C8353D5"]
-			description: ["{quests.space_survival.mars_islands.desc}"]
-			icon: "tfg:grass/rusticus_mycelium"
-			id: "5AC5AAB9B3758E30"
-			subtitle: "{quests.space_survival.mars_islands.subtitle}"
-			tasks: [{
-				id: "019AC4216D25FA19"
-				type: "checkmark"
-			}]
-			title: "{quests.space_survival.mars_islands.title}"
-			x: 13.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["1777E6C81C8353D5"]
-			description: ["{quests.space_survival.mars_desert.desc}"]
-			id: "70F93982FC045A08"
-			subtitle: "{quests.space_survival.mars_desert.subtitle}"
-			tasks: [{
-				biome: "tfg:mars/martian_deep_desert"
-				icon: "minecraft:red_sand"
-				id: "4935048F5603F79B"
-				title: "{quests.space_survival.mars_desert.task}"
-				type: "biome"
-			}]
-			title: "{quests.space_survival.mars_desert.title}"
-			x: 10.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["70F93982FC045A08"]
-			description: ["{quests.space_survival.sandworm.desc}"]
-			icon: "sandworm_mod:sandworm_tooth"
-			id: "62A5111836CB4D37"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.space_survival.sandworm.subtitle}"
-			tasks: [
-				{
-					id: "028ACAA581D97577"
-					item: "sandworm_mod:sandworm_tooth"
-					type: "item"
-				}
-				{
-					id: "5F74F03288BDE713"
-					item: "sandworm_mod:thumper"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "{quests.space_survival.sandworm.title}"
-			x: 9.0d
-			y: -8.0d
-		}
-		{
-			dependencies: [
-				"70F93982FC045A08"
-				"2F711C064635EF2D"
-			]
-			dependency_requirement: "one_completed"
-			description: ["{quests.space_survival.spice.desc}"]
-			icon: "tfg:spice"
-			id: "0CA5B715B76E4A5B"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "{quests.space_survival.spice.subtitle}"
-			tasks: [{
-				icon: "tfg:spice"
-				id: "00C333C49F5BBFC2"
-				observe_type: 0
-				timer: 0L
-				title: "{quests.space_survival.spice.task}"
-				to_observe: "tfg:spice"
-				type: "observation"
-			}]
-			title: "{quests.space_survival.spice.title}"
-			x: 10.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["1777E6C81C8353D5"]
-			description: ["{quests.space_survival.mars_poles.desc}"]
-			icon: "tfg:mars_ice"
-			id: "3768570EC6535DBB"
-			subtitle: "{quests.space_survival.mars_poles.subtitle}"
-			tasks: [{
-				id: "677DF79B4DE1D571"
-				type: "checkmark"
-			}]
-			title: "{quests.space_survival.mars_poles.title}"
-			x: 17.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["5AC5AAB9B3758E30"]
-			description: ["{quests.space_survival.heavy_ammoniacal_water.desc}"]
-			icon: "tfg:heavy_ammoniacal_water_bucket"
-			id: "204DDAFEA40C0146"
-			subtitle: "{quests.space_survival.heavy_ammoniacal_water.subtitle}"
-			tasks: [{
-				id: "33C86463603C272D"
-				item: "tfg:heavy_ammoniacal_water_bucket"
-				type: "item"
-			}]
-			title: "{quests.space_survival.heavy_ammoniacal_water.title}"
-			x: 15.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["00E2E32B33A65301"]
-			description: ["{quests.space_survival.glacian_wool.desc}"]
-			id: "0967CE7F5DFF5CF6"
-			subtitle: "{quests.space_survival.glacian_wool.subtitle}"
-			tasks: [{
-				count: 7L
-				id: "2713B99184310ED3"
-				item: "tfg:glacian_wool"
-				type: "item"
-			}]
-			title: "{quests.space_survival.glacian_wool.title}"
-			x: 17.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["5AC5AAB9B3758E30"]
-			description: ["{quests.space_survival.soarer.desc}"]
-			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 20"
-			icon: "wan_ancient_beasts:soarer_egg"
-			id: "2F711C064635EF2D"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.space_survival.soarer.subtitle}"
-			tasks: [{
-				icon: "wan_ancient_beasts:soarer_egg"
-				id: "30A4901728CBF789"
-				observe_type: 5
-				timer: 0L
-				title: "{quests.space_survival.soarer.task}"
-				to_observe: "wan_ancient_beasts:soarer"
-				type: "observation"
-			}]
-			title: "{quests.space_survival.soarer.title}"
-			x: 10.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["5AC5AAB9B3758E30"]
-			description: ["{quests.space_survival.sniffer_or_wraptor.desc}"]
-			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 11"
-			id: "5F0D553D08A5985C"
-			subtitle: "{quests.space_survival.sniffer_or_wraptor.subtitle}"
-			tasks: [
-				{
-					icon: "minecraft:sniffer_egg"
-					id: "6339BB0940C0BE77"
-					observe_type: 5
-					timer: 0L
-					title: "{quests.space_survival.sniffer_or_wraptor.task_1}"
-					to_observe: "tfg:sniffer"
-					type: "observation"
-				}
-				{
-					icon: "species:wraptor_egg"
-					id: "76B6F02F4DCFC4A0"
-					observe_type: 5
-					timer: 0L
-					title: "{quests.space_survival.sniffer_or_wraptor.task_2}"
-					to_observe: "tfg:wraptor"
-					type: "observation"
-				}
-			]
-			title: "{quests.space_survival.sniffer_or_wraptor.title}"
-			x: 10.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["3768570EC6535DBB"]
-			description: ["{quests.space_survival.glacian_ram.desc}"]
-			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 15"
-			id: "00E2E32B33A65301"
-			subtitle: "{quests.space_survival.glacian_ram.subtitle}"
-			tasks: [{
-				icon: "ad_astra:glacian_ram_spawn_egg"
-				id: "20B88332B3FED126"
-				observe_type: 5
-				timer: 0L
-				title: "{quests.space_survival.glacian_ram.task}"
-				to_observe: "tfg:glacian_ram"
-				type: "observation"
-			}]
-			title: "{quests.space_survival.glacian_ram.title}"
-			x: 17.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["5AC5AAB9B3758E30"]
-			description: ["{quests.space_survival.mars_tapping.desc}"]
-			id: "155F421FC2F39C3C"
-			subtitle: "{quests.space_survival.mars_tapping.subtitle}"
-			tasks: [
-				{
-					icon: "beneath:wood/log/crimson"
-					id: "5C76478F563CE947"
-					observe_type: 1
-					timer: 0L
-					to_observe: "#tfc:crimson_logs"
-					type: "observation"
-				}
-				{
-					icon: "beneath:wood/log/warped"
-					id: "2D46DA77329E9F66"
-					observe_type: 1
-					timer: 0L
-					to_observe: "#tfc:warped_logs"
-					type: "observation"
-				}
-			]
-			title: "{quests.space_survival.mars_tapping.title}"
-			x: 15.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["5AC5AAB9B3758E30"]
-			description: ["{quests.space_survival.mars_crops.desc}"]
-			guide_page: "tfc:field_guide tfc:tfg_tips/space_crops"
-			id: "52E45601E8575846"
-			subtitle: "{quests.space_survival.mars_crops.subtitle}"
-			tasks: [{
-				id: "72E35CA3CF29585B"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(betterend:amber_root_seeds)item(betterend:blossom_berry_seeds)item(betterend:cave_pumpkin_plant_seeds)item(betterend:chorus_mushroom_seeds)item(betterend:shadow_berry_seeds)item(betterend:bolux_mushroom_seeds))"
-					}
-				}
-				title: "{quests.space_survival.mars_crops.task}"
-				type: "item"
-			}]
-			title: "{quests.space_survival.mars_crops.title}"
-			x: 13.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["0967CE7F5DFF5CF6"]
-			description: ["{quests.space_survival.t2_space_suit.desc}"]
-			id: "6D7ADBBCEF5770B6"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "{quests.space_survival.t2_space_suit.subtitle}"
-			tasks: [
-				{
-					id: "0D11FBA73B54918F"
-					item: {
-						Count: 1
-						id: "ad_astra:netherite_space_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "04A7D0429E419846"
-					item: {
-						Count: 1
-						id: "ad_astra:netherite_space_suit"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "608858DB0AEA4378"
-					item: {
-						Count: 1
-						id: "ad_astra:netherite_space_pants"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "5BC5195C7775137C"
-					item: {
-						Count: 1
-						id: "ad_astra:netherite_space_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "{quests.space_survival.t2_space_suit.title}"
-			x: 17.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["5F0D553D08A5985C"]
-			dependency_requirement: "one_completed"
-			description: ["{quests.space_survival.mineral_rich_wool.desc}"]
-			id: "75DE44FFAC51DD60"
-			subtitle: "{quests.space_survival.mineral_rich_wool.subtitle}"
-			tasks: [{
-				id: "4295E3343126DFEF"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:mineral_rich_wool)"
-					}
-				}
-				title: "Any #tfg:mineral_rich_wool"
-				type: "item"
-			}]
-			title: "{quests.space_survival.mineral_rich_wool.title}"
-			x: 10.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["75DE44FFAC51DD60"]
-			description: ["{quests.space_survival.aes_insulation.desc}"]
-			id: "14710D52AE1732FD"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "{quests.space_survival.aes_insulation.subtitle}"
-			tasks: [{
-				id: "44970A2CAF24030A"
-				item: "tfg:mli_shielding"
-				type: "item"
-			}]
-			title: "{quests.space_survival.aes_insulation.title}"
-			x: 10.0d
-			y: 0.5d
-		}
-		{
-			dependencies: [
-				"52E45601E8575846"
-				"5F0D553D08A5985C"
-			]
-			description: ["{quests.space_survival.bulbkin_pie.desc}"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:food": {
-						creationDate: -2L
-						foodData: {
-							dairy: 0.0f
-							decay: 0.0f
-							food: 0
-							fruit: 0.0f
-							grain: 0.0f
-							meat: 0.0f
-							sat: 0.0f
-							veg: 0.0f
-							water: 0.0f
-						}
-						ingredients: [ ]
-						traits: [ ]
-					}
-				}
-				id: "tfg:food/cooked_dino_nugget"
-			}
-			id: "1AC201876984D248"
-			optional: true
-			shape: "heart"
-			size: 1.5d
-			subtitle: "{quests.space_survival.bulbkin_pie.subtitle}"
-			tasks: [
-				{
-					id: "5F863BCE6DAA30D6"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(betterend:cave_pumpkin_pie))"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "0B5E81AEEDFE0B7A"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:food": {
-								creationDate: -2L
-								foodData: {
-									dairy: 0.0f
-									decay: 0.0f
-									food: 0
-									fruit: 0.0f
-									grain: 0.0f
-									meat: 0.0f
-									sat: 0.0f
-									veg: 0.0f
-									water: 0.0f
-								}
-								ingredients: [ ]
-								traits: [ ]
-							}
-						}
-						id: "tfg:food/cooked_dino_nugget"
-					}
-					type: "item"
-				}
-			]
-			title: "{quests.space_survival.bulbkin_pie.title}"
-			x: 13.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["155F421FC2F39C3C"]
-			description: ["{quests.space_survival.iodine.desc}"]
-			id: "00202200344F3456"
-			subtitle: "{quests.space_survival.iodine.subtitle}"
-			tasks: [{
-				id: "0F811696C5BB0AA5"
-				item: "gtceu:iodine_dust"
-				type: "item"
-			}]
-			title: "{quests.space_survival.iodine.title}"
-			x: 15.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["5AC5AAB9B3758E30"]
-			description: ["{quests.space_survival.surfer.desc}"]
-			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 17"
-			id: "43EBECA48E341C47"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.space_survival.surfer.subtitle}"
-			tasks: [{
-				icon: "wan_ancient_beasts:surfer_egg"
-				id: "7D1D6851ABB1B5E7"
-				observe_type: 5
-				timer: 0L
-				title: "{quests.space_survival.surfer.task}"
-				to_observe: "tfg:surfer"
-				type: "observation"
-			}]
-			title: "{quests.space_survival.surfer.title}"
-			x: 10.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["5F0D553D08A5985C"]
-			dependency_requirement: "one_completed"
-			description: ["{quests.space_survival.mars_nest.desc}"]
-			id: "63F1FC03DC3198AB"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.space_survival.mars_nest.subtitle}"
-			tasks: [{
-				id: "71BA5426AA25BED0"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(tfg:large_nest_box)item(tfg:large_nest_box_warped))"
-					}
-				}
-				title: "{quests.space_survival.mars_nest.task}"
-				type: "item"
-			}]
-			title: "{quests.space_survival.mars_nest.title}"
-			x: 9.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["6D7ADBBCEF5770B6"]
-			description: ["{quests.space_survival.venus.desc}"]
-			id: "5F3B9E4565922E77"
-			shape: "octagon"
-			size: 3.0d
-			subtitle: "{quests.space_survival.venus.subtitle}"
-			tasks: [{
-				dimension: "ad_astra:venus"
-				icon: "ad_astra:venus_globe"
-				id: "40A3104927F366FF"
-				type: "dimension"
-			}]
-			title: "{quests.space_survival.venus.title}"
-			x: 10.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["6D7ADBBCEF5770B6"]
-			description: ["{quests.space_survival.mercury.desc}"]
-			id: "5F937028722EB4C6"
-			shape: "octagon"
-			size: 3.0d
-			subtitle: "{quests.space_survival.mercury.subtitle}"
-			tasks: [{
-				dimension: "ad_astra:mercury"
-				icon: "ad_astra:mercury_globe"
-				id: "7B5C6F856AE2380E"
-				type: "dimension"
-			}]
-			title: "{quests.space_survival.mercury.title}"
-			x: 18.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["1777E6C81C8353D5"]
-			description: ["{quests.space_survival.mars_shields.desc}"]
-			id: "6E757133FA00C40D"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.space_survival.mars_shields.subtitle}"
-			tasks: [{
-				id: "603BD6E2915EB75B"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(species:ricoshield)item(wan_ancient_beasts:reinforced_shield)item(endermanoverhaul:corrupted_shield))"
-					}
-				}
-				title: "{quests.space_survival.mras_shields.task}"
-				type: "item"
-			}]
-			title: "{quests.space_survival.mars_shields.title}"
-			x: 12.0d
-			y: -6.5d
-		}
 	]
-	subtitle: ["{quests.space_survival.subtitle}"]
-	title: "{quests.space_survival}"
+	subtitle: ["{quests.moon.subtitle}"]
+	title: "{quests.moon}"
 }
