@@ -1882,12 +1882,12 @@
 			id: "15AD11C9C5249AAF"
 			subtitle: "{quests.tfg_tips.camera_attachments.subtitle}"
 			tasks: [{
-				id: "79F9084E031CFAF3"
+				id: "4DD87BA6E5997784"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(minecraft:redstone_lamp)item(minecraft:spyglass))"
+						"ftbfiltersystem:filter": "or(item(minecraft:spyglass)item_tag(exposure:flashes))"
 					}
 				}
 				title: "{quests.tfg_tips.camera_attachments.task}"
