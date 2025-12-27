@@ -331,6 +331,16 @@ function registerTFGFoodItemTags(event) {
 	event.add('tfc:foods/usable_in_jam_sandwich', 'ad_astra:cheese')
 	event.add('tfc:foods/usable_in_jam_sandwich_2', 'ad_astra:cheese')
 	event.add('firmalife:foods/cheeses', 'ad_astra:cheese')
+
+	// Auto-eat blacklist for backpack feeding upgrade and quarktech helmet
+	const AUTO_EAT_BLACKLIST = [
+		'#tfg:medicine',
+		'minecraft:rotten_flesh',
+		'#beneath:poisonous_mushrooms'
+	]
+	AUTO_EAT_BLACKLIST.forEach(food => {
+		event.add('tfg:auto_eat_blacklist', food)
+	})
 }
 
 function registerTFGFoodBlockTags(event) {

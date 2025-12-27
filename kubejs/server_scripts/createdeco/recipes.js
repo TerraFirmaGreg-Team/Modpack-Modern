@@ -240,41 +240,46 @@ const registerCreatedecoRecipes = (event) => {
 		event.remove({ id: `createdeco:${bar.metal}_trapdoor` })
 		event.remove({ id: `createdeco:${bar.metal}_door` })
 
+		let quarterMap = {};
+		quarterMap[bar.material] = 0.25;
+
 		if (bar.metal !== 'iron') {
+			// Bars
 			event.remove({ type: 'minecraft:stonecutting', output: `createdeco:${bar.metal}_bars` })
 
 			event.recipes.tfc.anvil(`4x createdeco:${bar.metal}_bars`, `#forge:ingots/${bar.material}`, ['shrink_last', 'punch_second_last', 'punch_third_last'])
-				.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_bars`)
+				.tier(bar.tier).id(`tfg:anvil/createdeco_${bar.metal}_bars`)
 
-			event.recipes.gtceu.assembler(`tfg:${bar.material}_create_deco_bars`)
-				.itemInputs(`2x #forge:rods/${bar.material}`)
-				.itemOutputs(`4x createdeco:${bar.metal}_bars`)
-				.duration(100)
-				.EUt(GTValues.VA[GTValues.LV])
-				.circuit(12)
+			event.stonecutting(`4x createdeco:${bar.metal}_bars`, `#forge:ingots/${bar.material}`)
 
+			TFGHelpers.registerMaterialInfo(`createdeco:${bar.metal}_bars`, quarterMap)
+
+			// Door
 			event.recipes.tfc.anvil(`createdeco:${bar.metal}_door`, `#forge:double_plates/${bar.material}`, ['draw_last', 'draw_second_last', 'punch_third_last'])
-				.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_door`)
+				.tier(bar.tier).id(`tfg:anvil/createdeco_${bar.metal}_door`)
 
 			event.recipes.gtceu.cutter(`tfg:${bar.material}_create_deco_door`)
 				.itemInputs(`#forge:double_plates/${bar.material}`)
 				.itemOutputs(`createdeco:${bar.metal}_door`)
 				.duration(100)
 				.EUt(GTValues.VA[GTValues.LV])
+
+			let twoMap = {};
+			twoMap[bar.material] = 2;
+			TFGHelpers.registerMaterialInfo(`createdeco:${bar.metal}_door`, twoMap)
 		}
 
+		// Overlay bars
 		event.remove({ type: 'minecraft:stonecutting', output: `createdeco:${bar.metal}_bars_overlay` })
 
-		event.recipes.tfc.anvil(`2x createdeco:${bar.metal}_bars_overlay`, `#forge:ingots/${bar.material}`, ['draw_last', 'punch_second_last', 'punch_third_last'])
-			.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_bars_overlay`)
+		event.recipes.tfc.anvil(`4x createdeco:${bar.metal}_bars_overlay`, `#forge:ingots/${bar.material}`, ['draw_last', 'punch_second_last', 'punch_third_last'])
+			.tier(bar.tier).id(`tfg:anvil/createdeco_${bar.metal}_bars_overlay`)
 
-		event.recipes.gtceu.assembler(`tfg:${bar.material}_create_deco_bars_overlay`)
-			.itemInputs(`1x #forge:rods/${bar.material}`, `1x #forge:plates/${bar.material}`)
-			.itemOutputs(`4x createdeco:${bar.metal}_bars_overlay`)
-			.duration(100)
-			.EUt(GTValues.VA[GTValues.LV])
-			.circuit(13)
+		event.stonecutting(`4x createdeco:${bar.metal}_bars_overlay`, `#forge:ingots/${bar.material}`)
 
+		TFGHelpers.registerMaterialInfo(`createdeco:${bar.metal}_bars_overlay`, quarterMap)
+
+		// Facade
 		event.shaped(`4x createdeco:${bar.metal}_facade`, [
 			' A ',
 			'ABA',
@@ -291,9 +296,11 @@ const registerCreatedecoRecipes = (event) => {
 	
 	event.shapeless(`createdeco:copper_trapdoor`, `tfc:metal/trapdoor/copper`)
 	event.shapeless(`tfc:metal/trapdoor/copper`, `createdeco:copper_trapdoor`)
+	TFGHelpers.registerMaterialInfo('createdeco:copper_trapdoor', { 'copper': 1 })
 
 	event.shapeless(`createdeco:industrial_iron_trapdoor`, `tfc:metal/trapdoor/steel`)
 	event.shapeless(`tfc:metal/trapdoor/steel`, `createdeco:industrial_iron_trapdoor`)
+	TFGHelpers.registerMaterialInfo('createdeco:industrial_iron_trapdoor', { 'steel': 1 })
 
 	// TODO: move these two into the tag prefixes in tfg-core, then remove these recipes
 
@@ -315,6 +322,8 @@ const registerCreatedecoRecipes = (event) => {
 		.duration(GTMaterials.Brass.getMass())
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	TFGHelpers.registerMaterialInfo('createdeco:brass_trapdoor', { 'brass': 1 })
+
 	event.recipes.tfc.anvil(`createdeco:zinc_trapdoor`, `#forge:ingots/zinc`, ['shrink_last', 'draw_second_last', 'draw_third_last'])
 		.tier(1).id(`createdeco:anvil/zinc_trapdoor`)
 
@@ -333,6 +342,8 @@ const registerCreatedecoRecipes = (event) => {
 		.duration(GTMaterials.Zinc.getMass())
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	TFGHelpers.registerMaterialInfo('createdeco:zinc_trapdoor', { 'zinc': 1 })
+
 	event.recipes.tfc.anvil(`createdeco:andesite_trapdoor`, `#forge:ingots/tin_alloy`, ['shrink_last', 'draw_second_last', 'draw_third_last'])
 		.tier(3).id(`createdeco:anvil/andesite_trapdoor`)
 
@@ -350,6 +361,8 @@ const registerCreatedecoRecipes = (event) => {
 		.itemOutputs('createdeco:andesite_trapdoor')
 		.duration(GTMaterials.TinAlloy.getMass())
 		.EUt(GTValues.VA[GTValues.ULV])
+
+	TFGHelpers.registerMaterialInfo('createdeco:andesite_trapdoor', { 'tin_alloy': 1 })
 
 	// #endregion
 
@@ -446,7 +459,7 @@ const registerCreatedecoRecipes = (event) => {
 
 	// #region Ladders
 
-	event.shaped('6x createdeco:iron_ladder', [
+	event.shaped('7x createdeco:iron_ladder', [
 		'A A',
 		'AAA',
 		'A A'
@@ -456,7 +469,9 @@ const registerCreatedecoRecipes = (event) => {
 
 	event.stonecutting('2x createdeco:iron_ladder', '#forge:ingots/wrought_iron')
 
-	event.shaped('6x createdeco:zinc_ladder', [
+	TFGHelpers.registerMaterialInfo('createdeco:iron_ladder', { 'wrought_iron': 0.5 })
+
+	event.shaped('7x createdeco:zinc_ladder', [
 		'A A',
 		'AAA',
 		'A A'
@@ -464,13 +479,17 @@ const registerCreatedecoRecipes = (event) => {
 		A: '#forge:rods/zinc'
 	}).id('tfg:createdeco/shaped/zinc_ladder')
 
-	event.shaped('6x createdeco:industrial_iron_ladder', [
+	TFGHelpers.registerMaterialInfo('createdeco:zinc_ladder', { 'zinc': 0.5 })
+
+	event.shaped('7x createdeco:industrial_iron_ladder', [
 		'A A',
 		'AAA',
 		'A A'
 	], {
 		A: '#forge:rods/steel'
 	}).id('tfg:createdeco/shaped/industrial_iron_ladder')
+
+	TFGHelpers.registerMaterialInfo('createdeco:industrial_iron_ladder', { 'steel': 0.5 })
 
 	// #endregion
 
@@ -509,11 +528,17 @@ const registerCreatedecoRecipes = (event) => {
 	// #region Sheet Metal
 
 	event.stonecutting('4x createdeco:andesite_sheet_metal', '#forge:plates/tin_alloy')
+	TFGHelpers.registerMaterialInfo('createdeco:andesite_sheet_metal', { 'tin_alloy': 0.25 })
 	event.stonecutting('4x createdeco:brass_sheet_metal', '#forge:plates/brass')
+	TFGHelpers.registerMaterialInfo('createdeco:brass_sheet_metal', { 'brass': 0.25 })
 	event.stonecutting('4x createdeco:iron_sheet_metal', '#forge:plates/wrought_iron')
+	TFGHelpers.registerMaterialInfo('createdeco:iron_sheet_metal', { 'wrought_iron': 0.25 })
 	event.stonecutting('4x createdeco:copper_sheet_metal', '#forge:plates/copper')
+	TFGHelpers.registerMaterialInfo('createdeco:copper_sheet_metal', { 'copper': 0.25 })
 	event.stonecutting('4x createdeco:industrial_iron_sheet_metal', '#forge:plates/steel')
+	TFGHelpers.registerMaterialInfo('createdeco:industrial_iron_sheet_metal', { 'steel': 0.25 })
 	event.stonecutting('4x createdeco:zinc_sheet_metal', '#forge:plates/zinc')
+	TFGHelpers.registerMaterialInfo('createdeco:zinc_sheet_metal', { 'zinc': 0.25 })
 
 	// #endregion
 };

@@ -1,9 +1,46 @@
 # Changelog
 
 ## Unreleased
+### Breaking Changes
+- The LCR recipe for BTX fuel now requires circuit 24, to fix a recipe conflict (#2515) @TomPlop
+- Loose stones now compress into cobblestone (without any mortar) and vice versa. So if you're currently using gravel to store your loose stones, uncraft them before updating. (#809) @Pyritie
 ### Changes
+- Added casting molds for small gears, nuggets, and rods (#2470) @glitchplaysgames714
+- Added some new illages to the hot and dry, and cold and dry climates of the world! @MVG31
+- Added some mossy cobblestone to the beneath @Pyritie
+- Hardened non-TFC rocks are now craftable (#2447) @glitchplaysgames714
+- Magma blocks are now hot to hold @Pyritie
+- Added a recipe to craft old gregtech facades into ones with a new texture @Pyritie
+- Fluid sources of alcohol and milks are no longer placeable, so you can't drink from them infinitely any more @bigtho80
+- Added TFC scraping knives (#2494) @glitchplaysgames714
+- Changed the ambient sounds in the Beneath, added some to the moon and mars @Pyritie
+- Tweaked the ambient sounds in the overworld @Pyritie
+- Apatite, Tricalcium phosphate, rock salt, potassium sulfate, and ammonium chloride dusts now count as crop fertiliser (#2501) @Xtrial-01
+- Added quern recipes for gems into dust @Pyritie
+- Added recipes for smoke bombs, pet treats, and disguise kits, and added swapper pearls to the loot tables of various endermen @Pyritie
+- Added a little saltpeter to cassiterite veins @Pyritie
+- Removed the cleanroom requirement for level emitters since they were also craftable in a crafting grid (#2529) @Jeuvke
+- Added recipes for developing film in sealed barrels @Pyritie
 ### Bug fixes
+- Fix for food stacking everywhere! @Mqrius
+- Fixed the grappling hook crashing and sending you to the void if you use it while travelling between dimensions (#2514) @Mqrius
+- Fixed some curving press tool head recipes being cheaper than intended (#2478) @Pyritie
+- Fixed some bastion chests being empty @Pyritie
+- Fixed overlapping durability numbers on the curio HUD (#2484) @glitchplaysgames714
+- Fixed a potential crash involving the refrigerator @Redeix
+- Fixed the evaporation tower requiring an input hatch even for recipes that don't have a fluid input @glitchplaysgames714
+- Fixed loot tables for ore indicator buds @Pyritie
+- Fixed the new gas fuels being usable on other planets (#2515) @TomPlop
+- Fixed hot ingots melting packed ice into water sources @Mqrius
+- Fixed inconsistent recipes for metal bars, now they all use the anvil or stonecutter. Also added recycling for them all @Pyritie
+- Various quest fixes and improvements @thederpysockdude123
+- Added a missing dependency that fixes the rnr roads' crazy acceleration @Pyritie
+- Fixed not being able to use aged alcohols to make vinegar (#2519) @Pyritie
+- Fix some forge fuels not having the right tag to actually be used as forge fuels @Pyritie
 ### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry
+- Spanish @NikoNeko17
 
 ## [0.11.12] - 19-12-2025
 ### Changes

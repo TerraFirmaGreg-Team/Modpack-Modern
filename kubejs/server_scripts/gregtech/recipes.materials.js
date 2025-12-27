@@ -77,11 +77,11 @@ function registerGTCEUMetalRecipes(event) {
 		event.remove({ mod: 'gtceu', type: 'minecraft:crafting_shaped', output: toolHeadItem })
 
 		if (material.hasProperty(PropertyKey.INGOT)) {
-			const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+			const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
 			if (ingotItem.isEmpty() || ingotItem.hasTag('c:hidden_from_recipe_viewers'))
 				return
 
-			const materialAmount = Math.floor(headTagPrefix.materialAmount() / GTValues.M) === 1 ? 1 : 2;
+			const materialAmount = Math.floor(headTagPrefix.materialAmount() / GTValues.M);
 
 			event.recipes.gtceu.extruder(`tfg:extrude_${material.getName()}_ingot_to_${tagPrefixName}`)
 				.itemInputs(ingotItem.copyWithCount(materialAmount))
@@ -90,7 +90,12 @@ function registerGTCEUMetalRecipes(event) {
 				.duration(material.getMass() * 6)
 				.EUt(GTValues.VA[GTValues.LV])
 
-			event.recipes.vintageimprovements.curving(toolHeadItem, ingotItem.copyWithCount(materialAmount))
+			let input_array = [];
+			for (let i = 0; i < materialAmount; i++) {
+				input_array.push(ingotItem);
+			}
+
+			event.recipes.vintageimprovements.curving(toolHeadItem, input_array)
 				.head(extruderMold)
 				.id(`tfg:vi/curving/${material.getName()}_ingot_to_${tagPrefixName}`)
 			
@@ -120,12 +125,12 @@ function registerGTCEUMetalRecipes(event) {
 
 		} else if (material.hasProperty(PropertyKey.GEM)) {
 
-			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, 1)
+			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, Math.floor(headTagPrefix.materialAmount() / GTValues.M))
 			if (gemItem.isEmpty())
 				return
 
 			event.recipes.gtceu.laser_engraver(`tfg:engrave_${material.getName()}_gem_to_${tagPrefixName}`)
-				.itemInputs(gemItem.copyWithCount(Math.floor(headTagPrefix.materialAmount() / GTValues.M)))
+				.itemInputs(gemItem)
 				.notConsumable(ChemicalHelper.get(TagPrefix.lens, GTMaterials.Glass, 1))
 				.circuit(circuitMeta)
 				.itemOutputs(toolHeadItem)
@@ -787,7 +792,7 @@ function registerGTCEUMetalRecipes(event) {
 		let smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
 
 		event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(
-			ChemicalHelper.get(TagPrefix.surfaceRock, material, 1), [gem, '#tfc:chisels']))
+			ChemicalHelper.get(TFGTagPrefix.budIndicator, material, 1), [gem, '#tfc:chisels']))
 			.id(`shapeless/${material.getName()}_bud_indicator`)
 
 		event.shaped(smallDust,
@@ -802,6 +807,9 @@ function registerGTCEUMetalRecipes(event) {
 		event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, amount), ChemicalHelper.get(TagPrefix.block, material, 1))
 			.recipeTier(0)
 			.id(`greate:pressing/unpacking_${material.getName()}_block`)
+
+		event.recipes.tfc.quern(ChemicalHelper.get(TagPrefix.dust, material, 1), ChemicalHelper.get(TagPrefix.gem, material, 1))
+			.id(`tfg:quern/${material.getName()}_gem_to_dust`)
 	}
 
 	/**
@@ -1073,21 +1081,6 @@ function registerGTCEUMetalRecipes(event) {
 	/**
 	 * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
 	*/
-	const processBars = (material) => {
-		const barsStack = ChemicalHelper.get(TFGTagPrefix.bars, material, 4)
-		const ingotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-		if (barsStack === null) return;
-
-		event.recipes.gtceu.cutter(`tfg:${material.getName()}_bars`)
-			.itemInputs(ingotStack)
-			.itemOutputs(barsStack)
-			.duration(100)
-			.EUt(GTValues.VA[GTValues.LV])
-	}
-
-	/**
-	 * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
-	*/
 	const processBuzzsawBlade = (material) => {
 		const buzzsawBladeItem = ChemicalHelper.get(TagPrefix.toolHeadBuzzSaw, material, 1)
 		const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
@@ -1229,7 +1222,6 @@ function registerGTCEUMetalRecipes(event) {
 			processTrapdoor(material)
 			processChain(material)
 			processBell(material)
-			processBars(material)
 			processBuzzsawBlade(material)
 
 			event.remove({ id: `gtceu:shaped/spring_${material.getName()}` })

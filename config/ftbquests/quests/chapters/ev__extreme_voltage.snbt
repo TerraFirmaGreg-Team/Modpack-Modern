@@ -161,8 +161,11 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["4EA8888B12D75BF1"]
-			dependency_requirement: "all_started"
+			dependencies: [
+				"4EA8888B12D75BF1"
+				"00004BE1D77EA003"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.extreme_voltage.tunsgten_line_step_1.desc}"]
 			icon: "gtceu:tungstic_acid_dust"
 			id: "04682CD04FE0A56E"

@@ -1,0 +1,37 @@
+{
+	"feature": {
+		"type": "tfc:multiple",
+		"config": {
+			"features": [
+				{
+					"feature": "tfg:venus/surface/hydralux_large",
+					"placement": []
+				},
+				{
+					"feature": "tfg:venus/surface/hydralux_small",
+					"placement": []
+				},
+				{
+					"feature": "tfg:venus/surface/hydralux_sapling",
+					"placement": []
+				}
+			]
+		}
+	},
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 1
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR_WG"
+		}
+	]
+}

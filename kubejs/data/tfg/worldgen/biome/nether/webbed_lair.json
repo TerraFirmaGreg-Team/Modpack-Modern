@@ -8,7 +8,7 @@
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
-			"sound": "minecraft:ambient.cave",
+			"sound": "tfg:ambient.upper_nether.mood",
 			"tick_delay": 6000
 		},
 		"music": {
@@ -17,6 +17,11 @@
 			"replace_current_music": false,
 			"sound": "minecraft:music.overworld.dripstone_caves"
 		},
+		"additions_sound": {
+			"sound": "tfg:ambient.upper_nether_cave.additions",
+			"tick_chance": 0.0111
+		},
+		"ambient_sound": "tfg:ambient.upper_nether_cave.loop",
 		"sky_color": 5799235,
 		"water_color": 7255466,
 		"water_fog_color": 3169873,
@@ -40,7 +45,8 @@
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
-			"tfg:nether/terrain/spring_lava"
+			"tfg:nether/terrain/spring_lava",
+			"tfg:nether/terrain/mossy_cobble"
 		],
 		[
 			"beneath:blackstone_boulders",
@@ -97,16 +103,10 @@
 		],
 		"creature": [
 			{
-				"type": "minecraft:frog",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 100
-			},
-			{
 				"type": "beneath:red_elk",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 50
+				"weight": 100
 			}
 		],
 		"misc": [],

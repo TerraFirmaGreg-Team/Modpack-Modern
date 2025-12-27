@@ -54,14 +54,6 @@ const registerTFGPowerReworkMaterials = (event) => {
 
 	//#region Materials for BTX
 
-	// Propylene
-	event.create('tfg:propylene')
-    	.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(350))
-    	.components('3x carbon', '6x hydrogen')
-    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    	.color(0xffb347)
-    	.secondaryColor(0xffe0b2)
-
 	// Crude Mixed Gas
 	event.create('tfg:crude_mixed_gas')
     	.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(500))

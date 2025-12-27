@@ -1,0 +1,73 @@
+{
+    "name": "taiga",
+    "features": [
+        "tree_cold"
+    ],
+    "bad-regions": [
+        "rain"
+    ],
+    "bad-biomes": [
+        "mountain_lake",
+        "old_mountain_lake",
+        "oceanic_mountain_lake",
+        "plateau_lake",
+        "ocean",
+        "ocean_reef",
+        "deep_ocean",
+        "deep_ocean_trench",
+        "rain"
+    ],
+    "sounds": [
+        {
+            "name": "bird-ambience-huge",
+            "category": "bird_day",
+            "files": [
+                "ambientsounds:animals.bird-ambience-huge1",
+                "ambientsounds:animals.bird-ambience-huge2",
+                "ambientsounds:animals.bird-ambience-huge3"
+            ],
+            "length": {
+                "min": 2000,
+                "max": 3000
+            },
+            "transition": 400
+        },
+        {
+            "name": "crow",
+            "category": "bird",
+            "files": [
+                "ambientsounds:animals.crow"
+            ],
+            "pause": {
+                "min": 800,
+                "max": 4000
+            },
+            "day": 1,
+            "night": 0.2
+        },
+        {
+            "name": "wolf",
+            "category": "animal",
+            "files": [
+                "ambientsounds:animals.wolf"
+            ],
+            "pause": {
+                "min": 100,
+                "max": 600
+            },
+            "day": 0
+        },
+        {
+            "name": "long-wolf",
+            "category": "animal",
+            "files": [
+                "ambientsounds:animals.long-wolf"
+            ],
+            "pause": {
+                "min": 12000,
+                "max": 72000
+            },
+            "day": 0
+        }
+    ]
+}

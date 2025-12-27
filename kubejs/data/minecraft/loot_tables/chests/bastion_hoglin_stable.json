@@ -217,7 +217,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 3, \"GT.Behaviours\":{\"DisableShields\":1, \"TreeFelling\": 1}"
+							"tag": "{\"tfc:forging_bonus\": 3, \"GT.Behaviours\":{\"DisableShields\":1, \"TreeFelling\": 1}}"
 						}
 					],
 					"weight": 100

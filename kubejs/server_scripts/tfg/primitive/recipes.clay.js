@@ -14,7 +14,47 @@ function registerTFGClayRecipes(event) {
 	event.shapeless('4x minecraft:clay_ball', ['minecraft:clay'])
 		.id('tfg:shapeless/clay_block_to_balls')
 
-	global.TFC_FURNACE_MOLD_RECIPE_COMPONENTS.forEach(element => {
+	const TFC_FURNACE_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
+		{ input: "tfc:ceramic/unfired_ingot_mold", output: "tfc:ceramic/ingot_mold", name: "ingot_mold" },
+		{ input: "tfc:ceramic/unfired_pickaxe_head_mold", output: "tfc:ceramic/pickaxe_head_mold", name: "pickaxe_head_mold" },
+		{ input: "tfc:ceramic/unfired_propick_head_mold", output: "tfc:ceramic/propick_head_mold", name: "propick_head_mold" },
+		{ input: "tfc:ceramic/unfired_axe_head_mold", output: "tfc:ceramic/axe_head_mold", name: "axe_head_mold" },
+		{ input: "tfc:ceramic/unfired_shovel_head_mold", output: "tfc:ceramic/shovel_head_mold", name: "shovel_head_mold" },
+		{ input: "tfc:ceramic/unfired_hoe_head_mold", output: "tfc:ceramic/hoe_head_mold", name: "hoe_head_mold" },
+		{ input: "tfc:ceramic/unfired_chisel_head_mold", output: "tfc:ceramic/chisel_head_mold", name: "chisel_head_mold" },
+		{ input: "tfc:ceramic/unfired_hammer_head_mold", output: "tfc:ceramic/hammer_head_mold", name: "hammer_head_mold" },
+		{ input: "tfc:ceramic/unfired_saw_blade_mold", output: "tfc:ceramic/saw_blade_mold", name: "saw_blade_mold" },
+		{ input: "tfc:ceramic/unfired_javelin_head_mold", output: "tfc:ceramic/javelin_head_mold", name: "javelin_head_mold" },
+		{ input: "tfc:ceramic/unfired_sword_blade_mold", output: "tfc:ceramic/sword_blade_mold", name: "sword_blade_mold" },
+		{ input: "tfc:ceramic/unfired_mace_head_mold", output: "tfc:ceramic/mace_head_mold", name: "mace_head_mold" },
+		{ input: "tfc:ceramic/unfired_knife_blade_mold", output: "tfc:ceramic/knife_blade_mold", name: "knife_blade_mold" },
+		{ input: "tfc:ceramic/unfired_scythe_blade_mold", output: "tfc:ceramic/scythe_blade_mold", name: "scythe_blade_mold" },
+		{ input: "tfc:ceramic/unfired_bell_mold", output: "tfc:ceramic/bell_mold", name: "bell_mold" },
+		{ input: "tfc:ceramic/unfired_fire_ingot_mold", output: "tfc:ceramic/fire_ingot_mold", name: "fire_ingot_mold" },
+		{ input: "tfc:ceramic/unfired_brick", output: "minecraft:brick", name: "brick" },
+		{ input: "tfc:ceramic/unfired_crucible", output: "tfc:crucible", name: "crucible" },
+		{ input: "tfc:ceramic/unfired_flower_pot", output: "minecraft:flower_pot", name: "flower_pot" },
+		{ input: "tfc:ceramic/unfired_pan", output: "tfc:pan/empty", name: "pan" },
+		{ input: "tfc:ceramic/unfired_blowpipe", output: "tfc:ceramic_blowpipe", name: "ceramic_blowpipe" },
+		{ input: "tfc:ceramic/unfired_bowl", output: "tfc:ceramic/bowl", name: "bowl" },
+		{ input: "tfc:ceramic/unfired_fire_brick", output: "tfc:ceramic/fire_brick", name: "fire_brick" },
+		{ input: "tfc:ceramic/unfired_jug", output: "tfc:ceramic/jug", name: "jug" },
+		{ input: "tfc:ceramic/unfired_pot", output: "tfc:ceramic/pot", name: "pot" },
+		{ input: "tfc:ceramic/unfired_spindle_head", output: "tfc:ceramic/spindle_head", name: "spindle_head" },
+		{ input: "tfc:ceramic/unfired_vessel", output: "tfc:ceramic/vessel", name: "vessel" },
+		{ input: "tfc:ceramic/unfired_large_vessel", output: "tfc:ceramic/large_vessel", name: "large_vessel" },
+		{ input: "tfcchannelcasting:unfired_channel", output: "tfcchannelcasting:channel", name: "channel" },
+		{ input: "tfcchannelcasting:unfired_mold_table", output: "tfcchannelcasting:mold_table", name: "mold_table" },
+		{ input: "firmalife:oven_top", output: "firmalife:cured_oven_top", name: "oven_top" },
+		{ input: "firmalife:oven_chimney", output: "firmalife:cured_oven_chimney", name: "oven_chimney" },
+		{ input: "firmalife:oven_bottom", output: "firmalife:cured_oven_bottom", name: "oven_bottom" },
+		{ input: "firmalife:oven_hopper", output: "firmalife:cured_oven_hopper", name: "oven_hopper" },
+		{ input: "tfg:unfired_rod_mold", output: "tfg:rod_mold", name: "rod_mold" },
+		{ input: "tfg:unfired_small_gear_mold", output: "tfg:small_gear_mold", name: "small_gear_mold" },
+		{ input: "tfg:unfired_nugget_mold", output: "tfg:nugget_mold", name: "nugget_mold" }
+	]);
+
+	TFC_FURNACE_MOLD_RECIPE_COMPONENTS.forEach(element => {
 		event.smelting(element.output, element.input)
 			.id(`tfg:smelting/${element.name}`)
 	})
@@ -27,8 +67,17 @@ function registerTFGClayRecipes(event) {
 			.id(`tfg:smelting/${dye}_large_vessel`)
 	})
 
-	for (let i = 0; i < global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS.length; i++) {
-		let element = global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS[i];
+	const TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
+		{ input: "5x minecraft:clay_ball", output: "2x tfc:ceramic/unfired_flower_pot", name: "flower_pot" },
+		{ input: "5x minecraft:clay_ball", output: "4x tfc:ceramic/unfired_bowl", name: "bowl" },
+		{ input: "5x minecraft:clay_ball", output: "10x rnr:unfired_roof_tile", name: "roof_tile" },
+		{ input: "5x minecraft:clay_ball", output: "firmalife:oven_top", name: "oven_top" },
+		{ input: "5x minecraft:clay_ball", output: "firmalife:oven_chimney", name: "oven_chimney" },
+		{ input: "5x minecraft:clay_ball", output: "firmalife:oven_bottom", name: "oven_bottom" }
+	]);
+
+	for (let i = 0; i < TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS.length; i++) {
+		let element = TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS[i];
 
 		event.recipes.gtceu.assembler(`tfg:tfc/${element.name}`)
 			.itemInputs(element.input)
@@ -38,8 +87,12 @@ function registerTFGClayRecipes(event) {
 			.EUt(2)
 	}
 
-	for (let i = 0; i < global.TFC_FIRE_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS.length; i++) {
-		let element = global.TFC_FIRE_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS[i];
+	const TFC_FIRE_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
+		{ input: "5x tfc:fire_clay", output: "tfc:ceramic/unfired_crucible", name: "crucible" }
+	]);
+
+	for (let i = 0; i < TFC_FIRE_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS.length; i++) {
+		let element = TFC_FIRE_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS[i];
 
 		event.recipes.gtceu.assembler(`tfg:tfc/${element.name}`)
 			.itemInputs(element.input)
@@ -97,7 +150,7 @@ function registerTFGClayRecipes(event) {
 		'BBB'
 	], {
 		A: 'minecraft:clay_ball',
-		B: '#minecraft:sand',
+		B: '#forge:sand',
 		C: 'gtceu:brick_wooden_form'
 	}).replaceIngredient('gtceu:brick_wooden_form', 'gtceu:brick_wooden_form').id('gtceu:shaped/compressed_coke_clay')
 
@@ -107,7 +160,7 @@ function registerTFGClayRecipes(event) {
 		.id('tfg:heating/coke_oven_bricks')
 
 	event.recipes.gtceu.alloy_smelter('gtceu:coke_oven_brick')
-		.itemInputs('3x #minecraft:sand', '2x minecraft:clay_ball')
+		.itemInputs('3x #forge:sand', '2x minecraft:clay_ball')
 		.itemOutputs('gtceu:coke_oven_brick')
 		.duration(7.5 * 20)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -158,4 +211,12 @@ function registerTFGClayRecipes(event) {
 		.adjacentFluids(["tfc:salt_water", "tfc:spring_water"])
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.LV])
+	
+	// heating
+	event.recipes.tfc.heating('tfg:unfired_rod_mold', 1399)
+        .resultItem('tfg:rod_mold')
+	event.recipes.tfc.heating('tfg:unfired_small_gear_mold', 1399)
+		.resultItem('tfg:small_gear_mold')
+	event.recipes.tfc.heating('tfg:unfired_nugget_mold', 1399)
+		.resultItem('tfg:nugget_mold')
 }

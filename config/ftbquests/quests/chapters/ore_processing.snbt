@@ -202,7 +202,13 @@
 		{
 			id: "50BB4A87A144C6CD"
 			linked_quest: "2814C6FA71B07C95"
-			x: 12.0d
+			x: 12.5d
+			y: -0.5d
+		}
+		{
+			id: "6F65BC54BA5491ED"
+			linked_quest: "04682CD04FE0A56E"
+			x: 11.5d
 			y: -0.5d
 		}
 	]

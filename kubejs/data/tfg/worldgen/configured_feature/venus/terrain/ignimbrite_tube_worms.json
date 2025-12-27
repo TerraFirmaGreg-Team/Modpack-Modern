@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "tfg:attached_decorative_plant",
+				"config": {
+					"block": "betterend:tube_worm",
+					"heightRange": 5
+				}
+			},
+			"placement": []
+		},
+		"tries": 36,
+		"xz_spread": 4,
+		"y_spread": 0
+	}
+}

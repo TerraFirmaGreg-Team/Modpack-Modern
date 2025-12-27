@@ -34,6 +34,10 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_diorite')
 	removeMaceratorRecipe(event, 'macerate_cobblestone_slab')
 	removeMaceratorRecipe(event, 'macerate_andesite')
+	event.remove({ id: 'gtceu:shaped/stone_hammer' })
+	event.remove({ id: 'gtceu:mixer/mossy_cobblestone_from_moss_block' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/mossy_cobblestone_from_moss_block' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/mossy_cobblestone_from_vine' })
 
 	//#endregion
 
@@ -729,6 +733,9 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:laser_engraver/engrave_small_red_granite_bricks' })
 	event.remove({ id: 'gtceu:laser_engraver/engrave_square_red_granite_bricks' })
 	event.remove({ id: 'gtceu:laser_engraver/engrave_chiseled_red_granite' })
+	event.remove({ id: 'gtceu:mixer/mossy_red_granite_cobblestone_from_moss_block' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/mossy_red_granite_cobblestone_from_moss_block' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/mossy_red_granite_cobblestone_from_vine' })
 
 	event.remove({ id: 'gtceu:lathe/stone_rod_from_cobblestone' })
 

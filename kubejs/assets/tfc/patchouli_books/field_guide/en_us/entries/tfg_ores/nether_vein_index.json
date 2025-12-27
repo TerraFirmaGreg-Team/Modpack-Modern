@@ -396,7 +396,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 60%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): Sn",
+      "text": "$(thing)Percentage$(): 54%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): Sn",
       "type": "patchouli:multiblock"
     },
     {
@@ -416,13 +416,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 40%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): SnO₂",
+      "text": "$(thing)Percentage$(): 36%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): SnO₂",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Saltpeter",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/saltpeter"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 9%$(br)$(thing)Source of$(): Potassium, Nitrogen$(br)$(thing)Formula$(): KNO₃",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",

@@ -75,6 +75,9 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add('tfc:in_biome/surface_decoration/plains', 'tfg:earth/rose_quartz/rose_quartz')
 	event.add('tfc:in_biome/surface_decoration/lake', 'tfg:earth/rose_quartz/rose_quartz')
 
+	// Tarkianite
+	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_tarkianite')
+
 	// Add back the non-ore ones
     event.add("tfc:in_biome/veins", "tfc:vein/gravel");
     event.add("tfc:in_biome/veins", "tfc:vein/kaolin_disc");

@@ -7,54 +7,9 @@ fanSpeedMultiplier = 0.75
 #Parameters and abilities of Greate's kinetic mechanisms
 [kinetics]
 
-	#.
-	#.
-	#Fine tune settings related to belts
-	[kinetics.belts]
-
-		#.
-		#.
-		#Rubber Belt Settings
-		[kinetics.belts.rubber]
-			#.
-			#Maximum length in blocks of rubber mechanical belts
-			#Range: > 5
-			rubberMaxBeltLength = 20
-
-		#.
-		#Silicone Rubber Belt Settings
-		[kinetics.belts.silicone]
-			#.
-			#Maximum length in blocks of silicone mechanical belts
-			#Range: > 5
-			siliconeMaxBeltLength = 25
-
-		#.
-		#Polyethylene Belt Settings
-		[kinetics.belts.polyethylene]
-			#.
-			#Maximum length in blocks of polyethylene mechanical belts
-			#Range: > 5
-			polyethyleneMaxBeltLength = 30
-
-		#.
-		#Polytetrafluoroethylene Belt Settings
-		[kinetics.belts.polytetrafluoroethylene]
-			#.
-			#Maximum length in blocks of polytetrafluoroethylene mechanical belts
-			#Range: > 5
-			polytetrafluoroethyleneMaxBeltLength = 35
-
-		#.
-		#Polybenzimidazole Belt Settings
-		[kinetics.belts.polybenzimidazole]
-			#.
-			#Maximum length in blocks of polybenzimidazole mechanical belts
-			#Range: > 5
-			polybenzimidazoleMaxBeltLength = 40
-
 	[kinetics.stressValues]
 
+		#.
 		#.
 		#Fine tune the kinetic stats of individual components
 		[kinetics.stressValues.v2]
@@ -64,7 +19,6 @@ fanSpeedMultiplier = 0.75
 			[kinetics.stressValues.v2.impact]
 
 				[kinetics.stressValues.v2.impact.andesite_alloy]
-					rubber_belt_andesite_alloy = 0.0
 					andesite_alloy_shaft = 0.0
 					andesite_encased_andesite_alloy_shaft = 0.0
 					brass_encased_andesite_alloy_shaft = 0.0
@@ -82,9 +36,9 @@ fanSpeedMultiplier = 0.75
 					andesite_alloy_millstone = 0.5
 					andesite_alloy_mechanical_saw = 0.5
 					andesite_alloy_mechanical_pump = 0.5
+					andesite_alloy_belt = 0.0
 
 				[kinetics.stressValues.v2.impact.steel]
-					rubber_belt_steel = 0.0
 					steel_shaft = 0.0
 					andesite_encased_steel_shaft = 0.0
 					brass_encased_steel_shaft = 0.0
@@ -105,7 +59,6 @@ fanSpeedMultiplier = 0.75
 					tungsten_steel_gearbox = 0.0
 					tungsten_steel_crushing_wheel = 3.0
 					brass_encased_tungsten_steel_shaft = 0.0
-					silicone_rubber_belt_stainless_steel = 0.0
 					andesite_encased_large_tungsten_steel_cogwheel = 0.0
 					andesite_encased_tungsten_steel_cogwheel = 0.0
 					stainless_steel_mechanical_saw = 4.0
@@ -127,7 +80,6 @@ fanSpeedMultiplier = 0.75
 					tungsten_steel_millstone = 3.0
 					brass_encased_stainless_steel_shaft = 0.0
 					tungsten_steel_mechanical_press = 6.0
-					polyethylene_belt_tungsten_steel = 0.0
 					tungsten_steel_shaft = 0.0
 					stainless_steel_mechanical_mixer = 2.0
 					andesite_encased_stainless_steel_cogwheel = 0.0
@@ -140,7 +92,6 @@ fanSpeedMultiplier = 0.75
 					tungsten_steel_mechanical_pump = 3.0
 
 				[kinetics.stressValues.v2.impact.aluminium]
-					silicone_rubber_belt_aluminium = 0.0
 					aluminium_shaft = 0.0
 					andesite_encased_aluminium_shaft = 0.0
 					brass_encased_aluminium_shaft = 0.0
@@ -160,7 +111,6 @@ fanSpeedMultiplier = 0.75
 					aluminium_mechanical_pump = 1.5
 
 				[kinetics.stressValues.v2.impact.stainless_steel]
-					silicone_rubber_belt_stainless_steel = 0.0
 					stainless_steel_shaft = 0.0
 					andesite_encased_stainless_steel_shaft = 0.0
 					brass_encased_stainless_steel_shaft = 0.0
@@ -180,7 +130,6 @@ fanSpeedMultiplier = 0.75
 					stainless_steel_mechanical_pump = 2.0
 
 				[kinetics.stressValues.v2.impact.titanium]
-					polyethylene_belt_titanium = 0.0
 					titanium_shaft = 0.0
 					andesite_encased_titanium_shaft = 0.0
 					brass_encased_titanium_shaft = 0.0
@@ -200,7 +149,6 @@ fanSpeedMultiplier = 0.75
 					titanium_mechanical_pump = 2.5
 
 				[kinetics.stressValues.v2.impact.tungsten_steel]
-					polyethylene_belt_tungsten_steel = 0.0
 					tungsten_steel_shaft = 0.0
 					andesite_encased_tungsten_steel_shaft = 0.0
 					brass_encased_tungsten_steel_shaft = 0.0
@@ -220,7 +168,6 @@ fanSpeedMultiplier = 0.75
 					tungsten_steel_mechanical_pump = 3.0
 
 				[kinetics.stressValues.v2.impact.rhodium_plated_palladium]
-					polytetrafluoroethylene_belt_rhodium_plated_palladium = 0.0
 					rhodium_plated_palladium_shaft = 0.0
 					andesite_encased_rhodium_plated_palladium_shaft = 0.0
 					brass_encased_rhodium_plated_palladium_shaft = 0.0
@@ -240,7 +187,6 @@ fanSpeedMultiplier = 0.75
 					rhodium_plated_palladium_mechanical_pump = 3.5
 
 				[kinetics.stressValues.v2.impact.naquadah_alloy]
-					polytetrafluoroethylene_belt_naquadah_alloy = 0.0
 					naquadah_alloy_shaft = 0.0
 					andesite_encased_naquadah_alloy_shaft = 0.0
 					brass_encased_naquadah_alloy_shaft = 0.0
@@ -260,7 +206,6 @@ fanSpeedMultiplier = 0.75
 					naquadah_alloy_mechanical_pump = 4.0
 
 				[kinetics.stressValues.v2.impact.darmstadtium]
-					polybenzimidazole_belt_darmstadtium = 0.0
 					darmstadtium_shaft = 0.0
 					andesite_encased_darmstadtium_shaft = 0.0
 					brass_encased_darmstadtium_shaft = 0.0
@@ -280,7 +225,6 @@ fanSpeedMultiplier = 0.75
 					darmstadtium_mechanical_pump = 4.5
 
 				[kinetics.stressValues.v2.impact.neutronium]
-					polybenzimidazole_belt_neutronium = 0.0
 					neutronium_shaft = 0.0
 					andesite_encased_neutronium_shaft = 0.0
 					brass_encased_neutronium_shaft = 0.0

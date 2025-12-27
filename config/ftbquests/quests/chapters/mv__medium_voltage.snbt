@@ -1033,6 +1033,9 @@
 				"{quests.medium_voltage.mv_fluid_rig.desc.3}"
 				"{@pagebreak}"
 				"{quests.medium_voltage.mv_fluid_rig.desc.4}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.mv_fluid_rig.desc.5}"
+				"{image:tfg:textures/quests/prospector_gui.png width:200 height:120 align:center}"
 			]
 			icon: "gtceu:mv_fluid_drilling_rig"
 			id: "05ADBAE5B6F38956"

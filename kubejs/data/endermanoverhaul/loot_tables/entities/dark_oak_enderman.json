@@ -11,6 +11,10 @@
 				{
 					"type": "minecraft:item",
 					"name": "endermanoverhaul:corrupted_pearl"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "species:wicked_swapper"
 				}
 			],
 			"rolls": 1.0
