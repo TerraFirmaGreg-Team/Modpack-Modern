@@ -3501,31 +3501,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "CrashAssistant-forge-1.19-1.20.1-1.10.27.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7330/477/CrashAssistant-forge-1.19-1.20.1-1.10.27.jar",
-                    "id": "7330477",
-                    "parent_id": "1154099",
-                    "hashes": {
-                        "sha1": "4cc9d9e8cb0e615258acc7e81d27be10d34ae840",
-                        "md5": "7d089103d00b7fb5afd7096afe317f81"
-                    },
-                    "required_dependencies": [],
-                    "size": 1230345,
-                    "date_published": "2025-12-14T00:18:54.663Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "CrashAssistant-forge-1.19-1.20.1-1.10.27.jar",
+                    "file_name": "CrashAssistant-forge-1.19-1.20.1-1.10.28.jar",
                     "mc_versions": [
                         "1.19",
                         "1.19.1",
@@ -3540,16 +3517,39 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ix1qq8Ux/versions/uTKUXsEa/CrashAssistant-forge-1.19-1.20.1-1.10.27.jar",
-                    "id": "uTKUXsEa",
+                    "url": "https://cdn.modrinth.com/data/ix1qq8Ux/versions/1mGJaICy/CrashAssistant-forge-1.19-1.20.1-1.10.28.jar",
+                    "id": "1mGJaICy",
                     "parent_id": "ix1qq8Ux",
                     "hashes": {
-                        "sha512": "4224e75cb3dd86ca40d7d28eb016ada18baf27e102137af2fc76b83efceaaa6a8d7979b3b5d369ecd864ad1bf4c27a20dd182e31cb19c05f1c7eb4939e73107e",
-                        "sha1": "4cc9d9e8cb0e615258acc7e81d27be10d34ae840"
+                        "sha512": "7bcf054ca17ba8f2852e8e8c2192e09e8a92291602e5a9f548bc22e55ddc8e6f271ae438ac06c70e9b4393b7cdae3c9e0e327bd2b168202c4d8eb4371ada1c01",
+                        "sha1": "ff33e66ea1d828f0a5de39cf31d765e75d0a3859"
                     },
                     "required_dependencies": [],
-                    "size": 1230345,
-                    "date_published": "2025-12-14T00:18:58.159121Z"
+                    "size": 1231520,
+                    "date_published": "2025-12-25T00:04:33.812161Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "CrashAssistant-forge-1.19-1.20.1-1.10.28.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7374/762/CrashAssistant-forge-1.19-1.20.1-1.10.28.jar",
+                    "id": "7374762",
+                    "parent_id": "1154099",
+                    "hashes": {
+                        "sha1": "ff33e66ea1d828f0a5de39cf31d765e75d0a3859",
+                        "md5": "9237488163b0053a047eafadc328812f"
+                    },
+                    "required_dependencies": [],
+                    "size": 1231520,
+                    "date_published": "2025-12-25T00:04:30.453Z"
                 }
             ]
         },
@@ -7924,44 +7924,43 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "[1.18.2-1.20.1-1.21.1_ver_0.05]_Improved_Create_32x.zip",
+                    "file_name": "[1.20.1_ver_0.06.1]_Improved_Create_32x.zip",
                     "mc_versions": [
-                        "1.18.2",
-                        "1.20.1",
-                        "1.21.1"
+                        "1.20",
+                        "1.20.1"
                     ],
                     "loaders": [
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ZyLGK5YD/versions/WIzHUaPB/[1.18.2-1.20.1-1.21.1_ver_0.05]_Improved_Create_32x.zip",
-                    "id": "WIzHUaPB",
+                    "url": "https://cdn.modrinth.com/data/ZyLGK5YD/versions/YcF3Jaah/[1.20.1_ver_0.06.1]_Improved_Create_32x.zip",
+                    "id": "YcF3Jaah",
                     "parent_id": "ZyLGK5YD",
                     "hashes": {
-                        "sha512": "7eb708a41e73a9c83bff005bcec2830594697d66cdbc4bb04d22e7c5013dc8d57f64a71ce355f77961309c3785eb3e145a9f2cace158c9a25849ba668a4235e0",
-                        "sha1": "f3db3254d67ccb2a725df1d5ddc3729ef700c932"
+                        "sha512": "5f23be27610562fcc3824f84aa4212a0af9d576b4500bb36ad362ee336fc35d80cd992fd20853477d1d24549a60d0531650b1c206c6e0781e19e68960fbe50ac",
+                        "sha1": "bbb13393f052cee815db4a9908e5d30696f604dc"
                     },
                     "required_dependencies": [],
-                    "size": 7542322,
-                    "date_published": "2025-09-22T15:23:01.988905Z"
+                    "size": 12615396,
+                    "date_published": "2025-12-27T08:18:58.690542Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "[1.18.2-1.20.1-1.21.1_ver_0.05]_Improved_Create_32x.zip",
+                    "file_name": "[1.20.1_ver_0.06.1]_Improved_Create_32x.zip",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7022/585/[1.18.2-1.20.1-1.21.1_ver_0.05]_Improved_Create_32x.zip",
-                    "id": "7022585",
+                    "url": "https://edge.forgecdn.net/files/7383/828/[1.20.1_ver_0.06.1]_Improved_Create_32x.zip",
+                    "id": "7383828",
                     "parent_id": "973588",
                     "hashes": {
-                        "sha1": "f3db3254d67ccb2a725df1d5ddc3729ef700c932",
-                        "md5": "589525b651d24fa8aea5e33bb9f1b72f"
+                        "sha1": "bbb13393f052cee815db4a9908e5d30696f604dc",
+                        "md5": "17eeab5d55dc08e2d01658f85d0cd8f9"
                     },
                     "required_dependencies": [],
-                    "size": 7542322,
-                    "date_published": "2025-09-22T15:23:11.737Z"
+                    "size": 12615396,
+                    "date_published": "2025-12-27T08:19:03.583Z"
                 }
             ]
         },
@@ -14131,7 +14130,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.11.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.12.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14140,23 +14139,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/LlHAk3em/TerraFirmaGreg-Core-Modern-0.8.11.jar",
-                    "id": "LlHAk3em",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/xLevdPCa/TerraFirmaGreg-Core-Modern-0.8.12.jar",
+                    "id": "xLevdPCa",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "0ca79125debccf02c2f65bdf60be78ad6a80383ca250c2505f912b53364bb9de323214c40a4d74453e696ed382a21c21a002866e330226fa53436772f3f98b7c",
-                        "sha1": "0590a2fd0a2a6730def92f60df285adb838b2162"
+                        "sha512": "9af9237a291f0b911e420477cbb45aeaa18c12b41e0d8bd4d2c3cc5575dfb4129ab0e4144c9122c9bfcafef855c659e05c4fb4478b9a6817a8fc4def00995b04",
+                        "sha1": "5dc28e3df1d3e2b5c17f0b6cf1b8b92790d7ea9b"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "JaCEZUhg"
                     ],
-                    "size": 9344637,
-                    "date_published": "2025-12-19T11:54:06.090471Z"
+                    "size": 9357821,
+                    "date_published": "2025-12-27T13:29:26.042411Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.11.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.12.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14165,19 +14164,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7353/303/TerraFirmaGreg-Core-Modern-0.8.11.jar",
-                    "id": "7353303",
+                    "url": "https://edge.forgecdn.net/files/7384/528/TerraFirmaGreg-Core-Modern-0.8.12.jar",
+                    "id": "7384528",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "0590a2fd0a2a6730def92f60df285adb838b2162",
-                        "md5": "fd7a169dc0a1a25da9877b8bb1b2cb41"
+                        "sha1": "5dc28e3df1d3e2b5c17f0b6cf1b8b92790d7ea9b",
+                        "md5": "253aa985ab553e2267228bdb76ae0243"
                     },
                     "required_dependencies": [
-                        "890405",
-                        "302973"
+                        "302973",
+                        "890405"
                     ],
-                    "size": 9344637,
-                    "date_published": "2025-12-19T11:54:01.770Z"
+                    "size": 9357821,
+                    "date_published": "2025-12-27T13:29:21.377Z"
                 }
             ]
         },
