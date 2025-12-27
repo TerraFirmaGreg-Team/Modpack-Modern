@@ -7,4 +7,12 @@ TFCEvents.registerItemStackModifier(event => {
 		TFC.misc.getFood(output).setBowl(input)
 		return output;
 	});
+
+	event.withInput('tfg:copy_nbt', (output, input) => {
+		let { nbt } = input
+		if (nbt) {
+			output.orCreateTag.merge(nbt)
+		}
+		return output
+	})
 })

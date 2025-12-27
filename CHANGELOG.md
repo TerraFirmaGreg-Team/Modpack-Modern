@@ -19,6 +19,8 @@
 - Added quern recipes for gems into dust @Pyritie
 - Added recipes for smoke bombs, pet treats, and disguise kits, and added swapper pearls to the loot tables of various endermen @Pyritie
 - Added a little saltpeter to cassiterite veins @Pyritie
+- Removed the cleanroom requirement for level emitters since they were also craftable in a crafting grid (#2529) @Jeuvke
+- Added recipes for developing film in sealed barrels @Pyritie
 ### Bug fixes
 - Fix for food stacking everywhere! @Mqrius
 - Fixed the grappling hook crashing and sending you to the void if you use it while travelling between dimensions (#2514) @Mqrius

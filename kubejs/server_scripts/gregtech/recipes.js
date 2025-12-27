@@ -367,6 +367,20 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.UV])
 
 
-	event.replaceInput( {output: 'gtceu:nano_saber'}, 'gtceu:ruridit_plate', '#forge:plates/ostrum_iodide' )
+	event.replaceInput({ output: 'gtceu:nano_saber' }, 'gtceu:ruridit_plate', '#forge:plates/ostrum_iodide')
+
+	// Intentionally long to encourage reuse instead of mindlessly creating and distilling
+	event.recipes.gtceu.mixer('tfg:diluted_hcl_acid')
+		.inputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000), Fluid.of('minecraft:water'))
+		.outputFluids(Fluid.of('gtceu:diluted_hydrochloric_acid', 2000))
+		.duration(30 * 20)
+		.EUt(GTValues.VA[GTValues.LV])
+
+
+	event.recipes.gtceu.mixer('tfg:diluted_sulf_acid')
+		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 2000), Fluid.of('minecraft:water'))
+		.outputFluids(Fluid.of('gtceu:diluted_sulfuric_acid', 3000))
+		.duration(30 * 20)
+		.EUt(GTValues.VA[GTValues.LV])
 
 }

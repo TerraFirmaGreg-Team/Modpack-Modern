@@ -183,7 +183,7 @@ const registerCreateFluidTags = (event) => {
 	event.add('c:hidden_from_recipe_viewers', 'create:chocolate')
 	event.add('c:hidden_from_recipe_viewers', 'create:honey')
 	event.add('c:hidden_from_recipe_viewers', 'create:builders_tea')
-	event.add('c:hidden_from_recipe_viewers', 'create:uncraftable_potion')
+	event.add('c:hidden_from_recipe_viewers', 'create:potion')
 
 	// Disable bulk blasting
 	event.removeAll('create:fan_processing_catalysts/blasting')
