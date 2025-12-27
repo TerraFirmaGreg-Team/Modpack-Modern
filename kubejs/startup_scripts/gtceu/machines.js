@@ -482,4 +482,36 @@ const registerGTCEuMachines = (event) => {
 			'gtceu:block/casings/solid/machine_casing_solid_steel',
 			'gtceu:block/multiblock/distillation_tower')
 
+	
+	
+	
+	
+	
+
+    event.create('large_aqueous_accumulator', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('aqueous_accumulator')
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
+        .appearanceBlock(() => Block.getBlock('gtceu:watertight_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('   ', '   ', 'DDD', 'DDD', 'DDD')
+            .aisle('   ', '   ', 'DDD', 'GED', 'DDD')
+            .aisle(' C ', ' C ', 'DCD', 'GED', 'DDD')
+            .aisle('   ', '   ', 'DXD', 'DMD', 'DDD')
+               .where('X', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('M', Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1).setPreviewCount(1))
+            .where('E', Predicates.blocks('tfg:casings/machine_casing_vacuum_engine_intake'))
+            .where('G', Predicates.blocks('gtceu:laminated_glass'))
+            .where('C', Predicates.blocks('gtceu:steel_pipe_casing'))
+            .where('D', Predicates.blocks('gtceu:watertight_casing')
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setExactLimit(1).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1).setMaxGlobalLimited(2).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+        )
+            .where(' ', Predicates.any())
+            .build()
+        )
+        .workableCasingModel(
+            'gtceu:block/casings/gcym/watertight_casing',
+            'tfg:block/machines/aqueous_accumulator')
 }
