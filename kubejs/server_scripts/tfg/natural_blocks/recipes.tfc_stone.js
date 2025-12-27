@@ -33,10 +33,10 @@ function registerTFCStoneRecipes(event) {
 			.itemInputs(`tfc:rock/raw/${stone}`)
 			.itemOutputs(`tfc:rock/cobble/${stone}`)
 			.duration(10)
-			.EUt(16)
+			.EUt(7)
 
 		event.recipes.greate.pressing(`tfc:rock/cobble/${stone}`, `tfc:rock/raw/${stone}`)
-			.recipeTier(1)
+			.recipeTier(0)
 			.id(`greate:pressing/${stone}_raw_to_cobble`)
 
 		// Raw Pressure Plate
@@ -63,33 +63,20 @@ function registerTFCStoneRecipes(event) {
 
 		generateCutterRecipe(event, `tfc:rock/pressure_plate/${stone}`, `6x tfc:rock/button/${stone}`, 50, 2, `${stone}_raw_button`)
 
-		// Gravel Crafting
-		event.shapeless(`1x tfc:rock/gravel/${stone}`, [
-			`4x tfc:rock/loose/${stone}`
-		]).id(`tfc:shapeless/loose_${stone}_to_gravel`)
-
-		event.shapeless(`1x tfc:rock/gravel/${stone}`, [
-			`4x tfc:rock/mossy_loose/${stone}`
-		]).id(`tfc:shapeless/mossy_loose_${stone}_to_gravel`)
-
-		event.shapeless(`16x tfc:rock/loose/${stone}`, [
-			`4x tfc:rock/gravel/${stone}`
-		]).id(`tfc:shapeless/gravel_to_loose_${stone}`)
-
-		// Gravel Packing
-		event.recipes.gtceu.packer(`tfc:gtceu/packer/packing_loose_${stone}_to_gravel`)
+		// Cobble Packing
+		event.recipes.gtceu.packer(`tfc:gtceu/packer/packing_loose_${stone}_to_cobble`)
 			.itemInputs(`4x tfc:rock/loose/${stone}`)
-			.itemOutputs(`1x tfc:rock/gravel/${stone}`)
+			.itemOutputs(`1x tfc:rock/cobble/${stone}`)
 			.circuit(1)
 			.duration(30)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VA[GTValues.ULV])
 
-		event.recipes.gtceu.packer(`tfc:gtceu/packer/packing_mossy_loose_${stone}_to_gravel`)
+		event.recipes.gtceu.packer(`tfc:gtceu/packer/packing_mossy_loose_${stone}_to_cobble`)
 			.itemInputs(`4x tfc:rock/mossy_loose/${stone}`)
-			.itemOutputs(`1x tfc:rock/gravel/${stone}`)
+			.itemOutputs(`1x tfc:rock/mossy_cobble/${stone}`)
 			.circuit(1)
 			.duration(30)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VA[GTValues.ULV])
 
 		// Cobble Unpacking
 		event.recipes.gtceu.packer(`tfc:gtceu/packer/unpacking_${stone}_cobble_into_loose`)
@@ -167,29 +154,11 @@ function registerTFCStoneRecipes(event) {
 			.itemInputs(`tfc:rock/cobble/${stone}`)
 			.itemOutputs(`tfc:rock/gravel/${stone}`)
 			.duration(10)
-			.EUt(16)
+			.EUt(7)
 
 		event.recipes.greate.pressing(`tfc:rock/gravel/${stone}`, `tfc:rock/cobble/${stone}`)
-			.recipeTier(1)
+			.recipeTier(0)
 			.id(`greate:pressing/${stone}_cobble_to_gravel`)
-
-		// Glueing Losse to Cobble
-		event.shaped(`tfc:rock/cobble/${stone}`, [
-			'ABA',
-			'BAB',
-			'ABA'
-		], {
-			A: `tfc:rock/loose/${stone}`,
-			B: '#tfc:mortar'
-		}).id(`tfc:crafting/rock/${stone}_loose_rocks_to_cobble`)
-
-		event.recipes.gtceu.assembler(`${stone}_loose_rocks_to_cobble`)
-			.itemInputs(`4x tfc:rock/loose/${stone}`)
-			.circuit(2)
-			.inputFluids(Fluid.of('gtceu:concrete', 72))
-			.itemOutputs(`tfc:rock/cobble/${stone}`)
-			.duration(50)
-			.EUt(2)
 
 		// #endregion
 
@@ -212,10 +181,10 @@ function registerTFCStoneRecipes(event) {
 			.itemInputs(`tfc:rock/bricks/${stone}`)
 			.itemOutputs(`tfc:rock/cracked_bricks/${stone}`)
 			.duration(25)
-			.EUt(8)
+			.EUt(7)
 
 		event.recipes.greate.pressing(`tfc:rock/cracked_bricks/${stone}`, `tfc:rock/bricks/${stone}`)
-			.recipeTier(1)
+			.recipeTier(0)
 			.id(`greate:pressing/cracked_bricks_${stone}`)
 
 		//#endregion
@@ -223,22 +192,6 @@ function registerTFCStoneRecipes(event) {
 		//#region Mossy Cobble
 
 		// Cobble -> Mossy Cobble
-		event.shaped(`tfc:rock/mossy_cobble/${stone}`, [
-			'ABA',
-			'BAB',
-			'ABA'
-		], {
-			A: `tfc:rock/mossy_loose/${stone}`,
-			B: '#tfc:mortar'
-		}).id(`tfc:crafting/rock/${stone}_mossy_loose_rocks_to_cobble`)
-
-		event.recipes.gtceu.assembler(`${stone}_mossy_loose_rocks_to_mossy_cobble`)
-			.itemInputs(`4x tfc:rock/mossy_loose/${stone}`)
-			.circuit(0)
-			.inputFluids(Fluid.of('gtceu:concrete', 72))
-			.itemOutputs(`tfc:rock/mossy_cobble/${stone}`)
-			.duration(50)
-			.EUt(2)
 
 		event.recipes.gtceu.assembler(`${stone}_cobble_rocks_to_mossy_cobble`)
 			.itemInputs(`tfc:rock/cobble/${stone}`, '#tfc:compost_greens_low')

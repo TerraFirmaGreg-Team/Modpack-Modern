@@ -5,15 +5,6 @@
 	group: "19428C6E7A36D463"
 	icon: "create:white_toolbox"
 	id: "254D02A31AA8EB49"
-	images: [{
-		color: 16762887
-		height: 2.0d
-		image: "ftbquests:block/barrier_open"
-		rotation: 0.0d
-		width: 2.0d
-		x: -10.5d
-		y: 2.0d
-	}]
 	order_index: 3
 	quest_links: [
 		{
@@ -1404,7 +1395,7 @@
 			}]
 			title: "{quests.tfg_tips.trowel.title}"
 			x: -6.5d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -1425,8 +1416,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.fishing_net.title}"
-			x: -3.0d
-			y: 7.0d
+			x: -2.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -1447,7 +1438,7 @@
 			}]
 			title: "{quests.tfg_tips.cane.title}"
 			x: -2.5d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["72B3EA6588E18CCC"]
@@ -2006,23 +1997,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["7A200766AAC1EE19"]
-			description: ["{quests.tfg_tips.grapple_repair.desc}"]
-			icon: "createdeco:decal_warning"
-			id: "1F93C858F1D02F7C"
-			shape: "none"
-			size: 2.0d
-			subtitle: "{quests.tfg_tips.grapple_repair.subtitle}"
-			tasks: [{
-				id: "1269BD886B07619D"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
-			}]
-			title: "{quests.tfg_tips.grapple_repair.title}"
-			x: -10.5d
-			y: 2.0d
-		}
-		{
 			dependencies: ["6C64C20FF5DF972A"]
 			description: ["{quests.tfg_tips.grapple_length.desc}"]
 			id: "105FD1655EEB1921"
@@ -2072,7 +2046,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1F93C858F1D02F7C"]
+			dependencies: ["7A200766AAC1EE19"]
 			description: [
 				"{quests.tfg_tips.grapple_upgrades.desc.1}"
 				"{@pagebreak}"
@@ -2289,8 +2263,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.digger_helmet.title}"
-			x: -6.0d
-			y: 7.0d
+			x: -6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["72B3EA6588E18CCC"]
@@ -2888,7 +2862,28 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.feeding_troughs.title}"
-			x: -4.5d
+			x: -5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["150B7C5CD152E1BA"]
+			description: ["{quests.tfg_tips.scraping_knives.desc}"]
+			id: "2301E2248A3560C8"
+			subtitle: "{quests.tfg_tips.scraping_knives.subtitle}"
+			tasks: [{
+				id: "193C47D8A2AD2265"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item_tag(tfcscraping:scraping_knives))"
+					}
+				}
+				title: "{quests.tfg_tips.scraping_knives.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.scraping_knives.title}"
+			x: -3.5d
 			y: 6.5d
 		}
 	]

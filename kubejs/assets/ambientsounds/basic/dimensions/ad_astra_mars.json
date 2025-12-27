@@ -1,12 +1,10 @@
 {
-	"name": "ad_astra",
+	"name": "ad_astra_mars",
 	"dimension-names": [
-		"mars",
-		"venus",
-		"glacio"
+		"mars"
 	],
 	"biome-selector": {
-		"always": false
+		"always": true
 	},
 	"regions": [
 		{

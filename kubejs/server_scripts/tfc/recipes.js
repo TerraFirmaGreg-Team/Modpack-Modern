@@ -13,7 +13,41 @@ const registerTFCRecipes = (event) => {
 	registerTFCDyeRecipes(event)
 
 	// Добавление рецептов
-	global.TFC_QUERN_POWDER_RECIPE_COMPONENTS.forEach(element => {
+	const TFC_QUERN_POWDER_RECIPE_COMPONENTS = /** @type {const} */ ([
+		{ input: "#forge:dusts/coke", output: "4x tfc:powder/coke", name: "coke_powder" },
+		{ input: "#forge:dusts/amethyst", output: "4x tfc:powder/amethyst", name: "amethyst_powder" },
+		{ input: "#forge:dusts/diamond", output: "4x tfc:powder/diamond", name: "diamond_powder" },
+		{ input: "#forge:dusts/emerald", output: "4x tfc:powder/emerald", name: "emerald_powder" },
+		{ input: "#forge:dusts/lapis", output: "4x tfc:powder/lapis_lazuli", name: "lapis_powder" },
+		{ input: "#forge:dusts/opal", output: "4x tfc:powder/opal", name: "opal_powder" },
+		{ input: "#forge:dusts/pyrite", output: "4x tfc:powder/pyrite", name: "pyrite_powder" },
+		{ input: "#forge:dusts/ruby", output: "4x tfc:powder/ruby", name: "ruby_powder" },
+		{ input: "#forge:dusts/sapphire", output: "4x tfc:powder/sapphire", name: "sapphire_powder" },
+		{ input: "#forge:dusts/topaz", output: "4x tfc:powder/topaz", name: "topaz_powder" },
+		{ input: "#forge:dusts/gold", output: "4x tfc:powder/native_gold", name: "gold_powder" },
+		{ input: "#forge:dusts/silver", output: "4x tfc:powder/native_silver", name: "silver_powder" },
+		{ input: "#forge:dusts/copper", output: "4x tfc:powder/native_copper", name: "copper_powder" },
+		{ input: "#forge:dusts/cassiterite", output: "4x tfc:powder/cassiterite", name: "cassiterite_powder" },
+		{ input: "#forge:dusts/bismuth", output: "4x tfc:powder/bismuthinite", name: "bismuth_powder" },
+		{ input: "#forge:dusts/garnierite", output: "4x tfc:powder/garnierite", name: "garnierite_powder" },
+		{ input: "#forge:dusts/nickel", output: "4x tfc:powder/garnierite", name: "nickel_powder" },
+		{ input: "#forge:dusts/sphalerite", output: "4x tfc:powder/sphalerite", name: "sphalerite_powder" },
+		{ input: "#forge:dusts/magnetite", output: "4x tfc:powder/magnetite", name: "magnetite_powder" },
+		{ input: "#forge:dusts/tetrahedrite", output: "4x tfc:powder/tetrahedrite", name: "tetrahedrite_powder" },
+		{ input: "#forge:dusts/malachite", output: "4x tfc:powder/malachite", name: "malachite_powder" },
+		{ input: "#forge:dusts/yellow_limonite", output: "4x tfc:powder/limonite", name: "limonite_powder" },
+		{ input: "#forge:dusts/hematite", output: "4x tfc:powder/hematite", name: "hematite_powder" },
+		{ input: "#forge:dusts/sulfur", output: "4x tfc:powder/sulfur", name: "sulfur_powder" },
+		{ input: "#forge:dusts/saltpeter", output: "4x tfc:powder/saltpeter", name: "saltpeter_powder" },
+		{ input: "#forge:dusts/salt", output: "4x tfc:powder/salt", name: "salt_powder" },
+		{ input: "#forge:dusts/graphite", output: "4x tfc:powder/graphite", name: "graphite_powder" },
+		{ input: "#forge:dusts/borax", output: "4x tfc:powder/flux", name: "flux_powder" },
+		{ input: "#forge:dusts/soda_ash", output: "4x tfc:powder/soda_ash", name: "soda_ash" },
+		{ input: "gtceu:charcoal_dust", output: "2x tfc:powder/charcoal", name: "charcoal" },
+		{ input: "tfc:ore/sylvite", output: "4x tfc:powder/sylvite", name: "sylvite" }
+	]);
+
+	TFC_QUERN_POWDER_RECIPE_COMPONENTS.forEach(element => {
 		event.recipes.gtceu.macerator(`tfg:${element.name}`)
 			.itemInputs(element.input)
 			.itemOutputs(element.output)
@@ -134,7 +168,7 @@ const registerTFCRecipes = (event) => {
 	// Add circuit to gregtech salt water mixer recipe
 	event.remove({ id: 'gtceu:mixer/salt_water' })
 	generateMixerRecipe(event, ['2x #forge:dusts/salt'], Fluid.of('minecraft:water', 1000), [], 1, Fluid.of('gtceu:salt_water', 1000), 40, 7, 64, 'tfg:gtceu/salt_water')
-	
+
 	event.recipes.tfc.barrel_instant()
 		.inputItem(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Salt, 1))
 		.inputFluid(Fluid.of('minecraft:water', 1000))
@@ -179,7 +213,7 @@ const registerTFCRecipes = (event) => {
 		.EUt(2)
 
 	// Brass Mechanism
-	event.replaceInput({ input: 'tfc:brass_mechanisms' }, 'tfc:brass_mechanisms', 'gtceu:small_brass_gear')	
+	event.replaceInput({ input: 'tfc:brass_mechanisms' }, 'tfc:brass_mechanisms', 'gtceu:small_brass_gear')
 
 	// Rennet
 	event.recipes.gtceu.fermenter('tfg:fermenter/vegetable_rennet')
@@ -228,13 +262,13 @@ const registerTFCRecipes = (event) => {
 	global.TFC_EQUIPMENT_METALS.forEach(material => {
 		event.replaceInput({ id: `tfc:crafting/${material}_horse_armor` }, `tfc:jute_fiber`, `#tfg:burlap_fiber`)
 	})
-	
+
 	event.recipes.gtceu.centrifuge('tfg:soot')
 		.itemInputs('tfc:soot')
 		.itemOutputs('#forge:dusts/carbon')
 		.duration(20)
 		.EUt(2)
-	
+
 	event.recipes.gtceu.extruder('tfg:wrought_iron_grill_electric_only')
 		.itemInputs('2x #forge:plates/wrought_iron')
 		.notConsumable('tfg:large_casing_extruder_mold')
@@ -242,51 +276,56 @@ const registerTFCRecipes = (event) => {
 		.duration(60)
 		.EUt(8)
 
-	//Jigabit's stupid acetic acid to vinegar conversion
+	// acetic acid to vinegar conversion
 
-		event.recipes.gtceu.mixer('vinegar_from_acetic_acid')
-        		.inputFluids(
-                            Fluid.of('minecraft:water', 950),
-                            Fluid.of('gtceu:acetic_acid', 50)
-                )
-        		.outputFluids(
-                			Fluid.of('tfc:vinegar', 1000)
-                )
-			    .circuit(1)
-        		.duration(30)
-        		.EUt(GTValues.VA[GTValues.MV])
+	event.recipes.gtceu.mixer('vinegar_from_acetic_acid')
+		.inputFluids(
+			Fluid.of('minecraft:water', 950),
+			Fluid.of('gtceu:acetic_acid', 50)
+		)
+		.outputFluids(
+			Fluid.of('tfc:vinegar', 1000)
+		)
+		.circuit(1)
+		.duration(30)
+		.EUt(GTValues.VA[GTValues.MV])
 
-       event.recipes.gtceu.distillery('acetic_acid_from_vinegar')
-               		.inputFluids(
-                                   Fluid.of('tfc:vinegar', 1000)
-                       )
-               		.outputFluids(
-                       			Fluid.of('gtceu:acetic_acid', 50)
-                       )
-                    .circuit(1)
-               		.duration(50)
-               		.EUt(GTValues.VA[GTValues.MV])
+	event.recipes.gtceu.distillery('acetic_acid_from_vinegar')
+		.inputFluids(
+			Fluid.of('tfc:vinegar', 1000)
+		)
+		.outputFluids(
+			Fluid.of('gtceu:acetic_acid', 50)
+		)
+		.circuit(1)
+		.duration(50)
+		.EUt(GTValues.VA[GTValues.MV])
 
-       event.recipes.gtceu.distillery('water_from_vinegar')
-               		.inputFluids(
-                                   Fluid.of('tfc:vinegar', 1000)
-                       )
-               		.outputFluids(
-                       			Fluid.of('minecraft:water', 950)
-                       )
-                    .circuit(2)
-               		.duration(50)
-               		.EUt(GTValues.VA[GTValues.MV])
-        	
-       event.recipes.gtceu.distillation_tower('vinegar_distillation')
-               		.inputFluids(
-                                   Fluid.of('tfc:vinegar', 1000)
-                       )
-               		.outputFluids(
-                       			Fluid.of('gtceu:acetic_acid', 50),
-                       			Fluid.of('minecraft:water', 950)
-                       )
-               		.duration(80)
-               		.EUt(GTValues.VA[GTValues.MV])
-	
+	event.recipes.gtceu.distillery('water_from_vinegar')
+		.inputFluids(
+			Fluid.of('tfc:vinegar', 1000)
+		)
+		.outputFluids(
+			Fluid.of('minecraft:water', 950)
+		)
+		.circuit(2)
+		.duration(50)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.distillation_tower('vinegar_distillation')
+		.inputFluids(
+			Fluid.of('tfc:vinegar', 1000)
+		)
+		.outputFluids(
+			Fluid.of('gtceu:acetic_acid', 50),
+			Fluid.of('minecraft:water', 950)
+		)
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	// fix alcohol tag for vinegar
+	event.recipes.tfc.barrel_sealed(8000)
+		.inputs('#tfc:foods/fruits', TFC.fluidStackIngredient('#tfg:alcohols', 250))
+		.outputFluid(Fluid.of('tfc:vinegar', 250))
+		.id('tfc:barrel/vinegar')
 }

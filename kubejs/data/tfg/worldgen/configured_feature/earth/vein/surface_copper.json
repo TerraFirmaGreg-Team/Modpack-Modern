@@ -106,8 +106,8 @@
     "indicator": {
       "rarity": 8,
       "depth": 60,
-      "underground_rarity": 1,
-      "underground_count": 1,
+      "underground_rarity": 40,
+      "underground_count": 200,
       "blocks": [
         {
           "block": "gtceu:chalcopyrite_indicator",

@@ -1,0 +1,32 @@
+{
+    "name": "ocean",
+    "biomes": [
+        "deep_ocean",
+        "deep_ocean_trench"
+    ],
+    "features": [
+        "ocean"
+    ],
+    "underwater": {
+        "min": 0.01,
+        "fade": 4
+    },
+    "mute": 0.1,
+    "mute-priority": 10,
+    "sounds": [
+        {
+            "name": "whale",
+            "category": "animal",
+            "pause": {
+                "min": 100,
+                "max": 1000
+            },
+            "features": [
+                "ocean"
+            ],
+            "files": [
+                "ambientsounds:animals.whale"
+            ]
+        }
+    ]
+}

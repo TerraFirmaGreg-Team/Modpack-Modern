@@ -4,7 +4,7 @@
 		"to_place": {
 			"type": "minecraft:simple_state_provider",
 			"state": {
-				"Name": "tfg:geyser_slurry",
+				"Name": "tfg:fluid/geyser_slurry",
 				"Properties": {
 					"level": "0"
 				}

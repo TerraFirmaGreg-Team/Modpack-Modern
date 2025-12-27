@@ -16,7 +16,7 @@
         "with": [
           {
             "block": "gtceu:granite_cassiterite_ore",
-            "weight": 40
+            "weight": 35
           },
           {
             "block": "gtceu:raw_cassiterite_block",
@@ -24,11 +24,15 @@
           },
           {
             "block": "gtceu:granite_tin_ore",
-            "weight": 60
+            "weight": 55
           },
           {
             "block": "gtceu:raw_tin_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:granite_saltpeter_ore",
+            "weight": 10
           }
         ]
       },
@@ -39,7 +43,7 @@
         "with": [
           {
             "block": "gtceu:diorite_cassiterite_ore",
-            "weight": 40
+            "weight": 35
           },
           {
             "block": "gtceu:raw_cassiterite_block",
@@ -47,11 +51,15 @@
           },
           {
             "block": "gtceu:diorite_tin_ore",
-            "weight": 60
+            "weight": 55
           },
           {
             "block": "gtceu:raw_tin_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:diorite_saltpeter_ore",
+            "weight": 10
           }
         ]
       },
@@ -62,7 +70,7 @@
         "with": [
           {
             "block": "gtceu:gabbro_cassiterite_ore",
-            "weight": 40
+            "weight": 35
           },
           {
             "block": "gtceu:raw_cassiterite_block",
@@ -70,11 +78,15 @@
           },
           {
             "block": "gtceu:gabbro_tin_ore",
-            "weight": 60
+            "weight": 55
           },
           {
             "block": "gtceu:raw_tin_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:gabbro_saltpeter_ore",
+            "weight": 10
           }
         ]
       }
@@ -87,7 +99,11 @@
       "blocks": [
         {
           "block": "tfc:ore/small_cassiterite",
-          "weight": 100
+          "weight": 90
+        },
+        {
+          "block": "gtceu:saltpeter_indicator",
+          "weight": 10
         }
       ]
     }

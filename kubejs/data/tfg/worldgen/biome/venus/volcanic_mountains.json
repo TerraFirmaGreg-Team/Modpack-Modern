@@ -4,16 +4,21 @@
 	},
 	"downfall": 0,
 	"effects": {
-		"sky_color": 10465603,
-		"fog_color": 9938052,
+		"additions_sound": {
+			"sound": "tfg:ambient.venus_surface.additions",
+			"tick_chance": 0.0111
+		},
+		"sky_color": 5450003,
+		"fog_color": 5450003,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
 		"grass_color": 13758586,
 		"foliage_color": 11653213,
+		"ambient_sound": "tfg:ambient.venus_surface.loop",
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
-			"sound": "minecraft:ambient.cave",
+			"sound": "tfg:ambient.venus_surface.mood",
 			"tick_delay": 6000
 		},
 		"particle": {
@@ -45,7 +50,8 @@
 			"tfc:raw_boulder",
 			"tfc:cobble_boulder",
 			"tfc:raw_boulder_small_patch",
-			"tfc:cobble_boulder_small_patch"
+			"tfc:cobble_boulder_small_patch",
+			"tfg:venus/terrain/thermal_vent_rare"
 		],
 		[
 			"tfg:venus/terrain/lava_fill"
@@ -79,10 +85,18 @@
 			"charge": 0.7
 		}
 	},
+	"creature_spawn_probability": 0.0001,
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
-		"creature": [],
+		"creature": [
+			{
+				"type": "species:trooper",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 50
+			}
+		],
 		"misc": [],
 		"monster": [
 			{

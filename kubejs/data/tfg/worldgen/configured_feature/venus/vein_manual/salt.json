@@ -1,0 +1,208 @@
+{
+	"type": "tfc:disc_vein",
+	"config": {
+		"height": 6,
+		"size": 20,
+		"rarity": 100,
+		"density": 0.2,
+		"min_y": 40,
+		"max_y": 65,
+		"random_name": "venus_manual_salt",
+		"blocks": [
+			{
+				"replace": [
+					"ad_astra:venus_stone"
+				],
+				"with": [
+					{
+						"block": "gtceu:venus_stone_rock_salt_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_rock_salt_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:venus_stone_salt_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:venus_stone_lepidolite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:venus_stone_spodumene_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:dripstone_rock_salt_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_rock_salt_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:dripstone_salt_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:dripstone_lepidolite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:dripstone_spodumene_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/rhyolite"
+				],
+				"with": [
+					{
+						"block": "gtceu:rhyolite_rock_salt_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_rock_salt_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:rhyolite_salt_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:rhyolite_lepidolite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:rhyolite_spodumene_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_rock_salt_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_rock_salt_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:basalt_salt_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:basalt_lepidolite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:basalt_spodumene_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/andesite"
+				],
+				"with": [
+					{
+						"block": "gtceu:andesite_rock_salt_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_rock_salt_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:andesite_salt_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:andesite_lepidolite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:andesite_spodumene_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/dacite"
+				],
+				"with": [
+					{
+						"block": "gtceu:dacite_rock_salt_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_rock_salt_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:dacite_salt_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:dacite_lepidolite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:dacite_spodumene_ore",
+						"weight": 15
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 20,
+			"depth": 30,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "gtceu:rock_salt_indicator",
+					"weight": 10
+				},
+				{
+					"block": "gtceu:rock_salt_bud_indicator",
+					"weight": 10
+				},
+				{
+					"block": "gtceu:salt_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:salt_bud_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:lepidolite_indicator",
+					"weight": 15
+				},
+				{
+					"block": "gtceu:spodumene_indicator",
+					"weight": 15
+				}
+			]
+		}
+	}
+}

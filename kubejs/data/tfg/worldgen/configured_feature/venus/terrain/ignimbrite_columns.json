@@ -1,0 +1,71 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "minecraft:block_column",
+				"config": {
+					"direction": "up",
+					"allowed_placement": {
+						"type": "minecraft:matching_blocks",
+						"blocks": [
+							"minecraft:air",
+							"tfg:fluid/sulfur_fumes",
+							"tfg:fluid/geyser_slurry",
+							"minecraft:lava"
+						]
+					},
+					"prioritize_tip": false,
+					"layers": [
+						{
+							"height": {
+								"type": "minecraft:uniform",
+								"value": {
+									"min_inclusive": 1,
+									"max_inclusive": 4
+								}
+							},
+							"provider": {
+								"type": "minecraft:simple_state_provider",
+								"state": {
+									"Name": "betterend:sulphuric_rock"
+								}
+							}
+						}
+					]
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:heightmap",
+					"heightmap": "OCEAN_FLOOR_WG"
+				},
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:all_of",
+						"predicates": [
+							{
+								"type": "minecraft:matching_blocks",
+								"blocks": [
+									"minecraft:air",
+									"minecraft:lava",
+									"tfg:fluid/sulfur_fumes",
+									"tfg:fluid/geyser_slurry"
+								]
+							},
+							{
+								"type": "minecraft:matching_blocks",
+								"offset": [ 0, -1, 0 ],
+								"blocks": "betterend:sulphuric_rock"
+							}							
+						]
+					}
+				}
+			]
+		},
+		"tries": 32,
+		"xz_spread": 3,
+		"y_spread": 0
+	}
+}

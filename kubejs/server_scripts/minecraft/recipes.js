@@ -945,27 +945,15 @@ const registerMinecraftRecipes = (event) => {
 	event.shapeless('4x minecraft:brown_mushroom', ['minecraft:brown_mushroom_block', '#forge:tools/knives'])
 		.id('tfg:shapeless/cut_brown_mushroom_block')
 
-	event.recipes.gtceu.compressor('tfg:red_mushroom')
-		.itemInputs('4x minecraft:red_mushroom')
-		.itemOutputs('minecraft:red_mushroom_block')
-		.duration(20)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.compressor('tfg:brown_mushroom')
-		.itemInputs('4x minecraft:brown_mushroom')
-		.itemOutputs('minecraft:brown_mushroom_block')
-		.duration(20)
-		.EUt(GTValues.VA[GTValues.ULV])
-
 	event.recipes.gtceu.chemical_bath('tfg:red_mushroom_to_shroomlight')
-		.itemInputs('minecraft:red_mushroom_block')
+		.itemInputs('4x minecraft:red_mushroom')
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
 		.itemOutputs('minecraft:shroomlight')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_bath('tfg:brown_mushroom_to_shroomlight')
-		.itemInputs('minecraft:brown_mushroom_block')
+		.itemInputs('4x minecraft:brown_mushroom')
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
 		.itemOutputs('minecraft:shroomlight')
 		.duration(200)
@@ -1013,15 +1001,15 @@ const registerMinecraftRecipes = (event) => {
 
 	//#region Gunpowder
 
-	event.shapeless('4x minecraft:gunpowder',
+	event.shapeless('6x minecraft:gunpowder',
 		['#forge:tools/mortars', '2x #forge:dusts/saltpeter', '#forge:dusts/sulfur', '3x #forge:dusts/charcoal'])
 		.id('tfg:shapeless/gunpowder_charcoal')
 
-	event.shapeless('4x minecraft:gunpowder',
+	event.shapeless('6x minecraft:gunpowder',
 		['#forge:tools/mortars', '2x #forge:dusts/saltpeter', '#forge:dusts/sulfur', '3x #forge:dusts/coal'])
 		.id('tfg:shapeless/gunpowder_coal')
 
-	event.shapeless('4x minecraft:gunpowder',
+	event.shapeless('6x minecraft:gunpowder',
 		['#forge:tools/mortars', '2x #forge:dusts/saltpeter', '#forge:dusts/sulfur', '3x #forge:dusts/carbon'])
 		.id('tfg:shapeless/gunpowder_carbon')
 

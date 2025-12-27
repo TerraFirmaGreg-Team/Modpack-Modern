@@ -202,9 +202,9 @@
     "animal": {
       "animal": 1,
       "bird": {
-        "bird": 1,
-        "bird_day": 1,
-        "bird_night": 1
+        "bird": 0.5,
+        "bird_day": 0.5,
+        "bird_night": 0.5
       },
       "cicadas": 1,
       "cricket": {
@@ -215,7 +215,7 @@
     },
     "cave": 1,
     "weather": 1,
-    "wind": 1
+    "wind": 0.65
   },
   "fade-volume": 0.005,
   "fade-pitch": 0.005,

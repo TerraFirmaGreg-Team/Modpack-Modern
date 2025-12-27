@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:jigsaw",
+	"start_pool": "tfg:illagers/yurts_village_living_start_pool",
+	"size": 5,
+	"max_distance_from_center": 116,
+	"biomes": "#tfg:has_structure/illages",
+	"step": "surface_structures",
+	"terrain_adaptation": "beard_thin",
+	"start_height": {
+		"absolute": -1
+	},
+	"project_start_to_heightmap": "MOTION_BLOCKING",
+	"use_expansion_hack": false,
+	"adapt_noise": true,
+	"spawn_overrides": {
+		"creature": {
+			"bounding_box": "full",
+			"spawns": []
+		},
+		"monster": {
+			"bounding_box": "full",
+			"spawns": []
+		}
+	}
+}

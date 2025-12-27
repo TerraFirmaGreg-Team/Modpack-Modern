@@ -16,8 +16,8 @@
 		"separation": 30,
 		"climate": {
 			"min_temperature": -12,
-			"max_temperature": 5,
-			"min_rainfall": 200,
+			"max_temperature": 8,
+			"min_rainfall": 250,
 			"max_forest": "edge"
 		}
 	}

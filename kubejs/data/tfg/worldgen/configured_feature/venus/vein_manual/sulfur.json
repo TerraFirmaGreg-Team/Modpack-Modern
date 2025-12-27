@@ -1,0 +1,220 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"size": 15,
+		"rarity": 100,
+		"density": 0.2,
+		"min_y": 40,
+		"max_y": 65,
+		"random_name": "venus_manual_sulfur",
+		"blocks": [
+			{
+				"replace": [
+					"tfc:rock/raw/rhyolite"
+				],
+				"with": [
+					{
+						"block": "gtceu:rhyolite_sulfur_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:rhyolite_pyrite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:rhyolite_sphalerite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/basalt",
+					"minecraft:basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_sulfur_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:basalt_pyrite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:basalt_sphalerite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:dripstone_sulfur_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:dripstone_pyrite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:dripstone_sphalerite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"ad_astra:venus_stone"
+				],
+				"with": [
+					{
+						"block": "gtceu:venus_stone_sulfur_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:venus_stone_pyrite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:venus_stone_sphalerite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/andesite"
+				],
+				"with": [
+					{
+						"block": "gtceu:andesite_sulfur_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:andesite_pyrite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:andesite_sphalerite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/dacite"
+				],
+				"with": [
+					{
+						"block": "gtceu:dacite_sulfur_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:dacite_pyrite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:dacite_sphalerite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 20,
+			"depth": 30,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "gtceu:sulfur_indicator",
+					"weight": 50
+				},
+				{
+					"block": "gtceu:pyrite_indicator",
+					"weight": 35
+				},
+				{
+					"block": "tfc:ore/small_sphalerite",
+					"weight": 15
+				}
+			]
+		}
+	}
+}
