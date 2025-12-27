@@ -39,7 +39,7 @@ const registerTFGBlockTagsNuclear = (event) => {
 
     event.add(COMPONENTS_HB, 'minecraft:sand');
     event.add(COMPONENTS_HB, 'tfg:impure_moderate_core_frame');
-
+	event.add(COMPONENTS_HB, 'tfg:moderate_core_frame');
     event.add(COMPONENTS_HB, 'minecraft:bedrock'); // For Creative usage only
 
 	//#endregion

@@ -169,6 +169,24 @@ const registerTFGNuclearMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.components('1x flibe')
 
+	event.create('boron_10')
+		.dust()
+		.element(GTElements.get("boron_10"))
+		.iconSet(GTMaterialIconSet.DULL)
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
+		.color(0xf8a8c0)
+		.secondaryColor(0xcd8dbc)
+
+	event.create('tfg:boron_thrichloride')
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).attribute(GTFluidAttributes.ACID).customStill().temperature(380))
+		.components('1x boron', '3x chlorine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:enriched_boron_thrichloride')
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).attribute(GTFluidAttributes.ACID).customStill().temperature(480))
+		.components("boron_10", '3x chlorine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
 	//#endregion
 
 	//#region Dust
@@ -198,6 +216,23 @@ const registerTFGNuclearMaterials = (event) => {
 		.color(0x82c383)
 		.secondaryColor('0xffffff')
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
+
+	event.create('tfg:boron_10_hydroxide')
+		.dust()
+		.components('boron_10', '2x oxygen', '1x hydrogen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0x8ee8a6)
+		.secondaryColor('0xffffff')
+		.iconSet(GTMaterialIconSet.RADIOACTIVE)
+
+	event.create('tfg:sodium_deuteroxide')
+		.dust()
+		.components('1x sodium', '2x deuterium', '1x oxygen')
+		.formula('NaOD')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xfef8f6)
+		.secondaryColor('0xffffff')
+		.iconSet(GTMaterialIconSet.NETHERSTAR)
 
 	// FLiBe Dusts
 
@@ -439,7 +474,6 @@ const registerTFGNuclearMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xff4500)
 		.secondaryColor(0xff6347)
-
 
 
 };

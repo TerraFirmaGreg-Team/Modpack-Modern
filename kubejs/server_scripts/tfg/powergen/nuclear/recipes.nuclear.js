@@ -57,6 +57,22 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:mars')
 
+	event.recipes.gtceu.nuclear_fuel_factory('tfg:americium_pellet')
+		.itemInputs('32x #forge:rods/americium_241', 'tfg:empty_rod')
+		.inputFluids(Fluid.of('gtceu:radon', 100))
+		.itemOutputs('tfg:americium_241_rod')
+		.duration(20*600)
+		.EUt(GTValues.VA[GTValues.IV])
+		.dimension('ad_astra:mars')
+
+	event.recipes.gtceu.nuclear_fuel_factory('tfg:neptunium_pellet')
+		.itemInputs('32x #forge:rods/neptunium_237', '32x #forge:rods/neptunium_237', 'tfg:empty_rod')
+		.inputFluids(Fluid.of('gtceu:radon', 100))
+		.itemOutputs('tfg:neptunium_237_rod')
+		.duration(20*600)
+		.EUt(GTValues.VA[GTValues.IV])
+		.dimension('ad_astra:mars')
+
 	event.recipes.gtceu.nuclear_fuel_factory('tfg:tbu_232_rod')
 		.inputFluids(Fluid.of('gtceu:nuclear_waste', 32000))
 		.itemInputs('2x #forge:rods/thorium_232', 'tfg:empty_rod')
@@ -302,10 +318,10 @@ function registerTFGNuclearRecipes(event) {
         .duration(50000 / 0.4 / 2);
 
 	event.recipes.deafission.fission_reactor_coolant('tfg:neptunium_237_coolant')
-        .itemInputs(Ingredient.of([
-            'tfg:neptunium_237_rod']))
-        .inputFluids(Fluid.of('tfg:boron_enriched_coolant', 20))
-        .outputFluids(Fluid.of('tfg:hot_boron_enriched_coolant', 20))
+        .itemInputs(
+			Ingredient.of(['tfg:neptunium_237_rod', 'tfg:americium_241_rod']))
+        .inputFluids(Fluid.of('tfg:boron_enriched_coolant', 10*64))
+        .outputFluids(Fluid.of('tfg:hot_boron_enriched_coolant', 10*64))
         .addData("coolant_heat_per_tick", 1)
         .duration(1);
 
@@ -589,10 +605,11 @@ function registerTFGNuclearRecipes(event) {
 	//#region Heat Battery
 
     event.recipes.deafission.hb_import('tfg:boron_coolant')
-        .inputFluids(Fluid.of('tfg:hot_boron_enriched_coolant', 20))
-        .outputFluids(Fluid.of('tfg:boron_enriched_coolant', 20))
+        .inputFluids(Fluid.of('tfg:hot_boron_enriched_coolant', 1800))
+        .outputFluids(Fluid.of('tfg:boron_enriched_coolant', 1800))
         .blastFurnaceTemp(2000)
         .addData("hb_energy", 20)
+		.duration(1)
 
     event.recipes.deafission.hb_export('tfg:boron_coolant_to_dense_steam')
         .inputFluids(Fluid.of('gtceu:distilled_water', 20))
@@ -611,7 +628,7 @@ function registerTFGNuclearRecipes(event) {
 	//#region Processing Depleted TBU
 
     event.recipes.gtceu.nuclear_fuel_factory('tfg:americium_300_t1')
-		.inputFluids(Fluid.of('tfg:isotopic_solvent', 1000))
+		.inputFluids(Fluid.of('tfg:isotopic_solvent', 64000))
         .inputItemNbtPredicate('tfg:depleted_tbu_232_rod', 
             NBTPredicates.all([
                 NBTPredicates.gte("avgHeat", 0),
@@ -621,7 +638,7 @@ function registerTFGNuclearRecipes(event) {
 		.chancedOutput(Item.of('1x gtceu:tiny_americium_241_dust'), 2500, 0)
 		.chancedOutput(Item.of('2x gtceu:tiny_americium_241_dust'), 7500, 0)
 		.itemOutputs(Item.of('tfg:empty_rod'))
-		.outputFluids(Fluid.of('tfg:degraded_solvent_stream', 1000))
+		.outputFluids(Fluid.of('tfg:degraded_solvent_stream', 64000))
         .duration(20*3)
         .EUt(GTValues.VA[GTValues.IV])
 		.addDataString("avgHeat1", "0")
@@ -629,7 +646,7 @@ function registerTFGNuclearRecipes(event) {
 		.dimension('ad_astra:mars')
 
     event.recipes.gtceu.nuclear_fuel_factory('tfg:americium_300_t2')
-		.inputFluids(Fluid.of('tfg:isotopic_solvent', 1000))
+		.inputFluids(Fluid.of('tfg:isotopic_solvent', 64000))
         .inputItemNbtPredicate('tfg:depleted_tbu_232_rod', 
             NBTPredicates.all([
                 NBTPredicates.gte("avgHeat", 101),
@@ -639,7 +656,7 @@ function registerTFGNuclearRecipes(event) {
 		.chancedOutput(Item.of('4x gtceu:tiny_americium_241_dust'), 2500, 0)
 		.chancedOutput(Item.of('8x gtceu:tiny_americium_241_dust'), 7500, 0)
 		.itemOutputs(Item.of('tfg:empty_rod'))
-		.outputFluids(Fluid.of('tfg:degraded_solvent_stream', 1000))
+		.outputFluids(Fluid.of('tfg:degraded_solvent_stream', 64000))
         .duration(20*3)
         .EUt(GTValues.VA[GTValues.IV])
 		.addDataString("avgHeat1", "101")
@@ -647,7 +664,7 @@ function registerTFGNuclearRecipes(event) {
 		.dimension('ad_astra:mars')
 
     event.recipes.gtceu.nuclear_fuel_factory('tfg:americium_30_t3')
-		.inputFluids(Fluid.of('tfg:isotopic_solvent', 1000))
+		.inputFluids(Fluid.of('tfg:isotopic_solvent', 64000))
         .inputItemNbtPredicate('tfg:depleted_tbu_232_rod', 
             NBTPredicates.all([
                 NBTPredicates.gte("avgHeat", 201),
@@ -657,7 +674,7 @@ function registerTFGNuclearRecipes(event) {
 		.chancedOutput(Item.of('12x gtceu:tiny_americium_241_dust'), 2500, 0)
 		.chancedOutput(Item.of('16x gtceu:tiny_americium_241_dust'), 7500, 0)
 		.itemOutputs(Item.of('tfg:empty_rod'))
-		.outputFluids(Fluid.of('tfg:degraded_solvent_stream', 1000))
+		.outputFluids(Fluid.of('tfg:degraded_solvent_stream', 64000))
         .duration(20*3)
         .EUt(GTValues.VA[GTValues.IV])
 		.addDataString("avgHeat1", "201")
@@ -665,7 +682,7 @@ function registerTFGNuclearRecipes(event) {
 		.dimension('ad_astra:mars')
 
     event.recipes.gtceu.nuclear_fuel_factory('tfg:neptunium_t1')
-		.inputFluids(Fluid.of('tfg:isotopic_solvent', 1000))
+		.inputFluids(Fluid.of('tfg:isotopic_solvent', 64000))
         .inputItemNbtPredicate('tfg:depleted_tbu_232_rod', 
             NBTPredicates.all([
                 NBTPredicates.gte("avgHeat", 301),
@@ -675,7 +692,7 @@ function registerTFGNuclearRecipes(event) {
 		.chancedOutput(Item.of('1x gtceu:tiny_neptunium_237_dust'), 2500, 0)
 		.chancedOutput(Item.of('2x gtceu:tiny_neptunium_237_dust'), 7500, 0)
 		.itemOutputs(Item.of('tfg:empty_rod'))
-		.outputFluids(Fluid.of('tfg:degraded_solvent_stream', 1000))
+		.outputFluids(Fluid.of('tfg:degraded_solvent_stream', 64000))
         .duration(20*3)
         .EUt(GTValues.VA[GTValues.IV])
 		.addDataString("avgHeat1", "301")
@@ -683,7 +700,7 @@ function registerTFGNuclearRecipes(event) {
 		.dimension('ad_astra:mars')
 
     event.recipes.gtceu.nuclear_fuel_factory('tfg:neptunium_t2')
-		.inputFluids(Fluid.of('tfg:isotopic_solvent', 1000))
+		.inputFluids(Fluid.of('tfg:isotopic_solvent', 64000))
         .inputItemNbtPredicate('tfg:depleted_tbu_232_rod', 
             NBTPredicates.all([
                 NBTPredicates.gte("avgHeat", 401),
@@ -693,7 +710,7 @@ function registerTFGNuclearRecipes(event) {
 		.chancedOutput(Item.of('4x gtceu:tiny_neptunium_237_dust'), 2500, 0)
 		.chancedOutput(Item.of('8x gtceu:tiny_neptunium_237_dust'), 7500, 0)
 		.itemOutputs(Item.of('tfg:empty_rod'))
-		.outputFluids(Fluid.of('tfg:degraded_solvent_stream', 1000))
+		.outputFluids(Fluid.of('tfg:degraded_solvent_stream', 64000))
         .duration(20*3)
         .EUt(GTValues.VA[GTValues.IV])
 		.addDataString("avgHeat1", "401")
@@ -701,7 +718,7 @@ function registerTFGNuclearRecipes(event) {
 		.dimension('ad_astra:mars')
 
     event.recipes.gtceu.nuclear_fuel_factory('tfg:neptunium_t3')
-		.inputFluids(Fluid.of('tfg:isotopic_solvent', 1000))
+		.inputFluids(Fluid.of('tfg:isotopic_solvent', 64000))
         .inputItemNbtPredicate('tfg:depleted_tbu_232_rod', 
             NBTPredicates.all([
                 NBTPredicates.gte("avgHeat", 501),
@@ -711,7 +728,7 @@ function registerTFGNuclearRecipes(event) {
 		.chancedOutput(Item.of('12x gtceu:tiny_neptunium_237_dust'), 2500, 0)
 		.chancedOutput(Item.of('16x gtceu:tiny_neptunium_237_dust'), 7500, 0)
 		.itemOutputs(Item.of('tfg:empty_rod'))
-		.outputFluids(Fluid.of('tfg:degraded_solvent_stream', 1000))
+		.outputFluids(Fluid.of('tfg:degraded_solvent_stream', 64000))
         .duration(20*3)
         .EUt(GTValues.VA[GTValues.IV])
 		.addDataString("avgHeat1", "501")
@@ -1028,6 +1045,45 @@ function registerTFGNuclearRecipes(event) {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.IV])
 
-
 	//#endregion
+
+	//#region Boron Coolant
+
+	event.recipes.gtceu.chemical_reactor('tfg:boron_trichloride')
+		.inputFluids(Fluid.of('gtceu:chlorine', 2000))
+		.itemInputs(Item.of('gtceu:boron_dust', 1))
+		.outputFluids(Fluid.of('tfg:boron_thrichloride'))
+		.circuit(2)
+		.duration(20*36)
+		.EUt(GTValues.VA[GTValues.IV])
+
+	event.recipes.gtceu.centrifuge('tfg:enriched_boron_trichloride')
+		.inputFluids(Fluid.of('tfg:boron_thrichloride', 1000))
+		.outputFluids(Fluid.of('tfg:enriched_boron_thrichloride', 10))
+		.duration(20*62)
+		.EUt(GTValues.VHA[GTValues.HV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:boron_10_hydroxide')
+		.inputFluids(Fluid.of('tfg:enriched_boron_thrichloride', 1000), Fluid.of('minecraft:water', 6000) )
+		.itemOutputs(Item.of('tfg:boron_10_hydroxide_dust'))
+		.outputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000))
+		.circuit(2)
+		.duration(20*8)
+		.EUt(GTValues.VA[GTValues.IV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:boron_enriched_coolant')
+		.inputFluids(Fluid.of('gtceu:nitrogen', 2000))
+		.itemInputs(Item.of('tfg:boron_10_hydroxide_dust'), Item.of('tfg:sodium_deuteroxide_dust'))
+		.outputFluids(Fluid.of('tfg:boron_enriched_coolant', 1500))
+		.circuit(2)
+		.duration(20*14)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:boron_10')
+		.inputFluids(Fluid.of('tfg:heavy_water', 1000))
+		.itemInputs(Item.of('gtceu:sodium_dust'))
+		.itemOutputs(Item.of('tfg:sodium_deuteroxide_dust', 1))
+		.circuit(2)
+		.duration(20*14)
+		.EUt(GTValues.VA[GTValues.EV])
 }
