@@ -200,6 +200,13 @@
     "curseForgeHash": 2297727680,
     "modrinthHash": "6347a5bff9405c59ec7d428e5e24115f5b17a90b"
   },
+  "BlockRunner-v8.0.4-1.20.1-Forge.jar": {
+    "jarName": "BlockRunner-v8.0.4-1.20.1-Forge.jar",
+    "modId": "blockrunner",
+    "version": "8.0.4",
+    "curseForgeHash": 1808343910,
+    "modrinthHash": "71fc6fe4b99dc495528edbb0be12b126eab64b6f"
+  },
   "blur-forge-3.1.1.jar": {
     "jarName": "blur-forge-3.1.1.jar",
     "modId": "blur",
@@ -368,12 +375,12 @@
     "curseForgeHash": 2978888175,
     "modrinthHash": "e37dbe8efb670d3a9e079e095d59410658c7e3e9"
   },
-  "CrashAssistant-forge-1.19-1.20.1-1.10.27.jar": {
-    "jarName": "CrashAssistant-forge-1.19-1.20.1-1.10.27.jar",
+  "CrashAssistant-forge-1.19-1.20.1-1.10.28.jar": {
+    "jarName": "CrashAssistant-forge-1.19-1.20.1-1.10.28.jar",
     "modId": "crash_assistant",
-    "version": "1.10.27",
-    "curseForgeHash": 2406153781,
-    "modrinthHash": "4cc9d9e8cb0e615258acc7e81d27be10d34ae840"
+    "version": "1.10.28",
+    "curseForgeHash": 2399972476,
+    "modrinthHash": "ff33e66ea1d828f0a5de39cf31d765e75d0a3859"
   },
   "crashexploitfixer-forge-1.1.0+1.20.1.jar": {
     "jarName": "crashexploitfixer-forge-1.1.0+1.20.1.jar",
@@ -564,12 +571,12 @@
     "curseForgeHash": 1564210994,
     "modrinthHash": "4f440ac41309993a46e0ffcb2dd6106d7b92b3e2"
   },
-  "everycomp-1.20-2.9.12-forge.jar": {
-    "jarName": "everycomp-1.20-2.9.12-forge.jar",
+  "everycomp-1.20-2.9.13-forge.jar": {
+    "jarName": "everycomp-1.20-2.9.13-forge.jar",
     "modId": "everycomp",
-    "version": "1.20-2.9.12",
-    "curseForgeHash": 1738563106,
-    "modrinthHash": "1a9fab9e9273ab45f0a312b7a71aeade41716a4a"
+    "version": "1.20-2.9.13",
+    "curseForgeHash": 473863607,
+    "modrinthHash": "2c78942c7396b1fab9e53e4ee8172f7ce0ba4482"
   },
   "exposure-1.20.1-1.7.16-forge.jar": {
     "jarName": "exposure-1.20.1-1.7.16-forge.jar",
@@ -669,12 +676,12 @@
     "curseForgeHash": 4111825473,
     "modrinthHash": "4920a2e1d17090007179a568181624847fba0993"
   },
-  "FramedBlocks-9.4.2.jar": {
-    "jarName": "FramedBlocks-9.4.2.jar",
+  "FramedBlocks-9.4.3.jar": {
+    "jarName": "FramedBlocks-9.4.3.jar",
     "modId": "framedblocks",
-    "version": "9.4.2",
-    "curseForgeHash": 3951488336,
-    "modrinthHash": "68b8301c8124dd00ea70c216066b1fe207e25345"
+    "version": "9.4.3",
+    "curseForgeHash": 380347176,
+    "modrinthHash": "740c0feaab75455f32df7e137389f77c83fb490c"
   },
   "ftb-chunks-forge-2001.3.6.jar": {
     "jarName": "ftb-chunks-forge-2001.3.6.jar",
@@ -1024,12 +1031,12 @@
     "curseForgeHash": 3074548209,
     "modrinthHash": "4069534174e618393f0c14d9dc61ac27a04bb992"
   },
-  "moonlight-1.20-2.16.16-forge.jar": {
-    "jarName": "moonlight-1.20-2.16.16-forge.jar",
+  "moonlight-1.20-2.16.18-forge.jar": {
+    "jarName": "moonlight-1.20-2.16.18-forge.jar",
     "modId": "moonlight",
-    "version": "1.20-2.16.16",
-    "curseForgeHash": 949178631,
-    "modrinthHash": "f1ad21bce5a4b96a1152d6cf83cfb27684fc4b6a"
+    "version": "1.20-2.16.18",
+    "curseForgeHash": 4116986064,
+    "modrinthHash": "48dc8e4c200c487df69195fe503dc67493050b6b"
   },
   "morered-1.20.1-4.0.0.4.jar": {
     "jarName": "morered-1.20.1-4.0.0.4.jar",
@@ -1395,12 +1402,12 @@
     "curseForgeHash": 837967200,
     "modrinthHash": "107d4aec4694c509ea7ea8f3963478ae8002f46e"
   },
-  "TerraFirmaGreg-Core-Modern-0.8.11.jar": {
-    "jarName": "TerraFirmaGreg-Core-Modern-0.8.11.jar",
+  "TerraFirmaGreg-Core-Modern-0.8.12.jar": {
+    "jarName": "TerraFirmaGreg-Core-Modern-0.8.12.jar",
     "modId": "tfg",
-    "version": "0.8.11",
-    "curseForgeHash": 48630112,
-    "modrinthHash": "5d2aaff9a32cdba01f1851bdc469aa8cdb292df6"
+    "version": "0.8.12",
+    "curseForgeHash": 3927177398,
+    "modrinthHash": "5dc28e3df1d3e2b5c17f0b6cf1b8b92790d7ea9b"
   },
   "tfc_gurman-1.2.0.jar": {
     "jarName": "tfc_gurman-1.2.0.jar",
