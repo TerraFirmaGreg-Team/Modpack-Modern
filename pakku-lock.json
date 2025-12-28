@@ -5416,7 +5416,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "everycomp-1.20-2.9.12-forge.jar",
+                    "file_name": "everycomp-1.20-2.9.13-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5424,22 +5424,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/eiktJyw1/versions/Wa7DK8Yb/everycomp-1.20-2.9.12-forge.jar",
-                    "id": "Wa7DK8Yb",
+                    "url": "https://cdn.modrinth.com/data/eiktJyw1/versions/QHk3kJYC/everycomp-1.20-2.9.13-forge.jar",
+                    "id": "QHk3kJYC",
                     "parent_id": "eiktJyw1",
                     "hashes": {
-                        "sha512": "db03a2c4724a347428ba15c7a8979838aea8e92d221db16baba0b2a05a59d774b9da24791063060000244de9a2eaa9b4ea3e208cbbea91a7eed044b3b3a763db",
-                        "sha1": "1a9fab9e9273ab45f0a312b7a71aeade41716a4a"
+                        "sha512": "aa306f92b4ef8eeec7eb99ef0c24de65c041888eb1432db98eeb630a827bdd895bb472bf2983fa31322090c05a13c28b6da88c5c5162c5d4044e6d9c2b58ddcf",
+                        "sha1": "2c78942c7396b1fab9e53e4ee8172f7ce0ba4482"
                     },
                     "required_dependencies": [
                         "twkfQtEc"
                     ],
-                    "size": 2807757,
-                    "date_published": "2025-11-21T09:08:18.503085Z"
+                    "size": 2828451,
+                    "date_published": "2025-12-26T06:16:33.147989Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "everycomp-1.20-2.9.12-forge.jar",
+                    "file_name": "everycomp-1.20-2.9.13-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5447,18 +5447,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7245/151/everycomp-1.20-2.9.12-forge.jar",
-                    "id": "7245151",
+                    "url": "https://edge.forgecdn.net/files/7379/475/everycomp-1.20-2.9.13-forge.jar",
+                    "id": "7379475",
                     "parent_id": "628539",
                     "hashes": {
-                        "sha1": "1a9fab9e9273ab45f0a312b7a71aeade41716a4a",
-                        "md5": "85cf20ae4cbe5ac2f13b489258cb15f8"
+                        "sha1": "2c78942c7396b1fab9e53e4ee8172f7ce0ba4482",
+                        "md5": "a3d97f3b2a8b828d6c6296487b231cbd"
                     },
                     "required_dependencies": [
                         "499980"
                     ],
-                    "size": 2807757,
-                    "date_published": "2025-11-21T09:08:07.257Z"
+                    "size": 2828451,
+                    "date_published": "2025-12-26T06:16:23.010Z"
                 }
             ]
         },
@@ -6721,30 +6721,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "FramedBlocks-9.4.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6685/443/FramedBlocks-9.4.2.jar",
-                    "id": "6685443",
-                    "parent_id": "441647",
-                    "hashes": {
-                        "sha1": "68b8301c8124dd00ea70c216066b1fe207e25345",
-                        "md5": "aaf372a3d903d167c138e2eb8110078b"
-                    },
-                    "required_dependencies": [],
-                    "size": 4251277,
-                    "date_published": "2025-06-23T01:59:51.940Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "FramedBlocks-9.4.2.jar",
+                    "file_name": "FramedBlocks-9.4.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6753,16 +6731,38 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/wbgfS34j/versions/7rttes4D/FramedBlocks-9.4.2.jar",
-                    "id": "7rttes4D",
+                    "url": "https://cdn.modrinth.com/data/wbgfS34j/versions/lSiHA1qU/FramedBlocks-9.4.3.jar",
+                    "id": "lSiHA1qU",
                     "parent_id": "wbgfS34j",
                     "hashes": {
-                        "sha512": "51229b5b63a2b631682a0702a8525bdf54e53a1ecb6410331086073aa058040cde9724304cf29bce08583bebdd0c2eb6f103cd192fc10b2f246d19af05701fc5",
-                        "sha1": "68b8301c8124dd00ea70c216066b1fe207e25345"
+                        "sha512": "19a098bbf9ee7ee39f6b785bbce5f87b9dca58a491fa16eba2f38cfa106f37ee90c1ce56686a50adef8f5d3086e3c22a6127ed02bdf3f80d57297c8f7c1b49fc",
+                        "sha1": "740c0feaab75455f32df7e137389f77c83fb490c"
                     },
                     "required_dependencies": [],
-                    "size": 4251277,
-                    "date_published": "2025-06-23T02:00:24.225175Z"
+                    "size": 4251314,
+                    "date_published": "2025-12-28T01:00:09.136616Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "FramedBlocks-9.4.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7386/520/FramedBlocks-9.4.3.jar",
+                    "id": "7386520",
+                    "parent_id": "441647",
+                    "hashes": {
+                        "sha1": "740c0feaab75455f32df7e137389f77c83fb490c",
+                        "md5": "9afefc077f00c192b0f953c2987c5a66"
+                    },
+                    "required_dependencies": [],
+                    "size": 4251314,
+                    "date_published": "2025-12-28T00:58:18.240Z"
                 }
             ]
         },
@@ -9515,7 +9515,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "moonlight-1.20-2.16.16-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.18-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9524,38 +9524,38 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/DhH5mm9z/moonlight-1.20-2.16.16-forge.jar",
-                    "id": "DhH5mm9z",
+                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/lWv6Lb1p/moonlight-1.20-2.16.18-forge.jar",
+                    "id": "lWv6Lb1p",
                     "parent_id": "twkfQtEc",
                     "hashes": {
-                        "sha512": "1fd7d3aca0fa88bcc7c805b4afb0e2662756d5bac390234197896875334f136a52a46e1d26efd0da05c1da3a26f1c66ee8c070ec053895a15010047c8be5e344",
-                        "sha1": "f1ad21bce5a4b96a1152d6cf83cfb27684fc4b6a"
+                        "sha512": "4d28ee5fc7718557316f6140bdf4786dfb22231259bd1928aa52dfe37755643e784f9712b5780f7be58bb8825205e077de5309703f5d735f9a5559649406dfea",
+                        "sha1": "48dc8e4c200c487df69195fe503dc67493050b6b"
                     },
                     "required_dependencies": [],
-                    "size": 1333455,
-                    "date_published": "2025-11-06T12:29:54.395045Z"
+                    "size": 1337852,
+                    "date_published": "2025-12-27T17:10:55.594221Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "moonlight-1.20-2.16.16-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.18-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7191/950/moonlight-1.20-2.16.16-forge.jar",
-                    "id": "7191950",
+                    "url": "https://edge.forgecdn.net/files/7385/185/moonlight-1.20-2.16.18-forge.jar",
+                    "id": "7385185",
                     "parent_id": "499980",
                     "hashes": {
-                        "sha1": "f1ad21bce5a4b96a1152d6cf83cfb27684fc4b6a",
-                        "md5": "cc2852f794f2a3bb835c6507d8276dc4"
+                        "sha1": "48dc8e4c200c487df69195fe503dc67493050b6b",
+                        "md5": "9007cb60750897152f0952d46d39de95"
                     },
                     "required_dependencies": [],
-                    "size": 1333455,
-                    "date_published": "2025-11-06T12:29:47.037Z"
+                    "size": 1337852,
+                    "date_published": "2025-12-27T17:10:47.130Z"
                 }
             ]
         },

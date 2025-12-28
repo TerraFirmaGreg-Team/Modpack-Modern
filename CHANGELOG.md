@@ -21,6 +21,7 @@
 - Added a little saltpeter to cassiterite veins @Pyritie
 - Removed the cleanroom requirement for level emitters since they were also craftable in a crafting grid (#2529) @Jeuvke
 - Overhauled photographic film development @Pyritie
+- Lowered the temperature of gas fuels and their related gases/fluids @Pyritie
 ### Bug fixes
 - Fix for food stacking everywhere! @Mqrius
 - Fixed the grappling hook crashing and sending you to the void if you use it while travelling between dimensions (#2514) @Mqrius
