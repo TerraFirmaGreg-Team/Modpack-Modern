@@ -5,13 +5,13 @@ const registerTFGPowerReworkMaterials = (event) => {
 
 	// Syngas
 	event.create('tfg:syngas')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(320))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill())
 		.components('11x carbon', '20x hydrogen', '12x oxygen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	// Raw Aromatic Mix
 	event.create('tfg:raw_aromatic_mix')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(320))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(420))
 		.components('137x carbon', '154x hydrogen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0x8a4b3d)
@@ -19,7 +19,7 @@ const registerTFGPowerReworkMaterials = (event) => {
 
 	// Aromatic Feedstock
 	event.create('tfg:aromatic_feedstock')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(320))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(450))
 		.components('67x carbon', '74x hydrogen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0x915c2f)
@@ -27,7 +27,7 @@ const registerTFGPowerReworkMaterials = (event) => {
 
 	// Reformed Aromatic Feedstock
 	event.create('tfg:reformed_aromatic_feedstock')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(320))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(500))
 		.components('133x carbon', '146x hydrogen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0x4e6b83)
@@ -35,13 +35,13 @@ const registerTFGPowerReworkMaterials = (event) => {
 
 	// Reformate Gas
 	event.create('tfg:reformate_gas')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(320))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill())
 		.components('13x carbon', '63x hydrogen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	// Cracker Off-Gas
 	event.create('tfg:cracker_off_gas')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(320))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(480))
 		.components('31x carbon', '128x hydrogen', '2x oxygen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xa36f2a)
@@ -49,14 +49,14 @@ const registerTFGPowerReworkMaterials = (event) => {
 
 	// Reformate Gas
 	event.create('tfg:btx_fuel')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(320))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill())
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	//#region Materials for BTX
 
 	// Crude Mixed Gas
 	event.create('tfg:crude_mixed_gas')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(320))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(500))
     	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
     	.color(0x9bb6c9)
     	.secondaryColor(0xd7e7ef)
@@ -88,7 +88,7 @@ const registerTFGPowerReworkMaterials = (event) => {
 
 	// ZSM-5 Gel
 	event.create('tfg:zsm5_gel')
-		.liquid(new GTFluidBuilder().temperature(320))
+		.liquid(new GTFluidBuilder().temperature(323))
     	.components('24x carbon', '128x hydrogen', '12x nitrogen', '5x silicon', '1x aluminium', '34x oxygen', '31x sodium')
     	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
     	.color(0xf2e8d6)
