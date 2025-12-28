@@ -271,10 +271,10 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfc:crucible'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "4,032"))
 	})
-	event.addAdvanced(['waterflasks:red_steel_flask'], (item, advanced, text) => {
+	event.addAdvanced(['waterflasks:iron_flask', 'waterflasks:red_steel_flask'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "2,000"))
 	})
-	event.addAdvanced(['waterflasks:iron_flask', 'tfc:wooden_bucket', 'firmalife:mixing_bowl'], (item, advanced, text) => {
+	event.addAdvanced(['tfc:wooden_bucket', 'firmalife:mixing_bowl'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "1,000"))
 	})
 	event.addAdvanced(['waterflasks:leather_flask'], (item, advanced, text) => {
