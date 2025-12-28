@@ -30,7 +30,6 @@ const registerTFCRecipes = (event) => {
 		{ input: "#forge:dusts/cassiterite", output: "4x tfc:powder/cassiterite", name: "cassiterite_powder" },
 		{ input: "#forge:dusts/bismuth", output: "4x tfc:powder/bismuthinite", name: "bismuth_powder" },
 		{ input: "#forge:dusts/garnierite", output: "4x tfc:powder/garnierite", name: "garnierite_powder" },
-		{ input: "#forge:dusts/nickel", output: "4x tfc:powder/garnierite", name: "nickel_powder" },
 		{ input: "#forge:dusts/sphalerite", output: "4x tfc:powder/sphalerite", name: "sphalerite_powder" },
 		{ input: "#forge:dusts/magnetite", output: "4x tfc:powder/magnetite", name: "magnetite_powder" },
 		{ input: "#forge:dusts/tetrahedrite", output: "4x tfc:powder/tetrahedrite", name: "tetrahedrite_powder" },
@@ -43,7 +42,7 @@ const registerTFCRecipes = (event) => {
 		{ input: "#forge:dusts/graphite", output: "4x tfc:powder/graphite", name: "graphite_powder" },
 		{ input: "#forge:dusts/borax", output: "4x tfc:powder/flux", name: "flux_powder" },
 		{ input: "#forge:dusts/soda_ash", output: "4x tfc:powder/soda_ash", name: "soda_ash" },
-		{ input: "gtceu:charcoal_dust", output: "2x tfc:powder/charcoal", name: "charcoal" },
+		{ input: "gtceu:charcoal_dust", output: "4x tfc:powder/charcoal", name: "charcoal" },
 		{ input: "tfc:ore/sylvite", output: "4x tfc:powder/sylvite", name: "sylvite" }
 	]);
 
