@@ -47,6 +47,7 @@
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry
 - Spanish @NikoNeko17
+- Turkish @MVG31
 
 ## [0.11.12] - 19-12-2025
 ### Changes
