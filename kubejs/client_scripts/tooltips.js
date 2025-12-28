@@ -398,4 +398,19 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfc:bucket/spring_water'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
+	event.addAdvanced(['firmalife:bucket/red_wine'], (item, advanced, text) => {
+		text.add(1, Text.of("Strength (05:20)").blue());
+	})
+	event.addAdvanced(['firmalife:bucket/rose_wine'], (item, advanced, text) => {
+		text.add(1, Text.of("Dolphin's Grace (05:20)").blue());
+	})
+	event.addAdvanced(['firmalife:bucket/white_wine'], (item, advanced, text) => {
+		text.add(1, Text.of("Wither Resistance (05:20)").blue());
+	})
+	event.addAdvanced(['firmalife:bucket/dessert_wine'], (item, advanced, text) => {
+		text.add(1, Text.of("Knockback Resistance (05:20)").blue());
+	})
+	event.addAdvanced(['firmalife:bucket/sparkling_wine'], (item, advanced, text) => {
+		text.add(1, Text.of("Jump Boost II (05:20)").blue());
+	})
 }
