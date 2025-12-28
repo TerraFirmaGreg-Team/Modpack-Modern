@@ -9515,7 +9515,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "moonlight-1.20-2.16.18-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.19-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9524,20 +9524,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/lWv6Lb1p/moonlight-1.20-2.16.18-forge.jar",
-                    "id": "lWv6Lb1p",
+                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/ZBeK8kT5/moonlight-1.20-2.16.19-forge.jar",
+                    "id": "ZBeK8kT5",
                     "parent_id": "twkfQtEc",
                     "hashes": {
-                        "sha512": "4d28ee5fc7718557316f6140bdf4786dfb22231259bd1928aa52dfe37755643e784f9712b5780f7be58bb8825205e077de5309703f5d735f9a5559649406dfea",
-                        "sha1": "48dc8e4c200c487df69195fe503dc67493050b6b"
+                        "sha512": "d687d18d8796c9bb1bfa8f6cbf08a41594c96ecbf5bd97253d59d5f2fbd15841c63cf159dc89a7157c8e71058d88f15b2f03beef5fe7bcd672e4d9eed84d3cf8",
+                        "sha1": "de55e348bdf3a3ac7520fde157654d615967f9b1"
                     },
                     "required_dependencies": [],
-                    "size": 1337852,
-                    "date_published": "2025-12-27T17:10:55.594221Z"
+                    "size": 1354950,
+                    "date_published": "2025-12-28T12:21:11.913916Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "moonlight-1.20-2.16.18-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.19-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9546,16 +9546,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7385/185/moonlight-1.20-2.16.18-forge.jar",
-                    "id": "7385185",
+                    "url": "https://edge.forgecdn.net/files/7388/296/moonlight-1.20-2.16.19-forge.jar",
+                    "id": "7388296",
                     "parent_id": "499980",
                     "hashes": {
-                        "sha1": "48dc8e4c200c487df69195fe503dc67493050b6b",
-                        "md5": "9007cb60750897152f0952d46d39de95"
+                        "sha1": "de55e348bdf3a3ac7520fde157654d615967f9b1",
+                        "md5": "bfa3f531468e3c0cef07edbad1a4fbc9"
                     },
                     "required_dependencies": [],
-                    "size": 1337852,
-                    "date_published": "2025-12-27T17:10:47.130Z"
+                    "size": 1354950,
+                    "date_published": "2025-12-28T12:21:00.210Z"
                 }
             ]
         },
