@@ -5,7 +5,7 @@ const registerTFGPowerReworkMaterials = (event) => {
 
 	// Syngas
 	event.create('tfg:syngas')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(650))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill())
 		.components('11x carbon', '20x hydrogen', '12x oxygen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
@@ -35,7 +35,7 @@ const registerTFGPowerReworkMaterials = (event) => {
 
 	// Reformate Gas
 	event.create('tfg:reformate_gas')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(540))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill())
 		.components('13x carbon', '63x hydrogen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
@@ -49,22 +49,14 @@ const registerTFGPowerReworkMaterials = (event) => {
 
 	// Reformate Gas
 	event.create('tfg:btx_fuel')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(540))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill())
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	//#region Materials for BTX
 
-	// Propylene
-	event.create('tfg:propylene')
-    	.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(350))
-    	.components('3x carbon', '6x hydrogen')
-    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    	.color(0xffb347)
-    	.secondaryColor(0xffe0b2)
-
 	// Crude Mixed Gas
 	event.create('tfg:crude_mixed_gas')
-    	.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(500))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(500))
     	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
     	.color(0x9bb6c9)
     	.secondaryColor(0xd7e7ef)
@@ -96,7 +88,7 @@ const registerTFGPowerReworkMaterials = (event) => {
 
 	// ZSM-5 Gel
 	event.create('tfg:zsm5_gel')
-    	.liquid(new GTFluidBuilder().temperature(323))
+		.liquid(new GTFluidBuilder().temperature(323))
     	.components('24x carbon', '128x hydrogen', '12x nitrogen', '5x silicon', '1x aluminium', '34x oxygen', '31x sodium')
     	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
     	.color(0xf2e8d6)

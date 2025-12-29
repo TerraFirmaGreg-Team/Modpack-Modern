@@ -14,7 +14,7 @@ function registerTFGMealBagRecipes(event) {
 		.notConsumable('gtceu:block_casting_mold')
 		.itemOutputs('2x tfg:dry_ice')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.vacuum_freezer('tfg:vacuum_freezer/liq_co2')
 		.inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))

@@ -1,0 +1,72 @@
+{
+    "name": "swamp",
+    "bad-regions": [
+        "rain",
+        "snow"
+    ],
+    "biomes": [
+        "salt_marsh",
+        "lowlands"
+    ],
+    "sounds": [
+        {
+            "name": "cricket-swamp",
+            "category": "cricket_day",
+            "files": [
+                "ambientsounds:animals.cricket-swamp"
+            ],
+            "volume": 0.3,
+            "overall-raining": false
+        },
+        {
+            "name": "cricket-warm-night",
+            "category": "cricket_night",
+            "files": [
+                "ambientsounds:animals.cricket-warm-night",
+                "ambientsounds:animals.cricket-warm-night2"
+            ],
+            "overall-raining": false,
+            "length": {
+                "min": 1000,
+                "max": 1500
+            },
+            "transition": 100,
+            "volume": 0.3
+        },
+        {
+            "name": "frog",
+            "category": "animal",
+            "files": [
+                "ambientsounds:animals.frog1",
+                "ambientsounds:animals.frog2"
+            ],
+            "pause": {
+                "min": 100,
+                "max": 750
+            },
+            "day": 0.05,
+            "night": 0.15
+        },
+        {
+            "name": "mouring_dove",
+            "category": "animal",
+            "files": [
+                "ambientsounds:animals.mouring_dove"
+            ],
+            "features": [
+                "tree"
+            ],
+            "pause": {
+                "min": 100,
+                "max": 400
+            },
+            "time": {
+                "5": 0,
+                "6": 1,
+                "8": 1,
+                "9": 0
+            },
+            "volume": 0.14
+        }
+    ]
+}

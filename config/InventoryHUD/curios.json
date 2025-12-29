@@ -1,6 +1,6 @@
 {
     "clothes_hat": {
-        "x": 20,
+        "x": 30,
         "y": 98,
         "enabled": true,
         "halign": "LEFT",
@@ -63,7 +63,7 @@
         "valign": "BOTTOM"
     },
     "clothes_torso": {
-        "x": 20,
+        "x": 30,
         "y": 80,
         "enabled": true,
         "halign": "LEFT",
@@ -98,14 +98,14 @@
         "valign": "TOP"
     },
     "clothes_pants": {
-        "x": 20,
+        "x": 30,
         "y": 62,
         "enabled": true,
         "halign": "LEFT",
         "valign": "BOTTOM"
     },
     "clothes_socks": {
-        "x": 20,
+        "x": 30,
         "y": 44,
         "enabled": true,
         "halign": "LEFT",

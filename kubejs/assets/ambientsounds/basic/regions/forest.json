@@ -1,0 +1,82 @@
+{
+    "name": "forest",
+    "features": [
+        "tree_warm"
+    ],
+    "bad-regions": [
+        "taiga",
+        "forest.roofed",
+        "jungle",
+        "rain"
+    ],
+    "variants": [
+        {
+            "regions": [
+                "surface"
+            ]
+        },
+        {
+            "regions": [
+                "swamp"
+            ],
+            "volume": 0.3
+        }
+    ],
+    "sounds": [
+        {
+            "name": "bird-warm",
+            "category": "bird_day",
+            "files": [
+                "ambientsounds:animals.bird-ambience-warm1",
+                "ambientsounds:animals.bird-ambience-warm2"
+            ],
+            "length": {
+                "min": 2000,
+                "max": 3000
+            },
+            "overall-raining": false
+        },
+        {
+            "name": "cricket",
+            "category": "cricket_day",
+            "files": [
+                "ambientsounds:animals.cricket",
+                "ambientsounds:animals.cricket2",
+                "ambientsounds:animals.cricket3"
+            ],
+            "overall-raining": false,
+            "length": {
+                "min": 1000,
+                "max": 1500
+            },
+            "transition": 100,
+            "volume": 0.25
+        },
+        {
+            "name": "cricket-warm-night",
+            "category": "cricket_night",
+            "files": [
+                "ambientsounds:animals.cricket-warm-night",
+                "ambientsounds:animals.cricket-warm-night2"
+            ],
+            "overall-raining": false,
+            "length": {
+                "min": 1000,
+                "max": 1500
+            },
+            "transition": 100,
+            "volume": 0.3
+        },
+        {
+            "name": "owl",
+            "files": [
+                "ambientsounds:animals.owl"
+            ],
+            "pause": {
+                "min": 100,
+                "max": 500
+            },
+            "category": "bird_night"
+        }
+    ]
+}

@@ -4,11 +4,16 @@
 	},
 	"downfall": 0,
 	"effects": {
+		"additions_sound": {
+			"sound": "tfg:ambient.venus_surface.additions",
+			"tick_chance": 0.0111
+		},
 		"fog_color": 9938052,
+		"ambient_sound": "tfg:ambient.venus_surface.loop",
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2.0,
-			"sound": "minecraft:ambient.cave",
+			"sound": "tfg:ambient.venus_surface.mood",
 			"tick_delay": 6000
 		},
 		"sky_color": 10465603,

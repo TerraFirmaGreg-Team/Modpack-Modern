@@ -100,7 +100,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.iconSet(GTMaterialIconSet.getByName('thick_fluid'))
 
 	event.create('martian_sludge')
-		.liquid(new GTFluidBuilder().temperature(4239))
+		.liquid(new GTFluidBuilder())
 		.components('1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xd86f27)

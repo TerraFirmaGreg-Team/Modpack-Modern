@@ -1,0 +1,26 @@
+{
+	"name": "lake",
+	"biomes": [
+		"river",
+		"lake",
+		"mountain_lake",
+		"old_mountain_lake",
+		"oceanic_mountain_lake",
+		"plateau_lake",
+		"volcanic_mountain_lake",
+		"volcanic_oceanic_mountain_lake",
+		"martian_river"
+	],
+	"features": [
+		"water"
+	],
+	"sounds": [
+		{
+			"name": "ocean",
+			"files": [
+				"ambientsounds:water.ocean"
+			],
+			"volume": 0.4
+		}
+	]
+}

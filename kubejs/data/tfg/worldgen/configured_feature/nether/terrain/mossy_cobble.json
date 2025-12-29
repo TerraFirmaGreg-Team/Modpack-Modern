@@ -1,0 +1,99 @@
+{
+	"type": "minecraft:ore",
+	"config": {
+		"discard_chance_on_air_exposure": 0,
+		"size": 20,
+		"targets": [
+			{
+				"state": {
+					"Name": "tfg:rock/mossy_cobble_deepslate"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "minecraft:deepslate"
+				}
+			},
+			{
+				"state": {
+					"Name": "tfg:rock/mossy_cobble_blackstone"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "minecraft:blackstone"
+				}
+			},
+			{
+				"state": {
+					"Name": "tfg:rock/mossy_cobble_dripstone"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "minecraft:dripstone_block"
+				}
+			},
+			{
+				"state": {
+					"Name": "tfg:rock/mossy_cobble_crackrack"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "beneath:crackrack"
+				}
+			},
+			{
+				"state": {
+					"Name": "tfc:rock/mossy_cobble/diorite"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "tfc:rock/raw/diorite"
+				}
+			},
+			{
+				"state": {
+					"Name": "tfc:rock/mossy_cobble/gabbro"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "tfc:rock/raw/gabbro"
+				}
+			},
+			{
+				"state": {
+					"Name": "tfc:rock/mossy_cobble/gneiss"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "tfc:rock/raw/gneiss"
+				}
+			},
+			{
+				"state": {
+					"Name": "tfc:rock/mossy_cobble/granite"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "tfc:rock/raw/granite"
+				}
+			},
+			{
+				"state": {
+					"Name": "tfc:rock/mossy_cobble/schist"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "tfc:rock/raw/schist"
+				}
+			},
+			{
+				"state": {
+					"Name": "tfc:rock/mossy_cobble/basalt"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "tfc:rock/raw/basalt"
+				}
+			}
+		]
+	}
+}

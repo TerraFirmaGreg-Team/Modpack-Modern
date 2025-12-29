@@ -1,0 +1,15 @@
+{
+	"name": "tfg:illagers/yurts_village_living_start_pool",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:yurts/baseline/throne_house",
+				"processors": "tfg:illagers/yurts_paths",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

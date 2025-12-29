@@ -29,6 +29,10 @@
           {
             "block": "gtceu:raw_tin_block",
             "weight": 2
+          },
+          {
+            "block": "gtceu:granite_saltpeter_ore",
+            "weight": 10
           }
         ]
       },
@@ -52,6 +56,10 @@
           {
             "block": "gtceu:raw_tin_block",
             "weight": 2
+          },
+          {
+            "block": "gtceu:diorite_saltpeter_ore",
+            "weight": 10
           }
         ]
       },
@@ -75,6 +83,10 @@
           {
             "block": "gtceu:raw_tin_block",
             "weight": 2
+          },
+          {
+            "block": "gtceu:gabbro_saltpeter_ore",
+            "weight": 10
           }
         ]
       },
@@ -98,6 +110,10 @@
           {
             "block": "gtceu:raw_tin_block",
             "weight": 2
+          },
+          {
+            "block": "gtceu:gneiss_saltpeter_ore",
+            "weight": 10
           }
         ]
       },
@@ -121,6 +137,10 @@
           {
             "block": "gtceu:raw_tin_block",
             "weight": 2
+          },
+          {
+            "block": "gtceu:schist_saltpeter_ore",
+            "weight": 10
           }
         ]
       },
@@ -145,6 +165,10 @@
           {
             "block": "gtceu:raw_tin_block",
             "weight": 2
+          },
+          {
+            "block": "gtceu:pyroxenite_saltpeter_ore",
+            "weight": 10
           }
         ]
       }
@@ -157,7 +181,11 @@
       "blocks": [
         {
           "block": "tfc:ore/small_cassiterite",
-          "weight": 100
+          "weight": 90
+        },
+        {
+          "block": "gtceu:saltpeter_indicator",
+          "weight": 10
         }
       ]
     }

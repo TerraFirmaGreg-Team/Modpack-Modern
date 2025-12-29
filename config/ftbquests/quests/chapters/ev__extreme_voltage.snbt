@@ -161,8 +161,11 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["4EA8888B12D75BF1"]
-			dependency_requirement: "all_started"
+			dependencies: [
+				"4EA8888B12D75BF1"
+				"00004BE1D77EA003"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.extreme_voltage.tunsgten_line_step_1.desc}"]
 			icon: "gtceu:tungstic_acid_dust"
 			id: "04682CD04FE0A56E"
@@ -188,15 +191,21 @@
 		{
 			dependencies: ["4EA8888B12D75BF1"]
 			dependency_requirement: "all_started"
-			description: [""]
+			description: [
+				"{quests.extreme_voltage.assembler.desc.1}"
+				"{@pagebreak}"
+				"{quests.extreme_voltage.assembler.desc.2}"
+			]
 			id: "601088B7920140B2"
 			shape: "octagon"
 			size: 2.0d
+			subtitle: "{quests.extreme_voltage.assembler.subtitle}"
 			tasks: [{
 				id: "2B895EE3AD917E30"
 				item: "gtceu:ev_assembler"
 				type: "item"
 			}]
+			title: "{quests.extreme_voltage.assembler.title}"
 			x: -0.75d
 			y: 3.0d
 		}

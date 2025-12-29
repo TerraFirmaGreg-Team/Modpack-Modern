@@ -3279,7 +3279,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 60%$(br)$(thing)熔化$(): 锡$(br)$(thing)化学式$(): SnO₂",
+      "text": "$(thing)百分比$(): 55%$(br)$(thing)熔化$(): 锡$(br)$(thing)化学式$(): SnO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -3299,13 +3299,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 40%$(br)$(thing)熔化$(): 锡$(br)$(thing)化学式$(): Sn",
+      "text": "$(thing)百分比$(): 35%$(br)$(thing)熔化$(): 锡$(br)$(thing)化学式$(): Sn",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "硝石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/saltpeter"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 10%$(br)$(thing)来源$(): 钾, 氮$(br)$(thing)化学式$(): KNO₃",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
@@ -3331,7 +3346,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 60%$(br)$(thing)熔化$(): 锡$(br)$(thing)化学式$(): Sn",
+      "text": "$(thing)百分比$(): 55%$(br)$(thing)熔化$(): 锡$(br)$(thing)化学式$(): Sn",
       "type": "patchouli:multiblock"
     },
     {
@@ -3351,13 +3366,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 40%$(br)$(thing)熔化$(): 锡$(br)$(thing)化学式$(): SnO₂",
+      "text": "$(thing)百分比$(): 35%$(br)$(thing)熔化$(): 锡$(br)$(thing)化学式$(): SnO₂",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "硝石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/saltpeter"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 10%$(br)$(thing)来源$(): 钾, 氮$(br)$(thing)化学式$(): KNO₃",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",

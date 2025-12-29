@@ -5,6 +5,14 @@
 	group: "19428C6E7A36D463"
 	icon: "tfg:terra_firma_greg"
 	id: "5DD2C08324B24805"
+	images: [{
+		height: 2.0d
+		image: "tfg:textures/gui/tfg_logo_title_4181x688_with_shadow.png"
+		rotation: 0.0d
+		width: 12.15406976744186d
+		x: 0.0d
+		y: -3.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

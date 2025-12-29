@@ -35,4 +35,6 @@ const registerSpeciesItemTags = (event) => {
 	event.add('minecraft:wart_blocks', 'species:alphacene_mushroom_block')
 
 	event.add('species:stackatick_tempt_items', 'tfc:sweetener')
+
+	event.add('forge:ender_pearls', 'species:wicked_swapper')
 }

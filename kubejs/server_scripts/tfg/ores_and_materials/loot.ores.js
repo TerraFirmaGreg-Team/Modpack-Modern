@@ -23,15 +23,15 @@ const STONE_TYPES_TO_COBBLE = {
 	granite: 'tfc:rock/cobble/granite',
 	deepslate: 'minecraft:cobbled_deepslate',
 	pyroxenite: 'tfg:rock/cobble_blackstone',
-	dripstone: 'tfg:block/rock/cobble_dripstone',
-	keratophyre: 'tfg:block/rock/cobble_crackrack',
+	dripstone: 'tfg:rock/cobble_dripstone',
+	keratophyre: 'tfg:rock/cobble_crackrack',
 	moon_stone: 'ad_astra:moon_cobblestone',
-	moon_deepslate: 'ad_astra:moon_sand',
+	moon_deepslate: 'tfg:rock/cobble_moon_deepslate',
 	mars_stone: 'ad_astra:mars_cobblestone',
 	venus_stone: 'ad_astra:venus_cobblestone',
 	mercury_stone: 'ad_astra:mercury_cobblestone',
 	glacio_stone: 'ad_astra:glacio_cobblestone',
-	permafrost: 'gtceu:ice_dust'
+	permafrost: 'tfg:rock/cobble_permafrost'
 }
 
 const registerTFGOreLoots = (event) => {	
@@ -69,37 +69,22 @@ const registerTFGOreLoots = (event) => {
 
 			// Indicator buds
 			if (material.hasProperty(PropertyKey.GEM)) {
-				let normalDrop = ChemicalHelper.get(TagPrefix.gemChipped, material, 1)
-				let sawDrop = ChemicalHelper.get(TagPrefix.gem, material, 1)
-				let bud = ChemicalHelper.get(TagPrefix.surfaceRock, material, 1)
+				let bud = ChemicalHelper.get(TFGTagPrefix.budIndicator, material, 1).getItem().id;
 
 				event.addBlockLootModifier(bud)
 					.matchMainHand("tfc:gem_saw")
-					.addLoot(sawDrop);
+					.addLoot(ChemicalHelper.get(TagPrefix.gem, material, 1));
 
 				event.addBlockLootModifier(bud)
 					.not(n => n.matchMainHand("tfc:gem_saw"))
-					.addLoot(normalDrop);
+					.addLoot(ChemicalHelper.get(TagPrefix.gemChipped, material, 1));
 			}
 
 			let richRawOre = ChemicalHelper.get(TFGTagPrefix.richRawOre, material, 1)
 			let normalRawOre = ChemicalHelper.get(TagPrefix.rawOre, material, 1)
 			let poorRawOre = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1)
 
-			// I LOVE LOOTJS I LOVE LOOTJS I LOVE LOOTJS
-			let rawOreBlock = `:${ChemicalHelper.get(TagPrefix.rawOreBlock, material, 1).getItem()}`;
-			if (material === GTMaterials.Copper || material === GTMaterials.Gold || material === GTMaterials.Iron) {
-				rawOreBlock = `minecraft${rawOreBlock}`;
-			} else if (material === TFGHelpers.getMaterial('desh')
-				|| material === TFGHelpers.getMaterial('ostrum')
-				|| material === TFGHelpers.getMaterial('calorite')) {
-				rawOreBlock = `ad_astra${rawOreBlock}`;
-			} else if (material === $GreateMaterials.RoseQuartz) {
-				rawOreBlock = `greate${rawOreBlock}`;
-			} else {
-				rawOreBlock = `gtceu${rawOreBlock}`;
-			}
-
+			let rawOreBlock = ChemicalHelper.get(TagPrefix.rawOreBlock, material, 1).getItem().id;
 			event.addBlockLootModifier(rawOreBlock)
 				.removeLoot(ItemFilter.ALWAYS_TRUE)
 				.addWeightedLoot([4, 6],

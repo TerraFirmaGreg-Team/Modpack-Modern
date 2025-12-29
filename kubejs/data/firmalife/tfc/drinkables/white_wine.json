@@ -1,0 +1,11 @@
+{
+	"ingredient": "firmalife:white_wine",
+	"thirst": 15,
+	"effects": [
+		{
+			"type": "species:wither_resistance",
+			"duration": 6400,
+			"amplifier": 0
+		}
+	]
+}

@@ -3,18 +3,6 @@
 		"": [
 			{
 				"model": "tfg:block/rock/hardened_mercury_stone"
-			},
-			{
-				"model": "tfg:block/rock/hardened_mercury_stone",
-				"y": 90
-			},
-			{
-				"model": "tfg:block/rock/hardened_mercury_stone",
-				"y": 180
-			},
-			{
-				"model": "tfg:block/rock/hardened_mercury_stone",
-				"y": 270
 			}
 		]
 	}

@@ -88,4 +88,11 @@ function registerTFGPrimitiveMaterials(event) {
 		.color(0xEEB9AD)
 		.secondaryColor(0xF6A797)
 		.formula("Al2Si2O5(OH)4")
+
+	// Film developing
+	event.create('tfg:pyrogallol')
+		.dust()
+		.color(0xf0ccb4)
+		.formula("C6H3(OH)3")
+		.iconSet('rough')
 }
