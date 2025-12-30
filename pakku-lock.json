@@ -12683,31 +12683,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "TFCBetterBlastFurnace-1.20.1-1.0.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7096/292/TFCBetterBlastFurnace-1.20.1-1.0.1.jar",
-                    "id": "7096292",
-                    "parent_id": "1046432",
-                    "hashes": {
-                        "sha1": "deed557181e79cfa11ab29916d74801ba5d6dcd0",
-                        "md5": "542a4ea966f16f18fe6262c5d009a7f3"
-                    },
-                    "required_dependencies": [
-                        "302973"
-                    ],
-                    "size": 22675,
-                    "date_published": "2025-10-11T21:07:54.880Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "TFCBetterBlastFurnace-1.20.1-1.0.1.jar",
+                    "file_name": "TFCBetterBlastFurnace-1.20.1-1.0.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12715,18 +12692,41 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/tr715LZ4/versions/MyOPcTS9/TFCBetterBlastFurnace-1.20.1-1.0.1.jar",
-                    "id": "MyOPcTS9",
+                    "url": "https://cdn.modrinth.com/data/tr715LZ4/versions/vdRmPxPV/TFCBetterBlastFurnace-1.20.1-1.0.2.jar",
+                    "id": "vdRmPxPV",
                     "parent_id": "tr715LZ4",
                     "hashes": {
-                        "sha512": "ea85cde0e166c3e1561acf06330aaf3a07336ed02f6f87117689cab2575b1333e2d5ec43d1e44f7f828be3ab28fbc6be20055aa5417befed66ebaafe6b529417",
-                        "sha1": "2f0171f5cd2a2b2210425027ec5a29148cfee8b2"
+                        "sha512": "636086142963badbda90a3e4bd573790c9a0d32ee4b63c7b5245692a4672c057d48e575ea2a5bb7f82da662c75d7748585e7e818c1540faeef021350adf2fba3",
+                        "sha1": "e40bc10f114bce20b9c003a7d42a97834d5a1bcc"
                     },
                     "required_dependencies": [
                         "JaCEZUhg"
                     ],
-                    "size": 22675,
-                    "date_published": "2025-10-11T20:59:58.399976Z"
+                    "size": 22983,
+                    "date_published": "2025-12-30T22:54:19.887776Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "TFCBetterBlastFurnace-1.20.1-1.0.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7398/149/TFCBetterBlastFurnace-1.20.1-1.0.2.jar",
+                    "id": "7398149",
+                    "parent_id": "1046432",
+                    "hashes": {
+                        "sha1": "e40bc10f114bce20b9c003a7d42a97834d5a1bcc",
+                        "md5": "b2a4def055ed078d64ef6b1f6ebfd302"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 22983,
+                    "date_published": "2025-12-30T22:54:18.363Z"
                 }
             ]
         },
