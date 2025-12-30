@@ -10,6 +10,7 @@ function registerTFGCasingBlocks(event) {
 			.hardness(5)
 			.resistance(6)
 			.tagBlock('gtceu:mineable/pickaxe_or_wrench')
+			.tagBoth('tfg:casings')
 			.mapColor('color_light_gray')
 	})
 
@@ -20,6 +21,7 @@ function registerTFGCasingBlocks(event) {
 		.hardness(5)
 		.resistance(6)
 		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
+		.tagBoth('tfg:casings')
 		.mapColor('color_light_gray')
 
     event.create('tfg:casings/machine_casing_vacuum_engine_intake', 'gtceu:active')
@@ -28,6 +30,7 @@ function registerTFGCasingBlocks(event) {
         .soundType('metal')
         .resistance(6).hardness(5)
         .tagBlock('gtceu:mineable/pickaxe_or_wrench')
+		.tagBoth('tfg:casings')
         .requiresTool(true)
 		.mapColor('color_light_gray')
 
@@ -38,6 +41,7 @@ function registerTFGCasingBlocks(event) {
 		.hardness(5)
 		.resistance(6)
 		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
+		.tagBoth('tfg:casings')
 		.mapColor('color_red')
 
 	event.create('tfg:casings/machine_casing_bioculture_glass')
@@ -47,6 +51,8 @@ function registerTFGCasingBlocks(event) {
 		.hardness(5)
 		.resistance(6)
 		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
+		.tagBoth('tfc:mineable_with_glass_saw')
+		.tagBoth('tfg:casings')
 		.mapColor('color_orange')
 		.defaultTranslucent()
 
@@ -78,6 +84,7 @@ function registerTFGCasingBlocks(event) {
 		.hardness(5)
 		.resistance(6)
 		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
+		.tagBoth('tfg:casings')
 		.mapColor('color_light_gray')
 	
 	event.create('tfg:casings/heat_pipe_casing')
@@ -87,6 +94,7 @@ function registerTFGCasingBlocks(event) {
 		.hardness(5)
 		.resistance(6)
 		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
+		.tagBoth('tfg:casings')
 		.mapColor('color_black')
 
 	event.create('tfg:sample_rack', 'tfg:active_cardinal')
@@ -115,6 +123,7 @@ function registerTFGCasingBlocks(event) {
 		.hardness(5)
 		.resistance(6)
 		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
+		.tagBoth('tfg:casings')
 		.mapColor('color_brown')
 
 	event.create('tfg:cultivation_monitor', 'tfg:active_cardinal')
@@ -142,7 +151,7 @@ function registerTFGCasingBlocks(event) {
 		.mapColor('grass')
 		.activeOffset(0.2, 0.0, 0.2)
 		.activeVelocity(0.0, 0.0, 0.0)
-		.activeBase(0.5, 0.0, 0.5)
+		.activeBase(0.5, -0.1, 0.5)
 		.activeCount(1)
 		.activeParticle('minecraft:dripping_water')
 		.activeForced(false)
@@ -158,13 +167,80 @@ function registerTFGCasingBlocks(event) {
 		.tagBlock('minecraft:bamboo_plantable_on')
 		.tagBoth('tfc:farmland');
 
+	event.create('tfg:grow_light', 'tfg:active_particle_emitter')
+		.translationKey('block.tfg.grow_light')
+		.soundType('copper')
+		.hardness(5)
+		.resistance(6)
+		.notSolid()
+		.box(0, 12, 0, 16, 16, 16, true)
+		.activeLight(12)
+		.inactiveLight(0)
+		.renderType('cutout')
+		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
+		.mapColor('grass')
+		.activeOffset(0.2, 0.0, 0.2)
+		.activeVelocity(0.0, 0.0, 0.0)
+		.activeBase(0.5, 0.5, 0.5)
+		.activeCount(1)
+		.activeParticle('minecraft:dripping_water')
+		.activeForced(false)
+		.hasTicker(true)
+		.emitDelay(200);
+
 	event.create('tfg:casings/machine_casing_egh', 'gtceu:active')
 		.translationKey('block.tfg.casings.machine_casing_egh')
 		.soundType('metal')
 		.hardness(5)
 		.resistance(6)
 		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
+		.tagBoth('tfg:casings')
 		.mapColor('color_light_gray');
+
+	/**
+	 * @type {string[]} - Tier names of greenhouse casings.
+	 */
+	const greenhouse_tiers = ['treated_wood', 'copper', 'iron', 'stainless'];
+
+	greenhouse_tiers.forEach(tier => {
+		for (let i = 0; i <= 3; i++) {
+
+			let r = event.create(`tfg:casings/greenhouse/${tier}_greenhouse_casing_${i}`)
+				.translationKey(`block.tfg.casings.greenhouse.${tier}_greenhouse_casing_${i}`)
+				.hardness(0.3)
+				.resistance(0.3)
+				.soundType('glass')
+				.requiresTool(true)
+				.tagBoth('tfg:casings')
+				.tagBoth('tfc:mineable_with_glass_saw')
+				.tagBoth('firmalife:greenhouse')
+				.tagBoth('firmalife:greenhouse_full_walls')
+				.tagBoth('tfg:all_greenhouse_casings')
+
+			// Exception of shame V
+			if (tier === 'stainless') {
+				r.tagBoth(`firmalife:${tier}_steel_greenhouse`)
+				r.tagBoth(`tfg:${tier}_steel_greenhouse_casings`)
+				r.tagBlock(`firmalife:all_${tier}_steel_greenhouse`)
+			} else {
+				r.tagBoth(`firmalife:${tier}_greenhouse`)
+				r.tagBoth(`tfg:${tier}_greenhouse_casings`)
+				r.tagBlock(`firmalife:all_${tier}_greenhouse`)
+			};
+
+			if (tier === 'treated_wood') {
+				r.tagBlock('minecraft:mineable/axe')
+			} else {
+				r.tagBlock('minecraft:mineable/pickaxe')
+			};
+
+			if (i === 3) {
+				r.defaultTranslucent()
+			} else {
+				r.defaultCutout()
+			};
+		};
+	});
 
 	event.create('tfg:casings/test_casing')
 		.soundType('copper')
