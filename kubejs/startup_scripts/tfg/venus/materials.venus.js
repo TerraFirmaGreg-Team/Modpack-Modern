@@ -12,7 +12,9 @@ function registerTFGVenusMaterials(event) {
 		.ingot()
 		.flags(
 			GTMaterialFlags.FORCE_GENERATE_BLOCK,
-			GTMaterialFlags.GENERATE_PLATE
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_ROD,
+			GTMaterialFlags.GENERATE_FRAME
 		)
 
 	//#region Bromine Line

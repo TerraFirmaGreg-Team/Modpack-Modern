@@ -533,7 +533,7 @@ const registerMinecraftRecipes = (event) => {
 		A: '#forge:plates/wrought_iron',
 		B: '#forge:chests/wooden',
 		D: '#forge:tools/wrenches',
-		E: '#forge:tools/hammers',
+		E: '#forge:tools/hammers'
 	}).id('gtceu:shaped/hopper')
 
 	event.recipes.gtceu.assembler('hopper_wrought_iron')
@@ -896,7 +896,7 @@ const registerMinecraftRecipes = (event) => {
 		A: '#forge:rods/black_steel',
 		B: 'minecraft:lava_bucket',
 		C: '#minecraft:logs',
-		D: '#forge:storage_blocks/charcoal',
+		D: '#forge:storage_blocks/charcoal'
 	}).id('tfg:campfire_charcoal')
 
 	event.shaped('minecraft:campfire', [
@@ -907,7 +907,7 @@ const registerMinecraftRecipes = (event) => {
 		A: '#forge:rods/black_steel',
 		B: 'minecraft:lava_bucket',
 		C: '#minecraft:logs',
-		D: '#forge:storage_blocks/coal',
+		D: '#forge:storage_blocks/coal'
 	}).id('tfg:campfire_coal')
 	//#endregion
 
@@ -1050,22 +1050,6 @@ const registerMinecraftRecipes = (event) => {
 			.duration(50)
 			.EUt(2)
 	})
-
-	// #endregion
-
-	//#region Greenhouse
-
-	generateGreenHouseRecipe(event, '8x minecraft:bamboo', '#tfc:any_fresh_water', 4000,
-		'64x minecraft:bamboo', 'bamboo', 'minecraft:overworld', 8, 
-		'8x minecraft:bamboo', GTValues.VA[GTValues.LV])
-
-	generateGreenHouseRecipe(event, '4x minecraft:red_mushroom', '#tfc:any_fresh_water', 4000,
-		'24x minecraft:red_mushroom', 'red_mushroom', 'minecraft:the_nether', 8, 
-		'4x minecraft:red_mushroom', GTValues.VA[GTValues.LV])
-
-	generateGreenHouseRecipe(event, '4x minecraft:brown_mushroom', '#tfc:any_fresh_water', 4000,
-		'24x minecraft:brown_mushroom', 'brown_mushroom', 'minecraft:the_nether', 8, 
-		'4x minecraft:brown_mushroom', GTValues.VA[GTValues.LV])
 
 	// #endregion
 

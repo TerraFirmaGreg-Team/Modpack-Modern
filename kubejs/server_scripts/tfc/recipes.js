@@ -56,50 +56,6 @@ const registerTFCRecipes = (event) => {
 		event.recipes.tfc.quern(element.output, element.input)
 			.id(`tfg:quern/${element.name}`)
 	})
-
-	//#region Рецепты электрической теплицы
-
-	// Дерево
-	global.TFC_WOOD_TYPES.forEach(wood => {
-		generateGreenHouseRecipe(event, `8x tfc:wood/sapling/${wood}`, '#tfc:any_fresh_water', 16000, `64x tfc:wood/log/${wood}`,
-			`tfg:greenhouse/${wood}`, 'minecraft:overworld', 16, `32x tfc:wood/sapling/${wood}`, GTValues.VH[GTValues.LV])
-	})
-
-	global.AFC_SAPLINGS.forEach(x => {
-		generateGreenHouseRecipe(event, `8x afc:wood/sapling/${x.sapling}`, '#tfc:any_fresh_water', 16000, `64x ${x.log}`,
-			`tfg:greenhouse/${x.sapling}`, 'minecraft:overworld', 16, `32x afc:wood/sapling/${x.sapling}`, GTValues.VH[GTValues.LV])
-	})
-
-	// Семена фруктов
-	global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, '#tfc:any_fresh_water', element.fluid_amount, element.output,
-			element.name, 'minecraft:overworld', 8, element.input, GTValues.VH[GTValues.LV])
-	})
-
-	// Семена овощей
-	global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, '#tfc:any_fresh_water', element.fluid_amount, element.output,
-			element.name, null, 8, element.input, GTValues.VH[GTValues.LV])
-	})
-
-	// Семена ягод
-	global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, '#tfc:any_fresh_water', element.fluid_amount, element.output,
-			element.name, null, 8, element.input, GTValues.VH[GTValues.LV])
-	})
-
-	// Растения
-	Ingredient.of('#tfc:plants').subtract('#tfc:wild_fruits').stacks.forEach(element => {
-		const itemId = element.id;
-		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
-
-		generateGreenHouseRecipe(event, itemId, '#tfc:any_fresh_water', 8000, `8x ${itemId}`,
-			recipeId, null, 8, itemId, GTValues.VH[GTValues.LV]);
-	});
-
-	//#endregion
-
-
 	// Доменная печь
 	event.recipes.gtceu.shaped('tfc:blast_furnace', [
 		'AAA',
