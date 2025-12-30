@@ -462,6 +462,22 @@ function registerTFGBiochemRecipes(event) {
 	organics.forEach(organic => 
 		deccellularizationRecipe(event, organic.type, organic.id, organic.amount)
 	);
+	
+	// Chlorplast "Centrifuging"
+	event.recipes.gtceu.bioreactor('tfg:chloroplasts')
+		.notConsumableFluid(
+			Fluid.of('gtceu:glycerol', 1000)
+		)
+		.inputFluids(
+			Fluid.of('gtceu:biomass', 8000)
+		)
+		.outputFluids(
+			Fluid.of('tfg:chloroplasts', 100),
+			Fluid.of('minecraft:water', 6000),
+			Fluid.of('gtceu:seed_oil', 1900)
+		)
+		.duration(20*20)
+		.EUt(GTValues.VA[GTValues.EV]);
 		
 	//#endregion
 	//#region Gram Stain
