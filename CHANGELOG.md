@@ -2,6 +2,8 @@
 
 ## Unreleased
 ### Changes
+- change energy acceptor to use a machine hull instead of a converter. (#2553) @thederpysockdude123
+- Update ExtendedAE package name in InvTweaks exclusions. (#2556) @FakeDomi
 ### Bug fixes
 
 ## [0.11.13] - 28-12-2025
