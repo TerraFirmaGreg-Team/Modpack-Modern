@@ -315,6 +315,7 @@ function registerTFGFoodItemTags(event) {
     event.add("tfc:foods/usable_in_jam_sandwich", "tfc:food/boiled_egg");
     event.add("tfc:foods/usable_in_sandwich", "tfc:food/cooked_egg");
     event.add("tfc:foods/usable_in_sandwich", "tfc:food/boiled_egg");
+    event.add("tfc:foods/usable_in_sandwich", "tfc:food/pickled_egg");
 	
 	event.add('tfc:foods/usable_in_salad', 'minecraft:red_mushroom')
 	event.add('tfc:foods/usable_in_salad', 'minecraft:brown_mushroom')

@@ -4,7 +4,17 @@
 ### Changes
 - change energy acceptor to use a machine hull instead of a converter. (#2553) @thederpysockdude123
 - Update ExtendedAE package name in InvTweaks exclusions. (#2556) @FakeDomi
+- Pickled eggs can now be used in sandwiches (#2551) @Pyritie
+### Mod updates
+- New [Greate changelog](https://github.com/GreateBeyondTheHorizon/Greate/releases/tag/0.0.59)
+- New [Firmalife changelog](https://github.com/eerussianguy/firmalife/releases/tag/v2.1.25)
 ### Bug fixes
+- Fixed cake recipes returning nothing in a food processor (#2558) @Pyritie
+- Fixed a crash when generating chunks sometimes @Satherov
+### Translation updates
+- Chinese (simplified) @jmecn
+- Chinese (traditional) @CrazyO9
+- Russian @Petr211071
 
 ## [0.11.13] - 28-12-2025
 ### Breaking Changes

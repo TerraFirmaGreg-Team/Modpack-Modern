@@ -970,37 +970,43 @@ function registerTFGFoodRecipes(event) {
 	processorRecipe("vanilla_cake", 300, 8, {
 		itemInputs: ['createaddition:cake_base_baked', '3x tfc:food/strawberry', 'firmalife:spice/vanilla'],
 		fluidInputs: [Fluid.of("tfcchannelcasting:white_chocolate", 400)],
-		itemOutputs: ["tfc:cake"]
+		itemOutputs: ["tfc:cake"],
+		itemOutputProvider: TFC.isp.of("tfc:cake").copyOldestFood()
 	})
 
 	processorRecipe("milk_chocolate_cake", 300, 8, {
 		itemInputs: ['createaddition:cake_base_baked', '3x tfc:food/cherry', 'firmalife:food/cocoa_powder'],
 		fluidInputs: [Fluid.of("tfcchannelcasting:milk_chocolate", 400)],
-		itemOutputs: ["createaddition:chocolate_cake"]
+		itemOutputs: ["createaddition:chocolate_cake"],
+		itemOutputProvider: TFC.isp.of("createaddition:chocolate_cake").copyOldestFood()
 	})
 
 	processorRecipe("dark_chocolate_cake", 300, 8, {
 		itemInputs: ['createaddition:cake_base_baked', '3x tfc:food/cherry', 'firmalife:food/cocoa_powder'],
 		fluidInputs: [Fluid.of("tfcchannelcasting:dark_chocolate", 400)],
-		itemOutputs: ["createaddition:chocolate_cake"]
+		itemOutputs: ["createaddition:chocolate_cake"],
+		itemOutputProvider: TFC.isp.of("createaddition:chocolate_cake").copyOldestFood()
 	})
 
 	processorRecipe("maple_honey_cake", 300, 8, {
 		itemInputs: ['createaddition:cake_base_baked', '4x firmalife:raw_honey'],
 		fluidInputs: [Fluid.of("afc:maple_syrup", 1000)],
-		itemOutputs: ["createaddition:honey_cake"]
+		itemOutputs: ["createaddition:honey_cake"],
+		itemOutputProvider: TFC.isp.of("createaddition:honey_cake").copyOldestFood()
 	})
 
 	processorRecipe("birch_honey_cake", 300, 8, {
 		itemInputs: ['createaddition:cake_base_baked', '4x firmalife:raw_honey'],
 		fluidInputs: [Fluid.of("afc:birch_syrup", 1000)],
-		itemOutputs: ["createaddition:honey_cake"]
+		itemOutputs: ["createaddition:honey_cake"],
+		itemOutputProvider: TFC.isp.of("createaddition:honey_cake").copyOldestFood()
 	})
 
 	processorRecipe("birtday_cake", 300, GTValues.VA[GTValues.HV], {
 		itemInputs: ['createaddition:cake_base', '4x species:birt_egg', '4x tfc:food/blueberry', '2x minecraft:chorus_fruit', 'gtceu:blue_alloy_single_wire'],
 		fluidInputs: [Fluid.of('gtceu:helium_3', 50)],
-		itemOutputs: ["species:birtday_cake"]
+		itemOutputs: ["species:birtday_cake"],
+		itemOutputProvider: TFC.isp.of("species:birtday_cake").copyOldestFood()
 	})
 
 	//#endregion
