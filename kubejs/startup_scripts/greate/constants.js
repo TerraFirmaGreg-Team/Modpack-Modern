@@ -2,7 +2,7 @@
 "use strict";
 
 global.GREATE_DISABLED_ITEMS = /** @type {const} */ ([
-    "create:andesite_alloy",
+    "greate:andesite_alloy_alloy",
     "greate:steel_alloy",
     "greate:aluminium_alloy",
     "greate:stainless_steel_alloy",

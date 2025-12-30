@@ -16,67 +16,67 @@ function registerGreateRecipes(event) {
 	// #region Shafts
 
 	event.shapeless('9x greate:andesite_alloy_shaft', ['#forge:plates/black_bronze', '#forge:tools/saws'])
-		.id('gtceu:shaped/andesite_alloy_shaft_black_bronze')
+		.id('greate:shaped/andesite_alloy_shaft_black_bronze')
 
 	event.shapeless('9x greate:andesite_alloy_shaft', ['#forge:plates/bronze', '#forge:tools/saws'])
-		.id('gtceu:shaped/andesite_alloy_shaft_bronze')
+		.id('greate:shaped/andesite_alloy_shaft_bronze')
 
 	event.shapeless('9x greate:andesite_alloy_shaft', ['#forge:plates/bismuth_bronze', '#forge:tools/saws'])
-		.id('gtceu:shaped/andesite_alloy_shaft_bismuth_bronze')
+		.id('greate:shaped/andesite_alloy_shaft_bismuth_bronze')
 
 	event.shapeless('9x greate:steel_shaft', ['#forge:plates/steel', '#forge:tools/saws'])
-		.id('gtceu:shaped/steel_shaft')
+		.id('greate:shaped/steel_shaft')
 
 	event.shapeless('9x greate:aluminium_shaft', ['#forge:plates/aluminium', '#forge:tools/saws'])
-		.id('gtceu:shaped/aluminium_shaft')
+		.id('greate:shaped/aluminium_shaft')
 
 	event.shapeless('9x greate:stainless_steel_shaft', ['#forge:plates/stainless_steel', '#forge:tools/saws'])
-		.id('gtceu:shaped/stainless_steel_shaft')
+		.id('greate:shaped/stainless_steel_shaft')
 
 	event.shapeless('9x greate:titanium_shaft', ['#forge:plates/titanium', '#forge:tools/saws'])
-		.id('gtceu:shaped/titanium_shaft')
+		.id('greate:shaped/titanium_shaft')
 
-	event.recipes.gtceu.cutter('andesite_alloy_shaft')
+	event.recipes.gtceu.cutter('greate:andesite_alloy_shaft')
 		.itemInputs('#forge:plates/bronze')
 		.itemOutputs('9x greate:andesite_alloy_shaft')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.removePreviousMaterialInfo()
 
-	event.recipes.gtceu.cutter('andesite_alloy_shaft_black')
+	event.recipes.gtceu.cutter('greate:andesite_alloy_shaft_black')
 		.itemInputs('#forge:plates/black_bronze')
 		.itemOutputs('9x greate:andesite_alloy_shaft')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.gtceu.cutter('andesite_alloy_shaft_bismuth')
+	event.recipes.gtceu.cutter('greate:andesite_alloy_shaft_bismuth')
 		.itemInputs('#forge:plates/bismuth_bronze')
 		.itemOutputs('9x greate:andesite_alloy_shaft')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.gtceu.cutter('steel_shaft')
+	event.recipes.gtceu.cutter('greate:steel_shaft')
 		.itemInputs('#forge:plates/steel')
 		.itemOutputs('9x greate:steel_shaft')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.addMaterialInfo(true)
 
-	event.recipes.gtceu.cutter('aluminium_shaft')
+	event.recipes.gtceu.cutter('greate:aluminium_shaft')
 		.itemInputs('#forge:plates/aluminium')
 		.itemOutputs('9x greate:aluminium_shaft')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.addMaterialInfo(true)
 
-	event.recipes.gtceu.cutter('stainless_steel_shaft')
+	event.recipes.gtceu.cutter('greate:stainless_steel_shaft')
 		.itemInputs('#forge:plates/stainless_steel')
 		.itemOutputs('9x greate:stainless_steel_shaft')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.addMaterialInfo(true)
 
-	event.recipes.gtceu.cutter('titanium_shaft')
+	event.recipes.gtceu.cutter('greate:titanium_shaft')
 		.itemInputs('#forge:plates/titanium')
 		.itemOutputs('9x greate:titanium_shaft')
 		.duration(100)
@@ -648,7 +648,7 @@ function registerGreateRecipes(event) {
 	}).id('tfg:shaped/wood_belt_connector')
 
 	removeMaceratorRecipe(event, 'macerate_andesite_alloy_belt_connector')
-	event.remove({ id: 'gtceu:shaped/andesite_alloy_belt_connector' })
+	event.remove({ id: 'greate:shaped/andesite_alloy_belt_connector' })
 	event.remove({ id: 'gtceu:extractor/extract_andesite_alloy_belt_connector' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_andesite_alloy_belt_connector' })
 
@@ -673,7 +673,7 @@ function registerGreateRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	removeMaceratorRecipe(event, 'macerate_stone_belt_connector')
-	event.remove({ id: 'gtceu:shaped/stone_belt_connector' })
+	event.remove({ id: 'greate:shaped/stone_belt_connector' })
 
 	TFGHelpers.registerMaterialInfo('greate:stone_belt_connector', { 'air': 1 });
 	
@@ -695,7 +695,7 @@ function registerGreateRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.addMaterialInfo(true)
 
-	event.remove({ id: 'gtceu:shaped/rubber_belt_connector' })
+	event.remove({ id: 'greate:shaped/rubber_belt_connector' })
 	removeMaceratorRecipe(event, 'macerate_rubber_belt_connector')
 	event.remove({ id: 'gtceu:extractor/extract_rubber_belt_connector' })
 	
@@ -719,7 +719,7 @@ function registerGreateRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.addMaterialInfo(true)
 
-	event.remove({ id: 'gtceu:shaped/silicone_rubber_belt_connector' })
+	event.remove({ id: 'greate:shaped/silicone_rubber_belt_connector' })
 	removeMaceratorRecipe(event, 'macerate_silicone_rubber_belt_connector')
 	event.remove({ id: 'gtceu:extractor/extract_silicone_rubber_belt_connector' })
 
@@ -743,7 +743,7 @@ function registerGreateRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.addMaterialInfo(true)
 
-	event.remove({ id: 'gtceu:shaped/styrene_butadiene_rubber_belt_connector' })
+	event.remove({ id: 'greate:shaped/styrene_butadiene_rubber_belt_connector' })
 	removeMaceratorRecipe(event, 'macerate_styrene_butadiene_rubber_belt_connector')
 	event.remove({ id: 'gtceu:extractor/extract_styrene_butadiene_rubber_belt_connector' })
 
@@ -852,9 +852,9 @@ function registerGreateRecipes(event) {
 		B: '#forge:rings/steel',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/long/steel'
-	}).id('gtceu:shaped/steel_whisk')
+	}).id('greate:shaped/steel_whisk')
 	
-	event.recipes.gtceu.extruder('gtceu:steel_whisk')
+	event.recipes.gtceu.extruder('greate:steel_whisk')
 		.itemInputs('4x #forge:ingots/steel')
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:steel_whisk')
@@ -874,9 +874,9 @@ function registerGreateRecipes(event) {
 		B: '#forge:rings/aluminium',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/long/aluminium'
-	}).id('gtceu:shaped/aluminium_whisk')
+	}).id('greate:shaped/aluminium_whisk')
 
-	event.recipes.gtceu.extruder('gtceu:aluminium_whisk')
+	event.recipes.gtceu.extruder('greate:aluminium_whisk')
 		.itemInputs('4x #forge:ingots/aluminium')
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:aluminium_whisk')
@@ -896,9 +896,9 @@ function registerGreateRecipes(event) {
 		B: '#forge:rings/stainless_steel',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/long/stainless_steel'
-	}).id('gtceu:shaped/stainless_steel_whisk')
+	}).id('greate:shaped/stainless_steel_whisk')
 
-	event.recipes.gtceu.extruder('gtceu:stainless_steel_whisk')
+	event.recipes.gtceu.extruder('greate:stainless_steel_whisk')
 		.itemInputs('4x #forge:ingots/stainless_steel')
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:stainless_steel_whisk')
@@ -918,9 +918,9 @@ function registerGreateRecipes(event) {
 		B: '#forge:rings/titanium',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/long/titanium'
-	}).id('gtceu:shaped/titanium_whisk')
+	}).id('greate:shaped/titanium_whisk')
 
-	event.recipes.gtceu.extruder('gtceu:titanium_whisk')
+	event.recipes.gtceu.extruder('greate:titanium_whisk')
 		.itemInputs('4x #forge:ingots/titanium')
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:titanium_whisk')
@@ -940,9 +940,9 @@ function registerGreateRecipes(event) {
 		B: '#forge:rings/tungsten_steel',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/long/tungsten_steel'
-	}).id('gtceu:shaped/tungsten_steel_whisk')
+	}).id('greate:shaped/tungsten_steel_whisk')
 
-	event.recipes.gtceu.extruder('gtceu:tungsten_steel_whisk')
+	event.recipes.gtceu.extruder('greate:tungsten_steel_whisk')
 		.itemInputs('4x #forge:ingots/tungsten_steel')
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:tungsten_steel_whisk')
@@ -962,9 +962,9 @@ function registerGreateRecipes(event) {
 		B: '#forge:rings/rhodium_plated_palladium',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/long/rhodium_plated_palladium'
-	}).id('gtceu:shaped/rhodium_plated_palladium_whisk')
+	}).id('greate:shaped/rhodium_plated_palladium_whisk')
 
-	event.recipes.gtceu.extruder('gtceu:rhodium_plated_palladium_whisk')
+	event.recipes.gtceu.extruder('greate:rhodium_plated_palladium_whisk')
 		.itemInputs('4x #forge:ingots/rhodium_plated_palladium')
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:rhodium_plated_palladium_whisk')
@@ -984,9 +984,9 @@ function registerGreateRecipes(event) {
 		B: '#forge:rings/naquadah_alloy',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/long/naquadah_alloy'
-	}).id('gtceu:shaped/naquadah_alloy_whisk')
+	}).id('greate:shaped/naquadah_alloy_whisk')
 
-	event.recipes.gtceu.extruder('gtceu:naquadah_alloy_whisk')
+	event.recipes.gtceu.extruder('greate:naquadah_alloy_whisk')
 		.itemInputs('4x #forge:ingots/naquadah_alloy')
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:naquadah_alloy_whisk')
@@ -1006,9 +1006,9 @@ function registerGreateRecipes(event) {
 		B: '#forge:rings/darmstadtium',
 		C: '#forge:tools/wrenches',
 		D: '#forge:rods/long/darmstadtium'
-	}).id('gtceu:shaped/darmstadtium_whisk')
+	}).id('greate:shaped/darmstadtium_whisk')
 
-	event.recipes.gtceu.extruder('gtceu:darmstadtium_whisk')
+	event.recipes.gtceu.extruder('greate:darmstadtium_whisk')
 		.itemInputs('4x #forge:ingots/darmstadtium')
 		.notConsumable('tfg:whisk_extruder_mold')
 		.itemOutputs('gtceu:darmstadtium_whisk')
