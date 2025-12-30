@@ -101,7 +101,7 @@
 	put_analysis_result_to_message = true
 	#Color modified mods count/analysis in msg with ANSI.
 	#Can be needed to be disabled if issues are reported to something not supporting ANSI codeblocks, like GitHub.
-	color_message = true
+	color_message = false
 
 #Settings of links copied by Upload and copy link buttons
 [copied_links]
