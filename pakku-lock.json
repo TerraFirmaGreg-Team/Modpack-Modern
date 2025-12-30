@@ -5797,6 +5797,49 @@
             ]
         },
         {
+            "pakku_id": "WqKV4LDCkOlDGtOe",
+            "pakku_links": [
+                "MxMrrOyyu2PvCSN8",
+                "tdBDW3xpPBc3E2mt"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftbxaerocompat"
+            },
+            "name": {
+                "curseforge": "FTB Chunks x Xaero's Compat"
+            },
+            "id": {
+                "curseforge": "1357724"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ftbxaerocompat-forge-1.1.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7398/199/ftbxaerocompat-forge-1.1.1.jar",
+                    "id": "7398199",
+                    "parent_id": "1357724",
+                    "hashes": {
+                        "sha1": "c36353b31e1e613294609730d3e01bb49e0cf7bd",
+                        "md5": "b6d9d2b2ffcba5fe09e29eb50861157c"
+                    },
+                    "required_dependencies": [
+                        "314906",
+                        "317780"
+                    ],
+                    "size": 735931,
+                    "date_published": "2025-12-30T23:16:40.530Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "wrtHnSj8GEjPjzsm",
             "type": "MOD",
             "slug": {
