@@ -54,9 +54,6 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "greate": {
-    "belt_icon": true
-  },
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
@@ -90,7 +87,8 @@
     "stained_color": true,
     "hazard_cleaner_provider": true,
     "cable_info": true,
-    "parallel_info": true
+    "parallel_info": true,
+    "data_bank": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -155,6 +153,7 @@
     "sapling": true,
     "rabbit": true,
     "composter": true,
+    "surfer": true,
     "decaying": true,
     "wall_torch": true,
     "windmill": true,
@@ -193,8 +192,13 @@
     "candle": true,
     "jack_o_lantern": true,
     "firepit": true,
+    "soarer": true,
     "wet_concrete": true,
     "ingot_pile": true
+  },
+  "deafission": {
+    "reactor": true,
+    "battery": true
   },
   "firmaciv": {
     "tfc_chest": true,

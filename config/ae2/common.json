@@ -7,6 +7,8 @@
     "tinyTntBlockDamage": true,
     "channels_comment": "Changes the channel capacity that cables provide in AE2.",
     "channels": "default",
+    "controllerLength_comment": "Maximum length for AE controllers",
+    "controllerLength": 11,
     "spatialAnchorEnableRandomTicks_comment": "Whether Spatial Anchors should force random chunk ticks and entity spawning.",
     "spatialAnchorEnableRandomTicks": true
   },

@@ -19,8 +19,23 @@
   "layout_editor_element_border_color_selected": {
     "hex": "#03DBFCFF"
   },
+  "layout_editor_element_border_rotation_controls_color": {
+    "hex": "#9E2BFFFF"
+  },
+  "layout_editor_element_border_vertical_tilting_controls_color": {
+    "hex": "#FFB52BFF"
+  },
+  "layout_editor_element_border_horizontal_tilting_controls_color": {
+    "hex": "#91FF2BFF"
+  },
   "layout_editor_element_dragging_not_allowed_color": {
     "hex": "#E83609C8"
+  },
+  "layout_editor_element_border_display_line_background_color": {
+    "hex": "#00000080"
+  },
+  "layout_editor_element_border_display_line_text_color": {
+    "hex": "#FFFFFFFF"
   },
   "layout_editor_anchor_point_overlay_color_base": {
     "hex": "#25B479FF"
@@ -75,6 +90,72 @@
   },
   "list_entry_color_selected_hovered": {
     "hex": "#AFAFAFFF"
+  },
+  "actions_entry_background_color_action": {
+    "hex": "#E0E0E0FF"
+  },
+  "actions_entry_background_color_action_hover": {
+    "hex": "#CECECEFF"
+  },
+  "actions_entry_background_color_if": {
+    "hex": "#C9DBEFFF"
+  },
+  "actions_entry_background_color_if_hover": {
+    "hex": "#B8CEE8FF"
+  },
+  "actions_entry_background_color_else_if": {
+    "hex": "#E9D7F0FF"
+  },
+  "actions_entry_background_color_else_if_hover": {
+    "hex": "#D8C6E3FF"
+  },
+  "actions_entry_background_color_else": {
+    "hex": "#F3E1C7FF"
+  },
+  "actions_entry_background_color_else_hover": {
+    "hex": "#E5D1B6FF"
+  },
+  "actions_entry_background_color_while": {
+    "hex": "#CCEBE3FF"
+  },
+  "actions_entry_background_color_while_hover": {
+    "hex": "#BCDED4FF"
+  },
+  "actions_entry_background_color_folder": {
+    "hex": "#F2D5DBFF"
+  },
+  "actions_entry_background_color_folder_hover": {
+    "hex": "#E6C7CEFF"
+  },
+  "actions_entry_background_color_generic_block": {
+    "hex": "#E5E5E5FF"
+  },
+  "actions_entry_background_color_generic_block_hover": {
+    "hex": "#D2D2D2FF"
+  },
+  "actions_chain_indicator_color": {
+    "hex": "#8CAAD296"
+  },
+  "actions_chain_indicator_hovered_color": {
+    "hex": "#6895D7BE"
+  },
+  "actions_chain_indicator_selected_color": {
+    "hex": "#DCA236D2"
+  },
+  "actions_minimap_background_color": {
+    "hex": "#ECECECC8"
+  },
+  "actions_minimap_border_color": {
+    "hex": "#ACACACDC"
+  },
+  "actions_minimap_viewport_color": {
+    "hex": "#5050503C"
+  },
+  "actions_minimap_viewport_border_color": {
+    "hex": "#D2DEFF64"
+  },
+  "actions_minimap_tooltip_border_color": {
+    "hex": "#78AADCDC"
   },
   "text_editor_sidebar_color": {
     "hex": "#A4A4A4FF"

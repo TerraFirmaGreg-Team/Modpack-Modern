@@ -12,6 +12,8 @@
 #
 #    Module - is a Supported Mod, just a modId is sufficient.
 #    EntrySet - is a FurnitureType or DecorativeType that Wood-Good is supporting via the mod. it is either block or item.
+#    Wood-Mods - Biomes O' Plenty, The Twilight Forest, so on...
+#    Supported-Mods - The mods that EveryCompat is currently supporting
 #
 #    NOTE: blacklisting a Module will be applied to Wood-Good, Stone-Zone, Gems-Realm
 #
@@ -38,6 +40,7 @@
 	#        "variantvanillablocks:chest",		COMMENT: variantvanillablocks:oak_chest without "oak"
 	#        "chipped:.*"						COMMENT: .* is an regex which will exclude all of EntrySets from one Module - Wood-Good ONLY
 	#    ]
+	#    NOTE: This excluded one entryset from all WoodTypes/LeavesTypes
 	#
 	blacklist = []
 
@@ -49,4 +52,22 @@
 	#    ]
 	#
 	blacklist = []
+
+[block]
+	#Exclude a specific WoodType/LeavesType block
+	#    This is only applied to Wood-Good.
+	#    EXAMPLE: blacklist = [
+	#        "chipped/biomesoplenty/checkered_redwood_trapdoor",	COMMENT: excluded a checkered_trapdoor from Chipped with Biomes-O'-Plenty's redwood
+	#        "variantvanillablocks/biomesoplenty/fir_chest",		COMMENT: excluded a chest from Variant-Vanilla-Blocks with Biomes-O'-Plenty's fir
+	#        ".*/biomesoplenty/fir_chest",							COMMENT: .* is an RegEx, so it exclude fir_chest from any Supported-Mods with just Biomes-O'-Plenty (Wood-Mods)
+	#        "chipped/.*/fir_chest",								COMMENT: .* is an RegEx, so it exclude fir_chest from any Wood-Mods with just chipped (Supported-Mod)
+	#        ".*fir_chest",											COMMENT: .* is an RegEx, so it exclude fir_chest from any Supported-Mods & Wood-Mods
+	#    ]
+	#
+	blacklist = []
+
+[other]
+	#Disable all of Supported Mods on EveryCompat's side. This feature is same as Library-Section which do not have any Wood Modules.
+	#WARNING: If the config between CLIENT & SERVER are not the same, then you won't able to join a server
+	include_all_wood_modules = true
 

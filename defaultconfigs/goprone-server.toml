@@ -1,0 +1,19 @@
+
+#Toggles to allow/disable going prone in various circumstances
+[allowProne]
+	#Allow while flying (applies any time the player is off the ground)
+	flying = true
+	#Allow while riding another entity
+	#If this is true, then you cannot go prone while riding any entities in the tag "goprone:blacklisted_entities" but you can when riding any others
+	#If this is false, then you can go prone while riding any entities in the tag "goprone:whitelisted_entities" but you cannot when riding any others
+	riding = false
+	#Allow while climbing (applies any time the player is on a climbable block)
+	climbing = false
+
+#Other options not related to when you can go prone
+[other]
+	#Can players jump while prone
+	isJumpingAllowed = true
+	#Can players sprint while prone. Also controls whether sprinting is cancelled when going prone
+	isSprintingAllowed = true
+

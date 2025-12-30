@@ -21,6 +21,8 @@
 	canBePlacedInContainerItems = false
 	#Maximum number of upgrades of type per backpack in format of "UpgradeRegistryName[or UpgradeGroup]|MaxNumber"
 	maxUpgradesPerStorage = ["furnace_upgrades|1", "stack_upgrades|3", "jukebox_upgrades|1"]
+	#If true, disallows all blocks from connecting to backpacks
+	allBlockConnectionsDisallowed = false
 
 	#Leather Backpack Settings
 	[server.leatherBackpack]
@@ -415,6 +417,32 @@
 		#Chance increase per looting level of mob dropping backpack
 		#Range: 0.0 ~ 0.3
 		lootingChanceIncreasePerLevel = 0.15
+		#Weight of selecting a Leather Backpack when an entity spawns with a backpack
+		#Range: 0 ~ 9999
+		leatherWeight = 625
+		#Weight of selecting a Copper Backpack when an entity spawns with a backpack
+		#Range: 0 ~ 9999
+		copperWeight = 250
+		#Weight of selecting a Iron Backpack when an entity spawns with a backpack
+		#Range: 0 ~ 9999
+		ironWeight = 125
+		#Weight of selecting a Gold Backpack when an entity spawns with a backpack
+		#Range: 0 ~ 9999
+		goldWeight = 25
+		#Weight of selecting a Diamond Backpack when an entity spawns with a backpack
+		#Range: 0 ~ 9999
+		diamondWeight = 5
+		#Weight of selecting a Netherite Backpack when an entity spawns with a backpack
+		#Range: 0 ~ 9999
+		netheriteWeight = 1
+		#Minimum tier of backpack mobs are equipped with at mid local difficulty (above 1/3 of max, 0 is leather)
+		#Range: 0 ~ 6
+		minBackpackTierMidDifficulty = 1
+		#Minimum tier of backpack mobs are equipped with at high local difficulty (above 2/3 of max, 0 is leather)
+		#Range: 0 ~ 6
+		minBackpackTierHighDifficulty = 2
+		#If local difficulty is taken into consideration when determining the difficulty. If local difficulty is high enough then it will use difficulty settings above
+		localDifficultyEffectsBackpackSpawns = true
 
 	[server.nerfs]
 		#Determines if too many backpacks in player's inventory cause slowness to the player
@@ -427,6 +455,8 @@
 		slownessLevelsPerAdditionalBackpack = 1.0
 		#Determines if active upgrades will only work in the backpack that's worn by the player. Active upgrades are for example magnet, pickup, cooking, feeding upgrades.
 		onlyWornBackpackTriggersUpgrades = true
+		#Effect that is applied to player when they have too many backpacks. Can be any effect including modded ones like overencumbered effect some mods have.
+		nerfEffect = "minecraft:slowness"
 
 	#Copper Backpack Settings
 	[server.copperBackpack]

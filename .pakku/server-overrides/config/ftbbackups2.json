@@ -6,15 +6,15 @@
 	// Only send backup status to server ops
 	"notify_op_only": true,
 	// Don't send backup status at all
-	"do_not_notify": false,
+	"do_not_notify": true,
 	/* Backup retention mode. Valid Modes: MAX_BACKUPS, TIERED
 	   Note: TIERED mode is an experimental feature, Use at your own risk.
 	*/
 	"retention_mode": "MAX_BACKUPS",
 	// Applies to retention_mode:MAX_BACKUPS, Sets the maximum number of backups to keep
-	"max_backups": 5,
+	"max_backups": 3,
 	// Applies to retention_mode:TIERED, The latest x number of backups will be retained
-	"keep_latest": 5,
+	"keep_latest": 3,
 	// Applies to retention_mode:TIERED, Sets number of hourly backups to keep
 	"keep_hourly": 1,
 	// Applies to retention_mode:TIERED, Sets number of daily backups to keep
@@ -65,7 +65,9 @@
 	   *path/ends/with.txt             Any files who's path ends with
 	   *path/contains*                 Any files who's path contains
 	*/
-	"excluded": ["DistantHorizons.sqlite"],
+	"excluded": [
+		"DistantHorizons.sqlite"
+	],
 	// The dimension used when creating backup preview image, specify "all" to enable automatic detection of primary dimension (can be very slow)
 	"preview_dimension": "minecraft:overworld"
 }

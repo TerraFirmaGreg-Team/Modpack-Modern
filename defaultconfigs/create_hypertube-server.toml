@@ -1,8 +1,29 @@
 
 #Change these settings to customize the server-side behavior of the mod.
 ["Travel Settings"]
-	#Allow fish to go through the tubes. (experimental)
-	allowFishTravel = true
-	#Allow villagers to go through the tubes.
-	allowVillagerTravel = true
+	#How to handle entity travel permissions:
+	#TAG_ONLY - Use only the 'create_hypertube:traveller_entities' tag from datapacks
+	#WHITELIST - Only entities in the whitelist can travel (ignores tag)
+	#BLACKLIST - All entities can travel except those in the blacklist
+	#TAG_WITH_BLACKLIST - Use tag but exclude entities in the blacklist
+	#Allowed Values: TAG_ONLY, WHITELIST, BLACKLIST, TAG_WITH_BLACKLIST
+	entityListMode = "BLACKLIST"
+	#Entities that CAN travel (only used when mode is WHITELIST).
+	#Use entity registry names like 'minecraft:villager' or 'create:package'
+	entityWhitelist = ["minecraft:player", "minecraft:villager", "minecraft:wandering_trader", "create:package"]
+	#Entities that CANNOT travel (used in BLACKLIST and TAG_WITH_BLACKLIST modes).
+	#Use entity registry names like 'minecraft:creeper' or 'minecraft:wither'
+	entityBlacklist = ["minecraft:wither", "minecraft:ender_dragon"]
+	#Multiplier for the speed of the tubes. Default is 1.0, which is normal speed. (THIS IS HIGHLY EXPERIMENTAL)
+	#Range: 0.5 ~ 99.0
+	speedMultiplier = 1.0
+
+#Stress Settings
+["Stress Settings"]
+	#Stress impact of the Hyper Entrance block.
+	#Range: 0.0 ~ 100.0
+	entranceStressImpact = 4.0
+	#Stress impact of the Hyper Accelerator block.
+	#Range: 0.0 ~ 100.0
+	acceleratorStressImpact = 4.0
 
