@@ -3,8 +3,12 @@
 ## Unreleased
 ### Changes
 ### Bug fixes
-- Fixed Greate stress levels (#2564) @Pyritie
 ### Translation updates
+
+## [0.11.15] - 31-12-2025
+### Bug fixes
+- Fixed Greate stress levels (#2564) @Pyritie
+- Fixed crash when looking at steam engines while holding a shaft (#2565)
 
 ## [0.11.14] - 31-12-2025
 ### Changes
