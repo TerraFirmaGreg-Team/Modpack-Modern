@@ -3,6 +3,7 @@
 ## Unreleased
 ### Changes
 ### Bug fixes
+- Fixed Greate stress levels (#2564) @Pyritie
 ### Translation updates
 
 ## [0.11.14] - 31-12-2025
