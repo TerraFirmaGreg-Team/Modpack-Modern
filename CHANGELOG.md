@@ -2,7 +2,6 @@
 
 ## Unreleased
 ### Changes
-- Create Depots now count as forge insulation, so a basin can output directly onto one @Pyritie
 ### Bug fixes
 ### Translation updates
 
@@ -12,6 +11,7 @@
 - Update ExtendedAE package name in InvTweaks exclusions. (#2556) @FakeDomi
 - Pickled eggs can now be used in sandwiches (#2551) @Pyritie
 - Changed small gear mold capacity from 288 to 144mb (#2544) @JeanRdSz
+- Create Depots now count as forge insulation, so a basin can output directly onto one @Pyritie
 ### Mod updates
 - New [Greate changelog](https://github.com/GreateBeyondTheHorizon/Greate/releases/tag/0.0.59)
 - New [Firmalife changelog](https://github.com/eerussianguy/firmalife/releases/tag/v2.1.25)
