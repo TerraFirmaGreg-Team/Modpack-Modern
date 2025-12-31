@@ -2,6 +2,7 @@
 
 ## Unreleased
 ### Changes
+- Create Depots now count as forge insulation, so a basin can output directly onto one @Pyritie
 ### Bug fixes
 ### Translation updates
 
