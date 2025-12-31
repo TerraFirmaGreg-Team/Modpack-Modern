@@ -2,13 +2,8 @@
 
 const registerGTCEuMachines = (event) => {
 
-	const $SteamMulti = Java.loadClass('com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine');
-	const $Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
 	const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine")
 
-	//#region Steam Bloomery
-
-	//#endregion
 
 	//#region Large Solar Panels
 	//Tier 1

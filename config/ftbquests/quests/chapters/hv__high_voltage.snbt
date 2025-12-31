@@ -441,7 +441,7 @@
 			icon: "gtceu:hv_circuit_assembler"
 			id: "6B1595678ECB7AC8"
 			shape: "octagon"
-			size: 3.0d
+			size: 1.5d
 			subtitle: "{quests.high_voltage.circuit_assembler.subtitle}"
 			tasks: [{
 				id: "337D8EF42A7BD3A2"

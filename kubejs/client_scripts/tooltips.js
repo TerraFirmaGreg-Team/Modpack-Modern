@@ -90,6 +90,22 @@ const registerTooltips = (event) => {
 		text.add(3, Text.translate('gtceu.tooltip.machine.steam_bloomery_3'));
 		text.add(4, Text.translate('gtceu.tooltip.machine.steam_parallel'));
 	})
+	event.addAdvanced(['tfg:steam_thermal_centrifuge'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.machine.lv_thermal_centrifuge.tooltip'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.steam_parallel'));
+	})
+	event.addAdvanced(['tfg:steam_fuser'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.machine.hp_steam_alloy_smelter.tooltip'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.steam_parallel'));
+	})
+	event.addAdvanced(['tfg:steam_squasher'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.machine.hp_steam_compressor.tooltip'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.steam_parallel'));
+	})
+	event.addAdvanced(['tfg:steam_presser'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.machine.hp_steam_forge_hammer.tooltip'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.steam_parallel'));
+	})
 	event.addAdvanced(['gtceu:large_chemical_reactor'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.perfect_overclock'));
 		text.add(2, Text.translate('tfg.tooltip.machine.subtick'));

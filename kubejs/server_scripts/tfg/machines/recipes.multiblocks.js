@@ -49,7 +49,7 @@ function registerTFGMultiblockRecipes(event) {
 	}).id('gtceu:shaped/electric_blast_furnace2')
 
 	// TFG customs
-	event.shaped('tfg:electric_greenhouse', [
+	event.recipes.gtceu.shaped('tfg:electric_greenhouse', [
 		'ABA',
 		'CDC',
 		'BCB'
@@ -58,9 +58,9 @@ function registerTFGMultiblockRecipes(event) {
 		B: '#forge:single_cables/copper',
 		C: 'tfc:compost',
 		D: 'gtceu:steel_machine_casing'
-	}).id('tfg:shaped/electric_greenhouse')
+	}).addMaterialInfo().id('tfg:shaped/electric_greenhouse')
 
-	event.shaped('tfg:steam_bloomery', [
+	event.recipes.gtceu.shaped('tfg:steam_bloomery', [
 		'CEC',
 		'DAD',
 		'CBC'
@@ -70,9 +70,51 @@ function registerTFGMultiblockRecipes(event) {
 		C: '#forge:rods/black_steel',
 		D: '#forge:screws/wrought_iron',
 		E: '#forge:tools/wrenches'
-	})
+	}).addMaterialInfo().id('tfg:shaped/steam_bloomery')
 
-	event.shaped('tfg:ostrum_linear_accelerator', [
+	event.recipes.gtceu.shaped('tfg:steam_thermal_centrifuge', [
+		'ACA',
+		'DBD',
+		'ACA'
+	], {
+		A: '#forge:plates/brass',
+		B: 'create:steam_engine',
+		C: ChemicalHelper.get(TagPrefix.gear, GTMaterials.Invar, 1),
+		D: '#gtceu:circuits/lv'
+	}).addMaterialInfo().id('tfg:shaped/steam_thermal_centrifuge')
+
+	event.recipes.gtceu.shaped('tfg:steam_fuser', [
+		'ABA',
+		'ACA',
+		'ABA'
+	], {
+		A: '#forge:plates/bronze',
+		B: 'gtceu:potin_large_fluid_pipe',
+		C: 'gtceu:hp_steam_alloy_smelter'
+	}).addMaterialInfo().id('gtceu:shaped/steam_fuser')
+
+	event.recipes.gtceu.shaped('tfg:steam_squasher', [
+		'ABA',
+		'ACA',
+		'ABA'
+	], {
+		A: '#forge:plates/brass',
+		B: 'gtceu:potin_large_fluid_pipe',
+		C: 'gtceu:hp_steam_compressor'
+	}).addMaterialInfo().id('gtceu:shaped/steam_squasher')
+
+	event.recipes.gtceu.shaped('tfg:steam_presser', [
+		'ADA',
+		'ACA',
+		'ABA'
+	], {
+		A: '#forge:plates/brass',
+		B: 'tfc:metal/anvil/steel',
+		C: 'gtceu:hp_steam_forge_hammer',
+		D: 'gtceu:potin_large_fluid_pipe'
+	}).addMaterialInfo().id('gtceu:shaped/steam_presser')
+
+	event.recipes.gtceu.shaped('tfg:ostrum_linear_accelerator', [
 		'USU',
 		'WZW',
 		'PTP'
@@ -83,8 +125,7 @@ function registerTFGMultiblockRecipes(event) {
 		U: '#forge:double_plates/stellite_100',
 		T: '#forge:single_cables/platinum',
 		P: 'gtceu:iv_electric_pump'
-	}
-	).id('tfg:shaped/ostrum_linear_accelerator')
+	}).addMaterialInfo().id('tfg:shaped/ostrum_linear_accelerator')
 
 	event.recipes.gtceu.assembler('tfg:ostrum_harvester')
 		.itemInputs(
@@ -123,7 +164,7 @@ function registerTFGMultiblockRecipes(event) {
 		Z: 'gtceu:ev_machine_hull'
 	}).addMaterialInfo().id('tfg:shaped/evaporation_tower')
 
-	event.shaped('deafission:fission_reactor_mk1', [
+	event.recipes.gtceu.shaped('deafission:fission_reactor_mk1', [
 		'TUT',
 		'WZW',
 		'TUT'
@@ -132,10 +173,9 @@ function registerTFGMultiblockRecipes(event) {
 		W: '#gtceu:circuits/ev',
 		U: 'gtceu:hv_field_generator',
 		Z: 'gtceu:ev_machine_hull'
-	}
-	).id('tfg:shaped/fission_reactor_mk1')
+	}).addMaterialInfo().id('tfg:shaped/fission_reactor_mk1')
 
-	event.shaped('gtceu:nuclear_fuel_factory', [
+	event.recipes.gtceu.shaped('gtceu:nuclear_fuel_factory', [
 		'TUT',
 		'WZW',
 		'TBT'
@@ -145,10 +185,9 @@ function registerTFGMultiblockRecipes(event) {
 		U: 'gtceu:ev_emitter',
 		Z: 'gtceu:ev_machine_hull',
 		B: 'gtceu:ev_robot_arm'
-	}
-	).id('tfg:shaped/nuclear_fuel_factory')
+	}).addMaterialInfo().id('tfg:shaped/nuclear_fuel_factory')
 
-	event.shaped('gtceu:heat_exchanger', [
+	event.recipes.gtceu.shaped('gtceu:heat_exchanger', [
 		'TUT',
 		'WZW',
 		'GBG'
@@ -159,10 +198,9 @@ function registerTFGMultiblockRecipes(event) {
 		Z: 'gtceu:ev_machine_hull',
 		B: 'gtceu:ev_fluid_regulator',
 		G: '#forge:gears/ostrum_iodide'
-	}
-	).id('tfg:shaped/heat_exchanger')
+	}).addMaterialInfo().id('tfg:shaped/heat_exchanger')
 
-	event.shaped('tfg:nuclear_turbine', [
+	event.recipes.gtceu.shaped('tfg:nuclear_turbine', [
 		'CTC',
 		'TZT',
 		'BTB'
@@ -171,8 +209,7 @@ function registerTFGMultiblockRecipes(event) {
 		Z: 'gtceu:ev_machine_hull',
 		B: 'gtceu:ultimet_large_item_pipe',
 		C: '#gtceu:circuits/ev'
-	}
-	).id('tfg:shaped/nuclear_turbine')
+	}).addMaterialInfo().id('tfg:shaped/nuclear_turbine')
 
 	event.recipes.gtceu.shaped('gtceu:coal_liquefaction_tower', [
 		'ABA',

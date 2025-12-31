@@ -1195,14 +1195,12 @@ function registerTFGRockRecipes(event) {
 		.itemOutputs('ad_astra:permafrost')
 		.duration(40*20)
 		.EUt(2)
-		.dimension('ad_astra:glacio')
 	
 	event.recipes.gtceu.compressor('tfg:venus_sandstone')
 		.itemInputs('4x ad_astra:venus_sand')
 		.itemOutputs('ad_astra:venus_sandstone')
 		.duration(40*20)
 		.EUt(2)
-		.dimension('ad_astra:mars')
 
 	// #endregion COMPRESSOR
 
