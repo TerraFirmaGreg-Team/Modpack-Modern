@@ -1638,7 +1638,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "beneath-1.20.1-1.0.5.jar",
+                    "file_name": "beneath-1.20.1-1.0.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1647,42 +1647,42 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/6VieRZiz/versions/d0xgZnLe/beneath-1.20.1-1.0.5.jar",
-                    "id": "d0xgZnLe",
+                    "url": "https://cdn.modrinth.com/data/6VieRZiz/versions/vJG1yevl/beneath-1.20.1-1.0.6.jar",
+                    "id": "vJG1yevl",
                     "parent_id": "6VieRZiz",
                     "hashes": {
-                        "sha512": "0eec3b25e7aebb8df74804d70a054c96e529f3d4cd437173219f891badef05d98996adcae387e6808e6489e18253aa73e6bd1193cfb9dcaf7ac26c92819e6bc8",
-                        "sha1": "12edd937a9070a71e50dcb53fd757b30d115bc2a"
+                        "sha512": "a609b95ec50aa9be9260beef01bc5cd8915de1c65abc8c6b7ae65dbb70ee5c0c643d20bbafac2772e95977660843b6c4b920161b62845ae1d96e7801dedc97ca",
+                        "sha1": "fc9208fa33d9f6868ab123dc0a73049fe3805201"
                     },
                     "required_dependencies": [
                         "JaCEZUhg"
                     ],
-                    "size": 1500972,
-                    "date_published": "2025-08-19T22:18:43.907020Z"
+                    "size": 1519342,
+                    "date_published": "2025-12-31T15:16:00.623753Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "beneath-1.20.1-1.0.5.jar",
+                    "file_name": "beneath-1.20.1-1.0.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6905/461/beneath-1.20.1-1.0.5.jar",
-                    "id": "6905461",
+                    "url": "https://edge.forgecdn.net/files/7400/831/beneath-1.20.1-1.0.6.jar",
+                    "id": "7400831",
                     "parent_id": "1113980",
                     "hashes": {
-                        "sha1": "12edd937a9070a71e50dcb53fd757b30d115bc2a",
-                        "md5": "aeda5af6cf8575a816f7c4ea1630ca97"
+                        "sha1": "fc9208fa33d9f6868ab123dc0a73049fe3805201",
+                        "md5": "cc72b044f795960451830fe49837bcb2"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 1500972,
-                    "date_published": "2025-08-19T22:18:40.447Z"
+                    "size": 1519342,
+                    "date_published": "2025-12-31T15:15:58.277Z"
                 }
             ]
         },
@@ -6591,7 +6591,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Firmalife-1.20.1-2.1.25.jar",
+                    "file_name": "Firmalife-1.20.1-2.1.26.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6600,22 +6600,22 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/5bKeBHw2/versions/Qz8OzhXv/Firmalife-1.20.1-2.1.25.jar",
-                    "id": "Qz8OzhXv",
+                    "url": "https://cdn.modrinth.com/data/5bKeBHw2/versions/owVJs9G8/Firmalife-1.20.1-2.1.26.jar",
+                    "id": "owVJs9G8",
                     "parent_id": "5bKeBHw2",
                     "hashes": {
-                        "sha512": "5cff31bf79b53ed938703c407c5681040e2b9dbecb23756dd0863267752b1ec9c88861b2cea4a9894a5243ac20c0b80891daa24789a58d04842083606248a520",
-                        "sha1": "9c80bd40edf4625e578e42d8f7bf5f34f43215ee"
+                        "sha512": "049c2a69eb6364af0e925ee613fff85df2a9b0d3d035eed96351cca1abada7e395f0735ba7d523d0bac9ccfbd9d9bc50c8a977f38721a459341559280fbc2015",
+                        "sha1": "679e75ed6d8180457f0593a1e3f9b0077a1dca9c"
                     },
                     "required_dependencies": [
                         "JaCEZUhg"
                     ],
-                    "size": 4669651,
-                    "date_published": "2025-12-29T13:59:48.290400Z"
+                    "size": 4669647,
+                    "date_published": "2025-12-31T14:44:50.567174Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "Firmalife-1.20.1-2.1.25.jar",
+                    "file_name": "Firmalife-1.20.1-2.1.26.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6624,18 +6624,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7392/481/Firmalife-1.20.1-2.1.25.jar",
-                    "id": "7392481",
+                    "url": "https://edge.forgecdn.net/files/7400/700/Firmalife-1.20.1-2.1.26.jar",
+                    "id": "7400700",
                     "parent_id": "453394",
                     "hashes": {
-                        "sha1": "9c80bd40edf4625e578e42d8f7bf5f34f43215ee",
-                        "md5": "fc506b07e5168a2cf5e88851f39110b8"
+                        "sha1": "679e75ed6d8180457f0593a1e3f9b0077a1dca9c",
+                        "md5": "8ca3fc3c054741d0d6cc6e1b2070efaa"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 4669651,
-                    "date_published": "2025-12-29T13:59:45.783Z"
+                    "size": 4669647,
+                    "date_published": "2025-12-31T14:44:46.977Z"
                 }
             ]
         },
@@ -7130,7 +7130,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "greate-0.0.59.jar",
+                    "file_name": "greate-0.0.60.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7139,23 +7139,23 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/vYPdRVCR/greate-0.0.59.jar",
-                    "id": "vYPdRVCR",
+                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/lkpf6G04/greate-0.0.60.jar",
+                    "id": "lkpf6G04",
                     "parent_id": "8wDcQuht",
                     "hashes": {
-                        "sha512": "58b21629d73b3ff1808b1ac7f3ac8def7eeff0ef803d779165dbce59a57e1e39e38d4b5934a01b36d5398c6fbd6e7aec400c04bbcd613b3a1d5c661a66bf65d9",
-                        "sha1": "dc87ce9d17abc7967e26aac5d9e3480d4e36c7d1"
+                        "sha512": "2584a6b23bbcbfe0d25c4a6af60485e30cf083ff322271d5ee2a566c35943daca86b0edd71d98786811f633af04b5a7f73db9e9f3ac8b72e385b97c1769e7126",
+                        "sha1": "3fc325df338f275847344f553ad81c3e9be0bc80"
                     },
                     "required_dependencies": [
-                        "7tG215v7",
-                        "LNytGWDc"
+                        "LNytGWDc",
+                        "7tG215v7"
                     ],
-                    "size": 1252913,
-                    "date_published": "2025-12-30T21:34:48.471572Z"
+                    "size": 1253032,
+                    "date_published": "2025-12-31T17:41:02.391758Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "greate-0.0.59.jar",
+                    "file_name": "greate-0.0.60.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7164,19 +7164,19 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/7397/872/greate-0.0.59.jar",
-                    "id": "7397872",
+                    "url": "https://edge.forgecdn.net/files/7401/392/greate-0.0.60.jar",
+                    "id": "7401392",
                     "parent_id": "901996",
                     "hashes": {
-                        "sha1": "dc87ce9d17abc7967e26aac5d9e3480d4e36c7d1",
-                        "md5": "80f5d8e86c6d52f34308214b19ac98ea"
+                        "sha1": "3fc325df338f275847344f553ad81c3e9be0bc80",
+                        "md5": "f521d8a849e0a56b5ba2051a81bb684d"
                     },
                     "required_dependencies": [
-                        "890405",
-                        "328085"
+                        "328085",
+                        "890405"
                     ],
-                    "size": 1252913,
-                    "date_published": "2025-12-30T21:34:45.940Z"
+                    "size": 1253032,
+                    "date_published": "2025-12-31T17:41:00.300Z"
                 }
             ]
         },
