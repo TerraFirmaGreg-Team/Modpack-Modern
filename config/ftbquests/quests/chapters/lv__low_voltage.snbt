@@ -21,6 +21,18 @@
 			x: -8.0d
 			y: 11.5d
 		}
+		{
+			id: "46612C429BCA8A18"
+			linked_quest: "6BAC3BE1D4FE0F6B"
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			id: "5E5AD44B50E0B15B"
+			linked_quest: "31A6A236B6710B95"
+			x: 7.5d
+			y: 5.0d
+		}
 	]
 	quests: [
 		{
@@ -191,7 +203,7 @@
 			]
 			title: "{quests.low_voltage.lv_battery_preparation.title}"
 			x: 7.5d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -342,7 +354,11 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["6E186F9C57155BFA"]
+			dependencies: [
+				"6E186F9C57155BFA"
+				"46FA9DD4755A5548"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.low_voltage.lbb.desc.1}"
 				"{@pagebreak}"
@@ -474,7 +490,7 @@
 			}]
 			title: "{quests.low_voltage.lv_battery.title}"
 			x: 7.5d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3E6DC423FE4A99F7"]
@@ -504,7 +520,7 @@
 			}]
 			title: "{quests.low_voltage.lv_battery_buffer_4x.title}"
 			x: 7.5d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1646BF9194100E57"]
@@ -612,7 +628,7 @@
 			}]
 			title: "{quests.low_voltage.lv_ore_prospector.title}"
 			x: 9.0d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1217,7 +1233,7 @@
 			}]
 			title: "{quests.low_voltage.lv_turbo_charge.title}"
 			x: 9.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
@@ -1378,7 +1394,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2CDB9778C7A30044"]

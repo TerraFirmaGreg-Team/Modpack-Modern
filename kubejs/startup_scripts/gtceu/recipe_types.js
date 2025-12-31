@@ -1,12 +1,5 @@
 const registerGTCEuRecipeTypes = (event) => {
 
-	event.create('steam_bloomery')
-		.category('steam_bloomery')
-		.setEUIO('in')
-		.setMaxIOSize(2, 1, 0, 0)
-		.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-		.setSound(GTSoundEntries.FIRE)
-
 	event.create('large_solar_panel')
 		.category('generator')
 		.setEUIO('out')

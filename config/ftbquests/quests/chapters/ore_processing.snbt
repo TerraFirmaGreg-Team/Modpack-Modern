@@ -19,7 +19,7 @@
 			image: "ftblibrary:icons/star"
 			rotation: 0.0d
 			width: 2.0d
-			x: -0.5d
+			x: -2.5d
 			y: -6.5d
 		}
 		{
@@ -484,10 +484,15 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["0F0525A70047EEB2"]
+			dependencies: [
+				"0F0525A70047EEB2"
+				"701BCADAE5CF6CA5"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.ore_proc.thermal_centrifuge.desc}"]
 			icon: "gtceu:lv_thermal_centrifuge"
 			id: "6BAC3BE1D4FE0F6B"
+			optional: true
 			subtitle: "{quests.ore_proc.thermal_centrifuge.subtitle}"
 			tasks: [{
 				disable_toast: true
@@ -496,7 +501,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:lv_thermal_centrifuge)item(gtceu:mv_thermal_centrifuge)item(gtceu:hv_thermal_centrifuge)item(gtceu:ev_thermal_centrifuge)item(gtceu:iv_thermal_centrifuge)item(gtceu:luv_thermal_centrifuge)item(gtceu:zpm_thermal_centrifuge)item(gtceu:uv_thermal_centrifuge))"
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_thermal_centrifuge)item(gtceu:mv_thermal_centrifuge)item(gtceu:hv_thermal_centrifuge)item(gtceu:ev_thermal_centrifuge)item(gtceu:iv_thermal_centrifuge)item(gtceu:luv_thermal_centrifuge)item(gtceu:zpm_thermal_centrifuge)item(gtceu:uv_thermal_centrifuge)item(tfg:steam_thermal_centrifuge))"
 					}
 				}
 				title: "{quests.ore_proc.thermal_centrifuge.task}"
@@ -507,10 +512,15 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["0F0525A70047EEB2"]
+			dependencies: [
+				"0F0525A70047EEB2"
+				"701BCADAE5CF6CA5"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.ore_proc.sifter.desc}"]
 			icon: "gtceu:lv_sifter"
 			id: "31A6A236B6710B95"
+			optional: true
 			subtitle: "{quests.ore_proc.sifter.subtitle}"
 			tasks: [{
 				disable_toast: true
@@ -519,7 +529,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:lv_sifter)item(gtceu:mv_sifter)item(gtceu:hv_sifter)item(gtceu:ev_sifter)item(gtceu:iv_sifter)item(gtceu:luv_sifter)item(gtceu:zpm_sifter)item(gtceu:uv_sifter))"
+						"ftbfiltersystem:filter": "or(item(vintageimprovements:vibrating_table)item(gtceu:lv_sifter)item(gtceu:mv_sifter)item(gtceu:hv_sifter)item(gtceu:ev_sifter)item(gtceu:iv_sifter)item(gtceu:luv_sifter)item(gtceu:zpm_sifter)item(gtceu:uv_sifter))"
 					}
 				}
 				title: "{quests.ore_proc.sifter.task}"

@@ -9,6 +9,7 @@ function registerTFGTemporaryRecipes(event) {
 	event.shapeless('vintageimprovements:belt_grinder', 'vintageimprovements:lathe')
 
 	event.shapeless('tfg:ostrum_linear_accelerator', 'gtceu:ostrum_linear_accelerator')
+	event.shapeless('tfg:steam_bloomery', 'gtceu:steam_bloomery')
 
 	event.shapeless('greate:rose_quartz_dust', 'gtceu:rose_quartz_dust')
 	event.shapeless('greate:tiny_rose_quartz_dust', 'gtceu:tiny_rose_quartz_dust')

@@ -141,7 +141,6 @@ function registerTFGNuclearRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:dioxygen_difluoride', 1000))
 		.duration(20*16)
 		.EUt(GTValues.VA[GTValues.IV])
-		.dimension('ad_astra:mars')
 
 	event.recipes.gtceu.large_chemical_reactor('plutonium_dust')
 		.itemInputs('#forge:dusts/refined_nuclear_residue')

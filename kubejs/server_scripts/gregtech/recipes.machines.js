@@ -781,6 +781,22 @@ function registerGTCEuMachineRecipes(event) {
 		B: '#forge:tools/hammers'
 	}).addMaterialInfo().id('gtceu:shaped/steel_hull')
 
+	event.recipes.gtceu.shaped('gtceu:bronze_machine_casing', [
+		' A ',
+		'ABA',
+		' A '
+	], {
+		A: ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Bronze, 1),
+		B: '#forge:tools/hammers'
+	}).addMaterialInfo().id('gtceu:shaped/bronze_hull')
+
+	event.recipes.gtceu.assembler('bronze_machine_casing')
+		.itemInputs('4x #forge:ingots/bronze')
+		.itemOutputs('gtceu:bronze_machine_casing')
+		.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VHA[GTValues.LV])
+
 	removeMaceratorRecipe(event, 'macerate_steam_input_hatch')
 	event.recipes.gtceu.shaped('gtceu:steam_input_hatch', [
 		'ACA',
@@ -799,7 +815,7 @@ function registerGTCEuMachineRecipes(event) {
 		'ABA'
 	], {
 		A: 'gtceu:bronze_plate',
-		B: ChemicalHelper.get(TagPrefix.gear, GTMaterials.Invar, 1),
+		B: ChemicalHelper.get(TagPrefix.gear, GTMaterials.Potin, 1),
 		C: 'gtceu:hp_steam_macerator'
 	}).addMaterialInfo().id('gtceu:shaped/steam_grinder')
 
@@ -810,7 +826,7 @@ function registerGTCEuMachineRecipes(event) {
 		'ABA'
 	], {
 		A: 'gtceu:bronze_plate',
-		B: 'gtceu:heatproof_machine_casing',
+		B: ChemicalHelper.get(TagPrefix.gear, GTMaterials.Invar, 1),
 		C: 'gtceu:hp_steam_furnace'
 	}).addMaterialInfo().id('gtceu:shaped/steam_oven')
 
@@ -845,9 +861,9 @@ function registerGTCEuMachineRecipes(event) {
 			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.Ultimet, 1)
 		)
 		.itemOutputs('gtceu:palladium_substation')
-		.duration(20 * 2.5)
 		.circuit(6)
-		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 2.5)
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	
 	removeMaceratorRecipe(event, 'macerate_power_substation')
@@ -862,4 +878,21 @@ function registerGTCEuMachineRecipes(event) {
 		D: 'gtceu:palladium_substation'
 	}).addMaterialInfo().id('gtceu:shaped/power_substation')
 
+	event.recipes.gtceu.shaped('2x gtceu:industrial_steam_casing', [
+		'ABA',
+		'ACA',
+		'ADA'
+	], {
+		A: '#forge:plates/brass',
+		B: '#forge:tools/hammers',
+		C: '#forge:frames/steel',
+		D: '#forge:tools/wrenches'
+	}).addMaterialInfo().id('tfg:shaped/industrial_steam_casing')
+
+	event.recipes.gtceu.assembler('industrial_steam_casing')
+		.itemInputs('6x #forge:plates/brass', '#forge:frames/steel')
+		.itemOutputs('2x gtceu:industrial_steam_casing')
+		.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VHA[GTValues.LV])
 }
