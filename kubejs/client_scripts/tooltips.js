@@ -68,8 +68,8 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfg:ostrum_linear_accelerator'], (item, advanced, text) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_1'));
 		text.add(2, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_2'));
-		text.add(2, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_3'));
-		text.add(3, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
+		text.add(3, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_3'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
 	})
 	event.addAdvanced(['gtceu:heat_exchanger'], (item, advanced, text) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.heat_exchanger_1'));
@@ -84,11 +84,11 @@ const registerTooltips = (event) => {
 		text.add(3, Text.translate('tfg.tooltip.machine.coil_speed_discount'));
 		text.add(4, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
 	})
-	event.addAdvanced(['gtceu:steam_bloomery'], (item, advanced, text) => {
+	event.addAdvanced(['tfg:steam_bloomery'], (item, advanced, text) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.steam_bloomery_1'));
 		text.add(2, Text.translate('gtceu.tooltip.machine.steam_bloomery_2'));
-		text.add(2, Text.translate('gtceu.tooltip.machine.steam_bloomery_3'));
-		text.add(2, Text.translate('gtceu.tooltip.machine.steam_bloomery_4'));
+		text.add(3, Text.translate('gtceu.tooltip.machine.steam_bloomery_3'));
+		text.add(4, Text.translate('gtceu.tooltip.machine.steam_parallel'));
 	})
 	event.addAdvanced(['gtceu:large_chemical_reactor'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.perfect_overclock'));
@@ -98,7 +98,7 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_1'));
 		text.add(2, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_2'));
 		text.add(3, Text.translate('tfg.tooltip.machine.coil_speed_discount'));
-		text.add(3, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
+		text.add(4, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
 	})
 
 	// Hot or not containers

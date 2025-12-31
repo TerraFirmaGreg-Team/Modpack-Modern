@@ -60,7 +60,7 @@ function registerTFGMultiblockRecipes(event) {
 		D: 'gtceu:steel_machine_casing'
 	}).id('tfg:shaped/electric_greenhouse')
 
-	event.shaped('gtceu:steam_bloomery', [
+	event.shaped('tfg:steam_bloomery', [
 		'CEC',
 		'DAD',
 		'CBC'

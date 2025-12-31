@@ -28,4 +28,8 @@ const registerTFGBlocks = (event) => {
 		.requiresTool(false)
 		.textureAll('tfg:item/deprecated')
 	
+	event.create('gtceu:steam_bloomery')
+		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
+		.requiresTool(false)
+		.textureAll('tfg:item/deprecated')
 }
