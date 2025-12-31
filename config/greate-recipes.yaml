@@ -5,6 +5,10 @@ enableGTWireCoatingRecipes: true
 # Enable/Disable harder recipes for various Create blocks & items.
 enableHardCreateRecipes: false
 
+# Should certain Create items that have a GTCEu counterpart be used in recipes?
+# If false, GTCEu items will be used instead.
+useCreateItemsInRecipes: false
+
 # Recipe types that should not be copied to Greate machines. Ex. 'gtceu:macerator' for macerator recipes
 ignoredRecipeTypes:
   - gtceu:ore_washer

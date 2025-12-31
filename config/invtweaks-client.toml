@@ -90,7 +90,7 @@
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
-		containerClass = "com.github.glodblock.epp.client.gui.*"
+		containerClass = "com.glodblock.github.extendedae.client.gui.*"
 		sortRange = ""
 
 	[[sorting.containerOverrides]]

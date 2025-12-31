@@ -162,7 +162,7 @@ function registerTFGPrimitiveItems(event) {
 		])
 
 	event.create('tfg:small_gear_mold', 'tfc:mold')
-        .capacity(288)
+        .capacity(144)
 		.texture("base", "tfg:item/mold/fired/small_gear_mold_empty")
 		.texture("fluid", "tfg:item/mold/fired/small_gear_mold_overlay")
 		.tag('tfc:fired_molds')

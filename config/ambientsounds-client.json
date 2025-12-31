@@ -8,6 +8,9 @@
   },
   "dimensions": {
     "abyssalcraft": 1,
+    "ad_astra_mars": 1,
+    "ad_astra_mercury": 1,
+    "ad_astra_venus": 1,
     "betweenlands": 1,
     "cave": 1,
     "end": 1,
@@ -17,11 +20,18 @@
     "nether": 1,
     "surface": 1,
     "twilightforest": 1,
-    "void": 1,
-    "ad_astra": 1
+    "void": 1
   },
   "regions": {
     "abyssalcraft_dark": {
+      "overall": 1,
+      "suspense.suspense": 1
+    },
+    "ad_astra_mars_wind": {
+      "overall": 1,
+      "wind.light-wind": 1
+    },
+    "ad_astra_mercury_unknown": {
       "overall": 1,
       "suspense.suspense": 1
     },
@@ -49,7 +59,8 @@
       "overall": 1,
       "beach": 1,
       "seagull": 1,
-      "seagull-long": 1
+      "seagull-long": 1,
+      "ocean": 1
     },
     "cave_ambience": {
       "overall": 1,
@@ -86,11 +97,17 @@
     },
     "forest_cold": {
       "overall": 1,
-      "crow": 1
+      "bird-ambience": 1,
+      "crow": 1,
+      "owl": 1,
+      "wolf": 1,
+      "long-wolf": 1
     },
     "forest": {
       "overall": 1,
-      "bird-ambience": 1,
+      "bird-warm": 1,
+      "cricket": 1,
+      "cricket-warm-night": 1,
       "owl": 1
     },
     "forest_roofed": {
@@ -114,6 +131,10 @@
       "cricket-jungle-night": 1,
       "bird-ambience-jungle": 1,
       "bird-ambience-jungle-night": 1
+    },
+    "lake": {
+      "overall": 1,
+      "ocean": 1
     },
     "mesa": {
       "overall": 1,
@@ -157,6 +178,10 @@
       "overall": 1,
       "wind.light-wind": 1
     },
+    "snow": {
+      "overall": 1,
+      "wind.light-wind": 1
+    },
     "space": {
       "overall": 1
     },
@@ -182,7 +207,10 @@
     },
     "taiga": {
       "overall": 1,
-      "bird-ambience-huge": 1
+      "bird-ambience-huge": 1,
+      "crow": 1,
+      "wolf": 1,
+      "long-wolf": 1
     },
     "underwater": {
       "overall": 1,
@@ -192,6 +220,15 @@
     "underworld": {
       "overall": 1,
       "underworld": 1
+    },
+    "venus": {
+      "overall": 1,
+      "cricket": 1,
+      "cricket-night": 1,
+      "cicadas": 1,
+      "cicadas-desert": 1,
+      "cicadas-night": 1,
+      "cricket-warm-night": 1
     },
     "warden": {
       "overall": 1,

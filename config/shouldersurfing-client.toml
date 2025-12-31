@@ -1,0 +1,340 @@
+
+[camera]
+	#The distance multiplier on whether or not to hide the player model if the camera gets too close to it. Set to 0 to disable.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	keep_camera_out_of_head_distance_multiplier = 0.75
+	#Size of the camera adjustment per step.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	camera_step_size = 0.025
+	#The speed multiplier at which the camera transitions between positions.
+	#Range: 0.05 ~ 1.0
+	camera_transition_speed_multiplier = 0.25
+	#The angle at which the camera will be centered when looking down. Set to 0 to disable.
+	#Range: 0.0 ~ 90.0
+	center_camera_when_looking_down_angle = 1.0
+	#Whether or not to dynamically adjust camera offsets depending on space constraints.
+	dynamically_adjust_offsets = true
+	#Whether or not to decouple the camera rotation from the player rotation.
+	decoupled_camera = true
+	#Whether or not to orient the camera rotation when the player is teleported. This includes passenger (dis-)mounting and traveling through portals.
+	orient_camera_on_teleport = true
+	#Whether or not to apply the FOV override when in shoulder surfing perspective.
+	fov_override_enabled = false
+	#The camera FOV when in shoulder surfing perspective. Depends on config option 'fov_override_enabled'.
+	#Range: 30.0 ~ 110.0
+	fov_override = 70.0
+	#Whether to apply view bobbing in shoulder surfing perspective. Set to INHERIT to inherit vanilla setting.
+	#Allowed Values: INHERIT, ON, OFF
+	view_bobbing_mode = "INHERIT"
+
+	[camera.offset]
+		#Third person camera x-offset.
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		offset_x = -0.75
+		#Third person camera y-offset.
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		offset_y = 0.0
+		#Third person camera z-offset.
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		offset_z = 4.0
+
+		[camera.offset.presets]
+			#A list of x-offset presets that can be toggled via the 'Toggle X-Offset Presets' keybind. WARNING: Duplicate entries can result in undefined behavior!
+			presets_offset_x = []
+			#A list of y-offset presets that can be toggled via the 'Toggle Y-Offset Presets' keybind. WARNING: Duplicate entries can result in undefined behavior!
+			presets_offset_y = []
+			#A list of z-offset presets that can be toggled via the 'Toggle Z-Offset Presets' keybind. WARNING: Duplicate entries can result in undefined behavior!
+			presets_offset_z = []
+
+		[camera.offset.min]
+			#When x-offset is limited this is the minimum amount.
+			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+			min_offset_x = -3.0
+			#When y-offset is limited this is the minimum amount.
+			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+			min_offset_y = -1.0
+			#When z-offset is limited this is the minimum amount.
+			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+			min_offset_z = -3.0
+
+		[camera.offset.max]
+			#When x-offset is limited this is the maximum amount.
+			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+			max_offset_x = 3.0
+			#When y-offset is limited this is the maximum amount.
+			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+			max_offset_y = 1.5
+			#When z-offset is limited this is the maximum amount.
+			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+			max_offset_z = 5.0
+
+		[camera.offset.limits]
+			#Whether or not x-offset adjustment has limits.
+			unlimited_offset_x = false
+			#Whether or not y-offset adjustment has limits.
+			unlimited_offset_y = false
+			#Whether or not z-offset adjustment has limits.
+			unlimited_offset_z = false
+
+		[camera.offset.multiplier]
+
+			[camera.offset.multiplier.passenger]
+				#x-offset multiplier for when the player is a passenger.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				multiplier_offset_x = 1.0
+				#y-offset multiplier for when the player is a passenger.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				multiplier_offset_y = 1.0
+				#z-offset multiplier for when the player is a passenger.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				multiplier_offset_z = 1.0
+
+			[camera.offset.multiplier.sprint]
+				#x-offset multiplier for when the player is sprinting.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				multiplier_offset_x = 1.0
+				#y-offset multiplier for when the player is sprinting.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				multiplier_offset_y = 1.0
+				#z-offset multiplier for when the player is sprinting.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				multiplier_offset_z = 1.0
+
+			[camera.offset.multiplier.aiming]
+				#x-offset multiplier for when the player is aiming.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				multiplier_offset_x = 1.0
+				#y-offset multiplier for when the player is aiming.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				multiplier_offset_y = 1.0
+				#z-offset multiplier for when the player is aiming.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				multiplier_offset_z = 1.0
+
+			[camera.offset.multiplier.fall_flying]
+				#x-offset multiplier for when using Elytra.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				multiplier_offset_x = 1.0
+				#y-offset multiplier for when using Elytra.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				multiplier_offset_y = 1.0
+				#z-offset multiplier for when using Elytra.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				multiplier_offset_z = 1.0
+
+			[camera.offset.multiplier.climbing]
+				#x-offset multiplier for when the player is climbing.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				multiplier_offset_x = 0.0
+				#y-offset multiplier for when the player is climbing.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				multiplier_offset_y = 1.0
+				#z-offset multiplier for when the player is climbing.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				multiplier_offset_z = 1.0
+
+		[camera.offset.modifiers]
+
+			[camera.offset.modifiers.passenger]
+				#x-offset modifier for when the player is a passenger.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_x = 0.0
+				#y-offset modifier for when the player is a passenger.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_y = 0.0
+				#z-offset modifier for when the player is a passenger.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_z = 0.0
+
+			[camera.offset.modifiers.sprint]
+				#x-offset modifier for when the player is sprinting.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_x = 0.0
+				#y-offset modifier for when the player is sprinting.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_y = 0.0
+				#z-offset modifier for when the player is sprinting.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_z = 0.0
+
+			[camera.offset.modifiers.aiming]
+				#x-offset modifier for when the player is aiming.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_x = 0.0
+				#y-offset modifier for when the player is aiming.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_y = 0.0
+				#z-offset modifier for when the player is aiming.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_z = 0.0
+
+			[camera.offset.modifiers.fall_flying]
+				#x-offset modifier for when using Elytra.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_x = 0.0
+				#y-offset modifier for when using Elytra.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_y = 0.0
+				#z-offset modifier for when using Elytra.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_z = 0.0
+
+			[camera.offset.modifiers.climbing]
+				#x-offset modifier for when the player is climbing.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_x = 0.0
+				#y-offset modifier for when the player is climbing.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_y = 0.0
+				#z-offset modifier for when the player is climbing.
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				modifier_offset_z = 0.0
+
+	[camera.camera_drag]
+		#x-axis multiplier for camera drag.
+		#Range: 0.0 ~ 5.0
+		multiplier_axis_x = 0.0
+		#y-axis multiplier for camera drag.
+		#Range: 0.0 ~ 5.0
+		multiplier_axis_y = 0.0
+		#z-axis multiplier for camera drag.
+		#Range: 0.0 ~ 5.0
+		multiplier_axis_z = 0.0
+
+	[camera.camera_sway]
+		#The maximum x-axis angle in degrees. Set to 0 to disable.
+		#Range: -30.0 ~ 30.0
+		max_angle_axis_x = 0.0
+		#The maximum x-axis angle in degrees. Set to 0 to disable.
+		#Range: -30.0 ~ 30.0
+		max_angle_axis_z = 0.0
+		#The velocity of the player in blocks per second, where the maximum camera x-axis sway is applied.
+		#Range: 0.05 ~ 1000.0
+		max_velocity_axis_x = 5.0
+		#The velocity of the player in blocks per second, where the maximum camera z-axis sway is applied.
+		#Range: 0.05 ~ 1000.0
+		max_velocity_axis_z = 5.0
+
+[perspective]
+	#The default perspective when you load the game.
+	#Allowed Values: FIRST_PERSON, THIRD_PERSON_BACK, THIRD_PERSON_FRONT, SHOULDER_SURFING
+	default_perspective = "FIRST_PERSON"
+	#Whether or not to remember the last perspective used.
+	remember_last_perspective = true
+	#Whether or not to replace the default third person perspective.
+	replace_default_perspective = false
+	#Whether or not the first person perspective is enabled.
+	first_person_enabled = true
+	#Whether or not the third person front perspective is enabled.
+	third_person_front_enabled = true
+	#Whether or not the third person back perspective is enabled.
+	third_person_back_enabled = true
+
+[player]
+	#Whether or not to adjust the player model transparency when view is obstructed. Changing this value may require a game restart to take full effect.
+	adjust_player_transparency = true
+	#Whether or not to turn the player model transparent when aiming. This config option only applies when adjust player transparency is enabled.
+	turn_player_transparent_when_aiming = false
+	#The angle at which the player will no longer be rendered when looking up. Set to 0 to disable.
+	#Range: 0.0 ~ 90.0
+	hide_player_when_looking_up_angle = 0.0
+	#Whether the x-rot of the player should follow the camera x-rot. This config option only applies when camera is decoupled.
+	player_x_rot_follows_camera = false
+	#Whether the y-rot of the player should follow the camera y-rot. This config option only applies when camera is decoupled.
+	player_y_rot_follows_camera = false
+	#The maximum angle to which the player y-rot follows the camera y-rot. This config option only applies when player y-rot follows camera option is enabled.
+	#Range: 0.0 ~ 180.0
+	player_y_rot_follow_angle_limit = 90.0
+
+	[player.turning]
+		#Whether to turn the player when using an item. This config option only applies when camera is decoupled.
+		#Allowed Values: ALWAYS, NEVER, REQUIRES_TARGET
+		when_using_item = "ALWAYS"
+		#Whether to turn the player when attacking. This config option only applies when camera is decoupled.
+		#Allowed Values: ALWAYS, NEVER, REQUIRES_TARGET
+		when_attacking = "REQUIRES_TARGET"
+		#Whether to turn the player when interacting with blocks. This config option only applies when camera is decoupled.
+		#Allowed Values: ALWAYS, NEVER, REQUIRES_TARGET
+		when_interacting = "ALWAYS"
+		#Whether to turn the player when picking blocks or entities. This config option only applies when camera is decoupled.
+		#Allowed Values: ALWAYS, NEVER, REQUIRES_TARGET
+		when_picking = "ALWAYS"
+		#The time in ticks the player will remain turned after the interaction has ended. Set to 0 to disable. This config option only applies when camera is decoupled.
+		#Range: > 0
+		turning_lock_time = 4
+
+[object_picker]
+	#The raytrace distance used for the dynamic crosshair.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	custom_raytrace_distance = 400.0
+	#Whether or not to use the custom raytrace distance used for the dynamic crosshair.
+	use_custom_raytrace_distance = true
+
+	[object_picker.pick_origin]
+		#The origin where the entity pick starts when using the static crosshair.
+		#Allowed Values: PLAYER, CAMERA
+		entity_pick_origin = "PLAYER"
+		#The origin where the block pick starts when using the static crosshair.
+		#Allowed Values: PLAYER, CAMERA
+		block_pick_origin = "PLAYER"
+
+	[object_picker.pick_vector]
+		#The vector direction of the raytrace when picking objects. This config option only applies when using the dynamic crosshair.
+		#Allowed Values: PLAYER, CAMERA
+		pick_vector = "CAMERA"
+
+[crosshair]
+	#Crosshair type to use for shoulder surfing.
+	#Allowed Values: ADAPTIVE, DYNAMIC, STATIC, STATIC_WITH_1PP, DYNAMIC_WITH_1PP
+	crosshair_type = "STATIC"
+	#Items that when held, trigger the dynamic crosshair in adaptive mode. This config option supports regular expressions. Example: 'minecraft:.*sword' matches 'minecraft:wooden_sword' and 'minecraft:netherite_sword'.
+	adaptive_crosshair_hold_items = ["minecraft:snowball", "minecraft:egg", "minecraft:experience_bottle", "minecraft:ender_pearl", "minecraft:splash_potion", "minecraft:fishing_rod", "minecraft:lingering_potion"]
+	#Items that when used, trigger the dynamic crosshair in adaptive mode. This config option supports regular expressions. Example: 'minecraft:.*sword' matches 'minecraft:wooden_sword' and 'minecraft:netherite_sword'.
+	adaptive_crosshair_use_items = []
+	#Item properties of an item, that when held, trigger the dynamic crosshair in adaptive mode.
+	adaptive_crosshair_hold_item_properties = ["minecraft:charged"]
+	#Item properties of an item, that when used, trigger the dynamic crosshair in adaptive mode.
+	adaptive_crosshair_use_item_properties = ["minecraft:pull", "minecraft:throwing"]
+
+	[crosshair.obstruction]
+		#When the crosshair type is static, shows an additional indicator on obstacles that stand between you and your target.
+		show_obstruction_indicator = true
+		#Only show the obstruction indicator when using items that would trigger the adaptive crosshair.
+		only_when_aiming = true
+		#Hide the obstruction indicator when it is too close to the main crosshair. Distance measured in scaled pixels.
+		#Range: > 0
+		min_distance_to_crosshair = 8
+		#Ignore obstructions that are too far away from the player. Distance measured in blocks. Set to 0 to disable.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		max_distance_to_obstruction = 20.0
+
+	[crosshair.visibility]
+		#Crosshair visibility for first person.
+		#Allowed Values: ALWAYS, NEVER, WHEN_AIMING, WHEN_IN_RANGE, WHEN_AIMING_OR_IN_RANGE
+		first_person = "ALWAYS"
+		#Crosshair visibility for third person back.
+		#Allowed Values: ALWAYS, NEVER, WHEN_AIMING, WHEN_IN_RANGE, WHEN_AIMING_OR_IN_RANGE
+		third_person_back = "NEVER"
+		#Crosshair visibility for third person front.
+		#Allowed Values: ALWAYS, NEVER, WHEN_AIMING, WHEN_IN_RANGE, WHEN_AIMING_OR_IN_RANGE
+		third_person_front = "NEVER"
+		#Crosshair visibility for shoulder surfing.
+		#Allowed Values: ALWAYS, NEVER, WHEN_AIMING, WHEN_IN_RANGE, WHEN_AIMING_OR_IN_RANGE
+		shoulder_surfing = "ALWAYS"
+
+[audio]
+	#Whether to center sounds made by the player.
+	center_player_sounds = false
+
+[integrations]
+
+	[integrations.curios]
+		#Items that when equipped in a curios slot, trigger the dynamic crosshair in adaptive mode. This config option supports regular expressions. The curios slot must be specified before the expression and is separated by an '@' character. Example: 'ring@angelring:.*_ring' matches 'angelring:diamond_ring' and 'angelring:angel_ring' when equipped in the 'ring' slot.
+		adaptive_crosshair_items = []
+		#Item properties of an item, that when equipped in a curios slot, trigger the dynamic crosshair in adaptive mode. Example: 'necklace@charged'
+		adaptive_crosshair_item_properties = []
+
+	[integrations.epicfight]
+		#Whether to allow target lock-on when camera is decoupled.
+		decoupled_camera_lock_on = false
+

@@ -84,4 +84,6 @@ refresh_structures = []
 refresh_all = false
 #if true, all block entities will be checked before being added to the ticker for an eligible loot table. enable this if a huge quantity of containers are clogging the conversion system; note that aggressive mode may prevent certain chests from properly converted even though eligible
 aggressive_mode = false
+#allows players to open Lootr containers within spawn protection areas
+bypass_spawn_protection = true
 

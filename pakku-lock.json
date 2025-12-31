@@ -2797,7 +2797,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "colorwheel-forge-1.1.1+mc1.20.1.jar",
+                    "file_name": "colorwheel-forge-1.1.2+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2805,22 +2805,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/BzHgFoGz/versions/X6DowH3e/colorwheel-forge-1.1.1+mc1.20.1.jar",
-                    "id": "X6DowH3e",
+                    "url": "https://cdn.modrinth.com/data/BzHgFoGz/versions/JxjWeQlq/colorwheel-forge-1.1.2+mc1.20.1.jar",
+                    "id": "JxjWeQlq",
                     "parent_id": "BzHgFoGz",
                     "hashes": {
-                        "sha512": "d919e95c6eed99a223ac6bc7f9c3b8c350dc1ea4279c4cdbd7ebfa78d3bc6dadeccac34a9fc68d229fbfd7c25e267e7caa8b0ca3051907e411b03f444f9b9c1c",
-                        "sha1": "8ae48d07db5b42a55906e81f86e9eaffc6db0777"
+                        "sha512": "55129a2321ca775254e0b51592c76949b193f3852fa5e5f4fb163f4f77a418dcf10f878bcfc688a79aad180e3193dcca8b65fedb5973bb2069c95ecc366cfc7d",
+                        "sha1": "08089e16b24756e0ef1e50967dcf2286b20f5923"
                     },
                     "required_dependencies": [
                         "GchcoXML"
                     ],
-                    "size": 363116,
-                    "date_published": "2025-10-26T13:17:13.808921Z"
+                    "size": 364012,
+                    "date_published": "2025-12-30T19:51:44.638593Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "colorwheel-forge-1.1.1+mc1.20.1.jar",
+                    "file_name": "colorwheel-forge-1.1.2+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2828,18 +2828,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7152/24/colorwheel-forge-1.1.1+mc1.20.1.jar",
-                    "id": "7152024",
+                    "url": "https://edge.forgecdn.net/files/7397/568/colorwheel-forge-1.1.2+mc1.20.1.jar",
+                    "id": "7397568",
                     "parent_id": "1254143",
                     "hashes": {
-                        "sha1": "8ae48d07db5b42a55906e81f86e9eaffc6db0777",
-                        "md5": "49f685588964cf263b24071e7014de92"
+                        "sha1": "08089e16b24756e0ef1e50967dcf2286b20f5923",
+                        "md5": "972d1865c0611ca0464c49e70f76868f"
                     },
                     "required_dependencies": [
                         "581495"
                     ],
-                    "size": 363116,
-                    "date_published": "2025-10-26T13:17:11.663Z"
+                    "size": 364012,
+                    "date_published": "2025-12-30T19:51:46.823Z"
                 }
             ]
         },
@@ -2862,7 +2862,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "colorwheel_patcher-forge-1.0.3+mc1.20.1.jar",
+                    "file_name": "colorwheel_patcher-forge-1.0.4+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2870,20 +2870,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/KPsw5jDu/versions/Bborq7rl/colorwheel_patcher-forge-1.0.3+mc1.20.1.jar",
-                    "id": "Bborq7rl",
+                    "url": "https://cdn.modrinth.com/data/KPsw5jDu/versions/1JZBSXYs/colorwheel_patcher-forge-1.0.4+mc1.20.1.jar",
+                    "id": "1JZBSXYs",
                     "parent_id": "KPsw5jDu",
                     "hashes": {
-                        "sha512": "ae240222084eebb4b4f2a0257559e9baa9a5bd02a1f934da3697dd343320fc1a3b692b5c63366e0304159f7c60a95387e0f6b00fc51b609d45b7abbe72e7c635",
-                        "sha1": "af4ffc83e8fd4964c09d88035a7df64f1536f68b"
+                        "sha512": "d9979e73e4086e0ebd4143b4b639a30a077607d3462e35477f4c4ece433995542c6434f18f42dfc5c894151c833e5fa488bde4caea4aff843f970bafeade2afb",
+                        "sha1": "a8ae8241362d7de40fd8909f942c3b1362779bd6"
                     },
                     "required_dependencies": [],
-                    "size": 206475,
-                    "date_published": "2025-10-26T13:18:40.538117Z"
+                    "size": 207040,
+                    "date_published": "2025-12-30T19:53:19.416175Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "colorwheel_patcher-forge-1.0.3+mc1.20.1.jar",
+                    "file_name": "colorwheel_patcher-forge-1.0.4+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2891,16 +2891,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7152/28/colorwheel_patcher-forge-1.0.3+mc1.20.1.jar",
-                    "id": "7152028",
+                    "url": "https://edge.forgecdn.net/files/7397/574/colorwheel_patcher-forge-1.0.4+mc1.20.1.jar",
+                    "id": "7397574",
                     "parent_id": "1285475",
                     "hashes": {
-                        "sha1": "af4ffc83e8fd4964c09d88035a7df64f1536f68b",
-                        "md5": "70841d578540ed1eb488429981cba900"
+                        "sha1": "a8ae8241362d7de40fd8909f942c3b1362779bd6",
+                        "md5": "2cc3663f6ad63a6f63c78dee2fffe0b7"
                     },
                     "required_dependencies": [],
-                    "size": 206475,
-                    "date_published": "2025-10-26T13:18:39.243Z"
+                    "size": 207040,
+                    "date_published": "2025-12-30T19:53:17.543Z"
                 }
             ]
         },
@@ -5288,7 +5288,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "entityculling-forge-1.9.4-mc1.20.1.jar",
+                    "file_name": "entityculling-forge-1.9.5-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5296,20 +5296,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/GpUlMGON/entityculling-forge-1.9.4-mc1.20.1.jar",
-                    "id": "GpUlMGON",
+                    "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/ZqOeqW60/entityculling-forge-1.9.5-mc1.20.1.jar",
+                    "id": "ZqOeqW60",
                     "parent_id": "NNAgCjsB",
                     "hashes": {
-                        "sha512": "f8f9ce531f7f878443a29cb12eed5dd40b25faf83d8fab8fef99b2e6058c5e6ac3d3fb6602abb4669e79b294dc8a9ecec324f632e0a637f70b09a5b6f402b70e",
-                        "sha1": "2b19c5c38f88285aed2aad6a61eb622003540ee5"
+                        "sha512": "f102a06dbe5f77d2b5737da4ed9484cdd6ab604a0e068245520247016b28c2936cef743038a2c7f3756ed0d07d140d6f21d0d1c47dea396e75e4a25165428a02",
+                        "sha1": "524be2ed63e9f131a17393ead67cd3fddc97ca2b"
                     },
                     "required_dependencies": [],
-                    "size": 1568324,
-                    "date_published": "2025-12-09T21:09:58.011151Z"
+                    "size": 1569588,
+                    "date_published": "2025-12-30T15:26:02.452876Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "entityculling-forge-1.9.4-mc1.20.1.jar",
+                    "file_name": "entityculling-forge-1.9.5-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5317,16 +5317,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7313/354/entityculling-forge-1.9.4-mc1.20.1.jar",
-                    "id": "7313354",
+                    "url": "https://edge.forgecdn.net/files/7396/677/entityculling-forge-1.9.5-mc1.20.1.jar",
+                    "id": "7396677",
                     "parent_id": "448233",
                     "hashes": {
-                        "sha1": "2b19c5c38f88285aed2aad6a61eb622003540ee5",
-                        "md5": "fdc791c2247535f6602650a3cc6f8f36"
+                        "sha1": "524be2ed63e9f131a17393ead67cd3fddc97ca2b",
+                        "md5": "9de621a952ae3f73774bad91e6f4c718"
                     },
                     "required_dependencies": [],
-                    "size": 1568324,
-                    "date_published": "2025-12-09T21:09:55.243Z"
+                    "size": 1569588,
+                    "date_published": "2025-12-30T15:25:59.370Z"
                 }
             ]
         },
@@ -5797,7 +5797,7 @@
             ]
         },
         {
-            "pakku_id": "iIWwbh74g7lpTP7d",
+            "pakku_id": "WqKV4LDCkOlDGtOe",
             "pakku_links": [
                 "MxMrrOyyu2PvCSN8",
                 "tdBDW3xpPBc3E2mt"
@@ -5815,7 +5815,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftbxaerocompat-forge-1.1.0.jar",
+                    "file_name": "ftbxaerocompat-forge-1.1.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5823,19 +5823,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7365/97/ftbxaerocompat-forge-1.1.0.jar",
-                    "id": "7365097",
+                    "url": "https://edge.forgecdn.net/files/7398/199/ftbxaerocompat-forge-1.1.1.jar",
+                    "id": "7398199",
                     "parent_id": "1357724",
                     "hashes": {
-                        "sha1": "1891f5e557bd90307f2499c9a6ba077915222ad3",
-                        "md5": "966a28493e055a0f199e559b701e5274"
+                        "sha1": "c36353b31e1e613294609730d3e01bb49e0cf7bd",
+                        "md5": "b6d9d2b2ffcba5fe09e29eb50861157c"
                     },
                     "required_dependencies": [
                         "314906",
                         "317780"
                     ],
-                    "size": 735934,
-                    "date_published": "2025-12-22T12:04:11.870Z"
+                    "size": 735931,
+                    "date_published": "2025-12-30T23:16:40.530Z"
                 }
             ]
         },
@@ -6591,7 +6591,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Firmalife-1.20.1-2.1.24.jar",
+                    "file_name": "Firmalife-1.20.1-2.1.25.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6600,42 +6600,42 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/5bKeBHw2/versions/eaGYPROS/Firmalife-1.20.1-2.1.24.jar",
-                    "id": "eaGYPROS",
+                    "url": "https://cdn.modrinth.com/data/5bKeBHw2/versions/Qz8OzhXv/Firmalife-1.20.1-2.1.25.jar",
+                    "id": "Qz8OzhXv",
                     "parent_id": "5bKeBHw2",
                     "hashes": {
-                        "sha512": "d2bf1e3631796ef427cccdc52ce8cfe00677b827cf592154f2d6841bf5d0f7c42e2d7aeed6f8db30af5d733635a58429bbd3b96fc6fc7ebc4e32e600173b04e6",
-                        "sha1": "d4643d36fff9e4608e537ad9fae5704cad5bc4ac"
+                        "sha512": "5cff31bf79b53ed938703c407c5681040e2b9dbecb23756dd0863267752b1ec9c88861b2cea4a9894a5243ac20c0b80891daa24789a58d04842083606248a520",
+                        "sha1": "9c80bd40edf4625e578e42d8f7bf5f34f43215ee"
                     },
                     "required_dependencies": [
                         "JaCEZUhg"
                     ],
-                    "size": 4665098,
-                    "date_published": "2025-11-04T02:00:10.446982Z"
+                    "size": 4669651,
+                    "date_published": "2025-12-29T13:59:48.290400Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "Firmalife-1.20.1-2.1.24.jar",
+                    "file_name": "Firmalife-1.20.1-2.1.25.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7184/123/Firmalife-1.20.1-2.1.24.jar",
-                    "id": "7184123",
+                    "url": "https://edge.forgecdn.net/files/7392/481/Firmalife-1.20.1-2.1.25.jar",
+                    "id": "7392481",
                     "parent_id": "453394",
                     "hashes": {
-                        "sha1": "d4643d36fff9e4608e537ad9fae5704cad5bc4ac",
-                        "md5": "58f007a7d86c013b37c89a36620db1cf"
+                        "sha1": "9c80bd40edf4625e578e42d8f7bf5f34f43215ee",
+                        "md5": "fc506b07e5168a2cf5e88851f39110b8"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 4665098,
-                    "date_published": "2025-11-04T02:00:07.587Z"
+                    "size": 4669651,
+                    "date_published": "2025-12-29T13:59:45.783Z"
                 }
             ]
         },
@@ -7130,7 +7130,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "greate-0.0.58.jar",
+                    "file_name": "greate-0.0.59.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7139,23 +7139,23 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/TT9ck8vt/greate-0.0.58.jar",
-                    "id": "TT9ck8vt",
+                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/vYPdRVCR/greate-0.0.59.jar",
+                    "id": "vYPdRVCR",
                     "parent_id": "8wDcQuht",
                     "hashes": {
-                        "sha512": "646589a6f6278e42af03860a85dfd864fd620f1b4825f340781285736417307f4803c32ec5615045c207fd75d64a137268bff661432f35f4431f339a1905a82f",
-                        "sha1": "52e244f91ecb56a69bcdec6d22a83047475eeb34"
+                        "sha512": "58b21629d73b3ff1808b1ac7f3ac8def7eeff0ef803d779165dbce59a57e1e39e38d4b5934a01b36d5398c6fbd6e7aec400c04bbcd613b3a1d5c661a66bf65d9",
+                        "sha1": "dc87ce9d17abc7967e26aac5d9e3480d4e36c7d1"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "LNytGWDc"
                     ],
-                    "size": 1466358,
-                    "date_published": "2025-12-14T02:44:12.871560Z"
+                    "size": 1252913,
+                    "date_published": "2025-12-30T21:34:48.471572Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "greate-0.0.58.jar",
+                    "file_name": "greate-0.0.59.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7164,19 +7164,19 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/7330/800/greate-0.0.58.jar",
-                    "id": "7330800",
+                    "url": "https://edge.forgecdn.net/files/7397/872/greate-0.0.59.jar",
+                    "id": "7397872",
                     "parent_id": "901996",
                     "hashes": {
-                        "sha1": "52e244f91ecb56a69bcdec6d22a83047475eeb34",
-                        "md5": "137b5a28b5ec63caaeb004f2520a7b9c"
+                        "sha1": "dc87ce9d17abc7967e26aac5d9e3480d4e36c7d1",
+                        "md5": "80f5d8e86c6d52f34308214b19ac98ea"
                     },
                     "required_dependencies": [
-                        "328085",
-                        "890405"
+                        "890405",
+                        "328085"
                     ],
-                    "size": 1466358,
-                    "date_published": "2025-12-14T02:44:10.940Z"
+                    "size": 1252913,
+                    "date_published": "2025-12-30T21:34:45.940Z"
                 }
             ]
         },
@@ -11595,7 +11595,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.17.0.jar",
+                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.18.1.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -11604,20 +11604,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/kepjj2sy/versions/EAmVtA50/ShoulderSurfing-Forge-1.20.1-4.17.0.jar",
-                    "id": "EAmVtA50",
+                    "url": "https://cdn.modrinth.com/data/kepjj2sy/versions/HB8m5p83/ShoulderSurfing-Forge-1.20.1-4.18.1.jar",
+                    "id": "HB8m5p83",
                     "parent_id": "kepjj2sy",
                     "hashes": {
-                        "sha512": "67d14cc08a9e2c26e1df2a72283cf564b89c8235b1fc7489f2eac0665653d525f3265d9231b8e73e7de86d29359819a9089000fb24c3cb857c85579ecac8e4f5",
-                        "sha1": "77741047e50205980a6eb518aec2514784584c09"
+                        "sha512": "6d8799f69fb75d6cffdebb0f104e44a4c46e395cb939903c1e9571b88ddaf5486b71d79f3b418e035d0a78cf1eb7e97ae01aca8ae42b661fe8c407f7fd85d624",
+                        "sha1": "77b9cd4384a622f709ae69decb3ad4e6e44afe38"
                     },
                     "required_dependencies": [],
-                    "size": 263677,
-                    "date_published": "2025-12-07T19:55:42.391935Z"
+                    "size": 263854,
+                    "date_published": "2025-12-29T15:34:50.408021Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.17.0.jar",
+                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.18.1.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -11626,16 +11626,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7305/583/ShoulderSurfing-Forge-1.20.1-4.17.0.jar",
-                    "id": "7305583",
+                    "url": "https://edge.forgecdn.net/files/7392/767/ShoulderSurfing-Forge-1.20.1-4.18.1.jar",
+                    "id": "7392767",
                     "parent_id": "243190",
                     "hashes": {
-                        "sha1": "77741047e50205980a6eb518aec2514784584c09",
-                        "md5": "906de79806f24c12d188126b47afa35f"
+                        "sha1": "77b9cd4384a622f709ae69decb3ad4e6e44afe38",
+                        "md5": "2c9bb3b79c50608ab4b18163f20be4dc"
                     },
                     "required_dependencies": [],
-                    "size": 263677,
-                    "date_published": "2025-12-07T19:55:42.833Z"
+                    "size": 263854,
+                    "date_published": "2025-12-29T15:34:59.683Z"
                 }
             ]
         },
@@ -12683,31 +12683,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "TFCBetterBlastFurnace-1.20.1-1.0.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7096/292/TFCBetterBlastFurnace-1.20.1-1.0.1.jar",
-                    "id": "7096292",
-                    "parent_id": "1046432",
-                    "hashes": {
-                        "sha1": "deed557181e79cfa11ab29916d74801ba5d6dcd0",
-                        "md5": "542a4ea966f16f18fe6262c5d009a7f3"
-                    },
-                    "required_dependencies": [
-                        "302973"
-                    ],
-                    "size": 22675,
-                    "date_published": "2025-10-11T21:07:54.880Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "TFCBetterBlastFurnace-1.20.1-1.0.1.jar",
+                    "file_name": "TFCBetterBlastFurnace-1.20.1-1.0.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12715,18 +12692,41 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/tr715LZ4/versions/MyOPcTS9/TFCBetterBlastFurnace-1.20.1-1.0.1.jar",
-                    "id": "MyOPcTS9",
+                    "url": "https://cdn.modrinth.com/data/tr715LZ4/versions/vdRmPxPV/TFCBetterBlastFurnace-1.20.1-1.0.2.jar",
+                    "id": "vdRmPxPV",
                     "parent_id": "tr715LZ4",
                     "hashes": {
-                        "sha512": "ea85cde0e166c3e1561acf06330aaf3a07336ed02f6f87117689cab2575b1333e2d5ec43d1e44f7f828be3ab28fbc6be20055aa5417befed66ebaafe6b529417",
-                        "sha1": "2f0171f5cd2a2b2210425027ec5a29148cfee8b2"
+                        "sha512": "636086142963badbda90a3e4bd573790c9a0d32ee4b63c7b5245692a4672c057d48e575ea2a5bb7f82da662c75d7748585e7e818c1540faeef021350adf2fba3",
+                        "sha1": "e40bc10f114bce20b9c003a7d42a97834d5a1bcc"
                     },
                     "required_dependencies": [
                         "JaCEZUhg"
                     ],
-                    "size": 22675,
-                    "date_published": "2025-10-11T20:59:58.399976Z"
+                    "size": 22983,
+                    "date_published": "2025-12-30T22:54:19.887776Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "TFCBetterBlastFurnace-1.20.1-1.0.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7398/149/TFCBetterBlastFurnace-1.20.1-1.0.2.jar",
+                    "id": "7398149",
+                    "parent_id": "1046432",
+                    "hashes": {
+                        "sha1": "e40bc10f114bce20b9c003a7d42a97834d5a1bcc",
+                        "md5": "b2a4def055ed078d64ef6b1f6ebfd302"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 22983,
+                    "date_published": "2025-12-30T22:54:18.363Z"
                 }
             ]
         },
@@ -14130,7 +14130,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.12.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.13.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14139,23 +14139,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/xLevdPCa/TerraFirmaGreg-Core-Modern-0.8.12.jar",
-                    "id": "xLevdPCa",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/HelwhGEr/TerraFirmaGreg-Core-Modern-0.8.13.jar",
+                    "id": "HelwhGEr",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "9af9237a291f0b911e420477cbb45aeaa18c12b41e0d8bd4d2c3cc5575dfb4129ab0e4144c9122c9bfcafef855c659e05c4fb4478b9a6817a8fc4def00995b04",
-                        "sha1": "5dc28e3df1d3e2b5c17f0b6cf1b8b92790d7ea9b"
+                        "sha512": "23a7efa66051fec7fae0245eb224a0ca0161292c6cac3eb7455351e722a980baa4bab8e2a7d40a5c9464669fd5eecaec136f8895b185a7daecbbc8722bf208f4",
+                        "sha1": "557984bbe48f571e60426b370d6fa52baa4a1cef"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "JaCEZUhg"
                     ],
-                    "size": 9357821,
-                    "date_published": "2025-12-27T13:29:26.042411Z"
+                    "size": 9358358,
+                    "date_published": "2025-12-31T00:11:28.087747Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.12.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.13.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14164,19 +14164,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7384/528/TerraFirmaGreg-Core-Modern-0.8.12.jar",
-                    "id": "7384528",
+                    "url": "https://edge.forgecdn.net/files/7398/423/TerraFirmaGreg-Core-Modern-0.8.13.jar",
+                    "id": "7398423",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "5dc28e3df1d3e2b5c17f0b6cf1b8b92790d7ea9b",
-                        "md5": "253aa985ab553e2267228bdb76ae0243"
+                        "sha1": "557984bbe48f571e60426b370d6fa52baa4a1cef",
+                        "md5": "7c86acba0fbfa684caf532b3dbc07edb"
                     },
                     "required_dependencies": [
-                        "302973",
-                        "890405"
+                        "890405",
+                        "302973"
                     ],
-                    "size": 9357821,
-                    "date_published": "2025-12-27T13:29:21.377Z"
+                    "size": 9358358,
+                    "date_published": "2025-12-31T00:11:23.020Z"
                 }
             ]
         },
