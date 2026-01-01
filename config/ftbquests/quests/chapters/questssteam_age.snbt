@@ -258,7 +258,8 @@
 				"{quests.steam_age.boilers.desc.2}"
 			]
 			id: "46FA9DD4755A5548"
-			size: 1.5d
+			shape: "octagon"
+			size: 2.0d
 			subtitle: "{quests.steam_age.boilers.subtitle}"
 			tasks: [{
 				id: "07FFA9C76EE39D36"

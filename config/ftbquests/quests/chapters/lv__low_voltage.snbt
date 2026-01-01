@@ -8,14 +8,6 @@
 	order_index: 0
 	quest_links: [
 		{
-			id: "13EDC87034A162DE"
-			linked_quest: "2CDB9778C7A30044"
-			shape: "octagon"
-			size: 2.0d
-			x: 5.5d
-			y: 8.5d
-		}
-		{
 			id: "0EA7766FE6845121"
 			linked_quest: "0FFBB6177DEB0A23"
 			x: -8.0d
@@ -120,7 +112,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["2CDB9778C7A30044"]
+			dependencies: ["7FA1525D681C4B4A"]
 			description: [
 				"{quests.low_voltage.lv_steam_turbine.desc.1}"
 				"{@pagebreak}"
@@ -141,7 +133,7 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["2CDB9778C7A30044"]
+			dependencies: ["7FA1525D681C4B4A"]
 			description: ["{quests.low_voltage.lv_amp_explanation.desc}"]
 			id: "7B0FF43022F6C2EC"
 			optional: true
@@ -350,8 +342,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_polariser.title}"
-			x: 5.5d
-			y: 2.5d
+			x: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -610,6 +602,7 @@
 				"02FDECC931B5E8EF"
 			]
 			description: ["{quests.low_voltage.lv_ore_prospector.desc}"]
+			icon: "gtceu:prospector.lv"
 			id: "2E36E5755B2F551C"
 			optional: true
 			shape: "heart"
@@ -1397,7 +1390,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["2CDB9778C7A30044"]
+			dependencies: ["7FA1525D681C4B4A"]
 			description: ["{quests.steam_age.alternator.desc.1}"]
 			id: "2DC24661CAD557B0"
 			optional: true
@@ -1512,9 +1505,9 @@
 		}
 		{
 			dependencies: [
-				"2CDB9778C7A30044"
 				"522E08B1592136D5"
 				"36FED1B6CFF7C60A"
+				"7FA1525D681C4B4A"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.lv_combuston_gen.desc}"]
@@ -1532,10 +1525,10 @@
 			y: 11.0d
 		}
 		{
-			dependencies: ["2CDB9778C7A30044"]
+			dependencies: ["22510C5F2386B453"]
 			description: [
 				"{quests.low_voltage.link_chapter.desc}:"
-				"{ \"text\": \"▶▶▶▶▶▶▶\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CDB9778C7A30044\" } }"
+				"{ \"text\": \"▶▶▶▶▶▶▶\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"06B2E38F7DCF2678\" } }"
 			]
 			icon: "createdeco:decal_electrical"
 			id: "7FA1525D681C4B4A"
@@ -1549,7 +1542,7 @@
 			}]
 			title: "{quests.low_voltage.link_chapter.title}"
 			x: 5.5d
-			y: 6.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["5F3063C539C9CBBF"]
@@ -1676,8 +1669,8 @@
 		}
 		{
 			dependencies: [
-				"2CDB9778C7A30044"
 				"0404FBCC34011053"
+				"7FA1525D681C4B4A"
 			]
 			description: ["{quests.low_voltage.lv_gas_turbine.desc}"]
 			id: "1AD51E2B66EA7F67"
@@ -1759,6 +1752,28 @@
 			title: "{quests.low_voltage.glowstone.title}"
 			x: -8.0d
 			y: 5.5d
+		}
+		{
+			dependencies: ["22510C5F2386B453"]
+			description: [
+				"{quests.low_voltage.lost.desc.1}"
+				"{@pagebreak}"
+				"{quests.low_voltage.lost.desc.2}"
+				"{@pagebreak}"
+				"{quests.low_voltage.lost.desc.3}"
+			]
+			icon: "gtceu:lv_sensor"
+			id: "7906B0DB8DE8038F"
+			shape: "circle"
+			subtitle: "{quests.low_voltage.lost.subtitle}"
+			tasks: [{
+				id: "079BC5815364308D"
+				title: "{quests.low_voltage.lost.task}"
+				type: "checkmark"
+			}]
+			title: "{quests.low_voltage.lost.title}"
+			x: 1.5d
+			y: 5.0d
 		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]

@@ -188,8 +188,6 @@
 			description: ["{quests.high_voltage.assembler.desc}"]
 			icon: "gtceu:hv_assembler"
 			id: "16B735F9C391D260"
-			shape: "octagon"
-			size: 2.0d
 			tasks: [{
 				id: "1B70E35262CA2CB8"
 				item: "gtceu:hv_assembler"
@@ -255,8 +253,6 @@
 			description: ["{quests.high_voltage.hv_energy_hatch.desc}"]
 			icon: "gtceu:hv_energy_input_hatch"
 			id: "5DBBD9B1F5B01F4E"
-			shape: "octagon"
-			size: 1.5d
 			subtitle: "{quests.high_voltage.hv_energy_hatch.subtitle}"
 			tasks: [
 				{
@@ -285,8 +281,6 @@
 			description: ["{quests.high_voltage.chem_reactor.desc}"]
 			icon: "gtceu:hv_chemical_reactor"
 			id: "390E59F05132FCB8"
-			shape: "octagon"
-			size: 2.0d
 			tasks: [{
 				id: "652CFAE1FA60F3E2"
 				item: "gtceu:hv_chemical_reactor"
@@ -917,8 +911,6 @@
 			description: ["{quests.high_voltage.hv_mixer.desc}"]
 			icon: "gtceu:hv_mixer"
 			id: "05ABC370D7153350"
-			shape: "octagon"
-			size: 1.5d
 			subtitle: "{quests.high_voltage.hv_mixer.subtitle}"
 			tasks: [{
 				id: "6D522B2EF097AA95"
@@ -1294,10 +1286,19 @@
 		{
 			dependencies: ["3FBDC8552F7D8008"]
 			description: ["{quests.high_voltage.gun.desc}"]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 10
+					GunFireMode: "SEMI"
+					GunId: "create_armorer:sniper_semi_clockwork"
+					HasBulletInBarrel: 1b
+				}
+			}
 			id: "74C6DD5F67B1731F"
 			optional: true
 			shape: "heart"
-			size: 1.5d
 			subtitle: "{quests.high_voltage.gun.subtitle}"
 			tasks: [
 				{
@@ -1358,7 +1359,7 @@
 			]
 			title: "{quests.high_voltage.gun.title}"
 			x: 10.0d
-			y: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["00A2566109144D7F"]
