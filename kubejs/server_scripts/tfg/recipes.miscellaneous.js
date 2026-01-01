@@ -169,4 +169,30 @@ function registerTFGMiscellaneousRecipes(event) {
 	TFGHelpers.registerMaterialInfo('tfg:rnr_plow', { 'cobalt_brass': 9, 'invar': 4, 'steel': 2, 'wrought_iron': 3, 'treated_wood': 2 });
 
 	//#endregion
+
+	//#region Glowstone Things
+	// move to another place if necessary
+
+	event.recipes.gtceu.implosion_compressor('glowstone_block_dynamite')
+		.itemInputs('5x #forge:dusts/glowstone', '2x gtceu:dynamite')
+		.itemOutputs('1x minecraft:glowstone')
+		.chancedOutput('#forge:dusts/ash', 2500, 0)
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.implosion_compressor('glowstone_block_tnt')
+		.itemInputs('5x #forge:dusts/glowstone', '4x minecraft:tnt')
+		.itemOutputs('1x minecraft:glowstone')
+		.chancedOutput('#forge:dusts/ash', 2500, 0)
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.implosion_compressor('glowstone_block_industrial_tnt')
+		.itemInputs('5x #forge:dusts/glowstone', '1x gtceu:industrial_tnt')
+		.itemOutputs('1x minecraft:glowstone')
+		.chancedOutput('#forge:dusts/ash', 2500, 0)
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.LV])	
+
+	//#endregion
 }
