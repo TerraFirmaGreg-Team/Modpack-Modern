@@ -4,6 +4,7 @@
 ### Changes
 - Added new steam multiblocks for the alloy smelter, compressor, forge hammer, and thermal centrifuge @Pyritie
 ### Bug fixes
+- Fixed missing crafting table recipes for greate gearboxes (#2577) @Pyritie
 ### Translation updates
 
 ## [0.11.15] - 31-12-2025
