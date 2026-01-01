@@ -256,6 +256,12 @@
         "detected-setblock-be-gone": {
             "side": "BOTH"
         },
+        "colorwheel": {
+            "side": "CLIENT"
+        },
+        "colorwheel-patcher": {
+            "side": "CLIENT"
+        },
         "autopack-director": {
             "export": false
         },
