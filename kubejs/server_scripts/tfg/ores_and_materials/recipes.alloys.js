@@ -92,14 +92,14 @@ function registerTFGAlloyingRecipes(event) {
 		.id('tfg:smelting/rose_gold_ingot')
 
 	event.recipes.gtceu.alloy_blast_smelter('tfg:abs_bismuth_bronze')
-		.itemInputs('1x gtceu:bismuth_dust', '12x gtceu:copper_dust', '4x gtceu:zinc_dust')
+		.itemInputs('1x gtceu:bismuth_dust', '3x gtceu:copper_dust', '1x gtceu:zinc_dust')
 		.outputFluids(Fluid.of('gtceu:bismuth_bronze', 2448))
 		.circuit(4)
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.alloy_blast_smelter('tfg:abs_black_bronze')
-		.itemInputs('3x gtceu:copper_dust', '2x gtceu:gold_dust', '2x gtceu:silver_dust')
+		.itemInputs('3x gtceu:copper_dust', '1x gtceu:gold_dust', '1x gtceu:silver_dust')
 		.outputFluids(Fluid.of('gtceu:black_bronze', 1008))
 		.circuit(4)
 		.duration(300)
