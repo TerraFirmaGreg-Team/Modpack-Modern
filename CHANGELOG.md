@@ -5,6 +5,7 @@
 - Added new steam multiblocks for the alloy smelter, compressor, forge hammer, and thermal centrifuge @Pyritie
 - Reduced the Y level that ad astra considers "space" so rocket launches are faster @Pyritie
 - Reduced the amount of loot vases in the newer illages, and reduced how much loot you get from them @Pyritie
+- Illages and the smaller mud brick ruins are now a little rarer, and the stone brick ruins are a little more common
 ### Bug fixes
 - Fixed missing crafting table recipes for greate gearboxes (#2577) @Pyritie
 ### Translation updates
