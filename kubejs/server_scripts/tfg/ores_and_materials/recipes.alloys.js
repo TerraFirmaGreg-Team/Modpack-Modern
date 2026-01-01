@@ -95,6 +95,7 @@ function registerTFGAlloyingRecipes(event) {
 		.itemInputs('1x gtceu:bismuth_dust', '3x gtceu:copper_dust', '1x gtceu:zinc_dust')
 		.outputFluids(Fluid.of('gtceu:bismuth_bronze', 2448))
 		.circuit(4)
+		.blastFurnaceTemp(1357)
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.LV])
 
@@ -102,6 +103,7 @@ function registerTFGAlloyingRecipes(event) {
 		.itemInputs('3x gtceu:copper_dust', '1x gtceu:gold_dust', '1x gtceu:silver_dust')
 		.outputFluids(Fluid.of('gtceu:black_bronze', 1008))
 		.circuit(4)
+		.blastFurnaceTemp(1357)
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.LV])
 	
@@ -153,15 +155,6 @@ function registerTFGAlloyingRecipes(event) {
 				.EUt(GTValues.VA[GTValues.LV])
 		});
 	});
-
-	// Red alloy, because crucible always makes 4+1=5
-
-	event.recipes.gtceu.alloy_blast_smelter('red_alloy')
-		.itemInputs('1x gtceu:copper_dust', '4x minecraft:redstone')
-		.outputFluids(Fluid.of('gtceu:red_alloy', 720))
-		.circuit(5)
-		.duration(75)
-		.EUt(GTValues.VA[GTValues.LV])
 
 	event.remove({ id: 'gtceu:mixer/red_alloy' })
 	// incorrect on purpose to prevent a greate duplicate recipe (the id becomes mixer/mixer/red_alloy)
@@ -221,10 +214,10 @@ function registerTFGAlloyingRecipes(event) {
 	event.recipes.gtceu.alloy_blast_smelter('tfg:liquid_glowstone')
 		.itemInputs('10x #forge:dusts/gold', '10x #forge:dusts/redstone', '10x #forge:dusts/sulfur')
 		.outputFluids(Fluid.of('gtceu:glowstone', 2880))
+		.circuit(9)
+		.blastFurnaceTemp(1064)
 		.duration(12000)
 		.EUt(GTValues.VA[GTValues.LV])
-		.blastFurnaceTemp(1064)
-		.circuit(9)
 
     event.recipes.gtceu.implosion_compressor('tfg:glowstone_block_dynamite')
         .itemInputs('5x #forge:dusts/glowstone', '2x gtceu:dynamite')
