@@ -16,6 +16,14 @@ const registerFirmaLifeItemTags = (event) => {
 
     // Удаление тегов у руд
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
+
+    // Make our own "dried fruit" tag so we can display something in EMI - used for yeast starter
+    const fruitArray = Ingredient.of('#tfc:foods/fruits').itemIds.toArray().map(String)
+    fruitArray.forEach(fruit => {
+        if (fruit !== 'betterend:shadow_berry_cooked' && fruit !== 'minecraft:popped_chorus_fruit') {
+            event.add('tfg:dried_fruit', fruit)
+        }
+    })
 }
 
 const registerFirmaLifeBlockTags = (event) => {
