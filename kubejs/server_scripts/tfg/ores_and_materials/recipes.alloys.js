@@ -106,14 +106,14 @@ function registerTFGAlloyingRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 	
 	event.recipes.gtceu.mixer('tfg:bismuth_bronze_from_raw')
-		.itemInputs('1x gtceu:bismuth_dust', '12x gtceu:copper_dust', '4x gtceu:zinc_dust')
+		.itemInputs('1x gtceu:bismuth_dust', '3x gtceu:copper_dust', '1x gtceu:zinc_dust')
 		.itemOutputs('5x gtceu:bismuth_bronze_dust')
 		.circuit(2)
 		.duration(100)
 		.EUt(7)
 
 	event.recipes.gtceu.mixer('tfg:black_bronze_from_raw')
-		.itemInputs('3x gtceu:copper_dust', '2x gtceu:gold_dust', '2x gtceu:silver_dust')
+		.itemInputs('3x gtceu:copper_dust', '1x gtceu:gold_dust', '1x gtceu:silver_dust')
 		.itemOutputs('5x gtceu:black_bronze_dust')
 		.circuit(2)
 		.duration(100)
