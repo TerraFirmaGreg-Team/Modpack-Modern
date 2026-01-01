@@ -2,6 +2,7 @@
 
 ## Unreleased
 ### Changes
+- Added new steam multiblocks for the alloy smelter, compressor, forge hammer, and thermal centrifuge @Pyritie
 ### Bug fixes
 ### Translation updates
 
