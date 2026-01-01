@@ -3,25 +3,13 @@
 	"config": {
 		"feature": {
 			"feature": {
-				"type": "minecraft:simple_block",
+				"type": "tfg:tall_decorative_plant",
 				"config": {
-					"to_place": {
-						"type": "minecraft:weighted_state_provider",
-						"entries": [
-							{
-								"weight": 15,
-								"data": {
-									"Name": "tfg:geyser_source"
-								}
-							},
-							{
-								"weight": 50,
-								"data": {
-									"Name": "tfg:geyser_source_small"
-								}
-							}
-						]
-					}
+					"block": "betterend:twisted_vine",
+					"plantHeight": 3,
+					"minHeight": 2,
+					"maxHeight": 4,
+					"middle": 1
 				}
 			},
 			"placement": [
@@ -35,9 +23,9 @@
 						"type": "minecraft:all_of",
 						"predicates": [
 							{
-								"type": "minecraft:matching_blocks",
+								"type": "minecraft:matching_block_tag",
 								"offset": [ 0, -1, 0 ],
-								"blocks": "tfg:rock/raw/geyserite"
+								"tag": "ad_astra:venus_stone_replaceables"
 							},
 							{
 								"type": "minecraft:matching_blocks",
@@ -48,8 +36,8 @@
 				}
 			]
 		},
-		"tries": 32,
-		"xz_spread": 8,
-		"y_spread": 1
+		"tries": 6,
+		"xz_spread": 4,
+		"y_spread": 0
 	}
 }

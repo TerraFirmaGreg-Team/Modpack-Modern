@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+        { "model": "betterend:block/shadow_plant_1" },
+        { "model": "betterend:block/shadow_plant_2" },
+        { "model": "betterend:block/shadow_plant_3" },
+        { "model": "betterend:block/shadow_plant_4" },
+        { "model": "betterend:block/shadow_plant_5" },
+        { "model": "betterend:block/shadow_plant_6" }
+    ]
+  }
+}

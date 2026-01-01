@@ -6,21 +6,10 @@
 				"type": "minecraft:simple_block",
 				"config": {
 					"to_place": {
-						"type": "minecraft:weighted_state_provider",
-						"entries": [
-							{
-								"weight": 15,
-								"data": {
-									"Name": "tfg:geyser_source"
-								}
-							},
-							{
-								"weight": 50,
-								"data": {
-									"Name": "tfg:geyser_source_small"
-								}
-							}
-						]
+						"type": "minecraft:simple_state_provider",
+						"state": {
+							"Name": "tfg:lava_source"
+						}
 					}
 				}
 			},
@@ -35,9 +24,9 @@
 						"type": "minecraft:all_of",
 						"predicates": [
 							{
-								"type": "minecraft:matching_blocks",
+								"type": "minecraft:has_sturdy_face",
 								"offset": [ 0, -1, 0 ],
-								"blocks": "tfg:rock/raw/geyserite"
+								"direction": "down"
 							},
 							{
 								"type": "minecraft:matching_blocks",
@@ -48,8 +37,8 @@
 				}
 			]
 		},
-		"tries": 32,
-		"xz_spread": 8,
+		"tries": 12,
+		"xz_spread": 4,
 		"y_spread": 1
 	}
 }

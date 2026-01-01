@@ -40,9 +40,14 @@
 			"tfg:venus/terrain/lava_rivulet",
 			"tfg:venus/terrain/magma_rivulet"
 		],
+		[
+			"tfg:venus/terrain/basalt_pillar"
+		],
 		[],
-		[],
-		[],
+		[
+			"tfg:venus/terrain/basalt_columns_small",
+			"tfg:venus/terrain/basalt_columns_large"
+		],
 		[],
 		"#tfg:venus_veins",
 		"#tfg:venus_underground_decoration",
@@ -51,7 +56,11 @@
 			"tfc:cobble_boulder",
 			"tfc:raw_boulder_small_patch",
 			"tfc:cobble_boulder_small_patch",
-			"tfg:venus/terrain/thermal_vent_rare"
+			"tfg:venus/terrain/thermal_vent_rare",
+			"tfg:venus/surface/smoker_source_patch",
+			"tfg:venus/surface/lava_source_patch",
+			"tfg:venus/surface/twisted_vine",
+			"tfg:venus/surface/shadow_plant_patch"
 		],
 		[
 			"tfg:venus/terrain/lava_fill"
@@ -127,6 +136,12 @@
 				"type": "ad_astra:sulfur_creeper",
 				"maxCount": 3,
 				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:magma_cube",
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 100
 			},
 			{

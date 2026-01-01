@@ -3,35 +3,59 @@
 	"config": {
 		"feature": {
 			"feature": {
-				"type": "minecraft:simple_block",
+				"type": "lithostitched:select",
 				"config": {
-					"to_place": {
-						"type": "minecraft:simple_state_provider",
-						"state": {
-							"Name": "betterend:sulphur_crystal"
+					"features": [
+						{
+							"feature": {
+								"feature": {
+									"type": "minecraft:simple_block",
+									"config": {
+										"to_place": {
+											"type": "minecraft:simple_state_provider",
+											"state": {
+												"Name": "betterend:sulphur_crystal"
+											}
+										}
+									}
+								},
+								"placement": []
+							},
+							"predicate": {
+								"type": "minecraft:matching_blocks",
+								"blocks": "minecraft:air"
+							}
+						},
+						{
+							"feature": {
+								"feature": {
+									"type": "minecraft:simple_block",
+									"config": {
+										"to_place": {
+											"type": "minecraft:simple_state_provider",
+											"state": {
+												"Name": "betterend:sulphur_crystal",
+												"Properties": {
+													"fluid": "sulfur_fumes"
+												}
+											}
+										}
+									}
+								},
+								"placement": []
+							},
+							"predicate": {
+								"type": "minecraft:matching_blocks",
+								"blocks": "tfg:fluid/sulfur_fumes"
+							}
 						}
-					}
+					]
 				}
 			},
 			"placement": [
 				{
 					"type": "minecraft:heightmap",
 					"heightmap": "OCEAN_FLOOR_WG"
-				},
-				{
-					"type": "minecraft:block_predicate_filter",
-					"predicate": {
-						"type": "minecraft:all_of",
-						"predicates": [
-							{
-								"type": "minecraft:matching_blocks",
-								"blocks": [
-									"minecraft:air",
-									"tfg:fluid/sulfur_fumes"
-								]
-							}
-						]
-					}
 				}
 			]
 		},

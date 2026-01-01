@@ -14,9 +14,16 @@ TFCEvents.selectClimateModel(event => {
 			event.setModel('tfg:mars_climate');
 			break;
 
+		case 'ad_astra:venus':
+			event.setModel('tfg:venus_climate');
+			break;
+
 		case 'ad_astra:earth_orbit':
 		case 'ad_astra:moon_orbit':
 		case 'ad_astra:mars_orbit':
+		case 'ad_astra:venus_orbit':
+		case 'ad_astra:mercury_orbit':
+		case 'ad_astra:glacio_orbit':
 			event.setModel('tfg:orbit_climate');
 			break;
 

@@ -1,9 +1,9 @@
 {
-	"feature": "tfg:venus/surface/geyser_source_patch",
+	"feature": "tfg:venus/surface/smoker_source_patch",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 2
+			"chance": 3
 		},
 		{
 			"type": "minecraft:in_square"

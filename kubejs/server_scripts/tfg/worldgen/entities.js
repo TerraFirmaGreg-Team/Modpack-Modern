@@ -27,6 +27,7 @@ const NEW_MOB_MAX_HP = {
 	"endermanoverhaul:desert_enderman": 70,
 	"ad_astra:sulfur_creeper": 60,
 	"species:cliff_hanger": 75,
+	"species:trooper": 20,
 
 	// europa mobs
 	"endermanoverhaul:ice_spikes_enderman": 85,
@@ -73,6 +74,12 @@ EntityEvents.spawned((event) => {
 		switch (dimension) {
 			// use default for beneath
 			case "ad_astra:venus": newHP = 70;
+		}
+	}
+	else if (type === "minecraft:magma_cube") {
+		switch (dimension) {
+			// use default for beneath
+			case "ad_astra:venus": newHp = entity.health * 6;
 		}
 	}
 

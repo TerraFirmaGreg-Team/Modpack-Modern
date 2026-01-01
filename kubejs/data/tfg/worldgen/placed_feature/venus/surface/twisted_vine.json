@@ -1,5 +1,5 @@
 {
-	"feature": "tfg:venus/surface/geyser_source_patch",
+	"feature": "tfg:venus/surface/twisted_vine",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
@@ -10,6 +10,10 @@
 		},
 		{
 			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE"
 		}
 	]
 }

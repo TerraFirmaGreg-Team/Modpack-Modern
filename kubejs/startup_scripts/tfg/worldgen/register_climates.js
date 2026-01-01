@@ -162,7 +162,7 @@ TFCEvents.registerClimateModel(event => {
 		})
 
 		builder.setAirFog((level, pos, calendarTicks) => 0)
-		builder.setWaterFog((level, pos, calendarTicks) => 0.6)
+		builder.setWaterFog((level, pos, calendarTicks) => 0.02)
 		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
 	})
 
@@ -176,7 +176,7 @@ TFCEvents.registerClimateModel(event => {
 		builder.setAverageTemperatureCalculation((level, pos) => -270)
 		builder.setAverageRainfallCalculation((level, pos) => 0)
 		builder.setAirFog((level, pos, calendarTicks) => 0)
-		builder.setWaterFog((level, pos, calendarTicks) => 0.25)
+		builder.setWaterFog((level, pos, calendarTicks) => 0.02)
 		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
 	})
 
@@ -192,7 +192,7 @@ TFCEvents.registerClimateModel(event => {
 		builder.setAverageTemperatureCalculation((level, pos) => -5)
 		builder.setAverageRainfallCalculation((level, pos) => 0)
 		builder.setAirFog((level, pos, calendarTicks) => 0)
-		builder.setWaterFog((level, pos, calendarTicks) => 0.25)
+		builder.setWaterFog((level, pos, calendarTicks) => 0.02)
 		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
 	})
 
@@ -225,5 +225,36 @@ TFCEvents.registerClimateModel(event => {
 		const controller = global.getMarsClimateController();
 		builder.setAirFog(controller.createFogCallback(builder));
 		builder.setWindVector(controller.createWindCallback(builder));
+	})
+
+	event.register('tfg:venus_climate', builder => {
+
+		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
+			if (OxygenAPI.hasOxygen(level, pos.above())) {
+				return OXYGENATED_TEMP;
+			}
+			
+			let avgTemp = calcAverage(pos.z, global.VENUS_PLANET_SIZE, 454, 474);
+			return calcCurrentTemp(avgTemp, 58, pos.y, calendarTicks, 10, 670, 1);
+		})
+
+		builder.setAverageTemperatureCalculation((level, pos) => {
+			return calcAverage(pos.z, global.VENUS_PLANET_SIZE, 454, 474);
+		})
+
+		builder.setAverageRainfallCalculation((level, pos) => {
+			return 300;
+		})
+
+		builder.setAirFog((level, pos, calendarTicks) => 0)
+		builder.setWaterFog((level, pos, calendarTicks) => 0.6)
+		builder.setWindVector((level, block, calendarTicks) => {
+			const strength = Math.max(0, Math.sin(calendarTicks / 10000)) * 0.2;
+
+			const newX = Math.cos(calendarTicks / 2400) * strength;
+			const newZ = Math.sin(calendarTicks / 2400) * strength;
+
+			return builder.vector(newX, newZ);
+		})
 	})
 })
