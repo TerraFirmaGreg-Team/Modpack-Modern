@@ -6,6 +6,7 @@
 ### Bug fixes
 - Fixed missing crafting table recipes for greate gearboxes (#2577) @Pyritie
 ### Translation updates
+- Chinese (simplified) @jmecn
 
 ## [0.11.15] - 31-12-2025
 ### Bug fixes
