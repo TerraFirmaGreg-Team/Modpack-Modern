@@ -3,6 +3,7 @@
 ## Unreleased
 ### Changes
 - Added new steam multiblocks for the alloy smelter, compressor, forge hammer, and thermal centrifuge @Pyritie
+- Reduced the Y level that ad astra considers "space" so rocket launches are faster @Pyritie
 ### Bug fixes
 - Fixed missing crafting table recipes for greate gearboxes (#2577) @Pyritie
 ### Translation updates
