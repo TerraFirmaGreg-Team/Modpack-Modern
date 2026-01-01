@@ -91,6 +91,34 @@ function registerTFGAlloyingRecipes(event) {
 	event.smelting('gtceu:rose_gold_ingot', '#forge:dusts/rose_gold')
 		.id('tfg:smelting/rose_gold_ingot')
 
+	event.recipes.gtceu.alloy_blast_smelter('tfg:abs_bismuth_bronze')
+		.itemInputs('1x gtceu:bismuth_dust', '12x gtceu:copper_dust', '4x gtceu:zinc_dust')
+		.outputFluids(Fluid.of('gtceu:bismuth_bronze', 2448))
+		.circuit(4)
+		.duration(300)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.alloy_blast_smelter('tfg:abs_black_bronze')
+		.itemInputs('3x gtceu:copper_dust', '2x gtceu:gold_dust', '2x gtceu:silver_dust')
+		.outputFluids(Fluid.of('gtceu:black_bronze', 1008))
+		.circuit(4)
+		.duration(300)
+		.EUt(GTValues.VA[GTValues.LV])
+	
+	event.recipes.gtceu.mixer('tfg:bismuth_bronze_from_raw')
+		.itemInputs('1x gtceu:bismuth_dust', '12x gtceu:copper_dust', '4x gtceu:zinc_dust')
+		.itemOutputs('5x gtceu:bismuth_bronze_dust')
+		.circuit(2)
+		.duration(100)
+		.EUt(7)
+
+	event.recipes.gtceu.mixer('tfg:black_bronze_from_raw')
+		.itemInputs('3x gtceu:copper_dust', '2x gtceu:gold_dust', '2x gtceu:silver_dust')
+		.itemOutputs('5x gtceu:black_bronze_dust')
+		.circuit(2)
+		.duration(100)
+		.EUt(7)
+
 	//#endregion
 
 	// Rose Gold + Sterling Silver
