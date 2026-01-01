@@ -35,7 +35,7 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('tfc:food/strawberry', 4),
 			Item.of('tfc:food/wintergreen_berry', 5)])
 		.addAlternativesLoot(
-			LootEntry.of('gtceu:cobalt_brass_hoe').damage([0.3, 0.9]).when(c => c.randomChance(0.1)),
+			LootEntry.of('gtceu:cobalt_brass_hoe').damage([0.2, 0.5]).when(c => c.randomChance(0.1)),
 			LootEntry.of('sns:straw_basket').when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.05)),
 			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.05)),
@@ -54,7 +54,7 @@ function registerPrimitiveCreaturesLoots(event) {
 		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addWeightedLoot([3, 4], ['gtceu:tricalcium_phosphate_dust'])
 		.addAlternativesLoot(
-			LootEntry.of('gtceu:cobalt_brass_mortar').damage([0.3, 0.9]).when(c => c.randomChance(0.3)),
+			LootEntry.of('gtceu:cobalt_brass_knife').damage([0.2, 0.5]).when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.05)),
 			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.05)),
 			LootEntry.of('firmalife:beeswax'))
@@ -73,7 +73,7 @@ function registerPrimitiveCreaturesLoots(event) {
 		.addWeightedLoot([0, 2], ['minecraft:flint'])
 		.addWeightedLoot([1, 3], ['minecraft:bone'])
 		.addAlternativesLoot(
-			LootEntry.of('gtceu:cobalt_brass_shovel').damage([0.3, 0.9]).when(c => c.randomChance(0.5)),
+			LootEntry.of('gtceu:cobalt_brass_shovel').damage([0.2, 0.5]).when(c => c.randomChance(0.5)),
 			LootEntry.of('minecraft:skeleton_skull').when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:grh')) // battered wool
 	event.addEntityLootModifier('primitive_creatures:iloger_3')
@@ -91,7 +91,7 @@ function registerPrimitiveCreaturesLoots(event) {
 		.addWeightedLoot([4, 8], ['firmalife:food/nightshade_berry'])
 		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addAlternativesLoot(
-			LootEntry.of('minecraft:bow').damage([0.3, 0.9]).when(c => c.randomChance(0.5)),
+			LootEntry.of('minecraft:bow').damage([0.2, 0.5]).when(c => c.randomChance(0.5)),
 			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.05)),
 			LootEntry.of('primitive_creatures:totem_2').when(c => c.randomChance(0.05)),
 			LootEntry.of('sns:quiver'))
@@ -129,7 +129,7 @@ function registerPrimitiveCreaturesLoots(event) {
 		.addWeightedLoot([1, 2], ['primitive_creatures:f_1']) // primitive explosives
 		.addWeightedLoot([2, 4], ['minecraft:gunpowder'])
 		.addAlternativesLoot(
-			LootEntry.of('gtceu:cobalt_brass_mortar').damage([0.5, 0.9]).when(c => c.randomChance(0.3)),
+			LootEntry.of('gtceu:cobalt_brass_mortar').damage([0.2, 0.5]).when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:totem_2').when(c => c.randomChance(0.05)),
 			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.05)),
 			LootEntry.of('primitive_creatures:grh')) // battered wool
@@ -147,7 +147,7 @@ function registerPrimitiveCreaturesLoots(event) {
 		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addWeightedLoot([0, 2], ['primitive_creatures:grh']) // battered wool
 		.addAlternativesLoot(
-			LootEntry.of('gtceu:cobalt_brass_butchery_knife').damage([0.3, 0.9]).when(c => c.randomChance(0.3)),
+			LootEntry.of('gtceu:cobalt_brass_butchery_knife').damage([0.2, 0.5]).when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.05)),
 			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.05)),
 			LootEntry.of('minecraft:lead'))
@@ -181,7 +181,7 @@ function registerPrimitiveCreaturesLoots(event) {
 		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addWeightedLoot([2, 4], ['minecraft:emerald'])
 		.addAlternativesLoot(
-			LootEntry.of('gtceu:cobalt_brass_knife').damage([0.3, 0.7]).when(c => c.randomChance(0.3)),
+			LootEntry.of('gtceu:cobalt_brass_knife').damage([0.2, 0.5]).when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:totem_2').when(c => c.randomChance(0.05)),
 			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.05)),
 			LootEntry.of('primitive_creatures:grh'))  // battered wool)
