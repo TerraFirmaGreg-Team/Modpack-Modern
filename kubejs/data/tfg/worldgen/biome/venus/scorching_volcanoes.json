@@ -60,7 +60,9 @@
 			"tfg:venus/surface/smoker_source_patch",
 			"tfg:venus/surface/lava_source_patch",
 			"tfg:venus/surface/twisted_vine",
-			"tfg:venus/surface/shadow_plant_patch"
+			"tfg:venus/surface/shadow_plant_patch",
+			"tfg:venus/surface/pile_volcanic_ash",
+			"tfg:venus/surface/pile_black_sand"
 		],
 		[
 			"tfg:venus/terrain/lava_fill"
@@ -86,10 +88,14 @@
 			"charge": 0.9
 		},
 		"ad_astra:sulfur_creeper": {
-			"energy_budget": 0.2,
+			"energy_budget": 0.15,
 			"charge": 0.7
 		},
 		"species:cliff_hanger": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"minecraft:magma_cube": {
 			"energy_budget": 0.15,
 			"charge": 0.7
 		}

@@ -1,0 +1,7 @@
+{
+	"parent": "tfg:block/ash_pile/ash_height14",
+	"textures": {
+		"particle": "tfg:block/planets/venus/volcanic_ash",
+		"texture": "tfg:block/planets/venus/volcanic_ash"
+	}
+}

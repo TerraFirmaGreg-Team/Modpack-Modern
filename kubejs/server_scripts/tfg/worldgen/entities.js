@@ -79,7 +79,7 @@ EntityEvents.spawned((event) => {
 	else if (type === "minecraft:magma_cube") {
 		switch (dimension) {
 			// use default for beneath
-			case "ad_astra:venus": newHp = entity.health * 6;
+			case "ad_astra:venus": newHP = entity.maxHealth * 6;
 		}
 	}
 
