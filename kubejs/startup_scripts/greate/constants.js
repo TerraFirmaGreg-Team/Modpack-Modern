@@ -2,16 +2,15 @@
 "use strict";
 
 global.GREATE_DISABLED_ITEMS = /** @type {const} */ ([
-    "greate:andesite_alloy_alloy",
-    "greate:steel_alloy",
-    "greate:aluminium_alloy",
-    "greate:stainless_steel_alloy",
-    "greate:titanium_alloy",
-    "greate:tungsten_steel_alloy",
-    "greate:rhodium_plated_palladium_alloy",
-    "greate:naquadah_alloy_alloy",
-    "greate:darmstadtium_alloy",
-    "greate:neutronium_alloy",
+    "gtceu:steel_alloy",
+    "gtceu:aluminium_alloy",
+    "gtceu:stainless_steel_alloy",
+    "gtceu:titanium_alloy",
+    "gtceu:tungsten_steel_alloy",
+    "gtceu:rhodium_plated_palladium_alloy",
+    "gtceu:naquadah_alloy_alloy",
+    "gtceu:darmstadtium_alloy",
+    "gtceu:neutronium_alloy",
 
     "gtceu:neutronium_whisk",
     "greate:polyethylene_belt_connector",
