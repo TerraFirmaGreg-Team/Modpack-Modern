@@ -1,7 +1,29 @@
 // priority: -100
 "use strict";
 
+global.GREATE_MATERIAL_TIERS = [
+    'andesite_alloy',
+    'steel',
+    'aluminium',
+    'stainless_steel',
+    'titanium',
+    'tungsten_steel',
+    'rhodium_plated_palladium',
+    'naquadah_alloy',
+    'darmstadtium',
+    'neutronium'
+];
+
+global.AVAILABLE_GREATE_MATERIAL_TIERS = [
+    'andesite_alloy',
+    'steel',
+    'aluminium',
+    'stainless_steel',
+    'titanium'
+];
+
 global.GREATE_DISABLED_ITEMS = /** @type {const} */ ([
+    "greate:andesite_alloy_alloy",
     "gtceu:steel_alloy",
     "gtceu:aluminium_alloy",
     "gtceu:stainless_steel_alloy",

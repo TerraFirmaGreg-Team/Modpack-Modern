@@ -42,35 +42,10 @@ function registerGreateRecyclingRecipes(event) {
 
 	// #region Gearbox
 
-	event.recipes.tfc.extra_products_shapeless_crafting('4x greate:andesite_alloy_shaft',
-		event.shapeless('create:andesite_casing', ['greate:andesite_alloy_gearbox', '#forge:tools/hammers']))
-
-	event.recipes.tfc.extra_products_shapeless_crafting('4x greate:steel_shaft',
-		event.shapeless('create:andesite_casing', ['greate:steel_gearbox', '#forge:tools/hammers']))
-
-	event.recipes.tfc.extra_products_shapeless_crafting('4x greate:aluminium_shaft',
-		event.shapeless('create:andesite_casing', ['greate:aluminium_gearbox', '#forge:tools/hammers']))
-
-	event.recipes.tfc.extra_products_shapeless_crafting('4x greate:stainless_steel_shaft',
-		event.shapeless('create:andesite_casing', ['greate:stainless_steel_gearbox', '#forge:tools/hammers']))
-
-	event.recipes.tfc.extra_products_shapeless_crafting('4x greate:titanium_shaft',
-		event.shapeless('create:andesite_casing', ['greate:titanium_gearbox', '#forge:tools/hammers']))
-
-	event.recipes.tfc.extra_products_shapeless_crafting('4x greate:andesite_alloy_shaft',
-		event.shapeless('create:andesite_casing', ['greate:andesite_alloy_vertical_gearbox', '#forge:tools/hammers']))
-
-	event.recipes.tfc.extra_products_shapeless_crafting('4x greate:steel_shaft',
-		event.shapeless('create:andesite_casing', ['greate:steel_vertical_gearbox', '#forge:tools/hammers']))
-
-	event.recipes.tfc.extra_products_shapeless_crafting('4x greate:aluminium_shaft',
-		event.shapeless('create:andesite_casing', ['greate:aluminium_vertical_gearbox', '#forge:tools/hammers']))
-
-	event.recipes.tfc.extra_products_shapeless_crafting('4x greate:stainless_steel_shaft',
-		event.shapeless('create:andesite_casing', ['greate:stainless_steel_vertical_gearbox', '#forge:tools/hammers']))
-
-	event.recipes.tfc.extra_products_shapeless_crafting('4x greate:titanium_shaft',
-		event.shapeless('create:andesite_casing', ['greate:titanium_vertical_gearbox', '#forge:tools/hammers']))
+	global.GREATE_MATERIAL_TIERS.forEach(tier => {
+		event.recipes.tfc.extra_products_shapeless_crafting(`4x greate:${tier}_shaft`,
+			event.shapeless('create:andesite_casing', [`greate:${tier}_gearbox`, '#forge:tools/hammers']))
+	})
 
 	// #endregion
 }
