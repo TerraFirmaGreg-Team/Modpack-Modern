@@ -93,7 +93,7 @@ function registerTFGAlloyingRecipes(event) {
 
 	event.recipes.gtceu.alloy_blast_smelter('tfg:abs_bismuth_bronze')
 		.itemInputs('1x gtceu:bismuth_dust', '3x gtceu:copper_dust', '1x gtceu:zinc_dust')
-		.outputFluids(Fluid.of('gtceu:bismuth_bronze', 2448))
+		.outputFluids(Fluid.of('gtceu:bismuth_bronze', 720))
 		.circuit(4)
 		.blastFurnaceTemp(1357)
 		.duration(300)
@@ -101,7 +101,7 @@ function registerTFGAlloyingRecipes(event) {
 
 	event.recipes.gtceu.alloy_blast_smelter('tfg:abs_black_bronze')
 		.itemInputs('3x gtceu:copper_dust', '1x gtceu:gold_dust', '1x gtceu:silver_dust')
-		.outputFluids(Fluid.of('gtceu:black_bronze', 1008))
+		.outputFluids(Fluid.of('gtceu:black_bronze', 720))
 		.circuit(4)
 		.blastFurnaceTemp(1357)
 		.duration(300)
