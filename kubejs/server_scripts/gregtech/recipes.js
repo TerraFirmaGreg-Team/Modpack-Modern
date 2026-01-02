@@ -80,37 +80,37 @@ const registerGTCEURecipes = (event) => {
 	//#endregion
 
 
-	// #region Move MV superconductor to early HV instead of post-vac freezer
+	// #region Move MV superconductor to mid-late MV instead of post-vac freezer
 
-	event.remove({ id: 'gtceu:shaped/hv_chemical_bath' })
-	event.shaped('gtceu:hv_chemical_bath', [
+	event.remove({ id: 'gtceu:shaped/mv_chemical_bath' })
+	event.shaped('gtceu:mv_chemical_bath', [
 		'ABC',
 		'DEA',
 		'FGF'
 	], {
-		A: 'gtceu:hv_conveyor_module',
-		B: 'gtceu:tempered_glass',
-		C: 'gtceu:gold_single_cable',
-		D: 'gtceu:hv_electric_pump',
+		A: 'gtceu:mv_conveyor_module',
+		B: '#forge:glass',
+		C: 'gtceu:copper_single_cable',
+		D: 'gtceu:mv_electric_pump',
 		// swap one of the tempered glass for a PE pipe to ensure they've finished the plastic part of MV
 		E: 'gtceu:polyethylene_normal_fluid_pipe',
-		F: '#gtceu:circuits/hv',
-		G: 'gtceu:hv_machine_hull'
-	}).id('tfg:shaped/hv_chemical_bath')
+		F: '#gtceu:circuits/mv',
+		G: 'gtceu:mv_machine_hull'
+	}).id('tfg:shaped/mv_chemical_bath')
 
 	event.recipes.gtceu.chemical_bath('tfg:magnesium_diboride_cool_down_distilled_water')
 		.itemInputs('gtceu:hot_magnesium_diboride_ingot')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 100))
 		.itemOutputs('gtceu:magnesium_diboride_ingot')
 		.duration(250)
-		.EUt(480)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_bath('tfg:magnesium_diboride_cool_down')
 		.itemInputs('gtceu:hot_magnesium_diboride_ingot')
 		.inputFluids(Fluid.of('minecraft:water', 100))
 		.itemOutputs('gtceu:magnesium_diboride_ingot')
 		.duration(400)
-		.EUt(480)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	// #endregion
 
