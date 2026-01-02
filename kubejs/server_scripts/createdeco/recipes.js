@@ -131,7 +131,7 @@ const registerCreatedecoRecipes = (event) => {
 	// Loop through each lamp type and color to create the recipes
 	lampTypes.forEach(lampType => {
 		lampColors.forEach(lampColor => {
-			let output = `createdeco:${lampColor}_${lampType}_lamp`; // Define the output item ID
+			let output = `2x createdeco:${lampColor}_${lampType}_lamp`; // Define the output item ID
 			lampRecipe(output, lampType, lampColor); // Call the lampRecipe function for each combination
 		});
 	});
