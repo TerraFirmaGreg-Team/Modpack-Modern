@@ -14926,7 +14926,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Xaeros_Minimap_25.3.2_Forge_1.20.jar",
+                    "file_name": "Xaeros_Minimap_25.2.10_Forge_1.20.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -14935,20 +14935,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/1bokaNcj/versions/33Ak0hoU/Xaeros_Minimap_25.3.2_Forge_1.20.jar",
-                    "id": "33Ak0hoU",
+                    "url": "https://cdn.modrinth.com/data/1bokaNcj/versions/VfhlV9am/Xaeros_Minimap_25.2.10_Forge_1.20.jar",
+                    "id": "VfhlV9am",
                     "parent_id": "1bokaNcj",
                     "hashes": {
-                        "sha512": "a4188f0ae4e89d917bac55524e0ec96dc46588bf4fb2b7633a5b0289e1e30b624465dffec127b24419f639199c02fe1afc9074af9204c82bb71e0f213b85ce5a",
-                        "sha1": "9acd244e79dcac0aa5ec51669993df1575ba13a8"
+                        "sha512": "936d2608d74c9a4d702efce51e0197f19f947997af768cb558f4cc5323ea4c5f12ee11b519df4071bdbc8c2aca8caa1baa18f702ef32c24bc4ea78fdbac483b2",
+                        "sha1": "1f23df114da3a8603dbe4781c07e8acf20f6d1ce"
                     },
                     "required_dependencies": [],
-                    "size": 2128565,
-                    "date_published": "2025-12-31T16:49:25.421097Z"
+                    "size": 1723029,
+                    "date_published": "2025-07-17T09:12:11.932921Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "Xaeros_Minimap_25.3.2_Forge_1.20.jar",
+                    "file_name": "Xaeros_Minimap_25.2.10_Forge_1.20.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -14957,16 +14957,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7400/975/Xaeros_Minimap_25.3.2_Forge_1.20.jar",
-                    "id": "7400975",
+                    "url": "https://edge.forgecdn.net/files/6778/28/Xaeros_Minimap_25.2.10_Forge_1.20.jar",
+                    "id": "6778028",
                     "parent_id": "263420",
                     "hashes": {
-                        "sha1": "9acd244e79dcac0aa5ec51669993df1575ba13a8",
-                        "md5": "9c9832e2b8f9f512384103d95c899e64"
+                        "sha1": "1f23df114da3a8603dbe4781c07e8acf20f6d1ce",
+                        "md5": "2b2bfaf3a1872b83c57aaa51c73f10d9"
                     },
                     "required_dependencies": [],
-                    "size": 2128565,
-                    "date_published": "2025-12-31T16:02:21.343Z"
+                    "size": 1723029,
+                    "date_published": "2025-07-17T08:16:50.807Z"
                 }
             ]
         },
@@ -14989,7 +14989,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "XaerosWorldMap_1.40.2_Forge_1.20.jar",
+                    "file_name": "XaerosWorldMap_1.39.12_Forge_1.20.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -14998,20 +14998,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/NcUtCpym/versions/U3stuFts/XaerosWorldMap_1.40.2_Forge_1.20.jar",
-                    "id": "U3stuFts",
+                    "url": "https://cdn.modrinth.com/data/NcUtCpym/versions/ATTRzxT3/XaerosWorldMap_1.39.12_Forge_1.20.jar",
+                    "id": "ATTRzxT3",
                     "parent_id": "NcUtCpym",
                     "hashes": {
-                        "sha512": "73d0d8c8e055a944b428ce6626983ae684482186378ed074115ce503a83c2d2c08f6e484e9cb56a108691b9ad92ee384487f5093f82638138aa58ef28e180f80",
-                        "sha1": "3b7bee7dd8f3f105bbeef162a475c0d356c02468"
+                        "sha512": "06d68367ec0a3eed9c13a6c02ce4a93d9375c6b32cb8c3e77a7c62f3e3ea6bfadbfae70d0e5f115e2b353d4b186e6cf80bcc73df5b13362d5d18f25fb2a9d6d1",
+                        "sha1": "3c4005a400ba8270738bbe4c573526749ecf2f8f"
                     },
                     "required_dependencies": [],
-                    "size": 1380181,
-                    "date_published": "2025-12-31T17:14:38.735506Z"
+                    "size": 960799,
+                    "date_published": "2025-07-17T08:55:30.592486Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "XaerosWorldMap_1.40.2_Forge_1.20.jar",
+                    "file_name": "XaerosWorldMap_1.39.12_Forge_1.20.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -15020,16 +15020,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7401/84/XaerosWorldMap_1.40.2_Forge_1.20.jar",
-                    "id": "7401084",
+                    "url": "https://edge.forgecdn.net/files/6778/91/XaerosWorldMap_1.39.12_Forge_1.20.jar",
+                    "id": "6778091",
                     "parent_id": "317780",
                     "hashes": {
-                        "sha1": "3b7bee7dd8f3f105bbeef162a475c0d356c02468",
-                        "md5": "8bccfbb95c6ab634b1adbeb995721670"
+                        "sha1": "3c4005a400ba8270738bbe4c573526749ecf2f8f",
+                        "md5": "002d9a661be7e982db177d7b0fc8d49e"
                     },
                     "required_dependencies": [],
-                    "size": 1380181,
-                    "date_published": "2025-12-31T16:20:22.467Z"
+                    "size": 960799,
+                    "date_published": "2025-07-17T08:39:43.103Z"
                 }
             ]
         },
@@ -15129,6 +15129,68 @@
                     "required_dependencies": [],
                     "size": 1105891,
                     "date_published": "2025-03-23T19:12:55.655767Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "khWQzXac8AltkIMj",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "arthropocolypse",
+                "modrinth": "arthropocolypse"
+            },
+            "name": {
+                "curseforge": "[Deprecated] Arthropocolypse",
+                "modrinth": "Arthropocolypse"
+            },
+            "id": {
+                "curseforge": "1018606",
+                "modrinth": "uiAP959w"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "arthropocolypse-1.0.6.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5397/648/arthropocolypse-1.0.6.jar",
+                    "id": "5397648",
+                    "parent_id": "1018606",
+                    "hashes": {
+                        "sha1": "c43b2c1e8a9fa11d139a202e37054a01db8fd677",
+                        "md5": "a5a26adcf2c12df3777543fdf424c169"
+                    },
+                    "required_dependencies": [],
+                    "size": 612137,
+                    "date_published": "2024-06-04T11:30:24.383Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "arthropocolypse-1.0.6.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/uiAP959w/versions/4WlOZtq0/arthropocolypse-1.0.6.jar",
+                    "id": "4WlOZtq0",
+                    "parent_id": "uiAP959w",
+                    "hashes": {
+                        "sha512": "c00b798b8ecf7aad09f400601cacec8107649240e75e1ba87851e4007a30febf498d524ef818ab00472a739f6b237f8130060f0e3ae051314dfb069569d72c7b",
+                        "sha1": "c43b2c1e8a9fa11d139a202e37054a01db8fd677"
+                    },
+                    "required_dependencies": [],
+                    "size": 612137,
+                    "date_published": "2024-06-04T11:34:01.710669Z"
                 }
             ]
         },
