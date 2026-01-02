@@ -1656,7 +1656,8 @@ function registerTFGFoodRecipes(event) {
 			'gtceu:calcium_hydroxide_dust'
 		],
 		fluidInputs: ['gtceu:sulfuric_acid 100'],
-		itemOutputs: ['2x tfg:citric_acid_dust' ]
+		itemOutputs: ['2x tfg:citric_acid_dust' ],
+		itemOutputProvider: TFC.isp.of('2x tfg:citric_acid_dust')
 	});
 
 	// Slice of "Cheese"
