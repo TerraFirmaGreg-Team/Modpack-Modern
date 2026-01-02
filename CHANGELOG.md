@@ -5,11 +5,23 @@
 - Added new steam multiblocks for the alloy smelter, compressor, forge hammer, and thermal centrifuge @Pyritie
 - Reduced the Y level that ad astra considers "space" so rocket launches are faster @Pyritie
 - Reduced the amount of loot vases in the newer illages, and reduced how much loot you get from them @Pyritie
-- Illages and the smaller mud brick ruins are now a little rarer, and the stone brick ruins are a little more common
+- Illages and the smaller mud brick ruins are now a little rarer, and the stone brick ruins are a little more common @Pyritie
+- Magnesium Diboride now only requires an MV chem bath to cool, but the MV chem bath now also requires a little plastic to craft (#2575) @Pyritie
+- Added an implosion compressor recipe for glowstone dust to glowstone blocks (#2581) @Xaligal
+- Ad astra and Create Deco lamps are now half as expensive to craft (#2581) @Xaligal
+- Added alloy blast smelter recipes for black bronze and bismuth bronze (#2581) @Xaligal
+- The alloy blast smelter recipe for glowstone has been adjusted (#2581) @Xaligal
 ### Bug fixes
 - Fixed missing crafting table recipes for greate gearboxes (#2577) @Pyritie
+- Fixed crashing when attaching shafts to a steam engine (#2578, #2579) @Electrolyte220
+- Fixed wrong small cogwheel rotation rendering @Electrolyte220
+- Fixed citric acid food processor recipe producing nothing (#2588) @Pyritie
+- Fixed not being able to use pickled eggs in sandwiches (#2551) @Pyritie
+- Fixed how much aluminium silicate you get from mica, pollucite, and spodumene to more accurately reflect how much aluminium they have @Pyritie
+- Fixed being able to put liquid metals into the new molds that didn't have a recipe @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
+- Russian @Petr211071
 
 ## [0.11.15] - 31-12-2025
 ### Bug fixes
