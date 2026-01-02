@@ -165,13 +165,13 @@
 				"type": "minecraft:magma_cube",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 50
+				"weight": 30
 			},
 			{
 				"type": "minecraft:blaze",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 50
+				"weight": 70
 			},
 			{
 				"type": "species:cliff_hanger",

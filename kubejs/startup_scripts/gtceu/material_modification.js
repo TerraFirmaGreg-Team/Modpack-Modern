@@ -147,9 +147,9 @@ const registerGTCEuMaterialModification = (event) => {
 	let AlSi = GTMaterials.get('aluminium_silicate')
 	AlSi.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, 1))
 	GTMaterials.Kyanite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 95))
-	GTMaterials.Mica.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 90))
-	GTMaterials.Spodumene.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 85))
-	GTMaterials.Pollucite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 85))
+	GTMaterials.Mica.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 40))
+	GTMaterials.Spodumene.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 30))
+	GTMaterials.Pollucite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 25))
 
 
 	GTMaterials.Gold.addFlags(GENERATE_BELL);
