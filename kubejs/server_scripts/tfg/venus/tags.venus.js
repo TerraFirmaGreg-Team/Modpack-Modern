@@ -132,12 +132,15 @@ function registerTFGVenusBiomeTags(event) {
 function registerTFGVenusEntityTypeTags(event) {
 	const ENTITIES = [
 		'minecraft:enderman',
+		'minecraft:magma_cube',
+		'minecraft:blaze',
 		"endermanoverhaul:desert_enderman",
 		"endermanoverhaul:savanna_enderman",
 		"endermanoverhaul:nether_wastes_enderman",
 		"ad_astra:sulfur_creeper",
 		'species:cliff_hanger',
-		'species:trooper'
+		'species:trooper',
+		'primitivecreatures:golem_2'
 	]
 
 	ENTITIES.forEach(entity => {
@@ -150,6 +153,8 @@ function registerTFGVenusEntityTypeTags(event) {
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:savanna_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:nether_wastes_enderman')
 	event.add('tfc:deals_slashing_damage', 'species:cliff_hanger')
+	event.add('tfc:deals_crushing_damage', 'minecraft:magma_cube')
+	event.add('tfc:deals_crushing_damage', 'primitivecreatures:golem_2')
 }
 
 function registerTFGVenusPlacedFeatures(event) {
