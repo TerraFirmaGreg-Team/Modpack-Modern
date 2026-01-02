@@ -91,6 +91,36 @@ function registerTFGAlloyingRecipes(event) {
 	event.smelting('gtceu:rose_gold_ingot', '#forge:dusts/rose_gold')
 		.id('tfg:smelting/rose_gold_ingot')
 
+	event.recipes.gtceu.alloy_blast_smelter('tfg:abs_bismuth_bronze')
+		.itemInputs('1x gtceu:bismuth_dust', '3x gtceu:copper_dust', '1x gtceu:zinc_dust')
+		.outputFluids(Fluid.of('gtceu:bismuth_bronze', 720))
+		.circuit(4)
+		.blastFurnaceTemp(1357)
+		.duration(300)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.alloy_blast_smelter('tfg:abs_black_bronze')
+		.itemInputs('3x gtceu:copper_dust', '1x gtceu:gold_dust', '1x gtceu:silver_dust')
+		.outputFluids(Fluid.of('gtceu:black_bronze', 720))
+		.circuit(4)
+		.blastFurnaceTemp(1357)
+		.duration(300)
+		.EUt(GTValues.VA[GTValues.LV])
+	
+	event.recipes.gtceu.mixer('tfg:bismuth_bronze_from_raw')
+		.itemInputs('1x gtceu:bismuth_dust', '3x gtceu:copper_dust', '1x gtceu:zinc_dust')
+		.itemOutputs('5x gtceu:bismuth_bronze_dust')
+		.circuit(2)
+		.duration(100)
+		.EUt(7)
+
+	event.recipes.gtceu.mixer('tfg:black_bronze_from_raw')
+		.itemInputs('3x gtceu:copper_dust', '1x gtceu:gold_dust', '1x gtceu:silver_dust')
+		.itemOutputs('5x gtceu:black_bronze_dust')
+		.circuit(2)
+		.duration(100)
+		.EUt(7)
+
 	//#endregion
 
 	// Rose Gold + Sterling Silver
@@ -125,15 +155,6 @@ function registerTFGAlloyingRecipes(event) {
 				.EUt(GTValues.VA[GTValues.LV])
 		});
 	});
-
-	// Red alloy, because crucible always makes 4+1=5
-
-	event.recipes.gtceu.alloy_blast_smelter('red_alloy')
-		.itemInputs('1x gtceu:copper_dust', '4x minecraft:redstone')
-		.outputFluids(Fluid.of('gtceu:red_alloy', 720))
-		.circuit(5)
-		.duration(75)
-		.EUt(GTValues.VA[GTValues.LV])
 
 	event.remove({ id: 'gtceu:mixer/red_alloy' })
 	// incorrect on purpose to prevent a greate duplicate recipe (the id becomes mixer/mixer/red_alloy)
@@ -183,20 +204,41 @@ function registerTFGAlloyingRecipes(event) {
 		3, [], 500, 7, 64, 'gtceu:mixer/rose_gold')
 
 	// Glowstone
-	event.recipes.gtceu.mixer('gtceu:lv_glowstone')
+	event.recipes.gtceu.mixer('tfg:lv_glowstone')
 		.itemInputs('gtceu:gold_dust', 'minecraft:redstone', 'gtceu:sulfur_dust')
 		.itemOutputs('2x minecraft:glowstone_dust')
 		.circuit(8)
 		.duration(1200)
 		.EUt(30)
 
-	event.recipes.gtceu.alloy_blast_smelter('abs:liquid_glowstone')
-		.itemInputs('#forge:dusts/gold', '#forge:dusts/redstone', '#forge:dusts/sulfur')
-		.outputFluids(Fluid.of('gtceu:glowstone', 288))
-		.duration(20 * 60 / 1.3)
-		.EUt(GTValues.VA[GTValues.LV])
-		.blastFurnaceTemp(1064)
+	event.recipes.gtceu.alloy_blast_smelter('tfg:liquid_glowstone')
+		.itemInputs('10x #forge:dusts/gold', '10x #forge:dusts/redstone', '10x #forge:dusts/sulfur')
+		.outputFluids(Fluid.of('gtceu:glowstone', 2880))
 		.circuit(9)
+		.blastFurnaceTemp(1064)
+		.duration(12000)
+		.EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.implosion_compressor('tfg:glowstone_block_dynamite')
+        .itemInputs('5x #forge:dusts/glowstone', '2x gtceu:dynamite')
+        .itemOutputs('1x minecraft:glowstone')
+        .chancedOutput('#forge:dusts/ash', 2500, 0)
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.implosion_compressor('tfg:glowstone_block_tnt')
+        .itemInputs('5x #forge:dusts/glowstone', '4x minecraft:tnt')
+        .itemOutputs('1x minecraft:glowstone')
+        .chancedOutput('#forge:dusts/ash', 2500, 0)
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.implosion_compressor('tfg:glowstone_block_industrial_tnt')
+        .itemInputs('5x #forge:dusts/glowstone', '1x gtceu:industrial_tnt')
+        .itemOutputs('1x minecraft:glowstone')
+        .chancedOutput('#forge:dusts/ash', 2500, 0)
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.LV])
 
 	// New Alloys
 
