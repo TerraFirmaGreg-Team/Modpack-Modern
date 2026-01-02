@@ -224,11 +224,11 @@
     "venus": {
       "overall": 1,
       "cricket": 1,
-      "cricket-night": 1,
+      "cricket-night": 0.7,
       "cicadas": 1,
       "cicadas-desert": 1,
-      "cicadas-night": 1,
-      "cricket-warm-night": 1
+      "cicadas-night": 0.7,
+      "cricket-warm-night": 0.7
     },
     "warden": {
       "overall": 1,
