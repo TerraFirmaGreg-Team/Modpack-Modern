@@ -108,6 +108,10 @@ function registerTFGVenusBlockTags(event) {
 
 	event.add('tfc:can_carve', '#ad_astra:venus_stone_replaceables')
 
+    event.add("tfc:monster_spawns_on", "create:scorchia");
+    event.add("tfc:monster_spawns_on", "minecraft:basalt");
+    event.add("tfc:monster_spawns_on", "minecraft:smooth_basalt");
+
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/blue')
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/green')
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/brown')
@@ -128,23 +132,29 @@ function registerTFGVenusBiomeTags(event) {
 function registerTFGVenusEntityTypeTags(event) {
 	const ENTITIES = [
 		'minecraft:enderman',
+		'minecraft:magma_cube',
+		'minecraft:blaze',
 		"endermanoverhaul:desert_enderman",
 		"endermanoverhaul:savanna_enderman",
 		"endermanoverhaul:nether_wastes_enderman",
 		"ad_astra:sulfur_creeper",
 		'species:cliff_hanger',
-		'species:trooper'
+		'species:trooper',
+		'primitivecreatures:golem_2'
 	]
 
 	ENTITIES.forEach(entity => {
 		event.add('ad_astra:can_survive_extreme_heat', entity)
 		event.add('ad_astra:lives_without_oxygen', entity)
+		event.add('gtceu:heat_immune', entity)
 	})
 
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:desert_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:savanna_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:nether_wastes_enderman')
 	event.add('tfc:deals_slashing_damage', 'species:cliff_hanger')
+	event.add('tfc:deals_crushing_damage', 'minecraft:magma_cube')
+	event.add('tfc:deals_crushing_damage', 'primitivecreatures:golem_2')
 }
 
 function registerTFGVenusPlacedFeatures(event) {

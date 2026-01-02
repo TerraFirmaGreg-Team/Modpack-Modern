@@ -28,6 +28,7 @@ const NEW_MOB_MAX_HP = {
 	"ad_astra:sulfur_creeper": 60,
 	"species:cliff_hanger": 75,
 	"species:trooper": 20,
+	"minecraft:blaze": 50,
 
 	// europa mobs
 	"endermanoverhaul:ice_spikes_enderman": 85,
@@ -79,7 +80,13 @@ EntityEvents.spawned((event) => {
 	else if (type === "minecraft:magma_cube") {
 		switch (dimension) {
 			// use default for beneath
-			case "ad_astra:venus": newHp = entity.health * 6;
+			case "ad_astra:venus": newHP = entity.maxHealth * 6;
+		}
+	}
+	else if (type === "primitivecreatures:golem_2") {
+		switch (dimension) {
+			// use default for beneath
+			case "ad_astra:venus": newHP = 80;
 		}
 	}
 

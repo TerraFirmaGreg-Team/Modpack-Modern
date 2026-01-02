@@ -7130,7 +7130,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "greate-0.0.60.jar",
+                    "file_name": "greate-0.0.61.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7139,23 +7139,23 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/lkpf6G04/greate-0.0.60.jar",
-                    "id": "lkpf6G04",
+                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/bZDj2HqJ/greate-0.0.61.jar",
+                    "id": "bZDj2HqJ",
                     "parent_id": "8wDcQuht",
                     "hashes": {
-                        "sha512": "2584a6b23bbcbfe0d25c4a6af60485e30cf083ff322271d5ee2a566c35943daca86b0edd71d98786811f633af04b5a7f73db9e9f3ac8b72e385b97c1769e7126",
-                        "sha1": "3fc325df338f275847344f553ad81c3e9be0bc80"
+                        "sha512": "bfee9bf3bbaaf4f0027100008030d6cd69fb09fd6a352b644a910523e2bf53837123cd6221fc5606d670637584901693d278e27b7d1485b592a4b4650a15944d",
+                        "sha1": "1ad889dbd2838045a2df194bfc757b9bae57d273"
                     },
                     "required_dependencies": [
-                        "LNytGWDc",
-                        "7tG215v7"
+                        "7tG215v7",
+                        "LNytGWDc"
                     ],
-                    "size": 1253032,
-                    "date_published": "2025-12-31T17:41:02.391758Z"
+                    "size": 1253065,
+                    "date_published": "2026-01-01T21:21:45.604190Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "greate-0.0.60.jar",
+                    "file_name": "greate-0.0.61.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7164,19 +7164,19 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/7401/392/greate-0.0.60.jar",
-                    "id": "7401392",
+                    "url": "https://edge.forgecdn.net/files/7405/523/greate-0.0.61.jar",
+                    "id": "7405523",
                     "parent_id": "901996",
                     "hashes": {
-                        "sha1": "3fc325df338f275847344f553ad81c3e9be0bc80",
-                        "md5": "f521d8a849e0a56b5ba2051a81bb684d"
+                        "sha1": "1ad889dbd2838045a2df194bfc757b9bae57d273",
+                        "md5": "0446ffaa7cafa06d3148a1944a81b431"
                     },
                     "required_dependencies": [
-                        "328085",
-                        "890405"
+                        "890405",
+                        "328085"
                     ],
-                    "size": 1253032,
-                    "date_published": "2025-12-31T17:41:00.300Z"
+                    "size": 1253065,
+                    "date_published": "2026-01-01T21:21:43.007Z"
                 }
             ]
         },
@@ -7259,7 +7259,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "gtmoldraw-2.0.3.jar",
+                    "file_name": "gtmoldraw-3.0.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7267,18 +7267,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7197/440/gtmoldraw-2.0.3.jar",
-                    "id": "7197440",
+                    "url": "https://edge.forgecdn.net/files/7404/876/gtmoldraw-3.0.0.jar",
+                    "id": "7404876",
                     "parent_id": "1348330",
                     "hashes": {
-                        "sha1": "24e461ca4eac2877458e125dc4c9eb678ad3c270",
-                        "md5": "17c62be2923f14033a672d43c205e259"
+                        "sha1": "9377694e2e3d8c62bdacd400e125acc732c54803",
+                        "md5": "e6d36dbc5383b0649bbfa76a829c6170"
                     },
                     "required_dependencies": [
                         "890405"
                     ],
-                    "size": 826764,
-                    "date_published": "2025-11-08T02:41:54.790Z"
+                    "size": 907581,
+                    "date_published": "2026-01-01T18:19:59.917Z"
                 }
             ]
         },
@@ -15133,6 +15133,68 @@
             ]
         },
         {
+            "pakku_id": "khWQzXac8AltkIMj",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "arthropocolypse",
+                "modrinth": "arthropocolypse"
+            },
+            "name": {
+                "curseforge": "[Deprecated] Arthropocolypse",
+                "modrinth": "Arthropocolypse"
+            },
+            "id": {
+                "curseforge": "1018606",
+                "modrinth": "uiAP959w"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "arthropocolypse-1.0.6.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5397/648/arthropocolypse-1.0.6.jar",
+                    "id": "5397648",
+                    "parent_id": "1018606",
+                    "hashes": {
+                        "sha1": "c43b2c1e8a9fa11d139a202e37054a01db8fd677",
+                        "md5": "a5a26adcf2c12df3777543fdf424c169"
+                    },
+                    "required_dependencies": [],
+                    "size": 612137,
+                    "date_published": "2024-06-04T11:30:24.383Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "arthropocolypse-1.0.6.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/uiAP959w/versions/4WlOZtq0/arthropocolypse-1.0.6.jar",
+                    "id": "4WlOZtq0",
+                    "parent_id": "uiAP959w",
+                    "hashes": {
+                        "sha512": "c00b798b8ecf7aad09f400601cacec8107649240e75e1ba87851e4007a30febf498d524ef818ab00472a739f6b237f8130060f0e3ae051314dfb069569d72c7b",
+                        "sha1": "c43b2c1e8a9fa11d139a202e37054a01db8fd677"
+                    },
+                    "required_dependencies": [],
+                    "size": 612137,
+                    "date_published": "2024-06-04T11:34:01.710669Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "MpkpUO55EJhBt1az",
             "pakku_links": [
                 "GXyDUWkiW0nLPTdo"
@@ -15222,7 +15284,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "tacz-1.20.1-1.1.7-release.jar",
+                    "file_name": "tacz-1.20.1-1.1.7-hotfix.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -15231,20 +15293,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/SzzJttH8/versions/fErpFI0g/tacz-1.20.1-1.1.7-release.jar",
-                    "id": "fErpFI0g",
+                    "url": "https://cdn.modrinth.com/data/SzzJttH8/versions/CkNQpQcx/tacz-1.20.1-1.1.7-hotfix.jar",
+                    "id": "CkNQpQcx",
                     "parent_id": "SzzJttH8",
                     "hashes": {
-                        "sha512": "3f4aa30d50e75b1e4e5291c4eee59107da60355c5e4b59fc3be0bc84e611d1acf0320aa8a7b905ab42d0c464d19765e58bac16e9ad6770860c19695e887ccc94",
-                        "sha1": "869decffc818e6ccd7d6d0d734aecfaa265e908b"
+                        "sha512": "17d17133243de268cc2d071261e69e747a01b3ab64ab1cf0eec17054e4f19bf8cf30ef1c7ed3e1600523cd9061b38728810b92aefa4246f615001f835a25dc37",
+                        "sha1": "7d4f578a42c9b880744ea6058a495847aac9e4c3"
                     },
                     "required_dependencies": [],
-                    "size": 52403127,
-                    "date_published": "2025-12-01T04:26:59.653447Z"
+                    "size": 52425650,
+                    "date_published": "2026-01-01T09:15:14.812661Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "tacz-1.20.1-1.1.7-release.jar",
+                    "file_name": "tacz-1.20.1-1.1.7-hotfix.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15252,16 +15314,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7278/3/tacz-1.20.1-1.1.7-release.jar",
-                    "id": "7278003",
+                    "url": "https://edge.forgecdn.net/files/7401/617/tacz-1.20.1-1.1.7-hotfix.jar",
+                    "id": "7401617",
                     "parent_id": "1028108",
                     "hashes": {
-                        "sha1": "869decffc818e6ccd7d6d0d734aecfaa265e908b",
-                        "md5": "27696ec987eefbec8e7ba6596e418b35"
+                        "sha1": "7d4f578a42c9b880744ea6058a495847aac9e4c3",
+                        "md5": "e91391b09e25ec5994c28593117f5908"
                     },
                     "required_dependencies": [],
-                    "size": 52403127,
-                    "date_published": "2025-11-30T12:53:47.060Z"
+                    "size": 52425650,
+                    "date_published": "2025-12-31T19:00:25.193Z"
                 }
             ]
         },

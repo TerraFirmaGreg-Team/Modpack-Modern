@@ -60,7 +60,9 @@
 			"tfg:venus/surface/smoker_source_patch",
 			"tfg:venus/surface/lava_source_patch",
 			"tfg:venus/surface/twisted_vine",
-			"tfg:venus/surface/shadow_plant_patch"
+			"tfg:venus/surface/shadow_plant_patch",
+			"tfg:venus/surface/pile_volcanic_ash",
+			"tfg:venus/surface/pile_black_sand"
 		],
 		[
 			"tfg:venus/terrain/lava_fill"
@@ -69,14 +71,6 @@
 	],
 	"has_precipitation": true,
 	"spawn_costs": {
-		"endermanoverhaul:desert_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
-		},
-		"endermanoverhaul:savanna_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
-		},
 		"endermanoverhaul:nether_wastes_enderman": {
 			"energy_budget": 0.05,
 			"charge": 0.9
@@ -86,10 +80,22 @@
 			"charge": 0.9
 		},
 		"ad_astra:sulfur_creeper": {
-			"energy_budget": 0.2,
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"primitivecreatures:golem_2": {
+			"energy_budget": 0.15,
 			"charge": 0.7
 		},
 		"species:cliff_hanger": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"minecraft:magma_cube": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"minecraft:blaze": {
 			"energy_budget": 0.15,
 			"charge": 0.7
 		}
@@ -109,18 +115,6 @@
 		"misc": [],
 		"monster": [
 			{
-				"type": "endermanoverhaul:desert_enderman",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "endermanoverhaul:savanna_enderman",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
 				"type": "endermanoverhaul:nether_wastes_enderman",
 				"maxCount": 1,
 				"minCount": 1,
@@ -130,16 +124,28 @@
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
+				"weight": 10
 			},
 			{
 				"type": "ad_astra:sulfur_creeper",
-				"maxCount": 3,
+				"maxCount": 2,
 				"minCount": 1,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "minecraft:magma_cube",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:blaze",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "primitivecreatures:golem_2",
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100
