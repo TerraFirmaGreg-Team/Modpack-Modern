@@ -12932,28 +12932,31 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "tfc_gurman-1.2.0.jar",
+                    "file_name": "tfc_gurman-1.3.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ERme2o65/versions/Cz4jYtUl/tfc_gurman-1.2.0.jar",
-                    "id": "Cz4jYtUl",
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/ERme2o65/versions/NVqgySaW/tfc_gurman-1.3.0.jar",
+                    "id": "NVqgySaW",
                     "parent_id": "ERme2o65",
                     "hashes": {
-                        "sha512": "ad839d5f2b963d433fd9a9ff965953c7dcbebf5a7b1f660ed5d84b440a2af047a0684b01d0391c012ca69ea8e49a9973f1d7400f40c1e16b0877c8c08f942b7e",
-                        "sha1": "4e219504c5ca011c2ea7036d6002d30ce14085c0"
+                        "sha512": "b82f4b893f85f152a305a9949df8a87337b2e1d75e80a1723c512de5ede3dfa056f17a2186511acf96556e4b5ce1b1c55927d6f97fabf109ac8fdf8ba20f197c",
+                        "sha1": "c55512789128af89d57fe0c9a2f3b4d59a491724"
                     },
-                    "required_dependencies": [],
-                    "size": 518871,
-                    "date_published": "2025-11-28T21:26:28.110692Z"
+                    "required_dependencies": [
+                        "JaCEZUhg",
+                        "5bKeBHw2"
+                    ],
+                    "size": 542077,
+                    "date_published": "2026-01-02T13:41:35.488377Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "tfc_gurman-1.2.0.jar",
+                    "file_name": "tfc_gurman-1.3.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12961,19 +12964,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7272/449/tfc_gurman-1.2.0.jar",
-                    "id": "7272449",
+                    "url": "https://edge.forgecdn.net/files/7408/157/tfc_gurman-1.3.0.jar",
+                    "id": "7408157",
                     "parent_id": "1363944",
                     "hashes": {
-                        "sha1": "4e219504c5ca011c2ea7036d6002d30ce14085c0",
-                        "md5": "a10ca1fd4dd5f98f9f646d713995e95e"
+                        "sha1": "c55512789128af89d57fe0c9a2f3b4d59a491724",
+                        "md5": "fd8ba6a9ec34193beda55f5d34e359f1"
                     },
                     "required_dependencies": [
-                        "453394",
-                        "302973"
+                        "302973",
+                        "453394"
                     ],
-                    "size": 518871,
-                    "date_published": "2025-11-28T21:24:49.587Z"
+                    "size": 542077,
+                    "date_published": "2026-01-02T13:43:05.680Z"
                 }
             ]
         },
