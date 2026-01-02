@@ -1633,7 +1633,7 @@ function registerTFGFoodRecipes(event) {
 			itemOutputs: ['4x tfg:food/oatmeal'],
 			circuit: i,
 			itemOutputProvider: TFC.isp.of('4x tfg:food/oatmeal').simpleModifier('tfg:add_bowl').meal(
-				(food) => food.hunger(5).water(5).saturation(1).decayModifier(1.4).dairy(1.5),
+				(food) => food.hunger(5).water(5).saturation(1).decayModifier(1.4).grain(0.8).dairy(1.5),
 				[(portion) => portion.nutrientModifier(0.7).saturationModifier(0.7)]
 			)
 		});
