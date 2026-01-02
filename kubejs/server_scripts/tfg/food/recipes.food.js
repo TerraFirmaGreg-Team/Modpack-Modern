@@ -1,127 +1,128 @@
 ﻿// priority: 0
 "use strict";
 
+
+const $ISPRecipeLogic = Java.loadClass("su.terrafirmagreg.core.common.data.tfgt.machine.trait.ISPOutputRecipeLogic")
+const $SizedIngredient = Java.loadClass("com.gregtechceu.gtceu.api.recipe.ingredient.SizedIngredient")
+const Sized = (ing, amount) => $SizedIngredient.create(ing, amount)
+
+/**
+* @typedef {Object} FoodRecipeData
+* @property {number?} circuit
+* @property {Internal.GTRecipeComponents$FluidIngredientJS_[]?} fluidInputs
+* @property {Internal.FluidStackJS[]?} fluidOutputs
+* @property {(string | [string, Internal.Ingredient])[]?} itemInputs
+* @property {string[]?} itemOutputs Ingredient outputs - first output is replaced with ISP output if defined
+* @property {Internal.ItemStackProviderJS?} itemOutputProvider ItemStackProvider which provides the recipe output.
+* @property {boolean?} daytime
+* @property {boolean?} perTick
+* @property {(string | [string, Internal.GTRecipeSchema$GTRecipeJS.dimension])?} dimension
+* @property {Internal.GTRecipeSchema$GTRecipeJS.cleanroom?} cleanroom CleanroomType
+* @property {string[]?} notConsumable
+*
+* **NOTE:** TFC Ingredients do not support item counts higher than 1. Do `Sized(TFCIngredient('item:item'), count)` instead of `TFCIngredient('[count]x item:item')`
+*/
+//#region Helper funcs
+
+/**
+* @param {"food_oven"|"food_processor"} type 
+* @param {string} id 
+* @param {number} duration 
+* @param {number} EUt 
+* @param {string} text
+* @param {FoodRecipeData} data 
+*/
+global.registerFoodRecipe = (event, type, id, duration, EUt, text, data) => {
+	if (data.itemInputs === undefined) data.itemInputs = []
+	if (data.itemOutputs === undefined) data.itemOutputs = []
+	if (data.fluidInputs === undefined) data.fluidInputs = []
+	if (data.fluidOutputs === undefined) data.fluidOutputs = []
+	if (data.notConsumable === undefined) data.notConsumable = []
+	let gregInputs = [], inputs = []
+	let outputFirstIndex = (data.itemOutputProvider === undefined) ? 0 : 1
+	data.itemInputs.forEach(item => {
+		if (typeof item === "string") {
+			gregInputs.push(item)
+
+			const match = item.match(/^(\d+)\s*x\s*/i);
+			let count = 1
+			if (match) {
+				count = parseInt(match[1]);
+				item = item.slice(match[0].length);
+			}
+			inputs.push($SizedIngredient.create(item, count))
+		} else {
+			gregInputs.push(item[0])
+			inputs.push(item[1])
+		}
+	})
+
+	$ISPRecipeLogic.RegisterRecipeData(`${type  }/${  id}`, inputs, (data.itemOutputProvider === undefined) ? null : data.itemOutputProvider.asCanonClass(), data.itemOutputs.slice(outputFirstIndex).map(i => Item.of(i)))
+
+	let r = event.recipes.gtceu[type](id)
+	.duration(duration)
+	.EUt(EUt)
+
+	if (data.circuit) r.circuit(data.circuit)
+	if (data.daytime) r.daytime(data.daytime)
+	if (data.perTick) r.perTick(data.perTick)
+	if (data.dimension) r.dimension(data.dimension)
+	if (data.cleanroom) r.cleanroom(data.cleanroom)
+	if (data.notConsumable.length > 0) r.notConsumable(data.notConsumable)
+	if (data.itemOutputs.length > 0) r.itemOutputs(data.itemOutputs)
+	if (data.itemInputs.length > 0) r.itemInputs(data.itemInputs)
+	if (data.fluidInputs.length > 0) r.inputFluids(data.fluidInputs);
+	if (data.fluidOutputs.length > 0) r.outputFluids(data.fluidOutputs);
+	if (text !== "") r.addDataString("action", text);
+
+	return r;
+}
+
+/**
+* @param {string} id 
+* @param {number} duration 
+* @param {number} EUt 
+* @param {FoodRecipeData} data 
+*/
+global.processorRecipe = (event, id, duration, EUt, data) => global.registerFoodRecipe(event, "food_processor", id, duration, EUt, "", data)
+
+/**
+* @param {string} id 
+* @param {number} duration 
+* @param {number} EUt 
+* @param {FoodRecipeData} data 
+* @param {string} text
+*/
+global.processorRecipeText = (event, id, duration, EUt, text, data) => global.registerFoodRecipe(event, "food_processor", id, duration, EUt, text, data)
+
+/**
+* @param {string} id 
+* @param {string} input 
+* @param {string} out 
+* @param {Internal.FluidIngredient?} fluid 
+* @param {boolean?} isFirmaDynamic 
+*/
+global.cookingRecipe = (event, id, input, out, fluid, isFirmaDynamic) => {
+	return global.registerFoodRecipe(event, "food_oven", id, 20 * 10, GTValues.VA[GTValues.LV], "", {
+		itemInputs: [input],
+		itemOutputs: [out],
+		fluidInputs: (fluid === undefined) ? [] : [fluid],
+		itemOutputProvider: ((isFirmaDynamic) ? TFC.isp.of(out).firmaLifeCopyDynamicFood() : TFC.isp.of(out).copyFood()).addTrait("firmalife:oven_baked")
+	})
+}
+
+//#endregion
+
+
 /**
  * @param {Internal.RecipesEventJS} event 
  */
 function registerTFGFoodRecipes(event) {
 
-	const $ISPRecipeLogic = Java.loadClass("su.terrafirmagreg.core.common.data.tfgt.machine.trait.ISPOutputRecipeLogic")
-	const $SizedIngredient = Java.loadClass("com.gregtechceu.gtceu.api.recipe.ingredient.SizedIngredient")
-	const Sized = (ing, amount) => $SizedIngredient.create(ing, amount)
-
-	/**
-	 * @typedef {Object} FoodRecipeData
-	 * @property {number?} circuit
-	 * @property {Internal.GTRecipeComponents$FluidIngredientJS_[]?} fluidInputs
-	 * @property {Internal.FluidStackJS[]?} fluidOutputs
-	 * @property {(string | [string, Internal.Ingredient])[]?} itemInputs
-	 * @property {string[]?} itemOutputs Ingredient outputs - first output is replaced with ISP output if defined
-	 * @property {Internal.ItemStackProviderJS?} itemOutputProvider ItemStackProvider which provides the recipe output.
-	 * @property {boolean?} daytime
-	 * @property {boolean?} perTick
-	 * @property {(string | [string, Internal.GTRecipeSchema$GTRecipeJS.dimension])?} dimension
-	 * @property {Internal.GTRecipeSchema$GTRecipeJS.cleanroom?} cleanroom CleanroomType
-	 * @property {string[]?} notConsumable
-	*
-	* **NOTE:** TFC Ingredients do not support item counts higher than 1. Do `Sized(TFCIngredient('item:item'), count)` instead of `TFCIngredient('[count]x item:item')`
-	*/
-
-	//#region Helper funcs
-
-	/**
-	 * @param {"food_oven"|"food_processor"} type 
-	 * @param {string} id 
-	 * @param {number} duration 
-	 * @param {number} EUt 
-	 * @param {string} text
-	 * @param {FoodRecipeData} data 
-	 */
-	function registerFoodRecipe(type, id, duration, EUt, text, data) {
-		if (data.itemInputs === undefined) data.itemInputs = []
-		if (data.itemOutputs === undefined) data.itemOutputs = []
-		if (data.fluidInputs === undefined) data.fluidInputs = []
-		if (data.fluidOutputs === undefined) data.fluidOutputs = []
-		if (data.notConsumable === undefined) data.notConsumable = []
-		let gregInputs = [], inputs = []
-		let outputFirstIndex = (data.itemOutputProvider === undefined) ? 0 : 1
-		data.itemInputs.forEach(item => {
-			if (typeof item === "string") {
-				gregInputs.push(item)
-
-				const match = item.match(/^(\d+)\s*x\s*/i);
-				let count = 1
-				if (match) {
-					count = parseInt(match[1]);
-					item = item.slice(match[0].length);
-				}
-				inputs.push($SizedIngredient.create(item, count))
-			} else {
-				gregInputs.push(item[0])
-				inputs.push(item[1])
-			}
-		})
-
-		$ISPRecipeLogic.RegisterRecipeData(`${type  }/${  id}`, inputs, (data.itemOutputProvider === undefined) ? null : data.itemOutputProvider.asCanonClass(), data.itemOutputs.slice(outputFirstIndex).map(i => Item.of(i)))
-
-		let r = event.recipes.gtceu[type](id)
-		.duration(duration)
-		.EUt(EUt)
-
-		if (data.circuit) r.circuit(data.circuit)
-		if (data.daytime) r.daytime(data.daytime)
-		if (data.perTick) r.perTick(data.perTick)
-		if (data.dimension) r.dimension(data.dimension)
-		if (data.cleanroom) r.cleanroom(data.cleanroom)
-		if (data.notConsumable.length > 0) r.notConsumable(data.notConsumable)
-		if (data.itemOutputs.length > 0) r.itemOutputs(data.itemOutputs)
-		if (data.itemInputs.length > 0) r.itemInputs(data.itemInputs)
-		if (data.fluidInputs.length > 0) r.inputFluids(data.fluidInputs);
-		if (data.fluidOutputs.length > 0) r.outputFluids(data.fluidOutputs);
-		if (text !== "") r.addDataString("action", text);
-
-		return r;
-	}
-
-		/**
-	 * @param {string} id 
-	 * @param {number} duration 
-	 * @param {number} EUt 
-	 * @param {FoodRecipeData} data 
-	 */
-	const processorRecipe = (id, duration, EUt, data) => registerFoodRecipe("food_processor", id, duration, EUt, "", data)
-
-	/**
-	 * @param {string} id 
-	 * @param {number} duration 
-	 * @param {number} EUt 
-	 * @param {FoodRecipeData} data 
-	 * @param {string} text
-	 */
-	const processorRecipeText = (id, duration, EUt, text, data) => registerFoodRecipe("food_processor", id, duration, EUt, text, data)
-
-	/**
-	 * @param {string} id 
-	 * @param {string} input 
-	 * @param {string} out 
-	 * @param {Internal.FluidIngredient?} fluid 
-	 * @param {boolean?} isFirmaDynamic 
-	 */
-	function cookingRecipe(id, input, out, fluid, isFirmaDynamic) {
-		return registerFoodRecipe("food_oven", id, 20 * 10, GTValues.VA[GTValues.LV], "", {
-			itemInputs: [input],
-			itemOutputs: [out],
-			fluidInputs: (fluid === undefined) ? [] : [fluid],
-			itemOutputProvider: ((isFirmaDynamic) ? TFC.isp.of(out).firmaLifeCopyDynamicFood() : TFC.isp.of(out).copyFood()).addTrait("firmalife:oven_baked")
-		})
-	}
-
-	//#endregion
-
 	//#region Meat cooking
 	
 	global.TFC_MEAT_RECIPE_COMPONENTS.forEach(item => {
-		cookingRecipe(item.name, item.input, item.output)
+		global.cookingRecipe(event, item.name, item.input, item.output)
 	})
 
 	//#endregion
@@ -130,7 +131,7 @@ function registerTFGFoodRecipes(event) {
 	global.TFC_GRAINS.forEach(grain => {
 
 		// Raw crop to grain
-		processorRecipe(`${grain}_grain`, 100, 8, {
+		global.processorRecipe(event, `${grain}_grain`, 100, 8, {
 			circuit: 30,
 			itemInputs: [`tfc:food/${grain}`],
 			itemOutputs: [`tfc:food/${grain}_grain`],
@@ -138,7 +139,7 @@ function registerTFGFoodRecipes(event) {
 		})
 
 		//  Grain to flour
-		processorRecipe(`${grain}_flour`, 100, 8, {
+		global.processorRecipe(event, `${grain}_flour`, 100, 8, {
 			circuit: 31,
 			itemInputs: [`tfc:food/${grain}_grain`],
 			itemOutputs: [`2x tfc:food/${grain}_flour`],
@@ -155,7 +156,7 @@ function registerTFGFoodRecipes(event) {
 			}, 0, 0).id(`tfg:mortar/${grain}_flour`)
 
 		// Flatbread dough
-		processorRecipe(`${grain}_flatbread_dough`, 300, 8, {
+		global.processorRecipe(event, `${grain}_flatbread_dough`, 300, 8, {
 			itemInputs: [`tfc:food/${grain}_flour`],
 			itemOutputs: [`2x tfc:food/${grain}_dough`],
 			circuit: 1,
@@ -164,7 +165,7 @@ function registerTFGFoodRecipes(event) {
 		})
 
 		// Firmalife dough
-		processorRecipe(`${grain}_dough`, 300, 16, {
+		global.processorRecipe(event, `${grain}_dough`, 300, 16, {
 			itemInputs: [`tfc:food/${grain}_flour`, `#tfc:sweetener`],
 			itemOutputs: [`4x firmalife:food/${grain}_dough`],
 			circuit: 1,
@@ -173,10 +174,10 @@ function registerTFGFoodRecipes(event) {
 		})
 
 		// Bread baking
-		cookingRecipe(`${grain}_flatbread`, `tfc:food/${grain}_dough`, `firmalife:food/${grain}_flatbread`)
-		cookingRecipe(`${grain}_bread`, `firmalife:food/${grain}_dough`, `tfc:food/${grain}_bread`)
+		global.cookingRecipe(event, `${grain}_flatbread`, `tfc:food/${grain}_dough`, `firmalife:food/${grain}_flatbread`)
+		global.cookingRecipe(event, `${grain}_bread`, `firmalife:food/${grain}_dough`, `tfc:food/${grain}_bread`)
 
-		processorRecipe(`${grain}_bread_slice`, 10, 8, {
+		global.processorRecipe(event, `${grain}_bread_slice`, 10, 8, {
 			circuit: 1,
 			itemInputs: [`tfc:food/${grain}_bread`],
 			itemOutputs: [`2x firmalife:food/${grain}_slice`],
@@ -187,7 +188,7 @@ function registerTFGFoodRecipes(event) {
 
 		let breadTypes = [["bread", `tfc:food/${grain}_bread`], ["flatbread", `firmalife:food/${grain}_flatbread`], ["slice", `firmalife:food/${grain}_slice`]]
 		breadTypes.forEach((type) => {
-			processorRecipe(`${grain}_${type[0]}_sandwich`, 100, 16, {
+			global.processorRecipe(event, `${grain}_${type[0]}_sandwich`, 100, 16, {
 				circuit: 3,
 				itemInputs: [`2x ${type[1]}`, "3x #tfc:foods/usable_in_sandwich"],
 				itemOutputs: [`2x tfc:food/${grain}_bread_sandwich`],
@@ -200,7 +201,7 @@ function registerTFGFoodRecipes(event) {
 
 			//Note: Jam needs to be first in the recipe code or else it will consider it as the usable_in_jam_sandwhich ingredients.
 			//1 Jam
-			processorRecipe(`${grain}_${type[0]}_jam_sandwich_1`, 100, 16, {
+			global.processorRecipe(event, `${grain}_${type[0]}_jam_sandwich_1`, 100, 16, {
 				circuit: 4,
 				itemInputs: [`2x ${type[1]}`, '#tfc:foods/preserves', '2x #tfc:foods/usable_in_jam_sandwich_2'],
 				itemOutputs: [`2x tfc:food/${grain}_bread_jam_sandwich`, 'tfc:empty_jar'],
@@ -212,7 +213,7 @@ function registerTFGFoodRecipes(event) {
 			})
 
 			//2 Jam
-			processorRecipe(`${grain}_${type[0]}_jam_sandwich_2`, 100, 16, {
+			global.processorRecipe(event, `${grain}_${type[0]}_jam_sandwich_2`, 100, 16, {
 				circuit: 4,
 				itemInputs: [`2x ${type[1]}`, '2x #tfc:foods/preserves', '1x #tfc:foods/usable_in_jam_sandwich_2'],
 				itemOutputs: [`2x tfc:food/${grain}_bread_jam_sandwich`, '2x tfc:empty_jar'],
@@ -224,7 +225,7 @@ function registerTFGFoodRecipes(event) {
 			})
 
 			//3 Jam
-			processorRecipe(`${grain}_${type[0]}_jam_sandwich_3`, 100, 16, {
+			global.processorRecipe(event, `${grain}_${type[0]}_jam_sandwich_3`, 100, 16, {
 				circuit: 4,
 				itemInputs: [`2x ${type[1]}`, '3x #tfc:foods/preserves'],
 				itemOutputs: [`2x tfc:food/${grain}_bread_jam_sandwich`, '3x tfc:empty_jar'],
@@ -244,11 +245,11 @@ function registerTFGFoodRecipes(event) {
 	//#region Firmalife
 
 	global.FIRMALIFE_COOKING_RECIPE_COMPONENTS.forEach(item => {
-		cookingRecipe(item.name, item.input, item.output, undefined, true)
+		global.cookingRecipe(event, item.name, item.input, item.output, undefined, true)
 	})
 
     // Pineapple fiber
-    processorRecipe("firmalife:crafting/pineapple_fiber", 300, 16, {
+    global.processorRecipe(event, "firmalife:crafting/pineapple_fiber", 300, 16, {
         circuit: 3,
         itemInputs: ["firmalife:food/pineapple"],
         fluidInputs: [Fluid.of('gtceu:nitrogen', 100)],
@@ -275,20 +276,20 @@ function registerTFGFoodRecipes(event) {
 			.duration(300)
 			.EUt(GTValues.VA[GTValues.LV])
 
-		processorRecipe(`${item.id}_curd`, 1200, 16, {
+		global.processorRecipe(event, `${item.id}_curd`, 1200, 16, {
 			itemOutputs: [item.curd],
 			fluidInputs: [Fluid.of(item.curdled_fluid, 1000)],
 			itemOutputProvider: TFC.isp.of(item.curd).resetFood()
 		})
 
-		processorRecipe(`${item.id}_unsalted_cheese_wheel`, 8000, 16, {
+		global.processorRecipe(event, `${item.id}_unsalted_cheese_wheel`, 8000, 16, {
 			itemInputs: [`3x ${item.curd}`],
 			itemOutputs: [item.unsalted_wheel],
 			fluidInputs: [Fluid.of('tfc:salt_water', 750)],
 			itemOutputProvider: TFC.isp.of(item.unsalted_wheel).copyOldestFood()
 		})
 
-		processorRecipe(`${item.id}_unsalted_cheese_cutting`, 100, 8, {
+		global.processorRecipe(event, `${item.id}_unsalted_cheese_cutting`, 100, 8, {
 			itemInputs: [item.unsalted_wheel],
 			itemOutputs: [`4x ${item.unsalted_cheese}`],
 			itemOutputProvider: TFC.isp.of(`4x ${item.unsalted_cheese}`).copyOldestFood()
@@ -297,14 +298,14 @@ function registerTFGFoodRecipes(event) {
 		if (item.salted_wheel === null || item.salted_cheese === null)
 			return;
 
-		processorRecipe(`${item.id}_salted_cheese_wheel`, 1000, 16, {
+		global.processorRecipe(event, `${item.id}_salted_cheese_wheel`, 1000, 16, {
 			circuit: 2,
 			itemInputs: [`3x ${item.curd}`, `6x tfc:powder/salt`],
 			itemOutputs: [item.salted_wheel],
 			itemOutputProvider: TFC.isp.of(item.salted_wheel).copyOldestFood()
 		})
 
-		processorRecipe(`${item.id}_salted_cheese_cutting`, 100, 8, {
+		global.processorRecipe(event, `${item.id}_salted_cheese_cutting`, 100, 8, {
 			itemInputs: [item.salted_wheel],
 			itemOutputs: [`4x ${item.salted_cheese}`],
 			itemOutputProvider: TFC.isp.of(`4x ${item.salted_cheese}`).copyOldestFood()
@@ -313,7 +314,7 @@ function registerTFGFoodRecipes(event) {
 	
 	// Milks 
 
-	processorRecipe(`white_chocolate_blend`, 300, 16, {
+	global.processorRecipe(event, `white_chocolate_blend`, 300, 16, {
 		circuit: 3,
 		itemInputs: ['2x firmalife:food/cocoa_butter', '#tfc:sweetener'],
 		fluidInputs: ['#tfc:milks 1000'],
@@ -321,7 +322,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('2x firmalife:food/white_chocolate_blend').resetFood()
 	})
 
-	processorRecipe(`dark_chocolate_blend`, 300, 16, {
+	global.processorRecipe(event, `dark_chocolate_blend`, 300, 16, {
 		circuit: 2,
 		itemInputs: ['2x firmalife:food/cocoa_powder', '#tfc:sweetener'],
 		fluidInputs: ['#tfc:milks 1000'],
@@ -329,7 +330,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('2x firmalife:food/dark_chocolate_blend').resetFood()
 	})
 
-	processorRecipe(`milk_chocolate_blend`, 300, 16, {
+	global.processorRecipe(event, `milk_chocolate_blend`, 300, 16, {
 		circuit: 1,
 		itemInputs: ['firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter', '#tfc:sweetener'],
 		fluidInputs: ['#tfc:milks 1000'],
@@ -338,7 +339,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	// TODO: this has nutrition dynamically set in the pot recipe, can we do that here?
-	processorRecipe(`egg_noodles`, 50, 8, {
+	global.processorRecipe(event, `egg_noodles`, 50, 8, {
 		circuit: 6,
 		itemInputs: ["#tfc:foods/flour", 'tfc:powder/salt', '#forge:eggs'],
 		fluidInputs: ['#tfc:milks 1000'],
@@ -346,7 +347,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of("firmalife:food/raw_egg_noodles").copyOldestFood()
 	})
 
-	processorRecipe(`rice_noodles`, 50, 8, {
+	global.processorRecipe(event, `rice_noodles`, 50, 8, {
 		itemInputs: ["tfc:food/rice_flour", 'tfc:food/maize_flour', 'tfc:powder/salt'],
 		fluidInputs: ['#tfc:milks 1000'],
 		itemOutputs: ['2x firmalife:food/raw_rice_noodles'],
@@ -370,7 +371,7 @@ function registerTFGFoodRecipes(event) {
 
 	for (const ctype of chocolateType) {
 		for (const cshape of chocolateShape) {
-			processorRecipe(`${ctype}_${cshape}_melting`, 100, 16, {
+			global.processorRecipe(event, `${ctype}_${cshape}_melting`, 100, 16, {
 				circuit: 1,
 				itemInputs:[cshape == "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`],
 				fluidOutputs:[cshape == "" ? Fluid.of(`tfcchannelcasting:${ctype}`, 144) : Fluid.of(`tfcchannelcasting:${ctype}`, 100)],
@@ -380,7 +381,7 @@ function registerTFGFoodRecipes(event) {
 
 	for (const ctype of chocolateType) {	
 		for (const cshape of chocolateShape) {
-			processorRecipe(`${ctype}_${cshape}_casting`, 100, 16, {
+			global.processorRecipe(event, `${ctype}_${cshape}_casting`, 100, 16, {
 				fluidInputs: [cshape == "" ? Fluid.of(`tfcchannelcasting:${ctype}`, 144) : Fluid.of(`tfcchannelcasting:${ctype}`, 100)],
 				itemOutputs: [cshape == "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`],
 				itemOutputProvider: TFC.isp.of(cshape == "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`).resetFood(),
@@ -410,7 +411,7 @@ function registerTFGFoodRecipes(event) {
 	const brining_ingredients = smoking_meats.concat(brining_veg);
 
 	brining_ingredients.forEach(item => {
-		processorRecipeText(`${item.replace(/:/g, "/")}/brining`, 200, 16, "tfg.food_recipe.brining", {
+		global.processorRecipeText(event, `${item.replace(/:/g, "/")}/brining`, 200, 16, "tfg.food_recipe.brining", {
 			circuit: 5,
 			itemInputs: [item],
 			itemOutputs: [item],
@@ -420,7 +421,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	smoking_meats.forEach(item => {
-		processorRecipeText(`${item.replace(/:/g, "/")}/smoking`, 200, 16, "tfg.food_recipe.smoking", {
+		global.processorRecipeText(event, `${item.replace(/:/g, "/")}/smoking`, 200, 16, "tfg.food_recipe.smoking", {
 			circuit: 6,
 			itemInputs: [item],
 			itemOutputs: [item],
@@ -430,7 +431,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	smoking_cheese.forEach(item => {
-		processorRecipeText(`${item.replace(/:/g, "/")}/smoking`, 200, 16, "tfg.food_recipe.smoking", {
+		global.processorRecipeText(event, `${item.replace(/:/g, "/")}/smoking`, 200, 16, "tfg.food_recipe.smoking", {
 			circuit: 6,
 			itemInputs: [item],
 			itemOutputs: [item],
@@ -440,7 +441,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	drying_fruits.forEach(item => {
-		processorRecipeText(`${item.replace(/:/g, "/")}/drying`, 200, 16, "tfg.food_recipe.drying", {
+		global.processorRecipeText(event, `${item.replace(/:/g, "/")}/drying`, 200, 16, "tfg.food_recipe.drying", {
 			circuit: 6,
 			itemInputs: [item],
 			itemOutputs: [item],
@@ -450,7 +451,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	drying_recipes.forEach(item => {
-		processorRecipeText(`${item.input.replace(/:/g, "/")}/drying`, 200, 16, "tfg.food_recipe.drying", {
+		global.processorRecipeText(event, `${item.input.replace(/:/g, "/")}/drying`, 200, 16, "tfg.food_recipe.drying", {
 			circuit: 6,
 			itemInputs: [item.input],
 			itemOutputs: [item.output],
@@ -460,7 +461,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	global.FOOD_FRUIT.forEach(fruit => {
-		processorRecipeText(`${fruit.name}/drying`, 100, 120, "tfg.food_recipe.freeze_drying", {
+		global.processorRecipeText(event, `${fruit.name}/drying`, 100, 120, "tfg.food_recipe.freeze_drying", {
 			circuit: 7,
 			itemInputs: [fruit.id, 'tfg:foil_pack', 'tfg:dry_ice'],
 			itemOutputs: [`tfg:food/freeze_dried/${fruit.name}`],
@@ -472,7 +473,7 @@ function registerTFGFoodRecipes(event) {
 
 	//#region Meal Bags
 	//1 Input
-	processorRecipeText('meal_bag/1', 100, 120, "tfg.food_recipe.freeze_drying", {
+	global.processorRecipeText(event, 'meal_bag/1', 100, 120, "tfg.food_recipe.freeze_drying", {
 		circuit: 10,
 		itemInputs: ['1x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
 		itemOutputs: ['2x tfg:food/meal_bag'],
@@ -483,7 +484,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	//2 Input
-	processorRecipeText('meal_bag/2', 100, 120, "tfg.food_recipe.freeze_drying", {
+	global.processorRecipeText(event, 'meal_bag/2', 100, 120, "tfg.food_recipe.freeze_drying", {
 		circuit: 11,
 		itemInputs: ['2x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
 		itemOutputs: ['2x tfg:food/meal_bag'],
@@ -494,7 +495,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	//3 Input
-	processorRecipeText('meal_bag/3', 100, 120, "tfg.food_recipe.freeze_drying", {
+	global.processorRecipeText(event, 'meal_bag/3', 100, 120, "tfg.food_recipe.freeze_drying", {
 		circuit: 12,
 		itemInputs: ['3x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
 		itemOutputs: ['2x tfg:food/meal_bag'],
@@ -505,7 +506,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	//4 Input
-	processorRecipeText('meal_bag/4', 100, 120, "tfg.food_recipe.freeze_drying", {
+	global.processorRecipeText(event, 'meal_bag/4', 100, 120, "tfg.food_recipe.freeze_drying", {
 		circuit: 13,
 		itemInputs: ['4x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
 		itemOutputs: ['2x tfg:food/meal_bag'],
@@ -516,7 +517,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	//5 Input
-	processorRecipeText('meal_bag/5', 100, 120, "tfg.food_recipe.freeze_drying", {
+	global.processorRecipeText(event, 'meal_bag/5', 100, 120, "tfg.food_recipe.freeze_drying", {
 		circuit: 14,
 		itemInputs: ['5x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
 		itemOutputs: ['2x tfg:food/meal_bag'],
@@ -531,7 +532,7 @@ function registerTFGFoodRecipes(event) {
 	//#region Jams
 
 	global.TFC_JAMS.forEach(name => {
-		processorRecipe(`${name}_jam`, 200, 8, {
+		global.processorRecipe(event, `${name}_jam`, 200, 8, {
 			circuit: 15,
 			itemInputs: [`4x tfc:food/${name}`, "#tfc:sweetener", "4x #tfc:empty_jar_with_lid"],
 			fluidInputs: ['#tfg:clean_water 100'],
@@ -539,7 +540,7 @@ function registerTFGFoodRecipes(event) {
 			itemOutputProvider: TFC.isp.of(`4x tfc:jar/${name}`).copyFood()
 		})
 
-		processorRecipe(`${name}_jam_no_seal`, 200, 8, {
+		global.processorRecipe(event, `${name}_jam_no_seal`, 200, 8, {
 			circuit: 16,
 			itemInputs: [`4x tfc:food/${name}`, "#tfc:sweetener", "4x tfc:empty_jar"],
 			fluidInputs: ['#tfg:clean_water 100'],
@@ -549,7 +550,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	global.FIRMALIFE_JAMS.forEach(name => {
-		processorRecipe(`${name}_jam`, 200, 8, {
+		global.processorRecipe(event, `${name}_jam`, 200, 8, {
 			circuit: 15,
 			itemInputs: [`4x firmalife:food/${name}`, "#tfc:sweetener", "4x #tfc:empty_jar_with_lid"],
 			fluidInputs: ['#tfg:clean_water 100'],
@@ -557,7 +558,7 @@ function registerTFGFoodRecipes(event) {
 			itemOutputProvider: TFC.isp.of(`4x firmalife:jar/${name}`).copyFood()
 		})
 
-		processorRecipe(`${name}_jam_no_seal`, 200, 8, {
+		global.processorRecipe(event, `${name}_jam_no_seal`, 200, 8, {
 			circuit: 16,
 			itemInputs: [`4x firmalife:food/${name}`, "#tfc:sweetener", "4x tfc:empty_jar"],
 			fluidInputs: ['#tfg:clean_water 100'],
@@ -569,21 +570,21 @@ function registerTFGFoodRecipes(event) {
 	//#endregion
 	//#region Misc
 
-	cookingRecipe("pasta", "firmalife:food/raw_egg_noodles", "firmalife:food/cooked_pasta", "#tfg:clean_water 100")
+	global.cookingRecipe(event, "pasta", "firmalife:food/raw_egg_noodles", "firmalife:food/cooked_pasta", "#tfg:clean_water 100")
 
-	cookingRecipe("corn_tortilla", "firmalife:food/masa", "firmalife:food/corn_tortilla")
+	global.cookingRecipe(event, "corn_tortilla", "firmalife:food/masa", "firmalife:food/corn_tortilla")
 
-	cookingRecipe("baked_potato", "tfc:food/potato", "tfc:food/baked_potato")
+	global.cookingRecipe(event, "baked_potato", "tfc:food/potato", "tfc:food/baked_potato")
 
-	cookingRecipe("cooked_rice", "tfc:food/rice_grain", "tfc:food/cooked_rice", "#tfg:clean_water 200")
+	global.cookingRecipe(event, "cooked_rice", "tfc:food/rice_grain", "tfc:food/cooked_rice", "#tfg:clean_water 200")
 
-	processorRecipe("pasta_tomato_sauce", 60, 8, {
+	global.processorRecipe(event, "pasta_tomato_sauce", 60, 8, {
 		itemInputs: ["firmalife:food/cooked_pasta", "firmalife:food/tomato_sauce"],
 		itemOutputs: ["firmalife:food/pasta_with_tomato_sauce"],
 		itemOutputProvider: TFC.isp.of('firmalife:food/pasta_with_tomato_sauce').copyFood()
 	})
 
-	processorRecipe(`masa_flour`, 100, 8, {
+	global.processorRecipe(event, `masa_flour`, 100, 8, {
 		circuit: 31,
 		itemInputs: [`firmalife:food/nixtamal`],
 		itemOutputs: [`4x firmalife:food/masa_flour`],
@@ -608,7 +609,7 @@ function registerTFGFoodRecipes(event) {
 			B: '#forge:tools/mortars'
 		}, 0, 0).id(`tfg:mortar/olive_paste`)
 
-	processorRecipe('firmalife_masa', 300, 2, {
+	global.processorRecipe(event, 'firmalife_masa', 300, 2, {
 		circuit: 3,
 		itemInputs: ["firmalife:food/masa_flour"],
 		fluidInputs: ['#tfg:clean_water 100'],
@@ -616,13 +617,13 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of("2x firmalife:food/masa").copyFood()
 	})
 
-	processorRecipe("tortilla_chips", 40, 16, {
+	global.processorRecipe(event, "tortilla_chips", 40, 16, {
 		itemInputs: ["firmalife:food/taco_shell", "tfc:powder/salt"],
 		itemOutputs: ["firmalife:food/tortilla_chips"],
 		itemOutputProvider: TFC.isp.of("firmalife:food/tortilla_chips").copyFood()
 	})
 	
-	processorRecipe("tomato_sauce", 300, 8, {
+	global.processorRecipe(event, "tomato_sauce", 300, 8, {
 		circuit: 1,
 		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'tfc:food/garlic'],
 		fluidInputs: ['#tfg:clean_water 200'],
@@ -630,34 +631,34 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('5x firmalife:food/tomato_sauce').copyOldestFood()
 	})
 
-	processorRecipe("tomato_sauce_mix", 600, 8, {
+	global.processorRecipe(event, "tomato_sauce_mix", 600, 8, {
 		circuit: 2,
 		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'tfc:food/garlic'],
 		itemOutputs: ['5x firmalife:food/tomato_sauce_mix'],
 		itemOutputProvider: TFC.isp.of('5x firmalife:food/tomato_sauce_mix').copyOldestFood()
 	})
 
-	processorRecipe("tomato_sauce_from_mix", 200, 8, {
+	global.processorRecipe(event, "tomato_sauce_from_mix", 200, 8, {
 		itemInputs: ['firmalife:food/tomato_sauce_mix'],
 		fluidInputs: ['#tfg:clean_water 200'],
 		itemOutputs: ['firmalife:food/tomato_sauce'],
 		itemOutputProvider: TFC.isp.of('firmalife:food/tomato_sauce').copyOldestFood()
 	})
 
-	processorRecipe("olive_paste", 60, 8, {
+	global.processorRecipe(event, "olive_paste", 60, 8, {
 		itemInputs: ['tfc:food/olive'],
 		itemOutputs: ['2x tfc:olive_paste'],
 		itemOutputProvider: TFC.isp.of('2x tfc:olive_paste'),
 		circuit: 3
 	})
 
-	processorRecipe("soybean_paste", 60, 8, {
+	global.processorRecipe(event, "soybean_paste", 60, 8, {
 		itemInputs: ['firmalife:food/dehydrated_soybeans'],
 		itemOutputs: ['firmalife:food/soybean_paste'],
 		itemOutputProvider: TFC.isp.of('firmalife:food/soybean_paste').copyOldestFood()
 	})
 
-	processorRecipeText('calorie_paste', 100, 512, "tfg.food_recipe.freeze_drying", {
+	global.processorRecipeText(event, 'calorie_paste', 100, 512, "tfg.food_recipe.freeze_drying", {
 		circuit: 8,
 		itemInputs: ['firmalife:food/soybean_paste', 'tfg:foil_pack', '2x gtceu:small_meat_dust', 'tfg:dry_ice'],
 		itemOutputs: ['tfg:food/calorie_paste'],
@@ -665,7 +666,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('tfg:food/calorie_paste').copyOldestFood().addTrait('tfg:freeze_dried')
 	})
 
-	processorRecipe("boiled_egg", 200, 16, {
+	global.processorRecipe(event, "boiled_egg", 200, 16, {
 		circuit: 1,
 		itemInputs: ["#firmalife:foods/raw_eggs"],
 		fluidInputs: ["#tfg:clean_water 200"],
@@ -674,16 +675,16 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	//Kelp
-	cookingRecipe("dried_kelp_a", "tfc:plant/winged_kelp", "tfc:food/dried_kelp")
-	cookingRecipe("dried_kelp_b", "tfc:plant/leafy_kelp", "tfc:food/dried_kelp")
-	cookingRecipe("dried_kelp_c", "tfc:plant/giant_kelp_flower", "tfc:food/dried_kelp")
+	global.cookingRecipe(event, "dried_kelp_a", "tfc:plant/winged_kelp", "tfc:food/dried_kelp")
+	global.cookingRecipe(event, "dried_kelp_b", "tfc:plant/leafy_kelp", "tfc:food/dried_kelp")
+	global.cookingRecipe(event, "dried_kelp_c", "tfc:plant/giant_kelp_flower", "tfc:food/dried_kelp")
 		
 	//Seaweed
-	cookingRecipe("dried_seaweed_a", "tfc:food/fresh_seaweed", "tfc:food/dried_seaweed")
-	cookingRecipe("dried_seaweed_b", "tfc:groundcover/seaweed", "tfc:food/dried_seaweed")
+	global.cookingRecipe(event, "dried_seaweed_a", "tfc:food/fresh_seaweed", "tfc:food/dried_seaweed")
+	global.cookingRecipe(event, "dried_seaweed_b", "tfc:groundcover/seaweed", "tfc:food/dried_seaweed")
 	
 	// Vinegar
-	processorRecipe('vinegar_alcohol', 600, GTValues.VA[GTValues.LV], {
+	global.processorRecipe(event, 'vinegar_alcohol', 600, GTValues.VA[GTValues.LV], {
 		circuit: 5,
 		itemInputs: ['#tfc:foods/fruits'],
 		fluidInputs: ['#tfg:alcohols 250'],
@@ -692,7 +693,7 @@ function registerTFGFoodRecipes(event) {
 
 	//#region Pizza
 
-	processorRecipe("pizza_no_extra", 600, 16, {
+	global.processorRecipe(event, "pizza_no_extra", 600, 16, {
 		circuit: 3,
 		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese"],
 		itemOutputs: ["firmalife:food/raw_pizza"],
@@ -702,7 +703,7 @@ function registerTFGFoodRecipes(event) {
 		)
 	})
 
-	processorRecipe("pizza_1_extra", 600, GTValues.VHA[GTValues.MV], {
+	global.processorRecipe(event, "pizza_1_extra", 600, GTValues.VHA[GTValues.MV], {
 		circuit: 1,
 		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese", "#firmalife:foods/pizza_ingredients"],
 		itemOutputs: ["firmalife:food/raw_pizza"],
@@ -712,7 +713,7 @@ function registerTFGFoodRecipes(event) {
 		)
 	})
 
-	processorRecipe("pizza_2_extra", 600, GTValues.VHA[GTValues.MV], {
+	global.processorRecipe(event, "pizza_2_extra", 600, GTValues.VHA[GTValues.MV], {
 		circuit: 2,
 		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese", "2x #firmalife:foods/pizza_ingredients"],
 		itemOutputs: ["firmalife:food/raw_pizza"],
@@ -722,7 +723,7 @@ function registerTFGFoodRecipes(event) {
 		)
 	})
 
-	processorRecipe("pizza_dough", 300, 16, {
+	global.processorRecipe(event, "pizza_dough", 300, 16, {
 		itemInputs: ['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt'],
 		fluidInputs: ['#firmalife:oils 100'],
 		itemOutputs: ['4x firmalife:food/pizza_dough'],
@@ -731,14 +732,14 @@ function registerTFGFoodRecipes(event) {
 
 	//#endregion
 
-	processorRecipe("shredded_cheese", 100, 16, {
+	global.processorRecipe(event, "shredded_cheese", 100, 16, {
 		itemInputs: ['#firmalife:foods/cheeses'],
 		itemOutputs: ['4x firmalife:food/shredded_cheese'],
 		circuit: 30,
 		itemOutputProvider: TFC.isp.of('4x firmalife:food/shredded_cheese').copyFood()
 	})
 
-	processorRecipe("basil", 20, 16, {
+	global.processorRecipe(event, "basil", 20, 16, {
 		itemInputs: ['firmalife:plant/basil'],
 		itemOutputs: ['2x firmalife:spice/basil_leaves'],
 		circuit: 30,
@@ -747,33 +748,33 @@ function registerTFGFoodRecipes(event) {
 
 	//#region Ice cream
 
-	processorRecipe("vanilla_ice_cream", 300, 16, {
+	global.processorRecipe(event, "vanilla_ice_cream", 300, 16, {
 		itemInputs: ['firmalife:ice_shavings', '#tfc:sweetener', 'firmalife:spice/vanilla'],
 		itemOutputs: ['2x firmalife:food/vanilla_ice_cream'],
 		fluidInputs: [Fluid.of('firmalife:cream', 1000)],
 		itemOutputProvider: TFC.isp.of("2x firmalife:food/vanilla_ice_cream").resetFood()
 	})
 
-	processorRecipe("chocolate_ice_cream", 300, 16, {
+	global.processorRecipe(event, "chocolate_ice_cream", 300, 16, {
 		itemInputs: ['firmalife:food/vanilla_ice_cream'],
 		itemOutputs: ['firmalife:food/chocolate_ice_cream'],
 		fluidInputs: [Fluid.of('tfcchannelcasting:milk_chocolate', 100)],
 		itemOutputProvider: TFC.isp.of("firmalife:food/chocolate_ice_cream").resetFood()
 	})
 
-	processorRecipe("strawberry_ice_cream", 300, 16, {
+	global.processorRecipe(event, "strawberry_ice_cream", 300, 16, {
 		itemInputs: ['firmalife:food/vanilla_ice_cream', '2x tfc:food/strawberry'],
 		itemOutputs: ['firmalife:food/strawberry_ice_cream'],
 		itemOutputProvider: TFC.isp.of("firmalife:food/strawberry_ice_cream").resetFood()
 	})
 
-	processorRecipe("cookie_dough_ice_cream", 300, 16, {
+	global.processorRecipe(event, "cookie_dough_ice_cream", 300, 16, {
 		itemInputs: [`firmalife:food/vanilla_ice_cream`, `firmalife:food/chocolate_chip_cookie_dough`],
 		itemOutputs: [`2x firmalife:food/cookie_dough_ice_cream`],
 		itemOutputProvider: TFC.isp.of("firmalife:food/cookie_dough_ice_cream").resetFood()
 	})
 
-	processorRecipe("banana_split", 500, 16, {
+	global.processorRecipe(event, "banana_split", 500, 16, {
 		itemInputs: ['firmalife:food/vanilla_ice_cream', 'firmalife:food/strawberry_ice_cream', 'firmalife:food/chocolate_ice_cream', 'firmalife:food/pineapple', 'tfc:food/cherry', '2x tfc:food/banana'],
 		itemOutputs: ['2x firmalife:food/banana_split'],
 		itemOutputProvider: TFC.isp.of('2x firmalife:food/banana_split').resetFood()
@@ -781,14 +782,14 @@ function registerTFGFoodRecipes(event) {
 
 	//#endregion
 
-	processorRecipe("butter", 300, 16, {
+	global.processorRecipe(event, "butter", 300, 16, {
 		itemInputs: ["tfc:powder/salt"],
 		fluidInputs: [Fluid.of('firmalife:cream', 1000)],
 		itemOutputs: ["firmalife:food/butter"],
 		itemOutputProvider: TFC.isp.of('firmalife:food/butter').resetFood()
 	})
 
-	processorRecipe("pie_dough", 300, 16, {
+	global.processorRecipe(event, "pie_dough", 300, 16, {
 		circuit: 2,
 		itemInputs: ['#tfc:sweetener', 'firmalife:food/butter', '#tfc:foods/flour'],
 		fluidInputs: ['#tfg:clean_water 1000'],
@@ -796,7 +797,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('firmalife:food/pie_dough').copyOldestFood()
 	})
 
-	processorRecipe("pumpkin_pie_dough", 300, 16, {
+	global.processorRecipe(event, "pumpkin_pie_dough", 300, 16, {
 		circuit: 2,
 		itemInputs: ['#tfc:sweetener', '#forge:eggs', '2x tfc:food/pumpkin_chunks', '#tfc:foods/flour'],
 		fluidInputs: ['#tfg:clean_water 1000'],
@@ -804,25 +805,25 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('firmalife:food/pumpkin_pie_dough').copyOldestFood()
 	})
 
-	processorRecipe("raw_pumpkin_pie", 20, 8, {
+	global.processorRecipe(event, "raw_pumpkin_pie", 20, 8, {
 		itemInputs: ["firmalife:food/pumpkin_pie_dough", "#firmalife:pie_pans"],
 		itemOutputs: ["firmalife:food/raw_pumpkin_pie"],
 		itemOutputProvider: TFC.isp.of("firmalife:food/raw_pumpkin_pie").copyFood()
 	})
 
-	processorRecipe("cookie_dough", 300, 16, {
+	global.processorRecipe(event, "cookie_dough", 300, 16, {
 		itemInputs: ['#tfc:sweetener', '#forge:eggs', 'firmalife:food/butter', '#tfc:foods/flour', "firmalife:spice/vanilla"],
 		itemOutputs: ['4x firmalife:food/cookie_dough'],
 		itemOutputProvider: TFC.isp.of('4x firmalife:food/cookie_dough').copyOldestFood()
 	})
 
-	processorRecipe("chocolate_chip_cookie_dough", 300, 16, {
+	global.processorRecipe(event, "chocolate_chip_cookie_dough", 300, 16, {
 		itemInputs: ['4x firmalife:food/cookie_dough', '#firmalife:foods/chocolate'],
 		itemOutputs: ['4x firmalife:food/chocolate_chip_cookie_dough'],
 		itemOutputProvider: TFC.isp.of('4x firmalife:food/chocolate_chip_cookie_dough').copyOldestFood()
 	})
 
-	processorRecipe("hardtack_dough", 300, 16, {
+	global.processorRecipe(event, "hardtack_dough", 300, 16, {
 		itemInputs: ['tfc:powder/salt', '#tfc:foods/flour'],
 		fluidInputs: ['#tfg:clean_water 1000'],
 		itemOutputs: ['4x firmalife:food/hardtack_dough'],
@@ -830,47 +831,47 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('4x firmalife:food/hardtack_dough').copyFood()
 	})
 
-	processorRecipe("yeast_starter", 1200, 8, {
+	global.processorRecipe(event, "yeast_starter", 1200, 8, {
 		circuit: 2,
 		fluidInputs: [Fluid.of('firmalife:yeast_starter', 100)],
 		fluidOutputs: [Fluid.of('firmalife:yeast_starter', 600)],
 		itemInputs: ['#tfc:foods/flour']
 	})
 
-	processorRecipe("yeast_starter_from_water", 7200, 8, {
+	global.processorRecipe(event, "yeast_starter_from_water", 7200, 8, {
 		circuit: 10,
 		itemInputs: ['#tfc:foods/fruits'],
 		fluidInputs: ['#tfg:clean_water 100'],
 		fluidOutputs: [Fluid.of('firmalife:yeast_starter', 100)]
 	})
 	
-	processorRecipe("cocoa_dust", 100, 4, {
+	global.processorRecipe(event, "cocoa_dust", 100, 4, {
 		circuit: 1,
 		itemInputs: ["firmalife:food/roasted_cocoa_beans"],
 		itemOutputs: ["gtceu:cocoa_dust"],
 		itemOutputProvider: TFC.isp.of("gtceu:cocoa_dust")
 	})
 
-	processorRecipe("cocoa_butter", 100, 4, {
+	global.processorRecipe(event, "cocoa_butter", 100, 4, {
 		circuit: 2,
 		itemInputs: ["firmalife:food/roasted_cocoa_beans"],
 		itemOutputs: ["firmalife:food/cocoa_butter"],
 		itemOutputProvider: TFC.isp.of("firmalife:food/cocoa_butter")
 	})
 
-	processorRecipe("red_grapes", 50, 8, {
+	global.processorRecipe(event, "red_grapes", 50, 8, {
 		itemInputs: ["firmalife:food/red_grapes"],
 		itemOutputs: ["firmalife:food/smashed_red_grapes"],
 		itemOutputProvider: TFC.isp.of('firmalife:food/smashed_red_grapes').copyFood()
 	})
 
-	processorRecipe("white_grapes", 50, 8, {
+	global.processorRecipe(event, "white_grapes", 50, 8, {
 		itemInputs: ["firmalife:food/white_grapes"],
 		itemOutputs: ["firmalife:food/smashed_white_grapes"],
 		itemOutputProvider: TFC.isp.of('firmalife:food/smashed_white_grapes').copyFood()
 	})
 
-	processorRecipe("cured_maize", 300, 8, {
+	global.processorRecipe(event, "cured_maize", 300, 8, {
 		circuit: 1,
 		itemInputs: ["tfc:food/maize_grain"],
 		inputFluids: [Fluid.of('tfc:limewater', 100)],
@@ -878,7 +879,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('firmalife:food/cured_maize').copyFood()
 	})
 
-	processorRecipe("soy_mixture", 300, 8, {
+	global.processorRecipe(event, "soy_mixture", 300, 8, {
 		circuit: 1,
 		itemInputs: ["tfc:food/soybean", 'tfc:powder/salt'],
 		fluidInputs: ['#tfg:clean_water 50'],
@@ -886,56 +887,56 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('firmalife:food/soy_mixture').copyFood()
 	})
 
-	processorRecipe("brown_mushroom", 100, 8, {
+	global.processorRecipe(event, "brown_mushroom", 100, 8, {
 		circuit: 30,
 		itemInputs: ["minecraft:brown_mushroom_block"],
 		itemOutputs: ["4x minecraft:brown_mushroom"],
 		itemOutputProvider: TFC.isp.of("4x minecraft:brown_mushroom").resetFood()
 	})
 
-	processorRecipe("red_mushroom", 100, 8, {
+	global.processorRecipe(event, "red_mushroom", 100, 8, {
 		circuit: 30,
 		itemInputs: ["minecraft:red_mushroom_block"],
 		itemOutputs: ["4x minecraft:red_mushroom"],
 		itemOutputProvider: TFC.isp.of("4x minecraft:red_mushroom").resetFood()
 	})
 
-	processorRecipe("cut_pumpkin", 100, 8, {
+	global.processorRecipe(event, "cut_pumpkin", 100, 8, {
 		circuit: 30,
 		itemInputs: ["tfc:pumpkin"],
 		itemOutputs: ["4x tfc:food/pumpkin_chunks"],
 		itemOutputProvider: TFC.isp.of("4x tfc:food/pumpkin_chunks").copyFood()
 	})
 
-	processorRecipe("cut_melon", 100, 8, {
+	global.processorRecipe(event, "cut_melon", 100, 8, {
 		circuit: 30,
 		itemInputs: ["tfc:melon"],
 		itemOutputs: ["4x tfc:food/melon_slice"],
 		itemOutputProvider: TFC.isp.of("4x tfc:food/melon_slice").copyFood()
 	})
 
-	processorRecipe("salsa", 300, 8, {
+	global.processorRecipe(event, "salsa", 300, 8, {
 		circuit: 1,
 		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'tfg:spice/cilantro_leaves'],
 		itemOutputs: ['5x firmalife:food/salsa'],
 		itemOutputProvider: TFC.isp.of('5x firmalife:food/salsa').copyFood()
 	})
 
-	processorRecipe("bacon", 300, 8, {
+	global.processorRecipe(event, "bacon", 300, 8, {
 		circuit: 1,
 		itemInputs: ['tfc:food/pork', 'tfc:powder/salt'],
 		itemOutputs: ['4x firmalife:food/bacon'],
 		itemOutputProvider: TFC.isp.of('4x firmalife:food/bacon').copyFood()
 	})
 
-	processorRecipe("pickled_egg", 1000, 8, {
+	global.processorRecipe(event, "pickled_egg", 1000, 8, {
 		circuit: 1,
 		itemInputs: ['minecraft:clay_ball', 'tfc:powder/wood_ash', 'tfc:powder/salt', 'tfc:food/boiled_egg'],
 		itemOutputs: ['firmalife:food/pickled_egg'],
 		itemOutputProvider: TFC.isp.of('firmalife:food/pickled_egg').copyFood()
 	})
 
-	processorRecipe("garlic_bread", 300, 8, {
+	global.processorRecipe(event, "garlic_bread", 300, 8, {
 		circuit: 1,
 		itemInputs: ['firmalife:food/toast', 'firmalife:food/butter', 'tfc:food/garlic'],
 		itemOutputs: ['firmalife:food/garlic_bread'],
@@ -945,7 +946,7 @@ function registerTFGFoodRecipes(event) {
 	//#region Alcohols
 
 	global.TFC_ALCOHOL.forEach(alcohol => {
-		processorRecipe(alcohol.id.replace(/:/g, "_"), 2400, 1, {
+		global.processorRecipe(event, alcohol.id.replace(/:/g, "_"), 2400, 1, {
 			itemInputs: [alcohol.ingredient],
 			fluidInputs: ['#tfg:clean_water 500', 'firmalife:yeast_starter 10'],
 			fluidOutputs: [Fluid.of(alcohol.id, 500)],
@@ -957,7 +958,7 @@ function registerTFGFoodRecipes(event) {
 	//#endregion
 	//#region Cakes
 
-	processorRecipe("cake_base", 300, 8, {
+	global.processorRecipe(event, "cake_base", 300, 8, {
 		circuit: 4,
 		itemInputs: ["#forge:eggs", "2x #tfg:sugars", "2x #tfc:foods/flour"],
 		fluidInputs: ['#tfc:milks 1000'],
@@ -965,44 +966,44 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of("createaddition:cake_base").copyOldestFood()
 	})
 
-	cookingRecipe("baked_cake_base", "createaddition:cake_base", "createaddition:cake_base_baked")
+	global.cookingRecipe(event, "baked_cake_base", "createaddition:cake_base", "createaddition:cake_base_baked")
 
-	processorRecipe("vanilla_cake", 300, 8, {
+	global.processorRecipe(event, "vanilla_cake", 300, 8, {
 		itemInputs: ['createaddition:cake_base_baked', '3x tfc:food/strawberry', 'firmalife:spice/vanilla'],
 		fluidInputs: [Fluid.of("tfcchannelcasting:white_chocolate", 400)],
 		itemOutputs: ["tfc:cake"],
 		itemOutputProvider: TFC.isp.of("tfc:cake").copyOldestFood()
 	})
 
-	processorRecipe("milk_chocolate_cake", 300, 8, {
+	global.processorRecipe(event, "milk_chocolate_cake", 300, 8, {
 		itemInputs: ['createaddition:cake_base_baked', '3x tfc:food/cherry', 'firmalife:food/cocoa_powder'],
 		fluidInputs: [Fluid.of("tfcchannelcasting:milk_chocolate", 400)],
 		itemOutputs: ["createaddition:chocolate_cake"],
 		itemOutputProvider: TFC.isp.of("createaddition:chocolate_cake").copyOldestFood()
 	})
 
-	processorRecipe("dark_chocolate_cake", 300, 8, {
+	global.processorRecipe(event, "dark_chocolate_cake", 300, 8, {
 		itemInputs: ['createaddition:cake_base_baked', '3x tfc:food/cherry', 'firmalife:food/cocoa_powder'],
 		fluidInputs: [Fluid.of("tfcchannelcasting:dark_chocolate", 400)],
 		itemOutputs: ["createaddition:chocolate_cake"],
 		itemOutputProvider: TFC.isp.of("createaddition:chocolate_cake").copyOldestFood()
 	})
 
-	processorRecipe("maple_honey_cake", 300, 8, {
+	global.processorRecipe(event, "maple_honey_cake", 300, 8, {
 		itemInputs: ['createaddition:cake_base_baked', '4x firmalife:raw_honey'],
 		fluidInputs: [Fluid.of("afc:maple_syrup", 1000)],
 		itemOutputs: ["createaddition:honey_cake"],
 		itemOutputProvider: TFC.isp.of("createaddition:honey_cake").copyOldestFood()
 	})
 
-	processorRecipe("birch_honey_cake", 300, 8, {
+	global.processorRecipe(event, "birch_honey_cake", 300, 8, {
 		itemInputs: ['createaddition:cake_base_baked', '4x firmalife:raw_honey'],
 		fluidInputs: [Fluid.of("afc:birch_syrup", 1000)],
 		itemOutputs: ["createaddition:honey_cake"],
 		itemOutputProvider: TFC.isp.of("createaddition:honey_cake").copyOldestFood()
 	})
 
-	processorRecipe("birtday_cake", 300, GTValues.VA[GTValues.HV], {
+	global.processorRecipe(event, "birtday_cake", 300, GTValues.VA[GTValues.HV], {
 		itemInputs: ['createaddition:cake_base', '4x species:birt_egg', '4x tfc:food/blueberry', '2x minecraft:chorus_fruit', 'gtceu:blue_alloy_single_wire'],
 		fluidInputs: [Fluid.of('gtceu:helium_3', 50)],
 		itemOutputs: ["species:birtday_cake"],
@@ -1012,7 +1013,7 @@ function registerTFGFoodRecipes(event) {
 	//#endregion
 	//#region Soup
 
-    processorRecipe("grain_soup", 300, 8, {
+    global.processorRecipe(event, "grain_soup", 300, 8, {
         circuit: 20,
         itemInputs: [
             '3x #tfc:bowls',
@@ -1033,7 +1034,7 @@ function registerTFGFoodRecipes(event) {
         )
     })
 
-    processorRecipe("fruit_soup", 200, 8, {
+    global.processorRecipe(event, "fruit_soup", 200, 8, {
         circuit: 21,
         itemInputs: [
             '3x #tfc:bowls',
@@ -1054,7 +1055,7 @@ function registerTFGFoodRecipes(event) {
         )
     })
 
-    processorRecipe("vegetables_soup", 200, 8, {
+    global.processorRecipe(event, "vegetables_soup", 200, 8, {
         circuit: 22,
         itemInputs: [
             '3x #tfc:bowls',
@@ -1075,7 +1076,7 @@ function registerTFGFoodRecipes(event) {
         )
     })
 
-    processorRecipe("protein_soup", 200, 8, {
+    global.processorRecipe(event, "protein_soup", 200, 8, {
         circuit: 23,
         itemInputs: [
             '3x #tfc:bowls',
@@ -1096,7 +1097,7 @@ function registerTFGFoodRecipes(event) {
         )
     })
 
-    processorRecipe("dairy_soup", 200, 8, {
+    global.processorRecipe(event, "dairy_soup", 200, 8, {
         circuit: 24,
         itemInputs: [
             '3x #tfc:bowls',
@@ -1173,17 +1174,20 @@ function registerTFGFoodRecipes(event) {
 	//#endregion
 	
 	//Golden Apple
-	processorRecipe('golden_apple_from_red', 30 * 20, GTValues.VA[GTValues.HV], {
+	global.processorRecipe(event, 'golden_apple_from_red', 30 * 20, GTValues.VA[GTValues.HV], {
 		itemInputs: ['tfc:food/red_apple'],
 		fluidInputs: [Fluid.of('gtceu:gold', 144 * 8)],
 		itemOutputs: ['minecraft:golden_apple'],
-		circuit: 5
+		circuit: 5,
+		itemOutputProvider: TFC.isp.of('minecraft:golden_apple').resetFood()
 	})
-	processorRecipe('golden_apple_from_green', 30 * 20, GTValues.VA[GTValues.HV], {
+
+	global.processorRecipe(event, 'golden_apple_from_green', 30 * 20, GTValues.VA[GTValues.HV], {
 		itemInputs: ['tfc:food/green_apple'],
 		fluidInputs: [Fluid.of('gtceu:gold', 144 * 8)],
 		itemOutputs: ['minecraft:golden_apple'],
-		circuit: 5
+		circuit: 5,
+		itemOutputProvider: TFC.isp.of('minecraft:golden_apple').resetFood()
 	})
 
 	//#region New foods
@@ -1276,14 +1280,14 @@ function registerTFGFoodRecipes(event) {
 		[TFC.ingredient.notRotten('betterend:cave_pumpkin'), '#tfc:knives'], 'betterend:cave_pumpkin')
 		.id(`tfg:crafting/cave_pumpkin_chunks_knife`)
 
-	processorRecipe("cut_cave_pumpkin", 100, 8, {
+	global.processorRecipe(event, "cut_cave_pumpkin", 100, 8, {
 		circuit: 30,
 		itemInputs: ["betterend:cave_pumpkin"],
 		itemOutputs: ["4x betterend:cave_pumpkin_chunks"],
 		itemOutputProvider: TFC.isp.of("4x betterend:cave_pumpkin_chunks").copyFood()
 	})
 
-	processorRecipe("cave_pumpkin_pie_dough", 300, GTValues.VA[GTValues.HV], {
+	global.processorRecipe(event, "cave_pumpkin_pie_dough", 300, GTValues.VA[GTValues.HV], {
 		itemInputs: ['#tfg:martian_eggs', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', 'tfg:wraptor_sugar'],
 		fluidInputs: ['minecraft:water 1000'],
 		itemOutputs: ["betterend:cave_pumpkin_pie_dough"],
@@ -1307,7 +1311,7 @@ function registerTFGFoodRecipes(event) {
 			'#firmalife:pie_pans'
 		]).id(`tfg:shapeless/cave_pumpkin_pie_raw`)
 
-	processorRecipe("raw_cave_pumpkin_pie", 20, 8, {
+	global.processorRecipe(event, "raw_cave_pumpkin_pie", 20, 8, {
 		itemInputs: [`betterend:cave_pumpkin_pie_dough`, "#firmalife:pie_pans"],
 		itemOutputs: ["betterend:cave_pumpkin_pie_raw"],
 		itemOutputProvider: TFC.isp.of("betterend:cave_pumpkin_pie_raw").copyFood()
@@ -1315,7 +1319,7 @@ function registerTFGFoodRecipes(event) {
 
 	// Dino nugs
 
-	registerFoodRecipe("food_oven", "raw_dino_nugget", 300, GTValues.VA[GTValues.LV], 'tfg.food_recipe.deep_frying', {
+	global.registerFoodRecipe(event, "food_oven", "raw_dino_nugget", 300, GTValues.VA[GTValues.LV], 'tfg.food_recipe.deep_frying', {
 		itemInputs: ["tfg:food/raw_dino_nugget"],
 		itemOutputs: ["tfg:food/cooked_dino_nugget"],
 		fluidInputs: ['#firmalife:oils 100'],
@@ -1327,7 +1331,7 @@ function registerTFGFoodRecipes(event) {
 				[(portion) => portion.nutrientModifier(2.0)])
 	})
 
-	processorRecipe("raw_dino_nuggets", 300, GTValues.VA[GTValues.HV], {
+	global.processorRecipe(event, "raw_dino_nuggets", 300, GTValues.VA[GTValues.HV], {
 		itemInputs: ['#tfg:raw_dinosaur_meat', '3x #tfc:foods/flour', 'tfc:powder/salt'],
 		fluidInputs: ['tfc:beer 200'],
 		notConsumable: ['gtceu:nugget_casting_mold'],
@@ -1339,7 +1343,7 @@ function registerTFGFoodRecipes(event) {
 		)
 	})
 
-	processorRecipe("raw_dino_nuggets_aged_beer", 300, GTValues.VA[GTValues.HV], {
+	global.processorRecipe(event, "raw_dino_nuggets_aged_beer", 300, GTValues.VA[GTValues.HV], {
 		itemInputs: ['#tfg:raw_dinosaur_meat', '3x #tfc:foods/flour', 'tfc:powder/salt'],
 		fluidInputs: ['tfcagedalcohol:aged_beer 200'],
 		notConsumable: ['gtceu:nugget_casting_mold'],
@@ -1381,14 +1385,14 @@ function registerTFGFoodRecipes(event) {
 		'tfc:food/potato'
 	).id(`tfg:crafting/raw_fries_knife`);
 
-	processorRecipe('raw_fries', 20*1, 8, {
+	global.processorRecipe(event, 'raw_fries', 20*1, 8, {
 		itemInputs: ['tfc:food/potato'],
 		itemOutputs: ['4x tfg:food/raw_fries'],
 		circuit: 7,
 		itemOutputProvider: TFC.isp.of('4x tfg:food/raw_fries').copyFood()
 	});
 
-	registerFoodRecipe('food_oven', 'cooked_fries', 20*6, GTValues.VA[GTValues.ULV], 'tfg.food_recipe.deep_frying', {
+	global.registerFoodRecipe(event, 'food_oven', 'cooked_fries', 20*6, GTValues.VA[GTValues.ULV], 'tfg.food_recipe.deep_frying', {
 		itemInputs: ['tfg:food/raw_fries'],
 		itemOutputs: ['tfg:food/cooked_fries'],
 		fluidInputs: ['#firmalife:oils 100'],
@@ -1396,7 +1400,7 @@ function registerTFGFoodRecipes(event) {
 	});
 
 	// Beer Battered Cheese Curds
-	registerFoodRecipe('food_oven', 'cooked_beer_battered_cheese_curds', 20*6, GTValues.VA[GTValues.ULV], 'tfg.food_recipe.deep_frying', {
+	global.registerFoodRecipe(event, 'food_oven', 'cooked_beer_battered_cheese_curds', 20*6, GTValues.VA[GTValues.ULV], 'tfg.food_recipe.deep_frying', {
 		itemInputs: ['tfg:food/raw_beer_battered_cheese_curds'],
 		itemOutputs: ['tfg:food/cooked_beer_battered_cheese_curds'],
 		fluidInputs: ['#firmalife:oils 100'],
@@ -1408,7 +1412,7 @@ function registerTFGFoodRecipes(event) {
 	 */
 	const beer = ['tfc:beer', 'tfcagedalcohol:aged_beer'];
 	beer.forEach(beerType => {
-		processorRecipe(`raw_beer_battered_cheese_curds/${beerType.replace(':', '_')}`, 20*5, GTValues.VA[GTValues.ULV], {
+		global.processorRecipe(event, `raw_beer_battered_cheese_curds/${beerType.replace(':', '_')}`, 20*5, GTValues.VA[GTValues.ULV], {
 			itemInputs: ['4x #tfg:foods/cheese_curds', '#tfc:foods/flour', 'tfc:powder/salt', '#forge:eggs'],
 			fluidInputs: [`${beerType} 100`],
 			itemOutputs: ['4x tfg:food/raw_beer_battered_cheese_curds'],
@@ -1456,7 +1460,7 @@ function registerTFGFoodRecipes(event) {
 
 	// Prosessor burgers allow extra ingredients.
 	for (let i = 1; i <= 5; i++) {
-		processorRecipe(`hamburger_${i}`, 20*1, GTValues.VA[GTValues.ULV], {
+		global.processorRecipe(event, `hamburger_${i}`, 20*1, GTValues.VA[GTValues.ULV], {
 			itemInputs: [`${i}x #tfg:foods/usable_in_burgers`, '2x tfg:food/brioche_bun'],
 			itemOutputs: ['tfg:food/hamburger'],
 			circuit: i,
@@ -1468,7 +1472,7 @@ function registerTFGFoodRecipes(event) {
 	};
 
 	for (let i = 1; i <= 4; i++) {
-		processorRecipe(`cheeseburger_${i}`, 20*1, GTValues.VA[GTValues.ULV], {
+		global.processorRecipe(event, `cheeseburger_${i}`, 20*1, GTValues.VA[GTValues.ULV], {
 			itemInputs: [`${i}x #tfg:foods/usable_in_burgers`, '2x tfg:food/brioche_bun', '#tfg:foods/cheeses'],
 			itemOutputs: ['tfg:food/cheeseburger'],
 			circuit: i,
@@ -1500,7 +1504,7 @@ function registerTFGFoodRecipes(event) {
 		.outputItem('6x tfg:food/brioche_dough')
 		.id('tfg:mixing_bowl/brioche_dough');
 	
-	processorRecipe('brioche_dough/tirage_mixture', 20*2, GTValues.VA[GTValues.ULV], {
+	global.processorRecipe(event, 'brioche_dough/tirage_mixture', 20*2, GTValues.VA[GTValues.ULV], {
 		itemInputs: ['2x #tfc:foods/flour', '#forge:eggs', 'firmalife:tirage_mixture'],
 		fluidInputs: ['#tfc:milks 500'],
 		itemOutputs: ['6x tfg:food/brioche_dough'],
@@ -1508,7 +1512,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('6x tfg:food/brioche_dough').copyOldestFood()
 	});
 
-	processorRecipe('brioche_dough/yeast', 20*2, GTValues.VA[GTValues.ULV], {
+	global.processorRecipe(event, 'brioche_dough/yeast', 20*2, GTValues.VA[GTValues.ULV], {
 		itemInputs: ['2x #tfc:foods/flour', '#forge:eggs', '#tfc:sweetener'],
 		fluidInputs: ['#tfc:milks 500', 'firmalife:yeast_starter 100'],
 		itemOutputs: ['6x tfg:food/brioche_dough'],
@@ -1516,7 +1520,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('6x tfg:food/brioche_dough').copyOldestFood()
 	});
 
-	cookingRecipe('brioche_bun', 'tfg:food/brioche_dough', 'tfg:food/brioche_bun');
+	global.cookingRecipe(event, 'brioche_bun', 'tfg:food/brioche_dough', 'tfg:food/brioche_bun');
 
 	// Burger Patty
 	event.recipes.tfc.advanced_shapeless_crafting(
@@ -1527,7 +1531,7 @@ function registerTFGFoodRecipes(event) {
 		]
 	).id('tfg:crafting/raw_burger_patty');
 
-	processorRecipe('raw_burger_patty', 20*1, GTValues.VA[GTValues.ULV], {
+	global.processorRecipe(event, 'raw_burger_patty', 20*1, GTValues.VA[GTValues.ULV], {
 		itemInputs: ['#tfg:foods/burger_meats'],
 		itemOutputs: ['tfg:food/raw_burger_patty'],
 		notConsumable: ['gtceu:wire_extruder_mold'],
@@ -1550,7 +1554,7 @@ function registerTFGFoodRecipes(event) {
 		.fluidOutput(Fluid.of('tfg:rich_stock', 1000)
 	).id('tfg:pot/rich_stock');
 
-	processorRecipe('rich_stock', 20*5, GTValues.VA[GTValues.ULV], {
+	global.processorRecipe(event, 'rich_stock', 20*5, GTValues.VA[GTValues.ULV], {
 		itemInputs: [
 			'#tfg:foods/makes_rich_stock',
 			'#tfc:foods/vegetables',
@@ -1578,7 +1582,7 @@ function registerTFGFoodRecipes(event) {
 		.fluidOutput(Fluid.of('tfg:light_stock', 1000)
 	).id('tfg:pot/light_stock');
 
-	processorRecipe('light_stock', 20*5, GTValues.VA[GTValues.ULV], {
+	global.processorRecipe(event, 'light_stock', 20*5, GTValues.VA[GTValues.ULV], {
 		itemInputs: [
 			'#tfg:foods/makes_light_stock',
 			'#tfc:foods/vegetables',
@@ -1591,7 +1595,7 @@ function registerTFGFoodRecipes(event) {
 	});
 
 	// Brown Gravy
-	processorRecipe('brown_gravy', 20*5, GTValues.VA[GTValues.ULV], {
+	global.processorRecipe(event, 'brown_gravy', 20*5, GTValues.VA[GTValues.ULV], {
 		itemInputs: [
 			'#tfc:foods/flour',
 			'firmalife:food/butter',
@@ -1602,7 +1606,7 @@ function registerTFGFoodRecipes(event) {
 	});
 
 	// Poutine
-	processorRecipe('poutine', 20*10, GTValues.VA[GTValues.LV], {
+	global.processorRecipe(event, 'poutine', 20*10, GTValues.VA[GTValues.LV], {
 		itemInputs: [
 			'4x tfg:food/cooked_fries',
 			'#tfg:foods/cheese_curds',
@@ -1618,7 +1622,7 @@ function registerTFGFoodRecipes(event) {
 
 	// Oatmeal
 	for (let i = 1; i <= 4; i++) {
-		processorRecipe(`oatmeal_${i}`, 20*15, GTValues.VA[GTValues.LV], {
+		global.processorRecipe(event, `oatmeal_${i}`, 20*15, GTValues.VA[GTValues.LV], {
 			itemInputs: [
 				'4x #tfc:bowls',
 				'tfc:food/oat_grain',
@@ -1650,7 +1654,7 @@ function registerTFGFoodRecipes(event) {
 		.EUt(GTValues.VA[GTValues.HV]);
 
 	// Citric Acid
-	processorRecipe('citric_acid', 20*20, GTValues.VA[GTValues.HV], {
+	global.processorRecipe(event, 'citric_acid', 20*20, GTValues.VA[GTValues.HV], {
 		itemInputs: [
 			'#tfg:foods/citrus_fruits',
 			'gtceu:calcium_hydroxide_dust'
@@ -1674,14 +1678,14 @@ function registerTFGFoodRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Instant Mac
-	processorRecipe('raw_instant_mac', 20 * 10, GTValues.VA[GTValues.LV], {
+	global.processorRecipe(event, 'raw_instant_mac', 20 * 10, GTValues.VA[GTValues.LV], {
 		itemInputs: ['firmalife:food/raw_egg_noodles', '#tfg:foods/cheeses', '2x create:cardboard'],
 		itemOutputs: ['2x tfg:food/raw_instant_mac'],
 		fluidInputs: ['gtceu:polyethylene 100'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/raw_instant_mac').copyFood()
 	});
 
-	registerFoodRecipe('food_oven', 'cooked_instant_mac', 20 * 1, GTValues.VA[GTValues.LV], '' ,{
+	global.registerFoodRecipe(event, 'food_oven', 'cooked_instant_mac', 20 * 1, GTValues.VA[GTValues.LV], '' ,{
 		itemInputs: ['tfg:food/raw_instant_mac'],
 		itemOutputs: ['tfg:food/cooked_instant_mac'],
 		fluidInputs: ['#tfc:milks 500'],
@@ -1724,7 +1728,7 @@ function registerTFGFoodRecipes(event) {
 
 	//#endregion
 
-	processorRecipe('nixtamal', 20*30, GTValues.VA[GTValues.ULV], {
+	global.processorRecipe(event, 'nixtamal', 20*30, GTValues.VA[GTValues.ULV], {
 		itemInputs: ['firmalife:food/cured_maize'],
 		fluidInputs: ['#tfg:clean_water 100'],
 		itemOutputs: ['firmalife:food/nixtamal'],
