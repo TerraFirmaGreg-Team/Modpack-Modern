@@ -56,6 +56,7 @@ function registerTFGVenusBlockTags(event) {
 	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/raw/basalt')
 	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/hardened/basalt')
 	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/gravel/basalt')
+	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/magma/basalt')
 	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/raw/rhyolite')
 	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/hardened/andesite')
 	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/gravel/andesite')
@@ -112,6 +113,12 @@ function registerTFGVenusBlockTags(event) {
     event.add("tfc:monster_spawns_on", "minecraft:basalt");
     event.add("tfc:monster_spawns_on", "minecraft:smooth_basalt");
 
+	event.add("minecraft:strider_warm_blocks", "create:scorchia");
+	event.add("minecraft:strider_warm_blocks", "minecraft:basalt");
+	event.add("minecraft:strider_warm_blocks", "minecraft:smooth_basalt");
+	event.add("minecraft:strider_warm_blocks", 'tfc:rock/raw/basalt');
+	event.add("minecraft:strider_warm_blocks", 'tfc:rock/magma/basalt');
+
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/blue')
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/green')
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/brown')
@@ -134,18 +141,37 @@ function registerTFGVenusEntityTypeTags(event) {
 		'minecraft:enderman',
 		'minecraft:magma_cube',
 		'minecraft:blaze',
+		'minecraft:strider',
 		"endermanoverhaul:desert_enderman",
 		"endermanoverhaul:savanna_enderman",
 		"endermanoverhaul:nether_wastes_enderman",
 		"ad_astra:sulfur_creeper",
 		'species:cliff_hanger',
 		'species:trooper',
-		'primitivecreatures:golem_2'
+		'primitive_creatures:golem_2',
+		'arthropocolypse:scarab',
+		'arthropocolypse:prairie_grasshopper',
+		'arthropocolypse:field_cricket',
+		'arthropocolypse:ice_crawler',
+		'arthropocolypse:behemoth_desert_spider',
+		'arthropocolypse:behemoth_desert_scorpion',
+		'arthropocolypse:worker_ant',
+		'arthropocolypse:soldier_ant',
+		'arthropocolypse:stag_beetle',
+		'arthropocolypse:stag_beetle_larva',
+		'arthropocolypse:wharf_roach',
+		'arthropocolypse:platerodrilus',
+		'arthropocolypse:mealworm_beetle',
+		'arthropocolypse:mealworm',
+		'arthropocolypse:millipede_head',
+		'arthropocolypse:millipede_body',
+		'arthropocolypse:millipede_tail'
 	]
 
 	ENTITIES.forEach(entity => {
 		event.add('ad_astra:can_survive_extreme_heat', entity)
 		event.add('ad_astra:lives_without_oxygen', entity)
+		event.add('ad_astra:can_survive_in_acid_rain', entity)
 		event.add('gtceu:heat_immune', entity)
 	})
 
@@ -154,7 +180,17 @@ function registerTFGVenusEntityTypeTags(event) {
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:nether_wastes_enderman')
 	event.add('tfc:deals_slashing_damage', 'species:cliff_hanger')
 	event.add('tfc:deals_crushing_damage', 'minecraft:magma_cube')
-	event.add('tfc:deals_crushing_damage', 'primitivecreatures:golem_2')
+	event.add('tfc:deals_crushing_damage', 'primitive_creatures:golem_2')
+	event.add('tfc:deals_piercing_damage', 'arthropocolypse:scarab')
+	event.add('tfc:deals_piercing_damage', 'arthropocolypse:ice_crawler')
+	event.add('tfc:deals_piercing_damage', 'arthropocolypse:behemoth_desert_spider')
+	event.add('tfc:deals_piercing_damage', 'arthropocolypse:behemoth_desert_scorpion')
+	event.add('tfc:deals_piercing_damage', 'arthropocolypse:soldier_ant')
+	event.add('tfc:deals_piercing_damage', 'arthropocolypse:stag_beetle')
+	event.add('tfc:deals_piercing_damage', 'arthropocolypse:wharf_roach')
+	event.add('tfc:deals_piercing_damage', 'arthropocolypse:platerodrilus')
+	event.add('tfc:deals_piercing_damage', 'arthropocolypse:mealworm_beetle')
+	event.add('tfc:deals_piercing_damage', 'arthropocolypse:millipede_head')
 }
 
 function registerTFGVenusPlacedFeatures(event) {

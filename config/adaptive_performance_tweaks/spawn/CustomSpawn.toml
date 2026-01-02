@@ -1,8 +1,8 @@
 
 #Adaptive Performance Tweaks: Spawn
 ["Custom Spawn Config"]
-	Enabled = false
-	Id = "_config"
+	Enabled = true
+	Id = "TFG"
 	#Range: 1 ~ 64
 	MaxPassiveMobsPerPlayer = 4
 	#Range: 1 ~ 512
@@ -12,19 +12,19 @@
 	#List of passive Mobs to optimize in the format ["minecraft:bat", "minecraft:cat", ..]
 	PassiveMobsList = []
 	#Range: 1 ~ 64
-	MaxNeutralMobsPerPlayer = 4
+	MaxNeutralMobsPerPlayer = 16
 	#Range: 1 ~ 512
-	MaxNeutralMobsPerWorld = 16
+	MaxNeutralMobsPerWorld = 32
 	#Range: 1 ~ 1024
 	MaxNeutralMobsPerServer = 320
 	#List of neutral Mobs to optimize in the format ["minecraft:bee", "minecraft:wolf", ..]
-	NeutralMobsList = []
+	NeutralMobsList = ["arthropocolypse:prairie_grasshopper", "arthropocolypse:field_cricket", "arthropocolypse:ice_crawler", "arthropocolypse:worker_ant", "arthropocolypse:soldier_ant", "arthropocolypse:stag_beetle", "arthropocolypse:stag_beetle_larva", "arthropocolypse:wharf_roach", "arthropocolypse:platerodrilus", "arthropocolypse:mealworm_beetle", "arthropocolypse:mealworm"]
 	#Range: 1 ~ 64
-	MaxHostileMobsPerPlayer = 4
+	MaxHostileMobsPerPlayer = 8
 	#Range: 1 ~ 512
-	MaxHostileMobsPerWorld = 16
+	MaxHostileMobsPerWorld = 32
 	#Range: 1 ~ 1024
 	MaxHostileMobsPerServer = 320
 	#List of hostile Mobs to optimize in the format ["minecraft:blaze", "minecraft:cave_spider", ..]
-	HostileMobsList = []
+	HostileMobsList = ["arthropocolypse:millipede_head", "minecraft:blaze", "minecraft:magma_cube", "primitive_creatures:golem_2", "ad_astra:sulfur_creeper", "species:cliff_hanger"]
 

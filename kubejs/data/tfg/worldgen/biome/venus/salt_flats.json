@@ -65,24 +65,66 @@
 			"energy_budget": 0.05,
 			"charge": 0.9
 		},
-		"ad_astra:sulfur_creeper": {
-			"energy_budget": 0.2,
-			"charge": 0.7
-		},
 		"species:cliff_hanger": {
 			"energy_budget": 0.15,
 			"charge": 0.7
+		},
+		"ad_astra:sulfur_creeper": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"primitive_creatures:golem_2": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"minecraft:blaze": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"minecraft:magma_cube": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"arthropocolypse:millipede_head": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
+	"creature_spawn_probability": 0.05,
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
-		"creature": [],
+		"creature": [
+			{
+				"type": "arthropocolypse:prairie_grasshopper",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "arthropocolypse:field_cricket",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "arthropocolypse:wharf_roach",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "arthropocolypse:platerodrilus",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 70
+			}
+		],
 		"misc": [],
 		"monster": [
 			{
 				"type": "endermanoverhaul:desert_enderman",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
 			},
@@ -93,28 +135,10 @@
 				"weight": 100
 			},
 			{
-				"type": "endermanoverhaul:nether_wastes_enderman",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 20
-			},
-			{
-				"type": "ad_astra:sulfur_creeper",
-				"maxCount": 3,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "species:cliff_hanger",
-				"maxCount": 3,
-				"minCount": 1,
-				"weight": 100
 			}
 		],
 		"underground_water_creature": [],

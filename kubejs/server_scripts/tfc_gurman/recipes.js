@@ -29,15 +29,15 @@ function registerTFCGurmanRecipes(event) {
 		TFC.isp.of('tfc_gurman:pepperoni_pizza').firmaLifeCopyDynamicFood().asCanonClass(),
 		[])
 
-	event.recipes.gtceu.food_oven('havai_pizza')
-		.itemInputs('tfc_gurman:raw_havai_pizza')
-		.itemOutputs('tfc_gurman:havai_pizza')
+	event.recipes.gtceu.food_oven('hawaiian_pizza')
+		.itemInputs('tfc_gurman:raw_hawaiian_pizza')
+		.itemOutputs('tfc_gurman:hawaiian_pizza')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	$ISPRecipeLogic.RegisterRecipeData('food_oven/havai_pizza',
-		[Ingredient.of('tfc_gurman:raw_havai_pizza')],
-		TFC.isp.of('tfc_gurman:havai_pizza').firmaLifeCopyDynamicFood().asCanonClass(),
+	$ISPRecipeLogic.RegisterRecipeData('food_oven/hawaiian_pizza',
+		[Ingredient.of('tfc_gurman:raw_hawaiian_pizza')],
+		TFC.isp.of('tfc_gurman:hawaiian_pizza').firmaLifeCopyDynamicFood().asCanonClass(),
 		[])
 
 	event.recipes.gtceu.food_oven('four_cheeses_pizza')

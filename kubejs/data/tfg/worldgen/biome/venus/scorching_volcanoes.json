@@ -71,6 +71,14 @@
 	],
 	"has_precipitation": true,
 	"spawn_costs": {
+		"endermanoverhaul:desert_enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"endermanoverhaul:savanna_enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
 		"endermanoverhaul:nether_wastes_enderman": {
 			"energy_budget": 0.05,
 			"charge": 0.9
@@ -79,37 +87,53 @@
 			"energy_budget": 0.05,
 			"charge": 0.9
 		},
+		"species:cliff_hanger": {
+			"energy_budget": 0.3,
+			"charge": 0.3
+		},
 		"ad_astra:sulfur_creeper": {
 			"energy_budget": 0.15,
-			"charge": 0.7
+			"charge": 0.6
 		},
-		"primitivecreatures:golem_2": {
+		"primitive_creatures:golem_2": {
 			"energy_budget": 0.15,
-			"charge": 0.7
-		},
-		"species:cliff_hanger": {
-			"energy_budget": 0.15,
-			"charge": 0.7
-		},
-		"minecraft:magma_cube": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"charge": 0.6
 		},
 		"minecraft:blaze": {
 			"energy_budget": 0.15,
-			"charge": 0.7
+			"charge": 0.6
+		},
+		"minecraft:magma_cube": {
+			"energy_budget": 0.15,
+			"charge": 0.6
+		},
+		"arthropocolypse:millipede_head": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
-	"creature_spawn_probability": 0.0001,
+	"creature_spawn_probability": 0.2,
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
 		"creature": [
 			{
-				"type": "species:trooper",
+				"type": "arthropocolypse:ice_crawler",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "arthropocolypse:stag_beetle_larva",
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 100
+			},
+			{
+				"type": "arthropocolypse:stag_beetle",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 50
+				"weight": 100
 			}
 		],
 		"misc": [],
@@ -145,9 +169,15 @@
 				"weight": 100
 			},
 			{
-				"type": "primitivecreatures:golem_2",
-				"maxCount": 4,
-				"minCount": 2,
+				"type": "arthropocolypse:millipede_head",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "primitive_creatures:golem_2",
+				"maxCount": 3,
+				"minCount": 1,
 				"weight": 100
 			},
 			{

@@ -1,0 +1,78 @@
+
+[spawning]
+	#Spawn Weight, 0 to disable spawn
+	#Range: 0 ~ 1000
+	"Millipede Spawn Weight" = 100
+	#Random Chance to spawning
+	#Range: 0.0 ~ 1.0
+	"Millipede Spawn Chance" = 1.0
+	#Max World Y Level to spawning
+	#Range: -64 ~ 128
+	"Millipede Spawn Height" = 200
+	#Spawn Weight, 0 to disable spawn
+	#Range: 0 ~ 1000
+	"Field Cricket Spawn Weight" = 100
+	#Random Chance to spawning
+	#Range: 0.0 ~ 1.0
+	"Field Cricket Spawn Chance" = 1.0
+	#Spawn Weight, 0 to disable spawn
+	#Range: 0 ~ 1000
+	"Prairie Grasshopper Spawn Weight" = 100
+	#Random Chance to spawning
+	#Range: 0.0 ~ 1.0
+	"Prairie Grasshopper Spawn Chance" = 1.0
+	#Spawn Weight, 0 to disable spawn
+	#Range: 0 ~ 1000
+	"Worker Ant Spawn Weight" = 100
+	#Random Chance to spawning
+	#Range: 0.0 ~ 1.0
+	"Worker Ant Spawn Chance" = 1.0
+	#Spawn Weight, 0 to disable spawn
+	#Range: 0 ~ 1000
+	"Soldier Ant Spawn Weight" = 100
+	#Random Chance to spawning
+	#Range: 0.0 ~ 1.0
+	"Soldier Ant Spawn Chance" = 1.0
+	#Spawn Weight, 0 to disable spawn
+	#Range: 0 ~ 1000
+	"Ice Crawler Spawn Weight" = 100
+	#Random Chance to spawning
+	#Range: 0.0 ~ 1.0
+	"Ice Crawler Spawn Chance" = 1.0
+	#Spawn Weight, 0 to disable spawn
+	#Range: 0 ~ 1000
+	"Wharf Roach Spawn Weight" = 100
+	#Random Chance to spawning
+	#Range: 0.0 ~ 1.0
+	"Wharf Roach Spawn Chance" = 1.0
+	#Spawn Weight, 0 to disable spawn
+	#Range: 0 ~ 1000
+	"Stag Beetle Spawn Weight" = 100
+	#Random Chance to spawning
+	#Range: 0.0 ~ 1.0
+	"Stag Beetle Spawn Chance" = 1.0
+	#Spawn Weight, 0 to disable spawn
+	#Range: 0 ~ 1000
+	"Stag Beetle Larva Spawn Weight" = 100
+	#Random Chance to spawning
+	#Range: 0.0 ~ 1.0
+	"Stag Beetle Larva Spawn Chance" = 1.0
+	#Spawn Weight, 0 to disable spawn
+	#Range: 0 ~ 1000
+	"Mealworm Spawn Weight" = 100
+	#Random Chance to spawning
+	#Range: 0.0 ~ 1.0
+	"Mealworm Spawn Chance" = 1.0
+	#Spawn Weight, 0 to disable spawn
+	#Range: 0 ~ 1000
+	"Mealworm Beetle Spawn Weight" = 100
+	#Random Chance to spawning
+	#Range: 0.0 ~ 1.0
+	"Mealworm Beetle Spawn Chance" = 1.0
+	#Spawn Weight, 0 to disable spawn
+	#Range: 0 ~ 1000
+	"Platerodrilus Spawn Weight" = 100
+	#Random Chance to spawning
+	#Range: 0.0 ~ 1.0
+	"Platerodrilus Spawn Chance" = 1.0
+
