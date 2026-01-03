@@ -1,0 +1,188 @@
+
+#Screen Config
+[screen]
+	#The duration of GUI background color and blur radius animation in milliseconds. (0 = OFF)
+	#Range: 0 ~ 800
+	animationDuration = 200
+	#The GUI background color in #RRGGBB or #AARRGGBB format. Default value: #99000000
+	#Can be one to four values representing top left, top right, bottom right and bottom left color.
+	#Multiple values produce a gradient effect, whereas one value produce a solid color.
+	#When values is less than 4, the rest of the corner color will be replaced by the last value.
+	backgroundColor = ["#99000000"]
+	#Add Gaussian blur effect to GUI background when opened.
+	#Disable this if you run into a problem or are on low-end PCs
+	blurEffect = true
+	#This option means that blur effect only applies to GUI screens with a background.
+	#Similar to Minecraft 1.20.6. Enable this for better optimization & compatibility.
+	blurWithBackground = true
+	#The kernel radius for gaussian convolution blur effect, 0 = disable.
+	#samples per pixel = ((radius * 2) + 1) * 2, sigma = radius / 2.
+	#Range: 0 ~ 18
+	blurRadius = 7
+	#A list of GUI screen superclasses that won't activate blur effect when opened.
+	blurBlacklist = ["net.minecraft.client.gui.screens.ChatScreen"]
+	#(Beta) Pause the game when inventory (also includes creative mode) opened.
+	inventoryPause = false
+	#Framerate limit on window inactive (out of focus or minimized), 0 = no change.
+	#Range: 0 ~ 255
+	framerateInactive = 10
+	#Framerate limit on window minimized, 0 = same as framerate inactive.
+	#This value will be no greater than framerate inactive.
+	#Range: 0 ~ 255
+	framerateMinimized = 0
+	#Master volume multiplier on window inactive (out of focus or minimized), 1 = no change.
+	#Range: 0.0 ~ 1.0
+	masterVolumeInactive = 0.5
+	#Master volume multiplier on window minimized, 1 = same as master volume inactive.
+	#This value will be no greater than master volume inactive.
+	#Range: 0.0 ~ 1.0
+	masterVolumeMinimized = 0.25
+
+#Tooltip Config
+[tooltip]
+	#Whether to enable Modern UI enhanced tooltip, or back to vanilla default.
+	enable = true
+	#Whether to use rounded tooltip shapes, or to use vanilla style.
+	roundedShape = false
+	#True to center the tooltip title if rendering an item's tooltip.
+	#Following lines are not affected by this option.
+	centerTitle = true
+	#True to add a title break below the tooltip title line.
+	#TitleBreak and CenterTitle will work/appear at the same time.
+	titleBreak = true
+	#True to exactly position tooltip to pixel grid, smoother movement.
+	exactPositioning = true
+	#The tooltip background color in #RRGGBB or #AARRGGBB format. Default: #E6000000
+	#Can be one to four values representing top left, top right, bottom right and bottom left color.
+	#Multiple values produce a gradient effect, whereas one value produces a solid color.
+	#If less than 4 are provided, repeat the last value.
+	colorFill = ["#E6000000"]
+	#The tooltip border color in #RRGGBB or #AARRGGBB format. Default: #F0AADCF0, #F0DAD0F4, #F0FFC3F7 and #F0DAD0F4
+	#Can be one to four values representing top left, top right, bottom right and bottom left color.
+	#Multiple values produce a gradient effect, whereas one value produces a solid color.
+	#If less than 4 are provided, repeat the last value.
+	colorStroke = ["#FFC2D0D6", "#FFE7DAE5", "#FFCCDAC8", "#FFC8B9AC"]
+	#The cycle time of tooltip border color in milliseconds. (0 = OFF)
+	#Range: 0 ~ 5000
+	borderCycleTime = 1000
+	#The width of tooltip border, if rounded, in GUI Scale Independent Pixels.
+	#Range: 0.5 ~ 2.5
+	borderWidth = 1.3333333333333333
+	#The corner radius of tooltip border, if rounded, in GUI Scale Independent Pixels.
+	#Range: 0.0 ~ 8.0
+	cornerRadius = 4.0
+	#The shadow radius of tooltip, if rounded, in GUI Scale Independent Pixels.
+	#No impact on performance.
+	#Range: 0.0 ~ 32.0
+	shadowRadius = 10.0
+	#The shadow opacity of tooltip, if rounded. No impact on performance.
+	#Range: 0.0 ~ 1.0
+	shadowOpacity = 0.25
+	#When true, tooltip border colors adapt to item's name and rarity.
+	adaptiveColors = true
+	#Amount to scroll the tooltip in response to a arrow key pressed event.
+	#Range: 0 ~ 320
+	arrowScrollFactor = 60
+
+#General Config
+[general]
+	#Play a sound effect when the game is loaded.
+	ding = true
+	#Specify a sound event to custom the ding sound effect.
+	#The default is "minecraft:entity.experience_orb.pickup"
+	dingSound = ""
+	#Specify a volume multiplier to the ding sound effect.
+	#Range: 0.0 ~ 10.0
+	dingVolume = 0.25
+	#Press 'C' key (by default) to zoom 4x, the same as OptiFine's.
+	#This is auto disabled when OptiFine is installed.
+	zoom = false
+	#Control the window mode, normal mode does nothing.
+	#Allowed Values: NORMAL, FULLSCREEN, FULLSCREEN_BORDERLESS, MAXIMIZED, MAXIMIZED_BORDERLESS, WINDOWED, WINDOWED_BORDERLESS
+	windowMode = "NORMAL"
+	#Whether to replace vanilla GUI scale button to slider with tips.
+	useNewGuiScale = true
+	#Remove telemetry event of client behaviors.
+	removeTelemetry = false
+	#Allow Slack or Discord shortcodes to replace Unicode Emoji Sequences in chat.
+	emojiShortcodes = true
+
+#View Config
+[view]
+	#Force layout direction to RTL, otherwise, the current Locale setting.
+	forceRtl = false
+	#The global font scale used with sp units.
+	#Range: 0.5 ~ 2.0
+	fontScale = 1.1
+	#Default scrollbar size in dips.
+	#Range: 0 ~ 1024
+	scrollbarSize = 4
+	#Distance a touch can wander before we think the user is scrolling in dips.
+	#Range: 0 ~ 1024
+	touchSlop = 4
+	#Distance a hover can wander while it is still considered "stationary" in dips.
+	#Range: 0 ~ 1024
+	hoverSlop = 4
+	#Minimum size of the touch target for a scrollbar in dips.
+	#Range: 0 ~ 1024
+	minScrollbarTouchTarget = 16
+	#Minimum velocity to initiate a fling in dips per second.
+	#Range: 0 ~ 32767
+	minimumFlingVelocity = 50
+	#Maximum velocity to initiate a fling in dips per second.
+	#Range: 0 ~ 32767
+	maximumFlingVelocity = 8000
+	#The coefficient of friction applied to flings/scrolls.
+	#Range: 0.001 ~ 7.389
+	scrollFriction = 0.014999999664723873
+	#Max distance in dips to overscroll for edge effects.
+	#Range: 0 ~ 1024
+	overscrollDistance = 0
+	#Max distance in dips to overfling for edge effects.
+	#Range: 0 ~ 1024
+	overflingDistance = 12
+	#Amount to scroll in response to a vertical scroll event, in dips per axis value.
+	#Range: 0.0 ~ 1024.0
+	verticalScrollFactor = 64.0
+	#Amount to scroll in response to a horizontal scroll event, in dips per axis value.
+	#Range: 0.0 ~ 1024.0
+	horizontalScrollFactor = 64.0
+	#The duration in milliseconds before a hover event causes a tooltip to be shown.
+	#Range: 0 ~ 1200
+	hoverTooltipShowTimeout = 500
+	#The duration in milliseconds before mouse inactivity causes a tooltip to be hidden.
+	#Range: 3000 ~ 120000
+	hoverTooltipHideTimeout = 30000
+
+#Font Config
+[font]
+	#The first font family to use. See fallbackFontFamilyList
+	firstFontFamily = "Unifont"
+	#A set of fallback font families to determine the typeface to use.
+	#The order is first > fallbacks. TrueType & OpenType are supported.
+	#Each element can be one of the following two cases:
+	#1) Name of registered font family, for instance: Segoe UI
+	#2) Path of font files on your PC, for instance: /usr/shared/fonts/x.otf
+	#Registered font families include:
+	#1) OS builtin fonts.
+	#2) Font files in fontRegistrationList.
+	#3) Font files in '/resourcepacks' directory.
+	#4) Font files under 'modernui:font' in resource packs.
+	#Note that for TTC/OTC font, you should register it and select one of font families.
+	#Otherwise, only the first font family from the TrueType/OpenType Collection will be used.
+	#This is only read once when the game is loaded, you can reload via in-game GUI.
+	fallbackFontFamilyList = ["Source Han Sans CN Medium", "Noto Sans", "Segoe UI Variable", "Segoe UI", "San Francisco", "Open Sans", "SimHei", "STHeiti", "Segoe UI Symbol", "mui-i18n-compat"]
+	#A set of additional font files (or directories) to register.
+	#For TrueType/OpenType Collections, all contained font families will be registered.
+	#Registered fonts can be referenced in Modern UI and Minecraft (Modern Text Engine).
+	#For example, "E:/Fonts" means all font files in that directory will be registered.
+	#System requires random access to these files, you should not remove them while running.
+	#This is only read once when the game is loaded, i.e. registration.
+	fontRegistrationList = []
+	#Whether to use Google Noto Color Emoji, otherwise grayscale emoji (faster).
+	#See Unicode 15.0 specification for details on how this affects text layout.
+	useColorEmoji = true
+	#When enabled, text layout uses fractional metrics with no font hinting and applies sub-pixel positioning.
+	#When disabled, text layout uses integer metrics with full font hinting.
+	linearMetrics = true
+
