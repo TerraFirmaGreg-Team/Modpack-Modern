@@ -13,6 +13,7 @@
 - The alloy blast smelter recipe for glowstone has been adjusted (#2581) @Xaligal
 - Renamed Thorium (the non-isotope one) to Thorianite to better indicate that it's only an ore @Pyritie
 - Added a way to get wax and latex in the steam age for those of you starting on mars @Pyritie
+- Changed the Rover's step height from 1 block to 1.2 blocks (about 4 extra 'pixels') @Pyritie
 ### Bug fixes
 - Fixed missing crafting table recipes for greate gearboxes (#2577) @Pyritie
 - Fixed crashing when attaching shafts to a steam engine (#2578, #2579) @Electrolyte220
@@ -22,6 +23,7 @@
 - Fixed how much aluminium silicate you get from mica, pollucite, and spodumene to more accurately reflect how much aluminium they have @Pyritie
 - Fixed being able to put liquid metals into the new molds that didn't have a recipe @Pyritie
 - Added some grain nutrition to oatmeal @Pyritie
+- Fixed hot-protection chestplates not fully protecting against GT hot ingots (#2598) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071
