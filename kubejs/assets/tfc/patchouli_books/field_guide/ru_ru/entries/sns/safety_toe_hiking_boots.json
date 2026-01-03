@@ -1,0 +1,22 @@
+{
+  "name": "Стальные походные ботинки",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:steel_toe_hiking_boots",
+  "pages": [
+	{
+	  "type": "patchouli:text",
+	  "text": "Как $(l:sns/hiking_boots)походные ботинки$(), но безопаснее благодаря стальным носкам. Жаль только, что никто ещё не изобрёл каску"
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/steel_toe_hiking_boots",
+	  "recipe2": "sns:crafting/black_steel_toe_hiking_boots"
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/blue_steel_toe_hiking_boots",
+	  "recipe2": "sns:crafting/red_steel_toe_hiking_boots"
+	}
+  ],
+  "read_by_default": true
+}

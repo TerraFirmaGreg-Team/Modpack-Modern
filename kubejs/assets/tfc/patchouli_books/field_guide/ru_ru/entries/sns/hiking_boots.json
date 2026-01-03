@@ -1,0 +1,17 @@
+{
+  "name": "Походные ботинки",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:hiking_boots",
+  "pages": [
+	{
+	  "type": "patchouli:text",
+	  "text": "Каждому исследователю нужна хорошая пара ботинок. Они позволяют быстро пробираться сквозь траву, дают небольшое ускорение и увеличивают безопасную высоту падения."
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/hiking_boots",
+	  "text": "Эти ботинки созданы для ходьбы."
+	}
+  ],
+  "read_by_default": true
+}
