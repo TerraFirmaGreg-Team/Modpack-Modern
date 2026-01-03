@@ -12,6 +12,7 @@
 - Added alloy blast smelter recipes for black bronze and bismuth bronze (#2581) @Xaligal
 - The alloy blast smelter recipe for glowstone has been adjusted (#2581) @Xaligal
 - Renamed Thorium (the non-isotope one) to Thorianite to better indicate that it's only an ore @Pyritie
+- Added a way to get wax and latex in the steam age for those of you starting on mars @Pyritie
 ### Bug fixes
 - Fixed missing crafting table recipes for greate gearboxes (#2577) @Pyritie
 - Fixed crashing when attaching shafts to a steam engine (#2578, #2579) @Electrolyte220

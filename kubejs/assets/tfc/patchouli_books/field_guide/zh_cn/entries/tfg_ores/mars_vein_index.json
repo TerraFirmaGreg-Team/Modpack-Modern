@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)辉铋矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)金矿, 蓝石, 铝土矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)铁铝榴石, 蓝宝石$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)铜矿, 黄铜矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)银矿, 方铅矿, 铅矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)锡石矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)锰矿, 钽矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)闪锌矿, 方铅矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)闪锌矿, 黄铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)黝铜矿 (地表)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)黝铜矿 (普通)$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)辉铋矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)金矿, 蓝石, 铝土矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)铁铝榴石, 蓝宝石$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)铜矿, 黄铜矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)银矿, 方铅矿, 铅矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)锡石矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)锰矿, 钽矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)闪锌矿, 方铅矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)闪锌矿, 黄铁矿$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)青金石, 蓝金石, 方钠石$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)黝铜矿 (地表)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)黝铜矿 (普通)$()$()",
       "type": "patchouli:text"
     },
     {
@@ -2225,6 +2225,98 @@
       },
       "enable_visualize": false,
       "text": "$(thing)百分比$(): 14%$(br)$(thing)来源$(): 硫$(br)$(thing)化学式$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)稀有度$(): 200$(br)$(thing)密度$(): 0.25$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 30$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 白云岩, 白垩岩, 石灰岩, 页岩",
+      "title": "青金石, 蓝金石, 方钠石",
+      "type": "patchouli:text",
+      "anchor": "mars_lapis"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "蓝金石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lazurite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 35%$(br)$(thing)来源$(): 铝, 钙, 钠$(br)$(thing)化学式$(): Al₆Si₆Ca₈Na₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "方钠石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sodalite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 25%$(br)$(thing)来源$(): 铝, 钠$(br)$(thing)化学式$(): Al₃Si₃Na₄Cl",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "青金石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lapis"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 25%$(br)$(thing)来源$(): 蓝金石, 方钠石, 黄铁矿, 方解石",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "方解石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/calcite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 15%$(br)$(thing)来源$(): 钙$(br)$(thing)化学式$(): CaCO₃",
       "type": "patchouli:multiblock"
     },
     {
