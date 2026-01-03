@@ -11,6 +11,7 @@
 - Ad astra and Create Deco lamps are now half as expensive to craft (#2581) @Xaligal
 - Added alloy blast smelter recipes for black bronze and bismuth bronze (#2581) @Xaligal
 - The alloy blast smelter recipe for glowstone has been adjusted (#2581) @Xaligal
+- Renamed Thorium (the non-isotope one) to Thorianite to better indicate that it's only an ore @Pyritie
 ### Bug fixes
 - Fixed missing crafting table recipes for greate gearboxes (#2577) @Pyritie
 - Fixed crashing when attaching shafts to a steam engine (#2578, #2579) @Electrolyte220
@@ -19,6 +20,7 @@
 - Fixed not being able to use pickled eggs in sandwiches (#2551) @Pyritie
 - Fixed how much aluminium silicate you get from mica, pollucite, and spodumene to more accurately reflect how much aluminium they have @Pyritie
 - Fixed being able to put liquid metals into the new molds that didn't have a recipe @Pyritie
+- Added some grain nutrition to oatmeal @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071

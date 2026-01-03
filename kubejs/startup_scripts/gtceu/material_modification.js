@@ -459,4 +459,5 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.CertusQuartz.setComponents('1x unknown', '1x silicon', '2x oxygen')
 	GTMaterials.GraniteRed.setComponents([])
 	GTMaterials.GraniteRed.setFormula("?")
+	GTMaterials.Thorium.setFormula('ThO2')
 }
