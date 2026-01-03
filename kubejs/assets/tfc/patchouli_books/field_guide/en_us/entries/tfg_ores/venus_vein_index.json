@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 100$(br)$(thing)Density$(): 0.2$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Size$(): 20$(br)$(thing)Height$(): 6$(br)$(thing)Indicator Max Depth$(): 30$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite, Trachyte, Travertine$(br2)Only appears in the $(thing)Salt Flats$() biome.",
+      "text": "$(thing)Rarity$(): 30$(br)$(thing)Density$(): 0.2$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Size$(): 20$(br)$(thing)Height$(): 6$(br)$(thing)Indicator Max Depth$(): 30$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite, Trachyte, Travertine$(br2)Only appears in the $(thing)Salt Flats$() biome.",
       "title": "Salts & Spodumene",
       "type": "patchouli:text",
       "anchor": "venus_manual_salt"
@@ -41,7 +41,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 50%$(br)$(thing)Source of$(): Sodium, Chlorine$(br)$(thing)Formula$(): NaCl",
+      "text": "$(thing)Percentage$(): 80%$(br)$(thing)Source of$(): Sodium, Chlorine$(br)$(thing)Formula$(): NaCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -61,7 +61,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 20%$(br)$(thing)Source of$(): Potassium, Chlorine$(br)$(thing)Formula$(): KCl",
+      "text": "$(thing)Percentage$(): 10%$(br)$(thing)Source of$(): Potassium, Chlorine$(br)$(thing)Formula$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -81,7 +81,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Source of$(): Potassium, Lithium, Aluminium, Fluorine$(br)$(thing)Formula$(): KLi₃Al₄F₂O₁₀",
+      "text": "$(thing)Percentage$(): 5%$(br)$(thing)Source of$(): Potassium, Lithium, Aluminium, Fluorine$(br)$(thing)Formula$(): KLi₃Al₄F₂O₁₀",
       "type": "patchouli:multiblock"
     },
     {
@@ -101,7 +101,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Source of$(): Lithium, Aluminium$(br)$(thing)Formula$(): LiAlSi₂O₆",
+      "text": "$(thing)Percentage$(): 5%$(br)$(thing)Source of$(): Lithium, Aluminium$(br)$(thing)Formula$(): LiAlSi₂O₆",
       "type": "patchouli:multiblock"
     },
     {
@@ -111,7 +111,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 100$(br)$(thing)Density$(): 0.2$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Size$(): 15$(br)$(thing)Indicator Max Depth$(): 30$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite, Trachyte, Travertine$(br2)Only appears in the $(thing)Sulfuric Ravines$() biome.",
+      "text": "$(thing)Rarity$(): 30$(br)$(thing)Density$(): 0.2$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Size$(): 20$(br)$(thing)Indicator Max Depth$(): 30$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite, Trachyte, Travertine$(br2)Only appears in the $(thing)Sulfuric Ravines$() biome.",
       "title": "Sulfur & Pyrite",
       "type": "patchouli:text",
       "anchor": "venus_manual_sulfur"
@@ -133,7 +133,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 50%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
+      "text": "$(thing)Percentage$(): 80%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
       "type": "patchouli:multiblock"
     },
     {
@@ -153,7 +153,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 35%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeS₂",
+      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeS₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -173,7 +173,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Melts into$(): Zinc$(br)$(thing)Formula$(): ZnS",
+      "text": "$(thing)Percentage$(): 5%$(br)$(thing)Melts into$(): Zinc$(br)$(thing)Formula$(): ZnS",
       "type": "patchouli:multiblock"
     }
   ],
