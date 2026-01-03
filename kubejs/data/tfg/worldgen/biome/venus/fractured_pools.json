@@ -9,6 +9,9 @@
 			"tick_chance": 0.0111
 		},
 		"fog_color": 9938052,
+		"sky_color": 10465603,
+		"water_color": 8241044,
+		"water_fog_color": 10866612,
 		"ambient_sound": "tfg:ambient.venus_surface.loop",
 		"mood_sound": {
 			"block_search_extent": 8,
@@ -16,9 +19,12 @@
 			"sound": "tfg:ambient.venus_surface.mood",
 			"tick_delay": 6000
 		},
-		"sky_color": 10465603,
-		"water_color": 8241044,
-		"water_fog_color": 10866612
+		"particle": {
+			"options": {
+				"type": "minecraft:ash"
+			},
+			"probability": 0.05
+		}
 	},
 	"features": [
 		[
