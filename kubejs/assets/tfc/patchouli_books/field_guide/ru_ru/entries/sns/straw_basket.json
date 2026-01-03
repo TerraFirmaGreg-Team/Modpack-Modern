@@ -1,0 +1,17 @@
+{
+  "name": "Соломенная корзина",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:straw_basket",
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "sns:straw_basket",
+	  "text": "$(item)Соломенная корзина$() — это тип $(l:sns/item_containers)предметного контейнера$() и по сути является более дешёвым сосудом. По умолчанию она может вмещать предметы максимум $(thing)маленького$() размера."
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/straw_basket"
+	}
+  ],
+  "read_by_default": true
+}
