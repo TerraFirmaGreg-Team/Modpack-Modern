@@ -105,6 +105,7 @@ const registerTFGMaterials = (event) => {
 		.secondaryColor(0xfffef0)
 		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
 		.ingot()
+		.liquid()
 		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
 		.rotorStats(250, 90, 2 ,620)
 		.flags(

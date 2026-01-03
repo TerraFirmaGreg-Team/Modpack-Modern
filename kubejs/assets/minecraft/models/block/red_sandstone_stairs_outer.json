@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/outer_stairs",
+	"textures": {
+		"all": "minecraft:block/red_sandstone_bottom"
+	}
+}

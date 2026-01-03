@@ -1,0 +1,14 @@
+#Make fov scale at shoulder surfing view constant, ignoring scopes on current gun
+constant_aiming_zoom_scale = true
+#FOV scale for constant_aiming_fov_scale
+#Range: 0.0 ~ 1.7976931348623157E308
+constant_aiming_zoom_scale_value = 3.125
+#(Locked) ads speed for constant_aiming_fov_scale
+#Range: 0.0 ~ 1.7976931348623157E308
+constant_aiming_ads_speed = 1.0
+#This option is broken and has no effect on TaC Zero.
+#========================== Original Description ==========================
+#If enabled, tapping the aim button will put you in/out of first person view
+#This only works while TAC's Config.CLIENT.controls.holdToAim is set to true
+dynamic_aim_mode = true
+

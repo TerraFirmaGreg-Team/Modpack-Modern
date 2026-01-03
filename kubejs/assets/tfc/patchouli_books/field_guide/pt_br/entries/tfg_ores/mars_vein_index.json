@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Hematita e Limonita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende, Thorium, & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorium, & Uraninite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartzite, Asbestos, & Barite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone & Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Salts & Spodumene$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Sphalerite & Galena$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Tetraedrita (Normal)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Tetraedrita (Superfície)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Trona, Talc, & Glauconite$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Hematita e Limonita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Lápis-lazúri, Lazurita e Sodalita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende, Thorium, & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorium, & Uraninite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartzite, Asbestos, & Barite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone & Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Salts & Spodumene$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Sphalerite & Galena$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Tetraedrita (Normal)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Tetraedrita (Superfície)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Trona, Talc, & Glauconite$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1325,6 +1325,98 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Fonte de$(): Cálcio$(br)$(thing)Fórmula$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 200$(br)$(thing)Densidade$(): 0.25$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 30$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilita, Calcário, Cherte, Dolomito, Folhelho, Giz",
+      "title": "Lápis-lazúri, Lazurita e Sodalita",
+      "type": "patchouli:text",
+      "anchor": "mars_lapis"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Lazurita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lazurite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Fonte de$(): Alumínio, Cálcio, Sódio$(br)$(thing)Fórmula$(): Al₆Si₆Ca₈Na₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Sodalita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sodalite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Fonte de$(): Alumínio, Sódio$(br)$(thing)Fórmula$(): Al₃Si₃Na₄Cl",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Lápis-lazúri",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lapis"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Fonte de$(): Lazurita, Sodalita, Pirita, Calcita",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Calcita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/calcite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Fonte de$(): Cálcio$(br)$(thing)Fórmula$(): CaCO₃",
       "type": "patchouli:multiblock"
     },
     {

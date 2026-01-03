@@ -6,4 +6,6 @@
 	sortButtonsPosition = "TITLE_LINE_RIGHT"
 	#Whether click sound should play when custom buttons are clicked in gui
 	playButtonSound = true
+	#Whether scrolling in inventory should be handled by Mouse Tweaks mod if it is in the pack
+	mouseTweaksScrollEnabled = true
 

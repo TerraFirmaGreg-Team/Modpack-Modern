@@ -1,0 +1,17 @@
+{
+  "name": "Кожаный мешок",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:leather_sack",
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "sns:leather_sack",
+	  "text": "$(item)Кожаный мешок$() — это тип $(l:sns/item_containers)предметного контейнера$() и похож на сосуд с немного большей вместимостью. По умолчанию он может вмещать предметы максимум $(thing)обычного$() размера."
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/leather_sack"
+	}
+  ],
+  "read_by_default": true
+}

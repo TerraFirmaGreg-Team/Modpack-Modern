@@ -9,7 +9,7 @@ function registerTFGLoots(event) {
 			.removeLoot(Ingredient.all)
 			//ore
 			.pool((pool) => {
-				pool.rolls([4, 6]);
+				pool.rolls([2, 4]);
 				pool.addAlternativesLoot(
 					LootEntry.of('tfc:ore/normal_bismuthinite').when((c) => c.randomChance(0.1)),
 					LootEntry.of('tfc:ore/rich_bismuthinite').when((c) => c.randomChance(0.2)),
@@ -39,7 +39,7 @@ function registerTFGLoots(event) {
 			})
 			//seeds
 			.pool((pool) => {
-				pool.rolls([2, 8]);
+				pool.rolls([2, 4]);
 				pool.addAlternativesLoot(
 					LootEntry.of('tfc:seeds/onion').when((c) => c.randomChance(0.2)),
 					LootEntry.of('tfc:seeds/cabbage').when((c) => c.randomChance(0.2)),

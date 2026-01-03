@@ -144,6 +144,7 @@ function registerTFGPrimitiveItems(event) {
 		.texture("fluid", "tfg:item/mold/fired/rod_mold_overlay")
 		.tag('tfc:fired_molds')
 		.tag('tfc:molds')
+		.fluidTagAccept('tfg:usable_in_rod_mold')
 		.tfcccAllowedInMoldTable([
 			"XXXXXXXXXXXXXX",
 			"XXXXXXXXXXXXXX",
@@ -162,11 +163,12 @@ function registerTFGPrimitiveItems(event) {
 		])
 
 	event.create('tfg:small_gear_mold', 'tfc:mold')
-        .capacity(288)
+        .capacity(144)
 		.texture("base", "tfg:item/mold/fired/small_gear_mold_empty")
 		.texture("fluid", "tfg:item/mold/fired/small_gear_mold_overlay")
 		.tag('tfc:fired_molds')
 		.tag('tfc:molds')
+		.fluidTagAccept('tfg:usable_in_small_gear_mold')
 		.tfcccAllowedInMoldTable([
 			"XXXXXXXXXXXXXX",
 			"XXXXXXX   XXXX",
@@ -190,6 +192,7 @@ function registerTFGPrimitiveItems(event) {
 		.texture("fluid", "tfg:item/mold/fired/nugget_mold_overlay")
 		.tag('tfc:fired_molds')
 		.tag('tfc:molds')
+		.fluidTagAccept('tfc:usable_in_ingot_mold')
 		.tfcccAllowedInMoldTable([
 			"XXXXXXXXXXXXXX",
 			"XXXXXXXXXXXXXX",

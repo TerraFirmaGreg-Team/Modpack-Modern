@@ -203,6 +203,9 @@
 		#Whether the players hitbox should be expanded to the size of the contraption hitbox.
 		#[Technical]
 		syncPlayerPickupHitboxWithContraptionHitbox = false
+		#.
+		#Whether to prevent block dropping when contraption is placed inside in-world blocks.
+		noDropWhenContraptionReplaceBlocks = false
 
 	#.
 	#Configure speed/capacity levels for requirements and indicators.

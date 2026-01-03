@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 100$(br)$(thing)密度$(): 0.2$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 40 — 65$(br)$(thing)尺寸$(): 20$(br)$(thing)高度$(): 6$(br)$(thing)指示器最大深度$(): 30$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 石灰华, 粗面岩, 英安岩",
+      "text": "$(thing)稀有度$(): 30$(br)$(thing)密度$(): 0.2$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 40 — 65$(br)$(thing)尺寸$(): 20$(br)$(thing)高度$(): 6$(br)$(thing)指示器最大深度$(): 30$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 石灰华, 粗面岩, 英安岩",
       "title": "盐, 锂辉石",
       "type": "patchouli:text",
       "anchor": "venus_manual_salt"
@@ -41,7 +41,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 50%$(br)$(thing)来源$(): 钠, 氯$(br)$(thing)化学式$(): NaCl",
+      "text": "$(thing)百分比$(): 80%$(br)$(thing)来源$(): 钠, 氯$(br)$(thing)化学式$(): NaCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -61,7 +61,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 20%$(br)$(thing)来源$(): 钾, 氯$(br)$(thing)化学式$(): KCl",
+      "text": "$(thing)百分比$(): 10%$(br)$(thing)来源$(): 钾, 氯$(br)$(thing)化学式$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -81,7 +81,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 15%$(br)$(thing)来源$(): 钾, 锂, 铝, 氟$(br)$(thing)化学式$(): KLi₃Al₄F₂O₁₀",
+      "text": "$(thing)百分比$(): 5%$(br)$(thing)来源$(): 钾, 锂, 铝, 氟$(br)$(thing)化学式$(): KLi₃Al₄F₂O₁₀",
       "type": "patchouli:multiblock"
     },
     {
@@ -101,7 +101,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 15%$(br)$(thing)来源$(): 锂, 铝$(br)$(thing)化学式$(): LiAlSi₂O₆",
+      "text": "$(thing)百分比$(): 5%$(br)$(thing)来源$(): 锂, 铝$(br)$(thing)化学式$(): LiAlSi₂O₆",
       "type": "patchouli:multiblock"
     },
     {
@@ -111,7 +111,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 100$(br)$(thing)密度$(): 0.2$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 40 — 65$(br)$(thing)尺寸$(): 15$(br)$(thing)指示器最大深度$(): 30$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 石灰华, 粗面岩, 英安岩",
+      "text": "$(thing)稀有度$(): 30$(br)$(thing)密度$(): 0.2$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 40 — 65$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 30$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 石灰华, 粗面岩, 英安岩",
       "title": "硫, 黄铁矿",
       "type": "patchouli:text",
       "anchor": "venus_manual_sulfur"
@@ -133,7 +133,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 50%$(br)$(thing)来源$(): 硫$(br)$(thing)化学式$(): S",
+      "text": "$(thing)百分比$(): 80%$(br)$(thing)来源$(): 硫$(br)$(thing)化学式$(): S",
       "type": "patchouli:multiblock"
     },
     {
@@ -153,7 +153,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 35%$(br)$(thing)熔化$(): 铸铁$(br)$(thing)化学式$(): FeS₂",
+      "text": "$(thing)百分比$(): 15%$(br)$(thing)熔化$(): 铸铁$(br)$(thing)化学式$(): FeS₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -173,7 +173,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 15%$(br)$(thing)熔化$(): 锌$(br)$(thing)化学式$(): ZnS",
+      "text": "$(thing)百分比$(): 5%$(br)$(thing)熔化$(): 锌$(br)$(thing)化学式$(): ZnS",
       "type": "patchouli:multiblock"
     }
   ],

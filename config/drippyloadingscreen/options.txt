@@ -1,6 +1,49 @@
 ##[general]
 
 B:early_fade_out_elements = 'true';
-B:fade_out_loading_screen = 'true';
 B:allow_universal_layouts = 'false';
+B:fade_out_loading_screen = 'true';
 B:wait_for_textures_in_loading = 'true';
+
+
+##[early_loading]
+
+I:early_loading_top_right_watermark_position_offset_y = '0';
+I:early_loading_bottom_left_watermark_position_offset_x = '0';
+I:early_loading_bottom_left_watermark_position_offset_y = '0';
+B:early_loading_hide_logger = 'false';
+I:early_loading_bar_width = '400';
+I:early_loading_bar_position_offset_y = '50';
+I:early_loading_top_right_watermark_height = '100';
+S:early_loading_bottom_right_watermark_texture_path = '/config/fancymenu/assets/some_image.png';
+I:early_loading_top_right_watermark_position_offset_x = '0';
+S:early_loading_top_left_watermark_texture_path = '/config/fancymenu/assets/some_image.png';
+I:early_loading_bottom_right_watermark_height = '100';
+I:early_loading_bar_position_offset_x = '0';
+I:early_loading_logo_height = '120';
+I:early_loading_top_right_watermark_width = '100';
+I:early_loading_bottom_right_watermark_position_offset_y = '0';
+I:early_loading_window_height = '-1';
+S:early_loading_bar_progress_texture_path = '/config/fancymenu/assets/some_bar_progress_image.png';
+I:early_loading_bottom_right_watermark_position_offset_x = '0';
+S:early_loading_background_texture_path = '/config/fancymenu/assets/some_image.png';
+B:early_loading_background_preserve_aspect_ratio = 'true';
+I:early_loading_top_left_watermark_width = '100';
+B:early_loading_hide_logo = 'false';
+S:early_loading_bar_background_texture_path = '/config/fancymenu/assets/some_bar_background_image.png';
+S:early_loading_logo_texture_path = '/config/fancymenu/assets/some_image.png';
+S:early_loading_bottom_left_watermark_texture_path = '/config/fancymenu/assets/some_image.png';
+I:early_loading_top_left_watermark_position_offset_y = '0';
+I:early_loading_top_left_watermark_position_offset_x = '0';
+I:early_loading_logo_width = '480';
+S:early_loading_top_right_watermark_texture_path = '/config/fancymenu/assets/some_image.png';
+I:early_loading_bottom_left_watermark_width = '100';
+I:early_loading_bottom_right_watermark_width = '100';
+I:early_loading_bottom_left_watermark_height = '100';
+I:early_loading_bar_height = '40';
+S:early_loading_window_title = 'Minecraft';
+I:early_loading_top_left_watermark_height = '100';
+I:early_loading_window_width = '-1';
+I:early_loading_logo_position_offset_y = '-50';
+B:early_loading_hide_bar = 'false';
+I:early_loading_logo_position_offset_x = '0';

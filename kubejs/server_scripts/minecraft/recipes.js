@@ -988,14 +988,14 @@ const registerMinecraftRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:glowstone', 512))
 		.itemOutputs('16x minecraft:glow_ink_sac')
 		.duration(20)
-		.EUt(GTValues.VA[GTValues.HV])
+		.EUt(GTValues.VA[GTValues.LV])
 		
 	event.recipes.gtceu.chemical_bath('minecraft:glow_inc_sac1')
 		.itemInputs("#forge:dyes/black")
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
 		.itemOutputs('minecraft:glow_ink_sac')
 		.duration(40)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	//#endregion
 

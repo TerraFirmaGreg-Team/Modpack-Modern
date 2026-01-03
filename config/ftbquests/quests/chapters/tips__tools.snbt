@@ -2746,6 +2746,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "2BF805FFBA137197"
 					item: {
 						Count: 1

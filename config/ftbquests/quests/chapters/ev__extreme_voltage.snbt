@@ -1778,6 +1778,7 @@
 			dependencies: ["3A2E442E4D84C891"]
 			description: ["{quests.extreme_voltage.cracker.desc}"]
 			id: "36B9B5024356C53C"
+			shape: "octagon"
 			size: 1.5d
 			subtitle: "{quests.extreme_voltage.cracker.subtitle}"
 			tasks: [{
