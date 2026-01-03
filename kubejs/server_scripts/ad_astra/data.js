@@ -14,8 +14,8 @@ function registerTFCDataForAdAstra(event) {
 
 	event.foodItem('ad_astra:cheese', food => {
 		food.hunger(3)
-		food.saturation(3)
-		food.dairy(1.2)
+		food.saturation(2)
+		food.dairy(3)
 		food.decayModifier(0.9)
 	})
 
