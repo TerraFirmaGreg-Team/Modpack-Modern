@@ -161,6 +161,4 @@ function removeTFCRecipes(event) {
 	event.remove({ output: 'tfc:rustic_windmill_blade'})
 	event.remove({ output: 'tfc:lattice_windmill_blade'})
 	event.remove({ id: 'tfchotornot:heating/insulating_items'})
-
-	event.remove({ id: 'tfc:kjs/damage/kjs/stone'})
 }
