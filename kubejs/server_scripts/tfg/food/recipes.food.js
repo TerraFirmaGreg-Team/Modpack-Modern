@@ -841,7 +841,7 @@ function registerTFGFoodRecipes(event) {
 	global.processorRecipe(event, "yeast_starter_from_water", 7200, 8, {
 		circuit: 10,
 		itemInputs: ['#tfc:foods/fruits'],
-		fluidInputs: ['#tfg:clean_water 100'],
+		fluidInputs: ['#tfg:clean_water 100', 'gtceu:nitrogen 100'],
 		fluidOutputs: [Fluid.of('firmalife:yeast_starter', 100)]
 	})
 	
@@ -926,7 +926,12 @@ function registerTFGFoodRecipes(event) {
 		circuit: 1,
 		itemInputs: ['tfc:food/pork', 'tfc:powder/salt'],
 		itemOutputs: ['4x firmalife:food/bacon'],
-		itemOutputProvider: TFC.isp.of('4x firmalife:food/bacon').copyFood()
+		fluidInputs: ['gtceu:wood_gas 5', 'tfc:brine 100'],
+		itemOutputProvider: TFC.isp.of('4x firmalife:food/bacon')
+			.addTrait("firmalife:smoked")
+			.addTrait("tfc:brined")
+			.addTrait("tfc:salted")
+			.copyFood()
 	})
 
 	global.processorRecipe(event, "pickled_egg", 1000, 8, {

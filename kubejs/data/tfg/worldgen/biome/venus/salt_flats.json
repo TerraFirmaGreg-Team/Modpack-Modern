@@ -12,8 +12,6 @@
 		"fog_color": 12237498,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
-		"grass_color": 13758586,
-		"foliage_color": 11653213,
 		"ambient_sound": "tfg:ambient.venus_surface.loop",
 		"mood_sound": {
 			"block_search_extent": 8,
@@ -90,34 +88,40 @@
 			"charge": 0.9
 		}
 	},
-	"creature_spawn_probability": 0.05,
+	"creature_spawn_probability": 0.07,
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
 		"creature": [
 			{
 				"type": "arthropocolypse:prairie_grasshopper",
-				"maxCount": 2,
-				"minCount": 1,
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
 				"type": "arthropocolypse:field_cricket",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 50
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
 			},
 			{
 				"type": "arthropocolypse:wharf_roach",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 100
+				"weight": 70
 			},
 			{
-				"type": "arthropocolypse:platerodrilus",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 70
+				"type": "arthropocolypse:mealworm_beetle",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 30
+			},
+			{
+				"type": "arthropocolypse:stag_beetle",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 40
 			}
 		],
 		"misc": [],

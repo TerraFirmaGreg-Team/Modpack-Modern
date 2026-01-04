@@ -12,8 +12,6 @@
 		"fog_color": 9938052,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
-		"grass_color": 13758586,
-		"foliage_color": 11653213,
 		"ambient_sound": "tfg:ambient.venus_surface.loop",
 		"mood_sound": {
 			"block_search_extent": 8,
@@ -25,7 +23,7 @@
 			"options": {
 				"type": "minecraft:ash"
 			},
-			"probability": 0.1
+			"probability": 0.05
 		}
 	},
 	"features": [

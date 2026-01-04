@@ -238,16 +238,18 @@ TFCEvents.registerClimateModel(event => {
 			return calcCurrentTemp(avgTemp, 58, pos.y, calendarTicks, 10, 670, 1);
 		})
 
+		// Add a little variation for these
 		builder.setAverageTemperatureCalculation((level, pos) => {
 			return calcAverage(pos.z, global.VENUS_PLANET_SIZE, 454, 474);
 		})
 
 		builder.setAverageRainfallCalculation((level, pos) => {
-			return 300;
+			return calcAverage(pos.x, global.VENUS_PLANET_SIZE / 4, 250, 350);
 		})
 
 		builder.setAirFog((level, pos, calendarTicks) => 0)
 		builder.setWaterFog((level, pos, calendarTicks) => 0.6)
+		// Make up something for the wind. Apparently Venus irl is not very windy on the surface
 		builder.setWindVector((level, block, calendarTicks) => {
 			const strength = Math.max(0, Math.sin(calendarTicks / 10000)) * 0.2;
 
