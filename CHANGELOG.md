@@ -2,7 +2,59 @@
 
 ## Unreleased
 ### Changes
+- Added new steam multiblocks for the alloy smelter, compressor, forge hammer, and thermal centrifuge @Pyritie
+- Reduced the Y level that ad astra considers "space" so rocket launches are faster @Pyritie
+- Reduced the amount of loot vases in the newer illages, and reduced how much loot you get from them @Pyritie
+- Illages and the smaller mud brick ruins are now a little rarer, and the stone brick ruins are a little more common @Pyritie
+- Magnesium Diboride now only requires an MV chem bath to cool, but the MV chem bath now also requires a little plastic to craft (#2575) @Pyritie
+- Added an implosion compressor recipe for glowstone dust to glowstone blocks (#2581) @Xaligal
+- Ad astra and Create Deco lamps are now half as expensive to craft (#2581) @Xaligal
+- Added alloy blast smelter recipes for black bronze and bismuth bronze (#2581) @Xaligal
+- The alloy blast smelter recipe for glowstone has been adjusted (#2581) @Xaligal
+- Renamed Thorium (the non-isotope one) to Thorianite to better indicate that it's only an ore @Pyritie
+- Added a way to get wax and latex in the steam age for those of you starting on mars @Pyritie
+- Changed the Rover's step height from 1 block to 1.2 blocks (about 4 extra 'pixels') @Pyritie
+- Fixed/improved behaviour of GregTech solar things on non-overworld dimensions, so rain in the overworld doesn't stop the solar array from working on the moon, and mars sandstorms affect solar things as well (#2140) @Pyritie
 ### Bug fixes
+- Fixed missing crafting table recipes for greate gearboxes (#2577) @Pyritie
+- Fixed crashing when attaching shafts to a steam engine (#2578, #2579) @Electrolyte220
+- Fixed wrong small cogwheel rotation rendering @Electrolyte220
+- Fixed citric acid food processor recipe producing nothing (#2588) @Pyritie
+- Fixed not being able to use pickled eggs in sandwiches (#2551) @Pyritie
+- Fixed how much aluminium silicate you get from mica, pollucite, and spodumene to more accurately reflect how much aluminium they have @Pyritie
+- Fixed being able to put liquid metals into the new molds that didn't have a recipe @Pyritie
+- Added some grain nutrition to oatmeal @Pyritie
+- Fixed hot-protection chestplates not fully protecting against GT hot ingots (#2598) @Pyritie
+- Fixed hermetic sandstone's appearance so it looks similar to TFC's raw sandstone @Pyritie
+- Fixed granite magma blocks not looking like granite @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Russian @Petr211071
+
+## [0.11.15] - 31-12-2025
+### Bug fixes
+- Fixed Greate stress levels (#2564) @Pyritie
+- Fixed crash when looking at steam engines while holding a shaft (#2565)
+
+## [0.11.14] - 31-12-2025
+### Changes
+- Change energy acceptor to use a machine hull instead of a converter. (#2553) @thederpysockdude123
+- Update ExtendedAE package name in InvTweaks exclusions. (#2556) @FakeDomi
+- Pickled eggs can now be used in sandwiches (#2551) @Pyritie
+- Changed small gear mold capacity from 288 to 144mb (#2544) @JeanRdSz
+- Create Depots now count as forge insulation, so a basin can output directly onto one @Pyritie
+### Mod updates
+- New [Greate changelog](https://github.com/GreateBeyondTheHorizon/Greate/releases/tag/0.0.59)
+- New [Firmalife changelog](https://github.com/eerussianguy/firmalife/releases/tag/v2.1.25)
+### Bug fixes
+- Fixed issue where the arc furnace was generating annealed copper nuggets out of nothing @BlueBoat29
+- Fixed recipe conflict between Rimmed Blunt Bullet and 45-70 Bullet (#2545) @BlueBoat29
+- Fixed cake recipes returning nothing in a food processor (#2558) @Pyritie
+- Fixed a crash when generating chunks sometimes @Satherov
+### Translation updates
+- Chinese (simplified) @jmecn
+- Chinese (traditional) @CrazyO9
+- Russian @Petr211071
 
 ## [0.11.13] - 28-12-2025
 ### Breaking Changes

@@ -3,7 +3,7 @@
 	"config": {
 		"height": 6,
 		"size": 20,
-		"rarity": 100,
+		"rarity": 30,
 		"density": 0.2,
 		"min_y": 40,
 		"max_y": 65,
@@ -16,23 +16,23 @@
 				"with": [
 					{
 						"block": "gtceu:venus_stone_rock_salt_ore",
-						"weight": 20
+						"weight": 10
 					},
 					{
-						"block": "gtceu:raw_rock_salt_block",
+						"block": "gtceu:raw_salt_block",
 						"weight": 1
 					},
 					{
 						"block": "gtceu:venus_stone_salt_ore",
-						"weight": 50
+						"weight": 80
 					},
 					{
 						"block": "gtceu:venus_stone_lepidolite_ore",
-						"weight": 15
+						"weight": 5
 					},
 					{
 						"block": "gtceu:venus_stone_spodumene_ore",
-						"weight": 15
+						"weight": 5
 					}
 				]
 			},
@@ -43,23 +43,23 @@
 				"with": [
 					{
 						"block": "gtceu:dripstone_rock_salt_ore",
-						"weight": 20
+						"weight": 10
 					},
 					{
-						"block": "gtceu:raw_rock_salt_block",
+						"block": "gtceu:raw_salt_block",
 						"weight": 1
 					},
 					{
 						"block": "gtceu:dripstone_salt_ore",
-						"weight": 50
+						"weight": 80
 					},
 					{
 						"block": "gtceu:dripstone_lepidolite_ore",
-						"weight": 15
+						"weight": 5
 					},
 					{
 						"block": "gtceu:dripstone_spodumene_ore",
-						"weight": 15
+						"weight": 5
 					}
 				]
 			},
@@ -70,23 +70,23 @@
 				"with": [
 					{
 						"block": "gtceu:rhyolite_rock_salt_ore",
-						"weight": 20
+						"weight": 10
 					},
 					{
-						"block": "gtceu:raw_rock_salt_block",
+						"block": "gtceu:raw_salt_block",
 						"weight": 1
 					},
 					{
 						"block": "gtceu:rhyolite_salt_ore",
-						"weight": 50
+						"weight": 80
 					},
 					{
 						"block": "gtceu:rhyolite_lepidolite_ore",
-						"weight": 15
+						"weight": 5
 					},
 					{
 						"block": "gtceu:rhyolite_spodumene_ore",
-						"weight": 15
+						"weight": 5
 					}
 				]
 			},
@@ -97,23 +97,23 @@
 				"with": [
 					{
 						"block": "gtceu:basalt_rock_salt_ore",
-						"weight": 20
+						"weight": 10
 					},
 					{
-						"block": "gtceu:raw_rock_salt_block",
+						"block": "gtceu:raw_salt_block",
 						"weight": 1
 					},
 					{
 						"block": "gtceu:basalt_salt_ore",
-						"weight": 50
+						"weight": 80
 					},
 					{
 						"block": "gtceu:basalt_lepidolite_ore",
-						"weight": 15
+						"weight": 5
 					},
 					{
 						"block": "gtceu:basalt_spodumene_ore",
-						"weight": 15
+						"weight": 5
 					}
 				]
 			},
@@ -124,23 +124,23 @@
 				"with": [
 					{
 						"block": "gtceu:andesite_rock_salt_ore",
-						"weight": 20
+						"weight": 10
 					},
 					{
-						"block": "gtceu:raw_rock_salt_block",
+						"block": "gtceu:raw_salt_block",
 						"weight": 1
 					},
 					{
 						"block": "gtceu:andesite_salt_ore",
-						"weight": 50
+						"weight": 80
 					},
 					{
 						"block": "gtceu:andesite_lepidolite_ore",
-						"weight": 15
+						"weight": 5
 					},
 					{
 						"block": "gtceu:andesite_spodumene_ore",
-						"weight": 15
+						"weight": 5
 					}
 				]
 			},
@@ -151,56 +151,56 @@
 				"with": [
 					{
 						"block": "gtceu:dacite_rock_salt_ore",
-						"weight": 20
+						"weight": 10
 					},
 					{
-						"block": "gtceu:raw_rock_salt_block",
+						"block": "gtceu:raw_salt_block",
 						"weight": 1
 					},
 					{
 						"block": "gtceu:dacite_salt_ore",
-						"weight": 50
+						"weight": 80
 					},
 					{
 						"block": "gtceu:dacite_lepidolite_ore",
-						"weight": 15
+						"weight": 5
 					},
 					{
 						"block": "gtceu:dacite_spodumene_ore",
-						"weight": 15
+						"weight": 5
 					}
 				]
 			}
 		],
 		"indicator": {
-			"rarity": 20,
+			"rarity": 10,
 			"depth": 30,
 			"underground_rarity": 40,
-			"underground_count": 150,
+			"underground_count": 180,
 			"blocks": [
 				{
 					"block": "gtceu:rock_salt_indicator",
-					"weight": 10
+					"weight": 5
 				},
 				{
 					"block": "gtceu:rock_salt_bud_indicator",
-					"weight": 10
+					"weight": 5
 				},
 				{
 					"block": "gtceu:salt_indicator",
-					"weight": 25
+					"weight": 40
 				},
 				{
 					"block": "gtceu:salt_bud_indicator",
-					"weight": 25
+					"weight": 40
 				},
 				{
 					"block": "gtceu:lepidolite_indicator",
-					"weight": 15
+					"weight": 5
 				},
 				{
 					"block": "gtceu:spodumene_indicator",
-					"weight": 15
+					"weight": 5
 				}
 			]
 		}

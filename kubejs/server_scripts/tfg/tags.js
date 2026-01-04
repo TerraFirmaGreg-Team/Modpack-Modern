@@ -137,6 +137,8 @@ const registerTFGBlockTags = (event) => {
 //#region Fluids
 const registerTFGFluidTags = (event) => {
 
+	registerTFGPrimitiveFluidTags(event)
+
 	event.add('tfg:clean_water', 'minecraft:water')
 	event.add('tfg:clean_water', 'tfc:river_water')
 	event.add('tfg:clean_water', 'tfc:spring_water')

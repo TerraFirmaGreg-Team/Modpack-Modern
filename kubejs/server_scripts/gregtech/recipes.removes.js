@@ -689,6 +689,9 @@ function removeGTCEURecipes(event) {
 
 	removeMaceratorRecipe(event, 'macerate_wool')
 
+	removeMaceratorRecipe(event, 'macerate_enchanting_table')
+	event.remove({ id: 'gtceu:arc_furnace/arc_enchanting_table' })
+
 	event.remove({ id: 'gtceu:gas_collector/nether_air' })
 	event.remove({ id: 'gtceu:gas_collector/ender_air' })
 	// TODO: uncomment with venus update

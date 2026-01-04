@@ -79,10 +79,10 @@
   "block.minecraft.weeping_vines_plant": "Crimson Vines Plant",
   "block.minecraft.weeping_vines": "Crimson Vines",
   "block.minecraft.red_sand": "Hematitic Sand",
-  "block.minecraft.red_sandstone": "Hematitic Sandstone",
-  "block.minecraft.red_sandstone_stairs": "Hematitic Sandstone Stairs",
-  "block.minecraft.red_sandstone_slab": "Hematitic Sandstone Slab",
-  "block.minecraft.red_sandstone_wall": "Hematitic Sandstone Wall",
+  "block.minecraft.red_sandstone": "Raw Hematitic Sandstone",
+  "block.minecraft.red_sandstone_stairs": "Raw Hematitic Sandstone Stairs",
+  "block.minecraft.red_sandstone_slab": "Raw Hematitic Sandstone Slab",
+  "block.minecraft.red_sandstone_wall": "Raw Hematitic Sandstone Wall",
   "block.minecraft.chiseled_red_sandstone": "Chiseled Hematitic Sandstone",
   "block.minecraft.smooth_red_sandstone": "Smooth Hematitic Sandstone",
   "block.minecraft.smooth_red_sandstone_stairs": "Smooth Hematitic Sandstone Stairs",
@@ -99,5 +99,7 @@
   "item.minecraft.glow_ink_sac": "Glowing Dye",
   "item.minecraft.nether_brick": "Keratophyre Brick",
   "item.minecraft.furnace_minecart": "Minecart with Boiler",
-  "material.tfg.dripstone": "Travertine"
+  "material.tfg.dripstone": "Travertine",
+  "death.attack.magic": "%1$s was killed by deadly poison",
+  "death.attack.magic.player": "%1$s was killed by deadly poison whilst trying to escape %2$s"
 }

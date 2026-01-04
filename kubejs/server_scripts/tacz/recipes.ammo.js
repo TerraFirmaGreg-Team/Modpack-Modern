@@ -90,6 +90,7 @@ function registerTACZAmmoRecipes(event){
 		.itemOutputs(Item.of('tacz:ammo', 4,
 					'{AmmoId:"tacz:45_70"}'))
 		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(4)
 		.duration(20)
 	
 	//Clockwork era
@@ -99,6 +100,7 @@ function registerTACZAmmoRecipes(event){
 		.itemOutputs(Item.of('tacz:ammo', 4, 
 					'{AmmoId:"create_armorer:rbapb"}'))
 		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(1)
 		.duration(20)
 	event.recipes.gtceu.assembler('tfg_tacz:rb_small')
 		.itemInputs('4x #forge:nuggets/lead','2x #forge:foils/copper', '4x tfg:small_bullet_casing', 

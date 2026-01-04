@@ -56,7 +56,7 @@ function registerVintageImprovementsRecipes(event) {
 		'   A   '
 	], {
 		A: '#forge:plates/treated_wood',
-		B: '#forge:rods/long/black_steel',
+		B: '#forge:rods/long/steel',
 		C: 'create:andesite_casing',
 		D: '#forge:frames/treated_wood',
 		E: 'greate:steel_cogwheel'

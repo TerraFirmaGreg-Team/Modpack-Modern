@@ -1242,7 +1242,7 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:rods/tin_alloy'
 	}).id('tfg:create/shaped/andesite_ladder')
 
-	TFGHelpers.registerMaterialInfo('createdeco:andesite_ladder', { 'tin_alloy': 0.5 })
+	TFGHelpers.registerMaterialInfo('create:andesite_ladder', { 'tin_alloy': 0.5 })
 
 	// Лестница из латуни
 	event.shaped('7x create:brass_ladder', [
@@ -1253,7 +1253,7 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:rods/brass'
 	}).id('tfg:create/shaped/brass_ladder')
 
-	TFGHelpers.registerMaterialInfo('createdeco:brass_ladder', { 'brass': 0.5 })
+	TFGHelpers.registerMaterialInfo('create:brass_ladder', { 'brass': 0.5 })
 
 	// Лестница из железа
 	event.shaped('7x create:copper_ladder', [
@@ -1264,7 +1264,7 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:rods/copper'
 	}).id('tfg:create/shaped/copper_ladder')
 
-	TFGHelpers.registerMaterialInfo('createdeco:copper_ladder', { 'copper': 0.5 })
+	TFGHelpers.registerMaterialInfo('create:copper_ladder', { 'copper': 0.5 })
 
 	// Леса из железа
 	event.shaped('4x create:andesite_scaffolding', [

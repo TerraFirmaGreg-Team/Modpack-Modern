@@ -1,0 +1,19 @@
+#The durability value of Burlap material clothing.
+#Range: > 0
+durabilityBurlapClothes = 3000
+#The durability value of Insulated Leather material clothing.
+#Range: > 0
+durabilityInsulatedLeatherClothes = 2500
+#The durability value of the Leather Apron clothing.
+#Range: > 0
+durabilityLeatherApronClothes = 1000
+#The durability value of Silk material clothing.
+#Range: > 0
+durabilitySilkClothes = 3000
+#The durability value of Straw material clothing.
+#Range: > 0
+durabilityStrawClothes = 100
+#The durability value of Wool material clothing.
+#Range: > 0
+durabilityWoolClothes = 3000
+

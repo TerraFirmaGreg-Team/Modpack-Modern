@@ -318,8 +318,7 @@
 			description: ["{quests.medium_voltage.mv_component.desc}"]
 			icon: "gtceu:mv_electric_motor"
 			id: "1BE0349B8F3890D3"
-			shape: "octagon"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_component_.subtitle}"
 			tasks: [
 				{

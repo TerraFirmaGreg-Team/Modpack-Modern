@@ -1,0 +1,15 @@
+{
+	"feature": "tfg:venus/surface/shadow_plant_patch",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 2
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

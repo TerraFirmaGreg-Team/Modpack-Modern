@@ -288,7 +288,7 @@ const registerAdAstraRecipes = (event) => {
 	//#region Decoration blocks
 
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
-		event.shaped(`ad_astra:${color}_industrial_lamp`, [
+		event.shaped(`2x ad_astra:${color}_industrial_lamp`, [
 			' N ',
 			'DTD',
 			' P '
@@ -300,7 +300,7 @@ const registerAdAstraRecipes = (event) => {
 		})
 			.id(`tfg:shaped/ad_astra_${color}_industrial_lamp`);
 
-		event.shaped(`ad_astra:small_${color}_industrial_lamp`, [
+		event.shaped(`2x ad_astra:small_${color}_industrial_lamp`, [
 			' N ',
 			'DTD',
 			' P '
