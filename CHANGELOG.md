@@ -33,6 +33,7 @@
 - Fixed incorrect fluid tooltips for the silica glass bottle and iron flask (#2608) @JeanRdSz @Pyritie
 - Removed some dough mixing bowl recipes that tried to output more than 5 ingredients because that's the mixing bowl's maximum (#2612) @Pyritie
 - Fixed missing heat definition for soybeans (#2603) @Pyritie
+- Fixed crafting bacon removing all the other food traits @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071
