@@ -293,10 +293,10 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfc:wooden_bucket', 'firmalife:mixing_bowl'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "1,000"))
 	})
-	event.addAdvanced(['waterflasks:leather_flask'], (item, advanced, text) => {
+	event.addAdvanced(['waterflasks:leather_flask','tfc:silica_glass_bottle'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "500"))
 	})
-	event.addAdvanced(['tfc:hematitic_glass_bottle', 'tfc:silica_glass_bottle', 'tfc:volcanic_glass_bottle', 'tfc:olivine_glass_bottle'], (item, advanced, text) => {
+	event.addAdvanced(['tfc:hematitic_glass_bottle', 'tfc:volcanic_glass_bottle', 'tfc:olivine_glass_bottle'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "400"))
 	})
 	event.addAdvanced(['#tfc:lamps'], (item, advanced, text) => {
