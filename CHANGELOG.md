@@ -15,6 +15,7 @@
 - Added a way to get wax and latex in the steam age for those of you starting on mars @Pyritie
 - Changed the Rover's step height from 1 block to 1.2 blocks (about 4 extra 'pixels') @Pyritie
 - Fixed/improved behaviour of GregTech solar things on non-overworld dimensions, so rain in the overworld doesn't stop the solar array from working on the moon, and mars sandstorms affect solar things as well (#2140) @Pyritie
+- Added missing recipes for some Steam 'n' Rails items, and changed the smokestacks to use cast iron instead of black steel (#2610) @thederpysockdude123
 ### Bug fixes
 - Fixed missing crafting table recipes for greate gearboxes (#2577) @Pyritie
 - Fixed crashing when attaching shafts to a steam engine (#2578, #2579) @Electrolyte220
@@ -26,7 +27,11 @@
 - Added some grain nutrition to oatmeal @Pyritie
 - Fixed hot-protection chestplates not fully protecting against GT hot ingots (#2598) @Pyritie
 - Fixed hermetic sandstone's appearance so it looks similar to TFC's raw sandstone @Pyritie
-- Fixed granite magma blocks not looking like granite @Pyritie
+- Fixed some issues with the food autostacking changes in a previous version (#2580) @Mqrius
+- Fixed a crash with meal ingredient stacking on servers @Mqrius
+- Fixed some translation inconsistencies in the field guide (#2606, #2607) @jmecn @Petr211071
+- Fixed incorrect fluid tooltips for the silica glass bottle and iron flask (#2608) @JeanRdSz @Pyritie
+- Removed some dough mixing bowl recipes that tried to output more than 5 ingredients because that's the mixing bowl's maximum (#2612) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071

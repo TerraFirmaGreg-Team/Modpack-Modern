@@ -688,28 +688,10 @@ const registerFirmaLifeRecipes = (event) => {
 
 		event.recipes.firmalife.mixing_bowl()
 			.ingredients([
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-				`#tfc:sweetener`,
-				`#tfc:sweetener`],
-				Fluid.of('firmalife:yeast_starter', 400))
-			.outputItem(`8x firmalife:food/${grain}_dough`)
-			.id(`tfg:mixing_bowl/${grain}_dough_2`)
-
-		event.recipes.firmalife.mixing_bowl()
-			.ingredients([
 				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`)],
 				Fluid.of('minecraft:water', 100))
 			.outputItem(`4x tfc:food/${grain}_dough`)
 			.id(`tfg:mixing_bowl/${grain}_flatbread_dough`)
-
-		event.recipes.firmalife.mixing_bowl()
-			.ingredients([
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`)],
-				Fluid.of('minecraft:water', 200))
-			.outputItem(`8x tfc:food/${grain}_dough`)
-			.id(`tfg:mixing_bowl/${grain}_flatbread_dough_2`)
 	})
 
 	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`2x firmalife:food/hardtack_dough`).copyFood(), [
