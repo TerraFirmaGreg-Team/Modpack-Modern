@@ -12,7 +12,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(l:tfg_tips/faqs#boats)我的船为什么会沉？$()$(li)$(l:tfg_tips/faqs#dried_fruit)如何制作酵母起子？$()$(li)$(l:tfg_tips/faqs#dried_fruit)如何制作菠萝纤维？$()$(li)$(l:tfg_tips/faqs#jam)如何制作果酱？$()$(li)$(l:tfg_tips/faqs#resin)如何制作橡胶？$()$(li)$(l:tfg_tips/faqs#chunks)如何强制加载区块或提升加载上限？$()"
+            "text": "$(li)$(l:tfg_tips/faqs#boats)我的船为什么会沉？$()$(li)$(l:tfg_tips/faqs#dried_fruit)如何制作酵种？$()$(li)$(l:tfg_tips/faqs#dried_fruit)如何制作菠萝纤维？$()$(li)$(l:tfg_tips/faqs#jam)如何制作果酱？$()$(li)$(l:tfg_tips/faqs#resin)如何制作橡胶？$()$(li)$(l:tfg_tips/faqs#chunks)如何强制加载区块或提升加载上限？$()"
         },
         {
             "type": "patchouli:text",
@@ -22,7 +22,7 @@
         {
             "type": "patchouli:text",
             "anchor": "dried_fruit",
-            "text": "$(italic)如何制作酵母起子或菠萝纤维？$()$(br2)请先使用$(item)干燥垫$()将水果晒干，随后按照$(l:firmalife/bread)面包$()或$(l:firmalife/berry_bushes)菠萝布$()章节的步骤操作。"
+            "text": "$(italic)如何制作酵种或菠萝纤维？$()$(br2)请先使用$(item)干燥垫$()将水果晒干，随后按照$(l:firmalife/bread)面包$()或$(l:firmalife/berry_bushes)菠萝布$()章节的步骤操作。"
         },
         {
             "type": "patchouli:text",
