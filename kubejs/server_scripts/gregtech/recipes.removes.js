@@ -182,6 +182,39 @@ function removeGTCEURecipes(event) {
 
 	// #endregion
 
+	// #region Reconstituted Stone
+
+	event.remove({ id: 'gtceu:shaped/cobblestone_wall_saw' })
+	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_wall_saw' })
+	event.remove({ id: 'gtceu:shaped/stone_brick_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/stone_brick_wall_saw' })
+	event.remove({ id: 'gtceu:shaped/mossy_stone_brick_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/mossy_stone_brick_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/mossy_stone_brick_wall_saw' })
+
+	// #endregion
+
+	// #region Cut Copper
+
+	event.remove({ id: 'gtceu:shaped/cut_copper_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/cut_copper_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/exposed_cut_copper_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/exposed_cut_copper_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/weathered_cut_copper_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/weathered_cut_copper_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/oxidized_cut_copper_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/oxidized_cut_copper_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/waxed_cut_copper_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/waxed_cut_copper_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/waxed_exposed_cut_copper_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/waxed_exposed_cut_copper_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/waxed_weathered_cut_copper_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/waxed_weathered_cut_copper_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/waxed_oxidized_cut_copper_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/waxed_oxidized_cut_copper_slab_saw' })
+
+	// #endregion
+
 	// #region Plant Ball
 
 	event.remove({ id: 'gtceu:compressor/plant_ball_from_wheat' })
@@ -504,6 +537,9 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shapeless/potin_dust' })
 
 	//#endregion
+
+	// Iron nugget saw recipe
+	event.remove({ id: 'gtceu:shapeless/nugget_disassembling_iron'})
 
 	// Удаление рецептов связанных с Primitive Blast Furnace
 	event.remove({ id: 'gtceu:arc_furnace/arc_primitive_blast_furnace' })
