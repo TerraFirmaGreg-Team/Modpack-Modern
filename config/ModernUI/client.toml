@@ -157,7 +157,7 @@
 #Font Config
 [font]
 	#The first font family to use. See fallbackFontFamilyList
-	firstFontFamily = "Unifont"
+	firstFontFamily = ".\\config\\ModernUI\\unifont-17.0.03.otf"
 	#A set of fallback font families to determine the typeface to use.
 	#The order is first > fallbacks. TrueType & OpenType are supported.
 	#Each element can be one of the following two cases:
