@@ -1137,7 +1137,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 60%$(br)$(thing)Розплавляється в$(): Олово$(br)$(thing)Формула$(): Sn",
+      "text": "$(thing)Відсоток$(): 54%$(br)$(thing)Розплавляється в$(): Олово$(br)$(thing)Формула$(): Sn",
       "type": "patchouli:multiblock"
     },
     {
@@ -1157,13 +1157,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 40%$(br)$(thing)Розплавляється в$(): Олово$(br)$(thing)Формула$(): SnO₂",
+      "text": "$(thing)Відсоток$(): 36%$(br)$(thing)Розплавляється в$(): Олово$(br)$(thing)Формула$(): SnO₂",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Нітрат калію",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/saltpeter"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 9%$(br)$(thing)Джерело$(): Калію, Азот$(br)$(thing)Формула$(): KNO₃",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",

@@ -86,3 +86,28 @@ function registerTFGPrimitiveBlockTags(event) {
 	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_red')
 	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_white')
 }
+
+function registerTFGPrimitiveFluidTags(event) {
+	event.add('tfg:usable_in_small_gear_mold', 'gtceu:copper')
+	event.add('tfg:usable_in_small_gear_mold', 'gtceu:tin')
+	event.add('tfg:usable_in_small_gear_mold', 'gtceu:sterling_silver')
+	event.add('tfg:usable_in_small_gear_mold', 'gtceu:bismuth_bronze')
+	event.add('tfg:usable_in_small_gear_mold', 'gtceu:bronze')
+	event.add('tfg:usable_in_small_gear_mold', 'gtceu:zinc')
+	event.add('tfg:usable_in_small_gear_mold', 'gtceu:silver')
+	event.add('tfg:usable_in_small_gear_mold', 'gtceu:potin')
+	event.add('tfg:usable_in_small_gear_mold', 'gtceu:bismuth')
+	event.add('tfg:usable_in_small_gear_mold', 'gtceu:lead')
+	event.add('tfg:usable_in_small_gear_mold', 'gtceu:nickel')
+	event.add('tfg:usable_in_small_gear_mold', 'gtceu:brass')
+	event.add('tfg:usable_in_small_gear_mold', 'gtceu:gold')
+	event.add('tfg:usable_in_small_gear_mold', 'gtceu:red_alloy')
+	event.add('tfg:usable_in_small_gear_mold', 'gtceu:black_bronze')
+	event.add('tfg:usable_in_small_gear_mold', 'gtceu:rose_gold')
+
+	event.add('tfg:usable_in_rod_mold', 'gtceu:red_alloy')
+	event.add('tfg:usable_in_rod_mold', 'gtceu:bronze')
+	event.add('tfg:usable_in_rod_mold', 'gtceu:bismuth_bronze')
+	event.add('tfg:usable_in_rod_mold', 'gtceu:black_bronze')
+	event.add('tfg:usable_in_rod_mold', 'gtceu:brass')
+}

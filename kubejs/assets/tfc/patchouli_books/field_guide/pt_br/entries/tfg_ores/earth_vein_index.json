@@ -801,7 +801,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 60%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): Sn",
+      "text": "$(thing)Porcentagem$(): 55%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): Sn",
       "type": "patchouli:multiblock"
     },
     {
@@ -821,13 +821,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 40%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): SnO₂",
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): SnO₂",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Salitre",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/saltpeter"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Fonte de$(): Potássio, Nitrogênio$(br)$(thing)Fórmula$(): KNO₃",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
@@ -853,7 +868,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 60%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): SnO₂",
+      "text": "$(thing)Porcentagem$(): 55%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): SnO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -873,13 +888,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 40%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): Sn",
+      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): Sn",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Salitre",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/saltpeter"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Fonte de$(): Potássio, Nitrogênio$(br)$(thing)Fórmula$(): KNO₃",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",

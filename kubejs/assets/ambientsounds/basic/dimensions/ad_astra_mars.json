@@ -1,0 +1,21 @@
+{
+	"name": "ad_astra_mars",
+	"dimension-names": [
+		"mars"
+	],
+	"biome-selector": {
+		"always": true
+	},
+	"regions": [
+		{
+			"name": "wind",
+			"volume": 0.3,
+			"bad-regions": [
+				"cave-ambience"
+			],
+			"sound-collections": [
+				"wind"
+			]
+		}
+	]
+}

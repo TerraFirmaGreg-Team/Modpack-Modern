@@ -64,6 +64,7 @@ defaultconfigs/ftbranks/players.snbt
 
 /.bobby/
 /.mixin.out/
+/tacz/tacz_default_gun
 /classOut
 /backups
 /profileImage
@@ -91,6 +92,7 @@ defaultconfigs/ftbranks/players.snbt
 /chiselsandbits
 /gtceu/prospection_cache
 /data
+/ESM
 
 # Client data
 bansoukou
@@ -115,6 +117,8 @@ optionsshaders.txt
 OpenComputersMod-*
 hei_bookmarks.ini
 icon.png
+EffekseerNativeForJava.dll
+libEffekseerNativeForJava.so
 
 # Server data
 # .pakku/server-overrides/libraries
@@ -125,6 +129,6 @@ icon.png
 # .pakku/server-overrides/mods
 # .pakku/server-overrides/user_jvm_args.txt
 
-/tacz/tacz_default_gun
-EffekseerNativeForJava.dll
-libEffekseerNativeForJava.so
+
+
+

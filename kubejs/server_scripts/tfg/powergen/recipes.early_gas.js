@@ -218,13 +218,17 @@ function registerTFGEarlyGasRecipes(event) {
 		.inputFluids(Fluid.of('tfg:syngas', 1))
 		.EUt(-(32))
 		.duration(20*0.2)
-
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+	
 	// Reformate Gas
 
 	event.recipes.gtceu.gas_turbine('tfg:reformate_gas') // Gas Turbine
 		.inputFluids(Fluid.of('tfg:reformate_gas', 1))
 		.EUt(-(32))
 		.duration(20*0.6)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
 
 	// BTX Fuel
 
@@ -232,6 +236,8 @@ function registerTFGEarlyGasRecipes(event) {
 		.inputFluids(Fluid.of('tfg:btx_fuel', 1))
 		.EUt(-(32))
 		.duration(20*2.6)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
 
 	//#endregion
 
@@ -310,7 +316,8 @@ function registerTFGEarlyGasRecipes(event) {
 		.outputFluids(Fluid.of('tfg:btx_fuel', 48000))
 		.duration(20*6)
 		.EUt(GTValues.VA[GTValues.IV])
-
+		.circuit(24)
+	
 	// Loop
 
 	event.recipes.gtceu.macerator('tfg:catalyser_power')

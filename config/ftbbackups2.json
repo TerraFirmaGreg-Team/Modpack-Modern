@@ -27,7 +27,7 @@
 	   More info here
 	   (http://www.cronmaker.com)
 	*/
-	"backup_cron": "0 0 0/1 1/1 * ? *",
+	"backup_cron": "0 15 10 * * ? *",
 	// Time between manual backups using the command
 	"manual_backups_time": 0,
 	// Only run a backup if a player has been online since the last backup
@@ -52,9 +52,9 @@
 	// Specify the backup format. Valid options are ZIP and DIRECTORY
 	"backup_format": "ZIP",
 	// Minimum free disk space in MB. If a backup's creation would leave less than this amount of disk space remaining, the backup will be aborted.
-	"minimum_free_space": 0,
+	"minimum_free_space": 51200,
 	// If the previous backup failed due to lack of space, the oldest backup will be deleted to free space.
-	"free_space_if_needed": false,
+	"free_space_if_needed": true,
 	/* Specify files or folders to be excluded.
 	   Can specify a file name, path relative to server directory or wildcard file path
 	   Examples:                       (All file paths are relative to server root)

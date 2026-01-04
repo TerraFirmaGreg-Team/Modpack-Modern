@@ -679,41 +679,6 @@ global.TFC_SOFTWOOD_TYPES = /** @type {const} */ ([
 
 global.TFC_MUD_TYPES = /** @type {const} */ (["silt", "loam", "sandy_loam", "silty_loam"]);
 
-global.TFC_WOOD_ITEM_TYPES_TO_WOOD_DUST = /** @type {const} */ ({
-    "#tfc:lumber": { name: "lumber", output: ["1x gtceu:wood_dust"] },
-    "#tfc:support_beams": { name: "support_beams", output: ["2x gtceu:wood_dust"] },
-    "#tfc:minecarts": { name: "minecarts", output: ["5x gtceu:wood_dust", "1x gtceu:small_wrought_iron_dust"] },
-    "#minecraft:signs": { name: "signs", output: ["1x gtceu:wood_dust"] },
-    "#minecraft:hanging_signs": { name: "hanging_signs", output: ["1x gtceu:wood_dust"] },
-    "#minecraft:logs": { name: "logs", output: ["6x gtceu:wood_dust"] },
-    "#minecraft:planks": { name: "planks", output: ["1x gtceu:wood_dust"] },
-    "#tfc:bookshelves": { name: "bookshelves", output: ["6x gtceu:wood_dust"] },
-    "#minecraft:wooden_doors": { name: "wooden_doors", output: ["2x gtceu:wood_dust"] },
-    "#minecraft:wooden_trapdoors": { name: "wooden_trapdoors", output: ["2x gtceu:wood_dust"] },
-    "#minecraft:wooden_fences": { name: "wooden_fences", output: ["1x gtceu:wood_dust"] },
-    "#forge:fence_gates/wooden": { name: "wooden_fence_gates", output: ["1x gtceu:wood_dust"] },
-    "#minecraft:wooden_buttons": { name: "wooden_buttons", output: ["1x gtceu:wood_dust"] },
-    "#minecraft:wooden_pressure_plates": { name: "wooden_pressure_plates", output: ["1x gtceu:wood_dust"] },
-    "#minecraft:wooden_slabs": { name: "wooden_slabs", output: ["2x gtceu:wood_dust"] },
-    "#minecraft:wooden_stairs": { name: "wooden_stairs", output: ["2x gtceu:wood_dust"] },
-    "#tfc:tool_racks": { name: "tool_racks", output: ["1x gtceu:wood_dust"] },
-    "#tfc:twigs": { name: "twigs", output: ["1x gtceu:wood_dust"] },
-    "#tfc:workbenches": { name: "workbenches", output: ["1x gtceu:wood_dust"] },
-    "#forge:chests/wooden": { name: "wooden_chests", output: ["8x gtceu:wood_dust"] },
-    "#tfc:looms": { name: "looms", output: ["2x gtceu:wood_dust"] },
-    "#tfc:sluices": { name: "sluices", output: ["4x gtceu:wood_dust"] },
-    "#tfc:barrels": { name: "barrels", output: ["2x gtceu:wood_dust"] },
-    "#tfc:lecterns": { name: "lecterns", output: ["4x gtceu:wood_dust"] },
-    "#tfc:scribing_tables": { name: "scribing_tables", output: ["1x gtceu:wood_dust"] },
-    "#tfc:jar_shelves": { name: "jar_shelves", output: ["1x gtceu:wood_dust"] },
-    "#tfcastikorcarts:cart_wheel": { name: "", output: ["1x gtceu:wood_dust"] },
-    "#tfcastikorcarts:plow": { name: "plow", output: ["2x gtceu:wood_dust"] },
-    "#tfcastikorcarts:animal_cart": { name: "animal_cart", output: ["2x gtceu:wood_dust"] },
-    "#tfcastikorcarts:supply_cart": { name: "supply_cart", output: ["2x gtceu:wood_dust"] },
-    "#firmalife:food_shelves": { name: "food_shelves", output: ["2x gtceu:wood_dust"] },
-    "#firmalife:hangers": { name: "hangers", output: ["1x gtceu:wood_dust"] }
-});
-
 /**
  * Хранит названия типов полублоков из камня в TFC. (Не кирпичей)
  */
@@ -728,129 +693,6 @@ global.TFC_BRICK_SLAB_BLOCK_TYPES = /** @type {const} */ (["bricks", "mossy_bric
  * Хранит названия цветов песка в TFC.
  */
 global.SAND_COLORS = /** @type {const} */ (["brown", "white", "black", "red", "yellow", "green", "pink"]);
-
-global.TFC_SIMPLE_MATERIALS = /** @type {const} */ ([
-    "gypsum",
-    "cinnabar",
-    "cryolite",
-    "saltpeter",
-    "sylvite",
-    "borax",
-    "halite",
-    "amethyst",
-    "opal",
-    "pyrite",
-    "topaz",
-    "bituminous_coal",
-    "lignite",
-    "graphite",
-    "sulfur",
-    "diamond",
-    "emerald",
-    "lapis_lazuli",
-    "ruby",
-    "sapphire"
-]);
-
-global.TFC_ORE_TYPES = /** @type {const} */ (["poor", "normal", "rich"]);
-
-global.TFC_ORE_MATERIALS = /** @type {const} */ ([
-    "bismuthinite",
-    "cassiterite",
-    "garnierite",
-    "hematite",
-    "limonite",
-    "magnetite",
-    "malachite",
-    "native_copper",
-    "native_gold",
-    "native_silver",
-    "sphalerite",
-    "tetrahedrite"
-]);
-
-global.TFC_FURNACE_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
-    { input: "tfc:ceramic/unfired_ingot_mold", output: "tfc:ceramic/ingot_mold", name: "ingot_mold" },
-    { input: "tfc:ceramic/unfired_pickaxe_head_mold", output: "tfc:ceramic/pickaxe_head_mold", name: "pickaxe_head_mold" },
-    { input: "tfc:ceramic/unfired_propick_head_mold", output: "tfc:ceramic/propick_head_mold", name: "propick_head_mold" },
-    { input: "tfc:ceramic/unfired_axe_head_mold", output: "tfc:ceramic/axe_head_mold", name: "axe_head_mold" },
-    { input: "tfc:ceramic/unfired_shovel_head_mold", output: "tfc:ceramic/shovel_head_mold", name: "shovel_head_mold" },
-    { input: "tfc:ceramic/unfired_hoe_head_mold", output: "tfc:ceramic/hoe_head_mold", name: "hoe_head_mold" },
-    { input: "tfc:ceramic/unfired_chisel_head_mold", output: "tfc:ceramic/chisel_head_mold", name: "chisel_head_mold" },
-    { input: "tfc:ceramic/unfired_hammer_head_mold", output: "tfc:ceramic/hammer_head_mold", name: "hammer_head_mold" },
-    { input: "tfc:ceramic/unfired_saw_blade_mold", output: "tfc:ceramic/saw_blade_mold", name: "saw_blade_mold" },
-    { input: "tfc:ceramic/unfired_javelin_head_mold", output: "tfc:ceramic/javelin_head_mold", name: "javelin_head_mold" },
-    { input: "tfc:ceramic/unfired_sword_blade_mold", output: "tfc:ceramic/sword_blade_mold", name: "sword_blade_mold" },
-    { input: "tfc:ceramic/unfired_mace_head_mold", output: "tfc:ceramic/mace_head_mold", name: "mace_head_mold" },
-    { input: "tfc:ceramic/unfired_knife_blade_mold", output: "tfc:ceramic/knife_blade_mold", name: "knife_blade_mold" },
-    { input: "tfc:ceramic/unfired_scythe_blade_mold", output: "tfc:ceramic/scythe_blade_mold", name: "scythe_blade_mold" },
-    { input: "tfc:ceramic/unfired_bell_mold", output: "tfc:ceramic/bell_mold", name: "bell_mold" },
-    { input: "tfc:ceramic/unfired_fire_ingot_mold", output: "tfc:ceramic/fire_ingot_mold", name: "fire_ingot_mold" },
-    { input: "tfc:ceramic/unfired_brick", output: "minecraft:brick", name: "brick" },
-    { input: "tfc:ceramic/unfired_crucible", output: "tfc:crucible", name: "crucible" },
-    { input: "tfc:ceramic/unfired_flower_pot", output: "minecraft:flower_pot", name: "flower_pot" },
-    { input: "tfc:ceramic/unfired_pan", output: "tfc:pan/empty", name: "pan" },
-    { input: "tfc:ceramic/unfired_blowpipe", output: "tfc:ceramic_blowpipe", name: "ceramic_blowpipe" },
-    { input: "tfc:ceramic/unfired_bowl", output: "tfc:ceramic/bowl", name: "bowl" },
-    { input: "tfc:ceramic/unfired_fire_brick", output: "tfc:ceramic/fire_brick", name: "fire_brick" },
-    { input: "tfc:ceramic/unfired_jug", output: "tfc:ceramic/jug", name: "jug" },
-    { input: "tfc:ceramic/unfired_pot", output: "tfc:ceramic/pot", name: "pot" },
-    { input: "tfc:ceramic/unfired_spindle_head", output: "tfc:ceramic/spindle_head", name: "spindle_head" },
-    { input: "tfc:ceramic/unfired_vessel", output: "tfc:ceramic/vessel", name: "vessel" },
-    { input: "tfc:ceramic/unfired_large_vessel", output: "tfc:ceramic/large_vessel", name: "large_vessel" },
-    { input: "tfcchannelcasting:unfired_channel", output: "tfcchannelcasting:channel", name: "channel" },
-    { input: "tfcchannelcasting:unfired_mold_table", output: "tfcchannelcasting:mold_table", name: "mold_table" },
-    { input: "firmalife:oven_top", output: "firmalife:cured_oven_top", name: "oven_top" },
-    { input: "firmalife:oven_chimney", output: "firmalife:cured_oven_chimney", name: "oven_chimney" },
-    { input: "firmalife:oven_bottom", output: "firmalife:cured_oven_bottom", name: "oven_bottom" },
-    { input: "firmalife:oven_hopper", output: "firmalife:cured_oven_hopper", name: "oven_hopper" }
-]);
-
-global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
-    { input: "5x minecraft:clay_ball", output: "2x tfc:ceramic/unfired_ingot_mold", name: "ingot_mold" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_pickaxe_head_mold", name: "pickaxe_head_mold" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_propick_head_mold", name: "propick_head_mold" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_axe_head_mold", name: "axe_head_mold" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_shovel_head_mold", name: "shovel_head_mold" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_hoe_head_mold", name: "hoe_head_mold" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_chisel_head_mold", name: "chisel_head_mold" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_hammer_head_mold", name: "hammer_head_mold" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_saw_blade_mold", name: "saw_blade_mold" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_javelin_head_mold", name: "javelin_head_mold" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_sword_blade_mold", name: "sword_blade_mold" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_mace_head_mold", name: "mace_head_mold" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_knife_blade_mold", name: "knife_blade_mold" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_scythe_blade_mold", name: "scythe_blade_mold" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_bell_mold", name: "bell_mold" },
-    { input: "5x minecraft:clay_ball", output: "2x tfc:ceramic/unfired_flower_pot", name: "flower_pot" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_pan", name: "pan" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_blowpipe", name: "ceramic_blowpipe" },
-    { input: "5x minecraft:clay_ball", output: "4x tfc:ceramic/unfired_bowl", name: "bowl" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_jug", name: "jug" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_pot", name: "pot" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_spindle_head", name: "spindle_head" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_vessel", name: "vessel" },
-    { input: "5x minecraft:clay_ball", output: "tfc:ceramic/unfired_large_vessel", name: "large_vessel" },
-    { input: "5x minecraft:clay_ball", output: "tfcchannelcasting:unfired_heart_mold", name: "heart_mold" },
-    { input: "5x minecraft:clay_ball", output: "10x rnr:unfired_roof_tile", name: "roof_tile" },
-    { input: "5x minecraft:clay_ball", output: "firmalife:oven_top", name: "oven_top" },
-    { input: "5x minecraft:clay_ball", output: "firmalife:oven_chimney", name: "oven_chimney" },
-    { input: "5x minecraft:clay_ball", output: "firmalife:oven_bottom", name: "oven_bottom" }
-]);
-
-global.TFC_FIRE_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = /** @type {const} */ ([
-    { input: "5x tfc:fire_clay", output: "tfc:ceramic/unfired_fire_ingot_mold", name: "fire_ingot_mold" },
-    { input: "5x tfc:fire_clay", output: "tfc:ceramic/unfired_crucible", name: "crucible" },
-    { input: "5x tfc:fire_clay", output: "tfcchannelcasting:unfired_channel", name: "channel" },
-    { input: "5x tfc:fire_clay", output: "tfcchannelcasting:unfired_mold_table", name: "mold_table" }
-]);
-
-global.TFC_BATCH_TO_BOTTLE_ASSEMBLING_RECIPE_COMPONENTS = /** @type {const} */ ([
-    { input: "tfc:silica_glass_batch", output: "tfc:silica_glass_bottle", name: "silica_glass_bottle" },
-    { input: "tfc:hematitic_glass_batch", output: "tfc:hematitic_glass_bottle", name: "hematitic_glass_bottle" },
-    { input: "tfc:olivine_glass_batch", output: "tfc:olivine_glass_bottle", name: "olivine_glass_bottle" },
-    { input: "tfc:volcanic_glass_batch", output: "tfc:volcanic_glass_bottle", name: "volcanic_glass_bottle" }
-]);
 
 global.TFC_MEAT_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfc:food/horse_meat", output: "tfc:food/cooked_horse_meat", name: "cooked_horse_meat" },
@@ -917,40 +759,6 @@ global.TFC_MEAT_RECIPE_COMPONENTS = /** @type {const} */ ([
 
 ]);
 
-global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = /** @type {const} */ ([
-    { input: "#forge:dusts/coke", output: "4x tfc:powder/coke", name: "coke_powder" },
-    { input: "#forge:dusts/amethyst", output: "4x tfc:powder/amethyst", name: "amethyst_powder" },
-    { input: "#forge:dusts/diamond", output: "4x tfc:powder/diamond", name: "diamond_powder" },
-    { input: "#forge:dusts/emerald", output: "4x tfc:powder/emerald", name: "emerald_powder" },
-    { input: "#forge:dusts/lapis", output: "4x tfc:powder/lapis_lazuli", name: "lapis_powder" },
-    { input: "#forge:dusts/opal", output: "4x tfc:powder/opal", name: "opal_powder" },
-    { input: "#forge:dusts/pyrite", output: "4x tfc:powder/pyrite", name: "pyrite_powder" },
-    { input: "#forge:dusts/ruby", output: "4x tfc:powder/ruby", name: "ruby_powder" },
-    { input: "#forge:dusts/sapphire", output: "4x tfc:powder/sapphire", name: "sapphire_powder" },
-    { input: "#forge:dusts/topaz", output: "4x tfc:powder/topaz", name: "topaz_powder" },
-    { input: "#forge:dusts/gold", output: "4x tfc:powder/native_gold", name: "gold_powder" },
-    { input: "#forge:dusts/silver", output: "4x tfc:powder/native_silver", name: "silver_powder" },
-    { input: "#forge:dusts/copper", output: "4x tfc:powder/native_copper", name: "copper_powder" },
-    { input: "#forge:dusts/cassiterite", output: "4x tfc:powder/cassiterite", name: "cassiterite_powder" },
-    { input: "#forge:dusts/bismuth", output: "4x tfc:powder/bismuthinite", name: "bismuth_powder" },
-    { input: "#forge:dusts/garnierite", output: "4x tfc:powder/garnierite", name: "garnierite_powder" },
-    { input: "#forge:dusts/nickel", output: "4x tfc:powder/garnierite", name: "nickel_powder" },
-    { input: "#forge:dusts/sphalerite", output: "4x tfc:powder/sphalerite", name: "sphalerite_powder" },
-    { input: "#forge:dusts/magnetite", output: "4x tfc:powder/magnetite", name: "magnetite_powder" },
-    { input: "#forge:dusts/tetrahedrite", output: "4x tfc:powder/tetrahedrite", name: "tetrahedrite_powder" },
-    { input: "#forge:dusts/malachite", output: "4x tfc:powder/malachite", name: "malachite_powder" },
-    { input: "#forge:dusts/yellow_limonite", output: "4x tfc:powder/limonite", name: "limonite_powder" },
-    { input: "#forge:dusts/hematite", output: "4x tfc:powder/hematite", name: "hematite_powder" },
-    { input: "#forge:dusts/sulfur", output: "4x tfc:powder/sulfur", name: "sulfur_powder" },
-    { input: "#forge:dusts/saltpeter", output: "4x tfc:powder/saltpeter", name: "saltpeter_powder" },
-    { input: "#forge:dusts/salt", output: "4x tfc:powder/salt", name: "salt_powder" },
-    { input: "#forge:dusts/graphite", output: "4x tfc:powder/graphite", name: "graphite_powder" },
-    { input: "#forge:dusts/borax", output: "4x tfc:powder/flux", name: "flux_powder" },
-    { input: "#forge:dusts/soda_ash", output: "4x tfc:powder/soda_ash", name: "soda_ash" },
-    { input: "gtceu:charcoal_dust", output: "2x tfc:powder/charcoal", name: "charcoal" },
-    { input: "tfc:ore/sylvite", output: "4x tfc:powder/sylvite", name: "sylvite" }
-]);
-
 global.TFC_GRAINS = /** @type {const} */ (["barley", "maize", "oat", "rye", "rice", "wheat"]);
 
 global.TFC_JAMS = /** @type {const} */ ([
@@ -980,12 +788,7 @@ global.TFC_JAMS = /** @type {const} */ ([
 
 global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfc:plant/cherry_sapling", fluid_amount: 8000, output: "32x tfc:food/cherry", name: "cherry" },
-    {
-        input: "tfc:plant/green_apple_sapling",
-        fluid_amount: 8000,
-        output: "32x tfc:food/green_apple",
-        name: "green_apple"
-    },
+    { input: "tfc:plant/green_apple_sapling", fluid_amount: 8000, output: "32x tfc:food/green_apple", name: "green_apple" },
     { input: "tfc:plant/lemon_sapling", fluid_amount: 8000, output: "32x tfc:food/lemon", name: "lemon" },
     { input: "tfc:plant/olive_sapling", fluid_amount: 8000, output: "32x tfc:food/olive", name: "olive" },
     { input: "tfc:plant/orange_sapling", fluid_amount: 8000, output: "32x tfc:food/orange", name: "orange" },

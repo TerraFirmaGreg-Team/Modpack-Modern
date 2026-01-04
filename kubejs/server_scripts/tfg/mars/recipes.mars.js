@@ -14,7 +14,7 @@ function registerTFGMarsRecipes(event) {
 		.inputFluids(Fluid.of('tfg:mars_air', 10000))
 		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 3900), Fluid.of('gtceu:nitrogen', 1000), Fluid.of('gtceu:argon', 500))
 		.duration(1600)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	// TODO: move neon and xenon somewhere else
 	event.recipes.gtceu.distillation_tower('tfg:distill_liquid_mars_air')
@@ -251,5 +251,24 @@ function registerTFGMarsRecipes(event) {
 	generateGreenHouseRecipe(event, '8x betterend:shadow_berry_seeds', 'tfg:semiheavy_ammoniacal_water', 8000, 
 		'24x betterend:shadow_berry_product', 'shadow_berry', 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV])
 
-	event.recipes.firmalife.oven('betterend:cave_pumpkin_pie_raw', 400, 60 * 20, 'betterend:cave_pumpkin_pie')
+	event.recipes.firmalife.oven('betterend:cave_pumpkin_pie_raw', 400, 60 * 20, 'betterend:cave_pumpkin_pie')	
+	
+	// Mars primitive stuff
+
+	event.recipes.vintageimprovements.vacuumizing(
+		[Fluid.of('tfg:latex', 100), Fluid.of('gtceu:ammonia', 100)],
+		[Fluid.of('tfg:warpane', 100), Fluid.of('tfg:crimsene', 100)])
+		.secondaryFluidInput(1)
+		.secondaryFluidOutput(1)
+		.processingTime(1000)
+		.heated()
+		.id('tfg:vacuumizing/mars_latex')
+
+	event.recipes.vintageimprovements.vacuumizing(
+		[Fluid.of('minecraft:water', 250), Fluid.of('gtceu:ammonia', 250)],
+		Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
+		.secondaryFluidOutput(1)
+		.processingTime(300)
+		.heated()
+		.id('tfg:vacummizing/mars_water')
 }

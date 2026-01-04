@@ -82,6 +82,7 @@ const registerCreateItemTags = (event) => {
 	event.add('create:non_movable', 'tfg:spice')
 	event.add('create:non_movable', 'tfg:geyser_source')
 	event.add('create:non_movable', 'tfg:geyser_source_small')
+	event.add('create:non_movable', '#tfc:can_landslide')
 
 	event.remove('create:stone_types/deepslate', 'minecraft:deepslate')
 	event.remove('create:stone_types/dripstone', 'minecraft:dripstone_block')
@@ -182,7 +183,7 @@ const registerCreateFluidTags = (event) => {
 	event.add('c:hidden_from_recipe_viewers', 'create:chocolate')
 	event.add('c:hidden_from_recipe_viewers', 'create:honey')
 	event.add('c:hidden_from_recipe_viewers', 'create:builders_tea')
-	event.add('c:hidden_from_recipe_viewers', 'create:uncraftable_potion')
+	event.add('c:hidden_from_recipe_viewers', 'create:potion')
 
 	// Disable bulk blasting
 	event.removeAll('create:fan_processing_catalysts/blasting')

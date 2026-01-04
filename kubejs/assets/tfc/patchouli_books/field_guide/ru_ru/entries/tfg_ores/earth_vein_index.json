@@ -1530,7 +1530,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 60%$(br)$(thing)Плавится в$(): Олово$(br)$(thing)Формула$(): Sn",
+      "text": "$(thing)Процент руды$(): 55%$(br)$(thing)Плавится в$(): Олово$(br)$(thing)Формула$(): Sn",
       "type": "patchouli:multiblock"
     },
     {
@@ -1550,13 +1550,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 40%$(br)$(thing)Плавится в$(): Олово$(br)$(thing)Формула$(): SnO₂",
+      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Плавится в$(): Олово$(br)$(thing)Формула$(): SnO₂",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Селитра",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/saltpeter"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Хромит$(): Калий, Азот$(br)$(thing)Формула$(): KNO₃",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
@@ -1582,7 +1597,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 60%$(br)$(thing)Плавится в$(): Олово$(br)$(thing)Формула$(): SnO₂",
+      "text": "$(thing)Процент руды$(): 55%$(br)$(thing)Плавится в$(): Олово$(br)$(thing)Формула$(): SnO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1602,13 +1617,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 40%$(br)$(thing)Плавится в$(): Олово$(br)$(thing)Формула$(): Sn",
+      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Плавится в$(): Олово$(br)$(thing)Формула$(): Sn",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Селитра",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/saltpeter"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Хромит$(): Калий, Азот$(br)$(thing)Формула$(): KNO₃",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",

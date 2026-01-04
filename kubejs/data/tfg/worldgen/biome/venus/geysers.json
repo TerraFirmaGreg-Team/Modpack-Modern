@@ -4,23 +4,26 @@
 	},
 	"downfall": 0,
 	"effects": {
+		"additions_sound": {
+			"sound": "tfg:ambient.venus_surface.additions",
+			"tick_chance": 0.0111
+		},
 		"sky_color": 10465603,
 		"fog_color": 9938052,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
-		"grass_color": 13758586,
-		"foliage_color": 11653213,
+		"ambient_sound": "tfg:ambient.venus_surface.loop",
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
-			"sound": "minecraft:ambient.cave",
+			"sound": "tfg:ambient.venus_surface.mood",
 			"tick_delay": 6000
 		},
 		"particle": {
 			"options": {
 				"type": "minecraft:ash"
 			},
-			"probability": 0.1
+			"probability": 0.07
 		}
 	},
 	"features": [
@@ -39,7 +42,8 @@
 		[
 			"tfc:raw_boulder_small_patch",
 			"tfc:cobble_boulder_small_patch",
-			"tfg:venus/surface/geyser_source_patch"
+			"tfg:venus/surface/geyser_source_patch",
+			"tfg:venus/terrain/thermal_vent_rare"
 		],
 		[],
 		"#tfg:venus_top_layer_modification"
@@ -62,19 +66,67 @@
 			"energy_budget": 0.05,
 			"charge": 0.9
 		},
-		"ad_astra:sulfur_creeper": {
-			"energy_budget": 0.2,
-			"charge": 0.7
-		},
 		"species:cliff_hanger": {
 			"energy_budget": 0.15,
 			"charge": 0.7
+		},
+		"ad_astra:sulfur_creeper": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"primitive_creatures:golem_2": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		},
+		"minecraft:blaze": {
+			"energy_budget": 0.15,
+			"charge": 0.8
+		},
+		"minecraft:magma_cube": {
+			"energy_budget": 0.15,
+			"charge": 0.8
+		},
+		"arthropocolypse:millipede_head": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
+	"creature_spawn_probability": 0.2,
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
-		"creature": [],
+		"creature": [
+			{
+				"type": "minecraft:strider",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "arthropocolypse:mealworm_beetle",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "arthropocolypse:stag_beetle",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "arthropocolypse:ice_crawler",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "arthropocolypse:wharf_roach",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 70
+			}
+		],
 		"misc": [],
 		"monster": [
 			{
@@ -103,15 +155,33 @@
 			},
 			{
 				"type": "ad_astra:sulfur_creeper",
-				"maxCount": 3,
-				"minCount": 1,
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 100
+			},
+			{
+				"type": "minecraft:magma_cube",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 30
+			},
+			{
+				"type": "minecraft:blaze",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 70
 			},
 			{
 				"type": "species:cliff_hanger",
 				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "arthropocolypse:millipede_head",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 70
 			}
 		],
 		"underground_water_creature": [],

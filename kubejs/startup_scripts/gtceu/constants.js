@@ -230,7 +230,8 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:thorium_block",
     "gtceu:thorium_plate",
     "gtceu:double_thorium_plate",
-    "gtceu:thorium_rod"
+    "gtceu:thorium_rod",
+    "gtceu:thorium_bucket"
 ]);
 //#endregion
 

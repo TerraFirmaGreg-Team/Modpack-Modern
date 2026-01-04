@@ -147,9 +147,9 @@ const registerGTCEuMaterialModification = (event) => {
 	let AlSi = GTMaterials.get('aluminium_silicate')
 	AlSi.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, 1))
 	GTMaterials.Kyanite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 95))
-	GTMaterials.Mica.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 90))
-	GTMaterials.Spodumene.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 85))
-	GTMaterials.Pollucite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 85))
+	GTMaterials.Mica.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 40))
+	GTMaterials.Spodumene.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 30))
+	GTMaterials.Pollucite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 25))
 
 
 	GTMaterials.Gold.addFlags(GENERATE_BELL);
@@ -188,13 +188,30 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Hematite.addFlags(GENERATE_DUSTY_ORES);
 
 	//#endregion
-
+	//
+	//		  /* Castable stuff */
+	GTMaterials.Copper.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.BismuthBronze.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.BlackBronze.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Bronze.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Tin.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Bismuth.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Zinc.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.SterlingSilver.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.RoseGold.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Silver.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Gold.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Nickel.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Brass.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.RedAlloy.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Lead.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Potin.addFlags(CAN_BE_UNMOLDED);
 	//
 	//        /* Имеют инструменты, броню TFC, двойные слитки */
-	GTMaterials.Copper.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
-	GTMaterials.BismuthBronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
-	GTMaterials.Bronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
-	GTMaterials.BlackBronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
+	GTMaterials.Copper.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
+	GTMaterials.BismuthBronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
+	GTMaterials.Bronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
+	GTMaterials.BlackBronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
 	GTMaterials.WroughtIron.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
 	GTMaterials.Steel.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
 	GTMaterials.BlackSteel.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_ROTOR, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
@@ -219,11 +236,11 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Silver.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
 	//
 	//        /* Имеют двойные слитки */
-	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR, CAN_BE_UNMOLDED);
+	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR);
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Lead.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Invar.addFlags(GENERATE_DOUBLE_INGOTS, HAS_GT_TOOL);
-	GTMaterials.Potin.addFlags(GENERATE_DOUBLE_INGOTS, CAN_BE_UNMOLDED);
+	GTMaterials.Potin.addFlags(GENERATE_DOUBLE_INGOTS, );
 	GTMaterials.Cobalt.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.CobaltBrass.addFlags(GENERATE_DOUBLE_INGOTS, HAS_GT_TOOL);
 	//
@@ -442,4 +459,5 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.CertusQuartz.setComponents('1x unknown', '1x silicon', '2x oxygen')
 	GTMaterials.GraniteRed.setComponents([])
 	GTMaterials.GraniteRed.setFormula("?")
+	GTMaterials.Thorium.setFormula('ThO2')
 }

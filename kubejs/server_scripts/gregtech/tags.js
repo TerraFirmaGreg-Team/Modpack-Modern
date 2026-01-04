@@ -28,7 +28,7 @@ function registerGTCEUItemTags(event) {
     event.remove("forge:gems", "gtceu:coke_gem");
 
     // Rose Quartz Lens
-    event.add("forge:lenses/pink", "gtceu:rose_quartz_lens");
+    event.add("forge:lenses/pink", "greate:rose_quartz_lens");
 
     event.add("tfc:saws", "#forge:tools/buzzsaws");
     event.add("tfc:saws", "#forge:tools/chainsaws");

@@ -6,7 +6,7 @@ StartupEvents.registry('item', event => {
 })
 
 StartupEvents.registry('block', event => {
-    registerTFGBlocks(event)
+	registerTFGBlocks(event)
 })
 
 BlockEvents.modification(event => {
@@ -26,6 +26,10 @@ ItemEvents.modification(event => {
 
 StartupEvents.registry('fluid', event => {
 	registerTFGFluids(event)
+})
+
+StartupEvents.registry('sound_event', event => {
+	registerTFGSounds(event)
 })
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {

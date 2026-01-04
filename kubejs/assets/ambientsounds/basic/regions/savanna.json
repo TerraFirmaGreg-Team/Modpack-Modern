@@ -1,0 +1,125 @@
+{
+    "name": "savanna",
+    "bad-regions": [
+        "rain",
+        "snow"
+    ],
+    "biomes": [
+        "badlands",
+        "canyons",
+        "inverted_canyons",
+        "low_canyons"
+    ],
+    "sounds": [
+        {
+            "name": "cricket",
+            "category": "cricket_day",
+            "files": [
+                "ambientsounds:animals.cricket",
+                "ambientsounds:animals.cricket2",
+                "ambientsounds:animals.cricket3"
+            ],
+            "overall-raining": false,
+            "length": {
+                "min": 1000,
+                "max": 1500
+            },
+            "transition": 100,
+            "volume": 0.25
+        },
+        {
+            "name": "cicadas",
+            "category": "cicadas",
+            "files": [
+                "ambientsounds:animals.cicadas"
+            ],
+            "overall-raining": false,
+            "day": 0.15,
+            "night": 0.01,
+            "length": {
+                "min": 100,
+                "max": 300
+            },
+            "pause": {
+                "min": 100,
+                "max": 600
+            }
+        },
+        {
+            "name": "cicadas-desert",
+            "category": "cicadas",
+            "files": [
+                "ambientsounds:animals.cicadas-desert1",
+                "ambientsounds:animals.cicadas-desert2"
+            ],
+            "overall-raining": false,
+            "special-biomes": {
+                "temperature": {
+                    "min": 0.8
+                }
+            },
+            "day": 1,
+            "night": 0,
+            "length": {
+                "min": 400,
+                "max": 900
+            },
+            "pause": {
+                "min": 500,
+                "max": 1000
+            }
+        },
+        {
+            "name": "cricket-warm-night",
+            "category": "cricket_night",
+            "files": [
+                "ambientsounds:animals.cricket-warm-night",
+                "ambientsounds:animals.cricket-warm-night2"
+            ],
+            "overall-raining": false,
+            "length": {
+                "min": 1000,
+                "max": 1500
+            },
+            "transition": 100,
+            "volume": 0.3
+        },
+        {
+            "name": "wolf",
+            "category": "animal",
+            "files": [
+                "ambientsounds:animals.wolf"
+            ],
+            "pause": {
+                "min": 100,
+                "max": 600
+            },
+            "day": 0
+        },
+        {
+            "name": "long-wolf",
+            "category": "animal",
+            "files": [
+                "ambientsounds:animals.long-wolf"
+            ],
+            "pause": {
+                "min": 12000,
+                "max": 72000
+            },
+            "day": 0
+        },
+        {
+            "name": "bird-warm",
+            "category": "bird_day",
+            "files": [
+                "ambientsounds:animals.bird-ambience-warm1",
+                "ambientsounds:animals.bird-ambience-warm2"
+            ],
+            "length": {
+                "min": 2000,
+                "max": 3000
+            },
+            "overall-raining": false
+        }
+    ]
+}

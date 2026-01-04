@@ -1,0 +1,11 @@
+{
+	"ingredient": "firmalife:rose_wine",
+	"thirst": 15,
+	"effects": [
+		{
+			"type": "minecraft:dolphins_grace",
+			"duration": 6400,
+			"amplifier": 0
+		}
+	]
+}

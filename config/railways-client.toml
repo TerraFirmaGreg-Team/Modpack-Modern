@@ -64,17 +64,3 @@
 			#Spawn steam on an interval
 			spawnSteam = false
 
-	#.
-	#Journeymap Settings
-	[client.journeymap]
-		#.
-		#[in Ticks]
-		#Journeymap train overlay update time
-		#Range: 1 ~ 600
-		updateRate = 1
-		#.
-		#[in Ticks]
-		#Journeymap train overlay old marker removal check time
-		#Range: 10 ~ 1200
-		removeObsoleteRate = 200
-

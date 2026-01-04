@@ -131,3 +131,11 @@
 	#Blacklist of entity IDs that cannot be sampled by the DNA syringe. Can be empty.
 	syringeBlacklist = []
 
+[mars_climate]
+	#The chance that sand piles will accumulate during a sandstorm. Lower values = faster sand pile accumulation, but also more block updates (aka lag).
+	#Range: > 1
+	sandAccumulateChance = 20
+	#The chance that sand piles will decumulate during a sandstoem. Lower values = faster sand dispersal, but also more block updates (aka lag).
+	#Range: > 1
+	sandDecumulateChance = 36
+

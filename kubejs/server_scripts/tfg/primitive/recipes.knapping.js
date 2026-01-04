@@ -212,7 +212,6 @@ function registerTFGKnappingRecipes(event) {
 		"XXX",
 		"XXX",
 		"XXX"
-		
 	])
 		.ingredient('tfc:straw')
 		.outsideSlotRequired(false)
@@ -223,10 +222,40 @@ function registerTFGKnappingRecipes(event) {
 	event.recipes.tfc.knapping('tfcambiental:straw_hat', 'tfg:straw', [
 		" XXX ",
 		"XXXXX"
-	
 	])
 		.ingredient('tfc:straw')
 		.outsideSlotRequired(false)
 		.id('sns:straw_knapping/straw_hat')
+	
+	// Molds
+	event.recipes.tfc.knapping('tfg:unfired_rod_mold', 'tfc:fire_clay', [
+		"XXXXX",
+		"XXX X",
+		"XX XX",
+		"X XXX",
+		"XXXXX"
+	])
+		.ingredient('5x tfc:fire_clay')
+		.id('tfg:fire_clay_knapping/unfired_rod_mold')
+	
+	event.recipes.tfc.knapping('tfg:unfired_small_gear_mold', 'tfc:fire_clay', [
+		"XX XX",
+		"X   X",
+		"  X  ",
+		"X   X",
+		"XX XX"
+	])
+		.ingredient('5x tfc:fire_clay')
+		.id('tfg:fire_clay_knapping/unfired_small_gear_mold')
+	
+	event.recipes.tfc.knapping('tfg:unfired_nugget_mold', 'tfc:clay', [
+		"XXXXX",
+		"X X X",
+		"XXXXX",
+		"X X X",
+		"XXXXX"
+	])
+		.ingredient('5x minecraft:clay_ball')
+		.id('tfg:fire_clay_knapping/unfired_nugget_mold')
 
 }

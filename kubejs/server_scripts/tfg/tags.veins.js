@@ -48,7 +48,6 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_sphalerite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_spodumene')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_sulfur')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_tarkianite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_tetrahedrite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_bismuthinite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_cassiterite')
@@ -73,6 +72,7 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_sapphire')
 	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_graphite')
 	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_hematite')
+	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_lapis')
 	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_lubricant')
 	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_neodynium')
 	event.add('tfg:mars_veins', 'tfg:mars/vein/mars_nickel')
@@ -163,6 +163,12 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sylvite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_tetrahedrite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_topaz')
+
+	// #endregion
+
+
+	// #region venus ores
+
 
 	// #endregion
 

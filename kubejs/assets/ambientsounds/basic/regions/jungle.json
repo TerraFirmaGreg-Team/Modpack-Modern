@@ -1,0 +1,54 @@
+{
+    "name": "jungle",
+    "features": [
+        "wood_jungle"
+    ],
+    "bad-biomes": [
+        "mountain_lake",
+        "old_mountain_lake",
+        "oceanic_mountain_lake",
+        "plateau_lake",
+        "ocean",
+        "ocean_reef",
+        "deep_ocean",
+        "deep_ocean_trench",
+        "rain"
+    ],
+    "sounds": [
+        {
+            "name": "cricket-jungle",
+            "category": "cricket_day",
+            "files": [
+                "ambientsounds:animals.cricket-jungle"
+            ]
+        },
+        {
+            "name": "cricket-jungle-night",
+            "category": "cricket_night",
+            "files": [
+                "ambientsounds:animals.cricket-jungle-night"
+            ]
+        },
+        {
+            "name": "bird-ambience-jungle",
+            "category": "bird_day",
+            "files": [
+                "ambientsounds:animals.bird-ambience-jungle",
+                "ambientsounds:animals.bird-ambience-jungle2"
+            ]
+        },
+        {
+            "name": "bird-ambience-jungle-night",
+            "category": "bird_night",
+            "files": [
+                "ambientsounds:animals.bird-ambience-jungle-night",
+                "ambientsounds:animals.bird-ambience-jungle-night2"
+            ],
+            "length": {
+                "min": 1500,
+                "max": 2000
+            },
+            "transition": 200
+        }
+    ]
+}

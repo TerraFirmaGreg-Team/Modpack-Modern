@@ -11,6 +11,7 @@ ServerEvents.tags('item', event => {
 	registerAFCItemTags(event)
 	registerAlekiroofsItemTags(event)
 	registerAlekishipsItemTags(event)
+	registerArthropocolypseItemTags(event)
 	registerAsticorCartsItemTags(event)
 	registerBeneathItemTags(event)
 	registerChalkItemTags(event);
@@ -207,6 +208,7 @@ ServerEvents.recipes(event => {
 	registerAlekishipsRecipes(event)
 	registerAE2Recipes(event)
 	registerAFCRecipes(event)
+	registerArthropocolypseRecipes(event)
 	registerAsticorCartsRecipes(event)
 	registerAE2InsertExportCardRecipes(event)
 	registerAE2NetworkAnalyzerRecipes(event)
@@ -264,6 +266,7 @@ ServerEvents.recipes(event => {
 	registerTFCAmbientalRecipes(event)
 	registerTFCBetterBFRecipes(event)
 	registerTFCLunchBoxRecipes(event)
+	registerTFCScrapingRecipes(event)
 	registerTFCGroomingStationRecipes(event)
 	registerTFCGurmanRecipes(event)
 	registerTFGRecipes(event)

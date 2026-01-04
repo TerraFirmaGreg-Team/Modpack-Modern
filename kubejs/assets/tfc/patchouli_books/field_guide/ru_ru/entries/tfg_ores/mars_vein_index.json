@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарниерит и Кобальтит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Графит и Алмаз$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Изумруд и Бериллий$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Касситерит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Марганец и Тантал$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Медь и Халькопирит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Серебро, Галена и Свинец$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сфалерит & Пирит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраэдрит (обычный)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Тетраэдрит (Поверхностный)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеелит и Вольфрамат$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарниерит и Кобальтит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Графит и Алмаз$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Изумруд и Бериллий$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Касситерит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Лазурит, Лазурит 2 и Содалит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Марганец и Тантал$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Медь и Халькопирит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Серебро, Галена и Свинец$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сфалерит & Пирит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраэдрит (обычный)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Тетраэдрит (Поверхностный)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеелит и Вольфрамат$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1771,6 +1771,98 @@
       "enable_visualize": false,
       "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Хромит$(): Калий, Азот$(br)$(thing)Формула$(): KNO₃",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 200$(br)$(thing)Плотность$(): 0.25$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 30$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Аргиллит, Доломит, Известняк, Кремнистый сланец, Мел, Сланец",
+      "title": "Лазурит, Лазурит 2 и Содалит",
+      "type": "patchouli:text",
+      "anchor": "mars_lapis"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Лазурит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lazurite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Хромит$(): Алюминий, Кальций, Натрий$(br)$(thing)Формула$(): Al₆Si₆Ca₈Na₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Содалит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sodalite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Хромит$(): Алюминий, Натрий$(br)$(thing)Формула$(): Al₃Si₃Na₄Cl",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Лазурит 2",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lapis"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Хромит$(): Лазурит, Содалит, Пирит, Кальцит",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кальцит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/calcite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Хромит$(): Кальций$(br)$(thing)Формула$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",

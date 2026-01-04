@@ -13,6 +13,7 @@ function registerTFGWorldGenTrees(event) {
 		.soundType('nether_wart')
 		.defaultCutout()
 		.noCollision()
+		.mapColor('crimson_nylium')
 
 	event.create('tfg:saplings/warped', 'tfc:sapling')
 		.features('tfg:mars/tree/warped')
@@ -23,6 +24,7 @@ function registerTFGWorldGenTrees(event) {
 		.soundType('nether_wart')
 		.defaultCutout()
 		.noCollision()
+		.mapColor('warped_nylium')
 
 	event.create('tfg:saplings/alphacene', 'tfc:sapling')
 		.features('species:alphacene_mushroom')
@@ -33,6 +35,7 @@ function registerTFGWorldGenTrees(event) {
 		.soundType('nether_wart')
 		.defaultCutout()
 		.noCollision()
+		.mapColor('gold')
 
 	event.create('tfg:saplings/strophar', 'tfc:sapling')
 		.features('tfg:mars/tree/strophar_mini')
@@ -43,6 +46,7 @@ function registerTFGWorldGenTrees(event) {
 		.soundType('nether_wart')
 		.defaultCutout()
 		.noCollision()
+		.mapColor('terracotta_magenta')
 
 	event.create('tfg:saplings/aeronos', 'tfc:sapling')
 		.features('tfg:mars/tree/aeronos_mini')
@@ -53,6 +57,7 @@ function registerTFGWorldGenTrees(event) {
 		.soundType('nether_wart')
 		.defaultCutout()
 		.noCollision()
+		.mapColor('color_light_green')
 
 	event.create('tfg:saplings/glacian', 'tfc:sapling')
 		.features('tfg:mars/tree/glacian_mini')
@@ -95,6 +100,7 @@ function registerTFGWorldGenTrees(event) {
 		.tagItem('ad_astra:glacian_logs')
 		.tagBlock('minecraft:mineable/axe')
 		.soundType('wood')
+		.mapColor('ice')
 		.stripped(stripped => {
 			stripped.tagBoth('minecraft:logs')
 			stripped.tagItem('minecraft:logs_that_burn')
@@ -107,6 +113,7 @@ function registerTFGWorldGenTrees(event) {
 		.tagBoth('minecraft:logs')
 		.tagBoth('c:hidden_from_recipe_viewers')
 		.soundType('wood')
+		.mapColor('ice')
 		.stripped(stripped => {
 			stripped.tagBoth('minecraft:logs')
 			stripped.tagBoth('c:hidden_from_recipe_viewers')
