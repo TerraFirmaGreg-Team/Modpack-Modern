@@ -67,6 +67,14 @@ const registerRailWaysRecipes = (event) => {
 		.EUt(28)
 		.addMaterialInfo(true)
 
+	event.recipes.gtceu.assembler(`tfg:railways/wooden_headstock_screwlink_coupler`)
+		.itemInputs(`railways:screwlink_coupler`, `#minecraft:wooden_slabs`)
+		.circuit(1)
+		.itemOutputs(`railways:wooden_headstock_screwlink_coupler`)
+		.duration(200)
+		.EUt(28)
+		.addMaterialInfo(true)
+
 	event.recipes.gtceu.assembler(`tfg:railways/buffer`)
 		.itemInputs(`6x #forge:rods/long/steel`, `2x railways:small_buffer`)
 		.circuit(1)
@@ -132,6 +140,43 @@ const registerRailWaysRecipes = (event) => {
 	})
 
 	//#endregion
+
+	//portable fuel interface
+	event.shaped('railways:portable_fuel_interface', [
+		'C  ',
+		'BAD',
+		], {
+		A: 'create:portable_fluid_interface',
+		B: 'create:railway_casing',
+		C: '#forge:tools/wrenches',
+		D: 'create_factory_logistics:fluid_mechanism',
+	}).id('tfg:railways/shaped/portable_fuel_interface')
+
+	event.recipes.gtceu.assembler('tfg:railways/portable_fuel_interface')
+		.itemInputs('create:portable_fluid_interface', 'create:railway_casing', 'create_factory_logistics:fluid_mechanism')
+		.circuit(1)
+		.itemOutputs('railways:portable_fuel_interface')
+		.duration(200)
+		.EUt(28)
+
+	//fuel tank
+	event.shaped('railways:fuel_tank', [
+		'CE ',
+		'BAD',
+		], {
+		A: 'create:fluid_tank',
+		B: 'create:railway_casing',
+		C: '#forge:tools/screwdrivers',
+		D: 'create:electron_tube',
+		E: 'firmalife:reinforced_glass',
+	}).id('tfg:railways/shaped/fuel_tank')
+
+	event.recipes.gtceu.assembler('tfg:railways/fuel_tank')
+		.itemInputs ('create:fluid_tank', 'create:railway_casing', 'create:electron_tube', 'firmalife:reinforced_glass')
+		.circuit(1)
+		.itemOutputs('railways:fuel_tank')
+		.duration(200)
+		.EUt(28)
 
 	// Переключатель пути поезда из андезита
 	event.shaped('railways:track_switch_andesite', [
@@ -216,13 +261,13 @@ const registerRailWaysRecipes = (event) => {
 		'DA '
 	], {
 		A: '#forge:storage_blocks/charcoal',
-		B: '#forge:bolts/black_steel',
-		C: '#forge:plates/black_steel',
+		B: '#forge:bolts/iron',
+		C: '#forge:plates/iron',
 		D: '#forge:tools/hammers'
 	}).id('tfg:railways/shaped/smokestack_caboosestyle')
 
 	event.recipes.gtceu.assembler('tfg:railways/smokestack_caboosestyle')
-		.itemInputs('#forge:storage_blocks/charcoal', '2x #forge:bolts/black_steel', '#forge:plates/black_steel')
+		.itemInputs('#forge:storage_blocks/charcoal', '2x #forge:bolts/iron', '#forge:plates/iron')
 		.circuit(4)
 		.itemOutputs('railways:smokestack_caboosestyle')
 		.duration(200)
@@ -234,12 +279,12 @@ const registerRailWaysRecipes = (event) => {
 		'BAB'
 	], {
 		A: '#forge:storage_blocks/charcoal',
-		B: '#forge:bolts/black_steel',
+		B: '#forge:bolts/iron',
 		C: '#forge:tools/hammers'
 	}).id('tfg:railways/shaped/smokestack_long')
 
 	event.recipes.gtceu.assembler('tfg:railways/smokestack_long')
-		.itemInputs('#forge:storage_blocks/charcoal', '2x #forge:bolts/black_steel')
+		.itemInputs('#forge:storage_blocks/charcoal', '2x #forge:bolts/iron')
 		.circuit(5)
 		.itemOutputs('railways:smokestack_long')
 		.duration(200)
@@ -252,12 +297,12 @@ const registerRailWaysRecipes = (event) => {
 		'BAB'
 	], {
 		A: '#forge:storage_blocks/charcoal',
-		B: '#forge:plates/black_steel',
+		B: '#forge:plates/iron',
 		C: '#forge:tools/hammers'
 	}).id('tfg:railways/shaped/smokestack_coalburner')
 
 	event.recipes.gtceu.assembler('tfg:railways/smokestack_coalburner')
-		.itemInputs('#forge:storage_blocks/charcoal', '6x #forge:plates/black_steel')
+		.itemInputs('#forge:storage_blocks/charcoal', '6x #forge:plates/iron')
 		.circuit(6)
 		.itemOutputs('railways:smokestack_coalburner')
 		.duration(200)
@@ -269,12 +314,12 @@ const registerRailWaysRecipes = (event) => {
 		'BAB'
 	], {
 		A: '#forge:storage_blocks/charcoal',
-		B: '#forge:plates/black_steel',
+		B: '#forge:plates/iron',
 		C: '#forge:tools/hammers'
 	}).id('tfg:railways/shaped/smokestack_oilburner')
 
 	event.recipes.gtceu.assembler('tfg:railways/smokestack_oilburner')
-		.itemInputs('#forge:storage_blocks/charcoal', '6x #forge:plates/black_steel')
+		.itemInputs('#forge:storage_blocks/charcoal', '6x #forge:plates/iron')
 		.circuit(7)
 		.itemOutputs('railways:smokestack_oilburner')
 		.duration(200)
@@ -286,12 +331,12 @@ const registerRailWaysRecipes = (event) => {
 		'BAB'
 	], {
 		A: '#forge:storage_blocks/charcoal',
-		B: '#forge:plates/black_steel',
+		B: '#forge:plates/iron',
 		C: '#forge:tools/hammers'
 	}).id('tfg:railways/shaped/smokestack_streamlined')
 
 	event.recipes.gtceu.assembler('tfg:railways/smokestack_streamlined')
-		.itemInputs('#forge:storage_blocks/charcoal', '2x #forge:plates/black_steel')
+		.itemInputs('#forge:storage_blocks/charcoal', '2x #forge:plates/iron')
 		.circuit(8)
 		.itemOutputs('railways:smokestack_streamlined')
 		.duration(200)
@@ -304,13 +349,13 @@ const registerRailWaysRecipes = (event) => {
 		'BAB'
 	], {
 		A: '#forge:storage_blocks/charcoal',
-		B: '#forge:plates/black_steel',
-		C: '#forge:bolts/black_steel',
+		B: '#forge:plates/iron',
+		C: '#forge:bolts/iron',
 		D: '#forge:tools/hammers'
 	}).id('tfg:railways/shaped/smokestack_woodburner')
 
 	event.recipes.gtceu.assembler('tfg:railways/smokestack_woodburner')
-		.itemInputs('#forge:storage_blocks/charcoal', '3x #forge:plates/black_steel', '2x #forge:bolts/black_steel')
+		.itemInputs('#forge:storage_blocks/charcoal', '3x #forge:plates/iron', '2x #forge:bolts/iron')
 		.circuit(9)
 		.itemOutputs('railways:smokestack_woodburner')
 		.duration(200)
