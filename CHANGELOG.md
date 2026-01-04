@@ -24,7 +24,7 @@
 - Fixed not being able to use pickled eggs in sandwiches (#2551) @Pyritie
 - Fixed how much aluminium silicate you get from mica, pollucite, and spodumene to more accurately reflect how much aluminium they have @Pyritie
 - Fixed being able to put liquid metals into the new molds that didn't have a recipe @Pyritie
-- Added some grain nutrition to oatmeal @Pyritie
+- Added some grain nutrition to oatmeal (#2469) @Pyritie
 - Fixed hot-protection chestplates not fully protecting against GT hot ingots (#2598) @Pyritie
 - Fixed hermetic sandstone's appearance so it looks similar to TFC's raw sandstone @Pyritie
 - Fixed some issues with the food autostacking changes in a previous version (#2580) @Mqrius
@@ -32,6 +32,7 @@
 - Fixed some translation inconsistencies in the field guide (#2606, #2607) @jmecn @Petr211071
 - Fixed incorrect fluid tooltips for the silica glass bottle and iron flask (#2608) @JeanRdSz @Pyritie
 - Removed some dough mixing bowl recipes that tried to output more than 5 ingredients because that's the mixing bowl's maximum (#2612) @Pyritie
+- Fixed missing heat definition for soybeans (#2603) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071
