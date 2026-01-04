@@ -56,7 +56,7 @@
 		]
 	],
 	"has_precipitation": false,
-	"creature_spawn_probability": 0.00003,
+	"creature_spawn_probability": 0.0003,
 	"spawn_costs": {
 		"species:limpet": {
 			"energy_budget": 0.15,
