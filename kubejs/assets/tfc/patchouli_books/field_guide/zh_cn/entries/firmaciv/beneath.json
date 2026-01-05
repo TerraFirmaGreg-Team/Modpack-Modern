@@ -1,0 +1,37 @@
+{
+    "name": "幽冥之地",
+    "category": "tfc:firmaciv",
+    "icon": "beneath:wood/sapling/crimson",
+    "flag": "mod:beneath",
+    "read_by_default": true,
+    "sortnum": 100,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在火星遥远的边疆，你可以找到绯红木和诡异木，用来建造相当不错的$(l:firmaciv/watercraft)船$()。"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "软木",
+            "text": "软木的木质和树皮足够柔软，非常适合制作$(l:firmaciv/canoe)独木舟$()。",
+            "item": "beneath:wood/stripped_log/crimson"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)绯红木$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "硬木",
+            "text": "硬木以其卓越的坚固性著称，是建造更大、更精密船只的理想选择，例如$(l:firmaciv/rowboat)划艇$()和$(l:firmaciv/sloop)单桅纵帆船$()。",
+            "item": "beneath:wood/planks/warped"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)诡异木$()"
+        }
+    ]
+}
