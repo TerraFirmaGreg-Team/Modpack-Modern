@@ -16,6 +16,7 @@
 - Changed the Rover's step height from 1 block to 1.2 blocks (about 4 extra 'pixels') @Pyritie
 - Fixed/improved behaviour of GregTech solar things on non-overworld dimensions, so rain in the overworld doesn't stop the solar array from working on the moon, and mars sandstorms affect solar things as well (#2140) @Pyritie
 - Added missing recipes for some Steam 'n' Rails items, and changed the smokestacks to use cast iron instead of black steel (#2610) @thederpysockdude123
+- Added missing recipes for new Hypertube redstone things (#2615) @Xtrial-01
 ### Bug fixes
 - Fixed missing crafting table recipes for greate gearboxes (#2577) @Pyritie
 - Fixed crashing when attaching shafts to a steam engine (#2578, #2579) @Electrolyte220
@@ -34,6 +35,7 @@
 - Removed some dough mixing bowl recipes that tried to output more than 5 ingredients because that's the mixing bowl's maximum (#2612) @Pyritie
 - Fixed missing heat definition for soybeans (#2603) @Pyritie
 - Fixed crafting bacon removing all the other food traits @Pyritie
+- Fixed lamps costing 4x as much glass when crafted in an assembler as opposed to elsewhere (#2613) @Inceitious 
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071
