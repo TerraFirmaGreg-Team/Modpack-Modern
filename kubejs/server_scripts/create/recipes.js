@@ -2295,7 +2295,6 @@ const registerCreateRecipes = (event) => {
 	event.stonecutting('2x create:andesite_table_cloth', '#forge:ingots/tin_alloy')
 	event.stonecutting('2x create:andesite_scaffolding', '#forge:ingots/tin_alloy')
 	event.stonecutting('2x create:andesite_ladder', '#forge:ingots/tin_alloy')
-	event.stonecutting('2x create:andesite_bars', '#forge:ingots/tin_alloy')
 
 	// Industrial Iron stuff
 	
@@ -2378,7 +2377,9 @@ const registerCreateRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Bars
-
+	event.remove({ type: 'minecraft:stonecutting', output: 'create:andesite_bars' })
+	event.remove({ type: 'minecraft:stonecutting', output: 'create:brass_bars' })
+	event.remove({ type: 'minecraft:stonecutting', output: 'create:copper_bars' })
 	event.stonecutting('4x create:andesite_bars', '#forge:ingots/tin_alloy')
 	event.stonecutting('4x create:brass_bars', '#forge:ingots/brass')
 	event.stonecutting('4x create:copper_bars', '#forge:ingots/copper')

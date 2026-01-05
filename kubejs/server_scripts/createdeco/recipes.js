@@ -239,7 +239,6 @@ const registerCreatedecoRecipes = (event) => {
 	metalThings.forEach(bar => {
 		event.remove({ id: `createdeco:${bar.metal}_trapdoor` })
 		event.remove({ id: `createdeco:${bar.metal}_door` })
-		event.remove({ id: `createdeco:${bar.metal}_bars` })
 
 		let quarterMap = {};
 		quarterMap[bar.material] = 0.25;
