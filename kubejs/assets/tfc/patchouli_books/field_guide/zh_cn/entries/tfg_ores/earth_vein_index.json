@@ -153,7 +153,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 62%$(br)$(thing)来源$(): 铀, 钍, 铅$(br)$(thing)化学式$(): (UO₂)₃ThPb$(br)$(thing)危害$(): $(c)$(t:需要全身防护)致癌 (任何接触)$(/t)$()",
+      "text": "$(thing)百分比$(): 62%$(br)$(thing)来源$(): 铀, 钍, 铅$(br)$(thing)化学式$(): (UO₂)₃ThPb$(br)$(thing)危害$(): $(c)$(t:需要全身防护)放射性 (任何接触)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -173,7 +173,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 25%$(br)$(thing)来源$(): 铀$(br)$(thing)化学式$(): UO₂$(br)$(thing)危害$(): $(c)$(t:需要全身防护)致癌 (任何接触)$(/t)$()",
+      "text": "$(thing)百分比$(): 25%$(br)$(thing)来源$(): 铀$(br)$(thing)化学式$(): UO₂$(br)$(thing)危害$(): $(c)$(t:需要全身防护)放射性 (任何接触)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -1693,7 +1693,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "钍矿",
+      "name": "方钍石",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -1708,7 +1708,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 15%$(br)$(thing)来源$(): 钍$(br)$(thing)化学式$(): Th",
+      "text": "$(thing)百分比$(): 15%$(br)$(thing)来源$(): 钍$(br)$(thing)化学式$(): ThO₂",
       "type": "patchouli:multiblock"
     },
     {

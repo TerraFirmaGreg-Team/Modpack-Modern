@@ -1488,7 +1488,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Торий",
+      "name": "Торианит",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -1503,7 +1503,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Хромит$(): Торий$(br)$(thing)Формула$(): Th",
+      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Хромит$(): Торий$(br)$(thing)Формула$(): ThO₂",
       "type": "patchouli:multiblock"
     },
     {
