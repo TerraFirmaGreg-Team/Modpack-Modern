@@ -175,7 +175,7 @@ function registerVintageImprovementsRecipes(event) {
 	})
 
 	HAMMERING_ITEMS.forEach(x => {
-		generateHammeringRecipe(event, x.material, x.blows, 'copper');
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'copper');
 		x.blows--;
 	})
 
