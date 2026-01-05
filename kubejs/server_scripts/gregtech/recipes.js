@@ -384,4 +384,13 @@ const registerGTCEURecipes = (event) => {
 		.duration(30 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	// Ladder consistency
+	event.replaceOutput({ id: 'gtceu:assembler/ladder' }, 'minecraft:ladder', '8x minecraft:ladder')
+
+	event.recipes.gtceu.assembler('tfg:ladder_from_lumber')
+		.itemInputs('#tfc:lumber')
+		.itemOutputs('8x minecraft:ladder')
+		.circuit(7)
+		.duration(40)
+		.EUt(4)
 }
