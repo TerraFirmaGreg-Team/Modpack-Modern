@@ -438,7 +438,7 @@ jobs:
           mv -vf .pakku/docker-overrides ./build/docker
 
           cd ./build/docker/
-          mv *.yml $(basename -s .yml *.yml)-docker.yml
+          mv docker-compose.yml "${{ needs.info.outputs.project_full_name }}-docker.yml"
 
       - name: 🚀 Upload Docker Artifact
         uses: actions/upload-artifact@v6.0.0
