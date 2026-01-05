@@ -18,6 +18,7 @@
 - Added missing recipes for some Steam 'n' Rails items, and changed the smokestacks to use cast iron instead of black steel (#2610) @thederpysockdude123
 - Added missing recipes for new Hypertube redstone things (#2615) @Xtrial-01
 - Recolored diamond GregTech things to match the color of the vanilla diamond item @Pyritie
+- Buffed the HP of the Illager Beast @Pyritie
 #### Hazard changes
 - Added a new medical condition, Irradiated, caused by the Radioactive hazard which all radioactive things (including naquadria and neutronium) now have instead of Carcinogenic. It has the same symptoms/side effects as carcinogenic.
 - Paracetamol now cures carcinogenic, and Rad-Away cures both carcinogenic and irradiated. This is because you encounter carcinogenic hazards much sooner than radioactive ones, so the only cure for radioactive being way in HV didn't make much sense. In order to change the effects of these pills, we had to make new items, so any existing ones won't have these changes, sorry.
