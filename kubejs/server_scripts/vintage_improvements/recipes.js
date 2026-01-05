@@ -166,11 +166,15 @@ function registerVintageImprovementsRecipes(event) {
 	]
 
 	let HAMMERING_ITEMS = [
-		{ input: 'tfc:raw_iron_bloom', output: 'tfc:refined_iron_bloom', blows: STARTING_BLOWS },
-		{ input: 'tfc:refined_iron_bloom', output: 'gtceu:wrought_iron_ingot', blows: STARTING_BLOWS }
+		{ input: 'gtceu:thermochemically_treated_hardwood_dust', output: 'tfg:soaked_unrefined_paper', blows: STARTING_BLOWS }
 	]
 
 	HAMMERING_MATERIALS.forEach(x => {
+		generateHammeringRecipe(event, x.material, x.blows, 'copper');
+		x.blows--;
+	})
+
+	HAMMERING_ITEMS.forEach(x => {
 		generateHammeringRecipe(event, x.material, x.blows, 'copper');
 		x.blows--;
 	})
@@ -182,6 +186,9 @@ function registerVintageImprovementsRecipes(event) {
 	HAMMERING_MATERIALS.push({ material: GTMaterials.Brass, blows: STARTING_BLOWS })
 	HAMMERING_MATERIALS.push({ material: GTMaterials.RedAlloy, blows: STARTING_BLOWS })
 	HAMMERING_MATERIALS.push({ material: GTMaterials.Potin, blows: STARTING_BLOWS })
+
+	HAMMERING_ITEMS.push({ input: 'tfc:raw_iron_bloom', output: 'tfc:refined_iron_bloom', blows: STARTING_BLOWS })
+	HAMMERING_ITEMS.push({ input: 'tfc:refined_iron_bloom', output: 'gtceu:wrought_iron_ingot', blows: STARTING_BLOWS })
 
 	HAMMERING_MATERIALS.forEach(x => {
 		generateHammeringRecipe(event, x.material, x.blows, 'bronze');
