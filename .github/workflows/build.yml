@@ -391,11 +391,24 @@ jobs:
 
           mv -vf .pakku/multimc-overrides ./build/multimc
 
+          # Delete mods with export: false from ./mods directory
+          echo "Checking for mods with export: false..."
+          if [ -f "./pakku.json" ]; then
+            # Extract mod slugs with export: false and delete corresponding jar files
+            for mod in $(jq -r '.dependencies | to_entries[] | select(.value.export == false) | .key' ./pakku.json); do
+              echo "Looking for mod: $mod"
+              find ./mods -name "${mod}*.jar" -type f -delete 2>/dev/null && echo "Deleted $mod jar files" || echo "No $mod jar files found"
+            done
+          else
+            echo "pakku.json not found, skipping export:false mod removal"
+          fi
+
           
           cp -rf ./build/.cache/curseforge/overrides ./build/multimc/.minecraft
 
           cp -vf ./build/.cache/curseforge/manifest.json ./build/multimc/flame/manifest.json
           cp -vf ./config/fancymenu/assets/icons/icon128x128.png ./build/multimc/.minecraft/icon.png
+          
           cp -rf ./mods ./build/multimc/.minecraft/
 
           cd ./build/multimc/
@@ -431,7 +444,7 @@ jobs:
         uses: actions/upload-artifact@v6.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-docker
-          path: ./.github/docker/${{ needs.info.outputs.project_full_name }}-docker.yml
+          path: ./build/docker/${{ needs.info.outputs.project_full_name }}-docker.yml
           if-no-files-found: error
 
   release-github:
