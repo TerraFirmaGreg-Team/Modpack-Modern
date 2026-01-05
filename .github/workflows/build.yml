@@ -395,7 +395,7 @@ jobs:
           echo "Checking for mods with export: false..."
           if [ -f "./pakku.json" ]; then
             # Extract mod slugs with export: false and delete corresponding jar files
-            for mod in $(jq -r '.dependencies | to_entries[] | select(.value.export == false) | .key' ./pakku.json); do
+            for mod in $(jq -r 'to_entries[] | select(.value.export == false) | .key' ./pakku.json); do
               echo "Looking for mod: $mod"
               find ./mods -name "${mod}*.jar" -type f -delete 2>/dev/null && echo "Deleted $mod jar files" || echo "No $mod jar files found"
             done
