@@ -1,5 +1,5 @@
 {
-    "name": "Beneath",
+    "name": "Бездна",
     "category": "tfc:firmaciv",
     "icon": "beneath:wood/sapling/crimson",
     "flag": "mod:beneath",
@@ -8,30 +8,30 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "Deep within the nether you can utilize both Crimson and Warped wood to create some rather flashy $(l:firmaciv/watercraft)Boats$().$(br2)Format Error: Due to a limitation, Watercrafts created with these materials are NOT impervious to lava, you WILL sink and BURN."
+            "text": "Далеко-далеко, на самых дальних окраинах Марса вы можете найти и использовать Багряные и Искаженные деревья для создания $(l:firmaciv/watercraft)Лодок$()."
         },
         {
             "type": "patchouli:empty"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Softwoods",
-            "text": "Softwoods have sufficiently soft enough pulp and bark that they're perfect for creating $(l:firmaciv/canoe)Dugout Canoes$()",
+            "title": "Мягкие породы древесины",
+            "text": "Мягкие породы имеют достаточно мягкую древесину и кору, благодаря чему они идеально подходят для создания $(l:firmaciv/canoe)Долблёных каноэ$()",
             "item": "beneath:wood/stripped_log/crimson"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)Crimson$()"
+            "text": "$(li)Багряная Древесина$()"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Hardwoods",
-            "text": "Known for their exceptional sturdiness, Hardwood trees are ideal for creating larger and sophisticated Watercrafts such as $(l:firmaciv/rowboat)Rowboats$() and $(l:firmaciv/sloop)Sloops$()",
+            "title": "Твёрдые породы древесины",
+            "text": "Известные своей исключительной прочностью, твёрдые породы древесины идеально подходят для создания более крупных и сложных водных судов, таких как $(l:firmaciv/rowboat)Гребные Лодки$() и $(l:firmaciv/sloop)Шлюпы$()",
             "item": "beneath:wood/planks/warped"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)Warped$()"
+            "text": "$(li)Искаженная Древесина$()"
         }
     ]
 }
