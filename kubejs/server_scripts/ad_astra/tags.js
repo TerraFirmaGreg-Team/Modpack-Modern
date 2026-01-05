@@ -63,7 +63,6 @@ const registerAdAstraItemTags = (event) => {
 	})
 
 	event.add('forge:storage_blocks/etrium', 'ad_astra:etrium_block')
-	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_block')
 	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_factory_block')
 	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:encased_etrium_block')
 	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_plateblock')
