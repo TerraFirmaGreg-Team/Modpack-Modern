@@ -13,7 +13,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:tfg_tips/faqs#boats)Why did my boat sink?$()$(li)$(l:tfg_tips/faqs#dried_fruit)How do I make yeast starter?$()$(li)$(l:tfg_tips/faqs#dried_fruit)How do I make pineapple fiber?$()$(li)$(l:tfg_tips/faqs#jam)How do I make jam?$()$(li)$(l:tfg_tips/faqs#resin)How do I make Rubber?$()$(li)$(l:tfg_tips/faqs#chunks)How do I force-load a chunk or increase my limit?$()"
+			"text": "$(li)$(l:tfg_tips/faqs#boats)Why did my boat sink?$()$(li)$(l:tfg_tips/faqs#dried_fruit)How do I make yeast starter?$()$(li)$(l:tfg_tips/faqs#dried_fruit)How do I make pineapple fiber?$()$(li)$(l:tfg_tips/faqs#resin)How do I make Rubber?$()$(li)$(l:tfg_tips/faqs#chunks)How do I force-load a chunk or increase my limit?$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -27,18 +27,13 @@
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "jam",
-			"text": "$(italic)How do I make jam?$()$(br2)It's easiest with a $(l:firmalife/oven_appliances#vat)Vat$(). Follow the steps in that section, but you don't need to make a $(thing)Jarring Station$() or $(thing)Lids$() unless you want to automate it. Just right-click the Vat of $(thing)Fruity Fluid$() with an empty jar, then right-click it again to take it out, and it should be full of jam and sealed.$(br2)Make sure you $(bold)close the lid$() on the Vat with $(item)$(k:sneak)$() + $(item)$(k:use)$()!"
-		},
-		{
-			"type": "patchouli:text",
 			"anchor": "chunks",
 			"text": "$(italic)How do I force-load a chunk?$()$(br2)Open your map with $(item)$(k:key.ftbchunks.claim_manager)$(), then shift-left-click the chunk. Shift-right-click to unclaim.$(br2)To increase the number of forceloaded chunks, use $(item)/ftbchunks admin extra_force_load_chunks @p set X$(), where X is the new limit."
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "resin",
-			"text": "$(italic)How do I make rubber?$()$(br2)Sticky Resin is no longer what you are looking for! First, grow some $(thing)Latex$()-producing trees and make some $(thing)Tree Taps$(). Place a tree tap on the trunk of each tree (more taps on a tree just splits the output). You can collect the Latex that comes out with a $(tfc:mechanics/barrels)Barrel$()."
+			"text": "$(italic)How do I make rubber?$()$(br2)Sticky Resin is no longer what you are looking for! First, grow some $(thing)Latex$()-producing trees and make some $(thing)Tree Taps$(). Place a tree tap on the trunk of each tree (more taps on a tree just splits the output). You can collect the Latex that comes out with a $(l:mechanics/barrels)Barrel$()."
 		},
 		{
 			"type": "patchouli:text",
