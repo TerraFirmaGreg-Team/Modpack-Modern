@@ -1,0 +1,30 @@
+{
+  "name": "Подковы",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:metal/horseshoe/steel",
+  "pages": [
+	{
+	  "type": "patchouli:text",
+	  "text": "$(item)Подковы$() выковываются по отдельности, а затем объединяются вместе в крафтовом меню. Разве ты не знал, что у лошадей 4 ноги? $(br)$(br)Кстати, с хорошими подковами — очень хорошая идея именно привязывать свою лошадь, тк обычная яма не сработает!"
+	},
+	{
+	  "type": "tfc:sns/better_anvil_recipe",
+	  "recipe": "sns:anvil/metal/horseshoe/steel",
+	  "recipe2": "sns:anvil/metal/horseshoe/black_steel",
+	  "recipe3": "sns:anvil/metal/horseshoe/blue_steel",
+	  "recipe4": "sns:anvil/metal/horseshoe/red_steel",
+	  "text4": "Каждой лошади нужны подковы"
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/metal/horseshoes/steel",
+	  "recipe2": "sns:crafting/metal/horseshoes/black_steel"
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/metal/horseshoes/blue_steel",
+	  "recipe2": "sns:crafting/metal/horseshoes/red_steel"
+	}
+  ],
+  "read_by_default": true
+}

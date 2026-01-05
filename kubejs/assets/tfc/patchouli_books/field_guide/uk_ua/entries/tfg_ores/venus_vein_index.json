@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 100$(br)$(thing)Щільність$(): 0.2$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Розмір$(): 15$(br)$(thing)Індикатор Max Depth$(): 30$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ріоліт, Травертин, Трахіт",
+      "text": "$(thing)Рідкість$(): 30$(br)$(thing)Щільність$(): 0.2$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 30$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ріоліт, Травертин, Трахіт",
       "title": "Сірка та Пірит",
       "type": "patchouli:text",
       "anchor": "venus_manual_sulfur"
@@ -41,7 +41,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 50%$(br)$(thing)Джерело$(): Сірки$(br)$(thing)Формула$(): S",
+      "text": "$(thing)Відсоток$(): 80%$(br)$(thing)Джерело$(): Сірки$(br)$(thing)Формула$(): S",
       "type": "patchouli:multiblock"
     },
     {
@@ -61,7 +61,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Розплавляється в$(): Чавун$(br)$(thing)Формула$(): FeS₂",
+      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Розплавляється в$(): Чавун$(br)$(thing)Формула$(): FeS₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -81,12 +81,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Розплавляється в$(): Цинк$(br)$(thing)Формула$(): ZnS",
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Розплавляється в$(): Цинк$(br)$(thing)Формула$(): ZnS",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 100$(br)$(thing)Щільність$(): 0.2$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Розмір$(): 20$(br)$(thing)Висота$(): 6$(br)$(thing)Індикатор Max Depth$(): 30$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ріоліт, Травертин, Трахіт",
+      "text": "$(thing)Рідкість$(): 30$(br)$(thing)Щільність$(): 0.2$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Розмір$(): 20$(br)$(thing)Висота$(): 6$(br)$(thing)Індикатор Max Depth$(): 30$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ріоліт, Травертин, Трахіт",
       "title": "Солі і Сподумен",
       "type": "patchouli:text",
       "anchor": "venus_manual_salt"
@@ -108,7 +108,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 50%$(br)$(thing)Джерело$(): Натрію, Хлору$(br)$(thing)Формула$(): NaCl",
+      "text": "$(thing)Відсоток$(): 80%$(br)$(thing)Джерело$(): Натрію, Хлору$(br)$(thing)Формула$(): NaCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -128,7 +128,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Джерело$(): Калію, Хлору$(br)$(thing)Формула$(): KCl",
+      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Джерело$(): Калію, Хлору$(br)$(thing)Формула$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -148,7 +148,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Джерело$(): Калію, Літію, Алюмінію, Фтору$(br)$(thing)Формула$(): KLi₃Al₄F₂O₁₀",
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Калію, Літію, Алюмінію, Фтору$(br)$(thing)Формула$(): KLi₃Al₄F₂O₁₀",
       "type": "patchouli:multiblock"
     },
     {
@@ -168,7 +168,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Джерело$(): Літію, Алюмінію$(br)$(thing)Формула$(): LiAlSi₂O₆",
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Літію, Алюмінію$(br)$(thing)Формула$(): LiAlSi₂O₆",
       "type": "patchouli:multiblock"
     },
     {

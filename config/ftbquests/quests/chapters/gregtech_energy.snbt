@@ -241,6 +241,7 @@
 			description: ["{quests.gregtech_energy.transformer.desc}"]
 			icon: "tfg:active_power_transformer"
 			id: "6ECAD339C91EF194"
+			optional: true
 			subtitle: "{quests.gregtech_energy.transformer.subtitle}"
 			tasks: [
 				{

@@ -1,0 +1,30 @@
+services:
+  minecraft:
+    image: itzg/minecraft-server:latest
+    container_name: terrafirmagreg-modern
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "true"
+      ENABLE_RCON: "false"
+      GUI: "false"
+      MEMORY: 8G
+
+      TYPE: CUSTOM
+      CUSTOM_SERVER: ./minecraft_server.jar
+      SKIP_GENERIC_PACK_UPDATE_CHECK: "true"
+      OVERRIDE_SERVER_PROPERTIES: "false"
+
+
+      GENERIC_PACKS: TerraFirmaGreg-Modern-DEV-serverpack
+      GENERIC_PACKS_SUFFIX: .zip
+      GENERIC_PACKS_PREFIX: https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/download/DEV/
+
+    volumes:
+      - ./data:/data
+      - ./backups:/backups
+
+volumes:
+  minecraft-data:

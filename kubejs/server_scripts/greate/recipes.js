@@ -87,52 +87,51 @@ function registerGreateRecipes(event) {
 
 	// #region Gearboxes
 
-	event.recipes.gtceu.assembler('greate:andesite_alloy_gearbox')
-		.itemInputs('create:andesite_casing', '4x greate:andesite_alloy_shaft')
-		.itemOutputs('greate:andesite_alloy_gearbox')
-		.circuit(5)
-		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
+	global.AVAILABLE_GREATE_MATERIAL_TIERS.forEach(tier => {
+
+		event.shaped(`greate:${tier}_gearbox`, [
+			' A ',
+			'ABA',
+			'CA '
+		], {
+			A: `greate:${tier}_shaft`,
+			B: 'create:andesite_casing',
+			C: '#forge:tools/wrenches'
+		}).id(`tfg:shaped/${tier}_gearbox`)
+
+		event.shaped(`greate:${tier}_vertical_gearbox`, [
+			'A A',
+			' B ',
+			'ACA'
+		], {
+			A: `greate:${tier}_shaft`,
+			B: 'create:andesite_casing',
+			C: '#forge:tools/wrenches'
+		}).id(`tfg:shaped/${tier}_vertical_gearbox`)
+
+		event.shapeless(`greate:${tier}_gearbox`, [`greate:${tier}_vertical_gearbox`])
+		event.shapeless(`greate:${tier}_vertical_gearbox`, [`greate:${tier}_gearbox`])
+
+		event.recipes.gtceu.assembler(`greate:${tier}_gearbox`)
+			.itemInputs('create:andesite_casing', `4x greate:${tier}_shaft`)
+			.itemOutputs(`greate:${tier}_gearbox`)
+			.circuit(5)
+			.duration(50)
+			.EUt(GTValues.VA[GTValues.ULV])
+	})
+
 
 	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_gearbox', { 'wood': 1, 'wrought_iron': 1 });
 	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_vertical_gearbox', { 'wood': 1, 'wrought_iron': 1 });
 
-	event.recipes.gtceu.assembler('greate:steel_gearbox')
-		.itemInputs('create:andesite_casing', '4x greate:steel_shaft')
-		.itemOutputs('greate:steel_gearbox')
-		.circuit(5)
-		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
-
 	TFGHelpers.registerMaterialInfo('greate:steel_gearbox', { 'wood': 1, 'wrought_iron': 1, 'steel': 4/9 });
 	TFGHelpers.registerMaterialInfo('greate:steel_vertical_gearbox', { 'wood': 1, 'wrought_iron': 1, 'steel': 4/9 });
-
-	event.recipes.gtceu.assembler('greate:aluminium_gearbox')
-		.itemInputs('create:andesite_casing', '4x greate:aluminium_shaft')
-		.itemOutputs('greate:aluminium_gearbox')
-		.circuit(5)
-		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
 
 	TFGHelpers.registerMaterialInfo('greate:aluminium_gearbox', { 'wood': 1, 'wrought_iron': 1, 'aluminium': 4/9 });
 	TFGHelpers.registerMaterialInfo('greate:aluminium_vertical_gearbox', { 'wood': 1, 'wrought_iron': 1, 'aluminium': 4/9 });
 
-	event.recipes.gtceu.assembler('greate:stainless_steel_gearbox')
-		.itemInputs('create:andesite_casing', '4x greate:stainless_steel_shaft')
-		.itemOutputs('greate:stainless_steel_gearbox')
-		.circuit(5)
-		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
-
 	TFGHelpers.registerMaterialInfo('greate:stainless_steel_gearbox', { 'wood': 1, 'wrought_iron': 1, 'stainless_steel': 4/9 });
 	TFGHelpers.registerMaterialInfo('greate:stainless_steel_vertical_gearbox', { 'wood': 1, 'wrought_iron': 1, 'stainless_steel': 4/9 });
-
-	event.recipes.gtceu.assembler('greate:titanium_gearbox')
-		.itemInputs('create:andesite_casing', '4x greate:titanium_shaft')
-		.itemOutputs('greate:titanium_gearbox')
-		.circuit(5)
-		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
 
 	TFGHelpers.registerMaterialInfo('greate:titanium_gearbox', { 'wood': 1, 'wrought_iron': 1, 'titanium': 4/9 });
 	TFGHelpers.registerMaterialInfo('greate:titanium_vertical_gearbox', { 'wood': 1, 'wrought_iron': 1, 'titanium': 4/9 });

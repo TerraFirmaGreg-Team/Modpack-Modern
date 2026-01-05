@@ -558,21 +558,6 @@ const registerFirmaLifeRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(200)
 
-	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['#tfg:wood_dusts', '#tfg:wood_dusts', 'tfc:glue'])
-		.outputItem('2x tfg:chipboard_composite')
-		.id('tfg:mixing_bowl/chipboard_composite_glue')
-
-	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['#tfg:wood_dusts', '#tfg:wood_dusts', '#tfg:wood_dusts', '#tfg:wood_dusts', 'gtceu:sticky_resin'])
-		.outputItem('4x tfg:chipboard_composite')
-		.id('tfg:mixing_bowl/chipboard_composite_resin')
-
-	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['#tfg:wood_dusts', '#tfg:wood_dusts', '#forge:wax'])
-		.outputItem('2x tfg:chipboard_composite')
-		.id('tfg:mixing_bowl/chipboard_composite_wax')
-
 	// Dough
 
 	global.TFC_GRAINS.forEach(grain => {
@@ -703,28 +688,10 @@ const registerFirmaLifeRecipes = (event) => {
 
 		event.recipes.firmalife.mixing_bowl()
 			.ingredients([
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-				`#tfc:sweetener`,
-				`#tfc:sweetener`],
-				Fluid.of('firmalife:yeast_starter', 400))
-			.outputItem(`8x firmalife:food/${grain}_dough`)
-			.id(`tfg:mixing_bowl/${grain}_dough_2`)
-
-		event.recipes.firmalife.mixing_bowl()
-			.ingredients([
 				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`)],
 				Fluid.of('minecraft:water', 100))
 			.outputItem(`4x tfc:food/${grain}_dough`)
 			.id(`tfg:mixing_bowl/${grain}_flatbread_dough`)
-
-		event.recipes.firmalife.mixing_bowl()
-			.ingredients([
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`)],
-				Fluid.of('minecraft:water', 200))
-			.outputItem(`8x tfc:food/${grain}_dough`)
-			.id(`tfg:mixing_bowl/${grain}_flatbread_dough_2`)
 	})
 
 	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`2x firmalife:food/hardtack_dough`).copyFood(), [
@@ -894,12 +861,12 @@ const registerFirmaLifeRecipes = (event) => {
 	setChocolateHeating('dark')
 
 	//fixing the bread unrotting
-	event.remove({ id: 'firmalife:crafting/oat_slice'})
-	event.remove({ id: 'firmalife:crafting/wheat_slice'})
-	event.remove({ id: 'firmalife:crafting/barley_slice'})
-	event.remove({ id: 'firmalife:crafting/maize_slice'})
-	event.remove({ id: 'firmalife:crafting/rice_slice'})
-	event.remove({ id: 'firmalife:crafting/rye_slice'})
+	event.remove({ id: 'firmalife:crafting/oat_slice' })
+	event.remove({ id: 'firmalife:crafting/wheat_slice' })
+	event.remove({ id: 'firmalife:crafting/barley_slice' })
+	event.remove({ id: 'firmalife:crafting/maize_slice' })
+	event.remove({ id: 'firmalife:crafting/rice_slice' })
+	event.remove({ id: 'firmalife:crafting/rye_slice' })
 
 	event.recipes.tfc.advanced_shapeless_crafting(
 		TFC.itemStackProvider.of('2x firmalife:food/oat_slice').copyFood(),
@@ -927,109 +894,137 @@ const registerFirmaLifeRecipes = (event) => {
 		.id(`tfg:crafting/rye_slice`)
 
 	//fixing the cheese curd unrotting
-	event.remove({ id: 'firmalife:crafting/cheddar_wheel'})
-	event.remove({ id: 'firmalife:crafting/chevre_wheel'})
-	event.remove({ id: 'firmalife:crafting/rajya_metok_wheel'})
-	event.remove({ id: 'firmalife:barrel/gouda'})
-	event.remove({ id: 'firmalife:barrel/feta'})
-	event.remove({ id: 'firmalife:barrel/shosha'})
+	event.remove({ id: 'firmalife:crafting/cheddar_wheel' })
+	event.remove({ id: 'firmalife:crafting/chevre_wheel' })
+	event.remove({ id: 'firmalife:crafting/rajya_metok_wheel' })
+	event.remove({ id: 'firmalife:barrel/gouda' })
+	event.remove({ id: 'firmalife:barrel/feta' })
+	event.remove({ id: 'firmalife:barrel/shosha' })
 
 	event.recipes.tfc.advanced_shaped_crafting(
 		TFC.itemStackProvider.of('firmalife:cheddar_wheel').copyFood(), [
-			'AAA',
-			'BBB',
-			'AAA'
-		], {
-			A: 'tfc:powder/salt',
-			B: TFC.ingredient.notRotten('firmalife:food/milk_curd')
-		}, 0, 0).id('tfg:crafting/cheddar_wheel')
+		'AAA',
+		'BBB',
+		'AAA'
+	], {
+		A: 'tfc:powder/salt',
+		B: TFC.ingredient.notRotten('firmalife:food/milk_curd')
+	}, 0, 0).id('tfg:crafting/cheddar_wheel')
 	event.recipes.tfc.advanced_shaped_crafting(
 		TFC.itemStackProvider.of('firmalife:chevre_wheel').copyFood(), [
-			'AAA',
-			'BBB',
-			'AAA'
-		], {
-			A: 'tfc:powder/salt',
-			B: TFC.ingredient.notRotten('firmalife:food/goat_curd')
-		}, 0, 0).id('tfg:crafting/chevre_wheel')
+		'AAA',
+		'BBB',
+		'AAA'
+	], {
+		A: 'tfc:powder/salt',
+		B: TFC.ingredient.notRotten('firmalife:food/goat_curd')
+	}, 0, 0).id('tfg:crafting/chevre_wheel')
 	event.recipes.tfc.advanced_shaped_crafting(
 		TFC.itemStackProvider.of('firmalife:rajya_metok_wheel').copyFood(), [
-			'AAA',
-			'BBB',
-			'AAA'
-		], {
-			A: 'tfc:powder/salt',
-			B: TFC.ingredient.notRotten('firmalife:food/yak_curd')
-		}, 0, 0).id('tfg:crafting/rajya_metok_wheel')
-		event.custom({
-			"type": "tfc:barrel_sealed",
-			"input_item": {
-				"count": 3,
-				"ingredient": {
-					"type": "tfc:not_rotten",
-					"ingredient": { "item": "firmalife:food/milk_curd" }
-				}
-			},
-			"input_fluid": {
-				"ingredient": "tfc:salt_water",
-				"amount": 750
-			},
-			"output_item": {
-				"item": "firmalife:gouda_wheel"
-			},
-			"duration": 16000
-		}).id('tfg:barrel/gouda_wheel')
-		event.custom({
-			"type": "tfc:barrel_sealed",
-			"input_item": {
-				"count": 3,
-				"ingredient": {
-					"type": "tfc:not_rotten",
-					"ingredient": { "item": "firmalife:food/goat_curd" }
-				}
-			},
-			"input_fluid": {
-				"ingredient": "tfc:salt_water",
-				"amount": 750
-			},
-			"output_item": {
-				"item": "firmalife:feta_wheel"
-			},
-			"duration": 16000
-		}).id('tfg:barrel/feta_wheel')
-		event.custom({
-			"type": "tfc:barrel_sealed",
-			"input_item": {
-				"count": 3,
-				"ingredient": {
-					"type": "tfc:not_rotten",
-					"ingredient": { "item": "firmalife:food/yak_curd" }
-				}
-			},
-			"input_fluid": {
-				"ingredient": "tfc:salt_water",
-				"amount": 750
-			},
-			"output_item": {
-				"item": "firmalife:shosha_wheel"
-			},
-			"duration": 16000
-		}).id('tfg:barrel/shosha_wheel')
-	
+		'AAA',
+		'BBB',
+		'AAA'
+	], {
+		A: 'tfc:powder/salt',
+		B: TFC.ingredient.notRotten('firmalife:food/yak_curd')
+	}, 0, 0).id('tfg:crafting/rajya_metok_wheel')
+	event.custom({
+		"type": "tfc:barrel_sealed",
+		"input_item": {
+			"count": 3,
+			"ingredient": {
+				"type": "tfc:not_rotten",
+				"ingredient": { "item": "firmalife:food/milk_curd" }
+			}
+		},
+		"input_fluid": {
+			"ingredient": "tfc:salt_water",
+			"amount": 750
+		},
+		"output_item": {
+			"item": "firmalife:gouda_wheel"
+		},
+		"duration": 16000
+	}).id('tfg:barrel/gouda_wheel')
+	event.custom({
+		"type": "tfc:barrel_sealed",
+		"input_item": {
+			"count": 3,
+			"ingredient": {
+				"type": "tfc:not_rotten",
+				"ingredient": { "item": "firmalife:food/goat_curd" }
+			}
+		},
+		"input_fluid": {
+			"ingredient": "tfc:salt_water",
+			"amount": 750
+		},
+		"output_item": {
+			"item": "firmalife:feta_wheel"
+		},
+		"duration": 16000
+	}).id('tfg:barrel/feta_wheel')
+	event.custom({
+		"type": "tfc:barrel_sealed",
+		"input_item": {
+			"count": 3,
+			"ingredient": {
+				"type": "tfc:not_rotten",
+				"ingredient": { "item": "firmalife:food/yak_curd" }
+			}
+		},
+		"input_fluid": {
+			"ingredient": "tfc:salt_water",
+			"amount": 750
+		},
+		"output_item": {
+			"item": "firmalife:shosha_wheel"
+		},
+		"duration": 16000
+	}).id('tfg:barrel/shosha_wheel')
+
 	// #region Oven heating recipes
-	
+
 	event.recipes.tfc.heating(`firmalife:oven_top`, 1399)
-			.resultItem(`firmalife:cured_oven_top`)
-			.id(`tfg:heating/oven_top`)
+		.resultItem(`firmalife:cured_oven_top`)
+		.id(`tfg:heating/oven_top`)
 	event.recipes.tfc.heating(`firmalife:oven_chimney`, 1399)
-			.resultItem(`firmalife:cured_oven_chimney`)
-			.id(`tfg:heating/oven_chimney`)
+		.resultItem(`firmalife:cured_oven_chimney`)
+		.id(`tfg:heating/oven_chimney`)
 	event.recipes.tfc.heating(`firmalife:oven_bottom`, 1399)
-			.resultItem(`firmalife:cured_oven_bottom`)
-			.id(`tfg:heating/oven_bottom`)
+		.resultItem(`firmalife:cured_oven_bottom`)
+		.id(`tfg:heating/oven_bottom`)
 	event.recipes.tfc.heating(`firmalife:oven_hopper`, 1399)
-			.resultItem(`firmalife:cured_oven_hopper`)
-			.id(`tfg:heating/oven_hopper`)
+		.resultItem(`firmalife:cured_oven_hopper`)
+		.id(`tfg:heating/oven_hopper`)
 
 	// #endregion
+
+	// Adds a tooltip to the bacon craft to tell people it needs to be smoked first,
+	// and adds traits that normally disappear on the craft
+		
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.isp.of(Item.of('4x firmalife:food/bacon')
+			.withName(Text.translate('tfg.emi.bacon_requirement')))
+			.addTrait("firmalife:smoked")
+			.addTrait("tfc:brined")
+			.addTrait("tfc:salted"), 
+		[
+			TFC.ingredient.notRotten(TFC.ingredient.hasTrait('tfc:food/pork', "firmalife:smoked")),
+			'#forge:tools/knives',
+			'tfc:powder/salt'
+		])
+		.modifyResult((craftingGrid, result) => {
+			result.resetHoverName();
+			return result;
+		})
+		.id('firmalife:crafting/bacon')
+
+	// Replacement for yeast starter recipe that uses a different, more descriptive tag
+
+	event.recipes.tfc.barrel_sealed(72000)
+		.inputFluid(Fluid.of('minecraft:water', 100))
+		.inputItem(TFC.ingredient.hasTrait(Ingredient.of('#tfg:dried_fruit'), "firmalife:dried"))
+		.outputFluid(Fluid.of('firmalife:yeast_starter', 100))
+		.id('firmalife:barrel/yeast_starter')
 }

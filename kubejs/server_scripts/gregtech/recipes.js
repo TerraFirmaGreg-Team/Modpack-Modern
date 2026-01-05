@@ -80,37 +80,37 @@ const registerGTCEURecipes = (event) => {
 	//#endregion
 
 
-	// #region Move MV superconductor to early HV instead of post-vac freezer
+	// #region Move MV superconductor to mid-late MV instead of post-vac freezer
 
-	event.remove({ id: 'gtceu:shaped/hv_chemical_bath' })
-	event.shaped('gtceu:hv_chemical_bath', [
+	event.remove({ id: 'gtceu:shaped/mv_chemical_bath' })
+	event.shaped('gtceu:mv_chemical_bath', [
 		'ABC',
 		'DEA',
 		'FGF'
 	], {
-		A: 'gtceu:hv_conveyor_module',
-		B: 'gtceu:tempered_glass',
-		C: 'gtceu:gold_single_cable',
-		D: 'gtceu:hv_electric_pump',
+		A: 'gtceu:mv_conveyor_module',
+		B: '#forge:glass',
+		C: 'gtceu:copper_single_cable',
+		D: 'gtceu:mv_electric_pump',
 		// swap one of the tempered glass for a PE pipe to ensure they've finished the plastic part of MV
 		E: 'gtceu:polyethylene_normal_fluid_pipe',
-		F: '#gtceu:circuits/hv',
-		G: 'gtceu:hv_machine_hull'
-	}).id('tfg:shaped/hv_chemical_bath')
+		F: '#gtceu:circuits/mv',
+		G: 'gtceu:mv_machine_hull'
+	}).id('tfg:shaped/mv_chemical_bath')
 
 	event.recipes.gtceu.chemical_bath('tfg:magnesium_diboride_cool_down_distilled_water')
 		.itemInputs('gtceu:hot_magnesium_diboride_ingot')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 100))
 		.itemOutputs('gtceu:magnesium_diboride_ingot')
 		.duration(250)
-		.EUt(480)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_bath('tfg:magnesium_diboride_cool_down')
 		.itemInputs('gtceu:hot_magnesium_diboride_ingot')
 		.inputFluids(Fluid.of('minecraft:water', 100))
 		.itemOutputs('gtceu:magnesium_diboride_ingot')
 		.duration(400)
-		.EUt(480)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	// #endregion
 
@@ -368,6 +368,8 @@ const registerGTCEURecipes = (event) => {
 
 
 	event.replaceInput({ output: 'gtceu:nano_saber' }, 'gtceu:ruridit_plate', '#forge:plates/ostrum_iodide')
+	event.replaceOutput({ id: 'gtceu:canner/pack_paracetamol' }, 'gtceu:paracetamol_pill', 'tfg:paracetamol_pill')
+	event.replaceOutput({ id: 'gtceu:canner/pack_rad_away' }, 'gtceu:rad_away_pill', 'tfg:rad_away_pill')
 
 	// Intentionally long to encourage reuse instead of mindlessly creating and distilling
 	event.recipes.gtceu.mixer('tfg:diluted_hcl_acid')
@@ -376,11 +378,19 @@ const registerGTCEURecipes = (event) => {
 		.duration(30 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
-
 	event.recipes.gtceu.mixer('tfg:diluted_sulf_acid')
 		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 2000), Fluid.of('minecraft:water'))
 		.outputFluids(Fluid.of('gtceu:diluted_sulfuric_acid', 3000))
 		.duration(30 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	// Ladder consistency
+	event.replaceOutput({ id: 'gtceu:assembler/ladder' }, 'minecraft:ladder', '8x minecraft:ladder')
+
+	event.recipes.gtceu.assembler('tfg:ladder_from_lumber')
+		.itemInputs('#tfc:lumber')
+		.itemOutputs('8x minecraft:ladder')
+		.circuit(7)
+		.duration(40)
+		.EUt(4)
 }

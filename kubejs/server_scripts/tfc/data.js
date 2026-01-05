@@ -25,6 +25,9 @@ const registerTFCHeats = (event) => {
 	
 	// Baked Potato
 	event.itemHeat('tfc:food/baked_potato', 1.0, null, null)
+
+	// Soybean
+	event.itemHeat('tfc:food/soybean', 1.0, null, null)
 }
 
 

@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 100$(br)$(thing)Densidade$(): 0.2$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Tamanho$(): 15$(br)$(thing)Profundidade Máxima do Indicador$(): 30$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito, Traquito, Travertino",
+      "text": "$(thing)Raridade$(): 30$(br)$(thing)Densidade$(): 0.2$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 30$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito, Traquito, Travertino",
       "title": "Enxofre e Pirita",
       "type": "patchouli:text",
       "anchor": "venus_manual_sulfur"
@@ -41,7 +41,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 50%$(br)$(thing)Fonte de$(): Enxofre$(br)$(thing)Fórmula$(): S",
+      "text": "$(thing)Porcentagem$(): 80%$(br)$(thing)Fonte de$(): Enxofre$(br)$(thing)Fórmula$(): S",
       "type": "patchouli:multiblock"
     },
     {
@@ -61,7 +61,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): FeS₂",
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): FeS₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -81,12 +81,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Derrete em$(): Zinco$(br)$(thing)Fórmula$(): ZnS",
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Derrete em$(): Zinco$(br)$(thing)Fórmula$(): ZnS",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 100$(br)$(thing)Densidade$(): 0.2$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Tamanho$(): 20$(br)$(thing)Altura$(): 6$(br)$(thing)Profundidade Máxima do Indicador$(): 30$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito, Traquito, Travertino$(br2)Only appears in the $(thing)Salt Flats$() biome.",
+      "text": "$(thing)Raridade$(): 30$(br)$(thing)Densidade$(): 0.2$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Tamanho$(): 20$(br)$(thing)Altura$(): 6$(br)$(thing)Profundidade Máxima do Indicador$(): 30$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito, Traquito, Travertino$(br2)Only appears in the $(thing)Salt Flats$() biome.",
       "title": "Salts & Spodumene",
       "type": "patchouli:text",
       "anchor": "venus_manual_salt"
@@ -108,7 +108,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 50%$(br)$(thing)Fonte de$(): Sódio, Cloro$(br)$(thing)Fórmula$(): NaCl",
+      "text": "$(thing)Porcentagem$(): 80%$(br)$(thing)Fonte de$(): Sódio, Cloro$(br)$(thing)Fórmula$(): NaCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -128,7 +128,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Fonte de$(): Potássio, Cloro$(br)$(thing)Fórmula$(): KCl",
+      "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Fonte de$(): Potássio, Cloro$(br)$(thing)Fórmula$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -148,7 +148,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Fonte de$(): Potássio, Lítio, Alumínio, Flúor$(br)$(thing)Fórmula$(): KLi₃Al₄F₂O₁₀",
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Fonte de$(): Potássio, Lítio, Alumínio, Flúor$(br)$(thing)Fórmula$(): KLi₃Al₄F₂O₁₀",
       "type": "patchouli:multiblock"
     },
     {
@@ -168,7 +168,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Fonte de$(): Lítio, Alumínio$(br)$(thing)Fórmula$(): LiAlSi₂O₆",
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Fonte de$(): Lítio, Alumínio$(br)$(thing)Fórmula$(): LiAlSi₂O₆",
       "type": "patchouli:multiblock"
     },
     {

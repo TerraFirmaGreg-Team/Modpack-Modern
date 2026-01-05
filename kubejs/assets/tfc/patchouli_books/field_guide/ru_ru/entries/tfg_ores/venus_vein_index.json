@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 100$(br)$(thing)Плотность$(): 0.2$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): 40 — 65$(br)$(thing)Размер$(): 20$(br)$(thing)Высота$(): 6$(br)$(thing)Индикатор Max Depth$(): 30$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит, Травертин, Трахит$(br2)Only appears in the $(thing)Salt Flats$() biome.",
+      "text": "$(thing)Редкость$(): 30$(br)$(thing)Плотность$(): 0.2$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): 40 — 65$(br)$(thing)Размер$(): 20$(br)$(thing)Высота$(): 6$(br)$(thing)Индикатор Max Depth$(): 30$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит, Травертин, Трахит$(br2)Only appears in the $(thing)Salt Flats$() biome.",
       "title": "Salts & Spodumene",
       "type": "patchouli:text",
       "anchor": "venus_manual_salt"
@@ -41,7 +41,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 50%$(br)$(thing)Хромит$(): Натрий, Хлор$(br)$(thing)Формула$(): NaCl",
+      "text": "$(thing)Процент руды$(): 80%$(br)$(thing)Хромит$(): Натрий, Хлор$(br)$(thing)Формула$(): NaCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -61,7 +61,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Хромит$(): Калий, Хлор$(br)$(thing)Формула$(): KCl",
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Хромит$(): Калий, Хлор$(br)$(thing)Формула$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -81,7 +81,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Хромит$(): Калий, Литий, Алюминий, Фтор$(br)$(thing)Формула$(): KLi₃Al₄F₂O₁₀",
+      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Хромит$(): Калий, Литий, Алюминий, Фтор$(br)$(thing)Формула$(): KLi₃Al₄F₂O₁₀",
       "type": "patchouli:multiblock"
     },
     {
@@ -101,7 +101,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Хромит$(): Литий, Алюминий$(br)$(thing)Формула$(): LiAlSi₂O₆",
+      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Хромит$(): Литий, Алюминий$(br)$(thing)Формула$(): LiAlSi₂O₆",
       "type": "patchouli:multiblock"
     },
     {
@@ -111,7 +111,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 100$(br)$(thing)Плотность$(): 0.2$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 40 — 65$(br)$(thing)Размер$(): 15$(br)$(thing)Индикатор Max Depth$(): 30$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит, Травертин, Трахит",
+      "text": "$(thing)Редкость$(): 30$(br)$(thing)Плотность$(): 0.2$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 40 — 65$(br)$(thing)Размер$(): 20$(br)$(thing)Индикатор Max Depth$(): 30$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит, Травертин, Трахит",
       "title": "Сера и Пирит",
       "type": "patchouli:text",
       "anchor": "venus_manual_sulfur"
@@ -133,7 +133,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 50%$(br)$(thing)Хромит$(): Сера$(br)$(thing)Формула$(): S",
+      "text": "$(thing)Процент руды$(): 80%$(br)$(thing)Хромит$(): Сера$(br)$(thing)Формула$(): S",
       "type": "patchouli:multiblock"
     },
     {
@@ -153,7 +153,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeS₂",
+      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeS₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -173,7 +173,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Плавится в$(): Цинк$(br)$(thing)Формула$(): ZnS",
+      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Цинк$(br)$(thing)Формула$(): ZnS",
       "type": "patchouli:multiblock"
     }
   ],
