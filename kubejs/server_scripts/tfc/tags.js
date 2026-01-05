@@ -111,6 +111,21 @@ function registerTFCItemTags(event) {
     event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_rye_whiskey")
     event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_mead")
     event.add("tfc:nonplaceable", "tfc_gurman:nalivka_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:coffee_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:tea_mint_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:tea_chamomile_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:tea_rosehip_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:tea_nettle_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:cocoa_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:compote_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:kvass_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:lemonade_bucket")
+    event.add("tfc:nonplaceable", "firmalife:bucket/mead")
+    event.add("tfc:nonplaceable", "firmalife:bucket/red_wine")
+    event.add("tfc:nonplaceable", "firmalife:bucket/white_wine")
+    event.add("tfc:nonplaceable", "firmalife:bucket/rose_wine")
+    event.add("tfc:nonplaceable", "firmalife:bucket/sparkling_wine")
+    event.add("tfc:nonplaceable", "firmalife:bucket/dessert_wine")
 
     // Ингредиенты для закваски
     event.add("tfg:ferments_to_rennet", "tfc:food/soybean");
