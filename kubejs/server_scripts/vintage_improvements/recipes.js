@@ -166,7 +166,7 @@ function registerVintageImprovementsRecipes(event) {
 	]
 
 	let HAMMERING_ITEMS = [
-		{ input: 'gtceu:thermochemically_treated_hardwood_dust', output: 'tfg:soaked_unrefined_paper', blows: STARTING_BLOWS }
+		{ input: 'gtceu:thermochemically_treated_hardwood_dust', output: 'tfg:soaked_unrefined_paper', blows: 3 }
 	]
 
 	HAMMERING_MATERIALS.forEach(x => {
