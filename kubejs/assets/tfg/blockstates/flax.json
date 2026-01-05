@@ -21,9 +21,6 @@
 		"age=6,part=bottom": {
 			"model": "tfg:block/crop/flax_age_6_bottom"
 		},
-		"age=7,part=bottom": {
-			"model": "tfg:block/crop/flax_age_6_bottom"
-		},
 		"age=4,part=top": {
 			"model": "tfg:block/crop/flax_age_4_top"
 		},
@@ -31,9 +28,6 @@
 			"model": "tfg:block/crop/flax_age_5_top"
 		},
 		"age=6,part=top": {
-			"model": "tfg:block/crop/flax_age_6_top"
-		},
-		"age=7,part=top": {
 			"model": "tfg:block/crop/flax_age_6_top"
 		}
 	}
