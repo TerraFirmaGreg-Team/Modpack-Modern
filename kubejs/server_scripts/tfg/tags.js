@@ -17,7 +17,7 @@ const registerTFGItemTags = (event) => {
 	registerTFGMoonItemTags(event)
 	registerTFGMarsItemTags(event)
 	registerTFGVenusItemTags(event)
-	registerTFGGreenhouseItemTags(event)
+	registerTFGAquaponicsItemTags(event)
 
 	//Circuit Stuff
 	event.add('tfg:components/uv_leds', 'tfg:uv_led')
@@ -113,7 +113,7 @@ const registerTFGBlockTags = (event) => {
 	registerTFGMoonBlockTags(event)
 	registerTFGMarsBlockTags(event)
 	registerTFGVenusBlockTags(event)
-	registerTFGGreenhouseBlockTags(event)
+	registerTFGAquaponicsBlockTags(event)
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_large')
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_small')
@@ -138,6 +138,8 @@ const registerTFGBlockTags = (event) => {
 
 //#region Fluids
 const registerTFGFluidTags = (event) => {
+
+	registerTFGAquaponicsFluidTags(event)
 
 	event.add('tfg:clean_water', 'minecraft:water')
 	event.add('tfg:clean_water', 'tfc:river_water')

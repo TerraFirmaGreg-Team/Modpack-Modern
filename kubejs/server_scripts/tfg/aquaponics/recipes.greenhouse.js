@@ -21,6 +21,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 	 * @property {number} fluid_chance - Chance for fluid consumption per tick out of 100.
 	 * @property {string|null} fertilizer - Fertilizer item ID or null if fertilizer is not needed on that dimension.
 	 * @property {GTValues.EUt} eut - EUt value for that dimension.
+	 * @property {boolean|null} oxygenated - Whether the recipe requires an oxygenated environment.
 	 */
 
 	/** @type {DimensionIndex[]} - Dimension settings array */

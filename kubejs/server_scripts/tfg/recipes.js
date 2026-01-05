@@ -15,6 +15,7 @@ const registerTFGRecipes = (event) => {
 	registerTFGMealBagRecipes(event)
 	registerTFGBiomassRecipes(event)
 	registerTFGGreenhouseRecipes(event)
+	registerTFGPiscicultureRecipes(event)
 
 	// TFC stone types
 	registerTFCStoneRecipes(event)
