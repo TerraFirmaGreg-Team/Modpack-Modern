@@ -153,12 +153,12 @@ function registerDomumOrnamentumBlockTags(event) {
         "createdeco:cracked_pearl_bricks",
         "createdeco:mossy_pearl_bricks",
         //Ad Astra blocks
-        "tfg:ad_astra_iron_blocks"
-        "tfg:ad_astra_etrium_blocks"
-        "tfg:ad_astra_steel_blocks"
-        "tfg:ad_astra_desh_blocks"
-        "tfg:ad_astra_ostrum_blocks"
-        "tfg:ad_astra_calorite_blocks"
+        "tfg:ad_astra_iron_blocks",
+        "tfg:ad_astra_etrium_blocks",
+        "tfg:ad_astra_steel_blocks",
+        "tfg:ad_astra_desh_blocks",
+        "tfg:ad_astra_ostrum_blocks",
+        "tfg:ad_astra_calorite_blocks",
     ];
 
     materials.forEach((material) => {
