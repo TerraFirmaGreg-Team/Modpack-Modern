@@ -368,8 +368,6 @@ const registerGTCEURecipes = (event) => {
 
 
 	event.replaceInput({ output: 'gtceu:nano_saber' }, 'gtceu:ruridit_plate', '#forge:plates/ostrum_iodide')
-	event.replaceOutput({ id: 'gtceu:canner/pack_paracetamol' }, 'gtceu:paracetamol_pill', 'tfg:paracetamol_pill')
-	event.replaceOutput({ id: 'gtceu:canner/pack_rad_away' }, 'gtceu:rad_away_pill', 'tfg:rad_away_pill')
 
 	// Intentionally long to encourage reuse instead of mindlessly creating and distilling
 	event.recipes.gtceu.mixer('tfg:diluted_hcl_acid')
@@ -393,4 +391,22 @@ const registerGTCEURecipes = (event) => {
 		.circuit(7)
 		.duration(40)
 		.EUt(4)
+
+	// Pills
+	event.remove({ id: 'gtceu:canner/pack_paracetamol' })
+	event.remove({ id: 'gtceu:canner/pack_rad_away' })
+
+	event.recipes.gtceu.forming_press('tfg:pack_rad_away')
+		.itemInputs('16x #forge:dusts/rad_away')
+		.notConsumable('gtceu:pill_casting_mold')
+		.itemOutputs('tfg:rad_away_pill')
+		.duration(3 * 20)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.forming_press('gtceu:pack_paracetamol')
+		.itemInputs('16x #forge:dusts/paracetamol')
+		.notConsumable('gtceu:pill_casting_mold')
+		.itemOutputs('tfg:paracetamol_pill')
+		.duration(3 * 20)
+		.EUt(GTValues.VA[GTValues.LV])
 }
