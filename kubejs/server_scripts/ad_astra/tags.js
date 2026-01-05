@@ -63,6 +63,7 @@ const registerAdAstraItemTags = (event) => {
 	})
 
 	event.add('forge:storage_blocks/etrium', 'ad_astra:etrium_block')
+	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_block')
 	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_factory_block')
 	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:encased_etrium_block')
 	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_plateblock')
@@ -116,6 +117,12 @@ const registerAdAstraBlockTags = (event) => {
 		event.add(`tfg:ad_astra_${block}_blocks`, `ad_astra:${block}_plateblock`)
 		event.add(`tfg:ad_astra_${block}_blocks`, `ad_astra:encased_${block}_block`)
 	})
+
+		event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_factory_block')
+		event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:encased_etrium_block')
+		event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_plateblock')
+		event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_panel')
+		event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_block')
 }
 
 const registerAdAstraBiomeTags = (event) => {
