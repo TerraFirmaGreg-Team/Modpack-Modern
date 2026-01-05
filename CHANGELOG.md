@@ -2,6 +2,11 @@
 
 ## Unreleased
 ### Changes
+### Bug fixes
+### Translation updates
+
+## [0.11.16] - 05-01-2026
+### Changes
 - Added new steam multiblocks for the alloy smelter, compressor, forge hammer, and thermal centrifuge @Pyritie
 - Reduced the Y level that ad astra considers "space" so rocket launches are faster @Pyritie
 - Reduced the amount of loot vases in the newer illages, and reduced how much loot you get from them @Pyritie
