@@ -460,6 +460,7 @@ const registerGTCEuMaterialModification = (event) => {
 	zirconium_diboride.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4500, "high", GTValues.VA[GTValues.EV], 2700, GTValues.VA[GTValues.HV], 12.5*20));
 	
 	GTMaterials.CertusQuartz.setComponents('1x unknown', '1x silicon', '2x oxygen')
+	GTMaterials.Glowstone.setComponents('1x gold', '1x redstone')
 	GTMaterials.GraniteRed.setComponents([])
 	GTMaterials.GraniteRed.setFormula("?")
 	GTMaterials.Thorium.setFormula('ThO2')
