@@ -1620,7 +1620,7 @@
 			]
 			title: "{quests.medium_voltage.mv_long_pipe.title}"
 			x: 5.0d
-			y: -8.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["7FA0ACB7F161F378"]
@@ -1659,6 +1659,7 @@
 				"{quests.gregtech_energy.reformate_gas.desc.2}"
 			]
 			id: "3E4E63D5B8CB6860"
+			optional: true
 			shape: "heart"
 			subtitle: "{quests.gregtech_energy.reformate_gas.subtitle}"
 			tasks: [{

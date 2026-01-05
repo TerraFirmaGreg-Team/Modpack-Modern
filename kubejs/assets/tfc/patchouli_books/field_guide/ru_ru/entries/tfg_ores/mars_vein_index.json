@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandine & Sapphire$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornite & Cooperite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Coal & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Gold, Electrotine, & Bauxite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende, Thorium, & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorium, & Uraninite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartzite, Asbestos, & Barite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone & Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Salts & Spodumene$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Sphalerite & Galena$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Trona, Talc, & Glauconite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит и Пирохлор$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит и Монацит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Висмут$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandine & Sapphire$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornite & Cooperite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Coal & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Gold, Electrotine, & Bauxite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende & Thorianite, & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorianite, & Uraninite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartzite, Asbestos, & Barite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone & Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Salts & Spodumene$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Sphalerite & Galena$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Trona, Talc, & Glauconite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит и Пирохлор$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит и Монацит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Висмут$()$()",
       "type": "patchouli:text"
     },
     {
@@ -373,7 +373,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)Редкость$(): 220$(br)$(thing)Плотность$(): 0.55$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 70$(br)$(thing)Размер$(): 20$(br)$(thing)Индикатор Max Depth$(): 15$(br2)$(thing)Виды камней$(): Red Granite, Аргиллит, Габбро, Дацит, Диорит, Доломит, Конгломерат, Сланец, Трахит",
-      "title": "Pitchblende, Thorium, & Hematite",
+      "title": "Pitchblende & Thorianite, & Hematite",
       "type": "patchouli:text",
       "anchor": "mars_pitchblende"
     },
@@ -399,7 +399,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Торий",
+      "name": "Торианит",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -414,7 +414,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 29%$(br)$(thing)Хромит$(): Торий$(br)$(thing)Формула$(): Th",
+      "text": "$(thing)Процент руды$(): 29%$(br)$(thing)Хромит$(): Торий$(br)$(thing)Формула$(): ThO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -440,7 +440,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)Редкость$(): 370$(br)$(thing)Плотность$(): 0.3$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): -20 — 0$(br)$(thing)Размер$(): 60$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Габбро, Дацит, Диорит, Сланец, Трахит",
-      "title": "Pitchblende, Thorium, & Uraninite",
+      "title": "Pitchblende, Thorianite, & Uraninite",
       "type": "patchouli:text",
       "anchor": "deep_mars_pitchblende"
     },
@@ -466,7 +466,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Торий",
+      "name": "Торианит",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -481,7 +481,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 26%$(br)$(thing)Хромит$(): Торий$(br)$(thing)Формула$(): Th",
+      "text": "$(thing)Процент руды$(): 26%$(br)$(thing)Хромит$(): Торий$(br)$(thing)Формула$(): ThO₂",
       "type": "patchouli:multiblock"
     },
     {

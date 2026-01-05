@@ -60,7 +60,7 @@ function registerTFGMarsItemTags(event) {
 	event.add('forge:seeds', 'betterend:amber_root_seeds')
 	event.add('forge:seeds', 'betterend:blossom_berry_seeds')
 	event.add('forge:seeds', 'betterend:bolux_mushroom_seeds')
-	event.add('forge:seeds', 'betterend:cave_pumpkin_seeds')
+	event.add('forge:seeds', 'betterend:cave_pumpkin_plant_seeds')
 	event.add('forge:seeds', 'betterend:shadow_berry_seeds')
 
 	event.add('tfc:foods', 'betterend:amber_root_product')

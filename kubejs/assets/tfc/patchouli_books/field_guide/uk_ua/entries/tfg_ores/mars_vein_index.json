@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Марганець і Тантал$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Мідь та Халькопірит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Настуран, Торій і Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Настуран, Торій і Уранініт$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Редстоун і Хроміт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Смарагд і Берилій$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Солі і Сподумен$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Срібло, Гален і Свинець$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Стеатит, Тальк і Глауконіт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Сфалерит і Галеніт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сфалерит і Пірит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраедрит (Звичайний)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Тетраедрит (Поверхня)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеєліт та Вольфрам$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Марганець і Тантал$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Мідь та Халькопірит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Настуран, Торіаніт і Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Настуран, Торіаніт і Уранініт$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Редстоун і Хроміт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Смарагд і Берилій$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Солі і Сподумен$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Срібло, Гален і Свинець$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Стеатит, Тальк і Глауконіт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Сфалерит і Галеніт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сфалерит і Пірит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраедрит (Звичайний)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Тетраедрит (Поверхня)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеєліт та Вольфрам$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1452,7 +1452,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)Рідкість$(): 220$(br)$(thing)Щільність$(): 0.55$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 15$(br2)$(thing)Типи каменю$(): Red Granite, Аргіліт, Габро, Глинистий сланець, Дацит, Діорит, Доломіт, Конгломерат, Трахіт",
-      "title": "Настуран, Торій і Гематит",
+      "title": "Настуран, Торіаніт і Гематит",
       "type": "patchouli:text",
       "anchor": "mars_pitchblende"
     },
@@ -1478,7 +1478,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Торій",
+      "name": "Торіаніт",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -1493,7 +1493,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 29%$(br)$(thing)Джерело$(): Торію$(br)$(thing)Формула$(): Th",
+      "text": "$(thing)Відсоток$(): 29%$(br)$(thing)Джерело$(): Торію$(br)$(thing)Формула$(): ThO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1519,7 +1519,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)Рідкість$(): 370$(br)$(thing)Щільність$(): 0.3$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): -20 — 0$(br)$(thing)Розмір$(): 60$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Аргиліт, Аргіліт, Габро, Глинистий сланець, Дацит, Діорит, Трахіт",
-      "title": "Настуран, Торій і Уранініт",
+      "title": "Настуран, Торіаніт і Уранініт",
       "type": "patchouli:text",
       "anchor": "deep_mars_pitchblende"
     },
@@ -1545,7 +1545,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Торій",
+      "name": "Торіаніт",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -1560,7 +1560,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 26%$(br)$(thing)Джерело$(): Торію$(br)$(thing)Формула$(): Th",
+      "text": "$(thing)Відсоток$(): 26%$(br)$(thing)Джерело$(): Торію$(br)$(thing)Формула$(): ThO₂",
       "type": "patchouli:multiblock"
     },
     {

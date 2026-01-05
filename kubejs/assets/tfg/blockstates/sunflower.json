@@ -21,9 +21,6 @@
 		"age=6,part=bottom": {
 			"model": "tfg:block/crop/sunflower_age_5_bottom"
 		},
-		"age=7,part=bottom": {
-			"model": "tfg:block/crop/sunflower_age_5_bottom"
-		},
 		"age=4,part=top": {
 			"model": "tfg:block/crop/sunflower_age_4_top"
 		},
@@ -31,9 +28,6 @@
 			"model": "tfg:block/crop/sunflower_age_5_top"
 		},
 		"age=6,part=top": {
-			"model": "tfg:block/crop/sunflower_age_5_top"
-		},
-		"age=7,part=top": {
 			"model": "tfg:block/crop/sunflower_age_5_top"
 		}
 	}

@@ -376,11 +376,37 @@ const registerGTCEURecipes = (event) => {
 		.duration(30 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
-
 	event.recipes.gtceu.mixer('tfg:diluted_sulf_acid')
 		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 2000), Fluid.of('minecraft:water'))
 		.outputFluids(Fluid.of('gtceu:diluted_sulfuric_acid', 3000))
 		.duration(30 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	// Ladder consistency
+	event.replaceOutput({ id: 'gtceu:assembler/ladder' }, 'minecraft:ladder', '8x minecraft:ladder')
+
+	event.recipes.gtceu.assembler('tfg:ladder_from_lumber')
+		.itemInputs('#tfc:lumber')
+		.itemOutputs('8x minecraft:ladder')
+		.circuit(7)
+		.duration(40)
+		.EUt(4)
+
+	// Pills
+	event.remove({ id: 'gtceu:canner/pack_paracetamol' })
+	event.remove({ id: 'gtceu:canner/pack_rad_away' })
+
+	event.recipes.gtceu.forming_press('tfg:pack_rad_away')
+		.itemInputs('16x #forge:dusts/rad_away')
+		.notConsumable('gtceu:pill_casting_mold')
+		.itemOutputs('tfg:rad_away_pill')
+		.duration(3 * 20)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.forming_press('gtceu:pack_paracetamol')
+		.itemInputs('16x #forge:dusts/paracetamol')
+		.notConsumable('gtceu:pill_casting_mold')
+		.itemOutputs('tfg:paracetamol_pill')
+		.duration(3 * 20)
+		.EUt(GTValues.VA[GTValues.LV])
 }

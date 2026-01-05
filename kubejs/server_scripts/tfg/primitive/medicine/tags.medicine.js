@@ -26,8 +26,8 @@ function registerTFGMedicineItemTags(event) {
 	event.add('tfg:medicine', 'tfg:luck_salvo')
 	event.add('tfg:medicine', 'tfg:resistance_salvo')
 	event.add('tfg:medicine', 'tfg:instant_health_salvo')
-	event.add('tfg:medicine', 'gtceu:paracetamol_pill')
-	event.add('tfg:medicine', 'gtceu:rad_away_pill')
+	event.add('tfg:medicine', 'tfg:paracetamol_pill')
+	event.add('tfg:medicine', 'tfg:rad_away_pill')
 
 	event.add('tfg:antipoison_ingredients', 'tfc:plant/blood_lily')
 	event.add('tfg:antipoison_ingredients', 'tfc:plant/pistia')

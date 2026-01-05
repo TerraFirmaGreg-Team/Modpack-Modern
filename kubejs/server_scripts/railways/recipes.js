@@ -319,7 +319,7 @@ const registerRailWaysRecipes = (event) => {
 	}).id('tfg:railways/shaped/smokestack_oilburner')
 
 	event.recipes.gtceu.assembler('tfg:railways/smokestack_oilburner')
-		.itemInputs('#forge:storage_blocks/charcoal', '6x #forge:plates/iron')
+		.itemInputs('#forge:storage_blocks/charcoal', '4x #forge:plates/iron')
 		.circuit(7)
 		.itemOutputs('railways:smokestack_oilburner')
 		.duration(200)

@@ -198,7 +198,7 @@ const registerTFGCrops = (event) => {
 		.type('spreading')
 		.soundType('crop')
 		.spreadingFruitBlock('betterend:cave_pumpkin')
-		.seeds('betterend:cave_pumpkin_seeds')
+		.seeds('betterend:cave_pumpkin_plant_seeds')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
 		.tagBlock('minecraft:mineable/hoe')
