@@ -368,6 +368,8 @@ const registerGTCEURecipes = (event) => {
 
 
 	event.replaceInput({ output: 'gtceu:nano_saber' }, 'gtceu:ruridit_plate', '#forge:plates/ostrum_iodide')
+	event.replaceOutput({ id: 'gtceu:canner/pack_paracetamol' }, 'gtceu:paracetamol_pill', 'tfg:paracetamol_pill')
+	event.replaceOutput({ id: 'gtceu:canner/pack_rad_away' }, 'gtceu:rad_away_pill', 'tfg:rad_away_pill')
 
 	// Intentionally long to encourage reuse instead of mindlessly creating and distilling
 	event.recipes.gtceu.mixer('tfg:diluted_hcl_acid')
@@ -376,11 +378,19 @@ const registerGTCEURecipes = (event) => {
 		.duration(30 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
-
 	event.recipes.gtceu.mixer('tfg:diluted_sulf_acid')
 		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 2000), Fluid.of('minecraft:water'))
 		.outputFluids(Fluid.of('gtceu:diluted_sulfuric_acid', 3000))
 		.duration(30 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	// Ladder consistency
+	event.replaceOutput({ id: 'gtceu:assembler/ladder' }, 'minecraft:ladder', '8x minecraft:ladder')
+
+	event.recipes.gtceu.assembler('tfg:ladder_from_lumber')
+		.itemInputs('#tfc:lumber')
+		.itemOutputs('8x minecraft:ladder')
+		.circuit(7)
+		.duration(40)
+		.EUt(4)
 }

@@ -23,6 +23,10 @@ build/
 !.pakku/**/*
 !pakku.jar
 
+# Docker
+/.github/docker/data
+/.github/docker/backups
+
 # Configs
 config/jei/world/
 config/gregtech/terminal/
@@ -62,9 +66,11 @@ defaultconfigs/ftbranks/players.snbt
 !bansoukou/**.zip
 
 
-/.bobby/
-/.mixin.out/
+/.bobby
+/.mixin.out
 /tacz/tacz_default_gun
+/tacz_backup
+/moonlight-global-datapacks
 /classOut
 /backups
 /profileImage
@@ -93,6 +99,9 @@ defaultconfigs/ftbranks/players.snbt
 /gtceu/prospection_cache
 /data
 /ESM
+/schematics
+/scripts
+/gtceu
 
 # Client data
 bansoukou
@@ -128,7 +137,3 @@ libEffekseerNativeForJava.so
 # .pakku/server-overrides/scripts
 # .pakku/server-overrides/mods
 # .pakku/server-overrides/user_jvm_args.txt
-
-
-
-

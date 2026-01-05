@@ -107,6 +107,21 @@ const registerAdAstraBlockTags = (event) => {
 			event.add('minecraft:logs_that_burn', wood.stripped_log)
 		}
 	})
+	const DECO_BLOCKS = [ 'iron', 'steel', 'desh', 'calorite', 'ostrum' ];
+	DECO_BLOCKS.forEach(block => {
+		event.add(`tfg:ad_astra_${block}_block`, `ad_astra:${block}_factory_block`)
+		event.add(`tfg:ad_astra_${block}_block`, `ad_astra:${block}_plating`)
+		event.add(`tfg:ad_astra_${block}_block`, `ad_astra:${block}_panel`)
+		event.add(`tfg:ad_astra_${block}_block`, `ad_astra:${block}_pillar`)
+		event.add(`tfg:ad_astra_${block}_block`, `ad_astra:${block}_plateblock`)
+		event.add(`tfg:ad_astra_${block}_block`, `ad_astra:encased_${block}_block`)
+	})
+
+		event.add('tfg:ad_astra_etrium_block', 'ad_astra:etrium_factory_block')
+		event.add('tfg:ad_astra_etrium_block', 'ad_astra:encased_etrium_block')
+		event.add('tfg:ad_astra_etrium_block', 'ad_astra:etrium_plateblock')
+		event.add('tfg:ad_astra_etrium_block', 'ad_astra:etrium_panel')
+		event.add('tfg:ad_astra_etrium_block', 'ad_astra:etrium_block')
 }
 
 const registerAdAstraBiomeTags = (event) => {

@@ -231,7 +231,11 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:thorium_plate",
     "gtceu:double_thorium_plate",
     "gtceu:thorium_rod",
-    "gtceu:thorium_bucket"
+    "gtceu:thorium_bucket",
+
+    // Replaced with our own
+    "gtceu:paracetamol_pill",
+    "gtceu:rad_away_pill"
 ]);
 //#endregion
 
