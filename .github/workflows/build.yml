@@ -327,19 +327,23 @@ jobs:
 
 
           sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" .github/docker/docker-compose.yml
           sed -i -e "s/DEV/${VERSION}/g" config/mod-director/modpack.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
-
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
-          sed -i -e "s/LOADER_VERSION/${LOADER_VERSION}/g" .pakku/multimc-overrides/mmc-pack.json
-          sed -i -e "s/LOADER_TYPE/${LOADER_TYPE}/g" .pakku/multimc-overrides/mmc-pack.json
-          sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/multimc-overrides/mmc-pack.json
+          sed -i -e "s/DEV/${VERSION}/g" .pakku/server-overrides/server.properties
 
+          
+          sed -i -e "s/LOADER_VERSION/${LOADER_VERSION}/g" .pakku/multimc-overrides/mmc-pack.json
           sed -i -e "s/LOADER_VERSION/${LOADER_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
+
+          sed -i -e "s/LOADER_TYPE/${LOADER_TYPE}/g" .pakku/multimc-overrides/mmc-pack.json
           sed -i -e "s/LOADER_TYPE/${LOADER_TYPE}/g" .pakku/server-overrides/forge-auto-install.txt
+
+          sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/multimc-overrides/mmc-pack.json
           sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
 
-      - name: 📝 Cache pakku
+      - name: 📝 Cache Pakku
         uses: actions/cache@v5.0.1
         id: cache
         with:
@@ -347,7 +351,7 @@ jobs:
           key: pakku-cache-${{ hashFiles('pakku-lock.json') }}
           restore-keys: pakku-cache-
 
-      - name: 📦 Export modpack
+      - name: 📦 Export Modpack
         run: |
           # curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           java -jar pakku.jar fetch
@@ -356,7 +360,7 @@ jobs:
           mkdir -p .pakku/multimc-overrides/flame
           mkdir -p .pakku/multimc-overrides/mods
 
-      - name: 📁 Preparing the artifact curseforge
+      - name: 📁 Preparing the artifact CurseForge
         run: |
           cd ./build/curseforge/
           mv *.zip $(basename -s .zip *.zip)-curseforge.zip
@@ -368,19 +372,19 @@ jobs:
           path: ./build/curseforge/${{ needs.info.outputs.project_full_name }}-curseforge.zip
           if-no-files-found: error
 
-      - name: 📁 Preparing the artifact modrinth
+      - name: 📁 Preparing the artifact Modrinth
         run: |
           cd ./build/modrinth/
           mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
 
-      - name: 🚀 Upload artifact modrinth
+      - name: 🚀 Upload artifact Modrinth
         uses: actions/upload-artifact@v6.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-modrinth
           path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
           if-no-files-found: warn
 
-      - name: 📁 Preparing the artifact multimc
+      - name: 📁 Preparing the artifact MultiMC
         run: |
           mkdir -p .pakku/multimc-overrides/flame
           mkdir -p .pakku/multimc-overrides/mods
@@ -397,23 +401,37 @@ jobs:
           cd ./build/multimc/
           zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
-      - name: 🚀 Upload artifact multimc
+      - name: 🚀 Upload artifact MultiMC
         uses: actions/upload-artifact@v6.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-multimc
           path: ./build/multimc/${{ needs.info.outputs.project_full_name }}-multimc.zip
           if-no-files-found: error
 
-      - name: 📁 Preparing the artifact server
+      - name: 📁 Preparing the artifact Server
         run: |
           cd ./build/serverpack/
           mv *.zip $(basename -s .zip *.zip)-serverpack.zip
 
-      - name: 🚀 Upload artifact server
+      - name: 🚀 Upload artifact Server
         uses: actions/upload-artifact@v6.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-serverpack
           path: ./build/serverpack/${{ needs.info.outputs.project_full_name }}-serverpack.zip
+          if-no-files-found: error
+
+      - name: 📁 Preparing the artifact Docker
+        run: |
+          mv -vf .pakku/docker-overrides ./build/docker
+
+          cd ./build/docker/
+          mv *.yml $(basename -s .yml *.yml)-docker.yml
+
+      - name: 🚀 Upload Docker Artifact
+        uses: actions/upload-artifact@v6.0.0
+        with:
+          name: ${{ needs.info.outputs.project_full_name }}-docker
+          path: ./.github/docker/${{ needs.info.outputs.project_full_name }}-docker.yml
           if-no-files-found: error
 
   release-github:
@@ -449,6 +467,9 @@ jobs:
           if [ ! -f ${{ needs.info.outputs.project_full_name }}-multimc.zip ]; then
             echo '::error::No value found for artifact `multimc.zip`.' && exit 1
           fi
+          if [ ! -f ${{ needs.info.outputs.project_full_name }}-docker.yml ]; then
+            echo '::error::No value found for artifact `docker.yml`.' && exit 1
+          fi
           echo "✔️ All artifacts found"
 
       - name: 📄 Format diff
@@ -476,6 +497,7 @@ jobs:
             ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
             ${{ needs.info.outputs.project_full_name }}-serverpack.zip
             ${{ needs.info.outputs.project_full_name }}-multimc.zip
+            ${{ needs.info.outputs.project_full_name }}-docker.yml
           prerelease: ${{ needs.info.outputs.release_type != 'release' }}
           generate_release_notes: true
           token: ${{ secrets.GITHUB_TOKEN }}
