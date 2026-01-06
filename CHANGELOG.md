@@ -2,8 +2,10 @@
 
 ## Unreleased
 ### Changes
+- The crucible now holds 4608mB (32 ingots) instead of 4032mB (28 ingots) (#2634) @Pyritie
 ### Bug fixes
 ### Translation updates
+- Chinese (simplified) @jmecn
 
 ## [0.11.16] - 05-01-2026
 ### Changes
