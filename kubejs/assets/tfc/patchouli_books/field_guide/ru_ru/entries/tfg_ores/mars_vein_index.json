@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Альмадин и Сапфиры$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Борнит и Куперит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Уголь и Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Золото, Электротин и Боксит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Уранит, Торий и Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Уранинит, Торий и Уранит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Кварцит, Асбест и Барит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Редстоун и Хром$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Соли и Сподумен$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Сфалерит и Гелена$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Трона, Тальк и Глаукониты$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит и Пирохлор$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит и Монацит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Висмут$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Альмадин и Сапфиры$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Борнит и Куперит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Уголь и Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Золото, Электротин и Боксит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Уранит, Торинит и Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Уранинит, Торинит и Уранит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Кварцит, Асбест и Барит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Редстоун и Хром$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Соли и Сподумен$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Сфалерит и Гелена$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Трона, Тальк и Глаукониты$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит и Пирохлор$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит и Монацит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Висмут$()$()",
       "type": "patchouli:text"
     },
     {
@@ -394,12 +394,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 41%$(br)$(thing)Хромит$(): Уран, Торий, Свинец$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
+      "text": "$(thing)Процент руды$(): 41%$(br)$(thing)Хромит$(): Уран, Торинит, Свинец$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Торий",
+      "name": "Торинит",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -414,7 +414,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 29%$(br)$(thing)Хромит$(): Торий$(br)$(thing)Формула$(): Th",
+      "text": "$(thing)Процент руды$(): 29%$(br)$(thing)Хромит$(): Торинит$(br)$(thing)Формула$(): Th",
       "type": "patchouli:multiblock"
     },
     {
@@ -461,12 +461,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 52%$(br)$(thing)Хромит$(): Уран, Торий, Свинец$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
+      "text": "$(thing)Процент руды$(): 52%$(br)$(thing)Хромит$(): Уран, Торинит, Свинец$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Торий",
+      "name": "Торинит",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -481,7 +481,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 26%$(br)$(thing)Хромит$(): Торий$(br)$(thing)Формула$(): Th",
+      "text": "$(thing)Процент руды$(): 26%$(br)$(thing)Хромит$(): Торинит$(br)$(thing)Формула$(): Th",
       "type": "patchouli:multiblock"
     },
     {

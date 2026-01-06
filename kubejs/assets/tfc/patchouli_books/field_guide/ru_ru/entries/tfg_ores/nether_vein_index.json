@@ -1182,7 +1182,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Торий",
+      "name": "Торинит",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -1197,7 +1197,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 0%$(br)$(thing)Хромит$(): Торий$(br)$(thing)Формула$(): Th",
+      "text": "$(thing)Процент руды$(): 0%$(br)$(thing)Хромит$(): Торинит$(br)$(thing)Формула$(): Th",
       "type": "patchouli:multiblock"
     },
     {
@@ -2503,7 +2503,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 62%$(br)$(thing)Хромит$(): Уран, Торий, Свинец$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
+      "text": "$(thing)Процент руды$(): 62%$(br)$(thing)Хромит$(): Уран, Торинит, Свинец$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Ядовит$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
