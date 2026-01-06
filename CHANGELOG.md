@@ -1,14 +1,20 @@
 # Changelog
 
 ## Unreleased
+### Breaking changes
+- The steam thermal centrifuge now requires a maintenance hatch. It also now requires 480mB steam per tick instead of 64mb, equivalent to how much 8 LV thermal centrifuges would use. It also now only takes 20 seconds instead of 30. It also now actually outputs byproducts like it was supposed to. @Pyritie
+- Single block steam generators are now more expensive to craft, so there isn't such a huge gap between steam, gas, and combustion generators @TomPlop
 ### Changes
 - The crucible now holds 4608mB (32 ingots) instead of 4032mB (28 ingots) (#2634) @Pyritie
-- Large gears can now be crafted in an anvil / mechanical press @Pyritie
+- Large gears can now be crafted in an anvil/mechanical press @Pyritie
+- Added tree index field guide entries for Earth and Mars (#2638) @Jeuvke
 ### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Water wheels now spin the correct direction in rivers (#2450) @zehmaria
 ### Translation updates
 - Chinese (simplified) @jmecn
+- Russian @Petr211071
+- Japanese @sakura-gondra
 
 ## [0.11.16] - 05-01-2026
 ### Changes
