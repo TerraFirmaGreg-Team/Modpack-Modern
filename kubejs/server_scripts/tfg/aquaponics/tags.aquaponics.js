@@ -25,14 +25,6 @@ const registerTFGAquaponicsItemTags = (event) => {
     event.add('firmalife:foods/raw_fish', 'tfg:fish_roe');
     event.add('minecraft:fishes', 'tfg:fish_roe');
 
-    const bait = Ingredient.of('#tfc:small_fishing_bait').itemIds.toArray().map(String);
-    const basic_fish_food = bait.filter(id => id !== 'tfg:flora_pellets');
-
-    basic_fish_food.forEach(item => {
-        event.add('tfg:basic_fish_food', item);
-    });
-
-    event.add('tfc:small_fishing_bait', 'tfg:flora_pellets');
     event.add('tfg:advanced_fish_food', 'tfg:flora_pellets');
 	event.add('create:blaze_burner_fuel/regular', "tfg:flora_pellets");
 };
