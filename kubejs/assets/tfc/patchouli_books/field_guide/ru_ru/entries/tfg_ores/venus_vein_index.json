@@ -9,7 +9,7 @@
     {
       "Type": "patchouli:text",
       "text": "Это $(thing)индекс жил$() на $(thing)Венере$(). Каждая жила содержит подробную информацию о своей редкости, плотности, типе жилы, высоте залегания, размерах, породах камня, в которых она генерируется, и многом другом.",
-      "title": "Venus Vein Index",
+      "title": "Индекс жил Венеры",
       "type": "patchouli:text"
     },
     {
@@ -20,7 +20,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)Редкость$(): 30$(br)$(thing)Плотность$(): 0.2$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): 40 — 65$(br)$(thing)Размер$(): 20$(br)$(thing)Высота$(): 6$(br)$(thing)Индикатор Max Depth$(): 30$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит, Травертин, Трахит$(br2)Only appears in the $(thing)Salt Flats$() biome.",
-      "title": "Salts & Spodumene",
+      "title": "Соли & Сподумен",
       "type": "patchouli:text",
       "anchor": "venus_manual_salt"
     },
