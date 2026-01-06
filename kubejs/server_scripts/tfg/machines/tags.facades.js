@@ -127,6 +127,7 @@ function registerTFGFacadeWhitelistItemTags(event) {
 		'gtceu:spatial_storage_hazard_sign_block',
 		'gtceu:turret_hazard_sign_block',
 		'gtceu:void_hazard_sign_block',
+		'gtceu:high_temperature_hazard_sign_block',
 		'gtceu:yellow_stripes_block_a',
 		'gtceu:yellow_stripes_block_b',
 		

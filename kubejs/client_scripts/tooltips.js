@@ -196,12 +196,6 @@ const registerTooltips = (event) => {
 		})
 	})
 
-	// Vessels
-	event.addAdvanced(['#tfc:fired_vessels'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.vessels'))
-
-	})
-
 	// Solar Panel
 	event.addAdvanced(['ad_astra:solar_panel'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.solar_panel.single'))
@@ -285,7 +279,10 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "10,000"))
 	})
 	event.addAdvanced(['tfc:crucible'], (item, advanced, text) => {
-		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "4,032"))
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "4,608"))
+	})
+	event.addAdvanced(['#tfc:fired_vessels'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "3,024"))
 	})
 	event.addAdvanced(['waterflasks:iron_flask', 'waterflasks:red_steel_flask'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "2,000"))
@@ -293,10 +290,10 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfc:wooden_bucket', 'firmalife:mixing_bowl'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "1,000"))
 	})
-	event.addAdvanced(['waterflasks:leather_flask'], (item, advanced, text) => {
+	event.addAdvanced(['waterflasks:leather_flask','tfc:silica_glass_bottle'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "500"))
 	})
-	event.addAdvanced(['tfc:hematitic_glass_bottle', 'tfc:silica_glass_bottle', 'tfc:volcanic_glass_bottle', 'tfc:olivine_glass_bottle'], (item, advanced, text) => {
+	event.addAdvanced(['tfc:hematitic_glass_bottle', 'tfc:volcanic_glass_bottle', 'tfc:olivine_glass_bottle'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "400"))
 	})
 	event.addAdvanced(['#tfc:lamps'], (item, advanced, text) => {

@@ -2,6 +2,9 @@
 "use strict";
 
 const NEW_MOB_MAX_HP = {
+	// earth mobs
+	"primitive_creatures:beast": 40,
+
 	// moon mobs
 	"endermanoverhaul:end_enderman": 50,
 	"endermanoverhaul:end_islands_enderman": 120,
@@ -164,7 +167,6 @@ EntityEvents.spawned((event) => {
 			entity.health += missingHealth;
 		}
 	}
-
 
 	let newArmor = NEW_MOB_ARMOR[type] ?? 0;
 	if (newArmor !== 0) {

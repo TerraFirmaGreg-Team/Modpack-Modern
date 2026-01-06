@@ -688,28 +688,10 @@ const registerFirmaLifeRecipes = (event) => {
 
 		event.recipes.firmalife.mixing_bowl()
 			.ingredients([
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-				`#tfc:sweetener`,
-				`#tfc:sweetener`],
-				Fluid.of('firmalife:yeast_starter', 400))
-			.outputItem(`8x firmalife:food/${grain}_dough`)
-			.id(`tfg:mixing_bowl/${grain}_dough_2`)
-
-		event.recipes.firmalife.mixing_bowl()
-			.ingredients([
 				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`)],
 				Fluid.of('minecraft:water', 100))
 			.outputItem(`4x tfc:food/${grain}_dough`)
 			.id(`tfg:mixing_bowl/${grain}_flatbread_dough`)
-
-		event.recipes.firmalife.mixing_bowl()
-			.ingredients([
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`)],
-				Fluid.of('minecraft:water', 200))
-			.outputItem(`8x tfc:food/${grain}_dough`)
-			.id(`tfg:mixing_bowl/${grain}_flatbread_dough_2`)
 	})
 
 	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`2x firmalife:food/hardtack_dough`).copyFood(), [
@@ -1018,24 +1000,31 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// #endregion
 
-	// #region How do I make yeast starter???
-
-	event.recipes.kubejs.shapeless(Item.of('4x firmalife:food/bacon').withName(Text.translate('tfg.emi.bacon_requirement')), [
-		'tfc:food/pork',
-		'#forge:tools/knives',
-		'tfc:powder/salt'
-	])
+	// Adds a tooltip to the bacon craft to tell people it needs to be smoked first,
+	// and adds traits that normally disappear on the craft
+		
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.isp.of(Item.of('4x firmalife:food/bacon')
+			.withName(Text.translate('tfg.emi.bacon_requirement')))
+			.addTrait("firmalife:smoked")
+			.addTrait("tfc:brined")
+			.addTrait("tfc:salted"), 
+		[
+			TFC.ingredient.notRotten(TFC.ingredient.hasTrait('tfc:food/pork', "firmalife:smoked")),
+			'#forge:tools/knives',
+			'tfc:powder/salt'
+		])
 		.modifyResult((craftingGrid, result) => {
 			result.resetHoverName();
 			return result;
 		})
 		.id('firmalife:crafting/bacon')
 
+	// Replacement for yeast starter recipe that uses a different, more descriptive tag
+
 	event.recipes.tfc.barrel_sealed(72000)
 		.inputFluid(Fluid.of('minecraft:water', 100))
 		.inputItem(TFC.ingredient.hasTrait(Ingredient.of('#tfg:dried_fruit'), "firmalife:dried"))
 		.outputFluid(Fluid.of('firmalife:yeast_starter', 100))
 		.id('firmalife:barrel/yeast_starter')
-
-	// #endregion
 }

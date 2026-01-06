@@ -2,6 +2,16 @@
 
 ## Unreleased
 ### Changes
+- The crucible now holds 4608mB (32 ingots) instead of 4032mB (28 ingots) (#2634) @Pyritie
+- Large gears can now be crafted in an anvil / mechanical press @Pyritie
+### Bug fixes
+- Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
+- Water wheels now spin the correct direction in rivers (#2450) @zehmaria
+### Translation updates
+- Chinese (simplified) @jmecn
+
+## [0.11.16] - 05-01-2026
+### Changes
 - Added new steam multiblocks for the alloy smelter, compressor, forge hammer, and thermal centrifuge @Pyritie
 - Reduced the Y level that ad astra considers "space" so rocket launches are faster @Pyritie
 - Reduced the amount of loot vases in the newer illages, and reduced how much loot you get from them @Pyritie
@@ -15,6 +25,16 @@
 - Added a way to get wax and latex in the steam age for those of you starting on mars @Pyritie
 - Changed the Rover's step height from 1 block to 1.2 blocks (about 4 extra 'pixels') @Pyritie
 - Fixed/improved behaviour of GregTech solar things on non-overworld dimensions, so rain in the overworld doesn't stop the solar array from working on the moon, and mars sandstorms affect solar things as well (#2140) @Pyritie
+- Added missing recipes for some Steam 'n' Rails items, and changed the smokestacks to use cast iron instead of black steel (#2610) @thederpysockdude123
+- Added missing recipes for new Hypertube redstone things (#2615) @Xtrial-01
+- Recolored diamond GregTech things to match the color of the vanilla diamond item @Pyritie
+- Buffed the HP of the Illager Beast @Pyritie
+- Added a thermochemically treated hardwood dust -> soaked unrefined paper recipe to the helve hammer (#2621) @Pyritie
+- Added Ad Astra's decorative blocks to Domum Ornamentum's whitelist (#2627) @thederpysockdude123
+#### Hazard changes
+- Added a new medical condition, Irradiated, caused by the Radioactive hazard which all radioactive things (including naquadria and neutronium) now have instead of Carcinogenic. It has the same symptoms/side effects as carcinogenic.
+- Paracetamol now cures carcinogenic, and Rad-Away cures both carcinogenic and irradiated. This is because you encounter carcinogenic hazards much sooner than radioactive ones, so the only cure for radioactive being way in HV didn't make much sense. In order to change the effects of these pills, we had to make new items, so any existing ones won't have these changes, sorry.
+- Weakly Poisonous is no longer permanent and heals over time like other conditions.
 ### Bug fixes
 - Fixed missing crafting table recipes for greate gearboxes (#2577) @Pyritie
 - Fixed crashing when attaching shafts to a steam engine (#2578, #2579) @Electrolyte220
@@ -23,13 +43,21 @@
 - Fixed not being able to use pickled eggs in sandwiches (#2551) @Pyritie
 - Fixed how much aluminium silicate you get from mica, pollucite, and spodumene to more accurately reflect how much aluminium they have @Pyritie
 - Fixed being able to put liquid metals into the new molds that didn't have a recipe @Pyritie
-- Added some grain nutrition to oatmeal @Pyritie
+- Added some grain nutrition to oatmeal (#2469) @Pyritie
 - Fixed hot-protection chestplates not fully protecting against GT hot ingots (#2598) @Pyritie
 - Fixed hermetic sandstone's appearance so it looks similar to TFC's raw sandstone @Pyritie
-- Fixed granite magma blocks not looking like granite @Pyritie
+- Fixed some issues with the food autostacking changes in a previous version (#2580) @Mqrius
+- Fixed a crash with meal ingredient stacking on servers @Mqrius
+- Fixed some translation inconsistencies in the field guide (#2606, #2607) @jmecn @Petr211071
+- Fixed incorrect fluid tooltips for the silica glass bottle and iron flask (#2608) @JeanRdSz @Pyritie
+- Removed some dough mixing bowl recipes that tried to output more than 5 ingredients because that's the mixing bowl's maximum (#2612) @Pyritie
+- Fixed missing heat definition for soybeans (#2603) @Pyritie
+- Fixed crafting bacon removing all the other food traits @Pyritie
+- Fixed lamps costing 4x as much glass when crafted in an assembler as opposed to elsewhere (#2613) @Inceitious 
+- Fixed some inconsistent ladder recipes (#2616) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
-- Russian @Petr211071
+- Russian @Petr211071 @AlexUnder
 
 ## [0.11.15] - 31-12-2025
 ### Bug fixes

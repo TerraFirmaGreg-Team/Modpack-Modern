@@ -934,7 +934,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Thorium",
+      "name": "Thorianite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -949,7 +949,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 0%$(br)$(thing)Source of$(): Thorium$(br)$(thing)Formula$(): Th",
+      "text": "$(thing)Percentage$(): 0%$(br)$(thing)Source of$(): Thorium$(br)$(thing)Formula$(): ThO₂",
       "type": "patchouli:multiblock"
     },
     {

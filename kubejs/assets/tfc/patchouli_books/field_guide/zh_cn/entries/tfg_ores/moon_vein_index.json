@@ -1215,7 +1215,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "钍矿",
+      "name": "方钍石",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -1230,7 +1230,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 0%$(br)$(thing)来源$(): 钍$(br)$(thing)化学式$(): Th",
+      "text": "$(thing)百分比$(): 0%$(br)$(thing)来源$(): 钍$(br)$(thing)化学式$(): ThO₂",
       "type": "patchouli:multiblock"
     },
     {

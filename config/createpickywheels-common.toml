@@ -17,6 +17,8 @@
 	#The maximum distance a waterwheel can consider fluid blocks from.
 	#Range: > 1
 	waterwheelRange = 2
+	#When enabled waterwheels require correct flow (like in TerraFirmaCraft's water river)
+	waterwheelsRequiresFlow = true
 
 ##Windmill requirements
 [windmills]

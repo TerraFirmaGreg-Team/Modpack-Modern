@@ -69,7 +69,7 @@ function registerTFGMarsRecipes(event) {
 		woodBuilder(event, wood.name, wood.lumber, wood.logs, wood.log, wood.stripped_log, wood.plank, wood.stair, wood.slab, wood.door, wood.trapdoor, wood.fence, wood.fence_gate, wood.support, wood.pressure_plate, wood.button)
 	})
 
-	event.shaped('16x ad_astra:aeronos_ladder', [
+	event.shaped('8x ad_astra:aeronos_ladder', [
 		'A A',
 		'ABA',
 		'A A'
@@ -78,7 +78,7 @@ function registerTFGMarsRecipes(event) {
 		B: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Wood, 1),
 	}).id('tfg:shaped/aeronos_ladder')
 
-	event.shaped('16x ad_astra:strophar_ladder', [
+	event.shaped('8x ad_astra:strophar_ladder', [
 		'A A',
 		'ABA',
 		'A A'

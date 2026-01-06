@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Hematita e Limonita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Lápis-lazúri, Lazurita e Sodalita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende, Thorium, & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorium, & Uraninite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartzite, Asbestos, & Barite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone & Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Salts & Spodumene$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Sphalerite & Galena$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Tetraedrita (Normal)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Tetraedrita (Superfície)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Trona, Talc, & Glauconite$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Hematita e Limonita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Lápis-lazúri, Lazurita e Sodalita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende & Thorianite, & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorianite, & Uraninite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartzite, Asbestos, & Barite$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone & Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Salts & Spodumene$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Sphalerite & Galena$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Tetraedrita (Normal)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Tetraedrita (Superfície)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Trona, Talc, & Glauconite$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1519,7 +1519,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)Raridade$(): 220$(br)$(thing)Densidade$(): 0.55$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Red Granite, Traquito",
-      "title": "Pitchblende, Thorium, & Hematite",
+      "title": "Pitchblende & Thorianite, & Hematite",
       "type": "patchouli:text",
       "anchor": "mars_pitchblende"
     },
@@ -1545,7 +1545,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Tório",
+      "name": "Torianita",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -1560,7 +1560,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 29%$(br)$(thing)Fonte de$(): Tório$(br)$(thing)Fórmula$(): Th",
+      "text": "$(thing)Porcentagem$(): 29%$(br)$(thing)Fonte de$(): Tório$(br)$(thing)Fórmula$(): ThO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1586,7 +1586,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)Raridade$(): 370$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -20 — 0$(br)$(thing)Tamanho$(): 60$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Dacito, Diorito, Folhelho, Gabro, Traquito",
-      "title": "Pitchblende, Thorium, & Uraninite",
+      "title": "Pitchblende, Thorianite, & Uraninite",
       "type": "patchouli:text",
       "anchor": "deep_mars_pitchblende"
     },
@@ -1612,7 +1612,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Tório",
+      "name": "Torianita",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -1627,7 +1627,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 26%$(br)$(thing)Fonte de$(): Tório$(br)$(thing)Fórmula$(): Th",
+      "text": "$(thing)Porcentagem$(): 26%$(br)$(thing)Fonte de$(): Tório$(br)$(thing)Fórmula$(): ThO₂",
       "type": "patchouli:multiblock"
     },
     {
