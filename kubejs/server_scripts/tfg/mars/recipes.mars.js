@@ -65,6 +65,18 @@ function registerTFGMarsRecipes(event) {
 		.heated()
 		.id('tfg:vacummizing/mars_water')
 
+	event.recipes.gtceu.fluid_heater('heat_mars_water_to_steam')
+		.inputFluids('tfg:semiheavy_ammoniacal_water 6')
+		.outputFluids('gtceu:steam 960')
+		.duration(30)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.fluid_heater('heat_semiheavy_water_to_steam')
+		.inputFluids('tfg:semiheavy_water 6')
+		.outputFluids('gtceu:steam 960')
+		.duration(30)
+		.EUt(GTValues.VA[GTValues.LV])
+
 	// Mars plants
 
 	event.recipes.gtceu.mixer('tfg:bio_glowstone')
