@@ -198,7 +198,8 @@
 			"type": "patchouli:spotlight",
 			"title": "Willow",
 			"item": "tag:tfc:willow_logs",
-			"text": "$(bold)Willow$()$(br)$(thing)Rainfall$(): 330 — 500mm$(br)$(thing)Temperature$(): -6.6 — 9.8°C$(br2)$(bold)Weeping Willow$()$(br)$(thing)Rainfall$(): 355 — 500mm$(br)$(thing)Temperature$(): 9.8 — 17.1°C"
+			"text": "$(bold)Corkscrew Willow$()$(br)$(thing)Rainfall$(): 330 — 500mm$(br)$(thing)Temperature$(): -6.6 — 9.8°C$(br2)$(bold)Weeping Willow$()$(br)$(thing)Rainfall$(): 355 — 500mm$(br)$(thing)Temperature$(): 9.8 — 17.1°C"
 		}
 	]
+
 }
