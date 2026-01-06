@@ -48,7 +48,7 @@ const registerAdAstraItemTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
 
-	event.add('c:hidden_from_recipe_viewers', 'ad_astra:alphacene_mushroom')
+	event.add('c:hidden_from_recipe_viewers', 'ad_astra:aeronos_mushroom')
 	event.add('c:hidden_from_recipe_viewers', 'ad_astra:strophar_mushroom')
 	
 	// Deco blocks
