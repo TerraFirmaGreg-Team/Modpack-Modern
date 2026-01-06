@@ -251,13 +251,12 @@ function registerImmersiveAircraftRecipes(event) {
 		createRecyclingRecipeArgs('tfg:black_steel_plated_airplane_propeller', [GTMaterials.BlackSteel], [createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 3)]))
 
 	event.shaped('tfg:redblu_steel_plated_airplane_propeller', [
-		'ABC',
+		'AB ',
 		'DED',
-		'CBF'
+		' BF'
 	], {
 		A: '#forge:tools/hammers',
 		B: 'gtceu:red_steel_plate',
-		C: 'gtceu:red_alloy_dust',
 		D: 'gtceu:blue_steel_plate',
 		E: '#forge:rotors',
 		F: '#forge:tools/wrenches'
@@ -266,10 +265,8 @@ function registerImmersiveAircraftRecipes(event) {
 	generateRecyclingRecipe('tfg:recycling/redblu_steel_plated_airplane_propeller',
 		createRecyclingRecipeArgs('tfg:redblu_steel_plated_airplane_propeller', [
 			GTMaterials.RedSteel,
-			GTMaterials.BlueSteel,
-			GTMaterials.RedAlloy
+			GTMaterials.BlueSteel
 		], [
-			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 1),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 1),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 1)
 		])
