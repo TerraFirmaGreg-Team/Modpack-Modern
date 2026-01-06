@@ -895,4 +895,54 @@ function registerGTCEuMachineRecipes(event) {
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VHA[GTValues.LV])
+
+	// Steam generators
+
+	event.remove({ id: 'gtceu:shaped/steam_turbine_lv' })
+	removeMaceratorRecipe(event, 'macerate_lv_steam_turbine')
+
+	event.recipes.gtceu.shaped('gtceu:lv_steam_turbine', [
+		'BAB',
+		'CDC',
+		'EFE'
+	], {
+		A: '#gtceu:circuits/lv',
+		B: '#forge:huge_fluid_pipes/steel',
+		C: '#forge:rotors/cobalt_brass',
+		D: 'gtceu:lv_machine_hull',
+		E: 'gtceu:lv_electric_motor',
+		F: '#forge:single_cables/tin'
+	}).addMaterialInfo().id('tfg:shaped/steam_turbine_lv')
+
+	event.remove({ id: 'gtceu:shaped/steam_turbine_mv' })
+	removeMaceratorRecipe(event, 'macerate_mv_steam_turbine')
+
+	event.recipes.gtceu.shaped('gtceu:mv_steam_turbine', [
+		'BAB',
+		'CDC',
+		'EFE'
+	], {
+		A: '#gtceu:circuits/mv',
+		B: '#forge:huge_fluid_pipes/aluminium',
+		C: '#forge:rotors/magnalium',
+		D: 'gtceu:mv_machine_hull',
+		E: 'gtceu:mv_electric_motor',
+		F: '#forge:single_cables/copper'
+	}).addMaterialInfo().id('tfg:shaped/steam_turbine_mv')
+
+	event.remove({ id: 'gtceu:shaped/steam_turbine_hv' })
+	removeMaceratorRecipe(event, 'macerate_hv_steam_turbine')
+
+	event.recipes.gtceu.shaped('gtceu:hv_steam_turbine', [
+		'BAB',
+		'CDC',
+		'EFE'
+	], {
+		A: '#gtceu:circuits/hv',
+		B: '#forge:huge_fluid_pipes/stainless_steel',
+		C: '#forge:rotors/vanadium_steel',
+		D: 'gtceu:hv_machine_hull',
+		E: 'gtceu:hv_electric_motor',
+		F: '#forge:single_cables/gold'
+	}).addMaterialInfo().id('tfg:shaped/steam_turbine_hv')
 }

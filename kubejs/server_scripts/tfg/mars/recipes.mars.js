@@ -45,13 +45,37 @@ function registerTFGMarsRecipes(event) {
 		.outputFluids(Fluid.of('tfg:semiheavy_water', 500))
 		.itemOutputs('2x #forge:tiny_dusts/ammonium_chloride')
 		.duration(20*9)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VHA[GTValues.ULV])
+
+	event.recipes.vintageimprovements.centrifugation([Fluid.of('tfg:semiheavy_water', 500), '2x #forge:tiny_dusts/ammonium_chloride'], Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
+		.processingTime(200 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi/centrifuge_mars_semiheavy_water')
 
 	event.recipes.gtceu.distillery('mars_semiheavy_water')
 		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
 		.outputFluids(Fluid.of('minecraft:water', 250))
 		.duration(20*5)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.vintageimprovements.vacuumizing(
+		[Fluid.of('minecraft:water', 250), Fluid.of('gtceu:ammonia', 250)],
+		Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
+		.secondaryFluidOutput(1)
+		.processingTime(300)
+		.heated()
+		.id('tfg:vacummizing/mars_water')
+
+	event.recipes.gtceu.fluid_heater('heat_mars_water_to_steam')
+		.inputFluids('tfg:semiheavy_ammoniacal_water 6')
+		.outputFluids('gtceu:steam 960')
+		.duration(30)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.fluid_heater('heat_semiheavy_water_to_steam')
+		.inputFluids('tfg:semiheavy_water 6')
+		.outputFluids('gtceu:steam 960')
+		.duration(30)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	// Mars plants
 
@@ -263,12 +287,4 @@ function registerTFGMarsRecipes(event) {
 		.processingTime(1000)
 		.heated()
 		.id('tfg:vacuumizing/mars_latex')
-
-	event.recipes.vintageimprovements.vacuumizing(
-		[Fluid.of('minecraft:water', 250), Fluid.of('gtceu:ammonia', 250)],
-		Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
-		.secondaryFluidOutput(1)
-		.processingTime(300)
-		.heated()
-		.id('tfg:vacummizing/mars_water')
 }

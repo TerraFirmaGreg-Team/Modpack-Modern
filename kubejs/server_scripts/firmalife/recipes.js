@@ -160,7 +160,7 @@ const registerFirmaLifeRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.category(GTRecipeCategories.INGOT_MOLDING)
 
-	event.recipes.gtceu.assembler('firmalife:cork')
+	event.recipes.gtceu.chemical_bath('firmalife:cork')
 		.itemInputs('firmalife:treated_lumber')
 		.inputFluids(Fluid.of('tfc:limewater', 1000))
 		.itemOutputs('8x firmalife:cork')

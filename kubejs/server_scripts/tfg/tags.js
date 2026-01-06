@@ -152,6 +152,13 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:any_drinkables', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:ingredients', 'tfg:semiheavy_ammoniacal_water')
 	event.add('minecraft:water', 'tfg:semiheavy_ammoniacal_water')
+	
+	event.add('tfc:any_water', 'tfg:semiheavy_water')
+	event.add('tfc:hydrating', 'tfg:semiheavy_water')
+	event.add('tfc:drinkables', 'tfg:semiheavy_water')
+	event.add('tfc:any_drinkables', 'tfg:semiheavy_water')
+	event.add('tfc:ingredients', 'tfg:semiheavy_water')
+	event.add('minecraft:water', 'tfg:semiheavy_water')
 
 	event.add('tfc:drinkables', 'tfg:proto_growth_medium')
 	event.add('tfc:any_drinkables', 'tfg:proto_growth_medium')

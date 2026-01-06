@@ -3973,27 +3973,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "createpickywheels-forge-1.20.1-6.0.6-2.jar",
+                    "file_name": "createpickywheels-forge-1.20.1-6.0.8-1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6932/328/createpickywheels-forge-1.20.1-6.0.6-2.jar",
-                    "id": "6932328",
+                    "url": "https://edge.forgecdn.net/files/7422/427/createpickywheels-forge-1.20.1-6.0.8-1.jar",
+                    "id": "7422427",
                     "parent_id": "866839",
                     "hashes": {
-                        "sha1": "698050b3f98b8fd9390b810741cf0eb08fee25ed",
-                        "md5": "b6a3882bd66d4f26b987c95305f11046"
+                        "sha1": "7e27a5376e3382c60823869f34087fcf43ac5514",
+                        "md5": "69ae2235b460d4136d8d10bc80d7e5cf"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 208401,
-                    "date_published": "2025-08-26T23:06:50.557Z"
+                    "size": 209163,
+                    "date_published": "2026-01-05T20:05:25.063Z"
                 }
             ]
         },
@@ -4909,7 +4909,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "domum_ornamentum-1.20.1-1.0.294-snapshot-universal.jar",
+                    "file_name": "domum_ornamentum-1.20.1-1.0.295-snapshot-universal.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4917,16 +4917,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7418/104/domum_ornamentum-1.20.1-1.0.294-snapshot-universal.jar",
-                    "id": "7418104",
+                    "url": "https://edge.forgecdn.net/files/7421/161/domum_ornamentum-1.20.1-1.0.295-snapshot-universal.jar",
+                    "id": "7421161",
                     "parent_id": "527361",
                     "hashes": {
-                        "sha1": "e93b78cd1c036730dfa355248a31c3fef3f812a5",
-                        "md5": "d48152d1459568771e9f40f262e0f424"
+                        "sha1": "f5fc47a7006445e4f999611d1cc95bda55c70b1f",
+                        "md5": "e85e022d42829065eb6f3d804abeb9d0"
                     },
                     "required_dependencies": [],
-                    "size": 1141311,
-                    "date_published": "2026-01-04T19:54:08.390Z"
+                    "size": 1141562,
+                    "date_published": "2026-01-05T14:36:53.033Z"
                 }
             ]
         },
@@ -7199,7 +7199,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "gtceu-1.20.1-7.4.0.jar",
+                    "file_name": "gtceu-1.20.1-7.4.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7207,20 +7207,20 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/7tG215v7/versions/Wt20eol8/gtceu-1.20.1-7.4.0.jar",
-                    "id": "Wt20eol8",
+                    "url": "https://cdn.modrinth.com/data/7tG215v7/versions/pJ2sF7rk/gtceu-1.20.1-7.4.1.jar",
+                    "id": "pJ2sF7rk",
                     "parent_id": "7tG215v7",
                     "hashes": {
-                        "sha512": "2e850a957f6f5cdb350f07cfea64906d6731a74ec7655263c4588dd7b16ee582d6479dbd73733ffcb5388df3cf4d60a91285d7fb065c9021c6e02a22c4c59cf1",
-                        "sha1": "19c638cb4913b0581da1e518771f41965f96932f"
+                        "sha512": "558246262657eaf0a50e141157fec63c5264c81da54d292ddc8e6a0681e8711cdcf13293420fe64982f7d56e5876da8043309299c69afa3eab743e957b3b7a51",
+                        "sha1": "50ae5df1cc5213aa429a976b6393e0bd4e22238e"
                     },
                     "required_dependencies": [],
-                    "size": 18054871,
-                    "date_published": "2025-11-25T20:33:56.058299Z"
+                    "size": 18064288,
+                    "date_published": "2026-01-06T09:56:51.537718Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "gtceu-1.20.1-7.4.0.jar",
+                    "file_name": "gtceu-1.20.1-7.4.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7228,16 +7228,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7262/157/gtceu-1.20.1-7.4.0.jar",
-                    "id": "7262157",
+                    "url": "https://edge.forgecdn.net/files/7424/649/gtceu-1.20.1-7.4.1.jar",
+                    "id": "7424649",
                     "parent_id": "890405",
                     "hashes": {
-                        "sha1": "19c638cb4913b0581da1e518771f41965f96932f",
-                        "md5": "a5e09409a38ef3ee43702b1aad20da9d"
+                        "sha1": "50ae5df1cc5213aa429a976b6393e0bd4e22238e",
+                        "md5": "3542378274c484966f416415f9a7ec6b"
                     },
                     "required_dependencies": [],
-                    "size": 18054871,
-                    "date_published": "2025-11-25T20:33:46.053Z"
+                    "size": 18064288,
+                    "date_published": "2026-01-06T09:56:46.180Z"
                 }
             ]
         },
