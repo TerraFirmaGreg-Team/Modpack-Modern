@@ -407,6 +407,11 @@ function registerTFCItemTags(event) {
     event.add('tfc:knives', 'tfc:stone/knife/metamorphic')
     event.add('tfc:knives', 'tfc:stone/knife/igneous_intrusive')
     event.add('tfc:knives', 'tfc:stone/knife/igneous_extrusive')
+
+    //greens and browns
+    event.remove('tfc:compost_browns_low', '#tfc:fallen_leaves')
+    event.add('tfc:compost_greens_low', '#tfc:fallen_leaves')
+    event.add('tfc:compost_greens_low', '#minecraft:leaves')
 }
 
 /** @param {TagEvent.Block} event */
