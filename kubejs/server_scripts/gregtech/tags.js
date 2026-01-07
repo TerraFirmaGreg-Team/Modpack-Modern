@@ -44,6 +44,9 @@ function registerGTCEUItemTags(event) {
     // @ts-expect-error According to KJS docs adding tags to tags is supported.
     event.add("gtceu:molds", "#gtceu:casting_molds", "#gtceu:extruder_molds", "gtceu:empty_mold");
 
+    //greens
+    event.add('tfc:compost_greens', 'gtceu:bio_chaff');
+    event.add('tfc:compost_greens', 'gtceu:plant_ball');
 }
 
 /** @param {TagEvent.Block} event  */
