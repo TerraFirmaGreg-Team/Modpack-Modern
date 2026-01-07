@@ -1,0 +1,102 @@
+
+#Text Engine Config
+[text]
+	#Allow text renderer to drop shadow, setting to false can improve performance.
+	allowShadow = true
+	#Fix resolution level at 2. When the GUI scale increases, the resolution level remains.
+	#Then GUI scale should be even numbers (2, 4, 6...), based on Minecraft GUI system.
+	#If your fonts are not bitmap fonts, then you should keep this setting false.
+	fixedResolution = false
+	#Control base font size, in GUI scaled pixels. The default and vanilla value is 8.
+	#For bitmap fonts, 8 represents a glyph size of 8x or 16x if fixed resolution.
+	#This option only applies to TrueType fonts.
+	#Range: 6.5 ~ 9.5
+	baseFontSize = 7.4
+	#Control vertical baseline for vanilla text layout, in GUI scaled pixels.
+	#The vanilla default value is 7.
+	#Range: 4.0 ~ 10.0
+	baselineShift = 7.0
+	#Control the text shadow offset for vanilla text rendering, in GUI scaled pixels.
+	#Range: 0.20000000298023224 ~ 2.0
+	shadowOffset = 0.5
+	#Control the text outline offset for vanilla text rendering, in GUI scaled pixels.
+	#Range: 0.20000000298023224 ~ 2.0
+	outlineOffset = 0.5
+	#Control the horizontal offset for bitmap fonts, in GUI scaled pixels.
+	#Range: 0.0 ~ 1.0
+	bitmapOffset = 0.5
+	#Set the recycle time of layout cache in seconds, using least recently used algorithm.
+	#Range: 2 ~ 15
+	cacheLifespan = 6
+	#The bidirectional text heuristic algorithm. The default is FirstStrong (Locale).
+	#This will affect which BiDi algorithm to use during text layout.
+	#Allowed Values: FIRST_STRONG, ANY_RTL, LTR, RTL, LOCALE, FIRST_STRONG_LTR, FIRST_STRONG_RTL
+	textDirection = "FIRST_STRONG"
+	#Whether to use Modern UI text rendering pipeline in 3D world.
+	#Disabling this means that SDF text and rendering optimization are no longer effective.
+	#But text rendering can be compatible with OptiFine Shaders and Iris Shaders.
+	#This does not affect text rendering in GUI.
+	#This option only applies to TrueType fonts.
+	useTextShadersInWorld = true
+	#For "minecraft:default" font, should we keep some glyph providers of them?
+	#Ignore All: Only use Modern UI typeface list.
+	#Keep ASCII: Include minecraft:font/ascii.png, minecraft:font/accented.png, minecraft:font/nonlatin_european.png
+	#Keep Other: Include providers other than ASCII and Unicode font.
+	#Keep All: Include all except Unicode font.
+	#Only Include: Only include providers that specified by defaultFontRuleSet.
+	#Only Exclude: Only exclude providers that specified by defaultFontRuleSet.
+	#Allowed Values: IGNORE_ALL, KEEP_ASCII, KEEP_OTHER, KEEP_ALL, ONLY_INCLUDE, ONLY_EXCLUDE
+	defaultFontBehavior = "KEEP_ALL"
+	#Used when defaultFontBehavior is either ONLY_INCLUDE or ONLY_EXCLUDE.
+	#This specifies a set of regular expressions to match the glyph provider name.
+	#For bitmap providers, this is the texture path without 'textures/'.
+	#For TTF providers, this is the TTF file path without 'font/'.
+	#For space providers, this is "font_name / minecraft:space",
+	#where font_name is font definition path without 'font/'.
+	defaultFontRuleSet = ["^minecraft:font\\/(nonlatin_european|accented|ascii|element_ideographs|cjk_punctuations|ellipsis|2em_dash)\\.png$", "^minecraft:include\\/space \\/ minecraft:space$", "^minecraft:font\\/(mcsans|emoji)_05_00\\d.png$", "minecraft:uniform"]
+	#Whether to use text component object as hash key to lookup in layout cache.
+	#If you find that Modern UI text rendering is not compatible with some mods,
+	#you can disable this option for compatibility, but this will decrease performance a bit.
+	#Modern UI will use another cache strategy if this is disabled.
+	useComponentCache = true
+	#Allow text layout to be computed from background threads (not cached).
+	#Otherwise, block the current thread and wait for main thread.
+	allowAsyncLayout = true
+	#See CSS line-break property, https://developer.mozilla.org/en-US/docs/Web/CSS/line-break
+	#Allowed Values: AUTO, LOOSE, NORMAL, STRICT
+	lineBreakStyle = "AUTO"
+	#Allowed Values: AUTO, PHRASE
+	lineBreakWordStyle = "AUTO"
+	#When enabled, Modern UI will compute texel density in device-space to determine whether to use SDF text or bilinear sampling.
+	#This feature requires GLSL 400 or has no effect.
+	#This generally decreases performance but provides better rendering quality.
+	#This option only applies to TrueType fonts. May not be compatible with OptiFine.
+	smartSDFShaders = true
+	#When rendering in 2D, this option allows Modern UI to exactly compute font size in device-space from the current coordinate transform matrix.
+	#This provides perfect text rendering for scaling-down texts in vanilla, but may increase GPU memory usage.
+	#When disabled, Modern UI will use SDF text rendering if appropriate.
+	#This option only applies to TrueType fonts.
+	computeDeviceFontSize = true
+	#When enabled, Modern UI will use SDF text rendering if appropriate.
+	#Otherwise, it uses nearest-neighbor or bilinear sampling based on texel density.
+	#This option only applies to TrueType fonts.
+	allowSDFTextIn2D = true
+	#When enabled, the outline of the experience level text will be tweaked.
+	tweakExperienceText = true
+	#Control the anti-aliasing of raw glyph rasterization.
+	antiAliasing = false
+	#When enabled, text layout uses fractional metrics with no font hinting.
+	#When disabled, text layout uses integer metrics with full font hinting.
+	#Disable if on low-res monitor; enable for linear text.
+	linearMetrics = false
+	#Control the minimum pixel density for SDF text and text in 3D world rendering.
+	#This value will be no less than current GUI scale.
+	#Recommend setting a higher value on high-res monitor and powerful PC hardware.
+	#Range: 4 ~ 10
+	minPixelDensityForSDF = 10
+	#Enable linear sampling for A8 font atlases with mipmaps, mag filter will be always
+	#NEAREST. We prefer computeDeviceFontSize and allowSDFTextIn2D, then setting this to
+	#false can improve performance. If either of the above two is false or Shaders are active,
+	#then setting this to true can improve readability.
+	linearSamplingA8Atlas = false
+
