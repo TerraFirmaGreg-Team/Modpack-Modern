@@ -1,12 +1,12 @@
 {
     "name": "火星蘑菇图鉴",
-    "category": "tfc:arborfirmacraft",
+    "category": "tfc:tfg_tips",
     "icon": "tfg:saplings/aeronos",
     "read_by_default": true,
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "这是火星上所有巨型蘑菇的列表及其适宜生长的气候条件。$(br2)正在寻找特定类型的蘑菇柄来装饰你的基地？这份列表应该能帮助你找到它。列表按蘑菇柄类型的字母顺序排列。$(br2)同时可查看$(l:tfc:arborfirmacraft/earth_tree_index)地球树木图鉴$()。"
+            "text": "这是火星上所有巨型蘑菇的列表及其适宜生长的气候条件。$(br2)正在寻找特定类型的菌柄来装饰你的基地？这份列表应该能帮助你找到它。列表按菌柄类型的字母顺序排列。$(br2)同时可查看$(l:tfc:arborfirmacraft/earth_tree_index)地球树木图鉴$()。"
         },
         {
             "type": "patchouli:spotlight",
