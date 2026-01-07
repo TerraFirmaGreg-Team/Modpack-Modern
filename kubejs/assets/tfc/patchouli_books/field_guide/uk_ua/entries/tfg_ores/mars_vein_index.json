@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Альмандин і Сапфір$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит і Пірохлор$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит і Монацит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Борніт і Куперит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Вісмут$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Вугілля і Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарнієрит і Кобальтит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит та Лімоніт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит та Лімоніт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Графіт і Діамант$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Золото, Електротин і Боксит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Каситерит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Кварцит, Азбест і Барит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Лапіс, Лазурит та Содаліт$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Альмандин і Сапфір$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит і Пірохлор$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит і Монацит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Борніт і Куперит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Вісмут$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Вугілля і Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарнієрит і Кобальтит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит та Лімоніт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит та Лімоніт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Графіт і Діамант$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_gold)Золото, Електротин і Боксит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Каситерит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Кварцит, Азбест і Барит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Лапіс, Лазурит та Содаліт$()$()",
       "type": "patchouli:text"
     },
     {
@@ -927,7 +927,7 @@
       "text": "$(thing)Рідкість$(): 230$(br)$(thing)Щільність$(): 0.4$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Розмір$(): 40$(br)$(thing)Індикатор Max Depth$(): 15$(br2)$(thing)Типи каменю$(): Аргиліт, Габро, Глинистий сланець, Граніт, Діорит, Крейда, Кременистий сланець",
       "title": "Золото, Електротин і Боксит",
       "type": "patchouli:text",
-      "anchor": "mars_sapphire"
+      "anchor": "mars_gold"
     },
     {
       "Type": "patchouli:multiblock",

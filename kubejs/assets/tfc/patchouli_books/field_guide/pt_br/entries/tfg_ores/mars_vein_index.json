@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandine & Sapphire$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Apatita e Pirocloro$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Bastnasita e Monazita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Bismuto$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornite & Cooperite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Cassiterita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Coal & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Cobre e Calcopirita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Esfalerita e Pirita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Esmeralda e Berílio$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Gold, Electrotine, & Bauxite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Grafite e Diamante$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Hematita e Limonita$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandine & Sapphire$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Apatita e Pirocloro$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Bastnasita e Monazita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Bismuto$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornite & Cooperite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Cassiterita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Coal & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Cobre e Calcopirita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Esfalerita e Pirita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Esmeralda e Berílio$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_gold)Gold, Electrotine, & Bauxite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Grafite e Diamante$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Hematita e Limonita$()$()",
       "type": "patchouli:text"
     },
     {
@@ -969,7 +969,7 @@
       "text": "$(thing)Raridade$(): 230$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilito, Cherte, Diorito, Folhelho, Gabro, Giz, Granito",
       "title": "Gold, Electrotine, & Bauxite",
       "type": "patchouli:text",
-      "anchor": "mars_sapphire"
+      "anchor": "mars_gold"
     },
     {
       "Type": "patchouli:multiblock",

@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandine & Sapphire$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Apatite & Pyrochlore$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Bastnasite & Monazite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Bismuth$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornite & Cooperite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Cassiterite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Coal & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Copper & Chalcopyrite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Emerald & Beryllium$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Garnierite & Cobaltite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sapphire)Gold, Electrotine, & Bauxite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Hematite & Limonite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Hematite & Limonite$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandine & Sapphire$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Apatite & Pyrochlore$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Bastnasite & Monazite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Bismuth$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornite & Cooperite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Cassiterite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Coal & Hematite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Copper & Chalcopyrite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Emerald & Beryllium$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Garnierite & Cobaltite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_gold)Gold, Electrotine, & Bauxite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Hematite & Limonite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Hematite & Limonite$()$()",
       "type": "patchouli:text"
     },
     {
@@ -877,7 +877,7 @@
       "text": "$(thing)Rarity$(): 230$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 15$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Diorite, Gabbro, Granite, Shale",
       "title": "Gold, Electrotine, & Bauxite",
       "type": "patchouli:text",
-      "anchor": "mars_sapphire"
+      "anchor": "mars_gold"
     },
     {
       "Type": "patchouli:multiblock",
