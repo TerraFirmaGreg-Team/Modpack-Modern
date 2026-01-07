@@ -29,6 +29,7 @@ function registerDomumOrnamentumBlockTags(event) {
         "#tfc:colored_polished_alabaster",
         "#tfc:mud_bricks",
         "#forge:sandstone",
+        "#railways:locometal",
         //rnr shingles
         "rnr:wood/shingles/teak",
         "rnr:wood/shingles/cypress",
