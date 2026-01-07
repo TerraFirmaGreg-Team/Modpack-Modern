@@ -1,0 +1,204 @@
+{
+    "name": "地球树木图鉴",
+    "category": "tfc:arborfirmacraft",
+    "icon": "afc:wood/sapling/flame_of_the_forest",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "这是世界上所有树木的列表及其适宜生长的气候条件。$(br2)正在寻找特定木材来装饰你的基地？这份列表应该能帮你找到它。列表按木材类型的字母顺序排列。$(br2)同时可查看$(l:tfc:tfg_tips/mars_tree_index)火星蘑菇图鉴$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "金合欢，阿拉伯胶树",
+            "item": "tag:tfc:acacia_logs",
+            "text": "$(bold)伞状金合欢$()$(br)$(thing)降雨量$(): 90 — 275毫米$(br)$(thing)温度$(): 13.4 — 40°C$(br2)$(bold)夏威夷金合欢$()$(br)$(thing)降雨量$(): 350 — 500毫米$(br)$(thing)温度$(): 15.3 — 24.4°C$(br2)$(bold)阿拉伯胶树$()$(br)$(thing)降雨量$(): 90 — 275毫米$(br)$(thing)温度$(): 11.6 — 40°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "黑梣",
+            "item": "tag:tfc:ash_logs",
+            "text": "$(bold)黑梣$()$(br)$(thing)降雨量$(): 60 — 240毫米$(br)$(thing)温度$(): -13.9 — 0.7°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "山杨，杨树",
+            "item": "tag:tfc:aspen_logs",
+            "text": "$(bold)山杨$()$(br)$(thing)降雨量$(): 350 — 500毫米$(br)$(thing)温度$(): -15.7 — -1.1°C$(br2)$(bold)杨树$()$(br)$(thing)降雨量$(): 170 — 310毫米$(br)$(thing)温度$(): -15.7 — -6.6°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "猴面包树",
+            "item": "tag:afc:baobab_logs",
+            "text": "$(bold)猴面包树$()$(br)$(thing)降雨量$(): 30 — 190毫米$(br)$(thing)温度$(): 15.3 — 26.2°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "白桦树",
+            "item": "tag:tfc:birch_logs",
+            "text": "$(bold)桦树$()$(br)$(thing)降雨量$(): 125 — 310毫米$(br)$(thing)温度$(): -13.9 — 2.5°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "黑檀树",
+            "item": "tag:tfc:blackwood_logs",
+            "text": "$(bold)黑黄檀$()$(br)$(thing)降雨量$(): 85 — 285毫米$(br)$(thing)温度$(): 13.4 — 22.5°C$(br2)$(bold)穆尔加黑檀$()$(br)$(thing)降雨量$(): 35 — 150毫米$(br)$(thing)温度$(): 9.8 — 20.7°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "白雪松树",
+            "item": "tag:tfc:white_cedar_logs",
+            "text": "$(bold)白雪松$()$(br)$(thing)降雨量$(): 100 — 220毫米$(br)$(thing)温度$(): -13.9 — 4.3°C$(br2)$(bold)大西洋雪松$()$(br)$(thing)降雨量$(): 165 — 500毫米$(br)$(thing)温度$(): 8.0 — 13.4°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "栗树",
+            "item": "tag:tfc:chestnut_logs",
+            "text": "$(bold)栗树$()$(br)$(thing)降雨量$(): 150 — 300毫米$(br)$(thing)温度$(): -6.6 — 11.6°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "柏树，红雪松",
+            "item": "tag:afc:cypress_logs",
+            "text": "$(bold)细柏$()$(br)$(thing)降雨量$(): 100 — 260毫米$(br)$(thing)温度$(): 2.5 — 15.3°C$(br2)$(bold)秃柏$()$(br)$(thing)降雨量$(): 360 — 500毫米$(br)$(thing)温度$(): -1.1 — 15.3°C$(br2)$(bold)垂柏$()$(br)$(thing)降雨量$(): 290 — 415毫米$(br)$(thing)温度$(): -8.4 — 4.3°C"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)红雪松$()$(br)$(thing)降雨量$(): 410 — 500毫米$(br)$(thing)温度$(): -4.8 — 9.8°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "(彩虹)桉树",
+            "item": "tag:afc:eucalyptus_logs",
+            "text": "$(bold)蓝桉$()$(br)$(thing)降雨量$(): 170 — 325毫米$(br)$(thing)温度$(): 8.0 — 18.9°C$(br2)$(bold)山楸树$()$(br)$(thing)降雨量$(): 390 — 500毫米$(br)$(thing)温度$(): 9.8 — 18.9°C$(br2)$(bold)彩虹桉$()$(br)$(thing)降雨量$(): 300 — 450毫米$(br)$(thing)温度$(): 15.3 — 24.4°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "无花果树，橡胶无花果树",
+            "item": "tag:afc:fig_logs",
+            "text": "$(bold)无花果树$()$(br)$(thing)降雨量$(): 340 — 500毫米$(br)$(thing)温度$(): 18.9 — 26.2°C$(br2)$(bold)橡胶无花果树$()$(br)$(thing)降雨量$(): 290 — 400毫米$(br)$(thing)温度$(): 9.8 — 20.7°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "冷杉",
+            "item": "tag:tfc:douglas_fir_logs",
+            "text": "$(bold)道格拉斯冷杉$()$(br)$(thing)降雨量$(): 305 — 500毫米$(br)$(thing)温度$(): -10.3 — 6.1°C$(br2)$(bold)山冷杉$()$(br)$(thing)降雨量$(): 220 — 345毫米$(br)$(thing)温度$(): -1.1 — 11.6°C$(br2)$(bold)香脂冷杉$()$(br)$(thing)降雨量$(): 210 — 500毫米$(br)$(thing)温度$(): -13.9 — -1.1°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "三叶胶树",
+            "item": "tag:afc:hevea_logs",
+            "text": "$(bold)三叶胶树$()$(br)$(thing)降雨量$(): 390 — 500毫米$(br)$(thing)温度$(): 17.1 — 26.2°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "山核桃树",
+            "item": "tag:tfc:hickory_logs",
+            "text": "$(bold)苦味山核桃$()$(br)$(thing)降雨量$(): 210 — 400毫米$(br)$(thing)温度$(): -6.6 — 11.6°C$(br2)$(bold)矮山核桃$()$(br)$(thing)降雨量$(): 400 — 475毫米$(br)$(thing)温度$(): 11.6 — 17.1°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "重蚁树",
+            "item": "tag:afc:ipe_logs",
+            "text": "$(bold)黄重蚁木$()$(br)$(thing)降雨量$(): 340 — 500毫米$(br)$(thing)温度$(): 11.6 — 20.7°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "铁木",
+            "item": "tag:afc:ironwood_logs",
+            "text": "$(bold)王铁木$()$(br)$(thing)降雨量$(): 320 — 430毫米$(br)$(thing)温度$(): 20.7 — 40.0°C$(br2)$(bold)莱邦博铁木$()$(br)$(thing)降雨量$(): 150 — 230毫米$(br)$(thing)温度$(): 20.7 — 40.0°C$(br2)$(bold)马尾铁木$()$(br)$(thing)降雨量$(): 340 — 500毫米$(br)$(thing)温度$(): 9.8 — 20.7°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "木棉树",
+            "item": "tag:tfc:kapok_logs",
+            "text": "$(bold)木棉树$()$(br)$(thing)降雨量$(): 360 — 500毫米$(br)$(thing)温度$(): 13.4 — 24.4°C$(br2)$(bold)红丝木棉$()$(br)$(thing)降雨量$(): 250 — 350毫米$(br)$(thing)温度$(): 20.7 — 40.0°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "桃花心树",
+            "item": "tag:afc:mahogany_logs",
+            "text": "$(bold)桃花心树$()$(br)$(thing)降雨量$(): 300 — 430毫米$(br)$(thing)温度$(): 15.3 — 26.2°C$(br2)$(bold)小叶桃花心树$()$(br)$(thing)降雨量$(): 320 — 500毫米$(br)$(thing)温度$(): 11.6 — 18.9°C$(br2)$(bold)沙比利桃花心树$()$(br)$(thing)降雨量$(): 330 — 500毫米$(br)$(thing)温度$(): 13.4 — 26.2°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "红树林",
+            "item": "tag:tfc:mangrove_logs",
+            "text": "$(bold)红树林$()$(br)$(thing)降雨量$(): 220毫米以上$(br)$(thing)温度$(): 18.0°C以上$(br)注：仅在盐沼生物群系生成"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "枫树",
+            "item": "tag:tfc:maple_logs",
+            "text": "$(bold)糖枫$()$(br)$(thing)降雨量$(): 260 — 360毫米$(br)$(thing)温度$(): -8.4 — 8.0°C$(br2)$(bold)大叶枫$()$(br)$(thing)降雨量$(): 405 — 500毫米$(br)$(thing)温度$(): -4.8 — 11.6°C$(br2)$(bold)凋叶枫$()$(br)$(thing)降雨量$(): 240 — 320毫米$(br)$(thing)温度$(): 0.7 — 4.3°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "橡树，深色橡树",
+            "item": "tag:tfc:oak_logs",
+            "text": "$(bold)橡树$()$(br)$(thing)降雨量$(): 210 — 320毫米$(br)$(thing)温度$(): -8.4 — 6.1°C$(br2)$(bold)槲树$()$(br)$(thing)降雨量$(): 390 — 500毫米$(br)$(thing)温度$(): 0.7 — 13.4°C$(br2)$(bold)深色橡树$()$(br)$(thing)降雨量$(): 150 — 330毫米$(br)$(thing)温度$(): 11.6 — 20.7°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "棕榈树",
+            "item": "tag:tfc:palm_logs",
+            "text": "$(bold)棕榈树$()$(br)$(thing)降雨量$(): 0 — 250毫米$(br)$(thing)温度$(): 17.1 — 40.0°C$(br2)$(bold)象牙棕榈$()$(br)$(thing)降雨量$(): 400 — 500毫米$(br)$(thing)温度$(): 20.7 — 26.2°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "松树",
+            "item": "tag:tfc:pine_logs",
+            "text": "$(bold)北方松$()$(br)$(thing)降雨量$(): 60 — 270毫米$(br)$(thing)温度$(): -19.4 — -3.0°C$(br2)$(bold)石松$()$(br)$(thing)降雨量$(): 140 — 290毫米$(br)$(thing)温度$(): 2.5 — 18.9°C$(br2)$(bold)红松$()$(br)$(thing)降雨量$(): 185 — 320毫米$(br)$(thing)温度$(): -8.4 — 4.3°C"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)北美落叶松$()$(br)$(thing)降雨量$(): 150 — 500毫米$(br)$(thing)温度$(): -17.5 — -1.1°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "蔷薇树",
+            "item": "tag:tfc:rosewood_logs",
+            "text": "$(bold)印度蔷薇树$()$(br)$(thing)降雨量$(): 245 — 360毫米$(br)$(thing)温度$(): 15.3 — 24.4°C$(br2)$(bold)紫檀木$()$(br)$(thing)降雨量$(): 340 — 440毫米$(br)$(thing)温度$(): 15.3 — 22.5°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "红杉",
+            "item": "tag:tfc:sequoia_logs",
+            "text": "$(bold)红杉$()$(br)$(thing)降雨量$(): 320 — 500毫米$(br)$(thing)温度$(): 0.7 — 8.0°C$(br2)$(bold)海岸红木$()$(br)$(thing)降雨量$(): 320 — 500毫米$(br)$(thing)温度$(): 4.3 — 9.8°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "云杉",
+            "item": "tag:tfc:spruce_logs",
+            "text": "$(bold)蓝云杉$()$(br)$(thing)降雨量$(): 330 — 500毫米$(br)$(thing)温度$(): -19.4 — 2.5°C$(br2)$(bold)西海岸云杉$()$(br)$(thing)降雨量$(): 320 — 390毫米$(br)$(thing)温度$(): -12.1 — 6.1°C$(br2)$(bold)西堤卡云杉$()$(br)$(thing)降雨量$(): 370 — 500毫米$(br)$(thing)温度$(): 2.5 — 8.0°C"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)黑云杉$()$(br)$(thing)降雨量$(): 220 — 360毫米$(br)$(thing)温度$(): -17.5 — -1.1°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "悬铃木",
+            "item": "tag:tfc:sycamore_logs",
+            "text": "$(bold)悬铃木$()$(br)$(thing)降雨量$(): 330 — 480毫米$(br)$(thing)温度$(): -6.6 — 11.6°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "柚树",
+            "item": "tag:afc:teak_logs",
+            "text": "$(bold)柚树$()$(br)$(thing)降雨量$(): 215 — 330毫米$(br)$(thing)温度$(): 13.4 — 26.2°C$(br2)$(bold)伊罗科木$()$(br)$(thing)降雨量$(): 210 — 320毫米$(br)$(thing)温度$(): 17.1 — 40.0°C$(br2)$(bold)凤凰花木$()$(br)$(thing)降雨量$(): 340 — 500毫米$(br)$(thing)温度$(): 13.4 — 24.4°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "大甘巴豆树",
+            "item": "tag:afc:tualang_logs",
+            "text": "$(bold)大甘巴豆木$()$(br)$(thing)降雨量$(): 360 — 500毫米$(br)$(thing)温度$(): 20.7 — 40.0°C"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "柳树",
+            "item": "tag:tfc:willow_logs",
+            "text": "$(bold)曲柳$()$(br)$(thing)降雨量$(): 330 — 500毫米$(br)$(thing)温度$(): -6.6 — 9.8°C$(br2)$(bold)垂柳$()$(br)$(thing)降雨量$(): 355 — 500毫米$(br)$(thing)温度$(): 9.8 — 17.1°C"
+        }
+    ]
+}
