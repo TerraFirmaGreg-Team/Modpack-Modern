@@ -1,47 +1,47 @@
 {
-	"name": "Processing Latex",
+	"name": "Производство резины",
 	"category": "tfc:arborfirmacraft",
 	"icon": "gtceu:sticky_resin",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "So you've gotten some $(thing)latex$() by tapping specific tropical trees... congratulations! Latex by itself doesn't do much, but by processing it we can get some very useful byproducts!$(br2)If you haven't yet found any trees that produce latex, you can look at the $(l:arborfirmacraft/tapping_index)Tapping Index$() entry for more information!"
+			"text": "Итак, ты добыл немного $(thing)Латекса$(), добывая его из определённых тропических деревьев… поздравляем! Сам по себе латекс почти ни на что не годится, но при его переработке можно получить очень полезные побочные продукты!$(br2)Если ты ещё не нашёл деревья, которые производят латекс, загляни в запись $(l:arborfirmacraft/tapping_index)Индекс подсочки$() — там есть больше информации!"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sticky_resin",
-			"title": "A sticky substance",
+			"title": "Липкое вещество",
 			"link_recipe": true,
-			"text": "One of the ways $(thing)Latex$() can be used is in the production of $(item)Sticky Resin$(). Sticky resin needs to be produced by treating latex in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$() with some $(thing)Wood Ash$() to coagulate it."
+			"text": "Один из способов использования $(thing)Латекса$() — это производство $(item)Липкой смолы$(). Липкую смолу нужно получать, обрабатывая латекс в $(l:firmalife/oven_appliances#vat)чане$() или $(l:mechanics/pot)Горшке$() с добавлением $(thing)Древесной золы$(), чтобы он свернулся."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Sticky Business",
+			"title": "Липкие дела",
 			"item": "gtceu:resin_circuit_board,gtceu:resistor,gtceu:basic_tape",
-			"text": "$(thing)Sticky Resin$() has a number of uses, thanks to it being well... sticky. It can be used to create multiple items such as $(item)Tape$() which will let you move crates around without dropping what's inside, but more importantly, it can be used to create $(item)Resin Circuit Boards$() and $(item)Resistors$(), which will be some of your first electrical components."
+			"text": "$(thing)Липкая смола$() имеет множество применений благодаря тому, что она, ну… липкая. Её можно использовать для создания различных предметов, например $(item)Ленты$(), которая позволит тебе перемещать ящики, не роняя предметы из них. Но что ещё важнее — из неё можно делать $(item)Прорезиненные подложки$() и $(item)Резисторы$(), которые станут одними из твоих первых электрических компонентов."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:vulcanized_latex_bucket",
-			"title": "I am rubber...",
-			"text": "The other main use of $(thing)Latex$() is to make rubber. To make the latex stronger and harder for industrial uses, it needs to be heated (either in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$()) with added $(thing)Sulfur Powder$() to produce $(thing)Vulcanized Latex$(). In fact, this whole process is called vulcanization!"
+			"title": "Я резина...",
+			"text": "Другое основное применение $(thing)Латекса$() — это производство резины. Чтобы сделать латекс более прочным и твёрдым для промышленных нужд, его нужно нагреть (либо в $(l:firmalife/oven_appliances#vat)Чане$(), либо в $(l:mechanics/pot)Горшке$()) с добавлением $(thing)Порошка серы$(), чтобы получить $(thing)Вулканизированный латекс$(). Собственно, весь этот процесс и называется вулканизацией!"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Extraction",
+			"title": "Извлечение",
 			"item": "gtceu:raw_rubber_dust",
-			"text": "Using a $(thing)Extractor$() or $(thing)Vacuum Chamber$(), the $(thing)Vulcanized Latex$() can be dried into $(item)Raw Rubber Pulp$(). This pulp needs to be further treated with $(thing)Sulfur Dust$() in an $(thing)Alloy Smelter$() to create $(thing)Rubber Ingots$()."
+			"text": "Используя $(thing)Экстрактор$() или $(thing)Вакуумную камеру$(), ты можешь высушить $(thing)Вулканизированный латекс$() и получить $(item)пыль Необработанной резины$(). Эту пыль затем нужно дополнительно обработать $(thing)пылью Серы$() в $(thing)Печи для сплавов$(), чтобы создать $(thing)слитки Резины$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_ingot",
-			"text": "$(thing)Rubber Ingots$() have a number of very useful applications, such as for crafting $(thing)Belts$() for your factories or for $(bold)insulating$() $(thing)electrical wires$(). Insulated wires become safe to touch without accidentally electrocuting yourself, and have reduced voltage loss."
+			"text": "$(thing)Слитки резины$() имеют множество очень полезных применений — например, для создания $(thing)Ремней$() для твоих заводов или для $(bold)изоляции$() $(thing)электрических проводов$(). Изолированные провода станут безопасными, так что ты не ударишься током по неосторожности, а также у них снижаются потери напряжения."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Conifer Pitch",
+			"title": "Хвойная смола",
 			"item": "tfg:conifer_pitch_bucket",
-			"text": "Sticky Resin can also be obtained via $(thing)Conifer Pitch$() tapped from certain $(thing)Coniferous Trees$(), but these trees cannot be used for Rubber."
+			"text": "Липкая смола также может быть получена с помощью $(thing)Хвойной смолы$() произведенной определёнными $(thing)Смолистыми деревевьями$(), но эти деревья нельзя использовать для производства резины."
 		}
 	],
 	"read_by_default": true,
