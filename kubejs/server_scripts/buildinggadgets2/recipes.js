@@ -29,11 +29,11 @@ const registerBuildingGadgetsRecipes = (event) => {
 
 	// Copy Paste Gadget
 	event.recipes.gtceu.assembler('buildinggadgets2:/assembler/gadget_copy_paste')
-		.itemInputs('1x gtceu:iv_emitter','2x gtceu:iv_fluid_regulator','6x #forge:plates/tungsten_steel', '2x gtceu:iv_robot_arm', '1x gtceu:computer_monitor_cover', '1x gtceu:lapotron_crystal', '1x ae2:spatial_storage_cell_2')
+		.itemInputs('1x gtceu:ev_emitter','2x gtceu:ev_fluid_regulator','6x #forge:plates/titanium', '2x gtceu:ev_robot_arm', '1x gtceu:computer_monitor_cover', '1x #gtceu:batteries/ev', '1x ae2:spatial_storage_cell_2', '3x #forge:double_plates/ostrum')
 		.circuit(4)
 		.itemOutputs('buildinggadgets2:gadget_copy_paste')
 		.duration(160)
-		.EUt(8100)
+		.EUt(1925)
 		.addMaterialInfo(true)
 
 	// Dustruction Gadget
@@ -47,11 +47,19 @@ const registerBuildingGadgetsRecipes = (event) => {
 
 	// Cut Paste Gadget
 	event.recipes.gtceu.assembler('buildinggadgets2:/assembler/gadget_cut_paste')
-		.itemInputs('1x gtceu:iv_sensor','2x gtceu:iv_fluid_regulator','6x #forge:plates/tungsten_steel', '2x gtceu:iv_robot_arm', '1x gtceu:computer_monitor_cover', '1x gtceu:energy_crystal', '1x ae2:inverter_card')
+		.itemInputs('1x gtceu:ev_sensor','2x gtceu:ev_fluid_regulator','6x #forge:plates/titanium', '2x gtceu:ev_robot_arm', '1x gtceu:computer_monitor_cover', '1x #gtceu:batteries/ev', '1x ae2:inverter_card', '1x species:kinetic_core')
 		.circuit(4)
 		.itemOutputs('buildinggadgets2:gadget_cut_paste')
 		.duration(160)
-		.EUt(8100)
+		.EUt(1925)
+		.addMaterialInfo(true)
+
+		event.recipes.gtceu.assembler('buildinggadgets2:/assembler/gadget_cut_paste_iv_circuits')
+		.itemInputs('1x gtceu:ev_sensor','2x gtceu:ev_fluid_regulator','6x #forge:plates/titanium', '2x gtceu:ev_robot_arm', '1x gtceu:computer_monitor_cover', '1x #gtceu:batteries/ev', '1x ae2:inverter_card', '2x #gtceu:circuits/iv')
+		.circuit(4)
+		.itemOutputs('buildinggadgets2:gadget_cut_paste')
+		.duration(160)
+		.EUt(1925)
 		.addMaterialInfo(true)
 
 	// Template Manager

@@ -335,6 +335,7 @@ function registerTFGMarsBiomeTags(event) {
 
 	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_dunes')
 	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_deep_desert')
+	event.remove('sandworm_mod:can_spawn_sandworms', 'minecraft:desert')
 
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_dunes')
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_deep_desert')
