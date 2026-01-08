@@ -12,8 +12,9 @@ services:
       GUI: "false"
       MEMORY: 8G
 
-      TYPE: CUSTOM
-      CUSTOM_SERVER: ./minecraft_server.jar
+      TYPE: LOADER_TYPE
+      VERSION: MINECRAFT_VERSION
+      FORGE_VERSION: LOADER_VERSION
       SKIP_GENERIC_PACK_UPDATE_CHECK: "true"
       OVERRIDE_SERVER_PROPERTIES: "false"
 
