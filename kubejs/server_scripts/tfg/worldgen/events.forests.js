@@ -80,7 +80,7 @@ TFCEvents.worldgenData(event => {
 			climate.fuzzy(true)
 		},
 		'ad_astra:aeronos_stem',
-		'ad_astra:aeronos_cap',
+		'tfg:aeronos_cap',
 		null,
 		null,
 		[
@@ -103,7 +103,7 @@ TFCEvents.worldgenData(event => {
 			climate.fuzzy(true)
 		},
 		'ad_astra:strophar_stem',
-		'ad_astra:strophar_cap',
+		'tfg:strophar_cap',
 		null,
 		null,
 		[

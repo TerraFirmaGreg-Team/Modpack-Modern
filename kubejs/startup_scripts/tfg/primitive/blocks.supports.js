@@ -34,7 +34,7 @@ function registerTFGSupportBlocks(event) {
 		.soundType('wood')
 		.hardness(2)
 		.resistance(2)
-		.mapColor('color_white')
+		.mapColor('terracotta_purple')
 		.tagBlock('minecraft:mineable/axe')
 		.requiresTool(false)
 

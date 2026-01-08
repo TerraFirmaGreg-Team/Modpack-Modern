@@ -50,7 +50,11 @@
           "beneath:wood/leaves/crimson",
           "beneath:wood/leaves/warped",
           "ad_astra:aeronos_cap",
-          "ad_astra:strophar_cap"
+          "ad_astra:strophar_cap",
+          "tfg:crimson_wart_block",
+          "tfg:warped_wart_block",
+          "tfg:aeronos_cap",
+          "tfg:strophar_cap"
         ],
         "blacklist": []
       },
