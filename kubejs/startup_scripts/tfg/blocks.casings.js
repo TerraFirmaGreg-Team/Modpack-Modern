@@ -24,8 +24,8 @@ function registerTFGCasingBlocks(event) {
 		.tagBoth('tfg:casings')
 		.mapColor('color_light_gray')
 
-    event.create('tfg:casings/machine_casing_vacuum_engine_intake', 'gtceu:active')
-        .simple('tfg:block/casings/machine_casing_vacuum_engine_intake')
+	event.create('tfg:casings/machine_casing_vacuum_engine_intake', 'gtceu:active')
+		.model('tfg:block/casings/machine_casing_vacuum_engine_intake')
         .translationKey('block.tfg.casings.machine_casing_vacuum_engine_intake')
         .soundType('metal')
         .resistance(6).hardness(5)
@@ -239,7 +239,7 @@ function registerTFGCasingBlocks(event) {
 	const greenhouse_tiers = ['treated_wood', 'copper', 'iron', 'stainless'];
 
 	greenhouse_tiers.forEach(tier => {
-		for (let i = 0; i <= 3; i++) {
+		for (let i = 0; i <= 4; i++) {
 
 			let r = event.create(`tfg:casings/greenhouse/${tier}_greenhouse_casing_${i}`)
 				.translationKey(`block.tfg.casings.greenhouse.${tier}_greenhouse_casing_${i}`)
@@ -270,7 +270,7 @@ function registerTFGCasingBlocks(event) {
 				r.tagBlock('minecraft:mineable/pickaxe')
 			};
 
-			if (i === 3) {
+			if (i > 2) {
 				r.defaultTranslucent()
 			} else {
 				r.defaultCutout()
