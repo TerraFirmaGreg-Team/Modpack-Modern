@@ -1,0 +1,34 @@
+{
+	"name": "Tapping Trees",
+	"category": "tfc:arborfirmacraft",
+	"icon": "afc:tree_tap",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Some types of trees can be tapped for useful fluids. These trees can either produce sugary saps which can be concentrated into syrup and used as a sweetener, Latex which can be processed into rubber, or Pitch which can be processed into rosin, a wax substitute."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Tapping a Maple Tree",
+            "images": [
+            	"afc:textures/gui/book/maple_tapping.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Three things are required to tap a tree: the tree itself, a tree tap, which must forged from a Copper Ingot and placed in the middle of a trunk at least three blocks tall, and a barrel, which must be placed directly below the tap facing upward. If the conditions are right, your barrel will immediately begin to fill with sap."
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/tree_tapping/tapping_kapok.png"],
+            "text": "A valid tapping configuration used to extract Latex from Kapok",
+            "border": true
+        }	
+	],
+	"read_by_default": true,
+	"sortnum": 1,
+    "extra_recipe_mappings": {
+      "afc:tree_tap": 0
+    }
+}

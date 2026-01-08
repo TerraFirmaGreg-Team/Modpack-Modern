@@ -1,0 +1,142 @@
+{
+	"name": "Tapping Index",
+	"category": "tfc:arborfirmacraft",
+	"icon": "afc:wood/sapling/weeping_maple",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "This is a list of every tappable tree in the world, sorted alphabetically.$(br)$(thing)Climate Data$() will tell you what Temperature and Rainfall the tree can appear in, while $(thing)Tapping Data$() will tell you details regarding production, flowrate, and whether the tree produces only in Spring."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(l:arborfirmacraft/tapping_index#maple)$(li)Maple$()$(l:arborfirmacraft/tapping_index#birch)$(li)Birch$()$(l:arborfirmacraft/tapping_index#hevea)$(li)Hevea$()$(l:arborfirmacraft/tapping_index#rubber_fig)$(li)Rubber Fig$()$(l:arborfirmacraft/tapping_index#kapok)$(li)Kapok$()$(l:arborfirmacraft/tapping_index#aspen)$(li)Aspen$()$(l:arborfirmacraft/tapping_index#spruce)$(li)Spruce$()$(l:arborfirmacraft/tapping_index#white_cedar)$(li)White Cedar$()$(l:arborfirmacraft/tapping_index#douglas_fir)$(li)Douglas Fir$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "maple",
+			"title": "Maple",
+			"item": "tfc:wood/log/maple,tfc:wood/wood/maple,tfc:wood/leaves/maple,tfc:wood/sapling/maple",
+			"link_recipe": false,
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -8.4°C$(br)$(thing)Maximum Temperature$(): 8°C$(br)$(thing)Minimum Rainfall$(): 240$(br)$(thing)Maximum Rainfall$(): 470$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -15°C$(br)$(thing)Max Temp for Production$(): 5°C$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 5mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/maple_tree.png" ],
+			"text": "$(thing)Produces$(): Maple Sap$(br)$(thing)Processes Into$(): Maple Sugar",
+			"border": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "birch",
+			"title": "Birch",
+			"item": "tfc:wood/log/birch,tfc:wood/wood/birch,tfc:wood/leaves/birch,tfc:wood/sapling/birch",
+			"link_recipe": false,
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -12.1°C$(br)$(thing)Maximum Temperature$(): 6.1°C$(br)$(thing)Minimum Rainfall$(): 125$(br)$(thing)Maximum Rainfall$(): 310$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -15°C$(br)$(thing)Max Temp for Production$(): 5°C$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 5mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/birch_tree.png" ],
+			"text": "$(thing)Produces$(): Birch Sap$(br)$(thing)Processes Into$(): Birch Sugar",
+			"border": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "hevea",
+			"title": "Hevea",
+			"item": "afc:wood/log/hevea,afc:wood/wood/hevea,afc:wood/leaves/hevea,afc:wood/sapling/hevea",
+			"link_recipe": false,
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): 17.1°C$(br)$(thing)Maximum Temperature$(): 26.2°C$(br)$(thing)Minimum Rainfall$(): 390$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): 8°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 3mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/hevea_tree.png" ],
+			"text": "$(thing)Produces$(): Latex$(br)$(thing)Processes Into$(): Sticky Resin & Rubber",
+			"border": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "rubber_fig",
+			"title": "Rubber Fig",
+			"item": "afc:wood/log/rubber_fig,afc:wood/wood/rubber_fig,afc:wood/leaves/rubber_fig,afc:wood/sapling/rubber_fig",
+			"link_recipe": false,
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): 9.8°C$(br)$(thing)Maximum Temperature$(): 20.7°C$(br)$(thing)Minimum Rainfall$(): 290$(br)$(thing)Maximum Rainfall$(): 400$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): 4°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 2mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/rubber_fig_tree.png" ],
+			"text": "$(thing)Produces$(): Latex$(br)$(thing)Processes Into$(): Sticky Resin & Rubber",
+			"border": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "kapok",
+			"title": "Kapok",
+			"item": "tfc:wood/log/kapok,tfc:wood/wood/kapok,tfc:wood/leaves/kapok,tfc:wood/sapling/kapok",
+			"link_recipe": false,
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): 17.1°C$(br)$(thing)Maximum Temperature$(): 38°C$(br)$(thing)Minimum Rainfall$(): 320$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): 12°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 4mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/kapok_tree.png" ],
+			"text": "$(thing)Produces$(): Latex$(br)$(thing)Processes Into$(): Sticky Resin & Rubber",
+			"border": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "aspen",
+			"title": "Aspen",
+			"item": "tfc:wood/log/aspen,tfc:wood/wood/aspen,tfc:wood/leaves/aspen,tfc:wood/sapling/aspen",
+			"link_recipe": false,
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -15.7°C$(br)$(thing)Maximum Temperature$(): -1.1°C$(br)$(thing)Minimum Rainfall$(): 350$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -10°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 2mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/aspen_tree.png" ],
+			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
+			"border": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "spruce",
+			"title": "Spruce",
+			"item": "tfc:wood/log/spruce,tfc:wood/wood/spruce,tfc:wood/leaves/spruce,tfc:wood/sapling/spruce",
+			"link_recipe": false,
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -17.5°C$(br)$(thing)Maximum Temperature$(): -6.6°C$(br)$(thing)Minimum Rainfall$(): 220$(br)$(thing)Maximum Rainfall$(): 470$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -10°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 4mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/spruce_tree.png" ],
+			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
+			"border": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "white_cedar",
+			"title": "White Cedar",
+			"item": "tfc:wood/log/white_cedar,tfc:wood/wood/white_cedar,tfc:wood/leaves/white_cedar,tfc:wood/sapling/white_cedar",
+			"link_recipe": false,
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -15.7°C$(br)$(thing)Maximum Temperature$(): 0.7°C$(br)$(thing)Minimum Rainfall$(): 100$(br)$(thing)Maximum Rainfall$(): 285$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -8°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 3mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/white_cedar_tree.png" ],
+			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
+			"border": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "douglas_fir",
+			"title": "Douglas Fir",
+			"item": "tfc:wood/log/douglas_fir,tfc:wood/wood/douglas_fir,tfc:wood/leaves/douglas_fir,tfc:wood/sapling/douglas_fir",
+			"link_recipe": false,
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -15.7°C$(br)$(thing)Maximum Temperature$(): 6.1°C$(br)$(thing)Minimum Rainfall$(): 305$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -8°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 2mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/douglas_fir_tree.png" ],
+			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
+			"border": true
+		}
+	]
+}
