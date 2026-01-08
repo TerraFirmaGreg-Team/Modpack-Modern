@@ -123,7 +123,7 @@ function registerTFGWorldGenTrees(event) {
 	// Mars leaves
 
 	event.create('tfg:crimson_wart_block', 'tfc:leaves')
-		.soundType('azalea_leaves')
+		.soundType('shroomlight')
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagBlock('tfg:solid_leaves')
@@ -134,7 +134,7 @@ function registerTFGWorldGenTrees(event) {
 		.fallenLeaves(null)
 
 	event.create('tfg:warped_wart_block', 'tfc:leaves')
-		.soundType('azalea_leaves')
+		.soundType('shroomlight')
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagBlock('tfg:solid_leaves')
@@ -145,7 +145,7 @@ function registerTFGWorldGenTrees(event) {
 		.fallenLeaves(null)
 
 	event.create('tfg:aeronos_cap', 'tfc:leaves')
-		.soundType('azalea_leaves')
+		.soundType('shroomlight')
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagBlock('tfg:solid_leaves')
@@ -156,7 +156,7 @@ function registerTFGWorldGenTrees(event) {
 		.fallenLeaves(null)
 
 	event.create('tfg:strophar_cap', 'tfc:leaves')
-		.soundType('azalea_leaves')
+		.soundType('shroomlight')
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagBlock('tfg:solid_leaves')
