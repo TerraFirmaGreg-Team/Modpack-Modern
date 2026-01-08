@@ -418,5 +418,5 @@ const registerGTCEURecipes = (event) => {
 		.duration(8 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.INGOT_MOLDING)
-		.addMaterialInfo(true);
+		.addMaterialInfo();
 }
