@@ -1,48 +1,90 @@
 "use strict";
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//#region Balancing Values
+
+/** Base duration of recipes in ticks. */
+const base_duration = 20 * 60 * 20;
+/** Duration multiplier for fertilized recipes. */
+const duration_multiplier_fertilized = 0.5;
+/** Duration multiplier for aquaponic recipes. */
+const duration_multiplier_aquaponic = 0.25;
+
+/** Hydroponic facility chance multiplier. */
+const hydroponics_facility_chance_multiplier = 1.25;
+/** Base percent chance for chanced outputs (out of 100). */
+const chanced_output_base = 7.5;
+/** Fertilized percent chance for chanced outputs (out of 100). */
+const chanced_output_fertilized = 40;
+/** Aquaponics percent chance for chanced outputs (out of 100). */
+const chanced_output_aquaponic = 80;
+
+/**
+ * Dimension setting index provides recipe modifications based on the dimension assigned.
+ *
+ * @typedef {Object} DimensionIndex
+ * @property {Internal.Dimension} id - Dimension ID.
+ * @property {Internal.FluidStackIngredient_} fluid - Fluid ID or tag.
+ * @property {number} fluid_chance - Chance for fluid consumption per tick out of 100.
+ * @property {Internal.ItemStack|null} fertilizer - Fertilizer item ID or null if fertilizer is not needed on that dimension.
+ * @property {GTValues.EUt} eut - EUt value for that dimension.
+ * @property {boolean|null} oxygenated - Whether the recipe requires an oxygenated environment.
+ */
+
+/** @param {...DimensionIndex[]} - Dimension settings array */
+const dimension_index = [
+	// Overworld settings are also used as the default when no dimension is specified.
+	{id: 'minecraft:overworld', fluid: '#tfg:clean_water', fluid_tier2: 'tfg:nitrate_rich_water', fluid_chance: 10, fertilizer: 'gtceu:fertilizer', eut: GTValues.VA[GTValues.LV], oxygenated: true},
+	{id: 'minecraft:the_nether', fluid: '#tfg:clean_water', fluid_tier2: 'tfg:nitrate_rich_water', fluid_chance: 10, fertilizer: 'gtceu:fertilizer', eut: GTValues.VA[GTValues.LV], oxygenated: true},
+	{id: 'ad_astra:moon', fluid: 'gtceu:helium_3', fluid_tier2: null, fluid_chance: 2, fertilizer: null, eut: GTValues.VA[GTValues.MV], oxygenated: null},
+	{id: 'ad_astra:mars', fluid: 'tfg:semiheavy_ammoniacal_water', fluid_tier2: 'tfg:nitrate_rich_semiheavy_ammoniacal_water', fluid_chance: 10, fertilizer: 'gtceu:fertilizer', eut: GTValues.VA[GTValues.HV], oxygenated: null}
+];
+
+//#endregion
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //#region Utility Script
 /**
  * Function for generating greenhouse recipes.
  *
  * @param {*} event
- * @param {string|null} dimension -Dimension ID
- * @param {string} input -Input Item (seeds, saplings, etc.)
- * @param {string|string[]} output -Output Items. If array, first item is guaranteed while rest use chanced output. Last item in array is used for the rest of the chance outputs.
+ * @param {Internal.Dimension|null} dimension -Dimension ID
+ * @param {Internal.ItemStack} input -Input Item (seeds, saplings, etc.)
+ * @param {Internal.ItemStack|Internal.ItemStack[]} output -Output Items. If array, first item is guaranteed while rest use chanced output. Last item in array is used for the rest of the chance outputs.
  * @param {number|null} chance_multiplier -Multiplies output chances by this value. Defaults to 1.
  */
 function generateGreenHouseRecipe(event, dimension, input, output, chance_multiplier) {
 
-	/**
-	 * Dimension setting index provides recipe modifications based on the dimension assigned.
-	 *
-	 * @typedef {Object} DimensionIndex
-	 * @property {string} id - Dimension ID.
-	 * @property {string} fluid - Fluid ID or tag.
-	 * @property {number} fluid_chance - Chance for fluid consumption per tick out of 100.
-	 * @property {string|null} fertilizer - Fertilizer item ID or null if fertilizer is not needed on that dimension.
-	 * @property {GTValues.EUt} eut - EUt value for that dimension.
-	 * @property {boolean|null} oxygenated - Whether the recipe requires an oxygenated environment.
-	 */
-
-	/** @type {DimensionIndex[]} - Dimension settings array */
-	const dimension_index = [
-		// Overworld settings are also used as the default when no dimension is specified.
-		{id: 'minecraft:overworld', fluid: '#tfg:clean_water', fluid_chance: 10, fertilizer: 'gtceu:fertilizer', eut: GTValues.VA[GTValues.LV], oxygenated: true},
-		{id: 'minecraft:the_nether', fluid: '#tfg:clean_water', fluid_chance: 10, fertilizer: 'gtceu:fertilizer', eut: GTValues.VA[GTValues.LV], oxygenated: true},
-		{id: 'ad_astra:moon', fluid: 'gtceu:helium_3', fluid_chance: 2, fertilizer: null, eut: GTValues.VA[GTValues.MV], oxygenated: null},
-		{id: 'ad_astra:mars', fluid: 'tfg:semiheavy_ammoniacal_water', fluid_chance: 10, fertilizer: 'gtceu:fertilizer', eut: GTValues.VA[GTValues.HV], oxygenated: null}
-	];
-
 	// Resolve dimension based modifier defaults by comparing to the `dimension_index` array.
+
+	/** @type {DimensionIndex|null} */
 	const dimMods = dimension ? dimension_index.find(d => d.id === dimension) : null;
+
+	/** @type {Internal.FluidStackIngredient_} - Resolved fluid ID or tag. Defaults to `#tfg:clean_water` */
 	const resolvedFluid = dimMods?.fluid ?? '#tfg:clean_water';
+
+	/** @type {Internal.FluidStackIngredient_} - Resolved aquaponic loop fluid ID or tag. Defaults to `tfg:nitrate_rich_water` */
+	const resolvedFluidTier2 = dimMods?.fluid_tier2 ?? 'tfg:nitrate_rich_water';
+
+	/** @type {Internal.ItemStack|null} - Resolved fertilizer item ID. Defaults to `gtceu:fertilizer` */
 	const resolvedFertilizer = dimMods ? dimMods.fertilizer : 'gtceu:fertilizer';
+
+	/** @type {boolean} - Whether fertilization is possible for this dimension. */
 	const canFertilize = resolvedFertilizer !== null;
+
+	/** @type {GTValues.EUt} - Resolved EUt value. Defaults to LV */
 	const resolvedEUt = dimMods ? dimMods.eut : GTValues.VA[GTValues.LV];
+
+	/** @type {number} - Resolved fluid chance multiplied by 100. Defaults to 1000. */
 	const resolvedChance = dimMods ? (dimMods.fluid_chance * 100) : 1000;
+
+	/** @type {boolean|null} - Whether the recipe requires an oxygenated environment. Defaults to true. */
 	const requiresOxygen = dimMods ? dimMods.oxygenated : true;
 
-	// Collect errors.
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	/** Collect errors. */
+
 	const errors = [];
 
 	if (input === undefined || Array.isArray(input)) {
@@ -60,7 +102,10 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 		throw new TypeError(`Greenhouse recipe errors for recipe ID ${`tfg:greenhouse/${input.toString().replace(/[/:\s]/g, "_")}`}\n - ${errors.join("\n - ")}`);
 	};
 
+	////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	// Normalize outputs to an array of 4 items.
+
 	// index 0 is guaranteed output, indexes 1-3 are chanced outputs.
 	// Last item in output array is used for any missing chanced outputs.
 	let outputs_array = [];
@@ -70,14 +115,52 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 		if (i === 0) outputs_array[i] = guaranteed_output;
 		else outputs_array[i] = (output[i] !== undefined) ? output[i] : last_output;
 	};
-	// Calculate chances.
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Math Section :D
+
+	/**
+	 * Function to keep calculated duration values above 0 (minimum 1 tick).
+	 * 
+	 * @param {number} value - Number to validate.
+	 * @returns {number} - Validated Number.
+	 */
+	function validate_duration(value) {
+		return Math.max(1, Math.round(value));
+	};
+
+	const fertilizer_duration = validate_duration(base_duration * duration_multiplier_fertilized);
+	const aquaponic_duration = validate_duration(base_duration * duration_multiplier_aquaponic);
+
+	/**
+	 * Function to keep percent values within valid range (1 to 10000).
+	 * 
+	 * @param {number} value - Number to validate.
+	 * @returns {number} - Validated Number.
+	 */
+	function validate_percent(value) {
+		return Math.min(10000, Math.max(1, Math.round(value)));
+	};
+
 	chance_multiplier = chance_multiplier ?? 1;
-	chance_multiplier = chance_multiplier * 1000;
-	const base_chance = Math.min(10000, Math.max(1, Math.round(0.75 * chance_multiplier)));
-	const fertilizer_chance = Math.min(10000, Math.max(1, Math.round(4 * chance_multiplier)));
+	chance_multiplier = chance_multiplier * 100;
+	const base_chance = validate_percent(chanced_output_base * chance_multiplier);
+	const fertilizer_chance = validate_percent(chanced_output_fertilized * chance_multiplier);
+	const aquaponic_chance = validate_percent(chanced_output_aquaponic * chance_multiplier);
+	const hydroponics_base_chance = validate_percent(chanced_output_base * chance_multiplier);
+	const hydroponics_fertilizer_chance = validate_percent(chanced_output_fertilized * chance_multiplier * hydroponics_facility_chance_multiplier);
+	const hydroponics_aquaponic_chance = validate_percent(chanced_output_aquaponic * chance_multiplier * hydroponics_facility_chance_multiplier);
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
-	// Recipe scripts
+	// Recipe Scripts.
+
 	if (canFertilize) {
+
+		//======================== Greenhouse Recipes ========================
+
+		// Base recipe.
 		let a = event.recipes.gtceu.greenhouse(`tfg:${input.toString().replace(/[/:\s]/g, "_")}`)
 			.notConsumable(input)
 			.circuit(1)
@@ -85,7 +168,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			.perTick(true)
 			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
 			.perTick(false)
-			.duration(20 * 60 * 20)
+			.duration(base_duration)
 			.EUt(resolvedEUt)
 		if (dimension !== null) {
 			a.dimension(dimension)
@@ -99,6 +182,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			a.chancedOutput(outputs_array[3], base_chance, 0)
 		};
 
+		// Fertilized Recipe.
 		let b = event.recipes.gtceu.greenhouse(`tfg:${input.toString().replace(/[/:\s]/g, "_")}_fertilized`)
 			.notConsumable(input)
 			.circuit(2)
@@ -106,7 +190,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			.perTick(true)
 			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
 			.perTick(false)
-			.duration(10 * 60 * 20)
+			.duration(fertilizer_duration)
 			.EUt(resolvedEUt)
 		if (dimension !== null) {
 			b.dimension(dimension)
@@ -120,8 +204,94 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			b.chancedOutput(outputs_array[3], fertilizer_chance, 0)
 			b.itemInputs(Item.of(resolvedFertilizer, 8))
 		};
-	// Base recipe boosted if no fertilization needed.
+
+		// Aquaponics Recipe.
+		let c = event.recipes.gtceu.greenhouse(`tfg:${input.toString().replace(/[/:\s]/g, "_")}_aquaponic`)
+			.notConsumable(input)
+			.circuit(3)
+			.itemOutputs(outputs_array[0], 'tfg:flora_pellets')
+			.perTick(true)
+			.chancedFluidInput(`${resolvedFluidTier2} 1`, resolvedChance, 0)
+			.perTick(false)
+			.duration(aquaponic_duration)
+			.EUt(resolvedEUt)
+		if (dimension !== null) {
+			c.dimension(dimension)
+		};
+		if (requiresOxygen !== null) {
+			TFGRecipeSchemaBindings.isOxygenated(c, requiresOxygen)
+		};
+		if (outputs_array[1] !== null) {
+			c.chancedOutput(outputs_array[1], aquaponic_chance, 0)
+			c.chancedOutput(outputs_array[2], aquaponic_chance, 0)
+			c.chancedOutput(outputs_array[3], aquaponic_chance, 0)
+		};
+
+		//======================== Hydroponic Facility Recipes ========================
+
+		// Base recipe.
+		let d = event.recipes.gtceu.hydroponics_facility(`tfg:${input.toString().replace(/[/:\s]/g, "_")}`)
+			.notConsumable(input)
+			.circuit(1)
+			.itemOutputs(outputs_array[0])
+			.perTick(true)
+			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
+			.perTick(false)
+			.duration(base_duration)
+			.EUt(resolvedEUt)
+		if (dimension !== null) {
+			d.dimension(dimension)
+		};
+		if (outputs_array[1] !== null) {
+			d.chancedOutput(outputs_array[1], hydroponics_base_chance, 0)
+			d.chancedOutput(outputs_array[2], hydroponics_base_chance, 0)
+			d.chancedOutput(outputs_array[3], hydroponics_base_chance, 0)
+		};
+
+		// Fertilized Recipe.
+		let e = event.recipes.gtceu.hydroponics_facility(`tfg:${input.toString().replace(/[/:\s]/g, "_")}_fertilized`)
+			.notConsumable(input)
+			.circuit(2)
+			.itemOutputs(outputs_array[0])
+			.perTick(true)
+			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
+			.perTick(false)
+			.duration(fertilizer_duration)
+			.EUt(resolvedEUt)
+		if (dimension !== null) {
+			e.dimension(dimension)
+		};
+		if (outputs_array[1] !== null) {
+			e.chancedOutput(outputs_array[1], hydroponics_fertilizer_chance, 0)
+			e.chancedOutput(outputs_array[2], hydroponics_fertilizer_chance, 0)
+			e.chancedOutput(outputs_array[3], hydroponics_fertilizer_chance, 0)
+			e.itemInputs(Item.of(resolvedFertilizer, 8))
+		};
+
+		// Aquaponics Recipe.
+		let f = event.recipes.gtceu.hydroponics_facility(`tfg:${input.toString().replace(/[/:\s]/g, "_")}_aquaponic`)
+			.notConsumable(input)
+			.circuit(3)
+			.itemOutputs(outputs_array[0], 'tfg:flora_pellets')
+			.perTick(true)
+			.chancedFluidInput(`${resolvedFluidTier2} 1`, resolvedChance, 0)
+			.perTick(false)
+			.duration(aquaponic_duration)
+			.EUt(resolvedEUt)
+		if (dimension !== null) {
+			f.dimension(dimension)
+		};
+		if (outputs_array[1] !== null) {
+			f.chancedOutput(outputs_array[1], hydroponics_aquaponic_chance, 0)
+			f.chancedOutput(outputs_array[2], hydroponics_aquaponic_chance, 0)
+			f.chancedOutput(outputs_array[3], hydroponics_aquaponic_chance, 0)
+		};
+
 	} else {
+	// Base recipe boosted if no fertilization needed.
+
+		//======================== Greenhouse Recipes ========================
+
 		let a = event.recipes.gtceu.greenhouse(`tfg:${input.toString().replace(/[/:\s]/g, "_")}`)
 			.notConsumable(input)
 			.circuit(1)
@@ -129,7 +299,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			.perTick(true)
 			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
 			.perTick(false)
-			.duration(10 * 60 * 20)
+			.duration(fertilizer_duration)
 			.EUt(resolvedEUt)
 		if (dimension !== null) {
 			a.dimension(dimension)
@@ -142,6 +312,26 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			a.chancedOutput(outputs_array[2], fertilizer_chance, 0)
 			a.chancedOutput(outputs_array[3], fertilizer_chance, 0)
 		};
+		
+		//======================== Hydroponics Facility Recipes ========================
+
+		let b = event.recipes.gtceu.hydroponics_facility(`tfg:${input.toString().replace(/[/:\s]/g, "_")}`)
+			.notConsumable(input)
+			.circuit(1)
+			.itemOutputs(outputs_array[0])
+			.perTick(true)
+			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
+			.perTick(false)
+			.duration(fertilizer_duration)
+			.EUt(resolvedEUt)
+		if (dimension !== null) {
+			b.dimension(dimension)
+		};
+		if (outputs_array[1] !== null) {
+			b.chancedOutput(outputs_array[1], hydroponics_fertilizer_chance, 0)
+			b.chancedOutput(outputs_array[2], hydroponics_fertilizer_chance, 0)
+			b.chancedOutput(outputs_array[3], hydroponics_fertilizer_chance, 0)
+		};
 	};
 };
 
@@ -153,10 +343,10 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
  * - 1x seed chanced output
  * - 4x crop chanced output
  *
- * @param {*} event
- * @param {string|null} dimension -Dimension ID
- * @param {string} input -Input Item. (seed, bush, etc.)
- * @param {string} output -Output Item. (vegetable, fruit, etc.)
+ * @param {Internal.RecipesEventJS} event
+ * @param {Internal.Dimension|null} dimension -Dimension ID
+ * @param {Internal.Ingredient} input -Input Item. (seed, bush, etc.)
+ * @param {Internal.ItemStack} output -Output Item. (vegetable, fruit, etc.)
  * @param {number|null} chance_multiplier -Multiplies output chances by this value. Defaults to 1.
  */
 function generateCropGreenHouseRecipe(event, dimension, input, output, chance_multiplier) {
@@ -171,10 +361,10 @@ function generateCropGreenHouseRecipe(event, dimension, input, output, chance_mu
  * - 4x sapling chanced output
  * - 16x wood chanced output
  *
- * @param {*} event
- * @param {string|null} dimension -Dimension ID
- * @param {string} input -Input Item. (sapling)
- * @param {string} output -Output Item. (wood)
+ * @param {Internal.RecipesEventJS} event
+ * @param {Internal.Dimension|null} dimension -Dimension ID
+ * @param {Internal.Ingredient} input -Input Item. (sapling)
+ * @param {Internal.ItemStack} output -Output Item. (wood)
  * @param {number|null} chance_multiplier -Multiplies output chances by this value. Defaults to 1.
  */
 function generateTreeGreenHouseRecipe(event, dimension, input, output, chance_multiplier) {
@@ -191,14 +381,12 @@ const registerTFGGreenhouseRecipes = (event) => {
 
     //#region Multiblock Parts
 
-	/**
-	 * @type {string[]} - Tier names of greenhouse casings.
-	 */
+	/** @type {string[]} - Tier names of greenhouse casings. */
 	const greenhouse_tiers = ['treated_wood', 'copper', 'iron', 'stainless_steel'];
-	/**
-	 * @type {Object.<string, string[]>} - Mapping of tier names to item IDs.
-	 */
+
+	/** @type {Object.<string, string[]>} - Mapping of tier names to item IDs.*/
 	const greenhouse_tier_items = {};
+	
 	greenhouse_tiers.forEach(tier => {
 
 		const tier_tag = Ingredient.of(`#tfg:${tier}_greenhouse_casings`).itemIds.toArray().map(String);
@@ -272,6 +460,7 @@ const registerTFGGreenhouseRecipes = (event) => {
 		.addMaterialInfo(true);
 
     //#endregion
+
 	//#region Recipes
 
 	// Mushrooms
@@ -334,7 +523,7 @@ const registerTFGGreenhouseRecipes = (event) => {
 
 	// Mars Plants
 	Ingredient.of('#tfg:mars_plants').stacks.forEach(element => {
-		generateGreenHouseRecipe(event, null, `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1);
+		generateGreenHouseRecipe(event, 'ad_astra:mars', `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1);
 	});
 
 	generateCropGreenHouseRecipe(event, 'ad_astra:mars', 'betterend:amber_root_seeds', 'betterend:amber_root_product', 1);
@@ -355,4 +544,6 @@ const registerTFGGreenhouseRecipes = (event) => {
 	Ingredient.of('#tfg:moon_plants').stacks.forEach(element => {
 		generateGreenHouseRecipe(event, 'ad_astra:moon', `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1);
 	});
+
+	//#endregion
 };

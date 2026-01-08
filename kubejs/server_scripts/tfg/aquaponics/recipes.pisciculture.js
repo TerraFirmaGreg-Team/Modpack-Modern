@@ -89,7 +89,32 @@ const registerTFGPiscicultureRecipes = (event) => {
 
 	//#region Multiblock Parts
 
+	// Pisciculture Fishery Controller
+	event.recipes.gtceu.shaped('tfg:pisciculture_fishery', [
+		'FBF',
+		'EAE',
+		'CDC'
+	], {
+		A: 'gtceu:hv_machine_hull',
+		B: 'tfg:machine_casing_aluminium_plated_steel',
+		C: '#gtceu:circuits/hv',
+		D: 'gtceu:stainless_steel_small_fluid_pipe',
+		E: 'gtceu:hv_electric_pump',
+		F: 'gtceu:fluid_filter'
+	}).addMaterialInfo().id('tfg:shaped/pisciculture_fishery');
 
+	// Pisciculture Core
+	event.recipes.gtceu.shaped('tfg:pisciculture_core', [
+		'CBC',
+		'DBD',
+		'CAC'
+	], {
+		A: 'gtceu:hv_rotor_holder',
+		B: 'gtceu:stainless_steel_rotor',
+		C: 'gtceu:inert_machine_casing',
+		D: ChemicalHelper.get(TagPrefix.ring, GTMaterials.PolyvinylChloride, 1)
+	}).addMaterialInfo().id('tfg:shaped/pisciculture_core');
+	
 	//#endregion
 	//#region Recipes
 
