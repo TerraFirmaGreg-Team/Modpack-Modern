@@ -148,8 +148,10 @@
   "block.createdeco.zinc_mesh_fence": "Сетчатый забор из цинка",
   "block.createdeco.brass_sheet_metal": "Блок из пластин латуни",
   "block.createdeco.zinc_sheet_metal": "Блок из пластин цинка",
+  "item.createdeco.iron_coin": "Монета из кованого железа",
   "item.createdeco.netherite_coin": "Монета из синей стали",
-  "item.createdeco.netherite_coinstack": "Стопка монет из синей стали",
   "item.createdeco.industrial_iron_coin": "Монета из стали",
+  "item.createdeco.iron_coinstack": "Стопка монет из кованого железа",
+  "item.createdeco.netherite_coinstack": "Стопка монет из синей стали",
   "item.createdeco.industrial_iron_coinstack": "Стопка монет из стали"
 }

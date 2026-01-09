@@ -56,6 +56,7 @@ const registerCreateConnectedRecipes = (event) => {
 		.itemOutputs('create_connected:item_silo')
 		.duration(200)
 		.EUt(20)
+		.addMaterialInfo(true)
 
 	// Sequenced Pulse Generator
 	event.shaped('create_connected:sequenced_pulse_generator', [

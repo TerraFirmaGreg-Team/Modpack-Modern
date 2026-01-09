@@ -1,0 +1,21 @@
+{
+  "name": "物品容器",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:straw_basket",
+  "pages": [
+	{
+	  "type": "patchouli:text",
+	  "text": "$(thing)物品容器$()是本模组新增的主要物品。它们有6个主要属性，可在鼠标悬停于物品堆并按住$(3)Shift$(clear)时查看。$(li)$(thing)容量格数$()：拥有的格子数量。$(li)$(thing)每格容量$()：每格可容纳的物品数量。$(li)$(thing)允许尺寸$()：格子中允许的最大$(l:getting_started/size_and_weight)尺寸与重量$()。"
+	},
+	{
+	  "type": "patchouli:text",
+	  "text": "$(li)$(thing)物品拾取$()：能否从世界中拾取物品实体。按住Shift右键或使用$(k:sns.key.pickup)切换。$(li)$(thing)物品清除$()：能否清除从世界中拾取的多余物品。切换方式为 Ctrl + 左键点击格子。$(li)$(thing)库存交互$()：是否可像群峦传说的小缸或原版收纳袋那样，通过点击物品堆来插入与取出。$(br)所有$(thing)物品容器$()均支持通过$(k:pickItem)使用原版点选复制。"
+	},
+	{
+	  "type": "patchouli:text",
+	  "text": "供整合包作者或需要配置的玩家参考：所有$(thing)物品容器$()都有一个“黑名单”标签，包含$(bold)sns:prevented_in_item_containers$()。命名规则为$(bold)prevented_in_<registry_name>$()，例如草篮使用$(bold)sns:prevented_in_straw_basket$()。带有特殊“白名单”标签的$(thing)物品容器$()会在其书页中列出。"
+	}
+  ],
+  "read_by_default": true
+}
+

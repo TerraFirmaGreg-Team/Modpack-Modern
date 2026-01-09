@@ -1,0 +1,20 @@
+{
+    "name": "ad_astra_orbit",
+    "dimension-names": [
+        "mercury"
+    ],
+    "rain": false,
+    "storm": false,
+    "biome-selector": {
+        "always": false
+    },
+    "regions": [
+        {
+            "name": "unknown",
+            "volume": 0.3,
+            "sound-collections": [
+                "suspense"
+            ]
+        }
+    ]
+}

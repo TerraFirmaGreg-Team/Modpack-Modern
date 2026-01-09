@@ -1,0 +1,49 @@
+{
+    "name": "处理乳胶",
+    "category": "tfc:arborfirmacraft",
+    "icon": "gtceu:sticky_resin",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "看来你已经通过采集特定的热带树木获得了些$(thing)乳胶$()……恭喜！乳胶本身用途有限，但通过加工处理我们可以得到许多非常有用的副产品！$(br2)如果你还没找到能产出乳胶的树木，可以查看$(l:arborfirmacraft/tapping_index)采集指南$()条目获取更多信息！"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:sticky_resin",
+            "title": "一种黏稠物质",
+            "link_recipe": true,
+            "text": "$(thing)乳胶$()的一种用途是生产$(item)黏性树脂$()。黏性树脂需要在$(l:firmalife/oven_appliances#vat)不锈钢锅$()或$(l:mechanics/pot)陶锅$()中加入$(thing)草木灰$()来凝固乳胶制成。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "黏性生意",
+            "item": "gtceu:resin_circuit_board,gtceu:resistor,gtceu:basic_tape",
+            "text": "$(thing)黏性树脂$()用途多样，因为它非常黏腻。它可以用来制作多个物品，比如$(item)胶带$()可以移动箱子而不会掉落内容物；更重要的是，它还能做成$(item)覆膜电路基板$()和$(item)电阻$()——这些是你最早期的电子元件。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfg:vulcanized_latex_bucket",
+            "title": "我是橡胶……",
+            "text": "$(thing)乳胶$()的另一主要用途是制造橡胶。为了让乳胶更强韧、适合工业用途，需将其加热（使用 $(l:firmalife/oven_appliances#vat)不锈钢锅$()或$(l:mechanics/pot)陶锅$()），并加入$(thing)硫磺粉$()制成$(thing)硫化乳胶$()。这个过程本身叫做“硫化”！"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "提取",
+            "item": "gtceu:raw_rubber_dust",
+            "text": "使用$(thing)提取机$()或$(thing)真空腔室$()，可以将$(thing)硫化乳胶$()干燥为$(item)生橡胶末$()。这种粉末还需在$(thing)合金炉$()中与$(thing)硫磺粉$()一起处理，才能制成$(thing)橡胶条$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:rubber_ingot",
+            "text": "$(thing)橡胶条$()应用广泛，例如用于制作工厂用的$(thing)传送带$()，以及最重要的：用于$(bold)绝缘$()$(thing)电线$()。绝缘电线可安全触碰且减少电压损耗。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "松脂",
+            "item": "tfg:conifer_pitch_bucket",
+            "text": "黏性树脂也可以从特定的$(thing)针叶松树$()中获取，不过这些树无法用来做橡胶。"
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 3
+}

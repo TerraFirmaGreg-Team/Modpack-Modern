@@ -1,9 +1,9 @@
 {
-  "type": "minecraft:delta_feature",
-  "config": {
-    "contents": {
-      "Name": "tfg:geyser_slurry"
-    },
+	"type": "minecraft:delta_feature",
+	"config": {
+		"contents": {
+			"Name": "tfg:fluid/geyser_slurry"
+		},
 		"rim": {
 			"Name": "tfg:rock/raw/geyserite"
 		},
@@ -21,5 +21,5 @@
 				"min_inclusive": 4
 			}
 		}
-  }
+	}
 }

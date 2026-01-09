@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/cube_column",
+	"textures": {
+		"end": "betterend:block/sulphuric_rock_top",
+		"side": "betterend:block/sulphuric_rock"
+	}
+}

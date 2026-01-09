@@ -1,0 +1,34 @@
+{
+	"name": "修筑道路",
+	"category": "tfc:roadsandroofs",
+	"icon": "rnr:metal/mattock/bismuth_bronze",
+	"pages": [
+	{
+		"type": "patchouli:text",
+		"text": "建设道路包含三个基本步骤:用鹤嘴锄夯实原生土壤、铺设基层、铺设面层材料。不同种类的道路需使用不同原料，具体配比详见本手册各对应页面。"
+	},
+	{
+		"type": "patchouli:image",
+		"title": "建造小径",
+		"images": [
+        "rnr:textures/gui/book/path_building.png"
+      ],
+		"border": true
+	},
+	{
+		"type": "patchouli:text",
+		"text": "鹤嘴锄可像凿子那样作用于泥土类方块。默认模式下使用鹤嘴锄会夯实这些方块。若用于夯实淤泥或缠根淤泥，产生的夯实淤泥必须通过铺设碎石基层进行修复。"
+	},
+	{
+		"type": "patchouli:text",
+		"text": "夯实土壤后，下一步是铺设道路基层。碎石基层可由沙砾、石子和锤子合成，通过右键点击铺设于压实方块上。这种碎石基层能为最终行走面提供坚固地基。"
+	},
+	{
+		"type": "patchouli:text",
+		"text": "修筑道路的最后一步是铺设路面。通过在基层上右键点击不同物品(包括砖块、碎石料、石子等)可形成可行走道路。不同材料会形成不同种类的道路，各类道路提供的行走速度也不同。具体类型请参阅本手册各对应页面。"
+	}
+	
+	],
+	"read_by_default": true,
+	"sortnum": 1
+}

@@ -1,0 +1,32 @@
+{
+	"name": "制作屋顶",
+	"category": "tfc:roadsandroofs",
+	"icon": "rnr:terracotta_roof_stairs",
+	"pages": [
+	{
+		"type": "patchouli:text",
+		"text": "建造屋顶从框架开始。屋顶框架方块可用木材和木棍制作，并可制成楼梯与台阶变体。这些方块可用于勾勒屋顶轮廓。"
+	},
+    {
+      "type": "patchouli:crafting",
+      "anchor": "roof_frame",
+      "recipe": "rnr:crafting/roof_framing",
+      "title": "屋顶框架",
+      "text": "屋顶框架是建造所有屋顶的起点。"
+    },
+	{
+		"type": "patchouli:text",
+		"text": "架设屋顶框架后，用任何屋顶材料右键点击即可生成对应屋顶。屋顶类型包括通过添加稻草制作的茅草顶，还有陶瓦片、木瓦片等多种选择。"
+	},
+    {
+      "type": "patchouli:image",
+      "title": "铺设茅草屋顶",
+      "images": [
+        "rnr:textures/gui/book/thatching.png"
+      ],
+      "border": true
+    }
+    ],
+	"read_by_default": true,
+	"sortnum": 30
+}

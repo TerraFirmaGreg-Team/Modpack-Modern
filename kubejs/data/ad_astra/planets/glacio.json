@@ -1,0 +1,13 @@
+{
+	"dimension": "ad_astra:glacio",
+	"gravity": 3.721,
+	"orbit": "ad_astra:glacio_orbit",
+	"oxygen": false,
+	"solar_power": 16,
+	"solar_system": "ad_astra:solar_system",
+	"tier": 4,
+
+	"__TODO": "Figure out how to make surface water freeze but below-surface water stay liquid",
+	"temperature": 10,
+	"__temperature": -190
+}

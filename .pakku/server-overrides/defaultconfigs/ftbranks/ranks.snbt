@@ -1,0 +1,70 @@
+{
+	member: {
+		name: "Player"
+		power: 1
+		condition: "always_active"
+		ftbranks.name_format: "&a{name}"
+		ftbchunks.max_claimed: 50
+		ftbchunks.max_force_loaded: 6
+		ftbchunks.chunk_load_offline: false
+        
+       	command.enderchest: false
+        command.ldlib: false
+        command.compass_server: false
+        command.chunky: false
+        command.catnip: false
+        command.bookshelf: false
+        command.aptweaks: false
+        command.afc: false
+        command.advancement: false
+        command.bossbar: false
+        command.clone: false
+        command.cucumber: false
+        command.gamemode: false
+        command.give: false
+        command.guideme: false 
+        command.kubejs: false
+        command.kubejs_tfc: false
+        command.letmedespawn: false
+        command.locate: false
+        command.lode: false
+		command.octolib: false
+		command.worldborder: false
+		command.whitelist: false
+		command.uteamcore: false
+		command.tpx: false
+		command.tp_offline: false
+		command.tpa: false
+		command.tpaccept: false
+		command.tpahere: false
+		command.tpdeny: false
+		command.tpx: false
+        
+		command.trashcan: true
+
+	}
+	vip: {
+		name: "VIP"
+		power: 50
+		ftbranks.name_format: "&e{name}"
+		ftbchunks.max_claimed: 200
+		ftbchunks.max_force_loaded: 8
+		ftbchunks.chunk_load_offline: true
+	}
+	moderator: {
+		name: "Moderator"
+		power: 51
+		ftbranks.name_format: "&b{name}"
+		ftbchunks.max_claimed: 200
+		ftbchunks.max_force_loaded: 8
+	}
+	admin: {
+		name: "Admin"
+		power: 1000
+		xaero.pac_admin_mode: true
+		xaero.pac_server_claims: true
+		ftbranks.name_format: "&c{name}&c"
+		ftbchunks.max_claimed: 10000
+		ftbchunks.max_force_loaded: 10000
+	}
+}

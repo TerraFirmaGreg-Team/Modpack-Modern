@@ -1,6 +1,16 @@
 // priority: 0
 "use strict";
 
+const JsonObject = Java.loadClass('com.google.gson.JsonObject');
+const JsonArray = Java.loadClass('com.google.gson.JsonArray');
+const JsonParser = Java.loadClass('com.google.gson.JsonParser');
+const JsonElement = Java.loadClass('com.google.gson.JsonElement');
+
+// Helper to call `JsonArray.add(JsonElement)` explicitly because "Rhino Moment".
+const addJsonElement = (jsonArray, jsonElement) => {
+	jsonArray.getClass().getMethod("add", JsonElement).invoke(jsonArray, jsonElement);
+};
+
 //#region Mixer Recipes
 /**
  * Function for generating gtceu mixer recipes.
@@ -85,10 +95,12 @@ function generateGreenHouseRecipe(event, input, fluid, fluid_amount, output, id,
 		.duration(36000) // 30 mins
 		.EUt(EUt)
 
-	if (dimension !== null)
+	if (dimension !== null) {
 		r.dimension(dimension)
-	if (output_secondary !== null) 
+	}
+	if (output_secondary !== null) {
 		r.chancedOutput(output_secondary, 750, 0)
+	}
 	
 
 	// С удобрением (With fertilizer)
@@ -103,10 +115,12 @@ function generateGreenHouseRecipe(event, input, fluid, fluid_amount, output, id,
 		.duration(12000) // 10 mins
 		.EUt(EUt)
 
-	if (dimension !== null)
+	if (dimension !== null) {
 		r.dimension(dimension)
-	if (output_secondary !== null) 
+	}
+	if (output_secondary !== null) {
 		r.chancedOutput(output_secondary, 4000, 0)
+	}
 }
 //#endregion
 
@@ -137,21 +151,21 @@ const getFillingNBT = (material, amount) => {
  */
 function generatePlatedBlockRecipe(event, material) {
 	// firmaciv plated blocks don't have this property
-	let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
-	let outputMaterial = (tfcProperty === null || tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial()
+	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
+	const outputMaterial = (tfcProperty === null || tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial()
 
-	let plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
+	const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
 
-	let platedBlock = ChemicalHelper.get(TFGTagPrefix.blockPlated, material, 1);
-	let platedSlab = ChemicalHelper.get(TFGTagPrefix.slabPlated, material, 1);
-	let platedStair = ChemicalHelper.get(TFGTagPrefix.stairPlated, material, 1);
+	const platedBlock = ChemicalHelper.get(TFGTagPrefix.blockPlated, material, 1);
+	const platedSlab = ChemicalHelper.get(TFGTagPrefix.slabPlated, material, 1);
+	const platedStair = ChemicalHelper.get(TFGTagPrefix.stairPlated, material, 1);
 
-	if (platedBlock === null)
-		return
+	if (platedBlock === null) return;
 
 	let tfcMetalName = material.getName();
-	if (tfcMetalName === "iron")
+	if (tfcMetalName === "iron") {
 		tfcMetalName = "cast_iron";
+	}
 
 	event.shapeless(platedBlock, ['#forge:stone_bricks', plateItem, '#forge:tools/hammers'])
 		.id(`tfg:shapeless/${material.getName()}_plated_block`)
@@ -169,13 +183,13 @@ function generatePlatedBlockRecipe(event, material) {
 	}
 	event.recipes.gtceu.macerator(`tfg:${material.getName()}_plated_block`)
 		.itemInputs(platedBlock)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 1), 'gtceu:stone_dust')
+		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 1))
 		.duration(material.getMass())
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
 	event.recipes.gtceu.arc_furnace(`tfg:${material.getName()}_plated_block`)
 		.itemInputs(platedBlock)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 1), 'gtceu:ash_dust')
+		.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 1))
 		.duration(material.getMass())
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -198,13 +212,13 @@ function generatePlatedBlockRecipe(event, material) {
 	}
 	event.recipes.gtceu.macerator(`tfg:${material.getName()}_plated_slab`)
 		.itemInputs(platedSlab)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.dustSmall, material, 2), 'gtceu:small_stone_dust')
+		.itemOutputs(ChemicalHelper.get(TagPrefix.dustSmall, material, 2))
 		.duration(material.getMass())
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
 	event.recipes.gtceu.arc_furnace(`tfg:${material.getName()}_plated_slab`)
 		.itemInputs(platedSlab)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.nugget, material, 4), 'gtceu:small_ash_dust')
+		.itemOutputs(ChemicalHelper.get(TagPrefix.nugget, material, 4))
 		.duration(material.getMass())
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -226,13 +240,13 @@ function generatePlatedBlockRecipe(event, material) {
 	}
 	event.recipes.gtceu.macerator(`tfg:${material.getName()}_plated_stair`)
 		.itemInputs(platedStair)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 1), 'gtceu:stone_dust')
+		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 1))
 		.duration(material.getMass())
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
 	event.recipes.gtceu.arc_furnace(`tfg:${material.getName()}_plated_stair`)
 		.itemInputs(platedStair)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 1), 'gtceu:ash_dust')
+		.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 1))
 		.duration(material.getMass())
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -247,7 +261,7 @@ function generatePlatedBlockRecipe(event, material) {
  * @param {(material: com.gregtechceu.gtceu.api.data.chemical.material.Material_) => void} iterator 
  */
 function forEachMaterial(iterator) {
-	for (let material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
+	for (const material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
 		iterator(material)
 	}
 }
@@ -256,6 +270,10 @@ function forEachMaterial(iterator) {
 //#region Add Circuit
 /**
  * Function for adding circuit numbers for existing recipes
+ * 1) Preserves existing `inputs.item` entries.
+ * 2) Adds a circuit entry to the `inputs.item` array.
+ * 3) If `inputs.item` is missing, create it.
+ * 4) If a circuit already exists, update its number.
  * 
  * Constants {@link global.ADD_CIRCUIT}
  *
@@ -266,22 +284,63 @@ function forEachMaterial(iterator) {
 function addCircuitToRecipe(event, recipeId, circuitNumber) {
 
 	event.findRecipes({ id: recipeId }).forEach(recipe => {
-			const inputs = recipe.json.get("inputs");
-			const itemArray = inputs.has("item") ? Java.from(inputs.get("item")) : [];
+		const inputsEl = recipe.json.get("inputs");
+		let inputsObj;
+		if (inputsEl === null || inputsEl.isJsonNull()) {
+			inputsObj = new JsonObject();
+		} else if (inputsEl.isJsonObject()) {
+			inputsObj = inputsEl.getAsJsonObject();
+		} else {
+			return;
+		}
 
-			itemArray.push({
-				content: {
-					type: "gtceu:circuit",
-					configuration: circuitNumber
-				},
-				chance: 0,
-				maxChance: 10000,
-				tierChanceBoost: 0
-			});
+		// Cache existing item inputs.
+		const itemEl = inputsObj.get("item");
+		let itemArray;
+		if (itemEl === null || itemEl === undefined || itemEl.isJsonNull()) {
+			itemArray = new JsonArray();
+		} else if (itemEl.isJsonArray()) {
+			itemArray = itemEl.getAsJsonArray();
+		} else if (itemEl.isJsonObject()) {
+			itemArray = new JsonArray();
+			addJsonElement(itemArray, JsonParser.parseString(itemEl.getAsJsonObject().toString()));
+		} else {
+			return;
+		}
 
-			inputs.add("item", itemArray);
-			recipe.json.add("inputs", inputs);
-		});
+		// Build circuit entry as a JsonElement using JsonParser.
+		const circuitElement = JsonParser.parseString(JSON.stringify({
+			content: { type: "gtceu:circuit", configuration: circuitNumber },
+			chance: 0,
+			maxChance: 10000,
+			tierChanceBoost: 0
+		}));
+
+		// Dont duplicate circuit if one already exists. 
+		// If it exists, just update it.
+		let hasCircuit = false;
+		for (let i = 0; i < itemArray.size(); i++) {
+			const el = itemArray.get(i);
+			if (!el.isJsonObject()) {continue;}
+			const obj = el.getAsJsonObject();
+			const content = obj.get("content");
+			if (content && content.isJsonObject()) {
+				const typeEl = content.getAsJsonObject().get("type");
+				if (typeEl && typeEl.isJsonPrimitive() && typeEl.getAsString() === "gtceu:circuit") {
+					hasCircuit = true;
+					content.getAsJsonObject().addProperty("configuration", circuitNumber);
+					break;
+				}
+			}
+		}
+
+		if (!hasCircuit) {
+			addJsonElement(itemArray, circuitElement);
+		}
+
+		inputsObj.add("item", itemArray);
+		recipe.json.add("inputs", inputsObj);
+	});
 }
 //#endregion
 
@@ -318,17 +377,14 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			.duration(50)
 			.EUt(GTValues.VA[GTValues.ULV])
 
-		event.custom({
-			type: 'vintageimprovements:polishing',
-			ingredients: [{ item: log }],
-			results: [{ item: stripped_log }],
-			speed_limits: 0,
-			processingTime: 50
-		}).id(`tfg:vi/lathe/stripping_${name}_log`)
+		event.recipes.vintageimprovements.polishing(stripped_log, log)
+			.speedLimits(0)
+			.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+			.id(`tfg:vi/lathe/stripping_${name}_log`)
 	}
 
 	if (logs && lumber && name) {
-		event.shapeless(`8x ${lumber}`, 
+		event.shapeless(`8x ${lumber}`,
 			[logs, '#forge:tools/saws']
 		).id(`tfg:shapeless/${name}_lumber_from_log`)
 
@@ -336,7 +392,7 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 	}
 
 	if (plank && lumber && name) {
-		event.shapeless(`4x ${lumber}`, 
+		event.shapeless(`4x ${lumber}`,
 			[plank, '#forge:tools/saws']
 		).id(`tfg:shapeless/${name}_lumber_from_plank`)
 
@@ -346,15 +402,15 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			'AA',
 			'AA'
 		], {
-			A: lumber,
+			A: lumber
 		}).id(`tfg:shaped/${name}_plank_from_lumber`)
 	}
 
 	if (slab && lumber && name) {
-		event.shapeless(`2x ${lumber}`, 
+		event.shapeless(`2x ${lumber}`,
 			[slab, '#forge:tools/saws']
 		).id(`tfg:shapeless/${name}_lumber_from_slab`)
-		
+
 		generateCutterRecipe(event, slab, `2x ${lumber}`, 50, 7, `cutter_${name}_lumber_from_slab`)
 	}
 
@@ -362,12 +418,12 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 		event.shaped(`6x ${slab}`, [
 			'AAA'
 		], {
-			A: plank,
+			A: plank
 		}).id(`tfg:shaped/${name}_slab_from_plank`)
 	}
 
 	if (stair && lumber && name) {
-		event.shapeless(`3x ${lumber}`, 
+		event.shapeless(`3x ${lumber}`,
 			[stair, '#forge:tools/saws']
 		).id(`tfg:shapeless/${name}_lumber_from_stair`)
 
@@ -380,51 +436,51 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			'AA ',
 			'AAA'
 		], {
-			A: plank,
+			A: plank
 		}).id(`tfg:shaped/${name}_stair_from_plank`)
 	}
-	
+
 	if (door && lumber && name) {
 		event.shaped(`2x ${door}`, [
 			'AA',
 			'AA',
 			'AA'
 		], {
-			A: lumber,
+			A: lumber
 		}).id(`tfg:shaped/${name}_door_from_lumber`)
 	}
-	
+
 	if (trapdoor && lumber && name) {
 		event.shaped(`3x ${trapdoor}`, [
 			'AAA',
 			'AAA'
 		], {
-			A: lumber,
+			A: lumber
 		}).id(`tfg:shaped/${name}_trapdoor_from_lumber_and_plank`)
 	}
-	
+
 	if (fence && lumber && plank && name) {
 		event.shaped(`8x ${fence}`, [
 			'ABA',
 			'ABA'
 		], {
 			A: lumber,
-			B: plank,
+			B: plank
 		}).id(`tfg:shaped/${name}_fence_from_lumber_and_plank`)
 	}
-	
+
 	if (fence_gate && lumber && plank && name) {
 		event.shaped(`2x ${fence_gate}`, [
 			'ABA',
 			'ABA'
 		], {
 			A: plank,
-			B: lumber,
+			B: lumber
 		}).id(`tfg:shaped/${name}_fence_gate_from_lumber_and_plank`)
 	}
-	
+
 	if (support && logs && name) {
-		event.shapeless(`8x ${support}`, 
+		event.shapeless(`8x ${support}`,
 			[`2x ${logs}`, '#forge:tools/saws']
 		).id(`tfg:shapeless/${name}_support_from_logs`)
 
@@ -435,7 +491,7 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			.circuit(4)
 			.EUt(GTValues.VA[GTValues.ULV])
 	}
-	
+
 	if (pressure_plate && slab && name) {
 		event.shaped(pressure_plate, [
 			' B ',
@@ -445,11 +501,11 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			A: slab,
 			B: '#forge:tools/hammers',
 			C: '#forge:springs',
-			D: '#forge:tools/screwdrivers',
+			D: '#forge:tools/screwdrivers'
 		}).id(`tfg:shaped/${name}_pressure_plate`)
 
 		event.recipes.gtceu.assembler(`tfg:assembler/${name}_pressure_plate`)
-			.itemInputs(`2x ${slab}`, '#forge:springs')
+			.itemInputs(`2x ${slab}`, '#forge:small_springs')
 			.itemOutputs(`2x ${pressure_plate}`)
 			.duration(50)
 			.circuit(3)
@@ -491,30 +547,39 @@ function sterilizeItem(event, input, output, multiplier, cleanroom) {
 
     // If there are any errors, log them all and throw once.
     if (errors.length > 0) {
-        const message = "sterilizeItem errors:\n - " + errors.join("\n - ");
+        const message = `sterilizeItem errors:\n - ${ errors.join("\n - ")}`;
         throw new TypeError(message);
     };
 
 	// Set default multiplier.
 	let recipe_multiplier = 1;
-	if (multiplier !== undefined) recipe_multiplier = multiplier;
+	if (multiplier !== undefined) {
+		recipe_multiplier = multiplier;
+	}
 
 	// Create recipes.
-	let ethanol_recipe = event.recipes.gtceu.chemical_bath(`tfg:ethanol_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const ethanol_recipe = event.recipes.gtceu.chemical_bath(`tfg:ethanol_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
 		.itemInputs(input)
 		.inputFluids(Fluid.of('gtceu:ethanol', 500*recipe_multiplier))
 		.itemOutputs(output)
 		.duration(10*20*recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
-	let hydrogen_peroxide_recipe = event.recipes.gtceu.chemical_bath(`tfg:hydrogen_peroxide_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const hydrogen_peroxide_recipe = event.recipes.gtceu.chemical_bath(`tfg:hydrogen_peroxide_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
 		.itemInputs(input)
 		.inputFluids(Fluid.of('gtceu:hydrogen_peroxide', 200*recipe_multiplier))
 		.itemOutputs(output)
 		.duration(10*20*recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
-	let autoclave_recipe = event.recipes.gtceu.autoclave(`tfg:autoclave_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const sodium_dodecyl_sulfate_recipe = event.recipes.gtceu.chemical_bath(`tfg:sodium_dodecyl_sulfate_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+		.itemInputs(input)
+		.inputFluids(Fluid.of('tfg:sodium_dodecyl_sulfate', 50*recipe_multiplier))
+		.itemOutputs(output)
+		.duration(10*20*recipe_multiplier)
+		.EUt(GTValues.VA[GTValues.MV]);
+
+	const autoclave_recipe = event.recipes.gtceu.autoclave(`tfg:autoclave_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
 		.itemInputs(input)
 		.perTick(true)
 		.inputFluids(Fluid.of('gtceu:steam', 100*recipe_multiplier))
@@ -526,7 +591,59 @@ function sterilizeItem(event, input, output, multiplier, cleanroom) {
 	if (cleanroom) {
 		ethanol_recipe.cleanroom(cleanroom);
 		hydrogen_peroxide_recipe.cleanroom(cleanroom);
+		sodium_dodecyl_sulfate_recipe.cleanroom(cleanroom);
 		autoclave_recipe.cleanroom(cleanroom);
 	};
 };
+
+//#endregion
+//#region Cleanroom Tool
+
+/**
+ * Ensures recipes have a cleanroom recipe condition set to the specified type.
+ *
+ * * For each recipe:
+ * * * If `recipeConditions` is an array, finds an object with `type` === `cleanroom`.
+ * * * If found, updates its `cleanroom` property to the given `cleanroomType`.
+ * * * If not found, appends a new condition object `{ type: "cleanroom", cleanroom: cleanroomType }` to the array.
+ * * * If `recipeConditions` is absent or not an array, creates a new JSON array containing the cleanroom condition.
+ * 
+ * @throws This function will not work with other recipe conditions present besides `CleanroomType`.
+ *
+ * @param {event} event
+ * @param {string} recipeId - recipe ID.
+ * @param {'cleanroom'|'sterile_cleanroom'} cleanroomType - Cleanroom type to be assigned.
+ */
+function addCleanroom(event, recipeId, cleanroomType) {
+	event.findRecipes({ id: recipeId }).forEach(recipe => {
+		// Ensure recipe has a cleanroom condition matching the cleanroomType string.
+		// Replace existing cleanroom condition or add new one if absent.
+		const desiredCleanroom = cleanroomType;
+		const conditions = recipe.json.get("recipeConditions");
+		let conditionArray;
+		if (conditions && conditions.isJsonArray && conditions.isJsonArray()) {
+			conditionArray = conditions.getAsJsonArray();
+		} else {
+			conditionArray = new JsonArray();
+			recipe.json.add("recipeConditions", conditionArray);
+		}
+
+		let hasCleanroom = false;
+		for (let i = 0; i < conditionArray.size(); i++) {
+			let element = conditionArray.get(i).getAsJsonObject();
+			if (element.has("type") && element.get("type").getAsString() === "cleanroom") {
+				element.addProperty("cleanroom", desiredCleanroom);
+				hasCleanroom = true;
+				break;
+			}
+		}
+		if (!hasCleanroom) {
+			let cond = new JsonObject();
+			cond.addProperty("type", "cleanroom");
+			cond.addProperty("cleanroom", desiredCleanroom);
+			addJsonElement(conditionArray, cond);
+		}
+	});
+};
+
 //#endregion

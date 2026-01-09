@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 global.AE2_DISABLED_ITEMS = [
@@ -62,7 +62,7 @@ global.AE2_GLASS_CABLES = [
     'ae2:brown_glass_cable',
     'ae2:green_glass_cable',
     'ae2:red_glass_cable',
-    'ae2:black_glass_cable',
+    'ae2:black_glass_cable'
 ]
 
 // Covered Cable
@@ -82,7 +82,7 @@ global.AE2_COVERED_CABLES = [
     'ae2:brown_covered_cable',
     'ae2:green_covered_cable',
     'ae2:red_covered_cable',
-    'ae2:black_covered_cable',
+    'ae2:black_covered_cable'
 ]
 
 // Dense Covered Cable
@@ -102,7 +102,7 @@ global.AE2_COVERED_DENSE_CABLES = [
     'ae2:brown_covered_dense_cable',
     'ae2:green_covered_dense_cable',
     'ae2:red_covered_dense_cable',
-    'ae2:black_covered_dense_cable',
+    'ae2:black_covered_dense_cable'
 ]
 
 // Smart Cable
@@ -122,7 +122,7 @@ global.AE2_SMART_CABLES = [
     'ae2:brown_smart_cable',
     'ae2:green_smart_cable',
     'ae2:red_smart_cable',
-    'ae2:black_smart_cable',
+    'ae2:black_smart_cable'
 ]
 
 // Dense Smart Cable
@@ -142,7 +142,7 @@ global.AE2_SMART_DENSE_CABLES = [
     'ae2:brown_smart_dense_cable',
     'ae2:green_smart_dense_cable',
     'ae2:red_smart_dense_cable',
-    'ae2:black_smart_dense_cable',
+    'ae2:black_smart_dense_cable'
 ]
 
 // Smart Cable
@@ -162,7 +162,7 @@ global.AE2_SMART_CABLES = [
     'ae2:brown_smart_cable',
     'ae2:green_smart_cable',
     'ae2:red_smart_cable',
-    'ae2:black_smart_cable',
+    'ae2:black_smart_cable'
 ]
 
 // Dense Smart Cable
@@ -182,7 +182,7 @@ global.AE2_SMART_DENSE_CABLES = [
     'ae2:brown_smart_dense_cable',
     'ae2:green_smart_dense_cable',
     'ae2:red_smart_dense_cable',
-    'ae2:black_smart_dense_cable',
+    'ae2:black_smart_dense_cable'
 ]
 
 
@@ -203,7 +203,7 @@ global.AE2_PAINTBALLS = [
     'ae2:brown_paint_ball',
     'ae2:green_paint_ball',
     'ae2:red_paint_ball',
-    'ae2:black_paint_ball',
+    'ae2:black_paint_ball'
 ]
 // Lumen paint ball
 global.AE2_LUMEN_PAINTBALLS = [
@@ -222,6 +222,6 @@ global.AE2_LUMEN_PAINTBALLS = [
     'ae2:brown_lumen_paint_ball',
     'ae2:green_lumen_paint_ball',
     'ae2:red_lumen_paint_ball',
-    'ae2:black_lumen_paint_ball',
+    'ae2:black_lumen_paint_ball'
 ]
 

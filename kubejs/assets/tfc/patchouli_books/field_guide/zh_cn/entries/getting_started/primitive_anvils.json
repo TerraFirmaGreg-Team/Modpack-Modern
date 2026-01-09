@@ -1,0 +1,237 @@
+{
+    "__comment__": "This file was automatically created by mcresources",
+    "name": "原始砧",
+    "category": "tfc:getting_started",
+    "icon": "tfc:rock/anvil/granite",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "除了在游戏初期直接浇铸工具外，使用$(thing)砧$()锻造金属也是另一种选择，同时更是加工高级金属的必要条件。砧能用于两种不同工艺：$(l:mechanics/anvils#working)锻造$()和$(l:mechanics/anvils#welding)焊接$()。砧可将所需金属的双锭焊接成更高一级的砧，这是处理该金属其他物品的必要步骤。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "首先，你得找到一块$(thing)天然的$()$(thing)喷出岩$() （流纹岩、玄武岩、安山岩、或英安岩）或$(thing)侵入岩$()（花岗岩、闪长岩、或辉长岩）。你可以直接使用暴露在地表的那些，或者也可以把它们从岩壁上$(l:getting_started/primitive_anvils#raw_rock)采下来$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "stone_anvils",
+            "text": "你还需要一把任意材料制成的$(thing)锤$()。要把岩石变成砧，手持$(thing)锤$()右键点击其$(thing)顶面$()即可。$(br2)砧是有不同$(l:mechanics/anvils#tiers)等级$()的。石砧的等级是 0 - 也就是最低等级。它只能用来$(l:mechanics/anvils#welding)焊接$() 1 级的金属锭。",
+            "title": "石砧"
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "将中间那块岩石作为石砧。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            " 0 "
+                        ],
+                        [
+                            "RRR"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "AIR",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                "tfc:rock_anvil"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "raw_rock",
+            "text": "想要获得一块天然的岩石，直接用镐挖是不行的。唯一的方法是将其六面所相邻的方块都挖掉， $(thing)悬空$()的岩石就会掉落其本体了。",
+            "title": "获得天然岩石"
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "挖掉一块天然岩石的所有六个邻面——完成后，中心块将作为物品掉落。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " R ",
+                            "   "
+                        ],
+                        [
+                            " R ",
+                            "RRR",
+                            " R "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            " R ",
+                            "RRR",
+                            " R "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "RRR",
+                            " R "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " RR",
+                            " R "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " RR",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " R ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " R ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "AIR",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "welding",
+            "text": "焊接是一种将两个物品熔合为新物品的过程。无论是在$(l:getting_started/primitive_anvils)石砧$()还是$(l:mechanics/anvils)金属砧$()上都一样。$(br2)首先，你必须将待焊接的两个物品放置在砧上。可通过手持物品对砧点击使用，或打开砧的操作界面将其放入最左侧的两个槽位中完成放置。",
+            "title": "焊接"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "此外，砧内需至少存放一份$(l:mechanics/flux)助焊剂$()以辅助焊接过程。当两个物品均达到$(l:mechanics/heating)可焊接温度$()（提示信息将显示“可焊接”）时，用任意$(thing)锤$()击打砧，或点击砧操作界面中的焊接按钮即可。此时将传出锻打声效，物品也随之熔合为一体。"
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 6,
+    "extra_recipe_mappings": {
+        "tfc:rock/anvil/granite": 0,
+        "tfc:rock/anvil/diorite": 0,
+        "tfc:rock/anvil/gabbro": 0,
+        "tfc:rock/anvil/rhyolite": 0,
+        "tfc:rock/anvil/basalt": 0,
+        "tfc:rock/anvil/andesite": 0,
+        "tfc:rock/anvil/dacite": 0
+    }
+}

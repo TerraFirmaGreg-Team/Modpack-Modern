@@ -1,0 +1,18 @@
+{
+  "name": "种子袋",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:seed_pouch",
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "sns:seed_pouch",
+	  "text": "$(item)种子袋$()是一种$(l:sns/item_containers)物品容器$()，用于容纳多种种子，在务农时非常实用。$(br2)默认拥有 27 个格子，每格可容纳 64 颗种子"
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/seed_pouch",
+	  "text": "供整合包作者或希望添加更多种子的玩家参考，请查看物品标签$(bold)sns:allowed_in_seed_pouch$()，大多数附加内容应会被自动支持"
+	}
+  ],
+  "read_by_default": true
+}

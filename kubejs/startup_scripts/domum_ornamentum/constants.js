@@ -1,9 +1,9 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 global.DOMUM_ORNAMENTUM_DISABLED_ITEMS = /** @type {const} */ ([
     "domum_ornamentum:blockbarreldeco_standing",
-    "domum_ornamentum:blockbarreldeco_onside",
+    "domum_ornamentum:blockbarreldeco_onside"
 ]);
 
 global.DOMUM_ORNAMENTUM_FLOATING_CARPETS = /** @type {const} */ ([
@@ -22,5 +22,5 @@ global.DOMUM_ORNAMENTUM_FLOATING_CARPETS = /** @type {const} */ ([
     "domum_ornamentum:brown_floating_carpet",
     "domum_ornamentum:green_floating_carpet",
     "domum_ornamentum:red_floating_carpet",
-    "domum_ornamentum:black_floating_carpet",
+    "domum_ornamentum:black_floating_carpet"
 ]);

@@ -79,4 +79,10 @@ function registerGTCEuItemModifications(event) {
 			}
 		})
 	})
+	
+	// Wood frame burn time
+
+	event.modify('gtceu:wood_frame', item => {
+		item.burnTime = 200
+	})
 }

@@ -1,0 +1,18 @@
+{
+  "name": "麻袋",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:burlap_sack",
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "sns:burlap_sack",
+	  "text": "$(item)麻袋$()是一种$(l:sns/item_containers)物品容器$()，可比$(item)皮革袋$()多装一些物品。"
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/burlap_sack",
+	  "text": "默认可容纳至多$(thing)小型$()物品"
+	}
+  ],
+  "read_by_default": true
+}

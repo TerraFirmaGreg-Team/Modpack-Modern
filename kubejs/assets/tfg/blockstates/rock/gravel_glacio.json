@@ -1,7 +1,21 @@
 {
 	"variants": {
-		"": {
-			"model": "tfg:block/rock/gravel_glacio"
-		}
+		"": [
+			{
+				"model": "tfg:block/rock/gravel_glacio"
+			},
+			{
+				"model": "tfg:block/rock/gravel_glacio",
+				"y": 90
+			},
+			{
+				"model": "tfg:block/rock/gravel_glacio",
+				"y": 180
+			},
+			{
+				"model": "tfg:block/rock/gravel_glacio",
+				"y": 270
+			}
+		]
 	}
 }

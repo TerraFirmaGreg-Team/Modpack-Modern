@@ -1,0 +1,11 @@
+{
+	"type": "tfc:flood_fill_lake",
+	"config": {
+		"overfill": true,
+		"replace_fluids": [
+			"tfg:sulfur_fumes",
+			"tfg:geyser_slurry"
+		],
+		"state": "minecraft:lava"
+	}
+}

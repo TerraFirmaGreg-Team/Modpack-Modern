@@ -1,0 +1,73 @@
+{
+    "name": "grass",
+    "features": [
+        "grass"
+    ],
+    "bad-regions": [
+        "plains",
+        "savanna",
+        "swamp",
+        "ocean",
+        "jungle",
+        "rain",
+        "forest",
+        "forest.cold",
+        "taiga",
+        "snow"
+    ],
+    "bad-biomes": [
+        "river",
+        "lake",
+        "mountain_lake",
+        "old_mountain_lake",
+        "oceanic_mountain_lake",
+        "plateau_lake",
+        "ocean",
+        "ocean_reef",
+        "deep_ocean",
+        "deep_ocean_trench"
+    ],
+    "sounds": [
+        {
+            "name": "cricket",
+            "category": "cricket_day",
+            "files": [
+                "ambientsounds:animals.cricket",
+                "ambientsounds:animals.cricket2",
+                "ambientsounds:animals.cricket3"
+            ],
+            "overall-raining": false,
+            "length": {
+                "min": 1000,
+                "max": 1500
+            },
+            "transition": 100,
+            "volume": 0.05
+        },
+        {
+            "name": "cricket-night",
+            "category": "cricket_night",
+            "files": [
+                "ambientsounds:animals.cricket-night",
+                "ambientsounds:animals.cricket-night2",
+                "ambientsounds:animals.cricket-night3",
+                "ambientsounds:animals.cricket-night4"
+            ],
+            "overall-raining": false,
+            "length": {
+                "min": 1000,
+                "max": 1500
+            },
+            "transition": 100,
+            "volume": 0.05
+        },
+        {
+            "name": "cicadas-night",
+            "category": "cicadas",
+            "files": [
+                "ambientsounds:animals.cicadas-night"
+            ],
+            "time": "day"
+        }
+    ]
+}

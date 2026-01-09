@@ -1,0 +1,101 @@
+{
+    "contents": [
+        {
+            "type": "atom",
+            "element": "W",
+            "index": 0,
+            "x": 0.0,
+            "y": 0.0
+        },
+        {
+            "type": "atom",
+            "element": "O",
+            "index": 1,
+            "x": 0.0,
+            "y": -0.825
+        },
+        {
+            "type": "atom",
+            "element": "O",
+            "index": 2,
+            "x": 0.0,
+            "y": 0.825
+        },
+        {
+            "type": "atom",
+            "element": {
+                "symbol": "O⁻",
+                "material": "gtceu:oxygen"
+            },
+            "index": 3,
+            "x": 0.825,
+            "y": 0.0
+        },
+        {
+            "type": "atom",
+            "element": {
+                "symbol": "O⁻",
+                "material": "gtceu:oxygen"
+            },
+            "index": 4,
+            "x": -0.825,
+            "y": 0.0
+        },
+        {
+            "type": "atom",
+            "element": {
+                "symbol": "Na⁺",
+                "material": "gtceu:sodium"
+            },
+            "index": 5,
+            "x": 1.65,
+            "y": 0.0
+        },
+        {
+            "type": "atom",
+            "element": {
+                "symbol": "Na⁺",
+                "material": "gtceu:sodium"
+            },
+            "index": 6,
+            "x": -1.65,
+            "y": 0.0
+        },
+        {
+            "type": "bond",
+            "a": 0,
+            "b": 1,
+            "lines": [
+                "solid",
+                "solid"
+            ],
+            "centered": true
+        },
+        {
+            "type": "bond",
+            "a": 0,
+            "b": 2,
+            "lines": [
+                "solid",
+                "solid"
+            ],
+            "centered": true
+        },
+        {
+            "type": "bond",
+            "a": 0,
+            "b": 3,
+            "lines": [
+                "solid"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 0,
+            "b": 4,
+            "lines": [
+                "solid"
+            ]
+        }
+    ]
+}

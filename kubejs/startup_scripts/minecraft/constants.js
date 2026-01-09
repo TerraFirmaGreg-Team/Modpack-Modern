@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 /**
@@ -395,7 +395,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     // Броня
     "minecraft:netherite_helmet",
     "minecraft:netherite_chestplate",
-    "minecraft:netherite_boots",
     "minecraft:golden_helmet",
     "minecraft:golden_chestplate",
     "minecraft:golden_leggings",
@@ -471,14 +470,12 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:netherite_scrap',
     'minecraft:suspicious_gravel',
     'minecraft:gravel',
-    'minecraft:large_fern', 
     'minecraft:tall_grass', 
     'minecraft:sculk_vein', 
     'minecraft:lily_pad', 
     'minecraft:vine',
     'minecraft:seagrass', 
     'minecraft:grass', 
-    'minecraft:fern', 
     'minecraft:dandelion', 
     'minecraft:poppy', 
     'minecraft:blue_orchid', 
@@ -492,8 +489,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:cornflower', 
     'minecraft:lily_of_the_valley', 
     'minecraft:wither_rose', 
-    'minecraft:torchflower', 
-    'minecraft:pitcher_plant', 
     'minecraft:sculk', 
     'minecraft:sculk_vein', 
     'minecraft:sculk_catalyst', 
@@ -551,6 +546,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:beetroot_soup', 
     'minecraft:cocoa_beans', 
     'minecraft:experience_bottle', 
+    'minecraft:glass_bottle',
     'minecraft:rabbit_stew',
     'minecraft:recovery_compass', 
     'minecraft:chorus_plant', 
@@ -620,6 +616,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:furnace',
     'minecraft:amethyst_cluster',
     'minecraft:rabbit_hide',
+    'minecraft:raw_copper',
     'minecraft:raw_iron',
     'minecraft:raw_gold',
     'minecraft:compass',

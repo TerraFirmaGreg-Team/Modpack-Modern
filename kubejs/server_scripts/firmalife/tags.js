@@ -14,12 +14,14 @@ const registerFirmaLifeItemTags = (event) => {
         event.add('c:hidden_from_recipe_viewers', item)
     })
 
-    event.add('minecraft:trimmable_armor', '#firmalife:beekeeper_armor')
-    
-    event.add('tfc:foods/usable_in_salad', 'firmalife:food/pickled_egg')
-
     // Удаление тегов у руд
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
+
+    // Make our own "dried fruit" tag so we can display something in EMI - used for yeast starter
+    global.FOOD_FRUIT
+        .map(fruit => fruit.id)
+        .filter(fruit => fruit !== 'betterend:shadow_berry_cooked' && fruit !== 'minecraft:popped_chorus_fruit')
+        .forEach(fruit => event.add('tfg:dried_fruit', fruit))
 }
 
 const registerFirmaLifeBlockTags = (event) => {
@@ -74,12 +76,20 @@ const registerFirmaLifeFluidTags = (event) => {
     
     // Добавляем тег для скрытия в EMI
     event.add('c:hidden_from_recipe_viewers', 'firmalife:metal/chromium')
+    event.add('c:hidden_from_recipe_viewers', 'firmalife:metal/stainless_steel')
     event.add('c:hidden_from_recipe_viewers', 'firmalife:chocolate')
+    event.add('c:hidden_from_recipe_viewers', 'firmalife:fruity_fluid')
 
+    // Im going to leave these, but I dont think this tag does anything(?).
     event.add('firmalife:mixable', 'tfc:spring_water')
     event.add('firmalife:mixable', 'tfcchannelcasting:white_chocolate')
     event.add('firmalife:mixable', 'tfcchannelcasting:milk_chocolate')
     event.add('firmalife:mixable', 'tfcchannelcasting:dark_chocolate')
     event.add('firmalife:mixable', 'afc:maple_syrup')
     event.add('firmalife:mixable', 'afc:birch_syrup')
+
+    event.add('firmalife:oils', 'tfc:tallow')
+    event.add('firmalife:oils', 'gtceu:seed_oil')
+    event.add('firmalife:oils', 'gtceu:fish_oil')
+    event.add('firmalife:oils', 'tfg:triglyceride_oil')
 }

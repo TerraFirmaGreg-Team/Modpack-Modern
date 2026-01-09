@@ -30,7 +30,7 @@ function registerEndermanOverhaulRecipes(event) {
 
 	event.shaped('endermanoverhaul:corrupted_shield', [
 		'ABA',
-		'ACA',
+		'ECE',
 		'ADA'
 	], {
 		A: 'endermanoverhaul:enderman_tooth',

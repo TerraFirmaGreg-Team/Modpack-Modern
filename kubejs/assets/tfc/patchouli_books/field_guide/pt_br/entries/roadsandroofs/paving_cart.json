@@ -1,0 +1,48 @@
+{
+  "name": "Carrinho Pavimentador",
+  "category": "tfc:roadsandroofs",
+  "icon": "tfg:rnr_plow",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "O $(thing)Carrinho Pavimentador$() é um carrinho especializado usado para aplicar superfícies de estrada de forma rápida e eficiente. Ele pode ser carregado com materiais para estradas e $(thing)Base Britada$() para criar estradas. O carrinho também pode preencher quaisquer blocos de base já existentes."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Carrinho Pavimentador",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png" ],
+      "border": true
+        },
+        {
+      "type": "patchouli:image",
+      "title": "Controle de Largura",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png" ],
+      "border": true,
+      "text": "O carrinho permite ajustar a largura do caminho na interface."
+        },
+        {
+      "type": "patchouli:image",
+      "title": "Largura do Caminho",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png" ],
+      "border": true
+        },
+        {
+      "type": "patchouli:image",
+      "title": "Botão Aleatório",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png" ],
+      "border": true,
+      "text": "O carrinho possui um modo que aplica materiais em um padrão aleatório."
+        },
+        {
+      "type": "patchouli:image",
+      "title": "Materiais Aleatórios",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png" ],
+      "border": true
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfg:rnr_plow": 0
+  },
+  "sortnum": 20
+}

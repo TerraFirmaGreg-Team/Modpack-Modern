@@ -1,0 +1,16 @@
+{
+    "name": "蘑菇培育桶",
+    "category": "tfc:beneath",
+    "icon": "beneath:unposter",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)蘑菇培育桶$()用于培育蘑菇。可将蘑菇及下界作物放入其中。当其放置在蘑菇旁时，将消耗内部储存的物品，使周边的该种蘑菇每日增殖一次。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "beneath:crafting/unposter"
+        }
+    ],
+    "read_by_default": true
+}

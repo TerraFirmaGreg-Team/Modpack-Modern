@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "tfg:block/machines/active_power_transformer",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tfg:block/machines/active_power_transformer"
+    },
+    "facing=south": {
+      "model": "tfg:block/machines/active_power_transformer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tfg:block/machines/active_power_transformer",
+      "y": 270
+    }
+  }
+}

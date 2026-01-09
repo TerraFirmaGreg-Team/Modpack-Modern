@@ -1,0 +1,26 @@
+{
+    "name": "收获篮",
+    "icon": "tfg:harvest_basket",
+    "category": "tfc:mechanics",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "title": "收获篮",
+            "item": {
+                "tag": "tfg:harvester"
+            },
+            "text": "专为身材矮小者设计——$(thing)收获篮$()正是从树木和灌木上采摘果实的理想工具。$(br)使用时右键点击果树或灌木，$(thing)半径7格$()内的所有果实都将被采摘。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "普通收获篮具有$(thing)128$()点耐久度，而铝制收获篮使用时不会损耗耐久。收获篮也可被$(thing)机械手$()等设备使用以实现自动化采收，此过程会正常消耗耐久度。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "收获篮",
+            "recipe": "tfg:shaped/harvest_basket_from_papyrus",
+            "text": "基础款的$(item)收获篮$()可使用浸泡后的纸莎草或硬木制作。"
+        }
+    ]
+}

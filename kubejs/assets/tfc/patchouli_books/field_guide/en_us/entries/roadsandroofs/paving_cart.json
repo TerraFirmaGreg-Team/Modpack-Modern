@@ -1,0 +1,48 @@
+{
+  "name": "Paving Cart",
+  "category": "tfc:roadsandroofs",
+  "icon": "tfg:rnr_plow",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(thing)Paving Cart$() is a specialized cart used for laying down road surfaces quickly and efficiently. It can be filled with road materials and $(thing)Crushed Base Course$() to create roads. The cart can also fill in any existing base course blocks"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Paving Cart",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png" ],
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Width Adjustment Slider",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png" ],
+      "border": true,
+      "text": "The cart allows you to adjust the width of the path in the GUI"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Variable Width Path",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png" ],
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Randomizer Button",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png" ],
+      "border": true,
+      "text": "The cart has a mode that will lay down materials in a random pattern."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Random Material Path",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png" ],
+      "border": true
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfg:rnr_plow": 0
+  },
+  "sortnum": 20
+}

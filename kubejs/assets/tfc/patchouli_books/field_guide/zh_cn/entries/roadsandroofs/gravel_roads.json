@@ -1,0 +1,24 @@
+{
+  "name": "砾石路与碎石路",
+  "category": "tfc:roadsandroofs",
+  "icon": "rnr:rock/gravel_road/chert",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "anchor": "gravel_fill",
+      "recipe": "rnr:crafting/gravel_fill/chert",
+      "title": "碎石混合物",
+      "text": "在基层铺设少量砾石可形成简易小道，提供10%步行速度加成。追加砾石填料并用鹤嘴锄夯实后，可升级为碎石路，获得20%速度增益。"
+    },
+	{
+		"type": "patchouli:image",
+		"title": "建设碎石路",
+		"images": [
+        "rnr:textures/gui/book/macadam.png"
+      ],
+		"border": true
+	}
+  ],
+  "read_by_default": true,
+  "sortnum": 8
+}

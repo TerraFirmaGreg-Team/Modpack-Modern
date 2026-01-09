@@ -23,6 +23,10 @@ build/
 !.pakku/**/*
 !pakku.jar
 
+# Docker
+/.github/docker/data
+/.github/docker/backups
+
 # Configs
 config/jei/world/
 config/gregtech/terminal/
@@ -56,12 +60,17 @@ config/stellarcore_stitcher_cache_vanilla.dat
 
 !config/defaultoptions/options.txt
 
+defaultconfigs/ftbranks/players.snbt
+
 # .minecraft
 !bansoukou/**.zip
 
 
-/.bobby/
-/.mixin.out/
+/.bobby
+/.mixin.out
+/tacz/tacz_default_gun
+/tacz_backup
+/moonlight-global-datapacks
 /classOut
 /backups
 /profileImage
@@ -89,6 +98,10 @@ config/stellarcore_stitcher_cache_vanilla.dat
 /chiselsandbits
 /gtceu/prospection_cache
 /data
+/ESM
+/schematics
+/scripts
+/gtceu
 
 # Client data
 bansoukou
@@ -113,16 +126,14 @@ optionsshaders.txt
 OpenComputersMod-*
 hei_bookmarks.ini
 icon.png
-
-# Server data
-.pakku/server-overrides/libraries
-.pakku/server-overrides/config
-.pakku/server-overrides/defaultconfigs
-.pakku/server-overrides/groovy
-.pakku/server-overrides/scripts
-.pakku/server-overrides/mods
-.pakku/server-overrides/user_jvm_args.txt
-
-/tacz/tacz_default_gun
 EffekseerNativeForJava.dll
 libEffekseerNativeForJava.so
+
+# Server data
+# .pakku/server-overrides/libraries
+# .pakku/server-overrides/config
+# .pakku/server-overrides/defaultconfigs
+# .pakku/server-overrides/groovy
+# .pakku/server-overrides/scripts
+# .pakku/server-overrides/mods
+# .pakku/server-overrides/user_jvm_args.txt

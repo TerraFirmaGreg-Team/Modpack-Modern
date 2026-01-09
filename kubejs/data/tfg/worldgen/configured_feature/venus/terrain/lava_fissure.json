@@ -1,0 +1,9 @@
+{
+	"type": "tfc:fissure",
+	"config": {
+		"wall_state": "beneath:crackrack",
+		"fluid_state": "minecraft:lava",
+		"count": 3,
+		"radius": 6
+	}
+}

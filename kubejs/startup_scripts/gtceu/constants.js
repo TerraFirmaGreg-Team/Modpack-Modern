@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 //#region Disabled Items
@@ -123,7 +123,7 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:damascus_steel_plate",
     "gtceu:double_damascus_steel_plate",
     "gtceu:damascus_steel_gear",
-    "gtceu:damascus_steel_buzzsaw_blade",
+    "gtceu:damascus_steel_buzz_saw_blade",
     "gtceu:damascus_steel_drill_head",
     "gtceu:damascus_steel_chainsaw_head",
     "gtceu:damascus_steel_bolt",
@@ -141,6 +141,27 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:lv_damascus_steel_chainsaw",
     "gtceu:damascus_steel_buzzsaw",
     "gtceu:damascus_steel_bucket",
+    "gtceu:damascus_steel_wire_cutter_head",
+    "gtceu:lv_damascus_steel_wire_cutter",
+    "gtceu:hv_damascus_steel_wire_cutter",
+    "gtceu:iv_damascus_steel_wire_cutter",
+    "gtceu:damascus_steel_butchery_knife_head",
+    "gtceu:damascus_steel_sword_head",
+    "gtceu:damascus_steel_screwdriver_tip",
+    "gtceu:damascus_steel_file_head",
+    "gtceu:damascus_steel_spade_head",
+    "gtceu:damascus_steel_mining_hammer_head",
+    "gtceu:damascus_steel_hoe_head",
+    "gtceu:damascus_steel_hammer_head",
+    "gtceu:damascus_steel_knife_head",
+    "gtceu:damascus_steel_pickaxe_head",
+    "gtceu:damascus_steel_axe_head",
+    "gtceu:damascus_steel_saw_head",
+    "gtceu:damascus_steel_shovel_head",
+    "gtceu:damascus_steel_scythe_head",
+
+    "gtceu:molten_black_bronze_bucket",
+    "gtceu:molten_bismuth_bronze_bucket",
 
     //armor
     "gtceu:bronze_helmet",
@@ -155,11 +176,6 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:titanium_chestplate",
     "gtceu:titanium_leggings",
     "gtceu:titanium_boots",
-
-    // Huh
-    "gtceu:wax_dust",
-    "gtceu:small_wax_dust",
-    "gtceu:tiny_wax_dust",
 
     // Sculk
     "gtceu:tiny_echo_shard_dust",
@@ -214,7 +230,12 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:thorium_block",
     "gtceu:thorium_plate",
     "gtceu:double_thorium_plate",
-    "gtceu:thorium_rod"
+    "gtceu:thorium_rod",
+    "gtceu:thorium_bucket",
+
+    // Replaced with our own
+    "gtceu:paracetamol_pill",
+    "gtceu:rad_away_pill"
 ]);
 //#endregion
 
@@ -230,7 +251,7 @@ global.GTCEU_HIDED_ITEMS = /** @type {const} */ ([
 	  "gtceu:iv_damascus_steel_wrench",
 	  "gtceu:lv_damascus_steel_screwdriver",
 
-	  "gtceu:sus_record",
+	  "gtceu:sus_record"
 ]);
 //#endregion
 
@@ -250,7 +271,7 @@ global.GTCEU_ARMORS = /** @type {const} */ ([
     "gtceu:quarktech_leggings",
     "gtceu:quarktech_boots",
     "gtceu:quarktech_helmet",
-    "gtceu:advanced_quarktech_chestplate",
+    "gtceu:advanced_quarktech_chestplate"
 ]);
 //#endregion
 
@@ -313,7 +334,7 @@ global.TFG_CASTING_MOLDS = /** @type {const} */ ([
     "tfg:lamp_casting_mold",
     "tfg:trapdoor_casting_mold",
     "tfg:chain_casting_mold",
-    "tfg:bell_casting_mold",
+    "tfg:bell_casting_mold"
 ]);
 
 global.GTCEU_CASTING_MOLDS = /** @type {const} */ ([
@@ -334,7 +355,7 @@ global.GTCEU_CASTING_MOLDS = /** @type {const} */ ([
     "gtceu:small_pipe_casting_mold",
     "gtceu:normal_pipe_casting_mold",
     "gtceu:large_pipe_casting_mold",
-    "gtceu:huge_pipe_casting_mold",
+    "gtceu:huge_pipe_casting_mold"
 ]);
 //#endregion
 
@@ -371,7 +392,7 @@ global.ORE_BEARING_STONES = /** @type {const} */ ([
     "mars_stone",
     "venus_stone",
     "mercury_stone",
-    "glacio_stone",
+    "glacio_stone"
 ]);
 //#endregion
 
@@ -379,7 +400,22 @@ global.ORE_BEARING_STONES = /** @type {const} */ ([
 /** @global */
 global.ADD_CIRCUIT = /** @type {const} */ ([
     { recipeId: "gtceu:chemical_reactor/tetrafluoroethylene_from_chloroform", circuitNumber: 1 },
+    { recipeId: "gtceu:large_chemical_reactor/tetrafluoroethylene_from_chloroform", circuitNumber: 1 },
+
     { recipeId: "gtceu:chemical_reactor/hydrofluoric_acid_from_elements", circuitNumber: 2 },
+    { recipeId: "gtceu:large_chemical_reactor/hydrofluoric_acid_from_elements", circuitNumber: 2 },
+
+    { recipeId: "gtceu:chemical_reactor/formic_acid", circuitNumber: 1 },
+    { recipeId: "gtceu:large_chemical_reactor/formic_acid", circuitNumber: 1 },
+
+    { recipeId: "gtceu:chemical_reactor/sodium_bicarbonate_from_salt", circuitNumber: 2 },
+    { recipeId: "gtceu:large_chemical_reactor/sodium_bicarbonate_from_salt", circuitNumber: 2 },
+    
+    { recipeId: "gtceu:chemical_reactor/acetic_acid_from_methanol", circuitNumber: 1 },
+    { recipeId: "gtceu:large_chemical_reactor/acetic_acid_from_methanol", circuitNumber: 1 },
+
+    { recipeId: "gtceu:chemical_reactor/butraldehyde", circuitNumber: 5 },
+    { recipeId: "gtceu:large_chemical_reactor/butraldehyde", circuitNumber: 5 }
 ]);
 //#endregion
 
@@ -394,6 +430,6 @@ global.GTCEU_SUPERCONDUCTORS = /** @type {const} */ ([
     { name: "indium_tin_barium_titanium_cuprate", materialId: "IndiumTinBariumTitaniumCuprate" },
     { name: "uranium_rhodium_dinaquadide", materialId: "UraniumRhodiumDinaquadide" },
     { name: "enriched_naquadah_trinium_europium_duranide", materialId: "EnrichedNaquadahTriniumEuropiumDuranide" },
-    { name: "ruthenium_trinium_americium_neutronate", materialId: "RutheniumTriniumAmericiumNeutronate" },
+    { name: "ruthenium_trinium_americium_neutronate", materialId: "RutheniumTriniumAmericiumNeutronate" }
 ]);
 //#endregion

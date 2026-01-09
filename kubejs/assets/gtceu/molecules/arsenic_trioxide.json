@@ -1,0 +1,170 @@
+{
+	"contents": [
+		{
+			"type": "atom",
+			"element": "As",
+			"index": 0,
+			"x": 1.9603,
+			"y": -1.0063
+		},
+		{
+			"type": "atom",
+			"element": "O",
+			"index": 1,
+			"x": 1.7095,
+			"y": -1.8087
+		},
+		{
+			"type": "atom",
+			"element": "As",
+			"index": 2,
+			"x": 0.55,
+			"y": -1.6268
+		},
+		{
+			"type": "atom",
+			"element": "O",
+			"index": 3,
+			"x": -0.2485,
+			"y": -1.8023
+		},
+		{
+			"type": "atom",
+			"element": "As",
+			"index": 4,
+			"x": 0.0,
+			"y": -1.0
+		},
+		{
+			"type": "atom",
+			"element": "O",
+			"index": 5,
+			"x": 1.1606,
+			"y": -1.1827
+		},
+		{
+			"type": "atom",
+			"element": "O",
+			"index": 6,
+			"x": 0.0,
+			"y": 0.0
+		},
+		{
+			"type": "atom",
+			"element": "O",
+			"index": 7,
+			"x": 0.55,
+			"y": -0.6268
+		},
+		{
+			"type": "atom",
+			"element": "O",
+			"index": 8,
+			"x": 1.9603,
+			"y": -0.0063
+		},
+		{
+			"type": "atom",
+			"element": "As",
+			"index": 9,
+			"x": 0.8661,
+			"y": 0.5
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 5,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 1,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 2,
+			"b": 3,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 3,
+			"b": 4,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 1,
+			"b": 2,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 4,
+			"b": 5,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 4,
+			"b": 6,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 2,
+			"b": 7,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 0,
+			"b": 8,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 6,
+			"b": 9,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 8,
+			"b": 9,
+			"lines": [
+				"solid"
+			]
+		},
+		{
+			"type": "bond",
+			"a": 7,
+			"b": 9,
+			"lines": [
+				"solid"
+			]
+		}
+	]
+}

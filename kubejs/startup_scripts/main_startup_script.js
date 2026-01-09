@@ -1,19 +1,12 @@
-// priority: 0
+// priority: 100
 "use strict";
 
 StartupEvents.registry('item', event => {
-	registerBetterEndItems(event)
-    registerGTCEuItems(event)
     registerTFGItems(event)
 })
 
 StartupEvents.registry('block', event => {
-    registerTFGBlocks(event)
-	registerBetterEndBlocks(event)
-})
-
-StartupEvents.registry('entity_type', event => {
-	registerTFGEntityTypes(event)
+	registerTFGBlocks(event)
 })
 
 BlockEvents.modification(event => {
@@ -22,6 +15,7 @@ BlockEvents.modification(event => {
 })
 
 ItemEvents.modification(event => {
+	registerAdAstraItemModifications(event)
 	registerBeneathItemModifications(event)
 	registerCreateItemModifications(event)
 	registerFirmalifeItemModifications(event)
@@ -32,7 +26,10 @@ ItemEvents.modification(event => {
 
 StartupEvents.registry('fluid', event => {
 	registerTFGFluids(event)
-	registerAE2Fluids(event)
+})
+
+StartupEvents.registry('sound_event', event => {
+	registerTFGSounds(event)
 })
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
@@ -51,24 +48,19 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
-	registerAdAstraMaterials(event)
 	registerAE2Materials(event)
 	registerCreateMaterials(event)
-	registerTFCMaterials(event)
-	registerGTCEuMaterials(event)
 	registerGreateMaterials(event)
 	registerTFGMaterials(event)
-	registerTFGNuclearMaterials(event)
 })
 
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
-	registerTFCIconSets(event)
+	registerTFGIconSets(event)
 })
 
 GTCEuStartupEvents.materialModification(event => {
 	registerGTCEuMaterialModification(event)
 	registerGreateMaterialModification(event)
-	registerAdAstraMaterialModification(event)
 })
 
 GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {

@@ -1,31 +1,19 @@
 {
     "feature": "tfg:venus/terrain/hot_spring_delta",
-    "placement": [
+	"placement": [
 		{
 			"type": "minecraft:count",
 			"count": 6
 		},
 		{
-			"type": "minecraft:height_range",
-			"height": {
-				"type": "minecraft:uniform",
-				"max_inclusive": {
-					"absolute": 200
-				},
-				"min_inclusive": {
-					"above_bottom": 54
-				}
-			}
+			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:heightmap",
-            "heightmap": "WORLD_SURFACE"
+			"heightmap": "WORLD_SURFACE"
 		},
 		{
-			"type": "minecraft:in_square"
-		},
-        {
-            "type": "minecraft:biome"
-        }
+			"type": "minecraft:biome"
+		}
 	]
 }

@@ -1,0 +1,33 @@
+{
+	"name": "tfg:illagers/camp_start_pool",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:illager_generic/small_camp_1",
+				"processors": "minecraft:empty",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:illager_generic/small_camp_2",
+				"processors": "minecraft:empty",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:illager_generic/huntmaster_camp",
+				"processors": "minecraft:empty",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

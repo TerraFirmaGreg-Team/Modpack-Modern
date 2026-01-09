@@ -77,11 +77,11 @@ function registerGTCEUMetalRecipes(event) {
 		event.remove({ mod: 'gtceu', type: 'minecraft:crafting_shaped', output: toolHeadItem })
 
 		if (material.hasProperty(PropertyKey.INGOT)) {
-			const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+			const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
 			if (ingotItem.isEmpty() || ingotItem.hasTag('c:hidden_from_recipe_viewers'))
 				return
 
-			const materialAmount = Math.floor(headTagPrefix.materialAmount() / GTValues.M) === 1 ? 1 : 2;
+			const materialAmount = Math.floor(headTagPrefix.materialAmount() / GTValues.M);
 
 			event.recipes.gtceu.extruder(`tfg:extrude_${material.getName()}_ingot_to_${tagPrefixName}`)
 				.itemInputs(ingotItem.copyWithCount(materialAmount))
@@ -90,17 +90,14 @@ function registerGTCEUMetalRecipes(event) {
 				.duration(material.getMass() * 6)
 				.EUt(GTValues.VA[GTValues.LV])
 
-			let ingotArray = [];
-			for (let i = 0; i < materialAmount; i++)
-				ingotArray.push(ingotItem)
+			let input_array = [];
+			for (let i = 0; i < materialAmount; i++) {
+				input_array.push(ingotItem);
+			}
 
-			event.custom({
-				type: 'vintageimprovements:curving',
-				ingredients: ingotArray,
-				itemAsHead: extruderMold,
-				results: [toolHeadItem],
-				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/curving/${material.getName()}_ingot_to_${tagPrefixName}`)
+			event.recipes.vintageimprovements.curving(toolHeadItem, input_array)
+				.head(extruderMold)
+				.id(`tfg:vi/curving/${material.getName()}_ingot_to_${tagPrefixName}`)
 			
 			if (GTMaterials.Stone !== material) {
 				removeMaceratorRecipe(event, `macerate_${material.getName()}_${tagPrefixName}`)
@@ -128,12 +125,12 @@ function registerGTCEUMetalRecipes(event) {
 
 		} else if (material.hasProperty(PropertyKey.GEM)) {
 
-			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, 1)
+			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, Math.floor(headTagPrefix.materialAmount() / GTValues.M))
 			if (gemItem.isEmpty())
 				return
 
 			event.recipes.gtceu.laser_engraver(`tfg:engrave_${material.getName()}_gem_to_${tagPrefixName}`)
-				.itemInputs(gemItem.copyWithCount(Math.floor(headTagPrefix.materialAmount() / GTValues.M)))
+				.itemInputs(gemItem)
 				.notConsumable(ChemicalHelper.get(TagPrefix.lens, GTMaterials.Glass, 1))
 				.circuit(circuitMeta)
 				.itemOutputs(toolHeadItem)
@@ -187,6 +184,7 @@ function registerGTCEUMetalRecipes(event) {
 		if (material.hasFlag(MaterialFlags.GENERATE_PLATE)
 			&& material !== GTMaterials.Wood
 			&& material !== GTMaterials.TreatedWood
+			&& material !== GTMaterials.Stone
 			&& !material.hasProperty(PropertyKey.POLYMER))
 		{
 			const plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
@@ -717,15 +715,12 @@ function registerGTCEUMetalRecipes(event) {
 
 			// Centrifuging
 			let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(0, material);
-			let byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1).toJson()
-			byproductItem.add("chance", 0.111);
 
-			event.custom({
-				type: 'vintageimprovements:centrifugation',
-				ingredients: [impureDustItem],
-				results: [dustItem, byproductItem],
-				processingTime: material.getMass() * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/centrifuge/${material.getName()}_dust_from_impure`)
+			event.recipes.vintageimprovements.centrifugation(
+				[dustItem, Item.of(ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)).withChance(0.111)],
+				impureDustItem)
+				.processingTime(material.getMass() * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+				.id(`tfg:vi/centrifuge/${material.getName()}_dust_from_impure`)
 
 			// Dropping in water
 			event.custom({
@@ -763,15 +758,12 @@ function registerGTCEUMetalRecipes(event) {
 
 			// Centrifuging
 			let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(1, material);
-			let byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1).toJson()
-			byproductItem.add("chance", 0.111);
 
-			event.custom({
-				type: 'vintageimprovements:centrifugation',
-				ingredients: [pureDust],
-				results: [dustItem, byproductItem],
-				processingTime: material.getMass() * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/centrifuge/${material.getName()}_dust_from_pure`)
+			event.recipes.vintageimprovements.centrifugation(
+				[dustItem, Item.of(ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)).withChance(0.111)],
+				pureDust)
+				.processingTime(material.getMass() * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+				.id(`tfg:vi/centrifuge/${material.getName()}_dust_from_pure`)
 
 			// Dropping in water
 			event.custom({
@@ -800,7 +792,7 @@ function registerGTCEUMetalRecipes(event) {
 		let smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
 
 		event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(
-			`gtceu:${material.getName()}_bud_indicator`, [gem, '#tfc:chisels']))
+			ChemicalHelper.get(TFGTagPrefix.budIndicator, material, 1), [gem, '#tfc:chisels']))
 			.id(`shapeless/${material.getName()}_bud_indicator`)
 
 		event.shaped(smallDust,
@@ -815,6 +807,9 @@ function registerGTCEUMetalRecipes(event) {
 		event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, amount), ChemicalHelper.get(TagPrefix.block, material, 1))
 			.recipeTier(0)
 			.id(`greate:pressing/unpacking_${material.getName()}_block`)
+
+		event.recipes.tfc.quern(ChemicalHelper.get(TagPrefix.dust, material, 1), ChemicalHelper.get(TagPrefix.gem, material, 1))
+			.id(`tfg:quern/${material.getName()}_gem_to_dust`)
 	}
 
 	/**
@@ -896,7 +891,7 @@ function registerGTCEUMetalRecipes(event) {
 
 		event.recipes.gtceu.assembler(`tfg:${material.getName()}_lamp_from_liquid`)
 			.itemInputs(unfinishedLampStack)
-			.inputFluids(Fluid.of(GTMaterials.Glass.getFluid(), 576))
+			.inputFluids(Fluid.of(GTMaterials.Glass.getFluid(), 144))
 			.itemOutputs(finishedLampStack)
 			.duration(material.getMass() * 7)
 			.circuit(13)
@@ -1086,21 +1081,6 @@ function registerGTCEUMetalRecipes(event) {
 	/**
 	 * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
 	*/
-	const processBars = (material) => {
-		const barsStack = ChemicalHelper.get(TFGTagPrefix.bars, material, 4)
-		const ingotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-		if (barsStack === null) return;
-
-		event.recipes.gtceu.cutter(`tfg:${material.getName()}_bars`)
-			.itemInputs(ingotStack)
-			.itemOutputs(barsStack)
-			.duration(100)
-			.EUt(GTValues.VA[GTValues.LV])
-	}
-
-	/**
-	 * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
-	*/
 	const processBuzzsawBlade = (material) => {
 		const buzzsawBladeItem = ChemicalHelper.get(TagPrefix.toolHeadBuzzSaw, material, 1)
 		const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
@@ -1115,13 +1095,10 @@ function registerGTCEUMetalRecipes(event) {
 			.EUt(GTValues.VA[isLowTier ? GTValues.LV : GTValues.MV])
 
 		if (isLowTier) {
-			event.custom({
-				type: 'vintageimprovements:polishing',
-				ingredients: [doublePlateItem],
-				results: [buzzsawBladeItem],
-				speed_limits: 0,
-				processingTime: material.getMass() * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/lathe/${material.getName()}_buzzsaw`)
+			event.recipes.vintageimprovements.polishing(buzzsawBladeItem, doublePlateItem)
+				.speedLimits(0)
+				.processingTime(material.getMass() * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+				.id(`tfg:vi/lathe/${material.getName()}_buzzsaw`)
 		}
 
 		removeMaceratorRecipe(event, `macerate_${material.getName()}_buzz_saw_blade`)
@@ -1184,13 +1161,15 @@ function registerGTCEUMetalRecipes(event) {
 		removeMaceratorRecipe(event, `macerate_iv_${material.getName()}_wirecutter`)
 		event.remove({ id: `gtceu:arc_furnace/arc_iv_${material.getName()}_wirecutter` })
 	}
+	
+	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
 
 	forEachMaterial(material => {
 		// greate moment
-		if (material === GTMaterials.get("andesite_alloy")
-			|| material === GTMaterials.get("refined_radiance")
-			|| material === GTMaterials.get("shadow_steel")
-			|| material === GTMaterials.get("chromatic_compound")
+		if (material === $GreateMaterials.AndesiteAlloy
+			|| material === $GreateMaterials.RefinedRadiance
+			|| material === $GreateMaterials.ShadowSteel
+			|| material === $GreateMaterials.ChromaticCompound
 			|| material === GTMaterials.DamascusSteel)
 		{ return; }
 
@@ -1243,7 +1222,6 @@ function registerGTCEUMetalRecipes(event) {
 			processTrapdoor(material)
 			processChain(material)
 			processBell(material)
-			processBars(material)
 			processBuzzsawBlade(material)
 
 			event.remove({ id: `gtceu:shaped/spring_${material.getName()}` })

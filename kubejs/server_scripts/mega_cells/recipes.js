@@ -16,6 +16,7 @@ const registerMegaCellsRecipes = (event) => {
         .circuit(1)
         .duration(960)
         .EUt(2048)
+		.addMaterialInfo(true)
 
     //printed accumulation circuit
     event.recipes.gtceu.forming_press('megacells:printed_accumulation_processor')
@@ -82,7 +83,7 @@ const registerMegaCellsRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.IV])
 
     //Mega Item Cell Housing
-    event.shaped('megacells:mega_item_cell_housing', [
+    event.recipes.gtceu.shaped('megacells:mega_item_cell_housing', [
         'ABA',
         'CDC',
         'BBB'
@@ -91,10 +92,10 @@ const registerMegaCellsRecipes = (event) => {
         B: '#forge:plates/maraging_steel_300',
         C: '#forge:fine_wires/niobium_titanium',
         D: '#gtceu:circuits/iv',
-    }).id('tfg:crafting/mega_item_cell_housing')
+    }).addMaterialInfo().id('tfg:crafting/mega_item_cell_housing')
     
     //Mega Fluid Cell Housing
-    event.shaped('megacells:mega_fluid_cell_housing', [
+    event.recipes.gtceu.shaped('megacells:mega_fluid_cell_housing', [
         'ABA',
         'CDC',
         'BBB'
@@ -103,10 +104,10 @@ const registerMegaCellsRecipes = (event) => {
         B: '#forge:plates/incoloy_ma_956',
         C: '#forge:fine_wires/niobium_titanium',
         D: '#gtceu:circuits/iv',
-    }).id('tfg:crafting/mega_fluid_cell_housing')
+    }).addMaterialInfo().id('tfg:crafting/mega_fluid_cell_housing')
 
     //cell dock
-    event.shaped('megacells:cell_dock', [
+    event.recipes.gtceu.shaped('megacells:cell_dock', [
         'ABA',
         'CDC',
     ], {
@@ -114,7 +115,7 @@ const registerMegaCellsRecipes = (event) => {
         B: 'ae2:engineering_processor',
         C: '#ae2:glass_cable',
         D: '#gtceu:circuits/lv',
-    }).id('tfg:crafting/megacells_cell_dock')
+    }).addMaterialInfo().id('tfg:crafting/megacells_cell_dock')
 
     //#region Storage Components
 

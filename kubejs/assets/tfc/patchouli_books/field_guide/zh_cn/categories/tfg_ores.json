@@ -1,0 +1,6 @@
+{
+    "name": "TFG矿物",
+    "description": "TFG整合包采用独特的矿脉生成系统，类似群峦传说的矿脉生成机制——大而稀有的矿脉，但每个矿脉会产出多种矿物。本章将列出所有矿脉类型及其分布区域。$(br2)矿脉以其最主要的矿石命名，但大多数矿脉包含3-5种矿物。$(br2)另请参阅：$(l:the_world/geology)地质学$()，$(l:getting_started/finding_ores)矿石、金属和铸造$()",
+    "icon": "tfc:ore/pyrite",
+    "sortnum": 60
+}

@@ -3,8 +3,6 @@
 
 const registerCccBridgeRecipes = (event) => {
 	
-    registerCccBridgeRecyclingRecipes(event);
-
     event.remove({not: [
 		{ id: 'cccbridge:to_target_block' }, 
 		{ id: 'cccbridge:to_source_block' }
@@ -17,6 +15,7 @@ const registerCccBridgeRecipes = (event) => {
 		.itemOutputs('cccbridge:animatronic_block')
 		.duration(800)
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true)
 
     // Scroller Pane
 	event.recipes.gtceu.assembler('cccbridge:assembler/scroller_block')
@@ -25,6 +24,7 @@ const registerCccBridgeRecipes = (event) => {
 		.itemOutputs('cccbridge:scroller_block')
 		.duration(600)
 		.EUt(GTValues.VA[GTValues.MV])
+		.addMaterialInfo(true)
 
     // RedRouter Block
 	event.recipes.gtceu.assembler('cccbridge:assembler/redrouter_block')
@@ -33,6 +33,7 @@ const registerCccBridgeRecipes = (event) => {
 		.itemOutputs('cccbridge:redrouter_block')
 		.duration(800)
 		.EUt(GTValues.VA[GTValues.MV])
+		.addMaterialInfo(true)
 
     // Source Block
 	event.recipes.gtceu.assembler('cccbridge:assembler/source_block')
@@ -41,4 +42,5 @@ const registerCccBridgeRecipes = (event) => {
 		.itemOutputs('cccbridge:source_block')
 		.duration(800)
 		.EUt(GTValues.VA[GTValues.MV])
+		.addMaterialInfo(true)
 }

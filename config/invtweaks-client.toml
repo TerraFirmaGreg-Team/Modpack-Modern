@@ -90,7 +90,7 @@
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
-		containerClass = "com.github.glodblock.epp.client.gui.*"
+		containerClass = "com.glodblock.github.extendedae.client.gui.*"
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
@@ -135,6 +135,14 @@
 
 	[[sorting.containerOverrides]]
 		containerClass = "com.simibubi.create.content.equipment.toolbox.ToolboxMenu"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "mod.traister101.sns.client.screen.ContainerItemScreen"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "dev.thomas.tfclunchbox.client.screen.*"
 		sortRange = ""
 
 #Tweaks

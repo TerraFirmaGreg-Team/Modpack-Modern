@@ -1,0 +1,174 @@
+{
+    "name": "砧具锻造指南",
+    "icon": "gtceu:red_steel_hammer",
+    "category": "tfc:tfg_tips",
+    "read_by_default": true,
+    "priority": false,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "砧具锻造",
+            "text": "在$(l:mechanics/anvils)砧具$()中$(l:mechanics/anvils#working)锻造$()是$(thing)群峦格雷$()整合包中的一个核心流程，你在迈向$(thing)蒸汽与机械时代$()过程中的大部分工作都需在$(l:mechanics/anvils)砧具$()上完成。$(br)本指南分为两部分：$(l:tfg_tips/anvil_working_guide#ui_explained)理解界面$()与$(l:tfg_tips/anvil_working_guide#how_to_perfectly_forge)如何完美锻造$()。$(br2)整合包配有名为$(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper)TFC Anvil Helper$()的自定义$(thing)资源包$()，请务必启用以确保本指南内容正常显示。$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui.png"
+            ],
+            "border": false,
+            "text": "启用TFC Anvil Helper后的砧具界面"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false,
+            "anchor": "ui_explained",
+            "tile": "界面详解",
+            "text": "启用TFC Anvil Helper后的砧具界面（颜色标识版）。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#ff0000)1.$() 你在砧上选择制作的物品。每个物品都有特定的$(#be00ff)步骤序列$()和$(#ff6b00)目标加工量$()要求。$(br)$(#ff00c6)2.$() 你正在加工的输入物品。$(br)$(#be00ff)3.$() 物品完成前必须按顺序执行的步骤序列。共有4种序列类型（详见下页）："
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "(注意：X 是任意步骤的通配符)$(br)$(li)x_任意: 步骤可以在最后3个动作中的任意一个发生。$()$(li)x_末尾: 必须是最后一个执行的步骤。$()$(li)x_非最末: 步骤不能是最后一个执行的步骤。$()$(li)x_倒数第二: 必须是倒数第二个步骤。$()$(li)x_倒数第三: 必须是倒数第三个步骤$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#2e00ff)4.$()步骤类型。每种类型都会增加或减少当前加工值。从左至右、从上到下依次为：$(li)轻击：-3$()$(li)中击：-6$()$(li)冲压：+2$()$(li)弯曲：+7$()$(li)重击：-9$()$(li)牵拉：-15$()$(li)镦锻：+13$()$(li)收缩：+16$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#00a7ff)5.$() 放置锤子和助焊剂（焊接时使用）的槽位。$(br)$(#00ff26)6. $()物品当前的加工量。执行不同步骤会增加或减少此值。$(br)$(#fff400)7. $()目标加工值。$(#00ff26)当前加工量$()必须$(bold)精确$()等于目标值，且完成所有$(#ff00c6)必需步骤$()，物品才算制作完成。$(br)$(#ff6b00)8. $()加工量进度条，用于比对当前加工量与目标加工量。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "how_to_perfectly_forge",
+            "title": "如何完美锻造",
+            "text": "$(thing)完美锻造$()一个会损耗的物品，比如$(thing)工具头$()、$(thing)武器$()和$(thing)护甲$()，若以更少的步骤完成，成品将获得耐久度和效率上的加成。在极少步骤内完成锻造的物品会成为完美锻造成品，不仅提升最终品质，还能减少锤子本身的磨损。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/perfectly_forged_item.png"
+            ],
+            "border": false,
+            "text": "一个完美锻造的锻铁镐头"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "锻造指南",
+            "item": "gtceu:wrought_iron_pickaxe_head",
+            "text": "这部分指南将以锻铁镐头为例，介绍如何达成完美锻造。$(br2)$(bold)$(italic)免责声明：$()$(br)虽然在群峦格雷所有世界中，物品的必需步骤和序列是固定的，但$(bold)目标加工值$()因世界种子而异。因此本指南假设锻铁镐头的目标加工值是$(bold)83$()。"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "第一步",
+            "text": "首先，将所有必需步骤的数值相加，得到我们称之为\"必需加工量\"的值。镐头需要以下步骤：$(li)$(bold)冲压$() 末尾$()$(li)$(bold)弯曲$() 非最末$()$(li)$(bold)牵拉$() 非最末$()。$(br)将这些步骤的数值相加：$(br)$(bold)2 (冲压) + 7 (弯曲) + (-15) (牵拉) = -6$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/steps.png"
+            ],
+            "text": "制作镐头所需的步骤"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "第二步",
+            "text": "我们的主要目标是将加工量对齐目标值，但同时必须满足步骤序列的要求。因此，直接对齐加工量与目标值并不可行。我们需要根据目标加工值和\"必需加工量\"计算出一个中间值。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "此值的计算方法取决于\"必需加工量\"的正负：$(li)若\"必需加工量\"为正值$()$(li2)从\"目标加工值\"中减去\"必需加工量\"的绝对值$()$(li3)83 - 6 == $(bold)77$()$()$(li)若\"必需加工量\"为负值$()$(li2)将\"必需加工量\"的绝对值加到\"目标加工值\"上$()$(li3)83 + 6 = $(bold)89$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "本例中\"必需加工值\"为 -6，故中间值为 $(bold)89$()。$(br)你可能会问，如何获知精确的目标加工值？砧具界面的进度条会显示。刻度线虽只显示20的倍数，但可通过颜色判断：$(li)浅灰色：代表5的倍数$()$(li)灰色：代表奇数$()$(li)深灰色：代表偶数$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_numbers.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/target_work_for_wrought_iron_pickaxe_head.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "title": "第三步",
+            "text": "有了从\"目标加工值\"和\"必需加工值\"推导出的中间值后，我们需要通过锻造使加工量达到这个值。你可以通过手动累加各步骤的数值来完成，或直接参考界面进度条上的\"速查表\"（每种颜色对应一种步骤类型）。$(br)例如：红色 = 收缩 (+16)"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_cheat_sheet.png"
+            ],
+            "text": "16 + 16 + 16 + 16 + 16 + 7 + 2 = 89"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "第四步",
+            "text": "了解步骤组合后，开始将加工值推进到中间值。对于目标值为83的镐头，需先达到89。因此，我们执行：(收缩 x 5) -> 弯曲 -> 冲压。$(br2)当加工值达到中间值后，严格按必需步骤序列执行：牵拉 -> 弯曲 -> 冲压。搞定！我们成功获得了完美锻造的物品！"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_no_work.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_some_work.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_complete.png"
+            ],
+            "text": "未加工的锭 -> 达到目标中间值 -> 执行物品必需步骤后的效果"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "其他示例",
+            "text": "我们再看板材和杆的例子。请注意，目标加工值因世界种子而异，你在游戏中的数值会有所不同。$(br)板材目标值：$(bold)111$()$(br)必需步骤：轻击 x 3（任意顺序）。$(br)\"必须加工值\"： -3 x 3 = -9$(br)中间值：111 + 9 = 120。$(br)达成中间值：(收缩 x 5)->(镦锻 x 2)->(冲压 x 2)$(br)完成物品：120 - (轻击 x 3) = $(bold)111$()。两项要求均已满足。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "杆目标值：$(bold)78$()$(br)必需步骤：延展->延展->弯曲$(br)\"必需加工值\"： (-15 x 2) + 7 = -23$(br)中间值：78 + 23 = 101。$(br)达成中间值：(收缩 x 5)->(弯曲 x 3)$(br)完成物品：101 - 15 - 15 + 7 = 78。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "其他提示",
+            "text": "如果某个必需步骤显示为空，则表示这是一个通配符，可以使用任何步骤。$(br2)如果计算失误，你可以随时将物品熔化成锭，这将移除物品的\"已加工\"标签，让你可以重新尝试完美锻造。"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "恭喜你阅读完本指南！如果你是贡献者并想重新截取本指南的图片，编写时使用的种子是：$(bold)-7291708953208913102$()。你也可以创建一个创造模式世界来亲自测试算法！$(br2)$(br)另外……既然你都读到这里了，如果不想手动计算，可以随时使用这个$(l:https://adrianmiller99.github.io/tfg-anvil-calculator/src/index.html)群峦传说砧计算器$()……"
+        }
+    ]
+}

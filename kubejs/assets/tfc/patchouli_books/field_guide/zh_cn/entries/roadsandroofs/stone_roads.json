@@ -1,0 +1,35 @@
+{
+  "name": "石质道路",
+  "category": "tfc:roadsandroofs",
+  "icon": "rnr:rock/flagstones/basalt",
+  "pages": [
+    {
+		"type": "patchouli:text",
+		"text": "基层之上可铺设多种石质路面，均提供20%速度加成。圆石路通过在基层上铺设石子而成；方石路可用石砖或陶砖建造。"
+	},
+    {
+      "type": "patchouli:crafting",
+      "anchor": "gneiss_flagstones",
+      "recipe": "rnr:crafting/flagstone/gneiss",
+      "title": "制作铺路砖",
+      "text": "铺路砖可由平滑石头或砂岩方块制作。"
+    },
+	{
+      "type": "patchouli:crafting",
+      "anchor": "pink_sandstone_flagstones",
+      "recipe": "rnr:crafting/flagstone/pink_sandstone",
+      "title": "制作铺路砖",
+      "text": "铺路砖可由平滑石头或砂岩方块制作。"
+    },
+	{
+		"type": "patchouli:image",
+		"title": "玄武岩方石路",
+		"images": [
+        "rnr:textures/gui/book/sett_road.png"
+      ],
+		"border": true
+	}
+  ],
+  "read_by_default": true,
+  "sortnum": 12
+}

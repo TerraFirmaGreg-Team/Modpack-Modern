@@ -1,10 +1,10 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 global.FRAMEDBLOCKS_DISABLED_ITEMS = [
     "framedblocks:framed_soul_torch",
     "framedblocks:framed_torch",
-    "framedblocks:framed_obsidian_pressure_plate",
+    "framedblocks:framed_obsidian_pressure_plate"
 ];
 
 /** @satisfies {Special.Item[]} */
@@ -44,7 +44,7 @@ global.FRAMED_HALF_BLOCKS = /** @type {const} */ ([
     "framedblocks:framed_centered_slab",
     "framedblocks:framed_centered_panel",
     "framedblocks:framed_checkered_slab",
-    "framedblocks:framed_checkered_panel",
+    "framedblocks:framed_checkered_panel"
 ]);
 
 /** @satisfies {Special.Item[]} */
@@ -68,5 +68,5 @@ global.FRAMED_TINY_BLOCKS = /** @type {const} */ ([
     "framedblocks:framed_small_corner_slope_panel",
     "framedblocks:framed_small_inner_corner_slope_panel",
     "framedblocks:framed_small_double_corner_slope_panel",
-    "framedblocks:framed_mini_cube",
+    "framedblocks:framed_mini_cube"
 ]);

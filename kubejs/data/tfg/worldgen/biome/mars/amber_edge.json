@@ -8,8 +8,19 @@
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2.0,
-			"sound": "minecraft:ambient.cave",
+			"sound": "tfg:ambient.mars_desert.mood",
 			"tick_delay": 6000
+		},
+		"additions_sound": {
+			"sound": "tfg:ambient.mars_desert.additions",
+			"tick_chance": 0.0111
+		},
+		"ambient_sound": "tfg:ambient.mars_desert.loop",
+		"music": {
+			"max_delay": 24000,
+			"min_delay": 12000,
+			"replace_current_music": false,
+			"sound": "minecraft:music.overworld.desert"
 		},
 		"sky_color": 15117444,
 		"water_color": 4159204,

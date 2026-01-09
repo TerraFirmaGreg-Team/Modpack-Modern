@@ -18,7 +18,7 @@
 			"title": "Maple",
 			"item": "tfc:wood/log/maple,tfc:wood/wood/maple,tfc:wood/leaves/maple,tfc:wood/sapling/maple",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -8.4°C$(br)$(thing)Maximum Temperature$(): 8°C$(br)$(thing)Minimum Rainfall$(): 240$(br)$(thing)Maximum Rainfall$(): 470$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -4°C$(br)$(thing)Max Temp for Production$(): 6°C$(br)$(thing)Spring Exclusive$(): Yes$(br)$(thing)Flow Rate$(): 5mb"
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -8.4°C$(br)$(thing)Maximum Temperature$(): 8°C$(br)$(thing)Minimum Rainfall$(): 240$(br)$(thing)Maximum Rainfall$(): 470$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -15°C$(br)$(thing)Max Temp for Production$(): 5°C$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 5mb"
 		},
 		{
 			"type": "patchouli:image",
@@ -32,7 +32,7 @@
 			"title": "Birch",
 			"item": "tfc:wood/log/birch,tfc:wood/wood/birch,tfc:wood/leaves/birch,tfc:wood/sapling/birch",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -12.1°C$(br)$(thing)Maximum Temperature$(): 6.1°C$(br)$(thing)Minimum Rainfall$(): 125$(br)$(thing)Maximum Rainfall$(): 310$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -4°C$(br)$(thing)Max Temp for Production$(): 6°C$(br)$(thing)Spring Exclusive$(): Yes$(br)$(thing)Flow Rate$(): 5mb"
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -12.1°C$(br)$(thing)Maximum Temperature$(): 6.1°C$(br)$(thing)Minimum Rainfall$(): 125$(br)$(thing)Maximum Rainfall$(): 310$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -15°C$(br)$(thing)Max Temp for Production$(): 5°C$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 5mb"
 		},
 		{
 			"type": "patchouli:image",

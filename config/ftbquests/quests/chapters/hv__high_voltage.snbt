@@ -33,6 +33,24 @@
 			x: 13.0d
 			y: -6.0d
 		}
+		{
+			id: "4A902B3F8AE331AC"
+			linked_quest: "5D188F6C46EA9ED0"
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			id: "513464FBE4A87CB7"
+			linked_quest: "3A2E442E4D84C891"
+			x: 2.5d
+			y: -10.0d
+		}
+		{
+			id: "1B29194F9C306CFE"
+			linked_quest: "36B9B5024356C53C"
+			x: 3.5d
+			y: -10.0d
+		}
 	]
 	quests: [
 		{
@@ -170,8 +188,6 @@
 			description: ["{quests.high_voltage.assembler.desc}"]
 			icon: "gtceu:hv_assembler"
 			id: "16B735F9C391D260"
-			shape: "octagon"
-			size: 2.0d
 			tasks: [{
 				id: "1B70E35262CA2CB8"
 				item: "gtceu:hv_assembler"
@@ -226,7 +242,7 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.ulv_circuits.title}"
-			x: -3.0d
+			x: -3.5d
 			y: 1.5d
 		}
 		{
@@ -237,8 +253,6 @@
 			description: ["{quests.high_voltage.hv_energy_hatch.desc}"]
 			icon: "gtceu:hv_energy_input_hatch"
 			id: "5DBBD9B1F5B01F4E"
-			shape: "octagon"
-			size: 1.5d
 			subtitle: "{quests.high_voltage.hv_energy_hatch.subtitle}"
 			tasks: [
 				{
@@ -267,8 +281,6 @@
 			description: ["{quests.high_voltage.chem_reactor.desc}"]
 			icon: "gtceu:hv_chemical_reactor"
 			id: "390E59F05132FCB8"
-			shape: "octagon"
-			size: 2.0d
 			tasks: [{
 				id: "652CFAE1FA60F3E2"
 				item: "gtceu:hv_chemical_reactor"
@@ -423,7 +435,7 @@
 			icon: "gtceu:hv_circuit_assembler"
 			id: "6B1595678ECB7AC8"
 			shape: "octagon"
-			size: 3.0d
+			size: 1.5d
 			subtitle: "{quests.high_voltage.circuit_assembler.subtitle}"
 			tasks: [{
 				id: "337D8EF42A7BD3A2"
@@ -478,15 +490,26 @@
 					type: "item"
 				}
 				{
-					count: 40L
 					id: "18AECBFB42064D4E"
 					item: "gtceu:plascrete"
 					type: "item"
 				}
 				{
-					count: 10L
 					id: "4DA87A845076183A"
 					item: "gtceu:cleanroom_glass"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0B8D91BE431AEB56"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:auto_maintenance_hatch)item(gtceu:maintenance_hatch))"
+						}
+					}
+					title: "{quests.high_voltage.cleanroom.task}"
 					type: "item"
 				}
 			]
@@ -535,7 +558,7 @@
 				}
 			]
 			title: "{quests.high_voltage.fluorine.title}"
-			x: 1.0d
+			x: 1.5d
 			y: 4.5d
 		}
 		{
@@ -557,11 +580,13 @@
 				{
 					id: "54D65A0A939DAD54"
 					item: "gtceu:hydrofluoric_acid_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "3E6E6F21B34F86B4"
 					item: "gtceu:chloroform_bucket"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -577,6 +602,7 @@
 			optional: true
 			shape: "square"
 			size: 1.0d
+			subtitle: "{quests.high_voltage.nitrobenzene.subtitle}"
 			tasks: [
 				{
 					id: "33CF24B0A19D2F25"
@@ -591,8 +617,8 @@
 				}
 			]
 			title: "{quests.high_voltage.nitrobenzene.title}"
-			x: -1.0d
-			y: 9.5d
+			x: -3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["7CC79617A4965F25"]
@@ -606,7 +632,7 @@
 			icon: "gtceu:large_chemical_reactor"
 			id: "528CE69DA4358B2E"
 			shape: "octagon"
-			size: 3.0d
+			size: 2.0d
 			tasks: [
 				{
 					id: "4738F666E22B212B"
@@ -627,7 +653,7 @@
 			]
 			title: "{quests.high_voltage.lcr.title}"
 			x: 0.0d
-			y: 7.0d
+			y: 6.0d
 		}
 		{
 			description: [
@@ -654,7 +680,7 @@
 			}]
 			title: "{quests.high_voltage.tnt.title}"
 			x: 3.5d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -719,7 +745,7 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.implosion_compressor.title}"
-			x: 2.5d
+			x: 2.0d
 			y: 2.0d
 		}
 		{
@@ -751,8 +777,8 @@
 				}
 			]
 			title: "{quests.high_voltage.nitric_acid.title}"
-			x: 0.0d
-			y: 9.5d
+			x: -1.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5BACED5AE350EAB1"]
@@ -760,7 +786,7 @@
 			icon: "gtceu:cetane_boosted_diesel_bucket"
 			id: "04F6E968CEEC3D49"
 			optional: true
-			shape: "square"
+			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.high_voltage.cetane_diesel.subtitle}"
 			tasks: [
@@ -777,8 +803,8 @@
 				}
 			]
 			title: "{quests.high_voltage.cetane_diesel.title}"
-			x: 1.0d
-			y: 9.5d
+			x: -3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["16B735F9C391D260"]
@@ -835,7 +861,6 @@
 				"{@pagebreak}"
 				"{quests.high_voltage.hv_macerator.desc.2}"
 			]
-			icon: "gtceu:hv_macerator"
 			id: "6B7762F672BAE76F"
 			shape: "octagon"
 			size: 1.5d
@@ -877,8 +902,8 @@
 				}
 			]
 			title: "{quests.high_voltage.ammonia.title}"
-			x: -3.0d
-			y: 6.0d
+			x: -1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["52AD30F04DD5A812"]
@@ -886,8 +911,6 @@
 			description: ["{quests.high_voltage.hv_mixer.desc}"]
 			icon: "gtceu:hv_mixer"
 			id: "05ABC370D7153350"
-			shape: "octagon"
-			size: 1.5d
 			subtitle: "{quests.high_voltage.hv_mixer.subtitle}"
 			tasks: [{
 				id: "6D522B2EF097AA95"
@@ -908,7 +931,7 @@
 			description: ["{quests.high_voltage.blue_alloy.desc}"]
 			icon: "gtceu:blue_alloy_ingot"
 			id: "073F59194B479AA3"
-			shape: "square"
+			shape: "diamond"
 			size: 1.0d
 			subtitle: "{quests.high_voltage.blue_alloy.subtitle}"
 			tasks: [{
@@ -918,7 +941,7 @@
 			}]
 			title: "{quests.high_voltage.blue_alloy.title}"
 			x: 0.0d
-			y: -10.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -1127,7 +1150,7 @@
 				dimension: "ad_astra:moon"
 				icon: "ad_astra:moon_globe"
 				id: "39DDB5FE1449E38A"
-				title: "I'm on the Moon"
+				title: "{quests.high_voltage.welcome_moon.title}"
 				type: "dimension"
 			}]
 			title: "{quests.high_voltage.welcome_moon.title}"
@@ -1228,7 +1251,12 @@
 				"04F6E968CEEC3D49"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ \"text\": \"{quests.high_voltage.linked_quest_energy.desc}\", \"bold\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CDB9778C7A30044\" } }"]
+			description: [
+				"{quests.high_voltage.linked_quest_energy.desc}"
+				""
+				"{ \"text\": \"▶▶▶▶▶▶▶\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CDB9778C7A30044\" } }"
+			]
+			icon: "gtceu:ev_vanadium_battery"
 			id: "595C5A01358B9550"
 			subtitle: "{quests.high_voltage.linked_quest_energy.subtitle}"
 			tasks: [{
@@ -1237,8 +1265,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.high_voltage.linked_quest_energy.title}"
-			x: 0.0d
-			y: 11.0d
+			x: -4.5d
+			y: 6.0d
 		}
 		{
 			description: ["{quests.high_voltage.kaolinite_powder.desc}"]
@@ -1258,10 +1286,19 @@
 		{
 			dependencies: ["3FBDC8552F7D8008"]
 			description: ["{quests.high_voltage.gun.desc}"]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 10
+					GunFireMode: "SEMI"
+					GunId: "create_armorer:sniper_semi_clockwork"
+					HasBulletInBarrel: 1b
+				}
+			}
 			id: "74C6DD5F67B1731F"
 			optional: true
 			shape: "heart"
-			size: 1.5d
 			subtitle: "{quests.high_voltage.gun.subtitle}"
 			tasks: [
 				{
@@ -1322,7 +1359,7 @@
 			]
 			title: "{quests.high_voltage.gun.title}"
 			x: 10.0d
-			y: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["00A2566109144D7F"]
@@ -1529,14 +1566,15 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.wand.title}"
-			x: 13.0d
-			y: -8.0d
+			x: 14.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["396E85A39FF414CF"]
 			description: ["{quests.high_voltage.hypertubes.desc}"]
 			id: "159A0DAEE55DCAC0"
 			optional: true
+			shape: "heart"
 			subtitle: "{quests.high_voltage.hypertubes.subtitle}"
 			tasks: [
 				{
@@ -1553,6 +1591,85 @@
 			title: "{quests.high_voltage.hypertubes.title}"
 			x: 11.5d
 			y: -7.5d
+		}
+		{
+			dependencies: ["16B735F9C391D260"]
+			description: [
+				"{quests.medium_voltage.mv_long_pipe.desc.1}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.mv_long_pipe.desc.2}"
+			]
+			icon: "gtceu:long_distance_fluid_pipeline_endpoint"
+			id: "0015BD8AA5A517D1"
+			optional: true
+			shape: "heart"
+			size: 1.0d
+			subtitle: "{quests.medium_voltage.mv_long_pipe.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "7C8964FAF91C1529"
+					item: "gtceu:long_distance_fluid_pipeline_endpoint"
+					type: "item"
+				}
+				{
+					id: "48937E331D0184E7"
+					item: "gtceu:long_distance_fluid_pipeline"
+					type: "item"
+				}
+			]
+			title: "{quests.medium_voltage.mv_long_pipe.title}"
+			x: 5.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7FA0ACB7F161F378"]
+			description: ["{quests.high_voltage.titanium_greate.desc}"]
+			id: "04799A40C5910B3F"
+			optional: true
+			shape: "heart"
+			tasks: [
+				{
+					id: "5B94BB35A8480214"
+					item: "greate:titanium_cogwheel"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0C95EDF964B17ED6"
+					item: "greate:large_titanium_cogwheel"
+					type: "item"
+				}
+				{
+					id: "2E602B31550041B9"
+					item: "greate:titanium_shaft"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.high_voltage.titanium_greate.title}"
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["36B9B5024356C53C"]
+			description: [
+				"{quests.gregtech_energy.reformate_gas.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.reformate_gas.desc.2}"
+			]
+			id: "3E4E63D5B8CB6860"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.gregtech_energy.reformate_gas.subtitle}"
+			tasks: [{
+				id: "575518211DA29A4E"
+				item: "tfg:reformate_gas_bucket"
+				type: "item"
+			}]
+			title: "{quests.gregtech_energy.reformate_gas.title}"
+			x: 5.0d
+			y: -10.0d
 		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]

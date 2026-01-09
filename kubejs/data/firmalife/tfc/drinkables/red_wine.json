@@ -1,0 +1,11 @@
+{
+	"ingredient": "firmalife:red_wine",
+	"thirst": 15,
+	"effects": [
+		{
+			"type": "minecraft:strength",
+			"duration": 6400,
+			"amplifier": 0
+		}
+	]
+}

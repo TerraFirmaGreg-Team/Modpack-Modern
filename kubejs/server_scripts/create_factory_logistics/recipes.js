@@ -24,9 +24,10 @@ function registerCreateFactoryLogisticsRecipes(event) {
 		.itemOutputs('create_factory_logistics:fluid_mechanism')
 		.duration(20 * 20)
 		.EUt(20)
+		.addMaterialInfo(true)
 
 
-	event.shaped('2x create_factory_logistics:jar_packager', [
+	event.recipes.gtceu.shaped('2x create_factory_logistics:jar_packager', [
 		'AAA',
 		'BCD',
 		'EFE'
@@ -37,7 +38,7 @@ function registerCreateFactoryLogisticsRecipes(event) {
 		D: 'create:fluid_tank',
 		E: 'create:electron_tube',
 		F: '#tfg:metal_bars'
-	}).id('create_factory_logistics:shaped/jar_packager')
+	}).addMaterialInfo().id('create_factory_logistics:shaped/jar_packager')
 
 		
 	event.shapeless('create_factory_logistics:factory_fluid_gauge', ['create_factory_logistics:factory_fluid_gauge'])
@@ -62,6 +63,7 @@ function registerCreateFactoryLogisticsRecipes(event) {
 		.itemOutputs('2x create_factory_logistics:factory_fluid_gauge')
 		.duration(150)
 		.EUt(16)
+		.addMaterialInfo(true)
 
 
 	event.shapeless('create_factory_logistics:network_link', ['create_factory_logistics:network_link'])
@@ -87,6 +89,7 @@ function registerCreateFactoryLogisticsRecipes(event) {
 		.itemOutputs('create_factory_logistics:network_link')
 		.duration(150)
 		.EUt(16)
+		.addMaterialInfo(true)
 
 	event.recipes.gtceu.assembler('create_factory_logistics:network_link_tin')
 		.itemInputs('create:brass_casing', 'gtceu:fluid_detector_cover', '#gtceu:circuits/lv', 'create:transmitter')

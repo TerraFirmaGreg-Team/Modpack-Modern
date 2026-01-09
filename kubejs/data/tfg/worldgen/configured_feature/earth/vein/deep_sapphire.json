@@ -7,7 +7,7 @@
     "rarity": 180,
     "density": 0.35,
     "min_y": -64,
-    "max_y": 26,
+    "max_y": 32,
     "random_name": "deep_sapphire",
     "blocks": [
       {
@@ -131,6 +131,37 @@
           },
           {
             "block": "gtceu:dacite_green_sapphire_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_almandine_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_almandine_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:diorite_pyrope_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:raw_pyrope_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:diorite_sapphire_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:diorite_green_sapphire_ore",
             "weight": 15
           }
         ]

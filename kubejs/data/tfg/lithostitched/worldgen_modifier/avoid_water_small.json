@@ -1,0 +1,18 @@
+{
+	"type": "lithostitched:set_structure_spawn_condition",
+	"structures": [
+		"tfg:temperate/plains_temperate_house_0",
+		"tfg:illagers/camps",
+		"tfg:illagers/forest_roaming"
+	],
+	"spawn_condition": {
+		"type": "lithostitched:grid",
+		"condition": {
+			"type": "lithostitched:in_biome",
+			"biomes": "#tfg:never_has_structure/illages"
+		},
+		"radius": 50,
+		"distance_between_points": 15,
+		"allowed_count": 0
+	}
+}

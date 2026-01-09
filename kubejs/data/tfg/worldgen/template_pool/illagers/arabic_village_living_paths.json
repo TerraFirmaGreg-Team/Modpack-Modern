@@ -1,0 +1,94 @@
+{
+	"name": "tfg:illagers/arabic_village_living_paths",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:arabic/baseline/straight_short",
+				"processors": "tfg:illagers/arabic_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:arabic/baseline/straight_medium",
+				"processors": "tfg:illagers/arabic_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:arabic/baseline/straight_long",
+				"processors": "tfg:illagers/arabic_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:arabic/baseline/bend_left",
+				"processors": "tfg:illagers/arabic_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:arabic/baseline/bend_right",
+				"processors": "tfg:illagers/arabic_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:arabic/baseline/t_junction",
+				"processors": "tfg:illagers/arabic_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:arabic/baseline/fork_left",
+				"processors": "tfg:illagers/arabic_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:arabic/baseline/fork_right",
+				"processors": "tfg:illagers/arabic_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 80,
+			"element": {
+				"location": "tfg:arabic/baseline/cross",
+				"processors": "tfg:illagers/arabic_paths",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"projection": "rigid",
+				"element_type": "minecraft:empty_pool_element"
+			}
+		}
+	]
+}

@@ -156,14 +156,10 @@ const registerSNSRecipes = (event) => {
 		.itemOutputs('sns:buckle')
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.LV])
-		
-	event.custom({
-		type: 'vintageimprovements:curving',
-		ingredients: [{ tag: 'forge:plates/wrought_iron' }],
-		itemAsHead: 'gtceu:small_pipe_extruder_mold',
-		results: [{ item: 'sns:buckle' }],
-		processingTime: 50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-	}).id('sns:vi/curving/buckle')
+
+	event.recipes.vintageimprovements.curving('sns:buckle', '#forge:plates/wrought_iron')
+		.head('gtceu:small_pipe_extruder_mold')
+		.id('sns:vi/curving/buckle')
 		
 	event.recipes.gtceu.extruder('sns:buckle2')
 		.itemInputs('#forge:plates/steel')
@@ -172,13 +168,10 @@ const registerSNSRecipes = (event) => {
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.LV])
 		
-	event.custom({
-		type: 'vintageimprovements:curving',
-		ingredients: [{ tag: 'forge:plates/steel' }],
-		itemAsHead: 'gtceu:small_pipe_extruder_mold',
-		results: [{ item: 'sns:buckle', count: 2 }],
-		processingTime: 80 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-	}).id('sns:vi/curving/buckle2')
+	event.recipes.vintageimprovements.curving('2x sns:buckle', '#forge:plates/steel')
+		.head('gtceu:small_pipe_extruder_mold')
+		.id('sns:vi/curving/buckle2')
+
 
 	event.shaped('sns:pack_frame', [
 			'AAA',

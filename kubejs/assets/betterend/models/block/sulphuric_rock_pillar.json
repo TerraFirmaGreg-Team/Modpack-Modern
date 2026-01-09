@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "betterend:block/sulphuric_rock_pillar_top",
+		"side": "betterend:block/sulphuric_rock_pillar_side"
+	}
+}

@@ -23,6 +23,7 @@ const registerAE2WTLibRecipes = (event) => {
         .itemOutputs('ae2wtlib:wireless_pattern_encoding_terminal')
         .duration(300)
         .EUt(GTValues.VA[GTValues.EV])
+		.addMaterialInfo(true)
     
     // Pattern Access Terminal
     event.recipes.gtceu.assembler('ae2wtlib:wireless_pattern_access_terminal')
@@ -36,6 +37,7 @@ const registerAE2WTLibRecipes = (event) => {
         .itemOutputs('ae2wtlib:wireless_pattern_access_terminal')
         .duration(300)
         .EUt(GTValues.VA[GTValues.EV])
+		.addMaterialInfo(true)
 
     // Magnet Card
 	event.recipes.gtceu.assembler('ae2wtlib:magnet_card')
@@ -47,6 +49,7 @@ const registerAE2WTLibRecipes = (event) => {
         .itemOutputs('ae2wtlib:magnet_card')
         .duration(300)
         .EUt(250)
+		.addMaterialInfo(true)
 
     // Quantum Bridge Card
     event.recipes.gtceu.assembly_line('ae2wtlib:quantum_bridge_card')
@@ -79,7 +82,8 @@ const registerAE2WTLibRecipes = (event) => {
             '1x gtceu:ev_emitter',
             '2x #forge:plates/rhodium')
         .inputFluids(Fluid.of('gtceu:epoxy', 144))
-        .itemOutputs(Item.of('ae2wtlib:wireless_universal_terminal', '{crafting:1b, pattern_access:1b, pattern_encoding:1b}'))
+        .itemOutputs(Item.of('ae2wtlib:wireless_universal_terminal'))
         .duration(300)
         .EUt(GTValues.VA[GTValues.EV])
+		.addMaterialInfo(true, true)
 }

@@ -1,0 +1,17 @@
+{
+  "name": "草篮",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:straw_basket",
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "sns:straw_basket",
+	  "text": "$(item)草篮$()是一种$(l:sns/item_containers)物品容器$()，基本上就是更便宜的容器。默认可容纳至多$(thing)小型$()物品"
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/straw_basket"
+	}
+  ],
+  "read_by_default": true
+}

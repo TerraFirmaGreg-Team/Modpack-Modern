@@ -1,0 +1,46 @@
+{
+    "contents": [
+        {
+            "type": "atom",
+            "index": 0,
+            "u": 0,
+            "v": 0
+        },
+        {
+            "type": "atom",
+            "index": 1,
+            "u": 1,
+            "v": 0,
+            "element": {
+                "symbol": "O⁻",
+                "color": {
+                    "color": -62195,
+                    "optional": true
+                },
+                "material": "gtceu:oxygen"
+            }
+        },
+        {
+            "type": "atom",
+            "index": 2,
+            "u": 1,
+            "v": 0.66666667,
+            "element": {
+                "symbol": "Na⁺",
+                "color": {
+                    "color": -5546766,
+                    "optional": true
+                },
+                "material": "gtceu:sodium"
+            }
+        },
+        {
+            "type": "bond",
+            "lines": [
+                "solid"
+            ],
+            "a": 0,
+            "b": 1
+        }
+    ]
+}

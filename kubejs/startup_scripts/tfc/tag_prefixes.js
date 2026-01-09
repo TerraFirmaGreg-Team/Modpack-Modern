@@ -5,7 +5,6 @@ const registerTFCTagPrefixes = (event) => {
 
 	// These ores break worldgen if removed somehow?
 	// TagPrefix.ORES.remove(TagPrefix.ore)
-	TagPrefix.ORES.remove(TagPrefix.oreDeepslate)
 	TagPrefix.ORES.remove(TagPrefix.oreTuff)
 	TagPrefix.ORES.remove(TagPrefix.oreSand)
 	TagPrefix.ORES.remove(TagPrefix.oreRedSand)
@@ -34,6 +33,8 @@ const registerTFCTagPrefixes = (event) => {
 			.materialSupplier(() => material)
 			.materialIconType(GTMaterialIconType.ore)
 			.generationCondition(shouldGenerateOre)
+
+		TFGHelpers.registerCobbleBlock(stoneTypeName, `tfc:rock/cobble/${stoneTypeName}`);
 	})
 
 	// Custom stone types
@@ -48,6 +49,8 @@ const registerTFCTagPrefixes = (event) => {
 		.materialIconType(GTMaterialIconType.ore)
 		.generationCondition(shouldGenerateOre)
 		.materialSupplier(() => GTMaterials.Blackstone)
+		
+	TFGHelpers.registerCobbleBlock('pyroxenite', 'tfg:rock/cobble_blackstone');
 
 	event.create('dripstone', 'ore')
 		.stateSupplier(() => Block.getBlock('minecraft:dripstone_block').defaultBlockState())
@@ -56,14 +59,8 @@ const registerTFCTagPrefixes = (event) => {
 		.materialIconType(GTMaterialIconType.ore)
 		.generationCondition(shouldGenerateOre)
 		.materialSupplier(() => GTCEuAPI.materialManager.getMaterial('dripstone'))
-	// Redefine deepslate so it has the correct sound effects (yes I fixed this in GTM as well)
-	event.create('deepslate', 'ore')
-		.stateSupplier(() => Block.getBlock('minecraft:deepslate').defaultBlockState())
-		.baseModelLocation('minecraft:block/deepslate')
-		.unificationEnabled(true)
-		.materialIconType(GTMaterialIconType.ore)
-		.generationCondition(shouldGenerateOre)
-		.materialSupplier(() => GTMaterials.Deepslate)
+		
+	TFGHelpers.registerCobbleBlock('dripstone', 'tfg:rock/cobble_dripstone');
 
 	event.create('moon_stone', 'ore')
 		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_moon_stone').defaultBlockState())
@@ -71,6 +68,8 @@ const registerTFCTagPrefixes = (event) => {
 		.unificationEnabled(true)
 		.materialIconType(GTMaterialIconType.ore)
 		.generationCondition(shouldGenerateOre)
+		
+	TFGHelpers.registerCobbleBlock('moon_stone', 'ad_astra:moon_cobblestone');
 
 	event.create('moon_deepslate', 'ore')
 		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_moon_deepslate').defaultBlockState())
@@ -79,12 +78,16 @@ const registerTFCTagPrefixes = (event) => {
 		.materialIconType(GTMaterialIconType.ore)
 		.generationCondition(shouldGenerateOre)
 
+	TFGHelpers.registerCobbleBlock('moon_deepslate', 'tfg:rock/cobble_moon_deepslate');
+
 	event.create('mars_stone', 'ore')
 		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_mars_stone').defaultBlockState())
 		.baseModelLocation('ad_astra:block/mars_stone')
 		.unificationEnabled(true)
 		.materialIconType(GTMaterialIconType.ore)
 		.generationCondition(shouldGenerateOre)
+
+	TFGHelpers.registerCobbleBlock('mars_stone', 'ad_astra:mars_cobblestone');
 
 	event.create('venus_stone', 'ore')
 		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_venus_stone').defaultBlockState())
@@ -93,6 +96,8 @@ const registerTFCTagPrefixes = (event) => {
 		.materialIconType(GTMaterialIconType.ore)
 		.generationCondition(shouldGenerateOre)
 
+	TFGHelpers.registerCobbleBlock('venus_stone', 'ad_astra:venus_cobblestone');
+
 	event.create('mercury_stone', 'ore')
 		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_mercury_stone').defaultBlockState())
 		.baseModelLocation('ad_astra:block/mercury_stone')
@@ -100,10 +105,14 @@ const registerTFCTagPrefixes = (event) => {
 		.materialIconType(GTMaterialIconType.ore)
 		.generationCondition(shouldGenerateOre)
 
+	TFGHelpers.registerCobbleBlock('mercury_stone', 'ad_astra:mercury_cobblestone');
+
 	event.create('glacio_stone', 'ore')
 		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_glacio_stone').defaultBlockState())
 		.baseModelLocation('ad_astra:block/glacio_stone')
 		.unificationEnabled(true)
 		.materialIconType(GTMaterialIconType.ore)
 		.generationCondition(shouldGenerateOre)
+
+	TFGHelpers.registerCobbleBlock('glacio_stone', 'ad_astra:glacio_cobblestone');
 }

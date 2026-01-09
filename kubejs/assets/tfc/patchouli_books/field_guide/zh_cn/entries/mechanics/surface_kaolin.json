@@ -1,0 +1,93 @@
+{
+    "name": "高岭土",
+    "icon": "tfc:kaolin_clay",
+    "category": "tfc:mechanics",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "kaolinite",
+            "text": "制作$(l:mechanics/fire_clay)耐火黏土$()需要高岭土。它生成于Y=75-110之间的高原、古老山脉、丘陵与高地，要求$(l:the_world/climate#temperature)温度$()不低于18°C，$(l:the_world/climate#rainfall)降雨量$()不低于300mm。$(thing)火球花$()会生长在高岭土上，其位置可能低至下方 35 格。"
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "通常，向$(thing)东南方向$()行进可找到更温暖湿润的区域。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:plant/blood_lily",
+                        "Y": "tfc:kaolin_clay_grass"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:plant/blood_lily",
+                        "Y": "tfc:red_kaolin_clay"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:plant/blood_lily",
+                        "Y": "tfc:white_kaolin_clay"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:plant/blood_lily",
+                        "Y": "tfc:pink_kaolin_clay"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/kaolinite",
+            "anchor": "powder",
+            "text": "只有$(thing)20%$()的高岭土能转化为$(thing)高岭石粉$()，建议使用$(l:getting_started/pit_kiln)坑窑$()就地烧制以节省物品栏空间。$(br2)同时请带回约20$(thing)块$()高岭土，以供后续$(l:mechanics/glassworking_applications)玻璃制品$()使用。"
+        }
+    ]
+}

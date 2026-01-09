@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 global.CREATE_CONNECTED_DISABLED_ITEMS = [
@@ -19,5 +19,5 @@ global.CREATE_CONNECTED_DISABLED_ITEMS = [
 	'create_connected:brass_encased_cross_connector',
 	'create_connected:kinetic_bridge',
 	'create_connected:kinetic_battery',
-	'create_connected:charged_kinetic_battery',
+	'create_connected:charged_kinetic_battery'
 ]

@@ -50,7 +50,9 @@ const registerFirmaLifeRecipes = (event) => {
 
 	//#endregion
 
-	event.replaceInput({ id: 'firmalife:mixing_bowl' }, 'firmalife:treated_lumber', '#tfc:lumber')
+	event.shapeless('firmalife:barrel_stave', ['2x firmalife:treated_lumber', '#forge:screws/any_bronze', '#forge:tools/hammers'])
+		.id('firmalife:crafting/barrel_stave')
+
 
 	// Декрафт Jag Lid
 	event.recipes.tfc.heating('tfc:jar_lid', 230)
@@ -72,13 +74,13 @@ const registerFirmaLifeRecipes = (event) => {
 	}).id('firmalife:crafting/jarring_station')
 
 	// Vat
-	event.shaped('firmalife:vat', [
+	event.recipes.gtceu.shaped('firmalife:vat', [
 		'A A',
 		'BAB'
 	], {
 		A: '#forge:plates/wrought_iron',
 		B: '#forge:wax'
-	}).id('firmalife:crafting/vat')
+	}).addMaterialInfo().id('firmalife:crafting/vat')
 
 	// Jar Lid
 	event.recipes.gtceu.fluid_solidifier(`tfg:firmalife/jar_lid`)
@@ -132,6 +134,7 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('firmalife:empty_olivine_wine_bottle')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.recipes.gtceu.alloy_smelter('firmalife:empty_volcanic_wine_bottle')
 		.itemInputs('tfc:volcanic_glass_batch')
@@ -139,6 +142,7 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('firmalife:empty_volcanic_wine_bottle')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.recipes.gtceu.alloy_smelter('firmalife:empty_hematitic_wine_bottle')
 		.itemInputs('tfc:hematitic_glass_batch')
@@ -146,6 +150,7 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('firmalife:empty_hematitic_wine_bottle')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.recipes.gtceu.alloy_smelter('firmalife:wine_glass')
 		.itemInputs('tfc:silica_glass_batch')
@@ -153,8 +158,9 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('2x firmalife:wine_glass')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
-	event.recipes.gtceu.assembler('firmalife:cork')
+	event.recipes.gtceu.chemical_bath('firmalife:cork')
 		.itemInputs('firmalife:treated_lumber')
 		.inputFluids(Fluid.of('tfc:limewater', 1000))
 		.itemOutputs('8x firmalife:cork')
@@ -173,6 +179,7 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('6x firmalife:pie_pan')
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(100)
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.replaceInput({ id: 'firmalife:crafting/bottle_label' }, 'firmalife:beeswax', '#forge:wax')
 
@@ -198,74 +205,75 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('firmalife:sprinkler')
 		.duration(60)
 		.EUt(8)
+		.addMaterialInfo(true)
 
 	// Стена
-	event.shaped('8x firmalife:copper_greenhouse_wall', [
+	event.recipes.gtceu.shaped('8x firmalife:copper_greenhouse_wall', [
 		'ABA',
 		'ABA',
 		'ABA'
 	], {
 		A: '#forge:rods/copper',
 		B: 'minecraft:glass'
-	}).id('firmalife:crafting/greenhouse/copper_greenhouse_wall')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/copper_greenhouse_wall')
 
 	// Панель
-	event.shaped('8x firmalife:copper_greenhouse_panel_wall', [
+	event.recipes.gtceu.shaped('8x firmalife:copper_greenhouse_panel_wall', [
 		'ABA',
 		'ABA',
 		'ABA'
 	], {
 		A: '#forge:rods/copper',
 		B: 'firmalife:reinforced_glass'
-	}).id('firmalife:crafting/greenhouse/copper_greenhouse_panel_wall')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/copper_greenhouse_panel_wall')
 
 	// Панельная Крыша
-	event.shaped('4x firmalife:copper_greenhouse_panel_roof', [
+	event.recipes.gtceu.shaped('4x firmalife:copper_greenhouse_panel_roof', [
 		'A  ',
 		'BA ',
 		'BBA'
 	], {
 		A: 'firmalife:reinforced_glass',
 		B: '#forge:rods/copper'
-	}).id('firmalife:crafting/greenhouse/copper_greenhouse_panel_roof')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/copper_greenhouse_panel_roof')
 
 	// Крыша
-	event.shaped('4x firmalife:copper_greenhouse_roof', [
+	event.recipes.gtceu.shaped('4x firmalife:copper_greenhouse_roof', [
 		'A  ',
 		'BA ',
 		'BBA'
 	], {
 		A: '#forge:rods/copper',
 		B: 'firmalife:reinforced_glass'
-	}).id('firmalife:crafting/greenhouse/copper_greenhouse_roof')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/copper_greenhouse_roof')
 
 	// Верхушка крыши
-	event.shaped('8x firmalife:copper_greenhouse_roof_top', [
+	event.recipes.gtceu.shaped('8x firmalife:copper_greenhouse_roof_top', [
 		'ABA',
 		'BAB'
 	], {
 		A: '#forge:rods/copper',
 		B: 'firmalife:reinforced_glass'
-	}).id('firmalife:crafting/greenhouse/copper_greenhouse_roof_top')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/copper_greenhouse_roof_top')
 
 	// Люк
-	event.shaped('8x firmalife:copper_greenhouse_trapdoor', [
+	event.recipes.gtceu.shaped('8x firmalife:copper_greenhouse_trapdoor', [
 		'ABA',
 		'BAB'
 	], {
 		A: 'firmalife:reinforced_glass',
 		B: '#forge:rods/copper'
-	}).id('firmalife:crafting/greenhouse/copper_greenhouse_trapdoor')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/copper_greenhouse_trapdoor')
 
 	// Дверь
-	event.shaped('2x firmalife:copper_greenhouse_door', [
+	event.recipes.gtceu.shaped('2x firmalife:copper_greenhouse_door', [
 		'AB',
 		'AB',
 		'AB'
 	], {
 		A: '#forge:rods/copper',
 		B: 'minecraft:glass'
-	}).id('firmalife:crafting/greenhouse/copper_greenhouse_door')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/copper_greenhouse_door')
 
 	event.shapeless('firmalife:copper_greenhouse_port', [
 		'firmalife:copper_greenhouse_wall',
@@ -278,72 +286,72 @@ const registerFirmaLifeRecipes = (event) => {
 	//#region Железная / Iron
 
 	// Стена
-	event.shaped('8x firmalife:iron_greenhouse_wall', [
+	event.recipes.gtceu.shaped('8x firmalife:iron_greenhouse_wall', [
 		'ABA',
 		'ABA',
 		'ABA'
 	], {
 		A: '#forge:rods/wrought_iron',
 		B: 'minecraft:glass'
-	}).id('firmalife:crafting/greenhouse/iron_greenhouse_wall')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/iron_greenhouse_wall')
 
 	// Панель
-	event.shaped('8x firmalife:iron_greenhouse_panel_wall', [
+	event.recipes.gtceu.shaped('8x firmalife:iron_greenhouse_panel_wall', [
 		'ABA',
 		'ABA',
 		'ABA'
 	], {
 		A: '#forge:rods/wrought_iron',
 		B: 'firmalife:reinforced_glass'
-	}).id('firmalife:crafting/greenhouse/iron_greenhouse_panel_wall')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/iron_greenhouse_panel_wall')
 
 	// Панельная Крыша
-	event.shaped('4x firmalife:iron_greenhouse_panel_roof', [
+	event.recipes.gtceu.shaped('4x firmalife:iron_greenhouse_panel_roof', [
 		'A  ',
 		'BA ',
 		'BBA'
 	], {
 		A: 'firmalife:reinforced_glass',
 		B: '#forge:rods/wrought_iron'
-	}).id('firmalife:crafting/greenhouse/iron_greenhouse_panel_roof')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/iron_greenhouse_panel_roof')
 
 	// Крыша
-	event.shaped('4x firmalife:iron_greenhouse_roof', [
+	event.recipes.gtceu.shaped('4x firmalife:iron_greenhouse_roof', [
 		'A  ',
 		'BA ',
 		'BBA'
 	], {
 		A: '#forge:rods/wrought_iron',
 		B: 'firmalife:reinforced_glass'
-	}).id('firmalife:crafting/greenhouse/iron_greenhouse_roof')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/iron_greenhouse_roof')
 
 	// Верхушка крыши
-	event.shaped('8x firmalife:iron_greenhouse_roof_top', [
+	event.recipes.gtceu.shaped('8x firmalife:iron_greenhouse_roof_top', [
 		'ABA',
 		'BAB'
 	], {
 		A: '#forge:rods/wrought_iron',
 		B: 'firmalife:reinforced_glass'
-	}).id('firmalife:crafting/greenhouse/iron_greenhouse_roof_top')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/iron_greenhouse_roof_top')
 
 	// Люк
-	event.shaped('8x firmalife:iron_greenhouse_trapdoor', [
+	event.recipes.gtceu.shaped('8x firmalife:iron_greenhouse_trapdoor', [
 		'ABA',
 		'BAB'
 	], {
 		A: 'firmalife:reinforced_glass',
 		B: '#forge:rods/wrought_iron'
-	}).id('firmalife:crafting/greenhouse/iron_greenhouse_trapdoor')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/iron_greenhouse_trapdoor')
 
 	// Дверь
-	event.shaped('2x firmalife:iron_greenhouse_door', [
+	event.recipes.gtceu.shaped('2x firmalife:iron_greenhouse_door', [
 		'AB',
 		'AB',
 		'AB'
 	], {
 		A: '#forge:rods/wrought_iron',
 		B: 'minecraft:glass'
-	}).id('firmalife:crafting/greenhouse/iron_greenhouse_door')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/iron_greenhouse_door')
 
 	event.shapeless('firmalife:iron_greenhouse_port', [
 		'firmalife:iron_greenhouse_wall',
@@ -355,69 +363,69 @@ const registerFirmaLifeRecipes = (event) => {
 
 	//#region Нержавеющая теплица / Stainless Steel
 
-	event.shaped('8x firmalife:stainless_steel_greenhouse_wall', [
+	event.recipes.gtceu.shaped('8x firmalife:stainless_steel_greenhouse_wall', [
 		'ABA',
 		'ABA',
 		'ABA'
 	], {
 		A: '#forge:rods/stainless_steel',
 		B: 'minecraft:glass'
-	}).id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_wall')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_wall')
 
-	event.shaped('8x firmalife:stainless_steel_greenhouse_panel_wall', [
+	event.recipes.gtceu.shaped('8x firmalife:stainless_steel_greenhouse_panel_wall', [
 		'ABA',
 		'ABA',
 		'ABA'
 	], {
 		A: '#forge:rods/stainless_steel',
 		B: 'firmalife:reinforced_glass'
-	}).id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_panel_wall')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_panel_wall')
 
-	event.shaped('4x firmalife:stainless_steel_greenhouse_panel_roof', [
+	event.recipes.gtceu.shaped('4x firmalife:stainless_steel_greenhouse_panel_roof', [
 		'A  ',
 		'BA ',
 		'BBA'
 	], {
 		A: 'firmalife:reinforced_glass',
 		B: '#forge:rods/stainless_steel'
-	}).id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_panel_roof')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_panel_roof')
 
-	event.shaped('4x firmalife:stainless_steel_greenhouse_roof', [
+	event.recipes.gtceu.shaped('4x firmalife:stainless_steel_greenhouse_roof', [
 		'A  ',
 		'BA ',
 		'BBA'
 	], {
 		A: '#forge:rods/stainless_steel',
 		B: 'firmalife:reinforced_glass'
-	}).id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_roof')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_roof')
 
 	// Верхушка крыши
-	event.shaped('8x firmalife:stainless_steel_greenhouse_roof_top', [
+	event.recipes.gtceu.shaped('8x firmalife:stainless_steel_greenhouse_roof_top', [
 		'ABA',
 		'BAB'
 	], {
 		A: '#forge:rods/stainless_steel',
 		B: 'firmalife:reinforced_glass'
-	}).id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_roof_top')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_roof_top')
 
 	// Люк
-	event.shaped('8x firmalife:stainless_steel_greenhouse_trapdoor', [
+	event.recipes.gtceu.shaped('8x firmalife:stainless_steel_greenhouse_trapdoor', [
 		'ABA',
 		'BAB'
 	], {
 		A: 'firmalife:reinforced_glass',
 		B: '#forge:rods/stainless_steel'
-	}).id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_trapdoor')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_trapdoor')
 
 	// Дверь
-	event.shaped('2x firmalife:stainless_steel_greenhouse_door', [
+	event.recipes.gtceu.shaped('2x firmalife:stainless_steel_greenhouse_door', [
 		'AB',
 		'AB',
 		'AB'
 	], {
 		A: '#forge:rods/stainless_steel',
 		B: 'minecraft:glass'
-	}).id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_door')
+	}).addMaterialInfo().id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_door')
 
 	event.shapeless('firmalife:stainless_steel_greenhouse_port', [
 		'firmalife:stainless_steel_greenhouse_wall',
@@ -427,7 +435,7 @@ const registerFirmaLifeRecipes = (event) => {
 
 	//#endregion
 
-	event.shaped('firmalife:sweeper', [
+	event.recipes.gtceu.shaped('firmalife:sweeper', [
 		'ABD',
 		'CB '
 	], {
@@ -435,9 +443,9 @@ const registerFirmaLifeRecipes = (event) => {
 		B: '#forge:rods/steel',
 		C: 'vintageimprovements:redstone_module',
 		D: '#forge:tools/wrenches'
-	}).id('firmalife:crafting/sweeper')
+	}).addMaterialInfo().id('firmalife:crafting/sweeper')
 
-	event.shaped('firmalife:picker', [
+	event.recipes.gtceu.shaped('firmalife:picker', [
 		'ABD',
 		'CC ',
 		'EE '
@@ -447,7 +455,7 @@ const registerFirmaLifeRecipes = (event) => {
 		C: '#forge:rods/steel',
 		D: '#forge:tools/wrenches',
 		E: '#forge:hoe_heads/steel'
-	}).id('firmalife:crafting/picker')
+	}).addMaterialInfo().id('firmalife:crafting/picker')
 
 	//#endregion
 
@@ -503,7 +511,7 @@ const registerFirmaLifeRecipes = (event) => {
 		.id('tfg:vat/sugar_water')
 
 	//#endregion
-	
+
 	//#region Salt by Vat
 
 	event.recipes.firmalife.vat()
@@ -550,81 +558,125 @@ const registerFirmaLifeRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(200)
 
-	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['#tfg:wood_dusts', '#tfg:wood_dusts', 'tfc:glue'])
-		.outputItem('2x tfg:chipboard_composite')
-		.id('tfg:mixing_bowl/chipboard_composite_glue')
-
-	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['#tfg:wood_dusts', '#tfg:wood_dusts', '#tfg:wood_dusts', '#tfg:wood_dusts', 'gtceu:sticky_resin'])
-		.outputItem('4x tfg:chipboard_composite')
-		.id('tfg:mixing_bowl/chipboard_composite_resin')
-
-	event.recipes.firmalife.mixing_bowl()
-		.itemIngredients(['#tfg:wood_dusts', '#tfg:wood_dusts', '#forge:wax'])
-		.outputItem('2x tfg:chipboard_composite')
-		.id('tfg:mixing_bowl/chipboard_composite_wax')
-
 	// Dough
 
 	global.TFC_GRAINS.forEach(grain => {
+		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`2x firmalife:food/${grain}_dough`).copyFood(), [
+			'firmalife:spoon',
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			'firmalife:tirage_mixture',
+			'#tfc:bowls'
+		]).keepIngredient('#tfc:bowls').id(`tfg:shapeless/${grain}_dough`)
+
 		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`4x firmalife:food/${grain}_dough`).copyFood(), [
 			'firmalife:spoon',
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-			'firmalife:tirage_mixture', 
+			'firmalife:tirage_mixture',
 			'firmalife:mixing_bowl'
-		]).id(`tfg:shapeless/${grain}_dough`)
+		]).id(`tfg:shapeless/${grain}_dough_mixing`)
+
+		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`4x firmalife:food/${grain}_dough`).copyFood(), [
+			'firmalife:spoon',
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			'2x firmalife:tirage_mixture',
+			'#tfc:bowls'
+		]).keepIngredient('#tfc:bowls').id(`tfg:shapeless/${grain}_dough_2`)
 
 		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`8x firmalife:food/${grain}_dough`).copyFood(), [
-			'firmalife:spoon', 
+			'firmalife:spoon',
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-			'2x firmalife:tirage_mixture', 
+			'2x firmalife:tirage_mixture',
 			'firmalife:mixing_bowl'
-		]).id(`tfg:shapeless/${grain}_dough_2`)
+		]).id(`tfg:shapeless/${grain}_dough_mixing_2`)
+
+		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`6x firmalife:food/${grain}_dough`).copyFood(), [
+			'firmalife:spoon',
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			'3x firmalife:tirage_mixture',
+			'#tfc:bowls'
+		]).keepIngredient('#tfc:bowls').id(`tfg:shapeless/${grain}_dough_3`)
 
 		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`12x firmalife:food/${grain}_dough`).copyFood(), [
 			'firmalife:spoon',
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-			'3x firmalife:tirage_mixture', 
+			'3x firmalife:tirage_mixture',
 			'firmalife:mixing_bowl'
-		]).id(`tfg:shapeless/${grain}_dough_3`)
+		]).id(`tfg:shapeless/${grain}_dough_3_mixing`)
+
 
 		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`2x tfc:food/${grain}_dough`).copyFood(), [
 			'firmalife:spoon',
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
-			TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 100)), 
-			'firmalife:mixing_bowl'
-		]).id(`tfg:shapeless/${grain}_flatbread_dough`)
+			TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 100)),
+			'#tfc:bowls'
+		]).keepIngredient('#tfc:bowls').id(`tfg:shapeless/${grain}_flatbread_dough`)
 
-		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`4x tfc:food/${grain}_dough`).copyFood(), [ 
+		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`4x tfc:food/${grain}_dough`).copyFood(), [
 			'firmalife:spoon',
-			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`), 
-			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`), 
-			TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 200)), 
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 100)),
 			'firmalife:mixing_bowl'
-		]).id(`tfg:shapeless/${grain}_flatbread_dough_2`)
+		]).id(`tfg:shapeless/${grain}_flatbread_dough_mixing`)
+
+		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`4x tfc:food/${grain}_dough`).copyFood(), [
+			'firmalife:spoon',
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 200)),
+			'#tfc:bowls'
+		]).keepIngredient('#tfc:bowls').id(`tfg:shapeless/${grain}_flatbread_dough_2`)
+
+		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`8x tfc:food/${grain}_dough`).copyFood(), [
+			'firmalife:spoon',
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 200)),
+			'firmalife:mixing_bowl'
+		]).id(`tfg:shapeless/${grain}_flatbread_dough_2_mixing`)
 
 		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`6x tfc:food/${grain}_dough`).copyFood(), [
-			'firmalife:spoon', 
+			'firmalife:spoon',
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 300)),
+			'#tfc:bowls'
+		]).keepIngredient('#tfc:bowls').id(`tfg:shapeless/${grain}_flatbread_dough_3`)
+
+		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`12x tfc:food/${grain}_dough`).copyFood(), [
+			'firmalife:spoon',
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
 			TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 300)),
 			'firmalife:mixing_bowl'
-		]).id(`tfg:shapeless/${grain}_flatbread_dough_3`)
+		]).id(`tfg:shapeless/${grain}_flatbread_dough_3_mixing`)
 
 		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`8x tfc:food/${grain}_dough`).copyFood(), [
-			'firmalife:spoon', 
+			'firmalife:spoon',
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
+			TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 400)),
+			'#tfc:bowls'
+		]).keepIngredient('#tfc:bowls').id(`tfg:shapeless/${grain}_flatbread_dough_4`)
+
+		event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`16x tfc:food/${grain}_dough`).copyFood(), [
+			'firmalife:spoon',
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
 			TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
 			TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 400)),
 			'firmalife:mixing_bowl'
-		]).id(`tfg:shapeless/${grain}_flatbread_dough_4`)
+		]).id(`tfg:shapeless/${grain}_flatbread_dough_4_mixing`)
 
 		event.recipes.firmalife.mixing_bowl()
 			.ingredients([
@@ -636,40 +688,62 @@ const registerFirmaLifeRecipes = (event) => {
 
 		event.recipes.firmalife.mixing_bowl()
 			.ingredients([
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`)], 
-				Fluid.of('minecraft:water', 100))
-			.outputItem(`2x tfc:food/${grain}_dough`)
-			.id(`tfg:mixing_bowl/${grain}_flatbread_dough`)
-
-		event.recipes.firmalife.mixing_bowl()
-			.ingredients([
-				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`),
 				TFC.ingredient.notRotten(`tfc:food/${grain}_flour`)],
-				Fluid.of('minecraft:water', 200))
+				Fluid.of('minecraft:water', 100))
 			.outputItem(`4x tfc:food/${grain}_dough`)
-			.id(`tfg:mixing_bowl/${grain}_flatbread_dough_2`)
+			.id(`tfg:mixing_bowl/${grain}_flatbread_dough`)
 	})
 
+	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`2x firmalife:food/hardtack_dough`).copyFood(), [
+		'firmalife:spoon',
+		TFC.ingredient.notRotten(`#tfc:foods/flour`),
+		'tfc:powder/salt',
+		TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 100)),
+		'#tfc:bowls'
+	]).keepIngredient('#tfc:bowls').id(`tfg:shapeless/hardtack_dough`)
+
 	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`4x firmalife:food/hardtack_dough`).copyFood(), [
-		'firmalife:spoon', 
+		'firmalife:spoon',
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
 		'tfc:powder/salt',
 		TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 100)),
 		'firmalife:mixing_bowl'
-	]).id(`tfg:shapeless/hardtack_dough`)
+	]).id(`tfg:shapeless/hardtack_dough_mixing`)
+
+	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`4x firmalife:food/hardtack_dough`).copyFood(), [
+		'firmalife:spoon',
+		TFC.ingredient.notRotten(`#tfc:foods/flour`),
+		TFC.ingredient.notRotten(`#tfc:foods/flour`),
+		'tfc:powder/salt',
+		'tfc:powder/salt',
+		TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 200)),
+		'#tfc:bowls'
+	]).keepIngredient('#tfc:bowls').id(`tfg:shapeless/hardtack_dough_2`)
 
 	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`8x firmalife:food/hardtack_dough`).copyFood(), [
-		'firmalife:spoon', 
+		'firmalife:spoon',
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
 		'tfc:powder/salt',
 		'tfc:powder/salt',
 		TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 200)),
 		'firmalife:mixing_bowl'
-	]).id(`tfg:shapeless/hardtack_dough_2`)
+	]).id(`tfg:shapeless/hardtack_dough_2_mixing`)
+
+	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`6x firmalife:food/hardtack_dough`).copyFood(), [
+		'firmalife:spoon',
+		TFC.ingredient.notRotten(`#tfc:foods/flour`),
+		TFC.ingredient.notRotten(`#tfc:foods/flour`),
+		TFC.ingredient.notRotten(`#tfc:foods/flour`),
+		'tfc:powder/salt',
+		'tfc:powder/salt',
+		'tfc:powder/salt',
+		TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 300)),
+		'#tfc:bowls'
+	]).keepIngredient('#tfc:bowls').id(`tfg:shapeless/hardtack_dough_3`)
 
 	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`12x firmalife:food/hardtack_dough`).copyFood(), [
-		'firmalife:spoon', 
+		'firmalife:spoon',
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
 		TFC.ingredient.notRotten(`#tfc:foods/flour`),
@@ -678,7 +752,7 @@ const registerFirmaLifeRecipes = (event) => {
 		'tfc:powder/salt',
 		TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 300)),
 		'firmalife:mixing_bowl'
-	]).id(`tfg:shapeless/hardtack_dough_3`)
+	]).id(`tfg:shapeless/hardtack_dough_3_mixing`)
 
 	event.recipes.firmalife.mixing_bowl()
 		.itemIngredients([
@@ -764,25 +838,193 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// Chocolate Melting
 	const setChocolateHeating = (variant) => {
-    const itemID = `firmalife:food/${variant}_chocolate`
-    const fluidID = `tfcchannelcasting:${variant}_chocolate`
-    const recipeID = `firmalife:heating/${variant}_chocolate`
-	const castingRecipeID = `tfcchannelcasting:casting/${variant}_chocolate`
+		const itemID = `firmalife:food/${variant}_chocolate`
+		const fluidID = `tfcchannelcasting:${variant}_chocolate`
+		const recipeID = `firmalife:heating/${variant}_chocolate`
+		const castingRecipeID = `tfcchannelcasting:casting/${variant}_chocolate`
 
-    event.remove({ id: recipeID })
-	event.remove({ id: castingRecipeID })
-	event.remove({ id: `${castingRecipeID}_fire_ingot` })
-    event.remove({ id: `tfcchannelcasting:heating/food/${variant}_chocolate` })
+		event.remove({ id: recipeID })
+		event.remove({ id: castingRecipeID })
+		event.remove({ id: `${castingRecipeID}_fire_ingot` })
+		event.remove({ id: `tfcchannelcasting:heating/food/${variant}_chocolate` })
 
-    event.recipes.tfc.heating(itemID, 200)
-        .resultFluid(Fluid.of(fluidID, 144))
-        .id(recipeID)
+		event.recipes.tfc.heating(itemID, 200)
+			.resultFluid(Fluid.of(fluidID, 144))
+			.id(recipeID)
 
-	event.recipes.tfc.casting(`${itemID}`, 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient(`${fluidID}`, 144), 0)
-	event.recipes.tfc.casting(`${itemID}`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(`${fluidID}`, 144), 0)		
+		event.recipes.tfc.casting(`${itemID}`, 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient(`${fluidID}`, 144), 0)
+		event.recipes.tfc.casting(`${itemID}`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(`${fluidID}`, 144), 0)
 	}
 
 	setChocolateHeating('white')
 	setChocolateHeating('milk')
-	setChocolateHeating('dark')		
+	setChocolateHeating('dark')
+
+	//fixing the bread unrotting
+	event.remove({ id: 'firmalife:crafting/oat_slice' })
+	event.remove({ id: 'firmalife:crafting/wheat_slice' })
+	event.remove({ id: 'firmalife:crafting/barley_slice' })
+	event.remove({ id: 'firmalife:crafting/maize_slice' })
+	event.remove({ id: 'firmalife:crafting/rice_slice' })
+	event.remove({ id: 'firmalife:crafting/rye_slice' })
+
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('2x firmalife:food/oat_slice').copyFood(),
+		[TFC.ingredient.notRotten('tfc:food/oat_bread'), '#forge:tools/knives'], 'tfc:food/oat_bread')
+		.id(`tfg:crafting/oat_slice`)
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('2x firmalife:food/wheat_slice').copyFood(),
+		[TFC.ingredient.notRotten('tfc:food/wheat_bread'), '#forge:tools/knives'], 'tfc:food/wheat_bread')
+		.id(`tfg:crafting/wheat_slice`)
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('2x firmalife:food/barley_slice').copyFood(),
+		[TFC.ingredient.notRotten('tfc:food/barley_bread'), '#forge:tools/knives'], 'tfc:food/barley_bread')
+		.id(`tfg:crafting/barley_slice`)
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('2x firmalife:food/maize_slice').copyFood(),
+		[TFC.ingredient.notRotten('tfc:food/maize_bread'), '#forge:tools/knives'], 'tfc:food/maize_bread')
+		.id(`tfg:crafting/maize_slice`)
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('2x firmalife:food/rice_slice').copyFood(),
+		[TFC.ingredient.notRotten('tfc:food/rice_bread'), '#forge:tools/knives'], 'tfc:food/rice_bread')
+		.id(`tfg:crafting/rice_slice`)
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('2x firmalife:food/rye_slice').copyFood(),
+		[TFC.ingredient.notRotten('tfc:food/rye_bread'), '#forge:tools/knives'], 'tfc:food/rye_bread')
+		.id(`tfg:crafting/rye_slice`)
+
+	//fixing the cheese curd unrotting
+	event.remove({ id: 'firmalife:crafting/cheddar_wheel' })
+	event.remove({ id: 'firmalife:crafting/chevre_wheel' })
+	event.remove({ id: 'firmalife:crafting/rajya_metok_wheel' })
+	event.remove({ id: 'firmalife:barrel/gouda' })
+	event.remove({ id: 'firmalife:barrel/feta' })
+	event.remove({ id: 'firmalife:barrel/shosha' })
+
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('firmalife:cheddar_wheel').copyFood(), [
+		'AAA',
+		'BBB',
+		'AAA'
+	], {
+		A: 'tfc:powder/salt',
+		B: TFC.ingredient.notRotten('firmalife:food/milk_curd')
+	}, 0, 0).id('tfg:crafting/cheddar_wheel')
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('firmalife:chevre_wheel').copyFood(), [
+		'AAA',
+		'BBB',
+		'AAA'
+	], {
+		A: 'tfc:powder/salt',
+		B: TFC.ingredient.notRotten('firmalife:food/goat_curd')
+	}, 0, 0).id('tfg:crafting/chevre_wheel')
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('firmalife:rajya_metok_wheel').copyFood(), [
+		'AAA',
+		'BBB',
+		'AAA'
+	], {
+		A: 'tfc:powder/salt',
+		B: TFC.ingredient.notRotten('firmalife:food/yak_curd')
+	}, 0, 0).id('tfg:crafting/rajya_metok_wheel')
+	event.custom({
+		"type": "tfc:barrel_sealed",
+		"input_item": {
+			"count": 3,
+			"ingredient": {
+				"type": "tfc:not_rotten",
+				"ingredient": { "item": "firmalife:food/milk_curd" }
+			}
+		},
+		"input_fluid": {
+			"ingredient": "tfc:salt_water",
+			"amount": 750
+		},
+		"output_item": {
+			"item": "firmalife:gouda_wheel"
+		},
+		"duration": 16000
+	}).id('tfg:barrel/gouda_wheel')
+	event.custom({
+		"type": "tfc:barrel_sealed",
+		"input_item": {
+			"count": 3,
+			"ingredient": {
+				"type": "tfc:not_rotten",
+				"ingredient": { "item": "firmalife:food/goat_curd" }
+			}
+		},
+		"input_fluid": {
+			"ingredient": "tfc:salt_water",
+			"amount": 750
+		},
+		"output_item": {
+			"item": "firmalife:feta_wheel"
+		},
+		"duration": 16000
+	}).id('tfg:barrel/feta_wheel')
+	event.custom({
+		"type": "tfc:barrel_sealed",
+		"input_item": {
+			"count": 3,
+			"ingredient": {
+				"type": "tfc:not_rotten",
+				"ingredient": { "item": "firmalife:food/yak_curd" }
+			}
+		},
+		"input_fluid": {
+			"ingredient": "tfc:salt_water",
+			"amount": 750
+		},
+		"output_item": {
+			"item": "firmalife:shosha_wheel"
+		},
+		"duration": 16000
+	}).id('tfg:barrel/shosha_wheel')
+
+	// #region Oven heating recipes
+
+	event.recipes.tfc.heating(`firmalife:oven_top`, 1399)
+		.resultItem(`firmalife:cured_oven_top`)
+		.id(`tfg:heating/oven_top`)
+	event.recipes.tfc.heating(`firmalife:oven_chimney`, 1399)
+		.resultItem(`firmalife:cured_oven_chimney`)
+		.id(`tfg:heating/oven_chimney`)
+	event.recipes.tfc.heating(`firmalife:oven_bottom`, 1399)
+		.resultItem(`firmalife:cured_oven_bottom`)
+		.id(`tfg:heating/oven_bottom`)
+	event.recipes.tfc.heating(`firmalife:oven_hopper`, 1399)
+		.resultItem(`firmalife:cured_oven_hopper`)
+		.id(`tfg:heating/oven_hopper`)
+
+	// #endregion
+
+	// Adds a tooltip to the bacon craft to tell people it needs to be smoked first,
+	// and adds traits that normally disappear on the craft
+		
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.isp.of(Item.of('4x firmalife:food/bacon')
+			.withName(Text.translate('tfg.emi.bacon_requirement')))
+			.addTrait("firmalife:smoked")
+			.addTrait("tfc:brined")
+			.addTrait("tfc:salted"), 
+		[
+			TFC.ingredient.notRotten(TFC.ingredient.hasTrait('tfc:food/pork', "firmalife:smoked")),
+			'#forge:tools/knives',
+			'tfc:powder/salt'
+		])
+		.modifyResult((craftingGrid, result) => {
+			result.resetHoverName();
+			return result;
+		})
+		.id('firmalife:crafting/bacon')
+
+	// Replacement for yeast starter recipe that uses a different, more descriptive tag
+
+	event.recipes.tfc.barrel_sealed(72000)
+		.inputFluid(Fluid.of('minecraft:water', 100))
+		.inputItem(TFC.ingredient.hasTrait('#tfg:dried_fruit', "firmalife:dried"))
+		.outputFluid(Fluid.of('firmalife:yeast_starter', 100))
+		.id('firmalife:barrel/yeast_starter')
 }

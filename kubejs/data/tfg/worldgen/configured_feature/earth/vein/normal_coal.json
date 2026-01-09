@@ -123,11 +123,7 @@
       "blocks": [
         {
           "block": "gtceu:coal_indicator",
-          "weight": 95
-        },
-        {
-          "block": "gtceu:coal_bud_indicator",
-          "weight": 5
+          "weight": 100
         }
       ]
     }

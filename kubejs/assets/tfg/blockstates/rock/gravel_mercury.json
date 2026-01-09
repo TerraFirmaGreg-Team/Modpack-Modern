@@ -1,7 +1,21 @@
 {
 	"variants": {
-		"": {
-			"model": "tfg:block/rock/gravel_mercury"
-		}
+		"": [
+			{
+				"model": "tfg:block/rock/gravel_mercury"
+			},
+			{
+				"model": "tfg:block/rock/gravel_mercury",
+				"y": 90
+			},
+			{
+				"model": "tfg:block/rock/gravel_mercury",
+				"y": 180
+			},
+			{
+				"model": "tfg:block/rock/gravel_mercury",
+				"y": 270
+			}
+		]
 	}
 }

@@ -1,7 +1,9 @@
 {
 	"variants": {
-		"": {
-			"model": "tfg:block/rock/hardened_moon_deepslate"
-		}
+		"": [
+			{
+				"model": "tfg:block/rock/hardened_moon_deepslate"
+			}
+		]
 	}
 }

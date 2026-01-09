@@ -34,7 +34,7 @@ jobs:
     
     steps:
       - name: 📦 Checkout
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6.0.1
         with:
           fetch-depth: 0
         
@@ -94,13 +94,13 @@ jobs:
             echo "❌ Error: File pakku-lock-prev.json is empty or not created" && exit 1
           fi
         
-      - name: 📦 Download pakku.jar
-        id: download_pakku
-        if: steps.check_pakku_lock_prev.outputs.file_found
-        shell: bash
-        run: |
-          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
-          echo "✔️ Downloaded pakku.jar "
+      # - name: 📦 Download pakku.jar
+      #   id: download_pakku
+      #   if: steps.check_pakku_lock_prev.outputs.file_found
+      #   shell: bash
+      #   run: |
+      #     curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+      #     echo "✔️ Downloaded pakku.jar "
         
       - name: 🔄 Run pakku diff
         id: pakku_diff
@@ -156,7 +156,7 @@ jobs:
         continue-on-error: true
 
       - name: 🔍 Check if tag exists
-        uses: mukunku/tag-exists-action@v1.6.0
+        uses: mukunku/tag-exists-action@v1.7.0
         id: check_tag
         with:
           tag: ${{ steps.changelog.outputs.version }}
@@ -194,7 +194,7 @@ jobs:
       - name: 📄 Format diff
         id: format_diff
         if: ${{ steps.read_diff.outputs.diff != '' }}
-        uses: roamingowl/template-output-with-eta@v2.0.0
+        uses: roamingowl/template-output-with-eta@v2.2.0
         with:
           template: |
             ```markdown
@@ -229,7 +229,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6.0.1
         with:
           fetch-depth: 0
 
@@ -264,14 +264,37 @@ jobs:
               core.setOutput('exists', true);
             }
 
+      - name: 🔍 Check if milestone exists
+        id: check_milestone
+        uses: actions/github-script@v8.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          result-encoding: string
+          script: |
+            const version = '${{ steps.changelog.outputs.version }}';
+            try {
+              const milestones = await github.rest.issues.listMilestones({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'all'
+              });
+              const milestoneExists = milestones.data.some(milestone => milestone.title === version);
+              console.log(`Milestone "${version}" exists: ${milestoneExists}`);
+              return milestoneExists;
+            } catch (error) {
+              console.log('Error checking milestones, assuming milestone does not exist');
+              return false;
+            }
+
       - name: 🔍 Create Pull Request if tag not found
         if: ${{ steps.check_existing_pr.outputs.exists == 'false' }}
-        uses: devops-infra/action-pull-request@v0.6.1
+        uses: devops-infra/action-pull-request@v1.0.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_branch: dev
           target_branch: main
-          milestone: ${{ steps.changelog.outputs.version }}
+          milestone: ${{ steps.check_milestone.outputs.result == 'true' && steps.changelog.outputs.version || '' }}
           ignore_users: "dependabot"
           draft: true
           title: 'Release: ${{ steps.changelog.outputs.version }}'
@@ -290,7 +313,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6.0.1
 
       - name: 🔄 Replace strings
         shell: bash
@@ -306,89 +329,125 @@ jobs:
           sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/mod-director/modpack.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
-
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
+          sed -i -e "s/DEV/${VERSION}/g" .pakku/server-overrides/server.properties
+          sed -i -e "s/DEV/${VERSION}/g" .pakku/docker-overrides/docker-compose.yml
+
+          
           sed -i -e "s/LOADER_VERSION/${LOADER_VERSION}/g" .pakku/multimc-overrides/mmc-pack.json
-          sed -i -e "s/LOADER_TYPE/${LOADER_TYPE}/g" .pakku/multimc-overrides/mmc-pack.json
-          sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/multimc-overrides/mmc-pack.json
-
           sed -i -e "s/LOADER_VERSION/${LOADER_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
-          sed -i -e "s/LOADER_TYPE/${LOADER_TYPE}/g" .pakku/server-overrides/forge-auto-install.txt
-          sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
+          sed -i -e "s/LOADER_VERSION/${LOADER_VERSION}/g" .pakku/docker-overrides/docker-compose.yml
 
-      - name: 📝 Cache pakku
-        uses: actions/cache@v4.3.0
+          sed -i -e "s/LOADER_TYPE/${LOADER_TYPE}/g" .pakku/multimc-overrides/mmc-pack.json
+          sed -i -e "s/LOADER_TYPE/${LOADER_TYPE}/g" .pakku/server-overrides/forge-auto-install.txt
+          sed -i -e "s/LOADER_TYPE/${LOADER_TYPE}/g" .pakku/docker-overrides/docker-compose.yml
+
+          sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/multimc-overrides/mmc-pack.json
+          sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
+          sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/docker-overrides/docker-compose.yml
+
+      - name: 📝 Cache Pakku
+        uses: actions/cache@v5.0.1
         id: cache
         with:
           path: build/.cache
           key: pakku-cache-${{ hashFiles('pakku-lock.json') }}
           restore-keys: pakku-cache-
 
-      - name: 📦 Export modpack
+      - name: 📦 Export Modpack
         run: |
-          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          # curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           java -jar pakku.jar fetch
           java -jar pakku.jar export
 
           mkdir -p .pakku/multimc-overrides/flame
           mkdir -p .pakku/multimc-overrides/mods
 
-      - name: 📁 Preparing the artifact curseforge
+      - name: 📁 Preparing the artifact CurseForge
         run: |
           cd ./build/curseforge/
           mv *.zip $(basename -s .zip *.zip)-curseforge.zip
           
       - name: 🚀 Upload artifact CurseForge
-        uses: actions/upload-artifact@v4.6.2
+        uses: actions/upload-artifact@v6.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-curseforge
           path: ./build/curseforge/${{ needs.info.outputs.project_full_name }}-curseforge.zip
           if-no-files-found: error
 
-      - name: 📁 Preparing the artifact modrinth
+      - name: 📁 Preparing the artifact Modrinth
         run: |
           cd ./build/modrinth/
           mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
 
-      - name: 🚀 Upload artifact modrinth
-        uses: actions/upload-artifact@v4.6.2
+      - name: 🚀 Upload artifact Modrinth
+        uses: actions/upload-artifact@v6.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-modrinth
           path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
           if-no-files-found: warn
 
-      - name: 📁 Preparing the artifact multimc
+      - name: 📁 Preparing the artifact MultiMC
         run: |
           mkdir -p .pakku/multimc-overrides/flame
           mkdir -p .pakku/multimc-overrides/mods
 
           mv -vf .pakku/multimc-overrides ./build/multimc
 
-          cp -vf ./build/.cache/curseforge/manifest.json ./build/multimc/flame/manifest.json
+          # Delete mods with export: false from ./mods directory
+          echo "Checking for mods with export: false..."
+          if [ -f "./pakku.json" ]; then
+            # Extract mod slugs with export: false and delete corresponding jar files
+            for mod in $(jq -r 'to_entries[] | select(.value.export == false) | .key' ./pakku.json); do
+              echo "Looking for mod: $mod"
+              find ./mods -name "${mod}*.jar" -type f -delete 2>/dev/null && echo "Deleted $mod jar files" || echo "No $mod jar files found"
+            done
+          else
+            echo "pakku.json not found, skipping export:false mod removal"
+          fi
 
+          
           cp -rf ./build/.cache/curseforge/overrides ./build/multimc/.minecraft
+
+          cp -vf ./build/.cache/curseforge/manifest.json ./build/multimc/flame/manifest.json
+          cp -vf ./config/fancymenu/assets/icons/icon128x128.png ./build/multimc/.minecraft/icon.png
+          
           cp -rf ./mods ./build/multimc/.minecraft/
 
           cd ./build/multimc/
           zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
-      - name: 🚀 Upload artifact multimc
-        uses: actions/upload-artifact@v4.6.2
+      - name: 🚀 Upload artifact MultiMC
+        uses: actions/upload-artifact@v6.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-multimc
           path: ./build/multimc/${{ needs.info.outputs.project_full_name }}-multimc.zip
           if-no-files-found: error
 
-      - name: 📁 Preparing the artifact server
+      - name: 📁 Preparing the artifact Server
         run: |
           cd ./build/serverpack/
           mv *.zip $(basename -s .zip *.zip)-serverpack.zip
 
-      - name: 🚀 Upload artifact server
-        uses: actions/upload-artifact@v4.6.2
+      - name: 🚀 Upload artifact Server
+        uses: actions/upload-artifact@v6.0.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-serverpack
           path: ./build/serverpack/${{ needs.info.outputs.project_full_name }}-serverpack.zip
+          if-no-files-found: error
+
+      - name: 📁 Preparing the artifact Docker
+        run: |
+          mv -vf .pakku/docker-overrides ./build/docker
+
+          cd ./build/docker/
+          mv docker-compose.yml "${{ needs.info.outputs.project_full_name }}-docker.yml"
+
+      - name: 🚀 Upload Docker Artifact
+        uses: actions/upload-artifact@v6.0.0
+        with:
+          name: ${{ needs.info.outputs.project_full_name }}-docker
+          path: ./build/docker/${{ needs.info.outputs.project_full_name }}-docker.yml
           if-no-files-found: error
 
   release-github:
@@ -401,10 +460,10 @@ jobs:
 
     steps:
       - name: 📦 Checkout
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6.0.1
 
       - name: 📦 Download artifact
-        uses: actions/download-artifact@v5.0.0
+        uses: actions/download-artifact@v7.0.0
         with:
           merge-multiple: true
 
@@ -424,12 +483,15 @@ jobs:
           if [ ! -f ${{ needs.info.outputs.project_full_name }}-multimc.zip ]; then
             echo '::error::No value found for artifact `multimc.zip`.' && exit 1
           fi
+          if [ ! -f ${{ needs.info.outputs.project_full_name }}-docker.yml ]; then
+            echo '::error::No value found for artifact `docker.yml`.' && exit 1
+          fi
           echo "✔️ All artifacts found"
 
       - name: 📄 Format diff
         id: format_diff
         if: ${{ needs.info.outputs.diff != '' }}
-        uses: roamingowl/template-output-with-eta@v2.0.0
+        uses: roamingowl/template-output-with-eta@v2.2.0
         with:
           template: |
             ```markdown
@@ -438,7 +500,7 @@ jobs:
 
       - name: 🚀 Create release
         id: release
-        uses: softprops/action-gh-release@v2.3.4
+        uses: softprops/action-gh-release@v2.5.0
         with:
           name: ${{ needs.info.outputs.project_version }}
           tag_name: ${{ needs.info.outputs.project_version }}
@@ -451,6 +513,7 @@ jobs:
             ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
             ${{ needs.info.outputs.project_full_name }}-serverpack.zip
             ${{ needs.info.outputs.project_full_name }}-multimc.zip
+            ${{ needs.info.outputs.project_full_name }}-docker.yml
           prerelease: ${{ needs.info.outputs.release_type != 'release' }}
           generate_release_notes: true
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -472,7 +535,7 @@ jobs:
           fi  
 
       - name: 📦 Download artifact
-        uses: actions/download-artifact@v5.0.0
+        uses: actions/download-artifact@v7.0.0
         with:
           merge-multiple: true
 
@@ -522,7 +585,7 @@ jobs:
             fi  
     
         - name: 📦 Download artifact
-          uses: actions/download-artifact@v5.0.0
+          uses: actions/download-artifact@v7.0.0
           with:
             merge-multiple: true
 

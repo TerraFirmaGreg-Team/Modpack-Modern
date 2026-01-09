@@ -1,3 +1,4 @@
+// priority: -100
 "use strict";
 
 global.AFC_DISABLED_ITEMS = [
@@ -107,7 +108,7 @@ global.AFC_SOFTWOOD_TYPES =
 [
     'tualang',
     'cypress',
-    'fig',
+    'fig'
 ]
 
 global.AFC_HARDWOOD_TYPES =

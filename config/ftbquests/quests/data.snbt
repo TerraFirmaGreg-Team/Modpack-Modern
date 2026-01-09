@@ -10,6 +10,7 @@
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
+	hide_excluded_quests: false
 	icon: "tfg:terra_firma_greg"
 	lock_message: "e"
 	loot_crate_no_drop: {

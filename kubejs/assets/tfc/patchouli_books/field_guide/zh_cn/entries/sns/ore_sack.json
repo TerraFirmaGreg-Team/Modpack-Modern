@@ -1,0 +1,18 @@
+{
+  "name": "矿石袋",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:ore_sack",
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "sns:ore_sack",
+	  "text": "$(item)矿石袋$()是一种$(l:sns/item_containers)物品容器$()，旨在容纳大量某单一矿石类物品，在采矿中极其实用。$(br2)默认每格可堆叠高达 512 个矿石"
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/ore_sack",
+	  "text": "供整合包作者或希望添加更多矿石的玩家参考，请查看物品标签 $(bold)sns:allowed_in_ore_sack$()，大多数附加内容应会被自动支持"
+	}
+  ],
+  "read_by_default": true
+}

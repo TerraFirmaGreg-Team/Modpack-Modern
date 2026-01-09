@@ -2,6 +2,7 @@
     "parent": "item/generated",
     "textures": {
         "layer0": "gtceu:item/material_sets/bright/dust",
-        "layer1": "gtceu:item/material_sets/bright/dust_secondary"
+        "layer1": "gtceu:item/material_sets/bright/dust_secondary",
+        "layer2": "gtceu:item/material_sets/bright/dust_overlay"
     }
 }

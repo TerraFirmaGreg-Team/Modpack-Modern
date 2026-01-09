@@ -167,7 +167,7 @@ familiarityDecayLimit = 0.3
 		#
 		# Tank capacity of a crucible (in mB).
 		#Range: 0 ~ 2147483645
-		crucibleCapacity = 4032
+		crucibleCapacity = 4608
 		#
 		# A modifier for how fast fluid containers empty into crucibles. Containers will empty 1 mB every (this) number of ticks.
 		#Range: > 1
@@ -810,7 +810,7 @@ familiarityDecayLimit = 0.3
 	[mechanics.fluids]
 		#
 		# If true, TFC buckets that naturally place sources (colored steel) will place sources. If false, this behavior is disabled. By default, colored steel buckets do not place sources.
-		enableBucketsPlacingSources1 = false
+		enableBucketsPlacingSources1 = true
 
 	[mechanics.vanillaChanges]
 		#

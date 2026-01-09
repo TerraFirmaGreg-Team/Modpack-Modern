@@ -1,0 +1,44 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "minecraft:simple_block",
+				"config": {
+					"to_place": {
+						"type": "minecraft:simple_state_provider",
+						"state": {
+							"Name": "tfg:lava_source"
+						}
+					}
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:heightmap",
+					"heightmap": "WORLD_SURFACE"
+				},
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:all_of",
+						"predicates": [
+							{
+								"type": "minecraft:has_sturdy_face",
+								"offset": [ 0, -1, 0 ],
+								"direction": "down"
+							},
+							{
+								"type": "minecraft:matching_blocks",
+								"blocks": "minecraft:air"
+							}
+						]
+					}
+				}
+			]
+		},
+		"tries": 12,
+		"xz_spread": 4,
+		"y_spread": 1
+	}
+}

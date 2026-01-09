@@ -1,0 +1,83 @@
+{
+    "contents": [
+        {
+            "type": "atom",
+            "element": "N",
+            "index": 0,
+            "x": 2.2933,
+            "y": -0.155
+        },
+        {
+            "type": "atom",
+            "element": "O",
+            "index": 1,
+            "x": 3.1594,
+            "y": -0.655
+        },
+        {
+            "type": "atom",
+            "element": "O",
+            "index": 2,
+            "x": 1.4273,
+            "y": -0.655
+        },
+        {
+            "type": "atom",
+            "element": "O",
+            "index": 3,
+            "x": 2.2933,
+            "y": 0.845
+        },
+        {
+            "sup": "-",
+            "atoms": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "type": "parens"
+        },
+        {
+            "type": "atom",
+            "element": {
+                "symbol": "K⁺",
+                "color": {
+                    "color": -7388972,
+                    "optional": true
+                },
+                "material": "gtceu:potassium"
+            },
+            "index": 4,
+            "x": 0.0,
+            "y": 0.0
+        },
+        {
+            "type": "bond",
+            "a": 0,
+            "b": 1,
+            "lines": [
+                "solid",
+                "dotted"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 0,
+            "b": 2,
+            "lines": [
+                "solid",
+                "dotted"
+            ]
+        },
+        {
+            "type": "bond",
+            "a": 0,
+            "b": 3,
+            "lines": [
+                "solid",
+                "dotted"
+            ]
+        }
+    ]
+}

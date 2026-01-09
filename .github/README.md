@@ -68,6 +68,7 @@ Want to help translate? Please read [this](../kubejs/README_IF_TRANSLATING.md) i
 - [GregTech Community Pack Modern](https://www.curseforge.com/minecraft/modpacks/gregtech-community-pack-modern) for most of their quest text.
 - [Better End](https://www.curseforge.com/minecraft/mc-mods/betterend) for some assets.
 - Uni for Mars' dunes terrain generation.
+- Flare from the [Cosmic Frontiers](https://www.curseforge.com/minecraft/modpacks/cosmic-frontiers) team for some icon set textures.
 
 <!-- Links: -->
 [TerraFirmaCraft]: https://www.curseforge.com/minecraft/mc-mods/terrafirmacraft

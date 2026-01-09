@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 /**
@@ -68,8 +68,6 @@ global.CREATE_DISABLED_ITEMS = [
     'create:creative_fluid_tank',
     'create:unprocessed_obsidian_sheet',
     'create:creative_motor',
-    'create:refined_radiance_casing', 
-    'create:shadow_steel_casing', 
     'create:wooden_bracket', 
     'create:red_sand_paper',
     'create:empty_blaze_burner',

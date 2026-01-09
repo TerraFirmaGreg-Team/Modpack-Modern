@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 global.SOPHISTICATED_BACKPACKS_DISABLED_ITEMS = [

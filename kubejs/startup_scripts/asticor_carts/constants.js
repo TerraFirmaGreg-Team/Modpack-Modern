@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 global.ASTICOR_CARTS_DISABLED_ITEMS = [

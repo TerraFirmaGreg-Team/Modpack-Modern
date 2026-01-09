@@ -4,7 +4,7 @@
 const registerAE2NetworkAnalyzerRecipes = (event) => {
     
     // Network_analyser
-    event.shaped('ae2netanalyser:network_analyser', [
+    event.recipes.gtceu.shaped('ae2netanalyser:network_analyser', [
         'ABA',
         'CDC',
         'EFE' 
@@ -15,5 +15,5 @@ const registerAE2NetworkAnalyzerRecipes = (event) => {
         D: 'gtceu:computer_monitor_cover',
         E: '#forge:plates/stainless_steel',
         F: '#gtceu:batteries/hv'
-    }).id('ae2netanalyser:analyser')
+    }).addMaterialInfo().id('ae2netanalyser:analyser')
 }

@@ -5,15 +5,15 @@
 	"downfall": 0.5,
 	"effects": {
 		"additions_sound": {
-			"sound": "minecraft:ambient.basalt_deltas.additions",
+			"sound": "tfg:ambient.lower_nether.additions",
 			"tick_chance": 0.0111
 		},
-		"ambient_sound": "minecraft:ambient.basalt_deltas.loop",
+		"ambient_sound": "tfg:ambient.lower_nether.loop",
 		"fog_color": 6840176,
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
-			"sound": "minecraft:ambient.basalt_deltas.mood",
+			"sound": "tfg:ambient.lower_nether.mood",
 			"tick_delay": 6000
 		},
 		"music": {
@@ -50,7 +50,8 @@
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
-			"tfg:nether/terrain/spring_lava"
+			"tfg:nether/terrain/spring_lava",
+			"tfg:nether/terrain/mossy_cobble"
 		],
 		[
 			"minecraft:spring_delta",
@@ -100,12 +101,6 @@
 			}
 		],
 		"creature": [
-			{
-				"type": "minecraft:frog",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 10
-			},
 			{
 				"type": "beneath:red_elk",
 				"maxCount": 8,

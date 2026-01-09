@@ -5,7 +5,7 @@
  */
 const registerTooltips = (event) => {
 	//Your IDE may say that "item" and "advanced" are never used, but they are required! So dont remove them <3
-	
+
 	event.addAdvanced(['minecraft:name_tag'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.nametag'))
 	})
@@ -18,45 +18,151 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['create:blaze_burner'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.blaze_burner'))
 	})
+	event.addAdvanced(['tfg:antipoison_pill'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.antipoison_pill'))
+	})
+	event.addAdvanced(['tfg:antipoison_tablet'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.antipoison_tablet'))
+	})
 	event.addAdvanced(['tfg:electric_greenhouse'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.machine.perfect_overclock')),
-		text.add(2, Text.translate('tfg.tooltip.machine.customize_interior'))
+		text.add(1, Text.translate('tfg.tooltip.machine.electric_greenhouse_1'));
+		text.add(2, Text.translate('tfg.tooltip.machine.electric_greenhouse_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.perfect_overclock'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
+		text.add(5, Text.translate('tfg.tooltip.machine.customize_interior'));
+	})
+	event.addAdvanced(['tfg:growth_chamber'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.machine.growth_chamber_1'));
+		text.add(2, Text.translate('tfg.tooltip.machine.growth_chamber_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
+	})
+	event.addAdvanced(['tfg:evaporation_tower'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.machine.evaporation_tower_1'));
+		text.add(2, Text.translate('tfg.tooltip.machine.evaporation_tower_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
+	})
+	event.addAdvanced(['tfg:bioreactor'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.machine.bioreactor_1'));
+		text.add(2, Text.translate('tfg.tooltip.machine.bioreactor_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
+	})
+	event.addAdvanced(['tfg:cooling_tower'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.machine.cooling_tower_1'));
+		text.add(2, Text.translate('tfg.tooltip.machine.cooling_tower_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.perfect_overclock'));
+		text.add(4, Text.translate('tfg.tooltip.machine.subtick'));
+		text.add(5, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
+	})
+	event.addAdvanced(['gtceu:moon_dust_harvester'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.tooltip.machine.moon_dust_harvester_1'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.moon_dust_harvester_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.coil_energy_discount'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
+	})
+	event.addAdvanced(['gtceu:ostrum_harvester'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.tooltip.machine.ostrum_harvester_1'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.ostrum_harvester_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.coil_energy_discount'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
+	})
+	event.addAdvanced(['tfg:ostrum_linear_accelerator'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_1'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_2'));
+		text.add(3, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_3'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
+	})
+	event.addAdvanced(['gtceu:heat_exchanger'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.tooltip.machine.heat_exchanger_1'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.heat_exchanger_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.perfect_overclock'));
+		text.add(4, Text.translate('tfg.tooltip.machine.subtick'));
+		text.add(5, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
+	})
+	event.addAdvanced(['gtceu:nuclear_fuel_factory'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.tooltip.machine.nuclear_fuel_factory_1'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.nuclear_fuel_factory_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.coil_speed_discount'));
+		text.add(4, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
+	})
+	event.addAdvanced(['tfg:steam_bloomery'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.tooltip.machine.steam_bloomery_1'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.steam_bloomery_2'));
+		text.add(3, Text.translate('gtceu.tooltip.machine.steam_bloomery_3'));
+		text.add(4, Text.translate('gtceu.tooltip.machine.steam_parallel'));
+	})
+	event.addAdvanced(['tfg:steam_thermal_centrifuge'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.machine.lv_thermal_centrifuge.tooltip'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.steam_parallel'));
+	})
+	event.addAdvanced(['tfg:steam_fuser'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.machine.hp_steam_alloy_smelter.tooltip'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.steam_parallel'));
+	})
+	event.addAdvanced(['tfg:steam_squasher'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.machine.hp_steam_compressor.tooltip'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.steam_parallel'));
+	})
+	event.addAdvanced(['tfg:steam_presser'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.machine.hp_steam_forge_hammer.tooltip'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.steam_parallel'));
 	})
 	event.addAdvanced(['gtceu:large_chemical_reactor'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.machine.perfect_overclock'))
+		text.add(1, Text.translate('tfg.tooltip.machine.perfect_overclock'));
+		text.add(2, Text.translate('tfg.tooltip.machine.subtick'));
+	})
+	event.addAdvanced(['gtceu:coal_liquefaction_tower'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_1'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.coil_speed_discount'));
+		text.add(4, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
+	})
+
+	// Hot or not containers
+	event.addAdvanced(['#tfg:insulating_container'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.hotornot_container"))
+	})
+	// Do these in reverse order so the hot one appears on top
+	event.addAdvanced(['#tfg:floating_protection_equipment'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.hotornot_floating_equipment"))
+	})
+	event.addAdvanced(['#tfg:cold_protection_equipment'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.hotornot_cold_equipment"))
+	})
+	event.addAdvanced(['#tfg:hot_protection_equipment'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.hotornot_hot_equipment"))
 	})
 
 	// Insulation
 	event.addAdvanced(['create:copper_diving_helmet', 'create:copper_backtank', 'create:copper_diving_boots'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.copper_diving_suit_warmth')),
-		text.add(2, Text.translate('tfg.tooltip.armor.copper_diving_suit_insulation'))
+		text.add(1, Text.translate('tfg.tooltip.armor.copper_diving_suit_warmth'));
+		text.add(2, Text.translate('tfg.tooltip.armor.copper_diving_suit_insulation'));
 	})
-	event.addAdvanced(['create:netherite_diving_helmet', 'create:netherite_backtank', 'create:netherite_diving_boots', 'minecraft:netherite_leggings'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.netherite_diving_suit_warmth')),
-		text.add(2, Text.translate('tfg.tooltip.armor.netherite_diving_suit_insulation'))
-		text.add(3, Text.translate('tfg.tooltip.armor.netherite_diving_suit_set'))
+	event.addAdvanced(['create:netherite_diving_helmet', 'create:netherite_backtank', 'create:netherite_diving_boots', 'minecraft:netherite_leggings', 'minecraft:netherite_boots'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.armor.netherite_diving_suit_warmth'));
+		text.add(2, Text.translate('tfg.tooltip.armor.netherite_diving_suit_insulation'));
+		text.add(3, Text.translate('tfg.tooltip.armor.netherite_diving_suit_set'));
 	})
 	event.addAdvanced(['gtceu:nanomuscle_helmet', 'gtceu:nanomuscle_chestplate', 'gtceu:nanomuscle_leggings', 'gtceu:nanomuscle_boots', 'gtceu:advanced_nanomuscle_chestplate'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.nanomuscle_warmth')),
-		text.add(2, Text.translate('tfg.tooltip.armor.nanomuscle_insulation'))
-		text.add(3, Text.translate('tfg.tooltip.armor.nanomuscle_set'))
-		if (item == 'gtceu:nanomuscle_leggings') {
-			text.add(4, Text.translate('tfg.tooltip.armor.nanomuscle_legs_buff'))
+		text.add(1, Text.translate('tfg.tooltip.armor.nanomuscle_warmth'));
+		text.add(2, Text.translate('tfg.tooltip.armor.nanomuscle_insulation'));
+		text.add(3, Text.translate('tfg.tooltip.armor.nanomuscle_set'));
+		if (item === 'gtceu:nanomuscle_leggings') {
+			text.add(4, Text.translate('tfg.tooltip.armor.nanomuscle_legs_buff'));
 		}
 	})
 	event.addAdvanced(['gtceu:quarktech_helmet', 'gtceu:quarktech_chestplate', 'gtceu:quarktech_leggings', 'gtceu:quarktech_boots', 'gtceu:advanced_quarktech_chestplate'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.quarktech_warmth')),
-		text.add(2, Text.translate('tfg.tooltip.armor.quarktech_insulation'))
-		text.add(3, Text.translate('tfg.tooltip.armor.quarktech_set'))
+		text.add(1, Text.translate('tfg.tooltip.armor.quarktech_warmth'));
+		text.add(2, Text.translate('tfg.tooltip.armor.quarktech_insulation'));
+		text.add(3, Text.translate('tfg.tooltip.armor.quarktech_set'));
 	})
 	event.addAdvanced([
 		'ad_astra:space_helmet', 'ad_astra:space_suit', 'ad_astra:space_pants', 'ad_astra:space_boots',
 		'ad_astra:netherite_space_helmet', 'ad_astra:netherite_space_suit', 'ad_astra:netherite_space_pants', 'ad_astra:netherite_space_boots',
 		'ad_astra:jet_suit_helmet', 'ad_astra:jet_suit', 'ad_astra:jet_suit_pants', 'ad_astra:jet_suit_boots'
 	], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.space_suit_warmth')),
-		text.add(2, Text.translate('tfg.tooltip.armor.space_suit_insulation'))
-		text.add(3, Text.translate('tfg.tooltip.armor.space_suit_set'))
+		text.add(1, Text.translate('tfg.tooltip.armor.space_suit_warmth'));
+		text.add(2, Text.translate('tfg.tooltip.armor.space_suit_insulation'));
+		text.add(3, Text.translate('tfg.tooltip.armor.space_suit_set'));
 	})
 
 	// Supports
@@ -90,12 +196,6 @@ const registerTooltips = (event) => {
 		})
 	})
 
-	// Vessels
-	event.addAdvanced(['#tfc:fired_vessels'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.vessels'))
-
-	})
-
 	// Solar Panel
 	event.addAdvanced(['ad_astra:solar_panel'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.solar_panel.single'))
@@ -110,45 +210,46 @@ const registerTooltips = (event) => {
 	})
 
 	event.addAdvanced(['gtceu:large_solar_panel_tier3'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.solar_panel.large_tier3'))
+		text.add(1, Text.translate('tfg.tooltip.solar_panel.large_tier3'));
+		text.add(2, Text.translate('tfg.tooltip.machine.parallel'))
 	})
 
 	// Mars Animals
 	event.addAdvanced(['species:petrified_egg'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.petrified_egg'))
 	})
-	
+
 	event.addAdvanced(['tfg:sniffer_egg'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.attribution.sniffer')),
+		text.add(1, Text.translate('tfg.tooltip.attribution.sniffer'));
 		text.add(2, Text.translate('tfg.tooltip.large_egg'))
 	})
-	
+
 	event.addAdvanced(['tfg:wraptor_egg'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.attribution.wraptor')),
+		text.add(1, Text.translate('tfg.tooltip.attribution.wraptor'));
 		text.add(2, Text.translate('tfg.tooltip.large_egg'))
 	})
-	
+
 	event.addAdvanced(['tfg:sniffer_wool'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.sniffer_wool'))
 	})
-	
+
 	event.addAdvanced(['tfg:wraptor_wool'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.wraptor_wool'))
 	})
-	
+
 	event.addAdvanced(['tfg:wraptor_sugar'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.wraptor_sugar'))
 	})
-	
+
 	// Temperature changing foods
 	event.addAdvanced(['#tfg:cooling_foods'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.cooling_foods'))
 	})
-	
+
 	event.addAdvanced(['#tfg:cooling_foods_strong'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.cooling_foods_strong'))
 	})
-	
+
 	event.addAdvanced(['#tfg:warming_foods'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.warming_foods'))
 	})
@@ -161,14 +262,63 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
 	})
 
+	// Fluid + item containers
 	global.LAB_EQUIPMENT_CONTAINERS.forEach(container => {
 		event.addAdvanced([`tfg:${container.type}`], (item, advanced, text) => {
-			text.add(1, Text.translate('tfg.tooltip.lab_equipment.part').append(`§e${container.capacity.toString()}mB`))
+			text.add(1, Text.translate('gtceu.universal.tooltip.fluid_storage_capacity', `${container.capacity}`))
 		})
+	})
+	event.addAdvanced(['#firmalife:big_barrels'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "36"))
+		text.add(2, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "80,000"))
+	})
+	event.addAdvanced(['create:fluid_tank', 'create_connected:fluid_vessel'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "16,000"))
+	})
+	event.addAdvanced(['#tfc:barrels'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "10,000"))
+	})
+	event.addAdvanced(['tfc:crucible'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "4,608"))
+	})
+	event.addAdvanced(['#tfc:fired_vessels'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "3,024"))
+	})
+	event.addAdvanced(['waterflasks:iron_flask', 'waterflasks:red_steel_flask'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "2,000"))
+	})
+	event.addAdvanced(['tfc:wooden_bucket', 'firmalife:mixing_bowl'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "1,000"))
+	})
+	event.addAdvanced(['waterflasks:leather_flask','tfc:silica_glass_bottle'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "500"))
+	})
+	event.addAdvanced(['tfc:hematitic_glass_bottle', 'tfc:volcanic_glass_bottle', 'tfc:olivine_glass_bottle'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "400"))
+	})
+	event.addAdvanced(['#tfc:lamps'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "250"))
+	})
+	event.addAdvanced(['tfc:ceramic/jug', 'firmalife:hollow_shell'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "100"))
+	})
+	event.addAdvanced(['#tfcastikorcarts:supply_cart'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "54"))
+	})
+	event.addAdvanced(['framedblocks:framed_chest'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "27"))
+	})
+	event.addAdvanced(['create:item_vault', 'create_connected:item_silo'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "20"))
+	})
+	event.addAdvanced(['#forge:chests/wooden'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "18"))
+	})
+	event.addAdvanced(['#tfc:fired_large_vessels'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "9"))
 	})
 
 	//Nuclear Fission Tooltips
-
 	event.addAdvanced(['minecraft:blue_ice'], (item, advanced, text) => {
 		text.add(1, Text.translate("tfg.tooltip.component.blue_ice"))
 	})
@@ -192,19 +342,96 @@ const registerTooltips = (event) => {
 	})
 
 	event.addAdvanced(['tfg:nuclear_turbine'], (item, advanced, text) => {
-		text.add(1, Text.translate("tfg.tooltip.component.nuclear_turbine_1"))
-		text.add(2, Text.translate("tfg.tooltip.component.nuclear_turbine_2"))
+		text.add(1, Text.translate("tfg.tooltip.component.nuclear_turbine_1"));
+		text.add(2, Text.translate("tfg.tooltip.component.nuclear_turbine_2"));
 	})
+
+	event.addAdvanced(['tfg:food/slice_of_cheese'], (item, advanced, text) => {
+		if (!event.isShift()) {
+			text.add(1, Text.translate("tfg.tooltip.fake_nutrition_info_listener"))
+		} else {
+			text.add(1, Text.translate("tfg.tooltip.fake_nutrition_info"));
+			text.add(2, Text.translate("tfg.tooltip.cheese_slice_microplastics"))
+		};
+	});
+
 
 	// AE2
 	event.addAdvanced(['tfg:wireless_card'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.wireless_card_1'))
-		text.add(2, Text.translate('tfg.tooltip.wireless_card_2'))
-		text.add(3, Text.translate('tfg.tooltip.wireless_card_3'))
+		text.add(1, Text.translate('tfg.tooltip.wireless_card_1'));
+		text.add(2, Text.translate('tfg.tooltip.wireless_card_2'));
+		text.add(3, Text.translate('tfg.tooltip.wireless_card_3'));
 	})
 
 	// Deprecated Items
 	event.addAdvanced(['vintageimprovements:lathe'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
+	})
+
+	// Drink effects
+	event.addAdvanced(['tfc_gurman:compote_bucket'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.minecraft.jump_boost").append(Text.of(" II (00:30)")).blue());
+	})
+	event.addAdvanced(['tfc_gurman:kvass_bucket'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (01:20)")).blue());
+		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
+	})
+	event.addAdvanced(['tfc_gurman:lemonade_bucket'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" (00:30)")).blue());
+		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
+	})
+	event.addAdvanced(['tfc_gurman:coffee_bucket'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.minecraft.speed").append(Text.of(" (00:30)")).blue());
+		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+	})
+	event.addAdvanced(['tfc_gurman:cocoa_bucket'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" (00:30)")).blue());
+		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+	})
+	event.addAdvanced(['tfc_gurman:tea_mint_bucket'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.minecraft.regeneration").append(Text.of(" (00:30)")).blue());
+		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+	})
+	event.addAdvanced(['tfc_gurman:tea_chamomile_bucket'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.minecraft.resistance").append(Text.of(" (00:30)")).blue());
+		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+	})
+	event.addAdvanced(['tfc_gurman:tea_nettle_bucket'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.minecraft.slow_falling").append(Text.of(" (00:30)")).blue());
+		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+	})
+	event.addAdvanced(['tfc_gurman:tea_rosehip_bucket'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.minecraft.absorption").append(Text.of(" (00:30)")).blue());
+		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+	})
+	event.addAdvanced(['tfc_gurman:nalivka_bucket'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (02:40)")).blue());
+		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
+	})
+	event.addAdvanced(['tfc:bucket/spring_water'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
+	})
+	event.addAdvanced(['firmalife:bucket/red_wine'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
+	})
+	event.addAdvanced(['firmalife:bucket/rose_wine'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.minecraft.dolphins_grace").append(Text.of(" (05:20)")).blue());
+	})
+	event.addAdvanced(['firmalife:bucket/white_wine'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.species.wither_resistance").append(Text.of(" (05:20)")).blue());
+	})
+	event.addAdvanced(['firmalife:bucket/dessert_wine'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.species.iron_will").append(Text.of(" (05:20)")).blue());
+	})
+	event.addAdvanced(['firmalife:bucket/sparkling_wine'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.minecraft.jump_boost").append(Text.of(" II (05:20)")).blue());
+	})
+	event.addAdvanced(['gtceu:ethanol_bucket'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.minecraft.nausea").append(Text.of(" (01:00)")).red());
+		text.add(1, Text.translate("effect.minecraft.poison").append(Text.of(" II (00:30)")).red());
+	})
+	event.addAdvanced(['gtceu:methanol_bucket'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.minecraft.blindness").append(Text.of(" (05:00)")).red());
+		text.add(1, Text.translate("effect.minecraft.wither").append(Text.of(" II (01:00)")).red());
 	})
 }

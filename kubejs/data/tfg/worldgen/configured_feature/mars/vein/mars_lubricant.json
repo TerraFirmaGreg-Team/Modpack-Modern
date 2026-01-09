@@ -16,23 +16,19 @@
         "with": [
           {
             "block": "gtceu:mars_stone_soapstone_ore",
-            "weight": 10
+            "weight": 15
           },
           {
             "block": "gtceu:mars_stone_talc_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:raw_talc_block",
-            "weight": 1
+            "weight": 15
           },
           {
             "block": "gtceu:mars_stone_glauconite_sand_ore",
-            "weight": 15
+            "weight": 5
           },
           {
             "block": "gtceu:mars_stone_trona_ore",
-            "weight": 15
+            "weight": 25
           },
           {
             "block": "gtceu:mars_stone_pentlandite_ore",
@@ -51,23 +47,19 @@
         "with": [
           {
             "block": "gtceu:red_granite_soapstone_ore",
-            "weight": 10
+            "weight": 15
           },
           {
             "block": "gtceu:red_granite_talc_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:raw_talc_block",
-            "weight": 1
+            "weight": 15
           },
           {
             "block": "gtceu:red_granite_glauconite_sand_ore",
-            "weight": 15
+            "weight": 5
           },
           {
             "block": "gtceu:red_granite_trona_ore",
-            "weight": 15
+            "weight": 25
           },
           {
             "block": "gtceu:red_granite_pentlandite_ore",
@@ -86,23 +78,19 @@
         "with": [
           {
             "block": "gtceu:granite_soapstone_ore",
-            "weight": 10
+            "weight": 15
           },
           {
             "block": "gtceu:granite_talc_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:raw_talc_block",
-            "weight": 1
+            "weight": 15
           },
           {
             "block": "gtceu:granite_glauconite_sand_ore",
-            "weight": 15
+            "weight": 5
           },
           {
             "block": "gtceu:granite_trona_ore",
-            "weight": 15
+            "weight": 25
           },
           {
             "block": "gtceu:granite_pentlandite_ore",
@@ -121,23 +109,19 @@
         "with": [
           {
             "block": "gtceu:diorite_soapstone_ore",
-            "weight": 10
+            "weight": 15
           },
           {
             "block": "gtceu:diorite_talc_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:raw_talc_block",
-            "weight": 1
+            "weight": 15
           },
           {
             "block": "gtceu:diorite_glauconite_sand_ore",
-            "weight": 15
+            "weight": 5
           },
           {
             "block": "gtceu:diorite_trona_ore",
-            "weight": 15
+            "weight": 25
           },
           {
             "block": "gtceu:diorite_pentlandite_ore",
@@ -156,23 +140,19 @@
         "with": [
           {
             "block": "gtceu:shale_soapstone_ore",
-            "weight": 10
+            "weight": 15
           },
           {
             "block": "gtceu:shale_talc_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:raw_talc_block",
-            "weight": 1
+            "weight": 15
           },
           {
             "block": "gtceu:shale_glauconite_sand_ore",
-            "weight": 15
+            "weight": 5
           },
           {
             "block": "gtceu:shale_trona_ore",
-            "weight": 15
+            "weight": 25
           },
           {
             "block": "gtceu:shale_pentlandite_ore",
@@ -191,23 +171,19 @@
         "with": [
           {
             "block": "gtceu:claystone_soapstone_ore",
-            "weight": 10
+            "weight": 15
           },
           {
             "block": "gtceu:claystone_talc_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:raw_talc_block",
-            "weight": 1
+            "weight": 15
           },
           {
             "block": "gtceu:claystone_glauconite_sand_ore",
-            "weight": 15
+            "weight": 5
           },
           {
             "block": "gtceu:claystone_trona_ore",
-            "weight": 15
+            "weight": 25
           },
           {
             "block": "gtceu:claystone_pentlandite_ore",
@@ -226,23 +202,19 @@
         "with": [
           {
             "block": "gtceu:limestone_soapstone_ore",
-            "weight": 10
+            "weight": 15
           },
           {
             "block": "gtceu:limestone_talc_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:raw_talc_block",
-            "weight": 1
+            "weight": 15
           },
           {
             "block": "gtceu:limestone_glauconite_sand_ore",
-            "weight": 15
+            "weight": 5
           },
           {
             "block": "gtceu:limestone_trona_ore",
-            "weight": 15
+            "weight": 25
           },
           {
             "block": "gtceu:limestone_pentlandite_ore",
@@ -261,23 +233,19 @@
         "with": [
           {
             "block": "gtceu:conglomerate_soapstone_ore",
-            "weight": 10
+            "weight": 15
           },
           {
             "block": "gtceu:conglomerate_talc_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:raw_talc_block",
-            "weight": 1
+            "weight": 15
           },
           {
             "block": "gtceu:conglomerate_glauconite_sand_ore",
-            "weight": 15
+            "weight": 5
           },
           {
             "block": "gtceu:conglomerate_trona_ore",
-            "weight": 15
+            "weight": 25
           },
           {
             "block": "gtceu:conglomerate_pentlandite_ore",
@@ -296,23 +264,19 @@
         "with": [
           {
             "block": "gtceu:dolomite_soapstone_ore",
-            "weight": 10
+            "weight": 15
           },
           {
             "block": "gtceu:dolomite_talc_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:raw_talc_block",
-            "weight": 1
+            "weight": 15
           },
           {
             "block": "gtceu:dolomite_glauconite_sand_ore",
-            "weight": 15
+            "weight": 5
           },
           {
             "block": "gtceu:dolomite_trona_ore",
-            "weight": 15
+            "weight": 25
           },
           {
             "block": "gtceu:dolomite_pentlandite_ore",
@@ -331,23 +295,19 @@
         "with": [
           {
             "block": "gtceu:dacite_soapstone_ore",
-            "weight": 10
+            "weight": 15
           },
           {
             "block": "gtceu:dacite_talc_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:raw_talc_block",
-            "weight": 1
+            "weight": 15
           },
           {
             "block": "gtceu:dacite_glauconite_sand_ore",
-            "weight": 15
+            "weight": 5
           },
           {
             "block": "gtceu:dacite_trona_ore",
-            "weight": 15
+            "weight": 25
           },
           {
             "block": "gtceu:dacite_pentlandite_ore",
@@ -368,19 +328,19 @@
       "blocks": [
         {
           "block": "gtceu:soapstone_indicator",
-          "weight": 10
+          "weight": 15
         },
         {
           "block": "gtceu:talc_indicator",
-          "weight": 20
+          "weight": 15
         },
         {
           "block": "gtceu:glauconite_sand_indicator",
-          "weight": 15
+          "weight": 5
         },
         {
           "block": "gtceu:trona_indicator",
-          "weight": 15
+          "weight": 25
         },
         {
           "block": "gtceu:pentlandite_indicator",

@@ -1,0 +1,185 @@
+{
+	"type": "minecraft:flat_cache",
+	"argument": {
+		"type": "minecraft:cache_2d",
+		"argument": {
+			"type": "minecraft:add",
+			"argument1": 10.0,
+			"argument2": {
+				"type": "minecraft:mul",
+				"argument1": {
+					"type": "minecraft:blend_alpha"
+				},
+				"argument2": {
+					"type": "minecraft:add",
+					"argument1": -10.0,
+					"argument2": {
+						"type": "minecraft:spline",
+						"spline": {
+							"coordinate": "tfg:venus/continents",
+							"points": [
+								{
+									"derivative": 0.0,
+									"location": -0.51,
+									"value": 10
+								},
+								{
+									"derivative": 0.0,
+									"location": -0.44,
+									"value": 10
+								},
+								{
+									"derivative": 0.0,
+									"location": -0.05,
+									"value": 10
+								},
+								{
+									"derivative": 0.0,
+									"location": 0.1,
+									"value": {
+										"coordinate": "tfg:venus/erosion",
+										"points": [
+											{
+												"derivative": 0.0,
+												"location": -0.6,
+												"value": 6.25
+											},
+											{
+												"derivative": 0.0,
+												"location": -0.5,
+												"value": 6.5
+											},
+											{
+												"derivative": 0.0,
+												"location": -0.35,
+												"value": 6.3
+											},
+											{
+												"derivative": 0.0,
+												"location": -0.25,
+												"value": 6.2
+											},
+											{
+												"derivative": 0.0,
+												"location": -0.1,
+												"value": 6.4
+											},
+											{
+												"derivative": 0.0,
+												"location": 0.03,
+												"value": 6.8
+											},
+											{
+												"derivative": 0.0,
+												"location": 0.35,
+												"value": 7
+											}
+										]
+									}
+								},
+								{
+									"derivative": 0.0,
+									"location": 0.4,
+									"value": {
+										"coordinate": "tfg:venus/erosion",
+										"points": [
+											{
+												"derivative": 0.0,
+												"location": -0.6,
+												"value": 3.3
+											},
+											{
+												"derivative": 0.0,
+												"location": -0.5,
+												"value": 2.67
+											},
+											{
+												"derivative": 0.0,
+												"location": -0.35,
+												"value": 3.1
+											},
+											{
+												"derivative": 0.0,
+												"location": -0.25,
+												"value": 2.6
+											},
+											{
+												"derivative": 0.0,
+												"location": -0.1,
+												"value": 3.4
+											},
+											{
+												"derivative": 0.0,
+												"location": 0.03,
+												"value": 4.08
+											},
+											{
+												"derivative": 0.0,
+												"location": 0.35,
+												"value": 4.08
+											},
+											{
+												"derivative": 0.0,
+												"location": 0.45,
+												"value": 4.08
+											}
+										]
+									}
+								},
+								{
+									"derivative": 0.0,
+									"location": 1.0,
+									"value": {
+										"coordinate": "tfg:venus/erosion",
+										"points": [
+											{
+												"derivative": 0.0,
+												"location": -0.6,
+												"value": 2.1
+											},
+											{
+												"derivative": 0.0,
+												"location": -0.5,
+												"value": 1.9
+											},
+											{
+												"derivative": 0.0,
+												"location": -0.35,
+												"value": 2.2
+											},
+											{
+												"derivative": 0.0,
+												"location": -0.25,
+												"value": 2.67
+											},
+											{
+												"derivative": 0.0,
+												"location": -0.1,
+												"value": 2.5
+											},
+											{
+												"derivative": 0.0,
+												"location": 0.03,
+												"value": 2.2
+											},
+											{
+												"derivative": 0.0,
+												"location": 0.05,
+												"value": 2.69
+											},
+											{
+												"derivative": 0.0,
+												"location": 0.4,
+												"value": 2.4
+											}
+										]
+									}
+								}
+							]
+						}
+					}
+				}
+			}
+		}
+	}
+}

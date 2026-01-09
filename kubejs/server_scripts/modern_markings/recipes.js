@@ -28,5 +28,8 @@ const registerModernMarkingRecipes = (event) => {
 		event.stonecutting(item, 
 			Ingredient.of('#ags_modernmarkings:markings').subtract(item)
 		).id(`tfg:stonecutter/${item.replace(/:/g, "/")}`)
+
+		event.stonecutting(item, 'ags_modernmarkings:wall_marking_hazard_diamond')
+			.id(`tfg:stonecutter/${item.replace(/:/g, "/")}_from_diamond`)
 	})
 };

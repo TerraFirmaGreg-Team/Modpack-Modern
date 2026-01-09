@@ -1,0 +1,18 @@
+{
+  "name": "大背包",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:frame_pack",
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "sns:frame_pack",
+	  "text": "$(item)大背包$()是一种$(l:sns/item_containers)物品容器$()，实质上就像把群峦传说的箱子背在背上。与箱子相同，它遵循群峦传说的$(l:getting_started/size_and_weight)尺寸与重量$()。"
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/frame_pack",
+	  "text": "默认可容纳至多$(thing)大型$()物品"
+	}
+  ],
+  "read_by_default": true
+}

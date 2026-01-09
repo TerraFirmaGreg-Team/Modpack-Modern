@@ -13,6 +13,9 @@ function registerSpeciesRecipes(event) {
 	event.shapeless('species:music_disc_lapidarian', ['etched:blank_music_disc', 'tfc:rock/raw/basalt_slab'])
 	event.shapeless('species:music_disk_spawner', ['etched:blank_music_disc', 'computercraft:disk'])
 
+
+	// TODO: add recipes for its enchants? Quick Crank, Scattershot, Capacity, and Sparing
+
 	event.shaped('species:cranktrap', [
 		'ABA',
 		'CDC',
@@ -29,10 +32,10 @@ function registerSpeciesRecipes(event) {
 		'CBC',
 		'DED'
 	], {
-		A: '#forge:rods/black_steel',
+		A: '#forge:rods/steel',
 		B: 'minecraft:crossbow',
-		C: '#forge:small_gears/steel',
-		D: 'tfc:metal/chain/black_steel',
+		C: '#forge:small_gears/wrought_iron',
+		D: 'tfc:metal/chain/steel',
 		E: 'create:hand_crank'
 	}).id('tfg:shaped/crankbow')
 
@@ -65,30 +68,6 @@ function registerSpeciesRecipes(event) {
 		A: 'tfc:metal/javelin_head/wrought_iron',
 		B: 'firmaciv:rope_coil'
 	}).id('tfg:shaped/harpoon')
-
-	generateGreenHouseRecipe(event, '8x tfg:saplings/alphacene', 'tfg:semiheavy_ammoniacal_water', 16000,
-		'64x species:alphacene_mushroom_block', 'tfg:green_house/alphacene_mushroom', 'ad_astra:mars', 8,
-		'8x minecraft:mushroom_stem', GTValues.VA[GTValues.MV])
-	
-	event.shapeless('species:cracked_wraptor_egg', ['tfg:wraptor_egg', '#forge:tools/hammers']).id('tfg:shapeless/crack_egg')
-	event.shapeless('2x tfg:wraptor_sugar', ['species:cracked_wraptor_egg']).id('tfg:shapeless/juice_egg')
-	
-	event.recipes.gtceu.extractor('tfg:juice_wraptor_egg_mv')
-		.itemInputs('species:cracked_wraptor_egg')
-		.itemOutputs('4x tfg:wraptor_sugar')
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.MV])
-	event.recipes.gtceu.extractor('tfg:juice_wraptor_egg_full')
-		.itemInputs('tfg:wraptor_egg')
-		.itemOutputs('4x tfg:wraptor_sugar')
-		.duration(200)
-		.EUt(GTValues.VA[GTValues.MV])
-
-	event.recipes.gtceu.extractor('tfg:juice_sniffer_egg')
-		.itemInputs('tfg:sniffer_egg')
-		.outputFluids(Fluid.of('firmalife:cream', 1000))
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.MV])
 
 	event.shaped('species:ricoshield', [
 		'EBE',
@@ -123,4 +102,60 @@ function registerSpeciesRecipes(event) {
 		B: 'species:kinetic_core',
 		C: 'tacz:target'
 	}).id('tfg:shaped/deflector_dummy')
+
+	event.recipes.tfc.sewing('species:wicked_mask',
+		[
+			1, 0, 0, 0, 1, 0, 0, 0, 1,
+			1, 0, 0, 0, 1, 0, 0, 0, 1,
+			1, 0, 0, 0, 1, 0, 0, 0, 1,
+			0, 0, 0, 0, 1, 0, 0, 0, 0,
+			0, 0, 0, 0, 0, 0, 0, 0, 0
+		],
+		[
+			1,  1,  1,  1,  0,  0,  0,  0,
+			1, -1, -1,  1,  0, -1, -1,  0,
+			1,  1,  1,  1,  0,  0,  0,  0,
+			1,  1, -1, -1, -1, -1,  0,  0
+		]).id('tfg:sewing/wicked_mask')
+
+	event.recipes.gtceu.assembler('tfg:wicked_mask')
+		.itemInputs('2x #tfc:sewing_light_cloth', '2x #tfc:sewing_dark_cloth', '3x #forge:string')
+		.itemOutputs('species:wicked_mask')
+		.EUt(GTValues.VA[GTValues.ULV])
+		.duration(200)
+
+	event.recipes.firmalife.mixing_bowl()
+		.outputItem('2x species:wicked_treat')
+		.itemIngredients(['#tfg:medicine', 'minecraft:bone_meal', 'minecraft:bone_meal'])
+		.id('tfg:mixing_bowl/wicked_treat')
+
+	event.recipes.gtceu.mixer('tfg:wicked_treat')
+		.itemInputs('#tfg:medicine', '2x minecraft:bone_meal')
+		.itemOutputs('2x species:wicked_treat')
+		.EUt(GTValues.VA[GTValues.ULV])
+		.duration(200)
+
+	event.shaped('2x species:smoke_bomb', [
+		' A ',
+		'BCB',
+		'EDE'
+	], {
+		A: '#forge:string',
+		B: 'minecraft:paper',
+		C: '#tfg:invisibility_ingredients',
+		D: 'gtceu:sticky_resin',
+		E: 'minecraft:gunpowder'
+	}).id('tfg:shaped/smoke_bomb_paper')
+
+	event.shaped('2x species:smoke_bomb', [
+		' A ',
+		'BC ',
+		'EDE'
+	], {
+		A: '#forge:string',
+		B: '#tfc:fired_vessels',
+		C: '#tfg:invisibility_ingredients',
+		D: 'gtceu:sticky_resin',
+		E: 'minecraft:gunpowder'
+	}).id('tfg:shaped/smoke_bomb_vessel')
 }

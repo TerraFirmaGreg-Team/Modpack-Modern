@@ -1,0 +1,16 @@
+{
+	"ingredient": "tfc_gurman:nalivka",
+	"thirst": 15,
+	"effects": [
+		{
+			"type": "minecraft:strength",
+			"duration": 3200,
+			"amplifier": 0
+		},
+		{
+			"type": "tfg:cooling",
+			"duration": 20,
+			"amplifier": 0
+		}
+	]
+}

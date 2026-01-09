@@ -1,0 +1,7 @@
+#Should display a message when an incompatible shaderpack is used.
+alertIncompatiblePack = true
+#Should display a message when a broken shaderpack is used.
+alertBrokenPack = true
+#Should fallback mode be used for non supported shaderpacks.
+enableFallbackMode = false
+

@@ -1,8 +1,29 @@
-// priority: 0
+// priority: -100
 "use strict";
 
+global.GREATE_MATERIAL_TIERS = [
+    'andesite_alloy',
+    'steel',
+    'aluminium',
+    'stainless_steel',
+    'titanium',
+    'tungsten_steel',
+    'rhodium_plated_palladium',
+    'naquadah_alloy',
+    'darmstadtium',
+    'neutronium'
+];
+
+global.AVAILABLE_GREATE_MATERIAL_TIERS = [
+    'andesite_alloy',
+    'steel',
+    'aluminium',
+    'stainless_steel',
+    'titanium'
+];
+
 global.GREATE_DISABLED_ITEMS = /** @type {const} */ ([
-    "create:andesite_alloy",
+    "greate:andesite_alloy_alloy",
     "gtceu:steel_alloy",
     "gtceu:aluminium_alloy",
     "gtceu:stainless_steel_alloy",
@@ -14,8 +35,9 @@ global.GREATE_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:neutronium_alloy",
 
     "gtceu:neutronium_whisk",
-    "greate:polybenzimidazole_belt_connector",
+    "greate:polyethylene_belt_connector",
     "greate:polytetrafluoroethylene_belt_connector",
+    "greate:polybenzimidazole_belt_connector",
 
     "greate:andesite_alloy_crushing_wheel",
     "greate:andesite_alloy_encased_fan",
@@ -93,66 +115,66 @@ global.GREATE_DISABLED_ITEMS = /** @type {const} */ ([
     "greate:neutronium_vertical_gearbox",
 
     // Adding these here because they're greate's fault
-    "gtceu:andesite_alloy_bucket",
-    "gtceu:andesite_alloy_ring",
-    "gtceu:tiny_andesite_alloy_dust",
-    "gtceu:small_andesite_alloy_dust",
-    "gtceu:andesite_alloy_dust",
-    "gtceu:andesite_alloy_plate",
-    "gtceu:double_andesite_alloy_plate",
-    "gtceu:andesite_alloy_nugget",
-    "gtceu:andesite_alloy_rotor",
-    "gtceu:andesite_alloy_whisk",
-    "gtceu:andesite_alloy_bolt",
-    "gtceu:andesite_alloy_ingot",
-    "gtceu:andesite_alloy_rod",
-    "gtceu:andesite_alloy_screw",
-    "gtceu:andesite_alloy_buzz_saw_blade",
-    "gtceu:andesite_alloy_block",
-    "gtceu:andesite_alloy_buzzsaw",
+    "greate:andesite_alloy_bucket",
+    "greate:andesite_alloy_ring",
+    "greate:tiny_andesite_alloy_dust",
+    "greate:small_andesite_alloy_dust",
+    "greate:andesite_alloy_dust",
+    "greate:andesite_alloy_plate",
+    "greate:double_andesite_alloy_plate",
+    "greate:andesite_alloy_nugget",
+    "greate:andesite_alloy_rotor",
+    "greate:andesite_alloy_whisk",
+    "greate:andesite_alloy_bolt",
+    "greate:andesite_alloy_ingot",
+    "greate:andesite_alloy_rod",
+    "greate:andesite_alloy_screw",
+    "greate:andesite_alloy_buzz_saw_blade",
+    "greate:andesite_alloy_block",
+    "greate:andesite_alloy_buzzsaw",
 
-    "gtceu:refined_radiance_bucket",
-    "gtceu:tiny_refined_radiance_dust",
-    "gtceu:small_refined_radiance_dust",
-    "gtceu:refined_radiance_dust",
-    "gtceu:refined_radiance_plate",
-    "gtceu:double_refined_radiance_plate",
-    "gtceu:refined_radiance_nugget",
-    "gtceu:refined_radiance_bolt",
-    "gtceu:refined_radiance_ingot",
-    "gtceu:refined_radiance_rod",
-    "gtceu:refined_radiance_screw",
-    "gtceu:long_refined_radiance_rod",
-    "gtceu:refined_radiance_block",
+    "greate:refined_radiance_bucket",
+    "greate:tiny_refined_radiance_dust",
+    "greate:small_refined_radiance_dust",
+    "greate:refined_radiance_dust",
+    "greate:refined_radiance_plate",
+    "greate:double_refined_radiance_plate",
+    "greate:refined_radiance_nugget",
+    "greate:refined_radiance_bolt",
+    "greate:refined_radiance_ingot",
+    "greate:refined_radiance_rod",
+    "greate:refined_radiance_screw",
+    "greate:long_refined_radiance_rod",
+    "greate:refined_radiance_block",
 
-    "gtceu:chromatic_compound_bucket",
-    "gtceu:tiny_chromatic_compound_dust",
-    "gtceu:small_chromatic_compound_dust",
-    "gtceu:chromatic_compound_dust",
-    "gtceu:chromatic_compound_nugget",
-    "gtceu:chromatic_compound_ingot",
-    "gtceu:chromatic_compound_block",
+    "greate:chromatic_compound_bucket",
+    "greate:tiny_chromatic_compound_dust",
+    "greate:small_chromatic_compound_dust",
+    "greate:chromatic_compound_dust",
+    "greate:chromatic_compound_nugget",
+    "greate:chromatic_compound_ingot",
+    "greate:chromatic_compound_block",
 
-    "gtceu:shadow_steel_bucket",
-    "gtceu:tiny_shadow_steel_dust",
-    "gtceu:small_shadow_steel_dust",
-    "gtceu:shadow_steel_dust",
-    "gtceu:shadow_steel_plate",
-    "gtceu:double_shadow_steel_plate",
-    "gtceu:shadow_steel_nugget",
-    "gtceu:shadow_steel_bolt",
-    "gtceu:shadow_steel_ingot",
-    "gtceu:shadow_steel_rod",
-    "gtceu:shadow_steel_screw",
-    "gtceu:long_shadow_steel_rod",
-    "gtceu:shadow_steel_block",
+    "greate:shadow_steel_bucket",
+    "greate:tiny_shadow_steel_dust",
+    "greate:small_shadow_steel_dust",
+    "greate:shadow_steel_dust",
+    "greate:shadow_steel_plate",
+    "greate:double_shadow_steel_plate",
+    "greate:shadow_steel_nugget",
+    "greate:shadow_steel_bolt",
+    "greate:shadow_steel_ingot",
+    "greate:shadow_steel_rod",
+    "greate:shadow_steel_screw",
+    "greate:long_shadow_steel_rod",
+    "greate:shadow_steel_block"
 ]);
 
 global.GREATE_DISABLED_FLUIDS = /** @type {const} */ ([
-    "gtceu:andesite_alloy",
-    "gtceu:refined_radiance",
-    "gtceu:chromatic_compound",
-    "gtceu:shadow_steel",
+    "greate:andesite_alloy",
+    "greate:refined_radiance",
+    "greate:chromatic_compound",
+    "greate:shadow_steel"
 ]);
 
 global.GREATE_DISABLED_TAGS = /** @type {const} */ ([
@@ -167,7 +189,7 @@ global.GREATE_DISABLED_TAGS = /** @type {const} */ ([
     "#forge:alloys/rhodium_plated_palladium",
     "#forge:alloys/naquadah_alloy",
     "#forge:alloys/darmstadtium",
-    "#forge:alloys/neutronium",
+    "#forge:alloys/neutronium"
 ]);
 
 global.GREATE_BELTS = /** @type {const} */ ([
@@ -175,7 +197,7 @@ global.GREATE_BELTS = /** @type {const} */ ([
     "greate:polybenzimidazole_belt_connector",
     "greate:polyethylene_belt_connector",
     "greate:polytetrafluoroethylene_belt_connector",
-    "greate:rubber_belt_connector",
+    "greate:rubber_belt_connector"
 ]);
 
 global.GREATE_CRUSHING_WHEELS = /** @type {const} */ ([
@@ -188,7 +210,7 @@ global.GREATE_CRUSHING_WHEELS = /** @type {const} */ ([
     "greate:rhodium_plated_palladium_crushing_wheel",
     "greate:naquadah_alloy_crushing_wheel",
     "greate:darmstadtium_crushing_wheel",
-    "greate:neutronium_crushing_wheel",
+    "greate:neutronium_crushing_wheel"
 ]);
 
 global.GREATE_ENCASED_FANS = /** @type {const} */ ([
@@ -201,7 +223,7 @@ global.GREATE_ENCASED_FANS = /** @type {const} */ ([
     "greate:rhodium_plated_palladium_encased_fan",
     "greate:naquadah_alloy_encased_fan",
     "greate:darmstadtium_encased_fan",
-    "greate:neutronium_encased_fan",
+    "greate:neutronium_encased_fan"
 ]);
 
 global.GREATE_MECHANICAL_MIXERS = /** @type {const} */ ([
@@ -214,7 +236,7 @@ global.GREATE_MECHANICAL_MIXERS = /** @type {const} */ ([
     "greate:rhodium_plated_palladium_mechanical_mixer",
     "greate:naquadah_alloy_mechanical_mixer",
     "greate:darmstadtium_mechanical_mixer",
-    "greate:neutronium_mechanical_mixer",
+    "greate:neutronium_mechanical_mixer"
 ]);
 
 global.GREATE_MECHANICAL_PRESSES = /** @type {const} */ ([
@@ -227,7 +249,7 @@ global.GREATE_MECHANICAL_PRESSES = /** @type {const} */ ([
     "greate:rhodium_plated_palladium_mechanical_press",
     "greate:naquadah_alloy_mechanical_press",
     "greate:darmstadtium_mechanical_press",
-    "greate:neutronium_mechanical_press",
+    "greate:neutronium_mechanical_press"
 ]);
 
 global.GREATE_MECHANICAL_PUMPS = /** @type {const} */ ([
@@ -240,7 +262,7 @@ global.GREATE_MECHANICAL_PUMPS = /** @type {const} */ ([
     "greate:rhodium_plated_palladium_mechanical_pump",
     "greate:naquadah_alloy_mechanical_pump",
     "greate:darmstadtium_mechanical_pump",
-    "greate:neutronium_mechanical_pump",
+    "greate:neutronium_mechanical_pump"
 ]);
 
 global.GREATE_MECHANICAL_SAWS = /** @type {const} */ ([
@@ -253,7 +275,7 @@ global.GREATE_MECHANICAL_SAWS = /** @type {const} */ ([
     "greate:rhodium_plated_palladium_mechanical_saw",
     "greate:naquadah_alloy_mechanical_saw",
     "greate:darmstadtium_mechanical_saw",
-    "greate:neutronium_mechanical_saw",
+    "greate:neutronium_mechanical_saw"
 ]);
 
 global.GREATE_MILLSTONES = /** @type {const} */ ([
@@ -266,5 +288,5 @@ global.GREATE_MILLSTONES = /** @type {const} */ ([
     "greate:rhodium_plated_palladium_millstone",
     "greate:naquadah_alloy_millstone",
     "greate:darmstadtium_millstone",
-    "greate:neutronium_millstone",
+    "greate:neutronium_millstone"
 ]);

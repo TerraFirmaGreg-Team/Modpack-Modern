@@ -1,0 +1,56 @@
+{
+	"custom_clouds": true,
+	"custom_sky": true,
+	"custom_weather": false,
+	"dimension": "ad_astra:glacio",
+	"has_fog": true,
+	"has_thick_fog": false,
+	"render_in_rain": false,
+	"sky_renderables": [
+		{
+			"back_light_color": -39,
+			"back_light_scale": 27.0,
+			"blend": true,
+			"global_rotation": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"local_rotation": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY",
+			"scale": 9.0,
+			"texture": "ad_astra:textures/environment/sun.png"
+		},
+		{
+			"back_light_color": -6861640,
+			"back_light_scale": 150.0,
+			"blend": false,
+			"global_rotation": [
+				60.0,
+				0.0,
+				5.0
+			],
+			"local_rotation": [
+				0.0,
+				0.0,
+				-5.0
+			],
+			"movement_type": "STATIC",
+			"scale": 50.0,
+			"texture": "ad_astra:textures/environment/vicinus.png"
+		}
+	],
+	"star_colors": [
+		{
+			"data": -1,
+			"weight": 1
+		}
+	],
+	"stars": 1500,
+	"sunrise_angle": 0,
+	"sunrise_color": 14180147
+}

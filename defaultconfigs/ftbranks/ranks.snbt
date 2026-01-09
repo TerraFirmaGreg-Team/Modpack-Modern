@@ -4,41 +4,10 @@
 		power: 1
 		condition: "always_active"
 		ftbranks.name_format: "&a{name}"
-		ftbchunks.max_claimed: 50
-		ftbchunks.max_force_loaded: 3
+		ftbchunks.max_claimed: 10000
+		ftbchunks.max_force_loaded: 10000
 		ftbchunks.chunk_load_offline: false
 		command.trashcan: true
 		command.enderchest: false
-	}
-	vip: {
-		name: "VIP"
-		power: 50
-		ftbranks.name_format: "&e{name}"
-		ftbchunks.max_claimed: 200
-		ftbchunks.max_force_loaded: 5
-		ftbchunks.chunk_load_offline: true
-	}
-	moderator_girl: {
-		name: "Moderator"
-		power: 51
-		ftbranks.name_format: "&d{name}"
-		ftbchunks.max_claimed: 200
-		ftbchunks.max_force_loaded: 5
-	}
-	moderator: {
-		name: "Moderator"
-		power: 51
-		ftbranks.name_format: "&b{name}"
-		ftbchunks.max_claimed: 200
-		ftbchunks.max_force_loaded: 5
-	}
-	admin: {
-		name: "Admin"
-		power: 1000
-		xaero.pac_admin_mode: true
-		xaero.pac_server_claims: true
-		ftbranks.name_format: "&c{name}&c"
-		ftbchunks.max_claimed: 10000
-		ftbchunks.max_force_loaded: 10000
 	}
 }

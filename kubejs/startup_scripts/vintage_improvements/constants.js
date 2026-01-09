@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER = 4;
@@ -16,7 +16,6 @@ global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 	'vintageimprovements:laser_item',
 	'vintageimprovements:sulfur_chunk',
 	'vintageimprovements:sulfur',
-	'vintageimprovements:sulfur_block',
 	'vintageimprovements:sulfuric_acid_bucket',
 	'vintageimprovements:copper_sulfate',
 	'vintageimprovements:incomplete_redstone_module',
@@ -93,7 +92,7 @@ global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 
 global.VINTAGE_IMPROVEMENTS_DISABLED_BLOCKS = [
 
-	'vintageimprovements:sulfur_block',
+	'vintageimprovements:sulfur_block'
 
 ]
 

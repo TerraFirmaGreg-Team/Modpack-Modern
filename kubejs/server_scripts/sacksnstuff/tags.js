@@ -24,6 +24,9 @@ function registerSNSItemTags(event) {
 	event.add('sns:allowed_in_ore_sack', '#tfc:metamorphic_rock')
 	event.add('sns:allowed_in_ore_sack', '#tfc:igneous_intrusive_rock')
 	event.add('sns:allowed_in_ore_sack', '#tfc:igneous_extrusive_rock')
+
+	event.add('sns:allowed_in_seed_pouch', '#minecraft:saplings')
+	event.add('sns:allowed_in_seed_pouch', '#tfc:wild_fruits')
 	
 	event.add('sns:prevented_in_item_containers', '#tfc:fired_vessels')
 	
@@ -40,5 +43,6 @@ function registerSNSItemTags(event) {
 	event.remove('sns:prevented_in_burlap_sack', '#tfc:small_ore_pieces')
 	event.remove('sns:prevented_in_leather_sack', '#tfc:small_ore_pieces')
 
-
+	// Remove this tag to avoid confusion with the other lunchbox
+	event.removeAll('sns:lunchbox_food')
 }

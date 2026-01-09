@@ -19,7 +19,7 @@
 	hotFluidTemperature = 1300
 	#This sets the temperature when a cold fluid should add effects to the player (in kelvin).
 	#Range: > -2147483648
-	coldFluidTemperature = 273
+	coldFluidTemperature = 223
 	#Modifier for how much the offhand item should heat up when holding hot items. Holding multiple hot items will heat your insulating items faster!
 	#Range: 4.9E-324 ~ 1.7976931348623157E308
 	itemTemperatureModifier = 2.0

@@ -134,7 +134,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.create_logistics.rose_quartz_lens.desc}"]
-			icon: "gtceu:rose_quartz_lens"
+			icon: "greate:rose_quartz_lens"
 			id: "7C4807A247AF36A1"
 			shape: "octagon"
 			size: 2.0d
@@ -142,7 +142,7 @@
 			tasks: [
 				{
 					id: "0C0BA9D487C3B948"
-					item: "gtceu:rose_quartz_lens"
+					item: "greate:rose_quartz_lens"
 					type: "item"
 				}
 				{
@@ -182,8 +182,8 @@
 			optional: true
 			subtitle: "{quests.create_logistics.cold_rose_quartz.subtitle}"
 			tasks: [{
-				id: "00680B620AC2F8ED"
-				item: "gtceu:exquisite_rose_quartz_gem"
+				id: "60D9FAD7D3290FF5"
+				item: "greate:exquisite_rose_quartz_gem"
 				type: "item"
 			}]
 			title: "{quests.create_logistics.cold_rose_quartz.title}"
@@ -199,7 +199,7 @@
 			subtitle: "{quests.create_logistics.fabricate_rose_quartz.subtitle}"
 			tasks: [{
 				id: "57B107DB57726992"
-				item: "gtceu:rose_quartz_plate"
+				item: "greate:rose_quartz_plate"
 				type: "item"
 			}]
 			title: "{quests.create_logistics.fabricate_rose_quartz.title}"

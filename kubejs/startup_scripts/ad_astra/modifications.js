@@ -32,3 +32,22 @@ function registerAdAstraBlockModifications(event) {
 		block.lightEmission = 0
 	})
 }
+
+function registerAdAstraItemModifications(event) {
+	
+	const space_suits = [
+		'ad_astra:space_helmet',
+		'ad_astra:space_suit',
+		'ad_astra:space_pants',
+		'ad_astra:space_boots',
+		'ad_astra:netherite_space_helmet',
+		'ad_astra:netherite_space_suit',
+		'ad_astra:netherite_space_pants',
+		'ad_astra:netherite_space_boots'
+	]
+	space_suits.forEach(e => {
+		event.modify(e, item => {
+			item.maxDamage = item.maxDamage * 2
+		})
+	})
+}

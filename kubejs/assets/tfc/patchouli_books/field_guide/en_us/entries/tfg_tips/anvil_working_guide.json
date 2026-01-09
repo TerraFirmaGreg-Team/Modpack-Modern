@@ -131,7 +131,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Rod Target Value: $(bold)78$()$(br)Required Steps: Draw->Draw->Bend$(br)\"requiredWork\": (-15 x 2) + 7 = -23$(br)Derived Value: 78 + 23 = 101.$(br)Reaching the Value: (Shrink x 5)->(Bend x 3)$(br)Getting the Item: 101 - 15 - 15 + 7 = 101."
+            "text": "Rod Target Value: $(bold)78$()$(br)Required Steps: Draw->Draw->Bend$(br)\"requiredWork\": (-15 x 2) + 7 = -23$(br)Derived Value: 78 + 23 = 101.$(br)Reaching the Value: (Shrink x 5)->(Bend x 3)$(br)Getting the Item: 101 - 15 - 15 + 7 = 78."
         },
         {
             "type": "patchouli:text",

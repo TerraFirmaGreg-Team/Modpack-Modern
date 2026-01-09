@@ -1,0 +1,60 @@
+{
+    "contents": [
+        {
+            "type": "atom",
+            "element": "Cl",
+            "index": 0,
+            "x": 0.0,
+            "y": 0.1115
+        },
+        {
+            "type": "atom",
+            "element": "O",
+            "index": 1,
+            "x": 0.4125,
+            "y": 0.826
+        },
+        {
+            "type": "atom",
+            "element": "F",
+            "index": 2,
+            "x": 0.4125,
+            "y": -0.6028
+        },
+        {
+            "type": "atom",
+            "element": "O",
+            "index": 3,
+            "x": -0.825,
+            "y": 0.1115
+        },
+        {
+            "type": "bond",
+            "a": 0,
+            "b": 1,
+            "lines": [
+                "solid",
+                "solid"
+            ],
+            "centered": true
+        },
+        {
+            "type": "bond",
+            "a": 0,
+            "b": 3,
+            "lines": [
+                "solid",
+                "solid"
+            ],
+            "centered": true
+        },
+        {
+            "type": "bond",
+            "a": 0,
+            "b": 2,
+            "lines": [
+                "solid"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+	"feature": "tfg:venus/terrain/lava_spring",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 8
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

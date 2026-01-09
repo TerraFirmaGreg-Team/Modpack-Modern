@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -100
 "use strict";
 
 global.CREATE_ADDITIONS_DISABLED_ITEMS = [
@@ -36,5 +36,6 @@ global.CREATE_ADDITIONS_DISABLED_ITEMS = [
     'createaddition:small_light_connector',
     'createaddition:electrum_block',
     'createaddition:portable_energy_interface',
-    'createaddition:straw'
+    'createaddition:straw',
+    'createaddition:modular_accumulator'
 ];

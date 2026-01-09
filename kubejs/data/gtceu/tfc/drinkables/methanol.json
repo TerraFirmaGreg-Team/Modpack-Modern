@@ -1,0 +1,16 @@
+{
+	"ingredient": "gtceu:methanol",
+	"thirst": 5,
+	"effects": [
+		{
+			"type": "minecraft:blindness",
+			"duration": 6000,
+			"amplifier": 0
+		},
+		{
+			"type": "minecraft:wither",
+			"duration": 1200,
+			"amplifier": 1
+		}
+	]
+}

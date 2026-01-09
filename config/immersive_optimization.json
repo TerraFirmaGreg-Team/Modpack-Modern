@@ -12,12 +12,23 @@
   "blocksPerLevelViewportCulled": 20,
   "maxLevel": 20,
   "blocksPerLevelBlockEntities": 32,
-  "entityTickBudget": 30.0,
   "stressedThreshold": 45,
+  "minDecreaseFactor": 0.25,
   "dimensions": {
     "minecraft:overworld": true,
     "minecraft:the_nether": true,
-    "minecraft:the_end": true
+    "minecraft:the_end": true,
+    "ad_astra:earth_orbit": true,
+    "ad_astra:moon": true,
+    "ad_astra:moon_orbit": true,
+    "ad_astra:mars": true,
+    "ad_astra:mars_orbit": true,
+    "ad_astra:venus": true,
+    "ad_astra:venus_orbit": true,
+    "ad_astra:mercury": true,
+    "ad_astra:mercury_orbit": true,
+    "ad_astra:glacio": true,
+    "ad_astra:glacio_orbit": true
   },
   "entities": {
     "fromanotherworld:starship": false,

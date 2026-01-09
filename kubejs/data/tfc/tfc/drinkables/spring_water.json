@@ -1,0 +1,11 @@
+{
+	"ingredient": "tfc:spring_water",
+	"thirst": 10,
+	"effects": [
+		{
+			"type": "tfg:warming",
+			"duration": 20,
+			"amplifier": 0
+		}
+	]
+}

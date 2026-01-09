@@ -1,0 +1,18 @@
+{
+  "name": "箭筒",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:quiver",
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "sns:quiver",
+	  "text": "$(item)箭筒$() 是每位射手的伙伴，无论你钟情 $(item)标枪$() 还是喜欢弓。$(br)使用弓时会优先从箭筒中消耗“弹药”，投掷标枪时也会补回。"
+	},
+	{
+	  "type": "tfc:knapping_recipe",
+	  "recipe": "sns:leather_knapping/quiver",
+	  "text": "供整合包作者或希望支持额外“弹药”的玩家参考：请查看物品标签 $(bold)sns:allowed_in_quiver$()。请注意，标枪的补回仅对 TFC（或其附加）标枪有效。"
+	}
+  ],
+  "read_by_default": true
+}

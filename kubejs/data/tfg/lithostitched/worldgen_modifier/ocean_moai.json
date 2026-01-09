@@ -1,0 +1,12 @@
+{
+	"type": "lithostitched:set_structure_spawn_condition",
+	"structures": [
+		"tfg:ocean/ocean_moai_0"
+	],
+	"spawn_condition": {
+		"type": "lithostitched:height_filter",
+		"range_type": "absolute",
+		"heightmap": "OCEAN_FLOOR_WG",
+		"permitted_range": [65, 256]
+	}
+}

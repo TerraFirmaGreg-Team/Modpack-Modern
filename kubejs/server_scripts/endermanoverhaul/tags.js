@@ -5,9 +5,6 @@ const registerEndermanOverhaulItemTags = (event) => {
 	const DISABLED_ITEMS = [
 		'endermanoverhaul:corrupted_blade',
 
-		'endermanoverhaul:savanna_hood',
-		'endermanoverhaul:snowy_hood',
-
 		'endermanoverhaul:bubble_pearl',
 		'endermanoverhaul:icy_pearl'
 	]

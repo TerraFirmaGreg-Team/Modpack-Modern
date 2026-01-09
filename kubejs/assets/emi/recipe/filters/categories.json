@@ -43,12 +43,6 @@
             "category": "gtceu:ore_vein_diagram"
         },
         {
-            "category": "create:automatic_shaped"
-        },
-        {
-            "category": "create:automatic_shapeless"
-        },
-        {
             "category": "greate:automatic_brewing"
         },
         {
@@ -77,6 +71,24 @@
         },
         {
             "id": "sophisticatedbackpacks:multiple_colors"
+        },
+        {
+            "id": "/.+wireless_ammo_box.*/"
+        },
+        {
+            "id": "toomanyrecipeviewers:/create/potions"
+        },
+        {
+            "id": "toomanyrecipeviewers:/exposure/sequenced_black_and_white_film_developing"
+        },
+        {
+            "id": "toomanyrecipeviewers:/exposure/sequenced_color_film_developing"
+        },
+        {
+            "id": "/gtceu.+potion_.+/"
+        },
+        {
+            "id": "/.+crafting/tipped_arrow/.+/"
         },
         {
             "category": "ae2:certus_growth"

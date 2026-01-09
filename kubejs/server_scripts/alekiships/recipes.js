@@ -19,6 +19,7 @@ const registerAlekishipsRecipes = (event) => {
 		.itemOutputs('alekiships:oarlock')
 		.duration(75)
 		.EUt(4)
+		.addMaterialInfo(true)
 
 	event.recipes.tfc.heating('alekiships:oarlock', 1535)
 		.resultFluid(Fluid.of('gtceu:iron', 288))
@@ -32,6 +33,7 @@ const registerAlekishipsRecipes = (event) => {
 		.itemOutputs('alekiships:cleat')
 		.duration(75)
 		.EUt(4)
+		.addMaterialInfo(true)
 
 	event.recipes.tfc.heating('alekiships:cleat', 1535)
 		.resultFluid(Fluid.of('gtceu:steel', 288))
@@ -45,6 +47,7 @@ const registerAlekishipsRecipes = (event) => {
 		.itemOutputs('alekiships:anchor')
 		.duration(75)
 		.EUt(4)
+		.addMaterialInfo(true)
 
 	event.recipes.tfc.heating('alekiships:anchor', 1535)
 		.resultFluid(Fluid.of('gtceu:steel', 288))
@@ -66,6 +69,7 @@ const registerAlekishipsRecipes = (event) => {
 		.duration(75)
 		.category(GTRecipeCategories.INGOT_MOLDING)
 		.EUt(4)
+		.addMaterialInfo(true)
 
 	event.recipes.tfc.heating('alekiships:cannonball', 1535)
 		.resultFluid(Fluid.of('gtceu:iron', 288))

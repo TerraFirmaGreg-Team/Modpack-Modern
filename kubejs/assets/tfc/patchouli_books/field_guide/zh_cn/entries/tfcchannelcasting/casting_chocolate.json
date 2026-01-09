@@ -1,0 +1,40 @@
+{
+  "name": "巧克力浇注",
+  "category": "tfc:tfcchannelcasting",
+  "icon": "tfcchannelcasting:food/milk_chocolate_heart",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "下述内容仅在安装 Firmalife 时可用。$(thing)巧克力$()不必只是无聊的巧克力棒！将$(thing)白巧克力$()、$(thing)牛奶巧克力$()或$(thing)黑巧克力$()在$(thing)小缸$()或$(thing)坩埚$()中熔化后，浇注进模具即可得到巧克力点心。点心共有三种：$(thing)心型$()、$(thing)钟$()与$(thing)刀$()，分别由不同模具浇注获得。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfcchannelcasting:clay_knapping/unfired_heart_mold",
+      "text": "捏制一个$(thing)心型模具$()，用来制作$(thing)心型$()巧克力。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "巧克力点心提供与巧克力棒相同的营养，但食用更快。若在特定月份制作，还会获得使营养翻倍的特质：$(thing)巧克力心型$()在二月获得$(thing)浪漫$()，$(thing)黑巧克力冬铃$()在十二月获得$(thing)节庆$()，$(thing)黑巧克力刀$()在十月获得$(thing)惊悚$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "此外，点心可以做成$(thing)夹心$()以获得额外收益：夹心$(thing)果酱$()会额外提供$(thing)水果$()营养，夹心$(thing)酒精$()会给予正面药水效果。"
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_sweet_liquor",
+      "text": "食用$(thing)甜酒夹心$()巧克力会获得速度提升。"
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_strong_liquor",
+      "text": "食用$(thing)烈酒夹心$()巧克力会获得伤害抗性。"
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_whiskey",
+      "text": "食用$(thing)威士忌夹心$()巧克力会获得急迫效果。"
+    }
+  ],
+  "read_by_default": true
+}
