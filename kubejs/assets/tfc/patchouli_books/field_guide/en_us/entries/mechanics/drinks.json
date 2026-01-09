@@ -48,9 +48,10 @@
 		},
 		{
 			"title": "Spring Water",
-			"text": "Though unfortunetly not drinkable due to its high mineral content, $(thing)Spring Water$() can be used to warm you up and applies a small regeneration effect while standing in it.",
+			"text": "Drinking $(thing)Spring Water$() warms you up by 4 degrees and applies a small regeneration effect while standing in it.",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight"
 		}
 	]
 }
+
