@@ -6,11 +6,6 @@
  */
 function registerGTCEUMetalRecipes(event) {
 
-	//For bismuth and black bronze only. GT materials is immutable, so this is a temp workaround
-	function BisBlackCheck(material) {
-		return	(material === GTMaterials.BismuthBronze || material === GTMaterials.BlackBronze);
-	}
-
 	/**
 	 * @param {GTToolType} toolType 
 	 * @param {String} tagPrefixName
@@ -120,23 +115,16 @@ function registerGTCEUMetalRecipes(event) {
 					.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 					.EUt(GTValues.VA[GTValues.LV])
 
-				
-			if (BisBlackCheck(material)) {
-				event.recipes.gtceu.extractor(`gtceu:extract_${material.getName()}_${tagPrefixName}`)
+			const extractorEUt = material.hasProperty(PropertyKey.BLAST) && material !== GTMaterials.BismuthBronze && material !== GTMaterials.BlackBronze
+				? GTValues.VA[GTValues.MV]
+				: GTValues.VA[GTValues.LV]
+					
+			event.recipes.gtceu.extractor(`gtceu:extract_${material.getName()}_${tagPrefixName}`)
 				.itemInputs(toolHeadItem)
 				.outputFluids(Fluid.of(material.getFluid(), materialAmount * 144))
 				.duration(material.getMass() * 6 * materialAmount)
 				.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.LV])
-			}
-			else {
-				event.recipes.gtceu.extractor(`gtceu:extract_${material.getName()}_${tagPrefixName}`)
-				.itemInputs(toolHeadItem)
-				.outputFluids(Fluid.of(material.getFluid(), materialAmount * 144))
-				.duration(material.getMass() * 6 * materialAmount)
-				.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-				.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
-			}	
+				.EUt(extractorEUt)
 			}
 
 		} else if (material.hasProperty(PropertyKey.GEM)) {
@@ -341,22 +329,16 @@ function registerGTCEUMetalRecipes(event) {
 
 		if (material.hasProperty(PropertyKey.FLUID)) {
 
-			if (BisBlackCheck(material)) {
-				event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_double_ingot`)
-				.itemInputs(doubleIngotStack)
-				.outputFluids(Fluid.of(material.getFluid(), 288))
-				.duration(material.getMass())
-				.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.LV])
-			}
-			else {
+			const extractorEUt = material.hasProperty(PropertyKey.BLAST) && material !== GTMaterials.BismuthBronze && material !== GTMaterials.BlackBronze
+				? GTValues.VA[GTValues.MV]
+				: GTValues.VA[GTValues.LV]
+
 			event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_double_ingot`)
 				.itemInputs(doubleIngotStack)
 				.outputFluids(Fluid.of(material.getFluid(), 288))
 				.duration(material.getMass())
 				.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-				.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
-			}
+				.EUt(extractorEUt)
 		}
 
 		if (material.hasProperty(PropertyKey.DUST)) {
@@ -862,24 +844,18 @@ function registerGTCEUMetalRecipes(event) {
 			.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 14))
 			.duration(material.getMass() * 32)
 			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-			.EUt(GTValues.VA[GTValues.ULV])
-		
-		if (BisBlackCheck(material)){
-		event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_anvil`)
-			.itemInputs(anvilStack)
-			.outputFluids(Fluid.of(material.getFluid(), 14 * 144))
-			.duration(material.getMass() * 32)
-			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
 			.EUt(GTValues.VA[GTValues.LV])
-		}
-		else {
+		
+		const extractorEUt = material.hasProperty(PropertyKey.BLAST) && material !== GTMaterials.BismuthBronze && material !== GTMaterials.BlackBronze
+			? GTValues.VA[GTValues.MV]
+			: GTValues.VA[GTValues.LV]	
+
 		event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_anvil`)
 			.itemInputs(anvilStack)
 			.outputFluids(Fluid.of(material.getFluid(), 14 * 144))
 			.duration(material.getMass() * 32)
 			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-			.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
-		}
+			.EUt(extractorEUt)
 
 		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_anvil`)
 			.itemInputs(ChemicalHelper.get(TagPrefix.ingot, material, 14))
@@ -894,7 +870,7 @@ function registerGTCEUMetalRecipes(event) {
 			.notConsumable('gtceu:anvil_casting_mold')
 			.itemOutputs(anvilStack)
 			.duration(material.getMass() * 32)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 	}
 
 	//Unfinished Lamps
@@ -922,14 +898,14 @@ function registerGTCEUMetalRecipes(event) {
 			.itemOutputs([materialIngotStack, glassDustStack])
 			.duration(material.getMass() * 8)
 			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 
 		event.recipes.gtceu.assembler(`tfg:${material.getName()}_lamp`)
 			.itemInputs("tfc:lamp_glass", unfinishedLampStack)
 			.itemOutputs(finishedLampStack)
 			.duration(material.getMass() * 7)
 			.circuit(12)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 
 		event.recipes.gtceu.assembler(`tfg:${material.getName()}_lamp_from_liquid`)
 			.itemInputs(unfinishedLampStack)
@@ -937,7 +913,7 @@ function registerGTCEUMetalRecipes(event) {
 			.itemOutputs(finishedLampStack)
 			.duration(material.getMass() * 7)
 			.circuit(13)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 
 		event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_unfinished_lamp`)
 			.itemInputs(unfinishedLampStack)
@@ -951,24 +927,18 @@ function registerGTCEUMetalRecipes(event) {
 			.itemOutputs(materialIngotStack)
 			.duration(material.getMass() * 8)
 			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 
-		if (BisBlackCheck(material)){
+		const extractorEUt = material.hasProperty(PropertyKey.BLAST) && material !== GTMaterials.BismuthBronze && material !== GTMaterials.BlackBronze
+			? GTValues.VA[GTValues.MV]
+			: GTValues.VA[GTValues.LV]
+
 			event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_unfinished_lamp`)
 				.itemInputs(unfinishedLampStack)
 				.outputFluids(Fluid.of(material.getFluid(), 144))
 				.duration(material.getMass() * 8)
 				.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.LV])
-		}
-		else {
-			event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_unfinished_lamp`)
-				.itemInputs(unfinishedLampStack)
-				.outputFluids(Fluid.of(material.getFluid(), 144))
-				.duration(material.getMass() * 8)
-				.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-				.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
-		}
+				.EUt(extractorEUt)
 
 		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_unfinished_lamp`)
 			.itemInputs(materialIngotStack)
@@ -983,7 +953,7 @@ function registerGTCEUMetalRecipes(event) {
 			.notConsumable('tfg:lamp_casting_mold')
 			.itemOutputs(unfinishedLampStack)
 			.duration(material.getMass() * 8)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 	}
 
 	/**
@@ -1008,24 +978,19 @@ function registerGTCEUMetalRecipes(event) {
 			.itemOutputs(materialIngotStack)
 			.duration(material.getMass() * 7)
 			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-			.EUt(GTValues.VA[GTValues.ULV])
-
-		if (BisBlackCheck(material)) {
-			event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_trapdoor`)
-			.itemInputs(trapdoorStack)
-			.outputFluids(Fluid.of(material.getFluid(), 144))
-			.duration(material.getMass() * 7)
-			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
 			.EUt(GTValues.VA[GTValues.LV])
-		}	
-		else {
+
+		const extractorEUt = material.hasProperty(PropertyKey.BLAST) && material !== GTMaterials.BismuthBronze && material !== GTMaterials.BlackBronze
+			? GTValues.VA[GTValues.MV]
+			: GTValues.VA[GTValues.LV]	
+
 		event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_trapdoor`)
 			.itemInputs(trapdoorStack)
 			.outputFluids(Fluid.of(material.getFluid(), 144))
 			.duration(material.getMass() * 7)
 			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-			.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
-		}
+			.EUt(extractorEUt)
+
 
 		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_trapdoor`)
 			.itemInputs(materialIngotStack)
@@ -1040,7 +1005,7 @@ function registerGTCEUMetalRecipes(event) {
 			.notConsumable('tfg:trapdoor_casting_mold')
 			.itemOutputs(trapdoorStack)
 			.duration(material.getMass() * 7)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 	}
 
 	/**
@@ -1068,24 +1033,18 @@ function registerGTCEUMetalRecipes(event) {
 			.itemOutputs(materialNuggetStack)
 			.duration(material.getMass() * 3)
 			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-			.EUt(GTValues.VA[GTValues.ULV])
-
-		if (BisBlackCheck(material)){
-		event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_chain`)
-			.itemInputs(chainStack)
-			.outputFluids(Fluid.of(material.getFluid(), 9))
-			.duration(material.getMass() * 3)
-			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
 			.EUt(GTValues.VA[GTValues.LV])
-		}
-		else {
+
+		const extractorEUt = material.hasProperty(PropertyKey.BLAST) && material !== GTMaterials.BismuthBronze && material !== GTMaterials.BlackBronze
+			? GTValues.VA[GTValues.MV]
+			: GTValues.VA[GTValues.LV]
+
 		event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_chain`)
 			.itemInputs(chainStack)
 			.outputFluids(Fluid.of(material.getFluid(), 9))
 			.duration(material.getMass() * 3)
 			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-			.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
-		}
+			.EUt(extractorEUt)
 
 		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_chain`)
 			.itemInputs(materialIngotStack)
@@ -1100,7 +1059,7 @@ function registerGTCEUMetalRecipes(event) {
 			.notConsumable('tfg:chain_casting_mold')
 			.itemOutputs(chainStack)
 			.duration(material.getMass() * 3)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 	}
 
 	//Bell
@@ -1126,7 +1085,7 @@ function registerGTCEUMetalRecipes(event) {
 			.itemOutputs(materialIngotStack)
 			.duration(material.getMass() * 5)
 			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 
 		event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_bell`)
 			.itemInputs(bellStack)
@@ -1148,7 +1107,7 @@ function registerGTCEUMetalRecipes(event) {
 			.notConsumable('tfg:bell_casting_mold')
 			.itemOutputs(bellStack)
 			.duration(material.getMass() * 5)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 	}
 
 	//Buzzsaws
@@ -1191,24 +1150,19 @@ function registerGTCEUMetalRecipes(event) {
 			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 			.EUt(GTValues.VA[GTValues.LV])
 		
+		const extractorEUt = material.hasProperty(PropertyKey.BLAST) && material !== GTMaterials.BismuthBronze && material !== GTMaterials.BlackBronze
+			? GTValues.VA[GTValues.MV]
+			: GTValues.VA[GTValues.LV]	
+
 		event.remove({ id: `gtceu:extractor/extract_${material.getName()}_buzz_saw_blade` })
-		if (BisBlackCheck(material)){
 		event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_buzz_saw_blade`)
 			.itemInputs(buzzsawBladeItem)
 			.outputFluids(Fluid.of(material.getFluid(), 2 * 144))
 			.duration(material.getMass() * 6 * 2)
 			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-			.EUt(GTValues.VA[GTValues.LV])
-		}
-		else {
-		event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_buzz_saw_blade`)
-			.itemInputs(buzzsawBladeItem)
-			.outputFluids(Fluid.of(material.getFluid(), 2 * 144))
-			.duration(material.getMass() * 6 * 2)
-			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-			.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
-		}
-		event.remove({ id: `gtceu:shaped/buzzsaw_blade_${material.getName()}` })
+			.EUt(extractorEUt)
+		
+		event.remove({ id: `gtceu:shaped/buzzsaw_blade_${material.getName()}` })	
 	}
 
 	/**
