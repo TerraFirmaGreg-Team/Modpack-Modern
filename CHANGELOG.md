@@ -5,13 +5,33 @@
 - The steam thermal centrifuge now requires a maintenance hatch. It also now requires 480mB steam per tick instead of 64mb, equivalent to how much 8 LV thermal centrifuges would use. It also now only takes 20 seconds instead of 30. It also now actually outputs byproducts like it was supposed to. @Pyritie
 - Single block steam generators are now more expensive to craft, so there isn't such a huge gap between steam, gas, and combustion generators @TomPlop
 ### Changes
+- Added tree index field guide entries for Earth and Mars (#2638) @Jeuvke
+- Added drinkable effects field guide entry (#2676) @FlightingFalcon
 - The crucible now holds 4608mB (32 ingots) instead of 4032mB (28 ingots) (#2634) @Pyritie
 - Large gears can now be crafted in an anvil/mechanical press @Pyritie
-- Added tree index field guide entries for Earth and Mars (#2638) @Jeuvke
 - Added recipe to make tubes from volcanic glass batches (#2667) @Redeix
+- Added cast iron to the rod, gear, and nugget molds (#2677) @Mqrius
+- Added vinegar as an option for curdled milk in a gregtech mixer (#2675) @JeanRdSz
+- Fallen leaves, leaf blocks, bio chaff, and plant balls now all count as compost greens (#2653) @Inceitious
+- Added more pie charts to various ores and composite materials (#2640) @BlueBoat29
+- Unified crafting recipes for all the different metal bars (#2641)
+- Changed to a new UI mod that improves performance, let us know if it causes issues! (#2620) @trisjob
+- Cut and paste and Copy and paste building gadgets have been moved from IV to EV (#2660) @thederpysockdude123
+- The sandworm no longer spawns in the Superflat preset that's a big vanilla desert biome
+- You can now also use mars water in gregtech and create boilers @Pyritie
 ### Bug fixes
+- Fixed the huge amount of lag from looking at lots of interconnected trees @Mqrius
+- Fixed tree chopping also stripping nearby trees of all their leaves (note that this will only also apply to newly generated mars trees, old trees will have the old behaviour) @Mqrius
+- Fixed tree chopping not working on trees that had no leaves @Mqrius
+- Fixed tree chopping working on player-placed logs (yes, this means you can't place logs to chop down many trees at once any more) @Mqrius
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
+- Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius
 - Water wheels now spin the correct direction in rivers (#2450) @zehmaria
+- Water wheels now also work with flowing water from aqueducts, instead of requiring an adjacent source block @zehmaria
+- Added locometal to the domum ornamentum whitelist (#2651) @thederpysockdude123
+- Fixed the new venus bugs spawning on earth @Pyritie
+- Fixed some inconsistent recipes with coal in coke ovens, and removed a duplicate recipe (#2688) @jurjen909
+- Fixed the rendering of two-block tall crops in the electric greenhouse @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071
