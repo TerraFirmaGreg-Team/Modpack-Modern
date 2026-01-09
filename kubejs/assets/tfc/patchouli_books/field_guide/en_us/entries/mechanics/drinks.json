@@ -44,8 +44,13 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Cocoa: Haste (0:30), warms you by 4 degrees$(br2)Coffee: Speed (0:30). warms you by 4 degrees$(br2)Nalivka: Strength (2:40), cools you by 2 degrees$(br2)Kvass: Strength (1:20), cools you by 2 degrees$(br2)Compote: Jump Boost II (0:30)"
+			"text": "Cocoa: Haste (0:30), warms you by 4 degrees$(br2)Coffee: Speed (0:30). warms you by 4 degrees$(br2)Lemonade: Haste (0:30), cools you by 2 degrees$(br2)Nalivka: Strength (2:40), cools you by 2 degrees$(br2)Kvass: Strength (1:20), cools you by 2 degrees$(br2)Compote: Jump Boost II (0:30)"
+		},
+		{
+			"title": "Spring Water",
+			"text": "Though unfortunetly not drinkable due to its high mineral content, $(thing)Spring Water$() can be used to warm you up and applies a small regeneration effect while standing in it.",
+			"item": "tfc:bucket/spring_water",
+			"type": "patchouli:spotlight"
 		}
-	
 	]
 }
