@@ -1,0 +1,57 @@
+{
+	"name": "Drinks",
+	"icon": "firmalife:olivine_wine_bottle",
+	"category": "tfc:mechanics",
+	"priority": false,
+	"sortnum": 17,
+	"read_by_default": true,
+	"pages": [
+		{
+		"type": "patchouli:text",
+			"text": "This section covers various drinkable items added by the modpack, hopefully aiding you in your quest of not dying.$(br2)These drinks have various useful effects, as well as keeping you hydrated."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Aged Alcohol",
+			"text": "$(thing)Aged Alcohol$() will give potion buffs, some of which you might find useful.$(br2)You can drink them with a $(l:getting_started/pottery#jug)Jug$() or $(l:waterflasks/recipes)Flask$().",
+			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Aged Beer: Absorption II (20:00)$(br2)Aged Cider: Speed (5:20)$(br2)Aged Rum: Speed II (2:40)$(br2)Aged Sake: Resistance (5:20)$(br2)Aged Vodka: Resistance II (2:40)$(br2)Aged Corn Whiskey: Haste (5:20)$(br2)Aged Rye Whiskey: Haste (5:20)$(br2)Aged Whiskey: Haste II (2:40)$(br2)Aged Mead: Regeneration (5:20)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Milks",
+			"text": "$(thing)Milk$() can be aquired from most female livestock by simply right clicking them with a bucket once familiarity is at a high enough level.$(br2)While not providing any buffs, it provides dairy nutrition and can still quench thrist, as well as later be made into cheese.",
+			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk,tfc_gurman:ox_milk_bucket,tfc_gurman:sheep_milk_bucket,tfc_gurman:alpaca_milk_bucket"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Teas",
+			"text": "$(thing)Teas$() can be brewed using dried versions of certain plants.$(br2)They provide short but useful buffs and warm your body temperature by 4 degrees.",
+			"item": "tfc_gurman:tea_mint_bucket,tfc_gurman:tea_chamomile_bucket,tfc_gurman:tea_rosehip_bucket,tfc_gurman:tea_nettle_bucket"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Mint Tea: Regeneration (0:30)$(br2)Chamomile Tea: Resistance (0:30)$(br2)Rosehip Tea: Absorption (0:30)$(br2)Nettle Tea: Slow Falling (0:30)"
+		},
+			{
+			"type": "patchouli:spotlight",
+			"title": "Treats",
+			"text": "This is a category for more misc drinks with delicious taste and special effects. Enjoy!",
+			"item": "tfc_gurman:cocoa_bucket,tfc_gurman:coffee_bucket,tfc_gurman:nalivka_bucket,tfc_gurman:kvass_bucket,tfc_gurman:compote_bucket"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Cocoa: Haste (0:30), warms you by 4 degrees$(br2)Coffee: Speed (0:30). warms you by 4 degrees$(br2)Lemonade: Haste (0:30), cools you by 2 degrees$(br2)Nalivka: Strength (2:40), cools you by 2 degrees$(br2)Kvass: Strength (1:20), cools you by 2 degrees$(br2)Compote: Jump Boost II (0:30)"
+		},
+		{
+			"title": "Spring Water",
+			"text": "Drinking $(thing)Spring Water$() warms you up by 4 degrees and applies a small regeneration effect while standing in it, as well as warming you.",
+			"item": "tfc:bucket/spring_water",
+			"type": "patchouli:spotlight"
+		}
+	]
+}
+
