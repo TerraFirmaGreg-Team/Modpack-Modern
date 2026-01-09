@@ -105,9 +105,4 @@ function registerTFGPrimitiveFluidTags(event) {
 			event.add('tfg:usable_in_nugget_mold', material.getFluid().getFluidType().toString())
 		}
 	})
-
-    // Wrought iron .getFluid() returns cast iron, so adding separately
-    event.add('tfg:usable_in_small_gear_mold', 'gtceu:wrought_iron')
-    event.add('tfg:usable_in_rod_mold', 'gtceu:wrought_iron')
-    event.add('tfg:usable_in_nugget_mold', 'gtceu:wrought_iron')
 }
