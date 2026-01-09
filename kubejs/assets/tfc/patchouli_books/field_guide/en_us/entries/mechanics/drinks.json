@@ -48,7 +48,7 @@
 		},
 		{
 			"title": "Spring Water",
-			"text": "Drinking $(thing)Spring Water$() warms you up by 4 degrees and applies a small regeneration effect while standing in it.",
+			"text": "Drinking $(thing)Spring Water$() warms you up by 4 degrees and applies a small regeneration effect while standing in it, as well as warming you.",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight"
 		}
