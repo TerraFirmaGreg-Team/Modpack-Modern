@@ -417,6 +417,5 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('gtceu:glass_tube')
 		.duration(8 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.INGOT_MOLDING)
-		.addMaterialInfo();
+		.category(GTRecipeCategories.INGOT_MOLDING);
 }
