@@ -209,12 +209,6 @@ const registerTFGMaterials = (event) => {
 		.flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
 		.hazard(HazardProperty.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.POISON)
 
-	event.create('tfg:thallium')
-		.dust()
-		.color(0x8A251A)
-		.components('1x thallium')
-		.hazard(HazardProperty.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.CHEMICAL_BURNS)
-
 	event.create('tfg:bi_pb_sn_cd_in_tl')
 		.dust()
 		.liquid(GTFluidBuilder().temperature(314))

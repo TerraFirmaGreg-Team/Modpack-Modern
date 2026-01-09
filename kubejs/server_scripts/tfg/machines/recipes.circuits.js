@@ -140,7 +140,7 @@ function registerTFGCircuitRecipes(event) {
 		.EUt(GTValues.VA[GTValues.HV])
     
     event.recipes.gtceu.mixer('tfg:bi_pb_sn_cd_in_tl')
-		.itemInputs('8x #forge:dusts/bismuth', '4x #forge:dusts/lead', '2x #forge:dusts/tin', '3x #forge:dusts/indium', '2x #forge:dusts/cadmium', '1x tfg:thallium_dust')
+		.itemInputs('8x #forge:dusts/bismuth', '4x #forge:dusts/lead', '2x #forge:dusts/tin', '3x #forge:dusts/indium', '2x #forge:dusts/cadmium', '1x #forge:dusts/thallium')
 		.itemOutputs('20x #forge:dusts/bi_pb_sn_cd_in_tl')
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.IV])
