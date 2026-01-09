@@ -353,7 +353,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.outputFluids(Fluid.of('tfg:aciditic_waste', 200))
 		.itemOutputs(Item.of('tfg:loaded_resin', 2))
 		.duration(20*15)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.distillery('tfg:rhenium_dust')
 		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 100))

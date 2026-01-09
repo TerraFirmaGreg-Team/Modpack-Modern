@@ -1144,7 +1144,7 @@ function registerTFGFoodRecipes(event) {
 		.itemInputs('firmalife:food/soybean_paste')
 		.inputFluids("#tfg:clean_water 100")
 		.outputFluids(Fluid.of('firmalife:soybean_oil', 250))
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.duration(600)
 
 	// GT cocoa dust compat
@@ -1397,7 +1397,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('4x tfg:food/raw_fries').copyFood()
 	});
 
-	global.registerFoodRecipe(event, 'food_oven', 'cooked_fries', 20*6, GTValues.VA[GTValues.ULV], 'tfg.food_recipe.deep_frying', {
+	global.registerFoodRecipe(event, 'food_oven', 'cooked_fries', 20*6, GTValues.VA[GTValues.LV], 'tfg.food_recipe.deep_frying', {
 		itemInputs: ['tfg:food/raw_fries'],
 		itemOutputs: ['tfg:food/cooked_fries'],
 		fluidInputs: ['#firmalife:oils 100'],
@@ -1405,7 +1405,7 @@ function registerTFGFoodRecipes(event) {
 	});
 
 	// Beer Battered Cheese Curds
-	global.registerFoodRecipe(event, 'food_oven', 'cooked_beer_battered_cheese_curds', 20*6, GTValues.VA[GTValues.ULV], 'tfg.food_recipe.deep_frying', {
+	global.registerFoodRecipe(event, 'food_oven', 'cooked_beer_battered_cheese_curds', 20*6, GTValues.VA[GTValues.LV], 'tfg.food_recipe.deep_frying', {
 		itemInputs: ['tfg:food/raw_beer_battered_cheese_curds'],
 		itemOutputs: ['tfg:food/cooked_beer_battered_cheese_curds'],
 		fluidInputs: ['#firmalife:oils 100'],
@@ -1417,7 +1417,7 @@ function registerTFGFoodRecipes(event) {
 	 */
 	const beer = ['tfc:beer', 'tfcagedalcohol:aged_beer'];
 	beer.forEach(beerType => {
-		global.processorRecipe(event, `raw_beer_battered_cheese_curds/${beerType.replace(':', '_')}`, 20*5, GTValues.VA[GTValues.ULV], {
+		global.processorRecipe(event, `raw_beer_battered_cheese_curds/${beerType.replace(':', '_')}`, 20*5, GTValues.VA[GTValues.LV], {
 			itemInputs: ['4x #tfg:foods/cheese_curds', '#tfc:foods/flour', 'tfc:powder/salt', '#forge:eggs'],
 			fluidInputs: [`${beerType} 100`],
 			itemOutputs: ['4x tfg:food/raw_beer_battered_cheese_curds'],
@@ -1465,7 +1465,7 @@ function registerTFGFoodRecipes(event) {
 
 	// Prosessor burgers allow extra ingredients.
 	for (let i = 1; i <= 5; i++) {
-		global.processorRecipe(event, `hamburger_${i}`, 20*1, GTValues.VA[GTValues.ULV], {
+		global.processorRecipe(event, `hamburger_${i}`, 20*1, GTValues.VA[GTValues.LV], {
 			itemInputs: [`${i}x #tfg:foods/usable_in_burgers`, '2x tfg:food/brioche_bun'],
 			itemOutputs: ['tfg:food/hamburger'],
 			circuit: i,
@@ -1477,7 +1477,7 @@ function registerTFGFoodRecipes(event) {
 	};
 
 	for (let i = 1; i <= 4; i++) {
-		global.processorRecipe(event, `cheeseburger_${i}`, 20*1, GTValues.VA[GTValues.ULV], {
+		global.processorRecipe(event, `cheeseburger_${i}`, 20*1, GTValues.VA[GTValues.LV], {
 			itemInputs: [`${i}x #tfg:foods/usable_in_burgers`, '2x tfg:food/brioche_bun', '#tfg:foods/cheeses'],
 			itemOutputs: ['tfg:food/cheeseburger'],
 			circuit: i,
@@ -1495,7 +1495,7 @@ function registerTFGFoodRecipes(event) {
 		.itemOutputs('firmalife:tirage_mixture')
 		.duration(10)
 		.circuit(4)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	// Brioche Dough
 	event.recipes.firmalife.mixing_bowl()
@@ -1509,7 +1509,7 @@ function registerTFGFoodRecipes(event) {
 		.outputItem('6x tfg:food/brioche_dough')
 		.id('tfg:mixing_bowl/brioche_dough');
 	
-	global.processorRecipe(event, 'brioche_dough/tirage_mixture', 20*2, GTValues.VA[GTValues.ULV], {
+	global.processorRecipe(event, 'brioche_dough/tirage_mixture', 20*2, GTValues.VA[GTValues.LV], {
 		itemInputs: ['2x #tfc:foods/flour', '#forge:eggs', 'firmalife:tirage_mixture'],
 		fluidInputs: ['#tfc:milks 500'],
 		itemOutputs: ['6x tfg:food/brioche_dough'],
@@ -1517,7 +1517,7 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('6x tfg:food/brioche_dough').copyOldestFood()
 	});
 
-	global.processorRecipe(event, 'brioche_dough/yeast', 20*2, GTValues.VA[GTValues.ULV], {
+	global.processorRecipe(event, 'brioche_dough/yeast', 20*2, GTValues.VA[GTValues.LV], {
 		itemInputs: ['2x #tfc:foods/flour', '#forge:eggs', '#tfc:sweetener'],
 		fluidInputs: ['#tfc:milks 500', 'firmalife:yeast_starter 100'],
 		itemOutputs: ['6x tfg:food/brioche_dough'],
@@ -1536,7 +1536,7 @@ function registerTFGFoodRecipes(event) {
 		]
 	).id('tfg:crafting/raw_burger_patty');
 
-	global.processorRecipe(event, 'raw_burger_patty', 20*1, GTValues.VA[GTValues.ULV], {
+	global.processorRecipe(event, 'raw_burger_patty', 20*1, GTValues.VA[GTValues.LV], {
 		itemInputs: ['#tfg:foods/burger_meats'],
 		itemOutputs: ['tfg:food/raw_burger_patty'],
 		notConsumable: ['gtceu:wire_extruder_mold'],
@@ -1559,7 +1559,7 @@ function registerTFGFoodRecipes(event) {
 		.fluidOutput(Fluid.of('tfg:rich_stock', 1000)
 	).id('tfg:pot/rich_stock');
 
-	global.processorRecipe(event, 'rich_stock', 20*5, GTValues.VA[GTValues.ULV], {
+	global.processorRecipe(event, 'rich_stock', 20*5, GTValues.VA[GTValues.LV], {
 		itemInputs: [
 			'#tfg:foods/makes_rich_stock',
 			'#tfc:foods/vegetables',
@@ -1587,7 +1587,7 @@ function registerTFGFoodRecipes(event) {
 		.fluidOutput(Fluid.of('tfg:light_stock', 1000)
 	).id('tfg:pot/light_stock');
 
-	global.processorRecipe(event, 'light_stock', 20*5, GTValues.VA[GTValues.ULV], {
+	global.processorRecipe(event, 'light_stock', 20*5, GTValues.VA[GTValues.LV], {
 		itemInputs: [
 			'#tfg:foods/makes_light_stock',
 			'#tfc:foods/vegetables',
@@ -1600,7 +1600,7 @@ function registerTFGFoodRecipes(event) {
 	});
 
 	// Brown Gravy
-	global.processorRecipe(event, 'brown_gravy', 20*5, GTValues.VA[GTValues.ULV], {
+	global.processorRecipe(event, 'brown_gravy', 20*5, GTValues.VA[GTValues.LV], {
 		itemInputs: [
 			'#tfc:foods/flour',
 			'firmalife:food/butter',
@@ -1714,7 +1714,7 @@ function registerTFGFoodRecipes(event) {
 			.itemOutputs(Item.of(spice.product).withCount(2))
 			.duration(10)
 			.circuit(1)
-			.EUt(GTValues.VA[GTValues.ULV]);
+			.EUt(GTValues.VA[GTValues.LV]);
 	});
 
 	// Replace input didnt work.
@@ -1733,7 +1733,7 @@ function registerTFGFoodRecipes(event) {
 
 	//#endregion
 
-	global.processorRecipe(event, 'nixtamal', 20*30, GTValues.VA[GTValues.ULV], {
+	global.processorRecipe(event, 'nixtamal', 20*30, GTValues.VA[GTValues.LV], {
 		itemInputs: ['firmalife:food/cured_maize'],
 		fluidInputs: ['#tfg:clean_water 100'],
 		itemOutputs: ['firmalife:food/nixtamal'],

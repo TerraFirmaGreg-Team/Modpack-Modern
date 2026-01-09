@@ -69,14 +69,14 @@ function registerTFCStoneRecipes(event) {
 			.itemOutputs(`1x tfc:rock/cobble/${stone}`)
 			.circuit(1)
 			.duration(30)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 
 		event.recipes.gtceu.packer(`tfc:gtceu/packer/packing_mossy_loose_${stone}_to_cobble`)
 			.itemInputs(`4x tfc:rock/mossy_loose/${stone}`)
 			.itemOutputs(`1x tfc:rock/mossy_cobble/${stone}`)
 			.circuit(1)
 			.duration(30)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 
 		// Cobble Unpacking
 		event.recipes.gtceu.packer(`tfc:gtceu/packer/unpacking_${stone}_cobble_into_loose`)
@@ -84,14 +84,14 @@ function registerTFCStoneRecipes(event) {
 			.itemOutputs(`4x tfc:rock/loose/${stone}`)
 			.circuit(1)
 			.duration(20)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 
 		event.recipes.gtceu.packer(`tfc:gtceu/packer/unpacking_mossy_${stone}_cobble_into_loose`)
 			.itemInputs(`1x tfc:rock/mossy_cobble/${stone}`)
 			.itemOutputs(`4x tfc:rock/mossy_loose/${stone}`)
 			.circuit(1)
 			.duration(20)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 
 		//#endregion
 		

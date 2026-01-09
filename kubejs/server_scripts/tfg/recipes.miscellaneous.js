@@ -70,7 +70,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('1x tfg:trowel')
 		.duration(40)
 		.circuit(4)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	// Etching Tip
 	event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless('tfg:etching_diamond_tip', [

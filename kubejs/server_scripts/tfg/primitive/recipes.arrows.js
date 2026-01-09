@@ -19,7 +19,7 @@ function registerTFGArrowRecipes(event) {
 		.itemInputs('1x minecraft:flint')
 		.itemOutputs('4x tfg:flint_arrow_head')
 		.duration(20)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
 		event.shapeless('4x tfg:fletching', [
@@ -32,7 +32,7 @@ function registerTFGArrowRecipes(event) {
 		.itemOutputs('4x tfg:fletching')
 		.duration(20)
 		.circuit(4)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.shaped('minecraft:arrow', [
 		' A ',
@@ -66,7 +66,7 @@ function registerTFGArrowRecipes(event) {
 		.itemOutputs('4x tfg:fletching')
 		.duration(20)
 		.circuit(4)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	// Glider feathers
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
@@ -80,5 +80,5 @@ function registerTFGArrowRecipes(event) {
 		.itemOutputs('4x tfg:fletching')
 		.duration(20)
 		.circuit(4)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 }

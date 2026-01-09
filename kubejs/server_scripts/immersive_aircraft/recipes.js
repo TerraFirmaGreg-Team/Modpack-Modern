@@ -899,7 +899,7 @@ function registerImmersiveAircraftRecipes(event) {
 		.itemOutputs('tfg:airship_hull')
 		.duration(40)
 		.circuit(1)
-		.EUt(GTValues.VA[GTValues.ULV]);
+		.EUt(GTValues.VA[GTValues.LV]);
 
 	//Airship Balloon
 	event.shaped('tfg:airship_balloon', [
@@ -916,5 +916,5 @@ function registerImmersiveAircraftRecipes(event) {
 		.itemOutputs('tfg:airship_balloon')
 		.duration(40)
 		.circuit(1)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 }

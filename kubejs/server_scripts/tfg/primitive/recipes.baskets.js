@@ -21,7 +21,7 @@ function registerTFGBasketRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:glue', 50))
 		.itemOutputs('tfg:harvest_basket')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.shaped('tfg:harvest_basket', [
 		'BDB',
@@ -44,7 +44,7 @@ function registerTFGBasketRecipes(event) {
 		.itemOutputs('tfg:harvest_basket')
 		.circuit(2)
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('tfg:assembler/aluminium_harvest_basket')
 		.itemInputs(

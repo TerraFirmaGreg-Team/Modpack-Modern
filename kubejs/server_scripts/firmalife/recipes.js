@@ -165,13 +165,13 @@ const registerFirmaLifeRecipes = (event) => {
 		.inputFluids(Fluid.of('tfc:limewater', 1000))
 		.itemOutputs('8x firmalife:cork')
 		.duration(300)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('firmalife:bottle_label')
 		.itemInputs('#forge:wax', 'minecraft:paper')
 		.itemOutputs('16x firmalife:bottle_label')
 		.duration(30)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.alloy_smelter('pie_pan')
 		.itemInputs('#forge:ingots/wrought_iron')
@@ -555,7 +555,7 @@ const registerFirmaLifeRecipes = (event) => {
 		.inputFluids("#tfg:clean_water 2000")
 		.outputFluids(Fluid.of('firmalife:sugar_water', 2000))
 		.circuit(5)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.duration(200)
 
 	// Dough

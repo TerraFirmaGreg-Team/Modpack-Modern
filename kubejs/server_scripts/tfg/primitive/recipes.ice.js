@@ -38,7 +38,7 @@ function registerTFGIceRecipes(event) {
 		.inputFluids("#tfc:water 8000")
 		.outputFluids(Fluid.of('gtceu:ice', 8000))
 		.duration(80)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	// Cooling water
 	event.recipes.tfc.barrel_sealed(250)

@@ -8,7 +8,7 @@ function registerTFGVaseRecipes(event) {
 			.inputFluids(Fluid.of(`tfc:${color}_dye`, 25))
 			.itemOutputs(`tfg:decorative_vase/unfired/${color}`)
 			.duration(80)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 			.category(GTRecipeCategories.CHEM_DYES)
 
 		event.recipes.tfc.heating(`tfg:decorative_vase/unfired/${color}`, 1399)
@@ -32,7 +32,7 @@ function registerTFGVaseRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:chlorine', 72))
 		.itemOutputs('tfg:decorative_vase/unfired')
 		.duration(80)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.CHEM_DYES)
 
 	event.smelting(

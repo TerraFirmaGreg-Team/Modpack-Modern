@@ -46,7 +46,7 @@ function registerTFGEquipmentRecipes(event) {
 		.itemInputs('4x #forge:string', '#forge:cloth', 'minecraft:paper')
 		.itemOutputs('gtceu:face_mask')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.circuit(7)
 
 	// #endregion

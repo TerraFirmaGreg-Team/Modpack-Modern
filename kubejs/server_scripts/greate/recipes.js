@@ -40,47 +40,47 @@ function registerGreateRecipes(event) {
 		.itemInputs('#forge:plates/bronze')
 		.itemOutputs('9x greate:andesite_alloy_shaft')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo()
 
 	event.recipes.gtceu.cutter('greate:andesite_alloy_shaft_black')
 		.itemInputs('#forge:plates/black_bronze')
 		.itemOutputs('9x greate:andesite_alloy_shaft')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.cutter('greate:andesite_alloy_shaft_bismuth')
 		.itemInputs('#forge:plates/bismuth_bronze')
 		.itemOutputs('9x greate:andesite_alloy_shaft')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.cutter('greate:steel_shaft')
 		.itemInputs('#forge:plates/steel')
 		.itemOutputs('9x greate:steel_shaft')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true)
 
 	event.recipes.gtceu.cutter('greate:aluminium_shaft')
 		.itemInputs('#forge:plates/aluminium')
 		.itemOutputs('9x greate:aluminium_shaft')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true)
 
 	event.recipes.gtceu.cutter('greate:stainless_steel_shaft')
 		.itemInputs('#forge:plates/stainless_steel')
 		.itemOutputs('9x greate:stainless_steel_shaft')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true)
 
 	event.recipes.gtceu.cutter('greate:titanium_shaft')
 		.itemInputs('#forge:plates/titanium')
 		.itemOutputs('9x greate:titanium_shaft')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true)
 
 	// #endregion
@@ -117,7 +117,7 @@ function registerGreateRecipes(event) {
 			.itemOutputs(`greate:${tier}_gearbox`)
 			.circuit(5)
 			.duration(50)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 	})
 
 
@@ -250,7 +250,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('2x #forge:smooth_stone', 'gtceu:treated_wood_slab', '#forge:small_gears/steel', '2x #forge:dusts/diamond', 'greate:steel_shaft')
 		.itemOutputs('greate:steel_millstone')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	event.recipes.gtceu.shaped('greate:aluminium_millstone', [
@@ -269,7 +269,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('3x #forge:double_plates/vanadium_steel', '2x #gtceu:circuits/mv', '#forge:gears/steel', '2x #forge:gems/diamond', 'gtceu:mv_machine_casing')
 		.itemOutputs('greate:aluminium_millstone')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	event.recipes.gtceu.shaped('greate:stainless_steel_millstone', [
@@ -288,7 +288,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('3x #forge:double_plates/blue_alloy', '2x #gtceu:circuits/hv', '#forge:gears/aluminium', '2x gtceu:diamond_grinding_head', 'gtceu:hv_machine_casing')
 		.itemOutputs('greate:stainless_steel_millstone')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	event.recipes.gtceu.shaped('greate:titanium_millstone', [
@@ -307,7 +307,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('3x #forge:double_plates/ultimet', '2x #gtceu:circuits/ev', '#forge:gears/stainless_steel', '2x gtceu:diamond_grinding_head', 'gtceu:ev_machine_casing')
 		.itemOutputs('greate:titanium_millstone')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	// #endregion
@@ -395,7 +395,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('greate:steel_shaft', '2x #forge:small_gears/wrought_iron', 'create:andesite_casing', 'gtceu:steel_rotor')
 		.itemOutputs('greate:steel_encased_fan')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	event.shaped('greate:aluminium_encased_fan', [
@@ -415,7 +415,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('greate:aluminium_shaft', '2x #gtceu:circuits/mv', 'gtceu:mv_machine_casing', 'gtceu:aluminium_rotor')
 		.itemOutputs('greate:aluminium_encased_fan')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	event.shaped('greate:stainless_steel_encased_fan', [
@@ -435,7 +435,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('greate:stainless_steel_shaft', '2x #gtceu:circuits/hv', 'gtceu:hv_machine_casing', 'gtceu:stainless_steel_rotor')
 		.itemOutputs('greate:stainless_steel_encased_fan')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	event.shaped('greate:titanium_encased_fan', [
@@ -455,7 +455,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('greate:titanium_shaft', '2x #gtceu:circuits/ev', 'gtceu:ev_machine_casing', 'gtceu:titanium_rotor')
 		.itemOutputs('greate:titanium_encased_fan')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	// #endregion
@@ -479,7 +479,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('2x #forge:screws/wrought_iron', 'gtceu:wrought_iron_buzz_saw_blade', '2x greate:andesite_alloy_cogwheel', 'create:andesite_casing', 'greate:andesite_alloy_shaft')
 		.itemOutputs('greate:andesite_alloy_mechanical_saw')
 		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		
 	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_mechanical_saw', { 'wood': 1, 'wrought_iron': 3 });
 
@@ -500,7 +500,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('gtceu:ulv_machine_hull', 'greate:steel_shaft', '2x #gtceu:circuits/ulv', 'gtceu:cobalt_brass_buzz_saw_blade', '2x greate:steel_cogwheel')
 		.itemOutputs('greate:steel_mechanical_saw')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	event.shaped('greate:aluminium_mechanical_saw', [
@@ -520,7 +520,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('gtceu:mv_machine_hull', '2x #gtceu:circuits/mv', 'gtceu:vanadium_steel_buzz_saw_blade', '2x gtceu:mv_electric_motor', 'greate:aluminium_shaft')
 		.itemOutputs('greate:aluminium_mechanical_saw')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	// Removed while we wait for a fix so recipes don't work without being in a Cleanroom - Important for Wafer
@@ -571,7 +571,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('2x #forge:wax', '2x #forge:screws/steel', 'create:fluid_pipe', 'greate:steel_cogwheel')
 		.itemOutputs('greate:steel_mechanical_pump')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	event.shaped('greate:aluminium_mechanical_pump', [
@@ -590,7 +590,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('2x #forge:rings/rubber', '2x #forge:screws/aluminium', 'create:fluid_pipe', 'greate:aluminium_cogwheel')
 		.itemOutputs('greate:aluminium_mechanical_pump')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	event.shaped('greate:stainless_steel_mechanical_pump', [
@@ -609,7 +609,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('2x #forge:rings/silicone_rubber', '2x #forge:screws/stainless_steel', 'create:fluid_pipe', 'greate:stainless_steel_cogwheel')
 		.itemOutputs('greate:stainless_steel_mechanical_pump')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	event.shaped('greate:titanium_mechanical_pump', [
@@ -628,7 +628,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('2x #forge:rings/silicone_rubber', '2x #forge:screws/titanium', 'create:fluid_pipe', 'greate:titanium_cogwheel')
 		.itemOutputs('greate:titanium_mechanical_pump')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	// #endregion
@@ -669,7 +669,7 @@ function registerGreateRecipes(event) {
 		.itemOutputs('greate:stone_belt_connector')
 		.circuit(11)
 		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	removeMaceratorRecipe(event, 'macerate_stone_belt_connector')
 	event.remove({ id: 'greate:shaped/stone_belt_connector' })
@@ -691,7 +691,7 @@ function registerGreateRecipes(event) {
 		.itemOutputs('greate:rubber_belt_connector')
 		.circuit(11)
 		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true)
 
 	event.remove({ id: 'greate:shaped/rubber_belt_connector' })
@@ -715,7 +715,7 @@ function registerGreateRecipes(event) {
 		.itemOutputs('greate:silicone_rubber_belt_connector')
 		.circuit(11)
 		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true)
 
 	event.remove({ id: 'greate:shaped/silicone_rubber_belt_connector' })
@@ -739,7 +739,7 @@ function registerGreateRecipes(event) {
 		.itemOutputs('greate:styrene_butadiene_rubber_belt_connector')
 		.circuit(11)
 		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true)
 
 	event.remove({ id: 'greate:shaped/styrene_butadiene_rubber_belt_connector' })
@@ -769,7 +769,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('greate:steel_shaft', '2x #gtceu:circuits/ulv', 'gtceu:ulv_machine_hull', 'gtceu:steel_whisk', '2x #forge:plates/black_steel')
 		.itemOutputs('greate:steel_mechanical_mixer')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
@@ -791,7 +791,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('greate:aluminium_shaft', '2x #gtceu:circuits/mv', 'gtceu:mv_machine_hull', 'gtceu:aluminium_whisk', '2x #forge:plates/cobalt_brass')
 		.itemOutputs('greate:aluminium_mechanical_mixer')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 		
@@ -813,7 +813,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('greate:stainless_steel_shaft', '2x #gtceu:circuits/hv', 'gtceu:hv_machine_hull', 'gtceu:stainless_steel_whisk', '2x #forge:plates/vanadium_steel')
 		.itemOutputs('greate:stainless_steel_mechanical_mixer')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 		
@@ -835,7 +835,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('greate:titanium_shaft', '2x #gtceu:circuits/ev', 'gtceu:ev_machine_hull', 'gtceu:titanium_whisk', '2x #forge:plates/blue_alloy')
 		.itemOutputs('greate:titanium_mechanical_mixer')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
@@ -1054,7 +1054,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('create:andesite_casing', 'greate:steel_shaft', '#forge:double_plates/steel', 'greate:steel_cogwheel')
 		.itemOutputs('greate:steel_mechanical_press')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	event.shaped('greate:aluminium_mechanical_press', [
@@ -1075,7 +1075,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('gtceu:mv_machine_hull', 'greate:aluminium_shaft', '#forge:double_plates/vanadium_steel', 'greate:aluminium_cogwheel', '#gtceu:circuits/mv')
 		.itemOutputs('greate:aluminium_mechanical_press')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	event.shaped('greate:stainless_steel_mechanical_press', [
@@ -1096,7 +1096,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('gtceu:hv_machine_hull', 'greate:stainless_steel_shaft', '#forge:double_plates/blue_alloy', 'greate:stainless_steel_cogwheel', '#gtceu:circuits/hv')
 		.itemOutputs('greate:stainless_steel_mechanical_press')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	event.shaped('greate:titanium_mechanical_press', [
@@ -1117,7 +1117,7 @@ function registerGreateRecipes(event) {
 		.itemInputs('gtceu:ev_machine_hull', 'greate:titanium_shaft', '#forge:double_plates/ultimet', 'greate:titanium_cogwheel', '#gtceu:circuits/ev')
 		.itemOutputs('greate:titanium_mechanical_press')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	// #endregion

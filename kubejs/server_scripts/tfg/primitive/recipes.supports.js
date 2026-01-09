@@ -12,14 +12,14 @@ function registerTFGSupportRecipes(event) {
 		.itemOutputs('1x tfg:reinforced_light_concrete_support')
 		.itemInputs('1x tfg:rebar_support')
 		.duration(60)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('tfg:gtceu/assembler/reinforced_light_concrete_support')
 		.inputFluids(Fluid.of('gtceu:concrete', 96))
 		.itemOutputs('1x tfg:reinforced_light_concrete_support')
 		.itemInputs('1x tfg:rebar_support')
 		.duration(120)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.macerator(`reinforced_light_concrete_support_to_dust`)
 		.itemInputs('tfg:reinforced_light_concrete_support')
@@ -33,14 +33,14 @@ function registerTFGSupportRecipes(event) {
 		.itemOutputs('1x tfg:reinforced_dark_concrete_support')
 		.itemInputs('1x tfg:reinforced_light_concrete_support')
 		.duration(60)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.chemical_bath('tfg:gtceu/chemical_bath/dark_concrete_support')
 		.inputFluids(Fluid.of('tfc:black_dye', 10))
 		.itemOutputs('1x tfg:dark_concrete_support')
 		.itemInputs('1x tfg:light_concrete_support')
 		.duration(60)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.macerator(`reinforced_dark_concrete_support_to_dust`)
 		.itemInputs('tfg:reinforced_dark_concrete_support')
@@ -66,7 +66,7 @@ function registerTFGSupportRecipes(event) {
 		.itemOutputs('8x tfg:light_concrete_support')
 		.itemInputs('3x gtceu:light_concrete')
 		.duration(40)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.tfc.damage_inputs_shaped_crafting(
 		event.shaped('8x tfg:dark_concrete_support', [
@@ -85,7 +85,7 @@ function registerTFGSupportRecipes(event) {
 		.itemOutputs('8x tfg:dark_concrete_support')
 		.itemInputs('3x gtceu:dark_concrete')
 		.duration(40)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	// Stone Supports
 	global.TFC_STONE_TYPES.forEach(stone => {
@@ -117,7 +117,7 @@ function registerTFGSupportRecipes(event) {
 			.itemOutputs(`8x tfg:${stone}_support`)
 			.itemInputs(`3x tfc:rock/loose/${stone}`)
 			.duration(40)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 
 		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/mossy/${stone}_support`)
 			.circuit(11)
@@ -125,7 +125,7 @@ function registerTFGSupportRecipes(event) {
 			.itemOutputs(`8x tfg:${stone}_support`)
 			.itemInputs(`3x tfc:rock/mossy_loose/${stone}`)
 			.duration(40)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 	})
 
 	// REDO w/ table and loop
@@ -164,7 +164,7 @@ function registerTFGSupportRecipes(event) {
 			.itemOutputs(`8x ${s.support}`)
 			.itemInputs(`3x ${s.loose}`)
 			.duration(40)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 
 		let regexMatch = s.support.match(/tfg:(.*?)_support/);
 		let supportName = regexMatch[1];
@@ -194,7 +194,7 @@ function registerTFGSupportRecipes(event) {
 		.itemOutputs('8x tfg:rebar_support')
 		.itemInputs(ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 2), ChemicalHelper.get(TagPrefix.wireFine, GTMaterials.Steel, 1))
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.macerator(`rebar_support_to_dust`)
 		.itemInputs(`tfg:rebar_support`)
@@ -217,7 +217,7 @@ function registerTFGSupportRecipes(event) {
 		.itemOutputs('4x tfg:steel_support')
 		.itemInputs('2x #forge:double_ingots/steel')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true)
 
 	event.recipes.gtceu.macerator("steel_support_to_dust")

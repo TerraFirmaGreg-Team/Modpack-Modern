@@ -166,7 +166,7 @@ const registerGTCEURecipes = (event) => {
 		.itemInputs('2x minecraft:paper', 'tfc:glue')
 		.itemOutputs('2x gtceu:basic_tape')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 
 	// GT Facades
@@ -214,33 +214,33 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('gtceu:wood_wall')
 		.circuit(4)
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('tfg:assembler/wooden_multiblock_tank')
 		.itemInputs('gtceu:wood_wall', ChemicalHelper.get(TagPrefix.ring, GTMaterials.Copper, 2))
 		.itemOutputs('gtceu:wooden_multiblock_tank')
 		.circuit(4)
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('tfg:assembler/wooden_tank_valve')
 		.itemInputs('gtceu:wood_wall', ChemicalHelper.get(TagPrefix.ring, GTMaterials.Copper, 1), ChemicalHelper.get(TagPrefix.rotor, GTMaterials.Copper, 1))
 		.itemOutputs('gtceu:wooden_tank_valve')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('tfg:assembler/steel_multiblock_tank')
 		.itemInputs('gtceu:solid_machine_casing', ChemicalHelper.get(TagPrefix.ring, GTMaterials.Steel, 2))
 		.itemOutputs('gtceu:steel_multiblock_tank')
 		.circuit(4)
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('tfg:assembler/steel_tank_valve')
 		.itemInputs('gtceu:solid_machine_casing', ChemicalHelper.get(TagPrefix.ring, GTMaterials.Steel, 1), ChemicalHelper.get(TagPrefix.rotor, GTMaterials.Steel, 1))
 		.itemOutputs('gtceu:steel_tank_valve')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	//#endregion
 

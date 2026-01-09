@@ -33,13 +33,13 @@ function registerTFGMealBagRecipes(event) {
 		.itemInputs('1x tfg:dry_ice')
 		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 100))
 		.duration(20)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.fluid_heater('tfg:fluid_heater/decompress_dry_ice')
 		.inputFluids(Fluid.of('gtceu:liquid_carbon_dioxide', 100))
 		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 100))
 		.duration(20)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('tfg:clean_foil_pack')
 		.itemInputs('1x tfg:used_foil_pack')
@@ -55,7 +55,7 @@ function registerTFGMealBagRecipes(event) {
 		.itemOutputs('1x tfg:clean_foil_pack')
 		.duration(200)
 		.circuit(2)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.custom({
 		type: "ae2:transform",

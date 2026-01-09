@@ -7,34 +7,34 @@ function registerTFGClothRecipes(event) {
 		.itemInputs('1x minecraft:phantom_membrane')
 		.itemOutputs('16x tfg:phantom_thread')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.wiremill('tfg:wiremill/polycaprolactam_string')
 		.itemInputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Polycaprolactam, 1))
 		.itemOutputs('32x tfg:polycaprolactam_string')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('tfg:assembler/phantom_silk')
 		.itemInputs('16x tfg:phantom_thread')
 		.itemOutputs('1x tfg:phantom_silk')
 		.duration(100)
 		.circuit(3)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('tfg:assembler/polycaprolactam_fabric')
 		.itemInputs('16x tfg:polycaprolactam_string')
 		.itemOutputs('1x tfg:polycaprolactam_fabric')
 		.duration(100)
 		.circuit(3)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.chemical_bath('tfg:chemical_bath/bleaching/polycaprolactam_string')
 		.itemInputs('tfg:polycaprolactam_string')
 		.inputFluids(Fluid.of('gtceu:chlorine', 16))
 		.itemOutputs('minecraft:string')
 		.duration(80)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.CHEM_DYES)
 
 	event.recipes.tfc.loom(
@@ -117,14 +117,14 @@ function registerTFGClothRecipes(event) {
 		.itemInputs('9x tfg:flax_product')
 		.itemOutputs('tfg:flax_bundle')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.shapeless('1x tfg:bundled_scraped_flax', ['9x tfg:flax_waste'])
 	event.recipes.gtceu.packer('tfg:packer/bundled_scraped_flax')
 		.itemInputs('9x tfg:flax_waste')
 		.itemOutputs('tfg:bundled_scraped_flax')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.tfc.scraping(
 		'tfg:flax_waste',

@@ -108,7 +108,7 @@ function registerTFGRubberRecipes(event) {
 		.notConsumable('gtceu:ball_casting_mold')
 		.itemOutputs('tfc:glue')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.centrifuge('tfg:centrifuge_rosin')
 		.itemInputs('tfg:conifer_rosin')

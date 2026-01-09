@@ -130,7 +130,7 @@ function registerTFGPapermakingRecipes(event) {
 		.itemInputs('tfg:hardwood_strip')
 		.itemOutputs('tfg:soaked_hardwood_strip')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	//Create Hardwood Dust using Quern and Millstone/Crushing Wheels
 	event.recipes.gtceu.macerator('tfg:macerator/macerate_hardwood_strips')

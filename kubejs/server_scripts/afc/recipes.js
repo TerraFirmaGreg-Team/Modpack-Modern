@@ -198,26 +198,26 @@ const registerAFCRecipes = (event) => {
 		.inputFluids(Fluid.of('afc:maple_sap', 1000))
 		.outputFluids(Fluid.of('afc:maple_syrup', 100))
 		.duration(20 * 25)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.fluid_heater('birch_sap_condense')
 		.inputFluids(Fluid.of('afc:birch_sap', 1000))
 		.outputFluids(Fluid.of('afc:birch_syrup', 100))
 		.duration(20 * 35)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 
 	event.recipes.gtceu.fluid_solidifier('maple_syrup')
 		.inputFluids(Fluid.of('afc:maple_syrup', 100))
 		.itemOutputs('afc:maple_sugar')
 		.duration(20 * 12)
-		.EUt(GTValues.VHA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	event.recipes.gtceu.fluid_solidifier('birch_syrup')
 		.inputFluids(Fluid.of('afc:birch_syrup', 100))
 		.itemOutputs('afc:birch_sugar')
 		.duration(20 * 12)
-		.EUt(GTValues.VHA[GTValues.ULV])
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	//#endregion
 

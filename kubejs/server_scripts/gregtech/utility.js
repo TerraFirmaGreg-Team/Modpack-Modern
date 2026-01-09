@@ -174,7 +174,7 @@ function generatePlatedBlockRecipe(event, material) {
 		.itemOutputs(platedBlock)
 		.circuit(10)
 		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	if (tfcProperty !== null) {
 		event.recipes.tfc.heating(platedBlock, tfcProperty.getMeltTemp())
@@ -202,7 +202,7 @@ function generatePlatedBlockRecipe(event, material) {
 		.itemOutputs(platedSlab.withCount(2))
 		.circuit(10)
 		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	if (tfcProperty !== null) {
 		// Slabs are lossy because it's possible to plate a double slab block with one metal plate
@@ -231,7 +231,7 @@ function generatePlatedBlockRecipe(event, material) {
 		.itemOutputs(platedStair)
 		.circuit(10)
 		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	if (tfcProperty !== null) {
 		event.recipes.tfc.heating(platedStair, tfcProperty.getMeltTemp())
@@ -375,7 +375,7 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			.itemInputs(log)
 			.itemOutputs(stripped_log)
 			.duration(50)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 
 		event.recipes.vintageimprovements.polishing(stripped_log, log)
 			.speedLimits(0)
@@ -489,7 +489,7 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			.itemOutputs(`8x ${support}`)
 			.duration(50)
 			.circuit(4)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 	}
 
 	if (pressure_plate && slab && name) {
@@ -509,7 +509,7 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			.itemOutputs(`2x ${pressure_plate}`)
 			.duration(50)
 			.circuit(3)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 	}
 
 	if (button && pressure_plate && name) {
@@ -517,7 +517,7 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			.itemInputs(pressure_plate)
 			.itemOutputs(`6x ${button}`)
 			.duration(50)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.LV])
 	}
 }
 //#endregion

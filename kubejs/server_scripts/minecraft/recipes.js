@@ -927,7 +927,7 @@ const registerMinecraftRecipes = (event) => {
 		.circuit(4)
 		.itemOutputs('minecraft:smithing_table')
 		.duration(60)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 	//#endregion
 
 	//#region Slime
@@ -950,14 +950,14 @@ const registerMinecraftRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
 		.itemOutputs('minecraft:shroomlight')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.chemical_bath('tfg:brown_mushroom_to_shroomlight')
 		.itemInputs('4x minecraft:brown_mushroom')
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
 		.itemOutputs('minecraft:shroomlight')
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	//#endregion
 

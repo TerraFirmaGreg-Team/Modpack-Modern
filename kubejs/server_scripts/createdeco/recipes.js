@@ -326,7 +326,7 @@ const registerCreatedecoRecipes = (event) => {
 		.notConsumable('tfg:trapdoor_casting_mold')
 		.itemOutputs('createdeco:brass_trapdoor')
 		.duration(GTMaterials.Brass.getMass())
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	TFGHelpers.registerMaterialInfo('createdeco:brass_trapdoor', { 'brass': 1 })
 
@@ -346,7 +346,7 @@ const registerCreatedecoRecipes = (event) => {
 		.notConsumable('tfg:trapdoor_casting_mold')
 		.itemOutputs('createdeco:zinc_trapdoor')
 		.duration(GTMaterials.Zinc.getMass())
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	TFGHelpers.registerMaterialInfo('createdeco:zinc_trapdoor', { 'zinc': 1 })
 
@@ -366,7 +366,7 @@ const registerCreatedecoRecipes = (event) => {
 		.notConsumable('tfg:trapdoor_casting_mold')
 		.itemOutputs('createdeco:andesite_trapdoor')
 		.duration(GTMaterials.TinAlloy.getMass())
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	TFGHelpers.registerMaterialInfo('createdeco:andesite_trapdoor', { 'tin_alloy': 1 })
 

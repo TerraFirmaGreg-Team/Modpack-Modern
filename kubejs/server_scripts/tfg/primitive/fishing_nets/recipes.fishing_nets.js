@@ -33,7 +33,7 @@ function registerTFGFishingNetsRecipes(event) {
 		.itemOutputs('tfg:fishing_net/wood')
 		.duration(100)
 		.circuit(4)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	//Brass
 	event.recipes.tfc.damage_inputs_shaped_crafting(
@@ -62,7 +62,7 @@ function registerTFGFishingNetsRecipes(event) {
 		.itemOutputs('tfg:fishing_net/brass')
 		.duration(100)
 		.circuit(4)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	//Rose Gold
 	event.recipes.tfc.damage_inputs_shaped_crafting(
@@ -91,7 +91,7 @@ function registerTFGFishingNetsRecipes(event) {
 		.itemOutputs('tfg:fishing_net/rose_gold')
 		.duration(100)
 		.circuit(4)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	//Sterling Silver
 	event.recipes.tfc.damage_inputs_shaped_crafting(
@@ -120,7 +120,7 @@ function registerTFGFishingNetsRecipes(event) {
 		.itemOutputs('tfg:fishing_net/sterling_silver')
 		.duration(100)
 		.circuit(4)
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	//Invar
 	event.recipes.tfc.damage_inputs_shaped_crafting(

@@ -121,7 +121,7 @@ function registerSpeciesRecipes(event) {
 	event.recipes.gtceu.assembler('tfg:wicked_mask')
 		.itemInputs('2x #tfc:sewing_light_cloth', '2x #tfc:sewing_dark_cloth', '3x #forge:string')
 		.itemOutputs('species:wicked_mask')
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.duration(200)
 
 	event.recipes.firmalife.mixing_bowl()
@@ -132,7 +132,7 @@ function registerSpeciesRecipes(event) {
 	event.recipes.gtceu.mixer('tfg:wicked_treat')
 		.itemInputs('#tfg:medicine', '2x minecraft:bone_meal')
 		.itemOutputs('2x species:wicked_treat')
-		.EUt(GTValues.VA[GTValues.ULV])
+		.EUt(GTValues.VA[GTValues.LV])
 		.duration(200)
 
 	event.shaped('2x species:smoke_bomb', [
