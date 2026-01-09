@@ -207,6 +207,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RedAlloy.addFlags(CAN_BE_UNMOLDED);
 	GTMaterials.Lead.addFlags(CAN_BE_UNMOLDED);
 	GTMaterials.Potin.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Iron.addFlags(CAN_BE_UNMOLDED);
 	//
 	//        /* Имеют инструменты, броню TFC, двойные слитки */
 	GTMaterials.Copper.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
