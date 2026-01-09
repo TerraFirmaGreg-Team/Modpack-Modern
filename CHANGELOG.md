@@ -8,6 +8,7 @@
 - The crucible now holds 4608mB (32 ingots) instead of 4032mB (28 ingots) (#2634) @Pyritie
 - Large gears can now be crafted in an anvil/mechanical press @Pyritie
 - Added tree index field guide entries for Earth and Mars (#2638) @Jeuvke
+- Added recipe to make tubes from volcanic glass batches (#2667) @Redeix
 ### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Water wheels now spin the correct direction in rivers (#2450) @zehmaria

@@ -1024,7 +1024,7 @@ const registerFirmaLifeRecipes = (event) => {
 
 	event.recipes.tfc.barrel_sealed(72000)
 		.inputFluid(Fluid.of('minecraft:water', 100))
-		.inputItem(TFC.ingredient.hasTrait(Ingredient.of('#tfg:dried_fruit'), "firmalife:dried"))
+		.inputItem(TFC.ingredient.hasTrait('#tfg:dried_fruit', "firmalife:dried"))
 		.outputFluid(Fluid.of('firmalife:yeast_starter', 100))
 		.id('firmalife:barrel/yeast_starter')
 }
