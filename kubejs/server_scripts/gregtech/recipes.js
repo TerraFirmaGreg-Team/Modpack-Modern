@@ -34,7 +34,7 @@ const registerGTCEURecipes = (event) => {
 			'24x gtceu:smd_inductor',
 			'24x gtceu:ram_chip',
 			'24x gtceu:annealed_copper_double_wire')
-		.inputFluids(Fluid.of('gtceu:tin', 576))
+		.inputFluids(Fluid.of(global.SOLDER_TIERS["iv"]["tin_replacement"], 576))
 		.itemOutputs('gtceu:quantum_processor_mainframe')
 		.duration(800)
 		.EUt(7680)
@@ -47,7 +47,7 @@ const registerGTCEURecipes = (event) => {
 			'24x gtceu:smd_inductor',
 			'24x gtceu:ram_chip',
 			'24x gtceu:annealed_copper_double_wire')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.inputFluids(Fluid.of(global.SOLDER_TIERS["iv"]["solder_replacement"], 288))
 		.itemOutputs('gtceu:quantum_processor_mainframe')
 		.duration(800)
 		.EUt(7680)
@@ -60,7 +60,7 @@ const registerGTCEURecipes = (event) => {
 			'6x gtceu:advanced_smd_inductor',
 			'24x gtceu:ram_chip',
 			'24x gtceu:annealed_copper_double_wire')
-		.inputFluids(Fluid.of('gtceu:tin', 576))
+		.inputFluids(Fluid.of(global.SOLDER_TIERS["iv"]["tin_replacement"], 576))
 		.itemOutputs('gtceu:quantum_processor_mainframe')
 		.duration(800)
 		.EUt(7680)
@@ -73,7 +73,7 @@ const registerGTCEURecipes = (event) => {
 			'6x gtceu:advanced_smd_inductor',
 			'24x gtceu:ram_chip',
 			'24x gtceu:annealed_copper_double_wire')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.inputFluids(Fluid.of(global.SOLDER_TIERS["iv"]["solder_replacement"], 288))
 		.itemOutputs('gtceu:quantum_processor_mainframe')
 		.duration(800)
 		.EUt(7680)

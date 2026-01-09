@@ -177,7 +177,7 @@ function registerTFGElectronicComponentsRecipes(event) {
 
 	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv')
 		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '8x #gtceu:inductors', '16x #gtceu:capacitors', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
-		.inputFluids(Fluid.of('gtceu:tin', 576))
+		.inputFluids(Fluid.of(global.SOLDER_TIERS["hv"]["tin_replacement"], 576))
 		.itemOutputs('gtceu:micro_processor_mainframe')
 		.duration(20 * 40)
 		.EUt(GTValues.VA[GTValues.HV])
@@ -185,7 +185,7 @@ function registerTFGElectronicComponentsRecipes(event) {
 
 	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv_soldering_alloy')
 		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '8x #gtceu:inductors', '16x #gtceu:capacitors', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.inputFluids(Fluid.of(global.SOLDER_TIERS["hv"]["solder_replacement"], 288))
 		.itemOutputs('gtceu:micro_processor_mainframe')
 		.duration(20 * 40)
 		.EUt(GTValues.VA[GTValues.HV])
@@ -193,7 +193,7 @@ function registerTFGElectronicComponentsRecipes(event) {
 
 	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv_asmd')
 		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '2x gtceu:advanced_smd_inductor', '4x gtceu:advanced_smd_capacitor', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
-		.inputFluids(Fluid.of('gtceu:tin', 576))
+		.inputFluids(Fluid.of(global.SOLDER_TIERS["hv"]["tin_replacement"], 576))
 		.itemOutputs('gtceu:micro_processor_mainframe')
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
@@ -201,7 +201,7 @@ function registerTFGElectronicComponentsRecipes(event) {
 
 	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv_asmd_soldering_alloy')
 		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '2x gtceu:advanced_smd_inductor', '4x gtceu:advanced_smd_capacitor', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.inputFluids(Fluid.of(global.SOLDER_TIERS["hv"]["solder_replacement"], 288))
 		.itemOutputs('gtceu:micro_processor_mainframe')
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
