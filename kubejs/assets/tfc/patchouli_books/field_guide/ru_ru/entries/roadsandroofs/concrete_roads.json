@@ -1,15 +1,15 @@
 {
-  "name": "Concrete Roads",
+  "name": "Бетонные дороги",
   "category": "tfc:roadsandroofs",
   "icon": "rnr:concrete_road_panel",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Concrete roads are the fastest variety of road that can be constructed, offering a 30% movement speed bonus when properly constructed. However, road builders must be diligent when constructing concrete roads to prevent them from cracking or being trodden on while wet, as this will remove the speed bonus."
+      "text": "Бетонные дороги — это самый быстрый тип дорог, который можно построить, обеспечивающий 30% бонус к скорости передвижения при правильном строительстве. Однако дорожные строители должны быть внимательны при возведении бетонных дорог, чтобы предотвратить их растрескивание или повреждение от ходьбы во влажную погоду, так как это снимет бонус к скорости."
     },
     {
       "type": "patchouli:image",
-      "title": "Concrete Road",
+      "title": "Бетонные дороги",
       "images": [ "rnr:textures/gui/book/concrete_road.png" ],
       "border": true
     },
@@ -17,29 +17,29 @@
       "type": "patchouli:spotlight",
       "anchor": "liquid_concrete",
       "item": "gtceu:concrete_bucket",
-      "title": "Concrete Crafting",
-      "text": "The first step in making a concrete road is mixing the liquid concrete. Use a $(thing)Mixer$() to combine water with any two stone dusts, one of either calcite or marble dust, and gypsum dust, or any three stone dusts with clay dust to make $(thing)Liquid Concrete$()."
+      "title": "Изготовление бетона",
+      "text": "Первый шаг в создании бетонной дороги — это приготовление бетона. Используй $(thing)Миксер$() или $(thing)Смешиватель$(), чтобы смешать воду с любыми двумя каменными пылями, одной пылью кальцита или мрамора, а также гипсовую пыль, либо смешай любые три каменные пыли с глиняной пылью, чтобы получить $(thing)Бетон$()."
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "wet_concrete",
       "item": "rnr:bucket/concrete",
-      "title": "Concrete Crafting",
-      "text": "Then add the liquid concrete in a $(thing)Mixer$() set to $(thing)Programmed Circuit #7$() with more water to dilute it into $(thing)Wet Concrete Mix$()."
+      "title": "Изготовление жидкого бетона",
+      "text": "Затем добавьте бетон в $(thing)Миксер$() или $(thing)Смешиватель$(), настроенный на $(thing)Интегральную схему #7$(), и еще немного воды, чтобы разбавить его до $(thing)Жидкого бетона$()."
     },
     {
       "type": "patchouli:text",
-      "text": "Once $(thing)Wet Concrete$() has been mixed, it can be picked up in a bucket and placed on a $(thing)Base Course Block$() where it will spread to adjacent blocks. The concrete will harden after one day, and until it hardens care must be taken that no creatures walk through the wet concrete as this will create an uneven surface that provides no speed bonus. Footprints can be smoothed out with a $(thing)Mattock$()."
+      "text": "После того, как $(thing)Влажный бетон$() будет замешан, его можно собрать в ведро и поместить на $(thing)Основание покрытия$(), где он растечется по соседним блокам. Бетон затвердеет через день, и до его затвердевания необходимо следить за тем, чтобы никакие существа не ходили по влажному бетону, так как это создаст неровную поверхность, не дающую бонуса к скорости. Следы можно разгладить с помощью $(thing)Кайло$()."
     },
     {
       "type": "patchouli:image",
-      "title": "Pouring a Concrete Road",
+      "title": "Заливка бетонной дороги",
       "images": [ "rnr:textures/gui/book/wet_concrete.png" ],
       "border": true
     },
     {
       "type": "patchouli:text",
-      "text": "Shrinkage cracking is also a concern as concrete sets. If concrete is poured in areas more than four blocks wide, blocks that are farther than two blocks from the nearest $(thing)Edge$(), $(thing)Control Joint$(), or $(thing)Textured Finish$() will crack when set. This can be prevented by pouring concrete in smaller areas, using a $(thing)Mattock$() to add $(thing)Control Joints$(), or by applying a $(thing)Textured Finish$()."
+      "text": "При твердении бетона также важно учитывать усадочные трещины. Если бетон заливается на участках шириной более четырёх блоков, то блоки, находящиеся дальше чем в двух блоках от ближайшего $(thing)Края$(), $(thing)Компенсационного шва$() или $(thing)тротуарной плитки$(), растрескаются после схватывания. Этого можно избежать, заливая бетон меньшими участками, используя $(thing)Кайло$() для добавления $(thing)Компенсационных швов$(), либо нанося $(thing)тротуарную плитку$()."
     },
     {
       "type": "patchouli:image",
@@ -49,11 +49,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)Textured Finishes$() are created by pressing $(thing)Bricks$(), $(thing)Flagstones$(), or $(thing)Smooth Stone Blocks$() into drying concrete to create an architectural finish. These blocks also act as $(thing)Control Joints$() for preventing cracking. Once concrete has finished drying, a $(thing)Chisel$() can be used to form slabs and stairs."
+      "text": "$(thing)Тротуарную плитку$() создаются путём вдавливания $(thing)Кирпичей$(), $(thing)Брусчатки$() или $(thing)Блоков гладкого камня$() в сохнущий бетон, чтобы получить декоративную архитектурную отделку. Эти блоки также работают как $(thing)Компенсационные швы$(), предотвращая растрескивание. После полного высыхания бетона можно использовать $(thing)Зубило$(), чтобы сформировать плиты и ступени."
     },
     {
       "type": "patchouli:image",
-      "title": "Faux Sett Road",
+      "title": "Фокс Сетт Роуд",
       "images": [ "rnr:textures/gui/book/faux_sett.png" ],
       "border": true
     }

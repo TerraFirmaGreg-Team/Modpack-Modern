@@ -1,0 +1,35 @@
+{
+  "name": "Брусчатка",
+  "category": "tfc:roadsandroofs",
+  "icon": "rnr:rock/flagstones/basalt",
+  "pages": [
+    {
+		"type": "patchouli:text",
+		"text": "На основание покрытия можно нанести различные виды каменной кладки, и все они дают 20% бонус к скорости. Мощеные дороги создаются путем добавления камней поверх основания покрытия. Дороги из брусчатки можно строить из каменных или керамических кирпичей."
+	},
+    {
+      "type": "patchouli:crafting",
+      "anchor": "gneiss_flagstones",
+      "recipe": "rnr:crafting/flagstone/gneiss",
+      "title": "Производство брусчатки",
+      "text": "Брусчатку можно изготавливать из блоков гладкого камня или песчаника."
+    },
+	{
+      "type": "patchouli:crafting",
+      "anchor": "pink_sandstone_flagstones",
+      "recipe": "rnr:crafting/flagstone/pink_sandstone",
+      "title": "Производство брусчатки",
+      "text": "Брусчатку можно изготавливать из блоков гладкого камня или песчаника."
+    },
+	{
+		"type": "patchouli:image",
+		"title": "Базальтовая дорога",
+		"images": [
+        "rnr:textures/gui/book/sett_road.png"
+      ],
+		"border": true
+	}
+  ],
+  "read_by_default": true,
+  "sortnum": 12
+}
