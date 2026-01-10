@@ -19,7 +19,6 @@ global.SOLDER_TIERS = /** @type {const} */ {
         "solder_replacement": "tfg:bi_pb_sn_cd_in_tl"
     },
     "zpm": {
-        "tin_replacement": "tfg:bi_pb_sn_cd_in_tl",
         "solder_replacement": "tfg:bi_pb_sn_cd_in_tl"
     }
 }
@@ -194,7 +193,12 @@ function registerTFGCircuitRecipes(event) {
 
     Object.keys(CIRCUIT_ASSEMBLER_RECIPE_TIERS).forEach(recipe => {
         event.replaceInput({ id: `${recipe}_soldering_alloy` }, Fluid.of("gtceu:soldering_alloy"), Fluid.of(global.SOLDER_TIERS[CIRCUIT_ASSEMBLER_RECIPE_TIERS[recipe]]["solder_replacement"]))
-        event.replaceInput({ id: recipe }, Fluid.of("gtceu:tin"), Fluid.of(global.SOLDER_TIERS[CIRCUIT_ASSEMBLER_RECIPE_TIERS[recipe]]["tin_replacement"]))
+
+		if (global.SOLDER_TIERS[CIRCUIT_ASSEMBLER_RECIPE_TIERS[recipe]]["tin_replacement"]) {
+			event.replaceInput({ id: recipe }, Fluid.of("gtceu:tin"), Fluid.of(global.SOLDER_TIERS[CIRCUIT_ASSEMBLER_RECIPE_TIERS[recipe]]["tin_replacement"]))
+		} else {
+			event.remove({ id: recipe })
+		}
     })
 
     // Assembly line recipes
